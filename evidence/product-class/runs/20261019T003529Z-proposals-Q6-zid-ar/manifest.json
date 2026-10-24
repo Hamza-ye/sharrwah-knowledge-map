@@ -1,0 +1,22 @@
+[
+{
+"n": 1,
+"url": "https://web.zid.sa/register",
+"dir": "items/001-web.zid.sa",
+"fetched_at": "2026-10-19T00:35:29Z",
+"http_raw": 200,
+"http_browser": 200,
+"final_url": "https://dashboard.zid.sa/ar-sa/register",
+"content_type": "text/html; charset=utf-8",
+"cited_in": "studies/proposals/records/Q6/zid/citations.tsv",
+"note": "",
+"result": "captured",
+"primary_file": "raw.html",
+"sha256": "3dade3c7599d2e0837a404b76786457582b92850da43e4ad43f8187184c9115b",
+"bytes": 9968,
+"date_hint": "",
+"date_source": "",
+"age_class": "undated (live page on capture date)",
+"text_file": "text.txt"
+}
+]

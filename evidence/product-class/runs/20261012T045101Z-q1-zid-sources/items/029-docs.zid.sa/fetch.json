@@ -1,0 +1,20 @@
+{
+ "n": 29,
+ "url": "https://docs.zid.sa/get-payment-options-43307434e0.md",
+ "dir": "items/029-docs.zid.sa",
+ "fetched_at": "2026-10-12T04:51:27Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.zid.sa/get-payment-options-43307434e0.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 15585,
+ "cited_in": [
+  "ZD-S-0119",
+  "ZD-S-0569",
+  "ZD-S-0588"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "4ddca0fc1d517ca47d7bcd70f06e23719bf39ba01dfe730cde42213ceee9d6e5",
+ "raw_ext": "txt"
+}

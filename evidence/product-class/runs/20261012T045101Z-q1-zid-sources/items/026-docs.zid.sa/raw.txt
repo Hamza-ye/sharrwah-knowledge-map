@@ -1,0 +1,406 @@
+# Generate Upload URL
+
+## OpenAPI Specification
+
+```yaml
+openapi: 3.0.1
+info:
+  title: ''
+  description: ''
+  version: 1.0.0
+paths:
+  /v1/products/{product-id}/downloadables/generate-s3-presigned-url/:
+    post:
+      summary: Generate Upload URL
+      deprecated: false
+      description: >-
+        The "Generate an Upload URL" endpoint allows users to generate a
+        pre-signed URL for uploading a digital file directly to cloud storage.
+        This URL enables secure, temporary access for uploading files associated
+        with a digital product.
+
+
+        <Accordion title="🔑Scopes" defaultOpen>
+            
+          `products.read_write` - Products Read & Write
+         
+        </Accordion>
+      tags:
+        - Default module/Apps/Merchant APIs/Products/Digital Products
+      parameters:
+        - name: product-id
+          in: path
+          description: ''
+          required: true
+          example: f894ca76-3f29-43c7-868d-4274f50f537f
+          schema:
+            type: string
+        - name: Store-Id
+          in: header
+          description: Unique identifier of the store.
+          required: false
+          example: 3
+          schema:
+            type: integer
+        - name: Accept-Language
+          in: header
+          description: >-
+            Preferred language for the response. Defaults to `en` if not
+            specified.
+          required: false
+          example: en
+          schema:
+            type: string
+        - name: X-manager-Token
+          in: header
+          description: >-
+            This token is used to authenticate and access information related to
+            the store. It is obtained through an OAuth mechanism and is required
+            to perform operations on the store's data. The `X-Manager-Token`
+            should be included in the header of API requests that require
+            store-related information.
+          required: false
+          example: '{{Access-Token}}'
+          schema:
+            type: string
+        - name: Currency
+          in: header
+          description: >-
+            The currency in which the data should be returned. This should be
+            provided as an ISO 4217 currency code. For example, SAR for Saudi
+            Riyal, USD for United States Dollar, KWD for Kuwaiti Dinar, etc.
+          required: false
+          example: SAR
+          schema:
+            type: string
+        - name: Role
+          in: header
+          description: Role of the user.
+          required: false
+          example: Manager
+          schema:
+            type: string
+        - name: Authorization
+          in: header
+          description: >-
+            The Authorization token is a unique key given to the third-party
+            application (Partner) by Zid. It is used to authenticate the API
+            requests made by the Partner application. The token verifies the
+            partner's identity and ensures they have permission to access Zid's
+            API but does not provide any specific user or store information. It
+            should be included in the header of API requests when the partner
+            application needs to access Zid's API.
+          required: false
+          example: '{{Autherization}}'
+          schema:
+            type: string
+      responses:
+        '201':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  response:
+                    type: object
+                    properties:
+                      url:
+                        type: string
+                        description: >-
+                          The pre-signed URL for direct file upload to the
+                          specified cloud storage location, which is active for
+                          a limited time.
+                        examples:
+                          - https://s3.eu-west-1.amazonaws.com/private.zid.store
+                      fields:
+                        type: object
+                        properties:
+                          key:
+                            type: string
+                            description: ' Path within the storage where the uploaded file will be saved, including a unique identifier to prevent overwrites.'
+                            examples:
+                              - >-
+                                9fc92996-ffbe-4bca-9b8e-6682137fe7b6/product-downloadables/8244389b-8fe3-47dc-85ae-2f8e9e95f899
+                          AWSAccessKeyId:
+                            type: string
+                            description: >-
+                              The access key ID required for authenticated
+                              access to the cloud storage.
+                            examples:
+                              - AKIAXOL3MW23VCA3WLDK
+                          policy:
+                            type: string
+                            description: >-
+                              Base64-encoded policy document specifying
+                              conditions and permissions for the upload request,
+                              including expiration and allowed content length.
+                            examples:
+                              - >-
+                                eyJleHBpcmF0aW9uIjogIjIwMjQtMTEtMDNUMDU6NTU6MTZaIiwgImNvbmRpdGlvbnMiOiBbWyJjb250ZW50LWxlbmd0aC1yYW5nZSIsIDAsIDEwNzM3NDE4MjRdLCB7ImJ1Y2tldCI6ICJwcml2YXRlLnppZC5zdG9yZSJ9LCB7ImtleSI6ICI5ZmM5Mjk5Ni1mZmJlLTRiY2EtOWI4ZS02NjgyMTM3ZmU3YjYvcHJvZHVjdC1kb3dubG9hZGFibGVzLzgyNDQzODliLThmZTMtNDdkYy04NWFlLTJmOGU5ZTk1Zjg5OSJ9XX0=
+                          signature:
+                            type: string
+                            description: >-
+                              Encrypted signature for verifying the request’s
+                              authenticity and ensuring it meets the policy
+                              conditions.
+                            examples:
+                              - R5oESN7BQbUFL52iG64WSTaCAbw=
+                        required:
+                          - key
+                          - AWSAccessKeyId
+                          - policy
+                          - signature
+                        x-apidog-orders:
+                          - key
+                          - AWSAccessKeyId
+                          - policy
+                          - signature
+                        description: >-
+                          An object containing fields required for uploading the
+                          file. 
+                        x-apidog-ignore-properties: []
+                    required:
+                      - url
+                      - fields
+                    x-apidog-orders:
+                      - url
+                      - fields
+                    x-apidog-ignore-properties: []
+                  size_limit:
+                    type: integer
+                    description: Maximum allowed file size (in bytes) for the upload.
+                    examples:
+                      - 1073741824
+                required:
+                  - response
+                  - size_limit
+                x-apidog-orders:
+                  - response
+                  - size_limit
+                x-apidog-ignore-properties: []
+          headers: {}
+          x-apidog-name: Success
+        '400':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: string
+              example:
+                - Product is not of type downloadable
+          headers: {}
+          x-apidog-name: Bad Request
+        '401':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                description: >-
+                  Response returned when the request cannot be authenticated
+                  because the required credentials are missing, invalid, or
+                  expired.
+                properties:
+                  status:
+                    type: string
+                    description: Indicates the overall status of the API response.
+                    examples:
+                      - error
+                  message:
+                    type: object
+                    description: >-
+                      Contains structured details explaining why the request
+                      could not be authenticated.
+                    properties:
+                      type:
+                        type: string
+                        description: Indicates the category of the response message.
+                        examples:
+                          - error
+                      code:
+                        type: string
+                        description: >-
+                          A machine-readable code identifying the authentication
+                          error. Returns null when no specific code is
+                          available.
+                        examples:
+                          - UNAUTHORIZED
+                        nullable: true
+                      name:
+                        type: string
+                        description: >-
+                          A short, human-readable title describing the
+                          authentication error. Returns null when no title is
+                          available.
+                        examples:
+                          - Unauthorized
+                        nullable: true
+                      description:
+                        type: string
+                        description: >-
+                          A human-readable explanation of why the request could
+                          not be authenticated. Returns null when no detailed
+                          explanation is available.
+                        examples:
+                          - >-
+                            Authentication credentials are missing, invalid, or
+                            expired.
+                        nullable: true
+                    required:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-orders:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-ignore-properties: []
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                examples:
+                  - status: error
+                    message:
+                      type: error
+                      code: UNAUTHORIZED
+                      name: Unauthorized
+                      description: >-
+                        Authentication credentials are missing, invalid, or
+                        expired.
+                x-apidog-ignore-properties: []
+              examples:
+                '3':
+                  summary: Example 1
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_MISSING
+                      name: Sorry
+                      description: Please login first.
+                '4':
+                  summary: Example 2
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Login session expired. Please login again.
+                '5':
+                  summary: Example 3
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Invalid authentication
+          headers: {}
+          x-apidog-name: Unauthorized
+        '404':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  detail:
+                    type: string
+                required:
+                  - detail
+                x-apidog-orders:
+                  - detail
+                x-apidog-ignore-properties: []
+              example:
+                detail: Not found.
+          headers: {}
+          x-apidog-name: Not Found
+        '500':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Status of the error.
+                  message:
+                    $ref: '#/components/schemas/ResponseEnvelopMessage'
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                x-apidog-ignore-properties: []
+              example:
+                status: error
+                message:
+                  type: error
+                  code: MSG_HIDDEN
+                  name: Error
+                  description: Internal Server Error
+          headers: {}
+          x-apidog-name: Internal Server error
+      security: []
+      x-apidog-folder: Default module/Apps/Merchant APIs/Products/Digital Products
+      x-apidog-status: released
+      x-run-in-apidog: https://app.apidog.com/web/project/613905/apis/api-11396021-run
+components:
+  schemas:
+    ResponseEnvelopMessage:
+      type: object
+      properties:
+        type:
+          type: string
+          description: Type of response message returned by the API.
+          examples:
+            - success
+        code:
+          type: string
+          description: Response code returned by the API, if available.
+          examples:
+            - MSG_POPUP_OK
+          nullable: true
+        name:
+          type: string
+          description: Name or title of the response message, if available.
+          examples:
+            - Coupons
+          nullable: true
+        description:
+          type: string
+          description: Detailed description of the response message, if available.
+          examples:
+            - Coupons created successfully
+          nullable: true
+      required:
+        - type
+        - code
+        - name
+        - description
+      description: Additional response metadata.
+      x-apidog-orders:
+        - type
+        - code
+        - name
+        - description
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+  securitySchemes: {}
+servers:
+  - url: https://api.zid.sa/
+    description: Prod Env
+security: []
+
+```

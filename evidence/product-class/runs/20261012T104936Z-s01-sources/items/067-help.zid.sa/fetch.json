@@ -1,0 +1,18 @@
+{
+ "n": 67,
+ "url": "https://help.zid.sa/refund-requests/",
+ "dir": "items/067-help.zid.sa",
+ "fetched_at": "2026-10-12T10:50:43Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/refund-requests/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 27120,
+ "cited_in": [
+  "S01-ZD-C085"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "d1ffc034743f4cb183d78295ca001e23e6f383eb2ab6e4d44fc363f82a5cca49",
+ "raw_ext": "html"
+}

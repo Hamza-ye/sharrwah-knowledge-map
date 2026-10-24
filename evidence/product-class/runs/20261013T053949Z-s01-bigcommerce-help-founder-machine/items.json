@@ -1,0 +1,503 @@
+[
+{
+"n": 1,
+"url": "https://support.bigcommerce.com/s/article/Connecting-with-BigCommerce-Payments?language=en_US",
+"kind": "web",
+"cited_in": [
+"S01-BC-G04",
+"S01-BC-G05",
+"S01-BC-G06",
+"S01-BC-G07",
+"S01-BC-G08",
+"S01-BC-G09",
+"S01-BC-G10",
+"S01-BC-G11",
+"S01-BC-G12",
+"S01-BC-G13",
+"S01-BC-G14",
+"S01-BC-G15",
+"S01-BC-G16",
+"S01-BC-G17",
+"S01-BC-G18",
+"S01-BC-G19",
+"S01-BC-G20",
+"S01-BC-G21",
+"S01-BC-G22",
+"S01-BC-G23"
+]
+},
+{
+"n": 2,
+"url": "https://support.bigcommerce.com/s/article/Available-Payment-Gateways?language=en_US",
+"kind": "web",
+"cited_in": [
+"S01-BC-G01",
+"S01-BC-G02",
+"S01-BC-G03",
+"S01-BC-G04",
+"S01-BC-G05",
+"S01-BC-G06",
+"S01-BC-G07",
+"S01-BC-G08",
+"S01-BC-G09",
+"S01-BC-G10",
+"S01-BC-G11",
+"S01-BC-G12",
+"S01-BC-G13",
+"S01-BC-G14",
+"S01-BC-G15",
+"S01-BC-G16",
+"S01-BC-G17",
+"S01-BC-G18",
+"S01-BC-G19",
+"S01-BC-G20",
+"S01-BC-G21",
+"S01-BC-G22",
+"S01-BC-G23",
+"BC-C-022",
+"BC-C-023",
+"BC-C-026"
+]
+},
+{
+"n": 3,
+"url": "https://support.bigcommerce.com/s/article/Connecting-with-PayPal?language=en_US",
+"kind": "web",
+"cited_in": [
+"S01-BC-G01",
+"S01-BC-G02",
+"S01-BC-G04",
+"S01-BC-G05",
+"S01-BC-G06",
+"S01-BC-G16"
+]
+},
+{
+"n": 4,
+"url": "https://support.bigcommerce.com/s/article/Connecting-with-Stripe-OCS?language=en_US",
+"kind": "web",
+"cited_in": [
+"S01-BC-G03",
+"S01-BC-G04",
+"S01-BC-G05",
+"S01-BC-G06",
+"S01-BC-G16",
+"S01-BC-G17"
+]
+},
+{
+"n": 5,
+"url": "https://support.bigcommerce.com/s/article/Connecting-with-Braintree?language=en_US",
+"kind": "web",
+"cited_in": [
+"S01-BC-G03"
+]
+},
+{
+"n": 6,
+"url": "https://support.bigcommerce.com/s/article/Offline-Payment-Methods?language=en_US",
+"kind": "web",
+"cited_in": [
+"S01-BC-G04",
+"S01-BC-G05",
+"S01-BC-G06",
+"S01-BC-G07",
+"S01-BC-G08",
+"S01-BC-G09",
+"S01-BC-G10",
+"S01-BC-G11",
+"S01-BC-G12",
+"S01-BC-G13",
+"S01-BC-G14",
+"S01-BC-G15",
+"S01-BC-G16",
+"S01-BC-G17",
+"S01-BC-G18",
+"S01-BC-G19",
+"S01-BC-G20",
+"S01-BC-G21",
+"S01-BC-G22",
+"S01-BC-G23",
+"BC-C-023"
+]
+},
+{
+"n": 7,
+"url": "https://support.bigcommerce.com/s/article/Processing-Refunds",
+"kind": "web",
+"cited_in": [
+"S01-BC-G07",
+"S01-BC-G23",
+"BC-C-021"
+]
+},
+{
+"n": 8,
+"url": "https://support.bigcommerce.com/s/article/Manually-Capturing-Transactions-Authorize-Only?language=en_US",
+"kind": "web",
+"cited_in": [
+"S01-BC-G03"
+]
+},
+{
+"n": 9,
+"url": "https://support.bigcommerce.com/s/",
+"kind": "web",
+"cited_in": []
+},
+{
+"n": 10,
+"url": "https://security.bigcommerce.com/",
+"kind": "web",
+"cited_in": [
+"BC-C-028",
+"BC-C-082",
+"BC-C-083"
+]
+},
+{
+"n": 11,
+"url": "https://support.bigcommerce.com/s/article/301-Redirects",
+"kind": "web",
+"cited_in": [
+"BC-C-041"
+]
+},
+{
+"n": 12,
+"url": "https://support.bigcommerce.com/s/article/Automatic-Tax-Setup",
+"kind": "web",
+"cited_in": [
+"BC-C-073"
+]
+},
+{
+"n": 13,
+"url": "https://support.bigcommerce.com/s/article/B2B-Edition-Settings",
+"kind": "web",
+"cited_in": [
+"BC-C-031",
+"BC-C-065"
+]
+},
+{
+"n": 14,
+"url": "https://support.bigcommerce.com/s/article/B2B-Edition-User-Roles-and-Permissions",
+"kind": "web",
+"cited_in": [
+"BC-C-065"
+]
+},
+{
+"n": 15,
+"url": "https://support.bigcommerce.com/s/article/BigCommerce-Inventory-Functionality",
+"kind": "web",
+"cited_in": [
+"BC-C-004",
+"BC-C-005"
+]
+},
+{
+"n": 16,
+"url": "https://support.bigcommerce.com/s/article/Checkout-Settings",
+"kind": "web",
+"cited_in": [
+"BC-C-016"
+]
+},
+{
+"n": 17,
+"url": "https://support.bigcommerce.com/s/article/Collecting-Newsletter-Subscriptions",
+"kind": "web",
+"cited_in": [
+"BC-C-035"
+]
+},
+{
+"n": 18,
+"url": "https://support.bigcommerce.com/s/article/Companies-and-Customer-Groups",
+"kind": "web",
+"cited_in": [
+"BC-C-034"
+]
+},
+{
+"n": 19,
+"url": "https://support.bigcommerce.com/s/article/Creating-a-Manual-Order",
+"kind": "web",
+"cited_in": [
+"BC-C-018"
+]
+},
+{
+"n": 20,
+"url": "https://support.bigcommerce.com/s/article/Customer-Groups",
+"kind": "web",
+"cited_in": [
+"BC-C-032",
+"BC-C-034"
+]
+},
+{
+"n": 21,
+"url": "https://support.bigcommerce.com/s/article/Customer-Order-Notifications",
+"kind": "web",
+"cited_in": [
+"BC-C-046"
+]
+},
+{
+"n": 22,
+"url": "https://support.bigcommerce.com/s/article/Customizing-Emails",
+"kind": "web",
+"cited_in": [
+"BC-C-046"
+]
+},
+{
+"n": 23,
+"url": "https://support.bigcommerce.com/s/article/Date-and-Timezone-Settings",
+"kind": "web",
+"cited_in": [
+"BC-C-047"
+]
+},
+{
+"n": 24,
+"url": "https://support.bigcommerce.com/s/article/Editing-Form-Fields",
+"kind": "web",
+"cited_in": [
+"BC-C-032"
+]
+},
+{
+"n": 25,
+"url": "https://support.bigcommerce.com/s/article/Enabling-Stored-Credit-Cards",
+"kind": "web",
+"cited_in": [
+"BC-C-024"
+]
+},
+{
+"n": 26,
+"url": "https://support.bigcommerce.com/s/article/Fastlane-by-PayPal",
+"kind": "web",
+"cited_in": [
+"BC-C-027"
+]
+},
+{
+"n": 27,
+"url": "https://support.bigcommerce.com/s/article/Getting-Started-Channels",
+"kind": "web",
+"cited_in": [
+"BC-C-038",
+"BC-C-068",
+"BC-C-069"
+]
+},
+{
+"n": 28,
+"url": "https://support.bigcommerce.com/s/article/Getting-Started-Payments",
+"kind": "web",
+"cited_in": [
+"BC-C-022"
+]
+},
+{
+"n": 29,
+"url": "https://support.bigcommerce.com/s/article/Getting-Started-with-Localization-on-Multi-Storefronts",
+"kind": "web",
+"cited_in": [
+"BC-C-048"
+]
+},
+{
+"n": 30,
+"url": "https://support.bigcommerce.com/s/article/How-do-I-access-and-install-the-new-single-click-apps-within-my-Bigcommerce-store-control-panel",
+"kind": "web",
+"cited_in": [
+"BC-C-059"
+]
+},
+{
+"n": 31,
+"url": "https://support.bigcommerce.com/s/article/Implementing-CCPA-with-BigCommerce",
+"kind": "web",
+"cited_in": [
+"BC-C-037"
+]
+},
+{
+"n": 32,
+"url": "https://support.bigcommerce.com/s/article/Intro-to-APMs",
+"kind": "web",
+"cited_in": [
+"BC-C-026"
+]
+},
+{
+"n": 33,
+"url": "https://support.bigcommerce.com/s/article/Managing-Currencies",
+"kind": "web",
+"cited_in": [
+"BC-C-074"
+]
+},
+{
+"n": 34,
+"url": "https://support.bigcommerce.com/s/article/Manual-Tax-Setup",
+"kind": "web",
+"cited_in": [
+"BC-C-072"
+]
+},
+{
+"n": 35,
+"url": "https://support.bigcommerce.com/s/article/Multi-Storefront",
+"kind": "web",
+"cited_in": [
+"BC-C-039"
+]
+},
+{
+"n": 36,
+"url": "https://support.bigcommerce.com/s/article/Order-Statuses",
+"kind": "web",
+"cited_in": [
+"BC-C-018"
+]
+},
+{
+"n": 37,
+"url": "https://support.bigcommerce.com/s/article/PCI-Compliance",
+"kind": "web",
+"cited_in": [
+"BC-C-028"
+]
+},
+{
+"n": 38,
+"url": "https://support.bigcommerce.com/s/article/Platform-Limits",
+"kind": "web",
+"cited_in": [
+"BC-C-057"
+]
+},
+{
+"n": 39,
+"url": "https://support.bigcommerce.com/s/article/Price-Lists",
+"kind": "web",
+"cited_in": [
+"BC-C-007"
+]
+},
+{
+"n": 40,
+"url": "https://support.bigcommerce.com/s/article/Pricing",
+"kind": "web",
+"cited_in": [
+"BC-C-008"
+]
+},
+{
+"n": 41,
+"url": "https://support.bigcommerce.com/s/article/Processing-Returns",
+"kind": "web",
+"cited_in": [
+"BC-C-021"
+]
+},
+{
+"n": 42,
+"url": "https://support.bigcommerce.com/s/article/SEO-Fields",
+"kind": "web",
+"cited_in": [
+"BC-C-047"
+]
+},
+{
+"n": 43,
+"url": "https://support.bigcommerce.com/s/article/Security-and-Privacy-Settings",
+"kind": "web",
+"cited_in": [
+"BC-C-037",
+"BC-C-047",
+"BC-C-078"
+]
+},
+{
+"n": 44,
+"url": "https://support.bigcommerce.com/s/article/Store-API-Accounts",
+"kind": "web",
+"cited_in": [
+"BC-C-053",
+"BC-C-054",
+"BC-C-056"
+]
+},
+{
+"n": 45,
+"url": "https://support.bigcommerce.com/s/article/Tax-Overview",
+"kind": "web",
+"cited_in": [
+"BC-C-072"
+]
+},
+{
+"n": 46,
+"url": "https://support.bigcommerce.com/s/article/Testing-Shipping-Tax-and-Payment-Settings",
+"kind": "web",
+"cited_in": [
+"BC-C-070"
+]
+},
+{
+"n": 47,
+"url": "https://support.bigcommerce.com/s/article/The-Headless-Approach",
+"kind": "web",
+"cited_in": [
+"BC-C-040"
+]
+},
+{
+"n": 48,
+"url": "https://support.bigcommerce.com/s/article/Unified-Billing-for-Partners",
+"kind": "web",
+"cited_in": [
+"BC-C-029"
+]
+},
+{
+"n": 49,
+"url": "https://support.bigcommerce.com/s/article/Using-Multiple-Currencies",
+"kind": "web",
+"cited_in": [
+"BC-C-074"
+]
+},
+{
+"n": 50,
+"url": "https://support.bigcommerce.com/s/article/Using-Script-Manager",
+"kind": "web",
+"cited_in": [
+"BC-C-044"
+]
+},
+{
+"n": 51,
+"url": "https://support.bigcommerce.com/s/article/Using-the-Abandoned-Cart-Saver",
+"kind": "web",
+"cited_in": [
+"BC-C-015"
+]
+},
+{
+"n": 52,
+"url": "https://support.bigcommerce.com/s/article/Wishlists",
+"kind": "web",
+"cited_in": [
+"BC-C-036"
+]
+}
+]

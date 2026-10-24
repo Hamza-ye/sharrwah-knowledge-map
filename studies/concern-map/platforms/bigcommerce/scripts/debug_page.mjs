@@ -1,0 +1,20 @@
+import { createRequire } from 'module';
+import fs from 'fs';
+const require = createRequire(import.meta.url);
+const { chromium } = require('/opt/node22/lib/node_modules/playwright');
+const [url, outPng] = process.argv.slice(2);
+const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36';
+const browser = await chromium.launch();
+const ctx = await browser.newContext({ userAgent: UA, extraHTTPHeaders: { 'Accept-Language': 'en,ar;q=0.8' }, viewport: { width: 1366, height: 900 } });
+const page = await ctx.newPage();
+const resp = await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
+await page.waitForTimeout(20000);
+const info = await page.evaluate(() => {
+  let shadows = 0, stext = 0;
+  const walk = (root) => { for (const el of root.querySelectorAll('*')) { if (el.shadowRoot) { shadows++; stext += (el.shadowRoot.textContent || '').length; walk(el.shadowRoot); } } };
+  walk(document);
+  return { title: document.title, html: document.documentElement.outerHTML.length, bodyText: (document.body && document.body.innerText || '').length, textContent: (document.body && document.body.textContent || '').length, shadows, stext };
+});
+console.log(JSON.stringify({ status: resp && resp.status(), final: page.url(), ...info }));
+await page.screenshot({ path: outPng });
+await browser.close();

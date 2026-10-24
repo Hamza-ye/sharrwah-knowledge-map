@@ -1,0 +1,21 @@
+{
+ "n": 152,
+ "url": "https://help.zid.sa/senderid/",
+ "dir": "items/152-help.zid.sa",
+ "fetched_at": "2026-10-12T04:53:24Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/senderid/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 25863,
+ "cited_in": [
+  "ZD-S-0956",
+  "ZD-S-0958",
+  "ZD-S-0959",
+  "ZD-S-0960"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "086af045a836be64f7e7428099fb2028b1e8c472cf4bc5c7a25a825f6ab583dd",
+ "raw_ext": "html"
+}

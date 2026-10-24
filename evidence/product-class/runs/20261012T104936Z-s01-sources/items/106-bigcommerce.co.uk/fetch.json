@@ -1,0 +1,18 @@
+{
+ "n": 106,
+ "url": "https://www.bigcommerce.co.uk/payments/bigcommerce-payments/",
+ "dir": "items/106-bigcommerce.co.uk",
+ "fetched_at": "2026-10-12T10:51:14Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.bigcommerce.co.uk/payments/bigcommerce-payments/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 219873,
+ "cited_in": [
+  "S01-BC-C031"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "e758912410877f65ba2514e2a9d205c08adae274f5e9023eda1cdbf5ec35f1a2",
+ "raw_ext": "html"
+}

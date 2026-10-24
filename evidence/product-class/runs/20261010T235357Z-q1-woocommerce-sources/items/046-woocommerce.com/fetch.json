@@ -1,0 +1,18 @@
+{
+ "n": 46,
+ "url": "https://woocommerce.com/document/woocommerce-shipping-and-tax/",
+ "dir": "items/046-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:03Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/woocommerce-shipping-and-tax/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 55541,
+ "cited_in": [
+  "WC-S-0639"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "16ef9ec158682af288b28c6422ca82539adb703031b97ef3eaf2bfe0ab26d006",
+ "raw_ext": "html"
+}

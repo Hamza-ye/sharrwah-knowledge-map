@@ -1,0 +1,22 @@
+{
+ "n": 107,
+ "url": "https://www.commerce.com/privacy/data-processors/",
+ "dir": "items/107-commerce.com",
+ "fetched_at": "2026-10-12T04:20:52Z",
+ "curl_exit": 47,
+ "curl_error": "curl: (47) Maximum (8) redirects followed",
+ "http_code": 307,
+ "final_url": "https://www.commerce.com/privacy/data-processors/",
+ "content_type": "text/plain",
+ "bytes": 15,
+ "cited_in": [
+  "BC-S-0016",
+  "BC-S-0406",
+  "BC-S-0407",
+  "BC-S-0408",
+  "BC-S-0418"
+ ],
+ "raw_file": "",
+ "sha256": "",
+ "raw_ext": ""
+}

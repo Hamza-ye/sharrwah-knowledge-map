@@ -1,0 +1,19 @@
+{
+ "n": 35,
+ "url": "https://woocommerce.com/document/privacy-payments/",
+ "dir": "items/035-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:02Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/privacy-payments/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 38252,
+ "cited_in": [
+  "WC-S-0564",
+  "WC-S-0565"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "ec3afb6c9ef08ba54ad37fe3adc0b43a6d609ebb406ba388b3ca3593cfebc8f1",
+ "raw_ext": "html"
+}

@@ -1,0 +1,18 @@
+{
+ "n": 172,
+ "url": "https://help.zid.sa/withdrawal-priority/",
+ "dir": "items/172-help.zid.sa",
+ "fetched_at": "2026-10-12T04:53:44Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/withdrawal-priority/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 23761,
+ "cited_in": [
+  "ZD-S-1023"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "f234dac93f47c321d0d7dad54d5c0f41262cdbcf30add0e1e48eed694faf5540",
+ "raw_ext": "html"
+}

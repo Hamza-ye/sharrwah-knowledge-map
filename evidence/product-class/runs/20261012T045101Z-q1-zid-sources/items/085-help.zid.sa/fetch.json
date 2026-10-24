@@ -1,0 +1,24 @@
+{
+ "n": 85,
+ "url": "https://help.zid.sa/activate-online-payments/",
+ "dir": "items/085-help.zid.sa",
+ "fetched_at": "2026-10-12T04:52:17Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/activate-online-payments/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 293142,
+ "cited_in": [
+  "ZD-S-0527",
+  "ZD-S-0531",
+  "ZD-S-0536",
+  "ZD-S-0552",
+  "ZD-S-0558",
+  "ZD-S-0559",
+  "ZD-S-0572"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "9d6706b8afd8572ac6e84e6e85792230e6427be96bcb9991e39d3d7e38d11149",
+ "raw_ext": "html"
+}

@@ -1,0 +1,18 @@
+{
+ "n": 113,
+ "url": "https://shopify.dev/docs/apps/build/admin.md",
+ "dir": "items/113-shopify.dev",
+ "fetched_at": "2026-10-11T06:13:07Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://shopify.dev/docs/apps/build/admin.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 2502,
+ "cited_in": [
+  "SH-S-0711"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "486aeb937c81d7b6019c16d2c8b74be1d8b219694a915ca2e707df5afdbd042f",
+ "raw_ext": "txt"
+}

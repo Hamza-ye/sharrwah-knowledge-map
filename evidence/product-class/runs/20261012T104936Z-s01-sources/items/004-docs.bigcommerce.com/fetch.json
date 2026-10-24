@@ -1,0 +1,20 @@
+{
+ "n": 4,
+ "url": "https://docs.bigcommerce.com/developer/docs/admin/checkout-and-cart/payment-providers/stripe/integrating-stripe-adaptive-pricing.md",
+ "dir": "items/004-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T10:49:39Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/docs/admin/checkout-and-cart/payment-providers/stripe/integrating-stripe-adaptive-pricing.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 4271,
+ "cited_in": [
+  "S01-BC-C028",
+  "S01-BC-C029",
+  "S01-BC-C036"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "8aed506d7444d4a5aff9154cb87c24fd3e15934c473d7ed59de54719750c529d",
+ "raw_ext": "txt"
+}

@@ -1,0 +1,18 @@
+{
+ "n": 8,
+ "url": "https://docs.zid.sa/applepay-3801359f0.md",
+ "dir": "items/008-docs.zid.sa",
+ "fetched_at": "2026-10-12T04:51:06Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.zid.sa/applepay-3801359f0.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 439,
+ "cited_in": [
+  "ZD-S-0602"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "523d65a7f1500413d0370f1ae2bf6819caa79eba76662a2af5540c2e1e1a4a28",
+ "raw_ext": "txt"
+}

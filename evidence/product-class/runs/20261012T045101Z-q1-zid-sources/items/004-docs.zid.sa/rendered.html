@@ -1,0 +1,693 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;"># Create Location
+
+## OpenAPI Specification
+
+```yaml
+openapi: 3.0.1
+info:
+  title: ''
+  description: ''
+  version: 1.0.0
+paths:
+  /v1/locations/:
+    post:
+      summary: Create Location
+      deprecated: false
+      description: |+
+        Adds a new location to the store.
+
+        &lt;Accordion title="🔑Scopes" defaultOpen&gt;
+            
+         `inventories.read_write `- Inventories Read &amp; Write
+         
+        &lt;/Accordion&gt;
+
+
+      tags:
+        - Default module/Apps/Merchant APIs/Inventories
+        - Multi-Inventory
+      parameters:
+        - name: Access-Token
+          in: header
+          description: &gt;-
+            An Access Token is a unique string that represents the authorization
+            granted to a client (Partner application) by a user (Merchant or
+            Store Manager) to access their protected resources. It is part of
+            the OAuth 2.0 standard and is used to authenticate API requests on
+            behalf of the user. Access Tokens have a limited lifespan and must
+            be used within their validity period. Once expired, a new Access
+            Token can be obtained using a Refresh Token. Access Tokens should be
+            treated as sensitive information and must be kept secure to prevent
+            unauthorized access to the user's data. If you do not have an
+            `Access-Token`, but have the older alternative instead, i.e., the
+            `X-Manager-Token`, then see the instructions
+            [here](docs/Migrate-to-OAUTH-2.0.md) on how to obtain the
+            `Access-Token`.
+          required: true
+          example: '{{Access-Token}}'
+          schema:
+            type: string
+        - name: Authorization
+          in: header
+          description: &gt;-
+            The Authorization token is a unique key given to the third-party
+            application (Partner) by Zid. It is used to authenticate the API
+            requests made by the Partner application. The token verifies the
+            partner's identity and ensures they have permission to access Zid's
+            API but does not provide any specific user or store information. It
+            should be included in the header of API requests when the partner
+            application needs to access Zid's API.
+          required: true
+          example: '{{Autherization}}'
+          schema:
+            type: string
+        - name: Store-Id
+          in: header
+          description: ''
+          required: true
+          example: '{{StoreId}}'
+          schema:
+            type: number
+            examples:
+              - 37213
+        - name: Role
+          in: header
+          description: Role of the user.
+          required: true
+          example: Manager
+          schema:
+            type: string
+            enum:
+              - Manager
+            examples:
+              - Manager
+        - name: Accept-Language
+          in: header
+          description: &gt;-
+            Preferred language for the response. Defaults to `en` if not
+            specified.
+          required: false
+          example: en
+          schema:
+            type: string
+            enum:
+              - en
+              - ar
+            examples:
+              - en
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/LocationCreate'
+            example:
+              store_id: 3
+              name: test 3
+              city: 1
+              coordinates:
+                latitude: '23.2532'
+                longitude: '23.3232'
+              full_address: &gt;-
+                RHHB4094, 4094 Al Aflaj, 7377، حي الواحة، Riyadh 12442, Saudi
+                Arabia
+              is_default: false
+              is_private: true
+              is_enabled: false
+              channels:
+                - catalog
+              short_address: RHHB4094
+      responses:
+        '201':
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InventoryLocation'
+              example:
+                id: 0b602ebc-1bbe-4905-b010-51599615ce82
+                name:
+                  en: test 2
+                city:
+                  id: 1
+                  name: Riyadh
+                  ar_name: الرياض
+                  country:
+                    id: 184
+                    name: Saudi Arabia
+                    ar_name: السعودية
+                    iso_code_2: SA
+                    iso_code_3: SAU
+                    code: SA
+                  country_code: SA
+                type: PHYSICAL
+                coordinates:
+                  latitude: 23.2532
+                  longitude: 23.3232
+                full_address: &gt;-
+                  RHHB4094, 4094 Al Aflaj, 7377، حي الواحة، Riyadh 12442, Saudi
+                  Arabia
+                short_address: RHHB4094
+                district: null
+                street: null
+                fulfillment_priority: null
+                is_default: false
+                is_private: true
+                is_enabled: false
+                has_stocks: false
+                channels:
+                  - catalog
+                linked_users: []
+          headers: {}
+          x-apidog-name: Created
+        '400':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  city:
+                    type: array
+                    items:
+                      type: string
+                  coordinates:
+                    type: array
+                    items:
+                      type: string
+                  channels:
+                    type: array
+                    items:
+                      type: string
+                required:
+                  - city
+                  - coordinates
+                  - channels
+                x-apidog-orders:
+                  - city
+                  - coordinates
+                  - channels
+                x-apidog-ignore-properties: []
+              example:
+                city:
+                  - This field is required.
+                coordinates:
+                  - This field is required.
+                channels:
+                  - Expected a list of items but got type "str".
+          headers: {}
+          x-apidog-name: Bad Request
+        '401':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                description: &gt;-
+                  Response returned when the request cannot be authenticated
+                  because the required credentials are missing, invalid, or
+                  expired.
+                properties:
+                  status:
+                    type: string
+                    description: Indicates the overall status of the API response.
+                    examples:
+                      - error
+                  message:
+                    type: object
+                    description: &gt;-
+                      Contains structured details explaining why the request
+                      could not be authenticated.
+                    properties:
+                      type:
+                        type: string
+                        description: Indicates the category of the response message.
+                        examples:
+                          - error
+                      code:
+                        type: string
+                        description: &gt;-
+                          A machine-readable code identifying the authentication
+                          error. Returns null when no specific code is
+                          available.
+                        examples:
+                          - UNAUTHORIZED
+                        nullable: true
+                      name:
+                        type: string
+                        description: &gt;-
+                          A short, human-readable title describing the
+                          authentication error. Returns null when no title is
+                          available.
+                        examples:
+                          - Unauthorized
+                        nullable: true
+                      description:
+                        type: string
+                        description: &gt;-
+                          A human-readable explanation of why the request could
+                          not be authenticated. Returns null when no detailed
+                          explanation is available.
+                        examples:
+                          - &gt;-
+                            Authentication credentials are missing, invalid, or
+                            expired.
+                        nullable: true
+                    required:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-orders:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-ignore-properties: []
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                examples:
+                  - status: error
+                    message:
+                      type: error
+                      code: UNAUTHORIZED
+                      name: Unauthorized
+                      description: &gt;-
+                        Authentication credentials are missing, invalid, or
+                        expired.
+                x-apidog-ignore-properties: []
+              examples:
+                '3':
+                  summary: Example 1
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_MISSING
+                      name: Sorry
+                      description: Please login first.
+                '4':
+                  summary: Example 2
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Login session expired. Please login again.
+                '5':
+                  summary: Example 3
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Invalid authentication
+          headers: {}
+          x-apidog-name: Unauthorized
+        '500':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Status of the error.
+                  message:
+                    $ref: '#/components/schemas/ResponseEnvelopMessage'
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                x-apidog-ignore-properties: []
+              example:
+                status: error
+                message:
+                  type: error
+                  code: MSG_HIDDEN
+                  name: Error
+                  description: Internal Server Error
+          headers: {}
+          x-apidog-name: Internal Server error
+      security: []
+      x-apidog-folder: Default module/Apps/Merchant APIs/Inventories
+      x-apidog-status: released
+      x-run-in-apidog: https://app.apidog.com/web/project/613905/apis/api-9148587-run
+components:
+  schemas:
+    LocationCreate:
+      type: object
+      description: The details necessary for creating a new inventory location
+      properties:
+        name:
+          type: object
+          properties:
+            ar:
+              type: string
+              description: The Arabic name of the inventory location
+              examples:
+                - مخزن الرياض
+            en:
+              type: string
+              description: The English name of the inventory location
+              examples:
+                - Riyadh warehouse
+          required:
+            - ar
+            - en
+          description: &gt;-
+            The name of the inventory location in both Arabic and English
+            languages
+          x-apidog-orders:
+            - ar
+            - en
+          x-apidog-ignore-properties: []
+        coordinates:
+          type: object
+          properties:
+            longitude:
+              type: number
+              description: The longitude coordinate of the inventory location
+              examples:
+                - 24.876855429417
+            latitude:
+              type: number
+              description: The latitude coordinate of the inventory location
+              examples:
+                - 50.0887943
+          required:
+            - longitude
+            - latitude
+          description: The geographic coordinates of the inventory location
+          x-apidog-orders:
+            - longitude
+            - latitude
+          x-apidog-ignore-properties: []
+        full_address:
+          type: string
+          description: The full physical address of the inventory location
+          examples:
+            - &gt;-
+              RHHB4094, 4094 Al Aflaj, 7377، حي الواحة، Riyadh 12442, Saudi
+              Arabia
+        short_address:
+          type: string
+          description: &gt;-
+            A standardized location code used in Saudi Arabia for delivery and
+            logistics purposes.
+
+            It consists of 4 alphabetic characters followed by 4 numeric digits
+            (e.g., RHHB4094).
+
+
+            Required only when country = "SA"
+
+
+            Optional / nullable for all other countries
+
+
+            Format: ^[A-Za-z]{4}\d{4}$ (case-insensitive on input, returned in
+            uppercase)
+          examples:
+            - RHHB4094
+        city:
+          type: integer
+          description: &gt;
+            The unique identifier of the city where the new inventory location
+            is based. If you don't know the ID of the city, you can find it by
+            making two API calls in the following order:
+
+
+            1.
+            [`/managers/countries`](../reference/merchant-api.yaml/paths/~1managers~1countries/get):
+            This endpoint provides a list of countries, each with a unique ID.
+            Find the ID of the country where your new inventory is located.
+
+
+            2.
+            [`/managers/cities/by-country-id/{country_id}`](../reference/merchant-api.yaml/paths/~1managers~1cities~1by-country-id~1{country_id}/get):
+            Replace `{country_id}` with the ID obtained from the first step.
+            This endpoint returns a list of cities in the given country, each
+            with its own unique ID. Find the ID of the city where your new
+            inventory is located.
+
+
+            Use this city ID here to add a new inventory location.
+          examples:
+            - 236
+        is_default:
+          type: boolean
+          description: &gt;-
+            A flag indicating whether this inventory location is the default one
+            for the store
+          examples:
+            - true
+        is_private:
+          type: boolean
+          description: &gt;-
+            A flag indicating whether this inventory location is private and not
+            accessible to the public
+          examples:
+            - false
+        is_enabled:
+          type: boolean
+          description: &gt;-
+            A flag indicating whether this inventory location is currently
+            enabled and functioning
+          examples:
+            - true
+      required:
+        - name
+        - coordinates
+        - full_address
+        - city
+        - is_default
+        - is_private
+        - is_enabled
+      x-apidog-orders:
+        - name
+        - coordinates
+        - full_address
+        - short_address
+        - city
+        - is_default
+        - is_private
+        - is_enabled
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    InventoryLocation:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: object
+          properties:
+            ar:
+              type: string
+            en:
+              type: string
+          x-apidog-orders:
+            - ar
+            - en
+          x-apidog-ignore-properties: []
+        city:
+          type: object
+          properties:
+            id:
+              type: integer
+            name:
+              type: string
+            ar_name:
+              type: string
+            country:
+              type: object
+              properties:
+                id:
+                  type: integer
+                name:
+                  type: string
+                ar_name:
+                  type: string
+                iso_code_2:
+                  type: string
+                iso_code_3:
+                  type: string
+                code:
+                  type: string
+              required:
+                - id
+                - name
+                - ar_name
+                - iso_code_2
+                - iso_code_3
+                - code
+              x-apidog-orders:
+                - id
+                - name
+                - ar_name
+                - iso_code_2
+                - iso_code_3
+                - code
+              x-apidog-ignore-properties: []
+            country_code:
+              type: string
+          required:
+            - id
+            - name
+            - ar_name
+            - country
+            - country_code
+          x-apidog-orders:
+            - id
+            - name
+            - ar_name
+            - country
+            - country_code
+          x-apidog-ignore-properties: []
+        type:
+          type: string
+        coordinates:
+          type: object
+          properties:
+            latitude:
+              type: number
+            longitude:
+              type: number
+          required:
+            - latitude
+            - longitude
+          x-apidog-orders:
+            - latitude
+            - longitude
+          x-apidog-ignore-properties: []
+        full_address:
+          type: string
+        short_address:
+          type: string
+          nullable: true
+        district:
+          type: string
+          nullable: true
+        street:
+          type: string
+          nullable: true
+        fulfillment_priority:
+          type: integer
+          nullable: true
+        is_default:
+          type: boolean
+        is_private:
+          type: boolean
+        is_enabled:
+          type: boolean
+        has_stocks:
+          type: boolean
+        channels:
+          type: array
+          items:
+            type: string
+        linked_users:
+          type: array
+          items:
+            type: object
+            properties:
+              user_uuid:
+                type: string
+              full_name:
+                type: string
+            x-apidog-orders:
+              - user_uuid
+              - full_name
+            x-apidog-ignore-properties: []
+      required:
+        - id
+        - name
+        - city
+        - type
+        - coordinates
+        - full_address
+        - short_address
+        - district
+        - street
+        - fulfillment_priority
+        - is_default
+        - is_private
+        - is_enabled
+        - has_stocks
+        - channels
+        - linked_users
+      x-apidog-orders:
+        - id
+        - name
+        - city
+        - type
+        - coordinates
+        - full_address
+        - short_address
+        - district
+        - street
+        - fulfillment_priority
+        - is_default
+        - is_private
+        - is_enabled
+        - has_stocks
+        - channels
+        - linked_users
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    ResponseEnvelopMessage:
+      type: object
+      properties:
+        type:
+          type: string
+          description: Type of response message returned by the API.
+          examples:
+            - success
+        code:
+          type: string
+          description: Response code returned by the API, if available.
+          examples:
+            - MSG_POPUP_OK
+          nullable: true
+        name:
+          type: string
+          description: Name or title of the response message, if available.
+          examples:
+            - Coupons
+          nullable: true
+        description:
+          type: string
+          description: Detailed description of the response message, if available.
+          examples:
+            - Coupons created successfully
+          nullable: true
+      required:
+        - type
+        - code
+        - name
+        - description
+      description: Additional response metadata.
+      x-apidog-orders:
+        - type
+        - code
+        - name
+        - description
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+  securitySchemes: {}
+servers:
+  - url: https://api.zid.sa/
+    description: Prod Env
+security: []
+
+```
+</pre></body></html>

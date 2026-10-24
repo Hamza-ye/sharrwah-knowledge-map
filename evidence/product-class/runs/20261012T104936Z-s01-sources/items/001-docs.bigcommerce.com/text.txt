@@ -1,0 +1,38 @@
+> This page is for Developer.
+
+> For clean Markdown of any page, append .md to the page URL.
+> For a complete documentation index, see https://docs.bigcommerce.com/llms.txt.
+> For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server.
+
+# Payment Processing
+
+> Charge customers and process refunds through BigCommerce's PCI-compliant Payments server using supported payment gateways.
+
+> The Payments API processes payments using payment instruments such as credit cards or PayPal accounts. To learn more about Payments, see the [Payments Overview](/developer/docs/admin/checkout-and-cart/payments).
+
+The Payment Processing API uses BigCommerce's PCI-compliant payments server and a supported payment gateway to charge customers. The payment portal you choose may support charging stored instruments and/or making refund transactions. For a list of compatible payment gateways, as well as a guide through the API call sequence needed to make charges, see the [Payments Overview](/developer/docs/admin/checkout-and-cart/payments#compatible-payment-gateways).
+
+A Payment Access Token (*PAT*) is required to authorize payment processing requests. To generate a PAT, use the [Create a Payment Access Token](/developer/api-reference/rest/admin/payments/tokens/create-payment-access-token) endpoint. For a payment processing authentication example request, see the related section in our [Authentication article](/developer/docs/overview/api-fundamentals/api-accounts#bigcommerce-generated-jwts).
+
+Also note that payment processing requests use the BigCommerce Payments Gateway, which uses a different server than our other REST APIs. Please see the server URL for the payment processing endpoint.
+
+> To learn more about authenticating Payments endpoints, locate the **Authentication** section at the top of each endpoint, then click **Show Details**.
+
+## Resources
+
+* [Payments Overview](/developer/docs/admin/checkout-and-cart/payments)
+* [Process payments authentication example request](/developer/docs/overview/api-fundamentals/api-accounts#bigcommerce-generated-jwts)
+* [Orders Overview](/developer/docs/admin/checkout-and-cart/orders)
+
+### Webhooks
+
+* [Carts](/developer/docs/integrations/webhooks/event-reference#carts)
+* [Orders](/developer/docs/integrations/webhooks/event-reference#orders)
+* [Price list assignment](/developer/docs/integrations/webhooks/event-reference#price-list-assignments)
+
+### Additional Payments endpoints
+
+* [Get accepted payment methods](/developer/api-reference/rest/admin/payments/methods/get-payment-methods)
+* [Create a Payment Access Token](/developer/api-reference/rest/admin/payments/tokens/create-payment-access-token)
+* [Get a customer's stored instruments](/developer/api-reference/rest/admin/management/customers/v3/stored-instruments/get-customer-stored-instruments)
+* [Stored Instruments API (Beta)](/developer/api-reference/rest/admin/payments/stored-instruments)

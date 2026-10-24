@@ -1,0 +1,18 @@
+{
+ "n": 20,
+ "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/abandoned-carts.md",
+ "dir": "items/020-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:19:35Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/abandoned-carts.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 396,
+ "cited_in": [
+  "BC-S-0068"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "c6386a51cbcf8c3a47b74b7215b48af73aecf7fe3e07846f446bdee0e63a0b5f",
+ "raw_ext": "txt"
+}

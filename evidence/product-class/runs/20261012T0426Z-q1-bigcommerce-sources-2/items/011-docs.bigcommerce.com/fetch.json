@@ -1,0 +1,19 @@
+{
+ "n": 11,
+ "url": "https://docs.bigcommerce.com/developer/docs/beta/powered-by/api-documentation.md",
+ "dir": "items/011-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:27:06Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/docs/beta/powered-by/api-documentation.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 5571,
+ "cited_in": [
+  "BC-S-0361",
+  "BC-S-0362"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "05b5d1918066571464acca7e70ad7e1bc085dca5ae596712b54ab930af6d9702",
+ "raw_ext": "txt"
+}

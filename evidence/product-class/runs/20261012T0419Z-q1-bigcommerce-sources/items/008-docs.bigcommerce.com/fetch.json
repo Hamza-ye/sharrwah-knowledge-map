@@ -1,0 +1,18 @@
+{
+ "n": 8,
+ "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/catalog/categories.md",
+ "dir": "items/008-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:19:23Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/catalog/categories.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 968,
+ "cited_in": [
+  "BC-S-0025"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "b3fa1c5ab9593c7d469ffabe6156ecc24d4241c64b392368ebc4438661a25219",
+ "raw_ext": "txt"
+}

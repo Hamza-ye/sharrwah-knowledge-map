@@ -1,0 +1,19 @@
+{
+ "n": 13,
+ "url": "https://docs.bigcommerce.com/developer/docs/integrations/platform-solutions/analytics-with-bodl.md",
+ "dir": "items/013-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:27:08Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/docs/integrations/platform-solutions/analytics-with-bodl.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 6113,
+ "cited_in": [
+  "BC-S-0340",
+  "BC-S-0341"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "8f41c8b791439e7e66dc87977c61c3185d99032d38f29af7d8645807ff212914",
+ "raw_ext": "txt"
+}

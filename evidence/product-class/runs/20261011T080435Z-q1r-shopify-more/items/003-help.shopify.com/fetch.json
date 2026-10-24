@@ -1,0 +1,18 @@
+{
+ "n": 3,
+ "url": "https://help.shopify.com/en/manual/apps/app-types/custom-apps.md",
+ "dir": "items/003-help.shopify.com",
+ "fetched_at": "2026-10-11T08:04:37Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/apps/about-apps.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 3598,
+ "cited_in": [
+  "SH-S-7471"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "1f7244c43f9d845427be5e489e1bff466ec08b4df8596e8782eb4a1dbcf22e92",
+ "raw_ext": "txt"
+}

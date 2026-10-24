@@ -1,0 +1,18 @@
+{
+ "n": 13,
+ "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/content/email-templates.md",
+ "dir": "items/013-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:19:28Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/content/email-templates.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 248,
+ "cited_in": [
+  "BC-S-0229"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "e3a3a9db36c99360f9de997883978a8a55c39bfa4bf800b134535188dbcb6b9c",
+ "raw_ext": "txt"
+}

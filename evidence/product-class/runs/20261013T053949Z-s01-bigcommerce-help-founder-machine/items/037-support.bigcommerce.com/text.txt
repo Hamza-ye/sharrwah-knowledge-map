@@ -1,0 +1,247 @@
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+GETTING STARTED
+PRODUCTS
+STORE SETUP
+Store Settings
+Domain And Email
+Checkout And Payments
+Shipping
+Tax
+Security
+PCI Compliance
+Who Is Responsible
+ASV Scans
+Showing Compliance
+Password Resets
+Logged Out
+Incorrectly Stored Credit Card Data
+Privacy Policy
+Terms of Service
+GDPR
+Reflectiz
+SITE ENCRYPTION
+Free SSL Certificate
+BigCommerce SSL Certificates
+Third-Party SSL
+Sitewide HTTPS
+Browser Security Warnings
+B2B
+DESIGN AND CONTENT
+MANAGE STORE
+CHANNEL MANAGER
+MARKETING
+DATA SOLUTIONS
+ACCOUNT
+TD BANK
+PCI Compliance
+What We'll Cover
+Who is required to provide proof of compliance?
+How do I have my site scanned by an ASV?
+How do you show proof of compliance?
+Why do I need to reset my password every 90 days?
+Why was I logged out of my store?
+Incorrectly storing credit card data
+
+PCI stands for Payment Card Industry. The Payment Card Industry Data Security Standard (PCI DSS) is a set of requirements designed to ensure all companies that process, store or transmit credit card information maintain a secure environment.
+
+Our servers are PCI DSS 4.0 validated at Level 1, which protects against credit card data breaches and eliminates the massive cost and hassle of handling compliance yourself. We let you accept leading payment methods without worrying about implementing PCI standards for your online store. 
+
+ 
+Who is required to provide proof of compliance?
+
+PCI compliance applies to any merchant or organization that accepts, transmits, or stores any cardholder data, regardless of size. If you accept transactions from customers using credit or debit cards, the PCI DSS requirements apply. BigCommerce is a PCI DSS compliant service provider and certifies annually all requirements (1-12) included as a shared hosting provider.
+
+The ultimate responsibility of PCI compliance lies with you and takes into consideration the architecture of your e-commerce store and multiple channels of integrations.
+
+INTEGRATIONS WITH BIGCOMMERCE AND RESPONSIBILITY MATRIX
+ 	BigCommerce Responsibility	Merchant Responsibility
+BigCommerce as a storefront and backend	
+
+Responsible for all PCI DSS requirements (1-12) of the product to the point that it has control of merchants' stores.
+
+Responsible for ensuring the integrity of all payment page storefront scripts that are added by BigCommerce.
+
+Responsible for providing an inventory of all payment page storefront scripts to the point that they are added by BigCommerce.
+
+Responsible for providing a method for script authorization and ensuring that all payment page storefront scripts to the point that they are added by BigCommerce work with this method.
+
+	
+
+Responsible for ensuring that all modifications that result in external calls to, or integrations with outside parties are done in a PCI DSS compliant manner.
+
+Responsible for ensuring all design modifications are done in a PCI DSS compliant manner.
+
+Responsible for ensuring that all service providers it uses are compliant with PCI DSS.
+
+Responsible for keeping inventory with written justification of any scripts added by the merchant or through a partner, such as by an app that uses Scripts API or via a marketplace theme.
+
+Responsible for ensuring the integrity of any custom scripts.
+
+Responsible for authorizing custom scripts if opted into the method of authorization provided by BigCommerce.
+
+
+BigCommerce as a backend. For example, headless integrations or the BigCommerce WordPress Plugin	
+
+Responsible for all PCI DSS requirements from the point at which cardholder data is handed to a BigCommerce controlled interface.
+
+Responsible for ensuring the integrity of all checkout storefront scripts that are added by BigCommerce.
+
+Responsible for providing an inventory of all storefront scripts in checkout to the point that they are added by BigCommerce.
+
+Responsible for providing a method for script authorization and ensuring that all checkout scripts added by BigCommerce work with this method.
+
+	
+
+Responsible for the PCI DSS compliance of its storefront, plus all of the above.
+
+Responsible for keeping inventory with written justification of any scripts added by the merchant or through a partner, such as by an app that uses Scripts API or via a marketplace theme.
+
+Responsible for ensuring the integrity of any custom scripts.
+
+Responsible for authorizing custom scripts if opted into the method of authorization provided by BigCommerce.
+
+
+Checkout and Payments SDK	
+
+Not Responsible.
+
+The way your business consumes the SDKs (either BigCommerce as a storefront and backend, or BigCommerce as a backend) would determine BigCommerce’s responsibilities.
+
+	
+
+Responsible for the PCI DSS compliance requirements applicable, as stated in BigCommerce as a storefront or BigCommerce as a backend.
+
+Responsible for updating Checkout SDK and ensuring the integrity of custom checkout.
+
+Responsible for authorizing custom scripts if opted into the method of authorization provided by BigCommerce.
+
+
+Checkout and Payments API	
+
+Not Responsible.
+
+The way your business consumes the SDKs (either BigCommerce as a storefront and backend, or BigCommerce as a backend) would determine BigCommerce’s responsibilities.
+
+	Responsible for the PCI DSS compliance requirements applicable, as stated in BigCommerce as a storefront or BigCommerce as a backend.
+ 
+How do I have my site scanned by an ASV?
+
+You may have business needs that require your site to be scanned for PCI Compliance outside of our own Attestation of PCI DSS Compliance. If you choose to have your site scanned externally, you will need to choose an ASV (Approved Scanning Vendor).
+
+Before you have your site scanned, make sure that the ASV you choose is approved by the PCI Security Standards Council. Refer to this list of Approved Scanning Vendors.
+
+Once you have chosen an ASV, there are some things to consider before launching your scan:
+
+You will need to provide the ASV with your domain name. Do not use the IP address. Because BigCommerce stores are hosted on GCP (Google Cloud Platform), scans against the IP address will often result in services being found that are not in use by BigCommerce. This can result in a false positive, requiring you to re-scan your site.
+Dynamic Scanning, which is often used in some form when engaging in traditional penetration tests, is prohibited in the BigCommerce Acceptable Use Policy.
+
+If you are unsure about what information to provide to your chosen ASV or have questions about what is or is not allowed, contact us and our support team can help guide you through the process.
+
+ 
+How do you show proof of compliance?
+
+If you're using a third-party platform such as BigCommerce and you are asked to provide an Attestation of PCI DSS Compliance, you can locate it here: Attestation of PCI DSS Compliance.
+
+This document allows you to provide proof that your store is PCI compliant.
+
+ 
+
+This attestation is dated for last year. Is it out of date? The date on the cover of the PCI Attestation refers to when the standards were last revised. It does not refer to when the Attestation was completed. The date the report was delivered is found in Section 3 of the document.
+
+For an in-depth guide to what PCI DSS is, how to achieve it for your business, and a compliance checklist, see our article PCI Compliance: A Guide to Meeting Today’s Requirements.
+
+ 
+Why do I need to reset my password every 90 days?
+
+It is part of the requirements stated in the Payment Card Industry Data Security Standards. To remain PCI compliant, passwords must change at least every 90 days. 
+
+ 
+Why was I logged out of my store?
+
+Another requirement for PCI compliance requires that if there is no activity for a set amount of time, the session has to time out. By default this is set to two hours, meaning if you are logged into your store's control panel but do not click anything for two hours, the system will log you out. See Adjusting the Control Panel Timeout Window for more information on how to adjust this setting.
+
+ 
+Incorrectly Stored Credit Card Data
+
+BigCommerce is a PCI-DSS Level 1 Service Provider. As such, our storage of Account Data is audited annually by a Qualified Security Assessor (QSA).
+
+The Payment Card Industry Data Security Standard defines Account Data in the following way:
+
+Cardholder Data
+Primary Account Number
+Cardholder Name
+Expiration Date
+Sensitive Authentication Data
+Security Code (CVV)
+
+While the standard does have a provision for the storage of Cardholder Data before the completion of the credit transaction, it does not make allowance for the storage of Sensitive Authentication Data.
+
+To reduce exposure of Cardholder Data, it is BigCommerce policy not to store any Account Data.
+
+BigCommerce performs ongoing security scans to ensure compliance with data security across our platform. If a merchant is storing data that violates any of the policy mentioned above, the data will be deleted, and the merchant will be alerted of the violation.
+
+RECURRING BILLING APPS
+
+If you have a requirement to store customer credit card data for recurring billing purposes, there are recurring billing applications available in the BigCommerce App Marketplace that can satisfy this requirement.
+
+STORED CREDIT CARD FEATURE
+
+In BigCommerce, the Stored Credit Cards does not store credit card information in your store. Instead, the payment gateway stores this information, which is in keeping with PCI compliance.
+
+Additional Resources
+Adjusting the Control Panel Timeout Window
+Recurring Billing 
+Enabling Stored Payment Methods
+Security and Privacy Settings
+Recurring Billing & Subscriptions (App Marketplace)
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+PCI Compliance

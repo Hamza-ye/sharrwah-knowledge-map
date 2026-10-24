@@ -1,0 +1,18 @@
+{
+ "n": 25,
+ "url": "https://support.bigcommerce.com/s/article/Enabling-Stored-Credit-Cards",
+ "dir": "items/025-support.bigcommerce.com",
+ "fetched_at": "2026-10-13T05:40:24Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://support.bigcommerce.com/s/article/Enabling-Stored-Payment-Methods?language=en_US",
+ "content_type": "text/html;charset=UTF-8",
+ "bytes": 190828,
+ "cited_in": [
+  "BC-C-024"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "586fdb67b9cd569f00fcdb0e10771f578d00701be80314123146faa07b828c57",
+ "raw_ext": "html"
+}

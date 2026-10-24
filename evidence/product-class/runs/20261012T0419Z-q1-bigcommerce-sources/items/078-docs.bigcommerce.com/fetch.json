@@ -1,0 +1,18 @@
+{
+ "n": 78,
+ "url": "https://docs.bigcommerce.com/developer/docs/beta.md",
+ "dir": "items/078-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:20:33Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/docs/beta.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 844,
+ "cited_in": [
+  "BC-S-0062"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "5a06342eff175fc947f1f3716fc9aa5283d211914d48407e5f406457cc1d3290",
+ "raw_ext": "txt"
+}

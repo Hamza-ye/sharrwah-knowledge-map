@@ -1,0 +1,18 @@
+{
+ "n": 4,
+ "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/authentication-apis/current-customer/overview.md",
+ "dir": "items/004-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:19:19Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/authentication-apis/current-customer/overview.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 633,
+ "cited_in": [
+  "BC-S-0180"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "ee94dd6d2e10bb806e3ef29071c240bb86fc3aeebaef4a676751fe43ac4f725d",
+ "raw_ext": "txt"
+}

@@ -1,0 +1,27 @@
+{
+ "n": 106,
+ "url": "https://www.commerce.com/privacy/data-processing-addendum/",
+ "dir": "items/106-commerce.com",
+ "fetched_at": "2026-10-12T04:20:51Z",
+ "curl_exit": 47,
+ "curl_error": "curl: (47) Maximum (8) redirects followed",
+ "http_code": 307,
+ "final_url": "https://www.commerce.com/privacy/data-processing-addendum/",
+ "content_type": "text/plain",
+ "bytes": 15,
+ "cited_in": [
+  "BC-S-0400",
+  "BC-S-0401",
+  "BC-S-0402",
+  "BC-S-0405",
+  "BC-S-0410",
+  "BC-S-0411",
+  "BC-S-0412",
+  "BC-S-0413",
+  "BC-S-0414",
+  "BC-S-0416"
+ ],
+ "raw_file": "",
+ "sha256": "",
+ "raw_ext": ""
+}

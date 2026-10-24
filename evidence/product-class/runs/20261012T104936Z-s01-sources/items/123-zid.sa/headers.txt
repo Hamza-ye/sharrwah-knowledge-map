@@ -1,0 +1,16 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Mon, 12 Oct 2026 10:51:28 GMT
+content-type: text/html; charset=utf-8
+vary: RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch, Accept-Encoding
+x-powered-by: Next.js
+cache-control: private, no-cache, no-store, max-age=0, must-revalidate
+strict-transport-security: max-age=0; includeSubDomains
+cf-cache-status: BYPASS
+set-cookie: __cf_bm=_avzFPEFJKB1P_QhtEUdPj9tPVZ0vzcKbtj6xu8N4jE-1791802288.2279575-1.0.1.1-k3xkDd5vADTS1f081JRyn5GMAo2Or3bAvlaRkMW4zU7uXLw.ONQW2E14lPhR5Fy.TgiFhZl4MG6bqCRPLBZO_.sRmGGZB5PVh92rcgxw0SgRSc44HN.vSUFMGAOHehy6; HttpOnly; SameSite=None; Secure; Path=/; Domain=zid.sa; Expires=Mon, 12 Oct 2026 11:21:28 GMT
+set-cookie: _cfuvid=kCQtORaKSTuQUSAg8klNVMDc60GXYebIgVohfSl2ok0-1791802288.2279575-1.0.1.1-9.bRtNrb0lXgmURcd4jkWcARqxri2xc9WTOMPM3uonQ; HttpOnly; SameSite=None; Secure; Path=/; Domain=zid.sa
+content-encoding: gzip
+server: cloudflare
+cf-ray: a4958cad6e86d674-IAD
+

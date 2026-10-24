@@ -1,0 +1,19 @@
+{
+ "n": 41,
+ "url": "https://help.shopify.com/en/manual/payments/shopify-payments/payouts/schedule-payouts.md",
+ "dir": "items/041-help.shopify.com",
+ "fetched_at": "2026-10-12T10:50:19Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/payments/shopify-payments/payouts/schedule-payouts.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 1336,
+ "cited_in": [
+  "S01-SH-C112",
+  "S01-SH-C113"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "3991f6071de9829f1a366f2b327715047c8e8e499d09979123e247e182c61357",
+ "raw_ext": "txt"
+}

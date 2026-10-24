@@ -1,0 +1,1168 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;"># Update Coupon
+
+## OpenAPI Specification
+
+```yaml
+openapi: 3.0.1
+info:
+  title: ''
+  description: ''
+  version: 1.0.0
+paths:
+  /v1/managers/store/coupons/{coupon-id}/update:
+    post:
+      summary: Update Coupon
+      deprecated: false
+      description: &gt;-
+        This endpoint allows merchants to update details of an existing coupon.
+        Merchants can modify attributes such as discount value, expiration date,
+        and usage limits.
+
+
+        &lt;Accordion title="🔑Scopes" defaultOpen&gt;
+
+
+        `coupons.read_write` - Coupons Read &amp; Write
+         
+        &lt;/Accordion&gt;
+
+
+
+        :::info[]
+
+        ### **Notes**
+
+
+        - `max_weight` only applies to free shipping coupons (`type:
+        free_shipping`).
+
+
+        - It works similarly to` max_total` but limits the total cart weight.
+
+
+        - If the total weight exceeds this limit, the coupon will not apply.
+
+
+        - This field has no effect on discount or fixed-amount coupon types.
+
+        :::
+      tags:
+        - Default module/Apps/Merchant APIs/Marketing/Coupons
+      parameters:
+        - name: coupon-id
+          in: path
+          description: Unique identifier of the coupon.
+          required: true
+          example: '5875333'
+          schema:
+            type: string
+        - name: Authorization
+          in: header
+          description: &gt;-
+            The Authorization token is a unique key given to the third-party
+            application (Partner) by Zid. It is used to authenticate the API
+            requests made by the Partner application. The token verifies the
+            partner's identity and ensures they have permission to access Zid's
+            API but does not provide any specific user or store information. It
+            should be included in the header of API requests when the partner
+            application needs to access Zid's API.
+          required: true
+          example: '{{Autherization}}'
+          schema:
+            type: string
+        - name: X-Manager-Token
+          in: header
+          description: &gt;-
+            This token is used to authenticate and access information related to
+            the store. It is obtained through an OAuth mechanism and is required
+            to perform operations on the store's data. The `X-Manager-Token`
+            should be included in the header of API requests that require
+            store-related information.
+          required: true
+          example: '{{Access-Token}}'
+          schema:
+            type: string
+        - name: Accept
+          in: header
+          description: &gt;-
+            Specifies the Media Types acceptable for the client. In this case,
+            it signals that the client expects a response in the JSON format.
+          required: true
+          example: application/json
+          schema:
+            type: string
+        - name: Accept-Language
+          in: header
+          description: &gt;-
+            Preferred language for the response. Defaults to `en` if not
+            specified.
+          required: true
+          example: en
+          schema:
+            type: string
+      requestBody:
+        content:
+          multipart/form-data:
+            encoding:
+              is_pos_active:
+                contentType: boolean
+            schema:
+              type: object
+              properties:
+                name:
+                  description: The name of the coupon usually for internal reference.
+                  example: osama khaled
+                  type: string
+                code:
+                  description: &gt;-
+                    The unique coupon code that customers will enter to avail
+                    the discount.
+                  example: SUMMER2026-2
+                  type: string
+                discount_type:
+                  type: string
+                  enum:
+                    - f
+                    - P
+                    - 'n'
+                  x-apidog-enum:
+                    - value: f
+                      name: Fixed
+                      description: ''
+                    - value: P
+                      name: Percentage
+                      description: ''
+                    - value: 'n'
+                      name: No Discount
+                      description: ''
+                  description: &gt;-
+                    The type of discount applied. Possible values are p for
+                    percentage-based discount and f for fixed amount discount.
+                  example: f
+                discount:
+                  description: &gt;-
+                    The discount value applied by the coupon. If discount_type
+                    is p this represents a percentage if f it represents a fixed
+                    amount.
+                  example: '155'
+                  type: string
+                status:
+                  description: The status of the coupon. 1 for active 0 for inactive.
+                  example: '1'
+                  type: string
+                applying_method:
+                  type: string
+                  enum:
+                    - CODE
+                    - AUTOMATIC
+                  x-apidog-enum:
+                    - value: CODE
+                      name: ''
+                      description: ''
+                    - value: AUTOMATIC
+                      name: ''
+                      description: ''
+                  description: &gt;-
+                    Determines whether the coupon applies to shipping costs. 1
+                    for enabled 0 for disabled.
+                  example: CODE
+                apply_to:
+                  type: string
+                  enum:
+                    - all
+                    - products
+                    - categories
+                    - excluded_products
+                    - non_discounted_products
+                    - discounted_products
+                    - non_discounted_categories_products
+                    - excluded_non_discounted_products
+                    - products_non_discounted
+                  x-apidog-enum:
+                    - value: all
+                      name: ''
+                      description: ''
+                    - value: products
+                      name: ''
+                      description: ''
+                    - value: categories
+                      name: ''
+                      description: ''
+                    - value: excluded_products
+                      name: ''
+                      description: ''
+                    - value: non_discounted_products
+                      name: ''
+                      description: ''
+                    - value: discounted_products
+                      name: ''
+                      description: ''
+                    - value: non_discounted_categories_products
+                      name: ''
+                      description: ''
+                    - value: excluded_non_discounted_products
+                      name: ''
+                      description: ''
+                    - value: products_non_discounted
+                      name: ''
+                      description: ''
+                  description: &gt;
+                    Specifies which products or categories the coupon applies
+                    to. Use `all` to apply the coupon to all eligible items, or
+                    select another supported value to include or exclude
+                    specific products, categories, discounted items, or
+                    non-discounted items. Use `apply_to_array` to provide the
+                    relevant product UIDs or category IDs when required.
+                  example: all
+                apply_to_array:
+                  type: array
+                  items:
+                    type: string
+                  description: A list of product IDs that the coupon is applicable to.
+                  example: ''
+                free_shipping:
+                  type: boolean
+                  description: &gt;-
+                    Indicates if the coupon provides free shipping. 1 for
+                    enabled 0 for disabled.
+                  example: '1'
+                free_cod:
+                  type: boolean
+                  description: &gt;
+                    Indicates whether the coupon provides free Cash on Delivery
+                    (COD). Use `1` to enable free COD or `0` to disable it.
+                  example: 'false'
+                total:
+                  description: &gt;-
+                    The minimum order total required for the coupon to be
+                    applicable. If 0 no minimum order total is required.
+                  example: '0'
+                  type: string
+                max_total:
+                  type: string
+                  examples:
+                    - '0'
+                  description: &gt;-
+                    To indicate the maximum limit for the cart total to apply
+                    the coupon, if the cart total exceeds this value the coupon
+                    won't be applied 
+                  example: ''
+                max_weight:
+                  type: number
+                  examples:
+                    - 1
+                  description: &gt;-
+                    Maximum total cart weight (in kilograms) allowed for the
+                    coupon to apply. If the cart’s total weight exceeds this
+                    value, the coupon will not apply. Only applicable to free
+                    shipping coupons.
+                  example: 0
+                date_start:
+                  description: The start date of the coupon validity in YYYY-MM-DD format.
+                  example: '2021-02-10'
+                  type: string
+                date_end:
+                  description: The end date of the coupon validity in YYYY-MM-DD format.
+                  example: '2021-02-28'
+                  type: string
+                uses_total:
+                  description: &gt;-
+                    The total number of times the coupon can be used across all
+                    customers.
+                  example: '1000'
+                  type: string
+                uses_customer:
+                  description: The number of times a single customer can use the coupon.
+                  example: '1000'
+                  type: string
+                maximum_discount_value:
+                  type: number
+                  description: &gt;
+                    The maximum discount amount allowed for a percentage-based
+                    coupon. If the calculated discount exceeds this value, the
+                    discount is capped at the specified amount in the store’s
+                    default currency.
+                  example: 0
+                is_mazeed_active:
+                  type: integer
+                  enum:
+                    - 0
+                    - 1
+                  x-apidog-enum:
+                    - value: 0
+                      name: 'False'
+                      description: ''
+                    - value: 1
+                      name: 'True'
+                      description: ''
+                  description: &gt;-
+                    Indicates whether the coupon can be used for orders placed
+                    through Mazeed. Use 1 to enable the coupon for Mazeed or 0
+                    to disable it.
+                  example: 0
+                is_pos_active:
+                  type: integer
+                  enum:
+                    - 0
+                    - 1
+                  x-apidog-enum:
+                    - value: 0
+                      name: 'False'
+                      description: ''
+                    - value: 1
+                      name: 'True'
+                      description: ''
+                  description: &gt;-
+                    Indicates whether the coupon can be used for orders created
+                    through the Point of Sale (POS) system. Use 1 to enable it
+                    or 0 to disable it.
+                  example: 0
+                is_shown_in_pos:
+                  type: integer
+                  enum:
+                    - 0
+                    - 1
+                  x-apidog-enum:
+                    - value: 0
+                      name: 'False'
+                      description: ''
+                    - value: 1
+                      name: 'True'
+                      description: ''
+                  description: &gt;-
+                    Indicates whether the coupon is displayed and available for
+                    selection in the Point of Sale (POS) interface. Use 1 to
+                    show it or 0 to hide it.
+                  example: 0
+                is_mobile_app_active:
+                  type: integer
+                  enum:
+                    - 0
+                    - 1
+                  x-apidog-enum:
+                    - value: 0
+                      name: 'False'
+                      description: ''
+                    - value: 1
+                      name: 'True'
+                      description: ''
+                  description: &gt;-
+                    Indicates whether the coupon can be used for orders placed
+                    through the store’s mobile application. Use 1 to enable it
+                    or 0 to disable it.
+                  example: 0
+                conditions_criteria:
+                  type: string
+                  enum:
+                    - all
+                    - any
+                  x-apidog-enum:
+                    - value: all
+                      name: ''
+                      description: ''
+                    - value: any
+                      name: ''
+                      description: ''
+                  description: &gt;-
+                    Determines how multiple coupon conditions are evaluated. Use
+                    all to require every condition to be satisfied or any to
+                    require at least one condition to be satisfied.
+                  example: all
+                conditions[0][field]:
+                  type: string
+                  enum:
+                    - customer_location
+                    - shipping_options
+                    - sale_channel
+                    - payment_options
+                    - customer_groups
+                  x-apidog-enum:
+                    - value: customer_location
+                      name: Customer Location
+                      description: ''
+                    - value: shipping_options
+                      name: Shipping Options
+                      description: ''
+                    - value: sale_channel
+                      name: Sale Channel
+                      description: ''
+                    - value: payment_options
+                      name: Payment Options
+                      description: ''
+                    - value: customer_groups
+                      name: Customer Groups
+                      description: ''
+                  description: &gt;-
+                    Specifies the customer, order, or cart attribute to evaluate
+                    as part of the coupon condition, such as customer_location.
+                  example: customer_location
+                conditions[0][operator]:
+                  type: string
+                  enum:
+                    - in
+                    - '='
+                    - type
+                  x-apidog-enum:
+                    - value: in
+                      name: In
+                      description: ''
+                    - value: '='
+                      name: '='
+                      description: ''
+                    - value: type
+                      name: Type
+                      description: ''
+                  description: &gt;-
+                    Specifies the comparison operator used to evaluate the
+                    condition. For example, use in to check whether the provided
+                    value is included in a specified set of values.
+                  example: in
+                conditions[0][action]:
+                  type: string
+                  enum:
+                    - INCLUDE
+                    - EXCLUDE
+                  x-apidog-enum:
+                    - value: INCLUDE
+                      name: Include
+                      description: ''
+                    - value: EXCLUDE
+                      name: Exclude
+                      description: ''
+                  description: &gt;-
+                    Determines whether customers or orders matching the
+                    condition are eligible for the coupon. Use INCLUDE to allow
+                    matching entries or EXCLUDE to prevent them from using the
+                    coupon.
+                  example: INCLUDE
+                conditions[0][value]:
+                  description: &gt;-
+                    Specifies the value against which the selected condition
+                    field is evaluated. The expected value depends on the field
+                    and operator used.
+                  example: '1'
+                  type: string
+                discount_strategy:
+                  type: string
+                  enum:
+                    - standard
+                    - progressive
+                  x-apidog-enum:
+                    - value: standard
+                      name: Standard
+                      description: ''
+                    - value: progressive
+                      name: Progressive
+                      description: ''
+                  description: &gt;-
+                    Specifies how the coupon discount is calculated. Use
+                    standard to apply a single discount configuration or
+                    progressive to apply tier-based discounts according to cart
+                    quantity or subtotal.
+                  example: standard
+                progressive_config.basis:
+                  type: string
+                  enum:
+                    - quantity
+                    - subtotal
+                  x-apidog-enum:
+                    - value: quantity
+                      name: Quantity
+                      description: ''
+                    - value: subtotal
+                      name: Subtotal
+                      description: ''
+                  description: &gt;-
+                    Specifies the cart measurement used to determine which
+                    progressive discount tier applies. Use quantity to evaluate
+                    the number of items or subtotal to evaluate the cart
+                    subtotal.
+                  example: quantity
+                progressive_config.tiers[0][threshold]:
+                  type: number
+                  description: &gt;-
+                    Specifies the minimum item quantity or cart subtotal
+                    required to activate this progressive discount tier, based
+                    on the selected progressive_config.basis.
+                  example: 1
+                progressive_config.tiers[0][value]:
+                  type: number
+                  description: &gt;-
+                    Specifies the discount value applied when the tier threshold
+                    is reached. The value is interpreted as a fixed amount or
+                    percentage according to the coupon’s discount_type.
+                  example: 1
+                progressive_config.tiers[0][maximum_discount_value]:
+                  type: number
+                  description: &gt;-
+                    Specifies the maximum discount amount that can be applied
+                    for this progressive tier. If the calculated percentage
+                    discount exceeds this value, the discount is capped at the
+                    specified amount in the store’s default currency.
+                  example: 1
+              required:
+                - name
+                - code
+                - discount_type
+                - discount
+            examples: {}
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                title: Update Coupon Response
+                description: Schema for the 'update coupon' response.
+                properties:
+                  status:
+                    type: string
+                    description: Status of the API response.
+                    examples:
+                      - success
+                  coupon:
+                    type: object
+                    description: Details of the updated coupon.
+                    properties:
+                      coupon_id:
+                        type: integer
+                        description: Unique coupon identifier.
+                        examples:
+                          - 3292
+                      id:
+                        type: integer
+                        description: Coupon ID (same as coupon_id).
+                        examples:
+                          - 3292
+                      store_id:
+                        type: integer
+                        description: ID of the store offering the coupon.
+                        examples:
+                          - 1
+                      store_name:
+                        type: string
+                        description: Name of the store.
+                        examples:
+                          - Osama's Testing Store
+                      store_logo:
+                        type: string
+                        format: uri
+                        description: URL of the store logo.
+                        examples:
+                          - https://example.com/logo.jpg
+                      code:
+                        type: string
+                        description: Coupon code.
+                        examples:
+                          - osama
+                      uses_total:
+                        type: integer
+                        description: Total times the coupon has been used.
+                        examples:
+                          - 0
+                      created_at:
+                        type: string
+                        format: date-time
+                        description: Timestamp when the coupon was created.
+                        examples:
+                          - '2025-01-28T07:35:50.000000Z'
+                      name:
+                        type: string
+                        description: Coupon name.
+                        examples:
+                          - osama
+                      total_usage:
+                        type: integer
+                        description: Total times the coupon has been used, can be null.
+                        examples:
+                          - null
+                        nullable: true
+                      discount_type:
+                        type: string
+                        description: Type of discount (p = percentage, f = fixed amount).
+                        examples:
+                          - f
+                      applying_method:
+                        type: string
+                        description: Method of coupon application.
+                        examples:
+                          - CODE
+                      conditions:
+                        type: array
+                        description: Conditions for coupon application.
+                        examples:
+                          - null
+                        nullable: true
+                      discount:
+                        type: number
+                        description: Discount value.
+                        examples:
+                          - 155
+                      logged:
+                        type: boolean
+                        description: Indicates if the coupon is logged.
+                        examples:
+                          - false
+                      free_shipping:
+                        type: boolean
+                        description: Whether the coupon offers free shipping.
+                        examples:
+                          - false
+                      free_cod:
+                        type: boolean
+                        description: Whether the coupon offers free cash-on-delivery.
+                        examples:
+                          - false
+                      apply_to:
+                        type: string
+                        description: Applicable scope of the coupon.
+                        examples:
+                          - all
+                      total:
+                        type: integer
+                        description: Total discount amount.
+                        examples:
+                          - 0
+                      max_total:
+                        type: integer
+                        description: Maximum total discount allowed.
+                        examples:
+                          - 0
+                      max_weight:
+                        type: number
+                        description: &gt;-
+                          Maximum total cart weight (in kilograms) allowed for
+                          the coupon to apply. If the cart’s total weight
+                          exceeds this value, the coupon will not apply. Only
+                          applicable to free shipping coupons.
+                        examples:
+                          - 1
+                      date_start:
+                        type: string
+                        format: date
+                        description: Coupon start date.
+                        examples:
+                          - '2025-02-12'
+                      date_end:
+                        type: string
+                        format: date
+                        description: Coupon end date.
+                        examples:
+                          - '2025-03-12'
+                      uses_customer:
+                        type: integer
+                        description: Number of times a customer can use the coupon.
+                        examples:
+                          - 0
+                      coupon_status:
+                        type: boolean
+                        description: Indicates if the coupon is currently active.
+                        examples:
+                          - false
+                      enabled:
+                        type: boolean
+                        description: Indicates if the coupon is enabled.
+                        examples:
+                          - false
+                      status_code:
+                        type: string
+                        description: Status code of the coupon.
+                        examples:
+                          - coupon_inactive
+                      maximum_discount_value:
+                        type: number
+                        description: Maximum discount value allowed, can be null.
+                        examples:
+                          - null
+                        nullable: true
+                      orders:
+                        type: array
+                        description: List of orders associated with the coupon.
+                        items:
+                          type: string
+                        examples:
+                          - []
+                      total_sales:
+                        type: integer
+                        description: Total sales generated by the coupon.
+                        examples:
+                          - 0
+                      total_customers:
+                        type: integer
+                        description: Total number of customers who used the coupon.
+                        examples:
+                          - 0
+                      note:
+                        type: string
+                        description: Additional note about the coupon, can be null.
+                        examples:
+                          - null
+                        nullable: true
+                      is_mazeed_active:
+                        type: boolean
+                        description: Indicates if the coupon is active in Mazeed.
+                        examples:
+                          - false
+                      is_pos_active:
+                        type: boolean
+                        description: Indicates if the coupon is active in POS.
+                        examples:
+                          - false
+                      is_shown_in_pos:
+                        type: boolean
+                        description: Indicates if the coupon is visible in POS.
+                        examples:
+                          - false
+                      is_mobile_app_active:
+                        type: boolean
+                        description: Indicates if the coupon is active in the mobile app.
+                        examples:
+                          - false
+                      apply_to_data:
+                        type: array
+                        description: Data related to where the coupon is applied.
+                        items:
+                          type: string
+                        examples:
+                          - []
+                    x-apidog-orders:
+                      - coupon_id
+                      - id
+                      - store_id
+                      - store_name
+                      - store_logo
+                      - code
+                      - uses_total
+                      - created_at
+                      - name
+                      - total_usage
+                      - discount_type
+                      - applying_method
+                      - conditions
+                      - discount
+                      - logged
+                      - free_shipping
+                      - free_cod
+                      - apply_to
+                      - total
+                      - max_total
+                      - max_weight
+                      - date_start
+                      - date_end
+                      - uses_customer
+                      - coupon_status
+                      - enabled
+                      - status_code
+                      - maximum_discount_value
+                      - orders
+                      - total_sales
+                      - total_customers
+                      - note
+                      - is_mazeed_active
+                      - is_pos_active
+                      - is_shown_in_pos
+                      - is_mobile_app_active
+                      - apply_to_data
+                    required:
+                      - max_weight
+                    x-apidog-ignore-properties: []
+                  message:
+                    type: object
+                    description: Message details.
+                    properties:
+                      code:
+                        type: string
+                        description: Message code, can be null.
+                        examples:
+                          - null
+                        nullable: true
+                      name:
+                        type: string
+                        description: Message name, can be null.
+                        examples:
+                          - null
+                        nullable: true
+                      description:
+                        type: string
+                        description: Message description, can be null.
+                        examples:
+                          - null
+                        nullable: true
+                    x-apidog-orders:
+                      - code
+                      - name
+                      - description
+                    x-apidog-ignore-properties: []
+                x-apidog-orders:
+                  - status
+                  - coupon
+                  - message
+                x-apidog-ignore-properties: []
+          headers: {}
+          x-apidog-name: OK
+        '401':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                description: &gt;-
+                  Response returned when the request cannot be authenticated
+                  because the required credentials are missing, invalid, or
+                  expired.
+                properties:
+                  status:
+                    type: string
+                    description: Indicates the overall status of the API response.
+                    examples:
+                      - error
+                  message:
+                    type: object
+                    description: &gt;-
+                      Contains structured details explaining why the request
+                      could not be authenticated.
+                    properties:
+                      type:
+                        type: string
+                        description: Indicates the category of the response message.
+                        examples:
+                          - error
+                      code:
+                        type: string
+                        description: &gt;-
+                          A machine-readable code identifying the authentication
+                          error. Returns null when no specific code is
+                          available.
+                        examples:
+                          - UNAUTHORIZED
+                        nullable: true
+                      name:
+                        type: string
+                        description: &gt;-
+                          A short, human-readable title describing the
+                          authentication error. Returns null when no title is
+                          available.
+                        examples:
+                          - Unauthorized
+                        nullable: true
+                      description:
+                        type: string
+                        description: &gt;-
+                          A human-readable explanation of why the request could
+                          not be authenticated. Returns null when no detailed
+                          explanation is available.
+                        examples:
+                          - &gt;-
+                            Authentication credentials are missing, invalid, or
+                            expired.
+                        nullable: true
+                    required:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-orders:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-ignore-properties: []
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                examples:
+                  - status: error
+                    message:
+                      type: error
+                      code: UNAUTHORIZED
+                      name: Unauthorized
+                      description: &gt;-
+                        Authentication credentials are missing, invalid, or
+                        expired.
+                x-apidog-ignore-properties: []
+              examples:
+                '2':
+                  summary: Example 1
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_MISSING
+                      name: Sorry
+                      description: Please login first.
+                '3':
+                  summary: Example 2
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Login session expired. Please login again.
+                '4':
+                  summary: Example 3
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Invalid authentication
+          headers: {}
+          x-apidog-name: Unauthorized
+        '422':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                description: &gt;-
+                  Response returned when the request is correctly formatted but
+                  one or more fields contain invalid values or fail the required
+                  validation rules.
+                properties:
+                  status:
+                    type: string
+                    description: Indicates the overall status of the API response.
+                    examples:
+                      - error
+                  message:
+                    type: object
+                    description: &gt;-
+                      Contains structured details about the validation error and
+                      the request fields that failed validation.
+                    properties:
+                      type:
+                        type: string
+                        description: Indicates the category of the response message.
+                        examples:
+                          - error
+                      code:
+                        type: string
+                        description: &gt;-
+                          A machine-readable code that identifies the validation
+                          error.
+                        examples:
+                          - VALIDATION_ERROR
+                      name:
+                        type: string
+                        description: &gt;-
+                          A short, human-readable title describing the
+                          validation error.
+                        examples:
+                          - Validation Error
+                      description:
+                        type: string
+                        description: &gt;-
+                          A human-readable summary explaining that one or more
+                          request fields failed validation.
+                        examples:
+                          - The provided request data failed validation.
+                      validations:
+                        type: array
+                        description: &gt;-
+                          A list of request fields that failed validation and
+                          the errors associated with each field.
+                        items:
+                          type: object
+                          description: &gt;-
+                            Contains the name of a field that failed validation
+                            and its corresponding error messages.
+                          properties:
+                            field:
+                              type: string
+                              description: &gt;-
+                                The name or path of the request field that
+                                failed validation.
+                              examples:
+                                - discount
+                            errors:
+                              type: array
+                              description: &gt;-
+                                A list of human-readable messages describing the
+                                validation errors for the field.
+                              items:
+                                type: string
+                                description: &gt;-
+                                  A human-readable message describing a
+                                  validation rule that the field failed.
+                                examples:
+                                  - The discount field must be a number.
+                              examples:
+                                - - The discount field must be a number.
+                          required:
+                            - field
+                            - errors
+                          x-apidog-orders:
+                            - field
+                            - errors
+                          x-apidog-ignore-properties: []
+                    required:
+                      - type
+                      - code
+                      - name
+                      - description
+                      - validations
+                    x-apidog-orders:
+                      - type
+                      - code
+                      - name
+                      - description
+                      - validations
+                    x-apidog-ignore-properties: []
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                examples:
+                  - status: error
+                    message:
+                      type: error
+                      code: VALIDATION_ERROR
+                      name: Validation Error
+                      description: The provided request data failed validation.
+                      validations:
+                        - field: discount
+                          errors:
+                            - The discount field must be a number.
+                x-apidog-ignore-properties: []
+              example:
+                status: validation_error
+                message:
+                  type: validation_errors
+                  code: ERROR_POPUP_OK
+                  name: Inputs
+                  description: Input errors!
+                  validations:
+                    - field: name
+                      errors:
+                        - The name must be a string.
+                        - The name must be at least 3 kilobytes.
+                    - field: code
+                      errors:
+                        - The code must not contain any spaces
+                        - The code must be a string.
+                        - The code must be at least 1 kilobytes.
+                        - The code is required
+                    - field: discount_type
+                      errors:
+                        - The selected discount type is invalid.
+                    - field: discount
+                      errors:
+                        - The discount must be a number.
+                    - field: free_shipping
+                      errors:
+                        - The free shipping field must be true or false.
+                    - field: total
+                      errors:
+                        - The total must be a number.
+                    - field: date_start
+                      errors:
+                        - The Start date does not match the format Y-m-d.
+                        - &gt;-
+                          The Start date must be a date before or equal to End
+                          date.
+                    - field: date_end
+                      errors:
+                        - The End date does not match the format Y-m-d.
+                        - &gt;-
+                          The End date must be a date after or equal to Start
+                          date.
+                    - field: uses_total
+                      errors:
+                        - The uses total must be an integer.
+                    - field: uses_customer
+                      errors:
+                        - The uses customer must be an integer.
+                    - field: is_pos_active
+                      errors:
+                        - The is pos active field must be true or false.
+          headers: {}
+          x-apidog-name: Validation Error
+        '500':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Status of the error.
+                  message:
+                    $ref: '#/components/schemas/ResponseEnvelopMessage'
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                x-apidog-ignore-properties: []
+              example:
+                status: error
+                message:
+                  type: error
+                  code: MSG_HIDDEN
+                  name: Error
+                  description: Internal Server Error
+          headers: {}
+          x-apidog-name: Internal Server error
+      security: []
+      x-apidog-folder: Default module/Apps/Merchant APIs/Marketing/Coupons
+      x-apidog-status: released
+      x-run-in-apidog: https://app.apidog.com/web/project/613905/apis/api-13940921-run
+components:
+  schemas:
+    ResponseEnvelopMessage:
+      type: object
+      properties:
+        type:
+          type: string
+          description: Type of response message returned by the API.
+          examples:
+            - success
+        code:
+          type: string
+          description: Response code returned by the API, if available.
+          examples:
+            - MSG_POPUP_OK
+          nullable: true
+        name:
+          type: string
+          description: Name or title of the response message, if available.
+          examples:
+            - Coupons
+          nullable: true
+        description:
+          type: string
+          description: Detailed description of the response message, if available.
+          examples:
+            - Coupons created successfully
+          nullable: true
+      required:
+        - type
+        - code
+        - name
+        - description
+      description: Additional response metadata.
+      x-apidog-orders:
+        - type
+        - code
+        - name
+        - description
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+  securitySchemes: {}
+servers:
+  - url: https://api.zid.sa/
+    description: Prod Env
+security: []
+
+```
+</pre></body></html>

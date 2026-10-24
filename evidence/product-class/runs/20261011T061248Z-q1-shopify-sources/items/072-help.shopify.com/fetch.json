@@ -1,0 +1,18 @@
+{
+ "n": 72,
+ "url": "https://help.shopify.com/en/manual/payments/shopify-payments/store-currency/multi-currency.md",
+ "dir": "items/072-help.shopify.com",
+ "fetched_at": "2026-10-11T06:13:03Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/payments/shopify-payments/store-currency/multi-currency.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 406,
+ "cited_in": [
+  "SH-S-0366"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "9fd421113d98f8cd8433ed0c24bf9c338b3e710f1265d7bc9ef1ab7cdffce191",
+ "raw_ext": "txt"
+}

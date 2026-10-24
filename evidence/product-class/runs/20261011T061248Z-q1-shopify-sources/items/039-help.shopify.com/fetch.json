@@ -1,0 +1,26 @@
+{
+ "n": 39,
+ "url": "https://help.shopify.com/en/manual/international/pricing/fees.md",
+ "dir": "items/039-help.shopify.com",
+ "fetched_at": "2026-10-11T06:12:59Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/international/pricing/fees.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 2335,
+ "cited_in": [
+  "SH-S-0552",
+  "SH-S-0553",
+  "SH-S-0554",
+  "SH-S-0555",
+  "SH-S-0556",
+  "SH-S-0557",
+  "SH-S-0558",
+  "SH-S-0559",
+  "SH-S-0560"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "3f61d23e7846b8d92c7f3662f7135ef04e591ddb7b909830478ef6d248acdcfc",
+ "raw_ext": "txt"
+}

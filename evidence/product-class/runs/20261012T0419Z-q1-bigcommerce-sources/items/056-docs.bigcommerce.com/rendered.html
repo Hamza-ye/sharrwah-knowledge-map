@@ -1,0 +1,203 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">&gt; This page is for Developer.
+
+&gt; For clean Markdown of any page, append .md to the page URL.
+&gt; For a complete documentation index, see https://docs.bigcommerce.com/llms.txt.
+&gt; For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server.
+
+# Payments
+
+The B2B Edition Payments API provides endpoints for enabling, disabling, and updating active payment methods on a Company-to-Company basis. Every payment method you have enabled on the store-level can be enabled or disabled as needed on the Company level. In addition, the specific behaviors for Company credit and payment on terms can be adjusted with this API.
+
+&gt; **NOTE**
+&gt; The Company credit and payment on terms features must be enabled in order to use their respective API paths. Using either path with the corresponding store-level feature disabled will cause errors or unexpected behavior. Refer to each endpoint for details.
+
+For information on managing the payment methods available to the B2B Edition Payments API, refer to [Payments (Help Center)](https://support.bigcommerce.com/s/article/Getting-Started-Payments), as this is not currently manageable via API. To learn more about Company credit and payment on terms, see [B2B Edition Settings](https://support.bigcommerce.com/s/article/B2B-Edition-Settings) and [Companies](https://support.bigcommerce.com/s/article/B2B-Edition-User-Guide-Company-and-Customer-Functions).
+
+## Retrieving Payment Method Information for Companies
+
+The B2B Edition Payments API has three endpoints for returning the payment methods available to Company accounts, each with its own context and use cases.
+
+| Endpoint                                                                                                           | Description                                                         | Use Cases                                                                                                                                                                                                                                                  |
+| ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Get Payment Methods](/developer/api-reference/rest/b2b/management/payment/get-payments)                           | Returns a list of all payment methods available on the store.       | This endpoint allows you to confirm which payment methods and provides the payment's identifier for future requests.                                                                                                                                       |
+| [Get Company Payment Methods](#get-company-payment-methods)                                                        | Returns the list of payment methods for a specific Company account. | Use this endpoint to identify payment methods that are available for a particular Company, but not currently enabled.                                                                                                                                      |
+| [Get All Active Payment Methods](/developer/api-reference/rest/b2b/management/payment/get-company-payment-methods) | Get all currently enabled payment methods across Companies.         | This allows you to identify enabled payment methods for all Company accounts in a store. Use the `companyid` parameter to identify enabled payment methods on a particular Company account more efficiently than the Get Company Payment Methods endpoint. |
+
+## Payment method support and limitations
+
+B2B Edition supports payment methods that are integrated as standard checkout modules, identified by a `code` such as `squarev2` or `braintree`, when calling the [Get All Payment Methods](/developer/api-reference/rest/admin/payments/methods/v2/get-all-payment-methods) endpoint. These payment methods can be enabled or disabled on a company-by-company basis.
+
+&gt; **Warning**
+&gt;
+&gt; Payment providers configured through a mechanism other than a standard checkout module integration aren't recognized by B2B Edition's payment method list. As a result, such a payment method may not appear in Company payment settings, and an already-enabled one can be automatically removed the next time payment methods are refreshed.
+
+### Supported payment methods
+
+These gateways have checkout module representation and are returned by the [Get All Payment Methods](/developer/api-reference/rest/admin/payments/methods/v2/get-all-payment-methods) endpoint. B2B Edition can enable or disable these payment methods on a company-by-company basis.
+
+| Code                                | Provider                                                           |
+| ----------------------------------- | ------------------------------------------------------------------ |
+| `2checkout`                         | 2Checkout (Verifone)                                               |
+| `adyen`                             | Adyen (legacy)                                                     |
+| `adyenv2`                           | Adyen v2                                                           |
+| `adyenv3`                           | Adyen v3                                                           |
+| `affirm`                            | Affirm                                                             |
+| `afterpay`                          | Afterpay                                                           |
+| `amazonpay`                         | Amazon Pay                                                         |
+| `applepay`                          | Apple Pay                                                          |
+| `authorizenet`                      | Authorize.net                                                      |
+| `bankdeposit`                       | Bank Deposit (offline)                                             |
+| `beanstream`                        | Beanstream (Bambora)                                               |
+| `bigcommerce`                       | BigCommerce gift certificates, store credit, and manual payment    |
+| `bigcommerce_payments`              | BigCommerce Payments                                               |
+| `bigcommerce_payments_apms`         | BigCommerce Payments — Alternative payment methods                 |
+| `bigcommerce_payments_creditcards`  | BigCommerce Payments — Credit cards                                |
+| `bigcommerce_payments_fastlane`     | BigCommerce Payments — Fastlane                                    |
+| `bigcommerce_payments_invoices`     | BigCommerce Payments — Invoices                                    |
+| `bigcommerce_payments_paylater`     | BigCommerce Payments — Pay Later                                   |
+| `bigcommerce_payments_venmo`        | BigCommerce Payments — Venmo                                       |
+| `bigpaypay`                         | BigPay (test/internal gateway)                                     |
+| `bluesnap`                          | BlueSnap (legacy)                                                  |
+| `bluesnapdirect`                    | BlueSnap Direct                                                    |
+| `bluesnapv2`                        | BlueSnap v2                                                        |
+| `bnz`                               | Bank of New Zealand (BNZ)                                          |
+| `bolt`                              | Bolt                                                               |
+| `bpay`                              | BPAY (offline)                                                     |
+| `braintree`                         | Braintree                                                          |
+| `braintreeacceleratedcheckout`      | Braintree Accelerated Checkout                                     |
+| `braintreeach`                      | Braintree ACH                                                      |
+| `braintreelocalmethods`             | Braintree local payment methods                                    |
+| `braintreepaypal`                   | Braintree PayPal                                                   |
+| `braintreepaypalcredit`             | Braintree PayPal Credit                                            |
+| `braintreesepa`                     | Braintree SEPA                                                     |
+| `braintreevenmo`                    | Braintree Venmo                                                    |
+| `braintreevisacheckout`             | Braintree Visa Checkout                                            |
+| `cardconnect`                       | CardConnect                                                        |
+| `cba_mpgs`                          | Commonwealth Bank / Mastercard Payment Gateway Services (CBA MPGS) |
+| `chasepay`                          | Chase Pay                                                          |
+| `checkoutcom`                       | Checkout.com                                                       |
+| `cheque`                            | Cheque (offline)                                                   |
+| `clearpay`                          | Clearpay                                                           |
+| `clover`                            | Clover                                                             |
+| `cod`                               | Cash on delivery (offline)                                         |
+| `converge`                          | Converge                                                           |
+| `cybersourcedirect`                 | CyberSource Direct                                                 |
+| `cybersourcev2`                     | CyberSource v2                                                     |
+| `eselectplusdp`                     | Chase Paymentech eSelect Plus (Direct Post)                        |
+| `eselectplushp`                     | Chase Paymentech eSelect Plus (Hosted Page)                        |
+| `eselectplushpus`                   | Chase Paymentech eSelect Plus (Hosted Page, US)                    |
+| `eway`                              | eWAY                                                               |
+| `ewaynz`                            | eWAY New Zealand                                                   |
+| `ewayrapid`                         | eWAY Rapid                                                         |
+| `ewayuk`                            | eWAY UK                                                            |
+| `firstdatagge4`                     | First Data Global Gateway e4                                       |
+| `globalpayments`                    | Global Payments                                                    |
+| `googlepay`                         | Google Pay                                                         |
+| `googlepay_bigcommerce_payments`    | Google Pay via BigCommerce Payments                                |
+| `googlepayadyenv2`                  | Google Pay via Adyen v2                                            |
+| `googlepayadyenv3`                  | Google Pay via Adyen v3                                            |
+| `googlepayauthorizenet`             | Google Pay via Authorize.net                                       |
+| `googlepaybnz`                      | Google Pay via BNZ                                                 |
+| `googlepaybraintree`                | Google Pay via Braintree                                           |
+| `googlepaycheckoutcom`              | Google Pay via Checkout.com                                        |
+| `googlepaycybersourcev2`            | Google Pay via CyberSource v2                                      |
+| `googlepayorbital`                  | Google Pay via Orbital                                             |
+| `googlepaypaypalcommerce`           | Google Pay via PayPal Commerce Platform                            |
+| `googlepaystripe`                   | Google Pay via Stripe                                              |
+| `googlepaystripeocs`                | Google Pay via Stripe Optimized Checkout Suite                     |
+| `googlepaystripeupe`                | Google Pay via Stripe Unified Payments Element                     |
+| `googlepaytdonlinemart`             | Google Pay via TD OnlineMart                                       |
+| `googlepayworldpayaccess`           | Google Pay via Worldpay Access                                     |
+| `hps`                               | Heartland Payment Systems                                          |
+| `humm`                              | Humm                                                               |
+| `instore`                           | In-store (offline)                                                 |
+| `klarna`                            | Klarna (legacy direct integration)                                 |
+| `linkpointconnect`                  | LinkPoint Connect                                                  |
+| `mollie`                            | Mollie                                                             |
+| `moneris`                           | Moneris                                                            |
+| `moneybookers`                      | Moneybookers (Skrill)                                              |
+| `moneyorder`                        | Money order (offline)                                              |
+| `myvirtualmerchant`                 | My Virtual Merchant (Elavon)                                       |
+| `nab`                               | National Australia Bank (NAB)                                      |
+| `nmi`                               | Network Merchants Inc. (NMI)                                       |
+| `nochex`                            | Nochex                                                             |
+| `ogone`                             | Ogone (Ingenico)                                                   |
+| `opy`                               | Openpay                                                            |
+| `orbital`                           | Orbital (Chase Paymentech)                                         |
+| `paymate`                           | PayMate                                                            |
+| `paymetric`                         | Paymetric                                                          |
+| `paypal`                            | PayPal (legacy direct integration)                                 |
+| `paypalcommerce`                    | PayPal Commerce Platform                                           |
+| `paypalcommerceacceleratedcheckout` | PayPal Commerce — Accelerated Checkout                             |
+| `paypalcommercealternativemethods`  | PayPal Commerce — Alternative payment methods                      |
+| `paypalcommercecredit`              | PayPal Commerce — PayPal Credit                                    |
+| `paypalcommercecreditcards`         | PayPal Commerce — Credit cards                                     |
+| `paypalcommercevenmo`               | PayPal Commerce — Venmo                                            |
+| `paypalexpress`                     | PayPal Express Checkout                                            |
+| `paypalexpresscredit`               | PayPal Express Checkout Credit                                     |
+| `paypalpaymentsprous`               | PayPal Payments Pro (US)                                           |
+| `paystation`                        | Paystation                                                         |
+| `plugnpay`                          | Plug'n Pay                                                         |
+| `protx`                             | Protx (legacy Sage Pay)                                            |
+| `protxvspdirect`                    | Protx VSP Direct                                                   |
+| `psigate`                           | Psigate                                                            |
+| `pxpay`                             | PxPay (Payment Express / Windcave)                                 |
+| `pxpost`                            | PxPost (Payment Express / Windcave)                                |
+| `qbmsv2`                            | QuickBooks Merchant Services v2                                    |
+| `quadpay`                           | Quadpay (Zip)                                                      |
+| `realex`                            | Realex Payments (Global Payments)                                  |
+| `securenet`                         | SecureNet                                                          |
+| `securepay`                         | SecurePay                                                          |
+| `sezzle`                            | Sezzle                                                             |
+| `shopkeep`                          | ShopKeep                                                           |
+| `square`                            | Square (legacy)                                                    |
+| `squarev2`                          | Square v2                                                          |
+| `storecredit`                       | Store credit (offline)                                             |
+| `stripe`                            | Stripe (legacy)                                                    |
+| `stripeocs`                         | Stripe Optimized Checkout Suite                                    |
+| `stripeupe`                         | Stripe Unified Payments Element                                    |
+| `stripev3`                          | Stripe v3                                                          |
+| `tdonlinemart`                      | TD OnlineMart                                                      |
+| `testgateway`                       | Test Gateway (offline/test)                                        |
+| `usaepay`                           | USAePay                                                            |
+| `vantiv`                            | Vantiv (Worldpay)                                                  |
+| `vantivcore`                        | Vantiv Core                                                        |
+| `vcsdivertccform`                   | VCS Divert (credit card form)                                      |
+| `worldpay`                          | Worldpay                                                           |
+| `worldpayaccess`                    | Worldpay Access                                                    |
+| `zip`                               | Zip                                                                |
+
+&gt; **Note**
+&gt;
+&gt; Some of these gateways are gated behind a store's plan or an active experiment, so not every code in this list is available on every store. A code only becomes available to a store once its store-level requirements are met — this table shows what B2B Edition can support, not what's active on any single store.
+
+### Payment methods not supported
+
+These providers are known to BigCommerce Payments infrastructure but don't have checkout module representation, so they aren't returned by the Get All Payment Methods endpoint. B2B Edition doesn't reliably recognize these — a Company using one of them can have it automatically removed from payment settings.
+
+| Code                          | Provider                                                                   |
+| ----------------------------- | -------------------------------------------------------------------------- |
+| `bankful_payment_app`         | Bankful                                                                    |
+| `bitpay`                      | BitPay                                                                     |
+| `cabbage_pay`                 | Cabbage Pay                                                                |
+| `cybersource`                 | CyberSource (legacy v1 — superseded by CyberSource v2, which is supported) |
+| `dlocal`                      | dLocal                                                                     |
+| `elavon`                      | Elavon                                                                     |
+| `electronic_payment_exchange` | Electronic Payment Exchange (EPX)                                          |
+| `firstdatae4v14`              | First Data e4 (v14)                                                        |
+| `mercado_pago`                | Mercado Pago                                                               |
+| `migs`                        | Mastercard Internet Gateway Service (MIGS)                                 |
+| `migsredir`                   | MIGS (redirect)                                                            |
+| `nexi`                        | Nexi                                                                       |
+| `optty`                       | Optty                                                                      |
+| `paypalglobal`                | PayPal (legacy Payflow-based integration)                                  |
+| `pin`                         | Pin Payments                                                               |
+| `pinwheel`                    | Pinwheel                                                                   |
+| `quickbooks`                  | QuickBooks Payments                                                        |
+| `sagepay`                     | Sage Pay (Opayo)                                                           |
+| `serve_first`                 | ServeFirst                                                                 |
+| `tilo`                        | TiloPay                                                                    |
+| `transbank`                   | Transbank                                                                  |
+| `windcave`                    | Windcave                                                                   |
+
+If a payment method you've configured on the store doesn't appear in B2B Edition's Company payment settings, or disappears after previously being enabled, check whether it's in the supported list above. If it isn't, it currently falls outside what B2B Edition can reliably track, and [BigCommerce support](https://support.bigcommerce.com/s/contact) can help with a workaround.</pre></body></html>

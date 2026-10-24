@@ -1,0 +1,20 @@
+{
+ "n": 81,
+ "url": "https://help.zid.sa/about-zid-financing/",
+ "dir": "items/081-help.zid.sa",
+ "fetched_at": "2026-10-12T04:52:13Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/about-zid-financing/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 24183,
+ "cited_in": [
+  "ZD-S-0693",
+  "ZD-S-0694",
+  "ZD-S-0695"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "b15bbc27869de67168d81533da86d9b4816e3fe30bbc4a06a0faee2bf8e9fd2f",
+ "raw_ext": "html"
+}

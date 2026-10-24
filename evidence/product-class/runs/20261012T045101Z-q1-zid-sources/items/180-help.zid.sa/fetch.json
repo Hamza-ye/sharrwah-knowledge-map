@@ -1,0 +1,19 @@
+{
+ "n": 180,
+ "url": "https://help.zid.sa/zid-reminder/",
+ "dir": "items/180-help.zid.sa",
+ "fetched_at": "2026-10-12T04:53:52Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/zid-reminder/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 24888,
+ "cited_in": [
+  "ZD-S-1018",
+  "ZD-S-1019"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "f2bbb3451cbd770589116ef02fe6e4f312538b8dd003232d20ecd5fd487723b5",
+ "raw_ext": "html"
+}

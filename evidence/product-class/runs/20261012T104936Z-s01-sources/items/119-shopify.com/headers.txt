@@ -1,0 +1,19 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Mon, 12 Oct 2026 10:51:26 GMT
+content-type: text/html; charset=utf-8
+strict-transport-security: max-age=15552000; includeSubDomains; preload
+x-content-type-options: nosniff
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Ej7iauNzJKg8Qa9M90eC0qmSClcE%2B8YXYgwDYrWL858hc4TvanEVm1EoHiIpkrJYQIANXQzaah0XueSj%2FMsPqnpUOouFxMYkAVVt%2F4XbZYuTQRuuDOIwWBcAY5cJYNG%2Fuw%3D%3D"}]}
+cf-cache-status: DYNAMIC
+nel: {"report_to":"cf-nel","success_fraction":0.01,"max_age":604800}
+age: 583
+cache-control: max-age=900, stale-while-revalidate=86400
+last-modified: Mon, 12 Oct 2026 10:41:43 GMT
+server: cloudflare
+content-encoding: br
+vary: accept-encoding
+cf-ray: a4958c9f8a93b6a5-IAD
+alt-svc: h3=":443"; ma=86400
+

@@ -1,0 +1,20 @@
+{
+ "n": 8,
+ "url": "https://www.bigcommerce.com/blog/closed-beta-opportunity-bigcommerce-payments/",
+ "dir": "items/008-bigcommerce.com",
+ "fetched_at": "2026-10-13T00:35:29Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.bigcommerce.com/blog/closed-beta-opportunity-bigcommerce-payments/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 53161,
+ "cited_in": [
+  "S01-BC-C076",
+  "S01-BC-C077",
+  "S01-BC-C078"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "32d1e5718b58334d9b9cfaad00997445e6005930d5a54d8c7ade8ac9ce35fbd9",
+ "raw_ext": "html"
+}

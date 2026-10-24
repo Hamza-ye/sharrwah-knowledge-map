@@ -1,0 +1,116 @@
+[
+{
+"n": 1,
+"url": "https://automattic.com/ai-guidelines",
+"dir": "items/001-automattic.com",
+"keep_body": false
+},
+{
+"n": 2,
+"url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/apis/store-api/rate-limiting.md",
+"dir": "items/002-raw.githubusercontent.com",
+"keep_body": false
+},
+{
+"n": 3,
+"url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/best-practices/data-management/data-stores.md",
+"dir": "items/003-raw.githubusercontent.com",
+"keep_body": false
+},
+{
+"n": 4,
+"url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/extensions/best-practices-extensions/gdpr-compliance.md",
+"dir": "items/004-raw.githubusercontent.com",
+"keep_body": false
+},
+{
+"n": 5,
+"url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/extensions/extension-onboarding/integrating-coming-soon-mode.md",
+"dir": "items/005-raw.githubusercontent.com",
+"keep_body": false
+},
+{
+"n": 6,
+"url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/features/email/customer-review-request.md",
+"dir": "items/006-raw.githubusercontent.com",
+"keep_body": false
+},
+{
+"n": 7,
+"url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/features/orders/high-performance-order-storage/enable-hpos.md",
+"dir": "items/007-raw.githubusercontent.com",
+"keep_body": false
+},
+{
+"n": 8,
+"url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/features/products/product-customs-data.md",
+"dir": "items/008-raw.githubusercontent.com",
+"keep_body": false
+},
+{
+"n": 9,
+"url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/wc-cli/wc-cli-commands/wc-com.md",
+"dir": "items/009-raw.githubusercontent.com",
+"keep_body": false
+},
+{
+"n": 10,
+"url": "https://woocommerce.com/document/bookings-rest-api-reference/",
+"dir": "items/010-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 11,
+"url": "https://woocommerce.com/document/customer-order-withdrawal/",
+"dir": "items/011-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 12,
+"url": "https://woocommerce.com/document/high-performance-order-storage/",
+"dir": "items/012-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 13,
+"url": "https://woocommerce.com/document/introduction-to-woocommerce-bookings/",
+"dir": "items/013-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 14,
+"url": "https://woocommerce.com/document/marketplace-developers-customer-overview/",
+"dir": "items/014-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 15,
+"url": "https://woocommerce.com/document/subscriptions/",
+"dir": "items/015-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 16,
+"url": "https://woocommerce.com/document/subscriptions/develop/action-reference/",
+"dir": "items/016-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 17,
+"url": "https://woocommerce.com/document/support-guide/",
+"dir": "items/017-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 18,
+"url": "https://woocommerce.com/document/woopay-merchant-documentation/",
+"dir": "items/018-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 19,
+"url": "https://woocommerce.com/document/woopayments/settings-guide/",
+"dir": "items/019-woocommerce.com",
+"keep_body": false
+}
+]

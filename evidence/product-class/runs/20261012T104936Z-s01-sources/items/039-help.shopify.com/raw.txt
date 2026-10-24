@@ -1,0 +1,106 @@
+# Shopify Payments refunds
+
+When you [issue a refund](/manual/fulfillment/managing-orders/refunding-orders) through Shopify Payments, the refunded amount is deducted from your next available payout. The refund status is marked as **Pending** for up to 2 business days. During this time, the funds are processed back to your customer. Due to varying processing times at your customer's bank, it might take up to 10 business days for the refunded amount to be received. Refunds are processed in accordance with your payout schedule, and are typically scheduled for the next payout.
+
+You can't cancel or reverse a refund after you [initiate a refund from your Shopify admin](/manual/fulfillment/managing-orders/refunding-orders). If you initiate a refund by mistake, then you can [create a new draft order](/manual/fulfillment/managing-orders/create-orders/create-draft) and [collect the payment again](/manual/fulfillment/managing-orders/create-orders/get-paid) with the draft order.
+
+If a refund fails, remains pending longer than expected, or isn't reflected correctly in your Shopify admin, then refer to [_Troubleshooting failed or pending refunds_](/manual/payments/shopify-payments/refunds-troubleshooting).
+
+## Refund cancellation policy
+
+After you've issued a refund, it can't be canceled.
+
+Refunds are issued only to the original payment method. If the card that you refunded is expired or canceled, then the customer's bank manages the rerouting of the refund through their own processes. To claim the funds, the customer needs to contact their bank, and you can provide them with the Acquirer Reference Number (ARN) to help trace the transaction.
+
+OXXO payments can't be refunded to the original payment method through Shopify Payments. Learn more about [refunds with OXXO](/manual/payments/shopify-payments/local-payment-methods/oxxo#refunds-with-oxxo).
+
+## Refund timeframes
+
+The maximum time frame of issuing a refund depends on your customer's bank's ability to process refunds for orders after a long period of time. You can usually issue a refund up to 120 days.
+
+## Transaction fees
+
+When processing a refund, no additional transaction fee is incurred. However, the original credit card transaction fee isn't refunded to you when issuing a refund.
+
+The [Shopify Payments Terms of Service](https://www.shopify.com/ca/legal/terms-payments-us) state that credit card fees aren't refunded on Shopify Payments transactions when you issue a return to a customer. Shopify Payments incurs costs to process both the refund and the original transaction, so the original credit card processing fee isn't reimbursed.
+
+This means that when an order's been paid for, if you later refund or cancel the order, then you don't get any credit card fees refunded, regardless of whether the order was fulfilled or not.
+
+## Tracking refunds with Acquirer Reference Numbers (ARNs)
+
+To track the refund transaction, you can locate the **Acquirer Reference Number** **(ARN)** in the order timeline under the refund details. ARNs are assigned to refunds processed through Shopify Payments for transactions involving Visa or Mastercard. These unique reference numbers can be used by banks and credit card providers to trace transactions.
+
+### Resolving disputes
+
+If a customer claims that they haven't received their refund, then you can provide them with the ARN and advise them to reach out to their credit card provider for further investigation.
+
+## Insufficient funds with Shopify Payments
+
+If you're using Shopify Payments and you encounter a situation where your payout lacks sufficient funds for a return, then the outcome varies depending on your store's location:
+
+* **Austria, Australia, Belgium, Canada, Czechia, Denmark, Finland, France, Germany, Ireland, Italy, Netherlands, New Zealand, Portugal, Spain, Sweden, Switzerland, United Kingdom, United States**: The balance required for the refund is debited from your bank account. This debit occurs on a day outside your regular payout schedule.
+* **All other countries**: The remaining amount needed for the refund is deducted from subsequent payouts until the refunded amount is fully covered.
+
+### Failed debit attempts with Shopify Payments
+
+If the initial debit attempt fails, then a second attempt is made after 3 business days. If this reattempt also fails, then you must [change your Shopify Payments bank account](/manual/payments/shopify-payments/configuring-shopify-payments#edit-bank-account-information) or repay the negative balance manually.
+
+## Negative balances {#shopify-payments-negative-balance}
+
+Negative balances occur when the cost of refunds, disputes, or fees exceed your store's negative balance threshold. You can [view your current balance](/manual/payments/shopify-payments/payouts/view-details) in the [**Payouts**](https://admin.shopify.com/payments/payouts) page of your Shopify admin.
+
+Each merchant has a dynamic negative balance limit on Shopify. When you exceed your negative balance threshold, you receive a notification in your admin, an email to the store owner email address, and a banner in your [**Orders**](https://admin.shopify.com/orders) page. 
+
+### Managing refunds with a negative balance
+
+When your negative balance reaches this limit, your business can continue issuing refunds, but the funds aren't returned to the customer until the negative balance is cleared. These are called **pending refunds**.
+
+Orders that are refunded after the negative balance threshold has been reached have the status **Refund pending** on your **Orders** page.
+
+If you issue further refunds after reaching your negative balance threshold and receiving these notifications, then you can view details of the total amount you owe, which is calculated from the current amount of your negative balance, and the amount of pending refunds, in the banner on your **Orders** page.
+
+If your Shopify Payments account has a negative balance and the refund status remains **Pending** for more than 2 business days, then the resolution process varies based on your store's location:
+
+* Hong Kong SAR, Japan, Romania, Singapore, and Mexico: Negative balances are cleared by future sales.
+* Europe (using a non-Euro bank account): Negative balances are cleared by future sales.
+* All other countries and currencies: The negative balance is debited from your bank account.
+
+### Clearing a negative balance
+
+To fix a negative balance, Shopify might debit your bank account on file within 2 business days. You can also cover the negative balance with same-day sales, next-day sales, or by making a manual payment to Shopify.
+
+### Considerations for managing negative balances
+
+* Refunds are processed in the order they were created after the negative balance clears.
+* If you issue a refund after exceeding your refund limit, then the customer is notified only when the refund has processed.
+* If your Shopify Payments account was rejected due to negative balances, then you can reach out to [request reconsideration](/manual/payments/shopify-payments/onboarding/reapplying-to-shopify-payments#request-reconsideration).
+
+### Automatic debit
+
+Automatic debits occur when Shopify initiates a debit to cover a negative balance. This feature is available in most countries and helps maintain a funded, operational account without manual intervention from your business. After the debit is received, any pending refunds are settled. No action is required for an automatic debit to clear your negative balance.
+
+### Single Euro Payments Area (SEPA) mandate for European merchants
+
+If you're located in Europe and use Shopify Payments, then automatic debits are processed through the SEPA direct debit system. When you signed up for Shopify Payments, you agreed to the [Shopify Payments Terms of Service](https://www.shopify.com/legal/terms-payments), which includes consent for Shopify to deposit funds and collect any amounts you owe, including fees, refunds, and chargebacks, from your bank account. 
+
+This agreement is your SEPA mandate, giving Shopify the authorization to debit your bank account when necessary to cover negative balances. The mandate is part of the standard terms you accept when activating Shopify Payments, and it's designed to ensure seamless payment processing and account management.
+
+### Make a payment
+
+When you exceed your negative balance threshold, you receive a notification in your Shopify admin and an email to the store owner email address, and a banner displays in your [**Orders**](https://admin.shopify.com/orders) section.
+
+If you want to complete a manual payment to clear the negative balance, then you can begin this process from the banner in your [**Orders**](https://admin.shopify.com/payments/orders) page, or from the email the store owner receives, using the **Make a payment** option.
+
+#### Steps:
+
+1. From your Shopify admin https://admin.shopify.com/login, go to the [**Orders**](https://admin.shopify.com/login/orders) page.
+2. In the notification banner, click **Make a payment**
+3. On the **Billing information** page, you can view the total amount due, and enter your billing address information.
+4. On the **Payment page**, enter the card details you want to use to clear the balance.
+5. Click **Complete payment**
+
+Before making a payment, review your balance and future payouts in case your negative balance has already been addressed. Any excess payment is credited back to you in your next payout.
+
+## Shopify Recovery team
+
+Depending on the balance, and how long it's been pending, the Shopify Recovery team might reach out to you directly to address the negative balance, and to keep your Shopify Payments account in good standing.

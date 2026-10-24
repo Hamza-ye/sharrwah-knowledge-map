@@ -1,0 +1,18 @@
+{
+ "n": 21,
+ "url": "https://shopify.engineering/deconstructing-monolith-designing-software-maximizes-developer-productivity",
+ "dir": "items/021-shopify.engineering",
+ "fetched_at": "2026-10-10T08:30:28Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://shopify.engineering/deconstructing-monolith-designing-software-maximizes-developer-productivity",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 55156,
+ "cited_in": [
+  "evidence/shopify-engineering/finding-aids/20261010-shopify-engineering-sources.tsv:E021"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "abc0326877d35f251cfe52a5948df2ab5d46c5c6639df8ae05ce1636cc149ce5",
+ "raw_ext": "html"
+}

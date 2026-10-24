@@ -1,0 +1,23 @@
+{
+ "n": 70,
+ "url": "https://help.shopify.com/en/manual/payments/shopify-payments/payouts/reserves.md",
+ "dir": "items/070-help.shopify.com",
+ "fetched_at": "2026-10-11T06:13:02Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/payments/shopify-payments/payouts/reserves.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 2702,
+ "cited_in": [
+  "SH-S-0348",
+  "SH-S-0349",
+  "SH-S-0350",
+  "SH-S-0351",
+  "SH-S-0352",
+  "SH-S-0579"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "253c371fbd9c2bac5d932bb7d774bc1775c533b16a8442624d3e1296cad5306a",
+ "raw_ext": "txt"
+}

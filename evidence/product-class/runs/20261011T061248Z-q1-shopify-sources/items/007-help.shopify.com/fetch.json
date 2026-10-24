@@ -1,0 +1,21 @@
+{
+ "n": 7,
+ "url": "https://help.shopify.com/en/manual/compliance/legal/handling-store-termination.md",
+ "dir": "items/007-help.shopify.com",
+ "fetched_at": "2026-10-11T06:12:56Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/compliance/legal/handling-store-termination.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 1416,
+ "cited_in": [
+  "SH-S-0658",
+  "SH-S-0659",
+  "SH-S-0660",
+  "SH-S-0661"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "1fb9d0b5297911561e8afb6ecfec5a0def5076afe3227d3d4bf722d2be9cc309",
+ "raw_ext": "txt"
+}

@@ -1,0 +1,21 @@
+{
+ "n": 26,
+ "url": "https://help.salla.sa/article/دورة-تحويل-المدفوعات-الإلكترونية/k6l988az2r60ucvfsfnpvlhn",
+ "dir": "items/026-help.salla.sa",
+ "fetched_at": "2026-10-12T10:50:03Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.salla.sa/article/دورة-تحويل-المدفوعات-الإلكترونية/k6l988az2r60ucvfsfnpvlhn",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 134789,
+ "cited_in": [
+  "S01-SA-C004",
+  "S01-SA-C007",
+  "S01-SA-C009",
+  "S01-SA-C015"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "e7bc43f2b150b8f185a1515b2778ded96146d67418a0c30eed0ba1a3569d15a7",
+ "raw_ext": "html"
+}

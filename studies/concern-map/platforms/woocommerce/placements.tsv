@@ -1,0 +1,591 @@
+concern_id	placement	value	status	cite_ids	note
+WC-C-001	software	outside the platform	shown	WC-S-0624 WC-S-0623	Gateways are plugins; form-based gateways send the buyer to the processor's own website. No source read describes a balance held by core.
+WC-C-001	decides	merchant	shown	WC-S-0005 WC-S-0627	The merchant installs gateway plugins and enables them on the Payments settings tab.
+WC-C-001	legal	partner	shown	WC-S-0651 WC-S-0475 WC-S-0652	The payment provider the merchant chooses; its own terms apply. The extension developer may be a different party (WC-C-005).
+WC-C-001	boundary	WC_Payment_Gateway class and the woocommerce_payment_gateways filter; Blocks payment method registration	shown	WC-S-0434 WC-S-0435 WC-S-0452	
+WC-C-001	reason		not shown		
+WC-C-002	software	core	shown	WC-S-0280 WC-S-0603 WC-S-0605 WC-S-0606 WC-S-0625	Bundled in core; per the gateway docs no online payment is made.
+WC-C-002	decides	merchant	shown	WC-S-0030 WC-S-0930	The merchant enables the method and, for bank transfer, enters the account details shown to buyers.
+WC-C-002	legal	merchant	shown	WC-S-0458 WC-S-0647 WC-S-0466	The Terms name WooCommerce among Woo services and make the merchant solely responsible for their ecommerce activities; the core plugin itself is GPL software with no warranty (WC-C-025).
+WC-C-002	boundary	order set to on-hold awaiting payment ("Awaiting BACS payment."); the merchant confirms receipt	shown	WC-S-0604	
+WC-C-002	reason		not shown		
+WC-C-003	software	core	shown	WC-S-0283 WC-S-0608	Bundled in core, but not loaded on new installs or on sites that have not set it up.
+WC-C-003	decides	merchant	shown	WC-S-0608	Loaded only where the merchant enabled it or has PayPal Standard orders; the platform at build hides it otherwise.
+WC-C-003	legal	partner	shown	WC-S-0607 WC-S-0651	PayPal takes the payment; the Terms name PayPal as a third-party service.
+WC-C-003	boundary	redirect to PayPal; REST wc/v3 paypal-standard, paypal-webhooks and paypal-buttons	shown	WC-S-0128 WC-S-0129 WC-S-0130 WC-S-0607	
+WC-C-003	reason		not shown		
+WC-C-004	software	core	shown	WC-S-0618 WC-S-0616	Count by script over the release's country map: 247 country codes; WooPayments is listed for 38, the same set as the WooPayments countries doc.
+WC-C-004	decides	operator, per market or plan	shown	WC-S-0618 WC-S-0619	WooCommerce sets which payment extensions are suggested for each store country and their order.
+WC-C-004	legal		not shown		No source read says who answers for the suggestions; each suggested extension carries its provider's own terms (WC-C-005).
+WC-C-004	boundary	Settings > Payments page; remote suggestion specs with bundled defaults used when remote specs are missing	shown	WC-S-0617 WC-S-0616	
+WC-C-004	reason		not shown		
+WC-C-005	software	extension point	shown	WC-S-0698 WC-S-0627	
+WC-C-005	decides	merchant	shown	WC-S-0651	
+WC-C-005	legal	partner	shown	WC-S-0475 WC-S-0487 WC-S-0564 WC-S-0910 WC-S-0911 WC-S-0912 WC-S-0901	The payment provider's own terms and privacy policy apply. The Marketplace lists Stripe's extension as by Stripe and PayPal Payments as by PayPal, while Square is listed by Woo.
+WC-C-005	boundary	Payment Gateway API; a payments solution sold on the Marketplace needs a separate agreement with Automattic or WooCommerce	shown	WC-S-0627 WC-S-0578 WC-S-0579 WC-S-0902 WC-S-0872	
+WC-C-005	reason		not shown		
+WC-C-006	software	separate service or product line	shown	WC-S-0556 WC-S-0517 WC-S-0621 WC-S-0909 WC-S-0871	Delivered as an extension that connects to the WooPayments server; core treats it as one gateway among many but gives it the Payments menu once onboarded.
+WC-C-006	decides	merchant	shown	WC-S-0556	The merchant chooses whether to install and enable it.
+WC-C-006	legal	separate entity of the platform	shown	WC-S-0458 WC-S-0459 WC-S-0460 WC-S-0476 WC-S-0520	A Woo service contracted with WooCommerce, Inc. or WooCommerce Ireland Ltd.; Stripe is the payment partner (WC-C-048).
+WC-C-006	boundary	WooPayments extension on the core gateway API; WordPress.com connection to the WooPayments server; a Stripe Express account per merchant	shown	WC-S-0517 WC-S-0504 WC-S-0555 WC-S-0506	
+WC-C-006	reason	other: "It integrates into your site’s admin dashboard so that you can manage your payments and orders from one place."	shown	WC-S-0854 WC-S-0557	
+WC-C-007	software	separate service or product line	shown	WC-S-0529 WC-S-0504	Payments add to the WooPayments account balance, with a Stripe Express account behind it, and are paid out to the merchant's bank account.
+WC-C-007	decides	operator, per market or plan	shown	WC-S-0531 WC-S-0536	Payout timing and payout currencies depend on the business location.
+WC-C-007	legal	partner	shown	WC-S-0504 WC-S-0507 WC-S-0532	Shown in part: Stripe sends payouts under its Connected Account Agreement. No source read names the entity that legally holds the balance or the licence it holds it under (WC-C-020).
+WC-C-007	boundary	Stripe Express account and the merchant's bank account; Payments > Payouts in WP Admin	shown	WC-S-0504 WC-S-0529 WC-S-0530 WC-S-0533	
+WC-C-007	reason		not shown		
+WC-C-008	software	outside the platform	shown	WC-S-0855	Applied and managed by Stripe.
+WC-C-008	decides	other: the payments partner ("they make the final decision")	shown	WC-S-0526 WC-S-0519	
+WC-C-008	legal	partner	shown	WC-S-0855 WC-S-0528	
+WC-C-008	boundary	email from Stripe naming the reserve type; funds withheld from the balance	shown	WC-S-0856	
+WC-C-008	reason	other: "Reserves are meant to protect the payments processor (Stripe, in this case) against losses arising from future refunds and disputes."	shown	WC-S-0527	
+WC-C-009	software	separate service or product line	shown	WC-S-0504 WC-S-0522	
+WC-C-009	decides	outside rules	shown	WC-S-0516 WC-S-0521 WC-S-0558	Account information is also retained for tax and compliance purposes.
+WC-C-009	legal	partner	shown	WC-S-0504 WC-S-0522	Merchant information is verified with Stripe; WooPayments works with Stripe to confirm identity.
+WC-C-009	boundary	WooPayments signup, which creates a Stripe Express account; later changes in the Stripe Express dashboard	shown	WC-S-0504	
+WC-C-009	reason	other: "Because the payments sector is heavily regulated"	shown	WC-S-0516	
+WC-C-010	software	separate service or product line	shown	WC-S-0511 WC-S-0510	
+WC-C-010	decides	operator, per market or plan	shown	WC-S-0511 WC-S-0512 WC-S-0515 WC-S-0590	Sources disagree: the WooPayments doc lists 38 countries; the 11.2.1 readme and plugin page name 10. Both recorded. The country is where the business is registered.
+WC-C-010	legal	partner	shown	WC-S-0513	Account types per country follow the partner's adherence to local law.
+WC-C-010	boundary	country chosen at signup (where the business is registered)	shown	WC-S-0512	
+WC-C-010	reason	other: "our partner (Stripe) strictly adheres to the laws and regulations of the country each account is based in"	shown	WC-S-0513 WC-S-0514	
+WC-C-011	software	separate service or product line	shown	WC-S-0524	
+WC-C-011	decides	outside rules	shown	WC-S-0523 WC-S-0563	Card networks, processors and their financial service providers; the linked restricted list is Stripe's.
+WC-C-011	legal	merchant	shown	WC-S-0653 WC-S-0524	The merchant agrees not to transact restricted activities; WooPayments may restrict or close the account.
+WC-C-011	boundary	account review, restriction or shutdown; CBD sellers must use Square or Viva Wallet	shown	WC-S-0524 WC-S-0525 WC-S-0478 WC-S-0518	
+WC-C-011	reason	other: "Due to restrictions put in place by card networks, our payment processors, and their financial service providers"	shown	WC-S-0523	
+WC-C-012	software	separate service or product line	shown	WC-S-0538	
+WC-C-012	decides	operator, per market or plan	shown	WC-S-0537	Fees differ by business country, customer country, currency and payment method.
+WC-C-012	legal	separate entity of the platform	shown	WC-S-0649 WC-S-0650	Charged under the Terms by the Automattic entity the merchant contracts with.
+WC-C-012	boundary	fees deducted from each payment; negative balances recovered by debiting the bank account	shown	WC-S-0538 WC-S-0534	
+WC-C-012	reason		not shown		
+WC-C-013	software	separate service or product line	shown	WC-S-0862	
+WC-C-013	decides	merchant	shown	WC-S-0862	The merchant sets the protection risk level and rules.
+WC-C-013	legal	merchant	shown	WC-S-0468	The Terms make the merchant responsible for verifying customers and their eligibility to transact.
+WC-C-013	boundary	rules run when an order is placed; blocked orders are not charged and go to Pending payment	shown	WC-S-0863	
+WC-C-013	reason		not shown		
+WC-C-014	software	separate service or product line	shown	WC-S-0868	
+WC-C-014	decides	operator, per market or plan	shown	WC-S-0869 WC-S-0870	
+WC-C-014	legal	partner	shown	WC-S-0850 WC-S-0481	Terminals are made by third parties; Stripe Terminal terms apply.
+WC-C-014	boundary	Woo mobile app with a card reader or Tap to Pay	shown	WC-S-0868	
+WC-C-014	reason		not shown		
+WC-C-015	software	separate service or product line	shown	WC-S-0654	
+WC-C-015	decides	merchant	shown	WC-S-0849	Offered by default with WooPayments unless the merchant removes it.
+WC-C-015	legal	merchant	shown	WC-S-0482	Automattic is not a party to the merchant–customer transaction.
+WC-C-015	boundary	checkout option shown with WooPayments	shown	WC-S-0849	
+WC-C-015	reason		not shown		
+WC-C-016	software	outside the platform	shown	WC-S-0559	
+WC-C-016	decides	other: eligibility reviewed automatically ("automatically reviewed for eligibility on a daily basis")	shown	WC-S-0561	
+WC-C-016	legal	partner	shown	WC-S-0560	Loans issued by Celtic Bank, a Utah-chartered industrial bank, through Stripe.
+WC-C-016	boundary	offer by email or dashboard; repayment withheld from transactions	shown	WC-S-0861	
+WC-C-016	reason		not shown		
+WC-C-017	software	separate service or product line	shown	WC-S-0576 WC-S-0580	
+WC-C-017	decides	other: "WooCommerce will pay Partner 70% of the Product Net Revenue that WooCommerce collects"	shown	WC-S-0580	
+WC-C-017	legal	separate entity of the platform	shown	WC-S-0576 WC-S-0580 WC-S-0581 WC-S-0584	WooCommerce, Inc. contracts with vendors and collects purchase revenue; vendors bear taxes; WooCommerce handles refunds and fraud claims.
+WC-C-017	boundary	Marketplace Vendor Agreement; WooCommerce.com checkout and Refund Policy	shown	WC-S-0576 WC-S-0834 WC-S-0583 WC-S-0923	WooCommerce reserves the right to remove a product from the Marketplace and from a user's website.
+WC-C-017	reason		not shown		
+WC-C-018	software	separate service or product line	shown	WC-S-0552	
+WC-C-018	decides	outside rules	shown	WC-S-0550 WC-S-0479	
+WC-C-018	legal	separate entity of the platform	shown	WC-S-0479	Automattic entities acknowledge responsibility for cardholder data within their possession or control.
+WC-C-018	boundary	hosted payment fields from the partner's environment; saved-card tokens stored by the partner	shown	WC-S-0552 WC-S-0554	
+WC-C-018	reason	other: "Because sensitive payment information is never handled by your site or stored on your server, WooPayments helps reduce your PCI compliance scope significantly."	shown	WC-S-0859	
+WC-C-019	software	outside the platform	shown	WC-S-0551 WC-S-0626	The merchant's own site and server.
+WC-C-019	decides	outside rules	shown	WC-S-0882 WC-S-0471	
+WC-C-019	legal	merchant	shown	WC-S-0471 WC-S-0551	
+WC-C-019	boundary	hosting environment; direct gateways need server security	shown	WC-S-0626	
+WC-C-019	reason		not shown		
+WC-C-020	software		not shown		
+WC-C-020	decides		not shown		
+WC-C-020	legal		not shown		No WooCommerce or Automattic source read names the licence, licensed entity or regulator for WooPayments balances. The docs point to Stripe's Connected Account Agreement, accepted at signup, which is Stripe's document and was not read.
+WC-C-020	boundary	Stripe Connected Account Agreement accepted at WooPayments signup	shown	WC-S-0507	
+WC-C-020	reason		not shown		
+WC-C-021	software	separate service or product line	shown	WC-S-0547 WC-S-0549	
+WC-C-021	decides	outside rules	shown	WC-S-0547 WC-S-0860	
+WC-C-021	legal	other: WooPayments ("WooPayments is required to issue a Form 1099-K")	shown	WC-S-0547	The issuing entity is not named on the page.
+WC-C-021	boundary	Payments > Documents menu; monthly invoices	shown	WC-S-0549	
+WC-C-021	reason	other: "an information filing required by the Internal Revenue Service (IRS)"	shown	WC-S-0860	
+WC-C-022	software	separate service or product line	shown	WC-S-0846 WC-S-0952	Applies to e-commerce services on WordPress.com sites, such as a WooCommerce store there.
+WC-C-022	decides	other: Automattic's Store guidelines ("you may not sell (or facilitate the sale of) any of the following")	shown	WC-S-0951	
+WC-C-022	legal	merchant	shown	WC-S-0466	
+WC-C-022	boundary	Terms of Service: Ecommerce Services, Prohibited Uses	shown	WC-S-0648	
+WC-C-022	reason		not shown		
+WC-C-023	software	separate service or product line	shown	WC-S-0458	Applies to Woo services: WooCommerce, WooPayments, WooCommerce Shipping, WooCommerce Tax, MailPoet and services at WooCommerce.com.
+WC-C-023	decides	operator, per market or plan	shown	WC-S-0459 WC-S-0460 WC-S-0457	Set by where the customer resides (Designated Countries or not).
+WC-C-023	legal	separate entity of the platform	shown	WC-S-0459 WC-S-0460 WC-S-0461	
+WC-C-023	boundary	Terms of Service, section 1 Who's Who; business use only	shown	WC-S-0458 WC-S-0456	
+WC-C-023	reason		not shown		
+WC-C-024	software	separate service or product line	shown	WC-S-0494	
+WC-C-024	decides	operator, per market or plan	shown	WC-S-0495	
+WC-C-024	legal	separate entity of the platform	shown	WC-S-0494 WC-S-0498 WC-S-0497 WC-S-0496	WooCommerce, Inc. or WooCommerce Ireland Ltd., with Automattic Inc. as controller or joint controller for some processing.
+WC-C-024	boundary	Privacy Policy controllers chart	shown	WC-S-0494	
+WC-C-024	reason		not shown		
+WC-C-025	software	core	shown	WC-S-0589 WC-S-0585 WC-S-0463 WC-S-0594	
+WC-C-025	decides	platform at build	shown	WC-S-0589	
+WC-C-025	legal	other: GPL licence with no warranty ("THERE IS NO WARRANTY FOR THE PROGRAM")	shown	WC-S-0597	
+WC-C-025	boundary	GPLv3 licence	shown	WC-S-0589	
+WC-C-025	reason	other: "The freedom of open-source means you retain full ownership of your store’s content and data forever."	shown	WC-S-0586	
+WC-C-026	software	separate service or product line	shown	WC-S-0643	
+WC-C-026	decides	platform at build	shown	WC-S-0488	
+WC-C-026	legal	platform company	shown	WC-S-0488 WC-S-0489	California law; state and federal courts in San Francisco County.
+WC-C-026	boundary	Terms of Service, section 15	shown	WC-S-0488	
+WC-C-026	reason		not shown		
+WC-C-027	software	outside the platform	shown	WC-S-0466	
+WC-C-027	decides	merchant	shown	WC-S-0466	
+WC-C-027	legal	merchant	shown	WC-S-0466 WC-S-0468 WC-S-0469	
+WC-C-027	boundary	Terms of Service: Ecommerce Services, Your responsibilities	shown	WC-S-0647	
+WC-C-027	reason	other: "You have control over your store, and with great power comes great responsibility."	shown	WC-S-0848	
+WC-C-028	software	separate service or product line	shown	WC-S-0493	
+WC-C-028	decides	outside rules	shown	WC-S-0490 WC-S-0491 WC-S-0648	The Terms list Cuba, Crimea, Iran, North Korea, the Donetsk and Luhansk People's Republics and Syria, and the SDN list.
+WC-C-028	legal	platform company	shown	WC-S-0492 WC-S-0493	Automattic restricts or blocks access; users represent they are not in sanctioned places or on restricted lists.
+WC-C-028	boundary	Terms of Service section 18 and Ecommerce Services prohibited uses	shown	WC-S-0491 WC-S-0657 WC-S-0648	
+WC-C-028	reason	other: "our ability to provide our Services to you is subject to compliance with US sanctions"	shown	WC-S-0490	
+WC-C-029	software		not shown		Inference: no buyer screening was found in core; the Selling location(s) setting (WC-C-030) limits countries but no source describes it as a sanctions control.
+WC-C-029	decides	outside rules	shown	WC-S-0470	
+WC-C-029	legal	merchant	shown	WC-S-0470	
+WC-C-029	boundary	Terms of Service: Ecommerce Services, Your responsibilities	shown	WC-S-0470	
+WC-C-029	reason		not shown		
+WC-C-030	software	core	shown	WC-S-0600	
+WC-C-030	decides	merchant	shown	WC-S-0600 WC-S-0880	
+WC-C-030	legal	merchant	shown	WC-S-0458 WC-S-0647 WC-S-0466	The Terms name WooCommerce among Woo services and make the merchant solely responsible for their ecommerce activities; the core plugin itself is GPL software with no warranty (WC-C-025).
+WC-C-030	boundary	settings woocommerce_allowed_countries and woocommerce_ship_to_countries	shown	WC-S-0924 WC-S-0925	
+WC-C-030	reason		not shown		
+WC-C-031	software	core	shown	WC-S-0328	
+WC-C-031	decides	merchant	shown	WC-S-0932	A Features setting.
+WC-C-031	legal	merchant	shown	WC-S-0458 WC-S-0647 WC-S-0466	The Terms name WooCommerce among Woo services and make the merchant solely responsible for their ecommerce activities; the core plugin itself is GPL software with no warranty (WC-C-025).
+WC-C-031	boundary	Checkout place order and Store API /checkout endpoint	shown	WC-S-0932	
+WC-C-031	reason		not shown		
+WC-C-032	software	core	shown	WC-S-0553 WC-S-0629 WC-S-0632	
+WC-C-032	decides	merchant	shown	WC-S-0586 WC-S-0588	
+WC-C-032	legal	merchant	shown	WC-S-0587	"your data belongs to you"; no source read names the merchant as data controller in those words.
+WC-C-032	boundary	WordPress database: posts and postmeta or HPOS order tables, and the wp_options table	shown	WC-S-0629 WC-S-0632	
+WC-C-032	reason	other: "The freedom of open-source means you retain full ownership of your store’s content and data forever."	shown	WC-S-0586	
+WC-C-033	software	core	shown	WC-S-0355 WC-S-0631	
+WC-C-033	decides	merchant	shown	WC-S-0355 WC-S-0630	A Features setting; on by default for new installations since 8.2.
+WC-C-033	legal	merchant	shown	WC-S-0458 WC-S-0647 WC-S-0466	The Terms name WooCommerce among Woo services and make the merchant solely responsible for their ecommerce activities; the core plugin itself is GPL software with no warranty (WC-C-025).
+WC-C-033	boundary	dedicated order tables reached through the CRUD data stores	shown	WC-S-0631	
+WC-C-033	reason	other: "This comes with performance issues." (of storing orders as posts)	shown	WC-S-0629	
+WC-C-034	software	outside the platform	shown	WC-S-0642 WC-S-0588 WC-S-0503	Automattic lists the user's hosting provider among vendors "if your site is not hosted by Automattic".
+WC-C-034	decides	merchant	shown	WC-S-0642	
+WC-C-034	legal		not shown		No source read states who is legally responsible for hosting a self-hosted store. Inference: the merchant and their host.
+WC-C-034	boundary	server requirements: WordPress, PHP, MySQL or MariaDB, HTTPS	shown	WC-S-0642	
+WC-C-034	reason		not shown		
+WC-C-035	software	core	shown	WC-S-0609 WC-S-0571	Core sends the data when tracking is enabled.
+WC-C-035	decides	merchant	shown	WC-S-0570	Off by default for the WordPress.org plugin.
+WC-C-035	legal	separate entity of the platform	shown	WC-S-0500 WC-S-0494	Collected under the Automattic Privacy Policy by the Automattic company that contracts with the user.
+WC-C-035	boundary	HTTPS to https://tracking.woocommerce.com/v1/ and the Tracks pixel https://pixel.wp.com/t.gif	shown	WC-S-0609 WC-S-0610	
+WC-C-035	reason	other: "the collected data will help us improve WooCommerce and develop features to support your business growth"	shown	WC-S-0572	
+WC-C-036	software	core	shown	WC-S-0335 WC-S-0611	
+WC-C-036	decides	merchant	shown	WC-S-0936	Requires usage tracking to be enabled.
+WC-C-036	legal		not shown		
+WC-C-036	boundary	HTTPS to https://public-api.wordpress.com/rest/v1.1/logstash	shown	WC-S-0611	
+WC-C-036	reason	other: "to help improve WooCommerce"	shown	WC-S-0936	
+WC-C-037	software	core	shown	WC-S-0038 WC-S-0920	
+WC-C-037	decides		not shown		Inference: the merchant, who reads the logs and configures the log storage method the logging doc refers to.
+WC-C-037	legal	merchant	shown	WC-S-0458 WC-S-0647 WC-S-0466	The Terms name WooCommerce among Woo services and make the merchant solely responsible for their ecommerce activities; the core plugin itself is GPL software with no warranty (WC-C-025).
+WC-C-037	boundary	WC_Logger with pluggable log handlers	shown	WC-S-0446 WC-S-0920	
+WC-C-037	reason		not shown		
+WC-C-038	software	core	shown	WC-S-0622 WC-S-0889	The feature description says all data stays within the store.
+WC-C-038	decides	merchant	shown	WC-S-0325	A Features setting, on by default.
+WC-C-038	legal	merchant	shown	WC-S-0458 WC-S-0647 WC-S-0466	The Terms name WooCommerce among Woo services and make the merchant solely responsible for their ecommerce activities; the core plugin itself is GPL software with no warranty (WC-C-025).
+WC-C-038	boundary	wc-analytics REST namespace	shown	WC-S-0084	
+WC-C-038	reason		not shown		
+WC-C-039	software	separate service or product line	shown	WC-S-0573	
+WC-C-039	decides	merchant	shown	WC-S-0573	The merchant connects the store and authorizes collection.
+WC-C-039	legal	separate entity of the platform	shown	WC-S-0573 WC-S-0494 WC-S-0575	
+WC-C-039	boundary	Jetpack Sync	shown	WC-S-0574	
+WC-C-039	reason		not shown		
+WC-C-040	software	outside the platform	shown	WC-S-0564 WC-S-0565	
+WC-C-040	decides	merchant	shown	WC-S-0564	
+WC-C-040	legal	partner	shown	WC-S-0564 WC-S-0475 WC-S-0660	
+WC-C-040	boundary	the payment extension sends billing and payment data to the provider	shown	WC-S-0564	
+WC-C-040	reason		not shown		
+WC-C-041	software	outside the platform	shown	WC-S-0566	
+WC-C-041	decides	merchant	shown	WC-S-0566	
+WC-C-041	legal	partner	shown	WC-S-0566 WC-S-0475	
+WC-C-041	boundary	the shipping extension sends rate, label and tracking data to the carrier	shown	WC-S-0566	
+WC-C-041	reason		not shown		
+WC-C-042	software	outside the platform	shown	WC-S-0554 WC-S-0552	
+WC-C-042	decides		not shown		
+WC-C-042	legal	partner	shown	WC-S-0480 WC-S-0501	
+WC-C-042	boundary	the site's connection to WordPress.com; tokens stored by the partner	shown	WC-S-0554	
+WC-C-042	reason		not shown		
+WC-C-043	software	separate service or product line	shown	WC-S-0659	
+WC-C-043	decides	platform at build	shown	WC-S-0659	
+WC-C-043	legal	separate entity of the platform	shown	WC-S-0659 WC-S-0499	
+WC-C-043	boundary	standard contractual arrangements	shown	WC-S-0499	
+WC-C-043	reason	other: "Because Automattic’s Services are offered worldwide"	shown	WC-S-0942	
+WC-C-044	software	separate service or product line	shown	WC-S-0658 WC-S-0847	
+WC-C-044	decides	merchant	shown	WC-S-0847	Available to WordPress.com site owners on request; not shown for self-hosted stores.
+WC-C-044	legal	separate entity of the platform	shown	WC-S-0658 WC-S-0502	
+WC-C-044	boundary	Data Processing Agreement, an amendment to the Terms	shown	WC-S-0847	
+WC-C-044	reason	other: "for the GDPR requirements that apply to us as a data processor for your website"	shown	WC-S-0658	
+WC-C-045	software	core	shown	WC-S-0357 WC-S-0358 WC-S-0359 WC-S-0360 WC-S-0929	
+WC-C-045	decides	merchant	shown	WC-S-0881 WC-S-0929	
+WC-C-045	legal	merchant	shown	WC-S-0458 WC-S-0647 WC-S-0466	The Terms name WooCommerce among Woo services and make the merchant solely responsible for their ecommerce activities; the core plugin itself is GPL software with no warranty (WC-C-025).
+WC-C-045	boundary	WordPress personal data exporters and erasers	shown	WC-S-0361 WC-S-0362 WC-S-0363 WC-S-0364	
+WC-C-045	reason		not shown		
+WC-C-046	software	core	shown	WC-S-0640 WC-S-0602	
+WC-C-046	decides	merchant	shown	WC-S-0602 WC-S-0908	The merchant picks the default customer location and adds a MaxMind licence key.
+WC-C-046	legal	partner	shown	WC-S-0640 WC-S-0908	MaxMind GeoLite2 data under the merchant's own MaxMind licence key.
+WC-C-046	boundary	MaxMind database downloaded to wp-content; external IP lookup services tried in shuffled order	shown	WC-S-0602 WC-S-0615 WC-S-0612 WC-S-0613 WC-S-0614	
+WC-C-046	reason	other: "to display tax rates and shipping methods specific to their location"	shown	WC-S-0641	
+WC-C-047	software	extension point	shown	WC-S-0445 WC-S-0919	
+WC-C-047	decides	merchant	shown	WC-S-0927	
+WC-C-047	legal		not shown		
+WC-C-047	boundary	WC_Address_Provider class, registered for shortcode and block checkouts	shown	WC-S-0919	
+WC-C-047	reason		not shown		
+WC-C-048	software	outside the platform	shown	WC-S-0504 WC-S-0651	
+WC-C-048	decides	other: Stripe updates its Connected Account Agreement; the Terms let WooPayments move to another processor	shown	WC-S-0507 WC-S-0477	
+WC-C-048	legal	partner	shown	WC-S-0507 WC-S-0873 WC-S-0505	
+WC-C-048	boundary	Stripe Connected Account Agreement; WordPress.com connection	shown	WC-S-0507 WC-S-0555 WC-S-0508 WC-S-0509 WC-S-0858 WC-S-0472	If the merchant opts out of updated Stripe terms, WooPayments use ends at once though the remaining balance is still paid out; if the WordPress.com connection is cut, WooPayments cannot take payments until reconnected; Automattic may force refunds if a payment processor or regulator requires it.
+WC-C-048	reason		not shown		
+WC-C-049	software	separate service or product line	shown	WC-S-0464 WC-S-0555 WC-S-0634	
+WC-C-049	decides	merchant	shown	WC-S-0634	The merchant connects the site.
+WC-C-049	legal	separate entity of the platform	shown	WC-S-0851	Jetpack-specific terms also apply.
+WC-C-049	boundary	WordPress.com connection token	shown	WC-S-0634 WC-S-0858	
+WC-C-049	reason	other: "to ensure that requests from your site (e.g., payments, refunds, etc.) are securely and correctly attributed to your store"	shown	WC-S-0857	
+WC-C-050	software	extension point	shown	WC-S-0697 WC-S-0620	
+WC-C-050	decides	merchant	shown	WC-S-0644	
+WC-C-050	legal	separate entity of the platform	shown	WC-S-0458 WC-S-0644	Sold as Woo Paid Services under the Terms.
+WC-C-050	boundary	WooCommerce.com subscription for downloads, updates and support	shown	WC-S-0646 WC-S-0900	
+WC-C-050	reason		not shown		
+WC-C-051	software	separate service or product line	shown	WC-S-0535 WC-S-0540	
+WC-C-051	decides	operator, per market or plan	shown	WC-S-0536	
+WC-C-051	legal		not shown		
+WC-C-051	boundary	bank accounts per payout currency; conversion to the default currency	shown	WC-S-0535 WC-S-0539	
+WC-C-051	reason		not shown		
+WC-C-052	software	core	shown	WC-S-0598 WC-S-0874	
+WC-C-052	decides	merchant	shown	WC-S-0598 WC-S-0876 WC-S-0877	Changing the base currency does not convert existing amounts.
+WC-C-052	legal	merchant	shown	WC-S-0458 WC-S-0647 WC-S-0466	The Terms name WooCommerce among Woo services and make the merchant solely responsible for their ecommerce activities; the core plugin itself is GPL software with no warranty (WC-C-025).
+WC-C-052	boundary	setting woocommerce_currency; REST wc/v3 data/currencies	shown	WC-S-0926 WC-S-0127	
+WC-C-052	reason		not shown		
+WC-C-053	software	extension point	shown	WC-S-0875 WC-S-0541	
+WC-C-053	decides	merchant	shown	WC-S-0544 WC-S-0542	The merchant enables currencies and can set manual rates; by default the customer currency is the store currency.
+WC-C-053	legal		not shown		
+WC-C-053	boundary	WooPayments: exchange rates fetched from the WooPayments server unless set manually; optional geolocation to switch currency	shown	WC-S-0543 WC-S-0544 WC-S-0545	
+WC-C-053	reason		not shown		
+WC-C-054	software	core	shown	WC-S-0601 WC-S-0003 WC-S-0546	WooPayments itself has no tax-charging function.
+WC-C-054	decides	merchant	shown	WC-S-0016 WC-S-0878	
+WC-C-054	legal	merchant	shown	WC-S-0467 WC-S-0879	
+WC-C-054	boundary	Tax settings tab; REST wc/v3 taxes and tax-classes; the store address as tax location	shown	WC-S-0117 WC-S-0116 WC-S-0599	
+WC-C-054	reason		not shown		
+WC-C-055	software	separate service or product line	shown	WC-S-0633 WC-S-0634	
+WC-C-055	decides	operator, per market or plan	shown	WC-S-0635	
+WC-C-055	legal	merchant	shown	WC-S-0633 WC-S-0473 WC-S-0474 WC-S-0636 WC-S-0637	The service does not file or remit tax; the Terms say calculations may be provided by Taxamo and cannot be guaranteed.
+WC-C-055	boundary	WordPress.com connection to the WooCommerce Tax service, which uses Automattic's servers and a calculation partner	shown	WC-S-0634 WC-S-0638 WC-S-0956 WC-S-0957 WC-S-0473	Sources differ on the partner: Jetpack's sync page says tax calculations are provided by TaxJar; the Terms give Taxamo as an example. Both recorded. On a broken connection the doc's remedy is to reconnect; no fallback calculation is described.
+WC-C-055	reason	other: "designed to remove the work of building and updating custom tax rate tables"	shown	WC-S-0639	
+WC-C-056	software	extension point	shown	WC-S-0751	
+WC-C-056	decides	merchant	shown	WC-S-0593	
+WC-C-056	legal	app developer	shown	WC-S-0487 WC-S-0656	
+WC-C-056	boundary		not shown		
+WC-C-056	reason		not shown		
+WC-C-057	software	separate service or product line	shown	WC-S-0462	
+WC-C-057	decides	outside rules	shown	WC-S-0462 WC-S-0548	
+WC-C-057	legal	merchant	shown	WC-S-0462	
+WC-C-057	boundary	tax invoices for WooPayments fees under Payments > Documents	shown	WC-S-0549	
+WC-C-057	reason		not shown		
+WC-C-058	software	outside the platform	shown	WC-S-0485	
+WC-C-058	decides	outside rules	shown	WC-S-0484	
+WC-C-058	legal	merchant	shown	WC-S-0484 WC-S-0485	
+WC-C-058	boundary		not shown		
+WC-C-058	reason		not shown		
+WC-C-115	software	outside the platform	shown	WC-S-0864	Stripe's machine-learning screening.
+WC-C-115	decides	other: the WooPayments team ("managed by our team and cannot be modified by merchants")	shown	WC-S-0865	
+WC-C-115	legal		not shown		
+WC-C-115	boundary		not shown		
+WC-C-115	reason	other: "protection against risky transactions"	shown	WC-S-0864	
+WC-C-116	software	separate service or product line	shown	WC-S-0866	
+WC-C-116	decides	buyer	shown	WC-S-0866	A dispute occurs when a cardholder contests a payment; the bank can also start one.
+WC-C-116	legal	merchant	shown	WC-S-0469	
+WC-C-116	boundary	disputes answered through WooPayments; a flat dispute fee	shown	WC-S-0866 WC-S-0649	
+WC-C-116	reason	other: "not responding to disputes would be worse, because it can lead to fines and/or being prohibited from charging certain types of cards"	shown	WC-S-0867	
+WC-C-117	software	separate service or product line	shown	WC-S-0953 WC-S-0954	
+WC-C-117	decides	merchant	shown	WC-S-0953	Sync starts when the merchant connects the site to WordPress.com.
+WC-C-117	legal	separate entity of the platform	shown	WC-S-0962 WC-S-0502	Automattic processes visitors' data in connection with Jetpack, including WooCommerce Shipping & Tax.
+WC-C-117	boundary	Jetpack Sync to WordPress.com servers; order data synced except purchaser address, company, email and phone; a REST API proxy can read live order data	shown	WC-S-0955 WC-S-0961 WC-S-0960	
+WC-C-117	reason		not shown		
+WC-C-059	software	extension point	shown	WC-S-0645 WC-S-0465 WC-S-0945 WC-S-0577	
+WC-C-059	decides	merchant	shown	WC-S-0852	
+WC-C-059	legal	app developer	shown	WC-S-0487 WC-S-0656	Sources differ in emphasis: the Terms say Third-Party Services are not vetted, endorsed or controlled by Automattic, while the readme says Woo developers vet each new Marketplace extension. Both recorded.
+WC-C-059	boundary	WordPress plugin hooks and filters; each extension's own terms and servers	shown	WC-S-0945 WC-S-0465 WC-S-0596 WC-S-0913	The Marketplace offers a Country filter on extensions.
+WC-C-059	reason		not shown		
+WC-C-060	software	separate service or product line	shown	WC-S-0904 WC-S-0567 WC-S-0906	
+WC-C-060	decides	operator, per market or plan	shown	WC-S-0905 WC-S-0592 WC-S-0591	Available to stores based in the United States that use U.S. dollars.
+WC-C-060	legal	partner	shown	WC-S-0483 WC-S-0655 WC-S-0958	Automattic is only an intermediary; data passes through Automattic's servers to EasyPost and the mailing services.
+WC-C-060	boundary	Jetpack connection; labels bought in the order admin; Automattic validates but does not store the data it passes on	shown	WC-S-0567 WC-S-0904 WC-S-0959	
+WC-C-060	reason		not shown		
+WC-C-061	software	extension point	shown	WC-S-0628 WC-S-0699	
+WC-C-061	decides	merchant	shown	WC-S-0651	The Terms give EasyPost as an example of a third-party shipping service the merchant may decide to use.
+WC-C-061	legal	partner	shown	WC-S-0566 WC-S-0487	
+WC-C-061	boundary	Shipping Method API (WC_Shipping_Method and the woocommerce_shipping_methods filter)	shown	WC-S-0628 WC-S-0439	
+WC-C-061	reason		not shown		
+WC-C-062	software	separate service or product line	shown	WC-S-0833	
+WC-C-062	decides	platform at build	shown	WC-S-0833	
+WC-C-062	legal	separate entity of the platform	shown	WC-S-0833 WC-S-0582	Products sold on WooCommerce.com are supported through WooCommerce's helpdesk; vendors answer through WooCommerce's support system.
+WC-C-062	boundary	WooCommerce.com helpdesk	shown	WC-S-0582	
+WC-C-062	reason		not shown		
+WC-C-063	software	separate service or product line	shown	WC-S-0595 WC-S-0899 WC-S-0085 WC-S-0933	
+WC-C-063	decides	merchant	shown	WC-S-0899	
+WC-C-063	legal	separate entity of the platform	shown	WC-S-0458 WC-S-0569 WC-S-0568	WooCommerce.com is a Woo service; it learns which sites use each subscription but generally not customer data.
+WC-C-063	boundary	wccom-site/v3 REST endpoints (connection, installer, ssr, status)	shown	WC-S-0249 WC-S-0250 WC-S-0251 WC-S-0252	
+WC-C-063	reason		not shown		
+WC-C-064	software	core	shown	WC-S-0002 WC-S-0100 WC-S-0907	
+WC-C-064	decides	merchant	shown	WC-S-0051	
+WC-C-064	legal	merchant	shown	WC-S-0458 WC-S-0647 WC-S-0466	The Terms name WooCommerce among Woo services and make the merchant solely responsible for their ecommerce activities; the core plugin itself is GPL software with no warranty (WC-C-025).
+WC-C-064	boundary	REST wc/v3 products and related routes; Store API /products; webhook topics product.*	shown	WC-S-0100 WC-S-0175 WC-S-0265	
+WC-C-064	reason		not shown		
+WC-C-065	software	core	shown	WC-S-0056 WC-S-0097	
+WC-C-065	decides	buyer	shown	WC-S-0950	Buyers write reviews; the merchant sets who may review and moderates them.
+WC-C-065	legal	merchant	shown	WC-S-0458 WC-S-0647 WC-S-0466	The Terms name WooCommerce among Woo services and make the merchant solely responsible for their ecommerce activities; the core plugin itself is GPL software with no warranty (WC-C-025).
+WC-C-065	boundary	REST wc/v3 products/reviews; Store API /products/reviews	shown	WC-S-0097 WC-S-0173	
+WC-C-065	reason		not shown		
+WC-C-066	software	core	shown	WC-S-0014	
+WC-C-066	decides	merchant	shown	WC-S-0014	
+WC-C-066	legal	merchant	shown	WC-S-0458 WC-S-0647 WC-S-0466	The Terms name WooCommerce among Woo services and make the merchant solely responsible for their ecommerce activities; the core plugin itself is GPL software with no warranty (WC-C-025).
+WC-C-066	boundary	REST wc/v3 customers/{id}/downloads	shown	WC-S-0087	
+WC-C-066	reason		not shown		
+WC-C-067	software	core	shown	WC-S-0057 WC-S-0058	
+WC-C-067	decides	merchant	shown	WC-S-0057	
+WC-C-067	legal	merchant	shown	WC-S-0458 WC-S-0647 WC-S-0466	The Terms name WooCommerce among Woo services and make the merchant solely responsible for their ecommerce activities; the core plugin itself is GPL software with no warranty (WC-C-025).
+WC-C-067	boundary		not shown		
+WC-C-067	reason		not shown		
+WC-C-068	software	core	shown	WC-S-0013	
+WC-C-068	decides	merchant	shown	WC-S-0013	
+WC-C-068	legal	merchant	shown	WC-S-0458 WC-S-0647 WC-S-0466	The Terms name WooCommerce among Woo services and make the merchant solely responsible for their ecommerce activities; the core plugin itself is GPL software with no warranty (WC-C-025).
+WC-C-068	boundary	stock fields on products through the products REST routes	shown	WC-S-0100	
+WC-C-068	reason		not shown		
+WC-C-069	software	core	shown	WC-S-0353 WC-S-0047	
+WC-C-069	decides	merchant	shown	WC-S-0353	A setting on the Features section of Settings > Advanced.
+WC-C-069	legal	merchant	shown	WC-S-0458 WC-S-0647 WC-S-0466	The Terms name WooCommerce among Woo services and make the merchant solely responsible for their ecommerce activities; the core plugin itself is GPL software with no warranty (WC-C-025).
+WC-C-069	boundary		not shown		
+WC-C-069	reason		not shown		
+WC-C-070	software	core	shown	WC-S-0041 WC-S-0092	
+WC-C-070	decides	platform at build	shown	WC-S-0317 WC-S-0898	The status list is defined in core (wc_get_order_statuses); the merchant moves orders between statuses.
+WC-C-070	legal	merchant	shown	WC-S-0458 WC-S-0647 WC-S-0466	The Terms name WooCommerce among Woo services and make the merchant solely responsible for their ecommerce activities; the core plugin itself is GPL software with no warranty (WC-C-025).
+WC-C-070	boundary	REST wc/v3 orders; webhook topics order.*; Store API /order	shown	WC-S-0092 WC-S-0261 WC-S-0164	
+WC-C-070	reason		not shown		
+WC-C-071	software	core	shown	WC-S-0091 WC-S-0322	
+WC-C-071	decides	merchant	shown	WC-S-0091	
+WC-C-071	legal	merchant	shown	WC-S-0469	
+WC-C-071	boundary	REST wc/v3 orders/{id}/refunds and refunds	shown	WC-S-0091 WC-S-0102	
+WC-C-071	reason		not shown		
+WC-C-072	software	core	shown	WC-S-0327 WC-S-0162	
+WC-C-072	decides	merchant	shown	WC-S-0022 WC-S-0928	
+WC-C-072	legal	merchant	shown	WC-S-0458 WC-S-0647 WC-S-0466	The Terms name WooCommerce among Woo services and make the merchant solely responsible for their ecommerce activities; the core plugin itself is GPL software with no warranty (WC-C-025).
+WC-C-072	boundary	Store API /cart and /checkout routes	shown	WC-S-0149 WC-S-0162	
+WC-C-072	reason		not shown		
+WC-C-073	software	core	shown	WC-S-0088 WC-S-0883	
+WC-C-073	decides	merchant	shown	WC-S-0881 WC-S-0928	The merchant sets guest checkout and account creation.
+WC-C-073	legal	merchant	shown	WC-S-0458 WC-S-0647 WC-S-0466	The Terms name WooCommerce among Woo services and make the merchant solely responsible for their ecommerce activities; the core plugin itself is GPL software with no warranty (WC-C-025).
+WC-C-073	boundary	REST wc/v3 customers; webhook topics customer.*	shown	WC-S-0088 WC-S-0258	
+WC-C-073	reason		not shown		
+WC-C-074	software	core	shown	WC-S-0086 WC-S-0062	
+WC-C-074	decides	merchant	shown	WC-S-0062	
+WC-C-074	legal	merchant	shown	WC-S-0458 WC-S-0647 WC-S-0466	The Terms name WooCommerce among Woo services and make the merchant solely responsible for their ecommerce activities; the core plugin itself is GPL software with no warranty (WC-C-025).
+WC-C-074	boundary	REST wc/v3 coupons; webhook topics coupon.*; Store API cart coupon routes	shown	WC-S-0086 WC-S-0254 WC-S-0151	
+WC-C-074	reason		not shown		
+WC-C-075	software	core	shown	WC-S-0004 WC-S-0284	
+WC-C-075	decides	merchant	shown	WC-S-0017	
+WC-C-075	legal	merchant	shown	WC-S-0458 WC-S-0647 WC-S-0466	The Terms name WooCommerce among Woo services and make the merchant solely responsible for their ecommerce activities; the core plugin itself is GPL software with no warranty (WC-C-025).
+WC-C-075	boundary	Shipping Method API; REST wc/v3 shipping zones and methods; store address as origin	shown	WC-S-0628 WC-S-0113 WC-S-0599	
+WC-C-075	reason		not shown		
+WC-C-076	software	core	shown	WC-S-0007 WC-S-0443	
+WC-C-076	decides	merchant	shown	WC-S-0021	
+WC-C-076	legal	merchant	shown	WC-S-0458 WC-S-0647 WC-S-0466	The Terms name WooCommerce among Woo services and make the merchant solely responsible for their ecommerce activities; the core plugin itself is GPL software with no warranty (WC-C-025).
+WC-C-076	boundary	WC_Email classes registered through the woocommerce_email_classes filter	shown	WC-S-0443	
+WC-C-076	reason		not shown		
+WC-C-077	software	core	shown	WC-S-0025 WC-S-0885	
+WC-C-077	decides	merchant	shown	WC-S-0885	The merchant chooses topics and the delivery URL.
+WC-C-077	legal	merchant	shown	WC-S-0458 WC-S-0647 WC-S-0466	The Terms name WooCommerce among Woo services and make the merchant solely responsible for their ecommerce activities; the core plugin itself is GPL software with no warranty (WC-C-025).
+WC-C-077	boundary	HTTP POST to the merchant's URL with topic and signature headers	shown	WC-S-0931 WC-S-0261	
+WC-C-077	reason	other: "Webhooks are useful for integrating your store with third-party services or other external APIs that support them."	shown	WC-S-0886	
+WC-C-078	software	core	shown	WC-S-0078 WC-S-0887	
+WC-C-078	decides	merchant	shown	WC-S-0888 WC-S-0279	The merchant generates keys with read, write or read/write permission.
+WC-C-078	legal	merchant	shown	WC-S-0458 WC-S-0647 WC-S-0466	The Terms name WooCommerce among Woo services and make the merchant solely responsible for their ecommerce activities; the core plugin itself is GPL software with no warranty (WC-C-025).
+WC-C-078	boundary	REST namespaces wc/v1 to wc/v3 (wc/v4 behind a feature flag); consumer key authentication	shown	WC-S-0076 WC-S-0077 WC-S-0078 WC-S-0080 WC-S-0921	
+WC-C-078	reason		not shown		
+WC-C-079	software	core	shown	WC-S-0914 WC-S-0941	
+WC-C-079	decides	platform at build	shown	WC-S-0915	
+WC-C-079	legal	merchant	shown	WC-S-0458 WC-S-0647 WC-S-0466	The Terms name WooCommerce among Woo services and make the merchant solely responsible for their ecommerce activities; the core plugin itself is GPL software with no warranty (WC-C-025).
+WC-C-079	boundary	unauthenticated wc/store/v1 routes; extendable with ExtendSchema	shown	WC-S-0915 WC-S-0916	
+WC-C-079	reason		not shown		
+WC-C-080	software	core	shown	WC-S-0272 WC-S-0883	
+WC-C-080	decides	merchant	shown	WC-S-0884	Roles are defined at build; the merchant assigns them.
+WC-C-080	legal	merchant	shown	WC-S-0458 WC-S-0647 WC-S-0466	The Terms name WooCommerce among Woo services and make the merchant solely responsible for their ecommerce activities; the core plugin itself is GPL software with no warranty (WC-C-025).
+WC-C-080	boundary	WordPress roles and capabilities	shown	WC-S-0273	
+WC-C-080	reason		not shown		
+WC-C-081	software	core	shown	WC-S-0040 WC-S-0063	
+WC-C-081	decides	merchant	shown	WC-S-0430	
+WC-C-081	legal	merchant	shown	WC-S-0458 WC-S-0647 WC-S-0466	The Terms name WooCommerce among Woo services and make the merchant solely responsible for their ecommerce activities; the core plugin itself is GPL software with no warranty (WC-C-025).
+WC-C-081	boundary	wc-admin REST namespace	shown	WC-S-0083	
+WC-C-081	reason		not shown		
+WC-C-082	software	core	shown	WC-S-0009 WC-S-0891	
+WC-C-082	decides	merchant	shown	WC-S-0891	
+WC-C-082	legal	merchant	shown	WC-S-0458 WC-S-0647 WC-S-0466	The Terms name WooCommerce among Woo services and make the merchant solely responsible for their ecommerce activities; the core plugin itself is GPL software with no warranty (WC-C-025).
+WC-C-082	boundary		not shown		
+WC-C-082	reason		not shown		
+WC-C-083	software	core	shown	WC-S-0045	
+WC-C-083	decides	merchant	shown	WC-S-0037	
+WC-C-083	legal	merchant	shown	WC-S-0458 WC-S-0647 WC-S-0466	The Terms name WooCommerce among Woo services and make the merchant solely responsible for their ecommerce activities; the core plugin itself is GPL software with no warranty (WC-C-025).
+WC-C-083	boundary	REST wc/v3 system_status and system_status/tools	shown	WC-S-0120	
+WC-C-083	reason		not shown		
+WC-C-084	software	core	shown	WC-S-0060 WC-S-0186	
+WC-C-084	decides	merchant	shown	WC-S-0061	
+WC-C-084	legal	merchant	shown	WC-S-0458 WC-S-0647 WC-S-0466	The Terms name WooCommerce among Woo services and make the merchant solely responsible for their ecommerce activities; the core plugin itself is GPL software with no warranty (WC-C-025).
+WC-C-084	boundary	wc-admin marketing endpoints (channels, campaigns, recommendations)	shown	WC-S-0187 WC-S-0188 WC-S-0189 WC-S-0190 WC-S-0191	
+WC-C-084	reason		not shown		
+WC-C-085	software	core	shown	WC-S-0331 WC-S-0890	
+WC-C-085	decides	merchant	shown	WC-S-0935	A setting on the Features section of Settings > Advanced. On by default.
+WC-C-085	legal	merchant	shown	WC-S-0458 WC-S-0647 WC-S-0466	The Terms name WooCommerce among Woo services and make the merchant solely responsible for their ecommerce activities; the core plugin itself is GPL software with no warranty (WC-C-025).
+WC-C-085	boundary		not shown		
+WC-C-085	reason	other: "providing an understanding of the effectiveness of various marketing efforts"	shown	WC-S-0890	
+WC-C-086	software	extension point	shown	WC-S-0441 WC-S-0922	
+WC-C-086	decides	merchant	shown	WC-S-0852	
+WC-C-086	legal	app developer	shown	WC-S-0487	
+WC-C-086	boundary	WC_Integration class; woocommerce_get_settings_pages filter; wc_admin_register_page	shown	WC-S-0441 WC-S-0444 WC-S-0450	
+WC-C-086	reason		not shown		
+WC-C-087	software	extension point	shown	WC-S-0917 WC-S-0453	
+WC-C-087	decides	merchant	shown	WC-S-0852	The merchant enables extensions. Inference: each extension's developer decides what it adds to cart and checkout.
+WC-C-087	legal	app developer	shown	WC-S-0487	
+WC-C-087	boundary	IntegrationInterface, ExtendSchema, payment method registration and the additional checkout fields API	shown	WC-S-0451 WC-S-0453 WC-S-0454	
+WC-C-087	reason		not shown		
+WC-C-088	software	core	shown	WC-S-0355 WC-S-0455	
+WC-C-088	decides	merchant	shown	WC-S-0331	Each feature has a default set at build; the merchant can toggle those shown in the UI.
+WC-C-088	legal	merchant	shown	WC-S-0458 WC-S-0647 WC-S-0466	The Terms name WooCommerce among Woo services and make the merchant solely responsible for their ecommerce activities; the core plugin itself is GPL software with no warranty (WC-C-025).
+WC-C-088	boundary	FeaturesUtil::declare_compatibility for extensions	shown	WC-S-0455	
+WC-C-088	reason		not shown		
+WC-C-089	software	separate service or product line	shown	WC-S-0937 WC-S-0892	POS mode lives in the WooCommerce mobile app; sales sync with the store.
+WC-C-089	decides	operator, per market or plan	shown	WC-S-0893 WC-S-0894	
+WC-C-089	legal	merchant	shown	WC-S-0458 WC-S-0647 WC-S-0466	The Terms name WooCommerce among Woo services and make the merchant solely responsible for their ecommerce activities; the core plugin itself is GPL software with no warranty (WC-C-025).
+WC-C-089	boundary	mobile app syncing with the store	shown	WC-S-0895	
+WC-C-089	reason		not shown		
+WC-C-090	software	separate service or product line	shown	WC-S-0939 WC-S-0422	
+WC-C-090	decides	merchant	shown	WC-S-0422	
+WC-C-090	legal		not shown		
+WC-C-090	boundary	wc-admin mobile-app endpoints (magic link, QR login)	shown	WC-S-0203 WC-S-0204	
+WC-C-090	reason		not shown		
+WC-C-091	software	core	shown	WC-S-0934 WC-S-0315	
+WC-C-091	decides	merchant	shown	WC-S-0934	A setting on the Features section of Settings > Advanced.
+WC-C-091	legal	merchant	shown	WC-S-0458 WC-S-0647 WC-S-0466	The Terms name WooCommerce among Woo services and make the merchant solely responsible for their ecommerce activities; the core plugin itself is GPL software with no warranty (WC-C-025).
+WC-C-091	boundary	public order withdrawal request with emails to customer and store	shown	WC-S-0314 WC-S-0315	
+WC-C-091	reason		not shown		No source read gives the reason for the feature.
+WC-C-092	software	core	shown	WC-S-0938 WC-S-0896	
+WC-C-092	decides	merchant	shown	WC-S-0896	
+WC-C-092	legal	merchant	shown	WC-S-0458 WC-S-0647 WC-S-0466	The Terms name WooCommerce among Woo services and make the merchant solely responsible for their ecommerce activities; the core plugin itself is GPL software with no warranty (WC-C-025).
+WC-C-092	boundary	fulfillments API for shipping tools and providers	shown	WC-S-0897 WC-S-0131	
+WC-C-092	reason		not shown		
+WC-C-093	software	core	shown	WC-S-0940	
+WC-C-093	decides	merchant	shown	WC-S-0940	A setting on the Features section of Settings > Advanced.
+WC-C-093	legal	merchant	shown	WC-S-0458 WC-S-0647 WC-S-0466	The Terms name WooCommerce among Woo services and make the merchant solely responsible for their ecommerce activities; the core plugin itself is GPL software with no warranty (WC-C-025).
+WC-C-093	boundary		not shown		
+WC-C-093	reason		not shown		
+WC-C-094	software	core	shown	WC-S-0028	
+WC-C-094	decides	merchant	shown	WC-S-0339	A setting on the Features section of Settings > Advanced.
+WC-C-094	legal	merchant	shown	WC-S-0458 WC-S-0647 WC-S-0466	The Terms name WooCommerce among Woo services and make the merchant solely responsible for their ecommerce activities; the core plugin itself is GPL software with no warranty (WC-C-025).
+WC-C-094	boundary		not shown		
+WC-C-094	reason		not shown		
+WC-C-095	software	core	shown	WC-S-0918 WC-S-0346	
+WC-C-095	decides	merchant	shown	WC-S-0346	A setting on the Features section of Settings > Advanced.
+WC-C-095	legal	merchant	shown	WC-S-0458 WC-S-0647 WC-S-0466	The Terms name WooCommerce among Woo services and make the merchant solely responsible for their ecommerce activities; the core plugin itself is GPL software with no warranty (WC-C-025).
+WC-C-095	boundary	Model Context Protocol tools exposing WooCommerce functions	shown	WC-S-0918	
+WC-C-095	reason		not shown		
+WC-C-096	software	separate service or product line	shown	WC-S-0486	
+WC-C-096	decides	merchant	shown	WC-S-0853	
+WC-C-096	legal	merchant	shown	WC-S-0853	The user is responsible for input and use of output.
+WC-C-096	boundary	Terms of Service section 8.k and the AI Guidelines	shown	WC-S-0486 WC-S-0838	
+WC-C-096	reason		not shown		
+WC-C-097	software	core	shown	WC-S-0351 WC-S-0179	
+WC-C-097	decides	merchant	shown	WC-S-0350	A setting on the Features section of Settings > Advanced.
+WC-C-097	legal	merchant	shown	WC-S-0458 WC-S-0647 WC-S-0466	The Terms name WooCommerce among Woo services and make the merchant solely responsible for their ecommerce activities; the core plugin itself is GPL software with no warranty (WC-C-025).
+WC-C-097	boundary	Store API shopper-lists routes	shown	WC-S-0179	
+WC-C-097	reason		not shown		
+WC-C-098	software	core	shown	WC-S-0943 WC-S-0438	
+WC-C-098	decides	buyer	shown	WC-S-0943	Users manage tokens in their account and choose saved tokens at checkout.
+WC-C-098	legal	merchant	shown	WC-S-0458 WC-S-0647 WC-S-0466	The Terms name WooCommerce among Woo services and make the merchant solely responsible for their ecommerce activities; the core plugin itself is GPL software with no warranty (WC-C-025).
+WC-C-098	boundary	Payment Token API used by gateways	shown	WC-S-0943	
+WC-C-098	reason		not shown		
+WC-C-099	software	core	shown	WC-S-0126	
+WC-C-099	decides		not shown		Inference: the platform at build; the country lists ship with the release.
+WC-C-099	legal		not shown		
+WC-C-099	boundary	REST wc/v3 data endpoints	shown	WC-S-0124	
+WC-C-099	reason		not shown		
+WC-C-100	software	extension point	shown	WC-S-0739 WC-S-0946	
+WC-C-100	decides	merchant	shown	WC-S-0852	The readme points to extensions for subscriptions, bookings and memberships.
+WC-C-100	legal	app developer	shown	WC-S-0487 WC-S-0656	Third-party extensions answer for themselves under the Terms; where the extension is made by Woo (listed as by Woo or Developed by Woo) the seller is a Woo entity (WC-C-050).
+WC-C-100	boundary	WordPress plugin hooks and filters and WooCommerce extension APIs	shown	WC-S-0945	
+WC-C-100	reason		not shown		
+WC-C-101	software	extension point	shown	WC-S-0731 WC-S-0946	
+WC-C-101	decides	merchant	shown	WC-S-0852	
+WC-C-101	legal	app developer	shown	WC-S-0487 WC-S-0656	Third-party extensions answer for themselves under the Terms; where the extension is made by Woo (listed as by Woo or Developed by Woo) the seller is a Woo entity (WC-C-050).
+WC-C-101	boundary	WordPress plugin hooks and filters and WooCommerce extension APIs	shown	WC-S-0945	
+WC-C-101	reason		not shown		
+WC-C-102	software	extension point	shown	WC-S-0728 WC-S-0946	
+WC-C-102	decides	merchant	shown	WC-S-0852	
+WC-C-102	legal	app developer	shown	WC-S-0487 WC-S-0656	Third-party extensions answer for themselves under the Terms; where the extension is made by Woo (listed as by Woo or Developed by Woo) the seller is a Woo entity (WC-C-050).
+WC-C-102	boundary	WordPress plugin hooks and filters and WooCommerce extension APIs	shown	WC-S-0945	
+WC-C-102	reason		not shown		
+WC-C-103	software	extension point	shown	WC-S-0730	
+WC-C-103	decides	merchant	shown	WC-S-0852	
+WC-C-103	legal	app developer	shown	WC-S-0487 WC-S-0656	Third-party extensions answer for themselves under the Terms; where the extension is made by Woo (listed as by Woo or Developed by Woo) the seller is a Woo entity (WC-C-050).
+WC-C-103	boundary	WordPress plugin hooks and filters and WooCommerce extension APIs	shown	WC-S-0945	
+WC-C-103	reason		not shown		
+WC-C-104	software	extension point	shown	WC-S-0702	
+WC-C-104	decides	merchant	shown	WC-S-0852	
+WC-C-104	legal	app developer	shown	WC-S-0487 WC-S-0656	Third-party extensions answer for themselves under the Terms; where the extension is made by Woo (listed as by Woo or Developed by Woo) the seller is a Woo entity (WC-C-050).
+WC-C-104	boundary	WordPress plugin hooks and filters and WooCommerce extension APIs	shown	WC-S-0945	
+WC-C-104	reason		not shown		
+WC-C-105	software	extension point	shown	WC-S-0700	
+WC-C-105	decides	merchant	shown	WC-S-0852	
+WC-C-105	legal	app developer	shown	WC-S-0487 WC-S-0656	Third-party extensions answer for themselves under the Terms; where the extension is made by Woo (listed as by Woo or Developed by Woo) the seller is a Woo entity (WC-C-050).
+WC-C-105	boundary	WordPress plugin hooks and filters and WooCommerce extension APIs	shown	WC-S-0945	
+WC-C-105	reason		not shown		
+WC-C-106	software	extension point	shown	WC-S-0701	
+WC-C-106	decides	merchant	shown	WC-S-0852	
+WC-C-106	legal	app developer	shown	WC-S-0487 WC-S-0656	Third-party extensions answer for themselves under the Terms; where the extension is made by Woo (listed as by Woo or Developed by Woo) the seller is a Woo entity (WC-C-050).
+WC-C-106	boundary	WordPress plugin hooks and filters and WooCommerce extension APIs	shown	WC-S-0945	
+WC-C-106	reason		not shown		
+WC-C-107	software	extension point	shown	WC-S-0703	
+WC-C-107	decides	merchant	shown	WC-S-0852	
+WC-C-107	legal	app developer	shown	WC-S-0487 WC-S-0656	Third-party extensions answer for themselves under the Terms; where the extension is made by Woo (listed as by Woo or Developed by Woo) the seller is a Woo entity (WC-C-050).
+WC-C-107	boundary	WordPress plugin hooks and filters and WooCommerce extension APIs	shown	WC-S-0945	
+WC-C-107	reason		not shown		
+WC-C-108	software	extension point	shown	WC-S-0741	
+WC-C-108	decides	merchant	shown	WC-S-0852	
+WC-C-108	legal	app developer	shown	WC-S-0487 WC-S-0656	Third-party extensions answer for themselves under the Terms; where the extension is made by Woo (listed as by Woo or Developed by Woo) the seller is a Woo entity (WC-C-050).
+WC-C-108	boundary	WordPress plugin hooks and filters and WooCommerce extension APIs	shown	WC-S-0945	
+WC-C-108	reason		not shown		
+WC-C-109	software	extension point	shown	WC-S-0704	
+WC-C-109	decides	merchant	shown	WC-S-0852	
+WC-C-109	legal	app developer	shown	WC-S-0487 WC-S-0656	Third-party extensions answer for themselves under the Terms; where the extension is made by Woo (listed as by Woo or Developed by Woo) the seller is a Woo entity (WC-C-050).
+WC-C-109	boundary	WordPress plugin hooks and filters and WooCommerce extension APIs	shown	WC-S-0945	
+WC-C-109	reason		not shown		
+WC-C-110	software	extension point	shown	WC-S-0705	
+WC-C-110	decides	merchant	shown	WC-S-0852	
+WC-C-110	legal	app developer	shown	WC-S-0487 WC-S-0656	Third-party extensions answer for themselves under the Terms; where the extension is made by Woo (listed as by Woo or Developed by Woo) the seller is a Woo entity (WC-C-050).
+WC-C-110	boundary	WordPress plugin hooks and filters and WooCommerce extension APIs	shown	WC-S-0945	
+WC-C-110	reason		not shown		
+WC-C-111	software	extension point	shown	WC-S-0695 WC-S-0178	Themes are installed separately; core ships block patterns.
+WC-C-111	decides	merchant	shown	WC-S-0418	
+WC-C-111	legal	app developer	shown	WC-S-0487	Third-party extensions answer for themselves under the Terms; where the extension is made by Woo (listed as by Woo or Developed by Woo) the seller is a Woo entity (WC-C-050).
+WC-C-111	boundary		not shown		
+WC-C-111	reason		not shown		
+WC-C-112	software	outside the platform	shown	WC-S-0696 WC-S-0766	Listed on the Marketplace as services, not store software.
+WC-C-112	decides	merchant	shown	WC-S-0852	
+WC-C-112	legal	partner	shown	WC-S-0487	
+WC-C-112	boundary		not shown		
+WC-C-112	reason		not shown		
+WC-C-113	software	separate service or product line	shown	WC-S-0458 WC-S-0944	
+WC-C-113	decides	merchant	shown	WC-S-0644	
+WC-C-113	legal	separate entity of the platform	shown	WC-S-0458 WC-S-0459 WC-S-0460	
+WC-C-113	boundary		not shown		
+WC-C-113	reason		not shown		
+WC-C-114	software	separate service or product line	shown	WC-S-0947	
+WC-C-114	decides	merchant	shown	WC-S-0947	The merchant authorizes access to their ad platform data.
+WC-C-114	legal	separate entity of the platform	shown	WC-S-0948 WC-S-0494	
+WC-C-114	boundary	ad platform APIs; Jetpack data sync module	shown	WC-S-0947 WC-S-0949	
+WC-C-114	reason		not shown		
+WC-C-118	software	extension point	shown	WC-S-0903 WC-S-0964	
+WC-C-118	decides	merchant	shown	WC-S-0964	
+WC-C-118	legal	separate entity of the platform	shown	WC-S-0963 WC-S-0644	Listed as by Woo; sold as a Woo Paid Service.
+WC-C-118	boundary	settings under WooCommerce > Settings > Tax; VAT number field at checkout	shown	WC-S-0964 WC-S-0903	
+WC-C-118	reason		not shown		

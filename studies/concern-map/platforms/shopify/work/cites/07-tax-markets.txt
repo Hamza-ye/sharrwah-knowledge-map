@@ -1,0 +1,567 @@
+key: tax_default_rates
+source: https://help.shopify.com/en/manual/taxes.md
+locator: introduction
+quote: Shopify uses many default sales tax rates, which are updated regularly. If you use the default rates, then you need to confirm that the rates are current and correct for your particular circumstances.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: tax_register
+source: https://help.shopify.com/en/manual/taxes.md
+locator: note
+quote: If you need to collect sales tax, then you must register your business with your local or federal tax authority.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: tax_by_location
+source: https://help.shopify.com/en/manual/taxes.md
+locator: Tax service availability by region
+quote: The tax services or settings that you can use for your Shopify store depend on the location of your business.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: tax_us_shopify_tax
+source: https://help.shopify.com/en/manual/taxes.md
+locator: Tax service availability by region, row The United States
+quote: In the United States, you can use <a href="/manual/taxes/shopify-tax">Shopify Tax</a>.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: tax_basic_five
+source: https://help.shopify.com/en/manual/taxes.md
+locator: Tax service availability by region, row Norway, Switzerland, Australia, New Zealand, and Singapore
+quote: Norway, Switzerland, Australia, New Zealand, and Singapore
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: tax_manual_rest
+source: https://help.shopify.com/en/manual/taxes.md
+locator: Tax service availability by region, row All countries and regions except Norway, Switzerland, Australia, New Zealand, and Singapore
+quote: All countries and regions except Norway, Switzerland, Australia, New Zealand, and Singapore
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: tax_apps_all
+source: https://help.shopify.com/en/manual/taxes.md
+locator: Tax service availability by region, row All countries and regions
+quote: In all countries and regions, you can use paid <a href="/manual/taxes/tax-apps">third-party tax apps</a> to manage the way that you collect tax instead of using Shopify's tax settings.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: stax_regions
+source: https://help.shopify.com/en/manual/taxes/shopify-tax.md
+locator: introduction
+quote: Shopify Tax offers the highest level of sales tax compliance with the least amount of upkeep for merchants that sell to customers in the United States, European Union, United Kingdom, and Canada.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: stax_destination
+source: https://help.shopify.com/en/manual/taxes/shopify-tax/considerations.md
+locator: introduction
+quote: Calculations using Shopify Tax are available only for certain transactions, where the order's destination is a location in the United States, European Union, United Kingdom, or Canada.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: stax_fallback_us
+source: https://help.shopify.com/en/manual/taxes/shopify-tax/considerations.md
+locator: Considerations for Shopify Tax in the United States
+quote: If a tax calculation can't be performed by Shopify Tax for an order with a destination in the United States, then the tax calculation is performed by using registration-based, non-rooftop accurate calculations.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: stax_no_api_orders
+source: https://help.shopify.com/en/manual/taxes/shopify-tax/considerations.md
+locator: Considerations for Shopify Tax in the United States
+quote: Third-party app and API-generated orders, such as Amazon orders.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: stax_fee_billing
+source: https://help.shopify.com/en/manual/taxes/shopify-tax/pricing.md
+locator: Shopify Tax fees
+quote: This fee is charged to you with your subscription invoice for Shopify, or in a bill if you exceed your
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: stax_free_threshold
+source: https://help.shopify.com/en/manual/taxes/shopify-tax/pricing.md
+locator: introduction
+quote: Shopify Tax is free to use until your store reaches a sales threshold, after which a per-transaction fee applies based on your store's location and Shopify plan.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: stax_pricing_may_2026
+source: https://help.shopify.com/en/manual/taxes/shopify-tax/pricing.md
+locator: note
+quote: Shopify Tax pricing depends on when your store was created.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: tax_no_remit
+source: https://help.shopify.com/en/manual/taxes.md
+locator: note
+quote: Shopify doesn&#39;t remit or file your taxes for you, unless you use
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: af_closed
+source: https://help.shopify.com/en/manual/taxes/shopify-tax/automated-filing/considerations.md
+locator: Eligibility for automated filing with Shopify Tax
+quote: **Automated filing is closed to new enrollment.** Only stores that are already enrolled can use it.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: af_us_only
+source: https://help.shopify.com/en/manual/taxes/shopify-tax/automated-filing/considerations.md
+locator: Eligibility for automated filing with Shopify Tax
+quote: Automated filing is available only for stores in the United States that use Shopify Tax.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: af_mor_only
+source: https://help.shopify.com/en/manual/taxes/shopify-tax/automated-filing/considerations.md
+locator: Eligibility for automated filing with Shopify Tax
+quote: Taxes are filed only for sales that were made on the Shopify platform where you are the merchant of record.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: af_files_returns
+source: https://help.shopify.com/en/manual/taxes/shopify-tax/automated-filing.md
+locator: introduction
+quote: For stores that are already enrolled, automated filing files your monthly, quarterly, semi-annual, and annual US sales tax returns for you.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: af_ending
+source: https://help.shopify.com/en/manual/taxes/shopify-tax/automated-filing/filing-partners.md
+locator: introduction
+quote: Automated filing with Shopify Tax is ending. Automated filing files your returns for sales made through December 31, 2026.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: af_after_options
+source: https://help.shopify.com/en/manual/taxes/shopify-tax/automated-filing/filing-partners.md
+locator: introduction
+quote: Use a filing service: A third-party filing service files your returns for you, similar to automated filing.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: af_marketplace_facilitators
+source: https://help.shopify.com/en/manual/taxes/shopify-tax/automated-filing/considerations.md
+locator: Marketplace sales reporting for automated filing
+quote: Marketplace facilitators, such as Amazon, Etsy, and TikTok, are responsible for the collection and remittance of sales tax on behalf of merchants that use their platforms.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: taxapp_third_party
+source: https://help.shopify.com/en/manual/taxes/tax-apps.md
+locator: introduction
+quote: You can use a third-party tax app to manage the way that you charge tax to your customers instead of using Shopify's tax settings.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: taxapp_account
+source: https://help.shopify.com/en/manual/taxes/tax-apps.md
+locator: Requirements and considerations for third-party tax apps
+quote: Third-party apps require an account with the tax service provider before you can activate the app in your Shopify admin.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: taxapp_replaces
+source: https://help.shopify.com/en/manual/taxes/tax-apps.md
+locator: Requirements and considerations for third-party tax apps
+quote: When you use a tax app, it replaces Shopify’s tax service for that store.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: taxapp_backup
+source: https://help.shopify.com/en/manual/taxes/tax-apps.md
+locator: Requirements and considerations for third-party tax apps
+quote: If a tax app is temporarily unavailable, then your tax settings in the Shopify admin are used to provide
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: taxapp_b2b_data
+source: https://help.shopify.com/en/manual/taxes/tax-apps.md
+locator: Requirements and considerations for third-party tax apps
+quote: then this information is transmitted to the tax app provider to calculate tax exemptions.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: basic_tax_regnum
+source: https://help.shopify.com/en/manual/taxes/registration.md
+locator: About Basic Tax
+quote: The Basic Tax service requires you to input a tax registration number to calculate your taxes.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: manual_tax_settings
+source: https://help.shopify.com/en/manual/taxes/manual-tax-settings.md
+locator: introduction
+quote: To ensure that you charge the correct amount of tax, configure your tax settings on the
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: vat_reverse_charge
+source: https://help.shopify.com/en/manual/taxes/shopify-tax/vat-validate.md
+locator: introduction
+quote: VAT validation lets your business customers enter a VAT number at checkout to claim the reverse charge exemption on eligible cross-border orders.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: vat_only_shopify_tax
+source: https://help.shopify.com/en/manual/taxes/shopify-tax/vat-validate.md
+locator: Activate VAT validation in checkout
+quote: VAT validation in checkout is available only for stores that use Shopify Tax to calculate tax in the European Union or the United Kingdom.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: duties_customs_set
+source: https://help.shopify.com/en/manual/international/duties-and-import-taxes.md
+locator: Understanding what your customer is charged
+quote: Customs authorities set the amount from the product's classification, its origin, and the destination's rules.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: duties_estimate
+source: https://help.shopify.com/en/manual/international/duties-and-import-taxes.md
+locator: introduction
+quote: You can collect an estimate of those amounts at checkout instead, which helps your customers avoid unexpected charges on delivery.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: eng_tax_component
+source: sharrwah-knowledge-map:evidence/shopify-engineering/runs/20261010T083026Z-engineering-sources/items/025-shopify.engineering/text.txt
+locator: Componentizing Shopify’s Tax Engine, subtitle
+quote: How Shopify built for the long term by moving our tax engine to a componentized architecture within Shopify’s codebase with zero downtime.
+date: 2019-07-05
+basis: published (page states "Published on Jul 5, 2019")
+access: local
+
+key: mkt_definition
+source: https://help.shopify.com/en/manual/markets.md
+locator: introduction
+quote: You can use Markets to manage how different customers experience your store based on their location, customer group, retail location, or sales channel.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: mkt_customizations
+source: https://help.shopify.com/en/manual/markets.md
+locator: Customizing market experiences
+quote: Customizations control settings, such as currency, product availability, theme content, domains, languages, and taxes.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: intl_multiple_stores
+source: https://help.shopify.com/en/manual/international.md
+locator: introduction
+quote: For businesses with globally dispersed teams that independently manage operations in their local market, you might prefer to sell cross-border using multiple stores along with the ability to sell and get paid in different currencies.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: lp_sp_only
+source: https://help.shopify.com/en/manual/international/pricing.md
+locator: note
+quote: Only stores using Shopify Payments with access to <a href="/en/manual/checkout-settings/customize-checkout-configurations/one-page-checkout">one-page checkout</a> can use all functionalities of this feature.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: lp_auto_convert
+source: https://help.shopify.com/en/manual/international/pricing.md
+locator: introduction
+quote: By default, prices are [converted automatically](/manual/international/pricing/exchange-rates#auto-convert) using the current market exchange rate, but you can [set exchange rates manually](/manual/international/pricing/exchange-rates#manual-exchange-rate-conversions).
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: ipay_sp_adyen_only
+source: https://help.shopify.com/en/manual/international/payments.md
+locator: Shopify Payments and other payment providers
+quote: Only stores with [Shopify Payments](/manual/payments/shopify-payments) or [Adyen](/manual/payments/third-party-providers/adyen-gateway) as the primary gateway can process payments in a customer's local currency.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: ipay_other_store_currency
+source: https://help.shopify.com/en/manual/international/payments.md
+locator: Shopify Payments and other payment providers
+quote: At checkout, the price will be converted to your store's default currency, and your customer will be charged in that currency.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: ipay_market_currency
+source: https://help.shopify.com/en/manual/international/payments.md
+locator: Set a currency for a market in Markets
+quote: The currency that you select for a market is the currency that's displayed to customers on your online store, and that transactions are performed in.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: fx_time_of_transaction
+source: https://help.shopify.com/en/manual/international/pricing/exchange-rates.md
+locator: introduction
+quote: Currency conversion occurs at the time of a transaction, such as when you capture a payment, you issue a refund, or when there is a chargeback. The foreign exchange rate used is always the rate at the time of the transaction.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: fx_three_currencies
+source: https://help.shopify.com/en/manual/international/pricing/exchange-rates.md
+locator: Currency definitions and conversions
+quote: Your store has three types of currencies:
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: fx_risk
+source: https://help.shopify.com/en/manual/international/pricing/exchange-rates.md
+locator: Currency conversion risks
+quote: Whenever there is a time delay in processing payments or refunds, there is a possibility that you might lose or gain money because of currency conversions.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: fx_manual_managed_markets
+source: https://help.shopify.com/en/manual/international/pricing/exchange-rates.md
+locator: Manual exchange rate conversions
+quote: With Managed Markets, you can set the currency exchange rate manually for each of your markets.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: fx_fees_sp
+source: https://help.shopify.com/en/manual/international/pricing/fees.md
+locator: introduction
+quote: When you sell in local currencies you're charged the regular Shopify Payments processing fee and a currency conversion fee.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: fx_mid_market
+source: https://help.shopify.com/en/manual/international/pricing/fees.md
+locator: Conversion rate and fee
+quote: The conversion rate isn't a fee (it's a mid-market rate, without any markup).
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: fx_fee_shopify_charges
+source: https://help.shopify.com/en/manual/international/pricing/fees.md
+locator: Conversion rate and fee
+quote: The fee that Shopify charges (in your payout currency) to convert currencies when you capture a payment.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: fx_fee_by_country
+source: https://help.shopify.com/en/manual/international/pricing/fees.md
+locator: Shopify Payments currency conversion fee
+quote: The conversion fee amount is based on your store's primary country.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: fx_fee_table_other
+source: https://help.shopify.com/en/manual/international/pricing/fees.md
+locator: Shopify Payments currency conversion fee table, column header
+quote: All other Shopify Payments regions
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: fees_domestic_cross_border
+source: https://help.shopify.com/en/manual/international/pricing/fees.md
+locator: Shopify Payments fee
+quote: Payment processing fees (Cross border): The cost to process credit cards that are issued in a country or region that is different from the one that is associated with your store.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: fees_terms_admin
+source: https://help.shopify.com/en/manual/international/pricing/fees.md
+locator: introduction
+quote: You can find the fee values in your [Terms of Service](https://admin.shopify.com/shopify-payments/terms).
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: fees_store_credit_gift
+source: https://help.shopify.com/en/manual/international/pricing/fees.md
+locator: Third-party transaction fee
+quote: When an order includes [store credit](/manual/customers/store-credit) or [gift cards](/manual/products/gift-card-products) as a payment method, on Shopify stores created on or after May 12, 2025.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: fees_third_party_reason
+source: https://help.shopify.com/en/manual/international/pricing/fees.md
+locator: Third-party transaction fee
+quote: Third-party transaction fees cover the cost for Shopify to provide a secure checkout platform and integrate with external payment providers.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: mm_globale_powered
+source: https://help.shopify.com/en/manual/international/managed-markets.md
+locator: introduction
+quote: Managed Markets offers additional features powered by Global-e to help you scale and optimize your international markets directly from your Shopify admin.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: mm_availability
+source: https://help.shopify.com/en/manual/international/managed-markets.md
+locator: introduction
+quote: Managed Markets is only available to merchants based in the continental United States, and to certain stores in Canada and the United Kingdom.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: mm_globale_mor
+source: https://help.shopify.com/en/manual/international/managed-markets.md
+locator: introduction
+quote: When you use Managed Markets, Global-e becomes the _merchant of record_.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: mm_tax_registration
+source: https://help.shopify.com/en/manual/international/managed-markets.md
+locator: introduction
+quote: When using Managed Markets, you don't need tax registration in the countries you sell to. Global-e provides the tax registration, allowing you to comply when selling internationally.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: mm_flow_of_funds
+source: https://help.shopify.com/en/manual/international/managed-markets/overview.md
+locator: Flow of funds
+quote: After an international Managed Markets order is placed in your store, Shopify Payments processes the transaction and holds the money in a Global-e account.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: mm_globale_holds
+source: https://help.shopify.com/en/manual/international/managed-markets/overview.md
+locator: Flow of funds
+quote: Global-e holds the funds to remit the costs to proper authorities that are involved in the cross-border commerce transaction.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: mm_support_shopify
+source: https://help.shopify.com/en/manual/international/managed-markets/overview.md
+locator: introduction
+quote: All Managed Markets questions go to Shopify Support, regardless of the role that Global-e plays in the service.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: mm_requirements
+source: https://help.shopify.com/en/manual/international/managed-markets/overview.md
+locator: introduction
+quote: To use Managed Markets, your store needs to be on the Basic plan or higher, have an online store, and use [Shopify Payments](/manual/payments/shopify-payments).
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: mm_disclaimer
+source: https://help.shopify.com/en/manual/international/managed-markets/overview.md
+locator: Merchant of record disclaimer at checkout
+quote: The disclaimer is a required part of the merchant of record arrangement. You can't hide or reword it, and no setting in your Shopify admin or your theme turns it off.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: mm_fee_tax
+source: https://help.shopify.com/en/manual/international/managed-markets/overview.md
+locator: Determining tax on the Managed Markets fee
+quote: Whether the fee is taxed depends on the address associated with the legal business name on your store.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: mm_guaranteed_duties
+source: https://help.shopify.com/en/manual/international/managed-markets/overview.md
+locator: Managed Markets benefits
+quote: When the amount charged by customs is different, Managed Markets covers the difference, and you don't have to pay any additional fees.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: mm_globale_app_separate
+source: https://help.shopify.com/en/manual/international/managed-markets/overview.md
+locator: introduction
+quote: You can't use Managed Markets and the Global-e app at the same time.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: backup_region_required
+source: https://help.shopify.com/en/manual/markets/backup-region.md
+locator: introduction
+quote: Every store is required to have a backup region configured for use with Markets.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: backup_region_no_checkout
+source: https://help.shopify.com/en/manual/markets/backup-region.md
+locator: introduction
+quote: When a customer receives the backup region experience, they can browse your store and view products, but they can't complete a purchase.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: backup_region_default
+source: https://help.shopify.com/en/manual/markets/backup-region.md
+locator: Configure your backup region
+quote: Your backup region is automatically set to your store's home country when you create your store.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: rollouts_definition
+source: https://help.shopify.com/en/manual/markets/rollouts.md
+locator: introduction
+quote: A rollout is a scheduled set of changes to your online store's main theme, checkout and accounts pages, discounts, product catalogs, or a combination of these changes.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md

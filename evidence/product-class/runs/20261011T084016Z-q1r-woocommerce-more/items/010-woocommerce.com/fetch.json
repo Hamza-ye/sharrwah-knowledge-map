@@ -1,0 +1,18 @@
+{
+ "n": 10,
+ "url": "https://woocommerce.com/document/bookings-rest-api-reference/",
+ "dir": "items/010-woocommerce.com",
+ "fetched_at": "2026-10-11T08:40:23Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.github.io/woocommerce-bookings-api-docs/#introduction",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 48518,
+ "cited_in": [
+  "WC-S-5470"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "ff63f4f8fcab3ab0b5439e05bd4c545cf1e8ecec45810dc8163fc881bd96433c",
+ "raw_ext": "html"
+}

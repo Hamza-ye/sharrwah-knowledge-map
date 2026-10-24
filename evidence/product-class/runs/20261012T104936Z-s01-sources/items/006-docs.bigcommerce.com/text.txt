@@ -1,0 +1,129 @@
+> This page is for Developer.
+
+> For clean Markdown of any page, append .md to the page URL.
+> For a complete documentation index, see https://docs.bigcommerce.com/llms.txt.
+> For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server.
+
+# Currencies Overview
+
+BigCommerce’s flexible Currency settings assist developers in building Multi-Currency storefronts that empower shoppers and merchants to do business in their currency of choice. Allowing customers to shop and check out in their native currency provides a more consistent and positive shopping experience, and maintaining price expectations throughout the shopping process encourages conversions for merchants.
+
+This article provides a high-level guide to multi-currency concepts in BigCommerce as well as specific instructions on [adding currencies](#adding-a-currency) via the control panel. For additional details on how currencies are surfaced throughout BigCommerce APIs, user interfaces, and storefront components, see [How Currencies Work](/developer/docs/admin/store-configuration/currencies/how-currencies-work).
+
+## Active vs. Transactional
+
+In BigCommerce, there are two types of currency that can be set up: **active currency** and **transactional currency**.
+
+* **Active currency** - When a currency is set to display-only, shoppers in associated countries will see prices on the storefront in that currency, but the actual order will be transacted in the store’s default currency. Shoppers at checkout see the estimated price in the active currency with a note indicating the actual currency and amount to be charged.
+
+* **Transactional currency** - When a currency is set as transactional, shoppers in associated countries will both see prices on the storefront in that currency and be charged in that currency when they check out.
+
+![Display Currency](/_fern-img/89594119e43264e1d927abbd9910354ce21b96a90d1b84fcfaac630d13e23acf.webp)
+
+> **Note**
+>
+> * If the shopper’s card-issuing bank differs from the merchant's bank account country, additional cross-border fees may apply that can change the final settlement amount.
+> * You can choose whether a currency should be display-only or transactional when adding or editing a currency.
+
+## Preconfiguring the store
+
+Before setting up multiple currencies on a store, ensure your store is using the following:
+
+* A [Stencil theme](/developer/docs/storefront/stencil/getting-started).
+* The [Optimized One-Page Checkout](https://support.bigcommerce.com/s/article/Optimized-Single-Page-Checkout) type.
+* A [multi-currency compatible payment gateway](https://support.bigcommerce.com/s/article/Managing-Currencies) set up and enabled. (Your store's default currency can use any gateway).
+
+Additionally, review the [Currency API reference](/developer/api-reference/rest/admin/management/currencies) to get acquainted with the endpoints and resources related to configuring multiple currencies.
+
+> **Note**
+>
+> Make sure to not change the store’s default currency. This could cause the currency to malfunction.
+
+## Adding a currency
+
+Transactional currencies can't be created via API, so they'll need to be added via the active MSF-enabled control panel. To do so:
+
+1. Navigate to **Settings > Setup > Currencies**, then select **Add a Currency...**
+2. Select the currency code that corresponds to the currency you want to set up, then click **Next**.
+3. Configure the currency’s display and transactional settings.
+4. Click **Save**.
+
+For more in-depth instructions and helpful screenshots, see [Adding a Currency](https://support.bigcommerce.com/s/article/Managing-Currencies-Beta#add) in the Help Center.
+
+> **Note**
+>
+> Do not change the default currency -- this may lead to unintended currency conversion issues.
+> For instance, changing the default currency will not trigger price recalculation for the catalog.
+> Additionally, changing the default currency will enable the newly assigned currency as transactional.
+
+## How currencies work
+
+For details on how currencies are surfaced throughout BigCommerce APIs, user interfaces, and storefront components, see [How Currencies Work](/developer/docs/admin/store-configuration/currencies/how-currencies-work)
+
+## Supported and unsupported features
+
+See the table below for a list of supported and unsupported features.
+
+| Supported                                    | Not Supported                                  |
+| -------------------------------------------- | ---------------------------------------------- |
+| Optimized One-Page Checkout                  | Legacy Checkout                                |
+| Stencil Themes                               | Legacy Blueprint Themes                        |
+| Stripe Payment Gateway                       | Other Payment Gateways                         |
+| Store credit in default currency             | Store credit in display currencies             |
+| Customer group discounts in default currency | Customer group discounts in display currencies |
+| Discounts created through Promotions         | Legacy coupon codes                            |
+| Storefront Elasticsearch                     |                                                |
+| Storefront product filtering                 |                                                |
+
+## Multi-currency definitions
+
+| Name                        | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Default Currency            | Merchants use this currency when any auto-conversion of pricing (product, tax, shipping, promotions) occurs.                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Active Currency             | When a merchant displays prices in a currency on a storefront that the shopper might or might not use to complete a transaction. Active currency is also often called "presentment currency" in the payments industry.                                                                                                                                                                                                                                                                                                                                                      |
+| Transactional Currency      | Comprised of the currency and amount, the transactional currency is what BigCommerce passes to the payment provider and what is charged to a shopper's bank account. If there's a discrepancy between the storefront active currency and the transactional currency, a shopper has to pay a conversion fee and the conversion rate used is outside of BigCommerce's scope.                                                                                                                                                                                                  |
+| Settlement Currency         | The currency the merchant gets paid out to their bank account. If there's a discrepancy between the currency that a shopper transacts in and the currency in which a merchant settles, the merchant has to pay a conversion fee, and the conversion rate used is outside of BigCommerce's scope. The merchant can set their settlement currency through its payment provider.                                                                                                                                                                                               |
+| BigCommerce Conversion Rate | Any conversion rate set on BigCommerce used to convert the product’s default currency pricing into a new non-default currency. The conversion rate can be static or dynamic.                                                                                                                                                                                                                                                                                                                                                                                                |
+| Static Conversion Rate      | One of the two auto-converted pricing options. If a merchant manually enters a static conversion rate, then the conversion rate will remain the same until and unless the merchant updates their currency settings to use a different conversion rate. Using this method avoids constantly fluctuating prices in non-default currencies.                                                                                                                                                                                                                                    |
+| Dynamic Conversion Rate     | One of the two auto-converted pricing options. If a merchant selects a dynamic conversion rate, they've tied themselves to a currency-conversion service, which will update the conversion rate at a certain frequency. This helps shopper-facing pricing remain most aligned to the store's default currency and keeps the non-default currency conversion rate at market rate. The merchant can either use BigCommerce Currency Service provided in the Currency setup page, or they can use the API to automatically update the exchange rate from their trusted source. |
+| Bank Conversion Rate        | Conversion rate is used by merchants' or shoppers' payment or credit card providers when auto-converting from store's transactional currency. This rate might not align with the BigCommerce conversion rate, and BigCommerce has no visibility into it.                                                                                                                                                                                                                                                                                                                    |
+| Multi-Currency Pricing      | Rather than opting for auto-converting product pricing from default currency using the BigCommerce Conversion Rate, the merchant has a choice to set price per product per currency. You can implement multi-currency pricing through price lists.                                                                                                                                                                                                                                                                                                                          |
+
+## FAQ
+
+**Do Multi-Currency settings work with the Checkout SDK?**
+
+The Checkout SDK works with multi-currency. There is no additional setup needed for the SDK. After setting up currency in the Control Panel, the SDK will work as normal.
+
+**Do my theme customizations work with Multi-Currency Settings?**
+
+If the theme is set up to show the currency on the storefront, there should be no issues. Please see your theme developer if that is not the case.
+
+**Can shoppers still select a currency?**
+
+Shoppers will still be able to select their currency of choice on the storefront. This will depend on the stores themes and customizations.
+
+**Will my analytics show in the transactional or active currency?**
+
+Analytics shows an approximate price in the store's default currency. This is based on the configured exchange rate. There is no abandoned cart analytics or web analytics such as Google Analytics. Currently, it does not break down analytics by currency.
+
+**How can I set up settlement currencies in Stripe?**
+
+Please reach out to Stripe for more information on setting up the account.
+[Supported Settlement Currencies](https://stripe.com/docs/connect/payouts#supported-settlement) (Stripe Documentation)
+
+## Related resources
+
+### Articles
+
+* [How Currencies Work](/developer/docs/admin/store-configuration/currencies/how-currencies-work)
+* [Using Price Lists](https://support.bigcommerce.com/s/article/Price-Lists)
+* [Managing Currencies](https://support.bigcommerce.com/s/article/Managing-Currencies-Beta)
+* [Tax](https://support.bigcommerce.com/s/article/Manual-Tax-Setup#intro1)
+* [Supported Currencies](https://stripe.com/docs/currencies)
+* [Supported Settlement Currencies](https://stripe.com/docs/connect/payouts#supported-settlement)
+
+### Endpoints
+
+* [Currency API](/developer/api-reference/rest/admin/management/currencies)
+* [Price List API](/developer/api-reference/rest/admin/management/price-lists)

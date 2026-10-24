@@ -1,0 +1,21 @@
+{
+ "n": 10,
+ "url": "https://woocommerce.com/document/checkout-field-editor/",
+ "dir": "items/010-woocommerce.com",
+ "fetched_at": "2026-10-11T09:07:52Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/checkout-field-editor/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 56337,
+ "cited_in": [
+  "WC-S-5484",
+  "WC-S-5486",
+  "WC-S-5487",
+  "WC-S-5488"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "a3c271c2b9bb2793fb4065da80953c448f75e2a69b9b44765e68e971cdddd0bd",
+ "raw_ext": "html"
+}

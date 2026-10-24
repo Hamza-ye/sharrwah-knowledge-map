@@ -1,0 +1,19 @@
+{
+ "n": 74,
+ "url": "https://docs.bigcommerce.com/developer/docs/admin/store-configuration/settings/locales-configuration.md",
+ "dir": "items/074-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:20:29Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/docs/admin/store-configuration/settings/locales-configuration.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 1482,
+ "cited_in": [
+  "BC-S-0242",
+  "BC-S-0243"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "8152ff20c79c6b0ba2a95fda1f13373c7163d2e10beba163f4610eff4372df6f",
+ "raw_ext": "txt"
+}

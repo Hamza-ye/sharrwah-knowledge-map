@@ -1,0 +1,22 @@
+{
+ "n": 40,
+ "url": "https://help.salla.sa/article/تفعيل-الدفع-بالبطاقة-في-سلة-بوينت/hy4mv5r6yqoyjifiy7659nzk",
+ "dir": "items/040-help.salla.sa",
+ "fetched_at": "2026-10-11T09:19:51Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.salla.sa/article/تفعيل-الدفع-بالبطاقة-في-سلة-بوينت/hy4mv5r6yqoyjifiy7659nzk",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 141556,
+ "cited_in": [
+  "SA-S-5038",
+  "SA-S-5039",
+  "SA-S-5040",
+  "SA-S-5041",
+  "SA-S-5042"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "48758d0248a8ad92534f8d05ec65dd6f6f70df66c148c3d88cd9c8e2f1f58c72",
+ "raw_ext": "html"
+}

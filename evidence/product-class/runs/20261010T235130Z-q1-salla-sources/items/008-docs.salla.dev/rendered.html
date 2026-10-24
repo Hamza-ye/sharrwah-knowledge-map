@@ -1,0 +1,82 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;"># Rate Limiting
+
+To ensure Salla remains stable and fair for everyone, all APIs are rate-limited. Developers should adopt **industry-standard practices** such as limiting calls, caching results, and retrying requests responsibly. 🌐
+
+---
+
+## 📊 **Rate Limit Plans**
+
+Rate limits vary based on the store subscribed plan. Use the table below for details:
+
+&lt;Container&gt;
+| **Plan**    | **Max Requests** | **Timeout Duration** | **Leak Limit**           |
+| ----------- | ---------------- | -------------------- | ------------------------ |
+| **Plus**    | 120              | 1 minute             | 1 request per second     |
+| **Pro**     | 360              | 1 minute             | 1 request per second     |
+| **Special** | 720              | 1 minute             | 1 request per second     |
+&lt;/Container&gt;
+
+&lt;details&gt;
+&lt;summary&gt;💡 &lt;strong&gt;How It Works&lt;/strong&gt; (Click to expand)&lt;/summary&gt;
+
+- Each plan provides a maximum number of API calls (**Max Requests**) per **1 minute**.
+- If you exceed this, you can still send **1 request per second** until the minute resets.  
+- The **leaky bucket algorithm** is used to enforce this behavior.
+
+&lt;/details&gt;
+
+---
+
+## 🧩 **Rate Limit Headers**
+
+Each request includes headers to help you track and manage your usage.  
+
+&lt;Tabs&gt;
+&lt;TabItem value="X-RateLimit-Limit" label="X-RateLimit-Limit"&gt;
+
+This header indicates the total number of calls allowed per minute for your plan (e.g., 60, 120, or 180).
+
+&lt;/TabItem&gt;
+&lt;TabItem value="X-RateLimit-Remaining" label="X-RateLimit-Remaining"&gt;
+
+Displays the remaining number of calls in the current rate limit window.
+
+&lt;/TabItem&gt;
+&lt;TabItem value="Retry-After" label="Retry-After"&gt;
+
+Specifies the number of seconds until the API becomes available after exceeding the rate limit.
+
+&lt;/TabItem&gt;
+&lt;TabItem value="X-RateLimit-Reset" label="X-RateLimit-Reset"&gt;
+
+Indicates the time (in UTC epoch seconds) when the current rate limit window resets.
+
+&lt;/TabItem&gt;
+&lt;/Tabs&gt;
+
+---
+
+## 🛡️ **Special Limits for Customer Endpoints**
+
+Each store’s rate limit depends on its plan. Additionally:
+- **Customers' Endpoint:** Limited to **500 requests per 10 minutes**.
+
+---
+
+## ⚠️ **Important Notes**  
+:::caution
+- Exceeding rate limits or exhibiting unusual behavior may result in **temporary access restrictions**.  
+- Plan your API calls responsibly to avoid disruptions. ✅
+:::
+
+---
+
+## ❓ **Need Help?**
+
+We’re here for you! Reach out using any of the following methods:  
+- ✉️ [Email Support](mailto:support@salla.dev)  
+- 💻 [Developer Community](https://t.me/salladev)  
+- 🤖 [Support Bot](https://t.me/SallaSupportBot)
+
+Let’s keep your API experience smooth and uninterrupted! 🚀
+</pre></body></html>

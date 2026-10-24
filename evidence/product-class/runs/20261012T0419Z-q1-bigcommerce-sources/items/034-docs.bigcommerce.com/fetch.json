@@ -1,0 +1,18 @@
+{
+ "n": 34,
+ "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/price-lists.md",
+ "dir": "items/034-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:19:49Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/price-lists.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 1337,
+ "cited_in": [
+  "BC-S-0044"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "4b24f8eaf15a9ffc156d0654b8a8a669800c2530fb7a1ccf07bba666617c50eb",
+ "raw_ext": "txt"
+}

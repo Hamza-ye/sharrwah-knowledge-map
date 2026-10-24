@@ -1,0 +1,18 @@
+{
+ "n": 119,
+ "url": "https://shopify.dev/docs/apps/build/online-store/theme-app-extensions.md",
+ "dir": "items/119-shopify.dev",
+ "fetched_at": "2026-10-11T06:13:08Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://shopify.dev/docs/apps/build/online-store/theme-app-extensions.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 1211,
+ "cited_in": [
+  "SH-S-0705"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "97f91c9275f65699e2a826697760e58e476c1c34d0c22bc63aa79d42e311583e",
+ "raw_ext": "txt"
+}

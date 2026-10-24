@@ -1,0 +1,26 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Tue, 13 Oct 2026 00:35:32 GMT
+content-type: text/html; charset=utf-8
+age: 4002
+cache-control: public, max-age=0, must-revalidate
+bc-ray: 1
+content-security-policy: frame-ancestors 'self' app.makeswift.com
+document-policy: js-profiling
+set-cookie: c_consent=%7B%22anonymousId%22%3A%224dfe5fca-4e2c-4ab9-bec1-cc7cdce16ddb%22%2C%22geo%22%3A%7B%22country%22%3A%22United%20States%20of%20America%22%2C%22region%22%3A%22Virginia%22%7D%2C%22gpc%22%3Afalse%7D; Path=/; Expires=Wed, 13 Oct 2027 00:35:32 GMT; Domain=bigcommerce.com; SameSite=lax
+set-cookie: originUrl=www.bigcommerce.com; Path=/; Expires=Wed, 13 Oct 2027 00:35:32 GMT; Domain=bigcommerce.com; SameSite=lax
+set-cookie: __cf_bm=n.w85q7czRa2IZA9o28gBu3QJflstEug22qn9tiVQHM-1791851732.816936-1.0.1.1-8eT9X.xNSMY1gFd8PdIYk2SV2EUz_KqVwasutSlagfQhMbm3lL1c8l2KmlNXCY40I.hJ662km7zPLOpzLx2FrUBeWcN7M1R2sD1tRjBV3KOgXPS2oWrmPMJsX7LU9dux; HttpOnly; SameSite=None; Secure; Path=/; Domain=bigcommerce.com; Expires=Tue, 13 Oct 2026 01:05:32 GMT
+referrer-policy: no-referrer-when-downgrade
+server: cloudflare
+strict-transport-security: max-age=2592000; includeSubDomains
+x-matched-path: /en-US/[[...path]]
+x-powered-by: Next.js
+x-vercel-cache: STALE
+x-vercel-id: iad1::iad1::xlpz6-1791851732831-6f61b5fa32ec
+cf-cache-status: DYNAMIC
+vary: accept-encoding
+content-encoding: br
+cf-ray: a49a43d21f0ed62d-IAD
+alt-svc: h3=":443"; ma=86400
+

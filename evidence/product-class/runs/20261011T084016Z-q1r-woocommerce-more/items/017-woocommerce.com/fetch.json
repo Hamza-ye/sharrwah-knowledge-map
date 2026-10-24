@@ -1,0 +1,18 @@
+{
+ "n": 17,
+ "url": "https://woocommerce.com/document/support-guide/",
+ "dir": "items/017-woocommerce.com",
+ "fetched_at": "2026-10-11T08:40:25Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/support-guide/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 38333,
+ "cited_in": [
+  "WC-S-5344"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "cf076d328e9e3fc0a3b4ad5782f6b9441cdb8fd57cd8d60601f33a53f2e5af42",
+ "raw_ext": "html"
+}

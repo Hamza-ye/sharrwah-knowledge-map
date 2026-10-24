@@ -1,0 +1,1424 @@
+# List Bundle Offers
+
+## OpenAPI Specification
+
+```yaml
+openapi: 3.0.1
+info:
+  title: ''
+  description: ''
+  version: 1.0.0
+paths:
+  /v1/managers/store/discounts/bundle-offers:
+    get:
+      summary: List Bundle Offers
+      deprecated: false
+      description: >-
+        This endpoint retrieves all available bundle offers for the store.
+        Bundle offers are special promotions where customers can get a discount
+        if they buy a specific bundle of products.
+
+
+
+        :::note[]
+
+        Bundle offers can now apply to specific products, categories, or all
+        products using the new `applies_to` field. Additionally, you can now
+        `exclude on-sale` products using the exclude_on_sale_products flag in
+        both conditions and actions.
+
+        :::
+
+
+
+        <Accordion title="🔑Scopes" defaultOpen>
+            
+        `third_bundle_offers_read` - Bundle Offers Read
+         
+        </Accordion>
+      operationId: get-managers-store-discounts-bundle-offers
+      tags:
+        - Default module/Apps/Merchant APIs/Marketing/Bundle Offers
+        - Coupons and Bundle Offers
+      parameters:
+        - name: page
+          in: query
+          description: The page number for pagination.
+          required: false
+          example: 1
+          schema:
+            type: integer
+        - name: per_page
+          in: query
+          description: The number of results per page.
+          required: false
+          example: 15
+          schema:
+            type: integer
+        - name: code
+          in: query
+          description: 'A code to filter the bundle offers. Example: `bundle_offer`.'
+          required: false
+          example: ''
+          schema:
+            type: string
+        - name: status
+          in: query
+          description: >-
+            The status of the bundle offers. The possible values are: `expired`,
+            `disabled`, `unstarted`, `active`.
+          required: false
+          schema:
+            type: string
+            enum:
+              - active
+              - disabled
+              - expired
+              - unstarted
+            x-apidog-enum:
+              - value: active
+                name: Active
+                description: ''
+              - value: disabled
+                name: Disabled
+                description: ''
+              - value: expired
+                name: Expired
+                description: ''
+              - value: unstarted
+                name: Unstarted
+                description: ''
+        - name: type
+          in: query
+          description: The type of bundle offer.
+          required: false
+          example: ''
+          schema:
+            type: string
+        - name: start_date
+          in: query
+          description: >-
+            A date to filter the bundle offers by their start dates. Supports
+            standard comparison operators like `>=`.
+          required: false
+          schema:
+            type: string
+            format: date
+        - name: end_date
+          in: query
+          description: A date to filter the bundle offers by their end dates.
+          required: false
+          schema:
+            type: string
+            format: date
+        - name: order_by
+          in: query
+          description: 'A field to order the bundle offers by. Example: `start_date`.'
+          required: false
+          schema:
+            type: string
+        - name: sort_by
+          in: query
+          description: 'A sort direction. Example: `desc`.'
+          required: false
+          schema:
+            type: string
+        - name: search_term
+          in: query
+          description: A term to search the bundle offers by their names.
+          required: false
+          schema:
+            type: string
+        - name: Authorization
+          in: header
+          description: >-
+            The Authorization token is a unique key given to the third-party
+            application (Partner) by Zid. It is used to authenticate the API
+            requests made by the Partner application. The token verifies the
+            partner's identity and ensures they have permission to access Zid's
+            API but does not provide any specific user or store information. It
+            should be included in the header of API requests when the partner
+            application needs to access Zid's API.
+          required: true
+          example: '{{Autherization}}'
+          schema:
+            type: string
+        - name: X-Manager-Token
+          in: header
+          description: >-
+            This token is used to authenticate and access information related to
+            the store. It is obtained through an OAuth mechanism and is required
+            to perform operations on the store's data. The `X-Manager-Token`
+            should be included in the header of API requests that require
+            store-related information.
+          required: true
+          example: '{{Access-Token}}'
+          schema:
+            type: string
+        - name: Accept-Language
+          in: header
+          description: >-
+            Preferred language for the response. Defaults to `en` if not
+            specified.
+          required: false
+          example: en
+          schema:
+            type: string
+            enum:
+              - en
+              - ar
+            examples:
+              - en
+        - name: Currency
+          in: header
+          description: >-
+            The currency in which the data should be returned. This should be
+            provided as an ISO 4217 currency code. For example, SAR for Saudi
+            Riyal, USD for United States Dollar, KWD for Kuwaiti Dinar, etc.
+          required: true
+          example: SAR
+          schema:
+            type: string
+            examples:
+              - SAR
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Optional status metadata object returned by the API.
+                  discount_rules:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/DiscountRuleSerializer'
+                    description: List of bundle offer discount rules.
+                  page:
+                    type: integer
+                    description: Current page number.
+                    examples:
+                      - 1
+                  next_page:
+                    type: integer
+                    description: Next page number if pagination continues.
+                  last_page:
+                    type: integer
+                    description: Last available page number.
+                    examples:
+                      - 1
+                  total:
+                    type: integer
+                    description: Total number of bundle offers.
+                    examples:
+                      - 50
+                  message: &ref_0
+                    $ref: '#/components/schemas/ResponseEnvelopMessage'
+                required:
+                  - status
+                  - discount_rules
+                  - page
+                  - next_page
+                  - last_page
+                  - total
+                  - message
+                x-apidog-orders:
+                  - status
+                  - discount_rules
+                  - page
+                  - next_page
+                  - last_page
+                  - total
+                  - message
+                title: List Bundle Offers Response
+                description: >-
+                  Response payload returned when listing bundle offer discount
+                  rules.
+                x-apidog-ignore-properties: []
+              example:
+                status: object
+                discount_rules:
+                  - id: 02ed8742-354d-4b44-8f3f-39766081c12e
+                    name:
+                      en: null
+                      ar: BuyOne_GetSameFree
+                    description:
+                      ar: null
+                      en: null
+                    code: bundle_offer
+                    conditions:
+                      - field: products_quantity
+                        value: 1
+                        operator: '>='
+                        product_ids:
+                          - e76df08490ff4f9da738557bad069c64
+                    actions:
+                      - type: percentage
+                        field: products
+                        value: 100
+                        product_ids:
+                          - e76df08490ff4f9da738557bad069c64
+                        products_quantity: 1
+                    conditions_criteria: all
+                    uses_total: null
+                    uses_customer: null
+                    enabled: false
+                    auto_adding: true
+                    status_code: disabled
+                    start_date: '2023-11-07'
+                    end_date: null
+                    meta:
+                      auto_add_products: true
+                    channel: catalog
+                    channel_name:
+                      ar: المتجر الإلكتروني
+                      en: Store
+                  - id: 0500ec17-54b6-47b5-910c-b73e319f7381
+                    name:
+                      en: null
+                      ar: احصل عليه مجانًا
+                    description:
+                      en: null
+                      ar: في حال اشتر عطر اخضر واحصل على الازرق
+                    code: bundle_offer
+                    conditions:
+                      - field: products_quantity
+                        value: 1
+                        operator: '>='
+                        product_ids:
+                          - 6f1cae36a39b4378ab175f60626e9d4c
+                    actions:
+                      - type: percentage
+                        field: products
+                        value: 100
+                        product_ids:
+                          - fe90852cf53442edbdcac868039f0366
+                        products_quantity: 1
+                    conditions_criteria: all
+                    uses_total: 4
+                    uses_customer: 1
+                    enabled: false
+                    auto_adding: true
+                    status_code: disabled
+                    start_date: '2023-12-24'
+                    end_date: null
+                    meta:
+                      auto_add_products: true
+                    channel: catalog
+                    channel_name:
+                      ar: المتجر الإلكتروني
+                      en: Store
+                  - id: 089f6543-46cf-445b-b745-7f6fa02edb05
+                    name:
+                      en: null
+                      ar: رمضان
+                    description:
+                      ar: null
+                      en: null
+                    code: bundle_offer
+                    conditions:
+                      - field: products_quantity
+                        value: 1
+                        operator: '>='
+                        product_ids:
+                          - 3d17bbb6a49945fbbb2a009b8332b53b
+                    actions:
+                      - type: percentage
+                        field: products
+                        value: 100
+                        product_ids:
+                          - 170fcdc010914568a79c6cc634bb94bf
+                        products_quantity: 1
+                    conditions_criteria: all
+                    uses_total: null
+                    uses_customer: null
+                    enabled: false
+                    auto_adding: true
+                    status_code: disabled
+                    start_date: '2022-03-10'
+                    end_date: null
+                    meta:
+                      auto_add_products: true
+                    channel: catalog
+                    channel_name:
+                      ar: المتجر الإلكتروني
+                      en: Store
+                  - id: 0e038a43-fd58-40ac-ab1c-f03efa601207
+                    name:
+                      en: null
+                      ar: حزمة للسلة الجديدة مجانى
+                    description:
+                      ar: null
+                      en: null
+                    code: bundle_offer
+                    conditions:
+                      - field: products_quantity
+                        value: 1
+                        operator: '>='
+                        product_ids:
+                          - 1aeae4bb3bf44821b9d6182afeeb085b
+                    actions:
+                      - type: percentage
+                        field: products
+                        value: 50
+                        product_ids:
+                          - 56a538f1b4e24a1ab01d7472f89df37d
+                        products_quantity: 1
+                    conditions_criteria: all
+                    uses_total: null
+                    uses_customer: null
+                    enabled: false
+                    auto_adding: false
+                    status_code: disabled
+                    start_date: '2023-12-24'
+                    end_date: null
+                    meta:
+                      auto_add_products: false
+                    channel: catalog
+                    channel_name:
+                      ar: المتجر الإلكتروني
+                      en: Store
+                  - id: 138f9af1-fc13-4f75-aa27-7ca08c00ec69
+                    name:
+                      en: null
+                      ar: BuyOne_GetDiscountedOne
+                    description:
+                      ar: null
+                      en: null
+                    code: bundle_offer
+                    conditions:
+                      - field: products_quantity
+                        value: 1
+                        operator: '>='
+                        product_ids:
+                          - b859bb3e306749a9acc76bbfd7bbb211
+                          - ccc39cdfeef149b0bc188189c983de90
+                    actions:
+                      - type: percentage
+                        field: products
+                        value: 50
+                        product_ids:
+                          - f0d8bfe64b1c431bba0639bfdb88fca0
+                        products_quantity: 1
+                    conditions_criteria: all
+                    uses_total: null
+                    uses_customer: null
+                    enabled: false
+                    auto_adding: true
+                    status_code: disabled
+                    start_date: '2023-11-07'
+                    end_date: null
+                    meta:
+                      auto_add_products: true
+                    channel: catalog
+                    channel_name:
+                      ar: المتجر الإلكتروني
+                      en: Store
+                  - id: 1d1542bf-3dcd-4328-bdb9-48d30936747a
+                    name:
+                      ar: tets
+                      en: test
+                    description:
+                      ar: tes
+                      en: tes
+                    code: bundle_offer
+                    conditions:
+                      - field: products_quantity
+                        value: 1
+                        operator: '>='
+                        product_ids:
+                          - f655e3492cc141d2aecdb81cd6a12985
+                    actions:
+                      - type: percentage
+                        field: products
+                        value: 10.7
+                        product_ids:
+                          - f655e3492cc141d2aecdb81cd6a12985
+                        products_quantity: 1
+                    conditions_criteria: all
+                    uses_total: null
+                    uses_customer: null
+                    enabled: true
+                    auto_adding: true
+                    status_code: expired
+                    start_date: '2025-06-24'
+                    end_date: '2025-06-30'
+                    meta:
+                      auto_add_products: true
+                    channel: catalog
+                    channel_name:
+                      ar: المتجر الإلكتروني
+                      en: Store
+                  - id: 224c8be1-9922-4939-ba74-dbd91881361f
+                    name:
+                      en: null
+                      ar: حزمه تيست
+                    description:
+                      en: null
+                      ar: قم بأضافه منتج لتحصل علي منتج مجاني
+                    code: bundle_offer
+                    conditions:
+                      - field: products_quantity
+                        value: 1
+                        operator: '>='
+                        product_ids:
+                          - c70f8371187f4285959e9ac2223185e3
+                    actions:
+                      - type: percentage
+                        field: products
+                        value: 100
+                        product_ids:
+                          - c51a3e1ce15c4f089e4f10226816662f
+                        products_quantity: 1
+                    conditions_criteria: all
+                    uses_total: null
+                    uses_customer: null
+                    enabled: true
+                    auto_adding: true
+                    status_code: expired
+                    start_date: '2022-10-09'
+                    end_date: '2023-07-20'
+                    meta:
+                      auto_add_products: true
+                    channel: catalog
+                    channel_name:
+                      ar: المتجر الإلكتروني
+                      en: Store
+                  - id: 249571bb-6ad1-4fc3-8f76-3b435e78f6de
+                    name:
+                      en: null
+                      ar: Test 1 + 1
+                    description:
+                      ar: null
+                      en: null
+                    code: bundle_offer
+                    conditions:
+                      - field: products_quantity
+                        value: 1
+                        operator: '>='
+                        product_ids:
+                          - 75bd90f0353c41329e9e13a3a24be684
+                    actions:
+                      - type: percentage
+                        field: products
+                        value: 100
+                        product_ids:
+                          - 75bd90f0353c41329e9e13a3a24be684
+                        products_quantity: 1
+                    conditions_criteria: all
+                    uses_total: null
+                    uses_customer: null
+                    enabled: false
+                    auto_adding: true
+                    status_code: disabled
+                    start_date: '2024-02-11'
+                    end_date: null
+                    meta:
+                      auto_add_products: true
+                    channel: catalog
+                    channel_name:
+                      ar: المتجر الإلكتروني
+                      en: Store
+                  - id: 2aec3a84-d253-45f4-ac05-d97cea113477
+                    name:
+                      en: null
+                      ar: ٣حهت
+                    description:
+                      en: null
+                      ar: ٣حختب
+                    code: bundle_offer
+                    conditions:
+                      - field: products_quantity
+                        value: 1
+                        operator: '>='
+                        product_ids:
+                          - ae1b4ddd86c64acb96b79dc22fa7cf8f
+                    actions:
+                      - type: percentage
+                        field: products
+                        value: 100
+                        product_ids:
+                          - 525fd66eb9fb4d27a56abcae3854a61f
+                        products_quantity: 1
+                    conditions_criteria: all
+                    uses_total: null
+                    uses_customer: null
+                    enabled: false
+                    auto_adding: true
+                    status_code: disabled
+                    start_date: '2024-09-11'
+                    end_date: null
+                    meta:
+                      auto_add_products: true
+                    channel: catalog
+                    channel_name:
+                      ar: المتجر الإلكتروني
+                      en: Store
+                  - id: 2ded51ec-adb5-4c7b-a0b9-1c8ef90d764c
+                    name:
+                      ar: bundle
+                      en: bundle
+                    description:
+                      ar: null
+                      en: null
+                    code: bundle_offer
+                    conditions:
+                      - field: products_quantity
+                        value: 1
+                        operator: '>='
+                        product_ids:
+                          - deb71db2ef90464a9de7fe3e2ab12297
+                          - d42f305a2f7d4abaa7a380a5ba9caa3f
+                          - b43abb22179b4f0baf0e7c55eb04135f
+                          - 15aa95a82f35400e956016805cfe0553
+                          - b00dca745a0a437fbca95791385519e6
+                          - afa334778e1d4bb5a50af69a28ec4e9e
+                          - 1e8621b55ed147138f3545da2c9383d1
+                          - 5cb4238444e94e139105f7ba07b095be
+                          - bc06c5e3e8a442b091c7a2eb6ff9b04c
+                          - 83fb0df2e3f44e6da16c27e6afe5b3f4
+                    actions:
+                      - type: percentage
+                        field: products
+                        value: 100
+                        product_ids:
+                          - deb71db2ef90464a9de7fe3e2ab12297
+                          - d42f305a2f7d4abaa7a380a5ba9caa3f
+                          - b43abb22179b4f0baf0e7c55eb04135f
+                          - 15aa95a82f35400e956016805cfe0553
+                          - b00dca745a0a437fbca95791385519e6
+                          - afa334778e1d4bb5a50af69a28ec4e9e
+                          - 1e8621b55ed147138f3545da2c9383d1
+                          - 5cb4238444e94e139105f7ba07b095be
+                          - bc06c5e3e8a442b091c7a2eb6ff9b04c
+                          - 83fb0df2e3f44e6da16c27e6afe5b3f4
+                        products_quantity: 1
+                    conditions_criteria: all
+                    uses_total: 0
+                    uses_customer: null
+                    enabled: false
+                    auto_adding: true
+                    status_code: disabled
+                    start_date: '2025-10-11'
+                    end_date: null
+                    meta:
+                      auto_add_products: true
+                    channel: catalog
+                    channel_name:
+                      ar: المتجر الإلكتروني
+                      en: Store
+                  - id: 32043a1e-ee05-4224-838e-c2496d3a82a6
+                    name:
+                      ar: test bundle
+                      en: null
+                    description: []
+                    code: bundle_offer
+                    conditions:
+                      - field: products_quantity
+                        value: 1
+                        operator: '>='
+                        applies_to: product
+                        product_ids:
+                          - 031c1dcd72ec493f927531c559b3f493
+                    actions:
+                      - type: free
+                        field: products
+                        value: 100
+                        applies_to: product
+                        product_ids:
+                          - 4fea1312a57b419b8258a12aa2c95754
+                        products_quantity: 1
+                    conditions_criteria: all
+                    uses_total: null
+                    uses_customer: null
+                    enabled: true
+                    auto_adding: true
+                    status_code: expired
+                    start_date: '2024-07-06'
+                    end_date: '2024-07-31'
+                    meta:
+                      auto_add_products: true
+                    channel: catalog
+                    channel_name:
+                      ar: المتجر الإلكتروني
+                      en: Store
+                  - id: 38405394-8654-419b-8736-574b5461a543
+                    name:
+                      ar: test xy
+                      en: null
+                    description:
+                      ar: hello
+                      en: null
+                    code: bundle_offer
+                    conditions:
+                      - field: products_quantity
+                        value: 1
+                        operator: '>='
+                        product_ids:
+                          - 775cdfe0510e4228ae32956011ff24aa
+                    actions:
+                      - type: percentage
+                        field: products
+                        value: 100
+                        product_ids:
+                          - 775cdfe0510e4228ae32956011ff24aa
+                          - b4b6fe6c9aa24a978dacec2df53fe9ba
+                        products_quantity: 1
+                    conditions_criteria: all
+                    uses_total: 555
+                    uses_customer: 1
+                    enabled: false
+                    auto_adding: true
+                    status_code: disabled
+                    start_date: '2024-12-11'
+                    end_date: null
+                    meta:
+                      auto_add_products: true
+                    channel: catalog
+                    channel_name:
+                      ar: المتجر الإلكتروني
+                      en: Store
+                  - id: 3bf8ddc9-6ee9-4121-9c15-d4566d41add0
+                    name:
+                      en: null
+                      ar: Bundle
+                    description:
+                      en: null
+                      ar: احصل علي خصم 50 %
+                    code: bundle_offer
+                    conditions:
+                      - field: products_quantity
+                        value: 2
+                        operator: '>='
+                        product_ids:
+                          - 271a034c4d7c40fcb54fdc5df113812c
+                    actions:
+                      - type: percentage
+                        field: products
+                        value: 100
+                        product_ids:
+                          - 02f2ed69f8654edfba91c217bd493b48
+                          - aaf2492b8fd14ce1abdf41a63c4721db
+                          - 98f8ca54642e4a639fee8f38800e25a7
+                        products_quantity: 1
+                    conditions_criteria: all
+                    uses_total: null
+                    uses_customer: null
+                    enabled: false
+                    auto_adding: true
+                    status_code: disabled
+                    start_date: '2022-08-16'
+                    end_date: null
+                    meta:
+                      auto_add_products: true
+                    channel: catalog
+                    channel_name:
+                      ar: المتجر الإلكتروني
+                      en: Store
+                  - id: 3cb40974-56de-4bfa-ba60-6d8c9e5f4688
+                    name:
+                      en: null
+                      ar: Main Grouped Bundle Test
+                    description:
+                      en: null
+                      ar: Main Grouped Bundle Test
+                    code: bundle_offer
+                    conditions:
+                      - field: products_quantity
+                        value: 1
+                        operator: '>='
+                        product_ids:
+                          - 7d2e793a2a314a5bb40d6f1db26aa07d
+                    actions:
+                      - type: percentage
+                        field: products
+                        value: 100
+                        product_ids:
+                          - 99810cc078a34e339cf4f3016136990a
+                        products_quantity: 1
+                    conditions_criteria: all
+                    uses_total: null
+                    uses_customer: null
+                    enabled: false
+                    auto_adding: true
+                    status_code: disabled
+                    start_date: '2024-07-09'
+                    end_date: null
+                    meta:
+                      auto_add_products: true
+                    channel: catalog
+                    channel_name:
+                      ar: المتجر الإلكتروني
+                      en: Store
+                  - id: 3ed7ec23-902d-4593-971c-7aa2b989154c
+                    name:
+                      ar: qwe
+                    description: []
+                    code: bundle_offer
+                    conditions:
+                      - field: products_quantity
+                        value: 1
+                        operator: '>='
+                        product_ids:
+                          - c7d0807875044b78a101415a7e1a17f7
+                          - 71078fb3ad46482c87927861504a5867
+                          - b5c89eed0de841359bd3987331849b29
+                          - dcb012d027b94e89bb907490d89ff972
+                          - 3b8297d589354ef2a2215ae07b41c94f
+                    actions:
+                      - type: percentage
+                        field: products
+                        value: 1
+                        product_ids:
+                          - dcb012d027b94e89bb907490d89ff972
+                          - 16eb746e0e974f369cd591e4f21d5124
+                          - 2f45e833f698483786291e7b9d4b75f5
+                          - 3b8297d589354ef2a2215ae07b41c94f
+                        products_quantity: 1
+                    conditions_criteria: all
+                    uses_total: null
+                    uses_customer: null
+                    enabled: false
+                    auto_adding: true
+                    status_code: disabled
+                    start_date: '2025-01-22'
+                    end_date: null
+                    meta:
+                      auto_add_products: true
+                    channel: null
+                    channel_name: null
+                page: 1
+                next_page: 2
+                last_page: 4
+                total: 51
+                message:
+                  type: object
+                  code: null
+                  name: null
+                  description: null
+          headers: {}
+          x-apidog-name: OK
+        '401':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                description: >-
+                  Response returned when the request cannot be authenticated
+                  because the required credentials are missing, invalid, or
+                  expired.
+                properties:
+                  status:
+                    type: string
+                    description: Indicates the overall status of the API response.
+                    examples:
+                      - error
+                  message:
+                    type: object
+                    description: >-
+                      Contains structured details explaining why the request
+                      could not be authenticated.
+                    properties:
+                      type:
+                        type: string
+                        description: Indicates the category of the response message.
+                        examples:
+                          - error
+                      code:
+                        type: string
+                        description: >-
+                          A machine-readable code identifying the authentication
+                          error. Returns null when no specific code is
+                          available.
+                        examples:
+                          - UNAUTHORIZED
+                        nullable: true
+                      name:
+                        type: string
+                        description: >-
+                          A short, human-readable title describing the
+                          authentication error. Returns null when no title is
+                          available.
+                        examples:
+                          - Unauthorized
+                        nullable: true
+                      description:
+                        type: string
+                        description: >-
+                          A human-readable explanation of why the request could
+                          not be authenticated. Returns null when no detailed
+                          explanation is available.
+                        examples:
+                          - >-
+                            Authentication credentials are missing, invalid, or
+                            expired.
+                        nullable: true
+                    required:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-orders:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-ignore-properties: []
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                examples:
+                  - status: error
+                    message:
+                      type: error
+                      code: UNAUTHORIZED
+                      name: Unauthorized
+                      description: >-
+                        Authentication credentials are missing, invalid, or
+                        expired.
+                x-apidog-ignore-properties: []
+              examples:
+                '2':
+                  summary: Example 1
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_MISSING
+                      name: Sorry
+                      description: Please login first.
+                '3':
+                  summary: Example 2
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Login session expired. Please login again.
+                '4':
+                  summary: Example 3
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Invalid authentication
+          headers: {}
+          x-apidog-name: Unauthorized
+        '500':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Status of the error.
+                  message: *ref_0
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                x-apidog-ignore-properties: []
+              example:
+                status: error
+                message:
+                  type: error
+                  code: MSG_HIDDEN
+                  name: Error
+                  description: Internal Server Error
+          headers: {}
+          x-apidog-name: Internal Server error
+      security: []
+      x-apidog-folder: Default module/Apps/Merchant APIs/Marketing/Bundle Offers
+      x-apidog-status: released
+      x-run-in-apidog: https://app.apidog.com/web/project/613905/apis/api-9614615-run
+components:
+  schemas:
+    ResponseEnvelopMessage:
+      type: object
+      properties:
+        type:
+          type: string
+          description: Type of response message returned by the API.
+          examples:
+            - success
+        code:
+          type: string
+          description: Response code returned by the API, if available.
+          examples:
+            - MSG_POPUP_OK
+          nullable: true
+        name:
+          type: string
+          description: Name or title of the response message, if available.
+          examples:
+            - Coupons
+          nullable: true
+        description:
+          type: string
+          description: Detailed description of the response message, if available.
+          examples:
+            - Coupons created successfully
+          nullable: true
+      required:
+        - type
+        - code
+        - name
+        - description
+      description: Additional response metadata.
+      x-apidog-orders:
+        - type
+        - code
+        - name
+        - description
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    DiscountRuleSerializer:
+      type: object
+      description: >-
+        Represents a discount rule, including its localized content, eligibility
+        conditions, discount actions, usage limits, activation state, validity
+        period, metadata, and sales-channel information.
+      properties:
+        id:
+          type: string
+          description: The unique identifier of the discount rule.
+          examples:
+            - 0104e646-238d-473b-a370-f48ec5588262
+        name:
+          type: object
+          description: The localized name of the discount rule.
+          properties:
+            ar:
+              type: string
+              description: >-
+                The discount rule name in Arabic. Returns null when no Arabic
+                name is available.
+              examples:
+                - خصم تطبيق الجوال
+              nullable: true
+            en:
+              type: string
+              description: >-
+                The discount rule name in English. Returns null when no English
+                name is available.
+              examples:
+                - Mobile App Discount
+              nullable: true
+          x-apidog-orders:
+            - ar
+            - en
+          examples:
+            - ar: خصم تطبيق الجوال
+              en: Mobile App Discount
+          x-apidog-ignore-properties: []
+        description:
+          description: >-
+            The discount rule description. Depending on the rule, it may be
+            returned as a localized object, a string, an array of strings, or
+            null when no description is available.
+          anyOf:
+            - type: object
+              description: A localized description of the discount rule.
+              properties:
+                ar:
+                  type: string
+                  description: >-
+                    The discount rule description in Arabic. Returns null when
+                    no Arabic description is available.
+                  examples:
+                    - خصم خاص بطلبات تطبيق الجوال
+                  nullable: true
+                en:
+                  type: string
+                  description: >-
+                    The discount rule description in English. Returns null when
+                    no English description is available.
+                  examples:
+                    - >-
+                      A discount for orders placed through the mobile
+                      application.
+                  nullable: true
+              x-apidog-orders:
+                - ar
+                - en
+              x-apidog-ignore-properties: []
+            - type: 'null'
+            - type: array
+              description: A list of text values describing the discount rule.
+              items:
+                type: string
+                description: A text value included in the discount rule description.
+                examples:
+                  - Applies to selected products.
+            - type: string
+              description: A plain-text description of the discount rule.
+              examples:
+                - A discount for orders placed through the mobile application.
+          examples:
+            - ar: خصم خاص بطلبات تطبيق الجوال
+              en: A discount for orders placed through the mobile application.
+            - null
+        code:
+          type: string
+          description: >-
+            A machine-readable code used to identify or categorize the discount
+            rule.
+          examples:
+            - mobile_app
+        conditions:
+          type: array
+          description: >-
+            A list of conditions that determine when the discount rule is
+            eligible to apply.
+          items:
+            type: object
+            description: A condition evaluated before the discount action is applied.
+            properties:
+              field:
+                type: string
+                description: >-
+                  The order, cart, customer, product, or sales-channel attribute
+                  evaluated by the condition.
+                examples:
+                  - source
+              value:
+                type: string
+              operator:
+                type: string
+                description: >-
+                  The comparison operator used to evaluate the condition.
+                  Examples include `=`, `in`, and `>=`. The supported operator
+                  depends on the selected field.
+                examples:
+                  - '='
+              product_ids:
+                type: array
+                description: >-
+                  A list of product identifiers associated with the condition.
+                  Returns null when the condition does not target specific
+                  products.
+                items:
+                  type: string
+                  description: >-
+                    The unique identifier of a product included in the
+                    condition.
+                  examples:
+                    - e76df08490ff4f9da738557bad069c64
+                examples:
+                  - - e76df08490ff4f9da738557bad069c64
+                nullable: true
+              applies_to:
+                type: string
+                description: >-
+                  Specifies the product scope to which the condition applies.
+                  Returns null when no explicit product scope is configured.
+                examples:
+                  - all_products
+                nullable: true
+              value_string:
+                type: array
+                description: >-
+                  A list of human-readable string representations of the
+                  condition value, when provided by the API.
+                items:
+                  type: string
+                  description: A human-readable representation of a condition value.
+                  examples:
+                    - Mobile App
+                examples:
+                  - - Mobile App
+            required:
+              - field
+              - value
+              - operator
+            x-apidog-orders:
+              - field
+              - value
+              - operator
+              - product_ids
+              - applies_to
+              - value_string
+            x-apidog-ignore-properties: []
+          examples:
+            - - field: source
+                value: mobile_app
+                operator: '='
+        actions:
+          type: array
+          description: >-
+            A list of discount actions performed when the configured conditions
+            are satisfied.
+          items:
+            type: object
+            description: >-
+              Defines the discount type, target, value, and optional product
+              scope applied by the rule.
+            properties:
+              type:
+                type: string
+                description: The type of discount action applied by the rule.
+                examples:
+                  - percentage
+              field:
+                type: string
+                description: >-
+                  The order or product value affected by the discount action,
+                  such as the cart subtotal or selected products.
+                examples:
+                  - subtotal
+              value:
+                type: string
+                description: >-
+                  The discount value applied by the action. Its meaning depends
+                  on the action type. For example, it represents a percentage
+                  when `type` is `percentage`.
+                examples:
+                  - '30'
+              product_ids:
+                type: array
+                description: >-
+                  A list of product identifiers affected by the discount action.
+                  Returns null when the action is not limited to specific
+                  products.
+                items:
+                  type: string
+                  description: The unique identifier of a product affected by the action.
+                  examples:
+                    - e76df08490ff4f9da738557bad069c64
+                examples:
+                  - - e76df08490ff4f9da738557bad069c64
+                nullable: true
+              products_quantity:
+                description: >-
+                  The number of products affected by the discount action. The
+                  API may return this value as a string or an integer.
+                anyOf:
+                  - type: string
+                    examples:
+                      - '1'
+                  - type: integer
+                    examples:
+                      - 1
+                examples:
+                  - 1
+              applies_to:
+                type: string
+                description: >-
+                  Specifies the product scope to which the discount action
+                  applies.
+                examples:
+                  - all_products
+            required:
+              - type
+              - field
+              - value
+            x-apidog-orders:
+              - type
+              - field
+              - value
+              - product_ids
+              - products_quantity
+              - applies_to
+            x-apidog-ignore-properties: []
+          examples:
+            - - type: percentage
+                field: subtotal
+                value: '30'
+        conditions_criteria:
+          type: string
+          description: >-
+            Specifies how multiple conditions are evaluated. For example, `all`
+            means that every configured condition must be satisfied before the
+            discount rule is applied.
+          examples:
+            - all
+        uses_total:
+          description: >-
+            The maximum total number of times the discount rule can be used
+            across all customers. The API may return this value as a string,
+            integer, or null when no value is available.
+          anyOf:
+            - type: string
+              examples:
+                - '100'
+            - type: integer
+              examples:
+                - 100
+            - type: 'null'
+          examples:
+            - 100
+        uses_customer:
+          description: >-
+            The maximum number of times a single customer can use the discount
+            rule. The API may return this value as a string, integer, or null
+            when no value is available.
+          anyOf:
+            - type: string
+              examples:
+                - '1'
+            - type: integer
+              examples:
+                - 1
+            - type: 'null'
+          examples:
+            - 1
+        enabled:
+          type: boolean
+          description: Indicates whether the discount rule is enabled.
+          examples:
+            - true
+        auto_adding:
+          type: boolean
+          description: >-
+            Indicates whether qualifying products or the discount are added
+            automatically. Returns null when this setting is not applicable or
+            unavailable.
+          examples:
+            - true
+          nullable: true
+        status_code:
+          type: string
+          description: >-
+            The current operational status of the discount rule, determined by
+            its enabled state and validity period.
+          examples:
+            - active
+            - expired
+            - disabled
+        start_date:
+          type: string
+          description: >-
+            The date from which the discount rule becomes valid, formatted as
+            `YYYY-MM-DD`.
+          examples:
+            - '2026-06-01'
+        end_date:
+          type: string
+          description: >-
+            The date on which the discount rule expires, formatted as
+            `YYYY-MM-DD`. Returns null when no end date is configured.
+          examples:
+            - '2026-06-30'
+          nullable: true
+        meta:
+          type: object
+          description: >-
+            Additional configuration associated with the discount rule. Returns
+            null when no metadata is available.
+          properties:
+            auto_add_products:
+              type: boolean
+              description: >-
+                Indicates whether eligible products are automatically added as
+                part of the discount rule.
+              examples:
+                - true
+            category_id:
+              type: integer
+              description: >-
+                The unique identifier of the category associated with the
+                discount rule metadata.
+              examples:
+                - 12345
+          x-apidog-orders:
+            - auto_add_products
+            - category_id
+          examples:
+            - auto_add_products: true
+              category_id: 12345
+          x-apidog-ignore-properties: []
+          nullable: true
+        channel:
+          type: string
+          description: >-
+            The sales channel to which the discount rule is limited. Returns
+            null when the rule is not restricted to a specific channel.
+          examples:
+            - catalog
+          nullable: true
+        channel_name:
+          type: object
+          description: >-
+            The localized display name of the sales channel. Returns null when
+            no sales channel is assigned.
+          properties:
+            ar:
+              type: string
+              description: The sales channel name in Arabic.
+              examples:
+                - المتجر الإلكتروني
+            en:
+              type: string
+              description: The sales channel name in English.
+              examples:
+                - Store
+          x-apidog-orders:
+            - ar
+            - en
+          required:
+            - ar
+            - en
+          examples:
+            - ar: المتجر الإلكتروني
+              en: Store
+          x-apidog-ignore-properties: []
+          nullable: true
+      required:
+        - id
+        - name
+        - description
+        - code
+        - conditions
+        - actions
+        - conditions_criteria
+        - uses_total
+        - uses_customer
+        - enabled
+        - auto_adding
+        - status_code
+        - start_date
+        - end_date
+        - meta
+        - channel
+        - channel_name
+      x-apidog-orders:
+        - id
+        - name
+        - description
+        - code
+        - conditions
+        - actions
+        - conditions_criteria
+        - uses_total
+        - uses_customer
+        - enabled
+        - auto_adding
+        - status_code
+        - start_date
+        - end_date
+        - meta
+        - channel
+        - channel_name
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+  securitySchemes: {}
+servers:
+  - url: https://api.zid.sa/
+    description: Prod Env
+security: []
+
+```

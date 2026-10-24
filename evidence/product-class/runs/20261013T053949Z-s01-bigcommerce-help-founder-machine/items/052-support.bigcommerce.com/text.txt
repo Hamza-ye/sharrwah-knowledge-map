@@ -1,0 +1,199 @@
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+GETTING STARTED
+PRODUCTS
+STORE SETUP
+B2B
+DESIGN AND CONTENT
+MANAGE STORE
+Mobile App
+Orders
+Customers
+Managing Customers
+Customer Accounts
+Guest Customers
+Customer Groups
+Store Credit
+Importing/Exporting
+Wish Lists
+Requirements
+Enabling and Disabling
+Creating
+Adding Products
+Managing
+Viewing
+FAQ
+BigCommerce For WordPress
+CHANNEL MANAGER
+MARKETING
+DATA SOLUTIONS
+ACCOUNT
+TD BANK
+Wishlists
+What We'll Cover
+Requirements
+Enabling and disabling wishlists
+Creating storefront wishlists
+Adding products to wishlists
+Managing wishlists
+Viewing a customer’s wishlist
+FAQ
+
+Understanding your customers is an essential part of building a loyal customer base. A wishlist is a window into your customer's way of thinking and aspirations. By viewing wishlists and compiling the data, you'll be able to see what they're interested in, making your marketing efforts more efficient.
+
+ 
+Requirements
+To offer wishlists on your storefront, customer account creation must be enabled.
+To enable wishlists, you must have the Manage Settings permission enabled on your user account.
+To view a customer’s storefront wishlist, you must have the Manage Customers and Edit Customers permissions enabled.
+ 
+Enabling and Disabling Wishlists
+
+You can enable or disable wishlists from the control panel. By default, wishlists are enabled on your storefront.
+
+To enable wishlists, go to Settings › Display and check the box next to Enable Wishlist.
+
+Uncheck the box to hide wishlists from your storefront. Note that disabling does not delete any existing wishlists, and they are available to customers if you re-enable the feature again.
+
+ 
+Creating Storefront Wishlists
+
+To create wishlists, your customers must first log in to their storefront account. Once signed in, customers can follow these steps to create a new wishlist from their account area, or from a product page.
+
+1. Navigate to Account in the storefront. Generally this link is located at the top of the store, but its exact location varies from theme to theme.
+
+2. Go to the Wish Lists area, then click the New Wish List button.
+
+3. Enter a Name for the wishlist. If customers would like to share their wishlist with a link, check Share Wishlist.
+
+4. Click Create Wish List to save the wishlist.
+
+ 
+Adding Products to Wishlists
+
+To add products to their wishlists, customers start by navigating to any product page. Products cannot be added to wishlists from category or quickview pages.
+
+Click the Add to Wish List button. For some themes, this button has a heart icon, while others have text.
+
+Heart Icon Example:
+
+Text Button Example:
+
+From the drop-down menu, signed-in customers can add the product to an existing wishlist, or they can select Create New Wish List to configure a new wishlist containing the product. Customers who are not logged in are taken to the storefront login page if they attempt to add an item to a wishlist.
+
+ 
+
+Store performance issues can occur with large wishlists. Shoppers may experience performance issues when attempting to use wishlists larger than 600 products, leading to a less than optimal shopping experience. We recommend encouraging your shoppers to create multiple wish lists. Suggestions can include holiday-specific lists, project lists, or lists for individuals, rather than having a single large wishlist on a customer account.
+
+ 
+Managing Wishlists
+Viewing wishlists
+Editing a wishlist
+Removing items from a wishlist
+VIEWING WISHLISTS
+
+To manage multiple wishlists as a customer, navigate to Wish Lists in the Account area. All of the wishlists you have created will be shown on the page.
+
+Customers can perform the following actions on their wishlists:
+
+Share — Access a wishlist's share URL, which customers can send to those they would like to view their wishlist.
+This icon will only appear for wishlists with sharing enabled.
+Edit — Update a wishlist’s basic attributes.
+Delete — Delete an existing wishlist. If clicked, a pop-up window will appear, confirming that a customer wants to delete the wishlist.
+Once deleted, customers cannot recover a wishlist.
+
+Customers can click the Delete All button to clear all of their wishlists. They receive a confirmation pop-up before permanently deleting all wishlists.
+
+EDITING A WISHLIST
+
+To update a wishlist’s details, click Edit next to the wishlist’s name on the Wish Lists page of the storefront account. From here, you can change the wishlist’s name or toggle sharing.
+
+REMOVING ITEMS FROM A WISH LIST
+
+To view or edit the products saved in a wishlist, begin by clicking its name. From this page, customers can click Remove Item to remove a product from their wishlist.
+
+ 
+Viewing a Customer’s Wishlist
+
+As a store owner, it can be useful to view customer wishlists, as they allow for you to gain insights into which products attract interest but are not immediately purchased.
+
+Go to Customers › All customers. Search for the customer whose wishlists you want to view, then select Log in from the Action menu (⋯) to the right of their entry.
+
+Navigate to Wish Lists in the Account area of the storefront. Click on any wishlist to view its saved products.
+
+ 
+FAQ
+
+How long do products stay in the wishlist?
+
+Wishlists never expire. A product will stay included in a wishlist as long as that product is visible in the store.
+
+Is there a maximum number of wishlists that a customer can have?
+
+No, there is no limit to the number of wishlists a customer can create. It is best practice for customers to create multiple lists instead of a single large list to avoid performance issues.
+
+Can I notify my customers when an out of stock product in their wishlist is back in stock?
+
+While we do not have native functionality that notifies customers of stock updates, the App Marketplace contains several apps that will automatically send alerts to your customers about out-of-stock products that are now available for purchase.
+
+As these apps require customers to opt in manually for in-stock notifications, they are not dependent on the products being added to a wishlist.
+
+Do you support a wishlist app with advanced features, such as viewing customers’ wishlists without logging in and allowing guest shoppers to create a list?
+
+While we do not support advanced features like guest wishlists natively, the app Wishlist Plus allows customers who are not logged in to access their wishlist from multiple devices, allows you to customize the wishlist UI and buttons, and add product variants. Merchants can also view metrics and reports on wishlist activity.
+
+Additional Resources
+Customer Account Creation
+Managing Customer Accounts
+Using the App Marketplace
+Wishlists (Dev Center)
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+Wishlists

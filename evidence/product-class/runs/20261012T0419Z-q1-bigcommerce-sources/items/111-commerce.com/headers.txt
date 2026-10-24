@@ -1,0 +1,151 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 307 
+date: Mon, 12 Oct 2026 04:20:57 GMT
+content-type: text/plain
+access-control-allow-origin: https://app.makeswift.com
+cache-control: public, max-age=0, must-revalidate
+content-security-policy: frame-ancestors 'self' https://app.makeswift.com
+location: /en/terms/api-terms/
+server: cloudflare
+strict-transport-security: max-age=63072000
+x-vercel-id: iad1::5wppz-1791778856848-7068a62c685a
+cf-cache-status: DYNAMIC
+set-cookie: c_consent=%7B%22anonymousId%22%3A%221f976017-19b5-4e42-a7b6-9ef509ddf2e9%22%2C%22traits%22%3A%7B%22consent_preferences_consent_model%22%3A%22opt-out%22%2C%22consent_preferences_strictly_necessary%22%3Atrue%2C%22consent_preferences_functional%22%3Afalse%2C%22consent_preferences_performance%22%3Afalse%2C%22consent_preferences_targeting%22%3Afalse%2C%22consent_preferences_display_banner%22%3Atrue%2C%22consent_preferences_display_preferences_center%22%3Afalse%2C%22consent_preferences_user_has_preferences%22%3Afalse%2C%22consent_preferences_consent_active_groups%22%3A%5B%22C0001%22%5D%7D%2C%22geo%22%3A%7B%22country%22%3A%22United%20States%20of%20America%22%2C%22region%22%3A%22Virginia%22%7D%2C%22gpc%22%3Afalse%7D; Path=/; Expires=Tue, 12 Oct 2027 04:20:57 GMT; Domain=commerce.com; SameSite=lax
+set-cookie: originUrl=www.commerce.com; Path=/; Expires=Tue, 12 Oct 2027 04:20:57 GMT; Domain=commerce.com; SameSite=lax
+set-cookie: __cf_bm=PE3gsqNZw7Jc_siUSfBXpL1DWvL3.hEA6xVfR5A2p_Q-1791778856.8244927-1.0.1.1-idyS9QL0g7mDLzdt6Jepn8xAtG4SoNlK6UW6L3YnGnzYJGNQ7w9s3HbIHOmRmIHC.Ub3tmHJZO2dcNbFeNxRwqjBUHwY2iG.ljAOCSLnHhk1iD5v5sldtWHQJOQzaswT; HttpOnly; SameSite=None; Secure; Path=/; Domain=commerce.com; Expires=Mon, 12 Oct 2026 04:50:57 GMT
+cf-ray: a493509f2dc6e63a-IAD
+alt-svc: h3=":443"; ma=86400
+
+HTTP/2 307 
+date: Mon, 12 Oct 2026 04:20:57 GMT
+content-type: text/plain
+access-control-allow-origin: https://app.makeswift.com
+cache-control: public, max-age=0, must-revalidate
+content-security-policy: frame-ancestors 'self' https://app.makeswift.com
+location: /terms/api-terms/
+server: cloudflare
+strict-transport-security: max-age=63072000
+x-vercel-id: iad1::7lckj-1791778857089-6b71548f099c
+cf-cache-status: DYNAMIC
+set-cookie: NEXT_LOCALE=en-US; Path=/
+set-cookie: __cf_bm=Z39WOghlzQEbsLU2YdJqmDdAu.oHJjshsezjDO4FGZQ-1791778857.08698-1.0.1.1-5Ufn3Idw3B9L_yhYBXHlOR5BJR6Zj7Uqw8_Akmv4eGIqSGdVjuNAiX8V4YvYN0O6LlmcoLe.zhLcJvzaUNqKM8E14.2VEOmSWtUh4HIB_4TYFK__MHgw.sN1AaYk9D4.; HttpOnly; SameSite=None; Secure; Path=/; Domain=commerce.com; Expires=Mon, 12 Oct 2026 04:50:57 GMT
+cf-ray: a49350a0cbe7e63a-IAD
+alt-svc: h3=":443"; ma=86400
+
+HTTP/2 307 
+date: Mon, 12 Oct 2026 04:20:57 GMT
+content-type: text/plain
+access-control-allow-origin: https://app.makeswift.com
+cache-control: public, max-age=0, must-revalidate
+content-security-policy: frame-ancestors 'self' https://app.makeswift.com
+location: /en/terms/api-terms/
+server: cloudflare
+strict-transport-security: max-age=63072000
+x-vercel-id: iad1::fccng-1791778857195-68c80f6471a8
+cf-cache-status: DYNAMIC
+set-cookie: c_consent=%7B%22anonymousId%22%3A%22ca33645b-e422-4bfa-b957-9ca46481ac6b%22%2C%22traits%22%3A%7B%22consent_preferences_consent_model%22%3A%22opt-out%22%2C%22consent_preferences_strictly_necessary%22%3Atrue%2C%22consent_preferences_functional%22%3Afalse%2C%22consent_preferences_performance%22%3Afalse%2C%22consent_preferences_targeting%22%3Afalse%2C%22consent_preferences_display_banner%22%3Atrue%2C%22consent_preferences_display_preferences_center%22%3Afalse%2C%22consent_preferences_user_has_preferences%22%3Afalse%2C%22consent_preferences_consent_active_groups%22%3A%5B%22C0001%22%5D%7D%2C%22geo%22%3A%7B%22country%22%3A%22United%20States%20of%20America%22%2C%22region%22%3A%22Virginia%22%7D%2C%22gpc%22%3Afalse%7D; Path=/; Expires=Tue, 12 Oct 2027 04:20:57 GMT; Domain=commerce.com; SameSite=lax
+set-cookie: originUrl=www.commerce.com; Path=/; Expires=Tue, 12 Oct 2027 04:20:57 GMT; Domain=commerce.com; SameSite=lax
+set-cookie: __cf_bm=Jj745nwoqJCRCyk5KBKxft8SJiao8TqDMp4bniQWMac-1791778857.1900902-1.0.1.1-0CFAb_JO4akxTDCDqmkWpKT7qIjYYnZwNYhLvgVXUXEc6Rmcoz66KxX69NAfhi8T.ajUU9VNdBMtcwQ3Fi82MNAUEuZ5zfVUzvOOgiPhF.CHNUIyt0sBteOYt4o7La.l; HttpOnly; SameSite=None; Secure; Path=/; Domain=commerce.com; Expires=Mon, 12 Oct 2026 04:50:57 GMT
+cf-ray: a49350a16e1ee63a-IAD
+alt-svc: h3=":443"; ma=86400
+
+HTTP/2 307 
+date: Mon, 12 Oct 2026 04:20:57 GMT
+content-type: text/plain
+access-control-allow-origin: https://app.makeswift.com
+cache-control: public, max-age=0, must-revalidate
+content-security-policy: frame-ancestors 'self' https://app.makeswift.com
+location: /terms/api-terms/
+server: cloudflare
+strict-transport-security: max-age=63072000
+x-vercel-id: iad1::s8j5g-1791778857472-b7108b8ed966
+cf-cache-status: DYNAMIC
+set-cookie: NEXT_LOCALE=en-US; Path=/
+set-cookie: __cf_bm=2CpXwifvlt.L8R6ez3PcHLL8XLb7iX89w_UvWbTADwE-1791778857.4693804-1.0.1.1-FZGcZ.2K7bjFUPHwmT.sOpDg_ZhsUaQTlSY2_x8l8MMJDBJ8OqPn6JJzbWuMKx_jJTFliEmEuUpcKlFh4CCQG51ze6ysnMVmvnQ1Cmfclsc2YohWEY1G5arruuERO23g; HttpOnly; SameSite=None; Secure; Path=/; Domain=commerce.com; Expires=Mon, 12 Oct 2026 04:50:57 GMT
+cf-ray: a49350a32be9e63a-IAD
+alt-svc: h3=":443"; ma=86400
+
+HTTP/2 307 
+date: Mon, 12 Oct 2026 04:20:57 GMT
+content-type: text/plain
+access-control-allow-origin: https://app.makeswift.com
+cache-control: public, max-age=0, must-revalidate
+content-security-policy: frame-ancestors 'self' https://app.makeswift.com
+location: /en/terms/api-terms/
+server: cloudflare
+strict-transport-security: max-age=63072000
+x-vercel-id: iad1::98stl-1791778857541-d486ff9ebd19
+cf-cache-status: DYNAMIC
+set-cookie: c_consent=%7B%22anonymousId%22%3A%22a7a9f484-2b3b-4dad-b501-2590fdf855be%22%2C%22traits%22%3A%7B%22consent_preferences_consent_model%22%3A%22opt-out%22%2C%22consent_preferences_strictly_necessary%22%3Atrue%2C%22consent_preferences_functional%22%3Afalse%2C%22consent_preferences_performance%22%3Afalse%2C%22consent_preferences_targeting%22%3Afalse%2C%22consent_preferences_display_banner%22%3Atrue%2C%22consent_preferences_display_preferences_center%22%3Afalse%2C%22consent_preferences_user_has_preferences%22%3Afalse%2C%22consent_preferences_consent_active_groups%22%3A%5B%22C0001%22%5D%7D%2C%22geo%22%3A%7B%22country%22%3A%22United%20States%20of%20America%22%2C%22region%22%3A%22Virginia%22%7D%2C%22gpc%22%3Afalse%7D; Path=/; Expires=Tue, 12 Oct 2027 04:20:57 GMT; Domain=commerce.com; SameSite=lax
+set-cookie: originUrl=www.commerce.com; Path=/; Expires=Tue, 12 Oct 2027 04:20:57 GMT; Domain=commerce.com; SameSite=lax
+set-cookie: __cf_bm=Yu5gtQDooZ7iCBORqYzu5VtCSkwb9Ma31Wddv3IU7_0-1791778857.5368495-1.0.1.1-JT8.v_DvGgGspmhNoln4jt_8c8TI6.mDLIMNr8qj3NX8WOe.9Y_SPz6HDoemq7pafUoMFlnQ4P9omvlXzXzisulieu5YsYdR.nzumATWK1H0F0TQnl0mEPwZGvcl9iku; HttpOnly; SameSite=None; Secure; Path=/; Domain=commerce.com; Expires=Mon, 12 Oct 2026 04:50:57 GMT
+cf-ray: a49350a39d53e63a-IAD
+alt-svc: h3=":443"; ma=86400
+
+HTTP/2 307 
+date: Mon, 12 Oct 2026 04:20:57 GMT
+content-type: text/plain
+access-control-allow-origin: https://app.makeswift.com
+cache-control: public, max-age=0, must-revalidate
+content-security-policy: frame-ancestors 'self' https://app.makeswift.com
+location: /terms/api-terms/
+server: cloudflare
+strict-transport-security: max-age=63072000
+x-vercel-id: iad1::7lckj-1791778857771-50bab52512f4
+cf-cache-status: DYNAMIC
+set-cookie: NEXT_LOCALE=en-US; Path=/
+set-cookie: __cf_bm=njykXijAivEkDflSC5z7QO3xJlUhdWZRY_IdC0LKsyY-1791778857.7680888-1.0.1.1-SqNPnfIT8LPBWjxGYfgZoYun8hcx9PNYbjCppgUD4Is5.qDClg8UehoHb.PdoOt7IrHrGhERqLI1_bYNqJchP0VIh3by.8tp7BCYnzIgMQ30_sYS6ndqPTp3b4YHO9Xl; HttpOnly; SameSite=None; Secure; Path=/; Domain=commerce.com; Expires=Mon, 12 Oct 2026 04:50:57 GMT
+cf-ray: a49350a50a7ae63a-IAD
+alt-svc: h3=":443"; ma=86400
+
+HTTP/2 307 
+date: Mon, 12 Oct 2026 04:20:58 GMT
+content-type: text/plain
+access-control-allow-origin: https://app.makeswift.com
+cache-control: public, max-age=0, must-revalidate
+content-security-policy: frame-ancestors 'self' https://app.makeswift.com
+location: /en/terms/api-terms/
+server: cloudflare
+strict-transport-security: max-age=63072000
+x-vercel-id: iad1::l78lt-1791778857831-44b3c23a2989
+cf-cache-status: DYNAMIC
+set-cookie: c_consent=%7B%22anonymousId%22%3A%227794d5d7-bfe6-4fe8-ac7a-515fab3d7f09%22%2C%22traits%22%3A%7B%22consent_preferences_consent_model%22%3A%22opt-out%22%2C%22consent_preferences_strictly_necessary%22%3Atrue%2C%22consent_preferences_functional%22%3Afalse%2C%22consent_preferences_performance%22%3Afalse%2C%22consent_preferences_targeting%22%3Afalse%2C%22consent_preferences_display_banner%22%3Atrue%2C%22consent_preferences_display_preferences_center%22%3Afalse%2C%22consent_preferences_user_has_preferences%22%3Afalse%2C%22consent_preferences_consent_active_groups%22%3A%5B%22C0001%22%5D%7D%2C%22geo%22%3A%7B%22country%22%3A%22United%20States%20of%20America%22%2C%22region%22%3A%22Virginia%22%7D%2C%22gpc%22%3Afalse%7D; Path=/; Expires=Tue, 12 Oct 2027 04:20:58 GMT; Domain=commerce.com; SameSite=lax
+set-cookie: originUrl=www.commerce.com; Path=/; Expires=Tue, 12 Oct 2027 04:20:58 GMT; Domain=commerce.com; SameSite=lax
+set-cookie: __cf_bm=4aKZX9k9l3Csv0MyqOJ9yzUtCanCdIaBSYp9osgLxF0-1791778857.8284123-1.0.1.1-h3SxHi47ujLM7DyQ7dUw4fvsvm8_A4lt4ch9jvmvLTmwDsq9lk8F1KD8eUmAeBNGhR9pufUljB.MSJ7zktFUAG12K46xoCAYDkxB1HTUVXpGftHZy_L_fGIpTcvOLm_6; HttpOnly; SameSite=None; Secure; Path=/; Domain=commerce.com; Expires=Mon, 12 Oct 2026 04:50:58 GMT
+cf-ray: a49350a56bb4e63a-IAD
+alt-svc: h3=":443"; ma=86400
+
+HTTP/2 307 
+date: Mon, 12 Oct 2026 04:20:58 GMT
+content-type: text/plain
+access-control-allow-origin: https://app.makeswift.com
+cache-control: public, max-age=0, must-revalidate
+content-security-policy: frame-ancestors 'self' https://app.makeswift.com
+location: /terms/api-terms/
+server: cloudflare
+strict-transport-security: max-age=63072000
+x-vercel-id: iad1::fccng-1791778858054-d98b00f0c963
+cf-cache-status: DYNAMIC
+set-cookie: NEXT_LOCALE=en-US; Path=/
+set-cookie: __cf_bm=wtf99CfhRut9LYoQdok.GaoLPLLMUiLj9gdHLhcCYZk-1791778858.049877-1.0.1.1-s.QrkZNLhqGJe_ri5G0z4Se0KV7bBVjElaGBZXn1Kg31n8mTpQR13p4P7OrkyrDooFl7EbDe6wAGgGd.nOIl1UW0EmAG8Y0qj1Y7xMAkRIL0cYplzuYQz64U09e.4REv; HttpOnly; SameSite=None; Secure; Path=/; Domain=commerce.com; Expires=Mon, 12 Oct 2026 04:50:58 GMT
+cf-ray: a49350a6c868e63a-IAD
+alt-svc: h3=":443"; ma=86400
+
+HTTP/2 307 
+date: Mon, 12 Oct 2026 04:20:58 GMT
+content-type: text/plain
+access-control-allow-origin: https://app.makeswift.com
+cache-control: public, max-age=0, must-revalidate
+content-security-policy: frame-ancestors 'self' https://app.makeswift.com
+location: /en/terms/api-terms/
+server: cloudflare
+strict-transport-security: max-age=63072000
+x-vercel-id: iad1::98stl-1791778858131-0c9d337a13c7
+cf-cache-status: DYNAMIC
+set-cookie: c_consent=%7B%22anonymousId%22%3A%22547c6164-d991-4984-9020-4b8012958486%22%2C%22traits%22%3A%7B%22consent_preferences_consent_model%22%3A%22opt-out%22%2C%22consent_preferences_strictly_necessary%22%3Atrue%2C%22consent_preferences_functional%22%3Afalse%2C%22consent_preferences_performance%22%3Afalse%2C%22consent_preferences_targeting%22%3Afalse%2C%22consent_preferences_display_banner%22%3Atrue%2C%22consent_preferences_display_preferences_center%22%3Afalse%2C%22consent_preferences_user_has_preferences%22%3Afalse%2C%22consent_preferences_consent_active_groups%22%3A%5B%22C0001%22%5D%7D%2C%22geo%22%3A%7B%22country%22%3A%22United%20States%20of%20America%22%2C%22region%22%3A%22Virginia%22%7D%2C%22gpc%22%3Afalse%7D; Path=/; Expires=Tue, 12 Oct 2027 04:20:58 GMT; Domain=commerce.com; SameSite=lax
+set-cookie: originUrl=www.commerce.com; Path=/; Expires=Tue, 12 Oct 2027 04:20:58 GMT; Domain=commerce.com; SameSite=lax
+set-cookie: __cf_bm=meh3qr00YAnNxNiLUmFTLcFjYCQqx7wXTK36DlheNoA-1791778858.1273644-1.0.1.1-0MNHfiGnhIJC1zUFstM2ch2SVr_kHY.2L1886X9wyAEYPusy4h4c7br2M4ND3rUKCZWvfmUquJXqan96ah8jKduv9z.jfod5lYngUkMHqZ51XV70tqgSmi7Yb5wsjRJg; HttpOnly; SameSite=None; Secure; Path=/; Domain=commerce.com; Expires=Mon, 12 Oct 2026 04:50:58 GMT
+cf-ray: a49350a74a43e63a-IAD
+alt-svc: h3=":443"; ma=86400
+

@@ -1,0 +1,18 @@
+{
+ "n": 18,
+ "url": "https://rubyonrails.org/world/2024/day-2/opening-keynote-eileen",
+ "dir": "items/018-rubyonrails.org",
+ "fetched_at": "2026-10-10T08:30:28Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://rubyonrails.org/world/2024/day-2/opening-keynote-eileen",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 5864,
+ "cited_in": [
+  "evidence/shopify-engineering/finding-aids/20261010-shopify-engineering-sources.tsv:E018"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "b2f6794d7997b3e16dcbb9bae60111dd85a206878478a4ccd1984fff00518d0a",
+ "raw_ext": "html"
+}

@@ -1,0 +1,20 @@
+{
+ "n": 18,
+ "url": "https://woocommerce.com/document/woopay-merchant-documentation/",
+ "dir": "items/018-woocommerce.com",
+ "fetched_at": "2026-10-11T08:40:25Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/woopay-merchant-documentation/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 54120,
+ "cited_in": [
+  "WC-S-5337",
+  "WC-S-5338",
+  "WC-S-5339"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "a606291239062bd29e6b473ade20f37e447000aa06de4fa05358613b6fd95fea",
+ "raw_ext": "html"
+}

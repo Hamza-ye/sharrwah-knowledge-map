@@ -1,0 +1,188 @@
+___
+Skip to navigation
+Skip to content
+USD
+Change site currency USD selected
+Develop on Woo
+Hire an expert
+Get support
+Sell
+Click to show 12 more items
+Extensions
+Click to show 18 more items
+Resources
+Click to show 23 more items
+Enterprise ecommerce
+Log in
+Get started
+WooCommerce
+Getting started
+Migrating to WooCommerce
+Products
+Expand
+Taxes
+Shipping
+Expand
+Payments
+Orders
+Data and reporting
+Customers
+Marketing
+Site administration
+Expand
+Store design
+Expand
+Mobile App
+Expand
+Get help
+Expand
+Documentation / WooCommerce / Getting started / Installing and Uninstalling WooCommerce
+Installing and Uninstalling WooCommerce
+
+This guide covers how to install, configure, and uninstall WooCommerce on your WordPress site. You will learn how to add WooCommerce through the WordPress admin, handle multisite installations, revert to a previous version, and fully remove WooCommerce data when needed.
+
+Before you begin, review the server requirements to confirm your hosting environment is compatible. If you need a new host, see the list of recommended hosting providers.
+
+When you activate WooCommerce, several items are added to your site:
+
+New menu items, custom post types, and taxonomies for orders, products, and more
+New WooCommerce pages
+New widgets and shortcodes
+User roles for shop managers and customers
+
+Deactivating and deleting the plugin does not remove any data from your site database. Removing that data requires an additional step, described in the Uninstall WooCommerce section below.
+
+Install via WordPress admin
+
+If you have an existing WordPress site, installing WooCommerce through the WordPress admin is the most straightforward option.
+
+To install WooCommerce:
+
+Go to Plugins > Add New Plugin.
+Search for “WooCommerce”.
+Click Install Now.
+Click Activate. The WooCommerce Setup Wizard appears.
+The Add Plugin screen in WordPress showing the WooCommerce plugin in search results.
+WooCommerce Setup Wizard
+
+When WooCommerce is activated for the first time, the WooCommerce Setup Wizard appears automatically. The wizard walks you through basic store configuration, including store details, industry, product types, and recommended features.
+
+For a full walkthrough of the Setup Wizard (also known as the Onboarding Wizard), read the WooCommerce Setup Wizard documentation.
+
+Multisite network installation
+
+On a WordPress multisite network, WooCommerce behaves like most other plugins. Each site in the network stores its data in separate database tables, so each store operates as an independent setup.
+
+You can network-activate WooCommerce and its extensions by going to My Sites > Network Admin > Plugins > Add New. However, network activation does not allow you to share product databases, checkout sessions, or user accounts across sites in the network. Only themes and plugins are shared across network sites.
+
+Revert to a previous version
+
+Note: Always use the latest version of WooCommerce for security and compatibility. Reverting to an older version can cause data inconsistencies if the database schema has changed. Use this approach only on a staging environment, and restore a matching database backup before activating the older version.
+
+If you need to revert to a previous version of WooCommerce, follow these steps:
+
+Deactivate and delete the current WooCommerce plugin from Plugins > Installed Plugins.
+Restore a database backup that matches the WooCommerce version you plan to install. The database schema often changes between versions, so this step is essential.
+Download the desired version of WooCommerce from the Advanced View on WordPress.org.
+Upload the downloaded file by going to Plugins > Add New Plugin and clicking Upload Plugin.
+Click Activate to enable the previous version of WooCommerce.
+
+Maintain regular backups and use a staging environment to test new WooCommerce releases before applying them to your live store. See Updating WooCommerce for more information.
+
+Uninstall WooCommerce
+
+When you remove WooCommerce, there are two levels of data removal to consider:
+
+Deactivate and delete the plugin only: If you deactivate and delete WooCommerce from Plugins > Installed Plugins, you remove only the plugin files. Your settings, orders, products, and pages remain in the database.
+Remove all WooCommerce data: To delete all WooCommerce data, including products and orders, you need to edit your site’s wp-config.php file before deactivating and deleting the plugin. The WooCommerce Developer Documentation explains how to enable this complete data removal.
+Questions and support
+
+Do you still have questions and need assistance? 
+
+This documentation is about the free, core WooCommerce plugin, for which support is provided in our community forums on WordPress.org. By searching this forum, you’ll often find that your question has been asked and answered before.
+
+If you haven’t created a WordPress.org account to use the forums, here’s how.
+
+If you’re looking to extend the core functionality shown here, we recommend reviewing available extensions in the WooCommerce Marketplace.
+Need ongoing advanced support or a customization built for WooCommerce? Hire a Woo Agency Partner.
+Are you a developer building your own WooCommerce integration or extension? Check our Developer Resources.
+
+If you weren’t able to find the information you need, please use the feedback thumbs below to let us know.
+
+Was this guide helpful for you?
+ON THIS PAGE
+Install via WordPress admin
+WooCommerce Setup Wizard
+Multisite network installation
+Revert to a previous version
+Uninstall WooCommerce
+Questions and support
+30-day money-back guarantee
+Support teams across the world
+Safe and secure online payments
+Sell
+WooCommerce
+WooCommerce pricing
+Payments
+No-code customization
+Marketing
+Checkout
+Shipping
+Mobile app
+Enterprise ecommerce
+Marketplace
+WooCommerce extensions
+WooCommerce themes
+New
+Essentials
+Collections
+Developed by Woo
+Build
+Woo for developers
+Developer resources
+Become a Woo agency
+Become a Marketplace partner
+Become an affiliate
+Resources
+Blog
+Documentation
+WooCommerce site examples
+Product updates
+Email newsletter
+Support
+Feature requests
+WooCommerce hosting
+Hire an agency
+Participate in customer research
+Accessibility
+Support forums
+Company
+About
+Press
+Download WooCommerce free
+Join the Woo community
+Woo trademark guidelines
+Brand and logo guidelines
+Do not sell or share my personal information
+WooCommerce Support Policy
+Refund Policy
+Contact us
+Follow us on Facebook
+Follow us on X
+Follow us on Instagram
+Follow us on LinkedIn
+USD
+Change site currency USD selected
+Terms of Service
+Privacy Policy
+Privacy Notice for California Users
+
+© WooCommerce, Inc. 2026
+
+AN
+AUTOMATTIC
+MEDLEY
+Use of your personal data
+We and our partners process your personal data (such as browsing data, IP Addresses, cookie information, and other unique identifiers) based on your consent and/or our legitimate interest to optimize our website, marketing activities, and your user experience.
+Customize
+Accept all

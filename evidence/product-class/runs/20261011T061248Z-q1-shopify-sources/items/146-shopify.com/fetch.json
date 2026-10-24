@@ -1,0 +1,20 @@
+{
+ "n": 146,
+ "url": "https://www.shopify.com/legal/terms-gift-cards",
+ "dir": "items/146-shopify.com",
+ "fetched_at": "2026-10-11T06:13:11Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.shopify.com/legal/terms-gift-cards",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 66804,
+ "cited_in": [
+  "SH-S-0676",
+  "SH-S-0677",
+  "SH-S-0678"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "6ab859aad1bde2e39344581a64b199c31bf9b451a7e6c1c9b21b5e9a4e2ca859",
+ "raw_ext": "html"
+}

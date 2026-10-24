@@ -1,0 +1,20 @@
+{
+ "n": 89,
+ "url": "https://docs.bigcommerce.com/developer/docs/integrations/webhooks/event-reference/inventory-and-location-events.md",
+ "dir": "items/089-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:20:44Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/docs/integrations/webhooks/event-reference/inventory-and-location-events.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 2350,
+ "cited_in": [
+  "BC-S-0006",
+  "BC-S-0033",
+  "BC-S-0039"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "550052a5479fed1f59beceb3815a1622f45b650a32426a3d6335cf0481b902ec",
+ "raw_ext": "txt"
+}

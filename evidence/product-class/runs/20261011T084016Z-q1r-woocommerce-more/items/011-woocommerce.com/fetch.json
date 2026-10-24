@@ -1,0 +1,21 @@
+{
+ "n": 11,
+ "url": "https://woocommerce.com/document/customer-order-withdrawal/",
+ "dir": "items/011-woocommerce.com",
+ "fetched_at": "2026-10-11T08:40:24Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/customer-order-withdrawal/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 44728,
+ "cited_in": [
+  "WC-S-5438",
+  "WC-S-5441",
+  "WC-S-5442",
+  "WC-S-5443"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "e64d4639b086d12d35548ad323498a935a76ec34972ddbc6697080aaedc0c393",
+ "raw_ext": "html"
+}

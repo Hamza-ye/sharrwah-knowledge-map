@@ -1,0 +1,21 @@
+{
+ "n": 7,
+ "url": "https://www.bigcommerce.com/blog/bigcommerce-payments-uk-expansion/",
+ "dir": "items/007-bigcommerce.com",
+ "fetched_at": "2026-10-13T00:35:28Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.bigcommerce.com/blog/bigcommerce-payments-uk-expansion/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 55831,
+ "cited_in": [
+  "S01-BC-C072",
+  "S01-BC-C073",
+  "S01-BC-C074",
+  "S01-BC-C075"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "b0d6bdafa140cc8cfbcff484e6cbc41e4fa026f0e9d4f2246651dc6cc0cafefb",
+ "raw_ext": "html"
+}

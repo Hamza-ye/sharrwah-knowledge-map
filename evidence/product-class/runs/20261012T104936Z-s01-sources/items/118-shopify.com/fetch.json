@@ -1,0 +1,33 @@
+{
+ "n": 118,
+ "url": "https://www.shopify.com/legal/terms-payfac",
+ "dir": "items/118-shopify.com",
+ "fetched_at": "2026-10-12T10:51:24Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.shopify.com/legal/terms-payfac",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 65391,
+ "cited_in": [
+  "S01-SH-C166",
+  "S01-SH-C167",
+  "S01-SH-C168",
+  "S01-SH-C169",
+  "S01-SH-C170",
+  "S01-SH-C171",
+  "S01-SH-C172",
+  "S01-SH-C173",
+  "S01-SH-C174",
+  "S01-SH-C175",
+  "S01-SH-C176",
+  "S01-SH-C177",
+  "S01-SH-C178",
+  "S01-SH-C179",
+  "S01-SH-C180",
+  "S01-SH-C181"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "434051f16a2cd7a2da56636f4d472d3d463d0a80e2fe9de74a07f0d3ac1292fb",
+ "raw_ext": "html"
+}

@@ -1,0 +1,20 @@
+{
+ "n": 96,
+ "url": "https://help.shopify.com/en/manual/taxes/shopify-tax/considerations.md",
+ "dir": "items/096-help.shopify.com",
+ "fetched_at": "2026-10-11T06:13:05Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/taxes/shopify-tax/considerations.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 1034,
+ "cited_in": [
+  "SH-S-0514",
+  "SH-S-0515",
+  "SH-S-0516"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "c99616d2f5374cefc749b253812ab1c619234ab87d0bd31e74071794268d226a",
+ "raw_ext": "txt"
+}

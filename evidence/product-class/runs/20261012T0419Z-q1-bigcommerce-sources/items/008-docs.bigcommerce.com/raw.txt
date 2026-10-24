@@ -1,0 +1,37 @@
+> This page is for Developer.
+
+> For clean Markdown of any page, append .md to the page URL.
+> For a complete documentation index, see https://docs.bigcommerce.com/llms.txt.
+> For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server.
+
+# Catalog - Categories
+
+> The Catalog API manages products, categories, brands, bulk pricing rules, and more. To learn more about catalog resources, see the [Catalog overview](/developer/docs/admin/catalog-and-inventory).
+
+> Warning:
+>
+> * The [Catalog V3 categories](/developer/api-reference/rest/admin/catalog/categories) endpoints were primarily useful in applications for single storefront stores and are deprecated. We still support these endpoints, but will not implement new features within them. The endpoints will continue working as is.
+> * To manage categories, use the [Catalog V3 category trees](/developer/api-reference/rest/admin/catalog/category-trees/categories) endpoints. These endpoints work for both [MSF-enabled stores](/developer/docs/admin/multi-storefront) and single storefront stores, and are backwards-compatible with categories created using Catalog V3 categories.
+
+Category images have their own dedicated [create a category image](/developer/api-reference/rest/admin/catalog/categories/images/create-category-image) and [delete a category image](/developer/api-reference/rest/admin/catalog/categories/images/delete-category-image) endpoints.
+
+In addition, categories have metafields that you can use to store information structured in key-value pairs; learn more about [creating category metafields](/developer/api-reference/rest/admin/catalog/categories/metafields/create-category-metafield), [updating category metafields](/developer/api-reference/rest/admin/catalog/categories/metafields/update-category-metafield), and [deleting category metafields](/developer/api-reference/rest/admin/catalog/categories/metafields/delete-category-metafield).
+
+This API family also contains endpoints to [update product sort order](/developer/api-reference/rest/admin/catalog/categories/sort-order/update-category-sort-orders) within a category.
+
+> To learn more about authenticating Catalog endpoints, locate the **Authentication** section at the top of each endpoint, then click **Show Details**.
+
+## Resources
+
+### Webhooks
+
+Learn more about [Category webhook events](/developer/docs/integrations/webhooks/event-reference#category).
+
+### Additional Catalog endpoints
+
+* [Brands](/developer/api-reference/rest/admin/catalog/brands)
+* [Category trees](/developer/api-reference/rest/admin/catalog/category-trees)
+* [Products](/developer/api-reference/rest/admin/catalog/products)
+* [Product modifiers](/developer/api-reference/rest/admin/catalog/product-modifiers)
+* [Product variants](/developer/api-reference/rest/admin/catalog/product-variants)
+* [Product variant options](/developer/api-reference/rest/admin/catalog/product-variant-options)

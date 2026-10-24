@@ -1,0 +1,32 @@
+{
+ "n": 2,
+ "url": "https://stripe.com/ae/legal/network-international-acquirer-terms",
+ "dir": "items/002-stripe.com",
+ "fetched_at": "2026-10-13T00:35:25Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://stripe.com/ae/legal/network-international-acquirer-terms",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 26285,
+ "cited_in": [
+  "S01-WC-C203",
+  "S01-WC-C204",
+  "S01-WC-C205",
+  "S01-WC-C206",
+  "S01-WC-C207",
+  "S01-WC-C208",
+  "S01-WC-C209",
+  "S01-WC-C210",
+  "S01-WC-C211",
+  "S01-WC-C212",
+  "S01-WC-C213",
+  "S01-WC-C214",
+  "S01-WC-C215",
+  "S01-WC-C224",
+  "S01-WC-C225"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "a2940417c6591db721329ab611a5dddbb124a455f652b5a79e76a2a593c526a7",
+ "raw_ext": "html"
+}

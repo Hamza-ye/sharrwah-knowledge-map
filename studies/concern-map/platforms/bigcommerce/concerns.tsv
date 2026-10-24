@@ -1,0 +1,89 @@
+concern_id	concern	platform_terms	inv_ids	split_note
+BC-C-001	Products (catalog products, variants, variant options and modifiers)	Catalog - Products | Catalog - Product variants | Catalog - Product variant options | Catalog - Product modifiers | Products	BC-I-0020, BC-I-0021, BC-I-0022, BC-I-0023, BC-I-0161, BC-I-0162, BC-I-0187, BC-I-0188, BC-I-0189, BC-I-0190, BC-I-0191, BC-I-0192, BC-I-0193, BC-I-0194, BC-I-0195, BC-I-0196, BC-I-0197, BC-I-0198, BC-I-0204, BC-I-0205, BC-I-0206, BC-I-0207, BC-I-0208, BC-I-0209, BC-I-0281, BC-I-0282, BC-I-0353, BC-I-0354, BC-I-0379, BC-I-0390, BC-I-0401, BC-I-0480, BC-I-0525	Groups the four Catalog product groups of the API reference, which share the Products scope (store_v2_products) and the Products webhooks. Brands and categories have API groups and webhooks of their own and are separate concerns.
+BC-C-002	Brands	Catalog - Brands	BC-I-0017, BC-I-0117, BC-I-0118, BC-I-0119, BC-I-0353, BC-I-0354	
+BC-C-003	Categories and category trees	Catalog - Categories | Catalog - Category trees	BC-I-0018, BC-I-0019, BC-I-0134, BC-I-0135, BC-I-0136, BC-I-0137, BC-I-0138, BC-I-0139, BC-I-0140, BC-I-0233, BC-I-0234, BC-I-0235, BC-I-0236, BC-I-0237, BC-I-0280, BC-I-0353, BC-I-0354, BC-I-0389	Category trees are kept with categories: both are Catalog groups, share the Products scope and the Categories webhook section.
+BC-C-004	Inventory	Inventory | Store Inventory | Inventory management	BC-I-0043, BC-I-0247, BC-I-0278, BC-I-0292, BC-I-0293, BC-I-0294, BC-I-0295, BC-I-0357, BC-I-0358, BC-I-0382, BC-I-0383, BC-I-0527	Inventory locations are a separate concern: they have their own scope (store_locations), webhook section (Locations) and plan line.
+BC-C-005	Inventory locations	Store Locations | Locations | Inventory locations	BC-I-0154, BC-I-0155, BC-I-0156, BC-I-0296, BC-I-0297, BC-I-0298, BC-I-0359, BC-I-0360, BC-I-0420	
+BC-C-006	Pickup (buy online, pick up in store)	Pickup | Pickup Methods | Pickup Options | Storefront Pickup Options | Buy online, pick up in store	BC-I-0012, BC-I-0046, BC-I-0047, BC-I-0048, BC-I-0337, BC-I-0338, BC-I-0524	
+BC-C-007	Price lists	Price Lists	BC-I-0050, BC-I-0175, BC-I-0176, BC-I-0177, BC-I-0178, BC-I-0179, BC-I-0180, BC-I-0181, BC-I-0182, BC-I-0183, BC-I-0184, BC-I-0185, BC-I-0186, BC-I-0258, BC-I-0418, BC-I-0505	
+BC-C-008	Storefront pricing	Pricing	BC-I-0049	The Pricing API (prices on BigCommerce-hosted storefronts) is separate from price lists, which have their own API group and webhooks.
+BC-C-009	Promotions	Promotions API | Promotion Settings API | Advanced promotions management	BC-I-0051, BC-I-0052, BC-I-0403, BC-I-0419	
+BC-C-010	Marketing: coupons, banners and gift certificates	Marketing | Coupons, discounts, and gift cards	BC-I-0028, BC-I-0341, BC-I-0342, BC-I-0403, BC-I-0487	The Marketing API group has its own scope (store_v2_marketing); promotions are a separate API group.
+BC-C-011	Product filtering and storefront search	Search Filters | Storefront Search | Product filtering | Custom product filtering	BC-I-0277, BC-I-0284, BC-I-0386, BC-I-0392, BC-I-0416, BC-I-0417, BC-I-0526	
+BC-C-012	Product ratings and reviews	Product ratings and reviews | Google customer reviews	BC-I-0408, BC-I-0415	
+BC-C-013	Product recommendations (beta)	Beta Product Recommendations	BC-I-0116	
+BC-C-014	Carts	Carts | Storefront Carts | Persistent cart	BC-I-0005, BC-I-0034, BC-I-0120, BC-I-0121, BC-I-0122, BC-I-0123, BC-I-0124, BC-I-0126, BC-I-0127, BC-I-0128, BC-I-0129, BC-I-0130, BC-I-0131, BC-I-0132, BC-I-0133, BC-I-0222, BC-I-0223, BC-I-0224, BC-I-0225, BC-I-0226, BC-I-0228, BC-I-0229, BC-I-0230, BC-I-0231, BC-I-0232, BC-I-0322, BC-I-0323, BC-I-0413	Abandoned carts are a separate concern: own API group, plan line (Abandoned cart saver) and webhook.
+BC-C-015	Abandoned carts	Abandoned carts | Abandoned Cart Emails | Abandoned cart saver	BC-I-0024, BC-I-0033, BC-I-0125, BC-I-0227, BC-I-0246, BC-I-0412, BC-I-0501	
+BC-C-016	Checkouts	Checkouts | Storefront Checkouts | Checkout Content | Single-page checkout	BC-I-0006, BC-I-0036, BC-I-0275, BC-I-0328, BC-I-0329, BC-I-0330, BC-I-0331, BC-I-0399, BC-I-0481, BC-I-0497, BC-I-0498	
+BC-C-017	Checkout extensions (beta)	Beta Checkout Extensions	BC-I-0113	
+BC-C-018	Orders	Orders V2 | Storefront Orders | Orders	BC-I-0011, BC-I-0044, BC-I-0045, BC-I-0163, BC-I-0164, BC-I-0165, BC-I-0166, BC-I-0167, BC-I-0168, BC-I-0172, BC-I-0173, BC-I-0174, BC-I-0249, BC-I-0250, BC-I-0251, BC-I-0252, BC-I-0253, BC-I-0254, BC-I-0346, BC-I-0347, BC-I-0480, BC-I-0528	Order fulfillment, order transactions and refunds are separate: each has its own scope or webhook topics.
+BC-C-019	Order fulfillment and shipments	Order Fulfillment | Fulfillment Methods | Shipments	BC-I-0200, BC-I-0201, BC-I-0202, BC-I-0203, BC-I-0337, BC-I-0338, BC-I-0348, BC-I-0349	
+BC-C-020	Order transactions	Order Transactions | Transactions API (Beta)	BC-I-0045, BC-I-0072, BC-I-0170, BC-I-0171, BC-I-0350, BC-I-0351	
+BC-C-021	Refunds	Refunds | Refunds & returns	BC-I-0045, BC-I-0169, BC-I-0255, BC-I-0502	
+BC-C-022	Payment processing (Payments API)	Payment Processing | Create Payments	BC-I-0067, BC-I-0318	Split from payment methods, stored instruments and the payment providers: each has its own API group or scope, and the providers are named separately on the pricing page.
+BC-C-023	Payment methods	Payment Methods | Payment Methods V3 | Payment Methods V2	BC-I-0069, BC-I-0070, BC-I-0071, BC-I-0352	
+BC-C-024	Stored payment instruments	Stored Instruments API (Beta) | Stored Payment Instruments | Stored credit cards	BC-I-0068, BC-I-0149, BC-I-0361, BC-I-0362, BC-I-0414	
+BC-C-025	BigCommerce Payments	BigCommerce Payments | BigCommerce Payments by PayPal	BC-I-0435	BigCommerce Payments is named as its own product and as one entry of the Embedded Payment Provider List; it is kept apart from the other providers because BigCommerce describes it as built in.
+BC-C-026	Payment providers: Embedded and Open Payment Providers	Embedded Payment Providers | Open Payment Providers | Open Payment Provider Fee | Embedded Payment Provider List | Payment freedom	BC-I-0422, BC-I-0423, BC-I-0424, BC-I-0435, BC-I-0436, BC-I-0437, BC-I-0438, BC-I-0439, BC-I-0440, BC-I-0441, BC-I-0442, BC-I-0443, BC-I-0444, BC-I-0445, BC-I-0446, BC-I-0447, BC-I-0448, BC-I-0449, BC-I-0450, BC-I-0451, BC-I-0452, BC-I-0453, BC-I-0454, BC-I-0455, BC-I-0462, BC-I-0486, BC-I-0490, BC-I-0499	
+BC-C-027	Digital wallets	Apple Pay, Google Pay, and Amazon Pay | Digital wallets	BC-I-0400, BC-I-0500	
+BC-C-028	Payment card security (PCI DSS)	Payment Cards | Checkout Environment; PCI | PCI Compliance	BC-I-0456, BC-I-0538	
+BC-C-029	Unified Billing (app charges on the BigCommerce invoice)	Unified Billing | Merchant Unified Billing | Unified Billing Partner	BC-I-0370, BC-I-0371, BC-I-0373, BC-I-0374, BC-I-0469, BC-I-0470, BC-I-0471	
+BC-C-030	Fees and billing (subscription, GMV and plan)	Fees and Billing | GMV cap | Open Payment Provider Fees	BC-I-0421, BC-I-0423, BC-I-0462	
+BC-C-031	B2B Edition invoices and payments	Invoice Management | Payments | Invoicing & net terms	BC-I-0094, BC-I-0096, BC-I-0367, BC-I-0510	Split from the rest of B2B Edition because it concerns invoices and payment methods per Company.
+BC-C-032	Customers	Customers V3 | Customers V2 | Storefront Customers | Storefront Form Fields | Customers	BC-I-0008, BC-I-0010, BC-I-0038, BC-I-0039, BC-I-0141, BC-I-0142, BC-I-0143, BC-I-0144, BC-I-0145, BC-I-0146, BC-I-0147, BC-I-0148, BC-I-0150, BC-I-0151, BC-I-0152, BC-I-0285, BC-I-0334, BC-I-0335, BC-I-0483	
+BC-C-033	Customer login (SSO) and current customer	Customer Login (SSO) | Current Customer | Customers Login	BC-I-0015, BC-I-0016, BC-I-0238, BC-I-0336	
+BC-C-034	Customer groups and segmentation	Customer Segmentation | Customer groups and segmentation | Customer groups	BC-I-0040, BC-I-0411, BC-I-0532	
+BC-C-035	Subscribers	Subscribers | Storefront Subscriptions	BC-I-0009, BC-I-0060, BC-I-0215, BC-I-0216, BC-I-0217, BC-I-0218	
+BC-C-036	Wishlists	Wishlist	BC-I-0066	
+BC-C-037	Storefront cookie consent	Storefront Cookie Consent	BC-I-0007	
+BC-C-038	Channels	Channels | Channel Settings | Channel Listings | Online storefront | Omnichannel management	BC-I-0035, BC-I-0219, BC-I-0220, BC-I-0221, BC-I-0259, BC-I-0260, BC-I-0261, BC-I-0262, BC-I-0324, BC-I-0325, BC-I-0326, BC-I-0327, BC-I-0425, BC-I-0519	
+BC-C-039	Multi-Storefront	Multi-storefront | Multi-Storefront | MSF	BC-I-0426	
+BC-C-040	Sites and routes	Sites | Sites & Routes	BC-I-0057, BC-I-0263, BC-I-0286, BC-I-0287, BC-I-0288, BC-I-0355, BC-I-0356	
+BC-C-041	Redirects	Redirects	BC-I-0053, BC-I-0199	
+BC-C-042	Themes	Themes | Custom Template Associations | Design Themes	BC-I-0025, BC-I-0030, BC-I-0290, BC-I-0291, BC-I-0365, BC-I-0366, BC-I-0397, BC-I-0467	
+BC-C-043	Widgets and page widgets	Widgets | Page widgets | Beta Page Widgets	BC-I-0031, BC-I-0032, BC-I-0114	
+BC-C-044	Scripts	Scripts	BC-I-0054, BC-I-0264, BC-I-0265	
+BC-C-045	Pages and store content	Pages V3 | Content | Built-in blog	BC-I-0027, BC-I-0029, BC-I-0256, BC-I-0257, BC-I-0332, BC-I-0333, BC-I-0407, BC-I-0482	
+BC-C-046	Email templates and transactional emails	Email Templates | Email Statuses | Notifications	BC-I-0026, BC-I-0239, BC-I-0240, BC-I-0241, BC-I-0242, BC-I-0248, BC-I-0380	
+BC-C-047	Store profile and storefront settings	Settings V3 | Store Information V2 | Store Profile | Storefront Status | Storefront SEO | Information & Settings	BC-I-0055, BC-I-0059, BC-I-0211, BC-I-0212, BC-I-0213, BC-I-0214, BC-I-0266, BC-I-0268, BC-I-0272, BC-I-0273, BC-I-0274, BC-I-0276, BC-I-0279, BC-I-0289, BC-I-0339, BC-I-0340, BC-I-0381, BC-I-0384, BC-I-0385, BC-I-0388, BC-I-0391, BC-I-0394, BC-I-0395, BC-I-0396	
+BC-C-048	Locales and translations	Store Locale | Store Translations	BC-I-0269, BC-I-0270, BC-I-0271, BC-I-0363, BC-I-0364, BC-I-0387	
+BC-C-049	Metafields	Metafields | Metafield Ownership | Metafields Access | Store Information	BC-I-0058, BC-I-0117, BC-I-0118, BC-I-0119, BC-I-0127, BC-I-0128, BC-I-0129, BC-I-0138, BC-I-0139, BC-I-0140, BC-I-0150, BC-I-0151, BC-I-0152, BC-I-0154, BC-I-0155, BC-I-0156, BC-I-0157, BC-I-0158, BC-I-0159, BC-I-0160, BC-I-0172, BC-I-0173, BC-I-0174, BC-I-0193, BC-I-0194, BC-I-0195, BC-I-0196, BC-I-0197, BC-I-0198, BC-I-0212, BC-I-0213, BC-I-0214, BC-I-0243, BC-I-0244, BC-I-0245, BC-I-0343, BC-I-0344, BC-I-0345	
+BC-C-050	Catalyst storefront framework	Catalyst | Headless commerce	BC-I-0534	
+BC-C-051	Makeswift visual editor	Makeswift	BC-I-0459, BC-I-0548	
+BC-C-052	Native Hosting (Infrastructure Hosting)	Infrastructure Hosting | Native Hosting	BC-I-0042	
+BC-C-053	GraphQL Storefront API and storefront API tokens	Storefront API | GraphQL Storefront API | Storefront API tokens | Storefront API Tokens	BC-I-0014, BC-I-0111, BC-I-0319, BC-I-0320, BC-I-0534, BC-I-0536	
+BC-C-054	GraphQL Admin API	Admin API	BC-I-0110	
+BC-C-055	Account-level resources (GraphQL Account API)	Account API | GraphQL Account API | Account resource scopes	BC-I-0103, BC-I-0109, BC-I-0368, BC-I-0369, BC-I-0370, BC-I-0371, BC-I-0372, BC-I-0373, BC-I-0374, BC-I-0375, BC-I-0376, BC-I-0377	
+BC-C-056	API accounts, OAuth scopes and API Terms	API Accounts | OAuth scopes | API Terms | Open APIs	BC-I-0461, BC-I-0533	Rate limits are separate: they are set by store plan, while API accounts and their scopes are created by the merchant or app.
+BC-C-057	API rate limits	Rate limits | Volume Limits	BC-I-0461	
+BC-C-058	Webhooks	Webhooks v3 | Delivery exception hooks	BC-I-0076, BC-I-0153	
+BC-C-059	Apps and the App Marketplace	App Marketplace | App Extensions | Apps & Integrations | Integrations	BC-I-0210, BC-I-0321, BC-I-0369, BC-I-0476, BC-I-0477, BC-I-0478, BC-I-0479, BC-I-0480, BC-I-0481, BC-I-0482, BC-I-0483, BC-I-0484, BC-I-0485, BC-I-0486, BC-I-0487, BC-I-0488, BC-I-0489, BC-I-0490, BC-I-0491, BC-I-0492, BC-I-0493, BC-I-0494, BC-I-0495, BC-I-0496, BC-I-0535, BC-I-0537	
+BC-C-060	System logs and store logs	System Logs | Store logs	BC-I-0061	
+BC-C-061	Staff accounts and control panel users	Staff accounts | Account Users	BC-I-0375, BC-I-0376, BC-I-0377, BC-I-0402	
+BC-C-062	Reporting and analytics	Professional reporting tools | Reporting & analytics | Analytics | Big Open Data Solutions	BC-I-0378, BC-I-0406, BC-I-0478, BC-I-0531, BC-I-0541	
+BC-C-063	MCP server and agentic commerce	MCP Server | Agentic checkout | AI discovery | Agentic Search	BC-I-0104, BC-I-0105, BC-I-0106, BC-I-0107, BC-I-0108, BC-I-0473, BC-I-0514, BC-I-0515	Kept apart from the other AI features because it has its own API reference section and its own addendum section (Agentic Search).
+BC-C-064	AI features	AI Features | BigAI | BigCommerce Companion | Conversational shopping | Ecommerce AI	BC-I-0473, BC-I-0477, BC-I-0512, BC-I-0516, BC-I-0517	
+BC-C-065	B2B Edition (companies, users, quotes, shopping lists, sales staff)	B2B Edition | B2B REST APIs | Buyer portal	BC-I-0077, BC-I-0078, BC-I-0079, BC-I-0080, BC-I-0081, BC-I-0082, BC-I-0083, BC-I-0084, BC-I-0085, BC-I-0086, BC-I-0087, BC-I-0088, BC-I-0089, BC-I-0090, BC-I-0091, BC-I-0092, BC-I-0093, BC-I-0095, BC-I-0097, BC-I-0098, BC-I-0099, BC-I-0100, BC-I-0101, BC-I-0112, BC-I-0299, BC-I-0300, BC-I-0301, BC-I-0302, BC-I-0303, BC-I-0304, BC-I-0305, BC-I-0306, BC-I-0307, BC-I-0308, BC-I-0309, BC-I-0310, BC-I-0311, BC-I-0312, BC-I-0313, BC-I-0314, BC-I-0315, BC-I-0316, BC-I-0317, BC-I-0367, BC-I-0479, BC-I-0503, BC-I-0504, BC-I-0505, BC-I-0506, BC-I-0507, BC-I-0508, BC-I-0509, BC-I-0511	B2B invoices and payments are a separate concern.
+BC-C-066	Powered By (Commerce-as-a-Service)	Powered By | Beta Powered By | Commerce-as-a-Service	BC-I-0115	
+BC-C-067	Feedonomics	Feedonomics | Feedonomics Surface | Feedonomics Platform | Feedonomics enrichment	BC-I-0429, BC-I-0458, BC-I-0513, BC-I-0518, BC-I-0547	
+BC-C-068	Marketplaces and social channels	Amazon / eBay / Walmart | Marketplaces | Social channels | Google Shopping | Sales Channels	BC-I-0428, BC-I-0429, BC-I-0494, BC-I-0520, BC-I-0521, BC-I-0522	
+BC-C-069	Point of sale	Point of sale | POS integrations | POS & In-Store	BC-I-0427, BC-I-0491, BC-I-0523	
+BC-C-070	Shipping	Shipping V2 | Shipping | Real-time shipping quotes | ShipperHQ shipping rules engine	BC-I-0056, BC-I-0405, BC-I-0410, BC-I-0495, BC-I-0529	Shipping providers (carrier integrations BigCommerce calls) are a separate concern with their own provider API.
+BC-C-071	Shipping providers	Shipping Providers	BC-I-0073, BC-I-0074, BC-I-0495	
+BC-C-072	Tax configuration	Tax | Tax Classes | Tax Settings	BC-I-0062, BC-I-0063, BC-I-0064, BC-I-0065, BC-I-0530	Tax providers (tax engines BigCommerce calls) are a separate concern with their own provider API.
+BC-C-073	Tax providers	Tax Provider API | Tax Providers	BC-I-0073, BC-I-0075, BC-I-0476, BC-I-0530	
+BC-C-074	Currencies	Currencies | Multi-currency	BC-I-0037, BC-I-0267, BC-I-0404	
+BC-C-075	Geography (countries and states)	Geography	BC-I-0041	
+BC-C-076	Staging environments	Staging environments | Staging Pro	BC-I-0540	
+BC-C-077	BigCommerce mobile app	BigCommerce mobile app | Mobile App Terms | Commerce Mobile Application	BC-I-0398, BC-I-0466	
+BC-C-078	Storefront HTTPS and storefront security	Free sitewide HTTPS and dedicated SSL | Storefront Security | Security & compliance	BC-I-0283, BC-I-0393, BC-I-0409, BC-I-0538	
+BC-C-079	Contracting entity and governing law	Contracting Entity | Commerce Entity | Governing Law	BC-I-0456, BC-I-0464, BC-I-0542, BC-I-0543, BC-I-0544, BC-I-0545, BC-I-0546, BC-I-0547, BC-I-0548	
+BC-C-080	Anti-corruption, export and sanctions compliance	Anti-Corruption, Export and Sanctions Compliance | Sanctions List	BC-I-0456	
+BC-C-081	Personal data processing roles	Data Processing Addendum | Processor | Controller | Privacy Policy	BC-I-0457, BC-I-0458, BC-I-0459, BC-I-0468	
+BC-C-082	Data transfer and storage location	Data Transfer | International Data Transfer	BC-I-0457, BC-I-0468, BC-I-0549, BC-I-0551, BC-I-0553	Split from the processing roles because the DPA places transfer and storage in its own section (Exhibit B, Data Transfer).
+BC-C-083	Subprocessors and hosting services	Third-Party Subprocessors | Hosting Services	BC-I-0456, BC-I-0468, BC-I-0539, BC-I-0549, BC-I-0550, BC-I-0551, BC-I-0552, BC-I-0553, BC-I-0554, BC-I-0555, BC-I-0556, BC-I-0557, BC-I-0558, BC-I-0559, BC-I-0560, BC-I-0561, BC-I-0562, BC-I-0563, BC-I-0564, BC-I-0565, BC-I-0566, BC-I-0567, BC-I-0568, BC-I-0569	
+BC-C-084	Third-Party Products and their integration	Third-Party Products | Third-Party Product Integration	BC-I-0456	
+BC-C-085	Acceptable use and highly regulated products	Acceptable Use Policy | Highly Regulated Products	BC-I-0460	
+BC-C-086	Stores and merchant materials	Store Terms | Stores and Materials | Your Materials | Your Users	BC-I-0467	
+BC-C-087	Agents acting for clients	Merchant-Client Terms | Agents	BC-I-0465	
+BC-C-088	Infringing materials	Infringing Materials Protocol	BC-I-0463	

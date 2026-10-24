@@ -1,0 +1,20 @@
+{
+ "n": 104,
+ "url": "https://help.shopify.com/en/manual/your-account/manage-billing/billing-charges/types-of-charges/third-party-charges/app-charges.md",
+ "dir": "items/104-help.shopify.com",
+ "fetched_at": "2026-10-11T06:13:06Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/your-account/manage-billing/billing-charges/types-of-charges/third-party-charges/app-charges.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 6199,
+ "cited_in": [
+  "SH-S-0269",
+  "SH-S-0270",
+  "SH-S-0271"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "50a2533c0a345455441c7a6b36e984b4324a6b2db476c31a1d147fde45e9440e",
+ "raw_ext": "txt"
+}

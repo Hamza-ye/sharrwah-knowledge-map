@@ -1,0 +1,18 @@
+{
+ "n": 21,
+ "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/carts.md",
+ "dir": "items/021-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:19:36Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/carts.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 425,
+ "cited_in": [
+  "BC-S-0063"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "c67f7956208657b6cb5fc3e257c47c24ce2e6bc93b4f1f7c6a0f4b1fe4bc5bb0",
+ "raw_ext": "txt"
+}

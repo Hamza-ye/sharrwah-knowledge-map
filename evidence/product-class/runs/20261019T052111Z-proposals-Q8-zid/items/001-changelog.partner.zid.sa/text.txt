@@ -1,0 +1,95 @@
+Feature Requests
+Changelog & Updates
+Back to Zid Partner
+👋 Welcome to Partner Feedback Board
+Here you can share feedback, suggest features, and track updates that make building with Zid even smoother.
+Rate your experience to help us improve
+New Post
+REFRESH RESULTS
+6
+Affiliate Marketing - API
+In the stores there is affileate marketing section by name in Arabic "مسوقين بالعمولة". We need API to get promoters or Marketers information with them orders to handel reports.
+API Request - General
+6
+إضافة ميزة تغير سعر الباقة بحسب طلب العميل
+نحتاج إضافة ميزة للباقة مضاف لها عدد مبدئي ويستطيع العميل زيادة العدد ويزيد معه السعر حسب الطلب مثال : باقة حتى 10 آلاف طلب بسعر 100 ريال يستطيع العميل زيادة العدد 10 ويزيد سعر الباقة 15 ريال لكل رقم إذا اختار العميل العدد 12 ألف طلب ستكون الباقة 130 ريال وهكذا الباقة تشتمل على عدد 5 مستخدمين وزيادة المستخدم الإضافي ب 20 ريال فإذا اختار العميل 10 مستخدمين ستكون الباقة ب 230 ريال عدد 5 مستخدمين مع الباقة وعدد 5 مستخدمين ب 100 ريال
+New Feature - General
+2
+Custom Email Notifications & Store Info in Token Expiry Alerts
+We’d like to suggest two enhancements for the access token expiry notifications sent by the Zid platform: Custom Recipient Control: Please provide an option to customize the recipient email address for access token expiry alerts per app. This would allow relevant team members to receive the notifications directly (e.g. technical or support contacts) and avoid relying solely on the account's default email. Additional Store Context in Email: Currently, the token expiry email includes only the Store ID. We recommend adding: Store name Store URL This will help partners quickly identify which client/store the alert refers to without having to look up the Store ID manually.
+Improvement - General
+12
+Api for Products reviews and comments
+As a whatsapp services provider, i want to be able to let customer send review and comments throgh whatsapp chat, so i can post it to Products reviews and comments automaticlly.
+API Request - General
+4
+Limit Discount Coupons to Specific App Plans
+Currently, discount coupons in the Zid App Market are applied across **App** subscription plans by default. We’d like to propose an enhancement: Allow partners to specify which plan(s) the discount coupon applies to.
+Improvement - General
+4
+Direct Link to Rate App
+I want to be able to share a link with merchants who installs my apps/themes to ask them to write a review and rate.
+New Feature - General
+3
+Webhook for New Reviews
+We would like to have a feature for registering a webhook for new reviews.
+Webhook Request - General
+3
+App Add-ons
+Having the option to define extra paid features and add-ons to the app plans.
+New Feature - General
+2
+Testing Webhooks
+The ability to trigger a mock webhook for the dev stores you have, for things like subscribing and unsubscribing, warnings etc. from installed Apps. This is Extremely useful to be bale to test of the webhooks are handled correctly
+Webhook Request - General
+2
+Create Order through API
+We need an API Endpoint to create orders through API, We can only update orders but we can't create a new one, am I missing something and there's already an endpoint?
+API Request - General
+Sort by
+Trend
+Top
+Newest
+Status
+All
+All (not closed)
+Open
+Planned
+Merged
+Under Review
+In Progress
+Completed
+Closed
+Abandoned
+Tags
+-
+Orders
+Shipping
+Themes
+Inventories
+Storefront
+Affiliate
+Apps
+Webhook
+Products
+All Categories
+New Feature - General
+Improvement - General
+Docs Update - General
+API Request - General
+Webhook Request - General
+New Feature - Apps
+Improvement - Apps
+Docs Update - Apps
+New Feature - Themes
+Improvement - Themes
+Docs Update - Themes
+Partner Dashboard
+•
+Zid Partner Community
+•
+App Market
+•
+Documentation
+•
+Theme Market

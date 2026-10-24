@@ -1,0 +1,18 @@
+{
+ "n": 1,
+ "url": "https://www.infoq.com/presentations/shopify-architecture-flash-sale/",
+ "dir": "items/001-infoq.com",
+ "fetched_at": "2026-10-10T08:30:26Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.infoq.com/presentations/shopify-architecture-flash-sale/",
+ "content_type": "text/html;charset=utf-8",
+ "bytes": 52225,
+ "cited_in": [
+  "evidence/shopify-engineering/finding-aids/20261010-shopify-engineering-sources.tsv:E001"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "b4c730d70ca5f87c110d1571432ddfbd99b5300cbed2af95eb32e91df8b7eff7",
+ "raw_ext": "html"
+}

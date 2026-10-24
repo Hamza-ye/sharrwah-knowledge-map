@@ -1,0 +1,143 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">&gt; This page is for Developer.
+
+&gt; For clean Markdown of any page, append .md to the page URL.
+&gt; For a complete documentation index, see https://docs.bigcommerce.com/llms.txt.
+&gt; For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server.
+
+# Native Hosting Overview
+
+&gt; How BigCommerce Native Hosting runs Catalyst storefronts, including core concepts, authentication, and CLI configuration variables.
+
+BigCommerce provides hosting for your Catalyst projects, allowing you to fully deploy your Catalyst storefront without having to depend on an external hosting provider. Native Hosting is the recommended way to host Catalyst: hosting and billing stay consolidated with your BigCommerce store, and you deploy, configure, and monitor your storefront entirely through the Catalyst CLI.
+
+&gt; **Warning**
+&gt;
+&gt; The Catalyst CLI is generally available, but Native Hosting is currently in
+&gt; closed beta. There may be breaking changes to the Native Hosting APIs as we
+&gt; finalize them. To express interest in gaining access, fill out the [Native Hosting Closed Beta Interest Form](https://docs.google.com/forms/d/e/1FAIpQLSfDepq3qRtEtavb1wQvSvdK21pwr_kNsYQbH2B7JjWYyptUSA/viewform?usp=header).
+
+This page explains the concepts and configuration behind Native Hosting. To deploy your first project, see [Native Hosting: Getting Started](/developer/docs/storefront/catalyst/deployment/native-hosting/getting-started).
+
+## Core concepts
+
+### Project
+
+A project is the top-level infrastructure container for your application. You create a project once, then use it as the target for future deployments of that storefront.
+
+### Deployment
+
+A deployment is a specific version of your project that has been built and released. Each deployment reflects the state of the code at a point in time (when it was built and successfully deployed).
+
+### OpenNext
+
+[OpenNext](https://opennext.js.org/) is an open source project that strives to support Next.js being hosted across different platforms while maintaining feature parity with Vercel. OpenNext provides adapters for deploying to hosting providers such as Cloudflare, Netlify, and AWS. BigCommerce's hosting infrastructure uses the OpenNext Cloudflare adapter. You don't need to install it yourself: Commerce Hosting setup adds it to your project, pinned to the version the CLI supports. See [Set up with an existing project](/developer/docs/storefront/catalyst/deployment/native-hosting/getting-started#set-up-with-an-existing-project).
+
+See the [OpenNext Cloudflare documentation](https://opennext.js.org/cloudflare) for more details.
+
+## Authentication
+
+The Catalyst CLI supports two ways to authenticate, depending on where it's running:
+
+* **Interactive (local development)** — Run `catalyst auth login` to authenticate via your browser using OAuth. After logging in, your store hash and access token are stored locally in `.bigcommerce/project.json` for use by other CLI commands. Use `catalyst auth logout` to remove stored credentials, and `catalyst auth whoami` to verify your current session.
+* **Non-interactive (CI/CD)** — In environments like GitHub Actions or CircleCI where a browser is not available, provide your store hash and access token directly via CLI flags (`--store-hash`, `--access-token`) or environment variables (`CATALYST_STORE_HASH`, `CATALYST_ACCESS_TOKEN`). Env files are not read for these credentials. See the [Configuration](#configuration) section below for the full priority order.
+
+See the [CLI Reference](/developer/docs/storefront/catalyst/reference/cli) for full details on the auth commands.
+
+## Configuration
+
+The Catalyst CLI reads two separate sets of variables, and they resolve from different places:
+
+* **CLI configuration variables** (`CATALYST_*`) tell the CLI which store and project to act on. Every command reads these.
+* **Storefront build variables** (`BIGCOMMERCE_*`, `AUTH_SECRET`) are consumed by the Next.js build. Only `build` and `deploy` read these, and only they load env files.
+
+Keeping the two straight matters, because env files feed the build but never authenticate the CLI.
+
+### CLI configuration variables
+
+The Catalyst CLI depends on several configuration variables:
+
+* `CATALYST_STORE_HASH` - the hash of your Catalyst store. Falls back to `BIGCOMMERCE_STORE_HASH` if unset.
+* `CATALYST_PROJECT_UUID` - the unique identifier for the BigCommerce infrastructure project
+* `CATALYST_ACCESS_TOKEN` - the Access Token that has **modify** permissions on **Infrastructure Projects and Infrastructure Deployments** as well as **read-only** permissions on **Infrastructure Logs**. Channel commands (`channels info`, `channels update`, and `deploy --update-site-url` or `--update-checkout-url`) also need **Channel Settings** and **Sites &amp; Routes** permissions, set to **modify** for the commands that change a channel's site or checkout URL. `catalyst auth login` requests all of these automatically
+* `CATALYST_API_HOST` - the BigCommerce API host to connect to. Falls back to `apiHost` in `.bigcommerce/project.json`, then defaults to `api.bigcommerce.com`. Replaces the old `BIGCOMMERCE_API_HOST` variable, which is no longer read.
+* `CATALYST_TELEMETRY_DISABLED` - whether or not telemetry is disabled
+
+When looking for these variables, the Catalyst CLI will search in the following places, in order of priority (highest first):
+
+**Individual parameter flags** — Manually pass individual configuration parameters in the CLI command. For example:
+
+```shell
+catalyst deploy --store-hash &lt;CATALYST_STORE_HASH&gt; --access-token &lt;CATALYST_ACCESS_TOKEN&gt;
+```
+
+**`process.env`** — Environment variables you have already set in the shell or process that runs the CLI. They may be applied through your hosting platform, a UI, and so on (for example, setting secret credentials in GitHub Actions).
+
+**`.bigcommerce/project.json`** — The local configuration file that is generated after creating or linking a project. It includes your store hash, project uuid, access token, and any variables saved with `catalyst env add`.
+
+&gt; **Warning**
+&gt;
+&gt; The CLI does not read `CATALYST_*` variables from `.env.local`, `.env`, or a file passed with `--env-path`. This applies to every command, including `build` and `deploy`. Putting `CATALYST_STORE_HASH` and `CATALYST_ACCESS_TOKEN` in `.env.local` will not authenticate the CLI, and commands such as `catalyst projects list` and `catalyst deploy` fail with `Missing credentials`.
+
+To authenticate, run `catalyst auth login` (which stores credentials in `.bigcommerce/project.json`), pass `--store-hash` and `--access-token`, or export the variables into your shell before running the CLI:
+
+```shell
+export CATALYST_STORE_HASH=&lt;YOUR_STORE_HASH&gt;
+export CATALYST_ACCESS_TOKEN=&lt;YOUR_ACCESS_TOKEN&gt;
+catalyst projects list
+```
+
+The two files are split by role: `.env.local` holds the `BIGCOMMERCE_*` variables the storefront build reads, and `.bigcommerce/project.json` holds your CLI configuration. Scaffolding writes both, so you stay authenticated after `pnpm create` without putting any credential in `.env.local`.
+
+If you do keep `CATALYST_*` values in an env file, load that file into your shell yourself — for example with a tool like `direnv` or `dotenv-cli` — so the values reach `process.env` before the CLI runs. A store hash already present as `BIGCOMMERCE_STORE_HASH` satisfies `CATALYST_STORE_HASH` once loaded, so there is no need to set it under both names.
+
+### Storefront build variables
+
+`build` and `deploy` load env files so the Next.js build can read your storefront variables. The build requires `BIGCOMMERCE_STORE_HASH`, `BIGCOMMERCE_STOREFRONT_TOKEN`, `BIGCOMMERCE_CHANNEL_ID`, and `AUTH_SECRET`; if any are missing, the command fails with a list of the missing names before the build starts. `deploy --prebuilt` skips the build, so it neither loads env files nor checks these variables.
+
+These variables resolve in the following order of priority (highest first):
+
+**Environment variable file flag** — On `build` and `deploy` only, pass the path to an environment file to load variables from. The path is resolved relative to the current working directory. When passed, only this file is loaded, and its values override variables already set in your shell. For example:
+
+```shell
+catalyst deploy --env-path .env.prod
+```
+
+**`process.env`** — Environment variables you have already set in the shell or process that runs the CLI.
+
+**`.env.local` and `.env`** — On `build` and `deploy` only, automatically loaded from the current working directory if present and `--env-path` isn't passed (`.env.local` takes precedence over `.env`, and neither overrides variables already present in `process.env`). No other command reads env files.
+
+&gt; **Note**
+&gt;
+&gt; Run `build` and `deploy` from the directory that holds your env file — the same place you run `dev`. To load an env file from elsewhere, pass `--env-path` (for example, `--env-path ../.env.local` when running from a subdirectory).
+
+### `project.json` configuration file
+
+The configuration for the BigCommerce infrastructure project that your repository is connected to is defined in the `.bigcommerce/project.json` file. The configuration file is generated when you scaffold a project with `pnpm create @bigcommerce/catalyst`, authenticate with `catalyst auth login`, or create or link a hosting project with `catalyst projects create` or `catalyst projects link`.
+
+```json
+{
+  "framework": "catalyst",
+  "projectUuid": "&lt;PROJECT-UUID&gt;",
+  "accessToken": "&lt;ACCESS_TOKEN&gt;",
+  "storeHash": "&lt;STORE_HASH&gt;",
+  "apiHost": "&lt;API_HOST&gt;",
+  "env": {
+    "BIGCOMMERCE_STOREFRONT_TOKEN": "&lt;STOREFRONT_TOKEN&gt;"
+  }
+}
+```
+
+The configuration file contains the following properties:
+
+* `projectUuid` - the unique identifier of the connected BigCommerce project
+* `storeHash` - the hash of the BigCommerce store associated with the `accessToken`
+* `framework` - the framework to target when building. Always `catalyst`.
+* `accessToken` - the access token, with the same permissions described for [`CATALYST_ACCESS_TOKEN`](#cli-configuration-variables)
+* `apiHost` - the BigCommerce API host to connect to. Optional; defaults to `api.bigcommerce.com` when unset.
+* `env` - deployment environment variables saved with `catalyst env add`. Sent as encrypted secrets on every `catalyst deploy`.
+* `declinedSiteUrlChannels` - IDs of channels for which you declined the post-deploy offer to update the site URL. `catalyst deploy` doesn't offer again for these channels.
+* `declinedCheckoutUrlChannels` - IDs of channels for which you declined the post-deploy offer to update the checkout URL. `catalyst deploy` doesn't offer again for these channels.
+
+As described above, the values in the `project.json` file have the lowest priority and will be used if none of the other options have been used.
+
+You can remove the `.bigcommerce/` folder to reset your project's configuration, but you'll then need to run `pnpm catalyst auth login` and `pnpm catalyst projects link` (or `projects create`) to re-connect to your project.</pre></body></html>

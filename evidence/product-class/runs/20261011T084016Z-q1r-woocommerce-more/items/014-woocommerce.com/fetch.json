@@ -1,0 +1,21 @@
+{
+ "n": 14,
+ "url": "https://woocommerce.com/document/marketplace-developers-customer-overview/",
+ "dir": "items/014-woocommerce.com",
+ "fetched_at": "2026-10-11T08:40:25Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/marketplace-developers-customer-overview/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 41979,
+ "cited_in": [
+  "WC-S-5340",
+  "WC-S-5341",
+  "WC-S-5342",
+  "WC-S-5345"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "bfa3618d8e3f99f4cba4feeab58e0f7d6d18340c79c064250d045e39fb0151aa",
+ "raw_ext": "html"
+}

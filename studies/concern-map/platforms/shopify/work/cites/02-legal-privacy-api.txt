@@ -1,0 +1,501 @@
+# Acceptable Use Policy (rendered; no date shown)
+key: aup_responsible
+source: https://www.shopify.com/legal/aup
+locator: introduction
+quote: The main rule for using Shopify is: you’re responsible for following the rules of your platform, your partners, and the law.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: aup_illegal
+source: https://www.shopify.com/legal/aup
+locator: principle "You can’t use Shopify to do anything that’s illegal where you do business."
+quote: You can’t use Shopify to do anything that’s illegal where you do business.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: aup_hipaa
+source: https://www.shopify.com/legal/aup
+locator: principle "You can’t use Shopify to do anything that’s illegal where you do business."
+quote: You must likewise respect that certain business activities are not supported by our platform, such as uploading Protected Health Information subject to HIPAA.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: aup_payments_supply_chain
+source: https://www.shopify.com/legal/aup
+locator: principle "Payment Terms (and terms from other add-on products) can also apply."
+quote: When you use one of these products, you are interacting with an entire supply chain of businesses: for example, Shopify Payments involves an ecosystem of processors, card networks, and banks working together.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: aup_partnerships
+source: https://www.shopify.com/legal/aup
+locator: principle "Payment Terms (and terms from other add-on products) can also apply."
+quote: Shopify offers a range of products and services that leverage partnerships with other organizations.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: aup_shop_channel_rules
+source: https://www.shopify.com/legal/aup
+locator: principle "There are also channel rules that could apply."
+quote: Shop sales channel comes with its own merchant guidelines and product eligibility criteria.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: aup_outside_disputes
+source: https://www.shopify.com/legal/aup
+locator: principle "The most common product eligibility disputes originate from outside of Shopify."
+quote: most product eligibility or takedown disputes that entrepreneurs may encounter originate from outside Shopify, including from regulators and third-party IP rights holders.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: aup_enforcement_levels
+source: https://www.shopify.com/legal/aup
+locator: closing paragraph
+quote: we will give you notice, grant you opportunities to self-remediate conflicts, default to enforcement at the product level, and take account-level action as a last resort when appropriate.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+key: aup_purpose
+source: https://www.shopify.com/legal/aup
+locator: introduction
+quote: Our purpose is to empower you, the merchant, to run your business as you see fit and to equip you with the tools and ability to make your own choices.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: rendered
+
+# Privacy Policy (rendered; page states "UPDATED JULY 7, 2026")
+key: priv_canadian_company
+source: https://www.shopify.com/legal/privacy
+locator: Where we send your information
+quote: We are a Canadian company, but we work with and process data about individuals across the world. To operate our business, we may send your Personal Data outside of your state, province, or country, including to the United States.
+date: 2026-07-07
+basis: updated (page states "UPDATED JULY 7, 2026")
+access: rendered
+
+key: priv_eea_ireland
+source: https://www.shopify.com/legal/privacy
+locator: Where we send your information, Transfers outside of the EEA, the UK and Switzerland
+quote: Your information is then sent to other Shopify locations and to service providers who may be located in other regions, including Canada (where we are headquartered) and the United States.
+date: 2026-07-07
+basis: updated (page states "UPDATED JULY 7, 2026")
+access: rendered
+
+key: priv_bcr
+source: https://www.shopify.com/legal/privacy
+locator: Where we send your information, Transfers outside of the EEA, the UK and Switzerland
+quote: If you are in the EEA or Switzerland, when we send your Personal Data to any other Shopify entity outside the EEA or Switzerland, it is transferred in accordance with Shopify's Binding Corporate Rules (BCRs).
+date: 2026-07-07
+basis: updated (page states "UPDATED JULY 7, 2026")
+access: rendered
+
+key: priv_recipient_apac
+source: https://www.shopify.com/legal/privacy
+locator: How you can reach us
+quote: If you are located in Asia, Australia, or New Zealand, your Personal Data is received by:
+date: 2026-07-07
+basis: updated (page states "UPDATED JULY 7, 2026")
+access: rendered
+
+key: priv_recipient_emea
+source: https://www.shopify.com/legal/privacy
+locator: How you can reach us
+quote: If you are located in the EEA, the UK, the Middle East, South America, or Africa, your Personal Data is received by:
+date: 2026-07-07
+basis: updated (page states "UPDATED JULY 7, 2026")
+access: rendered
+
+key: priv_recipient_na
+source: https://www.shopify.com/legal/privacy
+locator: How you can reach us
+quote: If you are located in Canada or the United States, your Personal Data is received by:
+date: 2026-07-07
+basis: updated (page states "UPDATED JULY 7, 2026")
+access: rendered
+
+key: priv_kyc_basis
+source: https://www.shopify.com/legal/privacy
+locator: Why we process your information
+quote: compliance with a legal obligation to use copies of government-issued identification that you provide us to comply with different laws such as "know your customer", anti-money laundering or anti-terrorism laws
+date: 2026-07-07
+basis: updated (page states "UPDATED JULY 7, 2026")
+access: rendered
+
+key: priv_processor_contact_merchant
+source: https://www.shopify.com/legal/privacy
+locator: Your rights over your information
+quote: Where Shopify acts as processor or service provider of your Personal Data on behalf of Shopify merchants, you need to directly contact the merchant you interacted with.
+date: 2026-07-07
+basis: updated (page states "UPDATED JULY 7, 2026")
+access: rendered
+
+key: priv_retention_two_years
+source: https://www.shopify.com/legal/privacy
+locator: United States Regional Privacy Notice, How long we keep your information
+quote: If you are a merchant operating a Shopify-powered store, and you close the store, stop paying your subscription fees, or we terminate your account, we retain store information for two years before we begin the deletion process.
+date: 2026-07-07
+basis: updated (page states "UPDATED JULY 7, 2026")
+access: rendered
+
+key: priv_merchant_decides_retention
+source: https://www.shopify.com/legal/privacy
+locator: United States Regional Privacy Notice, How long we keep your information
+quote: When we process your information as a service provider or processor for the merchant, the merchant, not Shopify, decides how long your information is retained.
+date: 2026-07-07
+basis: updated (page states "UPDATED JULY 7, 2026")
+access: rendered
+
+key: priv_subprocessors_hosting
+source: https://www.shopify.com/legal/privacy
+locator: United States Regional Privacy Notice, Sources of Personal Data
+quote: We work with third party subprocessors for cloud hosting, content delivery, data analysis, internal logging, fulfillment services and email transmission, among others, to provide you with our services.
+date: 2026-07-07
+basis: updated (page states "UPDATED JULY 7, 2026")
+access: rendered
+
+key: priv_legal_requests
+source: https://www.shopify.com/legal/privacy
+locator: Our values, We protect your information from others
+quote: If a third party requests your Personal Data, we will refuse to share it unless you give us permission or we are legally required.
+date: 2026-07-07
+basis: updated (page states "UPDATED JULY 7, 2026")
+access: rendered
+
+# Data Processing Addendum (rendered; "Last updated on: July 7, 2026")
+key: dpa_roles
+source: https://www.shopify.com/legal/dpa
+locator: I. PURPOSE
+quote: You shall act as a Data Controller and Shopify shall act as a Data Processor with respect to the processing of Your Customer Personal Data, in connection with Your use of our Services that rely on our processing of Your Customer Personal Data, except for the services described in Appendix E.
+date: 2026-07-07
+basis: last updated (page states "Last updated on: July 7, 2026")
+access: rendered
+
+key: dpa_contracting_entity
+source: https://www.shopify.com/legal/dpa
+locator: I. PURPOSE
+quote: by and between You (or "Merchant"), and the Shopify Contracting Entity as set forth in the Terms ("Shopify")
+date: 2026-07-07
+basis: last updated (page states "Last updated on: July 7, 2026")
+access: rendered
+
+key: dpa_global_transfers
+source: https://www.shopify.com/legal/dpa
+locator: A. Global Data Transfers
+quote: You acknowledge that Your Customer Personal Data may be transferred and processed in any country in which Shopify, its affiliated companies or third party service providers are located (including in Singapore and Canada).
+date: 2026-07-07
+basis: last updated (page states "Last updated on: July 7, 2026")
+access: rendered
+
+key: dpa_subprocessor_objection
+source: https://www.shopify.com/legal/dpa
+locator: Appendix C, 4. Subprocessors
+quote: To the extent You object to Shopify's use of a Subprocessor, and Shopify is unable or unwilling to accommodate such requests, You may terminate Your use of the impacted Services within 30 days of such notification in accordance with the Terms.
+date: 2026-07-07
+basis: last updated (page states "Last updated on: July 7, 2026")
+access: rendered
+
+key: dpa_subprocessor_liability
+source: https://www.shopify.com/legal/dpa
+locator: Appendix C, 4. Subprocessors
+quote: Shopify shall be fully liable for the acts and omissions of its Subprocessors to the same extent Shopify would be liable if performing the services of each Subprocessor directly under the terms of this DPA.
+date: 2026-07-07
+basis: last updated (page states "Last updated on: July 7, 2026")
+access: rendered
+
+key: dpa_sil_transfers
+source: https://www.shopify.com/legal/dpa
+locator: Appendix C, 8. International Transfers
+quote: Subject to compliance with European Data Protection Laws, Shopify International Ltd. may transfer Your Customer Personal Data processed under this Appendix outside of the EEA, the UK, and Switzerland as necessary to provide its Services ("International Transfers").
+date: 2026-07-07
+basis: last updated (page states "Last updated on: July 7, 2026")
+access: rendered
+
+key: dpa_enhanced_controller
+source: https://www.shopify.com/legal/dpa
+locator: I. PURPOSE
+quote: If you receive Enhanced Services from Shopify (as defined in Section 9.2 of the Terms of Service) Shopify shall process Your Customer Personal Data as a Data Controller or Business as set forth in Appendix E.
+date: 2026-07-07
+basis: last updated (page states "Last updated on: July 7, 2026")
+access: rendered
+
+key: dpa_breach_notice
+source: https://www.shopify.com/legal/dpa
+locator: Appendix C, security incident notification
+quote: Shopify shall provide You with notice, without undue delay, upon becoming aware of a breach of security leading to the accidental or unlawful destruction, loss, alteration, unauthorized disclosure of, or access to, Your Customer Personal Data transmitted, stored or otherwise processed.
+date: 2026-07-07
+basis: last updated (page states "Last updated on: July 7, 2026")
+access: rendered
+
+# Subprocessors (Help Center .md; undated)
+key: subp_eea_sil
+source: https://help.shopify.com/en/manual/your-account/privacy/subprocessors.md
+locator: introduction
+quote: All personal data from customers in the European Economic Area (EEA), the United Kingdom (U.K.), and Switzerland is initially processed by Shopify International Limited (Ireland).
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: subp_gcp
+source: https://help.shopify.com/en/manual/your-account/privacy/subprocessors.md
+locator: Third-party subprocessors table, row Google Cloud Canada Corporation
+quote: Google Cloud Canada Corporation
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: subp_gcp_service
+source: https://help.shopify.com/en/manual/your-account/privacy/subprocessors.md
+locator: Third-party subprocessors table, row Google Cloud Canada Corporation, column Service provided
+quote: Cloud hosting and data processing
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: subp_aws
+source: https://help.shopify.com/en/manual/your-account/privacy/subprocessors.md
+locator: Third-party subprocessors table, row Amazon Web Services, Inc.
+quote: Amazon Web Services, Inc.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: subp_all_platform_data
+source: https://help.shopify.com/en/manual/your-account/privacy/subprocessors.md
+locator: Third-party subprocessors table, column Data that may be processed (rows Amazon Web Services, Cloudflare, Google Cloud Canada Corporation, Groq, Nebius)
+quote: <td>All platform data</td>
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: subp_cloudflare
+source: https://help.shopify.com/en/manual/your-account/privacy/subprocessors.md
+locator: Third-party subprocessors table, row Cloudflare, Inc.
+quote: Load balancing and DDoS protection
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: subp_stripe_adyen
+source: https://help.shopify.com/en/manual/your-account/privacy/subprocessors.md
+locator: Third-party subprocessors table, rows Adyen N.V. and Stripe, LLC; Stripe Payments Europe, Ltd.
+quote: Personal data as necessary to provide Shopify Payments functionality
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: subp_ai_sidekick
+source: https://help.shopify.com/en/manual/your-account/privacy/subprocessors.md
+locator: Third-party subprocessors table, rows Anthropic PBC, Applied Compute Inc., Fireworks.ai, Microsoft Corporation, OpenAI
+quote: Personal data if input to or included in a response by Shopify Sidekick
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: subp_messaging
+source: https://help.shopify.com/en/manual/your-account/privacy/subprocessors.md
+locator: Third-party subprocessors table, rows Mailgun Technologies, Inc. and Twilio Inc.
+quote: Personal data as necessary to provide messaging functionality
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: subp_affiliates_shopify_inc
+source: https://help.shopify.com/en/manual/your-account/privacy/subprocessors.md
+locator: Shopify affiliated subprocessors, row Shopify Inc.
+quote: Providing the Shopify platform and other related services to Shopify International Limited and to Shopify Commerce Singapore Pte. Ltd.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: subp_capital_inc
+source: https://help.shopify.com/en/manual/your-account/privacy/subprocessors.md
+locator: Shopify affiliated subprocessors, row Shopify Capital Inc.
+quote: <td scope="row">Shopify Capital Inc.</td>
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: subp_payments_usa
+source: https://help.shopify.com/en/manual/your-account/privacy/subprocessors.md
+locator: Shopify affiliated subprocessors, row Shopify Payments (USA) Inc.
+quote: <td scope="row">Shopify Payments (USA) Inc.</td>
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: subp_notifications
+source: https://help.shopify.com/en/manual/your-account/privacy/subprocessors.md
+locator: introduction
+quote: To receive notifications about new subprocessors, click **Sign up for notifications** and complete the registration.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+# EU/UK supplementary terms (rendered; "Last updated on: February 14, 2022")
+key: eu_sil_party
+source: https://www.shopify.com/legal/eu-terms
+locator: introduction
+quote: As used in these Supplementary Terms of Service (“P2B Terms”), “we”, “us” and “Shopify” means Shopify International Limited
+date: 2022-02-14
+basis: last updated (page states "Last updated on: February 14, 2022")
+access: rendered
+
+key: eu_out_of_scope
+source: https://www.shopify.com/legal/eu-terms
+locator: introduction
+quote: Additionally, if you use additional Shopify services, products, applications and tools, such as Shopify Payments, Shopify Capital, and Shopify Shipping (“Out of Scope Services”), the separate terms, conditions and policies applicable to those Out of Scope Services are not subject to the P2B Terms
+date: 2022-02-14
+basis: last updated (page states "Last updated on: February 14, 2022")
+access: rendered
+
+key: eu_delete_90_days
+source: https://www.shopify.com/legal/eu-terms
+locator: 4. Access to and Use of Store Data, (1) Your access
+quote: Within 90 days of termination all personal information within your Store is deleted except as legally required.
+date: 2022-02-14
+basis: last updated (page states "Last updated on: February 14, 2022")
+access: rendered
+
+key: eu_complaints
+source: https://www.shopify.com/legal/eu-terms
+locator: 9. Internal Complaint-Handling System
+quote: Shopify has an internal complaint-handling system that is available to you free of charge.
+date: 2022-02-14
+basis: last updated (page states "Last updated on: February 14, 2022")
+access: rendered
+
+key: eu_irish_law
+source: https://www.shopify.com/legal/eu-terms
+locator: 11. General, Applicable Law
+quote: The EU Terms are governed by and construed in accordance with the laws of the country of Ireland.
+date: 2022-02-14
+basis: last updated (page states "Last updated on: February 14, 2022")
+access: rendered
+
+key: eu_shop_app_ranking
+source: https://www.shopify.com/legal/eu-terms
+locator: 6. Additional Distribution Channels
+quote: your Products will be marketed to consumers who download and access the mobile application known as the “Shop App”.
+date: 2022-02-14
+basis: last updated (page states "Last updated on: February 14, 2022")
+access: rendered
+
+key: eu_shopify_access
+source: https://www.shopify.com/legal/eu-terms
+locator: 4. Access to and Use of Store Data, (2) Shopify’s access
+quote: Shopify has the technical ability and right to access all data provided by you and/or by your customers and/or generated through Shopify's provision to you of the P2B Services.
+date: 2022-02-14
+basis: last updated (page states "Last updated on: February 14, 2022")
+access: rendered
+
+# API License and Terms of Use (rendered; "Last updated on: October 7, 2026")
+key: api_parties
+source: https://www.shopify.com/legal/api-terms
+locator: preamble
+quote: By accessing or using the Shopify API, you agree to this Shopify API License and Terms of Use (“Terms”) with Shopify Inc. and its affiliates (“we”, “our”, “us” or “Shopify”).
+date: 2026-10-07
+basis: last updated (page states "Last updated on: October 7, 2026")
+access: rendered
+
+key: api_partner_account
+source: https://www.shopify.com/legal/api-terms
+locator: 2. Using the Shopify API
+quote: Developer must obtain an API Client by registering for a Partner Account and agreeing to and complying with the terms and conditions of the Partner Program Agreement
+date: 2026-10-07
+basis: last updated (page states "Last updated on: October 7, 2026")
+access: rendered
+
+key: api_no_alt_checkout
+source: https://www.shopify.com/legal/api-terms
+locator: 2. Using the Shopify API
+quote: not, except with Shopify’s express written authorization, (i) use an alternative to Shopify Checkout for checkout or payment processing for Shopify Merchants
+date: 2026-10-07
+basis: last updated (page states "Last updated on: October 7, 2026")
+access: rendered
+
+key: api_developer_responsible
+source: https://www.shopify.com/legal/api-terms
+locator: 6. Merchant Agreement, Privacy and Data Security, Merchant Agreement and Privacy Policy
+quote: Developer must inform Merchants in the Merchant Agreement that: (i) Developer is solely responsible for the Application; (ii) Shopify is not liable for any fault in the Application or any harm that may result from its installation or use
+date: 2026-10-07
+basis: last updated (page states "Last updated on: October 7, 2026")
+access: rendered
+
+key: api_developer_privacy_policy
+source: https://www.shopify.com/legal/api-terms
+locator: 6. Merchant Agreement, Privacy and Data Security
+quote: Developer will have in place and will present the Merchant with a privacy policy that complies with all applicable privacy laws
+date: 2026-10-07
+basis: last updated (page states "Last updated on: October 7, 2026")
+access: rendered
+
+key: api_delete_30_days
+source: https://www.shopify.com/legal/api-terms
+locator: 6. Merchant Agreement, Privacy and Data Security
+quote: delete all originals, copies and reproductions of the Merchant Data within 30 days when (A) the Merchant uninstalls the Application
+date: 2026-10-07
+basis: last updated (page states "Last updated on: October 7, 2026")
+access: rendered
+
+key: api_data_limits
+source: https://www.shopify.com/legal/api-terms
+locator: 6. Merchant Agreement, Privacy and Data Security
+quote: except as necessary to provide the Application services to the Merchant to whom the Merchant Data relates and as described in the applicable Merchant Agreement or Developer Privacy Policy, and only within the limits and for the purposes as specified by the Merchant
+date: 2026-10-07
+basis: last updated (page states "Last updated on: October 7, 2026")
+access: rendered
+
+key: api_owns_platform
+source: https://www.shopify.com/legal/api-terms
+locator: What we value, Respect our merchants
+quote: You’ll still own your app, but Shopify owns the platform. As owners of the platform, we put reasonable limits on the use of the merchant data it allows you to access.
+date: 2026-10-07
+basis: last updated (page states "Last updated on: October 7, 2026")
+access: rendered
+
+key: api_no_ai_training
+source: https://www.shopify.com/legal/api-terms
+locator: 2. Using the Shopify API
+quote: (i) create, develop, train, fine tune, or improve any machine learning or artificial intelligence systems, models, or technologies, including large language models
+date: 2026-10-07
+basis: last updated (page states "Last updated on: October 7, 2026")
+access: rendered
+
+key: api_audit
+source: https://www.shopify.com/legal/api-terms
+locator: 8. Audit
+quote: Shopify shall have the right to audit, or to appoint an independent auditor under appropriate non-disclosure conditions to audit Developer’s App, systems and records to confirm Developer’s compliance with the Terms
+date: 2026-10-07
+basis: last updated (page states "Last updated on: October 7, 2026")
+access: rendered
+
+key: api_consent_api
+source: https://www.shopify.com/legal/api-terms
+locator: 2. Using the Shopify API
+quote: integrate with Shopify's Consent Tracking API (also referred to as the "Customer Privacy API")
+date: 2026-10-07
+basis: last updated (page states "Last updated on: October 7, 2026")
+access: rendered
+
+key: api_ontario_law
+source: https://www.shopify.com/legal/api-terms
+locator: 14. General, Applicable Laws
+quote: The Terms shall be governed by and interpreted in accordance with the laws of the Province of Ontario and the laws of Canada applicable therein
+date: 2026-10-07
+basis: last updated (page states "Last updated on: October 7, 2026")
+access: rendered
+
+key: priv_eea_ireland_receiver
+source: https://www.shopify.com/legal/privacy
+locator: Where we send your information, Transfers outside of the EEA, the UK and Switzerland
+quote: If you are located in the EEA, the UK, or Switzerland, your Personal Data is received by our Irish affiliate, Shopify International Ltd.
+date: 2026-07-07
+basis: updated (page states "UPDATED JULY 7, 2026")
+access: rendered

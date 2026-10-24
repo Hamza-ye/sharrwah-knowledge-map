@@ -1,0 +1,19 @@
+{
+ "n": 57,
+ "url": "https://woocommerce.com/document/woopayments/currencies/currencies-overview/",
+ "dir": "items/057-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:04Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/woopayments/currencies/currencies-overview/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 46107,
+ "cited_in": [
+  "WC-S-0541",
+  "WC-S-0542"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "bb51d9c68e45f8c10ed3af7cf538632fa38eb985a18554c623f1eab9d11a771c",
+ "raw_ext": "html"
+}

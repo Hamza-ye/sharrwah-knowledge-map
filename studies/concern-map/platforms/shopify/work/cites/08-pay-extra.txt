@@ -1,0 +1,135 @@
+key: auth_rates
+source: https://help.shopify.com/en/manual/payments/payment-authorization.md
+locator: introduction
+quote: This can improve authorization rates without any extra setup from you.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: timing_pause_reason
+source: https://help.shopify.com/en/manual/payments/shopify-payments/payouts/payout-timing.md
+locator: Troubleshooting payout delays, Payout destination change
+quote: This pause is intended to protect your account from unauthorized access while Shopify verifies the new account.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: res_track
+source: https://help.shopify.com/en/manual/payments/shopify-payments/payouts/reserves.md
+locator: Monitor the status of a reserve
+quote: You can track the value of your reserved funds from the
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: spi_reason
+source: https://help.shopify.com/en/manual/payments/shop-pay-installments.md
+locator: introduction
+quote: Shop Pay Installments lets customers pay for certain orders in installments payments, which offers your customers more flexible payment options and can improve conversion rates and average order value.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: mpm_reason
+source: https://help.shopify.com/en/manual/payments/shopify-payments/managed-payment-methods.md
+locator: introduction
+quote: Your customers are offered the most relevant payment options for their location, which can help increase conversion.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: lpm_region_currency
+source: https://help.shopify.com/en/manual/payments/shopify-payments/local-payment-methods.md
+locator: introduction
+quote: Each method is available only when a customer is in a supported country and selects an eligible currency.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: man_custom
+source: https://help.shopify.com/en/manual/payments/manual-payments.md
+locator: Create a custom manual payment method
+quote: If your business has unique needs for collecting payment or if you want to offer your customers alternative ways to pay, such as booking a service and paying in person, then you can create a custom manual payment method.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: pga_region
+source: https://help.shopify.com/en/manual/payments/third-party-providers/payment-gateway-availability.md
+locator: introduction
+quote: When setting up payments on your Shopify store, select payment gateways and providers that are compatible and available in your region.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: offline_optional
+source: https://help.shopify.com/en/manual/sell-in-person/shopify-pos/selling-offline/offline-payments.md
+locator: introduction
+quote: Offline payments is an optional feature that extends [offline checkout](/manual/sell-in-person/shopify-pos/selling-offline/offline-checkout) to let you accept credit and debit card payments when you don't have an internet connection.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: offline_not_routed
+source: https://help.shopify.com/en/manual/sell-in-person/shopify-pos/selling-offline/offline-payments.md
+locator: Considerations for using offline payments
+quote: Offline transactions aren't routed to the payment processor. You might not know that a transaction has failed until you reconnect to the internet.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: offline_collect_declined
+source: https://help.shopify.com/en/manual/sell-in-person/shopify-pos/selling-offline/offline-payments.md
+locator: Considerations for using offline payments
+quote: If a payment is declined after you reconnect, then you can use the email or phone number that you collected for the order to contact the customer and collect the payment.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: offline_interac
+source: https://help.shopify.com/en/manual/sell-in-person/shopify-pos/selling-offline/offline-payments.md
+locator: Considerations for using offline payments
+quote: Canadian businesses can't accept Interac card payments when offline.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: pcfn_capabilities
+source: https://shopify.dev/docs/api/functions/latest/payment-customization.md
+locator: introduction
+quote: enables you to rename, reorder, hide the payment methods available to customers during checkout, set payment terms, and add a review requirement for a specific order.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: pcfn_max
+source: https://shopify.dev/docs/api/functions/latest/payment-customization.md
+locator: introduction
+quote: You can activate a maximum of 25 payment customization functions on each store.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: pcfn_plus
+source: https://shopify.dev/docs/api/functions/latest/payment-customization.md
+locator: operations reference
+quote: Hiding specific placements is only available on Shopify Plus stores.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: subs_cpm_api
+source: https://shopify.dev/docs/apps/build/purchase-options/subscriptions.md
+locator: APIs list
+quote: Store payment methods that can be used to pay for future orders without requiring the customer to manually go through checkout.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: subs_pos_sp
+source: https://shopify.dev/docs/apps/build/purchase-options/subscriptions.md
+locator: Subscriptions on Shopify POS, POS limitations
+quote: Subscriptions on POS require Shopify Payments. POS stores that don't use Shopify Payments can't sell subscriptions.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md

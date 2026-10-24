@@ -1,0 +1,19 @@
+{
+ "n": 27,
+ "url": "https://help.salla.sa/article/إعدادات-قيود-الدفع/d9me3k8vqi09hdiun8r2ngfr",
+ "dir": "items/027-help.salla.sa",
+ "fetched_at": "2026-10-11T09:19:31Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.salla.sa/article/إعدادات-قيود-الدفع/d9me3k8vqi09hdiun8r2ngfr",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 142416,
+ "cited_in": [
+  "SA-S-5049",
+  "SA-S-5050"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "87ccb18df8143f0b9bd4fd5b8c6dab66b2ca05fb456ee6350d8eacfe6b007bf2",
+ "raw_ext": "html"
+}

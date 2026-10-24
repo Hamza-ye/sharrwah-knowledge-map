@@ -1,0 +1,18 @@
+{
+ "n": 74,
+ "url": "https://woocommerce.com/document/woopayments/payouts/deposits-and-payouts/",
+ "dir": "items/074-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:05Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/woopayments/payouts/deposits-and-payouts/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 44491,
+ "cited_in": [
+  "WC-S-0529"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "30595675f8455903615f3a59c7897a54592e9ea7562b0fd16078a370db1a4a01",
+ "raw_ext": "html"
+}

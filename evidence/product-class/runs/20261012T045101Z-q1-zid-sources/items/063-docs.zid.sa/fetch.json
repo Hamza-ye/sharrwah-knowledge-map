@@ -1,0 +1,18 @@
+{
+ "n": 63,
+ "url": "https://docs.zid.sa/upload-file-to-s3-11396102e0.md",
+ "dir": "items/063-docs.zid.sa",
+ "fetched_at": "2026-10-12T04:52:01Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.zid.sa/upload-file-to-s3-11396102e0.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 10052,
+ "cited_in": [
+  "ZD-S-0801"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "33cc6a1f5839583f6f78fca937e8f98803af3e353fd109f24445d55e2a5e4c23",
+ "raw_ext": "txt"
+}

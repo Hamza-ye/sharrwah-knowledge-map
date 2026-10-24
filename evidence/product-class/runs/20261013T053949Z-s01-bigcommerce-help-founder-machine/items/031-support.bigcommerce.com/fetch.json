@@ -1,0 +1,18 @@
+{
+ "n": 31,
+ "url": "https://support.bigcommerce.com/s/article/Implementing-CCPA-with-BigCommerce",
+ "dir": "items/031-support.bigcommerce.com",
+ "fetched_at": "2026-10-13T05:40:33Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://support.bigcommerce.com/s/article/Implementing-CCPA-with-BigCommerce?language=en_US",
+ "content_type": "text/html;charset=UTF-8",
+ "bytes": 190829,
+ "cited_in": [
+  "BC-C-037"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "866743ffa4778a313c92a3a208b1de33c6429b086bc08923426368d2bb1f26b0",
+ "raw_ext": "html"
+}

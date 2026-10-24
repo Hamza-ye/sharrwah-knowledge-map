@@ -1,0 +1,175 @@
+# Overview
+
+The **Recurring Payments** feature enables merchants and third-party apps to offer **subscription billing** to customers.  
+
+This feature provides comprehensive subscription lifecycle management through APIs, allowing you to **create, charge, and manage recurring payments seamlessly**. It supports full lifecycle operations, including **subscription creation, invoicing, payment processing, renewal, and cancellation**, using a consistent RESTful architecture.
+
+This API is designed for developers integrating recurring billing logic into merchant or third-party apps, ensuring **predictable behavior**, **event-driven updates**, and **compatibility** with existing checkout and payment workflows.
+
+
+## Before You Start
+
+To use the **Recurring Payments API**, you must have a [Salla Partner Account](https://portal.salla.partners/) and an App registered in the [Salla Partner Portal](https://portal.salla.partners/).
+
+
+- Your app credentials (**Client ID** and **Client Secret**) are required to authenticate API requests through [Salla OAuth 2.0](https://docs.salla.dev/421118m0).  
+- Once your app is authorized, you can obtain access tokens and begin making authenticated requests to the Recurring Payments endpoints.
+  
+
+
+:::caution[Important]
+Ensure your App in the Salla Partner Portal has the appropriate [API scopes enabled](https://docs.salla.dev/439059m0#2--app-scope), specifically:
+
+- Recurring Payments: `subscriptions.read_write`
+
+**Contact Salla Support via [email](mailto:partners@salla.sa) or the [Telegram group](https://t.me/salladev) to enable these scopes for your App.**
+
+For full setup instructions, refer to the [Partner Account & App Registration Guide](https://docs.salla.dev/439059m0).
+:::
+
+---
+
+## Enabling Recurring Payments
+
+By default, Recurring Payments are **disabled** for all stores. Only merchants or authorized third-party apps can enable this feature.
+
+### How to Enable Recurring Payments
+
+Recurring Payments can be enabled programmatically using the [Update Setting Slug](https://docs.salla.dev/6965780e0) endpoint in the **Merchant API**.  To activate the feature, update the setting slug `enable_recurring_payment` to `true` for the target store using a **request call** as below:
+   
+   
+
+<Tabs>
+  <Tab title="Request">
+```bash
+ curl --location --request PUT 'https://api.salla.dev/admin/v2/settings/fields/enable_recurring_payment' \
+--header 'Authorization: Bearer <token>' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "value": true
+}'
+```
+
+  </Tab>
+  <Tab title="Response">
+
+
+For this, the **reponse** will be:
+
+```
+{
+    "status": 201,
+    "success": true,
+    "data": {
+        "message": "The record has been updated successfully",
+        "code": 201
+    }
+}
+```
+  </Tab>
+</Tabs>
+
+    
+
+<CardGroup cols={2}>
+  <Card>
+      
+:::info[Further Details]
+Refer to the following resources for full implementation details:
+🔗 [Update Setting Slug](https://docs.salla.dev/6965780e0): Update individual settings.  
+:::
+  </Card>
+  <Card>
+
+
+:::note[Note]
+Once enabled, the App can add subscription products to the cart and start processing recurring payments through the Recurring Payments API.
+:::
+  </Card>
+</CardGroup>
+
+
+
+
+    
+
+
+    
+---
+
+## Process Flow
+
+The following diagrams illustrate the **end-to-end flow** of the Recurring Payments process, beginning from the checkout page where the merchant’s customer submits payment.  
+    
+They show how the system validates the recurring configuration, processes the payment through the gateway, and emits webhook events to reflect successful or failed charge attempts within the subscription lifecycle.
+
+---
+
+### Subscription Creation Flow
+
+This diagram illustrates how **Salla** initiates recurring payments and emits the `subscription.created` webhook, which returns the `subscription_id`.
+
+:::warning[Important]
+Developers must store this `subscription_id` to use it for upcoming renewal operations.
+:::
+
+```mermaid
+sequenceDiagram
+    participant Customer
+    participant Partner as Partner App<br/>(with Snippet Code)
+    participant Cart as Add to Cart Action
+    participant Checkout as Checkout Page
+    participant Webhook as Webhook Receiver
+    
+    Customer->Partner: Add to cart a item
+    Partner->>Cart: Trigger add-to-cart with recurring item
+    Customer->>Checkout: Proceed to checkout and submit payment
+    Checkout->>Checkout: Create subscription, invoice, and order record
+    Checkout-->>Webhook: Emit `subscription.created`
+    Webhook-->>Checkout: Acknowledge receipt of event
+    Checkout-->>Customer: 200 OK (Checkout completed)
+
+```
+
+---
+
+### Recurring Charge Attempt
+
+This diagram illustrates how **Salla** processes recurring charge attempts for existing subscriptions, emitting either the `subscription.charge.succeeded` or `subscription.charge.failed` webhook based on the payment outcome.
+
+:::info[]
+Developers should handle these events to update subscription status and billing records accordingly.
+:::
+
+```mermaid
+sequenceDiagram
+    participant Scheduler as ⏰ System Scheduler (Partner App)
+    participant API as  Salla Admin API
+    participant Gateway as Payment Gateway
+    participant Webhook as Webhook Receiver
+
+    Scheduler->>API: Trigger charge for active subscription
+    API->>Gateway: Process recurring payment
+    Gateway-->>API: Return payment result (success or failure)
+
+    alt Payment Successful
+        API->>API: Create renewal invoice and order
+        API-->>Webhook: Emit `subscription.charge.succeeded`
+    else Payment Failed
+        API-->>Webhook: Emit `subscription.charge.failed`
+    end
+```
+
+---
+
+## General Considerations 
+
+- Recurring payments can be automated by **implementing a System Scheduler on the partner’s side**. This scheduler is responsible for periodically triggering renewal requests for active subscriptions based on their billing cycles.  
+- If a **coupon code** or **store-wide discount** is applied at checkout, the subscription price is set to the discounted amount.  
+- All future recurring payments for that subscription will continue at the discounted rate unless the subscription is expired or terminated. 
+
+
+
+
+---
+

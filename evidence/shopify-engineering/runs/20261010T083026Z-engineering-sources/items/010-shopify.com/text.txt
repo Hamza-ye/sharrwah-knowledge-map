@@ -1,0 +1,174 @@
+Skip to Content
+Docs
+Community
+shopify.com
+Log in
+Join Now
+Blog
+Shopify News
+Case Studies
+Latest
+More
+App development
+Shopify Theme Development
+Front End Development
+Inspiration & Creativity
+Finding New Clients
+See All topics
+Search
+
+Become a Shopify Partner.
+
+Unlock business growth.
+
+Join Today
+
+The latest platform and Partner Program updates are now published on the Dev Changelog.
+
+View the changelog 
+BLOG|SHOPIFY NEWS
+Powering Shopify’s High-Performance, PCI DSS v4 Compliant Checkout with Sandboxing
+
+Introduction of new rules, like anti-skimming protections introduced by version 4 of the Payment Card Industry Data Security Standard (PCI DSS), has far reaching implications. Good news is, merchants can rely on Shopify's architecture to make PCI DSSv4 compliance simple and easy.
+
+Earn more revenue as a Shopify Partner
+
+Grow your Shopify expertise and unlock new ways to earn revenue for your own business with the Shopify Partner Program.
+
+Become a Partner
+
+Keeping up with commerce compliance requirements is neither simple nor easy. Introduction of new rules, like anti-skimming protections introduced by version 4 of the Payment Card Industry Data Security Standard (PCI DSS), has far reaching implications. Good news is, merchants can rely on Shopify's architecture to facilitate PCI DSSv4 compliance.
+
+Sandboxing: future-proof Shopify Checkout architecture
+
+Delivering a fast-loading, secure, and compliant checkout experience to buyers is a complex task. Shopify makes it simple. The backend is hosted on Shopify servers and is battle-tested to scale to the largest sales on the internet, while the frontend is a Shopify-managed runtime that enables customization through extensibility. Merchants and app developers can provide extensions—Web Pixels for analytics, and Checkout UI Extensions for additional content—which Shopify runs in sandboxed JavaScript environments.
+
+Shopify uses a variety of web sandboxing technologies to run app-provided code in isolated JavaScript environments, and communicates with the parent page via mediated postMessage() bridge. This allows us to isolate potentially-untrusted code off the main thread, and still allow that code to learn of important events, read and write data, and render custom UI elements.
+
+The top-level ("parent") checkout page is a Shopify-managed host environment that renders both the server-generated HTML and client-side UI elements. It runs Web Pixels and UI extensions using a combination of iframe elements and Web Workers. The checkout state is communicated to sandboxed code through a managed bridge. This same bridge is used for communication in the opposite direction; UI extensions and Web Pixels can communicate a limited set of mutations to the parent page, where the host app takes care of applying those changes. 
+
+The bridge leverages Remote DOM, an open source library created by Shopify, to allow UI extensions to render additional content on the checkout page. A UI extension builds its tree of components in the sandbox, but the components are rendered as native HTML elements on the parent page. This allows Shopify to provide a vetted set of accessible, secure, performant, and themeable elements to power both the native Checkout experience and custom content provided by apps. Read Shopify’s Take on Extensible UI for a technical deep-dive.
+
+This architecture is the bedrock of a future-proof and resilient checkout:
+
+Performance: all custom code is isolated and executed in Web Workers, ensuring checkout is predictably responsive
+Security: no custom code is executed in the parent page, all communication is sanitized by a managed bridge
+Upgradeability: UI Extensions and Web Pixels are implemented against APIs instead of DOM selectors and events, providing strong protections for upgrade safety and interoperability; extensions and pixels don’t break as checkout continues to evolve
+Compliance: position of elements, accessibility requirements, content integrity, etc. are controlled and enforced
+
+The use of sandboxing is a strict requirement of Shopify Checkout. It takes away the power to execute custom code in the parent page, but in doing so, it enables a high-performance, low-maintenance, and future-proof checkout platform for the merchant.
+
+TL;DR on PCI DSS v4 requirements
+
+PCI DSS is a set of security standards designed to ensure that all entities that process, store, or transmit credit card information maintain a secure environment, addressing technical and operational aspects to mitigate data breaches and fraud. In short, it is what lets buyers trust merchants with their credit card details. PCI DSS v4 goes into effect on March 31, 2025. There are many important updates, but the most consequential is the addition of new anti-skimming protection requirements in section 6.4.3.
+
+Digital skimming—also known as e-skimming or online card skimming—occurs when cybercriminals steal credit card information or payment card data from visitors to your online store. Attackers use malicious code injections to skim payment data from input fields on existing payment forms or hijack unsuspecting users to fake checkout pages. Once cybercriminals collect the payment data, they are free to go shopping on the user’s dime or resell the card information on the dark web for use in future carding attacks. (source)
+
+ The new requirements for a compliant checkout are:
+
+Maintain inventory of all scripts with documentation on why it's necessary and how it is used
+Mechanism to ensure that only authorized scripts are loaded
+Mechanism to ensure the integrity of each loaded script
+
+The critical new requirement that enables anti-skimming protection for buyers is that the above applies to both the "parent" and "payment" pages. For context, the most common way to achieve PCI DSS v3 compliance is to isolate and deploy the payment form into a protected inline frame: the content is loaded by and handled by a PCI-compliant service (typically called a “cardholder data environment”), and user input is handled by iframe and not disclosed to the parent (iframe embedder) page. However, if the parent page is compromised (e.g, cross-site scripting or unauthorized script), then a malicious actor can execute a skimming attack. For example, they could replace the secure iframe with a thieving alternative. To fix this, PCI DSS v4 applies the above compliance requirements on both the payment and parent pages. 
+
+As a buyer, this is a big step forward for protecting sensitive payment information. As a developer, your head is likely spinning from the consequences of these requirements. A non-trivial and interactive checkout requires both 1st-party and 3rd-part code, plus a myriad of transitive dependencies for both. This could include identity and wallets integrations, conversion beacons, analytics vendors, post-purchase integrations, marketing opt-ins, tag managers, and more. The list is a mile long. PCI DSS v4 compliance requires that we have a complete inventory and a mechanism to authorize and verify the integrity of each script in the supply chain—good luck, Padawan. 
+
+Shopify Checkout will provide PCI DSS v4 compliance, no work required
+
+Getting all of the above right requires many layers of systems, processes, and vigilant application of security best practices. For merchants on Shopify Checkout all of this is abstracted — the checkout is future-proof with no additional work required. 
+
+The managed sandboxed runtime means only Shopify-approved scripts execute in the parent page while all custom scripts all loaded via apps built for Shopify and are executed using a combination of iframe elements and Web Workers. This contract, combined with following protections will enable Shopify Checkout to shoulder all of the PCI DSS v4 compliance complexity on the merchant's behalf:
+
+Vet and review all third-party dependencies used by the parent page 
+Perform regular script updates to incorporate the latest security patches and protect from vulnerabilities 
+Maintain a strict change management process with approved reviews, testing, and deployment best practices
+Manage inventory of all scripts loaded in the parent page and enforce sandbox execution of custom code 
+Use Content Security Policy (CSP) to allowlist authorized scripts and reporting for observability and violations
+Use Subresource Integrity (SRI) and CSP nonces to ensure the integrity of loaded scripts
+Load and isolate payment form via ("payment page") iframe for defense-in-depth
+
+Tune in to our recent X space where we go deep on how developers can extend checkout with apps that are performant, upgrade-safe, and compliant.
+
+Regulations will continue to evolve with new rules that tend towards stricter controls that preserve privacy and security. Shopify’s proactive approach to simplifying compliance outmatches reactive solutions, and we’re years ahead. Thanks to the protections provided by the managed runtime, you can continue to customize the checkout without the burden of compliance. For merchants, they can focus on what they do best without interruption; differentiating their brand and growing their business all while getting the best converting checkout on the planet.
+
+by
+Ilya Grigorik
+Published on Feb 11, 2025
+SHARE ARTICLE
+Facebook
+Twitter
+LinkedIn
+by
+Ilya Grigorik
+Published on Feb 11, 2025
+
+Let’s grow your digital business
+
+Get design inspiration, development tips, and practical takeaways delivered straight to your inbox.
+
+Enter email
+Get updates
+
+No charge. Unsubscribe anytime.
+
+POPULAR POSTS
+
+WEB DESIGN TOOLS AND RESOURCES
+10 Beautiful Ecommerce Website Color Schemes
+SHOPIFY APP DEVELOPMENT
+How to Build a Shopify App: The Complete Guide
+WEB DESIGN TOOLS AND RESOURCES
+15 Funny Lorem Ipsum Generators to Shake Up Your Design Mockups
+INSPIRATION & CREATIVITY
+20 Memorable Web Design Portfolio Examples to Inspire Your Own Website
+
+POPULAR POSTS
+
+WEB DESIGN
+Inclusive Design: 12 Ways to Design for Everyone
+LEARNING LIQUID
+How to Manipulate Images with the img_url Filter
+SHOPIFY NEWS
+Create a Marketplace in Less than 8 Minutes with Shopify’s Marketplace Kit
+SHOPIFY NEWS
+Introducing Online Store 2.0: What it Means For Developers
+Let’s grow your digital business
+Get design inspiration, development tips, and practical takeaways delivered straight to your inbox.
+Email here
+Get updates
+
+No charge. Unsubscribe anytime.
+
+Grow your business with the Shopify Partner Program
+Join Today
+Shopify
+What is Shopify?
+Shopify Editions
+Careers
+Investors
+Newsroom
+Sustainability
+Ecosystem
+Developer Docs
+Theme Store
+App Store
+Partners
+Affiliates
+Resources
+Blog
+Compare Shopify
+Guides
+Free Tools
+Changelog
+Support
+Shopify Help Center
+Community Forum
+Hire a Partner
+Service Status
+USA | English
+Terms of Service
+Legal
+Privacy Policy
+Sitemap
+Your Privacy Choices

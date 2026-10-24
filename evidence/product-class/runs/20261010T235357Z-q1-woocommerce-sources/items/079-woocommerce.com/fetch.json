@@ -1,0 +1,18 @@
+{
+ "n": 79,
+ "url": "https://woocommerce.com/document/woopayments/taxes/documents/",
+ "dir": "items/079-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:06Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/woopayments/taxes/documents/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 49710,
+ "cited_in": [
+  "WC-S-0549"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "e4177804d417430d2070d93055b704986391ce416458b96d6ea11b2e93f5974c",
+ "raw_ext": "html"
+}

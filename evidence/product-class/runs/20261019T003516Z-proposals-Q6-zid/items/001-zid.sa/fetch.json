@@ -1,0 +1,18 @@
+{
+ "n": 1,
+ "url": "https://zid.sa/en/syria/",
+ "dir": "items/001-zid.sa",
+ "fetched_at": "2026-10-19T00:35:16Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://zid.sa/en/syria/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 45516,
+ "cited_in": [
+  "studies/proposals/records/Q6/zid/citations.tsv"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "35b55eb76bdb559c9b84dec3217a35dc245bbde81dd41b384416be0b51957f06",
+ "raw_ext": "html"
+}

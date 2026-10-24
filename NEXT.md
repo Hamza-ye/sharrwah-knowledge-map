@@ -1,66 +1,53 @@
 # Open work, in order
 
+**Superseded on 12 October 2026.** The founder agreed `PLAN.md` (gate G0). It sets the order of work, and `STATE.md` says where the work is. The list below is kept as a record.
+
 Each item says what it decides and what it needs. Items lower down depend on the ones above.
 
-## 1. The payment seam (before the frame sort)
+## 1. Q1, the concern map (built; the founder's review is next)
 
-**Question.** Can payments be its own part of Sharrwah, with its own questions, research, regulation, consultations and pace? The rest of the platform would then depend only on a narrow, stable contract and could be built now, while payments evolves alone in parallel.
+**Question.** How does the product class (Shopify, Salla, WooCommerce) divide a commerce platform into concerns, and where does it place each one? The full question, rules and output format are in `questions/Q1-concern-map.md`.
 
-**Why first.** The answer splits the 81 register rows into three groups:
-- rows that belong to the contract, which everything else depends on and which must settle early;
-- rows that stay inside payments, which can move at their own pace;
-- rows that aren't payments at all.
+**Where it stands.** All three platforms are re-passed: what each states, in its own words, for every concern and placement, or a gap. The matching pass is done, with 88 matches and 84 unclear candidates, and the side-by-side map is in `studies/concern-map/map/`. Detail is in `studies/concern-map/README.md`.
 
-The frame sort (item 2) then runs separately for each group. Making the split after the sort would mix the concerns again.
+**What the founder is asked for:**
+- rulings on the 84 unclear matches (`studies/concern-map/unclear-matches.tsv`);
+- a look at matches M-070 and M-064;
+- whether an agreement a platform's terms incorporate (such as Stripe's under WooPayments and Shopify Payments) may be read;
+- the gaps only the founder can close (`studies/concern-map/gaps-to-close.md`): the salla.com pages, the journeys, a paid Plus store, questions to the platforms.
 
-**What it needs.** No new research. It can be answered from evidence already held: observed-sh and observed-sa, and the Shopify study in this repository.
+**How the founder's evidence closes gaps.** The founder closes the gaps that name them by capturing the evidence into observed-sh or observed-sa, in those repositories' own format: saved pages, journeys, store runs. When the founder says it has landed:
+1. Fetch the new commit and list what is new against the commits the map cites.
+2. Match the new evidence to open gaps by their routes (URL, admin path and role, plan).
+3. Run a gap-closing pass per platform. An agent reads only the new evidence, as its own read. It turns a gap into a statement where the evidence states something, quoted verbatim and cited at the new commit. It updates `why_not_held` for every gap still open.
+4. Check, commit, and regenerate `gaps-to-close.md`. The pass reports what is still not closed.
 
-**Starting points from the Shopify study.** These suggest a separable concern behind a contract, not a completely separate one:
+The founder's words are never evidence. What the founder captures from the platforms is.
 
-- **Payment status is a roll-up.** The order's payment status is derived from its transactions. Admin actions such as capture, mark as paid and refund are moves on transactions (A1 §0; D §1.1).
-- **Orders work without a processor.** An order placed with a manual method such as cash on delivery is later marked as paid (B §1.1–1.2).
-- **Providers sit behind a session contract.** A provider is a remote state machine that Shopify commands, one session per financial operation; checkout and the order never see the rail's internals (C §0, §2).
-- **Records live in separate ledgers.** What was agreed, what was attempted, what was booked and what the processor credited are kept apart. Cash is a custody ledger of its own, and merchant billing is a separate invoice ledger (D §0; E §0).
-- **Shopify's commerce protocol stops at "order placed".** Authorization, capture, settlement, payouts and fees stay inside Shopify (G §0, §5).
-- **Things that cross the seam.** Each would become a contract element:
-  - the payment methods offered at checkout;
-  - the buyer's step inside a method;
-  - capture timing tied to fulfilment;
-  - payment terms and deposits, meaning what falls due and when;
-  - refunds driven by returns;
-  - cash at the counter or on delivery;
-  - fraud and risk holds on fulfilment;
-  - the currency the buyer pays in;
-  - payouts and seller billing.
-- **Not payments at all.** Money representation (currency, rial edition) and zone are foundations shared by the whole platform.
+## 2. Q2, the Yemen stress test
 
-**Output.**
-- Every crossing between payments and the rest of the platform, on both Shopify and Salla, each with its evidence.
-- What stays inside payments.
-- The contract's elements.
-- The 81 rows tagged as contract, payments-internal or core.
+Tests the map against the market, case by case, using only Yemen evidence. See `questions/Q2-yemen-stress-test.md`.
 
-## 2. The frame sort of the 81 rows
+Since 11 October, observed-sh's admin answers come from stores registered in Yemen (country `YE`, currency `YER`). They are direct evidence of how Shopify treats such a store.
 
-Two agents sort the rows without seeing each other's work, then the results are compared.
+**Waits for:** item 1 and the founder's go.
 
-- **Rules:** the frame's rules (Built, Configured, Chosen, Context; certainty kept separate).
-- **References:**
-  - platform evidence (observed-sh, observed-sa);
-  - Yemen evidence (`evidence/yemen/`);
-  - the founder's recorded decisions and attestations;
-  - the model.
-- **Citations:** every sorted line cites a source that resolves.
-- **Disagreements:** a disagreement between the two agents means a rule is missing; a citation that doesn't resolve means the line isn't grounded.
-- **Scope:** runs per group from item 1. The contract rows go first.
+## 3. Q3, placing the rows
 
-## 3. Yemen sources (in progress, payments side only)
+Places the existing question rows on the map and flags the time bombs. See `questions/Q3-placing-rows.md`.
 
-- The Arabic-first search for Sana'a rules, operators, couriers and seller payment pages, with the sources reachable from outside Yemen captured.
-- `evidence/yemen/to-fetch-from-yemen.md`: what only the founder can fetch from inside Yemen.
-- Founder attestations, using `evidence/yemen/attestations/TEMPLATE.md`.
+**Waits for:** items 1 and 2.
 
-## 4. Before going live in Sana'a (payments side)
+**Open for the founder:** which rows to place — the 81 payment rows, the Knowledge Map's 179 questions, or both.
 
-- A Sana'a lawyer or accountant on what a platform that holds no money needs there (PAY-58).
-- Dated screenshots of the payment flows the launch relies on.
+## 4. Yemen sources (continuing)
+
+- `evidence/yemen/to-fetch-from-yemen.md` lists what only the founder can fetch from inside Yemen.
+- Founder attestations use `evidence/yemen/attestations/TEMPLATE.md`.
+
+## Superseded
+
+Two items were logged before the three questions were agreed. Their work was in closed pull request #3 and is not used.
+
+- **The payment seam.** The question was whether payments can be its own part of the platform behind a contract. Q1's map records where each payment concern lives and how it meets the rest.
+- **The frame sort of the 81 rows.** Q3 takes its place.

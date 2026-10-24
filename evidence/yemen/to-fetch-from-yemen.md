@@ -23,7 +23,7 @@ These come from the Sana'a rules search (`finding-aids/20261010-sanaa-rules-sear
    - https://centralbank.gov.ye/Home/Detail/1186-20312/%D9%85%D9%86%D8%B4%D9%88%D8%B1%D8%A7%D8%AA?lang=en
 5. [x] **Saba (English): Central bank Decision No. 4 of 1445 AH** (F01), the list of banned banks. Bears on PAY-59 and PAY-60.
    - https://www.saba.ye/en/news3335749.htm
-6. [ ] **Saba: Law No. 4 of 1444 AH prohibiting usurious transactions** (23 March 2023). Bears on PAY-48 and PAY-57.
+6. [ ] **Saba: Law No. 4 of 1444 AH prohibiting usurious transactions** (23 March 2023). Bears on PAY-48 and PAY-57. Stage 1's one founder unknown, YA-40 in `studies/yemen-cases/unknowns.tsv`, waits on Saba's reports on this law.
    - https://www.saba.ye/ar/news3230501.htm
 7. [ ] **Central bank copy of Law 40/2006** on payment systems and electronic financial and banking operations, and the Financial Laws index. Bears on PAY-57, PAY-58, PAY-60 and PAY-61.
    - http://centralbank.gov.ye/ar/CBY.aspx?cattype=1&keyid=80&lang=2&pid=74

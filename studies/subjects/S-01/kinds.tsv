@@ -1,0 +1,830 @@
+id	kind	rule
+S01-SH-001	official page	the address is a terms, policy, legal or pricing page
+S01-SH-002	official page	the address is a terms, policy, legal or pricing page
+S01-SH-003	official page	the address is a terms, policy, legal or pricing page
+S01-SH-004	official page	the address is a terms, policy, legal or pricing page
+S01-SH-005	official page	the address is a terms, policy, legal or pricing page
+S01-SH-006	official page	the address is a terms, policy, legal or pricing page
+S01-SH-007	official page	the address is a terms, policy, legal or pricing page
+S01-SH-008	official page	the address is a terms, policy, legal or pricing page
+S01-SH-009	official page	the address is a terms, policy, legal or pricing page
+S01-SH-010	official page	the address is a terms, policy, legal or pricing page
+S01-SH-011	official page	the address is a terms, policy, legal or pricing page
+S01-SH-012	official page	the address is a terms, policy, legal or pricing page
+S01-SH-013	official page	the address is a terms, policy, legal or pricing page
+S01-SH-014	official page	the address is a terms, policy, legal or pricing page
+S01-SH-015	official page	the address is a terms, policy, legal or pricing page
+S01-SH-016	official page	the address is a terms, policy, legal or pricing page
+S01-SH-017	official page	the address is a terms, policy, legal or pricing page
+S01-SH-018	official page	the address is a terms, policy, legal or pricing page
+S01-SH-019	official page	the address is a terms, policy, legal or pricing page
+S01-SH-020	official page	the address is a terms, policy, legal or pricing page
+S01-SH-021	official page	the address is a terms, policy, legal or pricing page
+S01-SH-022	official page	the address is a terms, policy, legal or pricing page
+S01-SH-023	official page	the address is a terms, policy, legal or pricing page
+S01-SH-024	official page	the address is a terms, policy, legal or pricing page
+S01-SH-025	official page	the address is a terms, policy, legal or pricing page
+S01-SH-026	official page	the address is a terms, policy, legal or pricing page
+S01-SH-027	official page	the address is a terms, policy, legal or pricing page
+S01-SH-028	official page	the address is a terms, policy, legal or pricing page
+S01-SH-029	official page	the address is a terms, policy, legal or pricing page
+S01-SH-030	official page	the address is a terms, policy, legal or pricing page
+S01-SH-031	official page	the address is a terms, policy, legal or pricing page
+S01-SH-032	official page	the address is a terms, policy, legal or pricing page
+S01-SH-033	official page	the address is a terms, policy, legal or pricing page
+S01-SH-034	official page	the address is a terms, policy, legal or pricing page
+S01-SH-035	official page	the address is a terms, policy, legal or pricing page
+S01-SH-036	official page	the address is a terms, policy, legal or pricing page
+S01-SH-037	official page	the address is a terms, policy, legal or pricing page
+S01-SH-038	official page	the address is a terms, policy, legal or pricing page
+S01-SH-039	official page	the address is a terms, policy, legal or pricing page
+S01-SH-040	official page	the address is a terms, policy, legal or pricing page
+S01-SH-041	official page	the address is a terms, policy, legal or pricing page
+S01-SH-042	official page	the address is a terms, policy, legal or pricing page
+S01-SH-043	official page	the address is a terms, policy, legal or pricing page
+S01-SH-044	official page	the address is a terms, policy, legal or pricing page
+S01-SH-045	official page	the address is a terms, policy, legal or pricing page
+S01-SH-046	official page	the address is a terms, policy, legal or pricing page
+S01-SH-047	official page	the address is a terms, policy, legal or pricing page
+S01-SH-048	stated	the address is a docs, help or other page
+S01-SH-049	stated	the address is a docs, help or other page
+S01-SH-050	stated	the address is a docs, help or other page
+S01-SH-051	stated	the address is a docs, help or other page
+S01-SH-052	stated	the address is a docs, help or other page
+S01-SH-053	stated	the address is a docs, help or other page
+S01-SH-054	stated	the address is a docs, help or other page
+S01-SH-055	stated	the address is a docs, help or other page
+S01-SH-056	stated	the address is a docs, help or other page
+S01-SH-057	stated	the address is a docs, help or other page
+S01-SH-058	stated	the address is a docs, help or other page
+S01-SH-059	stated	the address is a docs, help or other page
+S01-SH-060	stated	the address is a docs, help or other page
+S01-SH-061	stated	the address is a docs, help or other page
+S01-SH-062	stated	the address is a docs, help or other page
+S01-SH-063	stated	the address is a docs, help or other page
+S01-SH-064	stated	the address is a docs, help or other page
+S01-SH-065	stated	the address is a docs, help or other page
+S01-SH-066	stated	the address is a docs, help or other page
+S01-SH-067	stated	the address is a docs, help or other page
+S01-SH-068	stated	the address is a docs, help or other page
+S01-SH-069	stated	the address is a docs, help or other page
+S01-SH-070	stated	the address is a docs, help or other page
+S01-SH-071	stated	the address is a docs, help or other page
+S01-SH-072	stated	the address is a docs, help or other page
+S01-SH-073	stated	the address is a docs, help or other page
+S01-SH-074	stated	the address is a docs, help or other page
+S01-SH-075	stated	the address is a docs, help or other page
+S01-SH-076	stated	the address is a docs, help or other page
+S01-SH-077	stated	the address is a docs, help or other page
+S01-SH-078	stated	the address is a docs, help or other page
+S01-SH-079	stated	the address is a docs, help or other page
+S01-SH-080	stated	the address is a docs, help or other page
+S01-SH-081	stated	the address is a docs, help or other page
+S01-SH-082	stated	the address is a docs, help or other page
+S01-SH-083	stated	the address is a docs, help or other page
+S01-SH-084	stated	the address is a docs, help or other page
+S01-SH-085	stated	the address is a docs, help or other page
+S01-SH-086	stated	the address is a docs, help or other page
+S01-SH-087	stated	the address is a docs, help or other page
+S01-SH-088	stated	the address is a docs, help or other page
+S01-SH-089	stated	the address is a docs, help or other page
+S01-SH-090	stated	the address is a docs, help or other page
+S01-SH-091	stated	the address is a docs, help or other page
+S01-SH-092	stated	the address is a docs, help or other page
+S01-SH-093	stated	the address is a docs, help or other page
+S01-SH-094	stated	the address is a docs, help or other page
+S01-SH-095	stated	the address is a docs, help or other page
+S01-SH-096	stated	the address is a docs, help or other page
+S01-SH-097	stated	the address is a docs, help or other page
+S01-SH-098	stated	the address is a docs, help or other page
+S01-SH-099	stated	the address is a docs, help or other page
+S01-SH-100	stated	the address is a docs, help or other page
+S01-SH-101	stated	the address is a docs, help or other page
+S01-SH-102	stated	the address is a docs, help or other page
+S01-SH-103	stated	the address is a docs, help or other page
+S01-SH-104	official page	the address is a terms, policy, legal or pricing page
+S01-SH-105	official page	the address is a terms, policy, legal or pricing page
+S01-SH-106	official page	the address is a terms, policy, legal or pricing page
+S01-SH-107	official page	the address is a terms, policy, legal or pricing page
+S01-SH-108	official page	the address is a terms, policy, legal or pricing page
+S01-SH-109	official page	the address is a terms, policy, legal or pricing page
+S01-SH-110	official page	the address is a terms, policy, legal or pricing page
+S01-SH-111	official page	the address is a terms, policy, legal or pricing page
+S01-SH-112	official page	the address is a terms, policy, legal or pricing page
+S01-SH-113	official page	the address is a terms, policy, legal or pricing page
+S01-SH-114	official page	the address is a terms, policy, legal or pricing page
+S01-SH-115	official page	the address is a terms, policy, legal or pricing page
+S01-SH-116	official page	the address is a terms, policy, legal or pricing page
+S01-SH-117	official page	the address is a terms, policy, legal or pricing page
+S01-SH-118	official page	the address is a terms, policy, legal or pricing page
+S01-SH-119	official page	the address is a terms, policy, legal or pricing page
+S01-SH-120	stated	structures/shopify/admin-graphql-schema holds https://shopify.dev/admin-graphql-direct-proxy/2026-10: the address is a docs, help or other page
+S01-SH-121	stated	structures/shopify/admin-graphql-schema holds https://shopify.dev/admin-graphql-direct-proxy/2026-10: the address is a docs, help or other page
+S01-SH-122	stated	structures/shopify/admin-graphql-schema holds https://shopify.dev/admin-graphql-direct-proxy/2026-10: the address is a docs, help or other page
+S01-SH-123	stated	structures/shopify/admin-graphql-schema holds https://shopify.dev/admin-graphql-direct-proxy/2026-10: the address is a docs, help or other page
+S01-SH-124	shipped	structures/shopify/admin-router holds https://cdn.shopify.com/shopifycloud/web/assets/v1/vite/client/en/router-577b0ff: the address is code or a schema the platform ships
+S01-SH-125	official page	the address is a terms, policy, legal or pricing page
+S01-SH-126	official page	the address is a terms, policy, legal or pricing page
+S01-SH-127	official page	the address is a terms, policy, legal or pricing page
+S01-SH-128	official page	the address is a terms, policy, legal or pricing page
+S01-SH-129	official page	the address is a terms, policy, legal or pricing page
+S01-SH-130	official page	the address is a terms, policy, legal or pricing page
+S01-SH-131	official page	the address is a terms, policy, legal or pricing page
+S01-SH-132	official page	the address is a terms, policy, legal or pricing page
+S01-SH-133	official page	the address is a terms, policy, legal or pricing page
+S01-SH-134	official page	the address is a terms, policy, legal or pricing page
+S01-SH-135	official page	the address is a terms, policy, legal or pricing page
+S01-SH-136	official page	the address is a terms, policy, legal or pricing page
+S01-SH-137	official page	the address is a terms, policy, legal or pricing page
+S01-SH-138	official page	the address is a terms, policy, legal or pricing page
+S01-SH-139	official page	the address is a terms, policy, legal or pricing page
+S01-SH-140	stated	the address is a docs, help or other page
+S01-SH-141	official page	the address is a terms, policy, legal or pricing page
+S01-SH-142	official page	the address is a terms, policy, legal or pricing page
+S01-SH-143	stated	the address is a docs, help or other page
+S01-SH-144	stated	run 20260930T003703Z-help-en-md fetched pages
+S01-SH-145	stated	a captured copy of https://help.shopify.com/en/manual/sell-in-person/getting-started/setup-payment-: the address is a docs, help or other page
+S01-SH-146	stated	run 20260930T003703Z-help-en-md fetched pages
+S01-SH-147	official page	a captured copy of https://www.shopify.com/legal/terms-shopify-payments: the address is a terms, policy, legal or pricing page
+S01-SH-148	official page	a captured copy of https://www.shopify.com/legal/terms-payfac: the address is a terms, policy, legal or pricing page
+S01-SH-149	official page	a captured copy of https://www.shopify.com/legal/terms-payfac: the address is a terms, policy, legal or pricing page
+S01-SH-150	official page	a captured copy of https://www.shopify.com/legal/terms-payfac: the address is a terms, policy, legal or pricing page
+S01-SH-151	stated	a captured copy of https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/bank-acc: the address is a docs, help or other page
+S01-SH-152	stated	a captured copy of https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/bank-acc: the address is a docs, help or other page
+S01-SH-153	stated	a captured copy of https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/bank-acc: the address is a docs, help or other page
+S01-SH-154	stated	a captured copy of https://help.shopify.com/en/manual/payments/shopify-payments/store-currency/payo: the address is a docs, help or other page
+S01-SH-155	stated	a captured copy of https://help.shopify.com/en/manual/payments/shopify-payments/store-currency/payo: the address is a docs, help or other page
+S01-SH-156	stated	run 20260930T003703Z-help-en-md fetched pages
+S01-SH-157	stated	run 20260930T003703Z-help-en-md fetched pages
+S01-SH-158	official page	a captured copy of https://www.shopify.com/legal/terms-shopify-payments: the address is a terms, policy, legal or pricing page
+S01-SH-159	official page	a captured copy of https://www.shopify.com/legal/terms-payfac: the address is a terms, policy, legal or pricing page
+S01-SH-160	official page	a captured copy of https://www.shopify.com/legal/terms-payfac: the address is a terms, policy, legal or pricing page
+S01-SH-161	official page	a captured copy of https://www.shopify.com/legal/terms-payfac: the address is a terms, policy, legal or pricing page
+S01-SH-N01	stated	the address is a docs, help or other page
+S01-SH-N02	official page	the address is a terms, policy, legal or pricing page
+S01-SA-001	stated	the address is a docs, help or other page
+S01-SA-002	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-003	stated	the address is a docs, help or other page
+S01-SA-004	stated	the address is a docs, help or other page
+S01-SA-005	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-006	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-007	stated	the address is a docs, help or other page
+S01-SA-008	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-009	stated	the address is a docs, help or other page
+S01-SA-010	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-011	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/en/article/: the address is a docs, help or other page
+S01-SA-012	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/en/article/: the address is a docs, help or other page
+S01-SA-013	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-014	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/en/article/: the address is a docs, help or other page
+S01-SA-015	stated	the address is a docs, help or other page
+S01-SA-016	observed	structures/salla/dashboard-translations is built from a recorded session
+S01-SA-017	observed	structures/salla/dashboard-translations is built from a recorded session
+S01-SA-018	observed	structures/salla/dashboard-translations is built from a recorded session
+S01-SA-019	stated	the address is a docs, help or other page
+S01-SA-020	stated	the address is a docs, help or other page
+S01-SA-021	stated	the address is a docs, help or other page
+S01-SA-022	stated	structures/salla/com-specialplan holds https://salla.com/specialplan: the address is a docs, help or other page
+S01-SA-023	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-024	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-025	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-026	stated	the address is a docs, help or other page
+S01-SA-027	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-028	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-029	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-030	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-031	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-032	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/en/article/: the address is a docs, help or other page
+S01-SA-033	observed	structures/salla/dashboard-main-navigation is built from a recorded session
+S01-SA-034	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-035	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-036	observed	structures/salla/dashboard-translations is built from a recorded session
+S01-SA-037	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-038	observed	structures/salla/dashboard-translations is built from a recorded session
+S01-SA-039	observed	structures/salla/dashboard-translations is built from a recorded session
+S01-SA-040	observed	structures/salla/dashboard-translations is built from a recorded session
+S01-SA-041	observed	structures/salla/dashboard-translations is built from a recorded session
+S01-SA-042	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-043	stated	the address is a docs, help or other page
+S01-SA-044	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-045	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-046	stated	the address is a docs, help or other page
+S01-SA-047	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-048	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-049	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-050	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-051	stated	the address is a docs, help or other page
+S01-SA-052	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-053	stated	the address is a docs, help or other page
+S01-SA-054	stated	the address is a docs, help or other page
+S01-SA-055	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-056	stated	the address is a docs, help or other page
+S01-SA-057	stated	the address is a docs, help or other page
+S01-SA-058	stated	the address is a docs, help or other page
+S01-SA-059	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-060	stated	the address is a docs, help or other page
+S01-SA-061	stated	the address is a docs, help or other page
+S01-SA-062	stated	the address is a docs, help or other page
+S01-SA-063	stated	the address is a docs, help or other page
+S01-SA-064	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-065	stated	the address is a docs, help or other page
+S01-SA-066	stated	the address is a docs, help or other page
+S01-SA-067	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-068	observed	structures/salla/dashboard-translations is built from a recorded session
+S01-SA-069	observed	structures/salla/dashboard-translations is built from a recorded session
+S01-SA-070	stated	the address is a docs, help or other page
+S01-SA-071	observed	structures/salla/dashboard-translations is built from a recorded session
+S01-SA-072	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-073	stated	structures/salla/com-policies holds https://salla.com/payments: the address is a docs, help or other page
+S01-SA-074	official page	structures/salla/com-policies holds https://salla.com/terms: the address is a terms, policy, legal or pricing page
+S01-SA-075	official page	structures/salla/com-policies holds https://salla.com/terms: the address is a terms, policy, legal or pricing page
+S01-SA-076	official page	structures/salla/com-policies holds https://salla.com/terms: the address is a terms, policy, legal or pricing page
+S01-SA-077	official page	structures/salla/com-policies holds https://salla.com/terms: the address is a terms, policy, legal or pricing page
+S01-SA-078	official page	structures/salla/com-policies holds https://salla.com/terms: the address is a terms, policy, legal or pricing page
+S01-SA-079	official page	structures/salla/com-policies holds https://salla.com/terms: the address is a terms, policy, legal or pricing page
+S01-SA-080	official page	structures/salla/com-policies holds https://salla.com/terms: the address is a terms, policy, legal or pricing page
+S01-SA-081	official page	structures/salla/com-policies holds https://salla.com/terms: the address is a terms, policy, legal or pricing page
+S01-SA-082	official page	structures/salla/com-policies holds https://salla.com/terms: the address is a terms, policy, legal or pricing page
+S01-SA-083	official page	structures/salla/com-policies holds https://salla.com/terms: the address is a terms, policy, legal or pricing page
+S01-SA-084	official page	structures/salla/com-policies holds https://salla.com/terms: the address is a terms, policy, legal or pricing page
+S01-SA-085	official page	structures/salla/com-policies holds https://salla.com/terms: the address is a terms, policy, legal or pricing page
+S01-SA-086	official page	structures/salla/com-policies holds https://salla.com/terms: the address is a terms, policy, legal or pricing page
+S01-SA-087	official page	structures/salla/com-policies holds https://salla.com/terms: the address is a terms, policy, legal or pricing page
+S01-SA-088	official page	structures/salla/com-policies holds https://salla.com/terms: the address is a terms, policy, legal or pricing page
+S01-SA-089	official page	structures/salla/com-policies holds https://salla.com/terms: the address is a terms, policy, legal or pricing page
+S01-SA-090	stated	the address is a docs, help or other page
+S01-SA-091	stated	the address is a docs, help or other page
+S01-SA-092	stated	the address is a docs, help or other page
+S01-SA-093	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-094	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-095	stated	the address is a docs, help or other page
+S01-SA-096	stated	structures/salla/com-policies holds https://salla.com/shipping: the address is a docs, help or other page
+S01-SA-097	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-098	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-099	stated	the address is a docs, help or other page
+S01-SA-100	observed	structures/salla/dashboard-translations is built from a recorded session
+S01-SA-101	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-102	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-103	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-104	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-105	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-106	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-107	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-108	observed	structures/salla/dashboard-translations is built from a recorded session
+S01-SA-109	observed	structures/salla/dashboard-translations is built from a recorded session
+S01-SA-110	observed	structures/salla/dashboard-translations is built from a recorded session
+S01-SA-111	stated	the address is a docs, help or other page
+S01-SA-112	observed	structures/salla/dashboard-translations is built from a recorded session
+S01-SA-113	stated	the address is a docs, help or other page
+S01-SA-114	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-115	stated	the address is a docs, help or other page
+S01-SA-116	stated	the address is a docs, help or other page
+S01-SA-117	stated	the address is a docs, help or other page
+S01-SA-118	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-119	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-120	stated	the address is a docs, help or other page
+S01-SA-121	shipped	structures/salla/docs-operations is built from an API definition the platform publishes
+S01-SA-122	shipped	structures/salla/docs-operations is built from an API definition the platform publishes
+S01-SA-123	observed	structures/salla/portal-app-scopes is built from a recorded session
+S01-SA-124	observed	structures/salla/dashboard-translations is built from a recorded session
+S01-SA-125	observed	structures/salla/dashboard-translations is built from a recorded session
+S01-SA-126	observed	structures/salla/dashboard-translations is built from a recorded session
+S01-SA-127	observed	structures/salla/dashboard-translations is built from a recorded session
+S01-SA-128	observed	structures/salla/dashboard-translations is built from a recorded session
+S01-SA-129	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-130	observed	structures/salla/dashboard-translations is built from a recorded session
+S01-SA-131	observed	structures/salla/dashboard-translations is built from a recorded session
+S01-SA-132	observed	structures/salla/dashboard-features is built from a recorded session
+S01-SA-133	stated	structures/salla/com-policies holds https://salla.com/payments: the address is a docs, help or other page
+S01-SA-134	observed	structures/salla/dashboard-translations is built from a recorded session
+S01-SA-135	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-136	observed	structures/salla/dashboard-translations is built from a recorded session
+S01-SA-137	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/en/article/: the address is a docs, help or other page
+S01-SA-138	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-139	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/en/article/: the address is a docs, help or other page
+S01-SA-140	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/en/article/: the address is a docs, help or other page
+S01-SA-141	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-142	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-143	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/en/article/: the address is a docs, help or other page
+S01-SA-144	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-145	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-146	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-147	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-148	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-149	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-150	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-151	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-152	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-153	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-154	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/en/article/: the address is a docs, help or other page
+S01-SA-155	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-156	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-157	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-158	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-159	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-160	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/en/article/: the address is a docs, help or other page
+S01-SA-161	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/en/article/: the address is a docs, help or other page
+S01-SA-162	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/en/article/: the address is a docs, help or other page
+S01-SA-163	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/en/article/: the address is a docs, help or other page
+S01-SA-164	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-165	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-166	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-167	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-168	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/en/article/: the address is a docs, help or other page
+S01-SA-169	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/en/article/: the address is a docs, help or other page
+S01-SA-170	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-171	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-172	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-173	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-174	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-175	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-176	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-177	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-178	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-179	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-180	observed	structures/salla/dashboard-translations is built from a recorded session
+S01-SA-181	observed	structures/salla/dashboard-translations is built from a recorded session
+S01-SA-182	stated	run 20261009T034955Z-help-sitemap-missing fetched pages
+S01-SA-183	stated	run 20261009T034955Z-help-sitemap-missing fetched pages
+S01-SA-184	stated	run 20261009T034955Z-help-sitemap-missing fetched pages
+S01-SA-185	stated	run 20261009T034955Z-help-sitemap-missing fetched pages
+S01-SA-186	stated	run 20261009T034955Z-help-sitemap-missing fetched pages
+S01-SA-187	stated	run 20261006T030341Z-com-toplevel fetched pages
+S01-SA-188	stated	run 20261006T030341Z-com-toplevel fetched pages
+S01-SA-189	observed	structures/salla/dashboard-translations is built from a recorded session
+S01-SA-190	observed	structures/salla/dashboard-translations is built from a recorded session
+S01-SA-191	observed	structures/salla/dashboard-translations is built from a recorded session
+S01-SA-192	observed	structures/salla/dashboard-translations is built from a recorded session
+S01-SA-193	observed	structures/salla/dashboard-translations is built from a recorded session
+S01-SA-194	observed	structures/salla/dashboard-translations is built from a recorded session
+S01-SA-195	observed	structures/salla/dashboard-translations is built from a recorded session
+S01-SA-196	stated	run 20261006T030341Z-com-toplevel fetched pages
+S01-SA-197	stated	run 20261006T030341Z-com-toplevel fetched pages
+S01-SA-198	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-199	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-200	observed	structures/salla/dashboard-translations is built from a recorded session
+S01-SA-201	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-SA-202	stated	run 20261008T121631Z-com-pages fetched pages
+S01-SA-N01	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a docs, help or other page
+S01-WC-001	official page	the address is a terms, policy, legal or pricing page
+S01-WC-002	official page	the address is a terms, policy, legal or pricing page
+S01-WC-003	official page	the address is a terms, policy, legal or pricing page
+S01-WC-004	official page	the address is a terms, policy, legal or pricing page
+S01-WC-005	official page	the address is a terms, policy, legal or pricing page
+S01-WC-006	official page	the address is a terms, policy, legal or pricing page
+S01-WC-007	official page	the address is a terms, policy, legal or pricing page
+S01-WC-008	official page	the address is a terms, policy, legal or pricing page
+S01-WC-009	official page	the address is a terms, policy, legal or pricing page
+S01-WC-010	official page	the address is a terms, policy, legal or pricing page
+S01-WC-011	official page	the address is a terms, policy, legal or pricing page
+S01-WC-012	official page	the address is a terms, policy, legal or pricing page
+S01-WC-013	official page	the address is a terms, policy, legal or pricing page
+S01-WC-014	official page	the address is a terms, policy, legal or pricing page
+S01-WC-015	stated	the address is a docs, help or other page
+S01-WC-016	official page	the address is a terms, policy, legal or pricing page
+S01-WC-017	official page	the address is a terms, policy, legal or pricing page
+S01-WC-018	official page	the address is a terms, policy, legal or pricing page
+S01-WC-019	stated	the address is a docs, help or other page
+S01-WC-020	stated	the address is a docs, help or other page
+S01-WC-021	stated	the address is a docs, help or other page
+S01-WC-022	stated	the address is a docs, help or other page
+S01-WC-023	stated	the address is a docs, help or other page
+S01-WC-024	stated	the address is a docs, help or other page
+S01-WC-025	stated	the address is a docs, help or other page
+S01-WC-026	stated	the address is a docs, help or other page
+S01-WC-027	stated	the address is a docs, help or other page
+S01-WC-028	stated	the address is a docs, help or other page
+S01-WC-029	stated	the address is a docs, help or other page
+S01-WC-030	stated	the address is a docs, help or other page
+S01-WC-031	stated	the address is a docs, help or other page
+S01-WC-032	stated	the address is a docs, help or other page
+S01-WC-033	stated	the address is a docs, help or other page
+S01-WC-034	stated	the address is a docs, help or other page
+S01-WC-035	stated	the address is a docs, help or other page
+S01-WC-036	stated	the address is a docs, help or other page
+S01-WC-037	stated	the address is a docs, help or other page
+S01-WC-038	stated	the address is a docs, help or other page
+S01-WC-039	stated	the address is a docs, help or other page
+S01-WC-040	stated	the address is a docs, help or other page
+S01-WC-041	stated	the address is a docs, help or other page
+S01-WC-042	stated	the address is a docs, help or other page
+S01-WC-043	stated	the address is a docs, help or other page
+S01-WC-044	stated	the address is a docs, help or other page
+S01-WC-045	stated	the address is a docs, help or other page
+S01-WC-046	stated	the address is a docs, help or other page
+S01-WC-047	stated	the address is a docs, help or other page
+S01-WC-048	stated	the address is a docs, help or other page
+S01-WC-049	stated	the address is a docs, help or other page
+S01-WC-050	stated	the address is a docs, help or other page
+S01-WC-051	stated	the address is a docs, help or other page
+S01-WC-052	stated	the address is a docs, help or other page
+S01-WC-053	stated	the address is a docs, help or other page
+S01-WC-054	stated	the address is a docs, help or other page
+S01-WC-055	stated	the address is a docs, help or other page
+S01-WC-056	stated	the address is a docs, help or other page
+S01-WC-057	stated	the address is a docs, help or other page
+S01-WC-058	stated	the address is a docs, help or other page
+S01-WC-059	stated	the address is a docs, help or other page
+S01-WC-060	stated	the address is a docs, help or other page
+S01-WC-061	stated	the address is a docs, help or other page
+S01-WC-062	stated	the address is a docs, help or other page
+S01-WC-063	stated	the address is a docs, help or other page
+S01-WC-064	stated	the address is a docs, help or other page
+S01-WC-065	stated	the address is a docs, help or other page
+S01-WC-066	stated	the address is a docs, help or other page
+S01-WC-067	stated	the address is a docs, help or other page
+S01-WC-068	stated	the address is a docs, help or other page
+S01-WC-069	stated	the address is a docs, help or other page
+S01-WC-070	stated	the address is a docs, help or other page
+S01-WC-071	stated	the address is a docs, help or other page
+S01-WC-072	stated	the address is a docs, help or other page
+S01-WC-073	stated	the address is a docs, help or other page
+S01-WC-074	stated	the address is a docs, help or other page
+S01-WC-075	stated	the address is a docs, help or other page
+S01-WC-076	stated	the address is a docs, help or other page
+S01-WC-077	stated	the address is a docs, help or other page
+S01-WC-078	stated	the address is a docs, help or other page
+S01-WC-079	stated	the address is a docs, help or other page
+S01-WC-080	stated	the address is a docs, help or other page
+S01-WC-081	stated	the address is a docs, help or other page
+S01-WC-082	stated	the address is a docs, help or other page
+S01-WC-083	stated	the address is a docs, help or other page
+S01-WC-084	stated	the address is a docs, help or other page
+S01-WC-085	stated	the address is a docs, help or other page
+S01-WC-086	stated	the address is a docs, help or other page
+S01-WC-087	stated	the address is a docs, help or other page
+S01-WC-088	shipped	a file of the WooCommerce release
+S01-WC-089	stated	the address is a docs, help or other page
+S01-WC-090	stated	the address is a docs, help or other page
+S01-WC-091	stated	the address is a docs, help or other page
+S01-WC-092	shipped	a file of the WooCommerce release
+S01-WC-093	stated	the address is a docs, help or other page
+S01-WC-094	stated	the address is a docs, help or other page
+S01-WC-095	stated	the address is a docs, help or other page
+S01-WC-096	stated	the address is a docs, help or other page
+S01-WC-097	shipped	a file of the WooCommerce release
+S01-WC-098	shipped	a file of the WooCommerce release
+S01-WC-099	shipped	a file of the WooCommerce release
+S01-WC-100	shipped	a file of the WooCommerce release
+S01-WC-101	stated	the address is a docs, help or other page
+S01-WC-102	official page	the address is a terms, policy, legal or pricing page
+S01-WC-103	official page	the address is a terms, policy, legal or pricing page
+S01-WC-104	official page	the address is a terms, policy, legal or pricing page
+S01-WC-105	official page	the address is a terms, policy, legal or pricing page
+S01-WC-106	official page	the address is a terms, policy, legal or pricing page
+S01-WC-107	official page	the address is a terms, policy, legal or pricing page
+S01-WC-108	official page	the address is a terms, policy, legal or pricing page
+S01-WC-109	official page	the address is a terms, policy, legal or pricing page
+S01-WC-110	official page	the address is a terms, policy, legal or pricing page
+S01-WC-111	official page	the address is a terms, policy, legal or pricing page
+S01-WC-112	official page	the address is a terms, policy, legal or pricing page
+S01-WC-113	official page	the address is a terms, policy, legal or pricing page
+S01-WC-114	official page	the address is a terms, policy, legal or pricing page
+S01-WC-115	official page	the address is a terms, policy, legal or pricing page
+S01-WC-116	official page	the address is a terms, policy, legal or pricing page
+S01-WC-117	official page	the address is a terms, policy, legal or pricing page
+S01-WC-118	official page	the address is a terms, policy, legal or pricing page
+S01-WC-119	official page	the address is a terms, policy, legal or pricing page
+S01-WC-120	official page	the address is a terms, policy, legal or pricing page
+S01-WC-121	official page	the address is a terms, policy, legal or pricing page
+S01-WC-122	official page	the address is a terms, policy, legal or pricing page
+S01-WC-123	official page	the address is a terms, policy, legal or pricing page
+S01-WC-124	official page	the address is a terms, policy, legal or pricing page
+S01-WC-125	official page	the address is a terms, policy, legal or pricing page
+S01-WC-126	official page	the address is a terms, policy, legal or pricing page
+S01-WC-127	official page	the address is a terms, policy, legal or pricing page
+S01-WC-128	official page	the address is a terms, policy, legal or pricing page
+S01-WC-129	official page	the address is a terms, policy, legal or pricing page
+S01-WC-130	official page	the address is a terms, policy, legal or pricing page
+S01-WC-131	official page	the address is a terms, policy, legal or pricing page
+S01-WC-132	official page	the address is a terms, policy, legal or pricing page
+S01-WC-133	official page	the address is a terms, policy, legal or pricing page
+S01-WC-134	official page	the address is a terms, policy, legal or pricing page
+S01-WC-135	official page	the address is a terms, policy, legal or pricing page
+S01-WC-136	official page	the address is a terms, policy, legal or pricing page
+S01-WC-137	official page	the address is a terms, policy, legal or pricing page
+S01-WC-138	official page	the address is a terms, policy, legal or pricing page
+S01-WC-139	official page	the address is a terms, policy, legal or pricing page
+S01-WC-140	official page	the address is a terms, policy, legal or pricing page
+S01-WC-141	official page	the address is a terms, policy, legal or pricing page
+S01-WC-142	official page	the address is a terms, policy, legal or pricing page
+S01-WC-143	official page	the address is a terms, policy, legal or pricing page
+S01-WC-144	official page	the address is a terms, policy, legal or pricing page
+S01-WC-145	official page	the address is a terms, policy, legal or pricing page
+S01-WC-146	official page	the address is a terms, policy, legal or pricing page
+S01-WC-147	official page	the address is a terms, policy, legal or pricing page
+S01-WC-148	official page	the address is a terms, policy, legal or pricing page
+S01-WC-149	official page	the address is a terms, policy, legal or pricing page
+S01-WC-150	official page	the address is a terms, policy, legal or pricing page
+S01-WC-151	official page	the address is a terms, policy, legal or pricing page
+S01-WC-152	official page	the address is a terms, policy, legal or pricing page
+S01-WC-153	official page	the address is a terms, policy, legal or pricing page
+S01-WC-154	stated	a captured copy of https://woocommerce.com/document/paypal-standard/: the address is a docs, help or other page
+S01-WC-155	stated	a captured copy of https://woocommerce.com/document/paypal-standard/: the address is a docs, help or other page
+S01-WC-156	stated	a captured copy of https://woocommerce.com/document/paypal-standard/: the address is a docs, help or other page
+S01-WC-157	stated	a captured copy of https://woocommerce.com/document/paypal-standard/: the address is a docs, help or other page
+S01-WC-158	stated	a captured copy of https://woocommerce.com/document/stripe/: the address is a docs, help or other page
+S01-WC-159	stated	a captured copy of https://woocommerce.com/document/woocommerce-square/: the address is a docs, help or other page
+S01-WC-160	stated	a captured copy of https://woocommerce.com/products/: the address is a docs, help or other page
+S01-WC-161	stated	a captured copy of https://woocommerce.com/document/woopayments/our-policies/know-your-customer/: the address is a docs, help or other page
+S01-WC-162	stated	a captured copy of https://woocommerce.com/document/woopayments/compatibility/woopayments-vs-stripe: the address is a docs, help or other page
+S01-WC-163	stated	a captured copy of https://woocommerce.com/document/woopayments/compatibility/woopayments-vs-stripe: the address is a docs, help or other page
+S01-WC-164	stated	a captured copy of https://woocommerce.com/document/woopayments/compatibility/woopayments-vs-stripe: the address is a docs, help or other page
+S01-WC-165	stated	a captured copy of https://woocommerce.com/document/woopayments/compatibility/woopayments-vs-stripe: the address is a docs, help or other page
+S01-WC-166	stated	a captured copy of https://woocommerce.com/document/woopayments/compatibility/countries/: the address is a docs, help or other page
+S01-WC-167	stated	a captured copy of https://woocommerce.com/document/woopayments/compatibility/countries/: the address is a docs, help or other page
+S01-WC-168	stated	a captured copy of https://woocommerce.com/document/woopayments/compatibility/countries/: the address is a docs, help or other page
+S01-WC-169	stated	a captured copy of https://woocommerce.com/document/woopayments/compatibility/countries/: the address is a docs, help or other page
+S01-WC-170	stated	a captured copy of https://woocommerce.com/document/woopayments/compatibility/countries/: the address is a docs, help or other page
+S01-WC-171	stated	a captured copy of https://woocommerce.com/document/woopayments/compatibility/countries/: the address is a docs, help or other page
+S01-WC-172	shipped	a file of the WooCommerce release
+S01-WC-N01	stated	the address is a docs, help or other page
+S01-ZD-001	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-002	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-003	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-004	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-005	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-006	stated	the address is a docs, help or other page
+S01-ZD-007	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-008	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-009	stated	the address is a docs, help or other page
+S01-ZD-010	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-011	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-012	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-013	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-014	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-015	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-016	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-017	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-018	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-019	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-020	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-021	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-022	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-023	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-024	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-025	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-026	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-027	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-028	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-029	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-030	stated	the address is a docs, help or other page
+S01-ZD-031	stated	the address is a docs, help or other page
+S01-ZD-032	stated	the address is a docs, help or other page
+S01-ZD-033	stated	the address is a docs, help or other page
+S01-ZD-034	stated	the address is a docs, help or other page
+S01-ZD-035	stated	the address is a docs, help or other page
+S01-ZD-036	stated	the address is a docs, help or other page
+S01-ZD-037	stated	the address is a docs, help or other page
+S01-ZD-038	stated	the address is a docs, help or other page
+S01-ZD-039	stated	the address is a docs, help or other page
+S01-ZD-040	stated	the address is a docs, help or other page
+S01-ZD-041	stated	the address is a docs, help or other page
+S01-ZD-042	stated	the address is a docs, help or other page
+S01-ZD-043	stated	the address is a docs, help or other page
+S01-ZD-044	stated	the address is a docs, help or other page
+S01-ZD-045	stated	the address is a docs, help or other page
+S01-ZD-046	stated	the address is a docs, help or other page
+S01-ZD-047	stated	the address is a docs, help or other page
+S01-ZD-048	stated	the address is a docs, help or other page
+S01-ZD-049	stated	the address is a docs, help or other page
+S01-ZD-050	stated	the address is a docs, help or other page
+S01-ZD-051	stated	the address is a docs, help or other page
+S01-ZD-052	stated	the address is a docs, help or other page
+S01-ZD-053	stated	the address is a docs, help or other page
+S01-ZD-054	stated	the address is a docs, help or other page
+S01-ZD-055	stated	the address is a docs, help or other page
+S01-ZD-056	stated	the address is a docs, help or other page
+S01-ZD-057	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-058	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-059	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-060	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-061	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-062	stated	the address is a docs, help or other page
+S01-ZD-063	stated	the address is a docs, help or other page
+S01-ZD-064	stated	the address is a docs, help or other page
+S01-ZD-065	stated	the address is a docs, help or other page
+S01-ZD-066	stated	the address is a docs, help or other page
+S01-ZD-067	stated	the address is a docs, help or other page
+S01-ZD-068	stated	the address is a docs, help or other page
+S01-ZD-069	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-070	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-071	stated	the address is a docs, help or other page
+S01-ZD-072	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-073	stated	the address is a docs, help or other page
+S01-ZD-074	stated	the address is a docs, help or other page
+S01-ZD-075	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-076	stated	the address is a docs, help or other page
+S01-ZD-077	stated	the address is a docs, help or other page
+S01-ZD-078	stated	the address is a docs, help or other page
+S01-ZD-079	stated	the address is a docs, help or other page
+S01-ZD-080	stated	the address is a docs, help or other page
+S01-ZD-081	stated	the address is a docs, help or other page
+S01-ZD-082	stated	the address is a docs, help or other page
+S01-ZD-083	stated	the address is a docs, help or other page
+S01-ZD-084	stated	the address is a docs, help or other page
+S01-ZD-085	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-086	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-087	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-088	stated	the address is a docs, help or other page
+S01-ZD-089	stated	the address is a docs, help or other page
+S01-ZD-090	stated	the address is a docs, help or other page
+S01-ZD-091	stated	the address is a docs, help or other page
+S01-ZD-092	stated	the address is a docs, help or other page
+S01-ZD-093	stated	the address is a docs, help or other page
+S01-ZD-094	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-095	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-096	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-097	stated	the address is a docs, help or other page
+S01-ZD-098	stated	the address is a docs, help or other page
+S01-ZD-099	stated	the address is a docs, help or other page
+S01-ZD-100	stated	the address is a docs, help or other page
+S01-ZD-101	stated	the address is a docs, help or other page
+S01-ZD-102	stated	the address is a docs, help or other page
+S01-ZD-103	stated	the address is a docs, help or other page
+S01-ZD-104	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-105	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-106	stated	the address is a docs, help or other page
+S01-ZD-107	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-108	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-109	stated	the address is a docs, help or other page
+S01-ZD-110	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-111	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-112	stated	the address is a docs, help or other page
+S01-ZD-113	stated	the address is a docs, help or other page
+S01-ZD-114	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-115	stated	the address is a docs, help or other page
+S01-ZD-116	stated	the address is a docs, help or other page
+S01-ZD-117	stated	the address is a docs, help or other page
+S01-ZD-118	stated	the address is a docs, help or other page
+S01-ZD-119	stated	the address is a docs, help or other page
+S01-ZD-120	stated	the address is a docs, help or other page
+S01-ZD-121	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-122	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-123	shipped	the address is code or a schema the platform ships
+S01-ZD-124	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-125	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-126	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-127	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-128	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-129	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-130	stated	the address is a docs, help or other page
+S01-ZD-131	stated	the address is a docs, help or other page
+S01-ZD-132	stated	the address is a docs, help or other page
+S01-ZD-133	official page	the address is a terms, policy, legal or pricing page
+S01-ZD-134	stated	the address is a docs, help or other page
+S01-ZD-135	stated	the address is a docs, help or other page
+S01-ZD-136	stated	the address is a docs, help or other page
+S01-ZD-137	stated	the address is a docs, help or other page
+S01-ZD-138	stated	the address is a docs, help or other page
+S01-ZD-139	stated	the address is a docs, help or other page
+S01-ZD-140	stated	the address is a docs, help or other page
+S01-ZD-141	shipped	the address is code or a schema the platform ships
+S01-ZD-142	shipped	the address is code or a schema the platform ships
+S01-ZD-143	stated	the address is a docs, help or other page
+S01-ZD-144	stated	the address is a docs, help or other page
+S01-ZD-145	stated	the address is a docs, help or other page
+S01-ZD-146	stated	the address is a docs, help or other page
+S01-ZD-147	stated	a captured copy of https://help.zid.sa/category/zid-pay/: the address is a docs, help or other page
+S01-ZD-148	stated	a captured copy of https://help.zid.sa/store-language/: the address is a docs, help or other page
+S01-ZD-149	stated	a captured copy of https://zid.sa/en/egypt/: the address is a docs, help or other page
+S01-ZD-150	stated	a captured copy of https://help.zid.sa/zid-wallet/: the address is a docs, help or other page
+S01-ZD-151	stated	a captured copy of https://help.zid.sa/zid-wallet/: the address is a docs, help or other page
+S01-ZD-152	official page	a captured copy of https://zid.sa/ar/legal/zidpay-terms-conditions-sa/: the address is a terms, policy, legal or pricing page
+S01-ZD-153	stated	a captured copy of https://help.zid.sa/activate-mazeed/: the address is a docs, help or other page
+S01-ZD-154	shipped	a captured copy of https://zid.sa/_next/static/chunks/2501-f29c20b24ab64821.js: the address is code or a schema the platform ships
+S01-ZD-155	stated	a captured copy of https://help.zid.sa/%d8%a7%d9%84%d8%a3%d8%b3%d8%a6%d9%84%d8%a9-%d8%a7%d9%84%d8%b: the address is a docs, help or other page
+S01-ZD-156	stated	a captured copy of https://help.zid.sa/%d8%a7%d9%84%d8%a3%d8%b3%d8%a6%d9%84%d8%a9-%d8%a7%d9%84%d8%b: the address is a docs, help or other page
+S01-ZD-157	stated	the address is a docs, help or other page
+S01-ZD-158	stated	the address is a docs, help or other page
+S01-ZD-N01	stated	the address is a docs, help or other page
+S01-ZD-N02	stated	the address is a docs, help or other page
+S01-ZD-N03	stated	the address is a docs, help or other page
+S01-ZD-N04	stated	the address is a docs, help or other page
+S01-BC-001	stated	the address is a docs, help or other page
+S01-BC-002	stated	the address is a docs, help or other page
+S01-BC-003	stated	the address is a docs, help or other page
+S01-BC-004	stated	the address is a docs, help or other page
+S01-BC-005	stated	the address is a docs, help or other page
+S01-BC-006	stated	the address is a docs, help or other page
+S01-BC-007	stated	the address is a docs, help or other page
+S01-BC-008	stated	the address is a docs, help or other page
+S01-BC-009	stated	the address is a docs, help or other page
+S01-BC-010	stated	the address is a docs, help or other page
+S01-BC-011	stated	the address is a docs, help or other page
+S01-BC-012	stated	the address is a docs, help or other page
+S01-BC-013	stated	the address is a docs, help or other page
+S01-BC-014	stated	the address is a docs, help or other page
+S01-BC-015	stated	the address is a docs, help or other page
+S01-BC-016	stated	the address is a docs, help or other page
+S01-BC-017	stated	the address is a docs, help or other page
+S01-BC-018	stated	the address is a docs, help or other page
+S01-BC-019	stated	the address is a docs, help or other page
+S01-BC-020	stated	the address is a docs, help or other page
+S01-BC-021	stated	the address is a docs, help or other page
+S01-BC-022	stated	the address is a docs, help or other page
+S01-BC-023	stated	the address is a docs, help or other page
+S01-BC-024	stated	the address is a docs, help or other page
+S01-BC-025	stated	the address is a docs, help or other page
+S01-BC-026	stated	the address is a docs, help or other page
+S01-BC-027	stated	the address is a docs, help or other page
+S01-BC-028	stated	the address is a docs, help or other page
+S01-BC-029	stated	the address is a docs, help or other page
+S01-BC-030	stated	the address is a docs, help or other page
+S01-BC-031	stated	the address is a docs, help or other page
+S01-BC-032	stated	the address is a docs, help or other page
+S01-BC-033	stated	the address is a docs, help or other page
+S01-BC-034	stated	the address is a docs, help or other page
+S01-BC-035	stated	the address is a docs, help or other page
+S01-BC-036	stated	the address is a docs, help or other page
+S01-BC-037	stated	the address is a docs, help or other page
+S01-BC-038	stated	the address is a docs, help or other page
+S01-BC-039	stated	the address is a docs, help or other page
+S01-BC-040	stated	the address is a docs, help or other page
+S01-BC-041	stated	the address is a docs, help or other page
+S01-BC-042	stated	the address is a docs, help or other page
+S01-BC-043	stated	the address is a docs, help or other page
+S01-BC-044	stated	the address is a docs, help or other page
+S01-BC-045	stated	the address is a docs, help or other page
+S01-BC-046	stated	the address is a docs, help or other page
+S01-BC-047	stated	the address is a docs, help or other page
+S01-BC-048	stated	the address is a docs, help or other page
+S01-BC-049	stated	the address is a docs, help or other page
+S01-BC-050	stated	the address is a docs, help or other page
+S01-BC-051	stated	the address is a docs, help or other page
+S01-BC-052	stated	the address is a docs, help or other page
+S01-BC-053	stated	the address is a docs, help or other page
+S01-BC-054	stated	the address is a docs, help or other page
+S01-BC-055	stated	the address is a docs, help or other page
+S01-BC-056	stated	the address is a docs, help or other page
+S01-BC-057	stated	the address is a docs, help or other page
+S01-BC-058	stated	the address is a docs, help or other page
+S01-BC-059	stated	the address is a docs, help or other page
+S01-BC-060	stated	the address is a docs, help or other page
+S01-BC-061	stated	the address is a docs, help or other page
+S01-BC-062	official page	a captured copy of https://www.bigcommerce.com/pricing/: the address is a terms, policy, legal or pricing page
+S01-BC-063	official page	a captured copy of https://www.bigcommerce.com/pricing/: the address is a terms, policy, legal or pricing page
+S01-BC-064	official page	a captured copy of https://www.bigcommerce.com/pricing/: the address is a terms, policy, legal or pricing page
+S01-BC-065	stated	a captured copy of https://www.bigcommerce.com/payments/bigcommerce-payments/: the address is a docs, help or other page
+S01-BC-066	stated	a captured copy of https://support.bigcommerce.com/s/article/Connecting-with-BigCommerce-Payments?l: the address is a docs, help or other page
+S01-BC-067	stated	a captured copy of https://support.bigcommerce.com/s/article/Connecting-with-BigCommerce-Payments?l: the address is a docs, help or other page
+S01-BC-068	stated	a captured copy of https://support.bigcommerce.com/s/article/Connecting-with-BigCommerce-Payments?l: the address is a docs, help or other page
+S01-BC-069	stated	a captured copy of https://support.bigcommerce.com/s/article/Connecting-with-BigCommerce-Payments?l: the address is a docs, help or other page
+S01-BC-070	stated	a captured copy of https://support.bigcommerce.com/s/article/Connecting-with-BigCommerce-Payments?l: the address is a docs, help or other page
+S01-BC-071	stated	a captured copy of https://support.bigcommerce.com/s/article/Connecting-with-BigCommerce-Payments?l: the address is a docs, help or other page
+S01-BC-072	stated	a captured copy of https://support.bigcommerce.com/s/article/Connecting-with-BigCommerce-Payments?l: the address is a docs, help or other page
+S01-BC-073	stated	a captured copy of https://support.bigcommerce.com/s/article/Connecting-with-BigCommerce-Payments?l: the address is a docs, help or other page
+S01-BC-074	stated	a captured copy of https://support.bigcommerce.com/s/article/Connecting-with-BigCommerce-Payments?l: the address is a docs, help or other page
+S01-BC-075	stated	a captured copy of https://support.bigcommerce.com/s/article/Connecting-with-BigCommerce-Payments?l: the address is a docs, help or other page
+S01-BC-076	stated	a captured copy of https://support.bigcommerce.com/s/article/Connecting-with-BigCommerce-Payments?l: the address is a docs, help or other page
+S01-BC-077	stated	a captured copy of https://support.bigcommerce.com/s/article/Connecting-with-BigCommerce-Payments?l: the address is a docs, help or other page
+S01-BC-078	stated	a captured copy of https://support.bigcommerce.com/s/article/Connecting-with-BigCommerce-Payments?l: the address is a docs, help or other page
+S01-BC-079	stated	a captured copy of https://support.bigcommerce.com/s/article/Connecting-with-BigCommerce-Payments?l: the address is a docs, help or other page
+S01-BC-080	stated	a captured copy of https://support.bigcommerce.com/s/article/Connecting-with-BigCommerce-Payments?l: the address is a docs, help or other page
+S01-BC-081	stated	a captured copy of https://support.bigcommerce.com/s/article/Connecting-with-BigCommerce-Payments?l: the address is a docs, help or other page
+S01-BC-082	stated	a captured copy of https://support.bigcommerce.com/s/article/Connecting-with-BigCommerce-Payments?l: the address is a docs, help or other page
+S01-BC-083	stated	a captured copy of https://support.bigcommerce.com/s/article/Connecting-with-BigCommerce-Payments?l: the address is a docs, help or other page
+S01-BC-084	stated	a captured copy of https://support.bigcommerce.com/s/article/Connecting-with-BigCommerce-Payments?l: the address is a docs, help or other page
+S01-BC-085	stated	a captured copy of https://support.bigcommerce.com/s/article/Connecting-with-BigCommerce-Payments?l: the address is a docs, help or other page
+S01-BC-086	stated	a captured copy of https://support.bigcommerce.com/s/article/Connecting-with-BigCommerce-Payments?l: the address is a docs, help or other page
+S01-BC-087	stated	a captured copy of https://support.bigcommerce.com/s/article/Connecting-with-BigCommerce-Payments?l: the address is a docs, help or other page
+S01-BC-088	stated	a captured copy of https://support.bigcommerce.com/s/article/Available-Payment-Gateways?language=en: the address is a docs, help or other page
+S01-BC-089	stated	a captured copy of https://support.bigcommerce.com/s/article/Available-Payment-Gateways?language=en: the address is a docs, help or other page
+S01-BC-090	stated	a captured copy of https://support.bigcommerce.com/s/article/Connecting-with-PayPal?language=en_US: the address is a docs, help or other page
+S01-BC-091	stated	a captured copy of https://support.bigcommerce.com/s/article/Connecting-with-PayPal?language=en_US: the address is a docs, help or other page
+S01-BC-092	stated	a captured copy of https://support.bigcommerce.com/s/article/Connecting-with-PayPal?language=en_US: the address is a docs, help or other page
+S01-BC-093	stated	a captured copy of https://support.bigcommerce.com/s/article/Connecting-with-PayPal?language=en_US: the address is a docs, help or other page
+S01-BC-094	stated	a captured copy of https://support.bigcommerce.com/s/article/Connecting-with-PayPal?language=en_US: the address is a docs, help or other page
+S01-BC-095	stated	a captured copy of https://support.bigcommerce.com/s/article/Connecting-with-PayPal?language=en_US: the address is a docs, help or other page
+S01-BC-096	stated	a captured copy of https://support.bigcommerce.com/s/article/Connecting-with-PayPal?language=en_US: the address is a docs, help or other page
+S01-BC-097	stated	a captured copy of https://support.bigcommerce.com/s/article/Connecting-with-Stripe-OCS?language=en: the address is a docs, help or other page
+S01-BC-098	stated	a captured copy of https://support.bigcommerce.com/s/article/Connecting-with-Stripe-OCS?language=en: the address is a docs, help or other page
+S01-BC-099	stated	a captured copy of https://support.bigcommerce.com/s/article/Connecting-with-Stripe-OCS?language=en: the address is a docs, help or other page
+S01-BC-100	stated	a captured copy of https://support.bigcommerce.com/s/article/Connecting-with-Stripe-OCS?language=en: the address is a docs, help or other page
+S01-BC-101	stated	a captured copy of https://support.bigcommerce.com/s/article/Connecting-with-Stripe-OCS?language=en: the address is a docs, help or other page
+S01-BC-102	stated	a captured copy of https://support.bigcommerce.com/s/article/Connecting-with-Stripe-OCS?language=en: the address is a docs, help or other page
+S01-BC-103	stated	a captured copy of https://support.bigcommerce.com/s/article/Connecting-with-Stripe-OCS?language=en: the address is a docs, help or other page
+S01-BC-104	stated	a captured copy of https://support.bigcommerce.com/s/article/Connecting-with-Braintree?language=en_: the address is a docs, help or other page
+S01-BC-105	stated	a captured copy of https://support.bigcommerce.com/s/article/Connecting-with-Braintree?language=en_: the address is a docs, help or other page
+S01-BC-106	stated	a captured copy of https://support.bigcommerce.com/s/article/Connecting-with-Braintree?language=en_: the address is a docs, help or other page
+S01-BC-107	stated	a captured copy of https://support.bigcommerce.com/s/article/Connecting-with-Braintree?language=en_: the address is a docs, help or other page
+S01-BC-108	stated	a captured copy of https://support.bigcommerce.com/s/article/Connecting-with-Braintree?language=en_: the address is a docs, help or other page
+S01-BC-109	stated	a captured copy of https://support.bigcommerce.com/s/article/Connecting-with-Braintree?language=en_: the address is a docs, help or other page
+S01-BC-110	stated	a captured copy of https://support.bigcommerce.com/s/article/Connecting-with-Braintree?language=en_: the address is a docs, help or other page
+S01-BC-111	stated	a captured copy of https://support.bigcommerce.com/s/article/Connecting-with-Braintree?language=en_: the address is a docs, help or other page
+S01-BC-112	stated	a captured copy of https://support.bigcommerce.com/s/article/Connecting-with-Braintree?language=en_: the address is a docs, help or other page
+S01-BC-113	stated	a captured copy of https://support.bigcommerce.com/s/article/Offline-Payment-Methods?language=en_US: the address is a docs, help or other page
+S01-BC-114	stated	a captured copy of https://support.bigcommerce.com/s/article/Offline-Payment-Methods?language=en_US: the address is a docs, help or other page
+S01-BC-115	stated	a captured copy of https://support.bigcommerce.com/s/article/Offline-Payment-Methods?language=en_US: the address is a docs, help or other page
+S01-BC-116	stated	a captured copy of https://support.bigcommerce.com/s/article/Offline-Payment-Methods?language=en_US: the address is a docs, help or other page
+S01-BC-117	stated	a captured copy of https://support.bigcommerce.com/s/article/Offline-Payment-Methods?language=en_US: the address is a docs, help or other page
+S01-BC-118	stated	a captured copy of https://support.bigcommerce.com/s/article/Offline-Payment-Methods?language=en_US: the address is a docs, help or other page
+S01-BC-119	stated	a captured copy of https://support.bigcommerce.com/s/article/Offline-Payment-Methods?language=en_US: the address is a docs, help or other page
+S01-BC-120	stated	a captured copy of https://support.bigcommerce.com/s/article/Offline-Payment-Methods?language=en_US: the address is a docs, help or other page
+S01-BC-121	stated	a captured copy of https://support.bigcommerce.com/s/article/Processing-Refunds: the address is a docs, help or other page
+S01-BC-122	stated	a captured copy of https://support.bigcommerce.com/s/article/Manually-Capturing-Transactions-Author: the address is a docs, help or other page
+S01-BC-123	official page	a captured copy of https://support.bigcommerce.com/s/article/Pricing: the address is a terms, policy, legal or pricing page
+S01-BC-124	official page	a captured copy of https://support.bigcommerce.com/s/article/Pricing: the address is a terms, policy, legal or pricing page
+S01-BC-125	stated	a captured copy of https://support.bigcommerce.com/s/article/Connecting-with-PayPal?language=en_US: the address is a docs, help or other page
+S01-BC-126	stated	a captured copy of https://www.bigcommerce.com/product/: the address is a docs, help or other page
+S01-BC-127	stated	a captured copy of https://support.bigcommerce.com/s/article/Manually-Capturing-Transactions-Author: the address is a docs, help or other page
+S01-BC-128	official page	a captured copy of https://www.commerce.com/terms/: the address is a terms, policy, legal or pricing page

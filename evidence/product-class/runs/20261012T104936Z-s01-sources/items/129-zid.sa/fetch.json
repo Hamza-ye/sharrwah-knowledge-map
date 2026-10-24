@@ -1,0 +1,18 @@
+{
+ "n": 129,
+ "url": "https://zid.sa/en/pricing/",
+ "dir": "items/129-zid.sa",
+ "fetched_at": "2026-10-12T10:51:33Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://zid.sa/en/pricing/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 47652,
+ "cited_in": [
+  "S01-ZD-C282"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "68822741bad3cc2a5993d6d92af3ef09bf354b4d2ff6bcae95c684a76f8b70ea",
+ "raw_ext": "html"
+}

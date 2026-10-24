@@ -1,0 +1,21 @@
+{
+ "n": 34,
+ "url": "https://help.shopify.com/en/manual/international/managed-markets.md",
+ "dir": "items/034-help.shopify.com",
+ "fetched_at": "2026-10-11T06:12:59Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/international/managed-markets.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 1118,
+ "cited_in": [
+  "SH-S-0561",
+  "SH-S-0562",
+  "SH-S-0563",
+  "SH-S-0564"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "95423a15582978b791267455de4720a5ca2c265b4c9542da56ce36c65489bfbe",
+ "raw_ext": "txt"
+}

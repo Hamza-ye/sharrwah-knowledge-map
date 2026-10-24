@@ -1,0 +1,11 @@
+shopify re-pass: statements 3005, gaps 249; concern x placement cells with a statement: 741 of 990
+shopify: inventory 2610, concerns 198, placements 1120, citations 5055, not reached 7 | issues: {'warning': 179, 'review': 93} | quotes: {'found': 5055}
+salla re-pass: statements 2560, gaps 230; concern x placement cells with a statement: 530 of 760
+salla: inventory 2627, concerns 152, placements 740, citations 2982, not reached 96 | issues: {'review': 104} | quotes: {'found': 2982}
+woocommerce re-pass: statements 1499, gaps 182; concern x placement cells with a statement: 408 of 590
+woocommerce: inventory 654, concerns 118, placements 590, citations 1466, not reached 4 | issues: {'review': 2, 'warning': 1} | quotes: {'found': 1466}
+zid re-pass: statements 654, gaps 156; concern x placement cells with a statement: 346 of 480
+zid: inventory 543, concerns 96, placements 0, citations 1087, not reached 4 | issues: {'review': 1} | quotes: {'found': 1087}
+bigcommerce re-pass: statements 473, gaps 161; concern x placement cells with a statement: 286 of 440
+bigcommerce: inventory 569, concerns 88, placements 0, citations 481, not reached 51 | issues: {} | quotes: {'found': 481}
+web sources cited: 761 unique URLs

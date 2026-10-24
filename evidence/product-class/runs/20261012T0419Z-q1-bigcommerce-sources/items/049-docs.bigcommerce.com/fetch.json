@@ -1,0 +1,18 @@
+{
+ "n": 49,
+ "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/wishlists.md",
+ "dir": "items/049-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:20:04Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/wishlists.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 277,
+ "cited_in": [
+  "BC-S-0188"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "bc00a07c6a34027fe2d878bdea6b1a9848306d19f4d3a0bc7903c68bfea3caba",
+ "raw_ext": "txt"
+}

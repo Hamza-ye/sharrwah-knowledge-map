@@ -1,0 +1,204 @@
+# Family P: apps and developer platform; Family Q: needs met by App Store categories
+concern: apps.apps
+software: extension point: apps installed from the Apps area; apps made by Shopify are supported by Shopify, third-party apps by their developers || cites: inv:settings|Apps, inv:admin-navigation|Apps|Main navigation, apps_by_shopify, apps_third_party_support
+decides: merchant: the merchant installs apps and approves their access scopes || cites: scopes_merchant_approves, inv:other:staff-permissions|Apps and channels > Manage and install apps and channels
+decides: operator: Shopify may disable access to any Third Party Service at any time || cites: tos_third_party_disable
+legal: app developer: Third Party Services are between the merchant and the provider; the developer is solely responsible for its application and Shopify is not liable for it || cites: tos_third_party_services, tos_third_party_no_control, api_developer_responsible
+boundary: contract: Terms of Service 9.9 and the Shopify API License and Terms of Use; event: app/uninstalled webhook || cites: inv:legal-agreements|9.9 Third Party Services and Third Party Partners, api_parties, inv:webhook-topics|app/uninstalled
+reason: not shown
+
+concern: apps.app_store
+software: core: the Shopify App Store and the Partner Dashboard's app distribution || cites: inv:other:shopify-com-products|Shopify App StoreLargest commerce ecosystem, inv:other:partner-dashboard|App distribution
+decides: operator: public distribution through the App Store requires Shopify's review; apps must use a Shopify billing solution and meet privacy and protected-data requirements || cites: app_pricing_required, dev_privacy_rejected, dev_pcd_minimum
+decides: other: the app developer chooses public or custom distribution, which cannot be changed later || cites: dev_distribution, dev_distribution_types
+legal: platform company: the Partner Program Agreement is with Shopify Inc. and Shopify Commerce Singapore Pte. Ltd. || cites: ppa_parties
+boundary: contract: Partner Program Agreement and API License and Terms of Use || cites: ppa_parties, api_partner_account
+reason: Shopify App Pricing gives a predictable, trustworthy and standardized experience for app users || cites: app_pricing_reason
+
+concern: apps.scopes
+software: core: access scopes declared by apps and approved by merchants at install || cites: inv:api-resources|Access scopes, scopes_merchant_approves
+decides: merchant: the merchant approves scopes when installing || cites: scopes_merchant_approves
+decides: operator: scopes are granted only to public or custom apps and restricted for apps without a legitimate use || cites: scopes_public_custom_only, scopes_restrict
+legal: app developer: developers may use merchant data only as needed to provide the app || cites: api_data_limits
+boundary: API: access scopes; event: app/scopes_update webhook || cites: inv:api-resources|Access, inv:webhook-topics|app/scopes_update
+reason: not shown
+
+concern: apps.restricted_scopes
+software: core: scopes marked "Shopify approval required" || cites: scopes_approval_required, inv:access-scopes|read_all_orders
+decides: operator: Shopify must approve the app for the scope before it can be declared || cites: scopes_approval_required
+legal: not shown
+boundary: API: approval-gated scopes such as read_all_orders and Shopify Payments scopes || cites: inv:access-scopes|read_all_orders, inv:access-scopes|read_shopify_payments_provider_accounts_sensitive
+reason: not shown
+
+concern: apps.protected_customer_data
+software: core: protected customer data levels and fields, requested in the Partner Dashboard || cites: inv:access-scopes|Protected customer data permissions, dev_pcd_minimum
+decides: operator: Shopify approves access only for the minimum data the app needs || cites: dev_pcd_minimum
+legal: app developer: developers are bound by the Partner Program Agreement and API terms whatever API version they use, and must keep a privacy policy || cites: dev_pcd_legally_bound, api_developer_privacy_policy
+boundary: other: request and review in the Partner Dashboard || cites: dev_pcd_minimum
+reason: not shown
+
+concern: apps.compliance_webhooks
+software: core: mandatory compliance webhooks for data subject requests || cites: inv:webhook-topics|customers/data_request, inv:webhook-topics|customers/redact, inv:webhook-topics|shop/redact
+decides: operator: App Store apps must respond to data subject requests, with the same privacy rights for all personal data wherever the person is; apps without them are rejected || cites: dev_privacy_webhooks, dev_privacy_standard, dev_privacy_rejected
+legal: app developer: developers delete merchant data within 30 days of uninstall || cites: api_delete_30_days
+boundary: event: customers/data_request, customers/redact and shop/redact || cites: inv:webhook-topics|customers/redact
+reason: a standardized approach to privacy rights for apps || cites: dev_privacy_standard
+
+concern: apps.webhooks
+software: core: webhook topics apps subscribe to for near-real-time events || cites: dev_webhooks, inv:api-resources|Webhooks
+decides: other: the app developer chooses topics, filters and delivery endpoints || cites: dev_webhooks
+legal: not shown
+boundary: event: webhook topics, HMAC-signed, versioned like the API || cites: dev_webhooks_hmac, inv:webhook-topics|app/uninstalled
+reason: not shown
+
+concern: apps.functions
+software: extension point: Shopify Functions inject code into Shopify's backend logic, compiled to WebAssembly and run by Shopify || cites: dev_fn_backend, dev_fn_wasm, dev_fn_shopify_executes, inv:api-resources|Shopify Functions
+decides: operator, per plan: any plan can use public App Store apps with functions; custom apps with functions need Shopify Plus || cites: dev_fn_plus_custom, inv:plan-features|Personalize store with custom functions|Public pricing
+decides: merchant: the merchant installs and configures the function || cites: dev_fn_shopify_executes
+legal: app developer: functions ship in apps || cites: dev_fn_shopify_executes
+boundary: API: Function APIs (versioned) with defined targets, inputs and outputs || cites: inv:api-resources|Shopify Functions, dev_versioning_quarterly
+reason: not shown
+
+concern: apps.admin_ui_ext
+software: extension point: admin UI extensions (actions, blocks, print) and App Home || cites: dev_admin_ext, inv:extension-points|App home (app_home)
+decides: merchant: the merchant installs apps that extend the admin || cites: dev_admin_ext
+legal: app developer: built by app developers || cites: dev_admin_ext
+boundary: extension point: admin extension targets; API: Polaris || cites: inv:api-resources|Polaris references, inv:extension-points|App home (app_home)
+reason: not shown
+
+concern: apps.customer_account_ui_ext
+software: extension point: customer account UI extensions, only on the new customer accounts || cites: dev_ca_ext, inv:extension-points|Customer account UI (customer_account_ui)
+decides: merchant: the merchant installs apps with these extensions || cites: dev_ca_ext
+legal: app developer: built by app developers || cites: dev_ca_ext
+boundary: extension point: customer account targets || cites: inv:api-resources|Customer accounts
+reason: not shown
+
+concern: apps.theme_app_ext
+software: extension point: theme app extensions (app blocks, app embeds) and app proxies || cites: dev_tae, inv:extension-points|Theme app extension (theme_app_extension), inv:access-scopes|write_app_proxy
+decides: merchant: the merchant adds app blocks in the theme editor without editing code || cites: dev_tae
+legal: app developer: built by app developers || cites: dev_tae
+boundary: extension point: app blocks and app embeds; API: app proxy scopes || cites: inv:access-scopes|read_app_proxy
+reason: not shown
+
+concern: apps.custom_apps
+software: core: app development from the admin (Develop apps), with an App developer role || cites: inv:admin-navigation|AdminDev, inv:other:staff-roles|App developer
+decides: merchant: staff with app development permissions build custom apps || cites: inv:other:staff-permissions|App development > Develop
+decides: operator, per plan: custom apps with Shopify APIs are a plan row || cites: inv:plan-features|Build custom apps using Shopify APIs|Public pricing
+legal: not shown
+boundary: API: Shopify APIs with scopes assigned in the admin || cites: inv:plan-features|Build custom apps using Shopify APIs|Public pricing
+reason: not shown
+
+concern: apps.partner_program
+software: core: the Partner Dashboard and Partner API || cites: inv:api-resources|Partner API, inv:other:account-destinations|Shopify Partners
+decides: operator: developers obtain API clients by registering a Partner Account and agreeing to the Partner Program Agreement || cites: api_partner_account
+legal: platform company: Shopify Inc. and Shopify Commerce Singapore Pte. Ltd. are the parties to the Partner Program Agreement || cites: ppa_parties
+legal: app developer: partners warrant they are not in an Unsupported Region || cites: ppa_sanctions_warranty, ppa_unsupported_region
+boundary: contract: Partner Program Agreement, API License and Terms of Use, App Events API terms || cites: inv:legal-agreements|View partner terms, inv:legal-agreements|View App Events API terms
+reason: not shown
+
+concern: apps.partner_payouts
+software: core: payouts and financials in the Partner Dashboard || cites: inv:other:partner-dashboard|Payouts, inv:other:partner-permissions|View financials
+decides: operator: Shopify pays Partners twice per calendar month and may set off or withhold payments, including during fraud, risk and anti-money laundering reviews || cites: ppa_payout_period, ppa_setoff, ppa_withhold_aml
+legal: platform company: Shopify collects charges from merchants and pays out the developer's share || cites: app_pricing_collect, ppa_revenue_share
+boundary: contract: Partner Program Agreement (payments and revenue share) || cites: ppa_payout_period, ppa_revenue_share
+reason: not shown
+
+concern: apps.partner_services
+software: outside platform: services that partners and experts provide to merchants || cites: inv:other:billing-charge-categories|Expert services fees, inv:other:billing-charge-categories|Professional services fees
+decides: merchant: the merchant hires the partner || cites: ppa_vap_merchant_agreement
+legal: other: the Partner, who is responsible for its services and for having a Merchant Agreement in place || cites: ppa_vap_responsible, ppa_vap_merchant_agreement
+boundary: contract: Merchant Agreement between Partner and merchant; other: expert and professional services fees on the Shopify bill || cites: ppa_vap_merchant_agreement, inv:other:billing-charge-categories|Expert services fees
+reason: not shown
+
+concern: apps.api_platform
+software: core: API conventions (versioning, rate limits, bulk operations) || cites: inv:api-resources|Versioning, inv:api-resources|Bulk operations, dev_limits_stability
+decides: platform at build: quarterly API versions; unversioned APIs may change at any time; Shopify may temporarily reduce rate limits || cites: dev_versioning_quarterly, dev_versioning_unversioned, dev_limits_reduce
+decides: operator, per plan: rate limit buckets depend on the plan; Plus has higher API limits || cites: dev_limits_plan, inv:plan-features|Up to 500% higher API call limits|Public pricing
+legal: platform company: Shopify owns the platform and sets limits on merchant data use || cites: api_owns_platform
+boundary: API: GraphQL Admin API conventions; event: bulk_operations/finish || cites: inv:webhook-topics|bulk_operations/finish
+reason: rate limits keep the platform stable and fair for everyone || cites: dev_limits_stability
+
+concern: ext.sourcing
+software: outside platform: sourcing, dropshipping and print-on-demand apps in the App Store || cites: inv:other:app-store-categories|Dropshipping apps, inv:other:app-store-categories|Finding products apps
+decides: merchant: the merchant installs the apps || cites: scopes_merchant_approves
+legal: app developer: third-party services between the merchant and the provider; the merchant remains responsible for its products || cites: tos_third_party_services, tos_merchant_store
+boundary: contract: Terms of Service 9.9 Third Party Services; other: Help Center dropshipping guidance || cites: inv:legal-agreements|9.9 Third Party Services and Third Party Partners, inv:other:help-center-sections|Dropshipping
+reason: not shown
+
+concern: ext.subscriptions
+software: core: selling plan and subscription contract APIs; extension point: subscription apps build the experience || cites: subs_apps, subs_contract, inv:api-resources|subscriptionContractActivate, inv:other:app-store-categories|Subscription apps
+decides: operator: selling subscriptions requires Shopify Payments as the primary payment gateway; on POS too || cites: pay_subscriptions_sp, subs_pos_sp
+decides: merchant: the merchant installs a subscription app and offers selling plans || cites: subs_apps
+legal: merchant: the subscription contract is between the customer and the merchant || cites: subs_contract
+boundary: API: purchase option scopes; event: selling plan and subscription contract webhooks || cites: inv:access-scopes|write_purchase_options, inv:webhook-topics|selling_plan_groups/create
+reason: not shown
+
+concern: ext.loyalty
+software: outside platform: loyalty, rewards, wishlist and donation apps || cites: inv:other:app-store-categories|Customer loyalty apps, inv:other:app-store-categories|Donation apps
+decides: merchant: the merchant installs the apps || cites: scopes_merchant_approves
+legal: app developer: third-party services between the merchant and the provider || cites: tos_third_party_services
+boundary: contract: Terms of Service 9.9 Third Party Services || cites: inv:legal-agreements|9.9 Third Party Services and Third Party Partners
+reason: not shown
+
+concern: ext.upsell_bundles
+software: outside platform: upsell, bundle and pre-order apps; extension point: product configuration extensions || cites: inv:other:app-store-categories|Upsell and bundle apps, inv:extension-points|Product configuration (product_configuration)
+decides: merchant: the merchant installs the apps || cites: scopes_merchant_approves
+legal: app developer: third-party services between the merchant and the provider || cites: tos_third_party_services
+boundary: extension point: product configuration; API: bundles scope || cites: inv:extension-points|Product configuration (product_configuration), inv:access-scopes|unauthenticated_read_bundles
+reason: not shown
+
+concern: ext.product_options
+software: outside platform: custom product and product option apps || cites: inv:other:app-store-categories|Custom product apps
+decides: merchant: the merchant installs the apps || cites: scopes_merchant_approves
+legal: app developer: third-party services between the merchant and the provider || cites: tos_third_party_services
+boundary: contract: Terms of Service 9.9 Third Party Services || cites: inv:legal-agreements|9.9 Third Party Services and Third Party Partners
+reason: not shown
+
+concern: ext.digital_goods
+software: outside platform: digital goods, event and token-gating apps; a Blockchain section exists in the admin router || cites: inv:other:app-store-categories|Digital goods and service apps, inv:admin-navigation|Blockchain
+decides: merchant: the merchant installs the apps || cites: scopes_merchant_approves
+legal: app developer: third-party services between the merchant and the provider || cites: tos_third_party_services
+boundary: contract: Terms of Service 9.9 Third Party Services || cites: inv:legal-agreements|9.9 Third Party Services and Third Party Partners
+reason: not shown
+
+concern: ext.accounting
+software: outside platform: accounting and ERP apps || cites: inv:other:app-store-categories|Accounting apps, inv:other:app-store-categories|ERP apps
+decides: merchant: the merchant installs the apps || cites: scopes_merchant_approves
+legal: app developer: third-party services between the merchant and the provider || cites: tos_third_party_services
+boundary: contract: Terms of Service 9.9 Third Party Services || cites: inv:legal-agreements|9.9 Third Party Services and Third Party Partners
+reason: not shown
+
+concern: ext.support_helpdesk
+software: outside platform: helpdesk, chat and FAQ apps || cites: inv:other:app-store-categories|Support apps, inv:other:app-store-categories|FAQ apps
+decides: merchant: the merchant installs the apps || cites: scopes_merchant_approves
+legal: app developer: third-party services between the merchant and the provider || cites: tos_third_party_services
+boundary: contract: Terms of Service 9.9 Third Party Services || cites: inv:legal-agreements|9.9 Third Party Services and Third Party Partners
+reason: not shown
+
+concern: ext.store_design
+software: outside platform: page builder, content, media, pop-up and SEO apps || cites: inv:other:app-store-categories|Store design apps
+decides: merchant: the merchant installs the apps || cites: scopes_merchant_approves
+legal: app developer: third-party services between the merchant and the provider || cites: tos_third_party_services
+boundary: extension point: theme app extensions || cites: dev_tae
+reason: not shown
+
+concern: ext.advertising
+software: outside platform: advertising and affiliate apps || cites: inv:other:app-store-categories|Advertising apps
+decides: merchant: the merchant installs the apps || cites: scopes_merchant_approves
+legal: app developer: third-party services between the merchant and the provider || cites: tos_third_party_services
+boundary: contract: Terms of Service 9.9 Third Party Services || cites: inv:legal-agreements|9.9 Third Party Services and Third Party Partners
+reason: not shown
+
+concern: ext.mobile_app
+software: outside platform: mobile app builder apps, with mobile platform application scopes || cites: inv:other:app-store-categories|Mobile app builder apps, inv:access-scopes|read_mobile_platform_applications
+decides: merchant: the merchant installs the apps || cites: scopes_merchant_approves
+legal: app developer: third-party services between the merchant and the provider || cites: tos_third_party_services
+boundary: API: mobile platform application scopes || cites: inv:access-scopes|write_mobile_platform_applications
+reason: not shown
+
+concern: ext.security_legal
+software: outside platform: security, anti-theft and legal apps || cites: inv:other:app-store-categories|Security apps, inv:other:app-store-categories|Legal apps
+decides: merchant: the merchant installs the apps || cites: scopes_merchant_approves
+legal: app developer: third-party services between the merchant and the provider || cites: tos_third_party_services
+boundary: contract: Terms of Service 9.9 Third Party Services || cites: inv:legal-agreements|9.9 Third Party Services and Third Party Partners
+reason: not shown

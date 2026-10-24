@@ -1,0 +1,27 @@
+{
+ "n": 72,
+ "url": "https://docs.zid.sa/zid-apps-overview.md",
+ "dir": "items/072-docs.zid.sa",
+ "fetched_at": "2026-10-12T04:52:10Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.zid.sa/zid-apps-overview.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 4427,
+ "cited_in": [
+  "ZD-S-0523",
+  "ZD-S-0524",
+  "ZD-S-0525",
+  "ZD-S-0526",
+  "ZD-S-0846",
+  "ZD-S-0847",
+  "ZD-S-0862",
+  "ZD-S-0863",
+  "ZD-S-0889",
+  "ZD-S-0893"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "bd1fcd29690769c9d77571f294695bd3d38fa85ac5b85dc914c445d3cb313d13",
+ "raw_ext": "txt"
+}

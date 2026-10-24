@@ -1,0 +1,18 @@
+{
+ "n": 1,
+ "url": "https://kb.mailpoet.com/article/154-why-you-shouldnt-send-with-your-host",
+ "dir": "items/001-kb.mailpoet.com",
+ "fetched_at": "2026-10-11T09:07:49Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://kb.mailpoet.com/article/154-why-you-shouldnt-send-with-your-host",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 21111,
+ "cited_in": [
+  "WC-S-5503"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "7eb3e4b05b01513f5758d442e7d853e237c0c061f7586d8f8711727ca9f4eed5",
+ "raw_ext": "html"
+}

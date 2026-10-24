@@ -1,0 +1,1936 @@
+[
+{
+"n": 1,
+"url": "https://help.shopify.com/en/manual/ai-powered-tools/sidekick.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0736",
+"SH-S-0737"
+]
+},
+{
+"n": 2,
+"url": "https://help.shopify.com/en/manual/apps/apps-by-shopify.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0738",
+"SH-S-0739"
+]
+},
+{
+"n": 3,
+"url": "https://help.shopify.com/en/manual/b2b/getting-started.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0740"
+]
+},
+{
+"n": 4,
+"url": "https://help.shopify.com/en/manual/checkout-settings/bot-protection.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0744",
+"SH-S-0745",
+"SH-S-0746"
+]
+},
+{
+"n": 5,
+"url": "https://help.shopify.com/en/manual/compliance/legal.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0667",
+"SH-S-0668"
+]
+},
+{
+"n": 6,
+"url": "https://help.shopify.com/en/manual/compliance/legal/consumer-protection.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0669"
+]
+},
+{
+"n": 7,
+"url": "https://help.shopify.com/en/manual/compliance/legal/handling-store-termination.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0658",
+"SH-S-0659",
+"SH-S-0660",
+"SH-S-0661"
+]
+},
+{
+"n": 8,
+"url": "https://help.shopify.com/en/manual/customers/customer-accounts.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0741",
+"SH-S-0742",
+"SH-S-0743"
+]
+},
+{
+"n": 9,
+"url": "https://help.shopify.com/en/manual/finance.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0454",
+"SH-S-0455",
+"SH-S-0456",
+"SH-S-0457"
+]
+},
+{
+"n": 10,
+"url": "https://help.shopify.com/en/manual/finance/shopify-balance.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0458",
+"SH-S-0459"
+]
+},
+{
+"n": 11,
+"url": "https://help.shopify.com/en/manual/finance/shopify-balance/eligibility.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0460",
+"SH-S-0461",
+"SH-S-0462",
+"SH-S-0463",
+"SH-S-0464",
+"SH-S-0465",
+"SH-S-0466"
+]
+},
+{
+"n": 12,
+"url": "https://help.shopify.com/en/manual/finance/shopify-bill-pay.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0498",
+"SH-S-0499",
+"SH-S-0500",
+"SH-S-0501"
+]
+},
+{
+"n": 13,
+"url": "https://help.shopify.com/en/manual/finance/shopify-capital.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0471",
+"SH-S-0472",
+"SH-S-0473"
+]
+},
+{
+"n": 14,
+"url": "https://help.shopify.com/en/manual/finance/shopify-capital/australia.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0489"
+]
+},
+{
+"n": 15,
+"url": "https://help.shopify.com/en/manual/finance/shopify-capital/canada.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0487",
+"SH-S-0488"
+]
+},
+{
+"n": 16,
+"url": "https://help.shopify.com/en/manual/finance/shopify-capital/eligibility.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0474",
+"SH-S-0475",
+"SH-S-0476",
+"SH-S-0477",
+"SH-S-0478",
+"SH-S-0479",
+"SH-S-0480"
+]
+},
+{
+"n": 17,
+"url": "https://help.shopify.com/en/manual/finance/shopify-capital/france.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0490",
+"SH-S-0491"
+]
+},
+{
+"n": 18,
+"url": "https://help.shopify.com/en/manual/finance/shopify-capital/germany.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0492",
+"SH-S-0493"
+]
+},
+{
+"n": 19,
+"url": "https://help.shopify.com/en/manual/finance/shopify-capital/ireland.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0494",
+"SH-S-0497"
+]
+},
+{
+"n": 20,
+"url": "https://help.shopify.com/en/manual/finance/shopify-capital/netherlands.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0495"
+]
+},
+{
+"n": 21,
+"url": "https://help.shopify.com/en/manual/finance/shopify-capital/spain.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0496"
+]
+},
+{
+"n": 22,
+"url": "https://help.shopify.com/en/manual/finance/shopify-capital/united-kingdom.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0484",
+"SH-S-0485",
+"SH-S-0486"
+]
+},
+{
+"n": 23,
+"url": "https://help.shopify.com/en/manual/finance/shopify-capital/united-states.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0481",
+"SH-S-0482",
+"SH-S-0483"
+]
+},
+{
+"n": 24,
+"url": "https://help.shopify.com/en/manual/finance/shopify-credit.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0467",
+"SH-S-0468",
+"SH-S-0469"
+]
+},
+{
+"n": 25,
+"url": "https://help.shopify.com/en/manual/finance/shopify-credit/getting-started.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0470"
+]
+},
+{
+"n": 26,
+"url": "https://help.shopify.com/en/manual/fulfillment/fulfilling-orders/shipping-labels.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0717",
+"SH-S-0718",
+"SH-S-0719"
+]
+},
+{
+"n": 27,
+"url": "https://help.shopify.com/en/manual/fulfillment/fulfilling-orders/shipping-labels/shipping-insurance.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0720",
+"SH-S-0721",
+"SH-S-0722"
+]
+},
+{
+"n": 28,
+"url": "https://help.shopify.com/en/manual/fulfillment/managing-orders/protecting-orders/fraud-analysis.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0747",
+"SH-S-0748",
+"SH-S-0749",
+"SH-S-0750"
+]
+},
+{
+"n": 29,
+"url": "https://help.shopify.com/en/manual/fulfillment/managing-orders/protecting-orders/shopify-flow.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0752",
+"SH-S-0753"
+]
+},
+{
+"n": 30,
+"url": "https://help.shopify.com/en/manual/fulfillment/setup/order-routing.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0751"
+]
+},
+{
+"n": 31,
+"url": "https://help.shopify.com/en/manual/fulfillment/shopify-fulfillment-network.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0715",
+"SH-S-0716"
+]
+},
+{
+"n": 32,
+"url": "https://help.shopify.com/en/manual/international.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0542"
+]
+},
+{
+"n": 33,
+"url": "https://help.shopify.com/en/manual/international/duties-and-import-taxes.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0537",
+"SH-S-0538"
+]
+},
+{
+"n": 34,
+"url": "https://help.shopify.com/en/manual/international/managed-markets.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0561",
+"SH-S-0562",
+"SH-S-0563",
+"SH-S-0564"
+]
+},
+{
+"n": 35,
+"url": "https://help.shopify.com/en/manual/international/managed-markets/overview.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0565",
+"SH-S-0566",
+"SH-S-0567",
+"SH-S-0568",
+"SH-S-0569",
+"SH-S-0570",
+"SH-S-0571",
+"SH-S-0572",
+"SH-S-0634"
+]
+},
+{
+"n": 36,
+"url": "https://help.shopify.com/en/manual/international/payments.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0545",
+"SH-S-0546",
+"SH-S-0547"
+]
+},
+{
+"n": 37,
+"url": "https://help.shopify.com/en/manual/international/pricing.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0543",
+"SH-S-0544"
+]
+},
+{
+"n": 38,
+"url": "https://help.shopify.com/en/manual/international/pricing/exchange-rates.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0548",
+"SH-S-0549",
+"SH-S-0550",
+"SH-S-0551"
+]
+},
+{
+"n": 39,
+"url": "https://help.shopify.com/en/manual/international/pricing/fees.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0552",
+"SH-S-0553",
+"SH-S-0554",
+"SH-S-0555",
+"SH-S-0556",
+"SH-S-0557",
+"SH-S-0558",
+"SH-S-0559",
+"SH-S-0560"
+]
+},
+{
+"n": 40,
+"url": "https://help.shopify.com/en/manual/markets.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0540",
+"SH-S-0541"
+]
+},
+{
+"n": 41,
+"url": "https://help.shopify.com/en/manual/markets/backup-region.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0573",
+"SH-S-0574",
+"SH-S-0575"
+]
+},
+{
+"n": 42,
+"url": "https://help.shopify.com/en/manual/markets/rollouts.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0576"
+]
+},
+{
+"n": 43,
+"url": "https://help.shopify.com/en/manual/online-sales-channels/marketplaces/marketplace-connect.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0727",
+"SH-S-0728"
+]
+},
+{
+"n": 44,
+"url": "https://help.shopify.com/en/manual/online-sales-channels/shop.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0723",
+"SH-S-0724",
+"SH-S-0725"
+]
+},
+{
+"n": 45,
+"url": "https://help.shopify.com/en/manual/online-sales-channels/shop/shop-campaigns.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0726"
+]
+},
+{
+"n": 46,
+"url": "https://help.shopify.com/en/manual/online-sales-channels/shopify-collective.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0729",
+"SH-S-0730"
+]
+},
+{
+"n": 47,
+"url": "https://help.shopify.com/en/manual/payments.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0319",
+"SH-S-0764"
+]
+},
+{
+"n": 48,
+"url": "https://help.shopify.com/en/manual/payments/accelerated-checkouts.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0419"
+]
+},
+{
+"n": 49,
+"url": "https://help.shopify.com/en/manual/payments/additional-payment-methods/cryptocurrency.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0426",
+"SH-S-0427",
+"SH-S-0428",
+"SH-S-0429"
+]
+},
+{
+"n": 50,
+"url": "https://help.shopify.com/en/manual/payments/chargebacks.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0395",
+"SH-S-0396",
+"SH-S-0397",
+"SH-S-0398",
+"SH-S-0399"
+]
+},
+{
+"n": 51,
+"url": "https://help.shopify.com/en/manual/payments/getting-paid.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0308",
+"SH-S-0309",
+"SH-S-0310",
+"SH-S-0311",
+"SH-S-0312",
+"SH-S-0313",
+"SH-S-0314",
+"SH-S-0315",
+"SH-S-0316",
+"SH-S-0317",
+"SH-S-0318"
+]
+},
+{
+"n": 52,
+"url": "https://help.shopify.com/en/manual/payments/manual-payments.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0385",
+"SH-S-0386",
+"SH-S-0387",
+"SH-S-0388",
+"SH-S-0583"
+]
+},
+{
+"n": 53,
+"url": "https://help.shopify.com/en/manual/payments/payment-authorization.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0389",
+"SH-S-0390",
+"SH-S-0391",
+"SH-S-0392",
+"SH-S-0393",
+"SH-S-0394",
+"SH-S-0577"
+]
+},
+{
+"n": 54,
+"url": "https://help.shopify.com/en/manual/payments/paypal.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0416",
+"SH-S-0417",
+"SH-S-0418"
+]
+},
+{
+"n": 55,
+"url": "https://help.shopify.com/en/manual/payments/shop-cash.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0437",
+"SH-S-0438",
+"SH-S-0439"
+]
+},
+{
+"n": 56,
+"url": "https://help.shopify.com/en/manual/payments/shop-pay-installments.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0414",
+"SH-S-0415",
+"SH-S-0580"
+]
+},
+{
+"n": 57,
+"url": "https://help.shopify.com/en/manual/payments/shop-pay.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0406",
+"SH-S-0407"
+]
+},
+{
+"n": 58,
+"url": "https://help.shopify.com/en/manual/payments/shop-pay/shopify-protect.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0400"
+]
+},
+{
+"n": 59,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0260",
+"SH-S-0261",
+"SH-S-0320",
+"SH-S-0321",
+"SH-S-0322"
+]
+},
+{
+"n": 60,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/local-payment-methods.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0420",
+"SH-S-0421",
+"SH-S-0422",
+"SH-S-0423",
+"SH-S-0582"
+]
+},
+{
+"n": 61,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/managed-payment-methods.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0424",
+"SH-S-0425",
+"SH-S-0581"
+]
+},
+{
+"n": 62,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/acceptable-business-practices.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0331",
+"SH-S-0332",
+"SH-S-0333",
+"SH-S-0334",
+"SH-S-0335",
+"SH-S-0336",
+"SH-S-0337",
+"SH-S-0338"
+]
+},
+{
+"n": 63,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/account-setup.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0369",
+"SH-S-0370",
+"SH-S-0671"
+]
+},
+{
+"n": 64,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/bank-account-requirements.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0367",
+"SH-S-0368"
+]
+},
+{
+"n": 65,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/eligibility.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0325",
+"SH-S-0326",
+"SH-S-0327",
+"SH-S-0328",
+"SH-S-0329",
+"SH-S-0330"
+]
+},
+{
+"n": 66,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/selling-with-multiple-entities.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0253",
+"SH-S-0254",
+"SH-S-0255",
+"SH-S-0256",
+"SH-S-0257",
+"SH-S-0258",
+"SH-S-0259"
+]
+},
+{
+"n": 67,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/payouts.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0339"
+]
+},
+{
+"n": 68,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/payouts/account-holds.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0353",
+"SH-S-0354",
+"SH-S-0355",
+"SH-S-0356",
+"SH-S-0357",
+"SH-S-0358",
+"SH-S-0359",
+"SH-S-0360"
+]
+},
+{
+"n": 69,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/payouts/payout-timing.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0340",
+"SH-S-0341",
+"SH-S-0342",
+"SH-S-0343",
+"SH-S-0344",
+"SH-S-0345",
+"SH-S-0346",
+"SH-S-0347",
+"SH-S-0578"
+]
+},
+{
+"n": 70,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/payouts/reserves.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0348",
+"SH-S-0349",
+"SH-S-0350",
+"SH-S-0351",
+"SH-S-0352",
+"SH-S-0579"
+]
+},
+{
+"n": 71,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/store-currency/currency-conversion-calculation.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0363",
+"SH-S-0364"
+]
+},
+{
+"n": 72,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/store-currency/multi-currency.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0366"
+]
+},
+{
+"n": 73,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/store-currency/payouts-in-multiple-currencies.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0365"
+]
+},
+{
+"n": 74,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/store-currency/understanding-store-and-payout-currencies.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0361",
+"SH-S-0362"
+]
+},
+{
+"n": 75,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/supported-countries.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0323",
+"SH-S-0324"
+]
+},
+{
+"n": 76,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/supported-countries/united-states/tax-reporting.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0502",
+"SH-S-0503",
+"SH-S-0504",
+"SH-S-0505"
+]
+},
+{
+"n": 77,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/using-shopify-payments-with-a-third-party-provider.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0375",
+"SH-S-0376",
+"SH-S-0377",
+"SH-S-0378",
+"SH-S-0379",
+"SH-S-0380",
+"SH-S-0381"
+]
+},
+{
+"n": 78,
+"url": "https://help.shopify.com/en/manual/payments/third-party-providers.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0371",
+"SH-S-0372",
+"SH-S-0373",
+"SH-S-0374"
+]
+},
+{
+"n": 79,
+"url": "https://help.shopify.com/en/manual/payments/third-party-providers/payment-gateway-availability.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0382",
+"SH-S-0383",
+"SH-S-0384",
+"SH-S-0584"
+]
+},
+{
+"n": 80,
+"url": "https://help.shopify.com/en/manual/privacy-and-security/privacy/customer-privacy-settings.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0662"
+]
+},
+{
+"n": 81,
+"url": "https://help.shopify.com/en/manual/privacy-and-security/privacy/international-data-transfers/configuration-options.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0646",
+"SH-S-0647"
+]
+},
+{
+"n": 82,
+"url": "https://help.shopify.com/en/manual/privacy-and-security/privacy/international-data-transfers/contracting-entities.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0241",
+"SH-S-0242",
+"SH-S-0243",
+"SH-S-0244"
+]
+},
+{
+"n": 83,
+"url": "https://help.shopify.com/en/manual/privacy-and-security/privacy/international-data-transfers/onward-transfers.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0636",
+"SH-S-0637",
+"SH-S-0638",
+"SH-S-0639",
+"SH-S-0640",
+"SH-S-0641",
+"SH-S-0642",
+"SH-S-0643",
+"SH-S-0644",
+"SH-S-0645"
+]
+},
+{
+"n": 84,
+"url": "https://help.shopify.com/en/manual/privacy-and-security/privacy/processing-customer-data-requests.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0663",
+"SH-S-0664",
+"SH-S-0665",
+"SH-S-0666"
+]
+},
+{
+"n": 85,
+"url": "https://help.shopify.com/en/manual/promoting-marketing/collabs.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0731",
+"SH-S-0732"
+]
+},
+{
+"n": 86,
+"url": "https://help.shopify.com/en/manual/promoting-marketing/shopify-audiences.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0733",
+"SH-S-0734",
+"SH-S-0735"
+]
+},
+{
+"n": 87,
+"url": "https://help.shopify.com/en/manual/sell-in-person/getting-started/setup-payment-method/shopify-payments-pos.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0435",
+"SH-S-0436"
+]
+},
+{
+"n": 88,
+"url": "https://help.shopify.com/en/manual/sell-in-person/shopify-pos/selling-offline/offline-payments.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0585",
+"SH-S-0586",
+"SH-S-0587",
+"SH-S-0588"
+]
+},
+{
+"n": 89,
+"url": "https://help.shopify.com/en/manual/taxes.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0506",
+"SH-S-0507",
+"SH-S-0508",
+"SH-S-0509",
+"SH-S-0510",
+"SH-S-0511",
+"SH-S-0512",
+"SH-S-0520"
+]
+},
+{
+"n": 90,
+"url": "https://help.shopify.com/en/manual/taxes/manual-tax-settings.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0534"
+]
+},
+{
+"n": 91,
+"url": "https://help.shopify.com/en/manual/taxes/registration.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0533"
+]
+},
+{
+"n": 92,
+"url": "https://help.shopify.com/en/manual/taxes/shopify-tax.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0513"
+]
+},
+{
+"n": 93,
+"url": "https://help.shopify.com/en/manual/taxes/shopify-tax/automated-filing.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0524"
+]
+},
+{
+"n": 94,
+"url": "https://help.shopify.com/en/manual/taxes/shopify-tax/automated-filing/considerations.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0521",
+"SH-S-0522",
+"SH-S-0523",
+"SH-S-0527"
+]
+},
+{
+"n": 95,
+"url": "https://help.shopify.com/en/manual/taxes/shopify-tax/automated-filing/filing-partners.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0525",
+"SH-S-0526"
+]
+},
+{
+"n": 96,
+"url": "https://help.shopify.com/en/manual/taxes/shopify-tax/considerations.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0514",
+"SH-S-0515",
+"SH-S-0516"
+]
+},
+{
+"n": 97,
+"url": "https://help.shopify.com/en/manual/taxes/shopify-tax/pricing.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0517",
+"SH-S-0518",
+"SH-S-0519"
+]
+},
+{
+"n": 98,
+"url": "https://help.shopify.com/en/manual/taxes/shopify-tax/vat-validate.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0535",
+"SH-S-0536",
+"SH-S-0633",
+"SH-S-0670"
+]
+},
+{
+"n": 99,
+"url": "https://help.shopify.com/en/manual/taxes/tax-apps.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0528",
+"SH-S-0529",
+"SH-S-0530",
+"SH-S-0531",
+"SH-S-0532",
+"SH-S-0635"
+]
+},
+{
+"n": 100,
+"url": "https://help.shopify.com/en/manual/your-account/business-entities.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0248",
+"SH-S-0249",
+"SH-S-0250",
+"SH-S-0251",
+"SH-S-0252"
+]
+},
+{
+"n": 101,
+"url": "https://help.shopify.com/en/manual/your-account/legal/unsupported-countries-and-regions.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0298",
+"SH-S-0299",
+"SH-S-0300",
+"SH-S-0301",
+"SH-S-0302",
+"SH-S-0303",
+"SH-S-0304",
+"SH-S-0305",
+"SH-S-0306",
+"SH-S-0307"
+]
+},
+{
+"n": 102,
+"url": "https://help.shopify.com/en/manual/your-account/logging-in/identity-verification.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0262",
+"SH-S-0263",
+"SH-S-0264",
+"SH-S-0265"
+]
+},
+{
+"n": 103,
+"url": "https://help.shopify.com/en/manual/your-account/manage-billing/billing-charges/types-of-charges/taxes/billing-taxes-saudi-arabia-uae.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0277",
+"SH-S-0278",
+"SH-S-0279"
+]
+},
+{
+"n": 104,
+"url": "https://help.shopify.com/en/manual/your-account/manage-billing/billing-charges/types-of-charges/third-party-charges/app-charges.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0269",
+"SH-S-0270",
+"SH-S-0271"
+]
+},
+{
+"n": 105,
+"url": "https://help.shopify.com/en/manual/your-account/manage-billing/billing-charges/types-of-charges/third-party-charges/third-party-transaction-fees.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0272",
+"SH-S-0273",
+"SH-S-0274",
+"SH-S-0275",
+"SH-S-0276"
+]
+},
+{
+"n": 106,
+"url": "https://help.shopify.com/en/manual/your-account/manage-billing/paying-your-bills/managing-payments/local-currency.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0266",
+"SH-S-0267",
+"SH-S-0268"
+]
+},
+{
+"n": 107,
+"url": "https://help.shopify.com/en/manual/your-account/privacy/subprocessors.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0194",
+"SH-S-0195",
+"SH-S-0196",
+"SH-S-0197",
+"SH-S-0198",
+"SH-S-0199",
+"SH-S-0200",
+"SH-S-0201",
+"SH-S-0202",
+"SH-S-0203",
+"SH-S-0204",
+"SH-S-0205",
+"SH-S-0206"
+]
+},
+{
+"n": 108,
+"url": "https://shopify.dev/docs/agents.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0714"
+]
+},
+{
+"n": 109,
+"url": "https://shopify.dev/docs/api/functions/latest/payment-customization.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0589",
+"SH-S-0590",
+"SH-S-0591"
+]
+},
+{
+"n": 110,
+"url": "https://shopify.dev/docs/api/usage/access-scopes.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0754",
+"SH-S-0755",
+"SH-S-0756",
+"SH-S-0757",
+"SH-S-1114",
+"SH-S-1115",
+"SH-S-1116",
+"SH-S-1117",
+"SH-S-1118",
+"SH-S-1119",
+"SH-S-1120",
+"SH-S-1121",
+"SH-S-1122",
+"SH-S-1123",
+"SH-S-1124",
+"SH-S-1125",
+"SH-S-1126",
+"SH-S-1127",
+"SH-S-1128",
+"SH-S-1129",
+"SH-S-1130",
+"SH-S-1131",
+"SH-S-1132",
+"SH-S-1133",
+"SH-S-1134",
+"SH-S-1135",
+"SH-S-1136",
+"SH-S-1137",
+"SH-S-1138",
+"SH-S-1139",
+"SH-S-1140",
+"SH-S-1141",
+"SH-S-1142",
+"SH-S-1143",
+"SH-S-1144",
+"SH-S-1145",
+"SH-S-1146",
+"SH-S-1147",
+"SH-S-1148",
+"SH-S-1149",
+"SH-S-1150",
+"SH-S-1151",
+"SH-S-3187",
+"SH-S-3188",
+"SH-S-3189",
+"SH-S-3190",
+"SH-S-3191",
+"SH-S-3192"
+]
+},
+{
+"n": 111,
+"url": "https://shopify.dev/docs/api/usage/limits.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0687",
+"SH-S-0688",
+"SH-S-0689"
+]
+},
+{
+"n": 112,
+"url": "https://shopify.dev/docs/api/usage/versioning.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0690",
+"SH-S-0691"
+]
+},
+{
+"n": 113,
+"url": "https://shopify.dev/docs/apps/build/admin.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0711"
+]
+},
+{
+"n": 114,
+"url": "https://shopify.dev/docs/apps/build/checkout.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0679",
+"SH-S-0680"
+]
+},
+{
+"n": 115,
+"url": "https://shopify.dev/docs/apps/build/compliance/privacy-law-compliance.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0696",
+"SH-S-0697",
+"SH-S-0698"
+]
+},
+{
+"n": 116,
+"url": "https://shopify.dev/docs/apps/build/customer-accounts.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0712"
+]
+},
+{
+"n": 117,
+"url": "https://shopify.dev/docs/apps/build/functions.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0681",
+"SH-S-0682",
+"SH-S-0683",
+"SH-S-0684"
+]
+},
+{
+"n": 118,
+"url": "https://shopify.dev/docs/apps/build/marketing-analytics/pixels.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0706",
+"SH-S-0707",
+"SH-S-0708"
+]
+},
+{
+"n": 119,
+"url": "https://shopify.dev/docs/apps/build/online-store/theme-app-extensions.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0705"
+]
+},
+{
+"n": 120,
+"url": "https://shopify.dev/docs/apps/build/orders-fulfillment/fulfillment-service-apps.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0702",
+"SH-S-0703",
+"SH-S-0704"
+]
+},
+{
+"n": 121,
+"url": "https://shopify.dev/docs/apps/build/payments.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0440",
+"SH-S-0441",
+"SH-S-0442",
+"SH-S-0443",
+"SH-S-0444",
+"SH-S-0445"
+]
+},
+{
+"n": 122,
+"url": "https://shopify.dev/docs/apps/build/payments/considerations.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0446",
+"SH-S-0447",
+"SH-S-0448",
+"SH-S-0449",
+"SH-S-0450"
+]
+},
+{
+"n": 123,
+"url": "https://shopify.dev/docs/apps/build/pos.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0713"
+]
+},
+{
+"n": 124,
+"url": "https://shopify.dev/docs/apps/build/purchase-options/subscriptions.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0592",
+"SH-S-0593",
+"SH-S-0762",
+"SH-S-0763"
+]
+},
+{
+"n": 125,
+"url": "https://shopify.dev/docs/apps/build/sales-channels.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0699",
+"SH-S-0700",
+"SH-S-0701"
+]
+},
+{
+"n": 126,
+"url": "https://shopify.dev/docs/apps/build/webhooks.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0685",
+"SH-S-0686"
+]
+},
+{
+"n": 127,
+"url": "https://shopify.dev/docs/apps/launch/billing.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0280",
+"SH-S-0281",
+"SH-S-0282",
+"SH-S-0283",
+"SH-S-0284",
+"SH-S-0285"
+]
+},
+{
+"n": 128,
+"url": "https://shopify.dev/docs/apps/launch/distribution.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0692",
+"SH-S-0693"
+]
+},
+{
+"n": 129,
+"url": "https://shopify.dev/docs/apps/launch/protected-customer-data.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0694",
+"SH-S-0695"
+]
+},
+{
+"n": 130,
+"url": "https://shopify.dev/docs/storefronts/headless.md",
+"kind": "web",
+"cited_in": [
+"SH-S-0709",
+"SH-S-0710"
+]
+},
+{
+"n": 131,
+"url": "https://www.shopify.com/legal/api-terms",
+"kind": "web",
+"cited_in": [
+"SH-S-0214",
+"SH-S-0215",
+"SH-S-0216",
+"SH-S-0217",
+"SH-S-0218",
+"SH-S-0219",
+"SH-S-0220",
+"SH-S-0221",
+"SH-S-0222",
+"SH-S-0223",
+"SH-S-0224",
+"SH-S-0225"
+]
+},
+{
+"n": 132,
+"url": "https://www.shopify.com/legal/aup",
+"kind": "web",
+"cited_in": [
+"SH-S-0166",
+"SH-S-0167",
+"SH-S-0168",
+"SH-S-0169",
+"SH-S-0170",
+"SH-S-0171",
+"SH-S-0172",
+"SH-S-0173",
+"SH-S-0174"
+]
+},
+{
+"n": 133,
+"url": "https://www.shopify.com/legal/binding-corporate-rules",
+"kind": "web",
+"cited_in": [
+"SH-S-0648",
+"SH-S-0649"
+]
+},
+{
+"n": 134,
+"url": "https://www.shopify.com/legal/dpa",
+"kind": "web",
+"cited_in": [
+"SH-S-0186",
+"SH-S-0187",
+"SH-S-0188",
+"SH-S-0189",
+"SH-S-0190",
+"SH-S-0191",
+"SH-S-0192",
+"SH-S-0193",
+"SH-S-3156",
+"SH-S-3157",
+"SH-S-3158",
+"SH-S-3159",
+"SH-S-3160",
+"SH-S-3161"
+]
+},
+{
+"n": 135,
+"url": "https://www.shopify.com/legal/eu-terms",
+"kind": "web",
+"cited_in": [
+"SH-S-0207",
+"SH-S-0208",
+"SH-S-0209",
+"SH-S-0210",
+"SH-S-0211",
+"SH-S-0212",
+"SH-S-0213"
+]
+},
+{
+"n": 136,
+"url": "https://www.shopify.com/legal/gvtaccesspolicy",
+"kind": "web",
+"cited_in": [
+"SH-S-0650",
+"SH-S-0651",
+"SH-S-0652",
+"SH-S-0653",
+"SH-S-0675"
+]
+},
+{
+"n": 137,
+"url": "https://www.shopify.com/legal/p2b/legal-notices",
+"kind": "web",
+"cited_in": [
+"SH-S-0654",
+"SH-S-0655",
+"SH-S-0656"
+]
+},
+{
+"n": 138,
+"url": "https://www.shopify.com/legal/privacy",
+"kind": "web",
+"cited_in": [
+"SH-S-0175",
+"SH-S-0176",
+"SH-S-0177",
+"SH-S-0178",
+"SH-S-0179",
+"SH-S-0180",
+"SH-S-0181",
+"SH-S-0182",
+"SH-S-0183",
+"SH-S-0184",
+"SH-S-0185",
+"SH-S-0226",
+"SH-S-0227",
+"SH-S-3162",
+"SH-S-3163",
+"SH-S-3164",
+"SH-S-3165",
+"SH-S-3166",
+"SH-S-3167",
+"SH-S-3168",
+"SH-S-3169",
+"SH-S-3170",
+"SH-S-3171",
+"SH-S-3172"
+]
+},
+{
+"n": 139,
+"url": "https://www.shopify.com/legal/processor-list",
+"kind": "web",
+"cited_in": [
+"SH-S-0143",
+"SH-S-0144",
+"SH-S-0151",
+"SH-S-0152",
+"SH-S-0153",
+"SH-S-0154",
+"SH-S-0155",
+"SH-S-0156",
+"SH-S-0157",
+"SH-S-0158",
+"SH-S-0159",
+"SH-S-0160",
+"SH-S-0161",
+"SH-S-0162",
+"SH-S-0163",
+"SH-S-3152",
+"SH-S-3153",
+"SH-S-3154",
+"SH-S-3155"
+]
+},
+{
+"n": 140,
+"url": "https://www.shopify.com/legal/shop-pay-merchant-terms",
+"kind": "web",
+"cited_in": [
+"SH-S-0408",
+"SH-S-0409",
+"SH-S-0410",
+"SH-S-0411",
+"SH-S-0412",
+"SH-S-0413"
+]
+},
+{
+"n": 141,
+"url": "https://www.shopify.com/legal/shopify-tax-filing-terms",
+"kind": "web",
+"cited_in": [
+"SH-S-0602",
+"SH-S-0603",
+"SH-S-0604",
+"SH-S-0605",
+"SH-S-0606",
+"SH-S-0607"
+]
+},
+{
+"n": 142,
+"url": "https://www.shopify.com/legal/shopify-tax-terms",
+"kind": "web",
+"cited_in": [
+"SH-S-0594",
+"SH-S-0595",
+"SH-S-0596",
+"SH-S-0597",
+"SH-S-0598",
+"SH-S-0599",
+"SH-S-0600",
+"SH-S-0601"
+]
+},
+{
+"n": 143,
+"url": "https://www.shopify.com/legal/terms",
+"kind": "web",
+"cited_in": [
+"SH-S-0001",
+"SH-S-0002",
+"SH-S-0003",
+"SH-S-0004",
+"SH-S-0005",
+"SH-S-0006",
+"SH-S-0007",
+"SH-S-0008",
+"SH-S-0009",
+"SH-S-0010",
+"SH-S-0011",
+"SH-S-0012",
+"SH-S-0013",
+"SH-S-0014",
+"SH-S-0015",
+"SH-S-0016",
+"SH-S-0017",
+"SH-S-0018",
+"SH-S-0019",
+"SH-S-0020",
+"SH-S-0021",
+"SH-S-0022",
+"SH-S-0023",
+"SH-S-0024",
+"SH-S-0025",
+"SH-S-0026",
+"SH-S-0027",
+"SH-S-0028",
+"SH-S-0029",
+"SH-S-0030",
+"SH-S-0031",
+"SH-S-0032",
+"SH-S-0033",
+"SH-S-0034",
+"SH-S-0035",
+"SH-S-0036",
+"SH-S-0037",
+"SH-S-0038",
+"SH-S-0039",
+"SH-S-0040",
+"SH-S-0041",
+"SH-S-0042",
+"SH-S-0043",
+"SH-S-0044",
+"SH-S-0045",
+"SH-S-0046",
+"SH-S-0047",
+"SH-S-0048",
+"SH-S-0049",
+"SH-S-0050",
+"SH-S-0051",
+"SH-S-0052",
+"SH-S-0053",
+"SH-S-0054",
+"SH-S-0055",
+"SH-S-0056",
+"SH-S-0057",
+"SH-S-0058",
+"SH-S-0059",
+"SH-S-0060",
+"SH-S-0061",
+"SH-S-0062",
+"SH-S-0063",
+"SH-S-0064",
+"SH-S-0065",
+"SH-S-0066",
+"SH-S-0067",
+"SH-S-0068",
+"SH-S-0069",
+"SH-S-0070",
+"SH-S-0071",
+"SH-S-0072",
+"SH-S-0073",
+"SH-S-0074",
+"SH-S-0075",
+"SH-S-0076",
+"SH-S-0077",
+"SH-S-0145",
+"SH-S-0228",
+"SH-S-0229",
+"SH-S-0230",
+"SH-S-0231",
+"SH-S-0232",
+"SH-S-0233",
+"SH-S-0234",
+"SH-S-0235",
+"SH-S-0236",
+"SH-S-0237",
+"SH-S-0238",
+"SH-S-0239",
+"SH-S-0240",
+"SH-S-3123",
+"SH-S-3124",
+"SH-S-3125",
+"SH-S-3126",
+"SH-S-3127",
+"SH-S-3128",
+"SH-S-3129",
+"SH-S-3130",
+"SH-S-3131",
+"SH-S-3132",
+"SH-S-3133",
+"SH-S-3134",
+"SH-S-3135",
+"SH-S-3136",
+"SH-S-3137",
+"SH-S-3138",
+"SH-S-3173",
+"SH-S-3174",
+"SH-S-3175",
+"SH-S-3176",
+"SH-S-3177",
+"SH-S-3178",
+"SH-S-3179",
+"SH-S-3180",
+"SH-S-3181",
+"SH-S-3182",
+"SH-S-3183",
+"SH-S-3184",
+"SH-S-3185",
+"SH-S-3186"
+]
+},
+{
+"n": 144,
+"url": "https://www.shopify.com/legal/terms-agentic-storefronts",
+"kind": "web",
+"cited_in": [
+"SH-S-0621",
+"SH-S-0622",
+"SH-S-0623",
+"SH-S-0624",
+"SH-S-0625",
+"SH-S-0626",
+"SH-S-0627",
+"SH-S-0628",
+"SH-S-0629",
+"SH-S-0630",
+"SH-S-0631",
+"SH-S-0632"
+]
+},
+{
+"n": 145,
+"url": "https://www.shopify.com/legal/terms-cryptocurrency-credit-reward-program",
+"kind": "web",
+"cited_in": [
+"SH-S-0433",
+"SH-S-0434"
+]
+},
+{
+"n": 146,
+"url": "https://www.shopify.com/legal/terms-gift-cards",
+"kind": "web",
+"cited_in": [
+"SH-S-0676",
+"SH-S-0677",
+"SH-S-0678"
+]
+},
+{
+"n": 147,
+"url": "https://www.shopify.com/legal/terms-payfac",
+"kind": "web",
+"cited_in": [
+"SH-S-0129",
+"SH-S-0130",
+"SH-S-0131",
+"SH-S-0132",
+"SH-S-0133",
+"SH-S-0134",
+"SH-S-0135",
+"SH-S-0136",
+"SH-S-0137",
+"SH-S-0138",
+"SH-S-0139",
+"SH-S-0140",
+"SH-S-0141",
+"SH-S-0142",
+"SH-S-3149",
+"SH-S-3150",
+"SH-S-3151"
+]
+},
+{
+"n": 148,
+"url": "https://www.shopify.com/legal/terms-shipping-global",
+"kind": "web",
+"cited_in": [
+"SH-S-0608",
+"SH-S-0609",
+"SH-S-0610",
+"SH-S-0611",
+"SH-S-0612",
+"SH-S-0613",
+"SH-S-0614",
+"SH-S-0615",
+"SH-S-0616",
+"SH-S-0617",
+"SH-S-0618",
+"SH-S-0619",
+"SH-S-0620"
+]
+},
+{
+"n": 149,
+"url": "https://www.shopify.com/legal/terms-shopify-payments",
+"kind": "web",
+"cited_in": [
+"SH-S-0078",
+"SH-S-0079",
+"SH-S-0080",
+"SH-S-0081",
+"SH-S-0082",
+"SH-S-0083",
+"SH-S-0084",
+"SH-S-0085",
+"SH-S-0086",
+"SH-S-0087",
+"SH-S-0088",
+"SH-S-0089",
+"SH-S-0090",
+"SH-S-0091",
+"SH-S-0092",
+"SH-S-0093",
+"SH-S-0094",
+"SH-S-0095",
+"SH-S-0096",
+"SH-S-0097",
+"SH-S-0098",
+"SH-S-0099",
+"SH-S-0100",
+"SH-S-0101",
+"SH-S-0102",
+"SH-S-0103",
+"SH-S-0104",
+"SH-S-0105",
+"SH-S-0106",
+"SH-S-0107",
+"SH-S-0108",
+"SH-S-0109",
+"SH-S-0110",
+"SH-S-0111",
+"SH-S-0112",
+"SH-S-0113",
+"SH-S-0114",
+"SH-S-0115",
+"SH-S-0116",
+"SH-S-0117",
+"SH-S-0118",
+"SH-S-0119",
+"SH-S-0120",
+"SH-S-0121",
+"SH-S-0122",
+"SH-S-0123",
+"SH-S-0124",
+"SH-S-0125",
+"SH-S-0126",
+"SH-S-0127",
+"SH-S-0128",
+"SH-S-0146",
+"SH-S-0147",
+"SH-S-0148",
+"SH-S-0149",
+"SH-S-0150",
+"SH-S-0164",
+"SH-S-0165",
+"SH-S-0430",
+"SH-S-0431",
+"SH-S-0432",
+"SH-S-3139",
+"SH-S-3140",
+"SH-S-3141",
+"SH-S-3142",
+"SH-S-3143",
+"SH-S-3144",
+"SH-S-3145",
+"SH-S-3146",
+"SH-S-3147",
+"SH-S-3148"
+]
+},
+{
+"n": 150,
+"url": "https://www.shopify.com/legal/terms-shopify-protect",
+"kind": "web",
+"cited_in": [
+"SH-S-0401",
+"SH-S-0402",
+"SH-S-0403",
+"SH-S-0404",
+"SH-S-0405"
+]
+},
+{
+"n": 151,
+"url": "https://www.shopify.com/legal/tools/report-an-issue/financial-complaint",
+"kind": "web",
+"cited_in": [
+"SH-S-0657",
+"SH-S-2171",
+"SH-S-2172",
+"SH-S-2173",
+"SH-S-2174",
+"SH-S-2175",
+"SH-S-2176",
+"SH-S-2177",
+"SH-S-2178"
+]
+},
+{
+"n": 152,
+"url": "https://www.shopify.com/partners/terms",
+"kind": "web",
+"cited_in": [
+"SH-S-0286",
+"SH-S-0287",
+"SH-S-0288",
+"SH-S-0289",
+"SH-S-0290",
+"SH-S-0291",
+"SH-S-0292",
+"SH-S-0293",
+"SH-S-0294",
+"SH-S-0295",
+"SH-S-0296",
+"SH-S-0297",
+"SH-S-0758",
+"SH-S-0759",
+"SH-S-0760",
+"SH-S-0761"
+]
+}
+]

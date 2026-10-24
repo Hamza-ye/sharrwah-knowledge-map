@@ -1,0 +1,20 @@
+{
+ "n": 170,
+ "url": "https://help.zid.sa/whatsapp-templates/",
+ "dir": "items/170-help.zid.sa",
+ "fetched_at": "2026-10-12T04:53:42Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/whatsapp-templates/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 27034,
+ "cited_in": [
+  "ZD-S-1054",
+  "ZD-S-1055",
+  "ZD-S-1056"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "9eb175a92997e13ca02083408b9baf4a805dd3e76f88d47997d9be01f2e229d8",
+ "raw_ext": "html"
+}

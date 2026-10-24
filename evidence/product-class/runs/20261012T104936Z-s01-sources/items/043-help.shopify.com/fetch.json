@@ -1,0 +1,24 @@
+{
+ "n": 43,
+ "url": "https://help.shopify.com/en/manual/payments/shopify-payments/supported-countries.md",
+ "dir": "items/043-help.shopify.com",
+ "fetched_at": "2026-10-12T10:50:21Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/payments/shopify-payments/supported-countries.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 1040,
+ "cited_in": [
+  "S01-SH-C146",
+  "S01-SH-C147",
+  "S01-SH-C148",
+  "S01-SH-C149",
+  "S01-SH-C150",
+  "S01-SH-C151",
+  "S01-SH-C152"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "fd3437276b770bab69907a42bc44e416879d9522e7403d27f706b9f18fe83829",
+ "raw_ext": "txt"
+}

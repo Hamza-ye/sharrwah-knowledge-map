@@ -1,0 +1,119 @@
+concern_id	concern	platform_terms	inv_ids	split_note
+WC-C-001	Buyer payments through payment gateways (no balance held in core)	Payment gateways; Payments	WC-I-0005 WC-I-0029 WC-I-0059 WC-I-0434 WC-I-0436 WC-I-0437 WC-I-0435 WC-I-0452 WC-I-0123 WC-I-0144 WC-I-0481 WC-I-0579 WC-I-0580	Split from offline methods (WC-C-002), PayPal Standard (WC-C-003), WooPayments balances (WC-C-007) and Marketplace revenue (WC-C-017), which are placed differently.
+WC-C-002	Offline payment methods (direct bank transfer, check, cash on delivery)	Direct bank transfer; Check payments; Cash on delivery; offline	WC-I-0280 WC-I-0281 WC-I-0282 WC-I-0030 WC-I-0031 WC-I-0032 WC-I-0033 WC-I-0139	Split from gateway payments (WC-C-001): no processor is involved and the money reaches the merchant outside the platform.
+WC-C-003	PayPal Standard (core gateway that redirects to PayPal)	PayPal Standard	WC-I-0283 WC-I-0128 WC-I-0129 WC-I-0130	Split from WC-C-001: shipped in core but hidden on new installs, and it hands the buyer to PayPal.
+WC-C-004	Payment provider suggestions per store country (Payments settings)	Payments; Set up payments; payment-gateway-suggestions	WC-I-0365 WC-I-0366 WC-I-0367 WC-I-0368 WC-I-0369 WC-I-0370 WC-I-0371 WC-I-0372 WC-I-0373 WC-I-0374 WC-I-0375 WC-I-0376 WC-I-0377 WC-I-0378 WC-I-0379 WC-I-0380 WC-I-0381 WC-I-0382 WC-I-0383 WC-I-0384 WC-I-0385 WC-I-0386 WC-I-0387 WC-I-0388 WC-I-0389 WC-I-0390 WC-I-0391 WC-I-0392 WC-I-0393 WC-I-0394 WC-I-0395 WC-I-0396 WC-I-0397 WC-I-0398 WC-I-0399 WC-I-0400 WC-I-0401 WC-I-0402 WC-I-0403 WC-I-0404 WC-I-0405 WC-I-0406 WC-I-0407 WC-I-0408 WC-I-0409 WC-I-0410 WC-I-0417 WC-I-0425 WC-I-0193	Split from the providers themselves (WC-C-005, WC-C-006): this is WooCommerce's own per-country list of what to offer the merchant.
+WC-C-005	Third-party payment extensions (Marketplace Official payments)	Official payments; Processors & gateways; Wallets & express checkouts; Buy now pay later; Crypto payments; B2B payments	WC-I-0493 WC-I-0501 WC-I-0502 WC-I-0503 WC-I-0504 WC-I-0505 WC-I-0506 WC-I-0540	Split from WooPayments (WC-C-006), a Woo-made service, and from in-person payments (WC-C-014).
+WC-C-006	WooPayments payment processing (Woo-made extension and service)	WooPayments	WC-I-0382 WC-I-0433 WC-I-0626 WC-I-0619 WC-I-0597 WC-I-0599 WC-I-0605 WC-I-0606 WC-I-0611	WooPayments is placed as an extension and a separate service, not as WooCommerce core. Split into processing (here), balance and payouts (WC-C-007), reserves (WC-C-008), verification (WC-C-009), country availability (WC-C-010), restricted businesses (WC-C-011), fees (WC-C-012), fraud and disputes (WC-C-013), in-person payments (WC-C-014) and its dependence on Stripe (WC-C-048).
+WC-C-007	WooPayments account balance and payouts	Payouts; account balance	WC-I-0603 WC-I-0607	Split from WC-C-008 (reserves are applied by Stripe) and WC-C-051 (payout currency).
+WC-C-008	WooPayments reserves (funds withheld for risk)	reserve	WC-I-0604	Split from WC-C-007: Stripe, not WooPayments, decides and applies reserves.
+WC-C-009	WooPayments know-your-customer verification	Know Your Customer; KYC	WC-I-0596 WC-I-0604	
+WC-C-010	WooPayments availability by country	WooPayments in Your Country; supported countries	WC-I-0597	Split from WC-C-004 (core's suggestion list) because availability is set by the WooPayments service.
+WC-C-011	Restricted and prohibited businesses on WooPayments	prohibited or restricted; restricted businesses or activities	WC-I-0604 WC-I-0640 WC-I-0643	Split from the Store guidelines for e-commerce on WordPress.com (WC-C-022).
+WC-C-012	WooPayments fees	Fees; Fees and Debits	WC-I-0600	
+WC-C-013	WooPayments fraud protection rules set by the merchant	fraud protection; Fraud and Disputes	WC-I-0601	Split from Stripe Radar screening, whose rules the WooPayments team manages (WC-C-115), and from disputes started by cardholders (WC-C-116).
+WC-C-014	WooPayments in-person payments (card readers, Tap to Pay)	In-Person Payments	WC-I-0602	Split from the POS mode of the mobile app (WC-C-089), which can use other methods too.
+WC-C-015	WooPay (saved checkout details across stores)	WooPay		
+WC-C-016	Merchant financing (Stripe Capital)	Stripe Capital; Merchant financing	WC-I-0608 WC-I-0543	
+WC-C-017	Woo Marketplace sales and vendor revenue share	Woo Marketplace; Marketplace Vendor Agreement; Refund Policy	WC-I-0635 WC-I-0638 WC-I-0489 WC-I-0490	Split from third-party extensions in use (WC-C-059): this is the sale on WooCommerce.com, where WooCommerce, Inc. collects revenue.
+WC-C-018	Cardholder data security for WooPayments (PCI DSS)	PCI DSS; Level 1 service provider	WC-I-0604	Split from the merchant's own PCI scope (WC-C-019).
+WC-C-019	PCI DSS compliance of the merchant's store	PCI-DSS compliance and WooCommerce		
+WC-C-020	Licence under which WooPayments funds are held and moved	Connected Account Agreement	WC-I-0642	Kept separate so the gap is visible: no source read names the licensed entity.
+WC-C-021	Tax reporting tied to payments (Form 1099-K, tax invoices for fees)	Taxes and Documents; Form 1099-K; Documents	WC-I-0610	
+WC-C-022	Prohibited items for e-commerce on WordPress.com sites (Store guidelines)	Store guidelines	WC-I-0639	Split from WC-C-011: these guidelines come from the Terms for e-commerce services on WordPress.com sites, not from WooPayments.
+WC-C-023	Contracting entity for Woo services	Woo services; WooCommerce, Inc.; WooCommerce Ireland Ltd.	WC-I-0630 WC-I-0625 WC-I-0626 WC-I-0627 WC-I-0628 WC-I-0629	
+WC-C-024	Data controller for Woo services	Controllers and Responsible Companies	WC-I-0631 WC-I-0632 WC-I-0633	
+WC-C-025	Core software licence and warranty	GPLv3; open-source	WC-I-0654	
+WC-C-026	Governing law and courts	Jurisdiction and Applicable Law	WC-I-0630	
+WC-C-027	Merchant responsibility for the store's sales, receipts, refunds and consumer law	Ecommerce Services; Your responsibilities	WC-I-0630	
+WC-C-028	US sanctions on access to Automattic and Woo services	US Economic Sanctions; OFAC	WC-I-0630	Split from WC-C-029 (the merchant's own transactions).
+WC-C-029	Sanctions and export compliance of the merchant's own sales	export, import, and sanctions laws	WC-I-0630	
+WC-C-030	Selling and shipping locations	Selling location(s); Shipping location(s)	WC-I-0001	
+WC-C-031	Checkout rate limiting	Rate limit Checkout	WC-I-0328	
+WC-C-032	Store data in the merchant's own WordPress database	Own and control your store data – forever	WC-I-0623	Split from order table layout (WC-C-033) and from data flows to Automattic or partners (WC-C-035 to WC-C-044).
+WC-C-033	Order storage tables (High-Performance Order Storage)	High-Performance order storage; HPOS	WC-I-0333 WC-I-0334 WC-I-0355	
+WC-C-034	Hosting of the store	WooCommerce Server Recommendations		
+WC-C-035	Usage tracking sent to WooCommerce	WooCommerce usage tracking; wc-telemetry	WC-I-0079 WC-I-0253 WC-I-0646 WC-I-0027	
+WC-C-036	Remote logging to WooCommerce	Remote Logging	WC-I-0335	
+WC-C-037	Store logs	Logs; Logging in WooCommerce	WC-I-0038 WC-I-0446	
+WC-C-038	Store analytics and reports kept in the store	Analytics; Reports; WooCommerce Analytics	WC-I-0064 WC-I-0065 WC-I-0066 WC-I-0067 WC-I-0068 WC-I-0069 WC-I-0070 WC-I-0071 WC-I-0072 WC-I-0073 WC-I-0074 WC-I-0075 WC-I-0043 WC-I-0224 WC-I-0226 WC-I-0227 WC-I-0228 WC-I-0229 WC-I-0230 WC-I-0231 WC-I-0232 WC-I-0233 WC-I-0234 WC-I-0235 WC-I-0236 WC-I-0237 WC-I-0238 WC-I-0239 WC-I-0240 WC-I-0241 WC-I-0242 WC-I-0243 WC-I-0244 WC-I-0245 WC-I-0246 WC-I-0247 WC-I-0103 WC-I-0104 WC-I-0105 WC-I-0106 WC-I-0107 WC-I-0108 WC-I-0109 WC-I-0110 WC-I-0474 WC-I-0325 WC-I-0275 WC-I-0208 WC-I-0209 WC-I-0210 WC-I-0212 WC-I-0213 WC-I-0214 WC-I-0215 WC-I-0216 WC-I-0217 WC-I-0218 WC-I-0219 WC-I-0221 WC-I-0222 WC-I-0225 WC-I-0211 WC-I-0220 WC-I-0223 WC-I-0084	Split from the WooCommerce Analytics service (WC-C-039), which syncs data to Automattic.
+WC-C-039	WooCommerce Analytics service (data synced to Automattic)	WooCommerce Analytics data syncing	WC-I-0647	
+WC-C-040	Data shared with payment providers	Privacy considerations when using official payments extensions		
+WC-C-041	Data shared with shipping providers	Privacy considerations when using official shipping extensions		
+WC-C-042	WooPayments data and saved-card tokens held by the payment partner	payment token		
+WC-C-043	Transfer outside the EEA and UK of data processed by Automattic	Transferring Information	WC-I-0631	
+WC-C-044	Automattic as processor of site visitors' data (data processing agreement)	Data Processing Agreement	WC-I-0641	
+WC-C-045	Personal data export, erasure and retention	Accounts & Privacy; Personal data retention	WC-I-0357 WC-I-0358 WC-I-0359 WC-I-0360 WC-I-0361 WC-I-0362 WC-I-0363 WC-I-0364 WC-I-0006	
+WC-C-046	Customer geolocation (MaxMind and IP lookup services)	MaxMind Geolocation; Default customer location	WC-I-0293 WC-I-0008	
+WC-C-047	Address autocomplete providers	Address autocomplete; Preferred address autocomplete provider	WC-I-0445	
+WC-C-048	WooPayments dependence on Stripe and processor substitution	built in partnership with Stripe	WC-I-0596 WC-I-0642	Split from WC-C-006 to record the partner dependency and what the sources say happens when it breaks.
+WC-C-049	WordPress.com / Jetpack connection for Woo services	WordPress.com account; Jetpack connection		
+WC-C-050	Woo-made extensions (Developed by Woo)	Developed by Woo	WC-I-0492	Split from third-party extensions (WC-C-059): the seller and supporter is a Woo entity.
+WC-C-051	WooPayments payout currency and currency conversion	Payout currencies; currency conversion fee	WC-I-0600 WC-I-0607	
+WC-C-052	Store currency (one base currency per store)	Currency; base currency	WC-I-0001 WC-I-0127	Split from presentment in other currencies, which needs an extension (WC-C-053).
+WC-C-053	Selling in more than one currency (multi-currency)	multi-currency; International and localization	WC-I-0598	Split from the store currency (WC-C-052): core allows one base currency; other currencies come from an extension such as WooPayments.
+WC-C-054	Core tax calculation with merchant-entered rates	Tax; Tax options; Standard rates; Collect sales tax	WC-I-0003 WC-I-0015 WC-I-0016 WC-I-0034 WC-I-0035 WC-I-0116 WC-I-0117 WC-I-0145 WC-I-0476 WC-I-0477 WC-I-0072 WC-I-0431	Split from automated tax services (WC-C-055, WC-C-056).
+WC-C-055	WooCommerce Tax (automated tax calculation service)	WooCommerce Tax; Automated taxes	WC-I-0628 WC-I-0621	
+WC-C-056	Third-party tax extensions (Sales tax and duties)	Sales tax and duties	WC-I-0546	
+WC-C-057	Taxes on Woo's own fees	Taxes; VAT/GST/CT on fees	WC-I-0630	
+WC-C-058	Customs duties and import taxes on shipments	customs charges, import taxes or duties		
+WC-C-115	Stripe Radar screening on WooPayments accounts	Stripe Radar	WC-I-0601	Split from merchant-set fraud rules (WC-C-013): most Radar rules are managed by the WooPayments team, not the merchant.
+WC-C-116	Disputes (chargebacks) on WooPayments transactions	Managing Disputes; dispute; chargeback	WC-I-0601	Split from fraud screening (WC-C-013, WC-C-115): a dispute starts with the cardholder and is answered by the merchant.
+WC-C-117	Store data synced to Automattic for Jetpack-connected Woo services	Jetpack Sync; What data does Jetpack sync		Split from the merchant's own database (WC-C-032) and from the WooCommerce Analytics service (WC-C-039).
+WC-C-059	Third-party extensions and services (general)	Third-Party Services; extensions	WC-I-0489	Split from Woo-made extensions (WC-C-050) and from Marketplace sales (WC-C-017).
+WC-C-060	WooCommerce Shipping (labels and carrier rates)	WooCommerce Shipping	WC-I-0416 WC-I-0627 WC-I-0620	Split from third-party carriers (WC-C-061) and from core shipping (WC-C-075).
+WC-C-061	Third-party shipping carriers and shipping extensions	Shipping, delivery and fulfillment; shipping partner suggestions	WC-I-0411 WC-I-0412 WC-I-0413 WC-I-0414 WC-I-0415 WC-I-0494 WC-I-0507 WC-I-0508 WC-I-0509 WC-I-0510 WC-I-0511 WC-I-0205 WC-I-0620	
+WC-C-062	Support for Woo and Marketplace products	WooCommerce Support Policy	WC-I-0634	
+WC-C-063	WooCommerce.com connection, extension installs and Marketplace subscriptions	WooCommerce.com; Extensions; Connection to WooCommerce.com	WC-I-0027 WC-I-0085 WC-I-0249 WC-I-0250 WC-I-0251 WC-I-0252 WC-I-0046 WC-I-0624 WC-I-0329 WC-I-0421 WC-I-0432	
+WC-C-064	Products and catalogue structure (types, variations, attributes, categories, tags, brands)	Products; Product variations; Attributes; Categories; Tags; Brands	WC-I-0002 WC-I-0012 WC-I-0049 WC-I-0050 WC-I-0051 WC-I-0052 WC-I-0053 WC-I-0054 WC-I-0055 WC-I-0093 WC-I-0094 WC-I-0095 WC-I-0096 WC-I-0099 WC-I-0100 WC-I-0101 WC-I-0118 WC-I-0132 WC-I-0143 WC-I-0165 WC-I-0166 WC-I-0167 WC-I-0168 WC-I-0169 WC-I-0170 WC-I-0171 WC-I-0172 WC-I-0174 WC-I-0175 WC-I-0176 WC-I-0177 WC-I-0466 WC-I-0467 WC-I-0468 WC-I-0469 WC-I-0470 WC-I-0472 WC-I-0465 WC-I-0265 WC-I-0266 WC-I-0267 WC-I-0268 WC-I-0269 WC-I-0276 WC-I-0326 WC-I-0341 WC-I-0342 WC-I-0352 WC-I-0614 WC-I-0615 WC-I-0213 WC-I-0214 WC-I-0215 WC-I-0216 WC-I-0217	Split from reviews (WC-C-065), downloads (WC-C-066), import/export (WC-C-067) and stock (WC-C-068).
+WC-C-065	Product reviews and review requests	Reviews; Product reviews; Review request	WC-I-0056 WC-I-0097 WC-I-0173 WC-I-0473 WC-I-0313 WC-I-0337	
+WC-C-066	Downloadable products and customer downloads	Downloadable products; Downloads	WC-I-0014 WC-I-0087 WC-I-0073 WC-I-0211 WC-I-0242 WC-I-0243 WC-I-0359 WC-I-0363	
+WC-C-067	Product import and export (CSV)	Product Import; Product Export; Import your products	WC-I-0057 WC-I-0058 WC-I-0426	
+WC-C-068	Inventory and stock levels	Inventory; Stock	WC-I-0013 WC-I-0074 WC-I-0219 WC-I-0240 WC-I-0241	
+WC-C-069	Back-in-stock notifications	Back in Stock Notifications; Stock Notifications	WC-I-0047 WC-I-0353	
+WC-C-070	Orders and order statuses	Orders; Order statuses; Order notes	WC-I-0041 WC-I-0089 WC-I-0090 WC-I-0092 WC-I-0134 WC-I-0137 WC-I-0164 WC-I-0461 WC-I-0462 WC-I-0463 WC-I-0317 WC-I-0318 WC-I-0319 WC-I-0320 WC-I-0321 WC-I-0322 WC-I-0323 WC-I-0324 WC-I-0261 WC-I-0262 WC-I-0263 WC-I-0264 WC-I-0212	Split from refunds (WC-C-071), fulfillments (WC-C-092) and withdrawal requests (WC-C-091).
+WC-C-071	Refunds	Refunds; Order refunds; Refunded	WC-I-0091 WC-I-0102 WC-I-0138 WC-I-0464 WC-I-0475 WC-I-0302 WC-I-0316 WC-I-0322	Split from orders (WC-C-070); the money movement belongs to the gateway (WC-C-001).
+WC-C-072	Cart and checkout	Cart; Checkout; Cart & Checkout Blocks; Page setup	WC-I-0149 WC-I-0150 WC-I-0155 WC-I-0156 WC-I-0158 WC-I-0160 WC-I-0162 WC-I-0163 WC-I-0327 WC-I-0347 WC-I-0022 WC-I-0324 WC-I-0613	Split from checkout extensibility (WC-C-087) and the Store API as a whole (WC-C-079).
+WC-C-073	Customer accounts	Customers; Customer; Accounts & Privacy	WC-I-0042 WC-I-0088 WC-I-0133 WC-I-0146 WC-I-0460 WC-I-0258 WC-I-0259 WC-I-0260 WC-I-0271 WC-I-0274 WC-I-0305 WC-I-0306 WC-I-0006 WC-I-0161 WC-I-0223 WC-I-0244 WC-I-0245	
+WC-C-074	Coupons and discounts	Coupons	WC-I-0048 WC-I-0062 WC-I-0071 WC-I-0086 WC-I-0459 WC-I-0254 WC-I-0255 WC-I-0256 WC-I-0257 WC-I-0151 WC-I-0152 WC-I-0153 WC-I-0157 WC-I-0208 WC-I-0238 WC-I-0239	
+WC-C-075	Shipping zones, methods and classes (core)	Shipping zones; Shipping settings; Classes; Flat rate; Free shipping; Local pickup	WC-I-0004 WC-I-0017 WC-I-0018 WC-I-0019 WC-I-0284 WC-I-0285 WC-I-0286 WC-I-0287 WC-I-0288 WC-I-0289 WC-I-0290 WC-I-0291 WC-I-0292 WC-I-0439 WC-I-0440 WC-I-0098 WC-I-0113 WC-I-0114 WC-I-0115 WC-I-0122 WC-I-0135 WC-I-0136 WC-I-0471 WC-I-0482 WC-I-0483 WC-I-0484 WC-I-0485 WC-I-0159 WC-I-0420 WC-I-0427 WC-I-0428	Split from WooCommerce Shipping (WC-C-060), carriers (WC-C-061) and fulfillments (WC-C-092).
+WC-C-076	Transactional emails	Emails; Email options	WC-I-0007 WC-I-0021 WC-I-0294 WC-I-0295 WC-I-0296 WC-I-0297 WC-I-0298 WC-I-0299 WC-I-0300 WC-I-0301 WC-I-0302 WC-I-0303 WC-I-0304 WC-I-0305 WC-I-0306 WC-I-0307 WC-I-0308 WC-I-0309 WC-I-0310 WC-I-0311 WC-I-0312 WC-I-0313 WC-I-0314 WC-I-0315 WC-I-0316 WC-I-0443 WC-I-0336 WC-I-0338 WC-I-0340 WC-I-0141 WC-I-0142	
+WC-C-077	Webhooks	Webhooks; webhook topics	WC-I-0254 WC-I-0255 WC-I-0256 WC-I-0257 WC-I-0258 WC-I-0259 WC-I-0260 WC-I-0261 WC-I-0262 WC-I-0263 WC-I-0264 WC-I-0265 WC-I-0266 WC-I-0267 WC-I-0268 WC-I-0269 WC-I-0270 WC-I-0025 WC-I-0119 WC-I-0478 WC-I-0447	
+WC-C-078	REST API, API keys and settings API	WooCommerce REST API; REST API keys; Legacy API	WC-I-0076 WC-I-0077 WC-I-0078 WC-I-0080 WC-I-0011 WC-I-0023 WC-I-0024 WC-I-0026 WC-I-0277 WC-I-0278 WC-I-0279 WC-I-0456 WC-I-0457 WC-I-0458 WC-I-0479 WC-I-0480 WC-I-0111 WC-I-0112 WC-I-0140 WC-I-0147 WC-I-0349 WC-I-0448	Split from the public Store API (WC-C-079).
+WC-C-079	Store API (public storefront API)	Store API	WC-I-0081 WC-I-0148 WC-I-0149 WC-I-0150 WC-I-0151 WC-I-0152 WC-I-0153 WC-I-0154 WC-I-0155 WC-I-0156 WC-I-0157 WC-I-0158 WC-I-0159 WC-I-0160 WC-I-0161 WC-I-0162 WC-I-0163 WC-I-0164 WC-I-0165 WC-I-0166 WC-I-0167 WC-I-0168 WC-I-0169 WC-I-0170 WC-I-0171 WC-I-0172 WC-I-0173 WC-I-0174 WC-I-0175 WC-I-0176 WC-I-0177 WC-I-0179 WC-I-0180 WC-I-0181 WC-I-0182 WC-I-0568 WC-I-0569 WC-I-0570 WC-I-0571 WC-I-0572 WC-I-0573 WC-I-0574	
+WC-C-080	Roles and capabilities	Customer; Shop manager; manage_woocommerce	WC-I-0271 WC-I-0272 WC-I-0273 WC-I-0274 WC-I-0275 WC-I-0276	
+WC-C-081	Store administration: home, setup wizard, onboarding tasks and inbox	Home; Setup Wizard; onboarding	WC-I-0039 WC-I-0040 WC-I-0044 WC-I-0063 WC-I-0083 WC-I-0183 WC-I-0184 WC-I-0185 WC-I-0192 WC-I-0195 WC-I-0196 WC-I-0197 WC-I-0198 WC-I-0199 WC-I-0200 WC-I-0201 WC-I-0202 WC-I-0206 WC-I-0207 WC-I-0429 WC-I-0430	
+WC-C-082	Site visibility (coming soon and launch)	Site visibility; Coming soon; Launch your store	WC-I-0009 WC-I-0332 WC-I-0423 WC-I-0248	
+WC-C-083	Store status, tools and system report	Status; System status; Tools	WC-I-0036 WC-I-0037 WC-I-0045 WC-I-0120 WC-I-0121 WC-I-0486 WC-I-0487	
+WC-C-084	Marketing hub (channels, campaigns, recommendations)	Marketing; Overview	WC-I-0060 WC-I-0061 WC-I-0186 WC-I-0187 WC-I-0188 WC-I-0189 WC-I-0190 WC-I-0191 WC-I-0424 WC-I-0622	Split from marketing extensions (WC-C-112).
+WC-C-085	Order attribution	Order Attribution	WC-I-0331	
+WC-C-086	Extension framework (settings pages, integrations, admin pages, feature compatibility)	Integration; Settings API; WC_Integration	WC-I-0441 WC-I-0442 WC-I-0444 WC-I-0449 WC-I-0450 WC-I-0455 WC-I-0008	Split from checkout block extensibility (WC-C-087) and payment and shipping APIs (WC-C-001, WC-C-075).
+WC-C-087	Block extensibility (cart, checkout and product blocks) and Store API extensions	Cart and Checkout extensibility; Additional checkout fields; ExtendSchema; Product collection block	WC-I-0575 WC-I-0576 WC-I-0577 WC-I-0578 WC-I-0579 WC-I-0580 WC-I-0581 WC-I-0582 WC-I-0583 WC-I-0584 WC-I-0585 WC-I-0586 WC-I-0587 WC-I-0588 WC-I-0589 WC-I-0590 WC-I-0591 WC-I-0592 WC-I-0593 WC-I-0594 WC-I-0595 WC-I-0568 WC-I-0569 WC-I-0570 WC-I-0571 WC-I-0572 WC-I-0573 WC-I-0574 WC-I-0451 WC-I-0452 WC-I-0453 WC-I-0454 WC-I-0154	
+WC-C-088	Feature settings (opt-in and opt-out features)	Features	WC-I-0325 WC-I-0326 WC-I-0327 WC-I-0328 WC-I-0329 WC-I-0330 WC-I-0331 WC-I-0332 WC-I-0333 WC-I-0334 WC-I-0335 WC-I-0336 WC-I-0337 WC-I-0338 WC-I-0339 WC-I-0340 WC-I-0341 WC-I-0342 WC-I-0343 WC-I-0344 WC-I-0345 WC-I-0346 WC-I-0347 WC-I-0348 WC-I-0349 WC-I-0350 WC-I-0351 WC-I-0352 WC-I-0353 WC-I-0354 WC-I-0355 WC-I-0356 WC-I-0455	
+WC-C-089	Point of Sale in the mobile app	Point of Sale; POS	WC-I-0010 WC-I-0343 WC-I-0344 WC-I-0308 WC-I-0309 WC-I-0506 WC-I-0548	Split from WooPayments in-person payments (WC-C-014).
+WC-C-090	Mobile app and push notifications	WooCommerce mobile app; Push Notifications	WC-I-0422 WC-I-0203 WC-I-0204 WC-I-0348 WC-I-0622	
+WC-C-091	Order withdrawal requests	Order withdrawal	WC-I-0330 WC-I-0314 WC-I-0315	
+WC-C-092	Order fulfillments and shipping providers	Order Fulfillments; Shipping providers	WC-I-0345 WC-I-0020 WC-I-0131 WC-I-0310 WC-I-0311 WC-I-0312	
+WC-C-093	Cost of goods sold	Cost of Goods Sold	WC-I-0356	
+WC-C-094	Blueprint (export and import of store configuration)	Blueprint (beta)	WC-I-0028 WC-I-0339	
+WC-C-095	WooCommerce MCP (AI assistant access to the store)	WooCommerce MCP; Model Context Protocol	WC-I-0346	
+WC-C-096	AI features offered by Automattic	Artificial Intelligence; AI Guidelines	WC-I-0644	
+WC-C-097	Shopper lists (wishlists, save for later)	Wishlists; Save for Later in Cart; shopper-lists	WC-I-0350 WC-I-0351 WC-I-0179 WC-I-0180 WC-I-0181 WC-I-0182	
+WC-C-098	Saved payment methods (payment tokens)	Payment Token API; WooCommerce Customer Payment Tokens	WC-I-0438 WC-I-0360 WC-I-0364	Split from tokens held by WooPayments' partner (WC-C-042).
+WC-C-099	Reference data (countries, continents)	Data; data/countries; data/continents	WC-I-0124 WC-I-0125 WC-I-0126 WC-I-0488 WC-I-0210	
+WC-C-100	Subscriptions (recurring billing)	Subscriptions	WC-I-0534 WC-I-0609 WC-I-0616	
+WC-C-101	Bookings and appointments	Bookings and appointments	WC-I-0526 WC-I-0616	
+WC-C-102	Memberships	Memberships	WC-I-0523 WC-I-0616	
+WC-C-103	B2B selling (wholesale, quotes, B2B payments)	B2B; B2B payments	WC-I-0525	
+WC-C-104	Merchandising extensions (bundles, gifts, product options, pricing, display, variations, extra purchases, order options)	Merchandising; Bundles; Gifts; Product options; Pricing; Product display; Product variations; Additional purchases; Order options	WC-I-0497 WC-I-0527 WC-I-0528 WC-I-0532 WC-I-0530 WC-I-0531 WC-I-0533 WC-I-0524 WC-I-0529	
+WC-C-105	Conversion extensions (feedback, promotions, order recovery, loyalty, alerts, upsells)	Conversion	WC-I-0495 WC-I-0512 WC-I-0513 WC-I-0514 WC-I-0515 WC-I-0516 WC-I-0517	
+WC-C-106	Customer service extensions (accounts, live chat, customer management, post-purchase, support)	Customer service	WC-I-0496 WC-I-0518 WC-I-0519 WC-I-0520 WC-I-0521 WC-I-0522	
+WC-C-107	Store content and customization extensions (checkout features, media, search, page enhancements)	Store content and customizations	WC-I-0498 WC-I-0535 WC-I-0537 WC-I-0538 WC-I-0539	
+WC-C-108	International and localization extensions	International and localization	WC-I-0536	Split from multi-currency (WC-C-053) and store currency (WC-C-052).
+WC-C-109	Store management extensions (insights, import/export, order management, policy and security, notifications, accounting)	Store management	WC-I-0499 WC-I-0541 WC-I-0542 WC-I-0544 WC-I-0545 WC-I-0547 WC-I-0549	
+WC-C-110	Marketing extensions (advertising, automation, CRM, reporting, sales channels, SEO, email, social)	Marketing	WC-I-0500 WC-I-0550 WC-I-0551 WC-I-0552 WC-I-0553 WC-I-0554 WC-I-0555 WC-I-0556 WC-I-0557 WC-I-0617	Split from the core Marketing hub (WC-C-084).
+WC-C-111	Storefront design (themes and block patterns)	Themes; Choose your theme; Customize your store	WC-I-0490 WC-I-0418 WC-I-0419 WC-I-0082 WC-I-0178 WC-I-0194 WC-I-0200 WC-I-0612	
+WC-C-112	Business services (formation, legal, compliance, insurance, finance)	Business services	WC-I-0491 WC-I-0558 WC-I-0559 WC-I-0560 WC-I-0561 WC-I-0562 WC-I-0563 WC-I-0564 WC-I-0565 WC-I-0566 WC-I-0567	
+WC-C-113	Email marketing (MailPoet, a Woo service)	MailPoet	WC-I-0629	
+WC-C-114	WooAds (ad campaign data service)	WooAds	WC-I-0650	
+WC-C-118	EU VAT number collection and validation (EU VAT Number, a Woo-made extension)	EU VAT Number		Split from core tax rates (WC-C-054) and automated tax services (WC-C-055).

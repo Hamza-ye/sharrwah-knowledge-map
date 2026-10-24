@@ -1,0 +1,19 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Mon, 12 Oct 2026 10:50:50 GMT
+content-type: text/html
+x-amz-request-id: 2QDVASZMVVWYE4YA
+x-amz-id-2: RZH0kkJ2RijvkXiQ2/Xvi4+WM3d4xx9Gc/2IFwfCdSUFQIP58pI+9jHVr6BDyUMfQF8ZkqqFBkQ=
+server: cloudflare
+last-modified: Tue, 03 Feb 2026 00:50:12 GMT
+x-amz-version-id: fmxz9FKXTDn7l64BnFX76N.spoSQMOUP
+x-amz-server-side-encryption: AES256
+x-amz-replication-status: COMPLETED
+set-cookie: __cf_bm=eDg.jv8LkklG3S2AC34nudC7aoyCR94e2wRVT8l9sIg-1791802250.1367457-1.0.1.1-tedN0SRvv67NOOoeYO5K68To7cCpK9jDVisow7LGjeSF6rKdzrw0jEvprs6JEqx2uS9LzW7GkYcGtk6xB6t2oskCxC6GOkb90355WTkDJLX4Hg8xMSRpxjrARznzN6hzt.H_8Zdh9lxMafITLlXwFw; HttpOnly; SameSite=None; Secure; Path=/; Domain=global-e.com; Expires=Mon, 12 Oct 2026 11:20:50 GMT
+cache-control: public, max-age=1800
+expires: Mon, 12 Oct 2026 11:20:50 GMT
+cf-cache-status: HIT
+content-encoding: gzip
+cf-ray: a4958bbf5fe031b5-IAD
+

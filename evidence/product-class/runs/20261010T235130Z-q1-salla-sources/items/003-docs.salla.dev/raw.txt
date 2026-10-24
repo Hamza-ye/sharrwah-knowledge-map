@@ -1,0 +1,279 @@
+# Welcome 👋
+
+## Overview
+
+Welcome to the App Functions documentation for third-party developers. This comprehensive guide will help you build powerful, event-driven applications on Salla platform.
+## What are App Functions?
+
+App Functions allow you to embed custom logic directly into the lifecycle of merchant and customer activities on Salla. Write serverless functions that execute automatically when specific events occur in a store - no infrastructure to manage, automatic scaling, and seamless integration with Salla APIs.
+
+
+
+---
+
+## 📚 Documentation Structure
+
+### Core Documentation
+
+- 📖 **[What are App Functions?](https://docs.salla.dev/app-functions/what-are-app-functions.md)** — Introduction to App Functions, execution types, pricing, and benefits
+- 🚀 **[Get Started](https://docs.salla.dev/app-functions/get-started.md)** — Get started with your first App Function in minutes
+- 📋 **[Supported Events](https://docs.salla.dev/app-functions/supported-events.md)** — Complete list of all available merchant and customer events
+- 🧪 **[Testing App Functions](https://docs.salla.dev/app-functions/testing.md)** — Comprehensive guide to testing your App Functions
+
+### Event Reference
+
+The event directories contain detailed schemas and examples for all available events:
+
+- 🏷️ **Brand Events** — Brand creation, updates, and deletion
+- 📦 **Order Events** — Order lifecycle events
+- 🛍️ **Product Events** — Product management events
+- 👤 **Customer Events** — Customer account events
+- 🚚 **Shipment Events** — Shipping and fulfillment events
+- And many more...
+
+## Quick Links
+
+### Getting Started
+
+1. **[Read the Overview](https://docs.salla.dev/app-functions/welcome.md)** to understand App Functions
+2. **[Follow the Quick Start](https://docs.salla.dev/app-functions/get-started.md)** to create your first function
+3. **[Explore Supported Events](https://docs.salla.dev/app-functions/supported-events.md)** to find events for your use case
+4. **[Learn Testing](https://docs.salla.dev/app-functions/testing.md)** to validate your functions
+
+### Key Concepts
+
+#### Execution Types
+
+**Synchronous Actions** — Execute immediately, **block the user**, must respond in milliseconds (e.g., `shipment.creating`)
+
+**Asynchronous Events** — Process in the background after the operation completes (e.g., `order.created`)
+
+**Customer Events** — Triggered by storefront interactions, always asynchronous
+
+#### Context Object
+
+Every function receives a context object:
+
+```typescript
+{
+  merchant: {},              // Merchant info object
+  payload: {                 // Event payload object
+    event: string,           // Event name
+    created_at: string,      // ISO timestamp
+    data: { ... }            // Event-specific data
+  },
+  settings: { ... }          // Your app settings
+}
+```
+
+#### Pricing
+
+App Functions are currently in **beta** and **free of charge**. When generally available, pricing will be based on:
+
+- Number of function calls
+- Execution time
+- Resource usage
+
+## Common Use Cases
+
+### Merchant Events
+
+**Order Management** — Send confirmations, sync with fulfillment systems
+
+**Inventory Sync** — Update external inventory systems when products change
+
+**Shipping Integration** — Calculate rates, generate labels, track shipments
+
+**Customer Sync** — Update CRM systems with customer data
+
+**Analytics** — Track business metrics and generate reports
+
+### Customer Events
+
+**Behavior Tracking** — Monitor product views, searches, and interactions
+
+**Cart Recovery** — Send reminders for abandoned carts
+
+**Personalization** — Customize user experience based on behavior
+
+**Marketing** — Trigger campaigns based on customer actions
+
+**Analytics** — Track conversion funnels and user journeys
+
+## Example Function
+
+Here's a simple example that sends order data to a webhook:
+
+```typescript
+export default async (context: OrderCreatedContext): Promise<Resp> => {
+  // Destructure context for clarity
+  const { payload, settings, merchant } = context;
+  const order = payload.data; 
+
+  // 1. Prepare payload for the external webhook service
+  const webhookData = {
+    order_id: order.id,
+    reference: order.reference_id,
+    total: order.amounts.total,
+    currency: order.currency,
+    customer_email: order.customer.email,
+    timestamp: new Date().toISOString()
+  };
+
+  // 2. Call the external webhook URL defined in the app settings
+  const response = await fetch(settings.webhookUrl, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${settings.apiKey}` // API key stored in settings
+    },
+    body: JSON.stringify(webhookData)
+  });
+
+  if (!response.ok) {
+    // Handle errors gracefully
+    console.error('Error sending webhook:', error);
+    return Resp.error()
+      .setMessage(response.statusText || 'Unknown error')
+      .setStatus(500)
+      .setData({ error_type: response.text() });
+  }
+
+  // 4. Return success with relevant data
+  const data = { 
+    order_id: order.id,
+    webhook_status: response.status
+  };
+  /*
+    * The .setData() should be called mandatorily. (Pass {} as default)
+    * The .setStatus() is optionallly called. The default status is 200.
+    * The .setMessage() is optional. 
+    * Incase there is any error invoke Resp.error().
+  */
+  const response = Resp.success().setData(data)
+
+  return response;
+}
+```
+
+## Best Practices
+
+### Keep Functions Focused
+
+Each function should have a single, clear purpose. Break complex logic into multiple functions.
+
+### Use Settings for Configuration
+
+Store API keys, URLs, and feature flags in app settings, not in code.
+
+### Return Consistent Responses
+
+Always return an object with a `success` boolean and relevant data or error information.
+
+### Test Thoroughly
+
+Test with various scenarios including success cases, failures, and edge cases.
+
+### Validate Input Data
+
+Check that required data exists before using it to prevent runtime errors.
+
+### Keep Responses Small
+
+Return only necessary data. Large responses can slow down execution and make debugging difficult.
+
+## Available Events
+
+### Merchant Events (50+ events)
+
+**Orders** — created, updated, cancelled, refunded, etc.
+
+**Products** — added, updated, deleted, quantity low, etc.
+
+**Shipments** — creating (sync), created, cancelled, updated
+
+**Customers** — created, updated, login, OTP request
+
+**Brands** — created, updated, deleted
+
+**Categories** — created, updated
+
+**Store** — branch management, tax configuration
+
+**Cart** — abandoned cart
+
+**Coupons** — applied
+
+**Invoices** — created
+
+**Special Offers** — created, updated
+
+**Reviews** — added
+
+**Checkout** — started, step completed
+
+### Customer E-commerce Events (25+ events)
+
+**Product Interactions** — viewed, clicked, searched, shared, reviewed
+
+**Cart & Checkout** — product added/removed, cart viewed/updated, checkout flow
+
+**Promotions** — viewed, clicked, coupon entered/applied/denied/removed
+
+**Wishlist** — product added/removed, added to cart
+
+**User Account** — signed in/up/out, profile updated
+
+## Resources
+
+### Documentation
+
+**Salla Developer Docs** — [**Salla Developer Docs**](https://docs.salla.dev)
+
+**API Reference** — [Salla API Documentation](https://docs.salla.dev/426392m0)
+
+**Webhooks Guide** — [Webhooks, Scopes & Events](https://docs.salla.dev/421119m0)
+
+### Tools
+
+**Partner Portal** — [portal.salla.partners](https://portal.salla.partners)
+
+**Demo Stores** — [Testing with Demo Stores](https://salla.dev/blog/how-to-test-your-app-using-salla-demo-stores/)
+
+**App Settings** — [Building App Settings](https://salla.dev/blog/how-to-build-app-settings-form/)
+
+### Support
+
+**Community** — Join our developer community
+
+**Partner Portal** — Access support through the portal
+
+**Documentation** — Comprehensive guides and references
+
+## TypeScript Support
+
+All events have TypeScript interfaces for better development experience:
+
+```typescript
+export default async (context: OrderCreatedContext): Promise<Resp> => {
+  // TypeScript provides autocomplete and type checking
+  const orderId = context.payload.data.id;
+  const orderStatus = context.payload.data.status;
+  
+  return Resp.success().setData({});
+}
+```
+
+---
+
+## Next Steps
+
+Ready to get started? Follow these steps:
+
+1. **[Read The Overview](https://docs.salla.dev/app-functions/welcome.md)** - Understand the fundamentals
+2. **[Complete Quick Start](https://docs.salla.dev/app-functions/get-started.md)** - Build your first function
+3. **[Explore Events](https://docs.salla.dev/app-functions/supported-events.md)** - Find the right events for your app
+4. **[Test Your Functions](https://docs.salla.dev/app-functions/testing.md)** - Ensure everything works correctly
+5. **[Review Event Schemas](https://docs.salla.dev/app-functions/testing.md)** - Understand the data structures
+
+Happy coding! 🚀

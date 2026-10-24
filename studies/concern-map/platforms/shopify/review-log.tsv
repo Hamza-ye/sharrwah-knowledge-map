@@ -1,0 +1,762 @@
+concern_id	placement	statement	cite_ids	action	reason
+SH-C-167	where	"path":"playground/frame"	SH-S-5005	dropped	route playground:frame is titled "Playground - Frame"; the router does not tie it to apps developed in the admin
+SH-C-020	where	"path":"gift_cards/products/new"	SH-S-5013	dropped	route giftcard:create (path gift_cards/products/new) is the gift card product route; added under SH-C-025 with the same citation
+SH-C-020	decides	"eligibility":{"permissions":["MANAGE_PRODUCTS"],"entitlements":["products"]}	SH-S-5014	dropped	eligibility stated on route giftcard:create, the gift card product route; added under SH-C-025 with the same citation
+SH-C-020	decides	"eligibility":{"permissions":["PRODUCTS"]}	SH-S-5019	dropped	eligibility stated on routes product:purchase_options:update and product:variant:purchase_options:update (purchase options); added under SH-C-186 with the same citation
+SH-C-020	decides	"eligibility":{"permissions":["PRODUCTS"],"clients":["native"]}	SH-S-5020	dropped	eligibility stated on the products' publications routes (products:update:publications and variants); added under SH-C-135 with the same citation
+SH-C-020	decides	"eligibility":{"permissions":["PRODUCTS"],"entitlements":["products","inventory.	SH-S-5022	dropped	eligibility stated on route inventoryItem:edit, the inventory item route; added under SH-C-022 with the same citation
+SH-C-020	decides	"eligibility":{"permissions":["OVERVIEWS"]}	SH-S-5023	dropped	eligibility stated on route products:analytics; added under SH-C-145 with the same citation
+SH-C-020	decides	"eligibility":{"permissions":["MANAGE_INVENTORY"]}	SH-S-5024	dropped	eligibility stated on routes products:update:locations (inventory at locations); added under SH-C-022 with the same citation
+SH-C-156	decides	"eligibility":{"permissions":["APPLICATIONS"],"oneOf":[{"permissions":["EDIT_PRI	SH-S-5038	dropped	eligibility stated on route apps:development_list (apps developed in the admin); added under SH-C-167 with the same citation
+SH-C-088	decides	"eligibility":{"permissions":["VIEW_TAX_DOCUMENTS"]}	SH-S-5045	dropped	eligibility stated on 1099 tax-form routes; added under SH-C-099 with the same citation
+SH-C-088	decides	"eligibility":{"features":["hasInitiatedOnboardingToBanking"],"permissions":["VI	SH-S-5054	dropped	eligibility stated on route finance:tax-forms:1099-misc; added under SH-C-099 with the same citation
+SH-C-015	where	"path":"charges/:appId/pricing_plans"	SH-S-5061	dropped	route billing:app-selector:list (charges/:appId/pricing_plans) is an app charge route; added under SH-C-019 with the same citation
+SH-C-015	where	"path":"invoices/:id/complete_payment_authentication"	SH-S-5062	dropped	route billing:invoice-complete-auth:list concerns invoices (bills), not the plan; added under SH-C-016 with the same citation
+SH-C-015	where	"path":"charges/:appId/:chargeId/:chargeType/complete_payment_authentication"	SH-S-5063	dropped	route billing:ot-complete-auth:list is an app charge authentication route; added under SH-C-019 with the same citation
+SH-C-015	where	"path":"invoices/authenticate_payment"	SH-S-5064	dropped	route billing:payment-auth-redirect:approval:list concerns invoices (bills), not the plan; added under SH-C-016 with the same citation
+SH-C-015	where	"path":"charges/:appId/:chargeId/:chargeType/:chargeTypeUrl"	SH-S-5065	dropped	route billing:charge:approval:list is the app charge approval route; added under SH-C-019 with the same citation
+SH-C-015	where	"path":"access_account"	SH-S-5068	dropped	route inactive-account (access_account) is the inactive store's page; added under SH-C-014 with the same citation
+SH-C-015	where	"path":"charges/:appId/plans/:planHandle"	SH-S-5078	dropped	route billing:managed-pricing:charge-approval is an app charge approval route; added under SH-C-019 with the same citation
+SH-C-015	where	"path":"account_review"	SH-S-5079	dropped	route pending-termination (account_review) is the pending-termination page; added under SH-C-014 with the same citation
+SH-C-015	where	"path":"reactivation"	SH-S-5085	dropped	route reactivation:root is the reactivation page; added under SH-C-014 with the same citation
+SH-C-015	decides	"eligibility":{"permissions":["BILLING_APPLICATION_CHARGES"]}	SH-S-5066	dropped	eligibility stated on the app charge approval routes; added under SH-C-019 with the same citation
+SH-C-015	decides	"eligibility":{"clients":["web"]}	SH-S-5067	dropped	eligibility stated on the app charge approval sub-routes; added under SH-C-019 with the same citation
+SH-C-015	decides	"eligibility":{"oneOf":[{"permissions":["BILLING_INVOICES_VIEW"]},{"permissions"	SH-S-5069	dropped	eligibility stated on route inactive-account:list; added under SH-C-014 with the same citation
+SH-C-015	decides	"eligibility":{"oneOf":[{"permissions":["BILLING_INVOICES_VIEW"]},{"permissions"	SH-S-5070	dropped	eligibility stated on the inactive-account checkout, reactivate and reopen routes; added under SH-C-014 with the same citation
+SH-C-015	decides	"eligibility":{"permissions":["BILLING_PAYMENT_METHODS_VIEW","BILLING_INVOICES_V	SH-S-5072	dropped	eligibility stated on an inactive account's invoice route; added under SH-C-016 with the same citation
+SH-C-015	decides	"eligibility":{"oneOf":[{"organizationPermissions":["VIEW_BILLING"]},{"organizat	SH-S-5073	dropped	eligibility stated on credit-note export routes of invoices; added under SH-C-016 with the same citation
+SH-C-015	decides	"eligibility":{"permissions":["BILLING_INVOICES_VIEW"]}	SH-S-5074	dropped	eligibility stated on billing-history routes; added under SH-C-016 with the same citation
+SH-C-015	decides	"eligibility":{"permissions":["BILLING_SUBSCRIPTIONS","BILLING_PAYMENT_METHODS_V	SH-S-5075	dropped	eligibility stated on route inactive-account-pay-bills:list; added under SH-C-016 with the same citation
+SH-C-015	decides	"eligibility":{"betas":["7aca6635"],"oneOf":[{"organizationPermissions":["VIEW_B	SH-S-5076	dropped	eligibility stated on billing profile and charges routes; added under SH-C-016 with the same citation
+SH-C-015	decides	"eligibility":{"organizationPermissions":["MANAGE_BILLING"]}	SH-S-5077	dropped	eligibility stated on billing-profile payment-method routes; added under SH-C-016 with the same citation
+SH-C-015	decides	"eligibility":{"permissions":["VIEW_TAX_DOCUMENTS"]}	SH-S-5045	dropped	eligibility stated on 1099-K tax-form routes; added under SH-C-099 with the same citation
+SH-C-015	decides	"eligibility":{"permissions":["SHOPIFY_PAYMENTS"]}	SH-S-5080	dropped	eligibility stated on route pending-termination:payments; added under SH-C-014 with the same citation
+SH-C-015	decides	"eligibility":{"permissions":["SHOPIFY_PAYMENTS_ACCOUNTS","SHOPIFY_PAYMENTS_TRAN	SH-S-5081	dropped	eligibility stated on route pending-termination:payments:payouts; added under SH-C-014 with the same citation
+SH-C-015	decides	"eligibility":{"permissions":["APPLICATIONS","APPLICATIONS_BILLING","BILLING_SUB	SH-S-5083	dropped	eligibility stated on route plan:subscriptions, titled "Active subscriptions" (app subscriptions); added under SH-C-019 with the same citation
+SH-C-015	decides	"eligibility":{"permissions":["BILLING_CHARGES","BILLING_INVOICES_VIEW","BILLING	SH-S-5087	dropped	eligibility stated on route billing:list; added under SH-C-016 with the same citation
+SH-C-015	decides	"eligibility":{"permissions":["BILLING_INVOICES_VIEW","BILLING_PAYMENT_METHODS_V	SH-S-5088	dropped	eligibility stated on invoice list routes; added under SH-C-016 with the same citation
+SH-C-015	decides	"eligibility":{"oneOf":[{"organizationPermissions":["VIEW_BILLING"]},{"organizat	SH-S-5089	dropped	eligibility stated on route billing:next:charges:list; added under SH-C-016 with the same citation
+SH-C-016	where	"path":"charges/:appId/pricing_plans"	SH-S-5061	dropped	route billing:app-selector:list is an app charge route; added under SH-C-019 with the same citation
+SH-C-016	where	"path":"charges/:appId/:chargeId/:chargeType/complete_payment_authentication"	SH-S-5063	dropped	route billing:ot-complete-auth:list is an app charge authentication route; added under SH-C-019 with the same citation
+SH-C-016	where	"path":"charges/:appId/:chargeId/:chargeType/:chargeTypeUrl"	SH-S-5065	dropped	route billing:charge:approval:list is the app charge approval route; added under SH-C-019 with the same citation
+SH-C-016	where	"path":"access_account"	SH-S-5068	dropped	route inactive-account (access_account) is the inactive store's page; added under SH-C-014 with the same citation
+SH-C-016	where	"path":"charges/:appId/plans/:planHandle"	SH-S-5078	dropped	route billing:managed-pricing:charge-approval is an app charge approval route; added under SH-C-019 with the same citation
+SH-C-016	where	"path":"account_review"	SH-S-5079	dropped	route pending-termination (account_review) is the pending-termination page; added under SH-C-014 with the same citation
+SH-C-016	where	"path":"reactivation"	SH-S-5085	dropped	route reactivation:root is the reactivation page; added under SH-C-014 with the same citation
+SH-C-016	where	"path":"access_account/subscription/pick_period/:plan/:period"	SH-S-5086	dropped	route inactive-account:subscription:pick_period picks a plan's billing period; added under SH-C-015 with the same citation
+SH-C-016	where	"path":"subscription/pick_period/:plan/:period"	SH-S-5090	dropped	route subscription:pick_period picks a plan's billing period; added under SH-C-015 with the same citation
+SH-C-016	decides	"eligibility":{"permissions":["BILLING_APPLICATION_CHARGES"]}	SH-S-5066	dropped	eligibility stated on the app charge approval routes; added under SH-C-019 with the same citation
+SH-C-016	decides	"eligibility":{"clients":["web"]}	SH-S-5067	dropped	eligibility stated on the app charge approval sub-routes; added under SH-C-019 with the same citation
+SH-C-016	decides	"eligibility":{"oneOf":[{"permissions":["BILLING_INVOICES_VIEW"]},{"permissions"	SH-S-5069	dropped	eligibility stated on route inactive-account:list; added under SH-C-014 with the same citation
+SH-C-016	decides	"eligibility":{"oneOf":[{"permissions":["BILLING_INVOICES_VIEW"]},{"permissions"	SH-S-5070	dropped	eligibility stated on the inactive-account checkout, reactivate and reopen routes; added under SH-C-014 with the same citation
+SH-C-016	decides	"eligibility":{"permissions":["BILLING_SUBSCRIPTIONS","BILLING_PAYMENT_METHODS_V	SH-S-5071	dropped	eligibility stated on POS plan subscription routes; added under SH-C-015 with the same citation
+SH-C-016	decides	"eligibility":{"permissions":["VIEW_TAX_DOCUMENTS"]}	SH-S-5045	dropped	eligibility stated on 1099-K tax-form routes; added under SH-C-099 with the same citation
+SH-C-016	decides	"eligibility":{"permissions":["SHOPIFY_PAYMENTS"]}	SH-S-5080	dropped	eligibility stated on route pending-termination:payments; added under SH-C-014 with the same citation
+SH-C-016	decides	"eligibility":{"permissions":["SHOPIFY_PAYMENTS_ACCOUNTS","SHOPIFY_PAYMENTS_TRAN	SH-S-5081	dropped	eligibility stated on route pending-termination:payments:payouts; added under SH-C-014 with the same citation
+SH-C-016	decides	"eligibility":{"oneOf":[{"organizationFeatures":["ORGANIZATION_BILLING"],"organi	SH-S-5082	dropped	eligibility stated on route plan (the plan page); added under SH-C-015 with the same citation
+SH-C-016	decides	"eligibility":{"permissions":["APPLICATIONS","APPLICATIONS_BILLING","BILLING_SUB	SH-S-5083	dropped	eligibility stated on route plan:subscriptions, titled "Active subscriptions" (app subscriptions); added under SH-C-019 with the same citation
+SH-C-016	decides	"eligibility":{"organizationFlags":["7351e1b4"],"permissions":["BILLING_SUBSCRIP	SH-S-5084	dropped	eligibility stated on Plus self-renewal and downgrade routes of the plan page; added under SH-C-015 with the same citation
+SH-C-047	where	"path":"settings/checkout/editor"	SH-S-5103	dropped	route checkout-accounts-editor (settings/checkout/editor) is the checkout editor; added under SH-C-048 with the same citation
+SH-C-047	where	"path":"subscribe"	SH-S-5107	dropped	route merchant-checkout:subscribe:root (subscribe) is the merchant's own checkout for subscribing to a plan; added under SH-C-015 with the same citation
+SH-C-047	decides	"eligibility":{"permissions":["MANAGE_CHECKOUT_SETTINGS"]}	SH-S-5104	dropped	eligibility stated on the checkout editor and scripts-report routes; added under SH-C-048 with the same citation
+SH-C-047	decides	"eligibility":{"permissions":["APPLICATIONS"],"entitlements":["webCheckout"]}	SH-S-5105	dropped	eligibility stated on route checkout-settings:customizations-report:list; added under SH-C-048 with the same citation
+SH-C-047	decides	"eligibility":{"oneOf":[{"permissions":["BILLING_INVOICES_VIEW"]},{"permissions"	SH-S-5070	dropped	eligibility stated on the merchant checkout's plan subscription routes; added under SH-C-015 with the same citation
+SH-C-027	decides	"eligibility":{"oneOf":[{"permissions":["CONTENT_ENTRIES_VIEW"]},{"permissions":	SH-S-5121	dropped	eligibility stated on metaobject routes; added under SH-C-028 with the same citation
+SH-C-027	decides	"eligibility":{"entitlements":["storefront.enabled"],"permissions":["LINKS"]}	SH-S-5123	dropped	eligibility stated on menu and redirect routes; added under SH-C-031 with the same citation
+SH-C-027	decides	"eligibility":{"entitlements":["storefront.enabled"],"permissions":["PAGES"]}	SH-S-5124	dropped	eligibility stated on blog, article and comment routes; added under SH-C-030 with the same citation
+SH-C-028	decides	"eligibility":{"permissions":["VIEW_FILES"]}	SH-S-5122	dropped	eligibility stated on file routes; added under SH-C-027 with the same citation
+SH-C-028	decides	"eligibility":{"entitlements":["storefront.enabled"],"permissions":["LINKS"]}	SH-S-5123	dropped	eligibility stated on menu and redirect routes; added under SH-C-031 with the same citation
+SH-C-028	decides	"eligibility":{"entitlements":["storefront.enabled"],"permissions":["PAGES"]}	SH-S-5124	dropped	eligibility stated on blog, article and comment routes; added under SH-C-030 with the same citation
+SH-C-030	decides	"eligibility":{"oneOf":[{"permissions":["CONTENT_ENTRIES_VIEW"]},{"permissions":	SH-S-5121	dropped	eligibility stated on metaobject routes; added under SH-C-028 with the same citation
+SH-C-030	decides	"eligibility":{"permissions":["VIEW_FILES"]}	SH-S-5122	dropped	eligibility stated on file routes; added under SH-C-027 with the same citation
+SH-C-030	decides	"eligibility":{"entitlements":["storefront.enabled"],"permissions":["LINKS"]}	SH-S-5123	dropped	eligibility stated on menu and redirect routes; added under SH-C-031 with the same citation
+SH-C-031	decides	"eligibility":{"oneOf":[{"permissions":["CONTENT_ENTRIES_VIEW"]},{"permissions":	SH-S-5121	dropped	eligibility stated on metaobject routes; added under SH-C-028 with the same citation
+SH-C-031	decides	"eligibility":{"permissions":["VIEW_FILES"]}	SH-S-5122	dropped	eligibility stated on file routes; added under SH-C-027 with the same citation
+SH-C-031	decides	"eligibility":{"entitlements":["storefront.enabled"],"permissions":["PAGES"]}	SH-S-5124	dropped	eligibility stated on blog, article and comment routes; added under SH-C-030 with the same citation
+SH-C-041	decides	"eligibility":{"permissions":["MANAGE_CUSTOMER_IDENTITY_PROVIDERS"]}	SH-S-5137	dropped	eligibility stated on the customer authentication and identity provider routes; added under SH-C-042 with the same citation
+SH-C-039	decides	"eligibility":{"entitlements":["customerSegmentation"]}	SH-S-5143	dropped	eligibility stated on route customer-segments; added under SH-C-040 with the same citation
+SH-C-039	decides	"eligibility":{"clients":["native"],"permissions":["ORDERS"]}	SH-S-5144	dropped	eligibility stated on route customer-subscriptions:show; added under SH-C-186 with the same citation
+SH-C-039	decides	"eligibility":{"clients":["native"],"permissions":["CREATE_STORE_CREDIT_ACCOUNT_	SH-S-5147	dropped	eligibility stated on a store credit route; added under SH-C-026 with the same citation
+SH-C-039	decides	"eligibility":{"permissions":["VIEW_STORE_CREDIT_ACCOUNT_TRANSACTIONS"]}	SH-S-5148	dropped	eligibility stated on a store credit route; added under SH-C-026 with the same citation
+SH-C-039	decides	"eligibility":{"clients":["native"],"permissions":["CREATE_AND_EDIT_CUSTOMERS"]}	SH-S-5149	dropped	eligibility stated on route customer:mobile:edit-marketing-status; added under SH-C-043 with the same citation
+SH-C-059	where	"path":"money"	SH-S-5158	dropped	route money is the finances overview, not order risk
+SH-C-059	where	"path":"finances/*"	SH-S-5160	dropped	route finance:finances-redirect is a redirect of the Finance area, not order risk
+SH-C-059	where	"path":"finance"	SH-S-5161	dropped	route finance is the Finance area, not order risk
+SH-C-059	decides	"eligibility":{"betas":["8c7faba1"],"features":["financesOverview"]}	SH-S-5159	dropped	eligibility of route money (finances overview), not order risk
+SH-C-059	decides	"eligibility":{"features":["financesOverview"]}	SH-S-5162	dropped	eligibility of route finance:dashboard, not order risk
+SH-C-059	decides	"eligibility":{"features":["financesOverview"],"betas":["747a1ad6"],"permissions	SH-S-5164	dropped	eligibility stated on route finance:risk:disputes; added under SH-C-072 with the same citation
+SH-C-059	decides	"eligibility":{"permissions":["VIEW_PAYOUTS"]}	SH-S-5165	dropped	eligibility stated on the payout reconciliation report route; added under SH-C-069 with the same citation
+SH-C-059	decides	"eligibility":{"features":["canAccessBillPay"]}	SH-S-5166	dropped	eligibility stated on route finance:billpay; added under SH-C-098 with the same citation
+SH-C-059	decides	"eligibility":{"entitlements":["shopifyFinance.billPay"],"features":["canAccessB	SH-S-5167	dropped	eligibility stated on route finance:billpay:redirect; added under SH-C-098 with the same citation
+SH-C-069	where	"path":"money"	SH-S-5158	dropped	route money is the finances overview, not payouts
+SH-C-069	where	"path":"finances/*"	SH-S-5160	dropped	route finance:finances-redirect is a redirect of the Finance area, not payouts
+SH-C-069	where	"path":"finance"	SH-S-5161	dropped	route finance is the Finance area, not payouts
+SH-C-069	decides	"eligibility":{"betas":["8c7faba1"],"features":["financesOverview"]}	SH-S-5159	dropped	eligibility of route money (finances overview), not payouts
+SH-C-069	decides	"eligibility":{"features":["financesOverview"]}	SH-S-5162	dropped	eligibility of route finance:dashboard, not payouts
+SH-C-069	decides	"eligibility":{"features":["financesOverview"],"betas":["747a1ad6"]}	SH-S-5163	dropped	eligibility stated on the finance:risk routes (risk lists and rules); added under SH-C-059 with the same citation
+SH-C-069	decides	"eligibility":{"features":["financesOverview"],"betas":["747a1ad6"],"permissions	SH-S-5164	dropped	eligibility stated on route finance:risk:disputes; added under SH-C-072 with the same citation
+SH-C-069	decides	"eligibility":{"features":["canAccessBillPay"]}	SH-S-5166	dropped	eligibility stated on route finance:billpay; added under SH-C-098 with the same citation
+SH-C-069	decides	"eligibility":{"entitlements":["shopifyFinance.billPay"],"features":["canAccessB	SH-S-5167	dropped	eligibility stated on route finance:billpay:redirect; added under SH-C-098 with the same citation
+SH-C-098	where	"path":"money"	SH-S-5158	dropped	route money is the finances overview, not Bill Pay
+SH-C-098	where	"path":"finances/*"	SH-S-5160	dropped	route finance:finances-redirect is a redirect of the Finance area, not Bill Pay
+SH-C-098	where	"path":"finance"	SH-S-5161	dropped	route finance is the Finance area, not Bill Pay
+SH-C-098	decides	"eligibility":{"betas":["8c7faba1"],"features":["financesOverview"]}	SH-S-5159	dropped	eligibility of route money (finances overview), not Bill Pay
+SH-C-098	decides	"eligibility":{"features":["financesOverview"]}	SH-S-5162	dropped	eligibility of route finance:dashboard, not Bill Pay
+SH-C-098	decides	"eligibility":{"features":["financesOverview"],"betas":["747a1ad6"]}	SH-S-5163	dropped	eligibility stated on the finance:risk routes (risk lists and rules); added under SH-C-059 with the same citation
+SH-C-098	decides	"eligibility":{"features":["financesOverview"],"betas":["747a1ad6"],"permissions	SH-S-5164	dropped	eligibility stated on route finance:risk:disputes; added under SH-C-072 with the same citation
+SH-C-098	decides	"eligibility":{"permissions":["VIEW_PAYOUTS"]}	SH-S-5165	dropped	eligibility stated on the payout reconciliation report route; added under SH-C-069 with the same citation
+SH-C-014	where	"path":"user_presence_confirmation_callback"	SH-S-5168	dropped	route authentication-challenge-callback is a sign-in callback, not store suspension or closure
+SH-C-022	where	"path":"purchase_orders"	SH-S-5179	dropped	route purchaseOrder (purchase_orders) is the purchase order route; added under SH-C-023 with the same citation
+SH-C-022	where	"path":"suppliers"	SH-S-5184	dropped	route suppliers belongs with purchase orders; added under SH-C-023 with the same citation
+SH-C-022	where	"path":"transfers"	SH-S-5187	dropped	route transfers is the inventory transfer route; added under SH-C-023 with the same citation
+SH-C-022	decides	"eligibility":{"oneOf":[{"organizationFlags":["a07955ff"],"permissions":["VIEW_I	SH-S-5180	dropped	eligibility stated on purchase order routes; added under SH-C-023 with the same citation
+SH-C-022	decides	"eligibility":{"oneOf":[{"organizationFlags":["a07955ff"],"permissions":["VIEW_I	SH-S-5181	dropped	eligibility stated on purchase order routes; added under SH-C-023 with the same citation
+SH-C-022	decides	"eligibility":{"oneOf":[{"organizationFlags":["a07955ff"],"permissions":["VIEW_I	SH-S-5182	dropped	eligibility stated on purchase order routes; added under SH-C-023 with the same citation
+SH-C-022	decides	"eligibility":{"oneOf":[{"organizationFlags":["a07955ff"],"permissions":["VIEW_I	SH-S-5183	dropped	eligibility stated on purchase order routes; added under SH-C-023 with the same citation
+SH-C-022	decides	"eligibility":{"permissions":["PRODUCTS","MANAGE_INVENTORY"],"entitlements":["pr	SH-S-5185	dropped	eligibility stated on route suppliers; added under SH-C-023 with the same citation
+SH-C-022	decides	"eligibility":{"permissions":["PRODUCTS"]}	SH-S-5019	dropped	eligibility stated on route inventorySupplier:create; added under SH-C-023 with the same citation
+SH-C-022	decides	"eligibility":{"permissions":["PRODUCTS","MANAGE_INVENTORY"]}	SH-S-5186	dropped	eligibility stated on route inventorySupplier:details; added under SH-C-023 with the same citation
+SH-C-022	decides	"eligibility":{"permissions":["PRODUCTS","VIEW_INVENTORY_TRANSFERS"],"entitlemen	SH-S-5188	dropped	eligibility stated on route transfers; added under SH-C-023 with the same citation
+SH-C-022	decides	"eligibility":{"permissions":["PRODUCTS","VIEW_INVENTORY_TRANSFERS"]}	SH-S-5189	dropped	eligibility stated on inventory transfer routes; added under SH-C-023 with the same citation
+SH-C-022	decides	"eligibility":{"permissions":["PRODUCTS","VIEW_INVENTORY_TRANSFERS","CREATE_AND_	SH-S-5190	dropped	eligibility stated on route inventoryTransfer:create; added under SH-C-023 with the same citation
+SH-C-022	decides	"eligibility":{"permissions":["PRODUCTS","VIEW_INVENTORY_TRANSFERS","MANAGE_INVE	SH-S-5191	dropped	eligibility stated on inventory shipment routes; added under SH-C-023 with the same citation
+SH-C-106	decides	"eligibility":{"permissions":["MANAGE_PAYMENTS_SETTINGS"]}	SH-S-5092	dropped	eligibility stated on the managed market routes; added under SH-C-110 with the same citation
+SH-C-106	decides	"eligibility":{"permissions":["MANAGE_PAYMENTS_SETTINGS"],"oneOf":[{"permissions	SH-S-5204	dropped	eligibility stated on the managed market deactivation routes; added under SH-C-110 with the same citation
+SH-C-153	where	"path":"mobile-sidekick"	SH-S-5208	dropped	route sidekick:mobile (mobile-sidekick, section MobileChat) is Sidekick on mobile, not Shopify Inbox; added under SH-C-152 with the same citation
+SH-C-029	decides	"eligibility":{"entitlements":["storefront.enabled"],"permissions":["PAGES"]}	SH-S-5124	dropped	eligibility stated on the online store's page routes; added under SH-C-030 with the same citation
+SH-C-054	where	"path":"draft_orders"	SH-S-5212	dropped	route draftOrders (draft_orders) is the draft order route; added under SH-C-055 with the same citation
+SH-C-054	decides	"eligibility":{"entitlements":["storefront.enabled"],"permissions":["DRAFT_ORDER	SH-S-5213	dropped	eligibility stated on route draftOrders; added under SH-C-055 with the same citation
+SH-C-054	decides	"eligibility":{"permissions":["CREATE_AND_EDIT_DRAFT_ORDERS"]}	SH-S-5214	dropped	eligibility stated on route draftOrders:new; added under SH-C-055 with the same citation
+SH-C-054	decides	"eligibility":{"betas":[],"clients":[],"features":[],"permissions":[],"plans":[]	SH-S-5217	dropped	the eligibility object of route order:pay_by_creditcard_on_mobile states no condition (every list is empty)
+SH-C-054	decides	"eligibility":{"permissions":["EDIT_ORDERS"]}	SH-S-5219	dropped	eligibility stated on order edit routes; added under SH-C-056 with the same citation
+SH-C-054	decides	"eligibility":{"oneOf":[{"permissions":["REFUND_ORDERS"]},{"permissions":["REFUN	SH-S-5222	dropped	eligibility stated on route order:refund:create; added under SH-C-057 with the same citation
+SH-C-054	decides	"eligibility":{"permissions":["RETURN_ORDERS"]}	SH-S-5223	dropped	eligibility stated on return creation routes; added under SH-C-058 with the same citation
+SH-C-054	decides	"eligibility":{"features":["fulfillmentBatchingEligible"]}	SH-S-5224	dropped	eligibility stated on fulfillment batch and scan-to-verify routes; added under SH-C-118 with the same citation
+SH-C-054	decides	"eligibility":{"clients":["native"]}	SH-S-5145	dropped	eligibility stated on route order:mobile:release-fulfillment-holds; added under SH-C-118 with the same citation
+SH-C-054	decides	"eligibility":{"permissions":["PAY_ORDERS_BY_VAULTED_CARD"]}	SH-S-5225	dropped	eligibility stated on route order:mobile:pay-order-by-vaulted; added under SH-C-085 with the same citation
+SH-C-054	decides	"eligibility":{"clients":["native"],"permissions":["ORDERS"]}	SH-S-5144	dropped	eligibility stated on route order:mobile:record-payment; added under SH-C-079 with the same citation
+SH-C-054	decides	"eligibility":{"permissions":["MARKETING_SECTION"]}	SH-S-5226	dropped	eligibility stated on route order:mobile:conversion-summary; added under SH-C-131 with the same citation
+SH-C-054	decides	"eligibility":{"clients":["web"],"permissions":["QUICK_SALE"]}	SH-S-5227	dropped	eligibility stated on route orders:quick-sale-redirect; added under SH-C-142 with the same citation
+SH-C-003	decides	"eligibility":{"organizationPermissions":["MANAGE_BILLING"]}	SH-S-5077	dropped	eligibility stated on the organization's billing-profile routes; added under SH-C-016 with the same citation
+SH-C-003	decides	"eligibility":{"oneOf":[{"organizationPermissions":["VIEW_BILLING"]},{"organizat	SH-S-5073	dropped	eligibility stated on the organization's invoice and charges routes; added under SH-C-016 with the same citation
+SH-C-003	decides	"eligibility":{"organizationFeatures":["CENTRAL_LEGAL_ENTITIES"],"organizationPe	SH-S-5229	dropped	eligibility stated on the organization's business-details routes; added under SH-C-004 with the same citation
+SH-C-003	decides	"eligibility":{"organizationFeatures":["CENTRAL_LEGAL_ENTITIES"],"organizationPe	SH-S-5230	dropped	eligibility stated on the organization's business-details routes; added under SH-C-004 with the same citation
+SH-C-003	decides	"eligibility":{"features":["centralLegalEntitiesEnabled"],"organizationFeatures"	SH-S-5231	dropped	eligibility stated on the organization's business-entities route; added under SH-C-004 with the same citation
+SH-C-003	decides	"eligibility":{"oneOf":[{"features":["hasOrgSettings"]},{"features":["rbacEnable	SH-S-5233	dropped	eligibility stated on the organization's accounts (users) routes; added under SH-C-009 with the same citation
+SH-C-003	decides	"eligibility":{"organizationFeatures":["ROLES"]}	SH-S-5234	dropped	eligibility stated on the organization's roles routes; added under SH-C-010 with the same citation
+SH-C-003	decides	"eligibility":{"oneOf":[{"organizationPermissions":["VIEW_ORGANIZATION_ROLES"]},	SH-S-5235	dropped	eligibility stated on the organization's roles list routes; added under SH-C-010 with the same citation
+SH-C-003	decides	"eligibility":{"oneOf":[{"organizationPermissions":["CREATE_UPDATE_ORGANIZATION_	SH-S-5236	dropped	eligibility stated on the organization's role creation routes; added under SH-C-010 with the same citation
+SH-C-003	decides	"eligibility":{"oneOf":[{"features":["hasOrgSettings"],"organizationFeatures":["	SH-S-5237	dropped	eligibility stated on the organization's user groups routes; added under SH-C-010 with the same citation
+SH-C-003	decides	"eligibility":{"oneOf":[{"organizationFeatures":["MFA_MANAGEMENT"],"organization	SH-S-5238	dropped	eligibility stated on the organization's account security route; added under SH-C-007 with the same citation
+SH-C-003	decides	"eligibility":{"organizationPermissions":["VIEW_ALL_AUDIT_EVENTS"],"features":["	SH-S-5239	dropped	eligibility stated on the organization's activity log routes; added under SH-C-012 with the same citation
+SH-C-003	decides	"eligibility":{"organizationPermissions":["INVITE_USERS"]}	SH-S-5240	dropped	eligibility stated on the organization's user invitation routes; added under SH-C-009 with the same citation
+SH-C-003	decides	"eligibility":{"organizationFeatures":["PARTNER"],"organizationFlags":["9a01b514	SH-S-5241	dropped	eligibility stated on the partner billing and partner payouts routes; added under SH-C-169 with the same citation
+SH-C-003	decides	"eligibility":{"oneOf":[{"organizationFeatures":["MFA_MANAGEMENT"],"organization	SH-S-5243	dropped	eligibility stated on the organization's account security route; added under SH-C-007 with the same citation
+SH-C-062	where	"path":"finance/risk/disputes/:id"	SH-S-5244	dropped	route finance:risk:disputes:details is a dispute route; added under SH-C-072 with the same citation
+SH-C-062	where	"path":"payments"	SH-S-5251	dropped	route payments (/payments) is the Shopify Payments area; payment provider settings are at settings/payments; added under SH-C-063 with the same citation
+SH-C-062	where	"path":"shopify-payments"	SH-S-5252	dropped	route shopify-payments is the Shopify Payments route; added under SH-C-063 with the same citation
+SH-C-062	decides	"eligibility":{"permissions":["MANAGE_DISPUTES"]}	SH-S-5245	dropped	eligibility stated on dispute routes; added under SH-C-072 with the same citation
+SH-C-062	decides	"eligibility":{"permissions":["MANAGE_PAYMENTS_SETTINGS"],"betas":["03019875"]}	SH-S-5247	dropped	eligibility stated on route payments:settings:business-entity; added under SH-C-005 with the same citation
+SH-C-062	decides	"eligibility":{"permissions":["MANAGE_PAYMENTS_SETTINGS"]}	SH-S-5092	dropped	eligibility stated on the Shopify Payments account settings routes; added under SH-C-063 with the same citation
+SH-C-062	decides	"eligibility":{"permissions":["SHOPIFY_PAYMENTS"]}	SH-S-5080	dropped	eligibility stated on the Shopify Payments setup routes; added under SH-C-063 with the same citation
+SH-C-062	decides	"eligibility":{"oneOf":[{"permissions":["SHOPIFY_PAYMENTS"]},{"permissions":["MA	SH-S-5248	dropped	eligibility stated on the Shopify Payments and Shop Pay settings routes; added under SH-C-063 with the same citation
+SH-C-062	decides	"eligibility":{"permissions":["MANAGE_PAYMENTS_SETTINGS"],"betas":["b8eae1f6"]}	SH-S-5249	dropped	eligibility stated on route payments:settings:shopify-payments:shop-pay-external-configuration; added under SH-C-074 with the same citation
+SH-C-062	decides	"eligibility":{"permissions":["SHOPIFY_PAYMENTS"],"betas":["822a3c21"]}	SH-S-5250	dropped	eligibility stated on route payments:settings:worldfirst-setup; added under SH-C-063 with the same citation
+SH-C-062	decides	"eligibility":{"permissions":["VIEW_PAYOUTS"]}	SH-S-5165	dropped	eligibility stated on the payouts routes; added under SH-C-069 with the same citation
+SH-C-063	where	"path":"finance/risk/disputes/:id"	SH-S-5244	dropped	route finance:risk:disputes:details is a dispute route; added under SH-C-072 with the same citation
+SH-C-063	decides	"eligibility":{"permissions":["MANAGE_DISPUTES"]}	SH-S-5245	dropped	eligibility stated on dispute routes; added under SH-C-072 with the same citation
+SH-C-063	decides	"eligibility":{"oneOf":[{"permissions":["MANAGE_PAYMENTS_SETTINGS"]},{"permissio	SH-S-5246	dropped	eligibility stated on route payments:settings:index, the payment providers settings; added under SH-C-062 with the same citation
+SH-C-063	decides	"eligibility":{"permissions":["MANAGE_PAYMENTS_SETTINGS"],"betas":["03019875"]}	SH-S-5247	dropped	eligibility stated on route payments:settings:business-entity; added under SH-C-005 with the same citation
+SH-C-063	decides	"eligibility":{"permissions":["MANAGE_PAYMENTS_SETTINGS"],"betas":["b8eae1f6"]}	SH-S-5249	dropped	eligibility stated on route payments:settings:shopify-payments:shop-pay-external-configuration; added under SH-C-074 with the same citation
+SH-C-063	decides	"eligibility":{"permissions":["VIEW_PAYOUTS"]}	SH-S-5165	dropped	eligibility stated on the payouts routes; added under SH-C-069 with the same citation
+SH-C-114	decides	"eligibility":{"betas":["9ed93472"]}	SH-S-5033	dropped	eligibility stated on Shop Promise routes (delivery promises); added under SH-C-125 with the same citation
+SH-C-114	decides	"eligibility":{"oneOf":[{"features":["fulfillmentBatchingEligible"]},{"betas":["	SH-S-5261	dropped	eligibility stated on document template (packing slip) routes; added under SH-C-061 with the same citation
+SH-C-114	decides	"eligibility":{"features":["fulfillmentBatchingEligible"]}	SH-S-5224	dropped	eligibility stated on route shipping-batching-workflow:update; added under SH-C-118 with the same citation
+SH-C-100	where	"path":"taxes/filing"	SH-S-5269	dropped	route tax-filing (taxes/filing) is the tax filing route; added under SH-C-104 with the same citation
+SH-C-100	where	"path":"taxes/api"	SH-S-5274	dropped	route tax-settings:api (taxes/api) has no title; the router does not tie it to tax calculation
+SH-C-100	decides	"eligibility":{"features":["taxFilingEnabled"]}	SH-S-5270	dropped	eligibility stated on route tax-filing:tax-region; added under SH-C-104 with the same citation
+SH-C-100	decides	"eligibility":{"betas":["a142026c"]}	SH-S-5272	dropped	eligibility stated on tax provider routes; added under SH-C-103 with the same citation
+SH-C-101	where	"path":"taxes/filing"	SH-S-5269	dropped	route tax-filing (taxes/filing) is the tax filing route; added under SH-C-104 with the same citation
+SH-C-101	where	"path":"taxes/api"	SH-S-5274	dropped	route tax-settings:api (taxes/api) has no title; the router does not tie it to tax registrations
+SH-C-101	decides	"eligibility":{"features":["taxFilingEnabled"]}	SH-S-5270	dropped	eligibility stated on route tax-filing:tax-region; added under SH-C-104 with the same citation
+SH-C-101	decides	"eligibility":{"betas":["a142026c"]}	SH-S-5272	dropped	eligibility stated on tax provider routes; added under SH-C-103 with the same citation
+SH-C-101	decides	"eligibility":{"betas":["43910bdc"],"permissions":["PRODUCTS"]}	SH-S-5273	dropped	eligibility stated on route tax-settings:fee-configurations:create; added under SH-C-100 with the same citation
+SH-C-101	decides	"eligibility":{"betas":["4d063e20"],"permissions":["MANAGE_TAXES_SETTINGS"],"ent	SH-S-5275	dropped	eligibility stated on route tax-settings:shared:switch-tax-product, not tax registrations
+SH-C-103	where	"path":"taxes/filing"	SH-S-5269	dropped	route tax-filing (taxes/filing) is the tax filing route; added under SH-C-104 with the same citation
+SH-C-103	where	"path":"taxes/api"	SH-S-5274	dropped	route tax-settings:api (taxes/api) has no title; the router does not tie it to tax apps
+SH-C-103	decides	"eligibility":{"features":["taxFilingEnabled"]}	SH-S-5270	dropped	eligibility stated on route tax-filing:tax-region; added under SH-C-104 with the same citation
+SH-C-103	decides	"eligibility":{"betas":["43910bdc"],"permissions":["PRODUCTS"]}	SH-S-5273	dropped	eligibility stated on route tax-settings:fee-configurations:create; added under SH-C-100 with the same citation
+SH-C-104	where	"path":"taxes/api"	SH-S-5274	dropped	route tax-settings:api (taxes/api) has no title; the router does not tie it to automated filing
+SH-C-104	decides	"eligibility":{"permissions":["MANAGE_TAXES_SETTINGS"],"entitlements":["shopifyT	SH-S-5271	dropped	eligibility stated on route tax-settings (tax settings); filing routes are under taxes/filing
+SH-C-104	decides	"eligibility":{"betas":["a142026c"]}	SH-S-5272	dropped	eligibility stated on tax provider routes; added under SH-C-103 with the same citation
+SH-C-104	decides	"eligibility":{"betas":["43910bdc"],"permissions":["PRODUCTS"]}	SH-S-5273	dropped	eligibility stated on route tax-settings:fee-configurations:create; added under SH-C-100 with the same citation
+SH-C-104	decides	"eligibility":{"betas":["4d063e20"],"permissions":["MANAGE_TAXES_SETTINGS"],"ent	SH-S-5275	dropped	eligibility stated on route tax-settings:shared:switch-tax-product, not automated filing
+SH-C-046	boundary	Requires `unauthenticated_read_checkouts` access scope.	SH-S-6147	dropped	the line is on object ShopPayInstallmentsFinancingPlan (Shop Pay Installments); added under SH-C-075 with the same citation
+SH-C-044	boundary	Requires `customer_read_companies` access scope, `customer_read_customers` acces	SH-S-5912	dropped	the line is on the Customer Account API's Media interface, which any of four customer scopes opens; it states nothing about companies
+SH-C-044	boundary	Requires `customer_read_companies` access scope, `customer_read_customers` acces	SH-S-5912	dropped	the line is on the Customer Account API's Media interface, which any of four customer scopes opens; it states nothing about companies
+SH-C-039	boundary	Requires `customer_read_companies` access scope, `customer_read_customers` acces	SH-S-5912	dropped	the line is on the Customer Account API's Media interface, which any of four customer scopes opens; it states nothing about customers as such
+SH-C-039	boundary	Requires `write_customers` access scope or `write_companies` access scope. Also:	SH-S-6177	dropped	the line is on mutation companiesDelete (B2B companies); added under SH-C-044 with the same citation
+SH-C-039	boundary	Requires `write_customers` access scope. Also: The user must not have restricted	SH-S-6184	dropped	the line is on mutation segmentCreate (customer segments); added under SH-C-040 with the same citation
+SH-C-055	boundary	Requires `read_products` access scope, `read_files` access scope, `read_themes` 	SH-S-5985	dropped	the line is on the File interface (files), which several scopes open; added under SH-C-027 with the same citation
+SH-C-030	boundary	The webhook topic for `metafield_definitions/create` events. Occurs when a metaf	SH-S-5952	dropped	the line states the metafield_definitions/create webhook topic (custom data), not pages or blog posts; added under SH-C-028 with the same citation
+SH-C-030	boundary	The webhook topic for `metafield_definitions/delete` events. Occurs when a metaf	SH-S-5953	dropped	the line states the metafield_definitions/delete webhook topic (custom data), not pages or blog posts; added under SH-C-028 with the same citation
+SH-C-030	boundary	The webhook topic for `metafield_definitions/update` events. Occurs when a metaf	SH-S-5954	dropped	the line states the metafield_definitions/update webhook topic (custom data), not pages or blog posts; added under SH-C-028 with the same citation
+SH-C-030	boundary	Your custom app needs to have the `read_themes` and `write_themes` [API access s	SH-S-6149	dropped	the line is on Shopify CLI for themes (theme hot reloading); added under SH-C-029 with the same citation
+SH-C-054	boundary	Requires `customer_read_companies` access scope, `customer_read_customers` acces	SH-S-5912	dropped	the line is on the Customer Account API's Media interface, which any of four customer scopes opens; it states nothing about orders
+SH-C-054	boundary	The webhook topic for `carts/create` events. Occurs when a cart is created in th	SH-S-6066	dropped	the line states the carts/create webhook topic (cart); added under SH-C-046 with the same citation
+SH-C-054	boundary	The webhook topic for `carts/update` events. Occurs when a cart is updated in th	SH-S-6067	dropped	the line states the carts/update webhook topic (cart); added under SH-C-046 with the same citation
+SH-C-054	boundary	The webhook topic for `checkouts/create` events. Occurs whenever a checkout is c	SH-S-6068	dropped	the line states the checkouts/create webhook topic (checkout); added under SH-C-047 with the same citation
+SH-C-054	boundary	The webhook topic for `checkouts/delete` events. Occurs whenever a checkout is d	SH-S-6069	dropped	the line states the checkouts/delete webhook topic (checkout); added under SH-C-047 with the same citation
+SH-C-054	boundary	The webhook topic for `checkouts/update` events. Occurs whenever a checkout is u	SH-S-6070	dropped	the line states the checkouts/update webhook topic (checkout); added under SH-C-047 with the same citation
+SH-C-020	boundary	The webhook topic for `collections/create` events. Occurs whenever a collection 	SH-S-6095	dropped	the line states the collections/create webhook topic (collections); added under SH-C-021 with the same citation
+SH-C-020	boundary	The webhook topic for `collections/delete` events. Occurs whenever a collection 	SH-S-6096	dropped	the line states the collections/delete webhook topic (collections); added under SH-C-021 with the same citation
+SH-C-020	boundary	The webhook topic for `collections/update` events. Occurs whenever a collection 	SH-S-6097	dropped	the line states the collections/update webhook topic (collections); added under SH-C-021 with the same citation
+SH-C-020	decides	Requires `write_products` access scope. Also: The user must have permission to c	SH-S-6276	dropped	the line is on mutation catalogContextUpdate (catalogs); added under SH-C-037 with the same citation
+SH-C-020	decides	Requires `write_products` access scope. Also: The user must have permission to d	SH-S-6277	dropped	the line is on mutation catalogDelete (catalogs); added under SH-C-037 with the same citation
+SH-C-020	decides	Requires `write_products` access scope. Also: The store must not be on the Start	SH-S-6278	dropped	the line is on mutation collectionAddProducts (collections); added under SH-C-021 with the same citation
+SH-C-020	decides	Requires `write_products` access scope. Also: The user must have a permission to	SH-S-6279	dropped	the line is on mutation collectionAddProductsV2 (collections); added under SH-C-021 with the same citation
+SH-C-020	decides	Requires `write_products` access scope. Also: The app must have access to the in	SH-S-6280	dropped	the line is on mutation collectionConditionsSourceCreate (collections); added under SH-C-021 with the same citation
+SH-C-029	boundary	Requires `read_products` access scope, `read_files` access scope, `read_themes` 	SH-S-5985	dropped	the line is on the File interface (files), which several scopes open; added under SH-C-027 with the same citation
+SH-C-114	boundary	The webhook topic for `delivery_promise_settings/update` events. Occurs when a p	SH-S-6113	dropped	the line states the delivery_promise_settings/update webhook topic (delivery promises); added under SH-C-125 with the same citation
+SH-C-114	boundary	Requires `read_shipping` access scope or `read_shop_promise_program` access scop	SH-S-6116	dropped	the line is on object DeliveryPromiseSetting (delivery promises); added under SH-C-125 with the same citation
+SH-C-114	boundary	To access the CarrierService resource, add the `write_shipping` permission to yo	SH-S-6292	dropped	the line is on the CarrierService resource (third-party calculated rates); added under SH-C-115 with the same citation
+SH-C-114	boundary	Requires `write_shipping` access scope.	SH-S-6293	dropped	the line is on mutation carrierServiceCreate (third-party calculated rates); added under SH-C-115 with the same citation
+SH-C-114	boundary	To access the CarrierService resource, add the `write_shipping` permission to yo	SH-S-6294	dropped	the line is on the CarrierService resource (third-party calculated rates); added under SH-C-115 with the same citation
+SH-C-115	boundary	The webhook topic for `delivery_promise_settings/update` events. Occurs when a p	SH-S-6113	dropped	the line states the delivery_promise_settings/update webhook topic, not carrier-calculated rates
+SH-C-115	boundary	The webhook topic for `shipping_addresses/create` events. Occurs whenever a ship	SH-S-6114	dropped	the line states a shipping_addresses webhook topic, not carrier-calculated rates
+SH-C-115	boundary	The webhook topic for `shipping_addresses/update` events. Occurs whenever a ship	SH-S-6115	dropped	the line states a shipping_addresses webhook topic, not carrier-calculated rates
+SH-C-115	boundary	Requires `read_shipping` access scope or `read_shop_promise_program` access scop	SH-S-6116	dropped	the line is on object DeliveryPromiseSetting, not carrier-calculated rates
+SH-C-115	boundary	Requires `read_shipping` access scope or `read_orders` access scope.	SH-S-6117	dropped	the line is on object ShippingObjectsShippingDocument, not carrier-calculated rates
+SH-C-115	boundary	To manage delivery profiles on your selling plans, your app needs the `read_ship	SH-S-6295	dropped	the line is on delivery profiles of selling plans, not carrier-calculated rates
+SH-C-139	boundary	Your custom app needs to have the `read_themes` and `write_themes` [API access s	SH-S-6149	dropped	the line is on Shopify CLI for themes (theme hot reloading); added under SH-C-029 with the same citation
+SH-C-004	where	[**Security**](https://admin.shopify.com/settings/organization-account/security)	SH-S-6308	dropped	the link is to the user management activity log (Users > Security), where reveals of entity information are logged; it is not where business entities are managed
+SH-C-057	where	[Terms of Service](https://admin.shopify.com/shopify-payments/terms)	SH-S-6319	dropped	the link is to the merchant's Shopify Payments terms, where fee values are stated; it does not place refunds
+SH-C-064	where	[**Orders**](https://admin.shopify.com/orders)	SH-S-6322	dropped	the sentence only advises monitoring the Orders page for expiring authorizations; it does not place processing and settlement
+SH-C-065	where	[**Markets**](https://admin.shopify.com/markets)	SH-S-6323	dropped	the link is to a market's Managed Markets settings (duties display); it does not place where funds are held
+SH-C-080	where	[**Customer privacy** settings](https://admin.shopify.com/settings/privacy)	SH-S-6326	dropped	the link is to Customer privacy settings, where Shopify Network Intelligence is activated (a requirement); it does not place local payment methods
+SH-C-090	where	[Home](https://admin.shopify.com/)	SH-S-6332	dropped	the sentence says an eligibility message displays on Home; it does not place Shopify Credit
+SH-C-091	where	[**Payments**](https://admin.shopify.com/settings/payments)	SH-S-6335	dropped	the step goes to Settings > Payments to check Shopify Payments, an eligibility prerequisite; it does not place Shopify Capital
+SH-C-091	where	[payout details](https://admin.shopify.com/finances/payments/payouts)	SH-S-6337	dropped	the link is to payout details, where Capital repayments appear as adjustments; it does not place Shopify Capital
+SH-C-092	where	[**Payments**](https://admin.shopify.com/settings/payments)	SH-S-6335	dropped	the step goes to Settings > Payments to check Shopify Payments, an eligibility prerequisite; it does not place Shopify Capital
+SH-C-093	where	[**Payments**](https://admin.shopify.com/settings/payments)	SH-S-6335	dropped	the step goes to Settings > Payments to check Shopify Payments, an eligibility prerequisite; it does not place Shopify Capital
+SH-C-094	where	[**Payments**](https://admin.shopify.com/settings/payments)	SH-S-6335	dropped	the step goes to Settings > Payments to check Shopify Payments, an eligibility prerequisite; it does not place Shopify Capital
+SH-C-095	where	[**Payments**](https://admin.shopify.com/settings/payments)	SH-S-6335	dropped	the step goes to Settings > Payments to check Shopify Payments, an eligibility prerequisite; it does not place Shopify Capital
+SH-C-096	where	[**Payments**](https://admin.shopify.com/settings/payments)	SH-S-6335	dropped	the step goes to Settings > Payments to check Shopify Payments, an eligibility prerequisite; it does not place Shopify Capital
+SH-C-097	where	[**Payments**](https://admin.shopify.com/settings/payments)	SH-S-6335	dropped	the step goes to Settings > Payments to check Shopify Payments, an eligibility prerequisite; it does not place Shopify Capital
+SH-C-099	where	[Payments](https://admin.shopify.com/payments)	SH-S-6348	dropped	the link is where notices about Shopify Payments tax information appear; it does not place tax forms
+SH-C-100	where	[billing section](https://admin.shopify.com/settings/billing)	SH-S-6349	dropped	the link is to the billing section where Shopify Tax fees are reviewed; it does not place tax calculation
+SH-C-101	where	[**General**](https://admin.shopify.com/settings/general)	SH-S-6351	dropped	the link is to the store address in Settings > General, mentioned as a consideration; it does not place tax registrations
+SH-C-102	where	[**General**](https://admin.shopify.com/settings/general)	SH-S-6352	dropped	the sentence says the exemption does not use the store address in General settings; it does not place VAT validation
+SH-C-107	where	[**Payments**](https://admin.shopify.com/payments)	SH-S-6321	dropped	the link is to the Shopify Payments activation page; it does not place the store currency
+SH-C-109	where	[**General**](https://admin.shopify.com/settings/general)	SH-S-6355	dropped	the link is to the store's base currency in Settings > General, which manual rates are based on; manual rates are set in Markets (kept)
+SH-C-109	where	[Terms of Service](https://admin.shopify.com/shopify-payments/terms)	SH-S-6319	dropped	the link is to the merchant's Shopify Payments terms, where fee values are stated; it does not place currency conversion
+SH-C-117	where	[**Billing**](https://admin.shopify.com/settings/billing)	SH-S-6360	dropped	the link is to the Billing page where insurance charges are listed; insurance is bought from Orders (kept)
+SH-C-147	where	[**Payments**](https://admin.shopify.com/settings/payments)	SH-S-6327	dropped	the step is for managed payment methods in Settings > Payments; it does not place Shopify Network Intelligence
+SH-C-151	where	[You can install the template automatically](https://admin.shopify.com/apps/flow	SH-S-6363	dropped	the link installs one Flow template; Flow's own location (Apps > Flow) is kept
+SH-C-151	where	[You can install the template automatically](https://admin.shopify.com/apps/flow	SH-S-6365	dropped	the link installs one Flow template; Flow's own location (Apps > Flow) is kept
+SH-C-151	where	[You can install the template automatically](https://admin.shopify.com/apps/flow	SH-S-6366	dropped	the link installs one Flow template; Flow's own location (Apps > Flow) is kept
+SH-C-151	where	[You can install the template automatically](https://admin.shopify.com/apps/flow	SH-S-6367	dropped	the link installs one Flow template; Flow's own location (Apps > Flow) is kept
+SH-C-186	where	[**Payment providers**](https://admin.shopify.com/settings/payments)	SH-S-6320	dropped	the link to Payment providers is on the payments overview page; it does not place subscriptions
+SH-C-001	where	By signing up for a Shopify Account (as defined in Section 1) or by using any Sh	SH-S-0229	dropped	the preamble states the agreement accepted at sign-up, not where the account lives; the same citation is kept under boundary
+SH-C-001	decides	the person signing up for the Service by opening an Account will be the contract	SH-S-0019	moved to responsible	the sentence names the Store Owner as the contracting party, which answers who is responsible
+SH-C-002	decides	Asia Pacific (including Australia, New Zealand, China, Japan, and Singapore)	SH-S-0004	dropped	a region label from the contracting-party table; it states no party or condition by itself (the party rows are kept with this region as scope)
+SH-C-002	decides	All other jurisdictions (including EMEA, Europe, the Middle East, Africa, South 	SH-S-0006	dropped	a region label from the contracting-party table; it states no party or condition by itself (the party rows are kept with this region as scope)
+SH-C-002	responsible	Asia Pacific (including Australia, New Zealand, China, Japan, and Singapore)	SH-S-0004	dropped	a region label from the contracting-party table, not a party (the party row is kept with this region as scope)
+SH-C-002	responsible	All other jurisdictions (including EMEA, Europe, the Middle East, Africa, South 	SH-S-0006	dropped	a region label from the contracting-party table, not a party (the party row is kept with this region as scope)
+SH-C-002	boundary	Contracting Party. You are contracting with the Shopify Contracting Party or Par	SH-S-0001	dropped	states how the contracting party is chosen, which is kept under decides; it names no API, event, setting or contract boundary beyond that
+SH-C-002	boundary	Billing and Collection. Shopify Inc. may act as the billing agent for Shopify Te	SH-S-0008	moved to responsible	the sentence states which entity may act as billing agent, which answers who is responsible
+SH-C-002	boundary	The Terms of Service will be governed by and interpreted in accordance with the 	SH-S-0010	moved to responsible	governing law of the Terms of Service is a legal placement, not a boundary of the software
+SH-C-003	decides	"text": "Free expansion stores"	SH-S-1996	dropped	plan table row label only; the row with its values per plan is added from plan-comparison-public
+SH-C-003	boundary	"title": "Organization"	SH-S-1481	dropped	a settings navigation entry places the page; it is kept under where and is not a boundary
+SH-C-003	boundary	"title": "Billing"	SH-S-1485	dropped	the Billing settings entry is billing's location, not the organization's boundary
+SH-C-004	where	"title": "General"	SH-S-1486	dropped	the General settings entry alone does not place business entities; the Help Center sentences naming Settings > General > Business details are kept
+SH-C-004	decides	A business entity is the registered business, or the individual, that your store	SH-S-0248	dropped	the sentence defines a business entity and its use; kept under reason (same citation)
+SH-C-004	boundary	If you have access to organizations, then you can manage and add new business en	SH-S-0249	dropped	duplicate of the where statement (same citation); it names no API, event or setting at a boundary
+SH-C-005	where	This lets you streamline your business operations, operate multiple legal entiti	SH-S-0254	moved to reason	the sentence states what selling with multiple entities lets a merchant do, which is a stated reason, not a location
+SH-C-005	where	Selling with multiple entities is available only with Shopify Payments.	SH-S-0255	moved to decides	the sentence states a condition (available only with Shopify Payments), which answers who decides
+SH-C-005	responsible	Each entity has its own Shopify Payments account, payout currency, and bank acco	SH-S-0258	dropped	the sentence describes each entity's accounts; kept under boundary (same citation), it names no responsible party
+SH-C-006	where	"label": "Afghanistan"	SH-S-2509	dropped	a single country option of the sign-up list; replaced by the sign-up page's own label for the list (I'm located in:)
+SH-C-006	boundary	"label": "Afghanistan"	SH-S-2509	dropped	a single country option of the sign-up list; it states no boundary
+SH-C-006	boundary	"label": "Afghanistan"	SH-S-2510	dropped	a single country option of the partner sign-up list; it states no boundary
+SH-C-007	boundary	"title": "Security"	SH-S-1484	dropped	a settings navigation entry places the page; it is kept under where and is not a boundary
+SH-C-008	boundary	In most cases, [the store owner](/manual/your-account/users/roles/roles-managed-	SH-S-0263	dropped	duplicate of the responsible statement (same citation); it names no API, event or setting at a boundary
+SH-C-009	decides	"text": "Additional staff accounts"	SH-S-1915	dropped	plan table row label only; the row with its values per plan is added from plan-comparison-public
+SH-C-010	where	"name": "Administrator"	SH-S-1627	dropped	a role name in the role list does not place roles in the software; the roles settings entry is kept
+SH-C-010	decides	"text": "Custom user groups"	SH-S-2001	dropped	plan table row label only; the row with its values per plan is added from plan-comparison-public
+SH-C-010	boundary	"title": "Roles"	SH-S-1483	dropped	a settings navigation entry places the page; it is kept under where and is not a boundary
+SH-C-011	where	"name": "Collaborator access"	SH-S-1613	dropped	a role name in the partner organization's role list does not place collaborator access in the software
+SH-C-011	where	"label": "Orders 0/19"	SH-S-1632	dropped	a permission group label with a count on the request-access page; it states neither a location nor a boundary
+SH-C-011	decides	"text": "Invite third-party collaborators"	SH-S-1916	dropped	plan table row label only; the row with its values per plan is added from plan-comparison-public
+SH-C-011	boundary	"label": "Orders 0/19"	SH-S-1632	dropped	a permission group label with a count on the request-access page; it states no boundary
+SH-C-011	boundary	The Store Owner is responsible for: (a) ensuring its employees, agents and subco	SH-S-0231	moved to responsible	the sentence states the Store Owner's responsibility for agents and subcontractors with access, which answers who is responsible
+SH-C-012	where	"value": "audit_events/admin_api_activity"	SH-S-1157	dropped	a webhook topic is a boundary, kept under boundary (same citation); it does not place the audit log
+SH-C-014	where	"section":"Foundation"	SH-S-1571	dropped	the Foundation section also holds unrelated routes (a sign-in callback); the store-unavailable route is kept
+SH-C-014	decides	Complete the appeal form with explanations and any supporting documents that dem	SH-S-0661	moved to boundary	the sentence states the appeal form through which a merchant contests restricted access, which is the boundary process
+SH-C-014	boundary	14. Term and Termination	SH-S-3136	dropped	a table-of-contents entry only shows that the section exists
+SH-C-014	boundary	"title": "Handling your Shopify store termination"	SH-S-2900	dropped	a Help Center section title only shows that the page exists
+SH-C-015	decides	"text": "Pay monthly"	SH-S-1902	dropped	plan table row label only; the row with its values per plan is added from plan-comparison-public
+SH-C-015	boundary	"value": "SUBSCRIPTION_FEE"	SH-S-2114	dropped	a value of the billing charges filter only shows that the charge type exists; the filter is not a boundary structure
+SH-C-016	boundary	"value": "PLATFORM_FEE"	SH-S-2101	dropped	a value of the billing charges filter only shows that the charge type exists; the filter is not a boundary structure
+SH-C-016	boundary	If we are unable to successfully process payment of Fees using an Authorized Pay	SH-S-0035	moved to decides	the sentence states what Shopify may do when fees go unpaid, which answers who decides
+SH-C-016	reason	Unless otherwise indicated, all Fees and other charges are in U.S. dollars, and 	SH-S-0033	moved to decides	the sentence sets the currency of fees, which answers who decides; it states no reason
+SH-C-017	boundary	In the **Tax registration** section, click **Enter Tax ID number**.	SH-S-0279	dropped	duplicate of the where statement (same citation); the step names a section of a page, not an API, event or contract
+SH-C-017	boundary	"value": "TAXES"	SH-S-2122	dropped	a value of the expense report's category list only shows that the category exists
+SH-C-018	where	"value": "ORDER_COMMISSION"	SH-S-2119	dropped	a value of the billing charges filter only shows that the charge type exists; it does not place the fees
+SH-C-018	decides	"text": "Third-party transaction fees"	SH-S-1939	dropped	plan table row label only; the row with its values per plan is added from plan-comparison-public
+SH-C-018	boundary	"value": "ORDER_COMMISSION"	SH-S-2119	dropped	a value of the billing charges filter only shows that the charge type exists; the filter is not a boundary structure
+SH-C-019	where	**Simplified payment process**: Charges are directly added to the merchant's Sho	SH-S-0281	moved to boundary	the sentence states that app charges are added to the Shopify invoice, which is how app billing meets the merchant's bill, not a location
+SH-C-019	where	These charges are for the recurring use of an app, such as a monthly subscriptio	SH-S-0269	moved to boundary	the sentence states that app charges are included in the Shopify subscription bill, which is how app billing meets the merchant's bill
+SH-C-019	responsible	**Paid charge**: The charge is displayed on a past bill and payment has been col	SH-S-0271	moved to decides	the sentence sends refund requests to the app developer, which answers who decides refunds, not who is legally responsible
+SH-C-019	boundary	"value": "APPLICATION_FEE"	SH-S-2087	dropped	a value of the billing charges filter only shows that the charge type exists; the filter is not a boundary structure
+SH-C-019	boundary	An App Developer that has met certain registration requirements, pays 0% of the 	SH-S-0287	moved to decides	the clause sets the revenue share an app developer pays, which answers who decides the value
+SH-C-019	reason	All apps published on the Shopify App Store are required to use a Shopify provid	SH-S-0284	moved to decides	the sentence states a requirement on apps published on the App Store, not a reason
+SH-C-020	where	"text": "read_products"	SH-S-1050	dropped	an access scope is a boundary, not a location; the scope's own lines are kept under boundary
+SH-C-020	decides	"text": "Sell unlimited products"	SH-S-1908	dropped	plan table row label only; the row with its values per plan is added from plan-comparison-public
+SH-C-020	responsible	It is in Shopify's sole discretion to refuse or remove any Materials from any pa	SH-S-0031	moved to decides	the sentence states Shopify's discretion to refuse or remove Materials, which answers who decides
+SH-C-022	where	"text": "Inventory management"	SH-S-1913	dropped	a plan table row is not a location; the row with its values per plan is added under decides
+SH-C-024	where	"text": "Inventory locations"	SH-S-1914	dropped	a plan table row is not a location; the row with its values per plan is added under decides
+SH-C-024	decides	"text": "Inventory locations"	SH-S-1914	dropped	plan table row label only; the row with its values per plan is added from plan-comparison-public
+SH-C-024	boundary	"title": "Locations"	SH-S-1493	dropped	a settings navigation entry places the page; it is kept under where and is not a boundary
+SH-C-025	where	"text": "Sell gift cards"	SH-S-1956	dropped	a plan table row is not a location; the row with its values per plan is added under decides
+SH-C-025	where	"identifier": "redeemable_payments"	SH-S-2253	dropped	the extension template is named "Redeemable" in group "Payments extensions"; it does not name gift cards
+SH-C-025	decides	Please note that you are legally responsible for all gift card or store credit i	SH-S-0676	dropped	the sentence states legal responsibility; kept under responsible (same citation)
+SH-C-025	boundary	"text": "Shopify Gift Card and Store Credit Terms"	SH-S-2156	dropped	a legal index entry only shows that the agreement exists; the agreement's own clauses are kept
+SH-C-026	where	"text": "read_store_credit_accounts"	SH-S-1077	dropped	an access scope is a boundary, not a location; the scope's own lines are kept under boundary
+SH-C-026	where	"value": "orders_refund_to_store_credit"	SH-S-1651	dropped	a permission value in the collaborator request list only shows that the permission exists
+SH-C-026	decides	Please note that you are legally responsible for all gift card or store credit i	SH-S-0676	dropped	the sentence states legal responsibility; kept under responsible (same citation)
+SH-C-026	boundary	"text": "Shopify Gift Card and Store Credit Terms"	SH-S-2156	dropped	a legal index entry only shows that the agreement exists; the agreement's own clauses are kept
+SH-C-027	where	"text": "read_files"	SH-S-0987	dropped	an access scope is a boundary, not a location; the same scope is kept under boundary
+SH-C-029	where	"text": "Themes and templates"	SH-S-1907	dropped	a plan table row is not a location; the row with its values per plan is added under decides
+SH-C-029	where	9.6 Theme Store	SH-S-3178	dropped	a section heading of the Terms only shows that the section exists
+SH-C-029	boundary	"value": "THEME_FEE"	SH-S-2118	dropped	a value of the billing charges filter only shows that the charge type exists; the filter is not a boundary structure
+SH-C-032	where	"text": "Translate your storefront"	SH-S-1975	dropped	a plan table row is not a location; the row with its values per plan is added under decides
+SH-C-032	where	"name": "Products"	SH-S-2831	dropped	a resource name in the translation app's list; the quote names neither the app nor a location
+SH-C-032	boundary	"title": "Languages"	SH-S-1501	dropped	a settings navigation entry places the page; it is kept under where and is not a boundary
+SH-C-033	where	"text": "Custom domain name"	SH-S-1944	dropped	a plan table row is not a location; the row with its values per plan is added under decides
+SH-C-033	where	"value": "DOMAIN_FEE"	SH-S-2090	dropped	a value of the billing charges filter only shows that the charge type exists; it does not place domains
+SH-C-033	boundary	"title": "Domains"	SH-S-1497	dropped	a settings navigation entry places the page; it is kept under where and is not a boundary
+SH-C-034	boundary	"title": "Policies"	SH-S-1503	dropped	a settings navigation entry places the page; it is kept under where and is not a boundary
+SH-C-035	where	"text": "read_discovery"	SH-S-0983	dropped	an access scope is a boundary, not a location; the same scope is kept under boundary
+SH-C-036	where	"text": "Unlimited web hosting"	SH-S-1943	dropped	a plan table row is not a location; the row with its values per plan is added under decides
+SH-C-036	where	"text": "Free SSL certificate"	SH-S-1945	dropped	a plan table row is not a location; the row with its values per plan is added under decides
+SH-C-036	decides	"text": "Unlimited web hosting"	SH-S-1943	dropped	plan table row label only; the row with its values per plan is added from plan-comparison-public
+SH-C-037	where	"title": "Creating catalogs for markets"	SH-S-2950	dropped	a Help Center section title only shows that the page exists
+SH-C-037	boundary	"label": "B2B"	SH-S-0768	dropped	the GraphQL Admin API's B2B group does not list catalog operations (they sit under "Products and collections")
+SH-C-038	where	"text": "Merchandise with Shopify Combined Listings"	SH-S-1994	dropped	a plan table row is not a location; the row with its values per plan is added under decides
+SH-C-038	decides	"text": "Merchandise with Shopify Combined Listings"	SH-S-1994	dropped	plan table row label only; the row with its values per plan is added from plan-comparison-public
+SH-C-039	where	"text": "Unlimited contacts"	SH-S-1947	dropped	a plan table row is not a location; the row with its values per plan is added under decides
+SH-C-040	decides	"text": "Create customer segments"	SH-S-1948	dropped	plan table row label only; the row with its values per plan is added from plan-comparison-public
+SH-C-041	where	Customer accounts let your customers sign in to view and manage their orders, ed	SH-S-0741	dropped	the sentence states what customer accounts let customers do; it places nothing
+SH-C-041	boundary	"title": "Customer accounts"	SH-S-1490	dropped	a settings navigation entry places the page; it is kept under where and is not a boundary
+SH-C-042	where	Alternatively, if you're on the Shopify Plus plan, then you can [connect your ow	SH-S-0742	dropped	the sentence states a plan condition, kept under decides (same citation)
+SH-C-042	boundary	Alternatively, if you're on the Shopify Plus plan, then you can [connect your ow	SH-S-0742	dropped	the sentence states a plan condition, kept under decides (same citation); it names no API or event
+SH-C-043	where	"label": "customerEmailMarketingSubscribe"	SH-S-0881	moved to boundary	a mutation of the Customer Account API is an API boundary, not a location
+SH-C-043	where	"label": "customerWhatsAppMarketingConsentUpdate"	SH-S-0884	moved to boundary	a mutation of the Customer Account API is an API boundary, not a location
+SH-C-044	where	"text": "Shopify B2B"	SH-S-1912	dropped	a plan table row is not a location; the row with its values per plan is added under decides
+SH-C-045	where	"text": "read_payment_terms"	SH-S-1040	dropped	an access scope is a boundary, not a location; the same scope is kept under boundary
+SH-C-046	where	"value": "carts/create"	SH-S-1159	dropped	a webhook topic is a boundary, not a location; cart webhook topics are kept under boundary
+SH-C-046	where	"dev.ucp.shopping.cart"	SH-S-2533	moved to boundary	a capability in the store's Universal Commerce Protocol profile is an API boundary, not a location
+SH-C-047	where	You agree to use Shopify Checkout for any sales associated with your online stor	SH-S-0015	moved to decides	the sentence obliges the merchant to use Shopify Checkout, which answers who decides; it does not place checkout
+SH-C-047	where	"text": "World's best-converting checkout"	SH-S-1909	dropped	a plan table row is not a location; the row with its values per plan is added under decides
+SH-C-047	decides	"text": "High volume checkout"	SH-S-1993	dropped	plan table row label only; the row with its values per plan is added from plan-comparison-public
+SH-C-047	boundary	"title": "Checkout"	SH-S-1489	dropped	a settings navigation entry places the page; it is kept under where and is not a boundary
+SH-C-048	decides	"text": "Checkout customization"	SH-S-1970	dropped	plan table row label only; the row with its values per plan is added from plan-comparison-public
+SH-C-049	boundary	All customization options are easy to install and upgrade-safe	SH-S-0680	moved to reason	the sentence states a property given for the customization options (easy to install, upgrade-safe); it names no boundary
+SH-C-049	boundary	9.13 Shopify Checkout Extensibility	SH-S-3185	dropped	a section heading of the Terms only shows that the section exists
+SH-C-050	where	"text": "Abandoned checkout recovery"	SH-S-1954	dropped	a plan table row is not a location; the row with its values per plan is added under decides
+SH-C-051	where	Bot protection acts as a fairness control by blocking known bots from your check	SH-S-0745	dropped	the sentence states what bot protection does and why; kept under reason (same citation)
+SH-C-052	where	Shopify Functions allow developers to customize the backend logic of Shopify.	SH-S-0681	dropped	the sentence is about Shopify Functions in general and does not name validation; kept under Shopify Functions (SH-C-163)
+SH-C-052	responsible	Shopify Functions are never invoked directly by URL or otherwise. Shopify invoke	SH-S-0683	dropped	the sentence states who invokes functions, not who is legally responsible
+SH-C-053	responsible	Shopify Functions are never invoked directly by URL or otherwise. Shopify invoke	SH-S-0683	dropped	the sentence states who invokes functions, not who is legally responsible
+SH-C-054	where	"dev.ucp.shopping.order"	SH-S-2534	moved to boundary	a capability in the store's Universal Commerce Protocol profile is an API boundary, not a location
+SH-C-055	where	"label": "draftOrder"	SH-S-0871	moved to boundary	a query of the Customer Account API is an API boundary, not a location
+SH-C-056	where	"label": "orderRequestEdit"	SH-S-0887	moved to boundary	a mutation of the Customer Account API is an API boundary, not a location
+SH-C-056	where	"text": "write_order_edits"	SH-S-1032	dropped	an access scope is a boundary, not a location; the scope's own lines are kept under boundary
+SH-C-057	where	"value": "orders_refund_orders"	SH-S-1649	dropped	a permission value in the collaborator request list only shows that the permission exists
+SH-C-057	responsible	The fee that Shopify charges (in your payout currency) to convert currencies whe	SH-S-0554	dropped	the sentence defines the currency conversion fee; it does not concern refunds
+SH-C-058	where	"label": "return"	SH-S-0874	moved to boundary	a query of the Customer Account API is an API boundary, not a location
+SH-C-058	where	"label": "Too long"	SH-S-2860	dropped	one option of the store's return-reason list; it places nothing
+SH-C-059	where	Shopify Payments can block some [high-risk checkout attempts](#blocked-high-risk	SH-S-0750	moved to decides	the sentence states that Shopify Payments can block high-risk checkout attempts, which answers who decides
+SH-C-059	where	"text": "Built-in fraud analysis*"	SH-S-1940	dropped	a plan table row is not a location; the row with its values per plan is added under decides
+SH-C-059	decides	You can use fraud analysis to identify orders that can be fraudulent and review 	SH-S-0747	dropped	the sentence is kept under where (same citation); it states no condition or setting
+SH-C-059	boundary	"h1": "Fraud apps"	SH-S-2718	moved to where	an App Store category places the need in apps; it is not a boundary
+SH-C-060	where	You can set up order routing to automatically assign orders to fulfillment locat	SH-S-0751	dropped	the sentence says orders are assigned by configured rules, which answers who decides; it is kept under decides (same citation) and places nothing
+SH-C-061	where	"text": "read_packing_slip_templates"	SH-S-1037	dropped	an access scope is a boundary, not a location; the paired scope is kept under boundary
+SH-C-062	where	When a customer checks out, they can choose to pay for their order using any of 	SH-S-0319	dropped	the quote ends before naming the place ("activated in the"); the sentence is kept under decides (same citation)
+SH-C-062	decides	This is because Stripe is Shopify Payments' banking partner, and all payment rep	SH-S-0383	moved to reason	the sentence gives the reason standalone Stripe is unavailable in Shopify Payments regions
+SH-C-062	responsible	These providers might charge extra fees and enforce rules about what products yo	SH-S-0309	moved to decides	the sentence states that providers enforce rules about what can be sold, which answers who decides
+SH-C-062	boundary	"title": "Payments"	SH-S-1488	dropped	a settings navigation entry places the page; it is kept under where and is not a boundary
+SH-C-062	boundary	"value": "MANAGE_PAYMENTS_SETTINGS"	SH-S-1845	dropped	an assignable-permission value only shows that the permission exists; the routes that require it are kept under decides
+SH-C-063	responsible	Malta, Mexico, Netherlands, Norway, Poland, Portugal, Romania, Slovenia, Spain, 	SH-S-0164	dropped	part of the country list of a table row, not a party (the party is kept with this list as scope)
+SH-C-063	responsible	Australia, Hong Kong, Japan, New Zealand, Singapore,	SH-S-0165	dropped	the country list of a table row, not a party (the party is kept with this list as scope)
+SH-C-063	responsible	None of the Shopify entities listed above are licensed as a bank, payment instit	SH-S-0080	dropped	duplicate of another responsible statement with the same citation
+SH-C-063	boundary	"text": "Shopify Payments Terms of Service"	SH-S-2129	dropped	a legal index entry only shows that the agreement exists; the agreement's own clauses are kept
+SH-C-063	boundary	Part II (Regional Terms) contains region-specific terms that apply to merchants 	SH-S-0124	moved to decides	the sentence states that the Designated Country determines which regional terms apply, which answers who decides
+SH-C-064	where	makes sure we send only a single request to our financial partners	SH-S-0453	moved to boundary	the sentence states how the payment service meets the financial partners (a single request per idempotency key), which is a boundary
+SH-C-064	reason	If you use Shopify Payments, then it automatically routes each payment to the pr	SH-S-0389	dropped	the sentence states the routing, kept under decides (same citation); the reason is the next sentence, kept
+SH-C-065	where	The Payment Processor retains sole and exclusive responsibility for Payment Proc	SH-S-0093	dropped	the sentence states the processor's responsibility, kept under responsible (same citation)
+SH-C-065	boundary	C. Processing Transactions and Receiving Your Funds	SH-S-3142	dropped	a table-of-contents entry only shows that the section exists
+SH-C-065	boundary	Any funds in the Financial Services Provider's custody will be paid out to you s	SH-S-0118	dropped	the sentence states custody and payout, kept under where and responsible (same citation); it names no boundary
+SH-C-066	decides	In certain Designated Countries, pursuant to separate Payment Facilitator Terms,	SH-S-0081	moved to responsible	the sentence names a Shopify affiliate acting as Payment Facilitator, which answers who is responsible
+SH-C-066	boundary	Account Terms	SH-S-3149	dropped	a table-of-contents entry only shows that the section exists
+SH-C-066	boundary	Part II — Regional Terms	SH-S-3151	dropped	a table-of-contents entry only shows that the section exists
+SH-C-067	decides	Regulated Payment Services (Canada). The Shopify Contracting Party shall be Shop	SH-S-0009	dropped	the clause names the contracting party, kept under responsible (same citation)
+SH-C-067	decides	Shopify Payment Activities Inc. is registered with the Bank of Canada as a Payme	SH-S-0125	dropped	the sentence states the entity's registration, kept under responsible (same citation)
+SH-C-067	boundary	Regulated Payment Services (Canada). The Shopify Contracting Party shall be Shop	SH-S-0009	dropped	the clause names the contracting party, kept under responsible (same citation); it names no API, event or setting
+SH-C-067	boundary	B. Canada	SH-S-3146	dropped	a table-of-contents entry only shows that the section exists
+SH-C-068	where	`read_financial_kyc_information`	SH-S-1122	dropped	an access scope is a boundary, not a location; the same scope is kept under boundary
+SH-C-068	where	"value": "finance_kyc_information/update"	SH-S-1226	dropped	a webhook topic is a boundary, not a location; the topic's access line is kept under boundary
+SH-C-068	boundary	"title": "Payments"	SH-S-1488	dropped	a settings navigation entry places the page; it is not a boundary
+SH-C-069	where	"section":"Finances"	SH-S-1569	dropped	the router puts the payouts routes in section Payments (path payments/payouts), not Finances
+SH-C-069	where	"text": "read_shopify_payments_payouts"	SH-S-1069	dropped	an access scope is a boundary, not a location; the same scope is kept under boundary
+SH-C-069	decides	You can choose daily, weekly, or monthly payouts based on your business needs. S	SH-S-0342	dropped	duplicate of another decides statement with the same citation
+SH-C-069	boundary	"value": "VIEW_PAYOUTS"	SH-S-1891	dropped	an assignable-permission value only shows that the permission exists; the routes that require it are kept under decides
+SH-C-069	boundary	To be eligible, a bank account must be a checking account or current account tha	SH-S-0367	moved to decides	the sentence states an eligibility condition for payout bank accounts, which answers who decides
+SH-C-069	reason	When you change your payout destination to a new external bank account, or add a	SH-S-0345	moved to decides	the sentence states a rule (payouts paused 3-5 business days), which answers who decides; the reason is the next sentence, kept
+SH-C-069	reason	Shopify doesn't control the length of time between payouts arriving at your bank	SH-S-0314	moved to decides	the sentence states who controls the time after payout (the bank, not Shopify), which answers who decides
+SH-C-070	where	You can track the value of your reserved funds from the	SH-S-0579	dropped	the quote stops before naming the place ("from the"); the help link to Finance > Payouts is kept
+SH-C-070	where	"title": "Overview of reserves in Shopify Payments"	SH-S-3000	dropped	a Help Center section title only shows that the page exists
+SH-C-070	responsible	We, in our discretion, will set the terms of any Reserve Account and notify you 	SH-S-0112	dropped	the clause states Shopify's discretion over reserve terms, kept under decides (same citation)
+SH-C-070	boundary	We, in our discretion, will set the terms of any Reserve Account and notify you 	SH-S-0112	dropped	the clause states Shopify's discretion over reserve terms, kept under decides (same citation); it names no boundary
+SH-C-070	boundary	C. Processing Transactions and Receiving Your Funds	SH-S-3142	dropped	a table-of-contents entry only shows that the section exists
+SH-C-071	where	"text": "Online standard card rates"	SH-S-1930	dropped	a plan table row is not a location; the row with its values per plan is added under decides
+SH-C-071	where	"value": "INTERCHANGE_PLUS_PLUS_FEE"	SH-S-2094	dropped	a value of the billing charges filter only shows that the charge type exists; it does not place the rates
+SH-C-071	decides	"text": "Online international rates"	SH-S-1932	dropped	plan table row label only; the row with its values per plan is added from plan-comparison-public
+SH-C-071	boundary	Processing Fees shall be collected from you by the applicable Payment Processor 	SH-S-0110	dropped	the clause states who collects the fees, kept under responsible (same citation)
+SH-C-072	where	"text": "read_shopify_payments_disputes"	SH-S-1071	dropped	an access scope is a boundary, not a location; the same scope is kept under boundary
+SH-C-072	where	"value": "disputes/create"	SH-S-1214	dropped	a webhook topic is a boundary, not a location; the same topic is kept under boundary
+SH-C-072	where	"value": "MANAGE_DISPUTES"	SH-S-1841	dropped	an assignable-permission value only shows that the permission exists
+SH-C-072	responsible	If you're using Shopify Payments and you're issued a chargeback, then the amount	SH-S-0398	moved to boundary	the sentence states how a chargeback meets the merchant's payouts (deducted from the next payout), which is a boundary
+SH-C-073	where	This feature is available for free and helps protect eligible orders against fra	SH-S-0400	moved to decides	the sentence states that the feature is free and covers eligible orders, which answers who decides; it places nothing
+SH-C-073	where	"value": "orders/shopify_protect_eligibility_changed"	SH-S-1302	dropped	a webhook topic is a boundary, not a location; the same topic is kept under boundary
+SH-C-073	boundary	"text": "View Shopify Protect terms"	SH-S-2131	dropped	a legal index entry only shows that the agreement exists; the agreement's own clauses are kept
+SH-C-074	where	It allows customers to save their email address, payment method, and shipping an	SH-S-0406	dropped	the sentence states what Shop Pay lets customers do; kept under reason (same citation)
+SH-C-074	where	The customer’s shipping and billing information is securely stored on	SH-S-0407	dropped	the quote stops before naming where the information is stored ("stored on")
+SH-C-074	decides	It allows customers to save their email address, payment method, and shipping an	SH-S-0406	dropped	the sentence states what Shop Pay lets customers do, kept under reason; it states no condition or setting
+SH-C-074	decides	Shopify will collect and store certain personal information from the Customer	SH-S-0413	moved to responsible	the clause states that Shopify collects and stores customer information, which answers who is responsible
+SH-C-074	decides	By using Shop Pay on your Shopify Store, you agree to be bound by the Shop Pay M	SH-S-0145	moved to boundary	the clause states the agreement a merchant accepts by using Shop Pay, which is the contract at the boundary
+SH-C-074	boundary	"text": "View Shop Pay merchant terms"	SH-S-2125	dropped	a legal index entry only shows that the agreement exists; the agreement's own clauses are kept
+SH-C-075	where	Payouts for these orders are included with your Shopify Payments payouts.	SH-S-0317	moved to boundary	the sentence states how Shop Pay Installments orders meet payouts, which is a boundary
+SH-C-075	where	You don't have to collect payments from your customers.	SH-S-0318	moved to responsible	the sentence states that the merchant does not collect payments from customers, which answers who is responsible
+SH-C-075	where	"title": "Shop Pay Installments"	SH-S-2962	dropped	a Help Center section title only shows that the page exists
+SH-C-075	boundary	D. United States	SH-S-3148	dropped	a table-of-contents entry only shows that the section exists
+SH-C-076	where	Only approved Partners can build payments extensions on Shopify's Payments Platf	SH-S-0440	dropped	the sentence states who may build payments extensions, kept under decides (same citation)
+SH-C-076	decides	These are restricted scopes, and you need to	SH-S-0446	dropped	the quote stops before the requirement ("you need to")
+SH-C-077	where	have their own methods of transferring funds from your customer to you.	SH-S-0311	moved to boundary	the fragment states that third-party providers have their own methods of transferring funds, which is how they meet the merchant
+SH-C-077	boundary	"title": "PayPal Express Checkout"	SH-S-2960	dropped	a Help Center section title only shows that the page exists
+SH-C-079	where	Orders that accept manual payments are marked as unpaid on the **Orders** page.	SH-S-0386	moved to boundary	the sentence states how manual payments meet orders (marked as unpaid), which is a boundary
+SH-C-079	where	If your business has unique needs for collecting payment or if you want to offer	SH-S-0583	dropped	the sentence states that the merchant can create a custom method, kept under decides (same citation)
+SH-C-079	responsible	When your customers use a manual payment method, you can arrange to receive thei	SH-S-0385	dropped	the sentence states that the merchant arranges payment, kept under decides (same citation)
+SH-C-079	boundary	You can choose from a list of suggested manual payment methods on the **Payment 	SH-S-0387	dropped	duplicate of the where statement (same citation); a settings page is not an API, event or contract
+SH-C-079	boundary	"value": "MARK_ORDERS_AS_PAID"	SH-S-1851	dropped	an assignable-permission value only shows that the permission exists
+SH-C-080	where	Orders paid using local payment methods are included in your Shopify Payments pa	SH-S-0421	moved to boundary	the sentence states how local payment methods meet payouts, which is a boundary
+SH-C-080	where	"text": "Accept local payment methods*"	SH-S-1978	dropped	a plan table row is not a location; the row with its values per plan is added under decides
+SH-C-080	boundary	You can activate local payment methods with Shopify Payments to offer customers 	SH-S-0420	dropped	duplicate of the decides statement (same citation); it names no API, event or contract
+SH-C-080	boundary	"title": "Payments"	SH-S-2921	dropped	a Help Center section title only shows that the page exists
+SH-C-081	where	receive cryptocurrency payments directly from your customers via on-chain transf	SH-S-0430	dropped	the clause states the on-chain mechanism, kept under boundary (same citation)
+SH-C-081	where	[USD Coin (USDC)](/en/manual/payments/shopify-payments/local-payment-methods/usd	SH-S-0423	dropped	a link in a Help Center page's section list only shows that the page exists
+SH-C-081	where	"text": "USDC rates"	SH-S-1937	dropped	a plan table row is not a location; the row with its values per plan is added under decides
+SH-C-081	where	To accept cryptocurrencies, activate one or more of the following	SH-S-0427	dropped	the quote stops before naming what to activate ("the following")
+SH-C-081	where	If you have issues with registration or payments for a cryptocurrency gateway, t	SH-S-0428	moved to responsible	the sentence sends gateway issues to the cryptocurrency gateway's own support, which answers who is responsible
+SH-C-081	boundary	"text": "View Cryptocurrency Credit Reward Program terms"	SH-S-2132	dropped	a legal index entry only shows that the agreement exists; the agreement's own clauses are kept
+SH-C-081	boundary	Some Credits may be paid in cryptocurrencies called stablecoins, such as USD Coi	SH-S-0434	moved to decides	the clause sets the form in which credits may be paid (stablecoins), which answers who decides
+SH-C-082	where	"title": "Shop Cash"	SH-S-2957	dropped	a Help Center section title only shows that the page exists
+SH-C-082	responsible	You get paid for orders made using Shop Cash the same way that you're paid for	SH-S-0438	dropped	the quote stops mid-sentence ("the same way that you're paid for")
+SH-C-084	where	By default, credit card payments and some additional methods of payment are capt	SH-S-0390	dropped	the sentence states a store setting, kept under decides (same citation)
+SH-C-084	where	"value": "order_transactions/create"	SH-S-1292	dropped	a webhook topic is a boundary, not a location; the same topic is kept under boundary
+SH-C-084	where	"value": "CAPTURE_PAYMENTS_FOR_ORDERS"	SH-S-1787	dropped	an assignable-permission value only shows that the permission exists
+SH-C-084	decides	Complying with a local regulation that prescribes online merchants must offer at	SH-S-0394	moved to reason	the sentence is listed as a reason for capturing payments manually
+SH-C-084	boundary	By default, credit card payments and some additional methods of payment are capt	SH-S-0390	dropped	duplicate of the decides statement (same citation); the store setting is kept under decides
+SH-C-085	where	Store payment methods that can be used to pay for future orders without requirin	SH-S-0592	moved to boundary	the sentence describes an API in the subscriptions APIs list, which is a boundary, not a location
+SH-C-085	where	`read_customer_payment_methods`	SH-S-1119	dropped	an access scope is a boundary, not a location; the same scope is kept under boundary
+SH-C-085	where	`write_payment_mandate`	SH-S-1135	moved to boundary	an access scope is a boundary, not a location
+SH-C-085	boundary	"value": "PAY_ORDERS_BY_VAULTED_CARD"	SH-S-1868	dropped	an assignable-permission value only shows that the permission exists
+SH-C-086	boundary	Offline payments is an optional feature that extends [offline checkout](/manual/	SH-S-0585	moved to decides	the sentence states that offline payments is an optional feature, which answers who decides; it names no boundary
+SH-C-086	boundary	Canadian businesses can't accept Interac card payments when offline.	SH-S-0588	moved to decides	the sentence states a restriction (no Interac offline), which answers who decides
+SH-C-087	where	"text": "read_cash_tracking"	SH-S-0954	dropped	an access scope is a boundary, not a location; the same scope is kept under boundary
+SH-C-087	where	"text": "write_cash_tracking"	SH-S-0955	dropped	an access scope is a boundary, not a location; the same scope is kept under boundary
+SH-C-088	where	Shopify Balance is a money management account that you can use to manage your st	SH-S-0458	dropped	the sentence states what Shopify Balance is for, kept under reason (same citation)
+SH-C-088	where	"text": "Manage money with Shopify Balance¹"	SH-S-1983	dropped	a plan table row is not a location; the row with its values per plan is added under decides
+SH-C-088	boundary	In some regions, your Shopify Balance account can be used to	SH-S-0459	dropped	the quote stops mid-sentence ("can be used to")
+SH-C-090	where	"text": "Shopify Credit pay-in-full Visa® card³"	SH-S-1985	dropped	a plan table row is not a location; the row with its values per plan is added under decides
+SH-C-090	boundary	Shopify Credit is a pay-in-full business charge card.	SH-S-0467	dropped	the sentence states what kind of product Shopify Credit is; it names no API, event, setting or contract
+SH-C-091	where	Eligibility is automatically evaluated based on a variety of factors including s	SH-S-0474	dropped	the sentence states how eligibility is evaluated, kept under decides (same citation)
+SH-C-091	boundary	Shopify Capital offers loans to merchants in the United States.	SH-S-0481	dropped	the sentence states the product type in the United States (loans); it names no API, event, setting or contract
+SH-C-092	where	Eligibility is automatically evaluated based on a variety of factors including s	SH-S-0474	dropped	the sentence states how eligibility is evaluated, kept under decides (same citation)
+SH-C-092	boundary	The Bankers' Automated Clearing System (BACS) Direct Debit regulations require t	SH-S-0486	moved to decides	the sentence states that BACS Direct Debit regulations require the notifications and that they can't be turned off, which answers who decides
+SH-C-093	where	Eligibility is automatically evaluated based on a variety of factors including s	SH-S-0474	dropped	the sentence states how eligibility is evaluated, kept under decides (same citation)
+SH-C-093	boundary	Shopify Capital offers loans to merchants in Canada.	SH-S-0487	dropped	the sentence states the product type in Canada (loans); it names no API, event, setting or contract
+SH-C-094	where	Eligibility is automatically evaluated based on a variety of factors including s	SH-S-0474	dropped	the sentence states how eligibility is evaluated, kept under decides (same citation)
+SH-C-095	where	Eligibility is automatically evaluated based on a variety of factors including s	SH-S-0474	dropped	the sentence states how eligibility is evaluated, kept under decides (same citation)
+SH-C-096	where	Eligibility is automatically evaluated based on a variety of factors including s	SH-S-0474	dropped	the sentence states how eligibility is evaluated, kept under decides (same citation)
+SH-C-097	where	Eligibility is automatically evaluated based on a variety of factors including s	SH-S-0474	dropped	the sentence states how eligibility is evaluated, kept under decides (same citation)
+SH-C-097	boundary	In Ireland, Shopify Capital offers merchant cash advances.	SH-S-0497	dropped	the sentence states the product type in Ireland (merchant cash advances); it names no API, event, setting or contract
+SH-C-098	where	Shopify Bill Pay is powered by <a href="https://meliopayments.com/">Melio	SH-S-0499	dropped	the sentence names the provider powering Bill Pay, kept under responsible (same citation)
+SH-C-098	boundary	Install Shopify Bill Pay from the Shopify App Store.	SH-S-0500	dropped	duplicate of the where statement (same citation); installing an app is not itself an API, event or contract boundary
+SH-C-099	where	"value": "VIEW_TAX_DOCUMENTS"	SH-S-1896	dropped	an assignable-permission value only shows that the permission exists
+SH-C-100	where	Shopify uses many default sales tax rates, which are updated regularly. If you u	SH-S-0506	dropped	the sentence states the default rates and the merchant's duty to confirm them, kept under decides (same citation)
+SH-C-100	decides	Norway, Switzerland, Australia, New Zealand, and Singapore	SH-S-0510	dropped	a row label of the region table; it states no service by itself
+SH-C-100	decides	All countries and regions except Norway, Switzerland, Australia, New Zealand, an	SH-S-0511	dropped	a row label of the region table; it states no service by itself
+SH-C-100	decides	Shopify Tax offers the highest level of sales tax compliance with the least amou	SH-S-0513	dropped	the sentence is kept under reason (same citation); the regional condition is kept in a separate decides statement
+SH-C-100	responsible	Your access to and use of any tools that Shopify offers to you that help you cal	SH-S-0039	moved to boundary	the clause states the agreement that governs use of Shopify Tax, which is the contract at the boundary
+SH-C-100	boundary	"title": "Taxes and duties"	SH-S-1492	dropped	a settings navigation entry places the page; it is kept under where and is not a boundary
+SH-C-100	boundary	Shopify Tax is free to use until your store reaches a sales threshold, after whi	SH-S-0518	moved to decides	the sentence sets when the fee applies and what it depends on (location and plan), which answers who decides
+SH-C-100	boundary	"value": "SHOPIFY_TAX"	SH-S-2117	dropped	a value of the billing charges filter only shows that the charge type exists; the filter is not a boundary structure
+SH-C-101	where	"text": "Tax liability tracking"	SH-S-1989	dropped	a plan table row is not a location; the row with its values per plan is added under decides
+SH-C-101	boundary	"title": "Taxes and duties"	SH-S-1492	dropped	a settings navigation entry places the page; it is kept under where and is not a boundary
+SH-C-101	boundary	"value": "MANAGE_TAXES_SETTINGS"	SH-S-1849	dropped	an assignable-permission value only shows that the permission exists; the routes that require it are kept under decides
+SH-C-102	where	"text": "VAT validation, exemptions, and invoicing"	SH-S-1990	dropped	a plan table row is not a location; the row with its values per plan is added under decides
+SH-C-102	decides	field [in your checkout](/manual/checkout-settings/checkout-form-options#custome	SH-S-0670	dropped	the fragment names the checkout field, kept under boundary (same citation)
+SH-C-103	where	Third-party apps require an account with the tax service provider before you can	SH-S-0529	moved to decides	the sentence states a condition for activating a tax app, which answers who decides
+SH-C-103	decides	Learn more about gaining access to Shopify's tax platform and using third-party 	SH-S-0635	dropped	link text pointing to another page; it states nothing
+SH-C-103	responsible	then this information is transmitted to the tax app provider to calculate tax ex	SH-S-0532	moved to boundary	the fragment states that customer information is transmitted to the tax app provider, which is a boundary
+SH-C-103	boundary	"value": "FEATURE_FEE"	SH-S-2089	dropped	a value of the billing charges filter only shows that the charge type exists; the filter is not a boundary structure
+SH-C-104	where	For stores that are already enrolled, automated filing files your monthly, quart	SH-S-0524	dropped	the sentence states what automated filing does for enrolled stores; it places nothing
+SH-C-104	where	**Automated filing is closed to new enrollment.** Only stores that are already e	SH-S-0521	moved to decides	the sentence states that automated filing is closed to new enrollment, which answers who decides
+SH-C-104	where	Automated filing with Shopify Tax is ending. Automated filing files your returns	SH-S-0525	moved to decides	the sentence states that automated filing is ending and its last covered date, which answers who decides
+SH-C-104	responsible	When you use the Tax Filing Services, you authorize us to deliver information an	SH-S-0605	moved to boundary	the clause states that Shopify delivers information and instructions to the Tax Service Provider on the merchant's behalf, which is a boundary
+SH-C-104	boundary	"value": "SHOPIFY_TAX_FILING"	SH-S-2088	dropped	a value of the billing charges filter only shows that the charge type exists; the filter is not a boundary structure
+SH-C-105	where	"label": "Estimate and collect duties and taxes"	SH-S-2060	dropped	a plan table row is not a location; the admin plan row is added under decides
+SH-C-105	boundary	"title": "Taxes and duties"	SH-S-1492	dropped	a settings navigation entry places the page; it is not a boundary
+SH-C-105	boundary	"value": "DUTIES_FEE"	SH-S-2091	dropped	a value of the billing charges filter only shows that the charge type exists; the filter is not a boundary structure
+SH-C-106	where	You can use Markets to manage how different customers experience your store base	SH-S-0540	dropped	the sentence states what Markets let a merchant manage, kept under decides (same citation)
+SH-C-106	boundary	"title": "Markets"	SH-S-1494	dropped	a settings navigation entry places the page; it is not a boundary
+SH-C-107	where	Your store currency is the currency used within your Shopify admin for pricing p	SH-S-0361	dropped	the sentence states what the store currency is used for, kept under decides (same citation); it places nothing
+SH-C-107	boundary	Your store currency is the currency used within your Shopify admin for pricing p	SH-S-0361	dropped	duplicate of the decides statement (same citation); it names no API, event or contract
+SH-C-107	boundary	"title": "Changing your store currency"	SH-S-3005	dropped	a Help Center section title only shows that the page exists
+SH-C-108	where	By default, prices are [converted automatically](/manual/international/pricing/e	SH-S-0544	dropped	the sentence states the default conversion and the manual option, kept under decides (same citation)
+SH-C-108	where	"text": "Show prices in local currencies*"	SH-S-1976	dropped	a plan table row is not a location; the row with its values per plan is added under decides
+SH-C-108	boundary	"title": "Setting up currencies for markets"	SH-S-2951	dropped	a Help Center section title only shows that the page exists
+SH-C-109	where	Currency conversion occurs at the time of a transaction, such as when you captur	SH-S-0548	moved to decides	the sentence states when conversion happens and which rate is used, which answers who decides
+SH-C-109	where	Your store has three types of currencies:	SH-S-0549	dropped	a lead-in sentence that states nothing by itself
+SH-C-109	where	By default, prices are [converted automatically](/manual/international/pricing/e	SH-S-0544	moved to decides	the sentence states the default (automatic conversion) and the manual option, which answers who decides
+SH-C-109	decides	All other Shopify Payments regions	SH-S-0556	dropped	a column header of the fee table; it states no fee by itself
+SH-C-109	responsible	The conversion rate isn't a fee (it's a mid-market rate, without any markup).	SH-S-0553	moved to decides	the sentence states the basis of the conversion rate (mid-market, no markup), which answers who decides its value
+SH-C-109	boundary	When you sell in local currencies you're charged the regular Shopify Payments pr	SH-S-0552	moved to decides	the sentence states which fees apply when selling in local currencies, which answers who decides
+SH-C-110	boundary	The disclaimer is a required part of the merchant of record arrangement. You can	SH-S-0569	moved to decides	the sentence states that the disclaimer can't be hidden or turned off, which answers who decides
+SH-C-111	where	"text": "Assign local domains"	SH-S-1979	dropped	a plan table row is not a location; the row with its values per plan is added under decides
+SH-C-111	boundary	"title": "Assigning domains and languages to markets"	SH-S-2953	dropped	a Help Center section title only shows that the page exists
+SH-C-112	where	A rollout is a scheduled set of changes to your online store's main theme, check	SH-S-0576	dropped	the sentence defines a rollout, kept under decides (same citation); it places nothing
+SH-C-113	where	Every store is required to have a backup region configured for use with Markets.	SH-S-0573	moved to decides	the sentence states a requirement (every store has a backup region), which answers who decides
+SH-C-113	boundary	Your backup region is automatically set to your store's home country when you cr	SH-S-0575	dropped	duplicate of the decides statement (same citation); it names no API, event or contract
+SH-C-114	responsible	Shopify serves only as an intermediary between you and the applicable Third-Part	SH-S-0613	dropped	the clause concerns shipping labels (Shopify Shipping), kept under that concern
+SH-C-114	boundary	"title": "Shipping and delivery"	SH-S-1491	dropped	a settings navigation entry places the page; it is not a boundary
+SH-C-115	where	"text": "3rd-party calculated shipping rates"	SH-S-1962	dropped	a plan table row is not a location; the row with its values per plan is added under decides
+SH-C-115	decides	"text": "3rd-party calculated shipping rates"	SH-S-1962	dropped	plan table row label only; the row with its values per plan is added from plan-comparison-public
+SH-C-115	decides	"text": "3rd-party calculated shipping rates"	SH-S-1962	dropped	duplicate plan table row label; the row with its values per plan is added from plan-comparison-public
+SH-C-115	responsible	Certain Shopify subscription plans may allow you to connect your own Third-Party	SH-S-0616	moved to decides	the clause states that certain subscription plans allow connecting a carrier account, which answers who decides
+SH-C-116	boundary	"value": "SHIPPING_FEE"	SH-S-2106	dropped	a value of the billing charges filter only shows that the charge type exists; the filter is not a boundary structure
+SH-C-116	reason	You can buy, print, and manage discounted shipping labels from Shopify supported	SH-S-0717	dropped	the sentence places labels in the admin and is kept under where (same citation); it states no reason
+SH-C-117	where	If you ship orders from the United States and you buy shipping labels, then you 	SH-S-0720	dropped	the sentence states a condition, kept under decides (same citation)
+SH-C-117	where	"text": "Shipping insurance*"	SH-S-1961	dropped	a plan table row is not a location; the row with its values per plan is added under decides
+SH-C-117	responsible	is the insurance administrator for coverage that you buy through Shopify.	SH-S-0721	dropped	the quote omits the party it describes (it begins at "is the insurance administrator")
+SH-C-117	boundary	"value": "SHIPPING_INSURANCE"	SH-S-2095	dropped	a value of the billing charges filter only shows that the charge type exists; the filter is not a boundary structure
+SH-C-118	where	"value": "fulfillment_events/create"	SH-S-1227	dropped	a webhook topic is a boundary, not a location; fulfillment webhook topics are kept under boundary
+SH-C-119	where	When you create a fulfillment service, Shopify automatically creates a new locat	SH-S-0703	moved to boundary	the sentence states how a fulfillment service meets locations (Shopify creates a location for it), which is a boundary
+SH-C-119	boundary	"value": "EXTERNAL_3PL_FEE"	SH-S-2093	dropped	a value of the billing charges filter only shows that the charge type exists; the filter is not a boundary structure
+SH-C-120	where	You can use the Fulfillment Network to connect with third-party logistics provid	SH-S-0715	dropped	the sentence states what the network does and with whom, kept under responsible (same citation)
+SH-C-120	decides	You can use the Fulfillment Network to connect with third-party logistics provid	SH-S-0715	dropped	the sentence states what the network does, kept under responsible and reason; it states no condition or setting
+SH-C-120	boundary	"text": "Shopify Fulfillment Network Terms of Service"	SH-S-2154	dropped	a legal index entry only shows that the agreement exists
+SH-C-120	boundary	"value": "SHOPIFY_FULFILLMENT"	SH-S-2111	dropped	a value of the billing charges filter only shows that the charge type exists; the filter is not a boundary structure
+SH-C-120	boundary	"value": "SHOPIFY_LOGISTICS"	SH-S-2113	dropped	a value of the billing charges filter only shows that the charge type exists; the filter is not a boundary structure
+SH-C-121	where	"value": "fulfillment_orders/line_items_prepared_for_pickup"	SH-S-1241	moved to boundary	a webhook topic is a boundary, not a location
+SH-C-121	where	"text": "unauthenticated_read_product_pickup_locations"	SH-S-1107	dropped	an access scope is a boundary, not a location; the scope's own lines are kept under boundary
+SH-C-122	responsible	Shopify Functions are never invoked directly by URL or otherwise. Shopify invoke	SH-S-0683	dropped	the sentence states who invokes functions, not who is legally responsible
+SH-C-123	responsible	Shopify Functions are never invoked directly by URL or otherwise. Shopify invoke	SH-S-0683	dropped	the sentence states who invokes functions, not who is legally responsible
+SH-C-124	responsible	Shopify Functions are never invoked directly by URL or otherwise. Shopify invoke	SH-S-0683	dropped	the sentence states who invokes functions, not who is legally responsible
+SH-C-125	where	`read_delivery_promises`	SH-S-1120	dropped	an access scope is a boundary, not a location; the scope's own lines are kept under boundary
+SH-C-125	where	"value": "delivery_promise_settings/update"	SH-S-1208	dropped	a webhook topic is a boundary, not a location; the same topic is kept under boundary
+SH-C-126	where	"label": "4PX"	SH-S-2859	dropped	one option of the tracking-carrier list; it places nothing
+SH-C-127	where	"text": "Create and share discount codes"	SH-S-1955	dropped	a plan table row is not a location; the row with its values per plan is added under decides
+SH-C-128	where	Shopify Functions are never invoked directly by URL or otherwise. Shopify invoke	SH-S-0683	dropped	the sentence states who invokes functions; kept under decides, it places nothing
+SH-C-128	responsible	Shopify Functions are never invoked directly by URL or otherwise. Shopify invoke	SH-S-0683	dropped	the sentence states who invokes functions, not who is legally responsible
+SH-C-129	where	"text": "Create marketing automations"	SH-S-1953	dropped	a plan table row is not a location; the row with its values per plan is added under decides
+SH-C-130	where	"text": "Create email campaigns"	SH-S-1949	dropped	a plan table row is not a location; the row with its values per plan is added under decides
+SH-C-130	where	"text": "Pay-per-send SMS campaigns"	SH-S-1950	dropped	a plan table row is not a location; the row with its values per plan is added under decides
+SH-C-130	where	"name": "Shopify Messaging"	SH-S-2821	dropped	a name in the notification template list; it places nothing
+SH-C-130	boundary	9.5 SMS Messaging	SH-S-3177	dropped	a section heading of the Terms only shows that the section exists
+SH-C-130	boundary	9.7 Shopify Email	SH-S-3179	dropped	a section heading of the Terms only shows that the section exists
+SH-C-130	boundary	"value": "SHOPIFY_EMAIL"	SH-S-2097	dropped	a value of the billing charges filter only shows that the charge type exists; the filter is not a boundary structure
+SH-C-132	where	Shopify Audiences is a tool that helps you to find new customers by generating c	SH-S-0734	dropped	the sentence states what Audiences is for, kept under reason (same citation)
+SH-C-132	where	Audiences are automatically exported to your digital advertising account, where 	SH-S-0735	dropped	the sentence states the export to ad accounts, kept under boundary (same citation)
+SH-C-132	decides	"text": "Optimize ads with Shopify Audiences"	SH-S-1995	dropped	plan table row label only; the row with its values per plan is added from plan-comparison-public
+SH-C-132	boundary	9.12 Audiences	SH-S-3184	dropped	a section heading of the Terms only shows that the section exists
+SH-C-133	where	is an ads program that helps you acquire and convert customers at an average cus	SH-S-0726	dropped	the sentence states how the merchant is charged, kept under decides (same citation); it places nothing
+SH-C-133	where	"text": "Acquire customers risk-free with Shop Campaigns"	SH-S-1957	dropped	a plan table row is not a location; the row with its values per plan is added under decides
+SH-C-133	boundary	is an ads program that helps you acquire and convert customers at an average cus	SH-S-0726	dropped	duplicate of the decides statement (same citation); it names no API, event or contract
+SH-C-133	boundary	"value": "SHOP_CAMPAIGNS"	SH-S-2107	dropped	a value of the billing charges filter only shows that the charge type exists; the filter is not a boundary structure
+SH-C-134	boundary	"value": "SHOPIFY_COLLABS_COMMISSION"	SH-S-2109	dropped	a value of the billing charges filter only shows that the charge type exists; the filter is not a boundary structure
+SH-C-134	boundary	"value": "SHOPIFY_COLLABS_PROCESSING_FEE"	SH-S-2110	dropped	a value of the billing charges filter only shows that the charge type exists; the filter is not a boundary structure
+SH-C-135	where	"text": "read_publications"	SH-S-1052	dropped	an access scope is a boundary, not a location; the scope's own lines are kept under boundary
+SH-C-135	decides	"text": "Sell on social and marketplaces"	SH-S-1910	dropped	plan table row label only; the row with its values per plan is added from plan-comparison-public
+SH-C-135	responsible	Only create a sales channel if you own and operate, or are contracted to represe	SH-S-0701	dropped	the sentence states a condition for creating a sales channel, kept under decides (same citation)
+SH-C-136	boundary	9.8 Shop	SH-S-3180	dropped	a section heading of the Terms only shows that the section exists
+SH-C-137	where	(formerly Codisto)	SH-S-0728	dropped	the fragment states the app's former name; it places nothing
+SH-C-137	decides	"text": "50 synced marketplace orders per month"	SH-S-1966	dropped	plan table row text only; the row with its values per plan is added from plan-comparison-public
+SH-C-137	decides	"text": "Import unlimited orders from marketplaces"	SH-S-1965	dropped	plan table row label only; the row with its values per plan is added from plan-comparison-public
+SH-C-137	decides	you can connect your product catalog to multiple marketplaces, and you can manag	SH-S-0727	dropped	duplicate of the where statement (same citation); it states no condition or setting
+SH-C-137	responsible	Examples include traffic-driving channels like Google and Meta, and marketplaces	SH-S-0700	dropped	the sentence gives examples of sales channels; it names no responsible party
+SH-C-138	where	"text": "read_product_feeds"	SH-S-1046	dropped	an access scope is a boundary, not a location; the paired scope is kept under boundary
+SH-C-138	where	"value": "collection_listings/add"	SH-S-1165	dropped	a webhook topic is a boundary, not a location; listing webhook topics are kept under boundary
+SH-C-139	where	Get all the power of Shopify under the hood, with complete control over the fron	SH-S-0709	moved to reason	the sentence states what headless gives the merchant (Shopify under the hood, control over the frontend), which is a stated reason, not a location
+SH-C-139	decides	Get all the power of Shopify under the hood, with complete control over the fron	SH-S-0709	dropped	the sentence is a stated reason, kept under reason (same citation); it states no condition
+SH-C-139	decides	"text": "Build headless storefronts"	SH-S-1973	dropped	plan table row label only; the row with its values per plan is added from plan-comparison-public
+SH-C-140	where	"text": "Sell in AI chats"	SH-S-1911	dropped	a plan table row is not a location; the row with its values per plan is added under decides
+SH-C-140	where	"dev.ucp.shopping.checkout"	SH-S-2530	moved to boundary	a capability in the store's Universal Commerce Protocol profile is an API boundary, not a location
+SH-C-140	boundary	9.14 Agentic Storefronts	SH-S-3186	dropped	a section heading of the Terms only shows that the section exists
+SH-C-140	boundary	For certain Participating Channels, Shopify may, in its discretion, assess a fee	SH-S-0629	moved to decides	the clause states Shopify's discretion to assess a fee, which answers who decides
+SH-C-140	boundary	Participating Channels may terminate the provision of their services in connecti	SH-S-0631	moved to decides	the clause states that Participating Channels may terminate their services at any time, which answers who decides
+SH-C-141	where	"text": "Sell and source products with Shopify Collective"	SH-S-1917	dropped	a plan table row is not a location; the row with its values per plan is added under decides
+SH-C-141	decides	lets you connect with other Shopify stores and sell each other's products in Sho	SH-S-0729	dropped	duplicate of the where statement (same citation); it states no condition
+SH-C-142	where	"text": "POS Pro: Advanced tools for brick‑and‑mortar retailers"	SH-S-1923	dropped	a plan table row is not a location; the row with its values per plan is added under decides
+SH-C-142	boundary	9.3 POS Services	SH-S-3175	dropped	a section heading of the Terms only shows that the section exists
+SH-C-142	boundary	"value": "POS_FEE"	SH-S-2102	dropped	a value of the billing charges filter only shows that the charge type exists; the filter is not a boundary structure
+SH-C-143	where	Purchase of the POS Equipment is subject to the POS Equipment Agreement, POS Equ	SH-S-0048	moved to boundary	the clause states the agreement that governs buying POS equipment, which is the contract at the boundary
+SH-C-143	where	"title": "Hardware for Shopify POS"	SH-S-3063	dropped	a Help Center section title only shows that the page exists
+SH-C-144	decides	With Shopify POS UI extensions, you can add custom functionality directly into S	SH-S-0713	dropped	the sentence places POS UI extensions, kept under where (same citation); it states no condition
+SH-C-145	where	"text": "200+ real-time reports, plus custom analytics"	SH-S-1918	dropped	a plan table row is not a location; the row with its values per plan is added under decides
+SH-C-146	decides	If you use the Shopify Pixel Manager, you are responsible for obtaining all nece	SH-S-0067	dropped	the sentence states the merchant's responsibility for consents, kept under responsible (same citation)
+SH-C-146	boundary	"title": "Customer events"	SH-S-1498	dropped	a settings navigation entry places the page; it is not a boundary
+SH-C-146	boundary	9.11 Shopify Pixel Manager	SH-S-3183	dropped	a section heading of the Terms only shows that the section exists
+SH-C-147	where	You may disable the setting that powers Enhanced Services ("Shopify Network Inte	SH-S-0045	dropped	the clause states the merchant can disable the setting, kept under decides (same citation)
+SH-C-147	where	Managed payment methods uses SNI to understand customer payment preferences and 	SH-S-0425	moved to boundary	the sentence states how managed payment methods use Shopify Network Intelligence, which is a boundary
+SH-C-147	boundary	9.2 Enhanced Services	SH-S-3174	dropped	a section heading of the Terms only shows that the section exists
+SH-C-147	boundary	If you receive Enhanced Services from Shopify (as defined in Section 9.2 of the 	SH-S-0192	dropped	the clause states the data role, kept under responsible (same citation)
+SH-C-148	decides	Because privacy laws and regulations vary across different regions, the **Custom	SH-S-0662	dropped	duplicate of another decides statement with the same citation
+SH-C-149	where	When you submit a request to erase a customer's personal data from their profile	SH-S-0666	moved to responsible	the sentence states that Shopify processes the erasure request, which answers who carries it out
+SH-C-149	where	"value": "ERASE_CUSTOMER_DATA"	SH-S-1825	dropped	an assignable-permission value only shows that the permission exists
+SH-C-149	where	"value": "customers/redact"	SH-S-1203	dropped	a webhook topic is a boundary, not a location; the same topic is kept under boundary
+SH-C-149	decides	As a Shopify merchant, you're responsible for complying with the privacy and dat	SH-S-0663	dropped	the sentence states the merchant's responsibility, kept under responsible (same citation)
+SH-C-150	where	"name": "Order confirmation"	SH-S-2764	dropped	one name in the notification template list; it places nothing
+SH-C-150	boundary	"title": "Notifications"	SH-S-1499	dropped	a settings navigation entry places the page; it is not a boundary
+SH-C-151	where	is a free ecommerce automation platform that enables you to automate tasks and p	SH-S-0752	dropped	the sentence describes Flow and that it is free, kept under decides (same citation)
+SH-C-152	where	Sidekick works within the context of your store regardless of technical skill, a	SH-S-0737	dropped	the sentence states that changes are presented for review, kept under decides (same citation)
+SH-C-153	where	"text": "Chat with customers"	SH-S-1952	dropped	a plan table row is not a location; the row with its values per plan is added under decides
+SH-C-153	decides	"text": "Chat with customers"	SH-S-1952	dropped	plan table row label only; the row with its values per plan is added from plan-comparison-public
+SH-C-154	where	"section":"Reviews"	SH-S-1596	dropped	the router's Reviews section holds the Fraud Protect and seller-protection terms routes, not product reviews
+SH-C-155	where	"text": "24/7 support"	SH-S-1919	dropped	a plan table row is not a location; the row with its values per plan is added under decides
+SH-C-156	where	Apps that are made by Shopify are usually free and are supported by Shopify.	SH-S-0738	moved to responsible	the sentence states who supports apps made by Shopify, which answers who is responsible, not where apps live
+SH-C-156	where	Apps that are developed by a third-party developer might have [app charges](/man	SH-S-0739	moved to responsible	the sentence states who supports third-party apps and that they may charge, which answers who is responsible
+SH-C-156	boundary	9.9 Third Party Services and Third Party Partners	SH-S-3181	dropped	a section heading of the Terms only shows that the section exists
+SH-C-158	where	Merchants approve the scopes when they install it.	SH-S-0755	dropped	the sentence states who approves scopes, kept under decides (same citation)
+SH-C-159	where	Shopify approval required Shopify has to approve your app for the scope before y	SH-S-0756	dropped	the sentence states Shopify's approval, kept under decides (same citation)
+SH-C-159	where	`read_all_orders`	SH-S-1114	dropped	an access scope is a boundary, not a location; the same scope is kept under boundary
+SH-C-160	where	### Protected customer data permissions	SH-S-3192	dropped	a page heading only shows that the section exists
+SH-C-160	where	Shopify will approve your app to use protected customer data if the requested da	SH-S-0694	dropped	the sentence states Shopify's approval condition, kept under decides (same citation)
+SH-C-160	boundary	Shopify will approve your app to use protected customer data if the requested da	SH-S-0694	dropped	duplicate of the decides statement (same citation); it names no API, event or contract
+SH-C-161	where	"value": "customers/data_request"	SH-S-1197	moved to boundary	a webhook topic is a boundary, not a location
+SH-C-161	where	"value": "customers/redact"	SH-S-1203	dropped	a webhook topic is a boundary, not a location; the same topic is kept under boundary
+SH-C-161	where	"value": "shop/redact"	SH-S-1356	moved to boundary	a webhook topic is a boundary, not a location
+SH-C-162	where	When your app needs information about specific events that have occurred on a sh	SH-S-0685	moved to boundary	the sentence states the subscription mechanism by which apps receive event data, which is a boundary
+SH-C-162	decides	When your app needs information about specific events that have occurred on a sh	SH-S-0685	dropped	the sentence states the subscription mechanism, kept under boundary (same citation); it states no condition
+SH-C-163	where	Shopify Functions are never invoked directly by URL or otherwise. Shopify invoke	SH-S-0683	dropped	the sentence states who invokes functions; kept under decides, it places nothing
+SH-C-163	decides	"text": "Personalize store with custom functions"	SH-S-2000	dropped	plan table row label only; the row with its values per plan is added from plan-comparison-public
+SH-C-163	responsible	Shopify Functions are never invoked directly by URL or otherwise. Shopify invoke	SH-S-0683	dropped	the sentence states who invokes functions, not who is legally responsible
+SH-C-163	boundary	Shopify releases new API versions on a predictable quarterly schedule, giving yo	SH-S-0690	dropped	the sentence concerns API versioning (kept under SH-C-171), not functions
+SH-C-164	decides	Admin UI extensions let you embed your app's functionality on core admin pages.	SH-S-0711	dropped	the sentence places admin UI extensions, kept under where (same citation); it states no condition
+SH-C-164	responsible	Admin UI extensions let you embed your app's functionality on core admin pages.	SH-S-0711	dropped	the sentence places admin UI extensions; it names no responsible party
+SH-C-165	where	Customer account UI extensions are only supported on the new version of customer	SH-S-0712	dropped	the sentence states a condition, kept under decides (same citation)
+SH-C-165	responsible	Customer account UI extensions are only supported on the new version of customer	SH-S-0712	dropped	the sentence states a condition; it names no responsible party
+SH-C-166	where	"text": "write_app_proxy"	SH-S-0944	dropped	an access scope is a boundary, not a location; the paired scope is kept under boundary
+SH-C-166	responsible	Theme app extensions allow merchants to easily add dynamic elements to their the	SH-S-0705	dropped	the sentence states what merchants can do; it names no responsible party
+SH-C-167	where	"section":"AdminDev"	SH-S-1541	dropped	route playground:frame is titled "Playground - Frame"; the router does not tie section AdminDev to apps developed in the admin
+SH-C-167	where	"name": "App developer"	SH-S-1612	dropped	a role name in the role list does not place app development in the software
+SH-C-167	decides	"text": "Build custom apps using Shopify APIs"	SH-S-1971	dropped	plan table row label only; the row with its values per plan is added from plan-comparison-public
+SH-C-167	boundary	"text": "Build custom apps using Shopify APIs"	SH-S-1971	dropped	a plan table row is not a boundary; the row with its values per plan is added under decides
+SH-C-168	responsible	“Unsupported Region” means a region where Shopify is unable to operate due to lo	SH-S-0289	dropped	a definition clause; it is kept under SH-C-174 (sanctions and unsupported regions)
+SH-C-168	boundary	"text": "View partner terms"	SH-S-2150	dropped	a legal index entry only shows that the agreement exists; the agreement's own clauses are kept
+SH-C-168	boundary	"text": "View App Events API terms"	SH-S-2135	dropped	a legal index entry only shows that the agreement exists
+SH-C-169	where	"label": "View financials"	SH-S-1897	dropped	a permission label in the partner API client permission list only shows that it exists
+SH-C-169	responsible	An App Developer that has met certain registration requirements, pays 0% of the 	SH-S-0287	moved to decides	the clause sets the revenue share, which answers who decides the amount paid out
+SH-C-169	boundary	Shopify distributes Fees owing to its Partners and amounts due to Partner from M	SH-S-0295	dropped	the clause states the payout schedule, kept under decides (same citation)
+SH-C-169	boundary	An App Developer that has met certain registration requirements, pays 0% of the 	SH-S-0287	dropped	the clause sets the revenue share, moved to decides (same citation)
+SH-C-170	where	"value": "BROKERED_SERVICE_FEE"	SH-S-2092	dropped	a value of the billing charges filter only shows that the charge type exists; it does not place the services
+SH-C-170	where	"value": "PROFESSIONAL_SERVICE"	SH-S-2104	dropped	a value of the billing charges filter only shows that the charge type exists; it does not place the services
+SH-C-170	decides	It is the Partner’s responsibility to ensure that there is a Merchant Agreement 	SH-S-0761	dropped	the clause states the partner's responsibility, kept under responsible (same citation)
+SH-C-170	boundary	"value": "BROKERED_SERVICE_FEE"	SH-S-2092	dropped	a value of the billing charges filter only shows that the charge type exists; the filter is not a boundary structure
+SH-C-171	where	Rate limits keep the platform stable and fair for everyone.	SH-S-0687	dropped	the sentence states why rate limits exist, kept under reason (same citation)
+SH-C-171	decides	"text": "Up to 500% higher API call limits"	SH-S-1998	dropped	plan table row label only; the row with its values per plan is added from plan-comparison-public
+SH-C-172	where	When Shopify detects activity that might not be a legitimate commerce practice, 	SH-S-0658	moved to decides	the sentence states that Shopify may restrict a store's access, which answers who decides
+SH-C-172	where	While your store is in restricted access, your storefront is unavailable to cust	SH-S-0660	moved to decides	the sentence states what restricted access limits, which answers who decides
+SH-C-172	where	Complete the appeal form with explanations and any supporting documents that dem	SH-S-0661	dropped	the sentence names the appeal form, kept under boundary (same citation)
+SH-C-172	boundary	"text": "Report an issue with a merchant"	SH-S-2138	dropped	a legal index entry only shows that the reporting tool exists
+SH-C-173	responsible	The types of business categories and business practices that are considered Proh	SH-S-0109	moved to decides	the clause states who provides the prohibited and restricted categories (each Payment Processor), which answers who decides
+SH-C-173	boundary	Prohibited Business and Restricted Business categories may be imposed by law or 	SH-S-0108	dropped	the clause states who imposes the categories, kept under decides (same citation)
+SH-C-173	boundary	"title": "Shopify Payments eligibility"	SH-S-2982	dropped	a Help Center section title only shows that the page exists
+SH-C-174	responsible	You may not use the Payments Services if you are a resident of a sanctioned coun	SH-S-0122	dropped	the clause is a restriction, kept under decides (same citation); it names no responsible party beyond the merchant's eligibility
+SH-C-174	boundary	You may not use the Payments Services if you are a resident of a sanctioned coun	SH-S-0122	dropped	the clause is a restriction, kept under decides (same citation); it names no API, event or contract
+SH-C-174	boundary	Neither you nor your legal representatives, authorized representatives, ultimate	SH-S-0131	dropped	the clause is a restriction, kept under decides (same citation); it names no API, event or contract
+SH-C-174	boundary	“Unsupported Region” means a region where Shopify is unable to operate due to lo	SH-S-0289	dropped	a definition clause, kept under reason (same citation)
+SH-C-174	boundary	Shopify does not support transactions that involve these regions or persons loca	SH-S-0290	moved to decides	the clause states that Shopify does not support transactions involving unsupported regions, which answers who decides
+SH-C-174	boundary	"title": "Unsupported countries and regions"	SH-S-2896	dropped	a Help Center section title only shows that the page exists
+SH-C-175	decides	You're responsible for adhering to legal requirements about recalls in any juris	SH-S-0669	moved to responsible	the sentence states the merchant's responsibility for recalls, which answers who is responsible
+SH-C-175	boundary	This includes, but is not limited to, authorizing the charge to the customer in 	SH-S-0012	moved to responsible	the clause lists what the merchant is responsible for, including regulatory compliance
+SH-C-175	boundary	"title": "Consumer protection laws"	SH-S-2889	dropped	a Help Center section title only shows that the page exists
+SH-C-176	boundary	8. Intellectual Property and Your Materials	SH-S-3130	dropped	a table-of-contents entry only shows that the section exists
+SH-C-176	boundary	11. Intellectual Property Infringement	SH-S-3133	dropped	a table-of-contents entry only shows that the section exists
+SH-C-177	boundary	"text": "Submit a P2B complaint"	SH-S-2161	dropped	a legal index entry only shows that the complaint form exists
+SH-C-178	decides	If you are dissatisfied with one of our Financial product offerings, please let 	SH-S-0657	dropped	duplicate of the where statement (same citation); it states no condition
+SH-C-178	boundary	"text": "Submit a financial complaint"	SH-S-2153	dropped	a legal index entry only shows that the complaint form exists
+SH-C-179	where	All legal access requests from third parties seeking information held by Shopify	SH-S-0653	moved to boundary	the sentence names the form through which legal access requests must be filed, which is the boundary
+SH-C-179	responsible	All legal access requests from third parties seeking information held by Shopify	SH-S-0653	dropped	the sentence names the form at the boundary, kept under boundary (same citation); it names no responsible party
+SH-C-180	boundary	by and between You (or "Merchant"), and the Shopify Contracting Entity as set fo	SH-S-0187	dropped	the clause names the parties to the DPA, kept under responsible (same citation)
+SH-C-180	boundary	"text": "View data processing addendum"	SH-S-2127	dropped	a legal index entry only shows that the agreement exists; the agreement's own clauses are kept
+SH-C-181	where	Google Cloud Canada Corporation	SH-S-0195	dropped	a subprocessor's name, kept under responsible (same citation)
+SH-C-181	responsible	<td>All platform data</td>	SH-S-0198	dropped	a data category cell, kept under where (same citation); it names no party
+SH-C-182	where	We limit the use of our subprocessors to technical services: cloud hosting, erro	SH-S-0645	dropped	the sentence states the limit Shopify sets on subprocessors, kept under decides (same citation)
+SH-C-182	where	Amazon Web Services, Inc.	SH-S-0197	moved to responsible	a subprocessor's name in the table answers who processes the data, not where it lives
+SH-C-182	responsible	Shopify also employs comprehensive data transfer and processing agreements (DPAs	SH-S-0643	moved to boundary	the sentence states the agreements (DPAs with SCCs) that govern transfers to subprocessors, which is the contract at the boundary
+SH-C-182	boundary	To the extent You object to Shopify's use of a Subprocessor, and Shopify is unab	SH-S-0189	dropped	the clause states the merchant's option to terminate, kept under decides (same citation)
+SH-C-183	where	"value": "shop/redact"	SH-S-1356	dropped	a webhook topic is a boundary, not a location; the same topic is kept under boundary
+SH-C-183	boundary	delete all originals, copies and reproductions of the Merchant Data within 30 da	SH-S-0219	dropped	duplicate of the responsible statement (same citation)
+SH-C-184	where	Where the Services involve Shopify storing, processing or transmitting "Account 	SH-S-0073	dropped	the clause states Shopify's PCI DSS responsibility, kept under responsible (same citation)
+SH-C-184	where	Where the Payments Services involve Shopify storing, processing or transmitting 	SH-S-0097	dropped	the clause states Shopify's PCI DSS responsibility, kept under responsible (same citation)
+SH-C-184	where	The customer’s shipping and billing information is securely stored on	SH-S-0407	dropped	the quote stops before naming where the information is stored ("stored on")
+SH-C-184	decides	Where the Services involve Shopify storing, processing or transmitting "Account 	SH-S-0073	dropped	the clause states responsibility, kept under responsible (same citation); it states no condition
+SH-C-184	boundary	Where the Services involve Shopify storing, processing or transmitting "Account 	SH-S-0073	dropped	the clause states responsibility, kept under responsible (same citation); it names no API, event or contract
+SH-C-184	boundary	Where the Payments Services involve Shopify storing, processing or transmitting 	SH-S-0097	dropped	the clause states responsibility, kept under responsible (same citation); it names no API, event or contract
+SH-C-184	boundary	12. Privacy and Data Protection	SH-S-3134	dropped	a table-of-contents entry only shows that the section exists
+SH-C-185	boundary	9.9 Third Party Services and Third Party Partners	SH-S-3181	dropped	a section heading of the Terms only shows that the section exists
+SH-C-185	boundary	"title": "Dropshipping"	SH-S-2890	dropped	a Help Center section title only shows that the page exists
+SH-C-186	where	A subscription contract is the agreement between a customer and a merchant over 	SH-S-0762	dropped	the sentence defines the subscription contract's parties, kept under responsible (same citation)
+SH-C-186	where	"label": "subscriptionContractActivate"	SH-S-0892	moved to boundary	a mutation of the Customer Account API is an API boundary, not a location
+SH-C-186	decides	as your primary payment gateway. To learn more about subscriptions, refer to	SH-S-0764	dropped	the fragment is incomplete ("To learn more about subscriptions, refer to")
+SH-C-186	decides	Subscription apps enable developers and merchants to build subscription experien	SH-S-0763	dropped	the sentence places subscription apps, kept under where (same citation); it states no condition
+SH-C-187	boundary	9.9 Third Party Services and Third Party Partners	SH-S-3181	dropped	a section heading of the Terms only shows that the section exists
+SH-C-189	boundary	9.9 Third Party Services and Third Party Partners	SH-S-3181	dropped	a section heading of the Terms only shows that the section exists
+SH-C-190	boundary	9.9 Third Party Services and Third Party Partners	SH-S-3181	dropped	a section heading of the Terms only shows that the section exists
+SH-C-191	boundary	9.9 Third Party Services and Third Party Partners	SH-S-3181	dropped	a section heading of the Terms only shows that the section exists
+SH-C-192	boundary	9.9 Third Party Services and Third Party Partners	SH-S-3181	dropped	a section heading of the Terms only shows that the section exists
+SH-C-194	boundary	9.9 Third Party Services and Third Party Partners	SH-S-3181	dropped	a section heading of the Terms only shows that the section exists
+SH-C-195	where	`read_mobile_platform_applications`	SH-S-1128	dropped	an access scope is a boundary, not a location; the paired scope is kept under boundary
+SH-C-196	boundary	9.9 Third Party Services and Third Party Partners	SH-S-3181	dropped	a section heading of the Terms only shows that the section exists
+SH-C-020	decides	{"set": 0, "section": "entitlements", "key": "inventory", "value": {"enabled": t	SH-S-5334;SH-S-5335;SH-S-5336;SH-S-5337;SH-S-5338;SH-S-5339;SH-S-5340;SH-S-5341;SH-S-5342;SH-S-5343;SH-S-5344;SH-S-5345;SH-S-5346;SH-S-5347;SH-S-5348	dropped	the concern's kept route eligibility no longer names this key (its routes belong to another concern); the key's values are kept under SH-C-022
+SH-C-027	decides	{"set": 0, "section": "entitlements", "key": "storefront", "value": {"enabled": 	SH-S-5364;SH-S-5365;SH-S-5366;SH-S-5367;SH-S-5368;SH-S-5369;SH-S-5370;SH-S-5371;SH-S-5372;SH-S-5373;SH-S-5374;SH-S-5375;SH-S-5376;SH-S-5377;SH-S-5378	dropped	the concern's kept route eligibility no longer names this key (its routes belong to another concern); the key's values are kept under SH-C-029, SH-C-030, SH-C-031, SH-C-055, SH-C-129, SH-C-145, SH-C-146, SH-C-148
+SH-C-028	decides	{"set": 0, "section": "entitlements", "key": "storefront", "value": {"enabled": 	SH-S-5364;SH-S-5365;SH-S-5366;SH-S-5367;SH-S-5368;SH-S-5369;SH-S-5370;SH-S-5371;SH-S-5372;SH-S-5373;SH-S-5374;SH-S-5375;SH-S-5376;SH-S-5377;SH-S-5378	dropped	the concern's kept route eligibility no longer names this key (its routes belong to another concern); the key's values are kept under SH-C-029, SH-C-030, SH-C-031, SH-C-055, SH-C-129, SH-C-145, SH-C-146, SH-C-148
+SH-C-039	decides	{"set": 0, "section": "entitlements", "key": "customerSegmentation", "value": tr	SH-S-5670;SH-S-5671;SH-S-5672;SH-S-5673;SH-S-5674;SH-S-5675;SH-S-5676;SH-S-5677;SH-S-5678;SH-S-5679;SH-S-5680;SH-S-5681;SH-S-5682;SH-S-5683;SH-S-5684	dropped	the concern's kept route eligibility no longer names this key (its routes belong to another concern); the key's values are kept under SH-C-040
+SH-C-059	decides	{"set": 0, "section": "entitlements", "key": "shopifyFinance", "value": {"capita	SH-S-5379;SH-S-5386;SH-S-5387;SH-S-5389;SH-S-5390;SH-S-5391;SH-S-5392;SH-S-5393	dropped	the concern's kept route eligibility no longer names this key (its routes belong to another concern); the key's values are kept under SH-C-098
+SH-C-059	decides	{"set": 0, "section": "entitlements", "key": "shopifyFinance", "value": {"capita	SH-S-5380;SH-S-5381;SH-S-5382;SH-S-5383;SH-S-5384;SH-S-5385;SH-S-5388	dropped	the concern's kept route eligibility no longer names this key (its routes belong to another concern); the key's values are kept under SH-C-098
+SH-C-059	decides	{"set": 0, "section": "features", "key": "canAccessBillPay", "value": true}	SH-S-5715;SH-S-5716;SH-S-5717;SH-S-5718;SH-S-5719;SH-S-5720;SH-S-5721;SH-S-5722;SH-S-5724;SH-S-5725;SH-S-5726;SH-S-5727;SH-S-5729;SH-S-5730;SH-S-5731	dropped	the concern's kept route eligibility no longer names this key (its routes belong to another concern); the key's values are kept under SH-C-098
+SH-C-059	decides	{"set": 3, "section": "features", "key": "canAccessBillPay", "value": false}	SH-S-5723;SH-S-5728	dropped	the concern's kept route eligibility no longer names this key (its routes belong to another concern); the key's values are kept under SH-C-098
+SH-C-069	decides	{"set": 0, "section": "entitlements", "key": "shopifyFinance", "value": {"capita	SH-S-5379;SH-S-5386;SH-S-5387;SH-S-5389;SH-S-5390;SH-S-5391;SH-S-5392;SH-S-5393	dropped	the concern's kept route eligibility no longer names this key (its routes belong to another concern); the key's values are kept under SH-C-098
+SH-C-069	decides	{"set": 0, "section": "entitlements", "key": "shopifyFinance", "value": {"capita	SH-S-5380;SH-S-5381;SH-S-5382;SH-S-5383;SH-S-5384;SH-S-5385;SH-S-5388	dropped	the concern's kept route eligibility no longer names this key (its routes belong to another concern); the key's values are kept under SH-C-098
+SH-C-069	decides	{"set": 0, "section": "features", "key": "canAccessBillPay", "value": true}	SH-S-5715;SH-S-5716;SH-S-5717;SH-S-5718;SH-S-5719;SH-S-5720;SH-S-5721;SH-S-5722;SH-S-5724;SH-S-5725;SH-S-5726;SH-S-5727;SH-S-5729;SH-S-5730;SH-S-5731	dropped	the concern's kept route eligibility no longer names this key (its routes belong to another concern); the key's values are kept under SH-C-098
+SH-C-069	decides	{"set": 3, "section": "features", "key": "canAccessBillPay", "value": false}	SH-S-5723;SH-S-5728	dropped	the concern's kept route eligibility no longer names this key (its routes belong to another concern); the key's values are kept under SH-C-098
+SH-C-069	decides	{"set": 0, "section": "features", "key": "financesOverview", "value": false}	SH-S-5732;SH-S-5733;SH-S-5734;SH-S-5735;SH-S-5736;SH-S-5737;SH-S-5739;SH-S-5740;SH-S-5741;SH-S-5742;SH-S-5743;SH-S-5744;SH-S-5745;SH-S-5746	dropped	the concern's kept route eligibility no longer names this key (its routes belong to another concern); the key's values are kept under SH-C-059, SH-C-072
+SH-C-069	decides	{"set": 0, "section": "features", "key": "financesOverview", "value": true}	SH-S-5738	dropped	the concern's kept route eligibility no longer names this key (its routes belong to another concern); the key's values are kept under SH-C-059, SH-C-072
+SH-C-098	decides	{"set": 0, "section": "features", "key": "financesOverview", "value": false}	SH-S-5732;SH-S-5733;SH-S-5734;SH-S-5735;SH-S-5736;SH-S-5737;SH-S-5739;SH-S-5740;SH-S-5741;SH-S-5742;SH-S-5743;SH-S-5744;SH-S-5745;SH-S-5746	dropped	the concern's kept route eligibility no longer names this key (its routes belong to another concern); the key's values are kept under SH-C-059, SH-C-072
+SH-C-098	decides	{"set": 0, "section": "features", "key": "financesOverview", "value": true}	SH-S-5738	dropped	the concern's kept route eligibility no longer names this key (its routes belong to another concern); the key's values are kept under SH-C-059, SH-C-072
+SH-C-022	decides	{"set": 0, "section": "entitlements", "key": "inventory", "value": {"enabled": t	SH-S-5334;SH-S-5335;SH-S-5336;SH-S-5337;SH-S-5338;SH-S-5339;SH-S-5340;SH-S-5341;SH-S-5342;SH-S-5343;SH-S-5344;SH-S-5345;SH-S-5346;SH-S-5347;SH-S-5348	dropped	the concern's kept route eligibility no longer names this key (its routes belong to another concern); the key's values are kept under SH-C-023
+SH-C-022	decides	{"set": 0, "section": "entitlements", "key": "inventory", "value": {"enabled": t	SH-S-5334;SH-S-5335;SH-S-5336;SH-S-5337;SH-S-5338;SH-S-5339;SH-S-5340;SH-S-5341;SH-S-5342;SH-S-5343;SH-S-5344;SH-S-5345;SH-S-5346;SH-S-5347;SH-S-5348	dropped	the concern's kept route eligibility no longer names this key (its routes belong to another concern); the key's values are kept under SH-C-023
+SH-C-054	decides	{"set": 0, "section": "entitlements", "key": "storefront", "value": {"enabled": 	SH-S-5364;SH-S-5365;SH-S-5366;SH-S-5367;SH-S-5368;SH-S-5369;SH-S-5370;SH-S-5371;SH-S-5372;SH-S-5373;SH-S-5374;SH-S-5375;SH-S-5376;SH-S-5377;SH-S-5378	dropped	the concern's kept route eligibility no longer names this key (its routes belong to another concern); the key's values are kept under SH-C-029, SH-C-030, SH-C-031, SH-C-055, SH-C-129, SH-C-145, SH-C-146, SH-C-148
+SH-C-054	decides	{"set": 0, "section": "features", "key": "fulfillmentBatchingEligible", "value":	SH-S-5792;SH-S-5793;SH-S-5795;SH-S-5796;SH-S-5798;SH-S-5800;SH-S-5803;SH-S-5804;SH-S-5805;SH-S-5807;SH-S-5808;SH-S-5809;SH-S-5810;SH-S-5811	dropped	the concern's kept route eligibility no longer names this key (its routes belong to another concern); the key's values are kept under SH-C-061, SH-C-118
+SH-C-054	decides	{"set": 1, "section": "features", "key": "fulfillmentBatchingEligible", "value":	SH-S-5794;SH-S-5797;SH-S-5799;SH-S-5801;SH-S-5802;SH-S-5806	dropped	the concern's kept route eligibility no longer names this key (its routes belong to another concern); the key's values are kept under SH-C-061, SH-C-118
+SH-C-003	decides	{"set": 0, "section": "features", "key": "centralLegalEntitiesEnabled", "value":	SH-S-5812;SH-S-5813;SH-S-5814;SH-S-5815;SH-S-5816;SH-S-5817;SH-S-5818;SH-S-5819;SH-S-5820;SH-S-5821;SH-S-5822;SH-S-5823;SH-S-5824;SH-S-5825;SH-S-5826	dropped	the concern's kept route eligibility no longer names this key (its routes belong to another concern); the key's values are kept under SH-C-004
+SH-C-003	decides	{"set": 0, "section": "features", "key": "rbacEnabled", "value": true}	SH-S-5307;SH-S-5308;SH-S-5309;SH-S-5310;SH-S-5311;SH-S-5312;SH-S-5313;SH-S-5314;SH-S-5315;SH-S-5316;SH-S-5317;SH-S-5319;SH-S-5320;SH-S-5321;SH-S-5322;SH-S-5323;SH-S-5324;SH-S-5325;SH-S-5326;SH-S-5328;SH-S-5329;SH-S-5330;SH-S-5331;SH-S-5333	dropped	the concern's kept route eligibility no longer names this key (its routes belong to another concern); the key's values are kept under SH-C-009, SH-C-010, SH-C-012
+SH-C-003	decides	{"set": 0, "section": "features", "key": "rbacEnabled", "value": false}	SH-S-5318;SH-S-5327;SH-S-5332	dropped	the concern's kept route eligibility no longer names this key (its routes belong to another concern); the key's values are kept under SH-C-009, SH-C-010, SH-C-012
+SH-C-114	decides	{"set": 0, "section": "features", "key": "fulfillmentBatchingEligible", "value":	SH-S-5792;SH-S-5793;SH-S-5795;SH-S-5796;SH-S-5798;SH-S-5800;SH-S-5803;SH-S-5804;SH-S-5805;SH-S-5807;SH-S-5808;SH-S-5809;SH-S-5810;SH-S-5811	dropped	the concern's kept route eligibility no longer names this key (its routes belong to another concern); the key's values are kept under SH-C-061, SH-C-118
+SH-C-114	decides	{"set": 1, "section": "features", "key": "fulfillmentBatchingEligible", "value":	SH-S-5794;SH-S-5797;SH-S-5799;SH-S-5801;SH-S-5802;SH-S-5806	dropped	the concern's kept route eligibility no longer names this key (its routes belong to another concern); the key's values are kept under SH-C-061, SH-C-118
+SH-C-100	decides	{"set": 0, "section": "features", "key": "taxFilingEnabled", "value": false}	SH-S-5887;SH-S-5888;SH-S-5889;SH-S-5890;SH-S-5891;SH-S-5892;SH-S-5893;SH-S-5894;SH-S-5895;SH-S-5896;SH-S-5897;SH-S-5898;SH-S-5899;SH-S-5900;SH-S-5901	dropped	the concern's kept route eligibility no longer names this key (its routes belong to another concern); the key's values are kept under SH-C-104
+SH-C-101	decides	{"set": 0, "section": "features", "key": "taxFilingEnabled", "value": false}	SH-S-5887;SH-S-5888;SH-S-5889;SH-S-5890;SH-S-5891;SH-S-5892;SH-S-5893;SH-S-5894;SH-S-5895;SH-S-5896;SH-S-5897;SH-S-5898;SH-S-5899;SH-S-5900;SH-S-5901	dropped	the concern's kept route eligibility no longer names this key (its routes belong to another concern); the key's values are kept under SH-C-104
+SH-C-103	decides	{"set": 0, "section": "features", "key": "taxFilingEnabled", "value": false}	SH-S-5887;SH-S-5888;SH-S-5889;SH-S-5890;SH-S-5891;SH-S-5892;SH-S-5893;SH-S-5894;SH-S-5895;SH-S-5896;SH-S-5897;SH-S-5898;SH-S-5899;SH-S-5900;SH-S-5901	dropped	the concern's kept route eligibility no longer names this key (its routes belong to another concern); the key's values are kept under SH-C-104
+SH-C-104	decides	{"set": 0, "section": "entitlements", "key": "shopifyTax", "value": {"enabled": 	SH-S-5872;SH-S-5873;SH-S-5874;SH-S-5875;SH-S-5876;SH-S-5877;SH-S-5878;SH-S-5879;SH-S-5880;SH-S-5881;SH-S-5882;SH-S-5883;SH-S-5884;SH-S-5885;SH-S-5886	dropped	the concern's kept route eligibility no longer names this key (its routes belong to another concern); the key's values are kept under SH-C-100, SH-C-101, SH-C-103

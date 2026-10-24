@@ -1,0 +1,42 @@
+[
+{
+"n": 1,
+"url": "https://docs.bigcommerce.com/developer/docs/admin/multi-storefront/msf-international-enhancements/overview.md",
+"dir": "items/001-docs.bigcommerce.com",
+"fetched_at": "2026-10-19T00:04:55Z",
+"http_raw": 200,
+"http_browser": 200,
+"final_url": "https://docs.bigcommerce.com/developer/docs/admin/multi-storefront/msf-international-enhancements/overview.md",
+"content_type": "text/markdown; charset=utf-8",
+"cited_in": "studies/proposals/records/Q1/bigcommerce/citations.tsv",
+"note": "",
+"result": "captured",
+"primary_file": "raw.txt",
+"sha256": "6ecddb2a3961af508402ed5f1e60cbc62fb9e5f78c9bdd033bb873058ee72799",
+"bytes": 10188,
+"date_hint": "",
+"date_source": "",
+"age_class": "undated (live page on capture date)",
+"text_file": "text.txt"
+},
+{
+"n": 2,
+"url": "https://www.bigcommerce.co.uk/pricing/",
+"dir": "items/002-bigcommerce.co.uk",
+"fetched_at": "2026-10-19T00:04:55Z",
+"http_raw": 200,
+"http_browser": 200,
+"final_url": "https://www.bigcommerce.co.uk/pricing/",
+"content_type": "text/html; charset=utf-8",
+"cited_in": "studies/proposals/records/Q1/bigcommerce/citations.tsv",
+"note": "",
+"result": "captured",
+"primary_file": "raw.html",
+"sha256": "f476aed47b7d8784170a5347189978a4a371201344df3651ef9359c5366a8631",
+"bytes": 1992744,
+"date_hint": "",
+"date_source": "",
+"age_class": "undated (live page on capture date)",
+"text_file": "text.txt"
+}
+]

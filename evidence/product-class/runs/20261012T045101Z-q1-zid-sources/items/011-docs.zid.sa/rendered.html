@@ -1,0 +1,353 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;"># Notification Stats
+
+## OpenAPI Specification
+
+```yaml
+openapi: 3.0.1
+info:
+  title: ''
+  description: ''
+  version: 1.0.0
+paths:
+  /v1/products/notifications/stats/:
+    get:
+      summary: Notification Stats
+      deprecated: false
+      description: |-
+        Retrieve statistics on availability notifications.
+
+        &lt;Accordion title="🔑Scopes" defaultOpen&gt;
+            
+          `products.read` - Products Read
+         
+        &lt;/Accordion&gt;
+      operationId: get-products-notifications-stats
+      tags:
+        - &gt;-
+          Default module/Apps/Merchant APIs/Products/Product Availability
+          Notifications
+        - Product Notifications
+      parameters:
+        - name: Access-Token
+          in: header
+          description: &gt;-
+            An Access Token is a unique string that represents the authorization
+            granted to a client (Partner application) by a user (Merchant or
+            Store Manager) to access their protected resources. It is part of
+            the OAuth 2.0 standard and is used to authenticate API requests on
+            behalf of the user. Access Tokens have a limited lifespan and must
+            be used within their validity period. Once expired, a new Access
+            Token can be obtained using a Refresh Token. Access Tokens should be
+            treated as sensitive information and must be kept secure to prevent
+            unauthorized access to the user's data. If you do not have an
+            `Access-Token`, but have the older alternative instead, i.e., the
+            `X-Manager-Token`, then see the instructions
+            [here](docs/Migrate-to-OAUTH-2.0.md) on how to obtain the
+            `Access-Token`.
+          required: true
+          example: '{{Access-Token}}'
+          schema:
+            type: string
+        - name: Store-Id
+          in: header
+          description: ''
+          required: true
+          example: '{{StoreId}}'
+          schema:
+            type: number
+            examples:
+              - 37213
+        - name: Accept-Language
+          in: header
+          description: ''
+          required: false
+          example: en
+          schema:
+            type: string
+            enum:
+              - ar
+              - en
+            x-apidog-enum:
+              - value: ar
+                name: ''
+                description: ''
+              - value: en
+                name: ''
+                description: ''
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                  x-stoplight:
+                    id: q055a2205pjyt
+                  description: Email address of the customer.
+                  examples:
+                    - test@test.com
+                  example: test@test.com
+                language:
+                  type: string
+                  x-stoplight:
+                    id: zre1px4b2xcot
+                  description: Language preference of the customer.
+                  examples:
+                    - ar
+                  example: ar
+            examples: {}
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                title: Retrieve Availability Notification Stats Response
+                type: object
+                description: &gt;-
+                  Statistics related to product availability notifications,
+                  including total notifications and customer actions.
+                required:
+                  - total_count
+                  - notified_count
+                  - purchased_count
+                  - purchased_total
+                properties:
+                  total_count:
+                    type: integer
+                    description: &gt;-
+                      Total number of customers who subscribed to availability
+                      notifications for the product.
+                    examples:
+                      - 1
+                  notified_count:
+                    type: integer
+                    description: &gt;-
+                      Number of customers who have already been notified that
+                      the product is back in stock.
+                    examples:
+                      - 0
+                  purchased_count:
+                    type: integer
+                    description: &gt;-
+                      Number of customers who completed a purchase after
+                      receiving the availability notification.
+                    examples:
+                      - 0
+                  purchased_total:
+                    type: number
+                    description: &gt;-
+                      Total monetary value of purchases completed after
+                      notifications were sent.
+                    examples:
+                      - 0
+                x-apidog-orders:
+                  - total_count
+                  - notified_count
+                  - purchased_count
+                  - purchased_total
+                x-apidog-ignore-properties: []
+              example:
+                total_count: 1
+                notified_count: 0
+                purchased_count: 0
+                purchased_total: 0
+          headers: {}
+          x-apidog-name: OK
+        '401':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                description: &gt;-
+                  Response returned when the request cannot be authenticated
+                  because the required credentials are missing, invalid, or
+                  expired.
+                properties:
+                  status:
+                    type: string
+                    description: Indicates the overall status of the API response.
+                    examples:
+                      - error
+                  message:
+                    type: object
+                    description: &gt;-
+                      Contains structured details explaining why the request
+                      could not be authenticated.
+                    properties:
+                      type:
+                        type: string
+                        description: Indicates the category of the response message.
+                        examples:
+                          - error
+                      code:
+                        type: string
+                        description: &gt;-
+                          A machine-readable code identifying the authentication
+                          error. Returns null when no specific code is
+                          available.
+                        examples:
+                          - UNAUTHORIZED
+                        nullable: true
+                      name:
+                        type: string
+                        description: &gt;-
+                          A short, human-readable title describing the
+                          authentication error. Returns null when no title is
+                          available.
+                        examples:
+                          - Unauthorized
+                        nullable: true
+                      description:
+                        type: string
+                        description: &gt;-
+                          A human-readable explanation of why the request could
+                          not be authenticated. Returns null when no detailed
+                          explanation is available.
+                        examples:
+                          - &gt;-
+                            Authentication credentials are missing, invalid, or
+                            expired.
+                        nullable: true
+                    required:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-orders:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-ignore-properties: []
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                examples:
+                  - status: error
+                    message:
+                      type: error
+                      code: UNAUTHORIZED
+                      name: Unauthorized
+                      description: &gt;-
+                        Authentication credentials are missing, invalid, or
+                        expired.
+                x-apidog-ignore-properties: []
+              examples:
+                '2':
+                  summary: Example 1
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_MISSING
+                      name: Sorry
+                      description: Please login first.
+                '3':
+                  summary: Example 2
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Login session expired. Please login again.
+                '4':
+                  summary: Example 3
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Invalid authentication
+          headers: {}
+          x-apidog-name: Unauthorized
+        '500':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Status of the error.
+                  message:
+                    $ref: '#/components/schemas/ResponseEnvelopMessage'
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                x-apidog-ignore-properties: []
+              example:
+                status: error
+                message:
+                  type: error
+                  code: MSG_HIDDEN
+                  name: Error
+                  description: Internal Server Error
+          headers: {}
+          x-apidog-name: Internal Server error
+      security: []
+      x-apidog-folder: &gt;-
+        Default module/Apps/Merchant APIs/Products/Product Availability
+        Notifications
+      x-apidog-status: released
+      x-run-in-apidog: https://app.apidog.com/web/project/613905/apis/api-9148666-run
+components:
+  schemas:
+    ResponseEnvelopMessage:
+      type: object
+      properties:
+        type:
+          type: string
+          description: Type of response message returned by the API.
+          examples:
+            - success
+        code:
+          type: string
+          description: Response code returned by the API, if available.
+          examples:
+            - MSG_POPUP_OK
+          nullable: true
+        name:
+          type: string
+          description: Name or title of the response message, if available.
+          examples:
+            - Coupons
+          nullable: true
+        description:
+          type: string
+          description: Detailed description of the response message, if available.
+          examples:
+            - Coupons created successfully
+          nullable: true
+      required:
+        - type
+        - code
+        - name
+        - description
+      description: Additional response metadata.
+      x-apidog-orders:
+        - type
+        - code
+        - name
+        - description
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+  securitySchemes: {}
+servers:
+  - url: https://api.zid.sa/
+    description: Prod Env
+security: []
+
+```
+</pre></body></html>

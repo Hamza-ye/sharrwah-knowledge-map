@@ -1,0 +1,20 @@
+{
+ "n": 59,
+ "url": "https://docs.bigcommerce.com/developer/api-reference/rest/integrations/shipping-provider.md",
+ "dir": "items/059-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:20:14Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/api-reference/rest/integrations/shipping-provider.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 686,
+ "cited_in": [
+  "BC-S-0339",
+  "BC-S-0340",
+  "BC-S-0341"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "984337ece0b03fa6ac0703b0655ee642002c56da5f832de7f78598183c15922a",
+ "raw_ext": "txt"
+}

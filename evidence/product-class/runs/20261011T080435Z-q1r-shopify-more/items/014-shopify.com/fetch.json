@@ -1,0 +1,22 @@
+{
+ "n": 14,
+ "url": "https://www.shopify.com/legal/shop-campaigns-merchant-terms",
+ "dir": "items/014-shopify.com",
+ "fetched_at": "2026-10-11T08:04:40Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.shopify.com/legal/shop-campaigns-merchant-terms",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 67954,
+ "cited_in": [
+  "SH-S-7465",
+  "SH-S-7466",
+  "SH-S-7472",
+  "SH-S-7474",
+  "SH-S-7487"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "70b2ecb2bf1608472d238711714c94bb0b4a134b14ad4a7d5aa229036a9dab8b",
+ "raw_ext": "html"
+}

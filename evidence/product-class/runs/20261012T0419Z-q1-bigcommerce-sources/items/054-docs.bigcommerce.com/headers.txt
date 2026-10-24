@@ -1,0 +1,28 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Mon, 12 Oct 2026 04:20:09 GMT
+content-type: text/markdown; charset=utf-8
+age: 14595
+cache-control: public, max-age=0, must-revalidate
+cf-cache-status: DYNAMIC
+cf-placement: local-IAD
+x-vercel-id: iad1::m9xgx-1791778809590-e32481b507c4
+content-encoding: br
+etag: W/"8926370f4382e9cbf1652620d756fff1"
+link: </developer/api-reference/rest/b2b/management/invoice-management.md>; rel="alternate"; type="text/markdown", </developer/api-reference/rest/b2b/management/invoice-management/llms.txt>; rel="describedby"
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+permissions-policy: camera=(self), microphone=(self), geolocation=()
+referrer-policy: strict-origin-when-cross-origin
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=3kuLFZ26%2FctGOd%2FzTegLAvrP8HG1s6GzHXZDUFifyfZdsrohxnLq5tfk6quNR2PoubrDbWmm9tq1oT%2Bo%2Fe55XWctMsq1PonxZJqL8PidXecS%2F2vwvGZ3hsKCd%2FtAq20keCgqU8z%2FpCFBaA%3D%3D"}]}
+server: cloudflare
+strict-transport-security: max-age=2592000; includeSubDomains
+x-content-type-options: nosniff
+x-fern-renderer: static
+x-vercel-cache: MISS
+vary: accept-encoding
+set-cookie: __cf_bm=5BAF2OmQK8DRxEDI35ImEIenTbwKhoXA8UOLuSah2Lk-1791778809.5703583-1.0.1.1-M2qgTBjztk4Sk_1s3_ApydlrFKZw00eNZ7nRloEdHh_5QfZTV50DT7OpNm4couSn_QcJGAzF_Oo6fRTABLA45tZi08gQz0WoWxxuQA6Im0Wzz.HdXtoyWDPTOoq0O5R4; HttpOnly; SameSite=None; Secure; Path=/; Domain=bigcommerce.com; Expires=Mon, 12 Oct 2026 04:50:09 GMT
+bc-ray: 1
+cf-ray: a4934f77cffe8982-IAD
+alt-svc: h3=":443"; ma=86400
+

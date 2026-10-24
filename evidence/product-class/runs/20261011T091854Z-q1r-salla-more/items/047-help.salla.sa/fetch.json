@@ -1,0 +1,21 @@
+{
+ "n": 47,
+ "url": "https://help.salla.sa/article/سياسة-نشر-التطبيق-في-متجر-التطبيقات-1/l6e8bqm8vm89arp4krr40cdm",
+ "dir": "items/047-help.salla.sa",
+ "fetched_at": "2026-10-11T09:20:01Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.salla.sa/article/سياسة-نشر-التطبيق-في-متجر-التطبيقات-1/l6e8bqm8vm89arp4krr40cdm",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 139072,
+ "cited_in": [
+  "SA-S-5078",
+  "SA-S-5079",
+  "SA-S-5081",
+  "SA-S-5114"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "5e70fc323e75aa02fac234992792fcdb639734472156ae63bf1dc7ae37267727",
+ "raw_ext": "html"
+}

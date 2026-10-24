@@ -1,0 +1,2661 @@
+# List Coupons
+
+## OpenAPI Specification
+
+```yaml
+openapi: 3.0.1
+info:
+  title: ''
+  description: ''
+  version: 1.0.0
+paths:
+  /v1/managers/store/coupons:
+    get:
+      summary: List Coupons
+      deprecated: false
+      description: >-
+        Retrieves a list of all available coupons from the system. The response
+        includes active, inactive, and expired coupons along with relevant
+        metadata such as store details, discount type, and validity period.
+
+
+        <Accordion title="🔑Scopes" defaultOpen>
+
+
+        `coupons.read` - Coupons Read
+         
+        </Accordion>
+      tags:
+        - Default module/Apps/Merchant APIs/Marketing/Coupons
+      parameters:
+        - name: page
+          in: query
+          description: The page number of results for pagination.
+          required: true
+          example: 1
+          schema:
+            type: integer
+        - name: per_page
+          in: query
+          description: The number of results per page.
+          required: true
+          example: 100
+          schema:
+            type: integer
+        - name: search_term
+          in: query
+          description: The term used to search for specific coupons.
+          required: false
+          example: ''
+          schema:
+            type: string
+        - name: total_usage_value
+          in: query
+          description: The total number of times a coupon has been used.
+          required: false
+          example: 1
+          schema:
+            type: integer
+        - name: total_usage_compare
+          in: query
+          description: Comparison operator for filtering by total usage.
+          required: false
+          example: '>'
+          schema:
+            type: string
+            enum:
+              - '>'
+              - <
+              - '='
+            x-apidog-enum:
+              - value: '>'
+                name: ''
+                description: ''
+              - value: <
+                name: ''
+                description: ''
+              - value: '='
+                name: ''
+                description: ''
+        - name: discount_status
+          in: query
+          description: The status of the discount.
+          required: false
+          example: coupon_active
+          schema:
+            type: string
+            enum:
+              - coupon_active
+              - coupon_inactive
+              - coupon_expired
+              - coupon_used
+              - coupon_unstarted
+            x-apidog-enum:
+              - value: coupon_active
+                name: ''
+                description: ''
+              - value: coupon_inactive
+                name: ''
+                description: ''
+              - value: coupon_expired
+                name: ''
+                description: ''
+              - value: coupon_used
+                name: ''
+                description: ''
+              - value: coupon_unstarted
+                name: ''
+                description: ''
+        - name: date_from
+          in: query
+          description: The start date for filtering results based on date range.
+          required: false
+          example: '2025-01-01'
+          schema:
+            type: string
+        - name: date_to
+          in: query
+          description: The end date for filtering results based on date range.
+          required: false
+          example: '2026-03-01'
+          schema:
+            type: string
+        - name: date_attribute
+          in: query
+          description: The attribute used for filtering by date.
+          required: false
+          example: date_start
+          schema:
+            type: string
+            enum:
+              - date_start
+              - date_end
+            x-apidog-enum:
+              - value: date_start
+                name: ''
+                description: ''
+              - value: date_end
+                name: ''
+                description: ''
+        - name: order_by
+          in: query
+          description: The field by which results should be ordered.
+          required: false
+          example: status_code
+          schema:
+            type: string
+            enum:
+              - discount
+              - code
+              - applying_method
+              - date_start
+              - date_end
+              - status
+              - status_code
+            x-apidog-enum:
+              - value: discount
+                name: ''
+                description: ''
+              - value: code
+                name: ''
+                description: ''
+              - value: applying_method
+                name: ''
+                description: ''
+              - value: date_start
+                name: ''
+                description: ''
+              - value: date_end
+                name: ''
+                description: ''
+              - value: status
+                name: ''
+                description: ''
+              - value: status_code
+                name: ''
+                description: ''
+        - name: sort_type
+          in: query
+          description: The sorting order.
+          required: false
+          example: desc
+          schema:
+            type: string
+            enum:
+              - asc
+              - desc
+            x-apidog-enum:
+              - value: asc
+                name: ''
+                description: ''
+              - value: desc
+                name: ''
+                description: ''
+        - name: discount_type
+          in: query
+          description: The type of discount applied (p for percentage).
+          required: false
+          example: p
+          schema:
+            type: string
+            enum:
+              - f
+              - p
+            x-apidog-enum:
+              - value: f
+                name: Fixed
+                description: ''
+              - value: p
+                name: Percentage
+                description: ''
+        - name: Authorization
+          in: header
+          description: >-
+            The Authorization token is a unique key given to the third-party
+            application (Partner) by Zid. It is used to authenticate the API
+            requests made by the Partner application. The token verifies the
+            partner's identity and ensures they have permission to access Zid's
+            API but does not provide any specific user or store information. It
+            should be included in the header of API requests when the partner
+            application needs to access Zid's API.
+          required: true
+          example: '{{Autherization}}'
+          schema:
+            type: string
+        - name: X-Manager-Token
+          in: header
+          description: >-
+            This token is used to authenticate and access information related to
+            the store. It is obtained through an OAuth mechanism and is required
+            to perform operations on the store's data. The `X-Manager-Token`
+            should be included in the header of API requests that require
+            store-related information.
+          required: true
+          example: '{{Access-Token}}'
+          schema:
+            type: string
+        - name: Accept-Language
+          in: header
+          description: >-
+            Preferred language for the response. Defaults to `en` if not
+            specified.
+          required: true
+          example: en
+          schema:
+            type: string
+        - name: Accept
+          in: header
+          description: >-
+            Specifies the Media Types acceptable for the client. In this case,
+            it signals that the client expects a response in the JSON format.
+          required: true
+          example: application/json
+          schema:
+            type: string
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Status of the API response.
+                    examples:
+                      - success
+                  coupons:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/DefaultCouponSerializer'
+                    description: List of available coupons.
+                  count:
+                    type: integer
+                    description: Total number of coupons.
+                    examples:
+                      - 111
+                  grand_total:
+                    type: integer
+                  active_coupons_count:
+                    type: integer
+                    description: Number of active coupons.
+                    examples:
+                      - 1
+                  inactive_coupons_count:
+                    type: integer
+                    description: Number of inactive coupons.
+                    examples:
+                      - 0
+                  expired_coupons_count:
+                    type: integer
+                    description: Number of expired coupons.
+                    examples:
+                      - 110
+                  pagination:
+                    type: object
+                    properties:
+                      page:
+                        type: integer
+                        description: Current page number.
+                        examples:
+                          - 1
+                      page_size:
+                        type: integer
+                        description: Number of items per page.
+                        examples:
+                          - 15
+                      next_page:
+                        type: integer
+                        description: Next page number.
+                        examples:
+                          - 2
+                      last_page:
+                        type: integer
+                        description: Last available page.
+                        examples:
+                          - 8
+                      result_count:
+                        type: integer
+                        description: Total results count.
+                        examples:
+                          - 111
+                    required:
+                      - page
+                      - page_size
+                      - next_page
+                      - last_page
+                      - result_count
+                    x-apidog-orders:
+                      - page
+                      - page_size
+                      - next_page
+                      - last_page
+                      - result_count
+                    description: Pagination details.
+                    x-apidog-ignore-properties: []
+                  message: &ref_0
+                    $ref: '#/components/schemas/ResponseEnvelopMessage'
+                required:
+                  - status
+                  - coupons
+                  - count
+                  - grand_total
+                  - active_coupons_count
+                  - inactive_coupons_count
+                  - expired_coupons_count
+                  - pagination
+                  - message
+                x-apidog-orders:
+                  - status
+                  - coupons
+                  - count
+                  - grand_total
+                  - active_coupons_count
+                  - inactive_coupons_count
+                  - expired_coupons_count
+                  - pagination
+                  - message
+                x-apidog-ignore-properties: []
+              example:
+                status: object
+                coupons:
+                  - coupon_id: 5851950
+                    id: 5851950
+                    store_id: 3
+                    store_name: متجر أسامة.
+                    store_logo: >-
+                      https://media.zid.store/d297fb8b-c322-412e-a2f4-ffa96dc57022/0e959ed7-ced5-47df-b839-16969940db08-200x.jpg
+                    code: 49QA62
+                    uses_total: 0
+                    created_at: '2026-02-17T13:58:45.000000Z'
+                    name: qqqq
+                    total_usage: 0
+                    discount_type: p
+                    applying_method: CODE
+                    conditions: []
+                    conditions_criteria: all
+                    discount: 111
+                    logged: false
+                    free_shipping: false
+                    free_cod: false
+                    apply_to: all
+                    total: 0
+                    max_total: 0
+                    max_weight: 0
+                    date_start: '2026-02-17'
+                    date_end: '2026-03-17'
+                    uses_customer: 0
+                    coupon_status: true
+                    status_code: coupon_active
+                    maximum_discount_value: null
+                    is_mazeed_active: false
+                    is_pos_active: false
+                    is_shown_in_pos: false
+                    is_mobile_app_active: false
+                    is_manageable: true
+                    is_active: true
+                    enabled: true
+                  - coupon_id: 5825112
+                    id: 5825112
+                    store_id: 3
+                    store_name: متجر أسامة.
+                    store_logo: >-
+                      https://media.zid.store/d297fb8b-c322-412e-a2f4-ffa96dc57022/0e959ed7-ced5-47df-b839-16969940db08-200x.jpg
+                    code: SUMMER2027
+                    uses_total: 100
+                    created_at: '2026-02-11T10:20:55.000000Z'
+                    name: Summer Sale - July 2026
+                    total_usage: 0
+                    discount_type: p
+                    applying_method: CODE
+                    conditions: null
+                    conditions_criteria: all
+                    discount: 20
+                    logged: false
+                    free_shipping: true
+                    free_cod: false
+                    apply_to: all
+                    total: 100
+                    max_total: 0
+                    max_weight: 0
+                    date_start: '2023-07-01'
+                    date_end: '2023-07-31'
+                    uses_customer: 3
+                    coupon_status: true
+                    status_code: coupon_expired
+                    maximum_discount_value: null
+                    is_mazeed_active: false
+                    is_pos_active: false
+                    is_shown_in_pos: false
+                    is_mobile_app_active: false
+                    is_manageable: false
+                    is_active: false
+                    enabled: false
+                  - coupon_id: 5825099
+                    id: 5825099
+                    store_id: 3
+                    store_name: متجر أسامة.
+                    store_logo: >-
+                      https://media.zid.store/d297fb8b-c322-412e-a2f4-ffa96dc57022/0e959ed7-ced5-47df-b839-16969940db08-200x.jpg
+                    code: SUMMER2026
+                    uses_total: 100
+                    created_at: '2026-02-11T10:17:20.000000Z'
+                    name: Summer Sale - July 2026
+                    total_usage: 0
+                    discount_type: p
+                    applying_method: CODE
+                    conditions: null
+                    conditions_criteria: all
+                    discount: 20
+                    logged: false
+                    free_shipping: true
+                    free_cod: false
+                    apply_to: all
+                    total: 100
+                    max_total: 0
+                    max_weight: 0
+                    date_start: '2023-07-01'
+                    date_end: '2023-07-31'
+                    uses_customer: 3
+                    coupon_status: true
+                    status_code: coupon_expired
+                    maximum_discount_value: null
+                    is_mazeed_active: false
+                    is_pos_active: false
+                    is_shown_in_pos: false
+                    is_mobile_app_active: false
+                    is_manageable: false
+                    is_active: false
+                    enabled: false
+                  - coupon_id: 5825057
+                    id: 5825057
+                    store_id: 3
+                    store_name: متجر أسامة.
+                    store_logo: >-
+                      https://media.zid.store/d297fb8b-c322-412e-a2f4-ffa96dc57022/0e959ed7-ced5-47df-b839-16969940db08-200x.jpg
+                    code: SUMMER2023
+                    uses_total: 100
+                    created_at: '2026-02-11T10:03:15.000000Z'
+                    name: Summer Sale - July 2023
+                    total_usage: 0
+                    discount_type: p
+                    applying_method: CODE
+                    conditions: null
+                    conditions_criteria: all
+                    discount: 20
+                    logged: false
+                    free_shipping: true
+                    free_cod: false
+                    apply_to: all
+                    total: 100
+                    max_total: 0
+                    max_weight: 0
+                    date_start: '2023-07-01'
+                    date_end: '2023-07-31'
+                    uses_customer: 3
+                    coupon_status: true
+                    status_code: coupon_expired
+                    maximum_discount_value: null
+                    is_mazeed_active: true
+                    is_pos_active: true
+                    is_shown_in_pos: false
+                    is_mobile_app_active: true
+                    is_manageable: false
+                    is_active: false
+                    enabled: false
+                  - coupon_id: 5776886
+                    id: 5776886
+                    store_id: 3
+                    store_name: متجر أسامة.
+                    store_logo: >-
+                      https://media.zid.store/d297fb8b-c322-412e-a2f4-ffa96dc57022/0e959ed7-ced5-47df-b839-16969940db08-200x.jpg
+                    code: 7OCRIH
+                    uses_total: 0
+                    created_at: '2026-02-01T06:49:44.000000Z'
+                    name: same date not today
+                    total_usage: 0
+                    discount_type: f
+                    applying_method: CODE
+                    conditions: []
+                    conditions_criteria: all
+                    discount: 1111
+                    logged: false
+                    free_shipping: false
+                    free_cod: false
+                    apply_to: all
+                    total: 0
+                    max_total: 0
+                    max_weight: 0
+                    date_start: '2026-03-01'
+                    date_end: '2026-03-01'
+                    uses_customer: 0
+                    coupon_status: true
+                    status_code: coupon_unstarted
+                    maximum_discount_value: null
+                    is_mazeed_active: true
+                    is_pos_active: true
+                    is_shown_in_pos: true
+                    is_mobile_app_active: true
+                    is_manageable: false
+                    is_active: false
+                    enabled: false
+                  - coupon_id: 5776884
+                    id: 5776884
+                    store_id: 3
+                    store_name: متجر أسامة.
+                    store_logo: >-
+                      https://media.zid.store/d297fb8b-c322-412e-a2f4-ffa96dc57022/0e959ed7-ced5-47df-b839-16969940db08-200x.jpg
+                    code: AO6AJ8
+                    uses_total: 0
+                    created_at: '2026-02-01T06:49:24.000000Z'
+                    name: different date
+                    total_usage: 0
+                    discount_type: f
+                    applying_method: CODE
+                    conditions: []
+                    conditions_criteria: all
+                    discount: 11
+                    logged: false
+                    free_shipping: false
+                    free_cod: false
+                    apply_to: all
+                    total: 0
+                    max_total: 0
+                    max_weight: 0
+                    date_start: '2026-02-01'
+                    date_end: '2026-03-01'
+                    uses_customer: 0
+                    coupon_status: true
+                    status_code: coupon_active
+                    maximum_discount_value: null
+                    is_mazeed_active: true
+                    is_pos_active: true
+                    is_shown_in_pos: true
+                    is_mobile_app_active: true
+                    is_manageable: true
+                    is_active: true
+                    enabled: true
+                  - coupon_id: 5776883
+                    id: 5776883
+                    store_id: 3
+                    store_name: متجر أسامة.
+                    store_logo: >-
+                      https://media.zid.store/d297fb8b-c322-412e-a2f4-ffa96dc57022/0e959ed7-ced5-47df-b839-16969940db08-200x.jpg
+                    code: P2ZAHN
+                    uses_total: 0
+                    created_at: '2026-02-01T06:49:05.000000Z'
+                    name: same 01
+                    total_usage: 0
+                    discount_type: f
+                    applying_method: CODE
+                    conditions: []
+                    conditions_criteria: all
+                    discount: 100
+                    logged: false
+                    free_shipping: false
+                    free_cod: false
+                    apply_to: all
+                    total: 0
+                    max_total: 0
+                    max_weight: 0
+                    date_start: '2026-02-01'
+                    date_end: '2026-02-01'
+                    uses_customer: 0
+                    coupon_status: true
+                    status_code: coupon_expired
+                    maximum_discount_value: null
+                    is_mazeed_active: true
+                    is_pos_active: true
+                    is_shown_in_pos: true
+                    is_mobile_app_active: true
+                    is_manageable: false
+                    is_active: false
+                    enabled: false
+                  - coupon_id: 5776865
+                    id: 5776865
+                    store_id: 3
+                    store_name: متجر أسامة.
+                    store_logo: >-
+                      https://media.zid.store/d297fb8b-c322-412e-a2f4-ffa96dc57022/0e959ed7-ced5-47df-b839-16969940db08-200x.jpg
+                    code: C3X1YX
+                    uses_total: 0
+                    created_at: '2026-02-01T06:37:23.000000Z'
+                    name: Same date
+                    total_usage: 0
+                    discount_type: f
+                    applying_method: CODE
+                    conditions: []
+                    conditions_criteria: all
+                    discount: 100
+                    logged: false
+                    free_shipping: false
+                    free_cod: false
+                    apply_to: all
+                    total: 0
+                    max_total: 0
+                    max_weight: 0
+                    date_start: '2026-02-01'
+                    date_end: '2026-03-01'
+                    uses_customer: 0
+                    coupon_status: true
+                    status_code: coupon_active
+                    maximum_discount_value: null
+                    is_mazeed_active: true
+                    is_pos_active: true
+                    is_shown_in_pos: true
+                    is_mobile_app_active: true
+                    is_manageable: true
+                    is_active: true
+                    enabled: true
+                  - coupon_id: 5776862
+                    id: 5776862
+                    store_id: 3
+                    store_name: متجر أسامة.
+                    store_logo: >-
+                      https://media.zid.store/d297fb8b-c322-412e-a2f4-ffa96dc57022/0e959ed7-ced5-47df-b839-16969940db08-200x.jpg
+                    code: Q2W6R4
+                    uses_total: 0
+                    created_at: '2026-02-01T06:36:22.000000Z'
+                    name: same
+                    total_usage: 0
+                    discount_type: f
+                    applying_method: CODE
+                    conditions: []
+                    conditions_criteria: all
+                    discount: 100
+                    logged: false
+                    free_shipping: false
+                    free_cod: false
+                    apply_to: all
+                    total: 0
+                    max_total: 0
+                    max_weight: 0
+                    date_start: '2026-02-01'
+                    date_end: '2026-02-01'
+                    uses_customer: 0
+                    coupon_status: true
+                    status_code: coupon_expired
+                    maximum_discount_value: null
+                    is_mazeed_active: true
+                    is_pos_active: true
+                    is_shown_in_pos: true
+                    is_mobile_app_active: true
+                    is_manageable: false
+                    is_active: false
+                    enabled: false
+                  - coupon_id: 5776429
+                    id: 5776429
+                    store_id: 3
+                    store_name: متجر أسامة.
+                    store_logo: >-
+                      https://media.zid.store/d297fb8b-c322-412e-a2f4-ffa96dc57022/0e959ed7-ced5-47df-b839-16969940db08-200x.jpg
+                    code: samedate
+                    uses_total: 0
+                    created_at: '2026-02-01T01:24:38.000000Z'
+                    name: samedate
+                    total_usage: 0
+                    discount_type: f
+                    applying_method: CODE
+                    conditions: []
+                    conditions_criteria: all
+                    discount: 100
+                    logged: false
+                    free_shipping: false
+                    free_cod: false
+                    apply_to: all
+                    total: 0
+                    max_total: 0
+                    max_weight: 0
+                    date_start: '2026-02-02'
+                    date_end: '2026-02-02'
+                    uses_customer: 0
+                    coupon_status: true
+                    status_code: coupon_expired
+                    maximum_discount_value: null
+                    is_mazeed_active: true
+                    is_pos_active: true
+                    is_shown_in_pos: true
+                    is_mobile_app_active: true
+                    is_manageable: false
+                    is_active: false
+                    enabled: false
+                  - coupon_id: 5762202
+                    id: 5762202
+                    store_id: 3
+                    store_name: متجر أسامة.
+                    store_logo: >-
+                      https://media.zid.store/d297fb8b-c322-412e-a2f4-ffa96dc57022/0e959ed7-ced5-47df-b839-16969940db08-200x.jpg
+                    code: 4WGXAA
+                    uses_total: 0
+                    created_at: '2026-01-28T11:01:03.000000Z'
+                    name: Discount
+                    total_usage: 0
+                    discount_type: f
+                    applying_method: CODE
+                    conditions: []
+                    conditions_criteria: all
+                    discount: 0
+                    logged: false
+                    free_shipping: false
+                    free_cod: false
+                    apply_to: discounted_products
+                    total: 0
+                    max_total: 0
+                    max_weight: 0
+                    date_start: '2026-01-29'
+                    date_end: '2026-01-29'
+                    uses_customer: 0
+                    coupon_status: false
+                    status_code: coupon_expired
+                    maximum_discount_value: null
+                    is_mazeed_active: true
+                    is_pos_active: true
+                    is_shown_in_pos: true
+                    is_mobile_app_active: true
+                    is_manageable: false
+                    is_active: false
+                    enabled: false
+                  - coupon_id: 5762201
+                    id: 5762201
+                    store_id: 3
+                    store_name: متجر أسامة.
+                    store_logo: >-
+                      https://media.zid.store/d297fb8b-c322-412e-a2f4-ffa96dc57022/0e959ed7-ced5-47df-b839-16969940db08-200x.jpg
+                    code: VZJ4LL
+                    uses_total: 0
+                    created_at: '2026-01-28T11:00:17.000000Z'
+                    name: Discount
+                    total_usage: 0
+                    discount_type: f
+                    applying_method: CODE
+                    conditions: []
+                    conditions_criteria: all
+                    discount: 0
+                    logged: false
+                    free_shipping: false
+                    free_cod: false
+                    apply_to: all
+                    total: 0
+                    max_total: 0
+                    max_weight: 0
+                    date_start: '2026-01-29'
+                    date_end: '2026-01-29'
+                    uses_customer: 0
+                    coupon_status: true
+                    status_code: coupon_expired
+                    maximum_discount_value: null
+                    is_mazeed_active: true
+                    is_pos_active: true
+                    is_shown_in_pos: true
+                    is_mobile_app_active: true
+                    is_manageable: false
+                    is_active: false
+                    enabled: false
+                  - coupon_id: 5762140
+                    id: 5762140
+                    store_id: 3
+                    store_name: متجر أسامة.
+                    store_logo: >-
+                      https://media.zid.store/d297fb8b-c322-412e-a2f4-ffa96dc57022/0e959ed7-ced5-47df-b839-16969940db08-200x.jpg
+                    code: XA1ATX
+                    uses_total: 0
+                    created_at: '2026-01-28T10:43:35.000000Z'
+                    name: test-same-dates 03
+                    total_usage: 0
+                    discount_type: f
+                    applying_method: CODE
+                    conditions: []
+                    conditions_criteria: all
+                    discount: 0
+                    logged: false
+                    free_shipping: false
+                    free_cod: false
+                    apply_to: all
+                    total: 0
+                    max_total: 0
+                    max_weight: 0
+                    date_start: '2026-01-28'
+                    date_end: '2026-01-28'
+                    uses_customer: 0
+                    coupon_status: true
+                    status_code: coupon_expired
+                    maximum_discount_value: null
+                    is_mazeed_active: true
+                    is_pos_active: true
+                    is_shown_in_pos: true
+                    is_mobile_app_active: true
+                    is_manageable: false
+                    is_active: false
+                    enabled: false
+                  - coupon_id: 5761870
+                    id: 5761870
+                    store_id: 3
+                    store_name: متجر أسامة.
+                    store_logo: >-
+                      https://media.zid.store/d297fb8b-c322-412e-a2f4-ffa96dc57022/0e959ed7-ced5-47df-b839-16969940db08-200x.jpg
+                    code: naqua100
+                    uses_total: 0
+                    created_at: '2026-01-28T09:26:29.000000Z'
+                    name: NAQUA100
+                    total_usage: 1
+                    discount_type: p
+                    applying_method: CODE
+                    conditions: []
+                    conditions_criteria: all
+                    discount: 100
+                    logged: false
+                    free_shipping: true
+                    free_cod: false
+                    apply_to: all
+                    total: 0
+                    max_total: 0
+                    max_weight: 0
+                    date_start: '2026-01-28'
+                    date_end: '2026-02-28'
+                    uses_customer: 0
+                    coupon_status: true
+                    status_code: coupon_active
+                    maximum_discount_value: null
+                    is_mazeed_active: true
+                    is_pos_active: true
+                    is_shown_in_pos: true
+                    is_mobile_app_active: true
+                    is_manageable: true
+                    is_active: true
+                    enabled: true
+                  - coupon_id: 5730602
+                    id: 5730602
+                    store_id: 3
+                    store_name: متجر أسامة.
+                    store_logo: >-
+                      https://media.zid.store/d297fb8b-c322-412e-a2f4-ffa96dc57022/0e959ed7-ced5-47df-b839-16969940db08-200x.jpg
+                    code: OSAMA5OFF
+                    uses_total: 0
+                    created_at: '2026-01-21T11:46:12.000000Z'
+                    name: 5% off
+                    total_usage: 0
+                    discount_type: p
+                    applying_method: CODE
+                    conditions: null
+                    conditions_criteria: all
+                    discount: 5
+                    logged: false
+                    free_shipping: false
+                    free_cod: false
+                    apply_to: all
+                    total: 0
+                    max_total: 0
+                    max_weight: 0
+                    date_start: '2026-01-21'
+                    date_end: '2026-02-21'
+                    uses_customer: 0
+                    coupon_status: true
+                    status_code: coupon_expired
+                    maximum_discount_value: null
+                    is_mazeed_active: false
+                    is_pos_active: false
+                    is_shown_in_pos: false
+                    is_mobile_app_active: false
+                    is_manageable: false
+                    is_active: false
+                    enabled: false
+                count: 341
+                grand_total: 341
+                active_coupons_count: 14
+                inactive_coupons_count: 0
+                expired_coupons_count: 326
+                pagination:
+                  page: 1
+                  page_size: 15
+                  next_page: 2
+                  last_page: 23
+                  result_count: 341
+                message:
+                  type: object
+                  code: null
+                  name: null
+                  description: null
+          headers: {}
+          x-apidog-name: ''
+        '401':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                description: >-
+                  Response returned when the request cannot be authenticated
+                  because the required credentials are missing, invalid, or
+                  expired.
+                properties:
+                  status:
+                    type: string
+                    description: Indicates the overall status of the API response.
+                    examples:
+                      - error
+                  message:
+                    type: object
+                    description: >-
+                      Contains structured details explaining why the request
+                      could not be authenticated.
+                    properties:
+                      type:
+                        type: string
+                        description: Indicates the category of the response message.
+                        examples:
+                          - error
+                      code:
+                        type: string
+                        description: >-
+                          A machine-readable code identifying the authentication
+                          error. Returns null when no specific code is
+                          available.
+                        examples:
+                          - UNAUTHORIZED
+                        nullable: true
+                      name:
+                        type: string
+                        description: >-
+                          A short, human-readable title describing the
+                          authentication error. Returns null when no title is
+                          available.
+                        examples:
+                          - Unauthorized
+                        nullable: true
+                      description:
+                        type: string
+                        description: >-
+                          A human-readable explanation of why the request could
+                          not be authenticated. Returns null when no detailed
+                          explanation is available.
+                        examples:
+                          - >-
+                            Authentication credentials are missing, invalid, or
+                            expired.
+                        nullable: true
+                    required:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-orders:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-ignore-properties: []
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                examples:
+                  - status: error
+                    message:
+                      type: error
+                      code: UNAUTHORIZED
+                      name: Unauthorized
+                      description: >-
+                        Authentication credentials are missing, invalid, or
+                        expired.
+                x-apidog-ignore-properties: []
+              examples:
+                '2':
+                  summary: Example 1
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_MISSING
+                      name: Sorry
+                      description: Please login first.
+                '3':
+                  summary: Example 2
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Login session expired. Please login again.
+                '4':
+                  summary: Example 3
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Invalid authentication
+          headers: {}
+          x-apidog-name: Unauthorized
+        '500':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Status of the error.
+                  message: *ref_0
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                x-apidog-ignore-properties: []
+              example:
+                status: error
+                message:
+                  type: error
+                  code: MSG_HIDDEN
+                  name: Error
+                  description: Internal Server Error
+          headers: {}
+          x-apidog-name: Internal Server error
+      security: []
+      x-apidog-folder: Default module/Apps/Merchant APIs/Marketing/Coupons
+      x-apidog-status: released
+      x-run-in-apidog: https://app.apidog.com/web/project/613905/apis/api-13955120-run
+components:
+  schemas:
+    ResponseEnvelopMessage:
+      type: object
+      properties:
+        type:
+          type: string
+          description: Type of response message returned by the API.
+          examples:
+            - success
+        code:
+          type: string
+          description: Response code returned by the API, if available.
+          examples:
+            - MSG_POPUP_OK
+          nullable: true
+        name:
+          type: string
+          description: Name or title of the response message, if available.
+          examples:
+            - Coupons
+          nullable: true
+        description:
+          type: string
+          description: Detailed description of the response message, if available.
+          examples:
+            - Coupons created successfully
+          nullable: true
+      required:
+        - type
+        - code
+        - name
+        - description
+      description: Additional response metadata.
+      x-apidog-orders:
+        - type
+        - code
+        - name
+        - description
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    DefaultCouponSerializer:
+      type: object
+      properties:
+        coupon_id:
+          type: integer
+          description: Unique identifier for the coupon.
+          examples:
+            - 3311
+        id:
+          type: integer
+          description: Duplicate of coupon_id.
+          examples:
+            - 3311
+        store_id:
+          type: integer
+          description: ID of the store issuing the coupon.
+          examples:
+            - 23363
+        store_name:
+          type: string
+          description: Name of the store issuing the coupon.
+          examples:
+            - MohamedSamir
+        store_logo:
+          type: string
+          description: URL of the store logo (if available).
+          nullable: true
+        code:
+          type: string
+          description: The coupon code.
+          examples:
+            - mAcWL4NNNNNNNNNNN
+        uses_total:
+          type: integer
+          description: Number of times the coupon can be used overall.
+          examples:
+            - 0
+        created_at:
+          type: string
+          description: Date and time when the coupon was created.
+          examples:
+            - '2025-02-02T10:36:58.000000'
+        name:
+          type: string
+          description: Name of the coupon.
+          examples:
+            - ffee
+        total_usage:
+          type: integer
+          description: Total times the coupon has been used.
+          nullable: true
+        discount_type:
+          type: string
+          description: Type of discount (p for percentage, f for fixed amount).
+          examples:
+            - f
+        applying_method:
+          type: string
+          description: How the coupon is applied (CODE by default).
+          examples:
+            - CODE
+        conditions:
+          type: array
+          items:
+            type: object
+            properties:
+              field:
+                type: string
+              action:
+                type: string
+              operator:
+                type: string
+              value:
+                anyOf:
+                  - type: object
+                    properties: {}
+                    x-apidog-orders: []
+                    x-apidog-ignore-properties: []
+                  - type: string
+            x-apidog-orders:
+              - field
+              - action
+              - operator
+              - value
+            required:
+              - field
+              - action
+              - operator
+              - value
+            x-apidog-ignore-properties: []
+          description: Conditions required for the coupon to be applied.
+          nullable: true
+        discount:
+          type: number
+          description: Discount value applied when the coupon is used.
+        logged:
+          type: boolean
+          description: Indicates if logging is required for the coupon.
+          default: false
+        free_shipping:
+          type: boolean
+          description: Indicates if the coupon provides free shipping.
+          default: true
+        free_cod:
+          type: boolean
+          description: Indicates if the coupon allows free Cash on Delivery.
+          default: true
+        apply_to:
+          type: string
+          description: Determines what the coupon applies to (products, all, etc.).
+          examples:
+            - products
+        total:
+          type: number
+          description: Minimum cart total required to apply the coupon.
+        max_total:
+          type: number
+          description: Maximum cart total allowed for the coupon to be applied.
+        max_weight:
+          type: number
+          description: >-
+            Maximum total cart weight (in kilograms) allowed for the coupon to
+            apply. If the cart’s total weight exceeds this value, the coupon
+            will not apply. Only applicable to free shipping coupons.
+          examples:
+            - 1
+        date_start:
+          type: string
+          description: Start date of the coupon.
+          examples:
+            - '2024-11-24'
+        date_end:
+          type: string
+          description: Expiry date of the coupon.
+          examples:
+            - '2024-12-24'
+        uses_customer:
+          type: integer
+          description: Number of times a customer can use the coupon.
+          examples:
+            - 0
+        coupon_status:
+          type: boolean
+          description: Indicates if the coupon is currently active.
+          default: true
+        enabled:
+          type: boolean
+          description: Determines if the coupon is enabled.
+          default: true
+        status_code:
+          type: string
+          description: Status of the coupon (coupon_active, coupon_expired, etc.).
+          examples:
+            - coupon_expired
+        maximum_discount_value:
+          type: number
+          description: Maximum discount value allowed for the coupon.
+          nullable: true
+        orders:
+          type: array
+          items:
+            $ref: '#/components/schemas/ShortOrderSerializer'
+          description: List of orders associated with the coupon.
+        total_sales:
+          type: number
+          description: Total sales generated from the coupon.
+        total_customers:
+          type: integer
+          description: Number of customers who used the coupon.
+          examples:
+            - 0
+        note:
+          type: string
+          description: Additional notes regarding the coupon.
+          nullable: true
+        is_mazeed_active:
+          type: boolean
+          description: Indicates if the coupon is active in the Mazeed system.
+          default: true
+        is_pos_active:
+          type: boolean
+          description: Indicates if the coupon is available in Point of Sale (POS).
+          default: true
+        is_shown_in_pos:
+          type: boolean
+          description: Indicates if the coupon is visible in the POS system.
+          default: true
+        is_mobile_app_active:
+          type: boolean
+          description: >-
+            Indicates whether the coupon can be used for orders placed through
+            the store’s mobile application. Returns true when enabled and false
+            when disabled.
+          default: true
+        is_manageable:
+          type: boolean
+          description: >-
+            Indicates whether the coupon can currently be managed or modified.
+            Returns false when the coupon’s current state, such as being
+            expired, prevents further management.
+        is_active:
+          type: boolean
+          description: >-
+            Indicates whether the coupon is currently active and available for
+            use, considering its activation status and validity period. An
+            enabled coupon may still return false when it has expired or is not
+            yet valid.
+        apply_to_data:
+          type: array
+          items:
+            type: string
+            examples:
+              - '[ ]'
+          description: List of product or category IDs the coupon applies to.
+      required:
+        - coupon_id
+        - id
+        - store_id
+        - store_name
+        - store_logo
+        - code
+        - uses_total
+        - created_at
+        - name
+        - total_usage
+        - discount_type
+        - applying_method
+        - conditions
+        - discount
+        - logged
+        - free_shipping
+        - free_cod
+        - apply_to
+        - total
+        - max_total
+        - max_weight
+        - date_start
+        - date_end
+        - uses_customer
+        - coupon_status
+        - enabled
+        - status_code
+        - maximum_discount_value
+        - is_mazeed_active
+        - is_pos_active
+        - is_shown_in_pos
+        - is_mobile_app_active
+        - is_manageable
+        - is_active
+      x-apidog-orders:
+        - coupon_id
+        - id
+        - store_id
+        - store_name
+        - store_logo
+        - code
+        - uses_total
+        - created_at
+        - name
+        - total_usage
+        - discount_type
+        - applying_method
+        - conditions
+        - discount
+        - logged
+        - free_shipping
+        - free_cod
+        - apply_to
+        - total
+        - max_total
+        - max_weight
+        - date_start
+        - date_end
+        - uses_customer
+        - coupon_status
+        - enabled
+        - status_code
+        - maximum_discount_value
+        - orders
+        - total_sales
+        - total_customers
+        - note
+        - is_mazeed_active
+        - is_pos_active
+        - is_shown_in_pos
+        - is_mobile_app_active
+        - is_manageable
+        - is_active
+        - apply_to_data
+      description: Contains the details of the coupon.
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    ShortOrderSerializer:
+      type: object
+      properties:
+        id:
+          type: integer
+          examples:
+            - 60407024
+          description: Unique identifier of the order.
+        invoice_number:
+          type: integer
+          examples:
+            - 60407024
+          description: The invoice number associated with the order.
+        code:
+          type: string
+          examples:
+            - YMK3VPgkhy
+          description: Unique order code generated for the order.
+          nullable: true
+        store_id:
+          type: integer
+          examples:
+            - 3
+          description: Unique identifier of the store where the order was placed.
+        order_url:
+          type: string
+          examples:
+            - https://osama.zid.store/o/YMK3VPgkhy/inv
+          description: URL of the order details page.
+        store_name:
+          type: string
+          examples:
+            - متجر أسامة
+          description: Name of the store associated with the order.
+        shipping_method_code:
+          type: string
+          examples:
+            - zid_zidship.level_2
+          description: Code of the shipping method selected for the order.
+          nullable: true
+        store_url:
+          type: string
+          examples:
+            - https://osama.zid.store/
+          description: Store domain or URL.
+        currency_code:
+          type: string
+          examples:
+            - SAR
+          description: Currency code used for the order amount (e.g., SAR, USD).
+          nullable: true
+        order_status:
+          $ref: '#/components/schemas/OrderStatus'
+          description: The status of the order.
+        display_status:
+          $ref: '#/components/schemas/OrderDisplayStatus'
+          description: Display status of the order.
+        customer:
+          $ref: '#/components/schemas/DefaultOrderCustomerSerializer'
+          description: Customer information associated with the order.
+        has_different_consignee:
+          type: integer
+          description: >-
+            Indicates whether the consignee information differs from the
+            customer information.
+          nullable: true
+        is_guest_customer:
+          type: integer
+          description: >-
+            Indicates whether the order was placed by a guest customer without a
+            registered account.
+          nullable: true
+        is_gift_order:
+          type: integer
+          description: Indicates whether the order is marked as a gift order.
+        gift_card_details:
+          type: object
+          properties: {}
+          x-apidog-orders: []
+          description: >-
+            Contains gift card-related details associated with the order.
+            Returns null if the order does not include a gift card.
+          x-apidog-ignore-properties: []
+          nullable: true
+        is_quick_checkout_order:
+          type: boolean
+          description: >-
+            Indicates whether the order was placed using the quick checkout
+            flow.
+        order_total:
+          anyOf:
+            - type: string
+              description: String representation of the total order amount.
+            - type: number
+              description: Numeric value of the total order amount.
+          description: Raw order total value.
+        order_total_string:
+          type: string
+          examples:
+            - 124.15 SAR
+          description: >-
+            Formatted order total amount as a string, including currency
+            formatting if applicable.
+        has_different_transaction_currency:
+          type: boolean
+          description: >-
+            Indicates whether the transaction currency differs from the store
+            currency.
+        transaction_reference:
+          type: string
+          description: >-
+            Reference number or identifier associated with the payment
+            transaction.
+          nullable: true
+        transaction_amount:
+          type: number
+          examples:
+            - 124.1499994817
+          description: The total transaction amount paid by the customer.
+        transaction_amount_string:
+          type: string
+          examples:
+            - 124.15 SAR
+          description: Formatted transaction amount as a string.
+        issue_date:
+          type: string
+          description: Date when the order or invoice was issued.
+        payment_status:
+          type: string
+          examples:
+            - pending
+          enum:
+            - pending
+            - paid
+            - refunded
+            - voided
+          x-apidog-enum:
+            - value: pending
+              name: ''
+              description: ''
+            - value: paid
+              name: ''
+              description: ''
+            - value: refunded
+              name: ''
+              description: ''
+            - value: voided
+              name: ''
+              description: ''
+          description: Current payment status of the order.
+        is_potential_fraud:
+          type: boolean
+          description: >-
+            Indicates whether the order has been flagged as potentially
+            fraudulent.
+        source:
+          type: string
+          description: >-
+            Source from which the order was created (e.g., web, POS, mobile
+            app).
+        source_code:
+          type: string
+          description: System-defined code representing the order source.
+          nullable: true
+        is_reseller_transaction:
+          type: boolean
+          description: >-
+            Indicates whether the transaction was created through a reseller
+            channel.
+        created_at:
+          type: string
+          examples:
+            - '2025-11-12 08:57:35'
+          description: Timestamp indicating when the order was created.
+        updated_at:
+          type: string
+          examples:
+            - '2026-01-26 07:18:19'
+          description: Timestamp indicating when the order was last updated.
+        is_on_demand:
+          type: boolean
+          description: Indicates whether the order contains on-demand products or services.
+        import_id:
+          type: string
+          description: Identifier associated with the imported order record.
+          nullable: true
+        store_logo:
+          type: string
+          description: URL of the store logo image.
+          nullable: true
+        store_uuid:
+          type: string
+          description: Unique UUID identifier of the store.
+          nullable: true
+        tags:
+          type: array
+          items:
+            $ref: '#/components/schemas/OrderTagPresenter'
+            description: Collection of tag objects attached to the order.
+          description: List of tags associated with the order.
+        requires_shipping:
+          type: boolean
+          description: Indicates whether the order requires shipping fulfillment.
+        should_merchant_set_shipping_method:
+          type: boolean
+          description: >-
+            Indicates whether the merchant is required to manually select or
+            assign the shipping method.
+        shipping:
+          type: object
+          properties:
+            method:
+              $ref: '#/components/schemas/OrderShippingMethodPresenter'
+              description: Shipping method details associated with the order.
+            address:
+              $ref: '#/components/schemas/DefaultOrderShippingAddressSerializer'
+              description: Shipping address details for the order delivery.
+          required:
+            - method
+            - address
+          x-apidog-orders:
+            - method
+            - address
+          description: Contains shipping-related information for the order.
+          x-apidog-ignore-properties: []
+        payment:
+          type: object
+          properties:
+            method:
+              $ref: '#/components/schemas/DefaultOrderPaymentMethodSerializer'
+              description: Payment method details used for the order transaction.
+            split_payments:
+              type: array
+              items:
+                description: Collection of split payment objects.
+                type: object
+                properties:
+                  name:
+                    type: string
+                    description: Display name of the split payment method.
+                  code:
+                    type: string
+                    description: System-defined code representing the split payment method.
+                  amount:
+                    type: number
+                    description: Amount paid using this split payment method.
+                  amount_string:
+                    type: string
+                    description: Formatted split payment amount as a string.
+                  near_pay_transaction_uuid:
+                    type: string
+                    description: Unique identifier of the NearPay transaction.
+                  near_pay_transaction_details:
+                    type: string
+                    description: Additional details related to the NearPay transaction.
+                x-apidog-refs: {}
+                x-apidog-orders:
+                  - name
+                  - code
+                  - amount
+                  - amount_string
+                  - near_pay_transaction_uuid
+                  - near_pay_transaction_details
+                required:
+                  - name
+                  - code
+                  - amount
+                  - amount_string
+                x-apidog-ignore-properties: []
+              description: List of split payment entries associated with the order.
+          required:
+            - method
+          x-apidog-orders:
+            - method
+            - split_payments
+          description: Contains payment-related information for the order.
+          x-apidog-ignore-properties: []
+        cod_confirmed:
+          type: boolean
+          description: >-
+            Indicates whether the Cash on Delivery (COD) order has been
+            confirmed.
+        reverse_order_label_request: &ref_1
+          $ref: '#/components/schemas/OrderReversePresenter'
+          description: >-
+            Contains reverse shipment or return label request details for the
+            order.
+        reverse_order_label_requests:
+          type: array
+          items: *ref_1
+          description: >-
+            Contains reverse shipment or return label request details for the
+            order.
+      required:
+        - id
+        - invoice_number
+        - code
+        - store_id
+        - order_url
+        - store_name
+        - shipping_method_code
+        - store_url
+        - currency_code
+        - order_status
+        - display_status
+        - customer
+        - has_different_consignee
+        - is_guest_customer
+        - is_gift_order
+        - gift_card_details
+        - is_quick_checkout_order
+        - order_total
+        - order_total_string
+        - has_different_transaction_currency
+        - transaction_reference
+        - transaction_amount
+        - transaction_amount_string
+        - issue_date
+        - payment_status
+        - is_potential_fraud
+        - source
+        - source_code
+        - is_reseller_transaction
+        - created_at
+        - updated_at
+        - is_on_demand
+        - import_id
+        - tags
+        - requires_shipping
+        - should_merchant_set_shipping_method
+        - shipping
+        - payment
+        - cod_confirmed
+        - reverse_order_label_request
+        - reverse_order_label_requests
+      description: Order summary object.
+      x-apidog-orders:
+        - id
+        - invoice_number
+        - code
+        - store_id
+        - order_url
+        - store_name
+        - shipping_method_code
+        - store_url
+        - currency_code
+        - order_status
+        - display_status
+        - customer
+        - has_different_consignee
+        - is_guest_customer
+        - is_gift_order
+        - gift_card_details
+        - is_quick_checkout_order
+        - order_total
+        - order_total_string
+        - has_different_transaction_currency
+        - transaction_reference
+        - transaction_amount
+        - transaction_amount_string
+        - issue_date
+        - payment_status
+        - is_potential_fraud
+        - source
+        - source_code
+        - is_reseller_transaction
+        - created_at
+        - updated_at
+        - is_on_demand
+        - import_id
+        - store_logo
+        - store_uuid
+        - tags
+        - requires_shipping
+        - should_merchant_set_shipping_method
+        - shipping
+        - payment
+        - cod_confirmed
+        - reverse_order_label_request
+        - reverse_order_label_requests
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    OrderReversePresenter:
+      type: object
+      properties:
+        id:
+          type: string
+          description: Unique identifier of the reverse order label request.
+        store_id:
+          type: string
+          description: >-
+            Unique identifier of the store associated with the reverse label
+            request.
+        order_id:
+          type: integer
+          description: Unique identifier of the related order.
+        is_partial:
+          type: integer
+          description: Indicates whether the reverse request is for a partial order return.
+        consignee_name:
+          type: string
+          description: Name of the consignee associated with the reverse shipment request.
+        consignee_mobile:
+          type: string
+          description: >-
+            Mobile number of the consignee associated with the reverse shipment
+            request.
+        consignee_city:
+          type: object
+          properties: {}
+          x-apidog-orders: []
+          description: >-
+            City information of the consignee associated with the reverse
+            shipment request.
+          x-apidog-ignore-properties: []
+          nullable: true
+        consignee_address_1:
+          type: string
+          description: Primary address line of the consignee (customer).
+        consignee_address_2:
+          type: string
+          description: >-
+            Secondary address line of the consignee (customer). Typically used
+            for apartment numbers, building names, or additional location
+            details.
+        inventory_address_id:
+          type: integer
+          description: >-
+            Unique identifier of the inventory address from which the return
+            will be processed.
+          nullable: true
+        inventory_location_id:
+          type: string
+          description: >-
+            Identifier of the specific inventory location (warehouse, branch, or
+            fulfillment center) handling the reverse order.
+          nullable: true
+        inventory:
+          type: object
+          properties: {}
+          x-apidog-orders: []
+          description: >-
+            Object containing inventory-related details for the reverse process.
+            This may include stock adjustments, warehouse metadata, or internal
+            handling info depending on implementation.
+          x-apidog-ignore-properties: []
+          nullable: true
+        reason:
+          type: array
+          items:
+            type: string
+          description: >-
+            List of reasons provided for returning the order or products.
+            Multiple reasons can be included if applicable.
+        shipping_method:
+          type: string
+          description: >-
+            The shipping method used for the reverse order (return shipment).
+            This should match supported shipping methods configured in the
+            system.
+          nullable: true
+        waybill:
+          type: object
+          properties: {}
+          x-apidog-orders: []
+          description: >-
+            Object containing shipment tracking and logistics details for the
+            return.
+          x-apidog-ignore-properties: []
+          nullable: true
+        products:
+          type: array
+          items:
+            type: object
+            properties: {}
+            x-apidog-orders: []
+            x-apidog-ignore-properties: []
+          description: >-
+            List of products included in the reverse order. Each object
+            represents a product being returned, including quantity and
+            identifiers.
+      x-apidog-orders:
+        - id
+        - store_id
+        - order_id
+        - is_partial
+        - consignee_name
+        - consignee_mobile
+        - consignee_city
+        - consignee_address_1
+        - consignee_address_2
+        - inventory_address_id
+        - inventory_location_id
+        - inventory
+        - reason
+        - shipping_method
+        - waybill
+        - products
+      required:
+        - id
+        - store_id
+        - order_id
+        - is_partial
+        - consignee_name
+        - consignee_mobile
+        - consignee_city
+        - consignee_address_1
+        - consignee_address_2
+        - inventory_address_id
+        - inventory_location_id
+        - inventory
+        - reason
+        - shipping_method
+        - waybill
+        - products
+      x-apidog-ignore-properties: []
+      nullable: true
+      x-apidog-folder: ''
+    DefaultOrderPaymentMethodSerializer:
+      type: object
+      properties:
+        name:
+          type: string
+          description: Display name of the payment method used for the order.
+          nullable: true
+        code:
+          type: string
+          enum:
+            - hyperpay
+            - payfort
+            - paytabs
+            - payfort_fort_sadad
+            - payfort_visa_master_mada
+            - gate2play_visa_master_mada
+            - moyasar
+            - moyasar_visa_master_mada
+            - zidpay
+            - payment_link.zidpay
+            - gate2play
+            - zid_sadad
+            - prepaid_stcpay
+            - tap
+            - tap_visa_master_mada
+            - tamara
+            - tabby
+            - mispay
+            - zid_bank_transfer
+            - bank_transfer
+            - zid_cod
+            - zid_cop
+            - pos-cash
+            - pos-terminal
+            - pos
+            - pos-cc
+            - pos-nearpay
+            - pos-split
+            - pos-terminal-surepay
+            - pos-pm
+            - prepaid_mazeed
+            - pp_standard
+            - free_checkout
+            - pos-tamara
+            - emkan
+            - pos-payment-link
+            - prepaid_amazon
+            - madfu
+            - pos-tabby
+            - prepaid_trendyol
+            - prepaid_import
+            - prepaid_subscription
+            - payfort_fort
+            - cod
+          x-apidog-enum:
+            - value: hyperpay
+              name: Hyperpay
+              description: ''
+            - value: payfort
+              name: Payfort
+              description: ''
+            - value: paytabs
+              name: PayTabs
+              description: ''
+            - value: payfort_fort_sadad
+              name: Payfort
+              description: ''
+            - value: payfort_visa_master_mada
+              name: Payfort
+              description: ''
+            - value: gate2play_visa_master_mada
+              name: Hyperpay
+              description: ''
+            - value: moyasar
+              name: Moyasar
+              description: ''
+            - value: moyasar_visa_master_mada
+              name: Moyasar
+              description: ''
+            - value: zidpay
+              name: ZidPay
+              description: ''
+            - value: payment_link.zidpay
+              name: ZidPay
+              description: ''
+            - value: gate2play
+              name: Hyperpay
+              description: ''
+            - value: zid_sadad
+              name: zid Sadad
+              description: ''
+            - value: prepaid_stcpay
+              name: prepaid_stcpay
+              description: ''
+            - value: tap
+              name: Tap
+              description: ''
+            - value: tap_visa_master_mada
+              name: Tap
+              description: ''
+            - value: tamara
+              name: Tamara
+              description: ''
+            - value: tabby
+              name: Tabby
+              description: ''
+            - value: mispay
+              name: Mispay
+              description: ''
+            - value: zid_bank_transfer
+              name: Bank Transfer
+              description: ''
+            - value: bank_transfer
+              name: bank_transfer
+              description: ''
+            - value: zid_cod
+              name: Cash on Delivery
+              description: ''
+            - value: zid_cop
+              name: Cash on Pickup
+              description: ''
+            - value: pos-cash
+              name: POS-CASH
+              description: ''
+            - value: pos-terminal
+              name: POS TERMINAL
+              description: ''
+            - value: pos
+              name: POS
+              description: ''
+            - value: pos-cc
+              name: POS CC
+              description: ''
+            - value: pos-nearpay
+              name: POS nearpay
+              description: ''
+            - value: pos-split
+              name: POS Split
+              description: ''
+            - value: pos-terminal-surepay
+              name: POS Terminal Surepay
+              description: ''
+            - value: pos-pm
+              name: POS-PM
+              description: ''
+            - value: prepaid_mazeed
+              name: prepaid_mazeed
+              description: ''
+            - value: pp_standard
+              name: pp_standard
+              description: ''
+            - value: free_checkout
+              name: free_checkout
+              description: ''
+            - value: pos-tamara
+              name: POS TAMARA
+              description: ''
+            - value: emkan
+              name: Emkan
+              description: ''
+            - value: pos-payment-link
+              name: Pos Payment Link
+              description: ''
+            - value: prepaid_amazon
+              name: Prepaid Amazon
+              description: ''
+            - value: madfu
+              name: Madfu
+              description: ''
+            - value: pos-tabby
+              name: Pos Tabby
+              description: ''
+            - value: prepaid_trendyol
+              name: Prepaid Trendyol
+              description: ''
+            - value: prepaid_import
+              name: Prepaid Import
+              description: ''
+            - value: prepaid_subscription
+              name: Prepaid Subscription
+              description: ''
+            - value: payfort_fort
+              name: Payfort
+              description: ''
+            - value: cod
+              name: COD
+              description: ''
+          description: >-
+            Internal code representing the payment method. Used for integrations
+            and system-level identification.
+        type:
+          type: string
+          description: Type/category of the payment method.
+        cart_payment_request_token:
+          type: string
+          description: If showing a single order and the payment method is online payment
+          nullable: true
+        transaction_status:
+          type: string
+          description: if order payment method is a banck transfer
+        transaction_status_name:
+          type: string
+          description: if order payment method is a banck transfer
+        transaction_bank:
+          type: string
+          description: if order payment method is a banck transfer
+          nullable: true
+        transaction_slip:
+          type: string
+          description: if order payment method is a banck transfer
+          nullable: true
+        transaction_sender_name:
+          type: string
+          description: if order payment method is a banck transfer
+          nullable: true
+        updated_at:
+          type: string
+          description: if order payment method is a banck transfer
+          nullable: true
+      required:
+        - name
+        - code
+        - type
+      x-apidog-orders:
+        - name
+        - code
+        - type
+        - cart_payment_request_token
+        - transaction_status
+        - transaction_status_name
+        - transaction_bank
+        - transaction_slip
+        - transaction_sender_name
+        - updated_at
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    DefaultOrderShippingAddressSerializer:
+      type: object
+      properties:
+        formatted_address:
+          type: string
+          description: Formatted full shipping address.
+          nullable: true
+        street:
+          type: string
+          description: Street name or primary address line.
+        district:
+          type: string
+          description: District or area of the shipping address.
+        lat:
+          type: number
+          description: Latitude coordinate of the shipping address.
+          nullable: true
+        lng:
+          type: number
+          description: >-
+            Longitude coordinate of the shipping address location. Used for
+            mapping, delivery routing, and logistics optimization.
+          nullable: true
+        short_address:
+          type: string
+          description: >-
+            A concise, human-readable version of the shipping address. Typically
+            used for quick display in UI or summaries.
+          nullable: true
+        meta:
+          type: object
+          properties:
+            building_number:
+              type: string
+              description: Building number of the shipping address.
+              nullable: true
+            postcode:
+              type: string
+              description: Postal or ZIP code of the address.
+              nullable: true
+            additional_number:
+              type: string
+              description: >-
+                Additional number used in certain national addressing systems
+                (e.g., Saudi address system).
+              nullable: true
+            city_name:
+              type: string
+              description: Name of the city as provided in the address metadata.
+              nullable: true
+          x-apidog-orders:
+            - building_number
+            - postcode
+            - additional_number
+            - city_name
+          description: >-
+            Additional structured address details, typically aligned with
+            national addressing systems (e.g., Saudi National Address).
+          x-apidog-ignore-properties: []
+          nullable: true
+        city:
+          type: object
+          properties:
+            id:
+              type: integer
+              description: Unique identifier of the city.
+            name:
+              type: string
+              description: Name of the city.
+              nullable: true
+          required:
+            - id
+            - name
+          x-apidog-orders:
+            - id
+            - name
+          description: Object representing the city associated with the shipping address.
+          x-apidog-ignore-properties: []
+        country:
+          type: object
+          properties:
+            id:
+              type: integer
+              description: Unique identifier of the country.
+            name:
+              type: string
+              description: Name of the country.
+              nullable: true
+          required:
+            - id
+            - name
+          x-apidog-orders:
+            - id
+            - name
+          description: Object representing the country of the shipping address.
+          x-apidog-ignore-properties: []
+      required:
+        - formatted_address
+        - street
+        - district
+        - lat
+        - lng
+        - city
+        - country
+      x-apidog-orders:
+        - formatted_address
+        - street
+        - district
+        - lat
+        - lng
+        - short_address
+        - meta
+        - city
+        - country
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    OrderShippingMethodPresenter:
+      type: object
+      properties:
+        id:
+          type: integer
+          description: Unique identifier of the shipping method.
+          nullable: true
+        name:
+          type: string
+          description: Display name of the shipping method.
+          nullable: true
+        code:
+          type: string
+          description: >-
+            Internal code representing the shipping method. Used for
+            integrations and system-level identification.
+          nullable: true
+        estimated_delivery_time:
+          type: string
+          description: Estimated delivery duration for the shipment.
+          nullable: true
+        icon:
+          type: string
+          description: URL or identifier for the shipping method icon.
+        is_system_option:
+          type: boolean
+          description: >-
+            Indicates whether the shipping method is a predefined system option
+            or a custom method.
+        waybill:
+          type: string
+          description: Waybill number associated with the shipment.
+          nullable: true
+        had_errors_while_fetching_waybill:
+          type: boolean
+          description: >-
+            Indicates whether there were errors while retrieving the waybill
+            from the shipping provider.
+        waybill_tracking_id:
+          type: string
+          description: Tracking identifier used by the shipping provider.
+          nullable: true
+        has_waybill_and_packing_list:
+          type: boolean
+          description: Indicates whether both the waybill and packing list are available.
+        tracking:
+          type: object
+          properties:
+            number:
+              type: string
+              description: Shipment tracking number.
+              nullable: true
+            status:
+              type: string
+              description: Current status of the shipment.
+              nullable: true
+            url:
+              type: string
+              description: URL to track the shipment externally.
+              nullable: true
+          required:
+            - number
+            - status
+            - url
+          x-apidog-orders:
+            - number
+            - status
+            - url
+          description: Object containing shipment tracking details.
+          x-apidog-ignore-properties: []
+        order_shipping_status:
+          type: string
+          description: High-level shipping status of the order.
+          nullable: true
+        inventory_address:
+          anyOf:
+            - type: array
+              items:
+                type: string
+              nullable: true
+            - type: object
+              properties:
+                street:
+                  type: string
+                  nullable: true
+                lat:
+                  type: number
+                  nullable: true
+                lng:
+                  type: number
+                  nullable: true
+              x-apidog-orders:
+                - street
+                - lat
+                - lng
+              required:
+                - street
+                - lat
+                - lng
+              x-apidog-ignore-properties: []
+          description: |-
+            Represents the inventory address associated with the shipment.
+            Can either be:
+            - A list of address lines, or
+            - A structured object containing location details.
+        courier:
+          $ref: '#/components/schemas/ShippingMethodCourier'
+          description: Information about the courier service provider.
+        return_shipment:
+          type: array
+          items:
+            type: string
+          description: List of return shipment identifiers or references.
+          nullable: true
+        packages_count:
+          type: integer
+          description: Number of packages included in the shipment.
+          nullable: true
+      required:
+        - id
+        - name
+        - code
+        - estimated_delivery_time
+        - icon
+        - is_system_option
+        - waybill
+        - had_errors_while_fetching_waybill
+        - waybill_tracking_id
+        - has_waybill_and_packing_list
+        - tracking
+        - courier
+        - return_shipment
+        - packages_count
+      x-apidog-orders:
+        - id
+        - name
+        - code
+        - estimated_delivery_time
+        - icon
+        - is_system_option
+        - waybill
+        - had_errors_while_fetching_waybill
+        - waybill_tracking_id
+        - has_waybill_and_packing_list
+        - tracking
+        - order_shipping_status
+        - inventory_address
+        - courier
+        - return_shipment
+        - packages_count
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    ShippingMethodCourier:
+      type: object
+      properties:
+        name:
+          type: object
+          properties:
+            ar:
+              type: string
+              nullable: true
+            en:
+              type: string
+              nullable: true
+          x-apidog-orders:
+            - ar
+            - en
+          description: Localized name of the courier.
+          x-apidog-ignore-properties: []
+          nullable: true
+        code:
+          type: string
+          description: Internal courier code.
+          nullable: true
+        logo:
+          type: string
+          description: URL of the courier logo.
+          nullable: true
+        identifier:
+          type: string
+          description: Unique identifier of the courier in the system.
+          nullable: true
+      x-apidog-orders:
+        - name
+        - code
+        - logo
+        - identifier
+      x-apidog-ignore-properties: []
+      nullable: true
+      x-apidog-folder: ''
+    OrderTagPresenter:
+      type: object
+      properties:
+        id:
+          type: string
+          description: Unique identifier of the tag.
+        name:
+          type: string
+          description: Name of the tag used to label orders.
+        store_id:
+          type: string
+          description: Identifier of the store to which this tag belongs.
+        user_id:
+          type: string
+          description: Identifier of the user who created or owns the tag.
+        orders:
+          type: array
+          items:
+            type: string
+          description: List of order identifiers associated with this tag.
+          nullable: true
+      x-apidog-orders:
+        - id
+        - name
+        - store_id
+        - user_id
+        - orders
+      required:
+        - id
+        - name
+        - store_id
+        - user_id
+        - orders
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    DefaultOrderCustomerSerializer:
+      type: object
+      properties:
+        id:
+          type: integer
+          examples:
+            - 1441
+          description: Unique identifier of the customer.
+        name:
+          type: string
+          examples:
+            - John Doe
+          description: Full name of the customer.
+        email:
+          type: string
+          examples:
+            - test@mail.com
+          description: Email address of the customer.
+          nullable: true
+        mobile:
+          type: string
+          examples:
+            - '966123456789'
+          description: Mobile phone number of the customer.
+          nullable: true
+        note:
+          type: string
+          examples:
+            - ''
+          description: >-
+            Additional notes or instructions provided by the customer during
+            checkout.
+        verified:
+          type: integer
+          description: >-
+            Indicates whether the customer is verified, 1 means customer is
+            verified, 0 means is not verified
+          enum:
+            - 1
+            - 0
+          x-apidog-enum:
+            - value: 1
+              name: verified
+              description: ''
+            - value: 0
+              name: unverified
+              description: ''
+        type:
+          type: string
+          description: Type of customer.
+          examples:
+            - individual
+          enum:
+            - individual
+            - business
+          x-apidog-enum:
+            - value: individual
+              name: ''
+              description: ''
+            - value: business
+              name: ''
+              description: ''
+          nullable: true
+        business_name:
+          type: string
+          description: >-
+            Business name of the customer. Only applicable when type =
+            "business".
+          nullable: true
+        tax_number:
+          type: string
+          description: >-
+            Tax identification number of the customer. Applicable for business
+            customers.
+          nullable: true
+        commercial_registration:
+          type: string
+          description: >-
+            Commercial registration number of the business. Applicable when type
+            = "business".
+          nullable: true
+      required:
+        - id
+        - name
+        - email
+        - mobile
+        - note
+        - type
+      description: Customer information associated with the draft order.
+      x-apidog-orders:
+        - id
+        - name
+        - email
+        - mobile
+        - note
+        - verified
+        - type
+        - business_name
+        - tax_number
+        - commercial_registration
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    OrderDisplayStatus:
+      type: object
+      properties:
+        id:
+          type: integer
+          description: Display status identifier.
+          examples:
+            - 1
+        code:
+          type: string
+          description: Display status code.
+          examples:
+            - new
+        color:
+          type: string
+          description: Hex color used for displaying status in UI.
+          examples:
+            - '#3498db'
+          nullable: true
+        name:
+          type: string
+          description: Display name of the status.
+          examples:
+            - جديد
+          nullable: true
+      required:
+        - id
+        - code
+        - color
+        - name
+      description: Display configuration for the order status.
+      x-apidog-orders:
+        - id
+        - code
+        - color
+        - name
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    OrderStatus:
+      type: object
+      properties:
+        name:
+          type: string
+          description: Human-readable order status.
+          examples:
+            - جديد
+        code:
+          type: string
+          description: Order status code.
+          examples:
+            - new
+      required:
+        - name
+        - code
+      description: Current status of the draft order.
+      x-apidog-orders:
+        - name
+        - code
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+  securitySchemes: {}
+servers:
+  - url: https://api.zid.sa/
+    description: Prod Env
+security: []
+
+```

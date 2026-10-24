@@ -1,0 +1,117 @@
+concern_id	terms	description	statements	gaps	area_id	action	reason
+SH-C-001	Account; Store Owner; Your store	Shopify account and Store Owner	8	1	SH-A-01	copy	
+SH-C-007	Security; Continue with Google; Sign in with passkey; two-step authentication	Sign-in and account security	8	1	SH-A-01	copy	
+SH-C-008	Trust; identity-verification; Profile Assessment	Identity verification of the people behind an account	8	1	SH-A-01	copy	
+SH-C-009	Users; Staff Accounts; Additional staff accounts; Users and permissions	Users and staff accounts	22	1	SH-A-01	set aside	staff accounts: permissions of the seller's staff, excluded by [3]
+SH-C-010	Roles; permissions; Custom user groups	Roles and permissions	15	1	SH-A-01	set aside	roles and permissions of staff, excluded by [3]
+SH-C-011	Collaborator access; Invite third-party collaborators	Collaborators (outside parties with store access)	9	0	SH-A-01	set aside	collaborator access is a staff/third-party permission, excluded by [3]
+SH-C-155	24/7 support; Free Shopify Academy courses; Shopify Learn; Shopify Community	Merchant support and learning	3	3	SH-A-01	set aside	support and learning; terms name no requirement
+SH-C-003	Organization; OrganizationSettings; Free expansion stores	Organization and its stores	9	3	SH-A-02	set aside	organization structure; terms name no precondition on the seller
+SH-C-004	Business entity; Individual; Company; Non-Profit; Add business entity	Business entities (the registered business or individual a store operates as)	25	0	SH-A-02	copy	
+SH-C-005	Selling with multiple entities; SELECT_EXISTING_LEGAL_ENTITY	Selling with multiple entities	12	1	SH-A-02	copy	
+SH-C-012	MerchantAuditLog; audit_events/admin_api_activity; read_audit_events	Merchant audit log and admin API activity	9	2	SH-A-03	set aside	audit log records activity; terms name no requirement on the seller
+SH-C-013	General; Store properties; shop/update; Store metadata	Store details and general settings	6	1	SH-A-03	copy	
+SH-C-150	Notifications; Customer notifications; Staff notifications	Notifications	5	3	SH-A-03	set aside	notifications; terms name no requirement on the seller
+SH-C-015	Plan; Basic; Grow; Advanced; Plus; basic; professional; unlimited; shopify_plus	Subscription plans	19	1	SH-A-04	copy	
+SH-C-016	Billing; Subscription charges; Platform fees; Other fees; App fees; Billing history	Shopify bills (charges to the merchant, invoices, payment of bills)	24	1	SH-A-04	copy	
+SH-C-017	Taxes; Shopify billing and tax responsibilities	Taxes on Shopify's own charges	7	2	SH-A-04	set aside	taxes on Shopify's own charges, not a precondition
+SH-C-018	Third-party transaction fees; Transaction fees; Transaction fees discount	Transaction fees on sales through payment providers other than Shopify Payments	8	1	SH-A-04	set aside	transaction fee amounts, not a precondition
+SH-C-019	App fees; Shopify Billing Resource; app_subscriptions/update; Manage app billing; Approve app charges	App charges billed through Shopify	21	0	SH-A-04	set aside	app charges; app billing, not a requirement on the seller
+SH-C-201	Shopify Plus Terms; Switch to 3-year term; Renew on a 3-year term; PlusContractDetails; PlusContractTerms; RenewalsQuery; contractmanagement	Shopify Plus contract terms and renewals	6	3	SH-A-04	set aside	Plus contract renewal terms, not a precondition
+SH-C-020	Products; Products and collections; read_products; products/create	Products and variants	35	1	SH-A-05	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-021	Collections; collections/create	Collections	17	2	SH-A-05	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-038	Merchandise with Shopify Combined Listings	Combined listings	2	3	SH-A-05	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-185	Dropshipping apps; Print on demand (POD) apps; Wholesale apps	Product sourcing (dropshipping, print on demand, wholesale)	6	1	SH-A-05	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-186	Subscription apps; selling_plan_groups/create; subscription_contracts/create	Subscriptions and selling plans	22	1	SH-A-05	copy	
+SH-C-188	Upsell and bundle apps; Product bundle apps; Pre-order apps	Upsell, cross-sell, bundles and pre-orders	6	1	SH-A-05	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-189	Custom product apps; Product variant apps; Product configuration	Custom products and product options	4	1	SH-A-05	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-190	Digital goods and service apps; Event booking apps; NFT and tokengating apps	Digital goods, events and token-gating	7	1	SH-A-05	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-022	Inventory; Inventory management; inventory_levels/update; read_inventory	Inventory	30	2	SH-A-06	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-023	Transfers; Purchase orders; inventory_transfers; inventory_shipments	Inventory transfers, shipments and purchase orders	42	2	SH-A-06	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-024	Locations; Location; Inventory locations	Locations	19	2	SH-A-06	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-059	orders/risk_assessment_changed; Built-in fraud analysis*; Risk	Order risk and fraud analysis	11	1	SH-A-13	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-062	Payments; Payment providers; Manage other payment settings	Payment providers settings (which payment methods a store accepts)	12	0	SH-A-13	copy	
+SH-C-074	Shop Pay; dev.shopify.shop_pay; Shop Pay Wallet API	Shop Pay	14	0	SH-A-13	copy	
+SH-C-075	Shop Pay Installments; unauthenticated_read_shop_pay_installments_pricing	Shop Pay Installments	13	0	SH-A-13	copy	
+SH-C-076	Payments Apps API; Payments extensions; Payment apps; paymentSessionResolve	Third-party payment providers through payments apps	27	0	SH-A-13	copy	
+SH-C-077	PayPal Express Checkout; PayPal Wallet rates	PayPal Express Checkout	13	1	SH-A-13	copy	
+SH-C-078	Apple Pay; Google Pay; Meta Pay; Amazon Pay; com.google.pay	Third-party wallets (Apple Pay, Google Pay, Meta Pay, Amazon Pay)	15	0	SH-A-13	copy	
+SH-C-079	Manual payment methods; Record payments; Mark as paid	Manual payment methods	9	2	SH-A-13	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-080	Accept local payment methods*; MB WAY rates; Bizum rates	Local payment methods	14	1	SH-A-13	copy	
+SH-C-081	USDC rates; Cryptocurrency Payment Protocol; Cryptocurrency Credit Reward Program	Cryptocurrency and stablecoin payments	11	1	SH-A-13	copy	
+SH-C-082	Shop Cash	Shop Cash	3	2	SH-A-13	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-083	Payment Customization; read_payment_customizations	Payment customization (Shopify Function)	12	1	SH-A-13	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-084	order_transactions/create; tender_transactions/create; Capture payments	Payment authorization, capture and order transactions	9	0	SH-A-13	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-085	customer_payment_methods/create; read_customer_payment_methods; read_payment_mandate; Charge vaulted payment method	Saved customer payment methods and payment mandates	16	2	SH-A-13	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-063	Shopify Payments; Shopify Payments Terms of Service	Shopify Payments	36	0	SH-A-14	copy	
+SH-C-064	Payment Processor; Payment Processing; Payment Processor List	Payment processing and settlement for Shopify Payments	33	0	SH-A-14	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-065	Payment Processor Account; Financial Services Provider; Payout Account	Holding the merchant's funds from Shopify Payments sales	16	1	SH-A-14	copy	
+SH-C-066	Payment Facilitator; Shopify Payments EU Limited; Shopify Payments UK Limited; Acquirer	Payment facilitation in the EU/EEA and UK	11	2	SH-A-14	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-067	Regulated Payment Services; Shopify Payment Activities Inc.	Regulated payment services in Canada	3	3	SH-A-14	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-068	Verification and Underwriting; ProfileAssessment; read_financial_kyc_information; finance_kyc_information/update	Onboarding, KYC and underwriting for Shopify Payments	21	0	SH-A-14	copy	
+SH-C-069	Payouts; read_shopify_payments_payouts; View Shopify Payments payouts; Shopify Payments activity report	Payouts	19	0	SH-A-14	copy	
+SH-C-070	Reserves; Reserve Account; account holds	Reserves and payout holds	10	0	SH-A-14	copy	
+SH-C-071	Online standard card rates; Online international rates; In-person card rates; IC++ fees	Shopify Payments processing rates	9	1	SH-A-14	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-072	disputes/create; read_shopify_payments_disputes; Manage disputes; Disputes	Chargebacks and disputes	24	1	SH-A-14	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-073	Shopify Protect; orders/shopify_protect_eligibility_changed	Shopify Protect	11	1	SH-A-14	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-173	Prohibited and Restricted Businesses	Prohibited and restricted businesses for Shopify Payments	7	3	SH-A-14	copy	
+SH-C-088	Shopify Balance; Banking; Balance; Manage money with Shopify Balance	Shopify Balance account	45	0	SH-A-15	copy	
+SH-C-089	Cards; Shopify Balance Visa® Commercial cards	Shopify Balance cards	7	2	SH-A-15	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-090	Shopify Credit; Credit; Shopify Credit pay-in-full Visa® card	Shopify Credit	33	0	SH-A-15	copy	
+SH-C-091	Capital - US loan; Capital - US Merchant Cash Advance (MCA)	Shopify Capital in the United States	23	1	SH-A-15	copy	
+SH-C-092	Capital - UK Merchant Cash Advance (MCA)	Shopify Capital in the United Kingdom	15	1	SH-A-15	copy	
+SH-C-093	Capital - Canada Merchant Cash Advance (MCA)	Shopify Capital in Canada	11	2	SH-A-15	copy	
+SH-C-094	Capital - Australia	Shopify Capital in Australia	10	2	SH-A-15	copy	
+SH-C-095	Shopify Capital loans; Banking Circle S.A.; YouLend SAS; Shopify Commerce France SAS	Shopify Capital in France	13	1	SH-A-15	copy	
+SH-C-096	Shopify Capital loans; YouLend GmbH; Shopify Commerce Germany GmbH	Shopify Capital in Germany	13	1	SH-A-15	copy	
+SH-C-097	Shopify Capital merchant cash advances; YouLend	Shopify Capital merchant cash advances in Ireland, the Netherlands and Spain	16	1	SH-A-15	copy	
+SH-C-098	Shopify Bill Pay; Bill Pay	Shopify Bill Pay	13	1	SH-A-15	copy	
+SH-C-178	Financial Products; Submit a financial complaint	Complaints about financial products	4	3	SH-A-15	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-099	VIEW_TAX_DOCUMENTS; 1099-MISC forms	Tax forms and tax documents issued to the merchant	14	0	SH-A-16	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-100	Taxes and duties; Automated sales tax calculations; Tax transaction fees; read_taxes	Sales tax and VAT calculation at checkout	36	0	SH-A-16	copy	
+SH-C-101	Tax liability tracking; Taxes and duties	Tax registrations and liability tracking	12	2	SH-A-16	copy	
+SH-C-102	VAT validation, exemptions, and invoicing	VAT validation, exemptions and invoicing	7	1	SH-A-16	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-103	Tax calculation; tax_services/create; write_taxes; Avalara add-on fees; Advanced tax platform; Tax apps	Third-party tax calculation (tax apps and add-ons)	26	1	SH-A-16	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-104	Automated filing; Shopify Tax Automated Filing	Automated tax filing	17	1	SH-A-16	copy	
+SH-C-105	Estimate and collect duties and taxes; Duties and import tax transaction fees; Shipping duties and import taxes	Duties and import taxes	12	0	SH-A-16	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-106	Markets; Shopify Markets; Localized selling with Shopify Markets; markets/create	Markets	24	1	SH-A-17	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-110	Managed Markets; Managed Markets shipping fees	Managed Markets	18	0	SH-A-17	copy	
+SH-C-111	Assign local domains; Geolocation apps	International domains and geolocation	4	1	SH-A-17	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-112	Rollouts; rollouts/create; read_rollouts	Rollouts	15	2	SH-A-17	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-113	markets_backup_region/update	Backup region	5	2	SH-A-17	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-135	Sales channels; SalesChannels; read_publications; Sales channel configuration	Sales channels and publishing	23	1	SH-A-20	copy	
+SH-C-136	Shop; Shop App; Shop: Track, Pay, Discover; Shop API; Shop Minis	Shop (consumer app and sales channel)	9	1	SH-A-20	copy	
+SH-C-137	Import unlimited orders from marketplaces; Over 50 synced marketplace orders; read_marketplace_orders	Marketplace order sync (Marketplace Connect)	26	1	SH-A-20	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-138	product_feeds/create; product_listings/add; read_product_listings	Product feeds and listings for channels	11	2	SH-A-20	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-139	Build headless storefronts; CustomStorefronts; Storefront API; Hydrogen framework	Headless and custom storefronts	26	1	SH-A-20	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-140	Sell in AI chats; Agentic; dev.ucp.shopping; WebMCP Tools	Agentic commerce (AI chats, Universal Commerce Protocol)	20	1	SH-A-20	copy	
+SH-C-141	Sell and source products with Shopify Collective	Shopify Collective	6	1	SH-A-20	copy	
+SH-C-086	In-person card rates; Tap to Pay transaction fees; Card present	In-person card payments	11	2	SH-A-21	copy	
+SH-C-087	read_cash_tracking; CashDrawer	Cash management at POS	6	3	SH-A-21	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-142	Point of Sale; Retail; POS Pro; Shopify Point of Sale (POS)	Point of Sale	11	0	SH-A-21	copy	
+SH-C-143	POS Equipment Agreement and Return Policies; POS Equipment	POS hardware	5	1	SH-A-21	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-144	POS UI extensions; POS action; POS block; POS smart grid	POS UI extensions	8	0	SH-A-21	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-147	Shopify Network Intelligence; Enhanced Services	Shopify Network Intelligence (Enhanced Services)	6	1	SH-A-27	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-148	Customer privacy; Privacy; Cookie banner; Customer Privacy API; read_privacy_settings	Customer privacy settings, cookie banner and consent	18	0	SH-A-27	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-149	Request data; Erase personal data; read_customer_data_erasure	Customer data requests and erasure	11	1	SH-A-27	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-179	guidelines for legal requests for information	Legal requests for information	9	1	SH-A-27	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-180	Data Processing Addendum; Data Controller; Data Processor	Data protection roles for the merchant's customer data	7	2	SH-A-27	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-181	Data hosting locations; Binding Corporate Rules	Where data is stored and processed	24	0	SH-A-27	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-182	Subprocessors	Subprocessors	11	1	SH-A-27	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-183	retain store information for two years	Retention and deletion of store data after closure	6	1	SH-A-27	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-184	PCI DSS; Account Data	Payment card data security	5	3	SH-A-27	copy	
+SH-C-002	Shopify Contracting Party; Shopify Inc.; Shopify Technology (USA) Inc.; Shopify Commerce Singapore Pte. Ltd; Shopify International Limited	Shopify Contracting Party for the platform services, by the merchant's billing region	11	3	SH-A-28	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-014	Reactivate your store; store-unavailable; Term and Termination	Store suspension, termination, reactivation and closure	17	1	SH-A-28	copy	
+SH-C-172	Acceptable Use Policy; Report an issue with a merchant	Acceptable use and enforcement	12	0	SH-A-28	copy	
+SH-C-175	Consumer protection laws; Alcohol products; Hemp and hemp-derived products; General Product Safety Regulation (GPSR); TSE Compliance in Germany	Merchant compliance with product, consumer and fiscal rules	8	2	SH-A-28	copy	
+SH-C-176	Intellectual Property; copyright policy; trademark policy	Intellectual property reports	4	1	SH-A-28	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-177	Legal Notices; Digital Service Act; Submit a P2B complaint	EU and UK platform rules (P2B complaints, Digital Services Act)	7	1	SH-A-28	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-006	I'm located in:; Country/region	Merchant location at sign-up	3	2	SH-A-29	copy	
+SH-C-174	Unsupported countries and regions; Sanctions; Sanctioned Person	Sanctions and unsupported countries and regions	20	2	SH-A-29	copy	
+SH-C-107	store currency; Store Currencies	Store currency	5	2	SH-A-31	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-108	Show prices in local currencies*	Prices in local currencies	10	2	SH-A-31	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-109	Currency conversions and exchange rates	Currency conversion and exchange rates	12	1	SH-A-31	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-132	Optimize ads with Shopify Audiences	Shopify Audiences	7	0	SH-A-19	set aside	terms name a feature or object, not a requirement the seller must meet first
+SH-C-026	Store credit; read_store_credit_accounts; Refund to store credit	Store credit	13	1	SH-A-32	set aside	terms name a feature or object, not a requirement the seller must meet first
+S-01		the pilot's statements, gaps and absences on who holds the merchant's funds	161	0		copy	
+SH-C-047	Checkout; World's best-converting checkout; checkouts/create; High volume checkout	Shopify Checkout				add	statements include the webCheckout entitlement and the requirement to use Shopify Checkout for online store sales

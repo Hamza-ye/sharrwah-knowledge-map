@@ -1,0 +1,18 @@
+{
+ "n": 169,
+ "url": "https://help.zid.sa/whatsapp-app-vs-api/",
+ "dir": "items/169-help.zid.sa",
+ "fetched_at": "2026-10-12T04:53:41Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/whatsapp-app-vs-api/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 27334,
+ "cited_in": [
+  "ZD-S-1053"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "3506a7d862e3356ca89b39794561ba28e699eb44c7f1d747142abb624bc7e723",
+ "raw_ext": "html"
+}

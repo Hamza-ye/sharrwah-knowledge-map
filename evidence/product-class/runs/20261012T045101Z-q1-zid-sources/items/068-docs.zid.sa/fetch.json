@@ -1,0 +1,18 @@
+{
+ "n": 68,
+ "url": "https://docs.zid.sa/webhook-events-order.md",
+ "dir": "items/068-docs.zid.sa",
+ "fetched_at": "2026-10-12T04:52:06Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.zid.sa/webhook-events-order.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 759,
+ "cited_in": [
+  "ZD-S-0812"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "83c8a8e4c48474098fef1a947ea4e5b84a898f9379459a86eb866365736e0a44",
+ "raw_ext": "txt"
+}

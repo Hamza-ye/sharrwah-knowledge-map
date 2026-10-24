@@ -1,0 +1,22 @@
+{
+ "n": 136,
+ "url": "https://www.shopify.com/legal/gvtaccesspolicy",
+ "dir": "items/136-shopify.com",
+ "fetched_at": "2026-10-11T06:13:10Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.shopify.com/legal/gvtaccesspolicy",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 67862,
+ "cited_in": [
+  "SH-S-0650",
+  "SH-S-0651",
+  "SH-S-0652",
+  "SH-S-0653",
+  "SH-S-0675"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "20ba43a3c9c7be1deba2eae495dc96e04787b52741fc69368306ccf206d90e59",
+ "raw_ext": "html"
+}

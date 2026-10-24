@@ -1,0 +1,472 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;"># Set Categories Nesting
+
+## OpenAPI Specification
+
+```yaml
+openapi: 3.0.1
+info:
+  title: ''
+  description: ''
+  version: 1.0.0
+paths:
+  /v1/managers/store/categories/nesting:
+    post:
+      summary: Set Categories Nesting
+      deprecated: false
+      description: &gt;-
+        Updates the parent-child hierarchy of product categories. Supports up to
+        3 levels of nesting.
+
+
+        &lt;Accordion title="🔑Scopes" defaultOpen&gt;
+
+
+        `third_categories_write` - third_categories_write
+         
+        &lt;/Accordion&gt;
+
+
+
+        :::info[]
+
+        **Note:** The endpoint supports a maximum hierarchy of category → child
+        → grandchild.
+
+        :::
+      tags:
+        - Default module/Apps/Merchant APIs/Products/Product Categories
+      parameters:
+        - name: Authorization
+          in: header
+          description: &gt;-
+            The Authorization token is a unique key given to the third-party
+            application (Partner) by Zid. It is used to authenticate the API
+            requests made by the Partner application. The token verifies the
+            partner's identity and ensures they have permission to access Zid's
+            API but does not provide any specific user or store information. It
+            should be included in the header of API requests when the partner
+            application needs to access Zid's API.
+          required: true
+          example: '{{Autherization}}'
+          schema:
+            type: string
+        - name: Store-ID
+          in: header
+          description: The unique identifier of the order.
+          required: true
+          example: '{{StoreId}}'
+          schema:
+            type: string
+        - name: Content-Type
+          in: header
+          description: &gt;-
+            The Media Type of the body of the request. This is used to describe
+            the structure of the data in the body.
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - data
+              properties:
+                data:
+                  type: array
+                  minItems: 1
+                  description: &gt;-
+                    List of categories and their nesting hierarchy. Supports up
+                    to three levels of nesting.
+                  items:
+                    type: object
+                    required:
+                      - id
+                    properties:
+                      id:
+                        type: integer
+                        description: Unique identifier of the category.
+                        examples:
+                          - 101
+                      parent_id:
+                        type: integer
+                        description: &gt;-
+                          Identifier of the parent category. Use null for a
+                          top-level category.
+                        examples:
+                          - null
+                        nullable: true
+                      children:
+                        type: array
+                        description: List of child categories nested under this category.
+                        items:
+                          type: object
+                          required:
+                            - id
+                          properties:
+                            id:
+                              type: integer
+                              description: Unique identifier of the child category.
+                              examples:
+                                - 102
+                            parent_id:
+                              type: integer
+                              description: Identifier of the parent category.
+                              examples:
+                                - 101
+                              nullable: true
+                            children:
+                              type: array
+                              description: &gt;-
+                                List of grandchild categories nested under this
+                                child category.
+                              items:
+                                type: object
+                                required:
+                                  - id
+                                properties:
+                                  id:
+                                    type: integer
+                                    description: &gt;-
+                                      Unique identifier of the grandchild
+                                      category.
+                                    examples:
+                                      - 103
+                                  parent_id:
+                                    type: integer
+                                    description: Identifier of the parent child category.
+                                    examples:
+                                      - 102
+                                    nullable: true
+                                x-apidog-orders:
+                                  - id
+                                  - parent_id
+                                x-apidog-ignore-properties: []
+                          x-apidog-orders:
+                            - id
+                            - parent_id
+                            - children
+                          x-apidog-ignore-properties: []
+                    x-apidog-orders:
+                      - id
+                      - parent_id
+                      - children
+                    x-apidog-ignore-properties: []
+              x-apidog-orders:
+                - data
+              examples:
+                - data:
+                    - id: 101
+                      parent_id: null
+                      children:
+                        - id: 102
+                          parent_id: 101
+                          children:
+                            - id: 103
+                              parent_id: 102
+              x-apidog-ignore-properties: []
+            examples: {}
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Status of the category nesting update.
+                    examples:
+                      - OK
+                  message:
+                    type: string
+                    description: Message describing the result of the operation.
+                    examples:
+                      - ok
+                x-apidog-orders:
+                  - status
+                  - message
+                examples:
+                  - status: OK
+                    message: ok
+                x-apidog-ignore-properties: []
+          headers: {}
+          x-apidog-name: Success
+        '400':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  code:
+                    type: integer
+                  message:
+                    type: string
+                required:
+                  - code
+                  - message
+                x-apidog-orders:
+                  - code
+                  - message
+                x-apidog-ignore-properties: []
+          headers: {}
+          x-apidog-name: Bad Request
+        '401':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                description: &gt;-
+                  Response returned when the request cannot be authenticated
+                  because the required credentials are missing, invalid, or
+                  expired.
+                properties:
+                  status:
+                    type: string
+                    description: Indicates the overall status of the API response.
+                    examples:
+                      - error
+                  message:
+                    type: object
+                    description: &gt;-
+                      Contains structured details explaining why the request
+                      could not be authenticated.
+                    properties:
+                      type:
+                        type: string
+                        description: Indicates the category of the response message.
+                        examples:
+                          - error
+                      code:
+                        type: string
+                        description: &gt;-
+                          A machine-readable code identifying the authentication
+                          error. Returns null when no specific code is
+                          available.
+                        examples:
+                          - UNAUTHORIZED
+                        nullable: true
+                      name:
+                        type: string
+                        description: &gt;-
+                          A short, human-readable title describing the
+                          authentication error. Returns null when no title is
+                          available.
+                        examples:
+                          - Unauthorized
+                        nullable: true
+                      description:
+                        type: string
+                        description: &gt;-
+                          A human-readable explanation of why the request could
+                          not be authenticated. Returns null when no detailed
+                          explanation is available.
+                        examples:
+                          - &gt;-
+                            Authentication credentials are missing, invalid, or
+                            expired.
+                        nullable: true
+                    required:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-orders:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-ignore-properties: []
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                examples:
+                  - status: error
+                    message:
+                      type: error
+                      code: UNAUTHORIZED
+                      name: Unauthorized
+                      description: &gt;-
+                        Authentication credentials are missing, invalid, or
+                        expired.
+                x-apidog-ignore-properties: []
+              examples:
+                '1':
+                  summary: Example 1
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_MISSING
+                      name: Sorry
+                      description: Please login first.
+                '2':
+                  summary: Example 2
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Login session expired. Please login again.
+                '3':
+                  summary: Example 3
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Invalid authentication
+          headers: {}
+          x-apidog-name: Unauthorized
+        '403':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Indicates that the request failed.
+                    examples:
+                      - error
+                  message:
+                    type: object
+                    description: Details about the authorization error.
+                    properties:
+                      type:
+                        type: string
+                        description: The error message type.
+                        examples:
+                          - error
+                      code:
+                        type: string
+                        description: The error code.
+                        examples:
+                          - ERROR_POPUP_OK
+                      name:
+                        type: string
+                        description: The error name.
+                        examples:
+                          - Sorry
+                      description:
+                        type: string
+                        description: &gt;-
+                          A message indicating that the caller does not have the
+                          required permission.
+                        examples:
+                          - Permission Denied
+                      required_permissions:
+                        type: array
+                        description: The permissions required to perform the operation.
+                        items:
+                          type: string
+                          description: A required permission.
+                          examples:
+                            - bundle.offers.manage
+                        examples:
+                          - - bundle.offers.manage
+                    x-apidog-orders:
+                      - type
+                      - code
+                      - name
+                      - description
+                      - required_permissions
+                    x-apidog-ignore-properties: []
+                x-apidog-orders:
+                  - status
+                  - message
+                x-apidog-ignore-properties: []
+          headers: {}
+          x-apidog-name: Forbidden
+        '500':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Status of the error.
+                  message:
+                    $ref: '#/components/schemas/ResponseEnvelopMessage'
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                x-apidog-ignore-properties: []
+              example:
+                status: error
+                message:
+                  type: error
+                  code: MSG_HIDDEN
+                  name: Error
+                  description: Internal Server Error
+          headers: {}
+          x-apidog-name: Internal Server error
+      security: []
+      x-apidog-folder: Default module/Apps/Merchant APIs/Products/Product Categories
+      x-apidog-status: released
+      x-run-in-apidog: https://app.apidog.com/web/project/613905/apis/api-42347136-run
+components:
+  schemas:
+    ResponseEnvelopMessage:
+      type: object
+      properties:
+        type:
+          type: string
+          description: Type of response message returned by the API.
+          examples:
+            - success
+        code:
+          type: string
+          description: Response code returned by the API, if available.
+          examples:
+            - MSG_POPUP_OK
+          nullable: true
+        name:
+          type: string
+          description: Name or title of the response message, if available.
+          examples:
+            - Coupons
+          nullable: true
+        description:
+          type: string
+          description: Detailed description of the response message, if available.
+          examples:
+            - Coupons created successfully
+          nullable: true
+      required:
+        - type
+        - code
+        - name
+        - description
+      description: Additional response metadata.
+      x-apidog-orders:
+        - type
+        - code
+        - name
+        - description
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+  securitySchemes: {}
+servers:
+  - url: https://api.zid.sa/
+    description: Prod Env
+security: []
+
+```
+</pre></body></html>

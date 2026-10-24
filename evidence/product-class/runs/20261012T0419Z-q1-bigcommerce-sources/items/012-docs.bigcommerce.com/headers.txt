@@ -1,0 +1,28 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Mon, 12 Oct 2026 04:19:27 GMT
+content-type: text/markdown; charset=utf-8
+age: 14556
+cache-control: public, max-age=0, must-revalidate
+cf-cache-status: DYNAMIC
+cf-placement: local-IAD
+x-vercel-id: iad1::p6tl2-1791778767632-17aaad23166b
+content-encoding: br
+etag: W/"6070c9637a53d93728d6b632c0e4573e"
+link: </developer/api-reference/rest/admin/content/custom-template-associations.md>; rel="alternate"; type="text/markdown", </developer/api-reference/rest/admin/content/custom-template-associations/llms.txt>; rel="describedby"
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+permissions-policy: camera=(self), microphone=(self), geolocation=()
+referrer-policy: strict-origin-when-cross-origin
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=f0IlXVxD2sYxB%2FZfMBqAAP5rMN8q5nH45TEik2Es0L8xz7vVIEgqinA6NIt360QIuNry3THxJntW32DYqQXcb6ROAi8uC5rULd8Ai5gTglf4TQxUm4TMI83nIAL4%2BlgYFAj3Ksztiez%2FAw%3D%3D"}]}
+server: cloudflare
+strict-transport-security: max-age=2592000; includeSubDomains
+x-content-type-options: nosniff
+x-fern-renderer: static
+x-vercel-cache: MISS
+vary: accept-encoding
+set-cookie: __cf_bm=rD6R1ewb3pxBkQYptS0znftPzl2jb9.dM2JW4_fqiuw-1791778767.6018095-1.0.1.1-389f73ASRDttZbfO0MOJpOmwaGjSCil6XrAAIwR94KwMfwR.8vXhQHdUAcpgXXOXtgrCAI5bYhsiJZdAQHsRBzhdLlk2LP8g5Uihnt.MSFQwc1NMURhcOJouBHeNrQvi; HttpOnly; SameSite=None; Secure; Path=/; Domain=bigcommerce.com; Expires=Mon, 12 Oct 2026 04:49:27 GMT
+bc-ray: 1
+cf-ray: a4934e718a4c4078-IAD
+alt-svc: h3=":443"; ma=86400
+

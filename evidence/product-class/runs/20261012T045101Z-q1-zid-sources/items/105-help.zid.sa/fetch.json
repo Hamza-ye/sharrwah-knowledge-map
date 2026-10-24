@@ -1,0 +1,19 @@
+{
+ "n": 105,
+ "url": "https://help.zid.sa/customer-reviews/",
+ "dir": "items/105-help.zid.sa",
+ "fetched_at": "2026-10-12T04:52:37Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/customer-reviews/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 27853,
+ "cited_in": [
+  "ZD-S-1026",
+  "ZD-S-1027"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "dbfd3fbd04347a85038dd4ba80fe27619ada605a340813f2603ef6d7abebd357",
+ "raw_ext": "html"
+}

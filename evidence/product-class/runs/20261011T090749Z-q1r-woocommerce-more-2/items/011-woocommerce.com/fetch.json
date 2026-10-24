@@ -1,0 +1,19 @@
+{
+ "n": 11,
+ "url": "https://woocommerce.com/document/google-for-woocommerce/get-started/product-feed-information-and-free-listings/",
+ "dir": "items/011-woocommerce.com",
+ "fetched_at": "2026-10-11T09:07:52Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/google-for-woocommerce/get-started/product-feed-information-and-free-listings/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 53820,
+ "cited_in": [
+  "WC-S-5492",
+  "WC-S-5494"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "84a8e2870c399da5c2760d3ae9160c2bca19eb42cbc879d4e322cc1919b76283",
+ "raw_ext": "html"
+}

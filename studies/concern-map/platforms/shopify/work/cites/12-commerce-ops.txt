@@ -1,0 +1,623 @@
+key: gc_merchant_responsible
+source: https://www.shopify.com/legal/terms-gift-cards
+locator: introduction
+quote: Please note that you are legally responsible for all gift card or store credit issuance and management; Shopify merely provides software to assist with such activities.
+date: 2024-01-24
+basis: last updated (page states "Last updated on: January 24, 2024")
+access: rendered
+
+key: gc_escrow
+source: https://www.shopify.com/legal/terms-gift-cards
+locator: 3. Compliance with Laws
+quote: You are responsible for the handling of any amounts loaded on the Gift Card or offered as Store Credit in compliance with Applicable Laws, including, if required by Applicable Laws, depositing amounts loaded on the Gift Card or offered as Store Credit into escrow or separate accounts.
+date: 2024-01-24
+basis: last updated (page states "Last updated on: January 24, 2024")
+access: rendered
+
+key: gc_funds_flow
+source: https://www.shopify.com/legal/terms-gift-cards
+locator: 4. Gift Card & Store Credit Terms and Issuance
+quote: You will be responsible for supervising and managing all daily funds flow associated with Gift Cards and Store Credit
+date: 2024-01-24
+basis: last updated (page states "Last updated on: January 24, 2024")
+access: rendered
+
+key: dev_checkout_extend
+source: https://shopify.dev/docs/apps/build/checkout.md
+locator: Apps in checkout, introduction
+quote: To augment Shopify checkout with new functionality, build an app with extensions.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dev_checkout_upgrade_safe
+source: https://shopify.dev/docs/apps/build/checkout.md
+locator: Customization options
+quote: All customization options are easy to install and upgrade-safe
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dev_fn_backend
+source: https://shopify.dev/docs/apps/build/functions.md
+locator: About Shopify Functions
+quote: Shopify Functions allow developers to customize the backend logic of Shopify.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dev_fn_plus_custom
+source: https://shopify.dev/docs/apps/build/functions.md
+locator: Functions availability
+quote: Stores on any plan can use public apps that are distributed through the Shopify App Store and contain functions.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dev_fn_shopify_executes
+source: https://shopify.dev/docs/apps/build/functions.md
+locator: Lifecycle of a Shopify Function
+quote: Shopify Functions are never invoked directly by URL or otherwise. Shopify invokes them as-needed within the customer journey.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dev_fn_wasm
+source: https://shopify.dev/docs/apps/build/functions.md
+locator: How Shopify Functions work
+quote: is written in any language that can compile a WebAssembly module
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dev_webhooks
+source: https://shopify.dev/docs/apps/build/webhooks.md
+locator: About webhooks
+quote: When your app needs information about specific events that have occurred on a shop, it can subscribe to Shopify webhook topics as a mechanism for receiving near-real-time data about these events.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dev_webhooks_hmac
+source: https://shopify.dev/docs/apps/build/webhooks.md
+locator: How it works
+quote: Verify HMAC signatures and ignore duplicate deliveries using `X-Shopify-Webhook-Id`.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dev_limits_stability
+source: https://shopify.dev/docs/api/usage/limits.md
+locator: Rate limits
+quote: Rate limits keep the platform stable and fair for everyone.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dev_limits_reduce
+source: https://shopify.dev/docs/api/usage/limits.md
+locator: Rate limits
+quote: Shopify may temporarily reduce API rate limits to protect platform stability.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dev_limits_plan
+source: https://shopify.dev/docs/api/usage/limits.md
+locator: The leaky bucket algorithm
+quote: Each app has access to a bucket. Its size is set by the API and by your plan.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dev_versioning_quarterly
+source: https://shopify.dev/docs/api/usage/versioning.md
+locator: About Shopify API versioning
+quote: Shopify releases new API versions on a predictable quarterly schedule, giving you time to adopt changes before older versions are retired.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dev_versioning_unversioned
+source: https://shopify.dev/docs/api/usage/versioning.md
+locator: Versioned and unversioned APIs
+quote: Unversioned APIs and surfaces may change at any time.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dev_distribution
+source: https://shopify.dev/docs/apps/launch/distribution.md
+locator: About app distribution
+quote: You can't change the distribution method after you select it.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dev_distribution_types
+source: https://shopify.dev/docs/apps/launch/distribution.md
+locator: About app distribution
+quote: **Building for a specific merchant**: You'll typically use custom distribution.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dev_pcd_minimum
+source: https://shopify.dev/docs/apps/launch/protected-customer-data.md
+locator: introduction
+quote: Shopify will approve your app to use protected customer data if the requested data is the minimum amount required by your app to provide the merchant with the app functionality.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dev_pcd_legally_bound
+source: https://shopify.dev/docs/apps/launch/protected-customer-data.md
+locator: introduction, important note
+quote: Partners are legally bound by the terms and conditions of the [Shopify Partner Program Agreement](https://www.shopify.com/partners/terms) and the [Shopify API License and Terms of Use](https://www.shopify.com/legal/api-terms), regardless of the API version that they're using.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dev_privacy_standard
+source: https://shopify.dev/docs/apps/build/compliance/privacy-law-compliance.md
+locator: Privacy law compliance
+quote: However, Shopify takes a standardized approach and requires public apps to provide the same privacy rights for all personal data, regardless of where an individual is located.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dev_privacy_webhooks
+source: https://shopify.dev/docs/apps/build/compliance/privacy-law-compliance.md
+locator: Mandatory compliance webhooks
+quote: Any app that you distribute through the Shopify App Store must respond to data subject requests, regardless of whether the app collects personal data.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dev_privacy_rejected
+source: https://shopify.dev/docs/apps/build/compliance/privacy-law-compliance.md
+locator: How it works
+quote: then your app will be rejected and you'll need to fix the identified problem before submitting your app for another review.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dev_channels_definition
+source: https://shopify.dev/docs/apps/build/sales-channels.md
+locator: What is a sales channel?
+quote: A sales channel app connects a merchant's online store to surfaces outside Shopify.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dev_channels_own_checkout
+source: https://shopify.dev/docs/apps/build/sales-channels.md
+locator: What is a sales channel?
+quote: Examples include traffic-driving channels like Google and Meta, and marketplaces like Amazon that have their own checkout.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dev_channels_operate
+source: https://shopify.dev/docs/apps/build/sales-channels.md
+locator: When to create a sales channel?
+quote: Only create a sales channel if you own and operate, or are contracted to represent, a distinct surface where merchants can promote or sell products outside Shopify.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dev_fs_definition
+source: https://shopify.dev/docs/apps/build/orders-fulfillment/fulfillment-service-apps.md
+locator: About fulfillment services
+quote: Fulfillment service apps provide third-party warehousing, print on demand, or fulfillment services that prepare and ship orders on behalf of merchants.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dev_fs_location
+source: https://shopify.dev/docs/apps/build/orders-fulfillment/fulfillment-service-apps.md
+locator: How it works
+quote: When you create a fulfillment service, Shopify automatically creates a new location for it.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dev_fs_accept
+source: https://shopify.dev/docs/apps/build/orders-fulfillment/fulfillment-service-apps.md
+locator: How it works
+quote: Fulfillment services can accept or reject requests to fulfill orders.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dev_tae
+source: https://shopify.dev/docs/apps/build/online-store/theme-app-extensions.md
+locator: About theme app extensions
+quote: Theme app extensions allow merchants to easily add dynamic elements to their themes without having to interact with Liquid templates or code.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dev_pixels
+source: https://shopify.dev/docs/apps/build/marketing-analytics/pixels.md
+locator: How web pixels work
+quote: Pixels are JavaScript code snippets that run on the online store and collect behavioral data, referred to as
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dev_pixels_consent
+source: https://shopify.dev/docs/apps/build/marketing-analytics/pixels.md
+locator: Requesting consent
+quote: In regions where customers must consent to tracking, app extension callbacks are executed only after consent is given.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dev_pixels_sandbox
+source: https://shopify.dev/docs/apps/build/marketing-analytics/pixels.md
+locator: Benefits
+quote: by loading pixels in a secure sandbox environment with APIs for subscribing to customer events.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dev_headless
+source: https://shopify.dev/docs/storefronts/headless.md
+locator: Build headless commerce
+quote: Get all the power of Shopify under the hood, with complete control over the frontend.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dev_oxygen
+source: https://shopify.dev/docs/storefronts/headless.md
+locator: What you get
+quote: Deploy your Hydrogen app to Oxygen, Shopify's global edge hosting platform.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dev_admin_ext
+source: https://shopify.dev/docs/apps/build/admin.md
+locator: Admin UI extensions
+quote: Admin UI extensions let you embed your app's functionality on core admin pages.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dev_ca_ext
+source: https://shopify.dev/docs/apps/build/customer-accounts.md
+locator: introduction
+quote: Customer account UI extensions are only supported on the new version of customer accounts.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dev_pos_ext
+source: https://shopify.dev/docs/apps/build/pos.md
+locator: Extending Shopify POS with UI extensions
+quote: With Shopify POS UI extensions, you can add custom functionality directly into Shopify's
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: dev_agents_ucp
+source: https://shopify.dev/docs/agents.md
+locator: Build commerce agents with UCP
+quote: Build unified agentic experiences that securely act on behalf of buyers with the [Universal Commerce Protocol (UCP)](https://ucp.dev) and Shopify's UCP-compliant MCP servers.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: sfn_3pl
+source: https://help.shopify.com/en/manual/fulfillment/shopify-fulfillment-network.md
+locator: introduction
+quote: You can use the Fulfillment Network to connect with third-party logistics providers (3PLs) that store your inventory and fulfill orders on your behalf.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: sfn_app
+source: https://help.shopify.com/en/manual/fulfillment/shopify-fulfillment-network.md
+locator: app note
+quote: Install Shopify Fulfillment Network from the Shopify App Store.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: labels_buy
+source: https://help.shopify.com/en/manual/fulfillment/fulfilling-orders/shipping-labels.md
+locator: introduction
+quote: You can buy, print, and manage discounted shipping labels from Shopify supported carriers directly in your Shopify admin.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: labels_eligibility
+source: https://help.shopify.com/en/manual/fulfillment/fulfilling-orders/shipping-labels.md
+locator: Getting started with shipping labels
+quote: Eligibility varies by carrier and country.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: labels_discounts_plan
+source: https://help.shopify.com/en/manual/fulfillment/fulfilling-orders/shipping-labels.md
+locator: Getting started with shipping labels
+quote: Discounts for shipping labels vary based on your Shopify plan.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: ins_us
+source: https://help.shopify.com/en/manual/fulfillment/fulfilling-orders/shipping-labels/shipping-insurance.md
+locator: introduction
+quote: If you ship orders from the United States and you buy shipping labels, then you can protect your orders by purchasing shipping insurance for up to $5,000 USD of insurance coverage.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: ins_shipsurance
+source: https://help.shopify.com/en/manual/fulfillment/fulfilling-orders/shipping-labels/shipping-insurance.md
+locator: introduction
+quote: is the insurance administrator for coverage that you buy through Shopify.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: ins_included
+source: https://help.shopify.com/en/manual/fulfillment/fulfilling-orders/shipping-labels/shipping-insurance.md
+locator: tip
+quote: then Shopify automatically includes up to $200 USD of shipping insurance on each eligible shipment at no extra cost.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: shop_app
+source: https://help.shopify.com/en/manual/online-sales-channels/shop.md
+locator: introduction
+quote: Shop is a shopping destination and delivery tracking app that's available to customers on iOS, Android,
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: shop_countries
+source: https://help.shopify.com/en/manual/online-sales-channels/shop.md
+locator: introduction
+quote: Shop is available in [countries where Shopify Payments is supported](/manual/payments/shopify-payments/supported-countries)
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: shop_sni
+source: https://help.shopify.com/en/manual/online-sales-channels/shop.md
+locator: note
+quote: Using this feature requires Shopify Network Intelligence to be enabled in your privacy settings.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: shopcamp_cac
+source: https://help.shopify.com/en/manual/online-sales-channels/shop/shop-campaigns.md
+locator: introduction
+quote: is an ads program that helps you acquire and convert customers at an average customer acquisition cost that you set. You're charged only when a customer converts, with no upfront budget or subscription fee.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: mc_app
+source: https://help.shopify.com/en/manual/online-sales-channels/marketplaces/marketplace-connect.md
+locator: introduction
+quote: you can connect your product catalog to multiple marketplaces, and you can manage and sync all your orders, listings, and inventory in your Shopify admin.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: mc_formerly_codisto
+source: https://help.shopify.com/en/manual/online-sales-channels/marketplaces/marketplace-connect.md
+locator: introduction
+quote: (formerly Codisto)
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: collective_def
+source: https://help.shopify.com/en/manual/online-sales-channels/shopify-collective.md
+locator: introduction
+quote: lets you connect with other Shopify stores and sell each other's products in Shopify.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: collective_free
+source: https://help.shopify.com/en/manual/online-sales-channels/shopify-collective.md
+locator: introduction
+quote: Shopify Collective is free to use with all Shopify plans, subject to store eligibility.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: collabs_def
+source: https://help.shopify.com/en/manual/promoting-marketing/collabs.md
+locator: introduction
+quote: Shopify Collabs helps businesses and creators connect using a marketplace-style app.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: collabs_payments
+source: https://help.shopify.com/en/manual/promoting-marketing/collabs.md
+locator: introduction
+quote: Businesses can use Shopify Collabs to send gifts or discount codes, track affiliate sales, and send payments to their affiliates.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: aud_eligibility
+source: https://help.shopify.com/en/manual/promoting-marketing/shopify-audiences.md
+locator: note
+quote: Shopify Audiences is available to eligible stores on the Shopify Plus plan that use Shopify Payments and are based in the United States or Canada.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: aud_def
+source: https://help.shopify.com/en/manual/promoting-marketing/shopify-audiences.md
+locator: introduction
+quote: Shopify Audiences is a tool that helps you to find new customers by generating custom audiences for advertising platforms.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: aud_export
+source: https://help.shopify.com/en/manual/promoting-marketing/shopify-audiences.md
+locator: introduction
+quote: Audiences are automatically exported to your digital advertising account, where you can use them to launch ad campaigns that target that audience.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: sidekick_def
+source: https://help.shopify.com/en/manual/ai-powered-tools/sidekick.md
+locator: introduction
+quote: You can use Sidekick, an AI-enabled commerce assistant in your Shopify admin, to get guidance, generate content, build apps, and complete tasks using everyday language.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: sidekick_review
+source: https://help.shopify.com/en/manual/ai-powered-tools/sidekick.md
+locator: introduction
+quote: Sidekick works within the context of your store regardless of technical skill, and presents changes for your review before applying them.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: apps_by_shopify
+source: https://help.shopify.com/en/manual/apps/apps-by-shopify.md
+locator: introduction
+quote: Apps that are made by Shopify are usually free and are supported by Shopify.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: apps_third_party_support
+source: https://help.shopify.com/en/manual/apps/apps-by-shopify.md
+locator: introduction
+quote: Apps that are developed by a third-party developer might have [app charges](/manual/your-account/manage-billing/billing-charges/types-of-charges/third-party-charges/app-charges) associated with them and are [supported by the third-party developer](/manual/apps/getting-support).
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: b2b_store_choice
+source: https://help.shopify.com/en/manual/b2b/getting-started.md
+locator: introduction
+quote: Before you start using Shopify B2B, you need to decide whether to create a blended store for both B2B and D2C customers and orders, or a dedicated B2B-only store.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: ca_def
+source: https://help.shopify.com/en/manual/customers/customer-accounts.md
+locator: introduction
+quote: Customer accounts let your customers sign in to view and manage their orders, edit profile information, and take key actions such as self-serve returns or reordering.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: ca_idp_plus
+source: https://help.shopify.com/en/manual/customers/customer-accounts.md
+locator: Sign-in experience
+quote: Alternatively, if you're on the Shopify Plus plan, then you can [connect your own identity provider](/manual/customers/customer-accounts/sign-in-options/identity-provider), which replaces the default sign-in experience for customer accounts.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: ca_passwordless
+source: https://help.shopify.com/en/manual/customers/customer-accounts.md
+locator: Sign-in experience
+quote: They enter their email address and receive a one-time 6-digit verification code. A password isn't required to sign in.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: bot_plus
+source: https://help.shopify.com/en/manual/checkout-settings/bot-protection.md
+locator: plan requirement
+quote: The bot protection feature is available only for merchants on a Shopify Plus plan.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: bot_fairness
+source: https://help.shopify.com/en/manual/checkout-settings/bot-protection.md
+locator: introduction
+quote: Bot protection acts as a fairness control by blocking known bots from your checkout, and slowing down bot activity so that your customers have the opportunity to purchase scarce products during flash sales.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: bot_contact_support
+source: https://help.shopify.com/en/manual/checkout-settings/bot-protection.md
+locator: Considerations for using bot protection
+quote: To activate bot protection for your online store, contact Shopify Plus Support.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: fraud_review
+source: https://help.shopify.com/en/manual/fulfillment/managing-orders/protecting-orders/fraud-analysis.md
+locator: introduction
+quote: You can use fraud analysis to identify orders that can be fraudulent and review them in your Shopify admin before you fulfill them.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: fraud_bank_decides
+source: https://help.shopify.com/en/manual/fulfillment/managing-orders/protecting-orders/fraud-analysis.md
+locator: introduction
+quote: However, the decision to reverse funds is made by the bank that issued the credit card, not by Shopify. Shopify does not cover charge reversals from banks.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: fraud_plan
+source: https://help.shopify.com/en/manual/fulfillment/managing-orders/protecting-orders/fraud-analysis.md
+locator: Considerations for using fraud analysis
+quote: are available on the [Grow plan or higher](/manual/intro-to-shopify/pricing-plans/plans-features), or if you use [Shopify Payments](/manual/payments/shopify-payments).
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: fraud_sp_blocks
+source: https://help.shopify.com/en/manual/fulfillment/managing-orders/protecting-orders/fraud-analysis.md
+locator: Considerations for using fraud analysis
+quote: Shopify Payments can block some [high-risk checkout attempts](#blocked-high-risk-checkout-attempts) before an order is created.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: routing_def
+source: https://help.shopify.com/en/manual/fulfillment/setup/order-routing.md
+locator: introduction
+quote: You can set up order routing to automatically assign orders to fulfillment locations based on configured rules.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: flow_def
+source: https://help.shopify.com/en/manual/fulfillment/managing-orders/protecting-orders/shopify-flow.md
+locator: introduction
+quote: is a free ecommerce automation platform that enables you to automate tasks and processes within your Shopify store and across your apps.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: flow_install
+source: https://help.shopify.com/en/manual/fulfillment/managing-orders/protecting-orders/shopify-flow.md
+locator: introduction
+quote: [install Shopify Flow](https://apps.shopify.com/flow) from the Shopify App Store
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md

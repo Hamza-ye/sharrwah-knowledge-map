@@ -1,0 +1,19 @@
+{
+ "n": 95,
+ "url": "https://help.zid.sa/change-order-status/",
+ "dir": "items/095-help.zid.sa",
+ "fetched_at": "2026-10-12T04:52:27Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/change-order-status/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 24696,
+ "cited_in": [
+  "ZD-S-1010",
+  "ZD-S-1011"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "c9f6f99affed1979ae5b6aa2b985e07fe2c28fb29792b45bcfd28837ffadae91",
+ "raw_ext": "html"
+}

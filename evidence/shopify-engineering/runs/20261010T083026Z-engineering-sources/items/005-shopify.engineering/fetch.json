@@ -1,0 +1,18 @@
+{
+ "n": 5,
+ "url": "https://shopify.engineering/technology-behind-navigating-recurring-payments-india",
+ "dir": "items/005-shopify.engineering",
+ "fetched_at": "2026-10-10T08:30:26Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://shopify.engineering/technology-behind-navigating-recurring-payments-india",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 58588,
+ "cited_in": [
+  "evidence/shopify-engineering/finding-aids/20261010-shopify-engineering-sources.tsv:E005"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "f4fdddd42bf0d675df8816b4225ff01c2a07cc0a65a9c7610d088bd95d5d49f7",
+ "raw_ext": "html"
+}

@@ -1,0 +1,462 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;"># Authorization
+
+
+![image.png](https://api.apidog.com/api/v1/projects/451700/resources/376582/image-preview)
+
+OAuth is a widely adopted authorization framework that allows you to consent to an App interacting with another on your behalf without having to reveal Merchant's sensitive data, such as passwords.
+
+If you are building integrations that require access to Salla on behalf of other Salla Merchants, you should utilize [OAuth 2.0 Protocol for Salla](https://salla.dev/blog/oauth-2-0-in-action-with-salla/). You can use OAuth in gaining access to Merchants' stores with either [Easy Mode](https://salla.dev/blog/oauth-2-0-in-action-with-salla/) or [Custom Mode](https://salla.dev/blog/oauth-2-0-in-action-with-salla/), using access tokens via the Apps built on [Salla Partners Portal](https://salla.partners/), which will be published on
+[Salla App Store](http://apps.salla.sa/).
+
+:::warning[]
+**Salla OAuth Format**
+All calls to the Merchant Public APIs require an Authorization header in this format:
+**Authorization:** Bearer `&lt;ACCESS_TOKEN&gt;`
+:::
+
+
+
+# What You will Need Before You Start:
+
+&lt;Steps&gt;
+  &lt;Step title="First Step"&gt;
+    Open and verify account on [Salla Partners](https://salla.partners/).
+  &lt;/Step&gt;
+  &lt;Step title="Second Step"&gt;
+    Either use a sample App you [created](https://salla.dev/blog/create-your-first-app-on-salla-developer-portal/) previously or build a new one from the scratch.
+  &lt;/Step&gt;
+  &lt;Step title="Third Step"&gt;
+    Choose an OAuth method, [Easy Mode](https://salladev.hashnode.dev/review-on-salla-merchants-apis#heading-generate-access-token-using-salla-app-and-demo-store) or Custom Mode Authorization.
+  &lt;/Step&gt;
+  &lt;Step title="Fourth Step"&gt;
+    Set up the scopes of your App to specify the needed access level.
+  &lt;/Step&gt;
+  &lt;Step title="Fifth Step"&gt;
+    Generate a [demo store](https://salla.dev/blog/how-to-test-your-app-using-salla-demo-stores/), so no sensitive data is compromised.
+  &lt;/Step&gt;
+  &lt;Step title="Sixth Step"&gt;
+    [Install](https://salla.dev/blog/how-to-test-your-app-using-salla-demo-stores/) the App on the demo store for real-world mockup test.
+  &lt;/Step&gt;
+&lt;/Steps&gt;
+
+&lt;!-- ## Main Requirements for Authentication
+
+TBD --&gt;
+
+:::info[Building an App on Salla?]
+The [Salla Apps Playbook](https://docs.salla.dev/playbook/introduction) walks through the full process, planning, building, publishing, and growing an app, end to end.
+:::
+
+# Salla OAuth Benefits
+
+&lt;CardGroup cols={3}&gt;
+  &lt;Card title="🔐 Authorized Access"&gt;
+Apps are given authorized access, which means they can only access resources that the Merchant has authenticated.
+  &lt;/Card&gt;
+  &lt;Card title="⛓️‍💥 Revoke Access"&gt;
+   The App's authorized access can be revoked at any time by the Merchant by disconnecting the App from the dashboard on Salla Partners.
+  &lt;/Card&gt;
+  &lt;Card title="⌛️ Time Limit"&gt;
+  OAuth 2.0 access tokens have a time limit. Merchant data will be compromised only until the access token is valid if the App encounters a security breach.
+  &lt;/Card&gt;
+&lt;/CardGroup&gt;
+
+# Salla’s OAuth2.0 Flow
+
+The **OAuth 2.0** authorization flow is the **initial step in installing an App on the Salla platform**. By requiring the merchant to grant permission for the App to access their data within specific scope, this process helps to ensure that the store's data is safe and private. The OAuth 2.0 authorization procedure can be started by one of the following URLs:
+
+&lt;CardGroup cols={2}&gt;
+  &lt;Card&gt;
+   The Authorization URL: &lt;CopyToClipboard&gt; `https://accounts.salla.sa/oauth2/auth` &lt;/CopyToClipboard&gt;
+  &lt;/Card&gt;
+  &lt;Card&gt;
+   The Installation URL: &lt;CopyToClipboard&gt; `https://s.salla.sa/apps/install/{app-id}` &lt;/CopyToClipboard&gt;
+  &lt;/Card&gt;
+&lt;/CardGroup&gt;
+
+## The authorization Flow
+
+The **OAuth 2.0** authentication flow for _installing an App on a Salla Store_ includes crucial URLs and endpoints that enable permission granting, code-to-token exchange, redirection, and token refreshing. The process involves the merchant's redirection to the **Salla Authorization Server**, login, granting permission, and obtaining an access token for API requests and accessing store data.
+
+The following table summarize these and endpoints:
+
+| URL                    | Description                                                                                                                                                                                                            |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Authorization Endpoint | &lt;CopyToClipboard&gt; `https://accounts.salla.sa/oauth2/auth` &lt;/CopyToClipboard&gt; &lt;br&gt; This URL initiates the process of obtaining the merchant's permission for the App to access their store data on Salla.               |
+| Token Endpoint         | &lt;CopyToClipboard&gt; `https://accounts.salla.sa/oauth2/token` &lt;/CopyToClipboard&gt; &lt;br&gt; After the merchant grants permission, the App exchanges the authorization code for an access token at this endpoint.                |
+| Redirect URI           | &lt;CopyToClipboard&gt;`https://client-app.com/callback`&lt;/CopyToClipboard&gt; &lt;br&gt; Once the authentication process is complete, the authorization server redirects the user's browser to the registered redirect URI.           |
+| Refresh Token Endpoint | &lt;CopyToClipboard&gt; `https://accounts.salla.sa/oauth2/token` &lt;/CopyToClipboard&gt; &lt;br&gt; If a refresh token is granted, this endpoint allows the client to obtain a new access token when the current one expires.           |
+| User Info Endpoint     | &lt;CopyToClipboard&gt;`https://accounts.salla.sa/oauth2/user/info`&lt;/CopyToClipboard&gt; &lt;br&gt; Once the authentication process is completed successfully, the Merchant details can be received via [this endpoint](api-5394260). |
+
+:::tip[]
+To use the Authorization Endpoint **&lt;CopyToClipboard&gt;https://accounts.salla.sa/oauth2/auth&lt;/CopyToClipboard&gt;** in your code, you will typically need to make an HTTP request to that URL.
+:::
+
+In addition to the base URLs mentioned above, **OAuth 2.0 also uses query parameters** to pass information during the authentication process. These query parameters serve different purposes and are included in the URLs when making requests to the authorization and token endpoints. Here are some common query parameters used in OAuth 2.0:
+
+| Query Parameter | Description                                                                                                                           | Example                                                              |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| `client_id`     | Identifies the client application making the request, which values can be fetched from your application on the Salla Partners Portal. | `1311508470xxx`                                                      |
+| `client_secret` | Identifies the client application making the request, which values can be fetched from your application on the Salla Partners Portal. | `362985662xxx`                                                       |
+| `response_type` | Specifies the desired response type from the authorization server.                                                                    | &lt;CopyToClipboard&gt;`code`&lt;/CopyToClipboard&gt;                            |
+| `redirect_uri`  | Indicates the URI for user redirection after completing the authorization process.                                                    | &lt;CopyToClipboard&gt;https://your-app.com/callback-url&lt;/CopyToClipboard&gt; |
+| `scope`         | Specifies the requested permissions or access levels.                                                                                 | &lt;CopyToClipboard&gt;`offline_access`&lt;/CopyToClipboard&gt;                  |
+| `state`         | Used to maintain state between the authorization request and the callback to prevent cross-site request forgery attacks.              | `1234xxxx`                                                           |
+| `code`          | The authorization code returned by the authorization endpoint.                                                                        | xxxxxxxx                                                             |
+| `grant_type`    | Specifies the type of grant being used to authenticate the client.                                                                    | &lt;CopyToClipboard&gt;`authorization_code`&lt;/CopyToClipboard&gt;              |
+
+&lt;Container&gt;
+
+#### Including the client ID as a query parameter
+
+It is common practice **to include the client ID as a query parameter in the authorization URL** for OAuth 2.0 authentication. This inclusion allows the authorization server _to associate the authentication request with the specific client_, ensuring client identification and authentication during the process. Here's an example of how the client ID can be included in the authorization URL:
+
+&lt;CopyToClipboard&gt;
+```json
+https://accounts.salla.sa/oauth2/auth?client_id=your_client_id&amp;response_type=code&amp;redirect_uri=https://client-app.com/callback&amp;scope=read write&amp;state=random_value
+```
+&lt;/CopyToClipboard&gt;
+
+In the example above, `client_id=your_client_id` is appended to the authorization URL, where _your_client_id_ should be replaced with the actual client ID issued by the authorization server.
+
+:::check[]
+Including the **client ID as a query parameter** in the authorization URL ensures authentication and identification of the client during **OAuth 2.0**. _If the App has been previously approved_, _scope approval steps may be skipped_, streamlining the process.
+:::
+
+&lt;/Container&gt;
+    
+## The installation URL
+
+On the other hand, **the installation URL** allows for the immediate installation of the App to the merchant store. Unlike the typical authorization URL, the installation URL simplifies the app installation process by providing a direct URL with the `app-id` as a parameter. This URL can be used to initiate the app installation process. When the merchant clicks on the installation URL, the App will be automatically installed into their Salla Store.
+
+The following diagram explains the flow of OAuth 2.0 in Salla, which will eventually result in access token generation.
+
+&lt;!-- focus: true--&gt;
+
+![OAuth](https://cdn.salla.network/docs/MerchantAPI/Intro-Auth-04.jpeg)
+
+# Types of OAuth 2.0 in Salla
+
+On [Salla Partners Portal](https://salla.partners/), and when you are creating your [App](https://salla.dev/blog/create-your-first-app-on-salla-developer-portal/), inside the App page details within the App Keys section, you will be provided with two methods for the OAuth protocol:
+
+- **Easy Mode**, which is a simplified version of the protocol that requires minimal setup.
+- **Custom Mode**, which allows for more advanced, manual configuration and the use of callback URLs.
+
+&lt;!--focus: false --&gt;
+
+![Modes Image](https://cdn.salla.network/docs/MerchantAPI/Intro-Auth-05.png?v)
+
+## Easy Mode (Recommended)
+
+&lt;!--focus: false --&gt;
+&lt;!-- ![Easy Mode Image](https://i.ibb.co/vHZ4tZS/Clean-Shot-2022-02-13-at-12-04-32-2x.png) --&gt;
+
+One of the foremost options of authorization via OAuth 2.0 in [Salla Partners](https://salla.partners) is Easy Mode Authorization. Utilizing Salla’s easy mode option, you can get the “[access token](https://docs.salla.dev/doc-421413#app-store-authorize)” in one step automatically. It allows you to listen to the event, [`app.store.authorize`](https://docs.salla.dev/doc-421413#app-store-authorize), and then the process of generating the “[access token](https://docs.salla.dev/doc-421413#app-store-authorize)” will be handled automatically at Salla‘s side back to you via the [Webhook URL](https://docs.salla.dev/doc-421119#set-up-troubleshooting-environment) specified in the Webhooks/Notifications your of your App.
+
+By selecting the Easy Mode Authorization option, Salla will handle everything, including extracting the authorization code and providing the client id and secret key together with the auth code to generate an access token. In the end, you will receive all of the above data in the form of a payload that contains a new access token generated for you, **as the life validity of access tokens with Salla is 2 weeks**.
+
+:::check[]
+Find more on how to further setup the easy mode by reading [this article](https://salladev.hashnode.dev/review-on-salla-merchants-apis#heading-generate-access-token-using-salla-app-and-demo-store).
+:::
+
+### Generate Access Token using Salla App and Demo Store
+
+The access token can be obtained from a [demo store](https://salla.dev/blog/how-to-test-your-app-using-salla-demo-stores/) using a Salla App where both are linked to your Partners Account .
+
+&lt;Steps&gt;
+  &lt;Step title="Salla Partners Dashboard | Application"&gt;
+
+On the Partners dashboard, go to Apps and choose any App you developed.
+
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXe5UNeVgRpvVI5W3bfT9gdL0uJ-DFiG2AXRJIqIfEgR2CkHbQS73RzJJGL2KDCBo_4o0Yu6CdmMYlalP4tqlFcQKY5riPb5o_KVFu9hqGzw_GyePXh6tKCyh3trBRpatJc9lkNjS-P68FE8Dv4BtUMlGmoi?key=z6sib4CQioMEBm7IjT__cQ)
+
+  &lt;/Step&gt;
+  &lt;Step title="App Scopes Setup"&gt;
+
+Set up the App Scope and check the boxes that matches your app scope, such as Product, Order and Webhooks, then click **Update Scope**.
+
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdQ2K280YNeorPLHNQp7lq0hhhkw1dbOowi6kc6huOhvChYLFDBujb10Xf1IsnRalaJd1-h-m-0Ze-wgnRDpp3iaIa7O7aOVPOdzcrVSxt5grKF8GcL7E4X8Yz-2ChQt62X0gsC73ZRMiO29K1nR_-JQ3Ks?key=z6sib4CQioMEBm7IjT__cQ)
+
+  &lt;/Step&gt;
+  &lt;Step title="Webhook Setup"&gt;
+
+Set up the App Webhooks details using [Webhook.site](http://Webhook.site). Copy the Webhook link from the page.
+
+:::warning[]
+It is best to use your own webhook, since [webhook.site](https://webhook.site) is only for demonstration purposes.
+:::
+
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeldb1eUNQos3v610U-6P1A6RRUDzlz6iy30S6OKCHGk5vgz602XfBFrUtI-_DSqDnNTqZMFHY2KKZJaR_J2vjw5H4sV02o3BNADRp8dzYBCwnF8O_dMWJUDD5LfesXDQRn8DIeKzmDirwAjan8GSo8eeI_?key=z6sib4CQioMEBm7IjT__cQ)
+
+  &lt;/Step&gt;
+  &lt;Step title="Add Webhook on Salla Partners"&gt;
+
+Then add it as a Webhook URL for the App.
+
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfSMUy-2TdzXVS60Pnx4SEBqB3xBsysk02hYVXcS-6gBTUGRG5qFm1YN6P7swWC4q4vPe023dEcAAGxnz2sbjJbF2vLZkwI6Rzb9zqfK50-kNSWLSWVMKpFVNO40BXam0PBEdZNU-IrO1WhQm9AwqqNQWY?key=z6sib4CQioMEBm7IjT__cQ)
+
+  &lt;/Step&gt;
+  &lt;Step title="Install App using Demo Stores"&gt;
+
+Scroll down to the Test App section and install the App on a demo store by clicking the **Install App** button next to the demo store.
+
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXd_LGbQo-8JPNHi6-3XVLzGeB0jJ2FrXX4zBNoQDrAj2qEdmYkeV_qNJIxuWWmM1zlERTmqigPsK0t1htmzIQ4QfU4GyUkk_JAaIKZut15TzlgDB7ieNhAg9TB7Xb9e_1UxolN-qPRZP_JPk4j_8KEa5XC_?key=z6sib4CQioMEBm7IjT__cQ)
+
+  &lt;/Step&gt;
+  &lt;Step title="App Approval as a Store Owner"&gt;
+
+This will redirect you to the store dashboard page where you can approve the App installment. Approve the installment request to proceed.
+
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdkw7LCQhjDa4L4P7DcPpKjFBz1tUZbASmPw031UgvU6fEZ6I3PTHzjSosWJiND0nwaZtCRArYTZXz9If3nZteMEQ6OPpzsS1Csp-XYmAtYaKgMt54uiqT9TFinWtEQvrYGS3sD-ekmiCtPHqB9zI9Ig4Jx?key=z6sib4CQioMEBm7IjT__cQ)
+
+  &lt;/Step&gt;
+    
+      &lt;Step title="Retrieve Access Token from Webhook"&gt;
+
+After that, go back to the [Webhook.site](http://Webhook.site) and get the Access Token from the `app.store.authorize` event.
+
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdhWejEXoVP2Q0sSfhsYkG4h9oZPja9n_e_b-u8gE_3Mo8ZI8DGe0L-Y-9KoMiCyYI8rkp84VhT5b6B6txXyyN3hp3iAoRRfUxrYpGVBUOoUD0Xd9SEvjQBsRM5CZR1bh2Wjs2Dwklq7q8Z6A__l-V1Ef8?key=z6sib4CQioMEBm7IjT__cQ)
+
+  &lt;/Step&gt;
+    
+&lt;/Steps&gt;
+
+&lt;br&gt;
+
+:::tip[App Update]
+In the easy mode, when the Merchant updates the app, Salla sends you the [`app.updated`](https://docs.salla.dev/doc-421413?nav=01HNA8M216X4HFNGWM9TWSTCKQ) event. After that, Salla sends you the [`app store.authorized`](https://docs.salla.dev/doc-421413?nav=01HNA8M216X4HFNGWM9TWSTCKQ) event, which provides you with the new access token and refresh token. This information will be delivered to you via webhook. Accordingly, you are required to update the access token and refresh token in your database.
+:::
+
+ 
+:::warning
+The `expires` variable is returned as a unix timestamp value for the app event `app.store.authorize`.
+:::
+
+
+## Custom Mode
+
+When implementing an OAuth flow or any other third-party API that needs to redirect to the App after authentication or authorization, a callback URL should be set. The App will use this URL to reroute back to the App after the login and App scopes' permission procedures are finished. This cycle of authentication is called Custom Mode authentication.
+
+### Custom Mode Use Cases:
+
+&lt;CardGroup cols={3}&gt;
+  &lt;Card&gt;
+    App for online grocery stores that redirect users back to the store after they log in with their Google account.
+  &lt;/Card&gt;
+  &lt;Card&gt;
+   App for onlines store that redirects customers back to the product page after they sign up for a newsletter
+  &lt;/Card&gt;
+  &lt;Card&gt;
+  App for bookstores that redirects customers back to their reading list after they rate a book. 
+  &lt;/Card&gt;
+&lt;/CardGroup&gt;
+
+There are two steps that we need to follow in order to successfully set up a Custom Mode OAuth in Salla:
+
+### 1. User Authorization
+
+A Merchant has to authorize your App, with the set of App scopes, to be able to proceed with the process of obtaining the access token. Direct the Merchant to the callback URL you used while setting up your App on [Salla Partner Portal](https://salla.partners). If this is the first time that you are requesting authorization from a Merchant, the merchant will be asked to log in to his/her Salla Store.
+
+To obtain the access token for your App, the Merchant needs to authorize it with the App scopes.
+Once the Merchant has logged in to their Salla Store account, they will be prompted by Salla to authorize access to your App. The merchant will be asked to grant authorization for your App to access their store data with the defined scopes.
+
+&lt;!--
+focus: false
+--&gt;
+
+![Intro to OAuth image](https://cdn.salla.network/docs/MerchantAPI/Intro-Auth-01-02.png)
+
+&lt;br&gt;
+
+If the access has been authorized, the user will be redirected to the Callback URL with the authorization code in the code query parameter, which you can fetch to continue the process of obtaining the access token:
+
+&lt;CopyToClipboard&gt;
+`https://yourapp.com/callback?code={code-value}&amp;scope={app-scopes}+offline_access&amp;state={state-value}
+`
+&lt;/CopyToClipboard&gt;
+
+### 2. Access Token Generation
+
+When the Merchant authorizes the App, Salla returns the Merchant to your Callback URL with a code parameter containing an authorization code. Use the code in your access token request, which is a `POST` request with the required parameters to the token endpoint.
+
+&lt;Tabs&gt;
+  &lt;Tab title="Access Token Request"&gt;
+
+Easily run the request straight from Postman by providing the required data to generate an access token
+
+&lt;br&gt; [![Run in Postman](https://run.pstmn.io/button.svg)](https://www.postman.com/salla-app/workspace/salla-e-commerce-platform/request/17687195-9d1a55a9-514d-43ef-abe9-4870e266b696?ctx=documentation)
+
+:::warning
+Easy Mode is the only way allowed for published apps on the [Salla App Store](https://apps.salla.sa). Since Postman uses custom mode, you can implement that in your app for testing purposes only.
+:::
+
+  &lt;/Tab&gt;
+
+  &lt;Tab title="Access Token Response"&gt;
+
+```json
+{
+    "access_token": "ory_at_xqk9wODumvYyX8pIJVR-K2awBTsgE2IRZvRDOCHZ03Y.fkxXqRAmLEY_vZZnqD-iY67pvoZvPurYxEm-SoFl9MM",
+    "expires": 1209599,
+    "refresh_token": "ory_rt_nXjleNBPjVvTvch3SGJwtv28HOTX6FetRewPSrNJkq0.-M1SGikK7r4or6RjdiH_agZZBp22mW8EGdOZh-PUsRM",
+    "scope": "settings.read customers.read_write orders.read_write carts.read branches.read_write categories.read_write brands.read_write products.read_write webhooks.read_write payments.read taxes.read_write specialoffers.read_write shippings.read_write marketing.read_write metadata.read_write offline_access",
+    "token_type": "bearer"
+}
+```
+
+  &lt;/Tab&gt;
+&lt;/Tabs&gt;
+
+### Body Definition
+
+The following enlists the values that are sent to the User Authorization endpoint to generate an access token:
+
+&lt;DataSchema id="1447895" /&gt;
+
+&lt;br&gt;
+
+:::highlight gray
+
+&lt;h3&gt;Important Notes&lt;/h3&gt;
+
+|                                                                                                                                                                                                                                                        |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| • Access tokens expire after 2 weeks (14 days).                                                                                                                                                                                                        |
+| • If you want to generate the refresh token, set the scope value as `offline_access`. E.G: `scope = offline_access`.                                                                                                                                   |
+| • The `expires` variable is returned as `seconds` timestamp value                                                                                                                                                                                      |
+| • Upon obtaining the access token, developers can utilize the [User Info endpoint](https://docs.salla.dev/api-5394260) URL, `https://accounts.salla.sa/oauth2/user/info`, to retrieve the Merchant details and store them alongside the access tokens. |
+
+:::
+
+### Refresh Access Token
+
+A typical reason for refreshing a token is that the original access token has expired, which lasts for only 14 days (2 weeks). If you would like to request a new access token, you may do so by sending Salla’s authorization server a token refresh request. Refresh tokens are single-use only, meaning they become invalid after the first use.
+
+Every time a developer uses a refresh token to request a new access token, a new refresh token is issued, and the previous token is invalidated. This mechanism adds an extra layer of security, making it more difficult for attackers to use stolen refresh tokens. A refresh token lasts for 1 month, and attempting to use it twice invalidates the associated access token.
+
+&lt;!--
+:::highlight gray 📝
+
+### Important Notes
+
+&lt;CardGroup cols={2}&gt;
+  &lt;Card title=""&gt;
+Refresh tokens expire after 1 month. The latest refresh token must always be used for the next refresh request.&nbsp;
+  &lt;/Card&gt;
+  &lt;Card title=""&gt;
+The `expires` variable is returned as `seconds` timestamp value
+  &lt;/Card&gt;
+&lt;/CardGroup&gt;
+
+::: --&gt;
+
+:::danger[Warning: Refresh Token Reuse]
+Reusing refresh tokens in parallel processes or making multiple simultaneous refresh requests can lead to complete authentication failure. When a refresh token is used more than once, Salla's OAuth server will:
+
+- Invalidate the refresh token
+- Revoke all access tokens obtained with it
+- Reject all subsequent authentication attempts using that refresh token
+- Requires the Merchant to reinstall the application from the [Salla App Store](https://apps.salla.sa) for you to regain access to their data.
+
+This security measure is implemented in accordance with [RFC 6819 Section 5.2.2.3](https://datatracker.ietf.org/doc/html/rfc6819#section-5.2.2.3) to prevent replay attacks.
+
+&lt;TipGood&gt; **Recommended Implementation**: To prevent refresh token reuse in your application, implement a mutex/locking mechanism for token refresh operations &lt;/TipGood&gt;
+
+:::
+
+### Body Definition
+
+The following enlists the values that are sent to the Token endpoint to Refreshing Access Tokens:
+
+&lt;Tabs&gt;
+  &lt;Tab title="Refresh Access Token Request"&gt;
+ 
+Easily run the request straight from Postman by providing the required data to generate an access token
+
+&lt;br&gt; [![Run in Postman](https://run.pstmn.io/button.svg)](https://www.postman.com/salla-app/workspace/salla-e-commerce-platform/request/17687195-852c447f-1cd0-4124-af80-560e41df918d?ctx=documentation)
+
+  &lt;/Tab&gt;
+  &lt;Tab title="Refresh Access Token Response"&gt;
+    
+```json
+{
+    "access_token": "ory_at_xqk9wODumvYyX8pIJVR-K2awBTsgE2IRZvRDOCHZ03Y.fkxXqRAmLEY_vZZnqD-iY67pvoZvPurYxEm-SoFl9MM",
+    "expires_in": 1209599, //this is returned as `seconds` timestamp value
+    "refresh_token": "ory_rt_nXjleNBPjVvTvch3SGJxxxx",
+    "scope": "settings.read customers.read_write orders.read_write carts.read branches.read_write categories.read_write brands.read_write products.read_write webhooks.read_write payments.read taxes.read_write specialoffers.read_write shippings.read_write marketing.read_write metadata.read_write offline_access",
+    "token_type": "bearer"
+}
+```
+  &lt;/Tab&gt;
+
+&lt;/Tabs&gt;
+
+&lt;br&gt;
+
+&lt;CardGroup cols={2}&gt;
+    
+#### Important Notes
+    
+  &lt;Card &gt;
+Refresh tokens expire after 1 month. The latest refresh token must always be used for the next refresh request.&nbsp;
+  &lt;/Card&gt;
+  &lt;Card &gt;
+The `expires` variable 
+  &lt;/Card&gt;
+&lt;/CardGroup&gt;
+
+# Access Token Usage Example
+
+Now you may use the access token to make requests, on behalf of the Merchant, from the resource server via the API _(base endpoint url: &lt;CopyToClipboard&gt;https://api.salla.dev/admin/v2/&lt;/CopyToClipboard&gt;)_. For more information about making API requests, the full API documentation is available [here](https://docs.salla.dev/doc-421117).
+
+&lt;!-- After obtaining the Merchant's authorization and upon receiving the access token, we can put that into practical example by consuming any of [Salla's API endpoints](https://docs.salla.dev/docs/merchant/fccf7c395e5d2-get-started).  --&gt;
+
+&lt;!-- If the access token isn't working, this might be because it expired and is invalid to be used unless refreshed within a 1-month time period.  --&gt;
+
+With the access token and the authroized App scopes to the App, you may start consuming any of [Salla's API endpoints](https://docs.salla.dev/doc-421117), such as fetching a list of [brands](https://docs.salla.dev/api-5394213)
+
+[&lt;img src="https://run.pstmn.io/button.svg" alt="Run In Postman" style="width: 128px; height: 32px;" /&gt;](https://god.gw.postman.com/run-collection/17687195-dc776b52-482b-4dec-ae7b-9659b71a62aa?action=collection%2Ffork&amp;source=rip_markdown&amp;collection-url=entityId%3D17687195-dc776b52-482b-4dec-ae7b-9659b71a62aa%26entityType%3Dcollection%26workspaceId%3D0e589b64-253f-44c2-b947-7508724ec833)
+
+# IP Whitelisting
+
+[IP whitelisting](https://salla.dev/blog/secure-your-apps-with-the-trusted-ip-address-now/) is a security feature that restricts access to an App to only the IP addresses that are included on the whitelist. This can be used to restrict unwanted access and protect critical data from potential compromise.
+
+It works by denying all IP addresses, except for those specifically listed as "whitelisted," thereby limiting the access to only approved users. This way, developers can better protect their private data from potential outside threats, such as hackers and malware, by reducing the attack surface area.
+
+IP Whitelisting can also be used for other purposes such as controlling bandwidth usage or limiting access to certain services. You may reach the App setup page by going to the Partners Dashboard and selecting the "My Apps" tab:
+
+&lt;!--focus: false --&gt;
+
+![Image1](https://cdn.salla.network/docs/MerchantAPI/Intro-Auth-02.png)
+
+From this page, you can add the permitted IP addresses in the following area, which is labeled "App Trusted IPs":
+
+&lt;!--focus: false --&gt;
+
+![image2](https://cdn.salla.network/docs/MerchantAPI/Intro-Auth-03.png)
+
+&lt;br&gt;
+
+:::note
+Get additional information about App Trusted IPs by visiting **[this article](https://salla.dev/blog/secure-your-apps-with-the-trusted-ip-address-now/).**
+:::
+
+# Open-Source Libraries
+
+Salla developed various clients and OAuth-specific libraries, such as:
+
+&lt;CardGroup cols={3}&gt;
+  &lt;Card href="https://github.com/SallaApp/oauth2-merchant"&gt;
+PHP Client | OAuth2 Merchant
+  &lt;/Card&gt;
+  &lt;Card href="https://github.com/SallaApp/passport-strategy"&gt;
+JavaScript Client | Passport Strategy
+  &lt;/Card&gt;
+  &lt;Card href="https://github.com/SallaApp/laravel-starter-kit/blob/master/app/Http/Controllers/OAuthController.php"&gt;
+Laravel Starter Kit | OAuth Controller
+  &lt;/Card&gt;
+&lt;/CardGroup&gt;
+
+These open-source libraries, powered by Salla, are here to assist in bootstrapping your development journey with Salla by providing code snippets easily accessible, readable, and maintainable by Salla’s own experts as well as the Global Community of developers.
+
+</pre></body></html>

@@ -1,0 +1,153 @@
+concern_id	terms	description	statements	gaps	area_id	action	reason
+SH-C-001	Account; Store Owner; Your store	Shopify account and Store Owner	8	1	SH-A-01	set aside	account, sign-in, staff and support; not payment methods or money flows
+SH-C-007	Security; Continue with Google; Sign in with passkey; two-step authentication	Sign-in and account security	8	1	SH-A-01	set aside	account, sign-in, staff and support; not payment methods or money flows
+SH-C-008	Trust; identity-verification; Profile Assessment	Identity verification of the people behind an account	8	1	SH-A-01	set aside	account, sign-in, staff and support; not payment methods or money flows
+SH-C-009	Users; Staff Accounts; Additional staff accounts; Users and permissions	Users and staff accounts	22	1	SH-A-01	set aside	account, sign-in, staff and support; not payment methods or money flows
+SH-C-010	Roles; permissions; Custom user groups	Roles and permissions	15	1	SH-A-01	set aside	account, sign-in, staff and support; not payment methods or money flows
+SH-C-011	Collaborator access; Invite third-party collaborators	Collaborators (outside parties with store access)	9	0	SH-A-01	set aside	account, sign-in, staff and support; not payment methods or money flows
+SH-C-155	24/7 support; Free Shopify Academy courses; Shopify Learn; Shopify Community	Merchant support and learning	3	3	SH-A-01	set aside	account, sign-in, staff and support; not payment methods or money flows
+SH-C-003	Organization; OrganizationSettings; Free expansion stores	Organization and its stores	9	3	SH-A-02	set aside	organization and business entities; not payment methods or money flows
+SH-C-004	Business entity; Individual; Company; Non-Profit; Add business entity	Business entities (the registered business or individual a store operates as)	25	0	SH-A-02	set aside	organization and business entities; not payment methods or money flows
+SH-C-005	Selling with multiple entities; SELECT_EXISTING_LEGAL_ENTITY	Selling with multiple entities	12	1	SH-A-02	set aside	organization and business entities; not payment methods or money flows
+SH-C-015	Plan; Basic; Grow; Advanced; Plus; basic; professional; unlimited; shopify_plus	Subscription plans	19	1	SH-A-04	set aside	Shopify's own plans and charges to the merchant; not which methods buyers pay by or where buyers' money goes
+SH-C-016	Billing; Subscription charges; Platform fees; Other fees; App fees; Billing history	Shopify bills (charges to the merchant, invoices, payment of bills)	24	1	SH-A-04	set aside	Shopify's own plans and charges to the merchant; not which methods buyers pay by or where buyers' money goes
+SH-C-017	Taxes; Shopify billing and tax responsibilities	Taxes on Shopify's own charges	7	2	SH-A-04	set aside	Shopify's own plans and charges to the merchant; not which methods buyers pay by or where buyers' money goes
+SH-C-018	Third-party transaction fees; Transaction fees; Transaction fees discount	Transaction fees on sales through payment providers other than Shopify Payments	8	1	SH-A-04	set aside	fees charged on third-party providers' sales; fees are not asked by the question
+SH-C-019	App fees; Shopify Billing Resource; app_subscriptions/update; Manage app billing; Approve app charges	App charges billed through Shopify	21	0	SH-A-04	set aside	Shopify's own plans and charges to the merchant; not which methods buyers pay by or where buyers' money goes
+SH-C-201	Shopify Plus Terms; Switch to 3-year term; Renew on a 3-year term; PlusContractDetails; PlusContractTerms; RenewalsQuery; contractmanagement	Shopify Plus contract terms and renewals	6	3	SH-A-04	set aside	Shopify's own plans and charges to the merchant; not which methods buyers pay by or where buyers' money goes
+SH-C-020	Products; Products and collections; read_products; products/create	Products and variants	35	1	SH-A-05	set aside	products and selling formats; not payment methods
+SH-C-021	Collections; collections/create	Collections	17	2	SH-A-05	set aside	products and selling formats; not payment methods
+SH-C-038	Merchandise with Shopify Combined Listings	Combined listings	2	3	SH-A-05	set aside	products and selling formats; not payment methods
+SH-C-185	Dropshipping apps; Print on demand (POD) apps; Wholesale apps	Product sourcing (dropshipping, print on demand, wholesale)	6	1	SH-A-05	set aside	products and selling formats; not payment methods
+SH-C-186	Subscription apps; selling_plan_groups/create; subscription_contracts/create	Subscriptions and selling plans	22	1	SH-A-05	set aside	products and selling formats; not payment methods
+SH-C-188	Upsell and bundle apps; Product bundle apps; Pre-order apps	Upsell, cross-sell, bundles and pre-orders	6	1	SH-A-05	set aside	products and selling formats; not payment methods
+SH-C-189	Custom product apps; Product variant apps; Product configuration	Custom products and product options	4	1	SH-A-05	set aside	products and selling formats; not payment methods
+SH-C-190	Digital goods and service apps; Event booking apps; NFT and tokengating apps	Digital goods, events and token-gating	7	1	SH-A-05	set aside	products and selling formats; not payment methods
+SH-C-022	Inventory; Inventory management; inventory_levels/update; read_inventory	Inventory	30	2	SH-A-06	set aside	inventory and locations; not payment methods
+SH-C-023	Transfers; Purchase orders; inventory_transfers; inventory_shipments	Inventory transfers, shipments and purchase orders	42	2	SH-A-06	set aside	inventory and locations; not payment methods
+SH-C-024	Locations; Location; Inventory locations	Locations	19	2	SH-A-06	set aside	inventory and locations; not payment methods
+SH-C-039	Customers; customers/create; read_customers	Customers	37	1	SH-A-08	set aside	customers and customer accounts; not payment methods
+SH-C-040	Segments; Create customer segments; segments/create	Customer segments	9	2	SH-A-08	set aside	customers and customer accounts; not payment methods
+SH-C-041	Customer accounts; CustomerAccounts; Customer Account API	Customer accounts	26	2	SH-A-08	set aside	customers and customer accounts; not payment methods
+SH-C-042	Customer authentication; Third-party identity providers; Multipass; Manage identity providers	Customer authentication with third-party identity providers and Multipass	6	2	SH-A-08	set aside	customers and customer accounts; not payment methods
+SH-C-043	customers_email_marketing_consent/update; customers_marketing_consent/update; Marketing double opt-in	Customer marketing consent (email, SMS, WhatsApp)	7	1	SH-A-08	set aside	customers and customer accounts; not payment methods
+SH-C-153	Shopify Inbox; Chat with customers	Shopify Inbox (customer chat)	2	3	SH-A-08	set aside	customers and customer accounts; not payment methods
+SH-C-165	Customer account UI; customer-account.order-status.block.render	Customer account UI extensions	4	1	SH-A-08	set aside	customers and customer accounts; not payment methods
+SH-C-192	Helpdesk apps; FAQ apps; Chat apps	Customer support, helpdesk and FAQ	5	1	SH-A-08	set aside	customers and customer accounts; not payment methods
+SH-C-044	B2B; Companies; companies/create; read_companies	B2B companies, locations and contacts	30	2	SH-A-09	set aside	B2B companies and payment terms for invoicing; not which payment providers or methods
+SH-C-045	payment_terms/create; read_payment_terms; Set payment terms	Payment terms	12	2	SH-A-09	set aside	B2B companies and payment terms for invoicing; not which payment providers or methods
+SH-C-034	Policies; read_legal_policies; Store policies	Store policies	10	1	SH-A-10	set aside	cart, checkout pages and their customization; not which payment methods or providers
+SH-C-046	Cart; carts/create; unauthenticated_read_checkouts	Cart	10	1	SH-A-10	set aside	cart, checkout pages and their customization; not which payment methods or providers
+SH-C-047	Checkout; World's best-converting checkout; checkouts/create; High volume checkout	Shopify Checkout	16	1	SH-A-10	copy	
+SH-C-048	Checkout branding; Checkout and accounts configurations; Checkout customization	Checkout branding and checkout configuration	18	2	SH-A-10	set aside	cart, checkout pages and their customization; not which payment methods or providers
+SH-C-049	Checkout UI; Post-purchase UI; purchase.checkout.block.render	Checkout UI extensions	10	0	SH-A-10	set aside	cart, checkout pages and their customization; not which payment methods or providers
+SH-C-050	Abandoned checkouts; Abandoned checkout recovery; AbandonedCheckouts	Abandoned checkouts and recovery	8	2	SH-A-10	set aside	cart, checkout pages and their customization; not which payment methods or providers
+SH-C-051	Bot protection; CommerceProtection	Bot protection	9	2	SH-A-10	set aside	cart, checkout pages and their customization; not which payment methods or providers
+SH-C-052	Cart and Checkout Validation; read_validations	Cart and checkout validation (Shopify Function)	7	1	SH-A-10	set aside	cart, checkout pages and their customization; not which payment methods or providers
+SH-C-053	Cart Transform; Cart transformer; read_cart_transforms	Cart transform (Shopify Function)	10	1	SH-A-10	set aside	cart, checkout pages and their customization; not which payment methods or providers
+SH-C-054	Orders; orders/create; read_orders; Order	Orders	32	1	SH-A-11	set aside	orders, edits, refunds and returns; not which methods are offered or where funds go
+SH-C-055	Drafts; draft_orders/create; read_draft_orders	Draft orders	22	2	SH-A-11	set aside	orders, edits, refunds and returns; not which methods are offered or where funds go
+SH-C-056	orders/edited; requested_order_edit/created; read_order_edits; Edit orders	Order editing and edit requests	13	2	SH-A-11	set aside	orders, edits, refunds and returns; not which methods are offered or where funds go
+SH-C-057	refunds/create; Refund; Refund to original payment	Refunds	5	1	SH-A-11	set aside	orders, edits, refunds and returns; not which methods are offered or where funds go
+SH-C-058	returns/request; read_returns; Return; Return reasons	Returns and exchanges	21	1	SH-A-11	set aside	orders, edits, refunds and returns; not which methods are offered or where funds go
+SH-C-061	Admin print action; print-action	Order and product printing (packing slips, print actions)	7	2	SH-A-11	set aside	orders, edits, refunds and returns; not which methods are offered or where funds go
+SH-C-060	Order Routing Location Rule; fulfillment_orders/order_routing_complete	Order routing	5	2	SH-A-12	set aside	shipping and fulfillment; not payment methods
+SH-C-114	Shipping and delivery; profiles/create; read_shipping	Shipping profiles, zones and rates	14	1	SH-A-12	set aside	shipping and fulfillment; not payment methods
+SH-C-115	3rd-party calculated shipping rates; DeliveryCarrierService; Shipping rate apps	Third-party calculated shipping rates	8	2	SH-A-12	set aside	shipping and fulfillment; not payment methods
+SH-C-116	Shipping labels; Buy and print shipping labels; Shipping discounts; Shipping fees	Shopify Shipping (shipping labels)	20	1	SH-A-12	set aside	shipping and fulfillment; not payment methods
+SH-C-117	Shipping insurance*; Insurance premiums	Shipping insurance	7	1	SH-A-12	set aside	shipping and fulfillment; not payment methods
+SH-C-118	fulfillment_orders/split; fulfillments/create; Fulfill and ship; Shipping and fulfillment	Fulfillment orders and fulfillments	29	1	SH-A-12	set aside	shipping and fulfillment; not payment methods
+SH-C-119	read_fulfillments; FulfillmentService; External 3PL transaction fees; Third-party logistics (3PL) apps	Fulfillment services and third-party logistics	32	1	SH-A-12	set aside	shipping and fulfillment; not payment methods
+SH-C-120	Shopify Fulfillment Network; Shopify Logistics; ShopifyFulfillmentNetwork	Shopify Fulfillment Network and Shopify Logistics	6	1	SH-A-12	set aside	shipping and fulfillment; not payment methods
+SH-C-121	Local pick up; Local delivery; read_product_pickup_locations	Local pickup and local delivery	8	2	SH-A-12	set aside	shipping and fulfillment; not payment methods
+SH-C-122	Delivery Customization; read_delivery_customizations	Delivery customization (Shopify Function)	8	1	SH-A-12	set aside	shipping and fulfillment; not payment methods
+SH-C-123	Fulfillment Constraints; read_fulfillment_constraint_rules	Fulfillment constraints (Shopify Function)	8	1	SH-A-12	set aside	shipping and fulfillment; not payment methods
+SH-C-124	Pickup point delivery option generator; Local pickup delivery option generator; Fulfillment option generator	Delivery option generators (Shopify Functions)	6	1	SH-A-12	set aside	shipping and fulfillment; not payment methods
+SH-C-125	delivery_promise_settings/update; read_delivery_promises	Delivery promises	8	2	SH-A-12	set aside	shipping and fulfillment; not payment methods
+SH-C-126	Tracking carriers; Shipping update; Order tracking apps	Shipment tracking and carriers	4	2	SH-A-12	set aside	shipping and fulfillment; not payment methods
+SH-C-059	orders/risk_assessment_changed; Built-in fraud analysis*; Risk	Order risk and fraud analysis	11	1	SH-A-13	set aside	order risk and fraud analysis; not payment methods or funds
+SH-C-062	Payments; Payment providers; Manage other payment settings	Payment providers settings (which payment methods a store accepts)	12	0	SH-A-13	copy	
+SH-C-074	Shop Pay; dev.shopify.shop_pay; Shop Pay Wallet API	Shop Pay	14	0	SH-A-13	copy	
+SH-C-075	Shop Pay Installments; unauthenticated_read_shop_pay_installments_pricing	Shop Pay Installments	13	0	SH-A-13	copy	
+SH-C-076	Payments Apps API; Payments extensions; Payment apps; paymentSessionResolve	Third-party payment providers through payments apps	27	0	SH-A-13	copy	
+SH-C-077	PayPal Express Checkout; PayPal Wallet rates	PayPal Express Checkout	13	1	SH-A-13	copy	
+SH-C-078	Apple Pay; Google Pay; Meta Pay; Amazon Pay; com.google.pay	Third-party wallets (Apple Pay, Google Pay, Meta Pay, Amazon Pay)	15	0	SH-A-13	copy	
+SH-C-079	Manual payment methods; Record payments; Mark as paid	Manual payment methods	9	2	SH-A-13	copy	
+SH-C-080	Accept local payment methods*; MB WAY rates; Bizum rates	Local payment methods	14	1	SH-A-13	copy	
+SH-C-081	USDC rates; Cryptocurrency Payment Protocol; Cryptocurrency Credit Reward Program	Cryptocurrency and stablecoin payments	11	1	SH-A-13	copy	
+SH-C-082	Shop Cash	Shop Cash	3	2	SH-A-13	copy	
+SH-C-083	Payment Customization; read_payment_customizations	Payment customization (Shopify Function)	12	1	SH-A-13	copy	
+SH-C-084	order_transactions/create; tender_transactions/create; Capture payments	Payment authorization, capture and order transactions	9	0	SH-A-13	copy	
+SH-C-085	customer_payment_methods/create; read_customer_payment_methods; read_payment_mandate; Charge vaulted payment method	Saved customer payment methods and payment mandates	16	2	SH-A-13	set aside	saving buyers' payment methods and mandates for later charges; not which methods the store offers or where funds go
+SH-C-063	Shopify Payments; Shopify Payments Terms of Service	Shopify Payments	36	0	SH-A-14	copy	
+SH-C-064	Payment Processor; Payment Processing; Payment Processor List	Payment processing and settlement for Shopify Payments	33	0	SH-A-14	copy	
+SH-C-065	Payment Processor Account; Financial Services Provider; Payout Account	Holding the merchant's funds from Shopify Payments sales	16	1	SH-A-14	copy	
+SH-C-066	Payment Facilitator; Shopify Payments EU Limited; Shopify Payments UK Limited; Acquirer	Payment facilitation in the EU/EEA and UK	11	2	SH-A-14	copy	
+SH-C-067	Regulated Payment Services; Shopify Payment Activities Inc.	Regulated payment services in Canada	3	3	SH-A-14	copy	
+SH-C-068	Verification and Underwriting; ProfileAssessment; read_financial_kyc_information; finance_kyc_information/update	Onboarding, KYC and underwriting for Shopify Payments	21	0	SH-A-14	copy	
+SH-C-069	Payouts; read_shopify_payments_payouts; View Shopify Payments payouts; Shopify Payments activity report	Payouts	19	0	SH-A-14	copy	
+SH-C-070	Reserves; Reserve Account; account holds	Reserves and payout holds	10	0	SH-A-14	copy	
+SH-C-071	Online standard card rates; Online international rates; In-person card rates; IC++ fees	Shopify Payments processing rates	9	1	SH-A-14	set aside	processing rates; fees are not asked by the question
+SH-C-072	disputes/create; read_shopify_payments_disputes; Manage disputes; Disputes	Chargebacks and disputes	24	1	SH-A-14	set aside	chargebacks and disputes; not which methods are offered or the ordinary route of funds
+SH-C-073	Shopify Protect; orders/shopify_protect_eligibility_changed	Shopify Protect	11	1	SH-A-14	set aside	Shopify Protect chargeback protection; not payment methods or the route of funds
+SH-C-173	Prohibited and Restricted Businesses	Prohibited and restricted businesses for Shopify Payments	7	3	SH-A-14	copy	
+SH-C-088	Shopify Balance; Banking; Balance; Manage money with Shopify Balance	Shopify Balance account	45	0	SH-A-15	copy	
+SH-C-089	Cards; Shopify Balance Visa® Commercial cards	Shopify Balance cards	7	2	SH-A-15	set aside	Shopify's lending, cards, bill pay or complaints; not buyers' payment methods or the route of sales funds
+SH-C-090	Shopify Credit; Credit; Shopify Credit pay-in-full Visa® card	Shopify Credit	33	0	SH-A-15	set aside	Shopify's lending, cards, bill pay or complaints; not buyers' payment methods or the route of sales funds
+SH-C-091	Capital - US loan; Capital - US Merchant Cash Advance (MCA)	Shopify Capital in the United States	23	1	SH-A-15	set aside	Shopify's lending, cards, bill pay or complaints; not buyers' payment methods or the route of sales funds
+SH-C-092	Capital - UK Merchant Cash Advance (MCA)	Shopify Capital in the United Kingdom	15	1	SH-A-15	set aside	Shopify's lending, cards, bill pay or complaints; not buyers' payment methods or the route of sales funds
+SH-C-093	Capital - Canada Merchant Cash Advance (MCA)	Shopify Capital in Canada	11	2	SH-A-15	set aside	Shopify's lending, cards, bill pay or complaints; not buyers' payment methods or the route of sales funds
+SH-C-094	Capital - Australia	Shopify Capital in Australia	10	2	SH-A-15	set aside	Shopify's lending, cards, bill pay or complaints; not buyers' payment methods or the route of sales funds
+SH-C-095	Shopify Capital loans; Banking Circle S.A.; YouLend SAS; Shopify Commerce France SAS	Shopify Capital in France	13	1	SH-A-15	set aside	Shopify's lending, cards, bill pay or complaints; not buyers' payment methods or the route of sales funds
+SH-C-096	Shopify Capital loans; YouLend GmbH; Shopify Commerce Germany GmbH	Shopify Capital in Germany	13	1	SH-A-15	set aside	Shopify's lending, cards, bill pay or complaints; not buyers' payment methods or the route of sales funds
+SH-C-097	Shopify Capital merchant cash advances; YouLend	Shopify Capital merchant cash advances in Ireland, the Netherlands and Spain	16	1	SH-A-15	set aside	Shopify's lending, cards, bill pay or complaints; not buyers' payment methods or the route of sales funds
+SH-C-098	Shopify Bill Pay; Bill Pay	Shopify Bill Pay	13	1	SH-A-15	set aside	Shopify's lending, cards, bill pay or complaints; not buyers' payment methods or the route of sales funds
+SH-C-178	Financial Products; Submit a financial complaint	Complaints about financial products	4	3	SH-A-15	set aside	Shopify's lending, cards, bill pay or complaints; not buyers' payment methods or the route of sales funds
+SH-C-106	Markets; Shopify Markets; Localized selling with Shopify Markets; markets/create	Markets	24	1	SH-A-17	set aside	markets, domains and rollouts; not payment methods
+SH-C-110	Managed Markets; Managed Markets shipping fees	Managed Markets	18	0	SH-A-17	copy	
+SH-C-111	Assign local domains; Geolocation apps	International domains and geolocation	4	1	SH-A-17	set aside	markets, domains and rollouts; not payment methods
+SH-C-112	Rollouts; rollouts/create; read_rollouts	Rollouts	15	2	SH-A-17	set aside	markets, domains and rollouts; not payment methods
+SH-C-113	markets_backup_region/update	Backup region	5	2	SH-A-17	set aside	markets, domains and rollouts; not payment methods
+SH-C-127	Discounts; Create and share discount codes; discounts/create; read_discounts	Discounts	21	2	SH-A-18	set aside	discounts; not payment methods
+SH-C-128	Discount; Discounts allocator; Discount function settings	Discount Functions	5	1	SH-A-18	set aside	discounts; not payment methods
+SH-C-129	Growth; Campaigns; Autopilot; Marketing; read_marketing_events; Create marketing automations	Marketing campaigns, automations and marketing activities	14	2	SH-A-19	set aside	marketing, attribution and reviews; not payment methods
+SH-C-130	Messaging; Shopify Messaging; Create email campaigns; Pay-per-send SMS campaigns	Shopify Messaging (email and SMS)	7	1	SH-A-19	set aside	marketing, attribution and reviews; not payment methods
+SH-C-131	Attribution; Order Attribution Config; Sales attribution edited	Sales attribution	4	2	SH-A-19	set aside	marketing, attribution and reviews; not payment methods
+SH-C-132	Optimize ads with Shopify Audiences	Shopify Audiences	7	0	SH-A-19	set aside	marketing, attribution and reviews; not payment methods
+SH-C-133	Shop Campaigns; Acquire customers risk-free with Shop Campaigns	Shop Campaigns	7	1	SH-A-19	set aside	marketing, attribution and reviews; not payment methods
+SH-C-134	Shopify Collabs; Collabs: Content commerce; Shopify collabs commission	Shopify Collabs	6	1	SH-A-19	set aside	marketing, attribution and reviews; not payment methods
+SH-C-146	Customer events; Web pixel; read_pixels; read_customer_events; Shopify Pixel Manager	Customer events and pixels	21	1	SH-A-19	set aside	marketing, attribution and reviews; not payment methods
+SH-C-154	Reviews; Product review apps	Product reviews	3	2	SH-A-19	set aside	marketing, attribution and reviews; not payment methods
+SH-C-187	Customer loyalty apps; Loyalty and reward apps; Wishlist apps; Donation apps	Loyalty, rewards, wishlists and donations	5	1	SH-A-19	set aside	marketing, attribution and reviews; not payment methods
+SH-C-194	Advertising apps; Affiliate program apps; Ads	Advertising and affiliate programs	4	1	SH-A-19	set aside	marketing, attribution and reviews; not payment methods
+SH-C-135	Sales channels; SalesChannels; read_publications; Sales channel configuration	Sales channels and publishing	23	1	SH-A-20	set aside	sales channels, storefronts and marketplace sync; not payment methods
+SH-C-136	Shop; Shop App; Shop: Track, Pay, Discover; Shop API; Shop Minis	Shop (consumer app and sales channel)	9	1	SH-A-20	set aside	sales channels, storefronts and marketplace sync; not payment methods
+SH-C-137	Import unlimited orders from marketplaces; Over 50 synced marketplace orders; read_marketplace_orders	Marketplace order sync (Marketplace Connect)	26	1	SH-A-20	set aside	sales channels, storefronts and marketplace sync; not payment methods
+SH-C-138	product_feeds/create; product_listings/add; read_product_listings	Product feeds and listings for channels	11	2	SH-A-20	set aside	sales channels, storefronts and marketplace sync; not payment methods
+SH-C-139	Build headless storefronts; CustomStorefronts; Storefront API; Hydrogen framework	Headless and custom storefronts	26	1	SH-A-20	set aside	sales channels, storefronts and marketplace sync; not payment methods
+SH-C-140	Sell in AI chats; Agentic; dev.ucp.shopping; WebMCP Tools	Agentic commerce (AI chats, Universal Commerce Protocol)	20	1	SH-A-20	set aside	sales channels, storefronts and marketplace sync; not payment methods
+SH-C-141	Sell and source products with Shopify Collective	Shopify Collective	6	1	SH-A-20	set aside	sales channels, storefronts and marketplace sync; not payment methods
+SH-C-086	In-person card rates; Tap to Pay transaction fees; Card present	In-person card payments	11	2	SH-A-21	copy	
+SH-C-087	read_cash_tracking; CashDrawer	Cash management at POS	6	3	SH-A-21	set aside	cash drawer tracking at POS; not payment providers or the route of funds
+SH-C-142	Point of Sale; Retail; POS Pro; Shopify Point of Sale (POS)	Point of Sale	11	0	SH-A-21	copy	
+SH-C-143	POS Equipment Agreement and Return Policies; POS Equipment	POS hardware	5	1	SH-A-21	set aside	POS hardware, cash drawer and POS software; not which payment providers or where funds go
+SH-C-144	POS UI extensions; POS action; POS block; POS smart grid	POS UI extensions	8	0	SH-A-21	set aside	POS hardware, cash drawer and POS software; not which payment providers or where funds go
+SH-C-156	Apps; Apps and channels; Integrate with 1000s of apps; Third Party Services	Apps and third-party services	18	1	SH-A-24	copy	
+SH-C-157	Shopify App Store; Plus Certified apps; App distribution	Shopify App Store (listing, registration and review)	12	0	SH-A-24	set aside	app development, the App Store listing or business apps; not payment methods
+SH-C-167	App development; Develop; Enable development	Custom apps developed in the admin	6	2	SH-A-24	set aside	app development, the App Store listing or business apps; not payment methods
+SH-C-191	Accounting apps; ERP apps	Accounting and ERP	5	1	SH-A-24	set aside	app development, the App Store listing or business apps; not payment methods
+SH-C-196	Security apps; Anti theft apps; Legal apps	Security and legal apps	5	1	SH-A-24	set aside	app development, the App Store listing or business apps; not payment methods
+SH-C-002	Shopify Contracting Party; Shopify Inc.; Shopify Technology (USA) Inc.; Shopify Commerce Singapore Pte. Ltd; Shopify International Limited	Shopify Contracting Party for the platform services, by the merchant's billing region	11	3	SH-A-28	set aside	Shopify Contracting Party for the platform services by billing region; not which methods or where sales funds go
+SH-C-014	Reactivate your store; store-unavailable; Term and Termination	Store suspension, termination, reactivation and closure	17	1	SH-A-28	set aside	store termination, enforcement, product compliance and legal notices; not payment methods
+SH-C-172	Acceptable Use Policy; Report an issue with a merchant	Acceptable use and enforcement	12	0	SH-A-28	set aside	store termination, enforcement, product compliance and legal notices; not payment methods
+SH-C-175	Consumer protection laws; Alcohol products; Hemp and hemp-derived products; General Product Safety Regulation (GPSR); TSE Compliance in Germany	Merchant compliance with product, consumer and fiscal rules	8	2	SH-A-28	set aside	store termination, enforcement, product compliance and legal notices; not payment methods
+SH-C-176	Intellectual Property; copyright policy; trademark policy	Intellectual property reports	4	1	SH-A-28	set aside	store termination, enforcement, product compliance and legal notices; not payment methods
+SH-C-177	Legal Notices; Digital Service Act; Submit a P2B complaint	EU and UK platform rules (P2B complaints, Digital Services Act)	7	1	SH-A-28	set aside	store termination, enforcement, product compliance and legal notices; not payment methods
+SH-C-006	I'm located in:; Country/region	Merchant location at sign-up	3	2	SH-A-29	set aside	merchant location at sign-up; not payment methods
+SH-C-174	Unsupported countries and regions; Sanctions; Sanctioned Person	Sanctions and unsupported countries and regions	20	2	SH-A-29	copy	
+SH-C-107	store currency; Store Currencies	Store currency	5	2	SH-A-31	set aside	currencies and conversion; not which methods are offered or the route of funds
+SH-C-108	Show prices in local currencies*	Prices in local currencies	10	2	SH-A-31	set aside	currencies and conversion; not which methods are offered or the route of funds
+SH-C-109	Currency conversions and exchange rates	Currency conversion and exchange rates	12	1	SH-A-31	set aside	currencies and conversion; not which methods are offered or the route of funds
+SH-C-025	Gift cards; Sell gift cards; Gift Card & Store Credit Service Terms	Gift cards	18	1	SH-A-32	set aside	gift cards and store credit; not payment providers or where sales funds go
+SH-C-026	Store credit; read_store_credit_accounts; Refund to store credit	Store credit	13	1	SH-A-32	set aside	gift cards and store credit; not payment providers or where sales funds go
+S-01		the pilot's statements, gaps and absences on who holds the merchant's funds	161	0		copy	reused for the money paragraph of Q5

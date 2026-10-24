@@ -1,0 +1,18 @@
+{
+ "n": 3,
+ "url": "https://kb.mailpoet.com/article/278-the-woocommerce-customers-list",
+ "dir": "items/003-kb.mailpoet.com",
+ "fetched_at": "2026-10-11T09:07:50Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://kb.mailpoet.com/article/278-the-woocommerce-customers-list",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 20570,
+ "cited_in": [
+  "WC-S-5501"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "7e144a2ef41a127386a8b57b4ff132b6bc9d9e80e1a43fe76305809f6d01eaaf",
+ "raw_ext": "html"
+}

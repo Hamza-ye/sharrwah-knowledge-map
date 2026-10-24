@@ -1,0 +1,21 @@
+{
+ "n": 124,
+ "url": "https://shopify.dev/docs/apps/build/purchase-options/subscriptions.md",
+ "dir": "items/124-shopify.dev",
+ "fetched_at": "2026-10-11T06:13:08Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://shopify.dev/docs/apps/build/purchase-options/subscriptions.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 9064,
+ "cited_in": [
+  "SH-S-0592",
+  "SH-S-0593",
+  "SH-S-0762",
+  "SH-S-0763"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "d9042fee04ac159f127f79da7eb72c3024be63884c5ec6d073020a502f63aedd",
+ "raw_ext": "txt"
+}

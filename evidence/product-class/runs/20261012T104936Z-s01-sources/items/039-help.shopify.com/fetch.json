@@ -1,0 +1,18 @@
+{
+ "n": 39,
+ "url": "https://help.shopify.com/en/manual/payments/shopify-payments/payouts/refunds.md",
+ "dir": "items/039-help.shopify.com",
+ "fetched_at": "2026-10-12T10:50:17Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/payments/shopify-payments/payouts/refunds.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 3307,
+ "cited_in": [
+  "S01-SH-C144"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "1da64bd9aea1ad3b4c3dcf78213f2528e4162bb08a739c8c84dd4527abc8d184",
+ "raw_ext": "txt"
+}

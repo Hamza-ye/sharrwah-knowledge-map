@@ -1,0 +1,18 @@
+{
+ "n": 14,
+ "url": "https://docs.zid.sa/create-a-webhook.md",
+ "dir": "items/014-docs.zid.sa",
+ "fetched_at": "2026-10-12T04:51:12Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.zid.sa/create-a-webhook.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 21942,
+ "cited_in": [
+  "ZD-S-0882"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "291b8f25f127fd050c4e128dd4edc862e091bbe5bc455609c379e3d3f93ef66c",
+ "raw_ext": "txt"
+}

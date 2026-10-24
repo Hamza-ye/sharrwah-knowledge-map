@@ -1,0 +1,19 @@
+{
+ "n": 15,
+ "url": "https://support.bigcommerce.com/s/article/BigCommerce-Inventory-Functionality",
+ "dir": "items/015-support.bigcommerce.com",
+ "fetched_at": "2026-10-13T05:40:09Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://support.bigcommerce.com/s/article/Inventory-Tracking?language=en_US",
+ "content_type": "text/html;charset=UTF-8",
+ "bytes": 190826,
+ "cited_in": [
+  "BC-C-004",
+  "BC-C-005"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "4da6e80fcbe670f62b6da5e44bd376b617c2117f8dd9b83de1666154b2678818",
+ "raw_ext": "html"
+}

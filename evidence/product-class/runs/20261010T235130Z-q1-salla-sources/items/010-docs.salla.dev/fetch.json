@@ -1,0 +1,22 @@
+{
+ "n": 10,
+ "url": "https://docs.salla.dev/security.md",
+ "dir": "items/010-docs.salla.dev",
+ "fetched_at": "2026-10-10T23:51:31Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.salla.dev/security.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 920,
+ "cited_in": [
+  "SA-S-0174",
+  "SA-S-0175",
+  "SA-S-0176",
+  "SA-S-0185",
+  "SA-S-0186"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "5a395654c7f580718fdb4e65aa43b4c6a63613b4e857575667ce3155a6420fb6",
+ "raw_ext": "txt"
+}

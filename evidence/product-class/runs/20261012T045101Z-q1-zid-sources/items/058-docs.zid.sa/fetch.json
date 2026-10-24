@@ -1,0 +1,19 @@
+{
+ "n": 58,
+ "url": "https://docs.zid.sa/retrieve-store-operating-countries.md",
+ "dir": "items/058-docs.zid.sa",
+ "fetched_at": "2026-10-12T04:51:56Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.zid.sa/retrieve-store-operating-countries.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 10975,
+ "cited_in": [
+  "ZD-S-0117",
+  "ZD-S-0744"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "59d2ac11e29d3eb041de38ac3eccac8e0f593875d924174bc7c8c16fda1c8b4c",
+ "raw_ext": "txt"
+}

@@ -1,0 +1,18 @@
+{
+ "n": 4,
+ "url": "https://en.support.wordpress.com/automattic-gdpr/data-processing-agreements/",
+ "dir": "items/004-en.support.wordpress.com",
+ "fetched_at": "2026-10-10T23:53:58Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://wordpress.com/support/data-processing-agreements/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 48862,
+ "cited_in": [
+  "WC-S-0847"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "35150c055f3be9e49be08516edb97a54d58cf803a68c7111977228adc4ebd014",
+ "raw_ext": "html"
+}

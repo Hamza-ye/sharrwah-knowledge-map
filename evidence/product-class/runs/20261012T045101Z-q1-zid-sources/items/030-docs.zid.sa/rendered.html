@@ -1,0 +1,492 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;"># Retrieve Product Question
+
+## OpenAPI Specification
+
+```yaml
+openapi: 3.0.1
+info:
+  title: ''
+  description: ''
+  version: 1.0.0
+paths:
+  /v1/products/{product_id}/questions:
+    get:
+      summary: Retrieve Product Question
+      deprecated: false
+      description: |-
+        Retrieve details of a specific question for a product.
+
+        &lt;Accordion title="🔑Scopes" defaultOpen&gt;
+            
+          `products.read` - Products Read
+         
+        &lt;/Accordion&gt;
+      operationId: get-products-product_id-questions-question_id
+      tags:
+        - Default module/Apps/Merchant APIs/Products/Product Questions &amp; Answers
+        - Questions &amp; Answers
+      parameters:
+        - name: product_id
+          in: path
+          description: ''
+          required: true
+          example: 399e381e-7c58-4148-aa26-7f959f4bf22b
+          schema:
+            type: string
+        - name: Access-Token
+          in: header
+          description: &gt;-
+            An Access Token is a unique string that represents the authorization
+            granted to a client (Partner application) by a user (Merchant or
+            Store Manager) to access their protected resources. It is part of
+            the OAuth 2.0 standard and is used to authenticate API requests on
+            behalf of the user. Access Tokens have a limited lifespan and must
+            be used within their validity period. Once expired, a new Access
+            Token can be obtained using a Refresh Token. Access Tokens should be
+            treated as sensitive information and must be kept secure to prevent
+            unauthorized access to the user's data. If you do not have an
+            `Access-Token`, but have the older alternative instead, i.e., the
+            `X-Manager-Token`, then see the instructions
+            [here](docs/Migrate-to-OAUTH-2.0.md) on how to obtain the
+            `Access-Token`.
+          required: true
+          example: '{{Access-Token}}'
+          schema:
+            type: string
+        - name: Store-Id
+          in: header
+          description: ''
+          required: true
+          example: '{{StoreId}}'
+          schema:
+            type: number
+            examples:
+              - 37213
+        - name: Accept-Language
+          in: header
+          description: ''
+          required: false
+          example: en
+          schema:
+            type: string
+            enum:
+              - ar
+              - en
+            x-apidog-enum:
+              - value: ar
+                name: ''
+                description: ''
+              - value: en
+                name: ''
+                description: ''
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              x-examples:
+                Example 1:
+                  name: Authed Manager
+                  email: manager@zid.sa
+                  question: What do you think of me?
+                  store: aba1846c-c536-4c8a-9e1d-6b27ef1d240a
+                  product: e5715f91a23a4eeabcead3f75b2d939c
+              properties:
+                name:
+                  type: string
+                  description: The name of the customer asking the question.
+                  examples:
+                    - '"Maira Anwar"'
+                email:
+                  type: string
+                  description: The email address of the customer.
+                  examples:
+                    - '"manager@zid.sa"'
+                question:
+                  type: string
+                  description: The content of the question.
+                  examples:
+                    - '"What do you think of me?"'
+                store:
+                  type: string
+                  description: The unique identifier of the store.
+                  examples:
+                    - '"aba1846c-c536-4c8a-9e1d-6b27ef1d240a"'
+                product:
+                  type: string
+                  description: The unique identifier of the product.
+                  examples:
+                    - '"e5715f91a23a4eeabcead3f75b2d939c"'
+              x-apidog-orders:
+                - name
+                - email
+                - question
+                - store
+                - product
+              x-apidog-ignore-properties: []
+            example: ''
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  count:
+                    type: integer
+                  next:
+                    type: string
+                    nullable: true
+                  previous:
+                    type: string
+                    nullable: true
+                  results:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/ProductionQuestionObject'
+                required:
+                  - count
+                  - next
+                  - previous
+                  - results
+                x-apidog-orders:
+                  - count
+                  - next
+                  - previous
+                  - results
+                x-apidog-ignore-properties: []
+              example:
+                count: 1
+                next: null
+                previous: null
+                results:
+                  - id: 1ef1cc35-79e7-40b7-a9b2-989fd5895859
+                    store: d297fb8b-c322-412e-a2f4-ffa96dc57022
+                    product: 399e381e-7c58-4148-aa26-7f959f4bf22b
+                    product_name: apple
+                    customer: 143299
+                    name: sara
+                    email: sara.aljerasy@gmail.com
+                    is_anonymous: false
+                    is_owner: false
+                    is_published: true
+                    is_sent: false
+                    is_new: false
+                    question: التفاحه حمرا؟
+                    created_at: '2024-01-23T11:10:07.717021Z'
+                    answers:
+                      - id: a4f54aa9-7d50-4c49-a114-709643d1d175
+                        question: 1ef1cc35-79e7-40b7-a9b2-989fd5895859
+                        product: 399e381e-7c58-4148-aa26-7f959f4bf22b
+                        deleted: null
+                        created_at: '2024-01-23T11:11:35.288765Z'
+                        updated_at: '2024-11-02T09:52:21.418915Z'
+                        answer: نعم، التفاحه حمراء
+                        user: '3'
+          headers: {}
+          x-apidog-name: OK
+        '401':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                description: &gt;-
+                  Response returned when the request cannot be authenticated
+                  because the required credentials are missing, invalid, or
+                  expired.
+                properties:
+                  status:
+                    type: string
+                    description: Indicates the overall status of the API response.
+                    examples:
+                      - error
+                  message:
+                    type: object
+                    description: &gt;-
+                      Contains structured details explaining why the request
+                      could not be authenticated.
+                    properties:
+                      type:
+                        type: string
+                        description: Indicates the category of the response message.
+                        examples:
+                          - error
+                      code:
+                        type: string
+                        description: &gt;-
+                          A machine-readable code identifying the authentication
+                          error. Returns null when no specific code is
+                          available.
+                        examples:
+                          - UNAUTHORIZED
+                        nullable: true
+                      name:
+                        type: string
+                        description: &gt;-
+                          A short, human-readable title describing the
+                          authentication error. Returns null when no title is
+                          available.
+                        examples:
+                          - Unauthorized
+                        nullable: true
+                      description:
+                        type: string
+                        description: &gt;-
+                          A human-readable explanation of why the request could
+                          not be authenticated. Returns null when no detailed
+                          explanation is available.
+                        examples:
+                          - &gt;-
+                            Authentication credentials are missing, invalid, or
+                            expired.
+                        nullable: true
+                    required:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-orders:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-ignore-properties: []
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                examples:
+                  - status: error
+                    message:
+                      type: error
+                      code: UNAUTHORIZED
+                      name: Unauthorized
+                      description: &gt;-
+                        Authentication credentials are missing, invalid, or
+                        expired.
+                x-apidog-ignore-properties: []
+              examples:
+                '2':
+                  summary: Example 1
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_MISSING
+                      name: Sorry
+                      description: Please login first.
+                '3':
+                  summary: Example 2
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Login session expired. Please login again.
+                '4':
+                  summary: Example 3
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Invalid authentication
+          headers: {}
+          x-apidog-name: Unauthorized
+        '500':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Status of the error.
+                  message:
+                    $ref: '#/components/schemas/ResponseEnvelopMessage'
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                x-apidog-ignore-properties: []
+              example:
+                status: error
+                message:
+                  type: error
+                  code: MSG_HIDDEN
+                  name: Error
+                  description: Internal Server Error
+          headers: {}
+          x-apidog-name: Internal Server error
+      security: []
+      x-apidog-folder: Default module/Apps/Merchant APIs/Products/Product Questions &amp; Answers
+      x-apidog-status: released
+      x-run-in-apidog: https://app.apidog.com/web/project/613905/apis/api-9148657-run
+components:
+  schemas:
+    ProductionQuestionObject:
+      type: object
+      properties:
+        id:
+          type: string
+        store:
+          type: string
+        product:
+          type: string
+        product_name:
+          type: string
+        customer:
+          type: integer
+        name:
+          type: string
+        email:
+          type: string
+        is_anonymous:
+          type: boolean
+        is_owner:
+          type: boolean
+        is_published:
+          type: boolean
+        is_sent:
+          type: boolean
+        is_new:
+          type: boolean
+        question:
+          type: string
+        created_at:
+          type: string
+        answers:
+          type: array
+          items:
+            $ref: '#/components/schemas/ProductQuestionAnswerObject'
+          nullable: true
+      x-apidog-orders:
+        - id
+        - store
+        - product
+        - product_name
+        - customer
+        - name
+        - email
+        - is_anonymous
+        - is_owner
+        - is_published
+        - is_sent
+        - is_new
+        - question
+        - created_at
+        - answers
+      required:
+        - id
+        - store
+        - product
+        - product_name
+        - customer
+        - name
+        - email
+        - is_anonymous
+        - is_owner
+        - is_published
+        - is_sent
+        - is_new
+        - question
+        - created_at
+        - answers
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    ProductQuestionAnswerObject:
+      type: object
+      properties:
+        id:
+          type: string
+        question:
+          type: string
+        product:
+          type: string
+        deleted:
+          type: string
+          nullable: true
+        created_at:
+          type: string
+        updated_at:
+          type: string
+        answer:
+          type: string
+        user:
+          type: string
+      x-apidog-orders:
+        - id
+        - question
+        - product
+        - deleted
+        - created_at
+        - updated_at
+        - answer
+        - user
+      required:
+        - id
+        - question
+        - product
+        - deleted
+        - created_at
+        - updated_at
+        - answer
+        - user
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    ResponseEnvelopMessage:
+      type: object
+      properties:
+        type:
+          type: string
+          description: Type of response message returned by the API.
+          examples:
+            - success
+        code:
+          type: string
+          description: Response code returned by the API, if available.
+          examples:
+            - MSG_POPUP_OK
+          nullable: true
+        name:
+          type: string
+          description: Name or title of the response message, if available.
+          examples:
+            - Coupons
+          nullable: true
+        description:
+          type: string
+          description: Detailed description of the response message, if available.
+          examples:
+            - Coupons created successfully
+          nullable: true
+      required:
+        - type
+        - code
+        - name
+        - description
+      description: Additional response metadata.
+      x-apidog-orders:
+        - type
+        - code
+        - name
+        - description
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+  securitySchemes: {}
+servers:
+  - url: https://api.zid.sa/
+    description: Prod Env
+security: []
+
+```
+</pre></body></html>

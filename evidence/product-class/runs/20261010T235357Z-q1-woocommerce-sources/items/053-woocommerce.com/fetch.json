@@ -1,0 +1,23 @@
+{
+ "n": 53,
+ "url": "https://woocommerce.com/document/woopayments/account-management/partnership-with-stripe/",
+ "dir": "items/053-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:03Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/woopayments/account-management/partnership-with-stripe/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 45597,
+ "cited_in": [
+  "WC-S-0504",
+  "WC-S-0505",
+  "WC-S-0506",
+  "WC-S-0507",
+  "WC-S-0508",
+  "WC-S-0509"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "ee21bb0c0c27ddd4b1f0bbc62ad6d94fa4bda729801417d1c09ee28b6fbe0abd",
+ "raw_ext": "html"
+}

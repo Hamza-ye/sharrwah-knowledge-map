@@ -1,0 +1,21 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sun, 11 Oct 2026 09:19:26 GMT
+content-type: text/html; charset=utf-8
+link: </_next/static/chunks/3y5692pu7ei6z.css>; rel=preload; as="style", </_next/static/chunks/37x8pkuc7reiu.css>; rel=preload; as="style"
+cache-control: private, no-cache, no-store, max-age=0, must-revalidate
+set-cookie: utm_params=%7B%22utm_source%22%3A%22referral%22%2C%22utm_medium%22%3A%22direct%22%2C%22utm_synthetic%22%3A%221%22%2C%22utm_ref_page%22%3A%22help.salla.sa%2Farticle%2F%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D9%88%D8%AC%D8%B1%D8%AF-%D8%A7%D9%84%D9%85%D8%AE%D8%B2%D9%88%D9%86%2Fxzpw5e46wflnxg611caz0aem%22%7D; Path=/; Expires=Tue, 10 Nov 2026 09:19:26 GMT; Max-Age=2592000; Secure; SameSite=lax
+set-cookie: utm_params=%7B%22utm_source%22%3A%22referral%22%2C%22utm_medium%22%3A%22direct%22%2C%22utm_synthetic%22%3A%221%22%2C%22utm_ref_page%22%3A%22help.salla.sa%2Farticle%2F%25D8%25A5%25D8%25AF%25D8%25A7%25D8%25B1%25D8%25A9-%25D9%2588%25D8%25AC%25D8%25B1%25D8%25AF-%25D8%25A7%25D9%2584%25D9%2585%25D8%25AE%25D8%25B2%25D9%2588%25D9%2586%2Fxzpw5e46wflnxg611caz0aem%22%7D; Path=/; Expires=Tue, 10 Nov 2026 09:19:26 GMT; Max-Age=2592000; Secure; SameSite=lax
+vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, accept-encoding
+cf-placement: remote-MRS
+content-security-policy: frame-ancestors 'self' https://api.salla.dev https://hc.salla.group
+x-locale: ar
+x-opennext: 1
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+content-encoding: br
+server: cloudflare
+cf-ray: a48cc87bfdc8586e-IAD
+alt-svc: h3=":443"; ma=86400
+

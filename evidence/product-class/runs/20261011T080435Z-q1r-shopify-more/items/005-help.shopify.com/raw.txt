@@ -1,0 +1,80 @@
+# Overview of custom data
+
+Custom data helps you to extend Shopify's data models and create your own using metafields and metaobjects.
+
+## Types of metafields
+
+You can create the following types of metafields:
+
+* **Metafields with definitions**: These can be standard or custom definitions.
+  * **Standard**: These definitions are automatically configured for you and are designed to be universally compatible across Shopify. Because standard metafield definitions follow standards that are used across all Shopify stores, they're supported by apps, themes, and other parts of your store. You can add product categories to your standard product metafields so that those metafields only display on products for the specific product category. Learn more about [standard metafield definitions](https://shopify.dev/docs/apps/custom-data/metafields/definitions/standard).
+  * **Custom**: These definitions are unique to your store. Use custom definitions for any metafields that don't have standard definitions or when you want to migrate existing unstructured metafields to a definition.
+* **Unstructured metafields**: These are metafields without definitions. You can edit metafields without definitions. Learn more about [editing metafields that don't have a definition](/manual/custom-data/metafields/metafield-definitions/migrating-metafields-to-a-definition#definitions-for-existing-metafields).
+* **App-owned metafields**: These definitions are created using an app from the [Shopify App Store](https://apps.shopify.com/?shpxid=a1f62832-FE83-462C-1BBF-6452C2EFBAFD).
+
+## Metafield definition {#metafield-definition}
+
+Metafield definitions have the following parts:
+
+* **Name**: used to identify the metafield in your Shopify admin, such as `Color`.
+* **Namespace and key**: the unique identifier for your metafield. You can use a namespace to group similar metafields together, but each namespace and key must be unique. An example is `custom.color`.
+* **Description** (optional): allows you to include descriptive information, such as what values to enter for the metafield.
+* **Type**: the type of data that the metafield stores. You select a type from a searchable list of categories and presets, such as text, file, or URL.
+* **Categories** (on standard product metafield definitions only): The standard product categories that the standard product metafield is associated with.
+* **Validations** (optional): the rules for the input of the values, such as character limits, or minimum and maximum values.
+* **Options**: where the metafield is available to use. Learn more about [options for custom data](/manual/custom-data/options).
+
+
+You can practice using metafields by [adding product care instructions](/manual/custom-data/metafields/using-metafields) and [by adding a pop-up to your product pages](/manual/custom-data/metafields/pop-up-tutorial).
+
+## Locating your read only app metafields
+
+You can access a list of your app-owned metafields in a specific resource.
+
+#### Steps:
+
+1. In your Shopify admin, go to a resource that has metafields. For example, you can go to a product page.
+2. In the **Metafields** section, click **Show all**.
+3. Click **More actions** > **View read only app metafields**.
+
+## Types of metaobjects
+
+There are two key components to metaobjects:
+
+1. The definition - the group of fields that defines the object’s structure. This is managed in **Settings** > **Custom data** in your Shopify admin.
+2. Entries - the content or data for the metaobject. Entries are created and managed in **Content** > **Metaobjects** in your Shopify admin.
+
+These are the following types of metaobject definitions:
+
+* **Standard**: These definitions are automatically configured for you and are designed to be universally compatible across Shopify. Because standard metaobject definitions follow standards that are used across all Shopify stores, they're supported by apps, themes, and other parts of your store.
+* **Custom**: These definitions are unique to your store. Create a custom metaobject when no standard definition meets your needs.
+* **App-created metaobjects**: These definitions are created by an app.
+
+## Metaobject structure
+
+When you create a metaobject definition, you specify the following information:
+
+- **Name**: used to identify the metaobject in your Shopify admin, such as `Authors`.
+- **Type**: a unique identifier for the metaobject, automatically generated from the name. You can edit the type identifier before saving.
+- **Fields**: define the content you want to store in the metaobject.
+    - Each field has a name (required), description, and type. You select a field type from a searchable list of categories and presets, such as text, file, or URL.
+    - Optional: You can add validation rules, such as character limits, minimum and maximum values, or preset values.
+    - **Display name** is assigned to a single field name and is used to identify an individual metaobject entry. You can change the field that the display name is assigned to at any time. The display name is automatically assigned to the first text field in a metaobject entry, or autogenerated if there are no text fields in the metaobject definition.
+    - For example, you might add a field for text and indicate it as a display name, a field for an image, and a field for color.
+- **Options**: where the metaobject is available to use. Learn more about [options for custom data](/manual/custom-data/options).
+
+
+You can practice using metaobjects by [adding product highlights](/manual/custom-data/metaobjects/connecting-to-your-online-store/using-metaobjects).
+
+## Locate your app-created metaobjects
+
+You can access your app-controlled metaobjects in your Shopify admin by filtering your metaobject definitions.
+
+#### Steps:
+
+1. From your Shopify admin, go to **Content** > [**Metaobjects**](https://admin.shopify.com/content/metaobjects).
+
+2. Click **Custom** to open the view menu, and then select the **All** view that you want to filter.
+3. Do any of the following:
+  * Click the <img src="https://cdn.shopify.com/shopifycloud/help-center/manual/admin-icons/LayoutColumns3Icon.svg" alt="Layout Columns 3" class="admin-icon" /> icon to open the display option panel. Click the <img src="https://cdn.shopify.com/shopifycloud/help-center/manual/admin-icons/SortIcon.svg" alt="Sort" class="admin-icon" /> **Sort by** menu, and then sort by **Added by**. Your metaobjects sort alphabetically by the person or app that added them.
+  * Click the searchbar, and then click **Added by**, and then choose the name of the app to view the metaobjects added by it.

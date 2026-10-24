@@ -1,0 +1,269 @@
+___
+Skip to navigation
+Skip to content
+USD
+Change site currency USD selected
+Develop on Woo
+Hire an expert
+Get support
+Sell
+Click to show 12 more items
+Extensions
+Click to show 18 more items
+Resources
+Click to show 23 more items
+Enterprise ecommerce
+Log in
+Get started
+Extensions
+Pre-Sales Support
+Stripe
+WooCommerce Square
+PayPal Braintree
+AutomateWoo
+Expand
+Product CSV Import Suite
+Order/Customer CSV Export
+Facebook for WooCommerce
+WooCommerce Subscriptions
+Expand
+WooCommerce Memberships
+Expand
+WooCommerce Bookings
+Expand
+Product Bundles
+Expand
+Product Recommendations
+Expand
+Composite Products
+Expand
+Smart Coupons
+Cashier for WooCommerce
+Affiliate For WooCommerce
+Mix and Match Products
+Google Product Feed
+Groups WooCommerce
+Gift Cards
+API Manager
+Table Rate Shipping
+Advanced Shipping Packages
+Name Your Price
+Order Delivery
+WooCommerce Zapier Integration
+Expand
+Klarna
+Expand
+Product Vendors
+PDF Invoice
+Pre-orders
+Force Sells
+Google for WooCommerce
+Expand
+Import Export Suite for WooCommerce
+Bulk Updater for WooCommerce Subscriptions
+Expand
+Enhancer for WooCommerce Subscriptions
+Expand
+Product Add-ons
+Expand
+Xero
+Expand
+Buy One Get One Free
+WooCommerce Sales Analysis
+Conditional Shipping and Payments
+WooCommerce Shipping & Tax
+Email Customizer Pro
+Back In Stock Notifications
+WooCommerce Smart Refunder
+Saved Addresses For WooCommerce
+Chained Products
+Volume Discount Coupons
+Sensei
+Expand
+WooCommerce Product Search
+Expand
+Photography
+Expand
+Opayo
+Advanced Bulk Edit
+Smart Stock & Inventory Manager
+Flexi BOGO
+Flexi Custom Order Status
+Product Input Fields
+Product Feed Manager
+Payment Gateway Based Fees and Discounts
+Abandoned Cart Pro
+Order Delivery Date
+Currency per product
+Call for Price Pro
+Product Prices by User Role
+Flexi Custom Order Numbers
+Flexi Product Delivery Date
+Flexi Booking and Appointment
+Delivery and Pickup Scheduler
+SensAI
+All-in-one PDF Invoice and Packing Slips Suite
+Expand
+Easy Subscriptions
+Smart Product Designer
+WooCommerce Anti-Fraud
+Shipment Tracking
+Expand
+EU VAT Number
+Back In Stock Notifications / Documentation / Back In Stock Notifications
+Back In Stock Notifications
+Overview
+
+Back In Stock Notifications makes it possible for logged-in customers and guests to get notified via e-mail when out-of-stock products become available. The plugin appends a sign-up form right after the “Out of stock” availability status of sold-out Simple products and Variations.
+
+Important: If you have configured WooCommerce to hide out-of-stock products and variations in your catalog, customers will not be able to sign up for back-in-stock alerts. To check your settings:
+
+Navigate to WooCommerce > Settings > Products > Inventory.
+Make sure that Out of stock visibility > Hide out of stock items from the catalog is disabled.
+
+Notification sign-ups for all products are listed under WooCommerce > Stock Notifications > Notifications. Notifications can be:
+
+filtered by customer e-mail, product, or variation; and
+exported in a CSV file — useful if you need to import contact details in your favorite e-mail marketing platform/tool.
+
+When a product is restocked, the plugin creates a queue with all pending notification e-mails and processes them in batches using Action Scheduler – a robust, battle-tested task processing system used by WooCommerce core. Thanks to Action Scheduler, the plugin can send an unlimited number of notifications without issues.
+
+Note: Back In Stock Notifications cannot guarantee or measure e-mail deliverability. Most e-mail providers limit the number of e-mails that you can send through them per day. For example, Gmail will not deliver more than 500 e-mails/day. For details, please read this E-Mail FAQ. If your store is sending a large volume of e-mails:
+
+Use a dedicated SMTP provider, or:
+Use a plugin that supports a HTTP-based service such as Mailgun or Sendgrid.
+
+Back In Stock Notifications can be configured to send notifications only when restocking above a minimum quantity threshold. For a detailed list of all settings provided by the plugin, check out the Getting Started > Settings section of the Store Owner’s Guide.
+
+Documentation Contents
+Store Owner’s Guide
+Installation and Requirements
+Getting Started: Sign-Ups
+Getting Started: Notifications
+Configuring Settings
+Viewing Reports
+Managing Notifications
+Compatibility
+Compatibility and Integrations
+FAQ & Feedback
+Frequently Asked Questions
+Feedback & Suggestions
+Troubleshooting & Support
+
+Purchased Back In Stock Notifications and need assistance? If you’ve found an issue:
+
+Ensure you have the latest versions of all extensions and themes. Go to WooCommerce > System Status to check for plugin updates and other important information that may require your attention.
+Rule out a plugin conflict: Turn off all plugins except WooCommerce and WooCommerce Back In Stock Notifications. If the issue is resolved, find the plugin that triggers it by re-activating plugins one by one.
+Rule out a theme conflict. Activate Storefront, or a default WordPress theme such as Twenty Twenty and check if the issue still occurs. If it doesn’t, please contact your theme author(s).
+Read the most Frequently Asked Questions for possible solutions.
+Use the WooCommerce Self Service Guide.
+
+If you followed these steps but the issue persists, please get in touch with us!
+
+Was this guide helpful for you?
+Related Products
+Royal Mail Shipping Method
+by
+Woo
+
+Offer Royal Mail shipping rates to your customers.
+
+Price $109 annually
+$109
+annually
+Rated 2.3 out of 5 stars
+2.3 
+(3)
+Australia Post Shipping Method
+by
+Woo
+
+Get shipping rates for your WooCommerce store from the Australia Post API, which handles both domestic and international parcels.
+
+Price $109 annually
+$109
+annually
+Rated 2.6 out of 5 stars
+2.6 
+(8)
+ON THIS PAGE
+Overview
+Documentation Contents
+Troubleshooting & Support
+Back In Stock Notifications
+by Woo
+Price $4.92
+$4.92
+Per month
+ monthly
+ Billed annually at $59
+Buy now
+30-day money-back guarantee
+Support teams across the world
+Safe and secure online payments
+Sell
+WooCommerce
+WooCommerce pricing
+Payments
+No-code customization
+Marketing
+Checkout
+Shipping
+Mobile app
+Enterprise ecommerce
+Marketplace
+WooCommerce extensions
+WooCommerce themes
+New
+Essentials
+Collections
+Developed by Woo
+Build
+Woo for developers
+Developer resources
+Become a Woo agency
+Become a Marketplace partner
+Become an affiliate
+Resources
+Blog
+Documentation
+WooCommerce site examples
+Product updates
+Email newsletter
+Support
+Feature requests
+WooCommerce hosting
+Hire an agency
+Participate in customer research
+Accessibility
+Support forums
+Company
+About
+Press
+Download WooCommerce free
+Join the Woo community
+Woo trademark guidelines
+Brand and logo guidelines
+Do not sell or share my personal information
+WooCommerce Support Policy
+Refund Policy
+Contact us
+Follow us on Facebook
+Follow us on X
+Follow us on Instagram
+Follow us on LinkedIn
+USD
+Change site currency USD selected
+Terms of Service
+Privacy Policy
+Privacy Notice for California Users
+
+© WooCommerce, Inc. 2026
+
+AN
+AUTOMATTIC
+EXPERIMENT
+Use of your personal data
+We and our partners process your personal data (such as browsing data, IP Addresses, cookie information, and other unique identifiers) based on your consent and/or our legitimate interest to optimize our website, marketing activities, and your user experience.
+Customize
+Accept all

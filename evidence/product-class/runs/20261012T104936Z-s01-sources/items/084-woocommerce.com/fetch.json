@@ -1,0 +1,19 @@
+{
+ "n": 84,
+ "url": "https://woocommerce.com/document/woopayments/account-management/",
+ "dir": "items/084-woocommerce.com",
+ "fetched_at": "2026-10-12T10:50:55Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/woopayments/account-management/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 48019,
+ "cited_in": [
+  "S01-WC-C168",
+  "S01-WC-C169"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "a999f319631b816065cc358cc722bab7214cc527fb0837fe524409ab613a9771",
+ "raw_ext": "html"
+}

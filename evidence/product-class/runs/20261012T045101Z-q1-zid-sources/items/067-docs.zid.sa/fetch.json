@@ -1,0 +1,19 @@
+{
+ "n": 67,
+ "url": "https://docs.zid.sa/view-order-12479054e0.md",
+ "dir": "items/067-docs.zid.sa",
+ "fetched_at": "2026-10-12T04:52:05Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.zid.sa/view-order-12479054e0.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 121958,
+ "cited_in": [
+  "ZD-S-0094",
+  "ZD-S-0811"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "5b510504f28483c21b04dd3057f0cc486152b07c30c4976d92eb6cc961019ace",
+ "raw_ext": "txt"
+}

@@ -1,0 +1,19 @@
+{
+ "n": 75,
+ "url": "https://s3.global-e.com/policies/shopify/ww-merchant-terms-v3.html",
+ "dir": "items/075-s3.global-e.com",
+ "fetched_at": "2026-10-12T10:50:49Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://s3.global-e.com/policies/shopify/ww-merchant-terms-v3.html",
+ "content_type": "text/html",
+ "bytes": 30988,
+ "cited_in": [
+  "S01-SH-C338",
+  "S01-SH-C339"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "8e069531509ac0944f2165d2f812a29a0e0950dd600c8c66803b4d0dc0320947",
+ "raw_ext": "html"
+}

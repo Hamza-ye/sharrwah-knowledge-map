@@ -1,0 +1,22 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 08:30:28 GMT
+content-type: text/html;charset=utf-8
+set-cookie: AWSALB=oSu0megx6EoKbR+MTdeC2Ylp2xJS0TULzKuCBwYAdwYhQyaBv17wiWfsL5JTeuEb57NfpcsQtIRYjBf+YGBPynWrmF06/hn0lPKtT+xB/JqVWa9nlyUnxsCyq7cz; Expires=Sat, 17 Oct 2026 08:30:27 GMT; Path=/
+set-cookie: AWSALBCORS=oSu0megx6EoKbR+MTdeC2Ylp2xJS0TULzKuCBwYAdwYhQyaBv17wiWfsL5JTeuEb57NfpcsQtIRYjBf+YGBPynWrmF06/hn0lPKtT+xB/JqVWa9nlyUnxsCyq7cz; Expires=Sat, 17 Oct 2026 08:30:27 GMT; Path=/; SameSite=None; Secure
+server: Apache
+sniply-options: BLOCK
+x-frame-options: DENY
+x-content-type-options: nosniff
+set-cookie: JSESSIONID=A36D3E5A5BF3B93279B54A4812959265; Path=/; HttpOnly
+vary: Accept-Encoding,User-Agent
+content-encoding: gzip
+cache-control: private,no-cache,no-store,must-revalidate
+pragma: no-cache
+access-control-allow-credentials: true
+accept-ranges: none
+access-control-allow-origin: https://www.infoq.com
+x-xss-protection: 1; mode=block
+content-security-policy: frame-ancestors 'self'
+

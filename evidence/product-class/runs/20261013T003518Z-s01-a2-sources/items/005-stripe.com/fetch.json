@@ -1,0 +1,23 @@
+{
+ "n": 5,
+ "url": "https://stripe.com/legal/acquirer-disclosure",
+ "dir": "items/005-stripe.com",
+ "fetched_at": "2026-10-13T00:35:28Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://stripe.com/legal/acquirer-disclosure",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 20986,
+ "cited_in": [
+  "S01-WC-C197",
+  "S01-WC-C198",
+  "S01-WC-C199",
+  "S01-WC-C200",
+  "S01-WC-C201",
+  "S01-WC-C202"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "c281798c7665ca10cd24b138d1aeed58c638cb761a8ca8e7319a9701542fac2f",
+ "raw_ext": "html"
+}

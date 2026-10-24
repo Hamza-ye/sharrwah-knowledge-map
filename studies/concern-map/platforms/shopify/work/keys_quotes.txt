@@ -1,0 +1,307 @@
+tos_contracting | Contracting Party. You are contracting with the Shopify Contracting Party or Parties below, based on the billing address of your Store.
+tos_party_us_ca | Shopify Inc., a Canadian corporation
+tos_party_us_tech | Shopify Technology (USA) Inc., a Nevada corporation
+tos_party_apac | Asia Pacific (including Australia, New Zealand, China, Japan, and Singapore)
+tos_party_apac_entity | Shopify Commerce Singapore Pte. Ltd, a corporation formed under the laws of Singapore
+tos_party_other | All other jurisdictions (including EMEA, Europe, the Middle East, Africa, South America, the Caribbean, and Mexico)
+tos_party_other_entity | Shopify International Limited, a private company limited by shares incorporated in Ireland under registration number 560279
+tos_billing_agent | Billing and Collection. Shopify Inc. may act as the billing agent for Shopify Technology (USA) Inc. and/or another Shopify Contracting Party, including to collect and remit Fees and remit taxes in som
+tos_rpaa_canada | Regulated Payment Services (Canada). The Shopify Contracting Party shall be Shopify Payment Activities Inc., solely with respect to any aspect of the Services that are payment activities regulated und
+tos_governing_law | The Terms of Service will be governed by and interpreted in accordance with the laws of the Province of Ontario and the laws of Canada applicable therein, without regard to principles of conflicts of 
+tos_not_marketplace | You acknowledge and agree that the Services are not a marketplace, and any contract of sale made through the Services is directly and only between you and the customer. You are the seller or merchant 
+tos_merchant_responsible_transactions | This includes, but is not limited to, authorizing the charge to the customer in respect of the customer's purchase, determining and collecting taxes, refunds, returns, fulfilling any sales or customer
+tos_not_mor | For the avoidance of doubt, Shopify is not the seller or merchant of record and has no responsibility for your Store, your Materials, the goods or services you may sell through the Services, or any as
+tos_policies_required | You acknowledge and agree to provide public-facing contact information, terms of service, a refund policy, and shipping policies (including order fulfilment timelines) on your Shopify Store.
+tos_use_shopify_checkout | You agree to use Shopify Checkout for any sales associated with your online store.
+tos_no_circumvent_checkout | You agree not to work around, bypass, or circumvent any of the technical limitations of the Services, including to process orders outside Shopify's Checkout
+tos_account_registration | To complete your Account registration, you must provide us with your full legal name, business address, phone number, a valid email address, and any other information indicated as required. Shopify ma
+tos_business_purpose | You confirm that you are receiving any Services provided by Shopify for the purposes of carrying on a business activity and not for any personal, household or family purpose.
+tos_store_owner | the person signing up for the Service by opening an Account will be the contracting party ("Store Owner") for the purposes of our Terms of Service
+tos_staff_accounts | Based on your Shopify pricing plan, you can create one or more staff accounts ("Staff Accounts") allowing other people to access the Account.
+tos_staff_responsibility | With Staff Accounts, the Store Owner can set permissions and let other people work in their Account while determining the level of access by Staff Accounts to specific business information
+tos_paypal_sp_accounts | Upon completion of sign up for the Service, Shopify will create a PayPal Express Checkout account on your behalf, using your Primary Email Address. Depending on your location, Shopify may also create 
+tos_paypal_third_party | For the avoidance of doubt, PayPal Express Checkout is a Third Party Service, as defined in Section 9.9 of these Terms of Service.
+tos_wallet_accounts | We automatically create certain accounts for you to accept payments. You are responsible for activating and deactivating these accounts and complying with their terms, which may be with various third 
+tos_apple_pay | For the avoidance of doubt, Apple Pay is a Third Party Service, as defined in Section 9.9 of these Terms of Service.
+tos_google_pay | For the avoidance of doubt, Google Pay is a Third Party Service, as defined in Section 9.9 of these Terms of Service.
+tos_meta_pay | For the avoidance of doubt, Meta Pay is a Third Party Service, as defined in Section 9.9 of these Terms of Service.
+tos_amazon_pay | For the avoidance of doubt, Amazon Pay is a Third Party Service, as defined in Section 9.9 of these Terms of Service.
+tos_domains_renew | Upon purchasing a domain name through Shopify, domain registration will be preset to automatically renew each year so long as your Shopify Account remains active
+tos_availability_jurisdiction | Not all Services or features will be available to all Merchants at all times and we are under no obligation to make any Services or features available in any jurisdiction.
+tos_refuse_materials | It is in Shopify's sole discretion to refuse or remove any Materials from any part of the Services, including if we determine in our sole discretion that the goods or services that you offer through t
+tos_fees_defined | including but not limited to applicable fees relating to the value of sales made through your Store when using all payment providers other than Shopify Payments ("Transaction Fees")
+tos_fees_usd | Unless otherwise indicated, all Fees and other charges are in U.S. dollars, and all payments will be in U.S. currency.
+tos_billing_30_days | Subscription Fees are paid in advance and will be billed in 30 day intervals (each such date, a "Billing Date").
+tos_freeze_unpaid | If we are unable to successfully process payment of Fees using an Authorized Payment Method within 28 days of our initial attempt, we may suspend and revoke access to your Account and the Services.
+tos_fee_taxes_billing_address | To the extent that Shopify charges these Taxes, they are calculated using the tax rates that apply based on the billing address you provide to us.
+tos_merchant_taxes | You are solely responsible for determining, collecting, withholding, reporting, and remitting applicable taxes, duties, fees, surcharges and additional charges that arise from or as a result of any sa
+tos_location_accurate | You must maintain an accurate location in the administrative console of your Shopify Store. If you change jurisdictions you must promptly update your location in the administrative console.
+tos_shopify_tax_terms | Your access to and use of any tools that Shopify offers to you that help you calculate or estimate taxes that arise from or as a result of a sale on your Store ("Shopify Tax") is subject to the Shopif
+tos_shopify_tax_filing_terms | or that help you file such taxes ("Shopify Tax Automated Filing") is subject to the Shopify Tax Automated Filing Terms of Service.
+tos_no_tax_liability | Shopify is not responsible for any of your tax obligations or liabilities related to the use of Shopify's Services.
+tos_materials_license | We do not take ownership of the Materials that you provide to Shopify; however, we do require a license to your Materials.
+tos_additional_services | Shopify may make available certain services, products, applications and tools, in addition to the Services, including but not limited to, Shopify Payments, Shopify Capital, Shopify Shipping, point-of-
+tos_additional_service_terms | Your use of, and access to, any Additional Services is subject to these Terms or, in some cases, may be subject to additional and separate fees, terms, and policies (the "Additional Service Terms").
+tos_network_intelligence | You may disable the setting that powers Enhanced Services ("Shopify Network Intelligence") here, which prevents us from using additional customer Personal Data for Enhanced Services going forward.
+tos_enhanced_services_data | To provide the Enhanced Services, Shopify can use Personal Data from your customers' interactions and transactions with Your Store, with other Merchants, and with Shopify.
+tos_pos_same_processor | If your POS Services are enabled with Shopify Payments, you cannot concurrently use any other payment processing service. The payment gateway used for your POS Services must be the same as that used f
+tos_pos_equipment | Purchase of the POS Equipment is subject to the POS Equipment Agreement, POS Equipment Agreement and Return Policy, applicable to your country.
+tos_pos_fees_locations | The Fees for POS Services will be determined based on the number of locations at which you are using the POS Services.
+tos_shipping_terms | You can purchase shipping labels from within your Shopify administrative console ("Shopify Shipping") for delivery of goods purchased from you. Your use of Shopify Shipping is subject to the Shopify S
+tos_sms_twilio | The SMS Services use third party providers, and your use is subject to Twilio's Acceptable Use Policy, which may be amended from time to time.
+tos_theme_designer | The intellectual property rights of the Theme remain the property of the designer.
+tos_theme_support | Technical support for a Theme is the responsibility of the designer, and Shopify accepts no responsibility to provide such support.
+tos_email_sendgrid | Shopify's Email Services utilize Third Party Providers, including SendGrid (a Twilio Company).
+tos_email_content_scanning | Shopify employs certain controls to scan the content of emails you deliver using the Email Services prior to delivery ("Content Scanning").
+tos_shop_app | Shop is a Shopify application that is available to Eligible Merchants (defined below) ("Shop", more details here) to engage with customers that use Shop (each, a "Shop User").
+tos_shop_transaction_on_store | While Shop enables Shop Users to shop natively, the transaction is completed on your Shopify Store.
+tos_third_party_services | Such Third Party Services are made available only as a convenience, and your purchase, access or use of any such Third Party Services is solely between you and the applicable third party services prov
+tos_third_party_no_control | You acknowledge that Shopify has no control over Third Party Services or Third Party Providers and will not be responsible or liable to you or anyone else for such Third Party Services or Third Party 
+tos_third_party_disable | Shopify does not guarantee the availability of Third Party Services and you acknowledge that Shopify may disable access to any Third Party Services at any time in its sole discretion and without notic
+tos_third_party_data_share | If you install or enable a Third Party Service for use with the Services, you grant us permission to share on your behalf, or allow the applicable Third Party Provider to access your data and other Ma
+tos_tax_calculators_reference | In particular, tax calculators should be used for reference only and not as a substitute for independent tax advice
+tos_google_maps | Google Maps is a Third Party Service that is used within the Services.
+tos_revenue_share | In some instances, Shopify may receive a revenue share from Third Party Providers that Shopify recommends to you or that you otherwise engage.
+tos_beta | Beta Services are not part of the Services, and Beta Services may be subject to additional terms and conditions, which Shopify will provide to you prior to your use of the Beta Services.
+tos_pixel_manager | Shopify allows you to add pixels to your Shopify Store to enable you or a third party to track customer events (the "Shopify Pixel Manager").
+tos_pixel_consents | If you use the Shopify Pixel Manager, you are responsible for obtaining all necessary consents from store visitors and customers whose events you track.
+tos_audiences | If you use Shopify Audiences, your use is subject to the Shopify Audiences Terms and Conditions.
+tos_checkout_extensibility | Shopify allows you to use extensions to customize your checkout ("Shopify Checkout Extensibility").
+tos_checkout_ext_responsible | If you use Checkout Extensions, you're responsible for your own compliance, which could include getting all necessary consents from your customers and website visitors. Shopify can disable extensions 
+tos_agentic_storefronts | If you use Shopify Agentic Storefronts, your use is subject to the Agentic Storefronts Supplemental Terms of Service.
+tos_privacy_customer_data | Shopify's collection, use, disclosure and processing of Your Customer Personal Data (as defined in the Data Processing Addendum) is subject to these Terms, our Data Processing Addendum, and our Consum
+tos_pci | Where the Services involve Shopify storing, processing or transmitting "Account Data" (as defined under PCI DSS) on your behalf, Shopify acknowledges that it is responsible for securing such Account D
+tos_suspend_any_reason | Without limiting any other remedies, we may suspend or terminate your Account or the Terms of Service for any reason, without notice and at any time (unless otherwise required by law)
+tos_fee_change_notice | Shopify may change the Fees for the Services from time-to-time. We will provide you with 30 days advanced notice prior to any changes in Fees
+tos_incorporates | including Shopify's Acceptable Use Policy ("AUP") and Privacy Policy, and, if applicable, the Supplementary Terms of Service for E.U. Merchants ("EU Terms"), the Shopify API License and Terms of Use (
+tos_platform_scope | Shopify provides a complete commerce platform that enables merchants to unify their commerce activities.
+spt_role | The Shopify Payments service ("Shopify Payments" or the "Payments Services") is Shopify's integrated payments solution that arranges for the financial services you need to accept payments
+spt_agent | You hereby appoint us as your agent to deliver information and instructions on your behalf to one or more payment processors that provide such financial services (each a "Payment Processor") or other 
+spt_not_licensed | None of the Shopify entities listed above are licensed as a bank, payment institution, or money services business, but are instead, respectively, a supplier of the Payments Services under this Agreeme
+spt_payfac | In certain Designated Countries, pursuant to separate Payment Facilitator Terms, a Shopify affiliate acts as a Payment Facilitator (as defined in the Payment Facilitator Terms) to facilitate your acce
+spt_processor_list | The processing and settlement of Transactions ("Payment Processing") is carried out by one or more Payment Processors and any of its Financial Services Providers under the separate terms of service id
+spt_not_party_processor | Shopify is not a party to any of the Payment Processor Terms and is not liable to you in respect thereof.
+spt_shopify_chooses_processor | You authorize Shopify to determine which Payment Processor Account(s) we will facilitate opening on your behalf, and where you have multiple Payment Processor Accounts, which Payment Processor shall p
+spt_change_processors | We reserve the right to change the Payment Processors, subject to the terms of our agreement with each Payment Processor.
+spt_processor_role | The Payment Processor's role in relation to the Payments Services is to accept and process payment transactions, and/or to settle funds (which for purposes of this Agreement includes cryptocurrency) f
+spt_coinbase | Coinbase is not a Payment Processor, and agreeing to the Coinbase Terms does not result in the creation of a Payment Processor Account or any custodial customer relationship with Coinbase.
+spt_designated_country_role | Your Role. To utilize the Payments Services, you must be a business located in your Designated Country.
+spt_stripe_p2pe | This P2PE Service is provided, managed, and processed exclusively by Stripe and is designed to encrypt cardholder data at the point of interaction.
+spt_payment_methods_toggle | You may enable or disable Payment Methods available through Shopify Payments at any time through your Shopify Admin. Shopify or the Payment Processor may add or remove support for one or more types of
+spt_managed_payment_features | The Payments Services may include features that manage your customer's checkout experience for you ("Managed Payment Features").
+spt_merchant_chargebacks | and (v) all refunded, reversed or charged back transactions regardless of the reason for, or timing of the refund, reversal, chargeback or other dispute.
+spt_processor_settlement | The Payment Processor retains sole and exclusive responsibility for Payment Processing, including the settlement of funds
+spt_no_dispute_rights | Shopify does not offer any dispute rights to your customers and will not facilitate the resolution of disputes, including without limitation by accepting, investigating, or resolving your customers' d
+spt_taxes_merchant | You have sole and exclusive responsibility to determine what, if any, taxes apply to the sale of your goods and services and/or the payments you receive in connection with your use of the Payments Ser
+spt_tax_reports | Shopify retains the right, but not the obligation, at its sole discretion, to complete and file tax or related reports with tax authorities regarding Transactions in those jurisdictions where Shopify 
+spt_pci | Where the Payments Services involve Shopify storing, processing or transmitting "Account Data", as defined under Payment Card Industry Data Security Standards ("PCI DSS"), on your behalf, Shopify ackn
+spt_match_list | You acknowledge that the Payment Processors are required to report your business name and the name of your principals to the Member Alert to Control High-Risk merchants list of MasterCard ("MATCH List
+spt_processor_independent_controller | Each Payment Processor may also process your personal data or Customer Payment Data as an independent controller, for example, to comply with their own regulatory and legal obligations, including know
+spt_processor_sanctions_controller | the applicable Payment Processor may also process personal data as an independent controller for certain processing activities, including but not limited to complying with KYC/AML, sanctions, and othe
+spt_eu_data_sil | Where a data subject is located in the U.K. or the European Economic Area, that data subject's personal data will be processed by Shopify International Limited in accordance with our Privacy Policy.
+spt_data_transfer_ca_us | As part of providing the Payments Services, this personal data may be transferred to other regions, including to Canada and the United States.
+spt_no_aggregator | (iii) act as a payment intermediary or aggregator or otherwise resell the Payments Services on behalf of any third party
+spt_registration_business | The Payments Services are only made available to persons in the Designated Country that operate a business selling goods and services.
+spt_registration_processor_accounts | You understand that by registering for a Shopify Payments Account, you are also registering for one or more Payment Processor Account(s) under the Payment Processor Terms
+spt_verification_underwriting | The Payment Processors may hold funds in your Shopify Payments Account while awaiting the information requested above.
+spt_designated_country | The Payments Services and Shopify Payments Account may only be used in the Designated Country.
+spt_prohibited_businesses | Prohibited Business and Restricted Business categories may be imposed by law or through the Payment Network Rules, by Shopify or the requirements of a Payment Processor's Financial Services Providers.
+spt_prohibited_lists_by_processor | The types of business categories and business practices that are considered Prohibited Businesses or Restricted Businesses are provided by each Payment Processor in your Designated Country and can be 
+spt_processing_fees | Processing Fees shall be collected from you by the applicable Payment Processor on our behalf in accordance with the Payment Processor Terms.
+spt_security_interest | As security for performance of your obligations under this Agreement, you grant us a first priority lien and security interest on all funds processed and deposited into all bank accounts, cryptocurren
+spt_reserves | We, in our discretion, will set the terms of any Reserve Account and notify you of such terms, which may require that a certain amount (including the full amount) of the funds received for a Transacti
+spt_reserve_no_interest | (i) you are not entitled to any interest or other compensation associated with the funds held in the Reserve Account; (ii) you have no right to direct that account; (iii) you have no legal interest in
+spt_dispute_programs | We may enroll you in automated dispute resolution programs, including those offered by Payment Networks, if we determine, in our sole discretion, that there is an elevated risk of chargebacks or dispu
+spt_contest_chargebacks | You or Shopify may elect to contest chargebacks or other disputes assessed to your account.
+spt_substitute_processor | If a Payment Processor terminates its Payment Processor Terms or indicates its intention to do so, or if you elect to cease processing with such Payment Processor, we have the right, but not the oblig
+spt_termination_on_processor_request | or, (iii) upon request of the Payment Network, a Payment Processor, or a provider of Payment Methods including a Card issuer.
+spt_funds_custody | Any funds in the Financial Services Provider's custody will be paid out to you subject to the Payment Processor Terms.
+spt_platform_terms_survive | Termination of this Agreement will not necessarily terminate your Shopify Platform Terms, unless Shopify determines otherwise.
+spt_indemnify_processors | Shopify has agreed to indemnify and hold the Payment Processors harmless for some, and, in some cases, all of your liabilities occurring under the Payment Processor Terms
+spt_facilities_ca_us | The Payments Services are controlled and operated from facilities in Canada and the United States.
+spt_sanctions | You may not use the Payments Services if you are a resident of a sanctioned country or region embargoed by the United States, Canada, or the European Union, or are a person or entity blocked or denied
+spt_legal_process | Such Payment Processor or any applicable Financial Services Provider may deliver or hold any funds or any Data as required under such Legal Process, even if you are receiving funds or Data on behalf o
+spt_regional_parts | Part II (Regional Terms) contains region-specific terms that apply to merchants based on their Designated Country (as defined in Part I, Section B4).
+spt_ca_rpaa | Shopify Payment Activities Inc. is registered with the Bank of Canada as a Payment Service Provider under the Retail Payment Activities Act.
+spt_spi_affirm | By using Shop Pay Installments, you accept and agree to be bound by the Shop Pay Installments Terms and the Merchant Agreement (Shop Pay Installments) with Affirm.
+spt_managed_markets_globale | you are also accepting and agreeing to be bound by the Service Terms - Shopify Managed Markets (the "Managed Markets Terms") with Global-e, the merchant of record service provider for Managed Markets.
+spt_managed_markets_not_party | Shopify is not a party to the Managed Markets Terms and we do not assume any liability for Global-e's determination of eligibility, enablement of Managed Markets, or your use of Managed Markets.
+payfac_registered | Our role as Payment Facilitator. Shopify is registered as a Payment Facilitator. Shopify is not licensed as a bank or Acquirer, but is instead a supplier of the services described in this Supplement.
+payfac_agent_of_acquirer | We are acting on behalf of and as agents of the Acquirer.
+payfac_sanctions | Neither you nor your legal representatives, authorized representatives, ultimate beneficial owners, or controlling owners may be subject to trade sanctions imposed by any government or national author
+payfac_kyc | Before you can use the Payment Services, you need to pass our identity and KYC checks.
+payfac_no_cross_border | You agree not to accept or process any cross-border or out-of-jurisdiction transactions except to the extent expressly permitted by us and in accordance with applicable Payment Networks Rules.
+payfac_settlement_hold | Payouts from your sales may be held until you pass all of our onboarding, identity and KYC checks.
+payfac_deregistered | You may also be terminated from a Payment Network if the Payfac is de-registered, the Acquirer loses Payment Network trademark license, or Acquirer ceases to be a customer of the applicable Payment Ne
+payfac_assign_acquirer | You agree and authorize the assignment of this Supplement, without additional approval, to a different Acquirer as determined by us in our sole discretion.
+payfac_amend_acquirer | We may amend Part II at any time, in our sole discretion, including to add, remove, or replace an Acquirer for any Designated Country, or to add a new Designated Country.
+payfac_licensed_by_acquirer | All licensed/regulated services are provided by the Acquirer listed in the respective jurisdiction as outlined below.
+payfac_eu | Payment Facilitator entity: Shopify Payments EU Limited
+payfac_uk | Payment Facilitator entity: Shopify Payments UK Limited
+payfac_acquirer_adyen | Acquirer: Adyen N.V.
+payfac_liability_losses | As between you and Shopify, you bear the risk of any fraudulent, unauthorized, or disputed Transactions you submit.
+ppl_intro | The following tables identify, for each Designated Country, (a) the Payment Processor(s), and (b) the agreements and documents that comprise the Payment Processor Terms.
+ppl_accept_terms | By accepting the Shopify Payments Terms of Service, you accept and agree to be bound by the Payment Processor Terms identified for your Designated Country.
+tos_shop_pay_terms | By using Shop Pay on your Shopify Store, you agree to be bound by the Shop Pay Merchant Terms of Service, as they may be amended by Shopify from time to time.
+spt_entity_ca | Shopify Inc., a Canadian corporation
+spt_entity_us | Shopify Payments (USA) Inc., organized under the laws of Delaware
+spt_entity_eu | Shopify International Limited, organized under the laws of Ireland
+spt_entity_apac | Shopify Commerce Singapore Pte. Ltd., organized under the laws of Singapore
+spt_law_us | The laws of the State of Delaware.
+ppl_bridge | The Bridge entity (an affiliate of Stripe) that applies based on your location.
+ppl_us_stripe | Stripe, Inc.
+ppl_us_paypal | PayPal, Inc.
+ppl_ca_stripe | Stripe Payments Canada, Ltd.
+ppl_mx_stripe | Stripe Payments Mexico, S. de RL de CV.
+ppl_at_adyen | Adyen N.V.
+ppl_at_paypal | PayPal (Europe) S.à r.l. et Cie, S.C.A.
+ppl_at_stripe | Stripe Payments Europe, Limited.
+ppl_ae_stripe | Stripe Payments Europe, Limited, organized under the laws of Ireland
+ppl_cn_aihk | AIHK Markets Limited
+ppl_jp_stripe | Stripe Japan, Ltd.
+ppl_au_stripe | Stripe Payments Australia Pty Ltd.
+ppl_sg_stripe | Stripe Payments Singapore Pte. Ltd.
+spt_entity_eu_countries | Malta, Mexico, Netherlands, Norway, Poland, Portugal, Romania, Slovenia, Spain, Sweden, Switzerland, United Arab Emirates, United Kingdom
+spt_entity_apac_countries | Australia, Hong Kong, Japan, New Zealand, Singapore,
+aup_responsible | The main rule for using Shopify is: you’re responsible for following the rules of your platform, your partners, and the law.
+aup_illegal | You can’t use Shopify to do anything that’s illegal where you do business.
+aup_hipaa | You must likewise respect that certain business activities are not supported by our platform, such as uploading Protected Health Information subject to HIPAA.
+aup_payments_supply_chain | When you use one of these products, you are interacting with an entire supply chain of businesses: for example, Shopify Payments involves an ecosystem of processors, card networks, and banks working t
+aup_partnerships | Shopify offers a range of products and services that leverage partnerships with other organizations.
+aup_shop_channel_rules | Shop sales channel comes with its own merchant guidelines and product eligibility criteria.
+aup_outside_disputes | most product eligibility or takedown disputes that entrepreneurs may encounter originate from outside Shopify, including from regulators and third-party IP rights holders.
+aup_enforcement_levels | we will give you notice, grant you opportunities to self-remediate conflicts, default to enforcement at the product level, and take account-level action as a last resort when appropriate.
+aup_purpose | Our purpose is to empower you, the merchant, to run your business as you see fit and to equip you with the tools and ability to make your own choices.
+priv_canadian_company | We are a Canadian company, but we work with and process data about individuals across the world. To operate our business, we may send your Personal Data outside of your state, province, or country, in
+priv_bcr | If you are in the EEA or Switzerland, when we send your Personal Data to any other Shopify entity outside the EEA or Switzerland, it is transferred in accordance with Shopify's Binding Corporate Rules
+priv_recipient_apac | If you are located in Asia, Australia, or New Zealand, your Personal Data is received by:
+priv_recipient_emea | If you are located in the EEA, the UK, the Middle East, South America, or Africa, your Personal Data is received by:
+priv_recipient_na | If you are located in Canada or the United States, your Personal Data is received by:
+priv_kyc_basis | compliance with a legal obligation to use copies of government-issued identification that you provide us to comply with different laws such as "know your customer", anti-money laundering or anti-terro
+priv_processor_contact_merchant | Where Shopify acts as processor or service provider of your Personal Data on behalf of Shopify merchants, you need to directly contact the merchant you interacted with.
+priv_retention_two_years | If you are a merchant operating a Shopify-powered store, and you close the store, stop paying your subscription fees, or we terminate your account, we retain store information for two years before we 
+priv_merchant_decides_retention | When we process your information as a service provider or processor for the merchant, the merchant, not Shopify, decides how long your information is retained.
+priv_subprocessors_hosting | We work with third party subprocessors for cloud hosting, content delivery, data analysis, internal logging, fulfillment services and email transmission, among others, to provide you with our services
+priv_legal_requests | If a third party requests your Personal Data, we will refuse to share it unless you give us permission or we are legally required.
+dpa_roles | You shall act as a Data Controller and Shopify shall act as a Data Processor with respect to the processing of Your Customer Personal Data, in connection with Your use of our Services that rely on our
+dpa_contracting_entity | by and between You (or "Merchant"), and the Shopify Contracting Entity as set forth in the Terms ("Shopify")
+dpa_global_transfers | You acknowledge that Your Customer Personal Data may be transferred and processed in any country in which Shopify, its affiliated companies or third party service providers are located (including in S
+dpa_subprocessor_objection | To the extent You object to Shopify's use of a Subprocessor, and Shopify is unable or unwilling to accommodate such requests, You may terminate Your use of the impacted Services within 30 days of such
+dpa_subprocessor_liability | Shopify shall be fully liable for the acts and omissions of its Subprocessors to the same extent Shopify would be liable if performing the services of each Subprocessor directly under the terms of thi
+dpa_sil_transfers | Subject to compliance with European Data Protection Laws, Shopify International Ltd. may transfer Your Customer Personal Data processed under this Appendix outside of the EEA, the UK, and Switzerland 
+dpa_enhanced_controller | If you receive Enhanced Services from Shopify (as defined in Section 9.2 of the Terms of Service) Shopify shall process Your Customer Personal Data as a Data Controller or Business as set forth in App
+dpa_breach_notice | Shopify shall provide You with notice, without undue delay, upon becoming aware of a breach of security leading to the accidental or unlawful destruction, loss, alteration, unauthorized disclosure of,
+subp_eea_sil | All personal data from customers in the European Economic Area (EEA), the United Kingdom (U.K.), and Switzerland is initially processed by Shopify International Limited (Ireland).
+subp_gcp | Google Cloud Canada Corporation
+subp_gcp_service | Cloud hosting and data processing
+subp_aws | Amazon Web Services, Inc.
+subp_all_platform_data | <td>All platform data</td>
+subp_cloudflare | Load balancing and DDoS protection
+subp_stripe_adyen | Personal data as necessary to provide Shopify Payments functionality
+subp_ai_sidekick | Personal data if input to or included in a response by Shopify Sidekick
+subp_messaging | Personal data as necessary to provide messaging functionality
+subp_affiliates_shopify_inc | Providing the Shopify platform and other related services to Shopify International Limited and to Shopify Commerce Singapore Pte. Ltd.
+subp_capital_inc | <td scope="row">Shopify Capital Inc.</td>
+subp_payments_usa | <td scope="row">Shopify Payments (USA) Inc.</td>
+subp_notifications | To receive notifications about new subprocessors, click **Sign up for notifications** and complete the registration.
+eu_sil_party | As used in these Supplementary Terms of Service (“P2B Terms”), “we”, “us” and “Shopify” means Shopify International Limited
+eu_out_of_scope | Additionally, if you use additional Shopify services, products, applications and tools, such as Shopify Payments, Shopify Capital, and Shopify Shipping (“Out of Scope Services”), the separate term
+eu_delete_90_days | Within 90 days of termination all personal information within your Store is deleted except as legally required.
+eu_complaints | Shopify has an internal complaint-handling system that is available to you free of charge.
+eu_irish_law | The EU Terms are governed by and construed in accordance with the laws of the country of Ireland.
+eu_shop_app_ranking | your Products will be marketed to consumers who download and access the mobile application known as the “Shop App”.
+eu_shopify_access | Shopify has the technical ability and right to access all data provided by you and/or by your customers and/or generated through Shopify's provision to you of the P2B Services.
+api_parties | By accessing or using the Shopify API, you agree to this Shopify API License and Terms of Use (“Terms”) with Shopify Inc. and its affiliates (“we”, “our”, “us” or “Shopify”).
+api_partner_account | Developer must obtain an API Client by registering for a Partner Account and agreeing to and complying with the terms and conditions of the Partner Program Agreement
+api_no_alt_checkout | not, except with Shopify’s express written authorization, (i) use an alternative to Shopify Checkout for checkout or payment processing for Shopify Merchants
+api_developer_responsible | Developer must inform Merchants in the Merchant Agreement that: (i) Developer is solely responsible for the Application; (ii) Shopify is not liable for any fault in the Application or any harm that ma
+api_developer_privacy_policy | Developer will have in place and will present the Merchant with a privacy policy that complies with all applicable privacy laws
+api_delete_30_days | delete all originals, copies and reproductions of the Merchant Data within 30 days when (A) the Merchant uninstalls the Application
+api_data_limits | except as necessary to provide the Application services to the Merchant to whom the Merchant Data relates and as described in the applicable Merchant Agreement or Developer Privacy Policy, and only wi
+api_owns_platform | You’ll still own your app, but Shopify owns the platform. As owners of the platform, we put reasonable limits on the use of the merchant data it allows you to access.
+api_no_ai_training | (i) create, develop, train, fine tune, or improve any machine learning or artificial intelligence systems, models, or technologies, including large language models
+api_audit | Shopify shall have the right to audit, or to appoint an independent auditor under appropriate non-disclosure conditions to audit Developer’s App, systems and records to confirm Developer’s complia
+api_consent_api | integrate with Shopify's Consent Tracking API (also referred to as the "Customer Privacy API")
+api_ontario_law | The Terms shall be governed by and interpreted in accordance with the laws of the Province of Ontario and the laws of Canada applicable therein
+priv_eea_ireland | Your information is then sent to other Shopify locations and to service providers who may be located in other regions, including Canada (where we are headquartered) and the United States.
+priv_eea_ireland_receiver | If you are located in the EEA, the UK, or Switzerland, your Personal Data is received by our Irish affiliate, Shopify International Ltd.
+tos_store_owner_responsible | The Store Owner is responsible for the Account, is bound by these Terms of Service and is responsible for the actions of others accessing the Account.
+tos_signup_binds | By signing up for a Shopify Account (as defined in Section 1) or by using any Shopify Services (as defined below), you are agreeing to be bound by the following terms and conditions (the "Terms of Ser
+tos_password | You are responsible for keeping your password secure. Shopify cannot and will not be liable for any loss or damage from your failure to maintain the security of your Account and password.
+tos_store_owner_staff | The Store Owner is responsible for: (a) ensuring its employees, agents and subcontractors, including via Staff Accounts, comply with these Terms of Service; and (b) any breach of these Terms of Servic
+tos_cancel | You may cancel your Account and terminate the Terms of Service at any time by contacting Shopify Support and then following the specific instructions indicated to you in Shopify's response.
+tos_survive_obligations | (a) you will remain responsible for performing all of your obligations in connection with transactions entered into before termination and for any liabilities that accrued before or as a result of ter
+tos_subscription_fees | You will pay the Fees applicable to your subscription to Online Service and/or POS Services ("Subscription Fees")
+tos_fee_taxes_merchant | You are responsible for all applicable Taxes that arise from or as a result of your subscription to or purchase of Shopify's products and services.
+tos_merchant_store | You are responsible for the creation and operation of your Shopify Store, your Materials, the goods and services that you may sell through the Services, and all aspects of the transactions between you
+tos_merchant_store_summary | You are responsible for your Shopify Store, the goods or services you sell, and your relationship with your customers, not us.
+tos_one_store_owner | Your Shopify Store can only be associated with one Store Owner. A Store Owner may have multiple Shopify Stores.
+tos_third_party_admin_access | You may choose to allow Third Party Providers access to certain parts of your Admin and control their access levels.
+tos_third_party_relationship | The relationship between you and any Third Party Provider is strictly between you and such Third Party Provider, and Shopify is not obligated to intervene in any dispute arising between you and a Thir
+help_contracting_entities | Shopify International Limited: An Irish-registered entity contracting with merchants in Europe, the Middle East, and Africa (EMEA) and Latin America (LATAM).
+help_contracting_entities_us | Shopify Inc.: A Canadian-registered entity contracting with merchants in the United States or Canada.
+help_contracting_entities_apac | Shopify Commerce Singapore Pte. Ltd.: A Singapore-registered entity contracting with merchants in Asia-Pacific (APAC).
+help_consumer_services_controller | When a customer uses Shopify Consumer Services, such as Shop or Shop Pay, then Shopify is directly engaged by the customer and Shopify acts as the data controller or business.
+role_org_admin | The organization administrator has full access to all organization settings and can manage all users and roles.
+role_collaborator | A collaborator may access stores they have been given access to by an organization admin or owner.
+role_admin | The administrator has full access to all settings and can manage all users and roles.
+be_definition | A business entity is the registered business, or the individual, that your store operates as. Your business entity is used to verify your business, and it determines the information that you need to p
+be_settings | If you have access to organizations, then you can manage and add new business entities from the [**Organization**](https://admin.shopify.com/settings/organization-details) page of your Shopify admin.
+be_financial_lock | then you need to deactivate all financial services before you can change your business entity.
+be_billing_country | The country of your billing address must match the country of one of your active business entities.
+be_market_per_entity | When selling with business entities, you need to [add a new market](/manual/markets/getting-started/set-up-markets#create-market) for each entity.
+me_plan | Selling from multiple entities with Shopify Payments is available only for organizations on the Shopify Plus and Shopify Enterprise Commerce plan.
+me_what | This lets you streamline your business operations, operate multiple legal entities within the same country, expand internationally, and manage payouts and orders in the same store.
+me_only_sp | Selling with multiple entities is available only with Shopify Payments.
+me_domestic_processing | **Domestic card processing**: Process transactions in an entity's domestic currency from a single store, avoiding international and foreign exchange fees.
+me_markets_assign | Markets control which entity processes transactions for a given region.
+me_own_account | Each entity has its own Shopify Payments account, payout currency, and bank account, so you need to complete this process for every entity that you want to activate.
+me_no_marketplace | You can't use multi-entity to split payments between businesses or manage commission-based arrangements between separate business owners.
+sp_2fa | To use Shopify Payments, you must secure your account with <a href="/en/manual/your-account/logging-in/secure-sign-in">two-step authentication</a>.
+sp_2fa_reason | If you deactivate two-step authentication in the future, then you expose your account and financial information to potential criminal attacks.
+idv_reason | Identity verification protects your business from impersonation, account takeovers, and fraudulent activities. This process helps Shopify comply with financial regulations and keeps your business and 
+idv_store_owner | In most cases, [the store owner](/manual/your-account/users/roles/roles-managed-by-shopify#owner-roles) is required to complete the identity verification request.
+idv_when | - Applying for Shopify Capital or Credit
+idv_restricted | Certain Shopify account features might be restricted until verification is complete.
+lcb_usd | For accounting reasons, most Shopify bills are charged in US dollars, but merchants in some supported countries can be charged in their local currency.
+lcb_others_usd | For all other countries and regions, Shopify bills are issued in USD.
+lcb_by_address | The billing currencies that are available to you are determined by the country of your billing address.
+appch_on_bill | These charges are for the recurring use of an app, such as a monthly subscription payment. This cost is included in your regular Shopify subscription bill.
+appch_external | Some third-party apps charge you directly outside of Shopify. These external charges aren&#39;t displayed on your Shopify bill.
+appch_refund_developer | **Paid charge**: The charge is displayed on a past bill and payment has been collected. To request a refund, [contact the app developer](#request-app-refund).
+tptf_reason | Third-party transaction fees cover the cost for Shopify to provide a secure checkout platform and integrate with external payment providers.
+tptf_plan | Transaction fees vary depending on the [Shopify plan](https://www.shopify.com/pricing) that you choose
+tptf_exempt_sp | When you use [Shopify Payments](/manual/payments/shopify-payments), you aren't charged third-party transaction fees for orders that are processed using the following payment methods:
+tptf_store_credit | When an order includes [store credit](/manual/customers/store-credit) or [gift cards](/manual/products/gift-card-products) as a payment method, on Shopify stores created on or after May 12, 2025.
+tptf_pos_manual | Transaction fees don't apply for POS orders or for [manual payment methods](/manual/payments/manual-payments)
+billtax_sa_uae | This page provides a detailed guide on how Value-Added Tax (VAT) charges are applied at 15% in Saudi Arabia and 5% in the United Arab Emirates (UAE).
+billtax_sa_exempt | If you have a VAT number, then your Shopify bill might be exempt from VAT charges.
+billtax_profile | In the **Tax registration** section, click **Enter Tax ID number**.
+app_pricing_reason | Shopify App Pricing creates a predictable, trustworthy, and standardized experience for app users and makes pricing easier to set up and maintain.
+app_pricing_invoice | **Simplified payment process**: Charges are directly added to the merchant's Shopify invoice.
+app_pricing_collect | **Revenue sharing**: Shopify collects the charge and automatically pays out your share
+app_pricing_chargebacks | **Chargeback handling**: Shopify handles all chargeback-related processes.
+app_pricing_required | All apps published on the Shopify App Store are required to use a Shopify provided billing solution and adhere to the terms and conditions of the [Shopify Partner Program Agreement](https://www.shopif
+app_pricing_dev_config | you configure subscription plans, usage-based pricing, and free trials in the Partner Dashboard instead of writing billing code.
+ppa_billing_resource | It is the Developer’s responsibility to: (i) obtain Merchant consent to create and issue such charges and (ii) bill the Merchant in compliance with the Merchant Agreement
+ppa_revenue_share | An App Developer that has met certain registration requirements, pays 0% of the total revenues on the first USD $1 million for their App Revenues and pays 15% of the total revenues exceeding the USD $
+ppa_parties | The Agreement is between you, as Partner (as defined below in Section A.1.), Shopify Inc. (“Shopify Inc.”) and Shopify Commerce Singapore Pte. Ltd. (“Shopify Asia”)
+ppa_unsupported_region | “Unsupported Region” means a region where Shopify is unable to operate due to local legal and regulatory requirements, commercial partnerships, and/or other pertinent factors.
+ppa_no_unsupported_transactions | Shopify does not support transactions that involve these regions or persons located in or resident in or items originating from or destined for these regions.
+ppa_payments_approval | All Payments Applications are subject to Shopify's review and approval to ensure compliance with our guidelines, API documentation, and other standards that we deem necessary to protect the integrity 
+ppa_payments_revshare | As part of the Payments Application approval process, all Payments Developers must enter a Revenue Share agreement.
+ppa_payments_wind_down | If Payments Developer wishes to no longer support the Payments Application, the Parties agree to the following arrangement for a period not to exceed six (6) months following the effective date of ter
+ppa_payments_listing | Shopify may approve the Payments Application inclusion in Shopify’s public list of payment gateways and make the Payments Application available to Merchants via Merchants admin.
+ppa_payout_period | Shopify distributes Fees owing to its Partners and amounts due to Partner from Merchants where the Partner uses the Shopify Billing Resource twice per calendar month (each such period, a “Payment Pe
+ppa_ear99 | App Developer represents and warrants that the U.S. export control classification number of each of their Apps is “EAR99”
+ppa_sanctions_warranty | (ii) Partner is not resident or located in or organized under the laws of an Unsupported Region.
+unsupported_intro | Shopify is unable to support business involving certain regions due to local regulatory requirements, commercial partnerships, and/or other pertinent factors.
+unsupported_list_cuba | * Cuba
+unsupported_list_iran | * Iran
+unsupported_list_nk | * North Korea
+unsupported_list_syria | * Syria
+unsupported_list_crimea | * The Crimea region of Ukraine, and the so-called Donetsk and Luhansk People’s Republics in Ukraine
+unsupported_no_account | * Individuals and businesses within unsupported countries and regions are prohibited from creating a Shopify account.
+unsupported_no_access | * Access to storefronts and accounts is prohibited within unsupported countries and regions.
+unsupported_no_products | * Products originating from unsupported countries and regions are prohibited.
+unsupported_no_shipping | * Orders shipping to unsupported countries and regions are prohibited.

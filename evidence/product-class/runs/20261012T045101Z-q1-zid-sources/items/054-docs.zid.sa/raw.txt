@@ -1,0 +1,16 @@
+# Overview
+
+This section describes the Webhook endpoint used to send events to Zid Payments. It outlines all the necessary webhook events and their specifications.
+
+**Path:**
+/api/webhook/v1/thirdpartywebhook
+
+**Request Model:**
+
+| Input Parameter | Type   | Description                                                                                                                                       | Required |
+|-----------------|--------|---------------------------------------------------------------------------------------------------------------------------------------------------|----------|
+| type            | string | Event type<br>Types:<br>“merchant_linked”,<br>“payment_paid”,<br>“refund_status_changed”                                                         | Y        |
+| thirdPartyId    | string | Provider Unique ID,<br>Which is assigned to each provider on the initial phases of the integration                                               | Y        |
+| merchantId      | string | Merchant ID on the provider side                                                                                                                  | Y        |
+| data            | Object | Each Event has its own object dto,<br>Examples:<br>[Link Merchant Event](https://docs.zid.sa/api-17956108),<br>[Payment Paid Event](https://docs.zid.sa/api-17956148),<br>[Refund Event](https://docs.zid.sa/api-17956149)                                    | Y        |
+

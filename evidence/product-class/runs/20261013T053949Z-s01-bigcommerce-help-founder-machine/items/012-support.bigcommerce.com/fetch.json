@@ -1,0 +1,18 @@
+{
+ "n": 12,
+ "url": "https://support.bigcommerce.com/s/article/Automatic-Tax-Setup",
+ "dir": "items/012-support.bigcommerce.com",
+ "fetched_at": "2026-10-13T05:40:05Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://support.bigcommerce.com/s/article/Automatic-Tax-Setup?language=en_US",
+ "content_type": "text/html;charset=UTF-8",
+ "bytes": 190824,
+ "cited_in": [
+  "BC-C-073"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "79478286943cbd74a6bb6e88d703e1f510c72644c11637701149d84bde79d9ba",
+ "raw_ext": "html"
+}

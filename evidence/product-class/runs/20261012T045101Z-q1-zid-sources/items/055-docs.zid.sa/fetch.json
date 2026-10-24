@@ -1,0 +1,18 @@
+{
+ "n": 55,
+ "url": "https://docs.zid.sa/recover-broken-webhooks-37378520e0.md",
+ "dir": "items/055-docs.zid.sa",
+ "fetched_at": "2026-10-12T04:51:53Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.zid.sa/recover-broken-webhooks-37378520e0.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 13537,
+ "cited_in": [
+  "ZD-S-0121"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "1614894c6313684be331c84d11644642304b17e3fabc0cd50fd876c890b8ecb6",
+ "raw_ext": "txt"
+}

@@ -1,0 +1,422 @@
+# List Order Tags
+
+## OpenAPI Specification
+
+```yaml
+openapi: 3.0.1
+info:
+  title: ''
+  description: ''
+  version: 1.0.0
+paths:
+  /v1/managers/order/tags:
+    get:
+      summary: List Order Tags
+      deprecated: false
+      description: >-
+        Returns a list of order tags for the store. Optionally filters the
+        results by tag name.
+
+
+        <Accordion title="🔑Scopes" defaultOpen>
+
+
+        `third_order_read` `third_order_write`- Full read & write access to
+        orders
+         
+        </Accordion>
+      tags:
+        - Default module/Apps/Merchant APIs/Orders/Order Tags
+      parameters:
+        - name: name
+          in: query
+          description: Filters tags by name. Minimum 1 character, maximum 128 characters.
+          required: false
+          example: Priority
+          schema:
+            type: string
+        - name: Authorization
+          in: header
+          description: >-
+            The Authorization token is a unique key given to the third-party
+            application (Partner) by Zid. It is used to authenticate the API
+            requests made by the Partner application. The token verifies the
+            partner's identity and ensures they have permission to access Zid's
+            API but does not provide any specific user or store information. It
+            should be included in the header of API requests when the partner
+            application needs to access Zid's API.
+          required: true
+          example: '{{Autherization}}'
+          schema:
+            type: string
+        - name: Store-ID
+          in: header
+          description: The unique identifier of the order to associate the tag with.
+          required: true
+          example: '{{StoreId}}'
+          schema:
+            type: string
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Response status.
+                    examples:
+                      - object
+                  order_tags:
+                    type: array
+                    description: List of order tags.
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                          format: uuid
+                          description: Unique identifier of the order tag.
+                          examples:
+                            - 550e8400-e29b-41d4-a716-446655440000
+                        name:
+                          type: string
+                          description: Name of the order tag.
+                          examples:
+                            - Priority
+                        store_id:
+                          type: string
+                          format: uuid
+                          description: Identifier of the store the tag belongs to.
+                          examples:
+                            - 660e8400-e29b-41d4-a716-446655440000
+                        user_id:
+                          type: string
+                          format: uuid
+                          description: Identifier of the user who created the tag.
+                          examples:
+                            - 770e8400-e29b-41d4-a716-446655440000
+                        orders:
+                          type: array
+                          description: Orders associated with the tag.
+                          items:
+                            type: string
+                          examples:
+                            - []
+                      x-apidog-orders:
+                        - id
+                        - name
+                        - store_id
+                        - user_id
+                        - orders
+                      x-apidog-ignore-properties: []
+                  message:
+                    type: object
+                    description: Standard response message envelope.
+                    properties:
+                      type:
+                        type: string
+                        description: Message type.
+                        examples:
+                          - object
+                        nullable: true
+                      code:
+                        type: string
+                        description: Message code.
+                        examples:
+                          - null
+                        nullable: true
+                      name:
+                        type: string
+                        description: Message name.
+                        examples:
+                          - null
+                        nullable: true
+                      description:
+                        type: string
+                        description: Message description.
+                        examples:
+                          - null
+                        nullable: true
+                    x-apidog-orders:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-ignore-properties: []
+                x-apidog-orders:
+                  - status
+                  - order_tags
+                  - message
+                examples:
+                  - status: object
+                    order_tags:
+                      - id: 550e8400-e29b-41d4-a716-446655440000
+                        name: Priority
+                        store_id: 660e8400-e29b-41d4-a716-446655440000
+                        user_id: 770e8400-e29b-41d4-a716-446655440000
+                        orders: []
+                    message:
+                      type: object
+                      code: null
+                      name: null
+                      description: null
+                x-apidog-ignore-properties: []
+          headers: {}
+          x-apidog-name: Success
+        '401':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                description: >-
+                  Response returned when the request cannot be authenticated
+                  because the required credentials are missing, invalid, or
+                  expired.
+                properties:
+                  status:
+                    type: string
+                    description: Indicates the overall status of the API response.
+                    examples:
+                      - error
+                  message:
+                    type: object
+                    description: >-
+                      Contains structured details explaining why the request
+                      could not be authenticated.
+                    properties:
+                      type:
+                        type: string
+                        description: Indicates the category of the response message.
+                        examples:
+                          - error
+                      code:
+                        type: string
+                        description: >-
+                          A machine-readable code identifying the authentication
+                          error. Returns null when no specific code is
+                          available.
+                        examples:
+                          - UNAUTHORIZED
+                        nullable: true
+                      name:
+                        type: string
+                        description: >-
+                          A short, human-readable title describing the
+                          authentication error. Returns null when no title is
+                          available.
+                        examples:
+                          - Unauthorized
+                        nullable: true
+                      description:
+                        type: string
+                        description: >-
+                          A human-readable explanation of why the request could
+                          not be authenticated. Returns null when no detailed
+                          explanation is available.
+                        examples:
+                          - >-
+                            Authentication credentials are missing, invalid, or
+                            expired.
+                        nullable: true
+                    required:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-orders:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-ignore-properties: []
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                examples:
+                  - status: error
+                    message:
+                      type: error
+                      code: UNAUTHORIZED
+                      name: Unauthorized
+                      description: >-
+                        Authentication credentials are missing, invalid, or
+                        expired.
+                x-apidog-ignore-properties: []
+              examples:
+                '1':
+                  summary: Example 1
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_MISSING
+                      name: Sorry
+                      description: Please login first.
+                '2':
+                  summary: Example 2
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Login session expired. Please login again.
+                '3':
+                  summary: Example 3
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Invalid authentication
+          headers: {}
+          x-apidog-name: Unauthorized
+        '403':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Indicates that the request failed.
+                    examples:
+                      - error
+                  message:
+                    type: object
+                    description: Details about the authorization error.
+                    properties:
+                      type:
+                        type: string
+                        description: The error message type.
+                        examples:
+                          - error
+                      code:
+                        type: string
+                        description: The error code.
+                        examples:
+                          - ERROR_POPUP_OK
+                      name:
+                        type: string
+                        description: The error name.
+                        examples:
+                          - Sorry
+                      description:
+                        type: string
+                        description: >-
+                          A message indicating that the caller does not have the
+                          required permission.
+                        examples:
+                          - Permission Denied
+                      required_permissions:
+                        type: array
+                        description: The permissions required to perform the operation.
+                        items:
+                          type: string
+                          description: A required permission.
+                          examples:
+                            - bundle.offers.manage
+                        examples:
+                          - - bundle.offers.manage
+                    x-apidog-orders:
+                      - type
+                      - code
+                      - name
+                      - description
+                      - required_permissions
+                    x-apidog-ignore-properties: []
+                x-apidog-orders:
+                  - status
+                  - message
+                x-apidog-ignore-properties: []
+          headers: {}
+          x-apidog-name: Forbidden
+        '500':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Status of the error.
+                  message:
+                    $ref: '#/components/schemas/ResponseEnvelopMessage'
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                x-apidog-ignore-properties: []
+              example:
+                status: error
+                message:
+                  type: error
+                  code: MSG_HIDDEN
+                  name: Error
+                  description: Internal Server Error
+          headers: {}
+          x-apidog-name: Internal Server error
+      security: []
+      x-apidog-folder: Default module/Apps/Merchant APIs/Orders/Order Tags
+      x-apidog-status: released
+      x-run-in-apidog: https://app.apidog.com/web/project/613905/apis/api-42257648-run
+components:
+  schemas:
+    ResponseEnvelopMessage:
+      type: object
+      properties:
+        type:
+          type: string
+          description: Type of response message returned by the API.
+          examples:
+            - success
+        code:
+          type: string
+          description: Response code returned by the API, if available.
+          examples:
+            - MSG_POPUP_OK
+          nullable: true
+        name:
+          type: string
+          description: Name or title of the response message, if available.
+          examples:
+            - Coupons
+          nullable: true
+        description:
+          type: string
+          description: Detailed description of the response message, if available.
+          examples:
+            - Coupons created successfully
+          nullable: true
+      required:
+        - type
+        - code
+        - name
+        - description
+      description: Additional response metadata.
+      x-apidog-orders:
+        - type
+        - code
+        - name
+        - description
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+  securitySchemes: {}
+servers:
+  - url: https://api.zid.sa/
+    description: Prod Env
+security: []
+
+```

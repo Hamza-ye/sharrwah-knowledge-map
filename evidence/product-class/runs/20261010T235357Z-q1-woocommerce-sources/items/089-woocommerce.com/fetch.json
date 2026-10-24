@@ -1,0 +1,22 @@
+{
+ "n": 89,
+ "url": "https://woocommerce.com/product-category/woocommerce-extensions/shipping-delivery-and-fulfillment/",
+ "dir": "items/089-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:07Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/product-category/woocommerce-extensions/shipping-delivery-and-fulfillment/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 49114,
+ "cited_in": [
+  "WC-S-0712",
+  "WC-S-0713",
+  "WC-S-0714",
+  "WC-S-0715",
+  "WC-S-0716"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "44ccff230e2180ca7fc5af3c3f4656668eba7fc9aa1a5cb0cc31d04b8ad2f2e9",
+ "raw_ext": "html"
+}

@@ -1,0 +1,32 @@
+{
+ "n": 40,
+ "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/settings.md",
+ "dir": "items/040-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:19:55Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/settings.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 848,
+ "cited_in": [
+  "BC-S-0009",
+  "BC-S-0018",
+  "BC-S-0019",
+  "BC-S-0027",
+  "BC-S-0030",
+  "BC-S-0031",
+  "BC-S-0056",
+  "BC-S-0057",
+  "BC-S-0230",
+  "BC-S-0234",
+  "BC-S-0235",
+  "BC-S-0236",
+  "BC-S-0241",
+  "BC-S-0302",
+  "BC-S-0382"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "9fe8b46ba9d61b59cea69cc45f94c06700a46922e48f693f340d06a27520fa4b",
+ "raw_ext": "txt"
+}

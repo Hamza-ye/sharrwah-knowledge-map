@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>A Packwerk Retrospective | Rails at Scale</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="A Packwerk Retrospective" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="In September, 2020, our team at Shopify released a Ruby gem named Packwerk, a tool to enforce boundaries and modularize Rails applications. Since its release, Packwerk has taken on a life of its own, inspiring blog posts, conference talks, and even an entire gem ecosystem. Its popularity is an indication that Packwerk clearly filled a void in the Rails community." />
+<meta property="og:description" content="In September, 2020, our team at Shopify released a Ruby gem named Packwerk, a tool to enforce boundaries and modularize Rails applications. Since its release, Packwerk has taken on a life of its own, inspiring blog posts, conference talks, and even an entire gem ecosystem. Its popularity is an indication that Packwerk clearly filled a void in the Rails community." />
+<link rel="canonical" href="https://railsatscale.com/2024-01-26-a-packwerk-retrospective/" />
+<meta property="og:url" content="https://railsatscale.com/2024-01-26-a-packwerk-retrospective/" />
+<meta property="og:site_name" content="Rails at Scale" />
+<meta property="og:image" content="https://railsatscale.com/2024-01-26-a-packwerk-retrospective/502306c2f3dbd75ba4e356635787e9f420d716a6.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-01-26T00:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://railsatscale.com/2024-01-26-a-packwerk-retrospective/502306c2f3dbd75ba4e356635787e9f420d716a6.png" />
+<meta property="twitter:title" content="A Packwerk Retrospective" />
+<meta name="twitter:site" content="@shopifyeng" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-01-26T00:00:00+00:00","datePublished":"2024-01-26T00:00:00+00:00","description":"In September, 2020, our team at Shopify released a Ruby gem named Packwerk, a tool to enforce boundaries and modularize Rails applications. Since its release, Packwerk has taken on a life of its own, inspiring blog posts, conference talks, and even an entire gem ecosystem. Its popularity is an indication that Packwerk clearly filled a void in the Rails community.","headline":"A Packwerk Retrospective","image":"https://railsatscale.com/2024-01-26-a-packwerk-retrospective/502306c2f3dbd75ba4e356635787e9f420d716a6.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://railsatscale.com/2024-01-26-a-packwerk-retrospective/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://railsatscale.com/assets/images/ras_icon_navy.png"}},"url":"https://railsatscale.com/2024-01-26-a-packwerk-retrospective/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://railsatscale.com/feed.xml" title="Rails at Scale" /><script async src="https://www.googletagmanager.com/gtag/js?id=G-L89JYZLFTR"></script>
+<script>
+  window['ga-disable-G-L89JYZLFTR'] = window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1";
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){window.dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-L89JYZLFTR');
+</script>
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png?v=1">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png?v=1">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png?v=1">
+<link rel="manifest" href="/assets/images/site.webmanifest?v=1">
+<link rel="mask-icon" href="/assets/images/safari-pinned-tab.svg?v=1" color="#5bbad5">
+<link rel="shortcut icon" href="/assets/images/favicon.ico?v=1">
+<meta name="apple-mobile-web-app-title" content="Rails At Scale">
+<meta name="application-name" content="Rails At Scale">
+<meta name="theme-color" content="#ffffff">
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: false });
+  await mermaid.run({ querySelector: 'pre > code.language-mermaid' });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">
+      <img class="logo logo-ras" src="/assets/images/ras_icon_navy.svg" alt="" aria-hidden="true">
+      <span class="site-title-text">Rails at Scale</span>
+      <span class="site-sep" aria-hidden="true"></span>
+      <img class="logo logo-shopify" src="/assets/images/shopify_glyph_black.svg" alt="Shopify">
+    </a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">A Packwerk Retrospective</h1>
+    <p class="post-meta"><time class="dt-published" datetime="2024-01-26T00:00:00+00:00" itemprop="datePublished">
+        2024-01-26
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <span class="p-author h-card" itemprop="name"><a href="/authors/gannon-mcgibbon/">Gannon McGibbon</a></span>, </span>
+<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <span class="p-author h-card" itemprop="name"><a href="/authors/chris-salzberg/">Chris Salzberg</a></span></span>
+</p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<p>In September, 2020, our team at Shopify <a href="https://shopify.engineering/enforcing-modularity-rails-apps-packwerk">released</a> a Ruby gem named <a href="https://github.com/Shopify/packwerk">Packwerk</a>, a tool to enforce boundaries and modularize Rails applications. Since its release, Packwerk has taken on a life of its own, inspiring blog posts, conference talks, and even an entire gem ecosystem. Its popularity is an indication that Packwerk clearly filled a void in the Rails community.</p>
+
+<p>Packwerk is a static analysis tool, similar to tools like <a href="https://rubocop.org/">Rubocop</a> and <a href="https://sorbet.org/">Sorbet</a>. Applied to a codebase, it analyzes constant references to help decouple code and organize it into well-defined packages.</p>
+
+<p>But Packwerk is more than just a tool. Over the years, Packwerk’s approach to modularity has come to embody distinct and sometimes conflicting perspectives on code organization and its evolution. Packwerk’s feedback can change the entire trajectory of a codebase to a degree that distinguishes it from other tools of its kind.</p>
+
+<p>This retrospective is our effort, as the team that developed Packwerk at Shopify, to shine a light on our learnings working with the tool, concerns about its use, and hopes for its future.</p>
+
+<h2 id="origins-of-packwerk">Origins of Packwerk</h2>
+
+<h3 id="packwerk-as-a-dependency-management-tool">Packwerk as a Dependency Management Tool</h3>
+
+<p><em>“I know who you are and because of that I know what you do.” This knowledge is a dependency that raises the cost of change.
+– Sandi Metz, Practical Object-Oriented Design in Ruby</em></p>
+
+<p>Sandi Metz’ quote above captures the spirit from which Packwerk was born. The premise is simple. To use Packwerk, you must first do two things:</p>
+
+<ol>
+  <li>Define a set of <a href="https://github.com/Shopify/packwerk/blob/main/USAGE.md#what-is-a-package">packages</a>, captured in (possibly nested) file directories.</li>
+  <li>Define a non-circular set of dependency relationships between these packages.</li>
+</ol>
+
+<p>With this done, you can then run Packwerk’s command-line tool, which will tell you where constants from one package reference constants from another package in ways that violate your stated dependency graph. Violations can be temporarily “allowed” via todo files (<code class="language-plaintext highlighter-rouge">package_todo.yml</code>); this makes it possible to “declare bankruptcy” in a codebase by generating a todo file for existing violations and using Packwerk to prevent new ones from creeping in.</p>
+
+<p>The pursuit of a well-defined dependency graph in this way should, in theory, make application code more modular and less coupled. If a section of an application needs to be moved, it can be done more easily if its dependencies are explicitly defined. Conversely, circular dependencies tangle up code and make it more difficult to understand and refactor.</p>
+
+<h3 id="packwerk-as-a-privacy-enforcer">Packwerk as a Privacy Enforcer</h3>
+
+<p><em>In the metaphor of carrots and sticks, privacy is sugar. It’s easy to understand and has broad appeal, but it may not actually be good for you.
+– Philip Müller, original author of Packwerk (<a href="https://github.com/Shopify/packwerk/discussions/219">link</a>)</em></p>
+
+<p>Packwerk acquired an entirely different usage in its early stages, in the form of “privacy checks” which could be enabled on the same set of packages above to statically declare public APIs. Constants that were placed in a separate public directory were treated as “public” and could be referenced from any other package. Other constants were considered “private” and references to them from other packages were treated as violations, regardless of dependency relationships.</p>
+
+<p>As expressed in the quote above by Philip Müller, privacy checks were never intended to be the main feature of Packwerk, but it is easy to see their appeal. Dependencies in large sprawling codebases can be difficult to correctly define, and even harder to resolve. Declaring a constant public or private, in contrast, is simple, and closely resembles Ruby’s own concept of private and public methods.</p>
+
+<figure><img src="app-public-layout.png" alt="public directory layout"><figcaption>public directory layout</figcaption></figure>
+
+<p>Unfortunately, while easy to use, Packwerk’s privacy checks introduced several problems. Some of these were problems of implementation: the checks required a separate <code class="language-plaintext highlighter-rouge">app/public</code> directory for code that was meant to be public API. This broke Rails conventions on file layout by introducing a folder under <code class="language-plaintext highlighter-rouge">app</code> that denoted privacy level instead of architecture concepts. Confusion around where files should go resulted in new subdirectories being created for controllers and jobs, duplicating those that already existed under <code class="language-plaintext highlighter-rouge">app</code>. As public API, these subdirectories should have been documented and well thought-out, but Packwerk didn’t encourage this level of detail. Thus, we ended up with endless poorly-documented public code that was never meant to be public in the first place.</p>
+
+<p>Yet there was a deeper problem, namely that <strong>privacy checks had transformed Packwerk into something it was never intended to be: an API design tool</strong>. Packwerk was being used to ensure that packages communicated via blessed entrypoints, whereas its original purpose was to define and enforce a dependency graph. Package A using package B’s code (even its public API) is not acceptable if package A doesn’t depend on B, yet we found developers were focusing on the design of their APIs over the dependencies in their code. This was drawing attention away from the problem the tool had been created to solve.</p>
+
+<p>Given these issues, privacy checks were removed from Packwerk with the <a href="https://github.com/Shopify/packwerk/releases/tag/v3.0.0">release of version 3.0</a>.</p>
+
+<h2 id="weaknesses-and-blind-spots-of-packwerk">Weaknesses and Blind Spots of Packwerk</h2>
+
+<p>We have found that the biggest issues with Packwerk are related to what the tool does <em>not</em> do for you: what it cannot see, what it cannot know, and what it does not tell you.</p>
+
+<p>Using Packwerk starts with declaring your packages: what code goes where, and how each set of code depends on the rest. The choice of packages and their relationships can be fiendishly difficult to get right, particularly in a large codebase where historically everything has been global. While you can change your package definitions later, any such changes come with a potential cost in terms of the time and effort spent isolating code that now ends up back together. Packwerk provides no guidance here, and is happy with any choice you make. It will generate for you a set of todo files that get you to your stated goal. Whether this work will actually get you to a better place, however, is another question entirely.</p>
+
+<p>Pushing the responsibility of drawing the dependency graph for an application onto the developer can often lead to incorrect assumptions on how code is coupled. This is particularly true if you only work with one section of a larger codebase, or don’t have a good grasp on dependency management and code architecture.</p>
+
+<p><strong>We have found that developers tend to group code into packages based strongly on semantic clues that in many cases have little relation to how the code actually runs</strong>. We have a model in our monolith, for example, that holds “shop billing settings”, including whether a shop is fraudulent. This model was placed in a “billing” package by virtue of its name, but this was the wrong place for it: detecting fraudulent shops is essential to handling <em>any</em> shop request, not just those related to billing details. Our solution was to ignore the semantics of its name and move it to the base of our dependency graph, making it available to any controller.</p>
+
+<figure><img src="shop-billing-setting.png" alt="Shop billing settings violation"><figcaption>Shop billing settings violation</figcaption></figure>
+
+<p>This kind of decision is hard because it goes against our intuition, as humans, to abide by the naming of things. Packwerk operates entirely on the basis of the high-level view of the codebase we provide it, which is often strongly influenced by this intuition; if the graph of dependencies it sees is misaligned with reality, then the effort developers exert resolving dependencies may bring little to no benefit. Indeed, such efforts may even make the code worse by introducing indirection, rendering it more complicated and harder to understand.</p>
+
+<p>Even assuming a well-drawn dependency graph, the problem arises of <em>how</em> to resolve violations. Packwerk does not provide feedback on how to do this; it only sees constant references and how they relate to the set of packages you have provided. This makes it difficult to know if you’re doing the right thing or not when approaching fixes for dependency violations.</p>
+
+<p>There are further blind spots that can make these problems worse. Like other static analysis tools, Packwerk is unable to infer constants generated dynamically at runtime. However, Packwerk has a far more limiting gap in its picture of application constants because of its dependence on <a href="https://github.com/fxn/zeitwerk">Zeitwerk</a> autoload directories. Constants loaded using mechanisms like <code class="language-plaintext highlighter-rouge">require</code>, <code class="language-plaintext highlighter-rouge">autoload</code>, or <code class="language-plaintext highlighter-rouge">ActiveSupport::Autoload</code> are <a href="https://github.com/Shopify/packwerk?tab=readme-ov-file#limitations">untracked and invisible to the tool</a>. As a result, a package that is well-defined according to Packwerk (has no violations left to resolve) may actually crash with name errors when its code is executed.</p>
+
+<p>Further to Packwerk not seeing the full picture, if you’re using full Rails engines as packages like us, it doesn’t help with sorting through routes, fixtures, initializers, or anything outside of your app directory. Anything that isn’t referenceable with constants becomes implicit dependencies that Packwerk can’t see. This often causes more problems that are only visible at runtime.</p>
+
+<h2 id="a-package-with-zero-violations">A Package with Zero Violations</h2>
+
+<p>The blind spots <a href="#weaknesses-and-blind-spots-of-packwerk">mentioned above</a> become the most obvious when you actually attempt to <em>run</em> packaged code in isolation. Running in “isolation” here means loading a package together with its dependencies and nothing else. In theory, a package that has no violations, whose dependencies themselves <em>also</em> have no violations, should be usable without any other code loaded. This is the point of a dependency graph, after all.</p>
+
+<p>Recently, we decided to put Packwerk to the test and actually create such a package. To keep things simple, we chose for this test the only part of our monolith that should, by definition, have no dependencies. This “junk drawer” of code utilities,
+named “Platform”, holds the low-level glue code that other packages use. Platform’s position at the base of the monolith’s dependency graph made it an obvious choice for our first isolation effort.</p>
+
+<p>Platform, however, was not even remotely isolated when we started. Having a clean slate was important, so rather than begin with Platform itself, we instead carved out a new package under it that would only contain its most essential parts. Into this package, which we named “Platform Essentials”, we moved base classes like <code class="language-plaintext highlighter-rouge">ApplicationController</code> and <code class="language-plaintext highlighter-rouge">ApplicationRecord</code>, along with the infrastructure code that other parts of the monolith depended on to do pretty much anything. Platform Essentials would be to our monolith what <a href="https://rubygems.org/gems/activesupport">Active Support</a> is to Rails.</p>
+
+<figure><img src="rails-dependency-graph.png" alt="Rails dependency graph"><figcaption>Rails dependency graph</figcaption></figure>
+
+<p><strong>The exercise to isolate this package was an eye-opener for us.</strong> We achieved our goal of an isolated base package with zero violations and zero dependencies. The process was not easy, however, and we were forced to make many tradeoffs. We relied heavily on <a href="https://martinfowler.com/bliki/InversionOfControl.html">inversion of control</a>, for example, to extract package references out of base layer code. These changes introduced indirection that, while resolving the violations, often made code harder to understand.</p>
+
+<p>We were greeted at the zero violation goal line with a surprising discovery: a <a href="https://github.com/Shopify/packwerk/pull/249">bug in Packwerk</a>. Packwerk was not cleaning up stale package todos when all violations were resolved. The fact that this bug, which we patched, had been virtually unnoticed until then indicated that <strong>we were likely the first Packwerk user to completely work through an entire package todo file, years after its initial release</strong>. This confirmed our suspicion that the rate at which Packwerk was identifying problems to its users vastly outpaced their capacity to actually fix them (or interest in doing so).</p>
+
+<p>Having resolved all Packwerk violations for our base package, we then attempted to actually <em>run</em> it by booting the monolith with only its code loaded. Unsurprisingly, given the issues <a href="#weaknesses-and-blind-spots-of-packwerk">mentioned in the last section</a>, this did not work. Indeed, we had yet more violations to resolve in places we had never considered: initializers and environment files, for example. As mentioned earlier, we also had to contend with code that was loaded without Zeitwerk, which Packwerk did not track. We fixed these issues by moving initializers and other application setup into engines of the application, so that they were not loaded when we booted the base layer on its own.</p>
+
+<p>With boot working, we went a step further and created a CI step to run tests for the package’s code in isolation. This surfaced yet more issues that neither Packwerk’s static analysis nor boot had encountered. With tests finally passing, we reached a reasonable confidence level that Platform Essentials was genuinely decoupled from the rest of the application.</p>
+
+<p>Even for this relatively simple case of a package with no dependencies, our effort to reach full isolation had taken many months of hard work. On the one hand, this was far more than one might expect for a single package, hinting at the daunting scale of dependency issues left to address in our monolith. The fact that so much work remained to be done even <em>after</em> resolving dependency violations was an indication of Packwerk’s limitations and the additional tooling needed to fill gaps in its coverage.</p>
+
+<p>In truth, though, the exercise was not really about Packwerk. It was about isolation, and whether such a thing was even possible in a codebase of this size, built on assumptions of global access to everything. <strong>And on this question, the exercise had been a resounding success.</strong> We did something that had never been done before in a timespan that had a concrete completion date. We implemented checks in CI to ensure our progress would never be reversed. We had made real, tangible progress, and Packwerk, given the right context, had played a key role in making that progress a reality.</p>
+
+<h2 id="domain-versus-function-in-packages">Domain versus Function in Packages</h2>
+
+<p>Shopify organizes its monolith into code units called <a href="https://shopify.engineering/shopify-monolith">“components”</a>. Components were created many years ago by sorting thousands of files into a couple dozen buckets, each representing its own domain of commerce. The monolith’s codebase was thus divided into directories with names like “Delivery”, “Online Store”, “Merchandising” and “Checkouts”. With such a large change, this was a great way at the time to partition work for teams, limit new component creation, and bring order to a codebase with millions of lines of code.</p>
+
+<p>However, we quickly discovered that <strong>domains and the boundaries between them do not reflect the way Shopify’s code actually functions in practice</strong>. This was immediately obvious when running Packwerk on the codebase, which generated monstrously large todo files for every component. With every new feature added, these todo files grew larger. Developers could resolve some of these violations, but often the fixes felt unnatural and overly complicated, like they were going against the grain of what the code was actually trying to do.</p>
+
+<figure><img src="platform-components.png" alt="Platform component in relation to other components"><figcaption>Platform component in relation to other components</figcaption></figure>
+
+<p>There was an important exception, however. The monolith’s Platform component, described earlier, was from the start a purely system-level concern. Along with a couple others like it, this component never fit into the mold of a “commerce domain”. This made it an oddball in a domain-centric view of the world. When we shifted our focus to actually running code, as opposed to simply sorting it, the purely functional nature of this component suddenly became very useful, however. Unlike every other component, Platform’s position in the dependency graph was obvious: it must sit at the base of everything, and it must have zero dependencies.</p>
+
+<p><strong>The focus on running code has instigated a rethink of how we organize our monolith.</strong> We are faced with a dichotomy: some components are domains, while others are designed around the functional role they play in the application. A checkout flow is a function defined as the code required for a customer to initiate a checkout and pay for their order. Our “checkouts” component, however, contains a number of concerns unrelated to this flow, such as controllers and backend code for merchants to modify their checkout settings.  This code is part of the checkout domain, but not a part of checkout flow functionality.</p>
+
+<p>Actually running packages in isolation requires them to be defined strictly on a functional basis, but most of our components are defined around domains. Recently, our solution to this has been to use components as top-level organizational tools for grouping one or more packages, rather than a singular code unit. This way, teams can still own domains, while individual packages act as the truly modular code units. This is a compromise that accommodates both the human need for understandable mental models and the runtime need for well-defined units of a dependency graph.</p>
+
+<h2 id="packwerk-is-a-sharp-knife">Packwerk is a Sharp Knife</h2>
+
+<p>When attempting to modularize a large legacy codebase, it’s easy to get carried away with ideas of how code <em>should</em> behave. Packwerk lends itself to this tendency by allowing you, the developer, to define your desired end state, and have the tool lead you to that goal. <em>You</em> decide the set of packages, and <em>you</em> decide the dependency graph that links them together. Just work down the todo file, and you will reach the code organization you desire.</p>
+
+<p>The problem with this view is that it is hard to know if it will lead to concrete results. Code exerts a powerful drive in the direction of function. It is much harder to bend this behavior to fit your mental models than it is to bend your mental models to fit what a codebase actually <em>does</em>.</p>
+
+<p><strong>We learned this lesson the hard way.</strong> We started with a utopian vision for our monolith, with modular code units representing domains of commerce and cleanly-defined dependencies relating them to each other. We built a tool to chart a course to our goal and applied it to our codebase. The work to be done was clear, and the path forward seemed obvious.</p>
+
+<p>Then we actually sat down to do the work, and things began to look a lot less rosy. With hard-fought gains and messy tradeoffs, we made it through the todos for a single package, only to find that we were likely the first to reach the finish line. Our achievement turned out to be bittersweet, since our code was still broken and unusable in isolation. The utopia we had imagined simply did not exist, and the tool we thought would get us there was leading us astray.</p>
+
+<p>What turned this situation around for us was the realization that running code, more than any metric, will always be the best indicator of real progress. Packwerk has its place, but it is just one tool of many to measure aspects of code quality. We achieved a small but significant victory by being highly pragmatic and broadening our understanding to leverage an approach we hadn’t originally considered.</p>
+
+<p>Like many other tools in the Rails ecosystem, <strong>Packwerk is a sharp knife, and it must be wielded with care.</strong> Be intentional about how you use it, and how you fix the violations it raises. Always ask yourself if the violation is an error at the developer level, or at the dependency graph level. If it is at the graph level, consider adjusting your package layout to better match the dependencies of your code.</p>
+
+<p>At Shopify, we often stress test our assumptions and revisit the decisions we made in the past. We have discussed removing Packwerk from our monolith, given the costs it incurs and the weaknesses and blind spots described earlier. For us, the technical debt introduced from privacy checking is still a long way from being paid off. Packwerk has however provided value in holding the line against new dependencies at the base layer of our application. However imperfect, its list of violations to resolve is an effective way to divvy up work toward a well-defined isolation goal.</p>
+
+<p>Our learnings using Packwerk have informed a larger strategy for modularizing large Rails applications, one that is strongly oriented toward running code and executable results rather than philosophical ideals. While no longer as central as it once was, Packwerk still plays a role at Shopify, and will likely continue to do so over the years to come.</p>
+</body></html>
+
+  </div><a class="u-url" href="/2024-01-26-a-packwerk-retrospective/" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="https://railsatscale.com/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+        <ul class="contact-list">
+          <li class="p-name">Shopify Engineering</li>
+          
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p>The Ruby and Rails Infrastructure team at Shopify exists to help ensure that Ruby and Rails are 100-year tools that will continue to merit being our toolchain of choice.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li>
+  <a rel="me" href="https://twitter.com/shopifyeng" target="_blank" title="twitter">
+    <svg class="svg-icon grey">
+      <use xlink:href="/assets/minima-social-icons.svg#twitter"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="https://github.com/Shopify" target="_blank" title="github">
+    <svg class="svg-icon grey">
+      <use xlink:href="/assets/minima-social-icons.svg#github"></use>
+    </svg>
+  </a>
+</li>
+</ul>
+</div>
+
+    <div class="copyright">
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+        <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png">
+      </a>
+      <br>
+      This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

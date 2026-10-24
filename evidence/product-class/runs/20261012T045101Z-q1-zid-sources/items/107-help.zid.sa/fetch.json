@@ -1,0 +1,19 @@
+{
+ "n": 107,
+ "url": "https://help.zid.sa/customizable-reports/",
+ "dir": "items/107-help.zid.sa",
+ "fetched_at": "2026-10-12T04:52:39Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/customizable-reports/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 25036,
+ "cited_in": [
+  "ZD-S-1048",
+  "ZD-S-1049"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "a5a639a218048e8e2c628e38c5939dfc49d5b76df6334fa745f149fa196140b2",
+ "raw_ext": "html"
+}

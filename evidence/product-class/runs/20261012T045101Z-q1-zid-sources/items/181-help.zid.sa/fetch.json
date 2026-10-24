@@ -1,0 +1,21 @@
+{
+ "n": 181,
+ "url": "https://help.zid.sa/zid-voice/",
+ "dir": "items/181-help.zid.sa",
+ "fetched_at": "2026-10-12T04:53:53Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/zid-voice/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 25192,
+ "cited_in": [
+  "ZD-S-1066",
+  "ZD-S-1067",
+  "ZD-S-1069",
+  "ZD-S-1070"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "400cbb6d76ee3be9ef9efb1cebba11da3ef4448dd2e98a4ecc93777a220be32f",
+ "raw_ext": "html"
+}

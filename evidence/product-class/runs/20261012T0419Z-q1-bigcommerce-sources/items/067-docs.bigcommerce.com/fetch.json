@@ -1,0 +1,18 @@
+{
+ "n": 67,
+ "url": "https://docs.bigcommerce.com/developer/docs/admin/checkout-and-cart/open-checkout/pciguide.md",
+ "dir": "items/067-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:20:22Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/docs/admin/checkout-and-cart/open-checkout/pciguide.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 2713,
+ "cited_in": [
+  "BC-S-0074"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "46d729fee35fc382e883ae4a509bb9783817c27dc5aa731a746b8dd3254cca9e",
+ "raw_ext": "txt"
+}

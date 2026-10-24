@@ -1,0 +1,20 @@
+{
+ "n": 114,
+ "url": "https://www.bigcommerce.com/product/paypal-agentic-commerce-beta/",
+ "dir": "items/114-bigcommerce.com",
+ "fetched_at": "2026-10-12T10:51:22Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.bigcommerce.com/product/paypal-agentic-commerce-beta/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 36847,
+ "cited_in": [
+  "S01-BC-C012",
+  "S01-BC-C044",
+  "S01-BC-C045"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "f2c62bba1a6799e9222b03634d9ddceec3919cbe1adc3e52a93fa6e4683fe901",
+ "raw_ext": "html"
+}

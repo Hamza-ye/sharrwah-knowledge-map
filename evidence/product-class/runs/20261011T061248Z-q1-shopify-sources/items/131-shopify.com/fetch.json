@@ -1,0 +1,29 @@
+{
+ "n": 131,
+ "url": "https://www.shopify.com/legal/api-terms",
+ "dir": "items/131-shopify.com",
+ "fetched_at": "2026-10-11T06:13:09Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.shopify.com/legal/api-terms",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 93874,
+ "cited_in": [
+  "SH-S-0214",
+  "SH-S-0215",
+  "SH-S-0216",
+  "SH-S-0217",
+  "SH-S-0218",
+  "SH-S-0219",
+  "SH-S-0220",
+  "SH-S-0221",
+  "SH-S-0222",
+  "SH-S-0223",
+  "SH-S-0224",
+  "SH-S-0225"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "29b24ab4a9e35e7612798fcec9ea5425b7e6599535c5fa7421051d1c3f8168ef",
+ "raw_ext": "html"
+}

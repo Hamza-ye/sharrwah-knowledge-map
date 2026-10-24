@@ -1,0 +1,35 @@
+> This page is for Developer.
+
+> For clean Markdown of any page, append .md to the page URL.
+> For a complete documentation index, see https://docs.bigcommerce.com/llms.txt.
+> For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server.
+
+The B2B Edition Management APIs let you perform server-to-server operations for managing B2B storefronts. Use these APIs to manage companies, users, addresses, orders, quotes, invoices, payments, shopping lists, and more from an administrative perspective.
+
+These APIs are designed for backend integrations and admin-level operations using store-level API credentials.
+
+## Authentication
+
+B2B Management APIs use the same `X-Auth-Token` authentication pattern as the main BigCommerce REST APIs. Include your store-level or app-level access token in the request header. In addition, you must include the `X-Store-Hash` header containing your BigCommerce store hash.
+
+**`B2B Management API request format`**
+
+```http title="B2B Management API request format" showLineNumbers={false}
+GET https://api-b2b.bigcommerce.com/api/{endpoint}
+X-Auth-Token: {access_token}
+X-Store-Hash: {store_hash}
+Accept: application/json
+Content-Type: application/json
+```
+
+For full details, see [Authentication overview](/developer/docs/overview/api-fundamentals/api-accounts#access-tokens) and [API Accounts](/developer/docs/overview/api-fundamentals/api-accounts#api-accounts).
+
+## Request and response field casing
+
+Send request body fields in camelCase, as shown in each endpoint's schema (`companyPhone`, `firstName`, `companyEmail`).
+
+Error responses return field names in `snake_case` (`company_phone`, `first_name`) as a server-side convention. This does not mean the API expects snake\_case input — always send camelCase in your requests.
+
+## Related resources
+
+For B2B guides, getting started content, and conceptual docs, see the [B2B Edition docs](/developer/docs/b2b-edition/getting-started/overview).

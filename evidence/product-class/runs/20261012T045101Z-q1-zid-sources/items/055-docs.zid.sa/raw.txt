@@ -1,0 +1,398 @@
+# Recover Broken Webhooks
+
+## OpenAPI Specification
+
+```yaml
+openapi: 3.0.1
+info:
+  title: ''
+  description: ''
+  version: 1.0.0
+paths:
+  /v1/managers/webhooks/broken/recover:
+    post:
+      summary: Recover Broken Webhooks
+      deprecated: false
+      description: >-
+        Recovers broken webhooks by updating outdated webhook target URLs
+        (target_url) to the currently configured and valid endpoint URL for the
+        application.
+
+
+        <Accordion title="🔑Scopes" defaultOpen>
+            
+        `third_webhook_write` - Webhooks Write
+         
+        </Accordion>
+      tags:
+        - Default module/Apps/Webhooks/APIs
+        - WebHook
+      parameters:
+        - name: Authorization
+          in: header
+          description: >-
+            The Authorization token is a unique key given to the third-party
+            application (Partner) by Zid. It is used to authenticate the API
+            requests made by the Partner application. The token verifies the
+            partner's identity and ensures they have permission to access Zid's
+            API but does not provide any specific user or store information. It
+            should be included in the header of API requests when the partner
+            application needs to access Zid's API.
+          required: true
+          example: '{{Autherization}}'
+          schema:
+            type: string
+        - name: X-Manager-Token
+          in: header
+          description: >-
+            This token is used to authenticate and access information related to
+            the store. It is obtained through an OAuth mechanism and is required
+            to perform operations on the store's data. The `X-Manager-Token`
+            should be included in the header of API requests that require
+            store-related information.
+          required: true
+          example: '{{Access-Token}}'
+          schema:
+            type: string
+        - name: Accept-Language
+          in: header
+          description: >-
+            Preferred language for the response. Defaults to `en` if not
+            specified.
+          required: false
+          example: en
+          schema:
+            type: string
+            enum:
+              - en
+              - ar
+            examples:
+              - en
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                webhooks:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      broken_webhook_id:
+                        type: string
+                        description: Broken webhook UUID
+                      target_url:
+                        type: string
+                        description: The new webhook URL
+                    x-apidog-orders:
+                      - broken_webhook_id
+                      - target_url
+                    required:
+                      - broken_webhook_id
+                      - target_url
+                    x-apidog-ignore-properties: []
+              x-apidog-orders:
+                - webhooks
+              required:
+                - webhooks
+              x-apidog-ignore-properties: []
+            example:
+              webhooks:
+                - broken_webhook_id: ''
+                  target_url: ''
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                        event:
+                          type: string
+                        target_url:
+                          type: string
+                        store_id:
+                          type: string
+                        conditions:
+                          type: array
+                          items:
+                            type: string
+                        original_id:
+                          type: string
+                        subscriber:
+                          type: string
+                        active:
+                          type: boolean
+                        doc:
+                          type: string
+                          description: Markdown documentation describing the webhook event.
+                          nullable: true
+                      required:
+                        - id
+                        - event
+                        - target_url
+                        - store_id
+                        - conditions
+                        - original_id
+                        - subscriber
+                        - active
+                      x-apidog-orders:
+                        - id
+                        - event
+                        - target_url
+                        - store_id
+                        - conditions
+                        - original_id
+                        - subscriber
+                        - active
+                        - doc
+                      x-apidog-ignore-properties: []
+                  message: &ref_0
+                    $ref: '#/components/schemas/ResponseEnvelopMessage'
+                required:
+                  - status
+                  - data
+                  - message
+                x-apidog-orders:
+                  - status
+                  - data
+                  - message
+                x-apidog-ignore-properties: []
+          headers: {}
+          x-apidog-name: OK
+        '401':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                description: >-
+                  Response returned when the request cannot be authenticated
+                  because the required credentials are missing, invalid, or
+                  expired.
+                properties:
+                  status:
+                    type: string
+                    description: Indicates the overall status of the API response.
+                    examples:
+                      - error
+                  message:
+                    type: object
+                    description: >-
+                      Contains structured details explaining why the request
+                      could not be authenticated.
+                    properties:
+                      type:
+                        type: string
+                        description: Indicates the category of the response message.
+                        examples:
+                          - error
+                      code:
+                        type: string
+                        description: >-
+                          A machine-readable code identifying the authentication
+                          error. Returns null when no specific code is
+                          available.
+                        examples:
+                          - UNAUTHORIZED
+                        nullable: true
+                      name:
+                        type: string
+                        description: >-
+                          A short, human-readable title describing the
+                          authentication error. Returns null when no title is
+                          available.
+                        examples:
+                          - Unauthorized
+                        nullable: true
+                      description:
+                        type: string
+                        description: >-
+                          A human-readable explanation of why the request could
+                          not be authenticated. Returns null when no detailed
+                          explanation is available.
+                        examples:
+                          - >-
+                            Authentication credentials are missing, invalid, or
+                            expired.
+                        nullable: true
+                    required:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-orders:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-ignore-properties: []
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                examples:
+                  - status: error
+                    message:
+                      type: error
+                      code: UNAUTHORIZED
+                      name: Unauthorized
+                      description: >-
+                        Authentication credentials are missing, invalid, or
+                        expired.
+                x-apidog-ignore-properties: []
+              examples:
+                '2':
+                  summary: Example 1
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_MISSING
+                      name: Sorry
+                      description: Please login first.
+                '3':
+                  summary: Example 2
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Login session expired. Please login again.
+                '4':
+                  summary: Example 3
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Invalid authentication
+          headers: {}
+          x-apidog-name: Unauthorized
+        '422':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                  message: *ref_0
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                x-apidog-ignore-properties: []
+              example:
+                status: validation_error
+                message:
+                  type: validation_errors
+                  code: ERROR_POPUP_OK
+                  name: Inputs
+                  description: Input errors!
+                  validations:
+                    - field: webhooks.0.broken_webhook_id
+                      errors:
+                        - The webhooks.0.broken_webhook_id field is required.
+                    - field: webhooks.0.target_url
+                      errors:
+                        - The webhooks.0.target_url field is required.
+          headers: {}
+          x-apidog-name: Unprocessable Entity
+        '500':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Status of the error.
+                  message: *ref_0
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                x-apidog-ignore-properties: []
+              example:
+                status: error
+                message:
+                  type: error
+                  code: MSG_HIDDEN
+                  name: Error
+                  description: Internal Server Error
+          headers: {}
+          x-apidog-name: Internal Server error
+      security: []
+      x-apidog-folder: Default module/Apps/Webhooks/APIs
+      x-apidog-status: released
+      x-run-in-apidog: https://app.apidog.com/web/project/613905/apis/api-37378520-run
+components:
+  schemas:
+    ResponseEnvelopMessage:
+      type: object
+      properties:
+        type:
+          type: string
+          description: Type of response message returned by the API.
+          examples:
+            - success
+        code:
+          type: string
+          description: Response code returned by the API, if available.
+          examples:
+            - MSG_POPUP_OK
+          nullable: true
+        name:
+          type: string
+          description: Name or title of the response message, if available.
+          examples:
+            - Coupons
+          nullable: true
+        description:
+          type: string
+          description: Detailed description of the response message, if available.
+          examples:
+            - Coupons created successfully
+          nullable: true
+      required:
+        - type
+        - code
+        - name
+        - description
+      description: Additional response metadata.
+      x-apidog-orders:
+        - type
+        - code
+        - name
+        - description
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+  securitySchemes: {}
+servers:
+  - url: https://api.zid.sa/
+    description: Prod Env
+security: []
+
+```

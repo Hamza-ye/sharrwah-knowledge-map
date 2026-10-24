@@ -1,0 +1,18 @@
+{
+ "n": 20,
+ "url": "https://docs.zid.sa/create-reverse-orders.md",
+ "dir": "items/020-docs.zid.sa",
+ "fetched_at": "2026-10-12T04:51:18Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.zid.sa/create-reverse-orders.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 45512,
+ "cited_in": [
+  "ZD-S-0911"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "b029fc6ea98a30f1b60533c4d7cc1c0a64aa4e349315b7c95b349b893e17134e",
+ "raw_ext": "txt"
+}

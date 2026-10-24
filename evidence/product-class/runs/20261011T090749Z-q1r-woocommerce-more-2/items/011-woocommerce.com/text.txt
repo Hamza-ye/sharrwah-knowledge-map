@@ -1,0 +1,206 @@
+___
+Skip to navigation
+Skip to content
+USD
+Change site currency USD selected
+Develop on Woo
+Hire an expert
+Get support
+Sell
+Click to show 12 more items
+Extensions
+Click to show 18 more items
+Resources
+Click to show 23 more items
+Enterprise ecommerce
+Log in
+Get started
+Google for WooCommerce
+Get Started
+Attribute Mapping
+Google for WooCommerce / Documentation / Google for WooCommerce / Get started / Product Feed Information
+Product Feed Information
+
+Google for WooCommerce automatically syncs your WooCommerce product data to Google Merchant Center; you can also add or edit products individually or in bulk. To ensure products are approved by Google, ensure that your product feed includes the following information:
+
+General product information
+Unique product identifiers
+Data requirements for specific categories (auto-assigned by Google):
+Apparel & Accessories
+Media
+Books
+
+Learn more about product data specifications.
+
+After setting up Google for WooCommerce, you can review whether missing required product data may be preventing your products from showing on Google. To do so, navigate to Marketing > Google for WooCommerce > Product Feed in WP Admin and review the Account Issues and Product Issues tabs.
+
+Note: Google for WooCommerce syncs general product information to Google upon setup. Unsupported products are ignored automatically. For unique product identifiers and category-specific data stored as custom attributes, you can use our Attribute Mapping Toolto meet Google Merchant Center requirements. Learn more about attribute mapping.
+
+Did you know? Google will remove a product from a feed if it hasn’t been updated in 30 days. Google for WooCommerce checks for expiring products and resubmits them.
+
+General product information
+
+Ensure your products have the following basic information:
+
+Product title
+Product description
+Product ID
+Product link
+Product image
+
+Since these are required fields for any product to be approved in Google Merchant Center, Google for WooCommerce will not sync WooCommerce products that do not have these fields.
+
+Unique product identifiers
+
+Include unique product identifiers to help define your products in the global marketplace. This data helps Google identify the products you are selling to match them with search queries so your products can show up when shoppers are searching on Google. Learn more about unique product identifiers.
+
+Data requirements for specific categories
+
+Provide any specific requirements for products within these categories:
+
+Apparel & Accessories: Review the guidelines for age group, gender, color, and size.
+Media: Products like music, movies, or video games require a unique product identifier (UPC, EAN, or JAN).
+Books: Products in this category require a unique ISBN product identifier.
+Electronics: Products in this category require a unique product identifier (UPC, EAN, or JAN). Additional recommended identifiers include color and size
+
+Note: In WooCommerce, this information is typically stored as custom global attributes, which are not synced to Google by default when setting up Google for WooCommerce. In order to sync this information to Google, use our Attribute Mapping tool. Learn more about attribute mapping.
+
+Don’t have this information in WooCommerce already? Learn how to create global attributes for these required fields.
+
+Sync and statuses
+
+After submitting your product feed, your products will be assigned a status. There are six different product statuses:
+
+Not synced. These products do not appear across Google or the Google Shopping tab as free listings. They are queued for submission or may be ineligible or excluded from the product feed.
+Active. These products are fully approved and eligible to appear in free listings on the Google Shopping tab within the next 3-5 days. If you’re selling in the United States, your products can also appear on Google Search, Google Images, and Gmail.
+Expiring. These products will become inactive within the next three (3) days, and will no longer appear in Google Listings.
+Pending. These products are still being processed by Google and will not appear in Google Listings until they are approved.
+Disapproved. These products are inactive and do not appear in Google Listings. Check the error status to learn more.
+Channel visibility
+
+Choose which products you want to list across Google by toggling the Channel Visibility option in the Google for WooCommerce Product Feed. There are two options:
+
+Sync and Show: Eligible products will be visible across Google
+Don’t Sync and Show: These products will not be visible across Google (helpful for custom products with varying prices, giveaway products, etc.)
+
+When you set up Google for WooCommerce, all products in your WooCommerce store are automatically added to your Product Feed, and set to Sync and show. You can change the channel visibility of your products at any time, and your product feed will sync automatically within 1-2 days.
+
+All products set to Sync and show in your product feed will appear in both your free listings and paid campaigns.
+
+Displaying deals and promotions on Google
+
+To show your coupons and promotions on Google Shopping listings, make sure you’re using the latest version of Google for WooCommerce (version 1.6+). When you create or update a coupon in WP Admin under Marketing > Coupons, you’ll see a Channel Visibility settings box on the right; select Show coupon on Google to enable it. This is currently available in Australia, Canada, Germany, France, India, the United Kingdom, and the United States.
+
+Coupon restrictions by product and product category are honored.
+
+Helpful articles
+Data and eligibility requirements to show your products for free.
+Best practices for showing up on surfaces across Google.
+Was this guide helpful for you?
+Related Products
+WooCommerce Subscriptions
+by
+Woo
+
+WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or...
+
+Excellence verified
+Price $279 annually
+$279
+annually
+Rated 3.9 out of 5 stars
+3.9 
+(141)
+Product Add-Ons
+by
+Woo
+
+Offer add-ons like gift wrapping, special messages or other special options for your products.
+
+Price $79 annually
+$79
+annually
+Rated 3.4 out of 5 stars
+3.4 
+(49)
+ON THIS PAGE
+General product information
+Unique product identifiers
+Data requirements for specific categories
+Sync and statuses
+Channel visibility
+Displaying deals and promotions on Google
+Helpful articles
+Google for WooCommerce
+by Woo
+No payment details required • Set up in minutes
+Install for free
+30-day money-back guarantee
+Support teams across the world
+Safe and secure online payments
+Sell
+WooCommerce
+WooCommerce pricing
+Payments
+No-code customization
+Marketing
+Checkout
+Shipping
+Mobile app
+Enterprise ecommerce
+Marketplace
+WooCommerce extensions
+WooCommerce themes
+New
+Essentials
+Collections
+Developed by Woo
+Build
+Woo for developers
+Developer resources
+Become a Woo agency
+Become a Marketplace partner
+Become an affiliate
+Resources
+Blog
+Documentation
+WooCommerce site examples
+Product updates
+Email newsletter
+Support
+Feature requests
+WooCommerce hosting
+Hire an agency
+Participate in customer research
+Accessibility
+Support forums
+Company
+About
+Press
+Download WooCommerce free
+Join the Woo community
+Woo trademark guidelines
+Brand and logo guidelines
+Do not sell or share my personal information
+WooCommerce Support Policy
+Refund Policy
+Contact us
+Follow us on Facebook
+Follow us on X
+Follow us on Instagram
+Follow us on LinkedIn
+USD
+Change site currency USD selected
+Terms of Service
+Privacy Policy
+Privacy Notice for California Users
+
+© WooCommerce, Inc. 2026
+
+AN
+AUTOMATTIC
+BRAINCHILD
+Use of your personal data
+We and our partners process your personal data (such as browsing data, IP Addresses, cookie information, and other unique identifiers) based on your consent and/or our legitimate interest to optimize our website, marketing activities, and your user experience.
+Customize
+Accept all

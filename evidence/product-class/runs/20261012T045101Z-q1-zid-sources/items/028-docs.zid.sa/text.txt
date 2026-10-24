@@ -1,0 +1,1887 @@
+# List Order Credit Notes
+
+## OpenAPI Specification
+
+```yaml
+openapi: 3.0.1
+info:
+  title: ''
+  description: ''
+  version: 1.0.0
+paths:
+  /v1/managers/store/orders/{order-id}/credit-notes:
+    get:
+      summary: List Order Credit Notes
+      deprecated: false
+      description: >-
+        The GET Credit Notes endpoint allows you to retrieve a list of credit
+        notes associated with an order from the system. Credit notes are issued
+        for orders that have been cancelled or modified, and this endpoint
+        provides detailed information about each credit note, including customer
+        details, product information, and payment details.
+
+
+        <Accordion title="🔑Scopes" defaultOpen>
+            
+          `orders.read` - Orders Read
+         
+        </Accordion>
+      tags:
+        - Default module/Apps/Merchant APIs/Orders
+      parameters:
+        - name: order-id
+          in: path
+          description: ' The unique identifier of the order associated with the credit note.'
+          required: true
+          example: 59214748
+          schema:
+            type: integer
+        - name: Accept
+          in: header
+          description: >-
+            Specifies the Media Types acceptable for the client. In this case,
+            it signals that the client expects a response in the JSON format.
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - name: Authorization
+          in: header
+          description: >-
+            The Authorization token is a unique key given to the third-party
+            application (Partner) by Zid. It is used to authenticate the API
+            requests made by the Partner application. The token verifies the
+            partner's identity and ensures they have permission to access Zid's
+            API but does not provide any specific user or store information. It
+            should be included in the header of API requests when the partner
+            application needs to access Zid's API.
+          required: false
+          example: '{{Autherization}}'
+          schema:
+            type: string
+        - name: X-manager-Token
+          in: header
+          description: >-
+            This token is used to authenticate and access information related to
+            the store. It is obtained through an OAuth mechanism and is required
+            to perform operations on the store's data. The `X-Manager-Token`
+            should be included in the header of API requests that require
+            store-related information.
+          required: false
+          example: '{{Access-Token}}'
+          schema:
+            type: string
+        - name: Accept-Language
+          in: header
+          description: >-
+            Preferred language for the response. Defaults to `en` if not
+            specified.
+          required: false
+          example: en
+          schema:
+            type: string
+        - name: User-Agent
+          in: header
+          description: >-
+            The User-Agent header contains information about the user agent
+            (browser or app) making the request. It allows the server to provide
+            a tailored response depending on the user agent's capabilities and
+            preferences.
+          required: false
+          example: >-
+            Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+            like Gecko) Chrome/89.0.4389.82 Safari/537.36
+          schema:
+            type: string
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  code:
+                    type: string
+                    description: >-
+                      Response status code indicating a successful single
+                      payload response.
+                    examples:
+                      - SUCCESS_WITH_SINGLE_PAYLOAD_OBJECT
+                  message:
+                    anyOf:
+                      - &ref_0
+                        $ref: '#/components/schemas/ResponseEnvelopMessage'
+                      - type: 'null'
+                  payload:
+                    type: object
+                    properties:
+                      credit_notes:
+                        type: array
+                        items:
+                          $ref: '#/components/schemas/OrderCreditNotePresenter'
+                        description: >-
+                          List of credit or debit notes associated with the
+                          order.
+                      returned_items:
+                        type: array
+                        items: &ref_1
+                          $ref: '#/components/schemas/OrderCreditNoteItemPresenter'
+                        description: List of returned items.
+                    required:
+                      - credit_notes
+                    x-apidog-orders:
+                      - credit_notes
+                      - returned_items
+                    description: Payload object containing credit notes and returned items.
+                    x-apidog-ignore-properties: []
+                required:
+                  - code
+                  - message
+                  - payload
+                x-apidog-orders:
+                  - code
+                  - message
+                  - payload
+                description: >-
+                  Successful response containing credit notes and returned items
+                  for an order.
+                x-apidog-ignore-properties: []
+              example:
+                code: SUCCESS_WITH_SINGLE_PAYLOAD_OBJECT
+                message: null
+                payload:
+                  credit_notes:
+                    - id: a46ebd12-1392-488c-88f3-66d1835e1e32
+                      order_id: 59214748
+                      store_id: 3
+                      invoice_type: credit_note
+                      translated_invoice_type: Credit note
+                      original_invoice_number: 59214748
+                      invoice_number: 1133976
+                      issue_reason: issue_reason_update
+                      invoice_title: Updated order
+                      translated_issue_reason: Order update
+                      store_name: Mohammed Zayan
+                      shipping_method_code: zid_shipping.option_574614
+                      store_url: https://osama.zid.store/
+                      order_status:
+                        name: جديد
+                        code: new
+                      payment_status: paid
+                      currency_code: SAR
+                      customer:
+                        id: 37
+                        name: Osama Khaled
+                        email: osamakhaled2010@gmail.com
+                        mobile: '966503187421'
+                        note: ''
+                        type: individual
+                      has_different_consignee: 0
+                      order_total: '143.4500'
+                      order_total_string: 143.45 SAR
+                      products_sum_total_string: 68.00 SAR
+                      has_different_transaction_currency: false
+                      transaction_reference: null
+                      transaction_amount: '143.4500'
+                      transaction_amount_string: 143.45 SAR
+                      return_policy: ojghwriojgbwriojgwergiou
+                      items:
+                        - id: dfd6d0fa-dc45-49f7-b8dc-05d209d9bf8c
+                          product_id: 2a39d7b88d9d4040b636ab9a085b540d
+                          code: null
+                          name: ماء تونر جينسينغ من بيوتي اوف جوسون
+                          custom_fields: []
+                          sku: glow1114
+                          quantity: 1
+                          is_taxable: true
+                          is_discounted: false
+                          meta: null
+                          weight: null
+                          net_price_with_additions: 59.1304
+                          net_price_with_additions_string: 59.13 SAR
+                          price_with_additions: 68
+                          price_with_additions_string: 68.00 SAR
+                          net_price: '59.1304'
+                          net_price_string: 59.13 SAR
+                          net_sale_price: null
+                          net_sale_price_string: null
+                          net_additions_price: 0
+                          net_additions_price_string: null
+                          original_price: null
+                          original_price_string: null
+                          gross_price: 68
+                          gross_price_string: 68.00 SAR
+                          gross_sale_price: null
+                          gross_sale_price_string: null
+                          price_before: null
+                          price_before_string: null
+                          total_before: null
+                          total_before_string: null
+                          gross_additions_price: 0
+                          gross_additions_price_string: null
+                          tax_percentage: 0.15
+                          tax_amount: 8.8696
+                          tax_amount_string: 8.87 SAR
+                          tax_amount_string_per_item: 8.86 SAR
+                          sale_price: null
+                          sale_price_string: null
+                          price: 68
+                          price_string: 68.00 SAR
+                          additions_price: 0
+                          additions_price_string: 0.00 SAR
+                          total: 68
+                          total_string: 68.00 SAR
+                          images:
+                            - id: ffe37efb-2e27-4002-9175-9f764687f9a7
+                              origin: >-
+                                https://media.zid.store/thumbs/d297fb8b-c322-412e-a2f4-ffa96dc57022/ffe37efb-2e27-4002-9175-9f764687f9a7-thumbnail-500x500-70.jpg
+                              thumbs:
+                                fullSize: >-
+                                  https://media.zid.store/d297fb8b-c322-412e-a2f4-ffa96dc57022/ffe37efb-2e27-4002-9175-9f764687f9a7.jpg
+                                thumbnail: >-
+                                  https://media.zid.store/thumbs/d297fb8b-c322-412e-a2f4-ffa96dc57022/ffe37efb-2e27-4002-9175-9f764687f9a7-thumbnail-370x370-70.jpg
+                                small: >-
+                                  https://media.zid.store/thumbs/d297fb8b-c322-412e-a2f4-ffa96dc57022/ffe37efb-2e27-4002-9175-9f764687f9a7-thumbnail-500x500-70.jpg
+                                medium: >-
+                                  https://media.zid.store/thumbs/d297fb8b-c322-412e-a2f4-ffa96dc57022/ffe37efb-2e27-4002-9175-9f764687f9a7-thumbnail-770x770-70.jpg
+                                large: >-
+                                  https://media.zid.store/thumbs/d297fb8b-c322-412e-a2f4-ffa96dc57022/ffe37efb-2e27-4002-9175-9f764687f9a7-thumbnail-1000x1000-70.jpg
+                          shipping: false
+                          options: []
+                          barcode: null
+                      shipping:
+                        address:
+                          district: حي قرطبة
+                          street: معسكر
+                          city:
+                            id: 1
+                            name: Riyadh
+                          country:
+                            id: 184
+                            name: Saudi Arabia
+                          meta:
+                            editable_order_cart_id: 3:69712c34860aa59fbc2a180b
+                            shipping_address_meta:
+                              building_number: '73829'
+                              postcode: ''
+                              additional_number: ''
+                              city_name: ''
+                        method:
+                          id: 574614
+                          type: delivery
+                          is_system_option: true
+                          name: الشريك الثالث
+                          estimated_delivery_time: null
+                          code: zid_shipping.option_574614
+                          icon: >-
+                            https://media.zid.store/apps/91f12581-2275-481e-9437-da14f6633f4d.png
+                          tracking_number: null
+                      payment:
+                        invoice:
+                          - code: sub_totals_before_vat
+                            value: '59.1304'
+                            value_string: 59.13 SAR
+                            title: Total without VAT
+                          - code: taxable_amount
+                            value: '59.1304'
+                            value_string: 59.13 SAR
+                            title: Taxable amount
+                          - code: vat
+                            value: '8.8696'
+                            value_string: 8.87 SAR
+                            title: VAT (%15)
+                          - code: total
+                            value: '68.0000'
+                            value_string: 68.00 SAR
+                            title: Total
+                        method:
+                          id: 813413
+                          name: Bank Transfer
+                          code: zid_bank_transfer
+                          type: zid_bank_transfer
+                      payment_method:
+                        name: تحويل بنكي
+                      customer_note: ''
+                      currency:
+                        order_currency:
+                          id: 4
+                          code: SAR
+                          exchange_rate: 1
+                        order_store_currency:
+                          id: 4
+                          code: SAR
+                          exchange_rate: null
+                      coupon: null
+                      items_count: 1
+                      original_order_date: 13-10-2025 | 10:53 ص
+                      issue_date: 31-01-2026 | 01:32 ص
+                      created_at: '2026-01-30 22:32:24'
+                      updated_at: '2026-01-30 22:32:24'
+                      zatca:
+                        qr_code_data: >-
+                          AQACDzMxMTExMTExMTExMTExMwMUMjAyNi0wMS0zMFQyMjozMjoyNFoEAjY4BQQ4Ljg3
+                    - id: ca2dc662-9ee4-4fb5-a543-74693946ef4c
+                      order_id: 59214748
+                      store_id: 3
+                      invoice_type: debit_note
+                      translated_invoice_type: Debit note
+                      original_invoice_number: 59214748
+                      invoice_number: 1122155
+                      issue_reason: issue_reason_update
+                      invoice_title: Updated order
+                      translated_issue_reason: Order update
+                      store_name: Mohammed Zayan
+                      shipping_method_code: zid_shipping.option_574614
+                      store_url: https://osama.zid.store/
+                      order_status:
+                        name: جديد
+                        code: new
+                      payment_status: paid
+                      currency_code: SAR
+                      customer:
+                        id: 37
+                        name: Osama Khaled
+                        email: osamakhaled2010@gmail.com
+                        mobile: '966503187421'
+                        note: ''
+                        type: individual
+                      has_different_consignee: 0
+                      order_total: '211.4500'
+                      order_total_string: 211.45 SAR
+                      products_sum_total_string: 68.00 SAR
+                      has_different_transaction_currency: false
+                      transaction_reference: null
+                      transaction_amount: '211.4500'
+                      transaction_amount_string: 211.45 SAR
+                      return_policy: ojghwriojgbwriojgwergiou
+                      items:
+                        - id: bb15784e-e525-4438-bb3b-27871d3baae6
+                          product_id: 2a39d7b88d9d4040b636ab9a085b540d
+                          code: null
+                          name: ماء تونر جينسينغ من بيوتي اوف جوسون
+                          custom_fields: []
+                          sku: glow1114
+                          quantity: 1
+                          is_taxable: true
+                          is_discounted: false
+                          meta: null
+                          weight: null
+                          net_price_with_additions: 59.1304
+                          net_price_with_additions_string: 59.13 SAR
+                          price_with_additions: 68
+                          price_with_additions_string: 68.00 SAR
+                          net_price: '59.1304'
+                          net_price_string: 59.13 SAR
+                          net_sale_price: null
+                          net_sale_price_string: null
+                          net_additions_price: 0
+                          net_additions_price_string: null
+                          original_price: null
+                          original_price_string: null
+                          gross_price: 68
+                          gross_price_string: 68.00 SAR
+                          gross_sale_price: null
+                          gross_sale_price_string: null
+                          price_before: null
+                          price_before_string: null
+                          total_before: null
+                          total_before_string: null
+                          gross_additions_price: 0
+                          gross_additions_price_string: null
+                          tax_percentage: 0.15
+                          tax_amount: 8.8696
+                          tax_amount_string: 8.87 SAR
+                          tax_amount_string_per_item: 8.86 SAR
+                          sale_price: null
+                          sale_price_string: null
+                          price: 68
+                          price_string: 68.00 SAR
+                          additions_price: 0
+                          additions_price_string: 0.00 SAR
+                          total: 68
+                          total_string: 68.00 SAR
+                          images:
+                            - id: ffe37efb-2e27-4002-9175-9f764687f9a7
+                              origin: >-
+                                https://media.zid.store/thumbs/d297fb8b-c322-412e-a2f4-ffa96dc57022/ffe37efb-2e27-4002-9175-9f764687f9a7-thumbnail-500x500-70.jpg
+                              thumbs:
+                                fullSize: >-
+                                  https://media.zid.store/d297fb8b-c322-412e-a2f4-ffa96dc57022/ffe37efb-2e27-4002-9175-9f764687f9a7.jpg
+                                thumbnail: >-
+                                  https://media.zid.store/thumbs/d297fb8b-c322-412e-a2f4-ffa96dc57022/ffe37efb-2e27-4002-9175-9f764687f9a7-thumbnail-370x370-70.jpg
+                                small: >-
+                                  https://media.zid.store/thumbs/d297fb8b-c322-412e-a2f4-ffa96dc57022/ffe37efb-2e27-4002-9175-9f764687f9a7-thumbnail-500x500-70.jpg
+                                medium: >-
+                                  https://media.zid.store/thumbs/d297fb8b-c322-412e-a2f4-ffa96dc57022/ffe37efb-2e27-4002-9175-9f764687f9a7-thumbnail-770x770-70.jpg
+                                large: >-
+                                  https://media.zid.store/thumbs/d297fb8b-c322-412e-a2f4-ffa96dc57022/ffe37efb-2e27-4002-9175-9f764687f9a7-thumbnail-1000x1000-70.jpg
+                          shipping: false
+                          options: []
+                          barcode: null
+                      shipping:
+                        address:
+                          district: حي قرطبة
+                          street: معسكر
+                          city:
+                            id: 1
+                            name: Riyadh
+                          country:
+                            id: 184
+                            name: Saudi Arabia
+                          meta:
+                            editable_order_cart_id: 3:6970e9f1481430d3d8d90101
+                            shipping_address_meta:
+                              building_number: '11'
+                              short_address: RUQB4314
+                        method:
+                          id: 574614
+                          type: delivery
+                          is_system_option: true
+                          name: الشريك الثالث
+                          estimated_delivery_time: null
+                          code: zid_shipping.option_574614
+                          icon: >-
+                            https://media.zid.store/apps/91f12581-2275-481e-9437-da14f6633f4d.png
+                          tracking_number: null
+                      payment:
+                        invoice:
+                          - code: sub_totals_before_vat
+                            value: '59.1304'
+                            value_string: 59.13 SAR
+                            title: Total without VAT
+                          - code: taxable_amount
+                            value: '59.1304'
+                            value_string: 59.13 SAR
+                            title: Taxable amount
+                          - code: vat
+                            value: '8.8696'
+                            value_string: 8.87 SAR
+                            title: VAT (%15)
+                          - code: total
+                            value: '68.0000'
+                            value_string: 68.00 SAR
+                            title: Total
+                        method:
+                          id: 813413
+                          name: Bank Transfer
+                          code: zid_bank_transfer
+                          type: zid_bank_transfer
+                      payment_method:
+                        name: تحويل بنكي
+                      customer_note: ''
+                      currency:
+                        order_currency:
+                          id: 4
+                          code: SAR
+                          exchange_rate: 1
+                        order_store_currency:
+                          id: 4
+                          code: SAR
+                          exchange_rate: null
+                      coupon: null
+                      items_count: 1
+                      original_order_date: 13-10-2025 | 10:53 ص
+                      issue_date: 21-01-2026 | 06:00 م
+                      created_at: '2026-01-21 15:00:22'
+                      updated_at: '2026-01-21 15:00:22'
+                      zatca:
+                        qr_code_data: >-
+                          AQACDzMxMTExMTExMTExMTExMwMUMjAyNi0wMS0yMVQxNTowMDoyMloEAjY4BQQ4Ljg3
+                  returned_items:
+                    - id: dfd6d0fa-dc45-49f7-b8dc-05d209d9bf8c
+                      product_id: 2a39d7b88d9d4040b636ab9a085b540d
+                      code: null
+                      name: ماء تونر جينسينغ من بيوتي اوف جوسون
+                      custom_fields: []
+                      sku: glow1114
+                      quantity: 1
+                      is_taxable: true
+                      is_discounted: false
+                      meta: null
+                      weight: null
+                      net_price_with_additions: 59.1304
+                      net_price_with_additions_string: 59.13 SAR
+                      price_with_additions: 68
+                      price_with_additions_string: 68.00 SAR
+                      net_price: '59.1304'
+                      net_price_string: 59.13 SAR
+                      net_sale_price: null
+                      net_sale_price_string: null
+                      net_additions_price: 0
+                      net_additions_price_string: null
+                      original_price: null
+                      original_price_string: null
+                      gross_price: 68
+                      gross_price_string: 68.00 SAR
+                      gross_sale_price: null
+                      gross_sale_price_string: null
+                      price_before: null
+                      price_before_string: null
+                      total_before: null
+                      total_before_string: null
+                      gross_additions_price: 0
+                      gross_additions_price_string: null
+                      tax_percentage: 0.15
+                      tax_amount: 8.8696
+                      tax_amount_string: 8.87 SAR
+                      tax_amount_string_per_item: 8.86 SAR
+                      sale_price: null
+                      sale_price_string: null
+                      price: 68
+                      price_string: 68.00 SAR
+                      additions_price: 0
+                      additions_price_string: 0.00 SAR
+                      total: 68
+                      total_string: 68.00 SAR
+                      images:
+                        - id: ffe37efb-2e27-4002-9175-9f764687f9a7
+                          origin: >-
+                            https://media.zid.store/thumbs/d297fb8b-c322-412e-a2f4-ffa96dc57022/ffe37efb-2e27-4002-9175-9f764687f9a7-thumbnail-500x500-70.jpg
+                          thumbs:
+                            fullSize: >-
+                              https://media.zid.store/d297fb8b-c322-412e-a2f4-ffa96dc57022/ffe37efb-2e27-4002-9175-9f764687f9a7.jpg
+                            thumbnail: >-
+                              https://media.zid.store/thumbs/d297fb8b-c322-412e-a2f4-ffa96dc57022/ffe37efb-2e27-4002-9175-9f764687f9a7-thumbnail-370x370-70.jpg
+                            small: >-
+                              https://media.zid.store/thumbs/d297fb8b-c322-412e-a2f4-ffa96dc57022/ffe37efb-2e27-4002-9175-9f764687f9a7-thumbnail-500x500-70.jpg
+                            medium: >-
+                              https://media.zid.store/thumbs/d297fb8b-c322-412e-a2f4-ffa96dc57022/ffe37efb-2e27-4002-9175-9f764687f9a7-thumbnail-770x770-70.jpg
+                            large: >-
+                              https://media.zid.store/thumbs/d297fb8b-c322-412e-a2f4-ffa96dc57022/ffe37efb-2e27-4002-9175-9f764687f9a7-thumbnail-1000x1000-70.jpg
+                      shipping: false
+                      options: []
+                      barcode: null
+                    - id: bb15784e-e525-4438-bb3b-27871d3baae6
+                      product_id: 2a39d7b88d9d4040b636ab9a085b540d
+                      code: null
+                      name: ماء تونر جينسينغ من بيوتي اوف جوسون
+                      custom_fields: []
+                      sku: glow1114
+                      quantity: 1
+                      is_taxable: true
+                      is_discounted: false
+                      meta: null
+                      weight: null
+                      net_price_with_additions: 59.1304
+                      net_price_with_additions_string: 59.13 SAR
+                      price_with_additions: 68
+                      price_with_additions_string: 68.00 SAR
+                      net_price: '59.1304'
+                      net_price_string: 59.13 SAR
+                      net_sale_price: null
+                      net_sale_price_string: null
+                      net_additions_price: 0
+                      net_additions_price_string: null
+                      original_price: null
+                      original_price_string: null
+                      gross_price: 68
+                      gross_price_string: 68.00 SAR
+                      gross_sale_price: null
+                      gross_sale_price_string: null
+                      price_before: null
+                      price_before_string: null
+                      total_before: null
+                      total_before_string: null
+                      gross_additions_price: 0
+                      gross_additions_price_string: null
+                      tax_percentage: 0.15
+                      tax_amount: 8.8696
+                      tax_amount_string: 8.87 SAR
+                      tax_amount_string_per_item: 8.86 SAR
+                      sale_price: null
+                      sale_price_string: null
+                      price: 68
+                      price_string: 68.00 SAR
+                      additions_price: 0
+                      additions_price_string: 0.00 SAR
+                      total: 68
+                      total_string: 68.00 SAR
+                      images:
+                        - id: ffe37efb-2e27-4002-9175-9f764687f9a7
+                          origin: >-
+                            https://media.zid.store/thumbs/d297fb8b-c322-412e-a2f4-ffa96dc57022/ffe37efb-2e27-4002-9175-9f764687f9a7-thumbnail-500x500-70.jpg
+                          thumbs:
+                            fullSize: >-
+                              https://media.zid.store/d297fb8b-c322-412e-a2f4-ffa96dc57022/ffe37efb-2e27-4002-9175-9f764687f9a7.jpg
+                            thumbnail: >-
+                              https://media.zid.store/thumbs/d297fb8b-c322-412e-a2f4-ffa96dc57022/ffe37efb-2e27-4002-9175-9f764687f9a7-thumbnail-370x370-70.jpg
+                            small: >-
+                              https://media.zid.store/thumbs/d297fb8b-c322-412e-a2f4-ffa96dc57022/ffe37efb-2e27-4002-9175-9f764687f9a7-thumbnail-500x500-70.jpg
+                            medium: >-
+                              https://media.zid.store/thumbs/d297fb8b-c322-412e-a2f4-ffa96dc57022/ffe37efb-2e27-4002-9175-9f764687f9a7-thumbnail-770x770-70.jpg
+                            large: >-
+                              https://media.zid.store/thumbs/d297fb8b-c322-412e-a2f4-ffa96dc57022/ffe37efb-2e27-4002-9175-9f764687f9a7-thumbnail-1000x1000-70.jpg
+                      shipping: false
+                      options: []
+                      barcode: null
+          headers: {}
+          x-apidog-name: OK
+        '401':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                description: >-
+                  Response returned when the request cannot be authenticated
+                  because the required credentials are missing, invalid, or
+                  expired.
+                properties:
+                  status:
+                    type: string
+                    description: Indicates the overall status of the API response.
+                    examples:
+                      - error
+                  message:
+                    type: object
+                    description: >-
+                      Contains structured details explaining why the request
+                      could not be authenticated.
+                    properties:
+                      type:
+                        type: string
+                        description: Indicates the category of the response message.
+                        examples:
+                          - error
+                      code:
+                        type: string
+                        description: >-
+                          A machine-readable code identifying the authentication
+                          error. Returns null when no specific code is
+                          available.
+                        examples:
+                          - UNAUTHORIZED
+                        nullable: true
+                      name:
+                        type: string
+                        description: >-
+                          A short, human-readable title describing the
+                          authentication error. Returns null when no title is
+                          available.
+                        examples:
+                          - Unauthorized
+                        nullable: true
+                      description:
+                        type: string
+                        description: >-
+                          A human-readable explanation of why the request could
+                          not be authenticated. Returns null when no detailed
+                          explanation is available.
+                        examples:
+                          - >-
+                            Authentication credentials are missing, invalid, or
+                            expired.
+                        nullable: true
+                    required:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-orders:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-ignore-properties: []
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                examples:
+                  - status: error
+                    message:
+                      type: error
+                      code: UNAUTHORIZED
+                      name: Unauthorized
+                      description: >-
+                        Authentication credentials are missing, invalid, or
+                        expired.
+                x-apidog-ignore-properties: []
+              examples:
+                '3':
+                  summary: Example 1
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_MISSING
+                      name: Sorry
+                      description: Please login first.
+                '4':
+                  summary: Example 2
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Login session expired. Please login again.
+                '5':
+                  summary: Example 3
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Invalid authentication
+          headers: {}
+          x-apidog-name: Unauthorized
+        '403':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                  message: *ref_0
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                x-apidog-ignore-properties: []
+          headers: {}
+          x-apidog-name: Permission Denied
+        '404':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                  message: *ref_0
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                x-apidog-ignore-properties: []
+              example:
+                status: error
+                message:
+                  type: error
+                  code: ERROR_POPUP_BACK
+                  name: Sorry
+                  description: Order not found
+          headers: {}
+          x-apidog-name: Not Found
+        '500':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Status of the error.
+                  message: *ref_0
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                x-apidog-ignore-properties: []
+              example:
+                status: error
+                message:
+                  type: error
+                  code: MSG_HIDDEN
+                  name: Error
+                  description: Internal Server Error
+          headers: {}
+          x-apidog-name: Internal Server error
+      security: []
+      x-apidog-folder: Default module/Apps/Merchant APIs/Orders
+      x-apidog-status: released
+      x-run-in-apidog: https://app.apidog.com/web/project/613905/apis/api-11046809-run
+components:
+  schemas:
+    OrderCreditNoteItemPresenter:
+      type: object
+      properties:
+        id:
+          type: string
+        product_id:
+          type: string
+          nullable: true
+        code:
+          type: string
+          nullable: true
+        name:
+          type: string
+          nullable: true
+        custom_fields:
+          type: array
+          items:
+            $ref: '#/components/schemas/ProductCustomFieldsSerializer'
+        sku:
+          type: string
+          nullable: true
+        quantity:
+          type: integer
+        is_taxable:
+          type: boolean
+        is_discounted:
+          type: boolean
+        meta:
+          type: array
+          items:
+            type: string
+          nullable: true
+        weight:
+          anyOf:
+            - $ref: '#/components/schemas/ProductWeight'
+            - type: 'null'
+        net_price_with_additions:
+          anyOf:
+            - type: number
+            - type: string
+        net_price_with_additions_string:
+          type: string
+        price_with_additions:
+          type: number
+        price_with_additions_string:
+          type: string
+        net_price:
+          anyOf:
+            - type: number
+              nullable: true
+            - type: string
+              nullable: true
+        net_price_string:
+          type: string
+        net_sale_price:
+          anyOf:
+            - type: string
+              nullable: true
+            - type: number
+              nullable: true
+        net_sale_price_string:
+          type: string
+          nullable: true
+        net_additions_price:
+          type: number
+          nullable: true
+        net_additions_price_string:
+          type: string
+          nullable: true
+        original_price:
+          type: number
+          nullable: true
+        original_price_string:
+          type: string
+          nullable: true
+        gross_price:
+          type: number
+        gross_price_string:
+          type: string
+        gross_sale_price:
+          anyOf:
+            - type: number
+              nullable: true
+            - type: string
+              nullable: true
+        gross_sale_price_string:
+          type: string
+          nullable: true
+        price_before:
+          type: number
+          nullable: true
+        price_before_string:
+          type: string
+          nullable: true
+        total_before:
+          type: number
+          nullable: true
+        total_before_string:
+          type: string
+          nullable: true
+        gross_additions_price:
+          type: number
+          nullable: true
+        gross_additions_price_string:
+          type: string
+          nullable: true
+        tax_percentage:
+          type: number
+        tax_amount:
+          type: number
+        tax_amount_string:
+          type: string
+        tax_amount_string_per_item:
+          type: string
+        sale_price:
+          type: number
+          nullable: true
+        sale_price_string:
+          type: string
+          nullable: true
+        price:
+          type: number
+        price_string:
+          type: string
+        additions_price:
+          type: number
+        additions_price_string:
+          type: string
+        total:
+          type: number
+        total_string:
+          type: string
+        images:
+          type: array
+          items:
+            $ref: '#/components/schemas/ProductImageObject'
+        shipping:
+          type: boolean
+        options:
+          type: array
+          items:
+            type: string
+            nullable: true
+          nullable: true
+        barcode:
+          type: string
+          nullable: true
+      x-apidog-orders:
+        - id
+        - product_id
+        - code
+        - name
+        - custom_fields
+        - sku
+        - quantity
+        - is_taxable
+        - is_discounted
+        - meta
+        - weight
+        - net_price_with_additions
+        - net_price_with_additions_string
+        - price_with_additions
+        - price_with_additions_string
+        - net_price
+        - net_price_string
+        - net_sale_price
+        - net_sale_price_string
+        - net_additions_price
+        - net_additions_price_string
+        - original_price
+        - original_price_string
+        - gross_price
+        - gross_price_string
+        - gross_sale_price
+        - gross_sale_price_string
+        - price_before
+        - price_before_string
+        - total_before
+        - total_before_string
+        - gross_additions_price
+        - gross_additions_price_string
+        - tax_percentage
+        - tax_amount
+        - tax_amount_string
+        - tax_amount_string_per_item
+        - sale_price
+        - sale_price_string
+        - price
+        - price_string
+        - additions_price
+        - additions_price_string
+        - total
+        - total_string
+        - images
+        - shipping
+        - options
+        - barcode
+      required:
+        - id
+        - product_id
+        - code
+        - name
+        - custom_fields
+        - sku
+        - quantity
+        - is_taxable
+        - is_discounted
+        - meta
+        - weight
+        - net_price_with_additions
+        - net_price_with_additions_string
+        - price_with_additions
+        - price_with_additions_string
+        - net_price
+        - net_price_string
+        - net_sale_price
+        - net_sale_price_string
+        - net_additions_price
+        - net_additions_price_string
+        - original_price
+        - original_price_string
+        - gross_price
+        - gross_price_string
+        - gross_sale_price
+        - gross_sale_price_string
+        - price_before
+        - price_before_string
+        - total_before
+        - total_before_string
+        - gross_additions_price
+        - gross_additions_price_string
+        - tax_percentage
+        - tax_amount
+        - tax_amount_string
+        - tax_amount_string_per_item
+        - sale_price
+        - sale_price_string
+        - price
+        - price_string
+        - additions_price
+        - additions_price_string
+        - total
+        - total_string
+        - images
+        - shipping
+        - options
+        - barcode
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    ProductImageObject:
+      type: object
+      properties:
+        id:
+          type: string
+        origin:
+          type: string
+        thumbs:
+          type: object
+          properties:
+            fullSize:
+              type: string
+            thumbnail:
+              type: string
+            small:
+              type: string
+            medium:
+              type: string
+            large:
+              type: string
+          required:
+            - fullSize
+            - thumbnail
+            - small
+            - medium
+            - large
+          x-apidog-orders:
+            - fullSize
+            - thumbnail
+            - small
+            - medium
+            - large
+          x-apidog-ignore-properties: []
+      required:
+        - id
+        - origin
+        - thumbs
+      x-apidog-orders:
+        - id
+        - origin
+        - thumbs
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    ProductWeight:
+      type: object
+      description: Weight of the product.
+      properties:
+        value:
+          type: number
+          description: The numerical value of the weight.
+          examples:
+            - 1.2
+        unit:
+          type: string
+          description: The unit of measurement for the weight.
+          examples:
+            - kg
+      x-stoplight:
+        id: kkyu2p7mpw77s
+      x-apidog-orders:
+        - value
+        - unit
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    ProductCustomFieldsSerializer:
+      type: object
+      properties:
+        type:
+          type: string
+          description: >-
+            Defines the data type of the custom field value. This determines how
+            the value should be interpreted and displayed.
+        value:
+          type: string
+          description: >-
+            Raw value of the custom field as stored in the system. This value is
+            typically unformatted and should be used for logic or processing.
+        formatted_value:
+          type: string
+          description: >-
+            Human-readable version of the value, formatted for display in UI.
+            May include localization, labels, or formatting applied based on the
+            field type.
+
+            Example:
+        name:
+          type: string
+          description: >-
+            Internal name or key of the custom field. Used for system-level
+            identification and integrations.
+          nullable: true
+        label:
+          type: string
+          description: Display label of the custom field shown to end users.
+          nullable: true
+      x-apidog-orders:
+        - type
+        - value
+        - formatted_value
+        - name
+        - label
+      required:
+        - type
+        - value
+        - formatted_value
+        - name
+        - label
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    OrderCreditNotePresenter:
+      type: object
+      properties:
+        id:
+          type: string
+        order_id:
+          type: integer
+        store_id:
+          type: integer
+        invoice_type:
+          type: string
+          nullable: true
+        translated_invoice_type:
+          type: string
+        original_invoice_number:
+          type: integer
+        invoice_number:
+          type: integer
+        issue_reason:
+          type: string
+          nullable: true
+        invoice_title:
+          type: string
+          nullable: true
+        translated_issue_reason:
+          type: string
+          nullable: true
+        store_name:
+          type: string
+        shipping_method_code:
+          type: string
+          nullable: true
+        store_url:
+          type: string
+        order_status:
+          $ref: '#/components/schemas/OrderStatus'
+        payment_status:
+          type: string
+          nullable: true
+        currency_code:
+          type: string
+          nullable: true
+        customer:
+          $ref: '#/components/schemas/DefaultOrderCustomerSerializer'
+        has_different_consignee:
+          type: integer
+        order_total:
+          type: string
+          nullable: true
+        order_total_string:
+          type: string
+        products_sum_total_string:
+          type: string
+        has_different_transaction_currency:
+          type: boolean
+        transaction_reference:
+          type: string
+          nullable: true
+        transaction_amount:
+          type: string
+        transaction_amount_string:
+          type: string
+        return_policy:
+          type: string
+          nullable: true
+        items:
+          type: array
+          items: *ref_1
+        shipping:
+          type: object
+          properties:
+            address:
+              $ref: '#/components/schemas/OrderCreditNoteShippingAddressPresenter'
+            method:
+              $ref: '#/components/schemas/OrderCreditNoteShippingMethod'
+          x-apidog-orders:
+            - address
+            - method
+          required:
+            - address
+            - method
+          x-apidog-ignore-properties: []
+        payment:
+          type: object
+          properties:
+            invoice:
+              type: array
+              items:
+                $ref: '#/components/schemas/OrderCreditNoteInvoiceItemPresenter'
+            method:
+              $ref: '#/components/schemas/OrderCreditNotePaymentMethodPresenter'
+          x-apidog-orders:
+            - invoice
+            - method
+          required:
+            - invoice
+            - method
+          x-apidog-ignore-properties: []
+        payment_method:
+          type: object
+          properties:
+            name:
+              type: string
+          x-apidog-orders:
+            - name
+          required:
+            - name
+          x-apidog-ignore-properties: []
+        is_consignee_notifiable:
+          anyOf:
+            - type: boolean
+            - type: integer
+              enum:
+                - 0
+                - 1
+              x-apidog-enum:
+                - value: 0
+                  name: ''
+                  description: ''
+                - value: 1
+                  name: ''
+                  description: ''
+        consignee:
+          $ref: '#/components/schemas/DefaultOrderConsigneeSerializer'
+        customer_note:
+          type: string
+        currency:
+          $ref: '#/components/schemas/DefaultOrderCurrencySerializer'
+        coupon:
+          anyOf:
+            - $ref: '#/components/schemas/OrderCreditNoteCouponPresenter'
+            - type: 'null'
+        items_count:
+          type: integer
+        original_order_date:
+          type: string
+        issue_date:
+          type: string
+        created_at:
+          type: string
+        updated_at:
+          type: string
+        zatca:
+          type: object
+          properties:
+            qr_code_data:
+              type: string
+              nullable: true
+          x-apidog-orders:
+            - qr_code_data
+          required:
+            - qr_code_data
+          x-apidog-ignore-properties: []
+      x-apidog-orders:
+        - id
+        - order_id
+        - store_id
+        - invoice_type
+        - translated_invoice_type
+        - original_invoice_number
+        - invoice_number
+        - issue_reason
+        - invoice_title
+        - translated_issue_reason
+        - store_name
+        - shipping_method_code
+        - store_url
+        - order_status
+        - payment_status
+        - currency_code
+        - customer
+        - has_different_consignee
+        - order_total
+        - order_total_string
+        - products_sum_total_string
+        - has_different_transaction_currency
+        - transaction_reference
+        - transaction_amount
+        - transaction_amount_string
+        - return_policy
+        - items
+        - shipping
+        - payment
+        - payment_method
+        - is_consignee_notifiable
+        - consignee
+        - customer_note
+        - currency
+        - coupon
+        - items_count
+        - original_order_date
+        - issue_date
+        - created_at
+        - updated_at
+        - zatca
+      required:
+        - id
+        - order_id
+        - store_id
+        - invoice_type
+        - translated_invoice_type
+        - original_invoice_number
+        - invoice_number
+        - issue_reason
+        - invoice_title
+        - translated_issue_reason
+        - store_name
+        - shipping_method_code
+        - store_url
+        - order_status
+        - payment_status
+        - currency_code
+        - customer
+        - has_different_consignee
+        - order_total
+        - order_total_string
+        - products_sum_total_string
+        - has_different_transaction_currency
+        - transaction_reference
+        - transaction_amount
+        - transaction_amount_string
+        - return_policy
+        - items
+        - shipping
+        - payment
+        - payment_method
+        - customer_note
+        - currency
+        - coupon
+        - items_count
+        - original_order_date
+        - issue_date
+        - created_at
+        - updated_at
+        - zatca
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    OrderCreditNoteCouponPresenter:
+      type: object
+      properties:
+        code:
+          type: string
+        name:
+          type: string
+        discount:
+          type: number
+        discount_string:
+          type: string
+      x-apidog-orders:
+        - code
+        - name
+        - discount
+        - discount_string
+      required:
+        - code
+        - name
+        - discount
+        - discount_string
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    DefaultOrderCurrencySerializer:
+      type: object
+      properties:
+        order_currency:
+          type: object
+          properties:
+            id:
+              type: integer
+              description: Unique identifier of the currency.
+            code:
+              type: string
+              description: ISO currency code (e.g., SAR, USD, AED).
+            exchange_rate:
+              type: number
+              description: >-
+                Exchange rate applied to the order currency relative to the
+                store currency.
+              nullable: true
+          required:
+            - id
+            - code
+            - exchange_rate
+          x-apidog-orders:
+            - id
+            - code
+            - exchange_rate
+          description: Represents the currency in which the order was placed and paid.
+          x-apidog-ignore-properties: []
+        order_store_currency:
+          type: object
+          properties:
+            id:
+              type: integer
+              description: Unique identifier of the store currency.
+            code:
+              type: string
+              description: ISO currency code of the store.
+            exchange_rate:
+              type: number
+              description: >-
+                Exchange rate of the store currency relative to the order
+                currency. Typically 1 when both currencies are the same.
+              nullable: true
+          required:
+            - id
+            - code
+            - exchange_rate
+          x-apidog-orders:
+            - id
+            - code
+            - exchange_rate
+          description: Represents the store’s base currency.
+          x-apidog-ignore-properties: []
+      required:
+        - order_currency
+        - order_store_currency
+      x-apidog-orders:
+        - order_currency
+        - order_store_currency
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    DefaultOrderConsigneeSerializer:
+      type: object
+      properties:
+        name:
+          type: string
+          description: >-
+            Full name of the consignee (customer) receiving the order. This
+            should match the name used for delivery and verification purposes.
+        email:
+          type: string
+          description: >-
+            Email address of the consignee. Used for order notifications,
+            updates, and communication related to the delivery or return
+            process.
+        mobile:
+          type: string
+          description: >-
+            Mobile phone number of the consignee, including country code if
+            applicable. This is used by shipping providers for delivery
+            coordination and contact.
+      x-apidog-orders:
+        - name
+        - email
+        - mobile
+      required:
+        - name
+        - email
+        - mobile
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    OrderCreditNotePaymentMethodPresenter:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        code:
+          type: string
+        type:
+          type: string
+      x-apidog-orders:
+        - id
+        - name
+        - code
+        - type
+      required:
+        - id
+        - name
+        - code
+        - type
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    OrderCreditNoteInvoiceItemPresenter:
+      type: object
+      properties:
+        code:
+          type: string
+        value:
+          type: string
+        value_string:
+          type: string
+        title:
+          type: string
+      x-apidog-orders:
+        - code
+        - value
+        - value_string
+        - title
+      required:
+        - code
+        - value
+        - value_string
+        - title
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    OrderCreditNoteShippingMethod:
+      type: object
+      properties:
+        id:
+          type: integer
+        type:
+          type: string
+          enum:
+            - pickup
+            - delivery
+          x-apidog-enum:
+            - value: pickup
+              name: ''
+              description: ''
+            - value: delivery
+              name: ''
+              description: ''
+        is_system_option:
+          type: boolean
+        name:
+          type: string
+          nullable: true
+        estimated_delivery_time:
+          type: string
+          nullable: true
+        code:
+          type: string
+          nullable: true
+        icon:
+          type: string
+          nullable: true
+        tracking_number:
+          type: string
+          nullable: true
+      x-apidog-orders:
+        - id
+        - type
+        - is_system_option
+        - name
+        - estimated_delivery_time
+        - code
+        - icon
+        - tracking_number
+      required:
+        - id
+        - type
+        - is_system_option
+        - name
+        - estimated_delivery_time
+        - code
+        - icon
+        - tracking_number
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    OrderCreditNoteShippingAddressPresenter:
+      type: object
+      properties:
+        district:
+          type: string
+        street:
+          type: string
+        city:
+          $ref: '#/components/schemas/City'
+        country:
+          $ref: '#/components/schemas/Country'
+        meta:
+          type: object
+          properties:
+            editable_order_cart_id:
+              type: string
+            shipping_address_meta:
+              type: object
+              properties:
+                building_number:
+                  type: string
+                short_address:
+                  type: string
+                postcode:
+                  type: string
+                additional_number:
+                  type: string
+                city_name:
+                  type: string
+              x-apidog-orders:
+                - building_number
+                - short_address
+                - postcode
+                - additional_number
+                - city_name
+              x-apidog-ignore-properties: []
+          x-apidog-orders:
+            - editable_order_cart_id
+            - shipping_address_meta
+          required:
+            - editable_order_cart_id
+            - shipping_address_meta
+          x-apidog-ignore-properties: []
+          nullable: true
+      x-apidog-orders:
+        - district
+        - street
+        - city
+        - country
+        - meta
+      required:
+        - district
+        - street
+        - city
+        - country
+        - meta
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    Country:
+      type: object
+      properties:
+        id:
+          type: integer
+          description: Unique identifier of the country
+          examples:
+            - 184
+        name:
+          type: string
+          description: >-
+            Name of the country, written in the language specified by the
+            _Accept-Language_ header parameter; defaults to Arabic if
+            _Accept-Language_ is not specified.
+          examples:
+            - السعودية
+      x-apidog-refs: {}
+      x-apidog-orders:
+        - id
+        - name
+      required:
+        - id
+        - name
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    City:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+      required:
+        - id
+        - name
+      x-apidog-orders:
+        - id
+        - name
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    DefaultOrderCustomerSerializer:
+      type: object
+      properties:
+        id:
+          type: integer
+          examples:
+            - 1441
+          description: Unique identifier of the customer.
+        name:
+          type: string
+          examples:
+            - John Doe
+          description: Full name of the customer.
+        email:
+          type: string
+          examples:
+            - test@mail.com
+          description: Email address of the customer.
+          nullable: true
+        mobile:
+          type: string
+          examples:
+            - '966123456789'
+          description: Mobile phone number of the customer.
+          nullable: true
+        note:
+          type: string
+          examples:
+            - ''
+          description: >-
+            Additional notes or instructions provided by the customer during
+            checkout.
+        verified:
+          type: integer
+          description: >-
+            Indicates whether the customer is verified, 1 means customer is
+            verified, 0 means is not verified
+          enum:
+            - 1
+            - 0
+          x-apidog-enum:
+            - value: 1
+              name: verified
+              description: ''
+            - value: 0
+              name: unverified
+              description: ''
+        type:
+          type: string
+          description: Type of customer.
+          examples:
+            - individual
+          enum:
+            - individual
+            - business
+          x-apidog-enum:
+            - value: individual
+              name: ''
+              description: ''
+            - value: business
+              name: ''
+              description: ''
+          nullable: true
+        business_name:
+          type: string
+          description: >-
+            Business name of the customer. Only applicable when type =
+            "business".
+          nullable: true
+        tax_number:
+          type: string
+          description: >-
+            Tax identification number of the customer. Applicable for business
+            customers.
+          nullable: true
+        commercial_registration:
+          type: string
+          description: >-
+            Commercial registration number of the business. Applicable when type
+            = "business".
+          nullable: true
+      required:
+        - id
+        - name
+        - email
+        - mobile
+        - note
+        - type
+      description: Customer information associated with the draft order.
+      x-apidog-orders:
+        - id
+        - name
+        - email
+        - mobile
+        - note
+        - verified
+        - type
+        - business_name
+        - tax_number
+        - commercial_registration
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    OrderStatus:
+      type: object
+      properties:
+        name:
+          type: string
+          description: Human-readable order status.
+          examples:
+            - جديد
+        code:
+          type: string
+          description: Order status code.
+          examples:
+            - new
+      required:
+        - name
+        - code
+      description: Current status of the draft order.
+      x-apidog-orders:
+        - name
+        - code
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    ResponseEnvelopMessage:
+      type: object
+      properties:
+        type:
+          type: string
+          description: Type of response message returned by the API.
+          examples:
+            - success
+        code:
+          type: string
+          description: Response code returned by the API, if available.
+          examples:
+            - MSG_POPUP_OK
+          nullable: true
+        name:
+          type: string
+          description: Name or title of the response message, if available.
+          examples:
+            - Coupons
+          nullable: true
+        description:
+          type: string
+          description: Detailed description of the response message, if available.
+          examples:
+            - Coupons created successfully
+          nullable: true
+      required:
+        - type
+        - code
+        - name
+        - description
+      description: Additional response metadata.
+      x-apidog-orders:
+        - type
+        - code
+        - name
+        - description
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+  securitySchemes: {}
+servers:
+  - url: https://api.zid.sa/
+    description: Prod Env
+security: []
+
+```

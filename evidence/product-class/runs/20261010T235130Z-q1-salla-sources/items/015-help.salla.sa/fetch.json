@@ -1,0 +1,18 @@
+{
+ "n": 15,
+ "url": "https://help.salla.sa/article/-الربط-مع-knet-tap/eqc4nnrdzbtzq3alko0asl3q",
+ "dir": "items/015-help.salla.sa",
+ "fetched_at": "2026-10-10T23:51:34Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.salla.sa/article/-الربط-مع-knet-tap/eqc4nnrdzbtzq3alko0asl3q",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 130764,
+ "cited_in": [
+  "SA-S-0130"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "53fe20b49b9d162f4f08835c7b2132fd01d6a6fbd8f9b1091834dc0609ff5445",
+ "raw_ext": "html"
+}

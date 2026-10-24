@@ -1,0 +1,976 @@
+# List Locations
+
+## OpenAPI Specification
+
+```yaml
+openapi: 3.0.1
+info:
+  title: ''
+  description: ''
+  version: 1.0.0
+paths:
+  /v1/locations/:
+    get:
+      summary: List Locations
+      deprecated: false
+      description: >+
+        Returns a list of all store locations.
+
+
+        :::info[]
+
+        **Note:** 
+
+        - This endpoint returns summary data only (`id` and `short_address`).
+
+        - To view full location details including `name`, `address`,
+        `coordinates`, etc., please use the [Get Store Location by
+        ID](https://docs.zid.sa/get-store-location-by-id)
+         endpoint.
+        :::
+
+
+
+
+        <Accordion title="🔑Scopes" defaultOpen>
+            
+         `inventories.read` - Inventories Read
+         
+        </Accordion>
+
+      tags:
+        - Default module/Apps/Merchant APIs/Inventories
+        - Multi-Inventory
+      parameters:
+        - name: Access-Token
+          in: header
+          description: >-
+            An Access Token is a unique string that represents the authorization
+            granted to a client (Partner application) by a user (Merchant or
+            Store Manager) to access their protected resources. It is part of
+            the OAuth 2.0 standard and is used to authenticate API requests on
+            behalf of the user. Access Tokens have a limited lifespan and must
+            be used within their validity period. Once expired, a new Access
+            Token can be obtained using a Refresh Token. Access Tokens should be
+            treated as sensitive information and must be kept secure to prevent
+            unauthorized access to the user's data. If you do not have an
+            `Access-Token`, but have the older alternative instead, i.e., the
+            `X-Manager-Token`, then see the instructions
+            [here](docs/Migrate-to-OAUTH-2.0.md) on how to obtain the
+            `Access-Token`.
+          required: true
+          example: '{{Access-Token}}'
+          schema:
+            type: string
+        - name: Authorization
+          in: header
+          description: >-
+            The Authorization token is a unique key given to the third-party
+            application (Partner) by Zid. It is used to authenticate the API
+            requests made by the Partner application. The token verifies the
+            partner's identity and ensures they have permission to access Zid's
+            API but does not provide any specific user or store information. It
+            should be included in the header of API requests when the partner
+            application needs to access Zid's API.
+          required: true
+          example: '{{Autherization}}'
+          schema:
+            type: string
+        - name: Store-Id
+          in: header
+          description: ''
+          required: true
+          example: '{{StoreId}}'
+          schema:
+            type: number
+            examples:
+              - 37213
+        - name: Role
+          in: header
+          description: Role of the user.
+          required: true
+          example: Manager
+          schema:
+            type: string
+            enum:
+              - Manager
+            examples:
+              - Manager
+        - name: Accept-Language
+          in: header
+          description: >-
+            Preferred language for the response. Defaults to `en` if not
+            specified.
+          required: false
+          example: en
+          schema:
+            type: string
+            enum:
+              - en
+              - ar
+            examples:
+              - en
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  next:
+                    type: string
+                    nullable: true
+                  previous:
+                    type: string
+                    nullable: true
+                  count:
+                    type: integer
+                  active_locations_limit:
+                    type: integer
+                  active_locations_count:
+                    type: integer
+                  results:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/InventoryLocation'
+                required:
+                  - next
+                  - previous
+                  - count
+                  - active_locations_limit
+                  - active_locations_count
+                  - results
+                x-apidog-orders:
+                  - next
+                  - previous
+                  - count
+                  - active_locations_limit
+                  - active_locations_count
+                  - results
+                x-apidog-ignore-properties: []
+              example:
+                next: null
+                previous: null
+                count: 14
+                active_locations_limit: 1036
+                active_locations_count: 11
+                results:
+                  - id: 8ee590fe-d02d-4c50-9184-f628bb8b115a
+                    name:
+                      ar: الرياض - فرع عبد العزيز
+                    city:
+                      id: 1
+                      name: Riyadh
+                      ar_name: الرياض
+                      country:
+                        id: 184
+                        name: Saudi Arabia
+                        ar_name: السعودية
+                        iso_code_2: SA
+                        iso_code_3: SAU
+                        code: SA
+                      country_code: SA
+                    type: PHYSICAL
+                    coordinates:
+                      latitude: 24.77208405941104
+                      longitude: 46.66803359985352
+                    full_address: >-
+                      6137 King Abdul Aziz Branch Rd, An Nafal, Riyadh 13312,
+                      Saudi Arabia
+                    short_address: null
+                    district: King Abdul Aziz
+                    street: نفال
+                    fulfillment_priority: 9
+                    is_default: false
+                    is_private: false
+                    is_enabled: true
+                    has_stocks: true
+                    channels:
+                      - pos
+                      - catalog
+                    linked_users:
+                      - user_uuid: 6675a8a4-ad6e-4663-b53e-6852e63f48c7
+                        full_name: Osama
+                  - id: cbcd24ce-5600-4b51-bf75-4d2020e2b9e9
+                    name:
+                      ar: مخزن الرياض - فرع السلي
+                    city:
+                      id: 1
+                      name: Riyadh
+                      ar_name: الرياض
+                      country:
+                        id: 184
+                        name: Saudi Arabia
+                        ar_name: السعودية
+                        iso_code_2: SA
+                        iso_code_3: SAU
+                        code: SA
+                      country_code: SA
+                    type: PHYSICAL
+                    coordinates:
+                      latitude: 24.66667439068546
+                      longitude: 46.80931091308594
+                    full_address: >-
+                      RQYA7651, 7651 Wadi Bish, 2339، حي السلي، Riyadh 14263,
+                      Saudi Arabia
+                    short_address: ABCD1234
+                    district: السلي
+                    street: وليد
+                    fulfillment_priority: 4
+                    is_default: false
+                    is_private: false
+                    is_enabled: true
+                    has_stocks: true
+                    channels:
+                      - pos
+                    linked_users: []
+                  - id: 982a2aac-b9af-44e3-a3e0-51d2faa6b7c2
+                    name:
+                      en: مخزن الكويت
+                    city:
+                      id: 1107
+                      name: Abu Hasaniya
+                      ar_name: أبو الحصانية
+                      country:
+                        id: 114
+                        name: Kuwait
+                        ar_name: الكويت
+                        iso_code_2: KW
+                        iso_code_3: KWT
+                        code: KW
+                      country_code: KW
+                    type: PHYSICAL
+                    coordinates:
+                      latitude: 30.0546476642069
+                      longitude: 31.23390532891117
+                    full_address: >-
+                      32 Ibn Al Yazri, Boulaq Num.4, Bulaq, Cairo Governorate
+                      4310066, Egypt
+                    short_address: null
+                    district: ''
+                    street: ''
+                    fulfillment_priority: null
+                    is_default: false
+                    is_private: false
+                    is_enabled: true
+                    has_stocks: true
+                    channels:
+                      - catalog
+                    linked_users: []
+                  - id: 0bf616e8-a3f5-491c-97b3-746ab100eb8c
+                    name:
+                      en: مخزون جدة
+                    city:
+                      id: 71
+                      name: Jeddah
+                      ar_name: جدة
+                      country:
+                        id: 184
+                        name: Saudi Arabia
+                        ar_name: السعودية
+                        iso_code_2: SA
+                        iso_code_3: SAU
+                        code: SA
+                      country_code: SA
+                    type: PHYSICAL
+                    coordinates:
+                      latitude: 21.53040203157045
+                      longitude: 39.17084954081419
+                    full_address: >-
+                      JCHA3867, 3867 Al Hilam, 6825, Al Hamra District, Jeddah
+                      23324, Saudi Arabia
+                    short_address: null
+                    district: ''
+                    street: ''
+                    fulfillment_priority: 2
+                    is_default: false
+                    is_private: false
+                    is_enabled: true
+                    has_stocks: true
+                    channels:
+                      - catalog
+                    linked_users: []
+                  - id: fbc5c958-4f51-49de-bb69-18d587e27166
+                    name:
+                      ar: زد كاشير
+                    city:
+                      id: 1
+                      name: Riyadh
+                      ar_name: الرياض
+                      country:
+                        id: 184
+                        name: Saudi Arabia
+                        ar_name: السعودية
+                        iso_code_2: SA
+                        iso_code_3: SAU
+                        code: SA
+                      country_code: SA
+                    type: PHYSICAL
+                    coordinates:
+                      latitude: 24.75274712075788
+                      longitude: 46.65049508956145
+                    full_address: >-
+                      RGNA7959، 7959 وادي المقراة، 5375، حي النخيل، الرياض
+                      12381, Saudi Arabia
+                    short_address: jmba2121
+                    district: kjjlk
+                    street: lklk
+                    fulfillment_priority: 1
+                    is_default: false
+                    is_private: false
+                    is_enabled: true
+                    has_stocks: true
+                    channels:
+                      - pos
+                      - external.3
+                    linked_users: []
+                  - id: e5e1ea5f-4e3d-48c3-ad96-6622fc598736
+                    name:
+                      ar: مخزن الطايف
+                    city:
+                      id: 92
+                      name: Tabuk
+                      ar_name: تبوك
+                      country:
+                        id: 184
+                        name: Saudi Arabia
+                        ar_name: السعودية
+                        iso_code_2: SA
+                        iso_code_3: SAU
+                        code: SA
+                      country_code: SA
+                    type: PHYSICAL
+                    coordinates:
+                      latitude: 21.27117116694547
+                      longitude: 40.42276206147611
+                    full_address: >-
+                      حي, TAAE9183, 9183 Oman, 3457, Ashuhada Ashamaliyyah, At
+                      Taif 26513, Saudi Arabia
+                    short_address: null
+                    district: ''
+                    street: ''
+                    fulfillment_priority: 6
+                    is_default: false
+                    is_private: false
+                    is_enabled: true
+                    has_stocks: true
+                    channels:
+                      - catalog
+                    linked_users: []
+                  - id: e53d5450-c4b0-45e0-ad7b-3c61eb667897
+                    name:
+                      en: China Inv
+                    city:
+                      id: 5332
+                      name: Beijing
+                      ar_name: بكين
+                      country:
+                        id: 44
+                        name: China
+                        ar_name: الصين
+                        iso_code_2: CN
+                        iso_code_3: CHN
+                        code: CN
+                      country_code: CN
+                    type: PHYSICAL
+                    coordinates:
+                      latitude: 24.71867979090541
+                      longitude: 46.67605867583006
+                    full_address: >-
+                      6576 Prince Faisal Ibn Saad Ibn Abd Al Rahman, 2884, Al
+                      Wurud, Riyadh 12251, Saudi Arabia
+                    short_address: null
+                    district: null
+                    street: null
+                    fulfillment_priority: null
+                    is_default: false
+                    is_private: false
+                    is_enabled: true
+                    has_stocks: false
+                    channels:
+                      - catalog
+                    linked_users: []
+                  - id: 34bb2514-5359-4b52-ac8e-a045d0ec7956
+                    name:
+                      ar: WeboTestInventory
+                    city:
+                      id: 5298
+                      name: As-Salt
+                      ar_name: السلط
+                      country:
+                        id: 108
+                        name: Jordan
+                        ar_name: الأردن
+                        iso_code_2: JO
+                        iso_code_3: JOR
+                        code: JO
+                      country_code: JO
+                    type: PHYSICAL
+                    coordinates:
+                      latitude: 0
+                      longitude: 0
+                    full_address: 69.35.32.36
+                    short_address: null
+                    district: Test
+                    street: Test
+                    fulfillment_priority: 3
+                    is_default: false
+                    is_private: false
+                    is_enabled: true
+                    has_stocks: true
+                    channels:
+                      - pos
+                    linked_users: []
+                  - id: 2fdcc886-74d2-4f76-a5f3-ed06797a6d82
+                    name:
+                      en: nbb
+                    city:
+                      id: 1
+                      name: Riyadh
+                      ar_name: الرياض
+                      country:
+                        id: 184
+                        name: Saudi Arabia
+                        ar_name: السعودية
+                        iso_code_2: SA
+                        iso_code_3: SAU
+                        code: SA
+                      country_code: SA
+                    type: PHYSICAL
+                    coordinates:
+                      latitude: 24.76965922592517
+                      longitude: 46.73923006254881
+                    full_address: >-
+                      RFHA2884، 2884 شارع الأمير مقرن بن عبدالعزيز، 7046, Al
+                      Hamra, Riyadh 13216, Saudi Arabia
+                    short_address: null
+                    district: null
+                    street: null
+                    fulfillment_priority: null
+                    is_default: false
+                    is_private: false
+                    is_enabled: true
+                    has_stocks: false
+                    channels:
+                      - catalog
+                    linked_users: []
+                  - id: bd3a596c-2e5c-42af-a5f2-b7a341cff1cb
+                    name:
+                      ar: الطائف واحد
+                    city:
+                      id: 55
+                      name: Taif
+                      ar_name: الطائف
+                      country:
+                        id: 184
+                        name: Saudi Arabia
+                        ar_name: السعودية
+                        iso_code_2: SA
+                        iso_code_3: SAU
+                        code: SA
+                      country_code: SA
+                    type: PHYSICAL
+                    coordinates:
+                      latitude: 21.29444499014764
+                      longitude: 40.42501380639715
+                    full_address: >-
+                      TADA6658, 6658 Airport Rd, 4403, Al Faisaliyyah, At Taif
+                      26526, Saudi Arabia
+                    short_address: ABCD1234
+                    district: TEST
+                    street: TEST
+                    fulfillment_priority: null
+                    is_default: false
+                    is_private: false
+                    is_enabled: false
+                    has_stocks: false
+                    channels:
+                      - catalog
+                    linked_users: []
+                  - id: 337419fb-fa90-4308-b1e3-6a2b272dd0d9
+                    name:
+                      en: الطائف اثنين
+                    city:
+                      id: 55
+                      name: Taif
+                      ar_name: الطائف
+                      country:
+                        id: 184
+                        name: Saudi Arabia
+                        ar_name: السعودية
+                        iso_code_2: SA
+                        iso_code_3: SAU
+                        code: SA
+                      country_code: SA
+                    type: PHYSICAL
+                    coordinates:
+                      latitude: 21.22340841508445
+                      longitude: 40.4116280737773
+                    full_address: >-
+                      TAAB7494، 7494 طريق الشفاء، 5802، حي أم العراد، At Taif
+                      26512, Saudi Arabia
+                    short_address: null
+                    district: null
+                    street: null
+                    fulfillment_priority: null
+                    is_default: false
+                    is_private: false
+                    is_enabled: false
+                    has_stocks: false
+                    channels:
+                      - catalog
+                    linked_users: []
+                  - id: c4350760-cc30-464a-a471-48806670f607
+                    name:
+                      en: الطائف ثلاثة
+                    city:
+                      id: 55
+                      name: Taif
+                      ar_name: الطائف
+                      country:
+                        id: 184
+                        name: Saudi Arabia
+                        ar_name: السعودية
+                        iso_code_2: SA
+                        iso_code_3: SAU
+                        code: SA
+                      country_code: SA
+                    type: PHYSICAL
+                    coordinates:
+                      latitude: 21.28418578478053
+                      longitude: 40.38288212103146
+                    full_address: 8075, 3729, Al Khalidiyyah, At Taif 26521, Saudi Arabia
+                    short_address: null
+                    district: null
+                    street: null
+                    fulfillment_priority: null
+                    is_default: false
+                    is_private: false
+                    is_enabled: false
+                    has_stocks: false
+                    channels:
+                      - catalog
+                    linked_users: []
+                  - id: 2ada7f56-c207-470d-a1d6-ee539defb6a3
+                    name:
+                      en: الرياض تجربة جديدة
+                    city:
+                      id: 1
+                      name: Riyadh
+                      ar_name: الرياض
+                      country:
+                        id: 184
+                        name: Saudi Arabia
+                        ar_name: السعودية
+                        iso_code_2: SA
+                        iso_code_3: SAU
+                        code: SA
+                      country_code: SA
+                    type: PHYSICAL
+                    coordinates:
+                      latitude: 24.75593717435618
+                      longitude: 46.77733888823241
+                    full_address: >-
+                      3833 Riyad Al Raoudah, 6970, King Faisal Dt., Riyadh
+                      13215, Saudi Arabia
+                    short_address: null
+                    district: ''
+                    street: ''
+                    fulfillment_priority: null
+                    is_default: false
+                    is_private: false
+                    is_enabled: true
+                    has_stocks: false
+                    channels:
+                      - pos
+                      - catalog
+                    linked_users: []
+                  - id: 59be4f1d-3b59-4b34-ba47-9f7293894b47
+                    name:
+                      ar: الدمام
+                      en: Dammam
+                    city:
+                      id: 24
+                      name: Dammam
+                      ar_name: الدمام
+                      country:
+                        id: 184
+                        name: Saudi Arabia
+                        ar_name: السعودية
+                        iso_code_2: SA
+                        iso_code_3: SAU
+                        code: SA
+                      country_code: SA
+                    type: PHYSICAL
+                    coordinates:
+                      latitude: 26.34179794003899
+                      longitude: 49.83497092822263
+                    full_address: 8RRM+PX Dammam Saudi Arabia
+                    short_address: EDJB3266
+                    district: البديعة
+                    street: الأمير نايف بن عبدالعزيز
+                    fulfillment_priority: null
+                    is_default: true
+                    is_private: false
+                    is_enabled: true
+                    has_stocks: true
+                    channels:
+                      - catalog
+                    linked_users: []
+          headers: {}
+          x-apidog-name: OK
+        '401':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                description: >-
+                  Response returned when the request cannot be authenticated
+                  because the required credentials are missing, invalid, or
+                  expired.
+                properties:
+                  status:
+                    type: string
+                    description: Indicates the overall status of the API response.
+                    examples:
+                      - error
+                  message:
+                    type: object
+                    description: >-
+                      Contains structured details explaining why the request
+                      could not be authenticated.
+                    properties:
+                      type:
+                        type: string
+                        description: Indicates the category of the response message.
+                        examples:
+                          - error
+                      code:
+                        type: string
+                        description: >-
+                          A machine-readable code identifying the authentication
+                          error. Returns null when no specific code is
+                          available.
+                        examples:
+                          - UNAUTHORIZED
+                        nullable: true
+                      name:
+                        type: string
+                        description: >-
+                          A short, human-readable title describing the
+                          authentication error. Returns null when no title is
+                          available.
+                        examples:
+                          - Unauthorized
+                        nullable: true
+                      description:
+                        type: string
+                        description: >-
+                          A human-readable explanation of why the request could
+                          not be authenticated. Returns null when no detailed
+                          explanation is available.
+                        examples:
+                          - >-
+                            Authentication credentials are missing, invalid, or
+                            expired.
+                        nullable: true
+                    required:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-orders:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-ignore-properties: []
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                examples:
+                  - status: error
+                    message:
+                      type: error
+                      code: UNAUTHORIZED
+                      name: Unauthorized
+                      description: >-
+                        Authentication credentials are missing, invalid, or
+                        expired.
+                x-apidog-ignore-properties: []
+              examples:
+                '2':
+                  summary: Example 1
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_MISSING
+                      name: Sorry
+                      description: Please login first.
+                '3':
+                  summary: Example 2
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Login session expired. Please login again.
+                '4':
+                  summary: Example 3
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Invalid authentication
+          headers: {}
+          x-apidog-name: Unauthorized
+        '500':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Status of the error.
+                  message:
+                    $ref: '#/components/schemas/ResponseEnvelopMessage'
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                x-apidog-ignore-properties: []
+              example:
+                status: error
+                message:
+                  type: error
+                  code: MSG_HIDDEN
+                  name: Error
+                  description: Internal Server Error
+          headers: {}
+          x-apidog-name: Internal Server error
+      security: []
+      x-apidog-folder: Default module/Apps/Merchant APIs/Inventories
+      x-apidog-status: released
+      x-run-in-apidog: https://app.apidog.com/web/project/613905/apis/api-9148586-run
+components:
+  schemas:
+    InventoryLocation:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: object
+          properties:
+            ar:
+              type: string
+            en:
+              type: string
+          x-apidog-orders:
+            - ar
+            - en
+          x-apidog-ignore-properties: []
+        city:
+          type: object
+          properties:
+            id:
+              type: integer
+            name:
+              type: string
+            ar_name:
+              type: string
+            country:
+              type: object
+              properties:
+                id:
+                  type: integer
+                name:
+                  type: string
+                ar_name:
+                  type: string
+                iso_code_2:
+                  type: string
+                iso_code_3:
+                  type: string
+                code:
+                  type: string
+              required:
+                - id
+                - name
+                - ar_name
+                - iso_code_2
+                - iso_code_3
+                - code
+              x-apidog-orders:
+                - id
+                - name
+                - ar_name
+                - iso_code_2
+                - iso_code_3
+                - code
+              x-apidog-ignore-properties: []
+            country_code:
+              type: string
+          required:
+            - id
+            - name
+            - ar_name
+            - country
+            - country_code
+          x-apidog-orders:
+            - id
+            - name
+            - ar_name
+            - country
+            - country_code
+          x-apidog-ignore-properties: []
+        type:
+          type: string
+        coordinates:
+          type: object
+          properties:
+            latitude:
+              type: number
+            longitude:
+              type: number
+          required:
+            - latitude
+            - longitude
+          x-apidog-orders:
+            - latitude
+            - longitude
+          x-apidog-ignore-properties: []
+        full_address:
+          type: string
+        short_address:
+          type: string
+          nullable: true
+        district:
+          type: string
+          nullable: true
+        street:
+          type: string
+          nullable: true
+        fulfillment_priority:
+          type: integer
+          nullable: true
+        is_default:
+          type: boolean
+        is_private:
+          type: boolean
+        is_enabled:
+          type: boolean
+        has_stocks:
+          type: boolean
+        channels:
+          type: array
+          items:
+            type: string
+        linked_users:
+          type: array
+          items:
+            type: object
+            properties:
+              user_uuid:
+                type: string
+              full_name:
+                type: string
+            x-apidog-orders:
+              - user_uuid
+              - full_name
+            x-apidog-ignore-properties: []
+      required:
+        - id
+        - name
+        - city
+        - type
+        - coordinates
+        - full_address
+        - short_address
+        - district
+        - street
+        - fulfillment_priority
+        - is_default
+        - is_private
+        - is_enabled
+        - has_stocks
+        - channels
+        - linked_users
+      x-apidog-orders:
+        - id
+        - name
+        - city
+        - type
+        - coordinates
+        - full_address
+        - short_address
+        - district
+        - street
+        - fulfillment_priority
+        - is_default
+        - is_private
+        - is_enabled
+        - has_stocks
+        - channels
+        - linked_users
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    ResponseEnvelopMessage:
+      type: object
+      properties:
+        type:
+          type: string
+          description: Type of response message returned by the API.
+          examples:
+            - success
+        code:
+          type: string
+          description: Response code returned by the API, if available.
+          examples:
+            - MSG_POPUP_OK
+          nullable: true
+        name:
+          type: string
+          description: Name or title of the response message, if available.
+          examples:
+            - Coupons
+          nullable: true
+        description:
+          type: string
+          description: Detailed description of the response message, if available.
+          examples:
+            - Coupons created successfully
+          nullable: true
+      required:
+        - type
+        - code
+        - name
+        - description
+      description: Additional response metadata.
+      x-apidog-orders:
+        - type
+        - code
+        - name
+        - description
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+  securitySchemes: {}
+servers:
+  - url: https://api.zid.sa/
+    description: Prod Env
+security: []
+
+```

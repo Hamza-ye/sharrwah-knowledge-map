@@ -1,0 +1,18 @@
+{
+ "n": 123,
+ "url": "https://shopify.dev/docs/apps/build/pos.md",
+ "dir": "items/123-shopify.dev",
+ "fetched_at": "2026-10-11T06:13:08Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://shopify.dev/docs/apps/build/pos.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 9350,
+ "cited_in": [
+  "SH-S-0713"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "8291cd128c6b7c09479452e06754e675e8cf3bab2ad2c27745b7a031ba4b9327",
+ "raw_ext": "txt"
+}

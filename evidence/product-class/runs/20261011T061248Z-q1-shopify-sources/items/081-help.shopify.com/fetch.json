@@ -1,0 +1,19 @@
+{
+ "n": 81,
+ "url": "https://help.shopify.com/en/manual/privacy-and-security/privacy/international-data-transfers/configuration-options.md",
+ "dir": "items/081-help.shopify.com",
+ "fetched_at": "2026-10-11T06:13:04Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/privacy-and-security/privacy/international-data-transfers/configuration-options.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 550,
+ "cited_in": [
+  "SH-S-0646",
+  "SH-S-0647"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "3e1ecb5e6dea7838ca994a43c1a3a35d17154b5cdae829b3fe762de0382dd2b4",
+ "raw_ext": "txt"
+}

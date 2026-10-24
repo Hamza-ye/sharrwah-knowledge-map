@@ -1,0 +1,18 @@
+{
+ "n": 21,
+ "url": "https://help.shopify.com/en/manual/finance/shopify-capital/spain.md",
+ "dir": "items/021-help.shopify.com",
+ "fetched_at": "2026-10-11T06:12:57Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/finance/shopify-capital/spain.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 5034,
+ "cited_in": [
+  "SH-S-0496"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "c61dac18ddb1c05df32a455242b8210e61eee71b22e4393a09cfb84faa3423e3",
+ "raw_ext": "txt"
+}

@@ -1,0 +1,21 @@
+{
+ "n": 43,
+ "url": "https://woocommerce.com/document/woo-mobile-app-point-of-sale-mode/",
+ "dir": "items/043-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:02Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/woo-mobile-app-point-of-sale-mode/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 46002,
+ "cited_in": [
+  "WC-S-0892",
+  "WC-S-0893",
+  "WC-S-0894",
+  "WC-S-0895"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "271698ffaea549737f551c46f381e8a6cbb31c2e314dc65cc8d6b08df8c7abfb",
+ "raw_ext": "html"
+}

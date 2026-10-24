@@ -1,0 +1,18 @@
+{
+ "n": 100,
+ "url": "https://wordpress.com/support/restricted-businesses-and-activities/",
+ "dir": "items/100-wordpress.com",
+ "fetched_at": "2026-10-10T23:54:08Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://wordpress.com/support/restricted-businesses-and-activities/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 45478,
+ "cited_in": [
+  "WC-S-0563"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "403b45501959d7e9df34e449b6a8c0e5f992efc4d7385d2e22310178a95fe44d",
+ "raw_ext": "html"
+}

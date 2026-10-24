@@ -1,0 +1,21 @@
+{
+ "n": 3,
+ "url": "https://stripe.com/jp/legal/jcb",
+ "dir": "items/003-stripe.com",
+ "fetched_at": "2026-10-13T00:35:26Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://stripe.com/jp/legal/jcb",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 48645,
+ "cited_in": [
+  "S01-WC-C220",
+  "S01-WC-C221",
+  "S01-WC-C222",
+  "S01-WC-C223"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "a4de32ea8db9c4811a75ca65673031a64133a7e93a8c719a00899618588b6ec4",
+ "raw_ext": "html"
+}

@@ -1,0 +1,21 @@
+{
+ "n": 98,
+ "url": "https://help.shopify.com/en/manual/taxes/shopify-tax/vat-validate.md",
+ "dir": "items/098-help.shopify.com",
+ "fetched_at": "2026-10-11T06:13:05Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/taxes/shopify-tax/vat-validate.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 2316,
+ "cited_in": [
+  "SH-S-0535",
+  "SH-S-0536",
+  "SH-S-0633",
+  "SH-S-0670"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "1d662003b44703febd9b4dd0620dccee9c469aaf4cabeb1118fadc2794638498",
+ "raw_ext": "txt"
+}

@@ -1,0 +1,19 @@
+{
+ "n": 20,
+ "url": "https://support.bigcommerce.com/s/article/Customer-Groups",
+ "dir": "items/020-support.bigcommerce.com",
+ "fetched_at": "2026-10-13T05:40:17Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://support.bigcommerce.com/s/article/Customer-Groups?language=en_US",
+ "content_type": "text/html;charset=UTF-8",
+ "bytes": 190822,
+ "cited_in": [
+  "BC-C-032",
+  "BC-C-034"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "5f411d00b0443c9985f3583c5f8772f97c20e917a577dd62215f36be3413818f",
+ "raw_ext": "html"
+}

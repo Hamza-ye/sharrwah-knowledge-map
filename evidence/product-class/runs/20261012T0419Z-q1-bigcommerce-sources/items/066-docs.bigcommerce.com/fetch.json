@@ -1,0 +1,20 @@
+{
+ "n": 66,
+ "url": "https://docs.bigcommerce.com/developer/docs/admin/catalog-and-inventory/inventory-locations.md",
+ "dir": "items/066-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:20:21Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/docs/admin/catalog-and-inventory/inventory-locations.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 2098,
+ "cited_in": [
+  "BC-S-0034",
+  "BC-S-0036",
+  "BC-S-0037"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "eba11bfb39e2dda2b87fc97663c575dee64e6ad36eb95012e8bf3f06c2c5faf5",
+ "raw_ext": "txt"
+}

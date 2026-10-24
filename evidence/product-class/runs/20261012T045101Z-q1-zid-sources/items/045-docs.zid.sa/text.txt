@@ -1,0 +1,862 @@
+# Localization
+
+## OpenAPI Specification
+
+```yaml
+openapi: 3.0.1
+info:
+  title: ''
+  description: ''
+  version: 1.0.0
+paths:
+  /v1/managers/account/store/localization:
+    get:
+      summary: Localization
+      deprecated: false
+      description: >
+        Retrieves the store's supported languages and currencies, indicating the
+        currently active language and the default currency.
+
+
+        <Accordion title="🔑Scopes" defaultOpen>
+            
+          `third_store_details_read` - Read the store's core details
+         
+        </Accordion>
+      tags:
+        - Default module/Apps/Merchant APIs/Account/Store
+        - Orders
+      parameters:
+        - name: Authorization
+          in: header
+          description: >-
+            The Authorization token is a unique key given to the third-party
+            application (Partner) by Zid. It is used to authenticate the API
+            requests made by the Partner application. The token verifies the
+            partner's identity and ensures they have permission to access Zid's
+            API but does not provide any specific user or store information. It
+            should be included in the header of API requests when the partner
+            application needs to access Zid's API.
+          required: true
+          example: '{{Autherization}}'
+          schema:
+            type: string
+        - name: X-Manager-Token
+          in: header
+          description: >-
+            This token is used to authenticate and access information related to
+            the store. It is obtained through an OAuth mechanism and is required
+            to perform operations on the store's data. The `X-Manager-Token`
+            should be included in the header of API requests that require
+            store-related information.
+          required: true
+          example: '{{Access-Token}}'
+          schema:
+            type: string
+        - name: Accept-Language
+          in: header
+          description: >-
+            Preferred language for the response. Defaults to `en` if not
+            specified.
+          required: false
+          example: en
+          schema:
+            type: string
+            enum:
+              - en
+              - ar
+            examples:
+              - en
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                  localization:
+                    $ref: '#/components/schemas/StoreLocalizationPresenter'
+                  message: &ref_0
+                    $ref: '#/components/schemas/ResponseEnvelopMessage'
+                required:
+                  - status
+                  - localization
+                  - message
+                x-apidog-orders:
+                  - status
+                  - localization
+                  - message
+                x-apidog-ignore-properties: []
+              example:
+                status: object
+                localization:
+                  language:
+                    id: 2
+                    name: عربي
+                    code: ar
+                    direction: rtl
+                  languages:
+                    - id: 2
+                      name: عربي
+                      code: ar
+                      direction: rtl
+                    - id: 1
+                      name: English
+                      code: en
+                      direction: ltr
+                  currency:
+                    id: 4
+                    name: ريال سعودي
+                    code: SAR
+                    symbol: ' ر.س '
+                    country:
+                      id: 184
+                      name: السعودية
+                      priority: 1
+                      code: SA
+                      country_code: SAU
+                      flag: >-
+                        https://zid-testing-907587157081.s3.eu-west-1.amazonaws.com/static/sa.svg
+                  currencies:
+                    - id: 9
+                      name: يورو
+                      code: EUR
+                      symbol: ' € '
+                      country:
+                        id: 81
+                        name: ألمانيا
+                        priority: null
+                        code: DE
+                        country_code: DEU
+                        flag: >-
+                          https://zid-testing-907587157081.s3.eu-west-1.amazonaws.com/static/de.svg
+                    - id: 15
+                      name: يورو
+                      code: EUR
+                      symbol: €
+                      country:
+                        id: 14
+                        name: النمسا
+                        priority: null
+                        code: AT
+                        country_code: AUT
+                        flag: >-
+                          https://zid-testing-907587157081.s3.eu-west-1.amazonaws.com/static/at.svg
+                    - id: 6
+                      name: دينار بحريني
+                      code: BHD
+                      symbol: ' د.ب '
+                      country:
+                        id: 17
+                        name: البحرين
+                        priority: 5
+                        code: BH
+                        country_code: BHR
+                        flag: >-
+                          https://zid-testing-907587157081.s3.eu-west-1.amazonaws.com/static/bh.svg
+                    - id: 26
+                      name: دينار ليبي
+                      code: LYD
+                      symbol: ' د.ل '
+                      country:
+                        id: 121
+                        name: ليبيا
+                        priority: 11
+                        code: LY
+                        country_code: LBY
+                        flag: >-
+                          https://zid-testing-907587157081.s3.eu-west-1.amazonaws.com/static/ly.svg
+                    - id: 13
+                      name: يورو
+                      code: EUR
+                      symbol: €
+                      country:
+                        id: 103
+                        name: جمهورية أيرلندا
+                        priority: null
+                        code: IE
+                        country_code: IRL
+                        flag: >-
+                          https://zid-testing-907587157081.s3.eu-west-1.amazonaws.com/static/ie.svg
+                    - id: 4
+                      name: ريال سعودي
+                      code: SAR
+                      symbol: ' ر.س '
+                      country:
+                        id: 184
+                        name: السعودية
+                        priority: 1
+                        code: SA
+                        country_code: SAU
+                        flag: >-
+                          https://zid-testing-907587157081.s3.eu-west-1.amazonaws.com/static/sa.svg
+                    - id: 5
+                      name: دينار كويتي
+                      code: KWD
+                      symbol: ' د.ك '
+                      country:
+                        id: 114
+                        name: الكويت
+                        priority: 3
+                        code: KW
+                        country_code: KWT
+                        flag: >-
+                          https://zid-testing-907587157081.s3.eu-west-1.amazonaws.com/static/kw.svg
+                    - id: 8
+                      name: ريال عماني
+                      code: OMR
+                      symbol: ' ر.ع'
+                      country:
+                        id: 161
+                        name: عمان
+                        priority: 4
+                        code: OM
+                        country_code: OMN
+                        flag: >-
+                          https://zid-testing-907587157081.s3.eu-west-1.amazonaws.com/static/om.svg
+                    - id: 21
+                      name: جنيه مصري
+                      code: EGP
+                      symbol: ' ج.م '
+                      country:
+                        id: 63
+                        name: مصر
+                        priority: 6
+                        code: EG
+                        country_code: EGY
+                        flag: >-
+                          https://zid-testing-907587157081.s3.eu-west-1.amazonaws.com/static/eg.svg
+                    - id: 10
+                      name: يورو
+                      code: EUR
+                      symbol: €
+                      country:
+                        id: 195
+                        name: إسبانيا
+                        priority: null
+                        code: ES
+                        country_code: ESP
+                        flag: >-
+                          https://zid-testing-907587157081.s3.eu-west-1.amazonaws.com/static/es.svg
+                    - id: 31
+                      name: ريال قطري
+                      code: QAR
+                      symbol: ' ر.ق '
+                      country:
+                        id: 173
+                        name: قطر
+                        priority: 6
+                        code: QA
+                        country_code: QAT
+                        flag: >-
+                          https://zid-testing-907587157081.s3.eu-west-1.amazonaws.com/static/qa.svg
+                    - id: 2
+                      name: دولار أمريكي
+                      code: USD
+                      symbol: ' $ '
+                      country:
+                        id: 223
+                        name: الولايات المتحدة
+                        priority: null
+                        code: US
+                        country_code: USA
+                        flag: >-
+                          https://zid-testing-907587157081.s3.eu-west-1.amazonaws.com/static/us.svg
+                    - id: 4
+                      name: ريال سعودي
+                      code: SAR
+                      symbol: ' ر.س '
+                      country:
+                        id: 184
+                        name: السعودية
+                        priority: 1
+                        code: SA
+                        country_code: SAU
+                        flag: >-
+                          https://zid-testing-907587157081.s3.eu-west-1.amazonaws.com/static/sa.svg
+                    - id: 4
+                      name: ريال سعودي
+                      code: SAR
+                      symbol: ' ر.س '
+                      country:
+                        id: 184
+                        name: السعودية
+                        priority: 1
+                        code: SA
+                        country_code: SAU
+                        flag: >-
+                          https://zid-testing-907587157081.s3.eu-west-1.amazonaws.com/static/sa.svg
+                    - id: 4
+                      name: ريال سعودي
+                      code: SAR
+                      symbol: ' ر.س '
+                      country:
+                        id: 184
+                        name: السعودية
+                        priority: 1
+                        code: SA
+                        country_code: SAU
+                        flag: >-
+                          https://zid-testing-907587157081.s3.eu-west-1.amazonaws.com/static/sa.svg
+                message:
+                  type: object
+                  code: null
+                  name: null
+                  description: null
+          headers: {}
+          x-apidog-name: OK
+        '400':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                  message:
+                    type: object
+                    properties:
+                      type:
+                        type: string
+                      code:
+                        type: string
+                        nullable: true
+                      name:
+                        type: string
+                        nullable: true
+                      description:
+                        type: string
+                        nullable: true
+                    required:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-orders:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-ignore-properties: []
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                x-apidog-ignore-properties: []
+          headers: {}
+          x-apidog-name: Bad Request
+        '401':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                description: >-
+                  Response returned when the request cannot be authenticated
+                  because the required credentials are missing, invalid, or
+                  expired.
+                properties:
+                  status:
+                    type: string
+                    description: Indicates the overall status of the API response.
+                    examples:
+                      - error
+                  message:
+                    type: object
+                    description: >-
+                      Contains structured details explaining why the request
+                      could not be authenticated.
+                    properties:
+                      type:
+                        type: string
+                        description: Indicates the category of the response message.
+                        examples:
+                          - error
+                      code:
+                        type: string
+                        description: >-
+                          A machine-readable code identifying the authentication
+                          error. Returns null when no specific code is
+                          available.
+                        examples:
+                          - UNAUTHORIZED
+                        nullable: true
+                      name:
+                        type: string
+                        description: >-
+                          A short, human-readable title describing the
+                          authentication error. Returns null when no title is
+                          available.
+                        examples:
+                          - Unauthorized
+                        nullable: true
+                      description:
+                        type: string
+                        description: >-
+                          A human-readable explanation of why the request could
+                          not be authenticated. Returns null when no detailed
+                          explanation is available.
+                        examples:
+                          - >-
+                            Authentication credentials are missing, invalid, or
+                            expired.
+                        nullable: true
+                    required:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-orders:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-ignore-properties: []
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                examples:
+                  - status: error
+                    message:
+                      type: error
+                      code: UNAUTHORIZED
+                      name: Unauthorized
+                      description: >-
+                        Authentication credentials are missing, invalid, or
+                        expired.
+                x-apidog-ignore-properties: []
+              examples:
+                '2':
+                  summary: Example 1
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_MISSING
+                      name: Sorry
+                      description: Please login first.
+                '3':
+                  summary: Example 2
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Login session expired. Please login again.
+                '4':
+                  summary: Example 3
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Invalid authentication
+          headers: {}
+          x-apidog-name: Unauthorized
+        '403':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                  message:
+                    type: object
+                    properties:
+                      type:
+                        type: string
+                      code:
+                        type: string
+                        nullable: true
+                      name:
+                        type: string
+                        nullable: true
+                      description:
+                        type: string
+                        nullable: true
+                    required:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-orders:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-ignore-properties: []
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                x-apidog-ignore-properties: []
+          headers: {}
+          x-apidog-name: Forbidden
+        '500':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Status of the error.
+                  message: *ref_0
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                x-apidog-ignore-properties: []
+              example:
+                status: error
+                message:
+                  type: error
+                  code: MSG_HIDDEN
+                  name: Error
+                  description: Internal Server Error
+          headers: {}
+          x-apidog-name: Internal Server error
+      security: []
+      x-apidog-folder: Default module/Apps/Merchant APIs/Account/Store
+      x-apidog-status: released
+      x-run-in-apidog: https://app.apidog.com/web/project/613905/apis/api-33664641-run
+components:
+  schemas:
+    ResponseEnvelopMessage:
+      type: object
+      properties:
+        type:
+          type: string
+          description: Type of response message returned by the API.
+          examples:
+            - success
+        code:
+          type: string
+          description: Response code returned by the API, if available.
+          examples:
+            - MSG_POPUP_OK
+          nullable: true
+        name:
+          type: string
+          description: Name or title of the response message, if available.
+          examples:
+            - Coupons
+          nullable: true
+        description:
+          type: string
+          description: Detailed description of the response message, if available.
+          examples:
+            - Coupons created successfully
+          nullable: true
+      required:
+        - type
+        - code
+        - name
+        - description
+      description: Additional response metadata.
+      x-apidog-orders:
+        - type
+        - code
+        - name
+        - description
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    StoreLocalizationPresenter:
+      type: object
+      description: >-
+        Store localization details, including the active language, supported
+        languages, active currency, and supported currencies.
+      properties:
+        language:
+          type: object
+          description: Current language configured for the store.
+          properties:
+            id:
+              type: integer
+              description: Unique identifier of the language.
+              examples:
+                - 2
+            name:
+              type: string
+              description: Display name of the language.
+              examples:
+                - عربي
+            code:
+              type: string
+              description: Language code used to identify the language.
+              examples:
+                - ar
+            direction:
+              type: string
+              description: Text direction of the language.
+              examples:
+                - rtl
+          required:
+            - id
+            - name
+            - code
+            - direction
+          x-apidog-orders:
+            - id
+            - name
+            - code
+            - direction
+          x-apidog-ignore-properties: []
+        languages:
+          type: array
+          description: List of languages supported by the store.
+          items:
+            type: object
+            description: Supported language details.
+            properties:
+              id:
+                type: integer
+                description: Unique identifier of the language.
+                examples:
+                  - 1
+              name:
+                type: string
+                description: Display name of the language.
+                examples:
+                  - English
+              code:
+                type: string
+                description: Language code used to identify the language.
+                examples:
+                  - en
+              direction:
+                type: string
+                description: Text direction of the language.
+                examples:
+                  - ltr
+            required:
+              - id
+              - name
+              - code
+              - direction
+            x-apidog-orders:
+              - id
+              - name
+              - code
+              - direction
+            x-apidog-ignore-properties: []
+        currency:
+          type: object
+          description: Current currency configured for the store.
+          properties:
+            id:
+              type: integer
+              description: Unique identifier of the currency.
+              examples:
+                - 4
+            name:
+              type: string
+              description: Display name of the currency.
+              examples:
+                - ريال سعودي
+            code:
+              type: string
+              description: Currency code used to identify the currency.
+              examples:
+                - SAR
+            symbol:
+              type: string
+              description: Currency symbol displayed in the store.
+              examples:
+                - ' ر.س '
+            country:
+              type: object
+              description: Country associated with the selected currency.
+              properties:
+                id:
+                  type: integer
+                  description: Unique identifier of the country.
+                  examples:
+                    - 184
+                name:
+                  type: string
+                  description: Display name of the country.
+                  examples:
+                    - السعودية
+                priority:
+                  type: integer
+                  description: >-
+                    Priority order of the country in the supported countries or
+                    currencies list.
+                  examples:
+                    - 1
+                code:
+                  type: string
+                  description: Two-letter country code.
+                  examples:
+                    - SA
+                country_code:
+                  type: string
+                  description: Three-letter country code.
+                  examples:
+                    - SAU
+                flag:
+                  type: string
+                  description: URL of the country flag image.
+                  examples:
+                    - >-
+                      https://zid-testing-907587157081.s3.eu-west-1.amazonaws.com/static/sa.svg
+              required:
+                - id
+                - name
+                - priority
+                - code
+                - country_code
+                - flag
+              x-apidog-orders:
+                - id
+                - name
+                - priority
+                - code
+                - country_code
+                - flag
+              x-apidog-ignore-properties: []
+          required:
+            - id
+            - name
+            - code
+            - symbol
+            - country
+          x-apidog-orders:
+            - id
+            - name
+            - code
+            - symbol
+            - country
+          x-apidog-ignore-properties: []
+        currencies:
+          type: array
+          description: List of currencies supported by the store.
+          items:
+            type: object
+            description: Supported currency details.
+            properties:
+              id:
+                type: integer
+                description: Unique identifier of the currency.
+                examples:
+                  - 2
+              name:
+                type: string
+                description: Display name of the currency.
+                examples:
+                  - دولار أمريكي
+              code:
+                type: string
+                description: Currency code used to identify the currency.
+                examples:
+                  - USD
+              symbol:
+                type: string
+                description: Currency symbol displayed in the store.
+                examples:
+                  - ' $ '
+              country:
+                type: object
+                description: Country associated with the supported currency.
+                properties:
+                  id:
+                    type: integer
+                    description: Unique identifier of the country.
+                    examples:
+                      - 223
+                  name:
+                    type: string
+                    description: Display name of the country.
+                    examples:
+                      - الولايات المتحدة
+                  priority:
+                    type: integer
+                    description: >-
+                      Priority order of the country in the supported countries
+                      or currencies list. Returns null if no priority is
+                      assigned.
+                    examples:
+                      - null
+                    nullable: true
+                  code:
+                    type: string
+                    description: Two-letter country code.
+                    examples:
+                      - US
+                  country_code:
+                    type: string
+                    description: Three-letter country code.
+                    examples:
+                      - USA
+                  flag:
+                    type: string
+                    description: URL of the country flag image.
+                    examples:
+                      - >-
+                        https://zid-testing-907587157081.s3.eu-west-1.amazonaws.com/static/us.svg
+                required:
+                  - id
+                  - name
+                  - priority
+                  - code
+                  - country_code
+                  - flag
+                x-apidog-orders:
+                  - id
+                  - name
+                  - priority
+                  - code
+                  - country_code
+                  - flag
+                x-apidog-ignore-properties: []
+            required:
+              - id
+              - name
+              - code
+              - symbol
+              - country
+            x-apidog-orders:
+              - id
+              - name
+              - code
+              - symbol
+              - country
+            x-apidog-ignore-properties: []
+      required:
+        - language
+        - languages
+        - currency
+        - currencies
+      x-apidog-orders:
+        - language
+        - languages
+        - currency
+        - currencies
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+  securitySchemes: {}
+servers:
+  - url: https://api.zid.sa/
+    description: Prod Env
+security: []
+
+```

@@ -1,0 +1,161 @@
+> This page is for Developer.
+
+> For clean Markdown of any page, append .md to the page URL.
+> For a complete documentation index, see https://docs.bigcommerce.com/llms.txt.
+> For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server.
+
+# Cookie Consent
+
+> How Catalyst's built-in cookie consent manager, powered by c15t, gates Script Manager scripts by consent category, and how to choose a consent storage mode.
+
+Catalyst includes a built-in cookie consent manager powered by [c15t](https://c15t.com). When enabled, it presents shoppers with a consent banner and a preference dialog, controls which Script Manager scripts load based on shopper selections, and stores preferences locally in the shopper's browser. Cookie consent is available in Catalyst 1.3.0 and later; to get it, see [Upgrading](/developer/docs/storefront/catalyst/getting-started/upgrading).
+
+> **Warning**
+>
+> This documentation describes how Catalyst's cookie consent tools work. It is not legal advice. Store owners are solely responsible for ensuring their storefront complies with all applicable privacy laws — including GDPR, CCPA, and any other regulations in the jurisdictions where they operate. We recommend consulting qualified legal counsel to confirm your implementation meets your specific compliance requirements.
+
+## Enable cookie consent
+
+Cookie consent is controlled by a storefront-level setting in the BigCommerce control panel.
+
+1. Open [Security Settings](https://login.bigcommerce.com/deep-links/manage/settings/security) in the control panel.
+2. Scroll to **Your customers' privacy**.
+3. Enable **Cookie consent tracking**.
+
+When enabled, Catalyst displays the consent banner to shoppers who have not yet made a selection. When disabled, no banner is shown and all scripts load unconditionally.
+
+### Add a privacy policy link
+
+If your store has a privacy policy page, you can surface a link to it from within the consent banner.
+
+1. Open [Security Settings](https://login.bigcommerce.com/deep-links/manage/settings/security).
+2. Scroll to **Your customers' privacy**.
+3. Enter your **Privacy Policy URL**.
+
+## Consent categories
+
+BigCommerce organizes scripts into consent categories in Script Manager and the Scripts API. Catalyst maps these to the categories c15t uses to gate script loading.
+
+| BigCommerce category | c15t category   | Behavior                           |
+| -------------------- | --------------- | ---------------------------------- |
+| Essential            | `necessary`     | Always loaded; cannot be declined  |
+| Functional           | `functionality` | Loaded only after shopper consents |
+| Analytics            | `measurement`   | Loaded only after shopper consents |
+| Marketing            | `marketing`     | Loaded only after shopper consents |
+
+Scripts categorized as Essential load on every page regardless of the shopper's consent selection. All other scripts are blocked until the shopper explicitly accepts the corresponding category.
+
+BigCommerce's consent categories are mapped automatically, so existing Script Manager configurations continue to work without modification.
+
+## Consent storage modes
+
+c15t supports three modes for storing and managing consent decisions. Catalyst ships with offline mode by default.
+
+| Feature                                | Offline (default) | Hosted    | Custom              |
+| -------------------------------------- | ----------------- | --------- | ------------------- |
+| Geolocation and jurisdiction detection | Manual            | Automatic | Your implementation |
+| Consent audit trail                    | No                | Yes       | Your implementation |
+| Server-side consent awareness          | No                | Yes       | Your implementation |
+| Cross-device sync                      | No                | Yes       | Your implementation |
+| Setup effort                           | None              | Minimal   | Moderate            |
+
+### Offline mode
+
+In offline mode, consent preferences are stored exclusively in the `c15t-consent` first-party cookie in the shopper's browser. No consent data is transmitted to external servers.
+
+Because offline mode does not transmit consent decisions to any external service, it does not create a data processing relationship with a third-party consent platform. Your storefront remains subject to GDPR, CCPA, and any other applicable privacy regulations regardless of which consent mode you use.
+
+Offline mode has several limitations with direct implications for GDPR and CCPA compliance on production storefronts:
+
+* **No audit trail.** Consent decisions are never recorded server-side. Without a server-side record, you may be unable to produce evidence of prior consent choices if audited or challenged under applicable privacy regulations.
+* **No geolocation or jurisdiction detection.** Different regulations apply to different regions — for example, EU residents and California residents have different consent rights. Offline mode cannot automatically detect jurisdiction or apply different consent rules per region; this must be handled manually.
+* **No cross-device or cross-session persistence.** If a shopper clears their browser cookies or switches devices, their consent preferences are lost and the banner displays again, making it difficult to demonstrate consistent enforcement of previously recorded preferences.
+
+> **Warning**
+>
+> Offline mode is best suited for development, demos, or storefronts where compliance audit trails are not required. For production storefronts subject to GDPR or CCPA, consider hosted or custom mode.
+
+### Hosted mode
+
+Hosted mode connects to c15t's backend infrastructure (or a self-hosted c15t server) to store consent records centrally. It is c15t's recommended mode for production environments.
+
+To switch to hosted mode, replace `mode: 'offline'` with a `backendURL` in `components/consent-manager/consent-providers.tsx`. Keep the rest of the provider as it is, including the `ClientSideOptionsProvider` that wraps its children:
+
+**`components/consent-manager/consent-providers.tsx`**
+
+```tsx title="components/consent-manager/consent-providers.tsx"
+<C15TConsentManagerProvider
+  options={{
+    backendURL: 'https://your-c15t-instance.example.com',
+    storageConfig: {
+      storageKey: CONSENT_COOKIE_NAME,
+    },
+    consentCategories: ['necessary', 'functionality', 'marketing', 'measurement'],
+    enabled: isCookieConsentEnabled,
+  }}
+>
+```
+
+Hosted mode provides automatic geolocation and jurisdiction detection, centralized audit trails, server-side consent awareness, and cross-device sync. If the backend is temporarily unavailable, it falls back to local storage. See the [c15t documentation](https://c15t.com/docs/frameworks/next/concepts/client-modes) for backend setup instructions.
+
+> **Info**
+>
+> When using hosted mode, consent data transmitted to the backend may be subject to GDPR, CCPA, or other applicable privacy regulations depending on your implementation and jurisdiction.
+
+### Custom mode
+
+Custom mode lets you connect c15t's frontend components to your own existing consent infrastructure — a CRM, database, or third-party compliance service. This is useful if your organization already has a consent management platform (CMP) and wants to use Catalyst's consent UI without adopting c15t's backend.
+
+To enable custom mode, set `mode: 'custom'` and provide an `endpointHandlers` object with two required functions in `components/consent-manager/consent-providers.tsx`:
+
+**`components/consent-manager/consent-providers.tsx`**
+
+```tsx title="components/consent-manager/consent-providers.tsx"
+<C15TConsentManagerProvider
+  options={{
+    mode: 'custom',
+    endpointHandlers: {
+      async init() {
+        // Called on page load. Return geolocation, jurisdiction,
+        // and any localized translation strings your CMP provides.
+        const res = await fetch('/my-api/consent/init');
+        const data = await res.json();
+        return { data, response: res, error: null };
+      },
+      async setConsent(options) {
+        // Called when a shopper grants or updates consent.
+        // options.body contains the consent payload to persist.
+        const res = await fetch('/my-api/consent', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(options?.body),
+        });
+        return { data: await res.json(), response: res, error: null };
+      },
+    },
+    storageConfig: {
+      storageKey: CONSENT_COOKIE_NAME,
+    },
+    consentCategories: ['necessary', 'functionality', 'marketing', 'measurement'],
+    enabled: isCookieConsentEnabled,
+  }}
+>
+```
+
+The `init` handler runs on page load and should return the shopper's existing consent state along with any jurisdiction or geolocation data your CMP tracks. The `setConsent` handler runs whenever a shopper makes or updates a consent decision, and is responsible for persisting that choice to your backend.
+
+> **Warning**
+>
+> Custom mode does not include automatic offline fallback or retry logic. Your `endpointHandlers` implementation is responsible for handling network errors and degraded states.
+
+The c15t client modes documentation, listed under [Resources](#resources), covers full type definitions and additional handler options.
+
+## Resources
+
+* [Cookies reference](/developer/docs/storefront/catalyst/features/cookies)
+* [c15t consent management library](https://c15t.com)
+* [c15t client modes](https://c15t.com/docs/frameworks/next/concepts/client-modes)
+* [Scripts API](/developer/docs/integrations/scripts)
+* [Script Manager (Help Center)](https://support.bigcommerce.com/s/article/Using-Script-Manager)
+* [Privacy and Security in Catalyst](/developer/docs/storefront/catalyst/reference/security)
+* [Implementing CCPA with BigCommerce (Help Center)](https://support.bigcommerce.com/s/article/Implementing-CCPA-with-BigCommerce?language=en_US#settings)

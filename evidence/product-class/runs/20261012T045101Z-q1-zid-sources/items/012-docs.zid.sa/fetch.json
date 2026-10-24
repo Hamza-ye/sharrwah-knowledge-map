@@ -1,0 +1,19 @@
+{
+ "n": 12,
+ "url": "https://docs.zid.sa/business-33664762e0.md",
+ "dir": "items/012-docs.zid.sa",
+ "fetched_at": "2026-10-12T04:51:10Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.zid.sa/business-33664762e0.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 19401,
+ "cited_in": [
+  "ZD-S-0088",
+  "ZD-S-0757"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "e3fb358bcff36cc186a70750955d4ce3f158b928d1888af91f7beca3a0c13f39",
+ "raw_ext": "txt"
+}

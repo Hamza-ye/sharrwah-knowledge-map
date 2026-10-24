@@ -1,0 +1,20 @@
+{
+ "n": 43,
+ "url": "https://support.bigcommerce.com/s/article/Security-and-Privacy-Settings",
+ "dir": "items/043-support.bigcommerce.com",
+ "fetched_at": "2026-10-13T05:40:51Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://support.bigcommerce.com/s/article/Security-and-Privacy-Settings?language=en_US",
+ "content_type": "text/html;charset=UTF-8",
+ "bytes": 190829,
+ "cited_in": [
+  "BC-C-037",
+  "BC-C-047",
+  "BC-C-078"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "3c2b36ad2243321b99d5ce74a42a25de65fe5f86fd76b129a87b0261d24e2827",
+ "raw_ext": "html"
+}

@@ -1,0 +1,554 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;"># Business
+
+## OpenAPI Specification
+
+```yaml
+openapi: 3.0.1
+info:
+  title: ''
+  description: ''
+  version: 1.0.0
+paths:
+  /v1/managers/account/store/business:
+    get:
+      summary: Business
+      deprecated: false
+      description: &gt;
+        Retrieves the KYC (Know Your Customer) verification details of the
+        current store, including the Commercial Registration (CR) information
+        and associated business details.
+
+
+        &lt;Accordion title="🔑Scopes" defaultOpen&gt;
+            
+          `third_store_business_read` - Read the store's business and legal data
+         
+        &lt;/Accordion&gt;
+      tags:
+        - Default module/Apps/Merchant APIs/Account/Store
+        - Orders
+      parameters:
+        - name: Authorization
+          in: header
+          description: &gt;-
+            The Authorization token is a unique key given to the third-party
+            application (Partner) by Zid. It is used to authenticate the API
+            requests made by the Partner application. The token verifies the
+            partner's identity and ensures they have permission to access Zid's
+            API but does not provide any specific user or store information. It
+            should be included in the header of API requests when the partner
+            application needs to access Zid's API.
+          required: true
+          example: '{{Autherization}}'
+          schema:
+            type: string
+        - name: X-Manager-Token
+          in: header
+          description: &gt;-
+            This token is used to authenticate and access information related to
+            the store. It is obtained through an OAuth mechanism and is required
+            to perform operations on the store's data. The `X-Manager-Token`
+            should be included in the header of API requests that require
+            store-related information.
+          required: true
+          example: '{{Access-Token}}'
+          schema:
+            type: string
+        - name: Accept-Language
+          in: header
+          description: &gt;-
+            Preferred language for the response. Defaults to `en` if not
+            specified.
+          required: false
+          example: en
+          schema:
+            type: string
+            enum:
+              - en
+              - ar
+            examples:
+              - en
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                  business:
+                    $ref: '#/components/schemas/StoreBusinessPresenter'
+                  message: &amp;ref_0
+                    $ref: '#/components/schemas/ResponseEnvelopMessage'
+                required:
+                  - status
+                  - business
+                  - message
+                x-apidog-orders:
+                  - status
+                  - business
+                  - message
+                x-apidog-ignore-properties: []
+              example:
+                status: object
+                business:
+                  store_business_data:
+                    civil_id: 1234567841
+                    business_place_status: new
+                    has_branches: true
+                    branch_no: 1
+                    business_type: individual
+                    business_corporate_name: Osamatest
+                    employee_no: 6
+                    email: test@example.com
+                    commercial_name: test
+                    maroof_number: 5555
+                    is_maroof_checked: false
+                    is_freelance_checked: false
+                    commercial_register_certificate: &gt;-
+                      https://zid-testing-907587157081.s3.eu-west-1.amazonaws.com/3dfc16e6-ad19-4126-9c2a-5e4a7fb73051/ef3bc992-c9f6-4fdd-b40e-fca3214b974e.jpg
+                    maroof_certificate: &gt;-
+                      https://zid-testing-907587157081.s3.eu-west-1.amazonaws.com/3dfc16e6-ad19-4126-9c2a-5e4a7fb73051/2261687f-0ff4-4c0c-84ee-eb05f6e63540.png
+                    civil_id_image: &gt;-
+                      https://zid-testing-907587157081.s3.eu-west-1.amazonaws.com/3dfc16e6-ad19-4126-9c2a-5e4a7fb73051/ccc73525-2647-40a1-9239-2fb1df54ff72.png
+                  commercial_registration_number: null
+                  commercial_registration_number_activation: null
+                message:
+                  type: object
+                  code: null
+                  name: null
+                  description: null
+          headers: {}
+          x-apidog-name: OK
+        '400':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                  message:
+                    type: object
+                    properties:
+                      type:
+                        type: string
+                      code:
+                        type: string
+                        nullable: true
+                      name:
+                        type: string
+                        nullable: true
+                      description:
+                        type: string
+                        nullable: true
+                    required:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-orders:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-ignore-properties: []
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                x-apidog-ignore-properties: []
+          headers: {}
+          x-apidog-name: Bad Request
+        '401':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                description: &gt;-
+                  Response returned when the request cannot be authenticated
+                  because the required credentials are missing, invalid, or
+                  expired.
+                properties:
+                  status:
+                    type: string
+                    description: Indicates the overall status of the API response.
+                    examples:
+                      - error
+                  message:
+                    type: object
+                    description: &gt;-
+                      Contains structured details explaining why the request
+                      could not be authenticated.
+                    properties:
+                      type:
+                        type: string
+                        description: Indicates the category of the response message.
+                        examples:
+                          - error
+                      code:
+                        type: string
+                        description: &gt;-
+                          A machine-readable code identifying the authentication
+                          error. Returns null when no specific code is
+                          available.
+                        examples:
+                          - UNAUTHORIZED
+                        nullable: true
+                      name:
+                        type: string
+                        description: &gt;-
+                          A short, human-readable title describing the
+                          authentication error. Returns null when no title is
+                          available.
+                        examples:
+                          - Unauthorized
+                        nullable: true
+                      description:
+                        type: string
+                        description: &gt;-
+                          A human-readable explanation of why the request could
+                          not be authenticated. Returns null when no detailed
+                          explanation is available.
+                        examples:
+                          - &gt;-
+                            Authentication credentials are missing, invalid, or
+                            expired.
+                        nullable: true
+                    required:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-orders:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-ignore-properties: []
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                examples:
+                  - status: error
+                    message:
+                      type: error
+                      code: UNAUTHORIZED
+                      name: Unauthorized
+                      description: &gt;-
+                        Authentication credentials are missing, invalid, or
+                        expired.
+                x-apidog-ignore-properties: []
+              examples:
+                '2':
+                  summary: Example 1
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_MISSING
+                      name: Sorry
+                      description: Please login first.
+                '3':
+                  summary: Example 2
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Login session expired. Please login again.
+                '4':
+                  summary: Example 3
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Invalid authentication
+          headers: {}
+          x-apidog-name: Unauthorized
+        '403':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                  message:
+                    type: object
+                    properties:
+                      type:
+                        type: string
+                      code:
+                        type: string
+                        nullable: true
+                      name:
+                        type: string
+                        nullable: true
+                      description:
+                        type: string
+                        nullable: true
+                    required:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-orders:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-ignore-properties: []
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                x-apidog-ignore-properties: []
+          headers: {}
+          x-apidog-name: Forbidden
+        '500':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Status of the error.
+                  message: *ref_0
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                x-apidog-ignore-properties: []
+              example:
+                status: error
+                message:
+                  type: error
+                  code: MSG_HIDDEN
+                  name: Error
+                  description: Internal Server Error
+          headers: {}
+          x-apidog-name: Internal Server error
+      security: []
+      x-apidog-folder: Default module/Apps/Merchant APIs/Account/Store
+      x-apidog-status: released
+      x-run-in-apidog: https://app.apidog.com/web/project/613905/apis/api-33664762-run
+components:
+  schemas:
+    ResponseEnvelopMessage:
+      type: object
+      properties:
+        type:
+          type: string
+          description: Type of response message returned by the API.
+          examples:
+            - success
+        code:
+          type: string
+          description: Response code returned by the API, if available.
+          examples:
+            - MSG_POPUP_OK
+          nullable: true
+        name:
+          type: string
+          description: Name or title of the response message, if available.
+          examples:
+            - Coupons
+          nullable: true
+        description:
+          type: string
+          description: Detailed description of the response message, if available.
+          examples:
+            - Coupons created successfully
+          nullable: true
+      required:
+        - type
+        - code
+        - name
+        - description
+      description: Additional response metadata.
+      x-apidog-orders:
+        - type
+        - code
+        - name
+        - description
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    StoreBusinessPresenter:
+      type: object
+      description: &gt;-
+        Store business information, including business registration details,
+        verification status, branch information, and related business documents.
+      properties:
+        store_business_data:
+          type: object
+          description: Detailed business profile information configured for the store.
+          properties:
+            civil_id:
+              type: integer
+              description: &gt;-
+                Civil ID or national identification number associated with the
+                store owner or business representative.
+              examples:
+                - 1234567890
+            business_place_status:
+              type: string
+              description: Status of the business place or business location.
+              examples:
+                - new
+            has_branches:
+              type: boolean
+              description: Indicates whether the business has branches.
+              examples:
+                - true
+            branch_no:
+              type: integer
+              description: Number of branches associated with the business.
+              examples:
+                - 1
+            business_type:
+              type: string
+              description: Type of business registered for the store.
+              examples:
+                - individual
+            business_corporate_name:
+              type: string
+              description: Registered corporate or legal name of the business.
+              examples:
+                - Test Company
+            employee_no:
+              type: integer
+              description: Number of employees in the business.
+              examples:
+                - 6
+            email:
+              type: string
+              description: Business email address associated with the store.
+              examples:
+                - test@example.com
+            commercial_name:
+              type: string
+              description: Commercial or trade name of the business.
+              examples:
+                - Test Store
+            maroof_number:
+              type: integer
+              description: Maroof registration number associated with the business.
+              examples:
+                - 12345
+            is_maroof_checked:
+              type: boolean
+              description: &gt;-
+                Indicates whether the Maroof registration has been checked or
+                verified.
+              examples:
+                - false
+            is_freelance_checked:
+              type: boolean
+              description: &gt;-
+                Indicates whether the freelance registration has been checked or
+                verified.
+              examples:
+                - false
+            commercial_register_certificate:
+              type: string
+              description: URL of the uploaded commercial registration certificate.
+              examples:
+                - &gt;-
+                  https://example.com/certificates/commercial-register-certificate.jpg
+            maroof_certificate:
+              type: string
+              description: URL of the uploaded Maroof certificate.
+              examples:
+                - https://example.com/certificates/maroof-certificate.png
+            civil_id_image:
+              type: string
+              description: URL of the uploaded civil ID image.
+              examples:
+                - https://example.com/documents/civil-id-image.png
+          required:
+            - civil_id
+            - business_place_status
+            - has_branches
+            - branch_no
+            - business_type
+            - business_corporate_name
+            - employee_no
+            - email
+            - commercial_name
+            - maroof_number
+            - is_maroof_checked
+            - is_freelance_checked
+            - commercial_register_certificate
+            - maroof_certificate
+            - civil_id_image
+          x-apidog-orders:
+            - civil_id
+            - business_place_status
+            - has_branches
+            - branch_no
+            - business_type
+            - business_corporate_name
+            - employee_no
+            - email
+            - commercial_name
+            - maroof_number
+            - is_maroof_checked
+            - is_freelance_checked
+            - commercial_register_certificate
+            - maroof_certificate
+            - civil_id_image
+          x-apidog-ignore-properties: []
+        commercial_registration_number:
+          type: string
+          description: &gt;-
+            Commercial registration number associated with the store. Returns
+            null if no commercial registration number is available.
+          examples:
+            - '1234567890'
+          nullable: true
+        commercial_registration_number_activation:
+          type: string
+          description: &gt;-
+            Activation status or activation reference for the commercial
+            registration number. Returns null if not available.
+          examples:
+            - active
+          nullable: true
+      required:
+        - store_business_data
+        - commercial_registration_number
+        - commercial_registration_number_activation
+      x-apidog-orders:
+        - store_business_data
+        - commercial_registration_number
+        - commercial_registration_number_activation
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+  securitySchemes: {}
+servers:
+  - url: https://api.zid.sa/
+    description: Prod Env
+security: []
+
+```
+</pre></body></html>

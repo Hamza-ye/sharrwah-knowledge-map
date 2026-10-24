@@ -1,0 +1,18 @@
+{
+ "n": 72,
+ "url": "https://woocommerce.com/document/woopayments/payment-methods/local-payment-methods/",
+ "dir": "items/072-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:05Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/woopayments/payment-methods/local-payment-methods/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 52906,
+ "cited_in": [
+  "WC-S-0871"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "f47a04e30187194757beca797d17992315b10e4b544a84f6f004085261da520f",
+ "raw_ext": "html"
+}

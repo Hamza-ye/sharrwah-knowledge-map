@@ -1,0 +1,232 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;"># Overview
+
+![image.png](https://api.apidog.com/api/v1/projects/451700/resources/376650/image-preview)
+
+✨**Twilight** comes with a **JavaScript SDK** for the Salla storefront APIs. This is to provide the developers with helper methods, or REST API endpoints, that allow communication between the frontend and backend. As a result, developers may use these methods to make merchants' stores dynamic after using the API features and data. In this documentation, we will be referring to it as **Twilight JS SDK** for short.
+
+
+
+
+:::info[Information]
+**SDK** stands for "software development kit," and it refers to a library for interacting with a specific REST API using JavaScript. 
+:::
+
+In this article, we will explore the different parts of the **Twilight JS SDK**.
+
+
+## 📙 What you'll learn
+
+- [SDK main APIs](#sdk's-main-apis).
+- [Use cases](#use-cases).
+- [Installation](#installation).
+- [Usage](#usage).
+  - [Basic configuration](#basic-configuration).
+
+
+## &lt;img src="https://api.apidog.com/api/v1/projects/451700/resources/344303/image-preview" width ="7%" /&gt; SDK's main APIs 
+The main parts of the **Twilight JS SDK** includes REST API endpoints that ease the actions related to the APIs request, such as:
+
+&lt;CardGroup cols={2}&gt;
+  &lt;Card title="Authorization APIs" href="https://docs.salla.dev/doc-422618?nav=01HNFTDZPB31Y2E120R84YXKCX" Icon icon="material-outline-security"&gt;
+    Several endpoints for customer logging in, logging out, and many more
+  &lt;/Card&gt;
+  &lt;Card title="Cart APIs" href="https://docs.salla.dev/doc-422625?nav=01HNFTDZPB31Y2E120R84YXKCX" Icon icon="material-outline-shopping_cart"&gt;
+    Customer's cart list of endpoints.
+  &lt;/Card&gt;
+  &lt;Card title="Comments APIs" href="https://docs.salla.dev/doc-422681?nav=01HNFTDZPB31Y2E120R84YXKCX" Icon icon="material-outline-mode_comment"&gt;
+Group of endpoints related to the customer comments, or feedback, on product or page.
+    &lt;/Card&gt;
+  &lt;Card title="Currency APIs" href="https://docs.salla.dev/doc-422679?nav=01HNFTDZPB31Y2E120R84YXKCX" Icon icon="material-outline-currency_exchange"&gt;
+    Group of endpoints related to the store's currencies list
+  &lt;/Card&gt;
+    &lt;Card title="Order APIs" href="https://docs.salla.dev/doc-422671?nav=01HNFTDZPB31Y2E120R84YXKCX" Icon icon="material-outline-border_color"&gt;
+    Customer's orders related endpoints.
+    &lt;/Card&gt;
+    &lt;Card title="Product APIs" href="https://docs.salla.dev/doc-422641?nav=01HNFTDZPB31Y2E120R84YXKCX" Icon icon="material-outline-production_quantity_limits"&gt;
+    Product related endpoints.
+    &lt;/Card&gt;
+    &lt;Card title="Profile APIs" href="https://docs.salla.dev/doc-422685?nav=01HNFTDZPB31Y2E120R84YXKCX" Icon icon="material-outline-drive_file_move"&gt;
+    Customer's profile endpoints. 
+    &lt;/Card&gt;
+    &lt;Card title="Rating APIs" href="https://docs.salla.dev/doc-422675?nav=01HNFTDZPB31Y2E120R84YXKCX" Icon icon="material-outline-star_half"&gt;
+    endpoints related to the store, product, order, shipping rating.
+    &lt;/Card&gt;
+    &lt;Card title="Wishlist APIs" href="https://docs.salla.dev/doc-422654?nav=01HNFTDZPB31Y2E120R84YXKCX" Icon icon="material-outline-checklist"&gt;
+    Customer's wishlist endpoints. 
+    &lt;/Card&gt;
+        &lt;Card title="Loyalty APIs" href="https://docs.salla.dev/doc-422667?nav=01HNFTDZPB31Y2E120R84YXKCX" Icon icon="material-outline-loyalty"&gt;
+    Customer's loyalty endpoints. 
+    &lt;/Card&gt;
+
+&lt;/CardGroup&gt;
+        &lt;Card title="Booking APIs" href="https://docs.salla.dev/doc-422687?nav=01HNFTDZPB31Y2E120R84YXKCX" Icon icon="material-outline-bookmark"&gt;
+    Book product or service endpoints. 
+    &lt;/Card&gt;
+
+## Use cases 
+Following are some of the possible uses of the Twilight JS SDK:
+
+| |
+| -- |
+| Authenticating customers and allowing them to edit account details. |
+| Adding a product directly from the products list to the customer art. |
+| Returning the price of a product. |
+| Adding a product to the customer's wishlist. |
+| Rating the shipping company responsible for delivering orders, and many more. |
+
+## Installation 
+
+**Twilight JS SDK** can be used without the need to be downloaded or installed; instead it needs to be included as a short piece of regular JavaScript in the HTML that will asynchronously load the SDK into the Twilight theme.&nbsp;
+
+&lt;Tabs&gt;
+&lt;Tab title="Twilight Themes"&gt;
+
+In case of using the **Twilight JS SDK** inside the Twilight themes,  the developer doesn't need to include the **Twilight JS SDK** in the theme project's bundle or inside the html, **Twilight theme engine** will inject the latest version of the **Twilight JS SDK** in the page.
+    
+:::info[Information]
+Basically, the developer does not need to call the method `salla.init()` for twilight themes, because it will be called automatically upon the installation of the Twilight theme engine. This is done thanks to the [body:end hook](doc-422552?nav=01HNFTD5Y5ESFQS3P9MJ0721VM) `{% hook 'body:end' %}`.
+:::
+
+&lt;/Tab&gt;
+
+&lt;Tab title="HTML"&gt;
+    
+The most common approach for setting up the **Twilight JS SDK** is load it via `&lt;script&gt;` befor closing the `body` tag of the HTML document. 
+
+```js
+&lt;script src="https://cdn.salla.network/js/twilight/latest/twilight.js"&gt;&lt;/script&gt;
+```
+    
+Developer may also install the **Twilight JS SDK** using the following commands:
+
+```shell
+pnpm install @salla.sa/twilight
+```
+    
+Initially, the developer must import the Salla JS Events library as follows:
+
+```js
+import '@salla.sa/twilight';
+```
+
+
+The following snippet of code will give the basic version of the SDK where the configurations are set to their minimum requirements, for example, store URL. The method `salla.init()` is used to setup and initialize the SDK.&nbsp;
+
+```js
+&lt;script&gt;
+  salla.init({
+    debug: true, // disbale it in prod
+    language_code: 'ar', // en
+    store: {
+      id: 1305146709, // The store id can found via store pages.
+      url: "https://the-best-store-ever.sa"
+    }
+  });
+&lt;/script&gt;
+```
+    
+to have full settings object, you can get the settings using this request:
+```js
+    
+// Fetch store settings using the Salla Store API
+async function getStoreSettings() {
+  const response = await fetch('https://api.salla.dev/store/v1/store/settings', {
+    headers: {
+      // Accepts store ID, domain, or username (e.g., salla.sa/username)
+      store: 'dev-vgckq3fssfhjewwi'
+    }
+  });
+
+  return response.json();
+}
+
+// Example usage
+const storeSettings = await getStoreSettings();
+salla.init(storeSettings);
+
+```
+  &lt;/Tab&gt;
+&lt;/Tabs&gt;
+
+## Usage
+
+As a result of the SDK initialization, the developer will be able to use any of the SDK's main APIs. For example,  the method `addItem` adds an item into the cart, the developer may call the method `addItem` as follows:
+
+```js
+salla.cart.addItem({
+    id: 1234,
+    quantity: 1,
+    notes: "please i need to get the red color"
+}).then((response) =&gt; {
+    /* add your code here */
+});
+```
+In addition to the above example, the method `addItem` may add an item with multiple options to the carts as follows:
+```js
+salla.cart.addItem({
+    id: 1234,
+    quantity: 1,
+    options: {
+      117414452: 11232214, // option value id (select choice)
+      117416632: "http://option-value-as-url-of-image.com",
+      117411132: "option value as string"
+    },
+    notes: "please i need to get the red color"
+}).then((response) =&gt; {
+    /* add your code here */
+});
+```
+
+Furthermore, a large number of store events will be available for use. Thus, the developer's Theme may be configured to respond automatically to a variety of activities, such as:
+
+- The user requested an Access Code to perform a login, however, the code was not sent. For this scenario, using the method `salla.event.auth.onCodeNotSent((error, type) =&gt; console.log(error, type))` can be used.
+
+- A new item has been added to the cart via the `salla.cart.event.onItemAdded((response, product_id) =&gt; console.log(response, product_id))` method.
+
+- The user added a new item to the Wishlist using the method `salla.event.wishlist.onAdded((response, product_id) =&gt; console.log(response, product_id))`.
+
+Full example for that would be the event `onItemAdded` which is triggered when adding an item to the cart is done without having any errors coming back from the backend:
+
+```js
+salla.cart.event.onItemAdded((response, product_id) =&gt; {
+  console.log(response)
+});
+```
+On the other hand, the event `onItemAddedFailed` is triggered when adding an item to the cart is not completed and an error has occurred. For example, the id of the product to be added to the cart was not found.
+```js
+salla.cart.event.onItemAddedFailed((errorMessage) =&gt; {
+  console.log(errorMessage)
+});
+```
+
+    
+### Basic configuration 
+
+Aside from calling the APIs, the developer has the ability to configure the [Twilight engine](doc-421877?nav=01HNFTD5Y5ESFQS3P9MJ0721VM) to meet the needs of his theme. 
+
+&lt;TipInfo&gt;This list of the available configurations can be found in this [article](doc-422612?nav=01HNFTDZPB31Y2E120R84YXKCX).&lt;/TipInfo&gt;
+
+    For this purpose, the method `salla.config.get()` is used to retrieve a configuration value, while `salla.config.set()` is used to set a configuration value.
+
+#### **Set configuration value**
+The developer may set the debug mode to be activated. That is to state, the theme will be run in a debugger. This means that the debugger keeps track of everything that happens while the theme is running.
+
+```js
+salla.config.set('debug', true)
+```
+
+#### **Get configuration value**
+Similarly, the developer can use the method `salla.config.get()` to get any value from the configuration file. To retrive simaple value such as the user Id, the following syntax can be followed:
+
+```js
+salla.config.get('user.id’)
+```
+
+Furthermore, if the required value is nested inside an inner value, such as a currency code, the following syntax can be followed:
+
+```js
+salla.config.get('currencies.SAR.code’)
+```
+
+
+</pre></body></html>

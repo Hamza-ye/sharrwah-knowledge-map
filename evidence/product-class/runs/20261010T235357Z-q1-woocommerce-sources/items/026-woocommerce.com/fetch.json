@@ -1,0 +1,18 @@
+{
+ "n": 26,
+ "url": "https://woocommerce.com/document/installing-uninstalling-woocommerce/",
+ "dir": "items/026-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:01Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/installing-uninstalling-woocommerce/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 39366,
+ "cited_in": [
+  "WC-S-0907"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "a53a49129d96974e78002fcc2a838f35afc90d01c6f013460c128f610af8ea28",
+ "raw_ext": "html"
+}

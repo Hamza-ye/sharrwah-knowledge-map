@@ -1,0 +1,21 @@
+{
+ "n": 145,
+ "url": "https://help.zid.sa/payment-gateways/",
+ "dir": "items/145-help.zid.sa",
+ "fetched_at": "2026-10-12T04:53:17Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/payment-gateways/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 23662,
+ "cited_in": [
+  "ZD-S-0604",
+  "ZD-S-0605",
+  "ZD-S-0606",
+  "ZD-S-0607"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "1a65c4972c9951e40432b7889256356d0667ae7f2569f3e4fac8ad8fcdde5bc2",
+ "raw_ext": "html"
+}

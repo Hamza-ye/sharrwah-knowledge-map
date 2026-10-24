@@ -1,0 +1,54 @@
+# Scheduling your Shopify Payments payouts
+
+Deciding when and how often to get your payouts can be an important part of managing your finances.
+
+With Shopify Payments, you can choose a daily, weekly, or monthly payouts schedule. There are no extra charges when you switch from one payouts schedule to another payouts schedule. If you have active [Shopify Capital](/manual/finance/shopify-capital/), or [Shopify Credit](/manual/finance/shopify-credit), then your payout schedule options might be different.
+
+For merchants in Japan, you can choose a weekly or monthly payouts schedule, but you can't have a daily payouts schedule.
+
+<aside class="note"><h4>Note</h4><p>Shopify Payments in the United States and France uses multiple payment processing partners to ensure that your payments and payouts are processed seamlessly. Although your payouts are sent from Shopify, they&#39;re processed by these partners. You might receive some payouts sooner than the scheduled payout date, and more than one payout per day.</p>
+</aside>
+
+Understanding how monthly payouts are adapted for certain months helps with cash flow management. Specifically, monthly payouts originally set for a date beyond the current month's end are instead processed on the final day of that month, ensuring that you get timely payments. For example, if your monthly schedule is set to the 30th of every month, then for the month of February in 2023, you would have been paid on February 28.
+
+Payouts are subject to bank processing times, so the funds might not display in your bank account immediately after they're sent. Banks typically take between 1-3 business days to process deposits to your bank account.
+
+## Choose a payouts schedule
+
+<div class="sections"><details open><summary id="desktop">Desktop</summary><ol>
+<li><p>From your Shopify admin, go to <strong>Settings</strong> &gt; <a href="https://admin.shopify.com/settings/payments"><strong>Payments</strong></a>.</p>
+</li>
+<li><p>In the <strong>Shopify Payments</strong> section, click <strong>Manage</strong>.</p>
+</li>
+<li><p>In the <strong>Payouts</strong> section, find the <strong>Payouts schedule</strong> heading, and then select your preferred payouts schedule.</p>
+<ol>
+<li>If you select <strong>Every week</strong>, then click the drop-down menu and select the day of the week that you want to get your payouts on.</li>
+</ol>
+</li>
+<li><p>Optional: Select or deselect the option to <strong>Get notified by email every time you receive a payout</strong>.</p>
+</li>
+<li><p>Click <strong>Save</strong>.</p>
+</li>
+</ol>
+</details><details><summary id="mobile">Mobile</summary><ol>
+<li><p>From the <a href="https://www.shopify.com/install/detect">Shopify app</a>, tap <img src="https://cdn.shopify.com/shopifycloud/help-center/manual/admin-icons/MenuIcon.svg" alt="Menu" class="admin-icon" />, and then tap <img src="https://cdn.shopify.com/shopifycloud/help-center/manual/admin-icons/SettingsIcon.svg" alt="Settings" class="admin-icon" /> <strong>Settings</strong>.</p>
+</li>
+<li><p>In the <strong>Store settings</strong> section, tap <strong>Payments</strong>.</p>
+</li>
+<li><p>In the <strong>Shopify Payments</strong> section, tap <strong>Manage</strong>.</p>
+</li>
+<li><p>In the <strong>Payouts</strong> section, find the <strong>Payouts schedule</strong> heading, and then select your preferred payouts schedule.</p>
+<ol>
+<li>If you select <strong>Every week</strong>, then tap the drop-down menu and select the day of the week that you want to get your payouts on.</li>
+</ol>
+</li>
+<li><p>Optional: Select or deselect the option to <strong>Get notified by email every time you receive a payout</strong>.</p>
+</li>
+<li><p>Tap <strong>Save</strong> or <strong>&#10003;</strong>.</p>
+</li>
+</ol>
+</details></div>
+
+## Delays in pending payouts when changing your payout schedule
+
+If you update your Shopify Payments settings from one payouts schedule to another payouts schedule, then pending payouts are delayed until the next applicable payout date on your new schedule.

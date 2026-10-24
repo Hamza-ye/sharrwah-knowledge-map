@@ -1,0 +1,209 @@
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+GETTING STARTED
+Quick Start
+Starting a Trial
+Logging In
+2FA
+Control Panel
+Previewing Store
+Platform Limits
+Store Limits
+Other Limits
+MSF Stencil
+Catalyst
+FAQ
+Backing Up Your Store
+The App Marketplace
+Migrating Your Store
+Getting Help
+PRODUCTS
+STORE SETUP
+B2B
+DESIGN AND CONTENT
+MANAGE STORE
+CHANNEL MANAGER
+MARKETING
+DATA SOLUTIONS
+ACCOUNT
+TD BANK
+Platform Limits
+What We'll Cover
+Store limits
+Other limits
+Multi-storefront limits for Stencil
+Storefront limits for Catalyst
+FAQ
+
+To maximize store stability and performance, we implement limits on certain portions of the platform. We've listed below many of the limits that you might encounter when setting up or running your store.
+
+ 
+Store Limits
+Maximum brands per store	30,000
+Maximum featured products	50
+Maximum total of products displayed in home page panels	50
+Maximum related products per product	50
+Maximum categories per store	16,000
+Maximum categories per product	1,000
+Maximum child category depth	8 levels
+Maximum category name length	50 characters
+Maximum category description length	65,642 characters
+Maximum SKUs per product	600
+Maximum stock value on the product and variant level	2,147,483,647
+Maximum number of inventory locations	Depends on your billing plan
+Maximum custom fields per product	200
+Maximum characters per custom field	255
+Maximum bulk pricing rules per product	50
+Maximum option values per option	250
+Maximum file size for product, variant, brand, and category images	8 MB
+Maximum file size for variant or modifier swatch images	8 MB
+Maximum images per product	1000
+Maximum images per variant	1
+Maximum images per product displayed in the control panel	250
+Maximum frame count for GIF images	150
+Maximum dimensions for GIF images	5120 x 5120
+Maximum marketing banners per page	50
+Maximum product filtering facets per page	12
+Maximum displayed values per product filtering facet	500
+Maximum WebDAV file size for imported files	512 MB
+Maximum file size for importing customers	2 MB
+Maximum web content pages	4,000
+Maximum rules per promotion (applies to both automatic and coupon)	100 rules
+Maximum active automatic promotions per channel	100
+Maximum number of coupon codes per store	2,000,000
+Maximum number of customer groups per promotion	100,000
+Maximum visible promotions in Manage Promotion Priorities	250
+Page load timeout	8 seconds
+Maximum product name length	250 characters
+Maximum custom product name fields length on orders	250 characters
+Maximum SKU length	255 characters
+Maximum option name length	255 characters
+Maximum email template subject length	255 characters
+Maximum number of decimal places on prices	4
+Maximum coupon name length	100 characters
+Maximum coupon code length	50 characters
+Maximum postal or ZIP code locations per store	40,000
+Maximum Widgets per page	150
+Maximum Widgets per store	100,000
+Maximum custom widget templates per store	5,000
+Maximum custom widget templates per channel	1,000
+Maximum URL length	1,024 characters
+Maximum number of Store-level API accounts	50
+API Calls (Trial Stores, Standard and Plus plans)	20,000 per hour
+API Calls (Pro plans)	60,000 per hour
+API Calls (Enterprise)	Unlimited*
+
+*Unlimited API calls are subject to API terms and conditions.
+
+ 
+Other Limits
+Maximum cart size created by guest shoppers in the storefront	50 items
+Maximum cart size created by customers with a storefront account	600 items
+Maximum cart size created for customers and guest shoppers via the Carts API	600 items
+Maximum customer account note length	65,535 characters
+Maximum storefront product search results	10,000 results per search
+Maximum customer attributes per store	50
+Maximum account signup form fields	250
+Maximum shipments per order	250
+Maximum metafields per product, variant, category, brand, or channel	250
+Maximum quantity limit per item	1 million
+Maximum API response size	8 MB
+Maximum Page Builder theme styles text field length	64 characters
+ 
+Multi-Storefront Limits for Stencil
+
+The following limits apply to stores with multiple Stencil storefronts.
+
+Maximum products	250,000
+Maximum SKUs	1,000,000
+Maximum storefronts	Up to 8 (Depends on your billing plan)
+ 
+Storefront Limits for Catalyst
+
+The following limits apply to stores with one or more Catalyst storefronts.
+
+Maximum products	500,000
+Maximum SKUs	2,000,000
+Maximum storefronts	15
+ 
+FAQ
+
+What happens if I exceed any of these limits?
+
+The above limits will be enforced in both the control panel and API requests.
+
+When you are approaching or have exceeded a limit, we'll display an information alert within the control panel.
+
+In addition, you will receive an error response code 403 Forbidden if you attempt a POST request to the API that would exceed one of these limits.
+
+In Page Builder, when a theme styles text field length is exceeded, an error message will alert of issues preventing previewing and saving your changes.
+
+Why am I getting a 429 error on my REST API and GraphQL API calls?
+
+429 errors indicate that you have exceeded the maximum number of requests. See API Best Practices and Best Practices for Using GraphQL APIs to Ensure Store Stability & Reliability in the Developer Docs for more information.
+
+Are there any “soft limits” on the BigCommerce platform?
+
+While several platform areas have no static limits to restrict usage, you may experience an impact to storefront or control panel performance if your store has a very large and/or complex product catalog. For example, we recommend stores to have no more than 10,000 products per category.
+
+Follow best practices when using REST API and GraphQL, and consider using filters when viewing and updating products in the control panel. Updating products in bulk via CSV is another tool you can use to reduce any potential performance impact.
+
+Additional Resources
+Product Categories
+Product Options (v3)
+Adding Web Pages
+API Accounts
+Integration Design (Developer Docs)
+API Rate Limits (Developer Docs)
+Best Practices for Using GraphQL APIs to Ensure Store Stability & Reliability (Developer Docs)
+API Terms and Conditions (BigCommerce Terms of Service)
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+Platform Limits

@@ -1,0 +1,20 @@
+{
+ "n": 118,
+ "url": "https://shopify.dev/docs/apps/build/marketing-analytics/pixels.md",
+ "dir": "items/118-shopify.dev",
+ "fetched_at": "2026-10-11T06:13:08Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://shopify.dev/docs/apps/build/marketing/pixels.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 6651,
+ "cited_in": [
+  "SH-S-0706",
+  "SH-S-0707",
+  "SH-S-0708"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "7e61c328abadeed96ae6dd1de7e3026d4308f86f6ad8fc6b722d2cf86c91e232",
+ "raw_ext": "txt"
+}

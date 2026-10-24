@@ -1,0 +1,21 @@
+{
+ "n": 25,
+ "url": "https://help.salla.sa/article/تفعيل-طرق-الدفع-في-المتجر-الكويت/mjir4s69o8flma11ypfthcsx",
+ "dir": "items/025-help.salla.sa",
+ "fetched_at": "2026-10-10T23:51:43Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.salla.sa/article/تفعيل-طرق-الدفع-في-المتجر-الكويت/mjir4s69o8flma11ypfthcsx",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 136852,
+ "cited_in": [
+  "SA-S-0063",
+  "SA-S-0064",
+  "SA-S-0065",
+  "SA-S-0066"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "8b7073f6b9cbcdeb31cbc16b307161d92d0d68f47c1e582c3c2ecc199598b660",
+ "raw_ext": "html"
+}

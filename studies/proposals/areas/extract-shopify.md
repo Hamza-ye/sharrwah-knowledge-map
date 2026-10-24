@@ -1,0 +1,1793 @@
+# shopify: its own organizing lists, as recorded
+
+From `studies/concern-map/platforms/shopify/inventory.tsv` (2610 entries), `concerns.tsv` (198 concerns) and `statements.tsv`.
+
+**Whose words.** Entry names, the platform's terms and the help-centre names are the platform's own words. List labels (such as `legal-agreements`) and each concern's description are the concern map's words: they say where a list came from and what a concern is about, and are never names of the platform's.
+
+**Labels for names.** A name taken from a list carries that list's label in brackets, as `Payments [settings]`. A concern's term carries `[term]`; a Shopify Help Center menu name `[Help Center]`; a Salla help-centre name `[help centre]`.
+
+
+## Lists
+
+
+### List `webhook-topics` (329 entries, 0 out of the concern map's scope)
+
+Entries: app/scopes_update; app/uninstalled; app_purchases_one_time/update; app_subscriptions/approaching_capped_amount; app_subscriptions/update; audit_events/admin_api_activity; bulk_operations/finish; carts/create; carts/update; channels/delete; checkouts/create; checkouts/delete; checkouts/update; collection_listings/add; collection_listings/remove; collection_listings/update; collection_publications/create; collection_publications/delete; collection_publications/update; collections/create; collections/delete; collections/update; companies/create; companies/delete; companies/update; company_contact_roles/assign; company_contact_roles/revoke; company_contacts/create; company_contacts/delete; company_contacts/update; company_locations/create; company_locations/delete; company_locations/update; customer.joined_segment; customer.left_segment; customer.tags_added; customer.tags_removed; customer_account_settings/update; customer_groups/create; customer_groups/delete; customer_groups/update; customer_payment_methods/create; customer_payment_methods/revoke; customer_payment_methods/update; customers/create; customers/data_request; customers/delete; customers/disable; customers/enable; customers/merge; customers/purchasing_summary; customers/redact; customers/update; customers_email_marketing_consent/update; customers_marketing_consent/update; customers_whats_app_marketing_consent/update; delivery_promise_settings/update; discounts/create; discounts/delete; discounts/redeemcode_added; discounts/redeemcode_removed; discounts/update; disputes/create; disputes/update; domains/create; domains/destroy; domains/update; draft_orders/create; draft_orders/delete; draft_orders/update; finance_app_staff_member/delete; finance_app_staff_member/grant; finance_app_staff_member/revoke; finance_app_staff_member/update; finance_kyc_information/update; fulfillment_events/create; fulfillment_events/delete; fulfillment_holds/added; fulfillment_holds/released; fulfillment_orders/cancellation_request_accepted; fulfillment_orders/cancellation_request_rejected; fulfillment_orders/cancellation_request_submitted; fulfillment_orders/cancelled; fulfillment_orders/fulfillment_request_accepted; fulfillment_orders/fulfillment_request_rejected; fulfillment_orders/fulfillment_request_submitted; fulfillment_orders/fulfillment_service_failed_to_complete; fulfillment_orders/hold_released; fulfillment_orders/line_items_prepared_for_local_delivery; fulfillment_orders/line_items_prepared_for_pickup; fulfillment_orders/manually_reported_progress_stopped; fulfillment_orders/merged; fulfillment_orders/moved; fulfillment_orders/order_routing_complete; fulfillment_orders/placed_on_hold; fulfillment_orders/progress_reported; fulfillment_orders/rescheduled; fulfillment_orders/scheduled_fulfillment_order_ready; fulfillment_orders/split; fulfillments/create; fulfillments/update; inventory_items/create; inventory_items/delete; inventory_items/update; inventory_levels/connect; inventory_levels/disconnect; inventory_levels/update; inventory_shipments/add_items; inventory_shipments/create; inventory_shipments/delete; inventory_shipments/mark_in_transit; inventory_shipments/receive_items; inventory_shipments/remove_items; inventory_shipments/update_item_quantities; inventory_shipments/update_tracking; inventory_transfers/add_items; inventory_transfers/cancel; inventory_transfers/complete; inventory_transfers/ready_to_ship; inventory_transfers/remove_items; inventory_transfers/update_item_quantities; inventory_transfers/updated; locales/create; locales/destroy; locales/update; locations/activate; locations/create; locations/deactivate; locations/delete; locations/update; markets/create; markets/delete; markets/update; markets_backup_region/update; metafield_definitions/create; metafield_definitions/delete; metafield_definitions/update; metaobjects/create; metaobjects/delete; metaobjects/update; order_transactions/create; orders/cancelled; orders/create; orders/delete; orders/edited; orders/fulfilled; orders/link_requested; orders/paid; orders/partially_fulfilled; orders/risk_assessment_changed; orders/shopify_protect_eligibility_changed; orders/updated; payment_schedules/due; payment_terms/create; payment_terms/delete; payment_terms/update; product_feeds/create; product_feeds/full_sync; product_feeds/full_sync_finish; product_feeds/incremental_sync; product_feeds/update; product_listings/add; product_listings/remove; product_listings/update; product_publications/create; product_publications/delete; product_publications/update; products/create; products/delete; products/update; profiles/create; profiles/delete; profiles/update; refunds/create; requested_order_edit/created; requested_order_edit/declined; requested_order_edit/resolved; returns/approve; returns/cancel; returns/close; returns/decline; returns/process; returns/reopen; returns/request; returns/update; reverse_deliveries/attach_deliverable; reverse_fulfillment_orders/dispose; rollouts/create; rollouts/delete; rollouts/resource_change_added; rollouts/resource_change_removed; rollouts/resource_change_updated; rollouts/update; scheduled_product_listings/add; scheduled_product_listings/remove; scheduled_product_listings/update; segments/create; segments/delete; segments/update; selling_plan_groups/create; selling_plan_groups/delete; selling_plan_groups/update; shipping_addresses/create; shipping_addresses/update; shop/redact; shop/update; subscription_billing_attempts/challenged; subscription_billing_attempts/failure; subscription_billing_attempts/success; subscription_billing_cycle_edits/create; subscription_billing_cycle_edits/delete; subscription_billing_cycle_edits/update; subscription_billing_cycles/skip; subscription_billing_cycles/unskip; subscription_contracts/activate; subscription_contracts/cancel; subscription_contracts/create; subscription_contracts/expire; subscription_contracts/fail; subscription_contracts/pause; subscription_contracts/update; tax_services/create; tax_services/update; tender_transactions/create; themes/create; themes/delete; themes/publish; themes/update; variants/in_stock; variants/out_of_stock; Cart creation; Cart update; Checkout creation; Checkout deletion; Checkout update; Collection creation; Collection deletion; Collection update; Customer group creation; Customer group deletion; Customer group update; Customer creation; Customer deletion; Customer disable; Customer enable; Customer update; Customer purchasing summary; Customer SMS marketing consent update; Customer WhatsApp marketing consent update; Customer tags added; Customer tags removed; Customer email marketing consent update; Draft order creation; Draft order deletion; Draft order update; Fulfillment creation; Fulfillment update; Transaction creation; Order cancellation; Order creation; Order deletion; Order edit; Order fulfillment; Order payment; Order update; Fulfillment order moved; Fulfillment order was released and is no longer on hold; Fulfillment order that was scheduled becomes due; Fulfillment hold released from a fulfillment order; Fulfillment order's order routing complete; Fulfillment orders canceled; Fulfillment order cannot be completed by fulfillment service; Fulfillment orders fulfillment request rejected; Fulfillment orders cancellation request submitted; Fulfillment orders cancellation request accepted; Fulfillment orders cancellation request rejected; Fulfillment orders fulfillment request submitted; Fulfillment orders fulfillment request accepted; Fulfillment hold added to a fulfillment order; Fulfillment orders line items prepared for local delivery; Fulfillment order transitioned to the "On hold" status; Fulfillment orders merged; Fulfillment orders split; Product creation; Product deletion; Product update; Refund create; Shop update; Theme creation; Theme deletion; Theme publish; Theme update; Inventory level connect; Inventory level update; Inventory level disconnect; Inventory item creation; Inventory item update; Inventory item deletion; Location activation; Location deactivation; Location creation; Location update; Location deletion; Tender transaction creation; Market creation; Market update; Market deletion; Order risk assessment changed; Fulfillment order rescheduled; Fulfillment order line items are prepared for pickup; Inventory transfer item addition; Inventory transfer item quantity update; Inventory transfer item removal; Inventory transfer marked as ready to ship; Inventory transfer cancellation; Inventory transfer completion; Inventory transfer updated; Inventory shipment deletion; Inventory shipment creation; Inventory shipment marked as in transit; Inventory shipment tracking update; Inventory shipment item addition; Inventory shipment item quantity update; Inventory shipment item removal; Inventory shipment item receipt; Customer account settings update; Discount creation; Discount update; Discount deletion
+
+
+### List `extension-points` (326 entries, 0 out of the concern map's scope)
+
+Entries: Checkout UI (checkout_ui_legacy); Checkout UI (checkout_ui_pre_release); Checkout UI (checkout_ui); App home (app_home); Post-purchase UI (post_purchase_ui); Customer account UI (customer_account_ui_legacy); Customer account UI (customer_account_ui_pre_release); Customer account UI (customer_account_ui); Admin action (admin_action_legacy); Admin action (admin_action_pre_release); Admin action (admin_action); Admin block (admin_block_legacy); Admin block (admin_block_pre_release); Admin block (admin_block); App data (app_data); Admin print action (admin_print_legacy); Admin print action (admin_print_pre_release); Admin print action (admin_print); Admin purchase options action (admin_purchase_option_legacy); Admin purchase options action (admin_purchase_option_pre_release); Admin purchase options action (admin_purchase_option); Conditional admin action (conditional_admin_action_legacy); Conditional admin action (conditional_admin_action_pre_release); Conditional admin action (conditional_admin_action); Customer segment template (customer_segment_template); Customer segment template (customer_segment_template_legacy); Product configuration (product_configuration_legacy); Product configuration (product_configuration_pre_release); Product configuration (product_configuration); Discount function settings (discount_details_function_settings); Discount function settings (discount_details_function_settings_legacy); Cart and checkout validation function settings (validation_settings_ui_legacy); Cart and checkout validation function settings (validation_settings_ui_pre_release); Cart and checkout validation function settings (validation_settings_ui); Order routing location rule function settings (order_routing_location_rule_ui); Order routing location rule function settings (order_routing_location_rule_ui_legacy); POS action (pos_action_legacy); POS action (pos_action_pre_release); POS action (pos_action); POS block (pos_block_legacy); POS block (pos_block_pre_release); POS block (pos_block); POS smart grid (pos_smart_grid_legacy); POS smart grid (pos_smart_grid_pre_release); POS smart grid (pos_smart_grid); Cart and checkout validation (cart_checkout_validation); Cart transformer (cart_transform); Delivery customization (delivery_customization); Discount (discount); Order discount (deprecated) (order_discounts); Product discount (deprecated) (product_discounts); Shipping discount (deprecated) (shipping_discounts); Discounts allocator (discounts_allocator); Fulfillment constraint (fulfillment_constraints); Local pickup delivery option generator (local_pickup_delivery_option_generator); Pickup point delivery option generator (pickup_point_delivery_option_generator); Fulfillment option generator (fulfillment_option_generator); Payment customization (payment_customization); Order routing location rule (order_routing_location_rule); Theme app extension (theme_app_extension); Web pixel (web_pixel); Flow action (flow_action); Flow template (flow_template); Flow trigger (flow_trigger); Flow trigger lifecycle callback (flow_trigger_lifecycle_callback); Editor extension collection (editor_extension_collection); Admin link (admin_link); App support link (support_link); Subscription link (subscription_link_extension); Card present (card_present_payments); Credit card (credit_card_payments); Custom credit card (custom_credit_card_payments); Custom onsite (custom_onsite_payments); Offsite (offsite_payments); Redeemable (redeemable_payments); Sales channel configuration (channel_config); Order Attribution Config (order_attribution_config); Tax calculation (tax_calculation); App action link (app_action_link); Discount app action link (discount_app_action_link); App action (app_action); admin.customers.segmentation-templates.data; admin.product-details.block.render; admin.order-details.block.render; admin.discount-details.function-settings.render; admin.customer-details.block.render; admin.collection-details.block.render; admin.draft-order-details.block.render; admin.abandoned-checkout-details.block.render; admin.catalog-details.block.render; admin.company-details.block.render; admin.company-location-details.block.render; admin.gift-card-details.block.render; admin.product-variant-details.block.render; admin.product-details.reorder.render; admin.product-details.action.render; admin.catalog-details.action.render; admin.company-details.action.render; admin.gift-card-details.action.render; admin.order-details.action.render; admin.customer-details.action.render; admin.customer-segment-details.action.render; admin.product-index.action.render; admin.order-index.action.render; admin.customer-index.action.render; admin.discount-index.action.render; admin.collection-details.action.render; admin.collection-index.action.render; admin.abandoned-checkout-details.action.render; admin.abandoned-checkout-index.action.render; admin.product-variant-details.action.render; admin.draft-order-details.action.render; admin.draft-order-index.action.render; admin.discount-details.action.render; admin.order-fulfilled-card.action.render; admin.product-index.selection-action.render; admin.order-index.selection-action.render; admin.customer-index.selection-action.render; admin.discount-index.selection-action.render; admin.draft-order-index.selection-action.render; admin.product-purchase-option.action.render; admin.product-variant-purchase-option.action.render; admin.order-details.print-action.render; admin.product-details.print-action.render; admin.order-index.selection-print-action.render; admin.product-index.selection-print-action.render; admin.product-details.configuration.render; admin.product-variant-details.configuration.render; admin.product-details.configuration.should-render; admin.product-variant-details.configuration.should-render; admin.settings.internal-order-routing-rule.render; admin.settings.order-routing-rule.render; admin.settings.validation.render; admin.product-details.action.should-render; admin.catalog-details.action.should-render; admin.company-details.action.should-render; admin.gift-card-details.action.should-render; admin.order-details.action.should-render; admin.customer-details.action.should-render; admin.customer-segment-details.action.should-render; admin.product-index.action.should-render; admin.order-index.action.should-render; admin.customer-index.action.should-render; admin.discount-index.action.should-render; admin.collection-details.action.should-render; admin.collection-index.action.should-render; admin.abandoned-checkout-details.action.should-render; admin.abandoned-checkout-index.action.should-render; admin.product-variant-details.action.should-render; admin.draft-order-details.action.should-render; admin.draft-order-index.action.should-render; admin.discount-details.action.should-render; admin.order-fulfilled-card.action.should-render; admin.product-index.selection-action.should-render; admin.order-index.selection-action.should-render; admin.customer-index.selection-action.should-render; admin.discount-index.selection-action.should-render; admin.draft-order-index.selection-action.should-render; admin.order-details.print-action.should-render; admin.product-details.print-action.should-render; admin.app.tools.data; admin.app.intent.render; admin.app.home.render; purchase.checkout.actions.render-before; Checkout::Actions::RenderBefore; purchase.checkout.cart-line-list.render-after; Checkout::CartLines::RenderAfter; purchase.checkout.cart-line-item.render-after; Checkout::CartLineDetails::RenderAfter; purchase.cart-line-item.line-components.render; Checkout::CartLineDetails::RenderLineComponents; purchase.checkout.contact.render-after; Checkout::Contact::RenderAfter; Checkout::CustomerInformation::RenderAfter; purchase.checkout.delivery-address.render-before; Checkout::DeliveryAddress::RenderBefore; purchase.checkout.delivery-address.render-after; purchase.checkout.block.render; Checkout::Dynamic::Render; purchase.thank-you.block.render; Checkout::ThankYou::Dynamic::Render; purchase.thank-you.cart-line-item.render-after; Checkout::ThankYou::CartLineDetails::RenderAfter; purchase.thank-you.cart-line-list.render-after; Checkout::ThankYou::CartLines::RenderAfter; purchase.thank-you.customer-information.render-after; Checkout::ThankYou::CustomerInformation::RenderAfter; purchase.checkout.gift-card.render; Checkout::GiftCard::Render; purchase.checkout.payment-option-item.details.render; Checkout::PaymentMethod::Render; purchase.checkout.payment-option-item.hosted-fields.render-after; Checkout::PaymentMethod::HostedFields::RenderAfter; purchase.checkout.payment-option-item.action-required.render; Checkout::PaymentMethod::RenderRequiredAction; purchase.checkout.payment-method-list.render-before; purchase.checkout.payment-method-list.render-after; purchase.checkout.reductions.render-before; Checkout::Reductions::RenderBefore; purchase.checkout.reductions.render-after; Checkout::Reductions::RenderAfter; purchase.checkout.shipping-option-list.render-before; Checkout::ShippingMethods::RenderBefore; purchase.checkout.shipping-option-list.render-after; Checkout::ShippingMethods::RenderAfter; purchase.checkout.pickup-location-list.render-before; Checkout::PickupLocations::RenderBefore; purchase.checkout.pickup-location-list.render-after; Checkout::PickupLocations::RenderAfter; purchase.checkout.shipping-option-item.render-after; Checkout::ShippingMethodDetails::RenderAfter; purchase.checkout.shipping-option-item.details.render; Checkout::ShippingMethodDetails::RenderExpanded; purchase.checkout.pickup-point-list.render-before; Checkout::PickupPoints::RenderBefore; purchase.checkout.pickup-point-list.render-after; Checkout::PickupPoints::RenderAfter; purchase.checkout.pickup-location-option-item.render-after; purchase.checkout.header.render-after; purchase.checkout.footer.render-after; purchase.checkout.chat.render; purchase.thank-you.header.render-after; purchase.thank-you.footer.render-after; purchase.thank-you.chat.render; purchase.thank-you.announcement.render; purchase.address-autocomplete.suggest; purchase.address-autocomplete.format-suggestion; customer-account.order-status.block.render; customer-account.order-status.announcement.render; customer-account.order-status.cart-line-item.render-after; customer-account.order-status.cart-line-list.render-after; customer-account.order-status.return-details.render-after; customer-account.order-status.fulfillment-details.render-after; customer-account.order-status.unfulfilled-items.render-after; customer-account.order-status.payment-details.render-after; customer-account.order-status.customer-information.render-after; customer-account.order.page.render; customer-account.page.render; customer-account.order-index.block.render; customer-account.order-index.announcement.render; customer-account.profile.block.render; customer-account.profile.announcement.render; customer-account.profile.addresses.render-after; customer-account.footer.render-after; customer-account.profile.payment.render-after; customer-account.profile.company-details.render-after; customer-account.profile.company-location-addresses.render-after; customer-account.profile.company-location-payment.render-after; customer-account.profile.company-location-staff.render-after; customer-account.order.action.menu-item.render; customer-account.order.action.render; pos.app.ready.data; pos.home.tile.render; pos.home.modal.render; pos.return.post.action.menu-item.render; pos.return.post.action.render; pos.return.post.block.render; pos.exchange.post.action.menu-item.render; pos.exchange.post.action.render; pos.exchange.post.block.render; pos.purchase.post.action.menu-item.render; pos.purchase.post.action.render; pos.purchase.post.block.render; pos.product-details.action.menu-item.render; pos.product-details.action.render; pos.product-details.block.render; pos.order-details.action.menu-item.render; pos.order-details.action.render; pos.order-details.block.render; pos.draft-order-details.action.menu-item.render; pos.draft-order-details.action.render; pos.draft-order-details.block.render; pos.customer-details.action.menu-item.render; pos.customer-details.action.render; pos.customer-details.block.render; pos.cart.line-item-details.action.menu-item.render; pos.cart.line-item-details.action.render; pos.receipt-footer.block.render; pos.receipt-header.block.render; pos.register-details.action.menu-item.render; pos.register-details.action.render; pos.register-details.block.render; Shop; Flow; Shopify; Google Sheets for Shopify Flow; Asana; Trello; Slack; OpenAI; advanced_dom_available; advanced_dom_changed; advanced_dom_clicked; advanced_dom_clipboard; advanced_dom_form_submitted; advanced_dom_input_blurred; advanced_dom_input_changed; advanced_dom_input_focused; advanced_dom_mouse_moved; advanced_dom_scrolled; advanced_dom_selection_changed; advanced_dom_window_resized; clicked; form_submitted; input_blurred; input_changed; input_focused; analytics; browser; customerPrivacy; init; alert_displayed; cart_viewed; checkout_address_info_submitted; checkout_completed; checkout_contact_info_submitted; checkout_shipping_info_submitted; checkout_started; collection_viewed; page_viewed; payment_info_submitted; product_added_to_cart; product_removed_from_cart; product_viewed; search_submitted; ui_extension_errored
+
+
+### List `other:staff-permissions` (283 entries, 0 out of the concern map's scope)
+
+Entries: Home 0/1; Home > Home; Orders 0/19; Orders > View; Orders > Manage order information; Orders > Edit orders; Orders > Apply discounts; Orders > Set payment terms; Orders > Charge credit card; Orders > Charge vaulted payment method; Orders > Record payments; Orders > Capture payments; Orders > Fulfill and ship; Orders > Buy shipping labels; Orders > Cancel; Orders > Export; Orders > Delete; Orders > Returns and refunds; Orders > Returns and refunds > Return; Orders > Returns and refunds > Refund to original payment; Orders > Returns and refunds > Over-refund orders previously refunded to store credit; Orders > Returns and refunds > Refund to store credit; Orders > Abandoned checkouts; Orders > Abandoned checkouts > Manage; Drafts 0/9; Drafts > View; Drafts > Create and edit; Drafts > Apply discounts; Drafts > Set payment terms; Drafts > Charge credit card; Drafts > Charge vaulted payment method; Drafts > Mark as paid and record payments; Drafts > Export; Drafts > Delete; Products 0/11; Products > View; Products > View cost; Products > Create and edit; Products > Edit cost; Products > Edit price; Products > Export; Products > Delete; Products > Inventory; Products > Inventory > Manage inventory (excluding transfers); Products > Inventory > View transfers; Products > Inventory > Manage transfers; Products > Inventory > Manage shipments; Gift cards 0/4; Gift cards > View; Gift cards > Create and edit; Gift cards > Export; Gift cards > Deactivate; Customers 0/15; Customers > View; Customers > Create and edit; Customers > Erase personal data; Customers > Request data; Customers > Export; Customers > Merge; Customers > View store credit transactions; Customers > Edit store credit; Customers > Delete; Customers > Companies; Customers > Companies > View; Customers > Companies > Create and edit; Customers > Companies > Assign staff to company locations; Customers > Companies > Delete; Customers > Companies > View store credit transactions; Customers > Companies > Edit store credit; Marketing 0/4; Marketing > View, create, and delete marketing activities and automations; Marketing > Campaigns; Marketing > Campaigns > View; Marketing > Campaigns > Create and edit; Marketing > Campaigns > Delete; Discounts 0/1; Discounts > View, create, and delete; Content 0/11; Content > Menus; Content > Metaobject definitions; Content > Metaobject definitions > View; Content > Metaobject definitions > Create and edit; Content > Metaobject definitions > Delete; Content > Entries; Content > Entries > View; Content > Entries > Create and edit; Content > Entries > Delete; Content > Files; Content > Files > View; Content > Files > Create; Content > Files > Edit; Content > Files > Delete; Markets 0/10; Markets > View; Markets > Create and edit; Markets > Delete; Markets > Select existing legal entity; Markets > Catalogs; Markets > Catalogs > View; Markets > Catalogs > Create and edit; Markets > Catalogs > Delete; Markets > Catalogs > View rollouts; Markets > Catalogs > Create and edit rollouts; Markets > Catalogs > Delete rollouts; Checkout and customer accounts 0/3; Checkout and customer accounts > View and edit; Checkout and customer accounts > Manage store credit visibility; Checkout and customer accounts > Manage identity providers; Quick sale 0/1; Quick sale > Quick sale; Finance 0/8; Finance > View billing details; Finance > Edit billing payment methods and pay invoices; Finance > Manage plan; Finance > Manage app billing; Finance > View Shopify Payments payouts; Finance > Manage other payment settings; Finance > View balance bank accounts; Finance > View all Shopify Credit transactions; Analytics 0/2; Analytics > Reports; Analytics > Overviews; Online store 0/3; Online store > Themes; Online store > Edit code (including generating theme blocks); Online store > Blog posts and pages; App development 0/3; App development > View apps developed by staff and collaborators; App development > Develop; App development > Enable development; Store settings 0/9; Store settings > Manage settings; Store settings > Shipping and delivery; Store settings > Taxes and duties; Store settings > Locations; Store settings > Domains; Store settings > Transfer domain to another Shopify store; Store settings > View customer events; Store settings > Manage and add custom pixels; Store settings > Store policies; Apps and channels 0/2; Apps and channels > Manage and install apps and channels; Apps and channels > Approve app charges; APPLICATIONS; APPLICATIONS_BILLING; APPLY_DISCOUNTS_TO_DRAFT_ORDERS; APPLY_DISCOUNTS_TO_ORDERS; BILLING_APPLICATION_CHARGES; BILLING_CHARGES; BILLING_INVOICES_PAY; BILLING_INVOICES_VIEW; BILLING_PAYMENT_METHODS_MANAGE; BILLING_PAYMENT_METHODS_VIEW; BILLING_SETTINGS; BILLING_SUBSCRIPTIONS; BUY_SHIPPING_LABELS; CANCEL_ORDERS; CAPTURE_PAYMENTS_FOR_ORDERS; CREATE_AND_EDIT_CATALOGS; CREATE_AND_EDIT_COMPANIES; CREATE_AND_EDIT_CUSTOMERS; CREATE_AND_EDIT_DRAFT_ORDERS; CREATE_AND_EDIT_GIFT_CARDS; CREATE_AND_EDIT_INVENTORY_TRANSFERS; CREATE_AND_EDIT_MARKETS; CREATE_AND_EDIT_ROLLOUTS; CREATE_AND_UPDATE_MARKETING_INTEGRATED_CAMPAIGNS; CREATE_COMPANY_STORE_CREDIT_ACCOUNT_TRANSACTIONS; CREATE_FILES; CREATE_STORE_CREDIT_ACCOUNT_TRANSACTIONS; CUSTOM_PIXELS_MANAGEMENT; CUSTOM_PIXELS_VIEW; CUSTOMERS; DASHBOARD; DEACTIVATE_GIFT_CARDS; DELETE_CATALOGS; DELETE_COMPANIES; DELETE_CUSTOMERS; DELETE_DRAFT_ORDERS; DELETE_FILES; DELETE_MARKETING_INTEGRATED_CAMPAIGNS; DELETE_MARKETS; DELETE_ORDERS; DELETE_PRODUCTS; DELETE_ROLLOUTS; DOMAINS; DOMAINS_MANAGEMENT; DRAFT_ORDERS; EDIT_FILES; EDIT_ORDERS; EDIT_PRIVATE_APPS; EDIT_PRODUCT_COST; EDIT_PRODUCT_PRICE; EDIT_THEME_CODE; ENABLE_PRIVATE_APPS; ERASE_CUSTOMER_DATA; EXPORT_CUSTOMERS; EXPORT_DRAFT_ORDERS; EXPORT_GIFT_CARDS; EXPORT_ORDERS; EXPORT_PRODUCTS; FULFILL_AND_SHIP_ORDERS; GIFT_CARDS; LIMITED_APPLICATIONS; LINKS; LOCATIONS; MANAGE_ABANDONED_CHECKOUTS; MANAGE_CHECKOUT_SETTINGS; MANAGE_COMPANY_LOCATION_ASSIGNMENTS; MANAGE_CUSTOMER_IDENTITY_PROVIDERS; MANAGE_DELIVERY_SETTINGS; MANAGE_DISPUTES; MANAGE_INVENTORY; MANAGE_INVENTORY_SHIPMENTS; MANAGE_ORDERS_INFORMATION; MANAGE_PAYMENTS_SETTINGS; MANAGE_POLICIES; MANAGE_PRODUCTS; MANAGE_STORE_CREDIT_SETTINGS; MANAGE_TAXES_SETTINGS; MARK_DRAFT_ORDERS_AS_PAID; MARK_ORDERS_AS_PAID; MARKETING; MARKETING_SECTION; MERGE_CUSTOMERS; METAOBJECT_DEFINITIONS_DELETE; METAOBJECT_DEFINITIONS_EDIT; METAOBJECT_DEFINITIONS_VIEW; METAOBJECTS_DELETE; METAOBJECTS_EDIT; METAOBJECTS_VIEW; ORDERS; OVER_REFUND_TO_ORIGINAL_PAYMENT; OVERVIEWS; PAGES; PAY_DRAFT_ORDERS_BY_CREDIT_CARD; PAY_DRAFT_ORDERS_BY_VAULTED_CARD; PAY_ORDERS_BY_CREDIT_CARD; PAY_ORDERS_BY_VAULTED_CARD; PAYMENT_SETTINGS; PREFERENCES; PRODUCTS; QUICK_SALE; REFUND_ORDERS; REFUND_TO_STORE_CREDIT; REPORTS; REQUEST_CUSTOMER_DATA; RETURN_ORDERS; SELECT_EXISTING_LEGAL_ENTITY; SET_PAYMENT_TERMS_FOR_DRAFT_ORDERS; SET_PAYMENT_TERMS_FOR_ORDERS; SHOPIFY_PAYMENTS_ACCOUNTS; SHOPIFY_PAYMENTS_TRANSFERS; THEMES; VIEW_CATALOGS; VIEW_COMPANIES; VIEW_COMPANY_STORE_CREDIT_ACCOUNT_TRANSACTIONS; VIEW_FILES; VIEW_INVENTORY_TRANSFERS; VIEW_MARKETING_INTEGRATED_CAMPAIGNS; VIEW_MARKETS; VIEW_PAYOUTS; VIEW_PRIVATE_APPS; VIEW_PRODUCT_COSTS; VIEW_ROLLOUTS; VIEW_STORE_CREDIT_ACCOUNT_TRANSACTIONS; VIEW_TAX_DOCUMENTS; VIEW_INVENTORY_PURCHASE_ORDERS; CREATE_AND_EDIT_INVENTORY_PURCHASE_ORDERS; VIEW_INVENTORY_COUNTS; MANAGE_INVENTORY_COUNTS; PERFORM_INVENTORY_COUNTS; MANAGE_AUTOMATIONS; MANAGE_AUTOMATION_SETTINGS; MANAGE_STAFF_PERMISSIONS; ADD_REMOVE_STAFF; AUTHENTICATION_MANAGEMENT; STAFF_API_PERMISSION_MANAGEMENT; MANAGE_COLLABORATORS; VIEW_BALANCE_BANK_ACCOUNTS; VIEW_ALL_SHOPIFY_CREDIT_TRANSACTIONS; VIEW_BILLING_DETAILS; BILLING_PAY_INVOICES
+
+
+### List `other:help-center-sections` (260 entries, 0 out of the concern map's scope)
+
+- About apps (SH-I-2099, SH-S-2863; concerns SH-C-156)
+- Apps made by Shopify (SH-I-2100, SH-S-2864; concerns SH-C-156)
+- Finding and choosing apps (SH-I-2101, SH-S-2865; concerns SH-C-156)
+- Installing and setting up apps (SH-I-2102, SH-S-2866; concerns SH-C-156)
+- Managing apps (SH-I-2103, SH-S-2867; concerns SH-C-156)
+- App extensions and functions (SH-I-2104, SH-S-2868; concerns SH-C-163;SH-C-164)
+- Getting help with apps (SH-I-2105, SH-S-2869; concerns SH-C-156)
+- Uninstalling apps (SH-I-2106, SH-S-2870; concerns SH-C-156)
+- Editing the checkout form options (SH-I-2107, SH-S-2871; concerns SH-C-047)
+- Customizing and editing your checkout and accounts pages (SH-I-2108, SH-S-2872; concerns SH-C-048)
+- Setting up tipping options for online orders (SH-I-2109, SH-S-2873; concerns SH-C-047)
+- Set up address collection preferences (SH-I-2110, SH-S-2874; concerns SH-C-047)
+- Set up order processing and archiving (SH-I-2111, SH-S-2875; concerns SH-C-054)
+- Translating your checkout (SH-I-2112, SH-S-2876; concerns SH-C-032;SH-C-047)
+- Set a limit to the maximum quantity of items per cart (SH-I-2113, SH-S-2877; concerns SH-C-046)
+- Ship and pickup in one order in Shopify Checkout (SH-I-2114, SH-S-2878; concerns SH-C-121)
+- Split shipping in Shopify Checkout (SH-I-2115, SH-S-2879; concerns SH-C-118)
+- Adding store policies (SH-I-2116, SH-S-2880; concerns SH-C-034)
+- Protecting your store from selling to bots (SH-I-2117, SH-S-2881; concerns SH-C-051)
+- Cart permalinks (SH-I-2118, SH-S-2882; concerns SH-C-046)
+- Customizing payment methods and delivery options at checkout (SH-I-2119, SH-S-2883; concerns SH-C-083;SH-C-122)
+- Placing a test order (SH-I-2120, SH-S-2884; concerns SH-C-047)
+- Troubleshooting checkout payment issues (SH-I-2121, SH-S-2885; concerns SH-C-062)
+- Checkout Blocks app (SH-I-2122, SH-S-2886; concerns SH-C-049)
+- Shopify Scripts and the Script Editor app (SH-I-2123, SH-S-2887; concerns SH-C-047)
+- Alcohol products (SH-I-2124, SH-S-2888; concerns SH-C-175)
+- Consumer protection laws (SH-I-2125, SH-S-2889; concerns SH-C-175)
+- Dropshipping (SH-I-2126, SH-S-2890; concerns SH-C-175;SH-C-185)
+- Product fulfillment documentation (SH-I-2127, SH-S-2891; concerns SH-C-172)
+- Hemp and hemp-derived products (SH-I-2128, SH-S-2892; concerns SH-C-175)
+- EU right of withdrawal compliance for merchants selling to EU customers (SH-I-2129, SH-S-2893; concerns SH-C-175)
+- European Price Indication Directive (SH-I-2130, SH-S-2894; concerns SH-C-175)
+- Shipping dangerous goods in the United States and internationally (SH-I-2131, SH-S-2895; concerns SH-C-175)
+- Unsupported countries and regions (SH-I-2132, SH-S-2896; concerns SH-C-174)
+- Shop Supplementary Guidelines for merchants in the European Union (SH-I-2133, SH-S-2897; concerns SH-C-136)
+- Resolving terms violations (SH-I-2134, SH-S-2898; concerns SH-C-014;SH-C-172)
+- Handling a Shopify store review (SH-I-2135, SH-S-2899; concerns SH-C-014;SH-C-172)
+- Handling your Shopify store termination (SH-I-2136, SH-S-2900; concerns SH-C-014;SH-C-172)
+- Reporting non-consensual intimate imagery or responding to a removal notice (SH-I-2137, SH-S-2901; concerns SH-C-014;SH-C-172)
+- Overview of your financial information (SH-I-2138, SH-S-2902; concerns SH-C-069)
+- Shopify Balance (SH-I-2139, SH-S-2903; concerns SH-C-088)
+- Shopify Capital (SH-I-2140, SH-S-2904; concerns SH-C-091;SH-C-092;SH-C-093;SH-C-094;SH-C-095;SH-C-096;SH-C-097)
+- Shopify Credit (SH-I-2141, SH-S-2905; concerns SH-C-090)
+- Shopify Bill Pay (SH-I-2142, SH-S-2906; concerns SH-C-098)
+- Accessing Capital funding in the Shopify Balance app (SH-I-2143, SH-S-2907; concerns SH-C-088;SH-C-091;SH-C-092;SH-C-093;SH-C-094;SH-C-095;SH-C-096;SH-C-097)
+- Using Sidekick in the Shopify Balance app (SH-I-2144, SH-S-2908; concerns SH-C-088;SH-C-152)
+- Getting started shipping with Shopify (SH-I-2145, SH-S-2909; concerns SH-C-114;SH-C-118)
+- Overview of order fulfillment and shipping features on Shopify (SH-I-2146, SH-S-2910; concerns SH-C-118)
+- Setting up shipping and order fulfillment (SH-I-2147, SH-S-2911; concerns SH-C-114;SH-C-118)
+- Managing orders (SH-I-2148, SH-S-2912; concerns SH-C-054)
+- Fulfilling orders (SH-I-2149, SH-S-2913; concerns SH-C-118)
+- Fulfillment Network (SH-I-2150, SH-S-2914; concerns SH-C-120)
+- Pricing in local currencies (SH-I-2151, SH-S-2915; concerns SH-C-108)
+- Set up automatic storefront redirection for your customers (SH-I-2152, SH-S-2916; concerns SH-C-111)
+- Using the Geolocation app (SH-I-2153, SH-S-2917; concerns SH-C-111)
+- International domains (SH-I-2154, SH-S-2918; concerns SH-C-111)
+- Localization and translation (SH-I-2155, SH-S-2919; concerns SH-C-032)
+- Duties and import taxes (SH-I-2156, SH-S-2920; concerns SH-C-105)
+- Payments (SH-I-2157, SH-S-2921; concerns SH-C-062)
+- International shipping (SH-I-2158, SH-S-2922; concerns SH-C-114)
+- Duty and tax inclusive pricing (SH-I-2159, SH-S-2923; concerns SH-C-100;SH-C-105)
+- Understanding the General Product Safety Regulation (GPSR) (SH-I-2160, SH-S-2924; concerns SH-C-175)
+- CPSC eFiling compliance (SH-I-2161, SH-S-2925; concerns SH-C-175)
+- Managed Markets (SH-I-2162, SH-S-2926; concerns SH-C-110)
+- Add language translations using the Translate & Adapt app (SH-I-2163, SH-S-2927; concerns SH-C-032)
+- Understanding checkout restrictions (SH-I-2164, SH-S-2928; concerns SH-C-108)
+- Accepted currencies with restrictions in France (SH-I-2165, SH-S-2929; concerns SH-C-108)
+- Currency conversions and exchange rates (SH-I-2166, SH-S-2930; concerns SH-C-109)
+- Primary gateways for international and local pricing support (SH-I-2167, SH-S-2931; concerns SH-C-062;SH-C-108)
+- Guidelines and restrictions for selling in local currencies (SH-I-2168, SH-S-2932; concerns SH-C-108)
+- Volatile currencies (SH-I-2169, SH-S-2933; concerns SH-C-109)
+- Rounding prices (SH-I-2170, SH-S-2934; concerns SH-C-108)
+- Dynamic tax-inclusive pricing (SH-I-2171, SH-S-2935; concerns SH-C-100)
+- Testing your multiple currency setup (SH-I-2172, SH-S-2936; concerns SH-C-108)
+- Fees and costs (SH-I-2173, SH-S-2937; concerns SH-C-109)
+- Formatting how currency displays to your customers (SH-I-2174, SH-S-2938; concerns SH-C-108)
+- Discounts (SH-I-2175, SH-S-2939; concerns SH-C-127)
+- Gift cards (SH-I-2176, SH-S-2940; concerns SH-C-025)
+- Refunds (SH-I-2177, SH-S-2941; concerns SH-C-057)
+- Customizing markets (SH-I-2178, SH-S-2942; concerns SH-C-106)
+- Getting started with markets (SH-I-2179, SH-S-2943; concerns SH-C-106)
+- Rollouts (SH-I-2180, SH-S-2944; concerns SH-C-112)
+- Discounts and gift cards in Markets (SH-I-2181, SH-S-2945; concerns SH-C-025;SH-C-127)
+- International SEO for markets (SH-I-2182, SH-S-2946; concerns SH-C-111)
+- Backup region in Markets (SH-I-2183, SH-S-2947; concerns SH-C-113)
+- Bulgaria currency change in Markets (SH-I-2184, SH-S-2948; concerns SH-C-108)
+- Adding and removing market customizations (SH-I-2185, SH-S-2949; concerns SH-C-106)
+- Creating catalogs for markets (SH-I-2186, SH-S-2950; concerns SH-C-037)
+- Setting up currencies for markets (SH-I-2187, SH-S-2951; concerns SH-C-108)
+- Customizing online store for markets (SH-I-2188, SH-S-2952; concerns SH-C-106)
+- Assigning domains and languages to markets (SH-I-2189, SH-S-2953; concerns SH-C-032;SH-C-111)
+- Setting up duties and taxes for markets (SH-I-2190, SH-S-2954; concerns SH-C-105)
+- Setting up business entities for markets (SH-I-2191, SH-S-2955; concerns SH-C-004;SH-C-005)
+- Getting paid (SH-I-2192, SH-S-2956; concerns SH-C-062;SH-C-069)
+- Shop Cash (SH-I-2193, SH-S-2957; concerns SH-C-082)
+- Shop Pay accelerated checkout for fast, secure payments (SH-I-2194, SH-S-2958; concerns SH-C-074)
+- Shopify Payments (SH-I-2195, SH-S-2959; concerns SH-C-063)
+- PayPal Express Checkout (SH-I-2196, SH-S-2960; concerns SH-C-077)
+- Accelerated checkouts and accelerated checkout buttons (SH-I-2197, SH-S-2961; concerns SH-C-074;SH-C-078)
+- Shop Pay Installments (SH-I-2198, SH-S-2962; concerns SH-C-075)
+- Third-party payment providers (SH-I-2199, SH-S-2963; concerns SH-C-076)
+- Additional payment methods (SH-I-2200, SH-S-2964; concerns SH-C-076;SH-C-081)
+- Manual payment methods (SH-I-2201, SH-S-2965; concerns SH-C-079)
+- Collecting and recording partial payments (SH-I-2202, SH-S-2966; concerns SH-C-084)
+- Payment authorization and capture (SH-I-2203, SH-S-2967; concerns SH-C-084)
+- Chargebacks and inquiries (SH-I-2204, SH-S-2968; concerns SH-C-072)
+- Fraud prevention (SH-I-2205, SH-S-2969; concerns SH-C-059)
+- Troubleshooting payment gateways (SH-I-2206, SH-S-2970; concerns SH-C-062)
+- Supported countries for Shopify Payments (SH-I-2207, SH-S-2971; concerns SH-C-063)
+- Setting up Shopify Payments (SH-I-2208, SH-S-2972; concerns SH-C-063;SH-C-068)
+- Configuring Shopify Payments (SH-I-2209, SH-S-2973; concerns SH-C-063)
+- Testing Shopify Payments (SH-I-2210, SH-S-2974; concerns SH-C-063)
+- Shopify Payments transactions (SH-I-2211, SH-S-2975; concerns SH-C-084)
+- Store Currencies (SH-I-2212, SH-S-2976; concerns SH-C-107)
+- Getting paid with Shopify Payments (SH-I-2213, SH-S-2977; concerns SH-C-069)
+- Managed payment methods (SH-I-2214, SH-S-2978; concerns SH-C-063)
+- Using Shopify Payments with a third-party provider (SH-I-2215, SH-S-2979; concerns SH-C-063;SH-C-076)
+- Local payment methods (SH-I-2216, SH-S-2980; concerns SH-C-080)
+- Troubleshooting failed or pending refunds (SH-I-2217, SH-S-2981; concerns SH-C-057)
+- Shopify Payments eligibility (SH-I-2218, SH-S-2982; concerns SH-C-063;SH-C-173)
+- Shopify Payments fees (SH-I-2219, SH-S-2983; concerns SH-C-071)
+- Setting up your Shopify Payments account (SH-I-2220, SH-S-2984; concerns SH-C-068)
+- Acceptable business practices and risk evaluation for Shopify Payments (SH-I-2221, SH-S-2985; concerns SH-C-068;SH-C-070;SH-C-173)
+- Proof of Liveness check (SH-I-2222, SH-S-2986; concerns SH-C-068)
+- Reapplying for Shopify Payments (SH-I-2223, SH-S-2987; concerns SH-C-068)
+- Bank account requirements for Shopify Payments (SH-I-2224, SH-S-2988; concerns SH-C-069)
+- Shopify Payments account verification updates in Europe and the United Kingdom (SH-I-2225, SH-S-2989; concerns SH-C-068)
+- American Express requirements for Shopify Payments (SH-I-2226, SH-S-2990; concerns SH-C-064)
+- Selling with multiple entities (SH-I-2227, SH-S-2991; concerns SH-C-005)
+- Understanding Shopify Payments payout timing (SH-I-2228, SH-S-2992; concerns SH-C-069)
+- Viewing and exporting your Shopify Payments payout details (SH-I-2229, SH-S-2993; concerns SH-C-069)
+- Viewing your Shopify Payments payout fees (SH-I-2230, SH-S-2994; concerns SH-C-069)
+- Shopify Payments activity report (SH-I-2231, SH-S-2995; concerns SH-C-069)
+- Scheduling your Shopify Payments payouts (SH-I-2232, SH-S-2996; concerns SH-C-069)
+- Failed Shopify Payments payouts (SH-I-2233, SH-S-2997; concerns SH-C-069)
+- Navigating your Shopify Payments payouts to resolve lower or missing payouts (SH-I-2234, SH-S-2998; concerns SH-C-069)
+- Shopify Payments refunds (SH-I-2235, SH-S-2999; concerns SH-C-057)
+- Overview of reserves in Shopify Payments (SH-I-2236, SH-S-3000; concerns SH-C-070)
+- Shopify Payments account holds (SH-I-2237, SH-S-3001; concerns SH-C-070)
+- Understanding your store and payout currencies (SH-I-2238, SH-S-3002; concerns SH-C-069)
+- Selling and getting paid in different currencies (SH-I-2239, SH-S-3003; concerns SH-C-108;SH-C-109)
+- Supported payout currencies (SH-I-2240, SH-S-3004; concerns SH-C-069)
+- Changing your store currency (SH-I-2241, SH-S-3005; concerns SH-C-107)
+- Multi-currency (SH-I-2242, SH-S-3006; concerns SH-C-108)
+- Managing Multi-Currency Payouts with Shopify Payments (SH-I-2243, SH-S-3007; concerns SH-C-069)
+- Currency conversion fee calculation for Shopify Payments orders (SH-I-2244, SH-S-3008; concerns SH-C-109)
+- Shopify Payments for Australia (SH-I-2245, SH-S-3009; concerns SH-C-063)
+- Shopify Payments for Austria (SH-I-2246, SH-S-3010; concerns SH-C-063)
+- Shopify Payments for Bulgaria (SH-I-2247, SH-S-3011; concerns SH-C-063)
+- Shopify Payments for Belgium (SH-I-2248, SH-S-3012; concerns SH-C-063)
+- Shopify Payments for Canada (SH-I-2249, SH-S-3013; concerns SH-C-063)
+- Shopify Payments for Croatia (SH-I-2250, SH-S-3014; concerns SH-C-063)
+- Shopify Payments for Cyprus (SH-I-2251, SH-S-3015; concerns SH-C-063)
+- Shopify Payments for Czechia (SH-I-2252, SH-S-3016; concerns SH-C-063)
+- Shopify Payments for Estonia (SH-I-2253, SH-S-3017; concerns SH-C-063)
+- Shopify Payments for Denmark (SH-I-2254, SH-S-3018; concerns SH-C-063)
+- Shopify Payments for Finland (SH-I-2255, SH-S-3019; concerns SH-C-063)
+- Shopify Payments for France (SH-I-2256, SH-S-3020; concerns SH-C-063)
+- Shopify Payments for Germany (SH-I-2257, SH-S-3021; concerns SH-C-063)
+- Shopify Payments for Gibraltar (SH-I-2258, SH-S-3022; concerns SH-C-063)
+- Shopify Payments for Greece (SH-I-2259, SH-S-3023; concerns SH-C-063)
+- Shopify Payments for Hong Kong SAR (SH-I-2260, SH-S-3024; concerns SH-C-063)
+- Shopify Payments for Hungary (SH-I-2261, SH-S-3025; concerns SH-C-063)
+- Shopify Payments for Ireland (SH-I-2262, SH-S-3026; concerns SH-C-063)
+- Shopify Payments for Italy (SH-I-2263, SH-S-3027; concerns SH-C-063)
+- Shopify Payments for Japan (SH-I-2264, SH-S-3028; concerns SH-C-063)
+- Shopify Payments for Latvia (SH-I-2265, SH-S-3029; concerns SH-C-063)
+- Shopify Payments for Liechtenstein (SH-I-2266, SH-S-3030; concerns SH-C-063)
+- Shopify Payments for Lithuania (SH-I-2267, SH-S-3031; concerns SH-C-063)
+- Shopify Payments for Luxembourg (SH-I-2268, SH-S-3032; concerns SH-C-063)
+- Shopify Payments for Malta (SH-I-2269, SH-S-3033; concerns SH-C-063)
+- Shopify Payments for Mexico (SH-I-2270, SH-S-3034; concerns SH-C-063)
+- Shopify Payments for Netherlands (SH-I-2271, SH-S-3035; concerns SH-C-063)
+- Shopify Payments for New Zealand (SH-I-2272, SH-S-3036; concerns SH-C-063)
+- Shopify Payments for Norway (SH-I-2273, SH-S-3037; concerns SH-C-063)
+- Shopify Payments for Poland (SH-I-2274, SH-S-3038; concerns SH-C-063)
+- Shopify Payments for Portugal (SH-I-2275, SH-S-3039; concerns SH-C-063)
+- Shopify Payments for Romania (SH-I-2276, SH-S-3040; concerns SH-C-063)
+- Shopify Payments for Singapore (SH-I-2277, SH-S-3041; concerns SH-C-063)
+- Shopify Payments for Slovenia (SH-I-2278, SH-S-3042; concerns SH-C-063)
+- Shopify Payments for Spain (SH-I-2279, SH-S-3043; concerns SH-C-063)
+- Shopify Payments for Sweden (SH-I-2280, SH-S-3044; concerns SH-C-063)
+- Shopify Payments for Switzerland (SH-I-2281, SH-S-3045; concerns SH-C-063)
+- Shopify Payments for the United Arab Emirates (SH-I-2282, SH-S-3046; concerns SH-C-063)
+- Shopify Payments for the United Kingdom (SH-I-2283, SH-S-3047; concerns SH-C-063)
+- Shopify Payments for the United States (SH-I-2284, SH-S-3048; concerns SH-C-063)
+- International transfers of personal data (SH-I-2285, SH-S-3049; concerns SH-C-181)
+- General Data Protection Regulation (GDPR) (SH-I-2286, SH-S-3050; concerns SH-C-180)
+- Managing customer privacy settings (SH-I-2287, SH-S-3051; concerns SH-C-148)
+- US state privacy laws (SH-I-2288, SH-S-3052; concerns SH-C-148;SH-C-180)
+- Erase your data (SH-I-2289, SH-S-3053; concerns SH-C-183)
+- Processing customer data requests (SH-I-2290, SH-S-3054; concerns SH-C-149)
+- Subprocessors (SH-I-2291, SH-S-3055; concerns SH-C-182)
+- Requirements when Shopify Network Intelligence is enabled (SH-I-2292, SH-S-3056; concerns SH-C-147)
+- Shopify's primary contracting entities and transfers from the merchant to Shopify (SH-I-2293, SH-S-3057; concerns SH-C-002;SH-C-181)
+- Onward transfers of personal data (SH-I-2294, SH-S-3058; concerns SH-C-181)
+- Security of transfers of personal data (SH-I-2295, SH-S-3059; concerns SH-C-181)
+- Configuration options, Shopify’s Transparency Report, and handling requests from public authorities (SH-I-2296, SH-S-3060; concerns SH-C-179;SH-C-181)
+- Navigating your privacy and data protection requirements (SH-I-2297, SH-S-3061; concerns SH-C-180)
+- Getting started with Shopify Point of Sale (SH-I-2298, SH-S-3062; concerns SH-C-142)
+- Hardware for Shopify POS (SH-I-2299, SH-S-3063; concerns SH-C-143)
+- Retail markets (SH-I-2300, SH-S-3064; concerns SH-C-106;SH-C-142)
+- Selling in person with Shopify POS (SH-I-2301, SH-S-3065; concerns SH-C-142)
+- Migrating and integrating QuickBooks Desktop POS with Shopify POS (SH-I-2302, SH-S-3066; concerns SH-C-142;SH-C-191)
+- General tax set-up steps (SH-I-2303, SH-S-3067; concerns SH-C-100)
+- Understanding the impact of tax collection on displayed prices (SH-I-2304, SH-S-3068; concerns SH-C-100)
+- Include taxes in product prices (SH-I-2305, SH-S-3069; concerns SH-C-100)
+- Setting up tax rates for Shopify POS (SH-I-2306, SH-S-3070; concerns SH-C-100;SH-C-142)
+- Shopify Tax (SH-I-2307, SH-S-3071; concerns SH-C-100)
+- Basic Tax (SH-I-2308, SH-S-3072; concerns SH-C-100)
+- Manual tax settings (SH-I-2309, SH-S-3073; concerns SH-C-100)
+- Tax apps (SH-I-2310, SH-S-3074; concerns SH-C-103)
+- US taxes (SH-I-2311, SH-S-3075; concerns SH-C-100;SH-C-101)
+- EU taxes (SH-I-2312, SH-S-3076; concerns SH-C-100;SH-C-101)
+- TSE Compliance in Germany (SH-I-2313, SH-S-3077; concerns SH-C-175)
+- UK taxes (SH-I-2314, SH-S-3078; concerns SH-C-100;SH-C-101)
+- Canadian taxes (SH-I-2315, SH-S-3079; concerns SH-C-100;SH-C-101)
+- Taxes in Japan (SH-I-2316, SH-S-3080; concerns SH-C-100;SH-C-101)
+- GST in India FAQ (SH-I-2317, SH-S-3081; concerns SH-C-100;SH-C-101)
+- Collecting international duty and import taxes (SH-I-2318, SH-S-3082; concerns SH-C-105)
+- Tax reports (SH-I-2319, SH-S-3083; concerns SH-C-101)
+- Tax overrides and exemptions (SH-I-2320, SH-S-3084; concerns SH-C-102)
+- Shipping tax (SH-I-2321, SH-S-3085; concerns SH-C-100)
+- Digital product taxes (SH-I-2322, SH-S-3086; concerns SH-C-100)
+- Data Exporter (SH-I-2323, SH-S-3087; concerns SH-C-101)
+- Considerations for using Shopify Tax (SH-I-2324, SH-S-3088; concerns SH-C-100)
+- Product categories (SH-I-2325, SH-S-3089; concerns SH-C-020;SH-C-100)
+- Choose a tax service (SH-I-2326, SH-S-3090; concerns SH-C-100;SH-C-103)
+- Estimated taxes during checkout (SH-I-2327, SH-S-3091; concerns SH-C-100)
+- Shopify Tax pricing (SH-I-2328, SH-S-3092; concerns SH-C-100)
+- Update email notifications (SH-I-2329, SH-S-3093; concerns SH-C-101)
+- Shopify Tax features for the European Union and United Kingdom (SH-I-2330, SH-S-3094; concerns SH-C-100;SH-C-102)
+- VAT invoices for the European Union and United Kingdom (SH-I-2331, SH-S-3095; concerns SH-C-100;SH-C-102)
+- Shopify Tax features in Canada (SH-I-2332, SH-S-3096; concerns SH-C-100)
+- VAT validation in checkout (SH-I-2333, SH-S-3097; concerns SH-C-102)
+- Automated filing with Shopify Tax (SH-I-2334, SH-S-3098; concerns SH-C-104)
+- Eligibility and considerations for using automated filing with Shopify Tax (SH-I-2335, SH-S-3099; concerns SH-C-104)
+- State tax forms and IDs for use with automated filing with Shopify Tax (SH-I-2336, SH-S-3100; concerns SH-C-104)
+- Managing automated filing with Shopify Tax (SH-I-2337, SH-S-3101; concerns SH-C-104)
+- Setting up automated filing with Shopify Tax (SH-I-2338, SH-S-3102; concerns SH-C-104)
+- Timelines for automated filing with Shopify Tax (SH-I-2339, SH-S-3103; concerns SH-C-104)
+- Pricing for automated filing with Shopify Tax (SH-I-2340, SH-S-3104; concerns SH-C-104)
+- Activating tax apps (SH-I-2341, SH-S-3105; concerns SH-C-103)
+- Vertex (SH-I-2342, SH-S-3106; concerns SH-C-103)
+- Avalara Tax Compliance (SH-I-2343, SH-S-3107; concerns SH-C-103)
+- Managing your Shopify bills (SH-I-2344, SH-S-3108; concerns SH-C-016)
+- Paying your Shopify bills (SH-I-2345, SH-S-3109; concerns SH-C-016)
+- Charges on your Shopify bills (SH-I-2346, SH-S-3110; concerns SH-C-016)
+- Navigating Shopify billing extensions and payment policies (SH-I-2347, SH-S-3111; concerns SH-C-016)
+- Managing credit notes and billing credits (SH-I-2348, SH-S-3112; concerns SH-C-016)
+- Understanding Shopify's refund policy for plans (SH-I-2349, SH-S-3113; concerns SH-C-015;SH-C-016)
+- Understanding billing implications before pausing or deactivating your Shopify store (SH-I-2350, SH-S-3114; concerns SH-C-014;SH-C-016)
+- Shopify offers and promotions (SH-I-2351, SH-S-3115; concerns SH-C-016)
+- General guidelines for tax exemptions and charges on Shopify billing in North America (SH-I-2352, SH-S-3116; concerns SH-C-017)
+- Managing VAT requirements for Shopify billing in European stores (SH-I-2353, SH-S-3117; concerns SH-C-017)
+- Navigating GST, SST, and VAT for Shopify billing in India, Malaysia, Singapore, and Thailand (SH-I-2354, SH-S-3118; concerns SH-C-017)
+- Managing VAT requirements for Shopify billing in Saudi Arabia and the United Arab Emirates (SH-I-2355, SH-S-3119; concerns SH-C-017)
+- Navigating GST exemptions for Shopify billing in Australia and New Zealand (SH-I-2356, SH-S-3120; concerns SH-C-017)
+- Managing VAT compliance for Shopify billing in Egypt, South Africa and Tanzania (SH-I-2357, SH-S-3121; concerns SH-C-017)
+- Handling VAT charges for Shopify billing in Chile (SH-I-2358, SH-S-3122; concerns SH-C-017)
+
+### List `access-scopes` (251 entries, 0 out of the concern map's scope)
+
+Entries: read_analytics; read_analytics_annotations; write_analytics_annotations; read_app_proxy; write_app_proxy; read_assigned_fulfillment_orders; write_assigned_fulfillment_orders; read_audit_events; read_customer_events; read_cart_transforms; write_cart_transforms; read_all_cart_transforms; read_validations; write_validations; read_cash_tracking; write_cash_tracking; read_channels; write_channels; read_checkout_kit_enhanced_buyer_events; read_checkout_and_accounts_configurations; write_checkout_and_accounts_configurations; read_checkout_branding_settings; write_checkout_branding_settings; write_checkouts; read_checkouts; read_companies; write_companies; read_custom_fulfillment_services; write_custom_fulfillment_services; read_custom_pixels; write_custom_pixels; read_customers; write_customers; read_customer_data_erasure; write_customer_data_erasure; read_customer_merge; write_customer_merge; read_delivery_customizations; write_delivery_customizations; read_price_rules; write_price_rules; read_discounts; write_discounts; read_discovery; write_discovery; write_draft_orders; read_draft_orders; read_files; write_files; read_fulfillment_constraint_rules; write_fulfillment_constraint_rules; read_fulfillments; write_fulfillments; read_gift_card_transactions; write_gift_card_transactions; read_gift_cards; write_gift_cards; write_inventory; read_inventory; read_inventory_purchase_orders; write_inventory_shipments; read_inventory_shipments; write_inventory_shipments_received_items; read_inventory_shipments_received_items; write_inventory_transfers; read_inventory_transfers; read_legal_policies; write_legal_policies; read_delivery_option_generators; write_delivery_option_generators; read_locales; write_locales; write_locations; read_locations; read_marketing_integrated_campaigns; write_marketing_integrated_campaigns; write_marketing_events; read_marketing_events; read_markets; write_markets; read_markets_home; write_markets_home; read_merchant_managed_fulfillment_orders; write_merchant_managed_fulfillment_orders; read_metaobject_definitions; write_metaobject_definitions; read_metaobjects; write_metaobjects; read_online_store_navigation; write_online_store_navigation; read_online_store_pages; write_online_store_pages; write_order_edits; read_order_edits; read_orders; write_orders; write_packing_slip_templates; read_packing_slip_templates; read_payment_notifications; write_payment_notifications; read_payment_terms; write_payment_terms; read_payment_customizations; write_payment_customizations; read_privacy_settings; write_privacy_settings; read_product_feeds; write_product_feeds; read_product_listings; write_product_listings; read_products; write_products; read_publications; write_publications; read_purchase_options; write_purchase_options; write_reports; read_reports; read_resource_feedbacks; write_resource_feedbacks; read_returns; write_returns; read_rollouts; read_script_tags; write_script_tags; read_shopify_payments_provider_accounts_sensitive; read_shipping; write_shipping; read_shopify_payments_accounts; read_shopify_payments_payouts; read_shopify_payments_bank_accounts; read_shopify_payments_disputes; write_shopify_payments_disputes; read_content; write_content; read_store_credit_account_transactions; write_store_credit_account_transactions; read_store_credit_accounts; write_theme_code; read_themes; write_themes; read_third_party_fulfillment_orders; write_third_party_fulfillment_orders; read_translations; write_translations; read_pixels; write_pixels; customer_read_companies; customer_write_companies; customer_write_customers; customer_read_customers; customer_read_draft_orders; customer_read_markets; customer_read_metaobjects; customer_read_orders; customer_write_orders; customer_read_store_credit_account_transactions; customer_read_store_credit_accounts; unauthenticated_write_bulk_operations; unauthenticated_read_bulk_operations; unauthenticated_read_bundles; unauthenticated_write_checkouts; unauthenticated_read_checkouts; unauthenticated_write_customers; unauthenticated_read_customers; unauthenticated_read_customer_tags; unauthenticated_read_metaobjects; unauthenticated_read_product_pickup_locations; unauthenticated_read_product_inventory; unauthenticated_read_product_listings; unauthenticated_read_product_tags; unauthenticated_read_selling_plans; unauthenticated_read_shop_pay_installments_pricing; unauthenticated_read_content; read_all_orders; read_apps; read_marketplace_fulfillment_orders; read_checkout_settings; write_checkout_settings; read_customer_payment_methods; read_delivery_promises; write_delivery_promises; read_financial_kyc_information; read_marketplace_orders; write_marketplace_orders; read_marketplace_returns; write_marketplace_returns; read_merchant_approval_signals; read_mobile_platform_applications; write_mobile_platform_applications; read_own_subscription_contracts; write_own_subscription_contracts; read_payment_gateways; write_payment_gateways; read_payment_mandate; write_payment_mandate; read_payment_sessions; write_payment_sessions; read_shopify_payments; read_shopify_payments_accounts_sensitive; read_shopify_payments_dispute_evidences; write_shopify_payments_dispute_evidences; read_shopify_payments_dispute_file_uploads; write_shopify_payments_dispute_file_uploads; read_taxes; write_taxes; read_users; customer_read_locations; customer_write_locations; customer_read_own_subscription_contracts; customer_write_own_subscription_contracts; customer_write_subscription_contracts; Shopify approval scopes; Orders permissions; Subscription APIs permissions; Shopify Payments dispute evidence permissions; Theme permissions; Protected customer data permissions; read_images; read_quick_sale; write_customer_payment_methods; write_quick_sale; write_images; write_marketplace_fulfillment_orders; write_inventory_purchase_orders; write_pos_staff_member_event_attribution_overrides; write_shopify_payments_tooling; read_shop_promise_program; read_point_of_sale_devices; read_shopify_payments_legal_entities; read_capital; read_shopify_payments_tooling; customer_write_pre_authenticated; customer_read_payment_instrument_authenticated; customer_read_unauthenticated; customer_read_pre_authenticated; read_buyer_membership_orders; read_customer_email; read_customer_name; read_customer_personal_data; read_customer_phone; read_customer_address; customer_payment_methods; customer_merge; write_webhooks; write_payment_session_modals; read_payment_session_modals; write_cart_wallet_payments; write_mobile_payments; read_mobile_payments; read_billing
+
+
+### List `plan-features` (185 entries, 23 out of the concern map's scope)
+
+- Pricing (SH-I-1137, SH-S-1901; concerns SH-C-015)
+- Pay monthly (SH-I-1138, SH-S-1902; concerns SH-C-015)
+- Pay yearly (SH-I-1139, SH-S-1903; concerns SH-C-015)
+- Earn 1% back on all sales (SH-I-1141, SH-S-1905; concerns SH-C-015)
+- Online store (SH-I-1142, SH-S-1906; concerns SH-C-029)
+- Themes and templates (SH-I-1143, SH-S-1907; concerns SH-C-029)
+- Sell unlimited products (SH-I-1144, SH-S-1908; concerns SH-C-020)
+- World's best-converting checkout (SH-I-1145, SH-S-1909; concerns SH-C-047)
+- Sell on social and marketplaces (SH-I-1146, SH-S-1910; concerns SH-C-135)
+- Sell in AI chats (SH-I-1147, SH-S-1911; concerns SH-C-140)
+- Shopify B2B (SH-I-1148, SH-S-1912; concerns SH-C-037;SH-C-044)
+- Inventory management (SH-I-1149, SH-S-1913; concerns SH-C-022)
+- Inventory locations (SH-I-1150, SH-S-1914; concerns SH-C-024)
+- Additional staff accounts (SH-I-1151, SH-S-1915; concerns SH-C-009)
+- Invite third-party collaborators (SH-I-1152, SH-S-1916; concerns SH-C-011)
+- Sell and source products with Shopify Collective (SH-I-1153, SH-S-1917; concerns SH-C-141)
+- 200+ real-time reports, plus custom analytics (SH-I-1154, SH-S-1918; concerns SH-C-145)
+- 24/7 support (SH-I-1155, SH-S-1919; concerns SH-C-155)
+- Free Shopify Academy courses (SH-I-1156, SH-S-1920; concerns SH-C-155)
+- Casual, in-person sales at pop-ups and events (SH-I-1158, SH-S-1922; concerns SH-C-142)
+- POS Pro: Advanced tools for brick‑and‑mortar retailers (SH-I-1159, SH-S-1923; concerns SH-C-142)
+- Website builder (SH-I-1161, SH-S-1925; concerns SH-C-029;SH-C-152)
+- Millions of tokens (SH-I-1162, SH-S-1926; concerns SH-C-152)
+- Sidekick, AI assistant for commerce (SH-I-1163, SH-S-1927; concerns SH-C-152)
+- Shopify Payments (SH-I-1165, SH-S-1929; concerns SH-C-063)
+- Online standard card rates (SH-I-1166, SH-S-1930; concerns SH-C-071)
+- Online premium card rates (SH-I-1167, SH-S-1931; concerns SH-C-071)
+- Online international rates (SH-I-1168, SH-S-1932; concerns SH-C-071)
+- PayPal Wallet rates (SH-I-1169, SH-S-1933; concerns SH-C-077)
+- MB WAY rates (SH-I-1170, SH-S-1934; concerns SH-C-071;SH-C-080)
+- Bizum rates (SH-I-1171, SH-S-1935; concerns SH-C-071;SH-C-080)
+- In-person card rates (SH-I-1172, SH-S-1936; concerns SH-C-071;SH-C-086)
+- USDC rates (SH-I-1173, SH-S-1937; concerns SH-C-071;SH-C-081)
+- In-person manual rates (SH-I-1174, SH-S-1938; concerns SH-C-071;SH-C-086)
+- Third-party transaction fees (SH-I-1175, SH-S-1939; concerns SH-C-018)
+- Built-in fraud analysis* (SH-I-1176, SH-S-1940; concerns SH-C-059)
+- *Requires Shopify Payments (SH-I-1177, SH-S-1941; concerns SH-C-063)
+- Unlimited web hosting (SH-I-1179, SH-S-1943; concerns SH-C-036)
+- Custom domain name (SH-I-1180, SH-S-1944; concerns SH-C-033)
+- Free SSL certificate (SH-I-1181, SH-S-1945; concerns SH-C-036)
+- Unlimited contacts (SH-I-1183, SH-S-1947; concerns SH-C-039)
+- Create customer segments (SH-I-1184, SH-S-1948; concerns SH-C-040)
+- Create email campaigns (SH-I-1185, SH-S-1949; concerns SH-C-130)
+- Pay-per-send SMS campaigns (SH-I-1186, SH-S-1950; concerns SH-C-130)
+- Capture customer leads (SH-I-1187, SH-S-1951; concerns SH-C-129)
+- Chat with customers (SH-I-1188, SH-S-1952; concerns SH-C-153)
+- Create marketing automations (SH-I-1189, SH-S-1953; concerns SH-C-129)
+- Abandoned checkout recovery (SH-I-1190, SH-S-1954; concerns SH-C-050)
+- Create and share discount codes (SH-I-1191, SH-S-1955; concerns SH-C-127)
+- Sell gift cards (SH-I-1192, SH-S-1956; concerns SH-C-025)
+- Acquire customers risk-free with Shop Campaigns (SH-I-1193, SH-S-1957; concerns SH-C-133)
+- Shipping discounts (SH-I-1195, SH-S-1959; concerns SH-C-116)
+- Buy and print shipping labels (SH-I-1196, SH-S-1960; concerns SH-C-116)
+- Shipping insurance* (SH-I-1197, SH-S-1961; concerns SH-C-117)
+- 3rd-party calculated shipping rates (SH-I-1198, SH-S-1962; concerns SH-C-115)
+- *Requires Shopify Payments (SH-I-1199, SH-S-1963; concerns SH-C-063)
+- Import unlimited orders from marketplaces (SH-I-1201, SH-S-1965; concerns SH-C-137)
+- 50 synced marketplace orders per month (SH-I-1202, SH-S-1966; concerns SH-C-137)
+- Over 50 synced marketplace orders (SH-I-1203, SH-S-1967; concerns SH-C-137)
+- Integrate with 1000s of apps (SH-I-1205, SH-S-1969; concerns SH-C-156)
+- Checkout customization (SH-I-1206, SH-S-1970; concerns SH-C-048;SH-C-049)
+- Build custom apps using Shopify APIs (SH-I-1207, SH-S-1971; concerns SH-C-167)
+- API rate limits (SH-I-1208, SH-S-1972; concerns SH-C-171)
+- Build headless storefronts (SH-I-1209, SH-S-1973; concerns SH-C-139)
+- Translate your storefront (SH-I-1211, SH-S-1975; concerns SH-C-032)
+- Show prices in local currencies* (SH-I-1212, SH-S-1976; concerns SH-C-108)
+- Localized selling with Shopify Markets (SH-I-1213, SH-S-1977; concerns SH-C-106)
+- Accept local payment methods* (SH-I-1214, SH-S-1978; concerns SH-C-080)
+- Assign local domains (SH-I-1215, SH-S-1979; concerns SH-C-111)
+- Estimate and collect duties and taxes (SH-I-1216, SH-S-1980; concerns SH-C-105)
+- *Requires Shopify Payments (SH-I-1217, SH-S-1981; concerns SH-C-063)
+- Manage money with Shopify Balance¹ (SH-I-1219, SH-S-1983; concerns SH-C-088)
+- Flexible growth funding through Shopify Capital² (SH-I-1220, SH-S-1984; concerns SH-C-091;SH-C-092;SH-C-093;SH-C-094;SH-C-095;SH-C-096;SH-C-097)
+- Shopify Credit pay-in-full Visa® card³ (SH-I-1221, SH-S-1985; concerns SH-C-090)
+- Schedule, pay, and manage bills with Shopify Bill Pay (SH-I-1222, SH-S-1986; concerns SH-C-098)
+- Automated sales tax calculations (SH-I-1224, SH-S-1988; concerns SH-C-100)
+- Tax liability tracking (SH-I-1225, SH-S-1989; concerns SH-C-101)
+- VAT validation, exemptions, and invoicing (SH-I-1226, SH-S-1990; concerns SH-C-102)
+- Advanced tax platform (SH-I-1227, SH-S-1991; concerns SH-C-103)
+- High volume checkout (SH-I-1229, SH-S-1993; concerns SH-C-047)
+- Merchandise with Shopify Combined Listings (SH-I-1230, SH-S-1994; concerns SH-C-038)
+- Optimize ads with Shopify Audiences (SH-I-1231, SH-S-1995; concerns SH-C-132)
+- Free expansion stores (SH-I-1232, SH-S-1996; concerns SH-C-003)
+- Bot protection (SH-I-1233, SH-S-1997; concerns SH-C-051)
+- Up to 500% higher API call limits (SH-I-1234, SH-S-1998; concerns SH-C-171)
+- Test new features before launch (SH-I-1235, SH-S-1999; concerns SH-C-015)
+- Personalize store with custom functions (SH-I-1236, SH-S-2000; concerns SH-C-163)
+- Custom user groups (SH-I-1237, SH-S-2001; concerns SH-C-010)
+- Plus Certified apps (SH-I-1238, SH-S-2002; concerns SH-C-157)
+- Pricing (SH-I-1239, SH-S-2003; concerns SH-C-015)
+- Pay monthly (SH-I-1240, SH-S-2004; concerns SH-C-015)
+- Pay yearly (SH-I-1241, SH-S-2005; concerns SH-C-015)
+- Earn 1% back on all sales (SH-I-1243, SH-S-2007; concerns SH-C-015)
+- Online store (SH-I-1244, SH-S-2008; concerns SH-C-029)
+- Themes and templates (SH-I-1245, SH-S-2009; concerns SH-C-029)
+- Sell unlimited products (SH-I-1246, SH-S-2010; concerns SH-C-020)
+- World's best-converting checkout (SH-I-1247, SH-S-2011; concerns SH-C-047)
+- Sell on social and marketplaces (SH-I-1248, SH-S-2012; concerns SH-C-135)
+- Sell in AI chats (SH-I-1249, SH-S-2013; concerns SH-C-140)
+- Shopify B2B (SH-I-1250, SH-S-2014; concerns SH-C-037;SH-C-044)
+- Inventory management (SH-I-1251, SH-S-2015; concerns SH-C-022)
+- Inventory locations (SH-I-1252, SH-S-2016; concerns SH-C-024)
+- Additional staff accounts (SH-I-1253, SH-S-2017; concerns SH-C-009)
+- Invite third-party collaborators (SH-I-1254, SH-S-2018; concerns SH-C-011)
+- Sell and source products with Shopify Collective (SH-I-1255, SH-S-2019; concerns SH-C-141)
+- 200+ real-time reports, plus custom analytics (SH-I-1256, SH-S-2020; concerns SH-C-145)
+- 24/7 support (SH-I-1257, SH-S-2021; concerns SH-C-155)
+- Casual, in-person sales at pop-ups and events (SH-I-1259, SH-S-2023; concerns SH-C-142)
+- POS Pro: Advanced tools for brick‑and‑mortar retailers (SH-I-1260, SH-S-2024; concerns SH-C-142)
+- Website builder (SH-I-1262, SH-S-2026; concerns SH-C-029;SH-C-152)
+- Millions of tokens (SH-I-1263, SH-S-2027; concerns SH-C-152)
+- Sidekick, AI assistant for commerce (SH-I-1264, SH-S-2028; concerns SH-C-152)
+- Unlimited web hosting (SH-I-1266, SH-S-2030; concerns SH-C-036)
+- Custom domain name (SH-I-1267, SH-S-2031; concerns SH-C-033)
+- Free SSL certificate (SH-I-1268, SH-S-2032; concerns SH-C-036)
+- Unlimited contacts (SH-I-1270, SH-S-2034; concerns SH-C-039)
+- Create customer segments (SH-I-1271, SH-S-2035; concerns SH-C-040)
+- Create email campaigns (SH-I-1272, SH-S-2036; concerns SH-C-130)
+- Pay-per-send SMS campaigns (SH-I-1273, SH-S-2037; concerns SH-C-130)
+- Capture customer leads (SH-I-1274, SH-S-2038; concerns SH-C-129)
+- Chat with customers (SH-I-1275, SH-S-2039; concerns SH-C-153)
+- Create marketing automations (SH-I-1276, SH-S-2040; concerns SH-C-129)
+- Abandoned checkout recovery (SH-I-1277, SH-S-2041; concerns SH-C-050)
+- Create and share discount codes (SH-I-1278, SH-S-2042; concerns SH-C-127)
+- Sell gift cards (SH-I-1279, SH-S-2043; concerns SH-C-025)
+- Import unlimited orders from marketplaces (SH-I-1281, SH-S-2045; concerns SH-C-137)
+- 50 synced marketplace orders per month (SH-I-1282, SH-S-2046; concerns SH-C-137)
+- Over 50 synced marketplace orders (SH-I-1283, SH-S-2047; concerns SH-C-137)
+- Integrate with 1000s of apps (SH-I-1285, SH-S-2049; concerns SH-C-156)
+- Checkout customization (SH-I-1286, SH-S-2050; concerns SH-C-048;SH-C-049)
+- Build custom apps using Shopify APIs (SH-I-1287, SH-S-2051; concerns SH-C-167)
+- API rate limits (SH-I-1288, SH-S-2052; concerns SH-C-171)
+- Build headless storefronts (SH-I-1289, SH-S-2053; concerns SH-C-139)
+- Translate your storefront (SH-I-1291, SH-S-2055; concerns SH-C-032)
+- Show prices in local currencies* (SH-I-1292, SH-S-2056; concerns SH-C-108)
+- Localized selling with Shopify Markets (SH-I-1293, SH-S-2057; concerns SH-C-106)
+- Accept local payment methods* (SH-I-1294, SH-S-2058; concerns SH-C-080)
+- Assign local domains (SH-I-1295, SH-S-2059; concerns SH-C-111)
+- Estimate and collect duties and taxes (SH-I-1296, SH-S-2060; concerns SH-C-105)
+- Manage money with Shopify Balance¹ (SH-I-1298, SH-S-2062; concerns SH-C-088)
+- Flexible growth funding through Shopify Capital² (SH-I-1299, SH-S-2063; concerns SH-C-091;SH-C-092;SH-C-093;SH-C-094;SH-C-095;SH-C-096;SH-C-097)
+- Shopify Credit pay-in-full Visa® card³ (SH-I-1300, SH-S-2064; concerns SH-C-090)
+- Schedule, pay, and manage bills with Shopify Bill Pay (SH-I-1301, SH-S-2065; concerns SH-C-098)
+- High volume checkout (SH-I-1303, SH-S-2067; concerns SH-C-047)
+- Merchandise with Shopify Combined Listings (SH-I-1304, SH-S-2068; concerns SH-C-038)
+- Free expansion stores (SH-I-1305, SH-S-2069; concerns SH-C-003)
+- Bot protection (SH-I-1306, SH-S-2070; concerns SH-C-051)
+- Up to 500% higher API call limits (SH-I-1307, SH-S-2071; concerns SH-C-171)
+- Test new features before launch (SH-I-1308, SH-S-2072; concerns SH-C-015)
+- Personalize store with custom functions (SH-I-1309, SH-S-2073; concerns SH-C-163)
+- Custom user groups (SH-I-1310, SH-S-2074; concerns SH-C-010)
+- Plus Certified apps (SH-I-1311, SH-S-2075; concerns SH-C-157)
+- basic (SH-I-1312, SH-S-2076; concerns SH-C-015)
+- professional (SH-I-1313, SH-S-2077; concerns SH-C-015)
+- retail (SH-I-1314, SH-S-2078; concerns SH-C-015)
+- shopify_plus (SH-I-1315, SH-S-2079; concerns SH-C-015)
+- starter_2022 (SH-I-1316, SH-S-2080; concerns SH-C-015)
+- unlimited (SH-I-1317, SH-S-2081; concerns SH-C-015)
+- Basic (SH-I-1318, SH-S-2082; concerns SH-C-015;SH-C-168)
+- Grow (SH-I-1319, SH-S-2083; concerns SH-C-015;SH-C-168)
+- Advanced (SH-I-1320, SH-S-2084; concerns SH-C-015;SH-C-168)
+- Plus (SH-I-1321, SH-S-2085; concerns SH-C-015;SH-C-168)
+
+Out of the concern map's scope: Core features (group heading in the list; the items under it are placed individually); In-person sales (group heading in the list; the items under it are placed individually); AI features (group heading in the list; the items under it are placed individually); Accepting payments (group heading in the list; the items under it are placed individually); Hosting (group heading in the list; the items under it are placed individually); Marketing (group heading in the list; the items under it are placed individually); Shipping (group heading in the list; the items under it are placed individually); Marketplaces (group heading in the list; the items under it are placed individually); Customization (group heading in the list; the items under it are placed individually); Sell globally (group heading in the list; the items under it are placed individually); Finance (group heading in the list; the items under it are placed individually); Tax (group heading in the list; the items under it are placed individually); Just for Plus (group heading in the list; the items under it are placed individually); Core features (group heading in the list; the items under it are placed individually); In-person sales (group heading in the list; the items under it are placed individually); AI features (group heading in the list; the items under it are placed individually); Hosting (group heading in the list; the items under it are placed individually); Marketing (group heading in the list; the items under it are placed individually); Marketplaces (group heading in the list; the items under it are placed individually); Customization (group heading in the list; the items under it are placed individually); Sell globally*Requires Shopify Payments (group heading in the list; the items under it are placed individually); Finance (group heading in the list; the items under it are placed individually); Just for Plus (group heading in the list; the items under it are placed individually)
+
+
+### List `api-resources` (175 entries, 7 out of the concern map's scope)
+
+Entries: Access; Analytics; Apps; B2B; Billing; Bulk operations; Cart; Checkout and accounts configurations; Checkout branding; Common objects; Customers; Discounts and marketing; Inventory; Localizations; Metafields; Metaobjects; Online store; Orders; Privacy; Products and collections; Retail; Shipping and fulfillment; Shopify Markets; Shopify Payments; Store properties; Webhooks; Versioning; API authentication; Access scopes; GraphQL pagination; Search query syntax; Global IDs; Response status codes; Limits; Idempotent requests; Feature previews; GraphQL Admin API; Shopify Functions; ShopifyQL for analytics; Events; Webhooks; Payments Apps API; REST Admin API (legacy); Reference; API usage; Polaris references; App Home (iframe); App Home (UI extension); Admin; Checkout; Customer accounts; POS; Using web components; Storefront API; Liquid; Ajax API; About the Ajax API; Reference; Section Rendering API; Hydrogen framework; Hydrogen React library; Storefront Web Components; Standard events and actions; Customer Privacy API; Customer Account API; WebMCP Tools; Partner API; App Events API; Customer authentication; Overview; Third-party identity providers; Multipass; Web pixel; About Web pixel app extensions; Web Pixels API; Shop API; Shop Minis; Overview; Components; Hooks; Shop Pay Wallet API; Cart and Checkout Validation; Cart Transform; Delivery Customization; Discount; Fulfillment Constraints; Order Routing Location Rule; Payment Customization; Order Discount; Product Discount; Shipping Discount; Cart; Common objects; Customers; Metaobjects; Search; company; companyLocation; customer; draftOrder; order; requestedOrderEditCalculate; return; returnCalculate; shop; companyLocationAssignAddress; customerAddressCreate; customerAddressDelete; customerAddressUpdate; customerEmailMarketingSubscribe; customerEmailMarketingUnsubscribe; customerUpdate; customerWhatsAppMarketingConsentUpdate; metafieldsDelete; metafieldsSet; orderRequestEdit; orderRequestReturn; storefrontCustomerAccessTokenCreate; subscriptionBillingCycleSkip; subscriptionBillingCycleUnskip; subscriptionContractActivate; subscriptionContractCancel; subscriptionContractFetchDeliveryOptions; subscriptionContractPause; subscriptionContractSelectDeliveryMethod; Payment Processing; captureSessionReject; captureSessionResolve; paymentsAppConfigure; paymentSessionConfirm; paymentSessionModal; paymentSessionPending; paymentSessionRedirect; paymentSessionReject; paymentSessionResolve; refundSessionReject; refundSessionResolve; verificationSessionRedirect; verificationSessionReject; verificationSessionResolve; voidSessionReject; voidSessionResolve; Platform; publicApiVersions; Article; Blog; Collection; Company; Customer; FulfillmentOrder; InventoryItem; InventoryShipment; InventoryTransfer; Location; MetafieldDefinition; Metaobject; MetaobjectDefinition; Order; Page; Product; Refund; Return; Active subscription; App events; App subscription cancel; Common objects; Historical events; Transactions
+
+
+Out of the concern map's scope: Timeline events (cross-resource activity log (events and comments on other resources); its placement follows the resources it records); GraphQL Types (the API reference's index of all types (connections, enums, payloads); not a functional group); Shopify CLI (developer tooling for building apps (how code is written and shipped), not a commerce concern with a placement of its own); Shopify GitHub app (developer tooling for building apps (how code is written and shipped), not a commerce concern with a placement of its own); React Router app package (developer tooling for building apps (how code is written and shipped), not a commerce concern with a placement of its own); Stores (developer tooling for building apps (how code is written and shipped), not a commerce concern with a placement of its own); Libraries and templates (developer tooling for building apps (how code is written and shipped), not a commerce concern with a placement of its own)
+
+
+### List `other:app-store-categories` (161 entries, 0 out of the concern map's scope)
+
+- Finding products apps (SH-I-1802, SH-S-2566; concerns SH-C-185)
+- Sourcing option apps (SH-I-1803, SH-S-2567; concerns SH-C-185)
+- Dropshipping apps (SH-I-1804, SH-S-2568; concerns SH-C-185)
+- Print on demand (POD) apps (SH-I-1805, SH-S-2569; concerns SH-C-185)
+- Sourcing options - Other (SH-I-1806, SH-S-2570; concerns SH-C-185)
+- Wholesale apps (SH-I-1807, SH-S-2571; concerns SH-C-185)
+- Marketing and conversion apps (SH-I-1808, SH-S-2572; concerns SH-C-129)
+- Advertising apps (SH-I-1809, SH-S-2573; concerns SH-C-194)
+- Ads (SH-I-1810, SH-S-2574; concerns SH-C-194)
+- Advertising - Other (SH-I-1811, SH-S-2575; concerns SH-C-194)
+- Affiliate program apps (SH-I-1812, SH-S-2576; concerns SH-C-194)
+- Checkout apps (SH-I-1813, SH-S-2577; concerns SH-C-049)
+- Cart customization apps (SH-I-1814, SH-S-2578; concerns SH-C-049)
+- Checkout - Other (SH-I-1815, SH-S-2579; concerns SH-C-049)
+- Order limit apps (SH-I-1816, SH-S-2580; concerns SH-C-049;SH-C-052)
+- Customer loyalty apps (SH-I-1817, SH-S-2581; concerns SH-C-187)
+- Customer loyalty - Other (SH-I-1818, SH-S-2582; concerns SH-C-187)
+- Donation apps (SH-I-1819, SH-S-2583; concerns SH-C-187)
+- Loyalty and reward apps (SH-I-1820, SH-S-2584; concerns SH-C-187)
+- Wishlist apps (SH-I-1821, SH-S-2585; concerns SH-C-187)
+- Gift apps (SH-I-1822, SH-S-2586; concerns SH-C-025)
+- Gift card apps (SH-I-1823, SH-S-2587; concerns SH-C-025)
+- Gift wrap and message apps (SH-I-1824, SH-S-2588; concerns SH-C-189)
+- Gifts - Other (SH-I-1825, SH-S-2589; concerns SH-C-025)
+- Marketing apps (SH-I-1826, SH-S-2590; concerns SH-C-129)
+- Abandoned cart apps (SH-I-1827, SH-S-2591; concerns SH-C-050)
+- Email marketing apps (SH-I-1828, SH-S-2592; concerns SH-C-129;SH-C-130)
+- Marketing - Other (SH-I-1829, SH-S-2593; concerns SH-C-129)
+- SMS marketing apps (SH-I-1830, SH-S-2594; concerns SH-C-129;SH-C-130)
+- Web push apps (SH-I-1831, SH-S-2595; concerns SH-C-129)
+- Promotion apps (SH-I-1832, SH-S-2596; concerns SH-C-127)
+- Discount apps (SH-I-1833, SH-S-2597; concerns SH-C-127)
+- Giveaways and contests apps (SH-I-1834, SH-S-2598; concerns SH-C-127)
+- Promotions - Other (SH-I-1835, SH-S-2599; concerns SH-C-127)
+- Social trust apps (SH-I-1836, SH-S-2600; concerns SH-C-154)
+- Product review apps (SH-I-1837, SH-S-2601; concerns SH-C-154)
+- Social proof apps (SH-I-1838, SH-S-2602; concerns SH-C-154)
+- Social trust - Other (SH-I-1839, SH-S-2603; concerns SH-C-154)
+- Upsell and bundle apps (SH-I-1840, SH-S-2604; concerns SH-C-188)
+- Countdown timer apps (SH-I-1841, SH-S-2605; concerns SH-C-188)
+- Pre-order apps (SH-I-1842, SH-S-2606; concerns SH-C-188)
+- Product bundle apps (SH-I-1843, SH-S-2607; concerns SH-C-188)
+- Stock alert apps (SH-I-1844, SH-S-2608; concerns SH-C-188)
+- Upsell and bundles - Other (SH-I-1845, SH-S-2609; concerns SH-C-188)
+- Upsell and cross-sell apps (SH-I-1846, SH-S-2610; concerns SH-C-188)
+- Orders and shipping apps (SH-I-1847, SH-S-2611; concerns SH-C-054;SH-C-114)
+- Inventory apps (SH-I-1848, SH-S-2612; concerns SH-C-022)
+- ERP apps (SH-I-1849, SH-S-2613; concerns SH-C-022;SH-C-191)
+- Inventory optimization apps (SH-I-1850, SH-S-2614; concerns SH-C-022)
+- Inventory - Other (SH-I-1851, SH-S-2615; concerns SH-C-022)
+- Inventory sync apps (SH-I-1852, SH-S-2616; concerns SH-C-022)
+- Order apps (SH-I-1853, SH-S-2617; concerns SH-C-054)
+- Invoice and receipt apps (SH-I-1854, SH-S-2618; concerns SH-C-061)
+- Order editing apps (SH-I-1855, SH-S-2619; concerns SH-C-056)
+- Order tracking apps (SH-I-1856, SH-S-2620; concerns SH-C-126)
+- Orders - Other (SH-I-1857, SH-S-2621; concerns SH-C-054)
+- Return and warranty apps (SH-I-1858, SH-S-2622; concerns SH-C-058)
+- Returns and exchanges apps (SH-I-1859, SH-S-2623; concerns SH-C-058)
+- Returns and warranty - Other (SH-I-1860, SH-S-2624; concerns SH-C-058)
+- Warranties and insurance apps (SH-I-1861, SH-S-2625; concerns SH-C-058)
+- Shipping solution apps (SH-I-1862, SH-S-2626; concerns SH-C-114;SH-C-116)
+- Delivery and pickup apps (SH-I-1863, SH-S-2627; concerns SH-C-121)
+- Shipping apps (SH-I-1864, SH-S-2628; concerns SH-C-114;SH-C-116)
+- Shipping rate apps (SH-I-1865, SH-S-2629; concerns SH-C-115)
+- Shipping solutions - Other (SH-I-1866, SH-S-2630; concerns SH-C-114;SH-C-116)
+- Third-party logistics (3PL) apps (SH-I-1867, SH-S-2631; concerns SH-C-119)
+- Sales channel apps (SH-I-1868, SH-S-2632; concerns SH-C-135)
+- Selling in person apps (SH-I-1869, SH-S-2633; concerns SH-C-142)
+- Retail apps (SH-I-1870, SH-S-2634; concerns SH-C-142)
+- Selling in person - Other (SH-I-1871, SH-S-2635; concerns SH-C-142)
+- SKU and barcode apps (SH-I-1872, SH-S-2636; concerns SH-C-142)
+- Store locator apps (SH-I-1873, SH-S-2637; concerns SH-C-142)
+- Selling online apps (SH-I-1874, SH-S-2638; concerns SH-C-135)
+- Marketplace apps (SH-I-1875, SH-S-2639; concerns SH-C-137)
+- Product feed apps (SH-I-1876, SH-S-2640; concerns SH-C-138)
+- Selling online - Other (SH-I-1877, SH-S-2641; concerns SH-C-135)
+- Store data importer apps (SH-I-1878, SH-S-2642; concerns SH-C-020)
+- Selling products apps (SH-I-1879, SH-S-2643; concerns SH-C-020)
+- Custom product apps (SH-I-1880, SH-S-2644; concerns SH-C-189)
+- Custom file upload apps (SH-I-1881, SH-S-2645; concerns SH-C-189)
+- Custom products - Other (SH-I-1882, SH-S-2646; concerns SH-C-189)
+- Product variant apps (SH-I-1883, SH-S-2647; concerns SH-C-189)
+- Digital goods and service apps (SH-I-1884, SH-S-2648; concerns SH-C-190)
+- Digital goods and services - Other (SH-I-1885, SH-S-2649; concerns SH-C-190)
+- Digital product apps (SH-I-1886, SH-S-2650; concerns SH-C-190)
+- Event booking apps (SH-I-1887, SH-S-2651; concerns SH-C-190)
+- NFT and tokengating apps (SH-I-1888, SH-S-2652; concerns SH-C-190)
+- Payment apps (SH-I-1889, SH-S-2653; concerns SH-C-076)
+- Pay later apps (SH-I-1890, SH-S-2654; concerns SH-C-076)
+- Payment experience apps (SH-I-1891, SH-S-2655; concerns SH-C-076)
+- Payment options - Other (SH-I-1892, SH-S-2656; concerns SH-C-076)
+- Subscription apps (SH-I-1893, SH-S-2657; concerns SH-C-186)
+- Pricing apps (SH-I-1894, SH-S-2658; concerns SH-C-020)
+- Pricing optimization apps (SH-I-1895, SH-S-2659; concerns SH-C-020)
+- Pricing - Other (SH-I-1896, SH-S-2660; concerns SH-C-020)
+- Pricing quote apps (SH-I-1897, SH-S-2661; concerns SH-C-020)
+- Store design apps (SH-I-1898, SH-S-2662; concerns SH-C-193)
+- Content apps (SH-I-1899, SH-S-2663; concerns SH-C-193)
+- Blog apps (SH-I-1900, SH-S-2664; concerns SH-C-030)
+- Content - Other (SH-I-1901, SH-S-2665; concerns SH-C-193)
+- Metafield apps (SH-I-1902, SH-S-2666; concerns SH-C-028)
+- Product content apps (SH-I-1903, SH-S-2667; concerns SH-C-020)
+- Design element apps (SH-I-1904, SH-S-2668; concerns SH-C-193)
+- Animation and effect apps (SH-I-1905, SH-S-2669; concerns SH-C-193)
+- Badge and icon apps (SH-I-1906, SH-S-2670; concerns SH-C-193)
+- Design elements - Other (SH-I-1907, SH-S-2671; concerns SH-C-193)
+- Image and media apps (SH-I-1908, SH-S-2672; concerns SH-C-193)
+- 3D/AR/VR apps (SH-I-1909, SH-S-2673; concerns SH-C-193)
+- Image editor apps (SH-I-1910, SH-S-2674; concerns SH-C-193)
+- Image gallery apps (SH-I-1911, SH-S-2675; concerns SH-C-193)
+- Images and media - Other (SH-I-1912, SH-S-2676; concerns SH-C-193)
+- Video and livestream apps (SH-I-1913, SH-S-2677; concerns SH-C-193)
+- Internationalization apps (SH-I-1914, SH-S-2678; concerns SH-C-106)
+- Cookie consent apps (SH-I-1915, SH-S-2679; concerns SH-C-148)
+- Currency and translation apps (SH-I-1916, SH-S-2680; concerns SH-C-032;SH-C-108)
+- Geolocation apps (SH-I-1917, SH-S-2681; concerns SH-C-111)
+- Internationalization - Other (SH-I-1918, SH-S-2682; concerns SH-C-106)
+- Notification apps (SH-I-1919, SH-S-2683; concerns SH-C-193)
+- Banner apps (SH-I-1920, SH-S-2684; concerns SH-C-193)
+- Form apps (SH-I-1921, SH-S-2685; concerns SH-C-193)
+- Notifications - Other (SH-I-1922, SH-S-2686; concerns SH-C-193)
+- Pop-up apps (SH-I-1923, SH-S-2687; concerns SH-C-193)
+- Product display apps (SH-I-1924, SH-S-2688; concerns SH-C-193)
+- Collection apps (SH-I-1925, SH-S-2689; concerns SH-C-193)
+- Product comparison apps (SH-I-1926, SH-S-2690; concerns SH-C-193)
+- Product display - Other (SH-I-1927, SH-S-2691; concerns SH-C-193)
+- Search and navigation apps (SH-I-1928, SH-S-2692; concerns SH-C-035)
+- Navigation and menu apps (SH-I-1929, SH-S-2693; concerns SH-C-031)
+- Search and filter apps (SH-I-1930, SH-S-2694; concerns SH-C-035)
+- Search and navigation - Other (SH-I-1931, SH-S-2695; concerns SH-C-035)
+- Site optimization apps (SH-I-1932, SH-S-2696; concerns SH-C-193)
+- Accessibility apps (SH-I-1933, SH-S-2697; concerns SH-C-193)
+- SEO apps (SH-I-1934, SH-S-2698; concerns SH-C-193)
+- Site optimization - Other (SH-I-1935, SH-S-2699; concerns SH-C-193)
+- Storefront apps (SH-I-1936, SH-S-2700; concerns SH-C-193)
+- Mobile app builder apps (SH-I-1937, SH-S-2701; concerns SH-C-195)
+- Page builder apps (SH-I-1938, SH-S-2702; concerns SH-C-193)
+- Storefronts - Other (SH-I-1939, SH-S-2703; concerns SH-C-193)
+- Store management apps (SH-I-1940, SH-S-2704; concerns SH-C-156)
+- Finance apps (SH-I-1941, SH-S-2705; concerns SH-C-191)
+- Accounting apps (SH-I-1942, SH-S-2706; concerns SH-C-191)
+- Finances - Other (SH-I-1943, SH-S-2707; concerns SH-C-191)
+- Tax apps (SH-I-1944, SH-S-2708; concerns SH-C-103)
+- Operations apps (SH-I-1945, SH-S-2709; concerns SH-C-156)
+- Analytics apps (SH-I-1946, SH-S-2710; concerns SH-C-145)
+- Bulk editor apps (SH-I-1947, SH-S-2711; concerns SH-C-020)
+- Operations - Other (SH-I-1948, SH-S-2712; concerns SH-C-156)
+- Staff notification apps (SH-I-1949, SH-S-2713; concerns SH-C-150)
+- Workflow automation apps (SH-I-1950, SH-S-2714; concerns SH-C-151)
+- Security apps (SH-I-1951, SH-S-2715; concerns SH-C-196)
+- Accounts and login apps (SH-I-1952, SH-S-2716; concerns SH-C-042)
+- Anti theft apps (SH-I-1953, SH-S-2717; concerns SH-C-196)
+- Fraud apps (SH-I-1954, SH-S-2718; concerns SH-C-059)
+- Legal apps (SH-I-1955, SH-S-2719; concerns SH-C-196)
+- Security - Other (SH-I-1956, SH-S-2720; concerns SH-C-196)
+- Support apps (SH-I-1957, SH-S-2721; concerns SH-C-192)
+- Chat apps (SH-I-1958, SH-S-2722; concerns SH-C-192)
+- FAQ apps (SH-I-1959, SH-S-2723; concerns SH-C-192)
+- Helpdesk apps (SH-I-1960, SH-S-2724; concerns SH-C-192)
+- Support - Other (SH-I-1961, SH-S-2725; concerns SH-C-192)
+- Survey apps (SH-I-1962, SH-S-2726; concerns SH-C-192)
+
+### List `legal-agreements` (120 entries, 17 out of the concern map's scope)
+
+- Merchant Terms of Service (SH-I-1359, SH-S-2123; concerns SH-C-001;SH-C-002)
+- View merchant terms (SH-I-1360, SH-S-2124; concerns SH-C-001;SH-C-002)
+- View Shop Pay merchant terms (SH-I-1361, SH-S-2125; concerns SH-C-074)
+- View E.U. based merchants supplementary terms of service (SH-I-1362, SH-S-2126; concerns SH-C-177)
+- View data processing addendum (SH-I-1363, SH-S-2127; concerns SH-C-180)
+- View terms of service frequently asked questions (SH-I-1364, SH-S-2128; concerns SH-C-147)
+- Shopify Payments Terms of Service (SH-I-1365, SH-S-2129; concerns SH-C-063)
+- View Shopify Payments terms (SH-I-1366, SH-S-2130; concerns SH-C-063)
+- View Shopify Protect terms (SH-I-1367, SH-S-2131; concerns SH-C-073)
+- View Cryptocurrency Credit Reward Program terms (SH-I-1368, SH-S-2132; concerns SH-C-081)
+- Shopify API License and Terms of Use (SH-I-1369, SH-S-2133; concerns SH-C-156;SH-C-168)
+- View Shopify API license terms (SH-I-1370, SH-S-2134; concerns SH-C-156;SH-C-168)
+- View App Events API terms (SH-I-1371, SH-S-2135; concerns SH-C-168)
+- Acceptable Use Policy (SH-I-1372, SH-S-2136; concerns SH-C-172)
+- View Acceptable Use Policy (SH-I-1373, SH-S-2137; concerns SH-C-172)
+- Report an issue with a merchant (SH-I-1374, SH-S-2138; concerns SH-C-172)
+- Privacy & Data Protection (SH-I-1375, SH-S-2139; concerns SH-C-180;SH-C-181)
+- View privacy policy (SH-I-1376, SH-S-2140; concerns SH-C-180;SH-C-181)
+- View cookie policy (SH-I-1377, SH-S-2141; concerns SH-C-148)
+- View guidelines for legal requests for information (SH-I-1378, SH-S-2142; concerns SH-C-179)
+- Shopify's Binding Corporate Rules (SH-I-1379, SH-S-2143; concerns SH-C-181)
+- Intellectual Property (SH-I-1380, SH-S-2144; concerns SH-C-176)
+- View copyright policy and report copyright infringement (SH-I-1381, SH-S-2145; concerns SH-C-176)
+- View trademark policy and report trademark infringement (SH-I-1382, SH-S-2146; concerns SH-C-176)
+- Partner Terms of Service (SH-I-1385, SH-S-2149; concerns SH-C-168)
+- View partner terms (SH-I-1386, SH-S-2150; concerns SH-C-168)
+- Report a partner violation (SH-I-1387, SH-S-2151; concerns SH-C-168)
+- Financial Products (SH-I-1388, SH-S-2152; concerns SH-C-178)
+- Submit a financial complaint (SH-I-1389, SH-S-2153; concerns SH-C-178)
+- Shopify Fulfillment Network Terms of Service (SH-I-1390, SH-S-2154; concerns SH-C-120)
+- View fulfillment network terms (SH-I-1391, SH-S-2155; concerns SH-C-120)
+- Shopify Gift Card and Store Credit Terms (SH-I-1392, SH-S-2156; concerns SH-C-025;SH-C-026)
+- View terms (SH-I-1393, SH-S-2157; concerns SH-C-025;SH-C-026)
+- Legal Notices (SH-I-1394, SH-S-2158; concerns SH-C-177)
+- Digital Service Act (SH-I-1395, SH-S-2159; concerns SH-C-177)
+- Legal notices (SH-I-1396, SH-S-2160; concerns SH-C-177)
+- Submit a P2B complaint (SH-I-1397, SH-S-2161; concerns SH-C-177)
+- POS Equipment Agreement and Return Policies (SH-I-1398, SH-S-2162; concerns SH-C-143)
+- Canada (EN) (SH-I-1399, SH-S-2163; concerns SH-C-143)
+- Canada (FR) (SH-I-1400, SH-S-2164; concerns SH-C-143)
+- US (SH-I-1401, SH-S-2165; concerns SH-C-143)
+- UK (SH-I-1402, SH-S-2166; concerns SH-C-143)
+- Ireland (SH-I-1403, SH-S-2167; concerns SH-C-143)
+- Australia (SH-I-1404, SH-S-2168; concerns SH-C-143)
+- Singapore (SH-I-1405, SH-S-2169; concerns SH-C-143)
+- New Zealand (SH-I-1406, SH-S-2170; concerns SH-C-143)
+- Balance (SH-I-1407, SH-S-2171; concerns SH-C-088;SH-C-178)
+- Credit (SH-I-1408, SH-S-2172; concerns SH-C-090;SH-C-178)
+- Shop Pay Installments (SH-I-1409, SH-S-2173; concerns SH-C-075;SH-C-178)
+- Capital - US loan (SH-I-1410, SH-S-2174; concerns SH-C-091;SH-C-178)
+- Capital - US Merchant Cash Advance (MCA) (SH-I-1411, SH-S-2175; concerns SH-C-091;SH-C-178)
+- Capital - UK Merchant Cash Advance (MCA) (SH-I-1412, SH-S-2176; concerns SH-C-092;SH-C-178)
+- Capital - Canada Merchant Cash Advance (MCA) (SH-I-1413, SH-S-2177; concerns SH-C-093;SH-C-178)
+- Capital - Australia (SH-I-1414, SH-S-2178; concerns SH-C-094;SH-C-178)
+- 1. Account Terms (SH-I-2359, SH-S-3123; concerns SH-C-001)
+- 2. Account Activation (SH-I-2360, SH-S-3124; concerns SH-C-001;SH-C-062)
+- 3. Shopify Rights (SH-I-2361, SH-S-3125; concerns SH-C-172)
+- 4. Your Responsibilities (SH-I-2362, SH-S-3126; concerns SH-C-001)
+- 5. Payment of Fees and Taxes (SH-I-2363, SH-S-3127; concerns SH-C-016;SH-C-017)
+- 8. Intellectual Property and Your Materials (SH-I-2366, SH-S-3130; concerns SH-C-176)
+- 11. Intellectual Property Infringement (SH-I-2369, SH-S-3133; concerns SH-C-176)
+- 12. Privacy and Data Protection (SH-I-2370, SH-S-3134; concerns SH-C-180;SH-C-184)
+- 13. Shopify Contracting Party and Forum (SH-I-2371, SH-S-3135; concerns SH-C-002)
+- 14. Term and Termination (SH-I-2372, SH-S-3136; concerns SH-C-014)
+- A. The Shopify Payments Service (SH-I-2376, SH-S-3140; concerns SH-C-063)
+- B. Getting a Payments Services Account (SH-I-2377, SH-S-3141; concerns SH-C-068)
+- C. Processing Transactions and Receiving Your Funds (SH-I-2378, SH-S-3142; concerns SH-C-064;SH-C-065;SH-C-070)
+- D. Termination and Other General Legal Terms (SH-I-2379, SH-S-3143; concerns SH-C-063)
+- A. Australia (SH-I-2381, SH-S-3145; concerns SH-C-063;SH-C-075)
+- B. Canada (SH-I-2382, SH-S-3146; concerns SH-C-067;SH-C-075;SH-C-110)
+- C. United Kingdom (SH-I-2383, SH-S-3147; concerns SH-C-075;SH-C-110)
+- D. United States (SH-I-2384, SH-S-3148; concerns SH-C-075;SH-C-110)
+- Account Terms (SH-I-2385, SH-S-3149; concerns SH-C-066)
+- Part I — Global Terms (Payment Facilitator) (SH-I-2386, SH-S-3150; concerns SH-C-066)
+- Part II — Regional Terms (SH-I-2387, SH-S-3151; concerns SH-C-066)
+- A. Global (SH-I-2388, SH-S-3152; concerns SH-C-064)
+- B. North America (SH-I-2389, SH-S-3153; concerns SH-C-064)
+- C. EMEA (SH-I-2390, SH-S-3154; concerns SH-C-064)
+- D. Asia-Pacific (SH-I-2391, SH-S-3155; concerns SH-C-064)
+- I. PURPOSE (SH-I-2392, SH-S-3156; concerns SH-C-180)
+- III. NATURE OF THE PROCESSING AND ROLES OF THE PARTIES (SH-I-2394, SH-S-3158; concerns SH-C-180)
+- IV. OBLIGATIONS OF PARTIES (SH-I-2395, SH-S-3159; concerns SH-C-180;SH-C-181;SH-C-182)
+- VI APPENDICES (SH-I-2397, SH-S-3161; concerns SH-C-180;SH-C-181)
+- Why we process your information (SH-I-2400, SH-S-3164; concerns SH-C-180)
+- Your rights over your information (SH-I-2401, SH-S-3165; concerns SH-C-149)
+- Where we send your information (SH-I-2402, SH-S-3166; concerns SH-C-181)
+- How long do we retain your information (SH-I-2403, SH-S-3167; concerns SH-C-183)
+- Our use of Machine Learning (SH-I-2404, SH-S-3168; concerns SH-C-180)
+- How we protect your information (SH-I-2405, SH-S-3169; concerns SH-C-180)
+- How we use "cookies" and other tracking technologies (SH-I-2406, SH-S-3170; concerns SH-C-148)
+- United States Regional Privacy Notice (SH-I-2408, SH-S-3172; concerns SH-C-149;SH-C-180)
+- 9.2 Enhanced Services (SH-I-2410, SH-S-3174; concerns SH-C-147)
+- 9.3 POS Services (SH-I-2411, SH-S-3175; concerns SH-C-142;SH-C-143)
+- 9.4 Shopify Shipping (SH-I-2412, SH-S-3176; concerns SH-C-116)
+- 9.5 SMS Messaging (SH-I-2413, SH-S-3177; concerns SH-C-130)
+- 9.6 Theme Store (SH-I-2414, SH-S-3178; concerns SH-C-029)
+- 9.7 Shopify Email (SH-I-2415, SH-S-3179; concerns SH-C-130)
+- 9.8 Shop (SH-I-2416, SH-S-3180; concerns SH-C-136)
+- 9.9 Third Party Services and Third Party Partners (SH-I-2417, SH-S-3181; concerns SH-C-156)
+- 9.11 Shopify Pixel Manager (SH-I-2419, SH-S-3183; concerns SH-C-146)
+- 9.12 Audiences (SH-I-2420, SH-S-3184; concerns SH-C-132)
+- 9.13 Shopify Checkout Extensibility (SH-I-2421, SH-S-3185; concerns SH-C-049)
+- 9.14 Agentic Storefronts (SH-I-2422, SH-S-3186; concerns SH-C-140)
+
+Out of the concern map's scope: Information about Shopify's Patents (notice about Shopify's own patents; not a concern of the commerce platform's operation); Information about Shopify's Trademarks (notice about Shopify's own trademarks; not a concern of the commerce platform's operation); 6. Confidentiality (confidentiality clause between the contracting parties; not a concern with a commerce placement); 7. Limitation of Liability and Indemnification (allocation of liability in general; recorded under the 'legal' placement of each concern instead); 9. Additional Services (group heading in the list; the items under it are placed individually); 10. Feedback and Reviews (rules for feedback given to Shopify; not a commerce concern); 15. Modifications (rules for changing the agreement; not a commerce concern); 16. General Conditions (boilerplate clauses of the agreement; not a commerce concern); Part I (Global Terms) (group heading in the list; the items under it are placed individually); Part II (Regional Terms) (group heading in the list; the items under it are placed individually); II. DEFINITIONS (definitions section of the addendum; not a concern); V. MISCELLANEOUS (boilerplate section of the addendum; not a concern); Introduction (introduction of the policy; not a concern); Our values (statement of values; not a concern); How you can reach us (contact addresses; recorded as evidence for data.location, not a concern of its own); 9.1 Scope (defines the term Additional Services; the services are listed and placed separately); 9.10 Beta Services (pre-release features offered by invitation; no concern of its own is named)
+
+
+### List `admin-navigation` (104 entries, 12 out of the concern map's scope)
+
+- Orders (SH-I-0743, SH-S-1507; concerns SH-C-054)
+- Drafts (SH-I-0744, SH-S-1508; concerns SH-C-055)
+- Products (SH-I-0745, SH-S-1509; concerns SH-C-020)
+- Collections (SH-I-0746, SH-S-1510; concerns SH-C-021)
+- Inventory (SH-I-0747, SH-S-1511; concerns SH-C-022)
+- Purchase orders (SH-I-0748, SH-S-1512; concerns SH-C-023)
+- Transfers (SH-I-0749, SH-S-1513; concerns SH-C-023)
+- Gift cards (SH-I-0750, SH-S-1514; concerns SH-C-025)
+- Customers (SH-I-0751, SH-S-1515; concerns SH-C-039)
+- Segments (SH-I-0752, SH-S-1516; concerns SH-C-040)
+- Companies (SH-I-0753, SH-S-1517; concerns SH-C-044)
+- Growth (SH-I-0754, SH-S-1518; concerns SH-C-129)
+- Attribution (SH-I-0755, SH-S-1519; concerns SH-C-131)
+- Autopilot (SH-I-0756, SH-S-1520; concerns SH-C-129)
+- Campaigns (SH-I-0757, SH-S-1521; concerns SH-C-129)
+- Discounts (SH-I-0758, SH-S-1522; concerns SH-C-127)
+- Content (SH-I-0759, SH-S-1523; concerns SH-C-027;SH-C-028;SH-C-030;SH-C-031)
+- Metaobjects (SH-I-0760, SH-S-1524; concerns SH-C-028)
+- Files (SH-I-0761, SH-S-1525; concerns SH-C-027)
+- Menus (SH-I-0762, SH-S-1526; concerns SH-C-031)
+- Blog posts (SH-I-0763, SH-S-1527; concerns SH-C-030)
+- Markets (SH-I-0764, SH-S-1528; concerns SH-C-106)
+- Catalogs (SH-I-0765, SH-S-1529; concerns SH-C-037)
+- Rollouts (SH-I-0766, SH-S-1530; concerns SH-C-112)
+- Analytics (SH-I-0767, SH-S-1531; concerns SH-C-145)
+- Reports (SH-I-0768, SH-S-1532; concerns SH-C-145)
+- Live View (SH-I-0769, SH-S-1533; concerns SH-C-145)
+- Sales channels (SH-I-0770, SH-S-1534; concerns SH-C-135)
+- Apps (SH-I-0771, SH-S-1535; concerns SH-C-156)
+- Shipping labels (SH-I-0773, SH-S-1537; concerns SH-C-116)
+- Abandoned checkouts (SH-I-0774, SH-S-1538; concerns SH-C-050)
+- AbandonedCheckouts (SH-I-0775, SH-S-1539; concerns SH-C-050)
+- Account (SH-I-0776, SH-S-1540; concerns SH-C-009)
+- AdminDev (SH-I-0777, SH-S-1541; concerns SH-C-167)
+- AdminScan (SH-I-0778, SH-S-1542; concerns SH-C-020)
+- Agentic (SH-I-0779, SH-S-1543; concerns SH-C-140)
+- Analytics (SH-I-0781, SH-S-1545; concerns SH-C-145)
+- Apps (SH-I-0782, SH-S-1546; concerns SH-C-156)
+- Banking (SH-I-0783, SH-S-1547; concerns SH-C-088)
+- Billing (SH-I-0785, SH-S-1549; concerns SH-C-015;SH-C-016)
+- Blockchain (SH-I-0786, SH-S-1550; concerns SH-C-190)
+- Capital (SH-I-0787, SH-S-1551; concerns SH-C-091;SH-C-092;SH-C-093;SH-C-094;SH-C-095;SH-C-096;SH-C-097)
+- Cards (SH-I-0788, SH-S-1552; concerns SH-C-089)
+- Catalogs (SH-I-0789, SH-S-1553; concerns SH-C-037)
+- Checkout (SH-I-0790, SH-S-1554; concerns SH-C-047)
+- Collections (SH-I-0791, SH-S-1555; concerns SH-C-021)
+- CommerceProtection (SH-I-0792, SH-S-1556; concerns SH-C-051)
+- Companies (SH-I-0793, SH-S-1557; concerns SH-C-044)
+- Content (SH-I-0794, SH-S-1558; concerns SH-C-027;SH-C-028;SH-C-030;SH-C-031)
+- Credit (SH-I-0795, SH-S-1559; concerns SH-C-090)
+- CustomStorefronts (SH-I-0796, SH-S-1560; concerns SH-C-139)
+- CustomerAccounts (SH-I-0797, SH-S-1561; concerns SH-C-041)
+- CustomerEvents (SH-I-0798, SH-S-1562; concerns SH-C-146)
+- Customers (SH-I-0799, SH-S-1563; concerns SH-C-039)
+- Discounts (SH-I-0800, SH-S-1564; concerns SH-C-127)
+- Domains (SH-I-0801, SH-S-1565; concerns SH-C-033)
+- Email (SH-I-0802, SH-S-1566; concerns SH-C-130)
+- Finances (SH-I-0805, SH-S-1569; concerns SH-C-059;SH-C-069;SH-C-098)
+- Flow (SH-I-0806, SH-S-1570; concerns SH-C-151)
+- Foundation (SH-I-0807, SH-S-1571; concerns SH-C-014)
+- GiftCards (SH-I-0808, SH-S-1572; concerns SH-C-025)
+- Growth (SH-I-0809, SH-S-1573; concerns SH-C-129)
+- Intents (SH-I-0811, SH-S-1575; concerns SH-C-164)
+- Inventory (SH-I-0812, SH-S-1576; concerns SH-C-022)
+- Listings (SH-I-0813, SH-S-1577; concerns SH-C-138)
+- Location (SH-I-0814, SH-S-1578; concerns SH-C-024)
+- Marketing (SH-I-0815, SH-S-1579; concerns SH-C-129)
+- Markets (SH-I-0816, SH-S-1580; concerns SH-C-106)
+- MerchantAuditLog (SH-I-0817, SH-S-1581; concerns SH-C-012)
+- MerchantCheckout (SH-I-0818, SH-S-1582; concerns SH-C-047)
+- MetafieldDefinitions (SH-I-0819, SH-S-1583; concerns SH-C-028)
+- MobileChat (SH-I-0821, SH-S-1585; concerns SH-C-153)
+- Notifications (SH-I-0822, SH-S-1586; concerns SH-C-150)
+- OnlineStore (SH-I-0823, SH-S-1587; concerns SH-C-029)
+- Orders (SH-I-0824, SH-S-1588; concerns SH-C-054)
+- OrganizationSettings (SH-I-0825, SH-S-1589; concerns SH-C-003)
+- Payments (SH-I-0826, SH-S-1590; concerns SH-C-062;SH-C-063)
+- Plus (SH-I-0827, SH-S-1591; concerns SH-C-015)
+- Privacy (SH-I-0828, SH-S-1592; concerns SH-C-148)
+- Products (SH-I-0829, SH-S-1593; concerns SH-C-020)
+- ProfileAssessment (SH-I-0830, SH-S-1594; concerns SH-C-008;SH-C-068)
+- QuickSale (SH-I-0831, SH-S-1595; concerns SH-C-142)
+- Reviews (SH-I-0832, SH-S-1596; concerns SH-C-154)
+- Rollouts (SH-I-0834, SH-S-1598; concerns SH-C-112)
+- SalesChannels (SH-I-0835, SH-S-1599; concerns SH-C-135)
+- Shipping (SH-I-0837, SH-S-1601; concerns SH-C-114)
+- ShippingLabels (SH-I-0838, SH-S-1602; concerns SH-C-116)
+- ShopifyFulfillmentNetwork (SH-I-0839, SH-S-1603; concerns SH-C-120)
+- Sidekick (SH-I-0840, SH-S-1604; concerns SH-C-152)
+- StoreLanguages (SH-I-0841, SH-S-1605; concerns SH-C-032)
+- Taxes (SH-I-0842, SH-S-1606; concerns SH-C-100;SH-C-101;SH-C-103;SH-C-104)
+- Trust (SH-I-0844, SH-S-1608; concerns SH-C-008)
+
+Out of the concern map's scope: Home (the admin's landing page; it gathers other concerns rather than holding one); Settings (container for the settings pages, each listed and placed separately); AiValue (admin route section whose function the captured route data does not state; no placement can be shown); Batches (admin route section whose function the captured route data does not state; no placement can be shown); EmptyTest (test scaffolding in the admin bundle, not a merchant concern); Extensibility (admin route section whose function the captured route data does not state; no placement can be shown); Home (the admin's landing page; it gathers other concerns rather than holding one); MilestoneAwards (recognition of merchant sales milestones; no commerce placement shown in the lists read); RichTextEditor (shared editor component of the admin, not a concern); Settings (container for the settings pages, each listed and placed separately); TestIntent (test scaffolding in the admin bundle, not a merchant concern); WatchApp (companion watch app page; no commerce placement shown in the lists read)
+
+
+### List `other:notification-templates` (68 entries, 0 out of the concern map's scope)
+
+Entries: Customer notification settings; Order processing; Order confirmation; Draft order invoice; Shipping confirmation; Local pick up; Ready for local pickup; Picked up by customer; Local delivery; Order out for local delivery; Order locally delivered; Order missed local delivery; Gift cards; New gift card; Gift card receipt; Store credit; Store credit issued; Order exceptions; Order invoice; Order edited; Order canceled; Order payment receipt; Order refund; Abandoned checkout; Order link; Payments; Payment error; Pending payment error; Pending payment success; Payment reminder; Point of Sale; POS abandoned checkout; POS email to customer; POS and mobile receipt; POS exchange receipt; Return receipt; Shipping updated; Shipping update; Out for delivery; Delivered; Returns and cancellations; Return created; Order-level return label created; Return request approved; Return request declined; Request received; Cancellation request declined; Accounts and outreach; Customer account invite; Customer account welcome; Customer account password reset; Customer payment method add request; B2B access email; B2B location update payment method; Contact customer; Customer email address change confirmation; Marketing double opt-in; Customer marketing confirmation; View details for Shopify Messaging app; Shopify Messaging; Remarketing with Shop; Staff notifications; Staff order notifications; New order; New change request; Sales attribution edited; New draft order; Recipients
+
+
+### List `other:store-features` (55 entries, 37 out of the concern map's scope)
+
+- hasInitiatedOnboardingToBanking (SH-I-2556, SH-S-7398; concerns SH-C-088;SH-C-099)
+- hasEverOnboardedToBanking (SH-I-2557, SH-S-7399; concerns SH-C-088)
+- rbacEnabled (SH-I-2558, SH-S-7400; concerns SH-C-009;SH-C-010;SH-C-012)
+- balanceCheckDepositEnabled (SH-I-2561, SH-S-7403; concerns SH-C-088)
+- balanceUsCashVoucherEnabled (SH-I-2562, SH-S-7404; concerns SH-C-088)
+- b2bEnabled (SH-I-2564, SH-S-7406; concerns SH-C-044)
+- canAccessBillPay (SH-I-2566, SH-S-7408; concerns SH-C-098)
+- centralLegalEntitiesEnabled (SH-I-2567, SH-S-7409; concerns SH-C-004)
+- existingMerchantEligibleForBanking (SH-I-2574, SH-S-7416; concerns SH-C-088)
+- financesOverview (SH-I-2576, SH-S-7418; concerns SH-C-059;SH-C-072)
+- hasInitiatedOnboardingToCredit (SH-I-2580, SH-S-7422; concerns SH-C-090)
+- hasOrgSettings (SH-I-2581, SH-S-7423; concerns SH-C-003;SH-C-004;SH-C-009;SH-C-010;SH-C-016)
+- netNewMerchantEligibleForBanking (SH-I-2584, SH-S-7426; concerns SH-C-088)
+- onboardedToBanking (SH-I-2585, SH-S-7427; concerns SH-C-088)
+- productProtection (SH-I-2589, SH-S-7431; concerns SH-C-051)
+- fulfillmentBatchingEligible (SH-I-2591, SH-S-7433; concerns SH-C-061;SH-C-118)
+- taxFilingEnabled (SH-I-2606, SH-S-7448; concerns SH-C-104)
+- marketDrivenShipping (SH-I-2608, SH-S-7450; concerns SH-C-106;SH-C-114)
+
+Out of the concern map's scope: argusConnect (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); avalaraAvatax (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); b2bDiscountsEligibilityEnabled (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); bankAccountChangesLocked (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); customerAccountsMultipass (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); customerAuthenticationThirdParty (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); eligibleForAlertsFeedRollout (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); eligibleForEditionsLaunch (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); eligibleForMultiproviderPayoutUxUplift (Unplaced: no Shopify source held ties this key to a concern (routes naming it: payouts-next, payouts:details, payouts:list, which no concern's statements cover); values per store in notes.md, Unplaced keys); eligibleForShopifyTax (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); preShopifyPaymentsEligibleForBalance (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); growthAgentEnabled (Unplaced: no Shopify source held ties this key to a concern (routes naming it: growth-configuration, growth:autopilot, which no concern's statements cover); values per store in notes.md, Unplaced keys); landedCostIncoterms (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); perMarketIncoterms (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); multiCurrencyGatewayEnabled (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); multipass (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); posEnabled (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); catalogRolloutsEnabled (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); catalogStatusOverrideChangesetsEnabled (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); shopPayProcessedByPartners (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); reports (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); reportsEditing (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); sellsSubscriptions (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); sidekickEnabled (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); shopifyPaymentsEnabled (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); storefront (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); tagsPerProductLimitEnabled (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); threeDSecureEligibilityForCountry (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); usingMarketsPro (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); managedMarkets (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); appliedSpellcastingEnabled (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); volumePricingEnabled (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); marketsHome (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); newMarketsPermissions (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); sandbox (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); subCountryMarketsEnabled (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); marketDeliveryProfiles (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys)
+
+
+### List `other:billing-charge-categories` (37 entries, 1 out of the concern map's scope)
+
+- Add-on fees (SH-I-1322, SH-S-2086; concerns SH-C-016)
+- App fees (SH-I-1323, SH-S-2087; concerns SH-C-016;SH-C-019)
+- Automated filing (SH-I-1324, SH-S-2088; concerns SH-C-016;SH-C-104)
+- Avalara add-on fees (SH-I-1325, SH-S-2089; concerns SH-C-016;SH-C-103)
+- Domain fees (SH-I-1326, SH-S-2090; concerns SH-C-016;SH-C-033)
+- Duties and import tax transaction fees (SH-I-1327, SH-S-2091; concerns SH-C-016;SH-C-105)
+- Expert services fees (SH-I-1328, SH-S-2092; concerns SH-C-016;SH-C-170)
+- External 3PL transaction fees (SH-I-1329, SH-S-2093; concerns SH-C-016;SH-C-119)
+- IC++ fees (SH-I-1330, SH-S-2094; concerns SH-C-016;SH-C-071)
+- Insurance premiums (SH-I-1331, SH-S-2095; concerns SH-C-016;SH-C-117)
+- Managed Markets shipping fees (SH-I-1332, SH-S-2096; concerns SH-C-016;SH-C-110)
+- Messaging (SH-I-1333, SH-S-2097; concerns SH-C-016;SH-C-130)
+- Other fees (SH-I-1334, SH-S-2098; concerns SH-C-016)
+- Partner ads (SH-I-1335, SH-S-2099; concerns SH-C-016)
+- Partner application commission (SH-I-1336, SH-S-2100; concerns SH-C-016)
+- Platform fees (SH-I-1337, SH-S-2101; concerns SH-C-016)
+- POS fees (SH-I-1338, SH-S-2102; concerns SH-C-016;SH-C-142)
+- POS pro (SH-I-1339, SH-S-2103; concerns SH-C-016;SH-C-142)
+- Professional services fees (SH-I-1340, SH-S-2104; concerns SH-C-016;SH-C-170)
+- Shipping duties and import taxes (SH-I-1341, SH-S-2105; concerns SH-C-016;SH-C-105;SH-C-116)
+- Shipping fees (SH-I-1342, SH-S-2106; concerns SH-C-016;SH-C-116)
+- Shop Campaigns (SH-I-1343, SH-S-2107; concerns SH-C-016;SH-C-133)
+- Shopify Buyers fees (SH-I-1344, SH-S-2108; concerns SH-C-016)
+- Shopify collabs commission (SH-I-1345, SH-S-2109; concerns SH-C-016;SH-C-134)
+- Shopify collabs processing fee (SH-I-1346, SH-S-2110; concerns SH-C-016;SH-C-134)
+- Shopify Fulfillment Network charges (SH-I-1347, SH-S-2111; concerns SH-C-016;SH-C-120)
+- Shopify Fulfillment Network transportation charges (SH-I-1348, SH-S-2112; concerns SH-C-016;SH-C-120)
+- Shopify Logistics (SH-I-1349, SH-S-2113; concerns SH-C-016;SH-C-120)
+- Subscription charges (SH-I-1350, SH-S-2114; concerns SH-C-015;SH-C-016)
+- Subscription discount (SH-I-1351, SH-S-2115; concerns SH-C-015;SH-C-016)
+- Tap to Pay transaction fees (SH-I-1352, SH-S-2116; concerns SH-C-016;SH-C-086)
+- Tax transaction fees (SH-I-1353, SH-S-2117; concerns SH-C-016;SH-C-100)
+- Theme fees (SH-I-1354, SH-S-2118; concerns SH-C-016;SH-C-029)
+- Transaction fees (SH-I-1355, SH-S-2119; concerns SH-C-016;SH-C-018)
+- Transaction fees discount (SH-I-1356, SH-S-2120; concerns SH-C-016;SH-C-018)
+- Taxes Taxes (SH-I-1358, SH-S-2122; concerns SH-C-016;SH-C-017)
+
+Out of the concern map's scope: All All (the picker's 'All' option, not a charge category)
+
+
+### List `other:ucp` (37 entries, 0 out of the concern map's scope)
+
+- dev.ucp.shopping (SH-I-1765, SH-S-2529; concerns SH-C-140)
+- dev.ucp.shopping.checkout (SH-I-1766, SH-S-2530; concerns SH-C-047;SH-C-140)
+- dev.ucp.shopping.fulfillment (SH-I-1767, SH-S-2531; concerns SH-C-114;SH-C-140)
+- dev.ucp.shopping.discount (SH-I-1768, SH-S-2532; concerns SH-C-127;SH-C-140)
+- dev.ucp.shopping.cart (SH-I-1769, SH-S-2533; concerns SH-C-046;SH-C-140)
+- dev.ucp.shopping.order (SH-I-1770, SH-S-2534; concerns SH-C-054;SH-C-140)
+- dev.ucp.shopping.catalog.search (SH-I-1771, SH-S-2535; concerns SH-C-020;SH-C-140)
+- dev.ucp.shopping.catalog.lookup (SH-I-1772, SH-S-2536; concerns SH-C-020;SH-C-140)
+- dev.shopify.catalog (SH-I-1773, SH-S-2537; concerns SH-C-020;SH-C-140)
+- dev.ucp.common.identity_linking (SH-I-1774, SH-S-2538; concerns SH-C-041;SH-C-140)
+- dev.ucp.shopping.permalink (SH-I-1775, SH-S-2539; concerns SH-C-140)
+- com.google.pay (SH-I-1776, SH-S-2540; concerns SH-C-078;SH-C-140)
+- dev.shopify.card (SH-I-1777, SH-S-2541; concerns SH-C-062;SH-C-140)
+- dev.shopify.shop_pay (SH-I-1778, SH-S-2542; concerns SH-C-074;SH-C-140)
+- dev.ucp.shopping.checkout (SH-I-1779, SH-S-2543; concerns SH-C-047;SH-C-140)
+- dev.ucp.shopping.fulfillment (SH-I-1780, SH-S-2544; concerns SH-C-114;SH-C-140)
+- dev.ucp.shopping.buyer_consent (SH-I-1781, SH-S-2545; concerns SH-C-041;SH-C-140)
+- dev.ucp.shopping.discount (SH-I-1782, SH-S-2546; concerns SH-C-127;SH-C-140)
+- dev.ucp.shopping.cart (SH-I-1783, SH-S-2547; concerns SH-C-046;SH-C-140)
+- dev.ucp.shopping.order (SH-I-1784, SH-S-2548; concerns SH-C-054;SH-C-140)
+- dev.ucp.shopping.catalog.search (SH-I-1785, SH-S-2549; concerns SH-C-020;SH-C-140)
+- dev.ucp.shopping.catalog.lookup (SH-I-1786, SH-S-2550; concerns SH-C-020;SH-C-140)
+- dev.shopify.catalog (SH-I-1787, SH-S-2551; concerns SH-C-020;SH-C-140)
+- dev.shopify.catalog.global (SH-I-1788, SH-S-2552; concerns SH-C-020;SH-C-140)
+- get_checkout (SH-I-1789, SH-S-2553; concerns SH-C-047;SH-C-140)
+- create_checkout (SH-I-1790, SH-S-2554; concerns SH-C-047;SH-C-140)
+- update_checkout (SH-I-1791, SH-S-2555; concerns SH-C-047;SH-C-140)
+- complete_checkout (SH-I-1792, SH-S-2556; concerns SH-C-047;SH-C-140)
+- cancel_checkout (SH-I-1793, SH-S-2557; concerns SH-C-047;SH-C-140)
+- get_cart (SH-I-1794, SH-S-2558; concerns SH-C-046;SH-C-140)
+- create_cart (SH-I-1795, SH-S-2559; concerns SH-C-046;SH-C-140)
+- update_cart (SH-I-1796, SH-S-2560; concerns SH-C-046;SH-C-140)
+- cancel_cart (SH-I-1797, SH-S-2561; concerns SH-C-046;SH-C-140)
+- get_order (SH-I-1798, SH-S-2562; concerns SH-C-054;SH-C-140)
+- search_catalog (SH-I-1799, SH-S-2563; concerns SH-C-020;SH-C-140)
+- lookup_catalog (SH-I-1800, SH-S-2564; concerns SH-C-020;SH-C-140)
+- get_product (SH-I-1801, SH-S-2565; concerns SH-C-020;SH-C-140)
+
+### List `other:store-entitlements` (35 entries, 13 out of the concern map's scope)
+
+- accountManagement (SH-I-2522, SH-S-7364; concerns SH-C-032)
+- b2b (SH-I-2523, SH-S-7365; concerns SH-C-037;SH-C-044)
+- sellsOnShopifyPlatforms (SH-I-2524, SH-S-7366; concerns SH-C-033;SH-C-037)
+- abandonedCartRecovery (SH-I-2526, SH-S-7368; concerns SH-C-050)
+- productsCollections (SH-I-2527, SH-S-7369; concerns SH-C-021)
+- discountCodes (SH-I-2528, SH-S-7370; concerns SH-C-127)
+- products (SH-I-2529, SH-S-7371; concerns SH-C-020;SH-C-021;SH-C-022;SH-C-023;SH-C-025)
+- inventory (SH-I-2530, SH-S-7372; concerns SH-C-022;SH-C-023)
+- webCheckout (SH-I-2533, SH-S-7375; concerns SH-C-047;SH-C-048)
+- customerSegmentation (SH-I-2534, SH-S-7376; concerns SH-C-040)
+- giftCards (SH-I-2535, SH-S-7377; concerns SH-C-025)
+- customers (SH-I-2536, SH-S-7378; concerns SH-C-041)
+- policies (SH-I-2538, SH-S-7380; concerns SH-C-034)
+- markets (SH-I-2539, SH-S-7381; concerns SH-C-037;SH-C-044)
+- maximumLocations (SH-I-2540, SH-S-7382; concerns SH-C-024)
+- metaobjects (SH-I-2541, SH-S-7383; concerns SH-C-027;SH-C-028;SH-C-030;SH-C-031)
+- storefront (SH-I-2542, SH-S-7384; concerns SH-C-029;SH-C-030;SH-C-031;SH-C-055;SH-C-129;SH-C-145;SH-C-146;SH-C-148)
+- customDomains (SH-I-2543, SH-S-7385; concerns SH-C-033)
+- shipping (SH-I-2546, SH-S-7388; concerns SH-C-114;SH-C-116;SH-C-121)
+- shopifyTax (SH-I-2550, SH-S-7392; concerns SH-C-100;SH-C-101;SH-C-103)
+- rollouts (SH-I-2553, SH-S-7395; concerns SH-C-112)
+- shopifyFinance (SH-I-2554, SH-S-7396; concerns SH-C-088;SH-C-091;SH-C-092;SH-C-093;SH-C-094;SH-C-095;SH-C-096;SH-C-097;SH-C-098)
+
+Out of the concern map's scope: ignoreReviewModalCooldown (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); shopPayExternalApi (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); support (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); checkoutExtensibility (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); partialOrderPayments (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); selfHostedDomain (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); persistedSelfHostedDomain (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); draftOrders (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); dutiesAndImportTaxes (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); taxPlatform (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); appDevelopment (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); retail (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); upsell (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys)
+
+
+### List `other:app-store-built-in-features` (29 entries, 0 out of the concern map's scope)
+
+- Abandoned checkout recovery (SH-I-2486, SH-S-7328; concerns SH-C-050)
+- Automated privacy settings (SH-I-2487, SH-S-7329; concerns SH-C-148)
+- B2B (SH-I-2488, SH-S-7330; concerns SH-C-044)
+- Customer accounts (SH-I-2489, SH-S-7331; concerns SH-C-041)
+- Customer segmentation (SH-I-2490, SH-S-7332; concerns SH-C-040)
+- Domains (SH-I-2491, SH-S-7333; concerns SH-C-033)
+- Draft orders (SH-I-2492, SH-S-7334; concerns SH-C-055)
+- Gift cards (SH-I-2493, SH-S-7335; concerns SH-C-025)
+- Inventory management (SH-I-2494, SH-S-7336; concerns SH-C-022)
+- Shopify Magic for blog posts (SH-I-2495, SH-S-7337; concerns SH-C-202)
+- Shopify Magic for product descriptions (SH-I-2496, SH-S-7338; concerns SH-C-202)
+- Managed Markets (SH-I-2497, SH-S-7339; concerns SH-C-110)
+- Shopify Markets (SH-I-2498, SH-S-7340; concerns SH-C-106)
+- Metafields and metaobjects (SH-I-2499, SH-S-7341; concerns SH-C-028)
+- Order tracking (SH-I-2500, SH-S-7342; concerns SH-C-126)
+- Payments (SH-I-2501, SH-S-7343; concerns SH-C-062)
+- Product variants (SH-I-2502, SH-S-7344; concerns SH-C-020)
+- Shop Pay (SH-I-2503, SH-S-7345; concerns SH-C-074)
+- Shop Pay Installments (SH-I-2504, SH-S-7346; concerns SH-C-075)
+- Shopify Balance (SH-I-2505, SH-S-7347; concerns SH-C-088)
+- Shopify Capital (SH-I-2506, SH-S-7348; concerns SH-C-091)
+- Shopify Payments (SH-I-2507, SH-S-7349; concerns SH-C-063)
+- Shipping (SH-I-2508, SH-S-7350; concerns SH-C-116)
+- Shopify Tax (SH-I-2509, SH-S-7351; concerns SH-C-100)
+- Shopify Tax (SH-I-2510, SH-S-7352; concerns SH-C-100)
+- Shopify Tax (SH-I-2511, SH-S-7353; concerns SH-C-100)
+- Shopify Theme Store (SH-I-2512, SH-S-7354; concerns SH-C-029)
+- Sidekick, your AI cofounder (SH-I-2513, SH-S-7355; concerns SH-C-152)
+- Store credit (SH-I-2514, SH-S-7356; concerns SH-C-026)
+
+### List `other:shopify-com-products` (28 entries, 1 out of the concern map's scope)
+
+- Website Builder (SH-I-1963, SH-S-2727; concerns SH-C-029;SH-C-152)
+- Themes (SH-I-1964, SH-S-2728; concerns SH-C-029)
+- Domains (SH-I-1965, SH-S-2729; concerns SH-C-033)
+- Customer Accounts (SH-I-1966, SH-S-2730; concerns SH-C-041)
+- Sidekick (SH-I-1967, SH-S-2731; concerns SH-C-152)
+- Online (SH-I-1968, SH-S-2732; concerns SH-C-029)
+- AI Chats (SH-I-1969, SH-S-2733; concerns SH-C-140)
+- Point of Sale (SH-I-1970, SH-S-2734; concerns SH-C-142)
+- Shop App (SH-I-1971, SH-S-2735; concerns SH-C-136)
+- Social & Marketplaces (SH-I-1972, SH-S-2736; concerns SH-C-135;SH-C-137)
+- Global (SH-I-1973, SH-S-2737; concerns SH-C-106)
+- B2B (SH-I-1974, SH-S-2738; concerns SH-C-044)
+- Across Markets (SH-I-1975, SH-S-2739; concerns SH-C-106)
+- Advertising & Campaigns (SH-I-1976, SH-S-2740; concerns SH-C-129)
+- Email & Customer Chat (SH-I-1977, SH-S-2741; concerns SH-C-130;SH-C-153)
+- Discounts (SH-I-1978, SH-S-2742; concerns SH-C-127)
+- Analytics (SH-I-1979, SH-S-2743; concerns SH-C-145)
+- Orders & Inventory (SH-I-1981, SH-S-2745; concerns SH-C-022;SH-C-054)
+- Shipping (SH-I-1982, SH-S-2746; concerns SH-C-114;SH-C-116)
+- Finances & Funding (SH-I-1983, SH-S-2747; concerns SH-C-088;SH-C-090;SH-C-091;SH-C-092;SH-C-093;SH-C-094;SH-C-095;SH-C-096;SH-C-097;SH-C-098)
+- Workflow Automation (SH-I-1984, SH-S-2748; concerns SH-C-151)
+- Checkout (SH-I-1985, SH-S-2749; concerns SH-C-047)
+- Payments (SH-I-1986, SH-S-2750; concerns SH-C-063)
+- Taxes (SH-I-1987, SH-S-2751; concerns SH-C-100)
+- Commerce for AgentsBuild with our agent tools (SH-I-1988, SH-S-2752; concerns SH-C-140)
+- Shopify App StoreLargest commerce ecosystem (SH-I-1989, SH-S-2753; concerns SH-C-157)
+- Shopify.devDev docs, CLI, and more (SH-I-1990, SH-S-2754; concerns SH-C-171)
+
+Out of the concern map's scope: Test & Launch (product menu label whose scope is not stated in the list; no placement can be shown)
+
+
+### List `settings` (25 entries, 0 out of the concern map's scope)
+
+- Organization (SH-I-0717, SH-S-1481; concerns SH-C-003;SH-C-004)
+- Users (SH-I-0718, SH-S-1482; concerns SH-C-009)
+- Roles (SH-I-0719, SH-S-1483; concerns SH-C-010)
+- Security (SH-I-0720, SH-S-1484; concerns SH-C-007)
+- Billing (SH-I-0721, SH-S-1485; concerns SH-C-016)
+- General (SH-I-0722, SH-S-1486; concerns SH-C-004;SH-C-013)
+- Plan (SH-I-0723, SH-S-1487; concerns SH-C-015)
+- Payments (SH-I-0724, SH-S-1488; concerns SH-C-062)
+- Checkout (SH-I-0725, SH-S-1489; concerns SH-C-047)
+- Customer accounts (SH-I-0726, SH-S-1490; concerns SH-C-041)
+- Shipping and delivery (SH-I-0727, SH-S-1491; concerns SH-C-114)
+- Taxes and duties (SH-I-0728, SH-S-1492; concerns SH-C-100;SH-C-101;SH-C-105)
+- Locations (SH-I-0729, SH-S-1493; concerns SH-C-024)
+- Markets (SH-I-0730, SH-S-1494; concerns SH-C-106)
+- Apps (SH-I-0731, SH-S-1495; concerns SH-C-156)
+- Sales channels (SH-I-0732, SH-S-1496; concerns SH-C-135)
+- Domains (SH-I-0733, SH-S-1497; concerns SH-C-033)
+- Customer events (SH-I-0734, SH-S-1498; concerns SH-C-146)
+- Notifications (SH-I-0735, SH-S-1499; concerns SH-C-150)
+- Metafields and metaobjects (SH-I-0736, SH-S-1500; concerns SH-C-028)
+- Languages (SH-I-0737, SH-S-1501; concerns SH-C-032)
+- Customer privacy (SH-I-0738, SH-S-1502; concerns SH-C-148)
+- Policies (SH-I-0739, SH-S-1503; concerns SH-C-034)
+- Billing (SH-I-0740, SH-S-1504; concerns SH-C-016)
+- Users (SH-I-0741, SH-S-1505; concerns SH-C-009)
+
+### List `other:staff-roles` (20 entries, 0 out of the concern map's scope)
+
+- Associate (SH-I-0846, SH-S-1610; concerns SH-C-010;SH-C-142)
+- Limited permissions (SH-I-0847, SH-S-1611; concerns SH-C-010;SH-C-142)
+- App developer (SH-I-0848, SH-S-1612; concerns SH-C-010;SH-C-167)
+- Collaborator access (SH-I-0849, SH-S-1613; concerns SH-C-010;SH-C-011)
+- Organization administrator (SH-I-0850, SH-S-1614; concerns SH-C-003;SH-C-010)
+- Organization POS administrator (SH-I-0851, SH-S-1615; concerns SH-C-003;SH-C-010;SH-C-142)
+- Organization user administrator (SH-I-0852, SH-S-1616; concerns SH-C-003;SH-C-010)
+- POS full permissions (SH-I-0853, SH-S-1617; concerns SH-C-010;SH-C-142)
+- POS device setup (SH-I-0854, SH-S-1618; concerns SH-C-010;SH-C-142)
+- POS user administrator (SH-I-0855, SH-S-1619; concerns SH-C-010;SH-C-142)
+- Store administrator (SH-I-0856, SH-S-1620; concerns SH-C-010)
+- Store user administrator (SH-I-0857, SH-S-1621; concerns SH-C-010)
+- Cashier (SH-I-0858, SH-S-1622; concerns SH-C-010;SH-C-142)
+- Customer support (SH-I-0859, SH-S-1623; concerns SH-C-010)
+- Marketer (SH-I-0860, SH-S-1624; concerns SH-C-010)
+- Merchandiser (SH-I-0861, SH-S-1625; concerns SH-C-010)
+- Online store editor (SH-I-0862, SH-S-1626; concerns SH-C-010)
+- Administrator (SH-I-0863, SH-S-1627; concerns SH-C-010)
+- Sales associate (SH-I-0864, SH-S-1628; concerns SH-C-010;SH-C-142)
+- Store manager (SH-I-0865, SH-S-1629; concerns SH-C-010;SH-C-142)
+
+### List `other:translatable-resources` (19 entries, 0 out of the concern map's scope)
+
+Entries: Collections; Products; Blog posts; Blog titles; Cookie banner; Filters; Metaobjects; Pages; Policies; Store metadata; Menu; App embeds; Default theme content; Section groups; Static sections; Templates; Theme settings; Notifications; Shipping and delivery
+
+
+### List `other:signup` (11 entries, 0 out of the concern map's scope)
+
+- I'm located in: (233 options) (SH-I-1745, SH-S-2509; concerns SH-C-006)
+- Country/region (233 options) (SH-I-1746, SH-S-2510; concerns SH-C-006)
+- Continue with email Last used (SH-I-1747, SH-S-2511; concerns SH-C-007)
+- Sign in with passkey Last used (SH-I-1748, SH-S-2512; concerns SH-C-007)
+- Continue with Google Last used (SH-I-1749, SH-S-2513; concerns SH-C-007)
+- Continue with Apple Last used (SH-I-1750, SH-S-2514; concerns SH-C-007)
+- Continue with Facebook Last used (SH-I-1751, SH-S-2515; concerns SH-C-007)
+- Continue with WhatsApp Last used (SH-I-1752, SH-S-2516; concerns SH-C-007)
+- Continue with Google (SH-I-1753, SH-S-2517; concerns SH-C-007)
+- Continue with Apple (SH-I-1754, SH-S-2518; concerns SH-C-007)
+- Continue with WhatsApp (SH-I-1755, SH-S-2519; concerns SH-C-007)
+
+### List `other:partner-dashboard` (10 entries, 0 out of the concern map's scope)
+
+- Home (SH-I-2085, SH-S-2849; concerns SH-C-168)
+- Stores (SH-I-2086, SH-S-2850; concerns SH-C-168)
+- Sales (SH-I-2087, SH-S-2851; concerns SH-C-168)
+- App distribution (SH-I-2088, SH-S-2852; concerns SH-C-157)
+- Catalogs (SH-I-2089, SH-S-2853; concerns SH-C-140)
+- Themes (SH-I-2090, SH-S-2854; concerns SH-C-029;SH-C-168)
+- Payouts (SH-I-2091, SH-S-2855; concerns SH-C-169)
+- Partner settings (SH-I-2092, SH-S-2856; concerns SH-C-168)
+- Organization (SH-I-2093, SH-S-2857; concerns SH-C-168)
+- Dev dashboard (SH-I-2094, SH-S-2858; concerns SH-C-168)
+
+### List `other:account-destinations` (9 entries, 2 out of the concern map's scope)
+
+- Your store (SH-I-1756, SH-S-2520; concerns SH-C-001)
+- Shopify Partners (SH-I-1757, SH-S-2521; concerns SH-C-168)
+- Shopify Learn (SH-I-1758, SH-S-2522; concerns SH-C-155)
+- Shopify Community (SH-I-1759, SH-S-2523; concerns SH-C-155)
+- Shopify Inbox (SH-I-1760, SH-S-2524; concerns SH-C-153)
+- Shopify Collabs (SH-I-1761, SH-S-2525; concerns SH-C-134)
+- Need Help? (SH-I-1762, SH-S-2526; concerns SH-C-155)
+
+Out of the concern map's scope: Terms (page footer link to a legal page that is placed under the legal index); Privacy Policy (page footer link to a legal page that is placed under the legal index)
+
+
+### List `other:admin-operation-areas` (8 entries, 0 out of the concern map's scope)
+
+- organizations (SH-I-2429, SH-S-7306; concerns SH-C-003;SH-C-004;SH-C-009;SH-C-010)
+- destinations (SH-I-2430, SH-S-7184; concerns SH-C-001;SH-C-003)
+- capital (SH-I-2431, SH-S-7183; concerns SH-C-090;SH-C-091;SH-C-092;SH-C-093;SH-C-094;SH-C-095;SH-C-096;SH-C-097)
+- banking (SH-I-2432, SH-S-7181; concerns SH-C-088;SH-C-089;SH-C-090)
+- contractmanagement (SH-I-2433, SH-S-7176; concerns SH-C-201)
+- completeness_engine (SH-I-2434, SH-S-7178; concerns SH-C-004)
+- profile_assessment (SH-I-2435, SH-S-7180; concerns SH-C-008;SH-C-068)
+- server_intents (SH-I-2436, SH-S-7307; concerns SH-C-009;SH-C-010;SH-C-020;SH-C-021;SH-C-023;SH-C-024;SH-C-028;SH-C-030;SH-C-037;SH-C-039;SH-C-044;SH-C-055;SH-C-106;SH-C-112;SH-C-114;SH-C-127)
+
+### List `other:shopify-apps` (7 entries, 2 out of the concern map's scope)
+
+- Shop: Track, Pay, Discover (SH-I-1992, SH-S-2756; concerns SH-C-136)
+- Shopify Point of Sale (POS) (SH-I-1993, SH-S-2757; concerns SH-C-142)
+- Shopify Inbox (SH-I-1994, SH-S-2758; concerns SH-C-153)
+- Collabs: Content commerce (SH-I-1996, SH-S-2760; concerns SH-C-134)
+- Customer View (SH-I-1997, SH-S-2761; concerns SH-C-142)
+
+Out of the concern map's scope: Shopify: Ecommerce business (mobile client of the Shopify admin; the concerns it reaches are placed individually); Tinker by Shopify (separate creative-tools app published by Shopify; no commerce placement is shown in the lists read)
+
+
+### List `other:partner-permissions` (4 entries, 0 out of the concern map's scope)
+
+- View financials (SH-I-1133, SH-S-1897; concerns SH-C-168;SH-C-169)
+- Manage app subscriptions (SH-I-1134, SH-S-1898; concerns SH-C-019;SH-C-168)
+- Manage apps (SH-I-1135, SH-S-1899; concerns SH-C-168)
+- Manage themes (SH-I-1136, SH-S-1900; concerns SH-C-029;SH-C-168)
+
+### List `other:business-entities` (4 entries, 0 out of the concern map's scope)
+
+- Individual (SH-I-1741, SH-S-2505; concerns SH-C-004)
+- Company (SH-I-1742, SH-S-2506; concerns SH-C-004)
+- Non-Profit (SH-I-1743, SH-S-2507; concerns SH-C-004)
+- Add business entity: country list (237 options) (SH-I-1744, SH-S-2508; concerns SH-C-004)
+
+### List `other:value-lists` (4 entries, 0 out of the concern map's scope)
+
+- Tracking carriers (204 options) (SH-I-2095, SH-S-2859; concerns SH-C-126)
+- Return reasons (10 options) (SH-I-2096, SH-S-2860; concerns SH-C-058)
+- Inventory adjustment reasons (7 options) (SH-I-2097, SH-S-2861; concerns SH-C-022)
+- Add language (136 languages) (SH-I-2098, SH-S-2862; concerns SH-C-032)
+
+### List `other:merchant-legal-entities` (4 entries, 0 out of the concern map's scope)
+
+- My Store - entity (SH-I-2515, SH-S-7357; concerns SH-C-004)
+- Z2lkOi8vb3JnYW5pemF0aW9uL0xlZ2FsRW50aXR5LzE5NjQyMjY3MA (SH-I-2516, SH-S-7358; concerns SH-C-004;SH-C-005)
+- Z2lkOi8vb3JnYW5pemF0aW9uL0xlZ2FsRW50aXR5LzE5NjQyMzc4OQ (SH-I-2517, SH-S-7359; concerns SH-C-004;SH-C-005)
+- Z2lkOi8vb3JnYW5pemF0aW9uL0xlZ2FsRW50aXR5LzE5NzUyNTQ1Mg (SH-I-2518, SH-S-7360; concerns SH-C-004)
+
+### List `other:store-resource-limits` (2 entries, 2 out of the concern map's scope)
+
+
+Out of the concern map's scope: maxProductOptions (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys); maxProductVariants (Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys)
+
+
+## Concerns recorded for this platform
+
+Each with the platform's own terms, the concern map's description, its statements by placement, and the scopes its statements give (the 12 most frequent).
+
+- **SH-C-001.** The platform's terms: Account; Store Owner; Your store. The concern map's description: Shopify account and Store Owner. Statements: 8 (boundary 2, decides 1, responsible 3, where 2).
+- **SH-C-002.** The platform's terms: Shopify Contracting Party; Shopify Inc.; Shopify Technology (USA) Inc.; Shopify Commerce Singapore Pte. Ltd; Shopify International Limited. The concern map's description: Shopify Contracting Party for the platform services, by the merchant's billing region. Statements: 11 (decides 1, responsible 10). Scopes: billing address in the United States or Canada (2); merchants in the United States or Canada (1); billing address in Asia Pacific (including Australia, New Zealand, China, Japan, and Singapore) (1); billing address in all other jurisdictions (including EMEA, Europe, the Middle East, Africa, South America, the Caribbean, and Mexico) (1); merchants in EMEA and LATAM (1); merchants in Asia-Pacific (APAC) (1); Canada; aspects of the Services regulated under the Canadian Retail Payment Activities Act (1).
+- **SH-C-003.** The platform's terms: Organization; OrganizationSettings; Free expansion stores. The concern map's description: Organization and its stores. Statements: 9 (decides 7, where 2). Scopes: organization 239421532 (partner organization), role list (1); 2jiwxs-gr (trial); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); zyd38b-ze (trial) (1); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); demo-fake-dev-store (Basic App Development, development store); ibx5bt-xy (trial); ts15uk-ug (trial) (1); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-004.** The platform's terms: Business entity; Individual; Company; Non-Profit; Add business entity. The concern map's description: Business entities (the registered business or individual a store operates as). Statements: 25 (boundary 1, decides 14, reason 1, responsible 2, where 7). Scopes: countryCode YE (store ctcbwa-r1) (3); jurisdiction YE, legalEntityType default_company (store ibx5bt-xy) (2); 2jiwxs-gr (trial); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); zyd38b-ze (trial) (1); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); demo-fake-dev-store (Basic App Development, development store); ibx5bt-xy (trial); ts15uk-ug (trial) (1); 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (1); store ibx5bt-xy (1); store ctcbwa-r1 (1); the organization of store ctcbwa-r1 (1).
+- **SH-C-005.** The platform's terms: Selling with multiple entities; SELECT_EXISTING_LEGAL_ENTITY. The concern map's description: Selling with multiple entities. Statements: 12 (boundary 2, decides 4, reason 2, where 4). Scopes: organizations on the Shopify Plus and Shopify Enterprise Commerce plan (1).
+- **SH-C-006.** The platform's terms: I'm located in:; Country/region. The concern map's description: Merchant location at sign-up. Statements: 3 (decides 1, responsible 1, where 1).
+- **SH-C-007.** The platform's terms: Security; Continue with Google; Sign in with passkey; two-step authentication. The concern map's description: Sign-in and account security. Statements: 8 (decides 4, reason 1, responsible 1, where 2). Scopes: stores using Shopify Payments (1).
+- **SH-C-008.** The platform's terms: Trust; identity-verification; Profile Assessment. The concern map's description: Identity verification of the people behind an account. Statements: 8 (decides 2, reason 1, responsible 1, where 4). Scopes: store ctcbwa-r1 (1).
+- **SH-C-009.** The platform's terms: Users; Staff Accounts; Additional staff accounts; Users and permissions. The concern map's description: Users and staff accounts. Statements: 22 (boundary 6, decides 13, responsible 1, where 2). Scopes: 2jiwxs-gr (trial); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); zyd38b-ze (trial) (1); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); demo-fake-dev-store (Basic App Development, development store); ibx5bt-xy (trial); ts15uk-ug (trial) (1); 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-advanced (plan not stated); capture-client-store-vny2vy5w (Custom plan, development store); capture-client-store-vny2vy5w (plan not stated); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-grow (plan not stated); capture-plus (Shopify Plus App Development, development store); capture-plus (plan not stated); capture-plus-dev (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); demo-fake-dev-store (plan not stated); fake-demo-sharrwah (trial); fake-demo-sharrwah (plan not stated); fake-demo-sharrwah (Advanced); hjhjhjjjhj (plan not stated); ibx5bt-xy (trial); ibx5bt-xy (plan not stated); ts15uk-ug (trial); ts15uk-ug (plan not stated); zyd38b-ze (trial) (1); ctcbwa-r1 (trial); ibx5bt-xy (trial); zyd38b-ze (trial) (1); store ts15uk-ug (1); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-010.** The platform's terms: Roles; permissions; Custom user groups. The concern map's description: Roles and permissions. Statements: 15 (boundary 1, decides 12, responsible 1, where 1). Scopes: 2jiwxs-gr (trial); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); zyd38b-ze (trial) (1); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); demo-fake-dev-store (Basic App Development, development store); ibx5bt-xy (trial); ts15uk-ug (trial) (1); 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-advanced (plan not stated); capture-client-store-vny2vy5w (Custom plan, development store); capture-client-store-vny2vy5w (plan not stated); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-grow (plan not stated); capture-plus (Shopify Plus App Development, development store); capture-plus (plan not stated); capture-plus-dev (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); demo-fake-dev-store (plan not stated); fake-demo-sharrwah (trial); fake-demo-sharrwah (plan not stated); fake-demo-sharrwah (Advanced); hjhjhjjjhj (plan not stated); ibx5bt-xy (trial); ibx5bt-xy (plan not stated); ts15uk-ug (trial); ts15uk-ug (plan not stated); zyd38b-ze (trial) (1); ctcbwa-r1 (trial); ibx5bt-xy (trial); zyd38b-ze (trial) (1); store ts15uk-ug (1); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-011.** The platform's terms: Collaborator access; Invite third-party collaborators. The concern map's description: Collaborators (outside parties with store access). Statements: 9 (boundary 1, decides 4, reason 1, responsible 2, where 1). Scopes: organization 239421532 (partner organization), role list (1); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1); GraphQL Admin API 2026-10 (1).
+- **SH-C-012.** The platform's terms: MerchantAuditLog; audit_events/admin_api_activity; read_audit_events. The concern map's description: Merchant audit log and admin API activity. Statements: 9 (boundary 3, decides 4, where 2). Scopes: 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-advanced (plan not stated); capture-client-store-vny2vy5w (Custom plan, development store); capture-client-store-vny2vy5w (plan not stated); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-grow (plan not stated); capture-plus (Shopify Plus App Development, development store); capture-plus (plan not stated); capture-plus-dev (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); demo-fake-dev-store (plan not stated); fake-demo-sharrwah (trial); fake-demo-sharrwah (plan not stated); fake-demo-sharrwah (Advanced); hjhjhjjjhj (plan not stated); ibx5bt-xy (trial); ibx5bt-xy (plan not stated); ts15uk-ug (trial); ts15uk-ug (plan not stated); zyd38b-ze (trial) (1); ctcbwa-r1 (trial); ibx5bt-xy (trial); zyd38b-ze (trial) (1).
+- **SH-C-013.** The platform's terms: General; Store properties; shop/update; Store metadata. The concern map's description: Store details and general settings. Statements: 6 (boundary 2, decides 1, responsible 1, where 2).
+- **SH-C-014.** The platform's terms: Reactivate your store; store-unavailable; Term and Termination. The concern map's description: Store suspension, termination, reactivation and closure. Statements: 17 (boundary 1, decides 10, responsible 1, where 5).
+- **SH-C-015.** The platform's terms: Plan; Basic; Grow; Advanced; Plus; basic; professional; unlimited; shopify_plus. The concern map's description: Subscription plans. Statements: 19 (boundary 2, decides 8, responsible 2, where 7). Scopes: plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (2); GraphQL Admin API 2026-10 (2); store 2jiwxs-gr (trial), the admin's BillingPlan list (1).
+- **SH-C-016.** The platform's terms: Billing; Subscription charges; Platform fees; Other fees; App fees; Billing history. The concern map's description: Shopify bills (charges to the merchant, invoices, payment of bills). Statements: 24 (decides 16, reason 1, responsible 2, where 5).
+- **SH-C-017.** The platform's terms: Taxes; Shopify billing and tax responsibilities. The concern map's description: Taxes on Shopify's own charges. Statements: 7 (decides 3, responsible 2, where 2). Scopes: Saudi Arabia and the United Arab Emirates (the page's subject) (1); Saudi Arabia (15%), United Arab Emirates (5%) (1); Saudi Arabia (1).
+- **SH-C-018.** The platform's terms: Third-party transaction fees; Transaction fees; Transaction fees discount. The concern map's description: Transaction fees on sales through payment providers other than Shopify Payments. Statements: 8 (decides 5, reason 1, responsible 1, where 1). Scopes: orders processed with Shopify Payments (1); Shopify stores created on or after May 12, 2025 (1); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-019.** The platform's terms: App fees; Shopify Billing Resource; app_subscriptions/update; Manage app billing; Approve app charges. The concern map's description: App charges billed through Shopify. Statements: 21 (boundary 4, decides 7, reason 1, responsible 3, where 6).
+- **SH-C-020.** The platform's terms: Products; Products and collections; read_products; products/create. The concern map's description: Products and variants. Statements: 35 (boundary 13, decides 11, responsible 2, where 9). Scopes: store fake-demo-sharrwah (2); store capture-plus (its UCP profile) (1); 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (1); store ts15uk-ug (1); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-021.** The platform's terms: Collections; collections/create. The concern map's description: Collections. Statements: 17 (boundary 6, decides 7, where 4). Scopes: 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (2); store ts15uk-ug (1).
+- **SH-C-022.** The platform's terms: Inventory; Inventory management; inventory_levels/update; read_inventory. The concern map's description: Inventory. Statements: 30 (boundary 7, decides 18, where 5). Scopes: 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (2); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-023.** The platform's terms: Transfers; Purchase orders; inventory_transfers; inventory_shipments. The concern map's description: Inventory transfers, shipments and purchase orders. Statements: 42 (boundary 15, decides 21, where 6). Scopes: 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (2); store ts15uk-ug (2).
+- **SH-C-024.** The platform's terms: Locations; Location; Inventory locations. The concern map's description: Locations. Statements: 19 (boundary 11, decides 6, where 2). Scopes: 2jiwxs-gr (trial); ctcbwa-r1 (trial); fake-demo-sharrwah (trial); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (1); capture-advanced (Advanced App Development, development store); capture-grow (Grow App Development, development store); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (Advanced) (1); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store) (1); store ts15uk-ug (1); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-025.** The platform's terms: Gift cards; Sell gift cards; Gift Card & Store Credit Service Terms. The concern map's description: Gift cards. Statements: 18 (boundary 6, decides 6, responsible 3, where 3). Scopes: 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (2); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-026.** The platform's terms: Store credit; read_store_credit_accounts; Refund to store credit. The concern map's description: Store credit. Statements: 13 (boundary 6, decides 3, responsible 2, where 2).
+- **SH-C-027.** The platform's terms: Files; read_files. The concern map's description: Files. Statements: 18 (boundary 9, decides 6, reason 1, where 2). Scopes: 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (1).
+- **SH-C-028.** The platform's terms: Metafields and metaobjects; Metafields; Metaobjects; MetafieldDefinitions. The concern map's description: Metafields and metaobjects (custom data). Statements: 32 (boundary 24, decides 3, reason 1, where 4). Scopes: 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (1); store ts15uk-ug (1).
+- **SH-C-029.** The platform's terms: Online Store; Themes and templates; Theme Store; OnlineStore; read_themes. The concern map's description: Online Store themes. Statements: 20 (boundary 11, decides 6, responsible 2, where 1). Scopes: 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (1); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-030.** The platform's terms: Blog posts; Pages; read_content. The concern map's description: Pages and blog posts. Statements: 17 (boundary 10, decides 4, where 3). Scopes: 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (2); store ts15uk-ug (2).
+- **SH-C-031.** The platform's terms: Menus; Menu; read_online_store_navigation. The concern map's description: Menus and URL redirects. Statements: 11 (boundary 5, decides 4, where 2). Scopes: 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (2).
+- **SH-C-032.** The platform's terms: Languages; Localizations; Translate your storefront; read_translations; locales/create. The concern map's description: Languages and translations. Statements: 18 (boundary 12, decides 3, reason 1, where 2). Scopes: 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (1); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-033.** The platform's terms: Domains; Custom domain name; Domain fees. The concern map's description: Domains. Statements: 14 (boundary 1, decides 9, responsible 2, where 2). Scopes: 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (2); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-034.** The platform's terms: Policies; read_legal_policies; Store policies. The concern map's description: Store policies. Statements: 10 (boundary 3, decides 4, responsible 1, where 2). Scopes: 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (1).
+- **SH-C-035.** The platform's terms: Search; Filters; Search & Discovery. The concern map's description: Storefront search and filtering. Statements: 4 (boundary 2, where 2).
+- **SH-C-036.** The platform's terms: Unlimited web hosting; Free SSL certificate. The concern map's description: Hosting and SSL. Statements: 3 (boundary 1, decides 2). Scopes: plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (2); GraphQL Admin API 2026-10 (1).
+- **SH-C-037.** The platform's terms: Catalogs; Shopify B2B; read_catalogs. The concern map's description: Catalogs (market and B2B product and price catalogs). Statements: 17 (boundary 3, decides 12, where 2). Scopes: 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (2); GraphQL Admin API (latest) (2); 2jiwxs-gr (trial); ctcbwa-r1 (trial); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (trial); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (1); capture-advanced (Advanced App Development, development store) (1); capture-client-store-vny2vy5w (Custom plan, development store) (1); capture-gb-plus (Shopify Plus App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store) (1); capture-grow (Grow App Development, development store) (1); ctcbwa-r1 (Advanced); fake-demo-sharrwah (Advanced) (1); store ts15uk-ug (1).
+- **SH-C-038.** The platform's terms: Merchandise with Shopify Combined Listings. The concern map's description: Combined listings. Statements: 2 (boundary 1, decides 1). Scopes: plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1); GraphQL Admin API 2026-10 (1).
+- **SH-C-039.** The platform's terms: Customers; customers/create; read_customers. The concern map's description: Customers. Statements: 37 (boundary 24, decides 8, responsible 1, where 4). Scopes: store ts15uk-ug (1); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-040.** The platform's terms: Segments; Create customer segments; segments/create. The concern map's description: Customer segments. Statements: 9 (boundary 3, decides 3, where 3). Scopes: 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (1); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-041.** The platform's terms: Customer accounts; CustomerAccounts; Customer Account API. The concern map's description: Customer accounts. Statements: 26 (boundary 19, decides 5, where 2). Scopes: store capture-plus (its UCP profile) (1); 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (1).
+- **SH-C-042.** The platform's terms: Customer authentication; Third-party identity providers; Multipass; Manage identity providers. The concern map's description: Customer authentication with third-party identity providers and Multipass. Statements: 6 (boundary 1, decides 2, where 3). Scopes: stores on the Shopify Plus plan (1); GraphQL Admin API 2026-10 (1).
+- **SH-C-043.** The platform's terms: customers_email_marketing_consent/update; customers_marketing_consent/update; Marketing double opt-in. The concern map's description: Customer marketing consent (email, SMS, WhatsApp). Statements: 7 (boundary 4, decides 1, responsible 1, where 1).
+- **SH-C-044.** The platform's terms: B2B; Companies; companies/create; read_companies. The concern map's description: B2B companies, locations and contacts. Statements: 30 (boundary 10, decides 17, where 3). Scopes: 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (2); 2jiwxs-gr (trial); ctcbwa-r1 (trial); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (trial); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (1); capture-advanced (Advanced App Development, development store) (1); capture-client-store-vny2vy5w (Custom plan, development store) (1); capture-gb-plus (Shopify Plus App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store) (1); capture-grow (Grow App Development, development store) (1); ctcbwa-r1 (Advanced); fake-demo-sharrwah (Advanced) (1); store ts15uk-ug (1); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-045.** The platform's terms: payment_terms/create; read_payment_terms; Set payment terms. The concern map's description: Payment terms. Statements: 12 (boundary 9, decides 2, where 1).
+- **SH-C-046.** The platform's terms: Cart; carts/create; unauthenticated_read_checkouts. The concern map's description: Cart. Statements: 10 (boundary 6, decides 2, reason 1, where 1). Scopes: store capture-plus (its UCP profile) (1); stores with fewer than 250 sales (1).
+- **SH-C-047.** The platform's terms: Checkout; World's best-converting checkout; checkouts/create; High volume checkout. The concern map's description: Shopify Checkout. Statements: 16 (boundary 5, decides 8, responsible 2, where 1). Scopes: plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (2); store capture-plus (its UCP profile) (1); 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (1); ctcbwa-r1 (trial); fake-demo-sharrwah (trial); ibx5bt-xy (trial) (1).
+- **SH-C-048.** The platform's terms: Checkout branding; Checkout and accounts configurations; Checkout customization. The concern map's description: Checkout branding and checkout configuration. Statements: 18 (boundary 7, decides 8, where 3). Scopes: Participating Channels under the Agentic Storefronts terms (1); 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (1); ctcbwa-r1 (trial); fake-demo-sharrwah (trial); ibx5bt-xy (trial) (1); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-049.** The platform's terms: Checkout UI; Post-purchase UI; purchase.checkout.block.render. The concern map's description: Checkout UI extensions. Statements: 10 (boundary 2, decides 2, reason 1, responsible 2, where 3). Scopes: checkout UI extensions 2026.7.1 (2).
+- **SH-C-050.** The platform's terms: Abandoned checkouts; Abandoned checkout recovery; AbandonedCheckouts. The concern map's description: Abandoned checkouts and recovery. Statements: 8 (boundary 1, decides 5, where 2). Scopes: 2jiwxs-gr (trial); ctcbwa-r1 (trial); fake-demo-sharrwah (trial); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (1); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (Advanced) (1); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-051.** The platform's terms: Bot protection; CommerceProtection. The concern map's description: Bot protection. Statements: 9 (decides 5, reason 1, where 3). Scopes: merchants on a Shopify Plus plan (1); 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (1); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-052.** The platform's terms: Cart and Checkout Validation; read_validations. The concern map's description: Cart and checkout validation (Shopify Function). Statements: 7 (boundary 4, decides 1, responsible 1, where 1). Scopes: Developers' Applications (1).
+- **SH-C-053.** The platform's terms: Cart Transform; Cart transformer; read_cart_transforms. The concern map's description: Cart transform (Shopify Function). Statements: 10 (boundary 4, decides 3, responsible 1, where 2). Scopes: Developers' Applications (1).
+- **SH-C-054.** The platform's terms: Orders; orders/create; read_orders; Order. The concern map's description: Orders. Statements: 32 (boundary 21, decides 4, responsible 2, where 5). Scopes: store capture-plus (its UCP profile) (1).
+- **SH-C-055.** The platform's terms: Drafts; draft_orders/create; read_draft_orders. The concern map's description: Draft orders. Statements: 22 (boundary 15, decides 4, where 3). Scopes: 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (1); store ts15uk-ug (1).
+- **SH-C-056.** The platform's terms: orders/edited; requested_order_edit/created; read_order_edits; Edit orders. The concern map's description: Order editing and edit requests. Statements: 13 (boundary 9, decides 2, where 2).
+- **SH-C-057.** The platform's terms: refunds/create; Refund; Refund to original payment. The concern map's description: Refunds. Statements: 5 (boundary 1, decides 1, responsible 1, where 2).
+- **SH-C-058.** The platform's terms: returns/request; read_returns; Return; Return reasons. The concern map's description: Returns and exchanges. Statements: 21 (boundary 14, decides 3, responsible 1, where 3).
+- **SH-C-059.** The platform's terms: orders/risk_assessment_changed; Built-in fraud analysis*; Risk. The concern map's description: Order risk and fraud analysis. Statements: 11 (boundary 1, decides 7, responsible 1, where 2). Scopes: the Grow plan or higher, or stores that use Shopify Payments (1); 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (1); capture-plus-dev (Shopify Plus App Development, development store) (1); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-060.** The platform's terms: Order Routing Location Rule; fulfillment_orders/order_routing_complete. The concern map's description: Order routing. Statements: 5 (boundary 1, decides 1, where 3).
+- **SH-C-061.** The platform's terms: Admin print action; print-action. The concern map's description: Order and product printing (packing slips, print actions). Statements: 7 (boundary 1, decides 3, where 3). Scopes: 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (1); capture-advanced (Advanced App Development, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); demo-fake-dev-store (Basic App Development, development store) (1).
+- **SH-C-062.** The platform's terms: Payments; Payment providers; Manage other payment settings. The concern map's description: Payment providers settings (which payment methods a store accepts). Statements: 12 (boundary 1, decides 6, reason 1, responsible 1, where 3). Scopes: Shopify Payments regions (1); GraphQL Admin API 2026-10 (1).
+- **SH-C-063.** The platform's terms: Shopify Payments; Shopify Payments Terms of Service. The concern map's description: Shopify Payments. Statements: 36 (boundary 6, decides 16, reason 2, responsible 5, where 7). Scopes: Designated Country Canada (1); Designated Country United States (1); Designated Countries Austria, Belgium, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Gibraltar, Greece, Hungary, Ireland, Italy, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Mexico, Netherlands, Norway, Poland, Portugal, Romania, Slovenia, Spain, Sweden, Switzerland, United Arab Emirates, United Kingdom (1); Designated Countries Australia, Hong Kong, Japan, New Zealand, Singapore (1); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-064.** The platform's terms: Payment Processor; Payment Processing; Payment Processor List. The concern map's description: Payment processing and settlement for Shopify Payments. Statements: 33 (boundary 5, decides 6, reason 1, responsible 17, where 4). Scopes: Designated Country Austria (the row cited) (3); Designated Country United States (2); Designated Country Canada (1); Designated Country Mexico (1); Designated Country United Arab Emirates (1); Designated Country Japan (1); Designated Country Australia (1); Designated Country Singapore (1); Designated Country China (Mainland) (1); All Shopify Payments regions (1).
+- **SH-C-065.** The platform's terms: Payment Processor Account; Financial Services Provider; Payout Account. The concern map's description: Holding the merchant's funds from Shopify Payments sales. Statements: 16 (boundary 2, decides 6, responsible 6, where 2). Scopes: international Managed Markets orders (2).
+- **SH-C-066.** The platform's terms: Payment Facilitator; Shopify Payments EU Limited; Shopify Payments UK Limited; Acquirer. The concern map's description: Payment facilitation in the EU/EEA and UK. Statements: 11 (boundary 1, decides 3, responsible 7). Scopes: certain Designated Countries (2); EU / EEA (1); United Kingdom (1); EU / EEA and United Kingdom (1).
+- **SH-C-067.** The platform's terms: Regulated Payment Services; Shopify Payment Activities Inc.. The concern map's description: Regulated payment services in Canada. Statements: 3 (decides 1, responsible 2). Scopes: Canada (1); Canada; aspects of the Services regulated under the Canadian Retail Payment Activities Act (1); Designated Country Canada (1).
+- **SH-C-068.** The platform's terms: Verification and Underwriting; ProfileAssessment; read_financial_kyc_information; finance_kyc_information/update. The concern map's description: Onboarding, KYC and underwriting for Shopify Payments. Statements: 21 (boundary 7, decides 7, reason 2, responsible 3, where 2). Scopes: EU / EEA and United Kingdom (Payment Facilitator Terms) (1).
+- **SH-C-069.** The platform's terms: Payouts; read_shopify_payments_payouts; View Shopify Payments payouts; Shopify Payments activity report. The concern map's description: Payouts. Statements: 19 (boundary 3, decides 9, reason 2, responsible 1, where 4). Scopes: stores on the Basic, Grow, or Shopify plan (1).
+- **SH-C-070.** The platform's terms: Reserves; Reserve Account; account holds. The concern map's description: Reserves and payout holds. Statements: 10 (boundary 1, decides 6, reason 1, responsible 1, where 1). Scopes: the payment processors that support Shopify Payments (such as Stripe, PayPal, or Adyen, depending on region) (1).
+- **SH-C-071.** The platform's terms: Online standard card rates; Online international rates; In-person card rates; IC++ fees. The concern map's description: Shopify Payments processing rates. Statements: 9 (boundary 1, decides 4, responsible 1, where 3). Scopes: plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (3); stores that use a third-party payment provider alongside Shopify Payments (1).
+- **SH-C-072.** The platform's terms: disputes/create; read_shopify_payments_disputes; Manage disputes; Disputes. The concern map's description: Chargebacks and disputes. Statements: 24 (boundary 9, decides 10, responsible 2, where 3). Scopes: 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (1); capture-plus-dev (Shopify Plus App Development, development store) (1).
+- **SH-C-073.** The platform's terms: Shopify Protect; orders/shopify_protect_eligibility_changed. The concern map's description: Shopify Protect. Statements: 11 (boundary 1, decides 5, responsible 2, where 3). Scopes: businesses in the United States using Shopify Payments for online card-not-present transactions (1).
+- **SH-C-074.** The platform's terms: Shop Pay; dev.shopify.shop_pay; Shop Pay Wallet API. The concern map's description: Shop Pay. Statements: 14 (boundary 3, decides 2, reason 1, responsible 6, where 2). Scopes: store capture-plus (its UCP profile) (1).
+- **SH-C-075.** The platform's terms: Shop Pay Installments; unauthenticated_read_shop_pay_installments_pricing. The concern map's description: Shop Pay Installments. Statements: 13 (boundary 5, decides 2, reason 1, responsible 3, where 2). Scopes: Designated Countries with Shop Pay Installments regional terms (Australia, Canada, United Kingdom, United States) (2); eligible stores in the United States, Canada, and the United Kingdom (1).
+- **SH-C-076.** The platform's terms: Payments Apps API; Payments extensions; Payment apps; paymentSessionResolve. The concern map's description: Third-party payment providers through payments apps. Statements: 27 (boundary 12, decides 7, reason 1, responsible 3, where 4). Scopes: eligible Shopify Plus merchants (1).
+- **SH-C-077.** The platform's terms: PayPal Express Checkout; PayPal Wallet rates. The concern map's description: PayPal Express Checkout. Statements: 13 (boundary 2, decides 7, responsible 2, where 2). Scopes: PayPal Wallet: France and the United States (1); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-078.** The platform's terms: Apple Pay; Google Pay; Meta Pay; Amazon Pay; com.google.pay. The concern map's description: Third-party wallets (Apple Pay, Google Pay, Meta Pay, Amazon Pay). Statements: 15 (boundary 2, decides 2, reason 1, responsible 5, where 5). Scopes: Apple Pay (2); Google Pay (2); Meta Pay (2); Amazon Pay (2); store capture-plus (its UCP profile) (1).
+- **SH-C-079.** The platform's terms: Manual payment methods; Record payments; Mark as paid. The concern map's description: Manual payment methods. Statements: 9 (boundary 1, decides 6, where 2).
+- **SH-C-080.** The platform's terms: Accept local payment methods*; MB WAY rates; Bizum rates. The concern map's description: Local payment methods. Statements: 14 (boundary 1, decides 9, reason 1, where 3). Scopes: plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (3); store ibx5bt-xy (1).
+- **SH-C-081.** The platform's terms: USDC rates; Cryptocurrency Payment Protocol; Cryptocurrency Credit Reward Program. The concern map's description: Cryptocurrency and stablecoin payments. Statements: 11 (boundary 1, decides 4, responsible 5, where 1). Scopes: Shopify Payments accounts open in the United States, Canada, Mexico, or Hong Kong (1); All Shopify Payments regions (1); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-082.** The platform's terms: Shop Cash. The concern map's description: Shop Cash. Statements: 3 (decides 1, responsible 1, where 1).
+- **SH-C-083.** The platform's terms: Payment Customization; read_payment_customizations. The concern map's description: Payment customization (Shopify Function). Statements: 12 (boundary 5, decides 2, responsible 1, where 4). Scopes: Shopify Plus stores (1); Developers' Applications (1).
+- **SH-C-084.** The platform's terms: order_transactions/create; tender_transactions/create; Capture payments. The concern map's description: Payment authorization, capture and order transactions. Statements: 9 (boundary 2, decides 4, reason 1, responsible 1, where 1). Scopes: stores on the Shopify Plus plan that use Shopify Payments (1).
+- **SH-C-085.** The platform's terms: customer_payment_methods/create; read_customer_payment_methods; read_payment_mandate; Charge vaulted payment method. The concern map's description: Saved customer payment methods and payment mandates. Statements: 16 (boundary 12, decides 3, where 1).
+- **SH-C-086.** The platform's terms: In-person card rates; Tap to Pay transaction fees; Card present. The concern map's description: In-person card payments. Statements: 11 (boundary 2, decides 6, where 3). Scopes: plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (2); Canadian businesses (1).
+- **SH-C-087.** The platform's terms: read_cash_tracking; CashDrawer. The concern map's description: Cash management at POS. Statements: 6 (boundary 5, reason 1).
+- **SH-C-088.** The platform's terms: Shopify Balance; Banking; Balance; Manage money with Shopify Balance. The concern map's description: Shopify Balance account. Statements: 45 (boundary 2, decides 32, reason 2, responsible 4, where 5). Scopes: 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (5); 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-advanced (plan not stated); capture-client-store-vny2vy5w (Custom plan, development store); capture-client-store-vny2vy5w (plan not stated); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-grow (plan not stated); capture-plus (Shopify Plus App Development, development store); capture-plus (plan not stated); capture-plus-dev (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); demo-fake-dev-store (plan not stated); fake-demo-sharrwah (trial); fake-demo-sharrwah (plan not stated); fake-demo-sharrwah (Advanced); hjhjhjjjhj (plan not stated); ibx5bt-xy (trial); ibx5bt-xy (plan not stated); ts15uk-ug (trial); ts15uk-ug (plan not stated); zyd38b-ze (trial) (2); merchants with a physical residential address in the United States or Puerto Rico (1); 2jiwxs-gr (trial); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (1); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); demo-fake-dev-store (Basic App Development, development store) (1); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-089.** The platform's terms: Cards; Shopify Balance Visa® Commercial cards. The concern map's description: Shopify Balance cards. Statements: 7 (decides 2, responsible 2, where 3). Scopes: store ctcbwa-r1 (1).
+- **SH-C-090.** The platform's terms: Shopify Credit; Credit; Shopify Credit pay-in-full Visa® card. The concern map's description: Shopify Credit. Statements: 33 (boundary 2, decides 15, reason 1, responsible 7, where 8). Scopes: 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (1); store ctcbwa-r1 (1); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-091.** The platform's terms: Capital - US loan; Capital - US Merchant Cash Advance (MCA). The concern map's description: Shopify Capital in the United States. Statements: 23 (boundary 1, decides 11, responsible 4, where 7). Scopes: United States (2); businesses based in Australia, Canada, France, Germany, Ireland, the Netherlands, Spain, the United Kingdom, and the United States (1); certain locations (1); 2jiwxs-gr (trial); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (1); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); demo-fake-dev-store (Basic App Development, development store) (1); store ctcbwa-r1 (1); U.S. (1); United States; store ibx5bt-xy (1); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-092.** The platform's terms: Capital - UK Merchant Cash Advance (MCA). The concern map's description: Shopify Capital in the United Kingdom. Statements: 15 (boundary 1, decides 7, responsible 2, where 5). Scopes: United Kingdom (4); 2jiwxs-gr (trial); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (1); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); demo-fake-dev-store (Basic App Development, development store) (1); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-093.** The platform's terms: Capital - Canada Merchant Cash Advance (MCA). The concern map's description: Shopify Capital in Canada. Statements: 11 (boundary 1, decides 6, where 4). Scopes: Canada (1); 2jiwxs-gr (trial); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (1); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); demo-fake-dev-store (Basic App Development, development store) (1); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-094.** The platform's terms: Capital - Australia. The concern map's description: Shopify Capital in Australia. Statements: 10 (boundary 1, decides 6, where 3). Scopes: 2jiwxs-gr (trial); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (1); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); demo-fake-dev-store (Basic App Development, development store) (1); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-095.** The platform's terms: Shopify Capital loans; Banking Circle S.A.; YouLend SAS; Shopify Commerce France SAS. The concern map's description: Shopify Capital in France. Statements: 13 (boundary 1, decides 6, responsible 2, where 4). Scopes: France (2); 2jiwxs-gr (trial); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (1); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); demo-fake-dev-store (Basic App Development, development store) (1); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-096.** The platform's terms: Shopify Capital loans; YouLend GmbH; Shopify Commerce Germany GmbH. The concern map's description: Shopify Capital in Germany. Statements: 13 (boundary 1, decides 6, responsible 2, where 4). Scopes: Germany (2); 2jiwxs-gr (trial); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (1); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); demo-fake-dev-store (Basic App Development, development store) (1); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-097.** The platform's terms: Shopify Capital merchant cash advances; YouLend. The concern map's description: Shopify Capital merchant cash advances in Ireland, the Netherlands and Spain. Statements: 16 (boundary 1, decides 6, responsible 3, where 6). Scopes: Ireland (1); Netherlands (1); Spain (1); 2jiwxs-gr (trial); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (1); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); demo-fake-dev-store (Basic App Development, development store) (1); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-098.** The platform's terms: Shopify Bill Pay; Bill Pay. The concern map's description: Shopify Bill Pay. Statements: 13 (boundary 1, decides 8, responsible 3, where 1). Scopes: merchants in the United States (1); 2jiwxs-gr (trial); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (1); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); demo-fake-dev-store (Basic App Development, development store) (1); 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (1); ctcbwa-r1 (Advanced); fake-demo-sharrwah (Advanced) (1); store ibx5bt-xy (1); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-099.** The platform's terms: VIEW_TAX_DOCUMENTS; 1099-MISC forms. The concern map's description: Tax forms and tax documents issued to the merchant. Statements: 14 (boundary 1, decides 6, reason 1, responsible 2, where 4). Scopes: United States (3); 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-advanced (plan not stated); capture-client-store-vny2vy5w (Custom plan, development store); capture-client-store-vny2vy5w (plan not stated); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-grow (plan not stated); capture-plus (Shopify Plus App Development, development store); capture-plus (plan not stated); capture-plus-dev (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); demo-fake-dev-store (plan not stated); fake-demo-sharrwah (trial); fake-demo-sharrwah (plan not stated); fake-demo-sharrwah (Advanced); hjhjhjjjhj (plan not stated); ibx5bt-xy (trial); ibx5bt-xy (plan not stated); ts15uk-ug (trial); ts15uk-ug (plan not stated); zyd38b-ze (trial) (1).
+- **SH-C-100.** The platform's terms: Taxes and duties; Automated sales tax calculations; Tax transaction fees; read_taxes. The concern map's description: Sales tax and VAT calculation at checkout. Statements: 36 (boundary 12, decides 14, reason 1, responsible 6, where 3). Scopes: United States (1); orders with a destination in the United States (1); 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (1); EU (1); UK (1); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-101.** The platform's terms: Tax liability tracking; Taxes and duties. The concern map's description: Tax registrations and liability tracking. Statements: 12 (decides 6, responsible 2, where 4). Scopes: stores using Managed Markets (1); 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (1); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-102.** The platform's terms: VAT validation, exemptions, and invoicing. The concern map's description: VAT validation, exemptions and invoicing. Statements: 7 (boundary 1, decides 3, responsible 1, where 2). Scopes: stores that use Shopify Tax to calculate tax in the European Union or the United Kingdom (1); orders where the reverse charge exemption applies (1); eligible EU or UK cross-border orders (1); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-103.** The platform's terms: Tax calculation; tax_services/create; write_taxes; Avalara add-on fees; Advanced tax platform; Tax apps. The concern map's description: Third-party tax calculation (tax apps and add-ons). Statements: 26 (boundary 10, decides 9, responsible 1, where 6). Scopes: 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (1); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-104.** The platform's terms: Automated filing; Shopify Tax Automated Filing. The concern map's description: Automated tax filing. Statements: 17 (boundary 3, decides 8, responsible 5, where 1). Scopes: stores in the United States that use Shopify Tax (1); United States (1); 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (1); US (1).
+- **SH-C-105.** The platform's terms: Estimate and collect duties and taxes; Duties and import tax transaction fees; Shipping duties and import taxes. The concern map's description: Duties and import taxes. Statements: 12 (boundary 1, decides 3, reason 1, responsible 4, where 3). Scopes: stores using Managed Markets (2); store ibx5bt-xy (trial), Compare plans table in Settings > Plan (1); GraphQL Admin API 2026-10 (1).
+- **SH-C-106.** The platform's terms: Markets; Shopify Markets; Localized selling with Shopify Markets; markets/create. The concern map's description: Markets. Statements: 24 (boundary 12, decides 7, responsible 1, where 4). Scopes: 2jiwxs-gr (trial); capture-client-store-vny2vy5w (Custom plan, development store); capture-plus-dev (Shopify Plus App Development, development store) (1); capture-advanced (Advanced App Development, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (1); store ts15uk-ug (1); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-107.** The platform's terms: store currency; Store Currencies. The concern map's description: Store currency. Statements: 5 (boundary 1, decides 3, where 1). Scopes: GraphQL Admin API 2026-10 (1).
+- **SH-C-108.** The platform's terms: Show prices in local currencies*. The concern map's description: Prices in local currencies. Statements: 10 (boundary 1, decides 8, where 1). Scopes: stores using Shopify Payments with access to one-page checkout (1); store ibx5bt-xy (1); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-109.** The platform's terms: Currency conversions and exchange rates. The concern map's description: Currency conversion and exchange rates. Statements: 12 (boundary 1, decides 8, responsible 2, where 1). Scopes: stores using Managed Markets (1).
+- **SH-C-110.** The platform's terms: Managed Markets; Managed Markets shipping fees. The concern map's description: Managed Markets. Statements: 18 (boundary 2, decides 5, reason 1, responsible 6, where 4). Scopes: Designated Countries with Managed Markets regional terms (Canada, United Kingdom, United States) (2); merchants based in the continental United States, and certain stores in Canada and the United Kingdom (1).
+- **SH-C-111.** The platform's terms: Assign local domains; Geolocation apps. The concern map's description: International domains and geolocation. Statements: 4 (boundary 1, decides 1, reason 1, where 1). Scopes: plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1); GraphQL Admin API 2026-10 (1).
+- **SH-C-112.** The platform's terms: Rollouts; rollouts/create; read_rollouts. The concern map's description: Rollouts. Statements: 15 (boundary 7, decides 5, where 3). Scopes: 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (1); store ts15uk-ug (1).
+- **SH-C-113.** The platform's terms: markets_backup_region/update. The concern map's description: Backup region. Statements: 5 (boundary 1, decides 3, where 1).
+- **SH-C-114.** The platform's terms: Shipping and delivery; profiles/create; read_shipping. The concern map's description: Shipping profiles, zones and rates. Statements: 14 (boundary 7, decides 3, responsible 1, where 3). Scopes: store capture-plus (its UCP profile) (1); 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (1); store ts15uk-ug (1).
+- **SH-C-115.** The platform's terms: 3rd-party calculated shipping rates; DeliveryCarrierService; Shipping rate apps. The concern map's description: Third-party calculated shipping rates. Statements: 8 (boundary 4, decides 2, where 2). Scopes: plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-116.** The platform's terms: Shipping labels; Buy and print shipping labels; Shipping discounts; Shipping fees. The concern map's description: Shopify Shipping (shipping labels). Statements: 20 (boundary 2, decides 8, responsible 6, where 4). Scopes: plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (2); 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (1).
+- **SH-C-117.** The platform's terms: Shipping insurance*; Insurance premiums. The concern map's description: Shipping insurance. Statements: 7 (boundary 1, decides 4, responsible 1, where 1). Scopes: orders shipped from the United States with Shopify shipping labels (1); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1); GraphQL Admin API 2026-10 (1).
+- **SH-C-118.** The platform's terms: fulfillment_orders/split; fulfillments/create; Fulfill and ship; Shipping and fulfillment. The concern map's description: Fulfillment orders and fulfillments. Statements: 29 (boundary 15, decides 11, responsible 1, where 2). Scopes: 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (1); capture-advanced (Advanced App Development, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); demo-fake-dev-store (Basic App Development, development store) (1).
+- **SH-C-119.** The platform's terms: read_fulfillments; FulfillmentService; External 3PL transaction fees; Third-party logistics (3PL) apps. The concern map's description: Fulfillment services and third-party logistics. Statements: 32 (boundary 21, decides 8, responsible 1, where 2).
+- **SH-C-120.** The platform's terms: Shopify Fulfillment Network; Shopify Logistics; ShopifyFulfillmentNetwork. The concern map's description: Shopify Fulfillment Network and Shopify Logistics. Statements: 6 (decides 1, reason 1, responsible 1, where 3).
+- **SH-C-121.** The platform's terms: Local pick up; Local delivery; read_product_pickup_locations. The concern map's description: Local pickup and local delivery. Statements: 8 (boundary 4, decides 2, where 2). Scopes: 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (1).
+- **SH-C-122.** The platform's terms: Delivery Customization; read_delivery_customizations. The concern map's description: Delivery customization (Shopify Function). Statements: 8 (boundary 4, decides 1, responsible 1, where 2). Scopes: Developers' Applications (1).
+- **SH-C-123.** The platform's terms: Fulfillment Constraints; read_fulfillment_constraint_rules. The concern map's description: Fulfillment constraints (Shopify Function). Statements: 8 (boundary 4, decides 1, responsible 1, where 2). Scopes: Developers' Applications (1).
+- **SH-C-124.** The platform's terms: Pickup point delivery option generator; Local pickup delivery option generator; Fulfillment option generator. The concern map's description: Delivery option generators (Shopify Functions). Statements: 6 (boundary 1, decides 1, responsible 1, where 3). Scopes: Developers' Applications (1).
+- **SH-C-125.** The platform's terms: delivery_promise_settings/update; read_delivery_promises. The concern map's description: Delivery promises. Statements: 8 (boundary 6, decides 1, where 1).
+- **SH-C-126.** The platform's terms: Tracking carriers; Shipping update; Order tracking apps. The concern map's description: Shipment tracking and carriers. Statements: 4 (boundary 1, decides 1, where 2). Scopes: GraphQL Admin API 2026-10 (1).
+- **SH-C-127.** The platform's terms: Discounts; Create and share discount codes; discounts/create; read_discounts. The concern map's description: Discounts. Statements: 21 (boundary 15, decides 3, where 3). Scopes: store capture-plus (its UCP profile) (1); 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (1); store ts15uk-ug (1); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-128.** The platform's terms: Discount; Discounts allocator; Discount function settings. The concern map's description: Discount Functions. Statements: 5 (boundary 1, decides 1, responsible 1, where 2). Scopes: Developers' Applications (1).
+- **SH-C-129.** The platform's terms: Growth; Campaigns; Autopilot; Marketing; read_marketing_events; Create marketing automations. The concern map's description: Marketing campaigns, automations and marketing activities. Statements: 14 (boundary 4, decides 5, where 5). Scopes: 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (1); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-130.** The platform's terms: Messaging; Shopify Messaging; Create email campaigns; Pay-per-send SMS campaigns. The concern map's description: Shopify Messaging (email and SMS). Statements: 7 (boundary 1, decides 3, responsible 2, where 1). Scopes: plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (2); Email Services (1).
+- **SH-C-131.** The platform's terms: Attribution; Order Attribution Config; Sales attribution edited. The concern map's description: Sales attribution. Statements: 4 (boundary 1, decides 1, where 2).
+- **SH-C-132.** The platform's terms: Optimize ads with Shopify Audiences. The concern map's description: Shopify Audiences. Statements: 7 (boundary 2, decides 2, reason 1, responsible 1, where 1). Scopes: eligible stores on the Shopify Plus plan that use Shopify Payments and are based in the United States or Canada (1); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-133.** The platform's terms: Shop Campaigns; Acquire customers risk-free with Shop Campaigns. The concern map's description: Shop Campaigns. Statements: 7 (boundary 1, decides 3, responsible 2, where 1). Scopes: plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-134.** The platform's terms: Shopify Collabs; Collabs: Content commerce; Shopify collabs commission. The concern map's description: Shopify Collabs. Statements: 6 (boundary 1, decides 1, responsible 2, where 2). Scopes: Google Play (publisher Shopify Inc.) (1).
+- **SH-C-135.** The platform's terms: Sales channels; SalesChannels; read_publications; Sales channel configuration. The concern map's description: Sales channels and publishing. Statements: 23 (boundary 9, decides 8, responsible 1, where 5). Scopes: plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-136.** The platform's terms: Shop; Shop App; Shop: Track, Pay, Discover; Shop API; Shop Minis. The concern map's description: Shop (consumer app and sales channel). Statements: 9 (boundary 1, decides 3, responsible 2, where 3). Scopes: Google Play (publisher Shopify Inc.) (1).
+- **SH-C-137.** The platform's terms: Import unlimited orders from marketplaces; Over 50 synced marketplace orders; read_marketplace_orders. The concern map's description: Marketplace order sync (Marketplace Connect). Statements: 26 (boundary 18, decides 5, responsible 1, where 2). Scopes: plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (3).
+- **SH-C-138.** The platform's terms: product_feeds/create; product_listings/add; read_product_listings. The concern map's description: Product feeds and listings for channels. Statements: 11 (boundary 7, decides 1, where 3).
+- **SH-C-139.** The platform's terms: Build headless storefronts; CustomStorefronts; Storefront API; Hydrogen framework. The concern map's description: Headless and custom storefronts. Statements: 26 (boundary 19, decides 1, reason 1, where 5). Scopes: plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-140.** The platform's terms: Sell in AI chats; Agentic; dev.ucp.shopping; WebMCP Tools. The concern map's description: Agentic commerce (AI chats, Universal Commerce Protocol). Statements: 20 (boundary 2, decides 8, responsible 6, where 4). Scopes: store capture-plus (its UCP profile) (1); Participating Channels under the Agentic Storefronts terms (1); Participating Channel: Google (1); Participating Channel: Microsoft Copilot (1); Participating Channel: Meta (1); Participating Channels operated by Shopify partners (1); certain Participating Channels (1); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-141.** The platform's terms: Sell and source products with Shopify Collective. The concern map's description: Shopify Collective. Statements: 6 (boundary 2, decides 2, responsible 1, where 1). Scopes: GraphQL Admin API 2026-10 (2); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1); suppliers who turn off automatic payments with a retailer (1).
+- **SH-C-142.** The platform's terms: Point of Sale; Retail; POS Pro; Shopify Point of Sale (POS). The concern map's description: Point of Sale. Statements: 11 (boundary 1, decides 5, reason 1, responsible 1, where 3). Scopes: plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (2); Google Play (publisher Shopify Inc.) (1); GraphQL Admin API 2026-10 (1); Germany (1).
+- **SH-C-143.** The platform's terms: POS Equipment Agreement and Return Policies; POS Equipment. The concern map's description: POS hardware. Statements: 5 (boundary 1, decides 1, responsible 1, where 2).
+- **SH-C-144.** The platform's terms: POS UI extensions; POS action; POS block; POS smart grid. The concern map's description: POS UI extensions. Statements: 8 (boundary 2, decides 2, reason 1, responsible 1, where 2). Scopes: Developers' Applications (1).
+- **SH-C-145.** The platform's terms: Analytics; Reports; Live View; ShopifyQL; read_reports. The concern map's description: Analytics and reports. Statements: 20 (boundary 11, decides 6, where 3). Scopes: 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (1); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-146.** The platform's terms: Customer events; Web pixel; read_pixels; read_customer_events; Shopify Pixel Manager. The concern map's description: Customer events and pixels. Statements: 21 (boundary 10, decides 6, responsible 1, where 4). Scopes: regions where customers must consent to tracking (1); 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (1).
+- **SH-C-147.** The platform's terms: Shopify Network Intelligence; Enhanced Services. The concern map's description: Shopify Network Intelligence (Enhanced Services). Statements: 6 (boundary 1, decides 1, responsible 2, where 2).
+- **SH-C-148.** The platform's terms: Customer privacy; Privacy; Cookie banner; Customer Privacy API; read_privacy_settings. The concern map's description: Customer privacy settings, cookie banner and consent. Statements: 18 (boundary 6, decides 6, reason 1, responsible 2, where 3). Scopes: 2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial) (1).
+- **SH-C-149.** The platform's terms: Request data; Erase personal data; read_customer_data_erasure. The concern map's description: Customer data requests and erasure. Statements: 11 (boundary 4, decides 2, responsible 4, where 1).
+- **SH-C-150.** The platform's terms: Notifications; Customer notifications; Staff notifications. The concern map's description: Notifications. Statements: 5 (decides 2, where 3).
+- **SH-C-151.** The platform's terms: Flow; Shopify Flow; Workflow Automation; Flow trigger; Flow action. The concern map's description: Shopify Flow. Statements: 8 (boundary 1, decides 3, where 4).
+- **SH-C-152.** The platform's terms: Sidekick; Sidekick, AI assistant for commerce; App action; App data. The concern map's description: Sidekick. Statements: 9 (boundary 2, decides 2, responsible 1, where 4). Scopes: third-party subprocessor rows Anthropic PBC, Applied Compute Inc., Fireworks.ai and others (the cited rows) (1); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-153.** The platform's terms: Shopify Inbox; Chat with customers. The concern map's description: Shopify Inbox (customer chat). Statements: 2 (decides 1, where 1). Scopes: Google Play (publisher Shopify Inc.) (1); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-154.** The platform's terms: Reviews; Product review apps. The concern map's description: Product reviews. Statements: 3 (boundary 1, responsible 1, where 1). Scopes: Third Party Services, including Apps via the Shopify App Store (1); product reviews in the Shop app (1).
+- **SH-C-155.** The platform's terms: 24/7 support; Free Shopify Academy courses; Shopify Learn; Shopify Community. The concern map's description: Merchant support and learning. Statements: 3 (decides 2, where 1). Scopes: plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (2); accounts.shopify.com destination list (1).
+- **SH-C-156.** The platform's terms: Apps; Apps and channels; Integrate with 1000s of apps; Third Party Services. The concern map's description: Apps and third-party services. Statements: 18 (boundary 2, decides 5, responsible 5, where 6). Scopes: plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-157.** The platform's terms: Shopify App Store; Plus Certified apps; App distribution. The concern map's description: Shopify App Store (listing, registration and review). Statements: 12 (boundary 2, decides 6, reason 1, responsible 1, where 2). Scopes: shopify.com header navigation (1); Partner Dashboard navigation (partner 5236935) (1); plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1).
+- **SH-C-158.** The platform's terms: Access scopes; Access; app/scopes_update. The concern map's description: Access scopes granted to apps. Statements: 411 (boundary 358, decides 51, responsible 1, where 1).
+- **SH-C-159.** The platform's terms: Shopify approval required; read_all_orders. The concern map's description: Scopes that need Shopify's approval. Statements: 77 (boundary 67, decides 9, where 1).
+- **SH-C-160.** The platform's terms: protected customer data. The concern map's description: Protected customer data. Statements: 6 (boundary 2, decides 1, responsible 2, where 1). Scopes: public apps (1).
+- **SH-C-161.** The platform's terms: customers/data_request; customers/redact; shop/redact. The concern map's description: Mandatory privacy compliance webhooks. Statements: 9 (boundary 3, decides 3, reason 1, responsible 1, where 1).
+- **SH-C-162.** The platform's terms: Webhooks; webhook topics. The concern map's description: Webhooks (event subscriptions). Statements: 7 (boundary 3, decides 1, responsible 1, where 2). Scopes: Developers' Applications (1).
+- **SH-C-163.** The platform's terms: Shopify Functions; Personalize store with custom functions. The concern map's description: Shopify Functions. Statements: 8 (boundary 1, decides 3, responsible 1, where 3). Scopes: plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1); Developers' Applications (1).
+- **SH-C-164.** The platform's terms: Admin action; Admin block; App home; Admin link; Polaris. The concern map's description: Admin UI extensions and App Home. Statements: 7 (boundary 2, decides 1, reason 1, responsible 1, where 2). Scopes: Developers' Applications (1).
+- **SH-C-165.** The platform's terms: Customer account UI; customer-account.order-status.block.render. The concern map's description: Customer account UI extensions. Statements: 4 (boundary 1, decides 1, responsible 1, where 1). Scopes: Developers' Applications (1).
+- **SH-C-166.** The platform's terms: Theme app extension; App embeds; write_app_proxy. The concern map's description: Theme app extensions, app embeds and app proxies. Statements: 7 (boundary 3, decides 1, responsible 1, where 2). Scopes: Developers' Applications (1).
+- **SH-C-167.** The platform's terms: App development; Develop; Enable development. The concern map's description: Custom apps developed in the admin. Statements: 6 (decides 2, responsible 2, where 2). Scopes: plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (1); Developers' Applications (1).
+- **SH-C-168.** The platform's terms: Partner Terms of Service; Partner API; Partner Dashboard; Shopify Partners. The concern map's description: Shopify Partner Program and Partner Dashboard. Statements: 6 (boundary 1, decides 1, responsible 2, where 2). Scopes: accounts.shopify.com destination list (1); Partner API 2025-10 (1).
+- **SH-C-169.** The platform's terms: Payouts; Hyperwallet. The concern map's description: Partner payouts. Statements: 9 (boundary 1, decides 5, responsible 1, where 2). Scopes: Partner Dashboard navigation (partner 5236935) (1); Partner API 2025-10 (1).
+- **SH-C-170.** The platform's terms: Expert services fees; Professional services fees. The concern map's description: Partner and expert services hired by merchants. Statements: 5 (boundary 1, responsible 2, where 2).
+- **SH-C-171.** The platform's terms: Versioning; Limits; Bulk operations; Global IDs; API rate limits. The concern map's description: API platform conventions (versioning, limits, bulk operations, IDs). Statements: 11 (boundary 1, decides 6, reason 1, responsible 1, where 2). Scopes: plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 (2).
+- **SH-C-172.** The platform's terms: Acceptable Use Policy; Report an issue with a merchant. The concern map's description: Acceptable use and enforcement. Statements: 12 (boundary 2, decides 6, reason 1, responsible 2, where 1).
+- **SH-C-173.** The platform's terms: Prohibited and Restricted Businesses. The concern map's description: Prohibited and restricted businesses for Shopify Payments. Statements: 7 (decides 5, reason 2). Scopes: the merchant's Designated Country (1).
+- **SH-C-174.** The platform's terms: Unsupported countries and regions; Sanctions; Sanctioned Person. The concern map's description: Sanctions and unsupported countries and regions. Statements: 20 (decides 14, reason 2, responsible 4). Scopes: EU / EEA and United Kingdom (Payment Facilitator Terms) (1).
+- **SH-C-175.** The platform's terms: Consumer protection laws; Alcohol products; Hemp and hemp-derived products; General Product Safety Regulation (GPSR); TSE Compliance in Germany. The concern map's description: Merchant compliance with product, consumer and fiscal rules. Statements: 8 (decides 1, responsible 6, where 1).
+- **SH-C-176.** The platform's terms: Intellectual Property; copyright policy; trademark policy. The concern map's description: Intellectual property reports. Statements: 4 (boundary 1, decides 1, responsible 1, where 1).
+- **SH-C-177.** The platform's terms: Legal Notices; Digital Service Act; Submit a P2B complaint. The concern map's description: EU and UK platform rules (P2B complaints, Digital Services Act). Statements: 7 (boundary 2, decides 2, responsible 2, where 1). Scopes: United Kingdom (1); EU (1); Platform to Business Regulation (EU and UK) (1).
+- **SH-C-178.** The platform's terms: Financial Products; Submit a financial complaint. The concern map's description: Complaints about financial products. Statements: 4 (boundary 3, where 1).
+- **SH-C-179.** The platform's terms: guidelines for legal requests for information. The concern map's description: Legal requests for information. Statements: 9 (boundary 2, decides 5, reason 1, where 1).
+- **SH-C-180.** The platform's terms: Data Processing Addendum; Data Controller; Data Processor. The concern map's description: Data protection roles for the merchant's customer data. Statements: 7 (boundary 1, decides 1, responsible 5).
+- **SH-C-181.** The platform's terms: Data hosting locations; Binding Corporate Rules. The concern map's description: Where data is stored and processed. Statements: 24 (boundary 5, decides 3, reason 2, responsible 8, where 6). Scopes: new merchants in Europe (2); subprocessor Google Cloud Canada Corporation (the row cited) (1); subprocessor rows cited (Amazon Web Services, Google Cloud) (1); people located in the EEA, the UK, or Switzerland (1); personal data from customers in the EEA, the UK and Switzerland (1); people in the EEA or Switzerland (1).
+- **SH-C-182.** The platform's terms: Subprocessors. The concern map's description: Subprocessors. Statements: 11 (boundary 2, decides 2, responsible 5, where 2). Scopes: subprocessor Cloudflare, Inc. (the row cited) (1).
+- **SH-C-183.** The platform's terms: retain store information for two years. The concern map's description: Retention and deletion of store data after closure. Statements: 6 (boundary 1, decides 3, reason 1, responsible 1). Scopes: EU merchants (Supplementary Terms of Service for E.U. Merchants) (1).
+- **SH-C-184.** The platform's terms: PCI DSS; Account Data. The concern map's description: Payment card data security. Statements: 5 (decides 1, responsible 4).
+- **SH-C-185.** The platform's terms: Dropshipping apps; Print on demand (POD) apps; Wholesale apps. The concern map's description: Product sourcing (dropshipping, print on demand, wholesale). Statements: 6 (boundary 1, decides 1, responsible 2, where 2). Scopes: Third Party Services, including Apps via the Shopify App Store (1).
+- **SH-C-186.** The platform's terms: Subscription apps; selling_plan_groups/create; subscription_contracts/create. The concern map's description: Subscriptions and selling plans. Statements: 22 (boundary 14, decides 5, responsible 1, where 2).
+- **SH-C-187.** The platform's terms: Customer loyalty apps; Loyalty and reward apps; Wishlist apps; Donation apps. The concern map's description: Loyalty, rewards, wishlists and donations. Statements: 5 (boundary 1, decides 1, responsible 1, where 2). Scopes: Third Party Services, including Apps via the Shopify App Store (1).
+- **SH-C-188.** The platform's terms: Upsell and bundle apps; Product bundle apps; Pre-order apps. The concern map's description: Upsell, cross-sell, bundles and pre-orders. Statements: 6 (boundary 2, decides 1, responsible 1, where 2).
+- **SH-C-189.** The platform's terms: Custom product apps; Product variant apps; Product configuration. The concern map's description: Custom products and product options. Statements: 4 (boundary 1, decides 1, responsible 1, where 1). Scopes: Third Party Services, including Apps via the Shopify App Store (1).
+- **SH-C-190.** The platform's terms: Digital goods and service apps; Event booking apps; NFT and tokengating apps. The concern map's description: Digital goods, events and token-gating. Statements: 7 (boundary 1, decides 2, responsible 1, where 3). Scopes: Third Party Services, including Apps via the Shopify App Store (1).
+- **SH-C-191.** The platform's terms: Accounting apps; ERP apps. The concern map's description: Accounting and ERP. Statements: 5 (boundary 1, decides 1, responsible 1, where 2). Scopes: Third Party Services, including Apps via the Shopify App Store (1).
+- **SH-C-192.** The platform's terms: Helpdesk apps; FAQ apps; Chat apps. The concern map's description: Customer support, helpdesk and FAQ. Statements: 5 (boundary 1, decides 1, responsible 1, where 2). Scopes: Third Party Services, including Apps via the Shopify App Store (1).
+- **SH-C-193.** The platform's terms: Store design apps; Page builder apps; SEO apps. The concern map's description: Store design add-ons (page builders, content, media, pop-ups, SEO). Statements: 4 (boundary 1, decides 1, responsible 1, where 1).
+- **SH-C-194.** The platform's terms: Advertising apps; Affiliate program apps; Ads. The concern map's description: Advertising and affiliate programs. Statements: 4 (boundary 1, decides 1, responsible 1, where 1). Scopes: Third Party Services, including Apps via the Shopify App Store (1).
+- **SH-C-195.** The platform's terms: Mobile app builder apps; read_mobile_platform_applications. The concern map's description: Mobile app builders. Statements: 7 (boundary 4, decides 1, responsible 1, where 1).
+- **SH-C-196.** The platform's terms: Security apps; Anti theft apps; Legal apps. The concern map's description: Security and legal apps. Statements: 5 (boundary 1, decides 1, responsible 1, where 2). Scopes: Third Party Services, including Apps via the Shopify App Store (1).
+- **SH-C-201.** The platform's terms: Shopify Plus Terms; Switch to 3-year term; Renew on a 3-year term; PlusContractDetails; PlusContractTerms; RenewalsQuery; contractmanagement. The concern map's description: Shopify Plus contract terms and renewals. Statements: 6 (decides 1, where 5). Scopes: store ctcbwa-r1 (2).
+- **SH-C-202.** The platform's terms: Shopify Magic for product descriptions; Shopify Magic for blog posts; AI generation. The concern map's description: Shopify Magic for product descriptions and blog posts. Statements: 6 (decides 3, where 3).
+
+## The Help Center's menus (observed-sh@c8b5fbee25966372a0475e6ed81f0b7760ac2921:structures/shopify/help-center/help.shopify.com@en-ar/outline.md)
+
+Two levels deep, in the order and with the names the Help Center gives. The locale home's topic list comes first.
+
+
+### Shopify Help Center `/en` (the locale home; `/en/manual` answers 307 to `/en`)
+- Intro to Shopify `/en/manual/intro-to-shopify` : Pricing plans, Getting set up to start selling, Checklist for starting a store
+- Migrate to Shopify `/en/manual/migrating-to-shopify` : Migrating from Etsy, Migrating from WooCommerce, Migrating from eBay
+- Shopify admin `/en/manual/shopify-admin` : Navigating the Shopify admin, Productivity tools, Using the Shopify app
+- Apps `/en/manual/apps` : About apps, Finding and choosing apps, Apps made by Shopify
+- Your account `/en/manual/your-account` : Logging in to your Shopify account, Managing your Shopify billing, Managing users
+- Domains `/en/manual/domains` : Adding a domain to Shopify, Connecting a third-party domain, Managing your domain settings
+- Online store `/en/manual/online-store` : Shopify themes, Creating and editing pages, Theme settings
+- Products `/en/manual/products` : Product details, Managing inventory, Digital products
+- Payments `/en/manual/payments` : Shopify Payments, Shop Pay, Shop Pay Installments
+- Shopify checkout `/en/manual/checkout-settings` : Placing a test order, Customizing your checkout, Checkout Blocks app
+- Orders and shipping `/en/manual/fulfillment` : Setting up shipping and fulfillment, Managing orders, Fulfilling orders
+- Point of sale (POS) `/en/manual/sell-in-person` : Getting started with Shopify POS, Hardware for Shopify POS, Selling in person with Shopify POS
+- Marketing and promotions `/en/manual/promoting-marketing` : Setting up marketing in Shopify, Shopify Messaging, Improving SEO
+- Sales channels `/en/manual/online-sales-channels` : Facebook & Instagram, Google & YouTube, Shop app
+- Reports and analytics `/en/manual/reports-and-analytics` : Shopify analytics, Customizing and managing reports, Google Analytics
+- Customers `/en/manual/customers` : Managing customers, Customer accounts, Customer segmentation
+- Taxes and duties `/en/manual/taxes` : Shopify Tax, Basic tax, Tax overrides and exemptions
+- Finances `/en/manual/finances` : Shopify Balance, Shopify Capital, Shopify Credit
+- B2B `/en/manual/b2b` : Getting started with Shopify B2B, Companies and customers in B2B, Catalogs and pricing in B2B
+- Compliance `/en/manual/compliance` : Handling Shopify store termination, Consumer protection laws, Legal removals and intellectual property
+- Partner Directory `/en/manual/partner-directory` : Hiring and working with Shopify Partners
+
+### Shopify Affiliate Program `/en/affiliates` (route affiliates._index)
+- About the Shopify Affiliate Program `/en/affiliates/about`
+- Affiliate strategies `/en/affiliates/strategies`
+- Affiliate earnings `/en/affiliates/earnings`
+
+### `/en/manual` (answers 307 to `/en`)
+- Intro to Shopify `/en/manual/intro-to-shopify`
+  - Overview `/en/manual/intro-to-shopify/overview`
+  - Pricing plans `/en/manual/intro-to-shopify/pricing-plans`
+  - Initial setup `/en/manual/intro-to-shopify/initial-setup`
+  - Hiring help `/en/manual/intro-to-shopify/hiring-help`
+  - Store design checklist `/en/manual/intro-to-shopify/store-design`
+  - Shopify Launch Check `/en/manual/intro-to-shopify/launch-check`
+  - Shopify Plus plan launch checklist `/en/manual/intro-to-shopify/plus-launch-checklist`
+  - Shopify POS launch checklist `/en/manual/intro-to-shopify/shopify-pos-launch-checklist`
+  - Shopify Plus plan go live guide `/en/manual/intro-to-shopify/plus-go-live`
+  - Understanding bots at Shopify `/en/manual/intro-to-shopify/bots`
+- Migrate to Shopify `/en/manual/migrating-to-shopify`
+  - Migrate your retail store `/en/manual/migrating-to-shopify/migrating-retail`
+  - Migrate from Amazon `/en/manual/migrating-to-shopify/migrating-from-amazon`
+  - Migrate from Clover `/en/manual/migrating-to-shopify/migrating-from-clover`
+  - Migrate from eBay `/en/manual/migrating-to-shopify/migrating-from-ebay`
+  - Migrate from Etsy `/en/manual/migrating-to-shopify/migrating-from-etsy`
+  - Migrate from GoDaddy `/en/manual/migrating-to-shopify/migrating-from-godaddy`
+  - Migrate from Lightspeed `/en/manual/migrating-to-shopify/migrating-from-lightspeed`
+  - Migrate from Square `/en/manual/migrating-to-shopify/migrating-from-square`
+  - Migrate from Squarespace `/en/manual/migrating-to-shopify/migrating-from-squarespace`
+  - Migrate from Wix `/en/manual/migrating-to-shopify/migrating-from-wix`
+  - Migrate from WooCommerce `/en/manual/migrating-to-shopify/migrating-from-woocommerce`
+- Compliance `/en/manual/compliance`
+  - Ensuring that your store complies with Shopify's policies `/en/manual/compliance/legal`
+  - Intellectual property `/en/manual/compliance/intellectual-property`
+- Privacy and security `/en/manual/privacy-and-security`
+  - Privacy `/en/manual/privacy-and-security/privacy`
+  - Account security `/en/manual/privacy-and-security/account-security`
+- Shopify admin `/en/manual/shopify-admin`
+  - Navigating the Shopify admin `/en/manual/shopify-admin/shopify-admin-overview`
+  - Supported browsers `/en/manual/shopify-admin/supported-browsers`
+  - Searching your Shopify admin `/en/manual/shopify-admin/admin-search`
+  - Scanning barcodes in the Shopify admin `/en/manual/shopify-admin/scanning-barcodes`
+  - Shopify Home page `/en/manual/shopify-admin/shopify-home`
+  - Activity logs in the Shopify admin `/en/manual/shopify-admin/activity-logs`
+  - Backups and duplication `/en/manual/shopify-admin/duplicate-store`
+  - Shopify app `/en/manual/shopify-admin/shopify-app`
+  - Productivity tools `/en/manual/shopify-admin/productivity-tools`
+  - Access data using JSON `/en/manual/shopify-admin/using-json`
+- AI-powered tools `/en/manual/ai-powered-tools`
+  - Best practices for using AI-powered tools `/en/manual/ai-powered-tools/best-practices`
+  - Building and managing your store with third-party AI tools `/en/manual/ai-powered-tools/connecting-ai-tools`
+  - Tinker by Shopify `/en/manual/ai-powered-tools/tinker`
+  - Media generation `/en/manual/ai-powered-tools/media-generation`
+  - Shopify CLI connector `/en/manual/ai-powered-tools/shopify-cli-connector`
+  - Sidekick `/en/manual/ai-powered-tools/sidekick`
+- Your account `/en/manual/your-account`
+  - How to Contact Shopify Support `/en/manual/your-account/contact-shopify-support`
+  - Logging in `/en/manual/your-account/logging-in`
+  - Managing users `/en/manual/your-account/users`
+  - Managing your Shopify account `/en/manual/your-account/manage-account`
+  - Managing your Shopify billing `/en/manual/your-account/manage-billing`
+  - Managing stores and organizations `/en/manual/your-account/manage-orgs-and-stores`
+  - Managing business entities `/en/manual/your-account/business-entities`
+  - Choosing your account language and region `/en/manual/your-account/languages`
+  - Resolving unauthorized use of your email on Shopify `/en/manual/your-account/resolving-unauth-use-of-email`
+  - Working with Shopify Partners `/en/manual/your-account/working_with_Shopify_Partners`
+- Online Store `/en/manual/online-store`
+  - Creating and editing pages `/en/manual/online-store/add-edit-pages`
+  - Setting up `/en/manual/online-store/setting-up`
+  - Shopify themes `/en/manual/online-store/themes`
+  - Menus and links `/en/manual/online-store/menus-and-links`
+  - Blogs `/en/manual/online-store/blogs`
+  - Accelerated checkout buttons `/en/manual/online-store/dynamic-checkout`
+  - Images `/en/manual/online-store/images`
+  - Closing for vacations `/en/manual/online-store/shopify-vacation-setting`
+  - SimGym `/en/manual/online-store/simgym`
+  - Storefront search `/en/manual/online-store/storefront-search`
+  - Web performance `/en/manual/online-store/web-performance`
+- POS `/en/manual/sell-in-person`
+  - Getting started with Shopify Point of Sale `/en/manual/sell-in-person/getting-started`
+  - Hardware for Shopify POS `/en/manual/sell-in-person/hardware`
+  - Retail markets `/en/manual/sell-in-person/markets`
+  - Selling in person with Shopify POS `/en/manual/sell-in-person/shopify-pos`
+  - QuickBooks POS `/en/manual/sell-in-person/quickbooks`
+- Sales channels `/en/manual/online-sales-channels`
+  - Managing sales channels `/en/manual/online-sales-channels/manage`
+  - Sales channels and Markets `/en/manual/online-sales-channels/channel-markets`
+  - Shop `/en/manual/online-sales-channels/shop`
+  - Shopify Collective `/en/manual/online-sales-channels/shopify-collective`
+  - Shopify agentic storefronts `/en/manual/online-sales-channels/agentic-storefronts`
+  - Marketplaces `/en/manual/online-sales-channels/marketplaces`
+  - Social commerce `/en/manual/online-sales-channels/social-commerce`
+  - Buy Button `/en/manual/online-sales-channels/buy-button`
+  - Sell on WordPress `/en/manual/online-sales-channels/sell-on-wordpress`
+- Shopify B2B `/en/manual/b2b`
+  - Getting started with Shopify B2B `/en/manual/b2b/getting-started`
+  - Companies and customers in B2B `/en/manual/b2b/companies-and-customers`
+  - Catalogs and pricing in B2B `/en/manual/b2b/catalogs`
+  - B2B wholesale setup checklist `/en/manual/b2b/getting-started-checklist`
+  - Sign-in and customer accounts `/en/manual/b2b/customer-login-and-accounts`
+  - Checkout, orders, and draft orders in B2B `/en/manual/b2b/checkout-and-orders`
+  - Store customization `/en/manual/b2b/store-customization`
+  - Sales staff in B2B `/en/manual/b2b/sales-staff`
+  - Reporting, automations, and integrations in B2B `/en/manual/b2b/reports-and-automations`
+  - B2B and Markets `/en/manual/b2b/markets`
+- Shopify Checkout `/en/manual/checkout-settings`
+  - Checkout form options `/en/manual/checkout-settings/checkout-form-options`
+  - Customizing and editing your checkout and accounts pages `/en/manual/checkout-settings/customize-checkout-configurations`
+  - Tipping options `/en/manual/checkout-settings/tips`
+  - Address collection preferences `/en/manual/checkout-settings/address-collection-preferences`
+  - Order processing `/en/manual/checkout-settings/order-processing`
+  - Checkout language `/en/manual/checkout-settings/checkout-language`
+  - Set an add-to-cart limit `/en/manual/checkout-settings/add-to-cart-limit`
+  - Ship and pickup in one order in Shopify Checkout `/en/manual/checkout-settings/ship-and-pickup`
+  - Split shipping in Shopify Checkout `/en/manual/checkout-settings/split-shipping`
+  - Store policies `/en/manual/checkout-settings/refund-privacy-tos`
+  - Bot protection for sales `/en/manual/checkout-settings/bot-protection`
+  - Cart permalinks `/en/manual/checkout-settings/cart-permalink`
+  - Customize checkout payment and delivery options `/en/manual/checkout-settings/checkout-customization`
+  - Test orders `/en/manual/checkout-settings/test-orders`
+  - Troubleshooting checkout payment issues `/en/manual/checkout-settings/troubleshooting-checkout-payments`
+  - Checkout Blocks app `/en/manual/checkout-settings/checkout-blocks`
+  - Script Editor app `/en/manual/checkout-settings/script-editor`
+- Domains `/en/manual/domains`
+  - Adding domains `/en/manual/domains/add-a-domain`
+  - Changing the domain type and target `/en/manual/domains/domain-type`
+  - Removing domains `/en/manual/domains/removing-domains`
+  - Managing ownership of your domain `/en/manual/domains/managing-domain-ownership`
+  - Email hosting and forwarding `/en/manual/domains/email-forwarding-and-hosting`
+  - Managing domain settings `/en/manual/domains/managing-domains`
+  - Domains terminology `/en/manual/domains/domains-terminology`
+  - Verifying your EU domain registration information `/en/manual/domains/verifying-eu-domain-registration-information`
+  - IPv6 support `/en/manual/domains/ipv6_support`
+  - Troubleshooting issues with domains `/en/manual/domains/troubleshoot-issues-with-domains`
+- Inventory and locations `/en/manual/inventory-and-locations`
+  - Locations `/en/manual/inventory-and-locations/locations`
+  - Getting started with inventory in Shopify `/en/manual/inventory-and-locations/fundamentals`
+  - Setting up your product inventory `/en/manual/inventory-and-locations/setup`
+  - Managing inventory quantities `/en/manual/inventory-and-locations/adjusting-inventory`
+  - Inventory stock counts `/en/manual/inventory-and-locations/inventory-counts`
+  - Inventory transfers and shipments `/en/manual/inventory-and-locations/inventory-transfers`
+  - Purchase orders `/en/manual/inventory-and-locations/purchase-orders`
+  - Migrating from Stocky to Shopify inventory management `/en/manual/inventory-and-locations/transitioning-from-stocky`
+- Order management and fulfillment `/en/manual/fulfillment`
+  - Getting started shipping with Shopify `/en/manual/fulfillment/getting-started`
+  - Features overview `/en/manual/fulfillment/features-overview`
+  - Setting up shipping and order fulfillment `/en/manual/fulfillment/setup`
+  - Managing orders `/en/manual/fulfillment/managing-orders`
+  - Fulfilling orders `/en/manual/fulfillment/fulfilling-orders`
+  - Fulfillment Network `/en/manual/fulfillment/shopify-fulfillment-network`
+- Products `/en/manual/products`
+  - Adding products `/en/manual/products/add-update-products`
+  - Product details `/en/manual/products/details`
+  - Variants `/en/manual/products/variants`
+  - Product media `/en/manual/products/product-media`
+  - Collections `/en/manual/products/collections`
+  - Product bundles `/en/manual/products/bundles`
+  - Purchase options `/en/manual/products/purchase-options`
+  - Digital products `/en/manual/products/digital-service-product`
+  - Combined listings `/en/manual/products/combined-listings-app`
+  - Importing and exporting `/en/manual/products/import-export`
+  - Searching and filtering `/en/manual/products/searching-filtering`
+  - Adding product disclosures to your products `/en/manual/products/product-disclosures`
+  - Creating and selling gift cards `/en/manual/products/gift-card-products`
+  - Vendors `/en/manual/products/managing-vendor-info`
+  - Dropshipping `/en/manual/products/dropshipping`
+  - Temporarily changing your product line `/en/manual/products/pivoting-your-product-line`
+  - Product analytics overview `/en/manual/products/analytics`
+- Finance `/en/manual/finance`
+  - Finance overview `/en/manual/finance/overview`
+  - Shopify Balance `/en/manual/finance/shopify-balance`
+  - Shopify Capital `/en/manual/finance/shopify-capital`
+  - Shopify Credit `/en/manual/finance/shopify-credit`
+  - Shopify Bill Pay `/en/manual/finance/shopify-bill-pay`
+  - Accessing Capital funding in the Shopify Balance app `/en/manual/finance/capital-funding-balance-app`
+  - Using Sidekick in the Shopify Balance app `/en/manual/finance/sidekick-balance-app`
+- Payments `/en/manual/payments`
+  - Getting paid `/en/manual/payments/getting-paid`
+  - Shop Cash `/en/manual/payments/shop-cash`
+  - Shop Pay `/en/manual/payments/shop-pay`
+  - Shopify Payments `/en/manual/payments/shopify-payments`
+  - PayPal Express Checkout `/en/manual/payments/paypal`
+  - Accelerated checkouts `/en/manual/payments/accelerated-checkouts`
+  - Shop Pay Installments `/en/manual/payments/shop-pay-installments`
+  - Third-party providers `/en/manual/payments/third-party-providers`
+  - Additional payments `/en/manual/payments/additional-payment-methods`
+  - Manual payments `/en/manual/payments/manual-payments`
+  - Partial payments `/en/manual/payments/partial-payments`
+  - Payment authorization and capture `/en/manual/payments/payment-authorization`
+  - Chargebacks and inquiries `/en/manual/payments/chargebacks`
+  - Fraud prevention `/en/manual/payments/fraud-prevention`
+  - Troubleshooting `/en/manual/payments/troubleshooting`
+- Customers `/en/manual/customers`
+  - Customer accounts `/en/manual/customers/customer-accounts`
+  - Managing customers `/en/manual/customers/manage-customers`
+  - Searching for customer profiles `/en/manual/customers/customer-search`
+  - Customer segmentation `/en/manual/customers/customer-segmentation`
+  - Importing and exporting customers `/en/manual/customers/import-export-customers`
+  - Importing from Mailchimp `/en/manual/customers/mailchimp`
+  - Providing online customer service `/en/manual/customers/customer-service`
+  - Solving customer CSV file errors `/en/manual/customers/customer-csv-issues`
+  - Store credit `/en/manual/customers/store-credit`
+- Shopify Flow `/en/manual/shopify-flow`
+  - Getting started with Shopify Flow `/en/manual/shopify-flow/getting-started`
+  - Creating workflows `/en/manual/shopify-flow/create`
+  - Managing workflows `/en/manual/shopify-flow/manage`
+  - Reference `/en/manual/shopify-flow/reference`
+  - Developing extensions `/en/manual/shopify-flow/develop`
+- Discounts `/en/manual/discounts`
+  - Discount types `/en/manual/discounts/discount-types`
+  - Discount methods `/en/manual/discounts/discount-methods`
+  - Managing and editing your discounts `/en/manual/discounts/managing-discounts`
+  - Combining discounts `/en/manual/discounts/discount-combinations`
+  - Abandoned checkout emails `/en/manual/discounts/discounts-for-abandoned-checkout-recovery-emails`
+  - Exporting discounts `/en/manual/discounts/export-discount-codes`
+  - Discounting gift cards `/en/manual/discounts/discount-gift-card`
+  - Sales channel settings `/en/manual/discounts/sales-channel-discounts`
+  - FAQ `/en/manual/discounts/discounts-faq`
+- Custom data `/en/manual/custom-data`
+  - Overview `/en/manual/custom-data/overview`
+  - Navigating Content `/en/manual/custom-data/navigating-content`
+  - Metafields `/en/manual/custom-data/metafields`
+  - Metaobjects `/en/manual/custom-data/metaobjects`
+  - Options `/en/manual/custom-data/options`
+  - Terminology `/en/manual/custom-data/terminology`
+- Shopify Inbox `/en/manual/inbox`
+  - Installing and accessing Shopify Inbox `/en/manual/inbox/setup`
+  - Assigning your Inbox agent to conversations `/en/manual/inbox/assigning-your-ai-staff-member`
+  - Configuring your Inbox agent persona `/en/manual/inbox/agent-persona`
+  - Training your Inbox agent `/en/manual/inbox/training-your-agent`
+  - Managing customer conversations `/en/manual/inbox/conversations`
+  - Configuring Shopify Inbox `/en/manual/inbox/configure-inbox`
+  - Chat settings and appearance `/en/manual/inbox/chat-settings-and-appearance`
+- Marketing and promotions `/en/manual/promoting-marketing`
+  - Developing a marketing plan `/en/manual/promoting-marketing/developing-a-marketing-plan`
+  - Setting up marketing in Shopify `/en/manual/promoting-marketing/create-marketing`
+  - Create a content marketing strategy `/en/manual/promoting-marketing/content-marketing`
+  - Managing your brand assets `/en/manual/promoting-marketing/managing-brand-assets`
+  - Improving SEO `/en/manual/promoting-marketing/seo`
+  - Analyzing online marketing `/en/manual/promoting-marketing/analyze-marketing`
+  - Autopilot `/en/manual/promoting-marketing/autopilot`
+  - Shopify Audiences `/en/manual/promoting-marketing/shopify-audiences`
+  - Shopify Knowledge Base `/en/manual/promoting-marketing/knowledge-base`
+  - Sales events and promotions `/en/manual/promoting-marketing/sales`
+  - Shopify Collabs `/en/manual/promoting-marketing/collabs`
+  - Shopify Product Network `/en/manual/promoting-marketing/shopify-product-network`
+  - Pixels and customer events `/en/manual/promoting-marketing/pixels`
+- Analytics `/en/manual/reports-and-analytics`
+  - Shopify analytics `/en/manual/reports-and-analytics/shopify-reports`
+  - Google Analytics `/en/manual/reports-and-analytics/google-analytics`
+  - Analytics discrepancies `/en/manual/reports-and-analytics/discrepancies`
+- Apps `/en/manual/apps`
+  - About apps `/en/manual/apps/about-apps`
+  - Apps made by Shopify `/en/manual/apps/apps-by-shopify`
+  - Finding and choosing apps `/en/manual/apps/finding-choosing-apps`
+  - Installing and setting up apps `/en/manual/apps/install-setup-apps`
+  - Managing apps `/en/manual/apps/managing-apps`
+  - Extensions and functions `/en/manual/apps/extensions-and-functions`
+  - Getting help with apps `/en/manual/apps/getting-support`
+  - Uninstalling apps `/en/manual/apps/uninstalling-apps`
+- International sales tools `/en/manual/international`
+  - Pricing in local currencies `/en/manual/international/pricing`
+  - Set up automatic storefront redirection for your customers `/en/manual/international/automatic-redirection`
+  - Geolocation `/en/manual/international/geolocation`
+  - International domains `/en/manual/international/managing-international-domains`
+  - Localization and translation `/en/manual/international/languages`
+  - Duties and import taxes `/en/manual/international/duties-and-import-taxes`
+  - Payments `/en/manual/international/payments`
+  - International shipping `/en/manual/international/shipping`
+  - Duty and tax inclusive pricing `/en/manual/international/tax-inclusive`
+  - Understanding the General Product Safety Regulation (GPSR) `/en/manual/international/gpsr`
+  - CPSC eFiling compliance `/en/manual/international/cpsc`
+  - Managed Markets `/en/manual/international/managed-markets`
+- Markets `/en/manual/markets`
+  - Customizations `/en/manual/markets/customizations`
+  - Getting started `/en/manual/markets/getting-started`
+  - Rollouts `/en/manual/markets/rollouts`
+  - Discounts and gift cards in Markets `/en/manual/markets/discounts-and-gift-cards`
+  - International SEO for markets `/en/manual/markets/seo`
+  - Backup region in Markets `/en/manual/markets/backup-region`
+  - Bulgaria currency change in Markets `/en/manual/markets/bulgaria-currency-transition`
+- Partner Directory `/en/manual/partner-directory`
+  - Hiring help `/en/manual/partner-directory/hiring-help`
+- Shopify Community `/en/manual/community`
+  - Additional Shopify resources `/en/manual/community/additional-shopify-resources`
+- Organization settings `/en/manual/organization-settings`
+  - Billing `/en/manual/organization-settings/billing`
+  - Organization analytics `/en/manual/organization-settings/analytics`
+  - Shopify Plus plan feature test drives `/en/manual/organization-settings/test-drive`
+  - Expansion stores `/en/manual/organization-settings/expansion-stores`
+- Taxes `/en/manual/taxes`
+  - General tax set-up steps `/en/manual/taxes/general-steps`
+  - Basic Tax `/en/manual/taxes/basic-tax`
+  - Tax impact on pricing `/en/manual/taxes/tax-collection-impact-on-pricing`
+  - Include taxes in product prices `/en/manual/taxes/include-exclude-taxes`
+  - Shopify POS taxes `/en/manual/taxes/set-adjust-pos-taxes`
+  - Shopify Tax `/en/manual/taxes/shopify-tax`
+  - Basic Tax `/en/manual/taxes/registration`
+  - Manual tax settings `/en/manual/taxes/manual-tax-settings`
+  - Tax apps `/en/manual/taxes/tax-apps`
+  - US taxes `/en/manual/taxes/us`
+  - EU taxes `/en/manual/taxes/eu`
+  - TSE Compliance in Germany `/en/manual/taxes/tse-app`
+  - UK taxes `/en/manual/taxes/uk`
+  - Canadian taxes `/en/manual/taxes/canada`
+  - Taxes in Japan `/en/manual/taxes/japan`
+  - GST in India `/en/manual/taxes/india-gst`
+  - Duty and import taxes `/en/manual/taxes/charging-international-duties`
+  - Tax reports `/en/manual/taxes/tax-reports`
+  - Tax overrides and exemptions `/en/manual/taxes/tax-overrides`
+  - Shipping tax `/en/manual/taxes/shipping-tax`
+  - Digital product taxes `/en/manual/taxes/tax-on-digital-products`
+  - Data Exporter `/en/manual/taxes/data-exporter-app`
+- Custom shopping experiences `/en/manual/custom-storefronts`
+- Shopify Catalog `/en/manual/shopify-catalog`
+  - Requirements for being included in Shopify Catalog `/en/manual/shopify-catalog/requirements`
+  - Optimizing your products for AI platforms `/en/manual/shopify-catalog/optimizing-products`
+  - Customizing your product data for Shopify Catalog `/en/manual/shopify-catalog/mapping`
+
+### Shopify Partners `/en/partners` (route partners._index)
+- Build & integrate `/en/partners/build-integrate`
+  - Building apps `/en/partners/build-integrate/making-apps`
+  - Understanding themes `/en/partners/build-integrate/making-themes`
+- Grow your business `/en/partners/grow-your-business`
+  - Pitch Shopify to clients `/en/partners/grow-your-business/for-clients`
+  - Shopify Partner Directory `/en/partners/grow-your-business/partner-directory`
+- Help & support `/en/partners/help-support`
+  - Getting support as a Shopify Partner `/en/partners/help-support/getting-support`
+  - FAQs `/en/partners/help-support/faq`
+- Manage clients and stores `/en/partners/manage-clients-stores`
+  - Getting started `/en/partners/manage-clients-stores/getting-started`
+  - Store setup basics `/en/partners/manage-clients-stores/store-setup-basics`
+  - About Shopify POS `/en/partners/manage-clients-stores/pos`
+  - Next steps `/en/partners/manage-clients-stores/next-steps`
+  - Testing orders in client transfer stores `/en/partners/manage-clients-stores/test-orders`
+  - Working on client stores `/en/partners/manage-clients-stores/working-on-client-stores`
+  - Working with media `/en/partners/manage-clients-stores/creating-media`
+  - Client transfer stores and collaborations `/en/partners/manage-clients-stores/client-transfer-stores`
+  - Migrating clients to Shopify `/en/partners/manage-clients-stores/migrating-clients`
+- Managing your Partner account `/en/partners/manage-account`
+  - Manage your payouts and invoices `/en/partners/manage-account/manage-payouts-invoices`
+  - Managing Users `/en/partners/manage-account/manage-users`
+  - Partner and Dev Dashboards `/en/partners/manage-account/dashboard`
+  - Partner settings `/en/partners/manage-account/settings`
+  - Verifying your identity as a Shopify Partner `/en/partners/manage-account/verifying-your-identity`
+  - Associated accounts `/en/partners/manage-account/associated-accounts`
+  - Managing your Shopify account `/en/partners/manage-account/manage-shopify-account`
+  - Managing referrals `/en/partners/manage-account/referrals`
+- Partner Program `/en/partners/partner-program`
+  - About the program `/en/partners/partner-program/about`
+  - How Partners earn on Shopify `/en/partners/partner-program/how-to-earn`
+  - Getting paid `/en/partners/partner-program/getting-paid`
+  - Getting started `/en/partners/partner-program/getting-started`
+  - How to qualify `/en/partners/partner-program/how-to-qualify`
+  - Shopify branding `/en/partners/partner-program/shopify-branding`
+  - Taxes on sales `/en/partners/partner-program/sales-taxes`
+  - Glossary `/en/partners/partner-program/glossary`
+  - Identity verification for payouts `/en/partners/partner-program/id-verification-countries`
+
+### Pages no menu places (the outline's own label)
+- /en/contact/login-issue `/en/contact/login-issue` (route contact)
+- Shopify Help Center `/en/manual/sell-in-person/hardware/pos-hardware-support/barcode-printers` (route manual.sell-in-person.hardware.pos-hardware-support.$categoryId._index; its lists: structures/shopify/help-pos-hardware-troubleshooter/)
+- Shopify Help Center `/en/manual/sell-in-person/hardware/pos-hardware-support/barcode-scanners` (route manual.sell-in-person.hardware.pos-hardware-support.$categoryId._index; its lists: structures/shopify/help-pos-hardware-troubleshooter/)
+- Shopify Help Center `/en/manual/sell-in-person/hardware/pos-hardware-support/card-readers` (route manual.sell-in-person.hardware.pos-hardware-support.$categoryId._index; its lists: structures/shopify/help-pos-hardware-troubleshooter/)
+- Shopify Help Center `/en/manual/sell-in-person/hardware/pos-hardware-support/receipt-printers` (route manual.sell-in-person.hardware.pos-hardware-support.$categoryId._index; its lists: structures/shopify/help-pos-hardware-troubleshooter/)
+- Managing your Shopify POS variants in your Shopify admin `/en/manual/sell-in-person/shopify-pos/inventory-management/products/variants` (breadcrumbs: Home > POS > Selling in person with Shopify POS > Inventory management > Managing your Shopify POS variants in your Shopify admin)

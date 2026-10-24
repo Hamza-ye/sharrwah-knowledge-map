@@ -1,0 +1,19 @@
+{
+ "n": 59,
+ "url": "https://woocommerce.com/document/woopayments/fees/",
+ "dir": "items/059-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:04Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/woopayments/fees/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 50512,
+ "cited_in": [
+  "WC-S-0537",
+  "WC-S-0538"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "9c0bdce0f35db713e3697d66cd65aacb817429f2e3b2de2d2f2f8a8b39189417",
+ "raw_ext": "html"
+}

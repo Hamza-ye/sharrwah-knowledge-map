@@ -1,0 +1,20 @@
+{
+ "n": 41,
+ "url": "https://help.shopify.com/en/manual/markets/backup-region.md",
+ "dir": "items/041-help.shopify.com",
+ "fetched_at": "2026-10-11T06:12:59Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/markets/backup-region.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 1307,
+ "cited_in": [
+  "SH-S-0573",
+  "SH-S-0574",
+  "SH-S-0575"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "160f25fc0aed5fcacef779cf2be3e7cf901b9a56f871482022a0980d27ebf875",
+ "raw_ext": "txt"
+}

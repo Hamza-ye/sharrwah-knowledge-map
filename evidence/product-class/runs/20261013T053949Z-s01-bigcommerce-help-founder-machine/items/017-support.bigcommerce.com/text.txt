@@ -1,0 +1,137 @@
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+GETTING STARTED
+PRODUCTS
+STORE SETUP
+B2B
+DESIGN AND CONTENT
+MANAGE STORE
+CHANNEL MANAGER
+MARKETING
+SEO
+Discounts And Coupons
+Email Marketing
+Email Marketing Settings
+Newsletter settings
+Exporting the newsletter list
+FAQ
+Abandoned Cart Saver
+DATA SOLUTIONS
+ACCOUNT
+TD BANK
+Newsletter and Email Marketing Settings
+What We'll Cover
+Newsletter settings
+Exporting the newsletter list
+FAQ
+
+Email Marketing is a great way to keep in touch and build relationships with shoppers who frequent your store. Email marketing is a common, convenient way to advertise sales, promote your business, and run marketing campaigns designed to focus on shoppers of a certain product or category of products.
+
+BigCommerce comes with a built-in newsletter sign-up box and easily integrates with many email marketing apps, making it easy to promote your business.
+
+ 
+Newsletter Settings
+
+Newsletter Settings, found under Marketing › Email Marketing, controls the process for when a customer signs up for the newsletter at checkout or via the newsletter sign-up box (usually located in the store's footer).
+
+ 
+
+Localized Store Experiences: Storefront messages for subscription sign-up errors are available for all of our supported languages. For more information on the default language store setting, see Store Profile Settings.
+
+Allow Newsletter Subscriptions — This determines if you want to allow customers to subscribe to your store's newsletter. If unchecked, the newsletter sign-up box will not be displayed.
+Tick Newsletter Checkbox — This determines whether the "Do you wish to subscribe to our newsletter?" box that appears at checkout is checked by default. Customers will need to uncheck it if they do not want to receive the newsletter.
+Show Newsletter Summary — This will allow you to provide upfront details about the newsletter, such as how often it is released and its general content.
+ 
+
+Note: If your online store is based in the European Union or your store targets shoppers in the EU, enabling the Tick Newsletter Checkbox setting places your business at risk of non-compliance with privacy regulations such as the General Data Protection Regulation (GDPR).
+
+ 
+Exporting the Newsletter List
+
+All customer data is stored in a CSV file which can be exported and then imported into your preferred email marketing platform. To access the CSV file, go to Marketing › Email Marketing and click the Export tab. Then click the Download to CSV file link to download your newsletter subscriber list.
+
+If you need to clear your store’s existing subscriber list, click delete all subscribers. Note that this action will not delete subscribers in your email marketing solution.
+
+ 
+FAQ
+
+How do I create a newsletter to send to my shoppers?
+
+We recommend using one of the email marketing apps in the App Marketplace to compose and design your store's newsletters. Import your newsletter list into the app to send the newsletter to your subscribed customers.
+
+How can a customer unsubscribe themselves from newsletter, abandoned cart saver, and product review emails?
+
+If a customer would like to unsubscribe from all of these emails, they can log into their account and uncheck Exclusive Offers on the Account Settings tab. The text for the checkbox may differ, if the account signup form field has been edited.
+
+When viewing the customer's details in the control panel, merchants will see Receive ACS/Review Emails updated to No for the customer.
+
+Why are my customers unable to unsubscribe from marketing emails in their storefront accounts?
+
+If Require Consent is unchecked in your store's Miscellaneous settings, your customers will not see the Exclusive Offers checkbox in their Account Settings.
+
+Note that if your store is on a Core plan, the Require Consent setting is not available in your control panel. You can unsubscribe customers from marketing emails in the control panel by editing the Receive ACS/Review Emails field in their account details.
+
+Can I import a subscriber list?
+
+Yes, the BigTools app allows you to import a CSV file containing subscriber email addresses. See BigTools for more information.
+
+Do this in my store
+
+GO TO EMAIL MARKETING IN MY STORE
+
+Additional Resources
+General Data Protection Regulation (GDPR)
+Using the App Marketplace
+Marketing and SEO Advice Community Group
+Customers and Subscribers API (Dev Center)
+Email Marketing (App Marketplace)
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+Newsletter and Email Marketing Settings

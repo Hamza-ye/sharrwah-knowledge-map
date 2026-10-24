@@ -1,0 +1,42 @@
+[
+{
+"n": 1,
+"url": "https://zid.sa/en/syria/",
+"dir": "items/001-zid.sa",
+"fetched_at": "2026-10-19T00:35:16Z",
+"http_raw": 200,
+"http_browser": 200,
+"final_url": "https://zid.sa/en/syria/",
+"content_type": "text/html; charset=utf-8",
+"cited_in": "studies/proposals/records/Q6/zid/citations.tsv",
+"note": "little visible text (54 characters)",
+"result": "captured",
+"primary_file": "raw.html",
+"sha256": "35b55eb76bdb559c9b84dec3217a35dc245bbde81dd41b384416be0b51957f06",
+"bytes": 266862,
+"date_hint": "",
+"date_source": "",
+"age_class": "undated (live page on capture date)",
+"text_file": "text.txt"
+},
+{
+"n": 2,
+"url": "https://zid.sa/en/uae/",
+"dir": "items/002-zid.sa",
+"fetched_at": "2026-10-19T00:35:17Z",
+"http_raw": 200,
+"http_browser": 200,
+"final_url": "https://zid.sa/en/uae/",
+"content_type": "text/html; charset=utf-8",
+"cited_in": "studies/proposals/records/Q6/zid/citations.tsv",
+"note": "little visible text (54 characters)",
+"result": "captured",
+"primary_file": "raw.html",
+"sha256": "11f63c323f1d5f219dd37f9fa677e54fe10c384a73ce59f5913c16d818017f1c",
+"bytes": 284336,
+"date_hint": "",
+"date_source": "",
+"age_class": "undated (live page on capture date)",
+"text_file": "text.txt"
+}
+]

@@ -1,0 +1,25 @@
+{
+ "n": 89,
+ "url": "https://help.shopify.com/en/manual/taxes.md",
+ "dir": "items/089-help.shopify.com",
+ "fetched_at": "2026-10-11T06:13:04Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/taxes.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 1528,
+ "cited_in": [
+  "SH-S-0506",
+  "SH-S-0507",
+  "SH-S-0508",
+  "SH-S-0509",
+  "SH-S-0510",
+  "SH-S-0511",
+  "SH-S-0512",
+  "SH-S-0520"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "c123998aa5e8db33c28a4174591b972b78b15bf7a8eaae7a4e06dc3e56b76ede",
+ "raw_ext": "txt"
+}

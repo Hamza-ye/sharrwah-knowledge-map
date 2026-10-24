@@ -1,0 +1,19 @@
+{
+ "n": 21,
+ "url": "https://docs.bigcommerce.com/developer/docs/storefront/headless/products/faceted-textual-search.md",
+ "dir": "items/021-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:27:16Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/docs/storefront/headless/products/faceted-textual-search.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 7507,
+ "cited_in": [
+  "BC-S-0069",
+  "BC-S-0070"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "7d0f806b7809af0842930d65fadfa34bcbc219eba3a32406bccec8a13d21ae18",
+ "raw_ext": "txt"
+}

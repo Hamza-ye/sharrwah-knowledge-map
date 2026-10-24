@@ -1,0 +1,18 @@
+{
+ "n": 23,
+ "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/checkouts.md",
+ "dir": "items/023-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:19:38Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/checkouts.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 308,
+ "cited_in": [
+  "BC-S-0072"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "eba0a5707ce3a5d2824929e5f0734e1d74579b8c8131b5b55aea3d172e5184a6",
+ "raw_ext": "txt"
+}

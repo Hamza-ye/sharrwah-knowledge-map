@@ -1,0 +1,27 @@
+{
+ "n": 83,
+ "url": "https://help.shopify.com/en/manual/privacy-and-security/privacy/international-data-transfers/onward-transfers.md",
+ "dir": "items/083-help.shopify.com",
+ "fetched_at": "2026-10-11T06:13:04Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/privacy-and-security/privacy/international-data-transfers/onward-transfers.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 2065,
+ "cited_in": [
+  "SH-S-0636",
+  "SH-S-0637",
+  "SH-S-0638",
+  "SH-S-0639",
+  "SH-S-0640",
+  "SH-S-0641",
+  "SH-S-0642",
+  "SH-S-0643",
+  "SH-S-0644",
+  "SH-S-0645"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "3fee028880d783d3af5de4570e57373a716ca8b622ddfede1539d49c161ffada",
+ "raw_ext": "txt"
+}

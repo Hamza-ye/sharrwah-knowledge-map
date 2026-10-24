@@ -1,0 +1,28 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Mon, 12 Oct 2026 04:27:14 GMT
+content-type: text/markdown; charset=utf-8
+age: 15026
+cache-control: public, max-age=0, must-revalidate
+cf-cache-status: DYNAMIC
+cf-placement: local-IAD
+x-vercel-id: iad1::vps5j-1791779234191-e39555ce5c96
+content-encoding: br
+etag: W/"72feb7df524543fa6d5534e70bf36abf"
+link: </developer/docs/storefront/headless/cart-and-checkout/abandoned-carts.md>; rel="alternate"; type="text/markdown", </developer/docs/storefront/headless/cart-and-checkout/llms.txt>; rel="describedby"
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+permissions-policy: camera=(self), microphone=(self), geolocation=()
+referrer-policy: strict-origin-when-cross-origin
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=t5xCojasjh59LHyxt%2F6ZeXIdKZeOGQ3EF8BJDciI6NIIOTSJGgvmS78MlzoYTJR%2BfOaSNWh4XF3GbMFO446oUHnA1J8zdjrETCWwscwbwq7bILQTV4RwH5eSjOlWKI42OwMpBrr0ec%2FaXg%3D%3D"}]}
+server: cloudflare
+strict-transport-security: max-age=2592000; includeSubDomains
+x-content-type-options: nosniff
+x-fern-renderer: static
+x-vercel-cache: MISS
+vary: accept-encoding
+set-cookie: __cf_bm=4_WNUmL8ZCjbEvJOJcw5GD98KGo_4xjX4dZ0RwX8tJU-1791779234.1778512-1.0.1.1-EHbRRaZmAvm4tgUimvsgJCqSgSEAic1.teEJAVPcLwqZ63BGHHMt_Mlof.Xm2V9bWLLKPqAOtmclS2Wn9OARP2bLnP0kVMOX0LClCh2zVC2siuWCyGcpZ0t3pI0Jeo5k; HttpOnly; SameSite=None; Secure; Path=/; Domain=bigcommerce.com; Expires=Mon, 12 Oct 2026 04:57:14 GMT
+bc-ray: 1
+cf-ray: a49359d59de6e5f7-IAD
+alt-svc: h3=":443"; ma=86400
+

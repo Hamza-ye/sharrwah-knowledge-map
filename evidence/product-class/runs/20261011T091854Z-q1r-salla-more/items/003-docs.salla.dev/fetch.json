@@ -1,0 +1,19 @@
+{
+ "n": 3,
+ "url": "https://docs.salla.dev/component-bundle/publish-requirements.md",
+ "dir": "items/003-docs.salla.dev",
+ "fetched_at": "2026-10-11T09:18:57Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.salla.dev/component-bundle/publish-requirements.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 4230,
+ "cited_in": [
+  "SA-S-5032",
+  "SA-S-5033"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "e0ab30ca01113253d02d7f26767ed99c0b4451f6ad7d11e6335570d0380e589c",
+ "raw_ext": "txt"
+}

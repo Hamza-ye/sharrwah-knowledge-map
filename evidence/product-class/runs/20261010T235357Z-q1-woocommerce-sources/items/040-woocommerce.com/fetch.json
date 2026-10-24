@@ -1,0 +1,21 @@
+{
+ "n": 40,
+ "url": "https://woocommerce.com/document/shop-currency/",
+ "dir": "items/040-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:02Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/shop-currency/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 42507,
+ "cited_in": [
+  "WC-S-0874",
+  "WC-S-0875",
+  "WC-S-0876",
+  "WC-S-0877"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "0b665a00f263f2221e3075b3b2e340de041b4dab80c4cbc1b5c9cb8707188c4f",
+ "raw_ext": "html"
+}

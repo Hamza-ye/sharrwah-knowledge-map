@@ -1,0 +1,26 @@
+# Duties and import taxes
+
+If you ship internationally, then your customers might be charged duties and import taxes when their shipment arrives. You can collect an estimate of those amounts at checkout instead, which helps your customers avoid unexpected charges on delivery.
+
+### Understanding what your customer is charged
+
+Customs authorities set the amount from the product's classification, its origin, and the destination's rules. [Understanding customs fees](/manual/international/duties-and-import-taxes/understanding-customs-fees) covers the individual fees and the de minimis thresholds that decide which of them apply. [Carriers and shipping terms](/manual/international/duties-and-import-taxes/carriers-and-shipping-terms) covers who collects the charges and who pays them, and [Understanding tariffs](/manual/international/duties-and-import-taxes/understanding-tariffs) covers the tariff programs charged on top.
+
+### Setting up duty and import tax collection
+
+Start with the [considerations](/manual/international/duties-and-import-taxes/considerations), because some checkout customizations, destinations, and order types aren't supported. Then [collect duties and import taxes at checkout](/manual/international/duties-and-import-taxes/charging-duties), which covers the transaction fee, the Harmonized System (HS) codes your products need, the settings that change how amounts are calculated, and how to stop collecting.
+
+### Shipping internationally and staying compliant
+
+[Additional tasks](/manual/international/duties-and-import-taxes/additional-tasks) covers Delivered Duty Paid (DDP) labels, commercial invoices, your shipping policy, and refunds. If you ship between the United States, Mexico, and Canada, then work through the [USMCA compliance checklist](/manual/international/duties-and-import-taxes/USMCA-compliance-checklist). When a charge isn't what you expected, [troubleshooting](/manual/international/duties-and-import-taxes/troubleshooting) covers the common causes.
+
+### In this section
+
+- [Carriers and shipping terms for international orders](/en/manual/international/duties-and-import-taxes/carriers-and-shipping-terms)
+- [Understanding customs fees](/en/manual/international/duties-and-import-taxes/understanding-customs-fees)
+- [Understanding tariffs](/en/manual/international/duties-and-import-taxes/understanding-tariffs)
+- [Considerations for charging duties and import taxes at checkout](/en/manual/international/duties-and-import-taxes/considerations)
+- [Collecting international duties and import taxes at checkout](/en/manual/international/duties-and-import-taxes/charging-duties)
+- [Additional tasks for collecting duties and import taxes at checkout](/en/manual/international/duties-and-import-taxes/additional-tasks)
+- [Troubleshooting duties and import taxes at checkout](/en/manual/international/duties-and-import-taxes/troubleshooting)
+- [USMCA compliance checklist for shipments to the US](/en/manual/international/duties-and-import-taxes/USMCA-compliance-checklist)

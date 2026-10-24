@@ -1,0 +1,404 @@
+Skip to content
+Products
+Pricing
+Partners
+Support
+Resources
+Sign in
+Get Started
+Support Home
+What Data Does Jetpack Sync?
+All support topics
+
+Browse by product
+
+Akismet Anti-spam
+(opens in a new tab)
+Blaze
+Blocks
+Boost
+Jetpack AI
+Manage
+Mobile app
+Newsletter
+Scan
+Search
+Social
+Stats
+VaultPress Backup
+VideoPress
+What Data Does Jetpack Sync?
+
+As part of the required connection to WordPress.com, Jetpack caches your site’s data to WordPress.com servers (which power all of Jetpack’s functionality). Jetpack syncs all the data needed for all of its features, whether activated or not, to Automattic’s servers.
+
+We’re glad to help your site grow, and we want to be clear about what’s happening with your data behind the scenes, including what data is synced and used when you use Jetpack and connect it to Automattic’s servers. Please note that when we refer to Jetpack, we mean any Jetpack plugins developed by Automattic (like Jetpack, Jetpack Boost, and Jetpack Search).
+
+To take advantage of Jetpack’s valuable features, certain information about your site’s content, settings, and configuration must be synced with our servers. This data begins to sync when Jetpack is installed and connected to WordPress.com.
+
+It is important to note that Jetpack syncs all the data required by all of its features, whether they are activated or not, to Automattic’s servers.
+
+We handle synced data as outlined in our Privacy Policy.
+
+Content and settings
+
+To display accurate information about your site in places such as notification emails and the WordPress.com Reader, Jetpack syncs the following information:
+
+Site name.
+Site tagline.
+Site timezone.
+Site locale.
+Permalink structure.
+
+To allow the creation and management of content from different locations and devices (e.g. from the WordPress.com desktop app or Jetpack (formerly WordPress.com) mobile app, information about the following is also synced:
+
+Posts, including the WordPress.com user ID of the author.
+Pages, including the WordPress.com user ID of the author.
+Custom post types.
+Any related metadata, including:
+Whether the post is public.
+Whether the post is excluded from search.
+The permalink of the post.
+The excerpt of the post, if available.
+The WP.me shortlink of the post, if available.
+External ID (specific to the site in question) of the post author.
+The featured image of the post, if available.
+
+This content index helps reduce the load on your site’s servers. It also allows related content and an optimized search index to be generated and displayed where appropriate.
+
+User-related data
+
+Jetpack syncs miscellaneous bits of user information, such as:
+
+your IDs, usernames, email addresses, roles, and capabilities of registered users. This does not include passwords.
+your ID of any users who modify the site and the time changes are made (e.g. ID of who added a new user, modified the site icon, or trashed a comment).
+Twitter username, if configured with Jetpack.
+Jetpack Social connection data, which includes email addresses and usernames associated with connected services.
+For WordAds customers, we also sync the account’s email and physical addresses. Review the complete terms of service for the program here.
+Successful and failed login attempts (this includes the IP address and user agent of the individual performing the login action).
+
+This user-related data is utilized by Jetpack in a variety of ways, including:
+
+Preventing unauthorized access.
+Providing Activity log.
+Managing subscribers and followers.
+Seamless integration with third-party social media services.
+Themes and plugins
+
+The following information related to themes and plugins is synced:
+
+The name of any themes or plugins currently in use.
+The version and capabilities (e.g. featured image, menu locations, and pending updates).
+Plugin installation path.
+
+This enables Jetpack to provide services such as:
+
+Remote plugin installation and management via WordPress.com.
+Automatic plugin updates.
+Automatic theme updates.
+Theme installation.
+Theme customization from WordPress.com (including via the desktop or mobile apps).
+Aggregated statistics and insights.
+Additional data
+
+We also sync the following data to further enable and improve the functionality of Jetpack:
+
+Comments and their associated metadata, including:
+Comment author name.
+Comment author email address.
+Comment author URL.
+Comment author IP address.
+Comment author WordPress.com user ID, if known.
+Comment author external (specific to the site in question) user ID, if known.
+Taxonomies (including categories and tags).
+Custom taxonomies (if used on the site).
+Menus.
+All allow listed options, constants, and function outputs (e.g. whether the site is a multi-site install).
+All core WordPress and Jetpack options.
+Some WooCommerce options and data.
+
+Syncing these pieces of information enables a number of features, including comment spam defense (if using Akismet), displaying notifications, including categorized content in the WordPress.com Reader, as well as adding the ability to edit your menus and post data directly from WordPress.com (including through the desktop and mobile apps).
+
+JSON API (REST API proxy)
+
+The JSON API feature (also called the REST API proxy) lets WordPress.com make authenticated REST API requests to your live site on your behalf. This is separate from Jetpack Sync. Instead of reading data from the copy cached on Automattic’s servers, the REST API proxy queries your live site directly and returns the current response, so it can expose data that Jetpack Sync does not sync.
+
+Through these authenticated REST API requests, the JSON API module can expose live site data, including full WooCommerce order details that contain personally identifiable information (PII). This includes order data that Jetpack Sync explicitly excludes, such as the purchaser’s billing and shipping address, the purchaser’s email address, the purchaser’s phone number, the transaction ID, the purchaser’s IP address, and the purchaser’s user agent.
+
+This behavior is different from Jetpack Sync. Jetpack Sync excludes the PII fields listed in the Orders section from the data it caches on Automattic’s servers. The REST API proxy does not apply those exclusions, because it reads the live response from your site rather than the synced copy.
+
+Automattic support staff can access your live site through the REST API proxy using the Switch to User feature. When a support representative uses Switch to User, they make authenticated REST API requests as your user, which can return the live site data described above, including full WooCommerce order details with PII.
+
+Data used by feature
+
+As a reminder, Jetpack syncs all the data required by all of its features, whether activated or not, to Automattic’s servers. However, you can dig into what data each feature or module uses by clicking on any of the following links to review more in-depth privacy information.
+
+Note that some features are automatically activated; you can find deactivation instructions at the following links as well.
+
+Feature	Auto-activated?
+Ad Block	
+Back up your site with Jetpack VaultPress Backup	
+Blogroll Block	
+Business Hours Block	
+Calendly Block	
+Carousel	
+Comment Likes	
+Contact Info block	
+Control Widget Visibility	
+Create Better Content with Jetpack AI	
+Custom Content Types in Jetpack	
+Displaying Featured Images in WP Admin Post List	
+Donations Form Block	
+Embed media content using shortcodes with Jetpack	
+Enhance User Experience with Multistep Forms	
+Enhanced Distribution	
+Eventbrite Checkout Block	
+Extra Sidebar Widgets	
+Get Started with Jetpack Social	
+GIF Block	
+Google Calendar Block	
+Gravatar Hovercards	
+Image Compare Block	
+Image Select Field	
+Infinite Scroll	
+Jetpack Activity Log	
+Jetpack Boost	
+Jetpack Boost: Image Performance Guide	
+Jetpack Comments	
+Jetpack Copy Post	
+Jetpack Data Retention for Plan Offerings	
+Jetpack Firewall in the Jetpack Protect Plugin	
+Jetpack Form Block	
+Yes
+
+Jetpack Newsletter	
+Jetpack Protect	
+Jetpack Scan	
+Jetpack Search	
+Jetpack Stats	
+Jetpack VideoPress	
+Jetpack WAF (Web Application Firewall)	
+Latest Instagram Posts Block	
+Lazy Loading Images	
+Lead Capture Form	
+Like Block	
+Likes	
+Loom Block	
+Mailchimp Block	
+Manage Newsletter subscribers in WP Admin	
+Managing Contact Form Responses and Integrations	
+Map Block	
+Markdown in Classic Editor	
+Notifications	
+OpenTable Block	
+Payments Block	
+PayPal Payment Buttons Block	
+Plugin Management	
+Podcast Player Block	
+Post by Email	
+Protect your site with brute force protection	
+QR Post Code	
+Related Posts in the Classic Editor	
+Repeat Visitor Block	
+SEO Tools	
+Sharing Buttons	
+Site Accelerator	
+Site Verification Tools	
+Sitemaps	
+Slideshow Block	
+Star Rating Block	
+Style your Jetpack Form	
+Subscribe Block	
+Tiled Gallery Block	
+Troubleshooting Newsletter email delivery	
+Use Related Posts to Drive Traffic	
+Use Tiled Galleries with the Classic Editor	
+WhatsApp Button block	
+WooCommerce Analytics	
+WordAds	
+WordPress.com Secure Sign On	
+WP.me Shortlinks	
+
+Have any questions about a specific feature’s privacy or sync-related documentation? Get in touch.
+
+WooCommerce 
+
+WooCommerce Tax uses Automattic’s servers and a connection to our partners to enable useful features for your store. Some of these features (such as tax calculations and shipping) require data from your site to work.
+
+Payments
+
+If you accept payments with Stripe or PayPal, we may share the email address you provide us with whichever service you’ve chosen to determine whether there’s an existing account and, if one doesn’t exist, automatically create one.
+
+Please note that if you use Stripe, they provide us with access to your payment data and account activity. We do not store this data.
+
+When processing payments, some of your — and your customer’s — data will be passed to the respective third party, including information required to process or support the payment, such as the purchase total and your customer’s billing information.
+
+Please see the respective third party’s privacy policy (Stripe’s Privacy Policy and PayPal’s Privacy Policy) for more details.
+
+Tax Calculations
+
+Tax Calculations are provided by TaxJar. If you use the tax calculations feature, TaxJar receives information related to your customer’s purchase, including the value of goods in your customer’s cart, the value of shipping, your address, and the destination address.
+
+All data that flows between your site and Automattic, and between Automattic and TaxJar, is encrypted, end to end, via HTTPS. Please see TaxJar’s Privacy Policy for details about how they handle this information.
+
+Shipping Rates and Labels
+
+To take advantage of the real-time shipping rates and shipping label features of WooCommerce Shipping & Tax, certain information about you and your customer (as it relates to shipping), shopping carts, orders, and the configuration of your site are passed to our partners, EasyPost, and the respective mailing service, such as USPS or Canada Post. This is done via Automattic’s servers.
+
+Regarding data handling, we validate (but do not store) the data you send to us and then pass that data on to our partners. Our partners process the data under the terms of their agreements with Automattic and their own privacy policies. All data that flows between your site and Automattic, and between Automattic and our partners, is encrypted, end to end, via HTTPS.
+
+To display real-time carrier shipping rates (such as for USPS and Canada Post), WooCommerce Shipping & Tax sends information related to a shipment from your site to our servers, including:
+
+Shipping zone settings for validation, when you (the merchant) make changes and when fetching the rates for the customer, including origin postcode, list of enabled delivery services, and list of custom packages you add to the packaging manager.
+Purchased products’ dimensions, weight, product IDs, and quantity.
+Package destination address (street, postcode, city, country, state).
+
+Additionally, once daily, WooCommerce Shipping & Tax asks our servers for any updates to the settings for each shipping service. This allows us to add new services and shipping options without you having to explicitly update.
+
+We store certain portions of this data (such as user ID, site ID, store location, currency, package/product dimensions, and software versions). This data is not shared with our partners.
+
+To provide shipping labels, WooCommerce Shipping & Tax sends shipping information from your site to our servers, including:
+
+Merchant and customer names, addresses, and phone numbers.
+Label packaging settings (dimensions and weight of the packages).
+Your selected WordPress.com payment method.
+
+To purchase shipping labels, you are required to have a payment method (credit card) saved on file with WordPress.com. We keep a copy of each shipping label on our servers, and our partners also keep a copy of shipping labels on their servers. This makes it easier for you to reprint labels and receive help with any support requests.
+
+Orders
+
+We sync any data related to your site’s orders, with the following exceptions:
+
+Purchaser’s billing and shipping street address.
+Purchasing billing and shipping company’s name.
+Purchaser’s email address.
+Purchaser’s phone number.
+Transaction ID.
+Purchaser’s IP address.
+Purchaser’s user agent.
+
+These order exclusions apply only to Jetpack Sync. As described in the JSON API (REST API proxy) section, the REST API proxy can return these fields because it reads live data directly from your site rather than the synced copy.
+
+Usage data collection
+
+To help improve WooCommerce Shipping & Tax, our server automatically logs each request from your site. Each request is tagged with a unique ID that your site randomly generates when WooCommerce Shipping & Tax is activated for the first time.
+
+This unique ID is an anonymous identifier that is not mapped back to you. To protect the anonymity of you and your customers, we strip merchant and customer identifying details (the merchant name, street address, phone number, and customer name, street address, and phone number) from each request before it’s logged.
+
+Products settings
+
+WooCommerce Products page settings (WooCommerce > Settings > Products) are synced to support the Activity Log. These include options related to:
+
+General product display, including the shop page and cart redirect behavior
+Product reviews, including whether reviews are enabled, rating requirements, and verified-owner labels
+Inventory management, including stock hold time and low-stock email recipients
+Downloadable products, including file delivery method, access requirements, and security settings
+Product attribute lookup table settings
+
+Jetpack does not sync the content of individual products, orders, or customer records through this settings sync. Only configuration options are included.
+
+Additional Data
+
+We also sync the following data with each request:
+
+Shipping zone settings, used for validation.
+Fetching payment methods, as configured on WordPress.com.
+
+Syncing this data enables a number of useful features, including showing appropriate shipping methods and making sure we return correctly translated text and units of measurement for your store.
+
+Two Accounts & Privacy settings are also synced: whether account creation is delayed until checkout is complete, and the Stripe payment data retention setting.
+
+Additionally, we collect information about what happens when you use our services (e.g., page views, button clicks, etc.), along with information that web browsers, mobile devices, and servers typically make available, such as the browser type and operating system. We use this information to, for example, provide our services to you and gain insights on how people use our services and how we can improve those services.
+
+Please refer to our public code repository for all WooCommerce-related data points synced via Jetpack.
+
+More Information
+
+If you’d like to read in more detail about what we sync, why, and what we do with it, please refer to these additional resources:
+
+Automattic Terms of Service
+Automattic Privacy Policy
+Automattic Transparency Report
+List of default site options synced by Jetpack (GitHub)
+List of browser cookies set/used by Jetpack
+WordAds Terms of Service (only applicable to those using the service)
+Disabling Sync
+
+We highly discourage users from disabling the Sync feature. As mentioned above, Sync is essential for a range of Jetpack functionalities, as it ensures that your site’s data is up-to-date on WordPress.com’s servers.
+
+Before disabling Sync, you should consider that doing so will affect the functionality of Jetpack features that rely on it, which could decrease the efficacy of your site’s security, analytics, and other Jetpack features. If you decide to proceed, please note that this may be a deviation from standard usage and potentially cause unforeseen issues.
+
+However, there might be a few scenarios in which you might consider disabling it, such as using development or staging sites, privacy considerations, and specific conflicts. If that is the case, please contact us, and we’ll discuss how to overcome these problems and concerns together.
+
+Still need help?
+
+Please contact support. We’re happy to advise.
+
+Was this article helpful?
+
+Yes
+No
+
+On this page
+Content and settings
+User-related data
+Themes and plugins
+Additional data
+JSON API (REST API proxy)
+Data used by feature
+WooCommerce
+Payments
+Tax Calculations
+Shipping Rates and Labels
+Orders
+Usage data collection
+Products settings
+Additional Data
+More Information
+Disabling Sync
+Still need help?
+
+Can’t find what you’re looking for? Contact our Happiness Engineers and we’ll help you out.
+
+Jetpack on X (Twitter)
+Jetpack on Facebook
+Jetpack on LinkedIn
+Jetpack on YouTube
+WORDPRESS PLUGINS
+Akismet Anti-spam
+Jetpack
+Jetpack Boost
+Jetpack CRM
+Jetpack Protect
+Jetpack Search
+Jetpack Social
+Jetpack VideoPress
+VaultPress Backup
+WP Super Cache
+Download
+PARTNERS
+Recommended Hosts
+For Hosts
+For Agencies
+For Affiliates
+DEVELOPERS
+Documentation
+Beta Program
+Jetpack on GitHub
+LEGAL
+Terms of Service
+Privacy Policy
+GDPR
+HELP
+Knowledge Base
+Forums
+Reviews and Testimonials
+Contact Us
+Press
+Select language
+English
+
+© 2026 Automattic Inc. All rights reserved.
+
+Made with care by Automattic.
+
+Subscribe

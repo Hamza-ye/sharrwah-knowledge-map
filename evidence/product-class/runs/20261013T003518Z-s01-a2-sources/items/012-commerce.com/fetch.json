@@ -1,0 +1,25 @@
+{
+ "n": 12,
+ "url": "https://www.commerce.com/press/bigcommerce-payments-powered-by-paypal/",
+ "dir": "items/012-commerce.com",
+ "fetched_at": "2026-10-13T00:35:31Z",
+ "curl_exit": 47,
+ "curl_error": "curl: (47) Maximum (8) redirects followed",
+ "http_code": 307,
+ "final_url": "https://www.commerce.com/press/bigcommerce-payments-powered-by-paypal/",
+ "content_type": "text/plain",
+ "bytes": 15,
+ "cited_in": [
+  "S01-BC-C047",
+  "S01-BC-C048",
+  "S01-BC-C049",
+  "S01-BC-C050",
+  "S01-BC-C051",
+  "S01-BC-C052",
+  "S01-BC-C053",
+  "S01-BC-C054"
+ ],
+ "raw_file": "",
+ "sha256": "",
+ "raw_ext": ""
+}

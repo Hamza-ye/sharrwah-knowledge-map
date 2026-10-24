@@ -1,0 +1,36 @@
+> This page is for Developer.
+
+> For clean Markdown of any page, append .md to the page URL.
+> For a complete documentation index, see https://docs.bigcommerce.com/llms.txt.
+> For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server.
+
+# Shipping Providers
+
+Implement endpoints consumed by BigCommerce for custom shipping integrations. To learn more, see [Shipping Provider API Overview](/developer/docs/integrations/shipping-providers).
+
+## Authentication
+
+This specification file describes API requests BigCommerce will make to a registered shipping carrierʼs server to check connection options and retrieve rates. As such, the method of authentication is determined by the carrier server.
+
+For more, see [developer-configured authentication](/developer/docs/overview/api-fundamentals/api-accounts#developer-configured-authentication) for provider APIs.
+
+## Subresources
+
+### Check Connection Options
+
+The Check Connection Options request is made by BigCommerce when checking for available shipping options. Each Shipping Provider will have different configurations for the payload.
+
+### Rate
+
+The Rate request is made by BigCommerce to get shipping quotes from the provider.
+
+## Additional Information
+
+### Webhooks
+
+* [Shipments](/developer/docs/integrations/webhooks/event-reference#shipments)
+
+### Related API Resources
+
+* [Shipping Provider](/developer/api-reference/rest/integrations/shipping-provider)
+* [Shipping V2 API](/developer/api-reference/rest/admin/management/shipping/v2)

@@ -1,0 +1,92 @@
+[
+{
+"n": 1,
+"url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/contribution/releases/schedule.md",
+"dir": "items/001-raw.githubusercontent.com",
+"fetched_at": "2026-10-19T00:44:12Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/contribution/releases/schedule.md",
+"content_type": "text/plain; charset=utf-8",
+"bytes": 1653,
+"cited_in": [
+"studies/proposals/records/Q8/woocommerce/citations.tsv"
+],
+"raw_file": "raw.txt",
+"sha256": "b44d6abb02062f7b5dd261f363310a9de6d2c145a6fbb066965fdd0a62df41e9",
+"raw_ext": "txt"
+},
+{
+"n": 2,
+"url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/contribution/releases/prereleases.md",
+"dir": "items/002-raw.githubusercontent.com",
+"fetched_at": "2026-10-19T00:44:13Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/contribution/releases/prereleases.md",
+"content_type": "text/plain; charset=utf-8",
+"bytes": 1621,
+"cited_in": [
+"studies/proposals/records/Q8/woocommerce/citations.tsv"
+],
+"raw_file": "raw.txt",
+"sha256": "4d72fe73684a58024fbd27dd68e6b27887e7131f2aee07c8d951a4a81cce5cf7",
+"raw_ext": "txt"
+},
+{
+"n": 3,
+"url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/extensions/core-concepts/example-header-plugin-comment.md",
+"dir": "items/003-raw.githubusercontent.com",
+"fetched_at": "2026-10-19T00:44:14Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/extensions/core-concepts/example-header-plugin-comment.md",
+"content_type": "text/plain; charset=utf-8",
+"bytes": 934,
+"cited_in": [
+"studies/proposals/records/Q8/woocommerce/citations.tsv"
+],
+"raw_file": "raw.txt",
+"sha256": "3f052e2ccdd0bd61c091335acaf1d8571b64a2fa72d1bba177f1c73884a28d65",
+"raw_ext": "txt"
+},
+{
+"n": 4,
+"url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/woo-marketplace/submitting-your-product.mdx",
+"dir": "items/004-raw.githubusercontent.com",
+"fetched_at": "2026-10-19T00:44:15Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/woo-marketplace/submitting-your-product.mdx",
+"content_type": "text/plain; charset=utf-8",
+"bytes": 4444,
+"cited_in": [
+"studies/proposals/records/Q8/woocommerce/citations.tsv"
+],
+"raw_file": "raw.txt",
+"sha256": "c3ff912444a837c6ed79f48fd9504a67bbc4ea6a8157dfa7680183e528edd3c5",
+"raw_ext": "txt"
+},
+{
+"n": 5,
+"url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/woo-marketplace/excellence-verified-badge.md",
+"dir": "items/005-raw.githubusercontent.com",
+"fetched_at": "2026-10-19T00:44:16Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/woo-marketplace/excellence-verified-badge.md",
+"content_type": "text/plain; charset=utf-8",
+"bytes": 3113,
+"cited_in": [
+"studies/proposals/records/Q8/woocommerce/citations.tsv"
+],
+"raw_file": "raw.txt",
+"sha256": "fd9022e2ccaa136f0d871ffe24c629769af99a69e5bfdcba06eed85726657f38",
+"raw_ext": "txt"
+}
+]

@@ -1,0 +1,18 @@
+{
+ "n": 12,
+ "url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/block-development/extensible-blocks/cart-and-checkout-blocks/README.md",
+ "dir": "items/012-raw.githubusercontent.com",
+ "fetched_at": "2026-10-10T23:53:59Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/block-development/extensible-blocks/cart-and-checkout-blocks/README.md",
+ "content_type": "text/plain; charset=utf-8",
+ "bytes": 3778,
+ "cited_in": [
+  "WC-S-0917"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "6f8c3fb82062d4e8aed924e162eca6b8474b96866178de34b9e4dc07b58c2b2b",
+ "raw_ext": "txt"
+}

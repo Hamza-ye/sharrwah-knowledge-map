@@ -1,0 +1,19 @@
+{
+ "n": 4,
+ "url": "https://docs.salla.dev/awb/getting-started.md",
+ "dir": "items/004-docs.salla.dev",
+ "fetched_at": "2026-10-10T23:51:31Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.salla.dev/awb/getting-started.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 1719,
+ "cited_in": [
+  "SA-S-0190",
+  "SA-S-0191"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "5d277e455eb2f197bed0a8be0abb0bfc6be8c0e7adbcb7c3911fd5a59a6dca0f",
+ "raw_ext": "txt"
+}

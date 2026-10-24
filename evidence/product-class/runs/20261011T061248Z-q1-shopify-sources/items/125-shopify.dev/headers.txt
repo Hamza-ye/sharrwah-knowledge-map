@@ -1,0 +1,20 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sun, 11 Oct 2026 06:13:09 GMT
+content-type: text/markdown; charset=utf-8
+cache-control: public, max-age=3600, stale-while-revalidate=82800
+cache-tag: shopifydev-txt,host-shopify.dev
+etag: W/"a6fad42166bf0020"
+link: <https://shopify.dev/docs/apps/build/sales-channels>; rel="canonical"
+vary: Accept, Accept-Encoding
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-dc: gcp-us-central1,gcp-us-east1
+x-request-id: 01a12997-fe78-7d49-a447-ae7fe958ca7f-1791699189
+server: envoy
+nel: {"max_age":0}
+alt-svc: h3=":443"; ma=2592000
+alt-svc: h3=":443"; ma=2592000
+x-shopify-gclb-trace-timing: 1791699189.368
+via: 1.1 google
+

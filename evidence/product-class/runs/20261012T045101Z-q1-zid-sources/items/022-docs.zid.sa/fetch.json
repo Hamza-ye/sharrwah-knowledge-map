@@ -1,0 +1,18 @@
+{
+ "n": 22,
+ "url": "https://docs.zid.sa/delete-a-webhook-by-subscriber.md",
+ "dir": "items/022-docs.zid.sa",
+ "fetched_at": "2026-10-12T04:51:20Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.zid.sa/delete-a-webhook-by-subscriber.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 10630,
+ "cited_in": [
+  "ZD-S-0122"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "d01e25332cc448972c755b88ee233e75d37077e0959e7b1bfb76ca354cb25f46",
+ "raw_ext": "txt"
+}

@@ -1,0 +1,18 @@
+{
+ "n": 28,
+ "url": "https://woocommerce.com/document/managing-woocommerce-com-subscriptions/connect-your-site-to-woocommerce-com/",
+ "dir": "items/028-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:01Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/managing-woocommerce-com-subscriptions/connect-your-site-to-woocommerce-com/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 60632,
+ "cited_in": [
+  "WC-S-0899"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "cdf8f6346a712b71b07150fb02309f6bfcf37f40973a03b4a72b481381ce9b48",
+ "raw_ext": "html"
+}

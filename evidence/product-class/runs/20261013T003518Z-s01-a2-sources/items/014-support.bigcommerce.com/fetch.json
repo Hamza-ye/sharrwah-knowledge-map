@@ -1,0 +1,18 @@
+{
+ "n": 14,
+ "url": "https://support.bigcommerce.com/s/",
+ "dir": "items/014-support.bigcommerce.com",
+ "fetched_at": "2026-10-13T00:35:34Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://support.bigcommerce.com/s/?language=en_US",
+ "content_type": "text/html;charset=UTF-8",
+ "bytes": 190821,
+ "cited_in": [
+  "bigcommerce gap route"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "98bc5b1d31e448a74febfa7afed5b3482ae5ac2ac96c27d7ea91f0828bbff838",
+ "raw_ext": "html"
+}

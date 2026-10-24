@@ -1,0 +1,22 @@
+{
+ "n": 6,
+ "url": "https://www.bigcommerce.com/blog/bigcommerce-payments-announcement/",
+ "dir": "items/006-bigcommerce.com",
+ "fetched_at": "2026-10-13T00:35:27Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.bigcommerce.com/blog/bigcommerce-payments-announcement/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 54882,
+ "cited_in": [
+  "S01-BC-C067",
+  "S01-BC-C068",
+  "S01-BC-C069",
+  "S01-BC-C070",
+  "S01-BC-C071"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "79322e0eee46b5e743f3bf5c6185ac8316017f0f1aa7e63654cf49b901b84177",
+ "raw_ext": "html"
+}

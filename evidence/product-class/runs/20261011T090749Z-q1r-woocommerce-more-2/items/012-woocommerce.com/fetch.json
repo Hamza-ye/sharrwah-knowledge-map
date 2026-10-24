@@ -1,0 +1,18 @@
+{
+ "n": 12,
+ "url": "https://woocommerce.com/document/points-and-rewards-developer-documentation/",
+ "dir": "items/012-woocommerce.com",
+ "fetched_at": "2026-10-11T09:07:52Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/points-and-rewards-developer-documentation/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 47042,
+ "cited_in": [
+  "WC-S-5479"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "53a65e17b9a53b4e7e689a3b4d26d1d7edff00ae3c876d00890321e500daf980",
+ "raw_ext": "html"
+}

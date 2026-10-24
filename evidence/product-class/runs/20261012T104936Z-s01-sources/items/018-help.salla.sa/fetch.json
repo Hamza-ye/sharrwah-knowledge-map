@@ -1,0 +1,22 @@
+{
+ "n": 18,
+ "url": "https://help.salla.sa/article/تحويلات-مدفوعات-سلة-والتسويات-في-الإمارات-سلة/nvs6bt51hvlweulqzayp3o76",
+ "dir": "items/018-help.salla.sa",
+ "fetched_at": "2026-10-12T10:49:52Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.salla.sa/article/تحويلات-مدفوعات-سلة-والتسويات-في-الإمارات-سلة/nvs6bt51hvlweulqzayp3o76",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 135330,
+ "cited_in": [
+  "S01-SA-C051",
+  "S01-SA-C053",
+  "S01-SA-C054",
+  "S01-SA-C056",
+  "S01-SA-C057"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "80e94d971d698e400f68594b1ab502340dc6e6176d1089d8493135ce3d9eff64",
+ "raw_ext": "html"
+}

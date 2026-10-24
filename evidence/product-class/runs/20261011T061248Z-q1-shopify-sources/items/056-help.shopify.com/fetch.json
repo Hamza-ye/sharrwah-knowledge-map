@@ -1,0 +1,20 @@
+{
+ "n": 56,
+ "url": "https://help.shopify.com/en/manual/payments/shop-pay-installments.md",
+ "dir": "items/056-help.shopify.com",
+ "fetched_at": "2026-10-11T06:13:01Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/payments/shop-pay-installments.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 768,
+ "cited_in": [
+  "SH-S-0414",
+  "SH-S-0415",
+  "SH-S-0580"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "7778870d76f813d490b09bb17bc9a2c82558a08e11adfd75265e5c489bfcc91d",
+ "raw_ext": "txt"
+}

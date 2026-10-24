@@ -1,0 +1,1017 @@
+# Create Bundle Offer
+
+## OpenAPI Specification
+
+```yaml
+openapi: 3.0.1
+info:
+  title: ''
+  description: ''
+  version: 1.0.0
+paths:
+  /v1/managers/store/discounts/bundle-offers:
+    post:
+      summary: Create Bundle Offer
+      deprecated: false
+      description: >-
+        Creates a new bundle offer for the store.
+
+
+        <Accordion title="🔑Scopes" defaultOpen>
+
+
+        `third_bundle_offers_write` - Bundle Offers Write
+
+
+        </Accordion>
+
+
+        Authentication is partner OAuth Bearer authentication. A partner
+        application should send Authorization: `Bearer token` and does not need
+        `X-MANAGER-TOKEN`.
+
+
+        Also, Create specifically checks the `products.bundle_offers` package
+        feature; the other three write endpoints do not.
+      tags:
+        - Default module/Apps/Merchant APIs/Marketing/Bundle Offers
+      parameters:
+        - name: Authorization
+          in: header
+          description: >-
+            The Authorization token is a unique key given to the third-party
+            application (Partner) by Zid. It is used to authenticate the API
+            requests made by the Partner application. The token verifies the
+            partner's identity and ensures they have permission to access Zid's
+            API but does not provide any specific user or store information. It
+            should be included in the header of API requests when the partner
+            application needs to access Zid's API.
+          required: true
+          example: Bearer <partner-token>
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - code
+                - name
+                - conditions
+                - actions
+              properties:
+                code:
+                  type: string
+                  enum:
+                    - bundle_offer
+                  description: >-
+                    Identifies the discount rule as a bundle offer. Use
+                    `bundle_offer` for bundle offer requests.
+                  examples:
+                    - bundle_offer
+                name:
+                  type: object
+                  description: >-
+                    Localized name of the bundle offer. Each locale value can
+                    contain up to 50 characters.
+                  properties:
+                    en:
+                      type: string
+                      maxLength: 50
+                      description: English name of the bundle offer.
+                      examples:
+                        - Buy 2 shirts, get 1 free
+                      nullable: true
+                    ar:
+                      type: string
+                      maxLength: 50
+                      description: Arabic name of the bundle offer.
+                      examples:
+                        - اشترِ قميصين واحصل على واحد مجانًا
+                      nullable: true
+                  x-apidog-orders:
+                    - en
+                    - ar
+                  x-apidog-ignore-properties: []
+                description:
+                  type: object
+                  description: >-
+                    Localized description of the bundle offer. Each locale value
+                    can contain up to 128 characters.
+                  properties:
+                    en:
+                      type: string
+                      maxLength: 128
+                      description: English description of the bundle offer.
+                      examples:
+                        - Limited time
+                      nullable: true
+                    ar:
+                      type: string
+                      maxLength: 128
+                      description: Arabic description of the bundle offer.
+                      examples:
+                        - لفترة محدودة
+                      nullable: true
+                  x-apidog-orders:
+                    - en
+                    - ar
+                  x-apidog-ignore-properties: []
+                uses_total:
+                  type: integer
+                  description: >-
+                    Maximum number of times the bundle offer can be redeemed in
+                    total.
+                  examples:
+                    - 100
+                  nullable: true
+                uses_customer:
+                  type: integer
+                  description: >-
+                    Maximum number of times each customer can redeem the bundle
+                    offer.
+                  examples:
+                    - 1
+                  nullable: true
+                conditions_criteria:
+                  type: string
+                  enum:
+                    - all
+                    - any
+                    - none
+                  default: all
+                  description: Defines how multiple conditions are evaluated.
+                  examples:
+                    - all
+                enabled:
+                  type: boolean
+                  default: true
+                  description: >-
+                    Indicates whether the bundle offer is enabled. Defaults to
+                    `true` when omitted.
+                  examples:
+                    - true
+                start_date:
+                  type: string
+                  format: date
+                  description: >-
+                    Date on which the bundle offer becomes active, in
+                    `YYYY-MM-DD` format. Defaults to the current date when
+                    omitted.
+                  examples:
+                    - '2026-09-01'
+                end_date:
+                  type: string
+                  format: date
+                  description: >-
+                    Date on which the bundle offer ends, in `YYYY-MM-DD` format.
+                    Set to `null` or omit it for an open-ended offer.
+                  examples:
+                    - '2026-09-30'
+                  nullable: true
+                conditions:
+                  type: array
+                  description: >-
+                    Defines what the customer must purchase to qualify for the
+                    bundle offer.
+                  items:
+                    type: object
+                    required:
+                      - field
+                      - operator
+                      - value
+                    properties:
+                      field:
+                        type: string
+                        description: >-
+                          Condition field used for the bundle offer. For bundle
+                          offers, use `products_quantity`.
+                        examples:
+                          - products_quantity
+                      operator:
+                        type: string
+                        description: Operator used to evaluate the condition.
+                        examples:
+                          - greater_than_or_equal
+                      value:
+                        type: integer
+                        minimum: 1
+                        description: >-
+                          Quantity of qualifying products the customer must
+                          purchase.
+                        examples:
+                          - 2
+                      applies_to:
+                        type: string
+                        enum:
+                          - product
+                          - category
+                          - all_products
+                          - null
+                        description: >-
+                          Specifies whether the condition applies to selected
+                          products, selected categories, or all products.
+                        examples:
+                          - product
+                        nullable: true
+                      product_ids:
+                        type: array
+                        description: >-
+                          Product IDs the condition applies to. Required when
+                          `applies_to` is `product`.
+                        items:
+                          type: string
+                          description: Product UUID.
+                          examples:
+                            - 1f0c8a2e-6b41-4f0a-9d2c-77a1b3e5c904
+                        examples:
+                          - - 1f0c8a2e-6b41-4f0a-9d2c-77a1b3e5c904
+                      category_ids:
+                        type: array
+                        description: >-
+                          Category IDs the condition applies to. Required when
+                          `applies_to` is `category`.
+                        items:
+                          type: string
+                          description: Category ID.
+                          examples:
+                            - '12345'
+                        examples:
+                          - - '12345'
+                    x-apidog-orders:
+                      - field
+                      - operator
+                      - value
+                      - applies_to
+                      - product_ids
+                      - category_ids
+                    x-apidog-ignore-properties: []
+                actions:
+                  type: array
+                  description: >-
+                    Defines the discount or benefit the customer receives when
+                    the bundle conditions are met.
+                  items:
+                    type: object
+                    required:
+                      - field
+                      - type
+                      - value
+                      - products_quantity
+                    properties:
+                      field:
+                        type: string
+                        description: >-
+                          Action field used for the bundle offer. For bundle
+                          offers, use `products`.
+                        examples:
+                          - products
+                      type:
+                        type: string
+                        description: Type of discount applied by the bundle offer.
+                        examples:
+                          - percentage
+                      value:
+                        type: string
+                      products_quantity:
+                        type: integer
+                        minimum: 1
+                        description: >-
+                          Number of products that receive the configured bundle
+                          offer benefit.
+                        examples:
+                          - 1
+                      applies_to:
+                        type: string
+                        enum:
+                          - product
+                          - category
+                          - all_products
+                          - null
+                        description: >-
+                          Specifies whether the action applies to selected
+                          products, selected categories, or all products.
+                        examples:
+                          - product
+                        nullable: true
+                      product_ids:
+                        type: array
+                        description: >-
+                          Product IDs the action applies to. Required when
+                          `applies_to` is `product`.
+                        items:
+                          type: string
+                          description: Product UUID.
+                          examples:
+                            - 3a7d5b19-2c88-4e6f-b1a0-5d9e2f4c7601
+                        examples:
+                          - - 3a7d5b19-2c88-4e6f-b1a0-5d9e2f4c7601
+                      category_ids:
+                        type: array
+                        description: >-
+                          Category IDs the action applies to. Required when
+                          `applies_to` is `category`.
+                        items:
+                          type: string
+                          description: Category ID.
+                          examples:
+                            - '12345'
+                        examples:
+                          - - '12345'
+                      free_item_selection_strategy:
+                        type: string
+                        enum:
+                          - lowest
+                          - highest
+                          - null
+                        description: >-
+                          Determines which qualifying item is given for free
+                          when multiple items qualify.
+                        examples:
+                          - lowest
+                        nullable: true
+                    x-apidog-orders:
+                      - field
+                      - type
+                      - value
+                      - products_quantity
+                      - applies_to
+                      - product_ids
+                      - category_ids
+                      - free_item_selection_strategy
+                    x-apidog-ignore-properties: []
+                auto_adding:
+                  type: boolean
+                  description: >-
+                    Indicates whether qualifying free products are automatically
+                    added. Required when the first action has a discount value
+                    of `100`.
+                  examples:
+                    - true
+              x-apidog-orders:
+                - code
+                - name
+                - description
+                - uses_total
+                - uses_customer
+                - conditions_criteria
+                - enabled
+                - start_date
+                - end_date
+                - conditions
+                - actions
+                - auto_adding
+              x-apidog-ignore-properties: []
+            example:
+              code: bundle_offer
+              name:
+                en: Buy 2 shirts, get 1 free
+                ar: اشترِ قميصين واحصل على واحد مجانًا
+              description:
+                en: Limited time
+                ar: لفترة محدودة
+              start_date: '2026-09-01'
+              end_date: '2026-09-30'
+              conditions_criteria: all
+              enabled: true
+              auto_adding: true
+              conditions:
+                - field: products_quantity
+                  operator: greater_than_or_equal
+                  value: 2
+                  applies_to: product
+                  product_ids:
+                    - 1f0c8a2e-6b41-4f0a-9d2c-77a1b3e5c904
+              actions:
+                - field: products
+                  type: percentage
+                  value: 100
+                  products_quantity: 1
+                  applies_to: product
+                  product_ids:
+                    - 3a7d5b19-2c88-4e6f-b1a0-5d9e2f4c7601
+                  free_item_selection_strategy: lowest
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - status
+                  - discount_rule
+                  - message
+                properties:
+                  status:
+                    type: string
+                    description: Response envelope type.
+                    examples:
+                      - object
+                  discount_rule:
+                    type: object
+                    description: The created bundle offer.
+                    required:
+                      - id
+                      - name
+                      - description
+                      - code
+                      - conditions
+                      - actions
+                      - conditions_criteria
+                      - uses_total
+                      - uses_customer
+                      - enabled
+                      - auto_adding
+                      - status_code
+                      - start_date
+                      - end_date
+                      - meta
+                      - channel
+                      - channel_name
+                    properties:
+                      id:
+                        type: string
+                        format: uuid
+                        description: Unique identifier of the bundle offer.
+                        examples:
+                          - 9f2c1d80-4a3b-4c11-8e77-2b6d5a0f3e14
+                      name:
+                        type: object
+                        description: Localized bundle offer name.
+                        properties: {}
+                        x-apidog-orders: []
+                        examples:
+                          - en: Buy 2 shirts, get 1 free
+                            ar: اشترِ قميصين واحصل على واحد مجانًا
+                        x-apidog-ignore-properties: []
+                      description:
+                        type: object
+                        description: Localized bundle offer description.
+                        properties: {}
+                        x-apidog-orders: []
+                        examples:
+                          - en: Limited time
+                            ar: لفترة محدودة
+                        x-apidog-ignore-properties: []
+                      code:
+                        type: string
+                        description: >-
+                          Discount rule code identifying the rule as a bundle
+                          offer.
+                        examples:
+                          - bundle_offer
+                      conditions:
+                        type: array
+                        description: >-
+                          Conditions that must be met for the bundle offer to
+                          apply. Product and category information may also be
+                          hydrated into each condition.
+                        items:
+                          type: object
+                          properties:
+                            field:
+                              type: string
+                              description: Field evaluated by the condition.
+                              examples:
+                                - products_quantity
+                            operator:
+                              type: string
+                              description: Operator used to evaluate the condition.
+                              examples:
+                                - greater_than_or_equal
+                            value:
+                              type: integer
+                              description: Required qualifying product quantity.
+                              examples:
+                                - 2
+                            applies_to:
+                              type: string
+                              description: Target type to which the condition applies.
+                              examples:
+                                - product
+                            product_ids:
+                              type: array
+                              description: IDs of products targeted by the condition.
+                              items:
+                                type: string
+                                description: Product ID.
+                                examples:
+                                  - 1f0c8a2e6b414f0a9d2c77a1b3e5c904
+                            category_ids:
+                              type: array
+                              description: IDs of categories targeted by the condition.
+                              items:
+                                type: string
+                                description: Category ID.
+                                examples:
+                                  - '12345'
+                            products:
+                              type: array
+                              description: >-
+                                Resolved product objects associated with the
+                                condition.
+                              items:
+                                type: object
+                                description: >-
+                                  Simplified product object. The exact product
+                                  schema is provided by the products service.
+                                properties: {}
+                                x-apidog-orders: []
+                                x-apidog-ignore-properties: []
+                              examples:
+                                - []
+                            categories:
+                              type: string
+                          x-apidog-orders:
+                            - field
+                            - operator
+                            - value
+                            - applies_to
+                            - product_ids
+                            - category_ids
+                            - products
+                            - categories
+                          x-apidog-ignore-properties: []
+                      actions:
+                        type: array
+                        description: >-
+                          Actions applied when the bundle offer conditions are
+                          satisfied. Product and category information may also
+                          be hydrated into each action.
+                        items:
+                          type: object
+                          properties:
+                            field:
+                              type: string
+                              description: Field affected by the action.
+                              examples:
+                                - products
+                            type:
+                              type: string
+                              description: Discount type applied by the action.
+                              examples:
+                                - percentage
+                            value:
+                              type: string
+                            products_quantity:
+                              type: integer
+                              description: Number of products affected by the action.
+                              examples:
+                                - 1
+                            applies_to:
+                              type: string
+                              description: Target type to which the action applies.
+                              examples:
+                                - product
+                            product_ids:
+                              type: array
+                              description: IDs of products targeted by the action.
+                              items:
+                                type: string
+                                description: Product ID.
+                                examples:
+                                  - 3a7d5b192c884e6fb1a05d9e2f4c7601
+                            category_ids:
+                              type: array
+                              description: IDs of categories targeted by the action.
+                              items:
+                                type: string
+                                description: Category ID.
+                                examples:
+                                  - '12345'
+                            free_item_selection_strategy:
+                              type: string
+                              description: >-
+                                Strategy used to select the free item when
+                                multiple products qualify.
+                              examples:
+                                - lowest
+                              nullable: true
+                            products:
+                              type: array
+                              description: >-
+                                Resolved product objects associated with the
+                                action.
+                              items:
+                                type: object
+                                description: >-
+                                  Simplified product object. The exact product
+                                  schema is provided by the products service.
+                                properties: {}
+                                x-apidog-orders: []
+                                x-apidog-ignore-properties: []
+                              examples:
+                                - []
+                            categories:
+                              type: string
+                          x-apidog-orders:
+                            - field
+                            - type
+                            - value
+                            - products_quantity
+                            - applies_to
+                            - product_ids
+                            - category_ids
+                            - free_item_selection_strategy
+                            - products
+                            - categories
+                          x-apidog-ignore-properties: []
+                      conditions_criteria:
+                        type: string
+                        enum:
+                          - all
+                          - any
+                          - none
+                        description: Defines how multiple conditions are evaluated.
+                        examples:
+                          - all
+                      uses_total:
+                        type: integer
+                        description: Maximum total number of redemptions.
+                        examples:
+                          - 100
+                        nullable: true
+                      uses_customer:
+                        type: integer
+                        description: Maximum number of redemptions allowed per customer.
+                        examples:
+                          - 1
+                        nullable: true
+                      enabled:
+                        type: boolean
+                        description: Indicates whether the bundle offer is enabled.
+                        examples:
+                          - true
+                      auto_adding:
+                        type: boolean
+                        description: >-
+                          Indicates whether qualifying products are
+                          automatically added for a free-item offer.
+                        examples:
+                          - true
+                        nullable: true
+                      status_code:
+                        type: string
+                        enum:
+                          - active
+                          - expired
+                          - unstarted
+                          - disabled
+                        description: Current derived status of the bundle offer.
+                        examples:
+                          - active
+                      start_date:
+                        type: string
+                        description: Start date of the bundle offer.
+                        examples:
+                          - '2026-09-01'
+                      end_date:
+                        type: string
+                        description: >-
+                          End date of the bundle offer, or `null` for an
+                          open-ended offer.
+                        examples:
+                          - '2026-09-30'
+                        nullable: true
+                      meta:
+                        type: object
+                        description: Additional bundle offer metadata.
+                        x-apidog-orders: []
+                        examples:
+                          - auto_add_products: true
+                        properties: {}
+                        x-apidog-ignore-properties: []
+                        nullable: true
+                      channel:
+                        type: string
+                      channel_name:
+                        type: string
+                        description: >-
+                          Name of the sale channel associated with the bundle
+                          offer, if available.
+                        examples:
+                          - null
+                        nullable: true
+                    x-apidog-orders:
+                      - id
+                      - name
+                      - description
+                      - code
+                      - conditions
+                      - actions
+                      - conditions_criteria
+                      - uses_total
+                      - uses_customer
+                      - enabled
+                      - auto_adding
+                      - status_code
+                      - start_date
+                      - end_date
+                      - meta
+                      - channel
+                      - channel_name
+                    x-apidog-ignore-properties: []
+                  message:
+                    type: object
+                    description: Response message metadata.
+                    required:
+                      - type
+                      - code
+                      - name
+                      - description
+                    properties:
+                      type:
+                        type: string
+                        description: Message envelope type.
+                        examples:
+                          - object
+                      code:
+                        type: 'null'
+                        description: >-
+                          Message code. Always `null` for this successful
+                          response.
+                        examples:
+                          - null
+                      name:
+                        type: 'null'
+                        description: >-
+                          Message name. Always `null` for this successful
+                          response.
+                        examples:
+                          - null
+                      description:
+                        type: 'null'
+                        description: >-
+                          Message description. Always `null` for this successful
+                          response.
+                        examples:
+                          - null
+                    x-apidog-orders:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-ignore-properties: []
+                x-apidog-orders:
+                  - status
+                  - discount_rule
+                  - message
+                x-apidog-ignore-properties: []
+          headers: {}
+          x-apidog-name: Success
+        '401':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                description: >-
+                  Response returned when the request cannot be authenticated
+                  because the required credentials are missing, invalid, or
+                  expired.
+                properties:
+                  status:
+                    type: string
+                    description: Indicates the overall status of the API response.
+                    examples:
+                      - error
+                  message:
+                    type: object
+                    description: >-
+                      Contains structured details explaining why the request
+                      could not be authenticated.
+                    properties:
+                      type:
+                        type: string
+                        description: Indicates the category of the response message.
+                        examples:
+                          - error
+                      code:
+                        type: string
+                        description: >-
+                          A machine-readable code identifying the authentication
+                          error. Returns null when no specific code is
+                          available.
+                        examples:
+                          - UNAUTHORIZED
+                        nullable: true
+                      name:
+                        type: string
+                        description: >-
+                          A short, human-readable title describing the
+                          authentication error. Returns null when no title is
+                          available.
+                        examples:
+                          - Unauthorized
+                        nullable: true
+                      description:
+                        type: string
+                        description: >-
+                          A human-readable explanation of why the request could
+                          not be authenticated. Returns null when no detailed
+                          explanation is available.
+                        examples:
+                          - >-
+                            Authentication credentials are missing, invalid, or
+                            expired.
+                        nullable: true
+                    required:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-orders:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-ignore-properties: []
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                examples:
+                  - status: error
+                    message:
+                      type: error
+                      code: UNAUTHORIZED
+                      name: Unauthorized
+                      description: >-
+                        Authentication credentials are missing, invalid, or
+                        expired.
+                x-apidog-ignore-properties: []
+              examples:
+                '1':
+                  summary: Example 1
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_MISSING
+                      name: Sorry
+                      description: Please login first.
+                '2':
+                  summary: Example 2
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Login session expired. Please login again.
+                '3':
+                  summary: Example 3
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Invalid authentication
+          headers: {}
+          x-apidog-name: Unauthorized
+        '403':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Indicates that the request failed.
+                    examples:
+                      - error
+                  message:
+                    type: object
+                    description: Details about the authorization error.
+                    properties:
+                      type:
+                        type: string
+                        description: The error message type.
+                        examples:
+                          - error
+                      code:
+                        type: string
+                        description: The error code.
+                        examples:
+                          - ERROR_POPUP_OK
+                      name:
+                        type: string
+                        description: The error name.
+                        examples:
+                          - Sorry
+                      description:
+                        type: string
+                        description: >-
+                          A message indicating that the caller does not have the
+                          required permission.
+                        examples:
+                          - Permission Denied
+                      required_permissions:
+                        type: array
+                        description: The permissions required to perform the operation.
+                        items:
+                          type: string
+                          description: A required permission.
+                          examples:
+                            - bundle.offers.manage
+                        examples:
+                          - - bundle.offers.manage
+                    x-apidog-orders:
+                      - type
+                      - code
+                      - name
+                      - description
+                      - required_permissions
+                    x-apidog-ignore-properties: []
+                x-apidog-orders:
+                  - status
+                  - message
+                x-apidog-ignore-properties: []
+          headers: {}
+          x-apidog-name: Forbidden
+        '500':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Status of the error.
+                  message:
+                    $ref: '#/components/schemas/ResponseEnvelopMessage'
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                x-apidog-ignore-properties: []
+              example:
+                status: error
+                message:
+                  type: error
+                  code: MSG_HIDDEN
+                  name: Error
+                  description: Internal Server Error
+          headers: {}
+          x-apidog-name: Internal Server error
+      security: []
+      x-apidog-folder: Default module/Apps/Merchant APIs/Marketing/Bundle Offers
+      x-apidog-status: released
+      x-run-in-apidog: https://app.apidog.com/web/project/613905/apis/api-42028578-run
+components:
+  schemas:
+    ResponseEnvelopMessage:
+      type: object
+      properties:
+        type:
+          type: string
+          description: Type of response message returned by the API.
+          examples:
+            - success
+        code:
+          type: string
+          description: Response code returned by the API, if available.
+          examples:
+            - MSG_POPUP_OK
+          nullable: true
+        name:
+          type: string
+          description: Name or title of the response message, if available.
+          examples:
+            - Coupons
+          nullable: true
+        description:
+          type: string
+          description: Detailed description of the response message, if available.
+          examples:
+            - Coupons created successfully
+          nullable: true
+      required:
+        - type
+        - code
+        - name
+        - description
+      description: Additional response metadata.
+      x-apidog-orders:
+        - type
+        - code
+        - name
+        - description
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+  securitySchemes: {}
+servers:
+  - url: https://api.zid.sa/
+    description: Prod Env
+security: []
+
+```

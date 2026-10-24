@@ -1,0 +1,189 @@
+___
+Skip to navigation
+Skip to content
+USD
+Change site currency USD selected
+Develop on Woo
+Hire an expert
+Get support
+Sell
+Click to show 12 more items
+Extensions
+Click to show 18 more items
+Resources
+Click to show 23 more items
+Enterprise ecommerce
+Log in
+Get started
+Documentation
+WooCommerce
+Expand
+Products
+Expand
+Extensions
+Expand
+Themes
+Expand
+WooPayments
+WooPay
+WooCommerce Shipping
+WooCommerce Tax
+Retired Products
+Expand
+Woo Marketplace
+Code Snippets
+Expand
+WooPayments / Documentation / WooPayments Documentation / WooPayments: Fees / What currency is used to determine fees in a transaction with WooPayments?
+What currency is used to determine fees in a transaction with WooPayments?
+
+If the currency in which the customer paid matches the currency of any bank account you have on file, the fees are charged in the customer currency. The fixed portion of the base fee is converted to the customer currency before being added the rest of the fees.
+
+If the currency in which the customer paid does not match the currency of any bank account on file, the order total is converted to the default currency and the fees are subtracted from that.
+
+Fee calculation can be a complex topic, so we’ve provided some examples below.
+
+Example one
+
+Consider a merchant in the following situation:
+
+Their account is based in the Canada, but they sell worldwide.
+They don’t have multi-currency enabled, so their prices are in CAD.
+The only bank account they’ve added is denominated in CAD.
+A customer pays for a $1,000 CAD order with a U.S.-issued card.
+
+Because the customer paid in CAD and the merchant has a CAD bank account added, the fees will be charged in CAD. This is by far the most common scenario. The fees that apply are:
+
+The base fee for Canadian merchants of 2.9% + $0.30 CAD.
+The international payment fee, which is an additional 1.00%.
+
+Thus, fee calculations are as follows:
+
+  1000 * 0.029
++ 0.30
++ 1000 * 0.01
+
+= $39.30 CAD fee
+Example two
+
+Now consider the same merchant, but this time they have multi-currency enabled so that they can sell products in both CAD and USD. Their only bank account on file is still in CAD, and a customer using a U.S. card pays $1,000 USD for an order.
+
+Because the customer paid in USD, but the merchant does not have a USD bank account on file with WooPayments, the order total will first be converted to CAD and the fees will be charged in CAD. The fees that apply are:
+
+The base fee for Canadian merchants of 2.9% + $0.30 CAD.
+The international payment fee of an additional 1.00%.
+The currency conversion fee of an additional 2.00%.
+
+Assuming the USD-to-CAD exchange rate is 1.33333, the fee calculations are:
+
+  1000 USD * 1.33333 = 1333.33 CAD
+
+  1333.33 * 0.029
++ 0.30
++ 1333.33 * 0.01
++ 1333.33 * 0.02
+
+= $78.97 CAD fee
+Example three
+
+Now consider the same merchant, but this time they have multi-currency enabled and they’ve added a USD-denominated bank account to WooPayments. As before, a customer using a U.S. card pays $1,000 USD for an order.
+
+Because the customer paid in USD and the merchant has a USD bank account on file this time, fees will be charged in USD. The fees that apply are:
+
+The base fee for Canadian merchants of 2.9% + $0.30 CAD.
+The fixed portion of this fee, which is normally $0.30 CAD, will be converted to USD first.
+The international payment fee of an additional 1.00%.
+
+Assuming the USD-to-CAD exchange rate is 1.33333, the fee calculations are:
+
+  0.30 CAD / 1.33333 = 0.23 USD
+
+  1000 * 0.029
++ 0.23
++ 1000 * 0.01
+
+= $39.23 USD fee
+Dispute fees
+
+Similar to the above, if the currency in which the customer paid matches the currency of any bank account you have on file with WooPayments, and the order is later disputed, the dispute fee is charged in the customer currency.
+
+If the currency in which the customer paid does not match the currency of any bank account on file, and the order is later disputed, the dispute fee is levied in the default payout currency.
+
+Was this guide helpful for you?
+ON THIS PAGE
+Example one
+Example two
+Example three
+Dispute fees
+WooPayments
+by Woo
+No payment details required • Set up in minutes
+Install for free
+30-day money-back guarantee
+Support teams across the world
+Safe and secure online payments
+Sell
+WooCommerce
+WooCommerce pricing
+Payments
+No-code customization
+Marketing
+Checkout
+Shipping
+Mobile app
+Enterprise ecommerce
+Marketplace
+WooCommerce extensions
+WooCommerce themes
+New
+Essentials
+Collections
+Developed by Woo
+Build
+Woo for developers
+Developer resources
+Become a Woo agency
+Become a Marketplace partner
+Become an affiliate
+Resources
+Blog
+Documentation
+WooCommerce site examples
+Product updates
+Email newsletter
+Support
+Feature requests
+WooCommerce hosting
+Hire an agency
+Participate in customer research
+Accessibility
+Support forums
+Company
+About
+Press
+Download WooCommerce free
+Join the Woo community
+Woo trademark guidelines
+Brand and logo guidelines
+Do not sell or share my personal information
+WooCommerce Support Policy
+Refund Policy
+Contact us
+Follow us on Facebook
+Follow us on X
+Follow us on Instagram
+Follow us on LinkedIn
+USD
+Change site currency USD selected
+Terms of Service
+Privacy Policy
+Privacy Notice for California Users
+
+© WooCommerce, Inc. 2026
+
+AN
+AUTOMATTIC
+MEDLEY
+Use of your personal data
+We and our partners process your personal data (such as browsing data, IP Addresses, cookie information, and other unique identifiers) based on your consent and/or our legitimate interest to optimize our website, marketing activities, and your user experience.
+Customize
+Accept all

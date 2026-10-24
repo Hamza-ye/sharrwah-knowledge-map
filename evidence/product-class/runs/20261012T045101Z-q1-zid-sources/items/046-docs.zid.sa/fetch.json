@@ -1,0 +1,18 @@
+{
+ "n": 46,
+ "url": "https://docs.zid.sa/loyalty-program-activation.md",
+ "dir": "items/046-docs.zid.sa",
+ "fetched_at": "2026-10-12T04:51:44Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.zid.sa/loyalty-program-activation.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 14584,
+ "cited_in": [
+  "ZD-S-0109"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "411ce991711c782350412849ca3cd699674ef5b7b29c4670038ddc8bb32a5cdf",
+ "raw_ext": "txt"
+}

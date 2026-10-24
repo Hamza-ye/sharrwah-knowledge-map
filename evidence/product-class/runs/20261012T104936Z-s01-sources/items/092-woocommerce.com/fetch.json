@@ -1,0 +1,32 @@
+{
+ "n": 92,
+ "url": "https://woocommerce.com/document/woopayments/our-policies/reserves/",
+ "dir": "items/092-woocommerce.com",
+ "fetched_at": "2026-10-12T10:51:03Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/woopayments/our-policies/reserves/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 44680,
+ "cited_in": [
+  "S01-WC-C062",
+  "S01-WC-C064",
+  "S01-WC-C065",
+  "S01-WC-C066",
+  "S01-WC-C067",
+  "S01-WC-C068",
+  "S01-WC-C069",
+  "S01-WC-C070",
+  "S01-WC-C071",
+  "S01-WC-C072",
+  "S01-WC-C073",
+  "S01-WC-C074",
+  "S01-WC-C075",
+  "S01-WC-C076",
+  "S01-WC-C166"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "7ac921fdfa7ea0f8b63933c420bcf9c16b8c0334a54140d3744be8e9cdbbf5de",
+ "raw_ext": "html"
+}

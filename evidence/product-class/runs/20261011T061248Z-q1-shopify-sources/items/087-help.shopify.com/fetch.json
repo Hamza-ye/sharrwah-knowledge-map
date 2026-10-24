@@ -1,0 +1,19 @@
+{
+ "n": 87,
+ "url": "https://help.shopify.com/en/manual/sell-in-person/getting-started/setup-payment-method/shopify-payments-pos.md",
+ "dir": "items/087-help.shopify.com",
+ "fetched_at": "2026-10-11T06:13:04Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/sell-in-person/getting-started/setup-payment-method/shopify-payments-pos.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 1245,
+ "cited_in": [
+  "SH-S-0435",
+  "SH-S-0436"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "bbaf737f2b5615862675eb1d76a49ba1217cb1b32eb537a062838b14a41d04c4",
+ "raw_ext": "txt"
+}

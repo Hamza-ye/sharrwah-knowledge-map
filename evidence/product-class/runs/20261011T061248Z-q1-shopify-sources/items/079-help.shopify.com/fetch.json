@@ -1,0 +1,21 @@
+{
+ "n": 79,
+ "url": "https://help.shopify.com/en/manual/payments/third-party-providers/payment-gateway-availability.md",
+ "dir": "items/079-help.shopify.com",
+ "fetched_at": "2026-10-11T06:13:03Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/payments/third-party-providers/payment-gateway-availability.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 1492,
+ "cited_in": [
+  "SH-S-0382",
+  "SH-S-0383",
+  "SH-S-0384",
+  "SH-S-0584"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "30d15391cffd56aad754adcbff87285fcaed9093ca5dcd4056464a16506850f2",
+ "raw_ext": "txt"
+}

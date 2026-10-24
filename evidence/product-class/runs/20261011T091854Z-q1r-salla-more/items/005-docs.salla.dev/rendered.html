@@ -1,0 +1,129 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;"># Overview
+
+
+
+![ecommerce overview.png](https://api.apidog.com/api/v1/projects/451700/resources/380267/image-preview)
+E-commerce events allow you to track and respond to customer actions throughout their shopping journey—from browsing products to completing a purchase. By capturing these events, developers can build applications that react to real user behavior, personalize shopping experiences, optimize marketing workflows, and automate backend processes.
+
+This guide introduces how the event system works and the different ways you can integrate with it.
+
+Our E-commerce event system supports two integration modes:
+
+* **Device Mode**
+* **Cloud Mode via [App Functions](https://docs.salla.dev/app-functions/welcome.md)**
+
+Each mode provides a different way to receive and process events depending on your application architecture.
+
+
+## Integration Modes
+
+### Device Mode
+
+In **Device Mode**, events are sent directly from the customer’s device—such as a web browser or mobile app—to your callback endpoint.
+
+This integration typically uses a `tracker.js` script embedded in the storefront frontend. The script captures user interactions in real time and forwards them to your application for processing.
+
+Device Mode is ideal for:
+
+* Real-time client-side tracking
+* Analytics and behavioral insights
+* Personalization features
+* Marketing and attribution tools
+
+For implementation details, see **[Usage – Device Mode](https://docs.salla.dev/ecommerc-events/device-mode.md)**.
+
+---
+
+### Cloud Mode (App Functions)
+
+In **Cloud Mode**, events are delivered directly from our servers to your backend using **[App Functions](https://docs.salla.dev/app-functions/welcome.md)**.
+
+This server-to-server approach removes the need for client-side scripts and ensures events are delivered reliably and securely. It is particularly well suited for backend workflows and integrations.
+
+Common use cases include:
+
+* Order processing and fulfillment
+* Data synchronization
+* Backend automation
+* Advanced analytics pipelines
+
+To get started, see **[Usage – Cloud Mode](https://docs.salla.dev/ecommerc-events/cloud-mode.md)**.
+
+---
+
+## Event Lifecycle
+
+The lifecycle of an e-commerce event depends on the integration mode you choose. While both modes capture the same customer interactions, the path the event takes—from the user action to your application—differs.
+
+Below is a high-level overview of how events flow through the system in each mode.
+
+---
+
+## Device Mode Lifecycle
+
+In **Device Mode**, events are captured directly on the client side and forwarded to your tracking script. This allows real-time processing of user interactions within the browser or mobile application.
+
+A typical flow works as follows:
+
+1. A user performs an action in the storefront (for example, adding a product to the cart).
+2. The browser triggers the event through the **Twilight SDK**.
+3. The SDK emits the event to the `tracker.js` script embedded in the storefront.
+4. Your script listens for the event and processes it according to your application logic (analytics, tracking, personalization, etc.).
+5. Optionally, the script can acknowledge the event.
+
+```mermaid
+sequenceDiagram
+    participant U as User
+    participant B as Browser
+    participant T as Twilight SDK
+    participant JS as tracker.js
+
+    U-&gt;&gt;B: Adds item to cart (user action)
+    B-&gt;&gt;T: Sends event (Item Added)
+    T-&gt;&gt;JS: Emits event to tracker.js
+    JS-&gt;&gt;JS: Listens &amp; processes event
+    JS--&gt;&gt;T: Acknowledgement (optional)
+    Note over JS: Event tracked and logged for analytics
+```
+
+---
+
+## Cloud Mode Lifecycle
+
+In **Cloud Mode**, events are handled entirely on the server side. Instead of sending events to a client-side script, the platform forwards them directly to your backend via **App Functions**.
+
+This model is ideal for backend workflows where reliability, security, and server-side processing are required.
+
+The typical flow is:
+
+1. A user performs an action in the storefront.
+2. The client sends the event to **Salla’s servers**.
+3. The platform forwards the event payload to your configured **App Function**.
+4. Your function executes custom logic such as automation, integrations, or data processing.
+5. Optionally, your function returns a response to the platform.
+
+```mermaid
+sequenceDiagram
+    participant U as User
+    participant B as Browser / Mobile App
+    participant S as Salla's Servers
+    participant F as App Function
+
+    U-&gt;&gt;B: Adds item to cart
+    B-&gt;&gt;S: Sends "Item Added" event
+    S-&gt;&gt;F: Forwards event payload to App Function
+    F-&gt;&gt;F: Processes event logic
+    F--&gt;&gt;S: Response (Optional) (e.g. success, tracking data)
+    S--&gt;&gt;B: Acknowledgement / updated cart response
+    Note over F: Event processed by custom app logic
+```
+
+---
+
+### Quick Summary
+
+| Mode            | Processing Location         | Best For                                       |
+| --------------- | --------------------------- | ---------------------------------------------- |
+| **Device Mode** | Client-side (`tracker.js`)  | Analytics, personalization, marketing tracking |
+| **Cloud Mode**  | Server-side (App Functions) | Automation, integrations, backend workflows    |
+</pre></body></html>

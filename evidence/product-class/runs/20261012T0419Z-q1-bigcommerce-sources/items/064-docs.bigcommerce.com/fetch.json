@@ -1,0 +1,19 @@
+{
+ "n": 64,
+ "url": "https://docs.bigcommerce.com/developer/api-reference/rest/storefront/consent.md",
+ "dir": "items/064-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:20:19Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/api-reference/rest/storefront/consent.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 525,
+ "cited_in": [
+  "BC-S-0189",
+  "BC-S-0192"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "b4ae83a0274964556257bd5b6d1836156733dd5d31c2f1433452d5ed37320f40",
+ "raw_ext": "txt"
+}

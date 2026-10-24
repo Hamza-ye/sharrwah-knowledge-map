@@ -1,0 +1,19 @@
+{
+ "n": 22,
+ "url": "https://docs.bigcommerce.com/developer/docs/storefront/headless/site-content.md",
+ "dir": "items/022-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:27:17Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/docs/storefront/headless/site-content.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 6094,
+ "cited_in": [
+  "BC-S-0256",
+  "BC-S-0257"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "ca8ed83da72c179ee08cb6f99f583730cf5829b4d13f1ff4f7df64e423dca109",
+ "raw_ext": "txt"
+}

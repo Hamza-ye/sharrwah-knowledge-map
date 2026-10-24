@@ -1,0 +1,18 @@
+{
+ "n": 36,
+ "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/promotion-settings.md",
+ "dir": "items/036-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:19:51Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/promotion-settings.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 318,
+ "cited_in": [
+  "BC-S-0050"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "19201aa7dba5f0e0550d81852f04a388553377a444ebae2b5c33d7ba13acaa96",
+ "raw_ext": "txt"
+}

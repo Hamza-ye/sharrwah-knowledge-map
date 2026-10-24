@@ -1,0 +1,18 @@
+{
+ "n": 32,
+ "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/pickup.md",
+ "dir": "items/032-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:19:47Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/pickup.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 252,
+ "cited_in": [
+  "BC-S-0040"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "2171a6a9a9ef95d0128acd6987cef691e1a3788224705375c177642f0465f286",
+ "raw_ext": "txt"
+}

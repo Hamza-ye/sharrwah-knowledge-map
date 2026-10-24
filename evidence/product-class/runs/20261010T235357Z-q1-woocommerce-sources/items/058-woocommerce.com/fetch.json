@@ -1,0 +1,20 @@
+{
+ "n": 58,
+ "url": "https://woocommerce.com/document/woopayments/currencies/multi-currency-setup/",
+ "dir": "items/058-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:04Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/woopayments/currencies/multi-currency-setup/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 51413,
+ "cited_in": [
+  "WC-S-0543",
+  "WC-S-0544",
+  "WC-S-0545"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "9d45211b2765727af62f2fcebde7de0609fec04b35b93fa89cdaa5e6c5e54612",
+ "raw_ext": "html"
+}

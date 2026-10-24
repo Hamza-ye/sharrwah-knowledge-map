@@ -1,0 +1,20 @@
+{
+ "n": 38,
+ "url": "https://partners.salla.com/legal/privacy-affiliate",
+ "dir": "items/038-partners.salla.com",
+ "fetched_at": "2026-10-10T23:51:51Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://partners.salla.com/legal/privacy-affiliate",
+ "content_type": "text/html",
+ "bytes": 44228,
+ "cited_in": [
+  "SA-S-0019",
+  "SA-S-0043",
+  "SA-S-0218"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "cb6b430c7d1320715f8a5b2d386b9585fafa37a8db71c4e8d1d9fb699346f7c7",
+ "raw_ext": "html"
+}

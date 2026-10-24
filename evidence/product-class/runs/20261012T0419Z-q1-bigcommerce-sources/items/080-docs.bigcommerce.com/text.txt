@@ -1,0 +1,80 @@
+> This page is for Developer.
+
+> For clean Markdown of any page, append .md to the page URL.
+> For a complete documentation index, see https://docs.bigcommerce.com/llms.txt.
+> For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server.
+
+# Types of Apps
+
+The first step when developing an app is deciding which type of app to develop. The two types of apps, single-click and connector, are defined by the method of authentication. [Single-click](#single-click) apps use an OAuth Authorization Code Grant flow. [Connector apps](#connector) require store owners or authorized users to manually generate and configure store API credentials. In addition to the authentication method, apps can differ by [visibility](#visibility).
+
+## Single-Click
+
+Single-click apps are the recommended app type. They use [OAuth 2.0 Authorization Code Grant](https://oauth.net/2/grant-types/authorization-code/) (oauth2.net) flow. Users initiate installation by clicking **Install**.
+
+![Install App](/_fern-img/b84f9c9feab0a34b8d5f2ef835ca26f482c904a667eed47334eea0cd80631537.webp)
+
+The app requests the user to grant permissions associated to scopes configured for the app in the [Developer Portal](https://build.bigcommerce.com/apps):
+
+![App Permissions](/_fern-img/32eedeea8c1ced34fd516135a2580e9cfe96fecf6aa00895a6f67b7dfa3b3cb1.webp)
+
+Once granted, the app can request a permanent `access_token` for making REST API requests on the user's behalf.
+
+Single-click apps can use [App Extensions](/developer/docs/integrations/apps/app-extensions).
+
+## Connector
+
+Connector apps use manual OAuth token creation instead of the single-click app flow. Store owners and authorized users manually generate [store-level API credentials](/developer/docs/overview/api-fundamentals/api-accounts#revoking-store-level-api-credentials) and enter them into the app's configuration. While we recommend single-click apps, the following use cases might not be compatible:
+
+* Customized integrations that vary per store.
+* Integrations that do not provide any content for an iFrame.
+* Apps that do not provide web services for OAuth exchange (ex: native order sync app).
+
+## Visibility
+
+There are three visibility options for apps: **Draft**, **Unlisted**, and **Public**.
+
+| Visibility | Description                                                                                                | Use Cases                                                                                                                                                                                                                       |
+| :--------- | :--------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Draft      | Apps registered in the [Developer Portal](https://build.bigcommerce.com/) but never submitted for approval | * Installing on stores owned by the same email address as the [Developer Portal](https://build.bigcommerce.com) account email* Testing before submitting an app for review [App Marketplace](https://www.bigcommerce.com/apps/) |
+| Unlisted   | Apps submitted and approved but not listed on the [App Marketplace](https://www.bigcommerce.com/apps/)     | * Installing on stores not owned by same email address as the [Developer Portal](https://build.bigcommerce.com) account email* Testing before submitting an app for review [App Marketplace](https://www.bigcommerce.com/apps/) |
+| Public     | Apps submitted, approved, and listed on the [App Marketplace](https://www.bigcommerce.com/apps/)           | * Making apps visible and installable on all stores* Making apps sellable on the [App Marketplace](https://www.bigcommerce.com/apps/)                                                                                           |
+
+> **Note**
+>
+> * Only approved [partners](https://www.bigcommerce.com/partners/) can create unlisted apps.
+> * To have an app unlisted, contact [[appstore@bigcommerce.com](mailto:appstore@bigcommerce.com)](mailto:appstore@bigcommerce.com).
+
+## Next steps
+
+[Begin app development](/developer/docs/integrations/apps/guide).
+
+## Resources
+
+### Related articles
+
+* [Building Apps Quick Start](/developer/docs/integrations/apps/quick-start)
+
+### Sample apps
+
+* [Node / React / Next.js](https://github.com/bigcommerce-edu/starter-sc-app-next)
+* [Python / Flask](https://github.com/bigcommerce/hello-world-app-python-flask)
+* [PHP / Silex](https://github.com/bigcommerce/hello-world-app-php-silex)
+* [Ruby / Sinatra](https://github.com/bigcommerce/hello-world-app-ruby-sinatra)
+* [Laravel / React](https://github.com/bigcommerce/laravel-react-sample-app)
+
+### Tools
+
+* [Node API Client](https://github.com/bigcommerce/node-bigcommerce/)
+* [Python API Client](https://github.com/bigcommerce/bigcommerce-api-python)
+* [PHP API Client](https://github.com/bigcommerce/bigcommerce-api-php)
+* [Ruby API Client](https://github.com/bigcommerce/bigcommerce-api-ruby)
+* [Ruby OmniAuth Gem](https://github.com/bigcommerce/omniauth-bigcommerce)
+* [BigDesign Developer Playground](https://developer.bigcommerce.com/big-design)
+* [Figma Component Library](https://www.figma.com/community/file/1359989842592268260/bigdesign-component-library)
+
+### Blog posts
+
+* [How to Test App Authentication Locally with ngrok](https://medium.com/bigcommerce-developer-blog/how-to-test-app-authentication-locally-with-ngrok-149150bfe4cf)
+* [Building a BigCommerce App Using Laravel and React](https://medium.com/bigcommerce-developer-blog/building-a-bigcommerce-app-using-laravel-and-react-711ceceb5006)
+* [BigDesign Tutorial](https://medium.com/bigcommerce-developer-blog/bigdesign-build-native-looking-uis-with-the-bigcommerce-design-system-fb06a01a24f2)

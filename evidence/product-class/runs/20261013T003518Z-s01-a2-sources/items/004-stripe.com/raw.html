@@ -1,0 +1,8620 @@
+<!DOCTYPE html>
+<html
+  class="MktRoot"
+  lang="ja-JP"
+  data-js-controller="Page"
+  data-page-id="legal_smcc_JP"
+  data-page-title="三井住友カード（SMCC）のサービス条項"
+  data-loading
+>
+  <head>
+    <script>window.__capturedErrors = [];
+window.onerror = function (message, url, line, column, error) { __capturedErrors.push(error); };
+window.onunhandledrejection = function(evt) { __capturedErrors.push(evt.reason); }
+</script>
+<meta
+  name="sentry-config"
+  data-js-dsn=""
+  data-js-release="224b41bd4a20f25f26d044010408802b8d8add82"
+  data-js-environment="production"
+  data-js-project="mkt"
+>
+
+    <meta name="edge-experiment-treatments" content="wpp_acq_japan_101_top_nav.control.ursula.b9b531fc-098f-bed3-021d-c3601bfb0ad3.m.s,wpp_footer_email_capture.control.ursula.35b2b1ae-71af-f7dc-4253-2614e2606bcf.a.s">
+<meta name="experiment-treatments" content="wpp_acq_japan_101_top_nav.control.ursula.2a7cd8da-b150-435b-9398-b27f4c53483f.m.s,wpp_footer_email_capture.control.ursula.80bf6e06-e4b7-49af-992f-a62ffaaad314.a.s">
+<meta name="experiment-token" content="b057adf6f27243d7e28aa6ea2e88270cbfd232ae">
+    
+
+    <script>(() => {
+  const getExperimentsContent = () =>
+    document.querySelector('meta[name="edge-experiment-treatments"]')
+      ?.content ||
+    document.querySelector('meta[name="experiment-treatments"]')?.content;
+
+  const buildAssignedRules = (experimentId, variantId) => {
+    const expClass = CSS.escape(experimentId);
+    const varClass = CSS.escape(variantId);
+    return [
+      `.${expClass}.${varClass}.client-variant-wrapper { display: unset; }`,
+      `.${expClass}.control.client-variant-wrapper { display: none; }`,
+    ];
+  };
+
+  const generateClientSideExperimentsStyle = () => {
+    const baseRules = [
+      '.client-variant-wrapper { display: none; }',
+      '.control.client-variant-wrapper { display: unset; }',
+    ];
+
+    const experimentsContent = getExperimentsContent();
+
+    if (!experimentsContent) {
+      return baseRules.join('\n');
+    }
+
+    const assignedRules = experimentsContent
+      .split(',')
+      .map((entry) => {
+        const [experimentId, variantId, , , , renderSide] = entry.split('.');
+        return {experimentId, variantId, renderSide};
+      })
+      .filter((exp) => exp.renderSide === 'c' && exp.variantId !== 'control')
+      .flatMap((exp) => buildAssignedRules(exp.experimentId, exp.variantId));
+
+    return [...baseRules, ...assignedRules].join('\n');
+  };
+
+  const style = document.createElement('style');
+  style.id = 'experiments-style';
+  style.textContent = generateClientSideExperimentsStyle();
+  document.head.appendChild(style);
+
+  document.currentScript?.remove();
+})();
+</script>
+
+    
+    
+
+    <meta name="request-country" content="US"/>
+
+    <script type="application/json" id="AnalyticsConfigurationJSON" >{"GTM_ID":"GTM-WK8882T","GTM_FRAME_URL":"https://b.stripecdn.com/stripethirdparty-srv/assets/","enableKeepalive":true,"environment":"production"}</script>
+
+    <template id="source-attribution-loader">
+  <script defer
+    src="https://b.stripecdn.com/mkt-statics-srv/assets/imt-340a923a073199087d6575801466560a.js"
+    data-store_url="https://b.stripecdn.com/mkt-statics-srv/assets/store-936f0d847a16164e7f6b15d74659c4a9.html">
+  </script>
+</template>
+
+    <meta charset='utf-8' />
+    
+    <meta name='viewport' content='width=device-width, initial-scale=1, viewport-fit=cover' />
+
+    
+      <link rel="icon" type="image/svg+xml" href="https://images.stripeassets.com/fzn2n1nzq965/1hgcBNd12BfT9VLgbId7By/01d91920114b124fb4cf6d448f9f06eb/favicon.svg" />
+<link rel="icon" type="image/png" href="https://images.stripeassets.com/fzn2n1nzq965/4vVgZi0ZMoEzOhkcv7EVwK/8cce6fdcf2733b2ec8e99548908847ed/favicon.png?w=96&amp;h=96" sizes="96x96" />
+<link rel="shortcut icon" href="https://assets.stripeassets.com/fzn2n1nzq965/nu0iR4KqmkdJ52fgRts09/c3a10df318e7ffb1f516073daadea625/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="https://images.stripeassets.com/fzn2n1nzq965/4vVgZi0ZMoEzOhkcv7EVwK/8cce6fdcf2733b2ec8e99548908847ed/favicon.png?w=180&amp;h=180" />
+    
+    
+    
+    <meta name="description" content="三井住友カード（SMCC）のサービス条項">
+    
+
+    
+      <link rel="canonical" href="https://stripe.com/jp/legal/smcc">
+<link rel="alternate" href="https://stripe.com/legal/smcc" hreflang="x-default">
+<link rel="alternate" href="https://stripe.com/legal/smcc" hreflang="en-US">
+<link rel="alternate" href="https://stripe.com/es-us/legal/smcc" hreflang="es-US">
+<link rel="alternate" href="https://stripe.com/zh-us/legal/smcc" hreflang="zh-US">
+<link rel="alternate" href="https://stripe.com/ae/legal/smcc" hreflang="en-AE">
+<link rel="alternate" href="https://stripe.com/at/legal/smcc" hreflang="de-AT">
+<link rel="alternate" href="https://stripe.com/en-at/legal/smcc" hreflang="en-AT">
+<link rel="alternate" href="https://stripe.com/au/legal/smcc" hreflang="en-AU">
+<link rel="alternate" href="https://stripe.com/nl-be/legal/smcc" hreflang="nl-BE">
+<link rel="alternate" href="https://stripe.com/fr-be/legal/smcc" hreflang="fr-BE">
+<link rel="alternate" href="https://stripe.com/de-be/legal/smcc" hreflang="de-BE">
+<link rel="alternate" href="https://stripe.com/en-be/legal/smcc" hreflang="en-BE">
+<link rel="alternate" href="https://stripe.com/en-bg/legal/smcc" hreflang="en-BG">
+<link rel="alternate" href="https://stripe.com/br/legal/smcc" hreflang="pt-BR">
+<link rel="alternate" href="https://stripe.com/en-br/legal/smcc" hreflang="en-BR">
+<link rel="alternate" href="https://stripe.com/en-ca/legal/smcc" hreflang="en-CA">
+<link rel="alternate" href="https://stripe.com/fr-ca/legal/smcc" hreflang="fr-CA">
+<link rel="alternate" href="https://stripe.com/de-ch/legal/smcc" hreflang="de-CH">
+<link rel="alternate" href="https://stripe.com/fr-ch/legal/smcc" hreflang="fr-CH">
+<link rel="alternate" href="https://stripe.com/it-ch/legal/smcc" hreflang="it-CH">
+<link rel="alternate" href="https://stripe.com/en-ch/legal/smcc" hreflang="en-CH">
+<link rel="alternate" href="https://stripe.com/cn/legal/smcc" hreflang="zh-CN">
+<link rel="alternate" href="https://stripe.com/en-cn/legal/smcc" hreflang="en-CN">
+<link rel="alternate" href="https://stripe.com/en-cy/legal/smcc" hreflang="en-CY">
+<link rel="alternate" href="https://stripe.com/en-cz/legal/smcc" hreflang="en-CZ">
+<link rel="alternate" href="https://stripe.com/de/legal/smcc" hreflang="de-DE">
+<link rel="alternate" href="https://stripe.com/en-de/legal/smcc" hreflang="en-DE">
+<link rel="alternate" href="https://stripe.com/en-dk/legal/smcc" hreflang="en-DK">
+<link rel="alternate" href="https://stripe.com/en-ee/legal/smcc" hreflang="en-EE">
+<link rel="alternate" href="https://stripe.com/es/legal/smcc" hreflang="es-ES">
+<link rel="alternate" href="https://stripe.com/en-es/legal/smcc" hreflang="en-ES">
+<link rel="alternate" href="https://stripe.com/en-fi/legal/smcc" hreflang="en-FI">
+<link rel="alternate" href="https://stripe.com/sv-fi/legal/smcc" hreflang="sv-FI">
+<link rel="alternate" href="https://stripe.com/fr/legal/smcc" hreflang="fr-FR">
+<link rel="alternate" href="https://stripe.com/en-fr/legal/smcc" hreflang="en-FR">
+<link rel="alternate" href="https://stripe.com/gb/legal/smcc" hreflang="en-GB">
+<link rel="alternate" href="https://stripe.com/en-gi/legal/smcc" hreflang="en-GI">
+<link rel="alternate" href="https://stripe.com/en-gr/legal/smcc" hreflang="en-GR">
+<link rel="alternate" href="https://stripe.com/en-hk/legal/smcc" hreflang="en-HK">
+<link rel="alternate" href="https://stripe.com/zh-hk/legal/smcc" hreflang="zh-HK">
+<link rel="alternate" href="https://stripe.com/en-hr/legal/smcc" hreflang="en-HR">
+<link rel="alternate" href="https://stripe.com/it-hr/legal/smcc" hreflang="it-HR">
+<link rel="alternate" href="https://stripe.com/en-hu/legal/smcc" hreflang="en-HU">
+<link rel="alternate" href="https://stripe.com/ie/legal/smcc" hreflang="en-IE">
+<link rel="alternate" href="https://stripe.com/in/legal/smcc" hreflang="en-IN">
+<link rel="alternate" href="https://stripe.com/it/legal/smcc" hreflang="it-IT">
+<link rel="alternate" href="https://stripe.com/en-it/legal/smcc" hreflang="en-IT">
+<link rel="alternate" href="https://stripe.com/jp/legal/smcc" hreflang="ja-JP">
+<link rel="alternate" href="https://stripe.com/en-jp/legal/smcc" hreflang="en-JP">
+<link rel="alternate" href="https://stripe.com/de-li/legal/smcc" hreflang="de-LI">
+<link rel="alternate" href="https://stripe.com/en-li/legal/smcc" hreflang="en-LI">
+<link rel="alternate" href="https://stripe.com/en-lt/legal/smcc" hreflang="en-LT">
+<link rel="alternate" href="https://stripe.com/fr-lu/legal/smcc" hreflang="fr-LU">
+<link rel="alternate" href="https://stripe.com/de-lu/legal/smcc" hreflang="de-LU">
+<link rel="alternate" href="https://stripe.com/en-lu/legal/smcc" hreflang="en-LU">
+<link rel="alternate" href="https://stripe.com/en-lv/legal/smcc" hreflang="en-LV">
+<link rel="alternate" href="https://stripe.com/en-my/legal/smcc" hreflang="en-MY">
+<link rel="alternate" href="https://stripe.com/zh-my/legal/smcc" hreflang="zh-MY">
+<link rel="alternate" href="https://stripe.com/en-mt/legal/smcc" hreflang="en-MT">
+<link rel="alternate" href="https://stripe.com/mx/legal/smcc" hreflang="es-MX">
+<link rel="alternate" href="https://stripe.com/en-mx/legal/smcc" hreflang="en-MX">
+<link rel="alternate" href="https://stripe.com/nl/legal/smcc" hreflang="nl-NL">
+<link rel="alternate" href="https://stripe.com/en-nl/legal/smcc" hreflang="en-NL">
+<link rel="alternate" href="https://stripe.com/en-no/legal/smcc" hreflang="en-NO">
+<link rel="alternate" href="https://stripe.com/nz/legal/smcc" hreflang="en-NZ">
+<link rel="alternate" href="https://stripe.com/en-pl/legal/smcc" hreflang="en-PL">
+<link rel="alternate" href="https://stripe.com/pt-pt/legal/smcc" hreflang="pt-PT">
+<link rel="alternate" href="https://stripe.com/en-pt/legal/smcc" hreflang="en-PT">
+<link rel="alternate" href="https://stripe.com/en-ro/legal/smcc" hreflang="en-RO">
+<link rel="alternate" href="https://stripe.com/se/legal/smcc" hreflang="sv-SE">
+<link rel="alternate" href="https://stripe.com/en-se/legal/smcc" hreflang="en-SE">
+<link rel="alternate" href="https://stripe.com/en-sg/legal/smcc" hreflang="en-SG">
+<link rel="alternate" href="https://stripe.com/zh-sg/legal/smcc" hreflang="zh-SG">
+<link rel="alternate" href="https://stripe.com/en-si/legal/smcc" hreflang="en-SI">
+<link rel="alternate" href="https://stripe.com/it-si/legal/smcc" hreflang="it-SI">
+<link rel="alternate" href="https://stripe.com/en-sk/legal/smcc" hreflang="en-SK">
+<link rel="alternate" href="https://stripe.com/th/legal/smcc" hreflang="th-TH">
+<link rel="alternate" href="https://stripe.com/en-th/legal/smcc" hreflang="en-TH">
+<link rel="alternate" href="https://stripe.com/br/legal/smcc" hreflang="pt">
+<link rel="alternate" href="https://stripe.com/nl/legal/smcc" hreflang="nl">
+<link rel="alternate" href="https://stripe.com/legal/smcc" hreflang="en">
+<link rel="alternate" href="https://stripe.com/fr/legal/smcc" hreflang="fr">
+<link rel="alternate" href="https://stripe.com/de/legal/smcc" hreflang="de">
+<link rel="alternate" href="https://stripe.com/it/legal/smcc" hreflang="it">
+<link rel="alternate" href="https://stripe.com/jp/legal/smcc" hreflang="ja">
+<link rel="alternate" href="https://stripe.com/zh-sg/legal/smcc" hreflang="zh">
+<link rel="alternate" href="https://stripe.com/es/legal/smcc" hreflang="es">
+<link rel="alternate" href="https://stripe.com/se/legal/smcc" hreflang="sv">
+<link rel="alternate" href="https://stripe.com/th/legal/smcc" hreflang="th">
+
+    
+
+    <title>三井住友カード（SMCC）のサービス条項</title>
+
+    
+    <meta name="format-detection" content="telephone=no">
+    
+    
+
+    
+      
+      
+      
+      
+      
+
+      <meta name="facebook-domain-verification" content="zvsnguqc5l0xz3at5o9beubpl46dv8" />
+      <meta property="og:title" content="三井住友カード（SMCC）のサービス条項">
+      <meta property="og:description" content="三井住友カード（SMCC）のサービス条項">
+      <meta property="og:image" name="og:image" content="https://images.stripeassets.com/fzn2n1nzq965/K3ReOAHQ6AnjETRznub9X/661ff26eb5e9568354c8ac2e9bf4f9fd/Generic_Social_Card.png?q=80">
+
+      <meta name="og:url" content="https://stripe.com/jp/legal/smcc">
+
+
+      
+      <meta name="twitter:site" content="@stripe">
+      <meta name="twitter:image" content="https://images.stripeassets.com/fzn2n1nzq965/K3ReOAHQ6AnjETRznub9X/661ff26eb5e9568354c8ac2e9bf4f9fd/Generic_Social_Card.png?q=80">
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:title" content="三井住友カード（SMCC）のサービス条項">
+      <meta name="twitter:description" content="三井住友カード（SMCC）のサービス条項">
+    
+
+    
+    
+    
+    
+
+    
+      <template data-js-controller="NotificationCenterLoader">
+  <div
+  class="NotificationCenter theme--Light flavor--Chroma accent--Slate"
+  data-js-controller="NotificationCenter"
+  data-js-notification-path="/jp/notifications"
+>
+  <div class="NotificationCenter__backdrop" data-js-target="NotificationCenter.backdrop"></div>
+  <div class="NotificationCenter__list" data-js-target="NotificationCenter.list">
+    
+    
+
+    <div
+      class="NotificationCenter__chatSlot"
+      data-js-target="NotificationCenter.chatSlot"
+      data-universal-chat-slot
+      data-layout="empty"
+    >
+      <template data-js-controller="UniversalChatInitializer">
+  <div class="UniversalChatCtaCard__container UniversalChatCtaCard__container--fixed" data-universal-chat-cta-card>
+  <div class="UniversalChatCtaCard__collapsible">
+    <div class="UniversalChatCtaCard__card" data-universal-chat-faces-card>
+      <div class="UniversalChatCtaCard__gap">
+        <div
+  class="
+    Card
+    
+    
+    
+    Card--shadowMedium
+    
+    
+    
+    Notification__card UniversalChatCtaCard
+  "
+  
+  
+  
+  
+  
+  
+>
+  <div class="Notification__content">
+            <div class="UniversalChatCtaCard__header">
+              <div class="UniversalChatCtaCard__avatars">
+                <img
+                  class="UniversalChatCtaCard__avatar UniversalChatCtaCard__avatar--1"
+                  data-universal-chat-avatar-1
+                  src=""
+                  alt=""
+                  width="34"
+                  height="34"
+                />
+                <img
+                  class="UniversalChatCtaCard__avatar UniversalChatCtaCard__avatar--2"
+                  data-universal-chat-avatar-2
+                  src=""
+                  alt=""
+                  width="38"
+                  height="38"
+                />
+              </div>
+
+              <div class="UniversalChatCtaCard__availability">
+                <span class="UniversalChatCtaCard__dot" aria-hidden="true"></span>
+                <span class="UniversalChatCtaCard__agentCount">
+                  <span data-universal-chat-agent-count>8</span>&nbsp;対応可能な営業担当者
+                </span>
+              </div>
+            </div>
+
+            <p class="UniversalChatCtaCard__subtitle">お客様のビジネスニーズについてご相談に応じます。</p>
+          </div>
+
+          <button
+            class="Notification__closeButton"
+            data-universal-chat-cta-card-close
+            type="button"
+            aria-label="チャットを閉じる"
+          >
+            <svg width="20px" height="20px" aria-hidden="true">
+              <path fill="var(--closeButtonFill)" fill-rule="evenodd" d="M10 0a10 10 0 1 1 0 20 10 10 0 0 1 0-20zM7.17 5.76a1 1 0 0 0-1.41 1.41L8.59 10l-2.83 2.83a1 1 0 0 0 1.41 1.41L10 11.41l2.83 2.83a1 1 0 0 0 1.41-1.41L11.41 10l2.83-2.83a1 1 0 1 0-1.41-1.41L10 8.59z" />
+            </svg>
+          </button>
+</div>
+      </div>
+    </div>
+  </div>
+
+  <button
+    class="UniversalChatCtaCard__cta"
+    data-universal-chat-cta-card-open
+    data-testid="chat-button"
+    type="button"
+    aria-label="今すぐチャット 営業担当者と"
+  >
+    今すぐチャット<span class="UniversalChatCtaCard__ctaSuffix" aria-hidden="true">&nbsp;営業担当者と</span>
+  </button>
+</div>
+
+  <iframe data-universal-chat-iframe title="Chat Widget" src="https://support-conversations.stripe.com/widget?entrypoint=dot_com&audience=dot_com" style="position: fixed; right: 24px; bottom: 0px; left: auto; z-index: 2147483639; width: 390px; max-height: 708px; overflow: hidden; background-color: rgb(230, 235, 241); border: 0px; border-radius: 8px 8px 0 0; box-shadow: rgba(0, 0, 0, 0.05) 0px 12px 15px, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0.08) 0px 5px 9px; transition: 0.2s ease-in-out; transform: translate(0, 100%); height: calc(-40px + 100svh); opacity: 0;"></iframe>
+
+  <div data-universal-chat-unseen-messages-count-div style="display: none; visibility: hidden; position: fixed; right: 11px; bottom: 33px; z-index: 2147483640; height: 24px; width: 24px; color: #ffffff; background-color: #635bff; border-radius: 50%; align-items: center; justify-content: center; font-size: 0.9rem; font-weight: 500; padding-bottom: 2px;"></div>
+</template>
+    </div>
+  </div>
+
+  <template data-js-target="NotificationCenter.template">
+    <div
+  class="Notification"
+  data-js-controller="Notification"
+  data-js-target-list="NotificationCenter.notifications"
+  data-js-id=""
+>
+  <div
+  class="
+    Card
+    
+    
+    
+    Card--shadowMedium
+    
+    
+    
+    Notification__card
+  "
+  
+  
+  
+  
+  
+  
+>
+  <div class="Notification__content"></div>
+    <button class="Notification__closeButton" data-js-target="Notification.closeButton" aria-label="閉じる"><svg width="20px" height="20px"><path fill="var(--closeButtonFill)" fill-rule="evenodd" d="M10 0a10 10 0 1 1 0 20 10 10 0 0 1 0-20zM7.17 5.76a1 1 0 0 0-1.41 1.41L8.59 10l-2.83 2.83a1 1 0 0 0 1.41 1.41L10 11.41l2.83 2.83a1 1 0 0 0 1.41-1.41L11.41 10l2.83-2.83a1 1 0 1 0-1.41-1.41L10 8.59z" /></svg></button>
+</div>
+</div>
+  </template>
+</div>
+</template>
+    
+
+    
+
+    <meta data-js-controller="ScrollDepthTracker"></meta>
+    
+    
+      <meta data-js-controller="MonitorWebVitals"></meta>
+    
+
+    
+    <link rel="preconnect" href="https://q.stripe.com" crossorigin>
+<link rel="dns-prefetch" href="https://q.stripe.com">
+    <link rel="preconnect" href="https://images.stripeassets.com" crossorigin>
+<link rel="dns-prefetch" href="https://images.stripeassets.com">
+    <link rel="preconnect" href="https://assets.stripeassets.com" crossorigin>
+<link rel="dns-prefetch" href="https://assets.stripeassets.com">
+    
+      
+    
+    
+      
+    
+    <script>new MutationObserver(e=>{for(const d of e)if(d.addedNodes)for(const e of d.addedNodes)e instanceof HTMLLinkElement&&void 0!==e.dataset.jsLazyStyle&&e.addEventListener("load",function(){this.media="all"})}).observe(document.head,{childList:!0}),document.addEventListener("DOMContentLoaded",()=>{for(const e of document.querySelectorAll("link[data-js-lazy-style]"))"all"!==e.media&&(e.media="all")});
+</script>
+    <link rel="preconnect" href="https://b.stripecdn.com" crossorigin>
+<link rel="dns-prefetch" href="https://b.stripecdn.com">
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-Page-b3e6e505ec9cdc64d74e.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-RefreshedSiteHeader-55cfe057216c8dcba5a8.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-Guides-f00064c54f795e59f164.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-UserLogo-0ee93be3bfc013809430.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-NavigationItem-f544686084df21c54839.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-Link-d2d3aeca535307db3b84.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-CopyTitle-c641e014b3946628bc95.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-List-f0dd86d0ff490fdd7e75.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-Copy-1d1c3373b0854daf173b.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-Content-ea5e1c7c531bf0b19f54.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-Paragraph-e3b0c44298fc1c149afb.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-Title-e3b0c44298fc1c149afb.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-RowLayout-9272a8ee72d3dac4a6ef.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-ColumnLayout-86727a6ab99d7e86820f.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-Section-b4cc97dde2285e8f3b5b.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-SiteFooterSection-801324a67f6b0168e107.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-GlobalizationPicker-cb59e0de1d5c3aeaa184.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-Flag-4ff2f9bcdf4404265882.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-LocaleControl-09ce62c550a15bb456e5.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-CtaButton-b06ef0cc0329843d44e7.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-HoverArrow-b6270c66306d9a48d4e8.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-Container-c8db5ac09570446f155e.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-UniversalChatCtaCard-d7c08b0cd6f07dcb3ad3.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-Card-fc1ed003191984345ba9.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-Notification-7c2b1bba3ab10095bc15.css">
+            
+
+            <link rel="preload" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1/f965fdf4.woff2" as="font" crossorigin>
+          
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-fonts-79c606a1251d238d4708.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-global-8de066c6d50820453884.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-White-e97cfe352f6402a27dd4.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-Light-b8ef30ce6bd4667ef9f4.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-Dark-7c177d402d3875fa8e4c.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-SemiDark-c360011f6a51855455a7.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-Transparent-bdd8e13604d56721da9e.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-Hub-ff0110a4dd95a71fe24e.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-Legacy-ffa4f24cd3ca18798c6a.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-LegacyLight-c4964a08822288e5ca89.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-LegacyDark-d19fb27941422687f6e0.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-Chroma-87787f8a17a7694cc56b.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-CottonCandy-34902095724678b38c34.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-LemonLime-13ff3a38b624e377a552.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-Overcast-81fe349430811fb7e7a0.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-Perennial-854f0de6b75daa0af865.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-Pomegranate-41bf31c2ab13e3303495.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-Slate-bc2bc8abf6c1a4bdaaf9.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-Sunburst-a883cb3d33b1332bbc9a.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-Sunset-852ef64feef5cc52c82c.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-Tropical-4894817f3839a23051cc.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-Twilight-4cf03cc2b6b49192800f.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-Wintergreen-2a184b526d0f98be2716.css">
+            
+
+              <link rel="stylesheet" href="https://b.stripecdn.com/mkt-statics-srv/assets/v1-Layout-2fe3591ea951e6ccab8e.css">
+            
+
+        <script type="application/json" data-js-script-registry>
+          [{"critical":true,"path":"https://b.stripecdn.com/mkt-statics-srv/assets/v1-RefreshedSiteHeader-OD75H2DT.js"},{"critical":true,"path":"https://b.stripecdn.com/mkt-statics-srv/assets/v1-LocaleControl-SA5IJFCP.js"},{"critical":true,"path":"https://b.stripecdn.com/mkt-statics-srv/assets/v1-Page-YF2O77Z5.js"},{"critical":true,"path":"https://b.stripecdn.com/mkt-statics-srv/assets/v1-Sentry-IABPFTSH.js"},{"critical":true,"path":"https://b.stripecdn.com/mkt-statics-srv/assets/v1-EnforceSameSiteLaxOnCookies-5NDXH4YF.js"},{"critical":true,"path":"https://b.stripecdn.com/mkt-statics-srv/assets/v1-LoaderScript-FJKHQYBA.js"},{"critical":true,"path":"https://b.stripecdn.com/mkt-statics-srv/assets/v1-Loader-PGFAG3WL.js"},{"critical":true,"path":"https://b.stripecdn.com/mkt-statics-srv/assets/v1-Container-WABCMT5Z.js"},{"critical":true,"path":"https://b.stripecdn.com/mkt-statics-srv/assets/v1-UniversalChatInitializer-L4U4QXHH.js"},{"critical":true,"path":"https://b.stripecdn.com/mkt-statics-srv/assets/v1-Notification-65OW7IIY.js"},{"critical":true,"path":"https://b.stripecdn.com/mkt-statics-srv/assets/v1-ScrollDepthTracker-46SUGXAK.js"},{"critical":true,"path":"https://b.stripecdn.com/mkt-statics-srv/assets/v1-MonitorWebVitals-7VSEEIRE.js"}]
+        </script>
+      
+
+        <script type="module" src="https://b.stripecdn.com/mkt-statics-srv/assets/v1-Bootstrapper-LR2FPNX3.js"></script>
+      
+
+  </head>
+  <body
+    class="
+      MktBody
+      theme--White
+      flavor--Chroma
+      accent--Blurple
+      
+    "
+    
+    
+  >
+    <div id="MktContent">
+      <header
+  class="
+    SiteHeader
+    SiteHeader--noTransitions
+    SiteHeader--refreshed
+    SiteHeader--hasContactSales
+    
+    
+    SiteHeader--excludesNav
+    
+    
+    
+    
+    SiteHeader--hasGuides
+    "
+  data-menu-state="closed"
+  data-js-controller="SiteHeader"
+>
+  <div class="SiteHeader__overlay" data-js-target="SiteHeader.overlayEl"></div>
+  <div class="SiteHeader__stickyContainer" data-js-target="SiteHeader.stickyContainerEl">
+    <div class="SiteHeader__stickyShadow" data-js-target="SiteHeader.stickyShadowEl"></div>
+    
+    <div class="SiteHeader__guidesContainer">
+      <div
+  class='
+    Guides
+    SiteHeader__guides
+  '
+  aria-hidden='true'
+>
+  <div class='Guides__container'>
+    <div class='Guides__guide'></div>
+    <div class='Guides__guide'></div>
+    <div class='Guides__guide'></div>
+    <div class='Guides__guide'></div>
+    <div class='Guides__guide'></div>
+  </div>
+</div>
+    </div>
+    
+    <div class="SiteHeader__container" data-js-target="SiteHeader.headerContainerEl">
+      <div class="SiteHeader__navContainer">
+        <h1 class="SiteHeader__logo">
+          <a href="/jp"
+            class="SiteHeader__logoLink"
+            data-js-controller="AnalyticsButton"
+            data-analytics-category="Navigation"
+            data-analytics-action="Clicked"
+            data-analytics-label="Stripe Logo"
+            data-testid="header-stripe-logo"
+          >
+            <svg viewBox="0 0 60 25" xmlns="http://www.w3.org/2000/svg" width="60" height="25" class="UserLogo variant-- "><title>Stripe logo</title><path fill="var(--userLogoColor, #0A2540)" d="M59.64 14.28h-8.06c.19 1.93 1.6 2.55 3.2 2.55 1.64 0 2.96-.37 4.05-.95v3.32a8.33 8.33 0 0 1-4.56 1.1c-4.01 0-6.83-2.5-6.83-7.48 0-4.19 2.39-7.52 6.3-7.52 3.92 0 5.96 3.28 5.96 7.5 0 .4-.04 1.26-.06 1.48zm-5.92-5.62c-1.03 0-2.17.73-2.17 2.58h4.25c0-1.85-1.07-2.58-2.08-2.58zM40.95 20.3c-1.44 0-2.32-.6-2.9-1.04l-.02 4.63-4.12.87V5.57h3.76l.08 1.02a4.7 4.7 0 0 1 3.23-1.29c2.9 0 5.62 2.6 5.62 7.4 0 5.23-2.7 7.6-5.65 7.6zM40 8.95c-.95 0-1.54.34-1.97.81l.02 6.12c.4.44.98.78 1.95.78 1.52 0 2.54-1.65 2.54-3.87 0-2.15-1.04-3.84-2.54-3.84zM28.24 5.57h4.13v14.44h-4.13V5.57zm0-4.7L32.37 0v3.36l-4.13.88V.88zm-4.32 9.35v9.79H19.8V5.57h3.7l.12 1.22c1-1.77 3.07-1.41 3.62-1.22v3.79c-.52-.17-2.29-.43-3.32.86zm-8.55 4.72c0 2.43 2.6 1.68 3.12 1.46v3.36c-.55.3-1.54.54-2.89.54a4.15 4.15 0 0 1-4.27-4.24l.01-13.17 4.02-.86v3.54h3.14V9.1h-3.13v5.85zm-4.91.7c0 2.97-2.31 4.66-5.73 4.66a11.2 11.2 0 0 1-4.46-.93v-3.93c1.38.75 3.1 1.31 4.46 1.31.92 0 1.53-.24 1.53-1C6.26 13.77 0 14.51 0 9.95 0 7.04 2.28 5.3 5.62 5.3c1.36 0 2.72.2 4.09.75v3.88a9.23 9.23 0 0 0-4.1-1.06c-.86 0-1.44.25-1.44.9 0 1.85 6.29.97 6.29 5.88z" fill-rule="evenodd"/></svg>
+          </a>
+        </h1>
+
+        
+      </div>
+    </div>
+    
+  </div>
+</header>
+
+
+<script>(() => {
+  function displayContentForState(state) {
+    document
+      .querySelectorAll(`template[data-mount-on-state="${state}"]`)
+      .forEach((template) =>
+        document
+          .querySelectorAll(template.dataset.mountTarget)
+          .forEach((target) => {
+            while (target.firstChild) target.removeChild(target.firstChild);
+            target.appendChild(template.content.cloneNode(true));
+          }),
+      );
+  }
+  const siteAuthCookie = document.cookie.match(/(?:^|;)\s*site-auth=([^;]+);?/);
+  const hasLoggedInCookie = document.cookie.match(
+    /(?:^|;)\s*__Secure-has_logged_in=([^;]+);?/,
+  );
+
+  const isLoggedIn = siteAuthCookie && siteAuthCookie[1] === '1';
+  const hasLoggedIn = hasLoggedInCookie && hasLoggedInCookie[1];
+
+  if (isLoggedIn) {
+    displayContentForState('logged-in');
+  } else if (hasLoggedIn) {
+    displayContentForState('logged-out-existing');
+  } else {
+    displayContentForState('logged-out-new');
+  }
+})();
+</script>
+  <section
+  
+  class="
+    Section
+    LegalPage__layout
+    theme--White
+    
+    
+    
+    Section--paddingNormal
+    
+    
+    
+    Section--hasGuides
+    Section--hasStickyNav
+    
+  "
+  
+  data-js-controller="LegalNavController"
+  
+  
+  
+>
+  <div class="Section__masked">
+    <div class="Section__backgroundMask">
+      <div class="
+        Section__background
+        
+      ">
+        
+        <div
+  class='
+    Guides
+    
+  '
+  aria-hidden='true'
+>
+  <div class='Guides__container'>
+    <div class='Guides__guide'></div>
+    <div class='Guides__guide'></div>
+    <div class='Guides__guide'></div>
+    <div class='Guides__guide'></div>
+    <div class='Guides__guide'></div>
+  </div>
+</div>
+      </div>
+      
+    </div>
+    <div class='Section__container'>
+      <div class='Section__layoutContainer'>
+        <div class='Section__layout'>
+          
+            <div
+  class="
+    RowLayout
+    
+  "
+  
+  
+  
+>
+  <div
+  class='
+    ColumnLayout
+    
+    
+    
+  '
+  
+  
+  
+  data-columns='1,3'
+  
+  
+>
+  <nav>
+  <section
+  class="
+    List
+    
+    
+    
+  "
+  
+  
+  
+>
+  <ul class='List__list'>
+    
+      <li
+  class="
+    List__item
+    ListItem
+    LegalNavItem
+    LegalNavItem--isTopLevel
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="https://stripe.com/jp/legal"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='legal_global_navigation_legal_home'
+  
+  
+  
+  
+  
+>法務</a>
+  
+
+  
+</li>
+      
+    
+      
+        <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    <h2
+  class="
+    CopyTitle
+    CopyTitle--variantDetail
+    CopyTitle--inline
+    
+    
+    
+  "
+  
+>Stripe 利用規約</h2>
+<section
+  class="
+    List
+    
+    
+    
+  "
+  
+  
+  
+>
+  <ul class='List__list'>
+    
+      <li
+  class="
+    List__item
+    ListItem
+    LegalNavItem
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="https://stripe.com/jp/legal/ssa-overview"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='legal_global_navigation_stripe_services_agreement_overview_faqs'
+  
+  
+  
+  
+  
+>概要とよくあるご質問</a>
+  
+
+  
+</li>
+  
+    <li
+  class="
+    List__item
+    ListItem
+    LegalNavItem
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="https://stripe.com/jp/legal/ssa"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='legal_global_navigation_stripe_services_agreement_general_terms'
+  
+  
+  
+  
+  
+>一般規約</a>
+  
+
+  
+</li>
+  
+    <li
+  class="
+    List__item
+    ListItem
+    LegalNavItem
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="https://stripe.com/jp/legal/ssa-service-terms"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='legal_global_navigation_stripe_services_agreement_service_terms'
+  
+  
+  
+  
+  
+>サービス規約</a>
+  
+
+  
+</li>
+  
+    <li
+  class="
+    List__item
+    ListItem
+    LegalNavItem
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/legal/bank-debit-authorizations"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='legal_global_navigation_stripe_services_agreement_user_bank_account_debit_authorizations'
+  
+  
+  
+  
+  
+>ユーザー銀行口座引き落としの承認でご確認いただけます。</a>
+  
+
+  
+</li>
+  
+    <li
+  class="
+    List__item
+    ListItem
+    LegalNavItem
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="https://stripe.com/jp/restricted-businesses"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='legal_global_navigation_stripe_services_agreement_prohibited_restricted_businesses'
+  
+  
+  
+  
+  
+>禁止業種および制限付き業種</a>
+  
+
+  
+</li>
+  
+    <li
+  class="
+    List__item
+    ListItem
+    LegalNavItem
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/legal/e-sign-disclosure"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='Legal_Global_Navigation_Stripe_Services_Agreement_e_Signature_Disclosure'
+  
+  
+  
+  
+  
+>電子署名の開示</a>
+  
+
+  
+</li>
+    
+  </ul>
+  
+</section>
+  
+
+  
+</li>
+      
+    
+      
+        <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    <h2
+  class="
+    CopyTitle
+    CopyTitle--variantDetail
+    CopyTitle--inline
+    
+    
+    
+  "
+  
+>金融プロバイダー規約</h2>
+<section
+  class="
+    List
+    
+    
+    
+  "
+  
+  
+  
+>
+  <ul class='List__list'>
+    
+      <li
+  class="
+    List__item
+    ListItem
+    LegalNavItem
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/legal/acquirer-disclosure"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='legal_global_navigation_financial_provider_terms_acquirer_disclosure_acquirer_terms'
+  
+  
+  
+  
+  
+>アクワイアラーの情報開示およびアクワイアラー規約</a>
+  
+
+  
+</li>
+  
+    <li
+  class="
+    List__item
+    ListItem
+    LegalNavItem
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/legal/spc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='legal_global_navigation_financial_provider_terms_spc_terms_us'
+  
+  
+  
+  
+  
+>SPC 規約 (米国)</a>
+  
+
+  
+</li>
+  
+    <li
+  class="
+    List__item
+    ListItem
+    LegalNavItem
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="https://stripe.com/jp/legal/spc/licenses"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='Legal_Global_Navigation_Financial_Provider_Terms_SPC_Licenses_US'
+  
+  
+  
+  
+  
+>SPC ライセンス (アメリカ)</a>
+  
+
+  
+</li>
+  
+    <li
+  class="
+    List__item
+    ListItem
+    LegalNavItem
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/legal/celtic-spend-card"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='legal_global_navigation_financial_provider_terms_issuing_bank_terms_us'
+  
+  
+  
+  
+  
+>カード発行会社規約 (アメリカ)</a>
+  
+
+  
+</li>
+  
+    <li
+  class="
+    List__item
+    ListItem
+    LegalNavItem
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/legal/payment-terms"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='legal_navigation_payment_terms'
+  
+  
+  
+  
+  
+>決済手段の利用規約</a>
+  
+
+  
+</li>
+  
+    <li
+  class="
+    List__item
+    ListItem
+    LegalNavItem
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/legal/stablecoin-partner-terms"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='legal_navigation_stablecoin_partner_terms'
+  
+  
+  
+  
+  
+>ステーブルコインパートナー利用規約</a>
+  
+
+  
+</li>
+  
+    <li
+  class="
+    List__item
+    ListItem
+    LegalNavItem
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/legal/checking-account"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='legal_navigation_checking_account_agreement'
+  
+  
+  
+  
+  
+>当座預金口座規約</a>
+  
+
+  
+</li>
+    
+  </ul>
+  
+</section>
+  
+
+  
+</li>
+      
+    
+      
+        <li
+  class="
+    List__item
+    ListItem
+    LegalNavItem
+    LegalNavItem--isTopLevel
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="https://stripe.com/jp/legal/dpa"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='legal_global_navigation_data_processing_agreement'
+  
+  
+  
+  
+  
+>データ処理規約</a>
+  
+
+  
+</li>
+      
+    
+      
+        <li
+  class="
+    List__item
+    ListItem
+    LegalNavItem
+    LegalNavItem--isTopLevel
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="https://stripe.com/jp/legal/ssa-translations"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='legal_global_navigation_translations'
+  
+  
+  
+  
+  
+>翻訳</a>
+  
+
+  
+</li>
+      
+    
+      
+        <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    <h2
+  class="
+    CopyTitle
+    CopyTitle--variantDetail
+    CopyTitle--inline
+    
+    
+    
+  "
+  
+>地域の規制に関する情報開示とポリシー</h2>
+<section
+  class="
+    List
+    
+    
+    
+  "
+  
+  
+  
+>
+  <ul class='List__list'>
+    
+      <li
+  class="
+    List__item
+    ListItem
+    LegalNavItem
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/legal/unacceptable-risk-policy"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='legal_global_navigation_regional_regulatory_disclosures_policies_stripe_unacceptable_risk_policy'
+  
+  
+  
+  
+  
+>Stripe 容認しがたいリスクに関するポリシー</a>
+  
+
+  
+</li>
+  
+    <li
+  class="
+    List__item
+    ListItem
+    LegalNavItem
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/legal/api-key-security"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='legal_global_navigation_regional_regulatory_disclosures_policies_user_notice_api_key_security'
+  
+  
+  
+  
+  
+>ユーザー向け通知—API キーのセキュリティ</a>
+  
+
+  
+</li>
+  
+    <li
+  class="
+    List__item
+    ListItem
+    LegalNavItem
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/au/fsg-pds"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='legal_global_navigation_regional_regulatory_disclosures_policies_combined_financial_services_guide__and_product_disclosure_statement_au'
+  
+  
+  
+  
+  
+>金融サービスガイドと商品開示書 (AU) の組み合わせ</a>
+  
+
+  
+</li>
+  
+    <li
+  class="
+    List__item
+    ListItem
+    LegalNavItem
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="https://stripe.com/jp/legal/target_market_determinations"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='legal_global_navigation_regional_regulatory_disclosures_policies_target_market_legal_determinations_au'
+  
+  
+  
+  
+  
+>ターゲット市場法務判断 (AU)</a>
+  
+
+  
+</li>
+  
+    <li
+  class="
+    List__item
+    ListItem
+    LegalNavItem
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="https://stripe.com/jp/legal/ca-required-regulatory-disclosures"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='legal_global_navigation_regional_regulatory_disclosures_policies_required_regulatory_disclosures_canada'
+  
+  
+  
+  
+  
+>必須の規制開示 (カナダ)</a>
+  
+
+  
+</li>
+  
+    <li
+  class="
+    List__item
+    ListItem
+    LegalNavItem
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/in/legal/csr"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='legal_global_navigation_regional_regulatory_disclosures_policies_corporate_social_responsibility_csr_policy_in'
+  
+  
+  
+  
+  
+>企業の社会的責任 (CSR) ポリシー (IN)</a>
+  
+
+  
+</li>
+    
+  </ul>
+  
+</section>
+  
+
+  
+</li>
+      
+    
+      
+        <li
+  class="
+    List__item
+    ListItem
+    LegalNavItem
+    LegalNavItem--isTopLevel
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="https://stripe.com/jp/legal/public-sector-addendum"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='legal_public_sector_addendum'
+  
+  
+  
+  
+  
+>米国公共部門補遺</a>
+  
+
+  
+</li>
+    
+  </ul>
+  
+</section>
+</nav>
+        <div
+  class="
+    RowLayout
+    LegalContainer__rowLayout
+  "
+  
+  
+  
+>
+  <section
+  
+  
+  class="
+    Copy
+    
+    variant--Hero
+    
+  "
+  style="
+    
+    
+    --paddingRight: var(--columnPaddingNormal);
+    
+    
+    
+    
+    
+    
+    
+  "
+  
+>
+  
+  
+    <header class="Copy__header">
+      
+      
+      
+      
+        <h1
+          class="
+            Copy__title
+            
+          "
+          >
+          三井住友カード（SMCC）のサービス条項
+        </h1>
+      
+      
+    </header>
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+          
+          <main class="LegalContent">
+  <div
+  class="
+    RowLayout
+    
+  "
+  
+  
+  
+>
+  <div class="RichTextContainer">
+          <p>最終更新日: 2026 年 4 月 1 </p><p>本サービス条項は、株式会社三井住友カード（「<strong>SMCC</strong>」）が決済手段アクワイアラーであるカード決済商品（Visa及び Mastercardの商品を含みます）の決済処理のための Stripe Payments サービス（「<strong>カード決済サービス</strong>」）に適用される追加条項です。本サービス条項において使用されているが、定義されていない用語は、Stripe 利用規約において示されている意味を有します。</p><p>本サービス条項は、お客様、Stripe 及び SMCCとの間の、カード決済サービスに関する合意を構成します。</p><p>Stripe との間の本サービス条項を通じて提供されるカード決済サービスを利用することにより、お客様は、Stripe 又は SMCC が、SMCC と連携して提供されるカード決済サービスのお客様による利用に関する規定を執行し得ることを理解します。また、Stripe 又は SMCC は、本サービス条項をいつでも終了させ、又は、お客様がカード決済サービスを利用する権能を制限若しくは終了させることができます。</p><p>お客様は、SMCC を通じて Stripe により提供される本サービスを利用するために、本サービス条項をすべて受諾しなければなりません。お客様が受諾しない場合には、カード決済サービスを利用することはできません。</p><h3 id=1-本サービス条項の目的><strong>1. 本サービス条項の目的</strong></h3><p>お客様の顧客が Stripe を通じて支払いをする時、顧客は、カードスキームを資金源とする支払を含む、Stripe のウェブサイト上で利用可能な資金源を通じて支払いをする選択肢を有します。お客様は、カードスキームを資金源とする支払を受け取るため、カードスキームのメンバーである銀行又は参加アクワイアラーと直接契約関係を締結する必要があります。ただし、カード決済サービスを利用することによって、お客様が SMCC（又は株式会社三井住友銀行を含む、SMCC と共通の支配下にあるその他の法主体）に預金口座その他の口座を開設するものではありません。</p><p>SMCC は、Stripe による本サービスの提供又はお客様の事業のためのお客様の本サービスの利用につき一切の責任を負いません。また、SMCC は、お客様の本サービスの利用に関連してあり得る問題を解決するためにお客様にカスタマーサービスを提供する責任も有していません。お客様のみが、お客様の商品及び本サービスに関連するあらゆる問題について顧客サポートを提供する責任を負います。</p><h3 id=2-smcc-加盟店規約><strong>2. SMCC 加盟店規約</strong></h3><p>カード決済サービスを利用することにより、お客様は、<a
+  class="
+    Link
+    
+  "
+  href="https://www.smbc-card.com/kamei/kiyaku/responsive/pdf/smbc-card_kiyaku_tsuhan.pdf"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label=''
+  
+  
+  
+  
+  
+>https://www.smbc-card.com/kamei/kiyaku/responsive/pdf/smbc-card_kiyaku_tsuhan.pdf</a> に規定される SMCC 加盟店規約を受諾することを了解し、これに同意するものとします。当該  SMCC 加盟店規約は、参照することによって本サービス条項に組み込まれます。</p><p>SMCC は、お客様に通知することなく SMCC 加盟店規約を変更することがあります。お客様は、SMCC 加盟店規約を定期的に確認し、更新内容を把握する必要があります。</p><h3 id=3-決済及び取引><strong>3. 決済及び取引</strong></h3><p>3.1	SMCC 加盟店規約にかかわらず、お客様は以下に同意するものとします。</p><p>(a) Stripe は、カード決済サービスに関連する SMCC との関係及び／又は交渉に関してお客様に代わり行為する権限、カードネットワークを通してお客様のカード取引に由来する決済があった場合に、お客様に代わり資金を保持し、受領し、支払うことのできる権限を有するものとします。</p><p>(b) SMCC 加盟店規約は、お客様と SMCC との間で直接に発生する利用料金の支払い又は決済に関する義務について適用されるものではなく、これらは Stripe 利用規約に従って取り扱われるものとします。</p><p>(c) SMCC加盟店規約に基づきお客様がSMCCに対して負う義務に加えて、カード決済サービスに係る取引、紛争、返金及び取消の処理に関しては、引き続き Stripe 利用規約が適用されます。お客様は、これらの事項に関する指示を Stripe を通じて行う必要があります。お客様は、これらの事項に関して SMCC 加盟店規約に基づく SMCC の権利に従った措置を講じるよう、Stripe が SMCC から要求される可能性があることを了解するものとします。お客様は、これに応じた Stripe からの要求又は指示に速やかに従うことに同意するものとします。</p>
+        </div>
+</div>
+</main>
+</div>
+</div>
+</div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <footer
+  
+  class="
+    Section
+    SiteFooterSection
+    theme--Light
+    flavor--Chroma
+    accent--Slate
+    
+    Section--paddingNormal
+    
+    
+    
+    Section--hasGuides
+    Section--hasStickyNav
+    Section--hasBorderTop
+  "
+  
+  
+  
+  
+  
+>
+  <div class="Section__masked">
+    <div class="Section__backgroundMask">
+      <div class="
+        Section__background
+        
+      ">
+        
+        <div
+  class='
+    Guides
+    
+  '
+  aria-hidden='true'
+>
+  <div class='Guides__container'>
+    <div class='Guides__guide'></div>
+    <div class='Guides__guide'></div>
+    <div class='Guides__guide'></div>
+    <div class='Guides__guide'></div>
+    <div class='Guides__guide'></div>
+  </div>
+</div>
+      </div>
+      
+    </div>
+    <div class='Section__container'>
+      <div class='Section__layoutContainer'>
+        <div class='Section__layout'>
+          
+            <nav class="SiteFooterSection__layout">
+      <div class='SiteFooterSection__column--locale SiteFooterSection__column'>
+        <div class='SiteFooterSection__localeContainer'>
+          <div class="SiteFooterSection__logo">
+            <a
+              class='SiteFooterSection__logoLink'
+              href='/jp'
+              data-js-controller="AnalyticsButton"
+              data-analytics-category='Navigation'
+              data-analytics-action='Clicked'
+              data-analytics-label='global_footer__stripe_logo'
+              aria-label="Stripe のホームページに移動"
+              data-testid="footer-stripe-logo"
+            >
+              <svg viewBox="0 0 60 25" xmlns="http://www.w3.org/2000/svg" width="60" height="25" class="UserLogo variant-- "><title>Stripe logo</title><path fill="var(--userLogoColor, #0A2540)" d="M59.64 14.28h-8.06c.19 1.93 1.6 2.55 3.2 2.55 1.64 0 2.96-.37 4.05-.95v3.32a8.33 8.33 0 0 1-4.56 1.1c-4.01 0-6.83-2.5-6.83-7.48 0-4.19 2.39-7.52 6.3-7.52 3.92 0 5.96 3.28 5.96 7.5 0 .4-.04 1.26-.06 1.48zm-5.92-5.62c-1.03 0-2.17.73-2.17 2.58h4.25c0-1.85-1.07-2.58-2.08-2.58zM40.95 20.3c-1.44 0-2.32-.6-2.9-1.04l-.02 4.63-4.12.87V5.57h3.76l.08 1.02a4.7 4.7 0 0 1 3.23-1.29c2.9 0 5.62 2.6 5.62 7.4 0 5.23-2.7 7.6-5.65 7.6zM40 8.95c-.95 0-1.54.34-1.97.81l.02 6.12c.4.44.98.78 1.95.78 1.52 0 2.54-1.65 2.54-3.87 0-2.15-1.04-3.84-2.54-3.84zM28.24 5.57h4.13v14.44h-4.13V5.57zm0-4.7L32.37 0v3.36l-4.13.88V.88zm-4.32 9.35v9.79H19.8V5.57h3.7l.12 1.22c1-1.77 3.07-1.41 3.62-1.22v3.79c-.52-.17-2.29-.43-3.32.86zm-8.55 4.72c0 2.43 2.6 1.68 3.12 1.46v3.36c-.55.3-1.54.54-2.89.54a4.15 4.15 0 0 1-4.27-4.24l.01-13.17 4.02-.86v3.54h3.14V9.1h-3.13v5.85zm-4.91.7c0 2.97-2.31 4.66-5.73 4.66a11.2 11.2 0 0 1-4.46-.93v-3.93c1.38.75 3.1 1.31 4.46 1.31.92 0 1.53-.24 1.53-1C6.26 13.77 0 14.51 0 9.95 0 7.04 2.28 5.3 5.62 5.3c1.36 0 2.72.2 4.09.75v3.88a9.23 9.23 0 0 0-4.1-1.06c-.86 0-1.44.25-1.44.9 0 1.85 6.29.97 6.29 5.88z" fill-rule="evenodd"/></svg>
+            </a>
+          </div>
+
+          
+            <div class="SiteFooterSection__localeControls">
+              <div class="LocaleControl " data-js-controller="LocaleControl">
+  <button
+    class="LocaleControl__trigger"
+    data-js-target="LocaleControl.trigger"
+    aria-label="日本。お住まいの国を選択してください"
+    data-testid="footer-locale-button"
+  >
+    <svg class="LocaleControl__triggerIcon" width="16" height="16" viewBox="0 0 16 16">
+      
+          <path d="M3.54 8.04h4.42v4.43c0 .57.76.75 1.01.24l4.96-9.93a.54.54 0 0 0-.72-.72L3.3 7.03c-.5.25-.33 1.01.24 1.01" fill="#0A2540" fill-rule="evenodd"/>
+
+        
+    </svg>
+
+    <span data-js-target="LocaleControl.triggerLabel">日本 (日本語)</span>
+  </button>
+
+  <div
+    class="LocaleControl__popup"
+    data-js-target="LocaleControl.popup"
+    aria-hidden="true"
+  ><section class="GlobalizationPicker">
+      <div class="GlobalizationPicker__body">
+        
+
+        <ul class="GlobalizationPicker__countryList">
+          
+            
+            <li class="GlobalizationPicker__countryListItem">
+  
+    <img
+  class="
+    Flag
+    Flag--countryIE
+    GlobalizationPicker__countryFlagIcon
+  "
+  
+  
+  src="https://images.stripeassets.com/fzn2n1nzq965/6NuF1mvaIeEQbkEzqr5ri7/b4adfbc07d16fa159404eca23c2ab99a/flags.svg"
+  alt="IE"
+  loading="lazy"
+>
+  
+
+  <span class="GlobalizationPicker__country">アイルランド</span>
+
+  <ul class="GlobalizationPicker__countryLanguageList">
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/ie/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='English'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-IE-en-GB-link"
+  data-country-code="IE"
+      data-language-code="en-GB"
+      data-globalization-active="false"
+      data-display-name="アイルランド (English)"
+>English</a>
+</li>
+    
+  </ul>
+</li>
+
+            
+          
+            
+            <li class="GlobalizationPicker__countryListItem">
+  
+    <img
+  class="
+    Flag
+    Flag--countryUS
+    GlobalizationPicker__countryFlagIcon
+  "
+  
+  
+  src="https://images.stripeassets.com/fzn2n1nzq965/6NuF1mvaIeEQbkEzqr5ri7/b4adfbc07d16fa159404eca23c2ab99a/flags.svg"
+  alt="US"
+  loading="lazy"
+>
+  
+
+  <span class="GlobalizationPicker__country">アメリカ</span>
+
+  <ul class="GlobalizationPicker__countryLanguageList">
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/us/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='English'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-US-en-link"
+  data-country-code="US"
+      data-language-code="en"
+      data-globalization-active="false"
+      data-display-name="アメリカ (English)"
+>English</a>
+</li>
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/es-us/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='Español'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-US-es-419-link"
+  data-country-code="US"
+      data-language-code="es-419"
+      data-globalization-active="false"
+      data-display-name="アメリカ (Español)"
+>Español</a>
+</li>
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/zh-us/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='简体中文'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-US-zh-CN-link"
+  data-country-code="US"
+      data-language-code="zh-CN"
+      data-globalization-active="false"
+      data-display-name="アメリカ (简体中文)"
+>简体中文</a>
+</li>
+    
+  </ul>
+</li>
+
+            
+          
+            
+            <li class="GlobalizationPicker__countryListItem">
+  
+    <img
+  class="
+    Flag
+    Flag--countryAE
+    GlobalizationPicker__countryFlagIcon
+  "
+  
+  
+  src="https://images.stripeassets.com/fzn2n1nzq965/6NuF1mvaIeEQbkEzqr5ri7/b4adfbc07d16fa159404eca23c2ab99a/flags.svg"
+  alt="AE"
+  loading="lazy"
+>
+  
+
+  <span class="GlobalizationPicker__country">アラブ首長国連邦</span>
+
+  <ul class="GlobalizationPicker__countryLanguageList">
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/ae/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='English'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-AE-en-link"
+  data-country-code="AE"
+      data-language-code="en"
+      data-globalization-active="false"
+      data-display-name="アラブ首長国連邦 (English)"
+>English</a>
+</li>
+    
+  </ul>
+</li>
+
+            
+          
+            
+            <li class="GlobalizationPicker__countryListItem">
+  
+    <img
+  class="
+    Flag
+    Flag--countryGB
+    GlobalizationPicker__countryFlagIcon
+  "
+  
+  
+  src="https://images.stripeassets.com/fzn2n1nzq965/6NuF1mvaIeEQbkEzqr5ri7/b4adfbc07d16fa159404eca23c2ab99a/flags.svg"
+  alt="GB"
+  loading="lazy"
+>
+  
+
+  <span class="GlobalizationPicker__country">イギリス</span>
+
+  <ul class="GlobalizationPicker__countryLanguageList">
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/gb/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='English'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-GB-en-GB-link"
+  data-country-code="GB"
+      data-language-code="en-GB"
+      data-globalization-active="false"
+      data-display-name="イギリス (English)"
+>English</a>
+</li>
+    
+  </ul>
+</li>
+
+            
+          
+            
+            <li class="GlobalizationPicker__countryListItem">
+  
+    <img
+  class="
+    Flag
+    Flag--countryIT
+    GlobalizationPicker__countryFlagIcon
+  "
+  
+  
+  src="https://images.stripeassets.com/fzn2n1nzq965/6NuF1mvaIeEQbkEzqr5ri7/b4adfbc07d16fa159404eca23c2ab99a/flags.svg"
+  alt="IT"
+  loading="lazy"
+>
+  
+
+  <span class="GlobalizationPicker__country">イタリア</span>
+
+  <ul class="GlobalizationPicker__countryLanguageList">
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/it/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='Italiano'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-IT-it-link"
+  data-country-code="IT"
+      data-language-code="it"
+      data-globalization-active="false"
+      data-display-name="イタリア (Italiano)"
+>Italiano</a>
+</li>
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/en-it/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='English'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-IT-en-GB-link"
+  data-country-code="IT"
+      data-language-code="en-GB"
+      data-globalization-active="false"
+      data-display-name="イタリア (English)"
+>English</a>
+</li>
+    
+  </ul>
+</li>
+
+            
+          
+            
+            <li class="GlobalizationPicker__countryListItem">
+  
+    <img
+  class="
+    Flag
+    Flag--countryIN
+    GlobalizationPicker__countryFlagIcon
+  "
+  
+  
+  src="https://images.stripeassets.com/fzn2n1nzq965/6NuF1mvaIeEQbkEzqr5ri7/b4adfbc07d16fa159404eca23c2ab99a/flags.svg"
+  alt="IN"
+  loading="lazy"
+>
+  
+
+  <span class="GlobalizationPicker__country">インド</span>
+
+  <ul class="GlobalizationPicker__countryLanguageList">
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/in/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='English'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-IN-en-GB-link"
+  data-country-code="IN"
+      data-language-code="en-GB"
+      data-globalization-active="false"
+      data-display-name="インド (English)"
+>English</a>
+</li>
+    
+  </ul>
+</li>
+
+            
+          
+            
+            <li class="GlobalizationPicker__countryListItem">
+  
+    <img
+  class="
+    Flag
+    Flag--countryEE
+    GlobalizationPicker__countryFlagIcon
+  "
+  
+  
+  src="https://images.stripeassets.com/fzn2n1nzq965/6NuF1mvaIeEQbkEzqr5ri7/b4adfbc07d16fa159404eca23c2ab99a/flags.svg"
+  alt="EE"
+  loading="lazy"
+>
+  
+
+  <span class="GlobalizationPicker__country">エストニア</span>
+
+  <ul class="GlobalizationPicker__countryLanguageList">
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/en-ee/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='English'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-EE-en-GB-link"
+  data-country-code="EE"
+      data-language-code="en-GB"
+      data-globalization-active="false"
+      data-display-name="エストニア (English)"
+>English</a>
+</li>
+    
+  </ul>
+</li>
+
+            
+          
+            
+            <li class="GlobalizationPicker__countryListItem">
+  
+    <img
+  class="
+    Flag
+    Flag--countryAU
+    GlobalizationPicker__countryFlagIcon
+  "
+  
+  
+  src="https://images.stripeassets.com/fzn2n1nzq965/6NuF1mvaIeEQbkEzqr5ri7/b4adfbc07d16fa159404eca23c2ab99a/flags.svg"
+  alt="AU"
+  loading="lazy"
+>
+  
+
+  <span class="GlobalizationPicker__country">オーストラリア</span>
+
+  <ul class="GlobalizationPicker__countryLanguageList">
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/au/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='English'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-AU-en-GB-link"
+  data-country-code="AU"
+      data-language-code="en-GB"
+      data-globalization-active="false"
+      data-display-name="オーストラリア (English)"
+>English</a>
+</li>
+    
+  </ul>
+</li>
+
+            
+          
+            
+            <li class="GlobalizationPicker__countryListItem">
+  
+    <img
+  class="
+    Flag
+    Flag--countryAT
+    GlobalizationPicker__countryFlagIcon
+  "
+  
+  
+  src="https://images.stripeassets.com/fzn2n1nzq965/6NuF1mvaIeEQbkEzqr5ri7/b4adfbc07d16fa159404eca23c2ab99a/flags.svg"
+  alt="AT"
+  loading="lazy"
+>
+  
+
+  <span class="GlobalizationPicker__country">オーストリア</span>
+
+  <ul class="GlobalizationPicker__countryLanguageList">
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/at/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='Deutsch'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-AT-de-link"
+  data-country-code="AT"
+      data-language-code="de"
+      data-globalization-active="false"
+      data-display-name="オーストリア (Deutsch)"
+>Deutsch</a>
+</li>
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/en-at/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='English'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-AT-en-GB-link"
+  data-country-code="AT"
+      data-language-code="en-GB"
+      data-globalization-active="false"
+      data-display-name="オーストリア (English)"
+>English</a>
+</li>
+    
+  </ul>
+</li>
+
+            
+          
+            
+            <li class="GlobalizationPicker__countryListItem">
+  
+    <img
+  class="
+    Flag
+    Flag--countryNL
+    GlobalizationPicker__countryFlagIcon
+  "
+  
+  
+  src="https://images.stripeassets.com/fzn2n1nzq965/6NuF1mvaIeEQbkEzqr5ri7/b4adfbc07d16fa159404eca23c2ab99a/flags.svg"
+  alt="NL"
+  loading="lazy"
+>
+  
+
+  <span class="GlobalizationPicker__country">オランダ</span>
+
+  <ul class="GlobalizationPicker__countryLanguageList">
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/nl/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='Nederlands'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-NL-nl-link"
+  data-country-code="NL"
+      data-language-code="nl"
+      data-globalization-active="false"
+      data-display-name="オランダ (Nederlands)"
+>Nederlands</a>
+</li>
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/en-nl/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='English'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-NL-en-GB-link"
+  data-country-code="NL"
+      data-language-code="en-GB"
+      data-globalization-active="false"
+      data-display-name="オランダ (English)"
+>English</a>
+</li>
+    
+  </ul>
+</li>
+
+            
+          
+            
+            <li class="GlobalizationPicker__countryListItem">
+  
+    <img
+  class="
+    Flag
+    Flag--countryCA
+    GlobalizationPicker__countryFlagIcon
+  "
+  
+  
+  src="https://images.stripeassets.com/fzn2n1nzq965/6NuF1mvaIeEQbkEzqr5ri7/b4adfbc07d16fa159404eca23c2ab99a/flags.svg"
+  alt="CA"
+  loading="lazy"
+>
+  
+
+  <span class="GlobalizationPicker__country">カナダ</span>
+
+  <ul class="GlobalizationPicker__countryLanguageList">
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/en-ca/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='English'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-CA-en-GB-link"
+  data-country-code="CA"
+      data-language-code="en-GB"
+      data-globalization-active="false"
+      data-display-name="カナダ (English)"
+>English</a>
+</li>
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/fr-ca/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='Français'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-CA-fr-CA-link"
+  data-country-code="CA"
+      data-language-code="fr-CA"
+      data-globalization-active="false"
+      data-display-name="カナダ (Français)"
+>Français</a>
+</li>
+    
+  </ul>
+</li>
+
+            
+          
+            
+            <li class="GlobalizationPicker__countryListItem">
+  
+    <img
+  class="
+    Flag
+    Flag--countryCY
+    GlobalizationPicker__countryFlagIcon
+  "
+  
+  
+  src="https://images.stripeassets.com/fzn2n1nzq965/6NuF1mvaIeEQbkEzqr5ri7/b4adfbc07d16fa159404eca23c2ab99a/flags.svg"
+  alt="CY"
+  loading="lazy"
+>
+  
+
+  <span class="GlobalizationPicker__country">キプロス</span>
+
+  <ul class="GlobalizationPicker__countryLanguageList">
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/en-cy/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='English'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-CY-en-GB-link"
+  data-country-code="CY"
+      data-language-code="en-GB"
+      data-globalization-active="false"
+      data-display-name="キプロス (English)"
+>English</a>
+</li>
+    
+  </ul>
+</li>
+
+            
+              
+              </ul><ul class="GlobalizationPicker__countryList">
+            
+          
+            
+            <li class="GlobalizationPicker__countryListItem">
+  
+    <img
+  class="
+    Flag
+    Flag--countryGR
+    GlobalizationPicker__countryFlagIcon
+  "
+  
+  
+  src="https://images.stripeassets.com/fzn2n1nzq965/6NuF1mvaIeEQbkEzqr5ri7/b4adfbc07d16fa159404eca23c2ab99a/flags.svg"
+  alt="GR"
+  loading="lazy"
+>
+  
+
+  <span class="GlobalizationPicker__country">ギリシア</span>
+
+  <ul class="GlobalizationPicker__countryLanguageList">
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/en-gr/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='English'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-GR-en-GB-link"
+  data-country-code="GR"
+      data-language-code="en-GB"
+      data-globalization-active="false"
+      data-display-name="ギリシア (English)"
+>English</a>
+</li>
+    
+  </ul>
+</li>
+
+            
+          
+            
+            <li class="GlobalizationPicker__countryListItem">
+  
+    <img
+  class="
+    Flag
+    Flag--countryHR
+    GlobalizationPicker__countryFlagIcon
+  "
+  
+  
+  src="https://images.stripeassets.com/fzn2n1nzq965/6NuF1mvaIeEQbkEzqr5ri7/b4adfbc07d16fa159404eca23c2ab99a/flags.svg"
+  alt="HR"
+  loading="lazy"
+>
+  
+
+  <span class="GlobalizationPicker__country">クロアチア</span>
+
+  <ul class="GlobalizationPicker__countryLanguageList">
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/en-hr/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='English'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-HR-en-GB-link"
+  data-country-code="HR"
+      data-language-code="en-GB"
+      data-globalization-active="false"
+      data-display-name="クロアチア (English)"
+>English</a>
+</li>
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/it-hr/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='Italiano'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-HR-it-link"
+  data-country-code="HR"
+      data-language-code="it"
+      data-globalization-active="false"
+      data-display-name="クロアチア (Italiano)"
+>Italiano</a>
+</li>
+    
+  </ul>
+</li>
+
+            
+          
+            
+            <li class="GlobalizationPicker__countryListItem">
+  
+    <img
+  class="
+    Flag
+    Flag--countryGI
+    GlobalizationPicker__countryFlagIcon
+  "
+  
+  
+  src="https://images.stripeassets.com/fzn2n1nzq965/6NuF1mvaIeEQbkEzqr5ri7/b4adfbc07d16fa159404eca23c2ab99a/flags.svg"
+  alt="GI"
+  loading="lazy"
+>
+  
+
+  <span class="GlobalizationPicker__country">ジブラルタル</span>
+
+  <ul class="GlobalizationPicker__countryLanguageList">
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/en-gi/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='English'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-GI-en-GB-link"
+  data-country-code="GI"
+      data-language-code="en-GB"
+      data-globalization-active="false"
+      data-display-name="ジブラルタル (English)"
+>English</a>
+</li>
+    
+  </ul>
+</li>
+
+            
+          
+            
+            <li class="GlobalizationPicker__countryListItem">
+  
+    <img
+  class="
+    Flag
+    Flag--countrySG
+    GlobalizationPicker__countryFlagIcon
+  "
+  
+  
+  src="https://images.stripeassets.com/fzn2n1nzq965/6NuF1mvaIeEQbkEzqr5ri7/b4adfbc07d16fa159404eca23c2ab99a/flags.svg"
+  alt="SG"
+  loading="lazy"
+>
+  
+
+  <span class="GlobalizationPicker__country">シンガポール</span>
+
+  <ul class="GlobalizationPicker__countryLanguageList">
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/en-sg/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='English'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-SG-en-GB-link"
+  data-country-code="SG"
+      data-language-code="en-GB"
+      data-globalization-active="false"
+      data-display-name="シンガポール (English)"
+>English</a>
+</li>
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/zh-sg/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='简体中文'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-SG-zh-CN-link"
+  data-country-code="SG"
+      data-language-code="zh-CN"
+      data-globalization-active="false"
+      data-display-name="シンガポール (简体中文)"
+>简体中文</a>
+</li>
+    
+  </ul>
+</li>
+
+            
+          
+            
+            <li class="GlobalizationPicker__countryListItem">
+  
+    <img
+  class="
+    Flag
+    Flag--countryCH
+    GlobalizationPicker__countryFlagIcon
+  "
+  
+  
+  src="https://images.stripeassets.com/fzn2n1nzq965/6NuF1mvaIeEQbkEzqr5ri7/b4adfbc07d16fa159404eca23c2ab99a/flags.svg"
+  alt="CH"
+  loading="lazy"
+>
+  
+
+  <span class="GlobalizationPicker__country">スイス</span>
+
+  <ul class="GlobalizationPicker__countryLanguageList">
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/de-ch/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='Deutsch'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-CH-de-link"
+  data-country-code="CH"
+      data-language-code="de"
+      data-globalization-active="false"
+      data-display-name="スイス (Deutsch)"
+>Deutsch</a>
+</li>
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/fr-ch/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='Français'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-CH-fr-link"
+  data-country-code="CH"
+      data-language-code="fr"
+      data-globalization-active="false"
+      data-display-name="スイス (Français)"
+>Français</a>
+</li>
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/it-ch/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='Italiano'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-CH-it-link"
+  data-country-code="CH"
+      data-language-code="it"
+      data-globalization-active="false"
+      data-display-name="スイス (Italiano)"
+>Italiano</a>
+</li>
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/en-ch/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='English'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-CH-en-GB-link"
+  data-country-code="CH"
+      data-language-code="en-GB"
+      data-globalization-active="false"
+      data-display-name="スイス (English)"
+>English</a>
+</li>
+    
+  </ul>
+</li>
+
+            
+          
+            
+            <li class="GlobalizationPicker__countryListItem">
+  
+    <img
+  class="
+    Flag
+    Flag--countrySE
+    GlobalizationPicker__countryFlagIcon
+  "
+  
+  
+  src="https://images.stripeassets.com/fzn2n1nzq965/6NuF1mvaIeEQbkEzqr5ri7/b4adfbc07d16fa159404eca23c2ab99a/flags.svg"
+  alt="SE"
+  loading="lazy"
+>
+  
+
+  <span class="GlobalizationPicker__country">スウェーデン</span>
+
+  <ul class="GlobalizationPicker__countryLanguageList">
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/se/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='Svenska'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-SE-sv-link"
+  data-country-code="SE"
+      data-language-code="sv"
+      data-globalization-active="false"
+      data-display-name="スウェーデン (Svenska)"
+>Svenska</a>
+</li>
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/en-se/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='English'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-SE-en-GB-link"
+  data-country-code="SE"
+      data-language-code="en-GB"
+      data-globalization-active="false"
+      data-display-name="スウェーデン (English)"
+>English</a>
+</li>
+    
+  </ul>
+</li>
+
+            
+          
+            
+            <li class="GlobalizationPicker__countryListItem">
+  
+    <img
+  class="
+    Flag
+    Flag--countryES
+    GlobalizationPicker__countryFlagIcon
+  "
+  
+  
+  src="https://images.stripeassets.com/fzn2n1nzq965/6NuF1mvaIeEQbkEzqr5ri7/b4adfbc07d16fa159404eca23c2ab99a/flags.svg"
+  alt="ES"
+  loading="lazy"
+>
+  
+
+  <span class="GlobalizationPicker__country">スペイン</span>
+
+  <ul class="GlobalizationPicker__countryLanguageList">
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/es/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='Español'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-ES-es-link"
+  data-country-code="ES"
+      data-language-code="es"
+      data-globalization-active="false"
+      data-display-name="スペイン (Español)"
+>Español</a>
+</li>
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/en-es/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='English'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-ES-en-GB-link"
+  data-country-code="ES"
+      data-language-code="en-GB"
+      data-globalization-active="false"
+      data-display-name="スペイン (English)"
+>English</a>
+</li>
+    
+  </ul>
+</li>
+
+            
+          
+            
+            <li class="GlobalizationPicker__countryListItem">
+  
+    <img
+  class="
+    Flag
+    Flag--countrySK
+    GlobalizationPicker__countryFlagIcon
+  "
+  
+  
+  src="https://images.stripeassets.com/fzn2n1nzq965/6NuF1mvaIeEQbkEzqr5ri7/b4adfbc07d16fa159404eca23c2ab99a/flags.svg"
+  alt="SK"
+  loading="lazy"
+>
+  
+
+  <span class="GlobalizationPicker__country">スロバキア</span>
+
+  <ul class="GlobalizationPicker__countryLanguageList">
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/en-sk/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='English'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-SK-en-GB-link"
+  data-country-code="SK"
+      data-language-code="en-GB"
+      data-globalization-active="false"
+      data-display-name="スロバキア (English)"
+>English</a>
+</li>
+    
+  </ul>
+</li>
+
+            
+          
+            
+            <li class="GlobalizationPicker__countryListItem">
+  
+    <img
+  class="
+    Flag
+    Flag--countrySI
+    GlobalizationPicker__countryFlagIcon
+  "
+  
+  
+  src="https://images.stripeassets.com/fzn2n1nzq965/6NuF1mvaIeEQbkEzqr5ri7/b4adfbc07d16fa159404eca23c2ab99a/flags.svg"
+  alt="SI"
+  loading="lazy"
+>
+  
+
+  <span class="GlobalizationPicker__country">スロベニア</span>
+
+  <ul class="GlobalizationPicker__countryLanguageList">
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/en-si/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='English'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-SI-en-GB-link"
+  data-country-code="SI"
+      data-language-code="en-GB"
+      data-globalization-active="false"
+      data-display-name="スロベニア (English)"
+>English</a>
+</li>
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/it-si/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='Italiano'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-SI-it-link"
+  data-country-code="SI"
+      data-language-code="it"
+      data-globalization-active="false"
+      data-display-name="スロベニア (Italiano)"
+>Italiano</a>
+</li>
+    
+  </ul>
+</li>
+
+            
+          
+            
+            <li class="GlobalizationPicker__countryListItem">
+  
+    <img
+  class="
+    Flag
+    Flag--countryTH
+    GlobalizationPicker__countryFlagIcon
+  "
+  
+  
+  src="https://images.stripeassets.com/fzn2n1nzq965/6NuF1mvaIeEQbkEzqr5ri7/b4adfbc07d16fa159404eca23c2ab99a/flags.svg"
+  alt="TH"
+  loading="lazy"
+>
+  
+
+  <span class="GlobalizationPicker__country">タイ</span>
+
+  <ul class="GlobalizationPicker__countryLanguageList">
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/th/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='ไทย'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-TH-th-link"
+  data-country-code="TH"
+      data-language-code="th"
+      data-globalization-active="false"
+      data-display-name="タイ (ไทย)"
+>ไทย</a>
+</li>
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/en-th/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='English'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-TH-en-GB-link"
+  data-country-code="TH"
+      data-language-code="en-GB"
+      data-globalization-active="false"
+      data-display-name="タイ (English)"
+>English</a>
+</li>
+    
+  </ul>
+</li>
+
+            
+          
+            
+            <li class="GlobalizationPicker__countryListItem">
+  
+    <img
+  class="
+    Flag
+    Flag--countryCZ
+    GlobalizationPicker__countryFlagIcon
+  "
+  
+  
+  src="https://images.stripeassets.com/fzn2n1nzq965/6NuF1mvaIeEQbkEzqr5ri7/b4adfbc07d16fa159404eca23c2ab99a/flags.svg"
+  alt="CZ"
+  loading="lazy"
+>
+  
+
+  <span class="GlobalizationPicker__country">チェコ共和国</span>
+
+  <ul class="GlobalizationPicker__countryLanguageList">
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/en-cz/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='English'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-CZ-en-GB-link"
+  data-country-code="CZ"
+      data-language-code="en-GB"
+      data-globalization-active="false"
+      data-display-name="チェコ共和国 (English)"
+>English</a>
+</li>
+    
+  </ul>
+</li>
+
+            
+          
+            
+            <li class="GlobalizationPicker__countryListItem">
+  
+    <img
+  class="
+    Flag
+    Flag--countryDK
+    GlobalizationPicker__countryFlagIcon
+  "
+  
+  
+  src="https://images.stripeassets.com/fzn2n1nzq965/6NuF1mvaIeEQbkEzqr5ri7/b4adfbc07d16fa159404eca23c2ab99a/flags.svg"
+  alt="DK"
+  loading="lazy"
+>
+  
+
+  <span class="GlobalizationPicker__country">デンマーク</span>
+
+  <ul class="GlobalizationPicker__countryLanguageList">
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/en-dk/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='English'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-DK-en-GB-link"
+  data-country-code="DK"
+      data-language-code="en-GB"
+      data-globalization-active="false"
+      data-display-name="デンマーク (English)"
+>English</a>
+</li>
+    
+  </ul>
+</li>
+
+            
+              
+              </ul><ul class="GlobalizationPicker__countryList">
+            
+          
+            
+            <li class="GlobalizationPicker__countryListItem">
+  
+    <img
+  class="
+    Flag
+    Flag--countryDE
+    GlobalizationPicker__countryFlagIcon
+  "
+  
+  
+  src="https://images.stripeassets.com/fzn2n1nzq965/6NuF1mvaIeEQbkEzqr5ri7/b4adfbc07d16fa159404eca23c2ab99a/flags.svg"
+  alt="DE"
+  loading="lazy"
+>
+  
+
+  <span class="GlobalizationPicker__country">ドイツ</span>
+
+  <ul class="GlobalizationPicker__countryLanguageList">
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/de/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='Deutsch'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-DE-de-link"
+  data-country-code="DE"
+      data-language-code="de"
+      data-globalization-active="false"
+      data-display-name="ドイツ (Deutsch)"
+>Deutsch</a>
+</li>
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/en-de/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='English'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-DE-en-GB-link"
+  data-country-code="DE"
+      data-language-code="en-GB"
+      data-globalization-active="false"
+      data-display-name="ドイツ (English)"
+>English</a>
+</li>
+    
+  </ul>
+</li>
+
+            
+          
+            
+            <li class="GlobalizationPicker__countryListItem">
+  
+    <img
+  class="
+    Flag
+    Flag--countryNZ
+    GlobalizationPicker__countryFlagIcon
+  "
+  
+  
+  src="https://images.stripeassets.com/fzn2n1nzq965/6NuF1mvaIeEQbkEzqr5ri7/b4adfbc07d16fa159404eca23c2ab99a/flags.svg"
+  alt="NZ"
+  loading="lazy"
+>
+  
+
+  <span class="GlobalizationPicker__country">ニュージーランド</span>
+
+  <ul class="GlobalizationPicker__countryLanguageList">
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/nz/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='English'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-NZ-en-GB-link"
+  data-country-code="NZ"
+      data-language-code="en-GB"
+      data-globalization-active="false"
+      data-display-name="ニュージーランド (English)"
+>English</a>
+</li>
+    
+  </ul>
+</li>
+
+            
+          
+            
+            <li class="GlobalizationPicker__countryListItem">
+  
+    <img
+  class="
+    Flag
+    Flag--countryNO
+    GlobalizationPicker__countryFlagIcon
+  "
+  
+  
+  src="https://images.stripeassets.com/fzn2n1nzq965/6NuF1mvaIeEQbkEzqr5ri7/b4adfbc07d16fa159404eca23c2ab99a/flags.svg"
+  alt="NO"
+  loading="lazy"
+>
+  
+
+  <span class="GlobalizationPicker__country">ノルウェー</span>
+
+  <ul class="GlobalizationPicker__countryLanguageList">
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/en-no/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='English'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-NO-en-GB-link"
+  data-country-code="NO"
+      data-language-code="en-GB"
+      data-globalization-active="false"
+      data-display-name="ノルウェー (English)"
+>English</a>
+</li>
+    
+  </ul>
+</li>
+
+            
+          
+            
+            <li class="GlobalizationPicker__countryListItem">
+  
+    <img
+  class="
+    Flag
+    Flag--countryHU
+    GlobalizationPicker__countryFlagIcon
+  "
+  
+  
+  src="https://images.stripeassets.com/fzn2n1nzq965/6NuF1mvaIeEQbkEzqr5ri7/b4adfbc07d16fa159404eca23c2ab99a/flags.svg"
+  alt="HU"
+  loading="lazy"
+>
+  
+
+  <span class="GlobalizationPicker__country">ハンガリー</span>
+
+  <ul class="GlobalizationPicker__countryLanguageList">
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/en-hu/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='English'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-HU-en-GB-link"
+  data-country-code="HU"
+      data-language-code="en-GB"
+      data-globalization-active="false"
+      data-display-name="ハンガリー (English)"
+>English</a>
+</li>
+    
+  </ul>
+</li>
+
+            
+          
+            
+            <li class="GlobalizationPicker__countryListItem">
+  
+    <img
+  class="
+    Flag
+    Flag--countryFI
+    GlobalizationPicker__countryFlagIcon
+  "
+  
+  
+  src="https://images.stripeassets.com/fzn2n1nzq965/6NuF1mvaIeEQbkEzqr5ri7/b4adfbc07d16fa159404eca23c2ab99a/flags.svg"
+  alt="FI"
+  loading="lazy"
+>
+  
+
+  <span class="GlobalizationPicker__country">フィンランド</span>
+
+  <ul class="GlobalizationPicker__countryLanguageList">
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/en-fi/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='English'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-FI-en-GB-link"
+  data-country-code="FI"
+      data-language-code="en-GB"
+      data-globalization-active="false"
+      data-display-name="フィンランド (English)"
+>English</a>
+</li>
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/sv-fi/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='Svenska'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-FI-sv-link"
+  data-country-code="FI"
+      data-language-code="sv"
+      data-globalization-active="false"
+      data-display-name="フィンランド (Svenska)"
+>Svenska</a>
+</li>
+    
+  </ul>
+</li>
+
+            
+          
+            
+            <li class="GlobalizationPicker__countryListItem">
+  
+    <img
+  class="
+    Flag
+    Flag--countryBR
+    GlobalizationPicker__countryFlagIcon
+  "
+  
+  
+  src="https://images.stripeassets.com/fzn2n1nzq965/6NuF1mvaIeEQbkEzqr5ri7/b4adfbc07d16fa159404eca23c2ab99a/flags.svg"
+  alt="BR"
+  loading="lazy"
+>
+  
+
+  <span class="GlobalizationPicker__country">ブラジル</span>
+
+  <ul class="GlobalizationPicker__countryLanguageList">
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/br/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='Português'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-BR-pt-BR-link"
+  data-country-code="BR"
+      data-language-code="pt-BR"
+      data-globalization-active="false"
+      data-display-name="ブラジル (Português)"
+>Português</a>
+</li>
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/en-br/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='English'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-BR-en-link"
+  data-country-code="BR"
+      data-language-code="en"
+      data-globalization-active="false"
+      data-display-name="ブラジル (English)"
+>English</a>
+</li>
+    
+  </ul>
+</li>
+
+            
+          
+            
+            <li class="GlobalizationPicker__countryListItem">
+  
+    <img
+  class="
+    Flag
+    Flag--countryFR
+    GlobalizationPicker__countryFlagIcon
+  "
+  
+  
+  src="https://images.stripeassets.com/fzn2n1nzq965/6NuF1mvaIeEQbkEzqr5ri7/b4adfbc07d16fa159404eca23c2ab99a/flags.svg"
+  alt="FR"
+  loading="lazy"
+>
+  
+
+  <span class="GlobalizationPicker__country">フランス</span>
+
+  <ul class="GlobalizationPicker__countryLanguageList">
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/fr/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='Français'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-FR-fr-link"
+  data-country-code="FR"
+      data-language-code="fr"
+      data-globalization-active="false"
+      data-display-name="フランス (Français)"
+>Français</a>
+</li>
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/en-fr/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='English'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-FR-en-GB-link"
+  data-country-code="FR"
+      data-language-code="en-GB"
+      data-globalization-active="false"
+      data-display-name="フランス (English)"
+>English</a>
+</li>
+    
+  </ul>
+</li>
+
+            
+          
+            
+            <li class="GlobalizationPicker__countryListItem">
+  
+    <img
+  class="
+    Flag
+    Flag--countryBG
+    GlobalizationPicker__countryFlagIcon
+  "
+  
+  
+  src="https://images.stripeassets.com/fzn2n1nzq965/6NuF1mvaIeEQbkEzqr5ri7/b4adfbc07d16fa159404eca23c2ab99a/flags.svg"
+  alt="BG"
+  loading="lazy"
+>
+  
+
+  <span class="GlobalizationPicker__country">ブルガリア</span>
+
+  <ul class="GlobalizationPicker__countryLanguageList">
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/en-bg/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='English'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-BG-en-GB-link"
+  data-country-code="BG"
+      data-language-code="en-GB"
+      data-globalization-active="false"
+      data-display-name="ブルガリア (English)"
+>English</a>
+</li>
+    
+  </ul>
+</li>
+
+            
+          
+            
+            <li class="GlobalizationPicker__countryListItem">
+  
+    <img
+  class="
+    Flag
+    Flag--countryBE
+    GlobalizationPicker__countryFlagIcon
+  "
+  
+  
+  src="https://images.stripeassets.com/fzn2n1nzq965/6NuF1mvaIeEQbkEzqr5ri7/b4adfbc07d16fa159404eca23c2ab99a/flags.svg"
+  alt="BE"
+  loading="lazy"
+>
+  
+
+  <span class="GlobalizationPicker__country">ベルギー</span>
+
+  <ul class="GlobalizationPicker__countryLanguageList">
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/nl-be/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='Nederlands'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-BE-nl-link"
+  data-country-code="BE"
+      data-language-code="nl"
+      data-globalization-active="false"
+      data-display-name="ベルギー (Nederlands)"
+>Nederlands</a>
+</li>
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/fr-be/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='Français'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-BE-fr-link"
+  data-country-code="BE"
+      data-language-code="fr"
+      data-globalization-active="false"
+      data-display-name="ベルギー (Français)"
+>Français</a>
+</li>
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/de-be/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='Deutsch'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-BE-de-link"
+  data-country-code="BE"
+      data-language-code="de"
+      data-globalization-active="false"
+      data-display-name="ベルギー (Deutsch)"
+>Deutsch</a>
+</li>
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/en-be/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='English'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-BE-en-GB-link"
+  data-country-code="BE"
+      data-language-code="en-GB"
+      data-globalization-active="false"
+      data-display-name="ベルギー (English)"
+>English</a>
+</li>
+    
+  </ul>
+</li>
+
+            
+          
+            
+            <li class="GlobalizationPicker__countryListItem">
+  
+    <img
+  class="
+    Flag
+    Flag--countryPL
+    GlobalizationPicker__countryFlagIcon
+  "
+  
+  
+  src="https://images.stripeassets.com/fzn2n1nzq965/6NuF1mvaIeEQbkEzqr5ri7/b4adfbc07d16fa159404eca23c2ab99a/flags.svg"
+  alt="PL"
+  loading="lazy"
+>
+  
+
+  <span class="GlobalizationPicker__country">ポーランド</span>
+
+  <ul class="GlobalizationPicker__countryLanguageList">
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/en-pl/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='English'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-PL-en-GB-link"
+  data-country-code="PL"
+      data-language-code="en-GB"
+      data-globalization-active="false"
+      data-display-name="ポーランド (English)"
+>English</a>
+</li>
+    
+  </ul>
+</li>
+
+            
+          
+            
+            <li class="GlobalizationPicker__countryListItem">
+  
+    <img
+  class="
+    Flag
+    Flag--countryPT
+    GlobalizationPicker__countryFlagIcon
+  "
+  
+  
+  src="https://images.stripeassets.com/fzn2n1nzq965/6NuF1mvaIeEQbkEzqr5ri7/b4adfbc07d16fa159404eca23c2ab99a/flags.svg"
+  alt="PT"
+  loading="lazy"
+>
+  
+
+  <span class="GlobalizationPicker__country">ポルトガル</span>
+
+  <ul class="GlobalizationPicker__countryLanguageList">
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/pt-pt/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='Português'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-PT-pt-BR-link"
+  data-country-code="PT"
+      data-language-code="pt-BR"
+      data-globalization-active="false"
+      data-display-name="ポルトガル (Português)"
+>Português</a>
+</li>
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/en-pt/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='English'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-PT-en-GB-link"
+  data-country-code="PT"
+      data-language-code="en-GB"
+      data-globalization-active="false"
+      data-display-name="ポルトガル (English)"
+>English</a>
+</li>
+    
+  </ul>
+</li>
+
+            
+          
+            
+            <li class="GlobalizationPicker__countryListItem">
+  
+    <img
+  class="
+    Flag
+    Flag--countryMT
+    GlobalizationPicker__countryFlagIcon
+  "
+  
+  
+  src="https://images.stripeassets.com/fzn2n1nzq965/6NuF1mvaIeEQbkEzqr5ri7/b4adfbc07d16fa159404eca23c2ab99a/flags.svg"
+  alt="MT"
+  loading="lazy"
+>
+  
+
+  <span class="GlobalizationPicker__country">マルタ</span>
+
+  <ul class="GlobalizationPicker__countryLanguageList">
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/en-mt/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='English'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-MT-en-GB-link"
+  data-country-code="MT"
+      data-language-code="en-GB"
+      data-globalization-active="false"
+      data-display-name="マルタ (English)"
+>English</a>
+</li>
+    
+  </ul>
+</li>
+
+            
+              
+              </ul><ul class="GlobalizationPicker__countryList">
+            
+          
+            
+            <li class="GlobalizationPicker__countryListItem">
+  
+    <img
+  class="
+    Flag
+    Flag--countryMY
+    GlobalizationPicker__countryFlagIcon
+  "
+  
+  
+  src="https://images.stripeassets.com/fzn2n1nzq965/6NuF1mvaIeEQbkEzqr5ri7/b4adfbc07d16fa159404eca23c2ab99a/flags.svg"
+  alt="MY"
+  loading="lazy"
+>
+  
+
+  <span class="GlobalizationPicker__country">マレーシア</span>
+
+  <ul class="GlobalizationPicker__countryLanguageList">
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/en-my/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='English'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-MY-en-GB-link"
+  data-country-code="MY"
+      data-language-code="en-GB"
+      data-globalization-active="false"
+      data-display-name="マレーシア (English)"
+>English</a>
+</li>
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/zh-my/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='简体中文'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-MY-zh-CN-link"
+  data-country-code="MY"
+      data-language-code="zh-CN"
+      data-globalization-active="false"
+      data-display-name="マレーシア (简体中文)"
+>简体中文</a>
+</li>
+    
+  </ul>
+</li>
+
+            
+          
+            
+            <li class="GlobalizationPicker__countryListItem">
+  
+    <img
+  class="
+    Flag
+    Flag--countryMX
+    GlobalizationPicker__countryFlagIcon
+  "
+  
+  
+  src="https://images.stripeassets.com/fzn2n1nzq965/6NuF1mvaIeEQbkEzqr5ri7/b4adfbc07d16fa159404eca23c2ab99a/flags.svg"
+  alt="MX"
+  loading="lazy"
+>
+  
+
+  <span class="GlobalizationPicker__country">メキシコ</span>
+
+  <ul class="GlobalizationPicker__countryLanguageList">
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/mx/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='Español'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-MX-es-419-link"
+  data-country-code="MX"
+      data-language-code="es-419"
+      data-globalization-active="false"
+      data-display-name="メキシコ (Español)"
+>Español</a>
+</li>
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/en-mx/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='English'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-MX-en-link"
+  data-country-code="MX"
+      data-language-code="en"
+      data-globalization-active="false"
+      data-display-name="メキシコ (English)"
+>English</a>
+</li>
+    
+  </ul>
+</li>
+
+            
+          
+            
+            <li class="GlobalizationPicker__countryListItem">
+  
+    <img
+  class="
+    Flag
+    Flag--countryLV
+    GlobalizationPicker__countryFlagIcon
+  "
+  
+  
+  src="https://images.stripeassets.com/fzn2n1nzq965/6NuF1mvaIeEQbkEzqr5ri7/b4adfbc07d16fa159404eca23c2ab99a/flags.svg"
+  alt="LV"
+  loading="lazy"
+>
+  
+
+  <span class="GlobalizationPicker__country">ラトビア</span>
+
+  <ul class="GlobalizationPicker__countryLanguageList">
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/en-lv/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='English'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-LV-en-GB-link"
+  data-country-code="LV"
+      data-language-code="en-GB"
+      data-globalization-active="false"
+      data-display-name="ラトビア (English)"
+>English</a>
+</li>
+    
+  </ul>
+</li>
+
+            
+          
+            
+            <li class="GlobalizationPicker__countryListItem">
+  
+    <img
+  class="
+    Flag
+    Flag--countryLT
+    GlobalizationPicker__countryFlagIcon
+  "
+  
+  
+  src="https://images.stripeassets.com/fzn2n1nzq965/6NuF1mvaIeEQbkEzqr5ri7/b4adfbc07d16fa159404eca23c2ab99a/flags.svg"
+  alt="LT"
+  loading="lazy"
+>
+  
+
+  <span class="GlobalizationPicker__country">リトアニア</span>
+
+  <ul class="GlobalizationPicker__countryLanguageList">
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/en-lt/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='English'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-LT-en-GB-link"
+  data-country-code="LT"
+      data-language-code="en-GB"
+      data-globalization-active="false"
+      data-display-name="リトアニア (English)"
+>English</a>
+</li>
+    
+  </ul>
+</li>
+
+            
+          
+            
+            <li class="GlobalizationPicker__countryListItem">
+  
+    <img
+  class="
+    Flag
+    Flag--countryLI
+    GlobalizationPicker__countryFlagIcon
+  "
+  
+  
+  src="https://images.stripeassets.com/fzn2n1nzq965/6NuF1mvaIeEQbkEzqr5ri7/b4adfbc07d16fa159404eca23c2ab99a/flags.svg"
+  alt="LI"
+  loading="lazy"
+>
+  
+
+  <span class="GlobalizationPicker__country">リヒテンシュタイン</span>
+
+  <ul class="GlobalizationPicker__countryLanguageList">
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/de-li/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='Deutsch'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-LI-de-link"
+  data-country-code="LI"
+      data-language-code="de"
+      data-globalization-active="false"
+      data-display-name="リヒテンシュタイン (Deutsch)"
+>Deutsch</a>
+</li>
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/en-li/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='English'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-LI-en-GB-link"
+  data-country-code="LI"
+      data-language-code="en-GB"
+      data-globalization-active="false"
+      data-display-name="リヒテンシュタイン (English)"
+>English</a>
+</li>
+    
+  </ul>
+</li>
+
+            
+          
+            
+            <li class="GlobalizationPicker__countryListItem">
+  
+    <img
+  class="
+    Flag
+    Flag--countryRO
+    GlobalizationPicker__countryFlagIcon
+  "
+  
+  
+  src="https://images.stripeassets.com/fzn2n1nzq965/6NuF1mvaIeEQbkEzqr5ri7/b4adfbc07d16fa159404eca23c2ab99a/flags.svg"
+  alt="RO"
+  loading="lazy"
+>
+  
+
+  <span class="GlobalizationPicker__country">ルーマニア</span>
+
+  <ul class="GlobalizationPicker__countryLanguageList">
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/en-ro/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='English'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-RO-en-GB-link"
+  data-country-code="RO"
+      data-language-code="en-GB"
+      data-globalization-active="false"
+      data-display-name="ルーマニア (English)"
+>English</a>
+</li>
+    
+  </ul>
+</li>
+
+            
+          
+            
+            <li class="GlobalizationPicker__countryListItem">
+  
+    <img
+  class="
+    Flag
+    Flag--countryLU
+    GlobalizationPicker__countryFlagIcon
+  "
+  
+  
+  src="https://images.stripeassets.com/fzn2n1nzq965/6NuF1mvaIeEQbkEzqr5ri7/b4adfbc07d16fa159404eca23c2ab99a/flags.svg"
+  alt="LU"
+  loading="lazy"
+>
+  
+
+  <span class="GlobalizationPicker__country">ルクセンブルグ</span>
+
+  <ul class="GlobalizationPicker__countryLanguageList">
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/fr-lu/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='Français'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-LU-fr-link"
+  data-country-code="LU"
+      data-language-code="fr"
+      data-globalization-active="false"
+      data-display-name="ルクセンブルグ (Français)"
+>Français</a>
+</li>
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/de-lu/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='Deutsch'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-LU-de-link"
+  data-country-code="LU"
+      data-language-code="de"
+      data-globalization-active="false"
+      data-display-name="ルクセンブルグ (Deutsch)"
+>Deutsch</a>
+</li>
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/en-lu/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='English'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-LU-en-GB-link"
+  data-country-code="LU"
+      data-language-code="en-GB"
+      data-globalization-active="false"
+      data-display-name="ルクセンブルグ (English)"
+>English</a>
+</li>
+    
+  </ul>
+</li>
+
+            
+          
+            
+            <li class="GlobalizationPicker__countryListItem">
+  
+    <img
+  class="
+    Flag
+    Flag--countryHK
+    GlobalizationPicker__countryFlagIcon
+  "
+  
+  
+  src="https://images.stripeassets.com/fzn2n1nzq965/6NuF1mvaIeEQbkEzqr5ri7/b4adfbc07d16fa159404eca23c2ab99a/flags.svg"
+  alt="HK"
+  loading="lazy"
+>
+  
+
+  <span class="GlobalizationPicker__country">中国香港特別行政区</span>
+
+  <ul class="GlobalizationPicker__countryLanguageList">
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/en-hk/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='English'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-HK-en-GB-link"
+  data-country-code="HK"
+      data-language-code="en-GB"
+      data-globalization-active="false"
+      data-display-name="中国香港特別行政区 (English)"
+>English</a>
+</li>
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/zh-hk/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='简体中文'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-HK-zh-CN-link"
+  data-country-code="HK"
+      data-language-code="zh-CN"
+      data-globalization-active="false"
+      data-display-name="中国香港特別行政区 (简体中文)"
+>简体中文</a>
+</li>
+    
+  </ul>
+</li>
+
+            
+          
+            
+            <li class="GlobalizationPicker__countryListItem">
+  
+    <img
+  class="
+    Flag
+    Flag--countryCN
+    GlobalizationPicker__countryFlagIcon
+  "
+  
+  
+  src="https://images.stripeassets.com/fzn2n1nzq965/6NuF1mvaIeEQbkEzqr5ri7/b4adfbc07d16fa159404eca23c2ab99a/flags.svg"
+  alt="CN"
+  loading="lazy"
+>
+  
+
+  <span class="GlobalizationPicker__country">中国本土</span>
+
+  <ul class="GlobalizationPicker__countryLanguageList">
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/cn/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='简体中文'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-CN-zh-CN-link"
+  data-country-code="CN"
+      data-language-code="zh-CN"
+      data-globalization-active="false"
+      data-display-name="中国本土 (简体中文)"
+>简体中文</a>
+</li>
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/en-cn/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='English'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-CN-en-link"
+  data-country-code="CN"
+      data-language-code="en"
+      data-globalization-active="false"
+      data-display-name="中国本土 (English)"
+>English</a>
+</li>
+    
+  </ul>
+</li>
+
+            
+          
+            
+            <li class="GlobalizationPicker__countryListItem">
+  
+    <svg class="GlobalizationPicker__countryCheckIcon" width="16" height="16" viewBox="0 0 16 16"><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zm3.41 4.93L6.64 9.54 5.38 8.18a.7.7 0 0 0-.87-.04.61.61 0 0 0-.18.8l1.5 2.45c.15.22.41.36.69.36.28 0 .53-.14.68-.36.24-.31 4.82-5.78 4.82-5.78.6-.6-.13-1.15-.6-.68z" fill="var(--accentColor)" fill-rule="evenodd"/></svg>
+  
+
+  <span class="GlobalizationPicker__country">日本</span>
+
+  <ul class="GlobalizationPicker__countryLanguageList">
+    
+      <li class="GlobalizationPicker__countryLanguageListItem GlobalizationPicker__countryLanguageListItem--active">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/jp/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='日本語'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-JP-ja-link"
+  data-country-code="JP"
+      data-language-code="ja"
+      data-globalization-active="true"
+      data-display-name="日本 (日本語)"
+>日本語</a>
+</li>
+    
+      <li class="GlobalizationPicker__countryLanguageListItem ">
+  <a
+  class="
+    Link
+    GlobalizationPicker__countryLanguage
+  "
+  href="https://stripe.com/en-jp/legal/smcc"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Languages'
+  data-analytics-action='Clicked'
+  data-analytics-label='English'
+  
+  data-js-target-list="LocaleControl.items"
+  
+  data-testid="footer-locale-JP-en-link"
+  data-country-code="JP"
+      data-language-code="en"
+      data-globalization-active="false"
+      data-display-name="日本 (English)"
+>English</a>
+</li>
+    
+  </ul>
+</li>
+
+            
+          
+        </ul>
+      </div>
+    </section></div>
+</div>
+            </div>
+          
+        </div>
+      </div>
+
+      <div class='SiteFooterSection__column'>
+        <section
+  class="
+    List
+    List--hasTitle
+    
+    
+  "
+  
+  
+  
+>
+    <h1
+  class="
+    CopyTitle
+    CopyTitle--variant
+    CopyTitle--inline
+    
+    
+    List__title
+  "
+  
+>プロダクトと料金体系</h1>
+  
+  <ul class='List__list'>
+    
+      <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="https://stripe.com/jp/pricing"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__pricing'
+  
+  
+  
+  data-testid="footer-products-pricing-list-item"
+  
+>料金体系</a>
+  
+
+  
+</li>
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/atlas"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__atlas'
+  
+  
+  
+  data-testid="footer-products-atlas-list-item"
+  
+>Atlas</a>
+  
+
+  
+</li>
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/authorization-boost"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__authorization_boost'
+  
+  
+  
+  data-testid="footer-products-authorization-boost-list-item"
+  
+>Authorization Boost</a>
+  
+
+  
+</li>
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/billing"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__billing'
+  
+  
+  
+  data-testid="footer-products-billing-list-item"
+  
+>Billing</a>
+  
+
+  
+</li>
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/capital/platforms"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__capital'
+  
+  
+  
+  data-testid="footer-products-capital-list-item"
+  
+>Capital</a>
+  
+
+  
+</li>
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/payments/checkout"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__checkout'
+  
+  
+  
+  data-testid="footer-products-checkout-list-item"
+  
+>Checkout</a>
+  
+
+  
+</li>
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/climate"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__climate'
+  
+  
+  
+  data-testid="footer-products-climate-list-item"
+  
+>Climate</a>
+  
+
+  
+</li>
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/connect"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__connect'
+  
+  
+  
+  data-testid="footer-products-connect-list-item"
+  
+>Connect</a>
+  
+
+  
+</li>
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/use-cases/crypto"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__crypto'
+  
+  
+  
+  data-testid="footer-products-crypto-list-item"
+  
+>暗号資産</a>
+  
+
+  
+</li>
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/data-pipeline"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__data_pipeline'
+  
+  
+  
+  data-testid="footer-products-data-pipeline-list-item"
+  
+>Data Pipeline</a>
+  
+
+  
+</li>
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/payments/elements"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__elements'
+  
+  
+  
+  data-testid="footer-products-elements-list-item"
+  
+>Elements</a>
+  
+
+  
+</li>
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/financial-connections"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__financial_connections'
+  
+  
+  
+  data-testid="footer-products-financial-connections-list-item"
+  
+>Financial Connections</a>
+  
+
+  
+</li>
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/identity"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__identity'
+  
+  
+  
+  data-testid="footer-products-identity-list-item"
+  
+>Identity</a>
+  
+
+  
+</li>
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/invoicing"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__invoicing'
+  
+  
+  
+  data-testid="footer-products-invoicing-list-item"
+  
+>Invoicing</a>
+  
+
+  
+</li>
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="https://stripe.com/jp/issuing"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__issuing'
+  
+  
+  
+  data-testid="footer-products-issuing-list-item"
+  
+>Issuing</a>
+  
+
+  
+</li>
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/payments/link"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__link'
+  
+  
+  
+  data-testid="footer-products-link-list-item"
+  
+>Link</a>
+  
+
+  
+</li>
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/managed-payments"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__managed_payments'
+  
+  
+  
+  data-testid="footer-products-managed-payments-list-item"
+  
+>Managed Payments</a>
+  
+
+  
+</li>
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/payments/payment-links"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__payment_links'
+  
+  
+  
+  data-testid="footer-products-payment-links-list-item"
+  
+>決済用リンク</a>
+  
+
+  
+</li>
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/payments"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__payments'
+  
+  
+  
+  data-testid="footer-products-payments-list-item"
+  
+>Payments</a>
+  
+
+  
+</li>
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/connect/payouts"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__connect_payouts'
+  
+  
+  
+  data-testid="footer-products-connect-payouts-list-item"
+  
+>Payouts</a>
+  
+
+  
+</li>
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="https://stripe.com/jp/radar"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__radar'
+  
+  
+  
+  data-testid="footer-products-radar-list-item"
+  
+>Radar</a>
+  
+
+  
+</li>
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/revenue-recognition"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__revenue_recognition'
+  
+  
+  
+  data-testid="footer-products-revenue-recognition-list-item"
+  
+>Revenue Recognition</a>
+  
+
+  
+</li>
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="https://stripe.com/jp/sigma"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__sigma'
+  
+  
+  
+  data-testid="footer-products-sigma-list-item"
+  
+>Stripe Sigma</a>
+  
+
+  
+</li>
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/tax"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__tax'
+  
+  
+  
+  data-testid="footer-products-tax-list-item"
+  
+>Tax</a>
+  
+
+  
+</li>
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/terminal"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__terminal'
+  
+  
+  
+  data-testid="footer-products-terminal-list-item"
+  
+>Terminal</a>
+  
+
+  
+</li>
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/treasury"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__treasury'
+  
+  
+  
+  data-testid="footer-products-treasury-list-item"
+  
+>Treasury</a>
+  
+
+  
+</li>
+    
+  </ul>
+  
+</section>
+      </div>
+
+      <div class='SiteFooterSection__column'>
+        
+        <section
+  class="
+    List
+    List--hasTitle
+    
+    
+  "
+  
+  
+  
+>
+    <h1
+  class="
+    CopyTitle
+    CopyTitle--variant
+    CopyTitle--inline
+    
+    
+    List__title
+  "
+  
+>ソリューション</h1>
+  
+  <ul class='List__list'>
+    
+      <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/enterprise"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__enterprise'
+  
+  
+  
+  data-testid="footer-use-cases-enterprise-list-item"
+  
+>大企業</a>
+  
+
+  
+</li>
+          
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/startups"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__startups'
+  
+  
+  
+  data-testid="footer-use-cases-startups-list-item"
+  
+>スタートアップ</a>
+  
+
+  
+</li>
+          
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/use-cases/agentic-commerce"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__agentic_commerce'
+  
+  
+  
+  data-testid="footer-use-cases-agentic-commerce-list-item"
+  
+>エージェンティックコマース</a>
+  
+
+  
+</li>
+          
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/use-cases/crypto"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__crypto'
+  
+  
+  
+  data-testid="footer-use-cases-crypto-list-item"
+  
+>暗号資産</a>
+  
+
+  
+</li>
+          
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/use-cases/ecommerce"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__ecommerce'
+  
+  
+  
+  data-testid="footer-use-cases-ecommerce-list-item"
+  
+>E-コマース</a>
+  
+
+  
+</li>
+          
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/use-cases/embedded-finance"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__embedded_finance'
+  
+  
+  
+  data-testid="footer-use-cases-embedded-finance-list-item"
+  
+>埋込型金融</a>
+  
+
+  
+</li>
+          
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/use-cases/finance-automation"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__finance_automation'
+  
+  
+  
+  data-testid="footer-use-cases-finance-automation-list-item"
+  
+>財務の自動化</a>
+  
+
+  
+</li>
+          
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/use-cases/global-businesses"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__global_businesses'
+  
+  
+  
+  data-testid="footer-company-global-businesses-list-item"
+  
+>
+          
+            グローバルビジネス
+          
+        </a>
+  
+
+  
+</li>
+          
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/use-cases/in-app-payments"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__in_app_payments'
+  
+  
+  
+  data-testid="footer-company-in-app-payments-list-item"
+  
+>アプリ内決済</a>
+  
+
+  
+</li>
+          
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/use-cases/marketplaces"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__marketplaces'
+  
+  
+  
+  data-testid="footer-use-cases-marketplaces-list-item"
+  
+>マーケットプレイス</a>
+  
+
+  
+</li>
+          
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/money-management/availability"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__money_management'
+  
+  
+  
+  data-testid="footer-use-cases-money-management-list-item"
+  
+>資金管理</a>
+  
+
+  
+</li>
+          
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/use-cases/platforms"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__platforms'
+  
+  
+  
+  data-testid="footer-use-cases-platforms-list-item"
+  
+>プラットフォーム</a>
+  
+
+  
+</li>
+          
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/use-cases/saas"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__saas'
+  
+  
+  
+  data-testid="footer-use-cases-saas-list-item"
+  
+>SaaS</a>
+  
+
+  
+</li>
+
+          
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/use-cases/ai"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__ai_companies'
+  
+  
+  
+  data-testid="footer-use-cases-ai-list-item"
+  
+>AI 企業</a>
+  
+
+  
+</li>
+          
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/use-cases/creator-economy"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__creator_economy'
+  
+  
+  
+  data-testid="footer-use-cases-creator-economy-list-item"
+  
+>クリエイターエコノミ―</a>
+  
+
+  
+</li>
+          
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/industries/fintech"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__fintech'
+  
+  
+  
+  data-testid="footer-industries-fintech-list-item"
+  
+>フィンテック</a>
+  
+
+  
+</li>
+          
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/industries/gaming"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__gaming'
+  
+  
+  
+  data-testid="footer-industries-gaming-list-item"
+  
+>ゲーム</a>
+  
+
+  
+</li>
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/industries/travel"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='Travel Industry'
+  
+  
+  
+  data-testid="footer-industries-travel-list-item"
+  
+>ホスピタリティ、旅行、レジャー</a>
+  
+
+  
+</li>
+          
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/industries/insurance"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__insurance'
+  
+  
+  
+  data-testid="footer-industries-insurance-list-item"
+  
+>保険</a>
+  
+
+  
+</li>
+          
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/industries/media-entertainment"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__media_entertainment'
+  
+  
+  
+  data-testid="footer-industries-media-and-entertainment-list-item"
+  
+>メディアおよびエンターテインメント</a>
+  
+
+  
+</li>
+          
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/industries/nonprofits"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__nonprofits'
+  
+  
+  
+  data-testid="footer-industries-nonprofits-list-item"
+  
+>非営利団体</a>
+  
+
+  
+</li>
+          
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/industries/professional-services"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__professional_services'
+  
+  
+  
+  data-testid="footer-industries-professional-services-list-item"
+  
+>プロフェッショナルサービス</a>
+  
+
+  
+</li>
+          
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/industries/public-sector"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__public_sector'
+  
+  
+  
+  data-testid="footer-industries-public-sector-list-item"
+  
+>パブリックセクター</a>
+  
+
+  
+</li>
+          
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/industries/retail"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__retail'
+  
+  
+  
+  data-testid="footer-industries-retail-list-item"
+  
+>小売業</a>
+  
+
+  
+</li>
+    
+  </ul>
+  
+</section>
+
+        <section
+  class="
+    List
+    List--hasTitle
+    
+    
+  "
+  
+  
+  
+>
+    <h1
+  class="
+    CopyTitle
+    CopyTitle--variant
+    CopyTitle--inline
+    
+    
+    List__title
+  "
+  
+>連携とカスタムソリューション</h1>
+  
+  <ul class='List__list'>
+    
+      
+        <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="https://marketplace.stripe.com/"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__stripe_app_marketplace'
+  
+  
+  
+  data-testid="footer-solutions-app-marketplace-list-item"
+  
+>Stripe App Marketplace</a>
+  
+
+  
+</li>
+      
+        <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/partners"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__partner_ecosystem'
+  
+  
+  
+  data-testid="footer-solutions-partners-ecosystem-list-item"
+  
+>Stripe パートナーエコシステム</a>
+  
+
+  
+</li>
+      
+        <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/professional-services"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__professional_services'
+  
+  
+  
+  data-testid="footer-solutions-professional-services-list-item"
+  
+>プロフェッショナルサービス</a>
+  
+
+  
+</li>
+      
+    
+  </ul>
+  
+</section>
+
+        <section
+  class="
+    List
+    List--hasTitle
+    
+    
+  "
+  
+  
+  
+>
+    <h1
+  class="
+    CopyTitle
+    CopyTitle--variant
+    CopyTitle--inline
+    
+    
+    List__title
+  "
+  
+>開発者</h1>
+  
+  <ul class='List__list'>
+    
+      
+        <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="https://docs.stripe.com/"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__documentation'
+  
+  
+  
+  data-testid="footer-developers-docs-list-item"
+  
+>ドキュメント</a>
+  
+
+  
+</li>
+      
+        <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="https://docs.stripe.com/api"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__api_reference'
+  
+  
+  
+  data-testid="footer-developers-api-list-item"
+  
+>API リファレンス</a>
+  
+
+  
+</li>
+      
+        <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="https://status.stripe.com/"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__api_status'
+  
+  
+  
+  data-testid="footer-developers-system-status-list-item"
+  
+>API ステータス</a>
+  
+
+  
+</li>
+      
+        <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="https://docs.stripe.com/changelog"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__api_changelog'
+  
+  
+  
+  data-testid="footer-developers-api-changelog-list-item"
+  
+>API の変更ログ</a>
+  
+
+  
+</li>
+      
+        <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="https://docs.stripe.com/development"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__libraries_and_sdks'
+  
+  
+  
+  data-testid="footer-developers-libraries-and_sdks-list-item"
+  
+>ライブラリーと SDK</a>
+  
+
+  
+</li>
+      
+        <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="https://docs.stripe.com/projects"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__stripe_projects'
+  
+  
+  
+  data-testid="footer-developers-stripe-projects-list-item"
+  
+>Stripe Projects</a>
+  
+
+  
+</li>
+      
+        <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="https://stripe.dev/"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__developer_blog'
+  
+  
+  
+  data-testid="footer-developers-developer-blog-list-item"
+  
+>開発者ブログ</a>
+  
+
+  
+</li>
+      
+    
+  </ul>
+  
+</section>
+      </div>
+
+      <div class="SiteFooterSection__column SiteFooterSection__column--isMobileFooterLayout">
+        <section
+  class="
+    List
+    List--hasTitle
+    
+    
+  "
+  
+  
+  
+>
+    <h1
+  class="
+    CopyTitle
+    CopyTitle--variant
+    CopyTitle--inline
+    
+    
+    List__title
+  "
+  
+>リソース</h1>
+  
+  <ul class='List__list'>
+    
+      <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="https://stripe.com/jp/guides"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__guides'
+  
+  
+  
+  data-testid="footer-resources-guides-list-item"
+  
+>ガイド</a>
+  
+
+  
+</li>
+  
+  <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/customers"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__customer_stories'
+  
+  
+  
+  data-testid="footer-resources-customer-stories-list-item"
+  
+>導入事例</a>
+  
+
+  
+</li>
+  
+  <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/blog"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__blog'
+  
+  
+  
+  data-testid="footer-resources-blog-list-item"
+  
+>ブログ</a>
+  
+
+  
+</li>
+  
+  <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="https://stripecommunity.com/"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__stripe_community'
+  
+  
+  
+  data-testid="footer-resources-stripe-community-list-item"
+  
+>コミュニティー</a>
+  
+
+  
+</li>
+  
+  <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/sessions"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__annual_conference'
+  
+  
+  
+  data-testid="footer-resources-sessions-list-item"
+  
+>Sessions 年次カンファレンス</a>
+  
+
+  
+</li>
+  
+  <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="https://stripe.com/jp/privacy"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__privacy_and_terms'
+  
+  
+  
+  data-testid="footer-resources-privacy-list-item"
+  
+>プライバシーと利用規約</a>
+  
+
+  
+</li>
+  
+  <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/legal/restricted-businesses"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__prohibited_and_restricted_businesses'
+  
+  
+  
+  data-testid="footer-resources-restricted-businesses-list-item"
+  
+>禁止業種および制限付き業種</a>
+  
+
+  
+</li>
+  
+  <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="https://stripe.com/jp/spc/licenses"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__licenses'
+  
+  
+  
+  data-testid="footer-resources-licenses-list-item"
+  
+>ライセンス</a>
+  
+
+  
+</li>
+  
+  <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/sitemap"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__sitemap'
+  
+  
+  
+  data-testid="footer-resources-sitemap-list-item"
+  
+>サイトマップ</a>
+  
+
+  
+</li>
+  
+  <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/cookie-settings"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__cookie_settings'
+  
+  
+  
+  data-testid="footer-resources-cookie-settings-list-item"
+  
+>クッキーの設定</a>
+  
+
+  
+</li>
+  
+  
+  <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="https://stripe.com/jp/resources/more"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__more_resources'
+  
+  
+  
+  data-testid="footer-resources-more-resources-list-item"
+  
+>その他のリソース</a>
+  
+
+  
+</li>
+    
+  </ul>
+  
+</section>
+        <section
+  class="
+    List
+    List--hasTitle
+    
+    
+  "
+  
+  
+  
+>
+    <h1
+  class="
+    CopyTitle
+    CopyTitle--variant
+    CopyTitle--inline
+    
+    
+    List__title
+  "
+  
+>会社情報</h1>
+  
+  <ul class='List__list'>
+    
+      <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/about"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__about'
+  
+  
+  
+  data-testid="footer-company-about-list-item"
+  
+>会社概要</a>
+  
+
+  
+</li>
+          
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/roadmap"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__product_roadmap'
+  
+  
+  
+  data-testid="footer-company-product-roadmap-list-item"
+  
+>製品ロードマップ</a>
+  
+
+  
+</li>
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/careers"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__careers'
+  
+  
+  
+  data-testid="footer-company-careers-list-item"
+  
+>採用情報</a>
+  
+
+  
+</li>
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/newsroom"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__newsroom'
+  
+  
+  
+  data-testid="footer-company-newsroom-list-item"
+  
+>ニュースルーム</a>
+  
+
+  
+</li>
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="https://press.stripe.com/"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__stripe_press'
+  
+  
+  
+  data-testid="footer-company-stripe-press-list-item"
+  
+>Stripe Press</a>
+  
+
+  
+</li>
+          <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/contact/sales"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__contact_sales'
+  
+  
+  
+  data-testid="footer-resources-contact-sales-list-item"
+  
+>営業にお問い合わせ</a>
+  
+
+  
+</li>
+    
+  </ul>
+  
+</section>
+        <section
+  class="
+    List
+    List--hasTitle
+    
+    
+  "
+  
+  
+  
+>
+    <h1
+  class="
+    CopyTitle
+    CopyTitle--variant
+    CopyTitle--inline
+    
+    
+    List__title
+  "
+  
+>サポート</h1>
+  
+  <ul class='List__list'>
+    
+      <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="https://support.stripe.com/?referrerLocale=ja-jp"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__get_support'
+  
+  
+  
+  data-testid="footer-resources-support-list-item"
+  
+>サポートに問い合わせる</a>
+  
+
+  
+</li>
+  <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    
+    
+    <a
+  class="
+    Link
+    ListItem__label
+  "
+  href="/jp/support-plans"
+  
+  
+  
+  data-js-controller='AnalyticsButton'
+  data-analytics-category='Links'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__managed_support_plans'
+  
+  
+  
+  data-testid="footer-resources-support-plans-list-item"
+  
+>管理対象サポートプラン</a>
+  
+
+  
+</li>
+    
+  </ul>
+  
+</section>
+
+        
+        <section
+  class="
+    List
+    
+    
+    SignInList
+  "
+  
+  
+  
+>
+  <ul class='List__list'>
+    
+      <a
+  class='
+    CtaButton
+    variant--Link
+    CtaButton--arrow
+    
+    
+  '
+  href="https://dashboard.stripe.com/login"
+  
+  data-js-controller='AnalyticsButton'
+  
+  data-analytics-category='Buttons'
+  data-analytics-action='Clicked'
+  data-analytics-label='global_footer__sign_in'
+  
+  
+  
+  
+  
+>サインイン<span class="nobr">&nbsp;<svg
+    class="
+      HoverArrow
+      
+      
+    "
+    width="10"
+    height="10"
+    viewBox="0 0 10 10"
+    aria-hidden="true"
+  >
+    <g fill-rule="evenodd">
+      
+        <path class="HoverArrow__linePath" d="M0 5h7" />
+        <path class="HoverArrow__tipPath" d="M1 1l4 4-4 4" />
+      
+    </g>
+  </svg>
+</span>
+</a>
+    
+  </ul>
+  
+</section>
+      </div>
+
+      
+
+      
+        
+      
+      <section
+  class="
+    List
+    
+    
+    SiteFooterSection__copyright
+  "
+  
+  
+  
+>
+  <ul class='List__list'>
+    
+      <li
+  class="
+    List__item
+    ListItem
+    
+    
+    
+  "
+  
+  
+>
+  
+
+  
+    © 2026 Stripe, LLC
+  
+
+  
+</li>
+    
+  </ul>
+  
+</section>
+    </nav>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+    </div>
+  </body>
+</html>

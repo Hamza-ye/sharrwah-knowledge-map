@@ -1,0 +1,754 @@
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+GETTING STARTED
+PRODUCTS
+STORE SETUP
+B2B
+DESIGN AND CONTENT
+MANAGE STORE
+CHANNEL MANAGER
+MARKETING
+DATA SOLUTIONS
+ACCOUNT
+TD BANK
+Connecting with Braintree
+What We'll Cover
+Requirements
+Getting your Braintree account credentials
+Setting up Braintree
+Settings
+Configuring Braintree with multiple currencies
+Fastlane by PayPal
+	
+PayPal Pay Later
+Setting up webhooks
+Braintree Account Updater
+Dynamic descriptors
+Fraud protection tools
+FAQ
+
+Braintree is a PayPal payment solution that lets your customers pay for their orders with their debit/credit card or PayPal account.
+
+Braintree offers several features to optimize checkout conversion and grow your business:
+
+local payment methods and PayPal Pay Later to expand your global customer base and encourage larger purchases
+Fastlane by PayPal provides guest shoppers a fast, passwordless checkout solution
+stored credit cards and PayPal accounts
+real-time Account Updater to automatically refresh stored card information when it expires
+personalized transaction descriptors to improve payment recognition and customer trust
+risk management tools to prevent fraud and minimize chargebacks
+Level 2 and 3 data collection for commercial transactions
+ 
+Requirements
+Your store’s checkout type must be Optimized One-Page Checkout or Custom Checkout.
+Your store must be located in a supported country.
+Your store must have a supported currency as an available transactional currency.
+You must have a Braintree account or a PayPal business account.
+To set up and manage payment methods, the Manage Payments and Manage Settings permissions must be enabled on your user account.
+ 
+Getting Your Braintree Account Credentials
+
+Prior to connecting Braintree in the BigCommerce control panel, you will need to contact the Braintree Sales team to create a Braintree account. If you're signing up with your personal PayPal account, you will need to upgrade it to a business account first. However, we recommend using a different email address to keep your business account separate from your personal PayPal account.
+
+Once created, log in to your Braintree account. Click on the gear icon in the upper right and select API from the drop-down menu. 
+
+Under the API Keys section, copy the Public Key and Private Key as they will be needed for enabling Braintree in BigCommerce. Note that you will need to click View to access your private key. If no API keys appear, click Generate New API Key.
+
+Next, click the Business tab in the upper left.
+
+Copy your Merchant ID, as well as the Merchant Account ID for the currency you will be using with Braintree.
+
+For more information on API keys, the differences between the merchant ID and merchant account ID, and where to find them in your Braintree control panel, see Braintree’s Important Gateway Credentials.
+
+ 
+Setting up Braintree
+
+To connect Braintree with your store, go to Settings › Payments, and select a supported currency from the drop-down list. Under the Embedded tab, expand Online Payment Methods and click Set up next to Braintree.
+
+Enter the credentials copied from your Braintree account into their respective Merchant ID, Public Key, Private Key, and Merchant account ID fields. If you are setting up Braintree for multiple currencies, ensure that your Merchant account ID is from the correct currency configuration.
+
+You must also enter your Public Key and Private Key in the Notifications endpoint fields.
+
+Click Save to begin accepting payments.
+
+ 
+Settings
+
+Once Braintree is connected, you can customize your customer’s payment experience.
+
+Transaction settings
+Credit/debit card
+PayPal
+Venmo
+ACH Direct Debit
+Alternative Payment Methods
+Google Pay
+Stored credit cards
+Notifications endpoint
+3D Secure
+TRANSACTION SETTINGS
+
+Transaction type — Select Authorize and capture to automatically charge customers or Authorize only to manually capture funds. To learn more, see Manually Capturing Transactions (Authorize Only).
+Braintree payment methods should be visible on your storefront — Check to display all Braintree payment options at checkout.
+This setting is enabled by default.
+CREDIT/DEBIT CARD
+
+Display name for credit/debit cards — Enter how the payment method is labeled at checkout, customer invoices, and order details.
+Enable credit/debit card payments through Braintree — Check to enable credit and debit card payments at checkout.
+If you have multiple payment gateways set up for a currency, we recommend only using one to accept credit and debit payments.
+Enable Fastlane by PayPal — Check to enable Fastlane by PayPal.
+You must also enable Fastlane in your Braintree Control Panel.
+Click the gear icon, select Account Settings, click the Customer Checkout tab, then click Turn on under Fastlane by PayPal.
+Note that Fastlane cannot be enabled when the Customers must have or create an account to checkout option is enabled in your Optimized-One Page Checkout settings.
+Default delivery method — Shoppers are taken directly to the Payment step at checkout with your Default shipping option preselected.
+Shoppers can click Edit next to the Shipping step to choose a different method.
+Select delivery method — Shoppers are directed to the Shipping step, allowing them to select a shipping method after signing into their Fastlane account.
+Use Fastlane by PayPal’s privacy setting — Check to display the Fastlane logo below the email address field on the checkout page. 
+Clicking the logo displays a disclaimer and a link to Fastlane’s privacy statement.
+When unchecked, the selected Guest shopper consent to privacy policy option in your Checkout settings will apply.
+Customize Fastlane’s appearance — Check to optionally customize how Fastlane appears on your checkout page.
+ 
+
+Not sure which privacy display option is right for your business? We highly recommend consulting your legal advisor to ensure you are displaying the necessary information at checkout. Note that our support team is not qualified to give advice on regional privacy requirements.
+
+PAYPAL
+
+Enable PayPal — Check to add a PayPal button to product, cart, and checkout pages.
+You must also connect your PayPal account to your Braintree account.
+In the Braintree Control Panel, click the gear icon, select Account Settings, click Accept PayPal, then click Log In with PayPal.
+You must disable any other standalone PayPal integrations that may have been connected.
+When enabled, shoppers will be able to pay using their PayPal account.
+PayPal will also appear as a payment option on the payment step of checkout.
+PayPal payments are not supported for stores based in China.
+Enable stored PayPal accounts — Check to allow customers to save their PayPal account credentials on your storefront for quicker checkout.
+Your store must be on a Growth plan or higher.
+Note that Pay Later is disabled when stored PayPal accounts are enabled.
+Enable Pay Later — Check to add a Pay Later button to product, cart, and checkout pages that redirects shoppers to the checkout page.
+For requirements and setup information, see PayPal Pay Later.
+Note that Pay Later is disabled when Enable stored PayPal accounts is checked.
+Pay Later Messaging — Configure on which pages Pay Later messaging appears and customize messaging appearance.
+You must authorize your storefront to enable and customize Pay Later messaging.
+Click Authorize PayPal to display Pay Later messaging and follow the instructions in the pop-up window.
+For more details and customization options, see PayPal Pay Later.
+Sync shipping and item info with PayPal — Check to share shipping and product details with PayPal.
+This setting can help to shorten fund hold times, lowers your minimum account reserve, and enables Seller Protection against chargebacks and claims.
+This setting is enabled by default for most stores.
+Let PayPal provide package tracking to customers — When Sync shipping and item info with PayPal is enabled, check to provide customers who pay with PayPal and use the PayPal app with automatic live shipping updates on packages.
+This setting is enabled by default for most stores.
+ 
+
+Only orders placed using PayPal or PayPal Pay Later will be synced. Orders paid for with a credit card or an alternative payment method are not eligible for post order syncing.
+
+VENMO
+
+Enable Venmo — Check to accept Venmo payments.
+Venmo is only available for USD.
+Stored payment methods and recurring payments are not supported.
+ACH DIRECT DEBIT
+
+Enable ACH Direct Debit — Check to accept ACH Direct Debit payments.
+Before enabling, see the requirements and additional setup information on ACH (Automated Clearing House) Direct Debit.
+Enable stored ACH accounts — Check this box to allow customers logged into their storefront account to store their card and ACH account details for future purchases.
+Your store must be on a Growth plan or higher.
+ALTERNATIVE PAYMENT METHODS
+
+Enable alternative payment methods — Check to enable selection of alternative payment methods.
+Select Alternative Payment Methods — Click the drop-down to enable or disable alternative payment methods on the checkout page.
+
+When enabling alternative payment methods, keep in mind the following considerations:
+
+Each payment method has its own supported currencies. The payment methods available in your Braintree settings depend on the currency selected from the drop-down list and the transactional currencies assigned to Braintree.
+In order to prevent syncing errors at checkout, you must edit or create a webhook in your Braintree Control Panel.
+Alternative payment method transactions are Authorize and capture only, regardless of the selected transaction type. Delayed capture is not supported.
+Stored payment methods and recurring payments are not supported.
+Currency conversion is not supported. Alternative payment transactions must be processed in the APM's supported currency.
+
+See each supported APM for setup steps, requirements, and limitations. Note that eligibility requirements, such as supported countries and currencies, take precedence over the gateway's default restrictions.
+
+ACH Direct Debit*
+Apple Pay**
+Bancontact
+BLIK
+EPS
+	
+Google Pay*
+iDEAL
+MyBank
+PayPal Pay Later
+Przelwey24
+Venmo
+
+*Must also be enabled in your Braintree account.
+
+**Enabled independently of your Braintree settings.
+
+GOOGLE PAY
+
+Enable Google Pay — Check to accept Google Pay payments.
+Before enabling, see the requirements and additional setup information on Google Pay.
+Note that Google Pay can only be enabled for one payment gateway at a time.
+Stored payment methods and recurring payments are not supported.
+STORED CREDIT CARDS
+
+Allow logged-in customers to store their credit/debit cards — Check to allow customers to securely save their credit card details to their storefront account. 
+Your store must be on a Growth plan or higher.
+This setting must be enabled to use Braintree’s Account Updater.
+Require card security code when using a stored credit/debit card — Check to require your customers to enter their CVV code when paying with a stored card.
+Note that for security reasons, a security code is always required at checkout for orders containing digital products.
+Vault instruments with Braintree for all card payments — Store a unique token with Braintree for each card used to place an order on your store, for both logged-in customers and guest shoppers.
+Your store must be on a Growth plan or higher.
+Note that the token is not saved to the customer's storefront account, and an option for future use is not displayed during checkout.
+Provider token fields provider_instrument_token and provider_customer_id can be accessed via our V3 Transactions API. To request access to these fields, contact our support team.
+NOTIFICATIONS ENDPOINT
+
+Used to configure notifications for events for Braintree’s Account Updater, ACH order updates, Alternative Payment Methods, and Braintree fraud rules. For setup information, see Setting up Webhooks.
+
+Modification public key — The Public Key copied from your Braintree account. 
+Notification private key — The Private Key copied from your Braintree account. 
+
+Note that these fields are required to save your configuration.
+
+3D SECURE
+
+Enable 3D Secure — Check to enable 3D Secure, an extra layer of security that prompts shoppers to enter a password for their credit/debit card during checkout.
+Before enabling, contact the Braintree Accounts team by emailing accounts@braintreepayments.com to have 3D Secure configured in your Braintree account.
+When enabled, 3D Secure will also apply to Fastlane by PayPal.
+ 
+Configuring Braintree with Multiple Currencies
+
+If you want to offer Braintree’s payments across multiple currencies, you will need to create a new merchant account ID in your Braintree account. If you offer both credit cards and PayPal, you will need to ensure that your account is configured to accept the new currency for both payment methods.
+
+After setting up merchant accounts IDs for each currency you want to offer, enable the currencies in your BigCommerce control panel. When you connect Braintree with an additional currency, use the merchant account ID associated with that currency in your Braintree account.
+
+ 
+
+Using Multi-Storefront? You can request to opt into using Multi-Storefront Payment Methods to configure multiple payment configurations per provider, per currency. For more information, see Multi-Storefront Payment Methods.
+
+ 
+Fastlane by PayPal
+
+Fastlane by PayPal provides merchants with a fast, passwordless checkout solution for guest shoppers. With Fastlane, shoppers create a payment profile after making a credit card or PayPal payment, then use that profile on future orders to complete checkout with a single click.
+
+See Fastlane by PayPal to learn more about Fastlane’s requirements and setup instructions.
+
+ 
+PayPal Pay Later
+Requirements
+Pay Later button
+Customizing Pay Later messaging
+
+PayPal Pay Later lets customers buy now and pay over time. This feature means that the shopper will owe the money to PayPal while you, the merchant, always get paid. PayPay Pay Later also includes messaging banners that inform your customers of the installment options available at checkout. This can encourage larger purchases and increase your average order value (AOV).
+
+Note that PayPal Pay Later is displayed as PayPal Pay in 4 for AU stores, PayPal Pay in 4X for FR stores, PayPal Pay in 3 for UK, IT, and ES stores, and PayPal Ratenzahlung for DE stores.
+
+REQUIREMENTS
+Store requirements
+Your store must be located in Australia, Canada, France, Germany, Italy, Spain, the United Kingdom, or the United States.
+Note that some activities involving PayPal Pay Later in the United Kingdom are regulated. Before activating PayPal Pay Later buttons on your website, contact PayPal Business customer support or your PayPal Customer Success Manager for more information and to obtain the 4-digit code to unlock PayPal Pay Later for your store.
+Your store must use a supported country and transactional currency combination:
+CA — CAD
+UK — GBP
+US — USD
+All other countries — AUD, CAD, CHF, CZK, DKK, EUR, GBP, HKD, HUF, ILS, JPY, MXN, NOK, NZD, PHP, PLN, RUB, SEK, SGD, THB, TWD, or USD
+You must authorize your storefront to enable and customize Pay Later messaging.
+Shopper requirements
+The shopper’s order value must be within PayPal’s supported range for their selected currency.
+See PayPal’s documentation for each country and product’s order value range.
+PAY LATER BUTTON
+
+When Enable Pay Later is checked, a PayPal Pay Later button will display on product, cart, and checkout pages allowing your shoppers to quickly pay using Pay Later. While the dedicated button offers a convenient option, shoppers can also select PayPal Pay Later at checkout.
+
+If you are using Cornerstone 6.13.0 or newer, you can adjust the color, shape, and text of the PayPal Pay Later button on storefront product pages, cart page, the top of the checkout page, and the payment step of checkout. These settings can be found in Page Builder under Theme Styles › Payment buttons.
+
+If you are using a different theme, check your theme’s documentation to see if it supports payment button customization. 
+
+CUSTOMIZING PAY LATER MESSAGING
+
+The PayPal Pay Later Messaging section allows you to select which pages the messaging will appear on, as well as customize the PayPal logo type, text color, and text size to match your theme design. In the preview pane, view changes to your banners in real-time for desktops and mobile devices, and in dark mode.
+
+Note that the banner location in the preview pane provides a demonstration of how the banner may look on a specific page. The actual location will vary, depending on your theme.
+
+ 
+
+Not seeing the PayPal Pay Later messaging settings? If you do not meet all of the eligibility requirements, the messaging settings will not be displayed. Instead, you will see a list of requirements that still need to be met on your store before this feature will be available for use.
+
+ 
+Setting up Webhooks
+
+Account Updater, ACH Direct Debit, Alternative Payment Methods, and Braintree fraud rules require webhooks to ensure proper functionality.
+
+ 
+
+Check user permissions in Braintree. To set up webhooks, you must have the Manage Webhooks (Add/Edit/Delete) permission enabled in your Braintree user account.
+
+To create a webhook for your Braintree configuration, go to Settings › Payments in the BigCommerce control panel and click the Braintree tab. Scroll down to the Notifications endpoint section and copy the Notification URL.
+
+ 
+
+Note: If you are setting up Braintree for multiple currencies or using Multi-Storefront Payment Methods, each configuration will have a unique Notification URL.
+
+Next, log into your Braintree Control Panel and click the gear icon in the upper right. Select API from the drop-down menu, then click the Webhooks tab in the upper left.
+
+Click Create New Webhook, then on the next page paste the copied Notification URL in the Destination URL field. Under Notifications, check the boxes next to the following events*:
+
+For Account Updater:
+Account Updater Daily Report (optional)
+For ACH Direct Debit:
+Transaction Settlement Declined
+Transaction Settled
+For APMs:
+Local Payment Completed
+Local Payment Reversed
+Local Payment Funded
+Local Payment Expired
+For fraud rules:
+Transaction Reviewed
+
+*Some events are only available after the associated feature has been enabled or added to your Braintree account. See each feature’s setup details for more information.
+
+When done, click Create Webhook. Next, click the Keys tab and copy your Public Key and Private Key.
+
+Return to the BigCommerce control panel Braintree tab. Scroll down to the Notifications endpoint section and paste the Public Key in the Notification public key field and the Private Key in the Notification private key field. 
+
+Save your changes.
+
+ 
+Braintree Account Updater
+
+Account Updater is an optional paid service offered by Braintree that automatically updates stored card information, such as new numbers, new expiration dates, and closed accounts.
+
+This can be useful for stores that offer subscriptions, as it ensures that recurring transactions won't fail due to outdated stored card information and customers won't need to contact the store to update their payment details.
+
+To enable Account Updater:
+
+you must contact Braintree support.
+you must have Allow logged-in customers to store their credit/debit cards checked in your Braintree settings.
+Your store must be on a Growth plan or higher.
+you can optionally set up a webhook with the Account Updater Daily Report event.
+ 
+Dynamic Descriptors
+Enabling dynamic descriptors
+BigCommerce settings
+
+Dynamic descriptors are an abbreviated business identifier used to explain charges or payments on a customer’s bank statement. Having personalized descriptors can improve recognition of transactions with your business and reduce the likelihood of chargebacks.
+
+A customer's bank will determine exactly how your business's descriptors appear on customer statements, but may appear like this:
+
+BCSTORE*FINECOLLCTBLES 555-123-1234 BCSTORE.COM $100.00
+
+ENABLING DYNAMIC DESCRIPTORS
+
+Contact Braintree to enable dynamic descriptors on your Braintree account. Braintree will also provide you with your processor's dynamic descriptor requirements, such as the maximum character length or supported character types.
+
+Once your Braintree account supports dynamic descriptors, contact our support team to activate the descriptor fields in your BigCommerce control panel.
+
+ 
+
+Be careful! Transactions will fail if you enter descriptors in the BigCommerce control panel without Dynamic Descriptors enabled in your Braintree account, or if your descriptor does not meet the processor's character requirements or limitations.
+
+BIGCOMMERCE SETTINGS
+
+Once our support team has enabled Dynamic Descriptors, go to Settings › Payments and click on the Braintree tab. Scroll down to Dynamic descriptors and fill out the descriptor fields.
+
+ 
+
+Your processor may have different descriptor requirements from the ones listed in Braintree settings. If you are unsure about your processor's requirements, contact Braintree.
+
+Name — Enter your business name and product descriptor, separated by an asterisk (*).
+For example: BCSTORE*FINECOLLCTBLES
+The total descriptor length must be 22 characters.
+The business name must be 3, 7, or 12 characters.
+The product descriptor must be 9, 14, or 18 characters.
+Phone — Enter your business's phone number.
+Must be between 10-14 characters.
+Can only contain numbers, dashes, parentheses, and periods.
+URL — Enter your business's web address.
+Must be 13 characters or less.
+
+If you have enabled PayPal or Venmo payments on your store, you must also specify a dynamic descriptor for each.
+
+PayPal
+
+Name — Enter your business name and product descriptor, separated by an asterisk (*). 
+For example: BCSTORE*FINECOLLCTBLES
+The total descriptor length must be 22 characters. This includes the PAYPAL * default prefix and an additional PayPal hard descriptor.
+The business name must be 3, 7, or 12 characters.
+The product descriptor must be 9, 14, or 18 characters.
+If the descriptor exceeds 22 characters, the business name will not be included and the product descriptor will be truncated.
+
+Venmo
+
+Name — Enter your dynamic descriptor. This will be added to the full descriptor. See Braintree’s documentation for more details.
+For example: 0-12345
+The value can contain letters, numbers, spaces, and the special characters +.-.
+Any other characters will cause the entire dynamic descriptor name to be ignored.
+ 
+Fraud Protection Tools
+
+In addition to 3D Secure, Braintree provides basic and premium fraud filters to help you protect your account against fraudulent activity and take control of your business. 
+
+AVS and CVV rules
+Card Verification
+Duplicate Transaction Checking
+Fraud Protection Advanced
+Risk Thresholds
+AVS AND CVV RULES
+
+Address Verification System (AVS) and Card Verification Value (CVV) rules confirm that the address information or CVV included with a transaction matches what the issuing bank has on file for the associated card, ensuring that only authorized card users are able to make purchases. Note that AVS and CVV rules only apply to credit card purchases.
+
+To configure your AVS or CVV rules, log into your Braintree Control Panel. Click the gear icon in the upper right and select Fraud Management from the drop-down menu. On the next page under Basic, click Options next to AVS or CVV.
+
+To learn more, see Braintree’s AVS and CVV Rules.
+
+CARD VERIFICATION
+
+Card verification ensures that the credit card number provided is associated with a valid, open account and can be stored in the Braintree Vault and charged successfully. Note that card verification only applies to credit and debit card payments.
+
+When Card Verification is enabled, Braintree verifies credit cards by running either a $0 or $1 authorization and then automatically voiding it. For most processors and card brands, transactions are initially tried with a $0 authorization. If $0 authorizations are not supported, a $1 authorization will be performed automatically if the processor returns one of the following response codes:
+
+2015 (Transaction Not Allowed)
+2019 (Invalid Transaction)
+2023 (Processor Does Not Support This Feature)
+2027 (Set Up Error - Amount)
+2048 (Invalid Amount)
+
+An additional setting, Card Verification - Retry All Failed $0, allows you to retry all failed $0 authorizations as a $1 authorization, regardless of the response code returned by the processor.
+
+You can enable both card verification settings in your Braintree Control Panel. Click the gear icon in the upper right and select Account Settings from the drop-down menu. On the next page, scroll down to Vaulting and click the toggle next to Card Verification and/or Card Verification - Retry All Failed $0.
+
+To learn more, see Braintree’s Card Verification.
+
+DUPLICATE TRANSACTION CHECKING
+
+Duplicate transaction checking prevents transaction requests from accidentally processing more than once if a customer refreshes your checkout page or clicks your buy button multiple times.
+
+Enabled by default, this feature rejects transactions if another successful transaction has been completed with the same payment method, order ID, and amount within the last 30 seconds.
+
+You can change the timeframe or disable the feature in your Braintree Control Panel. Click the gear icon in the upper right and select Account Settings from the drop-down menu. On the next page, scroll down to Transactions and click the toggle next to Duplicate Transaction Checking to disable it, or click Options to update the timeframe. You can enter a value up to 3600 seconds (1 hour).
+
+To learn more, see Braintree’s Duplicate Transaction Checking.
+
+FRAUD PROTECTION ADVANCED
+
+Braintree’s Fraud Protection Advanced is a premium fraud management tool that applies machine learning to evaluate card transactions and help protect your business from payment fraud. Note that additional fees apply.
+
+Fraud Protection Advanced:
+
+includes all basic Fraud Protection features.
+offers customized risk filters with expanded variables.
+provides block, review, and allow list management.
+offers optimized manual review investigations and robust reporting.
+
+To apply for Fraud Protection Advanced, log into your Braintree Control Panel. Click the gear icon in the upper right and select Fraud Management from the drop-down menu. On the next page, scroll down to Premium and click Apply next to Fraud Protection Advanced.
+
+To learn more, see Braintree’s Fraud Protection Advanced.
+
+RISK THRESHOLD RULES
+
+Risk threshold rules, also known as velocity checks, are designed to detect and prevent carding attacks. They are triggered when certain customer information is passed through Braintree multiple times within a designated time period.
+
+Rules can be configured to either send you a notification email or automatically reject verifications or transactions. Note that risk threshold rules only apply to credit card and certain Google Pay transactions.
+
+To manage your risk threshold rules, log into your Braintree Control Panel. Click the gear icon in the upper right and select Fraud Management from the drop-down menu. On the next page under Basic, click Options next to Risk Thresholds.
+
+To learn more, see Braintree’s Risk Threshold Rules.
+
+ 
+FAQ
+General
+Account eligibility
+Pricing and fees
+Additional features
+Transactions
+Refunds
+Payment disputes
+Troubleshooting and support
+GENERAL
+
+Where do I get my 1099-K tax form?
+
+Your US 1099-K and other tax forms are provided by the payment processor. For additional information, see Braintree’s 1099-K.
+
+Can I connect a sandbox account for testing?
+
+Yes, if you have a Braintree sandbox account, you can use its credentials when connecting your store for test transactions. Prior to setup, you must contact our support team to have your configuration placed into Test mode. When you’re ready to take live payments, contact our team to have it placed back into Production mode.
+
+Using the incorrect credentials will result in a “Failed to update provider” error message when attempting to save your configuration.
+
+ACCOUNT ELIGIBILITY
+
+What countries are supported?
+
+Our integration supports the following countries:
+
+Andorra	Finland	Jersey	Romania
+Australia	France	Latvia	San Marino
+Austria	Germany	Liechtenstein	Singapore
+Belgium	Gibraltar	Lithuania	Slovakia
+Bulgaria	Greece	Luxembourg	Slovenia
+Canada	Greenland	Malaysia	Spain
+China*	Guernsey	Malta	Sweden
+Croatia	Hong Kong	Monaco	Switzerland
+Cyprus	Hungary	Netherlands	Türkiye
+Czechia	Iceland	New Zealand	United Kingdom
+Denmark	Ireland	Norway	United States
+Estonia	Isle of Man	Poland	 
+Faroe Islands	Italy	Portugal	 
+
+*PayPal is not supported.
+
+What currencies are supported?
+
+Our integration supports the following currencies:
+
+AED	CHF	GMD	KYD	NGN	SEK	UYU
+AMD	CLP	GNF	KZT	NIO	SGD	UZS
+AOA	CNY	GTQ	LAK	NOK	SHP	VES
+ARS	COP	GYD	LBP	NPR	SLL	VND
+AUD	CRC	HKD	LKR	NZD	SOS	VUV
+AWG	CVE	HNL	LRD	PAB	SRD	WST
+AZN	CZK	HRK	LSL	PEN	STD	XAF
+BAM	DJF	HTG	LTL	PGK	SVC	XCD
+BBD	DKK	HUF	MAD	PHP	SYP	XOF
+BDT	DOP	IDR	MDL	PKR	SZL	XPF
+BIF	DZD	ILS	MKD	PLN	THB	YER
+BMD	EGP	INR	MNT	PYG	TJS	ZAR
+BND	ETB	ISK	MOP	QAR	TOP	ZMK
+BOB	EUR	JMD	MUR	RON	TRY	ZWD
+BRL	FJD	JPY	MVR	RSD	TTD	 
+BSD	FKP	KES	MWK	RUB	TWD	 
+BWP	GBP	KGS	MXN	RWF	TZS	 
+BYN	GEL	KHR	MYR	SAR	UAH	 
+BZD	GHS	KMF	MZN	SBD	UGX	 
+CAD	GIP	KRW	NAD	SCR	USD	 
+
+What items are restricted for merchants to sell?
+
+Information on Braintree’s restricted activities can be found in their Acceptable Use Policy.
+
+PRICING AND FEES
+
+What fees are associated with the gateway?
+
+For information on processing rates , see PayPal Braintree Fees.
+
+Are there any fees for refunds or payment disputes?
+
+For information on additional fees, see PayPal Braintree Fees.
+
+ADDITIONAL FEATURES
+
+Is delayed or manual capture supported?
+
+Yes. When the Authorize only transaction type is selected, manual capture of payments is supported.
+
+Are recurring or subscription payments supported?
+
+Braintree supports recurring payments with stored payment methods via subscription billing apps or a custom development using the Payments API. Additionally, you can enable PayPal Pay Later to give your shoppers the ability to pay over time.
+
+Is multicurrency supported?
+
+Yes. Braintree supports the use of multiple currencies. For more information, see Configuring Braintree with Multiple Currencies.
+
+Can I have more than one store associated with my Braintree account?
+
+No, each store needs to be associated with its own Braintree account.
+
+Can I use multiple Braintree merchant account IDs with BigCommerce?
+
+Yes, you can use multiple merchant account IDs to configure Braintree across multiple currencies.
+
+If you are using Multi-Storefront, you can also configure a single Braintree account for multiple channels per currency. There is no limit to the amount of Braintree configurations that can be created per currency.
+
+Each Braintree configuration has its own unique notification URL that is used for enabling ACH Direct Debit and Account Updater.
+
+Are Level 2 and Level 3 data fields supported?
+
+Yes, Level 2 and Level 3 data fields are supported for US domestic transactions placed by commercial shoppers. See Braintree's documentation for a list of required fields in order for transactions to be processed as Level 2 or 3.
+
+See the table below for a complete list of collected data fields. Fields marked with an asterisk (*) are required. Note that fields like line_items.commodity_code must have values entered in your store in order to be collected.
+
+Data Field	Data Level	Description
+tax_amount*	Level 2	Sales tax collected on the order
+purchase_order_number*	Level 2	The BigCommerce Order ID
+shipping_amount*	Level 3	The sum of shipping, handling, and gift wrapping costs on the order
+discount_amount*	Level 3	The total of all discounts on the order
+ships_from_postal_code*	Level 3	The ZIP/postal code in your shipping origin
+shipping.postal_code*	Level 3	The ZIP/postal code in the customer's shipping address
+shipping.country_code_alpha3*	Level 3	The three-letter ISO code for the country in the customer's shipping address
+line_items.name	Level 3	The name of each line item in the order
+line_items.kind	Level 3	The type of transaction; only debit is supported
+line_items.quantity	Level 3	The quantity of each line item
+line_items.unit_amount	Level 3	The per-unit price of each line item before discounts and taxes
+line_items.unit_of_measure	Level 3	Appears as EA (each)
+line_items.total_price	Level 3	Total price of line items before discounts and taxes
+line_items.tax_amount	Level 3	Tax applied to each line item; does not include tax on shipping, handling, or gift wrapping fees
+line_items.discount_amount	Level 3	Discounts applied to each line item; does not include discounts to shipping, handling, or gift wrapping fees
+line_items.product_code	Level 3	The UPC/EAN of each line item
+line_items.commodity_code	Level 3	Customs information, such as country-specific or universal HS code of each line item
+
+Are any additional security or fraud filtering options available?
+
+For information on available fraud protection features, see Fraud Protection Tools.
+
+Can I customize/style how payment buttons look on each page?
+
+Yes, you can control how the PayPal, PayPal Pay Later, and Venmo buttons appear using Page Builder if your store meets the following requirements:
+
+Braintree must be enabled in your store.
+Your storefront must be using a compatible theme (like Cornerstone).
+Your store must be using Optimized One-Page Checkout.
+
+What are "Smart Buttons"?
+
+When PayPal is enabled, the shopper is automatically shown additional payment methods that are best suited to them, based on the device they are using and the geographical region they are in. For example, shoppers using a mobile device with Venmo set up and with USD as their selected currency will see the option to pay with Venmo, and shoppers in supported countries are shown the option for PayPal Pay Later.
+
+How do I add Smart Buttons to my product pages?
+
+If you are using a theme based on Cornerstone 6.6.1 or newer, you can enable payment buttons for PayPal and Venmo on the product page by checking the box next to Show quick payment buttons in the Products tab under Display settings.
+
+If you are using a different theme, or you have customized your Cornerstone theme files, your theme will require additional customization in order to support product page payment buttons.
+
+Can I place Smart Buttons at the top of my checkout page?
+
+You can place Smart Buttons at the top of checkout by checking the box next to Show wallet buttons at the top of checkout in your Optimized-One Page Checkout settings.
+
+What is the customer experience with PayPal’s package tracking service?
+
+Customers who use the PayPal app can track packages in the app and receive push notifications with live shipping updates. This will be provided automatically for customers who shop at your store and pay with PayPal. Customers can also track packages manually by entering a tracking number.
+
+Can I turn off package tracking and still sync order details, to retain benefits like shorter hold times and seller protection eligibility?
+
+Yes. Package tracking is a separate, optional feature that can be turned toggled off and on without disabling post order syncing.
+
+Can I display PayPal Pay Later messaging banners on my storefront without enabling the Pay Later button?
+
+Yes. The Pay Later button and Pay Later messaging are separate features that operate independently of each other. While the button provides a quick and easy way to access Pay Later, shoppers can still choose the option at checkout.
+
+TRANSACTIONS
+
+How long until a transaction's funds are transferred to my bank?
+
+Funds should appear in your bank account 2-5 days after the transaction has settled. For more details on funding and settlement timelines, see Braintree's Get Paid.
+
+Will I or my customers receive an additional email or invoice from Braintree?
+
+Braintree allows you to send additional email notifications, but this functionality is disabled by default as BigCommerce sends an order confirmation email to customers automatically. To enable email receipts, log into your Braintree Control Panel, click the gear icon in the upper right, and select Account Settings from the drop-down menu. On the next page, scroll down to Transactions and follow the instructions under Email Receipts. 
+
+For more details on BigCommerce email notifications, see Customer Order Notifications.
+
+REFUNDS
+
+How soon after a transaction can I perform a refund?
+
+As soon as the transaction has settled, usually within 24 hours, you can issue a refund. For instructions on how to issue a refund in your control panel, see Processing Refunds.
+
+Is there an amount of time after which I cannot perform a refund?
+
+There is no time limit for credit card transactions. For PayPal transactions, PayPal requires refunds to be issued within 60 days, but this can be changed by contacting PayPal.
+
+PAYMENT DISPUTES
+
+Depending on the payment method, disputes are managed in either the Braintree Control Panel or PayPal Resolution Center. For more information, see Braintree’s Chargebacks and Retrievals.
+
+TROUBLESHOOTING AND SUPPORT
+
+Why did my customer receive an error when trying to pay?
+
+If a customer receives an error at checkout, the BigCommerce store logs may contain additional information. 
+
+Success and error messages from Braintree have a different Module name based on the payment method used at checkout:
+
+Card payments — “Credit Card”
+PayPal Checkout — “Braintree (PayPal)”
+Digital wallets, ACH, and APMs — “Braintree (Payment Method Name)”
+
+If an error code is present, you can look it up in the list of Authorization Decline Codes to see why the error occurred. If you need additional assistance, contact our support team.
+
+Why is Venmo not available in my store after enabling it in Braintree Settings?
+
+If you have connected Braintree using a partner merchant account, Venmo will be unavailable on your storefront. You can confirm this in your Braintree Control Panel by clicking the gear icon, selecting Account Settings from the drop-down list, and scrolling down to Venmo under Payment Methods.
+
+For more information about changing your merchant account to support Venmo, contact Braintree support.
+
+Why is my customer’s order missing after they completed a transaction with an alternative payment method?
+
+This can occur if you have not set up a webhook for local payment notifications in your merchant account. See Enabling Alternative Payment Methods for instructions on configuring the proper webhook to prevent order syncing errors.
+
+Why are the PayPal Pay Later messaging settings not appearing in the control panel?
+
+If you are using a theme that does not support PayPal Pay Later messaging banners, such as an older Stencil theme, Blueprint theme, or headless storefront, your payment gateway’s settings will not display the messaging settings.
+
+Why aren’t my guest customers able to see the PayPal Checkout, PayPal Pay Later button, and Pay Later messaging on the cart page?
+
+If the PayPal Checkout, Pay Later button, and messaging are missing for guest customers only, it could be due to your store’s customer settings in Settings › Checkout. Guest customers will not be able to access PayPal from the cart if either Customers must have or create an account to check out or Require existing accounts to sign in is enabled. See Optimized One-Page Checkout for more information.
+
+What does the "provider_configuration_error, message: 2026 Invalid Merchant ID" error message mean?
+
+This error indicates that the customer’s bank declined the transaction. Customers should be able to complete checkout using a different card. In some cases, the specific card type may not be enabled for your Braintree account.
+
+For more information regarding this error, contact Braintree support.
+
+How do I contact Braintree’s support team?
+
+For assistance, reach out to Braintree support on their Get Help page.
+
+Do this in my store
+
+GO TO PAYMENTS IN MY STORE
+
+Additional Resources
+Fastlane by PayPal
+Introduction to Alternative Payment Methods
+Processing Refunds
+Manually Capturing Transactions (Authorize Only)
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+Connecting with Braintree

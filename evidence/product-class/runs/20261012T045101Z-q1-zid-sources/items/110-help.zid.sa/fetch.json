@@ -1,0 +1,19 @@
+{
+ "n": 110,
+ "url": "https://help.zid.sa/deposits_zidpay/",
+ "dir": "items/110-help.zid.sa",
+ "fetched_at": "2026-10-12T04:52:42Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/deposits_zidpay/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 26450,
+ "cited_in": [
+  "ZD-S-0544",
+  "ZD-S-0545"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "713ae771afd88e6481de0e73161a33e9be566e466d7a200b696d2fd547c26a2a",
+ "raw_ext": "html"
+}

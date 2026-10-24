@@ -1,0 +1,19 @@
+{
+ "n": 162,
+ "url": "https://help.zid.sa/tap-gateway/",
+ "dir": "items/162-help.zid.sa",
+ "fetched_at": "2026-10-12T04:53:34Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/tap-gateway/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 25210,
+ "cited_in": [
+  "ZD-S-0611",
+  "ZD-S-0613"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "706f88e616186b2d783549d7e65100ec827f9f7ec411b90d894d1e4e1831fedf",
+ "raw_ext": "html"
+}

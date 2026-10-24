@@ -1,0 +1,121 @@
+# Family N: legal and compliance; Family O: data; privacy concerns
+concern: leg.sanctions
+software: not shown || note: Observation from the inventory lists: the sign-up country list (233 options) and the business-entity country list (237) do not include Cuba, Iran, North Korea or Syria. Inference: the lists follow the unsupported-regions list; no source states how screening is built into the software.
+decides: outside rules: sanctions and embargoes of the United States, Canada or the European Union, and blocked or denied persons lists, for Shopify Payments; trade sanctions of any government for the Payment Facilitator Terms || cites: spt_sanctions, payfac_sanctions
+decides: operator: Shopify keeps a list of unsupported countries and regions: no accounts, no access to storefronts or accounts, no products originating from them and no orders shipping to them || cites: unsupported_intro, unsupported_list_cuba, unsupported_list_iran, unsupported_list_nk, unsupported_list_syria, unsupported_list_crimea, unsupported_no_account, unsupported_no_access, unsupported_no_products, unsupported_no_shipping
+decides: operator: a Shopify Payments account can be put on hold for sanctions related to the business's location || cites: hold_sanctions
+legal: merchant: the merchant may not use Shopify Payments if resident in a sanctioned country or region or if blocked or denied; Partners warrant they are not in an Unsupported Region and that their apps are classified EAR99 || cites: spt_sanctions, ppa_sanctions_warranty, ppa_ear99
+legal: partner: Payment Processors process personal data as independent controllers for sanctions and KYC/AML obligations || cites: spt_processor_sanctions_controller, spt_processor_independent_controller
+boundary: contract: Shopify Payments Terms, Payment Facilitator Terms and Partner Program Agreement; the Help Center list of unsupported countries and regions || cites: spt_sanctions, payfac_sanctions, ppa_unsupported_region, ppa_no_unsupported_transactions, inv:other:help-center-sections|Unsupported countries and regions
+reason: "local regulatory requirements, commercial partnerships, and/or other pertinent factors" || cites: unsupported_intro, ppa_unsupported_region
+
+concern: leg.payments_prohibited
+software: not shown
+decides: operator, per market: the prohibited list varies by region; categories come from law, Payment Network rules, Shopify and the requirements of processors' Financial Services Providers || cites: elig_varies_region, spt_prohibited_businesses, elig_financial_products, elig_legal_unsupported
+legal: partner: each Payment Processor in the Designated Country provides the prohibited and restricted categories, linked from the Payment Processor List || cites: spt_prohibited_lists_by_processor
+boundary: contract: the prohibited-businesses section of the Shopify Payments Terms for each country || cites: spt_prohibited_businesses, inv:other:help-center-sections|Shopify Payments eligibility
+reason: Shopify Payments involves an ecosystem of processors, card networks and banks, whose rules apply || cites: aup_payments_supply_chain, aup_partnerships
+
+concern: leg.aup
+software: core: restricted access for a store, with a limited admin and an appeal form || cites: term_restricted, term_storefront_unavailable, term_appeal
+decides: operator: Shopify may refuse or remove Materials, place a store in restricted access without prior communication, and suspend or terminate an account for any reason || cites: tos_refuse_materials, term_no_notice, tos_suspend_any_reason
+decides: operator: enforcement gives notice and self-remediation, acts at product level first and at account level as a last resort || cites: aup_enforcement_levels
+legal: merchant: the merchant is responsible for following the rules of the platform, its partners and the law || cites: aup_responsible, aup_illegal
+boundary: contract: the Acceptable Use Policy, incorporated into the Terms of Service; a report-a-merchant tool; an appeal form in the admin || cites: tos_incorporates, inv:legal-agreements|Report an issue with a merchant, term_appeal
+reason: most product eligibility and takedown disputes originate outside Shopify, from regulators and third-party rights holders || cites: aup_outside_disputes
+
+concern: leg.merchant_compliance
+software: not shown || note: The Help Center compliance pages give information only; no setting or API is described for these rules.
+decides: outside rules: the laws of the jurisdictions of the business and of its customers, including import and export rules and recalls || cites: comp_jurisdictions, comp_recalls
+legal: merchant: the merchant is the seller, responsible for its store, products and transactions; Shopify is not the merchant of record || cites: tos_not_marketplace, tos_merchant_store, tos_not_mor, comp_regulated
+boundary: contract: Terms of Service section 4 (Your Responsibilities); Help Center guides on consumer protection, alcohol, hemp and other regulated products || cites: tos_merchant_responsible_transactions, inv:other:help-center-sections|Consumer protection laws
+reason: not shown
+
+concern: leg.ip
+software: not shown
+decides: other: rights holders file copyright and trademark reports || cites: inv:legal-agreements|View copyright policy and report copyright infringement, inv:legal-agreements|View trademark policy and report trademark infringement
+legal: merchant: the merchant keeps ownership of its Materials and grants Shopify a licence to them || cites: tos_materials_license
+boundary: contract: Terms of Service sections 8 and 11; copyright and trademark report forms || cites: inv:legal-agreements|8. Intellectual Property and Your Materials, inv:legal-agreements|11. Intellectual Property Infringement
+reason: not shown
+
+concern: leg.eu_platform_rules
+software: not shown
+decides: outside rules: the EU Platform to Business Regulation (retained in the United Kingdom) and the Digital Services Act || cites: p2b_uk_retained, dsa_below_vlop
+legal: separate entity of the platform: Shopify International Limited is "Shopify" under the supplementary terms for EU merchants, governed by Irish law || cites: eu_sil_party, eu_irish_law
+boundary: contract: Supplementary Terms of Service for E.U. Merchants with an internal complaint-handling system; a P2B complaint form; published legal notices || cites: eu_complaints, p2b_categories, inv:legal-agreements|Submit a P2B complaint
+reason: not shown || note: The legal index links a Digital Service Act page at https://www.shopify.com/legal/dsa, which returned HTTP 404 on 2026-10-10 (see not-reached.tsv).
+
+concern: leg.financial_complaints
+software: core: a complaint form on shopify.com for financial products || cites: fincomplaint_intro
+decides: merchant: the merchant submits a complaint about a financial product || cites: fincomplaint_intro
+legal: not shown || note: The form does not name the entity that handles complaints. It lists "Capital - US Merchant Cash Advance (MCA)" and "Capital - Canada Merchant Cash Advance (MCA)", while the Help Center pages for the United States and Canada describe loans.
+boundary: other: a web form whose product list is Balance, Credit, Shop Pay Installments, Capital - US loan, Capital - US MCA, Capital - UK MCA, Capital - Canada MCA and Capital - Australia || cites: inv:legal-agreements|Submit a financial complaint, inv:legal-agreements|Balance, inv:legal-agreements|Capital - US loan, inv:legal-agreements|Capital - Canada Merchant Cash Advance (MCA)
+reason: not shown
+
+concern: leg.legal_requests
+software: core: a Legal Access Request form that requires a Shopify account || cites: gvt_form
+decides: operator: Shopify shares identifiable information only on valid and enforceable legal process, notifies those affected unless prohibited, and sends requests about customers to the merchant first || cites: gvt_valid_process, gvt_notify, gvt_customers_to_merchant, priv_legal_requests
+decides: other: Payment Processors may hold funds or data as required by legal process || cites: spt_legal_process
+legal: other: requests concern "information held by Shopify"; the guidelines do not name a Shopify entity || cites: gvt_form
+boundary: other: the Legal Access Request form and an annual transparency report || cites: gvt_form, dt_transparency
+reason: to balance Shopify's legal obligations, the requester's needs and the interests of merchants, customers and partners || cites: gvt_balance
+
+concern: data.roles
+software: not shown
+decides: outside rules: data protection laws such as GDPR and US state privacy laws || cites: inv:other:help-center-sections|General Data Protection Regulation (GDPR), inv:other:help-center-sections|US state privacy laws
+legal: merchant: the merchant is the Data Controller of its customers' personal data and Shopify the Data Processor || cites: dpa_roles, dpa_contracting_entity
+legal: platform company: Shopify acts as controller for Enhanced Services (Shopify Network Intelligence) and for its consumer services such as Shop and Shop Pay || cites: dpa_enhanced_controller, help_consumer_services_controller, tos_enhanced_services_data
+boundary: contract: the Data Processing Addendum, incorporated into the Terms of Service, between the merchant and the Shopify Contracting Entity || cites: tos_privacy_customer_data, dpa_contracting_entity, inv:legal-agreements|View data processing addendum
+reason: not shown
+
+concern: data.location
+software: core: storage across multiple Google Cloud Platform regions that Shopify rebalances; new merchants in Europe have store, order and customer data stored at rest in Europe by default || cites: dt_gcp_regions, dt_europe_default, subp_gcp, subp_gcp_service, subp_all_platform_data
+software: core: shops are grouped in pods on isolated datastores, each pod with an active and a recovery data center (engineering post, 2018) || cites: eng_pods_isolated, eng_pods_dc_pair
+decides: operator: Shopify moves data geographically to operate its services; data stored in Europe is still processed through international transfers || cites: dt_move_data, dt_europe_transfers
+decides: operator, per market: European merchants get European storage by default || cites: dt_europe_default
+legal: separate entity of the platform: Shopify International Limited (Ireland) receives the data of people in the EEA, the UK and Switzerland and is the GDPR main establishment || cites: priv_eea_ireland_receiver, subp_eea_sil, dt_sil_main_establishment
+legal: platform company: transfers to Shopify Inc. in Canada rely on the EU adequacy decision for Canada; Shopify describes itself as a Canadian company that may send data to the United States || cites: dt_adequacy_canada, priv_canadian_company, priv_eea_ireland
+legal: partner: hosting subprocessors such as Google Cloud Canada Corporation and Amazon Web Services process all platform data || cites: subp_gcp, subp_aws, subp_all_platform_data
+boundary: contract: the Data Processing Addendum (data may be processed wherever Shopify, its affiliates or providers are located), Standard Contractual Clauses, and Binding Corporate Rules that took effect on July 8, 2026 || cites: dpa_global_transfers, dpa_sil_transfers, dt_sccs, bcr_effective, priv_bcr
+reason: a reliable and scalable infrastructure that can handle unpredictable volumes || cites: dt_gcp_regions
+reason: isolating each shard so that a failure cannot spread into a platform outage (engineering post, 2018) || cites: eng_pods_failure
+
+concern: data.subprocessors
+software: outside platform: third-party subprocessors for cloud hosting, content delivery, load balancing, logging, data analysis and email, among others || cites: priv_subprocessors_hosting, dt_subprocessor_scope, subp_cloudflare, subp_aws
+decides: operator: Shopify selects subprocessors and limits them to technical services; the merchant can object to a new subprocessor and terminate the affected services within 30 days || cites: dt_subprocessor_scope, dpa_subprocessor_objection
+legal: partner: third-party subprocessors under data processing agreements, for whose acts Shopify is fully liable || cites: dpa_subprocessor_liability, dt_sccs
+legal: separate entities of the platform: affiliated subprocessors include Shopify Inc., Shopify Capital Inc. and Shopify Payments (USA) Inc. || cites: subp_affiliates_shopify_inc, subp_capital_inc, subp_payments_usa
+boundary: contract: Data Processing Addendum (subprocessors); other: a notification sign-up for new subprocessors || cites: dpa_subprocessor_objection, subp_notifications
+reason: not shown
+
+concern: data.retention
+software: core: a shop/redact webhook tells apps to delete shop data || cites: inv:webhook-topics|shop/redact
+decides: operator: the privacy policy says store information is kept for two years after a store closes or is terminated before deletion begins; the 2022 EU supplementary terms say personal information is deleted within 90 days of termination || cites: priv_retention_two_years, eu_delete_90_days
+decides: merchant: where Shopify processes data for the merchant, the merchant decides retention || cites: priv_merchant_decides_retention
+legal: app developer: developers delete merchant data within 30 days after an app is uninstalled || cites: api_delete_30_days
+boundary: event: shop/redact compliance webhook; contract: privacy policy, EU terms and API terms || cites: inv:webhook-topics|shop/redact, api_delete_30_days
+reason: not shown
+
+concern: data.pci
+software: core: Shopify stores, processes or transmits card Account Data for the merchant, and Shop Pay details are kept on Shopify's PCI compliant servers || cites: tos_pci, spt_pci, shoppay_storage
+decides: outside rules: PCI DSS || cites: tos_pci
+legal: other: Shopify "acknowledges that it is responsible for securing such Account Data" || cites: tos_pci, spt_pci
+legal: partner: Stripe provides the P2PE service for POS equipment || cites: spt_stripe_p2pe
+boundary: contract: Terms of Service section 12 and the data security section of the Shopify Payments Terms || cites: tos_pci, spt_pci, inv:legal-agreements|12. Privacy and Data Protection
+reason: not shown
+
+concern: priv.customer_privacy
+software: core: Customer privacy settings, set per country and region, and the Customer Privacy API || cites: inv:settings|Customer privacy, cps_per_region, inv:api-resources|Customer Privacy API
+decides: merchant: the merchant sets privacy settings for each country and region where it sells || cites: cps_per_region
+decides: outside rules: privacy laws, which vary by region || cites: cps_per_region
+legal: merchant: the merchant is responsible for its own compliance, including consents for pixels || cites: dt_merchant_gdpr, tos_pixel_consents
+boundary: setting: Settings > Customer privacy; API: privacy settings scopes and the Customer Privacy API; apps must integrate with the Consent Tracking API || cites: inv:access-scopes|read_privacy_settings, inv:api-resources|Customer Privacy API, api_consent_api
+reason: not shown
+
+concern: priv.data_requests
+software: core: Request customer data and Erase personal data in the admin; Shopify processes erasure and passes requests to apps || cites: cdr_processed_for_you, inv:other:staff-permissions|ERASE_CUSTOMER_DATA, inv:webhook-topics|customers/redact
+decides: merchant: the merchant decides how to respond to access and erasure requests under the laws that apply to it || cites: cdr_merchant_responsible
+legal: merchant: the merchant is responsible, including contacting other companies it shared data with || cites: cdr_merchant_responsible, cdr_contact_others
+legal: other: Shopify erases personal data such as name and address in response to the merchant's request || cites: cdr_shopify_erases
+boundary: event: customers/data_request and customers/redact webhooks; API: customer data erasure scopes || cites: inv:webhook-topics|customers/data_request, inv:access-scopes|write_customer_data_erasure
+reason: not shown

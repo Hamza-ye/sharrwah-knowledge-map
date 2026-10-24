@@ -1,0 +1,18 @@
+{
+ "n": 161,
+ "url": "https://help.zid.sa/subscription/",
+ "dir": "items/161-help.zid.sa",
+ "fetched_at": "2026-10-12T04:53:33Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/subscription/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 25325,
+ "cited_in": [
+  "ZD-S-0671"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "2c430dcc14dbae2e7eb81d56a95ad5daeb1b2d61e94a72c634161b858f365776",
+ "raw_ext": "html"
+}

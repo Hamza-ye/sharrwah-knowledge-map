@@ -1,0 +1,348 @@
+Legal
+Stripe Services Agreement
+Overview & FAQs
+General Terms
+Service Terms
+User Bank Account Debit Authorizations
+Prohibited & Restricted Businesses
+e-Signature Disclosure
+Financial Provider Terms
+Acquirer Disclosure & Acquirer Terms
+SPC Terms (US)
+SPC Licenses (US)
+Issuing Bank Terms (US)
+Payment Method Terms
+Stablecoin Partner Terms
+Checking Account Terms
+Data Processing Agreement
+Translations
+Regional Regulatory Disclosures & Policies
+Stripe Unacceptable Risk Policy
+User Notice—API Key Security
+Combined Financial Services Guide and Product Disclosure Statement (AU)
+Target Market Legal Determinations (AU)
+Required Regulatory Disclosures (Canada)
+Corporate Social Responsibility (CSR) Policy (IN)
+US Public Sector Addendum
+Network International Financial Services Acquirer Terms
+
+Network International Financial Services Terms
+
+Last updated: November 18, 2025
+
+These Network International Financial Services Terms ("Network International Terms") supplement the Stripe Services Agreement (including the General Terms, the Stripe Financial Services Terms, and the Stripe Payments Terms) (together, the “Agreement”) and are additional terms applicable to the Stripe Payment Services for Visa and Mastercard products for which Network International, LLC ("Network International"), is a Payment Method Acquirer ("VM Payment Processing Services"). In these Network International Terms, Visa and Mastercard may be referred to individually as a "Network" and collectively as the "Networks." Any terms used but not defined in these Network International Terms will have the meaning provided in the Agreement.
+
+These Network International Terms constitute a legal tripartite agreement among User, Stripe, and Network International. The legal agreement is formed by Stripe and Network International's offer of these terms to User, User’s acceptance of these terms, and Stripe and Network International's subsequent provision of the VM Payment Processing Services to User. User understands that Stripe or Network International may enforce any provisions of these Network International Terms or the Agreement that relate to User’s use of the VM Payment Processing Services. Stripe or Network International may also terminate these Network International Terms at any time at its individual sole discretion without the requirement of obtaining a court order in this regard, which may limit or terminate User’s ability to use the VM Payment Processing Services. Further, either Network may, at any time for any reason, terminate these Network International Terms with respect to the VM Payment Processing Services for its products.
+
+User must accept all of the terms and conditions of these Network International Terms to use the VM Payment Processing Services. If User does not accept them, User may not use the VM Payment Processing Services.
+
+1. Purpose of these Network International Terms
+
+When User processes Visa or Mastercard Transactions through a particular Payment Method Acquirer, applicable Card Network Rules require that User enters into a direct contractual relationship with the Payment Method Acquirer. These Network International Terms constitute User’s direct contractual relationship with Network International, which is a member of the Networks, and as provided in the Agreement, a Payment Method Acquirer for Visa and Mastercard Transactions. However, by using the VM Payment Processing Services User is not establishing a depository or other account with Network International.
+
+Network International is not responsible for the provision of any Services or User’s use of any Services for User’s business. Network International is also not responsible for providing customer service to User to resolve any issues User may have related to User’s use of the VM Payment Processing Services; however, as described in Section 13 of these Network International Terms, User may contact Network International in the event that User is unable to resolve any complaints directly with Stripe. User is solely responsible for providing support to User’s Customers for all issues related to User’s products and services.
+
+2. Compliance with Card Network Rules
+
+Where User uses the VM Payment Processing Services to accept charges from payment cards, User will comply with the Card Network Rules and limitations on use identified in the Agreement, including the Card Network Rules applicable to acceptance of Visa and Mastercard branded payment cards. These include guidelines, monitoring programs, and activity reporting (including excessive credits, Disputes, or deposits). Under the Card Network Rules, certain activity may subject User to Disputes, fees, fines, settlement delays, withholdings, audits of User’s processing activity, or termination of these Network International Terms. Without limiting the foregoing, User specifically agrees to:
+
+a. Only submit Transactions authorized by the cardholder;
+
+b. Only accept payment for the sale of products or services, and receipt of bona fide donations, and not for any Prohibited or Restricted Business;
+
+c. Submit a Transaction for the full amount owed by the Customer for the Transaction except where User and the Customer agree on a partial shipment (such as receiving a portion of an order), or where the Transaction qualifies for delayed delivery or special order deposits (such as paying for a deposit on a custom-built product);
+
+d. Not establish minimum or maximum amounts (except as permitted by the Card Network Rules), or condition charges for use of payment cards, and not discourage the use of one payment card brand over another;
+
+e. Not impose surcharges or taxes (except where permitted by Law) and, where so done, User will only collect such amounts as part of the submitted Charge;
+
+f. Only use Networks' logos or marks in a manner permitted by the Card Network Rules;
+
+g. Prohibit use of payment cards for disbursement of cash (except as permitted by the Card Network Rules and by Network International);
+
+h. Comply with the security obligations identified in the Agreement, including compliance with the PCI Standards, as applicable, only use cardholder data as permitted, and certify such compliance upon request, and not permit or promote fraudulent use of payment cards or cardholder data;
+
+i. Audits and inspection of User and User’s charge and Transaction activity by the Networks and Network International, which may include either or both of a desktop review and one or more on-site visits;
+
+j. Make clear to Customers that they are transacting with User prior to, during, and after the Transaction, including providing clear statement descriptors;
+
+k. Use all reasonable methods to resolve disputes with User’s Customers, including those resulting in a Dispute, and not attempt to recharge a Customer for the Transaction unless authorized by the Customer; and
+
+l. Provide clear refund and exchange language that is consistent with Laws and the Card Network Rules.
+
+3. Authorization for Handling of Funds
+
+Network International receives funds from the Networks for User’s Charges ("Settlement Funds"), and Network International is responsible for disbursement of User’s Settlement Funds in accordance with these Network International Terms and User’s instructions or instructions issued by User’s agent on User’s behalf. User agrees to designate and authorize Stripe as User’s agent to initiate holds, receipts, and disbursements of Settlement Funds, and to instruct Network International as to how, when, and to whom disbursements of Settlement Funds should be made. User agrees that Network International's obligations to settle funds to User are satisfied upon transfer of the Settlement Funds to User (or to any applicable recipient that User has instructed Stripe to make a disbursement to on User’s behalf) per User’s explicit request and authorization through Stripe as User’s agent. Network International may periodically make information available to User through Stripe regarding anticipated funds settlement from the Networks. This settlement information does not constitute or give rise to a deposit or other obligation owed by Stripe or Network International to User. Any settlement information communicated to User is for reporting and informational purposes only.
+
+Settlement Funds will be held in pooled merchant funds accounts pending disbursement of the funds to User (or to any applicable recipient that User have instructed Stripe to make a disbursement to on User’s behalf) in accordance with the terms of the Agreement, including these Network International Terms. User agrees that User is not entitled to any interest or other compensation associated with the Settlement Funds held by Network International, has no right to directly instruct Network International to distribute Settlement Funds, and may not assign any interest in any Settlement Funds held at or by Network International. User agrees that User is not entitled to access, and has no ownership or other rights in, the Settlement Funds prior to such funds being credited to User’s Payout Account (or to the account of any applicable recipient that User has instructed Stripe to make a distribution to on User’s behalf).
+
+Any authorizations set forth in these Network International Terms will remain in full force and effect until User’s Stripe Account is closed or terminated.
+
+4. Sharing of Data
+
+a. User authorizes Stripe to provide any data, including Protected Data, to Network International, the Networks, to credit reference agencies, fraud and AML screening agencies and other relevant governmental bodies to (i) provide the VM Payment Processing Services described in these Network International Terms to User, (ii) comply with legal and regulatory obligations, and (iii) perform underwriting and risk review, including verification that User is legally permitted to transact and receive funds. Where required to comply with legal, payment network, or regulatory obligations, Network International may provide any data to law enforcement, payment networks, or regulators (as the case may be).
+
+b. User agrees that User will not (i) use the Payment Method Account Details for any purpose other than to support the VM Payment Processing Services, (ii) use the Payment Method Account Details for any purpose that User know or should know to be fraudulent or in violation of any Card Network Rules, (iii) sell, purchase, provide or exchange in any manner or disclose Payment Method Account Details to anyone other than Network International or the Networks (as applicable), or to a government authority in response to a valid government request. Further, User agrees that User will at all times comply with the PCI Standards with respect to Payment Method Account Details and will indemnify and hold Network International harmless for any violation or breach of the PCI Standards, including, any fines, fees or assessments by any Networks imposed upon User, Network International, or Stripe.
+
+5. Right to Amend; Term and Termination
+
+a. Network International has the right to change or add to these Network International Terms at any time. Stripe will provide User with notice of any changes in accordance with the terms of the Agreement. User’s use of the VM Payment Processing Services, API, or data after a change has taken effect constitutes User’s acceptance of the terms of the modified Network International Terms.
+
+b. These Network International Terms are effective contemporaneously with the Agreement and will continue so long as User use the VM Payment Processing Services. These Network International Terms will terminate automatically upon termination of the Agreement, except for those terms which are intended to survive termination. In addition, the VM Payment Processing Services and/or these Network International Terms may be terminated at any time by Network International upon notice to User and without the requirement of obtaining a Court order in this regard.
+
+6. Representations and Warranties
+
+In addition to the representations and warranties made in the Agreement, User represents and warrants to Network International and Stripe that User (a) are legally able to enter into these Network International Terms, (b) will not use the VM Payment Processing Services, directly or indirectly, for any fraudulent or illegal undertaking; and (c) will only use the VM Payment Processing Services in a manner consistent with the Agreement, including these Network International Terms, the Documentation, and the Card Network Rules.
+
+7. Indemnification
+
+Notwithstanding the foregoing or anything to the contrary in the Agreement, User agrees to defend, indemnify, and hold harmless Network International, and their respective employees, directors, agents, and affiliates (collectively, the "Network International Entities") from and against any claim, suit, demand, loss, liability, damage, action, or proceeding arising out of or relating to (a) User’s breach of any provision of the Agreement or these Network International Terms; (b) User’s use of the VM Payment Processing Services; (c) User’s obligations to pay fees or fines to Stripe, User’s Customers, Payment Method Providers, or third parties; (d) User’s negligence or willful misconduct or the negligence or willful misconduct of User’s employees, contractors, or agents; and (e) all third-party indemnity obligations the Network International Entities incur as a direct or indirect result of User’s acts or omissions (including indemnification of any Network, card issuer, or intermediary bank).
+
+8. Disclaimer of Warranties
+
+ANY SERVICES DESCRIBED IN THESE NETWORK INTERNATIONAL TERMS ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS, WITHOUT ANY WARRANTIES, EITHER EXPRESS, IMPLIED, OR STATUTORY, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OF TITLE, QUALITY, SUITABILTY, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. ALL DISCLAIMERS OF WARRANTIES PROVIDED IN THE AGREEMENT WILL APPLY EQUALLY TO THE NETWORK INTERNATIONAL ENTITIES AS THEY DO TO STRIPE. THE NETWORK INTERNATIONAL ENTITIES (A) ARE NOT RESPONSIBLE FOR USER’S OR STRIPE'S FAILURE TO PERFORM OBLIGATIONS UNDER THE AGREEMENT AND (B) DO NOT WARRANT, ENDORSE, GUARANTEE, OR ASSUME RESPONSIBILITY FOR ANY PRODUCT OR SERVICE ADVERTISED OR OFFERED BY USER, STRIPE, OR ANY THIRD PARTY.
+
+9. Limitations on Liability
+
+In no event will the Network International Entities be liable for any lost profits, lost revenue, lost business opportunity, loss of data, or any indirect, punitive, incidental, special, consequential, or exemplary damages arising out of, in connection with, or relating to the Agreement, including these Network International Terms, or the Services described in either, including the use of, inability to use, or unavailability of Services provided by Stripe. Under no circumstances will the Network International Entities be responsible for any damage, loss or injury resulting from hacking, tampering, or other unauthorized access or use of the Services or User’s Stripe Account or the data contained therein, or User’s failure to use or implement security, controls, or processes that are appropriate for User’s business.
+
+The Network International Entities assume no liability or responsibility for any (a) personal injury or property damage, of any nature whatsoever, resulting from User’s access to or use of the VM Payment Processing Services; (b) any misuse of the VM Payment Processing Services or data; (c) any interruption or cessation of transmission to or from the VM Payment Processing Services; (d) any software bugs, viruses, or other harmful code that may be transmitted to or through the VM Payment Processing Services; (e) any errors, inaccuracies, or omissions in the VM Payment Processing Services or data, or any loss or damage resulting therefrom, regardless of the manner of transmission; or (f) defamatory, offensive, or illegal conduct of any third party.
+
+The Network International Entities' cumulative liability to User is limited to direct damages and in all events will not exceed in the aggregate the amount of fees or compensation actually received by Network International from Stripe for the Transactions processed for User through the VM Payment Processing Services during the two (2) month period immediately preceding the event that gives rise to the claim for liability. The limitation of liability in the preceding sentence will not apply to claims by User against any Network International Entities for direct damages for failure to disburse Settlement Funds in accordance with Section 3 of these Network International Terms, in which case the Network International Entities' liability for such direct claim by User is limited to the amount of any Settlement Funds that Network International failed to disburse in accordance with Section 3 of these Network International Terms. This limitation of liability section applies regardless of the legal theory that User’s claim is based, including contract, tort (including negligence), strict liability, or any other basis. The limitations apply even if User, Stripe, or Network International has been advised of the possibility of such damage.
+
+The foregoing will apply to the fullest extent permitted by Law in the applicable jurisdiction.
+
+10. Restrictions on Usage
+
+User may not use the VM Payment Processing Services from, or on behalf of persons or entities (a) in a country embargoed by any member state of the European Economic Area, the United Arab Emirates or the United States, or (b) blocked or denied by any member state of the European Economic Area, the United Arab Emirates or the United States. User further acknowledges and agrees that User will not use User’s Stripe Account and/or the VM Payment Processing Services for illegal Transactions or in connection with illegal activity of any kind. Unless otherwise explicitly stated, the VM Payment Processing Services are solely for use by individuals, companies, or other entities located (as defined under Law and Card Network Rules) in the United Arab Emirates.
+
+11. Dispute Resolution
+
+All disputes between User and Network International under these Network International Terms are subject to the laws of the Emirate of Dubai and Federal Laws of UAE.
+
+12. Waiver
+
+The failure of Network International to assert any of its rights under these Network International Terms will not be deemed to constitute a waiver by Network International of its rights to enforce each and every provision of these Network International Terms.
+
+13. Network Compliance and Disclosure
+
+Stripe is registered as an Independent Sales Organization by Network International. User may contact Network International by writing to PO Box 4487, 1st Floor ENBD Building, Al Barsha 2, Dubai, United Arab Emirates.
+
+a. Important Network International Disclosures: Network International discloses that (i) it is the only entity approved to extend acceptance of Visa and Mastercard products directly to User under these Network International Terms; (ii) it must be a principal (signer) to these Network International Terms; (iii) it is responsible for educating User on pertinent Card Network Rules with which User must comply, but this information may be provided to User by Stripe; (iv) subject to Section 3 of these Network International Terms, with respect to Transactions processed through the VM Payment Processing Services, it is responsible for and must disburse Settlement Funds at User’s instruction or instructions from User’s agent; and (v) with respect to Transactions processed through the VM Payment Processing Services, it is responsible for all funds held in reserve with Network International that are derived from User’s Settlement Funds.
+
+b. User’s Responsibilities: User agrees that, at all times throughout the term of these Network International Terms, User will (i) comply with data security and storage obligations, including the PCI Standards, in using and maintaining Payment Method Account Details; (ii) maintain fraud and Dispute rates acceptable under the Card Network Rules; (iii) review and understand the terms of these Network International Terms; and (iv) comply with Card Network Rules.
+
+United Arab Emirates (English)
+Australia
+English
+Austria
+Deutsch
+English
+Belgium
+Nederlands
+Français
+Deutsch
+English
+Brazil
+Português
+English
+Bulgaria
+English
+Canada
+English
+Français
+Croatia
+English
+Italiano
+Cyprus
+English
+Czech Republic
+English
+Denmark
+English
+Estonia
+English
+Finland
+English
+Svenska
+France
+Français
+English
+Germany
+Deutsch
+English
+Gibraltar
+English
+Greece
+English
+Hong Kong SAR, China
+English
+简体中文
+Hungary
+English
+India
+English
+Ireland
+English
+Italy
+Italiano
+English
+Japan
+日本語
+English
+Latvia
+English
+Liechtenstein
+Deutsch
+English
+Lithuania
+English
+Luxembourg
+Français
+Deutsch
+English
+Mainland China
+简体中文
+English
+Malaysia
+English
+简体中文
+Malta
+English
+Mexico
+Español
+English
+Netherlands
+Nederlands
+English
+New Zealand
+English
+Norway
+English
+Poland
+English
+Portugal
+Português
+English
+Romania
+English
+Singapore
+English
+简体中文
+Slovakia
+English
+Slovenia
+English
+Italiano
+Spain
+Español
+English
+Sweden
+Svenska
+English
+Switzerland
+Deutsch
+Français
+Italiano
+English
+Thailand
+ไทย
+English
+United Arab Emirates
+English
+United Kingdom
+English
+United States
+English
+Español
+简体中文
+Products & pricing
+Pricing
+Atlas
+Authorization Boost
+Billing
+Capital
+Checkout
+Climate
+Connect
+Crypto
+Data Pipeline
+Elements
+Financial Connections
+Identity
+Invoicing
+Issuing
+Link
+Managed Payments
+Payment links
+Payments
+Payouts
+Radar
+Revenue Recognition
+Stripe Sigma
+Tax
+Terminal
+Treasury
+Solutions
+Enterprises
+Startups
+Agentic commerce
+Crypto
+Ecommerce
+Embedded finance
+Finance automation
+Global businesses
+In-app payments
+Marketplaces
+Money management
+Platforms
+SaaS
+AI companies
+Creator economy
+Fintech
+Gaming
+Hospitality, travel, and leisure
+Insurance
+Media and entertainment
+Nonprofits
+Professional services
+Public sector
+Retail
+Integrations & custom solutions
+Stripe App Marketplace
+Stripe Partner ecosystem
+Professional services
+Developers
+Documentation
+API reference
+API status
+API changelog
+Libraries and SDKs
+Stripe Projects
+Developer blog
+Resources
+Guides
+Customer stories
+Blog
+Community
+Sessions annual conference
+Privacy & terms
+Prohibited & restricted businesses
+Licenses
+Sitemap
+Cookie settings
+More resources
+Company
+About
+Product roadmap
+Careers
+Newsroom
+Stripe Press
+Contact sales
+Support
+Get support
+Managed support plans
+Sign in 
+© 2026 Stripe, LLC
+You’re viewing our website for the United Arab Emirates, but it looks like you’re in the United States.
+Switch to the United States site 

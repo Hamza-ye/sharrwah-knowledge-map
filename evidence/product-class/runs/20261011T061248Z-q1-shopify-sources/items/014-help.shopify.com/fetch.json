@@ -1,0 +1,18 @@
+{
+ "n": 14,
+ "url": "https://help.shopify.com/en/manual/finance/shopify-capital/australia.md",
+ "dir": "items/014-help.shopify.com",
+ "fetched_at": "2026-10-11T06:12:57Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/finance/shopify-capital/australia.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 3937,
+ "cited_in": [
+  "SH-S-0489"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "75847edc03f6569aaf15fede365f7e5b3c9a9ba882554a122e41f08f6c7dd892",
+ "raw_ext": "txt"
+}

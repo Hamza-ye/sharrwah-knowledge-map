@@ -1,0 +1,13 @@
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
+const { chromium } = require('/opt/node22/lib/node_modules/playwright');
+const [url] = process.argv.slice(2);
+const browser = await chromium.launch({ args: ['--disable-http2'] });
+const ctx = await browser.newContext({ extraHTTPHeaders: { 'Accept-Language': 'en,ar;q=0.8' } });
+const page = await ctx.newPage();
+let bad = 0; page.on('response', r => { if (r.status() >= 400) bad++; });
+await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
+await page.waitForTimeout(15000);
+const t = await page.evaluate(() => document.body.innerText);
+console.log('http>=400:', bad, 'innerText chars', t.length); console.log(t.slice(0, 600));
+await browser.close();

@@ -1,0 +1,118 @@
+# Family H: tax and duties; Family I: markets and currency
+concern: tax.calculation
+software: core: tax calculation in Settings > Taxes and duties, with default rates Shopify maintains; the tax engine is a component inside Shopify's codebase (engineering post, 2019) || cites: inv:settings|Taxes and duties, tax_default_rates, eng_tax_component
+decides: operator, per market: the services a store can use depend on the business location: Shopify Tax for the United States, the European Union, the United Kingdom and Canada; Basic Tax for Norway, Switzerland, Australia, New Zealand and Singapore; Manual Tax elsewhere || cites: tax_by_location, tax_us_shopify_tax, tax_basic_five, tax_manual_rest, stax_regions
+decides: platform at build: Shopify Tax calculates only for some destinations and order types, and falls back to registration-based calculation when it cannot calculate || cites: stax_destination, stax_fallback_us, stax_no_api_orders
+decides: merchant: the merchant checks default rates and can override them || cites: tax_default_rates
+legal: merchant: the merchant is solely responsible for determining, collecting, reporting and remitting taxes, and for product tax classification; Shopify is not responsible for the merchant's tax obligations || cites: tos_merchant_taxes, tos_no_tax_liability, staxt_merchant_responsible, staxt_classification
+legal: platform company: Shopify Tax is provided by Shopify Inc. and its Affiliates under the Shopify Tax Terms, with no guarantee of availability or uptime || cites: staxt_parties, staxt_no_uptime, tos_shopify_tax_terms
+boundary: setting: Settings > Taxes and duties; API: read_taxes and write_taxes scopes; contract: Shopify Tax Terms of Service || cites: inv:settings|Taxes and duties, inv:access-scopes|read_taxes, staxt_all_regions
+boundary: other: Shopify Tax fees are charged on the merchant's Shopify invoice once sales pass a threshold || cites: stax_free_threshold, stax_fee_billing, staxt_fees_invoice, inv:other:billing-charge-categories|Tax transaction fees
+reason: Shopify Tax is described as giving the highest level of sales tax compliance with the least upkeep || cites: stax_regions
+
+concern: tax.registrations
+software: core: tax registrations and liability tracking in Settings > Taxes and duties || cites: inv:settings|Taxes and duties, inv:plan-features|Tax liability tracking
+decides: merchant: the merchant registers with its tax authority and enters registration numbers (Basic Tax requires one) || cites: tax_register, basic_tax_regnum
+decides: operator: under Managed Markets, Global-e provides the tax registrations in destination countries || cites: mm_tax_registration
+legal: merchant: the merchant warrants that registration numbers are accurate and current || cites: staxt_merchant_responsible, tos_merchant_taxes
+boundary: setting: Settings > Taxes and duties, behind the taxes-settings permission || cites: inv:settings|Taxes and duties, inv:other:staff-permissions|MANAGE_TAXES_SETTINGS
+reason: not shown
+
+concern: tax.vat_exemptions
+software: core: VAT validation, exemptions and invoicing; business customers enter a VAT number at checkout to claim the reverse charge || cites: inv:plan-features|VAT validation%2C exemptions%2C and invoicing, vat_reverse_charge
+decides: operator, per market: available only to stores that use Shopify Tax for the European Union or the United Kingdom || cites: vat_only_shopify_tax
+decides: buyer: the business customer enters its VAT number to claim the exemption || cites: vat_reverse_charge
+decides: merchant: the merchant shows or hides the Company VAT number field in checkout || cites: vat_field_customers
+legal: buyer: when the exemption applies, the customer is responsible for reporting and paying the VAT || cites: vat_customer_responsible
+boundary: setting: the Company VAT number field in checkout settings || cites: vat_field_customers
+reason: not shown
+
+concern: tax.third_party
+software: extension point: third-party tax apps and the tax calculation extension, which replace Shopify's tax service for a store || cites: taxapp_third_party, taxapp_replaces, inv:extension-points|Tax calculation (tax_calculation), inv:other:app-store-categories|Tax apps
+software: outside platform: the tax provider's own service, which needs its own account || cites: taxapp_account
+decides: merchant: the merchant chooses a tax app or Shopify's service, not both; available in all countries and regions || cites: taxapp_replaces, tax_apps_all
+decides: operator: access to Shopify's tax platform for third-party tax apps || cites: taxapp_platform_access
+decides: platform at build: if a tax app is temporarily unavailable, the tax settings in the Shopify admin are used as backup tax collection || cites: taxapp_backup
+legal: app developer: the tax app provider, under its own account terms; B2B tax exemption data is transmitted to it || cites: taxapp_account, taxapp_b2b_data
+boundary: event: tax_services/create and tax_services/update webhooks; API: read_taxes and write_taxes; other: Avalara add-on fees appear as a Shopify billing charge category || cites: inv:webhook-topics|tax_services/create, inv:access-scopes|write_taxes, inv:other:billing-charge-categories|Avalara add-on fees
+reason: not shown
+
+concern: tax.filing
+software: core: automated filing integrated with the admin, using store data; closed to new enrollment and ending for sales after December 31, 2026 || cites: af_files_returns, af_closed, af_ending
+decides: operator, per market: only US stores that use Shopify Tax, and only for sales where the merchant is merchant of record || cites: af_us_only, af_mor_only
+decides: merchant: after automated filing ends, the merchant files directly or uses a third-party filing service || cites: af_after_options
+legal: partner: Sovos Compliance, LLC is the Tax Service Provider that generates and submits returns, under its own terms with the merchant; Shopify delivers information and instructions on the merchant's behalf || cites: staxf_sovos, staxf_sovos_terms, staxf_provider_files, staxf_agent
+legal: merchant: the merchant stays solely responsible for submitting returns and remitting taxes || cites: staxf_merchant_responsible, tos_no_tax_liability
+boundary: contract: Shopify Tax Automated Filing Terms of Service and the Sovos terms; other: Automated filing appears as a Shopify billing charge category || cites: tos_shopify_tax_filing_terms, staxf_access_provider, inv:other:billing-charge-categories|Automated filing
+reason: not shown
+
+concern: tax.duties
+software: core: estimate and collect duties and import taxes at checkout (a plan feature that the admin comparison marks as requiring Shopify Payments) || cites: duties_estimate, inv:plan-features|Estimate and collect duties and taxes|Admin plan comparison
+decides: outside rules: customs authorities set the amount from classification, origin and destination rules || cites: duties_customs_set
+decides: merchant: the merchant chooses whether to collect an estimate at checkout || cites: duties_estimate
+legal: merchant: duties and customs charges are the merchant's responsibility, including under Shopify Shipping || cites: tos_merchant_taxes, ship_customs_merchant
+legal: partner: under Managed Markets, Global-e remits duties and taxes and covers differences from the amounts shown at checkout || cites: mm_tax_registration, mm_guaranteed_duties
+boundary: setting: Settings > Taxes and duties and market duty settings; other: duty and import tax transaction fees billed by Shopify || cites: inv:settings|Taxes and duties, inv:other:billing-charge-categories|Duties and import tax transaction fees
+reason: collecting an estimate helps customers avoid unexpected charges on delivery || cites: duties_estimate
+
+concern: mkt.markets
+software: core: Markets in the admin and the Shopify Markets API, with market webhooks || cites: mkt_definition, inv:admin-navigation|Markets|Main navigation, inv:api-resources|Shopify Markets
+decides: merchant: the merchant defines markets by location, customer group, retail location or channel, and customizes currency, product availability, theme content, domains, languages and taxes || cites: mkt_definition, mkt_customizations
+legal: not shown || note: Managed Markets changes who is merchant of record (see Managed Markets); Markets itself leaves the merchant as merchant of record according to the Managed Markets overview.
+boundary: API: read_markets and write_markets scopes; event: markets/create, markets/update, markets/delete; setting: Settings > Markets || cites: inv:access-scopes|read_markets, inv:webhook-topics|markets/create, inv:settings|Markets
+reason: not shown || note: The international sales tools page also offers selling with multiple stores for teams that manage local markets independently (https://help.shopify.com/en/manual/international.md).
+
+concern: mkt.store_currency
+software: core: the store currency is used throughout the admin for pricing and reports || cites: cur_store_currency
+decides: merchant: the merchant chooses the store currency before the first sale || cites: setup_currency_first_sale, cur_store_currency
+decides: operator: changing it after the first sale needs Shopify Support || cites: setup_currency_support
+legal: not shown
+boundary: setting: store currency in store settings || cites: cur_store_currency, inv:other:help-center-sections|Changing your store currency
+reason: not shown
+
+concern: mkt.local_currency
+software: core: prices shown and paid in local currencies, converted automatically by default || cites: lp_auto_convert, inv:plan-features|Show prices in local currencies*|Public pricing
+decides: operator: only Shopify Payments or Adyen as primary gateway can process a customer's local currency; with other providers the customer is charged in the store's currency || cites: ipay_sp_adyen_only, ipay_other_store_currency, lp_sp_only, mc_requires_sp
+decides: merchant: the merchant sets each market's currency and can set manual rates or fixed prices || cites: ipay_market_currency, lp_auto_convert
+legal: not shown
+boundary: setting: market currency in Markets || cites: ipay_market_currency, inv:other:help-center-sections|Setting up currencies for markets
+reason: not shown
+
+concern: mkt.fx
+software: core: conversion at the time of each transaction (capture, refund, chargeback); store, local and payout currencies; automatic rates by default || cites: fx_time_of_transaction, fx_three_currencies, lp_auto_convert
+decides: operator, per market: the conversion fee depends on the store's primary country (1.5% for the United States, 2% for France and all other Shopify Payments regions); since April 6, 2026 it is calculated on the gross order amount || cites: fx_fee_by_country, fx_fee_table_other, cur_conversion_change, cur_conversion_gross
+decides: merchant: manual exchange rates per market with Managed Markets || cites: fx_manual_managed_markets
+legal: other: "The fee that Shopify charges (in your payout currency) to convert currencies when you capture a payment"; the rate is described as a mid-market rate without markup || cites: fx_fee_shopify_charges, fx_mid_market
+legal: merchant: the merchant may gain or lose money from rate movements between transaction steps || cites: fx_risk
+boundary: other: fees are charged with the Shopify Payments processing fee and set in the merchant's Shopify Payments terms || cites: fx_fees_sp, fees_terms_admin
+reason: not shown || note: The sources state the rate is mid-market but do not name the source of exchange rates or the party that performs the exchange.
+
+concern: mkt.managed_markets
+software: separate service or product line: Managed Markets features "powered by Global-e", run from the Shopify admin || cites: mm_globale_powered
+decides: operator, per market and plan: merchants in the continental United States and certain stores in Canada and the United Kingdom, on Basic or higher with an online store and Shopify Payments || cites: mm_availability, mm_requirements
+legal: partner: Global-e becomes merchant of record, holds the tax registrations, and holds the funds of Managed Markets orders; Shopify is not a party to the Managed Markets Terms || cites: mm_globale_mor, mm_tax_registration, mm_flow_of_funds, spt_managed_markets_globale, spt_managed_markets_not_party
+boundary: contract: Service Terms - Shopify Managed Markets with Global-e, accepted through the regional parts of the Shopify Payments Terms; a merchant-of-record disclaimer at checkout that cannot be hidden; all questions go through Shopify Support || cites: spt_managed_markets_globale, mm_disclaimer, mm_support_shopify
+reason: sell to customers in other countries without registering a business, registering for tax or arranging customs clearance in each destination || cites: mm_reason
+
+concern: mkt.local_domains
+software: core: local domains assigned to markets || cites: inv:plan-features|Assign local domains|Public pricing
+software: outside platform: geolocation apps in the App Store || cites: inv:other:app-store-categories|Geolocation apps
+decides: merchant: the merchant assigns domains and languages to markets || cites: inv:other:help-center-sections|Assigning domains and languages to markets
+legal: not shown
+boundary: setting: domains and languages per market || cites: inv:other:help-center-sections|Assigning domains and languages to markets
+reason: not shown
+
+concern: mkt.rollouts
+software: core: Markets > Rollouts, scheduled changes to theme, checkout and accounts pages, discounts and catalogs || cites: rollouts_definition, inv:admin-navigation|Rollouts|Main navigation
+decides: merchant: the merchant schedules launches, events and experiments || cites: rollouts_definition
+legal: not shown
+boundary: API: read_rollouts scope; event: rollouts webhooks || cites: inv:access-scopes|read_rollouts, inv:webhook-topics|rollouts/create
+reason: not shown
+
+concern: mkt.backup_region
+software: core: a required setting that points to a country in an active market || cites: backup_region_required
+decides: platform at build: customers outside every market get the backup region experience and can browse but not buy || cites: backup_region_no_checkout
+decides: merchant: set to the home country at creation; the merchant can change it || cites: backup_region_default
+legal: not shown
+boundary: setting: Settings > General > Backup Region; event: markets_backup_region/update || cites: backup_region_default, inv:webhook-topics|markets_backup_region/update
+reason: not shown

@@ -1,0 +1,18 @@
+{
+ "n": 10,
+ "url": "https://www.bigcommerce.com/partners/stripe/payments/",
+ "dir": "items/010-bigcommerce.com",
+ "fetched_at": "2026-10-13T00:35:31Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.bigcommerce.com/partners/stripe/payments/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 60886,
+ "cited_in": [
+  "S01-BC-C063"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "3854211eca2239394c7789dd7ec27fe07af3b5eac9ada3fb15d7af478a5f99c0",
+ "raw_ext": "html"
+}

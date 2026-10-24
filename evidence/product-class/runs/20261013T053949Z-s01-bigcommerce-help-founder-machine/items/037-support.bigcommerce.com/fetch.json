@@ -1,0 +1,18 @@
+{
+ "n": 37,
+ "url": "https://support.bigcommerce.com/s/article/PCI-Compliance",
+ "dir": "items/037-support.bigcommerce.com",
+ "fetched_at": "2026-10-13T05:40:42Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://support.bigcommerce.com/s/article/PCI-Compliance?language=en_US",
+ "content_type": "text/html;charset=UTF-8",
+ "bytes": 190830,
+ "cited_in": [
+  "BC-C-028"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "08e599b02a57f33450804cd19bfea008f08e7b1286d18bdedbde1dc533209cc2",
+ "raw_ext": "html"
+}

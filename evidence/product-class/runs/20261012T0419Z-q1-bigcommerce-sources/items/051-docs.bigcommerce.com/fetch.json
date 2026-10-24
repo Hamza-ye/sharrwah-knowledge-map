@@ -1,0 +1,19 @@
+{
+ "n": 51,
+ "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/payments/methods.md",
+ "dir": "items/051-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:20:06Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/payments/methods.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 489,
+ "cited_in": [
+  "BC-S-0109",
+  "BC-S-0110"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "f6338f95407336ff8579598d2babba462c2d4120269ab5c65f73b4902a93e88a",
+ "raw_ext": "txt"
+}

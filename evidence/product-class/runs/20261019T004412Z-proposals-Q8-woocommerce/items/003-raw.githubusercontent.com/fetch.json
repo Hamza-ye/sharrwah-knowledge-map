@@ -1,0 +1,18 @@
+{
+ "n": 3,
+ "url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/extensions/core-concepts/example-header-plugin-comment.md",
+ "dir": "items/003-raw.githubusercontent.com",
+ "fetched_at": "2026-10-19T00:44:14Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/extensions/core-concepts/example-header-plugin-comment.md",
+ "content_type": "text/plain; charset=utf-8",
+ "bytes": 934,
+ "cited_in": [
+  "studies/proposals/records/Q8/woocommerce/citations.tsv"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "3f052e2ccdd0bd61c091335acaf1d8571b64a2fa72d1bba177f1c73884a28d65",
+ "raw_ext": "txt"
+}

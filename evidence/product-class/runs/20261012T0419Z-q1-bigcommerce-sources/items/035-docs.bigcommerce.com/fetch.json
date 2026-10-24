@@ -1,0 +1,19 @@
+{
+ "n": 35,
+ "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/pricing.md",
+ "dir": "items/035-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:19:50Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/pricing.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 510,
+ "cited_in": [
+  "BC-S-0047",
+  "BC-S-0048"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "b7a7252a6847d7b8301779fb2f532e4dea652d55995d463a3b1c92840f7dc9b5",
+ "raw_ext": "txt"
+}

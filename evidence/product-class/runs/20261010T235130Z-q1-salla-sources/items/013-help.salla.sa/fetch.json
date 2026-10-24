@@ -1,0 +1,26 @@
+{
+ "n": 13,
+ "url": "https://help.salla.sa/article/-إدارة-طرق-الدفع-وتفعيل-المدفوعات-الإلكترونية/dtdojcntv3f4lwqzj4h0jvij",
+ "dir": "items/013-help.salla.sa",
+ "fetched_at": "2026-10-10T23:51:32Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.salla.sa/article/-إدارة-طرق-الدفع-وتفعيل-المدفوعات-الإلكترونية/dtdojcntv3f4lwqzj4h0jvij",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 138880,
+ "cited_in": [
+  "SA-S-0067",
+  "SA-S-0068",
+  "SA-S-0069",
+  "SA-S-0070",
+  "SA-S-0071",
+  "SA-S-0072",
+  "SA-S-0073",
+  "SA-S-0074",
+  "SA-S-0075"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "ef9f12d959185f6423b7dc9383c4631ea998e521f80ca1d30133e865c062ae08",
+ "raw_ext": "html"
+}

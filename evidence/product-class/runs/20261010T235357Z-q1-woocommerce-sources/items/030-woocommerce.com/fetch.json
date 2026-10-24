@@ -1,0 +1,19 @@
+{
+ "n": 30,
+ "url": "https://woocommerce.com/document/marketplace-privacy/",
+ "dir": "items/030-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:01Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/marketplace-privacy/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 38643,
+ "cited_in": [
+  "WC-S-0568",
+  "WC-S-0569"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "1b72c81d16bb4f0f66f439c2e9478bfe704b687f0d896d092795bf6bf3341e4c",
+ "raw_ext": "html"
+}

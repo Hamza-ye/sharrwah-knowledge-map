@@ -1,0 +1,18 @@
+{
+ "n": 4,
+ "url": "https://docs.salla.dev/ecommerc-events/getting-started.md",
+ "dir": "items/004-docs.salla.dev",
+ "fetched_at": "2026-10-11T09:18:59Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.salla.dev/ecommerc-events/getting-started.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 1501,
+ "cited_in": [
+  "SA-S-5149"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "d740b817db670e6d3eafe6e19382e357c3fb0fa350f042159a1a3c8aed8515dc",
+ "raw_ext": "txt"
+}

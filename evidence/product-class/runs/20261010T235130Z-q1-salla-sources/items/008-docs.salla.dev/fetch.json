@@ -1,0 +1,20 @@
+{
+ "n": 8,
+ "url": "https://docs.salla.dev/rate-limiting.md",
+ "dir": "items/008-docs.salla.dev",
+ "fetched_at": "2026-10-10T23:51:31Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.salla.dev/rate-limiting.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 1215,
+ "cited_in": [
+  "SA-S-0171",
+  "SA-S-0172",
+  "SA-S-0173"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "ecdc97bdb961cd8dca9d13d4a800bb46b0cedbf9d7998804c039d67fadad4a4c",
+ "raw_ext": "txt"
+}

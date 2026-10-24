@@ -1,0 +1,156 @@
+___
+Skip to navigation
+Skip to content
+USD
+Change site currency USD selected
+Develop on Woo
+Hire an expert
+Get support
+Sell
+Click to show 12 more items
+Extensions
+Click to show 18 more items
+Resources
+Click to show 23 more items
+Enterprise ecommerce
+Log in
+Get started
+Documentation
+WooCommerce
+Expand
+Products
+Expand
+Extensions
+Expand
+Themes
+Expand
+WooPayments
+WooPay
+WooCommerce Shipping
+WooCommerce Tax
+Retired Products
+Expand
+Woo Marketplace
+Code Snippets
+Expand
+WooPayments / Documentation / WooPayments Documentation / WooPayments: Currencies / Currencies with WooPayments
+Currencies with WooPayments
+
+WooPayments can accept payments in over 100 different currencies. This guide explains the different types of currencies that may be involved in a transaction, how currencies and transactions interact, and how to see which currencies were involved in a transaction.
+
+Refer to our documentation on multi-currency to learn how to display your products in your customer’s preferred currency, manage exchange rates, and select other configuration options.
+
+Currencies in a transaction
+
+A single transaction can potentially involve multiple currencies:
+
+The customer currency is the currency displayed to customers while they browse your store and the currency they are charged in when they pay for their order.
+This can also be referred to as the “presentment currency.”
+By default, the customer currency will be the same as the store currency in your WooCommerce settings.
+Using WooPayments’ built-in multi-currency functions, the customer currency can be changed.
+The payout currency is the currency in which funds are paid out into your bank account.
+This can also be referred to as the “settlement currency.”
+The payout currency may not always be the same as the customer currency.
+For some merchants, it’s possible to receive payouts in different currencies into different bank accounts.
+Tracking currencies
+
+The WooPayments dashboard can track the currencies involved in each transaction, including payouts, payments, and disputes. This section highlights the elements of the dashboard that provide details on a transaction’s currency.
+
+Transactions page
+
+The Payments > Transactions page lists all WooPayments transactions, regardless of currency. The amount, fees, and net amount are all displayed in the payout currency.
+
+Transactions which required a currency conversion in order to be paid out have a tooltip to view the amount paid by the customer in the customer currency.
+
+Transaction details
+
+The transaction detail page shows the amount in the customer currency at the top. Below that, that amount is converted into the payout currency and displayed alongside the fees and net amount that was (or will be) paid out.
+
+The timeline view shows the exchange rate used when converting the customer currency to the payout currency. The fee for currency conversion is also shown.
+
+Payout details
+
+The payout detail page shows both the amount transferred to your bank account as well as all of the individual transactions associated with that particular payout. The amounts displayed on this page are in your payout currency.
+
+For transactions in a customer currency other than a payout currency, a tooltip displays the amount paid by the customer in the customer currency:
+
+Was this guide helpful for you?
+ON THIS PAGE
+Currencies in a transaction
+Tracking currencies
+Transactions page
+Transaction details
+Payout details
+WooPayments
+by Woo
+No payment details required • Set up in minutes
+Install for free
+30-day money-back guarantee
+Support teams across the world
+Safe and secure online payments
+Sell
+WooCommerce
+WooCommerce pricing
+Payments
+No-code customization
+Marketing
+Checkout
+Shipping
+Mobile app
+Enterprise ecommerce
+Marketplace
+WooCommerce extensions
+WooCommerce themes
+New
+Essentials
+Collections
+Developed by Woo
+Build
+Woo for developers
+Developer resources
+Become a Woo agency
+Become a Marketplace partner
+Become an affiliate
+Resources
+Blog
+Documentation
+WooCommerce site examples
+Product updates
+Email newsletter
+Support
+Feature requests
+WooCommerce hosting
+Hire an agency
+Participate in customer research
+Accessibility
+Support forums
+Company
+About
+Press
+Download WooCommerce free
+Join the Woo community
+Woo trademark guidelines
+Brand and logo guidelines
+Do not sell or share my personal information
+WooCommerce Support Policy
+Refund Policy
+Contact us
+Follow us on Facebook
+Follow us on X
+Follow us on Instagram
+Follow us on LinkedIn
+USD
+Change site currency USD selected
+Terms of Service
+Privacy Policy
+Privacy Notice for California Users
+
+© WooCommerce, Inc. 2026
+
+AN
+AUTOMATTIC
+BRAINCHILD
+Use of your personal data
+We and our partners process your personal data (such as browsing data, IP Addresses, cookie information, and other unique identifiers) based on your consent and/or our legitimate interest to optimize our website, marketing activities, and your user experience.
+Customize
+Accept all

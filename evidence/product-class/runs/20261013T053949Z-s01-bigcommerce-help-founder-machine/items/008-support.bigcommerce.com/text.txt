@@ -1,0 +1,212 @@
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+GETTING STARTED
+PRODUCTS
+STORE SETUP
+B2B
+DESIGN AND CONTENT
+MANAGE STORE
+Mobile App
+Orders
+Troubleshooting Orders
+VIEWING ORDERS
+Order Statuses
+Order IDs
+Viewing Orders
+MANAGING ORDERS
+Backorders
+Draft Orders
+Manual Orders
+Editing Orders
+Invoices
+Importing and Exporting Orders
+Capturing Funds
+How It Works
+Requirements
+Setting up Authorize Only
+Capturing Funds
+FAQ
+Order Actions
+Packing Slips
+Refunds
+Returns
+Shipments
+Shipping Labels
+ORDER NOTIFICATIONS
+Order Notifications
+Customer Order Notifications
+Customers
+BigCommerce For WordPress
+CHANNEL MANAGER
+MARKETING
+DATA SOLUTIONS
+ACCOUNT
+TD BANK
+Manually Capturing Transactions (Authorize Only)
+What We'll Cover
+How it works
+Requirements
+Setting up Authorize only
+Capturing funds within BigCommerce
+FAQ
+
+The "Authorize only" feature allows your payment gateway to authorize the charge without actually withdrawing the funds from the customer's account until you approve it. For example, some store owners prefer not to charge their customers until the order is ready for shipment.
+
+ 
+How It Works
+
+When you enable Authorize only payments for your payment gateway, purchases are not charged to the shopper’s card until you manually capture the funds yourself. When an order is placed, the gateway verifies that the card is valid and has a sufficient balance, then holds the funds until they are captured. After performing the capture, the funds will transfer to your account and you can begin fulfilling the order.
+
+Processing payments this way allows you to review each order before funds are deducted from a customer’s account. This can help you prevent fraud and chargebacks by canceling potentially fraudulent orders before a customer is charged.
+
+ 
+Requirements
+You must use a payment gateway that supports manual capture.
+Not all gateways support manual capture directly within the BigCommerce control panel. See Available Payment Gateways for a complete list.
+To capture funds on an order, your payment gateway’s transaction type must be Authorize Only.
+See the FAQ for more information.
+To capture funds in your BigCommerce control panel, the Manage Orders and Capture Funds permissions must be enabled in your user account.
+ 
+Setting up Authorize Only
+
+Use the following steps to enable Authorize only for a supporting gateway. In this example, we're using Braintree.
+
+To get started, go to Settings › Payments, and click the settings tab for the payment gateway.
+
+In the payment gateway settings, look for the Transaction type. From the drop-down menu, select Authorize only and Save your changes.
+
+ 
+Capturing Funds Within BigCommerce
+
+You can only capture funds within BigCommerce if you are using a payment gateway that supports it. For all others, log into your payment gateway's dashboard or terminal.
+
+ 
+
+Authorizations expire after a certain amount of time based on the gateway used. If the authorization expires, you will need to re-authorize the transaction or create a new order. Review your gateway’s help center documentation or contact their support team to confirm the capture window.
+
+To capture funds for an order, go to Orders › All orders. Orders with funds available for capture have a credit card icon next to them. Click this icon to begin the capture process.
+
+A confirmation pop-up will display. Click Ok to capture funds. A clock icon will appear next to the order status, along with the message, "Capture request has been received and will be processed shortly."
+
+If your payment gateway does not immediately capture the funds, the payment processing status will change from Captured to Capture Pending, which is only visible via the API. The order’s status remains in Awaiting Payment until the capture has been fully processed.
+
+Once payment is captured successfully, the order's status will update to either Awaiting Shipment or Awaiting Fulfillment, depending on your gateway.
+
+If a pending capture is declined or rejected, the payment processing status will revert back to Authorized.
+
+ 
+
+Authorization can expire! If for any reason the funds cannot be captured, an error message will display at the top of the View orders screen. If this occurs, contact your payment gateway for additional information as the authorization may have expired.
+
+CAPTURING FUNDS FOR MULTIPLE ORDERS
+
+To capture funds for multiple orders at once, go to Orders › All orders and check the box next to the orders you want to capture funds for.
+
+Select Capture funds for selected from the Choose an action drop-down menu, then click Confirm.
+
+ 
+FAQ
+
+How much time will I have to capture a transaction when set to Authorize only?
+
+The payment gateway determines the expiration window for capturing authorized funds. Review your gateway’s help center documentation or contact their support team to confirm the capture window.
+
+How do I capture authorized payments if my gateway doesn’t support the capture action in the BigCommerce control panel?
+
+If your gateway accepts Authorize only payments but does not support manual capture in your control panel, you must log into your payment gateway's dashboard or terminal to capture funds.
+
+How can using Authorize only reduce fraud?
+
+Verifying a card's credentials and reserving funds without immediately finalizing payment, allows you to validate orders before shipping goods.
+
+How can using Authorize only reduce processing fees?
+
+Some credit card processors charge a fee for chargebacks or refunds. A card that has not been charged does not need to be refunded. By using Authorize only, you do not have to issue refunds for orders that could not be shipped.
+
+How can using Authorize only improve customer satisfaction?
+
+If you offer custom items, pre-orders, or backorders, you may fulfill orders for days after they are placed. By not capturing an authorized payment, the customer has peace of mind knowing their account has not been charged for a delayed item.
+
+Having an easy-to-find transaction policy can help set expectations. Something as simple as "your card will not be charged until your order has been processed" can go a long way towards improving customer relationships.
+
+Can I void an authorized payment?
+
+Select Void transaction from the order’s Action menu (⋯) to void the authorization.
+
+The order status will appear instead as Void Pending, with an accompanying clock icon.
+
+How long will an order remain in Pending Capture?
+
+Orders will remain in Pending Capture until we receive a response from the merchant processor. Declined or rejected transactions will revert to Authorized, and successful captures will display as Awaiting Fulfillment.
+
+Why am I getting a “Capture request failed for order #[x], reason: declined by the payment provider.” error after capturing funds for an order?
+
+This error indicates that your payment provider was unable to process the capture request. This can occur if:
+
+you attempted to capture funds after the payment’s authorization has expired.
+the customer’s credit or debit card is frozen or has insufficient funds.
+there was an issue with how your payment gateway is configured.
+If you change your payment gateway’s transaction type to Authorize and capture, you cannot manually capture funds on orders with an authorized payment.
+Some payment gateways, such as Stripe OCS and Stripe UPE, require you to create notification webhooks in your payment provider dashboard to synchronize payment statuses with the control panel.
+
+Contact your payment provider to get more information on why your capture request failed.
+
+Can I attempt another manual capture if my previous capture request failed?
+
+If the transaction still has capturable funds and the payment processing status on the order is still Awaiting Payment, you can try to capture the funds again in your BigCommerce control panel. This is indicated by the presence of the credit card icon next to the order.
+
+If the icon is not present next to the order, then you must perform the capture from your payment provider dashboard. Note that you will not be able to capture funds in either location if the transaction’s authorization expiration window is expired.
+
+Additional Resources
+Available Payment Gateways
+Processing Refunds
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+Manually Capturing Transactions (Authorize Only)

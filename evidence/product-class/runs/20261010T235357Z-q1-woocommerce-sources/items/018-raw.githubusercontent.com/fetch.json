@@ -1,0 +1,18 @@
+{
+ "n": 18,
+ "url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/features/payments/payment-token-api.md",
+ "dir": "items/018-raw.githubusercontent.com",
+ "fetched_at": "2026-10-10T23:54:00Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/features/payments/payment-token-api.md",
+ "content_type": "text/plain; charset=utf-8",
+ "bytes": 5739,
+ "cited_in": [
+  "WC-S-0943"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "0f5aba057efe9c5fd97d5bda3bd061e6737a07975810179aa83543c96a80a926",
+ "raw_ext": "txt"
+}

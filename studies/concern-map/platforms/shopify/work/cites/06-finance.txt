@@ -1,0 +1,415 @@
+key: fin_suite_admin
+source: https://help.shopify.com/en/manual/finance.md
+locator: introduction
+quote: The finance suite is built into your Shopify admin, and is connected to your sales performance to streamline your business and financial operations.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: fin_not_bank
+source: https://help.shopify.com/en/manual/finance.md
+locator: note
+quote: Shopify is a tech company, not a bank.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: fin_stripe_fifth_third
+source: https://help.shopify.com/en/manual/finance.md
+locator: note
+quote: Stripe Payments Company</a> for money transmission services and account services with funds held at Fifth Third Bank N.A., Member FDIC.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: fin_balance_card_celtic
+source: https://help.shopify.com/en/manual/finance.md
+locator: note
+quote: Shopify Balance Visa® Commercial cards are powered by Stripe and issued by Celtic Bank pursuant to a license from Visa U.S.A. Inc.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: bal_definition
+source: https://help.shopify.com/en/manual/finance/shopify-balance.md
+locator: introduction
+quote: Shopify Balance is a money management account that you can use to manage your store's payments and transactions from one place.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: bal_pay_bills
+source: https://help.shopify.com/en/manual/finance/shopify-balance.md
+locator: introduction
+quote: In some regions, your Shopify Balance account can be used to
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: bal_us_only
+source: https://help.shopify.com/en/manual/finance/shopify-balance/eligibility.md
+locator: introduction
+quote: Shopify Balance is a commercial card available only to merchants with a physical residential address in the United States or Puerto Rico.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: bal_auto_with_sp
+source: https://help.shopify.com/en/manual/finance/shopify-balance/eligibility.md
+locator: introduction
+quote: If eligible, then you'll automatically receive a Shopify Balance account when activating Shopify Payments for the first time.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: bal_ssn
+source: https://help.shopify.com/en/manual/finance/shopify-balance/eligibility.md
+locator: Shopify Balance account requirements
+quote: You must have a valid US Social Security Number (SSN) or Individual Taxpayer Identification Number (ITIN).
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: bal_close_with_sp
+source: https://help.shopify.com/en/manual/finance/shopify-balance/eligibility.md
+locator: Shopify Balance account requirements
+quote: If you deactivate Shopify Payments, then you must also close your Shopify Balance account.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: bal_same_info_as_sp
+source: https://help.shopify.com/en/manual/finance/shopify-balance/eligibility.md
+locator: Shopify Balance account requirements
+quote: You must meet the same information requirements as Shopify Payments.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: bal_business_only
+source: https://help.shopify.com/en/manual/finance/shopify-balance/eligibility.md
+locator: Shopify Balance card use requirements
+quote: Any use of your Shopify Balance card for personal, family, or household purposes may result in immediate termination of your Shopify Balance account.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: bal_capital_withdrawn
+source: https://help.shopify.com/en/manual/finance/shopify-balance/eligibility.md
+locator: Shopify Capital remittances or repayments
+quote: any Shopify Capital remittances or repayments that you need to pay are also withdrawn from Shopify Balance.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: cred_charge_card
+source: https://help.shopify.com/en/manual/finance/shopify-credit.md
+locator: introduction
+quote: Shopify Credit is a pay-in-full business charge card.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: cred_repay_sales
+source: https://help.shopify.com/en/manual/finance/shopify-credit.md
+locator: introduction
+quote: Shopify Credit offers the option to either pay your full statement balance automatically each month or to repay over 10 calendar months through automatic debits from your daily sales, for a fee.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: cred_issuer
+source: https://help.shopify.com/en/manual/finance/shopify-credit.md
+locator: note
+quote: Shopify Credit Visa® Commercial Credit cards are powered by Stripe and issued by Celtic Bank pursuant to a license from Visa U.S.A. Inc.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: cred_eligibility
+source: https://help.shopify.com/en/manual/finance/shopify-credit/getting-started.md
+locator: Eligibility for Shopify Credit
+quote: Eligibility for Shopify Credit is based on several factors that help determine the health of your business.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: cap_program
+source: https://help.shopify.com/en/manual/finance/shopify-capital.md
+locator: introduction
+quote: Shopify Capital is a financing program that offers merchant cash advances and loans to eligible businesses based on the store's location, history, use and interaction with the Shopify platform.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: cap_countries
+source: https://help.shopify.com/en/manual/finance/shopify-capital.md
+locator: introduction
+quote: Eligible businesses based in Australia, Canada, France, Germany, Ireland, the Netherlands, Spain, the United Kingdom, and the United States can apply for Shopify Capital.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: cap_trusts
+source: https://help.shopify.com/en/manual/finance/shopify-capital.md
+locator: introduction
+quote: Business entities operating as Trusts and Partnerships aren't supported.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: cap_elig_auto
+source: https://help.shopify.com/en/manual/finance/shopify-capital/eligibility.md
+locator: introduction
+quote: Eligibility is automatically evaluated based on a variety of factors including sales, disputes, customer interactions, the time you've been a Shopify platform user, and compliance with
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: cap_owner
+source: https://help.shopify.com/en/manual/finance/shopify-capital/eligibility.md
+locator: introduction
+quote: You need to be a store owner to apply for funding through Shopify Capital.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: cap_sp_or_third
+source: https://help.shopify.com/en/manual/finance/shopify-capital/eligibility.md
+locator: Shopify Capital eligibility requirements, payment provider
+quote: Shopify Capital is available to eligible merchants who either use Shopify Payments or approved third-party payment providers.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: cap_sp_mandatory
+source: https://help.shopify.com/en/manual/finance/shopify-capital/eligibility.md
+locator: Shopify Capital eligibility requirements, payment provider
+quote: However, in certain locations, activating Shopify Payments might be a mandatory requirement to qualify for this funding.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: cap_prohibited
+source: https://help.shopify.com/en/manual/finance/shopify-capital/eligibility.md
+locator: Shopify Capital eligibility requirements, prohibited products
+quote: Shopify Capital is unavailable to stores selling prohibited products and services.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: cap_principal_place
+source: https://help.shopify.com/en/manual/finance/shopify-capital/eligibility.md
+locator: Countries where Shopify Capital is available
+quote: To be eligible for Capital in a country, your principal place of business must be within the country, and your bank account must be located in the country.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: cap_underwriting
+source: https://help.shopify.com/en/manual/finance/shopify-capital/eligibility.md
+locator: Application process for Shopify Capital
+quote: an underwriting review is conducted by Shopify Capital to determine if your store is eligible for funding.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: cap_us_loans
+source: https://help.shopify.com/en/manual/finance/shopify-capital/united-states.md
+locator: introduction
+quote: Shopify Capital offers loans to merchants in the United States.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: cap_us_daily
+source: https://help.shopify.com/en/manual/finance/shopify-capital/united-states.md
+locator: introduction
+quote: Loan repayments are made from a daily percentage rate of your daily sales.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: cap_us_webbank
+source: https://help.shopify.com/en/manual/finance/shopify-capital/united-states.md
+locator: note at end of page
+quote: All funding through Shopify Capital in the United States is issued by WebBank.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: cap_uk_youlend_partner
+source: https://help.shopify.com/en/manual/finance/shopify-capital/united-kingdom.md
+locator: introduction
+quote: Shopify provides merchant cash advances in the United Kingdom through our partner YouLend under the receivables purchase agreement.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: cap_uk_issued
+source: https://help.shopify.com/en/manual/finance/shopify-capital/united-kingdom.md
+locator: note at end of page
+quote: All merchant cash advances through Shopify Capital in the United Kingdom are issued by YouLend.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: cap_uk_bacs
+source: https://help.shopify.com/en/manual/finance/shopify-capital/united-kingdom.md
+locator: notifications
+quote: The Bankers' Automated Clearing System (BACS) Direct Debit regulations require these notifications, and you can't deactivate them.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: cap_ca_loans
+source: https://help.shopify.com/en/manual/finance/shopify-capital/canada.md
+locator: introduction
+quote: Shopify Capital offers loans to merchants in Canada.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: cap_ca_pad
+source: https://help.shopify.com/en/manual/finance/shopify-capital/canada.md
+locator: bank account changes
+quote: If you want to change your bank account for Shopify Payments payouts and your repayments after accepting a loan, then you need to complete a new pre-authorized debit agreement.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: cap_au_loans
+source: https://help.shopify.com/en/manual/finance/shopify-capital/australia.md
+locator: introduction
+quote: Shopify Capital offers loans to merchants in Australia.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: cap_fr_banking_circle
+source: https://help.shopify.com/en/manual/finance/shopify-capital/france.md
+locator: note at end of page
+quote: All loans in France are provided by Banking Circle S.A. (Luxembourg credit institution, CSSF-licensed under No. B222.310) with YouLend SAS
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: cap_fr_shopify_france
+source: https://help.shopify.com/en/manual/finance/shopify-capital/france.md
+locator: note at end of page
+quote: This application is provided by Shopify Commerce France SAS
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: cap_de_youlend
+source: https://help.shopify.com/en/manual/finance/shopify-capital/germany.md
+locator: note at end of page
+quote: All loans in Germany are provided in cooperation with YouLend GmbH.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: cap_de_broker
+source: https://help.shopify.com/en/manual/finance/shopify-capital/germany.md
+locator: note at end of page
+quote: Applications for merchant financing are made available to you by Shopify Commerce Germany GmbH, which is a registered Credit Broker in Germany.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: cap_ie_youlend
+source: https://help.shopify.com/en/manual/finance/shopify-capital/ireland.md
+locator: note at end of page
+quote: All merchant cash advances through Shopify Capital in Ireland are issued by YouLend.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: cap_nl_youlend
+source: https://help.shopify.com/en/manual/finance/shopify-capital/netherlands.md
+locator: note
+quote: All merchant cash advances through Shopify Capital in the Netherlands are issued by YouLend.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: cap_es_youlend
+source: https://help.shopify.com/en/manual/finance/shopify-capital/spain.md
+locator: note at end of page
+quote: All merchant cash advances through Shopify Capital in Spain are issued by YouLend.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: cap_ie_mca
+source: https://help.shopify.com/en/manual/finance/shopify-capital/ireland.md
+locator: introduction
+quote: In Ireland, Shopify Capital offers merchant cash advances.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: bp_us_only
+source: https://help.shopify.com/en/manual/finance/shopify-bill-pay.md
+locator: note
+quote: Shopify Bill Pay is available only to merchants in the United States.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: bp_melio
+source: https://help.shopify.com/en/manual/finance/shopify-bill-pay.md
+locator: note at end of page
+quote: Shopify Bill Pay is powered by <a href="https://meliopayments.com/">Melio
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: bp_app
+source: https://help.shopify.com/en/manual/finance/shopify-bill-pay.md
+locator: app note
+quote: Install Shopify Bill Pay from the Shopify App Store.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: bp_international
+source: https://help.shopify.com/en/manual/finance/shopify-bill-pay.md
+locator: introduction
+quote: For international payments, you can pay bills in USD using a bank account or your Shopify Balance account, and your vendor is paid through a wire transfer.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: k1099_pse
+source: https://help.shopify.com/en/manual/payments/shopify-payments/supported-countries/united-states/tax-reporting.md
+locator: introduction
+quote: In the United States, tax laws require Payment Settlement Entities (PSEs) such as Shopify Payments to file a Form 1099-K with the Internal Revenue Service (IRS) for merchants who meet annual reporting thresholds.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: k1099_merchant_responsible
+source: https://help.shopify.com/en/manual/payments/shopify-payments/supported-countries/united-states/tax-reporting.md
+locator: introduction
+quote: If your business accepts online or in-person payments, then you're responsible for reporting this income on your tax returns.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: k1099_jurisdiction
+source: https://help.shopify.com/en/manual/payments/shopify-payments/supported-countries/united-states/tax-reporting.md
+locator: introduction
+quote: Depending on your jurisdiction, Shopify might also be required to report your sales to the local tax authorities.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: k1099_generated
+source: https://help.shopify.com/en/manual/payments/shopify-payments/supported-countries/united-states/tax-reporting.md
+locator: Criteria for receiving a Form 1099-K
+quote: This form is generated by Shopify Payments and is provided to you and to the IRS annually.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md

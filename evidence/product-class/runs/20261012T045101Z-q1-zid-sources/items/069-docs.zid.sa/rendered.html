@@ -1,0 +1,149 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;"># Webhook Health Tracking
+
+Zid automatically monitors the health of your webhook endpoints using a circuit breaker pattern. When an endpoint starts failing consistently, its status transitions through health states that reduce noise and   protect your systems from unnecessary traffic — and notify you before things get worse.
+
+## Health States
+Each webhook has a health_status field that reflects its current state:
+
+| Status | Meaning | Effect on Delivery |
+| --- | --- | --- |
+| healthy | The endpoint is responding normally | Events are delivered as usual |
+| degraded | The endpoint has failed 10 or more times in the past hour | Events are still attempted; you should investigate |
+| broken | The endpoint has failed 30 or more times in the past hour | Event delivery is suspended until you recover the webhook |
+
+
+:::highlight purple 📌
+Note: HTTP 429 Too Many Requests responses are not counted as failures. They are treated as a signal that your endpoint is alive but rate-limited.
+:::
+
+## How Failures Are Counted
+Failures are tracked using a **sliding one-hour window** per webhook. Each failed delivery attempt (non-2xx response, connection timeout, or  similar error) is recorded.
+At the end of each attempt:                                    
+- If your endpoint has accumulated **10+ failures** in the **past 60 minutes**, its status moves to **degraded**.
+- If it reaches **30+ failures** in **the past 60 minutes**, it transitions to **broken**.
+
+A successful delivery at any point resets the failure count and restores the webhook to **healthy**.
+
+
+## What Happens When a Webhook Is Broken
+When a webhook reaches the **broken** state: 
+1. **No new events are dispatched** to that endpoint. Pending undelivered events for the webhook are also discarded to prevent backlogs.
+2. You will receive an **email notification** (see below) with details of all your broken webhooks.
+3. The webhook remains broken until you explicitly recover it via the API.
+
+The broken_at timestamp records when the webhook entered this state.
+
+## Broken Webhook Notifications
+Zid sends a batch email notification once per hour for any broken webhooks that have not yet been reviewed. The email:
+- Has subject line: "**Action Required: Your webhook endpoints are failing**"
+- Includes a **CSV attachment (broken_webhooks.csv)** listing each broken webhook with the following fields:
+
+
+| Column | Description |
+| --- | --- |
+| ID | Webhook UUID |
+| Store ID | The store the webhook belongs to |
+| Store Name | Display name of the store |
+| Store URL | Storefront URL |
+| Event | The event type subscribed to |
+| Target URL | The failing endpoint URL |
+| Consecutive Failures | Total failure count |
+| Last Failed At | Timestamp of most recent failure |
+| Broken At | Timestamp when status became broken |
+| Last Success At | Timestamp of last successful delivery |
+| Created At | Timestamp when the webhook was registered |
+
+Each broken webhook is notified once per outage cycle. If you recover a webhook and it later breaks again, a new notification will be sent.
+
+## Recovering a Broken Webhook
+To recover a broken webhook you must provide a new target URL. Zid will:
+1. Soft-delete the broken webhook (preserving its audit history).
+2. Create a new webhook with the same event subscription and a fresh healthy status.
+3. Clear the failure counter, giving the new endpoint a clean slate.
+
+&lt;Card title="Recover Broken Webhooks" href="https://docs.zid.sa/recover-broken-webhooks-37378520e0"&gt;
+  **POST** /manager/v1/webhooks/recover
+
+    Request Body:
+```json
+    {
+      "webhooks": [
+        {
+          "id": "{{webhook_uuid}}",
+          "target_url": "https://your-new-endpoint.example.com/hook"
+        }
+      ]
+    }
+```
+&lt;/Card&gt;
+
+
+The response indicates per-webhook success or failure. Partial failures are supported — if one webhook in the batch fails to recover, the others still proceed.
+
+
+:::highlight purple 💡
+You cannot recover a webhook by re-using the same target_url. Zid requires a new URL to confirm that the underlying issue has been addressed.
+:::
+
+## Retry Mechanism 
+When a webhook delivery fails, Zid automatically retries the request before recording it as a failure. Each webhook event is attempted up to **3 times** with exponential backoff between attempts:
+
+| Attempt | Delay Before Retry |
+|---|---|
+| 1st retry | 1 minute |
+| 2nd retry | 5 minutes |
+| 3rd retry | 15 minutes |
+
+
+:::highlight purple 📌
+If all three retries are exhausted without a successful response, the attempt is counted as a failure toward the health tracking thresholds. Only after all retries fail does the failure get recorded in the sliding window.
+:::
+
+## API Reference
+The following endpoints are available for monitoring and managing webhook health. All requests must include `Authorization` (your partner token) and `X-Manager-Token` (the store's OAuth access token) headers.
+
+#### [GET Health Summary](https://docs.zid.sa/health-summary-37247358e0)
+`GET /v1/managers/webhooks/health-summary`
+
+Returns a count of your webhooks grouped by health state for a given store. Use this as a quick dashboard signal to detect whether any of your endpoints are degrading.
+
+**Required scope:** `third_webhook_read`
+**Response:**
+```json     
+  {
+    "data": {
+      "healthy": 54,
+      "degraded": 0,
+      "broken": 0
+    }
+  } 
+```
+---
+#### [GET Broken Webhooks](https://docs.zid.sa/broken-webhooks-37378513e0)
+`GET /v1/managers/webhooks/broken`
+
+Returns the full list of webhooks currently in the broken state for a given store. Each item includes the webhook ID, event type, target URL, and store details — everything you need to decide which endpoints to recover.
+
+**Required scope:** `third_webhook_read`
+
+---
+#### [POST Recover Broken Webhooks](https://docs.zid.sa/recover-broken-webhooks-37378520e0)
+`POST /v1/managers/webhooks/broken/recover`
+
+Recovers one or more broken webhooks by replacing their target URLs. Submit a list of broken webhook IDs alongside their new endpoint URLs. Partial failures are supported — successfully recovered webhooks are returned in the response even if others in the batch fail.
+
+**Required scope:** `third_webhook_write`
+**Request body:**
+```json     
+{
+  "webhooks": [
+    {
+      "broken_webhook_id": "{{webhook_uuid}}",
+      "target_url": "https://your-new-endpoint.example.com/hook"
+    }
+  ]
+}
+```
+
+
+</pre></body></html>

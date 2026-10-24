@@ -1,0 +1,18 @@
+{
+ "n": 14,
+ "url": "https://docs.bigcommerce.com/developer/docs/integrations/platform-solutions/buy-online-pick-up-in-store/overview.md",
+ "dir": "items/014-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:27:09Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/docs/integrations/platform-solutions/buy-online-pick-up-in-store/overview.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 3881,
+ "cited_in": [
+  "BC-S-0047"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "f569316c54a09169408f0af2ae25bfbb44853792883c3e5688f0e2bdad9314c3",
+ "raw_ext": "txt"
+}

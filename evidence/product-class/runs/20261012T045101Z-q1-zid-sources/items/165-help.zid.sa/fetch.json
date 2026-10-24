@@ -1,0 +1,18 @@
+{
+ "n": 165,
+ "url": "https://help.zid.sa/themes/",
+ "dir": "items/165-help.zid.sa",
+ "fetched_at": "2026-10-12T04:53:37Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/themes/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 24171,
+ "cited_in": [
+  "ZD-S-1074"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "8156796cd97f353a2b9ca9198bbead1bf2ec5dd269cde0f08729bd833182137d",
+ "raw_ext": "html"
+}

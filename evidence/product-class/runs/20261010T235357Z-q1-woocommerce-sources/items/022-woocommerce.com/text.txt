@@ -1,0 +1,262 @@
+___
+Skip to navigation
+Skip to content
+USD
+Change site currency USD selected
+Develop on Woo
+Hire an expert
+Get support
+Sell
+Click to show 12 more items
+Extensions
+Click to show 18 more items
+Resources
+Click to show 23 more items
+Enterprise ecommerce
+Log in
+Get started
+WooCommerce
+Getting started
+Migrating to WooCommerce
+Products
+Expand
+Taxes
+Shipping
+Expand
+Payments
+Orders
+Data and reporting
+Customers
+Marketing
+Site administration
+Expand
+Store settings
+How-to guides
+Automation
+Performance
+Localization
+Security
+Store design
+Expand
+Mobile App
+Expand
+Get help
+Expand
+WooCommerce / Documentation / Site administration / Store settings / Configuring WooCommerce settings / Accounts and Privacy Settings
+Accounts and Privacy Settings
+
+Go to WooCommerce > Settings and select the Accounts and Privacy tab.
+
+Use these settings to enable or disable guest checkout, control customer account creation, decide how your store retains or removes personal data, and set your privacy policy notices. The settings include:
+
+Checkout and Accounts
+Privacy Policy
+Personal Data Retention
+
+Additionally, we explain what WooCommerce adds to the WordPress personal data exporter and personal data eraser.
+
+The Checkout and Account creation sections in WooCommerce Accounts and Privacy settings.
+Checkout and Accounts
+
+Checkout
+
+Enable guest checkout — Allow customers to check out without creating an account. Guest orders are not tied to a WordPress user account. Customers still need an account to purchase subscriptions.
+Enable log-in during checkout — Allow customers to log in to an existing account during checkout. If a customer is not logged in, WooCommerce displays a login prompt and form.
+
+Account creation
+
+After checkout — Allow customers to create an account after placing their order. Use the linked site editor template to customize the account creation message.
+During checkout — Allow customers to create an account before placing their order.
+Allow subscription customers to create an account during checkout — This setting appears only when WooCommerce Subscriptions is active. It is unavailable when During checkout is enabled.
+On the My Account page — Allow customers to create an account from the My Account page.
+
+Account creation options
+
+Send password setup link — Send new users an email with a link to set up their password.
+Use email address as account login — If disabled, customers must set a username when they create an account. When your site uses the Cart and Checkout blocks, WooCommerce enables this setting and hides it for compatibility.
+Customer email confirmation — Allow customers to confirm their account email and link matching past guest orders to the account. See Customer email confirmation and guest order linking.
+
+Account erasure requests
+
+Remove personal data from orders on request — Choose whether WooCommerce removes personal data from orders when processing an account erasure request.
+Remove personal data from subscriptions — Choose whether WooCommerce removes personal data from subscriptions when processing an account erasure request. This setting appears only when WooCommerce Subscriptions is active.
+Remove access to downloads — Choose whether WooCommerce revokes access to downloadable files and clears download logs when processing an account erasure request.
+Allow personal data to be removed in bulk from orders — Add an option to the Orders screen for removing personal data from multiple orders. Removing personal data cannot be undone. See Removing personal data from orders.
+Privacy policy
+
+This section lets you select a privacy policy page and display privacy notices on the customer registration and checkout pages.
+
+The Privacy Policy section within the WooCommerce “Accounts and Privacy” Settings.
+Privacy page — Open Settings > Privacy, where you can select your privacy policy page. Add [privacy_policy] to either notice below to link to that page. Some themes also use this setting to add a privacy policy link elsewhere, such as in the footer.
+Registration privacy policy — Add a privacy notice to the registration form on the My Account page. Include a link to your privacy policy page.
+Checkout privacy policy — Add a privacy notice to the checkout form. Include a link to your privacy policy page.
+Personal data retention
+
+Use this section to decide how long your store keeps order data. State your retention periods in your privacy policy, and make sure they comply with applicable laws, such as the EU GDPR.
+
+The Personal Data Retention section within the WooCommerce Accounts and Privacy settings.
+
+For each option, enter a number and choose days, weeks, months, or years. Leave an option blank to retain that data indefinitely.
+
+Retain inactive accounts — Inactive accounts have not been used to log in or place an order for the specified duration.
+Retain pending orders — Pending orders are unpaid or abandoned and should not need to be fulfilled.
+Retain failed orders — Failed orders are unpaid or abandoned and should not need to be fulfilled.
+Retain canceled orders — Canceled orders were intentionally canceled by an administrator or customer, or timed out while waiting for payment.
+Retain completed orders — Completed orders have been fulfilled.
+Retain ended subscriptions — Retain ended subscriptions and their related orders for the specified duration before anonymizing their personal data. This setting appears only when WooCommerce Subscriptions is active.
+
+When enabled, WooCommerce runs this cleanup daily. It tracks inactive accounts using anonymous metadata and removes only accounts with the subscriber or customer role.
+
+WooCommerce moves cleaned-up failed, pending, and canceled orders to the trash.
+WooCommerce anonymizes cleaned-up completed orders so sales statistics remain accurate.
+WooCommerce deletes inactive accounts. An inactive account has not been used to log in or place an order for the specified duration.
+Personal data exporter
+
+WordPress can export personal data associated with an email address to an HTML file. Go to Tools > Export Personal Data to create a request. WooCommerce adds the following data to the generated file:
+
+Customer address and account information
+Orders associated with the given email address
+Download permissions and logs associated with the given email address
+Saved-for-later and wishlist entries, including the product ID and name, quantity, date added, and product URL when the product is still available
+A pending personal data export request in WordPress.
+
+WordPress sends a confirmation email to verify that the request is genuine. The verification process is:
+
+Enter an email address or username.
+Click Send Request. WordPress emails a confirmation link to the person.
+The person clicks the confirmation link. WordPress marks the request as Confirmed.
+Click Send Export Link. WordPress emails the person a link to download their personal data.
+
+The export groups entries from both lists under WooCommerce Shopper Lists:
+
+Saved-for-later and wishlist records in a personal data export.
+Personal data eraser
+
+Go to Tools > Erase Personal Data to create an erasure request for an email address. WordPress uses the same email confirmation process before personal data can be erased.
+
+A pending personal data erasure request in WordPress.
+
+After the request is confirmed, WooCommerce deletes the registered customer’s saved-for-later and wishlist entries. After a successful erasure, it retains no records from either shopper list.
+
+WooCommerce handles orders, accounts, subscriptions, downloads, and other customer records separately through their own erasers and the retention and erasure settings described above. WooCommerce may anonymize or retain that data when your settings or legal obligations require it.
+
+Questions and support
+
+Do you still have questions and need assistance? 
+
+This documentation is about the free, core WooCommerce plugin, for which support is provided in our community forums on WordPress.org. By searching this forum, you’ll often find that your question has been asked and answered before.
+
+If you haven’t created a WordPress.org account to use the forums, here’s how.
+
+If you’re looking to extend the core functionality shown here, we recommend reviewing available extensions in the WooCommerce Marketplace.
+Need ongoing advanced support or a customization built for WooCommerce? Hire a Woo Agency Partner.
+Are you a developer building your own WooCommerce integration or extension? Check our Developer Resources.
+
+If you weren’t able to find the information you need, please use the feedback thumbs below to let us know.
+
+Was this guide helpful for you?
+Related Products
+WooCommerce Subscriptions
+by
+Woo
+
+WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or...
+
+Excellence verified
+Price $279 annually
+$279
+annually
+Rated 3.9 out of 5 stars
+3.9 
+(142)
+WooCommerce Shipping
+by
+Woo
+
+WooCommerce Shipping is a free label-printing and fulfillment extension built into WooCommerce that lets store owners buy and print USPS,...
+
+Free download
+Free download
+Rated 2.7 out of 5 stars
+2.7 
+(21)
+ON THIS PAGE
+Checkout and Accounts
+Privacy policy
+Personal data retention
+Personal data exporter
+Personal data eraser
+Questions and support
+WooCommerce
+by Woo
+No payment details required • Set up in minutes
+Install for free
+30-day money-back guarantee
+Support teams across the world
+Safe and secure online payments
+Sell
+WooCommerce
+WooCommerce pricing
+Payments
+No-code customization
+Marketing
+Checkout
+Shipping
+Mobile app
+Enterprise ecommerce
+Marketplace
+WooCommerce extensions
+WooCommerce themes
+New
+Essentials
+Collections
+Developed by Woo
+Build
+Woo for developers
+Developer resources
+Become a Woo agency
+Become a Marketplace partner
+Become an affiliate
+Resources
+Blog
+Documentation
+WooCommerce site examples
+Product updates
+Email newsletter
+Support
+Feature requests
+WooCommerce hosting
+Hire an agency
+Participate in customer research
+Accessibility
+Support forums
+Company
+About
+Press
+Download WooCommerce free
+Join the Woo community
+Woo trademark guidelines
+Brand and logo guidelines
+Do not sell or share my personal information
+WooCommerce Support Policy
+Refund Policy
+Contact us
+Follow us on Facebook
+Follow us on X
+Follow us on Instagram
+Follow us on LinkedIn
+USD
+Change site currency USD selected
+Terms of Service
+Privacy Policy
+Privacy Notice for California Users
+
+© WooCommerce, Inc. 2026
+
+AN
+AUTOMATTIC
+OPUS
+Use of your personal data
+We and our partners process your personal data (such as browsing data, IP Addresses, cookie information, and other unique identifiers) based on your consent and/or our legitimate interest to optimize our website, marketing activities, and your user experience.
+Customize
+Accept all

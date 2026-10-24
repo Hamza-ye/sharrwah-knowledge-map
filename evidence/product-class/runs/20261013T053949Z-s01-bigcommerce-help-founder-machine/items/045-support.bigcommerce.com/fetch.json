@@ -1,0 +1,18 @@
+{
+ "n": 45,
+ "url": "https://support.bigcommerce.com/s/article/Tax-Overview",
+ "dir": "items/045-support.bigcommerce.com",
+ "fetched_at": "2026-10-13T05:40:54Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://support.bigcommerce.com/s/article/Tax-Overview?language=en_US",
+ "content_type": "text/html;charset=UTF-8",
+ "bytes": 190834,
+ "cited_in": [
+  "BC-C-072"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "34c916a2e8f1b2a50b7e66d5bfb3c3d5357f138c212e1bc2e1ce791041314866",
+ "raw_ext": "html"
+}

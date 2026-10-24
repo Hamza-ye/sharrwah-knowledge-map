@@ -1,0 +1,20 @@
+{
+ "n": 26,
+ "url": "https://help.shopify.com/en/manual/fulfillment/fulfilling-orders/shipping-labels.md",
+ "dir": "items/026-help.shopify.com",
+ "fetched_at": "2026-10-11T06:12:58Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/fulfillment/fulfilling-orders/shipping-labels.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 1226,
+ "cited_in": [
+  "SH-S-0717",
+  "SH-S-0718",
+  "SH-S-0719"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "8a47dcb4e3c1ae666d5e86efac0732e3d072a81f8656d8d03a3e8461168f8b59",
+ "raw_ext": "txt"
+}

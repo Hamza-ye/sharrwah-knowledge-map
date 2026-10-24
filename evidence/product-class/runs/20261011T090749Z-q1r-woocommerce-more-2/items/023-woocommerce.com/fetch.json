@@ -1,0 +1,18 @@
+{
+ "n": 23,
+ "url": "https://woocommerce.com/products/xero/",
+ "dir": "items/023-woocommerce.com",
+ "fetched_at": "2026-10-11T09:07:55Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/products/xero/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 54659,
+ "cited_in": [
+  "WC-S-5490"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "f2a146b5f385bc767092591fcbd4c1e59794cf866cbefe0bc13e5adae2c848c0",
+ "raw_ext": "html"
+}

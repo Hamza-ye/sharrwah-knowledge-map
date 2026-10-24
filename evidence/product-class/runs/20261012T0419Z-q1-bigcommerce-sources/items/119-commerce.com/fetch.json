@@ -1,0 +1,25 @@
+{
+ "n": 119,
+ "url": "https://www.commerce.com/terms/store-terms/",
+ "dir": "items/119-commerce.com",
+ "fetched_at": "2026-10-12T04:21:04Z",
+ "curl_exit": 47,
+ "curl_error": "curl: (47) Maximum (8) redirects followed",
+ "http_code": 307,
+ "final_url": "https://www.commerce.com/terms/store-terms/",
+ "content_type": "text/plain",
+ "bytes": 15,
+ "cited_in": [
+  "BC-S-0212",
+  "BC-S-0213",
+  "BC-S-0214",
+  "BC-S-0429",
+  "BC-S-0430",
+  "BC-S-0431",
+  "BC-S-0432",
+  "BC-S-0433"
+ ],
+ "raw_file": "",
+ "sha256": "",
+ "raw_ext": ""
+}

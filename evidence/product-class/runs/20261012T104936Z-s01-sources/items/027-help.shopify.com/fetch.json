@@ -1,0 +1,19 @@
+{
+ "n": 27,
+ "url": "https://help.shopify.com/en/manual/finance/shopify-balance/eligibility.md",
+ "dir": "items/027-help.shopify.com",
+ "fetched_at": "2026-10-12T10:50:05Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/finance/shopify-balance/eligibility.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 1523,
+ "cited_in": [
+  "S01-SH-C336",
+  "S01-SH-C337"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "cea6de18f525ca7f62aaa670138be5cb0fc78cdbac636e7c1b36c6ff204f5074",
+ "raw_ext": "txt"
+}

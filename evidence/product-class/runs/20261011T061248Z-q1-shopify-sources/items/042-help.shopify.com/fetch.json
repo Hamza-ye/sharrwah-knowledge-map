@@ -1,0 +1,18 @@
+{
+ "n": 42,
+ "url": "https://help.shopify.com/en/manual/markets/rollouts.md",
+ "dir": "items/042-help.shopify.com",
+ "fetched_at": "2026-10-11T06:13:00Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/markets/rollouts.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 802,
+ "cited_in": [
+  "SH-S-0576"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "e304d8c32ac4b87c4526483a79b36b7c5e3b57da542a66f805a1c81609e00fa7",
+ "raw_ext": "txt"
+}

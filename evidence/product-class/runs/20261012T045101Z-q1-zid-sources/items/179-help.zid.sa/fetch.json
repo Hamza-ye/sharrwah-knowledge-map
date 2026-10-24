@@ -1,0 +1,20 @@
+{
+ "n": 179,
+ "url": "https://help.zid.sa/zid-growth/",
+ "dir": "items/179-help.zid.sa",
+ "fetched_at": "2026-10-12T04:53:51Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/zid-growth/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 26535,
+ "cited_in": [
+  "ZD-S-1077",
+  "ZD-S-1078",
+  "ZD-S-1079"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "737e4b32df346cb03eef7be613aad8840e2585c0c20ab862120484453cd24de4",
+ "raw_ext": "html"
+}

@@ -1,0 +1,20 @@
+{
+ "n": 22,
+ "url": "https://help.shopify.com/en/manual/finance/shopify-capital/united-kingdom.md",
+ "dir": "items/022-help.shopify.com",
+ "fetched_at": "2026-10-11T06:12:57Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/finance/shopify-capital/united-kingdom.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 4035,
+ "cited_in": [
+  "SH-S-0484",
+  "SH-S-0485",
+  "SH-S-0486"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "6e6aae5eb170f221d68027c887445ba079cc84cfb27fd0590b52c2615b45bee0",
+ "raw_ext": "txt"
+}

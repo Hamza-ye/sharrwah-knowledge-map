@@ -1,0 +1,26 @@
+{
+ "n": 6,
+ "url": "https://jetpack.com/support/what-data-does-jetpack-sync/",
+ "dir": "items/006-jetpack.com",
+ "fetched_at": "2026-10-10T23:53:58Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://jetpack.com/support/what-data-does-jetpack-sync/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 53173,
+ "cited_in": [
+  "WC-S-0953",
+  "WC-S-0954",
+  "WC-S-0955",
+  "WC-S-0956",
+  "WC-S-0957",
+  "WC-S-0958",
+  "WC-S-0959",
+  "WC-S-0960",
+  "WC-S-0961"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "72c0a6b7a447466b10365f48bebaed4ac6c028f0a24536f2a2c1a2a2ba28651a",
+ "raw_ext": "html"
+}

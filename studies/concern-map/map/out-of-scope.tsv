@@ -1,0 +1,390 @@
+platform	inv_id	list	entry	out_of_scope_reason
+shopify	SH-I-0026	api-resources	Timeline events	cross-resource activity log (events and comments on other resources); its placement follows the resources it records
+shopify	SH-I-0028	api-resources	GraphQL Types	the API reference's index of all types (connections, enums, payloads); not a functional group
+shopify	SH-I-0039	api-resources	Shopify CLI	developer tooling for building apps (how code is written and shipped), not a commerce concern with a placement of its own
+shopify	SH-I-0040	api-resources	Shopify GitHub app	developer tooling for building apps (how code is written and shipped), not a commerce concern with a placement of its own
+shopify	SH-I-0041	api-resources	React Router app package	developer tooling for building apps (how code is written and shipped), not a commerce concern with a placement of its own
+shopify	SH-I-0042	api-resources	Stores	developer tooling for building apps (how code is written and shipped), not a commerce concern with a placement of its own
+shopify	SH-I-0043	api-resources	Libraries and templates	developer tooling for building apps (how code is written and shipped), not a commerce concern with a placement of its own
+shopify	SH-I-0742	admin-navigation	Home	the admin's landing page; it gathers other concerns rather than holding one
+shopify	SH-I-0772	admin-navigation	Settings	container for the settings pages, each listed and placed separately
+shopify	SH-I-0780	admin-navigation	AiValue	admin route section whose function the captured route data does not state; no placement can be shown
+shopify	SH-I-0784	admin-navigation	Batches	admin route section whose function the captured route data does not state; no placement can be shown
+shopify	SH-I-0803	admin-navigation	EmptyTest	test scaffolding in the admin bundle, not a merchant concern
+shopify	SH-I-0804	admin-navigation	Extensibility	admin route section whose function the captured route data does not state; no placement can be shown
+shopify	SH-I-0810	admin-navigation	Home	the admin's landing page; it gathers other concerns rather than holding one
+shopify	SH-I-0820	admin-navigation	MilestoneAwards	recognition of merchant sales milestones; no commerce placement shown in the lists read
+shopify	SH-I-0833	admin-navigation	RichTextEditor	shared editor component of the admin, not a concern
+shopify	SH-I-0836	admin-navigation	Settings	container for the settings pages, each listed and placed separately
+shopify	SH-I-0843	admin-navigation	TestIntent	test scaffolding in the admin bundle, not a merchant concern
+shopify	SH-I-0845	admin-navigation	WatchApp	companion watch app page; no commerce placement shown in the lists read
+shopify	SH-I-1140	plan-features	Core features	group heading in the list; the items under it are placed individually
+shopify	SH-I-1157	plan-features	In-person sales	group heading in the list; the items under it are placed individually
+shopify	SH-I-1160	plan-features	AI features	group heading in the list; the items under it are placed individually
+shopify	SH-I-1164	plan-features	Accepting payments	group heading in the list; the items under it are placed individually
+shopify	SH-I-1178	plan-features	Hosting	group heading in the list; the items under it are placed individually
+shopify	SH-I-1182	plan-features	Marketing	group heading in the list; the items under it are placed individually
+shopify	SH-I-1194	plan-features	Shipping	group heading in the list; the items under it are placed individually
+shopify	SH-I-1200	plan-features	Marketplaces	group heading in the list; the items under it are placed individually
+shopify	SH-I-1204	plan-features	Customization	group heading in the list; the items under it are placed individually
+shopify	SH-I-1210	plan-features	Sell globally	group heading in the list; the items under it are placed individually
+shopify	SH-I-1218	plan-features	Finance	group heading in the list; the items under it are placed individually
+shopify	SH-I-1223	plan-features	Tax	group heading in the list; the items under it are placed individually
+shopify	SH-I-1228	plan-features	Just for Plus	group heading in the list; the items under it are placed individually
+shopify	SH-I-1242	plan-features	Core features	group heading in the list; the items under it are placed individually
+shopify	SH-I-1258	plan-features	In-person sales	group heading in the list; the items under it are placed individually
+shopify	SH-I-1261	plan-features	AI features	group heading in the list; the items under it are placed individually
+shopify	SH-I-1265	plan-features	Hosting	group heading in the list; the items under it are placed individually
+shopify	SH-I-1269	plan-features	Marketing	group heading in the list; the items under it are placed individually
+shopify	SH-I-1280	plan-features	Marketplaces	group heading in the list; the items under it are placed individually
+shopify	SH-I-1284	plan-features	Customization	group heading in the list; the items under it are placed individually
+shopify	SH-I-1290	plan-features	Sell globally*Requires Shopify Payments	group heading in the list; the items under it are placed individually
+shopify	SH-I-1297	plan-features	Finance	group heading in the list; the items under it are placed individually
+shopify	SH-I-1302	plan-features	Just for Plus	group heading in the list; the items under it are placed individually
+shopify	SH-I-1357	other:billing-charge-categories	All All	the picker's 'All' option, not a charge category
+shopify	SH-I-1383	legal-agreements	Information about Shopify's Patents	notice about Shopify's own patents; not a concern of the commerce platform's operation
+shopify	SH-I-1384	legal-agreements	Information about Shopify's Trademarks	notice about Shopify's own trademarks; not a concern of the commerce platform's operation
+shopify	SH-I-1763	other:account-destinations	Terms	page footer link to a legal page that is placed under the legal index
+shopify	SH-I-1764	other:account-destinations	Privacy Policy	page footer link to a legal page that is placed under the legal index
+shopify	SH-I-1980	other:shopify-com-products	Test & Launch	product menu label whose scope is not stated in the list; no placement can be shown
+shopify	SH-I-1991	other:shopify-apps	Shopify: Ecommerce business	mobile client of the Shopify admin; the concerns it reaches are placed individually
+shopify	SH-I-1995	other:shopify-apps	Tinker by Shopify	separate creative-tools app published by Shopify; no commerce placement is shown in the lists read
+shopify	SH-I-2364	legal-agreements	6. Confidentiality	confidentiality clause between the contracting parties; not a concern with a commerce placement
+shopify	SH-I-2365	legal-agreements	7. Limitation of Liability and Indemnification	allocation of liability in general; recorded under the 'legal' placement of each concern instead
+shopify	SH-I-2367	legal-agreements	9. Additional Services	group heading in the list; the items under it are placed individually
+shopify	SH-I-2368	legal-agreements	10. Feedback and Reviews	rules for feedback given to Shopify; not a commerce concern
+shopify	SH-I-2373	legal-agreements	15. Modifications	rules for changing the agreement; not a commerce concern
+shopify	SH-I-2374	legal-agreements	16. General Conditions	boilerplate clauses of the agreement; not a commerce concern
+shopify	SH-I-2375	legal-agreements	Part I (Global Terms)	group heading in the list; the items under it are placed individually
+shopify	SH-I-2380	legal-agreements	Part II (Regional Terms)	group heading in the list; the items under it are placed individually
+shopify	SH-I-2393	legal-agreements	II. DEFINITIONS	definitions section of the addendum; not a concern
+shopify	SH-I-2396	legal-agreements	V. MISCELLANEOUS	boilerplate section of the addendum; not a concern
+shopify	SH-I-2398	legal-agreements	Introduction	introduction of the policy; not a concern
+shopify	SH-I-2399	legal-agreements	Our values	statement of values; not a concern
+shopify	SH-I-2407	legal-agreements	How you can reach us	contact addresses; recorded as evidence for data.location, not a concern of its own
+shopify	SH-I-2409	legal-agreements	9.1 Scope	defines the term Additional Services; the services are listed and placed separately
+shopify	SH-I-2418	legal-agreements	9.10 Beta Services	pre-release features offered by invitation; no concern of its own is named
+shopify	SH-I-2519	other:store-resource-limits	maxProductOptions	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2520	other:store-resource-limits	maxProductVariants	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2521	other:store-entitlements	ignoreReviewModalCooldown	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2525	other:store-entitlements	shopPayExternalApi	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2531	other:store-entitlements	support	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2532	other:store-entitlements	checkoutExtensibility	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2537	other:store-entitlements	partialOrderPayments	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2544	other:store-entitlements	selfHostedDomain	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2545	other:store-entitlements	persistedSelfHostedDomain	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2547	other:store-entitlements	draftOrders	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2548	other:store-entitlements	dutiesAndImportTaxes	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2549	other:store-entitlements	taxPlatform	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2551	other:store-entitlements	appDevelopment	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2552	other:store-entitlements	retail	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2555	other:store-entitlements	upsell	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2559	other:store-features	argusConnect	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2560	other:store-features	avalaraAvatax	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2563	other:store-features	b2bDiscountsEligibilityEnabled	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2565	other:store-features	bankAccountChangesLocked	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2568	other:store-features	customerAccountsMultipass	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2569	other:store-features	customerAuthenticationThirdParty	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2570	other:store-features	eligibleForAlertsFeedRollout	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2571	other:store-features	eligibleForEditionsLaunch	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2572	other:store-features	eligibleForMultiproviderPayoutUxUplift	Unplaced: no Shopify source held ties this key to a concern (routes naming it: payouts-next, payouts:details, payouts:list, which no concern's statements cover); values per store in notes.md, Unplaced keys
+shopify	SH-I-2573	other:store-features	eligibleForShopifyTax	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2575	other:store-features	preShopifyPaymentsEligibleForBalance	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2577	other:store-features	growthAgentEnabled	Unplaced: no Shopify source held ties this key to a concern (routes naming it: growth-configuration, growth:autopilot, which no concern's statements cover); values per store in notes.md, Unplaced keys
+shopify	SH-I-2578	other:store-features	landedCostIncoterms	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2579	other:store-features	perMarketIncoterms	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2582	other:store-features	multiCurrencyGatewayEnabled	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2583	other:store-features	multipass	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2586	other:store-features	posEnabled	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2587	other:store-features	catalogRolloutsEnabled	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2588	other:store-features	catalogStatusOverrideChangesetsEnabled	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2590	other:store-features	shopPayProcessedByPartners	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2592	other:store-features	reports	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2593	other:store-features	reportsEditing	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2594	other:store-features	sellsSubscriptions	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2595	other:store-features	sidekickEnabled	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2596	other:store-features	shopifyPaymentsEnabled	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2597	other:store-features	storefront	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2598	other:store-features	tagsPerProductLimitEnabled	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2599	other:store-features	threeDSecureEligibilityForCountry	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2600	other:store-features	usingMarketsPro	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2601	other:store-features	managedMarkets	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2602	other:store-features	appliedSpellcastingEnabled	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2603	other:store-features	volumePricingEnabled	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2604	other:store-features	marketsHome	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2605	other:store-features	newMarketsPermissions	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2607	other:store-features	sandbox	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2609	other:store-features	subCountryMarketsEnabled	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+shopify	SH-I-2610	other:store-features	marketDeliveryProfiles	Unplaced: no Shopify source held ties this key to a concern (no route's eligibility in the admin router names it); values per store in notes.md, Unplaced keys
+salla	SA-I-0003	api-resources	Responses	describes response codes and error formats common to every API group
+salla	SA-I-0004	api-resources	Pagination	describes paging mechanics common to every API group
+salla	SA-I-0007	api-resources	Welcome 👋	an introduction page to the developer documentation
+salla	SA-I-0011	api-resources	Get Started	a tutorial page
+salla	SA-I-0012	api-resources	Create Your First App	a tutorial page
+salla	SA-I-0015	api-resources	APIs	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-0073	api-resources	Root	an unnamed root folder of the App API navigation
+salla	SA-I-0156	extension-points	Merchant 	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-0160	extension-points	Storefront	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-0169	extension-points	Partner APIs	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-0176	extension-points	Dev Tools	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-0180	extension-points	Salla - Opensource	a link to Salla's public code repositories
+salla	SA-I-0181	extension-points	Salla - Developers Community	a link to the developer chat community
+salla	SA-I-0182	extension-points	Blog	a link to the developer blog
+salla	SA-I-0187	extension-points	All	the 'All' filter of the category picker, not a category
+salla	SA-I-0206	extension-points	All	a merchant-goal tag for browsing the App Store (what an app helps with), not a part of the platform
+salla	SA-I-0207	extension-points	Attract new visitors	a merchant-goal tag for browsing the App Store (what an app helps with), not a part of the platform
+salla	SA-I-0208	extension-points	Convert visitors into buyers	a merchant-goal tag for browsing the App Store (what an app helps with), not a part of the platform
+salla	SA-I-0209	extension-points	Increase AOV	a merchant-goal tag for browsing the App Store (what an app helps with), not a part of the platform
+salla	SA-I-0210	extension-points	Recover abandoned carts	a merchant-goal tag for browsing the App Store (what an app helps with), not a part of the platform
+salla	SA-I-0211	extension-points	Turn buyers into loyal customers	a merchant-goal tag for browsing the App Store (what an app helps with), not a part of the platform
+salla	SA-I-0212	extension-points	Reach customers wherever they are	a merchant-goal tag for browsing the App Store (what an app helps with), not a part of the platform
+salla	SA-I-0213	extension-points	Ship faster and cheaper	a merchant-goal tag for browsing the App Store (what an app helps with), not a part of the platform
+salla	SA-I-0214	extension-points	Build trust after the sale	a merchant-goal tag for browsing the App Store (what an app helps with), not a part of the platform
+salla	SA-I-0215	extension-points	Sell in more places	a merchant-goal tag for browsing the App Store (what an app helps with), not a part of the platform
+salla	SA-I-0216	extension-points	Automate daily operations	a merchant-goal tag for browsing the App Store (what an app helps with), not a part of the platform
+salla	SA-I-0217	extension-points	Know your numbers	a merchant-goal tag for browsing the App Store (what an app helps with), not a part of the platform
+salla	SA-I-0218	extension-points	Control inventory & accounting	a merchant-goal tag for browsing the App Store (what an app helps with), not a part of the platform
+salla	SA-I-0219	extension-points	Design without a developer	a merchant-goal tag for browsing the App Store (what an app helps with), not a part of the platform
+salla	SA-I-0220	extension-points	Grow with AI	a merchant-goal tag for browsing the App Store (what an app helps with), not a part of the platform
+salla	SA-I-0231	extension-points	Attract new visitors	a merchant-goal tag for an app's listing, not a part of the platform
+salla	SA-I-0232	extension-points	Convert visitors into buyers	a merchant-goal tag for an app's listing, not a part of the platform
+salla	SA-I-0233	extension-points	Increase AOV	a merchant-goal tag for an app's listing, not a part of the platform
+salla	SA-I-0234	extension-points	Recover abandoned carts	a merchant-goal tag for an app's listing, not a part of the platform
+salla	SA-I-0235	extension-points	Turn buyers into loyal customers	a merchant-goal tag for an app's listing, not a part of the platform
+salla	SA-I-0236	extension-points	Reach customers wherever they are	a merchant-goal tag for an app's listing, not a part of the platform
+salla	SA-I-0237	extension-points	Ship faster and cheaper	a merchant-goal tag for an app's listing, not a part of the platform
+salla	SA-I-0238	extension-points	Build trust after the sale	a merchant-goal tag for an app's listing, not a part of the platform
+salla	SA-I-0239	extension-points	Sell in more places	a merchant-goal tag for an app's listing, not a part of the platform
+salla	SA-I-0240	extension-points	Automate daily operations	a merchant-goal tag for an app's listing, not a part of the platform
+salla	SA-I-0241	extension-points	Know your numbers	a merchant-goal tag for an app's listing, not a part of the platform
+salla	SA-I-0242	extension-points	Control inventory & accounting	a merchant-goal tag for an app's listing, not a part of the platform
+salla	SA-I-0243	extension-points	Design without a developer	a merchant-goal tag for an app's listing, not a part of the platform
+salla	SA-I-0244	extension-points	Grow with AI	a merchant-goal tag for an app's listing, not a part of the platform
+salla	SA-I-0245	extension-points	Electronics	an industry sector used to classify themes, not a part of the platform
+salla	SA-I-0246	extension-points	Home Supplies	an industry sector used to classify themes, not a part of the platform
+salla	SA-I-0247	extension-points	Fashion	an industry sector used to classify themes, not a part of the platform
+salla	SA-I-0248	extension-points	Jewelery	an industry sector used to classify themes, not a part of the platform
+salla	SA-I-0249	extension-points	Cosmetics and care	an industry sector used to classify themes, not a part of the platform
+salla	SA-I-0250	extension-points	Accessories and gifts	an industry sector used to classify themes, not a part of the platform
+salla	SA-I-0251	extension-points	Arts and Music	an industry sector used to classify themes, not a part of the platform
+salla	SA-I-0252	extension-points	Books and Education	an industry sector used to classify themes, not a part of the platform
+salla	SA-I-0253	extension-points	Services	an industry sector used to classify themes, not a part of the platform
+salla	SA-I-0254	extension-points	Health and Fitness	an industry sector used to classify themes, not a part of the platform
+salla	SA-I-0255	extension-points	Restaurants and cafes	an industry sector used to classify themes, not a part of the platform
+salla	SA-I-0256	extension-points	Food and Grocery	an industry sector used to classify themes, not a part of the platform
+salla	SA-I-0257	extension-points	Animals	an industry sector used to classify themes, not a part of the platform
+salla	SA-I-0258	extension-points	Cars	an industry sector used to classify themes, not a part of the platform
+salla	SA-I-0259	extension-points	Digital products	an industry sector used to classify themes, not a part of the platform
+salla	SA-I-0260	extension-points	Charity	an industry sector used to classify themes, not a part of the platform
+salla	SA-I-0261	extension-points	Toys	an industry sector used to classify themes, not a part of the platform
+salla	SA-I-0262	extension-points	Medical clinic	an industry sector used to classify themes, not a part of the platform
+salla	SA-I-0676	settings	Account	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-0681	settings	Store	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-0689	settings	Operations	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-0700	settings	More	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-0770	admin-navigation	All	a menu button that opens a group whose links are inventoried one by one
+salla	SA-I-0771	admin-navigation	Orders	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-0773	admin-navigation	New Order	an action button inside a page that is inventoried itself
+salla	SA-I-0781	admin-navigation	New section	an action button inside a page that is inventoried itself
+salla	SA-I-0783	admin-navigation	Text field	an action button inside a page that is inventoried itself
+salla	SA-I-0784	admin-navigation	Number field	an action button inside a page that is inventoried itself
+salla	SA-I-0785	admin-navigation	Select field	an action button inside a page that is inventoried itself
+salla	SA-I-0786	admin-navigation	Date field	an action button inside a page that is inventoried itself
+salla	SA-I-0788	admin-navigation	Add a New Template	an action button inside a page that is inventoried itself
+salla	SA-I-0790	admin-navigation	Products	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-0792	admin-navigation	Physical Product	an action button inside a page that is inventoried itself
+salla	SA-I-0795	admin-navigation	New option	an action button inside a page that is inventoried itself
+salla	SA-I-0800	admin-navigation	New campaign	an action button inside a page that is inventoried itself
+salla	SA-I-0802	admin-navigation	New restriction	an action button inside a page that is inventoried itself
+salla	SA-I-0806	admin-navigation	Add a New Template	an action button inside a page that is inventoried itself
+salla	SA-I-0809	admin-navigation	New branch/warehouse	an action button inside a page that is inventoried itself
+salla	SA-I-0811	admin-navigation	Marketing	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-0827	admin-navigation	Online Store	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-0832	admin-navigation	Add New Page	an action button inside a page that is inventoried itself
+salla	SA-I-0834	admin-navigation	New link	an action button inside a page that is inventoried itself
+salla	SA-I-0835	admin-navigation	Sales Channels	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-0839	admin-navigation	Create a landing page	an action button inside a page that is inventoried itself
+salla	SA-I-0841	admin-navigation	Customers	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-0843	admin-navigation	New Customer	an action button inside a page that is inventoried itself
+salla	SA-I-0846	admin-navigation	New group	an action button inside a page that is inventoried itself
+salla	SA-I-0848	admin-navigation	Staff	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-0850	admin-navigation	Add staff	an action button inside a page that is inventoried itself
+salla	SA-I-0852	admin-navigation	New role	an action button inside a page that is inventoried itself
+salla	SA-I-0854	admin-navigation	Reports	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-0858	admin-navigation	Tools & Settings	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-0859	admin-navigation	Help Desk	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-0863	admin-navigation	New ticket	an action button inside a page that is inventoried itself
+salla	SA-I-0866	admin-navigation	Shipping	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-0870	admin-navigation	New order	an action button inside a page that is inventoried itself
+salla	SA-I-0874	admin-navigation	Payment	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-0878	admin-navigation	Add New Restriction	an action button inside a page that is inventoried itself
+salla	SA-I-0882	admin-navigation	Tools	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-0887	admin-navigation	Add New Webhook	an action button inside a page that is inventoried itself
+salla	SA-I-0888	admin-navigation	Logs	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-0897	admin-navigation	Home	the dashboard home page, which summarises other concerns
+salla	SA-I-0898	admin-navigation	Orders	a menu button that opens a group whose links are inventoried one by one
+salla	SA-I-0899	admin-navigation	Products	a menu button that opens a group whose links are inventoried one by one
+salla	SA-I-0900	admin-navigation	Marketing	a menu button that opens a group whose links are inventoried one by one
+salla	SA-I-0901	admin-navigation	Store & Channels	a menu button that opens a group whose links are inventoried one by one
+salla	SA-I-0902	admin-navigation	Reports	a menu button that opens a group whose links are inventoried one by one
+salla	SA-I-0903	admin-navigation	logo Partners	the portal logo link
+salla	SA-I-0904	admin-navigation	(no text)	a menu opener without its own page
+salla	SA-I-0907	admin-navigation	Themes	a menu opener without its own page
+salla	SA-I-0910	admin-navigation	My Services	a menu opener without its own page
+salla	SA-I-0914	admin-navigation	Affiliates	a menu opener without its own page
+salla	SA-I-0920	admin-navigation	Influencer	a menu opener without its own page
+salla	SA-I-0923	admin-navigation	Marketing Tools NEW	a menu opener without its own page
+salla	SA-I-0926	admin-navigation	My Subscriptions	a menu opener without its own page
+salla	SA-I-0930	admin-navigation	Stores	a menu opener without its own page
+salla	SA-I-0935	admin-navigation	Payments	a menu opener without its own page
+salla	SA-I-0940	admin-navigation	Others	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-0944	admin-navigation	Help Center	a menu opener without its own page
+salla	SA-I-0948	plan-features	مزايا أساسية	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-0955	plan-features	الدفع	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-0972	plan-features	إدارة المنتجات	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-0984	plan-features	إدارة الطلبات	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1000	plan-features	أدوات التسويق	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1017	plan-features	الشحن والتوصيل	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1030	plan-features	تصميم المتجر	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1036	plan-features	دومين المتجر	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1042	plan-features	التقارير	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1054	plan-features	العملاء	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1061	plan-features	محفظة المتجر والفوترة	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1066	plan-features	قنوات البيع	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1070	plan-features	إدارة تجربة العميل	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1077	plan-features	موظفو المتجر	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1081	plan-features	إدارة الحساب والمتجر	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1089	plan-features	المزايا المتقدمة	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1107	plan-features	أدوات التسويق	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1111	plan-features	الشحن والتوصيل	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1113	plan-features	تصميم المتجر	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1116	plan-features	العملاء	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1119	plan-features	محفظة المتجر والفوترة	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1121	plan-features	المزايا المتقدمة	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1126	plan-features	إدارة الطلبات	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1132	plan-features	إدارة المنتجات	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1137	plan-features	الدفع	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1140	plan-features	مزايا أساسية	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1154	plan-features	المزايا الأساسية	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1164	plan-features	الدفع	a section heading of the plan comparison table; its lines are not in the held page text
+salla	SA-I-1165	plan-features	إدارة المنتجات	a section heading of the plan comparison table; its lines are not in the held page text
+salla	SA-I-1166	plan-features	إدارة الطلبات	a section heading of the plan comparison table; its lines are not in the held page text
+salla	SA-I-1167	plan-features	أدوات التسويق	a section heading of the plan comparison table; its lines are not in the held page text
+salla	SA-I-1168	plan-features	الشحن والتوصيل	a section heading of the plan comparison table; its lines are not in the held page text
+salla	SA-I-1169	plan-features	تصميم المتجر	a section heading of the plan comparison table; its lines are not in the held page text
+salla	SA-I-1170	plan-features	التقارير	a section heading of the plan comparison table; its lines are not in the held page text
+salla	SA-I-1171	plan-features	دومين المتجر	a section heading of the plan comparison table; its lines are not in the held page text
+salla	SA-I-1172	plan-features	العملاء	a section heading of the plan comparison table; its lines are not in the held page text
+salla	SA-I-1173	plan-features	المزايا الأساسية	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1179	plan-features	الدفع	a section heading of the plan comparison table; its lines are not in the held page text
+salla	SA-I-1180	plan-features	إدارة المنتجات	a section heading of the plan comparison table; its lines are not in the held page text
+salla	SA-I-1181	plan-features	إدارة الطلبات	a section heading of the plan comparison table; its lines are not in the held page text
+salla	SA-I-1182	plan-features	أدوات التسويق	a section heading of the plan comparison table; its lines are not in the held page text
+salla	SA-I-1183	plan-features	الشحن والتوصيل	a section heading of the plan comparison table; its lines are not in the held page text
+salla	SA-I-1184	plan-features	تصميم المتجر	a section heading of the plan comparison table; its lines are not in the held page text
+salla	SA-I-1185	plan-features	التقارير	a section heading of the plan comparison table; its lines are not in the held page text
+salla	SA-I-1186	plan-features	دومين المتجر	a section heading of the plan comparison table; its lines are not in the held page text
+salla	SA-I-1187	plan-features	العملاء	a section heading of the plan comparison table; its lines are not in the held page text
+salla	SA-I-1200	plan-features	البيع للشركات وبالجملة B2B	a marketing line for selling to businesses; the page names no feature or setting behind it
+salla	SA-I-1205	other:footer-markets	مدعوم في:	the heading of the footer's list of countries; the countries are inventoried one by one
+salla	SA-I-1244	other:staff-permissions	الرئيسية	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1250	other:staff-permissions	المنتجات	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1265	other:staff-permissions	الطلبات	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1294	other:staff-permissions	العملاء	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1302	other:staff-permissions	نقل المخزون	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1309	other:staff-permissions	الأسئلة والتقييمات	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1314	other:staff-permissions	التقارير	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1341	other:staff-permissions	الصفحات التعريفية	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1344	other:staff-permissions	المدونة	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1347	other:staff-permissions	التسويق	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1363	other:staff-permissions	sweply_browse	names a service (sweply) whose purpose the list does not state
+salla	SA-I-1364	other:staff-permissions	sweply_management	names a service (sweply) whose purpose the list does not state
+salla	SA-I-1383	other:staff-permissions	إعدادات المتجر	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1425	other:staff-permissions	موظفي المتجر	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1432	other:staff-permissions	المدفوعات	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1437	other:staff-permissions	محلي	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1440	other:staff-permissions	سلة بوينت	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1455	other:staff-permissions	سوق الجملة	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1461	other:partner-access-permissions	Dashboard	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1467	other:partner-access-permissions	Products	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1482	other:partner-access-permissions	Orders	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1511	other:partner-access-permissions	Customers	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1519	other:partner-access-permissions	Inventory Transfer	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1526	other:partner-access-permissions	Questions & Reviews	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1531	other:partner-access-permissions	Reports	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1558	other:partner-access-permissions	Landing Pages	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1561	other:partner-access-permissions	Blog	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1564	other:partner-access-permissions	Marketing	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1580	other:partner-access-permissions	sweply_browse	names a service (sweply) whose purpose the list does not state
+salla	SA-I-1581	other:partner-access-permissions	sweply_management	names a service (sweply) whose purpose the list does not state
+salla	SA-I-1600	other:partner-access-permissions	Store Settings	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1642	other:partner-access-permissions	Payments	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1647	other:partner-access-permissions	Mahally	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1650	other:partner-access-permissions	Salla Point	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1665	other:partner-access-permissions	Vendor Buy	a group heading in the list; the entries under it are inventoried one by one
+salla	SA-I-1945	other:partner-payout-statuses	All	the 'All' option of the filter, not a status
+salla	SA-I-1961	other:dashboard-features	fallback	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-1963	other:dashboard-features	k525	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-1964	other:dashboard-features	aha-ideas	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-1967	other:dashboard-features	aws-email	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-1971	other:dashboard-features	breadcrumbs	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-1976	other:dashboard-features	dal	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-1989	other:dashboard-features	onboarding-gifts-test	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-1990	other:dashboard-features	onboarding-gifts:free_shipping	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-1991	other:dashboard-features	organization	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-1993	other:dashboard-features	planhat	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-1997	other:dashboard-features	rutterapi-service	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-2010	other:dashboard-features	shipping-delivery-model	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-2019	other:dashboard-features	dynamic-service-type-resolution	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-2023	other:dashboard-features	shipping-new-pages	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-2025	other:dashboard-features	shipping-company-settlement	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-2026	other:dashboard-features	delegate-access-deny-list	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-2037	other:dashboard-features	multi-integration-credentials	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-2041	other:dashboard-features	shipping-details-proposal	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-2051	other:dashboard-features	fast-shipping	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-2086	other:dashboard-features	websocket-notifications	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-2098	other:dashboard-features	gamification-system	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-2104	other:dashboard-features	merchant-auth-callback	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-2105	other:dashboard-features	post-onboarding-new-design	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-2141	other:dashboard-features	tawasul	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-2152	other:dashboard-features	cash-payment	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-2156	other:dashboard-features	product-store-features	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-2162	other:dashboard-features	salla-account	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-2178	other:dashboard-features	auth-v2	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-2186	other:dashboard-features	settings-control-panel	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-2189	other:dashboard-features	national-day-banners	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-2206	other:dashboard-features	passioneurs-service	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-2221	other:dashboard-features	live-js	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-2240	other:dashboard-features	basket-gap	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-2241	other:dashboard-features	checkout-xsell	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-2247	other:dashboard-features	partnerships	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-2285	other:dashboard-features	gotenberg-webhook	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-2295	other:dashboard-features	orders-table-view	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-2307	other:dashboard-features	scopes-sitemap	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-2334	other:dashboard-features	salla-four	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-2335	other:dashboard-features	dark-mode	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-2354	other:dashboard-features	auth-forced	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-2366	other:dashboard-features	legacy-login-flow	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-2382	other:dashboard-features	form-builder4	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-2399	other:dashboard-features	app_vendor	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-2416	other:dashboard-features	general-manager-token	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-2453	other:dashboard-features	virtual-iban	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-2493	other:dashboard-features	legacy-themes-unisearch	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-2527	other:dashboard-features	display-parent-company-name	a feature-flag name that does not identify a concern on its own (rollout, UI or internal toggle)
+salla	SA-I-2531	other:dashboard-apps	@salla.sa/ui-merchant-widgets	the dashboard home widgets bundle, which shows other concerns
+salla	SA-I-2557	other:dashboard-apps	@salla.sa/ui-merchant-onboarding	the store onboarding flow, which leads into other concerns
+salla	SA-I-2558	other:dashboard-apps	@salla.sa/ui-merchant-persona	a merchant profiling questionnaire bundle; the list does not state its purpose
+salla	SA-I-2566	other:dashboard-apps	@salla.sa/ui-merchant-setup	a setup flow bundle that leads into other concerns
+salla	SA-I-2573	other:dashboard-apps	@salla.sa/ui-merchant-gamification	a gamification bundle; the list does not state its purpose
+salla	SA-I-2601	other:dashboard-apps	@salla.sa/ui-merchant-rms	a bundle named rms; the list does not state its purpose
+salla	SA-I-2608	other:dashboard-apps	@salla.sa/ui-merchant-flows	a workflow bundle; the list does not state its purpose
+salla	SA-I-2610	other:dashboard-apps	@salla.sa/ui-merchant-organization	an organization bundle; the list does not state its purpose
+woocommerce	WC-I-0618	other:plugin-page-features	Build on a platform that scales	A scalability claim on the plugin page; it names no concern with a placement.
+woocommerce	WC-I-0636	legal-agreements	Woo trademark guidelines	Rules for using Woo's own trademarks and logos; no store concern is placed by them.
+woocommerce	WC-I-0637	legal-agreements	Brand and logo guidelines	Rules for using Woo's own trademarks and logos; no store concern is placed by them.
+woocommerce	WC-I-0645	legal-agreements	Cookie Policy	Covers cookies on the WooCommerce.com website itself, not the merchant's store.
+woocommerce	WC-I-0648	legal-agreements	customer-research-agreement	Terms for taking part in Woo's customer research, not a store concern.
+woocommerce	WC-I-0649	legal-agreements	code-of-conduct	Community code of conduct for Woo events and spaces, not a store concern.
+woocommerce	WC-I-0651	legal-agreements	terms-conditions/woopayments-promotion	Time-limited WooPayments promotional offer terms; they set no standing placement.
+woocommerce	WC-I-0652	legal-agreements	terms-conditions/woopayments-mid-2025-promotional-offer-terms-and-conditions	Time-limited WooPayments promotional offer terms; they set no standing placement.
+woocommerce	WC-I-0653	legal-agreements	terms-conditions/woopayments-action-promotion-2023	Time-limited WooPayments promotional offer terms; they set no standing placement.

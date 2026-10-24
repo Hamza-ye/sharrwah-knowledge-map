@@ -1,0 +1,18 @@
+{
+ "n": 1,
+ "url": "https://www.shopify.com/legal/shopify-credit-program-terms",
+ "dir": "items/001-shopify.com",
+ "fetched_at": "2026-10-11T07:51:49Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.shopify.com/legal/shopify-credit-program-terms",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 73069,
+ "cited_in": [
+  "Q1 Shopify re-pass"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "6150ded8c7526a642a1e5e8c8fb69eb1378d6b627856ae8b6ba705931db9d74c",
+ "raw_ext": "html"
+}

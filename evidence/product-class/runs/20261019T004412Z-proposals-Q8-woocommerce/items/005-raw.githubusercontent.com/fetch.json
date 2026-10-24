@@ -1,0 +1,18 @@
+{
+ "n": 5,
+ "url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/woo-marketplace/excellence-verified-badge.md",
+ "dir": "items/005-raw.githubusercontent.com",
+ "fetched_at": "2026-10-19T00:44:16Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/woo-marketplace/excellence-verified-badge.md",
+ "content_type": "text/plain; charset=utf-8",
+ "bytes": 3113,
+ "cited_in": [
+  "studies/proposals/records/Q8/woocommerce/citations.tsv"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "fd9022e2ccaa136f0d871ffe24c629769af99a69e5bfdcba06eed85726657f38",
+ "raw_ext": "txt"
+}

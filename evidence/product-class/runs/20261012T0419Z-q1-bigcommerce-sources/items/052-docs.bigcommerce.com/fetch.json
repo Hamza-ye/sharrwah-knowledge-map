@@ -1,0 +1,19 @@
+{
+ "n": 52,
+ "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/payments/stored-instruments.md",
+ "dir": "items/052-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:20:07Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/payments/stored-instruments.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 665,
+ "cited_in": [
+  "BC-S-0112",
+  "BC-S-0117"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "c9a4c65800b422547ef94acdc10439939aded169d437f5bc032fbd6210a6df2d",
+ "raw_ext": "txt"
+}

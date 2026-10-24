@@ -1,0 +1,22 @@
+{
+ "n": 105,
+ "url": "https://help.shopify.com/en/manual/your-account/manage-billing/billing-charges/types-of-charges/third-party-charges/third-party-transaction-fees.md",
+ "dir": "items/105-help.shopify.com",
+ "fetched_at": "2026-10-11T06:13:06Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/your-account/manage-billing/billing-charges/types-of-charges/third-party-charges/third-party-transaction-fees.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 1399,
+ "cited_in": [
+  "SH-S-0272",
+  "SH-S-0273",
+  "SH-S-0274",
+  "SH-S-0275",
+  "SH-S-0276"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "e506d3ca2a23f4d4659ceadc28c9d17e673920a96de54690cb20fb6bb36fa492",
+ "raw_ext": "txt"
+}

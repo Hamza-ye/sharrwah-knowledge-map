@@ -1,0 +1,20 @@
+{
+ "n": 31,
+ "url": "https://help.salla.sa/article/توثيق-متجرك-في-الإمارات-سلة/itmpqrf58xz73g2yyxfnllbz",
+ "dir": "items/031-help.salla.sa",
+ "fetched_at": "2026-10-10T23:51:47Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.salla.sa/article/توثيق-متجرك-في-الإمارات-سلة/itmpqrf58xz73g2yyxfnllbz",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 140480,
+ "cited_in": [
+  "SA-S-0135",
+  "SA-S-0136",
+  "SA-S-0137"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "0e8af18dae18ccdb08fcdf3f435d198f3b79466edb36551ec3051a3617c58183",
+ "raw_ext": "html"
+}

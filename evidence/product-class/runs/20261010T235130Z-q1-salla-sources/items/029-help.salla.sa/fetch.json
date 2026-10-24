@@ -1,0 +1,21 @@
+{
+ "n": 29,
+ "url": "https://help.salla.sa/article/توثيق-متجرك-الجديد-في-السعودية/ig4b4l5hc542j4bcd2tp82bz",
+ "dir": "items/029-help.salla.sa",
+ "fetched_at": "2026-10-10T23:51:45Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.salla.sa/article/توثيق-متجرك-الجديد-في-السعودية/ig4b4l5hc542j4bcd2tp82bz",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 137150,
+ "cited_in": [
+  "SA-S-0131",
+  "SA-S-0132",
+  "SA-S-0133",
+  "SA-S-0134"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "573a6287fd635602696d46ddec52ac003b6e9d1cb9fefc0d5059c01eac30b43c",
+ "raw_ext": "html"
+}

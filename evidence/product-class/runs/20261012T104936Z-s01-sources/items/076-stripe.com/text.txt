@@ -1,0 +1,305 @@
+Legal
+Stripe Connected Account Agreement
+
+For informational purposes only, we have translated the Stripe Connected Account Agreement into selected languages.
+
+	
+
+
+Read more about the changes made November 18, 2025.
+
+	
+
+
+Last modified: November 18, 2025
+
+This Stripe Connected Account Agreement (“Connected Account Agreement”) governs Connected Accounts’ use of Stripe Connect Services, and describes how Connected Accounts and their third-party platform provider(s) may use the Stripe Connect Services. This Connected Account Agreement forms a legal agreement between you or the entity you represent (“User”) and the applicable Stripe entity specified in Section 12 (Definitions) of the Stripe Services Agreement (“Stripe”). This Connected Account Agreement governs User’s rights and obligations when User’s Stripe Account is enrolled with a third-party platform provider using Stripe Connect Services (“Stripe Connect Platform”). The Stripe Services Agreement is incorporated into this Connected Account Agreement by this reference. Capitalized terms that are not defined in this Connected Account Agreement have the same meanings given to them in the Stripe Services Agreement. To the extent that there is a conflict between the Stripe Services Agreement and this Connected Account Agreement related to User’s use of the Stripe Connect Services, this Connected Account Agreement will prevail.
+
+1. User’s Stripe Account.
+
+Stripe Connect Platforms can help User use the Services. A Stripe Connect Platform may help User to create User’s Stripe Account, or enroll User’s existing Stripe Account with the Stripe Connect Platform. A Stripe Connect Platform may conduct Activity on User’s behalf and act as a data controller to instruct Stripe to process User Data (as defined below), as long as it does so according to User’s Platform Provider Agreement. Activity may be submitted, initiated or performed through the Stripe Dashboard or through the Stripe API, and this includes the communication of information about Transactions (if applicable), as well as other features as described in the Documentation. A Stripe Connect Platform may restrict User’s ability to (a) terminate the Stripe Connect Platform’s access to User’s Stripe Account; and (b) view, access or activate certain Services. User should read User’s Platform Provider Agreement carefully to understand the nature of the Platform Services and the Activity that a Stripe Connect Platform may conduct on User’s behalf. Stripe is not a Stripe Connect Platform, and only provides the Services described in this Connected Account Agreement and the Stripe Services Agreement.
+
+2. User’s Responsibilities.
+
+User must ensure that all information User provides to Stripe directly or through a Stripe Connect Platform is accurate and complete. User is solely responsible for, and Stripe disclaims all liability for, the provision of goods and services sold to User’s Customers as part of User’s use of the Services, and any obligations User may owe to User’s Customers.
+
+3. Stripe Dashboard.
+
+Depending on how the Stripe Connect Platform has implemented the Stripe Connect Services, User may be able to directly manage User’s Stripe Account through the Stripe Dashboard. If User is able to access the Stripe Dashboard, User is responsible for all actions taken on User’s Stripe Account through the Stripe Dashboard. If User does not have access to the Stripe Dashboard, User must contact the Stripe Connect Platform if User needs support or have any questions relating to the Services, this Connected Account Agreement or the Stripe Services Agreement.
+
+4. Relationship to Stripe Connect Platforms.
+
+4.1 User Data.
+
+(a) User Instructions. User instructs Stripe to (a) share any data it collects relating to User, and to Activity on User’s Stripe Account (“User Data”) with User’s Stripe Connect Platforms as necessary to provide User with the Stripe Connect Services and the Platform Services; and (b) process User Data as described in this Connected Account Agreement and Stripe’s Privacy Policy. User Data includes:
+
+(i) User’s Personal Data, and the Personal Data of User’s Representatives, employees, contractors and agents;
+
+(ii) User’s Customers’ Personal Data;
+
+(iii) data regarding Activity on any Stripe Account User has enrolled with a Stripe Connect Platform;
+
+(iv) data regarding Transactions; and
+
+(v) outputs of Stripe’s fraud and risk models.
+
+(b) Data Sharing. User acknowledges that Stripe Connect Platforms may share User Data with Stripe.
+
+(c) Notices and Consents. User must provide all notices and obtain all rights and consents necessary to enable Stripe to lawfully collect, use, retain and disclose that Personal Data as described in this Connected Account Agreement, the Stripe Services Agreement and Stripe’s Privacy Policy, to the extent User provides Personal Data to Stripe or instructs Stripe to collect Personal Data.
+
+4.2 Pricing and Fees.
+
+Stripe’s standard Fees for the Services are posted on the Stripe Pricing Page; but Stripe may have agreed to Fees with a Stripe Connect Platform that are different from these Fees. Stripe's Fees will either be disclosed to User separately or will be consolidated with the fees for the Platform Services. Stripe does not control and is not responsible for fees imposed by a Stripe Connect Platform, which should be made clear to User in User’s Platform Provider Agreement. At the Stripe Connect Platform’s request, Stripe may deduct from User’s Stripe Account balance both Stripe's Fees and the fees for Platform Services the Stripe Connect Platform specifies to Stripe.
+
+5. Disclaimer; Limitations on Stripe's Liability.
+
+Stripe is not responsible for, and disclaims all liability arising from or relating to:
+
+(a) any Stripe Connect Platform’s acts or omissions in providing services to User or User’s customers, or for any Stripe Connect Platform’s failure to comply with the terms of User’s Platform Provider Agreement;
+
+(b) User’s obligations to User’s Customers (including to properly describe and deliver the goods or services being sold to User’s Customers); or
+
+(c) User’s compliance with Laws and obligations related to User’s provision of goods or services to User’s Customers, including any obligation to provide customer service, notify and handle refunds or consumer complaints, provide receipts, register User’s legal entity, and other actions not related to the Services.
+
+This section is in addition to, and does not limit, the provisions of the Stripe Services Agreement that disclaim or limit Stripe’s liability.
+
+6. Other General Legal Terms.
+
+6.1 Term, Termination, and the Effects of Termination.
+
+(a) Term and Termination. The term of this Connected Account Agreement begins when User enrolls User’s Stripe Account with a Stripe Connect Platform and continues until User or Stripe terminate this Connected Account Agreement under this Section. User may terminate this Connected Account Agreement by (i) closing User’s Stripe Account or (ii) disconnecting User’s Stripe Account from all Stripe Connect Platforms. If after termination User registers User’s Stripe Account with a Stripe Connect Platform again, this Agreement will apply starting on the date on which User registers User’s Stripe Account with a Stripe Connect Platform again. Stripe may terminate this Connected Account Agreement at any time for any reason by notifying User.
+
+(b) Effects of Termination. Terminating this Connected Account Agreement will not immediately terminate the Stripe Services Agreement. Stripe and User may only terminate the Stripe Services Agreement according to its terms. This Connected Account Agreement will automatically terminate if the Stripe Services Agreement terminates.
+
+6.2 Stripe Services Agreement - Version.
+
+The Stripe Services Agreement version incorporated into this Connected Account Agreement is the version that applies to User’s Stripe Account Country.
+
+7. Non-applicability.
+
+Stripe Connect Platforms may also use Stripe Connect to direct Stripe to send funds to Connected Accounts outside of Stripe Payments Services. These fund transfers are not associated with payments a Stripe Connect Platform collects on User’s behalf using the Stripe services. If User receives funds of this kind, User is not using the Stripe services, and this Connected Account Agreement does not apply to User. Also, User must contact the Stripe Connect Platform, not Stripe, with any questions User has about the status of these funds.
+
+8. Key Definitions.
+
+The following terms are defined in the Stripe Services Agreement, but are repeated below for User’s convenience (User is a Platform User and Connected Account as the Stripe Services Agreement defines those terms):
+
+“Activity” means any action taken on or related to a Connected Account that a Stripe Connect Platform or a Connected Account initiates, submits or performs, either through the Stripe Technology or through the Stripe Connect Services, including communication regarding the Services relating to that Connected Account.
+
+“Platform Services” means the products and services that Platform Users receive from a Stripe Connect Platform, regardless of whether fees are charged (e.g., web development, customer support or hosting services).
+
+“Platform Provider Agreement” means, as to each Connected Account, collectively, the agreements that a Stripe Connect Platform has with that Connected Account.
+
+United States (English)
+Australia
+English
+Austria
+Deutsch
+English
+Belgium
+Nederlands
+Français
+Deutsch
+English
+Brazil
+Português
+English
+Bulgaria
+English
+Canada
+English
+Français
+Croatia
+English
+Italiano
+Cyprus
+English
+Czech Republic
+English
+Denmark
+English
+Estonia
+English
+Finland
+English
+Svenska
+France
+Français
+English
+Germany
+Deutsch
+English
+Gibraltar
+English
+Greece
+English
+Hong Kong SAR, China
+English
+简体中文
+Hungary
+English
+India
+English
+Ireland
+English
+Italy
+Italiano
+English
+Japan
+日本語
+English
+Latvia
+English
+Liechtenstein
+Deutsch
+English
+Lithuania
+English
+Luxembourg
+Français
+Deutsch
+English
+Mainland China
+简体中文
+English
+Malaysia
+English
+简体中文
+Malta
+English
+Mexico
+Español
+English
+Netherlands
+Nederlands
+English
+New Zealand
+English
+Norway
+English
+Poland
+English
+Portugal
+Português
+English
+Romania
+English
+Singapore
+English
+简体中文
+Slovakia
+English
+Slovenia
+English
+Italiano
+Spain
+Español
+English
+Sweden
+Svenska
+English
+Switzerland
+Deutsch
+Français
+Italiano
+English
+Thailand
+ไทย
+English
+United Arab Emirates
+English
+United Kingdom
+English
+United States
+English
+Español
+简体中文
+Products & pricing
+Pricing
+Atlas
+Authorization Boost
+Billing
+Capital
+Checkout
+Climate
+Connect
+Crypto
+Data Pipeline
+Elements
+Financial Connections
+Identity
+Invoicing
+Issuing
+Link
+Managed Payments
+Payment links
+Payments
+Payouts
+Radar
+Revenue Recognition
+Stripe Sigma
+Tax
+Terminal
+Treasury
+Solutions
+Enterprises
+Startups
+Agentic commerce
+Crypto
+Ecommerce
+Embedded finance
+Finance automation
+Global businesses
+In-app payments
+Marketplaces
+Money management
+Platforms
+SaaS
+AI companies
+Creator economy
+Fintech
+Gaming
+Hospitality, travel, and leisure
+Insurance
+Media and entertainment
+Nonprofits
+Professional services
+Public sector
+Retail
+Integrations & custom solutions
+Stripe App Marketplace
+Stripe Partner ecosystem
+Professional services
+Developers
+Documentation
+API reference
+API status
+API changelog
+Libraries and SDKs
+Stripe Projects
+Developer blog
+Resources
+Guides
+Customer stories
+Blog
+Community
+Sessions annual conference
+Privacy & terms
+Prohibited & restricted businesses
+Licenses
+Sitemap
+Cookie settings
+Your privacy choices
+More resources
+Company
+About
+Product roadmap
+Careers
+Newsroom
+Stripe Press
+Contact sales
+Support
+Get support
+Managed support plans
+CA residents: +1 888 926 2289
+Sign in 
+© 2026 Stripe, LLC

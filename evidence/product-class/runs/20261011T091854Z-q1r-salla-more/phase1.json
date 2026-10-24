@@ -1,0 +1,1126 @@
+[
+{
+"n": 1,
+"url": "https://docs.salla.dev/authorization.md",
+"dir": "items/001-docs.salla.dev",
+"fetched_at": "2026-10-11T09:18:54Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://docs.salla.dev/authorization.md",
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 9624,
+"cited_in": [
+"SA-S-5090",
+"SA-S-5091"
+],
+"raw_file": "raw.txt",
+"sha256": "4f69fd563b5c59e70dd64366e63a6977602f710a702186a8fb95531d7594f181",
+"raw_ext": "txt"
+},
+{
+"n": 2,
+"url": "https://docs.salla.dev/checkout-apis/overview.md",
+"dir": "items/002-docs.salla.dev",
+"fetched_at": "2026-10-11T09:18:56Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://docs.salla.dev/checkout-apis/overview.md",
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 1480,
+"cited_in": [
+"SA-S-5139"
+],
+"raw_file": "raw.txt",
+"sha256": "122fd187f0811ee2698d0ce039736077921f1217291a515361d5db4fe36f649a",
+"raw_ext": "txt"
+},
+{
+"n": 3,
+"url": "https://docs.salla.dev/component-bundle/publish-requirements.md",
+"dir": "items/003-docs.salla.dev",
+"fetched_at": "2026-10-11T09:18:57Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://docs.salla.dev/component-bundle/publish-requirements.md",
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 4230,
+"cited_in": [
+"SA-S-5032",
+"SA-S-5033"
+],
+"raw_file": "raw.txt",
+"sha256": "e0ab30ca01113253d02d7f26767ed99c0b4451f6ad7d11e6335570d0380e589c",
+"raw_ext": "txt"
+},
+{
+"n": 4,
+"url": "https://docs.salla.dev/ecommerc-events/getting-started.md",
+"dir": "items/004-docs.salla.dev",
+"fetched_at": "2026-10-11T09:18:59Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://docs.salla.dev/ecommerc-events/getting-started.md",
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 1501,
+"cited_in": [
+"SA-S-5149"
+],
+"raw_file": "raw.txt",
+"sha256": "d740b817db670e6d3eafe6e19382e357c3fb0fa350f042159a1a3c8aed8515dc",
+"raw_ext": "txt"
+},
+{
+"n": 5,
+"url": "https://docs.salla.dev/ecommerc-events/overview.md",
+"dir": "items/005-docs.salla.dev",
+"fetched_at": "2026-10-11T09:19:00Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://docs.salla.dev/ecommerc-events/overview.md",
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 1973,
+"cited_in": [
+"SA-S-5148"
+],
+"raw_file": "raw.txt",
+"sha256": "d55a08903d274fb24a0ea34e1321a2ef18c6b147574df1a01a4c1c2b79194745",
+"raw_ext": "txt"
+},
+{
+"n": 6,
+"url": "https://docs.salla.dev/partner-apis/app-events.md",
+"dir": "items/006-docs.salla.dev",
+"fetched_at": "2026-10-11T09:19:02Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://docs.salla.dev/partner-apis/app-events.md",
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 2989,
+"cited_in": [
+"SA-S-5093",
+"SA-S-5094"
+],
+"raw_file": "raw.txt",
+"sha256": "9578284041e68184927d3c96b3cd2dd2578fcf32d9198a084a6ad7cf64319ef8",
+"raw_ext": "txt"
+},
+{
+"n": 7,
+"url": "https://docs.salla.dev/report-builder/overview.md",
+"dir": "items/007-docs.salla.dev",
+"fetched_at": "2026-10-11T09:19:03Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://docs.salla.dev/report-builder/overview.md",
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 890,
+"cited_in": [
+"SA-S-5146"
+],
+"raw_file": "raw.txt",
+"sha256": "87020eac0584ecdb5ad9e28fe6c535b626a316dc85eec30792acf06c07b0c458",
+"raw_ext": "txt"
+},
+{
+"n": 8,
+"url": "https://docs.salla.dev/salla-cli/welcome.md",
+"dir": "items/008-docs.salla.dev",
+"fetched_at": "2026-10-11T09:19:05Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://docs.salla.dev/salla-cli/welcome.md",
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 1198,
+"cited_in": [
+"SA-S-5095",
+"SA-S-5096"
+],
+"raw_file": "raw.txt",
+"sha256": "a73458673f7375dbb3dfb5c0f264a32366a3179f5416964d50c7de4ee3a7a838",
+"raw_ext": "txt"
+},
+{
+"n": 9,
+"url": "https://docs.salla.dev/twilight-engine/publish-theme.md",
+"dir": "items/009-docs.salla.dev",
+"fetched_at": "2026-10-11T09:19:06Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://docs.salla.dev/twilight-engine/publish-theme.md",
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 2278,
+"cited_in": [
+"SA-S-5104",
+"SA-S-5106"
+],
+"raw_file": "raw.txt",
+"sha256": "f1a139a909cf9f2ac87e8bf373261ba8ba8749356f64a3b67634a140a63747dd",
+"raw_ext": "txt"
+},
+{
+"n": 10,
+"url": "https://docs.salla.dev/twilight-sdk/overview.md",
+"dir": "items/010-docs.salla.dev",
+"fetched_at": "2026-10-11T09:19:08Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://docs.salla.dev/twilight-sdk/overview.md",
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 3473,
+"cited_in": [
+"SA-S-5140",
+"SA-S-5141"
+],
+"raw_file": "raw.txt",
+"sha256": "2c6ca68b6c046754410d9b31e68f97251c0b449490c905d4b943654933e71134",
+"raw_ext": "txt"
+},
+{
+"n": 11,
+"url": "https://docs.salla.dev/webhooks.md",
+"dir": "items/011-docs.salla.dev",
+"fetched_at": "2026-10-11T09:19:09Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://docs.salla.dev/webhooks.md",
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 8449,
+"cited_in": [
+"SA-S-5092"
+],
+"raw_file": "raw.txt",
+"sha256": "26a0c37428ed1492edea2533b62090c86c0c145a0cb4d53edda9bd01c48acad4",
+"raw_ext": "txt"
+},
+{
+"n": 12,
+"url": "https://help.salla.sa/article/-إدارة-شكاوى-العملاء/q1ffpxzoyyg7ub0zn7owtnkn",
+"dir": "items/012-help.salla.sa",
+"fetched_at": "2026-10-11T09:19:09Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.salla.sa/article/-إدارة-شكاوى-العملاء/q1ffpxzoyyg7ub0zn7owtnkn",
+"content_type": "text/html; charset=utf-8",
+"bytes": 140744,
+"cited_in": [
+"SA-S-5085",
+"SA-S-5086",
+"SA-S-5087",
+"SA-S-5088",
+"SA-S-5089"
+],
+"raw_file": "raw.html",
+"sha256": "b08b2eaad0c820ecd08b5dbbbc75cf133408a2e721e6793f6af6b9aabcf8146c",
+"raw_ext": "html"
+},
+{
+"n": 13,
+"url": "https://help.salla.sa/article/-الأسئلة-الشائعة-حول-خيارات-التحكم-بالطلبات/ix4gbqo2r370slys3y5qqexs",
+"dir": "items/013-help.salla.sa",
+"fetched_at": "2026-10-11T09:19:10Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.salla.sa/article/-الأسئلة-الشائعة-حول-خيارات-التحكم-بالطلبات/ix4gbqo2r370slys3y5qqexs",
+"content_type": "text/html; charset=utf-8",
+"bytes": 142469,
+"cited_in": [
+"SA-S-5052",
+"SA-S-5053"
+],
+"raw_file": "raw.html",
+"sha256": "f8f09ded2b4b50db6f3e9da0c73af119d8bfc55238a2a3443ba65d73c5d075da",
+"raw_ext": "html"
+},
+{
+"n": 14,
+"url": "https://help.salla.sa/article/-متجر-الثيمات/r82be2jrf9wgyxahtnz9ug0d",
+"dir": "items/014-help.salla.sa",
+"fetched_at": "2026-10-11T09:19:12Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.salla.sa/article/-متجر-الثيمات/r82be2jrf9wgyxahtnz9ug0d",
+"content_type": "text/html; charset=utf-8",
+"bytes": 141275,
+"cited_in": [
+"SA-S-5031"
+],
+"raw_file": "raw.html",
+"sha256": "4de8c5d1ecd595daa09281e3d1ee8921cef8b626388399d002cc63b2ac82edb1",
+"raw_ext": "html"
+},
+{
+"n": 15,
+"url": "https://help.salla.sa/article/أسئلة-شائعة-حول-السلات-المتروكة/t54wwgpe01v4li9czmapvf68",
+"dir": "items/015-help.salla.sa",
+"fetched_at": "2026-10-11T09:19:13Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.salla.sa/article/أسئلة-شائعة-حول-السلات-المتروكة/t54wwgpe01v4li9czmapvf68",
+"content_type": "text/html; charset=utf-8",
+"bytes": 145130,
+"cited_in": [
+"SA-S-5017"
+],
+"raw_file": "raw.html",
+"sha256": "fcde1756bd1c142f562e7c2f5a3713f469bb8bc3bf47ac905272d66e38df1ea6",
+"raw_ext": "html"
+},
+{
+"n": 16,
+"url": "https://help.salla.sa/article/إدارة-التاجر-لمحفظة-العميل-وعروض-الكاش-باك/i31g2awy4qa2ifu6bp352zoy",
+"dir": "items/016-help.salla.sa",
+"fetched_at": "2026-10-11T09:19:15Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.salla.sa/article/إدارة-التاجر-لمحفظة-العميل-وعروض-الكاش-باك/i31g2awy4qa2ifu6bp352zoy",
+"content_type": "text/html; charset=utf-8",
+"bytes": 149006,
+"cited_in": [
+"SA-S-5019"
+],
+"raw_file": "raw.html",
+"sha256": "ab8d11b1213a3617597193ab1440347d3ccebc2d2e61428db30194d598b68a88",
+"raw_ext": "html"
+},
+{
+"n": 17,
+"url": "https://help.salla.sa/article/إدارة-التذكير-بإعادة-الشراء/rw8w5jopmx1d4mfa03a2t5gf",
+"dir": "items/017-help.salla.sa",
+"fetched_at": "2026-10-11T09:19:16Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.salla.sa/article/إدارة-التذكير-بإعادة-الشراء/rw8w5jopmx1d4mfa03a2t5gf",
+"content_type": "text/html; charset=utf-8",
+"bytes": 145181,
+"cited_in": [
+"SA-S-5026"
+],
+"raw_file": "raw.html",
+"sha256": "ad3604e5fdcd15ae9e83af729b76395eec669263821b726136897e31cfc4a414",
+"raw_ext": "html"
+},
+{
+"n": 18,
+"url": "https://help.salla.sa/article/إدارة-الصفحات-التعريفية/kdcldn0jro4n50amy4zwusga",
+"dir": "items/018-help.salla.sa",
+"fetched_at": "2026-10-11T09:19:18Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.salla.sa/article/إدارة-الصفحات-التعريفية/kdcldn0jro4n50amy4zwusga",
+"content_type": "text/html; charset=utf-8",
+"bytes": 140362,
+"cited_in": [
+"SA-S-5034"
+],
+"raw_file": "raw.html",
+"sha256": "325026c08a92fb7f0211779188ca3d2671ab96a1c49b52013587d0f369806da7",
+"raw_ext": "html"
+},
+{
+"n": 19,
+"url": "https://help.salla.sa/article/إدارة-المنتجات/oc3r8o7ofidik6zykxwznrxu",
+"dir": "items/019-help.salla.sa",
+"fetched_at": "2026-10-11T09:19:19Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.salla.sa/article/إدارة-المنتجات/oc3r8o7ofidik6zykxwznrxu",
+"content_type": "text/html; charset=utf-8",
+"bytes": 138027,
+"cited_in": [
+"SA-S-5046"
+],
+"raw_file": "raw.html",
+"sha256": "fade2f0155f6c310ca5bcb89fae56f5a0be0c9ade0419121d33c62129592cb33",
+"raw_ext": "html"
+},
+{
+"n": 20,
+"url": "https://help.salla.sa/article/إدارة-باقة-المتجر-الاشتراكات-الفواتير-والترقية/gbc2ct0nerndys7sk4l2rvc1",
+"dir": "items/020-help.salla.sa",
+"fetched_at": "2026-10-11T09:19:21Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.salla.sa/article/إدارة-باقة-المتجر-الاشتراكات-الفواتير-والترقية/gbc2ct0nerndys7sk4l2rvc1",
+"content_type": "text/html; charset=utf-8",
+"bytes": 141812,
+"cited_in": [
+"SA-S-5002"
+],
+"raw_file": "raw.html",
+"sha256": "1e6642fcddb93a16fc9ab932c89f1c57217f711252dcd45bd04e38326c35302f",
+"raw_ext": "html"
+},
+{
+"n": 21,
+"url": "https://help.salla.sa/article/إدارة-سجل-العمليات-لتجار-باقة-سبيشل/z61qef5grewvqpqvgmrek20z",
+"dir": "items/021-help.salla.sa",
+"fetched_at": "2026-10-11T09:19:22Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.salla.sa/article/إدارة-سجل-العمليات-لتجار-باقة-سبيشل/z61qef5grewvqpqvgmrek20z",
+"content_type": "text/html; charset=utf-8",
+"bytes": 136112,
+"cited_in": [
+"SA-S-5010"
+],
+"raw_file": "raw.html",
+"sha256": "de2d26647d530aaceca73f895f22b447d8e79394ca0d0733bdb2bada1ba08e67",
+"raw_ext": "html"
+},
+{
+"n": 22,
+"url": "https://help.salla.sa/article/إدارة-قائمة-المتاجر-المرتبطة/t9z4bp7g0vo1rcdvq4h4k9b3",
+"dir": "items/022-help.salla.sa",
+"fetched_at": "2026-10-11T09:19:24Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.salla.sa/article/إدارة-قائمة-المتاجر-المرتبطة/t9z4bp7g0vo1rcdvq4h4k9b3",
+"content_type": "text/html; charset=utf-8",
+"bytes": 138390,
+"cited_in": [
+"SA-S-5150",
+"SA-S-5151"
+],
+"raw_file": "raw.html",
+"sha256": "95714b35dc4ab79ba0062006f09cf75871e05385ecef2c80da3f6bfd5b67a3e8",
+"raw_ext": "html"
+},
+{
+"n": 23,
+"url": "https://help.salla.sa/article/إدارة-وجرد-المخزون/xzpw5e46wflnxg611caz0aem",
+"dir": "items/023-help.salla.sa",
+"fetched_at": "2026-10-11T09:19:25Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.salla.sa/article/إدارة-وجرد-المخزون/xzpw5e46wflnxg611caz0aem",
+"content_type": "text/html; charset=utf-8",
+"bytes": 143893,
+"cited_in": [
+"SA-S-5011",
+"SA-S-5145"
+],
+"raw_file": "raw.html",
+"sha256": "c6a78ee03816ed7128ce179c2433b9d6e526a79843c6061c25e291b8ad5c5a6a",
+"raw_ext": "html"
+},
+{
+"n": 24,
+"url": "https://help.salla.sa/article/إضافة-منتج-الحجوزات/gea2uoqanu6oku9a9seoqbfk",
+"dir": "items/024-help.salla.sa",
+"fetched_at": "2026-10-11T09:19:27Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.salla.sa/article/إضافة-منتج-الحجوزات/gea2uoqanu6oku9a9seoqbfk",
+"content_type": "text/html; charset=utf-8",
+"bytes": 147781,
+"cited_in": [
+"SA-S-5012"
+],
+"raw_file": "raw.html",
+"sha256": "87d9c5831f98edad76fc538dc044ed76a367b807d8ad7b72f5b0e2838008dafe",
+"raw_ext": "html"
+},
+{
+"n": 25,
+"url": "https://help.salla.sa/article/إعداد-إصدار-فواتير-الطلبات/iz5t4pco8lhfu41usey0u53z",
+"dir": "items/025-help.salla.sa",
+"fetched_at": "2026-10-11T09:19:28Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.salla.sa/article/إعداد-إصدار-فواتير-الطلبات/iz5t4pco8lhfu41usey0u53z",
+"content_type": "text/html; charset=utf-8",
+"bytes": 136689,
+"cited_in": [
+"SA-S-5015"
+],
+"raw_file": "raw.html",
+"sha256": "cad71e30f6f7a8de23d4458261022bb56077277365cb46309a7c9f39c1575ca3",
+"raw_ext": "html"
+},
+{
+"n": 26,
+"url": "https://help.salla.sa/article/إعداد-الإقرار-قبل-ارسال-الطلب-استراتيجية-فعالة-لتقليص-المرتجعات/d30d94hdxftazdc9bzsyaq3t",
+"dir": "items/026-help.salla.sa",
+"fetched_at": "2026-10-11T09:19:30Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.salla.sa/article/إعداد-الإقرار-قبل-ارسال-الطلب-استراتيجية-فعالة-لتقليص-المرتجعات/d30d94hdxftazdc9bzsyaq3t",
+"content_type": "text/html; charset=utf-8",
+"bytes": 140127,
+"cited_in": [
+"SA-S-5016"
+],
+"raw_file": "raw.html",
+"sha256": "0bf4cf6b55a792a87d8b972aa444d278f4e07c170e872c8f979b0dd9722180ba",
+"raw_ext": "html"
+},
+{
+"n": 27,
+"url": "https://help.salla.sa/article/إعدادات-قيود-الدفع/d9me3k8vqi09hdiun8r2ngfr",
+"dir": "items/027-help.salla.sa",
+"fetched_at": "2026-10-11T09:19:31Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.salla.sa/article/إعدادات-قيود-الدفع/d9me3k8vqi09hdiun8r2ngfr",
+"content_type": "text/html; charset=utf-8",
+"bytes": 142416,
+"cited_in": [
+"SA-S-5049",
+"SA-S-5050"
+],
+"raw_file": "raw.html",
+"sha256": "87ccb18df8143f0b9bd4fd5b8c6dab66b2ca05fb456ee6350d8eacfe6b007bf2",
+"raw_ext": "html"
+},
+{
+"n": 28,
+"url": "https://help.salla.sa/article/اعلمني-عند-التوفر/irngv7s52c5mrdn6xaq1sjtw",
+"dir": "items/028-help.salla.sa",
+"fetched_at": "2026-10-11T09:19:33Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.salla.sa/article/اعلمني-عند-التوفر/irngv7s52c5mrdn6xaq1sjtw",
+"content_type": "text/html; charset=utf-8",
+"bytes": 139746,
+"cited_in": [
+"SA-S-5013"
+],
+"raw_file": "raw.html",
+"sha256": "a7c4c4ab68662c47650864052130de9b95c43b8d6997324aac15d8c7d7c1a946",
+"raw_ext": "html"
+},
+{
+"n": 29,
+"url": "https://help.salla.sa/article/الأسئلة-الشائعة-حول-اللغات/f5uqqoq0jzr0skh2qxz797ms",
+"dir": "items/029-help.salla.sa",
+"fetched_at": "2026-10-11T09:19:34Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.salla.sa/article/الأسئلة-الشائعة-حول-اللغات/f5uqqoq0jzr0skh2qxz797ms",
+"content_type": "text/html; charset=utf-8",
+"bytes": 138464,
+"cited_in": [
+"SA-S-5009"
+],
+"raw_file": "raw.html",
+"sha256": "90c462626235e0ca5bceb2bbba6477c85981dd0dcd42d7e9a9ea0d4367c37568",
+"raw_ext": "html"
+},
+{
+"n": 30,
+"url": "https://help.salla.sa/article/الأسئلة-الشائعة-حول-منصة-محلي-1/i6552boeb92lhuug905exq0i",
+"dir": "items/030-help.salla.sa",
+"fetched_at": "2026-10-11T09:19:36Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.salla.sa/article/الأسئلة-الشائعة-حول-منصة-محلي-1/i6552boeb92lhuug905exq0i",
+"content_type": "text/html; charset=utf-8",
+"bytes": 138853,
+"cited_in": [
+"SA-S-5043",
+"SA-S-5044",
+"SA-S-5045"
+],
+"raw_file": "raw.html",
+"sha256": "d06f9726089498df8bcd848eb95b76d4da76cc96104f397c5be7e55beb313158",
+"raw_ext": "html"
+},
+{
+"n": 31,
+"url": "https://help.salla.sa/article/التسجيل-في-هيئة-الزكاة-والضريبة-والجمارك/co7zhuxbz7ym8ez5yd9jel3b",
+"dir": "items/031-help.salla.sa",
+"fetched_at": "2026-10-11T09:19:37Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.salla.sa/article/التسجيل-في-هيئة-الزكاة-والضريبة-والجمارك/co7zhuxbz7ym8ez5yd9jel3b",
+"content_type": "text/html; charset=utf-8",
+"bytes": 137456,
+"cited_in": [
+"SA-S-5073"
+],
+"raw_file": "raw.html",
+"sha256": "396d89ef655536ac67b4794078f76306be53a8338dcd02062b2384b6cd2559a7",
+"raw_ext": "html"
+},
+{
+"n": 32,
+"url": "https://help.salla.sa/article/التواصل-مع-مسؤول-مدير-حساب-باقة-سبيشال/vddgoqvlxygdhaq2gx5bwl3q",
+"dir": "items/032-help.salla.sa",
+"fetched_at": "2026-10-11T09:19:39Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.salla.sa/article/التواصل-مع-مسؤول-مدير-حساب-باقة-سبيشال/vddgoqvlxygdhaq2gx5bwl3q",
+"content_type": "text/html; charset=utf-8",
+"bytes": 135683,
+"cited_in": [
+"SA-S-5006"
+],
+"raw_file": "raw.html",
+"sha256": "b7f2b212301f050250056f2320a6e42aad87ac7c4e839782c679fa0e92766dda",
+"raw_ext": "html"
+},
+{
+"n": 33,
+"url": "https://help.salla.sa/article/باقات-المتجر-اختر-الباقة-المثالية-لتجارتك/glmfvz0wf6rvd9wiczinecb1",
+"dir": "items/033-help.salla.sa",
+"fetched_at": "2026-10-11T09:19:40Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.salla.sa/article/باقات-المتجر-اختر-الباقة-المثالية-لتجارتك/glmfvz0wf6rvd9wiczinecb1",
+"content_type": "text/html; charset=utf-8",
+"bytes": 147040,
+"cited_in": [
+"SA-S-5003"
+],
+"raw_file": "raw.html",
+"sha256": "4ea07e0f7ea82cc970b4a520fcabcd7651c5940633c65ea15e67d15ceddbd270",
+"raw_ext": "html"
+},
+{
+"n": 34,
+"url": "https://help.salla.sa/article/برنامج-الإحالة-التسويق-بالعمولة-لباقات-سلة/ho98sug89tipkyg6cc9jmqrx",
+"dir": "items/034-help.salla.sa",
+"fetched_at": "2026-10-11T09:19:42Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.salla.sa/article/برنامج-الإحالة-التسويق-بالعمولة-لباقات-سلة/ho98sug89tipkyg6cc9jmqrx",
+"content_type": "text/html; charset=utf-8",
+"bytes": 140277,
+"cited_in": [
+"SA-S-5076",
+"SA-S-5077"
+],
+"raw_file": "raw.html",
+"sha256": "9e691a9a7d54ac26e84cdb1abf2b9cd3b4b8a1652fa85a5791a9034606cae1e8",
+"raw_ext": "html"
+},
+{
+"n": 35,
+"url": "https://help.salla.sa/article/بوابة-الجودة-لشكاوى-الشحن/lzsretdcadjc3r70lsxygiu9",
+"dir": "items/035-help.salla.sa",
+"fetched_at": "2026-10-11T09:19:43Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.salla.sa/article/بوابة-الجودة-لشكاوى-الشحن/lzsretdcadjc3r70lsxygiu9",
+"content_type": "text/html; charset=utf-8",
+"bytes": 140100,
+"cited_in": [
+"SA-S-5070",
+"SA-S-5071",
+"SA-S-5072"
+],
+"raw_file": "raw.html",
+"sha256": "fdae056b7bc3c1907ef71e3b8493da49d52d2fd4b94c7191824cda7276d4c358",
+"raw_ext": "html"
+},
+{
+"n": 36,
+"url": "https://help.salla.sa/article/تحسين-ظهور-متجرك-على-محركات-البحث-seo/oi134aj2ud6ts12ysumrm5za",
+"dir": "items/036-help.salla.sa",
+"fetched_at": "2026-10-11T09:19:45Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.salla.sa/article/تحسين-ظهور-متجرك-على-محركات-البحث-seo/oi134aj2ud6ts12ysumrm5za",
+"content_type": "text/html; charset=utf-8",
+"bytes": 143955,
+"cited_in": [
+"SA-S-5014"
+],
+"raw_file": "raw.html",
+"sha256": "a627d47ca3be87af22545468e15309a87d6cf4f0461fc16d47cd69e6685f0230",
+"raw_ext": "html"
+},
+{
+"n": 37,
+"url": "https://help.salla.sa/article/تسجيل-الدخول-السريع-للمتجر-باستخدام-ال-passkey/u7o5nn9xqsl4y2urj30n034d",
+"dir": "items/037-help.salla.sa",
+"fetched_at": "2026-10-11T09:19:46Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.salla.sa/article/تسجيل-الدخول-السريع-للمتجر-باستخدام-ال-passkey/u7o5nn9xqsl4y2urj30n034d",
+"content_type": "text/html; charset=utf-8",
+"bytes": 137542,
+"cited_in": [
+"SA-S-5018"
+],
+"raw_file": "raw.html",
+"sha256": "405baf27a6da9f0d2013fda1e066524199931a927325eb51e373f9be5ae66eec",
+"raw_ext": "html"
+},
+{
+"n": 38,
+"url": "https://help.salla.sa/article/تفاصيل-العنوان-والهوية-في-صفحة-الدفع-لطلبات-الشحن-الدولي/xv4salemauzwaoov97ccuvwf",
+"dir": "items/038-help.salla.sa",
+"fetched_at": "2026-10-11T09:19:48Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.salla.sa/article/تفاصيل-العنوان-والهوية-في-صفحة-الدفع-لطلبات-الشحن-الدولي/xv4salemauzwaoov97ccuvwf",
+"content_type": "text/html; charset=utf-8",
+"bytes": 141981,
+"cited_in": [
+"SA-S-5074"
+],
+"raw_file": "raw.html",
+"sha256": "e5037d480a22c11b38433f291d703890a3e4acaeb54f07a31b8326891c151cb1",
+"raw_ext": "html"
+},
+{
+"n": 39,
+"url": "https://help.salla.sa/article/تفعيل-أبل-باي-apple-pay-مع-بوابات-الدفع-الخارجية-للجمعيات-الخيرية/cibzvzd4edofyfsygrxmp3p1",
+"dir": "items/039-help.salla.sa",
+"fetched_at": "2026-10-11T09:19:49Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.salla.sa/article/تفعيل-أبل-باي-apple-pay-مع-بوابات-الدفع-الخارجية-للجمعيات-الخيرية/cibzvzd4edofyfsygrxmp3p1",
+"content_type": "text/html; charset=utf-8",
+"bytes": 143565,
+"cited_in": [
+"SA-S-5057"
+],
+"raw_file": "raw.html",
+"sha256": "19fb3df32b8ab51657e36b601135cf0a757e20845a93f5ec1915c9c9145ccdfd",
+"raw_ext": "html"
+},
+{
+"n": 40,
+"url": "https://help.salla.sa/article/تفعيل-الدفع-بالبطاقة-في-سلة-بوينت/hy4mv5r6yqoyjifiy7659nzk",
+"dir": "items/040-help.salla.sa",
+"fetched_at": "2026-10-11T09:19:51Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.salla.sa/article/تفعيل-الدفع-بالبطاقة-في-سلة-بوينت/hy4mv5r6yqoyjifiy7659nzk",
+"content_type": "text/html; charset=utf-8",
+"bytes": 141556,
+"cited_in": [
+"SA-S-5038",
+"SA-S-5039",
+"SA-S-5040",
+"SA-S-5041",
+"SA-S-5042"
+],
+"raw_file": "raw.html",
+"sha256": "48758d0248a8ad92534f8d05ec65dd6f6f70df66c148c3d88cd9c8e2f1f58c72",
+"raw_ext": "html"
+},
+{
+"n": 41,
+"url": "https://help.salla.sa/article/تفعيل-الشراء-السريع/jpuire3zxn5ayv0mg6zum636",
+"dir": "items/041-help.salla.sa",
+"fetched_at": "2026-10-11T09:19:52Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.salla.sa/article/تفعيل-الشراء-السريع/jpuire3zxn5ayv0mg6zum636",
+"content_type": "text/html; charset=utf-8",
+"bytes": 138377,
+"cited_in": [
+"SA-S-5027"
+],
+"raw_file": "raw.html",
+"sha256": "0e33fbc426f10e0380f22b2f74043d38578ffea746203276fbb01ce72cb52c55",
+"raw_ext": "html"
+},
+{
+"n": 42,
+"url": "https://help.salla.sa/article/تفعيل-شركات-الشحن-بعقدك-الخاص-في-الإمارات-سلة/ujm8x82uf5ugvw967vzrhovl",
+"dir": "items/042-help.salla.sa",
+"fetched_at": "2026-10-11T09:19:54Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.salla.sa/article/تفعيل-شركات-الشحن-بعقدك-الخاص-في-الإمارات-سلة/ujm8x82uf5ugvw967vzrhovl",
+"content_type": "text/html; charset=utf-8",
+"bytes": 139165,
+"cited_in": [
+"SA-S-5063"
+],
+"raw_file": "raw.html",
+"sha256": "5e05d308f21dfca3842641407cbbf5ae2cdccb28fbb812d123ecececff38ee75",
+"raw_ext": "html"
+},
+{
+"n": 43,
+"url": "https://help.salla.sa/article/تفعيل-شركات-الشحن-بعقدك-الخاص-لمتجرك-في-الكويت/i1l6ohixzgu4kco8s5csm4yp",
+"dir": "items/043-help.salla.sa",
+"fetched_at": "2026-10-11T09:19:55Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.salla.sa/article/تفعيل-شركات-الشحن-بعقدك-الخاص-لمتجرك-في-الكويت/i1l6ohixzgu4kco8s5csm4yp",
+"content_type": "text/html; charset=utf-8",
+"bytes": 139575,
+"cited_in": [
+"SA-S-5064"
+],
+"raw_file": "raw.html",
+"sha256": "db45323218880c9d408993be3bbb4e85d0a278308cd2c533a9cc1305e7c85d85",
+"raw_ext": "html"
+},
+{
+"n": 44,
+"url": "https://help.salla.sa/article/جاهزية-الشحن-الدولي/vidfaxjgo1wz8xjimrwfgswi",
+"dir": "items/044-help.salla.sa",
+"fetched_at": "2026-10-11T09:19:57Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.salla.sa/article/جاهزية-الشحن-الدولي/vidfaxjgo1wz8xjimrwfgswi",
+"content_type": "text/html; charset=utf-8",
+"bytes": 142097,
+"cited_in": [
+"SA-S-5067"
+],
+"raw_file": "raw.html",
+"sha256": "20f32db655345cc429984e53a854ac38486a111c517f8dff88f11d6626ac6b7c",
+"raw_ext": "html"
+},
+{
+"n": 45,
+"url": "https://help.salla.sa/article/خطوات-الاشتراك-بخدمة-صانع-التطبيقات-من-سلة/dl3kk70gmzq9n9xj1yi8ydls",
+"dir": "items/045-help.salla.sa",
+"fetched_at": "2026-10-11T09:19:58Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.salla.sa/article/خطوات-الاشتراك-بخدمة-صانع-التطبيقات-من-سلة/dl3kk70gmzq9n9xj1yi8ydls",
+"content_type": "text/html; charset=utf-8",
+"bytes": 145171,
+"cited_in": [
+"SA-S-5035",
+"SA-S-5036",
+"SA-S-5037"
+],
+"raw_file": "raw.html",
+"sha256": "e06d6765912ad41e28d088d507730dec727fbb0e1532cf739783397ce2511358",
+"raw_ext": "html"
+},
+{
+"n": 46,
+"url": "https://help.salla.sa/article/ربط-الجمعيات-الخيرية-مع-بوابة-الدفع-ميسر/zm2rkn8lfc8gjd6drybo2tvh",
+"dir": "items/046-help.salla.sa",
+"fetched_at": "2026-10-11T09:20:00Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.salla.sa/article/ربط-الجمعيات-الخيرية-مع-بوابة-الدفع-ميسر/zm2rkn8lfc8gjd6drybo2tvh",
+"content_type": "text/html; charset=utf-8",
+"bytes": 138683,
+"cited_in": [
+"SA-S-5056"
+],
+"raw_file": "raw.html",
+"sha256": "accab47d344357aac1576514083564a2295fd400f2a23c21d9b1a2e8e396417f",
+"raw_ext": "html"
+},
+{
+"n": 47,
+"url": "https://help.salla.sa/article/سياسة-نشر-التطبيق-في-متجر-التطبيقات-1/l6e8bqm8vm89arp4krr40cdm",
+"dir": "items/047-help.salla.sa",
+"fetched_at": "2026-10-11T09:20:01Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.salla.sa/article/سياسة-نشر-التطبيق-في-متجر-التطبيقات-1/l6e8bqm8vm89arp4krr40cdm",
+"content_type": "text/html; charset=utf-8",
+"bytes": 139072,
+"cited_in": [
+"SA-S-5078",
+"SA-S-5079",
+"SA-S-5081",
+"SA-S-5114"
+],
+"raw_file": "raw.html",
+"sha256": "5e70fc323e75aa02fac234992792fcdb639734472156ae63bf1dc7ae37267727",
+"raw_ext": "html"
+},
+{
+"n": 48,
+"url": "https://help.salla.sa/article/صفحات-الهبوط-بوابتك-لتحويل-النقرات-إلى-مبيعات/gn0ej4ydhbabd1m9qwnv9pvv",
+"dir": "items/048-help.salla.sa",
+"fetched_at": "2026-10-11T09:20:03Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.salla.sa/article/صفحات-الهبوط-بوابتك-لتحويل-النقرات-إلى-مبيعات/gn0ej4ydhbabd1m9qwnv9pvv",
+"content_type": "text/html; charset=utf-8",
+"bytes": 144372,
+"cited_in": [
+"SA-S-5030"
+],
+"raw_file": "raw.html",
+"sha256": "964bf0bfb0769f012ab85d8fb6d071e63d9b1ba603d11ef06d1ebc24534ebd7e",
+"raw_ext": "html"
+},
+{
+"n": 49,
+"url": "https://help.salla.sa/article/طرق-الدفع-لإعلانات-سلة/acd9iqfypgjm1acbof6f3ouc",
+"dir": "items/049-help.salla.sa",
+"fetched_at": "2026-10-11T09:20:04Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.salla.sa/article/طرق-الدفع-لإعلانات-سلة/acd9iqfypgjm1acbof6f3ouc",
+"content_type": "text/html; charset=utf-8",
+"bytes": 138756,
+"cited_in": [
+"SA-S-5134"
+],
+"raw_file": "raw.html",
+"sha256": "95de7897f3bcaf045dac30698e97f5fb3915e92dfb4f931d0cbadcc80e090778",
+"raw_ext": "html"
+},
+{
+"n": 50,
+"url": "https://help.salla.sa/article/طلب-مواد-التغليف-من-شركات-شحن-بوليصات-سلة/eyeqtkxf1stsm77vzgjil56h",
+"dir": "items/050-help.salla.sa",
+"fetched_at": "2026-10-11T09:20:06Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.salla.sa/article/طلب-مواد-التغليف-من-شركات-شحن-بوليصات-سلة/eyeqtkxf1stsm77vzgjil56h",
+"content_type": "text/html; charset=utf-8",
+"bytes": 140840,
+"cited_in": [
+"SA-S-5068",
+"SA-S-5069"
+],
+"raw_file": "raw.html",
+"sha256": "37e96ed5496394f5a42d7513c4a8f43ebc3079415603aa07fd4dd851a3237603",
+"raw_ext": "html"
+},
+{
+"n": 51,
+"url": "https://help.salla.sa/article/عروض-وخصومات-البنك/r50cyw73aywqx15wbsrb6bkk",
+"dir": "items/051-help.salla.sa",
+"fetched_at": "2026-10-11T09:20:07Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.salla.sa/article/عروض-وخصومات-البنك/r50cyw73aywqx15wbsrb6bkk",
+"content_type": "text/html; charset=utf-8",
+"bytes": 142308,
+"cited_in": [
+"SA-S-5028",
+"SA-S-5029"
+],
+"raw_file": "raw.html",
+"sha256": "ce9a817fb2728f902fe308936911a025e4d3ed8ac4aba67ec281b5dc708636c8",
+"raw_ext": "html"
+},
+{
+"n": 52,
+"url": "https://help.salla.sa/article/كيف-تستفيد-من-بوليصات-الشحن-في-سلة/y2pqllcsineilgx6h7ofivut",
+"dir": "items/052-help.salla.sa",
+"fetched_at": "2026-10-11T09:20:09Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.salla.sa/article/كيف-تستفيد-من-بوليصات-الشحن-في-سلة/y2pqllcsineilgx6h7ofivut",
+"content_type": "text/html; charset=utf-8",
+"bytes": 141027,
+"cited_in": [
+"SA-S-5058",
+"SA-S-5059",
+"SA-S-5062",
+"SA-S-5075"
+],
+"raw_file": "raw.html",
+"sha256": "7a71b5ad199eb39b4e237ba566e9090bababb7c7f7773a477c53bed8f02bc2f5",
+"raw_ext": "html"
+},
+{
+"n": 53,
+"url": "https://help.salla.sa/article/موافقة-العميل-على-سياسة-خصوصية-المتجر/loqvq0l5sn8jthz02aw49gl7",
+"dir": "items/053-help.salla.sa",
+"fetched_at": "2026-10-11T09:20:10Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.salla.sa/article/موافقة-العميل-على-سياسة-خصوصية-المتجر/loqvq0l5sn8jthz02aw49gl7",
+"content_type": "text/html; charset=utf-8",
+"bytes": 138321,
+"cited_in": [
+"SA-S-5023",
+"SA-S-5024"
+],
+"raw_file": "raw.html",
+"sha256": "7308a2f95eb1f4dec325d274d543854c7bd4a70e40b3d4bdc8963efc029a2ebb",
+"raw_ext": "html"
+},
+{
+"n": 54,
+"url": "https://help.salla.sa/article/نصائح-لحماية-متجرك-من-الاحتيال/xiu0yycxeuii6wrdn0hfyowh",
+"dir": "items/054-help.salla.sa",
+"fetched_at": "2026-10-11T09:20:12Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.salla.sa/article/نصائح-لحماية-متجرك-من-الاحتيال/xiu0yycxeuii6wrdn0hfyowh",
+"content_type": "text/html; charset=utf-8",
+"bytes": 141929,
+"cited_in": [
+"SA-S-5115"
+],
+"raw_file": "raw.html",
+"sha256": "88d0a6ccd8a35e47a5ceef173cbfcd30b36c3588fee7326799d4a21fba150c64",
+"raw_ext": "html"
+},
+{
+"n": 55,
+"url": "https://partners.salla.com/global-selling-program",
+"dir": "items/055-partners.salla.com",
+"fetched_at": "2026-10-11T09:20:12Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://partners.salla.com/global-selling-program",
+"content_type": "text/html",
+"bytes": 36956,
+"cited_in": [
+"SA-S-5129",
+"SA-S-5130"
+],
+"raw_file": "raw.html",
+"sha256": "b3e8a9fb98cbf4728de4b064c55e10799a73734acc891f2c3bee3fc8191bfe58",
+"raw_ext": "html"
+},
+{
+"n": 56,
+"url": "https://partners.salla.com/legal/influencer",
+"dir": "items/056-partners.salla.com",
+"fetched_at": "2026-10-11T09:20:13Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://partners.salla.com/legal/influencer",
+"content_type": "text/html",
+"bytes": 38700,
+"cited_in": [
+"SA-S-5025",
+"SA-S-5102",
+"SA-S-5103"
+],
+"raw_file": "raw.html",
+"sha256": "296eb49a00fa3db70e8edce609c0c18b4365faf49bdb5d4ab4122886998cffea",
+"raw_ext": "html"
+},
+{
+"n": 57,
+"url": "https://partners.salla.com/legal/nd-packages",
+"dir": "items/057-partners.salla.com",
+"fetched_at": "2026-10-11T09:20:15Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://partners.salla.com/legal/nd-packages",
+"content_type": "text/html",
+"bytes": 40017,
+"cited_in": [
+"SA-S-5001"
+],
+"raw_file": "raw.html",
+"sha256": "e0f458224453192a07d153cec7525e85348ee9d5d98c12a4d7a49e14fbdbd898",
+"raw_ext": "html"
+},
+{
+"n": 58,
+"url": "https://partners.salla.com/legal/service-provider",
+"dir": "items/058-partners.salla.com",
+"fetched_at": "2026-10-11T09:20:16Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://partners.salla.com/legal/service-provider",
+"content_type": "text/html",
+"bytes": 39119,
+"cited_in": [
+"SA-S-5008",
+"SA-S-5100"
+],
+"raw_file": "raw.html",
+"sha256": "a86e6113f4882889ee5232ab29ac8049f43963096f28cc1ccce4c0155931640a",
+"raw_ext": "html"
+},
+{
+"n": 59,
+"url": "https://partners.salla.com/legal/اتفاقية-الوكالات-لتقديم-خدمات-لتجار-سلة",
+"dir": "items/059-partners.salla.com",
+"fetched_at": "2026-10-11T09:20:18Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://partners.salla.com/legal/اتفاقية-الوكالات-لتقديم-خدمات-لتجار-سلة",
+"content_type": "text/html",
+"bytes": 41551,
+"cited_in": [
+"SA-S-5112",
+"SA-S-5125",
+"SA-S-5126",
+"SA-S-5127"
+],
+"raw_file": "raw.html",
+"sha256": "0a4a0a57946c810c4f5342e02aec7b3af48a97b24db6a9d23ff7e5c57ec8f3b5",
+"raw_ext": "html"
+},
+{
+"n": 60,
+"url": "https://partners.salla.com/legal/شروط-وأحكام-خدمة-انتقال-المتاجر-من-منصات-أخرى-إلى-منصة-سلة",
+"dir": "items/060-partners.salla.com",
+"fetched_at": "2026-10-11T09:20:19Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://partners.salla.com/legal/شروط-وأحكام-خدمة-انتقال-المتاجر-من-منصات-أخرى-إلى-منصة-سلة",
+"content_type": "text/html",
+"bytes": 39115,
+"cited_in": [
+"SA-S-5120",
+"SA-S-5121",
+"SA-S-5122",
+"SA-S-5123"
+],
+"raw_file": "raw.html",
+"sha256": "86c372b9e6cc3184dcca5067c4c610643340bbeaa5923e6d3ef1363574170421",
+"raw_ext": "html"
+}
+]

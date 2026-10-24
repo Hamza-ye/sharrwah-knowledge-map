@@ -1,0 +1,18 @@
+{
+ "n": 43,
+ "url": "https://docs.zid.sa/list-store-locations.md",
+ "dir": "items/043-docs.zid.sa",
+ "fetched_at": "2026-10-12T04:51:41Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.zid.sa/list-store-locations.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 33852,
+ "cited_in": [
+  "ZD-S-0101"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "810cfbbe72652e8fac9f98e0e4b7704123d826c4dfa8369ce8c5ed7fba3646d7",
+ "raw_ext": "txt"
+}

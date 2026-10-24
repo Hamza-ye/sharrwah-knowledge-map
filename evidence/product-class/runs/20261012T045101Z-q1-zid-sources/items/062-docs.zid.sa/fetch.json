@@ -1,0 +1,18 @@
+{
+ "n": 62,
+ "url": "https://docs.zid.sa/update-order-by-id.md",
+ "dir": "items/062-docs.zid.sa",
+ "fetched_at": "2026-10-12T04:52:00Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.zid.sa/update-order-by-id.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 113075,
+ "cited_in": [
+  "ZD-S-0093"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "d827590b73886696d0a4f8fc19741da6a7292037bb7e738d7965f430df6419b2",
+ "raw_ext": "txt"
+}

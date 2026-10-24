@@ -1,0 +1,34 @@
+# Tax apps
+
+You can use a third-party tax app to manage the way that you charge tax to your customers instead of using Shopify's tax settings. [Learn more about gaining access to Shopify's tax platform and using third-party tax apps](https://www.shopify.com/tax-platform).
+
+<aside class="note"><h4>Note</h4><p>Tax apps are created by third-party providers and aren&#39;t managed by Shopify. If you have questions about a tax app or need support, then <a href="/en/manual/apps/getting-support">contact the app provider</a>.</p>
+</aside>
+
+## Requirements and considerations for third-party tax apps
+
+Before you install a third-party tax app, review the following considerations:
+
+* Third-party apps require an account with the tax service provider before you can activate the app in your Shopify admin. Before you install a tax app, set up an account with the service that provides the app, and have your login credentials ready.
+* Tax apps require a complete shipping origin address to calculate taxes. Before you install a tax app, verify that your [locations](/manual/inventory-and-locations/locations) have full and complete addresses.
+* You can use either a third‑party tax app or Shopify’s built‑in tax service for a store, but not both at the same time. When you use a tax app, it replaces Shopify’s tax service for that store.
+* If a tax app is temporarily unavailable, then your tax settings in the Shopify admin are used to provide [backup tax collection](/manual/taxes/tax-apps/activation#app-backup). Before you install a tax app, ensure that your Shopify tax settings are up-to-date.
+* If your store uses B2B and has a company with [saved tax information](/manual/b2b/companies-and-customers/creating-companies), then this information is transmitted to the tax app provider to calculate tax exemptions.
+* Tax apps provide sales tax calculations in all countries and regions, replacing most of the settings in your Shopify admin. However, some settings in Shopify remain active when you use a tax app:
+    * [Tax-inclusive pricing](/manual/taxes/include-exclude-taxes).
+    * [Tax-inclusive pricing by country](/manual/international/pricing/dynamic-tax-inclusive-pricing).
+    * [Setting a product as taxable](/manual/products/details/product-details-page#product-details-pricing).
+    * [Setting a customer as not taxable](/manual/customers/manage-customers).
+    * [Collecting international duties and import taxes at checkout](/manual/international/duties-and-import-taxes/charging-duties). If the collection of duties and import taxes is active, then it's used to collect all cross-border taxes, including domestic import taxes. Duties and import taxes are collected at checkout even if you activate tax collection in a country or region by using a tax app.
+
+## Imported orders with third-party tax apps
+
+If you import historical orders into your Shopify admin, then those orders are synced with your third-party tax apps by default. This means that the information on the order is sent to the tax service for transaction journalling for filing on their end. If you want to prevent the transactions in your imported orders from being recorded by your tax app, then ensure that each order that you want to exclude has the `import` or `imported` tag applied to it.
+
+Third-party apps that create orders in your Shopify admin can be set to automatically apply this tag to imported orders. If you have imported orders in your Shopify store already, then the information for that order might already have been sent to your tax service. However, you can prevent subsequent tax summaries from being sent to your tax service by [adding import or imported tags manually](/manual/shopify-admin/productivity-tools/using-tags).
+
+### In this section
+
+- [Activating tax apps](/en/manual/taxes/tax-apps/activation)
+- [Vertex](/en/manual/taxes/tax-apps/vertex)
+- [Avalara Tax Compliance](/en/manual/taxes/tax-apps/avalara)

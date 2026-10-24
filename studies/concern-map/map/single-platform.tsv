@@ -1,0 +1,214 @@
+platform	concern_id	concern
+shopify	SH-C-003	Organization and its stores
+shopify	SH-C-004	Business entities (the registered business or individual a store operates as)
+shopify	SH-C-005	Selling with multiple entities
+shopify	SH-C-006	Merchant location at sign-up
+shopify	SH-C-007	Sign-in and account security
+shopify	SH-C-008	Identity verification of the people behind an account
+shopify	SH-C-011	Collaborators (outside parties with store access)
+shopify	SH-C-014	Store suspension, termination, reactivation and closure
+shopify	SH-C-018	Transaction fees on sales through payment providers other than Shopify Payments
+shopify	SH-C-021	Collections
+shopify	SH-C-023	Inventory transfers, shipments and purchase orders
+shopify	SH-C-024	Locations
+shopify	SH-C-026	Store credit
+shopify	SH-C-027	Files
+shopify	SH-C-028	Metafields and metaobjects (custom data)
+shopify	SH-C-034	Store policies
+shopify	SH-C-035	Storefront search and filtering
+shopify	SH-C-036	Hosting and SSL
+shopify	SH-C-037	Catalogs (market and B2B product and price catalogs)
+shopify	SH-C-038	Combined listings
+shopify	SH-C-042	Customer authentication with third-party identity providers and Multipass
+shopify	SH-C-043	Customer marketing consent (email, SMS, WhatsApp)
+shopify	SH-C-045	Payment terms
+shopify	SH-C-048	Checkout branding and checkout configuration
+shopify	SH-C-050	Abandoned checkouts and recovery
+shopify	SH-C-051	Bot protection
+shopify	SH-C-052	Cart and checkout validation (Shopify Function)
+shopify	SH-C-053	Cart transform (Shopify Function)
+shopify	SH-C-055	Draft orders
+shopify	SH-C-059	Order risk and fraud analysis
+shopify	SH-C-060	Order routing
+shopify	SH-C-061	Order and product printing (packing slips, print actions)
+shopify	SH-C-065	Holding the merchant's funds from Shopify Payments sales
+shopify	SH-C-066	Payment facilitation in the EU/EEA and UK
+shopify	SH-C-067	Regulated payment services in Canada
+shopify	SH-C-073	Shopify Protect
+shopify	SH-C-074	Shop Pay
+shopify	SH-C-078	Third-party wallets (Apple Pay, Google Pay, Meta Pay, Amazon Pay)
+shopify	SH-C-080	Local payment methods
+shopify	SH-C-081	Cryptocurrency and stablecoin payments
+shopify	SH-C-082	Shop Cash
+shopify	SH-C-083	Payment customization (Shopify Function)
+shopify	SH-C-087	Cash management at POS
+shopify	SH-C-088	Shopify Balance account
+shopify	SH-C-089	Shopify Balance cards
+shopify	SH-C-090	Shopify Credit
+shopify	SH-C-098	Shopify Bill Pay
+shopify	SH-C-101	Tax registrations and liability tracking
+shopify	SH-C-103	Third-party tax calculation (tax apps and add-ons)
+shopify	SH-C-104	Automated tax filing
+shopify	SH-C-110	Managed Markets
+shopify	SH-C-112	Rollouts
+shopify	SH-C-113	Backup region
+shopify	SH-C-115	Third-party calculated shipping rates
+shopify	SH-C-117	Shipping insurance
+shopify	SH-C-119	Fulfillment services and third-party logistics
+shopify	SH-C-120	Shopify Fulfillment Network and Shopify Logistics
+shopify	SH-C-122	Delivery customization (Shopify Function)
+shopify	SH-C-123	Fulfillment constraints (Shopify Function)
+shopify	SH-C-124	Delivery option generators (Shopify Functions)
+shopify	SH-C-126	Shipment tracking and carriers
+shopify	SH-C-127	Discounts
+shopify	SH-C-128	Discount Functions
+shopify	SH-C-132	Shopify Audiences
+shopify	SH-C-133	Shop Campaigns
+shopify	SH-C-134	Shopify Collabs
+shopify	SH-C-136	Shop (consumer app and sales channel)
+shopify	SH-C-137	Marketplace order sync (Marketplace Connect)
+shopify	SH-C-140	Agentic commerce (AI chats, Universal Commerce Protocol)
+shopify	SH-C-141	Shopify Collective
+shopify	SH-C-143	POS hardware
+shopify	SH-C-144	POS UI extensions
+shopify	SH-C-147	Shopify Network Intelligence (Enhanced Services)
+shopify	SH-C-151	Shopify Flow
+shopify	SH-C-152	Sidekick
+shopify	SH-C-159	Scopes that need Shopify's approval
+shopify	SH-C-160	Protected customer data
+shopify	SH-C-161	Mandatory privacy compliance webhooks
+shopify	SH-C-164	Admin UI extensions and App Home
+shopify	SH-C-165	Customer account UI extensions
+shopify	SH-C-166	Theme app extensions, app embeds and app proxies
+shopify	SH-C-167	Custom apps developed in the admin
+shopify	SH-C-172	Acceptable use and enforcement
+shopify	SH-C-176	Intellectual property reports
+shopify	SH-C-177	EU and UK platform rules (P2B complaints, Digital Services Act)
+shopify	SH-C-178	Complaints about financial products
+shopify	SH-C-179	Legal requests for information
+shopify	SH-C-182	Subprocessors
+shopify	SH-C-183	Retention and deletion of store data after closure
+shopify	SH-C-185	Product sourcing (dropshipping, print on demand, wholesale)
+shopify	SH-C-188	Upsell, cross-sell, bundles and pre-orders
+shopify	SH-C-189	Custom products and product options
+shopify	SH-C-192	Customer support, helpdesk and FAQ
+shopify	SH-C-193	Store design add-ons (page builders, content, media, pop-ups, SEO)
+shopify	SH-C-194	Advertising and affiliate programs
+shopify	SH-C-196	Security and legal apps
+shopify	SH-C-201	Shopify Plus contract terms and renewals
+shopify	SH-C-202	Shopify Magic for product descriptions and blog posts
+salla	SA-C-003	Managing several stores from one account (Manage stores / إدارة المتاجر)
+salla	SA-C-013	Partner and support access to a merchant's store (store access requests)
+salla	SA-C-026	Branches and warehouses (Branches; Warehouses & branches; inventory transfer)
+salla	SA-C-028	Product restrictions (Product restrictions)
+salla	SA-C-029	Pre-order campaigns
+salla	SA-C-033	SEO (SEO)
+salla	SA-C-042	Order options and custom fields at checkout (Order Options; Cart options; Custom fields)
+salla	SA-C-043	Order assignment to staff (Order Assignment; Auto assignment)
+salla	SA-C-044	Order invoices issued by the store (Order Invoice; Invoice settings)
+salla	SA-C-047	Order acceptance rules (Accept orders; Ordering hours; Order acknowledgment; auto-complete; order limits)
+salla	SA-C-048	Abandoned carts (Abandoned Carts / السلات المتروكة)
+salla	SA-C-062	Customer login and registration (Login & registration options; OTP; reCAPTCHA)
+salla	SA-C-065	Customer addresses (Shipping addresses settings; national address)
+salla	SA-C-071	Special offers and promotions (Special Offers; Promotional Offers)
+salla	SA-C-072	Affiliate marketing run by the store (Affiliates; Affiliate marketing)
+salla	SA-C-073	Salla Ads (إعلانات سلة)
+salla	SA-C-076	Influencer marketing (Influencers)
+salla	SA-C-077	Gifting system (Gifting / نظام الإهداء)
+salla	SA-C-078	Reorder reminders
+salla	SA-C-079	Quick checkout and direct purchase (Quick checkout; quick purchase)
+salla	SA-C-080	Bank offers (عروض البنك)
+salla	SA-C-082	Landing pages
+salla	SA-C-083	Store announcements and advertisements in the storefront (Advertisements)
+salla	SA-C-091	Storefront SDK and web components (Twilight SDK; Web Components; Component Bundle)
+salla	SA-C-096	Mahally marketplace channel (محلي)
+salla	SA-C-098	Wholesale market (سوق الجملة; vendors)
+salla	SA-C-114	Who processes and acquires Salla Payments transactions, and under which licence
+salla	SA-C-121	Payment restrictions (Payment Restrictions / قيود الدفع)
+salla	SA-C-124	Instant settlements withheld from the merchant's wallet by dropshipping apps (Settlements)
+salla	SA-C-126	Payment links and quick payment
+salla	SA-C-127	Charity stores' payment gateways
+salla	SA-C-139	Shipping carriers integrated in the dashboard (carriers named in feature flags and plan lines)
+salla	SA-C-141	Merchant's own carriers, couriers and custom shipping companies
+salla	SA-C-143	Shipping routes
+salla	SA-C-144	Shipments: creating, tracking and cancelling (Shipments)
+salla	SA-C-145	Shipping and fulfilment apps (Shipping App; Shipments & Fulfillment APIs; Salla AWB)
+salla	SA-C-146	International shipping readiness, HS codes and customs (International Shipping Readiness)
+salla	SA-C-149	Packaging
+salla	SA-C-150	Quality gateway for shipping complaints (بوابة الجودة)
+salla	SA-C-161	ZATCA e-invoicing link (الربط مع هيئة الزكاة والضريبة)
+salla	SA-C-164	Currency in which Salla Payments receives and settles funds
+salla	SA-C-167	Countries where Salla offers its platform and services
+salla	SA-C-170	Terms of use between Salla and the merchant (اتفاقية الاستخدام)
+salla	SA-C-172	Selling policy accepted when activating e-payments (سياسة البيع; selling-policies)
+salla	SA-C-173	Salla's affiliate and referral programme terms (اتفاقية استخدام التسويق بالعمولة)
+salla	SA-C-174	App Maker publishing policy
+salla	SA-C-177	Payment services contract signed during store verification (عقد خدمات الدفع)
+salla	SA-C-178	Salla's complaints platform (منصة الشكاوى)
+salla	SA-C-179	Customer service tools in the store: tickets and complaints (Self-service system; Complaints)
+salla	SA-C-180	Policy published at /policies/nd96 (content not reached)
+salla	SA-C-190	App authorization (Salla OAuth 2.0)
+salla	SA-C-197	Embedded SDK and embedded app pages
+salla	SA-C-198	App snippets
+salla	SA-C-199	App settings
+salla	SA-C-200	Communication apps for SMS, email and WhatsApp (Communication App)
+salla	SA-C-203	Developer tooling (Salla CLI; Partners Agent Kit; Salla Apps Playbook)
+salla	SA-C-206	Partner affiliate and influencer programmes in the Partners portal
+salla	SA-C-207	Report builder for apps (Report Builder)
+salla	SA-C-208	Theme publishing and sales by partners
+salla	SA-C-209	Demo and ready stores for partners
+salla	SA-C-231	Licences and regulated activity
+salla	SA-C-232	Sanctions, restricted activity and screening
+salla	SA-C-233	Where data is stored and processed
+salla	SA-C-234	Platform security and service status (TLS, OAuth, status page)
+salla	SA-C-235	What happens when a payment, shipping or other partner is unavailable
+salla	SA-C-302	Store migration service from other platforms (شروط وأحكام خدمة انتقال المتاجر من منصات أخرى إلى منصة سلة)
+salla	SA-C-303	Store growth acceleration programme for partner agencies (اتفاقية الوكالات لتقديم خدمات لتجار سلة; برنامج تسريع نمو المتاجر)
+salla	SA-C-304	Global selling programme for partners (partners.salla.com/global-selling-program)
+woocommerce	WC-C-004	Payment provider suggestions per store country (Payments settings)
+woocommerce	WC-C-015	WooPay (saved checkout details across stores)
+woocommerce	WC-C-017	Woo Marketplace sales and vendor revenue share
+woocommerce	WC-C-020	Licence under which WooPayments funds are held and moved
+woocommerce	WC-C-022	Prohibited items for e-commerce on WordPress.com sites (Store guidelines)
+woocommerce	WC-C-025	Core software licence and warranty
+woocommerce	WC-C-030	Selling and shipping locations
+woocommerce	WC-C-031	Checkout rate limiting
+woocommerce	WC-C-032	Store data in the merchant's own WordPress database
+woocommerce	WC-C-033	Order storage tables (High-Performance Order Storage)
+woocommerce	WC-C-034	Hosting of the store
+woocommerce	WC-C-035	Usage tracking sent to WooCommerce
+woocommerce	WC-C-036	Remote logging to WooCommerce
+woocommerce	WC-C-037	Store logs
+woocommerce	WC-C-039	WooCommerce Analytics service (data synced to Automattic)
+woocommerce	WC-C-040	Data shared with payment providers
+woocommerce	WC-C-041	Data shared with shipping providers
+woocommerce	WC-C-047	Address autocomplete providers
+woocommerce	WC-C-049	WordPress.com / Jetpack connection for Woo services
+woocommerce	WC-C-050	Woo-made extensions (Developed by Woo)
+woocommerce	WC-C-056	Third-party tax extensions (Sales tax and duties)
+woocommerce	WC-C-115	Stripe Radar screening on WooPayments accounts
+woocommerce	WC-C-117	Store data synced to Automattic for Jetpack-connected Woo services
+woocommerce	WC-C-061	Third-party shipping carriers and shipping extensions
+woocommerce	WC-C-063	WooCommerce.com connection, extension installs and Marketplace subscriptions
+woocommerce	WC-C-066	Downloadable products and customer downloads
+woocommerce	WC-C-076	Transactional emails
+woocommerce	WC-C-081	Store administration: home, setup wizard, onboarding tasks and inbox
+woocommerce	WC-C-082	Site visibility (coming soon and launch)
+woocommerce	WC-C-083	Store status, tools and system report
+woocommerce	WC-C-086	Extension framework (settings pages, integrations, admin pages, feature compatibility)
+woocommerce	WC-C-088	Feature settings (opt-in and opt-out features)
+woocommerce	WC-C-090	Mobile app and push notifications
+woocommerce	WC-C-091	Order withdrawal requests
+woocommerce	WC-C-093	Cost of goods sold
+woocommerce	WC-C-094	Blueprint (export and import of store configuration)
+woocommerce	WC-C-096	AI features offered by Automattic
+woocommerce	WC-C-097	Shopper lists (wishlists, save for later)
+woocommerce	WC-C-102	Memberships
+woocommerce	WC-C-104	Merchandising extensions (bundles, gifts, product options, pricing, display, variations, extra purchases, order options)
+woocommerce	WC-C-105	Conversion extensions (feedback, promotions, order recovery, loyalty, alerts, upsells)
+woocommerce	WC-C-106	Customer service extensions (accounts, live chat, customer management, post-purchase, support)
+woocommerce	WC-C-107	Store content and customization extensions (checkout features, media, search, page enhancements)
+woocommerce	WC-C-108	International and localization extensions
+woocommerce	WC-C-109	Store management extensions (insights, import/export, order management, policy and security, notifications, accounting)
+woocommerce	WC-C-112	Business services (formation, legal, compliance, insurance, finance)
+woocommerce	WC-C-114	WooAds (ad campaign data service)

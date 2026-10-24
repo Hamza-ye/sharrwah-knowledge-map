@@ -1,0 +1,21 @@
+{
+ "n": 102,
+ "url": "https://help.shopify.com/en/manual/your-account/logging-in/identity-verification.md",
+ "dir": "items/102-help.shopify.com",
+ "fetched_at": "2026-10-11T06:13:06Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/your-account/logging-in/identity-verification.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 3091,
+ "cited_in": [
+  "SH-S-0262",
+  "SH-S-0263",
+  "SH-S-0264",
+  "SH-S-0265"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "bc22ba7e08c998b7a375b2f1bb18355212d0996c51f6fcfa74c602f8d42130ae",
+ "raw_ext": "txt"
+}

@@ -1,0 +1,2 @@
+copy_id	source_file	source_line	absence_id	bullet	what_is_absent	list_cite_ids	complete_cite_ids	note
+Q5-WC-A0002	studies/subjects/S-01/woocommerce/absences.tsv	2	S01-WC-N01	e	WooPayments for individuals and businesses based in any country that the Supported countries list does not name.	S01-WC-C086;S01-WC-C087	S01-WC-C088	The Other countries section says the WooCommerce team is working to make WooPayments available to other countries, and that a merchant whose country is not available can vote for it on the WooPayments feature requests page.

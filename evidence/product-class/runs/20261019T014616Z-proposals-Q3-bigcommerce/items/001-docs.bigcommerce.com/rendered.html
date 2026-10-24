@@ -1,0 +1,213 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">&gt; This page is for Developer.
+
+&gt; For clean Markdown of any page, append .md to the page URL.
+&gt; For a complete documentation index, see https://docs.bigcommerce.com/llms.txt.
+&gt; For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server.
+
+# Get Storefront Status
+
+GET https://api.bigcommerce.com/stores/{store_hash}/v3/settings/storefront/status
+
+Returns storefront status-related settings. 
+
+ - Channel ID can be used as a query parameter for getting channel-specific settings. If omitted, you will interact with the global settings only. 
+
+ - `null` indicates that a particular field has not been overridden on a channel level when channel level settings are requested and values are inherited from global level.
+
+Reference: https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/settings/storefront-status/get-settings-storefront-status
+
+## Authentication
+
+- `X-Auth-Token` header (required) — ### OAuth scopes | UI Name | Permission | Parameter | |:--------|:-----------|:----------| | Information &amp; Settings | modify | `store_v2_information` | | Information &amp; Settings | read-only | `store_v2_information_read_only` | NOTE: Analytics endpoints require the Content (`store_v2_content` and `store_v2_content_read_only`) OAuth scope. ### Authentication header | Header | Argument | Description | |:-------|:---------|:------------| | `X-Auth-Token` | `access_token` | For more about API accounts that generate `access_token`s, see our [Guide to API Accounts](/developer/docs/overview/api-fundamentals/api-accounts#api-accounts). | ### Further reading For example requests and more information about authenticating BigCommerce APIs, see [Authentication and Example Requests](/developer/docs/overview/api-fundamentals/api-accounts#x-auth-token-header-example-requests). For more about BigCommerce OAuth scopes, see our [Guide to API Accounts](/developer/docs/overview/api-fundamentals/api-accounts#oauth-scopes). For a list of API status codes, see [API Status Codes](/developer/api-reference/rest/overview#rest-http-status-codes).
+
+## Request
+
+### Path parameters
+
+- `store_hash` (string, required) — Permanent ID of the BigCommerce store.
+
+### Query parameters
+
+- `channel_id` (integer, optional) — Channel ID to use for channel-specific settings. If omitted, you will interact with the global settings only.
+
+### Headers
+
+- `Accept` (string, required, default: application/json) — The [MIME type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types) of the response body.
+
+## Response
+
+### 200
+
+OK, null indicates that a particular field has not been overridden on a channel level when channel level settings are requested
+
+- `data` (StorefrontStatus, optional)
+- `meta` (MetaOpen, optional) — Response metadata.
+
+## Types
+
+### StorefrontStatus
+
+- `down_for_maintenance_message` (string, optional)
+- `prelaunch_message` (string, optional)
+- `prelaunch_password` (string, optional) — A read-only value representing the auto-generated storefront password.
+
+### MetaOpen
+
+Response metadata.
+
+## Examples
+
+**Response**
+
+```json
+{
+  "data": {
+    "down_for_maintenance_message": "Down for maintenance",
+    "prelaunch_message": "Prelaunch",
+    "prelaunch_password": "mezt1f77gd"
+  },
+  "meta": {}
+}
+```
+
+**SDK Code**
+
+```python example-1
+import requests
+
+url = "https://api.bigcommerce.com/stores/store_hash/v3/settings/storefront/status"
+
+headers = {
+    "Accept": "application/json",
+    "X-Auth-Token": "&lt;apiKey&gt;"
+}
+
+response = requests.get(url, headers=headers)
+
+print(response.json())
+```
+
+```javascript example-1
+const url = 'https://api.bigcommerce.com/stores/store_hash/v3/settings/storefront/status';
+const options = {
+  method: 'GET',
+  headers: {Accept: 'application/json', 'X-Auth-Token': '&lt;apiKey&gt;'}
+};
+
+try {
+  const response = await fetch(url, options);
+  const data = await response.json();
+  console.log(data);
+} catch (error) {
+  console.error(error);
+}
+```
+
+```go example-1
+package main
+
+import (
+	"fmt"
+	"net/http"
+	"io"
+)
+
+func main() {
+
+	url := "https://api.bigcommerce.com/stores/store_hash/v3/settings/storefront/status"
+
+	req, _ := http.NewRequest("GET", url, nil)
+
+	req.Header.Add("Accept", "application/json")
+	req.Header.Add("X-Auth-Token", "&lt;apiKey&gt;")
+
+	res, _ := http.DefaultClient.Do(req)
+
+	defer res.Body.Close()
+	body, _ := io.ReadAll(res.Body)
+
+	fmt.Println(res)
+	fmt.Println(string(body))
+
+}
+```
+
+```ruby example-1
+require 'uri'
+require 'net/http'
+
+url = URI("https://api.bigcommerce.com/stores/store_hash/v3/settings/storefront/status")
+
+http = Net::HTTP.new(url.host, url.port)
+http.use_ssl = true
+
+request = Net::HTTP::Get.new(url)
+request["Accept"] = 'application/json'
+request["X-Auth-Token"] = '&lt;apiKey&gt;'
+
+response = http.request(request)
+puts response.read_body
+```
+
+```java example-1
+import com.mashape.unirest.http.HttpResponse;
+import com.mashape.unirest.http.Unirest;
+
+HttpResponse&lt;String&gt; response = Unirest.get("https://api.bigcommerce.com/stores/store_hash/v3/settings/storefront/status")
+  .header("Accept", "application/json")
+  .header("X-Auth-Token", "&lt;apiKey&gt;")
+  .asString();
+```
+
+```php example-1
+&lt;?php
+require_once('vendor/autoload.php');
+
+$client = new \GuzzleHttp\Client();
+
+$response = $client-&gt;request('GET', 'https://api.bigcommerce.com/stores/store_hash/v3/settings/storefront/status', [
+  'headers' =&gt; [
+    'Accept' =&gt; 'application/json',
+    'X-Auth-Token' =&gt; '&lt;apiKey&gt;',
+  ],
+]);
+
+echo $response-&gt;getBody();
+```
+
+```csharp example-1
+using RestSharp;
+
+var client = new RestClient("https://api.bigcommerce.com/stores/store_hash/v3/settings/storefront/status");
+var request = new RestRequest(Method.GET);
+request.AddHeader("Accept", "application/json");
+request.AddHeader("X-Auth-Token", "&lt;apiKey&gt;");
+IRestResponse response = client.Execute(request);
+```
+
+```swift example-1
+import Foundation
+
+let headers = [
+  "Accept": "application/json",
+  "X-Auth-Token": "&lt;apiKey&gt;"
+]
+
+let request = NSMutableURLRequest(url: NSURL(string: "https://api.bigcommerce.com/stores/store_hash/v3/settings/storefront/status")! as URL,
+                                        cachePolicy: .useProtocolCachePolicy,
+                                    timeoutInterval: 10.0)
+request.httpMethod = "GET"
+request.allHTTPHeaderFields = headers
+
+let session = URLSession.shared
+let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -&gt; Void in
+  if (error != nil) {
+    print(error as Any)
+  } else {
+    let httpResponse = response as? HTTPURLResponse
+    print(httpResponse)
+  }
+})
+
+dataTask.resume()
+```</pre></body></html>

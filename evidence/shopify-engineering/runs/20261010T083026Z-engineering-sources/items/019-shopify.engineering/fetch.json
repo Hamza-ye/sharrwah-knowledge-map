@@ -1,0 +1,18 @@
+{
+ "n": 19,
+ "url": "https://shopify.engineering/shopify-monolith",
+ "dir": "items/019-shopify.engineering",
+ "fetched_at": "2026-10-10T08:30:28Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://shopify.engineering/shopify-monolith",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 63326,
+ "cited_in": [
+  "evidence/shopify-engineering/finding-aids/20261010-shopify-engineering-sources.tsv:E019"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "220aef59f28d064f43121d340fb2ed0ae36461d7cf161e1164be9239bc4c02e1",
+ "raw_ext": "html"
+}

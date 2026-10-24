@@ -1,0 +1,23 @@
+{
+ "n": 20,
+ "url": "https://help.salla.sa/article/الربط-مع-هيئة-الزكاة-والضريبة/t0kf3e7l4skv6raa7b9yq2ov",
+ "dir": "items/020-help.salla.sa",
+ "fetched_at": "2026-10-10T23:51:40Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.salla.sa/article/الربط-مع-هيئة-الزكاة-والضريبة/t0kf3e7l4skv6raa7b9yq2ov",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 135610,
+ "cited_in": [
+  "SA-S-0148",
+  "SA-S-0149",
+  "SA-S-0150",
+  "SA-S-0151",
+  "SA-S-0152",
+  "SA-S-0153"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "b6b9ca207a0b73c40c13970e866b81e8647469c5cc23d3acf888b785d878da68",
+ "raw_ext": "html"
+}

@@ -1,0 +1,19 @@
+{
+ "n": 51,
+ "url": "https://help.salla.sa/article/عروض-وخصومات-البنك/r50cyw73aywqx15wbsrb6bkk",
+ "dir": "items/051-help.salla.sa",
+ "fetched_at": "2026-10-11T09:20:07Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.salla.sa/article/عروض-وخصومات-البنك/r50cyw73aywqx15wbsrb6bkk",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 142308,
+ "cited_in": [
+  "SA-S-5028",
+  "SA-S-5029"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "ce9a817fb2728f902fe308936911a025e4d3ed8ac4aba67ec281b5dc708636c8",
+ "raw_ext": "html"
+}

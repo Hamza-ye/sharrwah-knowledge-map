@@ -1,0 +1,18 @@
+{
+ "n": 173,
+ "url": "https://help.zid.sa/working-hours/",
+ "dir": "items/173-help.zid.sa",
+ "fetched_at": "2026-10-12T04:53:45Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/working-hours/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 26730,
+ "cited_in": [
+  "ZD-S-0970"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "76bbf32311fa101d682ff52af303e4c6d473a83412b9a64101001de34c5d5427",
+ "raw_ext": "html"
+}

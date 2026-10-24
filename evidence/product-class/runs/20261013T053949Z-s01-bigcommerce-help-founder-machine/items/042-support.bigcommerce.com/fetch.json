@@ -1,0 +1,18 @@
+{
+ "n": 42,
+ "url": "https://support.bigcommerce.com/s/article/SEO-Fields",
+ "dir": "items/042-support.bigcommerce.com",
+ "fetched_at": "2026-10-13T05:40:50Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://support.bigcommerce.com/s/article/SEO-Fields?language=en_US",
+ "content_type": "text/html;charset=UTF-8",
+ "bytes": 190832,
+ "cited_in": [
+  "BC-C-047"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "4925f540aa60a48d6f1be83e79c09f9c58fc0ecbad99a9410658d36b47f21ed7",
+ "raw_ext": "html"
+}

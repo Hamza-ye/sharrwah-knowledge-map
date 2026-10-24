@@ -1,0 +1,31 @@
+# Managing VAT requirements for Shopify billing in Saudi Arabia and the United Arab Emirates
+
+This page provides a detailed guide on how Value-Added Tax (VAT) charges are applied at 15% in Saudi Arabia and 5% in the United Arab Emirates (UAE). It also outlines the steps to register your tax identification number to potentially qualify for VAT exemptions
+
+## Understanding VAT obligations for Shopify stores in Saudi Arabia {#vat-saudi-arabia}
+
+If your store is located in Saudi Arabia, then you're charged 15% VAT. If you have a VAT number, then your Shopify bill might be exempt from VAT charges. You need to enter a valid 15-digit Tax ID number into your Shopify admin and certify that you're a VAT taxpayer.
+
+#### Steps:
+
+1. From your Shopify admin, go to **Settings** > [**Billing**](https://admin.shopify.com/settings/billing).
+
+2. Click **Billing profile**.
+3. In the **Tax registration** section, click **Enter Tax ID number**.
+4. Enter your Tax ID number.
+5. Select **I certify that I am a VAT taxpayer in Saudi Arabia and I can provide the VAT certificate on request**.
+6. Click **Add Tax ID number**.
+
+## Navigating VAT requirements for Shopify stores in the UAE {#vat-uae}
+
+If your store is located in the United Arab Emirates (UAE), then you're charged 5% VAT. If you have a VAT number, then your Shopify bill might be exempt from VAT charges. To be exempted, you need to enter a valid 15-digit Tax ID number into your Shopify admin and certify that you're a VAT taxpayer.
+
+#### Steps:
+
+1. From your Shopify admin, go to **Settings** > [**Billing**](https://admin.shopify.com/settings/billing).
+
+2. Click **Billing profile**.
+3. In the **Tax registration** section, click **Enter Tax ID number**.
+4. Enter your Tax ID number.
+5. Select **I certify that I am a VAT taxpayer in UAE and I can provide the VAT certificate on request**.
+6. Click **Add Tax ID number**.

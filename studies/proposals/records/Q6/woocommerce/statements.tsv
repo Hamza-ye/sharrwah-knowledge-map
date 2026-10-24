@@ -1,0 +1,43 @@
+stmt_id	bears_on	identifier	statement	scope	marker	cite_ids	from	note
+Q6-WC-001	1;2	Outlying territories of France	A business must be located in Metropolitan France or within a French overseas region or territory that is within the European Economic Area to sign up with WooPayments as a French business.	French businesses		Q6-WC-C001	held	
+Q6-WC-002	1;2	Outlying territories of France	Businesses based in Martinique, Guadeloupe, French Guiana, Réunion, Mayotte and Saint-Martin are currently supported when signing up for WooPayments as French businesses.	French businesses		Q6-WC-C002	held	
+Q6-WC-003	1;2	Outlying territories of France	Businesses based in French Polynesia, Wallis et Futuna, New Caledonia, Saint Barthélemy and Saint Pierre et Miquelon are not currently supported.			Q6-WC-C003	held	
+Q6-WC-004	1;2	Outlying territories of the UK	UK merchants must be based in the United Kingdom of Great Britain or Northern Ireland.	UK merchants		Q6-WC-C004	held	
+Q6-WC-005	1;2	Outlying territories of the U.S.	Businesses based in any other US territory, possession, etc. are not supported.	U.S. businesses		Q6-WC-C005	held	
+Q6-WC-006	1	Restrictions on account types	Businesses in the United Arab Emirates (UAE) do not have access to the Individual account type.	United Arab Emirates (UAE)		Q6-WC-C006	held	
+Q6-WC-007	2	Other countries	If you want to use WooPayments, but it’s not available in your country, please vote for your country to be supported on the WooPayments feature requests page.			Q6-WC-C007	held	
+Q6-WC-008	2	WooPayments in Your Country	Once that’s done, you can accept payments from customers anywhere in the world in over 100 supported currencies.			Q6-WC-C008	held	
+Q6-WC-009	1	Store details (onboarding task)	Your store address is required to set the origin country for shipping, currencies, and payment options.			Q6-WC-C009	held	
+Q6-WC-010	1	WooCommerce > Settings > General: Store Address (store_address)	This is where your business is located. Tax rates and shipping rates will use this address.			Q6-WC-C010	held	
+Q6-WC-011	1	woocommerce_default_country	'title' => __( 'Country / State', 'woocommerce' ), 'desc' => __( 'The country and state or province, if any, in which your business is located.', 'woocommerce' ), 'id' => 'woocommerce_default_country', 'default' => 'US:CA',			Q6-WC-C011	held	
+Q6-WC-012	1	i18n/countries.php: 'YE'	'YE' => __( 'Yemen', 'woocommerce' ),			Q6-WC-C012	held	
+Q6-WC-013	1	woocommerce_countries	$this->geo_cache['countries'][ $locale ] = apply_filters( 'woocommerce_countries', include WC()->plugin_path() . '/i18n/countries.php' );			Q6-WC-C013	held	
+Q6-WC-014	1	Store address	This is where you set your business’s physical address — the location where you are based as a seller. Many tax and shipping configurations use this address for determining rates.			Q6-WC-C014	held	
+Q6-WC-015	1	Why we ask for personal information	As you continue the process of signing up for WooPayments, we’ll ask for information about your business, including the business owner’s date of birth and tax ID number.			Q6-WC-C015	held	
+Q6-WC-016	1	What information will I need?: Business owner information	Business owner information Legal name Date of birth Home address Email address Mobile phone number Bank account information Social Security number (SSN) or Taxpayer Identification Number			Q6-WC-C016;Q6-WC-C017	held	
+Q6-WC-017	1	What information will I need?: Business information	Business information Country where your business is based Type of business Industry Company address Company phone number Company URL EIN or other tax ID			Q6-WC-C018;Q6-WC-C019	held	
+Q6-WC-018	1	What else should I keep in mind?	If you’re setting up WooPayments for someone else, it’s best to have that person complete the account creation process.			Q6-WC-C020	held	
+Q6-WC-019	1	How quickly will you confirm my identity?	Typically, we’ll confirm your application within a couple of days.			Q6-WC-C021	held	
+Q6-WC-020	1	Updating your information	If your business has moved from one country to another, there isn’t a way to update the country. Please contact our support staff for assistance with the how to handle this.			Q6-WC-C022	held	
+Q6-WC-021	1	Payments > Overview	Finally, note that if Stripe has a problem verifying any personal or business information, you will be alerted to this on the Payments > Overview page and asked to update your information inside the WordPress dashboard.			Q6-WC-C023	held	
+Q6-WC-022	1	Updating your information	How do I change my business type, e.g. from an individual to an LLC?			Q6-WC-C024	held	
+Q6-WC-023	1	2. Your Use of Our Services and Your Account	When using our Services requires an account, you agree to provide us with complete and accurate information and to keep the information current so that we can communicate with you about your account.			Q6-WC-C025	live	
+Q6-WC-024	1	2. Your Use of Our Services and Your Account	We may limit your access to our Services until we’re able to verify your account information, like your email address.			Q6-WC-C026	live	
+Q6-WC-025	1	3. Minimum Age Requirements	You’re not allowed to access or use our Services if you’re under the age of 13 (or 16 in Europe).			Q6-WC-C027	live	
+Q6-WC-026	1	3. Minimum Age Requirements	You may use our Services only if you can legally form a binding contract with us. In other words, if you’re under 18 years of age (or the legal age of majority where you live), you can only use our Services under the supervision of a parent or legal guardian who agrees to the Agreement.			Q6-WC-C028	live	
+Q6-WC-027	1	13. Termination	terminate or deny access to and use of any of our Services to any individual or entity for any reason			Q6-WC-C029	live	
+Q6-WC-028	1	Terms of Service (opening)	If you don’t agree to these Terms, don’t use our services.			Q6-WC-C030	live	
+Q6-WC-029	1	15. Jurisdiction and Applicable Law	Except to the extent any applicable law provides otherwise, the Agreement and any access to or use of our Services will be governed by the laws of the state of California, U.S.A., excluding its conflict of law provisions			Q6-WC-C031	live	
+Q6-WC-030	2	8. j. More on WooPay Specifically	WooPay may not be available in all languages or jurisdictions, and we make no representation that WooPay is available for use in all locations or for all products or services.			Q6-WC-C032	live	
+Q6-WC-031	2	8. j. More on WooPayments Specifically (in-person payments)	We may restrict availability based on your region or limit the quantity of POS terminals that you may order.	POS terminals		Q6-WC-C033	live	
+Q6-WC-032	2	Supported countries	Australia Canada Finland Ireland Luxembourg Netherlands New Zealand Singapore United Kingdom United States	POS mode		Q6-WC-C034	held	
+Q6-WC-033	2	Requirements	Phone POS is currently available to UK merchants on iOS only.	Phone POS		Q6-WC-C035	held	
+Q6-WC-034	2	Supported providers	Which BNPL provider(s) you can use depends on the country you chose during the WooPayments signup process.			Q6-WC-C036	held	
+Q6-WC-035	2	Local payment methods	A given local payment method may not be available in every country. Please see the table below to find out which local payment methods you can use based on your WooPayments account country.			Q6-WC-C037	held	
+Q6-WC-036	1	iDEAL | Wero	If your business is based in the Netherlands, iDEAL | Wero requires that your website displays your KVK number on file with the Chamber of Commerce.	businesses based in the Netherlands		Q6-WC-C038	held	
+Q6-WC-037	2	Show coupon on Google	This is currently available in Australia, Canada, Germany, France, India, the United Kingdom, and the United States.	Show coupon on Google (Google for WooCommerce)		Q6-WC-C039	held	
+Q6-WC-038	2	Is WooPayments required to take payments with WooCommerce?	WooPayments is not required for your WooCommerce site to take payments. WooPayments is only one of many payment gateways available for WooCommerce.			Q6-WC-C040	held	
+Q6-WC-039	1;2	Eligibility	If your country only has a single currency listed, that means you can only accept payouts in that currency, and those payouts can only be sent to banks in your country.			Q6-WC-C041	held	
+Q6-WC-040	1	Eligibility: COUNTRY / AVAILABLE PAYOUT CURRENCIES	United Arab Emirates AED	United Arab Emirates		Q6-WC-C042	held	
+Q6-WC-041	1	Eligibility: COUNTRY / AVAILABLE PAYOUT CURRENCIES	Other supported countries CHF, DKK, EUR, GBP, NOK, SEK, USD	Other supported countries		Q6-WC-C043	held	
+Q6-WC-042	1	“Payouts are temporarily suspended”	It might also help to make sure that your account isn’t restricted or missing any information, since that can affect payout availability as well.			Q6-WC-C044	held	

@@ -1,0 +1,20 @@
+{
+ "n": 5,
+ "url": "https://en.support.wordpress.com/store-guidelines/",
+ "dir": "items/005-en.support.wordpress.com",
+ "fetched_at": "2026-10-10T23:53:58Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://wordpress.com/support/store-guidelines/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 46970,
+ "cited_in": [
+  "WC-S-0846",
+  "WC-S-0951",
+  "WC-S-0952"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "036ddda8cc4c2c80c7a30d5f0d23c36da370ca54c11e93b0bbe95994cdcdbd11",
+ "raw_ext": "html"
+}

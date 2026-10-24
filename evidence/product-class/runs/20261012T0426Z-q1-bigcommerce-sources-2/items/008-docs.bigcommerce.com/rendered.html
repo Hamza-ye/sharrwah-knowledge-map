@@ -1,0 +1,150 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">&gt; This page is for Developer.
+
+&gt; For clean Markdown of any page, append .md to the page URL.
+&gt; For a complete documentation index, see https://docs.bigcommerce.com/llms.txt.
+&gt; For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server.
+
+# Store Metafields
+
+Store metafields allow you to attach a metafield to the store itself. They are suitable for any global information against the store that is not channel specific. Channel metafields are appropriate for any storefront-specific data you need to store in metafields. There are two ways to create a store metafield in Admin GraphQL. You can remove the resource ID or use the store’s Global ID. Examples of each type are below:
+
+&gt; **Note**
+&gt;
+&gt; You can create 10,000 metafields on a store entity instead of the typical limit of 250 per entity-per-client-id.
+
+## Remove resource ID
+
+#### Request
+
+**`Example mutation: Create a store metafield`**
+
+```graphql title="Example mutation: Create a store metafield"
+   POST https://api.bigcommerce.com/stores/{{STORE_HASH}}/graphql
+   X-Auth-Token: {{ACCESS_TOKEN}}
+   Content-Type: application/json
+   Accept: application/json
+   
+   mutation Metafield($input: CreateMetafieldInput!) {
+   metafield {
+     createMetafield(input: $input) {
+         metafield {
+             id
+             description
+             key
+             namespace
+             permissionSet
+             resourceId
+             value
+             ownerClientId
+         }
+     }
+ }
+}
+```
+
+**`GraphQL variables`**
+
+```json title="GraphQL variables" showLineNumbers={false}
+    {
+   "input":{
+       "namespace": "Warehouse Locations",
+       "key": "Location",
+       "value": "4HG",
+       "permissionSet": "APP_ONLY"
+   }
+}
+```
+
+#### Response
+
+**`Example mutation: Create a store metafield`**
+
+```json title="Example mutation: Create a store metafield"
+ {
+  "data": {
+      "metafield": {
+          "createMetafield": {
+              "metafield": {
+                  "id": "bc/store/metafield/74",
+                  "description": "",
+                  "key": "Location",
+                  "namespace": "Warehouse Locations",
+                  "permissionSet": "APP_ONLY",
+                  "resourceId": "bc/store/store/1001197568",
+                  "value": "4HG",
+                  "ownerClientId": "k8l7zz0ynkd1bfbxx02p2k7pnk3n8ov"
+              }
+          }
+      }
+  }
+}
+```
+
+## Use the Global ID
+
+#### Request
+
+**`Example mutation: Create a store metafield`**
+
+```graphql title="Example mutation: Create a store metafield"
+   POST https://api.bigcommerce.com/stores/{{STORE_HASH}}/graphql
+   X-Auth-Token: {{ACCESS_TOKEN}}
+   Content-Type: application/json
+   Accept: application/json
+   
+   mutation Metafield($input: CreateMetafieldInput!) {
+   metafield {
+     createMetafield(input: $input) {
+         metafield {
+             id
+             description
+             key
+             namespace
+             permissionSet
+             resourceId
+             value
+             ownerClientId
+         }
+     }
+ }
+}
+```
+
+**`GraphQL variables`**
+
+```json title="GraphQL variables" showLineNumbers={false}
+    {
+   "input":{
+       "namespace": "Warehouse Locations",
+       "key": "Location",
+       "value": "4HG",
+       "permissionSet": "APP_ONLY",
+       "resourceId": "bc/store/store/1001197568"
+   }
+}
+```
+
+#### Response
+
+**`Example mutation: Create a store metafield`**
+
+```json title="Example mutation: Create a store metafield"
+ {
+  "data": {
+      "metafield": {
+          "createMetafield": {
+              "metafield": {
+                  "id": "bc/store/metafield/71",
+                  "description": "",
+                  "key": "Location",
+                  "namespace": "Warehouse Locations",
+                  "permissionSet": "APP_ONLY",
+                  "resourceId": "bc/store/store/1001197568",
+                  "value": "4HG",
+                  "ownerClientId": "k8l7zz0ynkd1bfbxx02p2k7pnk3n8ov"
+              }
+          }
+      }
+  }
+}
+```</pre></body></html>

@@ -1,0 +1,22 @@
+{
+ "n": 110,
+ "url": "https://www.commerce.com/terms/ai-features-addendum/",
+ "dir": "items/110-commerce.com",
+ "fetched_at": "2026-10-12T04:20:55Z",
+ "curl_exit": 47,
+ "curl_error": "curl: (47) Maximum (8) redirects followed",
+ "http_code": 307,
+ "final_url": "https://www.commerce.com/terms/ai-features-addendum/",
+ "content_type": "text/plain",
+ "bytes": 15,
+ "cited_in": [
+  "BC-S-0309",
+  "BC-S-0311",
+  "BC-S-0314",
+  "BC-S-0315",
+  "BC-S-0316"
+ ],
+ "raw_file": "",
+ "sha256": "",
+ "raw_ext": ""
+}

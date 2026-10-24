@@ -1,0 +1,27 @@
+{
+ "n": 76,
+ "url": "https://stripe.com/legal/connect-account",
+ "dir": "items/076-stripe.com",
+ "fetched_at": "2026-10-12T10:50:49Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://stripe.com/legal/connect-account",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 20801,
+ "cited_in": [
+  "S01-SH-C324",
+  "S01-SH-C325",
+  "S01-SH-C326",
+  "S01-WC-C110",
+  "S01-WC-C111",
+  "S01-WC-C112",
+  "S01-WC-C113",
+  "S01-WC-C114",
+  "S01-WC-C115",
+  "S01-WC-C176"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "2160da94ee55e262d4e340cbb87cb3e0a7a268df2fb15667c45160794377e5e1",
+ "raw_ext": "html"
+}

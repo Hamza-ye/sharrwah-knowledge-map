@@ -1,0 +1,324 @@
+___
+Skip to navigation
+Skip to content
+USD
+Change site currency USD selected
+Develop on Woo
+Hire an expert
+Get support
+Sell
+Click to show 12 more items
+Extensions
+Click to show 18 more items
+Resources
+Click to show 23 more items
+Enterprise ecommerce
+Log in
+Get started
+WooCommerce Subscriptions
+Introduction to Subscriptions
+Store Manager Guide
+Expand
+Subscriptions Management
+Expand
+Testing and Troubleshooting
+Subscriptions Use Cases
+Subscriptions Developer Docs
+FAQs and Roadmap
+Subscriptions Add-ons
+WooCommerce Subscriptions / Documentation / Introduction to Subscriptions / Introduction to WooCommerce Subscriptions / Introduction to Subscriptions Developer Documentation / Subscriptions Action Reference
+Subscriptions Action Reference
+
+If you are looking for a guide to creating and managing subscription products in a WooCommerce store, please refer to the Store Manager Guide instead.
+
+This document provides a reference for a few of the more important action hooks triggered by the WooCommerce Subscriptions extension.
+
+It is not an exhaustive list of all actions triggered by Subscriptions, of which there are over 250, nor is it intended to be instructive about when to use these hooks. It is provided as a reference for a few of the more useful hooks you can use to interact with Subscriptions from custom code.
+
+Note:
+
+This is a Developer level doc. If you are unfamiliar working with code and resolving potential conflicts, we recommend you work with a Woo Agency Partner for larger projects, or find a WooCommerce developer on Codeable for smaller customizations. We are unable to provide support for customizations under our Support Policy.
+
+Payment and Renewal Actions
+
+Action: 'woocommerce_scheduled_subscription_payment'
+
+Parameters: $subscription_id Integer The ID of the subscription that will soon have a payment processed.
+
+Description: Fired once when a subscription renewal payment should be processed.
+
+This action can be triggered on a schedule, for example, if a subscription is $50 per year, this hook will fire once per year, on the anniversary of the original purchase.
+
+It can also be triggered off-schedule by 3rd party code or store manager actions, like the action to process a renewal for an active subscription from the Edit Subscription screen.
+
+Action: 'woocommerce_scheduled_subscription_payment_{$gateway_id}'
+
+Parameters:
+$renewal_total A float value representing the total amount to charge for this renewal payment.
+$renewal_order A WC_Order object representing the order created to record the renewal.
+
+Description: Much like the 'woocommerce_scheduled_subscription_payment' action, this action is fired once when a renewal payment should be processed.
+
+The main difference being that this hook is gateway specific and intended to be used by payment gateways to actually process a payment. Because of this, the parameters passed to callbacks on this action are also different.
+
+Action: 'woocommerce_subscription_payment_complete'
+
+Parameters: $subscription A WC_Subscription object representing the subscription which has just received a payment.
+
+Description: Triggered when a payment is made on a subscription. This can be a payment for the initial order or a renewal order. It is important to note, however, that subscription date changes related to early renewals are processed differently than other renewals, so this action should not be relied upon for capturing the next payment date on a subscription.
+
+Action: 'woocommerce_subscription_renewal_payment_complete'
+
+Parameters:
+$subscription A WC_Subscription object representing the subscription which has just received a renewal payment.
+$last_order A WC_Order object representing the order created to record the renewal.
+
+Description: Triggered when a renewal payment is made on a subscription.
+
+Unlike the 'woocommerce_subscription_payment_complete' hook, this hook is not triggered for payments on the initial order or a switch order. It is only triggered for payments on renewal orders.
+
+It will be triggered for both automatic and manual renewal payments. It is important to note, however, that subscription date changes related to early renewals are processed differently than other renewals, so this action should not be relied upon for capturing the next payment date on a subscription.
+
+Action: 'woocommerce_subscription_payment_failed'
+
+Parameters:
+$subscription A WC_Subscription object representing the subscription which has just had a payment fail.
+$new_status A string representation of the status applied to the subscription on the payment failure. By default, this is the on-hold status.
+
+Description: Triggered when a payment fails for a subscription. This can be for payment of the initial order, a switch order or renewal order.
+
+Action: 'woocommerce_subscription_renewal_payment_failed'
+
+Parameters: $subscription A WC_Subscription object representing the subscription which has just had a renewal payment fail.
+
+Description: Triggered when a renewal payment fails for a subscription.
+
+Unlike the 'woocommerce_subscription_payment_failed' hook, this hook is not triggered for failed payments on the initial order or a switch order. It is only triggered for payments on renewal orders.
+
+Subscription Status Change Actions
+
+A subscriptions status can be changed by store owners, subscribers or automatic schedule events, like expiration. The following hooks will always be triggered on status changes, regardless of what initiated the status change.
+
+Furthermore, to provide hooks for subscription status changes, WooCommerce Subscriptions provides both:
+
+dynamic hooks where the hook name includes the status, for example, 'woocommerce_subscription_status_active' and 'woocommerce_subscription_status_pending-cancel_to_cancelled'
+static hook names where the hook name never changes, for example, 'woocommerce_subscription_status_updated'.
+
+In general, you should use the dynamic hook if you only need to attach to a single status change, like activation or cancellation. If your functions code needs to perform different actions depending on different statuses, you should use the static hooks.
+
+Action: 'woocommerce_subscription_status_updated'
+
+Parameters:
+$subscription An instance of a WC_Subscription object that just had its status changed.
+$new_status The string representation of the new status applied to the subscription.
+$old_status The string representation of the subscriptions status before the change was applied.
+
+Description: Similar to WooCommerce’s 'woocommerce_order_status_changed' hook, this action is triggered immediately after a subscription’s status has been changed.
+
+It will be triggered for all status changes defined by WooCommerce Subscriptions, including: pending, active, on-hold, pending-cancel, cancelled, or expired; as well as any custom subscription statuses.
+
+Action: 'woocommerce_subscription_status_active'
+
+Parameters: $subscription A WC_Subscription object representing the subscription that just had its status changed.
+
+Description: This action is triggered after the subscription specified with $subscription has had its status changed to activated. The subscription’s status may have transitioned from pending to active, or on-hold to active or some other custom status to active.
+
+Action: 'woocommerce_subscription_status_cancelled'
+Parameters:
+$subscription A WC_Subscription object representing the subscription that just had its status changed.
+
+Description: This action is triggered after the subscription specified with $subscription has had its status changed.
+
+The subscription’s status may have transitioned from pending to cancelled, or on-hold to cancelled, pending cancellation to cancelled or some other custom status to cancelled.
+
+Importantly, a subscription’s status will not be transitioned to cancelled immediately when a store manager or customer cancels the subscription. Instead, it will be transitioned to pending-cancel and then transitioned to cancelled only after the end of prepaid term.
+
+Action: 'woocommerce_subscription_status_expired'
+
+Parameters: $subscription A WC_Subscription object representing the subscription that just had its status changed.
+
+Description: Triggered when a subscription reaches the end of its term, if a length was set on the subscription product when it was purchased or an end date was otherwise set on a subscription.
+
+This event may be triggered by either WooCommerce Subscriptions, which schedules an event to expire each subscription, or by 3rd party code which can call the WC_Subscription::update_status() function directly.
+
+Action: 'woocommerce_subscription_status_on-hold'
+
+Parameters: $subscription A WC_Subscription object representing the subscription that just had its status changed.
+
+Description: Triggered when a subscription is put on-hold (suspended). A subscription is put on hold when:
+
+the store manager has manually suspended the subscription
+the customer has manually suspended the subscription from their My Account page
+a renewal payment is due (subscriptions are suspended temporarily for automatic renewal payments until the payment is processed successfully and indefinitely for manual renewal payments until the customer logs in to the store to pay for the renewal. For more information, see the subscription renewal guide).
+Subscription Life Cycle Actions
+
+Action: 'woocommerce_scheduled_subscription_trial_end'
+
+Parameters: $subscription_id Integer The ID of the subscription that has reached the end of its trial period.
+
+Description: Triggered when the trial period for a subscription has reached its end date.
+
+A subscription can have a trial period if a trial length was set on the subscription product at the time it was purchased or a trial end date was otherwise manually set on the subscription.
+
+Action: 'woocommerce_scheduled_subscription_expiration'
+
+Parameters: $subscription_id Integer The ID of the subscription that has reached the end of its life.
+
+Description: Triggered when a subscription has reached its end date, based on the length set on the subscription product at the time it was purchased or an arbitrary end date that was otherwise manually set on the subscription.
+
+Action: 'woocommerce_scheduled_subscription_end_of_prepaid_term'
+
+Parameters: $subscription_id Integer The ID of the subscription that has reached the end of its prepaid term.
+
+Description: Triggered when a subscription that was cancelled by a customer or store owner has reached the and of the term covered by the last payment.
+
+For example, if a customer purchases a monthly subscription on the 1st of March, then cancels the subscription on the 15th of March, the 'woocommerce_subscription_status_pending-cancel' action will be triggered immediately and the 'woocommerce_scheduled_subscription_end_of_prepaid_term' action will scheduled to run on the 1st of April to cancel the subscription.
+
+Subscriptions uses the 'woocommerce_scheduled_subscription_end_of_prepaid_term' hook internally to change a subscription’s status from pending-cancel to cancelled.
+
+Action: 'woocommerce_checkout_subscription_created'
+
+Parameters:
+$subscription A WC_Subscription instance representing the subscription just created on checkout.
+$order A WC_Order instance representing the order for which subscriptions have been created.
+$recurring_cart A WC_Cart instance representing the cart which stores the data used for creating this subscription.
+
+Description: Triggered when a subscription is created after a customer purchases a subscription product or products.
+
+This hook is triggered after WooCommerce has created an order to record the transaction and it is triggered once for every subscription created with the pending status for that order. This occurs before payment payment has been made on an order and subscriptions are activated.
+
+As the cart can contain mutiple subscriptions products, and these products are grouped into special instances of WC_Cart used to store the products, shipping, taxes and other data associated with that group of products for recurring payments, the action also passes the recurring cart which lead to this subscription to callbacks.
+
+Action: 'subscriptions_created_for_order'
+
+Parameters: $order WC_Order The order for which subscriptions have been created.
+
+Description: Triggered when the subscriptions in an order are first created with the pending status. This occurs before payment payment has been made on an order and subscriptions are activated.
+
+Action: 'woocommerce_subscriptions_updated_users_role'
+
+Parameters:
+$role_new String The name of the role the user was just assigned.
+$user WP_User The user whose role has just been changed.
+$role_old String The name of the role the user had before the new role was assigned.
+
+Description: When a subscription is activated, suspended, cancelled or expired, the user’s role will also be changed, which triggers the 'woocommerce_subscriptions_updated_users_role' hook.
+
+Subscription Switching Actions
+
+Action: 'woocommerce_subscriptions_switch_completed'
+
+Parameters: $order WC_Order The order for which subscriptions have been created.
+
+Description: Triggered when the switch order status changes to processing or completed and runs after all the switching and updating has happened.
+
+← WooCommerce Subscriptions Documentation
+Was this guide helpful for you?
+Related Products
+WooCommerce Memberships
+by
+SkyVerge
+
+Power your membership association, online magazine, elearning sites, and more with access control to...
+
+Excellence verified
+Price $199 annually
+$199
+annually
+Rated 4 out of 5 stars
+4 
+(152)
+Product Add-Ons
+by
+Woo
+
+Offer add-ons like gift wrapping, special messages or other special options for your products.
+
+Price $79 annually
+$79
+annually
+Rated 3.4 out of 5 stars
+3.4 
+(49)
+ON THIS PAGE
+Payment and Renewal Actions
+Subscription Status Change Actions
+Subscription Life Cycle Actions
+Subscription Switching Actions
+WooCommerce Subscriptions
+by Woo
+Price $23.25
+$23.25
+Per month
+ monthly
+ Billed annually at $279
+Buy now
+30-day money-back guarantee
+Support teams across the world
+Safe and secure online payments
+Sell
+WooCommerce
+WooCommerce pricing
+Payments
+No-code customization
+Marketing
+Checkout
+Shipping
+Mobile app
+Enterprise ecommerce
+Marketplace
+WooCommerce extensions
+WooCommerce themes
+New
+Essentials
+Collections
+Developed by Woo
+Build
+Woo for developers
+Developer resources
+Become a Woo agency
+Become a Marketplace partner
+Become an affiliate
+Resources
+Blog
+Documentation
+WooCommerce site examples
+Product updates
+Email newsletter
+Support
+Feature requests
+WooCommerce hosting
+Hire an agency
+Participate in customer research
+Accessibility
+Support forums
+Company
+About
+Press
+Download WooCommerce free
+Join the Woo community
+Woo trademark guidelines
+Brand and logo guidelines
+Do not sell or share my personal information
+WooCommerce Support Policy
+Refund Policy
+Contact us
+Follow us on Facebook
+Follow us on X
+Follow us on Instagram
+Follow us on LinkedIn
+USD
+Change site currency USD selected
+Terms of Service
+Privacy Policy
+Privacy Notice for California Users
+
+© WooCommerce, Inc. 2026
+
+AN
+AUTOMATTIC
+THINGAMAJIG
+Use of your personal data
+We and our partners process your personal data (such as browsing data, IP Addresses, cookie information, and other unique identifiers) based on your consent and/or our legitimate interest to optimize our website, marketing activities, and your user experience.
+Customize
+Accept all

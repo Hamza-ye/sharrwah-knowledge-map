@@ -1,0 +1,112 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;"># Manual tax settings
+
+&lt;aside class="note"&gt;&lt;h4&gt;Note&lt;/h4&gt;&lt;p&gt;This guide is for merchants who set tax rates manually. If you use Shopify Tax, then refer to &lt;a href="/en/manual/taxes/shopify-tax"&gt;Shopify Tax&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It&amp;#39;s your responsibility to consult with local tax authorities or a tax professional to verify that you charge your customers the correct tax rates, and to ensure that you file and remit your taxes correctly.&lt;/p&gt;
+&lt;/aside&gt;
+
+To ensure that you charge the correct amount of tax, configure your tax settings on the [**Taxes and duties**](https://admin.shopify.com/settings/taxes) page in your Shopify admin.
+
+## Limitations of Manual Tax {#limitations}
+
+The following features aren't available when you set your taxes manually instead of using Shopify Tax:
+
+* [Automatic rate calculations using tax registrations](/manual/taxes/shopify-tax/choose-tax-service#registration-based)
+* [Automatic rate calculations using product categories](/manual/taxes/shopify-tax/choose-tax-service#product-category-rates)
+* [Automatic recommendations for product category](/manual/taxes/shopify-tax/choose-tax-service#product-category-recommendations)
+* [Rooftop accuracy](/manual/taxes/shopify-tax/choose-tax-service#rooftop-accuracy)
+* [Support for state fees](/manual/taxes/shopify-tax/choose-tax-service#state-fees)
+* [Managed Markets](/manual/taxes/shopify-tax/choose-tax-service#markets-pro)
+* [Tax holidays](/manual/taxes/shopify-tax/choose-tax-service#tax-holidays)
+* [Tax liability insights](/manual/taxes/shopify-tax/choose-tax-service#liability-insights)
+* [Advanced reports](/manual/taxes/shopify-tax/choose-tax-service#advanced-reports)
+* [B2B tax exemptions](/manual/taxes/shopify-tax/choose-tax-service#b2b-tax-exemptions)
+* [Customer tax exemptions](/manual/taxes/shopify-tax/choose-tax-service#customer-tax-exemptions)
+* [VAT invoices](/manual/taxes/shopify-tax/choose-tax-service#vat-invoices)
+* [Logo customization for VAT invoices](/manual/taxes/shopify-tax/choose-tax-service#custom-logo)
+
+If you require any of these features, then [review the table of tax services](/manual/taxes/shopify-tax/choose-tax-service) to determine which tax service is best for your needs.
+
+## Before setting up tax settings and rates manually {#before-setup}
+
+If you're new to Shopify, then you need to determine whether you should charge sales tax before you start selling. You might need to register with multiple tax agencies. After that, you can set up your taxes in Shopify to help ensure that you charge the correct rates wherever you sell in the United States, European Union, and United Kingdom.
+
+Before you add tax rates in the  **Settings** &gt; [**Taxes and duties**](https://admin.shopify.com/settings/taxes) page of your Shopify admin, review the following considerations:
+
+* You need to determine whether you should charge sales tax. If you're not sure, then consult with the relevant tax authorities or a tax professional.
+* If you need to charge sales tax in one or more jurisdictions, then you need to contact each of the relevant agencies and register with them. The process varies depending on where your business is based and where you sell, and on individual government requirements.
+* After default tax rates are set up manually, they're not automatically updated based on new regulations unless you click the **Reset to default tax rates** button again.
+
+## Set up manual tax rates {#manual-setup}
+
+After you determine where you need to charge sales tax, you can manually set your tax rates.
+
+#### Steps:
+
+1. From your Shopify admin, go to **Settings** &gt; [**Taxes and duties**](https://admin.shopify.com/settings/taxes).
+
+
+2. In the **Tax regions** section, click the region that you want to set up taxes for.
+3. In the **Base taxes** section, specify the taxes manually for each state and region, or select **Reset to default tax rates** to use the current sales tax rate for each state or country.
+4. Optional: For US tax settings, you can choose whether a tax in a region is used instead of a federal tax, added to a federal tax, or compounded with a federal tax.
+4. Click **Save**.
+
+## Remove a physical presence
+
+Although you can remove your business's physical presences, you need to keep at least one physical presence for the country that's specified in your store address on the **Settings** &gt; [**General**](https://admin.shopify.com/settings/general) page.
+
+For tax purposes, it's assumed that you have a physical presence at your store address. If you remove that physical presence from the **Taxes and duties** page, then that location is automatically added back.
+
+You can remove a physical presence from the **County, municipal, and state taxes** section.
+
+#### Steps:
+
+1. From your Shopify admin, go to **Settings** &gt; [**Taxes and duties**](https://admin.shopify.com/settings/taxes).
+
+
+2. In the **Tax regions** section, click the relevant region.
+3. Find the physical presence that you want to remove, and then click &lt;img src="https://cdn.shopify.com/shopifycloud/help-center/manual/admin-icons/DeleteIcon.svg" alt="Delete" class="admin-icon" /&gt; icon.
+
+## Make sure that taxes aren't duplicated {#ensure-no-duplicate-taxes}
+
+If you set up taxes for a country and its sub-regions, then you need to make sure that you specify whether a regional tax is added or compounded to any federal tax, or is to be used instead of the federal tax. If your customers in a country are getting charged taxes twice, then you might have the sub-region taxes configured to be added to the total tax for that country.
+
+For example, you have an item that costs $100.00. A customer buys that item in an area where there are country and regional tax rates, both at 10%.
+
+* If you select **added to**, then the country and region are both charged and added together. In this case, the country tax amount is $10.00, and the regional tax is $10.00. These are added together for a total price of $120.00.
+
+* If you select **instead of**, then the regional amount is charged and the country amount isn't. In this case, there is no country tax, and a regional tax of $10.00. The total price of the item is $110.
+
+* If you select **compounded on top of**, then the tax amount for the country is determined and then the regional amount is charged on that subtotal. In this case, the country tax amount is $10.00. Regional tax is then applied to the subtotal of $110.00, producing a regional tax amount of $11.00. When totaled, this results in a total price of $121.00.
+
+You can verify or change your tax settings for a region.
+
+#### Steps:
+
+1. From your Shopify admin, go to **Settings** &gt; [**Taxes and duties**](https://admin.shopify.com/settings/taxes).
+
+
+2. In the **Tax regions** section, click **Edit** beside the country's name. The taxes display for the country and for the sub-regions by state or province.
+3. Choose an option from the drop-down menu under the sub-region tax rate to specify how you want to charge taxes.
+4. Click **Save**.
+
+## Change the default name of the value added tax (VAT) {#change-the-default-name-of-the-vat-tax}
+
+For countries that have a value added tax, the default name that is given to the tax is &lt;kbd&gt;VAT&lt;/kbd&gt;. The short form &lt;kbd&gt;VAT&lt;/kbd&gt; displays on your checkout page, customer receipts, and in the **Order details** section of orders.
+
+If you're in a country that uses a different short form for the tax, then you can change the name on the **Taxes** page. For example, several countries use &lt;kbd&gt;IVA&lt;/kbd&gt; instead of &lt;kbd&gt;VAT&lt;/kbd&gt;. You can change the name only if subregions are included for the country in the Shopify admin, such as for Italy and Spain. You can't change the name if subregions aren't included, such as for Austria and Norway.
+
+#### Steps:
+
+1. From your Shopify admin, go to **Settings** &gt; [**Taxes and duties**](https://admin.shopify.com/settings/taxes).
+
+
+2. In the **Tax regions** section, click the country.
+3. For each region, change &lt;kbd&gt;VAT&lt;/kbd&gt; to the short form that you want to use.
+  ![Change VAT to IVA](/manual/taxes/change-vat-to-iva.png)
+  The name is specific for each region, so you need to change it for each one.
+4. Click **Save**.
+
+## Shipping tax with Manual Tax
+
+When you use Manual Tax, taxes on shipping are not automatically calculated. Automatic shipping tax calculation is only available with Basic Tax or Shopify Tax. If you need to charge tax on shipping, then you must manually set up shipping tax rates for each region where it's required. For more information, refer to [_Shipping tax_](/manual/taxes/shipping-tax).
+</pre></body></html>

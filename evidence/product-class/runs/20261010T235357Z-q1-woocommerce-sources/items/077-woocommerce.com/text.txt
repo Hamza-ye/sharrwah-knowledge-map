@@ -1,0 +1,229 @@
+___
+Skip to navigation
+Skip to content
+USD
+Change site currency USD selected
+Develop on Woo
+Hire an expert
+Get support
+Sell
+Click to show 12 more items
+Extensions
+Click to show 18 more items
+Resources
+Click to show 23 more items
+Enterprise ecommerce
+Log in
+Get started
+Documentation
+WooCommerce
+Expand
+Products
+Expand
+Extensions
+Expand
+Themes
+Expand
+WooPayments
+WooPay
+WooCommerce Shipping
+WooCommerce Tax
+Retired Products
+Expand
+Woo Marketplace
+Code Snippets
+Expand
+Documentation / Products / WooPayments / WooPayments Documentation / WooPayments: Stripe Capital / WooPayments: Stripe Capital Overview
+WooPayments: Stripe Capital Overview
+
+WooCommerce has partnered with Stripe to offer eligible businesses access to fast, flexible financing through the Stripe Capital program.
+
+Eligibility
+
+WooCommerce businesses are automatically reviewed for eligibility on a daily basis, and you will be contacted via email if your business qualifies for an offer. The criteria for eligibility are based on a number of factors including your transaction volume and history with WooCommerce.*
+
+Eligible U.S. businesses will receive an email if they have an offer available. 
+
+*Stripe, through its bank partner, Celtic Bank, provides Capital loans you obtain through any offer in a WooCommerce email or dashboard message. Loans issued by Celtic Bank, a Utah-Chartered Industrial Bank Member FDIC. All loans subject to credit approval. 
+
+Offer structure
+
+If eligible, you’ll receive an email with your personalized offers and you can choose the one that works best for your business. Each offer will outline:
+
+Financing amount: the dollar amount that will be paid out into your bank account.
+Flat fee: the fee you’ll pay over time in exchange for the financing amount — there are no other fees and or compounding interest.
+Total amount owed: the sum of the financing amount and the flat fee.
+Repayment rate: the percentage of your daily card transactions processed through WooCommerce that will be withheld to repay the total amount owed. 
+
+Here’s an example offer you may receive:
+
+Financing amount: $17,000
+Flat fee: $1,700
+Total amount owed: $18,700
+Repayment rate: 12%
+
+If you accepted the example offer above, you would receive $17,000 in the bank account associated with your WooCommerce account within two days along with your usual payout. Stripe would then withhold 12% of your daily transaction total in addition to the usual processing fees until you’ve paid down the total amount owed of $18,700 (the $17,000 advanced plus the $1,700 flat fee). 
+
+Repayment
+
+You’ll automatically repay the financing over time through a percentage of your transactions according to your repayment rate. The repayment process will begin automatically within two business days after the funds have been paid out into your account. The more card sales you process through WooPayments, the faster you’ll repay. There is no deadline to repay the financing and there is no accrued interest or late fees.
+
+To see a daily summary of your repayment progress, see the loan overview page.
+
+How does it work?
+
+When you become eligible for a loan offer, you will receive an email like this:
+
+In this email, you can see the offer details, including the maximum amount you can receive, the flat fee you’ll pay for that maximum amount, and the rate at which your sales will be used to pay back the loan, should you accept. 
+
+Note that the loan offer expires after 30 days, and you will receive two reminder emails about your loan offer, just in case you forget to respond.
+
+If you do not wish to accept any offers (meaning neither the current offer nor any in the future), you can unsubscribe from receiving loan offer emails using the link at the bottom of the email.
+
+Completing the application
+
+If you decide to apply for a loan, click the View your offer button in the email. This will redirect you to a page where you can fill in the required application forms.
+
+After you click the Start application button on the loan application page, you’ll be taken to a page where you can view and modify the terms of the loan as well as provide additional information to get your loan approved.
+
+You can change the terms of your loan by moving the slider and adjusting the amount you want to accept. The fee and the repayment rate will change according to the amount you select. You can choose whatever amount you think fits the need of your business.
+
+The next page will require you to specify your annual revenue. After that, you’ll be asked to review your business and personal details.
+
+Finally, you can review your details on the last page of the application process. You must to agree to the terms and conditions of the loan, the signature policy, and the terms of Stripe’s business partners that provide the service to submit the application.
+
+After submitting your loan application, you’ll get a confirmation email, and your application will enter a review process. Normally, you’ll receive a decision within four business days.
+
+Here’s an example of the confirmation email:
+
+If you decide, after applying, that you no longer want to accept the offer, please reach out to us within 48 hours after the application is submitted, before it is approved. 
+
+Application decisions
+
+If your application is approved, you’ll receive the funds within two days after the approval email is delivered.
+
+Once your loan is approved and accepted, you will see information about it in WooCommerce, specifically under Payments > Overview and Payments > Capital Loans. The Payments > Overview page will also contain an inbox notification stating that your loan is approved.
+
+If your application is rejected, you’ll receive an email indicating as much, including the reason for rejection. There will also be an email address you can contact with any questions.
+
+Managing your loan
+
+Once your loan is approved, the Payments > Overview page will contain a new section with details about your active loan:
+
+The Active loan overview card will track the following information:
+
+The amount of the loan you’ve repaid.
+The remaining amount to pay back, including the flat fee.
+The repaid amount in the last 60 days.
+The minimum amount you need to repay in that period.
+The date that you received the loan amount.
+The loan amount without the fee.
+The service fee amount.
+The portion of your sales used to pay down the loan.
+The date that you paid on the loan for the first time.
+
+Note that repayments don’t start immediately after the application is approved. Rather, the withholding starts after seven days in order to ensure the loan payout is completed before payments begin. As such, you may not see any updates in the Active loan overview box during that period.
+
+You will also see a new menu item titled Capital Loans under the Payments menu item:
+
+This page contains a similar summary section with the active loan status. It also features a table showing your past and present loans, the amounts you’ve borrowed, the details for each of the loans, and the dates that you fully paid them down.
+
+When you click any loan record in the table, you’ll see the transaction history page pre-filtered to only show transactions relevant to that specific loan. Note that there may be a slight delay — up to five minutes — between when a charge is listed and when the loan repayment entry is listed.
+
+You can see the details of your repayments by clicking on each row. This will display a detailed breakdown of what the funds paid to you, the funds that have been withheld to pay down your loan, and the associated order.
+
+When your loan repayments are completed, the loan summary boxes will disappear, but you will still be able to see your past loans and loan-related transactions. This will be available until you receive a new loan offer and get approved. You will also receive a notification email from Stripe when your loan is fully paid off.
+
+Financing refills 
+
+Based on your sales and repayment rate, you may be eligible for a better loan offer with better terms (advance amount, repayment rate, and/or premium fee) even while you are still paying down an existing loan. This is called a “financing refill.”
+
+If this applies to you, you will receive an email like this when you are eligible for a refill offer:
+
+When you click the View details button in that email, you’ll be redirected to the refill offer application page. Here you will be able to adjust the advance amount and see the terms, just like you would for an initial loan offer.
+
+When you finish your adjustments, you’ll see the same prompts asking for your information. After filling in the necessary details, you’ll get to the summary page. Once you’ve accepted all the final terms of the loan, you can submit the application and wait for approval.
+
+Similar to an initial loan, the approval phase can take up to two business days. Keep in mind that any offer will expire 30 days after the offer email is received. Finally, the conditions for a regular loan apply to refill loans as well.
+
+There is more information on the Stripe Capital FAQ page.
+
+Was this guide helpful for you?
+ON THIS PAGE
+Eligibility
+Offer structure
+Repayment
+How does it work?
+Completing the application
+Application decisions
+Managing your loan
+Financing refills 
+30-day money-back guarantee
+Support teams across the world
+Safe and secure online payments
+Sell
+WooCommerce
+WooCommerce pricing
+Payments
+No-code customization
+Marketing
+Checkout
+Shipping
+Mobile app
+Enterprise ecommerce
+Marketplace
+WooCommerce extensions
+WooCommerce themes
+New
+Essentials
+Collections
+Developed by Woo
+Build
+Woo for developers
+Developer resources
+Become a Woo agency
+Become a Marketplace partner
+Become an affiliate
+Resources
+Blog
+Documentation
+WooCommerce site examples
+Product updates
+Email newsletter
+Support
+Feature requests
+WooCommerce hosting
+Hire an agency
+Participate in customer research
+Accessibility
+Support forums
+Company
+About
+Press
+Download WooCommerce free
+Join the Woo community
+Woo trademark guidelines
+Brand and logo guidelines
+Do not sell or share my personal information
+WooCommerce Support Policy
+Refund Policy
+Contact us
+Follow us on Facebook
+Follow us on X
+Follow us on Instagram
+Follow us on LinkedIn
+USD
+Change site currency USD selected
+Terms of Service
+Privacy Policy
+Privacy Notice for California Users
+
+© WooCommerce, Inc. 2026
+
+AN
+AUTOMATTIC
+THINGAMAJIG
+Use of your personal data
+We and our partners process your personal data (such as browsing data, IP Addresses, cookie information, and other unique identifiers) based on your consent and/or our legitimate interest to optimize our website, marketing activities, and your user experience.
+Customize
+Accept all

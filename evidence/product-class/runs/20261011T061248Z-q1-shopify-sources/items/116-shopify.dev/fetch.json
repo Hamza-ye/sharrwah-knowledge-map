@@ -1,0 +1,18 @@
+{
+ "n": 116,
+ "url": "https://shopify.dev/docs/apps/build/customer-accounts.md",
+ "dir": "items/116-shopify.dev",
+ "fetched_at": "2026-10-11T06:13:07Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://shopify.dev/docs/apps/build/customer-accounts.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 3100,
+ "cited_in": [
+  "SH-S-0712"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "1222b57313dd0f214076bb985c7c09deb2b1abd7a7736caaa2dae96a9520f758",
+ "raw_ext": "txt"
+}

@@ -1,0 +1,152 @@
+# Family A: account, organization, contract; Family B: Shopify as biller
+concern: acct.store_owner
+software: core: the Shopify account that every store requires, entered at accounts.shopify.com ("Your store") || cites: tos_signup_binds, inv:other:account-destinations|Your store
+decides: merchant: the person who signs up becomes the Store Owner; Shopify may reject or cancel an account at its discretion || cites: tos_store_owner, tos_account_registration
+legal: merchant: the Store Owner is bound by the Terms and responsible for the account and for others who access it || cites: tos_store_owner_responsible, tos_one_store_owner
+boundary: contract: Shopify Terms of Service accepted at sign-up, with the Primary Email Address as the channel for notices || cites: tos_signup_binds, tos_incorporates
+reason: not shown
+
+concern: acct.contracting_party
+software: not shown || note: The sources set the contracting party by contract (Terms of Service section 13); none places it in the software.
+decides: operator, per market: the Terms assign the contracting entity by the region of the store's billing address || cites: tos_contracting, tos_party_apac, tos_party_other
+legal: platform company: Shopify Inc., a Canadian corporation, is a contracting party where the store's billing address is in the United States or Canada || cites: tos_party_us_ca, help_contracting_entities_us
+legal: separate entities of the platform: Shopify Technology (USA) Inc. alongside Shopify Inc. for the United States or Canada; Shopify Commerce Singapore Pte. Ltd for Asia Pacific billing addresses; Shopify International Limited (Ireland) for all other jurisdictions || cites: tos_party_us_tech, tos_party_apac, tos_party_apac_entity, tos_party_other, tos_party_other_entity, help_contracting_entities, help_contracting_entities_apac
+legal: separate entity of the platform: Shopify Payment Activities Inc., for regulated payment activities in Canada || cites: tos_rpaa_canada
+boundary: contract: Terms of Service section 13 (contracting party and forum), with Shopify Inc. as billing agent that collects and remits fees and taxes for other contracting parties in some jurisdictions || cites: tos_contracting, tos_billing_agent, tos_governing_law
+reason: not shown || note: The help page on contracting entities links to https://www.shopify.com/legal/country-list, which redirected to the legal index on 2026-10-10.
+
+concern: acct.organization
+software: core: organization-scoped settings (Organization, Users, Billing) and an OrganizationSettings section in the admin || cites: inv:settings|Organization, inv:admin-navigation|OrganizationSettings
+decides: merchant: the organization owner and organization administrators manage organization settings, users and roles || cites: role_org_admin, inv:other:staff-roles|Organization administrator
+decides: operator, per plan: free expansion stores are a Plus row ("Up to 9") || cites: inv:plan-features|Free expansion stores|Public pricing
+legal: not shown
+boundary: setting: admin settings with scope ORGANIZATION (Organization, Users, Billing) || cites: inv:settings|Organization, inv:settings|Billing|ORGANIZATION
+reason: not shown
+
+concern: acct.business_entity
+software: core: business details under Settings > General, and business entities under Settings > Organization || cites: be_settings, inv:settings|General
+decides: merchant: the merchant adds the entity (country, Individual, Company or Non-Profit, registration details) || cites: be_definition, inv:other:business-entities|Individual, inv:other:business-entities|Company, inv:other:business-entities|Non-Profit
+decides: operator: the entity cannot be changed while financial services are active, and the billing country must match an active entity || cites: be_financial_lock, be_billing_country
+legal: merchant: the business entity is the registered business, or the individual, that the store operates as || cites: be_definition
+boundary: setting: Settings > General (Business details) and Settings > Organization; each entity needs its own market || cites: be_settings, be_market_per_entity
+reason: the entity is used to verify the business and determines what information financial services such as Shopify Payments require || cites: be_definition
+
+concern: acct.multi_entity
+software: core: a Shopify Payments and Markets feature that runs several legal entities from one store || cites: me_what, me_only_sp
+decides: operator, per plan: only organizations on Shopify Plus and Shopify Enterprise Commerce || cites: me_plan
+decides: merchant: the merchant registers each entity and assigns it to markets, which decide which entity processes a region's transactions || cites: me_markets_assign, inv:other:staff-permissions|SELECT_EXISTING_LEGAL_ENTITY
+legal: merchant: each of the merchant's legal entities has its own Shopify Payments account, payout currency and bank account || cites: me_own_account
+boundary: setting: Settings > Organization (entities), Settings > Payments (one Shopify Payments account per entity), Markets (entity per market) || cites: me_markets_assign, me_own_account
+reason: domestic card processing in each entity's currency, avoiding international and foreign exchange fees || cites: me_domestic_processing
+
+concern: acct.signup_location
+software: core: a required field on the sign-up page ("I'm located in:") || cites: inv:other:signup|I'm located in: (233 options)
+decides: merchant: the merchant picks a country from a list Shopify sets (233 options on 2026-10-07) || cites: inv:other:signup|I'm located in: (233 options)
+decides: operator: individuals and businesses in unsupported countries and regions cannot create an account || cites: unsupported_no_account
+legal: merchant: the merchant must keep an accurate location and update it on changing jurisdiction || cites: tos_location_accurate
+boundary: other: the sign-up form at accounts.shopify.com; the same list appears on partner organization creation || cites: inv:other:signup|I'm located in: (233 options), inv:other:signup|Country/region (233 options)
+reason: not shown || note: Observation from the lists: the sign-up list omits Russia, which the business-entity country list (237) includes; neither list names Cuba, Iran, North Korea or Syria. Inference: the omissions follow the unsupported-regions list for four of them; no source states why Russia is omitted from sign-up.
+
+concern: acct.signin_security
+software: core: sign-in at accounts.shopify.com (email, passkey, Google, Apple, Facebook, WhatsApp) and Settings > Users > Security || cites: inv:other:signup|Sign in with passkey Last used, inv:settings|Security
+decides: merchant: the merchant chooses sign-in methods || cites: inv:other:signup|Continue with Google Last used
+decides: operator: two-step authentication is required to use Shopify Payments || cites: sp_2fa
+legal: merchant: the merchant is responsible for keeping the password secure || cites: tos_password
+boundary: other: accounts.shopify.com sign-in and sign-up methods; setting: Settings > Users > Security || cites: inv:settings|Security
+reason: without two-step authentication the account and financial information are exposed to criminal attacks || cites: sp_2fa_reason
+
+concern: acct.identity_verification
+software: core: identity verification prompts in the admin (Trust and Profile Assessment sections) || cites: inv:admin-navigation|Trust, inv:admin-navigation|ProfileAssessment
+decides: operator: Shopify requests verification for Shopify Payments, Capital, Credit, suspicious activity and account recovery, and may restrict features until it is complete || cites: idv_when, idv_restricted
+legal: merchant: in most cases the store owner completes the verification || cites: idv_store_owner
+boundary: other: an admin prompt or emailed secure link; government photo ID and a liveness check || cites: idv_store_owner
+reason: protects against impersonation and account takeover and helps Shopify comply with financial regulations || cites: idv_reason
+
+concern: acct.staff
+software: core: Settings > Users and the Account section ("Users and permissions") || cites: inv:settings|Users, inv:admin-navigation|Account
+decides: merchant: the Store Owner creates staff accounts and sets their permissions || cites: tos_staff_responsibility
+decides: operator, per plan: additional staff accounts are not included on Basic and limited to 5 and 15 on Grow and Advanced || cites: inv:plan-features|Additional staff accounts|Public pricing, tos_staff_accounts
+legal: merchant: the Store Owner answers for staff compliance and for any breach by employees, agents or subcontractors || cites: tos_store_owner_staff
+boundary: setting: Settings > Users; API: the StaffMember object through scope read_users, which needs Shopify approval || cites: inv:access-scopes|read_users
+reason: not shown
+
+concern: acct.roles
+software: core: Settings > Users > Roles with predefined roles and assignable permission handles || cites: inv:settings|Roles, inv:other:staff-roles|Administrator
+decides: merchant: administrators manage users and roles || cites: role_admin
+decides: platform at build: Shopify defines the permission handles an organization can assign (124 captured) || cites: inv:other:staff-permissions|MANAGE_ORDERS_INFORMATION
+decides: operator, per plan: custom user groups are a Plus row || cites: inv:plan-features|Custom user groups|Public pricing
+legal: merchant: the Store Owner answers for the actions of staff || cites: tos_store_owner_staff
+boundary: setting: Settings > Users > Roles; organization-assignable store permissions || cites: inv:settings|Roles
+reason: not shown
+
+concern: acct.collaborators
+software: core: collaborator access requests with section-level permissions (18 sections captured) || cites: inv:other:staff-roles|Collaborator access, inv:other:staff-permissions|Orders 0/19
+decides: merchant: the merchant chooses which outside parties get admin access and at what level || cites: tos_third_party_admin_access, role_collaborator
+decides: operator, per plan: inviting collaborators is included on all plans in the public table || cites: inv:plan-features|Invite third-party collaborators|Public pricing
+legal: partner: the relationship is between the merchant and the third party; Shopify is not obliged to intervene || cites: tos_third_party_relationship
+boundary: other: the collaborator request form listing permission sections; contract: the Store Owner remains responsible for subcontractors || cites: inv:other:staff-permissions|Orders 0/19, tos_store_owner_staff
+reason: not shown
+
+concern: acct.audit_log
+software: core: MerchantAuditLog section in the admin and the audit_events/admin_api_activity webhook || cites: inv:admin-navigation|MerchantAuditLog, inv:webhook-topics|audit_events/admin_api_activity
+decides: not shown
+legal: not shown
+boundary: event: webhook audit_events/admin_api_activity; API: scope read_audit_events || cites: inv:webhook-topics|audit_events/admin_api_activity, inv:access-scopes|read_audit_events
+reason: not shown
+
+concern: acct.store_settings
+software: core: Settings > General and the Store properties group of the GraphQL Admin API || cites: inv:settings|General, inv:api-resources|Store properties
+decides: merchant: staff with the "Manage settings" permission || cites: inv:other:staff-permissions|Store settings > Manage settings
+legal: merchant: the merchant must publish contact information, terms, refund and shipping policies on the store || cites: tos_policies_required
+boundary: API: GraphQL Admin API (Store properties); event: webhook shop/update; setting: Settings > General || cites: inv:api-resources|Store properties, inv:webhook-topics|shop/update
+reason: not shown
+
+concern: acct.store_lifecycle
+software: core: inactive-account and store-unavailable routes in the admin ("Reactivate your store") || cites: inv:admin-navigation|Foundation
+decides: merchant: the merchant cancels by contacting Shopify Support || cites: tos_cancel
+decides: operator: Shopify may suspend or terminate an account for any reason, and freezes stores after unpaid fees || cites: tos_suspend_any_reason, tos_freeze_unpaid
+decides: operator: Shopify can place a store in restricted access, without prior communication, when it detects activity that might not be legitimate commerce; the storefront becomes unavailable and the merchant can appeal from the admin || cites: term_restricted, term_no_notice, term_storefront_unavailable, term_appeal
+legal: merchant: obligations from transactions before termination remain the merchant's || cites: tos_survive_obligations
+boundary: contract: Terms of Service section 14; Shopify Support; appeals under the store-termination help page || cites: inv:legal-agreements|14. Term and Termination, inv:other:help-center-sections|Handling your Shopify store termination
+reason: not shown
+
+concern: bill.plans
+software: core: Settings > Plan and the subscription checkout in the admin || cites: inv:settings|Plan, inv:admin-navigation|Plus
+decides: operator, per plan: Shopify sets plan prices and the features each plan includes || cites: inv:plan-features|Pay monthly|Public pricing, inv:plan-features|basic
+decides: merchant: the merchant chooses a plan || cites: inv:other:staff-permissions|Finance > Manage plan
+legal: platform company: subscription fees are owed to the Shopify Contracting Party under the Terms || cites: tos_subscription_fees, tos_contracting
+boundary: setting: Settings > Plan; other: subscription charges on the Shopify bill (charge category SUBSCRIPTION_FEE) || cites: inv:other:billing-charge-categories|Subscription charges
+reason: not shown || note: The public pricing page lists Basic at $39 USD/mo while the admin plan table of one captured store and the store's billing-plans query list $27; Inference: plan prices vary by store or region, but no source read states the rule.
+
+concern: bill.billing
+software: core: Settings > Billing (organization-scoped for organizations) || cites: inv:settings|Billing|ORGANIZATION, inv:admin-navigation|Billing
+decides: operator: Shopify sets fees and may change them on 30 days' notice; bills are issued every 30 days || cites: tos_fee_change_notice, tos_billing_30_days
+decides: merchant: the merchant keeps an authorized payment method on file and may choose a local billing currency where supported || cites: lcb_by_address
+legal: platform company: the Shopify Contracting Party, with Shopify Inc. acting as billing agent in some jurisdictions || cites: tos_contracting, tos_billing_agent
+boundary: other: Shopify bills and invoices (charge categories), payment methods for bills; contract: the store can be frozen after 28 days unpaid || cites: inv:other:billing-charge-categories|Platform fees, tos_freeze_unpaid
+reason: most bills are in US dollars "for accounting reasons" || cites: lcb_usd, tos_fees_usd
+
+concern: bill.billing_taxes
+software: core: the Shopify bill and its billing profile || cites: billtax_profile
+decides: outside rules: the tax rate follows the billing address (for example 15% VAT in Saudi Arabia and 5% in the UAE) || cites: tos_fee_taxes_billing_address, billtax_sa_uae
+decides: merchant: a VAT-registered merchant can enter a tax ID to be exempted where the help page allows it || cites: billtax_sa_exempt
+legal: merchant: the merchant is responsible for taxes on Shopify's charges and self-remits where Shopify does not charge them || cites: tos_fee_taxes_merchant
+legal: platform company: where Shopify charges these taxes, Shopify Inc. as billing agent may collect and remit them || cites: tos_billing_agent
+boundary: setting: Settings > Billing > Billing profile > Tax registration; other: charge category "Taxes" in the expense report || cites: billtax_profile, inv:other:billing-charge-categories|Taxes Taxes
+reason: not shown
+
+concern: bill.transaction_fees
+software: core: charged on the Shopify bill as "Transaction fees" || cites: inv:other:billing-charge-categories|Transaction fees
+decides: operator, per plan: 2%, 1%, 0.6% and 0.2% on Basic, Grow, Advanced and Plus || cites: inv:plan-features|Third-party transaction fees|Public pricing, tptf_plan
+decides: operator: not charged on Shopify Payments, Shop Pay, Shop Pay Installments, manual methods or POS orders; charged on store credit and gift card amounts for stores created on or after 12 May 2025 || cites: tptf_exempt_sp, tptf_pos_manual, tptf_store_credit
+legal: platform company: Transaction Fees are owed to the Shopify Contracting Party under the Terms || cites: tos_fees_defined
+boundary: other: the Shopify bill (charge category ORDER_COMMISSION) || cites: inv:other:billing-charge-categories|Transaction fees
+reason: the fees "cover the cost for Shopify to provide a secure checkout platform and integrate with external payment providers" || cites: tptf_reason
+
+concern: bill.app_billing
+software: core: Shopify's billing (Shopify App Pricing or the Billing API) adds app charges to the merchant's Shopify invoice || cites: app_pricing_invoice, appch_on_bill
+decides: other: the app developer sets the plans and prices "in the Partner Dashboard"; the merchant approves the charges || cites: app_pricing_dev_config, inv:other:staff-permissions|Apps and channels > Approve app charges
+legal: app developer: the developer must obtain merchant consent and bill under its merchant agreement; refunds are requested from the developer || cites: ppa_billing_resource, appch_refund_developer
+legal: platform company: Shopify collects the charge, pays out the developer's share and handles chargebacks || cites: app_pricing_collect, app_pricing_chargebacks
+boundary: API: GraphQL Admin API Billing group; event: webhooks app_subscriptions/update and app_purchases_one_time/update; charge category APPLICATION_FEE; revenue share under the Partner Program Agreement || cites: inv:api-resources|Billing, inv:webhook-topics|app_subscriptions/update, inv:other:billing-charge-categories|App fees, ppa_revenue_share
+reason: Shopify App Pricing "creates a predictable, trustworthy, and standardized experience for app users"; apps on the App Store must use a Shopify billing solution || cites: app_pricing_reason, app_pricing_required

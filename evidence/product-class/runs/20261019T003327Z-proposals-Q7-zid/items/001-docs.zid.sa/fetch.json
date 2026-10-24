@@ -1,0 +1,18 @@
+{
+ "n": 1,
+ "url": "https://docs.zid.sa/execute-payment-request-17112105e0.md",
+ "dir": "items/001-docs.zid.sa",
+ "fetched_at": "2026-10-19T00:33:27Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.zid.sa/execute-payment-request-17112105e0.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 16094,
+ "cited_in": [
+  "studies/proposals/records/Q7/zid/citations.tsv"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "18864b05c299465f8fafd4df0a4c754990875604ab1c36ac5f3b8015f6ec89eb",
+ "raw_ext": "txt"
+}

@@ -1,0 +1,20 @@
+{
+ "n": 105,
+ "url": "https://www.commerce.com/privacy/",
+ "dir": "items/105-commerce.com",
+ "fetched_at": "2026-10-12T04:20:50Z",
+ "curl_exit": 47,
+ "curl_error": "curl: (47) Maximum (8) redirects followed",
+ "http_code": 307,
+ "final_url": "https://www.commerce.com/privacy/",
+ "content_type": "text/plain",
+ "bytes": 15,
+ "cited_in": [
+  "BC-S-0403",
+  "BC-S-0404",
+  "BC-S-0409"
+ ],
+ "raw_file": "",
+ "sha256": "",
+ "raw_ext": ""
+}

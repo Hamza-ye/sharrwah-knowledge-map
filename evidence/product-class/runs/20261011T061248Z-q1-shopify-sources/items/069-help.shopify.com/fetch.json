@@ -1,0 +1,26 @@
+{
+ "n": 69,
+ "url": "https://help.shopify.com/en/manual/payments/shopify-payments/payouts/payout-timing.md",
+ "dir": "items/069-help.shopify.com",
+ "fetched_at": "2026-10-11T06:13:02Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/payments/shopify-payments/payouts/payout-timing.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 4986,
+ "cited_in": [
+  "SH-S-0340",
+  "SH-S-0341",
+  "SH-S-0342",
+  "SH-S-0343",
+  "SH-S-0344",
+  "SH-S-0345",
+  "SH-S-0346",
+  "SH-S-0347",
+  "SH-S-0578"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "45debdb70859102f3bb13de598c8dd737d35bc4e67e913304541a146737abbca",
+ "raw_ext": "txt"
+}

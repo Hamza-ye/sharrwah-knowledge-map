@@ -1,0 +1,20 @@
+{
+ "n": 8,
+ "url": "https://help.shopify.com/en/manual/customers/customer-accounts.md",
+ "dir": "items/008-help.shopify.com",
+ "fetched_at": "2026-10-11T06:12:56Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/customers/customer-accounts.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 1514,
+ "cited_in": [
+  "SH-S-0741",
+  "SH-S-0742",
+  "SH-S-0743"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "6dee232ef896110c1f8b534418a7da6a2dc4325c8b17f1183d66ba26cb2af8c2",
+ "raw_ext": "txt"
+}

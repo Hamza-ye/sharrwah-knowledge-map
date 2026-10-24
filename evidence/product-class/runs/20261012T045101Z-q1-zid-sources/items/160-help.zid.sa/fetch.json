@@ -1,0 +1,21 @@
+{
+ "n": 160,
+ "url": "https://help.zid.sa/subscription-to-mobile-app/",
+ "dir": "items/160-help.zid.sa",
+ "fetched_at": "2026-10-12T04:53:32Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/subscription-to-mobile-app/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 26099,
+ "cited_in": [
+  "ZD-S-1081",
+  "ZD-S-1082",
+  "ZD-S-1083",
+  "ZD-S-1084"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "03fceb63891f49c455cdd2b81bc0520aee835f763da6a15a891b8284e2b8e8b4",
+ "raw_ext": "html"
+}

@@ -1,0 +1,287 @@
+copy_id	concern_id	identifier
+Q8-ZD-K0002	ZD-C-001	المدفوعات > تفعيل الدفع الالكتروني
+Q8-ZD-K0003	ZD-C-001	متطلبات تفعيل الدفع الالكتروني
+Q8-ZD-K0004	ZD-C-001	الشروط العامة
+Q8-ZD-K0005	ZD-C-001	FAQ: تفعيل زد باي من خارج السعودية
+Q8-ZD-K0006	ZD-C-001	Rise (package_code rise): All features of Starter package, plus:
+Q8-ZD-K0007	ZD-C-001	ملاحظة: منتج منشور
+Q8-ZD-K0008	ZD-C-001	الشروط العامة
+Q8-ZD-K0009	ZD-C-001	شروط وأحكام زد باي
+Q8-ZD-K0010	ZD-C-001	Link Merchant webhook (merchant_linked)
+Q8-ZD-K0011	ZD-C-001	storeId
+Q8-ZD-K0012	ZD-C-001	العدد المتوقع لعمليات الدفع
+Q8-ZD-K0069	ZD-C-009	زد باي (definition)
+Q8-ZD-K0070	ZD-C-009	المنتجات الرقمية
+Q8-ZD-K0071	ZD-C-009	طلب التحقق
+Q8-ZD-K0072	ZD-C-009	زد باي: حدود المسؤولية
+Q8-ZD-K0073	ZD-C-009	التعاقد من الباطن
+Q8-ZD-K0074	ZD-C-009	فشل في النظام المصرفي
+Q8-ZD-K0075	ZD-C-009	Open APIs integration model
+Q8-ZD-K0076	ZD-C-010	zidpay.org
+Q8-ZD-K0077	ZD-C-010	Zid Payments
+Q8-ZD-K0078	ZD-C-010	Direct payment; Embedded payment
+Q8-ZD-K0079	ZD-C-010	thirdPartyProviderId
+Q8-ZD-K0080	ZD-C-010	Direct payment
+Q8-ZD-K0081	ZD-C-010	/api/webhook/v1/thirdpartywebhook
+Q8-ZD-K0082	ZD-C-010	domain association file
+Q8-ZD-K0083	ZD-C-010	execute payment
+Q8-ZD-K0084	ZD-C-011	المدفوعات > بوابات الدفع الأُخرى
+Q8-ZD-K0085	ZD-C-011	Paymob
+Q8-ZD-K0086	ZD-C-011	amwal pay
+Q8-ZD-K0087	ZD-C-011	Tap
+Q8-ZD-K0088	ZD-C-011	تفعيل الخدمة
+Q8-ZD-K0089	ZD-C-011	تمارا و تابي
+Q8-ZD-K0090	ZD-C-011	الاعدادات > طرق الدفع
+Q8-ZD-K0091	ZD-C-011	تاب
+Q8-ZD-K0092	ZD-C-011	مسؤولية زد أمام المستهلك والتاجر
+Q8-ZD-K0093	ZD-C-011	رقم الهوية المسجل في تاب
+Q8-ZD-K0094	ZD-C-011	مفاتيح الربط
+Q8-ZD-K0095	ZD-C-012	Merchant APIs > Store Settings
+Q8-ZD-K0096	ZD-C-012	Various Payment Methods
+Q8-ZD-K0097	ZD-C-012	Advanced Payment Methods
+Q8-ZD-K0098	ZD-C-012	طرق الدفع
+Q8-ZD-K0099	ZD-C-012	GET /v1/managers/store/payment-options
+Q8-ZD-K0100	ZD-C-012	GET /v1/managers/store/payment-methods
+Q8-ZD-K0101	ZD-C-012	POS payment methods
+Q8-ZD-K0102	ZD-C-013	لوحة التحكم > المدفوعات > الدفع لاحقاً
+Q8-ZD-K0103	ZD-C-013	مدفوع
+Q8-ZD-K0104	ZD-C-013	إمكان مع زد باي
+Q8-ZD-K0105	ZD-C-013	MIS pay
+Q8-ZD-K0106	ZD-C-013	تابي
+Q8-ZD-K0107	ZD-C-013	تمارا
+Q8-ZD-K0108	ZD-C-013	App ID and App Secret
+Q8-ZD-K0109	ZD-C-013	رمز وثيقة العمل الحر
+Q8-ZD-K0130	ZD-C-017	ما هي محفظة التاجر في زد؟
+Q8-ZD-K0131	ZD-C-017	لوحة التحكم > المالية > المحفظة
+Q8-ZD-K0132	ZD-C-017	محفظة لكل متجر
+Q8-ZD-K0133	ZD-C-017	حد السحب
+Q8-ZD-K0134	ZD-C-017	حد الشحن بالبطاقة
+Q8-ZD-K0135	ZD-C-017	توثيق الحساب
+Q8-ZD-K0136	ZD-C-017	عملة المحفظة
+Q8-ZD-K0137	ZD-C-017	عملات لا يمكن سحبها
+Q8-ZD-K0138	ZD-C-017	Zid Wallet
+Q8-ZD-K0139	ZD-C-017	الخصم الآلي
+Q8-ZD-K0140	ZD-C-017	رقم الآيبان الخاص بالمحفظة
+Q8-ZD-K0141	ZD-C-017	معلومات مستندات اعرف عميلك
+Q8-ZD-K0148	ZD-C-019	التسويق ← برامج الولاء ← محفظة العميل
+Q8-ZD-K0149	ZD-C-019	Merchant APIs > Marketing > Customer Wallets > Manager Customer Wallet
+Q8-ZD-K0150	ZD-C-019	الباقة الاحترافية
+Q8-ZD-K0151	ZD-C-019	Zid Wallet (Other group)
+Q8-ZD-K0152	ZD-C-019	إجمالي الأرصدة
+Q8-ZD-K0153	ZD-C-019	POST /v1/customer-wallets/customers/{customer_id}/credit/
+Q8-ZD-K0154	ZD-C-020	إدارة الأشتراك
+Q8-ZD-K0155	ZD-C-020	Starter; Rise; Growth; Pro
+Q8-ZD-K0156	ZD-C-020	عملة الرسوم
+Q8-ZD-K0157	ZD-C-020	تغيير الأسعار
+Q8-ZD-K0158	ZD-C-020	ضريبة القيمة المضافة
+Q8-ZD-K0159	ZD-C-020	لغة الفاتورة
+Q8-ZD-K0160	ZD-C-020	package_code=rise
+Q8-ZD-K0165	ZD-C-022	Payments → Payouts
+Q8-ZD-K0166	ZD-C-022	App Management > Events
+Q8-ZD-K0167	ZD-C-022	app-plan payment
+Q8-ZD-K0168	ZD-C-022	applicable Zid plans
+Q8-ZD-K0169	ZD-C-022	Partner rate
+Q8-ZD-K0170	ZD-C-022	monthly payouts
+Q8-ZD-K0171	ZD-C-022	تحصيل زد لرسوم تفعيل الخدمة
+Q8-ZD-K0172	ZD-C-022	Withholding tax
+Q8-ZD-K0173	ZD-C-022	Subscription Details
+Q8-ZD-K0174	ZD-C-022	Update Usage-Based Charges
+Q8-ZD-K0175	ZD-C-022	app.market.subscription.active
+Q8-ZD-K0176	ZD-C-023	تمويل زد (definition)
+Q8-ZD-K0177	ZD-C-023	الدولة
+Q8-ZD-K0178	ZD-C-023	بوابة الدفع
+Q8-ZD-K0179	ZD-C-023	الباقات
+Q8-ZD-K0180	ZD-C-023	تقدير جهة التمويل
+Q8-ZD-K0181	ZD-C-023	إلغاء زد باي
+Q8-ZD-K0182	ZD-C-023	جهة التمويل
+Q8-ZD-K0183	ZD-C-023	تعذر الاستقطاع
+Q8-ZD-K0184	ZD-C-023	مشاركة المعلومات
+Q8-ZD-K0185	ZD-C-023	الحد الأدنى للسداد
+Q8-ZD-K0197	ZD-C-025	المحفظة الرقمية الخاصة بوكيل زد
+Q8-ZD-K0198	ZD-C-025	متجر نشط
+Q8-ZD-K0199	ZD-C-025	النافذة الزمنية للاسترجاع
+Q8-ZD-K0200	ZD-C-025	شركاء ومزودو التقنية
+Q8-ZD-K0201	ZD-C-025	Google Cloud Vertex AI
+Q8-ZD-K0202	ZD-C-026	طلب استرداد باقة جديدة/حالية
+Q8-ZD-K0203	ZD-C-026	متجر مفعل
+Q8-ZD-K0204	ZD-C-026	الأسعار
+Q8-ZD-K0205	ZD-C-026	شركاء
+Q8-ZD-K0219	ZD-C-031	Zid Egypt
+Q8-ZD-K0220	ZD-C-031	Egypt
+Q8-ZD-K0221	ZD-C-031	Commercial Registration No.: 201574
+Q8-ZD-K0222	ZD-C-031	رقم السجل التجاري: 201574
+Q8-ZD-K0223	ZD-C-031	Address
+Q8-ZD-K0224	ZD-C-031	compliance
+Q8-ZD-K0225	ZD-C-032	Other countries
+Q8-ZD-K0226	ZD-C-032	السعودية ودول الخليج
+Q8-ZD-K0227	ZD-C-032	Is this available across the GCC?
+Q8-ZD-K0234	ZD-C-034	الاعدادات > الأسواق
+Q8-ZD-K0235	ZD-C-034	عدد الأسواق حسب الباقة
+Q8-ZD-K0236	ZD-C-034	عملة السوق
+Q8-ZD-K0298	ZD-C-050	لوحة التحكم > الاعدادات > اللغات والعملات
+Q8-ZD-K0299	ZD-C-050	Geo-Based Currency Settings
+Q8-ZD-K0300	ZD-C-050	الدفع بالعملة الأساسية
+Q8-ZD-K0301	ZD-C-050	سعر الصرف لبوابة الدفع
+Q8-ZD-K0302	ZD-C-050	سعر الصرف عند تغيير العملة
+Q8-ZD-K0303	ZD-C-050	order_currency.exchange_rate
+Q8-ZD-K0304	ZD-C-050	Currency Handling for Orders
+Q8-ZD-K0305	ZD-C-050	GET /v1/managers/account/store/localization
+Q8-ZD-K0328	ZD-C-060	الشحن المباشر
+Q8-ZD-K0329	ZD-C-060	لوحة التحكم > اللوجستيات > طرق الشحن
+Q8-ZD-K0330	ZD-C-060	Zid Logistics: One Contract for 35 Carriers
+Q8-ZD-K0331	ZD-C-060	باقة التاجر
+Q8-ZD-K0332	ZD-C-060	Rise: All features of Starter package, plus:
+Q8-ZD-K0333	ZD-C-060	Professional: Standout Features
+Q8-ZD-K0334	ZD-C-060	manage.zidship.settings
+Q8-ZD-K0335	ZD-C-060	وسيطاً تقنياً
+Q8-ZD-K0336	ZD-C-060	قرار قبول التعويض
+Q8-ZD-K0337	ZD-C-060	شروط شركة الشحن
+Q8-ZD-K0338	ZD-C-060	Customs duties
+Q8-ZD-K0339	ZD-C-060	قياسات شركة الشحن
+Q8-ZD-K0340	ZD-C-060	integrated with ZidShip
+Q8-ZD-K0341	ZD-C-060	Zid Logistics: One Contract for 35 Carriers
+Q8-ZD-K0342	ZD-C-061	category id 5
+Q8-ZD-K0343	ZD-C-061	Shipping apps
+Q8-ZD-K0344	ZD-C-061	logistic type
+Q8-ZD-K0345	ZD-C-061	السعودية أو أي من دول الخليج
+Q8-ZD-K0346	ZD-C-061	الربط المخصص مع شركة الشحن
+Q8-ZD-K0347	ZD-C-061	ليست طرفًا
+Q8-ZD-K0348	ZD-C-061	عدم تقديم الخدمة بطريقة فعّالة
+Q8-ZD-K0349	ZD-C-061	Merchant APIs > Orders [Add Order Comment]
+Q8-ZD-K0350	ZD-C-061	Shipping apps cycle
+Q8-ZD-K0351	ZD-C-061	Shipping Apps
+Q8-ZD-K0360	ZD-C-070	سوق تطبيقات زد (definition)
+Q8-ZD-K0361	ZD-C-070	category id 19
+Q8-ZD-K0362	ZD-C-070	Public apps
+Q8-ZD-K0363	ZD-C-070	Submit for Review
+Q8-ZD-K0364	ZD-C-070	Review and enforcement
+Q8-ZD-K0365	ZD-C-070	manage.app.market.details
+Q8-ZD-K0366	ZD-C-070	الشريك هو المقدم للخدمة
+Q8-ZD-K0367	ZD-C-070	المشاكل التقنية
+Q8-ZD-K0368	ZD-C-070	لا تضمن زد
+Q8-ZD-K0369	ZD-C-070	صلاحيات النطاقات
+Q8-ZD-K0370	ZD-C-070	app.market.application.install
+Q8-ZD-K0371	ZD-C-071	https://oauth.zid.sa
+Q8-ZD-K0372	ZD-C-071	scopes approval
+Q8-ZD-K0373	ZD-C-071	Partner Dashboard scopes
+Q8-ZD-K0374	ZD-C-071	Select App Scopes
+Q8-ZD-K0375	ZD-C-071	Manual credentials
+Q8-ZD-K0376	ZD-C-071	Request only the scopes needed
+Q8-ZD-K0377	ZD-C-071	Authorization; X-Manager-Token
+Q8-ZD-K0378	ZD-C-071	app.market.application.authorized
+Q8-ZD-K0379	ZD-C-071	Scoped Permissions
+Q8-ZD-K0380	ZD-C-071	Partner-managed setup
+Q8-ZD-K0381	ZD-C-072	circuit breaker
+Q8-ZD-K0382	ZD-C-072	Webhooks > APIs
+Q8-ZD-K0383	ZD-C-072	broken
+Q8-ZD-K0384	ZD-C-072	conditions
+Q8-ZD-K0385	ZD-C-072	No new events are dispatched
+Q8-ZD-K0386	ZD-C-072	POST /v1/managers/webhooks
+Q8-ZD-K0387	ZD-C-072	health states
+Q8-ZD-K0388	ZD-C-073	iframe
+Q8-ZD-K0389	ZD-C-073	Embedded applications
+Q8-ZD-K0390	ZD-C-073	embedded authentication mechanism
+Q8-ZD-K0391	ZD-C-073	embedded_apps_tokens_write
+Q8-ZD-K0392	ZD-C-073	bypass standard logins
+Q8-ZD-K0393	ZD-C-074	سوق التطبيقات> تطبيقاتي
+Q8-ZD-K0394	ZD-C-074	Professional or Enterprise plan; API Access
+Q8-ZD-K0395	ZD-C-074	خدمة الربط المباشرة (APIs)
+Q8-ZD-K0396	ZD-C-074	Professional: Standout Features
+Q8-ZD-K0397	ZD-C-074	manage.store.zid.keys
+Q8-ZD-K0398	ZD-C-074	التاجر (Merchant)
+Q8-ZD-K0399	ZD-C-074	منصة زد (Zid)
+Q8-ZD-K0400	ZD-C-074	Private apps
+Q8-ZD-K0401	ZD-C-075	API's > Checkout
+Q8-ZD-K0402	ZD-C-075	API's > Authentication
+Q8-ZD-K0403	ZD-C-075	Role: Customer
+Q8-ZD-K0404	ZD-C-076	سوق الثيمات (definition)
+Q8-ZD-K0405	ZD-C-076	Rise: All features of Starter package, plus:
+Q8-ZD-K0406	ZD-C-076	إعادة المتجر الى احد الثيمات المجانية
+Q8-ZD-K0407	ZD-C-076	شريك سوق الثيمات
+Q8-ZD-K0408	ZD-C-076	حقوق الملكية الفكرية
+Q8-ZD-K0409	ZD-C-076	Partner Share
+Q8-ZD-K0527	ZD-C-106	Marketing Tools
+Q8-ZD-K0528	ZD-C-106	Add Marketing Affiliates
+Q8-ZD-K0529	ZD-C-106	Create New Campaign
+Q8-ZD-K0530	ZD-C-106	manage.store.marketing
+Q8-ZD-K0531	ZD-C-107	واتساب زد
+Q8-ZD-K0532	ZD-C-107	Rise: All features of Starter package, plus:
+Q8-ZD-K0533	ZD-C-107	Professional: Standout Features
+Q8-ZD-K0534	ZD-C-108	زد كاشير (definition)
+Q8-ZD-K0535	ZD-C-108	تطبيق زد كاشير > الاعدادات > ربط جهاز الدفع
+Q8-ZD-K0536	ZD-C-108	Mobile & Tablet POS App
+Q8-ZD-K0537	ZD-C-108	Professional: Standout Features
+Q8-ZD-K0538	ZD-C-108	pos.payment.methods
+Q8-ZD-K0539	ZD-C-108	تركيب أجهزة نقاط البيع
+Q8-ZD-K0540	ZD-C-108	ضمان الأجهزة
+Q8-ZD-K0541	ZD-C-108	أجهزة نقاط البيع
+Q8-ZD-K0542	ZD-C-108	فوترة إلكترونية
+Q8-ZD-K0543	ZD-C-109	مزيد (definition)
+Q8-ZD-K0544	ZD-C-109	منصات البيع
+Q8-ZD-K0545	ZD-C-109	مشترك بأحد الباقات
+Q8-ZD-K0546	ZD-C-109	أنظمة المملكة العربية السعودية
+Q8-ZD-K0547	ZD-C-109	تجار الخليج
+Q8-ZD-K0548	ZD-C-109	الممثل القانوني للبائع
+Q8-ZD-K0549	ZD-C-109	شحن وتوصيل الطلب
+Q8-ZD-K0550	ZD-C-109	إضافة المنتجات بشكل تلقائي
+Q8-ZD-K0551	ZD-C-109	بيانات عملاء التاجر
+Q8-ZD-K0552	ZD-C-109	بغرض التقييم
+Q8-ZD-K0553	ZD-C-110	Marketplaces
+Q8-ZD-K0554	ZD-C-110	جاهز
+Q8-ZD-K0555	ZD-C-110	is_marketplace_order
+Q8-ZD-K0556	ZD-C-110	masked for privacy
+Q8-ZD-K0557	ZD-C-111	صفحة إتمام الشراء > ضمان زد
+Q8-ZD-K0558	ZD-C-111	100% optional
+Q8-ZD-K0559	ZD-C-111	entirely on Zid
+Q8-ZD-K0560	ZD-C-111	WhatsApp updates; badge
+Q8-ZD-K0561	ZD-C-111	Ministry of Commerce
+Q8-ZD-K0562	ZD-C-112	Zid Voice
+Q8-ZD-K0563	ZD-C-113	E-store
+Q8-ZD-K0564	ZD-C-113	Store - SDK Template Design (Up to 2)
+Q8-ZD-K0565	ZD-C-113	CSS interface customization
+Q8-ZD-K0566	ZD-C-113	manage.store.front.customization
+Q8-ZD-K0567	ZD-C-113	API's > Storefront
+Q8-ZD-K0568	ZD-C-114	Ticketing & Chat System
+Q8-ZD-K0569	ZD-C-114	Live Chat Support
+Q8-ZD-K0570	ZD-C-114	Professional: Standout Features
+Q8-ZD-K0571	ZD-C-115	زد نمو
+Q8-ZD-K0572	ZD-C-115	manage.store.ecosystem.packaging
+Q8-ZD-K0573	ZD-C-116	تطبيق الجوال
+Q8-ZD-K0574	ZD-C-116	manage.store.ecosystem.mobileapps
+Q8-ZD-K0619	ZD-C-107	حساب Meta للأعمال
+Q8-ZD-K0620	ZD-C-107	سياسات ميتا
+Q8-ZD-K0621	ZD-C-107	ميتا
+Q8-ZD-K0622	ZD-C-107	منصة واتساب للأعمال (API)
+Q8-ZD-K0623	ZD-C-107	رصيد النقاط
+Q8-ZD-K0624	ZD-C-107	شركة ميتا
+Q8-ZD-K0625	ZD-C-107	مراجعة ميتا
+Q8-ZD-K0626	ZD-C-110	أمازون البائعين
+Q8-ZD-K0627	ZD-C-110	GDPR; CCPA; PCI-DSS
+Q8-ZD-K0628	ZD-C-110	نسبة زد من أمازون
+Q8-ZD-K0629	ZD-C-110	المحفظة
+Q8-ZD-K0630	ZD-C-110	باقة زد لايت
+Q8-ZD-K0631	ZD-C-110	أمازون
+Q8-ZD-K0632	ZD-C-110	شروط الانضمام لـ جاهز
+Q8-ZD-K0633	ZD-C-110	واجهات برمجة التطبيقات (APIs)
+Q8-ZD-K0634	ZD-C-110	مندوب جاهز
+Q8-ZD-K0635	ZD-C-112	زد فويس
+Q8-ZD-K0636	ZD-C-112	100 مكالمة مجانية
+Q8-ZD-K0637	ZD-C-112	Limited pilot
+Q8-ZD-K0638	ZD-C-112	بالنيابة عنك
+Q8-ZD-K0639	ZD-C-112	السلات المتروكة
+Q8-ZD-K0640	ZD-C-112	A call, not another message.
+Q8-ZD-K0641	ZD-C-113	تصميم المتجر
+Q8-ZD-K0642	ZD-C-113	القائمة الرئيسية
+Q8-ZD-K0643	ZD-C-113	تخصيص الثيمات
+Q8-ZD-K0644	ZD-C-113	صنع بواسطة زد
+Q8-ZD-K0645	ZD-C-114	تذكرة
+Q8-ZD-K0646	ZD-C-115	النمو
+Q8-ZD-K0647	ZD-C-115	مدير العلاقة
+Q8-ZD-K0648	ZD-C-115	شركاء يقدمون الخدمة
+Q8-ZD-K0649	ZD-C-116	عناقيد التطبيقات
+Q8-ZD-K0650	ZD-C-116	سوق التطبيقات في زد
+Q8-ZD-K0651	ZD-C-116	مدة الاشتراك
+Q8-ZD-K0652	ZD-C-116	حساب مطورين (شركات)
+Q8-ZD-K0653	ZD-C-116	عناقيد التطبيقات
+Q8-ZD-K0654	ZD-C-116	لوحة التحكم
+Q8-ZD-K0655	ZD-C-116	لماذا يهمك تطبيق الجوال لمتجرك

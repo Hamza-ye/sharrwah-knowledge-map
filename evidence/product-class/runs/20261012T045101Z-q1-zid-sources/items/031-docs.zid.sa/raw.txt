@@ -1,0 +1,467 @@
+# Retrieve VAT Settings
+
+## OpenAPI Specification
+
+```yaml
+openapi: 3.0.1
+info:
+  title: ''
+  description: ''
+  version: 1.0.0
+paths:
+  /v1/managers/store/third-party/vat:
+    get:
+      summary: Retrieve VAT Settings
+      deprecated: false
+      description: >-
+        Return a list of the VAT settings configured on this store. For example,
+        to indicate whether the store VAT is applied on shipping fees or not.
+
+
+        <Accordion title="🔑Scopes" defaultOpen>
+            
+            `third_vat_read` - Third Vat Read
+         
+        </Accordion>
+      operationId: get-vat-settings
+      tags:
+        - Default module/Apps/Merchant APIs/Store Settings
+        - Stores
+      parameters:
+        - name: Accept-Language
+          in: header
+          description: >-
+            Preferred language for the response. Defaults to `en` if not
+            specified.
+          required: false
+          example: en
+          schema:
+            type: string
+            enum:
+              - en
+              - ar
+            examples:
+              - en
+        - name: Authorization
+          in: header
+          description: >-
+            The Authorization token is a unique key given to the third-party
+            application (Partner) by Zid. It is used to authenticate the API
+            requests made by the Partner application. The token verifies the
+            partner's identity and ensures they have permission to access Zid's
+            API but does not provide any specific user or store information. It
+            should be included in the header of API requests when the partner
+            application needs to access Zid's API.
+          required: true
+          example: '{{Autherization}}'
+          schema:
+            type: string
+        - name: X-Manager-Token
+          in: header
+          description: >-
+            This token is used to authenticate and access information related to
+            the store. It is obtained through an OAuth mechanism and is required
+            to perform operations on the store's data. The `X-Manager-Token`
+            should be included in the header of API requests that require
+            store-related information.
+          required: true
+          example: '{{Access-Token}}'
+          schema:
+            type: string
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Indicates the response status.
+                    examples:
+                      - object
+                  tax_settings:
+                    type: object
+                    properties:
+                      can_use_vat:
+                        type: boolean
+                        description: Indicates if the store is allowed to use VAT.
+                        examples:
+                          - true
+                      vat_activate:
+                        type: boolean
+                        description: Indicates if VAT is currently activated for the store.
+                        examples:
+                          - true
+                      is_vat_self_paid:
+                        type: boolean
+                        description: Indicates if the VAT is self-paid by the store.
+                        examples:
+                          - false
+                      is_vat_included_in_product_price:
+                        type: boolean
+                        description: >-
+                          Indicates whether VAT is already included in the
+                          product price.
+                        examples:
+                          - true
+                      is_shipping_fee_included_in_vat:
+                        type: boolean
+                        description: Indicates if VAT is applied to the shipping fee.
+                        examples:
+                          - false
+                      other_countries_tax_percentage:
+                        type: integer
+                      countries:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            id:
+                              type: string
+                              description: >-
+                                Unique identifier for the country tax setting
+                                record.
+                              examples:
+                                - 9345a371-1b26-449b-812f-ef5b8ecd0e81
+                            country:
+                              type: object
+                              properties:
+                                id:
+                                  type: integer
+                                  description: Unique country ID.
+                                  examples:
+                                    - 184
+                                name:
+                                  type: object
+                                  properties:
+                                    ar:
+                                      type: string
+                                      description: Country name in Arabic.
+                                      examples:
+                                        - السعودية
+                                    en:
+                                      type: string
+                                      description: Country name in English.
+                                      examples:
+                                        - Saudi Arabia
+                                  required:
+                                    - ar
+                                    - en
+                                  description: Country name in multiple languages.
+                                  x-apidog-orders:
+                                    - ar
+                                    - en
+                                  x-apidog-ignore-properties: []
+                                iso_code_2:
+                                  type: string
+                                  description: ISO 3166-1 alpha-2 country code.
+                                  examples:
+                                    - SA
+                                iso_code_3:
+                                  type: string
+                                  description: ISO 3166-1 alpha-3 country code.
+                                  examples:
+                                    - SAU
+                              required:
+                                - id
+                                - name
+                                - iso_code_2
+                                - iso_code_3
+                              description: Country details.
+                              x-apidog-orders:
+                                - id
+                                - name
+                                - iso_code_2
+                                - iso_code_3
+                              x-apidog-ignore-properties: []
+                            tax_percentage:
+                              type: number
+                            vat_number:
+                              type: string
+                              description: >-
+                                Registered VAT number for the store in this
+                                country.
+                              examples:
+                                - '310329522200003'
+                            tax_registration_certificate:
+                              type: string
+                              description: >-
+                                URL to the tax registration certificate
+                                document, if available.
+                              examples:
+                                - null
+                              nullable: true
+                            settings:
+                              type: array
+                              items:
+                                type: string
+                              description: >-
+                                Additional custom tax settings specific to this
+                                country.
+                              examples:
+                                - []
+                            is_certificate_visible:
+                              type: boolean
+                              description: >-
+                                Indicates whether the tax certificate should be
+                                visible in the UI.
+                              examples:
+                                - false
+                            is_vat_number_visible:
+                              type: boolean
+                              description: >-
+                                Indicates whether the VAT number should be
+                                visible in the UI.
+                              examples:
+                                - true
+                          required:
+                            - id
+                            - country
+                            - tax_percentage
+                            - vat_number
+                            - tax_registration_certificate
+                            - settings
+                            - is_certificate_visible
+                            - is_vat_number_visible
+                          x-apidog-orders:
+                            - id
+                            - country
+                            - tax_percentage
+                            - vat_number
+                            - tax_registration_certificate
+                            - settings
+                            - is_certificate_visible
+                            - is_vat_number_visible
+                          x-apidog-ignore-properties: []
+                        description: List of countries with specific tax settings.
+                    required:
+                      - can_use_vat
+                      - vat_activate
+                      - is_vat_self_paid
+                      - is_vat_included_in_product_price
+                      - is_shipping_fee_included_in_vat
+                      - other_countries_tax_percentage
+                      - countries
+                    description: Stores VAT and tax-related configuration for the store.
+                    x-apidog-orders:
+                      - can_use_vat
+                      - vat_activate
+                      - is_vat_self_paid
+                      - is_vat_included_in_product_price
+                      - is_shipping_fee_included_in_vat
+                      - other_countries_tax_percentage
+                      - countries
+                    x-apidog-ignore-properties: []
+                  message: &ref_0
+                    description: Response message object with status info.
+                    $ref: '#/components/schemas/ResponseEnvelopMessage'
+                required:
+                  - status
+                  - tax_settings
+                  - message
+                title: Tax Settings API Response
+                description: >-
+                  Schema describing the response structure for store tax
+                  settings including VAT details and country-specific
+                  configurations.
+                x-apidog-orders:
+                  - status
+                  - tax_settings
+                  - message
+                x-apidog-ignore-properties: []
+          headers: {}
+          x-apidog-name: OK
+        '401':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                description: >-
+                  Response returned when the request cannot be authenticated
+                  because the required credentials are missing, invalid, or
+                  expired.
+                properties:
+                  status:
+                    type: string
+                    description: Indicates the overall status of the API response.
+                    examples:
+                      - error
+                  message:
+                    type: object
+                    description: >-
+                      Contains structured details explaining why the request
+                      could not be authenticated.
+                    properties:
+                      type:
+                        type: string
+                        description: Indicates the category of the response message.
+                        examples:
+                          - error
+                      code:
+                        type: string
+                        description: >-
+                          A machine-readable code identifying the authentication
+                          error. Returns null when no specific code is
+                          available.
+                        examples:
+                          - UNAUTHORIZED
+                        nullable: true
+                      name:
+                        type: string
+                        description: >-
+                          A short, human-readable title describing the
+                          authentication error. Returns null when no title is
+                          available.
+                        examples:
+                          - Unauthorized
+                        nullable: true
+                      description:
+                        type: string
+                        description: >-
+                          A human-readable explanation of why the request could
+                          not be authenticated. Returns null when no detailed
+                          explanation is available.
+                        examples:
+                          - >-
+                            Authentication credentials are missing, invalid, or
+                            expired.
+                        nullable: true
+                    required:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-orders:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-ignore-properties: []
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                examples:
+                  - status: error
+                    message:
+                      type: error
+                      code: UNAUTHORIZED
+                      name: Unauthorized
+                      description: >-
+                        Authentication credentials are missing, invalid, or
+                        expired.
+                x-apidog-ignore-properties: []
+              examples:
+                '1':
+                  summary: Example 1
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_MISSING
+                      name: Sorry
+                      description: Please login first.
+                '2':
+                  summary: Example 2
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Login session expired. Please login again.
+                '3':
+                  summary: Example 3
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Invalid authentication
+          headers: {}
+          x-apidog-name: Unauthorized
+        '500':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Status of the error.
+                  message: *ref_0
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                x-apidog-ignore-properties: []
+              example:
+                status: error
+                message:
+                  type: error
+                  code: MSG_HIDDEN
+                  name: Error
+                  description: Internal Server Error
+          headers: {}
+          x-apidog-name: Internal Server error
+      security: []
+      x-apidog-folder: Default module/Apps/Merchant APIs/Store Settings
+      x-apidog-status: released
+      x-run-in-apidog: https://app.apidog.com/web/project/613905/apis/api-9148539-run
+components:
+  schemas:
+    ResponseEnvelopMessage:
+      type: object
+      properties:
+        type:
+          type: string
+          description: Type of response message returned by the API.
+          examples:
+            - success
+        code:
+          type: string
+          description: Response code returned by the API, if available.
+          examples:
+            - MSG_POPUP_OK
+          nullable: true
+        name:
+          type: string
+          description: Name or title of the response message, if available.
+          examples:
+            - Coupons
+          nullable: true
+        description:
+          type: string
+          description: Detailed description of the response message, if available.
+          examples:
+            - Coupons created successfully
+          nullable: true
+      required:
+        - type
+        - code
+        - name
+        - description
+      description: Additional response metadata.
+      x-apidog-orders:
+        - type
+        - code
+        - name
+        - description
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+  securitySchemes: {}
+servers:
+  - url: https://api.zid.sa/
+    description: Prod Env
+security: []
+
+```

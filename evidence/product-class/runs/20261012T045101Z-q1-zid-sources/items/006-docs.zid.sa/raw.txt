@@ -1,0 +1,6 @@
+# APIs
+
+## Docs
+
+- [Subscription Details](https://docs.zid.sa/subscription-details-13896876e0.md): This endpoint enables app partners to fetch details about a merchant's app subscription, including plan, status, and billing information.
+- [Update Usage-Based Charges](https://docs.zid.sa/update-usage-based-charges-13896680e0.md): This endpoint allows app partners to update the outstanding balance for their app's usage-based plan, ensuring flexible billing adjustments to align with merchants' pay-as-you-go consumption. 

@@ -1,0 +1,27 @@
+{
+ "n": 101,
+ "url": "https://help.shopify.com/en/manual/your-account/legal/unsupported-countries-and-regions.md",
+ "dir": "items/101-help.shopify.com",
+ "fetched_at": "2026-10-11T06:13:05Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/compliance/legal/unsupported-countries-and-regions.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 371,
+ "cited_in": [
+  "SH-S-0298",
+  "SH-S-0299",
+  "SH-S-0300",
+  "SH-S-0301",
+  "SH-S-0302",
+  "SH-S-0303",
+  "SH-S-0304",
+  "SH-S-0305",
+  "SH-S-0306",
+  "SH-S-0307"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "e5067770c323dd4b7f9752572b2dcfd61e0c907e2b8fec12925f1a45a69ae87c",
+ "raw_ext": "txt"
+}

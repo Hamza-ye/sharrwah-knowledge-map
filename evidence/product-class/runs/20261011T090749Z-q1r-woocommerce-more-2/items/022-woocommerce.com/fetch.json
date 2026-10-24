@@ -1,0 +1,18 @@
+{
+ "n": 22,
+ "url": "https://woocommerce.com/products/woocommerce-points-and-rewards/",
+ "dir": "items/022-woocommerce.com",
+ "fetched_at": "2026-10-11T09:07:54Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/products/woocommerce-points-and-rewards/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 60052,
+ "cited_in": [
+  "WC-S-5480"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "d3d4e3c78c7849d11f1eea2816b3a28698077a17d59c1233595039b1e4043aeb",
+ "raw_ext": "html"
+}

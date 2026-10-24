@@ -1,0 +1,12 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+server: openresty/1.25.3.2
+date: Mon, 12 Oct 2026 04:51:32 GMT
+content-type: text/markdown; charset=utf-8
+x-project-id: 613905
+x-enable-cache: 1
+redis-cache-hit: HIT
+x-waf-client-ip: 160.79.106.21
+x-waf-access: 1
+

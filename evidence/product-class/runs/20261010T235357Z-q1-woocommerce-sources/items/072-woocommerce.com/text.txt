@@ -1,0 +1,445 @@
+___
+Skip to navigation
+Skip to content
+USD
+Change site currency USD selected
+Develop on Woo
+Hire an expert
+Get support
+Sell
+Click to show 12 more items
+Extensions
+Click to show 18 more items
+Resources
+Click to show 23 more items
+Enterprise ecommerce
+Log in
+Get started
+Documentation
+WooCommerce
+Expand
+Products
+Expand
+Extensions
+Expand
+Themes
+Expand
+WooPayments
+WooPay
+WooCommerce Shipping
+WooCommerce Tax
+Retired Products
+Expand
+Woo Marketplace
+Code Snippets
+Expand
+WooPayments / Documentation / WooPayments Documentation / WooPayments: Payment Methods / Local payment methods
+Local payment methods
+
+By default, WooPayments accepts payments via credit and debit cards. If you would like to add some region-specific / local payment methods to your checkout, it’s also possible to enable the following:
+
+Alipay
+Bancontact
+EPS
+GrabPay
+iDEAL | Wero
+Multibanco
+Przelewy24 / P24 (legacy)
+SEPA Direct Debit (in closed beta)
+WeChat Pay
+
+NOTE: The fees for these methods differ from the standard card fees. Please see our fees page for a full list of our the fees associated with each one. Also keep in mind that accepting payments in a currency for which you do not have a bank account added can result in currency conversion fees.
+
+Enabling local payment methods
+
+To enable local payment methods:
+
+Go to Payments > Settings.
+Scroll down to the Advanced settings section.
+Ensure the Enable multi-currency box is checked.
+This is necessary because, as noted below, local payments methods require a specific currency before customers can use them. For more information on the multi-currency setting, please see this document.
+Click the Save Changes button at the bottom of the page.
+Refresh the page.
+Scroll down to the Payments accepted on checkout section.
+Enable the methods you want to offer in checkout.
+Click the Save Changes button at the bottom of the page.
+
+Payment methods can be disabled by unchecking their box and saving the settings.
+
+What if a payment method can’t be enabled?
+
+Depending on your account status, certain payment methods may be unavailable, and you’ll be asked to contact support to enable them. When contacting our staff, please make sure to include the name of the payment method you want to enable.
+
+It might also help to make sure that your account isn’t restricted or missing any information, since that can affect payment method availability as well.
+
+Merchant requirements
+
+A given local payment method may not be available in every country. Please see the table below to find out which local payment methods you can use based on your WooPayments account country.
+
+PAYMENT METHOD	CAN BE USED BY MERCHANTS IN…
+Alipay	Any supported country except Poland and UAE
+Bancontact	Any supported country except UAE
+EPS	Any supported country except UAE
+GrabPay	Singapore only
+iDEAL | Wero	Any supported country except UAE
+Multibanco	Europe, the U.K., and the U.S.
+Przelewy24	 Not available for new activations 
+SEPA Direct Debit	Any supported country except UAE
+WeChat Pay	Multiple countries, see below
+WeChat Pay merchant country availability
+
+WeChat Pay is only available to approved merchants whose WooPayments account is registered in one of the following countries:
+
+Australia
+Austria
+Belgium
+Canada
+Denmark
+Finland
+France
+Germany
+Hong Kong
+Ireland
+Italy
+Japan
+Luxembourg
+Netherlands
+Norway
+Portugal
+Singapore
+Spain
+Sweden
+Switzerland
+United Kingdom
+United States
+
+If your country is not listed above, WeChat Pay will not appear as an available option in your WooPayments settings.
+
+Alipay and WeChat Pay additional requirements
+
+Before enabling Alipay or WeChat Pay, make sure your website is complete, publicly accessible, and accurately reflects the products or services you offer. Incomplete or placeholder sites are a common reason for rejection during the approval process. This includes:
+
+Your site must be live and not under construction or password-protected.
+All listed products or services should be visible and clearly described.
+
+While not an explicit requirement, we recommend that important business details — such as your company name, contact info, and policies — are easy to find.
+
+This requirement comes from Alipay and WeChat Pay’s review process and applies to all merchants. Enabling these payment methods before your website is ready may result in approval delays or even rejection.
+
+Alipay and WeChat Pay prohibited businesses
+
+In addition to our general list of prohibited and restricted products, Alipay and WeChat Pay each maintain their own restrictions on business types. If your business falls into one of the prohibited categories below, your request to enable the payment method will be rejected, and re-applying will not change the outcome.
+
+Alipay prohibited business types include, but are not limited to:
+
+Donations and crowdfunding
+Financial intermediation services, including loans, pawnbroking, and foreign exchange
+Debt collection services
+Surrogacy services
+Sale of real estate
+Superstition services (e.g. feng shui, fortune-telling, tarot)
+
+WeChat Pay prohibited business types include, but are not limited to:
+
+Charitable and social service organizations
+Crowdfunding
+Religious organizations, websites, and publications
+Civic, social, and fraternal associations
+Political organizations
+Professional services such as consulting, legal, accounting, and bookkeeping
+Real estate services
+Immigration services
+Dating and chat platforms
+
+The full prohibited business lists can be found in the Alipay Terms of Service and in the Weixin Pay Proper Use Rules, respectively.
+
+If you are unsure whether your business is eligible, please contact our support team before enabling these payment methods.
+
+Alipay and WeChat Pay approval delays
+
+Alipay and WeChat Pay are subject to approval delays of up to five business days after being enabled in WooPayments. During this time, these payment methods may not appear at checkout, even if they are turned on in your settings.
+
+This delay is part of the standard onboarding process and applies to all eligible accounts. If Alipay or WeChat Pay are still not available five business days after either payment method is enabled, please contact support so we can help look into it.
+
+iDEAL | Wero additional requirements
+
+If your business is based in the Netherlands, iDEAL | Wero requires that your website displays your KVK number on file with the Chamber of Commerce.
+
+If you use iDEAL | Wero but are based outside the Netherlands, your website must display your company registration number with the equivalent local official body.
+
+Przelewy24 (P24) additional requirements
+
+P24 is unavailable to new merchant accounts! As of August 17, 2026, P24 can no longer be enabled on any WooPayments account that is not already using it. This comes directly from Przelewy24 themselves. There are no exceptions.
+
+If Przelewy24 is already active on your account, you can continue using it provided that you meet the following set of criteria:
+
+Your business type must be a company.
+As of August 6, 2026, Przelewy24 no longer supports individual business types, including sole proprietorships, in any country. This applies regardless of whether you have a valid tax ID or NIP.
+A valid tax ID, VAT ID, or NIP (for Polish entities) in your Stripe Express account.
+See how to check or change your tax ID.
+A publicly accessible website with all of the following:
+A list of the products and services you sell and their prices.
+Your company address, tax number, and registration number.
+Refund and privacy policies.
+An MCC that is not one of the prohibited MCCs listed below.
+
+If you do not meet these criteria, your ability to accept P24 payments may be removed without warning at any time. P24 reviews merchants on an ongoing basis, not just when you first activate it. This means that your access might be revoked even if you’ve accepted P24 payments successfully in the past.
+
+When access to P24 payments is revoked, orders using it will fail at checkout with an authentication error rather than P24 simply being disabled in your settings. Sadly this is not something that we (WooPayments/Automattic) can control.
+
+If your P24 payments have started failing unexpectedly, contact our support team.
+
+Przelewy24 (P24) prohibited businesses
+
+In addition to our general list of prohibited or restricted products, businesses using the following MCCs are not eligible to use Przelewy24. (If you would like to change your MCC to a different one, please see this document.)
+
+CATEGORY	MCC
+Airlines and Air Carriers	3000-3350
+Lodging – Hotels, Motels, Resorts	3501-3999
+Railroads – freight	4011
+Local and suburban mass passenger transportation	4111
+Passenger railways	4112
+Taxis, limousine services	4121
+Local and suburban bus transportation	4131
+Cruise lines	4411
+Boat rental and leasing services	4457
+Marinas, marine services and supplies	4468
+Airlines, air carriers	4511
+Airports, airport terminals, and airfields (operation and maintenance)	4582
+Travel agencies, tour operators	4722
+Package Tour Operators (Germany only)	4723
+Passenger transportation services – not elsewhere classified (e.g. mountain railways, carriages)	4789
+Key-entry telecom service providers using a central access number	4813
+Telecommunications services (subscription and prepaid)	4814
+Computer network/online services (e.g. Internet access, email/website hosting, cyberlockers)	4816
+Money transfer	4829
+Marketplaces	5262
+Specialty food stores – not elsewhere classified (e.g. dietary supplements)	5499
+Used car and truck dealers	5521
+Service stations with unattended automated fuel dispensers	5542
+Boat dealers	5551
+Gun and ammunition stores	5723
+Bars, cocktail lounges, and nightclubs without adult entertainment	5813
+Digital goods – software application download/remote access (excluding games)	5817
+Pharmacies, drugstores	5912
+Alcoholic beverage stores (beer, wine, liquor)	5921
+Antique shops – sales, repairs, restorations	5932
+Pawn shops	5933
+Antique reproduction stores	5937
+Direct marketing – insurance services	5960
+Direct marketing – travel-related arrangement services	5962
+Door-to-door sales	5963
+Direct marketing – catalog merchants, mail-order companies	5964
+Direct marketing – combination catalog and retail merchants	5965
+Direct marketing – outbound telemarketing	5966
+Direct marketing – inbound telemarketing (e.g. information services, adult chat and entertainment)	5967
+Direct marketing – continuity/subscription (e.g. direct mail book clubs, magazine/newspaper/collectible series subscriptions)	5968
+Direct marketing – other direct marketers – not elsewhere classified	5969
+Art dealers, galleries	5971
+Fuel dealers – coal, fuel oil, liquefied petroleum, wood	5983
+Cigar stores and stands – tobacco products, e-cigarettes, tobacco substitute products	5993
+Miscellaneous and specialty retail stores – not elsewhere classified (including erotic goods, firearms, fireworks)	5999
+Manual cash disbursements – financial institutions	6010
+Automated cash disbursements – financial institutions	6011
+Merchandise and services – financial institutions	6012
+Quasi-cash – financial institutions	6050
+Quasi-cash – merchants (e.g. money exchange, cryptocurrencies)	6051
+Securities/stock brokers	6211
+Insurance – sales, underwriting, premiums	6300
+Real estate agents and managers – rentals	6513
+Payment transactions – financial institutions	6532
+Payment transactions – merchants	6533
+MoneySend – domestic	6536
+MoneySend – international	6537
+MoneySend – funding	6538
+Funding transactions (e.g. loading funds onto a stored-value or prepaid card)	6540
+Lodging – hotels, motels, resorts	7011
+Timeshares (real estate)	7012
+Campgrounds, trailer parks	7033
+Dating and escort services	7273
+Debt, marriage, and personal counseling services	7277
+Massage parlors	7297
+Personal services – not elsewhere classified (e.g. household and animal services, body piercing and tattooing)	7299
+Advertising services	7311
+Consumer credit reporting agencies	7321
+Collection agencies	7322
+Employment agencies, temporary staffing services	7361
+Software programming/design, data entry/processing	7372
+Wholesale providers of online and database information retrieval and search services	7375
+Car rental agencies	7512
+Truck rental	7513
+Motorhome and recreational vehicle rental	7519
+Government-owned lottery (U.S. region only)	7800
+Internet gambling (U.S. region only)	7801
+Government-licensed horse/dog racing (U.S. region only)	7802
+Video entertainment rental stores	7841
+Ticket agencies promoting theaters, musicals, operas, and concerts; theatrical producers; providers of scenery, lighting, and theatrical equipment; casting agencies	7922
+Ticket agencies promoting sports events, sports arenas and stadiums, professional sports clubs, sports promoters	7941
+Ticket sales for exhibitions, craft shows, museums, and tourist attractions	7991
+Casinos, lotteries, sports betting, online gambling	7995
+Amusement parks, carnivals, circuses, fortune tellers (including esotericism, astrology)	7996
+Medical doctors – not elsewhere classified	8011
+Dentists, orthodontists	8021
+Osteopathic physicians	8031
+Chiropractors	8041
+Optometrists, ophthalmologists	8042
+Chiropodists, podiatrists	8049
+Hospitals	8062
+Dental and medical laboratories	8071
+Attorneys, legal services	8111
+Universities, colleges of higher education	8220
+Correspondence schools	8241
+Business schools	8244
+Trade and vocational schools	8249
+Charitable (non-political) organizations, social service organizations	8398
+Civic, social, and fraternal associations	8641
+Political organizations	8651
+Religious organizations	8661
+Associations, memberships – not elsewhere classified (e.g. labor unions, condominium associations)	8699
+Testing laboratories (non-medical)	8734
+Collection of taxes and penalties (e.g. tax assessors’ offices, customs bureaus)	9311
+Government services – not elsewhere classified	9399
+Government-owned lotteries (Norway, Poland, Sweden only)	9406
+Country and currency requirements
+
+Local payment methods will only show in checkout if the customer billing country and the customer currency meet the requirements shown below.
+
+PAYMENT METHOD	CUSTOMER BILLING COUNTRY	CUSTOMER CURRENCY
+Alipay	No restrictions	Varies, see below
+Bancontact	Belgium	EUR
+EPS	Austria	EUR
+GrabPay	Singapore	SGD
+iDEAL | Wero	Netherlands	EUR
+Multibanco	Portugal	EUR
+Przelewy24 (P24)	Poland	EUR or PLN
+SEPA Direct Debit	Any SEPA country	EUR
+WeChat Pay	Varies, see below	Varies, see below
+
+If these requirements are not met, the payment method will be hidden since the customer cannot use it anyway.
+
+Alipay Customer Currencies
+
+Alipay supports multiple customer currencies, and there are no restrictions on the billing address allowed at checkout. However, the currency used at checkout needs to match the currency of your WooPayments account. Example: Alipay will only be available at checkout on a US WooPayments account if the currency is set to ($)USD.
+
+Expand to view Alipay customer currency details
+WeChat Pay Customer Currencies
+
+WeChat Pay is only available to customers using a billing address that matches any of the countries listed below. However, the currency used at checkout needs to match the currency of your WooPayments account. Example: WeChat Pay will only be available at checkout on a US WooPayments account if the currency is set to ($)USD.
+
+Expand to view WeChat Pay customer currency details
+Minimums and maximums
+
+All payment methods have minimum and maximum transaction amounts. The list below shows any exceptions to those that are specific to a given local payment method.
+
+Multibanco has a maximum charge amount of 99,999 EUR.
+Refund time limits
+
+Local payment methods have limited refund time windows, outside of which you will not be able to refund a payment. Those time limits are:
+
+PAYMENT METHOD	REFUNDS MUST BE ISSUED WITHIN…
+Alipay	90 days
+Bancontact	180 days
+EPS	180 days
+GrabPay	90 days
+iDEAL | Wero	180 days
+Multibanco	365 days
+Przelewy24	180 days
+SEPA Direct Debit	180 days
+WeChat Pay	180 days
+Closed betas
+
+The following payment methods are currently in closed beta and are only available to a select few merchant accounts:
+
+SEPA Direct Debit
+
+We won’t be adding these payment methods to any additional accounts at this time. However, we hope to enable them for all merchants in the future.
+
+
+Was this guide helpful for you?
+ON THIS PAGE
+Enabling local payment methods
+What if a payment method can't be enabled?
+Merchant requirements
+WeChat Pay merchant country availability
+Alipay and WeChat Pay additional requirements
+iDEAL | Wero additional requirements
+Przelewy24 (P24) additional requirements
+Country and currency requirements
+Alipay Customer Currencies
+WeChat Pay Customer Currencies
+Minimums and maximums
+Refund time limits
+Closed betas
+WooPayments
+by Woo
+No payment details required • Set up in minutes
+Install for free
+30-day money-back guarantee
+Support teams across the world
+Safe and secure online payments
+Sell
+WooCommerce
+WooCommerce pricing
+Payments
+No-code customization
+Marketing
+Checkout
+Shipping
+Mobile app
+Enterprise ecommerce
+Marketplace
+WooCommerce extensions
+WooCommerce themes
+New
+Essentials
+Collections
+Developed by Woo
+Build
+Woo for developers
+Developer resources
+Become a Woo agency
+Become a Marketplace partner
+Become an affiliate
+Resources
+Blog
+Documentation
+WooCommerce site examples
+Product updates
+Email newsletter
+Support
+Feature requests
+WooCommerce hosting
+Hire an agency
+Participate in customer research
+Accessibility
+Support forums
+Company
+About
+Press
+Download WooCommerce free
+Join the Woo community
+Woo trademark guidelines
+Brand and logo guidelines
+Do not sell or share my personal information
+WooCommerce Support Policy
+Refund Policy
+Contact us
+Follow us on Facebook
+Follow us on X
+Follow us on Instagram
+Follow us on LinkedIn
+USD
+Change site currency USD selected
+Terms of Service
+Privacy Policy
+Privacy Notice for California Users
+
+© WooCommerce, Inc. 2026
+
+AN
+AUTOMATTIC
+OPUS
+Use of your personal data
+We and our partners process your personal data (such as browsing data, IP Addresses, cookie information, and other unique identifiers) based on your consent and/or our legitimate interest to optimize our website, marketing activities, and your user experience.
+Customize
+Accept all

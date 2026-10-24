@@ -1,0 +1,18 @@
+{
+ "n": 60,
+ "url": "https://docs.bigcommerce.com/developer/api-reference/rest/integrations/tax-provider.md",
+ "dir": "items/060-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:20:15Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/api-reference/rest/integrations/tax-provider.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 490,
+ "cited_in": [
+  "BC-S-0349"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "438866f755158cf0a7a7af548bf99ca6a469aeac6af791d93daeac702b71ba4c",
+ "raw_ext": "txt"
+}

@@ -1,0 +1,19 @@
+{
+ "n": 5,
+ "url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/extensions/extension-onboarding/integrating-coming-soon-mode.md",
+ "dir": "items/005-raw.githubusercontent.com",
+ "fetched_at": "2026-10-11T08:40:22Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/extensions/extension-onboarding/integrating-coming-soon-mode.md",
+ "content_type": "text/plain; charset=utf-8",
+ "bytes": 2515,
+ "cited_in": [
+  "WC-S-5423",
+  "WC-S-5424"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "98483e8fa9a1cf8a5d9056be1414c31e50cc83f656f023377f7940940406ed15",
+ "raw_ext": "txt"
+}

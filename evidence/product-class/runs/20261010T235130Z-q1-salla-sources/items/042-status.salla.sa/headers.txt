@@ -1,0 +1,33 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 301 
+date: Sat, 10 Oct 2026 23:51:53 GMT
+content-type: text/html; charset=UTF-8
+location: https://status.salla.com/
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-content-type-options: nosniff
+server: cloudflare
+cf-ray: a489891c9985b06c-IAD
+alt-svc: h3=":443"; ma=86400
+
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+age: 293
+cache-control: public, max-age=0, must-revalidate
+content-encoding: br
+content-type: text/html; charset=utf-8
+date: Sat, 10 Oct 2026 19:41:05 GMT
+etag: W/"17lqo9av9er4hha"
+referrer-policy: strict-origin-when-cross-origin
+server: Vercel
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+x-content-type-options: nosniff
+x-matched-path: /[lang]/[url]/[type]/[userId]
+x-nextjs-prerender: 1
+x-nextjs-stale-time: 60
+x-powered-by: Next.js
+x-vercel-cache: HIT
+x-vercel-id: iad1::cle1::46xq6-1791676313215-4295d3bb6fb6
+

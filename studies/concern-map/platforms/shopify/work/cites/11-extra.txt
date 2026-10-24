@@ -1,0 +1,31 @@
+key: eng_pods_isolated
+source: sharrwah-knowledge-map:evidence/shopify-engineering/runs/20261010T083026Z-engineering-sources/items/024-shopify.engineering/text.txt
+locator: A Pods Architecture To Allow Shopify To Scale
+quote: A pod consists of a set of shops that live on a fully isolated set of datastores.
+date: 2018-03-02
+basis: published (page states "Published on Mar 2, 2018")
+access: local
+
+key: eng_pods_dc_pair
+source: sharrwah-knowledge-map:evidence/shopify-engineering/runs/20261010T083026Z-engineering-sources/items/024-shopify.engineering/text.txt
+locator: A Pods Architecture To Allow Shopify To Scale, disaster recovery
+quote: We assigned each pod a pair of data centers, and at any point in time one of the two will be the active data center while the second acts as a recovery site.
+date: 2018-03-02
+basis: published (page states "Published on Mar 2, 2018")
+access: local
+
+key: eng_pods_failure
+source: sharrwah-knowledge-map:evidence/shopify-engineering/runs/20261010T083026Z-engineering-sources/items/024-shopify.engineering/text.txt
+locator: A Pods Architecture To Allow Shopify To Scale
+quote: Simply sharding the databases wasn't enough, we needed to fully isolate each shard so a failure couldn't spiral out into a platform outage.
+date: 2018-03-02
+basis: published (page states "Published on Mar 2, 2018")
+access: local
+
+key: gvt_balance
+source: https://www.shopify.com/legal/gvtaccesspolicy
+locator: Introduction
+quote: These guidelines illustrate how Shopify balances our legal obligations, the requesting party’s needs, and the interests of our Merchants, their Customers, or our Partners when we receive legal requests for information.
+date: 2024-04-26
+basis: last updated (page states "Last updated: April 26, 2024")
+access: rendered

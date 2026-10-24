@@ -1,0 +1,23 @@
+{
+ "n": 88,
+ "url": "https://woocommerce.com/product-category/woocommerce-extensions/payment-gateways/",
+ "dir": "items/088-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:07Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/product-category/woocommerce-extensions/payment-gateways/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 49033,
+ "cited_in": [
+  "WC-S-0706",
+  "WC-S-0707",
+  "WC-S-0708",
+  "WC-S-0709",
+  "WC-S-0710",
+  "WC-S-0711"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "d4176b861ba315a7be3631fe120cf50f8e499516f3b67074341fe05cdc1db3f2",
+ "raw_ext": "html"
+}

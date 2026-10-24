@@ -1,0 +1,18 @@
+{
+ "n": 13,
+ "url": "https://shopify.engineering/commerce-payments-protocol",
+ "dir": "items/013-shopify.engineering",
+ "fetched_at": "2026-10-10T08:30:28Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://shopify.engineering/commerce-payments-protocol",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 54888,
+ "cited_in": [
+  "evidence/shopify-engineering/finding-aids/20261010-shopify-engineering-sources.tsv:E013"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "9018f2dc25f7c2774241844293479489828cfd2346e22341191a9e19a23bb59b",
+ "raw_ext": "html"
+}

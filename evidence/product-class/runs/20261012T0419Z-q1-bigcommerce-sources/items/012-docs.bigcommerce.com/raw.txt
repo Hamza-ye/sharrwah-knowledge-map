@@ -1,0 +1,38 @@
+> This page is for Developer.
+
+> For clean Markdown of any page, append .md to the page URL.
+> For a complete documentation index, see https://docs.bigcommerce.com/llms.txt.
+> For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server.
+
+# Custom Template Associations
+
+Associate a Stencil themeʼs custom templates with products, categories, brands, and pages.
+
+## Creating template associations
+
+To create a template association, use the [Upsert custom template associations](/developer/api-reference/rest/admin/content/custom-template-associations/upsert-custom-template-associations) endpoint
+
+## Entity IDs
+
+The value of the entity ID is the ID property for the given entity. For example, a category entity ID is the `id` property for the particular category object you want to act upon.
+
+To get the entity IDs for categories, products, and brands, use the [Get categories](/developer/api-reference/rest/admin/catalog/category-trees/categories/get-all-categories), [Get products](/developer/api-reference/rest/admin/catalog/products/get-products), and [Get brands](/developer/api-reference/rest/admin/catalog/brands/get-brands) endpoints, respectively.
+
+To get the entity ID for a page, use the [Get pages](/developer/api-reference/rest/admin/content/pages/get-pages) endpoint.
+
+## Getting available templates
+
+To get a list of available custom templates for each entity type, send a request to the [Get all themes](/developer/api-reference/rest/admin/content/themes/get-store-themes) endpoint, then use the `variation.uuid` property as the path parameter in a request to the [Get custom templates](/developer/api-reference/rest/admin/content/themes/theme-custom-templates/get-theme-custom-templates) endpoint.
+
+To get the version UUID for an active theme, use the [Get a channel active theme](/developer/api-reference/rest/admin/management/channels/active-theme/get-channel-active-theme) endpoint.
+
+## Resources
+
+* [Upsert custom template associations](/developer/api-reference/rest/admin/content/custom-template-associations/upsert-custom-template-associations)
+* [Get categories](/developer/api-reference/rest/admin/catalog/category-trees/categories/get-all-categories)
+* [Get products](/developer/api-reference/rest/admin/catalog/products/get-products)
+* [Get brands](/developer/api-reference/rest/admin/catalog/brands/get-brands)
+* [Get pages](/developer/api-reference/rest/admin/content/pages/get-pages)
+* [Get all themes](/developer/api-reference/rest/admin/content/themes/get-store-themes)
+* [Get custom templates](/developer/api-reference/rest/admin/content/themes/theme-custom-templates/get-theme-custom-templates) endpoint.
+* [Get a channel active theme](/developer/api-reference/rest/admin/management/channels/active-theme/get-channel-active-theme)

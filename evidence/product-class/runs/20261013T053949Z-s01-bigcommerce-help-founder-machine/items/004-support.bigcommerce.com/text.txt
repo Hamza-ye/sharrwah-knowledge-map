@@ -1,0 +1,541 @@
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+GETTING STARTED
+PRODUCTS
+STORE SETUP
+B2B
+DESIGN AND CONTENT
+MANAGE STORE
+CHANNEL MANAGER
+MARKETING
+DATA SOLUTIONS
+ACCOUNT
+TD BANK
+Connecting with Stripe OCS
+What We'll Cover
+How it works
+Requirements
+Migrating to Stripe OCS
+Setting up Stripe OCS
+Stripe Link
+Payment methods
+Common questions
+
+Stripe Optimized Checkout Suite (OCS), our latest version of the Stripe integration, allows you to easily accept a variety of online payments. In addition to credit and debit cards, you can offer multiple alternative payment methods, including Google Pay and Apple Pay.
+
+Stripe’s integrated fraud tools allow you to accept payments confidently, and with Stripe Link, shoppers can enjoy accelerated checkouts, leading to higher conversion rates.
+
+ 
+How It Works
+
+Our Stripe OCS integration uses Stripe’s newest approach, OCS with EwCS (Elements with Checkout Session), which uses Stripe’s Checkout Sessions API to submit transaction attempts. This is the default experience for stores with the checkout type Optimized One-Page Checkout. EwCS reduces ongoing maintenance and provides increased feature flexibility, such as Stripe Adaptive Pricing and instrument vaulting for all card payments.
+
+Stores with the checkout type of Custom Checkout use our previous version of Stripe OCS by default, which uses Stripe’s Payment Intent API.
+
+To upgrade a custom checkout to use OCS with EwCS, you must be using Checkout SDK version 1.948.1 or later. Once using the required SDK, enable Stripe Adaptive Pricing by following the steps under “Setup” on Stripe Adaptive Pricing. If you want to switch to EwCS without enabling Adaptive Pricing, contact our support team.
+
+For more information, see Stripe’s Compare the Checkout Sessions and Payment Intents APIs.
+
+ 
+Requirements
+Your store’s checkout type must be Optimized One-Page Checkout or Custom Checkout.
+If your store is using a custom checkout, it must be using Checkout SDK version 1.948.1 or later.
+The respective changes must be done to checkout js.
+To enable the Stripe integration, your store must meet the eligibility requirements.
+You must have a Stripe account based in a supported country.
+To set up and manage payment methods, the Manage Payments and Manage Settings permissions must be enabled on your user account.
+ 
+Migrating to Stripe OCS
+
+If you are currently connected to our previous Stripe integration and meet the requirements, you can migrate to Stripe OCS by following the steps below.
+
+Notes on migrating to Stripe OCS
+Migration steps
+NOTES ON MIGRATING TO STRIPE OCS
+It is strongly recommended to set up the new Stripe OCS integration in your sandbox store and complete testing before configuring it on your production store.
+You can revert back to the legacy Stripe UPE integration any time within 30 days after migration. See Common Questions for more information.
+You must migrate each Stripe configuration to Stripe OCS separately for each currency that you offer.
+For each configuration migrated to OCS, you must set up new notification webhooks.
+Review and enable the payment methods your customers prefer in your Stripe Dashboard.
+If you have enabled Apple Pay, you must re-enable it after migration.
+For custom themes, ensure Stripe Element at the Payment step matches your brand styling using the Elements Appearance API for a seamless checkout experience.
+If you submit orders via API using Stripe or if your store is using specific payment apps, they must use the API to obtain the credit card info, and then process the payment through the “stripeocs” gateway using the Payments API.
+If your store uses custom checkout, you must update it to Checkout SDK version 1.948.1 or later.
+MIGRATION STEPS
+
+When you’re ready to use Stripe OCS, go to Settings › Payments and select a currency from the drop-down list. Expand Online Payment Methods under the Embedded tab, click on Stripe, then click Migrate to Stripe OCS.
+
+Note that you must migrate to Stripe OCS separately for each currency that you offer.
+
+ 
+
+Note: Once migration is completed, you must reconfigure notifications for each currency to ensure stored payment instruments stay synchronized and order statuses in BigCommerce accurately reflect updates from Stripe.
+
+If you previously offered Apple Pay using the older version of Stripe, you need to re-enable it for use with Stripe OCS. Go to Settings › Payments, expand Digital Wallets under the Embedded tab, then toggle off the slider next to Apple Pay.
+
+Once the page refreshes, click Digital Wallets, click Set Up next to Apple Pay, then click Save to enable.
+
+ 
+Setting up Stripe OCS
+Notifications settings
+Transaction settings
+Payment settings
+
+To connect your store with Stripe, go to Settings › Payments, expand Online Payment Methods under the Embedded tab and click Set up next to Stripe.
+
+Click Connect with Stripe to create a new account or log in to an existing account.
+
+ 
+
+Connecting an existing Stripe account? To avoid setup issues, you must log out of your Stripe dashboard before connecting the account to your BigCommerce store.
+
+If you plan on submitting orders via API using Stripe or if your store is using any of the below apps, they must use the API to obtain the credit card info, and then process the payment through the “stripeocs” gateway using the Payments API.
+
+Bread Finance	PayWhirl
+Charge Pilot	Recurring Billing & Vaulting by MINIBC
+Ordergroove	Sufio
+Partial.ly Payment Plans
+
+Once connected, finalize your Stripe OCS setup to begin accepting payments on your store.
+
+NOTIFICATIONS SETTINGS
+
+Configuring notifications ensures that stored payment instruments stay synchronized and that order statuses in BigCommerce accurately reflect updates from Stripe.
+
+Notifications are also required to use Stripe features such as Radar or Radar for Fraud Teams and any of Stripe’s alternative payment methods, excluding Apple Pay and Google Pay.
+
+ 
+
+Note: You must configure notifications for each currency to ensure stored payment instruments stay synchronized and order statuses in BigCommerce accurately reflect updates from Stripe.
+
+1. Under Notification settings, copy the Notification URL.
+
+2. Go to your Stripe Dashboard and navigate to Developers › Webhooks. If you click on the Stripe Dashboard link in the Stripe tab of your BigCommerce control panel, it will take you directly to the webhooks area and pre-select the required events for you.
+
+ 
+
+Note: If you are using Stripe’s legacy Developers Dashboard, this is located in a different area. See Add a webhook endpoint in Stripe’s documentation to learn more.
+
+3. Click Add destination and select Your account as the event destination scope, then check the box next to the following events:
+
+charge.captured	checkout.session.expired
+charge.dispute.closed	payment_intent.canceled
+charge.failed	payment_intent.payment_failed
+charge.refunded	payment_intent.succeeded
+charge.succeeded	payment_method.attached
+checkout.session.async_payment_failed	payment_method.detached
+checkout.session.async_payment_succeeded	payment_method.updated
+checkout.session.completed	review.closed
+
+4. Once all the above events are selected, click Continue, then click Continue again.
+
+5. On the Configure destination page, paste the copied Notification URL value into the Endpoint URL field. Give the destination a name and an optional description, then click Create destination.
+
+6. After creating the endpoint, click the eyeball icon under Signing secret then copy the exposed value.
+
+7. Return to the BigCommerce control panel and paste the copied value in the Signing secret field. Save your changes.
+
+TRANSACTION SETTINGS
+
+The next group of settings are related to how transactions are processed, shopper email receipts, and how Stripe payment methods display at checkout.
+
+Transaction type — Select Authorize & Capture to automatically charge customers or Authorize Only to manually capture funds. See Manually Capturing Transactions (Authorize Only) to learn more.
+This setting affects all payment methods processed by Stripe, including alternative payment methods. If the payment method does not support manual capture, Authorize & Capture will be applied to these transactions instead.
+Test mode — Select Yes to test your checkout flow. Select No once you are ready to take live payments.
+Statement descriptor — Enter a description that appears on the shopper's credit card statement or bank statement for each transaction.
+Your statement descriptor must meet Stripe’s requirements.
+This field is not editable in stores with Multi-Storefront enabled, even if you only have a single storefront channel. Stripe uses the storefront channel name for your statement descriptor.
+Your custom descriptor may not appear for certain customers. See the FAQ for more information.
+
+Always create customer on Stripe end with every payment attempt — Check the box to generate a customer record in Stripe for each transaction.
+These are separate from the customer accounts in the BigCommerce control panel.
+Enable receipt email — Check to allow Stripe to automatically send payment and refund receipt emails to the shopper. These are separate from any customer order notifications you have enabled in the BigCommerce control panel.
+Sort payment methods to show the Stripe widget first at checkout — Check to display Stripe payment methods at the top of the payment accordion at checkout.
+When unchecked, Stripe, including credit/debit cards, will appear below all other payment options. We recommend enabling this setting.
+PAYMENT SETTINGS
+
+This group of settings controls additional payment options and methods to enable faster checkout for your customers.
+
+Link provides your guest shoppers with a quick and seamless one-click checkout experience. Customers logged into their storefront account can also take advantage of a quicker checkout flow.
+
+To use Link, you must also enable it in your Stripe Dashboard. It is enabled in the BigCommerce control panel by default.
+
+For more details, including the shopper experience, requirements, and limitations, see Stripe Link.
+
+With Stripe Adaptive Pricing, shoppers can complete orders in their local currency, while payouts to your account are settled in your default currency. When shoppers place an order using their local currency, Stripe applies a variable conversion fee directly to the order’s purchase price.
+
+This feature is enabled by default for most stores; however, you can opt out by unchecking the box next to Enable Adaptive Pricing with Stripe. For more details, including the shopper experience, requirements, and limitations, see Stripe Adaptive Pricing.
+
+Enable stored credit/debit cards for store customers — Check this box to allow customers logged into their storefront account to store their card and ACH account details for future purchases.
+Your store must be on a Growth plan or higher.
+To allow for stored ACH accounts, you must also enable ACH Direct Debit as a payment method in your Stripe Dashboard.
+Vault instruments with Stripe for all card payments — Store a unique token with Stripe for each card used to place an order on your store, for both logged-in customers and guest shoppers.
+Note that the token is not saved to the customer's storefront account, and an option for future use is not displayed during checkout.
+Provider token fields provider_instrument_token and provider_customer_id can be accessed via our V3 Transactions API. To request access to these fields, contact our support team.
+If your store is using a custom checkout, contact our support team to request access to this feature. Your store must be using Checkout SDK version 1.948.1 or later.
+
+All payment methods, including alternative payment methods, are enabled and managed within the Stripe Dashboard. However, the Stripe config ID for your configuration is displayed here. This should match the Configuration ID displayed in the Payments section of your Stripe Dashboard.
+
+ 
+
+Note: Google Pay and Apple Pay must also be enabled in the BigCommerce control panel. For Google Pay, this is done by checking the box next to Enable Google Pay.
+
+For payment setup information, available features, and supported APMs, see Payment Methods.
+
+ 
+Stripe Link
+How Link works
+Features, requirements, and limitations
+
+Stripe Link simplifies the checkout process by automatically populating a shopper’s address and payment information. Businesses that use Link benefit from its network effects, as customers can easily join and make one-click payments across the entire Link network.
+
+HOW LINK WORKS
+
+Once enabled in both the BigCommerce control panel and the Stripe Dashboard, Link quick payment buttons appear on cart pages and at the top of checkout.
+
+Clicking a Link quick payment button opens a pop-up window where, after authenticating into their Link account, shoppers can complete checkout with just one click.
+
+If the shopper’s email address does not belong to the Link network, they can enroll within the pop-up window by registering their phone number, billing address, and payment information.
+
+ 
+
+Note: If you have marked address fields as Required, such as for Stripe’s fraud features, shoppers will be unable to bypass checkout using Link quick payment buttons, generating an error. However, Link will still be available for shoppers at the payment step during checkout.
+
+On the checkout page, customers logged into their storefront account and guest shoppers that bypass the quick payment button are instead prompted for a one-time code at the payment step. Entering the code populates their payment information, allowing them to complete checkout with a single click.
+
+If a customer’s email address does not belong to the Link network, after entering their payment information, they are given the opportunity to save the payment method and enroll in Link for faster checkout in the future.
+
+FEATURES, REQUIREMENTS, AND LIMITATIONS
+Link supports multiple payment methods, including credit cards, debit cards, and Instant Bank Payments.
+When only Instant Bank Payments are enabled, IBP displays as Instant Bank Payments (via Stripe Link) in the BigCommerce control panel and as Link card in your Stripe Dashboard.
+When ACH Direct Debit and Instant Bank Payments are enabled, both appear as payment options at checkout.
+Both methods display as ACH Direct Debit (via Stripe) in the BigCommerce control panel and as us_bank_account in your Stripe Dashboard.
+To enable Link, you must have a Stripe account in a supported country.
+Link is not available in India. In Brazil and Thailand, the Payment Element doesn’t support Link.
+Your store must be on the latest version of Stripe.
+Bolt One-Click Checkout cannot be enabled.
+Stripe Link does not support the use of multiple shipping addresses.
+Link quick payment buttons do not support address fields that are manually marked as Required.
+ 
+Payment Methods
+
+Stripe OCS uses dynamic payment methods which means that all payment methods, including alternative payment methods, are managed within the Stripe Dashboard. To access your payment methods, click the gear icon in the upper right, click Payments, click on Payment methods, then select your payment configuration.
+
+The Configuration ID should match the Stripe config ID displayed for your Stripe configuration in the BigCommerce control panel.
+
+Our Stripe OCS integration provides access to Stripe's features that are supported by dynamic payment methods, including A/B testing and payment method rules.
+
+ALTERNATIVE PAYMENT METHODS
+
+Stripe OCS supports many global and local alternative payment methods (APMs). Click on an APM to see its requirements and limitations.
+
+ACH Direct Debit	Boleto Bancário	Multibanco
+Affirm	Cash App Pay	OXXO
+Afterpay / Clearpay	EPS	PayNow
+Alipay	FPX	PromptPay
+Amazon Pay	Google Pay*	Przelewy24
+Apple Pay*	Grabpay	RevolutPay
+BACS Direct Debit	iDEAL	Satispay
+Bancontact	Klarna	SEPA Direct Debit
+BECS Direct Debit	Konbini	TWINT
+Billie	MB WAY	WeChat Pay
+Bizum	MobilePay	Zip
+BLIK	 	 
+
+*Must also be enabled in the BigCommerce control panel.
+
+ 
+Common Questions
+General
+Pricing and fees
+Account eligibility
+Transactions
+Refunds
+Additional features
+Payment disputes
+Troubleshooting and support
+GENERAL
+
+Can I revert to the previous version of Stripe?
+
+If you used the legacy Stripe V1 or Stripe V3 integration prior to Stripe OCS, you cannot revert after migrating. If you used our previous Stripe integration, you can revert from Stripe OCS anytime within 30 days of migration. Keep any configured notifications in place so that you can seamlessly revert without needing to reconfigure.
+
+ 
+
+Before reverting: If you have enabled Multi-Storefront since migrating to Stripe OCS, you must disable it before reverting to the legacy Stripe integration. Contact our support team for assistance.
+
+To revert, go to Settings › Payments, click on Stripe, then click Revert to Legacy Stripe Integration.
+
+PRICING AND FEES
+
+What fees are associated with Stripe OCS?
+
+For transaction fees, custom pricing packages, and frequently asked questions, see Stripe Pricing.
+
+ACCOUNT ELIGIBILITY
+
+What countries does the Stripe OCS integration support?
+
+Our integration supports the following countries:
+
+Australia	Finland	Latvia	Portugal
+Austria	France	Liechtenstein	Romania
+Belgium	Germany	Lithuania	Singapore
+Bulgaria	Gibraltar	Luxembourg	Slovakia
+Brazil	Greece	Malaysia	Slovenia
+Canada	Hong Kong	Malta	Spain
+Croatia	Hungary	Mexico	Sweden
+Czech Republic	India	Netherlands	Switzerland
+Cyprus	Ireland	New Zealand	United Arab Emirates
+Denmark	Italy	Norway	United Kingdom
+Estonia	Japan	Poland	United States
+
+What currencies does the Stripe OCS integration support?
+
+Our integration supports the following currencies:
+
+AED	BZD	GYD	KZT	MXN	RUB	TWD
+ALL	CAD	HKD	LBP	MYR	RWF	TZS
+AMD	CDF	HTG	LKR	MZN	SAR	UAH
+ANG	CNY	IDR	LRD	NAD	SBD	UGX
+AUD	DKK	ILS	LSL	NGN	SCR	USD
+AWG	DOP	ISK	MAD	NOK	SEK	UZS
+AZN	DZD	JMD	MDL	NPR	SGD	VND
+BAM	EGP	JPY	MGA	NZD	SLL	VUV
+BBD	ETB	KES	MKD	PGK	SOS	WST
+BDT	EUR	KGS	MMK	PHP	SZL	XAF
+BIF	FJD	KHR	MNT	PKR	THB	XCD
+BMD	GBP	KMF	MOP	PLN	TJS	YER
+BND	GEL	KRW	MRO	QAR	TOP	ZAR
+BSD	GIP	KWD*	MVR	RON	TRY	ZMW
+BWP	GMD	KYD	MWK	RSD	TTD	 
+
+*KWD is only supported for the United Arab Emirates. To enable this currency, your Stripe account country must be the United Arab Emirates. See Stripe’s supported currencies article for more information.
+
+If you are managing transactions on your store with the Payments API, contact our support team to enable KWD as an available transactional currency.
+
+What items are restricted for merchants to sell?
+
+See Stripe's documentation for a list of prohibited and restricted businesses.
+
+Can I change the Credit Cards payment method display name?
+
+No. Payment methods are managed in the Stripe Dashboard, but their display names cannot be customized.
+
+TRANSACTIONS
+
+After I create an account, what is the waiting period before I can process transactions?
+
+There is no waiting period. However, Stripe does flag accounts for verification after a certain processing threshold.
+
+How long until a transaction's funds are transferred to my bank?
+
+Stripe typically schedules your initial payout 7-14 days after the first successful payment. Your first payout might take longer, depending on your industry risk level and country of operation. Subsequent payouts are processed according to your account's payout schedule.
+
+See Stripe’s Receive Payouts documentation for more information.
+
+Will my customers receive an additional email or invoice from Stripe?
+
+Payment and refund receipts will be automatically sent to the customer if you have the Enable receipt email setting enabled.
+
+You can also manually send receipts directly from the Stripe Dashboard. See Stripe’s Receipts and paid invoices documentation for more information.
+
+How are transaction attempts submitted to Stripe with Stripe OCS?
+
+For information on how transaction attempts are submitted to Stripe, see How It Works.
+
+REFUNDS
+
+How soon after a transaction can I perform a refund?
+
+Refunds can be issued from the BigCommerce control panel once the transaction has settled. Settlement time is determined by your account's payout schedule.
+
+After you initiate a refund, Stripe submits refund requests to your customer’s bank or card issuer. Your customer sees the refund as a credit approximately 5-10 business days later, depending upon the bank.
+
+Is there an amount of time after which I cannot perform a refund?
+
+No. However, refunds processed long after the charge may not always be successful, as the payment source could have expired.
+
+ADDITIONAL FEATURES
+
+Are there any fraud filtering options available?
+
+When notifications are enabled, Stripe supports two fraud solutions:
+
+Radar — Automatically set up when Stripe is enabled on your store. It can be optionally turned off by contacting Stripe. To learn more, visit Stripe Radar.
+Radar for Fraud Teams — Adds customization capabilities, deeper insights, and trend analysis for your business. To learn more, visit Stripe Radar for Fraud Teams.
+
+To take full advantage of Radar’s fraud detection tools, you may wish to make the customer’s phone number required at checkout.
+
+Go to Settings › Account sign up form, then click Address Fields. Click the Action menu (⋯) next to Phone Number, select Edit, and check the box next to Yes this field is required.
+
+ 
+
+Using Stripe Link? If you have enabled Stripe Link, the Link quick payment button at the top of the checkout page will not be displayed when address fields are marked as Required. Link will still be available for shoppers at the payment step.
+
+What are Dynamic payment methods?
+
+Dynamic payment methods allow you to configure payment methods settings from the Stripe Dashboard. Stripe dynamically orders and displays the most relevant eligible payment methods to each customer.
+
+Additional features, such as payment method rules, customize how payment methods are displayed to shoppers. Built-in A/B testing tools allow you to turn on and test new payment methods before rolling them out to customers.
+
+For more information and features, see Stripe’s documentation.
+
+Does Stripe OCS support delayed or manual capture payments?
+
+When the Authorize only transaction type is selected, Stripe OCS supports manual capture of payments, including those made by many alternative payment methods (APMs). If an APM does not support delayed capture, Authorize & Capture will be used instead.
+
+How long are authorize-only transactions valid before they must be captured?
+
+Authorize-only transactions have a 7 day window, after which they are automatically voided. However, you can request extended authorizations of up to 30 days if you meet the following prerequisites:
+
+You are using the latest version of Stripe.
+You are enrolled in Stripe’s Interchange+ (IC+) pricing model.
+
+Contact our support team to request extended authorizations in your store. Note that not all transactions are eligible for the 30 day authorization window. See Stripe’s availability restrictions for more information.
+
+Does Stripe OCS support recurring or subscription payments?
+
+While you can allow customers to save their payment information for faster checkout, Stripe does not support using this saved information for recurring or subscription payments.
+
+However, recurring payments are possible using Stripe OCS if they are provided through a subscription service, such as third-party apps. See Setup for more information and requirements.
+
+Is 3D Secure supported by Stripe OCS?
+
+Yes, our Stripe OCS integration automatically supports 3D Secure (3DS). No additional setup or configuration is needed. 3D Secure will be automatically triggered if required by a regulatory mandate such as Strong Customer Authentication.
+
+Prompting your shoppers with 3DS gives you a liability shift against fraudulent payments that have been verified by the card issuer.
+
+Can I require my shoppers to authenticate through 3D Secure even if it’s not required by the card issuer?
+
+Yes. To configure Stripe so that 3D Secure is applied to your transactions, even when 3DS is not required by a regulatory mandate, log in to the Stripe Dashboard and configure your 3D Secure Radar rules so that 3DS is applied to your transactions in other scenarios.
+
+Does Stripe OCS support 3D Secure for shoppers using Google Pay at checkout?
+
+Yes, 3D Secure authentication is supported for Google Pay transactions.
+
+Is Level 2 and Level 3 data supported?
+
+Yes, our Stripe OCS integration supports Level 2 and Level 3 credit card processing data for B2B transactions. See Stripe's documentation for more information on supported fields.
+
+Does Stripe OCS support multicurrency?
+
+Yes, multicurrency is supported in our Stripe integration. To learn more about setting up multiple currencies, see Using Multiple Currencies.
+
+Does Stripe OCS support cryptocurrency?
+
+No, cryptocurrency is not supported.
+
+Can I connect a single Stripe account to multiple BigCommerce stores or storefront channels?
+
+Yes, Stripe OCS supports Multi-Storefront. You can either connect a single Stripe account and assign them to their respective storefront channels. However, you can only have one Stripe payment configuration per currency.
+
+Note that each Stripe configuration has its own unique Notification URL for setting up notifications in the Stripe Dashboard.
+
+Can I connect multiple Stripe accounts to the same BigCommerce store?
+
+Yes, you can connect a different Stripe merchant account per each currency configured in the control panel. Note that you can create multiple Stripe accounts under a single email address.
+
+For example, if you have a US-based account and a UK-based account, you can connect the US-based account to Stripe OCS under USD and the UK-based account under GBP.
+
+Can I customize the appearance of the Stripe Element to match my brand styling?
+
+If you are using a custom theme, you can configure the Stripe Element using the Elements Appearance API for a seamless checkout experience.
+
+Can I control which shipping options are available to shoppers in the Stripe Link interface?
+
+Yes, for custom checkouts based on Checkout SDK version 1.978.0 or later, you can control which shipping options appear in the Apple Pay, Google Pay, and Stripe Link v2 interfaces. Note that filtering only controls shipping method display and does not remove shipping options from your store.
+
+For more information, see Filter wallet shipping options in our Developer Docs.
+
+PAYMENT DISPUTES
+
+How are payment disputes handled?
+
+For information on how Stripe handles disputes, see Stripe’s documentation.
+
+Are there any fees for chargebacks?
+
+There may be a fee for disputed charges. See Stripe’s Disputes documentation for more information.
+
+TROUBLESHOOTING AND SUPPORT
+
+Why did my shopper receive an error when trying to pay?
+
+For card declines due to card issuers, see Stripe's documentation on Payments declined by card issuers.
+For Radar or fraud blocked charges, see Stripe's documentation on Blocked payments.
+For API-based errors, see Stripe's documentation on API Errors.
+
+Why do orders placed with Stripe have an Incomplete status in BigCommerce?
+
+Orders can have an Incomplete status in the BigCommerce control panel if you have not set up Notifications in your Stripe Dashboard.
+
+Why isn’t my custom statement descriptor appearing on bank statements for some of my customers?
+
+While Stripe uses your custom statement descriptor for transactions on all payment methods, certain card issuers and banks may override it with their own “soft descriptor”. See Stripe’s FAQ to learn more.
+
+How do I contact Stripe's support team?
+
+Stripe offers 24/7 support. You can reach out to Stripe Support via contact form or on X.
+
+Do this in my store
+
+GO TO PAYMENTS IN MY STORE
+
+Additional Resources
+Apple Pay
+Available Payment Gateways
+Google Pay
+Introduction to Alternative Payment Methods
+Manually Capturing Transactions (Authorize Only)
+Stripe Support (Stripe)
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+Connecting with Stripe OCS

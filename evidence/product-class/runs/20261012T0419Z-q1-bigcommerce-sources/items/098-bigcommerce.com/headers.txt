@@ -1,0 +1,27 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Mon, 12 Oct 2026 04:20:48 GMT
+content-type: text/plain; charset=utf-8
+access-control-allow-origin: *
+age: 209728
+cache-control: public, max-age=0, must-revalidate
+content-disposition: inline; filename="llms.txt"
+content-encoding: br
+content-security-policy: frame-ancestors 'self' app.makeswift.com
+document-policy: js-profiling
+etag: W/"549e3dff577436c4d4f25fb5b27b7996"
+last-modified: Fri, 09 Oct 2026 18:05:19 GMT
+referrer-policy: no-referrer-when-downgrade
+server: cloudflare
+strict-transport-security: max-age=2592000; includeSubDomains
+x-matched-path: /llms.txt
+x-vercel-cache: HIT
+x-vercel-id: iad1::kpfg9-1791778848172-f888300effc9
+cf-cache-status: DYNAMIC
+vary: accept-encoding
+set-cookie: __cf_bm=Rdm9tJyMRRLI1o4ClIXuiS_AsupexJZT90tDRWg_iso-1791778848.156668-1.0.1.1-1eaHEOXI4_7p2y4d4HTXBCrM4saUX7QEF_8WvTqXNWU2f0WuszTdCGT8kcXck.Kyvl8is3D98YkO8Ems601CoPovSMqoGaCC3txi0F0zV14pAq2zpVNJki_VgYg7x.sT; HttpOnly; SameSite=None; Secure; Path=/; Domain=bigcommerce.com; Expires=Mon, 12 Oct 2026 04:50:48 GMT
+bc-ray: 1
+cf-ray: a4935068f8b72898-IAD
+alt-svc: h3=":443"; ma=86400
+

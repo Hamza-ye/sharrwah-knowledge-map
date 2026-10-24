@@ -1,0 +1,18 @@
+{
+ "n": 8,
+ "url": "https://shopify.engineering/bfcm-readiness-2025",
+ "dir": "items/008-shopify.engineering",
+ "fetched_at": "2026-10-10T08:30:27Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://shopify.engineering/bfcm-readiness-2025",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 53982,
+ "cited_in": [
+  "evidence/shopify-engineering/finding-aids/20261010-shopify-engineering-sources.tsv:E008"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "6e5ac06f495ead89c36a047ae4197d45a46b99cfb625a8bb9761b2ce98a19117",
+ "raw_ext": "html"
+}

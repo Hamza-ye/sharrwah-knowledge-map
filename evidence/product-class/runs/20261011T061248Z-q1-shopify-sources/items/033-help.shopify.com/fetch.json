@@ -1,0 +1,19 @@
+{
+ "n": 33,
+ "url": "https://help.shopify.com/en/manual/international/duties-and-import-taxes.md",
+ "dir": "items/033-help.shopify.com",
+ "fetched_at": "2026-10-11T06:12:59Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/international/duties-and-import-taxes.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 917,
+ "cited_in": [
+  "SH-S-0537",
+  "SH-S-0538"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "df23b20b7278e1a584eaafb92821ae1e6d4f312dbddb684a7961e86e8c94f498",
+ "raw_ext": "txt"
+}

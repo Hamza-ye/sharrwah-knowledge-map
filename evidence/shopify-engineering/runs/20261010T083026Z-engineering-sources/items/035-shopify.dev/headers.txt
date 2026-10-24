@@ -1,0 +1,36 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 301 
+date: Sat, 10 Oct 2026 08:30:30 GMT
+content-length: 0
+location: /changelog/posts/making-idempotency-mandatory-for-inventory-adjustments-and-refund-mutations
+x-remix-reload-document: true
+strict-transport-security: max-age=15552000; includeSubDomains; preload
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=3C3rl%2FvGmsQT%2BP31RPeL28SV4sheMEv63E3ArpzWerNFxZg%2BQWyHuYip%2FABSb45YiXKOBeMW3I1L82%2BDmP%2BcAfsk1HpRjtT88R37jr%2BwGlY2XyJUt1IjYk0QuiH8"}]}
+x-dc: gcp-us-east1,gcp-us-east1
+x-request-id: 9b65ce5d-c0cf-4af5-b1da-0dfe90d68177-1791621029
+server: cloudflare
+x-content-type-options: nosniff
+alt-svc: h3=":443"; ma=86400
+nel: {"report_to":"cf-nel","success_fraction":0.01,"max_age":604800}
+cf-cache-status: BYPASS
+cf-ray: a484436d694b7afc-IAD
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 08:30:30 GMT
+content-type: text/html; charset=utf-8
+vary: Accept-Encoding
+cache-control: public, max-age=3600
+last-modified: Sat, 10 Oct 2026 08:30:30 GMT
+strict-transport-security: max-age=15552000; includeSubDomains; preload
+content-encoding: gzip
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=NxNzixa%2FZYVpQh3tSiGLrU61mLEfvtU%2BW67c%2FrcVxpQec3Oip4PX85rAt42glizNhu6HQcNB5kKBkft49xdA1iOHfdKSNC979TQ89bOonayXjnirQLDqHjiNqD3Q"}]}
+x-dc: gcp-us-east1,gcp-us-east1
+x-request-id: ba99f9f9-6bf2-4c1a-8401-f7875371a587-1791621030
+server: cloudflare
+x-content-type-options: nosniff
+alt-svc: h3=":443"; ma=86400
+nel: {"report_to":"cf-nel","success_fraction":0.01,"max_age":604800}
+cf-cache-status: MISS
+cf-ray: a484436e4bcd7afc-IAD
+

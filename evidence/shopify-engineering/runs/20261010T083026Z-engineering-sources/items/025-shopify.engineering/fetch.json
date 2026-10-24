@@ -1,0 +1,18 @@
+{
+ "n": 25,
+ "url": "https://shopify.engineering/componentizing-shopify-tax-engine",
+ "dir": "items/025-shopify.engineering",
+ "fetched_at": "2026-10-10T08:30:29Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://shopify.engineering/componentizing-shopify-tax-engine",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 52822,
+ "cited_in": [
+  "evidence/shopify-engineering/finding-aids/20261010-shopify-engineering-sources.tsv:E025"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "2a5e9903d522f5cda9a40fba73f76fa83def385ce2b8bcac77218a90eb5cc839",
+ "raw_ext": "html"
+}

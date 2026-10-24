@@ -1,0 +1,265 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;"># Create your First App
+
+To begin creating and developing subscription apps for the Zid App Market, ensure you have a registered **[partner account](https://partner.zid.sa)**. Simply log in and follow the steps outlined below. Through the Partner Dashboard, you can build apps, test them on demo stores, launch them in the Zid App Market, and unlock new revenue opportunities!
+
+
+![ZAM Merchant Dashboard Frame (3).png](https://api.apidog.com/api/v1/projects/613905/resources/345008/image-preview)
+
+&lt;Tabs&gt;
+  &lt;Tab title="Subscription Apps"&gt;     
+      
+## Create Your Draft App 
+Navigate to [**My Apps**](https://partner.zid.sa/applications) from your Partner Dashboard. Click on **Create Application** button, and select **Private/Public Application**.    
+&lt;Frame&gt;
+![2024-09-09 13.29.46.gif](https://api.apidog.com/api/v1/projects/613905/resources/345000/image-preview)
+      &lt;/Frame&gt;            
+
+Begin by entering the basic details for your app, which will be displayed in Zid App Market to attract merchants!
+          | Item | Description |
+| --- | --- |
+| Application Name | The name of your app in Arabic and English as it will appear to merchants|
+| App Categories | Choose relevant categories (max 3) to help merchants find your app |
+| Application Language | Specify the language(s) your app supports |
+| Maintainer E-mail | Provide an email address for merchant support and inquiries |
+      &lt;Frame&gt;
+ ![image.png](https://api.apidog.com/api/v1/projects/613905/resources/344897/image-preview)
+&lt;/Frame&gt;
+
+:::info[]
+Once you click on Create Application, your app will be saved as a draft. You can return and continue editing it at any time.
+:::
+
+---
+    
+## Configure App General Settings
+After creating your draft app, you'll be redirected to the App Details page, where you can complete the required app configuration.
+&lt;Steps&gt;
+  &lt;Step title="View Your API Keys"&gt;
+To authorize your app for use by merchants, you'll need to access and use the following credentials from the App Keys section:
+      | Item | Description |
+| --- | --- |
+| OAuth 2.0 End-Point | The authorization URL for handling OAuth requests |
+| Client ID | The unique identifier for your app |
+| Client Secret | The secret key used to authenticate your app | 
+&lt;Frame&gt;
+ ![image.png](https://api.apidog.com/api/v1/projects/613905/resources/344906/image-preview)
+      &lt;/Frame&gt;
+  &lt;/Step&gt;
+&lt;Step title="Select App Scopes"&gt;
+App scopes define what features and services your app can access. In this section, choose the scopes required for your app's functionality. Be sure to provide clear justifications for each scope to help the review team approve your selections.
+&lt;Frame&gt;    
+![image.png](https://api.apidog.com/api/v1/projects/613905/resources/345001/image-preview)
+      &lt;/Frame&gt;
+  &lt;/Step&gt;
+&lt;Step title="Embed Your App"&gt;
+Embedding your app allows merchants to seamlessly interact with it directly within merchant dashboard, enhancing the user experience by minimizing the need to navigate to external pages.
+:::info[]
+Before enabling the embed feature, ensure that you have selected the **embedded apps** in the App Scopes section.
+:::
+    &lt;Frame&gt;    
+![image.png](https://api.apidog.com/api/v1/projects/613905/resources/345002/image-preview)
+      &lt;/Frame&gt;
+  &lt;/Step&gt;        
+    &lt;/Steps&gt; 
+    
+---
+
+## Fill App Details
+&lt;Steps&gt;
+  &lt;Step title="Add App Links"&gt;
+            Provide the necessary URLs to enable Zid merchants to access your application seamlessly. The following URLs are essential:
+      | Item | Description |
+| --- | --- |
+| Application URL | The main URL where your app is hosted and accessed by merchants |
+| Redirection URL | The URL merchants are redirected to after successfully installing your app. For embedded apps, this URL should handle the OAuth flow before redirecting the merchant to the embedded app inside Zid Merchant Dashboard. |
+| Callback URL | The URL used for communication between your app and Zid for OAuth integrations | 
+&lt;Frame&gt;
+![image.png](https://api.apidog.com/api/v1/projects/613905/resources/345020/image-preview)
+      
+      
+:::info[Note for Embedded Apps]
+If your app is embedded, use the Redirection URL to complete the OAuth flow after installation. Once the installation and authorization flow is complete, redirect the merchant to the embedded app inside Zid Merchant Dashboard. For the embedded app redirect URL format and Hermes behavior, see [Embedded Apps](https://docs.zid.sa/embedded-apps-2168216m0)
+:::
+
+      &lt;/Frame&gt;
+  &lt;/Step&gt;
+&lt;Step title="Fill in App Description"&gt;
+        Add a clear and concise description of your app that highlights its key features, functionalities, and benefits to merchants. This will help merchants understand the value your app brings to their store.
+    &lt;Frame&gt;    
+![image.png](https://api.apidog.com/api/v1/projects/613905/resources/345023/image-preview)
+      &lt;/Frame&gt;
+  &lt;/Step&gt;
+&lt;Step title="Define App Developer"&gt;
+        Provide information about the app developer or the development company. This allows merchants to know who is behind the app and how they can reach out for support.
+    &lt;Frame&gt;    
+![image.png](https://api.apidog.com/api/v1/projects/613905/resources/345025/image-preview)
+      &lt;/Frame&gt;
+  &lt;/Step&gt;
+&lt;Step title="Add Media for Your app"&gt;
+
+**Application Video:** Showcase your app through a video that demonstrates how it works and the value it provides.
+
+:::info[Supported format]
+Embedded YouTube video URL (e.g. https://www.youtube.com/embed/######)
+:::
+    &lt;Frame&gt;    
+![image.png](https://api.apidog.com/api/v1/projects/613905/resources/345026/image-preview)
+    &lt;/Frame&gt;
+**Application Pictures:** Add images that visually represent your app, its features, or interface.
+    :::info[]
+You can add different images for both Arabic and English language settings. If no English-specific images are provided, the Arabic images will be used by default.
+:::
+    &lt;Frame&gt;    
+![image.png](https://api.apidog.com/api/v1/projects/613905/resources/345028/image-preview) 
+    &lt;/Frame&gt;
+**Application Icon:** Upload a distinctive icon that will represent your app in Zid App Market and Merchant Dashboard. 
+    &lt;Frame&gt;    
+![image.png](https://api.apidog.com/api/v1/projects/613905/resources/345029/image-preview)
+    &lt;/Frame&gt;
+  &lt;/Step&gt;
+&lt;Step title="Install on Development Stores"&gt;
+        Set up your app on development stores after creating them, to test its functionality and ensure everything works as intended before making it publicly available.
+    &lt;Frame&gt;    
+![image.png](https://api.apidog.com/api/v1/projects/613905/resources/345031/image-preview) 
+    &lt;/Frame&gt;
+  &lt;/Step&gt;       
+    &lt;/Steps&gt; 
+    
+---
+
+## Manage App Webhooks
+
+Subscribe to the available webhooks designed to provide your with real-time update about app subscriptions. Add your target Webhook URL in where you will be receiving the events you choose to listen to.
+
+:::highlight purple 🔗
+Learn more about webhook events and their conditions [here](https://apidog.com/apidoc/project-613905/doc-604945)
+:::
+    &lt;Frame&gt;    
+![2024-09-10 14.27.48.gif](https://api.apidog.com/api/v1/projects/613905/resources/345032/image-preview)
+    &lt;/Frame&gt;
+    
+---
+
+## Add Plans and Prices
+
+The final step before submitting your app for review is to define pricing plans that merchants can choose and subscribe to.
+
+&lt;Frame&gt;
+![CleanShot 2025-02-15 at 16.13.39@2x.png](https://api.apidog.com/api/v1/projects/613905/resources/350406/image-preview)
+&lt;/Frame&gt;
+
+
+&lt;Steps&gt;
+  &lt;Step title="Select Subscription Model"&gt;
+Choose the appropriate subscription model for your app based on how you want to charge merchants.
+-       **Recurring:** Merchants are charged a fixed amount at regular intervals (e.g., monthly or yearly) for continuous access to the app’s features.
+-       **Usage-Based:** Merchants are billed based on their actual consumption of a specific resource (e.g., per order, message, or API request), with costs varying according to usage.
+
+
+    &lt;/Step&gt;
+  &lt;Step title="Add App Plans"&gt;
+To publish your app, you must create at least one pricing plan, with a maximum of four.
+      &lt;Accordion title="🔁 Recurring Plans" defaultClose&gt;
+    
+    &lt;Frame caption="Adding Recurring Plan"&gt;
+![App Recurring Plan.png](https://api.apidog.com/api/v1/projects/613905/resources/350403/image-preview)
+      &lt;/Frame&gt;
+      
+| Field | Description |
+| --- | --- |
+| **Name** | A clear and relevant name that highlights the plan’s features or pricing. This name will be visible to merchants. |
+| **Duration** | The length of the plan’s subscription period, defining when the merchant's access starts and ends. |
+| **Trial Period** | Optionally, offer number of days merchants can use the app for free before committing to a subscription. |
+| **Description** | A summary of what the plan offers, including any specific conditions or limitations. |
+| **Features** | List up to five key features that highlight the value of the plan.|
+| **Price** | The fixed base price for the plan. |
+| **One-time Fee** | Optionally, apply an additional fee merchants pay only once, such as an installation or setup fee. |
+| **Offer** | Optionally, apply a discount to attract new merchants by selecting an offer type and specifying the discount rate. |
+
+&lt;/Accordion&gt;
+
+&lt;Accordion title="📶 Usage-Based Plans" defaultClose&gt;
+    
+
+    &lt;Frame caption="Adding Usage-Based Plan"&gt;
+![App Usage-Based Plan](https://api.apidog.com/api/v1/projects/613905/resources/350404/image-preview)      
+    &lt;/Frame&gt;
+      
+| Field | Description |
+| --- | --- |
+| **Name** | A clear and relevant name that highlights the plan’s features or pricing. This name will be visible to merchants. |
+| **Description** | A brief overview of the plan, including what it offers, the billing cycle, and any constraints. |
+| **Features** | List up to five key features that highlight the value of the plan.|
+| **Usage Type** | The unit of measurement for usage-based billing. Merchants will be charged based on their consumption.|
+| **Initial Cost** | A one-time fee merchants must pay to activate their subscription before incurring usage-based charges. |
+&lt;/Accordion&gt;
+  &lt;/Step&gt;
+&lt;/Steps&gt;
+
+&lt;h3 style="color:#5D4EC3;"&gt;Manage Private Plans&lt;/h3&gt;
+
+In this section, you can offer merchants the option to request custom plans if the available public plans don’t meet their needs.
+
+**Enable Private Plans**
+
+Activate this option to allow merchants to request tailored pricing plans directly from your app’s page in the merchant dashboard.
+
+&lt;Frame caption="Partner Settings"&gt;
+![CleanShot 2025-02-15 at 16.23.22@2x.png](https://api.apidog.com/api/v1/projects/613905/resources/350410/image-preview)
+      &lt;/Frame&gt;
+      
+&lt;Frame caption="Merchant View"&gt;
+![CleanShot 2025-02-15 at 16.30.55@2x.png](https://api.apidog.com/api/v1/projects/613905/resources/350413/image-preview)
+&lt;/Frame&gt;
+
+
+**View Merchant Requests**
+
+Receive notifications for new requests, review merchant requirements, send customized pricing offers, and track their subscription status.
+
+
+&lt;Frame caption="Private Plans Management"&gt;
+![CleanShot 2025-02-15 at 16.38.51@2x.png](https://api.apidog.com/api/v1/projects/613905/resources/350415/image-preview)
+&lt;/Frame&gt;
+
+
+    
+**Create Plan for a Specific Store**
+
+Click on "Add Private Plan" to send a pricing offer to a specific store. Define usage limits, pricing details, and any special terms before activating the plan.    
+    
+&lt;Frame caption="Adding Private Plan for Store"&gt;
+![CleanShot 2025-02-15 at 16.40.42@2x.png](https://api.apidog.com/api/v1/projects/613905/resources/350414/image-preview)
+&lt;/Frame&gt;
+
+---
+## Request App Publish
+
+Once all required details are filled in, you can submit your app for Zid's review and testing. Our team will assess your app’s functionality, usability, and overall readiness before approval.
+
+**To ensure a smooth review process, make sure your app is fully prepared:**
+
+✅ Signed a partnership agreement.
+✅ Tested on a development store to confirm all features work as expected.
+✅ App platform test accounts and login credentials are ready.
+✅ QA test cases prepared to assist with validation.
+✅ Merchant activation steps, setup requirements, and FAQs outlined.
+
+Once submitted, you’ll receive a notification regarding your app’s review status and estimated publish date. Ensuring your app is well-prepared will speed up approval and minimize iterations. 🚀
+
+
+
+
+
+
+
+
+
+    &lt;/Tab&gt;
+  &lt;Tab title="Shipping Apps"&gt;
+    ✌️ Here's content that's only inside the second Tab.
+  &lt;/Tab&gt;
+&lt;/Tabs&gt;
+
+
+</pre></body></html>

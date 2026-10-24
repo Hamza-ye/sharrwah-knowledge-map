@@ -1,0 +1,19 @@
+{
+ "n": 68,
+ "url": "https://woocommerce.com/document/woopayments/our-policies/know-your-customer/",
+ "dir": "items/068-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:05Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/woopayments/our-policies/know-your-customer/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 54061,
+ "cited_in": [
+  "WC-S-0521",
+  "WC-S-0522"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "ce64f250840607a7e2ec8be99ecdbbc2d152416b6ea050df089fe62f253a5618",
+ "raw_ext": "html"
+}

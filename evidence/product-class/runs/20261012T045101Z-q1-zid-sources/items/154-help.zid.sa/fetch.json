@@ -1,0 +1,20 @@
+{
+ "n": 154,
+ "url": "https://help.zid.sa/shipping-adress/",
+ "dir": "items/154-help.zid.sa",
+ "fetched_at": "2026-10-12T04:53:26Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/shipping-adress/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 26870,
+ "cited_in": [
+  "ZD-S-1021",
+  "ZD-S-1022",
+  "ZD-S-1024"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "07cf6227aa83018680fcc65ad4860e8fb540be8a91309a71cf5ce7e80bb2608c",
+ "raw_ext": "html"
+}

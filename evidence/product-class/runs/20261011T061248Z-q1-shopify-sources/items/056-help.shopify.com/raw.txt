@@ -1,0 +1,33 @@
+# Shop Pay Installments
+
+<aside class="note"><h4>Note</h4><p>Shop Pay Installments is available to eligible stores in the United States, Canada, and the United Kingdom.</p>
+</aside>
+
+
+Shop Pay Installments lets customers pay for certain orders in installments payments, which offers your customers more flexible payment options and can improve conversion rates and average order value.
+
+Shop Pay Installments is available only to stores that meet [Shop Pay Installments eligibility requirements](/manual/payments/shop-pay-installments/eligibility), have both Shopify Payments and Shop Pay activated, and have a business entity in one of the following countries:
+
+* United States, with USD as the selling currency
+* Canada, with CAD as the selling currency
+* United Kingdom, with GBP as the selling currency
+
+
+[Shop Pay Installments](https://www.shopify.com/shop-pay-installments) offers [eligible customers](/manual/payments/shop-pay-installments/customer-experience) the option to pay for their order in installments at checkout. Shop Pay Installments is available to eligible online stores in Canada, the United States, and the United Kingdom, and for retail locations in the United States. Orders between the following amounts, depending on your store’s location, are eligible for installments payments:
+
+* $35 to $30,000 USD in the United States, including discounts, shipping, and taxes
+* $35 to $30,000 CAD in Canada, including discounts, shipping, and taxes
+* £50 to £30,000 GBP in the United Kingdom, including discounts, shipping, and taxes
+
+Learn more about [available installment payment options for Shop Pay Installments customers](/manual/payments/shop-pay-installments/customer-experience#payment-options).
+
+### In this section
+
+- [Shop Pay Installments eligibility requirements](/en/manual/payments/shop-pay-installments/eligibility)
+- [Activating Shop Pay Installments](/en/manual/payments/shop-pay-installments/activating-shop-pay-installments)
+- [Shop Pay Installments customer experience](/en/manual/payments/shop-pay-installments/customer-experience)
+- [Getting paid for orders placed using Shop Pay Installments](/en/manual/payments/shop-pay-installments/getting-paid)
+- [Shop Pay Installments marketing toolkit](/en/manual/payments/shop-pay-installments/marketing-toolkit)
+- [Shop Pay Installments cart page banner](/en/manual/payments/shop-pay-installments/cart-banner)
+- [Shop Pay Installments product page banner](/en/manual/payments/shop-pay-installments/product-banner)
+- [Shop Pay Installments FAQ](/en/manual/payments/shop-pay-installments/faq)

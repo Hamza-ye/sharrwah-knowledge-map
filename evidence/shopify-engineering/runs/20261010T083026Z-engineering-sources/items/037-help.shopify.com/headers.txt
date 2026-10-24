@@ -1,0 +1,18 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sat, 10 Oct 2026 08:30:30 GMT
+content-type: text/html; charset=utf-8
+vary: Accept, Accept-Encoding
+set-cookie: _merchant_essential=:AaEk72FiAAEAoM1giBM-W5KU0jN0a-JWJ1e3ulfnk0gzNRCOavDUTEovZsM0EcERVH3W8Cgy94KZiCunZFqKmCMw7TegehTY3uXqKuuYz-YNCKVAljINaf7DxxAju2DLsshJSq4RqT2SacdGaz-4lW0-ebIFQf20B7B0NCyaHQ_bTQkaQLiITyqAU6alMsJqo4fG91vUrrK7WLmZjs07Ielth26nsoi9z7wFIEQXw8gX3dOcENR_8_oOyoQc7aSDWpVeg2uMpOiJb2o:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax; Domain=.shopify.com
+set-cookie: _merchant_analytics=:AaEk72FiAAEAmrIeQYSmGE4EREBXD183kNKGwvca6OagqJwXlorM3fmosrFEAVraDcWaPD65AoZEEL473afKGTNM9vbnZLdFMGec3zWzCTbf1ekrifPyvrgdzA:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax; Domain=.shopify.com
+content-encoding: br
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-dc: gcp-us-central1,gcp-us-central1
+x-request-id: 01a124ef-60ad-7a35-976b-fc4ba41ac04b-1791621030
+server: envoy
+x-shopify-gclb-trace-timing: 1791621030.061
+via: 1.1 google
+nel: {"max_age":0}
+alt-svc: h3=":443"; ma=2592000
+

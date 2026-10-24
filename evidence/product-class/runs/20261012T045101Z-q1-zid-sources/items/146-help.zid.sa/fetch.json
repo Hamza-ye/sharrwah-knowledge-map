@@ -1,0 +1,19 @@
+{
+ "n": 146,
+ "url": "https://help.zid.sa/payment-links/",
+ "dir": "items/146-help.zid.sa",
+ "fetched_at": "2026-10-12T04:53:18Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/payment-links/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 25230,
+ "cited_in": [
+  "ZD-S-0586",
+  "ZD-S-0587"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "901a956721c46f69d4b00411c473b93debd2b3bc63cada392165aec8f1dcefbb",
+ "raw_ext": "html"
+}

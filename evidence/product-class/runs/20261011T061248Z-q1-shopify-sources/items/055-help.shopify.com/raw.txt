@@ -1,0 +1,56 @@
+# Shop Cash
+
+Shop Cash is a Shopify-funded rewards program for Shop app customers. Customers earn Shop Cash on eligible purchases and can redeem it toward future orders, including orders from your store. Shop Cash is automatically accepted as a payment method at checkout with no additional cost beyond your usual [Shopify Payments fees](/manual/payments/shopify-payments/payouts/pay-periods-and-fees). You can't opt out of accepting Shop Cash as a payment method.
+
+Shop Cash is available for stores in [Shopify Payments supported countries](/manual/payments/shopify-payments/supported-countries), with the exception of Hong Kong, Mexico, and the United Arab Emirates (UAE). Customers can [earn Shop Cash](/manual/payments/shop-cash#earn) on eligible purchases through Shop Stores, and can [redeem Shop Cash](/manual/payments/shop-cash#redeem) on eligible purchases from Shop Stores that accept Shop Cash.
+
+Your customers can learn more about Shop Cash by visiting the [Shop Help Center](https://help.shop.app/en/shop/shop-cash).
+
+### How customers earn Shop Cash {#earn}
+
+Customers earn Shop Cash when they make an eligible purchase from your Shop Store, which can encourage them to purchase from you again. Customers can earn Shop Cash when all of the following requirements are met:
+
+* The store that they're making a purchase from is in a [Shopify Payments supported country](/manual/payments/shopify-payments/supported-countries), excluding Hong Kong, Mexico, and the UAE.
+* The customer has a billing address and verified phone number in a [Shopify Payments supported country](/manual/payments/shopify-payments/supported-countries), excluding the UAE.
+* A promotional offer for earning Shop Cash applies to their order.
+* They check out in the Shop app or on the [Shop website](https://shop.app/).
+* They pay with [Shop Pay](/manual/payments/shop-pay) or
+  [Shop Pay Installments](/manual/payments/shop-pay-installments).
+
+Customers don't earn Shop Cash on purchases made through your online store. Shop Cash is earned only on the part of the order paid with Shop Pay or Shop Pay Installments, and amounts covered by gift cards, rebates, or other discounts don't earn Shop Cash.
+
+To learn more about earning Shop Cash, your customers can refer to [_Earn Shop Cash_](https://help.shop.app/en/shop/shop-cash/earn-shop-cash) in the Shop Help Center.
+
+### How customers redeem Shop Cash {#redeem}
+
+When customers redeem Shop Cash, it's applied as a payment toward their order from your store, and you're [paid for the order](/manual/payments/shop-cash#get-paid) the same way as a standard Shop Pay order. Customers can redeem Shop Cash when they check out in the Shop app or on the [Shop website](https://shop.app/), or when they're redirected from Shop to your online store checkout and pay with Shop Pay or Shop Pay Installments.
+
+For the full checkout requirements, supported order types, and reasons Shop Cash might not appear, refer to [Shop Cash at checkout](/manual/payments/shop-cash/checkout-experience). Customers can learn more about redeeming Shop Cash by referring to [_Redeeming Shop Cash_](https://help.shop.app/en/shop/shop-cash/redeeming-shop-cash) in the Shop Help Center.
+
+### Getting paid with Shop Cash {#get-paid}
+
+When a customer uses Shop Cash toward an order, their Shop Cash is applied first, and any remaining balance is paid for with Shop Pay. You get paid for orders made using Shop Cash the same way that you're paid for [Shop Pay](/manual/payments/getting-paid) orders. When you [view a payout](/manual/payments/shopify-payments/payouts/view-details) that includes Shop Cash, the payment type is displayed on the statement as **Shop Cash credit**. Shopify funds Shop Cash, and there's no additional cost to you to accept it beyond the [Shopify Payments payout fees](/manual/payments/shopify-payments/payouts/pay-periods-and-fees) that are deducted from your payout.
+
+If your store's currency is different from the currency of a customer's Shop Cash balance and the customer redeems Shop Cash on their order, then the Shop Cash value is automatically converted to your store's currency at the current exchange rate. You receive payment in your local currency.
+
+You can also view Shop Cash as a payment method in your Shopify analytics, as part of your [finance reports](/manual/reports-and-analytics/shopify-reports/report-types/default-reports/finances-report). For payout timing, grouped Shop Cash payout transactions, transaction types, and reconciliation, refer to [Reconciling Shop Cash payouts](/manual/payments/shop-cash/payouts-and-reconciliation).
+
+<aside class="note"><h4>Note</h4><p>Some third-party integrations, such as enterprise resource planning systems (ERPs), order management systems, fulfillment systems, or apps, might not recognize Shop Cash as a payment method. If your store uses an integration that doesn&#39;t recognize Shop Cash, then you can map <code>shop_cash</code> as a new payment method. Contact the provider of your third-party app or system for help.</p>
+</aside>
+
+### Refunding an order paid for with Shop Cash {#refunds}
+
+When you refund an order that was paid with Shop Cash, the refund is applied to the customer's Shop Pay payment method first, and any remaining amount is credited back to their Shop Cash balance. For a partial refund, you can choose how much is returned to each payment method. Customers can check their Shop Cash balance in the Shop app.
+
+For full and partial refunds, returns, exchanges, store credit, and refunds on orders with Shop offers, refer to [Refunds, returns, and exchanges with Shop Cash](/manual/payments/shop-cash/refunds-returns-exchanges). To learn how to process a refund, refer to [refunding an order made with Shop Pay](/manual/payments/shopify-payments/payouts/refunds).
+
+### In this section
+
+- [Shop Cash at checkout](/en/manual/payments/shop-cash/checkout-experience)
+- [Shop Cash order data and third-party integrations](/en/manual/payments/shop-cash/order-data-and-integrations)
+- [Authorizations, captures, and pre-orders with Shop Cash](/en/manual/payments/shop-cash/authorizations-captures-preorders)
+- [Reconciling Shop Cash payouts](/en/manual/payments/shop-cash/payouts-and-reconciliation)
+- [Refunds, returns, and exchanges with Shop Cash](/en/manual/payments/shop-cash/refunds-returns-exchanges)
+- [Fees, Shop Campaigns, and Shop Cash](/en/manual/payments/shop-cash/fees-and-campaigns)
+- [Prepare your systems for Shop Cash](/en/manual/payments/shop-cash/testing-and-launch-readiness)
+- [Shop Cash FAQ for merchants](/en/manual/payments/shop-cash/faq)

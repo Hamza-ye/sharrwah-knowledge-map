@@ -1,0 +1,15 @@
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
+const { chromium } = require('/opt/node22/lib/node_modules/playwright');
+const url = process.argv[2];
+const b = await chromium.launch();
+const ctx = await b.newContext({ userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36', extraHTTPHeaders: { 'Accept-Language': 'en,ar;q=0.8' } });
+const p = await ctx.newPage();
+p.on('console', m => { if (m.type() === 'error' || m.type() === 'warning') console.log('CONSOLE', m.type(), m.text().slice(0, 300)); });
+p.on('pageerror', e => console.log('PAGEERROR', String(e).slice(0, 400)));
+p.on('requestfailed', r => console.log('REQFAILED', r.url().slice(0, 150), r.failure()?.errorText));
+p.on('response', r => { if (r.status() >= 400) console.log('HTTP', r.status(), r.url().slice(0, 150)); });
+await p.goto(url, { waitUntil: 'domcontentloaded', timeout: 45000 });
+await p.waitForLoadState('networkidle', { timeout: 12000 }).catch(() => {});
+console.log('TEXT', (await p.evaluate(() => document.body.innerText)).slice(0, 200));
+await b.close();

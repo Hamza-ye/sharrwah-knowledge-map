@@ -1,0 +1,23 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Mon, 12 Oct 2026 10:50:17 GMT
+content-type: text/markdown; charset=utf-8
+cache-control: max-age=900, must-revalidate
+etag: HaZL2a6hrTtMPc94IT8lKOQWK7CKc5yMhN1FJ6vI0YQ-markdown
+vary: Accept, Accept-Encoding
+x-remix-response: yes
+set-cookie: _merchant_essential=:AaEvvBOaAAEANdfkuTs9gxplho3s2WNspyRBPSuwR5Y8Q0BGrGz-On1Li3FcxE1OEkHMOMIbPlRy2GJ9YiANu5Y1Ry8jzBVLkMuGX9AebrL2GEsvphqR3vv9s8AYKhCNtsTkHdnKSU-WCVBZ9SX4106tDd1rsmGifDPJsvnxzDf0CQtghQ1r_8AulzvElSi7JA4lTKxvrb0bcrCHv3DhCvD31H4ebGK2TgXHLbq-V74GgziV_a3u9JlR7Xk:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax; Domain=.shopify.com
+set-cookie: _merchant_analytics=:AaEvvBOcAAEAuisF1mw5cqbmc2H6UeGTVAOKwMr1lwoUGPORBf4u9jtO9intRMdzlzwy4jVRwF9n79ilpcvQk7TcopYg-TFOEh1oUUdcmUlkX3zCIYtOeKJzQw:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax; Domain=.shopify.com
+content-encoding: br
+strict-transport-security: max-age=15552000; includeSubDomains; preload
+x-content-type-options: nosniff
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=O%2B19pHGcjy5dARjP3fZOTg1FlDS3GU9k2xgfJvhxtZTJyJOnkN%2FY5cwNniaFy%2FlpRP3yfbzecO95kC8IoGZU5%2Fus6xwQVAAGtyTGSwFpoR2HaYWEKatUE4I4LnkHXoLOGhE%3D"}]}
+x-dc: gcp-us-east1,gcp-us-central1
+x-request-id: 80463d97-3adb-4571-bb52-04f948c3174a-1791802217
+server: cloudflare
+alt-svc: h3=":443"; ma=86400
+nel: {"report_to":"cf-nel","success_fraction":0.01,"max_age":604800}
+cf-cache-status: BYPASS
+cf-ray: a4958af1fcc83940-IAD
+

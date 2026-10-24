@@ -1,0 +1,326 @@
+___
+Skip to navigation
+Skip to content
+USD
+Change site currency USD selected
+Develop on Woo
+Hire an expert
+Get support
+Sell
+Click to show 12 more items
+Extensions
+Click to show 18 more items
+Resources
+Click to show 23 more items
+Enterprise ecommerce
+Log in
+Get started
+Documentation
+WooCommerce
+Expand
+Products
+Expand
+Extensions
+Expand
+Pre-Sales Support
+Stripe
+WooCommerce Square
+PayPal Braintree
+AutomateWoo
+Expand
+Product CSV Import Suite
+Order/Customer CSV Export
+Facebook for WooCommerce
+WooCommerce Subscriptions
+Expand
+WooCommerce Memberships
+Expand
+WooCommerce Bookings
+Expand
+Product Bundles
+Expand
+Product Recommendations
+Expand
+Composite Products
+Expand
+Smart Coupons
+Cashier for WooCommerce
+Affiliate For WooCommerce
+Mix and Match Products
+Google Product Feed
+Groups WooCommerce
+Gift Cards
+API Manager
+Table Rate Shipping
+Advanced Shipping Packages
+Name Your Price
+Order Delivery
+WooCommerce Zapier Integration
+Expand
+Klarna
+Expand
+Product Vendors
+PDF Invoice
+Pre-orders
+Force Sells
+Google for WooCommerce
+Expand
+Import Export Suite for WooCommerce
+Bulk Updater for WooCommerce Subscriptions
+Expand
+Enhancer for WooCommerce Subscriptions
+Expand
+Product Add-ons
+Expand
+Xero
+Expand
+Buy One Get One Free
+WooCommerce Sales Analysis
+Conditional Shipping and Payments
+WooCommerce Shipping & Tax
+Email Customizer Pro
+Back In Stock Notifications
+WooCommerce Smart Refunder
+Saved Addresses For WooCommerce
+Chained Products
+Volume Discount Coupons
+Sensei
+Expand
+WooCommerce Product Search
+Expand
+Photography
+Expand
+Opayo
+Advanced Bulk Edit
+Smart Stock & Inventory Manager
+Flexi BOGO
+Flexi Custom Order Status
+Product Input Fields
+Product Feed Manager
+Payment Gateway Based Fees and Discounts
+Abandoned Cart Pro
+Order Delivery Date
+Currency per product
+Call for Price Pro
+Product Prices by User Role
+Flexi Custom Order Numbers
+Flexi Product Delivery Date
+Flexi Booking and Appointment
+Delivery and Pickup Scheduler
+SensAI
+All-in-one PDF Invoice and Packing Slips Suite
+Expand
+Easy Subscriptions
+Smart Product Designer
+WooCommerce Anti-Fraud
+Shipment Tracking
+Expand
+EU VAT Number
+Themes
+Expand
+WooPayments
+WooPay
+WooCommerce Shipping
+WooCommerce Tax
+Retired Products
+Expand
+Woo Marketplace
+Code Snippets
+Expand
+Documentation / Products / Extensions / WooCommerce Points and Rewards Developer Documentation
+WooCommerce Points and Rewards Developer Documentation
+Actions / Filters Reference
+apply_filters( 'wc_points_rewards_my_account_points_events', 5, get_current_user_id() );
+
+Use this to control the number of points log records that are shown to the user on the My Account page.
+
+apply_filters( 'manage_woocommerce_page_wc_points_rewards_points_log_columns', $columns );
+
+Use this to change the columns that are displayed on the points log list table.
+
+manage_woocommerce_page_wc_points_rewards_manage_points_columns
+
+Use this to change the columns that are displayed on the manage points list table.
+
+apply_filters( 'wc_points_rewards_manage_points_list_table_class_name', 'WC_Points_Rewards_Manage_Points_List_Table' );
+
+Use this to change the class that is loaded for the manage points list table.
+
+apply_filters( 'wc_points_rewards_points_log_list_table_class_name', 'WC_Points_Rewards_Points_Log_List_Table' );
+
+Use this to change the class that is loaded for the points log list table.
+
+apply_filters( 'wc_points_rewards_settings', array(...) );
+
+Use this to add or remove settings from the Points & Rewards settings page.
+
+apply_filters ( 'wc_points_rewards_earn_points_message', $message, $points_earned );
+
+Use this to control the “You will earn X points” message that is displayed on the cart/checkout page.
+
+apply_filters ( 'wc_points_rewards_redeem_points_message', $message, $discount_available );
+
+Use this to control the “Use X points for a $Y discount” message that is displayed on the cart/checkout page.
+
+apply_filters( 'wc_points_rewards_event_description', $event_description, $event_type );
+
+Use this to control what description is shown for the event types listed in the points log.
+
+apply_filters( 'wc_points_rewards_set_points_balance', $points_balance, $user_id, $event_type );
+
+Use this to modify the points balance to set when called from WC_Points_Rewards_Manager::set_points_balance()
+
+apply_filters( 'wc_points_rewards_increase_points', $points, $user_id, $event_type, $order_id, $data ); 
+
+Use this to modify the points increase when called from WC_Points_Rewards_Manager::increase_points()
+
+apply_filters( 'wc_points_rewards_decrease_points', $points, $user_id, $event_type, $order_id, $data ); 
+
+Use this to modify the points decreased when called from WC_Points_Rewards_Manager::decrease_points()
+
+apply_filters( 'wc_points_rewards_user_points_balance', $points_balance, $user_id ); 
+
+Use this to modify the points balance returned for the given user ID.
+
+apply_filters( 'wc_points_rewards_single_product_message', $message );
+
+Use this to modify the message displayed on the single product page.
+
+Integrating a plugin with Points & Rewards
+
+It’s easy to add support for Points & Rewards to your plugin. By doing so, customers can earn points for actions taken within your plugin, which adds value to your plugin and Points & Rewards alike. For example, an email newsletter plugin might allow customers to earn points for subscribing to a newsletter. There are three steps you need to take in order to add support:
+
+Add your own settings to allow the admin to enable or set the number of points a customer will earn for taking an action. Use the wc_points_rewards_action_settings filter to add your settings to the Points & Rewards settings page in the Points Earned for Actions section. The wc_points_rewards_action_settings filter takes an array of standard WooCommerce settings arrays, and returns the same. The minimum fields required to add a setting are ‘title’ and ‘id’, while ‘desc_tip’ is recommended.
+Add a detailed description string for your action’s event type. As part of providing a third party integration, you will create a unique action event slug. This slug should be meaningful, short, and likely to be unique, for instance “mailchimp-newsletter-signup”. You should return a detailed description string for your event type by hooking into the wc_points_rewards_event_description filter which accepts an event description, event type and event object and returns an event description.
+When the user takes the specified action (e.g. signing up to a newsletter), add points to their account by using WC_Points_Rewards_Manager::increase_points( $user_id, $points_to_add, $event_type, $data, $order_id );. $user_id, $points_to_add, and $event_type are required. You should retrieve the value set by the admin for the points to add, and use the current users ID as the user ID. The event type can be a custom string, but it’s recommended to use something specific to your plugin (e.g. ‘mailchimp-newsletter-signup’).
+
+Putting it all together a working snippet may look like this:
+
+Scope of support:
+
+We are unable to provide support for customizations under our Support Policy. If you need to customize a snippet or extend its functionality, we recommend working with a Woo Agency Partner or a WooCommerce developer on Codeable.
+
+
+<?php
+
+// Add the action setting
+add_filter( 'wc_points_rewards_action_settings', 'points_rewards_newsletter_action_settings' );
+
+function points_rewards_newsletter_action_settings( $settings ) {
+  
+	$settings[] = array(
+		'title'    => __( 'Points earned for newsletter signup' ),
+		'desc_tip' => __( 'Enter the amount of points earned when a customer signs up for a newsletter via MailChimp.' ),
+		'id'       => 'wc_points_rewards_mailchimp_newsletter_signup',
+	);
+
+	return $settings;
+}
+
+// add the event descriptions
+add_filter( 'wc_points_rewards_event_description', 'add_points_rewards_newsletter_action_event_description', 10, 3 );
+
+function add_points_rewards_newsletter_action_event_description( $event_description, $event_type, $event ) {
+
+	$points_label = get_option( 'wc_points_rewards_points_label' );
+
+	// set the description if we know the type
+	switch ( $event_type ) {
+		case 'mailchimp-newsletter-signup': $event_description = sprintf( __( '%s earned for newsletter signup' ), $points_label ); break;
+	}
+
+	return $event_description;
+}
+
+// perform the event (of course this depends on your particular plugin/action)
+add_action( 'wp_mailchimp_new_newsletter_signup', 'points_rewards_newsletter_signup_action' );
+
+function points_rewards_newsletter_signup_action( $newsletter_id ) {
+
+	// can't give points to a user who isn't logged in
+	if ( ! is_user_logged_in() )
+		return;
+
+	// get the points configured for this custom action
+	$points = get_option( 'wc_points_rewards_mailchimp_newsletter_signup' );
+
+	if ( ! empty( $points ) ) {
+		// arbitrary data can be passed in with the points change, this will be persisted to the points event log
+		$data = array( 'newsletter_id' => $newsletter_id );
+		  
+		WC_Points_Rewards_Manager::increase_points( get_current_user_id(), $points, 'mailchimp-newsletter-signup', $data );
+	}
+}
+Was this guide helpful for you?
+ON THIS PAGE
+Actions / Filters Reference
+Integrating a plugin with Points & Rewards
+30-day money-back guarantee
+Support teams across the world
+Safe and secure online payments
+Sell
+WooCommerce
+WooCommerce pricing
+Payments
+No-code customization
+Marketing
+Checkout
+Shipping
+Mobile app
+Enterprise ecommerce
+Marketplace
+WooCommerce extensions
+WooCommerce themes
+New
+Essentials
+Collections
+Developed by Woo
+Build
+Woo for developers
+Developer resources
+Become a Woo agency
+Become a Marketplace partner
+Become an affiliate
+Resources
+Blog
+Documentation
+WooCommerce site examples
+Product updates
+Email newsletter
+Support
+Feature requests
+WooCommerce hosting
+Hire an agency
+Participate in customer research
+Accessibility
+Support forums
+Company
+About
+Press
+Download WooCommerce free
+Join the Woo community
+Woo trademark guidelines
+Brand and logo guidelines
+Do not sell or share my personal information
+WooCommerce Support Policy
+Refund Policy
+Contact us
+Follow us on Facebook
+Follow us on X
+Follow us on Instagram
+Follow us on LinkedIn
+USD
+Change site currency USD selected
+Terms of Service
+Privacy Policy
+Privacy Notice for California Users
+
+© WooCommerce, Inc. 2026
+
+AN
+AUTOMATTIC
+JOINT
+Use of your personal data
+We and our partners process your personal data (such as browsing data, IP Addresses, cookie information, and other unique identifiers) based on your consent and/or our legitimate interest to optimize our website, marketing activities, and your user experience.
+Customize
+Accept all

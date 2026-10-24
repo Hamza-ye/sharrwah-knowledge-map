@@ -1,0 +1,18 @@
+{
+ "n": 15,
+ "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/content/page-widgets.md",
+ "dir": "items/015-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:19:30Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/content/page-widgets.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 540,
+ "cited_in": [
+  "BC-S-0218"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "934e43e2e034ea8368df4ff84e3c00758265e50098476c0a75c2d6ae31340605",
+ "raw_ext": "txt"
+}

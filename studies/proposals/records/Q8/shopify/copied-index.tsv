@@ -1,0 +1,2417 @@
+copy_id	concern_id	identifier
+Q8-SH-K0002	SH-C-050	abandonedCheckouts:parent
+Q8-SH-K0003	SH-C-050	abandonedCheckouts:parent
+Q8-SH-K0004	SH-C-009	settings-account:invite
+Q8-SH-K0005	SH-C-009	settings-account:edit
+Q8-SH-K0006	SH-C-020	admin-scan:product:open
+Q8-SH-K0007	SH-C-020	admin-scan:generate
+Q8-SH-K0008	SH-C-020	product:bulk-edit
+Q8-SH-K0009	SH-C-020	product:bulk-import
+Q8-SH-K0010	SH-C-020	products
+Q8-SH-K0011	SH-C-020	product:try-media-gen
+Q8-SH-K0012	SH-C-020	admin-scan:product:open
+Q8-SH-K0013	SH-C-020	product:bulk-edit
+Q8-SH-K0014	SH-C-020	product:bulk-import
+Q8-SH-K0015	SH-C-020	products
+Q8-SH-K0016	SH-C-020	products:imports
+Q8-SH-K0017	SH-C-020	products:create
+Q8-SH-K0018	SH-C-020	products:variants:update:barcodes
+Q8-SH-K0019	SH-C-140	agentic:legacy-redirect
+Q8-SH-K0020	SH-C-140	agentic:parent
+Q8-SH-K0021	SH-C-140	agentic:list
+Q8-SH-K0022	SH-C-140	agentic:knowledge-base
+Q8-SH-K0023	SH-C-145	analytics
+Q8-SH-K0024	SH-C-145	analytics:overview:eligibility
+Q8-SH-K0025	SH-C-145	analytics:live
+Q8-SH-K0026	SH-C-145	analytics:reports:eligibility
+Q8-SH-K0027	SH-C-145	analytics:reports:promise_summary
+Q8-SH-K0028	SH-C-156	apps:embedded_parent
+Q8-SH-K0029	SH-C-156	app:grant
+Q8-SH-K0030	SH-C-156	apps:permissions_error
+Q8-SH-K0031	SH-C-156	apps:request_grant
+Q8-SH-K0032	SH-C-156	apps:list
+Q8-SH-K0033	SH-C-156	apps:extension_details
+Q8-SH-K0034	SH-C-088	balance:inactive
+Q8-SH-K0035	SH-C-088	balance:pending_termination
+Q8-SH-K0036	SH-C-088	shopify-balance
+Q8-SH-K0037	SH-C-088	balance:inactive
+Q8-SH-K0038	SH-C-088	balance:inactive:transfer
+Q8-SH-K0039	SH-C-088	balance:inactive:transfer-frod
+Q8-SH-K0040	SH-C-088	balance:inactive:redirect-statements
+Q8-SH-K0041	SH-C-088	balance:root
+Q8-SH-K0042	SH-C-088	balance
+Q8-SH-K0043	SH-C-088	balance:main-account
+Q8-SH-K0044	SH-C-088	balance:connected-accounts
+Q8-SH-K0045	SH-C-088	balance:auto-transfers
+Q8-SH-K0046	SH-C-088	balance:deposit-check
+Q8-SH-K0047	SH-C-088	balance:add-cash
+Q8-SH-K0048	SH-C-088	balance:onboard
+Q8-SH-K0049	SH-C-088	shopify-balance:sell
+Q8-SH-K0050	SH-C-088	shopify-balance:sell:rewards
+Q8-SH-K0051	SH-C-088	shopify-balance:ensure-terms-of-service
+Q8-SH-K0052	SH-C-088	balance:profile-assessment:interview
+Q8-SH-K0053	SH-C-015	inactive-account:subscription:pick_period
+Q8-SH-K0054	SH-C-015	subscription:pick_period
+Q8-SH-K0055	SH-C-015	plus_inactive_account
+Q8-SH-K0056	SH-C-015	plus
+Q8-SH-K0057	SH-C-015	inactive-account:reactivate:pick-plan:pos
+Q8-SH-K0058	SH-C-015	plan
+Q8-SH-K0059	SH-C-015	settings:plan:shop_plus_self_renewals
+Q8-SH-K0060	SH-C-015	plus_inactive_account
+Q8-SH-K0061	SH-C-016	billing:invoice-complete-auth:list
+Q8-SH-K0062	SH-C-016	billing:payment-auth-redirect:approval:list
+Q8-SH-K0063	SH-C-016	inactive-account-billing-invoice:list
+Q8-SH-K0064	SH-C-016	inactive-account-billing-invoice:export-credit-note
+Q8-SH-K0065	SH-C-016	inactive-account-billing-history:list
+Q8-SH-K0066	SH-C-016	inactive-account-pay-bills:list
+Q8-SH-K0067	SH-C-016	inactive-account:profile
+Q8-SH-K0068	SH-C-016	inactive-account:profile:billing:profile:delete-payment-method
+Q8-SH-K0069	SH-C-016	billing:list
+Q8-SH-K0070	SH-C-016	issued:invoice:list
+Q8-SH-K0071	SH-C-016	billing:next:charges:list
+Q8-SH-K0072	SH-C-190	blockchain
+Q8-SH-K0073	SH-C-190	blockchain
+Q8-SH-K0074	SH-C-091	capital:access-account
+Q8-SH-K0075	SH-C-091	capital:root
+Q8-SH-K0076	SH-C-092	capital:access-account
+Q8-SH-K0077	SH-C-092	capital:root
+Q8-SH-K0078	SH-C-093	capital:access-account
+Q8-SH-K0079	SH-C-093	capital:root
+Q8-SH-K0080	SH-C-094	capital:access-account
+Q8-SH-K0081	SH-C-094	capital:root
+Q8-SH-K0082	SH-C-095	capital:access-account
+Q8-SH-K0083	SH-C-095	capital:root
+Q8-SH-K0084	SH-C-096	capital:access-account
+Q8-SH-K0085	SH-C-096	capital:root
+Q8-SH-K0086	SH-C-097	capital:access-account
+Q8-SH-K0087	SH-C-097	capital:root
+Q8-SH-K0088	SH-C-089	cards:section
+Q8-SH-K0089	SH-C-089	cards:unlock:update
+Q8-SH-K0090	SH-C-037	catalog:parent
+Q8-SH-K0091	SH-C-037	catalog:parent
+Q8-SH-K0092	SH-C-037	catalog:new
+Q8-SH-K0093	SH-C-047	checkout-settings
+Q8-SH-K0094	SH-C-021	collection:bulk-edit
+Q8-SH-K0095	SH-C-021	collections:root
+Q8-SH-K0096	SH-C-021	collection:bulk-edit
+Q8-SH-K0097	SH-C-021	collections:root
+Q8-SH-K0098	SH-C-051	commerce-protection
+Q8-SH-K0099	SH-C-044	companies:root
+Q8-SH-K0100	SH-C-044	companies:root
+Q8-SH-K0101	SH-C-044	company:create
+Q8-SH-K0102	SH-C-044	companyLocation:details
+Q8-SH-K0103	SH-C-044	companyLocation:create
+Q8-SH-K0104	SH-C-044	companyLocation:storeCreditTransactionHistory
+Q8-SH-K0105	SH-C-027	content:parent
+Q8-SH-K0106	SH-C-027	content:parent
+Q8-SH-K0107	SH-C-027	file:list
+Q8-SH-K0108	SH-C-028	content:parent
+Q8-SH-K0109	SH-C-028	content:parent
+Q8-SH-K0110	SH-C-028	metaobject_entry:new
+Q8-SH-K0111	SH-C-030	content:parent
+Q8-SH-K0112	SH-C-030	content:parent
+Q8-SH-K0113	SH-C-030	comments
+Q8-SH-K0114	SH-C-031	content:parent
+Q8-SH-K0115	SH-C-031	content:parent
+Q8-SH-K0116	SH-C-031	menus:list
+Q8-SH-K0117	SH-C-090	credit:inactive
+Q8-SH-K0118	SH-C-090	credit:list
+Q8-SH-K0119	SH-C-090	credit:inactive:make-payment
+Q8-SH-K0120	SH-C-090	credit:inactive:statements
+Q8-SH-K0121	SH-C-090	credit:repayment-settings:update
+Q8-SH-K0122	SH-C-090	credit:account-setup
+Q8-SH-K0123	SH-C-090	credit:account:index
+Q8-SH-K0124	SH-C-090	credit:account-settings
+Q8-SH-K0125	SH-C-090	credit:card-management
+Q8-SH-K0126	SH-C-139	headless:parent_route
+Q8-SH-K0127	SH-C-139	hydrogen:parent_route
+Q8-SH-K0128	SH-C-041	customerAccountsSettings:parent
+Q8-SH-K0129	SH-C-041	customerAccountsSettings
+Q8-SH-K0130	SH-C-146	customer-events-settings:pixel
+Q8-SH-K0131	SH-C-146	customer-events-settings:pixel:details
+Q8-SH-K0132	SH-C-039	customer:bulk-edit
+Q8-SH-K0133	SH-C-039	customer
+Q8-SH-K0134	SH-C-039	customer:bulk-edit
+Q8-SH-K0135	SH-C-039	customer
+Q8-SH-K0136	SH-C-039	customer:create
+Q8-SH-K0137	SH-C-039	customer-payment-methods:show
+Q8-SH-K0138	SH-C-039	customer:merge
+Q8-SH-K0139	SH-C-127	discounts:root
+Q8-SH-K0140	SH-C-127	discounts:root
+Q8-SH-K0141	SH-C-033	domains:inactive
+Q8-SH-K0142	SH-C-033	domains:inactive
+Q8-SH-K0143	SH-C-033	domains:inactive:transfer:prepare_for_transfer
+Q8-SH-K0144	SH-C-033	domains:root
+Q8-SH-K0145	SH-C-033	domains:buy
+Q8-SH-K0146	SH-C-130	email:create
+Q8-SH-K0147	SH-C-059	finance:risk
+Q8-SH-K0148	SH-C-069	finance:payout-reconciliation-report
+Q8-SH-K0149	SH-C-098	finance:billpay
+Q8-SH-K0150	SH-C-098	finance:billpay:redirect
+Q8-SH-K0152	SH-C-025	gift-card:root
+Q8-SH-K0153	SH-C-025	gift-card:root
+Q8-SH-K0154	SH-C-025	gift-card:create
+Q8-SH-K0155	SH-C-129	growth
+Q8-SH-K0156	SH-C-129	marketing
+Q8-SH-K0157	SH-C-129	growth
+Q8-SH-K0158	SH-C-129	growth:channels
+Q8-SH-K0159	SH-C-129	growth:integrated-campaigns
+Q8-SH-K0160	SH-C-022	product_variant:bulk-edit
+Q8-SH-K0161	SH-C-022	inventoryMovement
+Q8-SH-K0162	SH-C-022	products:inventory
+Q8-SH-K0163	SH-C-022	product_variant:bulk-edit
+Q8-SH-K0164	SH-C-022	inventoryMovement
+Q8-SH-K0165	SH-C-022	products:inventory:history
+Q8-SH-K0166	SH-C-022	products:inventory:counts
+Q8-SH-K0167	SH-C-022	products:inventory:counts:list
+Q8-SH-K0168	SH-C-022	products:inventory:counts:create
+Q8-SH-K0169	SH-C-138	listings:root
+Q8-SH-K0170	SH-C-138	mappings:root
+Q8-SH-K0171	SH-C-138	listings:channel-mapping
+Q8-SH-K0172	SH-C-024	location
+Q8-SH-K0173	SH-C-024	location:bin-details
+Q8-SH-K0174	SH-C-106	market
+Q8-SH-K0175	SH-C-106	market
+Q8-SH-K0176	SH-C-106	option-definition:create
+Q8-SH-K0177	SH-C-012	merchant-audit-log:list
+Q8-SH-K0178	SH-C-012	merchant-audit-log:list
+Q8-SH-K0179	SH-C-150	email-templates:parent
+Q8-SH-K0180	SH-C-150	email-settings
+Q8-SH-K0181	SH-C-150	notification-settings:staff
+Q8-SH-K0182	SH-C-029	online-store:parent
+Q8-SH-K0183	SH-C-029	editor
+Q8-SH-K0184	SH-C-054	product-network-orders
+Q8-SH-K0185	SH-C-054	order:pay_by_creditcard_on_mobile
+Q8-SH-K0186	SH-C-054	orders
+Q8-SH-K0187	SH-C-054	product-network-orders
+Q8-SH-K0188	SH-C-054	order:write-off:create
+Q8-SH-K0189	SH-C-054	order:edit:shipping-address
+Q8-SH-K0190	SH-C-003	settings:organizations:details:stores:create
+Q8-SH-K0191	SH-C-003	settings:organizations:test-drive
+Q8-SH-K0192	SH-C-003	organization-settings:organizations
+Q8-SH-K0193	SH-C-062	payments:settings:index
+Q8-SH-K0194	SH-C-063	payments
+Q8-SH-K0195	SH-C-063	shopify-payments
+Q8-SH-K0196	SH-C-063	payments:settings:shopify-payments-accounts
+Q8-SH-K0197	SH-C-063	payments:settings:setup
+Q8-SH-K0198	SH-C-063	payments:settings:shopify-payments
+Q8-SH-K0199	SH-C-063	payments:settings:worldfirst-setup
+Q8-SH-K0200	SH-C-148	customer-privacy
+Q8-SH-K0201	SH-C-148	customer-privacy-policy-modal
+Q8-SH-K0202	SH-C-148	customer-privacy:consent-banner
+Q8-SH-K0204	SH-C-068	profile-assessment:root
+Q8-SH-K0205	SH-C-142	quick-sale
+Q8-SH-K0206	SH-C-142	quick-sale
+Q8-SH-K0207	SH-C-112	rollouts:root
+Q8-SH-K0208	SH-C-112	rollout:list
+Q8-SH-K0209	SH-C-112	rollout:create
+Q8-SH-K0210	SH-C-112	rollout:warning
+Q8-SH-K0211	SH-C-114	shipping:eligibility
+Q8-SH-K0212	SH-C-114	shipping-calculator
+Q8-SH-K0213	SH-C-116	shippingLabel:parent
+Q8-SH-K0214	SH-C-116	shippingLabel:parent
+Q8-SH-K0215	SH-C-116	shippingLabel:index
+Q8-SH-K0216	SH-C-120	shopify-fulfillment-network
+Q8-SH-K0217	SH-C-120	shopify-fulfillment-network
+Q8-SH-K0218	SH-C-152	sidekick
+Q8-SH-K0219	SH-C-032	languages
+Q8-SH-K0220	SH-C-100	tax-settings
+Q8-SH-K0221	SH-C-100	tax-settings:fee-configurations:create
+Q8-SH-K0222	SH-C-100	tax-settings:shared:switch-tax-product
+Q8-SH-K0223	SH-C-101	tax-settings
+Q8-SH-K0224	SH-C-103	tax-settings
+Q8-SH-K0225	SH-C-103	tax-settings:providers-manage
+Q8-SH-K0226	SH-C-103	tax-settings:shared:switch-tax-product
+Q8-SH-K0227	SH-C-104	tax-filing
+Q8-SH-K0228	SH-C-104	tax-filing:tax-region
+Q8-SH-K0229	SH-C-145	read_analytics_annotations
+Q8-SH-K0230	SH-C-145	read_reports
+Q8-SH-K0231	SH-C-145	read_reports
+Q8-SH-K0232	SH-C-145	read_reports
+Q8-SH-K0233	SH-C-145	read_reports
+Q8-SH-K0234	SH-C-145	read_reports
+Q8-SH-K0235	SH-C-145	write_analytics_annotations
+Q8-SH-K0236	SH-C-145	write_analytics_annotations
+Q8-SH-K0237	SH-C-145	write_analytics_annotations
+Q8-SH-K0238	SH-C-145	write_reports
+Q8-SH-K0643	SH-C-166	write_app_proxy
+Q8-SH-K0644	SH-C-166	write_app_proxy
+Q8-SH-K0645	SH-C-118	read_assigned_fulfillment_orders
+Q8-SH-K0646	SH-C-118	read_assigned_fulfillment_orders
+Q8-SH-K0647	SH-C-118	read_assigned_fulfillment_orders
+Q8-SH-K0648	SH-C-118	read_assigned_fulfillment_orders
+Q8-SH-K0649	SH-C-118	read_assigned_fulfillment_orders
+Q8-SH-K0650	SH-C-118	read_marketplace_fulfillment_orders
+Q8-SH-K0651	SH-C-118	read_marketplace_fulfillment_orders
+Q8-SH-K0652	SH-C-118	read_marketplace_fulfillment_orders
+Q8-SH-K0653	SH-C-118	read_merchant_managed_fulfillment_orders
+Q8-SH-K0654	SH-C-118	read_merchant_managed_fulfillment_orders
+Q8-SH-K0655	SH-C-118	read_third_party_fulfillment_orders
+Q8-SH-K0656	SH-C-118	write_assigned_fulfillment_orders
+Q8-SH-K0657	SH-C-118	write_assigned_fulfillment_orders
+Q8-SH-K0658	SH-C-118	write_assigned_fulfillment_orders
+Q8-SH-K0659	SH-C-118	write_assigned_fulfillment_orders
+Q8-SH-K0660	SH-C-118	write_merchant_managed_fulfillment_orders
+Q8-SH-K0661	SH-C-118	write_merchant_managed_fulfillment_orders
+Q8-SH-K0662	SH-C-118	write_merchant_managed_fulfillment_orders
+Q8-SH-K0663	SH-C-118	write_third_party_fulfillment_orders
+Q8-SH-K0664	SH-C-119	read_assigned_fulfillment_orders
+Q8-SH-K0665	SH-C-119	read_assigned_fulfillment_orders
+Q8-SH-K0666	SH-C-119	read_assigned_fulfillment_orders
+Q8-SH-K0667	SH-C-119	read_assigned_fulfillment_orders
+Q8-SH-K0668	SH-C-119	read_assigned_fulfillment_orders
+Q8-SH-K0669	SH-C-119	read_fulfillments
+Q8-SH-K0670	SH-C-119	read_fulfillments
+Q8-SH-K0671	SH-C-119	read_fulfillments
+Q8-SH-K0672	SH-C-119	read_merchant_managed_fulfillment_orders
+Q8-SH-K0673	SH-C-119	read_merchant_managed_fulfillment_orders
+Q8-SH-K0674	SH-C-119	read_merchant_managed_fulfillment_orders
+Q8-SH-K0675	SH-C-119	read_third_party_fulfillment_orders
+Q8-SH-K0676	SH-C-119	write_assigned_fulfillment_orders
+Q8-SH-K0677	SH-C-119	write_assigned_fulfillment_orders
+Q8-SH-K0678	SH-C-119	write_assigned_fulfillment_orders
+Q8-SH-K0679	SH-C-119	write_assigned_fulfillment_orders
+Q8-SH-K0680	SH-C-119	write_fulfillments
+Q8-SH-K0681	SH-C-119	write_fulfillments
+Q8-SH-K0682	SH-C-119	write_fulfillments
+Q8-SH-K0683	SH-C-119	write_fulfillments
+Q8-SH-K0684	SH-C-119	write_fulfillments
+Q8-SH-K0685	SH-C-119	write_merchant_managed_fulfillment_orders
+Q8-SH-K0686	SH-C-119	write_merchant_managed_fulfillment_orders
+Q8-SH-K0687	SH-C-119	write_merchant_managed_fulfillment_orders
+Q8-SH-K0688	SH-C-119	write_third_party_fulfillment_orders
+Q8-SH-K0689	SH-C-012	read_audit_events
+Q8-SH-K0690	SH-C-146	read_customer_events
+Q8-SH-K0691	SH-C-146	read_customer_events
+Q8-SH-K0692	SH-C-146	read_customer_events
+Q8-SH-K0693	SH-C-146	read_pixels
+Q8-SH-K0694	SH-C-146	read_pixels
+Q8-SH-K0695	SH-C-146	write_pixels
+Q8-SH-K0696	SH-C-146	write_pixels
+Q8-SH-K0697	SH-C-146	write_pixels
+Q8-SH-K0698	SH-C-146	write_pixels
+Q8-SH-K0699	SH-C-146	write_pixels
+Q8-SH-K0700	SH-C-053	read_cart_transforms
+Q8-SH-K0701	SH-C-053	write_cart_transforms
+Q8-SH-K0702	SH-C-053	write_cart_transforms
+Q8-SH-K0703	SH-C-053	write_cart_transforms
+Q8-SH-K0704	SH-C-053	write_cart_transforms
+Q8-SH-K0705	SH-C-052	read_validations
+Q8-SH-K0706	SH-C-052	write_validations
+Q8-SH-K0707	SH-C-087	read_cash_tracking
+Q8-SH-K0708	SH-C-087	read_cash_tracking
+Q8-SH-K0709	SH-C-087	write_cash_tracking
+Q8-SH-K0710	SH-C-135	read_publications
+Q8-SH-K0711	SH-C-135	read_publications
+Q8-SH-K0712	SH-C-135	read_publications
+Q8-SH-K0713	SH-C-135	read_publications
+Q8-SH-K0714	SH-C-135	read_publications
+Q8-SH-K0715	SH-C-135	read_resource_feedbacks
+Q8-SH-K0716	SH-C-135	write_publications
+Q8-SH-K0717	SH-C-135	write_publications
+Q8-SH-K0718	SH-C-135	write_publications
+Q8-SH-K0719	SH-C-135	write_publications
+Q8-SH-K0720	SH-C-135	write_publications
+Q8-SH-K0721	SH-C-135	write_resource_feedbacks
+Q8-SH-K0722	SH-C-048	read_checkout_and_accounts_configurations
+Q8-SH-K0723	SH-C-048	read_checkout_and_accounts_configurations
+Q8-SH-K0724	SH-C-048	read_checkout_and_accounts_configurations
+Q8-SH-K0725	SH-C-048	read_checkout_and_accounts_configurations
+Q8-SH-K0726	SH-C-048	read_checkout_branding_settings
+Q8-SH-K0727	SH-C-048	read_checkout_branding_settings
+Q8-SH-K0728	SH-C-048	write_checkout_and_accounts_configurations
+Q8-SH-K0729	SH-C-046	unauthenticated_write_checkouts
+Q8-SH-K0730	SH-C-044	customer_read_companies
+Q8-SH-K0731	SH-C-044	customer_write_companies
+Q8-SH-K0732	SH-C-044	read_companies
+Q8-SH-K0733	SH-C-044	read_companies
+Q8-SH-K0734	SH-C-044	read_companies
+Q8-SH-K0735	SH-C-044	read_companies
+Q8-SH-K0736	SH-C-044	write_companies
+Q8-SH-K0737	SH-C-039	customer_read_customers
+Q8-SH-K0738	SH-C-039	customer_read_customers
+Q8-SH-K0739	SH-C-039	customer_read_customers
+Q8-SH-K0740	SH-C-039	customer_read_customers
+Q8-SH-K0741	SH-C-039	customer_write_customers
+Q8-SH-K0742	SH-C-039	customer_write_customers
+Q8-SH-K0743	SH-C-039	customer_write_customers
+Q8-SH-K0744	SH-C-039	read_customer_merge
+Q8-SH-K0745	SH-C-039	read_customer_merge
+Q8-SH-K0746	SH-C-039	read_customer_merge
+Q8-SH-K0747	SH-C-039	read_customers
+Q8-SH-K0748	SH-C-039	read_customers
+Q8-SH-K0749	SH-C-039	read_customers
+Q8-SH-K0750	SH-C-039	read_customers
+Q8-SH-K0751	SH-C-039	read_customers
+Q8-SH-K0752	SH-C-039	unauthenticated_read_customers
+Q8-SH-K0753	SH-C-039	unauthenticated_read_customers
+Q8-SH-K0754	SH-C-039	unauthenticated_read_customers
+Q8-SH-K0755	SH-C-039	unauthenticated_write_customers
+Q8-SH-K0756	SH-C-039	write_customer_merge
+Q8-SH-K0757	SH-C-039	write_customers
+Q8-SH-K0758	SH-C-039	write_customers
+Q8-SH-K0759	SH-C-039	write_customers
+Q8-SH-K0762	SH-C-122	read_delivery_customizations
+Q8-SH-K0763	SH-C-122	write_delivery_customizations
+Q8-SH-K0764	SH-C-122	write_delivery_customizations
+Q8-SH-K0765	SH-C-127	read_discounts
+Q8-SH-K0766	SH-C-127	read_discounts
+Q8-SH-K0767	SH-C-127	read_discounts
+Q8-SH-K0768	SH-C-127	read_discounts
+Q8-SH-K0769	SH-C-127	read_discounts
+Q8-SH-K0770	SH-C-127	read_price_rules
+Q8-SH-K0771	SH-C-127	write_discounts
+Q8-SH-K0772	SH-C-127	write_discounts
+Q8-SH-K0773	SH-C-127	write_discounts
+Q8-SH-K0774	SH-C-127	write_discounts
+Q8-SH-K0775	SH-C-127	write_discounts
+Q8-SH-K0776	SH-C-055	customer_read_draft_orders
+Q8-SH-K0777	SH-C-055	customer_read_draft_orders
+Q8-SH-K0778	SH-C-055	read_draft_orders
+Q8-SH-K0779	SH-C-055	read_draft_orders
+Q8-SH-K0780	SH-C-055	read_draft_orders
+Q8-SH-K0781	SH-C-055	read_draft_orders
+Q8-SH-K0782	SH-C-055	write_draft_orders
+Q8-SH-K0783	SH-C-055	write_draft_orders
+Q8-SH-K0784	SH-C-055	write_draft_orders
+Q8-SH-K0785	SH-C-055	write_draft_orders
+Q8-SH-K0786	SH-C-055	write_draft_orders
+Q8-SH-K0787	SH-C-027	read_files
+Q8-SH-K0788	SH-C-027	read_files
+Q8-SH-K0789	SH-C-027	read_files
+Q8-SH-K0790	SH-C-027	read_files
+Q8-SH-K0791	SH-C-027	read_files
+Q8-SH-K0792	SH-C-027	write_files
+Q8-SH-K0793	SH-C-027	write_files
+Q8-SH-K0794	SH-C-027	write_files
+Q8-SH-K0795	SH-C-027	write_files
+Q8-SH-K0796	SH-C-027	write_files
+Q8-SH-K0797	SH-C-123	read_fulfillment_constraint_rules
+Q8-SH-K0798	SH-C-123	write_fulfillment_constraint_rules
+Q8-SH-K0799	SH-C-123	write_fulfillment_constraint_rules
+Q8-SH-K0800	SH-C-025	read_gift_card_transactions
+Q8-SH-K0801	SH-C-025	read_gift_cards
+Q8-SH-K0802	SH-C-025	read_gift_cards
+Q8-SH-K0803	SH-C-025	write_gift_card_transactions
+Q8-SH-K0804	SH-C-025	write_gift_cards
+Q8-SH-K0805	SH-C-022	read_inventory
+Q8-SH-K0806	SH-C-022	read_inventory
+Q8-SH-K0807	SH-C-022	read_inventory
+Q8-SH-K0808	SH-C-022	read_inventory
+Q8-SH-K0809	SH-C-022	read_inventory
+Q8-SH-K0810	SH-C-022	write_inventory
+Q8-SH-K0811	SH-C-022	write_inventory
+Q8-SH-K0812	SH-C-022	write_inventory
+Q8-SH-K0813	SH-C-022	write_inventory
+Q8-SH-K0814	SH-C-022	write_inventory
+Q8-SH-K0815	SH-C-023	read_inventory_purchase_orders
+Q8-SH-K0816	SH-C-023	read_inventory_shipments
+Q8-SH-K0817	SH-C-023	read_inventory_shipments
+Q8-SH-K0818	SH-C-023	read_inventory_shipments
+Q8-SH-K0819	SH-C-023	read_inventory_shipments
+Q8-SH-K0820	SH-C-023	read_inventory_shipments
+Q8-SH-K0821	SH-C-023	read_inventory_shipments_received_items
+Q8-SH-K0822	SH-C-023	read_inventory_transfers
+Q8-SH-K0823	SH-C-023	read_inventory_transfers
+Q8-SH-K0824	SH-C-023	read_inventory_transfers
+Q8-SH-K0825	SH-C-023	read_inventory_transfers
+Q8-SH-K0826	SH-C-023	read_inventory_transfers
+Q8-SH-K0827	SH-C-023	write_inventory_shipments
+Q8-SH-K0828	SH-C-023	write_inventory_shipments
+Q8-SH-K0829	SH-C-023	write_inventory_shipments_received_items
+Q8-SH-K0830	SH-C-023	write_inventory_transfers
+Q8-SH-K0831	SH-C-023	write_inventory_transfers
+Q8-SH-K0832	SH-C-034	read_legal_policies
+Q8-SH-K0833	SH-C-034	write_legal_policies
+Q8-SH-K0834	SH-C-032	read_locales
+Q8-SH-K0835	SH-C-032	read_locales
+Q8-SH-K0836	SH-C-032	read_locales
+Q8-SH-K0837	SH-C-032	read_locales
+Q8-SH-K0838	SH-C-032	read_translations
+Q8-SH-K0839	SH-C-032	read_translations
+Q8-SH-K0840	SH-C-032	write_locales
+Q8-SH-K0841	SH-C-032	write_locales
+Q8-SH-K0842	SH-C-032	write_translations
+Q8-SH-K0843	SH-C-032	write_translations
+Q8-SH-K0844	SH-C-024	read_locations
+Q8-SH-K0845	SH-C-024	read_locations
+Q8-SH-K0846	SH-C-024	read_locations
+Q8-SH-K0847	SH-C-024	read_locations
+Q8-SH-K0848	SH-C-024	read_locations
+Q8-SH-K0849	SH-C-024	write_locations
+Q8-SH-K0850	SH-C-024	write_locations
+Q8-SH-K0851	SH-C-024	write_locations
+Q8-SH-K0852	SH-C-129	read_marketing_events
+Q8-SH-K0853	SH-C-129	write_marketing_events
+Q8-SH-K0854	SH-C-106	customer_read_markets
+Q8-SH-K0855	SH-C-106	read_markets
+Q8-SH-K0856	SH-C-106	read_markets
+Q8-SH-K0857	SH-C-106	read_markets
+Q8-SH-K0858	SH-C-106	read_markets
+Q8-SH-K0859	SH-C-106	read_markets
+Q8-SH-K0860	SH-C-106	read_markets_home
+Q8-SH-K0861	SH-C-106	read_markets_home
+Q8-SH-K0862	SH-C-106	write_markets
+Q8-SH-K0863	SH-C-028	customer_read_metaobjects
+Q8-SH-K0864	SH-C-028	read_metaobject_definitions
+Q8-SH-K0865	SH-C-028	read_metaobject_definitions
+Q8-SH-K0866	SH-C-028	read_metaobject_definitions
+Q8-SH-K0867	SH-C-028	read_metaobjects
+Q8-SH-K0868	SH-C-028	read_metaobjects
+Q8-SH-K0869	SH-C-028	read_metaobjects
+Q8-SH-K0870	SH-C-028	read_metaobjects
+Q8-SH-K0871	SH-C-028	read_metaobjects
+Q8-SH-K0872	SH-C-028	unauthenticated_read_metaobjects
+Q8-SH-K0873	SH-C-028	unauthenticated_read_metaobjects
+Q8-SH-K0874	SH-C-028	write_metaobject_definitions
+Q8-SH-K0875	SH-C-028	write_metaobject_definitions
+Q8-SH-K0876	SH-C-028	write_metaobjects
+Q8-SH-K0877	SH-C-028	write_metaobjects
+Q8-SH-K0878	SH-C-028	write_metaobjects
+Q8-SH-K0879	SH-C-028	write_metaobjects
+Q8-SH-K0880	SH-C-028	write_metaobjects
+Q8-SH-K0881	SH-C-031	read_online_store_navigation
+Q8-SH-K0882	SH-C-031	write_online_store_navigation
+Q8-SH-K0883	SH-C-031	write_online_store_navigation
+Q8-SH-K0884	SH-C-030	read_content
+Q8-SH-K0885	SH-C-030	read_content
+Q8-SH-K0886	SH-C-030	read_online_store_pages
+Q8-SH-K0887	SH-C-030	read_online_store_pages
+Q8-SH-K0888	SH-C-030	unauthenticated_read_content
+Q8-SH-K0889	SH-C-030	write_content
+Q8-SH-K0890	SH-C-056	read_order_edits
+Q8-SH-K0891	SH-C-056	read_order_edits
+Q8-SH-K0892	SH-C-056	read_order_edits
+Q8-SH-K0893	SH-C-056	write_order_edits
+Q8-SH-K0894	SH-C-056	write_order_edits
+Q8-SH-K0895	SH-C-056	write_order_edits
+Q8-SH-K0896	SH-C-056	write_order_edits
+Q8-SH-K0897	SH-C-056	write_order_edits
+Q8-SH-K0898	SH-C-054	customer_read_orders
+Q8-SH-K0899	SH-C-054	customer_read_orders
+Q8-SH-K0900	SH-C-054	customer_read_orders
+Q8-SH-K0901	SH-C-054	customer_read_orders
+Q8-SH-K0902	SH-C-054	read_all_orders
+Q8-SH-K0903	SH-C-054	read_all_orders
+Q8-SH-K0904	SH-C-054	read_all_orders
+Q8-SH-K0905	SH-C-054	read_all_orders
+Q8-SH-K0906	SH-C-054	read_marketplace_orders
+Q8-SH-K0907	SH-C-054	read_marketplace_orders
+Q8-SH-K0908	SH-C-054	read_marketplace_orders
+Q8-SH-K0909	SH-C-054	read_marketplace_orders
+Q8-SH-K0910	SH-C-054	read_marketplace_orders
+Q8-SH-K0911	SH-C-054	write_marketplace_orders
+Q8-SH-K0912	SH-C-054	write_marketplace_orders
+Q8-SH-K0913	SH-C-054	write_marketplace_orders
+Q8-SH-K0914	SH-C-054	write_orders
+Q8-SH-K0915	SH-C-054	write_orders
+Q8-SH-K0916	SH-C-054	write_orders
+Q8-SH-K0917	SH-C-045	read_payment_terms
+Q8-SH-K0918	SH-C-045	read_payment_terms
+Q8-SH-K0919	SH-C-045	read_payment_terms
+Q8-SH-K0920	SH-C-045	read_payment_terms
+Q8-SH-K0921	SH-C-045	read_payment_terms
+Q8-SH-K0922	SH-C-045	write_payment_terms
+Q8-SH-K0923	SH-C-045	write_payment_terms
+Q8-SH-K0924	SH-C-083	read_payment_customizations
+Q8-SH-K0925	SH-C-083	write_payment_customizations
+Q8-SH-K0926	SH-C-083	write_payment_customizations
+Q8-SH-K0927	SH-C-148	read_privacy_settings
+Q8-SH-K0928	SH-C-148	read_privacy_settings
+Q8-SH-K0929	SH-C-148	write_privacy_settings
+Q8-SH-K0930	SH-C-138	read_product_listings
+Q8-SH-K0931	SH-C-138	read_product_listings
+Q8-SH-K0932	SH-C-138	read_product_listings
+Q8-SH-K0933	SH-C-138	read_product_listings
+Q8-SH-K0934	SH-C-138	read_product_listings
+Q8-SH-K0935	SH-C-020	read_products
+Q8-SH-K0936	SH-C-020	read_products
+Q8-SH-K0937	SH-C-020	unauthenticated_read_product_listings
+Q8-SH-K0938	SH-C-020	unauthenticated_read_product_listings
+Q8-SH-K0939	SH-C-020	unauthenticated_read_product_listings
+Q8-SH-K0940	SH-C-020	unauthenticated_read_product_listings
+Q8-SH-K0941	SH-C-020	unauthenticated_read_product_listings
+Q8-SH-K0942	SH-C-020	unauthenticated_read_product_tags
+Q8-SH-K0943	SH-C-186	read_own_subscription_contracts
+Q8-SH-K0944	SH-C-186	read_own_subscription_contracts
+Q8-SH-K0945	SH-C-186	read_own_subscription_contracts
+Q8-SH-K0946	SH-C-186	read_own_subscription_contracts
+Q8-SH-K0947	SH-C-186	read_own_subscription_contracts
+Q8-SH-K0948	SH-C-186	unauthenticated_read_selling_plans
+Q8-SH-K0949	SH-C-186	unauthenticated_read_selling_plans
+Q8-SH-K0950	SH-C-186	write_own_subscription_contracts
+Q8-SH-K0951	SH-C-186	write_own_subscription_contracts
+Q8-SH-K0952	SH-C-186	write_own_subscription_contracts
+Q8-SH-K0953	SH-C-186	write_own_subscription_contracts
+Q8-SH-K0954	SH-C-186	write_own_subscription_contracts
+Q8-SH-K0955	SH-C-186	write_purchase_options
+Q8-SH-K0956	SH-C-058	read_marketplace_returns
+Q8-SH-K0957	SH-C-058	read_marketplace_returns
+Q8-SH-K0958	SH-C-058	read_marketplace_returns
+Q8-SH-K0959	SH-C-058	read_marketplace_returns
+Q8-SH-K0960	SH-C-058	read_returns
+Q8-SH-K0961	SH-C-058	read_returns
+Q8-SH-K0962	SH-C-058	read_returns
+Q8-SH-K0963	SH-C-058	read_returns
+Q8-SH-K0964	SH-C-058	write_marketplace_returns
+Q8-SH-K0965	SH-C-058	write_marketplace_returns
+Q8-SH-K0966	SH-C-058	write_returns
+Q8-SH-K0967	SH-C-058	write_returns
+Q8-SH-K0968	SH-C-058	write_returns
+Q8-SH-K0969	SH-C-112	read_rollouts
+Q8-SH-K0970	SH-C-112	read_rollouts
+Q8-SH-K0971	SH-C-112	read_rollouts
+Q8-SH-K0972	SH-C-112	read_rollouts
+Q8-SH-K0973	SH-C-029	read_script_tags
+Q8-SH-K0974	SH-C-029	read_themes
+Q8-SH-K0975	SH-C-029	read_themes
+Q8-SH-K0976	SH-C-029	read_themes
+Q8-SH-K0977	SH-C-029	read_themes
+Q8-SH-K0978	SH-C-029	write_script_tags
+Q8-SH-K0979	SH-C-029	write_themes
+Q8-SH-K0980	SH-C-029	write_themes
+Q8-SH-K0981	SH-C-029	write_themes
+Q8-SH-K0982	SH-C-029	write_themes
+Q8-SH-K0983	SH-C-029	write_themes
+Q8-SH-K0984	SH-C-063	read_shopify_payments
+Q8-SH-K0985	SH-C-063	read_shopify_payments
+Q8-SH-K0986	SH-C-063	read_shopify_payments
+Q8-SH-K0987	SH-C-063	read_shopify_payments
+Q8-SH-K0988	SH-C-159	read_all_orders
+Q8-SH-K0989	SH-C-159	read_all_orders
+Q8-SH-K0990	SH-C-159	read_all_orders
+Q8-SH-K0991	SH-C-159	read_all_orders
+Q8-SH-K0992	SH-C-159	read_checkout_settings
+Q8-SH-K0993	SH-C-159	read_checkout_settings
+Q8-SH-K0994	SH-C-159	read_customer_payment_methods
+Q8-SH-K0995	SH-C-159	read_customer_payment_methods
+Q8-SH-K0996	SH-C-159	read_customer_payment_methods
+Q8-SH-K0997	SH-C-159	read_customer_payment_methods
+Q8-SH-K0998	SH-C-159	read_customer_payment_methods
+Q8-SH-K0999	SH-C-159	read_delivery_promises
+Q8-SH-K1000	SH-C-159	read_financial_kyc_information
+Q8-SH-K1001	SH-C-159	read_financial_kyc_information
+Q8-SH-K1002	SH-C-159	read_financial_kyc_information
+Q8-SH-K1003	SH-C-159	read_financial_kyc_information
+Q8-SH-K1004	SH-C-159	read_financial_kyc_information
+Q8-SH-K1005	SH-C-159	read_marketplace_fulfillment_orders
+Q8-SH-K1006	SH-C-159	read_marketplace_fulfillment_orders
+Q8-SH-K1007	SH-C-159	read_marketplace_fulfillment_orders
+Q8-SH-K1008	SH-C-159	read_marketplace_fulfillment_orders
+Q8-SH-K1009	SH-C-159	read_marketplace_fulfillment_orders
+Q8-SH-K1010	SH-C-159	read_marketplace_orders
+Q8-SH-K1011	SH-C-159	read_marketplace_orders
+Q8-SH-K1012	SH-C-159	read_marketplace_orders
+Q8-SH-K1013	SH-C-159	read_marketplace_orders
+Q8-SH-K1014	SH-C-159	read_marketplace_returns
+Q8-SH-K1015	SH-C-159	read_marketplace_returns
+Q8-SH-K1016	SH-C-159	read_marketplace_returns
+Q8-SH-K1017	SH-C-159	read_marketplace_returns
+Q8-SH-K1018	SH-C-159	read_merchant_approval_signals
+Q8-SH-K1019	SH-C-159	read_mobile_platform_applications
+Q8-SH-K1020	SH-C-159	read_mobile_platform_applications
+Q8-SH-K1021	SH-C-159	read_own_subscription_contracts
+Q8-SH-K1022	SH-C-159	read_own_subscription_contracts
+Q8-SH-K1023	SH-C-159	read_own_subscription_contracts
+Q8-SH-K1024	SH-C-159	read_own_subscription_contracts
+Q8-SH-K1025	SH-C-159	read_own_subscription_contracts
+Q8-SH-K1026	SH-C-159	read_payment_gateways
+Q8-SH-K1027	SH-C-159	read_payment_mandate
+Q8-SH-K1028	SH-C-159	read_payment_mandate
+Q8-SH-K1029	SH-C-159	read_payment_sessions
+Q8-SH-K1030	SH-C-159	read_taxes
+Q8-SH-K1031	SH-C-159	read_taxes
+Q8-SH-K1032	SH-C-159	read_taxes
+Q8-SH-K1033	SH-C-159	read_taxes
+Q8-SH-K1034	SH-C-159	read_taxes
+Q8-SH-K1035	SH-C-159	read_users
+Q8-SH-K1036	SH-C-159	read_users
+Q8-SH-K1037	SH-C-159	read_users
+Q8-SH-K1038	SH-C-159	read_users
+Q8-SH-K1039	SH-C-159	write_checkout_settings
+Q8-SH-K1040	SH-C-159	write_delivery_promises
+Q8-SH-K1041	SH-C-159	write_marketplace_orders
+Q8-SH-K1042	SH-C-159	write_marketplace_orders
+Q8-SH-K1043	SH-C-159	write_marketplace_orders
+Q8-SH-K1044	SH-C-159	write_marketplace_returns
+Q8-SH-K1045	SH-C-159	write_marketplace_returns
+Q8-SH-K1046	SH-C-159	write_mobile_platform_applications
+Q8-SH-K1047	SH-C-159	write_own_subscription_contracts
+Q8-SH-K1048	SH-C-159	write_own_subscription_contracts
+Q8-SH-K1049	SH-C-159	write_own_subscription_contracts
+Q8-SH-K1050	SH-C-159	write_own_subscription_contracts
+Q8-SH-K1051	SH-C-159	write_own_subscription_contracts
+Q8-SH-K1052	SH-C-159	write_payment_gateways
+Q8-SH-K1053	SH-C-159	write_payment_gateways
+Q8-SH-K1054	SH-C-159	write_payment_gateways
+Q8-SH-K1055	SH-C-159	write_payment_gateways
+Q8-SH-K1056	SH-C-159	write_payment_mandate
+Q8-SH-K1057	SH-C-159	write_payment_mandate
+Q8-SH-K1058	SH-C-159	write_payment_sessions
+Q8-SH-K1059	SH-C-159	write_taxes
+Q8-SH-K1060	SH-C-159	write_taxes
+Q8-SH-K1061	SH-C-114	read_shipping
+Q8-SH-K1062	SH-C-114	read_shipping
+Q8-SH-K1063	SH-C-114	read_shipping
+Q8-SH-K1064	SH-C-114	write_shipping
+Q8-SH-K1065	SH-C-115	write_shipping
+Q8-SH-K1066	SH-C-115	write_shipping
+Q8-SH-K1067	SH-C-115	write_shipping
+Q8-SH-K1068	SH-C-069	read_shopify_payments_bank_accounts
+Q8-SH-K1069	SH-C-069	read_shopify_payments_payouts
+Q8-SH-K1070	SH-C-065	read_shopify_payments_bank_accounts
+Q8-SH-K1071	SH-C-072	read_shopify_payments_dispute_evidences
+Q8-SH-K1072	SH-C-072	read_shopify_payments_disputes
+Q8-SH-K1073	SH-C-072	read_shopify_payments_disputes
+Q8-SH-K1074	SH-C-072	read_shopify_payments_disputes
+Q8-SH-K1075	SH-C-072	read_shopify_payments_disputes
+Q8-SH-K1076	SH-C-072	write_shopify_payments_dispute_evidences
+Q8-SH-K1077	SH-C-026	customer_read_store_credit_account_transactions
+Q8-SH-K1078	SH-C-026	customer_read_store_credit_accounts
+Q8-SH-K1079	SH-C-026	read_store_credit_account_transactions
+Q8-SH-K1080	SH-C-026	read_store_credit_accounts
+Q8-SH-K1081	SH-C-026	write_store_credit_account_transactions
+Q8-SH-K1082	SH-C-041	customer_read_companies
+Q8-SH-K1083	SH-C-041	customer_read_companies
+Q8-SH-K1084	SH-C-041	customer_read_customers
+Q8-SH-K1085	SH-C-041	customer_read_customers
+Q8-SH-K1086	SH-C-041	customer_read_customers
+Q8-SH-K1087	SH-C-041	customer_read_draft_orders
+Q8-SH-K1088	SH-C-041	customer_read_draft_orders
+Q8-SH-K1089	SH-C-041	customer_read_markets
+Q8-SH-K1090	SH-C-041	customer_read_metaobjects
+Q8-SH-K1091	SH-C-041	customer_read_orders
+Q8-SH-K1092	SH-C-041	customer_read_orders
+Q8-SH-K1093	SH-C-041	customer_read_orders
+Q8-SH-K1094	SH-C-041	customer_read_store_credit_account_transactions
+Q8-SH-K1095	SH-C-041	customer_read_store_credit_accounts
+Q8-SH-K1096	SH-C-041	customer_write_companies
+Q8-SH-K1097	SH-C-041	customer_write_customers
+Q8-SH-K1098	SH-C-041	customer_write_customers
+Q8-SH-K1099	SH-C-139	unauthenticated_read_checkouts
+Q8-SH-K1100	SH-C-139	unauthenticated_read_content
+Q8-SH-K1101	SH-C-139	unauthenticated_read_customers
+Q8-SH-K1102	SH-C-139	unauthenticated_read_customers
+Q8-SH-K1103	SH-C-139	unauthenticated_read_customers
+Q8-SH-K1104	SH-C-139	unauthenticated_read_metaobjects
+Q8-SH-K1105	SH-C-139	unauthenticated_read_metaobjects
+Q8-SH-K1106	SH-C-139	unauthenticated_read_product_listings
+Q8-SH-K1107	SH-C-139	unauthenticated_read_product_listings
+Q8-SH-K1108	SH-C-139	unauthenticated_read_product_listings
+Q8-SH-K1109	SH-C-139	unauthenticated_read_product_pickup_locations
+Q8-SH-K1110	SH-C-139	unauthenticated_read_product_pickup_locations
+Q8-SH-K1111	SH-C-139	unauthenticated_read_product_tags
+Q8-SH-K1112	SH-C-139	unauthenticated_read_selling_plans
+Q8-SH-K1113	SH-C-139	unauthenticated_read_selling_plans
+Q8-SH-K1114	SH-C-139	unauthenticated_read_shop_pay_installments_pricing
+Q8-SH-K1115	SH-C-139	unauthenticated_write_customers
+Q8-SH-K1116	SH-C-121	unauthenticated_read_product_pickup_locations
+Q8-SH-K1117	SH-C-121	unauthenticated_read_product_pickup_locations
+Q8-SH-K1118	SH-C-075	unauthenticated_read_shop_pay_installments_pricing
+Q8-SH-K1119	SH-C-137	read_marketplace_fulfillment_orders
+Q8-SH-K1120	SH-C-137	read_marketplace_fulfillment_orders
+Q8-SH-K1121	SH-C-137	read_marketplace_fulfillment_orders
+Q8-SH-K1122	SH-C-137	read_marketplace_fulfillment_orders
+Q8-SH-K1123	SH-C-137	read_marketplace_fulfillment_orders
+Q8-SH-K1124	SH-C-137	read_marketplace_orders
+Q8-SH-K1125	SH-C-137	read_marketplace_orders
+Q8-SH-K1126	SH-C-137	read_marketplace_orders
+Q8-SH-K1127	SH-C-137	read_marketplace_orders
+Q8-SH-K1128	SH-C-137	read_marketplace_returns
+Q8-SH-K1129	SH-C-137	read_marketplace_returns
+Q8-SH-K1130	SH-C-137	read_marketplace_returns
+Q8-SH-K1131	SH-C-137	read_marketplace_returns
+Q8-SH-K1132	SH-C-137	write_marketplace_orders
+Q8-SH-K1133	SH-C-137	write_marketplace_orders
+Q8-SH-K1134	SH-C-137	write_marketplace_orders
+Q8-SH-K1135	SH-C-137	write_marketplace_returns
+Q8-SH-K1136	SH-C-137	write_marketplace_returns
+Q8-SH-K1137	SH-C-085	read_customer_payment_methods
+Q8-SH-K1138	SH-C-085	read_customer_payment_methods
+Q8-SH-K1139	SH-C-085	read_customer_payment_methods
+Q8-SH-K1140	SH-C-085	read_customer_payment_methods
+Q8-SH-K1141	SH-C-085	read_customer_payment_methods
+Q8-SH-K1142	SH-C-085	read_payment_mandate
+Q8-SH-K1143	SH-C-085	read_payment_mandate
+Q8-SH-K1144	SH-C-085	write_payment_mandate
+Q8-SH-K1145	SH-C-085	write_payment_mandate
+Q8-SH-K1146	SH-C-125	read_delivery_promises
+Q8-SH-K1147	SH-C-125	write_delivery_promises
+Q8-SH-K1148	SH-C-068	read_financial_kyc_information
+Q8-SH-K1149	SH-C-068	read_financial_kyc_information
+Q8-SH-K1150	SH-C-068	read_financial_kyc_information
+Q8-SH-K1151	SH-C-068	read_financial_kyc_information
+Q8-SH-K1152	SH-C-068	read_financial_kyc_information
+Q8-SH-K1153	SH-C-195	read_mobile_platform_applications
+Q8-SH-K1154	SH-C-195	read_mobile_platform_applications
+Q8-SH-K1155	SH-C-195	write_mobile_platform_applications
+Q8-SH-K1156	SH-C-076	read_payment_gateways
+Q8-SH-K1157	SH-C-076	read_payment_sessions
+Q8-SH-K1158	SH-C-076	write_payment_gateways
+Q8-SH-K1159	SH-C-076	write_payment_gateways
+Q8-SH-K1160	SH-C-076	write_payment_gateways
+Q8-SH-K1161	SH-C-076	write_payment_gateways
+Q8-SH-K1162	SH-C-076	write_payment_sessions
+Q8-SH-K1163	SH-C-100	read_taxes
+Q8-SH-K1164	SH-C-100	read_taxes
+Q8-SH-K1165	SH-C-100	read_taxes
+Q8-SH-K1166	SH-C-100	read_taxes
+Q8-SH-K1167	SH-C-100	read_taxes
+Q8-SH-K1168	SH-C-100	write_taxes
+Q8-SH-K1169	SH-C-100	write_taxes
+Q8-SH-K1170	SH-C-103	read_taxes
+Q8-SH-K1171	SH-C-103	read_taxes
+Q8-SH-K1172	SH-C-103	read_taxes
+Q8-SH-K1173	SH-C-103	read_taxes
+Q8-SH-K1174	SH-C-103	read_taxes
+Q8-SH-K1175	SH-C-103	write_taxes
+Q8-SH-K1176	SH-C-103	write_taxes
+Q8-SH-K1177	SH-C-009	read_users
+Q8-SH-K1178	SH-C-009	read_users
+Q8-SH-K1179	SH-C-009	read_users
+Q8-SH-K1180	SH-C-009	read_users
+Q8-SH-K1181	SH-C-004	settings/general
+Q8-SH-K1182	SH-C-004	settings/organization-details
+Q8-SH-K1183	SH-C-005	settings/payments
+Q8-SH-K1184	SH-C-005	markets
+Q8-SH-K1185	SH-C-005	settings/organization-details
+Q8-SH-K1186	SH-C-016	settings/billing
+Q8-SH-K1188	SH-C-018	settings/billing
+Q8-SH-K1189	SH-C-019	settings/billing
+Q8-SH-K1190	SH-C-019	settings/apps
+Q8-SH-K1191	SH-C-051	settings/bot-protection
+Q8-SH-K1192	SH-C-051	themes
+Q8-SH-K1193	SH-C-062	settings/payments
+Q8-SH-K1194	SH-C-063	payments
+Q8-SH-K1195	SH-C-069	settings/payments
+Q8-SH-K1196	SH-C-070	payments/payouts
+Q8-SH-K1197	SH-C-071	shopify-payments/terms
+Q8-SH-K1198	SH-C-080	settings/payments
+Q8-SH-K1199	SH-C-081	settings/payments
+Q8-SH-K1200	SH-C-084	orders
+Q8-SH-K1201	SH-C-086	apps/point-of-sale-channel
+Q8-SH-K1202	SH-C-090	credit
+Q8-SH-K1203	SH-C-090	finance
+Q8-SH-K1204	SH-C-091	finance
+Q8-SH-K1205	SH-C-091	finance
+Q8-SH-K1206	SH-C-091	finance
+Q8-SH-K1207	SH-C-091	finance/capital
+Q8-SH-K1208	SH-C-092	finance
+Q8-SH-K1209	SH-C-092	finance
+Q8-SH-K1210	SH-C-092	finances
+Q8-SH-K1211	SH-C-093	finance
+Q8-SH-K1212	SH-C-093	finance
+Q8-SH-K1213	SH-C-094	finance
+Q8-SH-K1214	SH-C-095	finance
+Q8-SH-K1215	SH-C-095	finance
+Q8-SH-K1216	SH-C-096	finance
+Q8-SH-K1217	SH-C-096	finance
+Q8-SH-K1218	SH-C-097	finance
+Q8-SH-K1219	SH-C-097	finance
+Q8-SH-K1220	SH-C-097	finance
+Q8-SH-K1221	SH-C-097	finance
+Q8-SH-K1222	SH-C-099	finance
+Q8-SH-K1223	SH-C-101	settings/taxes
+Q8-SH-K1224	SH-C-105	markets
+Q8-SH-K1225	SH-C-106	markets
+Q8-SH-K1226	SH-C-108	markets
+Q8-SH-K1227	SH-C-109	markets
+Q8-SH-K1228	SH-C-110	markets
+Q8-SH-K1229	SH-C-112	rollouts
+Q8-SH-K1230	SH-C-113	settings/general
+Q8-SH-K1231	SH-C-117	orders
+Q8-SH-K1232	SH-C-137	apps/shopify-marketplace-connect
+Q8-SH-K1233	SH-C-147	settings/privacy
+Q8-SH-K1235	SH-C-151	apps/flow
+Q8-SH-K1236	SH-C-001	Your store
+Q8-SH-K1237	SH-C-001	2.1 Store Owner
+Q8-SH-K1238	SH-C-001	1. Account Terms
+Q8-SH-K1239	SH-C-001	2. Account Activation (summary)
+Q8-SH-K1240	SH-C-001	2.1 Store Owner
+Q8-SH-K1241	SH-C-001	preamble
+Q8-SH-K1242	SH-C-001	preamble
+Q8-SH-K1243	SH-C-002	13. Shopify Contracting Party and Forum
+Q8-SH-K1244	SH-C-002	13. Shopify Contracting Party and Forum, table row "United States or Canada"
+Q8-SH-K1245	SH-C-002	Shopify's primary contracting entities
+Q8-SH-K1246	SH-C-002	13. Shopify Contracting Party and Forum, table row "United States or Canada"
+Q8-SH-K1247	SH-C-002	13. Shopify Contracting Party and Forum, table row "Asia Pacific"
+Q8-SH-K1248	SH-C-002	13. Shopify Contracting Party and Forum, table row "All other jurisdictions"
+Q8-SH-K1249	SH-C-002	Shopify's primary contracting entities
+Q8-SH-K1250	SH-C-002	Shopify's primary contracting entities
+Q8-SH-K1251	SH-C-002	13. Shopify Contracting Party and Forum, Regulated Payment Services (Canada)
+Q8-SH-K1252	SH-C-002	13. Shopify Contracting Party and Forum, Billing and Collection
+Q8-SH-K1253	SH-C-002	16. General Conditions
+Q8-SH-K1254	SH-C-003	organization_details
+Q8-SH-K1255	SH-C-003	OrganizationSettings
+Q8-SH-K1256	SH-C-003	Organization administrator
+Q8-SH-K1257	SH-C-004	help.shopify.com/en/manual/your-account/business-entities.md
+Q8-SH-K1258	SH-C-004	Considerations
+Q8-SH-K1259	SH-C-004	Considerations
+Q8-SH-K1260	SH-C-004	help.shopify.com/en/manual/your-account/business-entities.md
+Q8-SH-K1261	SH-C-004	Considerations
+Q8-SH-K1262	SH-C-004	help.shopify.com/en/manual/your-account/business-entities.md
+Q8-SH-K1263	SH-C-005	help.shopify.com/en/manual/payments/shopify-payments/onboarding/selling-with-multiple-entities.md
+Q8-SH-K1264	SH-C-005	Requirements when selling from multiple entities with Shopify Payments
+Q8-SH-K1265	SH-C-005	Plan requirement note
+Q8-SH-K1266	SH-C-005	Assign entities to markets
+Q8-SH-K1267	SH-C-005	Assign entities to markets
+Q8-SH-K1268	SH-C-005	Connect Shopify Payments to each entity
+Q8-SH-K1269	SH-C-005	Key benefits when selling from multiple entities with Shopify Payments
+Q8-SH-K1283	SH-C-009	user_management
+Q8-SH-K1284	SH-C-009	Account
+Q8-SH-K1285	SH-C-009	2.2 Staff Accounts
+Q8-SH-K1286	SH-C-009	2.2 Staff Accounts
+Q8-SH-K1287	SH-C-009	2.2 Staff Accounts
+Q8-SH-K1288	SH-C-009	read_users
+Q8-SH-K1289	SH-C-010	roles
+Q8-SH-K1290	SH-C-010	Administrator
+Q8-SH-K1291	SH-C-010	2.2 Staff Accounts
+Q8-SH-K1292	SH-C-011	9.9 Third Party Services and Third Party Partners
+Q8-SH-K1293	SH-C-011	Collaborator access
+Q8-SH-K1294	SH-C-011	9.9 Third Party Services and Third Party Partners
+Q8-SH-K1295	SH-C-011	2.2 Staff Accounts
+Q8-SH-K1296	SH-C-012	MerchantAuditLog
+Q8-SH-K1297	SH-C-012	audit_events/admin_api_activity
+Q8-SH-K1298	SH-C-012	read_audit_events
+Q8-SH-K1299	SH-C-013	general
+Q8-SH-K1300	SH-C-013	Store properties
+Q8-SH-K1301	SH-C-013	4. Your Responsibilities (summary)
+Q8-SH-K1302	SH-C-013	Store properties
+Q8-SH-K1303	SH-C-013	shop/update
+Q8-SH-K1312	SH-C-015	billing_plan
+Q8-SH-K1313	SH-C-015	Plus
+Q8-SH-K1314	SH-C-015	plan.name basic
+Q8-SH-K1315	SH-C-015	5. Payment of Fees and Taxes
+Q8-SH-K1316	SH-C-015	13. Shopify Contracting Party and Forum
+Q8-SH-K1317	SH-C-016	organization_billing
+Q8-SH-K1318	SH-C-016	Billing
+Q8-SH-K1319	SH-C-016	15. Modifications
+Q8-SH-K1320	SH-C-016	5. Payment of Fees and Taxes
+Q8-SH-K1321	SH-C-016	Change your billing currency
+Q8-SH-K1322	SH-C-016	13. Shopify Contracting Party and Forum
+Q8-SH-K1323	SH-C-016	13. Shopify Contracting Party and Forum, Billing and Collection
+Q8-SH-K1324	SH-C-016	5. Payment of Fees and Taxes
+Q8-SH-K1325	SH-C-016	help.shopify.com/en/manual/your-account/manage-billing/paying-your-bills/managing-payments/local-currency.md
+Q8-SH-K1326	SH-C-016	5. Payment of Fees and Taxes
+Q8-SH-K1333	SH-C-018	help.shopify.com/en/manual/your-account/manage-billing/billing-charges/types-of-charges/third-party-charges/third-party-transaction-fees.md
+Q8-SH-K1334	SH-C-018	help.shopify.com/en/manual/your-account/manage-billing/billing-charges/types-of-charges/third-party-charges/third-party-transaction-fees.md
+Q8-SH-K1335	SH-C-018	help.shopify.com/en/manual/your-account/manage-billing/billing-charges/types-of-charges/third-party-charges/third-party-transaction-fees.md
+Q8-SH-K1336	SH-C-018	help.shopify.com/en/manual/your-account/manage-billing/billing-charges/types-of-charges/third-party-charges/third-party-transaction-fees.md
+Q8-SH-K1337	SH-C-018	5. Payment of Fees and Taxes
+Q8-SH-K1338	SH-C-018	help.shopify.com/en/manual/your-account/manage-billing/billing-charges/types-of-charges/third-party-charges/third-party-transaction-fees.md
+Q8-SH-K1339	SH-C-019	How Shopify App Pricing helps
+Q8-SH-K1340	SH-C-019	help.shopify.com/en/manual/your-account/manage-billing/billing-charges/types-of-charges/third-party-charges/app-charges.md
+Q8-SH-K1341	SH-C-019	Which billing method should you use?
+Q8-SH-K1342	SH-C-019	Part C, 4. Use of the Shopify Billing Resource
+Q8-SH-K1343	SH-C-019	Identify your app charge status
+Q8-SH-K1344	SH-C-019	How Shopify App Pricing helps
+Q8-SH-K1345	SH-C-019	How Shopify App Pricing helps
+Q8-SH-K1346	SH-C-019	Billing
+Q8-SH-K1347	SH-C-019	app_subscriptions/update
+Q8-SH-K1348	SH-C-019	Part C, App Plan (C.2.2.1)
+Q8-SH-K1349	SH-C-019	About billing for your app
+Q8-SH-K1350	SH-C-019	Shopify App Pricing, Important note
+Q8-SH-K1351	SH-C-020	Products
+Q8-SH-K1352	SH-C-020	Product
+Q8-SH-K1353	SH-C-020	4. Your Responsibilities
+Q8-SH-K1354	SH-C-020	8.1 Your Materials
+Q8-SH-K1355	SH-C-020	3. Shopify Rights
+Q8-SH-K1356	SH-C-020	write_products
+Q8-SH-K1357	SH-C-020	products/create
+Q8-SH-K1358	SH-C-020	dev.ucp.shopping.catalog.search
+Q8-SH-K1359	SH-C-021	Collections
+Q8-SH-K1360	SH-C-021	Collection
+Q8-SH-K1361	SH-C-021	Products and collections
+Q8-SH-K1362	SH-C-021	collections/create
+Q8-SH-K1363	SH-C-022	Inventory
+Q8-SH-K1364	SH-C-022	Inventory
+Q8-SH-K1365	SH-C-022	write_inventory
+Q8-SH-K1366	SH-C-022	inventory_items/create
+Q8-SH-K1367	SH-C-023	Transfers
+Q8-SH-K1368	SH-C-023	Purchase orders
+Q8-SH-K1369	SH-C-023	InventoryTransfer
+Q8-SH-K1370	SH-C-023	write_inventory_shipments
+Q8-SH-K1371	SH-C-023	inventory_shipments/create
+Q8-SH-K1372	SH-C-024	locations
+Q8-SH-K1373	SH-C-024	Location
+Q8-SH-K1374	SH-C-024	write_locations
+Q8-SH-K1375	SH-C-024	locations/create
+Q8-SH-K1376	SH-C-025	Gift cards
+Q8-SH-K1377	SH-C-025	www.shopify.com/legal/terms-gift-cards
+Q8-SH-K1378	SH-C-025	3. Compliance with Laws
+Q8-SH-K1379	SH-C-025	4. Gift Card & Store Credit Terms and Issuance
+Q8-SH-K1380	SH-C-025	read_gift_cards
+Q8-SH-K1381	SH-C-026	www.shopify.com/legal/terms-gift-cards
+Q8-SH-K1382	SH-C-026	3. Compliance with Laws
+Q8-SH-K1383	SH-C-026	write_store_credit_account_transactions
+Q8-SH-K1384	SH-C-027	Files
+Q8-SH-K1385	SH-C-027	read_files
+Q8-SH-K1386	SH-C-027	write_files
+Q8-SH-K1387	SH-C-028	metafields
+Q8-SH-K1388	SH-C-028	Metaobjects
+Q8-SH-K1389	SH-C-028	Metafields
+Q8-SH-K1390	SH-C-028	read_metaobjects
+Q8-SH-K1391	SH-C-028	metafield_definitions/create
+Q8-SH-K1392	SH-C-029	Liquid
+Q8-SH-K1393	SH-C-029	9.6 Theme Store
+Q8-SH-K1394	SH-C-029	9.6 Theme Store
+Q8-SH-K1395	SH-C-029	write_theme_code
+Q8-SH-K1396	SH-C-029	themes/create
+Q8-SH-K1397	SH-C-030	Blog posts
+Q8-SH-K1398	SH-C-030	Blog
+Q8-SH-K1399	SH-C-030	read_online_store_pages
+Q8-SH-K1400	SH-C-030	write_online_store_pages
+Q8-SH-K1401	SH-C-031	Menus
+Q8-SH-K1402	SH-C-031	read_online_store_navigation
+Q8-SH-K1403	SH-C-031	write_online_store_navigation
+Q8-SH-K1404	SH-C-032	languages
+Q8-SH-K1405	SH-C-032	Localizations
+Q8-SH-K1406	SH-C-032	read_translations
+Q8-SH-K1407	SH-C-032	locales/create
+Q8-SH-K1408	SH-C-033	domains
+Q8-SH-K1409	SH-C-033	2.9 Domain Names
+Q8-SH-K1410	SH-C-033	domains/create
+Q8-SH-K1411	SH-C-034	legal
+Q8-SH-K1412	SH-C-034	4. Your Responsibilities (summary)
+Q8-SH-K1413	SH-C-034	4. Your Responsibilities (summary)
+Q8-SH-K1414	SH-C-034	write_legal_policies
+Q8-SH-K1415	SH-C-035	Search
+Q8-SH-K1416	SH-C-035	Search and filter apps
+Q8-SH-K1417	SH-C-035	read_discovery
+Q8-SH-K1418	SH-C-035	write_discovery
+Q8-SH-K1419	SH-C-037	Catalogs
+Q8-SH-K1420	SH-C-039	Customers
+Q8-SH-K1421	SH-C-039	Customers
+Q8-SH-K1422	SH-C-039	I. PURPOSE
+Q8-SH-K1423	SH-C-039	read_customers
+Q8-SH-K1424	SH-C-039	customers/create
+Q8-SH-K1425	SH-C-040	Segments
+Q8-SH-K1426	SH-C-040	customer_segment_template
+Q8-SH-K1427	SH-C-040	customer.joined_segment
+Q8-SH-K1428	SH-C-040	customer_segment_template
+Q8-SH-K1429	SH-C-041	customer_accounts
+Q8-SH-K1430	SH-C-041	Customer Account API
+Q8-SH-K1431	SH-C-041	Sign-in experience
+Q8-SH-K1432	SH-C-041	customer_account_settings/update
+Q8-SH-K1433	SH-C-041	dev.ucp.common.identity_linking
+Q8-SH-K1434	SH-C-042	Third-party identity providers
+Q8-SH-K1435	SH-C-042	Sign-in experience
+Q8-SH-K1436	SH-C-043	customerEmailMarketingSubscribe
+Q8-SH-K1437	SH-C-043	customerWhatsAppMarketingConsentUpdate
+Q8-SH-K1438	SH-C-043	9.11 Shopify Pixel Manager (summary)
+Q8-SH-K1439	SH-C-043	customers_email_marketing_consent/update
+Q8-SH-K1440	SH-C-043	customers_marketing_consent/update
+Q8-SH-K1441	SH-C-044	Companies
+Q8-SH-K1442	SH-C-044	B2B
+Q8-SH-K1443	SH-C-044	help.shopify.com/en/manual/b2b/getting-started.md
+Q8-SH-K1444	SH-C-044	read_companies
+Q8-SH-K1445	SH-C-044	companies/create
+Q8-SH-K1446	SH-C-045	Payment Customization
+Q8-SH-K1447	SH-C-045	write_payment_terms
+Q8-SH-K1448	SH-C-045	payment_schedules/due
+Q8-SH-K1449	SH-C-046	Cart
+Q8-SH-K1450	SH-C-046	dev.ucp.shopping.cart
+Q8-SH-K1451	SH-C-046	unauthenticated_write_checkouts
+Q8-SH-K1452	SH-C-046	carts/update
+Q8-SH-K1453	SH-C-047	4. Your Responsibilities
+Q8-SH-K1454	SH-C-047	checkout
+Q8-SH-K1455	SH-C-047	1. Account Terms
+Q8-SH-K1456	SH-C-047	2. Using the Shopify API
+Q8-SH-K1457	SH-C-047	4. Your Responsibilities
+Q8-SH-K1458	SH-C-047	4. Your Responsibilities
+Q8-SH-K1459	SH-C-047	checkouts/create
+Q8-SH-K1460	SH-C-047	dev.ucp.shopping.checkout
+Q8-SH-K1461	SH-C-048	Checkout branding
+Q8-SH-K1462	SH-C-048	Checkout and accounts configurations
+Q8-SH-K1463	SH-C-048	4. Merchant Obligations and Authorizations
+Q8-SH-K1464	SH-C-048	read_checkout_branding_settings
+Q8-SH-K1465	SH-C-048	write_checkout_and_accounts_configurations
+Q8-SH-K1466	SH-C-049	Apps in checkout, introduction
+Q8-SH-K1467	SH-C-049	checkout_ui
+Q8-SH-K1468	SH-C-049	Checkout
+Q8-SH-K1469	SH-C-049	9.13 Shopify Checkout Extensibility
+Q8-SH-K1470	SH-C-049	9.13 Shopify Checkout Extensibility (summary)
+Q8-SH-K1471	SH-C-049	9.13 Shopify Checkout Extensibility (summary)
+Q8-SH-K1472	SH-C-049	6. Merchant Agreement, Privacy and Data Security, Merchant Agreement and Privacy Policy
+Q8-SH-K1473	SH-C-049	Customization options
+Q8-SH-K1474	SH-C-050	Abandoned checkouts
+Q8-SH-K1475	SH-C-050	checkouts/update
+Q8-SH-K1476	SH-C-051	CommerceProtection
+Q8-SH-K1477	SH-C-051	plan requirement
+Q8-SH-K1478	SH-C-051	Considerations for using bot protection
+Q8-SH-K1479	SH-C-051	help.shopify.com/en/manual/checkout-settings/bot-protection.md
+Q8-SH-K1480	SH-C-052	Cart and Checkout Validation
+Q8-SH-K1481	SH-C-052	Lifecycle of a Shopify Function
+Q8-SH-K1482	SH-C-052	write_validations
+Q8-SH-K1483	SH-C-052	validation_settings_ui
+Q8-SH-K1484	SH-C-053	Cart Transform
+Q8-SH-K1485	SH-C-053	cart_transform
+Q8-SH-K1486	SH-C-053	Lifecycle of a Shopify Function
+Q8-SH-K1487	SH-C-053	write_cart_transforms
+Q8-SH-K1488	SH-C-054	Orders
+Q8-SH-K1489	SH-C-054	Order
+Q8-SH-K1490	SH-C-054	dev.ucp.shopping.order
+Q8-SH-K1491	SH-C-054	4. Your Responsibilities
+Q8-SH-K1492	SH-C-054	4. Your Responsibilities
+Q8-SH-K1493	SH-C-054	read_orders
+Q8-SH-K1494	SH-C-054	orders/create
+Q8-SH-K1495	SH-C-055	Drafts
+Q8-SH-K1496	SH-C-055	draftOrder
+Q8-SH-K1497	SH-C-055	write_draft_orders
+Q8-SH-K1498	SH-C-055	draft_orders/create
+Q8-SH-K1499	SH-C-056	orderRequestEdit
+Q8-SH-K1500	SH-C-056	orders/edited
+Q8-SH-K1501	SH-C-057	Refund
+Q8-SH-K1502	SH-C-057	4. Your Responsibilities
+Q8-SH-K1503	SH-C-057	refunds/create
+Q8-SH-K1504	SH-C-058	return
+Q8-SH-K1505	SH-C-058	Returns and exchanges apps
+Q8-SH-K1506	SH-C-058	4. Your Responsibilities
+Q8-SH-K1507	SH-C-058	write_returns
+Q8-SH-K1508	SH-C-058	returns/approve
+Q8-SH-K1509	SH-C-059	help.shopify.com/en/manual/fulfillment/managing-orders/protecting-orders/fraud-analysis.md
+Q8-SH-K1510	SH-C-059	Considerations for using fraud analysis
+Q8-SH-K1511	SH-C-059	Considerations for using fraud analysis
+Q8-SH-K1512	SH-C-059	help.shopify.com/en/manual/fulfillment/managing-orders/protecting-orders/fraud-analysis.md
+Q8-SH-K1513	SH-C-059	help.shopify.com/en/manual/fulfillment/managing-orders/protecting-orders/fraud-analysis.md
+Q8-SH-K1514	SH-C-059	orders/risk_assessment_changed
+Q8-SH-K1515	SH-C-059	Fraud apps
+Q8-SH-K1516	SH-C-060	order_routing_location_rule
+Q8-SH-K1517	SH-C-060	Order Routing Location Rule
+Q8-SH-K1518	SH-C-060	help.shopify.com/en/manual/fulfillment/setup/order-routing.md
+Q8-SH-K1519	SH-C-060	fulfillment_orders/order_routing_complete
+Q8-SH-K1520	SH-C-061	admin_print
+Q8-SH-K1521	SH-C-061	write_packing_slip_templates
+Q8-SH-K1522	SH-C-062	payments
+Q8-SH-K1523	SH-C-062	help.shopify.com/en/manual/payments/third-party-providers.md
+Q8-SH-K1524	SH-C-062	help.shopify.com/en/manual/payments.md
+Q8-SH-K1525	SH-C-062	help.shopify.com/en/manual/payments/third-party-providers.md
+Q8-SH-K1526	SH-C-062	help.shopify.com/en/manual/payments/third-party-providers/payment-gateway-availability.md
+Q8-SH-K1527	SH-C-062	Stripe availability in Shopify Payments regions
+Q8-SH-K1528	SH-C-062	Stripe availability in Shopify Payments regions
+Q8-SH-K1529	SH-C-062	help.shopify.com/en/manual/payments/getting-paid.md
+Q8-SH-K1530	SH-C-062	help.shopify.com/en/manual/payments/getting-paid.md
+Q8-SH-K1531	SH-C-063	Part I, A. The Shopify Payments Service, Our Role
+Q8-SH-K1532	SH-C-063	help.shopify.com/en/manual/payments/shopify-payments/onboarding/eligibility.md
+Q8-SH-K1533	SH-C-063	Stripe availability in Shopify Payments regions
+Q8-SH-K1534	SH-C-063	Payments
+Q8-SH-K1535	SH-C-063	help.shopify.com/en/manual/payments/shopify-payments/supported-countries.md
+Q8-SH-K1536	SH-C-063	Part I, A. Your Role
+Q8-SH-K1537	SH-C-063	Part I, B. Designated Country
+Q8-SH-K1538	SH-C-063	help.shopify.com/en/manual/payments/shopify-payments/onboarding/eligibility.md
+Q8-SH-K1539	SH-C-063	eligibility criteria
+Q8-SH-K1540	SH-C-063	Prohibited businesses and products
+Q8-SH-K1541	SH-C-063	Prohibited businesses and products
+Q8-SH-K1542	SH-C-063	Switch to Shopify Payments, staff permissions note
+Q8-SH-K1543	SH-C-063	2.3 PayPal Express Checkout and Shopify Payments Accounts
+Q8-SH-K1544	SH-C-063	Part I, A. Designated Country / Shopify Entity table, row Canada
+Q8-SH-K1545	SH-C-063	Part I, A. The Shopify Payments Service
+Q8-SH-K1546	SH-C-063	Part I, A. Designated Country / Shopify Entity table, row United States
+Q8-SH-K1547	SH-C-063	Part I, A. Designated Country / Shopify Entity table, row Austria ... United Kingdom
+Q8-SH-K1548	SH-C-063	Part I, A. Designated Country / Shopify Entity table, row Australia ... Singapore
+Q8-SH-K1549	SH-C-063	www.shopify.com/legal/terms-shopify-payments
+Q8-SH-K1550	SH-C-063	www.shopify.com/legal/processor-list
+Q8-SH-K1551	SH-C-063	Shopify Payments
+Q8-SH-K1552	SH-C-063	read_shopify_payments_accounts
+Q8-SH-K1553	SH-C-063	Part I, A. The Shopify Payments Service, Our Role
+Q8-SH-K1554	SH-C-063	help.shopify.com/en/manual/payments/shopify-payments.md
+Q8-SH-K1555	SH-C-064	Part I, A. The Payment Processor
+Q8-SH-K1556	SH-C-064	Part I, A. The Payment Processor
+Q8-SH-K1557	SH-C-064	How a credit card payment gets processed
+Q8-SH-K1558	SH-C-064	10 Tips for Building Resilient Payment Systems, idempotency
+Q8-SH-K1559	SH-C-064	10 Tips for Building Resilient Payment Systems, idempotency
+Q8-SH-K1560	SH-C-064	Part I, A. The Payment Processor
+Q8-SH-K1561	SH-C-064	Part I, A. The Payment Processor
+Q8-SH-K1562	SH-C-064	help.shopify.com/en/manual/payments/payment-authorization.md
+Q8-SH-K1563	SH-C-064	www.shopify.com/legal/processor-list
+Q8-SH-K1564	SH-C-064	Part I, D. Termination
+Q8-SH-K1565	SH-C-064	Part I, D. Termination
+Q8-SH-K1566	SH-C-064	B. North America, row United States
+Q8-SH-K1567	SH-C-064	B. North America, row Canada
+Q8-SH-K1568	SH-C-064	B. North America, row Mexico
+Q8-SH-K1569	SH-C-064	C. EMEA, row Austria
+Q8-SH-K1570	SH-C-064	C. EMEA, row United Arab Emirates
+Q8-SH-K1571	SH-C-064	D. Asia-Pacific, row Japan
+Q8-SH-K1572	SH-C-064	D. Asia-Pacific, row Australia
+Q8-SH-K1573	SH-C-064	D. Asia-Pacific, row Singapore
+Q8-SH-K1574	SH-C-064	B. North America, row United States
+Q8-SH-K1575	SH-C-064	C. EMEA, row Austria
+Q8-SH-K1576	SH-C-064	C. EMEA, row Austria
+Q8-SH-K1577	SH-C-064	D. Asia-Pacific, row China (Mainland)
+Q8-SH-K1578	SH-C-064	A. Global
+Q8-SH-K1579	SH-C-064	Stripe availability in Shopify Payments regions
+Q8-SH-K1580	SH-C-064	Part I, A. The Payment Processor
+Q8-SH-K1581	SH-C-064	Part I, B. Registration
+Q8-SH-K1582	SH-C-064	Part I, D. Your Liability and Indemnification Concerning Liabilities
+Q8-SH-K1583	SH-C-064	www.shopify.com/legal/processor-list
+Q8-SH-K1584	SH-C-064	Part I, B. Registration
+Q8-SH-K1585	SH-C-064	Part I, A. The Shopify Payments Service, Our Role
+Q8-SH-K1586	SH-C-064	10 Tips for Building Resilient Payment Systems, 2. Install Circuit Breakers
+Q8-SH-K1587	SH-C-064	help.shopify.com/en/manual/payments/payment-authorization.md
+Q8-SH-K1588	SH-C-065	Part I, D. Effects of Termination
+Q8-SH-K1589	SH-C-065	Part I, B. Registration
+Q8-SH-K1590	SH-C-065	Part I, B. Verification and Underwriting
+Q8-SH-K1591	SH-C-065	Part I, D. Disputes, Choice of Law, Jurisdiction, Venue and Miscellaneous
+Q8-SH-K1592	SH-C-065	Reasons for account holds, Creditor or legal action
+Q8-SH-K1593	SH-C-065	Reasons for account holds, Creditor or legal action
+Q8-SH-K1594	SH-C-065	Part I, C. Reserves
+Q8-SH-K1595	SH-C-065	help.shopify.com/en/manual/payments/shopify-payments/onboarding/acceptable-business-practices.md
+Q8-SH-K1596	SH-C-065	Part I, A. Customer Service
+Q8-SH-K1597	SH-C-065	Part I, D. Effects of Termination
+Q8-SH-K1598	SH-C-065	Part I, A. The Shopify Payments Service
+Q8-SH-K1599	SH-C-065	Part I, C. Security Interest
+Q8-SH-K1600	SH-C-065	Flow of funds
+Q8-SH-K1601	SH-C-065	Flow of funds
+Q8-SH-K1602	SH-C-065	read_shopify_payments_bank_accounts
+Q8-SH-K1603	SH-C-066	Part I, A. The Shopify Payments Service
+Q8-SH-K1604	SH-C-066	Part I, D. Assignment and Amendment
+Q8-SH-K1605	SH-C-066	Part I, D. Assignment and Amendment
+Q8-SH-K1606	SH-C-066	Part I, D. Termination and suspension
+Q8-SH-K1607	SH-C-066	Part II, A. EU / EEA
+Q8-SH-K1608	SH-C-066	Part II, B. United Kingdom
+Q8-SH-K1609	SH-C-066	Part I, A. Our role as Payment Facilitator
+Q8-SH-K1610	SH-C-066	Account Terms
+Q8-SH-K1611	SH-C-066	Part II, A. EU / EEA and B. United Kingdom
+Q8-SH-K1612	SH-C-066	Part II — Regional Terms
+Q8-SH-K1613	SH-C-066	Part I, A. The Shopify Payments Service
+Q8-SH-K1614	SH-C-067	Part II, B. Canada, Regulated Payment Services
+Q8-SH-K1615	SH-C-067	13. Shopify Contracting Party and Forum, Regulated Payment Services (Canada)
+Q8-SH-K1616	SH-C-068	ProfileAssessment
+Q8-SH-K1617	SH-C-068	help.shopify.com/en/manual/payments/shopify-payments/onboarding/acceptable-business-practices.md
+Q8-SH-K1618	SH-C-068	help.shopify.com/en/manual/payments/shopify-payments/onboarding/acceptable-business-practices.md
+Q8-SH-K1619	SH-C-068	Review criteria, Transaction and operational patterns
+Q8-SH-K1620	SH-C-068	Account holds after receiving orders
+Q8-SH-K1621	SH-C-068	Part I, B. Verification and Underwriting
+Q8-SH-K1622	SH-C-068	Part I, A. Onboarding, KYC and underwriting
+Q8-SH-K1623	SH-C-068	Part I, A. Privacy
+Q8-SH-K1624	SH-C-068	Part I, A. Privacy
+Q8-SH-K1625	SH-C-068	Part I, A. Privacy of Others
+Q8-SH-K1626	SH-C-068	Why we process your information
+Q8-SH-K1627	SH-C-068	read_financial_kyc_information
+Q8-SH-K1628	SH-C-068	finance_kyc_information/update
+Q8-SH-K1629	SH-C-068	Shopify Payments risk standards and card network thresholds
+Q8-SH-K1630	SH-C-068	Shopify Payments risk standards and card network thresholds
+Q8-SH-K1631	SH-C-069	Shopify Payments
+Q8-SH-K1632	SH-C-069	Payout schedule
+Q8-SH-K1633	SH-C-069	Payouts with Shopify Balance
+Q8-SH-K1634	SH-C-069	help.shopify.com/en/manual/payments/shopify-payments/payouts/payout-timing.md
+Q8-SH-K1635	SH-C-069	help.shopify.com/en/manual/payments/shopify-payments/payouts.md
+Q8-SH-K1636	SH-C-069	Requirements for Multi-Currency Payouts, Plan requirements
+Q8-SH-K1637	SH-C-069	Part I, D. Effects of Termination
+Q8-SH-K1638	SH-C-069	read_shopify_payments_payouts
+Q8-SH-K1639	SH-C-069	help.shopify.com/en/manual/payments/shopify-payments/onboarding/bank-account-requirements.md
+Q8-SH-K1640	SH-C-069	Troubleshooting payout delays, Payout destination change
+Q8-SH-K1641	SH-C-069	Troubleshooting payout delays, Payout destination change
+Q8-SH-K1642	SH-C-069	help.shopify.com/en/manual/payments/shopify-payments/payouts/payout-timing.md
+Q8-SH-K1643	SH-C-069	How often you get paid with Shopify Payments
+Q8-SH-K1644	SH-C-070	Part I, C. Reserves
+Q8-SH-K1645	SH-C-070	Extending, appealing, and removing reserves
+Q8-SH-K1646	SH-C-070	Understanding reserves in Shopify Payments
+Q8-SH-K1647	SH-C-070	Reasons for account holds, Creditor or legal action
+Q8-SH-K1648	SH-C-070	Reasons for account holds, Creditor or legal action
+Q8-SH-K1649	SH-C-070	Reasons for account holds, Creditor or legal action
+Q8-SH-K1650	SH-C-070	Part I, C. Reserves
+Q8-SH-K1651	SH-C-070	Understanding reserves in Shopify Payments
+Q8-SH-K1652	SH-C-070	Reasons for using reserves in Shopify Payments
+Q8-SH-K1653	SH-C-071	Pricing and fees
+Q8-SH-K1654	SH-C-071	Part I, C. Shopify Payments Fees
+Q8-SH-K1655	SH-C-071	help.shopify.com/en/manual/international/pricing/fees.md
+Q8-SH-K1656	SH-C-072	help.shopify.com/en/manual/payments/chargebacks.md
+Q8-SH-K1657	SH-C-072	help.shopify.com/en/manual/payments/chargebacks.md
+Q8-SH-K1658	SH-C-072	help.shopify.com/en/manual/payments/chargebacks.md
+Q8-SH-K1659	SH-C-072	Part I, C. Contesting Chargebacks and Disputes
+Q8-SH-K1660	SH-C-072	Part I, C. Contesting Chargebacks and Disputes
+Q8-SH-K1661	SH-C-072	Part I, A. Payment Methods
+Q8-SH-K1662	SH-C-072	help.shopify.com/en/manual/payments/chargebacks.md
+Q8-SH-K1663	SH-C-072	Part I, A. Customer Service
+Q8-SH-K1664	SH-C-072	write_shopify_payments_dispute_evidences
+Q8-SH-K1665	SH-C-072	disputes/create
+Q8-SH-K1666	SH-C-072	disputes/update
+Q8-SH-K1667	SH-C-073	help.shopify.com/en/manual/payments/shop-pay/shopify-protect.md
+Q8-SH-K1668	SH-C-073	2. Shopify Protect Warranty Service
+Q8-SH-K1669	SH-C-073	term and eligibility
+Q8-SH-K1670	SH-C-073	Considerations
+Q8-SH-K1671	SH-C-073	representations and warranties
+Q8-SH-K1672	SH-C-073	www.shopify.com/legal/terms-shopify-protect
+Q8-SH-K1673	SH-C-073	2.6 Not Insurance
+Q8-SH-K1674	SH-C-073	orders/shopify_protect_eligibility_changed
+Q8-SH-K1675	SH-C-074	Shop Pay Wallet API
+Q8-SH-K1676	SH-C-074	1. Accelerated Checkout (Shop Pay)
+Q8-SH-K1677	SH-C-074	2.4 Shop Pay
+Q8-SH-K1678	SH-C-074	www.shopify.com/legal/shop-pay-merchant-terms
+Q8-SH-K1679	SH-C-074	2. Merchant Obligations and Shopify’s role
+Q8-SH-K1680	SH-C-074	2. Merchant Obligations and Shopify’s role
+Q8-SH-K1681	SH-C-074	2. Merchant Obligations and Shopify’s role
+Q8-SH-K1682	SH-C-074	Shopify's Consumer Services
+Q8-SH-K1683	SH-C-074	Shop Pay Wallet API
+Q8-SH-K1684	SH-C-074	dev.shopify.shop_pay
+Q8-SH-K1685	SH-C-074	help.shopify.com/en/manual/payments/shop-pay.md
+Q8-SH-K1686	SH-C-075	Shop Pay Installments
+Q8-SH-K1687	SH-C-075	Shop Pay Installments
+Q8-SH-K1688	SH-C-075	availability note
+Q8-SH-K1689	SH-C-075	help.shopify.com/en/manual/payments/shop-pay-installments.md
+Q8-SH-K1690	SH-C-075	Part II, A. Australia / B. Canada / C. United Kingdom / D. United States, Shop Pay Installments
+Q8-SH-K1691	SH-C-075	Part II, A. Australia / B. Canada / C. United Kingdom / D. United States, Shop Pay Installments
+Q8-SH-K1692	SH-C-075	unauthenticated_read_shop_pay_installments_pricing
+Q8-SH-K1693	SH-C-075	help.shopify.com/en/manual/payments/shop-pay-installments.md
+Q8-SH-K1694	SH-C-076	Build options
+Q8-SH-K1695	SH-C-076	Payments Apps API
+Q8-SH-K1696	SH-C-076	Extensions for payments, introduction
+Q8-SH-K1697	SH-C-076	Considerations table, Approval process
+Q8-SH-K1698	SH-C-076	Considerations table, Making your app discoverable
+Q8-SH-K1699	SH-C-076	C.4. Additional Terms Applicable to Payments Developers, Approval
+Q8-SH-K1700	SH-C-076	Extensions for payments, note
+Q8-SH-K1701	SH-C-076	help.shopify.com/en/manual/payments/third-party-providers.md
+Q8-SH-K1702	SH-C-076	Considerations table, Payments Partner requirements
+Q8-SH-K1703	SH-C-076	C.4. Additional Terms Applicable to Payments Developers, Revenue Share
+Q8-SH-K1704	SH-C-076	C.4. Additional Terms Applicable to Payments Developers, Wind Down Period
+Q8-SH-K1705	SH-C-076	paymentSessionResolve
+Q8-SH-K1706	SH-C-076	mTLS configuration
+Q8-SH-K1707	SH-C-076	Retry policy, Outbound
+Q8-SH-K1708	SH-C-076	Retry policy, Outbound
+Q8-SH-K1709	SH-C-076	Retry policy, Inbound
+Q8-SH-K1710	SH-C-076	Considerations table, Approval process
+Q8-SH-K1711	SH-C-077	2.3 PayPal Express Checkout and Shopify Payments Accounts
+Q8-SH-K1712	SH-C-077	How you get paid
+Q8-SH-K1713	SH-C-077	help.shopify.com/en/manual/payments/paypal.md
+Q8-SH-K1714	SH-C-077	help.shopify.com/en/manual/payments/paypal.md
+Q8-SH-K1715	SH-C-077	2.3 PayPal Express Checkout and Shopify Payments Accounts
+Q8-SH-K1716	SH-C-077	payment providers table, row PayPal Wallet, column How you get paid
+Q8-SH-K1717	SH-C-077	help.shopify.com/en/manual/payments/paypal.md
+Q8-SH-K1718	SH-C-077	2.3 PayPal Express Checkout and Shopify Payments Accounts
+Q8-SH-K1719	SH-C-077	2. Account Activation (summary)
+Q8-SH-K1720	SH-C-077	2. Account Activation (summary)
+Q8-SH-K1721	SH-C-078	2.5 Apple Pay for Safari Account
+Q8-SH-K1722	SH-C-078	2.6 Google Pay
+Q8-SH-K1723	SH-C-078	2.7 Meta Pay
+Q8-SH-K1724	SH-C-078	2.8 Amazon Pay
+Q8-SH-K1725	SH-C-078	help.shopify.com/en/manual/payments/accelerated-checkouts.md
+Q8-SH-K1726	SH-C-078	2. Account Activation (summary)
+Q8-SH-K1727	SH-C-078	help.shopify.com/en/manual/payments/accelerated-checkouts.md
+Q8-SH-K1728	SH-C-078	2. Account Activation (summary)
+Q8-SH-K1729	SH-C-078	2.5 Apple Pay for Safari Account
+Q8-SH-K1730	SH-C-078	2.6 Google Pay
+Q8-SH-K1731	SH-C-078	2.7 Meta Pay
+Q8-SH-K1732	SH-C-078	2.8 Amazon Pay
+Q8-SH-K1733	SH-C-078	2. Account Activation (summary)
+Q8-SH-K1734	SH-C-078	com.google.pay
+Q8-SH-K1735	SH-C-079	Use a suggested manual payment method
+Q8-SH-K1736	SH-C-079	help.shopify.com/en/manual/payments/manual-payments.md
+Q8-SH-K1737	SH-C-079	help.shopify.com/en/manual/payments/manual-payments.md
+Q8-SH-K1738	SH-C-079	Create a custom manual payment method
+Q8-SH-K1739	SH-C-079	Multi-currency support
+Q8-SH-K1740	SH-C-079	transaction fees paragraph
+Q8-SH-K1741	SH-C-080	help.shopify.com/en/manual/payments/shopify-payments/local-payment-methods.md
+Q8-SH-K1742	SH-C-080	help.shopify.com/en/manual/payments/shopify-payments/local-payment-methods.md
+Q8-SH-K1743	SH-C-080	help.shopify.com/en/manual/payments/shopify-payments/local-payment-methods.md
+Q8-SH-K1744	SH-C-080	caution note
+Q8-SH-K1745	SH-C-080	help.shopify.com/en/manual/payments/shopify-payments/managed-payment-methods.md
+Q8-SH-K1746	SH-C-080	Requirements for using managed payment methods
+Q8-SH-K1747	SH-C-080	help.shopify.com/en/manual/payments/shopify-payments/local-payment-methods.md
+Q8-SH-K1748	SH-C-080	help.shopify.com/en/manual/payments/shopify-payments/managed-payment-methods.md
+Q8-SH-K1749	SH-C-081	Accepting cryptocurrencies in your Shopify checkout
+Q8-SH-K1750	SH-C-081	Considerations for accepting cryptocurrencies
+Q8-SH-K1751	SH-C-081	1.1 Eligibility
+Q8-SH-K1752	SH-C-081	Part I, A. Cryptocurrency Payments
+Q8-SH-K1753	SH-C-081	Part I, A. Cryptocurrency Payments
+Q8-SH-K1754	SH-C-081	Part I, A. Cryptocurrency Payments
+Q8-SH-K1755	SH-C-081	A. Global
+Q8-SH-K1756	SH-C-081	Part I, A. Cryptocurrency Payments
+Q8-SH-K1757	SH-C-081	2.1 Earning and Calculating Credits
+Q8-SH-K1758	SH-C-082	help.shopify.com/en/manual/payments/shop-cash.md
+Q8-SH-K1759	SH-C-082	help.shopify.com/en/manual/payments/shop-cash.md
+Q8-SH-K1760	SH-C-082	help.shopify.com/en/manual/payments/shop-cash.md
+Q8-SH-K1761	SH-C-083	shopify.dev/docs/api/functions/latest/payment-customization.md
+Q8-SH-K1762	SH-C-083	Payment Customization
+Q8-SH-K1763	SH-C-083	payment_customization
+Q8-SH-K1764	SH-C-083	shopify.dev/docs/api/functions/latest/payment-customization.md
+Q8-SH-K1765	SH-C-083	operations reference
+Q8-SH-K1766	SH-C-083	write_payment_customizations
+Q8-SH-K1767	SH-C-083	Payment Customization
+Q8-SH-K1768	SH-C-084	help.shopify.com/en/manual/payments/payment-authorization.md
+Q8-SH-K1769	SH-C-084	What is a credit card authorization period?
+Q8-SH-K1770	SH-C-084	Extended authorization periods, plan requirement
+Q8-SH-K1771	SH-C-084	What is a credit card authorization period?
+Q8-SH-K1772	SH-C-084	introduction, reasons for manual capture
+Q8-SH-K1773	SH-C-084	How a credit card payment gets processed, Capture
+Q8-SH-K1774	SH-C-084	order_transactions/create
+Q8-SH-K1775	SH-C-084	orders/paid
+Q8-SH-K1776	SH-C-085	APIs list
+Q8-SH-K1777	SH-C-085	write_payment_mandate
+Q8-SH-K1778	SH-C-085	read_customer_payment_methods
+Q8-SH-K1779	SH-C-085	customer_payment_methods/create
+Q8-SH-K1780	SH-C-085	customer_payment_methods/revoke
+Q8-SH-K1781	SH-C-086	help.shopify.com/en/manual/sell-in-person/getting-started/setup-payment-method/shopify-payments-pos.md
+Q8-SH-K1782	SH-C-086	card_present_payments
+Q8-SH-K1783	SH-C-086	Supported countries and regions
+Q8-SH-K1784	SH-C-086	9.3 POS Services
+Q8-SH-K1785	SH-C-086	help.shopify.com/en/manual/sell-in-person/shopify-pos/selling-offline/offline-payments.md
+Q8-SH-K1786	SH-C-086	Considerations for using offline payments
+Q8-SH-K1787	SH-C-086	Considerations for using offline payments
+Q8-SH-K1788	SH-C-086	Considerations for using offline payments
+Q8-SH-K1789	SH-C-087	read_cash_tracking
+Q8-SH-K1790	SH-C-087	write_cash_tracking
+Q8-SH-K1791	SH-C-088	Banking
+Q8-SH-K1792	SH-C-088	help.shopify.com/en/manual/finance.md
+Q8-SH-K1793	SH-C-088	help.shopify.com/en/manual/finance/shopify-balance/eligibility.md
+Q8-SH-K1794	SH-C-088	Shopify Balance account requirements
+Q8-SH-K1795	SH-C-088	help.shopify.com/en/manual/finance/shopify-balance/eligibility.md
+Q8-SH-K1796	SH-C-088	Shopify Balance account requirements
+Q8-SH-K1797	SH-C-088	Shopify Balance account requirements
+Q8-SH-K1798	SH-C-088	help.shopify.com/en/manual/finance.md (note)
+Q8-SH-K1799	SH-C-088	help.shopify.com/en/manual/finance.md (note)
+Q8-SH-K1800	SH-C-088	Payouts with Shopify Balance
+Q8-SH-K1801	SH-C-088	Shopify Capital remittances or repayments
+Q8-SH-K1802	SH-C-088	help.shopify.com/en/manual/finance/shopify-balance.md
+Q8-SH-K1803	SH-C-088	Payouts with Shopify Balance
+Q8-SH-K1804	SH-C-089	Cards
+Q8-SH-K1805	SH-C-089	Shopify Balance card use requirements
+Q8-SH-K1806	SH-C-089	help.shopify.com/en/manual/finance.md (note)
+Q8-SH-K1807	SH-C-090	Credit
+Q8-SH-K1808	SH-C-090	Eligibility for Shopify Credit
+Q8-SH-K1809	SH-C-090	help.shopify.com/en/manual/finance/shopify-credit.md (note)
+Q8-SH-K1810	SH-C-090	help.shopify.com/en/manual/finance/shopify-credit.md
+Q8-SH-K1811	SH-C-091	Capital
+Q8-SH-K1812	SH-C-091	help.shopify.com/en/manual/finance/shopify-capital/eligibility.md
+Q8-SH-K1813	SH-C-091	Application process for Shopify Capital
+Q8-SH-K1814	SH-C-091	help.shopify.com/en/manual/finance/shopify-capital/eligibility.md
+Q8-SH-K1815	SH-C-091	help.shopify.com/en/manual/finance/shopify-capital.md
+Q8-SH-K1816	SH-C-091	Countries where Shopify Capital is available
+Q8-SH-K1817	SH-C-091	Shopify Capital eligibility requirements, payment provider
+Q8-SH-K1818	SH-C-091	Shopify Capital eligibility requirements, payment provider
+Q8-SH-K1819	SH-C-091	note at end of page
+Q8-SH-K1820	SH-C-091	help.shopify.com/en/manual/finance/shopify-capital/united-states.md
+Q8-SH-K1821	SH-C-092	Capital
+Q8-SH-K1822	SH-C-092	help.shopify.com/en/manual/finance/shopify-capital/eligibility.md
+Q8-SH-K1823	SH-C-092	Application process for Shopify Capital
+Q8-SH-K1824	SH-C-092	help.shopify.com/en/manual/finance/shopify-capital/united-kingdom.md
+Q8-SH-K1825	SH-C-092	note at end of page
+Q8-SH-K1826	SH-C-092	help.shopify.com/en/manual/finance/shopify-capital/united-kingdom.md
+Q8-SH-K1827	SH-C-092	notifications
+Q8-SH-K1828	SH-C-093	Capital
+Q8-SH-K1829	SH-C-093	help.shopify.com/en/manual/finance/shopify-capital/eligibility.md
+Q8-SH-K1830	SH-C-093	Application process for Shopify Capital
+Q8-SH-K1831	SH-C-093	bank account changes
+Q8-SH-K1832	SH-C-094	Capital
+Q8-SH-K1833	SH-C-094	help.shopify.com/en/manual/finance/shopify-capital/eligibility.md
+Q8-SH-K1834	SH-C-094	Application process for Shopify Capital
+Q8-SH-K1835	SH-C-095	Capital
+Q8-SH-K1836	SH-C-095	help.shopify.com/en/manual/finance/shopify-capital/eligibility.md
+Q8-SH-K1837	SH-C-095	Application process for Shopify Capital
+Q8-SH-K1838	SH-C-095	note at end of page
+Q8-SH-K1839	SH-C-095	note at end of page
+Q8-SH-K1840	SH-C-096	Capital
+Q8-SH-K1841	SH-C-096	help.shopify.com/en/manual/finance/shopify-capital/eligibility.md
+Q8-SH-K1842	SH-C-096	Application process for Shopify Capital
+Q8-SH-K1843	SH-C-096	note at end of page
+Q8-SH-K1844	SH-C-096	note at end of page
+Q8-SH-K1845	SH-C-097	Capital
+Q8-SH-K1846	SH-C-097	help.shopify.com/en/manual/finance/shopify-capital/eligibility.md
+Q8-SH-K1847	SH-C-097	Application process for Shopify Capital
+Q8-SH-K1848	SH-C-097	note at end of page
+Q8-SH-K1849	SH-C-097	help.shopify.com/en/manual/finance/shopify-capital/netherlands.md (note)
+Q8-SH-K1850	SH-C-097	note at end of page
+Q8-SH-K1851	SH-C-098	app note
+Q8-SH-K1852	SH-C-098	help.shopify.com/en/manual/finance/shopify-bill-pay.md (note)
+Q8-SH-K1853	SH-C-098	note at end of page
+Q8-SH-K1854	SH-C-098	help.shopify.com/en/manual/finance/shopify-bill-pay.md
+Q8-SH-K1855	SH-C-099	Criteria for receiving a Form 1099-K
+Q8-SH-K1856	SH-C-099	help.shopify.com/en/manual/payments/shopify-payments/supported-countries/united-states/tax-reporting.md
+Q8-SH-K1857	SH-C-099	help.shopify.com/en/manual/payments/shopify-payments/supported-countries/united-states/tax-reporting.md
+Q8-SH-K1858	SH-C-099	Part I, A. Taxes
+Q8-SH-K1859	SH-C-099	help.shopify.com/en/manual/payments/shopify-payments/supported-countries/united-states/tax-reporting.md
+Q8-SH-K1860	SH-C-099	help.shopify.com/en/manual/payments/shopify-payments/supported-countries/united-states/tax-reporting.md
+Q8-SH-K1861	SH-C-099	Criteria for receiving a Form 1099-K
+Q8-SH-K1862	SH-C-099	help.shopify.com/en/manual/payments/shopify-payments/supported-countries/united-states/tax-reporting.md
+Q8-SH-K1863	SH-C-100	taxes
+Q8-SH-K1864	SH-C-100	Componentizing Shopify’s Tax Engine, subtitle
+Q8-SH-K1865	SH-C-100	Tax service availability by region
+Q8-SH-K1866	SH-C-100	Tax service availability by region, row The United States
+Q8-SH-K1867	SH-C-100	help.shopify.com/en/manual/taxes/shopify-tax/considerations.md
+Q8-SH-K1868	SH-C-100	Considerations for Shopify Tax in the United States
+Q8-SH-K1869	SH-C-100	Considerations for Shopify Tax in the United States
+Q8-SH-K1870	SH-C-100	help.shopify.com/en/manual/taxes.md
+Q8-SH-K1871	SH-C-100	5. Payment of Fees and Taxes
+Q8-SH-K1872	SH-C-100	7. Limitation of Liability and Indemnification
+Q8-SH-K1873	SH-C-100	2. Merchant Obligations
+Q8-SH-K1874	SH-C-100	2. Merchant Obligations
+Q8-SH-K1875	SH-C-100	www.shopify.com/legal/shopify-tax-terms
+Q8-SH-K1876	SH-C-100	2. Merchant Obligations
+Q8-SH-K1877	SH-C-100	5. Payment of Fees and Taxes
+Q8-SH-K1878	SH-C-100	read_taxes
+Q8-SH-K1879	SH-C-100	www.shopify.com/legal/shopify-tax-terms
+Q8-SH-K1880	SH-C-100	help.shopify.com/en/manual/taxes/shopify-tax/pricing.md
+Q8-SH-K1881	SH-C-100	Shopify Tax fees
+Q8-SH-K1882	SH-C-100	2. Merchant Obligations
+Q8-SH-K1883	SH-C-100	help.shopify.com/en/manual/taxes/shopify-tax.md
+Q8-SH-K1884	SH-C-101	taxes
+Q8-SH-K1885	SH-C-101	help.shopify.com/en/manual/taxes.md (note)
+Q8-SH-K1886	SH-C-101	About Basic Tax
+Q8-SH-K1887	SH-C-101	help.shopify.com/en/manual/international/managed-markets.md
+Q8-SH-K1888	SH-C-101	2. Merchant Obligations
+Q8-SH-K1889	SH-C-101	5. Payment of Fees and Taxes
+Q8-SH-K1890	SH-C-102	help.shopify.com/en/manual/taxes/shopify-tax/vat-validate.md
+Q8-SH-K1891	SH-C-102	Activate VAT validation in checkout
+Q8-SH-K1892	SH-C-102	help.shopify.com/en/manual/taxes/shopify-tax/vat-validate.md
+Q8-SH-K1893	SH-C-102	help.shopify.com/en/manual/taxes/shopify-tax/vat-validate.md
+Q8-SH-K1894	SH-C-102	Activate VAT validation in checkout
+Q8-SH-K1895	SH-C-103	help.shopify.com/en/manual/taxes/tax-apps.md
+Q8-SH-K1896	SH-C-103	Requirements and considerations for third-party tax apps
+Q8-SH-K1897	SH-C-103	tax_calculation
+Q8-SH-K1898	SH-C-103	Tax apps
+Q8-SH-K1899	SH-C-103	Requirements and considerations for third-party tax apps
+Q8-SH-K1900	SH-C-103	Requirements and considerations for third-party tax apps
+Q8-SH-K1901	SH-C-103	Tax service availability by region, row All countries and regions
+Q8-SH-K1902	SH-C-103	Requirements and considerations for third-party tax apps
+Q8-SH-K1903	SH-C-103	Requirements and considerations for third-party tax apps
+Q8-SH-K1904	SH-C-103	Requirements and considerations for third-party tax apps
+Q8-SH-K1905	SH-C-103	tax_services/create
+Q8-SH-K1906	SH-C-103	write_taxes
+Q8-SH-K1907	SH-C-104	Eligibility for automated filing with Shopify Tax
+Q8-SH-K1908	SH-C-104	help.shopify.com/en/manual/taxes/shopify-tax/automated-filing/filing-partners.md
+Q8-SH-K1909	SH-C-104	Eligibility for automated filing with Shopify Tax
+Q8-SH-K1910	SH-C-104	Eligibility for automated filing with Shopify Tax
+Q8-SH-K1911	SH-C-104	help.shopify.com/en/manual/taxes/shopify-tax/automated-filing/filing-partners.md
+Q8-SH-K1912	SH-C-104	1. Tax Filing Services
+Q8-SH-K1913	SH-C-104	1. Tax Filing Services
+Q8-SH-K1914	SH-C-104	2. Use of Tax Filing Services
+Q8-SH-K1915	SH-C-104	1. Tax Filing Services
+Q8-SH-K1916	SH-C-104	2. Use of Tax Filing Services
+Q8-SH-K1917	SH-C-104	7. Limitation of Liability and Indemnification
+Q8-SH-K1918	SH-C-104	5. Payment of Fees and Taxes
+Q8-SH-K1919	SH-C-104	1. Tax Filing Services
+Q8-SH-K1920	SH-C-105	help.shopify.com/en/manual/international/duties-and-import-taxes.md
+Q8-SH-K1921	SH-C-105	Understanding what your customer is charged
+Q8-SH-K1922	SH-C-105	help.shopify.com/en/manual/international/duties-and-import-taxes.md
+Q8-SH-K1923	SH-C-105	5. Payment of Fees and Taxes
+Q8-SH-K1924	SH-C-105	B. Your Responsibilities
+Q8-SH-K1925	SH-C-105	help.shopify.com/en/manual/international/managed-markets.md
+Q8-SH-K1926	SH-C-105	Managed Markets benefits
+Q8-SH-K1927	SH-C-105	help.shopify.com/en/manual/international/duties-and-import-taxes.md
+Q8-SH-K1928	SH-C-106	Markets
+Q8-SH-K1929	SH-C-106	Shopify Markets
+Q8-SH-K1930	SH-C-106	help.shopify.com/en/manual/markets.md
+Q8-SH-K1931	SH-C-106	Customizing market experiences
+Q8-SH-K1932	SH-C-106	read_markets
+Q8-SH-K1933	SH-C-106	markets/create
+Q8-SH-K1934	SH-C-107	help.shopify.com/en/manual/payments/shopify-payments/onboarding/account-setup.md
+Q8-SH-K1935	SH-C-107	Store currency
+Q8-SH-K1936	SH-C-107	help.shopify.com/en/manual/payments/shopify-payments/onboarding/account-setup.md
+Q8-SH-K1937	SH-C-108	Shopify Payments and other payment providers
+Q8-SH-K1938	SH-C-108	Shopify Payments and other payment providers
+Q8-SH-K1939	SH-C-108	help.shopify.com/en/manual/international/pricing.md (note)
+Q8-SH-K1940	SH-C-108	help.shopify.com/en/manual/payments/shopify-payments/store-currency/multi-currency.md
+Q8-SH-K1941	SH-C-108	Set a currency for a market in Markets
+Q8-SH-K1942	SH-C-108	help.shopify.com/en/manual/international/pricing.md
+Q8-SH-K1943	SH-C-108	Set a currency for a market in Markets
+Q8-SH-K1944	SH-C-109	help.shopify.com/en/manual/international/pricing/exchange-rates.md
+Q8-SH-K1945	SH-C-109	help.shopify.com/en/manual/international/pricing.md
+Q8-SH-K1946	SH-C-109	Shopify Payments currency conversion fee
+Q8-SH-K1947	SH-C-109	help.shopify.com/en/manual/payments/shopify-payments/store-currency/currency-conversion-calculation.md
+Q8-SH-K1948	SH-C-109	New currency calculation method
+Q8-SH-K1949	SH-C-109	Manual exchange rate conversions
+Q8-SH-K1950	SH-C-109	Conversion rate and fee
+Q8-SH-K1951	SH-C-109	Conversion rate and fee
+Q8-SH-K1952	SH-C-109	Currency conversion risks
+Q8-SH-K1953	SH-C-109	help.shopify.com/en/manual/international/pricing/fees.md
+Q8-SH-K1954	SH-C-109	help.shopify.com/en/manual/international/pricing/fees.md
+Q8-SH-K1955	SH-C-110	help.shopify.com/en/manual/international/managed-markets.md
+Q8-SH-K1956	SH-C-110	help.shopify.com/en/manual/international/managed-markets.md
+Q8-SH-K1957	SH-C-110	help.shopify.com/en/manual/international/managed-markets/overview.md
+Q8-SH-K1958	SH-C-110	help.shopify.com/en/manual/international/managed-markets.md
+Q8-SH-K1959	SH-C-110	help.shopify.com/en/manual/international/managed-markets.md
+Q8-SH-K1960	SH-C-110	Flow of funds
+Q8-SH-K1961	SH-C-110	Part II, B. Canada / C. United Kingdom / D. United States, Managed Markets
+Q8-SH-K1962	SH-C-110	Part II, Managed Markets
+Q8-SH-K1963	SH-C-110	Part II, B. Canada / C. United Kingdom / D. United States, Managed Markets
+Q8-SH-K1964	SH-C-110	Merchant of record disclaimer at checkout
+Q8-SH-K1965	SH-C-110	help.shopify.com/en/manual/international/managed-markets/overview.md
+Q8-SH-K1966	SH-C-110	help.shopify.com/en/manual/international/managed-markets/overview.md
+Q8-SH-K1967	SH-C-111	Geolocation apps
+Q8-SH-K1968	SH-C-112	Rollouts
+Q8-SH-K1969	SH-C-112	help.shopify.com/en/manual/markets/rollouts.md
+Q8-SH-K1970	SH-C-112	read_rollouts
+Q8-SH-K1971	SH-C-112	rollouts/create
+Q8-SH-K1972	SH-C-113	help.shopify.com/en/manual/markets/backup-region.md
+Q8-SH-K1973	SH-C-113	help.shopify.com/en/manual/markets/backup-region.md
+Q8-SH-K1974	SH-C-113	Configure your backup region
+Q8-SH-K1975	SH-C-113	markets_backup_region/update
+Q8-SH-K1976	SH-C-114	shipping
+Q8-SH-K1977	SH-C-114	Shipping and fulfillment
+Q8-SH-K1978	SH-C-114	4. Your Responsibilities
+Q8-SH-K1979	SH-C-114	write_shipping
+Q8-SH-K1980	SH-C-114	dev.ucp.shopping.fulfillment
+Q8-SH-K1981	SH-C-115	Shipping rate apps
+Q8-SH-K1982	SH-C-115	B. Your Responsibilities
+Q8-SH-K1983	SH-C-115	read_shipping
+Q8-SH-K1984	SH-C-116	help.shopify.com/en/manual/fulfillment/fulfilling-orders/shipping-labels.md
+Q8-SH-K1985	SH-C-116	Shipping labels
+Q8-SH-K1986	SH-C-116	9.4 Shopify Shipping
+Q8-SH-K1987	SH-C-116	Getting started with shipping labels
+Q8-SH-K1988	SH-C-116	Getting started with shipping labels
+Q8-SH-K1989	SH-C-116	A. Shopify Shipping
+Q8-SH-K1990	SH-C-116	www.shopify.com/legal/terms-shipping-global
+Q8-SH-K1991	SH-C-116	A. Shopify Shipping
+Q8-SH-K1992	SH-C-116	A. Shopify Shipping
+Q8-SH-K1993	SH-C-116	A. Shopify Shipping
+Q8-SH-K1994	SH-C-116	B. Your Responsibilities
+Q8-SH-K1995	SH-C-116	B. Your Responsibilities
+Q8-SH-K1996	SH-C-116	9.4 Shopify Shipping
+Q8-SH-K1997	SH-C-116	D. Fees
+Q8-SH-K1998	SH-C-117	help.shopify.com/en/manual/fulfillment/fulfilling-orders/shipping-labels/shipping-insurance.md
+Q8-SH-K1999	SH-C-117	tip
+Q8-SH-K2000	SH-C-117	B. Your Responsibilities
+Q8-SH-K2001	SH-C-118	FulfillmentOrder
+Q8-SH-K2002	SH-C-118	4. Your Responsibilities
+Q8-SH-K2003	SH-C-118	read_merchant_managed_fulfillment_orders
+Q8-SH-K2004	SH-C-118	fulfillment_holds/added
+Q8-SH-K2005	SH-C-119	About fulfillment services
+Q8-SH-K2006	SH-C-119	How it works
+Q8-SH-K2007	SH-C-119	Third-party logistics (3PL) apps
+Q8-SH-K2008	SH-C-119	How it works
+Q8-SH-K2009	SH-C-119	About fulfillment services
+Q8-SH-K2010	SH-C-119	write_assigned_fulfillment_orders
+Q8-SH-K2011	SH-C-119	fulfillment_orders/cancellation_request_accepted
+Q8-SH-K2012	SH-C-120	app note
+Q8-SH-K2013	SH-C-120	ShopifyFulfillmentNetwork
+Q8-SH-K2014	SH-C-120	help.shopify.com/en/manual/fulfillment/shopify-fulfillment-network.md
+Q8-SH-K2015	SH-C-120	help.shopify.com/en/manual/fulfillment/shopify-fulfillment-network.md
+Q8-SH-K2016	SH-C-121	fulfillment_orders/line_items_prepared_for_pickup
+Q8-SH-K2017	SH-C-121	fulfillment_orders/line_items_prepared_for_local_delivery
+Q8-SH-K2018	SH-C-122	Delivery Customization
+Q8-SH-K2019	SH-C-122	delivery_customization
+Q8-SH-K2020	SH-C-122	Lifecycle of a Shopify Function
+Q8-SH-K2021	SH-C-122	write_delivery_customizations
+Q8-SH-K2022	SH-C-123	Fulfillment Constraints
+Q8-SH-K2023	SH-C-123	fulfillment_constraints
+Q8-SH-K2024	SH-C-123	Lifecycle of a Shopify Function
+Q8-SH-K2025	SH-C-123	write_fulfillment_constraint_rules
+Q8-SH-K2026	SH-C-124	local_pickup_delivery_option_generator
+Q8-SH-K2027	SH-C-124	pickup_point_delivery_option_generator
+Q8-SH-K2028	SH-C-124	Lifecycle of a Shopify Function
+Q8-SH-K2029	SH-C-124	write_delivery_option_generators
+Q8-SH-K2030	SH-C-125	write_delivery_promises
+Q8-SH-K2031	SH-C-125	delivery_promise_settings/update
+Q8-SH-K2032	SH-C-126	Order tracking apps
+Q8-SH-K2033	SH-C-127	Discounts
+Q8-SH-K2034	SH-C-127	Discounts and marketing
+Q8-SH-K2035	SH-C-127	read_discounts
+Q8-SH-K2036	SH-C-127	discounts/create
+Q8-SH-K2037	SH-C-127	dev.ucp.shopping.discount
+Q8-SH-K2038	SH-C-128	Discount
+Q8-SH-K2039	SH-C-128	discount
+Q8-SH-K2040	SH-C-128	Lifecycle of a Shopify Function
+Q8-SH-K2041	SH-C-128	discount_details_function_settings
+Q8-SH-K2042	SH-C-129	Growth
+Q8-SH-K2043	SH-C-129	Campaigns
+Q8-SH-K2044	SH-C-129	Marketing apps
+Q8-SH-K2045	SH-C-129	write_marketing_events
+Q8-SH-K2046	SH-C-129	read_marketing_integrated_campaigns
+Q8-SH-K2047	SH-C-130	9.7 Shopify Email
+Q8-SH-K2048	SH-C-130	9.7 Shopify Email
+Q8-SH-K2049	SH-C-130	9.5 SMS Messaging
+Q8-SH-K2050	SH-C-131	Attribution
+Q8-SH-K2051	SH-C-131	order_attribution_config
+Q8-SH-K2052	SH-C-131	order_attribution_config
+Q8-SH-K2053	SH-C-132	help.shopify.com/en/manual/promoting-marketing/shopify-audiences.md (note)
+Q8-SH-K2054	SH-C-132	9.12 Audiences
+Q8-SH-K2055	SH-C-132	help.shopify.com/en/manual/promoting-marketing/shopify-audiences.md
+Q8-SH-K2056	SH-C-132	help.shopify.com/en/manual/promoting-marketing/shopify-audiences.md
+Q8-SH-K2057	SH-C-133	help.shopify.com/en/manual/online-sales-channels/shop/shop-campaigns.md
+Q8-SH-K2058	SH-C-134	help.shopify.com/en/manual/promoting-marketing/collabs.md
+Q8-SH-K2059	SH-C-134	Collabs: Content commerce
+Q8-SH-K2060	SH-C-134	help.shopify.com/en/manual/promoting-marketing/collabs.md
+Q8-SH-K2061	SH-C-135	Sales channels
+Q8-SH-K2062	SH-C-135	sales_channels
+Q8-SH-K2063	SH-C-135	What is a sales channel?
+Q8-SH-K2064	SH-C-135	What is a sales channel?
+Q8-SH-K2065	SH-C-135	channel_config
+Q8-SH-K2066	SH-C-135	When to create a sales channel?
+Q8-SH-K2067	SH-C-135	9.9 Third Party Services and Third Party Partners
+Q8-SH-K2068	SH-C-135	read_channels
+Q8-SH-K2069	SH-C-135	collection_publications/create
+Q8-SH-K2070	SH-C-136	help.shopify.com/en/manual/online-sales-channels/shop.md
+Q8-SH-K2071	SH-C-136	9.8 Shop
+Q8-SH-K2072	SH-C-136	Shop: Track, Pay, Discover
+Q8-SH-K2073	SH-C-136	help.shopify.com/en/manual/online-sales-channels/shop.md
+Q8-SH-K2074	SH-C-136	9.8 Shop
+Q8-SH-K2075	SH-C-136	help.shopify.com/en/manual/online-sales-channels/shop.md (note)
+Q8-SH-K2076	SH-C-136	9.8 Shop
+Q8-SH-K2077	SH-C-136	Shopify's Consumer Services
+Q8-SH-K2078	SH-C-136	Shop API
+Q8-SH-K2079	SH-C-137	help.shopify.com/en/manual/online-sales-channels/marketplaces/marketplace-connect.md
+Q8-SH-K2080	SH-C-137	Marketplace sales reporting for automated filing
+Q8-SH-K2081	SH-C-137	read_marketplace_orders
+Q8-SH-K2082	SH-C-137	write_marketplace_orders
+Q8-SH-K2083	SH-C-138	Listings
+Q8-SH-K2084	SH-C-138	write_product_feeds
+Q8-SH-K2085	SH-C-138	collection_listings/update
+Q8-SH-K2086	SH-C-139	Build headless commerce
+Q8-SH-K2087	SH-C-139	What you get
+Q8-SH-K2088	SH-C-139	Storefront API
+Q8-SH-K2089	SH-C-139	Hydrogen framework
+Q8-SH-K2090	SH-C-139	Storefront API
+Q8-SH-K2091	SH-C-139	unauthenticated_read_bundles
+Q8-SH-K2092	SH-C-140	1. Agentic Storefronts
+Q8-SH-K2093	SH-C-140	Build commerce agents with UCP
+Q8-SH-K2094	SH-C-140	dev.ucp.shopping.checkout
+Q8-SH-K2095	SH-C-140	2. Eligibility
+Q8-SH-K2096	SH-C-140	4. Merchant Obligations and Authorizations
+Q8-SH-K2097	SH-C-140	8. Termination
+Q8-SH-K2098	SH-C-140	4. Merchant Obligations and Authorizations
+Q8-SH-K2099	SH-C-140	3. Participating Channel Terms Incorporation
+Q8-SH-K2100	SH-C-140	3. Participating Channel Terms Incorporation
+Q8-SH-K2101	SH-C-140	3. Participating Channel Terms Incorporation
+Q8-SH-K2102	SH-C-140	3. Participating Channel Terms Incorporation
+Q8-SH-K2103	SH-C-140	7. Data and Customer Relationships
+Q8-SH-K2104	SH-C-140	9.14 Agentic Storefronts
+Q8-SH-K2105	SH-C-140	6.1 Fees
+Q8-SH-K2106	SH-C-140	8. Termination
+Q8-SH-K2107	SH-C-141	help.shopify.com/en/manual/online-sales-channels/shopify-collective.md
+Q8-SH-K2108	SH-C-141	help.shopify.com/en/manual/online-sales-channels/shopify-collective.md
+Q8-SH-K2109	SH-C-142	Shopify Point of Sale (POS)
+Q8-SH-K2110	SH-C-142	Retail
+Q8-SH-K2111	SH-C-142	9.3 POS Services
+Q8-SH-K2112	SH-C-143	9.3 POS Services
+Q8-SH-K2113	SH-C-144	Extending Shopify POS with UI extensions
+Q8-SH-K2114	SH-C-144	pos_action
+Q8-SH-K2115	SH-C-144	POS
+Q8-SH-K2116	SH-C-144	pos_action
+Q8-SH-K2117	SH-C-145	Analytics
+Q8-SH-K2118	SH-C-145	ShopifyQL for analytics
+Q8-SH-K2119	SH-C-145	read_analytics
+Q8-SH-K2120	SH-C-146	customer_events
+Q8-SH-K2121	SH-C-146	How web pixels work
+Q8-SH-K2122	SH-C-146	Benefits
+Q8-SH-K2123	SH-C-146	web_pixel
+Q8-SH-K2124	SH-C-146	9.11 Shopify Pixel Manager
+Q8-SH-K2125	SH-C-146	Requesting consent
+Q8-SH-K2126	SH-C-146	9.11 Shopify Pixel Manager (summary)
+Q8-SH-K2127	SH-C-146	read_customer_events
+Q8-SH-K2128	SH-C-147	Requirements for using managed payment methods
+Q8-SH-K2129	SH-C-147	help.shopify.com/en/manual/online-sales-channels/shop.md (note)
+Q8-SH-K2130	SH-C-147	9.2 Enhanced Services
+Q8-SH-K2131	SH-C-147	I. PURPOSE
+Q8-SH-K2132	SH-C-147	9.2 Enhanced Services
+Q8-SH-K2133	SH-C-148	privacy
+Q8-SH-K2134	SH-C-148	help.shopify.com/en/manual/privacy-and-security/privacy/customer-privacy-settings.md
+Q8-SH-K2135	SH-C-148	Customer Privacy API
+Q8-SH-K2136	SH-C-148	help.shopify.com/en/manual/privacy-and-security/privacy/customer-privacy-settings.md
+Q8-SH-K2137	SH-C-148	Configuration options
+Q8-SH-K2138	SH-C-148	9.11 Shopify Pixel Manager (summary)
+Q8-SH-K2139	SH-C-148	read_privacy_settings
+Q8-SH-K2140	SH-C-148	Customer Privacy API
+Q8-SH-K2141	SH-C-148	2. Using the Shopify API
+Q8-SH-K2148	SH-C-150	notifications
+Q8-SH-K2149	SH-C-151	help.shopify.com/en/manual/fulfillment/managing-orders/protecting-orders/shopify-flow.md
+Q8-SH-K2150	SH-C-151	flow_trigger
+Q8-SH-K2151	SH-C-151	flow_action
+Q8-SH-K2152	SH-C-151	help.shopify.com/en/manual/fulfillment/managing-orders/protecting-orders/shopify-flow.md
+Q8-SH-K2153	SH-C-151	flow_trigger
+Q8-SH-K2154	SH-C-152	help.shopify.com/en/manual/ai-powered-tools/sidekick.md
+Q8-SH-K2155	SH-C-152	Sidekick
+Q8-SH-K2156	SH-C-152	help.shopify.com/en/manual/ai-powered-tools/sidekick.md
+Q8-SH-K2157	SH-C-152	Third-party subprocessors table, rows Anthropic PBC, Applied Compute Inc., Fireworks.ai, Microsoft Corporation, OpenAI
+Q8-SH-K2158	SH-C-152	app_data
+Q8-SH-K2159	SH-C-152	app_action_link
+Q8-SH-K2160	SH-C-153	Shopify Inbox
+Q8-SH-K2161	SH-C-154	Product review apps
+Q8-SH-K2162	SH-C-155	Shopify Community
+Q8-SH-K2163	SH-C-156	apps
+Q8-SH-K2164	SH-C-156	Apps
+Q8-SH-K2165	SH-C-156	help.shopify.com/en/manual/apps/apps-by-shopify.md
+Q8-SH-K2166	SH-C-156	help.shopify.com/en/manual/apps/apps-by-shopify.md
+Q8-SH-K2167	SH-C-156	shopify.dev/docs/api/usage/access-scopes.md
+Q8-SH-K2168	SH-C-156	9.9 Third Party Services and Third Party Partners
+Q8-SH-K2169	SH-C-156	9.9 Third Party Services and Third Party Partners
+Q8-SH-K2170	SH-C-156	9.9 Third Party Services and Third Party Partners
+Q8-SH-K2171	SH-C-156	6. Merchant Agreement, Privacy and Data Security, Merchant Agreement and Privacy Policy
+Q8-SH-K2172	SH-C-156	preamble
+Q8-SH-K2173	SH-C-156	app/uninstalled
+Q8-SH-K2174	SH-C-157	Shopify App Store
+Q8-SH-K2175	SH-C-157	App distribution
+Q8-SH-K2176	SH-C-157	Shopify App Pricing, Important note
+Q8-SH-K2177	SH-C-157	How it works
+Q8-SH-K2178	SH-C-157	shopify.dev/docs/apps/launch/protected-customer-data.md
+Q8-SH-K2179	SH-C-157	About app distribution
+Q8-SH-K2180	SH-C-157	About app distribution
+Q8-SH-K2181	SH-C-157	preamble
+Q8-SH-K2182	SH-C-157	preamble
+Q8-SH-K2183	SH-C-157	2. Using the Shopify API
+Q8-SH-K2184	SH-C-157	About billing for your app
+Q8-SH-K2192	SH-C-159	scope type legend
+Q8-SH-K2193	SH-C-159	read_all_orders
+Q8-SH-K2194	SH-C-159	read_shopify_payments_provider_accounts_sensitive
+Q8-SH-K2195	SH-C-160	shopify.dev/docs/apps/launch/protected-customer-data.md
+Q8-SH-K2196	SH-C-160	introduction, important note
+Q8-SH-K2197	SH-C-160	6. Merchant Agreement, Privacy and Data Security
+Q8-SH-K2198	SH-C-161	customers/data_request
+Q8-SH-K2199	SH-C-161	shop/redact
+Q8-SH-K2200	SH-C-161	Mandatory compliance webhooks
+Q8-SH-K2201	SH-C-161	Privacy law compliance
+Q8-SH-K2202	SH-C-161	How it works
+Q8-SH-K2203	SH-C-161	6. Merchant Agreement, Privacy and Data Security
+Q8-SH-K2204	SH-C-161	customers/redact
+Q8-SH-K2205	SH-C-161	Privacy law compliance
+Q8-SH-K2206	SH-C-162	About webhooks
+Q8-SH-K2207	SH-C-162	Webhooks
+Q8-SH-K2208	SH-C-162	How it works
+Q8-SH-K2209	SH-C-162	app/uninstalled
+Q8-SH-K2210	SH-C-163	About Shopify Functions
+Q8-SH-K2211	SH-C-163	How Shopify Functions work
+Q8-SH-K2212	SH-C-163	Shopify Functions
+Q8-SH-K2213	SH-C-163	Functions availability
+Q8-SH-K2214	SH-C-163	Lifecycle of a Shopify Function
+Q8-SH-K2215	SH-C-163	Shopify Functions
+Q8-SH-K2216	SH-C-164	Admin UI extensions
+Q8-SH-K2217	SH-C-164	app_home
+Q8-SH-K2218	SH-C-164	Polaris references
+Q8-SH-K2219	SH-C-164	app_home
+Q8-SH-K2220	SH-C-165	customer_account_ui
+Q8-SH-K2221	SH-C-165	shopify.dev/docs/apps/build/customer-accounts.md
+Q8-SH-K2222	SH-C-165	Customer accounts
+Q8-SH-K2223	SH-C-166	About theme app extensions
+Q8-SH-K2224	SH-C-166	theme_app_extension
+Q8-SH-K2225	SH-C-166	About theme app extensions
+Q8-SH-K2226	SH-C-166	read_app_proxy
+Q8-SH-K2227	SH-C-168	Partner API
+Q8-SH-K2228	SH-C-168	Shopify Partners
+Q8-SH-K2229	SH-C-168	2. Using the Shopify API
+Q8-SH-K2230	SH-C-168	preamble
+Q8-SH-K2231	SH-C-168	Part A, Section 2.2
+Q8-SH-K2232	SH-C-169	Payouts
+Q8-SH-K2233	SH-C-169	Part A, Section 3 (Fees and payment)
+Q8-SH-K2234	SH-C-169	payments to Partners
+Q8-SH-K2235	SH-C-169	payments to Partners
+Q8-SH-K2236	SH-C-169	How Shopify App Pricing helps
+Q8-SH-K2237	SH-C-169	Part C, App Plan (C.2.2.1)
+Q8-SH-K2238	SH-C-170	Partner Directory, Relationship
+Q8-SH-K2239	SH-C-170	Partner Directory, Relationship
+Q8-SH-K2240	SH-C-170	Partner Directory, Relationship
+Q8-SH-K2241	SH-C-171	Versioning
+Q8-SH-K2242	SH-C-171	Bulk operations
+Q8-SH-K2243	SH-C-171	About Shopify API versioning
+Q8-SH-K2244	SH-C-171	Versioned and unversioned APIs
+Q8-SH-K2245	SH-C-171	Rate limits
+Q8-SH-K2246	SH-C-171	The leaky bucket algorithm
+Q8-SH-K2247	SH-C-171	What we value, Respect our merchants
+Q8-SH-K2248	SH-C-171	bulk_operations/finish
+Q8-SH-K2249	SH-C-171	Rate limits
+Q8-SH-K2363	SH-C-185	Dropshipping apps
+Q8-SH-K2364	SH-C-185	Finding products apps
+Q8-SH-K2365	SH-C-185	shopify.dev/docs/api/usage/access-scopes.md
+Q8-SH-K2366	SH-C-185	9.9 Third Party Services and Third Party Partners
+Q8-SH-K2367	SH-C-185	4. Your Responsibilities
+Q8-SH-K2368	SH-C-186	About subscriptions
+Q8-SH-K2369	SH-C-186	subscriptionContractActivate
+Q8-SH-K2370	SH-C-186	Subscription apps
+Q8-SH-K2371	SH-C-186	Subscriptions on Shopify POS, POS limitations
+Q8-SH-K2372	SH-C-186	How do subscriptions work?, Subscription contracts
+Q8-SH-K2373	SH-C-186	write_purchase_options
+Q8-SH-K2374	SH-C-186	selling_plan_groups/create
+Q8-SH-K2375	SH-C-187	Customer loyalty apps
+Q8-SH-K2376	SH-C-187	Donation apps
+Q8-SH-K2377	SH-C-187	shopify.dev/docs/api/usage/access-scopes.md
+Q8-SH-K2378	SH-C-187	9.9 Third Party Services and Third Party Partners
+Q8-SH-K2379	SH-C-188	Upsell and bundle apps
+Q8-SH-K2380	SH-C-188	product_configuration
+Q8-SH-K2381	SH-C-188	shopify.dev/docs/api/usage/access-scopes.md
+Q8-SH-K2382	SH-C-188	9.9 Third Party Services and Third Party Partners
+Q8-SH-K2383	SH-C-188	product_configuration
+Q8-SH-K2384	SH-C-188	unauthenticated_read_bundles
+Q8-SH-K2385	SH-C-189	Custom product apps
+Q8-SH-K2386	SH-C-189	shopify.dev/docs/api/usage/access-scopes.md
+Q8-SH-K2387	SH-C-189	9.9 Third Party Services and Third Party Partners
+Q8-SH-K2388	SH-C-190	Digital goods and service apps
+Q8-SH-K2389	SH-C-190	Blockchain
+Q8-SH-K2390	SH-C-190	shopify.dev/docs/api/usage/access-scopes.md
+Q8-SH-K2391	SH-C-190	9.9 Third Party Services and Third Party Partners
+Q8-SH-K2392	SH-C-191	Accounting apps
+Q8-SH-K2393	SH-C-191	ERP apps
+Q8-SH-K2394	SH-C-191	shopify.dev/docs/api/usage/access-scopes.md
+Q8-SH-K2395	SH-C-191	9.9 Third Party Services and Third Party Partners
+Q8-SH-K2396	SH-C-192	Support apps
+Q8-SH-K2397	SH-C-192	FAQ apps
+Q8-SH-K2398	SH-C-192	shopify.dev/docs/api/usage/access-scopes.md
+Q8-SH-K2399	SH-C-192	9.9 Third Party Services and Third Party Partners
+Q8-SH-K2400	SH-C-193	Store design apps
+Q8-SH-K2401	SH-C-193	shopify.dev/docs/api/usage/access-scopes.md
+Q8-SH-K2402	SH-C-193	9.9 Third Party Services and Third Party Partners
+Q8-SH-K2403	SH-C-193	About theme app extensions
+Q8-SH-K2404	SH-C-194	Advertising apps
+Q8-SH-K2405	SH-C-194	shopify.dev/docs/api/usage/access-scopes.md
+Q8-SH-K2406	SH-C-194	9.9 Third Party Services and Third Party Partners
+Q8-SH-K2407	SH-C-195	Mobile app builder apps
+Q8-SH-K2408	SH-C-195	shopify.dev/docs/api/usage/access-scopes.md
+Q8-SH-K2409	SH-C-195	9.9 Third Party Services and Third Party Partners
+Q8-SH-K2410	SH-C-195	write_mobile_platform_applications
+Q8-SH-K2411	SH-C-196	Security apps
+Q8-SH-K2412	SH-C-196	Legal apps
+Q8-SH-K2413	SH-C-196	shopify.dev/docs/api/usage/access-scopes.md
+Q8-SH-K2414	SH-C-196	9.9 Third Party Services and Third Party Partners
+Q8-SH-K2415	SH-C-025	giftcard:create
+Q8-SH-K2416	SH-C-025	giftcard:create
+Q8-SH-K2417	SH-C-186	product:purchase_options:update
+Q8-SH-K2418	SH-C-135	products:update:publications
+Q8-SH-K2419	SH-C-022	products:update:locations
+Q8-SH-K2420	SH-C-167	apps:development_list
+Q8-SH-K2421	SH-C-099	balance:inactive:tax-forms:1099-misc
+Q8-SH-K2422	SH-C-099	finance:tax-forms:1099-misc
+Q8-SH-K2423	SH-C-019	billing:app-selector:list
+Q8-SH-K2424	SH-C-019	billing:ot-complete-auth:list
+Q8-SH-K2425	SH-C-019	billing:charge:approval:list
+Q8-SH-K2427	SH-C-019	billing:managed-pricing:charge-approval
+Q8-SH-K2430	SH-C-019	billing:charge:approval:list
+Q8-SH-K2431	SH-C-019	billing:charge:approval:add-payment-method
+Q8-SH-K2436	SH-C-019	plan:subscriptions
+Q8-SH-K2437	SH-C-048	checkout-accounts-editor
+Q8-SH-K2438	SH-C-015	merchant-checkout:subscribe:root
+Q8-SH-K2439	SH-C-048	checkout-accounts-editor
+Q8-SH-K2440	SH-C-048	checkout-settings:customizations-report:list
+Q8-SH-K2441	SH-C-015	merchant-checkout:subscribe:plans
+Q8-SH-K2442	SH-C-042	customerAuthenticationSettings:parent
+Q8-SH-K2443	SH-C-040	customer-segments
+Q8-SH-K2444	SH-C-186	customer-subscriptions:show
+Q8-SH-K2445	SH-C-026	customer-store-credit-edit-balance:update
+Q8-SH-K2446	SH-C-026	customer-store-credit-transaction-history:show
+Q8-SH-K2447	SH-C-043	customer:mobile:edit-marketing-status
+Q8-SH-K2448	SH-C-072	finance:risk:disputes
+Q8-SH-K2449	SH-C-023	purchaseOrder
+Q8-SH-K2450	SH-C-023	suppliers
+Q8-SH-K2451	SH-C-023	transfers
+Q8-SH-K2452	SH-C-023	purchaseOrder
+Q8-SH-K2453	SH-C-023	purchaseOrder:list
+Q8-SH-K2454	SH-C-023	purchaseOrderDetails:parent
+Q8-SH-K2455	SH-C-023	purchaseOrder:new
+Q8-SH-K2456	SH-C-023	suppliers
+Q8-SH-K2457	SH-C-023	inventorySupplier:create
+Q8-SH-K2458	SH-C-023	inventorySupplier:details
+Q8-SH-K2459	SH-C-023	transfers
+Q8-SH-K2460	SH-C-023	inventoryTransfer:list
+Q8-SH-K2461	SH-C-023	inventoryTransfer:create
+Q8-SH-K2462	SH-C-023	inventoryTransfer:createShipment
+Q8-SH-K2463	SH-C-110	market:update:managed
+Q8-SH-K2464	SH-C-110	market:update:managed:deactivate
+Q8-SH-K2465	SH-C-152	sidekick:mobile
+Q8-SH-K2466	SH-C-055	draftOrders
+Q8-SH-K2467	SH-C-055	draftOrders
+Q8-SH-K2468	SH-C-055	draftOrders:new
+Q8-SH-K2469	SH-C-056	order:requested-edit:decline
+Q8-SH-K2470	SH-C-057	order:refund:create
+Q8-SH-K2471	SH-C-058	order:return:create
+Q8-SH-K2472	SH-C-118	orders:batches:details
+Q8-SH-K2473	SH-C-118	order:mobile:release-fulfillment-holds
+Q8-SH-K2474	SH-C-085	order:mobile:pay-order-by-vaulted
+Q8-SH-K2475	SH-C-079	order:mobile:record-payment
+Q8-SH-K2476	SH-C-131	order:mobile:conversion-summary
+Q8-SH-K2477	SH-C-004	settings:organizations:details:business-details:create
+Q8-SH-K2478	SH-C-004	settings:organizations:details:business-details:edit
+Q8-SH-K2479	SH-C-004	settings:organizations:details:business-entities
+Q8-SH-K2480	SH-C-009	settings:organizations:accounts
+Q8-SH-K2481	SH-C-010	settings:organizations:accounts:roles
+Q8-SH-K2482	SH-C-010	settings:organizations:accounts:roles:list
+Q8-SH-K2483	SH-C-010	settings:organizations:accounts:roles:create
+Q8-SH-K2484	SH-C-010	settings:organizations:accounts:groups
+Q8-SH-K2486	SH-C-012	settings:organizations:accounts:security:activity-log
+Q8-SH-K2487	SH-C-009	settings:organizations:accounts:create
+Q8-SH-K2488	SH-C-169	settings:organizations:partner-billing
+Q8-SH-K2490	SH-C-072	finance:risk:disputes:details
+Q8-SH-K2491	SH-C-072	finance:risk:disputes:details
+Q8-SH-K2492	SH-C-005	payments:settings:business-entity
+Q8-SH-K2493	SH-C-074	payments:settings:shopify-payments:shop-pay-external-configuration
+Q8-SH-K2494	SH-C-125	shipping:list:shop-promise-examples
+Q8-SH-K2495	SH-C-061	document-template-editor
+Q8-SH-K2496	SH-C-075	unauthenticated_read_checkouts
+Q8-SH-K2497	SH-C-040	write_customers
+Q8-SH-K2498	SH-C-028	read_content
+Q8-SH-K2499	SH-C-028	read_content
+Q8-SH-K2500	SH-C-028	read_content
+Q8-SH-K2501	SH-C-046	read_orders
+Q8-SH-K2502	SH-C-046	read_orders
+Q8-SH-K2503	SH-C-047	read_orders
+Q8-SH-K2504	SH-C-047	read_orders
+Q8-SH-K2505	SH-C-047	read_orders
+Q8-SH-K2506	SH-C-021	read_products
+Q8-SH-K2507	SH-C-021	read_products
+Q8-SH-K2508	SH-C-021	read_products
+Q8-SH-K2509	SH-C-037	write_products
+Q8-SH-K2510	SH-C-037	write_products
+Q8-SH-K2511	SH-C-021	write_products
+Q8-SH-K2512	SH-C-021	write_products
+Q8-SH-K2513	SH-C-021	write_products
+Q8-SH-K2514	SH-C-125	read_shipping
+Q8-SH-K2515	SH-C-125	read_shipping
+Q8-SH-K2516	SH-C-050	entitlements.abandonedCartRecovery
+Q8-SH-K2517	SH-C-050	entitlements.abandonedCartRecovery
+Q8-SH-K2518	SH-C-009	features.hasOrgSettings
+Q8-SH-K2519	SH-C-009	features.hasOrgSettings
+Q8-SH-K2520	SH-C-009	features.rbacEnabled
+Q8-SH-K2521	SH-C-009	features.rbacEnabled
+Q8-SH-K2522	SH-C-020	entitlements.products
+Q8-SH-K2523	SH-C-145	entitlements.storefront.enabled
+Q8-SH-K2524	SH-C-088	entitlements.shopifyFinance.balance
+Q8-SH-K2525	SH-C-088	entitlements.shopifyFinance.balance
+Q8-SH-K2526	SH-C-088	features.balanceCheckDepositEnabled
+Q8-SH-K2527	SH-C-088	features.balanceUsCashVoucherEnabled
+Q8-SH-K2528	SH-C-088	features.existingMerchantEligibleForBanking
+Q8-SH-K2529	SH-C-088	features.hasEverOnboardedToBanking
+Q8-SH-K2530	SH-C-088	features.hasInitiatedOnboardingToBanking
+Q8-SH-K2531	SH-C-088	features.netNewMerchantEligibleForBanking
+Q8-SH-K2532	SH-C-088	features.onboardedToBanking
+Q8-SH-K2533	SH-C-091	entitlements.shopifyFinance.capital
+Q8-SH-K2534	SH-C-091	entitlements.shopifyFinance.capital
+Q8-SH-K2535	SH-C-092	entitlements.shopifyFinance.capital
+Q8-SH-K2536	SH-C-092	entitlements.shopifyFinance.capital
+Q8-SH-K2537	SH-C-093	entitlements.shopifyFinance.capital
+Q8-SH-K2538	SH-C-093	entitlements.shopifyFinance.capital
+Q8-SH-K2539	SH-C-094	entitlements.shopifyFinance.capital
+Q8-SH-K2540	SH-C-094	entitlements.shopifyFinance.capital
+Q8-SH-K2541	SH-C-095	entitlements.shopifyFinance.capital
+Q8-SH-K2542	SH-C-095	entitlements.shopifyFinance.capital
+Q8-SH-K2543	SH-C-096	entitlements.shopifyFinance.capital
+Q8-SH-K2544	SH-C-096	entitlements.shopifyFinance.capital
+Q8-SH-K2545	SH-C-097	entitlements.shopifyFinance.capital
+Q8-SH-K2546	SH-C-097	entitlements.shopifyFinance.capital
+Q8-SH-K2547	SH-C-037	entitlements.b2b.enabled
+Q8-SH-K2548	SH-C-037	entitlements.markets.b2b.catalogs.enabled
+Q8-SH-K2549	SH-C-037	entitlements.markets.b2b.catalogs.enabled
+Q8-SH-K2550	SH-C-037	entitlements.markets.b2b.catalogs.enabled
+Q8-SH-K2551	SH-C-037	entitlements.markets.b2b.catalogs.enabled
+Q8-SH-K2552	SH-C-037	entitlements.markets.b2b.catalogs.enabled
+Q8-SH-K2553	SH-C-037	entitlements.markets.b2b.catalogs.enabled
+Q8-SH-K2554	SH-C-037	entitlements.sellsOnShopifyPlatforms
+Q8-SH-K2555	SH-C-047	entitlements.webCheckout
+Q8-SH-K2556	SH-C-047	entitlements.webCheckout
+Q8-SH-K2557	SH-C-021	entitlements.products
+Q8-SH-K2558	SH-C-021	entitlements.productsCollections.eligible
+Q8-SH-K2559	SH-C-051	features.productProtection
+Q8-SH-K2560	SH-C-044	entitlements.b2b.enabled
+Q8-SH-K2561	SH-C-044	entitlements.markets.b2b.enabled
+Q8-SH-K2562	SH-C-044	entitlements.markets.b2b.enabled
+Q8-SH-K2563	SH-C-044	entitlements.markets.b2b.enabled
+Q8-SH-K2564	SH-C-044	entitlements.markets.b2b.enabled
+Q8-SH-K2565	SH-C-044	entitlements.markets.b2b.enabled
+Q8-SH-K2566	SH-C-044	entitlements.markets.b2b.enabled
+Q8-SH-K2567	SH-C-044	features.b2bEnabled
+Q8-SH-K2568	SH-C-027	entitlements.metaobjects.enabled
+Q8-SH-K2569	SH-C-028	entitlements.metaobjects.enabled
+Q8-SH-K2570	SH-C-030	entitlements.metaobjects.enabled
+Q8-SH-K2571	SH-C-030	entitlements.storefront.enabled
+Q8-SH-K2572	SH-C-031	entitlements.metaobjects.enabled
+Q8-SH-K2573	SH-C-031	entitlements.storefront.enabled
+Q8-SH-K2574	SH-C-090	features.hasInitiatedOnboardingToCredit
+Q8-SH-K2575	SH-C-041	entitlements.customers.accountSettingsAccess
+Q8-SH-K2576	SH-C-146	entitlements.storefront.enabled
+Q8-SH-K2577	SH-C-127	entitlements.discountCodes
+Q8-SH-K2578	SH-C-033	entitlements.customDomains
+Q8-SH-K2579	SH-C-033	entitlements.sellsOnShopifyPlatforms
+Q8-SH-K2580	SH-C-059	features.financesOverview
+Q8-SH-K2581	SH-C-059	features.financesOverview
+Q8-SH-K2582	SH-C-098	entitlements.shopifyFinance.billPay
+Q8-SH-K2583	SH-C-098	entitlements.shopifyFinance.billPay
+Q8-SH-K2584	SH-C-098	features.canAccessBillPay
+Q8-SH-K2585	SH-C-098	features.canAccessBillPay
+Q8-SH-K2586	SH-C-025	entitlements.giftCards.enabled
+Q8-SH-K2587	SH-C-025	entitlements.products
+Q8-SH-K2588	SH-C-129	entitlements.storefront.enabled
+Q8-SH-K2589	SH-C-022	entitlements.inventory.counts
+Q8-SH-K2590	SH-C-022	entitlements.products
+Q8-SH-K2591	SH-C-024	entitlements.maximumLocations
+Q8-SH-K2592	SH-C-024	entitlements.maximumLocations
+Q8-SH-K2593	SH-C-024	entitlements.maximumLocations
+Q8-SH-K2594	SH-C-106	features.marketDrivenShipping
+Q8-SH-K2595	SH-C-106	features.marketDrivenShipping
+Q8-SH-K2596	SH-C-029	entitlements.storefront.enabled
+Q8-SH-K2597	SH-C-003	features.hasOrgSettings
+Q8-SH-K2598	SH-C-003	features.hasOrgSettings
+Q8-SH-K2599	SH-C-148	entitlements.storefront.enabled
+Q8-SH-K2600	SH-C-112	entitlements.rollouts.scheduledRollouts
+Q8-SH-K2601	SH-C-114	entitlements.shipping.settingsAccess
+Q8-SH-K2602	SH-C-116	entitlements.shipping.labels
+Q8-SH-K2603	SH-C-032	entitlements.accountManagement.manageStoreLanguage
+Q8-SH-K2604	SH-C-100	entitlements.shopifyTax.enabled
+Q8-SH-K2605	SH-C-101	entitlements.shopifyTax.enabled
+Q8-SH-K2606	SH-C-103	entitlements.shopifyTax.enabled
+Q8-SH-K2607	SH-C-104	features.taxFilingEnabled
+Q8-SH-K2608	SH-C-012	features.rbacEnabled
+Q8-SH-K2609	SH-C-012	features.rbacEnabled
+Q8-SH-K2610	SH-C-099	features.hasInitiatedOnboardingToBanking
+Q8-SH-K2611	SH-C-048	entitlements.webCheckout
+Q8-SH-K2612	SH-C-048	entitlements.webCheckout
+Q8-SH-K2613	SH-C-040	entitlements.customerSegmentation
+Q8-SH-K2614	SH-C-072	features.financesOverview
+Q8-SH-K2615	SH-C-072	features.financesOverview
+Q8-SH-K2616	SH-C-023	entitlements.products
+Q8-SH-K2617	SH-C-023	entitlements.inventory.purchaseOrders
+Q8-SH-K2618	SH-C-055	entitlements.storefront.enabled
+Q8-SH-K2619	SH-C-118	features.fulfillmentBatchingEligible
+Q8-SH-K2620	SH-C-118	features.fulfillmentBatchingEligible
+Q8-SH-K2621	SH-C-004	features.hasOrgSettings
+Q8-SH-K2622	SH-C-004	features.hasOrgSettings
+Q8-SH-K2623	SH-C-004	features.centralLegalEntitiesEnabled
+Q8-SH-K2624	SH-C-010	features.hasOrgSettings
+Q8-SH-K2625	SH-C-010	features.hasOrgSettings
+Q8-SH-K2626	SH-C-010	features.rbacEnabled
+Q8-SH-K2627	SH-C-010	features.rbacEnabled
+Q8-SH-K2628	SH-C-061	features.fulfillmentBatchingEligible
+Q8-SH-K2629	SH-C-061	features.fulfillmentBatchingEligible
+Q8-SH-K2630	SH-C-121	shipping:eligibility
+Q8-SH-K2631	SH-C-162	notification-settings
+Q8-SH-K2632	SH-C-170	subscribe:book-shopify-expert-intro-call
+Q8-SH-K2633	SH-C-170	subscribe:bring-your-own-partner
+Q8-SH-K2634	SH-C-201	settings:plan:shop_plus_self_renewals
+Q8-SH-K2635	SH-C-201	settings:plan:shop_plus_self_renewals:review
+Q8-SH-K2636	SH-C-201	settings:plan:plus:terms
+Q8-SH-K2637	SH-C-201	settings:plan:shop_plus_self_renewals
+Q8-SH-K2638	SH-C-011	settings:organizations:accounts:collaborator
+Q8-SH-K2639	SH-C-045	SET_PAYMENT_TERMS_FOR_ORDERS
+Q8-SH-K2640	SH-C-045	SET_PAYMENT_TERMS_FOR_DRAFT_ORDERS
+Q8-SH-K2643	SH-C-023	VIEW_INVENTORY_PURCHASE_ORDERS
+Q8-SH-K2644	SH-C-023	CREATE_AND_EDIT_INVENTORY_PURCHASE_ORDERS
+Q8-SH-K2645	SH-C-022	VIEW_INVENTORY_COUNTS
+Q8-SH-K2646	SH-C-022	MANAGE_INVENTORY_COUNTS
+Q8-SH-K2647	SH-C-022	PERFORM_INVENTORY_COUNTS
+Q8-SH-K2648	SH-C-151	MANAGE_AUTOMATIONS
+Q8-SH-K2649	SH-C-151	MANAGE_AUTOMATION_SETTINGS
+Q8-SH-K2650	SH-C-009	MANAGE_STAFF_PERMISSIONS
+Q8-SH-K2651	SH-C-009	ADD_REMOVE_STAFF
+Q8-SH-K2653	SH-C-010	STAFF_API_PERMISSION_MANAGEMENT
+Q8-SH-K2654	SH-C-010	MANAGE_STAFF_PERMISSIONS
+Q8-SH-K2655	SH-C-011	MANAGE_COLLABORATORS
+Q8-SH-K2656	SH-C-088	VIEW_BALANCE_BANK_ACCOUNTS
+Q8-SH-K2657	SH-C-090	VIEW_ALL_SHOPIFY_CREDIT_TRANSACTIONS
+Q8-SH-K2658	SH-C-016	VIEW_BILLING_DETAILS
+Q8-SH-K2659	SH-C-016	BILLING_PAY_INVOICES
+Q8-SH-K2660	SH-C-108	sell_globally_local_currencies
+Q8-SH-K2661	SH-C-080	sell_globally_local_payments
+Q8-SH-K2663	SH-C-201	contractmanagement/PlusContractDetails
+Q8-SH-K2664	SH-C-201	contractmanagement/RenewalsQuery
+Q8-SH-K2665	SH-C-004	completeness_engine/ValidationSchemaByContextQuery
+Q8-SH-K2666	SH-C-004	organizations/LegalEntityTypesByCountryCode
+Q8-SH-K2668	SH-C-089	banking/CardsIndexQuery
+Q8-SH-K2669	SH-C-090	banking/CreditIndexBanking
+Q8-SH-K2670	SH-C-091	capital/CapitalAccountOverviewQuery
+Q8-SH-K2671	SH-C-001	destinations/ShopsOnlyActiveDestinations
+Q8-SH-K2672	SH-C-004	legalEntity.registeredBusinessName
+Q8-SH-K2673	SH-C-004	legalEntity.governmentIdentifiers
+Q8-SH-K2674	SH-C-004	default_individual
+Q8-SH-K2675	SH-C-004	default_company
+Q8-SH-K2676	SH-C-004	default_non_profit
+Q8-SH-K2677	SH-C-004	LegalEntity
+Q8-SH-K2678	SH-C-020	ServerIntents::FormContracts::ProductEditScalarFields
+Q8-SH-K2679	SH-C-020	ServerIntent action edit, type product
+Q8-SH-K2680	SH-C-088	www.shopify.com/pricing (footnote)
+Q8-SH-K2681	SH-C-089	www.shopify.com/pricing (footnote)
+Q8-SH-K2682	SH-C-090	www.shopify.com/pricing (footnote)
+Q8-SH-K2683	SH-C-091	www.shopify.com/pricing (footnote)
+Q8-SH-K2684	SH-C-091	admin plan page (settings/plan) (footnote)
+Q8-SH-K2685	SH-C-098	www.shopify.com/pricing (footnote)
+Q8-SH-K2686	SH-C-098	admin plan page (settings/plan) (footnote)
+Q8-SH-K2688	SH-C-202	apps.shopify.com/built-in-features/magic-product-descriptions
+Q8-SH-K2689	SH-C-202	apps.shopify.com/built-in-features/magic-blog-posts
+Q8-SH-K2690	SH-C-202	apps.shopify.com/built-in-features/magic-product-descriptions
+Q8-SH-K2691	SH-C-202	apps.shopify.com/built-in-features/magic-product-descriptions
+Q8-SH-K2692	SH-C-202	apps.shopify.com/built-in-features/magic-blog-posts
+Q8-SH-K2693	SH-C-126	apps.shopify.com/built-in-features/order-tracking
+Q8-SH-K2694	SH-C-126	apps.shopify.com/built-in-features/order-tracking
+Q8-SH-K2695	SH-C-148	apps.shopify.com/built-in-features/automated-privacy
+Q8-SH-K2696	SH-C-044	apps.shopify.com/built-in-features/b2b
+Q8-SH-K2697	SH-C-044	apps.shopify.com/built-in-features/b2b
+Q8-SH-K2698	SH-C-041	apps.shopify.com/built-in-features/customer-accounts
+Q8-SH-K2699	SH-C-020	apps.shopify.com/built-in-features/product-variants
+Q8-SH-K2700	SH-C-026	apps.shopify.com/built-in-features/store-credit
+Q8-SH-K2701	SH-C-110	apps.shopify.com/built-in-features/managed-markets
+Q8-SH-K2702	SH-C-088	apps.shopify.com/built-in-features/shopify-balance
+Q8-SH-K2703	SH-C-091	apps.shopify.com/built-in-features/shopify-capital
+Q8-SH-K2704	SH-C-075	apps.shopify.com/built-in-features/shop-pay-installments
+Q8-SH-K2705	SH-C-117	apps.shopify.com/built-in-features/shopify-shipping
+Q8-SH-K2706	SH-C-100	apps.shopify.com/built-in-features/shopify-tax-eu
+Q8-SH-K2707	SH-C-100	apps.shopify.com/built-in-features/shopify-tax-uk
+Q8-SH-K2708	SH-C-104	apps.shopify.com/built-in-features/shopify-tax-us
+Q8-SH-K2709	SH-C-050	apps.shopify.com/built-in-features/abandoned-checkout-recovery
+Q8-SH-K2710	SH-C-055	apps.shopify.com/built-in-features/draft-orders
+Q8-SH-K2711	SH-C-037	catalogs
+Q8-SH-K2712	SH-C-037	catalogCreate
+Q8-SH-K2713	SH-C-049	purchase.checkout.block.render
+Q8-SH-K2714	SH-C-049	purchase.thank-you.block.render
+Q8-SH-K2715	SH-C-037	ServerIntent create catalog
+Q8-SH-K2716	SH-C-021	ServerIntent create collection
+Q8-SH-K2717	SH-C-044	ServerIntent create company
+Q8-SH-K2718	SH-C-030	ServerIntent create article
+Q8-SH-K2719	SH-C-039	ServerIntent create customer
+Q8-SH-K2720	SH-C-127	ServerIntent create discount
+Q8-SH-K2721	SH-C-023	ServerIntent create purchase_order
+Q8-SH-K2722	SH-C-023	ServerIntent create inventory_transfer
+Q8-SH-K2723	SH-C-024	ServerIntent create location
+Q8-SH-K2724	SH-C-106	ServerIntent create market
+Q8-SH-K2725	SH-C-028	ServerIntent create metaobject_definition
+Q8-SH-K2726	SH-C-030	ServerIntent create page
+Q8-SH-K2727	SH-C-055	ServerIntent create draft_order
+Q8-SH-K2728	SH-C-010	ServerIntent create role
+Q8-SH-K2729	SH-C-009	ServerIntent create user
+Q8-SH-K2730	SH-C-020	ServerIntent create product
+Q8-SH-K2731	SH-C-112	ServerIntent open rollout
+Q8-SH-K2732	SH-C-114	ServerIntent create delivery_profile
+Q8-SH-K2733	SH-C-015	Pay monthly
+Q8-SH-K2734	SH-C-015	Pay yearly
+Q8-SH-K2735	SH-C-029	Themes and templates
+Q8-SH-K2736	SH-C-020	Sell unlimited products
+Q8-SH-K2737	SH-C-047	World's best-converting checkout
+Q8-SH-K2738	SH-C-135	Sell on social and marketplaces
+Q8-SH-K2739	SH-C-140	Sell in AI chats
+Q8-SH-K2740	SH-C-044	Shopify B2B
+Q8-SH-K2741	SH-C-022	Inventory management
+Q8-SH-K2742	SH-C-024	Inventory locations
+Q8-SH-K2743	SH-C-009	Additional staff accounts
+Q8-SH-K2744	SH-C-011	Invite third-party collaborators
+Q8-SH-K2745	SH-C-141	Sell and source products with Shopify Collective
+Q8-SH-K2746	SH-C-145	200+ real-time reports, plus custom analytics
+Q8-SH-K2747	SH-C-155	24/7 support
+Q8-SH-K2748	SH-C-155	Free Shopify Academy courses
+Q8-SH-K2749	SH-C-142	Casual, in-person sales at pop-ups and events
+Q8-SH-K2750	SH-C-142	POS Pro: Advanced tools for brick‑and‑mortar retailers
+Q8-SH-K2751	SH-C-152	Sidekick, AI assistant for commerce
+Q8-SH-K2752	SH-C-063	Shopify Payments
+Q8-SH-K2753	SH-C-071	Online standard card rates
+Q8-SH-K2754	SH-C-071	Online premium card rates
+Q8-SH-K2755	SH-C-071	Online international rates
+Q8-SH-K2756	SH-C-077	PayPal Wallet rates
+Q8-SH-K2757	SH-C-080	MB WAY rates
+Q8-SH-K2758	SH-C-080	Bizum rates
+Q8-SH-K2759	SH-C-086	In-person card rates
+Q8-SH-K2760	SH-C-081	USDC rates
+Q8-SH-K2761	SH-C-086	In-person manual rates
+Q8-SH-K2762	SH-C-018	Third-party transaction fees
+Q8-SH-K2763	SH-C-059	Built-in fraud analysis*
+Q8-SH-K2764	SH-C-036	Unlimited web hosting
+Q8-SH-K2765	SH-C-033	Custom domain name
+Q8-SH-K2766	SH-C-036	Free SSL certificate
+Q8-SH-K2767	SH-C-039	Unlimited contacts
+Q8-SH-K2768	SH-C-040	Create customer segments
+Q8-SH-K2769	SH-C-130	Create email campaigns
+Q8-SH-K2770	SH-C-130	Pay-per-send SMS campaigns
+Q8-SH-K2771	SH-C-153	Chat with customers
+Q8-SH-K2772	SH-C-129	Create marketing automations
+Q8-SH-K2773	SH-C-050	Abandoned checkout recovery
+Q8-SH-K2774	SH-C-127	Create and share discount codes
+Q8-SH-K2775	SH-C-025	Sell gift cards
+Q8-SH-K2776	SH-C-133	Acquire customers risk-free with Shop Campaigns
+Q8-SH-K2777	SH-C-116	Shipping discounts
+Q8-SH-K2778	SH-C-116	Buy and print shipping labels
+Q8-SH-K2779	SH-C-117	Shipping insurance*
+Q8-SH-K2780	SH-C-115	3rd-party calculated shipping rates
+Q8-SH-K2781	SH-C-137	Import unlimited orders from marketplaces
+Q8-SH-K2782	SH-C-137	50 synced marketplace orders per month
+Q8-SH-K2783	SH-C-137	Over 50 synced marketplace orders
+Q8-SH-K2784	SH-C-156	Integrate with 1000s of apps
+Q8-SH-K2785	SH-C-048	Checkout customization
+Q8-SH-K2786	SH-C-167	Build custom apps using Shopify APIs
+Q8-SH-K2787	SH-C-171	API rate limits
+Q8-SH-K2788	SH-C-139	Build headless storefronts
+Q8-SH-K2789	SH-C-032	Translate your storefront
+Q8-SH-K2790	SH-C-108	Show prices in local currencies*
+Q8-SH-K2791	SH-C-106	Localized selling with Shopify Markets
+Q8-SH-K2792	SH-C-080	Accept local payment methods*
+Q8-SH-K2793	SH-C-111	Assign local domains
+Q8-SH-K2794	SH-C-088	Manage money with Shopify Balance¹
+Q8-SH-K2795	SH-C-091	Flexible growth funding through Shopify Capital²
+Q8-SH-K2796	SH-C-092	Flexible growth funding through Shopify Capital²
+Q8-SH-K2797	SH-C-093	Flexible growth funding through Shopify Capital²
+Q8-SH-K2798	SH-C-094	Flexible growth funding through Shopify Capital²
+Q8-SH-K2799	SH-C-095	Flexible growth funding through Shopify Capital²
+Q8-SH-K2800	SH-C-096	Flexible growth funding through Shopify Capital²
+Q8-SH-K2801	SH-C-097	Flexible growth funding through Shopify Capital²
+Q8-SH-K2802	SH-C-090	Shopify Credit pay-in-full Visa® card³
+Q8-SH-K2803	SH-C-098	Schedule, pay, and manage bills with Shopify Bill Pay
+Q8-SH-K2804	SH-C-100	Automated sales tax calculations
+Q8-SH-K2805	SH-C-101	Tax liability tracking
+Q8-SH-K2806	SH-C-102	VAT validation, exemptions, and invoicing
+Q8-SH-K2807	SH-C-103	Advanced tax platform
+Q8-SH-K2808	SH-C-047	High volume checkout
+Q8-SH-K2809	SH-C-038	Merchandise with Shopify Combined Listings
+Q8-SH-K2810	SH-C-132	Optimize ads with Shopify Audiences
+Q8-SH-K2811	SH-C-003	Free expansion stores
+Q8-SH-K2812	SH-C-051	Bot protection
+Q8-SH-K2813	SH-C-171	Up to 500% higher API call limits
+Q8-SH-K2814	SH-C-163	Personalize store with custom functions
+Q8-SH-K2815	SH-C-010	Custom user groups
+Q8-SH-K2816	SH-C-157	Plus Certified apps
+Q8-SH-K2817	SH-C-105	Estimate and collect duties and taxes
+Q8-SH-K2818	SH-C-004	settings:general:switch-business-entity
+Q8-SH-K2819	SH-C-004	settings:general:switch-business-entity
+Q8-SH-K2820	SH-C-004	settings:organizations:details:business-entities
+Q8-SH-K2821	SH-C-005	payments:settings:business-entity
+Q8-SH-K2822	SH-C-013	settings:general
+Q8-SH-K2824	SH-C-026	customer-store-credit-transaction-history:show
+Q8-SH-K2825	SH-C-026	customer-store-credit-edit-balance:update
+Q8-SH-K2826	SH-C-034	setting:legal:index
+Q8-SH-K2827	SH-C-034	setting:legal
+Q8-SH-K2828	SH-C-034	setting:legal:cancel_return_policy_create
+Q8-SH-K2829	SH-C-040	customer-segments
+Q8-SH-K2830	SH-C-042	identityProviders:auth
+Q8-SH-K2831	SH-C-042	customerAuthenticationSettings:parent
+Q8-SH-K2832	SH-C-043	customer:mobile:edit-marketing-status
+Q8-SH-K2833	SH-C-055	draftOrders:new
+Q8-SH-K2834	SH-C-056	order:edit
+Q8-SH-K2835	SH-C-056	order:requested-edit:decline
+Q8-SH-K2836	SH-C-057	order:refund:create
+Q8-SH-K2837	SH-C-058	order:return:create
+Q8-SH-K2838	SH-C-058	order:return-request:review
+Q8-SH-K2839	SH-C-061	packing-slips
+Q8-SH-K2840	SH-C-061	document-template-editor
+Q8-SH-K2841	SH-C-069	payouts
+Q8-SH-K2842	SH-C-069	finance:payout-reconciliation-report
+Q8-SH-K2843	SH-C-071	shopify-payments:fees
+Q8-SH-K2844	SH-C-071	payments:settings:shopify-payments:payments-rates
+Q8-SH-K2845	SH-C-072	dispute-evidences
+Q8-SH-K2846	SH-C-072	finance:risk:disputes
+Q8-SH-K2847	SH-C-073	shopify-protect
+Q8-SH-K2848	SH-C-073	fraud_protect
+Q8-SH-K2849	SH-C-073	seller-protection
+Q8-SH-K2850	SH-C-074	payments:settings:shop-pay
+Q8-SH-K2851	SH-C-074	payments:settings:shop-pay
+Q8-SH-K2852	SH-C-075	payments:settings:shop-pay-installments
+Q8-SH-K2853	SH-C-075	shop-pay-installments-terms
+Q8-SH-K2854	SH-C-076	payments:settings:third-party-providers:list
+Q8-SH-K2855	SH-C-076	payments:settings:alternative-providers
+Q8-SH-K2856	SH-C-076	payments:settings:third-party-providers:list
+Q8-SH-K2857	SH-C-077	payments:settings:paypal-express-checkout
+Q8-SH-K2858	SH-C-077	payments:settings:paypal-express-checkout
+Q8-SH-K2859	SH-C-079	payments:settings:manual-payment-methods
+Q8-SH-K2860	SH-C-079	payments:settings:manual-payment-methods
+Q8-SH-K2861	SH-C-080	shopify-payments:local-payment-methods
+Q8-SH-K2862	SH-C-083	payments:settings:payment-customizations
+Q8-SH-K2863	SH-C-085	customer-payment-methods:show
+Q8-SH-K2864	SH-C-099	finance:tax-forms:1099-k
+Q8-SH-K2865	SH-C-099	finance:tax-forms:1099-misc
+Q8-SH-K2866	SH-C-100	tax-settings
+Q8-SH-K2867	SH-C-101	tax-settings:show-eu:add-registration
+Q8-SH-K2868	SH-C-101	tax-settings:ioss-registration
+Q8-SH-K2869	SH-C-102	tax-settings:shared:vat-number-validation
+Q8-SH-K2870	SH-C-103	tax-settings:providers-manage
+Q8-SH-K2871	SH-C-103	tax-settings:partner
+Q8-SH-K2872	SH-C-105	tax-settings:duties-and-taxes
+Q8-SH-K2873	SH-C-110	market:managed
+Q8-SH-K2874	SH-C-110	market:update:managed
+Q8-SH-K2875	SH-C-114	delivery-profile:create
+Q8-SH-K2876	SH-C-115	shipping-carrier-services:update
+Q8-SH-K2877	SH-C-118	batches:index
+Q8-SH-K2878	SH-C-118	batches:index
+Q8-SH-K2879	SH-C-121	local-delivery:list
+Q8-SH-K2880	SH-C-121	pickup-in-store:list
+Q8-SH-K2881	SH-C-124	pickup-point:list
+Q8-SH-K2882	SH-C-125	shipping:list:shop-promise-examples
+Q8-SH-K2883	SH-C-060	order-routing:update
+Q8-SH-K2884	SH-C-150	notification-settings
+Q8-SH-K2885	SH-C-162	notification-settings:webhooks
+Q8-SH-K2886	SH-C-167	apps:development_list
+Q8-SH-K2887	SH-C-167	apps:development_enable
+Q8-SH-K2888	SH-C-169	settings:organizations:partner-payouts
+Q8-SH-K2889	SH-C-015	ShopPlan
+Q8-SH-K2890	SH-C-015	Shop.plan
+Q8-SH-K2891	SH-C-038	CombinedListing
+Q8-SH-K2892	SH-C-105	Duty
+Q8-SH-K2893	SH-C-107	Shop.currencyCode
+Q8-SH-K2894	SH-C-111	MarketWebPresence
+Q8-SH-K2895	SH-C-126	FulfillmentTrackingInfo
+Q8-SH-K2896	SH-C-062	PaymentSettings
+Q8-SH-K2897	SH-C-142	PointOfSaleDevice
+Q8-SH-K2898	SH-C-042	IdentityProviderSubject
+Q8-SH-K2899	SH-C-168	Organization
+Q8-SH-K2900	SH-C-169	Transaction
+Q8-SH-K2901	SH-C-036	Domain.sslEnabled
+Q8-SH-K2902	SH-C-011	AccountType.COLLABORATOR
+Q8-SH-K2903	SH-C-141	ShopifyPaymentsTransactionType.SHOPIFY_COLLECTIVE_DEBIT
+Q8-SH-K2904	SH-C-141	ShopifyPaymentsTransactionType.SHOPIFY_COLLECTIVE_CREDIT
+Q8-SH-K2905	SH-C-117	ShippingLabelPurchaseUserErrorCode.MISSING_INSURANCE_COVERAGE_AMOUNT
+Q8-SH-K2906	SH-C-160	shopifyqlQuery (read_reports; Level 2 access to Customer data)
+Q8-SH-K2907	SH-C-160	read_customer_email
+Q8-SH-K2908	SH-C-094	read_capital
+Q8-SH-K2909	SH-C-095	read_capital
+Q8-SH-K2910	SH-C-096	read_capital
+Q8-SH-K2911	SH-C-097	read_capital
+Q8-SH-K2912	SH-C-034	entitlements.policies
+Q8-SH-K2913	SH-C-121	entitlements.shipping.settingsAccess
+Q8-SH-K2914	SH-C-159	access-scopes
+Q8-SH-K2915	SH-C-160	protected-customer-data
+Q8-SH-K2916	SH-C-107	store currency
+Q8-SH-K2919	SH-C-143	9.3 POS Services
+Q8-SH-K2920	SH-C-133	Shop Campaigns
+Q8-SH-K2921	SH-C-090	Shopify Credit Program Terms
+Q8-SH-K2922	SH-C-090	Shopify Credit Program Terms
+Q8-SH-K2923	SH-C-132	Shopify Audiences
+Q8-SH-K2924	SH-C-161	shopify.app.toml
+Q8-SH-K2930	SH-C-142	9.3 POS Services
+Q8-SH-K2931	SH-C-033	2.9 Domain Names
+Q8-SH-K2932	SH-C-067	Regulated Payment Services
+Q8-SH-K2933	SH-C-090	Issuing Bank Terms
+Q8-SH-K2934	SH-C-090	Issuing Bank Terms
+Q8-SH-K2935	SH-C-090	Shopify Credit Program Terms
+Q8-SH-K2936	SH-C-090	Shopify Credit Program Terms
+Q8-SH-K2937	SH-C-143	POS Equipment
+Q8-SH-K2938	SH-C-143	POS Equipment
+Q8-SH-K2939	SH-C-033	2.9 Domain Names
+Q8-SH-K2940	SH-C-033	14 Term and Termination
+Q8-SH-K2941	SH-C-142	9.3 POS Services
+Q8-SH-K2942	SH-C-143	9.3 POS Services
+Q8-SH-K2943	SH-C-132	9.12 Audiences
+Q8-SH-K2944	SH-C-106	merchant of record
+Q8-SH-K2945	SH-C-090	Shopify Credit Program Terms
+Q8-SH-K2946	SH-C-090	Shopify Credit Program Terms
+Q8-SH-K2947	SH-C-090	Issuing Bank Terms
+Q8-SH-K2948	SH-C-090	Issuing Bank Terms
+Q8-SH-K2949	SH-C-090	Shopify Credit Program Terms
+Q8-SH-K2950	SH-C-163	API License and Terms of Use
+Q8-SH-K2951	SH-C-052	API License and Terms of Use
+Q8-SH-K2952	SH-C-053	API License and Terms of Use
+Q8-SH-K2953	SH-C-083	API License and Terms of Use
+Q8-SH-K2954	SH-C-122	API License and Terms of Use
+Q8-SH-K2955	SH-C-123	API License and Terms of Use
+Q8-SH-K2956	SH-C-124	API License and Terms of Use
+Q8-SH-K2957	SH-C-128	API License and Terms of Use
+Q8-SH-K2958	SH-C-164	API License and Terms of Use
+Q8-SH-K2959	SH-C-144	API License and Terms of Use
+Q8-SH-K2960	SH-C-166	API License and Terms of Use
+Q8-SH-K2961	SH-C-167	API License and Terms of Use
+Q8-SH-K2962	SH-C-165	API License and Terms of Use
+Q8-SH-K2963	SH-C-162	API License and Terms of Use
+Q8-SH-K2964	SH-C-130	9.7 Shopify Email
+Q8-SH-K2965	SH-C-090	Shopify Credit Program Terms
+Q8-SH-K2966	SH-C-154	9.9 Third Party Services and Third Party Partners
+Q8-SH-K2967	SH-C-185	9.9 Third Party Services and Third Party Partners
+Q8-SH-K2968	SH-C-187	9.9 Third Party Services and Third Party Partners
+Q8-SH-K2969	SH-C-189	9.9 Third Party Services and Third Party Partners
+Q8-SH-K2970	SH-C-190	9.9 Third Party Services and Third Party Partners
+Q8-SH-K2971	SH-C-191	9.9 Third Party Services and Third Party Partners
+Q8-SH-K2972	SH-C-192	9.9 Third Party Services and Third Party Partners
+Q8-SH-K2973	SH-C-194	9.9 Third Party Services and Third Party Partners
+Q8-SH-K2974	SH-C-196	9.9 Third Party Services and Third Party Partners
+Q8-SH-K2975	SH-C-142	TSE Compliance
+Q8-SH-K2976	SH-C-148	Customer privacy
+Q8-SH-K2977	SH-C-078	accelerated checkouts
+Q8-SH-K2978	SH-C-111	country selector
+Q8-SH-K2979	SH-C-090	Shopify Credit
+Q8-SH-K2981	SH-C-133	Shop Campaigns Merchant Terms
+Q8-SH-K2982	SH-C-133	Shop Campaigns Merchant Terms
+Q8-SH-K2983	SH-C-134	Shopify Collabs Terms
+Q8-SH-K2984	SH-C-134	Shopify Collabs Terms
+Q8-SH-K2985	SH-C-141	Shopify Collective (suppliers)
+Q8-SH-K2986	SH-C-154	Shop product reviews
+Q8-SH-K2987	SH-C-167	custom apps
+Q8-SH-K2988	SH-C-133	Shop Campaigns Merchant Terms
+Q8-SH-K2989	SH-C-134	Shopify Collabs Terms
+Q8-SH-K2992	SH-C-133	Shop Campaigns Merchant Terms
+Q8-SH-K2993	SH-C-046	Add-to-cart limit
+Q8-SH-K2994	SH-C-046	Add-to-cart limit
+Q8-SH-K2995	SH-C-144	POS UI extensions
+Q8-SH-K2996	SH-C-144	POS UI extensions
+Q8-SH-K2997	SH-C-164	Admin UI extensions
+Q8-SH-K2998	SH-C-202	AI features in the Shopify admin
+Q8-SH-K2999	SH-C-046	add-to-cart limit
+Q8-SH-K3000	SH-C-028	standard metafield definitions
+Q8-SH-K3001	SH-C-011	collaborator accounts
+Q8-SH-K3002	SH-C-087	cash drawers
+Q8-SH-K3003	SH-C-032	languages
+Q8-SH-K3004	SH-C-027	Imagery service
+Q8-SH-K3005	SH-C-144	POS UI extensions
+Q8-SH-K3006	SH-C-164	Admin UI extensions

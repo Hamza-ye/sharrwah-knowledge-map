@@ -1,0 +1,18 @@
+{
+ "n": 130,
+ "url": "https://zid.sa/en/solutions/payments/",
+ "dir": "items/130-zid.sa",
+ "fetched_at": "2026-10-12T10:51:34Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://zid.sa/en/solutions/payments/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 52889,
+ "cited_in": [
+  "S01-ZD-C083"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "3563d359ddc70d7cffcc90754fea5c31313fc8eacc45307eb8f23e29061155b1",
+ "raw_ext": "html"
+}

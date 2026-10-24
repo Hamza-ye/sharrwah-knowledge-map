@@ -1,0 +1,22 @@
+{
+ "n": 140,
+ "url": "https://help.zid.sa/nafath_verification/",
+ "dir": "items/140-help.zid.sa",
+ "fetched_at": "2026-10-12T04:53:12Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/nafath_verification/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 25375,
+ "cited_in": [
+  "ZD-S-0591",
+  "ZD-S-0774",
+  "ZD-S-0775",
+  "ZD-S-0776",
+  "ZD-S-0777"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "2dc757cf73e5b6c31b4b7a6d749cb568f26b7193c3a5c43691e32d562c37c041",
+ "raw_ext": "html"
+}

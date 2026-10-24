@@ -1,0 +1,14 @@
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
+const { chromium } = require('/opt/node22/lib/node_modules/playwright');
+const [url, lang] = process.argv.slice(2);
+const browser = await chromium.launch();
+const ctx = await browser.newContext({ extraHTTPHeaders: lang ? { 'Accept-Language': lang } : {} });
+const page = await ctx.newPage();
+let shown = 0;
+page.on('response', async r => { if (r.status() === 400 && shown++ < 1) { console.log('URL ' + decodeURIComponent(r.url()).slice(0, 900)); try { console.log('BODY ' + (await r.text()).slice(0, 400)); } catch (e) { console.log('nobody'); } } });
+await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
+await page.waitForTimeout(12000);
+const t = await page.evaluate(() => document.body.innerText.length);
+console.log('innerText chars', t, 'UA', await page.evaluate(() => navigator.userAgent));
+await browser.close();

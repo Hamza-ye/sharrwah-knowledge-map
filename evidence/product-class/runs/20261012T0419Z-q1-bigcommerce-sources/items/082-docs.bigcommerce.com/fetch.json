@@ -1,0 +1,20 @@
+{
+ "n": 82,
+ "url": "https://docs.bigcommerce.com/developer/docs/integrations/platform-solutions/staging-with-staging-pro.md",
+ "dir": "items/082-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:20:37Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/docs/integrations/platform-solutions/staging-with-staging-pro.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 1677,
+ "cited_in": [
+  "BC-S-0374",
+  "BC-S-0375",
+  "BC-S-0376"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "448fdeabacbeba217856f1b519524003a06ff6cd2d6485d02140228cc2f51510",
+ "raw_ext": "txt"
+}

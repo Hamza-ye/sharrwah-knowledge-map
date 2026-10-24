@@ -1,0 +1,19 @@
+{
+ "n": 145,
+ "url": "https://www.shopify.com/legal/terms-cryptocurrency-credit-reward-program",
+ "dir": "items/145-shopify.com",
+ "fetched_at": "2026-10-11T06:13:11Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.shopify.com/legal/terms-cryptocurrency-credit-reward-program",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 63560,
+ "cited_in": [
+  "SH-S-0433",
+  "SH-S-0434"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "8648311ec2aa6336fb20aa230be899636105c09b65013c4b560db9df6c70f0f4",
+ "raw_ext": "html"
+}

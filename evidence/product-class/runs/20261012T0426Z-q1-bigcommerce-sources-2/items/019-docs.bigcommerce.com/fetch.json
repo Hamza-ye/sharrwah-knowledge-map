@@ -1,0 +1,18 @@
+{
+ "n": 19,
+ "url": "https://docs.bigcommerce.com/developer/docs/storefront/headless/cart-and-checkout/carts.md",
+ "dir": "items/019-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:27:14Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/docs/storefront/headless/cart-and-checkout/carts.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 3508,
+ "cited_in": [
+  "BC-S-0205"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "349c4138f82a2666024485a20827b4162e46d2e99214889c69696423a406b9bc",
+ "raw_ext": "txt"
+}

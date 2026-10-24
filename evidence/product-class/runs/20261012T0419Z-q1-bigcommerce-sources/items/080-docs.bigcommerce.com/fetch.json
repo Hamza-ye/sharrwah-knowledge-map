@@ -1,0 +1,20 @@
+{
+ "n": 80,
+ "url": "https://docs.bigcommerce.com/developer/docs/integrations/apps/guide/types-of-apps.md",
+ "dir": "items/080-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:20:35Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/docs/integrations/apps/guide/types-of-apps.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 2080,
+ "cited_in": [
+  "BC-S-0289",
+  "BC-S-0291",
+  "BC-S-0295"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "48664572c0b93a97824257ab19f14761c40921e9b7a840bef63dc863da48407a",
+ "raw_ext": "txt"
+}

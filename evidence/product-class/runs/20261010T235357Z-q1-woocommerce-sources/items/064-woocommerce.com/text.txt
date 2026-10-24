@@ -1,0 +1,401 @@
+___
+Skip to navigation
+Skip to content
+USD
+Change site currency USD selected
+Develop on Woo
+Hire an expert
+Get support
+Sell
+Click to show 12 more items
+Extensions
+Click to show 18 more items
+Resources
+Click to show 23 more items
+Enterprise ecommerce
+Log in
+Get started
+Documentation
+WooCommerce
+Expand
+Products
+Expand
+Extensions
+Expand
+Themes
+Expand
+WooPayments
+WooPay
+WooCommerce Shipping
+WooCommerce Tax
+Retired Products
+Expand
+Woo Marketplace
+Code Snippets
+Expand
+WooPayments / Documentation / WooPayments Documentation / WooPayments: Fraud and Disputes / Managing Disputes with WooPayments
+Managing Disputes with WooPayments
+
+A dispute (also called a “chargeback”) occurs when a cardholder contests a payment made with their card. Disputes can also be initiated by their bank as well, such as if the cardholder reports the card as having been stolen.
+
+Handling disputes can be unpleasant, especially when you need to challenge one. But not responding to disputes would be worse, because it can lead to fines and/or being prohibited from charging certain types of cards.
+
+This page explains how disputes work in general, as well as how to respond to them. Our guide to preventing disputes might also be of interest.
+
+NOTE: Disputes are a complex topic, and there are many pitfalls when handling them. We strongly suggest reading our Common Mistakes section below.
+
+How disputes work
+
+The dispute process usually follows these steps:
+
+The cardholder disputes a charge, or a portion of one, through their bank.
+The disputed amount and the dispute fee are immediately withdrawn from your account and returned to the card issuing bank.
+WooPayments alerts you to the dispute in a few different ways.
+You can challenge the dispute, accept the dispute, or do nothing.
+The card issuer (i.e. the customer’s bank) decides the outcome.
+If you challenge the dispute and lose, accept the dispute, or do nothing, the card issuer returns the disputed amount to the cardholder. (The timing of that is at the card issuer’s discretion.) The dispute fee is kept by the card issuer.
+If you challenge the dispute and win, the disputed amount and dispute fee will be credited back to your account.
+
+NOTE: The dispute outcome is determined solely by the cardholder’s bank. Neither we nor our payment processor can influence their decision. After disputes are decided, the outcome cannot be appealed or overturned.
+
+Timelines
+
+Banks usually let cardholders file disputes up to 120 days after the original charge, but this time can be extended in certain cases. (For example, when payments are made long before an event occurs, such as a concert or a hotel booking.)
+
+Once a dispute is filed, you have a limited time to respond, usually between 7-21 days. Similarly, if you decide to challenge the dispute and submit evidence, the cardholder’s bank has a limited time to decide the dispute, usually between 60-75 days.
+
+NOTE: Disputes for buy now, pay later orders have different timelines. Please see the Disputes section of our BNPL document for details.
+
+Dispute fees
+
+Each dispute will incur a separate dispute fee. You can see the amounts on our fees page. They will differ based on your country and the payment method used.
+
+Dispute fees are immediately debited from your account when a dispute is received. The only way to get the disputed amount and the dispute fee back is to challenge the dispute with evidence and win.
+
+Keep in mind that dispute fees are originally imposed by card networks. These fees get passed through to our payments processor and then to your WooPayments account. By charging you a dispute fee, we are only relaying the fee charged by card networks.
+
+Disputed amounts
+
+Most disputes are for the entire amount of the original charge. However, sometimes the disputed amount can be different. These special cases are explained below.
+
+Sometimes the cardholder only disputes a portion of the original charge. For example, if they ordered several products but only one arrived damaged.
+If the original charge was in a different currency, the disputed amount might be higher or lower than the original amount due to fluctuations in the exchange rate.
+If the original charge was for a subscription, and the customer disputed multiple payments of that subscription, their bank will sometimes create a single dispute for the total amount, but only apply the dispute against one of the original charges.
+Customers can dispute the entire charge even if you’ve already sent a partial refund.
+If this happens, be sure to provide evidence of the partial refund if/when you challenge the dispute. This should include the amount and date of the refund, and a screenshot of the refund information.
+In most cases, the card issuer will cancel the original dispute and then create a separate dispute for the corrected amount.
+Even if you plan to accept the unrefunded portion of the dispute, it’s important to provide evidence of the partial refund in your dispute response.
+Dispute notifications
+
+When a dispute is received, WooPayments will alert you in various ways:
+
+An email to the address we have on file for your account.
+An alert on the order page under WooCommerce > Orders.
+A red bubble next to the Payments > Disputes menu item.
+Disputed payment email
+Dispute notice on the order page
+Dispute indicator in the Payments menu
+Refunds and disputes
+
+It’s possible for banks to lodge disputes on orders even if you’ve already issued a full or partial refund. This can happen if the dispute and refund were processed at nearly the same time, or if the bank does not check the refund status prior to filing the dispute.
+
+The fact that this can happen is a card network limitation, and sadly not something that WooPayments (or Stripe) can prevent.
+
+In any case, when a dispute is filed for an order you’ve already refunded, you may see a temporary double debit: once for the refund, and again when the dispute withdraws the funds (plus the dispute fee).
+
+To win these disputes, provide the following items as evidence:
+
+A copy of your store’s refund policy.
+Information about the refund, such as:
+The amount of the refund.
+The date of the refund.
+A screenshot of the refund information from your site’s Transactions page.
+
+If you win the dispute, the withdrawn funds are of course returned to your account.
+
+SEPA disputes
+
+Like other payment methods, SEPA has a process for customers to dispute charges. However, their dispute process works differently than other payment methods.
+
+Specifically, if a customer disputes a payment within 8 weeks of the date of the original charge, they will automatically and immediately win the dispute. After the 8 week window, customers will not automatically win, but there’s no evidence submission process for merchants.
+
+In either case, we suggest trying to work with the customer to resolve the dispute. If you come to an agreement, and they’re willing to return the funds to you, they must initiate a brand new payment.
+
+3D Secure disputes
+
+3D Secure (3DS) requires customers to complete an additional verification step with their bank during checkout. Typically, they are directed to an authentication page on their bank’s website, where they must enter a password associated with the card or a code sent to their phone.
+
+In practice, this means you shouldn’t receive many “Transaction unauthorized” disputes for 3DS payments. However, if a customer disputes a payment for any other reason (e.g. “Product not received”), then the standard dispute process applies. Inquiries can also be filed against 3DS payments.
+
+Cartes Bancaires disputes
+
+Although Cartes Bancaires cardholders can dispute charges, the rules around doing so are more strict, and there are fewer reasons they can use to file a dispute. However, once a dispute is filed, merchants cannot challenge it.
+
+Thus, if a customer pays with a Cartes Bancaires card and later disputes the payment, you will receive a disputed payment email followed shortly by a dispute lost email.
+
+There is no fee for Cartes Bancaires disputes.
+
+Visa compliance disputes
+
+Visa compliance disputes are very rare, but you may receive one if the card-issuing bank thinks that the transaction in question does not follow Visa’s network rules.
+
+These disputes are notable in that it’s not your customer disputing the payment, it’s their bank. Visa themselves will determine the dispute winner.
+
+There’s another reason these disputes are unique: if you challenge a Visa compliance dispute, your WooPayments account will be subject to a $500 USD fee. This fee is only returned to you if you win. (And that fee is in addition to the usual dispute fee.)
+
+You can identify Visa compliance disputes by the reason: “Non-compliant.”
+
+The process of responding to one of these Visa compliance disputes is the same as for any other dispute, except that you must agree to the $500 fee before challenging it.
+
+Unless you have clear and compelling evidence which proves you are in compliance with Visa’s card network rules, the wisest course is likely to accept these disputes.
+
+Inquiries
+
+Some card issuers (mainly American Express and Discover) will occasionally utilize a pre-dispute step called an “inquiry.” An inquiry may also be referred to as a “retrieval” or a “request for information.”
+
+NOTE: Inquiries and early fraud warnings may sound similar, but they are not the same thing. We suggest reading both documents for more information.
+
+An example inquiry on the WooCommerce order page
+An example inquiry on the Payments > Transactions page
+
+Inquiries are usually filed because the customer (the cardholder) does not recognize or remember the transaction. You can resolve these without an additional fee by either:
+
+Sending evidence to the bank, or…
+Issuing a full refund to the customer.
+
+If you decide to submit evidence for the inquiry, your evidence should try to show that the actual cardholder (or an authorized person, such as an employee or family member) did in fact make the payment.
+
+Card issuers can convert inquiries to disputes at their discretion. This usually occurs when you don’t respond to an inquiry, at which point it can become an unwinnable dispute. WooPayments will send you an email alert about this if it occurs.
+
+NOTE: American Express might also open a new inquiry on a charge even after an earlier dispute on that same charge was already decided in your favor. This doesn’t mean that you did anything wrong. AmEx may simply be gathering more information before they consider the case fully closed.
+
+Klarna also uses inquiries as part of their return process.
+
+Multiple disputes per payment
+
+Although rare, a single payment can receive more than one dispute or inquiry. This can happen for a few different reasons:
+
+Partial disputes: If an order contains several items, the cardholder may dispute them separately instead of disputing the whole charge all at once.
+Re-filed disputes: The card issuer may cancel a dispute and file a new one to correct the amount, currency, or reason code.
+Issuer error: After a dispute is decided in your favor for the full charge amount, the issuer shouldn’t file another one on the same charge, but card networks don’t always prevent this. If it happens, cite the earlier lost dispute in your response.
+
+When a payment has more than one dispute, the transaction details page will show each one in its own numbered section (e.g., “Dispute 1 of 2”) with its own status, timeline, and Accept or Challenge buttons. Respond to each dispute individually. The outcome of one dispute doesn’t affect the other disputes.
+
+NOTE: Klarna has its own limit on how many inquiries or disputes a single order can receive. See the Klarna inquiries and returns document for details.
+
+Responding to disputes
+
+Disputes are shown on the Payments > Disputes page, which by default shows only disputes that still need a response. They are sorted by the length of time until the response deadline, with the disputes closest to the deadline at the top.
+
+When you click a particular dispute, you’ll be taken to the transaction details page to see more information, including the disputed amount, the dispute reason, customer information, and so on.
+
+The steps you should take to resolve the dispute are also shown on the transaction details page. We’ve also explained them in more depth below.
+
+1. Find the dispute reason
+
+The reason the customer filed the dispute is noted in the list under Payments > Disputes, as well as on the transaction details page.
+
+Each dispute reason has different evidence that may be needed, should you choose to challenge the dispute. Thus, it’s important to note the dispute reason as your first step.
+
+2. Contact your customer
+
+We suggest contacting your customer about their complaint, as it might give you a better understanding of the issue, and it could help you decide how to proceed.
+
+Also, customers sometimes mistakenly dispute a charge. If they’re reminded of the transaction, you may be able to get them withdraw the dispute via their bank.
+
+In any case, be sure to keep a record of all communication with your customer during this process, as it may be useful to submit as evidence later on.
+
+3. Decide to challenge or accept
+
+Once you understand the reasoning behind the customer’s dispute, you should next decide whether to accept it or challenge it.
+
+Accepting means that you agree with the cardholder that the dispute was valid for the reason they gave. This is not considered an admission of wrongdoing, and indeed it is sometimes the most appropriate response.
+
+Challenging the dispute allows you to submit evidence to the bank in an attempt to prove that the dispute is not valid. This is the only way to potentially get the disputed amount and the dispute fee back!
+
+To help you decide, consider the following questions:
+
+Did the customer return the products, or did you not deliver them?
+Is the disputed amount large enough to be worth challenging?
+Do you have the evidence required to challenge the dispute?
+Can you convince the cardholder to withdraw the dispute?
+
+Once you’ve decided, you can take action on the transaction details page.
+
+If you’ve decided to accept the dispute, simply click the dispute to open it, and then click the Accept dispute button.
+
+If you want to challenge the dispute, click Challenge dispute to to open the step-by-step evidence submission form.
+
+The evidence submission form has 3 sections to it:
+
+Purchase info
+Shipping details (hidden for non-physical orders)
+Review
+
+We’ll break down what is expected in each stage of the process.
+
+Purchase info
+
+Here you can provide details about the disputed order, including the product or service type and a description. Some items, e.g. the customer information, will be pre-filled.
+
+You will also find a section for Recommended documents which you can use to upload and attach your supporting evidence to the challenge.
+
+See our evidence suggestions page for tips on what information to submit.
+
+Once you’ve collected and uploaded all the available evidence, click Next at the bottom move to the next section.
+
+Shipping Details
+
+NOTE: This section will be hidden and automatically skipped for orders where shipping does not apply, e.g. orders that contain only digital goods.
+
+Here you will be able to provide all the delivery info related to the disputed product(s) including the shipping carrier, shipping date, tracking number, and so on. Some of this info is pre-filled for you.
+
+Once you’ve added the relevant information you can move on to the Review section by clicking Next at the bottom.
+
+Review
+
+This is where you can review the cover letter for your dispute. This letter is generated based on the information you provided in the previous steps.
+
+NOTE: If you manually modify the cover letter by typing in the text box, it will override our default template. If you go back and update evidence submitted in previous steps, it will not automatically update the cover letter.
+
+You can preview your cover letter by clicking the Preview cover letter button.
+
+Once you have provided all your supporting information, click Submit to finish challenging the dispute.
+
+If you wish to save the evidence you’ve collected so far without submitting it, click Save for later. If you forget to come back to the dispute, we will automatically send the saved evidence on the deadline date for that dispute.
+
+NOTE: You have one chance to submit evidence and challenge a dispute. After submission, there’s no way to update the dispute or add more evidence.
+
+4. Monitor the dispute status
+
+After you’ve submitted evidence to challenge the dispute, the cardholder’s bank will review it within a certain amount of time, usually 60-75 days. Once they’ve made their decision, you’ll receive an email notification about the outcome.
+
+The outcome will also be noted on the transaction details page:
+
+If you win, the disputed amount and the dispute fee are automatically credited to your WooPayments account balance. If you lose, the disputed amount and the dispute fee that were deducted from your account earlier are not returned.
+
+We’ll also show you some tips as to how to improve your response in the future:
+
+NOTE: The dispute outcome is determined solely by the cardholder’s bank. Neither we nor our payment processor can influence their decision. After disputes are decided, the outcome cannot be appealed or overturned.
+
+Dispute withdrawals
+
+As we noted in the Contact your customer section above, the most effective way to win a dispute is by contacting your customer, addressing the issue that caused them to file a dispute, and then having them withdraw/retract the dispute via their bank.
+
+NOTE: If the plan you make with your customer involves refunding them, know that it could be some time before you can do so. This is because you cannot refund a disputed charge until the bank decides the dispute in your favor.
+
+If they agree to withdraw the dispute, consider asking for evidence of this, such as a copy of an email from their bank. It’s not required to submit this as evidence when you challenge the dispute, but it is very helpful.
+
+Also, keep in mind the following information about withdrawn disputes:
+
+You must still challenge it with evidence in order to win!
+They are not resolved any more quickly than other disputes.
+They do not show up any differently in your dashboard.
+They still count against your dispute rate with the card network.
+Inquiries cannot be withdrawn.
+Common mistakes
+
+Because handling disputes can be stressful, merchants often feel a temptation to do almost anything to get rid of them, even though those actions are usually unwise.
+
+Here’s a few common mistakes to avoid:
+
+Don’t ignore disputes and hope they go away. If you don’t respond to a dispute in time, the cardholder’s bank will automatically resolve the dispute in your customer’s favor.
+Don’t ignore disputes your customer withdrew. Even if your customer withdraws or cancels the dispute with their bank, you still need to challenge the dispute in order to get your money back and have the dispute fee returned.
+Don’t get emotional. Stick to the facts. Keep your language clear and professional. Let your evidence do the talking. Emotional pleas and legal threats will not help.
+Don’t submit evidence before you’re ready. Dispute evidence can only be submitted one time per dispute, so be absolutely sure that you’ve filled out all the details and that you’ve included all the relevant information. Once evidence has been submitted against a dispute, there’s no way correct it or amend it.
+Don’t refund the customer in some other way. This is because the disputed amount is withdrawn from your account immediately when the dispute is first filed and sent back to the customer. Trying to refund the customer via some other method is likely to result in you losing twice as much money as you would have otherwise.
+Don’t let disputes pile up. If your dispute rate exceeds certain thresholds set by card networks (e.g. Visa or Mastercard), you could face monthly fines or other fees until your disputes return to acceptable levels. You can learn about ways to prevent disputes here.
+Was this guide helpful for you?
+ON THIS PAGE
+How disputes work
+Timelines
+Dispute fees
+Disputed amounts
+Dispute notifications
+Refunds and disputes
+SEPA disputes
+3D Secure disputes
+Cartes Bancaires disputes
+Visa compliance disputes
+Inquiries
+Multiple disputes per payment
+Responding to disputes
+1. Find the dispute reason
+2. Contact your customer
+3. Decide to challenge or accept
+4. Monitor the dispute status
+Dispute withdrawals
+Common mistakes
+WooPayments
+by Woo
+No payment details required • Set up in minutes
+Install for free
+30-day money-back guarantee
+Support teams across the world
+Safe and secure online payments
+Sell
+WooCommerce
+WooCommerce pricing
+Payments
+No-code customization
+Marketing
+Checkout
+Shipping
+Mobile app
+Enterprise ecommerce
+Marketplace
+WooCommerce extensions
+WooCommerce themes
+New
+Essentials
+Collections
+Developed by Woo
+Build
+Woo for developers
+Developer resources
+Become a Woo agency
+Become a Marketplace partner
+Become an affiliate
+Resources
+Blog
+Documentation
+WooCommerce site examples
+Product updates
+Email newsletter
+Support
+Feature requests
+WooCommerce hosting
+Hire an agency
+Participate in customer research
+Accessibility
+Support forums
+Company
+About
+Press
+Download WooCommerce free
+Join the Woo community
+Woo trademark guidelines
+Brand and logo guidelines
+Do not sell or share my personal information
+WooCommerce Support Policy
+Refund Policy
+Contact us
+Follow us on Facebook
+Follow us on X
+Follow us on Instagram
+Follow us on LinkedIn
+USD
+Change site currency USD selected
+Terms of Service
+Privacy Policy
+Privacy Notice for California Users
+
+© WooCommerce, Inc. 2026
+
+AN
+AUTOMATTIC
+JOINT
+Use of your personal data
+We and our partners process your personal data (such as browsing data, IP Addresses, cookie information, and other unique identifiers) based on your consent and/or our legitimate interest to optimize our website, marketing activities, and your user experience.
+Customize
+Accept all

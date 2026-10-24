@@ -1,0 +1,19 @@
+{
+ "n": 17,
+ "url": "https://docs.bigcommerce.com/developer/docs/storefront/guides/graphql-storefront-api/products-and-catalog/product-reviews.md",
+ "dir": "items/017-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:27:12Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/docs/storefront/guides/graphql-storefront-api/products-and-catalog/product-reviews.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 1825,
+ "cited_in": [
+  "BC-S-0072",
+  "BC-S-0074"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "a666db5bc00d3a4477627f21a43ba58445b310b51834fed161c1eea997687685",
+ "raw_ext": "txt"
+}

@@ -1,0 +1,18 @@
+{
+ "n": 14,
+ "url": "https://help.salla.sa/article/-متجر-الثيمات/r82be2jrf9wgyxahtnz9ug0d",
+ "dir": "items/014-help.salla.sa",
+ "fetched_at": "2026-10-11T09:19:12Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.salla.sa/article/-متجر-الثيمات/r82be2jrf9wgyxahtnz9ug0d",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 141275,
+ "cited_in": [
+  "SA-S-5031"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "4de8c5d1ecd595daa09281e3d1ee8921cef8b626388399d002cc63b2ac82edb1",
+ "raw_ext": "html"
+}

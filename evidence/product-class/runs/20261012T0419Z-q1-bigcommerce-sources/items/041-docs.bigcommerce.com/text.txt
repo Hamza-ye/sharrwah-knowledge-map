@@ -1,0 +1,21 @@
+> This page is for Developer.
+
+> For clean Markdown of any page, append .md to the page URL.
+> For a complete documentation index, see https://docs.bigcommerce.com/llms.txt.
+> For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server.
+
+# Shipping V2
+
+Manage shipping zones, shipping methods, and shipping carrier connections.
+
+### Shipping Zones
+
+The Shipping Zone object and endpoints manage shipping zones within countries.
+
+### Shipping Methods
+
+The Shipping Methods object and endpoints manage shipping rules within Shipping Zones. These rules determine the shipping rates displayed at checkout, and related parts of the control panel, such as the shipping of manual orders.
+
+### Shipping Carrier Connections
+
+Carrier connections refer to specific settings required to connect to a specific shipping carrier. Each carrier requires your app to supply a unique set of properties/fields to establish a connection with that carrier.

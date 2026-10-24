@@ -1,0 +1,21 @@
+{
+ "n": 38,
+ "url": "https://help.shopify.com/en/manual/international/pricing/exchange-rates.md",
+ "dir": "items/038-help.shopify.com",
+ "fetched_at": "2026-10-11T06:12:59Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/international/pricing/exchange-rates.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 3570,
+ "cited_in": [
+  "SH-S-0548",
+  "SH-S-0549",
+  "SH-S-0550",
+  "SH-S-0551"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "a824c67c2ec2dc3f909a5e7d9c9cbf71fcd84e5e0b1e4c1a048356b2f69ce0ff",
+ "raw_ext": "txt"
+}

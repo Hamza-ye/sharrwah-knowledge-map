@@ -1,0 +1,24 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+server: nginx
+date: Sat, 10 Oct 2026 23:54:06 GMT
+content-type: text/html; charset=UTF-8
+vary: Accept-Encoding, accept, content-type
+x-hacker: If you're reading this, you should visit https://join.a8c.com/viphacker and apply to join the fun, mention this header.
+x-powered-by: WordPress VIP <https://wpvip.com>
+host-header: a9130478a60e5f9135f765b23f26593b
+x-frame-options: SAMEORIGIN
+x-content-type-options: nosniff
+referrer-policy: strict-origin-when-cross-origin
+content-security-policy: upgrade-insecure-requests
+link: <https://woocommerce.com/wp-json/>; rel="https://api.w.org/"
+link: <https://woocommerce.com/wp-json/wp/v2/documentation/8735396>; rel="alternate"; title="JSON"; type="application/json"
+link: <https://woocommerce.com/?p=8735396>; rel=shortlink
+content-encoding: br
+x-rq: dca6 0 40 9980
+cache-control: public, max-age=300, must-revalidate, s-maxage=86400
+accept-ranges: bytes
+x-cache: STALE
+strict-transport-security: max-age=31536000;includeSubdomains
+

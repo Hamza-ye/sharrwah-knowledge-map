@@ -1,0 +1,18 @@
+{
+ "n": 41,
+ "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/shipping.md",
+ "dir": "items/041-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:19:56Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/shipping.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 468,
+ "cited_in": [
+  "BC-S-0335"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "2c9f3a77fc35a3a00379db7c345ad5219bcf786de5b56eb4ffebf1934355304c",
+ "raw_ext": "txt"
+}

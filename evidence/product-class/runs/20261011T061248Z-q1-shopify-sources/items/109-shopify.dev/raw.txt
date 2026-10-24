@@ -1,0 +1,5057 @@
+---
+title: Payment Customization Function API
+description: >-
+  Use the Payment Customization Function API to rename, reorder, sort the
+  payment methods available to buyers during checkout, set payment terms, and
+  add a review requirement.
+api_version: 2026-10
+source_url:
+  html: 'https://shopify.dev/docs/api/functions/latest/payment-customization'
+  md: 'https://shopify.dev/docs/api/functions/latest/payment-customization.md'
+api_type: functions
+api_name: payment-customization
+---
+
+# Payment Customization Function API
+
+A [payment customization](https://help.shopify.com/manual/checkout-settings/checkout-customization) enables you to rename, reorder, hide the payment methods available to customers during checkout, set payment terms, and add a review requirement for a specific order. Examples of payment methods that you can customize include credit cards, gift cards, and wallets such as Shop Pay, Apple Pay, and Google Pay.
+
+[Payment terms](https://help.shopify.com/manual/fulfillment/managing-orders/payments/deferred-payments) allow buyers to pay for their order at a later date instead of at checkout, and can be set as fixed, net, or event-based terms with optional deposits. To customize payment methods and payment terms in checkout, you can use the Payment Customization Function API.
+
+[A review requirement](https://shopify.dev/docs/apps/build/b2b/draft-orders) enables you to control whether an order is submitted as a draft for review. Using the Payment Customization Function API, you can add a review requirement to an order based on conditions such as order value or cart contents. (B2B orders only. See [limitations](https://shopify.dev/docs/apps/build/checkout/payments#limitations-and-considerations))
+
+[Shopify Functions](https://shopify.dev/docs/api/functions/current) enable you to customize Shopify's backend logic. The Payment Customization Function API integrates this logic into the checkout flow.
+
+Use the API to reorder, rename, hide payment methods, set payment terms, and add a review requirement in checkout, with associated data.
+
+**Note:**
+
+You can activate a maximum of 25 payment customization functions on each store.
+
+### Use cases
+
+* Hide payment methods for carts with totals above or below a given value.
+* Reorder payment methods, such as credit cards, according to customer preference.
+* Hide payment methods based on the customer's country.
+* Hide and disable gift cards based on data such as cart contents and country.
+* Set payment terms with deposits for high-value orders.
+* Apply net payment terms based on buyer identity.
+* Set a review requirement for specific orders, such as high-value ones.
+
+## Function target
+
+Checkout
+
+![Function Target](https://shopify.dev/assets/assets/images/target-diagrams/payment-customization-target-diagram-BZbxTmZ4.gif)
+
+### Compatibility with Shopify surfaces Supported (4) Partially supported (1) Unsupported (9)
+
+* [B2B](https://shopify.dev/docs/apps/build/b2b): Supported
+
+* [Cart](https://shopify.dev/docs/storefronts/themes/architecture/templates/cart): Not supported
+
+* [Checkout](https://shopify.dev/docs/apps/build/checkout): Supported
+
+* [Create Order API](https://shopify.dev/docs/api/admin-graphql/latest/mutations/orderCreate): Not supported
+
+* [Draft Order (Admin)](https://shopify.dev/docs/apps/build/b2b/draft-orders): Not supported
+
+* [Draft Order (Checkout)](https://shopify.dev/docs/apps/build/b2b/draft-orders): Supported
+
+* [Order Edit (Admin)](https://shopify.dev/docs/apps/build/orders-fulfillment/order-management-apps/edit-orders): Not supported
+
+* [Order Edit (Checkout)](https://shopify.dev/docs/apps/build/orders-fulfillment/order-management-apps/edit-orders): Not supported
+
+* [POS](https://shopify.dev/docs/apps/build/pos): Not supported
+
+* [Pre-order and Try Before You Buy](https://shopify.dev/docs/apps/build/purchase-options/deferred): Supported
+
+* [Shopify Admin](https://shopify.dev/docs/apps/build/functions/input-output/metafields-for-input-queries#creating-your-merchant-interface): Not supported
+
+* [Storefront](https://shopify.dev/docs/storefronts/headless/building-with-the-storefront-api/): Not supported
+
+* [Storefront Accelerated Checkout](https://shopify.dev/docs/storefronts/themes/pricing-payments/accelerated-checkout): Partially supported
+
+  [Payment terms](https://help.shopify.com/en/manual/fulfillment/managing-orders/payments/deferred-payments) aren't supported in storefront accelerated checkouts.
+
+* [Subscription (Recurring Orders)](https://shopify.dev/docs/apps/build/purchase-options/subscriptions): Not supported
+
+**Note:**
+
+Payment terms are incompatible with subscriptions. Payment customization functions can't set payment terms when the cart contains items with subscription selling plans.
+
+***
+
+## Getting started
+
+Scaffolding the function using [Shopify CLI](https://shopify.dev/docs/api/shopify-cli) will automatically configure your TOML file. You can alter the default [configuration](https://shopify.dev/docs/api/functions/2026-10#configuration) to customize the way your function operates.
+
+## Terminal
+
+```terminal
+shopify app generate extension --template payment_customization
+```
+
+[Build a payment customization function\
+\
+](https://shopify.dev/docs/apps/build/checkout/payments)
+
+[Tutorial](https://shopify.dev/docs/apps/build/checkout/payments)
+
+***
+
+## Targets
+
+A [target](https://shopify.dev/docs/apps/build/app-extensions/configure-app-extensions#targets) is an identifier in `shopify.extension.toml` that specifies where you're injecting code into Shopify Function APIs, or other parts of the Shopify platform. Each target is composed of three to four namespaces. The name begins with a broad Shopify context and ends with the behavior of the extensible element.
+
+***
+
+### Run target
+
+`cart.payment-methods.transform.run`
+
+The run target customizes payment methods using either Shopify data or hardcoded values. The target returns an ordered list of operations to be applied to payment methods, payment terms, and review requirements.
+
+For example, you might use this to hide a payment method for B2B customers, set fixed payment terms with a deposit for orders above a certain threshold or add a review requirement for a high-value order.
+
+* Input
+
+  OBJECT
+
+  The `Input` object is the complete GraphQL schema that your function can query as an input to customize the payment methods that are available to customers during checkout. Your function receives only the fields that you request in the input query. To optimize performance, we highly recommend that you request only the fields that your function requires.
+
+  * cart
+
+    Cart!
+
+    non-null
+
+    The cart where the Function is running. A cart contains the merchandise that a customer intends to purchase and information about the customer, such as the customer's email address and phone number.
+
+    * attribute
+
+      Attribute
+
+      The custom attributes associated with a cart to store additional information. Cart attributes allow you to collect specific information from customers on the **Cart** page, such as order notes, gift wrapping requests, or custom product details. Attributes are stored as key-value pairs.
+
+      * key
+
+        String
+
+        ### Arguments
+
+        The key of the cart attribute to retrieve. For example, `"gift_wrapping"`.
+
+      ***
+
+      * key
+
+        String!
+
+        non-null
+
+        ### Fields
+
+        The key or name of the attribute. For example, `"customer_first_order"`.
+
+      * value
+
+        String
+
+        The value of the attribute. For example, `"true"`.
+
+    * billing​Address
+
+      Mailing​Address
+
+      The billing address associated with the cart.
+
+      * address1
+
+        String
+
+        The first line of the address. Typically the street address or PO Box number.
+
+      * address2
+
+        String
+
+        The second line of the address. Typically the number of the apartment, suite, or unit.
+
+      * city
+
+        String
+
+        The name of the city, district, village, or town.
+
+      * company
+
+        String
+
+        The name of the customer's company or organization.
+
+      * country​Code
+
+        Country​Code
+
+        The two-letter code for the country of the address. For example, US.
+
+        * AC, AD, AE, AF, AG, AI, AL, AM, AN, AO, AR, AT, AU, AW, AX, AZ, BA, BB, BD, BE, BF, BG, BH, BI, BJ, BL, BM, BN, BO, BQ, BR, BS, BT, BV, BW, BY, BZ, CA, CC, CD, CF, CG, CH, CI, CK, CL, CM, CN, CO, CR, CU, CV, CW, CX, CY, CZ, DE, DJ, DK, DM, DO, DZ, EC, EE, EG, EH, ER, ES, ET, FI, FJ, FK, FO, FR, GA, GB, GD, GE, GF, GG, GH, GI, GL, GM, GN, GP, GQ, GR, GS, GT, GW, GY, HK, HM, HN, HR, HT, HU, ID, IE, IL, IM, IN, IO, IQ, IR, IS, IT, JE, JM, JO, JP, KE, KG, KH, KI, KM, KN, KP, KR, KW, KY, KZ, LA, LB, LC, LI, LK, LR, LS, LT, LU, LV, LY, MA, MC, MD, ME, MF, MG, MK, ML, MM, MN, MO, MQ, MR, MS, MT, MU, MV, MW, MX, MY, MZ, NA, NC, NE, NF, NG, NI, NL, NO, NP, NR, NU, NZ, OM, PA, PE, PF, PG, PH, PK, PL, PM, PN, PS, PT, PY, QA, RE, RO, RS, RU, RW, SA, SB, SC, SD, SE, SG, SH, SI, SJ, SK, SL, SM, SN, SO, SR, SS, ST, SV, SX, SY, SZ, TA, TC, TD, TF, TG, TH, TJ, TK, TL, TM, TN, TO, TR, TT, TV, TW, TZ, UA, UG, UM, US, UY, UZ, VA, VC, VE, VG, VN, VU, WF, WS, XK, YE, YT, ZA, ZM, ZW, ZZ
+
+      * first​Name
+
+        String
+
+        The first name of the customer.
+
+      * last​Name
+
+        String
+
+        The last name of the customer.
+
+      * latitude
+
+        Float
+
+        The approximate latitude of the address.
+
+      * longitude
+
+        Float
+
+        The approximate longitude of the address.
+
+      * name
+
+        String
+
+        The full name of the customer, based on firstName and lastName.
+
+      * phone
+
+        String
+
+        A unique phone number for the customer. Formatted using E.164 standard. For example, +16135551111.
+
+      * province​Code
+
+        String
+
+        The alphanumeric code for the region. For example, ON.
+
+      * zip
+
+        String
+
+        The zip or postal code of the address.
+
+      * market
+
+        Market
+
+        Deprecated
+
+        * handle
+
+          Handle!
+
+          non-null
+
+          A human-readable unique string for the market automatically generated from its title.
+
+        * id
+
+          ID!
+
+          non-null
+
+          A globally-unique identifier.
+
+        * metafield
+
+          Metafield
+
+          A [custom field](https://shopify.dev/docs/apps/build/custom-data) that stores additional information about a Shopify resource, such as products, orders, and [many more](https://shopify.dev/docs/api/admin-graphql/latest/enums/MetafieldOwnerType). Using [metafields with Shopify Functions](https://shopify.dev/docs/apps/build/functions/input-output/metafields-for-input-queries) enables you to customize the checkout experience.
+
+          * namespace
+
+            String
+
+            ### Arguments
+
+            A category that organizes a group of metafields. Namespaces are used to prevent naming conflicts between different apps or different parts of the same app. If omitted, then the [app-reserved namespace](https://shopify.dev/docs/apps/build/custom-data/ownership) is used.
+
+          * key
+
+            String!
+
+            required
+
+            The unique identifier for the metafield within its namespace. A metafield is composed of a namespace and a key, in the format `namespace.key`.
+
+          ***
+
+          * json​Value
+
+            JSON!
+
+            non-null
+
+            ### Fields
+
+            The data that's stored in the metafield, using JSON format.
+
+          * type
+
+            String!
+
+            non-null
+
+            The [type of data](https://shopify.dev/apps/metafields/types) that the metafield stores in the `value` field.
+
+          * value
+
+            String!
+
+            non-null
+
+            The data that's stored in the metafield. The data is always stored as a string, regardless of the [metafield's type](https://shopify.dev/apps/metafields/types).
+
+        * regions
+
+          \[Market​Region!]!
+
+          non-null
+
+          A geographic region which comprises a market.
+
+          * name
+
+            String
+
+            The name of the region in the language of the current localization.
+
+    * buyer​Identity
+
+      Buyer​Identity
+
+      Information about the customer that's interacting with the cart. It includes details such as the customer's email and phone number, and the total amount of money the customer has spent in the store. This information helps personalize the checkout experience and ensures that accurate pricing and delivery options are displayed to customers.
+
+      * customer
+
+        Customer
+
+        The [customer](https://help.shopify.com/manual/customers/manage-customers) that's interacting with the cart.
+
+        * amount​Spent
+
+          Money​V2!
+
+          non-null
+
+          The total amount that the customer has spent on orders. The amount is converted from the shop's currency to the currency of the cart using a market rate.
+
+          * amount
+
+            Decimal!
+
+            non-null
+
+            A monetary value in decimal format, allowing for precise representation of cents or fractional currency. For example, 12.99.
+
+          * currency​Code
+
+            Currency​Code!
+
+            non-null
+
+            The three-letter currency code that represents a world currency used in a store. Currency codes include standard [standard ISO 4217 codes](https://en.wikipedia.org/wiki/ISO_4217), legacy codes, and non-standard codes. For example, USD.
+
+            * AED, AFN, ALL, AMD, AOA, ARS, AUD, AWG, AZN, BAM, BBD, BDT, BGN, BHD, BIF, BMD, BND, BOB, BRL, BSD, BTN, BWP, BYN, BZD, CAD, CDF, CHF, CLP, CNY, COP, CRC, CVE, CZK, DJF, DKK, DOP, DZD, EGP, ERN, ETB, EUR, FJD, FKP, GBP, GEL, GHS, GIP, GMD, GNF, GTQ, GYD, HKD, HNL, HRK, HTG, HUF, IDR, ILS, INR, IQD, IRR, ISK, JEP, JMD, JOD, JPY, KES, KGS, KHR, KID, KMF, KRW, KWD, KYD, KZT, LAK, LBP, LKR, LRD, LSL, LTL, LVL, LYD, MAD, MDL, MGA, MKD, MMK, MNT, MOP, MRU, MUR, MVR, MWK, MXN, MYR, MZN, NAD, NGN, NIO, NOK, NPR, NZD, OMR, PAB, PEN, PGK, PHP, PKR, PLN, PYG, QAR, RON, RSD, RUB, RWF, SAR, SBD, SCR, SDG, SEK, SGD, SHP, SLL, SOS, SRD, SSP, STN, SYP, SZL, THB, TJS, TMT, TND, TOP, TRY, TTD, TWD, TZS, UAH, UGX, USD, USDC, UYU, UZS, VED, VES, VND, VUV, WST, XAF, XCD, XCG, XOF, XPF, XXX, YER, ZAR, ZMW, ANG, BYR, STD, VEF
+
+        * created​At
+
+          Date​Time!
+
+          non-null
+
+          The date and time ([ISO 8601 format](http://en.wikipedia.org/wiki/ISO_8601)) at which the customer was created in Shopify.
+
+        * display​Name
+
+          String!
+
+          non-null
+
+          The full name of the customer, based on the values for `firstName` and `lastName`. If `firstName` and `lastName` aren't specified, then the value is the customer's email address. If the email address isn't specified, then the value is the customer's phone number.
+
+        * email
+
+          String
+
+          The customer's email address.
+
+        * first​Name
+
+          String
+
+          The customer's first name.
+
+        * has​Any​Tag
+
+          Boolean!
+
+          non-null
+
+          Whether the customer is associated with any of the specified tags. The customer must have at least one tag from the list to return `true`.
+
+          * tags
+
+            \[String!]!
+
+            requiredDefault:\[]
+
+            ### Arguments
+
+            A comma-separated list of searchable keywords that are associated with the customer. For example, `"VIP, Gold"` returns customers with either the `VIP` or `Gold` tag.
+
+          ***
+
+        * has​Tags
+
+          \[Has​Tag​Response!]!
+
+          non-null
+
+          Whether the customer is associated with the specified tags.
+
+          * tags
+
+            \[String!]!
+
+            requiredDefault:\[]
+
+            ### Arguments
+
+            A comma-separated list of searchable keywords that are associated with the customer. For example, `"VIP, Gold"` returns customers with both the `VIP` and `Gold` tags.
+
+          ***
+
+          * has​Tag
+
+            Boolean!
+
+            non-null
+
+            ### Fields
+
+            Whether the Shopify resource has the tag.
+
+          * tag
+
+            String!
+
+            non-null
+
+            A searchable keyword that's associated with a Shopify resource, such as a product or customer. For example, a merchant might apply the `sports` and `summer` tags to products that are associated with sportswear for summer.
+
+        * id
+
+          ID!
+
+          non-null
+
+          A [globally-unique ID](https://shopify.dev/docs/api/usage/gids) for the customer.
+
+        * last​Name
+
+          String
+
+          The customer's last name.
+
+        * metafield
+
+          Metafield
+
+          A [custom field](https://shopify.dev/docs/apps/build/custom-data) that stores additional information about a Shopify resource, such as products, orders, and [many more](https://shopify.dev/docs/api/admin-graphql/latest/enums/MetafieldOwnerType). Using [metafields with Shopify Functions](https://shopify.dev/docs/apps/build/functions/input-output/metafields-for-input-queries) enables you to customize the checkout experience.
+
+        * number​Of​Orders
+
+          Int!
+
+          non-null
+
+          The total number of orders that the customer has made at the store.
+
+      * email
+
+        String
+
+        The email address of the customer that's interacting with the cart.
+
+      * is​Authenticated
+
+        Boolean!
+
+        non-null
+
+        Whether the customer is authenticated through their [customer account](https://help.shopify.com/manual/customers/customer-accounts).
+
+      * phone
+
+        String
+
+        The phone number of the customer that's interacting with the cart.
+
+      * purchasing​Company
+
+        Purchasing​Company
+
+        The company of a B2B customer that's interacting with the cart. Used to manage and track purchases made by businesses rather than individual customers.
+
+        * company
+
+          Company!
+
+          non-null
+
+          The company associated to the order or draft order.
+
+          * created​At
+
+            Date​Time!
+
+            non-null
+
+            The date and time ([ISO 8601 format](http://en.wikipedia.org/wiki/ISO_8601)) at which the company was created in Shopify.
+
+          * external​Id
+
+            String
+
+            A unique externally-supplied ID for the company.
+
+          * id
+
+            ID!
+
+            non-null
+
+            The ID of the company.
+
+          * metafield
+
+            Metafield
+
+            A [custom field](https://shopify.dev/docs/apps/build/custom-data) that stores additional information about a Shopify resource, such as products, orders, and [many more](https://shopify.dev/docs/api/admin-graphql/latest/enums/MetafieldOwnerType). Using [metafields with Shopify Functions](https://shopify.dev/docs/apps/build/functions/input-output/metafields-for-input-queries) enables you to customize the checkout experience.
+
+          * name
+
+            String!
+
+            non-null
+
+            The name of the company.
+
+          * updated​At
+
+            Date​Time!
+
+            non-null
+
+            The date and time ([ISO 8601 format](http://en.wikipedia.org/wiki/ISO_8601)) at which the company was last modified.
+
+        * contact
+
+          Company​Contact
+
+          The company contact associated to the order or draft order.
+
+          * created​At
+
+            Date​Time!
+
+            non-null
+
+            The date and time ([ISO 8601 format](http://en.wikipedia.org/wiki/ISO_8601)) at which the company contact was created in Shopify.
+
+          * id
+
+            ID!
+
+            non-null
+
+            The ID of the company.
+
+          * locale
+
+            String
+
+            The company contact's locale (language).
+
+          * title
+
+            String
+
+            The company contact's job title.
+
+          * updated​At
+
+            Date​Time!
+
+            non-null
+
+            The date and time ([ISO 8601 format](http://en.wikipedia.org/wiki/ISO_8601)) at which the company contact was last modified.
+
+        * location
+
+          Company​Location!
+
+          non-null
+
+          The company location associated to the order or draft order.
+
+          * created​At
+
+            Date​Time!
+
+            non-null
+
+            The date and time ([ISO 8601 format](http://en.wikipedia.org/wiki/ISO_8601)) at which the company location was created in Shopify.
+
+          * external​Id
+
+            String
+
+            A unique externally-supplied ID for the company.
+
+          * id
+
+            ID!
+
+            non-null
+
+            The ID of the company.
+
+          * locale
+
+            String
+
+            The preferred locale of the company location.
+
+          * metafield
+
+            Metafield
+
+            A [custom field](https://shopify.dev/docs/apps/build/custom-data) that stores additional information about a Shopify resource, such as products, orders, and [many more](https://shopify.dev/docs/api/admin-graphql/latest/enums/MetafieldOwnerType). Using [metafields with Shopify Functions](https://shopify.dev/docs/apps/build/functions/input-output/metafields-for-input-queries) enables you to customize the checkout experience.
+
+          * name
+
+            String!
+
+            non-null
+
+            The name of the company location.
+
+          * orders​Count
+
+            Int!
+
+            non-null
+
+            The number of orders placed at this company location.
+
+          * total​Spent
+
+            Money​V2!
+
+            non-null
+
+            The total amount spent at this company location.
+
+            * amount
+
+              Decimal!
+
+              non-null
+
+              A monetary value in decimal format, allowing for precise representation of cents or fractional currency. For example, 12.99.
+
+            * currency​Code
+
+              Currency​Code!
+
+              non-null
+
+              The three-letter currency code that represents a world currency used in a store. Currency codes include standard [standard ISO 4217 codes](https://en.wikipedia.org/wiki/ISO_4217), legacy codes, and non-standard codes. For example, USD.
+
+          * updated​At
+
+            Date​Time!
+
+            non-null
+
+            The date and time ([ISO 8601 format](http://en.wikipedia.org/wiki/ISO_8601)) at which the company location was last modified.
+
+      * shop​User
+
+        Shop​User
+
+        Represents the [Shop User](https://help.shopify.com/en/manual/online-sales-channels/shop/sign-in-features) corresponding to the customer within the shop, if the buyer is a Shop User. Can be used to request [Shop User metafields](https://shopify.dev/docs/api/shop-user-custom-data).
+
+        * metafield
+
+          Metafield
+
+          A [custom field](https://shopify.dev/docs/apps/build/custom-data) that stores additional information about a Shopify resource, such as products, orders, and [many more](https://shopify.dev/docs/api/admin-graphql/latest/enums/MetafieldOwnerType). Using [metafields with Shopify Functions](https://shopify.dev/docs/apps/build/functions/input-output/metafields-for-input-queries) enables you to customize the checkout experience.
+
+    * cost
+
+      Cart​Cost!
+
+      non-null
+
+      A breakdown of the costs that the customer will pay at checkout. It includes the total amount, the subtotal before taxes and duties, the tax amount, and duty charges.
+
+      * subtotal​Amount
+
+        Money​V2!
+
+        non-null
+
+        The amount, before taxes and cart-level discounts, for the customer to pay.
+
+        * amount
+
+          Decimal!
+
+          non-null
+
+          A monetary value in decimal format, allowing for precise representation of cents or fractional currency. For example, 12.99.
+
+        * currency​Code
+
+          Currency​Code!
+
+          non-null
+
+          The three-letter currency code that represents a world currency used in a store. Currency codes include standard [standard ISO 4217 codes](https://en.wikipedia.org/wiki/ISO_4217), legacy codes, and non-standard codes. For example, USD.
+
+      * total​Amount
+
+        Money​V2!
+
+        non-null
+
+        The total amount for the customer to pay at checkout.
+
+        * amount
+
+          Decimal!
+
+          non-null
+
+          A monetary value in decimal format, allowing for precise representation of cents or fractional currency. For example, 12.99.
+
+        * currency​Code
+
+          Currency​Code!
+
+          non-null
+
+          The three-letter currency code that represents a world currency used in a store. Currency codes include standard [standard ISO 4217 codes](https://en.wikipedia.org/wiki/ISO_4217), legacy codes, and non-standard codes. For example, USD.
+
+      * total​Duty​Amount
+
+        Money​V2
+
+        The duty charges for a customer to pay at checkout.
+
+        * amount
+
+          Decimal!
+
+          non-null
+
+          A monetary value in decimal format, allowing for precise representation of cents or fractional currency. For example, 12.99.
+
+        * currency​Code
+
+          Currency​Code!
+
+          non-null
+
+          The three-letter currency code that represents a world currency used in a store. Currency codes include standard [standard ISO 4217 codes](https://en.wikipedia.org/wiki/ISO_4217), legacy codes, and non-standard codes. For example, USD.
+
+      * total​Tax​Amount
+
+        Money​V2
+
+        The total tax amount for the customer to pay at checkout.
+
+        * amount
+
+          Decimal!
+
+          non-null
+
+          A monetary value in decimal format, allowing for precise representation of cents or fractional currency. For example, 12.99.
+
+        * currency​Code
+
+          Currency​Code!
+
+          non-null
+
+          The three-letter currency code that represents a world currency used in a store. Currency codes include standard [standard ISO 4217 codes](https://en.wikipedia.org/wiki/ISO_4217), legacy codes, and non-standard codes. For example, USD.
+
+    * deliverable​Lines
+
+      \[Deliverable​Cart​Line!]!
+
+      non-null
+
+      The items in a cart that are eligible for fulfillment and can be delivered to the customer.
+
+      * attribute
+
+        Attribute
+
+        The custom attributes associated with a cart to store additional information. Cart attributes allow you to collect specific information from customers on the **Cart** page, such as order notes, gift wrapping requests, or custom product details. Attributes are stored as key-value pairs.
+
+        Cart line attributes are equivalent to the [`line_item`](https://shopify.dev/docs/api/liquid/objects/line_item) object in Liquid.
+
+      * id
+
+        ID!
+
+        non-null
+
+        The ID of the cart line.
+
+      * merchandise
+
+        Merchandise!
+
+        non-null
+
+        The item that the customer intends to purchase.
+
+        * Custom​Product
+
+          OBJECT
+
+          A custom product represents a product that doesn't map to Shopify's [standard product categories](https://help.shopify.com/manual/products/details/product-type). For example, you can use a custom product to manage gift cards, shipping requirements, localized product information, or weight measurements and conversions.
+
+          * is​Gift​Card
+
+            Boolean!
+
+            non-null
+
+            Whether the merchandise is a gift card.
+
+          * requires​Shipping
+
+            Boolean!
+
+            non-null
+
+            Whether the item needs to be shipped to the customer. For example, a digital gift card doesn't need to be shipped, but a t-shirt does need to be shipped.
+
+          * title
+
+            String!
+
+            non-null
+
+            The localized name for the product that displays to customers. The title is used to construct the product's handle, which is a unique, human-readable string of the product's title. For example, if a product is titled "Black Sunglasses", then the handle is `black-sunglasses`.
+
+          * weight
+
+            Float
+
+            The product variant's weight, in the system of measurement set in the `weightUnit` field.
+
+          * weight​Unit
+
+            Weight​Unit!
+
+            non-null
+
+            The unit of measurement for weight.
+
+            * GRAMS, KILOGRAMS, OUNCES, POUNDS
+
+        * Product​Variant
+
+          OBJECT
+
+          A specific version of a product that comes in more than one option, such as size or color. For example, if a merchant sells t-shirts with options for size and color, then a small, blue t-shirt would be one product variant and a large, blue t-shirt would be another.
+
+          * id
+
+            ID!
+
+            non-null
+
+            A [globally-unique ID](https://shopify.dev/docs/api/usage/gids) for the product variant.
+
+          * in​Any​Collection
+
+            Boolean!
+
+            non-null
+
+            Whether the product variant is in any of the specified collections. The variant must be in at least one collection from the list to return `true`. A variant is considered to be in a collection when the variant itself is a member of the collection, or when its product is a member of the collection.
+
+            A collection is a group of products that can be displayed in online stores and other sales channels in categories, which makes it easy for customers to find them. For example, an athletics store might create different collections for running attire and accessories.
+
+          * in​Collections
+
+            \[Collection​Membership!]!
+
+            non-null
+
+            Whether the product variant is in each of the specified collections. A variant is considered to be in a collection when the variant itself is a member of the collection, or when its product is a member of the collection.
+
+            A collection is a group of products that can be displayed in online stores and other sales channels in categories, which makes it easy for customers to find them. For example, an athletics store might create different collections for running attire and accessories.
+
+            * ids
+
+              \[ID!]!
+
+              requiredDefault:\[]
+
+              ### Arguments
+
+              A list of [globally-unique collection IDs](https://shopify.dev/docs/api/usage/gids) to check membership against. For example, `gid://shopify/Collection/123`, `gid://shopify/Collection/456`.
+
+            ***
+
+            * collection​Id
+
+              ID!
+
+              non-null
+
+              ### Fields
+
+              A [globally-unique ID](https://shopify.dev/docs/api/usage/gids) for the collection.
+
+            * is​Member
+
+              Boolean!
+
+              non-null
+
+              Whether the product is in the specified collection.
+
+          * metafield
+
+            Metafield
+
+            A [custom field](https://shopify.dev/docs/apps/build/custom-data) that stores additional information about a Shopify resource, such as products, orders, and [many more](https://shopify.dev/docs/api/admin-graphql/latest/enums/MetafieldOwnerType). Using [metafields with Shopify Functions](https://shopify.dev/docs/apps/build/functions/input-output/metafields-for-input-queries) enables you to customize the checkout experience.
+
+          * product
+
+            Product!
+
+            non-null
+
+            The product associated with the product variant. For example, if a merchant sells t-shirts with options for size and color, then a small, blue t-shirt would be one product variant and a large, blue t-shirt would be another. The product associated with the product variant would be the t-shirt itself.
+
+            * handle
+
+              Handle!
+
+              non-null
+
+              A unique, human-readable string of the product's title. A handle can contain letters, hyphens (`-`), and numbers, but not spaces. The handle is used in the online store URL for the product. For example, if a product is titled "Black Sunglasses", then the handle is `black-sunglasses`.
+
+            * has​Any​Tag
+
+              Boolean!
+
+              non-null
+
+              Whether the product is associated with any of the specified tags. The product must have at least one tag from the list to return `true`.
+
+            * has​Tags
+
+              \[Has​Tag​Response!]!
+
+              non-null
+
+              Whether the product is associated with the specified tags.
+
+            * id
+
+              ID!
+
+              non-null
+
+              A [globally-unique ID](https://shopify.dev/docs/api/usage/gids) for the product.
+
+            * in​Any​Collection
+
+              Boolean!
+
+              non-null
+
+              Whether the product is in any of the specified collections. The product must be in at least one collection from the list to return `true`.
+
+              A collection is a group of products that can be displayed in online stores and other sales channels in categories, which makes it easy for customers to find them. For example, an athletics store might create different collections for running attire and accessories.
+
+            * in​Collections
+
+              \[Collection​Membership!]!
+
+              non-null
+
+              Whether the product is in the specified collections. The product must be in all of the collections in the list to return `true`.
+
+              A collection is a group of products that can be displayed in online stores and other sales channels in categories, which makes it easy for customers to find them. For example, an athletics store might create different collections for running attire and accessories.
+
+            * is​Gift​Card
+
+              Boolean!
+
+              non-null
+
+              Whether the product is a gift card.
+
+            * metafield
+
+              Metafield
+
+              A [custom field](https://shopify.dev/docs/apps/build/custom-data) that stores additional information about a Shopify resource, such as products, orders, and [many more](https://shopify.dev/docs/api/admin-graphql/latest/enums/MetafieldOwnerType). Using [metafields with Shopify Functions](https://shopify.dev/docs/apps/build/functions/input-output/metafields-for-input-queries) enables you to customize the checkout experience.
+
+            * product​Type
+
+              String
+
+              A custom category for a product. Product types allow merchants to define categories other than the ones available in Shopify's [standard product categories](https://help.shopify.com/manual/products/details/product-type).
+
+            * title
+
+              String!
+
+              non-null
+
+              The localized name for the product that displays to customers. The title is used to construct the product's handle, which is a unique, human-readable string of the product's title. For example, if a product is titled "Black Sunglasses", then the handle is `black-sunglasses`.
+
+            * vendor
+
+              String
+
+              The name of the product's vendor.
+
+          * requires​Shipping
+
+            Boolean!
+
+            non-null
+
+            Whether the item needs to be shipped to the customer. For example, a digital gift card doesn't need to be shipped, but a t-shirt does need to be shipped.
+
+          * sku
+
+            String
+
+            A case-sensitive identifier for the product variant in the merchant's store. For example, `"BBC-1"`. A product variant must have a SKU to be connected to a [fulfillment service](https://shopify.dev/docs/apps/build/orders-fulfillment/fulfillment-service-apps/build-for-fulfillment-services).
+
+          * title
+
+            String
+
+            The localized name for the product variant that displays to customers.
+
+          * weight
+
+            Float
+
+            The product variant's weight, in the system of measurement set in the `weightUnit` field.
+
+          * weight​Unit
+
+            Weight​Unit!
+
+            non-null
+
+            The unit of measurement for weight.
+
+      * quantity
+
+        Int!
+
+        non-null
+
+        The quantity of the item that the customer intends to purchase.
+
+    * delivery​Groups
+
+      \[Cart​Delivery​Group!]!
+
+      non-null
+
+      A collection of items that are grouped by shared delivery characteristics. Delivery groups streamline fulfillment by organizing items that can be shipped together, based on the customer's shipping address. For example, if a customer orders a t-shirt and a pair of shoes that can be shipped together, then the items are included in the same delivery group.
+
+      In the [Order Discount](https://shopify.dev/docs/api/functions/reference/order-discounts) and [Product Discount](https://shopify.dev/docs/api/functions/reference/product-discounts) legacy APIs, the `cart.deliveryGroups` input is always an empty array. This means you can't access delivery groups when creating Order Discount or Product Discount Functions. If you need to apply discounts to shipping costs, then use the [Discount Function API](https://shopify.dev/docs/api/functions/reference/discount) instead.
+
+      * cart​Lines
+
+        \[Cart​Line!]!
+
+        non-null
+
+        Information about items in a cart that a customer intends to purchase. A cart line is an entry in the customer's cart that represents a single unit of a product variant. For example, if a customer adds two different sizes of the same t-shirt to their cart, then each size is represented as a separate cart line.
+
+        * attribute
+
+          Attribute
+
+          The custom attributes associated with a cart to store additional information. Cart attributes allow you to collect specific information from customers on the **Cart** page, such as order notes, gift wrapping requests, or custom product details. Attributes are stored as key-value pairs.
+
+          Cart line attributes are equivalent to the [`line_item`](https://shopify.dev/docs/api/liquid/objects/line_item) object in Liquid.
+
+        * cost
+
+          Cart​Line​Cost!
+
+          non-null
+
+          The cost of an item in a cart that the customer intends to purchase. Cart lines are entries in the customer's cart that represent a single unit of a product variant. For example, if a customer adds two different sizes of the same t-shirt to their cart, then each size is represented as a separate cart line.
+
+        * discount​Allocations
+
+          \[Discount​Allocation!]!
+
+          non-null
+
+          The discounts that have been applied to the cart line.
+
+          * discount​Application
+
+            Discount​Application!
+
+            non-null
+
+            The discount that was applied.
+
+            * allocation​Method
+
+              Discount​Application​Allocation​Method!
+
+              non-null
+
+              The method by which the discount's value is allocated to its entitled items.
+
+              * ACROSS, EACH
+
+            * metafield
+
+              Metafield
+
+              A [custom field](https://shopify.dev/docs/apps/build/custom-data) that stores additional information about a Shopify resource, such as products, orders, and [many more](https://shopify.dev/docs/api/admin-graphql/latest/enums/MetafieldOwnerType). Using [metafields with Shopify Functions](https://shopify.dev/docs/apps/build/functions/input-output/metafields-for-input-queries) enables you to customize the checkout experience.
+
+            * target​Selection
+
+              Discount​Application​Target​Selection!
+
+              non-null
+
+              The lines on the cart targeted by the discount.
+
+              * ALL, ENTITLED, EXPLICIT
+
+            * target​Type
+
+              Discount​Application​Target!
+
+              non-null
+
+              The type of line (i.e. line item or shipping line) on a cart that the discount is applicable towards.
+
+              * LINE_ITEM, SHIPPING_LINE
+
+            * total​Allocated​Amount
+
+              Money​V2!
+
+              non-null
+
+              The total allocated amount of the discount across all items.
+
+              * amount
+
+                Decimal!
+
+                non-null
+
+                A monetary value in decimal format, allowing for precise representation of cents or fractional currency. For example, 12.99.
+
+              * currency​Code
+
+                Currency​Code!
+
+                non-null
+
+                The three-letter currency code that represents a world currency used in a store. Currency codes include standard [standard ISO 4217 codes](https://en.wikipedia.org/wiki/ISO_4217), legacy codes, and non-standard codes. For example, USD.
+
+            * value
+
+              Pricing​Value!
+
+              non-null
+
+              The value of the discount.
+
+              * Money​V2
+
+                OBJECT
+
+                A precise monetary value and its associated currency. Combines a decimal amount with a three-letter currency code to express prices, costs, and other financial values throughout the API. For example, 12.99 USD.
+
+                * amount
+
+                  Decimal!
+
+                  non-null
+
+                  A monetary value in decimal format, allowing for precise representation of cents or fractional currency. For example, 12.99.
+
+                * currency​Code
+
+                  Currency​Code!
+
+                  non-null
+
+                  The three-letter currency code that represents a world currency used in a store. Currency codes include standard [standard ISO 4217 codes](https://en.wikipedia.org/wiki/ISO_4217), legacy codes, and non-standard codes. For example, USD.
+
+              * Pricing​Percentage​Value
+
+                OBJECT
+
+                The percentage value of a discount.
+
+                * value
+
+                  Decimal!
+
+                  non-null
+
+                  The percentage value of the discount.
+
+          * discounted​Amount
+
+            Money​V2!
+
+            non-null
+
+            The amount that was discounted.
+
+            * amount
+
+              Decimal!
+
+              non-null
+
+              A monetary value in decimal format, allowing for precise representation of cents or fractional currency. For example, 12.99.
+
+            * currency​Code
+
+              Currency​Code!
+
+              non-null
+
+              The three-letter currency code that represents a world currency used in a store. Currency codes include standard [standard ISO 4217 codes](https://en.wikipedia.org/wiki/ISO_4217), legacy codes, and non-standard codes. For example, USD.
+
+        * id
+
+          ID!
+
+          non-null
+
+          The ID of the cart line.
+
+        * merchandise
+
+          Merchandise!
+
+          non-null
+
+          The item that the customer intends to purchase.
+
+        * parent​Relationship
+
+          Cart​Line​Parent​Relationship
+
+          The [nested relationship](https://shopify.dev/docs/apps/build/product-merchandising/nested-cart-lines) between this line and its parent line, if any.
+
+          * parent
+
+            Cart​Line!
+
+            non-null
+
+            The parent line in the relationship.
+
+        * quantity
+
+          Int!
+
+          non-null
+
+          The quantity of the item that the customer intends to purchase.
+
+        * selling​Plan​Allocation
+
+          Selling​Plan​Allocation
+
+          The [selling plan](https://shopify.dev/docs/apps/build/purchase-options/subscriptions/selling-plans) associated with the cart line, including information about how a product variant can be sold and purchased.
+
+          * price​Adjustments
+
+            \[Selling​Plan​Allocation​Price​Adjustment!]!
+
+            non-null
+
+            A list of price adjustments, with a maximum of two. When there are two, the first price adjustment goes into effect at the time of purchase, while the second one starts after a certain number of orders. A price adjustment represents how a selling plan affects pricing when a variant is purchased with a selling plan. Prices display in the customer's currency if the shop is configured for it.
+
+            * per​Delivery​Price
+
+              Money​V2!
+
+              non-null
+
+              The effective price for a single delivery. For example, for a prepaid subscription plan that includes 6 deliveries at the price of $48.00, the per delivery price is $8.00.
+
+              * amount
+
+                Decimal!
+
+                non-null
+
+                A monetary value in decimal format, allowing for precise representation of cents or fractional currency. For example, 12.99.
+
+              * currency​Code
+
+                Currency​Code!
+
+                non-null
+
+                The three-letter currency code that represents a world currency used in a store. Currency codes include standard [standard ISO 4217 codes](https://en.wikipedia.org/wiki/ISO_4217), legacy codes, and non-standard codes. For example, USD.
+
+            * price
+
+              Money​V2!
+
+              non-null
+
+              The price of the variant when it's purchased with a selling plan For example, for a prepaid subscription plan that includes 6 deliveries of $10.00 granola, where the customer gets 20% off, the price is 6 x $10.00 x 0.80 = $48.00.
+
+              * amount
+
+                Decimal!
+
+                non-null
+
+                A monetary value in decimal format, allowing for precise representation of cents or fractional currency. For example, 12.99.
+
+              * currency​Code
+
+                Currency​Code!
+
+                non-null
+
+                The three-letter currency code that represents a world currency used in a store. Currency codes include standard [standard ISO 4217 codes](https://en.wikipedia.org/wiki/ISO_4217), legacy codes, and non-standard codes. For example, USD.
+
+          * selling​Plan
+
+            Selling​Plan!
+
+            non-null
+
+            A representation of how products and variants can be sold and purchased. For example, an individual selling plan could be '6 weeks of prepaid granola, delivered weekly'.
+
+            * description
+
+              String
+
+              The description of the selling plan.
+
+            * id
+
+              ID!
+
+              non-null
+
+              A globally-unique identifier.
+
+            * metafield
+
+              Metafield
+
+              A [custom field](https://shopify.dev/docs/apps/build/custom-data) that stores additional information about a Shopify resource, such as products, orders, and [many more](https://shopify.dev/docs/api/admin-graphql/latest/enums/MetafieldOwnerType). Using [metafields with Shopify Functions](https://shopify.dev/docs/apps/build/functions/input-output/metafields-for-input-queries) enables you to customize the checkout experience.
+
+            * name
+
+              String!
+
+              non-null
+
+              The name of the selling plan. For example, '6 weeks of prepaid granola, delivered weekly'.
+
+            * recurring​Deliveries
+
+              Boolean!
+
+              non-null
+
+              Whether purchasing the selling plan will result in multiple deliveries.
+
+      * delivery​Address
+
+        Mailing​Address
+
+        The shipping or destination address associated with the delivery group.
+
+        * address1
+
+          String
+
+          The first line of the address. Typically the street address or PO Box number.
+
+        * address2
+
+          String
+
+          The second line of the address. Typically the number of the apartment, suite, or unit.
+
+        * city
+
+          String
+
+          The name of the city, district, village, or town.
+
+        * company
+
+          String
+
+          The name of the customer's company or organization.
+
+        * country​Code
+
+          Country​Code
+
+          The two-letter code for the country of the address. For example, US.
+
+        * first​Name
+
+          String
+
+          The first name of the customer.
+
+        * last​Name
+
+          String
+
+          The last name of the customer.
+
+        * latitude
+
+          Float
+
+          The approximate latitude of the address.
+
+        * longitude
+
+          Float
+
+          The approximate longitude of the address.
+
+        * name
+
+          String
+
+          The full name of the customer, based on firstName and lastName.
+
+        * phone
+
+          String
+
+          A unique phone number for the customer. Formatted using E.164 standard. For example, +16135551111.
+
+        * province​Code
+
+          String
+
+          The alphanumeric code for the region. For example, ON.
+
+        * zip
+
+          String
+
+          The zip or postal code of the address.
+
+        * market
+
+          Market
+
+          Deprecated
+
+      * delivery​Options
+
+        \[Cart​Delivery​Option!]!
+
+        non-null
+
+        The delivery options available for the delivery group. Delivery options are the different ways that customers can choose to have their orders shipped. Examples include express shipping or standard shipping.
+
+        * code
+
+          String
+
+          A unique identifier that represents the delivery option offered to customers. For example, `Canada Post Expedited`.
+
+        * cost
+
+          Money​V2!
+
+          non-null
+
+          The amount that the customer pays if they select the delivery option.
+
+        * delivery​Method​Type
+
+          Delivery​Method!
+
+          non-null
+
+          The delivery method associated with the delivery option. A delivery method is a way that merchants can fulfill orders from their online stores. Delivery methods include shipping to an address, [local pickup](https://help.shopify.com/manual/fulfillment/setup/delivery-methods/pickup-in-store), and shipping to a [pickup point](https://help.shopify.com/manual/fulfillment/shopify-shipping/pickup-points), all of which are natively supported by Shopify checkout.
+
+          * LOCAL, NONE, PICK_UP, PICKUP_POINT, RETAIL, SHIPPING
+
+        * description
+
+          String
+
+          A single-line description of the delivery option, with HTML tags removed.
+
+        * handle
+
+          Handle!
+
+          non-null
+
+          A unique, human-readable identifier of the delivery option's title. A handle can contain letters, hyphens (`-`), and numbers, but not spaces. For example, `standard-shipping`.
+
+        * metafield
+
+          Metafield
+
+          A [custom field](https://shopify.dev/docs/apps/build/custom-data) that stores additional information about a Shopify resource, such as products, orders, and [many more](https://shopify.dev/docs/api/admin-graphql/latest/enums/MetafieldOwnerType). Using [metafields with Shopify Functions](https://shopify.dev/docs/apps/build/functions/input-output/metafields-for-input-queries) enables you to customize the checkout experience.
+
+        * title
+
+          String
+
+          The name of the delivery option that displays to customers. The title is used to construct the delivery option's handle. For example, if a delivery option is titled "Standard Shipping", then the handle is `standard-shipping`.
+
+      * discount​Allocations
+
+        \[Discount​Allocation!]!
+
+        non-null
+
+        The discounts that have been applied to the delivery group.
+
+      * group​Type
+
+        Cart​Delivery​Group​Type!
+
+        non-null
+
+        The type of merchandise in the delivery group.
+
+        * ONE_TIME_PURCHASE, SUBSCRIPTION
+
+      * id
+
+        ID!
+
+        non-null
+
+        A [globally-unique ID](https://shopify.dev/docs/api/usage/gids) for the delivery group.
+
+      * selected​Delivery​Option
+
+        Cart​Delivery​Option
+
+        Information about the delivery option that the customer has selected.
+
+        * code
+
+          String
+
+          A unique identifier that represents the delivery option offered to customers. For example, `Canada Post Expedited`.
+
+        * cost
+
+          Money​V2!
+
+          non-null
+
+          The amount that the customer pays if they select the delivery option.
+
+        * delivery​Method​Type
+
+          Delivery​Method!
+
+          non-null
+
+          The delivery method associated with the delivery option. A delivery method is a way that merchants can fulfill orders from their online stores. Delivery methods include shipping to an address, [local pickup](https://help.shopify.com/manual/fulfillment/setup/delivery-methods/pickup-in-store), and shipping to a [pickup point](https://help.shopify.com/manual/fulfillment/shopify-shipping/pickup-points), all of which are natively supported by Shopify checkout.
+
+        * description
+
+          String
+
+          A single-line description of the delivery option, with HTML tags removed.
+
+        * handle
+
+          Handle!
+
+          non-null
+
+          A unique, human-readable identifier of the delivery option's title. A handle can contain letters, hyphens (`-`), and numbers, but not spaces. For example, `standard-shipping`.
+
+        * metafield
+
+          Metafield
+
+          A [custom field](https://shopify.dev/docs/apps/build/custom-data) that stores additional information about a Shopify resource, such as products, orders, and [many more](https://shopify.dev/docs/api/admin-graphql/latest/enums/MetafieldOwnerType). Using [metafields with Shopify Functions](https://shopify.dev/docs/apps/build/functions/input-output/metafields-for-input-queries) enables you to customize the checkout experience.
+
+        * title
+
+          String
+
+          The name of the delivery option that displays to customers. The title is used to construct the delivery option's handle. For example, if a delivery option is titled "Standard Shipping", then the handle is `standard-shipping`.
+
+    * discount​Applications
+
+      \[Discount​Application!]!
+
+      non-null
+
+      The discounts that have been applied to the cart.
+
+      * allocation​Method
+
+        Discount​Application​Allocation​Method!
+
+        non-null
+
+        The method by which the discount's value is allocated to its entitled items.
+
+      * metafield
+
+        Metafield
+
+        A [custom field](https://shopify.dev/docs/apps/build/custom-data) that stores additional information about a Shopify resource, such as products, orders, and [many more](https://shopify.dev/docs/api/admin-graphql/latest/enums/MetafieldOwnerType). Using [metafields with Shopify Functions](https://shopify.dev/docs/apps/build/functions/input-output/metafields-for-input-queries) enables you to customize the checkout experience.
+
+      * target​Selection
+
+        Discount​Application​Target​Selection!
+
+        non-null
+
+        The lines on the cart targeted by the discount.
+
+      * target​Type
+
+        Discount​Application​Target!
+
+        non-null
+
+        The type of line (i.e. line item or shipping line) on a cart that the discount is applicable towards.
+
+      * total​Allocated​Amount
+
+        Money​V2!
+
+        non-null
+
+        The total allocated amount of the discount across all items.
+
+      * value
+
+        Pricing​Value!
+
+        non-null
+
+        The value of the discount.
+
+    * lines
+
+      \[Cart​Line!]!
+
+      non-null
+
+      The items in a cart that the customer intends to purchase. A cart line is an entry in the customer's cart that represents a single unit of a product variant. For example, if a customer adds two different sizes of the same t-shirt to their cart, then each size is represented as a separate cart line.
+
+      * attribute
+
+        Attribute
+
+        The custom attributes associated with a cart to store additional information. Cart attributes allow you to collect specific information from customers on the **Cart** page, such as order notes, gift wrapping requests, or custom product details. Attributes are stored as key-value pairs.
+
+        Cart line attributes are equivalent to the [`line_item`](https://shopify.dev/docs/api/liquid/objects/line_item) object in Liquid.
+
+      * cost
+
+        Cart​Line​Cost!
+
+        non-null
+
+        The cost of an item in a cart that the customer intends to purchase. Cart lines are entries in the customer's cart that represent a single unit of a product variant. For example, if a customer adds two different sizes of the same t-shirt to their cart, then each size is represented as a separate cart line.
+
+      * discount​Allocations
+
+        \[Discount​Allocation!]!
+
+        non-null
+
+        The discounts that have been applied to the cart line.
+
+      * id
+
+        ID!
+
+        non-null
+
+        The ID of the cart line.
+
+      * merchandise
+
+        Merchandise!
+
+        non-null
+
+        The item that the customer intends to purchase.
+
+      * parent​Relationship
+
+        Cart​Line​Parent​Relationship
+
+        The [nested relationship](https://shopify.dev/docs/apps/build/product-merchandising/nested-cart-lines) between this line and its parent line, if any.
+
+      * quantity
+
+        Int!
+
+        non-null
+
+        The quantity of the item that the customer intends to purchase.
+
+      * selling​Plan​Allocation
+
+        Selling​Plan​Allocation
+
+        The [selling plan](https://shopify.dev/docs/apps/build/purchase-options/subscriptions/selling-plans) associated with the cart line, including information about how a product variant can be sold and purchased.
+
+    * localized​Fields
+
+      \[Localized​Field!]!
+
+      non-null
+
+      The additional fields on the **Cart** page that are required for international orders in specific countries, such as customs information or tax identification numbers.
+
+      * keys
+
+        \[Localized​Field​Key!]!
+
+        requiredDefault:\[]
+
+        ### Arguments
+
+        The keys of the localized fields to retrieve.
+
+        * SHIPPING_CREDENTIAL_BR, SHIPPING_CREDENTIAL_CL, SHIPPING_CREDENTIAL_CN, SHIPPING_CREDENTIAL_CO, SHIPPING_CREDENTIAL_CR, SHIPPING_CREDENTIAL_EC, SHIPPING_CREDENTIAL_ES, SHIPPING_CREDENTIAL_GT, SHIPPING_CREDENTIAL_ID, SHIPPING_CREDENTIAL_KR, SHIPPING_CREDENTIAL_MX, SHIPPING_CREDENTIAL_MY, SHIPPING_CREDENTIAL_PE, SHIPPING_CREDENTIAL_PT, SHIPPING_CREDENTIAL_PY, SHIPPING_CREDENTIAL_TR, SHIPPING_CREDENTIAL_TW, SHIPPING_CREDENTIAL_TYPE_CO, TAX_CREDENTIAL_BR, TAX_CREDENTIAL_CL, TAX_CREDENTIAL_CO, TAX_CREDENTIAL_CR, TAX_CREDENTIAL_EC, TAX_CREDENTIAL_ES, TAX_CREDENTIAL_GT, TAX_CREDENTIAL_ID, TAX_CREDENTIAL_IT, TAX_CREDENTIAL_MX, TAX_CREDENTIAL_MY, TAX_CREDENTIAL_PE, TAX_CREDENTIAL_PT, TAX_CREDENTIAL_PY, TAX_CREDENTIAL_TR, TAX_CREDENTIAL_TYPE_CO, TAX_CREDENTIAL_TYPE_MX, TAX_CREDENTIAL_USE_MX, TAX_EMAIL_IT
+
+      ***
+
+      * key
+
+        Localized​Field​Key!
+
+        non-null
+
+        ### Fields
+
+        The key of the localized field.
+
+        * SHIPPING_CREDENTIAL_BR, SHIPPING_CREDENTIAL_CL, SHIPPING_CREDENTIAL_CN, SHIPPING_CREDENTIAL_CO, SHIPPING_CREDENTIAL_CR, SHIPPING_CREDENTIAL_EC, SHIPPING_CREDENTIAL_ES, SHIPPING_CREDENTIAL_GT, SHIPPING_CREDENTIAL_ID, SHIPPING_CREDENTIAL_KR, SHIPPING_CREDENTIAL_MX, SHIPPING_CREDENTIAL_MY, SHIPPING_CREDENTIAL_PE, SHIPPING_CREDENTIAL_PT, SHIPPING_CREDENTIAL_PY, SHIPPING_CREDENTIAL_TR, SHIPPING_CREDENTIAL_TW, SHIPPING_CREDENTIAL_TYPE_CO, TAX_CREDENTIAL_BR, TAX_CREDENTIAL_CL, TAX_CREDENTIAL_CO, TAX_CREDENTIAL_CR, TAX_CREDENTIAL_EC, TAX_CREDENTIAL_ES, TAX_CREDENTIAL_GT, TAX_CREDENTIAL_ID, TAX_CREDENTIAL_IT, TAX_CREDENTIAL_MX, TAX_CREDENTIAL_MY, TAX_CREDENTIAL_PE, TAX_CREDENTIAL_PT, TAX_CREDENTIAL_PY, TAX_CREDENTIAL_TR, TAX_CREDENTIAL_TYPE_CO, TAX_CREDENTIAL_TYPE_MX, TAX_CREDENTIAL_USE_MX, TAX_EMAIL_IT
+
+      * title
+
+        String!
+
+        non-null
+
+        The title of the localized field.
+
+      * value
+
+        String
+
+        The value of the localized field.
+
+    * metafield
+
+      Metafield
+
+      A [custom field](https://shopify.dev/docs/apps/build/custom-data) that stores additional information about a Shopify resource, such as products, orders, and [many more](https://shopify.dev/docs/api/admin-graphql/latest/enums/MetafieldOwnerType). Using [metafields with Shopify Functions](https://shopify.dev/docs/apps/build/functions/input-output/metafields-for-input-queries) enables you to customize the checkout experience.
+
+    * po​Number
+
+      String
+
+      A purchase order number associated with the cart, often used for B2B transactions to reference the buyer's internal purchase order.
+
+    * retail​Location
+
+      Location
+
+      The physical location where a retail order is created or completed.
+
+      * address
+
+        Location​Address!
+
+        non-null
+
+        The address of this location.
+
+        * address1
+
+          String
+
+          The first line of the address for the location.
+
+        * address2
+
+          String
+
+          The second line of the address for the location.
+
+        * city
+
+          String
+
+          The city of the location.
+
+        * country
+
+          String
+
+          The country of the location.
+
+        * country​Code
+
+          String
+
+          The country code of the location.
+
+        * formatted
+
+          \[String!]!
+
+          non-null
+
+          A formatted version of the address for the location.
+
+        * latitude
+
+          Float
+
+          The approximate latitude coordinates of the location.
+
+        * longitude
+
+          Float
+
+          The approximate longitude coordinates of the location.
+
+        * phone
+
+          String
+
+          The phone number of the location.
+
+        * province
+
+          String
+
+          The province of the location.
+
+        * province​Code
+
+          String
+
+          The code for the province, state, or district of the address of the location.
+
+        * zip
+
+          String
+
+          The ZIP code of the location.
+
+      * handle
+
+        Handle!
+
+        non-null
+
+        The location handle.
+
+      * id
+
+        ID!
+
+        non-null
+
+        The location id.
+
+      * metafield
+
+        Metafield
+
+        A [custom field](https://shopify.dev/docs/apps/build/custom-data) that stores additional information about a Shopify resource, such as products, orders, and [many more](https://shopify.dev/docs/api/admin-graphql/latest/enums/MetafieldOwnerType). Using [metafields with Shopify Functions](https://shopify.dev/docs/apps/build/functions/input-output/metafields-for-input-queries) enables you to customize the checkout experience.
+
+      * name
+
+        String!
+
+        non-null
+
+        The name of the location.
+
+  * localization
+
+    Localization!
+
+    non-null
+
+    The regional and language settings that determine how the Function handles currency, numbers, dates, and other locale-specific values during discount calculations. These settings are based on the store's configured [localization practices](https://shopify.dev/docs/apps/build/functions/localization-practices-shopify-functions).
+
+    * country
+
+      Country!
+
+      non-null
+
+      The country for which the store is customized, reflecting local preferences and regulations. Localization might influence the language, currency, and product offerings available in a store to enhance the shopping experience for customers in that region.
+
+      * iso​Code
+
+        Country​Code!
+
+        non-null
+
+        The ISO code of the country.
+
+        * AC, AD, AE, AF, AG, AI, AL, AM, AN, AO, AR, AT, AU, AW, AX, AZ, BA, BB, BD, BE, BF, BG, BH, BI, BJ, BL, BM, BN, BO, BQ, BR, BS, BT, BV, BW, BY, BZ, CA, CC, CD, CF, CG, CH, CI, CK, CL, CM, CN, CO, CR, CU, CV, CW, CX, CY, CZ, DE, DJ, DK, DM, DO, DZ, EC, EE, EG, EH, ER, ES, ET, FI, FJ, FK, FO, FR, GA, GB, GD, GE, GF, GG, GH, GI, GL, GM, GN, GP, GQ, GR, GS, GT, GW, GY, HK, HM, HN, HR, HT, HU, ID, IE, IL, IM, IN, IO, IQ, IR, IS, IT, JE, JM, JO, JP, KE, KG, KH, KI, KM, KN, KP, KR, KW, KY, KZ, LA, LB, LC, LI, LK, LR, LS, LT, LU, LV, LY, MA, MC, MD, ME, MF, MG, MK, ML, MM, MN, MO, MQ, MR, MS, MT, MU, MV, MW, MX, MY, MZ, NA, NC, NE, NF, NG, NI, NL, NO, NP, NR, NU, NZ, OM, PA, PE, PF, PG, PH, PK, PL, PM, PN, PS, PT, PY, QA, RE, RO, RS, RU, RW, SA, SB, SC, SD, SE, SG, SH, SI, SJ, SK, SL, SM, SN, SO, SR, SS, ST, SV, SX, SY, SZ, TA, TC, TD, TF, TG, TH, TJ, TK, TL, TM, TN, TO, TR, TT, TV, TW, TZ, UA, UG, UM, US, UY, UZ, VA, VC, VE, VG, VN, VU, WF, WS, XK, YE, YT, ZA, ZM, ZW, ZZ
+
+    * language
+
+      Language!
+
+      non-null
+
+      The language for which the store is customized, ensuring content is tailored to local customers. This includes product descriptions and customer communications that resonate with the target audience.
+
+      * iso​Code
+
+        Language​Code!
+
+        non-null
+
+        The ISO code.
+
+    * market
+
+      Market!
+
+      non-nullDeprecated
+
+  * payment​Customization
+
+    Payment​Customization!
+
+    non-null
+
+    The configuration of the app that owns the Function. This configuration controls how merchants can modify [payment methods](https://help.shopify.com/manual/checkout-settings/checkout-customization), such as renaming, reordering, or hiding them.
+
+    * metafield
+
+      Metafield
+
+      A [custom field](https://shopify.dev/docs/apps/build/custom-data) that stores additional information about a Shopify resource, such as products, orders, and [many more](https://shopify.dev/docs/api/admin-graphql/latest/enums/MetafieldOwnerType). Using [metafields with Shopify Functions](https://shopify.dev/docs/apps/build/functions/input-output/metafields-for-input-queries) enables you to customize the checkout experience.
+
+  * payment​Methods
+
+    \[Payment​Customization​Payment​Method!]!
+
+    non-null
+
+    The list of payment methods that are available to customers during checkout that your Function can customize.
+
+    * id
+
+      ID!
+
+      non-null
+
+      Unique identifier for the payment method.
+
+    * name
+
+      String!
+
+      non-null
+
+      Name for the payment method.
+
+    * placements
+
+      \[Payment​Customization​Payment​Method​Placement!]!
+
+      non-null
+
+      Placements supported by this payment method.
+
+      * ACCELERATED_CHECKOUT, PAYMENT_METHOD
+
+  * presentment​Currency​Rate
+
+    Decimal!
+
+    non-null
+
+    The exchange rate used to convert discounts between the shop's default currency and the currency that displays to the customer during checkout. For example, if a store operates in USD but a customer is viewing discounts in EUR, then the presentment currency rate handles this conversion for accurate pricing.
+
+  * shop
+
+    Shop!
+
+    non-null
+
+    Information about the shop where the Function is running, including the shop's timezone setting and associated [metafields](https://shopify.dev/docs/apps/build/custom-data).
+
+    * local​Time
+
+      Local​Time!
+
+      non-null
+
+      The current time based on the [store's timezone setting](https://help.shopify.com/manual/intro-to-shopify/initial-setup/setup-business-settings).
+
+      * date
+
+        Date!
+
+        non-null
+
+        The current date relative to the parent object.
+
+      * date​Time​After
+
+        Boolean!
+
+        non-null
+
+        Returns true if the current date and time is at or past the given date and time, and false otherwise.
+
+      * date​Time​Before
+
+        Boolean!
+
+        non-null
+
+        Returns true if the current date and time is before the given date and time, and false otherwise.
+
+      * date​Time​Between
+
+        Boolean!
+
+        non-null
+
+        Returns true if the current date and time is between the two given date and times, and false otherwise.
+
+      * time​After
+
+        Boolean!
+
+        non-null
+
+        Returns true if the current time is at or past the given time, and false otherwise.
+
+      * time​Before
+
+        Boolean!
+
+        non-null
+
+        Returns true if the current time is at or past the given time, and false otherwise.
+
+      * time​Between
+
+        Boolean!
+
+        non-null
+
+        Returns true if the current time is between the two given times, and false otherwise.
+
+    * metafield
+
+      Metafield
+
+      A [custom field](https://shopify.dev/docs/apps/build/custom-data) that stores additional information about a Shopify resource, such as products, orders, and [many more](https://shopify.dev/docs/api/admin-graphql/latest/enums/MetafieldOwnerType). Using [metafields with Shopify Functions](https://shopify.dev/docs/apps/build/functions/input-output/metafields-for-input-queries) enables you to customize the checkout experience.
+
+    * metaobject
+
+      Metaobject
+
+      Fetch a specific Metaobject by one of its unique identifiers. Only app-owned metaobjects with the $app reserved prefix are accessible to functions.
+
+      * handle
+
+        Metaobject​Handle​Input
+
+        ### Arguments
+
+        The handle and type of the metaobject.
+
+        * handle
+
+          String!
+
+          non-null
+
+          The handle of the metaobject to retrieve.
+
+        * type
+
+          String!
+
+          non-null
+
+          The type of the metaobject. Must match an existing metaobject definition type.
+
+      * id
+
+        ID
+
+        The ID of the metaobject.
+
+      ***
+
+      * field
+
+        Metaobject​Field
+
+        ### Fields
+
+        The field for an object key, or null if the key has no field definition.
+
+        * key
+
+          String!
+
+          required
+
+          ### Arguments
+
+          The metaobject key to access.
+
+        ***
+
+        * json​Value
+
+          JSON
+
+          ### Fields
+
+          The assigned field value in JSON format.
+
+        * key
+
+          String!
+
+          non-null
+
+          The object key of this field.
+
+        * type
+
+          String!
+
+          non-null
+
+          The type of the field.
+
+        * value
+
+          String
+
+          The assigned field value, always stored as a string regardless of the field type.
+
+      * handle
+
+        String!
+
+        non-null
+
+        The unique handle of the metaobject, useful as a custom ID.
+
+      * type
+
+        String!
+
+        non-null
+
+        The type of the metaobject.
+
+#### Run function
+
+The logic that processes the input data to generate a standardized list of operations that generate payment method customizations, payment terms, and review requirements.
+
+Each operation specifies a payment customization. Shopify processes your response to modify payment methods, set payment terms, and add a review requirement during checkout, including data such as location details, the company associated with the order, and products.
+
+This return must follow the schema defined in the `CartPaymentMethodsTransformRunResult` object.
+
+* Cart​Payment​Methods​Transform​Run​Result
+
+  OBJECT
+
+  The `CartPaymentMethodsTransformRunResult` object is the output of the function run target. The object contains the operations to apply to payment methods in checkout.
+
+  * operations
+
+    \[Operation!]!
+
+    non-null
+
+    The ordered list of operations to apply to the list of payment methods.
+
+    * order​Review​Add
+
+      Order​Review​Add​Operation
+
+      A request to impose a review requirement on the order.
+
+      When your Function returns this operation, the checkout will be submitted as a draft, requiring merchant review and approval to finalize the order.
+
+      Use this operation to implement custom business rules that require manual review before order completion, such as high-value orders, or orders with specific products.
+
+      This operation is only available for B2B purchases on stores with the Plus plan.
+
+      * reason
+
+        String!
+
+        non-null
+
+        The reason for the review requirement presented to the merchant.
+
+    * payment​Method​Hide
+
+      Payment​Method​Hide​Operation
+
+      A request to hide a payment method during checkout.
+
+      When your Function returns this operation, it removes the specified payment method from the available options shown to customers during checkout.
+
+      Use this operation when you want to conditionally hide payment methods based on checkout attributes, customer data, or other business logic implemented in your Function.
+
+      * payment​Method​Id
+
+        ID!
+
+        non-null
+
+        The identifier of the payment method to hide out.
+
+      * placements
+
+        \[Payment​Customization​Payment​Method​Placement!]
+
+        Placement types to hide. If not provided, all placements will be hidden. Hiding specific placements is only available on Shopify Plus stores.
+
+    * payment​Method​Move
+
+      Payment​Method​Move​Operation
+
+      A request to move a payment method to a new position in the checkout display order.
+
+      When your Function returns this operation, it changes the display order of payment methods by placing the specified payment method at the requested index position.
+
+      Use this operation when you want to prioritize certain payment methods based on checkout context, customer preferences, or other business logic implemented in your Function.
+
+      * index
+
+        Int!
+
+        non-null
+
+        The index to move the payment method to.
+
+      * payment​Method​Id
+
+        ID!
+
+        non-null
+
+        The identifier of the payment method to move.
+
+    * payment​Method​Rename
+
+      Payment​Method​Rename​Operation
+
+      A request to change the displayed name of a payment method during checkout.
+
+      When your Function returns this operation, it replaces the default name of the specified payment method with the custom name that's provided in the request.
+
+      Use this operation when you want to provide more context or clarity about payment methods based on checkout details, locale, or other business logic implemented in your Function.
+
+      * name
+
+        String!
+
+        non-null
+
+        The new name for the payment method.
+
+      * payment​Method​Id
+
+        ID!
+
+        non-null
+
+        The identifier of the payment method to rename.
+
+    * payment​Terms​Set
+
+      Payment​Terms​Set​Operation
+
+      A request to set, modify, or remove payment terms for a checkout.
+
+      When your Function returns this operation, it customizes the payment conditions presented to the customer at checkout, allowing for net terms, fixed due dates, and event-based terms. You can also specify deposit requirements.
+
+      Use this operation to conditionally impose payment terms based on customer attributes, order value, or other business logic.
+
+      This operation is only available on stores with the Plus plan.
+
+      * payment​Terms
+
+        Payment​Terms
+
+        The payment terms to set. No payment terms when nil
+
+        * event
+
+          Event​Payment​Terms
+
+          The input to set event-based payment terms.
+
+          * deposit
+
+            Deposit
+
+            The deposit for payment terms. No deposit by default.
+
+            * percentage
+
+              Float!
+
+              non-null
+
+              The percentage of the order total that should be paid as a deposit. Must be between 1 and 99, inclusive.
+
+          * trigger
+
+            Payment​Terms​Trigger​Event!
+
+            non-null
+
+            The event that triggers the payment terms.
+
+            * FULFILLMENT_CREATED, INVOICE_SENT, ORDER_FULFILLED
+
+        * fixed
+
+          Fixed​Payment​Terms
+
+          The input to set fixed payment terms.
+
+          * deposit
+
+            Deposit
+
+            The deposit for payment terms. No deposit by default.
+
+          * due​At
+
+            Date​Time!
+
+            non-null
+
+            The due date for fixed payment terms.
+
+        * net
+
+          Net​Payment​Terms
+
+          The input to set net payment terms.
+
+          * deposit
+
+            Deposit
+
+            The deposit for payment terms. No deposit by default.
+
+          * due​In​Days
+
+            Int!
+
+            non-null
+
+            The number of days until the payment is due. Currently supported values are restricted to 7, 15, 30, 45, 60, and 90. These values may change in the future as restrictions are lifted, but existing values will continue to be supported.
+
+          * issued​At
+
+            Date​Time
+
+            The issued date of net payment terms. Set to current time if nil.
+
+Examples
+
+* ### Reorder payment methods
+
+  This function reorders payment methods based on a configurable desired order that is stored in an app metafield.
+
+  #### Entrypoint (Rust)
+
+  ```rust
+  use shopify_function::prelude::*;
+  use std::process;
+
+  pub mod cart_payment_methods_transform_run;
+
+  #[typegen("./schema.graphql")]
+  pub mod schema {
+      #[query("src/cart_payment_methods_transform_run.graphql", custom_scalar_overrides = {"Input.paymentCustomization.metafield.jsonValue" => super::cart_payment_methods_transform_run::Configuration})]
+      pub mod run {}
+  }
+
+  fn main() {
+      log!("Please invoke a named export.");
+      process::abort();
+  }
+  ```
+
+  #### cart.payment-methods.transform.run
+
+  ##### Input Query (Rust)
+
+  ```graphql
+  query Input {
+    paymentMethods {
+      id
+      name
+    }
+    paymentCustomization {
+      metafield(namespace: "$app", key: "configuration") {
+        jsonValue
+      }
+    }
+  }
+  ```
+
+  ##### Input Query (JavaScript)
+
+  ```graphql
+  query CartPaymentMethodsTransformRunInput {
+    paymentMethods {
+      id
+      name
+    }
+    paymentCustomization {
+      metafield(namespace: "$app", key: "configuration") {
+        jsonValue
+      }
+    }
+  }
+  ```
+
+  ##### Input Object (Rust)
+
+  ```json
+  {
+    "paymentMethods": [
+      {
+        "id": "gid://shopify/PaymentCustomizationPaymentMethod/1",
+        "name": "Money Order"
+      },
+      {
+        "id": "gid://shopify/PaymentCustomizationPaymentMethod/2",
+        "name": "Shopify Payments"
+      },
+      {
+        "id": "gid://shopify/PaymentCustomizationPaymentMethod/3",
+        "name": "Cash on Delivery (COD)"
+      }
+    ],
+    "paymentCustomization": {
+      "metafield": {
+        "jsonValue": {
+          "paymentMethods": [
+            "Money Order",
+            "Shopify Payments",
+            "Cash on Delivery (COD)"
+          ]
+        }
+      }
+    }
+  }
+  ```
+
+  ##### Input Object (JavaScript)
+
+  ```json
+  {
+    "paymentMethods": [
+      {
+        "id": "gid://shopify/PaymentCustomizationPaymentMethod/1",
+        "name": "Money Order"
+      },
+      {
+        "id": "gid://shopify/PaymentCustomizationPaymentMethod/2",
+        "name": "Shopify Payments"
+      },
+      {
+        "id": "gid://shopify/PaymentCustomizationPaymentMethod/3",
+        "name": "Cash on Delivery (COD)"
+      }
+    ],
+    "paymentCustomization": {
+      "metafield": {
+        "jsonValue": {
+          "paymentMethods": [
+            "Money Order",
+            "Shopify Payments",
+            "Cash on Delivery (COD)"
+          ]
+        }
+      }
+    }
+  }
+  ```
+
+  ##### Function Code (Rust)
+
+  ```rust
+  use crate::schema;
+  use shopify_function::prelude::*;
+  use shopify_function::Result;
+
+  #[derive(Deserialize, Default, PartialEq)]
+  #[shopify_function(rename_all = "camelCase")]
+  pub struct Configuration {
+      payment_methods: Vec<String>,
+  }
+
+  #[shopify_function]
+  fn cart_payment_methods_transform_run(
+      input: schema::run::Input,
+  ) -> Result<schema::CartPaymentMethodsTransformRunResult> {
+      let config: &Configuration = match input.payment_customization().metafield() {
+          Some(metafield) => metafield.json_value(),
+          None => return Ok(schema::CartPaymentMethodsTransformRunResult { operations: vec![] }),
+      };
+
+      let mut operations = vec![];
+
+      for (index, method_name) in config.payment_methods.iter().enumerate() {
+          if let Some(method) = input
+              .payment_methods()
+              .iter()
+              .find(|m| m.name() == method_name)
+          {
+              operations.push(schema::Operation::PaymentMethodMove(
+                  schema::PaymentMethodMoveOperation {
+                      payment_method_id: method.id().to_string(),
+                      index: index as i32,
+                  },
+              ));
+          }
+      }
+
+      Ok(schema::CartPaymentMethodsTransformRunResult { operations })
+  }
+  ```
+
+  ##### Performance Cost (Rust)
+
+  32199 instructions
+
+  ##### Function Code (JavaScript)
+
+  ```javascript
+  // @ts-check
+
+  /**
+   * @typedef {import("../generated/api").CartPaymentMethodsTransformRunInput} CartPaymentMethodsTransformRunInput
+   * @typedef {import("../generated/api").CartPaymentMethodsTransformRunResult} CartPaymentMethodsTransformRunResult
+   */
+
+  /**
+   * @param {CartPaymentMethodsTransformRunInput} input
+   * @returns {CartPaymentMethodsTransformRunResult}
+   */
+  export function cartPaymentMethodsTransformRun(input) {
+    const configuredPaymentMethods =
+      input.paymentCustomization.metafield?.jsonValue?.paymentMethods;
+    const paymentMethods = Array.isArray(configuredPaymentMethods)
+      ? configuredPaymentMethods
+      : [];
+
+    const operations = [];
+
+    // Create move operations for each configured payment method
+    paymentMethods.forEach((methodName, index) => {
+      const method = input.paymentMethods?.find(paymentMethod => paymentMethod.name === methodName);
+      if (method) {
+        operations.push({
+          paymentMethodMove: {
+            paymentMethodId: method.id,
+            index
+          }
+        });
+      }
+    });
+
+    return { operations };
+  }
+  ```
+
+  ##### Performance Cost (JavaScript)
+
+  239906 instructions
+
+  ##### Output JSON (Rust)
+
+  ```json
+  {
+    "operations": [
+      {
+        "paymentMethodMove": {
+          "index": 0,
+          "paymentMethodId": "gid://shopify/PaymentCustomizationPaymentMethod/1"
+        }
+      },
+      {
+        "paymentMethodMove": {
+          "index": 1,
+          "paymentMethodId": "gid://shopify/PaymentCustomizationPaymentMethod/2"
+        }
+      },
+      {
+        "paymentMethodMove": {
+          "index": 2,
+          "paymentMethodId": "gid://shopify/PaymentCustomizationPaymentMethod/3"
+        }
+      }
+    ]
+  }
+  ```
+
+  ##### Output JSON (JavaScript)
+
+  ```json
+  {
+    "operations": [
+      {
+        "paymentMethodMove": {
+          "index": 0,
+          "paymentMethodId": "gid://shopify/PaymentCustomizationPaymentMethod/1"
+        }
+      },
+      {
+        "paymentMethodMove": {
+          "index": 1,
+          "paymentMethodId": "gid://shopify/PaymentCustomizationPaymentMethod/2"
+        }
+      },
+      {
+        "paymentMethodMove": {
+          "index": 2,
+          "paymentMethodId": "gid://shopify/PaymentCustomizationPaymentMethod/3"
+        }
+      }
+    ]
+  }
+  ```
+
+* ### Rename payment methods
+
+  This function renames payment methods based on a configurable list of payment method names that is stored in an app owned metafield.
+
+  #### Entrypoint (Rust)
+
+  ```rust
+  use shopify_function::prelude::*;
+  use std::process;
+
+  pub mod cart_payment_methods_transform_run;
+
+  #[typegen("./schema.graphql")]
+  pub mod schema {
+      #[query("src/cart_payment_methods_transform_run.graphql", custom_scalar_overrides = {"Input.paymentCustomization.metafield.jsonValue" => super::cart_payment_methods_transform_run::Configuration})]
+      pub mod run {}
+  }
+
+  fn main() {
+      log!("Please invoke a named export.");
+      process::abort();
+  }
+  ```
+
+  #### cart.payment-methods.transform.run
+
+  ##### Input Query (Rust)
+
+  ```graphql
+  query Input {
+    paymentMethods {
+      id
+      name
+    }
+    paymentCustomization {
+      metafield(namespace: "$app", key: "configuration") {
+        jsonValue
+      }
+    }
+  }
+  ```
+
+  ##### Input Query (JavaScript)
+
+  ```graphql
+  query CartPaymentMethodsTransformRunInput {
+    paymentMethods {
+      id
+      name
+    }
+    paymentCustomization {
+      metafield(namespace: "$app", key: "configuration") {
+        jsonValue
+      }
+    }
+  }
+  ```
+
+  ##### Input Object (Rust)
+
+  ```json
+  {
+    "paymentMethods": [
+      {
+        "id": "gid://shopify/PaymentCustomizationPaymentMethod/1",
+        "name": "Credit Card"
+      },
+      {
+        "id": "gid://shopify/PaymentCustomizationPaymentMethod/2",
+        "name": "PayPal"
+      }
+    ],
+    "paymentCustomization": {
+      "metafield": {
+        "jsonValue": {
+          "renameMap": {
+            "Credit Card": "Visa/MasterCard",
+            "PayPal": "PayPal Express"
+          }
+        }
+      }
+    }
+  }
+  ```
+
+  ##### Input Object (JavaScript)
+
+  ```json
+  {
+    "paymentMethods": [
+      {
+        "id": "gid://shopify/PaymentCustomizationPaymentMethod/1",
+        "name": "Credit Card"
+      },
+      {
+        "id": "gid://shopify/PaymentCustomizationPaymentMethod/2",
+        "name": "PayPal"
+      }
+    ],
+    "paymentCustomization": {
+      "metafield": {
+        "jsonValue": {
+          "Credit Card": "Visa/MasterCard",
+          "PayPal": "PayPal Express"
+        }
+      }
+    }
+  }
+  ```
+
+  ##### Function Code (Rust)
+
+  ```rust
+  use std::collections::HashMap;
+
+  use crate::schema;
+  use shopify_function::prelude::*;
+  use shopify_function::Result;
+
+  #[derive(Deserialize, Default, PartialEq)]
+  #[shopify_function(rename_all = "camelCase")]
+  pub struct Configuration {
+      rename_map: HashMap<String, String>,
+  }
+
+  #[shopify_function]
+  fn cart_payment_methods_transform_run(
+      input: schema::run::Input,
+  ) -> Result<schema::CartPaymentMethodsTransformRunResult> {
+      // Extract configuration from metafield
+      let config: &Configuration = match input.payment_customization().metafield() {
+          Some(metafield) => metafield.json_value(),
+          None => return Ok(schema::CartPaymentMethodsTransformRunResult { operations: vec![] }),
+      };
+
+      // Convert to case-insensitive map
+      let rename_map: HashMap<String, String> = config
+          .rename_map
+          .clone()
+          .into_iter()
+          .map(|(k, v)| (k.to_ascii_lowercase(), v))
+          .collect();
+
+      // Create rename operations based on the configuration, using case-insensitive comparison
+      let operations: Vec<schema::Operation> = input
+          .payment_methods()
+          .iter()
+          .filter_map(|method| {
+              rename_map
+                  .get(&method.name().to_ascii_lowercase())
+                  .map(|new_name| {
+                      schema::Operation::PaymentMethodRename(schema::PaymentMethodRenameOperation {
+                          payment_method_id: method.id().to_string(),
+                          name: new_name.clone(),
+                      })
+                  })
+          })
+          .collect();
+
+      Ok(schema::CartPaymentMethodsTransformRunResult { operations })
+  }
+  ```
+
+  ##### Performance Cost (Rust)
+
+  37617 instructions
+
+  ##### Function Code (JavaScript)
+
+  ```javascript
+  // @ts-check
+
+  /**
+   * @typedef {import("../generated/api").CartPaymentMethodsTransformRunInput} CartPaymentMethodsTransformRunInput
+   * @typedef {import("../generated/api").CartPaymentMethodsTransformRunResult} CartPaymentMethodsTransformRunResult
+   * @typedef {import("../generated/api").Operation} Operation
+   */
+
+  /**
+   * @type {CartPaymentMethodsTransformRunResult}
+   */
+  const NO_CHANGES = {
+    operations: [],
+  };
+
+  /**
+   * @param {CartPaymentMethodsTransformRunInput} input
+   * @returns {CartPaymentMethodsTransformRunResult}
+   */
+  export function cartPaymentMethodsTransformRun(input) {
+    // Extract configuration from metafield and convert keys to lowercase
+    const rawRenameMap = input.paymentCustomization.metafield?.jsonValue ?? {};
+    const renameMap = Object.entries(rawRenameMap).reduce((acc, [key, value]) => {
+      acc[key.toLowerCase()] = value;
+      return acc;
+    }, {});
+
+    if (!input.paymentMethods || Object.keys(renameMap).length === 0) {
+      return NO_CHANGES;
+    }
+
+    // Create rename operations based on the configuration, using case-insensitive comparison
+    const operations = input.paymentMethods
+      .filter(method => renameMap[method.name.toLowerCase()])
+      .map(method => ({
+        paymentMethodRename: {
+          paymentMethodId: method.id,
+          name: renameMap[method.name.toLowerCase()]
+        }
+      }));
+
+    return {
+      operations
+    };
+  }
+  ```
+
+  ##### Performance Cost (JavaScript)
+
+  269440 instructions
+
+  ##### Output JSON (Rust)
+
+  ```json
+  {
+    "operations": [
+      {
+        "paymentMethodRename": {
+          "name": "Visa/MasterCard",
+          "paymentMethodId": "gid://shopify/PaymentCustomizationPaymentMethod/1"
+        }
+      },
+      {
+        "paymentMethodRename": {
+          "name": "PayPal Express",
+          "paymentMethodId": "gid://shopify/PaymentCustomizationPaymentMethod/2"
+        }
+      }
+    ]
+  }
+  ```
+
+  ##### Output JSON (JavaScript)
+
+  ```json
+  {
+    "operations": [
+      {
+        "paymentMethodRename": {
+          "name": "Visa/MasterCard",
+          "paymentMethodId": "gid://shopify/PaymentCustomizationPaymentMethod/1"
+        }
+      },
+      {
+        "paymentMethodRename": {
+          "name": "PayPal Express",
+          "paymentMethodId": "gid://shopify/PaymentCustomizationPaymentMethod/2"
+        }
+      }
+    ]
+  }
+  ```
+
+* ### Hide payment methods based on customer tags
+
+  This function hides a configurable payment method for customers without a specific tag. The configuration is stored in an app owned metafield and can configure multiple tags.
+
+  #### Entrypoint (Rust)
+
+  ```rust
+  use shopify_function::prelude::*;
+  use std::process;
+
+  pub mod cart_payment_methods_transform_run;
+
+  #[typegen("./schema.graphql")]
+  pub mod schema {
+      #[query("src/cart_payment_methods_transform_run.graphql", custom_scalar_overrides = {"Input.paymentCustomization.metafield.jsonValue" => super::cart_payment_methods_transform_run::Configuration})]
+      pub mod run {}
+  }
+
+  fn main() {
+      log!("Please invoke a named export.");
+      process::abort();
+  }
+  ```
+
+  #### cart.payment-methods.transform.run
+
+  ##### Input Query (Rust)
+
+  ```graphql
+  query Input($tags_list: [String!]! = ["VIP", "WHOLESALE"]) {
+    cart {
+      buyerIdentity {
+        customer {
+          hasTags(tags: $tags_list) {
+            hasTag
+            tag
+          }
+        }
+      }
+    }
+    paymentCustomization {
+      metafield(namespace: "$app", key: "configuration") {
+        jsonValue
+      }
+    }
+    paymentMethods {
+      id
+      name
+    }
+  }
+  ```
+
+  ##### Input Query (JavaScript)
+
+  ```graphql
+  query CartPaymentMethodsTransformRunInput($tags_list: [String!]! = ["VIP", "WHOLESALE"]) {
+    cart {
+      buyerIdentity {
+        customer {
+          hasTags(tags: $tags_list) {
+            hasTag
+            tag
+          }
+        }
+      }
+    }
+    paymentCustomization {
+      metafield(namespace: "$app", key: "configuration") {
+        jsonValue
+      }
+    }
+    paymentMethods {
+      id
+      name
+    }
+  }
+  ```
+
+  ##### Input Object (Rust)
+
+  ```json
+  {
+    "cart": {
+      "buyerIdentity": {
+        "customer": {
+          "hasTags": [
+            {
+              "tag": "VIP",
+              "hasTag": false
+            },
+            {
+              "tag": "Wholesale",
+              "hasTag": true
+            }
+          ]
+        }
+      }
+    },
+    "paymentCustomization": {
+      "metafield": {
+        "jsonValue": {
+          "paymentMethods": {
+            "VIP": [
+              "Cash on Delivery"
+            ],
+            "Wholesale": [
+              "Net 30"
+            ]
+          }
+        }
+      }
+    },
+    "paymentMethods": [
+      {
+        "id": "gid://shopify/PaymentCustomizationPaymentMethod/1",
+        "name": "Cash on Delivery"
+      },
+      {
+        "id": "gid://shopify/PaymentCustomizationPaymentMethod/2",
+        "name": "Net 30"
+      }
+    ]
+  }
+  ```
+
+  ##### Input Object (JavaScript)
+
+  ```json
+  {
+    "cart": {
+      "buyerIdentity": {
+        "customer": {
+          "hasTags": [
+            {
+              "tag": "VIP",
+              "hasTag": false
+            },
+            {
+              "tag": "Wholesale",
+              "hasTag": true
+            }
+          ]
+        }
+      }
+    },
+    "paymentCustomization": {
+      "metafield": {
+        "jsonValue": {
+          "paymentMethods": {
+            "VIP": [
+              "Cash on Delivery"
+            ],
+            "Wholesale": [
+              "Net 30"
+            ]
+          }
+        }
+      }
+    },
+    "paymentMethods": [
+      {
+        "id": "gid://shopify/PaymentCustomizationPaymentMethod/1",
+        "name": "Cash on Delivery"
+      },
+      {
+        "id": "gid://shopify/PaymentCustomizationPaymentMethod/2",
+        "name": "Net 30"
+      }
+    ]
+  }
+  ```
+
+  ##### Function Code (Rust)
+
+  ```rust
+  use crate::schema;
+  use shopify_function::prelude::*;
+  use shopify_function::Result;
+  use std::collections::HashMap;
+
+  #[derive(Deserialize, Default, PartialEq)]
+  #[shopify_function(rename_all = "camelCase")]
+  pub struct Configuration {
+      payment_methods: HashMap<String, Vec<String>>,
+  }
+
+  #[shopify_function]
+  fn cart_payment_methods_transform_run(
+      input: schema::run::Input,
+  ) -> Result<schema::CartPaymentMethodsTransformRunResult> {
+      let customer_tags = input
+          .cart()
+          .buyer_identity()
+          .and_then(|identity| identity.customer())
+          .map(|customer| {
+              customer
+                  .has_tags()
+                  .iter()
+                  .filter(|tag| *tag.has_tag())
+                  .map(|tag| tag.tag().to_string())
+                  .collect::<Vec<String>>()
+          })
+          .unwrap_or_default();
+
+      let payment_rules: &Configuration = match input.payment_customization().metafield() {
+          Some(metafield) => metafield.json_value(),
+          None => return Ok(schema::CartPaymentMethodsTransformRunResult { operations: vec![] }),
+      };
+
+      let mut operations = vec![];
+
+      for method in input.payment_methods() {
+          let mut should_hide = true;
+
+          // Check if this payment method is allowed for any of the customer's tags
+          for tag in &customer_tags {
+              if let Some(allowed_methods) = payment_rules.payment_methods.get(tag) {
+                  if allowed_methods.contains(method.name()) {
+                      should_hide = false;
+                      break;
+                  }
+              }
+          }
+
+          if should_hide {
+              operations.push(schema::Operation::PaymentMethodHide(
+                  schema::PaymentMethodHideOperation {
+                      payment_method_id: method.id().to_string(),
+                      placements: None,
+                  },
+              ));
+          }
+      }
+
+      Ok(schema::CartPaymentMethodsTransformRunResult { operations })
+  }
+  ```
+
+  ##### Performance Cost (Rust)
+
+  41732 instructions
+
+  ##### Function Code (JavaScript)
+
+  ```javascript
+  // @ts-check
+
+  /**
+   * @typedef {import("../generated/api").CartPaymentMethodsTransformRunInput} CartPaymentMethodsTransformRunInput
+   * @typedef {import("../generated/api").CartPaymentMethodsTransformRunResult} CartPaymentMethodsTransformRunResult
+   */
+
+  /**
+   * @type {CartPaymentMethodsTransformRunResult}
+   */
+  const NO_CHANGES = {
+    operations: [],
+  };
+
+  /**
+   * @param {CartPaymentMethodsTransformRunInput} input
+   * @returns {CartPaymentMethodsTransformRunResult}
+   */
+  export function cartPaymentMethodsTransformRun(input) {
+    // Get customer tags that are true
+    const customerTags = input?.cart?.buyerIdentity?.customer?.hasTags
+      ?.filter(tag => tag.hasTag)
+      .map(tag => tag.tag) || [];
+
+    // Get payment rules from metafield
+    const paymentRules = input?.paymentCustomization?.metafield?.jsonValue?.paymentMethods || {};
+
+    if (!input.paymentMethods) {
+      return NO_CHANGES;
+    }
+
+    const operations = [];
+
+    // Check each payment method
+    for (const method of input.paymentMethods) {
+      let shouldHide = true;
+
+      // Check if this payment method is allowed for any of the customer's tags
+      for (const tag of customerTags) {
+        const allowedMethods = paymentRules[tag] || [];
+        if (allowedMethods.includes(method.name)) {
+          shouldHide = false;
+          break;
+        }
+      }
+
+      if (shouldHide) {
+        operations.push({
+          paymentMethodHide: {
+            paymentMethodId: method.id
+          }
+        });
+      }
+    }
+
+    return { operations };
+  }
+  ```
+
+  ##### Performance Cost (JavaScript)
+
+  249161 instructions
+
+  ##### Output JSON (Rust)
+
+  ```json
+  {
+    "operations": [
+      {
+        "paymentMethodHide": {
+          "paymentMethodId": "gid://shopify/PaymentCustomizationPaymentMethod/1"
+        }
+      }
+    ]
+  }
+  ```
+
+  ##### Output JSON (JavaScript)
+
+  ```json
+  {
+    "operations": [
+      {
+        "paymentMethodHide": {
+          "paymentMethodId": "gid://shopify/PaymentCustomizationPaymentMethod/1"
+        }
+      }
+    ]
+  }
+  ```
+
+* ### Hide payment methods for small orders
+
+  This example implements a Shopify function that hides certain payment methods when the cart total is below a threshold amount.
+
+  #### Entrypoint (Rust)
+
+  ```rust
+  use shopify_function::prelude::*;
+  use std::process;
+
+  pub mod cart_payment_methods_transform_run;
+
+  #[typegen("./schema.graphql")]
+  pub mod schema {
+      #[query("src/cart_payment_methods_transform_run.graphql", custom_scalar_overrides = {"Input.paymentCustomization.metafield.jsonValue" => super::cart_payment_methods_transform_run::Configuration})]
+      pub mod run {}
+  }
+
+  fn main() {
+      log!("Please invoke a named export.");
+      process::abort();
+  }
+  ```
+
+  #### cart.payment-methods.transform.run
+
+  ##### Input Query (Rust)
+
+  ```graphql
+  query Input {
+    cart {
+      cost {
+        totalAmount {
+          amount
+        }
+      }
+    }
+    paymentMethods {
+      id
+      name
+    }
+    paymentCustomization {
+      metafield(namespace: "$app", key: "function-configuration") {
+        jsonValue
+      }
+    }
+  }
+  ```
+
+  ##### Input Query (JavaScript)
+
+  ```graphql
+  query CartPaymentMethodsTransformRunInput {
+    cart {
+      cost {
+        totalAmount {
+          amount
+        }
+      }
+    }
+    paymentMethods {
+      id
+      name
+    }
+    paymentCustomization {
+      metafield(namespace: "$app", key: "function-configuration") {
+        jsonValue
+      }
+    }
+  }
+  ```
+
+  ##### Input Object (Rust)
+
+  ```json
+  {
+    "cart": {
+      "cost": {
+        "totalAmount": {
+          "amount": "50.00"
+        }
+      }
+    },
+    "paymentMethods": [
+      {
+        "id": "pm_1",
+        "name": "Credit Card"
+      }
+    ],
+    "paymentCustomization": {
+      "metafield": {
+        "jsonValue": {
+          "minimumAmount": 100.0,
+          "paymentMethodIds": [
+            "pm_1"
+          ]
+        }
+      }
+    }
+  }
+  ```
+
+  ##### Input Object (JavaScript)
+
+  ```json
+  {
+    "cart": {
+      "cost": {
+        "totalAmount": {
+          "amount": "50.00"
+        }
+      }
+    },
+    "paymentMethods": [
+      {
+        "id": "pm_1",
+        "name": "Credit Card"
+      }
+    ],
+    "paymentCustomization": {
+      "metafield": {
+        "jsonValue": {
+          "minimumAmount": 100.0,
+          "paymentMethodIds": [
+            "pm_1"
+          ]
+        }
+      }
+    }
+  }
+  ```
+
+  ##### Function Code (Rust)
+
+  ```rust
+  use crate::schema;
+  use shopify_function::prelude::*;
+  use shopify_function::Result;
+
+  #[derive(Deserialize, Default, PartialEq)]
+  #[shopify_function(rename_all = "camelCase")]
+  pub struct Configuration {
+      minimum_amount: f64,
+      payment_method_ids: Vec<String>,
+  }
+
+  #[shopify_function]
+  fn cart_payment_methods_transform_run(
+      input: schema::run::Input,
+  ) -> Result<schema::CartPaymentMethodsTransformRunResult> {
+      // Get configuration or return empty result if no metafield is set
+      let config: &Configuration = match input.payment_customization().metafield() {
+          Some(metafield) => metafield.json_value(),
+          None => return Ok(schema::CartPaymentMethodsTransformRunResult { operations: vec![] }),
+      };
+
+      let cart_total = input.cart().cost().total_amount().amount().0;
+
+      // If cart total is below minimum, hide specified payment methods
+      if cart_total < config.minimum_amount {
+          let payment_methods: std::collections::HashSet<String> = input
+              .payment_methods()
+              .iter()
+              .map(|method| method.id().to_string())
+              .collect();
+
+          let operations = config
+              .payment_method_ids
+              .iter()
+              .filter(|id| payment_methods.contains(*id))
+              .map(|id| {
+                  schema::Operation::PaymentMethodHide(schema::PaymentMethodHideOperation {
+                      payment_method_id: id.clone(),
+                      placements: None,
+                  })
+              })
+              .collect();
+
+          return Ok(schema::CartPaymentMethodsTransformRunResult { operations });
+      }
+
+      Ok(schema::CartPaymentMethodsTransformRunResult { operations: vec![] })
+  }
+  ```
+
+  ##### Performance Cost (Rust)
+
+  24834 instructions
+
+  ##### Function Code (JavaScript)
+
+  ```javascript
+  // @ts-check
+
+  /**
+   * @typedef {import("../generated/api").CartPaymentMethodsTransformRunInput} CartPaymentMethodsTransformRunInput
+   * @typedef {import("../generated/api").CartPaymentMethodsTransformRunResult} CartPaymentMethodsTransformRunResult
+   * @typedef {import("../generated/api").Operation} Operation
+   * @typedef {import("../generated/api").PaymentMethodHideOperation} PaymentMethodHideOperation
+   *
+   * @typedef {Object} Configuration
+   * @property {number} minimumAmount - The minimum cart amount threshold
+   * @property {string[]} paymentMethodIds - Array of payment method IDs to hide
+   */
+
+  /**
+   * @param {CartPaymentMethodsTransformRunInput} input - The function input containing cart and configuration data
+   * @returns {CartPaymentMethodsTransformRunResult} The function result containing operations
+   */
+  export function cartPaymentMethodsTransformRun(input) {
+    // Get configuration from metafield
+    /** @type {Configuration} */
+    const configuration = input.paymentCustomization.metafield?.jsonValue ?? {};
+
+    if (!configuration.minimumAmount || !configuration.paymentMethodIds) {
+      return { operations: [] };
+    }
+
+    const cartTotal = parseFloat(input.cart.cost.totalAmount.amount);
+
+    // If cart total is below minimum, hide specified payment methods
+    if (cartTotal < configuration.minimumAmount) {
+      /** @type {Operation[]} */
+      const operations = [];
+
+      for (let i = 0; i < configuration.paymentMethodIds.length; i++) {
+        operations.push({
+          paymentMethodHide: {
+            paymentMethodId: configuration.paymentMethodIds[i]
+          }
+        });
+      }
+
+      return { operations };
+    }
+
+    return { operations: [] };
+  }
+  ```
+
+  ##### Performance Cost (JavaScript)
+
+  163975 instructions
+
+  ##### Output JSON (Rust)
+
+  ```json
+  {
+    "operations": [
+      {
+        "paymentMethodHide": {
+          "paymentMethodId": "pm_1"
+        }
+      }
+    ]
+  }
+  ```
+
+  ##### Output JSON (JavaScript)
+
+  ```json
+  {
+    "operations": [
+      {
+        "paymentMethodHide": {
+          "paymentMethodId": "pm_1"
+        }
+      }
+    ]
+  }
+  ```
+
+* ### Hide payment methods based on customer location
+
+  This example implements a Shopify function that hides certain payment methods based on the buyer's country code.
+
+  #### Entrypoint (Rust)
+
+  ```rust
+  use shopify_function::prelude::*;
+  use std::process;
+
+  pub mod cart_payment_methods_transform_run;
+
+  #[typegen("./schema.graphql")]
+  pub mod schema {
+      #[query("src/cart_payment_methods_transform_run.graphql",
+    custom_scalar_overrides = {
+        "Input.paymentCustomization.metafield.jsonValue" => super::cart_payment_methods_transform_run::Configuration,
+    }
+  )]
+      pub mod run {}
+  }
+
+  fn main() {
+      log!("Please invoke a named export.");
+      process::abort();
+  }
+  ```
+
+  #### cart.payment-methods.transform.run
+
+  ##### Input Query (Rust)
+
+  ```graphql
+  query Input {
+    localization {
+      country {
+        isoCode
+      }
+    }
+    paymentMethods {
+      id
+      name
+    }
+    paymentCustomization {
+      metafield(namespace: "$app", key: "function-configuration") {
+        jsonValue
+      }
+    }
+  }
+  ```
+
+  ##### Input Query (JavaScript)
+
+  ```graphql
+  query CartPaymentMethodsTransformRunInput {
+    localization {
+      country {
+        isoCode
+      }
+    }
+    paymentMethods {
+      id
+      name
+    }
+    paymentCustomization {
+      metafield(namespace: "$app", key: "function-configuration") {
+        jsonValue
+      }
+    }
+  }
+  ```
+
+  ##### Input Object (Rust)
+
+  ```json
+  {
+    "localization": {
+      "country": {
+        "isoCode": "US"
+      }
+    },
+    "paymentMethods": [
+      {
+        "id": "pm_1",
+        "name": "SEPA Direct Debit"
+      }
+    ],
+    "paymentCustomization": {
+      "metafield": {
+        "jsonValue": {
+          "paymentMethods": [
+            {
+              "paymentMethodId": "pm_1",
+              "excludedCountries": [
+                "US",
+                "CA"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+  ```
+
+  ##### Input Object (JavaScript)
+
+  ```json
+  {
+    "localization": {
+      "country": {
+        "isoCode": "US"
+      }
+    },
+    "paymentMethods": [
+      {
+        "id": "pm_1",
+        "name": "SEPA Direct Debit"
+      }
+    ],
+    "paymentCustomization": {
+      "metafield": {
+        "jsonValue": {
+          "paymentMethods": [
+            {
+              "paymentMethodId": "pm_1",
+              "excludedCountries": [
+                "US",
+                "CA"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+  ```
+
+  ##### Function Code (Rust)
+
+  ```rust
+  use crate::schema;
+  use shopify_function::prelude::*;
+  use shopify_function::Result;
+
+  #[derive(Deserialize, Default, PartialEq)]
+  #[shopify_function(rename_all = "camelCase")]
+  struct PaymentMethodConfig {
+      payment_method_id: String,
+      excluded_countries: Vec<String>,
+  }
+
+  #[derive(Deserialize, Default, PartialEq)]
+  #[shopify_function(rename_all = "camelCase")]
+  pub struct Configuration {
+      payment_methods: Vec<PaymentMethodConfig>,
+  }
+
+  #[shopify_function]
+  fn cart_payment_methods_transform_run(
+      input: schema::run::Input,
+  ) -> Result<schema::CartPaymentMethodsTransformRunResult> {
+      // Get configuration or return empty result if no metafield is set
+      let config: &Configuration = match input.payment_customization().metafield() {
+          Some(metafield) => metafield.json_value(),
+          None => return Ok(schema::CartPaymentMethodsTransformRunResult { operations: vec![] }),
+      };
+
+      let buyer_country = input.localization().country().iso_code();
+
+      // Create a set of payment method IDs
+      let payment_methods: std::collections::HashSet<String> = input
+          .payment_methods()
+          .iter()
+          .map(|method| method.id().to_string())
+          .collect();
+
+      // Find payment methods that should be hidden for the current country
+      let operations = config
+          .payment_methods
+          .iter()
+          .filter(|config| config.excluded_countries.contains(buyer_country))
+          .filter(|config| payment_methods.contains(&config.payment_method_id))
+          .map(|config| {
+              schema::Operation::PaymentMethodHide(schema::PaymentMethodHideOperation {
+                  payment_method_id: config.payment_method_id.clone(),
+                  placements: None,
+              })
+          })
+          .collect();
+
+      Ok(schema::CartPaymentMethodsTransformRunResult { operations })
+  }
+  ```
+
+  ##### Performance Cost (Rust)
+
+  27673 instructions
+
+  ##### Function Code (JavaScript)
+
+  ```javascript
+  // @ts-check
+
+  /**
+   * @typedef {import("../generated/api").CartPaymentMethodsTransformRunInput} CartPaymentMethodsTransformRunInput
+   * @typedef {import("../generated/api").CartPaymentMethodsTransformRunResult} CartPaymentMethodsTransformRunResult
+   * @typedef {import("../generated/api").PaymentMethodHideOperation} PaymentMethodHideOperation
+   * @typedef {import("../generated/api").Operation} Operation
+   *
+   * @typedef {Object} Configuration
+   * @property {PaymentMethodConfiguration[]} paymentMethods - Array of payment method configurations
+   *
+   * @typedef {Object} PaymentMethodConfiguration
+   * @property {string} paymentMethodId - ID of the payment method to customize
+   * @property {string[]} excludedCountries - Array of country codes to exclude
+   */
+
+  /**
+   * @type {CartPaymentMethodsTransformRunResult}
+   */
+  const NO_CHANGES = {
+    operations: [],
+  };
+
+  /**
+   * @param {CartPaymentMethodsTransformRunInput} input
+   * @returns {CartPaymentMethodsTransformRunResult}
+   */
+  export function cartPaymentMethodsTransformRun(input) {
+    /** @type {Configuration} */
+    const configuration = input.paymentCustomization?.metafield?.jsonValue;
+    if (!configuration) {
+      return NO_CHANGES;
+    }
+
+    const country = input.localization?.country;
+    const buyerCountry = country ? country.isoCode : null;
+    if (!buyerCountry) {
+      return NO_CHANGES;
+    }
+
+    // Create a set of payment method IDs using a regular for loop
+    const paymentMethodIds = new Set();
+    const paymentMethods = input.paymentMethods || [];
+    for (let i = 0; i < paymentMethods.length; i++) {
+      paymentMethodIds.add(paymentMethods[i].id);
+    }
+
+    /** @type {Operation[]} */
+    const operations = [];
+
+    // Cache the length for better performance
+    const configLength = configuration.paymentMethods.length;
+    for (let i = 0; i < configLength; i++) {
+      const config = configuration.paymentMethods[i];
+      if (config.excludedCountries.includes(buyerCountry) &&
+          paymentMethodIds.has(config.paymentMethodId)) {
+        operations.push({
+          paymentMethodHide: /** @type {PaymentMethodHideOperation} */ {
+            paymentMethodId: config.paymentMethodId
+          }
+        });
+      }
+    }
+
+    return {
+      operations
+    };
+  }
+  ```
+
+  ##### Performance Cost (JavaScript)
+
+  191555 instructions
+
+  ##### Output JSON (Rust)
+
+  ```json
+  {
+    "operations": [
+      {
+        "paymentMethodHide": {
+          "paymentMethodId": "pm_1"
+        }
+      }
+    ]
+  }
+  ```
+
+  ##### Output JSON (JavaScript)
+
+  ```json
+  {
+    "operations": [
+      {
+        "paymentMethodHide": {
+          "paymentMethodId": "pm_1"
+        }
+      }
+    ]
+  }
+  ```
+
+* ### Create an order review requirement for new B2B customers
+
+  This example implements a payment customization function that adds a review requirement to a B2B checkout when the company location has placed fewer than 10 orders in total.
+
+  #### Entrypoint (Rust)
+
+  ```rust
+  use shopify_function::prelude::*;
+  use std::process;
+
+  pub mod cart_payment_methods_transform_run;
+
+  #[typegen("schema.graphql")]
+  pub mod schema {
+      #[query("src/cart_payment_methods_transform_run.graphql")]
+      pub mod cart_payment_methods_transform_run {}
+  }
+
+  fn main() {
+      log!("Please invoke a named export.");
+      process::abort();
+  }
+  ```
+
+  #### cart.payment-methods.transform.run
+
+  ##### Input Query (Rust)
+
+  ```graphql
+  query Input {
+    cart {
+      buyerIdentity {
+        purchasingCompany {
+          location {
+            id
+            totalSpent {
+              amount
+              currencyCode
+            }
+            ordersCount
+          }
+        }
+      }
+    }
+  }
+  ```
+
+  ##### Input Query (JavaScript)
+
+  ```graphql
+  query CartPaymentMethodsTransformRunInput {
+    cart {
+      buyerIdentity {
+        purchasingCompany {
+          location {
+            id
+            totalSpent {
+              amount
+              currencyCode
+            }
+            ordersCount
+          }
+        }
+      }
+    }
+  }
+  ```
+
+  ##### Input Object (Rust)
+
+  ```json
+  {
+    "cart": {
+        "buyerIdentity": {
+            "purchasingCompany": {
+                "location": {
+                    "id": "gid://shopify/CompanyLocation/1",
+                    "totalSpent": {
+                        "amount": "10000.00",
+                        "currencyCode": "USD"
+                    },
+                    "ordersCount": 8
+                }
+            }
+        }
+    }
+  }
+  ```
+
+  ##### Input Object (JavaScript)
+
+  ```json
+  {
+      "cart": {
+          "buyerIdentity": {
+              "purchasingCompany": {
+                  "location": {
+                      "id": "gid://shopify/CompanyLocation/1",
+                      "totalSpent": {
+                          "amount": "10000.00",
+                          "currencyCode": "USD"
+                      },
+                      "ordersCount": 8
+                  }
+              }
+          }
+      }
+  }
+  ```
+
+  ##### Function Code (Rust)
+
+  ```rust
+  use crate::schema;
+  use shopify_function::prelude::*;
+  use shopify_function::Result;
+
+  #[shopify_function]
+  fn cart_payment_methods_transform_run(
+      input: schema::cart_payment_methods_transform_run::Input,
+  ) -> Result<schema::CartPaymentMethodsTransformRunResult> {
+      let company_orders_count = match input.cart().buyer_identity() {
+          Some(buyer_identity) => match buyer_identity.purchasing_company() {
+              Some(purchasing_company) => purchasing_company.location().orders_count(),
+              None => return Ok(schema::CartPaymentMethodsTransformRunResult { operations: vec![] }),
+          },
+          None => return Ok(schema::CartPaymentMethodsTransformRunResult { operations: vec![] }),
+      };
+      let operations = if *company_orders_count < 10 {
+          vec![schema::Operation::OrderReviewAdd(
+              schema::OrderReviewAddOperation {
+                  reason:
+                      "Order placed by company location with less than 10 orders requires review."
+                          .to_string(),
+              },
+          )]
+      } else {
+          vec![]
+      };
+
+      Ok(schema::CartPaymentMethodsTransformRunResult { operations })
+  }
+  ```
+
+  ##### Performance Cost (Rust)
+
+  12143 instructions
+
+  ##### Function Code (JavaScript)
+
+  ```javascript
+  // @ts-check
+
+  /**
+   * @typedef {import("../generated/api").CartPaymentMethodsTransformRunInput} CartPaymentMethodsTransformRunInput
+   * @typedef {import("../generated/api").CartPaymentMethodsTransformRunResult} CartPaymentMethodsTransformRunResult
+   */
+
+  /**
+   * @type {CartPaymentMethodsTransformRunResult}
+   */
+
+  /**
+   * @param {CartPaymentMethodsTransformRunInput} input
+   * @returns {CartPaymentMethodsTransformRunResult}
+   */
+  export function cartPaymentMethodsTransformRun(input) {
+    const operations = [];
+    const companyOrdersCount = input.cart?.buyerIdentity?.purchasingCompany?.location?.ordersCount;
+
+    if (companyOrdersCount && companyOrdersCount < 10) {
+      operations.push({
+        orderReviewAdd: {
+          reason: "Order placed by company location with less than 10 orders requires review.",
+        }
+      });
+    }
+
+    return {
+      operations,
+    };
+  };
+  ```
+
+  ##### Performance Cost (JavaScript)
+
+  137189 instructions
+
+  ##### Output JSON (Rust)
+
+  ```json
+  {
+    "operations": [
+        {
+          "orderReviewAdd": {
+            "reason": "Order placed by company location with less than 10 orders requires review."
+          }
+      }
+    ]
+  }
+  ```
+
+  ##### Output JSON (JavaScript)
+
+  ```json
+  {
+      "operations": [
+          {
+            "orderReviewAdd": {
+              "reason": "Order placed by company location with less than 10 orders requires review."
+            }
+        }
+      ]
+  }
+  ```
+
+* ### Create an order review requirement for high-value B2B orders
+
+  This example implements a payment customization function that adds a review requirement to a B2B checkout when the cart total exceeds a certain amount.
+
+  #### Entrypoint (Rust)
+
+  ```rust
+  use shopify_function::prelude::*;
+  use std::process;
+
+  pub mod cart_payment_methods_transform_run;
+
+  #[typegen("schema.graphql")]
+  pub mod schema {
+      #[query("src/cart_payment_methods_transform_run.graphql")]
+      pub mod cart_payment_methods_transform_run {}
+  }
+
+  fn main() {
+      log!("Please invoke a named export.");
+      process::abort();
+  }
+  ```
+
+  #### cart.payment-methods.transform.run
+
+  ##### Input Query (Rust)
+
+  ```graphql
+  query Input {
+    cart {
+      cost {
+        totalAmount {
+          amount
+          currencyCode
+        }
+      }
+    }
+  }
+  ```
+
+  ##### Input Query (JavaScript)
+
+  ```graphql
+  query CartPaymentMethodsTransformRunInput {
+    cart {
+      cost {
+        totalAmount {
+          amount
+          currencyCode
+        }
+      }
+    }
+  }
+  ```
+
+  ##### Input Object (Rust)
+
+  ```json
+  {
+      "cart": {
+          "cost": {
+              "totalAmount": {
+                  "amount": "6000",
+                  "currencyCode": "USD" 
+              }
+          }
+      }
+  }
+  ```
+
+  ##### Input Object (JavaScript)
+
+  ```json
+  {
+      "cart": {
+          "cost": {
+              "totalAmount": {
+                  "amount": "6000",
+                  "currencyCode": "USD" 
+              }
+          }
+      }
+  }
+  ```
+
+  ##### Function Code (Rust)
+
+  ```rust
+  use crate::schema;
+  use shopify_function::prelude::*;
+  use shopify_function::Result;
+
+  // #[derive(Deserialize, Default, PartialEq)]
+  // #[shopify_function(rename_all = "camelCase")]
+  // pub struct Configuration {}
+
+  #[shopify_function]
+  fn cart_payment_methods_transform_run(
+      input: schema::cart_payment_methods_transform_run::Input,
+  ) -> Result<schema::CartPaymentMethodsTransformRunResult> {
+      let cart_total = input.cart().cost().total_amount().amount();
+
+      let operations = if cart_total.0 > 5000.0 {
+          vec![schema::Operation::OrderReviewAdd(
+              schema::OrderReviewAddOperation {
+                  reason: "Orders over $5000 require review.".to_string(),
+              },
+          )]
+      } else {
+          vec![]
+      };
+
+      Ok(schema::CartPaymentMethodsTransformRunResult { operations })
+  }
+  ```
+
+  ##### Performance Cost (Rust)
+
+  8395 instructions
+
+  ##### Function Code (JavaScript)
+
+  ```javascript
+  // @ts-check
+
+  /**
+   * @typedef {import("../generated/api").CartPaymentMethodsTransformRunInput} CartPaymentMethodsTransformRunInput
+   * @typedef {import("../generated/api").CartPaymentMethodsTransformRunResult} CartPaymentMethodsTransformRunResult
+   */
+
+  /**
+   * @type {CartPaymentMethodsTransformRunResult}
+   */
+
+  /**
+   * @param {CartPaymentMethodsTransformRunInput} input
+   * @returns {CartPaymentMethodsTransformRunResult}
+   */
+  export function cartPaymentMethodsTransformRun(input) {
+    const cartTotal = input.cart?.cost?.totalAmount?.amount;
+    const operations = [];
+
+    if (cartTotal && cartTotal > 5000) {
+      operations.push({
+        orderReviewAdd: {
+          reason: "An order over $5000 requires review.",
+        }
+      });
+    }
+
+    return {
+      operations
+    };
+  };
+  ```
+
+  ##### Performance Cost (JavaScript)
+
+  119402 instructions
+
+  ##### Output JSON (Rust)
+
+  ```json
+  {
+      "operations": [
+          {
+            "orderReviewAdd": {
+              "reason": "Orders over $5000 require review."
+          }
+        }
+      ]
+  }
+  ```
+
+  ##### Output JSON (JavaScript)
+
+  ```json
+  {
+      "operations": [
+          {
+            "orderReviewAdd": {
+              "reason": "An order over $5000 requires review."
+          }
+        }
+      ]
+  }
+  ```
+
+* ### Apply payment terms and deposits based on cart total
+
+  This example implements a Shopify function that sets net payment terms with a deposit (15% to be collected upfront, the rest to be collected in 7 days) when the cart total is above a threshold amount.
+
+  #### Entrypoint (Rust)
+
+  ```rust
+  use shopify_function::prelude::*;
+  use std::process;
+
+  pub mod run;
+
+  #[typegen("schema.graphql")]
+  pub mod schema {
+      #[query("src/run.graphql", custom_scalar_overrides = {
+          "Input.paymentCustomization.metafield.jsonValue" => super::run::Configuration,
+      })]
+      pub mod run {}
+  }
+
+  fn main() {
+      log!("Please invoke a named export.");
+      process::abort();
+  }
+  ```
+
+  #### purchase.payment-customization.run
+
+  ##### Input Query (Rust)
+
+  ```graphql
+  query Input {
+    cart {
+      cost {
+        totalAmount {
+          amount
+        }
+      }
+    }
+    paymentCustomization {
+      metafield(namespace: "$app", key: "function-configuration") {
+        jsonValue
+      }
+    }
+  }
+  ```
+
+  ##### Input Query (JavaScript)
+
+  ```graphql
+  query RunInput {
+    cart {
+      cost {
+        totalAmount {
+          amount
+        }
+      }
+    }
+    paymentCustomization {
+      metafield(namespace: "$app", key: "function-configuration") {
+        jsonValue
+      }
+    }
+  }
+  ```
+
+  ##### Input Object (Rust)
+
+  ```json
+  {
+    "cart": {
+      "cost": {
+        "totalAmount": {
+          "amount": "700.00"
+        }
+      }
+    },
+    "paymentCustomization": {
+      "metafield": {
+        "jsonValue": {
+          "minimumAmount": 100.0,
+          "depositMinimumAmount": 500.0
+        }
+      }
+    }
+  }
+  ```
+
+  ##### Input Object (JavaScript)
+
+  ```json
+  {
+    "cart": {
+      "cost": {
+        "totalAmount": {
+          "amount": "700.00"
+        }
+      }
+    },
+    "paymentCustomization": {
+      "metafield": {
+        "jsonValue": {
+          "minimumAmount": 100.0,
+          "depositMinimumAmount": 500.0
+        }
+      }
+    }
+  }
+  ```
+
+  ##### Function Code (Rust)
+
+  ```rust
+  use crate::schema;
+  use shopify_function::prelude::*;
+  use shopify_function::Result;
+
+  #[derive(Deserialize, Default, PartialEq)]
+  #[shopify_function(rename_all = "camelCase")]
+  pub struct Configuration {
+      minimum_amount: Option<f64>,
+      deposit_minimum_amount: Option<f64>,
+  }
+
+  #[shopify_function]
+  fn run(input: schema::run::Input) -> Result<schema::FunctionRunResult> {
+      let no_changes = schema::FunctionRunResult { operations: vec![] };
+
+      let config: &Configuration = match input.payment_customization().metafield() {
+          Some(metafield) => metafield.json_value(),
+          None => return Ok(no_changes),
+      };
+
+      let minimum_amount = config.minimum_amount.unwrap_or(0.0);
+      let deposit_minimum_amount = config.deposit_minimum_amount.unwrap_or(0.0);
+      let cart_total = input.cart().cost().total_amount().amount().0;
+
+      if cart_total >= minimum_amount {
+          let mut net_terms = schema::NetPaymentTerms {
+              due_in_days: 7,
+              deposit: None,
+              issued_at: None,
+          };
+
+          if cart_total >= deposit_minimum_amount {
+              net_terms.deposit = Some(schema::Deposit { percentage: 15.0 });
+          }
+
+          return Ok(schema::FunctionRunResult {
+              operations: vec![schema::DeprecatedOperation::PaymentTermsSet(
+                  schema::PaymentTermsSetOperation {
+                      payment_terms: Some(schema::PaymentTerms::Net(net_terms)),
+                  },
+              )],
+          });
+      }
+
+      Ok(no_changes)
+  }
+  ```
+
+  ##### Performance Cost (Rust)
+
+  17654 instructions
+
+  ##### Function Code (JavaScript)
+
+  ```javascript
+  // @ts-check
+
+  /**
+   * @typedef {import("../generated/api").RunInput} RunInput
+   * @typedef {import("../generated/api").FunctionRunResult} FunctionRunResult
+   * @typedef {import("../generated/api").NetPaymentTerms} NetPaymentTerms
+   */
+
+  /**
+   * @type {FunctionRunResult}
+   */
+  const NO_CHANGES = {
+    operations: [],
+  };
+
+  /**
+   * @param {RunInput} input - The function input containing cart and configuration data
+   * @returns {FunctionRunResult} - The function result containing operations
+   */
+  export function run(input) {
+    const configuration = input.paymentCustomization.metafield?.jsonValue ?? {};
+
+    if (!configuration.minimumAmount) {
+      return NO_CHANGES;
+    }
+
+    const cartTotal = parseFloat(input.cart.cost.totalAmount.amount);
+    const depositMinimumAmount = parseFloat(configuration.depositMinimumAmount);
+
+    /** @type {NetPaymentTerms} */
+    let net_payment_terms = {
+      dueInDays: 7,
+      issuedAt: null,
+      deposit: null
+    };
+
+    if (cartTotal >= depositMinimumAmount) {
+      net_payment_terms = {
+        dueInDays: 7,
+        issuedAt: null,
+        deposit: {
+          percentage: 15.0
+        }
+      };
+    }
+
+    // if cart total is above minimum, set payment terms to "Net 7", without a deposit.
+    // if cart total also exceeds the amount required for a deposit, set a 15% deposit,
+    // with the remaining balance due in 7 days.
+
+    if (cartTotal >= configuration.minimumAmount) {
+      return {
+        operations: [
+          {
+            paymentTermsSet: {
+              paymentTerms: {
+                net: net_payment_terms
+              }
+            }
+          }
+        ]
+      }
+    }
+
+    return NO_CHANGES;
+  };
+  ```
+
+  ##### Performance Cost (JavaScript)
+
+  188754 instructions
+
+  ##### Output JSON (Rust)
+
+  ```json
+  {
+    "operations": [
+      {
+        "paymentTermsSet": {
+          "paymentTerms": {
+            "net": {
+              "dueInDays": 7,
+              "deposit": {
+                "percentage": 15.0
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+  ```
+
+  ##### Output JSON (JavaScript)
+
+  ```json
+  {
+    "operations": [
+      {
+        "paymentTermsSet": {
+          "paymentTerms": {
+            "net": {
+              "dueInDays": 7,
+              "deposit": {
+                "percentage": 15.0
+              },
+              "issuedAt": null
+            }
+          }
+        }
+      }
+    ]
+  }
+  ```
+
+* ### Remove payment terms for B2B buyers
+
+  This example implements a Shopify function that sets no payment terms when the buyer is B2B. If the buyer is D2C, this function is a no-op.
+
+  #### Entrypoint (Rust)
+
+  ```rust
+  use shopify_function::prelude::*;
+  use std::process;
+
+  pub mod run;
+
+  #[typegen("schema.graphql")]
+  pub mod schema {
+      #[query("src/run.graphql")]
+      pub mod run {}
+  }
+
+  fn main() {
+      log!("Please invoke a named export.");
+      process::abort();
+  }
+  ```
+
+  #### purchase.payment-customization.run
+
+  ##### Input Query (Rust)
+
+  ```graphql
+  query Input {
+    cart {
+      buyerIdentity {
+        purchasingCompany {
+          company {
+            id
+          }
+        }
+      }
+    }
+  }
+  ```
+
+  ##### Input Query (JavaScript)
+
+  ```graphql
+  query RunInput {
+    cart {
+      buyerIdentity {
+        purchasingCompany {
+          company {
+            id
+          }
+        }
+      }
+    }
+  }
+  ```
+
+  ##### Input Object (Rust)
+
+  ```json
+  {
+    "cart": {
+      "buyerIdentity": {
+        "purchasingCompany": {
+          "company": {
+            "id": "gid://Shopify/Company/1"
+          }
+        }
+      }
+    }
+  }
+  ```
+
+  ##### Input Object (JavaScript)
+
+  ```json
+  {
+    "cart": {
+      "buyerIdentity": {
+        "purchasingCompany": {
+          "company": {
+            "id": "gid://Shopify/Company/1"
+          }
+        }
+      }
+    }
+  }
+  ```
+
+  ##### Function Code (Rust)
+
+  ```rust
+  use crate::schema;
+  use shopify_function::prelude::*;
+  use shopify_function::Result;
+
+  #[shopify_function]
+  fn run(input: schema::run::Input) -> Result<schema::FunctionRunResult> {
+      let no_changes = schema::FunctionRunResult { operations: vec![] };
+
+      let b2b_customer = input
+          .cart()
+          .buyer_identity()
+          .and_then(|buyer_identity| buyer_identity.purchasing_company())
+          .map(|purchasing_company| purchasing_company.company())
+          .is_some();
+
+      if b2b_customer {
+          return Ok(schema::FunctionRunResult {
+              operations: vec![schema::DeprecatedOperation::PaymentTermsSet(
+                  schema::PaymentTermsSetOperation {
+                      payment_terms: None,
+                  },
+              )],
+          });
+      }
+
+      Ok(no_changes)
+  }
+  ```
+
+  ##### Performance Cost (Rust)
+
+  7741 instructions
+
+  ##### Function Code (JavaScript)
+
+  ```javascript
+  // @ts-check
+
+  /**
+   * @typedef {import("../generated/api").RunInput} RunInput
+   * @typedef {import("../generated/api").FunctionRunResult} FunctionRunResult
+   */
+
+  /**
+   * @type {FunctionRunResult}
+   */
+  const NO_CHANGES = {
+    operations: [],
+  };
+
+  /**
+   * @param {RunInput} input
+   * @returns {FunctionRunResult}
+   */
+  export function run(input) {
+    const b2b_customer = !!input.cart.buyerIdentity?.purchasingCompany?.company;
+
+    if (b2b_customer) {
+      return {
+        operations: [{
+          paymentTermsSet: {
+            paymentTerms: null
+          }
+        }]
+      }
+    }
+
+    return NO_CHANGES;
+  };
+  ```
+
+  ##### Performance Cost (JavaScript)
+
+  122352 instructions
+
+  ##### Output JSON (Rust)
+
+  ```json
+  {
+    "operations": [
+      {
+        "paymentTermsSet": {}
+      }
+    ]
+  }
+  ```
+
+  ##### Output JSON (JavaScript)
+
+  ```json
+  {
+    "operations": [
+      {
+        "paymentTermsSet": {
+          "paymentTerms": null
+        }
+      }
+    ]
+  }
+  ```
+
+* ### Hide gift card payment methods
+
+  This example implements a Shopify function that disables using gift cards for payment.
+
+  #### Entrypoint (Rust)
+
+  ```rust
+  use shopify_function::prelude::*;
+  use std::process;
+
+  pub mod cart_payment_methods_transform_run;
+
+  #[typegen("./schema.graphql")]
+  pub mod schema {
+      #[query("src/cart_payment_methods_transform_run.graphql")]
+      pub mod run {}
+  }
+
+  fn main() {
+      log!("Please invoke a named export.");
+      process::abort();
+  }
+  ```
+
+  #### cart.payment-methods.transform.run
+
+  ##### Input Query (Rust)
+
+  ```graphql
+  query Input {
+    paymentMethods {
+      id
+      name
+    }
+  }
+  ```
+
+  ##### Input Query (JavaScript)
+
+  ```graphql
+  query CartPaymentMethodsTransformRunInput {
+    paymentMethods {
+      id
+      name
+    }
+  }
+  ```
+
+  ##### Input Object (Rust)
+
+  ```json
+  {
+    "paymentMethods": [
+      {
+        "id": "gid://shopify/PaymentCustomizationPaymentMethod/0",
+        "name": "(for testing) Bogus Gateway"
+      },
+      {
+        "id": "gid://shopify/PaymentCustomizationPaymentMethod/1",
+        "name": "Deferred"
+      },
+      {
+        "id": "gid://shopify/PaymentCustomizationPaymentMethod/2",
+        "name": "Bank Deposit"
+      },
+      {
+        "id": "gid://shopify/PaymentCustomizationPaymentMethod/3",
+        "name": "Gift card"
+      }
+    ]
+  }
+  ```
+
+  ##### Input Object (JavaScript)
+
+  ```json
+  {
+    "paymentMethods": [
+      {
+        "id": "gid://shopify/PaymentCustomizationPaymentMethod/0",
+        "name": "(for testing) Bogus Gateway"
+      },
+      {
+        "id": "gid://shopify/PaymentCustomizationPaymentMethod/1",
+        "name": "Deferred"
+      },
+      {
+        "id": "gid://shopify/PaymentCustomizationPaymentMethod/2",
+        "name": "Bank Deposit"
+      },
+      {
+        "id": "gid://shopify/PaymentCustomizationPaymentMethod/3",
+        "name": "Gift card"
+      }
+    ]
+  }
+  ```
+
+  ##### Function Code (Rust)
+
+  ```rust
+  use crate::schema;
+  use shopify_function::prelude::*;
+  use shopify_function::Result;
+
+  #[shopify_function]
+  fn cart_payment_methods_transform_run(
+      input: schema::run::Input,
+  ) -> Result<schema::CartPaymentMethodsTransformRunResult> {
+      // Find payment methods that contain "Gift card" in their name
+      let operations: Vec<schema::Operation> = input
+          .payment_methods()
+          .iter()
+          .filter(|method| method.name().to_ascii_lowercase().contains("gift card"))
+          .map(|method| {
+              schema::Operation::PaymentMethodHide(schema::PaymentMethodHideOperation {
+                  payment_method_id: method.id().to_string(),
+                  placements: None,
+              })
+          })
+          .collect();
+
+      Ok(schema::CartPaymentMethodsTransformRunResult { operations })
+  }
+  ```
+
+  ##### Performance Cost (Rust)
+
+  23929 instructions
+
+  ##### Function Code (JavaScript)
+
+  ```javascript
+  // @ts-check
+
+  /**
+   * @typedef {import("../generated/api").CartPaymentMethodsTransformRunInput} CartPaymentMethodsTransformRunInput
+   * @typedef {import("../generated/api").CartPaymentMethodsTransformRunResult} CartPaymentMethodsTransformRunResult
+   * @typedef {import("../generated/api").PaymentMethodHideOperation} PaymentMethodHideOperation
+   * @typedef {import("../generated/api").Operation} Operation
+   */
+
+  /**
+   * @param {CartPaymentMethodsTransformRunInput} input
+   * @returns {CartPaymentMethodsTransformRunResult}
+   */
+  export function cartPaymentMethodsTransformRun(input) {
+    // Find payment methods that contain "Gift card" in their name
+    const operations = (input.paymentMethods || [])
+      .filter(method => method.name.toLowerCase().includes("gift card"))
+      .map(method => ({
+        paymentMethodHide: {
+          paymentMethodId: method.id
+        }
+      }));
+
+    return {
+      operations
+    };
+  }
+  ```
+
+  ##### Performance Cost (JavaScript)
+
+  180589 instructions
+
+  ##### Output JSON (Rust)
+
+  ```json
+  {
+    "operations": [
+      {
+        "paymentMethodHide": {
+          "paymentMethodId": "gid://shopify/PaymentCustomizationPaymentMethod/3"
+        }
+      }
+    ]
+  }
+  ```
+
+  ##### Output JSON (JavaScript)
+
+  ```json
+  {
+    "operations": [
+      {
+        "paymentMethodHide": {
+          "paymentMethodId": "gid://shopify/PaymentCustomizationPaymentMethod/3"
+        }
+      }
+    ]
+  }
+  ```
+
+***
+
+## Plan and geographical restrictions
+
+Plan and geographical restrictions apply. [Learn more](https://help.shopify.com/manual/checkout-settings/checkout-customization#understanding-payment-method-customizations).
+
+**Note:**
+
+When the Payment Customization API usage is restricted, the function input still contains all payment methods. However, output operations that target restricted payment methods don't take effect at checkout.
+
+***
+
+## Payment method naming rules
+
+You can't rename payment methods that have logos as a name, such as Shop Pay, Apple Pay and Google Pay. This also includes all wallets and the Shopify native gift card field.
+
+***
+
+## Shop Pay integration
+
+In Shop Pay, payment customization functions only apply operations on the native gift card field and not on other payment methods.
+
+***
+
+## Wallet payment methods
+
+You can remove wallets from the Express or payment method section of checkout, but you can't reorder them.
+
+***
+
+## Additional resources
+
+Explore comprehensive guides and references to help you build, deploy, and optimize your Shopify Functions.
+
+### Working with Functions
+
+These guides cover essential concepts for building Shopify Functions effectively. Learn how functions process data, execute during checkout, and handle versioning, localization, and external APIs.
+
+[Function anatomy\
+\
+](https://shopify.dev/docs/api/functions/current#function-anatomy)
+
+[Explore how functions process input data and generate operations.](https://shopify.dev/docs/api/functions/current#function-anatomy)
+
+[Execution order in checkout\
+\
+](https://shopify.dev/docs/api/functions/current#function-execution-order-in-checkout)
+
+[Learn when Function APIs execute during the checkout process.](https://shopify.dev/docs/api/functions/current#function-execution-order-in-checkout)
+
+[Schema and versioning\
+\
+](https://shopify.dev/docs/api/functions/current#graphql-schema-and-versioning)
+
+[Understand schema versioning, release and upgrade requirements.](https://shopify.dev/docs/api/functions/current#graphql-schema-and-versioning)
+
+[API availability\
+\
+](https://shopify.dev/docs/api/functions/current#api-availability)
+
+[Check which Shopify plans support functions in custom apps.](https://shopify.dev/docs/api/functions/current#api-availability)
+
+[Localization practices\
+\
+](https://shopify.dev/docs/apps/build/functions/localization-practices-shopify-functions)
+
+[Localize functions for international markets.](https://shopify.dev/docs/apps/build/functions/localization-practices-shopify-functions)
+
+### Performance and troubleshooting
+
+Optimize function performance and ensure reliable operation from development through production deployment.
+
+[Resource limits and performance\
+\
+](https://shopify.dev/docs/api/functions/current#resource-limits-and-performance)
+
+[Understand function performance requirements and resource limitations for optimal execution.](https://shopify.dev/docs/api/functions/current#resource-limits-and-performance)
+
+[Test and debug Shopify Functions\
+\
+](https://shopify.dev/docs/apps/build/functions/test-debug-functions)
+
+[Explore comprehensive testing workflows from local development to production deployment.](https://shopify.dev/docs/apps/build/functions/test-debug-functions)
+
+[Considerations for programming languages\
+\
+](https://shopify.dev/docs/apps/build/functions/programming-languages)
+
+[Choose languages that compile to WebAssembly for optimal function performance.](https://shopify.dev/docs/apps/build/functions/programming-languages)
+
+[Monitoring and handling errors in production\
+\
+](https://shopify.dev/docs/apps/build/functions/monitoring-and-errors)
+
+[Master testing and debugging workflows for reliable function development.](https://shopify.dev/docs/apps/build/functions/monitoring-and-errors)
+
+***

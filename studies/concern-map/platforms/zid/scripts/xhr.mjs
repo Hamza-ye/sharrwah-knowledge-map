@@ -1,0 +1,11 @@
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
+const { chromium } = require('/opt/node22/lib/node_modules/playwright');
+const url = process.argv[2];
+const b = await chromium.launch();
+const ctx = await b.newContext({ userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36', extraHTTPHeaders: { 'Accept-Language': 'en,ar;q=0.8' } });
+const p = await ctx.newPage();
+p.on('response', r => { const t = r.headers()['content-type'] || ''; if (/json/.test(t)) console.log('JSON', r.status(), r.url().slice(0, 200)); });
+await p.goto(url, { waitUntil: 'domcontentloaded', timeout: 45000 });
+await p.waitForLoadState('networkidle', { timeout: 12000 }).catch(() => {});
+await b.close();

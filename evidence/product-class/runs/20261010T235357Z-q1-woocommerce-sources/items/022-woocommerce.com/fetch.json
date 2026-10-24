@@ -1,0 +1,18 @@
+{
+ "n": 22,
+ "url": "https://woocommerce.com/document/configuring-woocommerce-settings/accounts-and-privacy/",
+ "dir": "items/022-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:00Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/configuring-woocommerce-settings/accounts-and-privacy/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 46062,
+ "cited_in": [
+  "WC-S-0881"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "fde3ddbe804c5ad97a54910ec2f775f1c28403b5cea3e0c643f705468d6db9ad",
+ "raw_ext": "html"
+}

@@ -1,0 +1,517 @@
+Skip to main content
+Apps
+Storefronts
+Agents
+References
+Changelog
+Ask assistant
+/
+Help
+•
+Log in
+Collapse sidebar
+Apps
+Overview
+BUILDING AND DEPLOYING APPS
+Scaffold an app
+Build an app
+Deployment
+Distribution
+DEV TOOLS
+Shopify AI Toolkit
+Shopify CLI
+Dev Dashboard
+BUILDING BLOCKS
+APIs
+Overview
+GraphQL Admin API
+API exploration
+Rate limits
+Implementing idempotency
+Bulk operations
+Authentication
+Custom data
+Events and webhooks
+Extensions
+Functions
+DESIGN AND QUALITY
+Design guidelines
+Security
+App performance
+Built for Shopify
+APP SURFACES
+Admin
+App Home
+Checkout
+Customer accounts
+Online store
+Point of Sale
+USE CASES
+AI and agents
+Analytics
+B2B
+Flow
+Global markets
+Marketing and web pixels
+Orders and fulfillment
+Payments
+Products and pricing
+Sales channels
+SELLING AND GROWING YOUR APP
+Shopify App Store
+Billing
+Marketing and growth
+Implementing idempotency
+Install AI Toolkit
+Ask about this page
+Copy MD
+
+This page provides detailed guidance on implementing idempotency on the client-side when calling certain GraphQL Admin API mutations.
+
+The information on this page, in particular, implementation-specific details such as error codes and the retention window, only applies to mutations that support the @idempotent directive, because idempotency was built into these mutations in a similar way. Learn more about idempotency directive syntax.
+
+Anchor to Understanding idempotency
+Understanding idempotency
+Anchor to Core principles
+Core principles
+
+Understanding these two principles helps you implement idempotency correctly:
+
+Principle 1: Distinct requests need different idempotency keys
+
+Each distinct request should have its own unique idempotency key. We strongly recommend using UUIDs to ensure uniqueness.
+
+Principle 2: Duplicate requests must use the same idempotency key
+
+For the purposes of this documentation, a 'duplicate request' is one that has the same mutation variables and is not intended to be a separate operation from the original request. Duplicate requests must reuse the same idempotency key to enable deduplication and concurrency protection.
+
+What qualifies as a duplicate request:
+
+Accidental double-clicks that send additional requests with identical parameters.
+Network retries with the exact same parameters after a timeout or connection failure.
+Job retries that resubmit the same operation after an initial failure.
+
+What doesn't qualify as a duplicate request:
+
+A request whose mutation variables are exactly identical to those of the first request isn't a duplicate request if it's intended to result in a separate operation being performed. Consider this scenario:
+
+The client makes a first request to increment their inventory by +2 due to having received inventory from supplier A.
+The client makes a second request with identical mutation variables to increment their inventory by +2, due to having received inventory from supplier B.
+The intent for these two requests is different: they are meant to be performing separate operations. Here, the client isn't retrying the first inventory adjustment, they're trying to create a second, entirely new inventory adjustment.
+The onus is on the client to decide when to use identical or different idempotency keys, because only the client is aware if they're intending to perform a separate operation or not.
+Common mistake
+
+Avoid generating a new random UUID every time you call the mutation. This violates Principle 2 and prevents proper idempotency protection, because every request is treated as distinct.
+
+Anchor to How idempotency protection is implemented on the server-side
+How idempotency protection is implemented on the server-side
+
+Shopify tracks idempotency keys for 24 hours from the original request. During this window, all duplicate requests with the same idempotency key are handled according to the original request's status:
+
+Concurrent requests
+
+When multiple duplicate requests arrive in quick succession while the first request is still processing, Shopify returns IDEMPOTENCY_CONCURRENT_REQUEST to subsequent requests instead of processing them. This protects against race conditions and duplicate operations.
+
+Successful request retries
+
+After the original request completes successfully, any duplicate requests with the same idempotency key receive the cached GraphQL response without reprocessing the operation. This ensures safe retries without duplication.
+
+Note that on rare occasions, the cached GraphQL response may not be the same as the original one, as the cached response is constructed from database records, which may have changed since the original successful response. The below scenario illustrates this:
+
+Example scenario:
+
+Client A calls the locationActivate mutation with the idempotency key 'abc'. The location is successfully activated, so in the response, isActive is true.
+Client B calls the locationDeactivate mutation with the idempotency key 'def'. The same location is successfully deactivated, and the database records are updated accordingly.
+Client A calls the locationActivate mutation with the idempotency key 'abc'. Since the idempotency key is the same, no activation logic will be triggered, and a cached response will be returned instead.
+Since this cached response is constructed from the current database state, isActive will be false in the cached response.
+
+Failed request retries
+
+When the original request fails to process, duplicate requests might receive either:
+
+IDEMPOTENCY_CONCURRENT_REQUEST if the original request is stalled or still marked as in-progress.
+An error with a suitable message for example, "The refund couldn't be processed."
+
+24-hour retention window
+
+After 24 hours, idempotency keys expire and are no longer recognized as duplicates. Thus, retries that occur beyond this window (such as long-delayed job retries), will not have idempotency protection, and will be treated as separate operations.
+
+Anchor to Best practices for using idempotency keys
+Best practices for using idempotency keys
+
+Following these best practices ensures reliable, safe retries in your application.
+
+Anchor to Generating idempotency keys
+Generating idempotency keys
+
+Use UUIDs (v4 or v7): Generate a random universally unique identifier for each unique operation.
+
+Copy
+1
+2
+3
+// Example: JavaScript with crypto.randomUUID()
+const idempotencyKey = crypto.randomUUID();
+// Result: "3f5b6ebf-143c-4da5-8d0f-fb8553bfd85d"
+Copy
+1
+2
+3
+# Example: Ruby with SecureRandom
+idempotency_key = SecureRandom.uuid
+# Result: "3f5b6ebf-143c-4da5-8d0f-fb8553bfd85d"
+
+For deterministic scenarios (background jobs, services): Suppose you have a collection of parameters (that is, mutation variables) and stable identifiers (for example, the unique id of a retrying job) which, taken together, uniquely identify distinct requests. In this case, you can use UUID v5 to generate deterministic keys from using those parameters/identifiers as inputs:
+
+Copy
+1
+2
+3
+4
+5
+6
+7
+8
+// Example: Generate deterministic key for a job retry
+import { v5 as uuidv5 } from 'uuid';
+
+
+const namespace = '6ba7b810-9dad-11d1-80b4-00c04fd430c8'; // Your app namespace
+const jobParams = `${jobId}-${JSON.stringify(mutationVariables)}`;
+const idempotencyKey = uuidv5(jobParams, namespace);
+
+
+// Same job + variables always produces the same key
+
+This approach ensures duplicate job retries use the same idempotency key while different jobs or parameters produce unique keys.
+
+Anchor to Storing idempotency keys
+Storing idempotency keys
+
+Before sending the request, you should generally persist the idempotency key along with the operation intent. You should come up with the best persistence strategy that aligns with your application's architecture.
+
+Why persist first: If your application crashes after sending the request but before recording the key, you risk losing the ability to safely retry or verify the operation succeeded.
+
+Note
+
+If you're generating the idempotency key deterministically, then you don't need to persist the idempotency key—you can just recreate it from the same parameters / stable identifiers if you want to reuse it.
+
+For web and mobile apps: You can persist the key by attaching the idempotency key to the page or screen lifecycle:
+
+Copy
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+// Example: React component managing idempotency
+function InventoryAdjustmentForm() {
+  // Generate key on component mount, persists during page lifecycle
+  const idempotencyKeyRef = useRef(crypto.randomUUID());
+
+
+  const handleSubmit = async (formData) => {
+    try {
+      await adjustInventory(formData, idempotencyKeyRef.current);
+      // Success - regenerate key for next submission
+      idempotencyKeyRef.current = crypto.randomUUID();
+    } catch (error) {
+      // Error - keep same key for retry on this page
+      handleError(error);
+    }
+  };
+
+
+  return <form onSubmit={handleSubmit}>...</form>;
+}
+
+This pattern ensures that additional requests sent (due to say, double-clicking) before receiving a successful response all use the same idempotency key, allowing the server to deduplicate them. After a successful response, the key regenerates so the next submission is treated as a new operation.
+
+Anchor to When to generate a new key
+When to generate a new key
+
+Generate a new idempotency key when:
+
+Starting a genuinely new operation (different intent).
+Modifying any request parameters from the original.
+
+Reuse the same idempotency key when:
+
+Retrying after a backend processing failure, a network failure or a timeout.
+Retrying after receiving an IDEMPOTENCY_CONCURRENT_REQUEST error.
+Resubmitting an operation you're unsure has completed, in order to check on its status
+Tip
+
+In practice, what the above guidelines usually translates to is this: "If you receive a successful response from the backend, generate a new key (so you can use it in subsequent genuinely new operations). If you receive a failed response from the backend, reuse the same key (so you can safely retry)".
+
+If you are certain you want to retry the request as a separate operation following a failed response, and have verified that this won't result in unintended duplicate processing, you may regenerate a new key after a failed response.
+
+Anchor to Using idempotency with bulk operations
+Using idempotency with bulk operations
+
+You can use the @idempotent directive with bulk mutation operations. When you do, idempotency is applied per row in your JSONL input file, not per the entire bulk operation. Each row in the JSONL file represents a separate mutation call, and each one needs its own unique idempotency key. Don't use the same key for every row — reusing a single key across rows causes rows after the first to be treated as duplicates.
+
+The same best practices for idempotency keys apply to bulk operations. If you retry the bulk operation, reuse the same keys for the same rows. If you use deterministic key generation (UUID v5), you can regenerate identical keys from the same input parameters without persisting them.
+
+To pass the idempotency key, declare it as a variable in the mutation string and provide its value in each line of the JSONL file, alongside the other mutation arguments.
+
+Anchor to Example: Bulk inventory adjustment with idempotency
+Example: Bulk inventory adjustment with idempotency
+Anchor to Step 1: Define the mutation string with a variable for the key
+Step 1: Define the mutation string with a variable for the key
+
+When you pass the mutation to bulkOperationRunMutation, use a variable for the @idempotent directive's key argument:
+
+Mutation string
+Copy
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+mutation call($input: InventoryAdjustQuantitiesInput!, $idempotencyKey: String!) {
+  inventoryAdjustQuantities(input: $input) @idempotent(key: $idempotencyKey) {
+    inventoryAdjustmentGroup {
+      id
+    }
+    userErrors {
+      field
+      message
+      code
+    }
+  }
+}
+Anchor to Step 2: Include the idempotency key in each JSONL row
+Step 2: Include the idempotency key in each JSONL row
+
+Each line in the JSONL file provides the idempotencyKey variable alongside the input variable. Every row must have its own unique key:
+
+JSONL input file
+Copy
+1
+2
+3
+{ "input": { "reason": "correction", "name": "available", "changes": [{ "delta": 1, "inventoryItemId": "gid://shopify/InventoryItem/1", "locationId": "gid://shopify/Location/1" }] }, "idempotencyKey": "a1b2c3d4-e5f6-7890-abcd-ef1234567890" }
+{ "input": { "reason": "correction", "name": "available", "changes": [{ "delta": 5, "inventoryItemId": "gid://shopify/InventoryItem/2", "locationId": "gid://shopify/Location/1" }] }, "idempotencyKey": "b2c3d4e5-f6a7-8901-bcde-f12345678901" }
+{ "input": { "reason": "correction", "name": "available", "changes": [{ "delta": -3, "inventoryItemId": "gid://shopify/InventoryItem/3", "locationId": "gid://shopify/Location/2" }] }, "idempotencyKey": "c3d4e5f6-a7b8-9012-cdef-123456789012" }
+Anchor to Step 3: Run the bulk mutation
+Step 3: Run the bulk mutation
+POST https://{shop}.myshopify.com/admin/api/{api_version}/graphql.json
+Copy
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+mutation {
+  bulkOperationRunMutation(
+    mutation: "mutation call($input: InventoryAdjustQuantitiesInput!, $idempotencyKey: String!) { inventoryAdjustQuantities(input: $input) @idempotent(key: $idempotencyKey) { inventoryAdjustmentGroup { id } userErrors { field message code } } }",
+    stagedUploadPath: "tmp/21759409/bulk/89e620e1-0252-43b0-8f3b-3b7075ba4a23/bulk_op_vars"
+  ) {
+    bulkOperation {
+      id
+      status
+    }
+    userErrors {
+      field
+      message
+    }
+  }
+}
+Anchor to Understanding idempotency errors
+Understanding idempotency errors
+
+When working with idempotent requests, you might encounter specific error codes that help you understand what went wrong and how to proceed. These errors are typically returned in the userErrors array with a code field that identifies the specific idempotency issue.
+
+Anchor to IDEMPOTENCY_KEY_PARAMETER_MISMATCH
+IDEMPOTENCY_KEY_PARAMETER_MISMATCH
+
+What it means: You're attempting to reuse an idempotency key with different request parameters than the original request.
+
+Error response:
+
+Copy
+1
+2
+3
+4
+5
+6
+7
+8
+9
+{
+  "userErrors": [
+    {
+      "field": null,
+      "message": "The same idempotency key cannot be used with different operation parameters.",
+      "code": "IDEMPOTENCY_KEY_PARAMETER_MISMATCH"
+    }
+  ]
+}
+
+What causes this: Shopify fingerprints each request's parameters. If you retry with the same idempotency key but different inputs (different quantities, different item IDs, and so on), this error occurs. This error indicates incorrect usage of idempotency on the client side- it might be caused by the client incorrectly implementing idempotency, so it's failing to regenerate a unique idempotency key after receiving a successful GraphQL response from the original request.
+
+How to handle:
+
+If you intended for the second request with different parameters to be processed as a separate operation, you should generate a new idempotency key for the modified request.
+If you intended for the second request to be a retry of the original request, you should change the parameters back to exactly match what they were originally, and retry the original request with the same idempotency key.
+Note
+
+By default, request parameters include all input fields. Usually, changing any value—even a single quantity or ID—requires a new idempotency key.
+
+However, for some mutations, parameters like timestamps may be omitted from the fingerprint, so it's acceptable to reuse the idempotency key even if the timestamp changes. If there are parameters that do not form part of the fingerprinting, these should be mentioned in the mutation description.
+
+Additionally, parameter order can affect fingerprinting. Ensure your client consistently orders input fields to avoid unexpected parameter mismatches.
+
+Anchor to IDEMPOTENCY_CONCURRENT_REQUEST
+IDEMPOTENCY_CONCURRENT_REQUEST
+
+What it means: Another request with the same idempotency key is currently being processed.
+
+Error response:
+
+Copy
+1
+2
+3
+4
+5
+6
+7
+8
+9
+{
+  "userErrors": [
+    {
+      "field": null,
+      "message": "This request is currently in progress, please try again.",
+      "code": "IDEMPOTENCY_CONCURRENT_REQUEST"
+    }
+  ]
+}
+
+What causes this: Your application made multiple simultaneous requests with the same idempotency key before the first request completed.
+
+How to handle: Wait briefly (exponential backoff recommended) and retry with the same idempotency key. The original request completes, and subsequent retries receive the cached result.
+
+Anchor to Miscellaneous 'NOT_FOUND' errors
+Miscellaneous 'NOT_FOUND' errors
+
+Errors in this category are domain-specific 'Not Found' errors such as LOCATION_NOT_FOUND, SHIPMENT_NOT_FOUND or PURCHASE_ORDER_NOT_FOUND.
+
+What it means: The business data that was associated with, or created by, your original request has been deleted from the database.
+
+Error response:
+
+Copy
+1
+2
+3
+4
+5
+6
+7
+8
+9
+{
+  "userErrors": [
+    {
+      "field": null,
+      "message": "The location couldn't be found",
+      "code": "LOCATION_NOT_FOUND"
+    }
+  ]
+}
+
+What causes this: Receiving this error indicates that the original request was successfully completed, but the backend business data associated with the original request was subsequently deleted by a separate process.
+
+How to handle: The client is working with stale data, so they should verify the system state before proceeding. If they are absolutely sure that they want to recreate the deleted record, then they should call the mutation again with a different idempotency key.
+
+Example scenario:
+
+Shop owner A schedules an inventory adjustment of +50 units on his app using idempotency key abc-123 because he thinks he'll be receiving new inventory next week.
+The request completes successfully, creating a scheduled change database record, but Owner A doesn't receive a successful response on his app due to network problems.
+Soon after, Shop Owner B sees that scheduled change in her app and manually cancels it because she knows the delivery next week is no longer happening due to a product shortage.
+Then, Shop Owner A retries the request because he didn't get a successful response the first time.
+Shop Owner A gets the 'Not Found' error.
+Rather than retrying the request with a different idempotency key, he should investigate the system state—this would lead him to discover that the scheduled change was created, but then manually deleted by Owner B for a valid reason, so he wouldn't retry the request.
+Anchor to List of mutations supporting the ,[object Object], directive
+List of mutations supporting the @idempotent directive
+
+This list was last updated 2 February 2026. To check if a mutation supports the @idempotent directive on a given API version, check the mutation descriptions using the following links (or equivalent links, if the mutation you want to check is not in the list). If a mutation supports the directive, this is explicitly mentioned in the description.
+
+inventoryActivate
+inventoryAdjustQuantities
+inventoryMoveQuantities
+inventorySetOnHandQuantities
+inventorySetQuantities
+inventorySetScheduledChanges
+inventoryShipmentAddItems
+inventoryShipmentCreate
+inventoryShipmentCreateInTransit
+inventoryShipmentReceive
+inventoryTransferCreate
+inventoryTransferCreateAsReadyToShip
+inventoryTransferDuplicate
+inventoryTransferSetItems
+locationActivate
+locationDeactivate
+refundCreate
+Was this page helpful?
+Yes
+No
+Understanding idempotency
+Best practices for using idempotency keys
+Using idempotency with bulk operations
+Understanding idempotency errors
+List of mutations supporting the @idempotent directive
+Updates
+Developer changelog
+Shopify Editions
+Business growth
+Shopify Partners Program
+Shopify App Store
+Shopify Academy
+Legal
+Terms of service
+API terms of use
+Privacy policy
+Partners Program Agreement
+Shopify
+About Shopify
+Shopify Plus
+Careers
+Investors
+Press and media
+Assistant

@@ -1,0 +1,258 @@
+Skip to Content
+Solutions
+Start
+Start your business
+.
+Build your brand
+Create your website
+.
+Online store editor
+Customize your store
+.
+Store themes
+Find business apps
+.
+Shopify app store
+Own your site domain
+.
+Domains & hosting
+Explore free business tools
+.
+Tools to run your business
+Sell
+Sell your products
+.
+Sell online or in person
+Check out customers
+.
+World-class checkout
+Sell online
+.
+Grow your business online
+Sell across channels
+.
+Reach millions of shoppers and boost sales
+Sell globally
+.
+International sales
+Sell wholesale & direct
+.
+Business-to-business (B2B)
+Market
+Market your business
+.
+Reach & retain customers
+Market across social
+.
+Social media integrations
+Chat with customers
+.
+Shopify Inbox
+Nurture customers
+.
+Shopify Messaging
+Know your audience
+.
+Gain customer insights
+Manage
+Manage your business
+.
+Track sales, orders & analytics
+Measure your performance
+.
+Analytics and Reporting
+Manage your stock & orders
+.
+Inventory & order management
+Automate your business
+.
+Shopify Flow
+Shopify Developers
+.
+Build with Shopify's powerful APIs
+Plus
+.
+A commerce solution for growing digital brands
+All Products
+.
+Explore all Shopify products & features
+Pricing
+Resources
+Help and support
+Help and support
+.
+Get 24/7 support
+Business courses
+.
+Learn from proven experts
+Popular topics
+What is Shopify?
+.
+How our commerce platform works
+Essential tools
+Business name generator
+.
+Logo maker
+.
+Stock photography
+.
+QR code generator
+.
+What’s new
+Changelog
+.
+Your source for recent updates
+Newsroom
+.
+All company news and press releases
+Engineering Blog
+AI & Machine Learning
+Mobile
+Infrastructure
+Culture
+Latest
+More topics
+Security
+Developer Tooling
+Data Science Engineering
+Search
+BLOG|DEVELOPMENT
+How We Enable Two-Day Delivery in the Shopify Fulfillment Network
+
+A simplified overview of how we built two-day delivery in the Shopify Fulfillment Network (SFN).
+
+Engineering at Shopify
+
+We’re hiring
+
+See open roles
+
+Merchants sign up for Shopify Fulfillment Network (SFN) to save time on storing, packing, and shipping their merchandise, which is distributed and balanced across our network of Shopify-certified warehouses throughout North America. We optimize the placement of inventory so it’s closer to buyers, saving on shipping time, costs, and carbon emissions.
+
+Recently, SFN also made it easier and more affordable for merchants to offer two-day delivery  across the United States. We consider many real-world factors to provide accurate delivery dates, optimizing for sustainable ground shipment methods and low cost.
+
+A Platform Solution
+
+As with most new features at Shopify, we couldn’t just build a custom solution for SFN. Shopify is an extensible platform with a rich ecosystem of apps that solve complex merchant problems. Shopify Fulfillment Network is just one of the many third-party logistics (3PL) solutions available to merchants. 
+
+This was a multi-team initiative. One team built the delivery date platform in the core of Shopify, consisting of a new set of GraphQL APIs that any 3PL can use to upload their delivery dates to the Shopify platform. Another team integrated the delivery dates into the Shopify storefront, where they are shown to buyers on the product details page and at checkout.  A third team built the system to calculate and upload SFN delivery dates to the core platform. SFN is an app that merchants install in their shops, in the same way other 3PLs interact with the Shopify platform. The SFN app calls the new delivery date APIs to upload its own delivery dates to Shopify. For accuracy, the SFN delivery dates are calculated using network, carrier and product data. Let’s take a closer look at these inputs to the delivery date.
+
+Four Factors That Determine Delivery Date
+
+There are many factors to predict when a package will leave the warehouse, and how long it will spend in transport to the destination address. Each 3PL has its own particular considerations, and the Shopify platform is flexible enough to support them all. Requiring them to conform to fine-grained platform primitives such as operating days and capacity or processing and transit times would only result in loss of fidelity of their particular network and processes.
+
+With that in mind, we let 3PLs populate the platform with their pre-computed delivery dates that Shopify surfaces to buyers on the product details page and checkout. The 3PL has full control over all the factors that affect their delivery dates. Let’s take a look at some of these factors.
+
+1. Proximity to the Destination
+
+The time required for delivery is dependent on the distance the package must travel to arrive at its destination. Usually, the closer the inventory is to the destination, the faster the delivery. This means that SFN delivery dates depend on specific inventory availability throughout the network. 
+
+2. Heavy, Bulky, or Dangerous Goods
+
+Some carrier services aren’t applicable to merchandise that exceeds a specific weight or dimensions. Others can’t be used to transport hazardous materials. The delivery date we predict for such items must be based on a shipping carrier service that can meet the requirements.
+
+3. Time Spent at Fulfillment Centers
+
+Statutory holidays and warehouse closures affect when the package can be ready for shipment. Fulfillment centers have regular operating calendars and sometimes exceptional circumstances can force them to close, such as severe weather events.
+
+On any given operating day, warehouse staff need time to pick and pack items into packages for shipment. There’s also a physical limit to how many packages can be processed in a day. Again, exceptional circumstances such as illness can reduce the staff available at the fulfillment center, reducing capacity and increasing processing times.
+
+4. Time Spent in the Hands of Shipping Carriers
+
+In SFN, shipping carriers such as UPS and USPS are used to transport packages from the warehouse to their destination. Just like the warehouses, shipping carriers have their own holidays and closures that affect when the package can be picked up, transported, and delivered. These are modeled as carrier transit days, when packages are moved between hubs in the carrier’s own network, and delivery days, when packages are taken from the last hub to the final delivery address.
+
+Shipping carriers send trucks to pick up packages from the warehouse at scheduled times of the day. Orders that are made after the last pickup for the day have to wait until the next day to be shipped out. Some shipping carriers only pick up from the warehouse if there are enough packages to make it worth their while. Others impose a limit on the volume of packages they can take away from the warehouse, according to their truck dimensions. These capacity limits influence our choice of carrier for the package.
+
+Shipping carriers also publish the expected number of days it takes for them to transport a package from the warehouse to its destination (called Time in Transit). The first transit day is the day after pickup, and the last transit day is the delivery day. Some carriers deliver on Saturdays even though they won’t transport the package within their network on a Saturday.
+
+Putting It All Together
+
+Together, all of these factors are considered when we decide which fulfillment center should process a shipment and which shipping carrier service to use to transport it to its final destination. At regular intervals, we select a fulfillment center and carrier service that optimizes for sustainable two-day delivery for every merchant SKU to every US zip code. From this, we upload pre-calculated schedules of delivery dates to the Shopify platform.
+
+That’s a Lot of Data
+
+It’s a lot of data, but much of it can be shared between merchant SKUs. Our strategy is to produce multiple schedules, each one reflecting the delivery dates for inventory available at the same set of fulfillment centers and with similar characteristics such as weight and dimensions. Each SKU is mapped to a schedule, and SKUs from different shops can share the same schedule.
+
+Example mapping of SKUs to schedules of delivery dates
+
+In this example, SKU-1.2 from Shop 1 and SKU-3.1 from Shop 3 share the same schedule of delivery dates for heavy items stocked in both California and New York. If an order is placed today by 4pm EST for SKU-1.2 or SKU-3.1, shipping to zip code 10019 in New York, it will arrive on June 10. Likewise, if an order is placed today for SKU-1.2 or SKU-3.1 by 3pm PST, shipping to zip code 90002 in California, it will arrive on June 11.
+
+Looking Up Delivery Dates in Real Time
+
+When Shopify surfaces a delivery date on a product details page or at checkout, it’s a direct, fast lookup (under 100 ms) to find the pre-computed date for that item to the destination address. This is because the SFN app uploads pre-calculated schedules of delivery dates to the Shopify platform and maps each SKU to a schedule using the delivery date APIs.  
+
+System overview
+
+The date the buyer sees at checkout is sent back to SFN during order fulfillment, where it’s used to ensure that the order is routed to a warehouse and shipping label that meets the delivery date.
+
+There you have it, a highly simplified overview of how we built two-day delivery in the SFN.
+
+Learn More About SFN
+
+Spin Cycle: Shopify's SFN Team Overcomes a Cloud-Development Spiral
+
+Wherever you are, your next journey starts here! If building systems from the ground up to solve real-world problems interests you, our Engineering blog has stories about other challenges we have encountered. Intrigued? Visit our Engineering career page to find out about our open positions and learn about Digital by Design.
+
+LD
+by
+Linda Damus
+Published on Aug 18, 2022
+SHARE ARTICLE
+Facebook
+Twitter
+LinkedIn
+by
+Linda Damus
+Published on Aug 18, 2022
+• 6 minute read
+
+DEVELOPMENT
+Introducing Ruvy
+DEVELOPER TOOLING
+Building a ShopifyQL Code Editor
+
+APPS
+Shopify’s platform is the Web platform
+DEVELOPMENT
+The Engineering Story Behind Flex Comp
+WORK FROM ANYWHERE
+WITH SHOPIFY
+
+See our open roles and learn more about our digital by design culture.
+
+See open roles
+Shopify
+About
+Careers
+Investors
+Press and Media
+Partners
+Affiliates
+Legal
+Service status
+Support
+Merchant Support
+Shopify Help Center
+Hire a Partner
+Shopify Community
+Developers
+Shopify.dev
+API Documentation
+Dev Degree
+Products
+Shop
+Shop Pay
+Shopify for Enterprise
+Global Impact
+Sustainability
+Build Black
+Accessibility
+Research
+Solutions
+Online Store Builder
+Website Builder
+Ecommerce Website
+Terms of service
+Privacy policy
+Sitemap
+Your Privacy Choices

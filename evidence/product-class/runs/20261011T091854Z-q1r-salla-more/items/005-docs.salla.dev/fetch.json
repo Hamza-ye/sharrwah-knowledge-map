@@ -1,0 +1,18 @@
+{
+ "n": 5,
+ "url": "https://docs.salla.dev/ecommerc-events/overview.md",
+ "dir": "items/005-docs.salla.dev",
+ "fetched_at": "2026-10-11T09:19:00Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.salla.dev/ecommerc-events/overview.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 1973,
+ "cited_in": [
+  "SA-S-5148"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "d55a08903d274fb24a0ea34e1321a2ef18c6b147574df1a01a4c1c2b79194745",
+ "raw_ext": "txt"
+}

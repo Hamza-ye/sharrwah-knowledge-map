@@ -1,0 +1,791 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;"># Uploading and managing files
+
+&lt;aside class="note note-caution"&gt;&lt;h4&gt;Caution&lt;/h4&gt;&lt;p&gt;You should only ever upload files to the &lt;strong&gt;Content&lt;/strong&gt; &amp;gt; &lt;strong&gt;Files&lt;/strong&gt; section of your Shopify admin when they&amp;#39;re intended for public access on your store, such as product media, downloadable content, and other storefront images. Never upload any documents that contain confidential, personal, or sensitive information about you, your business, or your customers.&lt;/p&gt;
+&lt;/aside&gt;
+
+
+The **Files** section is where you can manage all files uploaded to your store, including images, videos, 3D models, and other file types, such as PDFs and CSV files. You can upload, manage, and delete files from the [**Files**](https://admin.shopify.com/content/files) section in your Shopify admin.
+
+The file picker is available in different areas of your Shopify admin, such as the following examples:
+
+* Adding media to a [product](/manual/products/product-media/add-media).
+* Editing your [theme](/manual/online-store/images/theme-images).
+* Creating [metafields](/manual/custom-data/metafields).
+* Adding media in the [rich text editor](/manual/shopify-admin/productivity-tools/rich-text-editor).
+
+All files you upload through the file picker are added to the [**Files**](https://admin.shopify.com/content/files) page of your Shopify admin.
+
+## File requirements {#file-requirements}
+
+You can upload files to the [**Files**](https://admin.shopify.com/content/files) page in your Shopify admin. Files must meet the following requirements:
+
+### Image file requirements
+
+&lt;table&gt;
+  &lt;caption&gt;Requirements for file size, resolution, aspect ratio, file format, and file naming conventions for images in the Shopify admin.&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th scope="col"&gt;Attribute&lt;/th&gt;
+      &lt;th scope="col"&gt;Requirement&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td scope="row"&gt;File size&lt;/td&gt;
+      &lt;td&gt;Maximum of 20 MB (megabytes)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td scope="row"&gt;Resolution&lt;/td&gt;
+      &lt;td&gt;Maximum of 25 MP (megapixels)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td scope="row"&gt;Aspect ratio&lt;/td&gt;
+      &lt;td&gt;Between 100:1 and 1:100&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td scope="row"&gt;File formats&lt;/td&gt;
+      &lt;td&gt;JPEG, PNG, WEBP, HEIC, and GIF&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td scope="row"&gt;File names&lt;/td&gt;
+      &lt;td&gt;File names can contain letters, numbers, spaces, and symbols, but must not begin with a period &lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;aside class="note note-information"&gt;&lt;h4&gt;Tip&lt;/h4&gt;&lt;p&gt;Image file names can&amp;#39;t end with the following words - &lt;code&gt;pico&lt;/code&gt;, &lt;code&gt;icon&lt;/code&gt;, &lt;code&gt;thumb&lt;/code&gt;, &lt;code&gt;testing&lt;/code&gt;, &lt;code&gt;small&lt;/code&gt;, &lt;code&gt;compact&lt;/code&gt;, &lt;code&gt;medium&lt;/code&gt;, &lt;code&gt;large&lt;/code&gt;, or &lt;code&gt;grande&lt;/code&gt;. These endings can be misinterpreted as image transformation requests, such as resizing, by Shopify&amp;#39;s CDN. If you upload an image with a name such as &lt;code&gt;test_medium.png&lt;/code&gt;, then Shopify automatically appends a suffix to the filename to prevent conflicts.&lt;/p&gt;
+&lt;/aside&gt;
+
+### Video file requirements
+
+&lt;table&gt;
+  &lt;caption&gt;Requirements for file size, file formats, resolution, video length, width and height, frame rate, and file naming conventions for videos in the Shopify admin.&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th scope="col"&gt;Attribute&lt;/th&gt;
+      &lt;th scope="col"&gt;Requirement&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td scope="row"&gt;File size&lt;/td&gt;
+      &lt;td&gt;Maximum of 1 GB (gigabyte)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td scope="row"&gt;Resolution&lt;/td&gt;
+      &lt;td&gt;Maximum resolution of UHD&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td scope="row"&gt;Video length&lt;/td&gt;
+      &lt;td&gt;Maximum video length of 10 minutes&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td scope="row"&gt;File formats&lt;/td&gt;
+      &lt;td&gt;MOV, MP4, and WEBM&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td scope="row"&gt;Minimum width and height&lt;/td&gt;
+      &lt;td&gt;100 pixels&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td scope="row"&gt;Maximum width and height&lt;/td&gt;
+      &lt;td&gt;4096 pixels&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td scope="row"&gt;Maximum frame rate&lt;/td&gt;
+      &lt;td&gt;120 frames per second&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td scope="row"&gt;Minimum video length&lt;/td&gt;
+      &lt;td&gt;0.25 seconds&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td scope="row"&gt;File names&lt;/td&gt;
+      &lt;td&gt;File names may contain letters, numbers, spaces, and symbols, but must not begin with a period &lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;aside class="note"&gt;&lt;h4&gt;Note&lt;/h4&gt;&lt;p&gt;These limits don&amp;#39;t apply to embedded Vimeo or YouTube links.&lt;/p&gt;
+&lt;/aside&gt;
+
+### Recommended video specifications
+
+&lt;table&gt;
+  &lt;caption&gt;Recommendations for aspect ratio, bitrates, frame rates, resolution, supported codecs, and supported color spaces for videos in the Shopify admin.&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th scope="col"&gt;Feature&lt;/th&gt;
+      &lt;th scope="col"&gt;Recommendation&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td scope="row"&gt;Aspect ratio&lt;/td&gt;
+      &lt;td&gt;The aspect ratio should be one of the following:
+      &lt;ul&gt;
+          &lt;li&gt;16:9&lt;/li&gt;
+          &lt;li&gt;9:16&lt;/li&gt;
+          &lt;li&gt;4:3&lt;/li&gt;
+          &lt;li&gt;3:4&lt;/li&gt;
+          &lt;li&gt;1:1&lt;/li&gt;
+      &lt;/ul&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td scope="row"&gt;Bitrates&lt;/td&gt;
+&lt;td&gt;Shopify's video pipeline will process incoming videos and auto select the best quality by analyzing the input media and selecting an appropriate bitrate from the ranges below.
+&lt;ul&gt;
+  &lt;li&gt;HLS
+    &lt;ul&gt;
+      &lt;li&gt;SD 480: Range from 900 kbps to 2800 kbps&lt;/li&gt;
+      &lt;li&gt;HD 720: Range from 2000 kbps to 6500 kbps&lt;/li&gt;
+      &lt;li&gt;HD 1080: Range from 3200 kbps to 10400 kbps&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;MP4
+    &lt;ul&gt;
+      &lt;li&gt;SD 480: Range from 0.9 Mbps to 1.5 Mbps&lt;/li&gt;
+      &lt;li&gt;HD 720: Range from 1.6 Mbps to 4.5 Mbps&lt;/li&gt;
+      &lt;li&gt;HD 1080: Range from 2.5 Mbps to 7.2 Mbps&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td scope="row"&gt;Frame rate&lt;/td&gt;
+&lt;td&gt;&lt;ul&gt;
+  &lt;li&gt;60 fps&lt;/li&gt;
+  &lt;li&gt;30 fps&lt;/li&gt;
+  &lt;li&gt;25 fps&lt;/li&gt;
+&lt;/ul&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td scope="row"&gt;Resolution&lt;/td&gt;
+&lt;td&gt;&lt;ul&gt;
+  &lt;li&gt;3840x2160 (UHD)&lt;/li&gt;
+  &lt;li&gt;1920x1080 (1080p)&lt;/li&gt;
+  &lt;li&gt;1280x720 (720p)&lt;/li&gt;
+  &lt;li&gt;854x480 (480p)&lt;/li&gt;
+&lt;/ul&gt;
+  Vertical orientation for the above resolutions are also recommended, e.g., 720x1280 px
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td scope="row"&gt;Supported codecs&lt;/td&gt;
+&lt;td&gt;&lt;ul&gt;
+  &lt;li&gt;Video: H.264 (AVC)&lt;/li&gt;
+  &lt;li&gt;Audio: AAC, MP3, Opus&lt;/li&gt;
+&lt;/ul&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td scope="row"&gt;Supported color spaces&lt;/td&gt;
+&lt;td&gt;&lt;ul&gt;
+  &lt;li&gt;Rec.601&lt;/li&gt;
+  &lt;li&gt;Rec.709&lt;/li&gt;
+  &lt;li&gt;Rec.2020&lt;/li&gt;
+&lt;/ul&gt;&lt;/td&gt;
+&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+### Generic file requirements
+
+Generic files can be any file other than HTML, and are intended for downloading by the customer.
+
+&lt;table&gt;
+  &lt;caption&gt;Requirements for file size, file formats, and file naming conventions for generic files in the Shopify admin.&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th scope="col"&gt;Attribute&lt;/th&gt;
+      &lt;th scope="col"&gt;Requirement&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td scope="row"&gt;File size&lt;/td&gt;
+      &lt;td&gt;Maximum of 20 MB&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td scope="row"&gt;File formats&lt;/td&gt;
+      &lt;td&gt;Any file type except HTML&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td scope="row"&gt;File names&lt;/td&gt;
+      &lt;td&gt;File names can contain letters, numbers, spaces, and symbols, but must not begin with a period &lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+### File format requirements
+
+If you're on a paid plan, then you can upload any file format other than HTML.
+
+If you're on a trial plan, then you can upload only the following file formats:
+
+* JS
+* CSS
+* GIF
+* JPEG
+* PNG
+* JSON
+* CSV
+* PDF
+* WebP
+* HEIC
+
+You also need to [verify your email address](/manual/privacy-and-security/account-security/verify-account-email) before you can upload PDF files.
+
+If you're on a trial plan and you want to upload other file formats, then [check and update your plan](/manual/your-account/manage-billing/managing-your-bills/billing-plan-changes#change-plan).
+
+Different parts of your store, such as your theme, pages, and blogs, only support certain file formats. For more information about supported file formats, refer to the following resources:
+
+* [Using the rich text editor](/manual/shopify-admin/productivity-tools/rich-text-editor): for pages, blog posts, product and collection descriptions, and theme elements
+* [Uploading media](/manual/online-store/images/theme-images#image-formats): for images and videos in your theme
+
+&lt;aside class="note note-information"&gt;&lt;h4&gt;Tip&lt;/h4&gt;&lt;p&gt;If you want to share a video that&amp;#39;s larger than 1GB or longer than 10 minutes, then you can use a video hosting service such as &lt;a href="https://www.youtube.com/"&gt;YouTube&lt;/a&gt; or &lt;a href="https://vimeo.com/"&gt;Vimeo&lt;/a&gt;, and then add the video&amp;#39;s sharing link to your content.&lt;/p&gt;
+&lt;/aside&gt;
+
+&lt;aside class="note"&gt;&lt;h4&gt;Note&lt;/h4&gt;&lt;p&gt;You can import &lt;a href="/en/manual/products/import-export"&gt;products&lt;/a&gt;, &lt;a href="/en/manual/customers/import-export-customers"&gt;customers&lt;/a&gt;, or &lt;a href="/en/manual/inventory-and-locations/setup/inventory-csv"&gt;inventory data&lt;/a&gt; using &lt;a href="/en/manual/shopify-admin/productivity-tools/csv-files#csv-files"&gt;CSV files&lt;/a&gt;. Importing data by CSV file isn&amp;#39;t done through the &lt;strong&gt;Files&lt;/strong&gt; page, but through the respective page in your Shopify admin.&lt;/p&gt;
+&lt;/aside&gt;
+
+## Upload a file on the Files page {#upload-a-file}
+
+You can upload files to Shopify on the **Files** page. You can then use the uploaded files across your Shopify admin, including as [brand images](/manual/promoting-marketing/managing-brand-assets), [product media](/manual/products/product-media), and [metaobjects](/manual/custom-data/metaobjects).
+
+#### Steps:
+
+&lt;div class="sections"&gt;&lt;details open&gt;&lt;summary id="desktop"&gt;Desktop&lt;/summary&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;From your Shopify admin, go to &lt;strong&gt;Content&lt;/strong&gt; &amp;gt; &lt;a href="https://admin.shopify.com/content/files"&gt;&lt;strong&gt;Files&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Click &lt;strong&gt;Upload files&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Select up to 200 files to upload, and then click &lt;strong&gt;Open&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/details&gt;&lt;details&gt;&lt;summary id="mobile"&gt;Mobile&lt;/summary&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;From the &lt;a href="https://www.shopify.com/install/detect"&gt;Shopify app&lt;/a&gt;, tap the &lt;img src="https://cdn.shopify.com/shopifycloud/help-center/manual/admin-icons/MenuIcon.svg" alt="Menu" class="admin-icon" /&gt; icon.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;In the &lt;strong&gt;Content&lt;/strong&gt; menu, tap the &lt;img src="https://cdn.shopify.com/shopifycloud/help-center/manual/admin-icons/ChevronDownIcon.svg" alt="arrow down" class="admin-icon" /&gt; icon, and then tap &lt;strong&gt;Files&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Tap &lt;strong&gt;Upload files&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Select the files that you want to upload, and then tap &lt;strong&gt;Open&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/details&gt;&lt;/div&gt;
+
+&lt;aside class="note"&gt;&lt;h4&gt;Note&lt;/h4&gt;&lt;p&gt;As part of verifying your domain, you might be asked to upload files to the root folder of your site. If you&amp;#39;re &lt;a href="/en/manual/promoting-marketing/seo/find-site-map#add-domain-properties-and-verify-your-site-with-google"&gt;verifying your website with a third-party service&lt;/a&gt;, then use meta tags instead.&lt;/p&gt;
+&lt;/aside&gt;
+
+## Search and filter the file list {#filter-the-file-list}
+
+You can filter the file list or search for a file from the **Content** &gt; **Files** page of your Shopify admin or in the **File** picker.
+
+You can filter your files in the following ways:
+
+* Search file attributes, including file names and types, using the search bar.
+* Filter by size using the **File size** range selector.
+* Filter by type using the **File type** menu.
+* Filter by file reference using the **Used in** menu.
+* Filter by alt text using the **Alt text** menu.
+
+All filters display in-line in the search bar, so you get a full view of the criteria influencing your search results. You can also use `is`/`is not` and `or`/`and` logical operators to create more advanced views with specific filter criteria.
+
+&lt;aside class="note note-information"&gt;&lt;h4&gt;Tip&lt;/h4&gt;&lt;p&gt;If you need to perform the same searches or filter by the same terms regularly, then you can &lt;a href="/en/manual/shopify-admin/productivity-tools/file-uploads#save-filters"&gt;save the filter view&lt;/a&gt;.&lt;/p&gt;
+&lt;/aside&gt;
+
+Learn more about [searching, filtering, and sorting your list views in the Shopify admin](/manual/shopify-admin/productivity-tools/searching-filtering-views).
+
+#### Steps:
+
+1. From your Shopify admin, go to **Content** &gt; [**Files**](https://admin.shopify.com/content/files).
+
+2. Optional: Click **All** to open the view menu, and then select the view that you want to filter.
+3. Select an operator and value for your filter. The available values are different depending on the filter that you select.
+4. Optional: Continue typing keywords to continue adding different filters and values to refine your search:
+     - To include an additional filter with an `and` operator to your search, click &lt;img src="https://cdn.shopify.com/shopifycloud/help-center/manual/admin-icons/PlusCircleIcon.svg" alt="Plus Circle Icon" class="admin-icon" /&gt; or add a space, and then start typing the name of the additional filter that you want to include.
+     - To include an additional value with an `or` operator to a filter, add a comma, and then start typing the name of the additional value that you want to include.
+5. Optional: Click the filter tags of any filter in the search bar to edit the filter.
+
+### Save filter view {#save-filters}
+
+If you need to perform the same searches or filter by the same terms regularly, then you can save the filters as views so that they're more easily accessible. Saved views are added to the views list at the left of the **Files** searchbar. You can click the selector to filter the files using the saved filter parameters.
+
+#### Steps:
+
+&lt;div class="sections"&gt;&lt;details open&gt;&lt;summary id="desktop"&gt;Desktop&lt;/summary&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;From your Shopify admin, go to &lt;strong&gt;Content&lt;/strong&gt; &amp;gt; &lt;a href="https://admin.shopify.com/content/files"&gt;&lt;strong&gt;Files&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Using the searchbar, apply the appropriate filters and search keywords.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Click &lt;strong&gt;Save&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;In the &lt;strong&gt;Save view as&lt;/strong&gt; dialog, enter a name for your saved filter view.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Click &lt;strong&gt;Save&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/details&gt;&lt;details&gt;&lt;summary id="mobile"&gt;Mobile&lt;/summary&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;From the &lt;a href="https://www.shopify.com/install/detect"&gt;Shopify app&lt;/a&gt;, tap the &lt;img src="https://cdn.shopify.com/shopifycloud/help-center/manual/admin-icons/MenuIcon.svg" alt="Menu" class="admin-icon" /&gt; icon.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;In the &lt;strong&gt;Content&lt;/strong&gt; menu, tap the &lt;img src="https://cdn.shopify.com/shopifycloud/help-center/manual/admin-icons/ChevronDownIcon.svg" alt="arrow down" class="admin-icon" /&gt; icon, and then tap &lt;strong&gt;Files&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Using the &lt;strong&gt;Search and filter&lt;/strong&gt; option, apply the appropriate filters and search keywords.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Tap &lt;img src="https://cdn.shopify.com/shopifycloud/help-center/manual/admin-icons/MenuHorizontalIcon.svg" alt="Horizontal menu" class="admin-icon" /&gt; &amp;gt; &lt;strong&gt;Save as new view&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;In the &lt;strong&gt;Save view as&lt;/strong&gt; dialog, enter a name for your saved filter view.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Tap &lt;strong&gt;Save&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/details&gt;&lt;/div&gt;
+
+### Edit columns in your Files list {#edit-columns}
+
+You can edit columns in both default and custom views, and the changes that you make apply only to the view that you're currently on. You can hide or unhide columns, as well as reorder the columns, with the exception of the main leftmost column.
+
+#### Steps:
+
+1. From your Shopify admin, go to **Content** &gt; [**Files**](https://admin.shopify.com/content/files).
+
+2. Optional: Click **All** to open the view menu, and then select the custom view that you want to edit the columns for.
+3. Click the &lt;img src="https://cdn.shopify.com/shopifycloud/help-center/manual/admin-icons/LayoutColumns3Icon.svg" alt="Layout Columns 3" class="admin-icon" /&gt; icon to open the display option panel.
+4. In the **Columns** section, customize your view's columns by doing any of the following actions:
+      - To hide a column, click &lt;img src="https://cdn.shopify.com/shopifycloud/help-center/manual/admin-icons/ViewIcon.svg" alt="View" class="admin-icon" /&gt;.
+      - To unhide a column, click &lt;img src="https://cdn.shopify.com/shopifycloud/help-center/manual/admin-icons/HideIcon.svg" alt="Hide" class="admin-icon" /&gt;.
+      - To rearrange a column, click &lt;img src="https://cdn.shopify.com/shopifycloud/help-center/manual/admin-icons/DragHandleIcon.svg" alt="Drag handle" class="admin-icon" /&gt; and drag the column up or down.
+5. Optional: To permanently apply the column order to your custom view, click **Save** &gt; **Update view**.
+
+### Use bulk action to delete multiple files {#use-bulk-action-with-a-filter}
+
+In any file view, you can select some or all of the files and delete them in bulk. You can switch between file views to continue selecting files, and apply filters or search using keywords to display only relevant files that you can also select.
+
+&lt;aside class="note"&gt;&lt;h4&gt;Note&lt;/h4&gt;&lt;p&gt;If you&amp;#39;re on a desktop device, then you can click &lt;strong&gt;Show all selected&lt;/strong&gt; to display only the files that you&amp;#39;ve currently selected.&lt;/p&gt;
+&lt;/aside&gt;
+
+Learn more about [using bulk actions in your Shopify admin](/manual/shopify-admin/productivity-tools/bulk-actions).
+
+#### Steps:
+
+1. From your Shopify admin, go to **Content** &gt; [**Files**](https://admin.shopify.com/content/files).
+
+2. Click a file view.
+3. [Select the items that you want to delete](/manual/shopify-admin/productivity-tools/bulk-actions#select-items-to-edit-in-bulk).
+4. Click **Delete files**.
+5. In the dialog, click **Delete**.
+
+## Change the sort order of the file list {#change-the-sort-order}
+
+By default, files are listed from newest to oldest based on the date that they were uploaded.
+
+&lt;aside class="note"&gt;&lt;h4&gt;Note&lt;/h4&gt;&lt;p&gt;If you change the sort order of your files in the Shopify admin on desktop, then the file list reverts to the default sort order after it&amp;#39;s refreshed, such as when you navigate to a different view. You can save an alternative sort order using the Shopify mobile app.&lt;/p&gt;
+&lt;/aside&gt;
+
+You can change the sort order of your file list to any of the following options:
+
+&lt;table&gt;
+  &lt;caption&gt;Shopify admin file list sorting options&lt;/caption&gt;
+  &lt;thead&gt;
+     &lt;tr&gt;
+        &lt;th scope="col"&gt;Sorting option&lt;/th&gt;
+        &lt;th scope="col"&gt;Value&lt;/th&gt;
+        &lt;th scope="col"&gt;Description&lt;/th&gt;
+     &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td scope="row"&gt;Date added&lt;/td&gt;
+        &lt;td&gt;Sorted by date from &lt;b&gt;Newest first&lt;/b&gt; or &lt;b&gt;Oldest first&lt;/b&gt;.&lt;/td&gt;
+        &lt;td&gt;This option displays files in the order that the products were created. By default, the file list is sorted by &lt;b&gt;Date added&lt;/b&gt;: &lt;b&gt;Newest first&lt;/b&gt;.&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+        &lt;td scope="row"&gt;File name&lt;/td&gt;
+        &lt;td&gt;Sorted alphabetically from &lt;b&gt;A-Z&lt;/b&gt; or &lt;b&gt;Z-A&lt;/b&gt;.&lt;/td&gt;
+        &lt;td&gt;This option displays files in alphabetical order by file name.&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+        &lt;td scope="row"&gt;Size&lt;/td&gt;
+        &lt;td&gt;Sorted by file size from &lt;b&gt;Smallest first&lt;/b&gt; or &lt;b&gt;Largest first&lt;/b&gt;.&lt;/td&gt;
+        &lt;td&gt;This option displays files in order of file size.&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+#### Steps:
+
+&lt;div class="sections"&gt;&lt;details open&gt;&lt;summary id="desktop"&gt;Desktop&lt;/summary&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;From your Shopify admin, go to &lt;strong&gt;Content&lt;/strong&gt; &amp;gt; &lt;a href="https://admin.shopify.com/content/files"&gt;&lt;strong&gt;Files&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Optional: Click &lt;strong&gt;All&lt;/strong&gt; to open the view menu, and then select the custom view that you want to review the sort order for.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Click the &lt;img src="https://cdn.shopify.com/shopifycloud/help-center/manual/admin-icons/LayoutColumns3Icon.svg" alt="Layout Columns 3" class="admin-icon" /&gt; icon to open the display option panel.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Click the &lt;img src="https://cdn.shopify.com/shopifycloud/help-center/manual/admin-icons/SortIcon.svg" alt="Sort" class="admin-icon" /&gt; &lt;strong&gt;Sort by&lt;/strong&gt; menu, and then select a sort criteria option, as well as a sort order.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/details&gt;&lt;details&gt;&lt;summary id="mobile"&gt;Mobile&lt;/summary&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;From the &lt;a href="https://www.shopify.com/install/detect"&gt;Shopify app&lt;/a&gt;, tap the &lt;img src="https://cdn.shopify.com/shopifycloud/help-center/manual/admin-icons/MenuIcon.svg" alt="Menu" class="admin-icon" /&gt; icon.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;In the &lt;strong&gt;Content&lt;/strong&gt; menu, tap the &lt;img src="https://cdn.shopify.com/shopifycloud/help-center/manual/admin-icons/ChevronDownIcon.svg" alt="arrow down" class="admin-icon" /&gt; icon, and then tap &lt;strong&gt;Files&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Optional: Tap &lt;strong&gt;All&lt;/strong&gt; to open the view menu, and then select the custom view that you want to review the sort order for.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Tap the &lt;img src="https://cdn.shopify.com/shopifycloud/help-center/manual/admin-icons/LayoutColumns3Icon.svg" alt="Layout Columns 3" class="admin-icon" /&gt; icon to open the display option panel.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Tap the &lt;img src="https://cdn.shopify.com/shopifycloud/help-center/manual/admin-icons/SortIcon.svg" alt="Sort" class="admin-icon" /&gt; &lt;strong&gt;Sort by&lt;/strong&gt; menu, and then select a sort criteria option, as well as a sort order.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/details&gt;&lt;/div&gt;
+
+## Make a file available for download {#make-a-file-available}
+
+If you want to make a file available for visitors to download, then you can upload it using the **Files** page, then add a link to it in a [page's content](/manual/shopify-admin/productivity-tools/rich-text-editor#link-to-a-file) or in your online store menus. You can copy a link to the file to your clipboard by clicking the **Link** button beside the file.
+
+&lt;aside class="note note-growth"&gt;&lt;h4&gt;Grow your business&lt;/h4&gt;&lt;p&gt;Want to sell digital products in your store? Use the free &lt;a href="/en/manual/products/digital-service-product/digital-downloads"&gt;Digital Products app&lt;/a&gt; to set up and sell digital files to your customers.&lt;/p&gt;
+&lt;/aside&gt;
+
+## Original media downloads {#original-media-downloads}
+
+Shopify's Imagery service manages your images and videos to ensure the best possible format is displayed at the appropriate place in your online store.
+
+You can download the original, unoptimized file to your device using the download button in the **Preview and edit** window.
+
+#### Steps:
+
+&lt;div class="sections"&gt;&lt;details open&gt;&lt;summary id="desktop"&gt;Desktop&lt;/summary&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;From your Shopify admin, go to &lt;strong&gt;Content&lt;/strong&gt; &amp;gt; &lt;a href="https://admin.shopify.com/content/files"&gt;&lt;strong&gt;Files&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Click the desired file, or use the filters to sort or locate a specific media file.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Click the download button. The original format saves to your device.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/details&gt;&lt;details&gt;&lt;summary id="mobile"&gt;Mobile&lt;/summary&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;From the &lt;a href="https://www.shopify.com/install/detect"&gt;Shopify app&lt;/a&gt;, tap the &lt;img src="https://cdn.shopify.com/shopifycloud/help-center/manual/admin-icons/MenuIcon.svg" alt="Menu" class="admin-icon" /&gt; icon.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;In the &lt;strong&gt;Content&lt;/strong&gt; menu, tap the &lt;img src="https://cdn.shopify.com/shopifycloud/help-center/manual/admin-icons/ChevronDownIcon.svg" alt="arrow down" class="admin-icon" /&gt; icon, and then tap &lt;strong&gt;Files&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Tap the desired file, or use the filters to sort or locate a specific media file.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Tap the download button. The original format saves to your device.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/details&gt;&lt;/div&gt;
+
+## Editing files {#edit-a-file}
+
+You can preview and edit files by clicking the file's thumbnail from the [**Files**](https://admin.shopify.com/content/files) page. Edits that you make on the **Files** page apply to all places the file is used in your store.
+
+Review the following table to learn more about how to edit your files:
+
+&lt;table&gt;
+  &lt;caption&gt;List of actions that you can take for editing files in your Shopify admin.&lt;/caption&gt;
+  &lt;thead&gt;
+     &lt;tr&gt;
+        &lt;th scope="col"&gt;Action&lt;/th&gt;
+        &lt;th scope="col"&gt;Description&lt;/th&gt;
+     &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+     &lt;tr&gt;
+        &lt;td scope="row"&gt;Rename a file&lt;/td&gt;
+        &lt;td&gt;Update the name of your file by changing the &lt;b&gt;URL Handle&lt;/b&gt; of your file. When you change your file's URL, the previous URL for that file no longer works.&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+        &lt;td scope="row"&gt;Replace a file&lt;/td&gt;
+        &lt;td&gt;Replace an existing file with a new file, and keep the same file name and URL handle. You can replace a file only with the same file format, such as replace a JPG file with another JPG file.&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+        &lt;td scope="row"&gt;Add alt text&lt;/td&gt;
+        &lt;td&gt;Add a brief description of the image or video for people with visual impairment or low-bandwidth connections.&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+        &lt;td scope="row"&gt;Add a &lt;a href="/manual/online-store/images/theme-images#focal-points"&gt;focal point&lt;/a&gt; to an image&lt;/td&gt;
+        &lt;td&gt;Select the most important part of the image to help themes crop the image more intelligently.&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+        &lt;td scope="row"&gt;Update a video cover image&lt;/td&gt;
+        &lt;td&gt;Update the video cover image that acts as a preview image for your video.&lt;/td&gt;
+     &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+You can also edit media files using the [media editor](/manual/shopify-admin/productivity-tools/media-editor) and [AI-powered media generation](/manual/ai-powered-tools/media-generation).
+
+To make other types of edits, download the file, make the edits in an editing software of your choice, and then upload it again to the **Files** page.
+
+## Delete a file {#delete-a-file}
+
+You can delete one or more files from the **Files** page. [Learn more about bulk actions](/manual/shopify-admin/productivity-tools/bulk-actions).
+
+#### Steps:
+
+&lt;div class="sections"&gt;&lt;details open&gt;&lt;summary id="desktop"&gt;Desktop&lt;/summary&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;From your Shopify admin, go to &lt;strong&gt;Content&lt;/strong&gt; &amp;gt; &lt;a href="https://admin.shopify.com/content/files"&gt;&lt;strong&gt;Files&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Select the checkbox beside the file that you want to delete. You can select multiple files.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Click &lt;strong&gt;Delete&lt;/strong&gt;, and then click &lt;strong&gt;Delete&lt;/strong&gt; again to confirm.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/details&gt;&lt;details&gt;&lt;summary id="mobile"&gt;Mobile&lt;/summary&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;From the &lt;a href="https://www.shopify.com/install/detect"&gt;Shopify app&lt;/a&gt;, tap the &lt;img src="https://cdn.shopify.com/shopifycloud/help-center/manual/admin-icons/MenuIcon.svg" alt="Menu" class="admin-icon" /&gt; icon.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;In the &lt;strong&gt;Content&lt;/strong&gt; menu, tap the &lt;img src="https://cdn.shopify.com/shopifycloud/help-center/manual/admin-icons/ChevronDownIcon.svg" alt="arrow down" class="admin-icon" /&gt; icon, and then tap &lt;strong&gt;Files&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Select the checkbox beside the file that you want to delete. You can select multiple files.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Tap &lt;strong&gt;Delete&lt;/strong&gt;, and then tap &lt;strong&gt;Delete&lt;/strong&gt; again to confirm.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/details&gt;&lt;/div&gt;
+
+## Replace files
+
+You can replace a file from the **Files** page. You can't replace files as a bulk action.
+
+&lt;aside class="note"&gt;&lt;h4&gt;Note&lt;/h4&gt;&lt;p&gt;When you replace a file, the file name stays the same, but the file&amp;#39;s link changes.&lt;/p&gt;
+&lt;/aside&gt;
+
+#### Steps:
+
+1. From your Shopify admin, go to **Content** &gt; [**Files**](https://admin.shopify.com/content/files).
+
+2. Click the **Replace** icon next to the file name.
+3. Select the file that you want to upload.
+
+## Edit files without overwriting the existing file
+
+In the file editor, it's possible to make destructive edits to an image, such as changing the background of an image. To make changes without overwriting an existing file, save the changes as new.
+
+#### Steps:
+
+1. From your Shopify admin, go to **Content** &gt; [**Files**](https://admin.shopify.com/content/files).
+
+2. Select a media file to open the file editor.
+3. Make file edits.
+4. From the Save dropdown menu, select Save as new.
+
+Saving as new saves the new file to your store's file system and preserves the original image in its original state.
+
+## File storage limits by plan {#file-limits}
+
+The amount of storage that you have available for uploaded files varies depending on your Shopify subscription plan.
+
+Review the following table to learn more about file storage limits.
+
+&lt;table&gt;
+  &lt;caption&gt;Storage limits for each type of Shopify subscription plan, for the files that you have in your Shopify admin.&lt;/caption&gt;
+  &lt;thead&gt;
+     &lt;tr&gt;
+        &lt;th scope="col"&gt;Plan&lt;/th&gt;
+        &lt;th scope="col"&gt;Limit per store&lt;/th&gt;
+     &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+        &lt;td scope="row"&gt;Starter&lt;/td&gt;
+        &lt;td&gt;100 GB&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+        &lt;td scope="row"&gt;&lt;a href="/manual/your-account/manage-orgs-and-stores/manage-pricing-plan/pause-store"&gt;Pause and Build&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;100 GB&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+        &lt;td scope="row"&gt;Retail&lt;/td&gt;
+        &lt;td&gt;100 GB&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+        &lt;td scope="row"&gt;Basic and Shopify Partner &lt;a href="/partners/manage-clients-stores/development-stores/create-development-stores"&gt;development stores&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;100 GB&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+        &lt;td scope="row"&gt;Grow&lt;/td&gt;
+        &lt;td&gt;300 GB&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+        &lt;td scope="row"&gt;Advanced&lt;/td&gt;
+        &lt;td&gt;500 GB&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+        &lt;td scope="row"&gt;Plus and Shopify Partner &lt;a href="/partners/manage-clients-stores/development-stores/plus-sandbox-store"&gt;Plus sandbox stores&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;1 TB&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+        &lt;td scope="row"&gt;Enterprise&lt;/td&gt;
+        &lt;td&gt;10 TB&lt;/td&gt;
+     &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;aside class="note note-plan"&gt;&lt;h4&gt;Plan requirement&lt;/h4&gt;&lt;p&gt;If you change to a plan with a lower storage limit, and your store currently uses more storage than the new plan allows, then your existing files aren&amp;#39;t impacted. However, you can&amp;#39;t upload new files until you &lt;a href="/en/manual/shopify-admin/productivity-tools/file-uploads#delete-a-file"&gt;delete enough files&lt;/a&gt; to bring your total storage below the new plan&amp;#39;s limit.&lt;/p&gt;
+&lt;/aside&gt;
+
+### Paid storage increases
+
+&lt;aside class="note note-beta"&gt;&lt;h4&gt;Early access&lt;/h4&gt;&lt;p&gt;Access to paid storage increases is in early access, and is available only for Plus and Enterprise stores.&lt;/p&gt;
+&lt;/aside&gt;
+
+If you want to purchase additional file storage space for your organization, then the organization owner can contact Shopify Support to request an incremental storage increase.
+
+The requested increase increments are added to one [production store](/manual/your-account/manage-orgs-and-stores/manage-orgs/view-filter-stores#store-type), and up to two [development stores](/manual/your-account/manage-orgs-and-stores/manage-orgs/view-filter-stores#store-type). All three of the included shops receive their own increase. The increment isn't split between them. Increases must be added in the available increments. Fractional paid increases aren't available.
+
+&lt;table&gt;
+  &lt;caption&gt;Available paid storage increases for each type of Shopify subscription plan, for the files that you have in your Shopify admin.&lt;/caption&gt;
+  &lt;thead&gt;
+     &lt;tr&gt;
+        &lt;th scope="col"&gt;Plan&lt;/th&gt;
+        &lt;th scope="col"&gt;Pricing Increment&lt;/th&gt;
+     &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+        &lt;td scope="row"&gt;Plus&lt;/td&gt;
+        &lt;td&gt;$100 USD/month per 1 TB&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+        &lt;td scope="row"&gt;Enterprise&lt;/td&gt;
+        &lt;td&gt;$1,000 USD/month per 10 TB&lt;/td&gt;
+     &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+
+## Video and 3D model limits by plan {#video-and-3d-model-limits}
+
+The amount of both videos and 3D models that you have available to upload varies depending on your Shopify subscription plan.
+
+Review the following table to learn more about video and 3D model limits.
+
+&lt;table&gt;
+  &lt;caption&gt;Video and 3D model upload limits for each type of Shopify subscription plan.&lt;/caption&gt;
+  &lt;thead&gt;
+     &lt;tr&gt;
+        &lt;th scope="col"&gt;Plan&lt;/th&gt;
+        &lt;th scope="col"&gt;Limit per store&lt;/th&gt;
+     &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+        &lt;td scope="row"&gt;Starter&lt;/td&gt;
+        &lt;td&gt;250&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+        &lt;td scope="row"&gt;&lt;a href="/manual/your-account/manage-orgs-and-stores/manage-pricing-plan/pause-store"&gt;Pause and Build&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;250&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+        &lt;td scope="row"&gt;Retail&lt;/td&gt;
+        &lt;td&gt;250&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+        &lt;td scope="row"&gt;Basic and Shopify Partner &lt;a href="/partners/manage-clients-stores/development-stores/create-development-stores"&gt;development stores&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;250&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+        &lt;td scope="row"&gt;Grow&lt;/td&gt;
+        &lt;td&gt;1,000&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+        &lt;td scope="row"&gt;Advanced&lt;/td&gt;
+        &lt;td&gt;5,000&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+        &lt;td scope="row"&gt;Plus and Shopify Partner &lt;a href="/partners/manage-clients-stores/development-stores/plus-sandbox-store"&gt;Plus sandbox stores&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;50,000&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+        &lt;td scope="row"&gt;Enterprise&lt;/td&gt;
+        &lt;td&gt;100,000&lt;/td&gt;
+     &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;aside class="note"&gt;&lt;h4&gt;Note&lt;/h4&gt;&lt;p&gt;If you&amp;#39;re on a Plus or Enterprise plan, then you can &lt;a href="/en/manual/your-account/contact-shopify-support"&gt;contact Shopify Support&lt;/a&gt; to request increased video and 3D model upload limits.&lt;/p&gt;
+&lt;/aside&gt;
+
+### Video storage limits by plan {#video-storage-limits}
+
+The amount of storage that you have available for uploaded videos varies depending on your Shopify subscription plan.
+
+Review the following table to learn more about video storage limits.
+
+&lt;table&gt;
+  &lt;caption&gt;Video storage limits for each type of Shopify subscription plan.&lt;/caption&gt;
+ &lt;thead&gt;
+     &lt;tr&gt;
+        &lt;th scope="col"&gt;Plan&lt;/th&gt;
+        &lt;th scope="col"&gt;Limit per store&lt;/th&gt;
+     &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+        &lt;td scope="row"&gt;Starter&lt;/td&gt;
+        &lt;td&gt;50 GB&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+        &lt;td scope="row"&gt;&lt;a href="/manual/your-account/manage-orgs-and-stores/manage-pricing-plan/pause-store"&gt;Pause and Build&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;50 GB&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+        &lt;td scope="row"&gt;Retail&lt;/td&gt;
+        &lt;td&gt;50 GB&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+        &lt;td scope="row"&gt;Basic and Shopify Partner &lt;a href="/partners/manage-clients-stores/development-stores/create-development-stores"&gt;development stores&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;50 GB&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+        &lt;td scope="row"&gt;Shopify Partner &lt;a href="/partners/manage-clients-stores/development-stores/plus-sandbox-store"&gt;Plus sandbox stores&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;60 GB&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+        &lt;td scope="row"&gt;Grow&lt;/td&gt;
+        &lt;td&gt;500 GB&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+        &lt;td scope="row"&gt;Advanced&lt;/td&gt;
+        &lt;td&gt;500 GB&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+        &lt;td scope="row"&gt;Plus&lt;/td&gt;
+        &lt;td&gt;2 TB&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+        &lt;td scope="row"&gt;Enterprise&lt;/td&gt;
+        &lt;td&gt;10 TB&lt;/td&gt;
+     &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;aside class="note"&gt;&lt;h4&gt;Note&lt;/h4&gt;&lt;p&gt;This is a separate limit from the &lt;a href="/en/manual/shopify-admin/productivity-tools/file-uploads#file-limits"&gt;total storage limit&lt;/a&gt; for all files in your store. If you&amp;#39;re on a Plus or Enterprise plan, then you can &lt;a href="/en/manual/your-account/contact-shopify-support"&gt;contact Shopify Support&lt;/a&gt; to request increased video-specific storage limits.&lt;/p&gt;
+&lt;/aside&gt;
+
+
+## Best practices for file names
+
+When you upload an image file, a unique identifier might be added to the filename. This can happen in the following situations:
+
+* A file with the same name already exists in your store. This includes files uploaded directly to product pages that might not appear in **Content** &gt; **Files**.
+* The filename contains special characters or formatting that conflicts with Shopify's Content Delivery Network (CDN).
+
+To prevent unique identifiers from being added to filenames, use the following file naming practices:
+
+* Ensure the filename is unique and doesn't match any existing files in your store.
+* Avoid using underscores immediately before image dimensions in the filename. For example, use `product-image-5x4.jpeg` instead of `product_image_5x4.jpeg`.
+* Use descriptive filenames that don't include special formatting.
+
+If you need to change a filename after upload, then you can rename files from the **Content** &gt; [**Files**](https://admin.shopify.com/content/files) page by editing the **URL Handle**.
+
+## Generate image
+
+You can generate images using AI directly in the unified file picker throughout the Shopify admin. This feature lets you create custom images for your products, content, and marketing materials without needing external tools.
+
+When you generate an image, it's created temporarily and displayed in the file picker. To save the generated image to your store, you need to click **Keep**. If you don't explicitly save the image by clicking **Keep**, then the generated image will be discarded and won't be saved to your store.
+
+&lt;aside class="note"&gt;&lt;h4&gt;Note&lt;/h4&gt;&lt;p&gt;Generated images that aren&amp;#39;t saved by clicking &lt;strong&gt;Keep&lt;/strong&gt; are automatically discarded and don&amp;#39;t count toward your storage limits.&lt;/p&gt;
+&lt;/aside&gt;
+</pre></body></html>

@@ -1,0 +1,18 @@
+{
+ "n": 77,
+ "url": "https://docs.bigcommerce.com/developer/docs/admin/store-configuration/translations/overview.md",
+ "dir": "items/077-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:20:32Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/docs/admin/store-configuration/translations/overview.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 2513,
+ "cited_in": [
+  "BC-S-0240"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "1f5d2ff127949111a2215e6a2ca279ec98a604bb2ce7761f3ab60ce95700c335",
+ "raw_ext": "txt"
+}

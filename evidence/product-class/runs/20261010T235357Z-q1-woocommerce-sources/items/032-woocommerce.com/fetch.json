@@ -1,0 +1,18 @@
+{
+ "n": 32,
+ "url": "https://woocommerce.com/document/order-attribution-tracking/",
+ "dir": "items/032-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:01Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/order-attribution-tracking/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 50589,
+ "cited_in": [
+  "WC-S-0890"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "35196a12d9721bff9bca21a68b3cf1570c507de6945fb8912b8c568ba50b2b52",
+ "raw_ext": "html"
+}

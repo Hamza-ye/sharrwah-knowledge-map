@@ -1,0 +1,19 @@
+{
+ "n": 83,
+ "url": "https://docs.bigcommerce.com/developer/docs/integrations/scripts.md",
+ "dir": "items/083-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:20:38Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/docs/integrations/scripts.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 5262,
+ "cited_in": [
+  "BC-S-0221",
+  "BC-S-0222"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "3bba83ef62f50a8562b0d78205e39af8f160b1ee23c44a6e943cacb260be293c",
+ "raw_ext": "txt"
+}

@@ -1,0 +1,18 @@
+{
+ "n": 148,
+ "url": "https://help.zid.sa/product-properties/",
+ "dir": "items/148-help.zid.sa",
+ "fetched_at": "2026-10-12T04:53:20Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/product-properties/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 26316,
+ "cited_in": [
+  "ZD-S-0965"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "6e8a1bca2941e4ebc7371989297e4bc7bda23393c8eb6023c3d4a578c9a7c555",
+ "raw_ext": "html"
+}

@@ -1,0 +1,19 @@
+{
+ "n": 40,
+ "url": "https://help.shopify.com/en/manual/markets.md",
+ "dir": "items/040-help.shopify.com",
+ "fetched_at": "2026-10-11T06:12:59Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/markets.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 866,
+ "cited_in": [
+  "SH-S-0540",
+  "SH-S-0541"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "175b3a3e9be18244ccb91ede732ca475ceb37561c457690f7512ef335407a2f2",
+ "raw_ext": "txt"
+}

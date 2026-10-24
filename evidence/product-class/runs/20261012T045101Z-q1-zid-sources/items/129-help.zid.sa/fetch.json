@@ -1,0 +1,18 @@
+{
+ "n": 129,
+ "url": "https://help.zid.sa/gift-feature/",
+ "dir": "items/129-help.zid.sa",
+ "fetched_at": "2026-10-12T04:53:01Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/gift-feature/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 25536,
+ "cited_in": [
+  "ZD-S-0966"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "365ded8d9adace70a646ecd860392b2639a5495d0b8f110d49448bd833264507",
+ "raw_ext": "html"
+}

@@ -1,0 +1,30 @@
+{
+ "n": 102,
+ "url": "https://wordpress.org/plugins/woocommerce/",
+ "dir": "items/102-wordpress.org",
+ "fetched_at": "2026-10-10T23:54:08Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://wordpress.org/plugins/woocommerce/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 53091,
+ "cited_in": [
+  "WC-S-0817",
+  "WC-S-0818",
+  "WC-S-0819",
+  "WC-S-0820",
+  "WC-S-0821",
+  "WC-S-0822",
+  "WC-S-0823",
+  "WC-S-0824",
+  "WC-S-0825",
+  "WC-S-0826",
+  "WC-S-0827",
+  "WC-S-0828",
+  "WC-S-0829"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "7c1ca2c83e943f2879d61a34287ef9efa9de7394e5d962d42b47c62782b8d5f6",
+ "raw_ext": "html"
+}

@@ -1,0 +1,17 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+server: nginx
+date: Sun, 11 Oct 2026 09:07:50 GMT
+content-type: text/html; charset=UTF-8
+strict-transport-security: max-age=31536000
+vary: Accept-Encoding
+vary: accept, content-type, cookie
+link: <https://kb.mailpoet.com/wp-json/>; rel="https://api.w.org/"
+link: <https://kb.mailpoet.com/wp-json/wp/v2/posts/123>; rel="alternate"; title="JSON"; type="application/json"
+link: <https://wp.me/pgnU8m-1Z>; rel=shortlink
+content-encoding: br
+x-ac: 5.dca _atomic_dca STALE
+alt-svc: clear
+server-timing: a8c-cdn, dc;desc=dca, cache;desc=STALE;dur=1.0
+

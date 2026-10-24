@@ -1,0 +1,701 @@
+# List
+
+## OpenAPI Specification
+
+```yaml
+openapi: 3.0.1
+info:
+  title: ''
+  description: ''
+  version: 1.0.0
+paths:
+  /v2/blogs/posts/:
+    get:
+      summary: List
+      deprecated: false
+      description: >-
+        Retrieves a paginated list of blog posts belonging to the authenticated
+        store. The response includes post summaries, publication statuses,
+        category and tag information, pagination metadata, and aggregated counts
+        for all, published, unpublished, and scheduled posts.
+      tags:
+        - Default module/Apps/Merchant APIs/Blogs/Posts
+      parameters:
+        - name: page
+          in: query
+          description: Page number to retrieve.
+          required: false
+          example: 1
+          schema:
+            type: string
+        - name: page_size
+          in: query
+          description: Maximum number of blog posts to return per page.
+          required: false
+          example: 20
+          schema:
+            type: string
+        - name: status
+          in: query
+          description: Filters blog posts by their publication status.
+          required: false
+          example: unpublished
+          schema:
+            type: string
+        - name: category_id
+          in: query
+          description: >-
+            Filters blog posts by the unique identifier of the assigned
+            category. The value must be a valid UUID.
+          required: false
+          example: 019dfda7-104d-7471-a7ae-27c5d34925ab
+          schema:
+            type: string
+        - name: tag_id
+          in: query
+          description: >-
+            Filters blog posts by one or more tag identifiers. Provide multiple
+            UUIDs as a comma-separated list.
+          required: false
+          example: >-
+            019efe2f-2d93-7bb2-8996-330f8a68ce28,019efe2f-2d93-7bb2-8996-330f8a68ce29
+          schema:
+            type: string
+        - name: q
+          in: query
+          description: Searches blog posts by title or URL slug.
+          required: false
+          example: e-commerce
+          schema:
+            type: string
+        - name: created_at__gte
+          in: query
+          description: >-
+            Filters blog posts created on or after the specified date. Use the
+            YYYY-MM-DD format.
+          required: false
+          example: '2026-06-01'
+          schema:
+            type: string
+        - name: created_at__lte
+          in: query
+          description: >-
+            Filters blog posts created on or before the specified date. Use the
+            YYYY-MM-DD format.
+          required: false
+          example: '2026-06-30'
+          schema:
+            type: string
+        - name: ordering
+          in: query
+          description: >-
+            Specifies the field used to sort the returned blog posts. Use the
+            field name for ascending order or prefix it with a hyphen for
+            descending order, such as -created_at.
+          required: false
+          example: status
+          schema:
+            type: string
+        - name: store-id
+          in: header
+          description: The unique identifier of the store.
+          required: false
+          example: '{{StoreId}}'
+          schema:
+            type: string
+        - name: x-manager-token
+          in: header
+          description: Manager authentication token.
+          required: true
+          example: '{{Access-Token}}'
+          schema:
+            type: string
+        - name: Accept
+          in: header
+          description: >-
+            Specifies the Media Types acceptable for the client. In this case,
+            it signals that the client expects a response in the JSON format.
+          required: false
+          example: application/json
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                description: >-
+                  Represents a paginated list of blog posts, including
+                  publication-status counts and pagination metadata.
+                properties:
+                  counts:
+                    type: object
+                    description: >-
+                      Contains the total number of blog posts grouped by
+                      publication status.
+                    properties:
+                      all:
+                        type: integer
+                        description: >-
+                          The total number of blog posts matching the request,
+                          regardless of publication status.
+                        examples:
+                          - 25
+                      published:
+                        type: integer
+                        description: The total number of published blog posts.
+                        examples:
+                          - 12
+                      unpublished:
+                        type: integer
+                        description: The total number of unpublished blog posts.
+                        examples:
+                          - 8
+                      scheduled:
+                        type: integer
+                        description: >-
+                          The total number of blog posts scheduled for future
+                          publication.
+                        examples:
+                          - 5
+                    required:
+                      - all
+                      - published
+                      - unpublished
+                      - scheduled
+                    examples:
+                      - all: 25
+                        published: 12
+                        unpublished: 8
+                        scheduled: 5
+                    x-apidog-orders:
+                      - all
+                      - published
+                      - unpublished
+                      - scheduled
+                    x-apidog-ignore-properties: []
+                  count:
+                    type: integer
+                    description: >-
+                      The total number of blog posts matching the applied
+                      filters across all pages.
+                    examples:
+                      - 25
+                  page:
+                    type: integer
+                    description: The current page number.
+                    examples:
+                      - 1
+                  page_size:
+                    type: integer
+                    description: The maximum number of blog posts returned per page.
+                    examples:
+                      - 20
+                  results:
+                    type: array
+                    description: Contains the blog posts returned for the current page.
+                    items:
+                      $ref: '#/components/schemas/BlogPost'
+                required:
+                  - counts
+                  - count
+                  - page
+                  - page_size
+                  - results
+                examples:
+                  - counts:
+                      all: 25
+                      published: 12
+                      unpublished: 8
+                      scheduled: 5
+                    count: 25
+                    page: 1
+                    page_size: 20
+                    results:
+                      - id: 019efe66-02be-7123-aaed-59b62a960c92
+                        store_id: 123456
+                        title:
+                          ar: كيفية تطوير متجرك الإلكتروني
+                          en: How to Grow Your Online Store
+                        slug: how-to-grow-your-online-store
+                        snippet:
+                          ar: نصائح عملية تساعدك على تطوير متجرك الإلكتروني.
+                          en: Practical tips to help you grow your online store.
+                        status: published
+                        published_at: '2026-06-25T10:49:18.782959Z'
+                        scheduled_at: null
+                        display_order: 1
+                        cover: null
+                        category:
+                          id: 019efe2f-2d93-7bb2-8996-330f8a68ce27
+                          name:
+                            ar: الأدلة
+                            en: Guides
+                          slug: guides
+                          icon: book-open
+                        tags: []
+                        created_at: '2026-06-25T10:49:18.782959Z'
+                        updated_at: '2026-06-25T11:20:41.123456Z'
+                x-apidog-orders:
+                  - counts
+                  - count
+                  - page
+                  - page_size
+                  - results
+                x-apidog-ignore-properties: []
+              examples:
+                Successful response:
+                  summary: Success
+                  value:
+                    counts:
+                      all: 2
+                      published: 0
+                      unpublished: 2
+                      scheduled: 0
+                    count: 2
+                    page: 1
+                    page_size: 20
+                    results:
+                      - id: 019e8367-9183-7122-b3b1-f1c20a05c483
+                        store_id: 3
+                        title:
+                          ar: aa
+                        slug: post-3
+                        snippet:
+                          ar: aaa
+                        status: unpublished
+                        published_at: null
+                        scheduled_at: null
+                        display_order: 0
+                        cover: null
+                        category: null
+                        tags: []
+                        created_at: '2026-06-01T13:37:43.300003Z'
+                        updated_at: '2026-06-01T13:39:25.761035Z'
+                      - id: 019dfda7-4c8f-7552-90ee-fc3058e6b23f
+                        store_id: 3
+                        title:
+                          ar: Test
+                          en: Test
+                        slug: post
+                        snippet:
+                          en: 'Some description '
+                        status: unpublished
+                        published_at: null
+                        scheduled_at: null
+                        display_order: 0
+                        cover: null
+                        category:
+                          id: 019dfda7-104d-7471-a7ae-27c5d34925ab
+                          name:
+                            ar: جميع المقالات
+                            en: All Posts
+                          slug: posts
+                          icon: ''
+                        tags: []
+                        created_at: '2026-05-06T14:18:13.008114Z'
+                        updated_at: '2026-06-01T08:28:53.132288Z'
+          headers:
+            Content-Type:
+              example: application/json
+              description: >-
+                Indicates the media type of the response body returned by the
+                API.
+              schema:
+                type: string
+          x-apidog-name: OK
+      security: []
+      x-apidog-folder: Default module/Apps/Merchant APIs/Blogs/Posts
+      x-apidog-status: released
+      x-run-in-apidog: https://app.apidog.com/web/project/613905/apis/api-38273360-run
+components:
+  schemas:
+    BlogPost:
+      type: object
+      description: >-
+        Represents a blog post summary, including its localized title and
+        snippet, publication details, cover image, assigned category, tags, and
+        timestamps.
+      properties:
+        id:
+          type: string
+          format: uuid
+          description: The unique identifier of the blog post.
+          examples:
+            - 019efe66-02be-7123-aaed-59b62a960c92
+        store_id:
+          type: integer
+          description: The unique identifier of the store that owns the blog post.
+          examples:
+            - 123456
+        title:
+          type: object
+          description: Contains the localized titles of the blog post.
+          properties:
+            ar:
+              type: string
+              description: The Arabic title of the blog post.
+              examples:
+                - كيفية تطوير متجرك الإلكتروني
+            en:
+              type: string
+              description: The English title of the blog post.
+              examples:
+                - How to Grow Your Online Store
+          required:
+            - ar
+            - en
+          examples:
+            - ar: كيفية تطوير متجرك الإلكتروني
+              en: How to Grow Your Online Store
+          x-apidog-orders:
+            - ar
+            - en
+          x-apidog-ignore-properties: []
+        slug:
+          type: string
+          description: The URL-friendly identifier used in the blog post URL.
+          examples:
+            - how-to-grow-your-online-store
+        snippet:
+          type: object
+          description: >-
+            Contains localized short summaries or introductory text for the blog
+            post.
+          properties:
+            ar:
+              type: string
+              description: The Arabic summary or introductory text of the blog post.
+              examples:
+                - نصائح عملية تساعدك على تطوير متجرك الإلكتروني.
+            en:
+              type: string
+              description: The English summary or introductory text of the blog post.
+              examples:
+                - Practical tips to help you grow your online store.
+          required:
+            - en
+          examples:
+            - ar: نصائح عملية تساعدك على تطوير متجرك الإلكتروني.
+              en: Practical tips to help you grow your online store.
+          x-apidog-orders:
+            - ar
+            - en
+          x-apidog-ignore-properties: []
+        status:
+          type: string
+          description: The current publication status of the blog post.
+          examples:
+            - published
+        published_at:
+          type: string
+          format: date-time
+          description: >-
+            The date and time when the blog post was published, in ISO 8601
+            format, or null when the post has not been published.
+          examples:
+            - '2026-06-25T10:49:18.782959Z'
+            - null
+          nullable: true
+        scheduled_at:
+          type: string
+          format: date-time
+          description: >-
+            The date and time when the blog post is scheduled for publication,
+            in ISO 8601 format, or null when the post is not scheduled.
+          examples:
+            - '2026-07-15T10:00:00Z'
+            - null
+          nullable: true
+        display_order:
+          type: integer
+          description: >-
+            The blog post's position in a manually ordered list. Posts with
+            lower values are generally displayed before posts with higher
+            values.
+          examples:
+            - 1
+        cover:
+          type: string
+          format: uri
+          description: >-
+            The URL of the blog post's cover image, or null when no cover image
+            is assigned.
+          examples:
+            - https://media.zid.store/blogs/019efea4-9c82-7552-bbc4-1a7de9f10e12
+            - null
+          nullable: true
+        category:
+          type: object
+          description: >-
+            Contains summary information about the category assigned to the blog
+            post, or null when no category is assigned.
+          properties:
+            id:
+              type: string
+              format: uuid
+              description: The unique identifier of the assigned blog category.
+              examples:
+                - 019efe2f-2d93-7bb2-8996-330f8a68ce27
+            name:
+              type: object
+              description: Contains the localized names of the assigned blog category.
+              properties:
+                ar:
+                  type: string
+                  description: The Arabic name of the blog category.
+                  examples:
+                    - الأدلة
+                en:
+                  type: string
+                  description: The English name of the blog category.
+                  examples:
+                    - Guides
+              required:
+                - ar
+                - en
+              examples:
+                - ar: الأدلة
+                  en: Guides
+              x-apidog-orders:
+                - ar
+                - en
+              x-apidog-ignore-properties: []
+            slug:
+              type: string
+              description: The URL-friendly identifier of the assigned blog category.
+              examples:
+                - guides
+            icon:
+              type: string
+              description: The icon associated with the assigned blog category.
+              examples:
+                - book-open
+          required:
+            - id
+            - name
+            - slug
+            - icon
+          examples:
+            - id: 019efe2f-2d93-7bb2-8996-330f8a68ce27
+              name:
+                ar: الأدلة
+                en: Guides
+              slug: guides
+              icon: book-open
+            - null
+          x-apidog-orders:
+            - id
+            - name
+            - slug
+            - icon
+          x-apidog-ignore-properties: []
+          nullable: true
+        tags:
+          type: array
+          description: >-
+            Contains the tags assigned to the blog post and information about
+            each post-tag relationship.
+          items:
+            type: object
+            description: Represents a tag assignment associated with the blog post.
+            properties:
+              id:
+                type: string
+                format: uuid
+                description: The unique identifier of the post-tag relationship.
+                examples:
+                  - 019efe88-161a-7b01-9e40-7bc1b14a3b26
+              post_id:
+                type: string
+                format: uuid
+                description: >-
+                  The unique identifier of the blog post associated with the
+                  tag.
+                examples:
+                  - 019efe66-02be-7123-aaed-59b62a960c92
+              tag:
+                type: object
+                description: Contains details about the tag assigned to the blog post.
+                properties:
+                  id:
+                    type: string
+                    format: uuid
+                    description: The unique identifier of the blog tag.
+                    examples:
+                      - 019efe2f-2d93-7bb2-8996-330f8a68ce28
+                  name:
+                    type: object
+                    description: Contains the localized names of the blog tag.
+                    properties:
+                      ar:
+                        type: string
+                        description: The Arabic name of the blog tag.
+                        examples:
+                          - التجارة الإلكترونية
+                      en:
+                        type: string
+                        description: The English name of the blog tag.
+                        examples:
+                          - E-commerce
+                    required:
+                      - ar
+                      - en
+                    examples:
+                      - ar: التجارة الإلكترونية
+                        en: E-commerce
+                    x-apidog-orders:
+                      - ar
+                      - en
+                    x-apidog-ignore-properties: []
+                  slug:
+                    type: string
+                    description: The URL-friendly identifier of the blog tag.
+                    examples:
+                      - e-commerce
+                required:
+                  - id
+                  - name
+                  - slug
+                examples:
+                  - id: 019efe2f-2d93-7bb2-8996-330f8a68ce28
+                    name:
+                      ar: التجارة الإلكترونية
+                      en: E-commerce
+                    slug: e-commerce
+                x-apidog-orders:
+                  - id
+                  - name
+                  - slug
+                x-apidog-ignore-properties: []
+              display_order:
+                type: integer
+                description: >-
+                  Determines the tag's position within the blog post's tag list.
+                  Tags with lower values are generally displayed first.
+                examples:
+                  - 1
+            required:
+              - id
+              - post_id
+              - tag
+              - display_order
+            examples:
+              - id: 019efe88-161a-7b01-9e40-7bc1b14a3b26
+                post_id: 019efe66-02be-7123-aaed-59b62a960c92
+                tag:
+                  id: 019efe2f-2d93-7bb2-8996-330f8a68ce28
+                  name:
+                    ar: التجارة الإلكترونية
+                    en: E-commerce
+                  slug: e-commerce
+                display_order: 1
+            x-apidog-refs: {}
+            x-apidog-orders:
+              - id
+              - post_id
+              - tag
+              - display_order
+            x-apidog-ignore-properties: []
+          examples:
+            - - id: 019efe88-161a-7b01-9e40-7bc1b14a3b26
+                post_id: 019efe66-02be-7123-aaed-59b62a960c92
+                tag:
+                  id: 019efe2f-2d93-7bb2-8996-330f8a68ce28
+                  name:
+                    ar: التجارة الإلكترونية
+                    en: E-commerce
+                  slug: e-commerce
+                display_order: 1
+            - []
+        created_at:
+          type: string
+          format: date-time
+          description: >-
+            The date and time when the blog post was created, in ISO 8601
+            format.
+          examples:
+            - '2026-06-25T10:49:18.782959Z'
+        updated_at:
+          type: string
+          format: date-time
+          description: >-
+            The date and time when the blog post was last updated, in ISO 8601
+            format.
+          examples:
+            - '2026-06-25T11:20:41.123456Z'
+      required:
+        - id
+        - store_id
+        - title
+        - slug
+        - snippet
+        - status
+        - published_at
+        - scheduled_at
+        - display_order
+        - cover
+        - category
+        - tags
+        - created_at
+        - updated_at
+      examples:
+        - id: 019efe66-02be-7123-aaed-59b62a960c92
+          store_id: 123456
+          title:
+            ar: كيفية تطوير متجرك الإلكتروني
+            en: How to Grow Your Online Store
+          slug: how-to-grow-your-online-store
+          snippet:
+            ar: نصائح عملية تساعدك على تطوير متجرك الإلكتروني.
+            en: Practical tips to help you grow your online store.
+          status: published
+          published_at: '2026-06-25T10:49:18.782959Z'
+          scheduled_at: null
+          display_order: 1
+          cover: https://media.zid.store/blogs/019efea4-9c82-7552-bbc4-1a7de9f10e12
+          category:
+            id: 019efe2f-2d93-7bb2-8996-330f8a68ce27
+            name:
+              ar: الأدلة
+              en: Guides
+            slug: guides
+            icon: book-open
+          tags:
+            - id: 019efe88-161a-7b01-9e40-7bc1b14a3b26
+              post_id: 019efe66-02be-7123-aaed-59b62a960c92
+              tag:
+                id: 019efe2f-2d93-7bb2-8996-330f8a68ce28
+                name:
+                  ar: التجارة الإلكترونية
+                  en: E-commerce
+                slug: e-commerce
+              display_order: 1
+          created_at: '2026-06-25T10:49:18.782959Z'
+          updated_at: '2026-06-25T11:20:41.123456Z'
+      x-apidog-orders:
+        - id
+        - store_id
+        - title
+        - slug
+        - snippet
+        - status
+        - published_at
+        - scheduled_at
+        - display_order
+        - cover
+        - category
+        - tags
+        - created_at
+        - updated_at
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+  securitySchemes: {}
+servers:
+  - url: https://api.zid.sa/
+    description: Prod Env
+security: []
+
+```

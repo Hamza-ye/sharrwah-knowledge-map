@@ -1,0 +1,22 @@
+{
+ "n": 90,
+ "url": "https://docs.bigcommerce.com/developer/docs/integrations/webhooks/overview.md",
+ "dir": "items/090-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:20:45Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/docs/integrations/webhooks/overview.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 6585,
+ "cited_in": [
+  "BC-S-0283",
+  "BC-S-0284",
+  "BC-S-0286",
+  "BC-S-0287",
+  "BC-S-0288"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "a555ba0a001b31973170ec18ce2c332df7670249db6c87e93f8ac3ec1810d5ab",
+ "raw_ext": "txt"
+}

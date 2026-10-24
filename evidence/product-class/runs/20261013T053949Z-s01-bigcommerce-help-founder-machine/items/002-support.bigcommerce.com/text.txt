@@ -1,0 +1,309 @@
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+GETTING STARTED
+PRODUCTS
+STORE SETUP
+Store Settings
+Domain And Email
+Checkout And Payments
+Currency Setup
+Multicurrency
+Recurring Billing
+Test Orders
+CHECKOUT
+Optimized One-Page Checkout
+Address Autocomplete
+Form Fields
+Stored Credit Cards
+Gift Certificates
+Gift Wrapping
+Order-level Fees
+Persistent Cart
+Storefront Checkout Configurations
+PAYMENT METHODS
+Available Payment Gateways
+Embedded Providers
+Open Providers
+Alternative Payment Methods
+Accelerated Checkout
+FAQ
+Offline Payments
+TROUBLESHOOTING
+Understanding Checkout Errors
+Shipping
+Tax
+Security
+B2B
+DESIGN AND CONTENT
+MANAGE STORE
+CHANNEL MANAGER
+MARKETING
+DATA SOLUTIONS
+ACCOUNT
+TD BANK
+Available Payment Gateways
+What We'll Cover
+Embedded Payment Providers
+Open Payment Providers
+Alternative payment methods and digital wallets
+Accelerated Checkout solutions
+FAQ
+
+BigCommerce supports a broad range of payment gateway integrations, serving numerous countries and currencies.
+
+Select gateways support Alternative Payment Methods (APMs) like Alipay, Klarna, and SEPA along with leading digital wallets such as Amazon Pay, Apple Pay, and Google Pay. These options allow you to offer increased payment flexibility and popular regional methods.
+
+Accelerated Checkout solutions, Fastlane by PayPal and Stripe Link, provide shoppers with low-friction, passwordless checkout experiences that reduce cart abandonment and improve conversion.
+
+ 
+Embedded Payment Providers
+
+Processing payments through BigCommerce gateway integrations on the Embedded Payment Provider list do not incur Open Payment Provider fees. Note that custom integrations to processors on the Embedded Payment Provider list, including those connected via third-party apps, will incur Open Payment Provider fees.
+
+See each gateway’s documentation for details such as requirements, limitations, setup instructions, supported countries and currencies, and additional features.
+
+ 
+
+Using a “Powered By” store? If you were onboarded to BigCommerce through a partner, you may not have access to all listed payment gateways.
+
+Manual Capture — Authorized payments can be captured manually at a later date.
+3D Secure — An additional security layer that helps prevent unauthorized transactions.
+Multicurrency — Supports multiple transactional currencies.
+Stored Payment Methods — Payment details can be stored for future transactions.
+Recurring Payments — Recurring or subscription payments are supported.
+MSF Payments — Supports multiple payment configurations.
+Payment Gateway	Manual Capture	3D Secure	Multicurrency	Stored Payment Methods	Recurring Payments	MSF Payments
+Access Worldpay	✔	✔	✔	✔	✔	✔
+Adyen	✔	✔	✔	✔	✔	✔
+Affirm	✔	 	 	 	 	✔
+Afterpay	✔	 	✔	 	 	✔
+Amazon Pay	✔	✔	✔	 	 	✔
+Bankful	 	 	✔	 	 	✔
+Bank of New Zealand	✔	✔	 	✔	✔	 
+BigCommerce Payments	✔	✔	✔	✔	✔	 
+BlueSnap Direct	✔	✔	✔	✔	✔	✔
+Braintree	✔	✔	✔	✔	✔	✔
+Checkout.com	✔	✔	✔	✔	 	✔
+Clearpay	✔	 	 	 	 	 
+Heartland Payment Systems	✔	 	 	 	 	✔
+Klarna Payments	✔	 	✔	 	 	✔
+PayPal	✔	✔	✔	✔	✔	✔
+Sezzle	✔	 	✔	 	 	✔
+Stripe UPE	✔	✔	✔	✔	 	✔
+Stripe OCS	✔	✔	✔	✔	 	✔
+TD Online Mart	✔	✔	✔	✔	✔	 
+Worldpay B2B Payments	✔	 	 	✔	 	✔
+Worldpay Ecomm	✔	 	 	 	 	✔
+Worldpay Core	✔	 	 	 	 	✔
+Zip	✔	 	✔	 	 	✔
+APP PAYMENT PROCESSORS
+
+In addition to the above payment gateway integrations, the following app payment processors are also Embedded Payment Providers:
+
+Acumatica Payments	Payfabric (Global Payments)
+Bankful	Sezzle
+Fortis	Worldpay WPG
+Klarna Checkout	
+ 
+Open Payment Providers
+
+Processing payments through methods outside of the Embedded Payment Provider list will incur Open Payment Provider fees for stores on self-serve plans. Performance plan stores operating under contracted terms are not subject to this fee.
+
+See each gateway’s documentation for details such as requirements, limitations, setup instructions, supported countries and currencies, and additional features.
+
+ 
+
+Using a “Powered By” store? If you were onboarded to BigCommerce through a partner, you may not have access to all listed payment gateways.
+
+Manual Capture — Authorized payments can be captured manually at a later date.
+3D Secure — An additional security layer that helps prevent unauthorized transactions.
+Multicurrency — Supports multiple transactional currencies.
+Stored Payment Methods — Payment details can be stored for future transactions.
+Recurring Payments — Recurring or subscription payments are supported.
+MSF Payments — Supports multiple payment configurations.
+Payment Gateway	Manual Capture	3D Secure	Multicurrency	Stored Payment Methods	Recurring Payments	MSF Payments
+Authorize.net	✔	 	✔	✔	✔	✔
+Barclaycard Smartpay Advance	✔	✔	✔	✔	✔	✔
+BitPay	 	 	✔	 	 	✔
+Chase Merchant Services	✔	 	✔	✔	✔	✔
+Clover Payments	 	 	 	 	 	✔
+Commonwealth Bank	✔	✔	 	✔	✔	 
+Cybersource	✔	✔	✔	✔	✔	✔
+Electronic Payment Exchange (EPX)	✔	 	 	 	 	✔
+Eway Rapid	✔	 	 	 	 	✔
+Mercado Pago	✔	 	✔	 	 	✔
+Moneris	✔	 	 	✔	 	✔
+MyVirtualMerchant	 	 	 	✔	✔	 
+Nexi XPay	✔	✔	✔	✔	 	✔
+NMI	✔	 	 	 	 	✔
+Opayo by Elavon	✔	✔	✔	✔	 	✔
+Optty	 	 	✔	 	 	✔
+QuickBooks Payments	✔	 	 	 	 	✔
+Serve First	✔	 	 	 	 	 
+Square	✔	✔	 	✔	 	✔
+Tilopay	✔	✔	✔	 	✔	✔
+USAePay	 	 	 	 	 	✔
+Windcave	✔	✔*	✔	 	 	✔
+
+*See article for details.
+
+OFFLINE PAYMENT METHODS
+
+In addition to the above payment gateway integrations, orders processed using offline payment methods are also subject to the Open Payment Provider fee.
+
+Bank deposit	Money order
+Cash on delivery	Pay in-store
+Check*	
+
+*B2B Edition adopts the Check offline payment method to enable the Purchase Order (PO) payment method. Note that Performance plan stores operating under contracted terms are not subject to the Open Payment Provider fee.
+
+ 
+Alternative Payment Methods and Digital Wallets
+
+Alternative Payment Methods (APMs) are payment options that often do not require a major credit card scheme such as Visa or Mastercard. Shoppers in many regions prefer local APMs at checkout, making them a valuable tool for international selling.
+
+Offered through a supporting payment gateway, APMs can include payment types such as:
+
+bank transfers
+“buy now, pay later” (BNPL)
+cash payments
+digital wallets
+direct debit
+mobile payments
+
+Digital wallet APMs allow shoppers to complete purchases by signing into a third-party account, bypassing the need to create a separate account or re-enter payment information. This streamlines the checkout experience, boosts conversion rates, and provides a better mobile shopping experience.
+
+Note that the Amazon Pay, Apple Pay, and Google Pay digital wallets have a unique setup experience and are found under the Digital Wallets section of Settings › Payments.
+
+For a full list of available APMs, digital wallets, and their supported gateways, see Introduction to Alternative Payment Methods.
+
+ 
+Accelerated Checkout Solutions
+
+Accelerated Checkout solutions remove friction from checkout by offering a passwordless checkout experience. When using an Accelerated Checkout, shoppers are prompted to securely save their information with the provider.
+
+Once they have an account, shoppers receive a one-time passcode to their mobile device whenever they enter their email address at checkout, and the Accelerated Checkout solution automatically fills in their address and payment information for a single-click checkout.
+
+Since Accelerated Checkout profiles are supported on any online store using the solution, offering this payment option can assure shoppers that their payments will be speedy and secure. This can encourage repeat purchases and increase your conversion rate.
+
+The following Accelerated Checkout solutions are available in BigCommerce:
+
+Stripe Link — Supported by the Stripe payment gateways; offer a streamlined checkout experience for any shopper with a Link profile.
+Fastlane by PayPal — Fastlane by PayPal provides merchants with a fast, passwordless checkout solution for guest shoppers.
+ 
+FAQ
+
+Where do I manage my funds?
+
+You will control and direct funds in your merchant account with your merchant service provider. Usually, this is where you will connect to your bank account or perform refunds external to BigCommerce.
+
+What is a hosted payment gateway?
+
+Hosted payment gateways navigate shoppers away from your checkout to the payment service provider’s page. After entering their payment details and completing the transaction, they are redirected back to your storefront.
+
+Hosted payment gateways:
+
+Afterpay
+Amazon Pay
+BitPay
+Klarna
+Mercado Pago
+Opayo
+Optty
+Serve First
+Sezzle
+
+Note that hosted gateways are not compatible with Embedded Checkout on headless storefronts. In addition, most APMs and digital wallets do not support Embedded Checkout as they redirect shoppers to a hosted payment page.
+
+APMs and digital wallets that support Embedded Checkout:
+
+Google Pay
+PayPal Pay Later
+
+Do any payment gateways support Level 2 and Level 3 data?
+
+Yes, several gateways support the use of Level 2 and Level 3 data. For more information, see Using Level 2 and Level 3 Data in BigCommerce.
+
+Do any payment gateways support the selling of regulated products, such as firearms, e-cigs, or CBD?
+
+The following gateways may allow the sale of regulated items. Before selling any items, check with your payment gateway to make sure your products are permitted in their terms of service.
+
+Bankful
+NMI
+Sezzle
+USA ePay*
+Worldpay
+
+*You must use Paysafe as your Merchant Services Provider (MSP).
+
+Are there other payment processors outside of payment gateways?
+
+Yes, you can find additional payment processors on our App Marketplace. Note that Open Payment Provider fees may apply. For more details, see About BigCommerce Pricing.
+
+How will I know if changes are made to my payment methods in the control panel?
+
+When a payment method is enabled, disabled, or has settings updated, a notification will appear in the control panel dashboard.
+
+You can also see records of changes to your payment methods in the Staff Action Logs.
+
+Additional Resources
+3D Secure
+Enabling Stored Payment Methods
+Introduction to Alternative Payment Methods
+Manually Capturing Transactions (Authorize Only)
+Multi-Storefront Payment Methods
+Optimized One-Page Checkout
+Recurring Billing
+Using Multiple Currencies
+BigCommerce Embedded Payment Providers (bigcommerce.com)
+BigCommerce Pricing and Plan Information (bigcommerce.com)
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+Available Payment Gateways

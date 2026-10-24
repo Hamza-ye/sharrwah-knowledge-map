@@ -1,0 +1,19 @@
+{
+ "n": 55,
+ "url": "https://partners.salla.com/global-selling-program",
+ "dir": "items/055-partners.salla.com",
+ "fetched_at": "2026-10-11T09:20:12Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://partners.salla.com/global-selling-program",
+ "content_type": "text/html",
+ "bytes": 36956,
+ "cited_in": [
+  "SA-S-5129",
+  "SA-S-5130"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "b3e8a9fb98cbf4728de4b064c55e10799a73734acc891f2c3bee3fc8191bfe58",
+ "raw_ext": "html"
+}

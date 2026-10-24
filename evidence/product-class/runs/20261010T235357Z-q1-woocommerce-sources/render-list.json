@@ -1,0 +1,614 @@
+[
+{
+"n": 1,
+"url": "https://automattic.com/privacy-notice/",
+"dir": "items/001-automattic.com",
+"keep_body": false
+},
+{
+"n": 2,
+"url": "https://automattic.com/privacy/",
+"dir": "items/002-automattic.com",
+"keep_body": false
+},
+{
+"n": 3,
+"url": "https://developer.woocommerce.com/llms.txt",
+"dir": "items/003-developer.woocommerce.com",
+"keep_body": false
+},
+{
+"n": 4,
+"url": "https://en.support.wordpress.com/automattic-gdpr/data-processing-agreements/",
+"dir": "items/004-en.support.wordpress.com",
+"keep_body": false
+},
+{
+"n": 5,
+"url": "https://en.support.wordpress.com/store-guidelines/",
+"dir": "items/005-en.support.wordpress.com",
+"keep_body": false
+},
+{
+"n": 6,
+"url": "https://jetpack.com/support/what-data-does-jetpack-sync/",
+"dir": "items/006-jetpack.com",
+"keep_body": false
+},
+{
+"n": 7,
+"url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/apis/rest-api/authentication.mdx",
+"dir": "items/007-raw.githubusercontent.com",
+"keep_body": false
+},
+{
+"n": 8,
+"url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/apis/store-api/README.md",
+"dir": "items/008-raw.githubusercontent.com",
+"keep_body": false
+},
+{
+"n": 9,
+"url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/apis/store-api/extending-store-api/README.md",
+"dir": "items/009-raw.githubusercontent.com",
+"keep_body": false
+},
+{
+"n": 10,
+"url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/best-practices/data-management/data-storage.md",
+"dir": "items/010-raw.githubusercontent.com",
+"keep_body": false
+},
+{
+"n": 11,
+"url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/best-practices/data-management/logging.md",
+"dir": "items/011-raw.githubusercontent.com",
+"keep_body": false
+},
+{
+"n": 12,
+"url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/block-development/extensible-blocks/cart-and-checkout-blocks/README.md",
+"dir": "items/012-raw.githubusercontent.com",
+"keep_body": false
+},
+{
+"n": 13,
+"url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/extensions/settings-and-config/implementing-settings.md",
+"dir": "items/013-raw.githubusercontent.com",
+"keep_body": false
+},
+{
+"n": 14,
+"url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/features/address-autocomplete.md",
+"dir": "items/014-raw.githubusercontent.com",
+"keep_body": false
+},
+{
+"n": 15,
+"url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/features/mcp/README.md",
+"dir": "items/015-raw.githubusercontent.com",
+"keep_body": false
+},
+{
+"n": 16,
+"url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/features/orders/high-performance-order-storage/README.md",
+"dir": "items/016-raw.githubusercontent.com",
+"keep_body": false
+},
+{
+"n": 17,
+"url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/features/payments/payment-gateway-api.md",
+"dir": "items/017-raw.githubusercontent.com",
+"keep_body": false
+},
+{
+"n": 18,
+"url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/features/payments/payment-token-api.md",
+"dir": "items/018-raw.githubusercontent.com",
+"keep_body": false
+},
+{
+"n": 19,
+"url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/features/shipping/shipping-method-api.md",
+"dir": "items/019-raw.githubusercontent.com",
+"keep_body": false
+},
+{
+"n": 20,
+"url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/woo-marketplace/getting-started.md",
+"dir": "items/020-raw.githubusercontent.com",
+"keep_body": false
+},
+{
+"n": 21,
+"url": "https://woocommerce.com/do-not-sell-or-share-my-personal-information/",
+"dir": "items/021-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 22,
+"url": "https://woocommerce.com/document/configuring-woocommerce-settings/accounts-and-privacy/",
+"dir": "items/022-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 23,
+"url": "https://woocommerce.com/document/configuring-woocommerce-settings/coming-soon-mode/",
+"dir": "items/023-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 24,
+"url": "https://woocommerce.com/document/configuring-woocommerce-settings/general/",
+"dir": "items/024-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 25,
+"url": "https://woocommerce.com/document/eu-vat-number/",
+"dir": "items/025-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 26,
+"url": "https://woocommerce.com/document/installing-uninstalling-woocommerce/",
+"dir": "items/026-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 27,
+"url": "https://woocommerce.com/document/managing-orders/order-statuses/",
+"dir": "items/027-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 28,
+"url": "https://woocommerce.com/document/managing-woocommerce-com-subscriptions/connect-your-site-to-woocommerce-com/",
+"dir": "items/028-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 29,
+"url": "https://woocommerce.com/document/managing-woocommerce-com-subscriptions/what-are-woocommerce-com-subscriptions/",
+"dir": "items/029-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 30,
+"url": "https://woocommerce.com/document/marketplace-privacy/",
+"dir": "items/030-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 31,
+"url": "https://woocommerce.com/document/maxmind-geolocation-integration/",
+"dir": "items/031-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 32,
+"url": "https://woocommerce.com/document/order-attribution-tracking/",
+"dir": "items/032-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 33,
+"url": "https://woocommerce.com/document/order-fulfillment/",
+"dir": "items/033-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 34,
+"url": "https://woocommerce.com/document/pci-dss-compliance-and-woocommerce/",
+"dir": "items/034-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 35,
+"url": "https://woocommerce.com/document/privacy-payments/",
+"dir": "items/035-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 36,
+"url": "https://woocommerce.com/document/privacy-shipping/",
+"dir": "items/036-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 37,
+"url": "https://woocommerce.com/document/roles-capabilities/",
+"dir": "items/037-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 38,
+"url": "https://woocommerce.com/document/server-requirements/",
+"dir": "items/038-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 39,
+"url": "https://woocommerce.com/document/setting-up-taxes-in-woocommerce/",
+"dir": "items/039-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 40,
+"url": "https://woocommerce.com/document/shop-currency/",
+"dir": "items/040-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 41,
+"url": "https://woocommerce.com/document/stripe/",
+"dir": "items/041-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 42,
+"url": "https://woocommerce.com/document/webhooks/",
+"dir": "items/042-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 43,
+"url": "https://woocommerce.com/document/woo-mobile-app-point-of-sale-mode/",
+"dir": "items/043-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 44,
+"url": "https://woocommerce.com/document/woocommerce-analytics/",
+"dir": "items/044-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 45,
+"url": "https://woocommerce.com/document/woocommerce-rest-api/",
+"dir": "items/045-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 46,
+"url": "https://woocommerce.com/document/woocommerce-shipping-and-tax/",
+"dir": "items/046-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 47,
+"url": "https://woocommerce.com/document/woocommerce-shipping-and-tax/woocommerce-tax/",
+"dir": "items/047-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 48,
+"url": "https://woocommerce.com/document/woocommerce-shipping/",
+"dir": "items/048-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 49,
+"url": "https://woocommerce.com/document/woocommerce-square/",
+"dir": "items/049-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 50,
+"url": "https://woocommerce.com/document/woopayments/",
+"dir": "items/050-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 51,
+"url": "https://woocommerce.com/document/woopayments/account-management/delete-account/",
+"dir": "items/051-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 52,
+"url": "https://woocommerce.com/document/woopayments/account-management/existing-stripe-account/",
+"dir": "items/052-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 53,
+"url": "https://woocommerce.com/document/woopayments/account-management/partnership-with-stripe/",
+"dir": "items/053-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 54,
+"url": "https://woocommerce.com/document/woopayments/compatibility/countries/",
+"dir": "items/054-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 55,
+"url": "https://woocommerce.com/document/woopayments/compatibility/is-woopayments-required-to-take-payments/",
+"dir": "items/055-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 56,
+"url": "https://woocommerce.com/document/woopayments/compatibility/woopayments-vs-stripe-plugin-comparison/",
+"dir": "items/056-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 57,
+"url": "https://woocommerce.com/document/woopayments/currencies/currencies-overview/",
+"dir": "items/057-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 58,
+"url": "https://woocommerce.com/document/woopayments/currencies/multi-currency-setup/",
+"dir": "items/058-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 59,
+"url": "https://woocommerce.com/document/woopayments/fees/",
+"dir": "items/059-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 60,
+"url": "https://woocommerce.com/document/woopayments/fees/currency-conversion-fees/",
+"dir": "items/060-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 61,
+"url": "https://woocommerce.com/document/woopayments/fees/fee-currency/",
+"dir": "items/061-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 62,
+"url": "https://woocommerce.com/document/woopayments/fraud-and-disputes/does-woopayments-use-stripe-radar/",
+"dir": "items/062-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 63,
+"url": "https://woocommerce.com/document/woopayments/fraud-and-disputes/fraud-protection/",
+"dir": "items/063-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 64,
+"url": "https://woocommerce.com/document/woopayments/fraud-and-disputes/managing-disputes/",
+"dir": "items/064-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 65,
+"url": "https://woocommerce.com/document/woopayments/in-person-payments/",
+"dir": "items/065-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 66,
+"url": "https://woocommerce.com/document/woopayments/our-policies/",
+"dir": "items/066-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 67,
+"url": "https://woocommerce.com/document/woopayments/our-policies/connection/",
+"dir": "items/067-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 68,
+"url": "https://woocommerce.com/document/woopayments/our-policies/know-your-customer/",
+"dir": "items/068-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 69,
+"url": "https://woocommerce.com/document/woopayments/our-policies/pci-compliance/",
+"dir": "items/069-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 70,
+"url": "https://woocommerce.com/document/woopayments/our-policies/prohibited-and-restricted-products/",
+"dir": "items/070-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 71,
+"url": "https://woocommerce.com/document/woopayments/our-policies/reserves/",
+"dir": "items/071-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 72,
+"url": "https://woocommerce.com/document/woopayments/payment-methods/local-payment-methods/",
+"dir": "items/072-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 73,
+"url": "https://woocommerce.com/document/woopayments/payouts/",
+"dir": "items/073-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 74,
+"url": "https://woocommerce.com/document/woopayments/payouts/deposits-and-payouts/",
+"dir": "items/074-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 75,
+"url": "https://woocommerce.com/document/woopayments/payouts/payout-currencies/",
+"dir": "items/075-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 76,
+"url": "https://woocommerce.com/document/woopayments/payouts/why-payouts-suspended/",
+"dir": "items/076-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 77,
+"url": "https://woocommerce.com/document/woopayments/stripe-capital/overview/",
+"dir": "items/077-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 78,
+"url": "https://woocommerce.com/document/woopayments/taxes/",
+"dir": "items/078-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 79,
+"url": "https://woocommerce.com/document/woopayments/taxes/documents/",
+"dir": "items/079-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 80,
+"url": "https://woocommerce.com/page-sitemap.xml",
+"dir": "items/080-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 81,
+"url": "https://woocommerce.com/product-category/business-services/",
+"dir": "items/081-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 82,
+"url": "https://woocommerce.com/product-category/woocommerce-extensions/",
+"dir": "items/082-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 83,
+"url": "https://woocommerce.com/product-category/woocommerce-extensions/conversion/",
+"dir": "items/083-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 84,
+"url": "https://woocommerce.com/product-category/woocommerce-extensions/customer-service-2/",
+"dir": "items/084-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 85,
+"url": "https://woocommerce.com/product-category/woocommerce-extensions/marketing-extensions/",
+"dir": "items/085-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 86,
+"url": "https://woocommerce.com/product-category/woocommerce-extensions/merchandising/",
+"dir": "items/086-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 87,
+"url": "https://woocommerce.com/product-category/woocommerce-extensions/operations/",
+"dir": "items/087-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 88,
+"url": "https://woocommerce.com/product-category/woocommerce-extensions/payment-gateways/",
+"dir": "items/088-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 89,
+"url": "https://woocommerce.com/product-category/woocommerce-extensions/shipping-delivery-and-fulfillment/",
+"dir": "items/089-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 90,
+"url": "https://woocommerce.com/product-category/woocommerce-extensions/store-content-and-customizations/",
+"dir": "items/090-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 91,
+"url": "https://woocommerce.com/products/",
+"dir": "items/091-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 92,
+"url": "https://woocommerce.com/refund-policy/",
+"dir": "items/092-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 93,
+"url": "https://woocommerce.com/support-policy/",
+"dir": "items/093-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 94,
+"url": "https://woocommerce.com/tracking-and-opt-outs/",
+"dir": "items/094-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 95,
+"url": "https://woocommerce.com/usage-tracking/",
+"dir": "items/095-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 96,
+"url": "https://woocommerce.com/woo-vendor-agreement/",
+"dir": "items/096-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 97,
+"url": "https://woocommerce.com/wooads-policy/",
+"dir": "items/097-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 98,
+"url": "https://woocommerce.com/woocommerce-analytics-data-syncing/",
+"dir": "items/098-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 99,
+"url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+"dir": "items/099-woocommerce.github.io",
+"keep_body": false
+},
+{
+"n": 100,
+"url": "https://wordpress.com/support/restricted-businesses-and-activities/",
+"dir": "items/100-wordpress.com",
+"keep_body": false
+},
+{
+"n": 101,
+"url": "https://wordpress.com/tos/",
+"dir": "items/101-wordpress.com",
+"keep_body": false
+},
+{
+"n": 102,
+"url": "https://wordpress.org/plugins/woocommerce/",
+"dir": "items/102-wordpress.org",
+"keep_body": false
+}
+]

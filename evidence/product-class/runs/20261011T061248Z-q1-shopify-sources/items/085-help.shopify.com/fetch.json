@@ -1,0 +1,19 @@
+{
+ "n": 85,
+ "url": "https://help.shopify.com/en/manual/promoting-marketing/collabs.md",
+ "dir": "items/085-help.shopify.com",
+ "fetched_at": "2026-10-11T06:13:04Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/promoting-marketing/collabs.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 847,
+ "cited_in": [
+  "SH-S-0731",
+  "SH-S-0732"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "cc3ac0d53cfa27b84ed92eaa0002334e43cd188ad4a8e55284329cbaab2bd388",
+ "raw_ext": "txt"
+}

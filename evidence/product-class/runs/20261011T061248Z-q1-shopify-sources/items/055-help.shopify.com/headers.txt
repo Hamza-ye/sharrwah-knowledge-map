@@ -1,0 +1,21 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Sun, 11 Oct 2026 06:13:01 GMT
+content-type: text/markdown; charset=utf-8
+cache-control: max-age=900, must-revalidate
+etag: zf4dec2uklWaP1XBr3DdoXs5HCOjdt6C4EWTPuDGWDg-markdown
+vary: Accept, Accept-Encoding
+x-remix-response: yes
+set-cookie: _merchant_essential=:AaEpl9_kAAEARKosHIhr3JGBl4E323P-42LjV4OGbTb7VaRice3NPngIDKxA5Clzas5e02hy3u6lWGWk08fMwstSUQiGMd_MeRV3W4CbkYpD1Z0CsRcATLXlss-X8CgLe4LOn227ivJkN7AmcrkR4iDER8HaVMalUdgn7UF0HQwaB-LB7yDA5VwiIRGg0nfd6zoXnhgdmc-uJK19zTCcyB0CAyAaOuTzZB0:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax; Domain=.shopify.com
+set-cookie: _merchant_analytics=:AaEpl9_lAAEAd5QiD49Ub0tAf6FOkfNXI5bXMCoBPY7Nvg4CjM6VlBPWdA05ryiUqKGO-SCCF2lkg9JMF0st-znHc0V0jRu9KH9tRNbvmbCAvoIE-0IDDhlklA:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax; Domain=.shopify.com
+content-encoding: br
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-dc: gcp-us-central1,gcp-us-central1
+x-request-id: 01a12997-dfce-77e3-860c-337ef270d77e-1791699181
+server: envoy
+x-shopify-gclb-trace-timing: 1791699181.518
+via: 1.1 google
+nel: {"max_age":0}
+alt-svc: h3=":443"; ma=2592000
+

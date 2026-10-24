@@ -1,0 +1,208 @@
+___
+Skip to navigation
+Skip to content
+USD
+Change site currency USD selected
+Develop on Woo
+Hire an expert
+Get support
+Sell
+Click to show 12 more items
+Extensions
+Click to show 18 more items
+Resources
+Click to show 23 more items
+Enterprise ecommerce
+Log in
+Get started
+Documentation
+WooCommerce
+Expand
+Products
+Expand
+Extensions
+Expand
+Themes
+Expand
+WooPayments
+WooPay
+WooCommerce Shipping
+WooCommerce Tax
+Retired Products
+Expand
+Woo Marketplace
+Code Snippets
+Expand
+WooPayments / Documentation / WooPayments Documentation / WooPayments: Account Management / How do I delete my WooPayments account?
+How do I delete my WooPayments account?
+
+There may come a point where you would like to delete or close your WooPayments account. This may be because you made a mistake when providing KYC information, the wrong country was chosen, or maybe you just want to stop using it.
+
+WooPayments accounts contain information that we must retain for tax and compliance purposes. As a result, WooPayments accounts can only be deleted by our support staff. Additionally, we can only delete a WooPayments account if it meets specific criteria.
+
+There is no self-serve method to delete a WooPayments account. (Deactivating and deleting the WooPayments plugin also does not close the account.)
+
+Account deletion requirements
+
+WooPayments accounts can only be deleted if all of the following apply:
+
+The account has not processed any live transactions, and…
+The account is in good standing. This means:
+The account does not have a Rejected status, and…
+The account does not have payouts suspended.
+
+If your account doesn’t meet these requirements, see this section.
+
+Requesting deletion
+
+If your account meets the requirements and you wish to delete it, contact support.
+
+To allow our support team to more easily locate your WooPayments account in our systems, please include the following information:
+
+Your site’s URL.
+The email address associated with your WooPayments account.
+Your site’s system status report.
+
+After a WooPayments account deletion request is received, we will:
+
+Check to confirm that it qualifies for deletion.
+Ask for your approval to delete the account.
+Delete the account from our systems.
+Confirm with you that it’s been deleted.
+
+Once a WooPayments account is deleted, it is not recoverable.
+
+Stop using WooPayments
+
+If your WooPayments account does not qualify for deletion, the alternative is to disable WooPayments as a payment gateway on your site.
+
+There are a few important things to be aware of though:
+
+We strongly suggest leaving the plugin itself active for at least 6 months after your final transaction. This is because, if you delete the WooPayments plugin, you will no longer be able to issue refunds or respond to disputes for WooPayments orders.
+If you don’t already have an alternative payment gateway enabled, doing so before disabling WooPayments ensures that customers will still be able to place orders.
+If you have subscribers using the Stripe Billing engine, their renewals will continue to process even if WooPayments is disabled. To stop their subscription renewals, you will need to cancel their subscriptions before disabling WooPayments.
+
+To disable WooPayments as a payment method on your site:
+
+Navigate to your WooCommerce site’s administrator dashboard.
+Find your WooPayments settings at Payments > Settings.
+Uncheck the “Enable WooPayments” box.
+Click Disable in the popup that appears.
+Scroll to the bottom of the page and click Save Changes.
+
+Once you complete those steps, WooPayments will no longer appear on the customer-facing portion of your site. However, your account will still exist so that you can perform administrative tasks for orders placed via WooPayments, such as:
+
+Issuing refunds.
+Responding to disputes.
+Viewing transaction data.
+Closing your store
+
+Your WooPayments account is managed via your store’s admin dashboard. If you close your site, let the domain lapse, or migrate to another platform, you may lose access to that dashboard. Without the dashboard, you won’t be able to issue refunds or respond to disputes on past WooPayments orders.
+
+Because disputes can arrive months after the original payment, we suggest keeping the site accessible for at least 6 months after your final WooPayments transaction, even if you have stopped selling there. Keeping the site reachable (even on a parked or staging domain) preserves your access to refunds, disputes, and transaction data during the window when they can still occur.
+
+Was this guide helpful for you?
+Related Products
+WooCommerce Subscriptions
+by
+Woo
+
+WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or...
+
+Excellence verified
+Price $279 annually
+$279
+annually
+Rated 3.9 out of 5 stars
+3.9 
+(142)
+Product Add-Ons
+by
+Woo
+
+Offer add-ons like gift wrapping, special messages or other special options for your products.
+
+Price $79 annually
+$79
+annually
+Rated 3.4 out of 5 stars
+3.4 
+(49)
+ON THIS PAGE
+Account deletion requirements
+Requesting deletion
+Stop using WooPayments
+Closing your store
+WooPayments
+by Woo
+No payment details required • Set up in minutes
+Install for free
+30-day money-back guarantee
+Support teams across the world
+Safe and secure online payments
+Sell
+WooCommerce
+WooCommerce pricing
+Payments
+No-code customization
+Marketing
+Checkout
+Shipping
+Mobile app
+Enterprise ecommerce
+Marketplace
+WooCommerce extensions
+WooCommerce themes
+New
+Essentials
+Collections
+Developed by Woo
+Build
+Woo for developers
+Developer resources
+Become a Woo agency
+Become a Marketplace partner
+Become an affiliate
+Resources
+Blog
+Documentation
+WooCommerce site examples
+Product updates
+Email newsletter
+Support
+Feature requests
+WooCommerce hosting
+Hire an agency
+Participate in customer research
+Accessibility
+Support forums
+Company
+About
+Press
+Download WooCommerce free
+Join the Woo community
+Woo trademark guidelines
+Brand and logo guidelines
+Do not sell or share my personal information
+WooCommerce Support Policy
+Refund Policy
+Contact us
+Follow us on Facebook
+Follow us on X
+Follow us on Instagram
+Follow us on LinkedIn
+USD
+Change site currency USD selected
+Terms of Service
+Privacy Policy
+Privacy Notice for California Users
+
+© WooCommerce, Inc. 2026
+
+AN
+AUTOMATTIC
+INVENTION
+Use of your personal data
+We and our partners process your personal data (such as browsing data, IP Addresses, cookie information, and other unique identifiers) based on your consent and/or our legitimate interest to optimize our website, marketing activities, and your user experience.
+Customize
+Accept all

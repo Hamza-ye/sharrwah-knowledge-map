@@ -1,0 +1,18 @@
+{
+ "n": 28,
+ "url": "https://help.salla.sa/article/اعلمني-عند-التوفر/irngv7s52c5mrdn6xaq1sjtw",
+ "dir": "items/028-help.salla.sa",
+ "fetched_at": "2026-10-11T09:19:33Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.salla.sa/article/اعلمني-عند-التوفر/irngv7s52c5mrdn6xaq1sjtw",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 139746,
+ "cited_in": [
+  "SA-S-5013"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "a7c4c4ab68662c47650864052130de9b95c43b8d6997324aac15d8c7d7c1a946",
+ "raw_ext": "html"
+}

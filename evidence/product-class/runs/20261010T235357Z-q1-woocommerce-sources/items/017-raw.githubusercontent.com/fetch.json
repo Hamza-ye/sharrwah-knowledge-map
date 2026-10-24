@@ -1,0 +1,22 @@
+{
+ "n": 17,
+ "url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/features/payments/payment-gateway-api.md",
+ "dir": "items/017-raw.githubusercontent.com",
+ "fetched_at": "2026-10-10T23:53:59Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/features/payments/payment-gateway-api.md",
+ "content_type": "text/plain; charset=utf-8",
+ "bytes": 4479,
+ "cited_in": [
+  "WC-S-0623",
+  "WC-S-0624",
+  "WC-S-0625",
+  "WC-S-0626",
+  "WC-S-0627"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "bac51c5d63aabbe4580e3c3f4106c56d700273d2ee647fcef40c5307ad46dea6",
+ "raw_ext": "txt"
+}

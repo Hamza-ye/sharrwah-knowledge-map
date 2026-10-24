@@ -1,0 +1,914 @@
+[
+{
+"n": 1,
+"url": "https://help.shopify.com/en/manual/ai-powered-tools/sidekick.md",
+"dir": "items/001-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 2,
+"url": "https://help.shopify.com/en/manual/apps/apps-by-shopify.md",
+"dir": "items/002-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 3,
+"url": "https://help.shopify.com/en/manual/b2b/getting-started.md",
+"dir": "items/003-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 4,
+"url": "https://help.shopify.com/en/manual/checkout-settings/bot-protection.md",
+"dir": "items/004-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 5,
+"url": "https://help.shopify.com/en/manual/compliance/legal.md",
+"dir": "items/005-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 6,
+"url": "https://help.shopify.com/en/manual/compliance/legal/consumer-protection.md",
+"dir": "items/006-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 7,
+"url": "https://help.shopify.com/en/manual/compliance/legal/handling-store-termination.md",
+"dir": "items/007-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 8,
+"url": "https://help.shopify.com/en/manual/customers/customer-accounts.md",
+"dir": "items/008-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 9,
+"url": "https://help.shopify.com/en/manual/finance.md",
+"dir": "items/009-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 10,
+"url": "https://help.shopify.com/en/manual/finance/shopify-balance.md",
+"dir": "items/010-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 11,
+"url": "https://help.shopify.com/en/manual/finance/shopify-balance/eligibility.md",
+"dir": "items/011-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 12,
+"url": "https://help.shopify.com/en/manual/finance/shopify-bill-pay.md",
+"dir": "items/012-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 13,
+"url": "https://help.shopify.com/en/manual/finance/shopify-capital.md",
+"dir": "items/013-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 14,
+"url": "https://help.shopify.com/en/manual/finance/shopify-capital/australia.md",
+"dir": "items/014-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 15,
+"url": "https://help.shopify.com/en/manual/finance/shopify-capital/canada.md",
+"dir": "items/015-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 16,
+"url": "https://help.shopify.com/en/manual/finance/shopify-capital/eligibility.md",
+"dir": "items/016-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 17,
+"url": "https://help.shopify.com/en/manual/finance/shopify-capital/france.md",
+"dir": "items/017-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 18,
+"url": "https://help.shopify.com/en/manual/finance/shopify-capital/germany.md",
+"dir": "items/018-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 19,
+"url": "https://help.shopify.com/en/manual/finance/shopify-capital/ireland.md",
+"dir": "items/019-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 20,
+"url": "https://help.shopify.com/en/manual/finance/shopify-capital/netherlands.md",
+"dir": "items/020-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 21,
+"url": "https://help.shopify.com/en/manual/finance/shopify-capital/spain.md",
+"dir": "items/021-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 22,
+"url": "https://help.shopify.com/en/manual/finance/shopify-capital/united-kingdom.md",
+"dir": "items/022-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 23,
+"url": "https://help.shopify.com/en/manual/finance/shopify-capital/united-states.md",
+"dir": "items/023-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 24,
+"url": "https://help.shopify.com/en/manual/finance/shopify-credit.md",
+"dir": "items/024-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 25,
+"url": "https://help.shopify.com/en/manual/finance/shopify-credit/getting-started.md",
+"dir": "items/025-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 26,
+"url": "https://help.shopify.com/en/manual/fulfillment/fulfilling-orders/shipping-labels.md",
+"dir": "items/026-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 27,
+"url": "https://help.shopify.com/en/manual/fulfillment/fulfilling-orders/shipping-labels/shipping-insurance.md",
+"dir": "items/027-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 28,
+"url": "https://help.shopify.com/en/manual/fulfillment/managing-orders/protecting-orders/fraud-analysis.md",
+"dir": "items/028-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 29,
+"url": "https://help.shopify.com/en/manual/fulfillment/managing-orders/protecting-orders/shopify-flow.md",
+"dir": "items/029-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 30,
+"url": "https://help.shopify.com/en/manual/fulfillment/setup/order-routing.md",
+"dir": "items/030-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 31,
+"url": "https://help.shopify.com/en/manual/fulfillment/shopify-fulfillment-network.md",
+"dir": "items/031-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 32,
+"url": "https://help.shopify.com/en/manual/international.md",
+"dir": "items/032-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 33,
+"url": "https://help.shopify.com/en/manual/international/duties-and-import-taxes.md",
+"dir": "items/033-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 34,
+"url": "https://help.shopify.com/en/manual/international/managed-markets.md",
+"dir": "items/034-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 35,
+"url": "https://help.shopify.com/en/manual/international/managed-markets/overview.md",
+"dir": "items/035-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 36,
+"url": "https://help.shopify.com/en/manual/international/payments.md",
+"dir": "items/036-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 37,
+"url": "https://help.shopify.com/en/manual/international/pricing.md",
+"dir": "items/037-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 38,
+"url": "https://help.shopify.com/en/manual/international/pricing/exchange-rates.md",
+"dir": "items/038-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 39,
+"url": "https://help.shopify.com/en/manual/international/pricing/fees.md",
+"dir": "items/039-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 40,
+"url": "https://help.shopify.com/en/manual/markets.md",
+"dir": "items/040-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 41,
+"url": "https://help.shopify.com/en/manual/markets/backup-region.md",
+"dir": "items/041-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 42,
+"url": "https://help.shopify.com/en/manual/markets/rollouts.md",
+"dir": "items/042-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 43,
+"url": "https://help.shopify.com/en/manual/online-sales-channels/marketplaces/marketplace-connect.md",
+"dir": "items/043-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 44,
+"url": "https://help.shopify.com/en/manual/online-sales-channels/shop.md",
+"dir": "items/044-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 45,
+"url": "https://help.shopify.com/en/manual/online-sales-channels/shop/shop-campaigns.md",
+"dir": "items/045-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 46,
+"url": "https://help.shopify.com/en/manual/online-sales-channels/shopify-collective.md",
+"dir": "items/046-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 47,
+"url": "https://help.shopify.com/en/manual/payments.md",
+"dir": "items/047-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 48,
+"url": "https://help.shopify.com/en/manual/payments/accelerated-checkouts.md",
+"dir": "items/048-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 49,
+"url": "https://help.shopify.com/en/manual/payments/additional-payment-methods/cryptocurrency.md",
+"dir": "items/049-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 50,
+"url": "https://help.shopify.com/en/manual/payments/chargebacks.md",
+"dir": "items/050-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 51,
+"url": "https://help.shopify.com/en/manual/payments/getting-paid.md",
+"dir": "items/051-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 52,
+"url": "https://help.shopify.com/en/manual/payments/manual-payments.md",
+"dir": "items/052-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 53,
+"url": "https://help.shopify.com/en/manual/payments/payment-authorization.md",
+"dir": "items/053-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 54,
+"url": "https://help.shopify.com/en/manual/payments/paypal.md",
+"dir": "items/054-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 55,
+"url": "https://help.shopify.com/en/manual/payments/shop-cash.md",
+"dir": "items/055-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 56,
+"url": "https://help.shopify.com/en/manual/payments/shop-pay-installments.md",
+"dir": "items/056-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 57,
+"url": "https://help.shopify.com/en/manual/payments/shop-pay.md",
+"dir": "items/057-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 58,
+"url": "https://help.shopify.com/en/manual/payments/shop-pay/shopify-protect.md",
+"dir": "items/058-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 59,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments.md",
+"dir": "items/059-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 60,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/local-payment-methods.md",
+"dir": "items/060-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 61,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/managed-payment-methods.md",
+"dir": "items/061-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 62,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/acceptable-business-practices.md",
+"dir": "items/062-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 63,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/account-setup.md",
+"dir": "items/063-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 64,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/bank-account-requirements.md",
+"dir": "items/064-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 65,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/eligibility.md",
+"dir": "items/065-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 66,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/selling-with-multiple-entities.md",
+"dir": "items/066-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 67,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/payouts.md",
+"dir": "items/067-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 68,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/payouts/account-holds.md",
+"dir": "items/068-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 69,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/payouts/payout-timing.md",
+"dir": "items/069-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 70,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/payouts/reserves.md",
+"dir": "items/070-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 71,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/store-currency/currency-conversion-calculation.md",
+"dir": "items/071-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 72,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/store-currency/multi-currency.md",
+"dir": "items/072-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 73,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/store-currency/payouts-in-multiple-currencies.md",
+"dir": "items/073-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 74,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/store-currency/understanding-store-and-payout-currencies.md",
+"dir": "items/074-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 75,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/supported-countries.md",
+"dir": "items/075-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 76,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/supported-countries/united-states/tax-reporting.md",
+"dir": "items/076-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 77,
+"url": "https://help.shopify.com/en/manual/payments/shopify-payments/using-shopify-payments-with-a-third-party-provider.md",
+"dir": "items/077-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 78,
+"url": "https://help.shopify.com/en/manual/payments/third-party-providers.md",
+"dir": "items/078-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 79,
+"url": "https://help.shopify.com/en/manual/payments/third-party-providers/payment-gateway-availability.md",
+"dir": "items/079-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 80,
+"url": "https://help.shopify.com/en/manual/privacy-and-security/privacy/customer-privacy-settings.md",
+"dir": "items/080-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 81,
+"url": "https://help.shopify.com/en/manual/privacy-and-security/privacy/international-data-transfers/configuration-options.md",
+"dir": "items/081-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 82,
+"url": "https://help.shopify.com/en/manual/privacy-and-security/privacy/international-data-transfers/contracting-entities.md",
+"dir": "items/082-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 83,
+"url": "https://help.shopify.com/en/manual/privacy-and-security/privacy/international-data-transfers/onward-transfers.md",
+"dir": "items/083-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 84,
+"url": "https://help.shopify.com/en/manual/privacy-and-security/privacy/processing-customer-data-requests.md",
+"dir": "items/084-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 85,
+"url": "https://help.shopify.com/en/manual/promoting-marketing/collabs.md",
+"dir": "items/085-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 86,
+"url": "https://help.shopify.com/en/manual/promoting-marketing/shopify-audiences.md",
+"dir": "items/086-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 87,
+"url": "https://help.shopify.com/en/manual/sell-in-person/getting-started/setup-payment-method/shopify-payments-pos.md",
+"dir": "items/087-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 88,
+"url": "https://help.shopify.com/en/manual/sell-in-person/shopify-pos/selling-offline/offline-payments.md",
+"dir": "items/088-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 89,
+"url": "https://help.shopify.com/en/manual/taxes.md",
+"dir": "items/089-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 90,
+"url": "https://help.shopify.com/en/manual/taxes/manual-tax-settings.md",
+"dir": "items/090-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 91,
+"url": "https://help.shopify.com/en/manual/taxes/registration.md",
+"dir": "items/091-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 92,
+"url": "https://help.shopify.com/en/manual/taxes/shopify-tax.md",
+"dir": "items/092-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 93,
+"url": "https://help.shopify.com/en/manual/taxes/shopify-tax/automated-filing.md",
+"dir": "items/093-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 94,
+"url": "https://help.shopify.com/en/manual/taxes/shopify-tax/automated-filing/considerations.md",
+"dir": "items/094-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 95,
+"url": "https://help.shopify.com/en/manual/taxes/shopify-tax/automated-filing/filing-partners.md",
+"dir": "items/095-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 96,
+"url": "https://help.shopify.com/en/manual/taxes/shopify-tax/considerations.md",
+"dir": "items/096-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 97,
+"url": "https://help.shopify.com/en/manual/taxes/shopify-tax/pricing.md",
+"dir": "items/097-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 98,
+"url": "https://help.shopify.com/en/manual/taxes/shopify-tax/vat-validate.md",
+"dir": "items/098-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 99,
+"url": "https://help.shopify.com/en/manual/taxes/tax-apps.md",
+"dir": "items/099-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 100,
+"url": "https://help.shopify.com/en/manual/your-account/business-entities.md",
+"dir": "items/100-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 101,
+"url": "https://help.shopify.com/en/manual/your-account/legal/unsupported-countries-and-regions.md",
+"dir": "items/101-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 102,
+"url": "https://help.shopify.com/en/manual/your-account/logging-in/identity-verification.md",
+"dir": "items/102-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 103,
+"url": "https://help.shopify.com/en/manual/your-account/manage-billing/billing-charges/types-of-charges/taxes/billing-taxes-saudi-arabia-uae.md",
+"dir": "items/103-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 104,
+"url": "https://help.shopify.com/en/manual/your-account/manage-billing/billing-charges/types-of-charges/third-party-charges/app-charges.md",
+"dir": "items/104-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 105,
+"url": "https://help.shopify.com/en/manual/your-account/manage-billing/billing-charges/types-of-charges/third-party-charges/third-party-transaction-fees.md",
+"dir": "items/105-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 106,
+"url": "https://help.shopify.com/en/manual/your-account/manage-billing/paying-your-bills/managing-payments/local-currency.md",
+"dir": "items/106-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 107,
+"url": "https://help.shopify.com/en/manual/your-account/privacy/subprocessors.md",
+"dir": "items/107-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 108,
+"url": "https://shopify.dev/docs/agents.md",
+"dir": "items/108-shopify.dev",
+"keep_body": false
+},
+{
+"n": 109,
+"url": "https://shopify.dev/docs/api/functions/latest/payment-customization.md",
+"dir": "items/109-shopify.dev",
+"keep_body": false
+},
+{
+"n": 110,
+"url": "https://shopify.dev/docs/api/usage/access-scopes.md",
+"dir": "items/110-shopify.dev",
+"keep_body": false
+},
+{
+"n": 111,
+"url": "https://shopify.dev/docs/api/usage/limits.md",
+"dir": "items/111-shopify.dev",
+"keep_body": false
+},
+{
+"n": 112,
+"url": "https://shopify.dev/docs/api/usage/versioning.md",
+"dir": "items/112-shopify.dev",
+"keep_body": false
+},
+{
+"n": 113,
+"url": "https://shopify.dev/docs/apps/build/admin.md",
+"dir": "items/113-shopify.dev",
+"keep_body": false
+},
+{
+"n": 114,
+"url": "https://shopify.dev/docs/apps/build/checkout.md",
+"dir": "items/114-shopify.dev",
+"keep_body": false
+},
+{
+"n": 115,
+"url": "https://shopify.dev/docs/apps/build/compliance/privacy-law-compliance.md",
+"dir": "items/115-shopify.dev",
+"keep_body": false
+},
+{
+"n": 116,
+"url": "https://shopify.dev/docs/apps/build/customer-accounts.md",
+"dir": "items/116-shopify.dev",
+"keep_body": false
+},
+{
+"n": 117,
+"url": "https://shopify.dev/docs/apps/build/functions.md",
+"dir": "items/117-shopify.dev",
+"keep_body": false
+},
+{
+"n": 118,
+"url": "https://shopify.dev/docs/apps/build/marketing-analytics/pixels.md",
+"dir": "items/118-shopify.dev",
+"keep_body": false
+},
+{
+"n": 119,
+"url": "https://shopify.dev/docs/apps/build/online-store/theme-app-extensions.md",
+"dir": "items/119-shopify.dev",
+"keep_body": false
+},
+{
+"n": 120,
+"url": "https://shopify.dev/docs/apps/build/orders-fulfillment/fulfillment-service-apps.md",
+"dir": "items/120-shopify.dev",
+"keep_body": false
+},
+{
+"n": 121,
+"url": "https://shopify.dev/docs/apps/build/payments.md",
+"dir": "items/121-shopify.dev",
+"keep_body": false
+},
+{
+"n": 122,
+"url": "https://shopify.dev/docs/apps/build/payments/considerations.md",
+"dir": "items/122-shopify.dev",
+"keep_body": false
+},
+{
+"n": 123,
+"url": "https://shopify.dev/docs/apps/build/pos.md",
+"dir": "items/123-shopify.dev",
+"keep_body": false
+},
+{
+"n": 124,
+"url": "https://shopify.dev/docs/apps/build/purchase-options/subscriptions.md",
+"dir": "items/124-shopify.dev",
+"keep_body": false
+},
+{
+"n": 125,
+"url": "https://shopify.dev/docs/apps/build/sales-channels.md",
+"dir": "items/125-shopify.dev",
+"keep_body": false
+},
+{
+"n": 126,
+"url": "https://shopify.dev/docs/apps/build/webhooks.md",
+"dir": "items/126-shopify.dev",
+"keep_body": false
+},
+{
+"n": 127,
+"url": "https://shopify.dev/docs/apps/launch/billing.md",
+"dir": "items/127-shopify.dev",
+"keep_body": false
+},
+{
+"n": 128,
+"url": "https://shopify.dev/docs/apps/launch/distribution.md",
+"dir": "items/128-shopify.dev",
+"keep_body": false
+},
+{
+"n": 129,
+"url": "https://shopify.dev/docs/apps/launch/protected-customer-data.md",
+"dir": "items/129-shopify.dev",
+"keep_body": false
+},
+{
+"n": 130,
+"url": "https://shopify.dev/docs/storefronts/headless.md",
+"dir": "items/130-shopify.dev",
+"keep_body": false
+},
+{
+"n": 131,
+"url": "https://www.shopify.com/legal/api-terms",
+"dir": "items/131-shopify.com",
+"keep_body": false
+},
+{
+"n": 132,
+"url": "https://www.shopify.com/legal/aup",
+"dir": "items/132-shopify.com",
+"keep_body": false
+},
+{
+"n": 133,
+"url": "https://www.shopify.com/legal/binding-corporate-rules",
+"dir": "items/133-shopify.com",
+"keep_body": false
+},
+{
+"n": 134,
+"url": "https://www.shopify.com/legal/dpa",
+"dir": "items/134-shopify.com",
+"keep_body": false
+},
+{
+"n": 135,
+"url": "https://www.shopify.com/legal/eu-terms",
+"dir": "items/135-shopify.com",
+"keep_body": false
+},
+{
+"n": 136,
+"url": "https://www.shopify.com/legal/gvtaccesspolicy",
+"dir": "items/136-shopify.com",
+"keep_body": false
+},
+{
+"n": 137,
+"url": "https://www.shopify.com/legal/p2b/legal-notices",
+"dir": "items/137-shopify.com",
+"keep_body": false
+},
+{
+"n": 138,
+"url": "https://www.shopify.com/legal/privacy",
+"dir": "items/138-shopify.com",
+"keep_body": false
+},
+{
+"n": 139,
+"url": "https://www.shopify.com/legal/processor-list",
+"dir": "items/139-shopify.com",
+"keep_body": false
+},
+{
+"n": 140,
+"url": "https://www.shopify.com/legal/shop-pay-merchant-terms",
+"dir": "items/140-shopify.com",
+"keep_body": false
+},
+{
+"n": 141,
+"url": "https://www.shopify.com/legal/shopify-tax-filing-terms",
+"dir": "items/141-shopify.com",
+"keep_body": false
+},
+{
+"n": 142,
+"url": "https://www.shopify.com/legal/shopify-tax-terms",
+"dir": "items/142-shopify.com",
+"keep_body": false
+},
+{
+"n": 143,
+"url": "https://www.shopify.com/legal/terms",
+"dir": "items/143-shopify.com",
+"keep_body": false
+},
+{
+"n": 144,
+"url": "https://www.shopify.com/legal/terms-agentic-storefronts",
+"dir": "items/144-shopify.com",
+"keep_body": false
+},
+{
+"n": 145,
+"url": "https://www.shopify.com/legal/terms-cryptocurrency-credit-reward-program",
+"dir": "items/145-shopify.com",
+"keep_body": false
+},
+{
+"n": 146,
+"url": "https://www.shopify.com/legal/terms-gift-cards",
+"dir": "items/146-shopify.com",
+"keep_body": false
+},
+{
+"n": 147,
+"url": "https://www.shopify.com/legal/terms-payfac",
+"dir": "items/147-shopify.com",
+"keep_body": false
+},
+{
+"n": 148,
+"url": "https://www.shopify.com/legal/terms-shipping-global",
+"dir": "items/148-shopify.com",
+"keep_body": false
+},
+{
+"n": 149,
+"url": "https://www.shopify.com/legal/terms-shopify-payments",
+"dir": "items/149-shopify.com",
+"keep_body": false
+},
+{
+"n": 150,
+"url": "https://www.shopify.com/legal/terms-shopify-protect",
+"dir": "items/150-shopify.com",
+"keep_body": false
+},
+{
+"n": 151,
+"url": "https://www.shopify.com/legal/tools/report-an-issue/financial-complaint",
+"dir": "items/151-shopify.com",
+"keep_body": false
+},
+{
+"n": 152,
+"url": "https://www.shopify.com/partners/terms",
+"dir": "items/152-shopify.com",
+"keep_body": false
+}
+]

@@ -1,0 +1,18 @@
+{
+ "n": 1,
+ "url": "https://changelog.partner.zid.sa/",
+ "dir": "items/001-changelog.partner.zid.sa",
+ "fetched_at": "2026-10-19T05:21:11Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://changelog.partner.zid.sa/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 17598,
+ "cited_in": [
+  "studies/proposals/records/Q8/zid/citations.tsv"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "356493e4dee7d628981769bb61923688f14fdd133a57304f4df7dd49255e56ac",
+ "raw_ext": "html"
+}

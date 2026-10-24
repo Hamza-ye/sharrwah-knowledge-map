@@ -1,0 +1,19 @@
+{
+ "n": 12,
+ "url": "https://docs.salla.dev/versioning.md",
+ "dir": "items/012-docs.salla.dev",
+ "fetched_at": "2026-10-10T23:51:32Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.salla.dev/versioning.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 612,
+ "cited_in": [
+  "SA-S-0207",
+  "SA-S-0208"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "fe879b0422397b81b3fab273ab0fb141ec590a892febf9b0441c7eacf1d7e84c",
+ "raw_ext": "txt"
+}

@@ -1,0 +1,18 @@
+{
+ "n": 113,
+ "url": "https://www.bigcommerce.com/product/consumer-financing/",
+ "dir": "items/113-bigcommerce.com",
+ "fetched_at": "2026-10-12T10:51:21Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.bigcommerce.com/product/consumer-financing/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 47866,
+ "cited_in": [
+  "S01-BC-C024"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "c5004e80caf1390abc84662d55d75fe1b9bad08d20bf403892b82b8d61ca1ea3",
+ "raw_ext": "html"
+}

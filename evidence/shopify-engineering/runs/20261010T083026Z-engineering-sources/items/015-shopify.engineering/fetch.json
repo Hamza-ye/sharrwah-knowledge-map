@@ -1,0 +1,18 @@
+{
+ "n": 15,
+ "url": "https://shopify.engineering/horizontally-scaling-the-rails-backend-of-shop-app-with-vitess",
+ "dir": "items/015-shopify.engineering",
+ "fetched_at": "2026-10-10T08:30:28Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://shopify.engineering/horizontally-scaling-the-rails-backend-of-shop-app-with-vitess",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 70315,
+ "cited_in": [
+  "evidence/shopify-engineering/finding-aids/20261010-shopify-engineering-sources.tsv:E015"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "f5e336157ab8cae0e2ea1e6d1afb99803a71da9c0aebbf7507597c905664d816",
+ "raw_ext": "html"
+}

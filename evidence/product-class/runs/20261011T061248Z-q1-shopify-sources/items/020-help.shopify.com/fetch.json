@@ -1,0 +1,18 @@
+{
+ "n": 20,
+ "url": "https://help.shopify.com/en/manual/finance/shopify-capital/netherlands.md",
+ "dir": "items/020-help.shopify.com",
+ "fetched_at": "2026-10-11T06:12:57Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/finance/shopify-capital/netherlands.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 4019,
+ "cited_in": [
+  "SH-S-0495"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "facefdea1caca5b020dd1b49e62b0006051077256079111cdde720b03de3079c",
+ "raw_ext": "txt"
+}

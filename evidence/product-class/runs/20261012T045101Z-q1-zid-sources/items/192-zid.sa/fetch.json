@@ -1,0 +1,18 @@
+{
+ "n": 192,
+ "url": "https://zid.sa/en/legal/global-shipping-terms/",
+ "dir": "items/192-zid.sa",
+ "fetched_at": "2026-10-12T04:53:58Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://zid.sa/en/legal/global-shipping-terms/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 30757,
+ "cited_in": [
+  "ZD-S-0842"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "6b1fa9a54bbf60469bfe8c033cca30ca1d85ec8e61e9f88f5cadd633112711b6",
+ "raw_ext": "html"
+}

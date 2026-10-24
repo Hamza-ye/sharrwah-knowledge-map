@@ -1,0 +1,424 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;"># Intro to App Snippets
+
+**App Snippet** lets you extend any merchant store with custom **JavaScript** from the App Snippets section in the [Salla Partners Portal](https://portal.salla.partners). The Snippet is injected automatically when your app is installed. Salla uploads your snippet as a `.js` file to its CDN and serves it on stores that have your app installed, no deployment or hosting needed on your end.
+
+The editor has been rebuilt from the ground up. What was once an HTML field is now a dedicated JavaScript editor, which means raw markup injection is gone, replaced by a CDN-backed pipeline. Save uploads your snippet to the CDN. You can mock public App Settings values and click **Refresh preview** to test configuration on your demo store without re-saving, but any change to the JavaScript itself requires **Save** before it appears in the preview.
+
+In this article, we will cover how snippets are injected, how to work with store parameters, and walk through building a live chat integration using tawk.to.
+
+:::danger[Migration Required]
+
+
+Migrate your App Snippet before **5 September 2026**, then publish your updated application through the [Salla Partners Portal](https://portal.salla.partners).
+
+**Migration Grace Period:** **5 August 2026 – 5 September 2026**
+:::
+
+## Overview
+
+App Snippet lets you inject custom JavaScript into your merchants' stores. The `.js` file is uploaded to Salla's CDN when you hit **Save** in the editor. Once a merchant installs your app, Salla injects that CDN-hosted file into their store automatically.
+
+:::warning[]
+
+App Snippet now requires valid JavaScript, no raw HTML or JSX. If you still have legacy HTML snippets, open them in the new editor, rewrite them as JavaScript, and **Save** to migrate to the CDN pipeline. Migration is required to stay supported on the platform; legacy inline snippets will not receive future improvements.
+
+![image.png](https://api.apidog.com/api/v1/projects/451700/resources/378590/image-preview)
+:::
+
+If you inspect a store page source after installation, you will find a `&lt;script src="..."&gt;` tag pointing to a Salla CDN URL, that is where your snippet is being served.
+
+Both **Public** and **Private** apps support App Snippet. Scroll down in your app details page on the [Partners Portal](https://portal.salla.partners) to find the App Snippet section.
+
+&lt;Frame caption="App Snippet section in the Partners Portal"&gt;
+![image.png](https://api.apidog.com/api/v1/projects/451700/resources/378592/image-preview)
+&lt;/Frame&gt;
+
+
+---
+
+## Add a New Snippet
+
+&lt;Frame caption="Add new snippet button"&gt;
+
+![image.png](https://api.apidog.com/api/v1/projects/451700/resources/378596/image-preview)
+&lt;/Frame&gt;
+
+When creating a new snippet, the editor presents you with:
+
+| Field | Description |
+|---|---|
+| **Snippet Name** | A label to identify your snippet in the portal |
+| **JavaScript Editor** | Write valid JS code here, HTML and JSX are not accepted |
+| **Preview Screen** | Live preview of how your snippet renders on a demo store |
+| **Store Parameters** | Reserved variables accessible via `salla.config.get()` |
+| **Mock values** (Settings parameters only) | Set test values for public `app.*` fields to preview configuration on your demo store without re-saving. Store and user parameters use real data from the selected demo store. |
+| **Action Buttons** | **Reset**, discards unsaved changes and restores the last saved content. **Refresh preview**, reloads the demo store iframe and applies current mock values (requires valid JS and a selected demo store). **Save**, uploads or updates your snippet on the CDN. |
+
+&lt;Frame caption="The new App Snippet JS editor"&gt;
+
+![image.png](https://api.apidog.com/api/v1/projects/451700/resources/378601/image-preview)
+&lt;/Frame&gt;
+
+
+
+:::note[Preview requirements]
+Before using the preview:
+- Select a demo store with your app already installed.
+- Save the snippet at least once so it is available on the CDN.
+- Mock values apply only to public `app.*` settings; store and user parameters use live demo-store data.
+
+Snippets are injected in `&lt;body&gt;`. Maximum script size is 50,000 characters.
+:::
+
+---
+&lt;!--
+## Store &amp; App Settings Parameters
+
+All reserved store parameters, as well as any App Settings fields you have marked as **Public**, are accessible in your snippet using `salla.config.get()`. Public App Settings are accessible as `salla.config.get("app.yourFieldId")`. Reserved store keys use their dotted names directly, e.g. `salla.config.get("store.id")`.
+
+```javascript
+salla.config.get("store.id")
+salla.config.get("store.domain")
+salla.config.get("user.email")
+salla.config.get("app.yourFieldId")
+```
+
+Supported reserved parameters:
+
+| Parameter | Description |
+|---|---|
+| `store.domain` | The merchant's store domain |
+| `store.email` | The store's contact email |
+| `store.id` | Unique store identifier |
+| `store.username` | The store username |
+| `user.email` | The logged-in user's email |
+| `user.id` | The logged-in user's ID |
+| `user.phone` | The logged-in user's phone number |
+
+You can also view the supported reserved parameters in the App Snippet page under the Store Parameters and Settings Parameters as shown below.
+--&gt;
+
+# Available Parameters
+
+The following parameters are available across the **Store** and **Customer** objects.
+
+&lt;AccordionGroup&gt;
+
+  &lt;Accordion title="store"&gt;
+
+| Parameter |
+|-----------|
+| `api` |
+| `id` |
+| `ray` |
+| `logo` |
+| `icon` |
+| `name` |
+| `username` |
+| `store_country` |
+| `country` |
+| `url` |
+| `description` |
+| `scope` |
+| `template` |
+| `contacts` |
+| `social` |
+| `apps` |
+| `features` |
+| `is_merchant` |
+| `support_pickup` |
+
+  &lt;/Accordion&gt;
+
+  &lt;Accordion title="store.settings"&gt;
+
+| Parameter |
+|-----------|
+| `auth.email_allowed` |
+| `auth.mobile_allowed` |
+| `auth.is_email_required` |
+| `auth.countries` |
+| `auth.force_login` |
+| `cart.apply_coupon_enabled` |
+| `product.total_sold_enabled` |
+| `product.manual_quantity` |
+| `product.fit_type` |
+| `product.related_products_enabled` |
+| `product.filters` |
+| `product.show_comments` |
+| `product.user_can_comment` |
+| `product.show_price_as_dash` |
+| `product.notify_options_availability` |
+| `product.show_special_offers` |
+| `product.show_more` |
+| `product.availability_notify` |
+| `product.bought_together` |
+| `category.testimonial_enabled` |
+| `payments` |
+| `arabic_numbers_enabled` |
+| `content_copyright` |
+| `use_sar_symbol` |
+| `is_multilingual` |
+| `currencies_enabled` |
+| `rating_enabled` |
+| `rating.is_enabled` |
+| `rating.show_on_category` |
+| `rating.show_on_product` |
+| `rating.can_rate_store` |
+| `rating.can_rate_product` |
+| `rating.can_rate_shipping` |
+| `rating.show_rating_summary` |
+| `rating.show_recommendation` |
+| `rating.allow_likes` |
+| `rating.allow_attach_images` |
+| `rating.required_attach_images` |
+| `rating.allow_contact_support` |
+| `rating.allow_update` |
+| `rating.update_period` |
+| `rating.can_customer_hide_name` |
+| `rating.visitor_can_comment` |
+| `rating.page_feedback_enabled` |
+| `blog.is_enabled` |
+| `blog.allow_likes_and_comments` |
+| `is_loyalty_enabled` |
+| `keys.maps` |
+| `keys.gtm` |
+| `is_salla_gateway` |
+| `upload_size` |
+| `tax.number` |
+| `tax.certificate` |
+| `tax.taxable_prices_enabled` |
+| `certificate` |
+| `made_in_ksa` |
+| `commercial_number` |
+| `freelance_number` |
+| `buy_now` |
+| `installments.tabby.merchantCode` |
+| `installments.tabby.publicKey` |
+| `installments.tabby.installments` |
+| `installments.tabby.has_details` |
+| `quick_order` |
+| `bullet_delivery` |
+
+  &lt;/Accordion&gt;
+
+  &lt;Accordion title="store.meta"&gt;
+
+| Parameter |
+|-----------|
+| `title` |
+| `description` |
+| `keywords` |
+
+  &lt;/Accordion&gt;
+
+  &lt;Accordion title="store.order_instruction"&gt;
+
+| Parameter |
+|-----------|
+| `thank_title` |
+| `order_instructions_payment_waiting` |
+| `order_instructions_under_review` |
+| `order_instructions_completed` |
+
+  &lt;/Accordion&gt;
+
+  &lt;Accordion title="store.shipping"&gt;
+
+| Parameter |
+|-----------|
+| `delivery_location` |
+| `support_pickup` |
+
+  &lt;/Accordion&gt;
+
+&lt;/AccordionGroup&gt;
+&lt;hr&gt;
+
+&lt;AccordionGroup&gt;
+&lt;Accordion title="customer"&gt;
+
+| Parameter |
+|-----------|
+| `id` |
+| `type` |
+| `email` |
+| `mobile` |
+| `language_code` |
+| `currency_code` |
+| `country_code` |
+| `can_comment` |
+| `avatar` |
+| `is_hidden_name` |
+| `default_geo_location.lat` |
+| `default_geo_location.lng` |
+| `first_name` |
+| `last_name` |
+| `is_notifiable` |
+| `fetched_at` |
+| `gender` |
+| `birthday` |
+
+  &lt;/Accordion&gt;
+&lt;/AccordionGroup&gt;
+
+&lt;Frame caption="Store parameters panel"&gt;
+![Store parameters](https://i.ibb.co/TDS2wQ3C/image.png)
+&lt;/Frame&gt;
+
+:::tip[]
+To expose a custom field from App Settings in the App Details page, open the App Settings editor and tick the **Public** option on the field. It will then be accessible via `salla.config.get("app.yourFieldId")` in your snippet, where `yourFieldId` matches the field's ID in App Settings.
+
+![](https://cdn.salla.network/articles/A%20Guide%20to%20App%20Snippet/8.webp)
+
+Read more about App Settings [here](https://salla.dev/blog/how-to-build-app-settings-form/).
+:::
+
+---
+
+## Mocked Parameter Values
+
+The editor lets you set mock values for **public App Settings** (`app.*`) in the Settings parameters panel. Click **Mock values** to reveal the inputs, then **Refresh preview** to apply them.
+
+&lt;Frame caption="Setting mock values in the editor"&gt;
+![image.png](https://api.apidog.com/api/v1/projects/451700/resources/378602/image-preview)
+
+&lt;/Frame&gt;
+
+Click **Refresh preview** to reload the demo store and apply your current mock values. Remember: JavaScript edits require **Save** first.
+
+&lt;Frame caption="Preview refreshed with mocked values"&gt;
+
+
+![image.png](https://api.apidog.com/api/v1/projects/451700/resources/378607/image-preview)
+
+
+&lt;/Frame&gt;
+
+---
+
+## Update or Remove a Snippet
+
+Click the three-dot menu next to any snippet to update or remove it. When you save an update, Salla re-uploads your snippet to the CDN, and the change is reflected on all stores that have your app installed.
+
+&lt;Frame caption="Three-dot menu for snippet actions"&gt;
+![image.png](https://api.apidog.com/api/v1/projects/451700/resources/378608/image-preview)
+&lt;/Frame&gt;
+
+
+&lt;!--
+
+## Example: Live Chat Integration with tawk.to
+
+This example walks through embedding a [tawk.to](https://www.tawk.to/) live chat widget into merchant stores using App Snippet.
+
+&lt;Steps&gt;
+    &lt;Step title="Set up your tawk.to account"&gt;
+        Log in to your [tawk dashboard](https://dashboard.tawk.to/) and select **Live Chat** from the left navigation.
+
+&lt;Frame caption="tawk.to dashboard , select Live Chat"&gt;
+![tawk dashboard](https://i.ibb.co/ymr2Yf5R/image.png)
+&lt;/Frame&gt;
+
+    &lt;/Step&gt;
+    &lt;Step title="Configure your widget"&gt;
+        Set your logo, branding colors, and chat messages.
+
+&lt;Frame caption="tawk.to widget configuration"&gt;
+![tawk widget config](https://i.ibb.co/HD1HW2g6/image.png)
+&lt;/Frame&gt;
+
+    &lt;/Step&gt;
+    &lt;Step title="Copy the embed code"&gt;
+        Navigate to the **Chat Widget** tab and copy the code block provided by tawk.
+
+&lt;Frame caption="Copy the tawk.to code block"&gt;
+![tawk code block](https://i.ibb.co/tM4vkLm5/image.png)
+&lt;/Frame&gt;
+
+    &lt;/Step&gt;
+    &lt;Step title="Paste into the App Snippet editor"&gt;
+        Go to **Partners Portal &gt; Your App &gt; App Snippet** and add a new snippet. Paste the tawk code into the JS editor.
+
+:::warning[]
+Tawk provides a self-invoking JavaScript function. Do not wrap it in `&lt;script&gt;` tags or include any HTML; paste the raw JS block only. Replace any legacy `{{app.fieldId}}` template placeholders with `salla.config.get("app.fieldId")`. The editor flags undeclared `{{app.*}}` references under the code panel.
+:::
+
+Click **Save** in the top right when done.
+
+&lt;Frame caption="Tawk code pasted in the App Snippet editor"&gt;
+![Snippet editor with tawk code](https://i.ibb.co/pvqS4645/image.png)
+&lt;/Frame&gt;
+
+    &lt;/Step&gt;
+    &lt;Step title="Install and test on a demo store"&gt;
+        [Install the app](https://salla.dev/tutorial/how-to-test-your-app-using-salla-demo-stores/) on one of your demo stores, grant consent, and visit the store link.
+
+&lt;Frame caption="Install app on a demo store"&gt;
+![Demo store installation](https://i.ibb.co/BkGWsBS/image.png)
+&lt;/Frame&gt;
+
+You should see the tawk.to live chat widget appear in the bottom right corner of the store.
+
+:::note[]
+**TBD:** A screenshot of the live chat widget running on the demo store will be added here.
+:::
+
+    &lt;/Step&gt;
+&lt;/Steps&gt;
+
+--&gt;
+
+## JavaScript Rules and Guidelines
+
+:::warning[]
+Violating these rules will result in rejection during the app review process.
+:::
+
+&lt;CardGroup cols={2}&gt;
+  &lt;Card title="JavaScript Only" icon="material-two-tone-javascript"&gt;
+    Your snippet must be valid JavaScript. HTML and JSX are not accepted.
+  &lt;/Card&gt;
+  &lt;Card title="No iframes or Embeds" icon="material-two-tone-block"&gt;
+    The use of `iframe` and `embed` tags is strictly prohibited for security reasons.
+  &lt;/Card&gt;
+  &lt;Card title="No History Manipulation" icon="material-two-tone-history_toggle_off"&gt;
+    Functions like `history.replaceState()` are strictly prohibited for security reasons.
+  &lt;/Card&gt;
+  &lt;Card title="No Dynamic Code Execution" icon="material-two-tone-code_off"&gt;
+    Avoid `eval()` and similar dynamic code execution, snippets using them will be rejected during app review.
+  &lt;/Card&gt;
+  &lt;Card title="Clean Up Intervals" icon="material-two-tone-timer"&gt;
+    If you use `setInterval()`, always conditionally call `clearInterval()` to prevent memory leaks and repeated background execution.
+  &lt;/Card&gt;
+  &lt;Card title="Minimal Logging" icon="material-two-tone-speaker_notes_off"&gt;
+    Avoid `console.log()` for general debugging. Reserve it for cases where something might genuinely go wrong.
+  &lt;/Card&gt;
+  &lt;Card title="Submit Readable Code" icon="material-two-tone-find_in_page"&gt;
+    Share deobfuscated code separately when submitting for review, for faster feedback.
+  &lt;/Card&gt;
+  &lt;Card title="Keep a Live Demo Store" icon="material-two-tone-storefront"&gt;
+    Maintain at least one demo store with the snippet running so the review team can test it.
+  &lt;/Card&gt;
+
+&lt;/CardGroup&gt;
+
+  &lt;Card title="Use innerHTML Carefully" icon="material-two-tone-warning"&gt;
+    Use `innerHTML` responsibly. Do not use `body` as a direct reference.
+  &lt;/Card&gt;
+  
+  :::tip[Publish Your Changes]
+
+After completing the migration and verifying your snippet works as expected, submit a new publish request of your application through the **Salla Partners Portal** so merchants receive the updated implementation.
+
+Before publishing, make sure you have:
+
+- ✅ Migrated your App Snippet to the new JavaScript editor.
+- ✅ Tested the snippet on a demo store.
+- ✅ Verified all functionality works correctly.
+- ✅ Submitted a new app publish request.
+
+For detailed instructions, see the [**Publishing Your Application**](https://salla.dev/blog/standards-salla-apps-publications/) guide.
+
+:::
+</pre></body></html>

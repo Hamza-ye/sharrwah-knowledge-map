@@ -1,0 +1,20 @@
+{
+ "n": 106,
+ "url": "https://help.shopify.com/en/manual/your-account/manage-billing/paying-your-bills/managing-payments/local-currency.md",
+ "dir": "items/106-help.shopify.com",
+ "fetched_at": "2026-10-11T06:13:06Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/your-account/manage-billing/paying-your-bills/managing-payments/local-currency.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 1784,
+ "cited_in": [
+  "SH-S-0266",
+  "SH-S-0267",
+  "SH-S-0268"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "1888c9e33569f77cf48fb7fb4c51c9eba5ca3560f13d2953b364e3b410e33f11",
+ "raw_ext": "txt"
+}

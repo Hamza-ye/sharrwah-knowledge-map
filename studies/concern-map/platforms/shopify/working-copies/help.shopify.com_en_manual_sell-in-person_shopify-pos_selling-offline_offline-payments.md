@@ -1,0 +1,130 @@
+# Accepting card payments offline using Shopify POS
+
+Offline payments is an optional feature that extends [offline checkout](/manual/sell-in-person/shopify-pos/selling-offline/offline-checkout) to let you accept credit and debit card payments when you don't have an internet connection.
+
+To accept card payments when offline, you need to activate offline payments in your Shopify admin. Card payments are captured after your device reconnects to the internet.
+
+Some Shopify POS features work differently when you're offline. Learn more about [Shopify POS offline features compatibility](/manual/sell-in-person/shopify-pos/selling-offline/offline-features).
+
+## Requirements for using offline payments {#requirements}
+
+To accept card payments offline, you need to meet the following requirements:
+
+* Your POS app is updated to version 9.14.0 or later.
+* You're using a compatible card reader: [Verifone Victa (Countertop & Mobile)](/manual/sell-in-person/hardware/card-readers/verifone/index), [POS Go](/manual/sell-in-person/hardware/pos-go/index), [POS Terminal](/manual/sell-in-person/hardware/card-readers/pos-terminal/index), [Tap & Chip](/manual/sell-in-person/hardware/card-readers/tap-chip), [Chipper 2X BT](/manual/sell-in-person/hardware/card-readers/chipper2xbt), [Wisepad 3](/manual/sell-in-person/hardware/card-readers/wisepad), or [Chip & Swipe Reader](/manual/sell-in-person/hardware/card-readers/chip-and-swipe).
+* Staff members have the **Accept offline credit and debit payments** [POS permission](/manual/your-account/users/roles/permissions/pos-permissions).
+
+### Requirements for using POS Terminal Reader offline
+
+<aside class="note"><h4>Note</h4><p>If you have a POS Terminal Reader, you might be able to authorize card-present payments in real time automatically when offline checkout is turned on. Learn more about <a href="/en/manual/sell-in-person/shopify-pos/selling-offline/offline-checkout#always-on-card-authorization">Always-on card authorization with POS Terminal</a>.</p>
+</aside>
+
+If you use the POS Terminal Reader and it temporarily disconnects from the internet, then you can activate offline payments, but you must meet the following requirements:
+
+* Your local Wi-Fi network must still be working. If your router isn't working, or you're experiencing a full power outage, then you can't accept offline payments.
+* When you're offline, you can't restart your internet router.
+* When you're offline, you can't change networks. Remain on the Wi-Fi network that has lost the internet connection, unless you're switching to a network that has a confirmed connection.
+
+Refer to [Network requirements for POS Terminal](/manual/sell-in-person/hardware/card-readers/pos-terminal/setup#network-requirements) for more information.
+
+## Considerations for using offline payments {#considerations}
+
+Before turning on offline payments, review the following considerations:
+
+* Swipe cards, Tap to Pay on iPhone, Tap to Pay on Android, and **Manual card entry (MOTO)** payments aren't supported when offline. Card reader availability when offline depends on the connected reader and your offline payments configuration.
+* Canadian businesses can't accept Interac card payments when offline.
+* Australian businesses can't accept eftpos payments when offline.
+* Offline transactions aren't routed to the payment processor. You might not know that a transaction has failed until you reconnect to the internet.
+* Payments can be declined for many reasons, including insufficient funds or a lost or stolen card.
+* To reduce the risk of declined payments, reconnect to the internet as soon as possible, ideally within 24 hours.
+* If a payment is declined after you reconnect, then you can use the email or phone number that you collected for the order to contact the customer and collect the payment.
+* If you have multiple store locations, then offline payment settings and transaction limits apply to all locations. Transaction limits automatically convert to local currencies for locations in different countries.
+* Offline payments aren't available for retail locations in France.
+
+## Set up offline payments {#setup}
+
+When you activate offline payments, you set two limits that control how much you can accept when offline:
+
+* **Device daily limit**: The maximum total of all offline card payments on a single device. For example, if you set the device limit to $5,000 USD, then your POS device can accept card payments until the total reaches $5,000 USD. Transaction limits apply to all store locations. If you have locations in different countries, then the limits automatically convert to local currencies.
+* **Transaction limit**: The maximum amount per order that you can accept when offline. For example, if you set the limit to $100 USD, then you can accept multiple cards on the same order, as long as the total doesn't exceed $100 USD. If the order total exceeds the limit, then you can use an alternate payment such as cash to complete it.
+
+To accept credit and debit card payments when Shopify POS is offline, you need to activate offline payments in your Shopify admin.
+
+### Step 1: Activate offline payments
+
+<aside class="note"><h4>Note</h4><p>The <strong>Customize the in-store experience</strong> section is displayed only after you set up a POS device. If the section isn&#39;t displayed, then you can <a href="/en/manual/sell-in-person/shopify-pos/customize-pos/pos-editor#open-from-settings">open the POS editor from your settings in the Shopify admin</a>.</p>
+</aside>
+
+
+
+  
+      
+    
+
+
+1. From your Shopify admin, go to **Sales channels** > [**Point of Sale**](https://admin.shopify.com/apps/point-of-sale-channel).
+
+
+2. In the **Customize the in-store experience** section, click **Edit** for **POS app**.
+
+
+3. Click **Checkout**.
+4. Activate **Allow offline payments**.
+4. In the **Device daily limit** field, enter an amount for the maximum total of all offline card payments on a single device.
+5. In the **Transaction limit** field, enter an amount for the maximum value per order that you can accept when offline.
+5. Click **Save**.
+6. In the confirmation window, confirm that you want to activate offline payments, and click **Save**.
+
+### Step 2: Give staff permissions to accept offline payments
+
+<aside class="note note-staff-permissions"><h4>Staff permissions</h4><p>Staff members need to have the <strong>Accept offline credit and debit payments</strong> <a href="/en/manual/your-account/users/roles/permissions/pos-permissions">permission</a> to accept offline payments. Learn more about <a href="/en/manual/your-account/users/roles/permissions/pos-permissions">staff permissions</a>.</p>
+</aside>
+
+#### Steps:
+
+1. In your Shopify admin, click **Settings** > **Users**.
+
+
+2. Click **Roles**.
+3. Click the POS role that you want to assign the offline payments permissions to.
+4. In the **Permissions** section, click **Checkout**, and then activate **Accept offline credit and debit payments**.
+5. Click **Save**.
+
+## Accept card payments when Shopify POS is offline {#accept-card-payments}
+
+After you've activated offline payments, you can accept credit and debit card payments when Shopify POS is offline.
+
+<aside class="note caution"><h4>Caution</h4><p>You need to collect either a phone number or an email from your customer when making a sale offline. If you chose to send a receipt by text or email in the Shopify POS cart, then when Shopify POS reconnects to the internet, the customer is sent a receipt automatically.</p>
+</aside>
+
+#### Steps:
+
+1. From Shopify POS, add products to the cart.
+2. Tap **Offline checkout**.
+3. Enter your customer's information.
+4. To process the offline card payment, choose one of the following options:
+  * If only one card reader is connected to your POS device, then tap **Card**.
+  * If multiple card readers are connected to your POS device, then tap the card reader that you want to process the offline payment with.
+
+5. Accept the card payment by letting your customer tap or insert their card.
+6. Tap **Done**.
+7. In the **Receipt options** screen, select either **Email** or **Text** to send a sales receipt to your customer. The receipt is sent after Shopify POS regains connection to the internet.
+
+<aside class="note"><h4>Note</h4><p>If you want to accept cash or manual payments when offline, then you can use <a href="/en/manual/sell-in-person/shopify-pos/selling-offline/offline-checkout">offline checkout</a> without activating offline payments.</p>
+</aside>
+
+## Reconnect to the internet to process card payments
+
+Offline card payments save to Shopify POS and are processed automatically after you reconnect to the internet. When offline, card payment orders display in the **Orders** tab with a **Payment pending** badge. After the payment is processed, the badge changes to **Paid**. If the payment is declined, then the order displays a **Card declined** badge.
+
+When Shopify POS is offline, card payment orders display in the **Orders** tab with a **Payment pending** badge. After the payment is processed, the badge turns into a **Paid** badge. If the payment is declined, then the order also displays a **Card declined** badge.
+
+After Shopify POS reconnects to the internet, the following happens automatically:
+
+* Card payments that you accepted when you were offline are processed.
+* Orders are synced with your Shopify admin and display in the **Orders** section.
+* Customer information that you entered syncs with the correct order and connects to the correct customer account.
+
+If you become logged out of Shopify POS when you're offline, then you need to log back in and reconnect your card reader to process payments that you accepted offline.
+
+For information about syncing orders and inventory after reconnecting, refer to [Reconnecting Shopify POS to the internet](/manual/sell-in-person/shopify-pos/selling-offline/offline-checkout#reconnecting-shopify-pos-to-the-internet).

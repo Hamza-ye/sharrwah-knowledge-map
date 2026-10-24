@@ -1,0 +1,20 @@
+{
+ "n": 35,
+ "url": "https://help.salla.sa/article/بوابة-الجودة-لشكاوى-الشحن/lzsretdcadjc3r70lsxygiu9",
+ "dir": "items/035-help.salla.sa",
+ "fetched_at": "2026-10-11T09:19:43Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.salla.sa/article/بوابة-الجودة-لشكاوى-الشحن/lzsretdcadjc3r70lsxygiu9",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 140100,
+ "cited_in": [
+  "SA-S-5070",
+  "SA-S-5071",
+  "SA-S-5072"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "fdae056b7bc3c1907ef71e3b8493da49d52d2fd4b94c7191824cda7276d4c358",
+ "raw_ext": "html"
+}

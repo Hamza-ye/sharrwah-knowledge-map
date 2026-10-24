@@ -1,0 +1,18 @@
+{
+ "n": 82,
+ "url": "https://woocommerce.com/document/paypal-standard/",
+ "dir": "items/082-woocommerce.com",
+ "fetched_at": "2026-10-12T10:50:53Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/paypal-standard/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 55351,
+ "cited_in": [
+  "S01-WC-C109"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "f9d034f5847be091797673007d340c04e843ee526c61fef219ca07529a2bcad1",
+ "raw_ext": "html"
+}

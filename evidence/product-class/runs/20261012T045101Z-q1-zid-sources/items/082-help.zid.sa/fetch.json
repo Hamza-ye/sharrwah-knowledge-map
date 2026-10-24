@@ -1,0 +1,18 @@
+{
+ "n": 82,
+ "url": "https://help.zid.sa/about_zidpay/",
+ "dir": "items/082-help.zid.sa",
+ "fetched_at": "2026-10-12T04:52:14Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/about_zidpay/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 25064,
+ "cited_in": [
+  "ZD-S-0563"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "52ce07af1850a30c3951b3b4656821e4658a36125dbdeb9fbccb565660c68990",
+ "raw_ext": "html"
+}

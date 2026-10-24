@@ -1,0 +1,25 @@
+{
+ "n": 112,
+ "url": "https://www.commerce.com/terms/fees-and-billing/",
+ "dir": "items/112-commerce.com",
+ "fetched_at": "2026-10-12T04:20:57Z",
+ "curl_exit": 47,
+ "curl_error": "curl: (47) Maximum (8) redirects followed",
+ "http_code": 307,
+ "final_url": "https://www.commerce.com/terms/fees-and-billing/",
+ "content_type": "text/plain",
+ "bytes": 15,
+ "cited_in": [
+  "BC-S-0137",
+  "BC-S-0162",
+  "BC-S-0164",
+  "BC-S-0166",
+  "BC-S-0168",
+  "BC-S-0169",
+  "BC-S-0304",
+  "BC-S-0346"
+ ],
+ "raw_file": "",
+ "sha256": "",
+ "raw_ext": ""
+}

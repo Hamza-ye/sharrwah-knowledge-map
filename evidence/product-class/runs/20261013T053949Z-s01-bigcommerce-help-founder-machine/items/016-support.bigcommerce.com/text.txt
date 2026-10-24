@@ -1,0 +1,465 @@
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+GETTING STARTED
+PRODUCTS
+STORE SETUP
+Store Settings
+Domain And Email
+Checkout And Payments
+Currency Setup
+Multicurrency
+Recurring Billing
+Test Orders
+CHECKOUT
+Optimized One-Page Checkout
+Requirements
+General Settings
+B2B Settings
+Custom Checkout Settings
+OOPC Settings
+Order Confirmation Settings
+Customizing Checkout
+FAQ
+Address Autocomplete
+Form Fields
+Stored Credit Cards
+Gift Certificates
+Gift Wrapping
+Order-level Fees
+Persistent Cart
+Storefront Checkout Configurations
+PAYMENT METHODS
+Available Payment Gateways
+Offline Payments
+TROUBLESHOOTING
+Understanding Checkout Errors
+Shipping
+Tax
+Security
+B2B
+DESIGN AND CONTENT
+MANAGE STORE
+CHANNEL MANAGER
+MARKETING
+DATA SOLUTIONS
+ACCOUNT
+TD BANK
+Optimized One-Page Checkout
+What We'll Cover
+Requirements
+General checkout settings
+B2B settings
+Custom checkout settings
+Optimized One-Page Checkout settings
+Order confirmation settings
+Verbose error messages at checkout
+Customizing checkout
+FAQ
+
+Optimized One-Page Checkout is BigCommerce’s default checkout and order confirmation page. It includes features that minimize friction and offer a smooth checkout process, which can lead to increased conversions.
+
+RESPONSIVE, MINIMAL DESIGN
+Customers can quickly access and edit items in their cart throughout the checkout process.
+The responsive, minimal design lets customers comfortably check out on any device without distractions.
+Checkout will display the shopper's selected currency.
+SIMPLE SHIPPING ADDRESS ENTRY
+The default country in the drop-down menu is based on the customer’s IP address. Additionally, the menu only includes countries which have been set up in the Shipping page if configured.
+A shipping method can be pre-selected to streamline the checkout process.
+CREDIT CARD BOX
+Text fields are optimally laid out, clearly labeled, and include security icons to instill trust.
+Card type is auto-detected when the credit card number is entered, removing that extra step.
+SMOOTH CHECKOUT FLOW
+Customers logged into their storefront account will have their email address and last used billing and shipping addresses pre-filled at checkout.
+New addresses can be saved to their account directly from the checkout page.
+Guests can create a customer account from within the checkout, without leaving the page.
+Customer accounts created via Embedded Checkout are created only on the BigCommerce platform, not the headless platform. It is up to the developer to make sure that customer accounts on BigCommerce and headless platforms are in sync with each other.
+On the order confirmation page, guests are given a second opportunity to create an account before leaving the checkout flow.
+ 
+
+Using Multi-Storefront? Several of the checkout settings listed in this article can be customized to create a unique shopper experience on each of your storefronts. See Multi-Storefront for more information on supported settings.
+
+ 
+Requirements
+To view B2B checkout settings, B2B Edition must be provisioned on your store. This means having both the B2B Edition app installed and an active B2B Edition license.
+To access checkout settings, the Manage Settings permission must be enabled on your user account.
+ 
+General Checkout Settings
+
+Use the settings in Settings › Checkout to select your store's checkout type, specify how shoppers check out on your store, and enable cart and security features.
+
+Checkout type
+Customer
+Existing accounts
+Cart
+Phone number
+Security
+CHECKOUT TYPE
+
+Select whether you would like to use Optimized One-Page Checkout or a custom checkout.
+
+CUSTOMER
+
+Select how you would like shoppers to check out:
+
+Allow shoppers to check out without an account as a guest.
+Allow shoppers to check out without an account, but automatically create one after ordering.
+Require shoppers to sign in or create an account before checking out.
+
+ 
+
+Note: When Customers are not required to have an account to check out is enabled, guests customers appear as “0” in customer_id fields when viewing orders via export or API. Guests are also combined into an anonymous placeholder customer and will lower your total customer count in analytics reporting.
+
+EXISTING ACCOUNTS
+
+Select how you would like shoppers with existing accounts to check out:
+
+Allow existing customers to check out as a guest or sign in.
+Prompt existing customers to sign in, but still allow them to check out as a guest.
+Require existing customers to sign in.
+Customers with existing accounts would not be able to check out as a guest.
+
+CART
+
+Select this to enable a "persistent cart," which lets your customers view items in their cart across multiple devices when logged in. Learn more in Persistent Cart.
+
+PHONE NUMBER
+
+Select to enable phone number validation at checkout.
+
+When disabled, the checkout page built-in Phone Number field accepts:
+
+letters
+numbers
+special characters "-_ ()/:#.,'+*
+
+When enabled, the built-in Phone Number field has different restrictions while and also performing number validation:
+
+Only the + special character is allowed and only as the first character for entering a country code.
+Only numbers are accepted.
+The amount of entered numbers must be valid for the country on the address.
+Spaces and dashes are ignored.
+
+Validation is not performed on phone numbers entered in the customer address book as these bypass form entry at checkout.
+
+Note that the phone number restrictions and validation at checkout are not enforced for stores using Fastlane by PayPal or when values are entered in the Default Value or Maximum Field Length fields. Removing the values or disabling Fastlane will allow phone number validation enforcement to occur again. This may take a few minutes to take effect once the requirements are met.
+
+SECURITY
+
+Select this setting to enable Google reCAPTCHA, which protects your store against bots and other abuse. To reduce friction, reCAPTCHA on the checkout page is invisible.
+
+ 
+B2B Settings
+ 
+
+Look different? Stores with the legacy B2B checkout configuration manage their checkout settings entirely from the B2B Edition control panel. See General in the “FAQ” section of B2B Edition Settings to learn more.
+
+If you are using B2B Edition, your checkout page presents buyers with different features based on the configurations in their Company account, such as default addresses, available payment methods, and credit settings. To enable B2B checkout, select Apply B2B-specific checkout settings alongside your existing checkout.
+
+Once enabled, you can make further adjustments to your checkout experience, such as allowing purchase order payments and requiring specific information for placing orders. See the “Checkout Settings” section of B2B Edition Settings for more information.
+
+ 
+Custom Checkout Settings
+
+If you selected to use a custom checkout as your checkout type, you will see the settings below.
+
+Custom checkouts use our Checkout SDK. See our Developer Docs for more information on installing a custom checkout, PCI compliance, and other related topics.
+
+ 
+
+Using a custom checkout may affect PCI-DSS compliance. Some checkout scripts may require you to take on full responsibility for PCI-DSS compliance for the checkout application. In addition, custom checkouts no longer receive automatic updates such as new features, bug fixes, and security updates. We recommend using the default Optimized One-Page Checkout if you are not comfortable in assuming this risk.
+
+To install a custom checkout, fill in the Script URL with the location of your hosted checkout script, then click Save. Custom checkout and order confirmation scripts are compatible with nonce-based authorization, allowing browsers to confirm that each script is authorized.
+
+Enter an optional Subresource integrity (SRI) hash to verify the integrity of the script that will run on the checkout page as well as the custom order confirmation page if the same script URL is used.
+
+If your custom checkout supports Optimized One-Page Checkout settings, enable the checkbox to access and set up features that are included in our default checkout, listed under Optimized One-Page Checkout Settings.
+
+You can install a custom order confirmation page to replace the default page. Enable the checkbox next to Use the same script URL for the custom order confirmation page if you have included this feature in your checkout script. If you have a separate script URL for this page, enter it in the custom order confirmation section.
+
+ 
+Optimized One-Page Checkout Settings
+
+If you selected Optimized One-Page Checkout as your checkout type or opted to include support for these settings on a custom checkout, you will see the settings listed below.
+
+Customer
+Shipping
+Billing
+Promotions
+Order
+Checkout styling
+CUSTOMER
+
+To allow passwordless login for existing customers on the checkout page, enable this checkbox. A one-time password will be provided as a link sent to the customer’s email. Customers can log in by clicking the link, simplifying the checkout flow.
+
+Guest shopper consent to privacy policy
+
+Select how customers who check out as a guest will interact with your privacy policy:
+
+No consent is required — The privacy policy link will not display at checkout.
+Require guest shopper to consent manually with checkbox — Guest customers must manually agree to the privacy policy before they can check out.
+This setting is recommended for GDPR compliance.
+State that guest shopper consent automatically when entering their email during checkout. — Allow customers to automatically agree to the privacy policy by clicking Continue.
+This setting is recommended for faster checkout.
+
+SHIPPING
+
+Default Shipping Option
+
+A default shipping option decreases friction during checkout. You can set your checkout to default to one of the following:
+
+Least expensive, excluding pickup in store — This defaults to the least expensive option, excluding the Pickup in Store static shipping quote.
+Least expensive — This defaults to the overall cheapest option, including Pickup in Store.
+Most expensive — This defaults to the overall most expensive option, including Pickup in Store.
+None — No shipping option is pre-selected.
+
+To allow customers to ship products in an order to different addresses, select this option. See Offering Shipping to Multiple Addresses to learn more.
+
+Enabling Google Address Autocomplete allows customers in select countries to check out faster by providing a list of potential matching addresses as the customer enters their billing or shipping address.
+
+BILLING
+
+Enable this setting to check the "My billing address is the same as my shipping address" box at checkout by default.
+
+PROMOTIONS
+
+Coupon and Gift Certificate field
+
+Select whether to display the Coupon/Gift Certificate field or to hide it behind a link.
+
+ORDER
+
+Customers are able to add comments to their order when this setting is enabled. View order comments on the Orders › All orders page by selecting View notes from the action menu beside an order.
+
+Enable Require customers to accept terms and conditions to present a mandatory checkbox field at checkout that says "Yes, I agree with the terms and conditions." This text can either link to a pop-up with the terms and conditions or link to a Terms of Service webpage.
+
+CHECKOUT STYLING
+
+All themes available in the Theme Marketplace allow you to make customizations to the styling on your checkout. See Customizing Checkout to learn more.
+
+ 
+Order Confirmation Settings
+Contact email
+Custom order confirmation
+CONTACT EMAIL
+
+The Contact Email field in your checkout settings allows you to specify an email address to appear on the order confirmation ("Thanks for your order") page.
+
+If you leave the Contact Email field blank, the order confirmation page displays the store administrator email address entered in your store's Miscellaneous settings.
+
+CUSTOM ORDER CONFIRMATION
+
+To install a custom order confirmation page that replaces the default page, enter a Script URL.
+Enter an optional Subresource integrity (SRI) hash to verify the integrity of the script that will run on the custom order confirmation page.
+
+For more information, see Installing a Custom Order Confirmation Page in our Developer Docs.
+
+ 
+
+Want to change the phone number on the order confirmation page? This page uses the phone number listed in the store profile.
+
+ 
+Verbose Error Messages at Checkout
+
+If a transaction attempt fails, that shopper is shown error messaging with details about why the transaction failed, and suggested actions on how to resolve it. For example, “Your billing address couldn’t be verified. Please check your billing address details and try again.” This “verbose” error messaging is turned on by default for all stores.
+
+If you prefer checkout errors to use generic messaging, you can opt-out of this feature by contacting our support team and requesting “vague” checkout error messages.
+
+“Verbose” error message (default)
+
+“Vague” error message
+
+"VERBOSE" ERROR MESSAGE LIST
+
+Below is a list of all checkout payment error messages.
+
+There was a problem processing your card. Please contact your card issuer.
+Payment for this order has already been made.
+Your payment was declined. Please try a different card.
+Your card details could not be verified. Please double check them and try again.
+We're experiencing difficulty processing your transaction. Please try again later.
+This is a duplicate transaction. Please contact us to confirm your order. Do not try to pay again.
+Your card has expired. Please try again with a valid card.
+Your billing address couldn't be verified. Please check your billing address details and try again.
+Payment was declined. Please contact your bank.
+There was an error while processing your payment. Please try again or contact us.
+We're experiencing difficulty processing your transaction. Please contact us or try again later.
+There was an error while processing your payment. Please contact us.
+We're experiencing difficulty processing your transaction. Please try again later.
+Your transaction was authorized, but is being held for review by the merchant.
+Your card cannot be used to make this payment. Please contact your card issuer, or try using a different card.
+Unable to process your payment due to timeout. Please try again.
+Your payment couldn’t be verified. Please check your card details and try again.
+There was an error processing your payment and your order couldn't be completed. Please try again.
+Further authentication is required to process your payment. Please contact us.
+Something went wrong on the server. Please try again at a later time.
+Your card details could not be verified. Please double check them and try again.
+Unable to process your payment because the transaction has already been voided. Please try again or contact us.
+ 
+Customizing Checkout
+
+Stencil themes allow for minor style customizations to be made to the Optimized One-Page Checkout. Use the following settings to adjust the look and feel of your checkout page.
+
+Enhanced checkout experience
+Top of checkout wallet buttons
+In-line address field labels
+Checkout styling in Page Builder
+ENHANCED CHECKOUT EXPERIENCE
+
+When the Enable enhanced checkout experience setting is checked, shoppers are presented with a streamlined checkout page that improves checkout flow while reducing friction.
+
+The enhanced page has a modern feel, displaying just three main steps: Customer, Shipping, and Payment.
+
+Boasting updated styling, the enhanced page offers a sleek look with gently contrasting sections, improved navigation buttons, and rounded field boxes.
+
+The country field is featured at the top of address sections as it provides context to the other fields. The remainder of fields are displayed in the order they are configured in your store’s settings.
+
+The shopper’s billing address details are no longer displayed as a separate step and can now be located under the Payment section. Shoppers can uncheck the box next to Same as shipping address if their previously entered address doesn’t match their payment information.
+
+TOP OF CHECKOUT WALLET BUTTONS
+
+When this setting is checked, wallet buttons you have enabled on your store will appear above the Customer step for guest shoppers.
+
+When disabled, the buttons will appear in the Customer step.
+
+IN-LINE ADDRESS FIELD LABELS
+
+Labels can be moved inside input fields to shorten your checkout page length. This can help to reduce checkout friction.
+
+When the setting is checked, field labels move inside the field itself. When a shopper enters data, the label “floats” to the top of the field.
+
+When disabled, labels are static and display outside of the field.
+
+CHECKOUT STYLING IN PAGE BUILDER
+ 
+
+Be careful! If you’ve customized your checkout styling, you should check your storefront’s checkout page immediately after enabling this setting to ensure it does not interfere with any custom styling changes within your store’s theme.
+
+Page Builder has options for further checkout customization, such as adding a header image, changing fonts and colors, or adding a custom logo. This feature is available on all themes in the Theme Marketplace.
+
+To launch Page Builder, go to Settings › Checkout and click on the Open page builder button under the Checkout Styling heading.
+
+Go to the Theme Styles tab, then click the Checkout Page heading to access checkout customization options.
+
+If you have uploaded a store logo, it will auto-populate. You can also upload another logo only for the checkout page.
+See the Cornerstone Theme Manual for more details on checkout customization options for that theme.
+For advanced customization, updates can be made through the Stencil CLI. For more information, see Optimized One-Page Checkout in our Developer Docs.
+
+ 
+
+Using a legacy Blueprint Theme? See Blueprint Themes for more information on customizing the checkout page in your template files.
+
+ 
+FAQ
+General
+Troubleshooting
+GENERAL
+
+Can I change which currency is listed at checkout?
+
+No. Optimized One-Page Checkout will display the checkout with the currency the shopper chose on the storefront to keep the experience consistent. Invoice emails will display in the currency the order transacted in.
+
+Are features such as Persistent Cart and passwordless customer account sign-in supported on stores with multiple storefronts?
+
+All Optimized One-Page Checkout features are available as storewide, global settings. Currently only certain checkout settings can be customized on the storefront level. See Multi-Storefront for a list of these settings.
+
+Does Optimized One-Page Checkout support multiple languages?
+
+Yes. If the store uses multiple languages, the experience can now extend to the checkout with custom development and up to building a custom checkout. To learn more, see Enabling Multi-Language Checkout in our Developer Docs.
+
+Can Optimized One Page Checkout show banner notifications for discounts and promotions?
+
+Yes. If you have set up an automatic promotion, such as spend $X to get free shipping, a banner notification can be placed in checkout to notify shoppers how much more they need to spend to qualify for free shipping. See the “Configuring Promotional Banners” section of Automatic and Coupon Promotions (Standard Editor) for details on how to customize the location and messages of the discount banner.
+
+Can I set the "Subscribe to our newsletter" box to automatically check yes during checkout?
+
+Yes. You can set the newsletter checkbox to automatically tick during the checkout flow. See Newsletter and Email Marketing Settings for details on newsletter subscriptions.
+
+Does Optimized One-Page Checkout support page pre-rendering?
+
+Stencil-based themes pre-render the checkout page when a shopper using a supporting browser clicks on the Check out button in the cart. Pre-rendering optimizes the load speed of the checkout page, which can improve your customer experience.
+
+Pre-rendering is currently available for storefronts using an uncustomized checkout page. Custom checkouts, including B2B Edition’s checkout script, do not support pre-rendering.
+
+Currently, only Chrome and Edge based browsers support Google's APIs for pre-rendering. Additionally, the checkout page will not pre-render if a shopper makes changes to their cart, such as changing item quantities or adding a coupon code.
+
+Note that if you are hosting your own analytics, you may need to update your scripts to account for checkout pre-rendering. See BigOpen Data Layer for Storefront Analytics in our Developer Docs to learn more.
+
+Can I customize the enhanced checkout experience page styling?
+
+Yes, when the Enable enhanced checkout experience setting is checked, you can customize the page’s appearance using the styling settings and in Page Builder.
+
+TROUBLESHOOTING
+
+Why doesn’t my checkout app work after switching to the enhanced checkout experience?
+
+Your app may not be configured to work with the enhanced checkout experience. We recommend unchecking the Enable enhanced checkout experience setting and contacting the app’s developer for assistance. Once their app is updated for the new experience, you can re-enable it.
+
+Why are my B2B checkout elements not appearing on my storefront’s checkout page?
+
+If B2B checkout is disabled in your settings, B2B-specific checkout functions like Company-specific payment methods and invoice payments will not be available. The location of setting to enable B2B checkout on your store depends on your checkout configuration:
+
+Optimized One-Page Checkout configuration — In your BigCommerce checkout settings, select Apply B2B-specific checkout settings alongside your existing checkout.
+Legacy configuration — In your B2B Edition checkout settings, enable the B2B Checkout toggle.
+See the “Checkout Settings” section of B2B Edition Settings to learn more.
+Do this in my store
+
+GO TO CHECKOUT IN MY STORE
+
+Additional Resources
+Available Payment Gateways
+Cornerstone Theme Manual
+Page Builder
+Enabling Multi Language Checkout (Developer Docs)
+Getting Started with the Checkout SDK (Developer Docs)
+Installing an Open Source Checkout (Developer Docs)
+Optimized One-Page Checkout (Developer Docs)
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+Optimized One-Page Checkout

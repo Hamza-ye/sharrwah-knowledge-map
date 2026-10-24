@@ -1,0 +1,36 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 301 
+date: Sun, 11 Oct 2026 06:13:08 GMT
+content-type: text/plain; charset=utf-8
+content-length: 70
+location: /docs/apps/build/marketing/pixels.md
+vary: Accept
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-dc: gcp-us-central1,gcp-us-east1
+x-request-id: 01a12997-fa4a-73e6-b9a7-7bec834ec3ec-1791699188
+server: envoy
+nel: {"max_age":0}
+alt-svc: h3=":443"; ma=2592000
+alt-svc: h3=":443"; ma=2592000
+x-shopify-gclb-trace-timing: 1791699188.298
+via: 1.1 google
+
+HTTP/2 200 
+date: Sun, 11 Oct 2026 06:13:08 GMT
+content-type: text/markdown; charset=utf-8
+cache-control: public, max-age=3600, stale-while-revalidate=82800
+cache-tag: shopifydev-txt,host-shopify.dev
+etag: W/"d6e599805e7d38f0"
+link: <https://shopify.dev/docs/apps/build/marketing/pixels>; rel="canonical"
+vary: Accept, Accept-Encoding
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-dc: gcp-us-central1,gcp-us-east1
+x-request-id: 01a12997-fabd-77b4-afef-bea0f84736a0-1791699188
+server: envoy
+nel: {"max_age":0}
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+alt-svc: h3=":443"; ma=2592000
+x-shopify-gclb-trace-timing: 1791699188.413
+via: 1.1 google
+

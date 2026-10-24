@@ -1,0 +1,43 @@
+term	translation	definition	cite_ids
+payout			S01-BC-C020;S01-BC-C021;S01-BC-C013
+balance			S01-BC-C020;S01-BC-C022
+Money Dashboard			S01-BC-C020
+Settlement Currency		The currency the merchant gets paid out to their bank account.	S01-BC-C014
+settles			S01-BC-C023;S01-BC-C028;S01-BC-C015
+Transactional Currency		Comprised of the currency and amount, the transactional currency is what BigCommerce passes to the payment provider and what is charged to a shopper's bank account.	S01-BC-C046
+settlements			S01-BC-C027
+funds			S01-BC-C025;S01-BC-C028
+PayPal business account			S01-BC-C025
+payment provider			S01-BC-C016
+payment gateway			S01-BC-C001;S01-BC-C002
+payment			S01-BC-C001;S01-BC-C006
+charge			S01-BC-C002;S01-BC-C007
+checkout			S01-BC-C013
+get paid			S01-BC-C024;S01-BC-C026
+BigCommerce Payments Gateway			S01-BC-C003
+BigCommerce Payments account			S01-BC-C066;S01-BC-C072
+linked PayPal account			S01-BC-C067;S01-BC-C073
+payment relationship			S01-BC-C047
+Top-ups			S01-BC-C050
+final settlement amount			S01-BC-C064
+beta terms			S01-BC-C077
+PayPal Braintree account			S01-BC-C080;S01-BC-C081;S01-BC-C083
+Pricing Contract			S01-BC-C081
+PayPal platform account			S01-BC-C092;S01-BC-C094
+BigCommerce Payments account			S01-BC-C096;S01-BC-C097;S01-BC-C100
+BigCommerce Payments balance			S01-BC-C104;S01-BC-C110
+Balance dashboard			S01-BC-C086;S01-BC-C102
+automatic payouts			S01-BC-C104;S01-BC-C105;S01-BC-C106
+manual payouts			S01-BC-C107
+fund holds			S01-BC-C101
+held or blocked			S01-BC-C125;S01-BC-C127
+merchant account			S01-BC-C139
+merchant service provider			S01-BC-C139
+minimum account reserve			S01-BC-C149;S01-BC-C184
+payout schedule			S01-BC-C163;S01-BC-C165
+settled			S01-BC-C180;S01-BC-C182;S01-BC-C165;S01-BC-C206
+Authorize only		The "Authorize only" feature allows your payment gateway to authorize the charge without actually withdrawing the funds from the customer's account until you approve it.	S01-BC-C212
+Offline payment methods		Offline payment methods are ways to pay for orders that do not require a credit card or a traditional payment gateway.	S01-BC-C213
+Open Payment Provider fee		For stores on self-serve plans, orders processed using offline payment methods and payment providers that are not on our Embedded Payment Provider list are assessed an Open Payment Provider fee.	S01-BC-C214
+PayPal Commerce Platform		PayPal Commerce Platform, also known as PayPal Complete Payments (PPCP), is another name for PayPal's dedicated payment gateway, used to distinguish it from other PayPal solutions supported by BigCommerce. In most instances, it is simply referred to as PayPal.	S01-BC-C215
+Hosted payment gateways		Hosted payment gateways navigate shoppers away from your checkout to the payment service provider’s page. After entering their payment details and completing the transaction, they are redirected back to your storefront.	S01-BC-C141;S01-BC-C142

@@ -1,0 +1,21 @@
+{
+ "n": 82,
+ "url": "https://help.shopify.com/en/manual/privacy-and-security/privacy/international-data-transfers/contracting-entities.md",
+ "dir": "items/082-help.shopify.com",
+ "fetched_at": "2026-10-11T06:13:04Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/privacy-and-security/privacy/international-data-transfers/contracting-entities.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 737,
+ "cited_in": [
+  "SH-S-0241",
+  "SH-S-0242",
+  "SH-S-0243",
+  "SH-S-0244"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "4c0e7831e94b5d7cd036abfb48a45bb2ad014f9a360a5d50df0985db31c0ebf3",
+ "raw_ext": "txt"
+}

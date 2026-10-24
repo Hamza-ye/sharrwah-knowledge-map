@@ -1,0 +1,26 @@
+# Versioning
+
+Changes in an API are inevitable as your understanding and experience with a system evolve. To effectively manage the impact of these changes, we have implemented URI versioning.
+
+### URI Versioning
+One approach to version a REST API is by incorporating the version number within the URI path. When the version is introduced in the URI space, the representations of resources are treated as immutable. Therefore, when modifications are necessary, a new URI space must be created.
+
+For instance, consider an API that provides the following resources: users and privileges:
+
+http://api.salla.dev/admin/v1/customers http://api.salla.dev/admin/v1/products
+
+
+If a breaking change occurs in the users API, we would introduce a second version:
+
+http://api.salla.dev/admin/v2/customers http://api.salla.dev/admin/v2/products
+
+
+### When to Add a New Version?
+APIs should only be versioned up when a breaking change occurs. Breaking changes may include:
+
+- Alterations in the format of the response data for one or more calls
+- Changes in the request or response type (e.g., changing an integer to a float)
+- Removal of any component of the API.
+
+### Changelog
+The [changelog](https://docs.salla.dev/doc-421127) details every available version.

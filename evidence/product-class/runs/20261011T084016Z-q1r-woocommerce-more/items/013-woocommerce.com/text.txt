@@ -1,0 +1,255 @@
+___
+Skip to navigation
+Skip to content
+USD
+Change site currency USD selected
+Develop on Woo
+Hire an expert
+Get support
+Sell
+Click to show 12 more items
+Extensions
+Click to show 18 more items
+Resources
+Click to show 23 more items
+Enterprise ecommerce
+Log in
+Get started
+WooCommerce Bookings
+Getting Started
+Store Manager Guide
+Expand
+Integrations
+Expand
+Use Cases
+Bookings Developer Docs
+Bookings Availability
+Troubleshooting Bookings
+WooCommerce Bookings / Documentation / Getting Started / Introduction to WooCommerce Bookings
+Introduction to WooCommerce Bookings
+
+The WooCommerce Bookings extension allows you to offer appointment-based bookings, rentals/hires, reservations, and time-based services directly through your online store. The content linked below teaches how to use WooCommerce Bookings.
+
+Requirements
+REQUIREMENTS
+PHP Version	7.4 or greater
+WordPress Version	6.4 or greater
+WooCommerce Version	9.0 or greater
+Cron	Working WP Cron (For clearing in-cart bookings from abandoned carts.)
+For additional information read the WooCommerce requirements and server recommendations.
+
+Documentation Contents
+Installing the WooCommerce Bookings Extension – Once you know your site meets the above requirements, you can move on to purchasing, installing, and activating the WooCommerce Bookings extension.
+Store Manager Guide – This guide provides an overview of the features available to a store manager, with links to other resources.
+Creating Bookable Products
+Creating a Bookable Product – Learn to create a bookable product.
+Availability settings – You can define availability rules based on specific dates, time slots, or custom ranges.
+Understanding How Priority Affects Availability Rules – Availability rules are given a numerical priority, which affects how they are applied.
+Persons for Bookable Products – Persons settings allow shoppers to make bookings for multiple people at once, and for you to define different types of people with different costs. (e.g. children or adults)
+Costs for Bookable Products – There are flexible pricing options, allowing you to set different rates for different periods, or offer discounts for certain bookings.
+Resources for Bookable Products – Resources can represent staff, equipment, venues, or anything you need.
+Export Bookings – To troubleshoot Booking issues faster in support, you can export and share the Bookable product with WooCommerce.com support.
+Bookable Product Templates – Several pre-configured product templates are included so you can get a quick start.
+Managing Bookings
+Managing Bookings – A collection of links to the below resources
+All Bookings – The All Bookings page in the admin dashboard is where you can review bookings made on your store.
+Add Booking Product – The Add Product page in WooCommerce Bookings enables you to create a new bookable product from scratch or by using templates
+View or Edit a Booking – How to view and edit the details of bookings on your site.
+Import and Export Bookings – How to import and export bookings to and from a CSV file
+Relationship Between Bookings and Orders: Understanding the Connection
+In Cart Bookings – How to view and clear bookings that are currently in customer carts, but not yet booked.
+Manually add a booking – You can manually add bookings from your admin area.
+Bookings Calendar View – Use the calendar view in your admin area to filter and view bookings.
+Bookings Coupons – The extension adds a new type of coupon for per-person discounts.
+Booking Emails – Learn about the different emails Bookings sends, and how to send manual booking notifications.
+Booking Settings
+Booking Settings – An outline of the settings and menu items added by WooCommerce Bookings
+Store Availability – Store Availability settings establish the times when customers can make bookings for your products or services.
+Timezones – Timezones settings control how Bookings showcases the timezone to customers.
+Calendar Connection (Google Calendar) – Sync your site’s bookings with a standard Google calendar, or a custom Google Calendar API app.
+Accommodation – (If the free Accommodation Bookings extension is enabled) Set a site-wide check-in and check-out time.
+Customer Booking Process – What your shoppers will see when making a booking with WooCommerce Bookings.
+Translating WooCommerce Bookings – Information on available translations and translating the WooCommerce Bookings extension.
+Integrations & Compatible Extensions
+Integration with other extensions – A listing of other WooCommerce extensions and compatible integrations with Bookings.
+Product Add-ons – Enhance your bookable products by offering additional free or paid options for customers.
+Product Vendors – Enhance your marketplace by allowing vendors to offer bookable products like appointments, rentals, or reservations.
+WooCommerce Deposits – Allow customers to make an initial deposit to hold their booking.
+WooCommerce Zapier (Multiple Calendar Integration) – Use Zapier to sync bookings from your site to as many calendars as you need.
+WooCommerce Twilio (Send SMS Notifications) – send SMS notifications for bookings to administrators and customers via Twilio.
+Add-on extensions – Extensions that add functionality specifically for WooCommerce Bookings.
+Any payment gateway – Bookings works with any payment gateway.
+Bookings Use Cases
+Use Cases – Examples of many use cases that display how to utilize the various features of Bookings.
+
+WooCommerce Bookings is very flexible and can be used for many different purposes. Examples of possible use cases for bookable products include:
+
+Booking services and appointments
+Appointment-based bookings, Scheduling/Booking services, Reservations, or Time-based services
+Hotel reservations: the free WooCommerce Accommodation Bookings add-on can help you manage hotel reservations.
+Rentals/Hires
+
+There are some specific scenarios where WooCommerce Bookings may not be the most suitable choice. Two examples of such use cases are:
+
+One-off event tickets: If you need to sell tickets for a single event, utilize the existing virtual products functionality or consider using the WooCommerce Box Office extension. Since an event is distinct from a booking, WooCommerce Box Office can better cater to the specific requirements of selling one-time event tickets.
+Recurring events: If you have an event that occurs on a regular basis, such as a weekly/monthly occurrence, WooCommerce Bookings is not designed to handle recurring events.
+Troubleshooting and Common Questions
+Cancel unpaid confirmed bookings automatically with AutomateWoo – Use AutomateWoo to cancel unpaid, confirmed bookings after a set time.
+Troubleshooting WooCommerce Bookings – Tips and considerations for troubleshooting WooCommerce Bookings issues.
+Suggest a Feature
+
+Bookings is always being developed. If you’d like to see something added that’s not already available in the extension or one of its add-ons, share your idea on the Feature Request Page for WooCommerce Bookings. Our developers refer to the feature requests to prioritize additions to new releases
+
+Add a Custom Feature
+
+If a feature you want has limited appeal, the good news is Bookings makes it possible for a WordPress or WooCommerce developer to add nearly any feature. If you need a developer to add a feature to Bookings, search for a Woo Agency Partner to help implement your vision.
+
+Developer Documentation
+
+The following is developer-level documentation that provides explanations of the filters, functions, CSS Customization, REST API etc. for WooCommerce Bookings. An understanding of WordPress development is required.
+
+Bookings Snippets: Tips and Tweaks – Pre-written snippets to help customize and extend Bookings.
+Creating Bookings Programmatically – How to use the create_wc_booking function.
+Bookings: Action and Filter reference – Actions and filters specific to WooCommerce Bookings.
+WooCommerce Bookings REST API Documentation – Allowing Bookings data to be read using requests in JSON format.
+WooCommerce Bookings Pages and Emails Customization – The location and a description of each template Bookings uses.
+WooCommerce Bookings Calendar CSS Style Elements – CSS classes to modify the different calendar elements.
+Embedding Bookings Calendar on a custom page/post – A method to display the bookings calendar on a single page.
+WooCommerce Bookings Helper – A free tool for importing and exporting availability rules and bookable products. Useful for troubleshooting.
+
+Scope of support:
+
+We are unable to provide support for customizations under our Support Policy. If you need to customize a snippet or extend its functionality, we recommend working with a Woo Agency Partner or a WooCommerce developer on Codeable.
+
+
+Questions and support
+
+Something missing from this documentation? Still have questions and need assistance?
+
+If you have a question about a specific extension or theme you’d like to purchase, contact us to get answers.
+If you already purchased this product and need some assistance, get in touch with a Happiness Engineer via our support page and select this product’s name from the Product dropdown.
+Professional Configuration Available
+
+Want a hands-off setup? Our trusted partners at Codeable can configure this extension for you, so it works exactly the way your business needs it to.
+
+Get started →
+
+Was this guide helpful for you?
+Related Products
+WooCommerce Subscriptions
+by
+Woo
+
+WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or...
+
+Excellence verified
+Price $279 annually
+$279
+annually
+Rated 3.9 out of 5 stars
+3.9 
+(142)
+WooCommerce Memberships
+by
+SkyVerge
+
+Power your membership association, online magazine, elearning sites, and more with access control to...
+
+Excellence verified
+Price $199 annually
+$199
+annually
+Rated 4 out of 5 stars
+4 
+(152)
+ON THIS PAGE
+Requirements
+Documentation Contents
+Creating Bookable Products
+Managing Bookings
+Booking Settings
+Integrations & Compatible Extensions
+Bookings Use Cases
+Troubleshooting and Common Questions
+Suggest a Feature
+Add a Custom Feature
+Developer Documentation
+Questions and support
+Professional Configuration Available
+WooCommerce Bookings
+by Woo
+Price $20.75
+$20.75
+Per month
+ monthly
+ Billed annually at $249
+Buy now
+30-day money-back guarantee
+Support teams across the world
+Safe and secure online payments
+Sell
+WooCommerce
+WooCommerce pricing
+Payments
+No-code customization
+Marketing
+Checkout
+Shipping
+Mobile app
+Enterprise ecommerce
+Marketplace
+WooCommerce extensions
+WooCommerce themes
+New
+Essentials
+Collections
+Developed by Woo
+Build
+Woo for developers
+Developer resources
+Become a Woo agency
+Become a Marketplace partner
+Become an affiliate
+Resources
+Blog
+Documentation
+WooCommerce site examples
+Product updates
+Email newsletter
+Support
+Feature requests
+WooCommerce hosting
+Hire an agency
+Participate in customer research
+Accessibility
+Support forums
+Company
+About
+Press
+Download WooCommerce free
+Join the Woo community
+Woo trademark guidelines
+Brand and logo guidelines
+Do not sell or share my personal information
+WooCommerce Support Policy
+Refund Policy
+Contact us
+Follow us on Facebook
+Follow us on X
+Follow us on Instagram
+Follow us on LinkedIn
+USD
+Change site currency USD selected
+Terms of Service
+Privacy Policy
+Privacy Notice for California Users
+
+© WooCommerce, Inc. 2026
+
+AN
+AUTOMATTIC
+OPUS
+Use of your personal data
+We and our partners process your personal data (such as browsing data, IP Addresses, cookie information, and other unique identifiers) based on your consent and/or our legitimate interest to optimize our website, marketing activities, and your user experience.
+Customize
+Accept all

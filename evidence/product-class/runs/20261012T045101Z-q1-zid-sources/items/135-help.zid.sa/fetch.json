@@ -1,0 +1,19 @@
+{
+ "n": 135,
+ "url": "https://help.zid.sa/loyalty-program/",
+ "dir": "items/135-help.zid.sa",
+ "fetched_at": "2026-10-12T04:53:07Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/loyalty-program/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 26581,
+ "cited_in": [
+  "ZD-S-1034",
+  "ZD-S-1035"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "a357635c9fe9fb428568685c6746ed13b04bac98ed26ede0217c216a43d74b48",
+ "raw_ext": "html"
+}

@@ -1,0 +1,25 @@
+{
+ "n": 62,
+ "url": "https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/acceptable-business-practices.md",
+ "dir": "items/062-help.shopify.com",
+ "fetched_at": "2026-10-11T06:13:01Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/acceptable-business-practices.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 3188,
+ "cited_in": [
+  "SH-S-0331",
+  "SH-S-0332",
+  "SH-S-0333",
+  "SH-S-0334",
+  "SH-S-0335",
+  "SH-S-0336",
+  "SH-S-0337",
+  "SH-S-0338"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "71e5b67fc61f235ebac977fd45efdf70db731a64fc268c55d5cea593c59ffc06",
+ "raw_ext": "txt"
+}

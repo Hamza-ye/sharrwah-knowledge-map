@@ -1,0 +1,19 @@
+{
+ "n": 66,
+ "url": "https://help.zid.sa/payment-requirements/",
+ "dir": "items/066-help.zid.sa",
+ "fetched_at": "2026-10-12T10:50:42Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/payment-requirements/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 25503,
+ "cited_in": [
+  "S01-ZD-C285",
+  "S01-ZD-C286"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "b94433b6ad0f608dd3fd5d34d4c31161efe83a5ec7bc3a8ac105f6f1287cfd1e",
+ "raw_ext": "html"
+}

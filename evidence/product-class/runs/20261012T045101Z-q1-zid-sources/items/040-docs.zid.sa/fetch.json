@@ -1,0 +1,19 @@
+{
+ "n": 40,
+ "url": "https://docs.zid.sa/list-of-payment-method.md",
+ "dir": "items/040-docs.zid.sa",
+ "fetched_at": "2026-10-12T04:51:38Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.zid.sa/list-of-payment-method.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 12024,
+ "cited_in": [
+  "ZD-S-0619",
+  "ZD-S-0620"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "55b85a15be0fc4b23ce55dc8ffe514440f61c8b30d190d6732dc8104fafca41f",
+ "raw_ext": "txt"
+}

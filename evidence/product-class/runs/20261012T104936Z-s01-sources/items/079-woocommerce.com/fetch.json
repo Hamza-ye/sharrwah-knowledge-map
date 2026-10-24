@@ -1,0 +1,20 @@
+{
+ "n": 79,
+ "url": "https://woocommerce.com/document/bacs/",
+ "dir": "items/079-woocommerce.com",
+ "fetched_at": "2026-10-12T10:50:50Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/bacs/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 39375,
+ "cited_in": [
+  "S01-WC-C099",
+  "S01-WC-C100",
+  "S01-WC-C101"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "248913d5ce51627f76f0b261ea233e09e74308e49519b394eec1a719f7ac85a6",
+ "raw_ext": "html"
+}

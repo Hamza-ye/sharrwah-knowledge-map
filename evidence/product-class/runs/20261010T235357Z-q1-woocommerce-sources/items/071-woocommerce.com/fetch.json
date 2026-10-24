@@ -1,0 +1,22 @@
+{
+ "n": 71,
+ "url": "https://woocommerce.com/document/woopayments/our-policies/reserves/",
+ "dir": "items/071-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:05Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/woopayments/our-policies/reserves/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 44668,
+ "cited_in": [
+  "WC-S-0526",
+  "WC-S-0527",
+  "WC-S-0528",
+  "WC-S-0855",
+  "WC-S-0856"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "aceb4572556f153f26475c88bfb70e740eb9819c96ed79263e9d87dc35c89a78",
+ "raw_ext": "html"
+}

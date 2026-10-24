@@ -1,0 +1,19 @@
+{
+ "n": 39,
+ "url": "https://partners.salla.com/legal/privacy-affiliate-plans",
+ "dir": "items/039-partners.salla.com",
+ "fetched_at": "2026-10-10T23:51:51Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://partners.salla.com/legal/privacy-affiliate-plans",
+ "content_type": "text/html",
+ "bytes": 41705,
+ "cited_in": [
+  "SA-S-0044",
+  "SA-S-0212"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "3c68405bcbf5b0c7303e0f0e4d91baf158b14f9ae5fb57758b19903b86b4d303",
+ "raw_ext": "html"
+}

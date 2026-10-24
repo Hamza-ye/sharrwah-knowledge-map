@@ -1,0 +1,8 @@
+# ApplePay
+
+## <span style="color:#5D4EC3;"> Overview</span>
+
+To create an Apple Pay payment, a domain association file is required. This file should cover all payment provider merchants in one country. If a new merchant registers, a request to register the Apple Pay domain will be sent to the provider. 
+
+During the initial steps of the integration process, a file for each country where the payment provider operates must be provided.
+

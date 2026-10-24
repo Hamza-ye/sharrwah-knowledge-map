@@ -1,0 +1,19 @@
+{
+ "n": 95,
+ "url": "https://docs.bigcommerce.com/developer/docs/storefront/headless/pci-compliance.md",
+ "dir": "items/095-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:20:50Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/docs/storefront/headless/pci-compliance.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 1749,
+ "cited_in": [
+  "BC-S-0147",
+  "BC-S-0148"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "a9d7ee4f315fbdbed6b29572bd9435229f322448ab7da2185a5c467cb4cbb879",
+ "raw_ext": "txt"
+}

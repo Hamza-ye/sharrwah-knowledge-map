@@ -1,0 +1,352 @@
+___
+Skip to navigation
+Skip to content
+USD
+Change site currency USD selected
+Develop on Woo
+Hire an expert
+Get support
+Sell
+Click to show 12 more items
+Extensions
+Click to show 18 more items
+Resources
+Click to show 23 more items
+Enterprise ecommerce
+Log in
+Get started
+Documentation
+WooCommerce
+Expand
+Products
+Expand
+Extensions
+Expand
+Pre-Sales Support
+Stripe
+WooCommerce Square
+PayPal Braintree
+AutomateWoo
+Expand
+Product CSV Import Suite
+Order/Customer CSV Export
+Facebook for WooCommerce
+WooCommerce Subscriptions
+Expand
+WooCommerce Memberships
+Expand
+WooCommerce Bookings
+Expand
+Product Bundles
+Expand
+Product Recommendations
+Expand
+Composite Products
+Expand
+Smart Coupons
+Cashier for WooCommerce
+Affiliate For WooCommerce
+Mix and Match Products
+Google Product Feed
+Groups WooCommerce
+Gift Cards
+API Manager
+Table Rate Shipping
+Advanced Shipping Packages
+Name Your Price
+Order Delivery
+WooCommerce Zapier Integration
+Expand
+Klarna
+Expand
+Product Vendors
+PDF Invoice
+Pre-orders
+Force Sells
+Google for WooCommerce
+Expand
+Import Export Suite for WooCommerce
+Bulk Updater for WooCommerce Subscriptions
+Expand
+Enhancer for WooCommerce Subscriptions
+Expand
+Product Add-ons
+Expand
+Xero
+Expand
+Buy One Get One Free
+WooCommerce Sales Analysis
+Conditional Shipping and Payments
+WooCommerce Shipping & Tax
+Email Customizer Pro
+Back In Stock Notifications
+WooCommerce Smart Refunder
+Saved Addresses For WooCommerce
+Chained Products
+Volume Discount Coupons
+Sensei
+Expand
+WooCommerce Product Search
+Expand
+Photography
+Expand
+Opayo
+Advanced Bulk Edit
+Smart Stock & Inventory Manager
+Flexi BOGO
+Flexi Custom Order Status
+Product Input Fields
+Product Feed Manager
+Payment Gateway Based Fees and Discounts
+Abandoned Cart Pro
+Order Delivery Date
+Currency per product
+Call for Price Pro
+Product Prices by User Role
+Flexi Custom Order Numbers
+Flexi Product Delivery Date
+Flexi Booking and Appointment
+Delivery and Pickup Scheduler
+SensAI
+All-in-one PDF Invoice and Packing Slips Suite
+Expand
+Easy Subscriptions
+Smart Product Designer
+WooCommerce Anti-Fraud
+Shipment Tracking
+Expand
+EU VAT Number
+Themes
+Expand
+WooPayments
+WooPay
+WooCommerce Shipping
+WooCommerce Tax
+Retired Products
+Expand
+Woo Marketplace
+Code Snippets
+Expand
+Documentation / Products / Extensions / Order Attribution Tracking
+Order Attribution Tracking
+
+Order attribution tracking is a feature for store owners seeking clarity on the marketing activities, channels, or campaigns driving orders to their online stores. It allows you to attribute orders to traffic sources, providing an understanding of the effectiveness of various marketing efforts.
+
+With this feature, you can discover what prompted a customer’s purchase on your online store. Be it the Google product listing, the trending TikTok video, the shared Facebook post, or perhaps the email campaign from last week.
+
+Knowing the answers to these questions will help you make more informed decisions about where to invest both your time and money.
+
+Principles of Order Attribution Tracking
+
+This new feature makes use of a last-click attribution model — widely adopted and the default for most marketing platforms and attribution tools — it gives 100% of the conversion credit to the last interaction before a customer lands on your site. Whether it’s an ad, email, or product listing, the “last thing” clicked takes full credit for the conversion.
+
+As no data is stored in WooCommerce unless an order is placed and all cookies of this feature expire with each session, this feature cannot be used to track your visitors across sessions.
+
+Here are the essential rules governing order attribution tracking:
+
+UTM and organic sources take precedence: UTM and organic sources always override any previous source.
+Type-in (direct) never overrides: A direct visit (type-in) never overrides a previously identified source.
+Referral source hierarchy: The referral source overrides the previous source only if there is no current visitor session active. If it’s within the same session (e.g., within 30 minutes of the first site visit in the same browser), a referral source will never override the previous source.
+Enable or Disable Order Attribution Tracking
+
+You can enable (or disable) this feature by going to WooCommerce > Settings > Advanced > Features > Order Attribution.
+
+Locating and Analyzing Order Data
+
+Now that you have order attribution data coming in, let’s discuss how you can analyze and find actionable insights from said data. We have a new order attribution report that you can add to your site via the WooCommerce Analytics plugin. This adds five new reports to help you see your top channels, sources, and even devices your customers are using before they buy from your store. See our documentation about each of these reports for further information as well.
+
+Get WooCommerce Analytics Now
+Order Attribution Report Documentation
+Order Edit Page
+
+Outside these new reports, you can see order attribution data in other places as well. Within the order edit page for each new order, you’ll find two meta boxes — “Order attribution” and “Customer history.” These boxes provide more information on the origin of the order and offer a detailed history of the customer’s interactions with your store. These meta boxes show the following information:
+
+Order attribution: Origin, Source type, UTM campaign (if source type is UTM), and Medium, Device type, and Session page views. UTM Source platform, Creative format, and Marketing tactic parameters are also supported.
+
+Customer history: Number of orders completed, orders refunded, total spend
+
+Order Table
+
+The WooCommerce > Orders table includes a new column that displays the order origin. This column reveals the origin of each order, providing immediate insight into which channels are driving sales.
+
+Note:
+
+Order Attribution Tracking data is available only to orders generated when this feature is enabled. If you deactivate this feature at any point, orders placed during the disabled period will not incorporate this data.
+
+Data Stored by Order Attribution Tracking
+
+The order attribution tracking feature stores the following information when an order is placed:
+
+Referring source: The URL of the site that referred the visitor to your site.
+UTM parameters: If the URL that referred the visitor to your site includes UTM parameters, we parse these and store the source, medium, campaign, content, and term parameters.
+Device type: The type of device your customer used when placing the order (desktop, tablet, or mobile).
+Session page views: The number of page views in the session before placing the order.
+Cookies in Use
+
+The order attribution feature uses these cookies:
+
+COOKIE NAME	DATA STORED	DEFAULT EXPIRATION POLICY
+sbjs_session	The number of page views in this session and the current page path	30 minutes
+sbjs_udata	Information about the visitor’s user agent, such as IP, the browser, and the device type	Session
+sbjs_first	Traffic origin information for the visitor’s first visit to your store (only applicable if the visitor returns before the session expires)	Session
+sbjs_current	Traffic origin information for the visitor’s current visit to your store	Session
+sbjs_first_add	Timestamp, referring URL, and entry page for your visitor’s first visit to your store (only applicable if the visitor returns before the session expires)	Session
+sbjs_current_add	Timestamp, referring URL, and entry page for your visitor’s current visit to your store	Session
+sbjs_migrations	Technical data to help with migrations between different versions of the tracking feature	Session
+Testing Order Attribution Tracking
+
+When placing orders without any referral or source (i.e., directly from the shop), the origin will always be “Direct.” To conduct tests with various origins, please follow the steps below using an incognito/private window.
+
+Referral
+Go to any website and edit a link href in developer tools to point to your store. Add items to the cart and complete the checkout.
+Organic
+Go to https://www.google.com/ and edit a link href in developer tools to point to your store. Add items to the cart and complete the checkout.
+Using UTM Parameters
+Open the store with a URL like https://yourstorename.com/shop/?utm_source=newsletter&utm_medium=email&utm_campaign=sale&utm_content=utmcontent&utm_term=utm_term.
+Add items to the cart and complete the checkout.
+Type-in (Direct)
+Same as above, but without any parameters.
+Web Admin
+Manually Add an order from the backend
+Unknown
+Manually Add an order from the backend
+Then erase the associated metadata from the database:
+DELETE FROM `wp_wc_orders_meta` WHERE `order_id` = 93 AND `meta_key` LIKE '_wc_order_attribution%';
+
+DELETE FROM `wp_postmeta` WHERE `post_id` = 93 AND `meta_key` LIKE '_wc_order_attribution%';
+Frequently Asked Questions
+What about historical order data?
+
+This data is available only to orders generated while the feature is enabled. If you deactivate this feature at any point, orders placed during the disabled period will not incorporate this data.
+
+Does this feature use cookies?
+
+Yes. The cookies listed above are stored in the visitor’s browser. These cookies will expire with the visitor’s session or if they clear their cookie history.
+
+Only in the event of an order the data stored in these cookies will be accessed.
+
+How long is a customer session?
+
+By default, a customer’s session is considered to last 30 minutes. The cookies set by this feature expire with the session and cannot be used to track your visitors across multiple sessions or for remarketing.
+
+Cookies are blocked by a Web Application Firewall (WAF)
+
+Some Web Application Firewalls use rulesets that incorrectly flag the cookies used to capture visitor information for order attribution, leading to 403 Forbidden errors for visitors. This issue has been recognized by some of the most common ruleset providers:
+
+Comodo WAF ruleset – released an updated ruleset to whitelist the cookies. If your WAF uses this ruleset, any issue should be resolved by updating to the latest version.
+OWASP core ruleset – recognized the issue, but don’t plan to release a fix. If your WAF uses this ruleset, you should add an exclusion rule to resolve the issue. The rule is available in this Github comment.
+
+Updating your ruleset, adding the exclusion rule, or asking your hosting provider to do so should resolve the WAF issues.
+
+WooCommerce 9.0 introduced another method for avoiding WAF false positives: the wc_order_attribution_use_base64_cookies filter. Setting this filter to true will use Base64 encoding for the data captured in the order attribution cookies, avoiding any substrings that may trip up overzealous WAFs:
+
+add_filter( 'wc_order_attribution_use_base64_cookies', '__return_true' );
+
+If those options don’t work resolve the WAF issues, you can disable the order attribution feature entirely at WooCommerce > Settings > Advanced > Features, or programmatically using:
+
+# PHP 
+update_option( 'woocommerce_feature_order_attribution_enabled', 'no' );
+
+# WP CLI
+wp option update woocommerce_feature_order_attribution_enabled "no"
+How is the data processed and stored?
+
+The order attribution information is stored temporarily using cookies in visitors’ browsers. Only in the event of an order, this data will be read and saved as order metadata.
+
+The cookies in visitors’ browsers expire after each session. WooCommerce’s order attribution feature is not suited to tracking visitors across multiple sessions or aggregating behavioral visitor profiles.
+
+Does the feature integrate with Consent Management Platforms?
+
+Yes, we made WooCommerce’s order attribution compatible with WP Consent API to allow convenient integration with Consent Management Platforms.
+
+What data does Automattic receive?
+
+If you have previously opted into sharing data (with Automattic) in WooCommerce, then statistical order attribution data captured as part of this feature will be shared with Automattic on a per-order basis. Customer data, such as email address, billing, or shipping data, will not be transmitted.
+
+Was this guide helpful for you?
+ON THIS PAGE
+Principles of Order Attribution Tracking
+Enable or Disable Order Attribution Tracking
+Locating and Analyzing Order Data
+Order Edit Page
+Order Table
+Data Stored by Order Attribution Tracking
+Cookies in Use
+Testing Order Attribution Tracking
+Frequently Asked Questions
+What about historical order data?
+Does this feature use cookies?
+How long is a customer session?
+Cookies are blocked by a Web Application Firewall (WAF)
+How is the data processed and stored?
+Does the feature integrate with Consent Management Platforms?
+What data does Automattic receive?
+30-day money-back guarantee
+Support teams across the world
+Safe and secure online payments
+Sell
+WooCommerce
+WooCommerce pricing
+Payments
+No-code customization
+Marketing
+Checkout
+Shipping
+Mobile app
+Enterprise ecommerce
+Marketplace
+WooCommerce extensions
+WooCommerce themes
+New
+Essentials
+Collections
+Developed by Woo
+Build
+Woo for developers
+Developer resources
+Become a Woo agency
+Become a Marketplace partner
+Become an affiliate
+Resources
+Blog
+Documentation
+WooCommerce site examples
+Product updates
+Email newsletter
+Support
+Feature requests
+WooCommerce hosting
+Hire an agency
+Participate in customer research
+Accessibility
+Support forums
+Company
+About
+Press
+Download WooCommerce free
+Join the Woo community
+Woo trademark guidelines
+Brand and logo guidelines
+Do not sell or share my personal information
+WooCommerce Support Policy
+Refund Policy
+Contact us
+Follow us on Facebook
+Follow us on X
+Follow us on Instagram
+Follow us on LinkedIn
+USD
+Change site currency USD selected
+Terms of Service
+Privacy Policy
+Privacy Notice for California Users
+
+© WooCommerce, Inc. 2026
+
+AN
+AUTOMATTIC
+CONTRAPTION
+Use of your personal data
+We and our partners process your personal data (such as browsing data, IP Addresses, cookie information, and other unique identifiers) based on your consent and/or our legitimate interest to optimize our website, marketing activities, and your user experience.
+Customize
+Accept all

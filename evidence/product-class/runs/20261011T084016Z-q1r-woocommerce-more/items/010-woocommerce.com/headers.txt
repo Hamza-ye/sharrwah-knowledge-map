@@ -1,0 +1,41 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 302 
+server: nginx
+date: Sun, 11 Oct 2026 08:40:24 GMT
+content-type: text/html; charset=utf-8
+location: https://woocommerce.github.io/woocommerce-bookings-api-docs/#introduction
+vary: accept, content-type
+x-safe-redirect-manager: true
+x-safe-redirect-id: 8774744
+x-redirect-by: Safe Redirect Manager
+x-rq: dca6 0 40 9980
+x-cache: EXPIRED
+strict-transport-security: max-age=31536000;includeSubdomains
+
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+server: GitHub.com
+content-type: text/html; charset=utf-8
+last-modified: Wed, 26 Aug 2026 16:54:54 GMT
+access-control-allow-origin: *
+etag: W/"6a8f1a5e-d49aa"
+expires: Sun, 11 Oct 2026 08:45:56 GMT
+cache-control: max-age=600
+content-encoding: gzip
+x-proxy-cache: MISS
+x-github-request-id: 777E:17854D:3248D6F:36F40F3:6ACB4A6C
+x-github-edge-region: iad
+accept-ranges: bytes
+age: 0
+date: Sun, 11 Oct 2026 08:40:24 GMT
+via: 1.1 varnish
+x-served-by: cache-iad-kcgs7200174-IAD
+x-cache: HIT
+x-cache-hits: 0
+x-timer: S1791708024.456813,VS0,VE28
+vary: Accept-Encoding
+x-fastly-request-id: 96435d7fef60ba96bff57909399218f6652fa637
+content-length: 48518
+

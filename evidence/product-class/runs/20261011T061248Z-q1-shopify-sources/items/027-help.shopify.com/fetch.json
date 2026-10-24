@@ -1,0 +1,20 @@
+{
+ "n": 27,
+ "url": "https://help.shopify.com/en/manual/fulfillment/fulfilling-orders/shipping-labels/shipping-insurance.md",
+ "dir": "items/027-help.shopify.com",
+ "fetched_at": "2026-10-11T06:12:58Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/fulfillment/fulfilling-orders/shipping-labels/shipping-insurance.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 3086,
+ "cited_in": [
+  "SH-S-0720",
+  "SH-S-0721",
+  "SH-S-0722"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "9e9fa7b2ef05f0761c5dcf88e6da9957c803b0c586fed7d2ae9faacf065ac463",
+ "raw_ext": "txt"
+}

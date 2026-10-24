@@ -1,0 +1,18 @@
+{
+ "n": 26,
+ "url": "https://shopify.engineering/two-day-delivery-shopify-fulfillment-network",
+ "dir": "items/026-shopify.engineering",
+ "fetched_at": "2026-10-10T08:30:29Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://shopify.engineering/two-day-delivery-shopify-fulfillment-network",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 51228,
+ "cited_in": [
+  "evidence/shopify-engineering/finding-aids/20261010-shopify-engineering-sources.tsv:E026"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "0ccb163c2a70c7b3950035957cd4fc4ec363cbf91fbcbb7b69d78ddad6f415d1",
+ "raw_ext": "html"
+}

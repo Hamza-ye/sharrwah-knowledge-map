@@ -1,0 +1,18 @@
+{
+ "n": 12,
+ "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/content/custom-template-associations.md",
+ "dir": "items/012-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:19:27Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/content/custom-template-associations.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 780,
+ "cited_in": [
+  "BC-S-0211"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "649397cc57c14c26bb8e75194056741ba2607bbdda498f3f36fab0c94ea04838",
+ "raw_ext": "txt"
+}

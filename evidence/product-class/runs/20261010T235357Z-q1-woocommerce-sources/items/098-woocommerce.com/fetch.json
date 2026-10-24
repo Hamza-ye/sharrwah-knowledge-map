@@ -1,0 +1,20 @@
+{
+ "n": 98,
+ "url": "https://woocommerce.com/woocommerce-analytics-data-syncing/",
+ "dir": "items/098-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:07Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/woocommerce-analytics-data-syncing/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 34894,
+ "cited_in": [
+  "WC-S-0573",
+  "WC-S-0574",
+  "WC-S-0575"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "ada0a45725f6e614362b2194d2d606ef995342658cff4bf82c70cb9bcb323805",
+ "raw_ext": "html"
+}

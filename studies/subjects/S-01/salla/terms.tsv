@@ -1,0 +1,40 @@
+term	translation	definition	cite_ids
+مدفوعات سلة	Salla Payments		S01-SA-C149;S01-SA-C150
+المدفوعات الإلكترونية	Electronic Payments	خدمة تقدمها سلة لمعالجة المدفوعات في متجرك بشكل مباشر، وإتمام العمليات المالية مع البنوك ووسائل الدفع المعتمدة في متجرك بشكل آلي.	S01-SA-C001;S01-SA-C151
+رصيد المدفوعات الإلكترونية	online-payments balance; Electronic Payments Balance	فرصيد المدفوعات الإلكترونية يمثل مستحقات مبيعاتك قبل تحويلها إلى حسابك البنكي	S01-SA-C015;S01-SA-C152;S01-SA-C032
+رصيد المتجر	Store Wallet	رصيد المتجر مخصص لاشتراكات سلة وخدماتها ومشترياتها	S01-SA-C056;S01-SA-C152
+المحفظة الإلكترونية; المحفظة	Wallet	هي رصيد داخلي ضمن لوحة تحكم المتجر يُستخدم لإدارة الأموال بشكل مباشر، مثل تجديد باقة المتجر، إصدار البوليصات، أو تحويل الأموال بين الأقسام المختلفة.	S01-SA-C027;S01-SA-C153
+رصيد مدفوعات الدفع عند الاستلام	Cash on Delivery Balance	المبالغ المستلمة من العملاء نقداً أو عند الاستلام.	S01-SA-C028;S01-SA-C154
+المدفوعات عند الاستلام	Cash on delivery		S01-SA-C155;S01-SA-C156
+المستحقات	dues		S01-SA-C157;S01-SA-C158
+مستحقاتك من سلة	your dues from Salla		S01-SA-C042;S01-SA-C159
+دورة تحويل المدفوعات الإلكترونية	Online payment payout cycle; electronic payment transfer cycle	تحدد دورة تحويل المدفوعات الإلكترونية عدد مرات تحويل مستحقات مبيعاتك المدفوعة إلكترونيًا إلى حسابك البنكي.	S01-SA-C006;S01-SA-C160;S01-SA-C161
+تحويلات مدفوعات سلة والتسويات	Salla Payments UAE Payouts & Settlement		S01-SA-C162;S01-SA-C163
+التسوية	settlement		S01-SA-C050;S01-SA-C164
+تحصيل المدفوعات	Payouts	استعرض تفاصيل عمليات تحويل المدفوعات من سلة إلى حسابك البنكي.	S01-SA-C165;S01-SA-C039;S01-SA-C166
+تُحوَّل المستحقات إلى حسابك البنكي	Payout is sent to your bank account		S01-SA-C167;S01-SA-C168
+يدفع العميل إلكترونيًا	Customer pays online		S01-SA-C169;S01-SA-C170
+يدفع العميل نقدًا عند الاستلام	Customer pays on delivery		S01-SA-C040;S01-SA-C171
+عقد خدمات الدفع	payment services agreement		S01-SA-C053;S01-SA-C172
+إيداع المبيعات	daily sales deposits		S01-SA-C022;S01-SA-C173
+استرداد رصيد من المحفظة	Withdraw funds from wallet		S01-SA-C174;S01-SA-C175
+سياسة إدارة المبالغ المحجوزة	Salla’s Holding Management Policy		S01-SA-C176;S01-SA-C177
+إدارة المبالغ المحجوزة	Settlements		S01-SA-C138
+مبالغ معلقة في المدفوعات الإلكترونية			S01-SA-C086
+مزود الخدمة		يقصَد بهذه العبارة الخدمات التي تقوم منصة سلّة بتوفيرها للتُجّار عن طريق أطراف ثالثة ، ويُقصد بـ توفير الخدمات أي مجرد توفير الربط بين التاجر ومزود الخدمة ، حيث أنه لا سلطان ولا علاقة لمنصة سلّة بالاتفاق المبرم بين التاجر ومزود الخدمة.	S01-SA-C080
+شركائها			S01-SA-C082
+بوابة دفع سلة			S01-SA-C075
+حساب التاجر			S01-SA-C024
+merchant balance			S01-SA-C012
+رصيد التاجر			S01-SA-C034
+أرباحك			S01-SA-C023
+عمليات الدفع والسداد	Payment and settlement operations		S01-SA-C184;S01-SA-C185
+الحساب البنكي لاستلام المدفوعات	Bank Account for Payment Settlements		S01-SA-C188;S01-SA-C189
+لحساب المتجر	for the store's account		S01-SA-C276;S01-SA-C277
+الطرف الذي حُصّل المبلغ لحسابه	the party the payment was collected for		S01-SA-C278;S01-SA-C279
+نيابةً عنك	on your behalf		S01-SA-C140;S01-SA-C291;S01-SA-C292;S01-SA-C293
+تُفوّض سلة; أوافق على تفويض سلة; تفويضًا صريحًا	you authorize Salla; I authorize Salla		S01-SA-C140;S01-SA-C291;S01-SA-C294;S01-SA-C295;S01-SA-C139;S01-SA-C299
+البيع بالنيابة	Merchant of Record		S01-SA-C302;S01-SA-C303
+مناديب المتجر; مندوب جديد; مندوب متجرك الخاص	Store delivery agents; New delivery agent; your own store courier		S01-SA-C310;S01-SA-C311;S01-SA-C312;S01-SA-C313;S01-SA-C314;S01-SA-C315
+أموالك	your money		S01-SA-C322;S01-SA-C323
+حل متكامل	an integrated solution		S01-SA-C322;S01-SA-C323

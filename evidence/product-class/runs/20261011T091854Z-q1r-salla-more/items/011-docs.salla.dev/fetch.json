@@ -1,0 +1,18 @@
+{
+ "n": 11,
+ "url": "https://docs.salla.dev/webhooks.md",
+ "dir": "items/011-docs.salla.dev",
+ "fetched_at": "2026-10-11T09:19:09Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.salla.dev/webhooks.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 8449,
+ "cited_in": [
+  "SA-S-5092"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "26a0c37428ed1492edea2533b62090c86c0c145a0cb4d53edda9bd01c48acad4",
+ "raw_ext": "txt"
+}

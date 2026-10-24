@@ -1,0 +1,2853 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;"># Create Product
+
+## OpenAPI Specification
+
+```yaml
+openapi: 3.0.1
+info:
+  title: ''
+  description: ''
+  version: 1.0.0
+paths:
+  /v1/products/:
+    post:
+      summary: Create Product
+      deprecated: false
+      description: &gt;-
+        Use this endpoint to create a new product in the store.
+
+
+        The Create Product endpoint supports multiple product classes, including
+        `standard products`, `grouped products`, `vouchers`, `downloadable
+        products`, `crowdfunding projects`, `donation items`, `customizable
+        products`, and `dynamic bundle products`.
+
+
+        Some product classes require additional fields in the request body.
+        Dynamic Bundle products require an additional step after product
+        creation to configure selection groups.
+
+
+        ## Supported product classes
+
+
+        | Product Class | Use Case | Additional Step Required |
+
+        |---|---|---|
+
+        | Standard Product | Regular physical or digital product. | No |
+
+        | `grouped_product` | Bundle multiple existing products together as one
+        product. | No |
+
+        | `voucher` | Digital voucher, gift card, or license key product. | May
+        require voucher setup after product creation. |
+
+        | `downloadable` | Digital file product. | Files are managed separately
+        after product creation. |
+
+        | `crowdfunding_project` | Fundraising product with goal tracking. | No
+        |
+
+        | `donation_item` | Donation product with unit-based progress tracking.
+        | No |
+
+        | `dynamic_bundle` | Customer-selectable bundle with selection groups. |
+        Yes. Selection groups must be created separately. |
+
+        | Customizable Product | Product with custom input fields or custom
+        option fields. | No |
+
+
+
+        :::info[]
+
+        ## Features
+
+
+        - **Grouped products:** Create a product that includes multiple existing
+        products as a set.
+
+        - **Product badges:** Optionally assign a badge to highlight offers, new
+        arrivals, or other product attributes.
+
+        - **Variants:** Add variants inline during product creation or create
+        them later using the Add Product Variants endpoint.
+
+        - **Custom fields:** Add customer input fields or predefined
+        customization options during product creation.
+
+        - **Donation and crowdfunding products:** Create products with progress
+        tracking using product-specific metadata.
+
+        - **Dynamic bundles:** Create a bundle product first, then configure its
+        selection groups using the Dynamic Bundle selection groups endpoint.
+
+        :::
+
+
+        :::caution[]
+
+        ## Important Notes
+
+
+        1. Categories cannot be added during product creation.
+
+        To assign a product to one or more categories, use the following
+        endpoints after creation:
+
+
+        - **[Add a product to a certain
+        category](https://docs.zid.sa/add-a-product-to-a-certain-category)**
+
+        - **[Bulk Add Product to
+        Category](https://docs.zid.sa/bulk-add-product-to-category-24155519e0)**
+
+        2. Dynamic Bundle products require at least one selection group before
+        they can be published.
+
+        3. If you create a Dynamic Bundle product as a draft, you can add
+        selection groups later before publishing it.
+
+        4. Some product classes restrict specific fields such as `sale_price`,
+        `quantity`, `is_infinite`, or `requires_shipping`.
+
+        :::
+
+
+        &lt;Accordion title="🔑Scopes" defaultOpen&gt;
+            
+          `products.read_write` - Products Read &amp; Write
+         
+        &lt;/Accordion&gt;
+
+
+        ## Dynamic Bundle flow
+
+
+        Dynamic Bundle products require two API requests:
+
+
+        1. Create the Dynamic Bundle product using `POST /v1/products/`
+
+        2. Add selection groups using `PATCH
+        /v1/products/{product_id}/selection-groups/bulk-patch/`
+
+
+        If the product is created as a draft, use this flow:
+
+
+        1. Create the product as draft using `POST /v1/products/`
+
+        2. Add selection groups using `PATCH
+        /v1/products/{product_id}/selection-groups/bulk-patch/`
+
+        3. Publish the product using `PATCH /v1/products/{product_id}/`
+
+
+        &gt; The Dynamic Bundle selection groups endpoint is currently not
+        published.
+      operationId: post-single-product
+      tags:
+        - Default module/Apps/Merchant APIs/Products/Managing Products
+        - Products
+      parameters:
+        - name: Authorization
+          in: header
+          description: &gt;-
+            The Authorization token is a unique key given to the third-party
+            application (Partner) by Zid. It is used to authenticate the API
+            requests made by the Partner application. The token verifies the
+            partner's identity and ensures they have permission to access Zid's
+            API but does not provide any specific user or store information. It
+            should be included in the header of API requests when the partner
+            application needs to access Zid's API.
+          required: true
+          example: '{{Autherization}}'
+          schema:
+            type: string
+        - name: X-Manager-Token
+          in: header
+          description: &gt;-
+            This token is used to authenticate and access information related to
+            the store. It is obtained through an OAuth mechanism and is required
+            to perform operations on the store's data. The `X-Manager-Token`
+            should be included in the header of API requests that require
+            store-related information.
+          required: true
+          example: '{{Access-Token}}'
+          schema:
+            type: string
+        - name: Store-Id
+          in: header
+          description: ''
+          required: true
+          example: '{{StoreId}}'
+          schema:
+            type: number
+            examples:
+              - 37213
+        - name: Accept-Language
+          in: header
+          description: &gt;-
+            Specifies the preferred language for the response content.
+
+
+            Behavior:
+
+            If the request is authenticated as a Manager (Merchant):
+
+            - The response always includes both English and Arabic content,
+            regardless of this header.
+
+
+            If the request is not authenticated as a Manager:
+
+            - Accept-Language: all-languages → Response includes both English
+            and Arabic.
+
+            - Accept-Language: en → Response includes English only.
+
+            - Accept-Language: ar → Response includes Arabic only.
+
+
+            If not provided → Defaults to English (en).
+          required: false
+          example: en
+          schema:
+            type: string
+            enum:
+              - ar
+              - en
+              - all-languages
+            examples:
+              - en
+            x-apidog-enum:
+              - value: ar
+                name: ''
+                description: Response includes Arabic only.
+              - value: en
+                name: ''
+                description: Response includes English only.
+              - value: all-languages
+                name: ''
+                description: ' Response includes both English and Arabic.'
+        - name: Role
+          in: header
+          description: Role of the user.
+          required: true
+          example: Manager
+          schema:
+            type: string
+            enum:
+              - Manager
+            examples:
+              - Manager
+      requestBody:
+        content:
+          application/json:
+            schema:
+              title: Create Product Request
+              type: object
+              required:
+                - name
+                - price
+                - sku
+              properties:
+                name:
+                  type: string
+                  description: The product name displayed to customers.
+                  examples:
+                    - Wireless Headphones
+                price:
+                  type: number
+                  description: Base product price before discounts or tax.
+                  minimum: 0
+                  examples:
+                    - 257
+                sale_price:
+                  type: number
+                  description: &gt;-
+                    Discounted price of the product. Must be less than price if
+                    provided.
+                  minimum: 0
+                  examples:
+                    - 199
+                  nullable: true
+                sku:
+                  type: string
+                  description: Stock Keeping Unit. Must be unique per store.
+                  examples:
+                    - WH-1000XM5-V2
+                is_draft:
+                  type: boolean
+                  description: &gt;-
+                    If true, the product will be saved as a draft and not
+                    published.
+                  examples:
+                    - true
+                is_infinite:
+                  type: boolean
+                  description: Indicates whether the product has unlimited stock quantity.
+                  examples:
+                    - false
+                quantity:
+                  type: integer
+                  description: Available stock quantity. Required if is_infinite is false.
+                  minimum: 0
+                  examples:
+                    - 50
+                  nullable: true
+                requires_shipping:
+                  type: boolean
+                  description: Whether the product requires shipping.
+                  examples:
+                    - true
+                is_taxable:
+                  type: boolean
+                  description: Determines if tax is applied to the product.
+                  examples:
+                    - true
+              additionalProperties: false
+              x-apidog-orders:
+                - name
+                - price
+                - sale_price
+                - sku
+                - is_draft
+                - is_infinite
+                - quantity
+                - requires_shipping
+                - is_taxable
+              x-apidog-ignore-properties: []
+            examples:
+              '1':
+                value:
+                  name:
+                    ar: منتج شامل
+                    en: Comprehensive Product
+                  description:
+                    ar: منتج يوضح جميع الميزات المتاحة
+                    en: Product showcasing all available features
+                  short_description:
+                    ar: منتج شامل مع جميع الميزات
+                    en: Comprehensive product with all features
+                  sku: FULL-001
+                  barcode: '1234567890128'
+                  price: 199.99
+                  sale_price: 149.99
+                  cost: 80
+                  quantity: 100
+                  is_infinite: false
+                  is_draft: false
+                  is_published: true
+                  is_taxable: true
+                  requires_shipping: true
+                  weight:
+                    value: 1.5
+                    unit: kg
+                  categories:
+                    - 1
+                    - 2
+                    - 3
+                  keywords:
+                    - product
+                    - complete
+                    - featured
+                  display_order: 1
+                  seo:
+                    title:
+                      ar: منتج شامل - متجر متقدم
+                      en: Comprehensive Product - Advanced Store
+                    description:
+                      ar: اكتشف منتجنا الشامل بميزات متقدمة
+                      en: &gt;-
+                        Discover our comprehensive product with advanced
+                        features
+                  purchase_restrictions:
+                    min_quantity_per_cart: 1
+                    max_quantity_per_cart: 5
+                    availability_period_start: '2024-01-01T00:00:00Z'
+                    availability_period_end: '2024-12-31T23:59:59Z'
+                    sale_price_period_start: '2024-01-01T00:00:00Z'
+                    sale_price_period_end: '2024-03-31T23:59:59Z'
+                  badge:
+                    body:
+                      ar: خصم {discount_percent}
+                      en: Discount {discount_percent}
+                summary: Complete Product with All Features
+              '2':
+                value:
+                  name:
+                    ar: منتج عادي
+                    en: Standard Product
+                  description:
+                    ar: منتج عادي عام
+                    en: A regular general product
+                  sku: STANDARD-001
+                  barcode: '1234567890128'
+                  price: 99.99
+                  sale_price: 79.99
+                  quantity: 100
+                  is_taxable: true
+                  requires_shipping: true
+                  weight:
+                    value: 2.5
+                    unit: kg
+                  is_draft: false
+                  is_published: true
+                  keywords:
+                    - product
+                    - standard
+                summary: 'Example 1: Standard Product'
+              '3':
+                value:
+                  name:
+                    ar: منتج مجمع
+                    en: Grouped Product
+                  description:
+                    ar: منتج يحتوي على عدة منتجات مرتبطة
+                    en: A product that includes multiple related products
+                  product_class: grouped_product
+                  sku: GROUPED-001
+                  price: 299.99
+                  is_draft: false
+                  is_published: true
+                  requires_shipping: true
+                  stocks:
+                    - location: location-uuid-here
+                      available_quantity: 50
+                      is_infinite: false
+                  group_products:
+                    - item_id: product-uuid-1
+                      item_quantity: 2
+                    - item_id: product-uuid-2
+                      item_quantity: 1
+                    - item_id: product-uuid-3
+                      item_quantity: 3
+                  weight:
+                    value: 5
+                    unit: kg
+                summary: 'Example 2: Grouped Product'
+              '4':
+                value:
+                  name:
+                    ar: بطاقة هدية
+                    en: Gift Card
+                  description:
+                    ar: بطاقة هدية رقمية بقيمة 100 ريال
+                    en: Digital gift card worth 100 SAR
+                  product_class: voucher
+                  sku: VOUCHER-001
+                  price: 100
+                  is_taxable: false
+                  requires_shipping: false
+                  is_draft: false
+                  is_published: true
+                  meta: {}
+                summary: 'Example 3: Voucher Product'
+              '5':
+                value:
+                  name:
+                    ar: كتاب إلكتروني
+                    en: E-Book
+                  description:
+                    ar: كتاب الدليل الشامل
+                    en: Complete Guide E-Book
+                  product_class: downloadable
+                  sku: EBOOK-001
+                  price: 29.99
+                  is_taxable: false
+                  requires_shipping: false
+                  is_draft: false
+                  is_published: true
+                  meta:
+                    download_limit: 5
+                    expiration_period: 30
+                summary: 'Example 4: Downloadable Product'
+              '6':
+                value:
+                  name:
+                    ar: تمويل مشروع البئر
+                    en: Well Drilling Project
+                  description:
+                    ar: تمويل حفر بئر مياه نظيفة في قرية نائية
+                    en: Fundraising for drilling a clean water well
+                  product_class: crowdfunding_project
+                  sku: CROWDFUND-001
+                  price: 1
+                  is_taxable: true
+                  requires_shipping: false
+                  is_draft: false
+                  is_published: true
+                  meta:
+                    project_goal_amount: 5000
+                    project_external_collected_amount: 1000
+                    show_progress_bar: true
+                    show_progress_percentage: true
+                    show_collected_amount: true
+                    is_open_donation: false
+                summary: 'Example 5: Crowdfunding Project'
+              '7':
+                value:
+                  name:
+                    ar: وجبة غداء للفقراء
+                    en: Lunch Meal for the Poor
+                  description:
+                    ar: وجبة غداء صحية متكاملة
+                    en: Complete healthy meal
+                  product_class: donation_item
+                  sku: DONATION-001
+                  price: 25
+                  is_taxable: true
+                  requires_shipping: false
+                  is_draft: false
+                  is_published: true
+                  meta:
+                    total_units: 200
+                    external_purchased_units: 50
+                    show_progress_bar: true
+                    show_progress_percentage: true
+                    show_purchased_units: true
+                    is_open_donation: false
+                summary: 'Example 6: Donation Item'
+              '8':
+                value:
+                  name:
+                    ar: كعكة الزفاف المخصصة
+                    en: Custom Wedding Cake
+                  description:
+                    ar: كعكة زفاف قابلة للتخصيص مع اسم العروسين
+                    en: Customizable wedding cake with couple names
+                  sku: CAKE-001
+                  price: 299.99
+                  is_draft: false
+                  is_published: true
+                  requires_shipping: true
+                  custom_user_input_fields:
+                    - type: TEXT
+                      label:
+                        ar: اسم العريس
+                        en: Groom Name
+                      hint:
+                        ar: أدخل اسم العريس
+                        en: Enter groom's name
+                      is_required: true
+                      price: 0
+                      display_order: 1
+                      is_published: true
+                    - type: TEXT
+                      label:
+                        ar: اسم العروس
+                        en: Bride Name
+                      hint:
+                        ar: أدخل اسم العروس
+                        en: Enter bride's name
+                      is_required: true
+                      price: 0
+                      display_order: 2
+                      is_published: true
+                    - type: NUMBER
+                      label:
+                        ar: عدد الأشخاص
+                        en: Number of Guests
+                      hint:
+                        ar: أدخل عدد الأشخاص
+                        en: Enter number of guests
+                      is_required: true
+                      price: 50
+                      display_order: 3
+                      is_published: true
+                  custom_option_fields:
+                    - type: select
+                      label:
+                        ar: نكهة الكعكة
+                        en: Cake Flavor
+                      hint:
+                        ar: اختر نكهة الكعكة
+                        en: Choose cake flavor
+                      is_required: true
+                      can_choose_multiple_options: false
+                      display_order: 1
+                      is_published: true
+                      choices:
+                        - id: flavor-1
+                          ar: فانيليا كلاسيكية
+                          en: Classic Vanilla
+                          price: 0
+                        - id: flavor-2
+                          ar: شوكولاتة داكنة
+                          en: Dark Chocolate
+                          price: 25
+                        - id: flavor-3
+                          ar: فراولة
+                          en: Strawberry
+                          price: 20
+                    - type: select
+                      label:
+                        ar: نوع الحشوة
+                        en: Filling Type
+                      hint:
+                        ar: اختر نوع الحشوة
+                        en: Choose filling type
+                      is_required: true
+                      can_choose_multiple_options: false
+                      display_order: 2
+                      is_published: true
+                      choices:
+                        - id: filling-1
+                          ar: كريمة
+                          en: Cream
+                          price: 0
+                        - id: filling-2
+                          ar: فاكهة
+                          en: Fruit
+                          price: 15
+                summary: 'Example 7: Customizable Product'
+              '9':
+                value:
+                  name:
+                    ar: حزمة البناء المخصصة
+                    en: Custom Build Bundle
+                  description:
+                    ar: اختر المكونات الخاصة بك لإنشاء حزمة فريدة
+                    en: Choose your components to create a unique bundle
+                  product_class: dynamic_bundle
+                  sku: BUNDLE-001
+                  price: 0
+                  is_draft: false
+                  is_published: false
+                  requires_shipping: true
+                  meta:
+                    location_id: dd125776-70d1-4819-934c-a29b8ebd18ca
+                summary: 'Example 8: Dynamic Bundle Product'
+              '10':
+                value:
+                  name:
+                    ar: منتج شامل
+                    en: Comprehensive Product
+                  description:
+                    ar: منتج يوضح جميع الميزات المتاحة
+                    en: Product showcasing all available features
+                  short_description:
+                    ar: منتج شامل مع جميع الميزات
+                    en: Comprehensive product with all features
+                  sku: FULL-001
+                  barcode: '1234567890128'
+                  price: 199.99
+                  sale_price: 149.99
+                  cost: 80
+                  quantity: 100
+                  is_infinite: false
+                  is_draft: false
+                  is_published: true
+                  is_taxable: true
+                  requires_shipping: true
+                  weight:
+                    value: 1.5
+                    unit: kg
+                  keywords:
+                    - product
+                    - complete
+                    - featured
+                  display_order: 1
+                  seo:
+                    title:
+                      ar: منتج شامل - متجر متقدم
+                      en: Comprehensive Product - Advanced Store
+                    description:
+                      ar: اكتشف منتجنا الشامل بميزات متقدمة
+                      en: &gt;-
+                        Discover our comprehensive product with advanced
+                        features
+                  purchase_restrictions:
+                    min_quantity_per_cart: 1
+                    max_quantity_per_cart: 5
+                    availability_period_start: '2024-01-01T00:00:00Z'
+                    availability_period_end: '2024-12-31T23:59:59Z'
+                    sale_price_period_start: '2024-01-01T00:00:00Z'
+                    sale_price_period_end: '2024-03-31T23:59:59Z'
+                  badge:
+                    body:
+                      ar: خصم {discount_percent}
+                      en: Discount {discount_percent}
+                summary: 'Example 9: Complete Product Example'
+      responses:
+        '201':
+          description: ''
+          content:
+            application/json:
+              schema:
+                title: Create Product Response
+                description: Response returned after successfully creating a product.
+                $ref: '#/components/schemas/ProductItemObject'
+              examples:
+                '1':
+                  summary: Dynamic Bundle
+                  value:
+                    id: product-uuid
+                    name:
+                      ar: حزمة البناء المخصصة
+                      en: Custom Build Bundle
+                    product_class: dynamic_bundle
+                    sku: BUNDLE-001
+                    price: 0
+                    is_draft: false
+                    is_published: false
+                    requires_shipping: true
+                    meta:
+                      location_id: dd125776-70d1-4819-934c-a29b8ebd18ca
+                    selection_groups: []
+                '2':
+                  summary: Crowdfunding
+                  value:
+                    id: product-uuid
+                    name:
+                      ar: تمويل مشروع البئر
+                      en: Well Drilling Project
+                    product_class: crowdfunding_project
+                    price: 1
+                    requires_shipping: false
+                    meta:
+                      project_goal_amount: 5000
+                      project_external_collected_amount: 1000
+                      show_progress_bar: true
+                      show_progress_percentage: true
+                      show_collected_amount: true
+                      is_open_donation: false
+                '3':
+                  summary: Donation Item
+                  value:
+                    id: product-uuid
+                    name:
+                      ar: وجبة غداء للفقراء
+                      en: Lunch Meal for the Poor
+                    product_class: donation_item
+                    price: 25
+                    requires_shipping: false
+                    meta:
+                      total_units: 200
+                      external_purchased_units: 50
+                      show_progress_bar: true
+                      show_progress_percentage: true
+                      show_purchased_units: true
+                      is_open_donation: false
+                '4':
+                  summary: Customizable Product
+                  value:
+                    id: product-uuid
+                    name:
+                      ar: كعكة الزفاف المخصصة
+                      en: Custom Wedding Cake
+                    product_class: null
+                    price: 299.99
+                    custom_user_input_fields:
+                      - id: custom-field-uuid
+                        type: TEXT
+                        label:
+                          ar: اسم العريس
+                          en: Groom Name
+                        is_required: true
+                        price: 0
+                        display_order: 1
+                        is_published: true
+                    custom_option_fields:
+                      - id: option-field-uuid
+                        label:
+                          ar: نكهة الكعكة
+                          en: Cake Flavor
+                        can_choose_multiple_options: false
+                        choices:
+                          - id: flavor-1
+                            ar: فانيليا كلاسيكية
+                            en: Classic Vanilla
+                            price: 0
+                '5':
+                  summary: Standard Product Example
+                  value:
+                    id: product-uuid
+                    name:
+                      ar: منتج عادي
+                      en: Standard Product
+                    description:
+                      ar: منتج عادي عام
+                      en: A regular general product
+                    sku: STANDARD-001
+                    barcode: '1234567890128'
+                    product_class: null
+                    price: 99.99
+                    sale_price: 79.99
+                    quantity: 100
+                    is_infinite: false
+                    is_taxable: true
+                    requires_shipping: true
+                    is_draft: false
+                    is_published: true
+                    weight:
+                      value: 2.5
+                      unit: kg
+                    meta: {}
+                    badge: null
+                    variants: []
+                    custom_user_input_fields: []
+                    custom_option_fields: []
+                    created_at: '2026-06-10T10:00:00Z'
+                    updated_at: '2026-06-10T10:00:00Z'
+          headers: {}
+          x-apidog-name: OK
+        '400':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  non_field_errors:
+                    type: array
+                    items:
+                      type: string
+                required:
+                  - non_field_errors
+                x-apidog-orders:
+                  - non_field_errors
+                x-apidog-ignore-properties: []
+              example:
+                non_field_errors:
+                  - A product with this sku already exists.
+          headers: {}
+          x-apidog-name: Bad Request
+        '401':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                description: &gt;-
+                  Response returned when the request cannot be authenticated
+                  because the required credentials are missing, invalid, or
+                  expired.
+                properties:
+                  status:
+                    type: string
+                    description: Indicates the overall status of the API response.
+                    examples:
+                      - error
+                  message:
+                    type: object
+                    description: &gt;-
+                      Contains structured details explaining why the request
+                      could not be authenticated.
+                    properties:
+                      type:
+                        type: string
+                        description: Indicates the category of the response message.
+                        examples:
+                          - error
+                      code:
+                        type: string
+                        description: &gt;-
+                          A machine-readable code identifying the authentication
+                          error. Returns null when no specific code is
+                          available.
+                        examples:
+                          - UNAUTHORIZED
+                        nullable: true
+                      name:
+                        type: string
+                        description: &gt;-
+                          A short, human-readable title describing the
+                          authentication error. Returns null when no title is
+                          available.
+                        examples:
+                          - Unauthorized
+                        nullable: true
+                      description:
+                        type: string
+                        description: &gt;-
+                          A human-readable explanation of why the request could
+                          not be authenticated. Returns null when no detailed
+                          explanation is available.
+                        examples:
+                          - &gt;-
+                            Authentication credentials are missing, invalid, or
+                            expired.
+                        nullable: true
+                    required:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-orders:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-ignore-properties: []
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                examples:
+                  - status: error
+                    message:
+                      type: error
+                      code: UNAUTHORIZED
+                      name: Unauthorized
+                      description: &gt;-
+                        Authentication credentials are missing, invalid, or
+                        expired.
+                x-apidog-ignore-properties: []
+              examples:
+                '7':
+                  summary: Example 1
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_MISSING
+                      name: Sorry
+                      description: Please login first.
+                '8':
+                  summary: Example 2
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Login session expired. Please login again.
+                '9':
+                  summary: Example 3
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Invalid authentication
+          headers: {}
+          x-apidog-name: Unauthorized
+        '500':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Status of the error.
+                  message:
+                    $ref: '#/components/schemas/ResponseEnvelopMessage'
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                x-apidog-ignore-properties: []
+              example:
+                status: error
+                message:
+                  type: error
+                  code: MSG_HIDDEN
+                  name: Error
+                  description: Internal Server Error
+          headers: {}
+          x-apidog-name: Internal Server error
+      security: []
+      x-apidog-folder: Default module/Apps/Merchant APIs/Products/Managing Products
+      x-apidog-status: released
+      x-run-in-apidog: https://app.apidog.com/web/project/613905/apis/api-9148564-run
+components:
+  schemas:
+    ProductItemObject:
+      type: object
+      properties:
+        id:
+          type: string
+          description: Unique product identifier (UUID).
+          examples:
+            - faa1de09-1e0a-4184-9573-9e639e6d0764
+          nullable: true
+        product_class:
+          type: string
+          description: Product classification type.
+          examples:
+            - grouped_product
+          nullable: true
+        sku:
+          type: string
+          description: Stock Keeping Unit (SKU) of the product.
+          examples:
+            - helllo
+        barcode:
+          type: string
+          description: Barcode associated with the product.
+          examples:
+            - ''
+        parent_id:
+          type: string
+          description: &gt;-
+            Unique identifier of the parent product when this product is a child
+            or variant; otherwise, null.
+          examples:
+            - null
+          nullable: true
+        name:
+          type: object
+          properties:
+            ar:
+              type: string
+              description: Product name in Arabic.
+              examples:
+                - حقيبة
+            en:
+              type: string
+              description: Product name in English.
+              examples:
+                - Bag
+          description: Localized product name.
+          x-apidog-orders:
+            - ar
+            - en
+          examples:
+            - ar: حقيبة
+              en: Bag
+          x-apidog-ignore-properties: []
+        slug:
+          type: string
+          description: SEO-friendly product slug.
+          examples:
+            - test-4
+        price:
+          type: number
+          description: Regular product price before applying a sale price.
+          examples:
+            - 1000
+        short_description:
+          type: object
+          properties:
+            ar:
+              type: string
+              examples:
+                - وصف مختصر للمنتج
+              description: Short product description in Arabic.
+            en:
+              type: string
+              examples:
+                - Short product description.
+              description: Short product description in English.
+          description: Localized short description of the product.
+          x-apidog-orders:
+            - ar
+            - en
+          examples:
+            - ar: وصف مختصر للمنتج
+              en: Short product description.
+          x-apidog-ignore-properties: []
+        sale_price:
+          type: number
+          description: &gt;-
+            Discounted product price. Returns null when no sale price is
+            configured.
+          examples:
+            - 850
+          nullable: true
+        formatted_price:
+          type: string
+          description: Formatted product price including currency.
+          examples:
+            - ' SAR 1,000.00'
+          nullable: true
+        formatted_sale_price:
+          type: string
+          description: &gt;-
+            Formatted sale price including the currency symbol. Returns null
+            when no sale price is configured.
+          examples:
+            - SAR 850.00
+          nullable: true
+        currency:
+          type: string
+          description: Currency code of the product price (ISO 4217).
+          examples:
+            - SAR
+        currency_symbol:
+          type: string
+          description: Currency symbol used for formatting.
+          examples:
+            - ' SAR '
+        attributes:
+          type: array
+          items: &amp;ref_0
+            $ref: '#/components/schemas/ProductAttributeObject'
+          description: List of product attributes.
+          examples:
+            - []
+        categories:
+          type: array
+          items: &amp;ref_1
+            $ref: '#/components/schemas/ProductCategoryObject'
+          description: Categories assigned to the product.
+          examples:
+            - []
+        brand:
+          type: object
+          properties:
+            id: &amp;ref_6
+              type: string
+              format: uuid
+              description: Unique identifier of the brand.
+              examples:
+                - 4f8e78b8-64be-4f58-a79a-31e4e7ba3e80
+            name: &amp;ref_7
+              type: string
+              description: Name of the brand.
+              examples:
+                - Nike
+            slug: &amp;ref_8
+              type: string
+              description: URL-friendly identifier of the brand.
+              examples:
+                - nike
+            logo: &amp;ref_9
+              type: string
+              description: URL of the brand logo.
+              examples:
+                - https://cdn.example.com/brands/nike.png
+            url: &amp;ref_10
+              type: string
+              description: Relative storefront URL of the brand page.
+              examples:
+                - /brands/nike
+          x-apidog-orders:
+            - 01M2MTJWS833E80N3GNA56HEGG
+          x-apidog-refs:
+            01M2MTJWS833E80N3GNA56HEGG:
+              $ref: '#/components/schemas/ProductBrandObject'
+          required:
+            - id
+            - name
+            - slug
+            - logo
+            - url
+          x-apidog-ignore-properties:
+            - id
+            - name
+            - slug
+            - logo
+            - url
+          nullable: true
+        display_order:
+          type: integer
+          description: Display order used for sorting products.
+          examples:
+            - 32766
+          nullable: true
+        has_options:
+          type: boolean
+          description: Indicates whether the product has selectable options.
+          examples:
+            - false
+        has_fields:
+          type: boolean
+          description: Indicates whether the product has custom input fields.
+          examples:
+            - false
+        images:
+          type: array
+          items:
+            type: object
+            properties: {}
+            x-apidog-orders: []
+            description: &gt;-
+              Product image object. The available fields depend on the product
+              image schema.
+            examples:
+              - {}
+            x-apidog-ignore-properties: []
+          description: List of product images.
+          examples:
+            - []
+        videos:
+          type: array
+          items:
+            type: string
+          description: List of product videos.
+          examples:
+            - []
+        is_draft:
+          type: boolean
+          description: Indicates whether the product is saved as draft.
+          examples:
+            - false
+        quantity:
+          type: integer
+          description: Available stock quantity.
+          examples:
+            - 19
+          nullable: true
+        is_infinite:
+          type: boolean
+          description: Indicates unlimited stock availability.
+          examples:
+            - false
+        html_url:
+          type: string
+          description: Public URL of the product page.
+          examples:
+            - https://osama.zid.store/products/test-4
+        weight: &amp;ref_2
+          $ref: '#/components/schemas/ProductWeightObject'
+          description: Product weight details, as defined by the referenced weight schema.
+          examples:
+            - {}
+        keywords:
+          type: array
+          items:
+            type: string
+          description: SEO keywords associated with the product.
+          examples:
+            - - bag
+              - strawberries
+        requires_shipping:
+          type: boolean
+          description: Whether the product requires shipping.
+          examples:
+            - true
+        is_taxable:
+          type: boolean
+          description: Whether tax applies to the product.
+          examples:
+            - true
+        structure:
+          type: string
+          description: Product structure type.
+          examples:
+            - standalone
+        seo:
+          type: object
+          properties:
+            title:
+              type: object
+              properties:
+                ar:
+                  type: string
+                  description: SEO title in Arabic.
+                  examples:
+                    - حقيبة
+                en:
+                  type: string
+                  description: SEO title in English.
+                  examples:
+                    - Bag
+              x-apidog-orders:
+                - ar
+                - en
+              description: Localized SEO title of the product.
+              examples:
+                - ar: حقيبة
+                  en: Bag
+              x-apidog-ignore-properties: []
+            description:
+              type: object
+              properties:
+                ar:
+                  type: string
+                  description: SEO description in Arabic.
+                  examples:
+                    - وصف المنتج
+                en:
+                  type: string
+                  description: SEO description in English.
+                  examples:
+                    - Product description
+              x-apidog-orders:
+                - ar
+                - en
+              description: Localized SEO description of the product.
+              examples:
+                - ar: وصف المنتج
+                  en: Product description
+              x-apidog-ignore-properties: []
+          x-apidog-orders:
+            - title
+            - description
+          description: SEO metadata for the product.
+          required:
+            - title
+            - description
+          examples:
+            - title:
+                ar: حقيبة
+                en: Bag
+              description:
+                ar: وصف المنتج
+                en: Product description
+          x-apidog-ignore-properties: []
+          nullable: true
+        rating:
+          type: object
+          properties:
+            average:
+              type: integer
+              description: Average product rating.
+              examples:
+                - 0
+            total_count:
+              type: integer
+              examples:
+                - 0
+              description: Total number of submitted product ratings.
+            1_ratings:
+              type: object
+              properties:
+                percentage:
+                  type: integer
+                  description: Percentage of all ratings that are 1-star ratings.
+                  examples:
+                    - 0
+                count:
+                  type: integer
+                  description: Number of 1-star ratings.
+                  examples:
+                    - 0
+              required:
+                - percentage
+                - count
+              x-apidog-orders:
+                - percentage
+                - count
+              description: Statistics for 1-star ratings.
+              examples:
+                - percentage: 0
+                  count: 0
+              x-apidog-ignore-properties: []
+            2_ratings:
+              type: object
+              properties:
+                percentage:
+                  type: integer
+                  description: Percentage of all ratings that are 2-star ratings.
+                  examples:
+                    - 0
+                count:
+                  type: integer
+                  description: Number of 2-star ratings.
+                  examples:
+                    - 0
+              required:
+                - percentage
+                - count
+              x-apidog-orders:
+                - percentage
+                - count
+              description: Statistics for 2-star ratings.
+              examples:
+                - percentage: 0
+                  count: 0
+              x-apidog-ignore-properties: []
+            3_ratings:
+              type: object
+              properties:
+                percentage:
+                  type: integer
+                  description: Percentage of all ratings that are 3-star ratings.
+                  examples:
+                    - 0
+                count:
+                  type: integer
+                  description: Number of 3-star ratings.
+                  examples:
+                    - 0
+              required:
+                - percentage
+                - count
+              x-apidog-orders:
+                - percentage
+                - count
+              description: Statistics for 3-star ratings.
+              examples:
+                - percentage: 0
+                  count: 0
+              x-apidog-ignore-properties: []
+            4_ratings:
+              type: object
+              properties:
+                percentage:
+                  type: integer
+                  description: Percentage of all ratings that are 4-star ratings.
+                  examples:
+                    - 0
+                count:
+                  type: integer
+                  description: Number of 4-star ratings.
+                  examples:
+                    - 0
+              required:
+                - percentage
+                - count
+              x-apidog-orders:
+                - percentage
+                - count
+              description: Statistics for 4-star ratings.
+              examples:
+                - percentage: 0
+                  count: 0
+              x-apidog-ignore-properties: []
+            5_ratings:
+              type: object
+              properties:
+                percentage:
+                  type: integer
+                  description: Percentage of all ratings that are 5-star ratings.
+                  examples:
+                    - 0
+                count:
+                  type: integer
+                  description: Number of 5-star ratings.
+                  examples:
+                    - 0
+              required:
+                - percentage
+                - count
+              x-apidog-orders:
+                - percentage
+                - count
+              description: Statistics for 5-star ratings.
+              examples:
+                - percentage: 0
+                  count: 0
+              x-apidog-ignore-properties: []
+          required:
+            - average
+            - total_count
+            - 1_ratings
+            - 2_ratings
+            - 3_ratings
+            - 4_ratings
+            - 5_ratings
+          description: Product rating statistics.
+          x-apidog-orders:
+            - average
+            - total_count
+            - 1_ratings
+            - 2_ratings
+            - 3_ratings
+            - 4_ratings
+            - 5_ratings
+          examples:
+            - average: 0
+              total_count: 0
+              1_ratings:
+                percentage: 0
+                count: 0
+              2_ratings:
+                percentage: 0
+                count: 0
+              3_ratings:
+                percentage: 0
+                count: 0
+              4_ratings:
+                percentage: 0
+                count: 0
+              5_ratings:
+                percentage: 0
+                count: 0
+          x-apidog-ignore-properties: []
+        store_id:
+          type: integer
+          description: Store ID owning the product.
+          examples:
+            - 3
+        purchase_restrictions:
+          type: object
+          properties:
+            min_quantity_per_cart:
+              type: integer
+              description: &gt;-
+                Minimum quantity a customer can add to one cart. Returns null
+                when no minimum is configured.
+              examples:
+                - 1
+              nullable: true
+            max_quantity_per_cart:
+              type: integer
+              description: &gt;-
+                Maximum quantity a customer can add to one cart. Returns null
+                when no maximum is configured.
+              examples:
+                - 5
+              nullable: true
+            availability_period_start:
+              type: string
+              description: &gt;-
+                Start date and time of the product availability period in ISO
+                8601 format. Returns null when unrestricted.
+              examples:
+                - '2026-08-01T00:00:00Z'
+              nullable: true
+            availability_period_end:
+              type: string
+              description: &gt;-
+                End date and time of the product availability period in ISO 8601
+                format. Returns null when unrestricted.
+              examples:
+                - '2026-08-31T23:59:59Z'
+              nullable: true
+            sale_price_period_start:
+              type: string
+              description: &gt;-
+                Start date and time of the sale-price period in ISO 8601 format.
+                Returns null when no period is configured.
+              examples:
+                - '2026-08-01T00:00:00Z'
+              nullable: true
+            sale_price_period_end:
+              type: string
+              description: &gt;-
+                End date and time of the sale-price period in ISO 8601 format.
+                Returns null when no period is configured.
+              examples:
+                - '2026-08-15T23:59:59Z'
+              nullable: true
+          required:
+            - min_quantity_per_cart
+            - max_quantity_per_cart
+            - availability_period_start
+            - availability_period_end
+            - sale_price_period_start
+            - sale_price_period_end
+          x-apidog-orders:
+            - min_quantity_per_cart
+            - max_quantity_per_cart
+            - availability_period_start
+            - availability_period_end
+            - sale_price_period_start
+            - sale_price_period_end
+          description: &gt;-
+            Purchase quantity, availability, and sale-price period restrictions
+            configured for the product.
+          examples:
+            - min_quantity_per_cart: 1
+              max_quantity_per_cart: 5
+              availability_period_start: null
+              availability_period_end: null
+              sale_price_period_start: null
+              sale_price_period_end: null
+          x-apidog-ignore-properties: []
+        metafields:
+          type: array
+          items: &amp;ref_3
+            $ref: '#/components/schemas/ProductMetaFieldObject'
+          description: List of custom metafields associated with the product.
+          examples:
+            - []
+        meta:
+          type: object
+          properties:
+            location_id:
+              type: string
+              description: &gt;-
+                Identifier of the inventory location associated with the
+                product.
+              examples:
+                - '1'
+            childs:
+              type: array
+              items:
+                type: string
+                description: Child product identifier.
+                examples:
+                  - faa1de09-1e0a-4184-9573-9e639e6d0764
+              description: List of child product identifiers.
+              examples:
+                - []
+            parents:
+              type: array
+              items:
+                type: string
+                description: Parent product identifier.
+                examples:
+                  - faa1de09-1e0a-4184-9573-9e639e6d0764
+              description: List of parent product identifiers.
+              examples:
+                - []
+          x-apidog-orders:
+            - location_id
+            - childs
+            - parents
+          description: &gt;-
+            Additional product metadata, including location and product
+            hierarchy information.
+          examples:
+            - location_id: '1'
+              childs: []
+              parents: []
+          x-apidog-ignore-properties: []
+          nullable: true
+        related_products_settings:
+          type: string
+          description: &gt;-
+            Configuration value controlling how related products are selected or
+            displayed.
+          examples:
+            - ''
+        related_products_title:
+          type: object
+          properties:
+            ar:
+              type: string
+              description: Related-products section title in Arabic.
+              examples:
+                - منتجات ذات صلة
+            en:
+              type: string
+              description: Related-products section title in English.
+              examples:
+                - Related products
+          required:
+            - ar
+            - en
+          x-apidog-orders:
+            - ar
+            - en
+          description: Localized title displayed for the related-products section.
+          examples:
+            - ar: منتجات ذات صلة
+              en: Related products
+          x-apidog-ignore-properties: []
+        badge: &amp;ref_4
+          $ref: '#/components/schemas/ProductBadgeObject'
+          description: Product badge details, as defined by the referenced badge schema.
+          examples:
+            - {}
+        variants:
+          type: array
+          items:
+            $ref: '#/components/schemas/ProductVariantObject'
+          description: List of product variants.
+          examples:
+            - []
+        cost:
+          type: number
+          description: &gt;-
+            Internal cost of the product. Returns null when no cost is
+            configured.
+          examples:
+            - 500
+          nullable: true
+        is_published:
+          type: boolean
+          description: Indicates whether the product is published and visible to customers.
+          examples:
+            - true
+        waiting_customers_count:
+          type: integer
+          description: &gt;-
+            Number of customers waiting to be notified when the product becomes
+            available. Returns null when unavailable.
+          examples:
+            - 0
+          nullable: true
+        description:
+          type: object
+          properties:
+            ar:
+              type: string
+              description: Full product description in Arabic.
+              examples:
+                - وصف كامل للمنتج
+            en:
+              type: string
+              description: Full product description in English.
+              examples:
+                - Full product description.
+          x-apidog-orders:
+            - ar
+            - en
+          description: Localized full description of the product.
+          examples:
+            - ar: وصف كامل للمنتج
+              en: Full product description.
+          x-apidog-ignore-properties: []
+        custom_user_input_fields:
+          type: array
+          items:
+            type: string
+            description: Custom user-input field identifier or value.
+            examples:
+              - engraving_text
+          description: &gt;-
+            List of custom input fields that customers can complete for the
+            product.
+          examples:
+            - []
+        custom_option_fields:
+          type: array
+          items:
+            type: string
+            description: Custom option field identifier or value.
+            examples:
+              - gift_wrap
+          description: List of custom option fields configured for the product.
+          examples:
+            - []
+        options:
+          type: array
+          description: &gt;-
+            List of configurable product options and their available choices.
+            Each option can include display metadata for rendering choices as
+            text, color swatches, or images.
+          items:
+            type: object
+            properties:
+              id:
+                type: string
+                format: uuid
+                description: Unique identifier of the product option.
+                examples:
+                  - eb8f05b2-2928-43b4-b2b2-3144f3aacb24
+              name:
+                type: string
+                description: Display name of the product option in the requested language.
+                examples:
+                  - Colors
+              name_i18n:
+                type: object
+                description: Localized names of the product option.
+                properties:
+                  ar:
+                    type: string
+                    description: Arabic name of the product option.
+                    examples:
+                      - الألوان
+                  en:
+                    type: string
+                    description: English name of the product option.
+                    examples:
+                      - Colors
+                x-apidog-orders:
+                  - ar
+                  - en
+                examples:
+                  - ar: الألوان
+                    en: Colors
+                x-apidog-ignore-properties: []
+              slug:
+                type: string
+                description: URL-friendly identifier of the product option.
+                examples:
+                  - colors
+              choices:
+                type: array
+                description: &gt;-
+                  List of available values for the product option. Each value
+                  can be used as a key in choices_metadata.
+                items:
+                  type: string
+                  description: Display value of an available product choice.
+                  examples:
+                    - Black
+                examples:
+                  - - Black
+                    - White
+                    - Blue
+              choices_metadata:
+                type: object
+                description: &gt;-
+                  Display metadata for each value listed in choices. Each
+                  property name corresponds exactly to a value in the choices
+                  array.
+                additionalProperties:
+                  type: object
+                  properties:
+                    id:
+                      type: string
+                      format: uuid
+                      description: Unique identifier of the attribute value.
+                      examples:
+                        - a3b083be-1b2d-4ea1-acda-b8c289366787
+                    value:
+                      type: object
+                      description: Localized labels of the attribute value.
+                      properties:
+                        ar:
+                          type: string
+                          description: Arabic label of the attribute value.
+                          examples:
+                            - أسود
+                        en:
+                          type: string
+                          description: English label of the attribute value.
+                          examples:
+                            - Black
+                      x-apidog-orders:
+                        - ar
+                        - en
+                      examples:
+                        - ar: أسود
+                          en: Black
+                      x-apidog-ignore-properties: []
+                    type:
+                      type: string
+                      enum:
+                        - default
+                        - color
+                        - icon
+                      description: &gt;-
+                        Presentation type of the choice: default displays text,
+                        color displays a color swatch, and icon displays an
+                        image.
+                      examples:
+                        - color
+                    type_value:
+                      type: string
+                      description: &gt;-
+                        Presentation value associated with type. Returns null
+                        for default, a hexadecimal color code for color, or an
+                        absolute image URL for icon.
+                      examples:
+                        - null
+                        - '#000000'
+                        - &gt;-
+                          https://media.zid.store/attribute-values/images/b59274ca-95c9-47ce-852e-20f5167e4807.jpg
+                      nullable: true
+                  required:
+                    - id
+                    - value
+                    - type
+                    - type_value
+                  x-apidog-orders:
+                    - id
+                    - value
+                    - type
+                    - type_value
+                  x-apidog-ignore-properties: []
+                examples:
+                  - Black:
+                      id: a3b083be-1b2d-4ea1-acda-b8c289366787
+                      value:
+                        ar: أسود
+                        en: Black
+                      type: color
+                      type_value: '#000000'
+                    White:
+                      id: d5458526-9a61-4387-a5cf-7e3363b1b274
+                      value:
+                        ar: أبيض
+                        en: White
+                      type: default
+                      type_value: null
+                    Pattern:
+                      id: 948781ef-1117-495c-aea0-f10c8ed7141e
+                      value:
+                        ar: نمط
+                        en: Pattern
+                      type: icon
+                      type_value: &gt;-
+                        https://media.zid.store/attribute-values/images/b59274ca-95c9-47ce-852e-20f5167e4807.jpg
+                x-apidog-orders: []
+                properties: {}
+                x-apidog-ignore-properties: []
+            x-apidog-orders:
+              - id
+              - name
+              - name_i18n
+              - slug
+              - choices
+              - choices_metadata
+            required:
+              - id
+              - name
+              - name_i18n
+              - slug
+              - choices
+              - choices_metadata
+            x-apidog-ignore-properties: []
+          examples:
+            - - id: 226cb1df-07e6-4a4a-ba55-49134d371ed2
+                name: Images
+                name_i18n:
+                  ar: صور
+                  en: Images
+                slug: images
+                choices:
+                  - Image 1
+                  - Image 2
+                choices_metadata:
+                  Image 1:
+                    id: 948781ef-1117-495c-aea0-f10c8ed7141e
+                    value:
+                      ar: صورة 1
+                      en: Image 1
+                    type: icon
+                    type_value: &gt;-
+                      https://media.zid.store/attribute-values/images/b59274ca-95c9-47ce-852e-20f5167e4807.jpg
+                  Image 2:
+                    id: f7a3da23-d906-4404-afd2-860046e028ff
+                    value:
+                      ar: صورة 2
+                      en: Image 2
+                    type: icon
+                    type_value: &gt;-
+                      https://media.zid.store/attribute-values/images/a8d34fca-201c-4a72-8b40-8fb11d978491.jpg
+              - id: eb8f05b2-2928-43b4-b2b2-3144f3aacb24
+                name: Colors
+                name_i18n:
+                  ar: الألوان
+                  en: Colors
+                slug: colors
+                choices:
+                  - Black
+                  - White
+                  - Blue
+                choices_metadata:
+                  Black:
+                    id: a3b083be-1b2d-4ea1-acda-b8c289366787
+                    value:
+                      ar: أسود
+                      en: Black
+                    type: color
+                    type_value: '#000000'
+                  White:
+                    id: d5458526-9a61-4387-a5cf-7e3363b1b274
+                    value:
+                      ar: أبيض
+                      en: White
+                    type: default
+                    type_value: null
+                  Blue:
+                    id: 7c6c59a6-fcc6-4e2c-a5ca-c2d567218771
+                    value:
+                      ar: أزرق
+                      en: Blue
+                    type: color
+                    type_value: '#0000FF'
+        related_products:
+          type: array
+          items:
+            type: string
+            description: Related product identifier.
+            examples:
+              - faa1de09-1e0a-4184-9573-9e639e6d0764
+          description: List of identifiers for products related to this product.
+          examples:
+            - []
+        next_product:
+          type: string
+          description: &gt;-
+            Identifier of the next product in the current ordering context;
+            otherwise, null.
+          examples:
+            - null
+          nullable: true
+        previous_product:
+          type: string
+          description: &gt;-
+            Identifier of the previous product in the current ordering context;
+            otherwise, null.
+          examples:
+            - null
+          nullable: true
+        group_products:
+          type: string
+          description: &gt;-
+            Grouped-product data or identifier associated with this product;
+            otherwise, null.
+          examples:
+            - null
+          nullable: true
+        stocks:
+          type: array
+          items: &amp;ref_5
+            $ref: '#/components/schemas/ProductStockObject'
+          description: Stock records for the product across inventory locations.
+          examples:
+            - []
+        sold_products_count:
+          type: integer
+          description: &gt;-
+            Total number of units sold for the product. Returns null when
+            unavailable.
+          examples:
+            - 0
+          nullable: true
+        created_at:
+          type: string
+          description: Product creation timestamp (ISO 8601).
+          examples:
+            - '2025-10-28T08:21:10.679886Z'
+        updated_at:
+          type: string
+          description: Last update timestamp (ISO 8601).
+          examples:
+            - '2025-11-18T14:24:07.432413Z'
+      required:
+        - id
+        - product_class
+        - sku
+        - barcode
+        - parent_id
+        - name
+        - slug
+        - price
+        - short_description
+        - sale_price
+        - formatted_price
+        - formatted_sale_price
+        - currency
+        - currency_symbol
+        - attributes
+        - categories
+        - display_order
+        - has_options
+        - has_fields
+        - images
+        - videos
+        - is_draft
+        - quantity
+        - is_infinite
+        - html_url
+        - weight
+        - keywords
+        - requires_shipping
+        - is_taxable
+        - structure
+        - seo
+        - rating
+        - store_id
+        - purchase_restrictions
+        - metafields
+        - meta
+        - related_products_settings
+        - related_products_title
+        - badge
+        - cost
+        - is_published
+        - group_products
+        - stocks
+        - sold_products_count
+        - created_at
+        - updated_at
+      title: ProductItemObject
+      description: &gt;-
+        Represents a detailed product object including pricing, media,
+        inventory, SEO, ratings, metafields, grouped products, variants, and
+        option choice display metadata.
+      x-apidog-orders:
+        - id
+        - product_class
+        - sku
+        - barcode
+        - parent_id
+        - name
+        - slug
+        - price
+        - short_description
+        - sale_price
+        - formatted_price
+        - formatted_sale_price
+        - currency
+        - currency_symbol
+        - attributes
+        - categories
+        - brand
+        - display_order
+        - has_options
+        - has_fields
+        - images
+        - videos
+        - is_draft
+        - quantity
+        - is_infinite
+        - html_url
+        - weight
+        - keywords
+        - requires_shipping
+        - is_taxable
+        - structure
+        - seo
+        - rating
+        - store_id
+        - purchase_restrictions
+        - metafields
+        - meta
+        - related_products_settings
+        - related_products_title
+        - badge
+        - variants
+        - cost
+        - is_published
+        - waiting_customers_count
+        - description
+        - custom_user_input_fields
+        - custom_option_fields
+        - options
+        - related_products
+        - next_product
+        - previous_product
+        - group_products
+        - stocks
+        - sold_products_count
+        - created_at
+        - updated_at
+      x-apidog-refs: {}
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    ProductStockObject:
+      type: object
+      properties:
+        id:
+          type: string
+        location:
+          type: object
+          properties:
+            id:
+              type: string
+            name:
+              type: object
+              properties:
+                ar:
+                  type: string
+                en:
+                  type: string
+              x-apidog-orders:
+                - ar
+                - en
+              x-apidog-ignore-properties: []
+            type:
+              type: string
+            full_address:
+              type: string
+          required:
+            - id
+            - name
+            - type
+            - full_address
+          x-apidog-orders:
+            - id
+            - name
+            - type
+            - full_address
+          x-apidog-ignore-properties: []
+        available_quantity:
+          type: integer
+          nullable: true
+        is_infinite:
+          type: boolean
+      x-apidog-orders:
+        - id
+        - location
+        - available_quantity
+        - is_infinite
+      required:
+        - id
+        - location
+        - available_quantity
+        - is_infinite
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    ProductVariantObject:
+      type: object
+      properties:
+        id:
+          type: string
+        product_class:
+          type: string
+          nullable: true
+        sku:
+          type: string
+        barcode:
+          type: string
+        parent_id:
+          type: string
+          nullable: true
+        name:
+          type: object
+          properties:
+            ar:
+              type: string
+            en:
+              type: string
+          x-apidog-orders:
+            - ar
+            - en
+          x-apidog-ignore-properties: []
+        slug:
+          type: string
+        price:
+          type: number
+        short_description:
+          type: object
+          properties:
+            ar:
+              type: string
+            en:
+              type: string
+          x-apidog-orders:
+            - ar
+            - en
+          x-apidog-ignore-properties: []
+        sale_price:
+          type: number
+          nullable: true
+        formatted_price:
+          type: string
+        formatted_sale_price:
+          type: string
+          nullable: true
+        currency:
+          type: string
+        currency_symbol:
+          type: string
+        attributes:
+          type: array
+          items: *ref_0
+        categories:
+          type: array
+          items: *ref_1
+        display_order:
+          type: integer
+          nullable: true
+        has_options:
+          type: boolean
+        has_fields:
+          type: boolean
+        images:
+          type: array
+          items:
+            type: string
+        videos:
+          type: array
+          items:
+            type: string
+        is_draft:
+          type: boolean
+        quantity:
+          type: integer
+        is_infinite:
+          type: boolean
+        html_url:
+          type: string
+        weight:
+          anyOf:
+            - *ref_2
+            - type: 'null'
+        keywords:
+          type: array
+          items:
+            type: string
+        requires_shipping:
+          type: boolean
+        is_taxable:
+          type: boolean
+        structure:
+          type: string
+        seo:
+          type: string
+          nullable: true
+        rating:
+          type: object
+          properties:
+            average:
+              type: number
+            total_count:
+              type: integer
+            1_ratings:
+              type: object
+              properties:
+                percentage:
+                  type: integer
+                count:
+                  type: integer
+              x-apidog-orders:
+                - percentage
+                - count
+              required:
+                - percentage
+                - count
+              x-apidog-ignore-properties: []
+            2_ratings:
+              type: object
+              properties:
+                percentage:
+                  type: integer
+                count:
+                  type: integer
+              x-apidog-orders:
+                - percentage
+                - count
+              required:
+                - percentage
+                - count
+              x-apidog-ignore-properties: []
+            3_ratings:
+              type: object
+              properties:
+                percentage:
+                  type: integer
+                count:
+                  type: integer
+              x-apidog-orders:
+                - percentage
+                - count
+              required:
+                - percentage
+                - count
+              x-apidog-ignore-properties: []
+            4_ratings:
+              type: object
+              properties:
+                percentage:
+                  type: integer
+                count:
+                  type: integer
+              x-apidog-orders:
+                - percentage
+                - count
+              required:
+                - percentage
+                - count
+              x-apidog-ignore-properties: []
+            5_ratings:
+              type: object
+              properties:
+                percentage:
+                  type: integer
+                count:
+                  type: integer
+              x-apidog-orders:
+                - percentage
+                - count
+              required:
+                - percentage
+                - count
+              x-apidog-ignore-properties: []
+          x-apidog-orders:
+            - average
+            - total_count
+            - 1_ratings
+            - 2_ratings
+            - 3_ratings
+            - 4_ratings
+            - 5_ratings
+          required:
+            - average
+            - total_count
+            - 1_ratings
+            - 2_ratings
+            - 3_ratings
+            - 4_ratings
+            - 5_ratings
+          x-apidog-ignore-properties: []
+        store_id:
+          type: integer
+        purchase_restrictions:
+          type: object
+          properties:
+            min_quantity_per_cart:
+              type: integer
+              nullable: true
+            max_quantity_per_cart:
+              type: integer
+              nullable: true
+            availability_period_start:
+              type: integer
+              nullable: true
+            availability_period_end:
+              type: integer
+              nullable: true
+            sale_price_period_start:
+              type: integer
+              nullable: true
+            sale_price_period_end:
+              type: integer
+              nullable: true
+          x-apidog-orders:
+            - min_quantity_per_cart
+            - max_quantity_per_cart
+            - availability_period_start
+            - availability_period_end
+            - sale_price_period_start
+            - sale_price_period_end
+          required:
+            - min_quantity_per_cart
+            - max_quantity_per_cart
+            - availability_period_start
+            - availability_period_end
+            - sale_price_period_start
+            - sale_price_period_end
+          x-apidog-ignore-properties: []
+        metafields:
+          type: array
+          items: *ref_3
+        meta:
+          type: array
+          items:
+            type: string
+          nullable: true
+        related_products_settings:
+          type: string
+        related_products_title:
+          type: object
+          properties:
+            ar:
+              type: string
+            en:
+              type: string
+          x-apidog-orders:
+            - ar
+            - en
+          x-apidog-ignore-properties: []
+        badge:
+          anyOf:
+            - *ref_4
+            - type: 'null'
+        cost:
+          type: number
+          nullable: true
+        is_published:
+          type: boolean
+        waiting_customers_count:
+          type: integer
+          nullable: true
+        group_products:
+          type: array
+          items:
+            type: string
+          nullable: true
+        stocks:
+          type: array
+          items: *ref_5
+        sold_products_count:
+          type: integer
+          nullable: true
+        created_at:
+          type: string
+        updated_at:
+          type: string
+      x-apidog-orders:
+        - id
+        - product_class
+        - sku
+        - barcode
+        - parent_id
+        - name
+        - slug
+        - price
+        - short_description
+        - sale_price
+        - formatted_price
+        - formatted_sale_price
+        - currency
+        - currency_symbol
+        - attributes
+        - categories
+        - display_order
+        - has_options
+        - has_fields
+        - images
+        - videos
+        - is_draft
+        - quantity
+        - is_infinite
+        - html_url
+        - weight
+        - keywords
+        - requires_shipping
+        - is_taxable
+        - structure
+        - seo
+        - rating
+        - store_id
+        - purchase_restrictions
+        - metafields
+        - meta
+        - related_products_settings
+        - related_products_title
+        - badge
+        - cost
+        - is_published
+        - waiting_customers_count
+        - group_products
+        - stocks
+        - sold_products_count
+        - created_at
+        - updated_at
+      required:
+        - id
+        - product_class
+        - sku
+        - barcode
+        - parent_id
+        - name
+        - slug
+        - price
+        - short_description
+        - sale_price
+        - formatted_price
+        - formatted_sale_price
+        - currency
+        - currency_symbol
+        - attributes
+        - categories
+        - display_order
+        - has_options
+        - has_fields
+        - images
+        - videos
+        - is_draft
+        - quantity
+        - is_infinite
+        - html_url
+        - weight
+        - keywords
+        - requires_shipping
+        - is_taxable
+        - structure
+        - seo
+        - rating
+        - store_id
+        - purchase_restrictions
+        - metafields
+        - meta
+        - related_products_settings
+        - related_products_title
+        - badge
+        - cost
+        - is_published
+        - group_products
+        - stocks
+        - sold_products_count
+        - created_at
+        - updated_at
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    ProductBadgeObject:
+      type: object
+      properties:
+        body:
+          type: object
+          properties:
+            ar:
+              type: string
+            en:
+              type: string
+          x-apidog-orders:
+            - ar
+            - en
+          x-apidog-ignore-properties: []
+        icon:
+          type: object
+          properties:
+            code:
+              type: string
+          x-apidog-orders:
+            - code
+          x-apidog-ignore-properties: []
+          nullable: true
+        is_example:
+          type: boolean
+      x-apidog-orders:
+        - body
+        - icon
+        - is_example
+      x-apidog-ignore-properties: []
+      nullable: true
+      x-apidog-folder: ''
+    ProductMetaFieldObject:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: object
+          properties:
+            en:
+              type: string
+            ar:
+              type: string
+          x-apidog-orders:
+            - en
+            - ar
+          x-apidog-ignore-properties: []
+        slug:
+          type: string
+        data_type:
+          type: string
+        display_order:
+          type: integer
+        value:
+          type: string
+      required:
+        - id
+        - name
+        - slug
+        - data_type
+        - display_order
+        - value
+      x-apidog-orders:
+        - id
+        - name
+        - slug
+        - data_type
+        - display_order
+        - value
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    ProductWeightObject:
+      type: object
+      properties:
+        value:
+          type: number
+          nullable: true
+        unit:
+          type: string
+          description: Weight unit.
+          examples:
+            - kg
+      required:
+        - value
+        - unit
+      description: Product weight details.
+      x-apidog-orders:
+        - value
+        - unit
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    ProductBrandObject:
+      type: object
+      description: &gt;-
+        Brand assigned to the product. Returns null when no brand is associated
+        with the product.
+      properties:
+        id: *ref_6
+        name: *ref_7
+        slug: *ref_8
+        logo: *ref_9
+        url: *ref_10
+      required:
+        - id
+        - name
+        - slug
+        - logo
+        - url
+      x-apidog-orders:
+        - id
+        - name
+        - slug
+        - logo
+        - url
+      examples:
+        - id: 4f8e78b8-64be-4f58-a79a-31e4e7ba3e80
+          name: Nike
+          slug: nike
+          logo: https://cdn.example.com/brands/nike.png
+          url: /brands/nike
+      x-apidog-ignore-properties: []
+      nullable: true
+      x-apidog-folder: ''
+    ProductCategoryObject:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: object
+          properties:
+            ar:
+              type: string
+            en:
+              type: string
+          x-apidog-orders:
+            - ar
+            - en
+          x-apidog-ignore-properties: []
+        slug:
+          type: string
+        description:
+          type: object
+          properties:
+            ar:
+              type: string
+            en:
+              type: string
+          x-apidog-orders:
+            - ar
+            - en
+          x-apidog-ignore-properties: []
+        cover_image:
+          type: string
+          nullable: true
+        image:
+          type: string
+          nullable: true
+        display_order:
+          type: integer
+          nullable: true
+        meta:
+          type: object
+          properties:
+            childs:
+              type: array
+              items:
+                type: integer
+            parents:
+              type: array
+              items:
+                type: integer
+          x-apidog-orders:
+            - childs
+            - parents
+          required:
+            - childs
+            - parents
+          x-apidog-ignore-properties: []
+          nullable: true
+      x-apidog-orders:
+        - id
+        - name
+        - slug
+        - description
+        - cover_image
+        - image
+        - display_order
+        - meta
+      required:
+        - id
+        - name
+        - slug
+        - description
+        - cover_image
+        - image
+        - display_order
+        - meta
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    ProductAttributeObject:
+      type: object
+      properties:
+        id:
+          type: string
+        slug:
+          type: string
+        name:
+          type: string
+        value:
+          type: object
+          properties:
+            ar:
+              type: string
+            en:
+              type: string
+          x-apidog-orders:
+            - ar
+            - en
+          x-apidog-ignore-properties: []
+        type:
+          type: string
+        type_value:
+          type: object
+          properties:
+            ar:
+              type: string
+            en:
+              type: string
+          x-apidog-orders:
+            - ar
+            - en
+          x-apidog-ignore-properties: []
+        product_id:
+          type: string
+        attribute_image_id:
+          type: string
+          nullable: true
+        display_order:
+          type: integer
+          nullable: true
+        attribute_id:
+          type: string
+        attribute_display_order:
+          type: integer
+          nullable: true
+        use_as_filter:
+          type: boolean
+      x-apidog-orders:
+        - id
+        - slug
+        - name
+        - value
+        - type
+        - type_value
+        - product_id
+        - attribute_image_id
+        - display_order
+        - attribute_id
+        - attribute_display_order
+        - use_as_filter
+      required:
+        - id
+        - slug
+        - name
+        - value
+        - type
+        - type_value
+        - product_id
+        - attribute_image_id
+        - display_order
+        - attribute_id
+        - attribute_display_order
+        - use_as_filter
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+    ResponseEnvelopMessage:
+      type: object
+      properties:
+        type:
+          type: string
+          description: Type of response message returned by the API.
+          examples:
+            - success
+        code:
+          type: string
+          description: Response code returned by the API, if available.
+          examples:
+            - MSG_POPUP_OK
+          nullable: true
+        name:
+          type: string
+          description: Name or title of the response message, if available.
+          examples:
+            - Coupons
+          nullable: true
+        description:
+          type: string
+          description: Detailed description of the response message, if available.
+          examples:
+            - Coupons created successfully
+          nullable: true
+      required:
+        - type
+        - code
+        - name
+        - description
+      description: Additional response metadata.
+      x-apidog-orders:
+        - type
+        - code
+        - name
+        - description
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+  securitySchemes: {}
+servers:
+  - url: https://api.zid.sa/
+    description: Prod Env
+security: []
+
+```
+</pre></body></html>

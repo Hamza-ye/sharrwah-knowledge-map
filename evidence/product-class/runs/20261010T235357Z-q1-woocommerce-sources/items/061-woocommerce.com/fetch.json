@@ -1,0 +1,18 @@
+{
+ "n": 61,
+ "url": "https://woocommerce.com/document/woopayments/fees/fee-currency/",
+ "dir": "items/061-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:04Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/woopayments/fees/fee-currency/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 45610,
+ "cited_in": [
+  "WC-S-0539"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "5cc3ab53c3971ee5ef71392400869dd3d50f8e557eaf04d3330d868354953ba2",
+ "raw_ext": "html"
+}

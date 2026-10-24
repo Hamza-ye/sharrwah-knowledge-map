@@ -1,0 +1,285 @@
+0	POST	/orders	Create Order	Default module/Merchant API/APIs/Orders | Orders	orders.read_write=Orders Read & Write	 https://api.salla.dev/admin/v2
+1	POST	/orders/{order_id}/inventory/relocate	Relocate Order Stock	Default module/Merchant API/APIs/Orders | Orders	orders.read_write=Orders Read & Write	 https://api.salla.dev/admin/v2
+2	POST	/orders/external	External Orders	Default module/Merchant API/APIs/Orders	orders.read_write=Orders Read & Write	 https://api.salla.dev/admin/v2
+3	GET	/orders	List Orders	Default module/Merchant API/APIs/Orders | Orders	orders.read=Orders Read Only	 https://api.salla.dev/admin/v2
+4	GET	/orders/{order_id}	Order Details	Default module/Merchant API/APIs/Orders | Orders	orders.read=Orders Read Only	 https://api.salla.dev/admin/v2
+5	POST	/orders/draft	Create Drafted Order	Default module/Merchant API/APIs/Orders | Orders	orders.read_write=Orders Read & Write	 https://api.salla.dev/admin/v2
+6	PUT	/orders/{order_id}	Update Order	Default module/Merchant API/APIs/Orders | Orders	country=`city`; address_line=`street_number`; block=`short_address`; building_number=`additional_number`; postal_code=`geo_coordinates`; orders.read_write=Orders Read & Write	 https://api.salla.dev/admin/v2
+7	POST	/orders/duplicate	Duplicate Order	Default module/Merchant API/APIs/Orders | Orders	orders.read_write=Orders Read & Write	 https://api.salla.dev/admin/v2
+8	POST	/orders/actions	Order Actions	Default module/Merchant API/APIs/Orders | Orders	create_shipping_policy=`print_shipping_policy`; orders.read_write=Orders Read & Write	 https://api.salla.dev/admin/v2
+9	POST	/orders/{order_id}/status	Update Order Status	Default module/Merchant API/APIs/Order Status | Order Status	orders.read_write=Orders Read & Write	 https://api.salla.dev/admin/v2
+10	POST	/orders/statuses	Create Custom Order Status	Default module/Merchant API/APIs/Order Status | Order Status	orders.read_write=Orders Read & Write	 https://api.salla.dev/admin/v2
+11	GET	/orders/statuses	List Order Statuses	Default module/Merchant API/APIs/Order Status | Order Status	orders.read=Orders Read Only	 https://api.salla.dev/admin/v2
+12	GET	/orders/statuses/{status_id}	Order Status Details	Default module/Merchant API/APIs/Order Status | Order Status	orders.read=Orders Read Only	 https://api.salla.dev/admin/v2
+13	PUT	/orders/statuses/{status_id}	Update Custom Order Status	Default module/Merchant API/APIs/Order Status | Order Status	orders.read_write=Orders Read & Write	 https://api.salla.dev/admin/v2
+14	POST	/orders/statuses/bulk	Update Bulk Orders Statuses	Default module/Merchant API/APIs/Order Status | Order Status	orders.read_write=Orders Read & Write	 https://api.salla.dev/admin/v2
+15	POST	/orders/statuses/sort	Sort Orders Statuses	Default module/Merchant API/APIs/Order Status | Order Status	orders.read_write=Orders Read & Write	 https://api.salla.dev/admin/v2
+16	GET	/orders/{order_id}/histories	List Order Histories	Default module/Merchant API/APIs/Order Histories | Order Histories		 https://api.salla.dev/admin/v2
+17	POST	/orders/{order_id}/histories	Create Order History	Default module/Merchant API/APIs/Order Histories | Order Histories	orders.read_write=Orders Read & Write	 https://api.salla.dev/admin/v2
+18	POST	/orders/options	Create Order Option	Default module/Merchant API/APIs/Order Options | Order Options	orders.read_write=Orders Read & Write	 https://api.salla.dev/admin/v2
+19	PUT	/orders/options/{id}	Update Order Option 	Default module/Merchant API/APIs/Order Options | Order Options	orders.read_write=Orders Read & Write	 https://api.salla.dev/admin/v2
+20	GET	/orders/options	List Order Options	Default module/Merchant API/APIs/Order Options | Order Options	orders.read=Orders Read Only	 https://api.salla.dev/admin/v2
+21	DELETE	/orders/options/{id}	Delete Order Options	Default module/Merchant API/APIs/Order Options | Order Options	orders.read_write=Orders Read & Write	 https://api.salla.dev/admin/v2
+22	GET	/orders/options/{id}	Order Option Details	Default module/Merchant API/APIs/Order Options | Order Option	orders.read=Orders Read Only	 https://api.salla.dev/admin/v2
+23	GET	/orders/assignment/rules	List Auto Assignment Rules	Default module/Merchant API/APIs/Order Assignment | Order Assignment	orders.read=Orders Read Only	 https://api.salla.dev/admin/v2
+24	PUT	/orders/assignment/rules/{rule_id}	Update Auto Assignment Rule	Default module/Merchant API/APIs/Order Assignment | Order Assignment	orders.read_write=Orders Read & Write	 https://api.salla.dev/admin/v2
+25	POST	/orders/assignment/rules	Create Auto Assignment Rules	Default module/Merchant API/APIs/Order Assignment | Order Assignment	orders.read_write=Orders Read & Write	 https://api.salla.dev/admin/v2
+26	GET	/orders/assignment/{order_id}	Order Assigned Employees Details	Default module/Merchant API/APIs/Order Assignment | Order Assignment		 https://api.salla.dev/admin/v2
+27	POST	/orders/invoices	Create Invoice	Default module/Merchant API/APIs/Order Invoice | Order Invoice	orders.read_write=Orders Read & Write	 https://api.salla.dev/admin/v2
+28	GET	/orders/invoices	List Invoices	Default module/Merchant API/APIs/Order Invoice | Order Invoice	orders.read=Orders Read Only	 https://api.salla.dev/admin/v2
+29	GET	/orders/invoices/{invoice_id}	Invoice Details	Default module/Merchant API/APIs/Order Invoice | Order Invoice	orders.read=Orders Read Only	 https://api.salla.dev/admin/v2
+30	POST	/orders/{order_id}/send-invoice	Send Order Invoice	Default module/Merchant API/APIs/Order Invoice | Order Invoice	orders.read_write=Orders Read & Write	 https://api.salla.dev/admin/v2
+31	POST	/orders/{order_id}/print-invoice	Create Order Invoice	Default module/Merchant API/APIs/Order Invoice | Order Invoice	orders.read_write=Orders Read & Write	 https://api.salla.dev/admin/v2
+32	POST	/products	Create Product	Default module/Merchant API/APIs/Products | Products	products.read_write=Products Read & Write	 https://api.salla.dev/admin/v2
+33	GET	/products	List Products	Default module/Merchant API/APIs/Products | Products	products.read=Products Read Only	 https://api.salla.dev/admin/v2
+34	GET	/products/{product}	Product Details	Default module/Merchant API/APIs/Products | Products	products.read=Products Read Only	 https://api.salla.dev/admin/v2
+35	PUT	/products/{product}	Update Product	Default module/Merchant API/APIs/Products | Products	products.read_write=Products Read & Write	 https://api.salla.dev/admin/v2
+36	DELETE	/products/{product}	Delete Product	Default module/Merchant API/APIs/Products | Products	products.read_write=Products Read & Write	 https://api.salla.dev/admin/v2
+37	POST	/products/{product}/status	Change Product Status	Default module/Merchant API/APIs/Products | Products	products.read_write=Products Read & Write	 https://api.salla.dev/admin/v2
+38	GET	/products/sku/{sku}	Product Details By SKU	Default module/Merchant API/APIs/Products | Products	products.read=Products Read Only	 https://api.salla.dev/admin/v2
+39	PUT	/products/sku/{sku}	Update Product By SKU	Default module/Merchant API/APIs/Products | Products	products.read_write=Products Read & Write	 https://api.salla.dev/admin/v2
+40	DELETE	/products/sku/{sku}	Delete Product By SKU	Default module/Merchant API/APIs/Products | Products	products.read_write=Products Read & Write	 https://api.salla.dev/admin/v2
+41	POST	/products/sku/{sku}/price	Update Product Price By SKU	Default module/Merchant API/APIs/Products | Products	products.read_write=Products Read & Write	 https://api.salla.dev/admin/v2
+42	POST	/products/prices/bulkPrice	Update Bulk Product Prices	Default module/Merchant API/APIs/Products | Products	products.read_write=Products Read & Write	 https://api.salla.dev/admin/v2
+43	POST	/products/import	Import Products	Default module/Merchant API/APIs/Products | Products	products.read_write=Products Read & Write	 https://api.salla.dev/admin/v2
+44	POST	/products/actions	Bulk Product Actions	Default module/Merchant API/APIs/Products | Products	products.read_write=Products Read & Write	 https://api.salla.dev/admin/v2
+45	GET	/reservations	List Order Reservations	Default module/Merchant API/APIs/Order Reservations | Order Reservations	orders.read=Orders Read Only	 https://api.salla.dev/admin/v2
+46	POST	/products/tags	Create Product Tag	Default module/Merchant API/APIs/Product Tags | Product Tags	products.read_write=Products Read & Write	 https://api.salla.dev/admin/v2
+47	GET	/products/tags	List Product Tags	Default module/Merchant API/APIs/Product Tags | Product Tags	products.read=Products Read Only	 https://api.salla.dev/admin/v2
+48	POST	/products/{product}/options	Create Product Option	Default module/Merchant API/APIs/Product Options | Product Options	products.read_write=Products Read & Write	 https://api.salla.dev/admin/v2
+49	GET	/products/options/{option}	Product Option Details	Default module/Merchant API/APIs/Product Options | Product Options	products.read=Products Read Only	 https://api.salla.dev/admin/v2
+50	PUT	/products/options/{option}	Update Product Option	Default module/Merchant API/APIs/Product Options | Product Options	products.read_write=Products Read & Write	 https://api.salla.dev/admin/v2
+51	DELETE	/products/options/{option}	Delete Product Option	Default module/Merchant API/APIs/Product Options | Product Options	products.read_write=Products Read & Write	 https://api.salla.dev/admin/v2
+52	POST	/products/sku/{sku}/images	Attach Image by SKU	Default module/Merchant API/APIs/Product Images | Product Images	products.read_write=Products Read & Write	 https://api.salla.dev/admin/v2
+53	POST	/products/sku/{sku}/videos	Attach Video by SKU	Default module/Merchant API/APIs/Product Images | Product Images	products.read_write=Products Read & Write	 https://api.salla.dev/admin/v2
+54	POST	/products/{product}/video	Attach Youtube Video	Default module/Merchant API/APIs/Product Images | Product Images	products.read_write=Products Read & Write	 https://api.salla.dev/admin/v2
+55	POST	/products/{product}/images	Attach Image	Default module/Merchant API/APIs/Product Images | Product Images	products.read_write=Products Read & Write	 https://api.salla.dev/admin/v2
+56	POST	/products/images/{image-id}	Update Image	Default module/Merchant API/APIs/Product Images | Product Images	products.read_write=Products Read & Write	 https://api.salla.dev/admin/v2
+57	DELETE	/products/images/{image}	Delete Image	Default module/Merchant API/APIs/Product Images | Product Images	products.read_write=Products Read & Write	 https://api.salla.dev/admin/v2
+58	POST	/products/options/{option}	Create Product Option Value	Default module/Merchant API/APIs/Product Option Values | Product Option Values	products.read_write=Products Read & Write	 https://api.salla.dev/admin/v2
+59	GET	/products/options/values/{value}	Product Option Value Details	Default module/Merchant API/APIs/Product Option Values | Product Option Values	products.read=Products Read Only	 https://api.salla.dev/admin/v2
+60	PUT	/products/options/values/{value}	Update Product Option Value	Default module/Merchant API/APIs/Product Option Values | Product Option Values	products.read_write=Products Read & Write	 https://api.salla.dev/admin/v2
+61	DELETE	/products/options/values/{value}	Delete Product Option Value	Default module/Merchant API/APIs/Product Option Values | Product Option Values	products.read_write=Products Read & Write	 https://api.salla.dev/admin/v2
+62	GET	/settlements/instant	List Instant Settlements	Default module/Merchant API/APIs/Settlements | Settlements	settlements.read=Settlements Read Only	 https://api.salla.dev/admin/v2
+63	POST	/settlements/instant	Create Instant Settlement	Default module/Merchant API/APIs/Settlements | Settlements	settlements.read_write=Settlements Read & Write	 https://api.salla.dev/admin/v2
+64	PUT	/settlements/instant/{id}	Update Instant Settlement	Default module/Merchant API/APIs/Settlements | Settlements	settlements.read_write=Settlements Read & Write	 https://api.salla.dev/admin/v2
+65	GET	/settlements/instant/{id}	Instant Settlement Details	Default module/Merchant API/APIs/Settlements | Settlements	settlements.read=Settlements Read Only	 https://api.salla.dev/admin/v2
+66	DELETE	/settlements/instant/{id}	Delete Instant Settlement	Default module/Merchant API/APIs/Settlements	settlements.read_write=Settlements Read & Write	 https://api.salla.dev/admin/v2
+67	POST	/products/{product}/digital-codes	Attach Digital Code	Default module/Merchant API/APIs/Digitals Product | Digitals Product	products.read_write=Products Read & Write	 https://api.salla.dev/admin/v2
+68	POST	/products/{product}/digital-files	Attach Digital File	Default module/Merchant API/APIs/Digitals Product | Digitals Product	products.read_write=Products Read & Write	 https://api.salla.dev/admin/v2
+69	DELETE	/products/digital-files/{file}	Delete Digital File	Default module/Merchant API/APIs/Digitals Product | Digitals Product	products.read_write=Products Read & Write	 https://api.salla.dev/admin/v2
+70	POST	/products/quantities/bulk	Update Bulk Quantities	Default module/Merchant API/APIs/Product Quantity | Product Quantity	products.read_write=Products Read & Write	 https://api.salla.dev/admin/v2
+71	GET	/products/quantities	List Product Quantities	Default module/Merchant API/APIs/Product Quantity | Product Quantity	products.read=Products Read Only	 https://api.salla.dev/admin/v2
+72	GET	/products/quantities/quantity-change-reason	List Quantity Change Reasons 	Default module/Merchant API/APIs/Product Quantity | Product Quantity	products.read=Products Read Only	 https://api.salla.dev/admin/v2
+73	GET	/products/quantities/audit	List Quantity Audit	Default module/Merchant API/APIs/Product Quantity | Product Quantity	products.read=Products Read Only	 https://api.salla.dev/admin/v2
+74	GET	/products/{product}/variants	List Product Variants	Default module/Merchant API/APIs/Product Variants | Product Variants	products.read=Products Read Only	 https://api.salla.dev/admin/v2
+75	GET	/products/variants/{variant}	Product Variant Details	Default module/Merchant API/APIs/Product Variants | Product Variants	products.read=Products Read Only	 https://api.salla.dev/admin/v2
+76	PUT	/products/variants/{variant}	Update Product Variant	Default module/Merchant API/APIs/Product Variants | Product Variants	products.read_write=Products Read & Write	 https://api.salla.dev/admin/v2
+77	PUT	/products/quantities/variant/{variant}	Update Product Variant Quantity	Default module/Merchant API/APIs/Product Variants | Product Variants	products.read_write=Products Read & Write	 https://api.salla.dev/admin/v2
+78	POST	/customers	Create Customer	Default module/Merchant API/APIs/Customers | Customers	customers.read_write=Customers Read & Write	 https://api.salla.dev/admin/v2
+79	GET	/customers	List Customers	Default module/Merchant API/APIs/Customers | Customers	customers.read=Customers Read Only	 https://api.salla.dev/admin/v2
+80	GET	/customers/{customer}	Customer Details	Default module/Merchant API/APIs/Customers | Customers	customers.read=Customers Read Only	 https://api.salla.dev/admin/v2
+81	PUT	/customers/{customer}	Update Customer	Default module/Merchant API/APIs/Customers | Customers	customers.read_write=Customers Read & Write	 https://api.salla.dev/admin/v2
+82	DELETE	/customers/{customer}	Delete Customer	Default module/Merchant API/APIs/Customers | Customers	customers.read_write=Customers Read & Write	 https://api.salla.dev/admin/v2
+83	PUT	/customers/blacklist/{customer}	Ban Customer	Default module/Merchant API/APIs/Customers | Customers	customers.read_write=Customers Read & Write	 https://api.salla.dev/admin/v2
+84	DELETE	/customers/blacklist/{customer}	Un-Ban customer	Default module/Merchant API/APIs/Customers | Customers	customers.read_write=Customers Read & Write	 https://api.salla.dev/admin/v2
+85	POST	/customers/import	Import Customers	Default module/Merchant API/APIs/Customers | Customers	customers.read_write=Customers Read & Write	 https://api.salla.dev/admin/v2
+86	POST	/customers/groups	Create Customer Group	Default module/Merchant API/APIs/Customer Groups | Customer Groups	customers.read_write=Customers Read & Write	 https://api.salla.dev/admin/v2
+87	GET	/customers/groups	List Customer Groups	Default module/Merchant API/APIs/Customer Groups | Customer Groups	customers.read=Customers Read Only	 https://api.salla.dev/admin/v2
+88	POST	/customers/groups/add_customers	Add Customers To Group Customer	Default module/Merchant API/APIs/Customer Groups | Customer Groups	customers.read_write=Customers Read & Write	 https://api.salla.dev/admin/v2
+89	POST	/customers/groups/default	Update Default Customer Group	Default module/Merchant API/APIs/Customer Groups | Customer Groups	customers.read_write=Customers Read & Write	 https://api.salla.dev/admin/v2
+90	PUT	/customers/groups/{group}	Update Customer Group	Default module/Merchant API/APIs/Customer Groups | Customer Groups	customers.read_write=Customers Read & Write	 https://api.salla.dev/admin/v2
+91	DELETE	/customers/groups/{group}	Delete Customer Group	Default module/Merchant API/APIs/Customer Groups | Customer Groups	customers.read_write=Customers Read & Write	 https://api.salla.dev/admin/v2
+92	POST	/customers/wallets/deposit	Deposit to Wallet	Default module/Merchant API/APIs/Customer Wallet | Customer Wallet		 https://api.salla.dev/admin/v2
+93	POST	/customers/wallets/withdraw	Withdraw from Wallet	Default module/Merchant API/APIs/Customer Wallet | Customer Wallet		 https://api.salla.dev/admin/v2
+94	GET	/carts/abandoned	List Abandoned Carts	Default module/Merchant API/APIs/Abandoned Carts | Abandoned Carts	carts.read=Carts Read Only	 https://api.salla.dev/admin/v2
+95	GET	/carts/abandoned/{cart-id}	Abandoned Cart Details	Default module/Merchant API/APIs/Abandoned Carts | Abandoned Carts	carts.read=Carts Read Only	 https://api.salla.dev/admin/v2
+96	GET	/specialoffers/priorities	Get Offer Priorities	Default module/Merchant API/APIs/Special Offers | Special Offers	specialoffers.read=Special Offers Read Only	 https://api.salla.dev/admin/v2
+97	PUT	/specialoffers/priorities	Update Offer Priorities	Default module/Merchant API/APIs/Special Offers | Special Offers	specialoffers.read_write=Special Offers Read & Write	 https://api.salla.dev/admin/v2
+98	POST	/specialoffers	Create Special Offer	Default module/Merchant API/APIs/Special Offers | Special Offers	specialoffers.read_write=Special Offers Read & Write	 https://api.salla.dev/admin/v2
+99	GET	/specialoffers	List Special Offers	Default module/Merchant API/APIs/Special Offers | Special Offers	specialoffers.read=Special Offers Read Only	 https://api.salla.dev/admin/v2
+100	GET	/specialoffers/{specialoffer}	Special Offer Details	Default module/Merchant API/APIs/Special Offers | Special Offers	specialoffers.read=Special Offers Read Only	 https://api.salla.dev/admin/v2
+101	PUT	/specialoffers/{specialoffer}	Update Special Offer	Default module/Merchant API/APIs/Special Offers | Special Offers	specialoffers.read_write=Special Offers Read & Write	 https://api.salla.dev/admin/v2
+102	DELETE	/specialoffers/{specialoffer}	Delete Special Offer	Default module/Merchant API/APIs/Special Offers | Special Offers	specialoffers.read_write=Special Offers Read & Write	 https://api.salla.dev/admin/v2
+103	PUT	/specialoffers/{offer}/status	Change Special Offer Status	Default module/Merchant API/APIs/Special Offers | Special Offers	specialoffers.read_write=Special Offers Read & Write	 https://api.salla.dev/admin/v2
+104	POST	/affiliates	Create Affiliate	Default module/Merchant API/APIs/Affiliates | Affiliates	marketing.read_write=Marketing Read & Write	 https://api.salla.dev/admin/v2
+105	GET	/affiliates	List Affiliates	Default module/Merchant API/APIs/Affiliates | Affiliates	marketing.read=Marketing Read Only	 https://api.salla.dev/admin/v2
+106	GET	/affiliates/{affiliates_id}	Affiliate Details	Default module/Merchant API/APIs/Affiliates | Affiliates	marketing.read=Marketing Read Only	 https://api.salla.dev/admin/v2
+107	GET	/affiliates/{affiliates_id}/links	List Affiliate Links	Default module/Merchant API/APIs/Affiliates | Affiliates	marketing.read=Marketing Read Only	 https://api.salla.dev/admin/v2
+108	PUT	/affiliates/{affiliates_id}	Update Affiliate	Default module/Merchant API/APIs/Affiliates | Affiliates	marketing.read_write=Marketing Read & Write	 https://api.salla.dev/admin/v2
+109	DELETE	/affiliates/{affiliates_id}	Delete Affiliate	Default module/Merchant API/APIs/Affiliates | Affiliates	marketing.read_write=Marketing Read & Write	 https://api.salla.dev/admin/v2
+110	POST	/coupons	Create Coupon	Default module/Merchant API/APIs/Coupons | Coupons	marketing.read_write=Marketing Read & Write	 https://api.salla.dev/admin/v2
+111	GET	/coupons	List Coupons	Default module/Merchant API/APIs/Coupons | Coupons	marketing.read=Marketing Read Only	 https://api.salla.dev/admin/v2
+112	GET	/coupons/{coupon_id}	Coupon Details	Default module/Merchant API/APIs/Coupons | Coupons	marketing.read=Marketing Read Only	 https://api.salla.dev/admin/v2
+113	PUT	/coupons/{coupon_id}	Update Coupon	Default module/Merchant API/APIs/Coupons | Coupons	marketing.read_write=Marketing Read & Write	 https://api.salla.dev/admin/v2
+114	DELETE	/coupons/{coupon_id}	Delete Coupon	Default module/Merchant API/APIs/Coupons | Coupons	marketing.read_write=Marketing Read & Write	 https://api.salla.dev/admin/v2
+115	GET	/coupons/codes	List Coupon Codes	Default module/Merchant API/APIs/Coupons | Coupons	marketing.read=Marketing Read Only	 https://api.salla.dev/admin/v2
+116	GET	/coupons/statistics/{coupon}	Coupon Statistics Details	Default module/Merchant API/APIs/Coupons | Coupons	marketing.read=Marketing Read Only	 https://api.salla.dev/admin/v2
+117	GET	/reviews	List Reviews	Default module/Merchant API/APIs/Reviews | Reviews	reviews.read=Reviews Read Only	 https://api.salla.dev/admin/v2
+118	GET	/reviews/{id}	Review Details 	Default module/Merchant API/APIs/Reviews | Reviews	reviews.read=Reviews Read Only	 https://api.salla.dev/admin/v2
+119	PUT	/reviews/{id}	Update Review	Default module/Merchant API/APIs/Reviews | Reviews	reviews.read_write=Reviews Read & Write	 https://api.salla.dev/admin/v2
+120	GET	/feedbacks	List Feedbacks	Default module/Merchant API/APIs/Feedbacks | Feedbacks	reviews.read=Questions & Reviews Read Only	 https://api.salla.dev/admin/v2
+121	GET	/feedbacks/{feedback_id}	Feedback Details	Default module/Merchant API/APIs/Feedbacks | Feedbacks	reviews.read=Questions & Reviews Read Only	 https://api.salla.dev/admin/v2
+122	PUT	/feedbacks/{feedback_id}	Update Feedback	Default module/Merchant API/APIs/Feedbacks | Feedbacks	reviews.read_write=Questions & Reviews Read & Write	 https://api.salla.dev/admin/v2
+123	POST	/feedbacks	Store Feedback	Default module/Merchant API/APIs/Feedbacks | Feedbacks	reviews.read_write=Questions & Reviews Read & Write	 https://api.salla.dev/admin/v2
+124	POST	/feedbacks/{feedback_id}/reply	Feedback Reply	Default module/Merchant API/APIs/Feedbacks | Feedbacks	reviews.read_write=Questions & Reviews Read & Write	 https://api.salla.dev/admin/v2
+125	PUT	/feedbacks/{feedback_reply_id}/reply	Update Feedback Reply	Default module/Merchant API/APIs/Feedbacks | Feedbacks	reviews.read_write=Questions & Reviews Read & Write	 https://api.salla.dev/admin/v2
+126	GET	/orders/items	List Order Items	Default module/Merchant API/APIs/Order Items | Order Items	orders.read=Orders Read Only	 https://api.salla.dev/admin/v2
+127	POST	/orders/items	Create Order Item	Default module/Merchant API/APIs/Order Items | Order Items	orders.read_write=Orders Read & Write	 https://api.salla.dev/admin/v2
+128	PUT	/orders/items/{item_id}	Update Order Item	Default module/Merchant API/APIs/Order Items | Order Items	orders.read_write=Orders Read & Write	 https://api.salla.dev/admin/v2
+129	DELETE	/orders/items/{item_id}	Delete Order Item	Default module/Merchant API/APIs/Order Items | Order Items	orders.read_write=Orders Read & Write	 https://api.salla.dev/admin/v2
+130	POST	/orders/items/{order_item}/digital	Attach Digital Item	Default module/Merchant API/APIs/Order Items | Order Items	orders.read_write=Orders Read & Write	 https://api.salla.dev/admin/v2
+131	POST	/branches	Create Branch	Default module/Merchant API/APIs/Branches | Branches	branches.read_write=Branchs Read & Write	 https://api.salla.dev/admin/v2
+132	GET	/branches	List Branches	Default module/Merchant API/APIs/Branches | Branches	branches.read=Branches Read Only	 https://api.salla.dev/admin/v2
+133	GET	/branches/{branch}	Branch Details	Default module/Merchant API/APIs/Branches | Branches	branches.read=Branches Read Only	 https://api.salla.dev/admin/v2
+134	PUT	/branches/{branch}	Update Branch	Default module/Merchant API/APIs/Branches | Branches	branches.read_write=Branchs Read & Write	 https://api.salla.dev/admin/v2
+135	DELETE	/branches/{branch}	Delete Branch	Default module/Merchant API/APIs/Branches | Branches	branches.read_write=Branchs Read & Write	 https://api.salla.dev/admin/v2
+136	GET	/branches/allocation	List Branches Allocations	Default module/Merchant API/APIs/Branches Allocations | Branch Allocations	branches.read=Branchs Read	 https://api.salla.dev/admin/v2
+137	POST	/branches/allocation	Create Branches Allocations	Default module/Merchant API/APIs/Branches Allocations | Branch Allocations	branches.read_write=Branchs Read & Write	 https://api.salla.dev/admin/v2
+138	PUT	/branches/allocation/{Id}	Update Branches Allocations	Default module/Merchant API/APIs/Branches Allocations | Branch Allocations	branches.read_write=Branchs Read & Write	 https://api.salla.dev/admin/v2
+139	DELETE	/branches/allocation/{id}	Delete Branches Allocations	Default module/Merchant API/APIs/Branches Allocations | Branch Allocations	branches.read_write=Branchs Read & Write	 https://api.salla.dev/admin/v2
+140	GET	/branches/allocation/{Id}	Branch Allocation Details	Default module/Merchant API/APIs/Branches Allocations | Branch Allocations	branches.read=Branchs Read	 https://api.salla.dev/admin/v2
+141	POST	/branches/allocation/settings	Allocation Branch Settings	Default module/Merchant API/APIs/Branches Allocations	branches.read_write=Branchs Read & Write	 https://api.salla.dev/admin/v2
+142	POST	/shipments	Create Shipment	Default module/Merchant API/APIs/Shipments | Shipments	name=`email`; phone=`country`; city=`address_line`; street_number=`block`; short_address=`building_number`; additional_number=`postal_code`	 https://api.salla.dev/admin/v2
+143	GET	/shipments	List Shipments	Default module/Merchant API/APIs/Shipments | Shipments	shipping.read=Shipping Read Only	 https://api.salla.dev/admin/v2
+144	PUT	/shipments/{shipment_id}	Update Shipment Details	Default module/Merchant API/APIs/Shipments | Shipments	shipping.read_write=Shipping Read & Write	 https://api.salla.dev/admin/v2
+145	GET	/shipments/{shipment_id}	Shipment Details	Default module/Merchant API/APIs/Shipments | Shipments	shipping.read=Shipping Read Only	 https://api.salla.dev/admin/v2
+146	POST	/shipments/{shipment_id}/cancel	Cancel Shipment	Default module/Merchant API/APIs/Shipments | Shipments	shipping.read_write=Shipping Read & Write	 https://api.salla.dev/admin/v2
+147	POST	/shipments/{shipment_id}/return	Return Shipment	Default module/Merchant API/APIs/Shipments | Shipments	shipping.read_write=Shipping Read & Write	 https://api.salla.dev/admin/v2
+148	GET	/shipments/{shipment_id}/tracking	Shipment Tracking	Default module/Merchant API/APIs/Shipments | Shipments	shipping.read=Shipping Read Only	 https://api.salla.dev/admin/v2
+149	POST	/shipping/companies/	Create Shipping Company	Default module/Merchant API/APIs/Shipping Companies | Shipping Companies	shipping.read_write=Shipping Read & Write	 https://api.salla.dev/admin/v2
+150	GET	/shipping/companies/{company_id}/options	Shipping Company Options	Default module/Merchant API/APIs/Shipping Companies | Shipping Companies		 https://api.salla.dev/admin/v2
+151	GET	/shipping/companies/	List Shipping Companies	Default module/Merchant API/APIs/Shipping Companies | Shipping Companies	shipping.read=Shipping Read Only	 https://api.salla.dev/admin/v2
+152	GET	/shipping/companies/{company_id}	Shipping Company Details	Default module/Merchant API/APIs/Shipping Companies | Shipping Companies	shipping.read=Shipping Read Only	 https://api.salla.dev/admin/v2
+153	PUT	/shipping/companies/{company_id}	Update Shipping Company	Default module/Merchant API/APIs/Shipping Companies | Shipping Companies	shipping.read_write=Shipping Read & Write	 https://api.salla.dev/admin/v2
+154	DELETE	/shipping/companies/{company_id}	Delete Shipping Company	Default module/Merchant API/APIs/Shipping Companies | Shipping Companies	shipping.read_write=Shipping Read & Write	 https://api.salla.dev/admin/v2
+155	GET	/shipping/companies/estimate-rate	List Estimate Rates	Default module/Merchant API/APIs/Shipping Companies | Shipping Companies		 https://api.salla.dev/admin/v2
+156	POST	/shipping/zones	Create Shipping Zone	Default module/Merchant API/APIs/Shipping Zones | Shipping Zones	shipping.read_write=Shipping Read & Write	 https://api.salla.dev/admin/v2
+157	GET	/shipping/zones	List Shipping Zones	Default module/Merchant API/APIs/Shipping Zones | Shipping Zones	shipping.read=Shipping Read Only	 https://api.salla.dev/admin/v2
+158	GET	/shipping/zones/{zone_id}	Shipping Zone Details	Default module/Merchant API/APIs/Shipping Zones | Shipping Zones	shipping.read=Shipping Read Only	 https://api.salla.dev/admin/v2
+159	PUT	/shipping/zones/{zone_id}	Update Shipping Zone	Default module/Merchant API/APIs/Shipping Zones | Shipping Zones	shipping.read_write=Shipping Read & Write	 https://api.salla.dev/admin/v2
+160	DELETE	/shipping/zones/{zone_id}	Delete Shipping Zone	Default module/Merchant API/APIs/Shipping Zones | Shipping Zones	shipping.read_write=Shipping Read & Write	 https://api.salla.dev/admin/v2
+161	GET	/shipping/routes	  Routes List	Default module/Merchant API/APIs/Shipping Routes | Shipping Routes	shipping.read=Shipping Read	 https://api.salla.dev/admin/v2
+162	GET	/shipping/routes/{id}	Route Details	Default module/Merchant API/APIs/Shipping Routes | Shipping Routes	shipping.read=Shipping Read	 https://api.salla.dev/admin/v2
+163	POST	/shipping/routes	Create Route	Default module/Merchant API/APIs/Shipping Routes | Shipping Routes	shipping.read_write=Shipping Read & Write	 https://api.salla.dev/admin/v2
+164	PATCH	/shipping/routes/{id}	Update Route	Default module/Merchant API/APIs/Shipping Routes | Shipping Routes	shipping.read_write=Shipping Read & Write	 https://api.salla.dev/admin/v2
+165	PATCH	/shipping/routes/default	Default Route	Default module/Merchant API/APIs/Shipping Routes | Shipping Routes	shipping.read_write=Shipping Read & Write	 https://api.salla.dev/admin/v2
+166	DELETE	/shipping/routes/{id}	Delete Route	Default module/Merchant API/APIs/Shipping Routes | Shipping Routes	shipping.read_write=Shipping Read & Write	 https://api.salla.dev/admin/v2
+167	GET	/countries	List Countries	Default module/Merchant API/APIs/Countries | Countries	metadata.read=Metadata Read Only	 https://api.salla.dev/admin/v2
+168	GET	/countries/{country}	Country Details	Default module/Merchant API/APIs/Countries | Countries	metadata.read=Metadata Read Only	 https://api.salla.dev/admin/v2
+169	GET	/cities/{city}/districts	List Districts	Default module/Merchant API/APIs/Districts | Districts	metadata.read=Metadata Read Only	 https://api.salla.dev/admin/v2
+170	GET	/countries/{country}/cities	List Cities	Default module/Merchant API/APIs/Cities | Cities	metadata.read=Metadata Read Only	 https://api.salla.dev/admin/v2
+171	GET	/products/options/templates	List Option Templates	Default module/Merchant API/APIs/Product Option Templates | Product Option Templates	products.read=Products Read Only	 https://api.salla.dev/admin/v2
+172	GET	/products/options/templates/{id}	Option Template Details	Default module/Merchant API/APIs/Product Option Templates | Product Option Templates	products.read=Products Read only	 https://api.salla.dev/admin/v2
+173	DELETE	/products/options/templates/{id}	Delete Option Template	Default module/Merchant API/APIs/Product Option Templates | Product Option Templates	products.read_write=Products Read and Write	 https://api.salla.dev/admin/v2
+174	PUT	/products/options/templates/{id}	Update Option Template	Default module/Merchant API/APIs/Product Option Templates | Product Option Templates	products.read_write=Products Read and Write	 https://api.salla.dev/admin/v2
+175	POST	/products/options/templates	Create Option Template	Default module/Merchant API/APIs/Product Option Templates | Product Option Templates	products.read_write=Products Read and Write	 https://api.salla.dev/admin/v2
+176	GET	/delivery-promises	List Delivery Promises	Default module/Merchant API/APIs/Shipping Delivery Promises	shipping.read=Shipping Read Only	 https://api.salla.dev/admin/v2
+177	GET	/delivery-promises/{id}	Delivery Promise Details	Default module/Merchant API/APIs/Shipping Delivery Promises	shipping.read=Shipping Read Only	 https://api.salla.dev/admin/v2
+178	PUT	/delivery-promises/{id}	Update Delivery Promise	Default module/Merchant API/APIs/Shipping Delivery Promises	shipping.read_write=Shipping Read & Write	 https://api.salla.dev/admin/v2
+179	POST	/categories	Create Category	Default module/Merchant API/APIs/Categories | Categories	categories.read_write=Categories Read & Write	 https://api.salla.dev/admin/v2
+180	GET	/categories	List Categories	Default module/Merchant API/APIs/Categories | Categories	categories.read=Categories Read Only	 https://api.salla.dev/admin/v2
+181	GET	/categories/{category}	Category Details	Default module/Merchant API/APIs/Categories | Categories	categories.read=Categories Read Only	 https://api.salla.dev/admin/v2
+182	PUT	/categories/{category}	Update Category	Default module/Merchant API/APIs/Categories | Categories	categories.read_write=Categories Read & Write	 https://api.salla.dev/admin/v2
+183	DELETE	/categories/{category}	Delete Category	Default module/Merchant API/APIs/Categories | Categories	categories.read_write=Categories Read & Write	 https://api.salla.dev/admin/v2
+184	GET	/categories/{category}/children	Category Children	Default module/Merchant API/APIs/Categories | Categories	categories.read=Categories Read Only	 https://api.salla.dev/admin/v2
+185	GET	/categories/search	Categories Search	Default module/Merchant API/APIs/Categories | Category	categories.read=Categories Read Only	 https://api.salla.dev/admin/v2
+186	GET	/categories/{id}/products	List Category Products	Default module/Merchant API/APIs/Categories | Categories	categories.read=Categories Read Only	 https://api.salla.dev/admin/v2
+187	GET	/settings	Settings List	Default module/Merchant API/APIs/Settings | Settings		 https://api.salla.dev/admin/v2
+188	PUT	/settings/fields/{slug}	Update Setting Slug	Default module/Merchant API/APIs/Settings | Settings		 https://api.salla.dev/admin/v2
+189	GET	/settings/fields/{slug}	Setting Details	Default module/Merchant API/APIs/Settings | Settings		 https://api.salla.dev/admin/v2
+190	GET	/scopes	List Store Scopes	Default module/Merchant API/APIs/Store Scopes | Store Scopes	products.read=Products Read Only	 https://api.salla.dev/admin/v2
+191	GET	/scopes/{scope}	Store Scope Details	Default module/Merchant API/APIs/Store Scopes | Store Scopes	products.read=Products Read Only	 https://api.salla.dev/admin/v2
+192	POST	/brands	Create Brand	Default module/Merchant API/APIs/Brands | Brands	brands.read_write=Brands Read & Write	 https://api.salla.dev/admin/v2
+193	GET	/brands	List Brands	Default module/Merchant API/APIs/Brands | Brands	brands.read=Brands Read Only	 https://api.salla.dev/admin/v2
+194	GET	/brands/{brand}	Brand Details	Default module/Merchant API/APIs/Brands | Brands	brands.read=Brands Read Only	 https://api.salla.dev/admin/v2
+195	PUT	/brands/{brand}	Update Brand	Default module/Merchant API/APIs/Brands | Brands	brands.read_write=Brands Read & Write	 https://api.salla.dev/admin/v2
+196	DELETE	/brands/{brand}	Delete Brand	Default module/Merchant API/APIs/Brands | Brands	brands.read_write=Brands Read & Write	 https://api.salla.dev/admin/v2
+197	GET	/exports/orders	Export Orders	Default module/Merchant API/APIs/Exports | Orders	exports.read=Exports Read Only	 https://api.salla.dev/admin/v2
+198	GET	/exports/logs	Exports Logs	Default module/Merchant API/APIs/Exports | Exports	exports.read=Exports Read Only	 https://api.salla.dev/admin/v2
+199	GET	/exports/templates	List Export Templates	Default module/Merchant API/APIs/Exports | Exports	exports.read=Exports Read Only	 https://api.salla.dev/admin/v2
+200	POST	/exports/templates	Create Export Template	Default module/Merchant API/APIs/Exports | Exports	exports.read_write=Exports Read & Write	 https://api.salla.dev/admin/v2
+201	PUT	/exports/templates/{id}	Update Export Template	Default module/Merchant API/APIs/Exports | Exports	exports.read_write=Exports Read & Write	 https://api.salla.dev/admin/v2
+202	DELETE	/exports/templates/{template_id}	Delete Export Template	Default module/Merchant API/APIs/Exports | Exports	exports.read_write=Exports Read & Write	 https://api.salla.dev/admin/v2
+203	GET	/exports/columns	List Export Columns	Default module/Merchant API/APIs/Exports | Exports	exports.read=Exports Read Only	 https://api.salla.dev/admin/v2
+204	POST	/exports/customers	Export Customers	Default module/Merchant API/APIs/Exports | Exports	exports.read_write=Exports Read & Write	 https://api.salla.dev/admin/v2
+205	POST	/exports/custom-urls	Export Custom URLs	Default module/Merchant API/APIs/Exports | Custom URLs	exports.read_write=Exports Read & write	 https://api.salla.dev/admin/v2
+206	POST	/exports/products	Export Products	Default module/Merchant API/APIs/Exports | Exports	products.read_write=Products Read & Write	 https://api.salla.dev/admin/v2
+207	GET	/transactions	List Transactions	Default module/Merchant API/APIs/Transactions | Transactions	transactions.read=Transactions Read Only	 https://api.salla.dev/admin/v2
+208	POST	/transactions/{transaction_id}/print	Print Transaction Invoice	Default module/Merchant API/APIs/Transactions | Transactions	transactions.read_write=Transactions Read & Write	 https://api.salla.dev/admin/v2
+209	GET	/transactions/{transaction_id}	Transaction Details	Default module/Merchant API/APIs/Transactions | Transactions	transactions.read=Transactions Read Only	 https://api.salla.dev/admin/v2
+210	PUT	/transactions/{transaction_id}	Update Transaction	Default module/Merchant API/APIs/Transactions | Transactions	transactions.read_write=Transactions Read & Write	 https://api.salla.dev/admin/v2
+211	GET	/payment/methods	Available Payment Methods	Default module/Merchant API/APIs/Payments | Payments	payments.read=Payments Read Only	 https://api.salla.dev/admin/v2
+212	GET	/payment/banks	List Banks	Default module/Merchant API/APIs/Payments | Payments	payments.read=Payments Read Only	 https://api.salla.dev/admin/v2
+213	GET	/payment/banks/{bank_id}	Payment Bank Details	Default module/Merchant API/APIs/Payments | Payments	payments.read=Payments Read Only	 https://api.salla.dev/admin/v2
+214	POST	/currencies	Activate Currencies	Default module/Merchant API/APIs/Currencies | Currencies	metadata.read=Metadata Read Only	 https://api.salla.dev/admin/v2
+215	GET	/currencies	List Currencies	Default module/Merchant API/APIs/Currencies | Currencies	metadata.read=Metadata Read Only	 https://api.salla.dev/admin/v2
+216	GET	/currencies/available	List Available Currencies	Default module/Merchant API/APIs/Currencies | Currencies	metadata.read=Metadata Read Only	 https://api.salla.dev/admin/v2
+217	GET	/oauth2/user/info	User Information Details	Default module/Merchant API/APIs/Merchant | Store		 https://api.salla.dev/admin/v2
+218	GET	/store/info	Store Information	Default module/Merchant API/APIs/Merchant | Store		 https://api.salla.dev/admin/v2
+219	POST	/taxes	Create Tax	Default module/Merchant API/APIs/Taxes | Taxes	taxes.read_write=Taxes Read & Write	 https://api.salla.dev/admin/v2
+220	GET	/taxes	List Taxes	Default module/Merchant API/APIs/Taxes | Taxes	taxes.read=Taxes Read Only	 https://api.salla.dev/admin/v2
+221	GET	/taxes/{tax}	Tax Details	Default module/Merchant API/APIs/Taxes | Taxes	taxes.read=Taxes Read Only	 https://api.salla.dev/admin/v2
+222	PUT	/taxes/{tax}	Update Tax	Default module/Merchant API/APIs/Taxes | Taxes	taxes.read_write=Taxes Read & Write	 https://api.salla.dev/admin/v2
+223	DELETE	/taxes/{tax}	Delete Tax	Default module/Merchant API/APIs/Taxes | Taxes	taxes.read_write=Taxes Read & Write	 https://api.salla.dev/admin/v2
+224	GET	/seo	List SEO Settings	Default module/Merchant API/APIs/SEO | SEO	metadata.read=Metadata Read Only	 https://api.salla.dev/admin/v2
+225	PUT	/seo	Update SEO Settings	Default module/Merchant API/APIs/SEO | SEO	metadata.read_write=Metadata Read & Write	 https://api.salla.dev/admin/v2
+226	GET	/dns-records	List DNS Records	Default module/Merchant API/APIs/DNS Records | DNS Records		 https://api.salla.dev/admin/v2
+227	POST	/dns-records	Create DNS Record	Default module/Merchant API/APIs/DNS Records | DNS Records		 https://api.salla.dev/admin/v2
+228	DELETE	/dns-records/{dns_id}	Delete DNS Record	Default module/Merchant API/APIs/DNS Records | DNS Records		 https://api.salla.dev/admin/v2
+229	POST	/languages	Add Language	Default module/Merchant API/APIs/Languages | Languages	metadata.read_write=Metadata Read & Write	 https://api.salla.dev/admin/v2
+230	GET	/languages	List Languages	Default module/Merchant API/APIs/Languages | Languages	metadata.read=Metadata Read Only	 https://api.salla.dev/admin/v2
+231	PUT	/languages/{locale}	Update Language	Default module/Merchant API/APIs/Languages | Languages	metadata.read_write=Metadata Read & Write	 https://api.salla.dev/admin/v2
+232	GET	/users	List Employees	Default module/Merchant API/APIs/Employees | Employees		 https://api.salla.dev/admin/v2
+233	POST	/advertisements	Create Advertisement	Default module/Merchant API/APIs/Advertisements | Advertisements	marketing.read_write=Marketing Read & Write	 https://api.salla.dev/admin/v2
+234	GET	/advertisements	List Advertisements	Default module/Merchant API/APIs/Advertisements | Advertisements	marketing.read=Marketing Read Only	 https://api.salla.dev/admin/v2
+235	GET	/advertisements/{advertisements_id}	Advertisement Details	Default module/Merchant API/APIs/Advertisements | Advertisements	marketing.read=Marketing Read Only	 https://api.salla.dev/admin/v2
+236	PUT	/advertisements/{advertisements_id}	Update Advertisement	Default module/Merchant API/APIs/Advertisements | Advertisements	marketing.read_write=Marketing Read & Write	 https://api.salla.dev/admin/v2
+237	DELETE	/advertisements/{advertisements_id}	Delete Advertisement	Default module/Merchant API/APIs/Advertisements | Advertisements	marketing.read_write=Marketing Read & Write	 https://api.salla.dev/admin/v2
+238	POST	/webhooks/subscribe	Register Webhook	Default module/Merchant API/APIs/Webhooks | Webhooks	webhooks.read_write=Webhooks Read & Write	 https://api.salla.dev/admin/v2
+239	PUT	/webhooks/{id}	Update Webhook	Default module/Merchant API/APIs/Webhooks | Webhooks	webhooks.read_write=Webhooks Read & Write	 https://api.salla.dev/admin/v2
+240	GET	/webhooks	List Active Webhooks	Default module/Merchant API/APIs/Webhooks | Webhooks	webhooks.read=Webhooks Read Only	 https://api.salla.dev/admin/v2
+241	GET	/webhooks/events	List Events	Default module/Merchant API/APIs/Webhooks | Webhooks	webhooks.read=Webhooks Read Only	 https://api.salla.dev/admin/v2
+242	DELETE	/webhooks/unsubscribe	Deactivate Webhook	Default module/Merchant API/APIs/Webhooks | Webhooks	webhooks.read_write=Webhooks Read & Write	 https://api.salla.dev/admin/v2
+243	POST	/custom-urls/import	Import Custom URLs	Default module/Merchant API/APIs/Custom URLs | Custom URLs		 https://api.salla.dev/admin/v2
+244	GET	/customers/loyalty/points	Customer Loyalty Points	Default module/Merchant API/APIs/Loyalty Points | Loyality Points	customers.read=Customers Read Only	 https://api.salla.dev/admin/v2
+245	POST	/customers/loyalty/points	Update Customer Loyalty Points	Default module/Merchant API/APIs/Loyalty Points | Loyality Points	customers.read_write=Customers Read & write	 https://api.salla.dev/admin/v2
+246	GET	/branches/delivery-zones	List Branch Delivery Zones	Default module/Merchant API/APIs/Branch Delivery Zones | Branch Delivery Zones	branches.read=Branchs Read	 https://api.salla.dev/admin/v2
+247	GET	/branches/delivery-zones/{zone_id}	Branch Delivery Zone Details	Default module/Merchant API/APIs/Branch Delivery Zones | Branch Delivery Zones	branches.read=Branchs Read	 https://api.salla.dev/admin/v2
+248	POST	/branches/delivery-zones	Create Branch Delivery Zone	Default module/Merchant API/APIs/Branch Delivery Zones | Branch Delivery Zones		 https://api.salla.dev/admin/v2
+249	PUT	/branches/delivery-zones/{zone_id}	Update Branch Delivery Zone	Default module/Merchant API/APIs/Branch Delivery Zones | Branch Delivery Zones		 https://api.salla.dev/admin/v2
+250	DELETE	/branches/delivery-zones/{zone_id}	Delete Branch Delivery Zone	Default module/Merchant API/APIs/Branch Delivery Zones | Branch Delivery Zones		 https://api.salla.dev/admin/v2
+251	POST	/exchange-authority/v1/introspect	Token Introspect	Embedded SDK/Endpoints		 https://api.salla.dev/admin/v2
+252	POST	/exchange-authority/v1/introspect	Token Introspect	Embedded SDK/Report Builder/APIs		 https://api.salla.dev/admin/v2
+253	POST	/{id}/guest	Save guest cart data	Checkout APIs/Cart | Cart | Cart V2		 https://api.salla.dev/admin/v2
+254	POST	/generate	Generate cart	Checkout APIs/Cart | Cart | Cart V2		 https://api.salla.dev/admin/v2
+255	GET	/{id}	Get cart	Checkout APIs/Cart | Cart | Cart V2		 https://api.salla.dev/admin/v2
+256	POST	/{id}/assign	Assign cart to Customer	Checkout APIs/Cart | Cart | Cart V2		 https://api.salla.dev/admin/v2
+257	POST	/{id}/coupon	Apply cart coupon	Checkout APIs/Cart | Cart | Cart V2		 https://api.salla.dev/admin/v2
+258	DELETE	/{id}/coupon	Remove cart coupon	Checkout APIs/Cart | Cart | Cart V2		 https://api.salla.dev/admin/v2
+259	POST	/{id}/items	Add cart item	Checkout APIs/Cart Items | Cart Items | Cart V2 Items		 https://api.salla.dev/admin/v2
+260	PATCH	/{id}/items/{item}	Update cart item	Checkout APIs/Cart Items | Cart Items | Cart V2 Items		 https://api.salla.dev/admin/v2
+261	DELETE	/{id}/items/{item}	Delete cart item	Checkout APIs/Cart Items | Cart Items | Cart V2 Items		 https://api.salla.dev/admin/v2
+262	GET	/apps/{app_id}/settings	App Setting Details	Partner Apps APIs/Settings | Settings		 https://api.salla.dev/admin/v2
+263	POST	/apps/{app_id}/settings	Update App Settings	Partner Apps APIs/Settings | Settings		 https://api.salla.dev/admin/v2
+264	GET	/apps/{app_id}/subscriptions	App Subscription Details	Partner Apps APIs/Subscriptions | Subscriptions		 https://api.salla.dev/admin/v2
+265	POST	/apps/subscriptions/{subscription_id}/renew	Subscription Renew	Partner Apps APIs/Subscriptions | Subscriptions		 https://api.salla.dev/admin/v2
+266	POST	/apps/balance	Update Subscription Balance	Partner Apps APIs/Subscriptions | Subscriptions		 https://api.salla.dev/admin/v2
+267	POST	/shipments	Create Shipment	Default module/Shipping and Fulfilment API/APIs/Shipments | Shipments	shipping.read_write=Shipping Read & Write	 https://api.salla.dev/admin/v2
+268	GET	/shipments	List Shipments	Default module/Shipping and Fulfilment API/APIs/Shipments | Shipments	shipping.read=Shipping Read Only	 https://api.salla.dev/admin/v2
+269	PUT	/shipments/{shipment_id}	Update Shipment Details	Default module/Shipping and Fulfilment API/APIs/Shipments | Shipments	shipping.read_write=Shipping Read & Write	 https://api.salla.dev/admin/v2
+270	GET	/shipments/{shipment_id}	Shipment Details	Default module/Shipping and Fulfilment API/APIs/Shipments | Shipments	shipping.read=Shipping Read Only	 https://api.salla.dev/admin/v2
+271	POST	/shipments/{shipment_id}/cancel	Cancel Shipments	Default module/Shipping and Fulfilment API/APIs/Shipments | Shipments	shipping.read_write=Shipping Read & Write	 https://api.salla.dev/admin/v2
+272	POST	/shipments/{shipment_id}/return	Return Shipments	Default module/Shipping and Fulfilment API/APIs/Shipments | Shipments	shipping.read_write=Shipping Read & Write	 https://api.salla.dev/admin/v2
+273	GET	/shipments/{shipment_id}/tracking	Shipment Tracking	Default module/Shipping and Fulfilment API/APIs/Shipments | Shipments	shipping.read=Shipping Read Only	 https://api.salla.dev/admin/v2
+274	GET	/shipping/companies/	List Shipping Companies	Default module/Shipping and Fulfilment API/APIs/Shipping Companies | Shipping Companies	shipping.read=Shipping Read Only	 https://api.salla.dev/admin/v2
+275	GET	/shipping/companies/{company_id}	Shipping Company Details	Default module/Shipping and Fulfilment API/APIs/Shipping Companies | Shipping Companies	shipping.read=Shipping Read Only	 https://api.salla.dev/admin/v2
+276	GET	/shipping/routes	  Routes List	Default module/Shipping and Fulfilment API/APIs/Shipping Routes | Shipping Routes	shipping.read=Shipping Read	 https://api.salla.dev/admin/v2
+277	GET	/shipping/routes/{id}	Route Details	Default module/Shipping and Fulfilment API/APIs/Shipping Routes | Shipping Routes	shipping.read=Shipping Read	 https://api.salla.dev/admin/v2
+278	POST	/shipping/routes	Create Route	Default module/Shipping and Fulfilment API/APIs/Shipping Routes | Shipping Routes	shipping.read_write=Shipping Read & Write	 https://api.salla.dev/admin/v2
+279	PATCH	/shipping/routes/{id}	Update Route	Default module/Shipping and Fulfilment API/APIs/Shipping Routes | Shipping Routes	shipping.read_write=Shipping Read & Write	 https://api.salla.dev/admin/v2
+280	PATCH	/shipping/routes/default	Default Route	Default module/Shipping and Fulfilment API/APIs/Shipping Routes | Shipping Routes	shipping.read_write=Shipping Read & Write	 https://api.salla.dev/admin/v2
+281	DELETE	/shipping/routes/{id}	Delete Route	Default module/Shipping and Fulfilment API/APIs/Shipping Routes | Shipping Routes	shipping.read_write=Shipping Read & Write	 https://api.salla.dev/admin/v2
+282	POST	/admin/v2/subscriptions/{subscription_id}/charge	Charge Subscription	Recurring Payment Apps/Docs/APIs	subscriptions.read_write=Subscriptions Read & Write	 https://api.salla.dev/admin/v2
+283	DELETE	/admin/v2/subscriptions/{subscription_id}	Cancel Subscription	Recurring Payment Apps/Docs/APIs	subscriptions.read_write=Subscriptions Read & Write	 https://api.salla.dev/admin/v2
+284	PUT	/admin/v2/subscriptions/{subscription_id}	Update Payment Method	Recurring Payment Apps/Docs/APIs		 https://api.salla.dev/admin/v2

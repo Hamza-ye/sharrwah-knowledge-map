@@ -1,0 +1,19 @@
+{
+ "n": 16,
+ "url": "https://help.salla.sa/article/-الربط-مع-stc-pay-ضمن-مدفوعات-سلة/h2u9kwhe0r2olfld1ks9e74k",
+ "dir": "items/016-help.salla.sa",
+ "fetched_at": "2026-10-10T23:51:35Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.salla.sa/article/-الربط-مع-stc-pay-ضمن-مدفوعات-سلة/h2u9kwhe0r2olfld1ks9e74k",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 131839,
+ "cited_in": [
+  "SA-S-0128",
+  "SA-S-0129"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "cb8b651bffd2f36e0febe4098c369cbc035631d3ecbefee2016bd7af0915aa7d",
+ "raw_ext": "html"
+}

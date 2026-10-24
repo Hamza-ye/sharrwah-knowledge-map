@@ -1,0 +1,20 @@
+{
+ "n": 97,
+ "url": "https://www.bigcommerce.com/apps/",
+ "dir": "items/097-bigcommerce.com",
+ "fetched_at": "2026-10-12T04:20:46Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.bigcommerce.com/apps/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 56996,
+ "cited_in": [
+  "BC-S-0013",
+  "BC-S-0161",
+  "BC-S-0319"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "705edd3591f30c411041aa51ea46405025b67f1b6a03c89bd330586408dc8afd",
+ "raw_ext": "html"
+}

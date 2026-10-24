@@ -1,0 +1,488 @@
+Last Updated: January 26, 2026
+
+Effective as of: January 26, 2026
+
+SERVICE TERMS – SHOPIFY MANAGED MARKETS
+
+ 
+
+These Service Terms – Shopify Managed Markets (these “Service Terms”) constitute a legal agreement between Global-e and Merchant. As used in these Service Terms, “we”, “us”, “our” or “Global-e” means the contracting party of the Global-e group (as defined in Section 12 hereof) providing the Managed Markets Services as defined herein. “you”, “your” “Merchant” or “Shopify User” means the individual (if the business is a sole proprietorship) or the business (if signing up on behalf of a legal entity) that has qualified for and uses the Managed Markets Services. “Shopify” means Shopify Inc. or the applicable Shopify contracting party (as defined in the Shopify Terms of Service (“Shopify Platform Terms”) available here). Each of Global-e and Merchant may be referred to as a “Party” and collectively, the “Parties” for the purpose of these Service Terms.
+
+ 
+
+By activating or using Managed Markets Services in any way, you agree to be bound by these Service Terms. You should review the Terms of Sale and Privacy Policy which will govern the transactions through the Managed Market Services between us, as the merchant of record, and the customer. Be sure to occasionally check back for updates.
+
+ 
+
+These Service Terms are in addition to and should be read together with the Shopify Payments Terms of Service (United States) (available here) (“Shopify Payments Terms”), the Shopify Protect for Shopify Payments Terms of Service (available here) (“Shopify Protect Terms”) and any other terms and conditions that govern the use of any services offered by Shopify through which Managed Markets Services are made available (the “Shopify Terms”).
+
+ 
+
+By accepting these Service Terms, you are also accepting and agreeing to be bound by Global-e’s Acceptable Use Policy, Global-e Data Protection Addendum and Privacy Policy.
+
+ 
+
+We reserve the right to update and change these Service Terms from time to time by posting updates and changes here. You are advised to regularly check these Service Terms for any updates or changes that may impact you. If you do not accept such changes, you must cease using the Managed Markets Services.
+
+ 
+
+SERVICES; ONBOARDING
+
+ 
+
+                  1.1.         The Managed Markets offering and services performed pursuant to these Service Terms as fully set out herein (the “Managed Markets Services” or “Services”) will be enabled after you complete the activation process for Managed Markets on Shopify’s commerce platform that is accessible by you through your Shopify Admin (the “Shopify Platform”). You must follow and complete all steps stated therein. Shopify will share certain information about your business with us to enable us to provide the Managed Markets Services to us, such as your business name, address, fulfillment locations and product catalog. As part of the Managed Markets Services, we will act as the ‘merchant of record’, and subject to the terms hereof, will be the exporter of record (i.e. will be responsible for the process and compliance of the export of goods, including in front of the customs authorities).
+
+ 
+
+                  1.2.         Shopify Payments. Access to and use of the Managed Markets Services requires you to successfully enable Shopify Payments in the United States (including, without limitation, completing all onboarding and identity verification requirements for Shopify Payments) and to maintain your Shopify Payments account in good standing at all times. You must process all payments for orders placed through the Managed Markets Services exclusively through Shopify Payments. If at any time your Shopify Payments account is disabled, determined to not be in good standing, or otherwise rendered unavailable, your access to the Managed Markets Services will also be suspended and/or terminated.
+
+ 
+
+                  1.3.         Global-e, acting as the merchant of record, will be the legal seller of products that are made available for cross-border sale on your online store hosted by Shopify (“Products” and "Store" respectively) directly to individual customers (each, a “Shopper” and collectively, the “Shoppers”) who have initiated a transaction in respect of Products on your Store and who desire to have the purchased Products delivered to a designated address located outside of the United States (“Destination(s)”). Upon completing the activation process for Managed Markets Services, Destinations supported by Managed Markets Services may be automatically enabled on your Store. You can manually change the Destinations operated by the Managed Markets Services through the Shopify Platform at any time. The Shopper will be the “importer of record” of the purchased Products and we will generate the required documents to properly reflect that.
+
+ 
+
+SETUP AND ACTIVATION; CONFIGURATIONS
+
+ 
+
+                  2.1.         Managed Markets Settings; API. You must activate and make such configurations required through the Shopify Platform before Managed Markets Services can be accessed and used. Global-e will not be obligated to render or perform any Managed Markets Services if Merchant fails to properly activate and enable Managed Markets and Shopify Payments on the Shopify Platform. You commit to having and making available the necessary resources required to achieve the above objectives in a timely manner. You will be solely responsible (at your own cost and labor) for the performance and the availability of your Store, as well as continually reviewing and updating all Store settings required to enable Managed Markets Services, including the appropriate configurations and settings of the Store and any systems and telecommunications facilities necessary to enable you to operate your Store and receive Managed Markets Services. In certain cases you may be provided with an API to one or more approved 3rd party logistics providers (the “Supported External Fulfillment API”), allowing you to perform certain functions described in these Service Terms automatically through the Supported External Fulfillment API.
+
+ 
+
+                  2.2.         Business Rules and Shipping Policies. Before using Managed Markets Services, you are responsible for configuring, reviewing and signing off on the Business Rules and the Shipping Policies. “Business Rules” refers to the settings, configurations, rules and other proposition selections made through the Shopify Platform to determine the manner by which products will be priced and sold to a Destination. “Shipping Policies” refer to the selection of shipping services through the Shopify Platform, including the applicable Shipping Rates available for your merchant offering and the rates and fees charged to your Shoppers on checkout. Neither Global-e nor Shopify will be responsible or liable if you fail to follow the requirements of this section or for any misconfiguration of the Business Rules or the Shipping Policies. You are responsible for reviewing and making any necessary updates to your Business Rules and Shipping Policies.
+
+ 
+
+                  2.3.         Product Pricing. The price of Products displayed on the Store and paid by the Shopper will be rendered based on the rules and requirements set forth on the Shopify Platform, including the applicable FX rate (including current rate and conversion fee) which will be automatically included in the Product price if using dynamic exchange rate conversions (the “Product Sale Price”).
+
+ 
+
+                                2.3.1.         When Managed Pricing is enabled – “Managed Pricing” refers to a feature that automatically adjusts the Product Sale Prices and/or shipping fees presented to Shoppers for a given Destination (either in localized presentment currency or not) to account for applicable FX fees, Managed Markets fees, Taxes and rounding adjustments. When enabled, the Product Sale Prices will be determined by Managed Markets and you will be required to and are responsible for setting the amount (in your designated payout currency) you wish to be paid to you for the sale of each Product, subject to the reconciliation and settlement process described in Section 4. You may choose to override the Product Sale Price or shipping fees that Managed Markets set for a given Product (“Price Override”), however, the reconciliation and settlement process for Managed Pricing described in Section 4 will continue to apply. You acknowledge that implementing a Price Override for a given Product also overrides any amount you previously indicated you wished to be paid to you for a sale of such Product. You are solely responsible for any impact to your settlements that result from Price Overrides.    
+
+ 
+
+2.3.2      When Managed Pricing is disabled– If Managed Pricing is disabled for a given Destination, you will be required to and are responsible for manually setting the Products Sale Price and shipping fees that will be presented to Shopper through the Shopify Platform, either by selecting a price in the currency of the Shopper or by configuring pricing rules that apply to the base price of a Product and the associated shipping fee.
+
+ 
+
+                  2.4.         Shopper Shipping Charges. Using the Shopify Platform, you will be required to set the Shipping Policies including the shipping fees which will be charged to each Shopper on checkout. When Managed Pricing is enabled, your shipping fees may be automatically adjusted by Managed Markets as described in Section 2.3.1. As between you, Shopify and Global-e, you will be solely responsible and liable for any and all shipping charges, costs, fees or surcharges associated with the delivery (including customs clearance) of a Customer Order, and any difference between such amounts and the amount configured to be charged to the Shopper pursuant to the Shipping Policies will constitute a Permitted Deduction and billed to you as part of the reconciliation process.
+
+ 
+
+                  2.5.         Managed Markets will handle the operational management and contracting of any carrier engaged to provide shipping, delivery and customs clearance services for Managed Markets Services (each, a “Contracted Carrier”). The availability of, and the services provided by, each Contracted Carrier for Managed Markets Services may vary, and are subject to periodic changes and updates. We will reconcile with these Contracted Carriers any fees and charges related to the contracted services. Specifically, you agree to the terms of service of DHL eCS as a Contracted Carrier which are available here. If a carrier which is not a Contracted Carrier is used, certain features of Managed Markets Services will be unavailable, including the Taxes Guarantee, generation of export documentation, and claims for Products lost-in-transit, and we will not act as the exporter of record of that shipment.
+
+ 
+
+                  2.6.         You will be able to access and receive, through the Shopify Platform, the relevant details of the eligible consignments shipped, including any differences in shipping charges related to the actual chargeable measurements (e.g. shipping dimension and weight) based on the then-applicable Shipping Rates. In the event of a difference (e.g. shortfall or excess) between (A) the Weights used by the system based on your inputs on the Shopify Platform to determine the estimated shipping cost of the consignments as stated in the order (the “Estimated Weights”), and (B) the Actual Chargeable Weights of the consignments based on the then-applicable Shipping Rates, such difference in amount between items (A) and (B) will be reconciled as follows: any amount owed to us (i.e. in the event that the Actual Chargeable Weights were greater than the Estimated Weights used) shall be deemed a Permitted Deduction or you will be invoiced for such difference. Any amount owed to you (i.e. in the event that the Estimated Weights were greater than the Actual Chargeable Weights) will be set-off by way of a credit for future shipping labels. For purposes hereof, “Weights” shall mean the applicable volumetric (dimensional) or dead-weight, as applicable, and “Actual Chargeable Weights” shall be based on the most accurate weight reported by the Contracted Carrier at the time of the report (i.e. based on Contracted Carrier’s reported weights or invoiced weight, and in the absence of both, the Estimated Weight used by the system).
+
+ 
+
+                  2.7.         For the avoidance of doubt, neither Global-e nor Shopify provides any guarantee in the accuracy of the shipping charges based on the Estimated Weights that are displayed to your Shoppers on checkout. You are responsible for ensuring that you enter accurate Weights of each Product on your Store on the Shopify Platform.
+
+ 
+
+ORDER CREATION AND MANAGEMENT; ORDER FULFILLMENT
+
+ 
+
+                  3.1.         Order Processing. Payment for all orders placed through the Managed Markets Services will be processed through Shopify Payments. Your Store cart (“Cart”) will be processed for payment authorization through the Shopper’s selected payment method. Subject to successful processing, an order will be created on your Store (“Customer Order”). Global-e will be relying on the data received from the Shopify Platform with respect to the accuracy of the Cart content and the Customer Order and Product data contained therein. Orders may be cancelled for reasons that include, but are not limited to, a Shopper’s payment being declined, actual or suspected fraud or other reasonably determined circumstances.
+
+ 
+
+                  3.2.         Taxes and Duties. Based on the Product, Customer Order and customer shipping information received at the time of checkout, Global-e will estimate the taxes (such as import taxes, sales taxes, value added tax or similar taxes), customs duties or other charges or fees that may be imposed on the order (collectively, the “Taxes”), and apply such Taxes. When Customer Orders are delivered by a Contracted Carrier, we will guarantee the amount of Taxes to you and the Shopper, and be responsible for paying such Taxes to the relevant authorities or brokers as long as Taxes were paid on checkout by the Shopper or already included as part of the adjusted Product Sale Price and/or shipping fees (the “Taxes Guarantee”).
+
+ 
+
+                  3.3.         Order Fulfillment. You will be responsible for fulfilling the order, including picking and packaging the Products underlying each Customer Order, and including with the order all the required shipping and customs documents made available through the Shopify Platform or the Supported External Fulfillment API, as applicable. You may amend a Customer Order, as well as cancel it in full and authorize a refund. Order Editing will be possible until the order is partially or fully fulfilled or at first successful label purchase.
+
+ 
+
+Customer Orders will be prepared for delivery to the Shopper by way of applying all necessary international shipment documents (e.g. shipping label, export documents and commercial/VAT invoice), as made available to you through the Shopify Platform or Supported External Fulfillment API, as applicable (such documents, “International Shipping Documents”). You may not use any documents other than the International Shipping Documents made available to you through the Shopify Platform or the Supported External Fulfillment API, unless such documents are separately approved by Global-e. You will process the Customer Orders, which will include the International Shipping Documents being produced by your personnel, updating the status of the processed Customer Order and making the processed Customer Order available for dispatch and pickup for delivery straight to the Shopper. Customer Orders fulfilled in multiple parcels may incur additional shipping charges. If and when you use other documents which are not International Shipping Documents as defined in this clause, or using shipping providers that are not Contracted Carriers, you will bear all responsibilities (and costs) for such shipment, including for any export procedures and any shipping or customs documentation.
+
+ 
+
+                  3.4.         Shipping and Delivery; Rates. No carrier other than Contracted Carriers may be used for shipping and delivery of fulfilled Customer Orders through Managed Markets Services. Global-e will manage the shipping and delivery performed by Contracted Carriers, including but not limited to managing lost or damaged Product disputes and customs clearance in supported Destinations, and will offer the Taxes Guarantee pursuant to Section ‎3.2. Estimates of your shipping and delivery costs, including all charges and fees of Contracted Carriers, are available to review for Managed Markets Services on the Shopify Platform (“Shipping Rates”). For certain Contracted Carriers, the Shipping Rates may be assigned based on your actual shipping volumes; provided that, the initial Shipping Rates will be assigned based on your historical shipping data prior to using Managed Markets Services (such date, the “Activation Date”), and such Shipping Rates as well as any additional shipping or accessorial fees and surcharges may be updated from time to time, and we will exert reasonable efforts to notify you in writing in advance of such changes taking effect. Where the Shipping Rates are assigned based on shipping volumes, the initial Shipping Rates will be re-assessed the quarter following the Activation Date, and thereafter every 12 months, using your actual shipping data, and new Shipping Rates may be assigned to you from time to time, in which such newly-assigned Shipping Rates will apply from that point onwards. We reserve the right to true-up any amounts if you should have been assigned a lower tier Shipping Rate and billed for the difference of any shipping costs, fees and charges under that lower tier Shipping Rate. We may waive or delay, at our sole discretion, our right to true-up any such amounts.
+
+ 
+
+                  3.5.         Merchant of Record. Subject to these Service Terms, Global-e will act as the ‘merchant of record’ for Customer Orders. To that end, once the order was created, and payment was made (which includes the use of any payment method available on Shopify Payments, including gift cards, mark-as-paid orders, and other manual payment methods), title to underlying products will transfer to Global-e, and momentarily thereafter the title will transfer from Global-e to the Shopper (such transfer of title shall be deemed to occur prior to the importation of the products into the Destination). You will be deemed to have sold the Product to Global-e and Global-e will be deemed to have subsequently sold the Product to the Shopper. Global-e’s then-current terms of sale (which are incorporated herein by reference) (“Terms of Sale”), will govern the sale transaction and will be presented to Shoppers on checkout along with Global-e privacy policy.
+
+ 
+
+                  3.6.         Lost in Transit. Subject to Section ‎3.4, the claims process for any loss or damage to Products during transit to the Shopper using a Contracted Carrier will be fully managed by the Managed Markets Services. The claim coverage amount subsequently awarded by such Contracted Carrier will be remitted to you, and the refund amount due to the Shopper in respect of such loss will be a Permitted Deduction and reimbursed to Global-e, all as part of the reconciliation process outlined herein. Global-e will not be liable or responsible for any loss or damage caused to Products while at your warehouse.
+
+ 
+
+                  3.7.         Undeliverable Packages. In the event that a Customer Order package cannot be delivered to a Shopper, you shall be responsible for any Undeliverable Fees incurred as a result of the Undeliverable Actions. “Undeliverable Actions” means those certain actions taken by a Contracted Carrier (as reasonably determined by Contracted Carrier in its discretion) to address an undeliverable Customer Order package, including but not limited to: (a) returning the undeliverable Customer Order package to its origin inventory address (“RTO”); (b) redirecting the undeliverable Customer Order package to an alternate address or destination; or (c) abandoning and destroying the undeliverable Customer Order package. “Undeliverable Fees” means any and all fees and expenses arising out or associated with the Undeliverable Actions. These Undeliverable Fees shall constitute an “Invoiced Amount” (as defined below). Notwithstanding the foregoing, in cases where DHLeCommerce is the Contracted Carrier and DHLeCommerce deems a Customer Order package located outside of Canada to be undeliverable, such package will be automatically abandoned and destroyed.
+
+ 
+
+                  3.8.         Cancellations. Shopper cancellations will be only in accordance with the terms and conditions under the applicable Terms of Sale. Customer Orders may also be cancelled by Global-e for reasons we determine are necessary at our discretion, including in cases of technical issues unrelated to us, if a Customer Order is determined to be fraudulent or where payment was declined by the Shopper’s bank or other circumstances reasonably determined and assessed by Global-e. Shopify may also cancel Customer Orders in its sole discretion.
+
+ 
+
+                  3.9.         Refunds. You will confirm, through the Shopify Platform, the eligibility of all or part of a Customer Order for refund and will authorize the amount eligible for refund, which will automatically trigger a conforming refund by Global-e to the Shopper through the same payment method and in the same currency used for such Customer Order. The refund amount you authorize, including any costs and charges for shipping, taxes, duties or other fees due to be refunded to Shopper or incurred in connection with such refund or return of items, will be regarded as a Permitted Deduction, unless such refund or any costs or charges are the direct result of our gross negligence or willful misconduct. For greater clarity, you will not receive a refund of any applicable fees owed for your use of the Managed Markets services in connection with an order being refunded, whether in full or in part.
+
+ 
+
+               3.10.         Chargebacks. All Chargebacks and associated costs, fees and charges imposed by the card issuer, payment provider or other authorized entity will be your cost, and such amounts will constitute a Permitted Deduction. Coverage for some chargebacks and associated costs, fees and charges may be available to you via Shopify Protect, as provided for in the Shopify Protect Terms.
+
+ 
+
+RECONCILIATION AND TRANSACTION SETTLEMENT
+
+ 
+
+                  4.1.         Settlement of all funds from your Managed Markets transactions will be managed through your Shopify Payments account, in accordance with these Service Terms, including with the Shopify Payments Terms. Funds will be settled to the account you’ve designated to receive payouts for Shopify Payments. You can refer to the Shopify Platform for information related to all Customer Orders, the applicable Product Sale Price and shipping information (including shipping and tax subsidies), and refunds made to Shoppers during the reconciliation period and manual adjustments (such as service gestures). The information communicated to you via the Shopify Platform with respect to your Managed Markets transactions will serve as the agreed basis for billing and reconciliation of funds between the Parties. You undertake to promptly review your Managed Markets transaction activity on the Shopify Platform and notify Shopify in case you have any concerns or disputes no later than 21 days following the date of the transaction relating to your concern or dispute.
+
+ 
+
+                  4.2.         Amounts settled to you for Managed Markets transactions will be net of all Permitted Deductions. Shipping fees and charges will be based upon the applicable Shipping Rates, and are considered “Invoiced Amounts” and billed to you (as part of the reconciliation process) separately from, and in addition to any Permitted Deductions. The basis for calculating any applicable percentage-based fee as a Permitted Deduction amount will be the applicable fee base for that fee (“Fee Base”), and is dependent on whether or not you have Managed Pricing enabled or not. When Managed Pricing is disabled as described in Section 2.3.2, the Fee Base will be the Total Order Value, where such “Total Order Value” equals the total Product Sale Price of all items purchased by the Shopper in a Customer Order, plus any associated shipping charges and Taxes paid by the Shopper. When Managed Pricing is enabled, most percentage-based fees will use the Total Order Value as the Fee Base, however, the FX fees and Managed Markets fees may be calculated on a Fee Base that excludes certain order components that Managed Markets deems necessary to provide the Managed Pricing service (such as applicable sales taxes or tip amounts (if any)). You can review the final calculated amount of each percentage-based fee for each Customer Order on the Shopify Platform. 
+
+ 
+
+“Permitted Deductions” mean any costs or fees incurred as a result of rendering the Managed Markets Services with respect to an applicable Customer Order, including if such costs or fees result from your instructions or approvals (e.g. subsidies), including but not limited to those related to (i) any applicable fees for the Managed Markets Services (as such fees are presented and are set out on the Shopify Platform, and if applicable any fees associated with, or result from the use of, Managed Pricing); (ii) applicable Taxes; (iii) all chargebacks; (iv) other fees, amounts or credits relating to returns, and refunds; (v) actual costs incurred as a result of foreign exchange variances arising due to shipment of Products (and capture) after the rate lock 30-day period expires, (vi) any other charges made to cover your financial liabilities owed to us during the term or post-termination of these Service Terms; (vii) any other costs, charges, fees and expenses incurred in connection with the Services, pursuant to these Service Terms, and that is not otherwise billed to you as an Invoiced Amount (viii) any costs, charges, fees or expenses set by the Shopify Platform, including pursuant to the Shopify Payments Terms, in connection with the Services.
+
+ 
+
+                  4.3.         Other or additional costs incurred by you through your use of the Managed Markets Services, other than Permitted Deductions, will be considered “Invoiced Amounts”. Invoiced Amounts will be billed to you through your regular Shopify invoice, and payable in accordance with the Shopify Platform Terms. Invoiced Amounts include, but is not limited to: (i) any charges relating to export, customs clearance, transport and delivery, in each case required to be paid as a result of shipping the Customer Order and any shortfalls between such amount and the amounts we were instructed to charge the Shopper, and (ii) Undeliverable Fees payable under Section 3.6.
+
+ 
+
+                  4.4.         You acknowledge that Global-e is expressly appointed as either yours or Shopify’s agent, as applicable, to represent either you or Shopify and act on your or Shopify’s behalf, as applicable, with respect to the payment of any money due to either you or Shopify. We hereby confirm (and confirm that Shopify has acknowledged and agreed) that the payment of money by you to Global-e for delivery to Shopify as contemplated by this Section 4 will satisfy and discharge your payor obligations to us and to Shopify with respect to money due hereunder in connection with the Managed Markets Services.
+
+ 
+
+MERCHANT UNDERTAKINGS
+
+ 
+
+                  5.1.         You represent, warrant and undertake that: (i) you have installed, enabled or activated (and if needed, properly configured) all the relevant and required Shopify Platform applications in order to receive and use the Managed Markets Services; (ii) you or if you are an entity, then the person entering in to these Service Terms on your behalf, are duly authorized and have full legal capacity to enter into these Service Terms; (iii) you will maintain at all times your Shopify Payments account in good standing in accordance with the Shopify Platform Terms, the Shopify Payments Terms and any other Shopify Terms applicable to you; (iv) you have, and will comply with, all necessary rights (including intellectual property rights), consents, licenses, and approvals for the sourcing and sale of products, including compliance with applicable safety, environmental, and ethical standards, and you will be solely responsible and liable for all product warranties and for addressing any product-related claims, including claims of infringement (intellectual or commercial rights), malfunction, safety, counterfeit, illegal origin, or hazardous materials; (v) you will bear all inventory risks, and will supply Global-e with Products to which you have title or other full legal right appropriate for the performance of these Service Terms and which operate and perform in accordance with the respective Product specifications (including with respect to the origin of the products or materials, authenticity and genuineness), and include proper product labeling, tags, manuals, brochures or certifications, as needed for the product; (vi) all intellectual property rights subsisting in or related to the Products are and will continue to be your or your licensors’ sole and exclusive property and you are not aware of any infringement in intellectual property rights subsisting in the Products; (vii) the sale of the Products to Shoppers in accordance with these Service Terms will not infringe any rights of any individual or entity worldwide; (viii) you will provide us only with data (by any means) or configuration applied by it (including, for example, the price list, Product catalogue, business rules configurations, etc.) that is accurate, complete and up-to-date and you will be solely and fully liable for any errors caused by the inaccuracy or incompleteness of such data; and (ix) you will not transmit data through the Managed Markets Services that you know or should know will corrupt or jeopardize our or the Shopify Platform’s computer systems and/or data.
+
+ 
+
+                  5.2.         You will be solely responsible for all Product warranties (including warranty of conformity and warranty for latent defects), and addressing any claims that Shoppers or any eligible third parties may have relating to the Product including, without limitation, any claims arising under consumer protection or similar legislation, and/or any claims that the Product infringes the intellectual property rights of any third party (including for being fake, counterfeit or of an unlawful or illegal origin). You will be solely responsible for the packaging of any items included in the Customer Order.
+
+ 
+
+                  5.3.         Each Party, or anyone acting on its behalf in connection with procuring, connecting, authorizing or otherwise operating the Managed Markets Services, has the full power and authority to execute, deliver and perform this engagement under these Service Terms. These Service Terms are valid, binding and enforceable against each Party in accordance with its terms and no provision requiring a Party’s performance is in conflict with obligations under any constitutional document, charter or any other agreement (of whatever form or subject) to which each Party is a party or by which such Party is bound. Each Party is duly organized, authorized and in good standing under the laws of the country, region or state of its organization and is duly authorized to do business in all other states, regions or countries in which its business makes such authorization necessary or required. In addition, the person enabling, performing the onboarding, or any other pre-service setup of the Managed Market Services and thus consenting and signing up for the Managed Markets Services will be a person who is authorized to do so and will be the corresponding person in connection with the Managed Markets Services. You are liable and responsible for ensuring that the person’s name and information are true and correct.
+
+ 
+
+                  5.4.         You must have and maintain general/public liability insurance (including product liability) for a minimum amount appropriate for your business and scope of trade, for each occurrence, with insurers of good repute, at your own cost, such insurance to be effective and valid in all Destinations to which the Products are sold hereunder.
+
+ 
+
+SERVICE LIMITATIONS
+
+ 
+
+                  6.1.         Global-e will make best efforts such that each sale, export and if applicable, delivery, of Products to a Destination comply with the Applicable Laws pertaining to cross-border personal-import of such Products. “Applicable Law” means all federal, state, and local laws and regulations, directives and any other relevant authorities, guidance and requirements applicable to the Parties’ performance under these Service Terms, including, but not limited to, as may be applicable, securities laws and regulations, privacy and data protection laws and regulations, AML, Office of Foreign Assets Control (“OFAC”), and applicable anti-bribery and anti-corruption laws including the Foreign Corrupt Practices Act.
+
+ 
+
+                  6.2.         Classification and Product Restrictions. Your product catalog must be at all times updated, accurate and complete, containing all product information, and Global-e may rely on such information, at Merchant’s sole liability, when assigning HS codes; tax, duty and ‘de-minimis’ thresholds (or any other determination required for compliant taxes and duties estimation); or determining the product sellability and the compliance of such products with applicable personal import regulations. Global-e may reject or refuse to accept any products, catalogs or Customer Orders that do not comply with these requirements. Global-e will exercise its best effort judgment when determining the sellability of a product, and you will not have any claim in relation to such determination or its consequences. The list of restricted products applicable to the Managed Markets Service is in addition to any restricted or prohibited products or businesses under the Shopify Payments Terms.
+
+ 
+
+                  6.3.         No Pick-Pack or Parcel Validation. We will not be responsible for the pick-pack of Products or Customer Orders, and we will not open any parcel, package or otherwise verify its content or the inclusion of all or some items, and we will rely solely on you and your reports through the Shopify Platform in this regard.
+
+ 
+
+                  6.4.         Dangerous Goods. The sale, export or delivery of Dangerous Goods (as such term is commonly defined by the international carriers or applicable legislation) using Managed Markets Services is prohibited, and you will be fully and solely liable in the event that a Product classified as Dangerous Goods was included or contained in a parcel.
+
+ 
+
+TERMINATION; CONSEQUENCES OF TERMINATION
+
+ 
+
+                  7.1.         You may terminate these Service Terms and the Managed Markets Services hereunder at any time by following the instructions in the Managed Markets section of your Shopify Admin. Please note that in case of termination under this Section 7.1, you must take all action in preparation of such effective date of termination including, without limitation, assuming responsibility and having a solution in place to handle any Shopper or Customer Order issues. Since we operate under these Service Terms as ‘merchant-of-record’, you will indemnify Global-e (and the Shopify Platform if applicable) and hold Global-e harmless for any Shopper claim or related claims associated with such transition of service from Global-e to you.
+
+ 
+
+                  7.2.         Each Party shall have the right to terminate these Service Terms at any time, by written notice to the other Party, with immediate effect, in any of the following events: (i) winding-up, dissolution or reorganization proceedings shall be commenced with respect to the other Party, provided that if such proceedings shall be rescinded within thirty (30) days of their commencement, such notice of termination shall have no effect; (ii) the other Party shall substantially cease to carry on business; (iii) a substantial part of the other Party's assets shall be attached or levied by a court or another official agency, provided that if such attachment or levy shall be removed within thirty (30) days, such notice of termination shall have no effect; or (iv) the other Party shall be in material breach of any of its material obligations under these Service Terms and such breach shall not be cured within thirty (30) days after receiving a written notice from the other Party, specifying the breach and demanding its cessation.
+
+ 
+
+                  7.3.         Upon expiration or effective date of termination of these Service Terms for any reason, we will cease to provide the Managed Markets Services and will disable any technology (including APIs) related to the performance of Managed Markets Services, and all rights or permissions granted hereunder shall terminate. After expiration or termination of these Service Terms, you may not use any information, data or document provided to you, or was obtained or accessed by you, solely in connection with or through the Services during the term of these Service Terms, except for storefront, order and Shopper data created or processed by Global-e while performing the Services.
+
+ 
+
+                  7.4.         All sections of these Service Terms that by their terms should survive expiration or earlier termination of these Service Terms shall so survive in accordance with their terms.
+
+ 
+
+INTELLECTUAL PROPERTY
+
+ 
+
+                  8.1.         Each Party retains all intellectual property rights to anything developed by such Party that is provided to, accessed by, or used by, the other Party under the Service Terms. Nothing in these Service Terms shall be construed as granting or conferring upon either Party, whether express or implied, any rights (including all intellectual property rights) not expressly granted to the other Party herein, all of which shall be retained by the first Party. The use by a Party of marks, logos or trademarks (“Marks”), whether registered or not, does not entail any transfer of ownership, rights or copyrights.
+
+ 
+
+                  8.2.         Neither Party shall duplicate, alter or modify, access source code, make derivative works, make public performance or publicly display the technology underlying the Managed Markets Services or the Store, respectively.
+
+ 
+
+                  8.3.         Nothing contained in these Service Terms shall restrict Global-e (or any of its affiliates) or the Shopify Platform from offering and using our respective technologies or know-how or any other intellectual property for the purpose of providing services similar to the Managed Markets Services to any other third party.
+
+ 
+
+CONFIDENTIALITY
+
+ 
+
+                  9.1.         The Parties undertake to use the other Party’s Confidential Information solely as necessary for performing its obligations under the Service Terms and not to disclose Confidential Information to any third party without the other Party’s written consent. "Confidential Information" means any information, in whatever form, disclosed or provided by one Party to the other Party (“Receiving Party”) in the context of the Service Terms that is not non-confidential information. Non-confidential information means any information which (a) is or becomes generally available to the public other than as the result of a disclosure by the Receiving Party; (b) the Receiving Party can show that it already had in its possession before it was received; (c) information which the Receiving Party is obliged to provide in accordance with any Applicable Laws, court order or decision by a governmental authority; or (d) information which the Receiving Party has received from a third party without being bound by confidentiality in relation to it. Confidential Information also refers to third party information of technical, commercial or other nature unless there are objective and reasonable grounds to assume that such information is non-confidential. This provision applies to any information relating to third parties that you obtain when using the Managed Markets Services, and where the dissemination of the above mentioned information is not desired by third parties. Receiving Party may share Confidential Information with subcontractors, advisors and other companies within its group where necessary for the provision of the Managed Markets Services or the performance of these Service Terms provided that such parties are subject to confidentiality obligations corresponding to those under the Service Terms.
+
+ 
+
+                  9.2.         Each Party agrees that monetary damages would be inadequate to compensate the other for breach or threatened breach of any provision of this Section. Accordingly, in addition to any other remedies available at law or in equity, the injured party will be entitled to seek specific performance or injunctive relief (as appropriate) as a remedy for any breach or threatened breach thereof.
+
+ 
+
+LIMITATION OF LIABILITY; INDEMNIFICATION
+
+ 
+
+               10.1.         Disclaimer. Except to the extent provided otherwise in these Service Terms, the Managed Markets Services and other items made available by Global-e are provided on an "as is" and "as available" basis, and all express, implied and statutory warranties and conditions (including without limitation any implied warranties or conditions of merchantability, satisfactory quality, fitness for a particular purpose, non-infringement, or quality of service, or that otherwise arise from a course of performance or usage of trade) are hereby disclaimed. Except to the extent provided otherwise in these Service Terms, Global-e does not make any representation, warranty, guarantee or condition regarding the effectiveness, usefulness, reliability, completeness, or quality of the Managed Markets Services or such other items, services or that the provision or use thereof will be uninterrupted, secure, error-free, or will otherwise generate revenue or meet your needs.
+
+ 
+
+               10.2.         LIMITATION OF LIABILITY. IN NO EVENT WILL WE, SHOPIFY OR ANY OF OUR RESPECTIVE AFFILIATES BE LIABLE UNDER, OR OTHERWISE IN CONNECTION WITH, THESE SERVICE TERMS FOR: (A) ANY INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES, (B) ANY LOSS OF PROFITS, ANTICIPATED SAVINGS, BUSINESS, OR REVENUE, (C) ANY LOSS OF, OR DAMAGE TO, DATA, REPUTATION, OR GOODWILL, AND/OR (D) THE COST OF PROCURING ANY SUBSTITUTE GOODS OR SERVICES. THE FOREGOING LIMITATIONS SHALL APPLY TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, AND: (A) EVEN IF YOU HAVE BEEN ADVISED, OR SHOULD HAVE BEEN AWARE, OF THE POSSIBILITY OF LOSSES, DAMAGES, OR COSTS; (B) EVEN IF ANY REMEDY IN THESE SERVICE TERMS FAILS OF ITS ESSENTIAL PURPOSE; AND (C) REGARDLESS OF THE THEORY OF LIABILITY (INCLUDING, WITHOUT LIMITATION, BREACH OF CONTRACT, TORT, NEGLIGENCE OR STRICT LIABILITY). OUR AND OUR AFFILIATES’ AGGREGATE LIABILITY UNDER, OR OTHERWISE IN CONNECTION WITH, THESE SERVICE TERMS, SHALL NOT EXCEED THE AMOUNTS OF FEES PAID OR PAYABLE BY YOU FOR THE USE OF THE MANAGED MARKETS SERVICES HEREUNDER PURSUANT TO THESE SERVICE TERMS IN THE TWELVE (12) MONTHS IMMEDIATELY PRIOR TO THE EVENT GIVING RISE TO SUCH LIABILITY.
+
+ 
+
+               10.3.         Indemnification. You will indemnify, defend and hold harmless Global-e and its affiliates and each of their respective officers, directors, employees, agents, representatives, successors, and assigns from and against any and all claims, causes of action, suits, liabilities, damages, fines, penalties, costs and expenses (including, without limitation, outside attorney’s fees and costs) (each a “Claim”) arising from or in connection with (i) your breach of any representation, warranty or other provisions of these Service Terms or the documents it incorporates by reference or any negligence or willful misconduct in connection with these Service Terms; (ii) your violation of any law or the rights of a third party; (iii) any aspect of the transaction between you and your Shopper, including but not limited to refunds, fraudulent transactions, alleged or actual violation of applicable laws; and (iv) death, bodily harm or tangible property damage caused by a Product. If Global-e receives notice or knowledge of a claim as described above, it will promptly notify Merchant in writing and give Merchant assistance and the exclusive authority to control the defense and settle such claim. Global-e will have the right to participate in the defense with counsel of its choice at its own expense.
+
+ 
+
+GENERAL CONDITIONS
+
+ 
+
+               11.1.         Neither Party will be responsible for any failure or delay in its performance under these Service Terms (except for any payment obligations) due to causes beyond its reasonable control, including, but not limited to, labor disputes, strikes, lockouts, shortages of or inability to obtain labor, energy, raw materials or supplies, war, terrorism, riot, acts of God or governmental action (in each case to the extent beyond its reasonable control).
+
+ 
+
+               11.2.         These Service Terms are governed by and shall be construed in accordance with the laws of the State of Delaware. Non-contractual obligations (if any) arising out of or in connection with these Service Terms (including its formation) shall also be governed by the laws of the State of Delaware. The Parties submit to the exclusive jurisdiction of the courts located in Wilmington, Delaware and each party hereby irrevocably submits to the personal jurisdiction of such courts and waives any jurisdictional, venue, or inconvenient forum objections to such courts. Notwithstanding the foregoing, Global-e may seek injunctive relief in any court worldwide that has competent jurisdiction. The United Nations Convention on Contracts for the International Sale of Goods is hereby disclaimed.
+
+ 
+
+               11.3.         The Parties hereby agree to the fullest extent permitted by Applicable Law, that each of them irrevocably waives all rights to trial by jury as to any issue relating hereto in any action, proceeding, or counterclaim arising out of or relating to these Service Terms.
+
+ 
+
+               11.4.         All notices, consents and other communications required or permitted to be given under these Service Terms will be in writing and may be delivered electronically, including by email transmission or by posting such notices, consents and other communications on the Shopify Platform, by courier or overnight delivery service, or by certified mail, and in each instance will be deemed given upon receipt. All communications will be sent to the addresses set forth above or to such other address as may be specified by either Party to the other Party in accordance with this section.
+
+ 
+
+               11.5.         You may not assign these Service Terms without our prior written consent. Notwithstanding the foregoing, you may freely assign these Service Terms without our consent in the context of a reorganization, consolidation, merger, acquisition or sale or other disposition of substantially all your assets. Any assignment in violation of this provision will be invalid. Global-e may freely assign these Service Terms to any Affiliate, and these Service Terms will be binding upon, enforceable by and benefit the respective successors and assigns. "Affiliate" shall mean any individual or entity that, at the applicable time, directly or indirectly controls, is controlled with or by or is under common control with, a Party.
+
+ 
+
+               11.6.         These Service Terms together with the schedules and appendices hereto constitute complete and exclusive agreement between the Parties concerning its subject matter and supersedes all prior or contemporaneous agreements or understandings, written or oral, concerning the subject matter of these Service Terms. In case of any conflicts between any of the terms of the sections of these Service Terms and the attached Exhibits and Schedules, the terms and conditions of these Service Terms shall prevail. We have the right to change or add to these Service Terms at any time, and to change, delete, discontinue, or impose conditions on any feature or aspect of the Services with notice that we in our sole discretion deem to be reasonable in the circumstances, including notice via the Shopify Platform, or any other website maintained or owned by us or Shopify in connection with making the Services available to you. Any use of the Managed Markets Services after the publication of any such changes shall constitute your acceptance of these Services Terms as modified. If any provision of these Service Terms is held to be invalid or unenforceable, the remainder will remain in full force and effect. The waiver by either Party of any default or breach of these Service Terms will not constitute a waiver of any other or subsequent default or breach.
+
+ 
+
+               11.7.         Nothing contained in these Service Terms is intended to, or shall be interpreted or construed to create or establish a franchise. If any provision of these Service Terms is deemed to create a franchise relationship between the Parties, then the Parties shall negotiate in good faith to modify these Service Terms to affect the Parties’ original intent as closely as possible in a mutually acceptable manner so that the transactions contemplated hereby are consummated as a vendor agreement and not as a franchise agreement.
+
+ 
+
+               11.8.         Nothing herein contained shall be construed to constitute a joint venture or partnership between the Parties.
+
+ 
+
+               11.9.         Global-e will be an independent contractor, and its employees and/or other personnel will not be deemed to be your employees or personnel.
+
+ 
+
+            11.10.         The titles of the sections of these Service Terms are for convenience of reference only and are not to be considered in construing these Service Terms. Unless the context of these Service Terms clearly requires otherwise: (i) references to the plural include the singular, the singular the plural, and the part the whole, (ii) references to one gender include all genders, (iii) “or” has the inclusive meaning frequently identified with the phrase “and/or,” (iv) “including” has the inclusive meaning frequently identified with the phrase “including but not limited to” or “including without limitation,” (v) references to “hereunder,” “herein” or “hereof” relate to these Service Terms as a whole, (vi) the term “days” refers to calendar days and not business days, unless expressly noted and (vii) all monetary amounts are stated (and paid) in USD unless otherwise is clearly indicated and agreed. The Parties agree that these Service Terms shall be fairly interpreted in accordance with its terms without any strict construction in favor of or against either Party, and that ambiguities shall not be interpreted against the drafting Party.
+
+ 
+
+ 
+
+GLOBAL-E CONTRACTING PARTY
+
+ 
+
+               12.1.         For purposes of these Service Terms, the Global-e contracting party is Global-e US Inc., a Delaware Corporation, with offices located at 200 West 41st Street New York, New York 10036. Certain features of the Managed Markets Services may be performed by other Global-e group-entities, to which we will remain fully liable and responsible as if such group entity was the contracting party under these Service Terms.
+
+ 
+
+**************************
+
+
+
+
+ 
+
+ 
+
+Data Processing Addendum
+
+ 
+
+About this document:
+
+ 
+
+This Data Processing Addendum (hereafter the “Addendum”) is a set of data processing clauses that will determine how the contracting party of the Global-e group (as defined in Section 7 of this Addendum) (“Global-e” or “we” or “us”) carry out the sharing (with you and third parties) and the processing of Personal Data (as defined below) in accordance with Applicable Data Protection Legislation (as defined below).
+
+ 
+
+This Addendum amends and addends the Service Terms between us and you, and is incorporated into the Service Terms by reference.
+
+ 
+
+For the purposes of this specific Addendum, the following definitions apply:
+
+ 
+
+“Applicable Data Protection Laws” means, (i) in EU Member States, Regulation (EU) 2016/679 of the European Parliament and of the Council, of 27 April 2016 (the General Data Protection Regulation) and complementary national data protection laws, including any guidance and / or codes of practice issued by the relevant Supervisory Authorities within the EU; (ii) in non-EU countries, any applicable data protection laws regarding the safeguarding and lawful processing of Personal Data;
+
+ 
+
+“Personal Data” means any information relating to an identified or identifiable natural person; an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person. For the avoidance of doubt, Personal Data has the meaning as set forth in the Applicable Data Protection Laws;
+
+ 
+
+“Processing” (as well as “Process”, “Processed” and other variations) means any operation, or set of operations, which is performed on Personal Data, or on sets of Personal Data, whether or not by automated means, such as collection, recording, organization, structuring, storage, adaptation or alteration, retrieval, consultation, use, disclosure by transmission, dissemination or otherwise making available, alignment or combination, restriction, erasure or destruction;
+
+ 
+
+“Data Controller” means, in general, the natural or legal person, public authority, agency or other body which, alone or jointly with others, determines the purposes and means of the Processing of Personal Data;
+
+ 
+
+“Data Subject” means any identified or identifiable natural person whose Personal Data is included within the Shopper Data shared with Global-e;
+
+ 
+
+“Data Processor” means, in general, a natural or legal person, public authority, agency or other body which Processes Personal Data on behalf of a Data Controller;
+“Standard Contractual Clauses” means the standard contractual clauses approved by the European Commission under Decision 2004/915/EC of 27 December 2004, amending Decision 2001/497/EC as regards the introduction of an alternative set of standard contractual clauses for the transfer of personal data to third countries (available here).
+
+ 
+
+The Parties hereby acknowledge that they are adequately informed as to the Applicable Data Protection Laws currently in force, regarding the Processing of Personal Data which may be inherent to the performance of this Addendum, and hereby declare that all such Processing of Personal Data will be carried out in accordance with that legislation.
+
+ 
+
+Each Party will have access to Personal Data, as necessary to ensure the correct execution, performance and management of the Service Terms. Each Party will act as an independent Data Controller regarding such Personal Data, and will therefore be solely responsible for compliance with its own legal obligations around Processing of such Personal Data.
+
+ 
+
+In order to allow the Managed Markets Services to be provided, you will share Personal Data related to Shoppers (as defined in the Service Terms) with Global-e (“Shopper Data”). The following terms apply to the Processing of Shopper Data in connection with the provision of Managed Markets Services under the Service Terms:
+
+ 
+
+Data Protection Roles. Each Party will act as an independent Data Controller regarding the use of Shopper Data.
+
+ 
+
+Lawfulness. You warrant and represent that you had identified an appropriate legal basis, under the Applicable Data Protection Laws, for the collection of Shopper Data, as well as for the sharing of Shopper Data with Global-e in order to allow the Managed Markets Services to be provided, and that you have taken all steps required under the Applicable Data Protection Laws to ensure that the legal basis identified can be leveraged for these purposes. You must disclose the identified legal basis to Global-e, and describe the steps taken to ensure that it can be leveraged lawfully. Global-e agrees to provide any support reasonably necessary to allow you to comply with the above.
+
+ 
+
+Transparency. You warrant and represent that you have adequately informed the Data Subjects that their Personal Data would be shared with Global-e, as required by the Applicable Data Protection Laws, prior to sharing Shopper Data with us. Additionally, you will make Global-e’s privacy policy available to its own customers through the Store’s checkout page.
+
+ 
+
+Purpose Limitation. Global-e shall only Process Shopper Data as necessary for the provision of the Managed Markets Services under the Service Terms; provided that, Global-e may further Process Shopper Data that is not strictly necessary for the provision of Managed Markets Services under the Service Terms as long as the Shopper Data used in such Processing has been aggregated and de-identified to the extent that individual identities are not discernible.
+
+ 
+
+Data Minimization. You warrant and represent that you will not share any Shopper Data with Global-e which is not strictly necessary in order to allow the Managed Markets Services to be provided lawfully, as required by the different laws which may apply to the provision of the Managed Markets Services (including, but not limited to, the Applicable Data Protection Laws). You acknowledge that Global-e may require you to share additional categories of Shopper Data than those initially shared by you, or may otherwise independently collect additional categories of Shopper Data from the relevant individuals, where this is strictly necessary to allow the Managed Markets Services to be provided lawfully in a given territory.
+
+ 
+
+Accuracy. You warrant and represent that you have implemented effective technical and organizational measures to ensure that the Shopper Data which is shared with Global-e under these Service Terms is accurate and up-to-date, and that, to the best of your knowledge, all such Shopper Data shared with Global-e is accurate and up to date as of the date on which they are shared. You will promptly notify Global-e of, and keep Global-e updated on, any rectifications made to the Shopper Data after such has been shared with Global-e. Without prejudice to the above, you acknowledge that Global-e may take steps to verify that Shopper Data received and used is accurate and up to date (e.g., by interacting directly with the relevant individuals), as necessary to ensure the correct performance of the Managed Markets Services.
+
+ 
+
+Storage Limitation. Each Party is solely responsible for ensuring its own compliance with applicable obligations on the retention of Shopper Data. In particular, Global-e will be solely responsible for ensuring that Shopper Data received is not Processed for any longer than necessary to meet the purposes for which it was shared, or any other purposes for which Global-e may lawfully further Process Shopper Data.
+
+ 
+
+Security. Each Party is solely responsible for ensuring compliance with its own applicable obligations on Shopper Data security. The Parties will coordinate to ensure that any sharing of Shopper Data carried out for the performance of the Managed Markets Services is done through secure channels.
+
+ 
+
+Accountability. Each Party is solely responsible for ensuring compliance with its own applicable obligations on accountability around the use of Shopper Data. Each Party agrees to provide reasonable assistance to the other Party as needed to ensure that such obligations can be complied with, in particular by sharing information on their own practices around the use of Personal Data (excluding any confidential or business- sensitive information).
+
+ 
+
+Data Subject Rights. Each Party is solely responsible for addressing any requests or communications received from Data Subjects for the exercise of their rights related to use of Shopper Data under the Applicable Data Protection Laws. Each Party will promptly notify the other Party of any such requests or communications received which involve the other Party, and collaborate in good faith in order to ensure that such requests or communications are addressed in a timely and proper manner.
+
+ 
+
+Data Processors. Each Party is solely responsible, as an independent Data Controller, for complying with the Applicable Data Protection Laws on the engagement of Data Processors to handle Shopper Data on their behalf.
+
+ 
+
+Personal Data Breaches. Each Party is solely responsible for addressing any security incidents it suffers which affect Shopper Data stored or otherwise used by that Party, including prevention, detection, assessment, remediation and notification (to supervisory authorities and/or individuals) of such incidents.
+
+ 
+
+Cross-Border Transfers of Personal Data. Where necessary, under the Applicable Data Protection Laws, to ensure the lawfulness of the sharing of Shopper Data from you to Global-e, you and Global-e agree to comply with the Standard Contractual Clauses (as approved by the European Commission in Decision 2004/915/EC, of 27 December 2004). For these purposes:
+
+ 
+
+With reference to Clause II(h) of the Standard Contractual Clauses, Global-e, as data importer, will be bound by Option iii (i.e., the data processing principles set forth in Annex A of the Standard Contractual Clauses);
+
+ 
+
+With reference to Annex B of the Standard Contractual Clauses, the following details apply:
+
+ 
+
+Data subjects. The personal data transferred concern the following categories of data subjects: Individual consignees and/or shippers for shipments to be performed on behalf of the you.
+
+ 
+
+Purposes of the transfer(s). The transfer is made for the following purposes: To allow for the lawful provision of the Managed Markets Services, under the Addendum.
+
+ 
+
+Categories of data. The personal data transferred concern the following categories of data: Name, contact details, mailing/delivery address, contents of shipments, additional data required for shipment clearance as per local regulations, or otherwise to lawfully provide the Managed Markets Services (e.g., national ID number / document copies).
+Recipients. The personal data transferred may be disclosed only to the following recipients or categories of recipients: Other Global-e Group affiliates or external subcontractors (as necessary to manage the provision of the Managed Markets Services and ensure the cross-border delivery of the Managed Markets Services), screening providers and competent public authorities or bodies (where required to lawfully provide the Managed Markets Services).
+
+ 
+
+Sensitive data (if appropriate). The personal data transferred concern the following categories of sensitive data: As a rule, sensitive data will not be handled in connection with the provision of the Managed Markets Services.
+
+ 
+
+Additional useful information (storage limits and other relevant information). As laid down in the Addendum, Global-e will be solely responsible for ensuring that Shopper Data received is not processed for any longer than necessary to meet the purposes for which it was transferred, or any other purposes for which Global-e may lawfully further process Shopper Data.
+
+ 
+
+Contact points for data protection enquiries. See the contact points defined for each Party within this Addendum.
+
+ 
+
+The Parties agree to comply with any relevant updated versions of the Standard Contractual Clauses which may be issued by the European Commission. The above details will remain applicable, to the extent that they remain relevant under the updated versions of the Standard Contractual Clauses. You are solely responsible for taking any other steps needed, under the Applicable Data Protection Laws, to ensure that Shopper Data can be lawfully shared with Global-e. Global-e agrees to provide any support reasonably necessary to allow you to comply with the above.
+
+ 
+
+Supervisory Authorities. Each Party is solely responsible for addressing any requests or communications received from competent supervisory authorities related to use of Shopper Data under the Applicable Data Protection Laws. Each Party will provide reasonable assistance to the other Party where necessary to allow the other Party to comply with its own obligations around such requests or communications.
+
+ 
+
+Whenever reasonable collaboration or assistance between the Parties is necessary in order for one or both of the Parties to comply with any of its obligations, under the Applicable Data Protection Laws (e.g., obligations on accountability, obligations related to Data Subject requests, obligations around cross-border transfers of Personal Data, obligations related to supervisory authority requests), such reasonable collaboration or assistance will be provided in good faith.
+
+ 
+
+This Addendum reflects the only provisions existing between Global-e and you on the use of Shopper Data in relation to the performance of the Managed Markets Services, and supersedes any prior agreements or understandings entered into between the Parties on this subject.
+
+ 
+
+For purposes of this DPA, the Global-e contracting party is Global-e US Inc., a Delaware Corporation, with offices located at 200 West 41st Street New York, New York 10036.
+
+ 
+
+ 
+
+ 

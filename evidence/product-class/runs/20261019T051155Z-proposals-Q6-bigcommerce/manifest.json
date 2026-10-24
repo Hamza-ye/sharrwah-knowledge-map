@@ -1,0 +1,22 @@
+[
+{
+"n": 1,
+"url": "https://www.bigcommerce.com/start-your-trial/",
+"dir": "items/001-bigcommerce.com",
+"fetched_at": "2026-10-19T05:11:55Z",
+"http_raw": 200,
+"http_browser": 200,
+"final_url": "https://www.bigcommerce.com/start-your-trial/",
+"content_type": "text/html; charset=utf-8",
+"cited_in": "studies/proposals/records/Q6/bigcommerce/citations.tsv",
+"note": "",
+"result": "captured",
+"primary_file": "raw.html",
+"sha256": "cee3afe7d7a3b1a504277358dcd4dd217809f48d57ae8ecf688dd045066afd24",
+"bytes": 139573,
+"date_hint": "",
+"date_source": "",
+"age_class": "undated (live page on capture date)",
+"text_file": "text.txt"
+}
+]

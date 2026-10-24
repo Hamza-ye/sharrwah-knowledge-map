@@ -1,0 +1,21 @@
+{
+ "n": 158,
+ "url": "https://help.zid.sa/store-info-ksa/",
+ "dir": "items/158-help.zid.sa",
+ "fetched_at": "2026-10-12T04:53:30Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/store-info-ksa/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 27115,
+ "cited_in": [
+  "ZD-S-0751",
+  "ZD-S-0753",
+  "ZD-S-0754",
+  "ZD-S-0763"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "57a930a7ba6fe46a4ea5096ff5652f06f4a1a54c8b537d82871703f8835c3b85",
+ "raw_ext": "html"
+}

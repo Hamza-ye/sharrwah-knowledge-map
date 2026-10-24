@@ -1,0 +1,29 @@
+{
+ "n": 86,
+ "url": "https://woocommerce.com/product-category/woocommerce-extensions/merchandising/",
+ "dir": "items/086-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:07Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/product-category/woocommerce-extensions/merchandising/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 49230,
+ "cited_in": [
+  "WC-S-0728",
+  "WC-S-0729",
+  "WC-S-0730",
+  "WC-S-0731",
+  "WC-S-0732",
+  "WC-S-0733",
+  "WC-S-0734",
+  "WC-S-0735",
+  "WC-S-0736",
+  "WC-S-0737",
+  "WC-S-0738",
+  "WC-S-0739"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "d01675d6b0c0019e47dfa8f38a383c2975f219f229878d99ef55eff9dbc90f33",
+ "raw_ext": "html"
+}

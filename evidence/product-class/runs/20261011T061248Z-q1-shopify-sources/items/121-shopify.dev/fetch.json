@@ -1,0 +1,23 @@
+{
+ "n": 121,
+ "url": "https://shopify.dev/docs/apps/build/payments.md",
+ "dir": "items/121-shopify.dev",
+ "fetched_at": "2026-10-11T06:13:08Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://shopify.dev/docs/apps/build/payments.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 9416,
+ "cited_in": [
+  "SH-S-0440",
+  "SH-S-0441",
+  "SH-S-0442",
+  "SH-S-0443",
+  "SH-S-0444",
+  "SH-S-0445"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "99c7332850f801f7f8d85bc9b5df07982b8c8e2936dcfc8f340ace722775aa5c",
+ "raw_ext": "txt"
+}

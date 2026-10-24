@@ -1,0 +1,18 @@
+{
+ "n": 83,
+ "url": "https://help.zid.sa/account-settings/",
+ "dir": "items/083-help.zid.sa",
+ "fetched_at": "2026-10-12T04:52:15Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/account-settings/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 25902,
+ "cited_in": [
+  "ZD-S-0900"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "140c0aca87e2141ddf6e9c518f54da4cf1b5291791cd7a84448b5a137cdd3562",
+ "raw_ext": "html"
+}

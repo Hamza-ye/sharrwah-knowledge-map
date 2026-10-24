@@ -1,0 +1,151 @@
+copy_id	identifier	statement	scope
+Q4-WC-K0002	Payments	$this->label = esc_html_x( 'Payments', 'Settings tab label', 'woocommerce' );	
+Q4-WC-K0003	Payments > main	const MAIN_SECTION_NAME    = 'main';	
+Q4-WC-K0004	Payments	$menu_title = esc_html__( 'Payments', 'woocommerce' );	
+Q4-WC-K0005	Types of payment gateway: Form based	This is where the user must click a button on a form that then redirects them to the payment processor on the gateway's own website.	gateway type: Form based
+Q4-WC-K0006	WooCommerce Payment Gateway API	Payment gateways in WooCommerce are class based and can be added through traditional plugins.	
+Q4-WC-K0007	Creating a basic payment gateway	Payment gateways should be created as additional plugins that hook into WooCommerce.	
+Q4-WC-K0008	8. j. Ecommerce Services: Third-Party Services	You may decide to use third-party services, like Stripe or PayPal to collect payment or EasyPost to manage shipping. Please note that WooPayments is powered by Stripe.	
+Q4-WC-K0009	8. j. Ecommerce Services: Third-Party Services	If you use WooPayments or any third-party services, some of your — and your customers’ — data may be submitted directly to or passed to the respective third party, and the respective third party’s terms of service, privacy policy, and other policies may apply.	
+Q4-WC-K0010	8. j. Ecommerce Services: Third-Party Services	While we may license you relevant extensions, we’re not involved in any third-party services tied to those extensions.	
+Q4-WC-K0011	wc/v3 > payment-gateways	'payment-gateways'         => 'WC_REST_Payment_Gateways_Controller',	
+Q4-WC-K0012	wc/v4 > settings-payment-gateways	'settings-payment-gateways' => PaymentGatewaysController::class,	
+Q4-WC-K0013	WC_Payment_Gateway	abstract class WC_Payment_Gateway extends WC_Settings_API {	
+Q4-WC-K0014	woocommerce_payment_gateways	$load_gateways = apply_filters( 'woocommerce_payment_gateways', $load_gateways );	
+Q4-WC-K0015	WC_Payment_Gateway_CC	class WC_Payment_Gateway_CC extends WC_Payment_Gateway {	
+Q4-WC-K0016	WC_Payment_Gateway_ECheck	class WC_Payment_Gateway_ECheck extends WC_Payment_Gateway {	
+Q4-WC-K0017	AbstractPaymentMethodType	abstract class AbstractPaymentMethodType implements PaymentMethodTypeInterface {	
+Q4-WC-K0018	Payment gateways	The payment gateways API allows you to view, and update individual payment gateways.	
+Q4-WC-K0019	Filtering payment methods in the Checkout block	[Filtering payment methods in the Checkout block](https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/block-development/extensible-blocks/cart-and-checkout-blocks/checkout-payment-methods/filtering-payment-methods.md)	
+Q4-WC-K0020	Payment method integration	[Payment method integration](https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/block-development/extensible-blocks/cart-and-checkout-blocks/checkout-payment-methods/payment-method-integration.md)	
+Q4-WC-K0021	Payments > offline	const OFFLINE_SECTION_NAME = 'offline';	
+Q4-WC-K0022	Payments > cod	const COD_SECTION_NAME     = 'cod';  // Cash on delivery.	
+Q4-WC-K0023	Payments > bacs	const BACS_SECTION_NAME    = 'bacs';  // Direct bank transfer.	
+Q4-WC-K0024	Payments > cheque	const CHEQUE_SECTION_NAME  = 'cheque';  // Cheque payments.	
+Q4-WC-K0025	Direct bank transfer	$this->method_title       = __( 'Direct bank transfer', 'woocommerce' );	
+Q4-WC-K0026	Check payments	$this->method_title       = _x( 'Check payments', 'Check payment method', 'woocommerce' );	
+Q4-WC-K0027	Cash on delivery	$this->method_title       = __( 'Cash on delivery', 'woocommerce' );	
+Q4-WC-K0028	bacs (WC_Gateway_BACS method_description)	$this->method_description = __( 'Take payments in person via BACS. More commonly known as direct bank/wire transfer.', 'woocommerce' );	
+Q4-WC-K0029	cod (WC_Gateway_COD method_description)	$this->method_description = __( 'Let your shoppers pay upon delivery — by cash or other methods of payment.', 'woocommerce' );	
+Q4-WC-K0030	cheque (WC_Gateway_Cheque method_description)	$this->method_description = __( 'Take payments in person via checks. This offline gateway can also be useful to test purchases.', 'woocommerce' );	
+Q4-WC-K0031	Types of payment gateway: Offline	**Offline** - No online payment is made.	gateway type: Offline
+Q4-WC-K0032	woocommerce_bacs_settings: enabled	'enabled' => array( 'title' => __( 'Enable/Disable', 'woocommerce' ), 'type' => 'checkbox', 'label' => __( 'Enable bank transfer', 'woocommerce' ), 'default' => 'no',	Direct bank transfer (bacs)
+Q4-WC-K0033	woocommerce_cheque_settings: enabled	'enabled' => array( 'title' => __( 'Enable/Disable', 'woocommerce' ), 'type' => 'checkbox', 'label' => __( 'Enable check payments', 'woocommerce' ), 'default' => 'no',	Check payments (cheque)
+Q4-WC-K0034	woocommerce_cod_settings: enabled	'enabled' => array( 'title' => __( 'Enable/Disable', 'woocommerce' ), 'label' => __( 'Enable cash on delivery', 'woocommerce' ), 'type' => 'checkbox', 'description' => '', 'default' => 'no',	Cash on delivery (cod)
+Q4-WC-K0035	wc/v4 > offline-payment-methods	'offline-payment-methods'   => OfflinePaymentMethodsController::class,	
+Q4-WC-K0036	WC_Gateway_BACS::process_payment	$order->update_status( $process_payment_status, __( 'Awaiting BACS payment.', 'woocommerce' ) );	
+Q4-WC-K0037	woocommerce_bacs_process_payment_order_status	$process_payment_status = apply_filters( 'woocommerce_bacs_process_payment_order_status', OrderStatus::ON_HOLD, $order );	Direct bank transfer (bacs)
+Q4-WC-K0038	woocommerce_cheque_process_payment_order_status	$process_payment_status = apply_filters( 'woocommerce_cheque_process_payment_order_status', OrderStatus::ON_HOLD, $order );	Check payments (cheque)
+Q4-WC-K0039	woocommerce_cod_process_payment_order_status	$process_payment_status = apply_filters( 'woocommerce_cod_process_payment_order_status', $order->has_downloadable_item() ? OrderStatus::ON_HOLD : OrderStatus::PROCESSING, $order );	Cash on delivery (cod)
+Q4-WC-K0438	WooPayments: In-Person Payments	With WooPayments’ In-Person Payments feature, your customers can pay via tap, swipe, chip card, or mobile wallet payments, all using our mobile app and a simple card reader or a device that supports Tap to Pay on iPhone or Android.	
+Q4-WC-K0439	WooPayments: In-Person Payments	In-Person Payments is available to qualified merchants based in Australia, Canada, Finland, Ireland, Luxembourg, the Netherlands, New Zealand, Singapore, the United Kingdom, and the United States	
+Q4-WC-K0440	Currencies	Card readers and Tap to Pay on iPhone/Android can only collect payments in the default currency for each country.	
+Q4-WC-K0441	8. j. More on WooPayments Specifically (in-person payments)	(b) the Stripe Terminal Services Terms and Stripe Terminal Purchase Terms as applicable	
+Q4-WC-K0442	8. j. More on WooPayments Specifically (in-person payments)	These POS terminals are manufactured by third parties and are provided “as-is” and “with all faults.”	
+Q4-WC-K0443	WooPayments: In-Person Payments	With WooPayments’ In-Person Payments feature, your customers can pay via tap, swipe, chip card, or mobile wallet payments, all using our mobile app and a simple card reader or a device that supports Tap to Pay on iPhone or Android.	
+Q4-WC-K0587	WooCommerce > Reports	add_submenu_page( 'woocommerce', __( 'Reports', 'woocommerce' ), __( 'Reports', 'woocommerce' ), 'view_woocommerce_reports', 'wc-reports', array( $this, 'reports_page' ) );	
+Q4-WC-K0588	Analytics	'title'    => __( 'Analytics', 'woocommerce' ),	
+Q4-WC-K0589	Analytics > Overview	'title'  => __( 'Overview', 'woocommerce' ),	
+Q4-WC-K0590	Analytics > Products	'title'  => __( 'Products', 'woocommerce' ),	
+Q4-WC-K0591	Analytics > Revenue	'title'  => __( 'Revenue', 'woocommerce' ),	
+Q4-WC-K0592	Analytics > Orders	'title'  => __( 'Orders', 'woocommerce' ),	
+Q4-WC-K0593	Analytics > Variations	'title'  => __( 'Variations', 'woocommerce' ),	
+Q4-WC-K0594	Analytics > Categories	'title'  => __( 'Categories', 'woocommerce' ),	
+Q4-WC-K0595	Analytics > Coupons	'title'  => __( 'Coupons', 'woocommerce' ),	
+Q4-WC-K0596	Analytics > Taxes	'title'  => __( 'Taxes', 'woocommerce' ),	
+Q4-WC-K0597	Analytics > Downloads	'title'  => __( 'Downloads', 'woocommerce' ),	
+Q4-WC-K0598	Analytics > Stock	'title'  => __( 'Stock', 'woocommerce' ),	
+Q4-WC-K0599	Analytics > Settings	'title'  => __( 'Settings', 'woocommerce' ),	
+Q4-WC-K0600	analytics	'description'                  => __( 'Enable WooCommerce Analytics to track your store\'s key metrics and view them in a detailed dashboard. All data stays within your store.', 'woocommerce' ),	
+Q4-WC-K0601	analytics (woocommerce_analytics_enabled)	'option_key' => Analytics::TOGGLE_OPTION_NAME, 'is_experimental' => false, 'enabled_by_default' => true, 'disable_ui' => false,	
+Q4-WC-K0602	wc-reports	add_submenu_page( 'woocommerce', __( 'Reports', 'woocommerce' ), __( 'Reports', 'woocommerce' ), 'view_woocommerce_reports', 'wc-reports', array( $this, 'reports_page' ) );	
+Q4-WC-K0603	PageController::register_page	'capability' => 'view_woocommerce_reports',	
+Q4-WC-K0604	wc-analytics	$rest_api_util->lazy_load_namespace( 'wc-analytics', array( $this, 'rest_api_init_wc_analytics' ) );	
+Q4-WC-K0605	wc/v3 > reports-sales	'reports-sales'            => 'WC_REST_Report_Sales_Controller',	
+Q4-WC-K0606	wc/v3 > reports-top-sellers	'reports-top-sellers'      => 'WC_REST_Report_Top_Sellers_Controller',	
+Q4-WC-K0607	wc/v3 > reports-orders-totals	'reports-orders-totals'    => 'WC_REST_Report_Orders_Totals_Controller',	
+Q4-WC-K0608	wc/v3 > reports-products-totals	'reports-products-totals'  => 'WC_REST_Report_Products_Totals_Controller',	
+Q4-WC-K0609	wc/v3 > reports-customers-totals	'reports-customers-totals' => 'WC_REST_Report_Customers_Totals_Controller',	
+Q4-WC-K0610	wc/v3 > reports-coupons-totals	'reports-coupons-totals'   => 'WC_REST_Report_Coupons_Totals_Controller',	
+Q4-WC-K0611	wc/v3 > reports-reviews-totals	'reports-reviews-totals'   => 'WC_REST_Report_Reviews_Totals_Controller',	
+Q4-WC-K0612	wc/v3 > reports	'reports'                  => 'WC_REST_Reports_Controller',	
+Q4-WC-K0613	wc-analytics > Coupons	'Automattic\WooCommerce\Admin\API\Coupons',	
+Q4-WC-K0614	wc-analytics > Data	'Automattic\WooCommerce\Admin\API\Data',	
+Q4-WC-K0615	wc-analytics > DataCountries	'Automattic\WooCommerce\Admin\API\DataCountries',	
+Q4-WC-K0616	wc-analytics > data/download-ips (DataDownloadIPs)	'Automattic\WooCommerce\Admin\API\DataDownloadIPs',	
+Q4-WC-K0617	wc-analytics > Orders	'Automattic\WooCommerce\Admin\API\Orders',	
+Q4-WC-K0618	wc-analytics > Products	'Automattic\WooCommerce\Admin\API\Products',	
+Q4-WC-K0619	wc-analytics > ProductAttributes	'Automattic\WooCommerce\Admin\API\ProductAttributes',	
+Q4-WC-K0620	wc-analytics > ProductAttributeTerms	'Automattic\WooCommerce\Admin\API\ProductAttributeTerms',	
+Q4-WC-K0621	wc-analytics > ProductCategories	'Automattic\WooCommerce\Admin\API\ProductCategories',	
+Q4-WC-K0622	wc-analytics > ProductVariations	'Automattic\WooCommerce\Admin\API\ProductVariations',	
+Q4-WC-K0623	wc-analytics > ProductReviews	'Automattic\WooCommerce\Admin\API\ProductReviews',	
+Q4-WC-K0624	wc-analytics > ProductsLowInStock	'Automattic\WooCommerce\Admin\API\ProductsLowInStock',	
+Q4-WC-K0625	wc-analytics > activity-panel/counts (ActivityPanelCounts)	'Automattic\WooCommerce\Admin\API\ActivityPanelCounts',	
+Q4-WC-K0626	wc-analytics > SettingOptions	'Automattic\WooCommerce\Admin\API\SettingOptions',	
+Q4-WC-K0627	wc-analytics > Taxes	'Automattic\WooCommerce\Admin\API\Taxes',	
+Q4-WC-K0628	wc-analytics > customers (Customers)	'Automattic\WooCommerce\Admin\API\Customers',	
+Q4-WC-K0629	wc-analytics > leaderboards (Leaderboards)	'Automattic\WooCommerce\Admin\API\Leaderboards',	
+Q4-WC-K0630	wc-analytics > Reports/Controller	'Automattic\WooCommerce\Admin\API\Reports\Controller',	
+Q4-WC-K0631	wc-analytics > reports/import (Reports/Import/Controller)	'Automattic\WooCommerce\Admin\API\Reports\Import\Controller',	
+Q4-WC-K0632	wc-analytics > reports/(?P<type>[a-z]+)/export (Reports/Export/Controller)	'Automattic\WooCommerce\Admin\API\Reports\Export\Controller',	
+Q4-WC-K0633	wc-analytics > reports/products (Reports/Products/Controller)	'Automattic\WooCommerce\Admin\API\Reports\Products\Controller',	
+Q4-WC-K0634	wc-analytics > reports/variations (Reports/Variations/Controller)	'Automattic\WooCommerce\Admin\API\Reports\Variations\Controller',	
+Q4-WC-K0635	wc-analytics > reports/products/stats (Reports/Products/Stats/Controller)	'Automattic\WooCommerce\Admin\API\Reports\Products\Stats\Controller',	
+Q4-WC-K0636	wc-analytics > reports/variations/stats (Reports/Variations/Stats/Controller)	'Automattic\WooCommerce\Admin\API\Reports\Variations\Stats\Controller',	
+Q4-WC-K0637	wc-analytics > reports/revenue/stats (Reports/Revenue/Stats/Controller)	'Automattic\WooCommerce\Admin\API\Reports\Revenue\Stats\Controller',	
+Q4-WC-K0638	wc-analytics > reports/orders (Reports/Orders/Controller)	'Automattic\WooCommerce\Admin\API\Reports\Orders\Controller',	
+Q4-WC-K0639	wc-analytics > reports/orders/stats (Reports/Orders/Stats/Controller)	'Automattic\WooCommerce\Admin\API\Reports\Orders\Stats\Controller',	
+Q4-WC-K0640	wc-analytics > reports/categories (Reports/Categories/Controller)	'Automattic\WooCommerce\Admin\API\Reports\Categories\Controller',	
+Q4-WC-K0641	wc-analytics > reports/taxes (Reports/Taxes/Controller)	'Automattic\WooCommerce\Admin\API\Reports\Taxes\Controller',	
+Q4-WC-K0642	wc-analytics > reports/taxes/stats (Reports/Taxes/Stats/Controller)	'Automattic\WooCommerce\Admin\API\Reports\Taxes\Stats\Controller',	
+Q4-WC-K0643	wc-analytics > reports/coupons (Reports/Coupons/Controller)	'Automattic\WooCommerce\Admin\API\Reports\Coupons\Controller',	
+Q4-WC-K0644	wc-analytics > reports/coupons/stats (Reports/Coupons/Stats/Controller)	'Automattic\WooCommerce\Admin\API\Reports\Coupons\Stats\Controller',	
+Q4-WC-K0645	wc-analytics > reports/stock (Reports/Stock/Controller)	'Automattic\WooCommerce\Admin\API\Reports\Stock\Controller',	
+Q4-WC-K0646	wc-analytics > reports/stock/stats (Reports/Stock/Stats/Controller)	'Automattic\WooCommerce\Admin\API\Reports\Stock\Stats\Controller',	
+Q4-WC-K0647	wc-analytics > reports/downloads (Reports/Downloads/Controller)	'Automattic\WooCommerce\Admin\API\Reports\Downloads\Controller',	
+Q4-WC-K0648	wc-analytics > reports/downloads/stats (Reports/Downloads/Stats/Controller)	'Automattic\WooCommerce\Admin\API\Reports\Downloads\Stats\Controller',	
+Q4-WC-K0649	wc-analytics > reports/customers (Reports/Customers/Controller)	'Automattic\WooCommerce\Admin\API\Reports\Customers\Controller',	
+Q4-WC-K0650	wc-analytics > reports/customers/stats (Reports/Customers/Stats/Controller)	'Automattic\WooCommerce\Admin\API\Reports\Customers\Stats\Controller',	
+Q4-WC-K0651	wc-analytics > imports (AnalyticsImports)	$analytics_controllers[] = 'Automattic\WooCommerce\Admin\API\AnalyticsImports';	
+Q4-WC-K0652	wc-analytics > reports/performance-indicators (Reports/PerformanceIndicators/Controller)	$analytics_controllers[] = 'Automattic\WooCommerce\Admin\API\Reports\PerformanceIndicators\Controller';	
+Q4-WC-K0653	Reports	The reports API allows you to view all types of reports available.	
+Q4-WC-K0970	WooCommerce > Orders	'menu_name'             => _x( 'Orders', 'Admin menu name', 'woocommerce' ),	
+Q4-WC-K0971	shop_order (post type)	'capability_type' => 'shop_order', 'map_meta_cap' => true,	
+Q4-WC-K0972	woocommerce (admin menu)	add_menu_page( __( 'WooCommerce', 'woocommerce' ), __( 'WooCommerce', 'woocommerce' ), 'edit_others_shop_orders', 'woocommerce', null, $woocommerce_icon, '55.5' );	
+Q4-WC-K0973	wc/v3 > network-orders	'network-orders'           => 'WC_REST_Network_Orders_Controller',	
+Q4-WC-K0974	wc/v3 > order-notes	'order-notes'              => 'WC_REST_Order_Notes_Controller',	
+Q4-WC-K0975	wc/v3 > orders	'orders'                   => 'WC_REST_Orders_Controller',	
+Q4-WC-K0976	wc/v4 > order-notes	'order-notes'               => OrderNotesController::class,	
+Q4-WC-K0977	wc/v4 > orders	'orders'                    => OrdersController::class,	
+Q4-WC-K0978	wc/store/v1 > /order/(?P<id>[\d]+)	const IDENTIFIER = 'order';	
+Q4-WC-K0979	wc-analytics > Orders	'Automattic\WooCommerce\Admin\API\Orders',	
+Q4-WC-K0980	order.created	'order.created'     => __( 'Order created', 'woocommerce' ),	
+Q4-WC-K0981	order.updated	'order.updated'     => __( 'Order updated', 'woocommerce' ),	
+Q4-WC-K0982	order.deleted	'order.deleted'     => __( 'Order deleted', 'woocommerce' ),	
+Q4-WC-K0983	order.restored	'order.restored'    => __( 'Order restored', 'woocommerce' ),	
+Q4-WC-K0984	Orders	The orders API allows you to create, view, update, and delete individual, or a batch, of orders.	
+Q4-WC-K0985	Order actions	The order actions API allows you to perform specific actions with existing orders like you can from the Edit Order screen in the web app.	
+Q4-WC-K0986	Order notes	The order notes API allows you to create, view, and delete individual order notes.	
+Q4-WC-K0987	Refunded order (WC_Email_Customer_Refunded_Order)	$this->title          = __( 'Refunded order', 'woocommerce' );	
+Q4-WC-K0988	Partially refunded order (WC_Email_Customer_Partially_Refunded_Order)	$this->title          = __( 'Partially refunded order', 'woocommerce' );	
+Q4-WC-K0989	refund_line_items	public static function refund_line_items() { ob_start(); check_ajax_referer( 'order-item', 'security' ); if ( ! current_user_can( 'edit_shop_orders' ) ) { wp_die( -1 );	
+Q4-WC-K0990	8. j. Ecommerce Services: Your responsibilities	are responsible for all questions, complaints, disputes (including chargebacks), refunds, reversals, or fines that arise from your use of Ecommerce Services.	Ecommerce Services (Terms 8.j)
+Q4-WC-K0991	8. j. Ecommerce Services: Your responsibilities	must maintain fair and legally compliant return, refund, cancellation, and adjustment policies and clearly explain how customers can request a refund.	Ecommerce Services (Terms 8.j)
+Q4-WC-K0992	wc/v3 > order-refunds	'order-refunds'            => 'WC_REST_Order_Refunds_Controller',	
+Q4-WC-K0993	wc/v3 > refunds	'refunds'                  => 'WC_REST_Refunds_Controller',	
+Q4-WC-K0994	wc/v4 > refunds	'refunds'                   => RefundsController::class,	
+Q4-WC-K0995	Order refunds	The order refunds API allows you to create, view, and delete individual refunds, based on an existing order.	
+Q4-WC-K0996	Refunds	The refunds API is a simple, read-only endpoint that allows you to retrieve a list of refunds outside the context of an existing order.	
+Q4-WC-K1313	Point of Sale	$this->label = __( 'Point of Sale', 'woocommerce' );	
+Q4-WC-K1314	POS completed order (WC_Email_Customer_POS_Completed_Order)	$this->title          = __( 'POS completed order', 'woocommerce' );	
+Q4-WC-K1315	POS refunded order (WC_Email_Customer_POS_Refunded_Order)	$this->title          = __( 'POS refunded order', 'woocommerce' );	
+Q4-WC-K1316	Extensions > Official payments > In-person payments	In-person payments	
+Q4-WC-K1317	Extensions > Store management > Point of sale	Point of sale	
+Q4-WC-K1318	point_of_sale	'Enable Point of Sale functionality in the WooCommerce mobile apps.',	
+Q4-WC-K1319	Woo Mobile App: Point of Sale Mode	POS mode turns a supported tablet or phone into a digital cash register	
+Q4-WC-K1320	Requirements	Your store address must be in one of the supported countries.	
+Q4-WC-K1321	Requirements	You must be using that country’s native currency as the store currency.	
+Q4-WC-K1322	woocommerce_pos_*	* POS access is defined entirely by `woocommerce_pos_*` capabilities granted per-user — the * same primitive WordPress uses for every other authorization decision. A user * has POS access if and only if they hold at least one of the known `woocommerce_pos_*` * capabilities (those in all_pos_capabilities(); see has_pos_access()).	
+Q4-WC-K1323	Woo Mobile App: Point of Sale Mode	All sales sync with your existing WooCommerce site.	
+Q4-WC-K1324	woocommerce_pos_*	* Capabilities are granted per-user via add_cap(), never bundled onto a WP role. * POS access can therefore be added to any existing user (shop_manager, * administrator, …) without altering their role, and revoked without leaving * them roleless.	

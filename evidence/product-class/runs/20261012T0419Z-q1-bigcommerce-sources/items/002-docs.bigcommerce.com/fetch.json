@@ -1,0 +1,21 @@
+{
+ "n": 2,
+ "url": "https://docs.bigcommerce.com/developer/api-reference/graphql/overview.md",
+ "dir": "items/002-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:19:17Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/api-reference/graphql/overview.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 1635,
+ "cited_in": [
+  "BC-S-0002",
+  "BC-S-0260",
+  "BC-S-0262",
+  "BC-S-0264"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "5f4f94cf93ea4b46d1708df13647c6712976268a5a2932604a28f372d23c2f53",
+ "raw_ext": "txt"
+}

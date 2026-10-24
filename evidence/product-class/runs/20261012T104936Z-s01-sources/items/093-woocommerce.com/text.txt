@@ -1,0 +1,481 @@
+___
+Skip to navigation
+Skip to content
+USD
+Change site currency USD selected
+Develop on Woo
+Hire an expert
+Get support
+Sell
+Click to show 12 more items
+Extensions
+Click to show 18 more items
+Resources
+Click to show 23 more items
+Enterprise ecommerce
+Log in
+Get started
+Documentation
+WooCommerce
+Expand
+Products
+Expand
+Extensions
+Expand
+Themes
+Expand
+WooPayments
+WooPay
+WooCommerce Shipping
+WooCommerce Tax
+Retired Products
+Expand
+Woo Marketplace
+Code Snippets
+Expand
+WooPayments / Documentation / WooPayments Documentation / WooPayments: Payment Methods / Buy now, pay later with WooPayments
+Buy now, pay later with WooPayments
+
+Buy now, pay later (also known as BNPL) payment methods allow your customers to pay for orders over time using a series of payments. For example, a customer could pay for a $2,000 USD product in four installments of $500 USD. You, the merchant, would still receive the full amount immediately — minus fees of course.
+
+How BNPL methods work
+
+BNPL services are used by a variety of businesses to increase conversion, increase average order value, and reach new customers. The BNPL providers underwrite customers, manage the installments, and collect payments — so you can focus on your own business.
+
+Customers will not see an increase in the product price. However, they may have an option to purchase products using a loan that accrues interest:
+
+These loans are issued by the BNPL provider. As a result, these interest payments are collected by the BNPL provider and not by you or WooPayments.
+
+Who should use BNPL methods
+
+BNPL payment methods may be a good fit for your business if:
+
+You sell high-value goods or services and want to increase conversion.
+You sell low-value goods or services and want to increase the average order value.
+You’re trying to reach customers who might not have access to credit cards.
+You want to sell to customers who may not be able to pay in full right away.
+
+However, BNPL payment methods may not be a good fit for you if:
+
+You sell to businesses, as BNPL methods cannot be used for B2B transactions.
+You sell subscriptions, as BNPL methods cannot be used for subscription products.
+Most of your sales are international. BNPL methods cannot be used across borders.
+BNPL fees
+
+Please see our full fees page for a list of the fees associated with each BNPL provider.
+
+Klarna “Pay Now” options
+
+In addition to paying over time, Klarna sometimes offers certain customers the ability to pay the whole order amount immediately. This occurs after the customer has selected the Klarna payment method.
+
+It’s important to note that the full Klarna fee applies in these cases, even if the customer uses Klarna’s “Pay Now” option to pay in full immediately using a card, bank transfer, or some other mechanism.
+
+Supported providers
+
+WooPayments supports Affirm, Afterpay, and Klarna so that merchants in a wide range of countries can offer flexible ways for their customers to pay.
+
+NOTE: Afterpay is known as “Cash App Afterpay” in the U.S. and “Clearpay” in the United Kingdom, but this page and our other documentation pages use the name Afterpay for the sake of simplicity.
+
+Which BNPL provider(s) you can use depends on the country you chose during the WooPayments signup process.
+
+ACCOUNT COUNTRY	AFFIRM	AFTERPAY	KLARNA
+Australia			
+Austria			
+Belgium			
+Canada			
+Denmark			
+Finland			
+France			Only “Pay in 3”
+Germany			
+Ireland			
+Italy			
+Netherlands			
+New Zealand			
+Norway			
+Spain			
+Sweden			
+United Kingdom			
+United States			
+Other supported countries			
+Enabling
+
+To use a BNPL method, first navigate to Payments > Settings and find the Buy now, pay later section. From there, you can enable Affirm, Afterpay, and/or Klarna.
+
+“More information needed”
+
+If you’re trying to enable a BNPL method, you may see a popup window that says that more information is needed. You might also see an alert next to the payment method details in Payments > Settings.
+
+In these cases, it means that you need to provide more information before you can enable that particular BNPL payment method.
+
+To do that, log into your Stripe dashboard and see if any information is missing there. If it is, you’ll see an alert in the Stripe dashboard.
+
+Click the Edit link next to any sections with incomplete information and provide whatever missing details are required.
+
+Be sure to save after you’re done. Once Stripe has verified the information you provided, the BNPL method should automatically be enabled.
+
+Customer experience
+
+After you enable Affirm, Afterpay, and/or Klarna, those methods will be available to customers so long as all of the following are true:
+
+Their billing country matches your WooPayments account country.
+They are paying in your account country’s national currency.
+The cart total is within the minimum and maximum range.
+
+A small promotion for Affirm, Afterpay, and/or Klarna will also be shown on eligible product pages. This messaging will also be displayed on the cart page for eligible carts.
+
+BNPL messaging on an eligible product page.
+BNPL messaging on the cart page.
+
+By clicking on this promotional text, customers can see a list of potential payment plans they can use during checkout. These options depend on their location, their currency, and the cart total.
+
+Checking out
+
+During checkout, if the customer chooses to pay with a BNPL provider, they will be taken to that provider’s website after clicking the Place Order button. There, they can create (or log into) an account with that BNPL provider.
+
+Next, they can accept or decline the terms of the payment plan(s) offered to them. Assuming they accept the terms, they will be returned to your site with the checkout process complete.
+
+Affirm has a video demo and some screenshots of their customer experience. Afterpay’s documentation and Klarna’s documentation are a bit less detailed, but the customer experience is more or less the same: they log in or create an account, choose a payment plan, and finish checking out.
+
+NOTE: BNPL providers will offer various payment plans to your customers depending on the purchase amount, the customer’s location, and other factors. Since merchants are paid in full as soon as the order is placed, the details of the customer’s payment plan (mostly) do not impact you.
+
+Merchant experience
+
+Orders placed via a BNPL payment method will appear under WooCommerce > Orders and Payments > Transactions, just like orders placed with cards.
+
+BNPL order in WooCommerce > Orders
+BNPL order in Payments > Transactions
+
+Orders paid via Klarna will have additional information on the Payments > Transactions page. This information includes:
+
+Category, which shares which Klarna payment method the customer chose.
+Preferred Locale, which provides locale information about the customer’s country and language.
+
+When the transaction is complete, your WooPayments account receive the entire purchase amount immediately. The important thing to keep in mind is that the customers are not paying you over time, they are paying the BNPL provider over time.
+
+Customer country and currency
+
+WooPayments does not support cross-border/international transactions using BNPL methods. As such, not all of your customers will be able to pay via BNPL.
+
+Specifically, for them to be able to use BNPL methods, customers must:
+
+Use a billing country that matches your WooPayments account country, and
+Pay in the national currency of your account country, shown in the chart below.
+YOUR ACCOUNT
+COUNTRY	TO USE BNPL, CUSTOMERS
+MUST BE PAYING IN…
+Australia	AUD
+Austria	EUR
+Belgium	EUR
+Canada	CAD
+Denmark	DKK
+Finland	EUR
+France	EUR
+Germany	EUR
+Ireland	EUR
+Italy	EUR
+Netherlands	EUR
+New Zealand	NZD
+Norway	NOK
+Spain	EUR
+Sweden	SEK
+United Kingdom	GBP
+United States	USD
+Purchase minimums and maximums
+
+There are minimum and maximum amounts that each BNPL provider can be used for, which can also vary by currency. These limits are shown in the charts below.
+
+Affirm
+CUSTOMER COUNTRY	MINIMUM AMOUNT	MAXIMUM AMOUNT
+Canada	$35 CAD	$30,000 CAD
+United States	$35 USD	$30,000 USD
+Afterpay
+CUSTOMER COUNTRY	MINIMUM AMOUNT	MAXIMUM AMOUNT
+Australia	$1 AUD	$2,000 AUD
+Canada	$1 CAD	$2,000 CAD
+New Zealand	$1 NZD	$2,000 NZD
+United Kingdom	£1 GBP	£1,200 GBP
+United States	$1 USD	$4,000 USD
+Klarna
+
+NOTE: Klarna allows customers to either buy now, pay later (BNPL), or pay immediately (Pay Now). Which of these are offered to customers depends on their country and the cart total. The maximums for BNPL and Pay Now are shown below for each country.
+
+CUSTOMER COUNTRY	MINIMUM AMOUNT	MAXIMUM BNPL AMOUNT	MAXIMUM PAY NOW AMOUNT
+Austria	€0.10 EUR	€5,000 EUR	€10,000 EUR
+Belgium	€1 EUR	€1,500 EUR	€10,000 EUR
+Denmark	1 DKK	50,000 DKK	100,000 DKK
+Finland	€1 EUR	€5,000 EUR	€10,000 EUR
+France	€35 EUR	€1,500 EUR	N/A
+Germany	€0.10 EUR	€10,000 EUR	€10,000 EUR
+Ireland	None	€1,000 EUR	€4,000 EUR
+Italy	None	€1,500 EUR	€10,000 EUR
+Netherlands	€1 EUR	€5,000 EUR	€15,000 EUR
+Norway	None	75,000 NOK	100,000 NOK
+Spain	None	€4,000 EUR	€10,000 EUR
+Sweden	None	100,000 SEK	150,000 SEK
+United Kingdom	None	£2,000 GBP	£4,000 GBP
+United States	None	$10,000 USD	$4,000 USD
+Testing BNPL purchases
+
+BNPL methods can be used in test mode, just like other payment methods.
+
+Affirm
+
+You’ll be shown the following screen after placing your test order:
+
+Enter your mobile phone number, click Continue, and then enter 123456 as the verification code. If you’re asked for additional information, it’s best to use your real name, email, and so on to avoid triggering Affirm’s fraud detection system.
+
+Choose from one of the available payment plans and click Choose this plan.
+
+Finally, disable the AutoPay option on the summary page, check the terms and conditions checkbox, then click Confirm.
+
+After confirming, you’ll be taken back to your site’s Order Received page as normal.
+
+Afterpay
+
+You’ll be shown the following screen after placing your test order:
+
+Click Authorize Test Payment to test a successful order, or click Fail Test Payment to test a failed order. For successful order tests, you’ll be taken back to your site’s Order Received page as usual.
+
+Klarna
+
+If you’re testing Klarna, you will go through a mockup of the Klarna account creation or signin flow before placing the test order. You’ll need to use a combination of Klarna’s test customer data and/or test payment data to achieve your desired outcome. (The example shown below uses U.S. data.)
+
+After placing a test order via Klarna, you’ll be shown the following screen:
+
+Enter a phone number from the Klarna test data and click Continue. For the SMS verification code, enter any six digits except for 999999.
+
+Choose from one of the available payment plans and click Continue.
+
+Click the Pay with Klarna button to finish checking out.
+
+You’ll be taken back to your site’s Order Received page as normal.
+
+Again, to test other purchase outcomes or situations, please see Klarna’s extensive test customer data and/or their test payment data.
+
+Refunds
+
+You can fully or partially refund BNPL orders just as you would for any other order. Each BNPL provider has a time window within which you must issue the refund.
+
+BNPL PROVIDER	YOU MUST ISSUE A REFUND WITHIN…
+Affirm	120 days of the order being placed
+Afterpay	120 days of the order being placed
+Klarna	180 days of the order being placed
+
+As with other payment methods in WooPayments, transaction fees are not refunded.
+
+Disputes
+
+Because customers must authenticate with their BNPL provider of choice during the purchase process, this helps reduce the risk of unauthorized payments. However, customers can still dispute BNPL transactions for other reasons.
+
+Notably, the timelines for BNPL disputes can differ from those of regular card payment disputes, so we have outlined the relevant details below.
+
+Customers must dispute the transaction within:
+
+Affirm: 60 days
+Afterpay: 120 days
+Klarna
+“Transaction unauthorized” disputes: 60 days.
+All other dispute reasons: 180 days.
+
+Once a dispute has been created, you must submit evidence within:
+
+Affirm: 15 days
+Afterpay: 14 days
+Klarna: 13 days
+
+After you submit evidence, the BNPL provider will decide within:
+
+Affirm: 15 days
+Afterpay: 30 days
+Klarna: 90 days
+
+Aside from the timeline changes above, disputes for BNPL orders function the same as any other dispute (e.g., you can view them and submit evidence under Payments > Disputes).
+
+Klarna inquiries and returns
+
+The Klarna returns process in their app and on their website is initiated by a Report return option. When a customer uses this option, and thereafter provides the return shipment information to Klarna (for physical goods), an inquiry is created.
+
+When such an inquiry is opened, you’ll receive notifications by email and in your site’s dashboard, just as you would for any other inquiry or dispute.
+
+Klarna inquiries do not impact your business’s rating with card networks or Klarna. However, they must be resolved within 21 calendar days. If no action is taken, the inquiry will automatically escalate to a dispute.
+
+During the 21-day inquiry period, you cannot submit evidence. Instead, you can either:
+
+Resolve the inquiry by issuing a refund. (This does not result in a dispute fee.)
+Take no action and allow the inquiry to escalate to a dispute after 21 days.
+
+Although inquiries can sound a bit alarming, they are often just part of a normal return process. We recommend contacting the customer to confirm if they’re returning the item(s). If so, you can wait for the return to arrive and then issue a refund as normal.
+
+NOTE: Klarna return inquiries have the reason code “Credit not processed.” Any Klarna inquiries with other reason codes are normal inquiries, not returns.
+
+If the inquiry escalates to a dispute, Klarna will immediately withdraw the disputed amount and a dispute fee from your account. You’ll be notified and can choose to challenge or accept the dispute within 13 calendar days.
+
+If you challenge the dispute and haven’t received the returned item(s), make sure to include that information in your response. After the dispute is reviewed and resolved, we will notify you through the standard dispute flow.
+
+Note that Klarna allows up to three inquiries or disputes on the same order. This is a limit set by Klarna, not something that WooPayments controls. If you receive more than one dispute/inquiry on the same order, keep your evidence from earlier cases well organized, since you may need to reference the material again if a later case opens.
+
+Each dispute/inquiry will appear as its own section on the transaction details page (see Multiple disputes per payment), so you can review and respond to each one by itself.
+
+Prohibited products and businesses
+
+Because BNPL payment methods inherently involve a third-party company, there are additional restrictions on the types of products you can sell with them. In addition to our general list of prohibited or restricted products, the restrictions below also apply.
+
+Affirm
+Home improvement services, including contractors
+Titled goods and auto loans, including cars, boats, and other motor vehicles
+Professional services, including legal, consulting, and accounting
+Non-fungible tokens (NFTs)
+Business-to-business (B2B)
+Subscription products
+
+See the full list for more details.
+
+WARNING: Affirm also requires that your site only be available in U.S. English (en_US), Canadian English (en_CA), and/or Canadian French (fr_CA). If your site is available in any other languages (e.g. via a multi-language plugin), Affirm may disable your access to their payment method.
+
+Afterpay
+Alcohol
+Donations
+Pre-orders
+Non-fungible tokens (NFTs)
+Business-to-business (B2B)
+Subscription products
+
+See the full list for more details.
+
+Klarna
+Charities
+Political initiatives, organizations, or parties
+Subscription products
+BNPL offers in Apple Pay and Google Pay
+
+Amazon Pay, Apple Pay, and Google Pay may offer buy now, pay later options via their interfaces. Please note that there is no way for WooPayments to control or disable these offerings, aside from disabling those payment methods entirely.
+
+Please check each payment methods documentation for further details on what BNPL offerings might be included and how they work.
+
+How do I switch from a BNPL extension?
+
+If you already use a BNPL extension from our Marketplace (e.g., Affirm, Afterpay, or Klarna Payments), you should disable that extension before activating the matching BNPL payment method in WooPayments.
+
+Was this guide helpful for you?
+Related Products
+WooCommerce Shipping
+by
+Woo
+
+WooCommerce Shipping is a free label-printing and fulfillment extension built into WooCommerce that lets store owners buy and print USPS,...
+
+Free download
+Free download
+Rated 2.7 out of 5 stars
+2.7 
+(21)
+Mastercard Merchant Cloud
+by
+Mastercard
+
+A seamless checkout with 35+ payment methods for global needs. Enjoy built-in security and simple integration for a smooth experience.
+
+Free download
+Free download
+ON THIS PAGE
+How BNPL methods work
+Who should use BNPL methods
+BNPL fees
+Klarna "Pay Now" options
+Supported providers
+Enabling
+"More information needed"
+Customer experience
+Checking out
+Merchant experience
+Customer country and currency
+Purchase minimums and maximums
+Affirm
+Afterpay
+Klarna
+Testing BNPL purchases
+Affirm
+Afterpay
+Klarna
+Refunds
+Disputes
+Klarna inquiries and returns
+Prohibited products and businesses
+Affirm
+Afterpay
+Klarna
+BNPL offers in Apple Pay and Google Pay
+How do I switch from a BNPL extension?
+WooPayments
+by Woo
+No payment details required • Set up in minutes
+Install for free
+30-day money-back guarantee
+Support teams across the world
+Safe and secure online payments
+Sell
+WooCommerce
+WooCommerce pricing
+Payments
+No-code customization
+Marketing
+Checkout
+Shipping
+Mobile app
+Enterprise ecommerce
+Marketplace
+WooCommerce extensions
+WooCommerce themes
+New
+Essentials
+Collections
+Developed by Woo
+Build
+Woo for developers
+Developer resources
+Become a Woo agency
+Become a Marketplace partner
+Become an affiliate
+Resources
+Blog
+Documentation
+WooCommerce site examples
+Product updates
+Email newsletter
+Support
+Feature requests
+WooCommerce hosting
+Hire an agency
+Participate in customer research
+Accessibility
+Support forums
+Company
+About
+Press
+Download WooCommerce free
+Join the Woo community
+Woo trademark guidelines
+Brand and logo guidelines
+Do not sell or share my personal information
+WooCommerce Support Policy
+Refund Policy
+Contact us
+Follow us on Facebook
+Follow us on X
+Follow us on Instagram
+Follow us on LinkedIn
+USD
+Change site currency USD selected
+Terms of Service
+Privacy Policy
+Privacy Notice for California Users
+
+© WooCommerce, Inc. 2026
+
+AN
+AUTOMATTIC
+MEDLEY
+Use of your personal data
+We and our partners process your personal data (such as browsing data, IP Addresses, cookie information, and other unique identifiers) based on your consent and/or our legitimate interest to optimize our website, marketing activities, and your user experience.
+Customize
+Accept all

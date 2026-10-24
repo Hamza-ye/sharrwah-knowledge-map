@@ -1,0 +1,18 @@
+{
+ "n": 46,
+ "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/system-logs.md",
+ "dir": "items/046-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:20:01Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/system-logs.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 342,
+ "cited_in": [
+  "BC-S-0296"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "12164d9352019a6abd45c14dc949391ced660f8c38e306ef76c6a289a4ca5f00",
+ "raw_ext": "txt"
+}

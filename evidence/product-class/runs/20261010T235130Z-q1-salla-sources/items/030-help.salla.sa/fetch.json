@@ -1,0 +1,20 @@
+{
+ "n": 30,
+ "url": "https://help.salla.sa/article/توثيق-متجرك-الجديد-في-الكويت-كشركة-مملوك-لفرد/ff6snmt0dx2w0j6ki594ik7l",
+ "dir": "items/030-help.salla.sa",
+ "fetched_at": "2026-10-10T23:51:46Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.salla.sa/article/توثيق-متجرك-الجديد-في-الكويت-كشركة-مملوك-لفرد/ff6snmt0dx2w0j6ki594ik7l",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 138649,
+ "cited_in": [
+  "SA-S-0138",
+  "SA-S-0139",
+  "SA-S-0140"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "fe0354251d28d9deedf4cd58e56e897c434ec4cdf214e0ea3d7215c59aac7d05",
+ "raw_ext": "html"
+}

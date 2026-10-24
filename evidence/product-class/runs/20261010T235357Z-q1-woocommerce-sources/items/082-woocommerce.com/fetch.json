@@ -1,0 +1,27 @@
+{
+ "n": 82,
+ "url": "https://woocommerce.com/product-category/woocommerce-extensions/",
+ "dir": "items/082-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:06Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/product-category/woocommerce-extensions/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 48928,
+ "cited_in": [
+  "WC-S-0697",
+  "WC-S-0698",
+  "WC-S-0699",
+  "WC-S-0700",
+  "WC-S-0701",
+  "WC-S-0702",
+  "WC-S-0703",
+  "WC-S-0704",
+  "WC-S-0705",
+  "WC-S-0913"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "c4d6362cb9ffb1c935f2ec0de77792e1258758fbdcffe1041e6658d1a277cd82",
+ "raw_ext": "html"
+}

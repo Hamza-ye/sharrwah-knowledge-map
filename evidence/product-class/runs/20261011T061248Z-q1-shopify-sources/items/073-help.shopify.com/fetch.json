@@ -1,0 +1,18 @@
+{
+ "n": 73,
+ "url": "https://help.shopify.com/en/manual/payments/shopify-payments/store-currency/payouts-in-multiple-currencies.md",
+ "dir": "items/073-help.shopify.com",
+ "fetched_at": "2026-10-11T06:13:03Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/payments/shopify-payments/store-currency/payouts-in-multiple-currencies.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 4910,
+ "cited_in": [
+  "SH-S-0365"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "7877edc6ebc54e2a978ae3707fdd8b1dee343dd59e338232180000b880f19cd4",
+ "raw_ext": "txt"
+}

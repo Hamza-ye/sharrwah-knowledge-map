@@ -1,0 +1,30 @@
+{
+ "n": 87,
+ "url": "https://docs.bigcommerce.com/developer/docs/integrations/webhooks/event-reference/channel-events.md",
+ "dir": "items/087-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T04:20:42Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/docs/integrations/webhooks/event-reference/channel-events.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 6175,
+ "cited_in": [
+  "BC-S-0005",
+  "BC-S-0059",
+  "BC-S-0079",
+  "BC-S-0182",
+  "BC-S-0199",
+  "BC-S-0207",
+  "BC-S-0216",
+  "BC-S-0223",
+  "BC-S-0228",
+  "BC-S-0231",
+  "BC-S-0245",
+  "BC-S-0367",
+  "BC-S-0384"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "d41b46732fa03f32b0707ca2c17f80ef9a9ebd7209946a670a61d302bb32c062",
+ "raw_ext": "txt"
+}

@@ -1,0 +1,764 @@
+> This page is for Developer.
+
+> For clean Markdown of any page, append .md to the page URL.
+> For a complete documentation index, see https://docs.bigcommerce.com/llms.txt.
+> For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server.
+
+# API Accounts
+
+> Create API accounts, authenticate requests, and configure OAuth scopes and access tokens for BigCommerce APIs.
+
+BigCommerce offers a suite of APIs that let you manage store data, sign customers in, make client-side queries for product information, and write apps that integrate third-party services into store operations.
+
+BigCommerce **API accounts** play a role in every authenticated request to our servers. Our API accounts come in a few different flavors to meet the needs of different use cases. For example, app API accounts work well in multi-store contexts, whereas store API accounts are a good choice for frontend applications. **Some endpoints only work with one kind of API account.**
+
+For an overview of the authentication schemes that our APIs use, see the [Authentication](#authentication) section below.
+
+## API accounts
+
+BigCommerce offers three types of OAuth-based API accounts to developers who wish to use BigCommerce's REST APIs: store-level credentials, app-level credentials, and account-level credentials. This section describes the difference between the three, how to obtain and revoke account credentials, and the use cases for each. It also contains a reference for available OAuth scopes and provides a compelling list of reasons to migrate from legacy API tokens to OAuth credentials.
+
+Every parent set of API credentials that you request for your store is its own **API account**. At its simplest, an API account consists of the following:
+
+* The `client_id` uniquely identifies the app or user, or the *client*, making a request.
+* The `client_secret` is a cryptographically secure value known only to the client and BigCommerce.
+
+Every active API account has at least one `access_token`. [Store-level API accounts](#store-level-api-accounts) include a static access token that does not change. [App-level API accounts](#app-level-api-accounts) expect each application to generate a unique access token for every store that installs the app. [Account-level API accounts](#account-level-api-accounts) include a single access token that belongs to the parent account of the store that the user is signed in to at the time of creation.
+
+**Guard these values closely.** The client ID and client secret will never change; access tokens do not expire based on time and cannot be manually invalidated. It's best practice to limit each account's [OAuth scope](#oauth-scopes) to only the privileges needed to complete that app or user's designated tasks. Create separate API accounts for each app, store API user or function, or account-related implementation.
+
+### Choosing the right kind of API account
+
+Where both types of API account are supported, review the preceding sections to make an informed choice about which best fits your use case.
+
+| API or Use Case                                                                                             | Store-level API account | App-level API account | Account-level API account |
+| :---------------------------------------------------------------------------------------------------------- | :---------------------: | :-------------------: | :-----------------------: |
+| [GraphQL Account API](#access-tokens), including [Users](/developer/api-reference/graphql/account/overview) |                         |                       |             ×             |
+| [GraphQL Admin API](#access-tokens)                                                                         |            ×            |           ×           |                           |
+| [GraphQL Storefront API](#bigcommerce-generated-jwts)                                                       |            ×            |                       |                           |
+| [B2B REST Management API](#access-tokens)                                                                   |            ×            |                       |                           |
+| [REST Store Management APIs](#access-tokens)                                                                |            ×            |           ×           |                           |
+| [REST Storefront API](#same-origin-cors-authentication)                                                     |            ×            |                       |                           |
+| [Customer Login API](#user-generated-jwts)                                                                  |                         |           ×           |                           |
+| [Current Customer API](#client-id)                                                                          |                         |           ×           |                           |
+| [Payments API](#bigcommerce-generated-jwts)                                                                 |            ×            |           ×           |                           |
+| [Apps that host REST Provider APIs (provider apps)](#developer-configured-authentication)                   |                         |           ×           |                           |
+| [Apps that create App Extensions](/developer/docs/integrations/apps/app-extensions)                         |                         |           ×           |                           |
+| Apps hosted in the store control panel (single-click apps)                                                  |                         |           ×           |                           |
+| Manual connection between a third-party app and a store                                                     |            ×            |                       |             ×             |
+| Single-store frontend scripts                                                                               |                         |           ×           |                           |
+
+### Store-level API accounts
+
+Merchants generate single-store API credentials when they create API accounts in their store control panel, in the **[Settings > Store-level API accounts](https://login.bigcommerce.com/deep-links/manage/settings-list)** menu. Use these credentials to read and change one store's data with BigCommerce's APIs. You can't change store-level access tokens or OAuth scopes.
+
+In addition to the [API account components](#api-accounts) in the preceding section, store-level API accounts contain the following attributes out of the box:
+
+* An `access_token`, which accompanies most REST API requests.
+* The **client name** is a label for your convenience, and it doesn't accompany requests.
+* The **API path** is the URL to which you make requests. The API path won't change, but it will have `/v3/` or `/v2/` appended to it, depending on the current version for the endpoint you're querying.
+
+Most APIs that work with store-level API accounts use the `access_token` to authenticate requests to BigCommerce. However, a few use the access token to generate a temporary credential. To learn more about special cases that involve store-level credentials, consult the documentation for the API you want to use.
+
+> **Note**
+>
+> #### Be careful with client secrets
+>
+> Do not send your `client_secret` or `access_token` in plain text or an unencrypted payload. **Be particularly careful with the `client_secret`.** An attacker can use your `client_secret` to both sign and decrypt JWTs sent between you and BigCommerce.
+
+#### Creating store-level API credentials
+
+To create a store-level API account, consult our Knowledge Base article on [Creating a Store API Account](https://support.bigcommerce.com/s/article/Store-API-Accounts#creating).
+
+#### Revoking store-level API credentials
+
+To revoke store-level API credentials, you must delete the corresponding store API account. If the `client_id` and `client_secret` are compromised, or the account has become unnecessary, secure your account by deleting the API account. You cannot recover a deleted API account, so take care.
+
+> **Note**
+>
+> #### Delete carefully
+>
+> Deleting an account cannot be undone, so be sure before clicking the trash can icon. You can also use the checkboxes on the left side to delete multiple accounts at once – but be especially careful when using this option.
+
+To delete a store-level API account, consult our Knowledge Base article on [Deleting a Store API Account](https://support.bigcommerce.com/s/article/Store-API-Accounts?language=en_US#deleting).
+
+> **Note**
+>
+> #### Don't forget your webhooks and metafields
+>
+> Some resources are only accessible to the API account that created them. These include webhooks, metafields, and scripts. If you need to revoke a store-level API account, plan accordingly.
+>
+> Webhooks do not persist upon account deletion. Verify webhooks associated with an account before deleting it.
+
+### App-level API accounts
+
+You can [create app-level API accounts](#creating-app-level-api-credentials) in the [Developer Portal](https://build.bigcommerce.com). After a store owner or authorized user installs and authorizes an app, most apps use access tokens generated from the API account's client ID, client secret, and a temporary grant code to read and change store data. [Generate access tokens](#app-level-access-tokens) with the BigCommerce-initiated grant code authorization flow.
+
+Some APIs use app-level API accounts to implement alternative authentication patterns. For a summary of all our authentication methods, see the [authentication schemes](#stable-tokens) described earlier in this article.
+
+For more on working with apps, see our [Guide to Building Apps](/developer/docs/integrations/getting-started). The sections on [Implementing OAuth](/developer/docs/integrations/apps/guide/auth) and [Callback Handlers](/developer/docs/integrations/apps/guide/handling-callbacks) are particularly relevant to generating access tokens.
+
+#### Creating app-level API credentials
+
+To create an app and its associated API account, consult our article on [Managing Apps in the Developer Portal](/developer/docs/integrations/apps/guide/managing-apps-in-dev-portal#create-an-app-profile).
+
+#### App-level access tokens
+
+App-level API accounts do not come pre-configured with an access token. Each time a store installs your app, BigCommerce initiates a grant code authorization flow to help your app generate a dedicated access token for that store. For further details, see [Authenticating an app](/developer/docs/integrations/apps/guide/auth).
+
+#### Revoking app-level API credentials
+
+There is no way to manually revoke or force-regenerate app-level API account access tokens. However, either of the following actions triggers a token refresh:
+
+* When the store owner's email address changes
+* When you modify the app API account's OAuth scopes
+
+After one of these changes, the store owner will be prompted to review the change and reauthorize the app the next time they click the app icon in the store control panel.
+
+> **Note**
+>
+> #### Delete apps carefully
+>
+> When you delete an app in the [Dev Portal](https://build.bigcommerce.com), there is no way to recover the client ID or client secret. If you choose to do this, don't forget to mitigate the potential loss of [webhook and metafield](#dont-forget-your-webhooks-and-metafields)-related data and functionality.
+
+To delete an app-level API account, consult our article on [Managing Apps in the Developer Portal](/developer/docs/integrations/apps/guide/managing-apps-in-dev-portal#deleting-apps).
+
+### Account-level API accounts
+
+Account-level API accounts are designed to work with the GraphQL Account API, which manages resources beyond the scope of a single store. For example, [managing control panel users](/developer/api-reference/graphql/account/overview) in the BigCommerce ecosystem. Current and future features available using the GraphQL Account API toolset allow developers to build custom integrations and solutions that require high-level access to store and platform resources. Using this API, you can integrate with third-party applications, streamline and automate business processes, and manage multiple merchant stores per account.
+
+#### Creating account-level credentials
+
+To create an account-level API account visit the [account control panel](https://accounts.bigcommerce.com/tokens) or the store control panel for a member store at **[Settings > Account-level API accounts](https://login.bigcommerce.com/deep-links/manage/settings-list)**.
+
+To learn more about creating an account-level API account, consult our Knowledge Base article on [API Accounts](https://support.bigcommerce.com/s/article/Store-API-Accounts#account-level).
+
+> **Note**
+>
+> When you create account-level credentials, they belong to the parent account for the store you're signed in to.
+
+Account-level API credentials provide direct access to **all** the account's stores, not just the store that was signed in at the time of creation. Their permissions are limited only by the OAuth scopes they were granted at the time of creation. Keep the access token and client secret secure.
+
+#### Revoking account-level API credentials
+
+An account-level access token is valid until the account is no longer active. However, you can manually delete account-level credentials.
+
+> **Note**
+>
+> Deleting API accounts is risky and must be done with caution. Only users who have the correct permissions can perform this action.
+
+To delete an account-level API account, visit the [account control panel](https://accounts.bigcommerce.com/tokens) and find the account you want to delete in the list. Click the three dots in the **Action** column, then click **Delete**. Follow any prompts that appear.
+
+### Migrating from legacy to OAuth
+
+> **Note**
+>
+> #### Legacy API Accounts
+>
+> BigCommerce no longer issues legacy API Accounts to new stores. Existing legacy API Accounts will continue to work until further notice. **Migrate to OAuth as soon as possible.**
+
+#### Benefits of migrating to OAuth
+
+We recommend migrating from legacy API credentials to OAuth, if you haven't already. Migration provides a wealth of benefits, including the following:
+
+* **Unified requests**: Send all OAuth requests to a single URL: `https://api.bigcommerce.com`. Using a common hostname prevents interruptions of service when a store's domain or SSL/TLS certificate changes or expires.
+
+* **Latest and greatest APIs**: BigCommerce's V3 APIs are accessible exclusively with OAuth.
+
+* **Webhook subscriptions**: OAuth API accounts can subscribe to real-time event notifications using BigCommerce's webhooks.
+
+* **Shared secrets**: Use new APIs and endpoints that require shared secrets, including the [Customer Login](/developer/docs/storefront/guides/customer-authentication/customer-login) and [Current Customer](/developer/docs/storefront/guides/customer-authentication/current-customer) APIs.
+
+* **Zippier responses**: Responses to OAuth requests use gzip compression and less of your bandwidth.
+
+* **Better security with granular permissions**: All OAuth tokens are scoped to specific operations and endpoints. If you suspect a breach, you will know which resources could be affected.
+
+#### How to migrate
+
+Before you update your API connections to use OAuth instead of legacy basic authentication, take the following actions:
+
+* Create an API account appropriate to your use case. Keeping in mind the API endpoints your connections use, create either a store API account or an app API account per the preceding instructions. To adhere to industry-standard security practices, configure the account with the minimum OAuth scopes for your use case. If you're using an app API account, you can always modify the scope later.
+* If you use one of our [client libraries](/developer/docs/overview/tools-and-sdks), consult the library's documentation for establishing an optimal OAuth configuration.
+* After you create your connection, update your connection parameters as follows:
+  * Use `https://api.bigcommerce.com` as the gateway URL instead of the BigCommerce store's secure hostname. For example, route requests that formerly went to `https://store-{{store_hash}}.mybigcommerce.com/api/v2/orders/{{order_id}}` or `https://my-custom-store-domain.com/api/v2/orders/{{order_id}}` will now use `https://api.bigcommerce.com/stores/{{store_hash}}/v2/orders/{{order_id}}`.
+  * Rewrite your HTTP request headers to use the `X-Auth-Token` header to pass the API account's `access_token` instead of the `Authorization` header. For more information, see the [access tokens](#access-tokens) section above.
+
+Rate limiting works differently for OAuth API connections. For details, see the [Rate Limits section](/developer/docs/overview/api-fundamentals/rate-limits) of our API best practices article.
+
+## OAuth scopes
+
+**Scope** grants and limits a program's ability to read and write data. Set the scopes to the minimum level of access your implementation needs.
+
+All OAuth scopes except `default` provide `read-only` permissions scopes so that you can limit some accounts to sending `GET` and `HEAD` requests.
+
+> **Note**
+>
+> Webhooks are accessible from the default scope that is automatically accessible to all API accounts.
+
+### Token creation scopes
+
+| UI Name                                      | Permission | Parameter                                     | Description                                                                   | Endpoints                                                                                                                                                                                                      |
+| :------------------------------------------- | :--------- | :-------------------------------------------- | :---------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Create Payments                              | modify     | `store_payments_access_token_create`          | Create payment access tokens, process payments                                | [Payments, Access Tokens](/developer/api-reference/rest/admin/payments/tokens/create-payment-access-token)  [Payments, Process Payment](/developer/api-reference/rest/admin/payments/processing/payments-post) |
+| Storefront API Tokens                        | modify     | `store_storefront_api`                        | Create GraphQL Storefront API bearer tokens                                   | [Storefront API Token V3](/developer/api-reference/rest/admin/authentication-apis/storefront-api-tokens/create-token)                                                                                          |
+| Storefront API Customer Impersonation Tokens | modify     | `store_storefront_api_customer_impersonation` | Create GraphQL Storefront API bearer tokens that allow customer impersonation | [Storefront API Token V3, Customer Impersonation](/developer/api-reference/rest/admin/authentication-apis/storefront-api-tokens/create-token)                                                                  |
+
+### Store resource scopes
+
+| UI Name                         | Permission | Parameter                                    | Description                                                                                                                                 | Resources                                                                                                                                                                                                                                                                                                                                                                                           |
+| :------------------------------ | :--------- | :------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| App Extensions                  | manage     | `store_app_extensions_manage`                | Manage App Extensions; requires an app-level API account                                                                                    | [GraphQL Admin API](/developer/docs/integrations/apps/app-extensions)                                                                                                                                                                                                                                                                                                                               |
+| Carts                           | modify     | `store_cart`                                 | View and modify carts                                                                                                                       | [Carts V3](/developer/api-reference/rest/admin/management/carts)                                                                                                                                                                                                                                                                                                                                    |
+| Carts                           | read-only  | `store_cart_read_only`                       | View carts                                                                                                                                  | [Carts V3](/developer/api-reference/rest/admin/management/carts)                                                                                                                                                                                                                                                                                                                                    |
+| Channel Settings                | modify     | `store_channel_settings`                     | View and modify a list of channels                                                                                                          | [Channels V3](/developer/api-reference/rest/admin/management/channels)                                                                                                                                                                                                                                                                                                                              |
+| Channel Settings                | read-only  | `store_channel_settings_read_only`           | View a list of channels                                                                                                                     | [Channels V3](/developer/api-reference/rest/admin/management/channels)                                                                                                                                                                                                                                                                                                                              |
+| Channel Listings                | modify     | `store_channel_listings`                     | View and modify a list of all channel listings for a particular channel                                                                     | [Channels V3, Listings](/developer/api-reference/rest/admin/management/channels/listings/get-channel-listings)                                                                                                                                                                                                                                                                                      |
+| Channel Listings                | read-only  | `store_channel_listings_read_only`           | View a list of all channel listings for a particular channel                                                                                | [Channels V3, Listings](/developer/api-reference/rest/admin/management/channels/listings/get-channel-listings)                                                                                                                                                                                                                                                                                      |
+| Checkouts                       | modify     | `store_checkout`                             | View and modify a checkout                                                                                                                  | [Storefront Checkout API](/developer/api-reference/rest/storefront/checkouts)                                                                                                                                                                                                                                                                                                                       |
+| Checkouts                       | read-only  | `store_checkout_read_only`                   | View checkout content                                                                                                                       | [Storefront Checkout API](/developer/api-reference/rest/storefront/checkouts)                                                                                                                                                                                                                                                                                                                       |
+| Checkout Content                | modify     | `store_content_checkout`                     | View and modify content on checkout pages                                                                                                   | [Scripts V3](/developer/api-reference/rest/admin/management/scripts/create-script)                                                                                                                                                                                                                                                                                                                  |
+| Checkout Content                | read-only  | `store_content_checkout_read_only`           | View content on checkout pages                                                                                                              | [Scripts V3](/developer/api-reference/rest/admin/management/scripts/create-script)                                                                                                                                                                                                                                                                                                                  |
+| Content                         | modify     | `store_v2_content`                           | View and modify store content                                                                                                               | [Pages V2](/developer/api-reference/rest/admin/content/pages/get-pages) [Blog V2](/developer/api-reference/rest/admin/content/store-content/blog-posts/get-blog-posts) [Redirects V2](/developer/api-reference/rest/admin/content/store-content/redirects/get-redirects) [Widgets V3](/developer/api-reference/rest/admin/content/widgets)                                                          |
+| Content                         | read-only  | `store_v2_content_read_only`                 | View store content                                                                                                                          | [Pages V2](/developer/api-reference/rest/admin/content/pages/get-pages) [Blog V2](/developer/api-reference/rest/admin/content/store-content/blog-posts/get-blog-posts) [Redirects V2](/developer/api-reference/rest/admin/content/store-content/redirects/get-redirects) [Widgets V3](/developer/api-reference/rest/admin/content/widgets)                                                          |
+| Customers                       | modify     | `store_v2_customers`                         | View and modify customer information                                                                                                        | [Customers V2](/developer/api-reference/rest/admin/management/customers/v3/get-customers) [Customer Groups V2](/developer/api-reference/rest/admin/management/customers/v2/customer-groups/get-customer-groups) [Subscribers V3](/developer/api-reference/rest/admin/management/subscribers/get-subscribers) [Wishlists V3](/developer/api-reference/rest/admin/management/wishlists/get-wishlists) |
+| Customers                       | read-only  | `store_v2_customers_read_only`               | View customer information                                                                                                                   | [Customers V2](/developer/api-reference/rest/admin/management/customers/v3/get-customers) [Customer Groups V2](/developer/api-reference/rest/admin/management/customers/v2/customer-groups/get-customer-groups) [Subscribers V3](/developer/api-reference/rest/admin/management/subscribers/get-subscribers) [Wishlists V3](/developer/api-reference/rest/admin/management/wishlists/get-wishlists) |
+| Customers Login                 | modify     | `store_v2_customers_login`                   | Sign customers in to your storefront                                                                                                        | [Customer Login API](/developer/docs/storefront/guides/customer-authentication/customer-login)                                                                                                                                                                                                                                                                                                      |
+| Fulfillment Methods             | modify     | `store_fulfillment_methods_manage`           | View and modify order fulfillment methods                                                                                                   | [Pickup Methods V3](/developer/api-reference/rest/admin/management/pickup/pickup-methods) [Pickup Options V3](/developer/api-reference/rest/admin/management/pickup/pickup-options)                                                                                                                                                                                                                 |
+| Fulfillment Methods             | read-only  | `store_fulfillment_methods_read_only`        | View order fulfillment methods                                                                                                              | [Pickup Methods V3](/developer/api-reference/rest/admin/management/pickup/pickup-methods) [Pickup Options V3](/developer/api-reference/rest/admin/management/pickup/pickup-options)                                                                                                                                                                                                                 |
+| Information & Settings          | modify     | `store_v2_information`                       | View and modify store information and settings                                                                                              | [Store Information V2](/developer/api-reference/rest/admin/management/store-information/v2/get-store-information) [Time V2](/developer/api-reference/rest/admin/management/store-information/v2/get-system-timestamp) [Settings V3](/developer/api-reference/rest/admin/management/settings)                                                                                                        |
+| Information & Settings          | read-only  | `store_v2_information_read_only`             | View general store information and settings                                                                                                 | [Store Information V2](/developer/api-reference/rest/admin/management/store-information/v2/get-store-information) [Time V2](/developer/api-reference/rest/admin/management/store-information/v2/get-system-timestamp) [Settings V3](/developer/api-reference/rest/admin/management/settings)                                                                                                        |
+| Marketing                       | modify     | `store_v2_marketing`                         | View and modify marketing information                                                                                                       | [Coupons V2](/developer/api-reference/rest/admin/content/marketing/coupons/get-coupons) [Gift Certificates V2](/developer/api-reference/rest/admin/content/marketing/gift-certificates/get-gift-certificates) [Banners V2](/developer/api-reference/rest/admin/content/marketing/banners/get-banners) [Promotions V3](/developer/api-reference/rest/admin/management/promotions)                    |
+| Marketing                       | read-only  | `store_v2_marketing_read_only`               | View marketing information                                                                                                                  | [Coupons V2](/developer/api-reference/rest/admin/content/marketing/coupons/get-coupons) [Gift Certificates V2](/developer/api-reference/rest/admin/content/marketing/gift-certificates/get-gift-certificates) [Banners V2](/developer/api-reference/rest/admin/content/marketing/banners/get-banners)                                                                                               |
+| Metafield Ownership             | manage     | `store_metafield_change_owner`               | Manage which API accounts own metafields.                                                                                                   | [GraphQL Admin API](/developer/api-reference/graphql/account/overview)                                                                                                                                                                                                                                                                                                                              |
+| Metafields Access               | standard   | `store_metafield_write`                      | Default. Create and manage metafields belonging to the API account making the request.                                                      | All  endpoints and APIs that manage metafields, including the [GraphQL Admin API](/developer/api-reference/graphql/account/overview).                                                                                                                                                                                                                                                               |
+| Metafields Access               | full       | `store_metafield_write_all`                  | Manage all metafields for the store, regardless of the API account that created them. Includes metafields that have `app_only` permissions. | All endpoints and APIs that manage metafields, including the [GraphQL Admin API](/developer/api-reference/graphql/account/overview).                                                                                                                                                                                                                                                                |
+| Orders                          | modify     | `store_v2_orders`                            | View and modify orders                                                                                                                      | [Orders V2](/developer/api-reference/rest/admin/management/orders) [Order Status V2](/developer/api-reference/rest/admin/management/orders/order-status/get-order-statuses)                                                                                                                                                                                                                         |
+| Orders                          | read-only  | `store_v2_orders_read_only`                  | View orders                                                                                                                                 | [Orders V2](/developer/api-reference/rest/admin/management/orders) [Order Status V2](/developer/api-reference/rest/admin/management/orders/order-status/get-order-statuses)                                                                                                                                                                                                                         |
+| Order Fulfillment               | modify     | `store_order_fulfillment_manage`             | View and modify order fulfillments                                                                                                          | [Pickup V3](/developer/api-reference/rest/admin/management/pickup)                                                                                                                                                                                                                                                                                                                                  |
+| Order Fulfillment               | read-only  | `store_order_fulfillment_read_only`          | View order fulfillments                                                                                                                     | [Pickup V3](/developer/api-reference/rest/admin/management/pickup)                                                                                                                                                                                                                                                                                                                                  |
+| Order Transactions              | modify     | `store_v2_transactions`                      | View and modify order transactions                                                                                                          | [Orders V3, Transactions](/developer/api-reference/rest/admin/management/order-operations)                                                                                                                                                                                                                                                                                                          |
+| Order Transactions              | read-only  | `store_v2_transactions_read_only`            | View order transactions                                                                                                                     | [Orders V3, Transactions](/developer/api-reference/rest/admin/management/order-operations)                                                                                                                                                                                                                                                                                                          |
+| Payments - Get accepted methods | read-only  | `store_payments_methods_read`                | Get a list of payment methods                                                                                                               | [Payments - Get accepted methods](/developer/api-reference/rest/admin/payments/methods/get-payment-methods)                                                                                                                                                                                                                                                                                         |
+| Products                        | modify     | `store_v2_products`                          | View and modify products, brands, categories, and other product information.                                                                | [Catalog V3](/developer/api-reference/rest/admin/overview) [Price Lists V3](/developer/api-reference/rest/admin/management/price-lists)                                                                                                                                                                                                                                                             |
+| Products                        | read-only  | `store_v2_products_read_only`                | View products                                                                                                                               | [Catalog V3](/developer/api-reference/rest/admin/overview) [Price Lists V3](/developer/api-reference/rest/admin/management/price-lists)                                                                                                                                                                                                                                                             |
+| Sites & Routes                  | modify     | `store_sites`                                | View and modify sites and routes                                                                                                            | [Sites V3, Routes, Certificates](/developer/api-reference/rest/admin/management/sites)  [Channels V3 Sites](/developer/api-reference/rest/admin/management/sites/get-site)                                                                                                                                                                                                                          |
+| Sites & Routes                  | read-only  | `store_sites_read_only`                      | View external storefronts with non-BigCommerce URLs                                                                                         | [Sites V3, Routes, Certificates](/developer/api-reference/rest/admin/management/sites)  [Channels V3 Sites](/developer/api-reference/rest/admin/management/sites/get-site)                                                                                                                                                                                                                          |
+| Store Inventory                 | modify     | `store_inventory`                            | View and modify store inventory                                                                                                             | [Inventory V3](/developer/api-reference/rest/admin/management/inventory)                                                                                                                                                                                                                                                                                                                            |
+| Store Inventory                 | read-only  | `store_inventory_read_only`                  | View store inventory                                                                                                                        | [Inventory V3](/developer/api-reference/rest/admin/management/inventory)                                                                                                                                                                                                                                                                                                                            |
+| Store Locations                 | modify     | `store_locations`                            | View and modify store locations                                                                                                             | [Locations V3](/developer/api-reference/rest/admin/management/inventory/locations)                                                                                                                                                                                                                                                                                                                  |
+| Store Locations                 | read-only  | `store_locations_read_only`                  | View store locations                                                                                                                        | [Locations V3](/developer/api-reference/rest/admin/management/inventory/locations)                                                                                                                                                                                                                                                                                                                  |
+| Stored Payment Instruments      | read-only  | `store_stored_payment_instruments_read_only` | View stored payment instruments                                                                                                             | [Stored Instruments V3](/developer/docs/admin/checkout-and-cart/payments/stored-instruments)                                                                                                                                                                                                                                                                                                        |
+| Stored Payment Instruments      | modify     | `store_stored_payment_instruments`           | View and modify stored payment instruments                                                                                                  | [Stored Instruments V3](/developer/docs/admin/checkout-and-cart/payments/stored-instruments)                                                                                                                                                                                                                                                                                                        |
+| Store Translations              | read-only  | `store_translations_read_only`               | View store translations                                                                                                                     | [Translations Admin GraphQL API](/developer/docs/admin/store-configuration/translations)                                                                                                                                                                                                                                                                                                            |
+| Store Translations              | modify     | `store_translations`                         | View and modify store translations                                                                                                          | [Translations Admin GraphQL API](/developer/docs/admin/store-configuration/translations)                                                                                                                                                                                                                                                                                                            |
+| Themes                          | modify     | `store_themes_manage`                        | View and modify themes                                                                                                                      | [Themes V3](/developer/api-reference/rest/admin/content/themes)                                                                                                                                                                                                                                                                                                                                     |
+| Themes                          | read-only  | `store_themes_read_only`                     | View themes                                                                                                                                 | [Themes V3](/developer/api-reference/rest/admin/content/themes)                                                                                                                                                                                                                                                                                                                                     |
+| B2B Edition                     | modify     | `store_b2b_manage`                           | View and modify B2B Edition data, including companies, users, quotes, invoices, and more. Requires B2B Edition to be enabled on the store.  | [B2B REST Management API](/developer/api-reference/rest/b2b/management)                                                                                                                                                                                                                                                                                                                             |
+
+### Account resource scopes
+
+| UI Name               | Permission | Parameter                      | Description                                         | Resources                                                                |
+| :-------------------- | :--------- | :----------------------------- | :-------------------------------------------------- | :----------------------------------------------------------------------- |
+| Account               | read-only  | `account_read`                 | View account details                                | [GraphQL Account API](/developer/api-reference/graphql/account/overview) |
+| Account Apps          | read-only  | `account_apps_read`            | View the apps associated with an account            | [GraphQL Account API](/developer/api-reference/graphql/account/overview) |
+| Account Checkouts     | read-only  | `account_checkouts_read`       | View the checkouts associated with an account       | [GraphQL Account API](/developer/api-reference/graphql/account/overview) |
+| Account Checkouts     | modify     | `account_checkouts_create`     | Create checkouts associated with an account         | [GraphQL Account API](/developer/api-reference/graphql/account/overview) |
+| Account Stores        | read-only  | `account_stores_read`          | View the stores associated with an account          | [GraphQL Account API](/developer/api-reference/graphql/account/overview) |
+| Account Subscriptions | read-only  | `account_subscriptions_read`   | View the subscriptions associated with an account   | [GraphQL Account API](/developer/api-reference/graphql/account/overview) |
+| Account Subscriptions | modify     | `account_subscriptions_cancel` | Cancel the subscriptions associated with an account | [GraphQL Account API](/developer/api-reference/graphql/account/overview) |
+| Account Users         | read-only  | `account_users_read`           | View the users associated with an account           | [GraphQL Account API](/developer/api-reference/graphql/account/overview) |
+| Account Users         | write      | `account_users_write`          | Add and update users                                | [GraphQL Account API](/developer/api-reference/graphql/account/overview) |
+| Account Users         | delete     | `account_users_delete`         | Remove a user from an account                       | [GraphQL Account API](/developer/api-reference/graphql/account/overview) |
+
+## Authentication
+
+This section provides an overview of the authentication schemes that our APIs use, organized by the header or other mechanism they use to authenticate with our servers.
+
+### Stable tokens
+
+Most of our APIs use credentials that do not expire based on a time frame. Depending on the type of API account the credentials belong to, they might expire based on user or developer actions.
+
+The following sections describe the two authentication schemes we use that rely on stable tokens. They include example requests and list or describe the endpoints to which the schemes apply.
+
+#### Access tokens
+
+> **Note**
+>
+> Legacy API accounts used HTTP basic authentication. They are no longer available to new stores. For more information, see [API Accounts: Migrating from legacy to OAuth](/developer/docs/overview/api-fundamentals/api-accounts#migrating-from-legacy-to-oauth).
+
+Most of our REST endpoints and GraphQL Admin API endpoints use the `X-Auth-Token` header to authenticate to BigCommerce servers. For more about the APIs that do **NOT** use the `X-Auth-Token` header, consult this article's sections on [dynamic tokens](#dynamic-tokens) and [same-origin CORS authentication](#same-origin-cors-authentication).
+
+The `X-Auth-Token` header uses access tokens to authenticate requests. [Create an OAuth API account](/developer/docs/overview/api-fundamentals/api-accounts#api-accounts) to generate access tokens. Pass the access token as the value of the `X-Auth-Token` header of the request you want to authenticate.
+
+The [B2B REST Management API](/developer/api-reference/rest/b2b/management) also uses the `X-Auth-Token` header, but requires the additional `X-Store-Hash` header to identify the store. B2B REST Management API endpoints use a different base URL (`https://api-b2b.bigcommerce.com`), so the store hash is not included in the request path as it is for other BigCommerce REST APIs. For more on B2B authentication, see [Authentication for hosted storefronts](/developer/docs/b2b-edition/getting-started/authentication).
+
+> **Note**
+>
+> #### The X-Auth-Client header is deprecated
+>
+> Your API account's client ID is [no longer a required header value](/developer/changelog/2020/10/9#oauth-client-id-is-no-longer-required-for-requests-to-apibigcommercecom).
+
+For a request to succeed, the access token's API account must have permission to receive the response. Configure your API account with the minimum set of OAuth scopes that your implementation needs.
+
+To find the specific OAuth scopes your requests require, consult the root API reference pages for the families of endpoints you plan to use. For example, see the [OAuth scopes for the Email Templates endpoints](/developer/api-reference/rest/admin/content/email-templates). We also maintain a [list of all our OAuth scopes](/developer/docs/overview/api-fundamentals/api-accounts#oauth-scopes).
+
+##### X-Auth-Token header example requests
+
+The following tabs contain examples of how to authenticate requests by passing an access token to the `X-Auth-Token` header.
+
+#### GET request
+
+**`Example GET request with X-Auth-Token header`**
+
+```http title="Example GET request with X-Auth-Token header" showLineNumbers={false}
+GET https://api.bigcommerce.com/stores/{{STORE_HASH}}/v... # endpoint
+X-Auth-Token: {{access_token}}
+Accept: application/json
+```
+
+#### POST request
+
+**`Example POST request with X-Auth-Token header`**
+
+```http title="Example POST request with X-Auth-Token header" showLineNumbers={false}
+POST https://api.bigcommerce.com/stores/{{STORE_HASH}}/v... # endpoint
+X-Auth-Token: {{access_token}}
+Accept: application/json
+Content-Type: application/json
+
+{
+  // request body
+}
+```
+
+#### PUT request
+
+**`Example PUT request with X-Auth-Token header`**
+
+```http title="Example PUT request with X-Auth-Token header" showLineNumbers={false}
+PUT https://api.bigcommerce.com/stores/{{STORE_HASH}}/v... # endpoint
+X-Auth-Token: {{access_token}}
+Accept: application/json
+Content-Type: application/json
+
+{
+  // request body
+}
+
+```
+
+#### DELETE request
+
+**`Example DELETE request with X-Auth-Token header`**
+
+```http title="Example DELETE request with X-Auth-Token header" showLineNumbers={false}
+DELETE https://api.bigcommerce.com/stores/{{STORE_HASH}}/v... # endpoint
+X-Auth-Token: {{access_token}}
+Accept: application/json
+```
+
+#### B2B REST Management API
+
+The B2B REST Management API uses a different base URL and requires the `X-Store-Hash` header in addition to `X-Auth-Token`.
+
+**`Example GET request with X-Auth-Token and X-Store-Hash headers`**
+
+```http title="Example GET request with X-Auth-Token and X-Store-Hash headers" showLineNumbers={false}
+GET https://api-b2b.bigcommerce.com/api/v3/io/{endpoint}
+X-Auth-Token: {{access_token}}
+X-Store-Hash: {{store_hash}}
+Accept: application/json
+Content-Type: application/json
+```
+
+#### Client ID
+
+Another **stable token**-based scheme involves mutual authentication. The requesting app identifies itself by sending an API account's client ID as a query parameter, and our servers return a BigCommerce-generated JSON web token, or *JWT*, which securely encrypts merchant data. The app can decode the JWT to view the response. For example, the Current Customer API's JWT payload identifies the currently signed-in customer.
+
+The following table lists the APIs that authenticate with a client ID. For OAuth scopes, consult the **Endpoint Reference** column.
+
+| API description                                                                                    | Endpoint reference                                                                                                    | API account type | Query parameter | Query argument        |
+| :------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------- | :--------------- | :-------------- | :-------------------- |
+| [Current Customer API](/developer/docs/storefront/guides/customer-authentication/current-customer) | [Get current customer](/developer/api-reference/rest/admin/authentication-apis/current-customer/get-current-customer) | app              | `app_client_id` | API account client ID |
+
+#### Current Customer API example request
+
+#### Example Request: Current Customer API
+
+**`Example GET request`**
+
+```js title="Example GET request"
+const customerJWT = (apiAccountClientId) => {
+  let resource = `/customer/current.jwt?app_client_id=${apiAccountClientId}`;
+  return fetch(resource)
+  .then(response => {
+    if(response.status === 200) {
+      return response.text();
+    } else {
+      return new Error(`response.status is ${response.status}`);
+    }
+  })
+  .then(jwt => {
+    console.log(jwt); // JWT here
+    // decode...
+  })
+  .catch(error => console.error(error));
+}
+```
+
+#### Example Response: Current Customer API
+
+**`Example text response: JWT string`**
+
+```shell title="Example text response: JWT string" showLineNumbers={false}
+# response body
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXN0b21lciI6eyJpZCI6NDkyNywiZW1haWwiOiJqb2huLmRvZUBnbWFpbC5jb20iLCJncm91cF9pZCI6IjYifSwiaXNzIjoiYmMvYXBwcyIsInN1YiI6ImFiYzEyMyIsImlhdCI6MTQ4MDgzMTg2MywiZXhwIjoxNDgwODMyNzYzLCJ2ZXJzaW9uIjoxLCJhdWQiOiI2c3YxNnRmeDNqNWdzb3BtNDJzczVkZDY3ZzJzcnZxIiwiYXBwbGljYXRpb25faWQiOiI2c3YxNnRhc2RncjJiNWhzNWRkNjdnMnNydnEiLCJzdG9yZV9oYXNoIjoiYWJjMTIzIiwib3BlcmF0aW9uIjoiY3VycmVudF9jdXN0b21lciJ9.uYTDTJzhDOog7PE1yLNeP6zDNdFMb91fS-NZrJpsts0
+```
+
+### Dynamic tokens
+
+Several of our APIs authenticate with JSON web tokens, or *JWTs*. JWTs authorize both the requester and the recipient because they contain a signed payload that the recipient must successfully decrypt before working with the transmitted data. You can use some JWTs for any number of requests within an expiration window; others must be unique to each request.
+
+Our JWT-based authentication schemes fall into the following categories:
+
+* The user passes a [BigCommerce-generated JWT](#bigcommerce-generated-jwts) as part of the value of the `Authorization` header
+* The user sends BigCommerce a [user-generated JWT](#user-generated-jwts)
+* [BigCommerce-encrypted payload JWTs](#bigcommerce-encrypted-payload-jwts) send apps information as part of a signed JWT's payload
+
+All requests that use JWTs require at least two steps. In addition to the request itself, you must also either get, make, or decrypt the JWT that the request sends or receives. The following sections describe the steps for these three JWT-based authentication schemes, reference the endpoints to which they apply, and give example requests.
+
+> **Note**
+>
+> #### Make sure your tokens are in scope
+>
+> Before you create an API account to request dynamic tokens, determine the required OAuth scopes by consulting the documentation for your target endpoint and its corresponding REST token generation endpoint.
+
+#### BigCommerce-generated JWTs
+
+Some APIs authenticate with an `Authorization` header that contains a string concatenated with a BigCommerce-generated JWT. Requests to these APIs contain the following two parts:
+
+1. The user obtains the JWT by:
+   * Making an API request to BigCommerce, or
+   * On Stencil storefronts, extracting it from the page's context.
+2. The user sends the intended request.
+
+The following table lists the APIs that use the `Authorization` header, along with information about obtaining a token and forming a valid header value. For OAuth scope, expiry window, and other implementation details, consult the **Endpoint Reference** column.
+
+| API description                                                                                   | Obtain a JWT                                                                                                                                                                                                                                                                                                                  | Endpoint reference                                                                         | API account type | Authorization header value |
+| :------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------- | :--------------- | :------------------------- |
+| [GraphQL Storefront API](/developer/docs/storefront/guides/graphql-storefront-api/authentication) | [Create a token](/developer/api-reference/rest/admin/authentication-apis/storefront-api-tokens/create-token), Stencil context                                                                                                                                                                                                 | [Create a Storefront query](/developer/docs/storefront/guides/graphql-storefront-api)      | store            | `Bearer {{TOKEN}}`         |
+| [Payment processing](/developer/docs/admin/checkout-and-cart/payments) endpoint                   | [Create a payment access token](/developer/api-reference/rest/admin/payments/tokens/create-payment-access-token), `completeCheckout` with the [GraphQL Storefront API](/developer/docs/admin/checkout-and-cart/custom-checkouts/graphql-storefront#handling-payments)                                                         | [Process a payment](/developer/api-reference/rest/admin/payments/processing/payments-post) | app or store     | `PAT {{TOKEN}}`            |
+| [B2B GraphQL Storefront API](/developer/docs/b2b-edition/getting-started/authentication)          | [`login` mutation](/developer/api-reference/graphql/b2b/b2b-graphql/mutations/login), [`authorization` mutation](/developer/api-reference/graphql/b2b/b2b-graphql/mutations/authorization), or [Get a Storefront Token](/developer/api-reference/rest/b2b/management/authentication/get-auth-storefront) via the B2B REST API | [B2B GraphQL API](/developer/api-reference/graphql/b2b/b2b-graphql)                        | store/user       | `Bearer {{TOKEN}}`         |
+
+To obtain a dynamic token, send a request to the REST endpoint listed in the **Obtain a JWT** column or consult the article listed in the **API Description** column. Use an API account with the appropriate [token creation scope](/developer/docs/overview/api-fundamentals/api-accounts#token-creation-scopes) for the kind of tokens you wish to generate.
+
+#### Authorization header example requests
+
+#### Example request: Dynamic token
+
+**`Example request: limited-use auth token`**
+
+```http title="Example request: limited-use auth token" showLineNumbers={false}
+POST https://api.bigcommerce.com/stores/{{STORE_HASH}}/some-token-generating-endpoint
+X-Auth-Token: {{access_token}}
+Accept: application/json
+Content-Type: application/json
+
+{
+  // request body per token request endpoint documentation
+}
+```
+
+Then, include the returned token with an identifying string in the Authorization header of your request.
+
+#### GraphQL Storefront API
+
+GraphQL Storefront response-request pairs resemble the following:
+
+**`Example response: Create a GraphQL Storefront API token`**
+
+```json title="Example response: Create a GraphQL Storefront API token"
+{
+  "token":"BigCommerceProvidedJwt.dotDelimited.threePartString",
+  "meta": {
+    // ...
+  }
+}
+```
+
+
+
+**`Example query: GraphQL Storefront API`**
+
+```js title="Example query: GraphQL Storefront API"
+
+const gqlStorefrontQuery = (token, gqlQueryString) => {
+  // example token is "BigCommerceProvidedJwt.dotDelimited.threePartString"
+  let authHeader = `Bearer ${token}`; // there's a space between "Bearer" and the token
+  let requestBody = {
+    query: gqlQueryString
+  };
+  return fetch('/graphql', {
+    method: 'POST',
+    credentials: 'same-origin',
+    headers: {
+        'Content-Type': 'application/json',
+        'Authorization': authHeader
+    },
+    body: JSON.stringify(requestBody)
+  })
+  .then(response => response.json())
+  .then(result => {
+    console.log(result); // GraphQL query response
+    // do stuff...
+  })
+  .catch(error => console.error(error));
+}
+```
+
+#### Payments API
+
+Payments response-request pairs resemble the following:
+
+**`Example response: Create a payment access token`**
+
+```json title="Example response: Create a payment access token"
+{
+  "data": {
+    "id": "BigCommerceProvidedJwt.dotDelimited.threePartString"
+  },
+  "meta": {
+    // ...
+  }
+}
+```
+
+
+
+**`Example request: Process a payment`**
+
+```http title="Example request: Process a payment"
+
+# example TOKEN is BigCommerceProvidedJwt.dotDelimited.threePartString
+
+POST https://payments.bigcommerce.com/stores/{{STORE_HASH}}/payments
+Accept: application/vnd.bc.v1+json # note uncommon accept header value
+Authorization: PAT {{TOKEN}} # there's a space between "PAT" and the token
+Content-Type: application/json
+
+{
+  // ...
+}
+
+```
+
+#### User-generated JWTs
+
+Some APIs rely on the app or implementation to send user-generated JWTs that simultaneously authenticate the request and contain the request body in their payload. Requests to these APIs contain the following two parts:
+
+* The user encrypts, or signs, the JWT
+* The user sends the intended request
+
+The following table lists the APIs that rely on user-generated JWTs. For OAuth scope, expiry window, and other implementation details, consult the **Endpoint Reference** column.
+
+| API description                                                                                | Create a JWT        | Endpoint reference                                                                              | API account type |
+| :--------------------------------------------------------------------------------------------- | :------------------ | :---------------------------------------------------------------------------------------------- | :--------------- |
+| [Customer Login API](/developer/docs/storefront/guides/customer-authentication/customer-login) | See API description | [SSO API Reference](/developer/api-reference/rest/admin/authentication-apis/customer-login-api) | app              |
+
+#### Customer Login API example request
+
+For the Customer Login API, your request will look something like the following:
+
+**`Example GET request: Customer Login API`**
+
+```js title="Example GET request: Customer Login API" showLineNumbers={false}
+const loginCustomer = (yourJwt) => {
+  let resource = `${window.location.origin}/login/token/${yourJwt}`;
+  return fetch(resource)
+  .then(response => {
+    console.log(response);
+    if(response.status === 200) {
+      // resolve any parts of the response to work with...
+      return Promise.all([response.url, response.text()]);
+    } else {
+      return new Error(`response.status is ${response.status}`);
+    }
+  })
+  .then(([url, content]) => {
+    console.log(url); // navigate to URL, or
+    console.log(content); // work with page content
+    // etc...
+  })
+  .catch(error => console.error(error));
+}
+```
+
+#### BigCommerce-encrypted payload JWTs
+
+BigCommerce-encrypted payload JWTs let control panel apps listen to and reason about events that affect them, but happen outside the app itself. These events include users installing, loading, and uninstalling the app. Working with these JWTs includes the following parts:
+
+* The app receives the JWT from BigCommerce
+* The app validates the JWT, then decrypts its payload
+* The payload's data informs what the app does next
+
+To learn more, see our [Apps Guide](/developer/docs/integrations/getting-started), especially the articles on [authorization, installation](/developer/docs/integrations/apps/guide/auth), and other [app callback events](/developer/docs/integrations/apps/guide/handling-callbacks).
+
+### Same-origin CORS authentication
+
+The following APIs rely on [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) headers for authentication. You do not need to send any BigCommerce-specific tokens with your requests to these endpoints.
+
+#### REST Storefront API
+
+The REST Storefront API lets you make client-side requests for carts, checkouts, and orders using JavaScript or an alternative language that compiles to run in the browser. It is a convenience collection of operations that affect one customer at a time and run in the context of the customer's current session on a BigCommerce-hosted storefront. You can perform authenticated versions of the same operations using the GraphQL Storefront API or the REST Store Management APIs.
+
+The following examples illustrate how to make calls to the REST Storefront API:
+
+**`Example script: REST Storefront API call`**
+
+```js title="Example script: REST Storefront API call" showLineNumbers={false}
+const storefrontCall = (endpoint, requestBody = null) => {
+  let resource = `${window.location.origin}/api/storefront${endpoint.route}`;
+  let init = {
+    method: endpoint.method,
+    credentials: "same-origin",
+    headers: {
+      // note: no authorization
+      "Accept": endpoint.accept,
+    }
+  }
+  if(requestBody) {
+    init.body = JSON.stringify(requestBody);
+    init.headers["Content-Type"] = endpoint.content;
+  }
+
+  return fetch(resource, init)
+  .then(response => {
+    console.log(response);
+    if(response.status === endpoint.success) {
+      // resolve promise using the Fetch API method that correlates with the endpoint.accept value
+      return response.json(); // or response.text()
+    } else {
+      return new Error(`response.status is ${response.status}`);
+    }
+  })
+  .then(result => {
+    console.log(result); // requested data
+    // do stuff...
+  })
+  .catch(error => console.error(error));
+}
+
+```
+
+
+
+#### GET request
+
+**`Example GET call: Get a cart`**
+
+```js title="Example GET call: Get a cart"
+let endpoint = {
+  route: "/carts?include=lineItems.physicalItems.options",
+  method: "GET",
+  accept: "application/json",
+  // content: "application/json",
+  success: 200
+}
+
+storefrontCall(endpoint);
+
+```
+
+#### POST request
+
+**`Example POST call: Add cart line items`**
+
+```js title="Example POST call: Add cart line items"
+let endpoint = {
+  route: "/carts/123abc45-de67-89f0-123a-bcd456ef7890/items",
+  method: "POST",
+  accept: "application/json",
+  content: "application/json",
+  success: 200
+}
+
+let requestBody = {
+  lineItems: [
+    {
+      productId: 123,
+      quantity: 3
+    }
+  ]
+}
+
+storefrontCall(endpoint, requestBody);
+
+```
+
+#### PUT request
+
+**`Example PUT call: Update checkout billing address`**
+
+```js title="Example PUT call: Update checkout billing address"
+let endpoint = {
+  route: "/checkouts/123abc45-de67-89f0-123a-bcd456ef7890/billing-address/123abc456def7",
+  method: "PUT",
+  accept: "application/json",
+  content: "application/json",
+  success: 200
+}
+
+let requestBody = {
+  "firstName": "Jane",
+  "lastName": "Doe",
+  "email": "janedoe@example.com",
+  "company": "BigCommerce",
+  "address1": "123 Main Street",
+  "address2": "Apt 1",
+  "city": "Austin",
+  "stateOrProvinceCode": "TX",
+  "countryCode": "US",
+  "postalCode": "78701"
+}
+
+storefrontCall(endpoint, requestBody);
+
+```
+
+#### DELETE request
+
+**`Example DELETE call: Delete a cart`**
+
+```js title="Example DELETE call: Delete a cart"
+let endpoint = {
+  route: "/carts/123abc45-de67-89f0-123a-bcd456ef7890",
+  method: "DELETE",
+  accept: "application/json",
+  // content: "application/json",
+  success: 204
+}
+
+storefrontCall(endpoint);
+
+```
+
+### Developer-configured authentication
+
+#### REST Provider APIs
+
+Unlike our other APIs, we do not host the REST Provider APIs. The Provider API specifications describe *requests that BigCommerce sends* the provider app's server, and the responses that we expect in return.
+
+The following table describes the authentication characteristics of our REST Provider APIs.
+
+| API description                                                          | API reference                                                                  | Configuration reference                                                                                                                                                                                                                                                                                     | Associated API account | Authentication method                                      |
+| :----------------------------------------------------------------------- | :----------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------- | :--------------------------------------------------------- |
+| [Shipping Provider API](/developer/docs/integrations/shipping-providers) | [Shipping Provider Reference](/developer/docs/integrations/shipping-providers) | [For shipping providers defining request body keys](/developer/docs/integrations/shipping-providers#carrier-configurations), and/or with [For connecting shipping providers using request body keys](/developer/api-reference/rest/admin/management/shipping/v2/shipping-carrier/update-carrier-connection) | implemented in an app  | developer-defined request body keys                        |
+| [Tax Provider API](/developer/docs/integrations/tax-providers)           | [Tax Provider Reference](/developer/docs/integrations/tax-providers)           | [For updating a tax provider connection](/developer/api-reference/rest/integrations/tax-provider/tax-provider-connection/update-tax-provider-connection)                                                                                                                                                    | implemented in an app  | `Authorization: Basic {{base64encode(username:password)}}` |
+
+In the Tax Provider API `Authorization` header, the username and password belong to the app's tax provider service. What this username and password actually refer to is up to the app developer.
+
+## Resources
+
+* [Guide to Building Apps](/developer/docs/integrations/getting-started)
+* [Rate Limits](/developer/docs/overview/api-fundamentals/rate-limits)
+* [API Status Codes](/developer/api-reference/rest/overview#rest-http-status-codes)

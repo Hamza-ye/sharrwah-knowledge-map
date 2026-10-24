@@ -1,0 +1,50 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">&gt; This page is for Developer.
+
+&gt; For clean Markdown of any page, append .md to the page URL.
+&gt; For a complete documentation index, see https://docs.bigcommerce.com/llms.txt.
+&gt; For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server.
+
+# Webhooks v3
+
+Get notified when specific events occur on a BigCommerce store. For more information, see the [Webhooks Overview](/developer/docs/integrations/webhooks), [Webhooks Events](/developer/docs/integrations/webhooks/event-reference), or [Webhooks Tutorial](/developer/docs/integrations/webhooks/tutorial).
+
+In general, webhook usage follows the workflow:
+
+1. Create a webhook for a specific scope using [Create a Webhook](/developer/api-reference/rest/integrations/webhooks/create-webhooks)
+2. Receive event callback payload at the destination URL
+3. Respond to callback with success status `2xx` or any failure status
+   1. On failure, await second callback attempt
+   2. On success, move to event handling
+4. Handle event based on payload
+
+Callback payloads have a uniform structure, including the minimum information to uniquely identify what event occurred, on what store, with respect to what data, and at what time. The `data` object serves as the only variable data structure in the payload.
+
+For inventory and location events, `data` will include `location_id`, and `variant_id` or `product_id` as necessary. For all other events `data` will include `type`, `id`, and any scope-specific information (such as `couponId` for the `store/cart/couponApplied`). Scope-specific fields are outlined in the [Webhooks Events](/developer/docs/integrations/webhooks/event-reference).
+
+An example of payload structure is included below. Datatypes are outlined in the following table.
+
+| Field        | Type      | Example                                    |
+| ------------ | --------- | ------------------------------------------ |
+| `producer`   | `string`  | `stores/abc123`                            |
+| `hash`       | `string`  | `dd70c0976e06b67aaf671e73f49dcb79230ebf9d` |
+| `created_at` | `integer` | `1561479335`                               |
+| `store_id`   | `string`  | `1025646`                                  |
+| `scope`      | `string`  | `store/order/created`                      |
+| `data`       | `object`  | variable                                   |
+| `data.type`  | `string`  | `product`                                  |
+| `data.id`    | `integer` | `223`                                      |
+
+**`Example callback structure`**
+
+```json title="Example callback structure"
+{
+  "producer": "stores/&lt;STORE_HASH&gt;",
+  "hash": "&lt;EVENT_HASH&gt;",
+  "created_at": "&lt;EVENT_TIMESTAMP&gt;",
+  "store_id": "&lt;STORE_ID&gt;",
+  "scope": "&lt;WEBHOOK_SCOPE&gt;",
+  "data": {
+    "&lt;EVENT_DATA&gt;"
+  }
+}
+```</pre></body></html>

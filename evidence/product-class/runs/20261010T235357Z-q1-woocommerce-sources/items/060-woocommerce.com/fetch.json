@@ -1,0 +1,18 @@
+{
+ "n": 60,
+ "url": "https://woocommerce.com/document/woopayments/fees/currency-conversion-fees/",
+ "dir": "items/060-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:04Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/woopayments/fees/currency-conversion-fees/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 45499,
+ "cited_in": [
+  "WC-S-0540"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "3ac86ac6c7a574f361d4d1458d28a89db8e9815c31a499752cea9e9ff6f44190",
+ "raw_ext": "html"
+}

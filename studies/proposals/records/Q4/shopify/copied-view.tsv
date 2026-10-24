@@ -1,0 +1,116 @@
+copy_id	identifier	statement	scope
+Q4-SH-K0184	product-network-orders	"path":"product-network-orders"	
+Q4-SH-K0185	order:pay_by_creditcard_on_mobile	"path":"orders/pay_by_creditcard_on_mobile/:id"	
+Q4-SH-K0186	orders	"path":"orders"	
+Q4-SH-K0187	product-network-orders	"eligibility":{"permissions":["ORDERS"]}	
+Q4-SH-K0188	order:write-off:create	"eligibility":{"betas":["bfbcab91"]}	
+Q4-SH-K0189	order:edit:shipping-address	"eligibility":{"oneOf":[{"permissions":["MANAGE_ORDERS_INFORMATION"]},{"permissions":["FULFILL_AND_SHIP_ORDERS"]}]}	
+Q4-SH-K0193	payments:settings:index	"eligibility":{"oneOf":[{"permissions":["MANAGE_PAYMENTS_SETTINGS"]},{"permissions":["GIFT_CARDS"]},{"permissions":["SHOPIFY_PAYMENTS_TRANSFERS"]}]}	
+Q4-SH-K0707	read_cash_tracking	Requires `read_cash_tracking` access scope.	
+Q4-SH-K0708	read_cash_tracking	Requires `read_cash_tracking` access scope. Also: User must have `view_payment_tracking_sessions_pos_channel` or `payments_cash_session_history` retail role permission.	
+Q4-SH-K0709	write_cash_tracking	Requires `write_cash_tracking` access scope.	
+Q4-SH-K0776	customer_read_draft_orders	Requires `customer_read_orders` access scope or `customer_read_draft_orders` access scope.	
+Q4-SH-K0777	customer_read_draft_orders	Requires `customer_read_draft_orders` access scope.	
+Q4-SH-K0778	read_draft_orders	The webhook topic for `draft_orders/create` events. Occurs whenever a draft order is created. Requires the `read_draft_orders` scope.	
+Q4-SH-K0779	read_draft_orders	The webhook topic for `draft_orders/delete` events. Occurs whenever a draft order is deleted. Requires the `read_draft_orders` scope.	
+Q4-SH-K0780	read_draft_orders	The webhook topic for `draft_orders/update` events. Occurs whenever a draft order is updated. Requires the `read_draft_orders` scope.	
+Q4-SH-K0781	read_draft_orders	Requires `read_draft_orders` access scope.	
+Q4-SH-K0782	write_draft_orders	Requires `write_draft_orders` access scope. Also: The user must have access to manage draft orders.	
+Q4-SH-K0783	write_draft_orders	Requires `write_draft_orders` access scope. Also: The user must have access to delete multiple draft orders.	
+Q4-SH-K0784	write_draft_orders	Requires `write_draft_orders` access scope.	
+Q4-SH-K0785	write_draft_orders	Requires `write_draft_orders` access scope. Also: The user must have access to mark as paid, or set payment terms.	
+Q4-SH-K0786	write_draft_orders	Requires `write_draft_orders` access scope or `write_quick_sale` access scope. Also: The user must have access to manage draft orders.	
+Q4-SH-K0898	customer_read_orders	Requires `customer_read_orders` access scope or `customer_read_draft_orders` access scope.	
+Q4-SH-K0899	customer_read_orders	Requires `customer_read_orders` access scope.	
+Q4-SH-K0900	customer_read_orders	In your app’s `shopify.app.toml` file, include the required [access scopes](https://shopify.dev/docs/apps/build/cli-for-apps/app-configuration#access_scopes). The example code needs the `customer_read_orders` access scope to read the `ORDER` resource with the GraphQL Admin API.	
+Q4-SH-K0901	customer_read_orders	In your app’s `shopify.app.toml` file, include the `customer_read_orders` and `customer_read_customers` access scopes to display a customer’s information using the Customer Account API. In a production app, you might need to add other access scopes, depending on your use case.	
+Q4-SH-K0902	read_all_orders	| `read_all_orders`Shopify approval required | All relevant [orders](https://shopify.dev/docs/api/admin-graphql/latest/objects/Order) rather than the default window of orders created within the last 60 days.This access scope is used in conjunction with existing order scopes, for example `read_orders` or `write_orders`. |	
+Q4-SH-K0903	read_all_orders	* You need to [request](https://shopify.dev/docs/api/usage/access-scopes#orders-permissions) the `read_all_orders` access scope. You will need this for your extension to work with orders that are more than 60 days old.	
+Q4-SH-K0904	read_all_orders	If you do not have the `read_all_orders` access scope, ensure that the order you use to test the UI extension is less than 60 days old. Otherwise, your app will fail when fetching the order data.	
+Q4-SH-K0905	read_all_orders	By default, your app has access to orders placed in the last 60 days. To use the GraphQL Admin API to query orders that were placed more than 60 days ago, your app needs to request the `read_all_orders` scope. Learn how to [configure your access scopes using Shopify CLI](https://shopify.dev/docs/apps/build/cli-for-apps/app-configuration).	
+Q4-SH-K0906	read_marketplace_orders	Requires `read_orders` access scope or `read_marketplace_orders` access scope.	
+Q4-SH-K0907	read_marketplace_orders	Requires `read_returns` access scope and (`read_orders` access scope or `read_marketplace_orders` access scope).	
+Q4-SH-K0908	read_marketplace_orders	Requires `read_orders` access scope, `read_marketplace_orders` access scope, `read_assigned_fulfillment_orders` access scope, `read_merchant_managed_fulfillment_orders` access scope, `read_third_party_fulfillment_orders` access scope or `read_marketplace_fulfillment_orders` access scope.	
+Q4-SH-K0909	read_marketplace_orders	Requires `read_orders` access scope, `read_marketplace_orders` access scope or `read_quick_sale` access scope.	
+Q4-SH-K0910	read_marketplace_orders	Requires `read_orders` access scope, `read_marketplace_orders` access scope or `read_point_of_sale_devices` access scope.	
+Q4-SH-K0911	write_marketplace_orders	Requires `write_orders` access scope or `write_marketplace_orders` access scope. Also: This action cannot be reversed.	
+Q4-SH-K0912	write_marketplace_orders	Requires `write_orders` access scope or `write_marketplace_orders` access scope. Also: The user must have capture\_payments\_for\_orders permission.	
+Q4-SH-K0913	write_marketplace_orders	Requires `write_orders` access scope, `write_marketplace_orders` access scope or `write_quick_sale` access scope. Also: The app must have the `write_pos_staff_member_event_attribution_overrides` access scope to assign events to another staff member.	
+Q4-SH-K0914	write_orders	Requires `write_draft_orders` access scope. Also: Requires `write_orders` access scope.	
+Q4-SH-K0915	write_orders	Requires `write_orders` access scope. Also: User needs manage\_orders\_information permission.	
+Q4-SH-K0916	write_orders	Requires `write_orders` access scope. Also: This mutation is only accessible to apps authenticated using [offline tokens](https://shopify.dev/docs/apps/build/authentication-authorization/access-tokens/offline-access-tokens).	
+Q4-SH-K0917	read_payment_terms	The webhook topic for `payment_schedules/due` events. Occurs whenever payment schedules are due. Requires the `read_payment_terms` scope.	
+Q4-SH-K0918	read_payment_terms	The webhook topic for `payment_terms/create` events. Occurs whenever payment terms are created. Requires the `read_payment_terms` scope.	
+Q4-SH-K0919	read_payment_terms	The webhook topic for `payment_terms/delete` events. Occurs whenever payment terms are deleted. Requires the `read_payment_terms` scope.	
+Q4-SH-K0920	read_payment_terms	The webhook topic for `payment_terms/update` events. Occurs whenever payment terms are updated. Requires the `read_payment_terms` scope.	
+Q4-SH-K0921	read_payment_terms	Requires `read_payment_terms` access scope.	
+Q4-SH-K0922	write_payment_terms	Requires `write_payment_terms` access scope. Also: The user must have access to orders or draft orders.	
+Q4-SH-K0923	write_payment_terms	Requires `write_payment_terms` access scope. Also: User must have either orders or draft orders access according to the reference.	
+Q4-SH-K1188	settings/billing	[**Billing**](https://admin.shopify.com/settings/billing)	
+Q4-SH-K1193	settings/payments	[**Payment providers**](https://admin.shopify.com/settings/payments)	
+Q4-SH-K1200	orders	[**Orders**](https://admin.shopify.com/orders)	
+Q4-SH-K1333	help.shopify.com/en/manual/your-account/manage-billing/billing-charges/types-of-charges/third-party-charges/third-party-transaction-fees.md	Transaction fees vary depending on the [Shopify plan](https://www.shopify.com/pricing) that you choose	
+Q4-SH-K1334	help.shopify.com/en/manual/your-account/manage-billing/billing-charges/types-of-charges/third-party-charges/third-party-transaction-fees.md	When you use [Shopify Payments](/manual/payments/shopify-payments), you aren't charged third-party transaction fees for orders that are processed using the following payment methods:	orders processed with Shopify Payments
+Q4-SH-K1335	help.shopify.com/en/manual/your-account/manage-billing/billing-charges/types-of-charges/third-party-charges/third-party-transaction-fees.md	Transaction fees don't apply for POS orders or for [manual payment methods](/manual/payments/manual-payments)	
+Q4-SH-K1336	help.shopify.com/en/manual/your-account/manage-billing/billing-charges/types-of-charges/third-party-charges/third-party-transaction-fees.md	When an order includes [store credit](/manual/customers/store-credit) or [gift cards](/manual/products/gift-card-products) as a payment method, on Shopify stores created on or after May 12, 2025.	Shopify stores created on or after May 12, 2025
+Q4-SH-K1337	5. Payment of Fees and Taxes	including but not limited to applicable fees relating to the value of sales made through your Store when using all payment providers other than Shopify Payments ("Transaction Fees")	
+Q4-SH-K1338	help.shopify.com/en/manual/your-account/manage-billing/billing-charges/types-of-charges/third-party-charges/third-party-transaction-fees.md	Third-party transaction fees cover the cost for Shopify to provide a secure checkout platform and integrate with external payment providers.	
+Q4-SH-K1446	Payment Customization	enables you to rename, reorder, hide the payment methods available to customers during checkout, set payment terms, and add a review requirement for a specific order.	
+Q4-SH-K1447	write_payment_terms	"text": "write_payment_terms"	
+Q4-SH-K1448	payment_schedules/due	"value": "payment_schedules/due"	
+Q4-SH-K1488	Orders	"text": "Orders"	
+Q4-SH-K1489	Order	"label": "Order"	
+Q4-SH-K1490	dev.ucp.shopping.order	"dev.ucp.shopping.order"	store capture-plus (its UCP profile)
+Q4-SH-K1491	4. Your Responsibilities	You acknowledge and agree that the Services are not a marketplace, and any contract of sale made through the Services is directly and only between you and the customer. You are the seller or merchant of record for all sales through the Services.	
+Q4-SH-K1492	4. Your Responsibilities	This includes, but is not limited to, authorizing the charge to the customer in respect of the customer's purchase, determining and collecting taxes, refunds, returns, fulfilling any sales or customer service, fraudulent transactions, required legal disclosures, regulatory compliance	
+Q4-SH-K1493	read_orders	"text": "read_orders"	
+Q4-SH-K1494	orders/create	"value": "orders/create"	
+Q4-SH-K1495	Drafts	"text": "Drafts"	
+Q4-SH-K1496	draftOrder	"label": "draftOrder"	
+Q4-SH-K1497	write_draft_orders	"text": "write_draft_orders"	
+Q4-SH-K1498	draft_orders/create	"value": "draft_orders/create"	
+Q4-SH-K1501	Refund	"label": "Refund"	
+Q4-SH-K1502	4. Your Responsibilities	This includes, but is not limited to, authorizing the charge to the customer in respect of the customer's purchase, determining and collecting taxes, refunds, returns, fulfilling any sales or customer service, fraudulent transactions, required legal disclosures, regulatory compliance	
+Q4-SH-K1503	refunds/create	"value": "refunds/create"	
+Q4-SH-K1522	payments	"title": "Payments"	
+Q4-SH-K1523	help.shopify.com/en/manual/payments/third-party-providers.md	You can activate or change a payment provider from the **Payments** page of your Shopify admin.	
+Q4-SH-K1524	help.shopify.com/en/manual/payments.md	When a customer checks out, they can choose to pay for their order using any of the methods that you've activated in the	
+Q4-SH-K1525	help.shopify.com/en/manual/payments/third-party-providers.md	You can activate or change a payment provider from the **Payments** page of your Shopify admin.	
+Q4-SH-K1526	help.shopify.com/en/manual/payments/third-party-providers/payment-gateway-availability.md	When setting up payments on your Shopify store, select payment gateways and providers that are compatible and available in your region.	
+Q4-SH-K1527	Stripe availability in Shopify Payments regions	This is because Stripe is Shopify Payments' banking partner, and all payment reporting and management takes place in your Shopify admin.	
+Q4-SH-K1528	Stripe availability in Shopify Payments regions	then standalone Stripe isn't available as an alternative.	Shopify Payments regions
+Q4-SH-K1529	help.shopify.com/en/manual/payments/getting-paid.md	All Shopify-supported payment methods rely on third-party providers to process your transactions.	
+Q4-SH-K1530	help.shopify.com/en/manual/payments/getting-paid.md	These providers might charge extra fees and enforce rules about what products you can sell using their service.	
+Q4-SH-K1735	Use a suggested manual payment method	You can choose from a list of suggested manual payment methods on the **Payment providers** settings page in your Shopify admin.	
+Q4-SH-K1736	help.shopify.com/en/manual/payments/manual-payments.md	Orders that accept manual payments are marked as unpaid on the **Orders** page.	
+Q4-SH-K1737	help.shopify.com/en/manual/payments/manual-payments.md	When your customers use a manual payment method, you can arrange to receive their payment in a way that works best for them.	
+Q4-SH-K1738	Create a custom manual payment method	If your business has unique needs for collecting payment or if you want to offer your customers alternative ways to pay, such as booking a service and paying in person, then you can create a custom manual payment method.	
+Q4-SH-K1739	Multi-currency support	To accept manual payments in multiple currencies, you need to use [Shopify Payments](/manual/payments/shopify-payments/) and activate the [international sales tools](/manual/international/).	
+Q4-SH-K1740	transaction fees paragraph	and you aren't charged transaction fees on manual payment methods such as cash, cash on delivery (COD), and bank transfers.	
+Q4-SH-K1768	help.shopify.com/en/manual/payments/payment-authorization.md	By default, credit card payments and some additional methods of payment are captured automatically, but if it suits your business better, then you can change your store setting to capture payments manually.	
+Q4-SH-K1769	What is a credit card authorization period?	provides an authorization period of 7 days.	
+Q4-SH-K1770	Extended authorization periods, plan requirement	Extended authorization periods are available only to stores on the Shopify Plus plan that use Shopify Payments.	stores on the Shopify Plus plan that use Shopify Payments
+Q4-SH-K1771	What is a credit card authorization period?	The length of the authorization period depends on your credit card payment provider.	
+Q4-SH-K1772	introduction, reasons for manual capture	Complying with a local regulation that prescribes online merchants must offer at least one payment method that allows your customer to pay for the order upon delivery.	
+Q4-SH-K1773	How a credit card payment gets processed, Capture	Capturing a payment sends the transaction details to the acquirer, which is a bank or financial institution that processes credit card transactions on behalf of your business.	
+Q4-SH-K1774	order_transactions/create	"value": "order_transactions/create"	
+Q4-SH-K1775	orders/paid	"value": "orders/paid"	
+Q4-SH-K1789	read_cash_tracking	"text": "read_cash_tracking"	
+Q4-SH-K1790	write_cash_tracking	"text": "write_cash_tracking"	
+Q4-SH-K2466	draftOrders	"path":"draft_orders"	
+Q4-SH-K2467	draftOrders	"eligibility":{"entitlements":["storefront.enabled"],"permissions":["DRAFT_ORDERS"]}	
+Q4-SH-K2468	draftOrders:new	"eligibility":{"permissions":["CREATE_AND_EDIT_DRAFT_ORDERS"]}	
+Q4-SH-K2470	order:refund:create	"eligibility":{"oneOf":[{"permissions":["REFUND_ORDERS"]},{"permissions":["REFUND_TO_STORE_CREDIT"]},{"permissions":["QUICK_SALE"]}]}	
+Q4-SH-K2475	order:mobile:record-payment	"eligibility":{"clients":["native"],"permissions":["ORDERS"]}	
+Q4-SH-K2618	entitlements.storefront.enabled	{"set": 0, "section": "entitlements", "key": "storefront", "value": {"enabled": true, "__typename": "StorefrontType"}}	2jiwxs-gr (trial); capture-advanced (Advanced App Development, development store); capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-grow (Grow App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store); ctcbwa-r1 (trial); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (trial); fake-demo-sharrwah (Advanced); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial)
+Q4-SH-K2639	SET_PAYMENT_TERMS_FOR_ORDERS	{"position":5,"category":"ORDERS","id":"SET_PAYMENT_TERMS_FOR_ORDERS","member":"SetPaymentTermsForOrders","titleTranslationKey":null,"title":"Set payment terms","parent":null,"nested":false,"subCategory":null,"subCategoryTitle":null,"dependencies":["ORDERS"]}	
+Q4-SH-K2640	SET_PAYMENT_TERMS_FOR_DRAFT_ORDERS	{"position":24,"category":"DRAFT_ORDERS","id":"SET_PAYMENT_TERMS_FOR_DRAFT_ORDERS","member":"SetPaymentTermsForDraftOrders","titleTranslationKey":null,"title":"Set payment terms","parent":null,"nested":false,"subCategory":null,"subCategoryTitle":null,"dependencies":["DRAFT_ORDERS"]}	
+Q4-SH-K2710	apps.shopify.com/built-in-features/draft-orders	Your Shopify plan comes with everything you need to create draft orders, send invoices, and capture payments. Invoice and receipt apps offer additional document types and advanced customization features.	
+Q4-SH-K2727	ServerIntent create draft_order	"variables": {"action": "create", "type": "draft_order"	store ts15uk-ug
+Q4-SH-K2762	Third-party transaction fees	{"kind": "row", "section": 1, "position": 38, "cells": [{"tag": "th", "text": "Third-party transaction fees", "scope": "row"}, {"tag": "td", "text": "2%"}, {"tag": "td", "text": "1%"}, {"tag": "td", "text": "0.6%"}, {"tag": "td", "text": "0.2%"}]}	plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399
+Q4-SH-K2833	draftOrders:new	"section":"Orders","path":"new","title":{"value":"Create order"}	
+Q4-SH-K2836	order:refund:create	"section":"Orders","path":":orderId/refund","title":{"value":"Refund"}	
+Q4-SH-K2859	payments:settings:manual-payment-methods	"section":"Payments","path":"manual-payment-methods","title":{"value":"Manual payment methods"}	
+Q4-SH-K2860	payments:settings:manual-payment-methods	"eligibility":{"permissions":["MANAGE_PAYMENTS_SETTINGS"]}	
+Q4-SH-K2896	PaymentSettings	"name": "PaymentSettings", "kind": "OBJECT", "description": "Settings related to payments."	GraphQL Admin API 2026-10
+Q4-SH-K3002	cash drawers	This is a security behavior to prevent cash drawers from opening unexpectedly in a different part of the store.	

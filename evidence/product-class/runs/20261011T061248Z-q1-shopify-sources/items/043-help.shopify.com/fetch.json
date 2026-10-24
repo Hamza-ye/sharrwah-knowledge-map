@@ -1,0 +1,19 @@
+{
+ "n": 43,
+ "url": "https://help.shopify.com/en/manual/online-sales-channels/marketplaces/marketplace-connect.md",
+ "dir": "items/043-help.shopify.com",
+ "fetched_at": "2026-10-11T06:13:00Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/online-sales-channels/marketplaces/marketplace-connect.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 804,
+ "cited_in": [
+  "SH-S-0727",
+  "SH-S-0728"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "c86c6b61d4d7d7621115ff530f8aba71b3c6b570d2433f0a61085fc12507edb2",
+ "raw_ext": "txt"
+}

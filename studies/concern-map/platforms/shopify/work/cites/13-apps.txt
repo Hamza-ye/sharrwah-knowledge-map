@@ -1,0 +1,87 @@
+key: scopes_restrict
+source: https://shopify.dev/docs/api/usage/access-scopes.md
+locator: introduction
+quote: Shopify restricts access to scopes for apps that don't have a legitimate use for the associated data.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: scopes_merchant_approves
+source: https://shopify.dev/docs/api/usage/access-scopes.md
+locator: introduction
+quote: Merchants approve the scopes when they install it.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: scopes_approval_required
+source: https://shopify.dev/docs/api/usage/access-scopes.md
+locator: scope type legend
+quote: Shopify approval required Shopify has to approve your app for the scope before you can declare it.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: scopes_public_custom_only
+source: https://shopify.dev/docs/api/usage/access-scopes.md
+locator: introduction
+quote: Shopify grants access scopes only to [public or custom apps](https://shopify.dev/docs/apps/launch/distribution).
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: ppa_withhold_aml
+source: https://www.shopify.com/partners/terms
+locator: payments to Partners
+quote: All payments are subject to fraud and risk analysis considerations and anti-money laundering procedures and may be withheld by Shopify during the period of investigation.
+date: 2026-02-27
+basis: last updated (page states "LAST UPDATED FEBRUARY 27, 2026")
+access: rendered
+
+key: ppa_setoff
+source: https://www.shopify.com/partners/terms
+locator: payments to Partners
+quote: Shopify has the right to set off or withhold payments to Partners in certain circumstances.
+date: 2026-02-27
+basis: last updated (page states "LAST UPDATED FEBRUARY 27, 2026")
+access: rendered
+
+key: ppa_vap_responsible
+source: https://www.shopify.com/partners/terms
+locator: Partner Directory, Relationship
+quote: The services provided by a Partner via the Partner Directory are the responsibility of the Partner and not of Shopify.
+date: 2026-02-27
+basis: last updated (page states "LAST UPDATED FEBRUARY 27, 2026")
+access: rendered
+
+key: ppa_vap_merchant_agreement
+source: https://www.shopify.com/partners/terms
+locator: Partner Directory, Relationship
+quote: It is the Partner’s responsibility to ensure that there is a Merchant Agreement in place between the Partner and Merchant
+date: 2026-02-27
+basis: last updated (page states "LAST UPDATED FEBRUARY 27, 2026")
+access: rendered
+
+key: subs_contract
+source: https://shopify.dev/docs/apps/build/purchase-options/subscriptions.md
+locator: How do subscriptions work?, Subscription contracts
+quote: A subscription contract is the agreement between a customer and a merchant over a specific term for recurring purchases over a set or undefined period of time.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: subs_apps
+source: https://shopify.dev/docs/apps/build/purchase-options/subscriptions.md
+locator: About subscriptions
+quote: Subscription apps enable developers and merchants to build subscription experiences directly into Shopify's ecosystem.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: pay_subscriptions_sp
+source: https://help.shopify.com/en/manual/payments.md
+locator: note on subscriptions
+quote: as your primary payment gateway. To learn more about subscriptions, refer to
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md

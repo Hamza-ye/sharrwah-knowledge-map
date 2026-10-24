@@ -1,0 +1,57 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">&gt; This page is for Developer.
+
+&gt; For clean Markdown of any page, append .md to the page URL.
+&gt; For a complete documentation index, see https://docs.bigcommerce.com/llms.txt.
+&gt; For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server.
+
+# Customer Segmentation
+
+Group customers into segments to offer them promotions and other customized shopping experiences. Use these endpoints to create and manage segments, associate shopper profiles with segments, and query segment membership.
+
+The Customer Segmentation API is built around two resources: **segments** and **shopper profiles**. A segment is a named group of shoppers. A shopper profile represents a registered customer that you can add to one or more segments. You associate the two to control which shoppers belong to which segments.
+
+## Segments
+
+A segment is a container identified by a UUID, with a `name` and an optional `description`. Use the segment endpoints to:
+
+* [List segments](/developer/api-reference/rest/admin/management/customer-segmentation/segments/get-paginated-segments-list) with pagination and optional `id:in` filtering.
+* [Create](/developer/api-reference/rest/admin/management/customer-segmentation/segments/segments-post-request), update, and delete segments in batches.
+
+Deleting a segment removes the segment and its shopper-profile associations, but it does not delete the underlying shopper profiles.
+
+&gt; **Info**
+&gt;
+&gt; Segment names must be unique within a store. Creating a segment with a name that already exists returns a `409` response.
+
+**Limits**
+
+* A store can hold a maximum of 1,000 segments.
+* Create, update, and add-to-segment operations are limited to 10 concurrent requests.
+
+## Shopper profiles
+
+A shopper profile links a registered [customer](/developer/api-reference/rest/admin/management/customers) to the segmentation system through its `customer_id`. Use the shopper-profile endpoints to:
+
+* [List shopper profiles](/developer/api-reference/rest/admin/management/customer-segmentation/shopper-profiles/get-shopper-list) for the store.
+* [Create](/developer/api-reference/rest/admin/management/customer-segmentation/shopper-profiles/shopper-profiles-request) and delete shopper profiles.
+* [List the segments](/developer/api-reference/rest/admin/management/customer-segmentation/segments-for-a-shopper-profile/get-list-shopper-profile) a given shopper profile belongs to.
+
+## Associate shopper profiles with segments
+
+Membership is managed from the segment side:
+
+* [Add shopper profiles to a segment](/developer/api-reference/rest/admin/management/customer-segmentation/shopper-profiles-for-a-segment/post-shopper-profile), up to 50 per request.
+* [List the shopper profiles in a segment](/developer/api-reference/rest/admin/management/customer-segmentation/shopper-profiles-for-a-segment/get-segment-profiles).
+* Remove shopper profiles from a segment. This removes only the association, not the shopper profiles themselves.
+
+Batch operations return a `meta` object with `total`, `success`, and `failed` counts so you can see which items in the request succeeded.
+
+## Authentication and scopes
+
+These endpoints use the **Customers** OAuth scope. Read operations accept the read-only scope (`store_v2_customers_read_only`), and write operations require the modify scope (`store_v2_customers`).
+
+&gt; **Warning**
+&gt;
+&gt; [List shopper profiles in a segment](/developer/api-reference/rest/admin/management/customer-segmentation/shopper-profiles-for-a-segment/get-segment-profiles) is an exception: although it is a `GET`, it requires the modify Customers scope (`store_v2_customers`), not read-only.
+
+For more about scopes and authentication, see [API accounts and OAuth scopes](/developer/docs/overview/api-fundamentals/api-accounts#oauth-scopes).</pre></body></html>

@@ -1,0 +1,319 @@
+# Loyalty Program Status
+
+## OpenAPI Specification
+
+```yaml
+openapi: 3.0.1
+info:
+  title: ''
+  description: ''
+  version: 1.0.0
+paths:
+  /v1/managers/loyalty-program/loyalty-status:
+    get:
+      summary: Loyalty Program Status
+      deprecated: false
+      description: >-
+        Retrieves information about the overall status (active/inactive) of a
+        store's loyalty program.
+
+
+        <Accordion title="🔑Scopes" defaultOpen>
+            
+        `loyalty_program.read` - Loyalty Program Read
+         
+        </Accordion>
+      operationId: get-managers-loyalty-program-loyalty-status
+      tags:
+        - Default module/Apps/Merchant APIs/Marketing/Loyalty Program
+        - Loyalty Program
+      parameters:
+        - name: Authorization
+          in: header
+          description: >-
+            The Authorization token is a unique key given to the third-party
+            application (Partner) by Zid. It is used to authenticate the API
+            requests made by the Partner application. The token verifies the
+            partner's identity and ensures they have permission to access Zid's
+            API but does not provide any specific user or store information. It
+            should be included in the header of API requests when the partner
+            application needs to access Zid's API.
+          required: true
+          example: '{{Autherization}}'
+          schema:
+            type: string
+            examples:
+              - >-
+                Bearer
+                eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxMTciLCJqdGkiOiJhMTg5ZTg3MmYxMzhkMWVhYjU5MjVkMDkyMGE5NmI0YjliNjg0Y2E2ZTdmM2M2MjljZWYxNmQ4NDJjMmJlYmVhMjI4YTdmMTA0ZWQ4NWE5NCIsImlhdCI6MTY3OTU3Njk5OS41NjY4NzcsIm5iZiI6MTY3OTU3Njk5OS41NjY4OCwiZXhwIjoxNzExMTk5Mzk5LjQ4NjE1Mywic3ViIjoiMTgyNDc1Iiwic2NvcGVzIjpbInRoaXJkLXBhcnRpZXMtYXBpcyJdfQ.i07ef09nVNXGZF-g-QXpNoS2vlFQK_zntAqAMS4Az2XD2EyMLhxLZZRL-QlR11zUPqMmXjMAl_4ooKa3M3zkfZQ6Ga6qStvamk8RnC_39VUx0lfN2A4k65ERZpqwrMy6-t3dE99zay3aicIdNvbgi0zeuMSE5Tn99u-2AtSRa8ffbfAcYPPXacHrhdmlYzdiZS_x_skovFEow1E-nDjdL1WHqO92XdZ7RfNLkiYFTjZlZmM_UruvioaR3q6TXJbqRK_ZrziivezL8ohIQ2SBosUp58I29rlKzvlw_R2j0rKKYZbdxYDaxAHOISmOFKAlO66k7dNevAHI3s4uGIjoGA6ZXHknccWPLLLiaAQ0r64HV8GowW5dg2rhZNurJGDTnLlBQ6F-ql42ptHzSAfzzi576CEoN3gMVpgXcbntUY3reETkFsTBPUjeSuMpANMioXAA0GRp3Ut-84fTnrWxqsCW1WVUIx33HvmfCGPXIdkaCCWoA6G6KXo04MtFbKXQmXkK9esQWI-rqdVnMD3zSR3g3yFHZSL1U-mZeNja03706Rav1ordsRNOtRwtLuoRRbk9KasbUpEwqq4Ao9lqZZwRIjdEw-pQtnUT8V53fhmuuRIefCLFO7eGEtGUnh9o6Uh_pgi6AB6uSlnN9GEMGgI1alqvMmTjxvC-HHt0V-Y
+        - name: X-MANAGER-TOKEN
+          in: header
+          description: >-
+            This token is used to authenticate and access information related to
+            the store. It is obtained through an OAuth mechanism and is required
+            to perform operations on the store's data. The X-Manager-Token
+            should be included in the header of API requests that require
+            store-related information.
+          required: true
+          example: '{{Access-Token}}'
+          schema:
+            type: string
+            examples:
+              - >-
+                eyJpdiI6Imh3L2dGbmJmRnVCOUY4WW5WQ2s3RFE9PSIsInZhbHVlIjoiZklpRnJyVGV1OWcrZUJBNk44bVp5SjZzSS92V3czcTJjbnJ2dFYvenZ3SFBtWHNSMFU3ZEMzZ0ZJNnpucVE4Ui9rNFdicUduOGpKUlg1VXdGOFFIaVUzZjZyUUZybWx3R0tNY3orUmxoUUUxQ29wSkEyVDZTVnVYb2dlUXJSVzBYVkdESjBpS0xiN05Hbndzc2wzV2N0YitGM1NEdkk4ckZZOTZsTFdEL1ZQRlJJTE5FQmttZng2elpwL1RCeXFRdUd1U3JTc0FHV1kySS80RFJaWlIyZ3gwM2FsQVRFbkt3VWtFOUQyKzdGOD0iLCJtYWMiOiJmZDQ0YzM4ODE0OWQxOWRhYWU0NDhhYmIzYzQ1MDAxMDAzODZjZGM3ZGM4NGJhMGNkMDEyYWZlM2UzYjAxMTI4IiwidGFnIjoiIn0=
+        - name: Accept
+          in: header
+          description: >-
+            Specifies the Media Types acceptable for the client. In this case,
+            it signals that the client expects a response in the JSON format.
+          required: false
+          example: application/json
+          schema:
+            type: string
+            default: application/json
+        - name: Accept-Language
+          in: header
+          description: >-
+            Preferred language for the response. Defaults to en if not
+            specified.
+          required: false
+          example: en
+          schema:
+            type: string
+            default: en
+            enum:
+              - en
+      requestBody:
+        content:
+          text/plain:
+            schema:
+              type: string
+            examples: {}
+      responses:
+        '200':
+          description: Store loyalty program status retrieved successfully.
+          content:
+            application/json:
+              schema:
+                type: object
+                x-examples:
+                  Example 1:
+                    status: object
+                    loyalty_status: true
+                    message:
+                      type: object
+                      code: null
+                      name: null
+                      description: null
+                properties:
+                  status:
+                    type: string
+                    description: ' Indicates the overall status of the API response.'
+                  loyalty_status:
+                    type: boolean
+                    description: ' Indicates whether the customer is currently enrolled in the loyalty program. In this example, the value is true, meaning the customer is part of the loyalty program.'
+                    default: true
+                  message: &ref_0
+                    description: >-
+                      Contains additional information or messages related to the
+                      API response.
+                    $ref: '#/components/schemas/ResponseEnvelopMessage'
+                x-apidog-orders:
+                  - status
+                  - loyalty_status
+                  - message
+                x-apidog-ignore-properties: []
+          headers: {}
+          x-apidog-name: OK
+        '401':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                description: >-
+                  Response returned when the request cannot be authenticated
+                  because the required credentials are missing, invalid, or
+                  expired.
+                properties:
+                  status:
+                    type: string
+                    description: Indicates the overall status of the API response.
+                    examples:
+                      - error
+                  message:
+                    type: object
+                    description: >-
+                      Contains structured details explaining why the request
+                      could not be authenticated.
+                    properties:
+                      type:
+                        type: string
+                        description: Indicates the category of the response message.
+                        examples:
+                          - error
+                      code:
+                        type: string
+                        description: >-
+                          A machine-readable code identifying the authentication
+                          error. Returns null when no specific code is
+                          available.
+                        examples:
+                          - UNAUTHORIZED
+                        nullable: true
+                      name:
+                        type: string
+                        description: >-
+                          A short, human-readable title describing the
+                          authentication error. Returns null when no title is
+                          available.
+                        examples:
+                          - Unauthorized
+                        nullable: true
+                      description:
+                        type: string
+                        description: >-
+                          A human-readable explanation of why the request could
+                          not be authenticated. Returns null when no detailed
+                          explanation is available.
+                        examples:
+                          - >-
+                            Authentication credentials are missing, invalid, or
+                            expired.
+                        nullable: true
+                    required:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-orders:
+                      - type
+                      - code
+                      - name
+                      - description
+                    x-apidog-ignore-properties: []
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                examples:
+                  - status: error
+                    message:
+                      type: error
+                      code: UNAUTHORIZED
+                      name: Unauthorized
+                      description: >-
+                        Authentication credentials are missing, invalid, or
+                        expired.
+                x-apidog-ignore-properties: []
+              examples:
+                '1':
+                  summary: Example 1
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_MISSING
+                      name: Sorry
+                      description: Please login first.
+                '2':
+                  summary: Example 2
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Login session expired. Please login again.
+                '3':
+                  summary: Example 3
+                  value:
+                    status: error
+                    message:
+                      type: error
+                      code: ERROR_SESSION_INVALID
+                      name: Sorry
+                      description: Invalid authentication
+          headers: {}
+          x-apidog-name: Unauthorized
+        '500':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Status of the error.
+                  message: *ref_0
+                required:
+                  - status
+                  - message
+                x-apidog-orders:
+                  - status
+                  - message
+                x-apidog-ignore-properties: []
+              example:
+                status: error
+                message:
+                  type: error
+                  code: MSG_HIDDEN
+                  name: Error
+                  description: Internal Server Error
+          headers: {}
+          x-apidog-name: Internal Server error
+      security: []
+      x-apidog-folder: Default module/Apps/Merchant APIs/Marketing/Loyalty Program
+      x-apidog-status: released
+      x-run-in-apidog: https://app.apidog.com/web/project/613905/apis/api-9148628-run
+components:
+  schemas:
+    ResponseEnvelopMessage:
+      type: object
+      properties:
+        type:
+          type: string
+          description: Type of response message returned by the API.
+          examples:
+            - success
+        code:
+          type: string
+          description: Response code returned by the API, if available.
+          examples:
+            - MSG_POPUP_OK
+          nullable: true
+        name:
+          type: string
+          description: Name or title of the response message, if available.
+          examples:
+            - Coupons
+          nullable: true
+        description:
+          type: string
+          description: Detailed description of the response message, if available.
+          examples:
+            - Coupons created successfully
+          nullable: true
+      required:
+        - type
+        - code
+        - name
+        - description
+      description: Additional response metadata.
+      x-apidog-orders:
+        - type
+        - code
+        - name
+        - description
+      x-apidog-ignore-properties: []
+      x-apidog-folder: ''
+  securitySchemes: {}
+servers:
+  - url: https://api.zid.sa/
+    description: Prod Env
+security: []
+
+```

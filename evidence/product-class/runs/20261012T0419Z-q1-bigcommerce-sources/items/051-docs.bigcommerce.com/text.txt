@@ -1,0 +1,14 @@
+> This page is for Developer.
+
+> For clean Markdown of any page, append .md to the page URL.
+> For a complete documentation index, see https://docs.bigcommerce.com/llms.txt.
+> For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server.
+
+# Payment Methods
+
+Retrieve the payment methods a store accepts. The Payment Methods API is split across two versions:
+
+* **V3** — current. Returns each accepted method's identifier, supported settings, and capabilities ([V3 reference](/developer/api-reference/rest/admin/payments/methods/v3)).
+* **V2** — deprecated. Returns a similar list using the legacy payload shape. New integrations should not use V2 ([V2 reference](/developer/api-reference/rest/admin/payments/methods/v2)).
+
+Use V3 for any new integration. The V2 endpoint is preserved for compatibility with existing integrations that haven't yet migrated.

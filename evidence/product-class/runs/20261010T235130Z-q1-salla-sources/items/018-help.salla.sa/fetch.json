@@ -1,0 +1,20 @@
+{
+ "n": 18,
+ "url": "https://help.salla.sa/article/إضافة-عملة-جديدة-للمتجر/u4s3nz2yd3gxd92e8r4dpwbd",
+ "dir": "items/018-help.salla.sa",
+ "fetched_at": "2026-10-10T23:51:37Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.salla.sa/article/إضافة-عملة-جديدة-للمتجر/u4s3nz2yd3gxd92e8r4dpwbd",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 130914,
+ "cited_in": [
+  "SA-S-0154",
+  "SA-S-0155",
+  "SA-S-0156"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "ee291b3753d7475e8ee7c55c594a270315344169e18167f32a7bf3699ea7af86",
+ "raw_ext": "html"
+}

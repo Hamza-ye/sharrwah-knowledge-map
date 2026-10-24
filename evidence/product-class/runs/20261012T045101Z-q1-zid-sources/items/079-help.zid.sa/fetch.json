@@ -1,0 +1,18 @@
+{
+ "n": 79,
+ "url": "https://help.zid.sa/about-marketplaces/",
+ "dir": "items/079-help.zid.sa",
+ "fetched_at": "2026-10-12T04:52:11Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/about-marketplaces/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 23693,
+ "cited_in": [
+  "ZD-S-1059"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "3d7a408896f4f543a38be45da70e8ecab135c96d9daecfc9496229060d4e907a",
+ "raw_ext": "html"
+}

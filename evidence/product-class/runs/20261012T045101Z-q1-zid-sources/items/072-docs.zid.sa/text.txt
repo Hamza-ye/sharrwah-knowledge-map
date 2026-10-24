@@ -1,0 +1,67 @@
+# 🗂️ Overview
+
+Zid offers a strong platform for partners to develop applications that enhance the functionality of online stores. Understanding the different types of apps in Zid is essential for developers aiming for successful integrations. This article provides an overview of the app types supported by Zid, the development process, and the publishing options.
+
+# App Types
+When you develop an app in Zid, you must decide whether it will be public or private. These options determine how the app is published and who can access it:
+
+![ZAM Merchant Dashboard Store Setup (2).png](https://api.apidog.com/api/v1/projects/613905/resources/344815/image-preview)
+
+<h2 style="color:#5D4EC3;">Subscription Apps</h2>
+
+Subscription apps are designed to provide multiple plan prices with recurring services and trial periods that merchants can subscribe to within defined period, typically monthly or yearly basis. The subscription model allows developers to offer continuous value while generating recurring revenue.
+
+- **Public apps:** Apps designed for wider use and are listed in Zid App Market. All merchants on the platform can view, install, and benefit from these apps.
+
+- **Private apps:** Apps intended for specific stores only. They are not listed in the Zid App Market and can only be installed by stores explicitly granted access.
+
+
+:::highlight purple 💡
+**Prerequisites for Developing Private Apps**
+- The app should not be of the "logistic" type, as all shipping and fulfillment apps must be public.
+- The store must have a Professional or Enterprise plan subscription, or the merchant must have activated [API Access](https://web.zid.sa/subscriptions) from the dashboard to be able to install the private app.
+
+:::
+
+<h2 style="color:#5D4EC3;">Shipping apps</h2>
+
+
+Shipping apps are specifically designed to integrate logistics and shipping services into the merchant's store. These apps connect merchants with shipping and fulfillment providers, helping them manage orders, shipments, and delivery services efficiently.
+
+- **Shipping and fulfillment company:** Apps that connect merchants with companies that handle both shipping and fulfillment. They manage the entire logistics chain, from warehousing products to delivering them to customers.
+- **Shipping company only:** Apps that are focused only on the shipping aspect. They allow merchants to partner with carriers for delivering orders but do not include warehousing or fulfillment services.
+
+---
+
+# App Development Cycle
+
+Follow these steps to develop and integrate your application with Zid:
+
+
+<Steps>
+  <Step title="Complete Partnership Details">
+  Start by completing the partnership agreement [here](https://partner.zid.sa/partnership-details). This step is not required for private apps.
+  </Step>
+  <Step title="Create Your App">
+Follow our [step-by-step guide](https://docs.zid.sa/create-first-app) to get started. Whether you're building a Public, Private, or Shipping app, this guide covers all the key steps
+    </Step>
+  <Step title="Start Development">
+Utilize Zid’s APIs available in this documentation to begin your app development.  
+    </Step>
+          <Step title="Submit for Review">
+After developing the app, our team will take some time to review your submission and test the app functionality before publishing it to the public.
+    </Step>
+      <Step title="Publish Your App">
+Once your app is tested and approved, your app will be listed in Zid App Market for all merchants or installed directly to the store if it’s a private app.
+    </Step>
+</Steps>
+
+---
+# Additional Features to Discover
+
+The [Partner Dashboard](https://partner.zid.sa) offers a suite of tools designed to help you manage and optimize your app's performance, including:
+
+- **Promotions Management**: Easily create and manage promotional offers and coupons that can be targeted to Zid merchants, helping to drive engagement and boost app adoption.
+- **Analytics & Reporting**: Gain insights into how your app is performing with access to detailed analytics that track user interactions and operational metrics.
+- **Payouts**: Sccess detailed monthly payout reports and upload invoices, ensuring you receive accurate and timely payments.
+-  **Webhook Logs**: Access detailed logs of webhook activities to ensure seamless communication between your app and Zid. This feature allows you to monitor data exchanges and troubleshoot any issues efficiently.

@@ -1,0 +1,19 @@
+{
+ "n": 19,
+ "url": "https://help.shopify.com/en/manual/finance/shopify-capital/ireland.md",
+ "dir": "items/019-help.shopify.com",
+ "fetched_at": "2026-10-11T06:12:57Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/finance/shopify-capital/ireland.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 4048,
+ "cited_in": [
+  "SH-S-0494",
+  "SH-S-0497"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "a4020064cd7a87d2367b3cc6f111f95932725ae03ed88688f42485802e751214",
+ "raw_ext": "txt"
+}

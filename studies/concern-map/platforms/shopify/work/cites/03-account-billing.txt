@@ -1,0 +1,559 @@
+key: tos_store_owner_responsible
+source: https://www.shopify.com/legal/terms
+locator: 2. Account Activation (summary)
+quote: The Store Owner is responsible for the Account, is bound by these Terms of Service and is responsible for the actions of others accessing the Account.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_signup_binds
+source: https://www.shopify.com/legal/terms
+locator: preamble
+quote: By signing up for a Shopify Account (as defined in Section 1) or by using any Shopify Services (as defined below), you are agreeing to be bound by the following terms and conditions (the "Terms of Service").
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_password
+source: https://www.shopify.com/legal/terms
+locator: 1. Account Terms
+quote: You are responsible for keeping your password secure. Shopify cannot and will not be liable for any loss or damage from your failure to maintain the security of your Account and password.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_store_owner_staff
+source: https://www.shopify.com/legal/terms
+locator: 2.2 Staff Accounts
+quote: The Store Owner is responsible for: (a) ensuring its employees, agents and subcontractors, including via Staff Accounts, comply with these Terms of Service; and (b) any breach of these Terms of Service by the Store Owner's employees, agents or subcontractors.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_cancel
+source: https://www.shopify.com/legal/terms
+locator: 14. Term and Termination
+quote: You may cancel your Account and terminate the Terms of Service at any time by contacting Shopify Support and then following the specific instructions indicated to you in Shopify's response.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_survive_obligations
+source: https://www.shopify.com/legal/terms
+locator: 16. General Conditions
+quote: (a) you will remain responsible for performing all of your obligations in connection with transactions entered into before termination and for any liabilities that accrued before or as a result of termination
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_subscription_fees
+source: https://www.shopify.com/legal/terms
+locator: 5. Payment of Fees and Taxes
+quote: You will pay the Fees applicable to your subscription to Online Service and/or POS Services ("Subscription Fees")
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_fee_taxes_merchant
+source: https://www.shopify.com/legal/terms
+locator: 5. Payment of Fees and Taxes
+quote: You are responsible for all applicable Taxes that arise from or as a result of your subscription to or purchase of Shopify's products and services.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_merchant_store
+source: https://www.shopify.com/legal/terms
+locator: 4. Your Responsibilities
+quote: You are responsible for the creation and operation of your Shopify Store, your Materials, the goods and services that you may sell through the Services, and all aspects of the transactions between you and your customer(s).
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_merchant_store_summary
+source: https://www.shopify.com/legal/terms
+locator: 4. Your Responsibilities (summary)
+quote: You are responsible for your Shopify Store, the goods or services you sell, and your relationship with your customers, not us.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_one_store_owner
+source: https://www.shopify.com/legal/terms
+locator: 2.1 Store Owner
+quote: Your Shopify Store can only be associated with one Store Owner. A Store Owner may have multiple Shopify Stores.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_third_party_admin_access
+source: https://www.shopify.com/legal/terms
+locator: 9.9 Third Party Services and Third Party Partners
+quote: You may choose to allow Third Party Providers access to certain parts of your Admin and control their access levels.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: tos_third_party_relationship
+source: https://www.shopify.com/legal/terms
+locator: 9.9 Third Party Services and Third Party Partners
+quote: The relationship between you and any Third Party Provider is strictly between you and such Third Party Provider, and Shopify is not obligated to intervene in any dispute arising between you and a Third Party Provider.
+date: 2026-08-01
+basis: last updated (page states "Last updated on: August 1, 2026")
+access: rendered
+
+key: help_contracting_entities
+source: https://help.shopify.com/en/manual/privacy-and-security/privacy/international-data-transfers/contracting-entities.md
+locator: Shopify's primary contracting entities
+quote: Shopify International Limited: An Irish-registered entity contracting with merchants in Europe, the Middle East, and Africa (EMEA) and Latin America (LATAM).
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: help_contracting_entities_us
+source: https://help.shopify.com/en/manual/privacy-and-security/privacy/international-data-transfers/contracting-entities.md
+locator: Shopify's primary contracting entities
+quote: Shopify Inc.: A Canadian-registered entity contracting with merchants in the United States or Canada.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: help_contracting_entities_apac
+source: https://help.shopify.com/en/manual/privacy-and-security/privacy/international-data-transfers/contracting-entities.md
+locator: Shopify's primary contracting entities
+quote: Shopify Commerce Singapore Pte. Ltd.: A Singapore-registered entity contracting with merchants in Asia-Pacific (APAC).
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: help_consumer_services_controller
+source: https://help.shopify.com/en/manual/privacy-and-security/privacy/international-data-transfers/contracting-entities.md
+locator: Shopify's Consumer Services
+quote: When a customer uses Shopify Consumer Services, such as Shop or Shop Pay, then Shopify is directly engaged by the customer and Shopify acts as the data controller or business.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: role_org_admin
+source: observed-sh@b46731d0:structures/shopify/admin-roles/org-239421532/items.jsonl
+locator: role "Organization administrator", description
+quote: The organization administrator has full access to all organization settings and can manage all users and roles.
+date: 2026-10-05
+basis: undated list; captured 2026-10-05 (meta.json)
+access: local
+
+key: role_collaborator
+source: observed-sh@b46731d0:structures/shopify/admin-roles/org-239421532/items.jsonl
+locator: role "Collaborator access", description
+quote: A collaborator may access stores they have been given access to by an organization admin or owner.
+date: 2026-10-05
+basis: undated list; captured 2026-10-05 (meta.json)
+access: local
+
+key: role_admin
+source: observed-sh@b46731d0:structures/shopify/admin-roles/ctcbwa-r1/items.jsonl
+locator: role "Administrator", description
+quote: The administrator has full access to all settings and can manage all users and roles.
+date: 2026-10-05
+basis: undated list; captured 2026-10-05 (meta.json)
+access: local
+
+key: be_definition
+source: https://help.shopify.com/en/manual/your-account/business-entities.md
+locator: introduction
+quote: A business entity is the registered business, or the individual, that your store operates as. Your business entity is used to verify your business, and it determines the information that you need to provide for financial services such as Shopify Payments.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: be_settings
+source: https://help.shopify.com/en/manual/your-account/business-entities.md
+locator: introduction
+quote: If you have access to organizations, then you can manage and add new business entities from the [**Organization**](https://admin.shopify.com/settings/organization-details) page of your Shopify admin.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: be_financial_lock
+source: https://help.shopify.com/en/manual/your-account/business-entities.md
+locator: Considerations
+quote: then you need to deactivate all financial services before you can change your business entity.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: be_billing_country
+source: https://help.shopify.com/en/manual/your-account/business-entities.md
+locator: Considerations
+quote: The country of your billing address must match the country of one of your active business entities.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: be_market_per_entity
+source: https://help.shopify.com/en/manual/your-account/business-entities.md
+locator: Considerations
+quote: When selling with business entities, you need to [add a new market](/manual/markets/getting-started/set-up-markets#create-market) for each entity.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: me_plan
+source: https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/selling-with-multiple-entities.md
+locator: Plan requirement note
+quote: Selling from multiple entities with Shopify Payments is available only for organizations on the Shopify Plus and Shopify Enterprise Commerce plan.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: me_what
+source: https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/selling-with-multiple-entities.md
+locator: introduction
+quote: This lets you streamline your business operations, operate multiple legal entities within the same country, expand internationally, and manage payouts and orders in the same store.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: me_only_sp
+source: https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/selling-with-multiple-entities.md
+locator: Requirements when selling from multiple entities with Shopify Payments
+quote: Selling with multiple entities is available only with Shopify Payments.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: me_domestic_processing
+source: https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/selling-with-multiple-entities.md
+locator: Key benefits when selling from multiple entities with Shopify Payments
+quote: **Domestic card processing**: Process transactions in an entity's domestic currency from a single store, avoiding international and foreign exchange fees.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: me_markets_assign
+source: https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/selling-with-multiple-entities.md
+locator: Assign entities to markets
+quote: Markets control which entity processes transactions for a given region.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: me_own_account
+source: https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/selling-with-multiple-entities.md
+locator: Connect Shopify Payments to each entity
+quote: Each entity has its own Shopify Payments account, payout currency, and bank account, so you need to complete this process for every entity that you want to activate.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: me_no_marketplace
+source: https://help.shopify.com/en/manual/payments/shopify-payments/onboarding/selling-with-multiple-entities.md
+locator: Unsupported features when selling with multiple entities
+quote: You can't use multi-entity to split payments between businesses or manage commission-based arrangements between separate business owners.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: sp_2fa
+source: https://help.shopify.com/en/manual/payments/shopify-payments.md
+locator: Note (requirements)
+quote: To use Shopify Payments, you must secure your account with <a href="/en/manual/your-account/logging-in/secure-sign-in">two-step authentication</a>.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: sp_2fa_reason
+source: https://help.shopify.com/en/manual/payments/shopify-payments.md
+locator: Note (requirements)
+quote: If you deactivate two-step authentication in the future, then you expose your account and financial information to potential criminal attacks.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: idv_reason
+source: https://help.shopify.com/en/manual/your-account/logging-in/identity-verification.md
+locator: introduction
+quote: Identity verification protects your business from impersonation, account takeovers, and fraudulent activities. This process helps Shopify comply with financial regulations and keeps your business and customers safe.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: idv_store_owner
+source: https://help.shopify.com/en/manual/your-account/logging-in/identity-verification.md
+locator: Who needs to complete the identity verification request
+quote: In most cases, [the store owner](/manual/your-account/users/roles/roles-managed-by-shopify#owner-roles) is required to complete the identity verification request.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: idv_when
+source: https://help.shopify.com/en/manual/your-account/logging-in/identity-verification.md
+locator: When identity verification is required
+quote: - Applying for Shopify Capital or Credit
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: idv_restricted
+source: https://help.shopify.com/en/manual/your-account/logging-in/identity-verification.md
+locator: Complete identity verification request
+quote: Certain Shopify account features might be restricted until verification is complete.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: lcb_usd
+source: https://help.shopify.com/en/manual/your-account/manage-billing/paying-your-bills/managing-payments/local-currency.md
+locator: introduction
+quote: For accounting reasons, most Shopify bills are charged in US dollars, but merchants in some supported countries can be charged in their local currency.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: lcb_others_usd
+source: https://help.shopify.com/en/manual/your-account/manage-billing/paying-your-bills/managing-payments/local-currency.md
+locator: Supported countries and regions for local currency billing
+quote: For all other countries and regions, Shopify bills are issued in USD.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: lcb_by_address
+source: https://help.shopify.com/en/manual/your-account/manage-billing/paying-your-bills/managing-payments/local-currency.md
+locator: Change your billing currency
+quote: The billing currencies that are available to you are determined by the country of your billing address.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: appch_on_bill
+source: https://help.shopify.com/en/manual/your-account/manage-billing/billing-charges/types-of-charges/third-party-charges/app-charges.md
+locator: introduction
+quote: These charges are for the recurring use of an app, such as a monthly subscription payment. This cost is included in your regular Shopify subscription bill.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: appch_external
+source: https://help.shopify.com/en/manual/your-account/manage-billing/billing-charges/types-of-charges/third-party-charges/app-charges.md
+locator: Note
+quote: Some third-party apps charge you directly outside of Shopify. These external charges aren&#39;t displayed on your Shopify bill.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: appch_refund_developer
+source: https://help.shopify.com/en/manual/your-account/manage-billing/billing-charges/types-of-charges/third-party-charges/app-charges.md
+locator: Identify your app charge status
+quote: **Paid charge**: The charge is displayed on a past bill and payment has been collected. To request a refund, [contact the app developer](#request-app-refund).
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: tptf_reason
+source: https://help.shopify.com/en/manual/your-account/manage-billing/billing-charges/types-of-charges/third-party-charges/third-party-transaction-fees.md
+locator: introduction
+quote: Third-party transaction fees cover the cost for Shopify to provide a secure checkout platform and integrate with external payment providers.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: tptf_plan
+source: https://help.shopify.com/en/manual/your-account/manage-billing/billing-charges/types-of-charges/third-party-charges/third-party-transaction-fees.md
+locator: introduction
+quote: Transaction fees vary depending on the [Shopify plan](https://www.shopify.com/pricing) that you choose
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: tptf_exempt_sp
+source: https://help.shopify.com/en/manual/your-account/manage-billing/billing-charges/types-of-charges/third-party-charges/third-party-transaction-fees.md
+locator: introduction
+quote: When you use [Shopify Payments](/manual/payments/shopify-payments), you aren't charged third-party transaction fees for orders that are processed using the following payment methods:
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: tptf_store_credit
+source: https://help.shopify.com/en/manual/your-account/manage-billing/billing-charges/types-of-charges/third-party-charges/third-party-transaction-fees.md
+locator: introduction
+quote: When an order includes [store credit](/manual/customers/store-credit) or [gift cards](/manual/products/gift-card-products) as a payment method, on Shopify stores created on or after May 12, 2025.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: tptf_pos_manual
+source: https://help.shopify.com/en/manual/your-account/manage-billing/billing-charges/types-of-charges/third-party-charges/third-party-transaction-fees.md
+locator: introduction
+quote: Transaction fees don't apply for POS orders or for [manual payment methods](/manual/payments/manual-payments)
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: billtax_sa_uae
+source: https://help.shopify.com/en/manual/your-account/manage-billing/billing-charges/types-of-charges/taxes/billing-taxes-saudi-arabia-uae.md
+locator: introduction
+quote: This page provides a detailed guide on how Value-Added Tax (VAT) charges are applied at 15% in Saudi Arabia and 5% in the United Arab Emirates (UAE).
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: billtax_sa_exempt
+source: https://help.shopify.com/en/manual/your-account/manage-billing/billing-charges/types-of-charges/taxes/billing-taxes-saudi-arabia-uae.md
+locator: Understanding VAT obligations for Shopify stores in Saudi Arabia
+quote: If you have a VAT number, then your Shopify bill might be exempt from VAT charges.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: billtax_profile
+source: https://help.shopify.com/en/manual/your-account/manage-billing/billing-charges/types-of-charges/taxes/billing-taxes-saudi-arabia-uae.md
+locator: Steps
+quote: In the **Tax registration** section, click **Enter Tax ID number**.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: app_pricing_reason
+source: https://shopify.dev/docs/apps/launch/billing.md
+locator: About billing for your app
+quote: Shopify App Pricing creates a predictable, trustworthy, and standardized experience for app users and makes pricing easier to set up and maintain.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: app_pricing_invoice
+source: https://shopify.dev/docs/apps/launch/billing.md
+locator: How Shopify App Pricing helps
+quote: **Simplified payment process**: Charges are directly added to the merchant's Shopify invoice.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: app_pricing_collect
+source: https://shopify.dev/docs/apps/launch/billing.md
+locator: How Shopify App Pricing helps
+quote: **Revenue sharing**: Shopify collects the charge and automatically pays out your share
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: app_pricing_chargebacks
+source: https://shopify.dev/docs/apps/launch/billing.md
+locator: How Shopify App Pricing helps
+quote: **Chargeback handling**: Shopify handles all chargeback-related processes.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: app_pricing_required
+source: https://shopify.dev/docs/apps/launch/billing.md
+locator: Shopify App Pricing, Important note
+quote: All apps published on the Shopify App Store are required to use a Shopify provided billing solution and adhere to the terms and conditions of the [Shopify Partner Program Agreement](https://www.shopify.com/partners/terms).
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: app_pricing_dev_config
+source: https://shopify.dev/docs/apps/launch/billing.md
+locator: Which billing method should you use?
+quote: you configure subscription plans, usage-based pricing, and free trials in the Partner Dashboard instead of writing billing code.
+date: 2026-10-10
+basis: undated live page; read 2026-10-10
+access: md
+
+key: ppa_billing_resource
+source: https://www.shopify.com/partners/terms
+locator: Part C, 4. Use of the Shopify Billing Resource
+quote: It is the Developer’s responsibility to: (i) obtain Merchant consent to create and issue such charges and (ii) bill the Merchant in compliance with the Merchant Agreement
+date: 2026-02-27
+basis: last updated (page states "LAST UPDATED FEBRUARY 27, 2026")
+access: rendered
+
+key: ppa_revenue_share
+source: https://www.shopify.com/partners/terms
+locator: Part C, App Plan (C.2.2.1)
+quote: An App Developer that has met certain registration requirements, pays 0% of the total revenues on the first USD $1 million for their App Revenues and pays 15% of the total revenues exceeding the USD $1 million.
+date: 2026-02-27
+basis: last updated (page states "LAST UPDATED FEBRUARY 27, 2026")
+access: rendered
+
+key: ppa_parties
+source: https://www.shopify.com/partners/terms
+locator: preamble
+quote: The Agreement is between you, as Partner (as defined below in Section A.1.), Shopify Inc. (“Shopify Inc.”) and Shopify Commerce Singapore Pte. Ltd. (“Shopify Asia”)
+date: 2026-02-27
+basis: last updated (page states "LAST UPDATED FEBRUARY 27, 2026")
+access: rendered
+
+key: ppa_unsupported_region
+source: https://www.shopify.com/partners/terms
+locator: Part A, definitions, "Unsupported Region"
+quote: “Unsupported Region” means a region where Shopify is unable to operate due to local legal and regulatory requirements, commercial partnerships, and/or other pertinent factors.
+date: 2026-02-27
+basis: last updated (page states "LAST UPDATED FEBRUARY 27, 2026")
+access: rendered
+
+key: ppa_sanctions_warranty
+source: https://www.shopify.com/partners/terms
+locator: Part A, Section 2.2
+quote: (ii) Partner is not resident or located in or organized under the laws of an Unsupported Region.
+date: 2026-02-27
+basis: last updated (page states "LAST UPDATED FEBRUARY 27, 2026")
+access: rendered
+
+key: ppa_no_unsupported_transactions
+source: https://www.shopify.com/partners/terms
+locator: Part A, definitions, "Unsupported Region"
+quote: Shopify does not support transactions that involve these regions or persons located in or resident in or items originating from or destined for these regions.
+date: 2026-02-27
+basis: last updated (page states "LAST UPDATED FEBRUARY 27, 2026")
+access: rendered
+
+key: ppa_payments_approval
+source: https://www.shopify.com/partners/terms
+locator: C.4. Additional Terms Applicable to Payments Developers, Approval
+quote: All Payments Applications are subject to Shopify's review and approval to ensure compliance with our guidelines, API documentation, and other standards that we deem necessary to protect the integrity of Shopify’s payments ecosystem.
+date: 2026-02-27
+basis: last updated (page states "LAST UPDATED FEBRUARY 27, 2026")
+access: rendered
+
+key: ppa_payments_revshare
+source: https://www.shopify.com/partners/terms
+locator: C.4. Additional Terms Applicable to Payments Developers, Revenue Share
+quote: As part of the Payments Application approval process, all Payments Developers must enter a Revenue Share agreement.
+date: 2026-02-27
+basis: last updated (page states "LAST UPDATED FEBRUARY 27, 2026")
+access: rendered
+
+key: ppa_payments_wind_down
+source: https://www.shopify.com/partners/terms
+locator: C.4. Additional Terms Applicable to Payments Developers, Wind Down Period
+quote: If Payments Developer wishes to no longer support the Payments Application, the Parties agree to the following arrangement for a period not to exceed six (6) months following the effective date of termination (the “Wind Down Period”).
+date: 2026-02-27
+basis: last updated (page states "LAST UPDATED FEBRUARY 27, 2026")
+access: rendered
+
+key: ppa_payments_listing
+source: https://www.shopify.com/partners/terms
+locator: C.4. Additional Terms Applicable to Payments Developers, public listing
+quote: Shopify may approve the Payments Application inclusion in Shopify’s public list of payment gateways and make the Payments Application available to Merchants via Merchants admin.
+date: 2026-02-27
+basis: last updated (page states "LAST UPDATED FEBRUARY 27, 2026")
+access: rendered
+
+key: ppa_payout_period
+source: https://www.shopify.com/partners/terms
+locator: Part A, Section 3 (Fees and payment)
+quote: Shopify distributes Fees owing to its Partners and amounts due to Partner from Merchants where the Partner uses the Shopify Billing Resource twice per calendar month (each such period, a “Payment Period”).
+date: 2026-02-27
+basis: last updated (page states "LAST UPDATED FEBRUARY 27, 2026")
+access: rendered
+
+key: ppa_ear99
+source: https://www.shopify.com/partners/terms
+locator: Part C, App Developers, export control
+quote: App Developer represents and warrants that the U.S. export control classification number of each of their Apps is “EAR99”
+date: 2026-02-27
+basis: last updated (page states "LAST UPDATED FEBRUARY 27, 2026")
+access: rendered

@@ -1,0 +1,21 @@
+concern_id	terms	description	statements	gaps	area_id	action	reason
+BC-C-018	Orders V2 | Storefront Orders | Orders	Orders	6	3	BC-A-06	copy	
+BC-C-020	Order Transactions | Transactions API (Beta)	Order transactions	6	0	BC-A-06	copy	
+BC-C-021	Refunds | Refunds & returns	Refunds	4	3	BC-A-06	copy	
+BC-C-019	Order Fulfillment | Fulfillment Methods | Shipments	Order fulfillment and shipments	3	3	BC-A-07	set aside	fulfillment and shipments: its statements are about shipping and fulfilment, not how an order is paid
+BC-C-070	Shipping V2 | Shipping | Real-time shipping quotes | ShipperHQ shipping rules engine	Shipping	5	3	BC-A-07	set aside	shipping rates and quotes, not payment
+BC-C-071	Shipping Providers	Shipping providers	4	3	BC-A-07	set aside	shipping carriers, not payment
+BC-C-006	Pickup | Pickup Methods | Pickup Options | Storefront Pickup Options | Buy online, pick up in store	Pickup (buy online, pick up in store)	5	3	BC-A-08	set aside	pickup methods: its statements are about collecting goods, not paying
+BC-C-069	Point of sale | POS integrations | POS & In-Store	Point of sale	3	2	BC-A-08	set aside	POS integrations with named providers; its statements say nothing of payment arranged between seller and buyer
+BC-C-022	Payment Processing | Create Payments	Payment processing (Payments API)	10	0	BC-A-09	copy	
+BC-C-023	Payment Methods | Payment Methods V3 | Payment Methods V2	Payment methods	3	2	BC-A-09	copy	
+BC-C-024	Stored Instruments API (Beta) | Stored Payment Instruments | Stored credit cards	Stored payment instruments	6	2	BC-A-09	set aside	stored cards, a card-payment feature through gateways
+BC-C-027	Apple Pay, Google Pay, and Amazon Pay | Digital wallets	Digital wallets	4	2	BC-A-09	set aside	digital wallets, paid through providers
+BC-C-026	Embedded Payment Providers | Open Payment Providers | Open Payment Provider Fee | Embedded Payment Provider List | Payment freedom	Payment providers: Embedded and Open Payment Providers	11	3	BC-A-10	copy	
+BC-C-029	Unified Billing | Merchant Unified Billing | Unified Billing Partner	Unified Billing (app charges on the BigCommerce invoice)	12	1	BC-A-12	set aside	app charges on the BigCommerce invoice, not order payments
+BC-C-030	Fees and Billing | GMV cap | Open Payment Provider Fees	Fees and billing (subscription, GMV and plan)	8	1	BC-A-12	copy	
+BC-C-031	Invoice Management | Payments | Invoicing & net terms	B2B Edition invoices and payments	5	2	BC-A-13	copy	
+BC-C-065	B2B Edition | B2B REST APIs | Buyer portal	B2B Edition (companies, users, quotes, shopping lists, sales staff)	6	2	BC-A-13	set aside	B2B Edition companies, users and quotes; its payment parts are in BC-C-031
+BC-C-062	Professional reporting tools | Reporting & analytics | Analytics | Big Open Data Solutions	Reporting and analytics	6	2	BC-A-25	set aside	analytics and data layer; its statements say nothing of order payments or offline orders
+BC-C-025	BigCommerce Payments | BigCommerce Payments by PayPal	BigCommerce Payments	10	1	BC-A-32	copy	
+S-01		the pilot's statements, gaps and absences on who holds the merchant's funds	128	40		copy	

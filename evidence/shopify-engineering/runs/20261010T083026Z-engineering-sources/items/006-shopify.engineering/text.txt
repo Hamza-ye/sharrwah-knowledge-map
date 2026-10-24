@@ -1,0 +1,312 @@
+Skip to Content
+Solutions
+Start
+Start your business
+.
+Build your brand
+Create your website
+.
+Online store editor
+Customize your store
+.
+Store themes
+Find business apps
+.
+Shopify app store
+Own your site domain
+.
+Domains & hosting
+Explore free business tools
+.
+Tools to run your business
+Sell
+Sell your products
+.
+Sell online or in person
+Check out customers
+.
+World-class checkout
+Sell online
+.
+Grow your business online
+Sell across channels
+.
+Reach millions of shoppers and boost sales
+Sell globally
+.
+International sales
+Sell wholesale & direct
+.
+Business-to-business (B2B)
+Market
+Market your business
+.
+Reach & retain customers
+Market across social
+.
+Social media integrations
+Chat with customers
+.
+Shopify Inbox
+Nurture customers
+.
+Shopify Messaging
+Know your audience
+.
+Gain customer insights
+Manage
+Manage your business
+.
+Track sales, orders & analytics
+Measure your performance
+.
+Analytics and Reporting
+Manage your stock & orders
+.
+Inventory & order management
+Automate your business
+.
+Shopify Flow
+Shopify Developers
+.
+Build with Shopify's powerful APIs
+Plus
+.
+A commerce solution for growing digital brands
+All Products
+.
+Explore all Shopify products & features
+Pricing
+Resources
+Help and support
+Help and support
+.
+Get 24/7 support
+Business courses
+.
+Learn from proven experts
+Popular topics
+What is Shopify?
+.
+How our commerce platform works
+Essential tools
+Business name generator
+.
+Logo maker
+.
+Stock photography
+.
+QR code generator
+.
+What’s new
+Changelog
+.
+Your source for recent updates
+Newsroom
+.
+All company news and press releases
+Engineering Blog
+AI & Machine Learning
+Mobile
+Infrastructure
+Culture
+Latest
+More topics
+Security
+Developer Tooling
+Data Science Engineering
+Search
+BLOG|INFRASTRUCTURE
+High Availability by Offloading Work Into the Background
+
+High availability and short response times are necessary, making background jobs an indispensable tool regardless of the application’s scale.
+
+Engineering at Shopify
+
+We’re hiring
+
+See open roles
+
+Unpredictable traffic spikes, slow requests to a third-party payment gateway, or time-consuming image processing can easily overwhelm an application, making it respond slowly or not at all. Over Black Friday Cyber Monday (BFCM) 2020, Shopify merchants made sales of over 5 Billion USD, with peak sales of over 100 Million USD per hour. On such a massive scale, high availability and short response times are crucial. But even for smaller applications, availability and response times are important for a great user experience.
+
+BFCM by the numbers
+High Availability
+
+High availability is often conflated with a high server uptime. But it’s not sufficient that the server hasn’t crashed or shut down. In the case of Shopify, our merchants need to be able to make sales. So a buyer needs to be able to interact with the application. A banner saying “come back later” isn’t sufficient, and serving only one buyer at a time isn’t good enough either. To consider an application available, the community of users needs to have meaningful interactions with the application. Availability can be considered high if these interactions are possible whenever the users need them to be.
+
+Offloading Work
+
+In order to be available, the application needs to be able to accept incoming requests. If the external-facing part of the application (the application server) is also doing the heavy lifting required to process the requests, it can quickly become overwhelmed and unavailable for new incoming requests. To avoid this, we can offload some of the heavy lifting into a different part of the system, moving it outside of the main request response cycle to not impact the application server’s availability to accept and serve incoming requests. This also shortens response times, providing a better user experience.
+
+Commonly offloaded tasks include:
+sending emails
+processing images and videos
+firing webhooks or making third party requests
+rebuilding search indexes
+importing large data sets
+cleaning up stale data
+
+The benefits of offloading a task are particularly large if the task is slow, consumes a lot of resources, or is error-prone.
+
+For example, when a new user signs up for a web application, the application usually creates a new account and sends them a welcome email. Sending the email is not required for the account to be usable, and the user doesn’t receive the email immediately anyways. So there’s no point in sending the email from within the request response cycle. The user shouldn’t have to wait for the email to be sent, they should be able to start using the application right away, and the application server shouldn’t be burdened with the task of sending the email.
+
+Any task not required to be completed before serving a response to the caller is a candidate for offloading. When uploading an image to a web application, the image file needs to be processed and the application might want to create thumbnails in different sizes. Successful image processing is often not required for the user to proceed, so it’s generally possible to offload this task. However, the server can no longer respond, saying “the image has been successfully processed” or “an image processing error has occurred.” Now, all it can respond with is “the image has been uploaded successfully, it will appear on the website later if things go as planned.” Given the very time-consuming nature of image processing, this trade-off is often well worth it, given the massive improvement of response time and the benefits of availability it provides.
+
+Background Jobs
+
+Background jobs are an approach to offloading work. A background job is a task to be done later, outside of the request response cycle. The application server delegates the task, for example, the image processing, to a worker process, which might even be running on an entirely different machine. The application server needs to communicate the task to the worker. The worker might be busy and unable to take on the task right away, but the application server shouldn’t have to wait for a response from the worker. Placing a message queue between the application server and worker solves this dilemma, making their communication asynchronous. Sender and receiver of messages can interact with the queue independently at different points in time. The application server places a message into the queue and moves on, immediately becoming available to accept more incoming requests. The message is the task to be done by the worker, which is why such a message queue is often called a task queue. The worker can process messages from the queue at its own speed. A background job backend is essentially some task queues along with some broker code for managing the workers.
+
+Features
+
+Shopify queues tens of thousands of jobs per second in order to leverage a variety of features.
+
+Response times
+
+Using background jobs allows us to decouple the external-facing request (served by the application server) from any time-consuming backend tasks (executed by the worker). thus improving response times. What improves response times for individual requests also improves the overall availability of the system.
+
+Spikeability
+
+A sudden spike in, say, image uploads, doesn’t hurt if the time consuming image processing is done by a background job. The availability and response time of the application server is constrained by the speed with which it can queue image processing jobs. But the speed of queueing more jobs is not constrained by the speed of processing them. If the worker can’t keep up with the increased amount of image processing tasks, the queue grows. But the queue serves as a buffer between the worker and the application server so that users can continue uploading images as usual. With Shopify facing traffic spikes of up to 170k requests per second, background jobs are essential for maintaining high availability despite unpredictable traffic.
+
+Retries and Redundancy
+
+When a worker encounters an error while running the job, the job is requeued and retried later. Since all of that is happening in the back, it's not affecting the availability or response times of the external facing application server. It makes background jobs a great fit for error-prone tasks like requests to an unreliable third party.
+
+Parallelization
+
+Several workers might process messages from the same queue allowing more than one task to be worked on simultaneously. This is distributing the workload. We can also split a large task into several smaller tasks and queue them as individual background jobs so that several of these subtasks are worked on simultaneously.
+
+Prioritization
+
+Most background job backends allow for prioritizing jobs. They might use priority queues that don’t follow the first in - first out approach so that high-priority jobs end up cutting the line. Or they set up separate queues for jobs of different priorities and configure workers to prioritize jobs from the higher priority queues. No worker needs to be fully dedicated to high-priority jobs, so whenever there’s no high-priority job in the queue, the worker processes lower-priority jobs. This is resourceful, reducing the idle time of workers significantly.
+
+Event-based and Time-based Scheduling
+
+Background jobs aren’t always queued by an application server. A worker processing a job can also queue another job. While they queue jobs based on events like user interaction, or some mutated data, a scheduler might queue jobs based on time (for example, for a daily backup).
+
+Simplicity of Code
+
+The background job backend encapsulates the asynchronous communication between the client requesting the job and the worker executing the job. Placing this complexity into a separate abstraction layer keeps the concrete job classes simple. A concrete job class only implements the task to be done (for example, sending a welcome email or processing an image). It’s not aware of being run in the future, being run on one of several workers, or being retried after an error.
+
+Challenges
+
+Asynchronous communication poses some challenges that don’t disappear by encapsulating some of its complexity. Background jobs aren’t any different.
+
+Breaking Changes to Job Parameters
+
+The client queuing the job and the worker processing it doesn’t always run the same software version. One of them might already have been deployed with a newer version. This situation can last for a significant amount of time, especially if practicing canary deployments. Changes to the job parameters can break the application if a job has been queued with a certain set of parameters, but the worker processing the job expects a different set. Breaking changes to the job parameters need to roll out through a sequence of changes that preserve backward compatibility until all legacy jobs from the queue have been processed.
+
+No Exactly-once Delivery
+
+When a worker completes a job, it reports back that it’s now safe to remove the job from the queue. But what if the worker processing the job remains silent? We can allow other workers to pick up such a job and run it. This ensures that the job runs even if the first worker has crashed. But if the first worker is simply a little slower than expected, our job runs twice. On the other hand, if we don’t allow other workers to pick up the job, the job will not run at all if the first worker did crash. So we have to decide what’s worse: not running the job at all, or running it twice. In other words, we have to choose between at least and at most-once delivery.
+
+For example, not charging a customer is not ideal, but charging them twice might be worse for some businesses. At most-once delivery sounds right in this scenario. However, if every charge is carefully tracked and the job checks those states before attempting a charge, running the job a second time doesn’t result in a second charge. The job is idempotent, allowing us to safely choose at-least once delivery.
+
+Non-Transactional Queuing
+
+The job queue is often in a separate datastore. Redis is a common choice for the queue, while many web applications store their operational data in MySQL or PostgreSQL. When a transaction for writing operational data is open, queuing the job will not be part of this enclosing transaction - writing the job into Redis isn’t part of a MySQL or PostgreSQL transaction. The job is queued immediately and might end up being processed before the enclosing transaction commits (or even if it rolls back).
+
+When accepting external input from user interaction, it’s common to write some operational data with very minimal processing, and queue a job performing additional steps processing that data. This job may not find the data it needs unless we queue it after committing the transaction writing the operational data. However, the system might crash after committing the transaction and before queuing the job. The job will never run, the additional steps for processing the data won’t be performed, leaving the system in an inconsistent state.
+
+The outbox pattern can be used to create transactionally staged job queues. Instead of queuing the job right away, the job parameters are written into a staging table in the operational data store. This can be part of a database transaction writing operational data. A scheduler can periodically check the staging table, queue the jobs, and update the staging table when the job is queued successfully. Since this update to the staging table might fail even though the job was queued, the job is queued at least once and should be idempotent.
+
+Depending on the volume of jobs, transactionally staged job queues can result in quite some load on the database. And while this approach guarantees the queuing of jobs, it can’t guarantee that they will run successfully.
+
+Local Transactions
+
+A business process might involve database writes from the application server serving a request and workers running several jobs. This creates the problem of local database transactions. Eventual consistency is reached when the last local transaction commits. But if one of the jobs fails to commit its data, the system is again in an inconsistent state. The SAGA pattern can be used to guarantee eventual consistency. In addition to queuing jobs transactionally, the jobs also report back to the staging table when they succeed. A scheduler can check this table and spot inconsistencies. This results in an even higher load on the database than a transactionally staged job queue alone.
+
+Out of Order Delivery
+
+The jobs leave the queue in a predefined order, but they can end up on different workers and it’s unpredictable which one completes faster. And if a job fails and is requeued, it’s processed even later. So if we’re queueing several jobs right away, they might run out of order. The SAGA pattern can ensure jobs are run in the correct order if the staging table is also used to maintain the job order.
+
+A more lightweight alternative can be used if consistency guarantees are not of concern. Once a job has completed its tasks, it can queue another job as a follow-up. This ensures the jobs run in the predefined order. The approach is quick and easy to implement since it doesn’t require a staging table or a scheduler, and it doesn’t generate any extra load on the database. But the resulting system can become hard to debug and maintain since it’s pushing all its complexity down a potentially long chain of jobs queueing other jobs, and little observability into where exactly things might have gone wrong.
+
+Long Running Jobs
+
+A job doesn’t have to be as fast as a user-facing request, but long-running jobs can cause problems. For example, the popular ruby background job backend Resque prevents workers from being shut down while a job is running. This worker cannot be deployed. It is also not very cloud-friendly, since resources are required to be available for a significant amount of time in a row. Another popular ruby background job backend, Sidekiq, aborts and requeues the job when a shutdown of the worker is initiated. However, the next time the job is running, it starts over from the beginning, so it might be aborted again before completion. If deployments happen faster than the job can finish, the job has no chance to succeed. With the core of Shopify deploying about 40 times a day, this is not an academic discussion but an actual problem we needed to address.
+
+Luckily, many long-running jobs are similar in nature: they iterate over a huge dataset. Shopify has developed and open sourced an extension to Ruby on Rails’s Active Job framework, making this kind of job interruptible and resumable. It sets a checkpoint after each iteration and requeues the job. Next time the job is processed, work continues at the checkpoint, allowing for safe and easy interruption of the job. With interruptible and resumable jobs, workers can be shut down any time, which makes them more cloud-friendly and allows for frequent deployments. Jobs can be throttled or halted for disaster prevention, for example, if there’s a lot of load on the database. Interrupting jobs also allows for safely moving data between database shards.
+
+Distributed Background Jobs
+
+Background job backends like Resque and Sidekiq in Ruby usually queue a job by placing a serialized object into the queue, an instance of the concrete job class. This implies that both the client queuing the job and the worker processing it needs to be able to work with this object and have an implementation of this class. This works great in a monolithic architecture where clients and workers are running the same codebase. But if we would like to, say, extract the image processing into a dedicated image processing microservice, maybe even written in a different language, we need a different approach to communicate.
+
+It is possible to use Sidekiq with separate services, but the workers still need to be written in Ruby and the client has to choose the right redis queue for a job. So this approach is not easily applied to a large-scale microservices architecture, but avoids the overhead of adding a message broker like RabbitMQ.
+
+A message-oriented middleware like RabbitMQ places a purely data-based interface between the producer and consumer of messages, such as a JSON payload. The message broker can serve as a distributed background job backend where a client can offload work onto workers running an entirely different codebase.
+
+Instead of simple point-to-point queues, topics that leverage task queues add powerful routing. In contrast to HTTP, this routing is not limited to 1:1. Beyond delegating specific tasks, messaging can be used for different event messages whenever communication between microservices is needed. With messages removed after processing, there’s no way to replay the stream of messages and no source of truth for a system-wide state.
+
+Event streaming like Kafka has an entirely different approach: events are written into an append-only event log. All consumers share the same log and can read it at any time. The broker itself is stateless; it doesn’t track event consumption. Events are grouped into topics, which provides some publish subscribe capabilities that can be used for offloading work to different services. These topics aren’t based on queues, and events are not removed. Since the log of events can be replayed, it can serve, for example, as a source of truth for event sourcing. With a stateless broker and append-only writing, throughput is incredibly high—a great fit for real-time applications and data streaming.
+
+Background jobs allow the user-facing application server to delegate tasks to workers. With less work on its plate, the application server can serve user-facing requests faster and maintain a higher availability, even when facing unpredictable traffic spikes or dealing with time-consuming and error-prone backend tasks. The background job backend encapsulates the complexity of asynchronous communication between client and worker into a separate abstraction layer, so that the concrete code remains simple and maintainable.
+
+High availability and short response times are necessary for providing a great user experience, making background jobs an indispensable tool regardless of the application’s scale.
+
+Kerstin is a Staff Developer transforming Shopify’s massive Rails code base into a more modular monolith, building on her prior experience with distributed microservices architectures .
+
+Wherever you are, your next journey starts here! If building systems from the ground up to solve real-world problems interests you, our Engineering blog has stories about other challenges we have encountered. Intrigued? Visit our Engineering career page to find out about our open positions and learn about Digital by Default.
+KP
+by
+Kerstin Puschke
+Published on Jul 8, 2021
+SHARE ARTICLE
+Facebook
+Twitter
+LinkedIn
+by
+Kerstin Puschke
+Published on Jul 8, 2021
+• 13 minute read
+
+DEVELOPMENT
+Introducing Ruvy
+DEVELOPER TOOLING
+Building a ShopifyQL Code Editor
+
+APPS
+Shopify’s platform is the Web platform
+DEVELOPMENT
+The Engineering Story Behind Flex Comp
+WORK FROM ANYWHERE
+WITH SHOPIFY
+
+See our open roles and learn more about our digital by design culture.
+
+See open roles
+Shopify
+About
+Careers
+Investors
+Press and Media
+Partners
+Affiliates
+Legal
+Service status
+Support
+Merchant Support
+Shopify Help Center
+Hire a Partner
+Shopify Community
+Developers
+Shopify.dev
+API Documentation
+Dev Degree
+Products
+Shop
+Shop Pay
+Shopify for Enterprise
+Global Impact
+Sustainability
+Build Black
+Accessibility
+Research
+Solutions
+Online Store Builder
+Website Builder
+Ecommerce Website
+Terms of service
+Privacy policy
+Sitemap
+Your Privacy Choices

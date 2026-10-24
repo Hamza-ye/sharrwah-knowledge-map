@@ -1,0 +1,151 @@
+# Family J: shipping and fulfillment; Family K: marketing
+concern: shp.rates
+software: core: Settings > Shipping and delivery, with shipping profiles, zones and rates || cites: inv:settings|Shipping and delivery, inv:api-resources|Shipping and fulfillment
+decides: merchant: the merchant sets profiles, zones and rates and may pass shipping costs to customers || cites: inv:other:staff-permissions|MANAGE_DELIVERY_SETTINGS, inv:webhook-topics|profiles/create
+legal: merchant: the merchant is responsible for shipping to its customers || cites: tos_merchant_responsible_transactions, ship_intermediary
+boundary: setting: Settings > Shipping and delivery; API: read_shipping and write_shipping; other: UCP fulfillment capability || cites: inv:settings|Shipping and delivery, inv:access-scopes|write_shipping, inv:other:ucp|dev.ucp.shopping.fulfillment
+reason: not shown
+
+concern: shp.carrier_rates
+software: outside platform: third-party calculated rates from the merchant's own carrier accounts or rate apps || cites: inv:plan-features|3rd-party calculated shipping rates|Public pricing, inv:other:app-store-categories|Shipping rate apps
+decides: operator, per plan: third-party calculated rates are a plan row || cites: inv:plan-features|3rd-party calculated shipping rates|Public pricing
+decides: merchant: the merchant connects its carrier accounts || cites: inv:plan-features|3rd-party calculated shipping rates|Public pricing
+legal: partner: the carrier, under the merchant's own account || cites: ship_own_account
+boundary: API: read_shipping and write_shipping scopes || cites: inv:access-scopes|read_shipping
+reason: not shown
+
+concern: shp.labels
+software: core: Shopify Shipping in the admin (Orders > Shipping labels): discounted labels from supported carriers || cites: labels_buy, inv:admin-navigation|Shipping labels|Main navigation, tos_shipping_terms
+decides: operator, per market and plan: eligibility varies by carrier and country; discounts vary by plan || cites: labels_eligibility, labels_discounts_plan, ship_third_party_services
+decides: merchant: the merchant buys labels and chooses carriers || cites: inv:other:staff-permissions|BUY_SHIPPING_LABELS
+legal: separate entities of the platform: the Shopify Contracting Party by billing address provides Shopify Shipping || cites: ship_party
+legal: partner: Third-Party Integrators (Shippo, Auctane, Easyship) and carriers provide the shipping services under their own terms; Shopify serves only as an intermediary || cites: ship_shippo, ship_auctane, ship_easyship, ship_intermediary, ship_not_responsible
+boundary: contract: Shopify Shipping Terms of Service and integrator and carrier terms; other: shipping fees on the Shopify invoice || cites: tos_shipping_terms, ship_fees_invoice, inv:other:billing-charge-categories|Shipping fees || note: The Shipping Terms let Shopify modify, suspend or terminate Shopify Shipping at any time (ship_modify); they do not say what happens to labels if an integrator or carrier stops.
+reason: save money with carrier discounts and time by avoiding trips to carrier locations || cites: labels_buy
+
+concern: shp.insurance
+software: core: shipping insurance bought with labels, with claims from the admin || cites: ins_us, inv:plan-features|Shipping insurance*|Public pricing
+decides: operator, per market and plan: only for shipments from the United States; up to $200 included on eligible shipments for some plans with Shopify Payments or Managed Markets || cites: ins_us, ins_included
+legal: partner: third-party insurance providers; Shipsurance administers coverage bought through Shopify || cites: ship_insurance, ins_shipsurance
+boundary: other: insurance premiums on the Shopify bill || cites: inv:other:billing-charge-categories|Insurance premiums
+reason: not shown
+
+concern: shp.fulfillment
+software: core: fulfillment orders and fulfillments, with many fulfillment webhooks || cites: inv:api-resources|FulfillmentOrder, inv:webhook-topics|fulfillment_events/create
+decides: merchant: staff fulfill and ship orders || cites: inv:other:staff-permissions|FULFILL_AND_SHIP_ORDERS
+legal: merchant: fulfillment is the merchant's responsibility || cites: tos_merchant_responsible_transactions
+boundary: API: fulfillment order scopes; event: fulfillment webhooks || cites: inv:access-scopes|read_merchant_managed_fulfillment_orders, inv:webhook-topics|fulfillment_holds/added
+reason: not shown
+
+concern: shp.fulfillment_services
+software: extension point: fulfillment service apps (third-party warehousing, print on demand), each with its own location || cites: dev_fs_definition, dev_fs_location, inv:other:app-store-categories|Third-party logistics (3PL) apps
+decides: merchant: the merchant sends fulfillment requests; the service accepts or rejects them || cites: dev_fs_accept
+legal: app developer: the fulfillment service provider || cites: dev_fs_definition
+boundary: API: assigned fulfillment order scopes; event: fulfillment request and cancellation webhooks; other: external 3PL transaction fees on the Shopify bill || cites: inv:access-scopes|write_assigned_fulfillment_orders, inv:webhook-topics|fulfillment_orders/cancellation_request_accepted, inv:other:billing-charge-categories|External 3PL transaction fees
+reason: not shown
+
+concern: shp.sfn
+software: separate service or product line: the Shopify Fulfillment Network app, which connects the merchant to third-party logistics providers || cites: sfn_app, sfn_3pl, inv:admin-navigation|ShopifyFulfillmentNetwork
+decides: merchant: the merchant installs the app and chooses a 3PL partner || cites: sfn_3pl
+legal: partner: third-party logistics providers store inventory and fulfill orders on the merchant's behalf || cites: sfn_3pl
+boundary: contract: the legal index lists Shopify Fulfillment Network Terms of Service; other: network, transportation and Shopify Logistics charges on the Shopify bill || cites: inv:legal-agreements|Shopify Fulfillment Network Terms of Service, inv:other:billing-charge-categories|Shopify Fulfillment Network charges, inv:other:billing-charge-categories|Shopify Logistics || note: The legal index link "View fulfillment network terms" points to https://www.shopify.com/legal/terms#9-additional-services; section 9 of the Terms read on 2026-10-10 has no fulfillment network subsection (9.1 to 9.14).
+reason: scale without managing a warehouse || cites: sfn_3pl
+
+concern: shp.local_pickup_delivery
+software: core: local pickup and local delivery, with prepared-for-pickup and prepared-for-delivery events || cites: inv:webhook-topics|fulfillment_orders/line_items_prepared_for_pickup, inv:access-scopes|unauthenticated_read_product_pickup_locations
+decides: merchant: the merchant offers pickup or local delivery || cites: inv:other:help-center-sections|Ship and pickup in one order in Shopify Checkout
+legal: not shown
+boundary: event: fulfillment order pickup and local delivery webhooks || cites: inv:webhook-topics|fulfillment_orders/line_items_prepared_for_local_delivery
+reason: not shown
+
+concern: shp.delivery_customization_fn
+software: extension point: the Delivery Customization Function API || cites: inv:api-resources|Delivery Customization, inv:extension-points|Delivery customization (delivery_customization)
+decides: merchant: the merchant installs and configures it; Shopify executes it || cites: dev_fn_shopify_executes
+legal: app developer: built by app developers || cites: dev_fn_shopify_executes
+boundary: API: delivery customization scopes || cites: inv:access-scopes|write_delivery_customizations
+reason: not shown
+
+concern: shp.fulfillment_constraints_fn
+software: extension point: the Fulfillment Constraints Function API || cites: inv:api-resources|Fulfillment Constraints, inv:extension-points|Fulfillment constraint (fulfillment_constraints)
+decides: merchant: the merchant installs and configures it; Shopify executes it || cites: dev_fn_shopify_executes
+legal: app developer: built by app developers || cites: dev_fn_shopify_executes
+boundary: API: fulfillment constraint rule scopes || cites: inv:access-scopes|write_fulfillment_constraint_rules
+reason: not shown
+
+concern: shp.delivery_option_fn
+software: extension point: delivery option generator functions (local pickup, pickup points, fulfillment options) || cites: inv:extension-points|Local pickup delivery option generator (local_pickup_delivery_option_generator), inv:extension-points|Pickup point delivery option generator (pickup_point_delivery_option_generator)
+decides: merchant: the merchant installs and configures them; Shopify executes them || cites: dev_fn_shopify_executes
+legal: app developer: built by app developers || cites: dev_fn_shopify_executes
+boundary: API: delivery option generator scopes || cites: inv:access-scopes|write_delivery_option_generators
+reason: not shown
+
+concern: shp.delivery_promises
+software: core: delivery promise settings || cites: inv:access-scopes|read_delivery_promises, inv:webhook-topics|delivery_promise_settings/update
+decides: not shown
+legal: not shown
+boundary: API: delivery promise scopes; event: delivery_promise_settings/update || cites: inv:access-scopes|write_delivery_promises, inv:webhook-topics|delivery_promise_settings/update
+reason: not shown
+
+concern: shp.tracking
+software: core: tracking numbers with a Shopify list of tracking carriers; order tracking apps also exist || cites: inv:other:value-lists|Tracking carriers (204 options), inv:other:app-store-categories|Order tracking apps
+decides: operator: Shopify sets the list of supported tracking carriers (204 on the list read) || cites: inv:other:value-lists|Tracking carriers (204 options)
+legal: not shown
+boundary: not shown
+reason: not shown
+
+concern: mktg.discounts
+software: core: Discounts in the admin and the discounts API; discount codes on every plan || cites: inv:admin-navigation|Discounts|Main navigation, inv:api-resources|Discounts and marketing, inv:plan-features|Create and share discount codes|Public pricing
+decides: merchant: the merchant creates discounts || cites: inv:other:staff-permissions|Orders > Apply discounts
+legal: not shown
+boundary: API: discounts scopes; event: discounts webhooks; other: UCP discount capability || cites: inv:access-scopes|read_discounts, inv:webhook-topics|discounts/create, inv:other:ucp|dev.ucp.shopping.discount
+reason: not shown
+
+concern: mktg.discount_fn
+software: extension point: Discount Function APIs; an app can define a new discount type that Shopify executes || cites: inv:api-resources|Discount, inv:extension-points|Discount (discount), dev_fn_shopify_executes
+decides: merchant: the merchant installs the app and creates discounts from its types || cites: dev_fn_shopify_executes
+legal: app developer: built by app developers || cites: dev_fn_shopify_executes
+boundary: extension point: discount function settings || cites: inv:extension-points|Discount function settings (discount_details_function_settings)
+reason: not shown
+
+concern: mktg.campaigns
+software: core: Growth in the admin (Campaigns, Autopilot), marketing automations and marketing activities || cites: inv:admin-navigation|Growth|Main navigation, inv:admin-navigation|Campaigns|Main navigation, inv:plan-features|Create marketing automations|Public pricing
+software: outside platform: marketing apps in the App Store || cites: inv:other:app-store-categories|Marketing apps
+decides: merchant: the merchant creates campaigns and automations || cites: inv:other:staff-permissions|Marketing > Campaigns
+legal: not shown
+boundary: API: marketing events and integrated campaign scopes || cites: inv:access-scopes|write_marketing_events, inv:access-scopes|read_marketing_integrated_campaigns
+reason: not shown
+
+concern: mktg.messaging
+software: core: Shopify Email and pay-per-send SMS campaigns in the admin, under Shopify Messaging || cites: inv:plan-features|Create email campaigns|Public pricing, inv:plan-features|Pay-per-send SMS campaigns|Public pricing, inv:other:notification-templates|Shopify Messaging
+decides: operator: Shopify scans email content before delivery || cites: tos_email_content_scanning
+legal: partner: email uses Third Party Providers including SendGrid (a Twilio Company); SMS uses third-party providers under Twilio's Acceptable Use Policy || cites: tos_email_sendgrid, tos_sms_twilio
+boundary: contract: Terms of Service 9.5 SMS Messaging and 9.7 Shopify Email; other: Messaging charges on the Shopify bill || cites: inv:legal-agreements|9.5 SMS Messaging, inv:legal-agreements|9.7 Shopify Email, inv:other:billing-charge-categories|Messaging
+reason: not shown
+
+concern: mktg.attribution
+software: core: Attribution under Growth; extension point: order attribution configuration || cites: inv:admin-navigation|Attribution|Main navigation, inv:extension-points|Order Attribution Config (order_attribution_config)
+decides: not shown
+legal: not shown
+boundary: extension point: Order Attribution Config || cites: inv:extension-points|Order Attribution Config (order_attribution_config)
+reason: not shown
+
+concern: mktg.audiences
+software: separate service or product line: the Shopify Audiences app, which builds audiences and exports them to ad platforms || cites: aud_def, aud_export
+decides: operator, per market and plan: eligible Shopify Plus stores using Shopify Payments, based in the United States or Canada; requires Shopify Network Intelligence || cites: aud_eligibility, inv:plan-features|Optimize ads with Shopify Audiences|Public pricing
+legal: not shown || note: The Terms of Service (9.12) subject Audiences to the Shopify Audiences Terms and Conditions, which are linked inside the admin (https://admin.shopify.com/apps/shopify-audiences/settings/terms) and were not read.
+boundary: contract: Terms of Service 9.12 and the Shopify Audiences Terms and Conditions; other: export to the merchant's ad accounts || cites: tos_audiences, inv:legal-agreements|9.12 Audiences, aud_export
+reason: find new customers through custom audiences for advertising platforms || cites: aud_def
+
+concern: mktg.shop_campaigns
+software: core: Shop Campaigns, an ads program across the Shop app, Shop website, Shopify Product Network and optional third-party placements || cites: shopcamp_cac, inv:plan-features|Acquire customers risk-free with Shop Campaigns|Public pricing
+decides: merchant: the merchant sets the average customer acquisition cost || cites: shopcamp_cac
+legal: not shown
+boundary: other: Shop Campaigns charges on the Shopify bill, only when a customer converts || cites: shopcamp_cac, inv:other:billing-charge-categories|Shop Campaigns
+reason: not shown
+
+concern: mktg.collabs
+software: separate service or product line: the Shopify Collabs app connecting businesses and creators || cites: collabs_def, inv:other:shopify-apps|Collabs: Content commerce
+decides: merchant: the merchant invites creators and sets commissions || cites: collabs_payments
+legal: not shown || note: Businesses use Collabs to "send payments to their affiliates"; the sources read do not name who holds or transmits those payments.
+boundary: other: Collabs commission and processing fee charges on the Shopify bill || cites: inv:other:billing-charge-categories|Shopify collabs commission, inv:other:billing-charge-categories|Shopify collabs processing fee
+reason: not shown

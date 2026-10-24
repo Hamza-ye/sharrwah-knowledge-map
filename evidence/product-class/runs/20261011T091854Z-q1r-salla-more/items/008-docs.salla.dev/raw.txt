@@ -1,0 +1,52 @@
+# Welcome to Salla CLI 👋 
+
+A Command Line Interface (CLI) is a program that accepts text inputs to execute operating system functions. [Salla CLI](https://github.com/SallaApp/Salla-CLI) is a tool designed for developers to create Salla Apps and Themes, which works with the [Salla APIs](https://docs.salla.dev/). After that, the Apps and Themes can go through [publishing process](https://salla.dev/blog/standards-salla-apps-publications/) to be available in the [Salla App Store](https://apps.salla.sa/) and installed in any of the [Salla Merchant Stores](https://salla.sa/site/).
+
+:::note[Tip]
+Salla CLI tool is developed by Salla team to help in [creating Salla Apps](https://docs.salla.dev/doc-422768) and [Themes](https://docs.salla.dev/doc-422775?nav=01HNFTD5Y5ESFQS3P9MJ0721VM) by using only **1-command**!
+:::
+
+### Prerequisites
+
+The basic Salla CLI prerequisites that the developers need are:
+
+- Create a partner account on **[Salla Partners Portal](https://salla.partners/)**.
+- For Salla CLI's compatibility: **[Nodejs](https://nodejs.org/en/)** LTS>= 16.13.1 and **[npm](https://www.npmjs.com/)**>= 6.14.0.
+- Other optional requirements: **[PHP](https://www.php.net/)** >= 8.2, **[composer](https://getcomposer.org/)** package manager.
+
+### What is Salla CLI usage?
+
+[Salla CLI](https://github.com/SallaApp/Salla-CLI) comes with an easy to use set of straightforward commands that do the complete setup for Salla Apps and Themes. The following table shows the commands grouped by [_Apps commands_](https://docs.salla.dev/doc-422767?nav=01HNA8QHCPJTCY5VSEZ616JCAK) for app-related commands and [_Themes commands_](https://docs.salla.dev/doc-422774?nav=01HNA8QHCPJTCY5VSEZ616JCAK) for theme-related commands.
+
+**Apps commands**
+|----|
+|[Create App](https://docs.salla.dev/doc-422768?nav=01HNA8QHCPJTCY5VSEZ616JCAK)|
+|[Create Webhook](https://docs.salla.dev/doc-422769?nav=01HNA8QHCPJTCY5VSEZ616JCAK)|
+|[Delete](https://docs.salla.dev/doc-422770?nav=01HNA8QHCPJTCY5VSEZ616JCAK)|
+|[Link](https://docs.salla.dev/doc-422771?nav=01HNA8QHCPJTCY5VSEZ616JCAK)|
+|[List and Info](https://docs.salla.dev/doc-422772?nav=01HNA8QHCPJTCY5VSEZ616JCAK)|
+|[Serve](https://docs.salla.dev/doc-422773?nav=01HNA8QHCPJTCY5VSEZ616JCAK)|
+|[Functions](https://docs.salla.dev/2267719m0)|
+
+**Themes commands**
+|----|
+|[Create](https://docs.salla.dev/doc-422775?nav=01HNA8QHCPJTCY5VSEZ616JCAK)|
+|[Preview](https://docs.salla.dev/doc-422776?nav=01HNA8QHCPJTCY5VSEZ616JCAK)|
+|[List](https://docs.salla.dev/doc-422777?nav=01HNA8QHCPJTCY5VSEZ616JCAK)|
+|[Delete](https://docs.salla.dev/doc-422778?nav=01HNA8QHCPJTCY5VSEZ616JCAK)|
+|[Publish](https://docs.salla.dev/doc-422968?nav=01HNA8QHCPJTCY5VSEZ616JCAK)|
+
+**Theme Component Bundles commands**
+|----|
+[Create](doc-1945778)|
+|[List](doc-1945782)|
+|[Publish](doc-1945812)|
+|[Delete](doc-1945783)|
+
+
+### About Salla CLI documentation
+
+This documentation is carefully designed to provide information about [Salla CLI](https://github.com/SallaApp/Salla-CLI) to create and maintain Apps, Themes and Component Bundles. The documentation is regularly updated and enhanced based on our developers' valuable feedback.
+:::info[Information]
+Join the Salla Developers Community on [Telegram](https://t.me/salladev)
+

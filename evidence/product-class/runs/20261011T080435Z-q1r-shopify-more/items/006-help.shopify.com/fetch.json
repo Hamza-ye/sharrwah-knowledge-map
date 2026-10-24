@@ -1,0 +1,18 @@
+{
+ "n": 6,
+ "url": "https://help.shopify.com/en/manual/international/localization-and-translation.md",
+ "dir": "items/006-help.shopify.com",
+ "fetched_at": "2026-10-11T08:04:38Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.shopify.com/en/manual/international/languages.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 784,
+ "cited_in": [
+  "SH-S-7483"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "05f1a36c323085817c1ed05a13e912014a66a8a466e5d80d58ca9ad2fd4895b8",
+ "raw_ext": "txt"
+}

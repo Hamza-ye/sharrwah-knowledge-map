@@ -1,0 +1,20 @@
+{
+ "n": 120,
+ "url": "https://shopify.dev/docs/apps/build/orders-fulfillment/fulfillment-service-apps.md",
+ "dir": "items/120-shopify.dev",
+ "fetched_at": "2026-10-11T06:13:08Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://shopify.dev/docs/apps/build/orders-fulfillment/fulfillment-service-apps.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 3147,
+ "cited_in": [
+  "SH-S-0702",
+  "SH-S-0703",
+  "SH-S-0704"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "0c408e5f457bc3a4932582565448920aab833747ce02fa4e3a96fc6bebdb1556",
+ "raw_ext": "txt"
+}

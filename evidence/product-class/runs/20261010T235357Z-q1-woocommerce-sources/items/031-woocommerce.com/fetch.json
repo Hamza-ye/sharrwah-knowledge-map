@@ -1,0 +1,20 @@
+{
+ "n": 31,
+ "url": "https://woocommerce.com/document/maxmind-geolocation-integration/",
+ "dir": "items/031-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:01Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/maxmind-geolocation-integration/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 40359,
+ "cited_in": [
+  "WC-S-0640",
+  "WC-S-0641",
+  "WC-S-0908"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "6e350e915a71da3e8c7c97b0b5a28ce587a33b795964dce52bb1b964ec65f829",
+ "raw_ext": "html"
+}

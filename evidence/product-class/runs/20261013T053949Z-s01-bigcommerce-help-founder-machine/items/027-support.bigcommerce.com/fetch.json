@@ -1,0 +1,20 @@
+{
+ "n": 27,
+ "url": "https://support.bigcommerce.com/s/article/Getting-Started-Channels",
+ "dir": "items/027-support.bigcommerce.com",
+ "fetched_at": "2026-10-13T05:40:27Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://support.bigcommerce.com/s/article/Getting-Started-Channels?language=en_US",
+ "content_type": "text/html;charset=UTF-8",
+ "bytes": 190825,
+ "cited_in": [
+  "BC-C-038",
+  "BC-C-068",
+  "BC-C-069"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "78678dfb280abbb2c446ccedc09c58542e133c684ce6adea65ff245ed77b3886",
+ "raw_ext": "html"
+}

@@ -1,0 +1,18 @@
+{
+ "n": 9,
+ "url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/wc-cli/wc-cli-commands/wc-com.md",
+ "dir": "items/009-raw.githubusercontent.com",
+ "fetched_at": "2026-10-11T08:40:23Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/wc-cli/wc-cli-commands/wc-com.md",
+ "content_type": "text/plain; charset=utf-8",
+ "bytes": 653,
+ "cited_in": [
+  "WC-S-5346"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "a879c06645f64fd664f4363b318c7435be312ca16e22a308a1cd725f300159e1",
+ "raw_ext": "txt"
+}

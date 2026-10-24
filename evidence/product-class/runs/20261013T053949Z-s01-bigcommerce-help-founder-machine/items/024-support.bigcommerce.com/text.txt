@@ -1,0 +1,281 @@
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+GETTING STARTED
+PRODUCTS
+STORE SETUP
+Store Settings
+Domain And Email
+Checkout And Payments
+Currency Setup
+Multicurrency
+Recurring Billing
+Test Orders
+CHECKOUT
+Optimized One-Page Checkout
+Address Autocomplete
+Form Fields
+Stored Credit Cards
+Gift Certificates
+Gift Wrapping
+Order-level Fees
+Persistent Cart
+Storefront Checkout Configurations
+PAYMENT METHODS
+Available Payment Gateways
+Offline Payments
+TROUBLESHOOTING
+Understanding Checkout Errors
+Shipping
+Tax
+Security
+B2B
+DESIGN AND CONTENT
+MANAGE STORE
+CHANNEL MANAGER
+MARKETING
+DATA SOLUTIONS
+ACCOUNT
+TD BANK
+Adding and Editing Fields in the Account Signup Form
+What We'll Cover
+How it works
+Requirements
+Account Signup Fields
+Address fields
+Adding and editing fields
+Deleting fields
+Field types
+Advanced settings
+FAQ
+
+When creating an account or during checkout, customers are required to enter some basic account and address information. These fields can be changed to display a different label, show default or example text, or have their order rearranged.
+
+Depending on your business, adding to or changing your store's default form fields can help you learn more about your customers and improve your workflow. For example, many merchants commonly add a "How did you hear about us?" field to help track marketing efforts. You can also use custom fields to survey and collect additional information about your customers, like their communication preferences.
+
+ 
+How It Works
+
+When a shopper enters address details at checkout, registers for a storefront account, or updates their existing account, they are prompted to provide their information using the built-in and enabled custom fields configured in Settings › Account sign up form.
+
+The built-in fields cannot be removed, but they can be edited to match your store's branding. However, additional form fields, both required and optional, may be added to the address form. These user-added fields will also appear on account registration, customer account, and checkout pages.
+
+ 
+Requirements
+To view and manage form fields, the Manage Form Fields, Add Form Fields, Delete Form Fields, and Edit Form Fields permissions must be enabled on your user account.
+ 
+Account Signup Fields
+
+On the Account Signup Fields tab, you can manage the fields that appear on the account registration and storefront customer Account Settings pages.
+
+There are three built-in customer account sign-up fields which are necessary for the customer account functionality to work:
+
+Email Address
+Password
+Confirm Password
+
+Two additional fields are conditional:
+
+Current Password
+Exclusive Offers
+
+The Current Password field appears on the storefront customer Account Settings page and is required when changing the password to a new one.
+
+The Exclusive Offers field only appears if Require Consent is checked in your store's Miscellaneous settings. This enables customer sign-ups to opt into abandoned cart emails and other marketing emails. This field is not required by design, as this would prevent customers from opting out of marketing emails.
+
+This field appears on the account registration, storefront customer Account Settings, and checkout pages. On the checkout page it is displayed as I would like to receive updates and offers.
+
+ 
+Address Fields
+
+On the Address Fields tab, you can manage the address fields that appear on account registration, customer account, and checkout pages. The same form fields are used for both the billing and shipping address, though the data your customers provide for each can be different from one another.
+
+There are seven built-in required address fields:
+
+First Name
+Last Name
+Address Line 1
+Suburb/City
+Country
+State/Province
+Zip/Postcode
+
+There are three additional built-in fields, but they are not required by default:
+
+Phone Number*
+Company Name
+Address Line 2
+
+*See our FAQ for storefront and checkout page restrictions.
+
+These fields cannot be removed, but can be renamed. The new names will be reflected on the account registration page and the customer Address Book, but not checkout.
+
+Only the “Required” setting for Phone Number, Company Name, and Address Line 2 built-in fields can be adjusted for the Account Settings, registration, and checkout pages. All other built-in fields are required for shipping and checkout functionality and cannot be made optional.
+
+To rename built-in fields on the Account Settings or checkout pages, you will need to edit your Stencil theme files.
+
+ 
+Adding and Editing Fields
+
+While a store can have a maximum of 250 form fields, we recommend keeping the checkout as short as possible. Having an extended checkout experience can negatively affect your conversion rate.
+
+1. To add or edit a field, go to Settings › Account sign up form and navigate to either the Account Signup Fields or Address Fields tab.
+
+2. To create a new field, click the Create a New Field drop-down and select which type of field to create.
+
+You can also duplicate an existing field by selecting Copy from the desired field’s Action menu (⋯).
+
+3. To update an existing field, click the Action menu (⋯) and select Edit.
+
+4. Complete setup for your field type. Fields marked with an asterisk (*) are required to save the form field.
+
+Field Name — The customer-facing label that appears on the storefront form.
+Default Value — Enter a pre-filled value or selection that can be overwritten by the customer.
+If the customer makes no changes, the default value is submitted with the form.
+Present only on Date Field, Multiline Text Field, Numbers Only, and Text Field.
+Instructional Text — Enter instructions that appear in the drop-down list on the storefront form.
+Present only on Pick List.
+List of Values — Enter pre-filled values, one per line.
+Present only on Checkboxes, Radio Buttons, and Pick List.
+Number Range — Optionally enter minimum and maximum values allowed.
+Present only on Numbers Only.
+Date Range — Optionally enter the earliest and latest date values allowed.
+Present only on Date Field.
+Number of Rows — Enter the number of rows allotted for the customer to enter text.
+Present only on Multiline Text Field, and Numbers Only.
+Required — Check to specify if the field must be filled, selected, or checked before submitting the form.
+Maximum Field Length — Optionally enter a maximum number of characters allowed.
+Present only on Numbers Only, and Text Field.
+
+Additional fields and styling are available for stores using legacy Blueprint themes.
+
+You can rearrange fields by clicking and dragging them up or down in the list. This will change their order on the account registration, Address Book, and checkout pages.
+
+ 
+Deleting Fields
+
+You can delete any Account Signup Fields or Address Fields that were manually added; however, you cannot delete the built-in fields. Manually-added fields have a Type value of User Defined in the field list.
+
+Check the box next to the field(s) that you want to remove, then click Delete Selected.
+
+You can also remove an existing field by selecting Delete from the desired field’s Action menu (⋯).
+
+ 
+Field Types
+
+There are several types of fields available to be selected when creating a new field. These include checkboxes which are useful for providing simple opt-ins to your customers, text fields to input special instructions, and more.
+
+Checkboxes — Creates one or more checkbox fields.
+Date Field — Allows a customer to specify a date.
+You can specify a date range from which to choose from.
+Multiline Text Field — Creates a text field for inputting multiple lines of data, such as delivery details.
+Numbers Only — Similar to a regular text field, but validates for numbers only.
+You can specify a valid number range for the customer to input.
+Radio Buttons — Creates a multiple choice option that presents all values.
+A customer selects their desired value by filling in the circle to the left of it.
+Text Field — Creates a simple text field.
+Pick List — Creates a multiple choice option that presents values in a dropdown menu.
+This can help to condense lists that feature several values, giving the checkout a more clean and sleek design.
+ 
+Advanced Settings
+ 
+
+Advanced styling fields are supported on legacy Blueprint themes only. Field styling on Stencil themes can be accomplished through customization. Maximum field length is supported in both Blueprint and Stencil themes.
+
+All form fields can have a custom CSS Class Name and Inline CSS Style applied. Some form field types also include settings for determining Field Size and Maximum Field Length. These can be used to add additional style elements. Follow the steps below to review and edit these fields.
+
+1. Go to Settings › Account sign up form and navigate to either the Account Signup Fields or Address Fields tab.
+
+2. Click the Action menu (⋯) next to the field you want to change and select Edit.
+
+3. Make your desired adjustments, then Save your changes.
+
+ 
+FAQ
+
+Can spaces be used to bypass required text fields?
+
+No, if a customer enters only spaces in a required field, they will receive an error when attempting to create a storefront account, edit an existing account, or proceed to the next step of checkout.
+
+Can I make a field required or not required?
+
+Of the built-in fields on the Account Signup Fields and Address Fields tabs, only Phone Number, Company Name, and Address Line 2 can have the Required setting enabled or disabled manually. All other built-in fields are required for shipping and checkout functionality and cannot be made optional.
+
+To adjust the setting for these or your User Defined fields, select Edit from the Action menu (⋯) next to the field. In the pop-up window, check or uncheck the box next to Required and click Save.
+
+Are there any restrictions for storefront and checkout phone number fields?
+
+The built-in Phone Number field on storefront customer New Account, Update Address, and Account Settings pages accepts:
+
+letters
+numbers
+special characters "-_ ()/:#.,'+*
+
+If you have toggled on Enable phone number validation in Settings › Checkout, the built-in Phone Number field has different restrictions while also performing number validation:
+
+Only the + special character is allowed and only as the first character for entering a country code.
+Only numbers are accepted.
+The amount of entered numbers must be valid for the country on the address.
+Spaces and dashes are ignored.
+
+Validation is not performed on phone numbers entered in the customer address book as these bypass form entry at checkout.
+
+Note that the phone number restrictions and validation at checkout are not enforced for stores using Fastlane by PayPal or when values are entered in the Default Value or Maximum Field Length fields. Removing the values or disabling Fastlane will allow phone number validation enforcement to occur again. This may take a few minutes to take effect once the requirements are met.
+
+Do this in my store
+
+GO TO ACCOUNT SIGN UP FORM IN MY STORE
+
+Additional Resources
+Customer Storefront Accounts
+Optimized One-Page Checkout
+User Roles and Permissions
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+Adding and Editing Fields in the Account Signup Form

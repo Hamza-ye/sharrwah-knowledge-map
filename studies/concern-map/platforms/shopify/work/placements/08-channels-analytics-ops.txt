@@ -1,0 +1,145 @@
+# Family L: channels; Family M: analytics, privacy and operations
+concern: chan.sales_channels
+software: core: Sales channels in the admin and channel publishing || cites: inv:admin-navigation|Sales channels|Main navigation, inv:settings|Sales channels, inv:access-scopes|read_publications
+software: extension point: sales channel apps connect the store to surfaces outside Shopify, some with their own checkout || cites: dev_channels_definition, dev_channels_own_checkout, inv:extension-points|Sales channel configuration (channel_config)
+decides: merchant: the merchant installs channels and publishes products to them || cites: inv:plan-features|Sell on social and marketplaces|Public pricing
+decides: operator: only parties that own and operate, or are contracted to represent, a distinct selling surface should build a sales channel || cites: dev_channels_operate
+legal: app developer: the channel operator, under its own terms; Third Party Services are between the merchant and the provider || cites: dev_channels_operate, tos_third_party_services
+boundary: API: channels and publications scopes; event: publication webhooks || cites: inv:access-scopes|read_channels, inv:webhook-topics|collection_publications/create
+reason: not shown
+
+concern: chan.shop
+software: separate service or product line: Shop, a consumer shopping and delivery tracking app on iOS, Android and the web, installed as a sales channel || cites: shop_app, tos_shop_app, inv:other:shopify-apps|Shop: Track%2C Pay%2C Discover
+decides: operator, per market: available in countries where Shopify Payments is supported, to Eligible Merchants, and only with Shopify Network Intelligence enabled || cites: shop_countries, tos_shop_app, shop_sni
+legal: merchant: the transaction is completed on the merchant's store || cites: tos_shop_transaction_on_store
+legal: platform company: for Shop, Shopify is engaged directly by the customer and acts as data controller || cites: help_consumer_services_controller
+boundary: contract: Terms of Service 9.8 Shop; API: Shop API and Shop Minis || cites: inv:legal-agreements|9.8 Shop, inv:api-resources|Shop API
+reason: not shown
+
+concern: chan.marketplaces
+software: separate service or product line: the Shopify Marketplace Connect app (formerly Codisto) syncs listings, orders and inventory with Amazon, eBay, Walmart and Target Plus || cites: mc_app, mc_formerly_codisto
+decides: operator, per plan: the number of synced marketplace orders per month depends on the plan || cites: inv:plan-features|50 synced marketplace orders per month|Public pricing, inv:plan-features|Import unlimited orders from marketplaces|Public pricing
+decides: merchant: the merchant connects marketplaces || cites: mc_app
+legal: partner: marketplaces with their own checkout; marketplace facilitators collect and remit sales tax for their sales || cites: dev_channels_own_checkout, af_marketplace_facilitators
+boundary: API: marketplace order and fulfillment order scopes || cites: inv:access-scopes|read_marketplace_orders, inv:access-scopes|write_marketplace_orders
+reason: not shown
+
+concern: chan.product_feeds
+software: core: product and collection listings for channels, and product feeds || cites: inv:access-scopes|read_product_feeds, inv:webhook-topics|collection_listings/add, inv:admin-navigation|Listings
+decides: merchant: the merchant chooses what each channel lists || cites: inv:access-scopes|write_product_listings
+legal: not shown
+boundary: API: product feed and listing scopes; event: listing webhooks || cites: inv:access-scopes|write_product_feeds, inv:webhook-topics|collection_listings/update
+reason: not shown
+
+concern: chan.headless
+software: core: Storefront API and Hydrogen, with hosting on Oxygen, Shopify's edge hosting platform || cites: dev_headless, dev_oxygen, inv:api-resources|Storefront API, inv:api-resources|Hydrogen framework
+decides: merchant: the merchant or its developer builds the frontend || cites: dev_headless
+decides: operator, per plan: headless storefronts are a plan row || cites: inv:plan-features|Build headless storefronts|Public pricing
+legal: not shown
+boundary: API: Storefront API with unauthenticated scopes || cites: inv:api-resources|Storefront API, inv:access-scopes|unauthenticated_read_bundles
+reason: not shown
+
+concern: chan.agentic
+software: core: Agentic Storefronts, powered by Shopify Catalog, sell through AI chat channels; Shopify publishes UCP capabilities and UCP-compliant MCP servers for agents || cites: agt_channels, inv:plan-features|Sell in AI chats|Public pricing, dev_agents_ucp, inv:other:ucp|dev.ucp.shopping.checkout
+decides: operator: Shopify decides eligibility in its sole discretion and may add Participating Channels; Participating Channels may customize Shopify Checkout || cites: agt_eligibility, agt_channel_checkout
+decides: merchant: the merchant disables channels it does not want || cites: agt_merchant_disable
+legal: merchant: the merchant remains seller of record and the transaction is completed through its store || cites: agt_seller_of_record
+legal: partner: Participating Channels, under their own terms (Google Merchant Center addendum, Microsoft Copilot Shopify Checkout Terms, Meta Seller Agreement addendum); Shopify is not a party to them except for channels it operates || cites: agt_channel_terms, agt_copilot, agt_meta, agt_not_party
+legal: platform company: for partner-operated channels, Shopify processes customer personal information on the merchant's behalf || cites: agt_data_processor
+boundary: contract: Agentic Storefronts Supplemental Terms of Service (Terms of Service 9.14); other: per-channel transaction fees set in the admin || cites: tos_agentic_storefronts, inv:legal-agreements|9.14 Agentic Storefronts, agt_fees
+boundary: other: Participating Channels may stop their services at any time without notice || cites: agt_channel_terminate
+reason: not shown
+
+concern: chan.collective
+software: core: Shopify Collective, connecting Shopify stores to sell each other's products || cites: collective_def, inv:plan-features|Sell and source products with Shopify Collective|Public pricing
+decides: operator, per plan: free on all plans, subject to store eligibility || cites: collective_free
+decides: merchant: retailers import supplier products; suppliers set price lists || cites: collective_def
+legal: not shown
+boundary: not shown
+reason: not shown
+
+concern: chan.pos
+software: core: Shopify Point of Sale app and Retail API; POS Pro is an extra subscription per location || cites: inv:other:shopify-apps|Shopify Point of Sale (POS), inv:api-resources|Retail, inv:plan-features|POS Pro: Advanced tools for brick‑and‑mortar retailers|Public pricing
+decides: operator, per plan: POS fees depend on the number of locations || cites: tos_pos_fees_locations, inv:other:billing-charge-categories|POS pro
+decides: merchant: POS staff roles and permissions || cites: inv:other:staff-roles|Associate
+legal: not shown
+boundary: contract: Terms of Service 9.3 POS Services; other: POS fees on the Shopify bill || cites: inv:legal-agreements|9.3 POS Services, inv:other:billing-charge-categories|POS fees
+reason: not shown
+
+concern: chan.pos_hardware
+software: outside platform: POS hardware sold under country equipment agreements || cites: tos_pos_equipment, inv:other:help-center-sections|Hardware for Shopify POS
+decides: operator, per market: equipment agreements and return policies by country (Canada, US, UK, Ireland, Australia, Singapore, New Zealand) || cites: inv:legal-agreements|POS Equipment Agreement and Return Policies, inv:legal-agreements|Canada (EN), inv:legal-agreements|US
+legal: not shown
+boundary: contract: POS Equipment Agreement and Return Policy for the merchant's country || cites: tos_pos_equipment
+reason: not shown
+
+concern: chan.pos_ui_ext
+software: extension point: POS UI extensions add functionality into the Shopify POS interface || cites: dev_pos_ext, inv:extension-points|POS action (pos_action)
+decides: merchant: the merchant installs POS apps || cites: dev_pos_ext
+legal: app developer: built by app developers || cites: inv:extension-points|POS action (pos_action)
+boundary: extension point: POS UI extension targets || cites: inv:api-resources|POS, inv:extension-points|POS action (pos_action)
+reason: not shown
+
+concern: an.analytics
+software: core: Analytics, Reports and Live View in the admin, with ShopifyQL || cites: inv:admin-navigation|Analytics|Main navigation, inv:api-resources|ShopifyQL for analytics, inv:plan-features|200+ real-time reports%2C plus custom analytics|Public pricing
+decides: merchant: staff access to reports is set by permissions || cites: inv:other:staff-permissions|Analytics > Reports
+legal: not shown
+boundary: API: read_analytics scope || cites: inv:access-scopes|read_analytics
+reason: not shown
+
+concern: an.customer_events
+software: core: Customer events settings with custom pixels; extension point: web pixel app extensions running in a sandbox || cites: inv:settings|Customer events, dev_pixels, dev_pixels_sandbox, inv:extension-points|Web pixel (web_pixel)
+decides: merchant: the merchant adds pixels and must obtain consents for the events it tracks || cites: tos_pixel_manager, tos_pixel_consents
+decides: outside rules: where consent is required, pixel callbacks run only after consent || cites: dev_pixels_consent
+legal: merchant: responsible for consents from visitors and customers || cites: tos_pixel_consents
+boundary: setting: Settings > Customer events; API: customer events scopes; contract: Terms of Service 9.11 Shopify Pixel Manager || cites: inv:settings|Customer events, inv:access-scopes|read_customer_events, inv:legal-agreements|9.11 Shopify Pixel Manager
+reason: not shown
+
+concern: an.network_intelligence
+software: core: Shopify Network Intelligence, a privacy setting that powers Enhanced Services and features such as managed payment methods, Shop and Audiences || cites: tos_network_intelligence, mpm_sni, shop_sni
+decides: merchant: the merchant may disable the setting, which stops further use of customer data for Enhanced Services || cites: tos_network_intelligence
+legal: platform company: Shopify processes the data for Enhanced Services as a controller, using customer data from the store, other merchants and Shopify || cites: dpa_enhanced_controller, tos_enhanced_services_data
+boundary: setting: Customer privacy settings; contract: Terms of Service 9.2 Enhanced Services and DPA Appendix E || cites: inv:legal-agreements|9.2 Enhanced Services, dpa_enhanced_controller
+reason: not shown
+
+concern: ops.notifications
+software: core: Settings > Notifications with Shopify's customer and staff notification templates || cites: inv:settings|Notifications, inv:other:notification-templates|Order confirmation
+decides: merchant: the merchant edits templates || cites: inv:other:notification-templates|Customer notification settings
+legal: not shown
+boundary: setting: Settings > Notifications || cites: inv:settings|Notifications
+reason: not shown
+
+concern: ops.flow
+software: separate service or product line: Shopify Flow, a free automation app installed from the Shopify App Store; extension point: Flow triggers, actions and templates from apps || cites: flow_def, flow_install, inv:extension-points|Flow trigger (flow_trigger), inv:extension-points|Flow action (flow_action)
+decides: merchant: the merchant builds workflows || cites: flow_def
+legal: not shown
+boundary: extension point: Flow triggers and actions || cites: inv:extension-points|Flow trigger (flow_trigger)
+reason: not shown
+
+concern: ops.sidekick
+software: core: Sidekick, an AI assistant in the admin that presents changes for review before applying them || cites: sidekick_def, sidekick_review, inv:admin-navigation|Sidekick
+decides: merchant: the merchant reviews and approves changes || cites: sidekick_review
+legal: partner: AI subprocessors (including Anthropic PBC, Applied Compute Inc., Fireworks.ai, Microsoft Corporation and OpenAI) process personal data that is input to or included in Sidekick responses || cites: subp_ai_sidekick
+boundary: extension point: app data and app action links that let Sidekick work with apps || cites: inv:extension-points|App data (app_data), inv:extension-points|App action link (app_action_link)
+reason: not shown
+
+concern: ops.inbox
+software: separate service or product line: the Shopify Inbox app for customer chat || cites: inv:other:shopify-apps|Shopify Inbox, inv:plan-features|Chat with customers|Public pricing
+decides: merchant: the merchant chats with customers || cites: inv:plan-features|Chat with customers|Public pricing
+legal: not shown
+boundary: not shown
+reason: not shown
+
+concern: ops.reviews
+software: core: Reviews section in the admin; review apps in the App Store || cites: inv:admin-navigation|Reviews, inv:other:app-store-categories|Product review apps
+decides: not shown
+legal: not shown
+boundary: not shown
+reason: not shown
+
+concern: ops.support
+software: core: 24/7 support, Shopify Academy, Community and Learn || cites: inv:plan-features|24/7 support|Public pricing, inv:other:account-destinations|Shopify Community
+decides: not shown
+legal: not shown
+boundary: not shown
+reason: not shown || note: Support for third-party apps comes from the developer, and Shopify support covers apps made by Shopify (apps_by_shopify, apps_third_party_support).

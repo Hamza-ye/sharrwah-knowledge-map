@@ -1,0 +1,18 @@
+{
+ "n": 5,
+ "url": "https://kb.mailpoet.com/article/361-data-collected-and-stored-by-mailpoet",
+ "dir": "items/005-kb.mailpoet.com",
+ "fetched_at": "2026-10-11T09:07:50Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://kb.mailpoet.com/article/361-data-collected-and-stored-by-mailpoet",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 23277,
+ "cited_in": [
+  "WC-S-5498"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "17cf51709da3bfc09aa2152208e11a2a837a41a795f08f4e7af1052e3bad89db",
+ "raw_ext": "html"
+}

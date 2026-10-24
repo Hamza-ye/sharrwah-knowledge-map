@@ -1,0 +1,217 @@
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+QUICKSTART
+GETTING STARTED
+V3 PRODUCTS
+PROMOTIONS
+B2B EDITION
+HEADLESS COMMERCE
+MULTI-STOREFRONT
+Introduction To Multi-Storefront
+Use Cases
+Features
+App Support
+Enabling Multi-Storefront
+Configuring Storefronts
+Technical Setup For Multi-Storefront
+Configuring Your Catalog For Multi-Storefront
+Customers And Multi-Storefront
+Checkout And Orders On Multi-Storefront
+SITE SPEED
+SEO
+KEYWORD RESEARCH
+GOOGLE ANALYTICS
+ECOMMERCE ANALYTICS REPORTS
+ECOMMERCE INSIGHTS
+CATALOG IMPORT/EXPORT (MODERN)
+CATALOG IMPORT/EXPORT (LEGACY)
+BIGTOOLS
+BIGAI: PREDICTIVE ANALYTICS (LTV)
+BIGAI: PREDICTIVE ANALYTICS (INVENTORY)
+ALTERNATIVE PAYMENT METHODS (APMS)
+LATAM PAYMENTS
+CRYPTOCURRENCY
+ORDER FULFILLMENT
+ORDER MANAGEMENT
+PHISHING ATTEMPTS
+FRAUD PREVENTION
+ACCESSIBILITY AND ADA COMPLIANCE
+CCPA
+BIGCOMMERCE FOR WORDPRESS
+PINTEREST
+DOMAIN & DNS
+REVERSE PROXIES
+INVENTORY MANAGEMENT
+CUSTOMER MANAGEMENT
+SHIPPING
+EMAIL
+CHANGING THEMES
+TROUBLESHOOTING IMAGES
+STORE TRANSFER
+MIGRATING FROM SHOPIFY
+MIGRATING FROM WOOCOMMERCE
+MIGRATING FROM MAGENTO
+B2B NINJA
+DATA LEVELS
+V3 CATALOG MIGRATION
+V2 PRODUCTS
+Guide to Multi-Storefront
+CHAPTER 1:
+Introduction to Multi-Storefront
+
+Multi-Storefront (MSF) allows you to use a single BigCommerce “store” to power multiple “storefronts”. Each of these storefronts can have its own unique domain, theme, categories, web pages, social media links, price lists, email templates, and more. The settings and data for each of these storefronts are managed from one BigCommerce control panel.
+
+Storefronts share your store’s catalog. You can choose which products appear on which storefronts.
+
+Orders from all channels come into your BigCommerce orders area. Orders include storefront attribution and can be sorted per storefront.
+
+Storefronts can use BigCommerce’s customizable, native theme platform (Stencil), or use a third-party, headless solution like Next.js, Gatsby.js, Nuxt.js, Contentful, Prismic, Contentstack, Uniform, Amplience, Shogun Frontend, and Bloomreach.
+
+ 
+Use Cases
+
+Multi-storefront can be useful for merchants who have multiple brands or who serve multiple segments like B2C, B2B, retail, and wholesale segments.
+
+You can also use additional storefronts as a marketing tool. For example, you can create a new storefront as a “microsite” that focuses on a specific product or campaign launch.
+
+Depending on your business model, multi-storefront may work for some merchants as a multi-region or cross-border solution. However, some store functions are global and are shared across storefronts, such as the built-in blog. Additionally, even though the same product can be assigned to different storefronts, product attributes (like description and name) cannot be overridden into a different language without customization. Stores on a Performance plan will have access to additional product localization fields.
+
+ 
+Features
+
+With multiple native storefronts, you can do all of this within the control panel:
+
+Create and manage multiple BigCommerce storefronts within a single control panel.
+Configure storefront settings and internal notifications for each storefront.
+Connect different domain names and SSL certificates for each storefront.
+Apply and customize themes, page templates, email templates, widgets, web pages, scripts, and social media links for each storefront.
+Set and manage default storefront currency and unique sets of currencies per storefront.
+Configure unique checkout settings per storefront.
+Set up web analytics (like Google Analytics) specific to each storefront.
+Set up a Meta Pixel specific to each storefront.
+Create storefront-unique categories and make products available on one or multiple storefronts.
+Stores on a Performance plan will have access to additional product localization fields.
+Configure inventory settings for each storefront, including notifications.
+Control product filtering settings per storefront and per category.
+Configure category and web page URL structure per storefront.
+Use Price Lists for custom pricing on each storefront.
+View and manage orders and customers for multiple storefronts in one place.
+Control product purchasability per storefront.
+Create Automatic and Coupon Promotions per storefront (using the Standard Promotions editor).
+Manage customer groups (like retail or wholesale) for each storefront and set the default group.
+Create category-level discounts per storefront for specific customer groups.
+Create customers and manage login access to each storefront.
+Control storefront status for all storefronts from Channel Manager.
+Filter ecommerce sales reports by native storefront channel.
+Collect and export newsletter subscriptions per storefront.
+Create and manage 301 redirects per storefront.
+Manage shipping methods and out of delivery zone messaging per storefront.
+
+With multiple headless storefronts, you can do all of this within the control panel:
+
+Create and manage multiple headless storefronts within a single control panel.
+Configure storefront settings for each storefront.
+Connect different domain names and SSL certificates for each storefront (this is managed outside of BigCommerce for headless storefronts).
+Create storefront-unique categories and make products available on one or multiple storefronts.
+Stores on a Performance plan will have access to additional product localization fields.
+Configure category and web page URL structure per storefront.
+Enable, disable, and customize transactional store emails and abandoned cart notifications.
+Configure inventory settings for each storefront, including notifications.
+Configure unique checkout settings per storefront when using redirected checkout.
+Use price lists for custom pricing on each storefront.
+Set up analytics tracking for each headless storefront.
+Create Automatic and Coupon Promotions per storefront (using the Standard Promotions editor).
+Set category-level discounts per storefront and customer group with appropriate prices reflected on the storefront.
+Enable/disable purchasing on the storefront.
+Control storefront status for all storefronts from Channel Manager.
+Create customers and manage login access to each storefront.
+Filter ecommerce sales reports by headless storefront channel.
+Create and manage 301 redirects per storefront.
+Manage shipping methods and out of delivery zone messaging per storefront.
+
+All of these features are available via the API as well. See Introduction to Multi-Storefront in the Dev Center.
+
+ 
+App Support
+
+All apps are designed to work at a store level and are installed at the store level. Every app should work on the default storefront that is provisioned when a new store is created.
+
+We are working with all of our app partners to ensure that when an app is installed on a store, it will work across all storefronts associated with that store.
+
+When searching for apps in the BigCommerce App Marketplace, use the Multi-Storefront filter to show only MSF-compatible apps. The filter appears at the bottom left on search result pages.
+
+Apps display MSF compatibility under the Information section of the app detail page. The Multi-Storefront badge appears on the right side of the page under Compatible with.
+
+If you are using MSF and would like to use an app that may not be fully compatible, please reach out to the app developer/tech partner for more details about how their app would work across multiple storefronts. You can see a list of all MSF-compatible apps here.
+
+You can find the Multi-Storefront Optimized app collection on the homepage of the App Marketplace. 
+
+What is the difference between “compatible” and “optimized”?
+
+An MSF-compatible app works across all storefronts but does not have the ability to customize the experience per storefront (basically, all app settings are shared across all storefronts).
+
+An MSF-optimized app allows you to customize the experience for each storefront.
+
+ 
+
+How are apps priced for Multi-Storefront? App pricing is determined by the provider. Contact the app provider for details on pricing for multiple storefronts.
+
+NEXT CHAPTER: ENABLING MULTI-STOREFRONT
+All Chapters
+Introduction to Multi-Storefront
+Enabling Multi-Storefront
+Configuring Storefronts
+Technical Setup for Multi-Storefront
+Configuring Your Catalog for Multi-Storefront
+Customers and Multi-Storefront
+Checkout and Orders on Multi-Storefront
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+Introduction to Multi-Storefront

@@ -1,0 +1,22 @@
+[
+{
+"n": 1,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/settings/storefront-status/get-settings-storefront-status.md",
+"dir": "items/001-docs.bigcommerce.com",
+"fetched_at": "2026-10-19T01:46:16Z",
+"http_raw": 200,
+"http_browser": 200,
+"final_url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/settings/storefront-status/get-settings-storefront-status.md",
+"content_type": "text/markdown; charset=utf-8",
+"cited_in": "studies/proposals/records/Q3/bigcommerce/citations.tsv",
+"note": "",
+"result": "captured",
+"primary_file": "raw.txt",
+"sha256": "eb653c373216610bc6ffec49880544a7d731c83b5a2e4ffed7a8eeefcd331da0",
+"bytes": 6612,
+"date_hint": "",
+"date_source": "",
+"age_class": "undated (live page on capture date)",
+"text_file": "text.txt"
+}
+]

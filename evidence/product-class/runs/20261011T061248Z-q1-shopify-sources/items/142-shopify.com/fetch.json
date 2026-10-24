@@ -1,0 +1,25 @@
+{
+ "n": 142,
+ "url": "https://www.shopify.com/legal/shopify-tax-terms",
+ "dir": "items/142-shopify.com",
+ "fetched_at": "2026-10-11T06:13:11Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.shopify.com/legal/shopify-tax-terms",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 66960,
+ "cited_in": [
+  "SH-S-0594",
+  "SH-S-0595",
+  "SH-S-0596",
+  "SH-S-0597",
+  "SH-S-0598",
+  "SH-S-0599",
+  "SH-S-0600",
+  "SH-S-0601"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "25049af2c7a567370c95946130da0a3702095cc2f24775cd96f3652fc087e434",
+ "raw_ext": "html"
+}

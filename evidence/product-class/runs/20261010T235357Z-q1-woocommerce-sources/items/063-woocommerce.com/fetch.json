@@ -1,0 +1,19 @@
+{
+ "n": 63,
+ "url": "https://woocommerce.com/document/woopayments/fraud-and-disputes/fraud-protection/",
+ "dir": "items/063-woocommerce.com",
+ "fetched_at": "2026-10-10T23:54:04Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/woopayments/fraud-and-disputes/fraud-protection/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 44641,
+ "cited_in": [
+  "WC-S-0862",
+  "WC-S-0863"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "1e76e41421da8d38e1f8c876c3e7b2618a36c7509c2db47acaab008d3f89ba83",
+ "raw_ext": "html"
+}

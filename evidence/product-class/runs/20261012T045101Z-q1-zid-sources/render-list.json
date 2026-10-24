@@ -1,0 +1,1214 @@
+[
+{
+"n": 1,
+"url": "https://api.zid.sa/v1/market/public/categories",
+"dir": "items/001-api.zid.sa",
+"keep_body": false
+},
+{
+"n": 2,
+"url": "https://c.zid.sa/ar-sa",
+"dir": "items/002-c.zid.sa",
+"keep_body": false
+},
+{
+"n": 3,
+"url": "https://docs.zid.sa/-user-roles-and-permissions-604944m0.md",
+"dir": "items/003-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 4,
+"url": "https://docs.zid.sa/add-a-new-location.md",
+"dir": "items/004-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 5,
+"url": "https://docs.zid.sa/add-customer-tag-35929922e0.md",
+"dir": "items/005-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 6,
+"url": "https://docs.zid.sa/apis-6456258f0.md",
+"dir": "items/006-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 7,
+"url": "https://docs.zid.sa/app-management-3013257f0.md",
+"dir": "items/007-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 8,
+"url": "https://docs.zid.sa/applepay-3801359f0.md",
+"dir": "items/008-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 9,
+"url": "https://docs.zid.sa/applepay-checkout-1032876m0.md",
+"dir": "items/009-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 10,
+"url": "https://docs.zid.sa/authorization.md",
+"dir": "items/010-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 11,
+"url": "https://docs.zid.sa/availability-notification-stats.md",
+"dir": "items/011-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 12,
+"url": "https://docs.zid.sa/business-33664762e0.md",
+"dir": "items/012-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 13,
+"url": "https://docs.zid.sa/create-a-new-product.md",
+"dir": "items/013-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 14,
+"url": "https://docs.zid.sa/create-a-webhook.md",
+"dir": "items/014-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 15,
+"url": "https://docs.zid.sa/create-bundle-offer-42028578e0.md",
+"dir": "items/015-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 16,
+"url": "https://docs.zid.sa/create-cashback-rule-42661790e0.md",
+"dir": "items/016-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 17,
+"url": "https://docs.zid.sa/create-coupon-37900159e0.md",
+"dir": "items/017-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 18,
+"url": "https://docs.zid.sa/create-first-app.md",
+"dir": "items/018-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 19,
+"url": "https://docs.zid.sa/create-order-20612055e0.md",
+"dir": "items/019-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 20,
+"url": "https://docs.zid.sa/create-reverse-orders.md",
+"dir": "items/020-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 21,
+"url": "https://docs.zid.sa/credit-customer-wallet-42917653e0.md",
+"dir": "items/021-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 22,
+"url": "https://docs.zid.sa/delete-a-webhook-by-subscriber.md",
+"dir": "items/022-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 23,
+"url": "https://docs.zid.sa/embedded-apps-2168216m0.md",
+"dir": "items/023-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 24,
+"url": "https://docs.zid.sa/embedded-payment-1030692m0.md",
+"dir": "items/024-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 25,
+"url": "https://docs.zid.sa/events-878234m0.md",
+"dir": "items/025-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 26,
+"url": "https://docs.zid.sa/generate-upload-url-11396021e0.md",
+"dir": "items/026-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 27,
+"url": "https://docs.zid.sa/get-manager-profile.md",
+"dir": "items/027-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 28,
+"url": "https://docs.zid.sa/get-order-credit-notes.md",
+"dir": "items/028-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 29,
+"url": "https://docs.zid.sa/get-payment-options-43307434e0.md",
+"dir": "items/029-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 30,
+"url": "https://docs.zid.sa/get-questions.md",
+"dir": "items/030-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 31,
+"url": "https://docs.zid.sa/get-vat-settings.md",
+"dir": "items/031-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 32,
+"url": "https://docs.zid.sa/health-summary-37247358e0.md",
+"dir": "items/032-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 33,
+"url": "https://docs.zid.sa/list-38273360e0.md",
+"dir": "items/033-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 34,
+"url": "https://docs.zid.sa/list-abandoned-carts.md",
+"dir": "items/034-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 35,
+"url": "https://docs.zid.sa/list-cashback-rules-42655942e0.md",
+"dir": "items/035-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 36,
+"url": "https://docs.zid.sa/list-coupons-13955120e0.md",
+"dir": "items/036-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 37,
+"url": "https://docs.zid.sa/list-customer-tags-35929844e0.md",
+"dir": "items/037-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 38,
+"url": "https://docs.zid.sa/list-of-customers.md",
+"dir": "items/038-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 39,
+"url": "https://docs.zid.sa/list-of-orders.md",
+"dir": "items/039-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 40,
+"url": "https://docs.zid.sa/list-of-payment-method.md",
+"dir": "items/040-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 41,
+"url": "https://docs.zid.sa/list-order-tags-42257648e0.md",
+"dir": "items/041-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 42,
+"url": "https://docs.zid.sa/list-store-delivery-options.md",
+"dir": "items/042-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 43,
+"url": "https://docs.zid.sa/list-store-locations.md",
+"dir": "items/043-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 44,
+"url": "https://docs.zid.sa/llms.txt",
+"dir": "items/044-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 45,
+"url": "https://docs.zid.sa/localization-33664641e0.md",
+"dir": "items/045-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 46,
+"url": "https://docs.zid.sa/loyalty-program-activation.md",
+"dir": "items/046-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 47,
+"url": "https://docs.zid.sa/loyalty-program-analytics-42255351e0.md",
+"dir": "items/047-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 48,
+"url": "https://docs.zid.sa/loyalty-status.md",
+"dir": "items/048-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 49,
+"url": "https://docs.zid.sa/me-33664055e0.md",
+"dir": "items/049-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 50,
+"url": "https://docs.zid.sa/merchant-activation.md",
+"dir": "items/050-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 51,
+"url": "https://docs.zid.sa/onesignal-store-settings-39420053e0.md",
+"dir": "items/051-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 52,
+"url": "https://docs.zid.sa/overview-1340225m0.md",
+"dir": "items/052-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 53,
+"url": "https://docs.zid.sa/overview-1340608m0.md",
+"dir": "items/053-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 54,
+"url": "https://docs.zid.sa/overview-1341008m0.md",
+"dir": "items/054-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 55,
+"url": "https://docs.zid.sa/recover-broken-webhooks-37378520e0.md",
+"dir": "items/055-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 56,
+"url": "https://docs.zid.sa/retrieve-a-list-of-products.md",
+"dir": "items/056-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 57,
+"url": "https://docs.zid.sa/retrieve-all-bundle-offers.md",
+"dir": "items/057-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 58,
+"url": "https://docs.zid.sa/retrieve-store-operating-countries.md",
+"dir": "items/058-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 59,
+"url": "https://docs.zid.sa/set-categories-nesting-42347136e0.md",
+"dir": "items/059-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 60,
+"url": "https://docs.zid.sa/store-33664558e0.md",
+"dir": "items/060-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 61,
+"url": "https://docs.zid.sa/update-coupon-13940921e0.md",
+"dir": "items/061-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 62,
+"url": "https://docs.zid.sa/update-order-by-id.md",
+"dir": "items/062-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 63,
+"url": "https://docs.zid.sa/upload-file-to-s3-11396102e0.md",
+"dir": "items/063-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 64,
+"url": "https://docs.zid.sa/upload-logo-image-35820591e0.md",
+"dir": "items/064-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 65,
+"url": "https://docs.zid.sa/validate-abandoned-cart-messages-42263035e0.md",
+"dir": "items/065-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 66,
+"url": "https://docs.zid.sa/validate-order-request-36477334e0.md",
+"dir": "items/066-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 67,
+"url": "https://docs.zid.sa/view-order-12479054e0.md",
+"dir": "items/067-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 68,
+"url": "https://docs.zid.sa/webhook-events-order.md",
+"dir": "items/068-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 69,
+"url": "https://docs.zid.sa/webhook-health-tracking-2197281m0.md",
+"dir": "items/069-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 70,
+"url": "https://docs.zid.sa/webhooks.md",
+"dir": "items/070-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 71,
+"url": "https://docs.zid.sa/zid-app-activation-oauth-policy-2422816m0.md",
+"dir": "items/071-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 72,
+"url": "https://docs.zid.sa/zid-apps-overview.md",
+"dir": "items/072-docs.zid.sa",
+"keep_body": false
+},
+{
+"n": 73,
+"url": "https://help-partner.zid.sa/en/articles/10325692-critical-update-new-shipping-pricing-structure",
+"dir": "items/073-help-partner.zid.sa",
+"keep_body": false
+},
+{
+"n": 74,
+"url": "https://help.zid.sa/",
+"dir": "items/074-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 75,
+"url": "https://help.zid.sa/%d8%a3%d8%b3%d8%a6%d9%84%d8%a9-%d8%a7%d9%84%d8%b9%d9%85%d9%84%d8%a7%d8%a1-%d9%84%d9%88%d8%ad%d8%a9-%d8%a7%d9%84%d8%aa%d8%ad%d9%83%d9%85-%d8%a7%d9%84%d8%ac%d8%af%d9%8a%d8%af%d8%a9/",
+"dir": "items/075-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 76,
+"url": "https://help.zid.sa/%d8%a7%d8%b9%d8%af%d8%a7%d8%af%d8%a7%d8%aa-%d8%a7%d9%84%d8%a7%d9%85%d8%a7%d9%86-%d9%84%d9%88%d8%ad%d8%a9-%d8%a7%d9%84%d8%aa%d8%ad%d9%83%d9%85-%d8%a7%d9%84%d8%ac%d8%af%d9%8a%d8%af%d8%a9/",
+"dir": "items/076-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 77,
+"url": "https://help.zid.sa/%d8%a7%d9%84%d8%a3%d8%b3%d8%a6%d9%84%d8%a9-%d8%a7%d9%84%d8%b4%d8%a7%d8%a6%d8%b9%d8%a9/",
+"dir": "items/077-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 78,
+"url": "https://help.zid.sa/abandonment-cart/",
+"dir": "items/078-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 79,
+"url": "https://help.zid.sa/about-marketplaces/",
+"dir": "items/079-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 80,
+"url": "https://help.zid.sa/about-zid-egypt/",
+"dir": "items/080-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 81,
+"url": "https://help.zid.sa/about-zid-financing/",
+"dir": "items/081-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 82,
+"url": "https://help.zid.sa/about_zidpay/",
+"dir": "items/082-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 83,
+"url": "https://help.zid.sa/account-settings/",
+"dir": "items/083-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 84,
+"url": "https://help.zid.sa/activate-mazeed/",
+"dir": "items/084-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 85,
+"url": "https://help.zid.sa/activate-online-payments/",
+"dir": "items/085-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 86,
+"url": "https://help.zid.sa/add-dynamic-product/",
+"dir": "items/086-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 87,
+"url": "https://help.zid.sa/api-integration/",
+"dir": "items/087-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 88,
+"url": "https://help.zid.sa/bank-accounts/",
+"dir": "items/088-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 89,
+"url": "https://help.zid.sa/blog-app/",
+"dir": "items/089-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 90,
+"url": "https://help.zid.sa/bnpl-2/",
+"dir": "items/090-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 91,
+"url": "https://help.zid.sa/bundle_offer/",
+"dir": "items/091-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 92,
+"url": "https://help.zid.sa/c-zid-sa/",
+"dir": "items/092-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 93,
+"url": "https://help.zid.sa/category/%d8%a7%d9%84%d8%a5%d8%b9%d8%af%d8%a7%d8%af%d8%a7%d8%aa/",
+"dir": "items/093-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 94,
+"url": "https://help.zid.sa/category/zid-pay/",
+"dir": "items/094-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 95,
+"url": "https://help.zid.sa/change-order-status/",
+"dir": "items/095-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 96,
+"url": "https://help.zid.sa/channels-online-store-blog/",
+"dir": "items/096-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 97,
+"url": "https://help.zid.sa/checkout-page-options/",
+"dir": "items/097-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 98,
+"url": "https://help.zid.sa/cod/",
+"dir": "items/098-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 99,
+"url": "https://help.zid.sa/connect-payment-device/",
+"dir": "items/099-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 100,
+"url": "https://help.zid.sa/create-app/",
+"dir": "items/100-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 101,
+"url": "https://help.zid.sa/create-category/",
+"dir": "items/101-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 102,
+"url": "https://help.zid.sa/create-ticket/",
+"dir": "items/102-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 103,
+"url": "https://help.zid.sa/credit-debit-notifications/",
+"dir": "items/103-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 104,
+"url": "https://help.zid.sa/customer-list/",
+"dir": "items/104-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 105,
+"url": "https://help.zid.sa/customer-reviews/",
+"dir": "items/105-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 106,
+"url": "https://help.zid.sa/customer-wallet/",
+"dir": "items/106-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 107,
+"url": "https://help.zid.sa/customizable-reports/",
+"dir": "items/107-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 108,
+"url": "https://help.zid.sa/dashboard-analytics/",
+"dir": "items/108-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 109,
+"url": "https://help.zid.sa/defaulting/",
+"dir": "items/109-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 110,
+"url": "https://help.zid.sa/deposits_zidpay/",
+"dir": "items/110-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 111,
+"url": "https://help.zid.sa/discounts/",
+"dir": "items/111-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 112,
+"url": "https://help.zid.sa/domain/",
+"dir": "items/112-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 113,
+"url": "https://help.zid.sa/export-request/",
+"dir": "items/113-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 114,
+"url": "https://help.zid.sa/faq-zid-warranty/",
+"dir": "items/114-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 115,
+"url": "https://help.zid.sa/faqs/%d9%81%d9%8a-%d8%ad%d8%a7%d9%84-%d8%aa%d9%85-%d8%aa%d8%b9%d8%b7%d9%8a%d9%84-%d8%b2%d8%af-%d8%a8%d8%a7%d9%8a-%d9%87%d9%84-%d9%8a%d8%aa%d9%85-%d8%aa%d8%ad%d9%88%d9%8a%d9%84-%d8%b1%d8%b5%d9%8a%d8%af/",
+"dir": "items/115-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 116,
+"url": "https://help.zid.sa/faqs/%d9%83%d9%8a%d9%81-%d8%b7%d8%b1%d9%8a%d9%82%d8%a9-%d8%a7%d9%84%d8%aa%d8%ad%d8%b5%d9%8a%d9%84%d8%9f-%d9%88%d9%83%d9%85-%d8%a7%d9%84%d9%86%d8%b3%d8%a8%d8%a9-%d9%85%d8%b9-%d8%ac%d8%a7%d9%87%d8%b2-%d8%9f/",
+"dir": "items/116-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 117,
+"url": "https://help.zid.sa/faqs/%d9%83%d9%8a%d9%81-%d9%8a%d8%aa%d9%85-%d8%aa%d8%ad%d8%af%d9%8a%d8%af-%d8%b1%d8%b3%d9%88%d9%85-%d8%a7%d9%84%d8%b9%d9%85%d9%84%d9%8a%d8%a7%d8%aa%d8%9f/",
+"dir": "items/117-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 118,
+"url": "https://help.zid.sa/faqs/%d9%83%d9%8a%d9%81-%d9%8a%d8%aa%d9%85-%d8%aa%d8%ad%d8%b5%d9%8a%d9%84-%d8%a3%d9%85%d9%88%d8%a7%d9%84-%d8%b4%d8%ad%d9%86%d8%a7%d8%aa-%d9%85%d8%a8%d8%a7%d9%84%d8%ba-%d8%a7%d9%84%d8%af%d9%81%d8%b9-%d8%b9/",
+"dir": "items/118-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 119,
+"url": "https://help.zid.sa/faqs/%d9%85%d8%a7%d9%87%d9%8a-%d8%a7%d9%84%d8%a8%d9%86%d9%88%d9%83-%d8%a7%d9%84%d8%aa%d9%8a-%d8%aa%d8%af%d8%b9%d9%85%d9%87%d8%a7-%d8%b2%d8%af-%d8%a8%d8%a7%d9%8a-%d9%84%d8%aa%d8%ad%d8%b5%d9%8a%d9%84-%d8%a7/",
+"dir": "items/119-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 120,
+"url": "https://help.zid.sa/faqs/%d9%87%d9%84-%d8%a7%d9%84%d8%aa%d8%b7%d8%a8%d9%8a%d9%82%d8%a7%d8%aa-%d9%85%d9%88%d8%ab%d9%88%d9%82%d8%a9%d8%9f/",
+"dir": "items/120-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 121,
+"url": "https://help.zid.sa/faqs/%d9%87%d9%84-%d8%a7%d9%84%d9%81%d9%88%d8%a7%d8%aa%d9%8a%d8%b1-%d9%85%d8%aa%d8%b7%d8%a7%d8%a8%d9%82%d8%a9-%d9%85%d8%b9-%d9%85%d8%aa%d8%b7%d9%84%d8%a8%d8%a7%d8%aa-%d9%87%d9%8a%d8%a6%d8%a9-%d8%a7%d9%84/",
+"dir": "items/121-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 122,
+"url": "https://help.zid.sa/faqs/%d9%87%d9%84-%d8%a8%d8%a5%d9%85%d9%83%d8%a7%d9%86%d9%8a-%d8%aa%d9%81%d8%b9%d9%8a%d9%84-%d8%b2%d8%af-%d8%a8%d8%a7%d9%8a-%d9%85%d8%b9-%d8%a3%d9%8a-%d8%a8%d9%88%d8%a7%d8%a8%d8%a9-%d8%af%d9%81%d8%b9/",
+"dir": "items/122-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 123,
+"url": "https://help.zid.sa/faqs/%d9%87%d9%84-%d8%a8%d8%a5%d9%85%d9%83%d8%a7%d9%86%d9%8a-%d9%83%d8%aa%d8%a7%d8%ac%d8%b1-%d8%aa%d9%81%d8%b9%d9%8a%d9%84-%d8%b2%d8%af-%d8%a8%d8%a7%d9%8a-%d9%81%d9%8a-%d9%85%d8%aa%d8%ac%d8%b1%d9%8a-%d9%81/",
+"dir": "items/123-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 124,
+"url": "https://help.zid.sa/faqs/%d9%87%d9%84-%d8%a8%d9%88%d8%a7%d8%a8%d8%a9-%d8%a7%d9%84%d8%af%d9%81%d8%b9-%d9%81%d9%8a-%d9%85%d8%b2%d9%8a%d8%af-%d9%85%d9%85%d8%a7%d8%ab%d9%84%d8%a9-%d9%84%d8%a8%d9%88%d8%a7%d8%a8%d8%a9-%d8%a7%d9%84/",
+"dir": "items/124-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 125,
+"url": "https://help.zid.sa/faqs/%d9%87%d9%84-%d9%85%d8%b2%d9%8a%d8%af-%d9%85%d8%aa%d8%a7%d8%ad-%d9%84%d8%aa%d8%ac%d8%a7%d8%b1-%d8%a7%d9%84%d8%ae%d9%84%d9%8a%d8%ac%d8%9f/",
+"dir": "items/125-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 126,
+"url": "https://help.zid.sa/faqs/%d9%87%d9%84-%d9%8a%d8%ac%d8%a8-%d8%a3%d9%81%d8%b9%d9%84-%d8%ac%d9%85%d9%8a%d8%b9-%d8%a7%d9%84%d8%b4%d8%a8%d9%83%d8%a7%d8%aa-%d9%81%d9%8a%d8%b2%d8%a7-%d9%85%d8%a7%d8%b3%d8%aa%d8%b1%d9%83%d8%a7/",
+"dir": "items/126-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 127,
+"url": "https://help.zid.sa/faqs/%d9%87%d9%84-%d9%8a%d9%85%d9%83%d9%86-%d8%aa%d9%81%d8%b9%d9%8a%d9%84-%d8%a2%d8%a8%d9%84-%d8%a8%d8%a7%d9%8a-%d9%84%d8%a8%d8%b7%d8%a7%d9%82%d8%a7%d8%aa-%d9%85%d8%af%d9%89-%d9%81%d9%82%d8%b7-%d8%af%d9%88/",
+"dir": "items/127-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 128,
+"url": "https://help.zid.sa/gcc-merchants/",
+"dir": "items/128-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 129,
+"url": "https://help.zid.sa/gift-feature/",
+"dir": "items/129-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 130,
+"url": "https://help.zid.sa/google-maps-2/",
+"dir": "items/130-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 131,
+"url": "https://help.zid.sa/invoice-settings/",
+"dir": "items/131-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 132,
+"url": "https://help.zid.sa/jahez/",
+"dir": "items/132-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 133,
+"url": "https://help.zid.sa/legal-pages/",
+"dir": "items/133-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 134,
+"url": "https://help.zid.sa/logistics-shipping-methods/",
+"dir": "items/134-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 135,
+"url": "https://help.zid.sa/loyalty-program/",
+"dir": "items/135-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 136,
+"url": "https://help.zid.sa/markets/",
+"dir": "items/136-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 137,
+"url": "https://help.zid.sa/mazeed-financial-collection/",
+"dir": "items/137-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 138,
+"url": "https://help.zid.sa/mazeed-settlement-2/",
+"dir": "items/138-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 139,
+"url": "https://help.zid.sa/meta-restriction/",
+"dir": "items/139-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 140,
+"url": "https://help.zid.sa/nafath_verification/",
+"dir": "items/140-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 141,
+"url": "https://help.zid.sa/order-status-messages/",
+"dir": "items/141-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 142,
+"url": "https://help.zid.sa/orders-properties/",
+"dir": "items/142-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 143,
+"url": "https://help.zid.sa/partial-return/",
+"dir": "items/143-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 144,
+"url": "https://help.zid.sa/payment-constraints/",
+"dir": "items/144-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 145,
+"url": "https://help.zid.sa/payment-gateways/",
+"dir": "items/145-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 146,
+"url": "https://help.zid.sa/payment-links/",
+"dir": "items/146-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 147,
+"url": "https://help.zid.sa/payment-requirements/",
+"dir": "items/147-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 148,
+"url": "https://help.zid.sa/product-properties/",
+"dir": "items/148-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 149,
+"url": "https://help.zid.sa/refund-requests/",
+"dir": "items/149-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 150,
+"url": "https://help.zid.sa/return-order/",
+"dir": "items/150-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 151,
+"url": "https://help.zid.sa/saudi-merchants/",
+"dir": "items/151-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 152,
+"url": "https://help.zid.sa/senderid/",
+"dir": "items/152-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 153,
+"url": "https://help.zid.sa/settings-url-redirects/",
+"dir": "items/153-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 154,
+"url": "https://help.zid.sa/shipping-adress/",
+"dir": "items/154-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 155,
+"url": "https://help.zid.sa/shipping-settings/",
+"dir": "items/155-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 156,
+"url": "https://help.zid.sa/stock-notifications/",
+"dir": "items/156-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 157,
+"url": "https://help.zid.sa/store-design/",
+"dir": "items/157-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 158,
+"url": "https://help.zid.sa/store-info-ksa/",
+"dir": "items/158-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 159,
+"url": "https://help.zid.sa/store-language/",
+"dir": "items/159-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 160,
+"url": "https://help.zid.sa/subscription-to-mobile-app/",
+"dir": "items/160-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 161,
+"url": "https://help.zid.sa/subscription/",
+"dir": "items/161-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 162,
+"url": "https://help.zid.sa/tap-gateway/",
+"dir": "items/162-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 163,
+"url": "https://help.zid.sa/tax-settings/",
+"dir": "items/163-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 164,
+"url": "https://help.zid.sa/team-member/",
+"dir": "items/164-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 165,
+"url": "https://help.zid.sa/themes/",
+"dir": "items/165-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 166,
+"url": "https://help.zid.sa/transactions/",
+"dir": "items/166-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 167,
+"url": "https://help.zid.sa/unpublished-app/",
+"dir": "items/167-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 168,
+"url": "https://help.zid.sa/wallet-split/",
+"dir": "items/168-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 169,
+"url": "https://help.zid.sa/whatsapp-app-vs-api/",
+"dir": "items/169-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 170,
+"url": "https://help.zid.sa/whatsapp-templates/",
+"dir": "items/170-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 171,
+"url": "https://help.zid.sa/whatsapp/",
+"dir": "items/171-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 172,
+"url": "https://help.zid.sa/withdrawal-priority/",
+"dir": "items/172-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 173,
+"url": "https://help.zid.sa/working-hours/",
+"dir": "items/173-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 174,
+"url": "https://help.zid.sa/zatca-integration/",
+"dir": "items/174-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 175,
+"url": "https://help.zid.sa/zid-faqs/%d8%b2%d8%af-%d9%8a%d8%ae%d8%af%d9%85-%d8%a7%d9%84%d8%aa%d8%ac%d8%a7%d8%b1-%d9%81%d9%8a-%d8%a7%d9%84%d8%b3%d8%b9%d9%88%d8%af%d9%8a%d8%a9-%d9%81%d9%82%d8%b7%d8%9f-%d9%87%d9%84-%d9%8a%d8%ae%d8%af%d9%85/",
+"dir": "items/175-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 176,
+"url": "https://help.zid.sa/zid-faqs/%d9%85%d8%a7%d9%87%d9%8a-%d8%b7%d8%b1%d9%82-%d8%a7%d9%84%d8%af%d9%81%d8%b9-%d8%a7%d9%84%d8%aa%d9%8a-%d8%a7%d8%b3%d8%aa%d8%b7%d9%8a%d8%b9-%d8%aa%d9%88%d9%81%d9%8a%d8%b1%d9%87%d8%a7-%d9%81%d9%8a-%d9%85/",
+"dir": "items/176-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 177,
+"url": "https://help.zid.sa/zid-faqs/%d9%87%d9%84-%d8%aa%d9%82%d9%88%d9%85%d9%88%d9%86-%d8%a8%d8%aa%d8%ae%d8%b2%d9%8a%d9%86-%d9%85%d9%86%d8%aa%d8%ac%d8%a7%d8%aa%d9%8a%d8%9f/",
+"dir": "items/177-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 178,
+"url": "https://help.zid.sa/zid-faqs/%d9%87%d9%84-%d9%8a%d8%b4%d8%aa%d8%b1%d8%b7-%d9%88%d8%ac%d9%88%d8%af-%d8%b3%d8%ac%d9%84-%d8%aa%d8%ac%d8%a7%d8%b1%d9%8a-%d9%84%d9%84%d8%aa%d8%b3%d8%ac%d9%8a%d9%84-%d9%81%d9%8a-%d8%b2%d8%af-%d9%88%d8%a7/",
+"dir": "items/178-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 179,
+"url": "https://help.zid.sa/zid-growth/",
+"dir": "items/179-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 180,
+"url": "https://help.zid.sa/zid-reminder/",
+"dir": "items/180-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 181,
+"url": "https://help.zid.sa/zid-voice/",
+"dir": "items/181-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 182,
+"url": "https://help.zid.sa/zid-wallet/",
+"dir": "items/182-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 183,
+"url": "https://help.zid.sa/zidpay-paymentpage/",
+"dir": "items/183-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 184,
+"url": "https://help.zid.sa/zidpay_staff_and_currencies/",
+"dir": "items/184-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 185,
+"url": "https://zid.sa/_next/static/chunks/2501-f29c20b24ab64821.js",
+"dir": "items/185-zid.sa",
+"keep_body": false
+},
+{
+"n": 186,
+"url": "https://zid.sa/ar/legal/privacy-policy/",
+"dir": "items/186-zid.sa",
+"keep_body": false
+},
+{
+"n": 187,
+"url": "https://zid.sa/ar/legal/terms-conditions/",
+"dir": "items/187-zid.sa",
+"keep_body": false
+},
+{
+"n": 188,
+"url": "https://zid.sa/ar/legal/zidpay-terms-conditions-kw/",
+"dir": "items/188-zid.sa",
+"keep_body": false
+},
+{
+"n": 189,
+"url": "https://zid.sa/ar/legal/zidpay-terms-conditions-sa/",
+"dir": "items/189-zid.sa",
+"keep_body": false
+},
+{
+"n": 190,
+"url": "https://zid.sa/en/egypt/",
+"dir": "items/190-zid.sa",
+"keep_body": false
+},
+{
+"n": 191,
+"url": "https://zid.sa/en/legal/domestic-shipping-terms/",
+"dir": "items/191-zid.sa",
+"keep_body": false
+},
+{
+"n": 192,
+"url": "https://zid.sa/en/legal/global-shipping-terms/",
+"dir": "items/192-zid.sa",
+"keep_body": false
+},
+{
+"n": 193,
+"url": "https://zid.sa/en/legal/privacy-policy/",
+"dir": "items/193-zid.sa",
+"keep_body": false
+},
+{
+"n": 194,
+"url": "https://zid.sa/en/legal/terms-conditions/",
+"dir": "items/194-zid.sa",
+"keep_body": false
+},
+{
+"n": 195,
+"url": "https://zid.sa/en/legal/zidpay-terms-conditions-sa/",
+"dir": "items/195-zid.sa",
+"keep_body": false
+},
+{
+"n": 196,
+"url": "https://zid.sa/en/partners/developers/blog/partner-payouts/",
+"dir": "items/196-zid.sa",
+"keep_body": false
+},
+{
+"n": 197,
+"url": "https://zid.sa/en/pricing/",
+"dir": "items/197-zid.sa",
+"keep_body": false
+},
+{
+"n": 198,
+"url": "https://zid.sa/en/solutions/payments/",
+"dir": "items/198-zid.sa",
+"keep_body": false
+},
+{
+"n": 199,
+"url": "https://zid.sa/en/solutions/zid-voice/",
+"dir": "items/199-zid.sa",
+"keep_body": false
+},
+{
+"n": 200,
+"url": "https://zid.sa/en/zid-assurance/",
+"dir": "items/200-zid.sa",
+"keep_body": false
+},
+{
+"n": 201,
+"url": "https://zid.sa/llms.txt",
+"dir": "items/201-zid.sa",
+"keep_body": false
+},
+{
+"n": 202,
+"url": "https://zid.sa/sitemap.xml",
+"dir": "items/202-zid.sa",
+"keep_body": false
+}
+]

@@ -1,0 +1,19 @@
+{
+ "n": 8,
+ "url": "https://woocommerce.com/document/back-in-stock-notifications/",
+ "dir": "items/008-woocommerce.com",
+ "fetched_at": "2026-10-11T09:07:51Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/back-in-stock-notifications/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 48290,
+ "cited_in": [
+  "WC-S-5476",
+  "WC-S-5478"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "66dda8757e6e8aa3837c6121b93a1a04b9d1ab961ed5c3e815bd351a8afc7c1a",
+ "raw_ext": "html"
+}

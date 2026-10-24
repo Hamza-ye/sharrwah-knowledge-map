@@ -1,0 +1,193 @@
+___
+Skip to navigation
+Skip to content
+USD
+Change site currency USD selected
+Develop on Woo
+Hire an expert
+Get support
+Sell
+Click to show 12 more items
+Extensions
+Click to show 18 more items
+Resources
+Click to show 23 more items
+Enterprise ecommerce
+Log in
+Get started
+WooCommerce
+Getting started
+Migrating to WooCommerce
+Products
+Expand
+Taxes
+Shipping
+Expand
+Payments
+Orders
+Data and reporting
+Customers
+Marketing
+Site administration
+Expand
+Store design
+Expand
+Mobile App
+Expand
+Get help
+Expand
+Documentation / WooCommerce / Getting started / Managing orders / Order Statuses
+Order Statuses
+
+Every order in WooCommerce has a status that indicates its current state. This document explains each order status, when it applies, and what action you may need to take.
+
+Order statuses in WooCommerce
+
+Order statuses let you know where an order is in the checkout, payment, fulfillment, cancellation, or refund process. The following table describes each order status available in WooCommerce:
+
+STATUS	DESCRIPTION	NOTES
+Draft	Draft orders are temporary checkout records used by the block-based checkout before an order is submitted.	Orders in the Draft status are only visible on the “Draft” sub-tab of the Orders overview page. See the Draft order status section below.
+Pending payment	The order has been received, but no payment has been made. Pending payment orders are generally awaiting customer action.	If your customer needs a payment link to make payment, see the documentation on paying for orders.
+Processing	Payment has been received (paid), and the stock has been reduced. The order is awaiting fulfillment.	All orders require processing except those in which all products are both virtual and downloadable.
+
+This is the store owner’s or warehouse’s cue to ship the order and manually change the status to Completed.
+Completed	The order has been fulfilled and is complete.	Requires no further action.
+On hold	The order is awaiting payment confirmation. Stock is reduced, but you need to confirm payment.	The On hold status is generally assigned to an order when a customer pays via an “offline” payment method that does not have immediate payment confirmation, like the BACS gateway. Offline payment methods require you to manually verify the payment was processed. Once you confirm payment has been received, you can change the status of the order.
+
+The On hold status may be temporarily assigned to orders if the customer paid using a delayed notification payment method, like SEPA Direct Debit. Depending on the payment gateway in use on your site, the order may move automatically from On hold to a different status once the payment clears. Check the order notes on the order and the documentation of your payment gateway for details.
+
+You may also see the On hold status if you use a payment gateway that has an option to separate the authorization and capture of funds. Check the order notes and your payment gateway’s documentation for details.
+Failed	The customer’s payment failed or was declined, and no payment has been successfully made. If stock was previously reduced for the order, WooCommerce returns it to inventory when the order moves to Failed.	Depending on the payment gateway and the payment confirmation method it uses, this status may not show immediately. With delayed notification payment methods, an order can remain On hold while the payment is confirmed, then move to Failed if the payment is rejected.
+
+See how to understand and fix failed orders in WooCommerce for more details.
+Cancelled	The order was canceled by an admin or the customer.	When an order has the Cancelled status, stock for line items on the order is returned to the store’s inventory if inventory management is enabled.
+
+When the Hold Stock setting is enabled, WooCommerce automatically cancels eligible Pending payment orders created through checkout after the configured time limit and releases their held stock back to available inventory.
+
+An order with the Cancelled status may need to be refunded. Check the order notes and your payment gateway’s documentation for details.
+Refunded	An admin or shop manager has fully refunded the order’s value after payment.	If you use the Manual Refund option, the order can reach this status without the customer’s funds having been returned.
+
+See the documentation on refunding orders in WooCommerce for more details.
+Visual diagram of order status flow
+
+This flow chart shows the typical path from a temporary Draft checkout record through payment and fulfillment, plus other statuses you may see when payment is delayed, fails, is cancelled, or is refunded.
+
+Draft is a temporary block-based checkout state before submission. A submitted order typically moves from Pending payment to Processing and then Completed. Depending on payment, stock, or refund activity, it may instead move through On hold, Failed, Cancelled, or Refunded.
+
+Draft order status
+
+For submitted orders that are awaiting payment, WooCommerce uses the Pending payment status.
+
+When you use the block-based checkout, WooCommerce can use the Draft status for a temporary checkout order before submission is complete. In current WooCommerce versions, a fresh block-based checkout stores form interaction state in the customer session first and creates the draft order when the customer clicks Place Order. If a pending or failed order already exists in the customer session, WooCommerce can reuse and update that order during the retry flow.
+
+Characteristics of draft orders
+
+Draft orders have the following characteristics:
+
+Creation: Created at place-order time for a fresh block-based checkout submission, or reused when an eligible pending or failed order already exists in the customer session.
+Content: Includes the customer’s items, selected shipping method, and provided address information.
+Updates: For an existing order in the customer session, WooCommerce can update the order as checkout details change. For a fresh checkout, WooCommerce stores form interaction state in the customer session until the order is submitted.
+Stock reservation: When stock management is enabled and checkout reaches the point where WooCommerce reserves stock, the reservation uses the store’s Hold Stock setting. Stock is held while the order is in the Draft or Pending payment status, then released when the order changes status or checkout cannot continue.
+
+Because fresh block-based checkout interactions do not create a draft order on page load or ordinary field changes, workflows that look only for Draft orders may not see a checkout session until the customer attempts to place the order.
+
+Draft order cleanup
+
+WooCommerce runs a scheduled daily cleanup process that automatically deletes all draft orders that are no longer active. No action is required on your part.
+
+Order statuses and emails
+
+WooCommerce sends specific emails to you and your customers when order statuses change. For example, you receive an email when a new order is placed, and your customer receives an email when the order is completed. To configure which emails are sent and customize their content, see the email settings documentation.
+
+Questions and support
+
+Do you still have questions and need assistance? 
+
+This documentation is about the free, core WooCommerce plugin, for which support is provided in our community forums on WordPress.org. By searching this forum, you’ll often find that your question has been asked and answered before.
+
+If you haven’t created a WordPress.org account to use the forums, here’s how.
+
+If you’re looking to extend the core functionality shown here, we recommend reviewing available extensions in the WooCommerce Marketplace.
+Need ongoing advanced support or a customization built for WooCommerce? Hire a Woo Agency Partner.
+Are you a developer building your own WooCommerce integration or extension? Check our Developer Resources.
+
+If you weren’t able to find the information you need, please use the feedback thumbs below to let us know.
+
+Was this guide helpful for you?
+ON THIS PAGE
+Order statuses in WooCommerce
+Visual diagram of order status flow
+Draft order status
+Characteristics of draft orders
+Draft order cleanup
+Order statuses and emails
+Questions and support
+30-day money-back guarantee
+Support teams across the world
+Safe and secure online payments
+Sell
+WooCommerce
+WooCommerce pricing
+Payments
+No-code customization
+Marketing
+Checkout
+Shipping
+Mobile app
+Enterprise ecommerce
+Marketplace
+WooCommerce extensions
+WooCommerce themes
+New
+Essentials
+Collections
+Developed by Woo
+Build
+Woo for developers
+Developer resources
+Become a Woo agency
+Become a Marketplace partner
+Become an affiliate
+Resources
+Blog
+Documentation
+WooCommerce site examples
+Product updates
+Email newsletter
+Support
+Feature requests
+WooCommerce hosting
+Hire an agency
+Participate in customer research
+Accessibility
+Support forums
+Company
+About
+Press
+Download WooCommerce free
+Join the Woo community
+Woo trademark guidelines
+Brand and logo guidelines
+Do not sell or share my personal information
+WooCommerce Support Policy
+Refund Policy
+Contact us
+Follow us on Facebook
+Follow us on X
+Follow us on Instagram
+Follow us on LinkedIn
+USD
+Change site currency USD selected
+Terms of Service
+Privacy Policy
+Privacy Notice for California Users
+
+© WooCommerce, Inc. 2026
+
+AN
+AUTOMATTIC
+EXPERIMENT
+Use of your personal data
+We and our partners process your personal data (such as browsing data, IP Addresses, cookie information, and other unique identifiers) based on your consent and/or our legitimate interest to optimize our website, marketing activities, and your user experience.
+Customize
+Accept all

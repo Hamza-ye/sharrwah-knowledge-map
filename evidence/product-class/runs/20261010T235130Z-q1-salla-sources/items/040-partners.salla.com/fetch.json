@@ -1,0 +1,23 @@
+{
+ "n": 40,
+ "url": "https://partners.salla.com/legal/themes-policy",
+ "dir": "items/040-partners.salla.com",
+ "fetched_at": "2026-10-10T23:51:51Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://partners.salla.com/legal/themes-policy",
+ "content_type": "text/html",
+ "bytes": 46494,
+ "cited_in": [
+  "SA-S-0018",
+  "SA-S-0039",
+  "SA-S-0040",
+  "SA-S-0041",
+  "SA-S-0042",
+  "SA-S-0217"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "8fbf8c6f500412f0cb0cff19193d0121409bb5e3ca8bdf8448d81336b971e55a",
+ "raw_ext": "html"
+}

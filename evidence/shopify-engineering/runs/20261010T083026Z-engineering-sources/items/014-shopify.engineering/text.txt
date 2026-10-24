@@ -1,0 +1,256 @@
+Skip to Content
+Solutions
+Start
+Start your business
+.
+Build your brand
+Create your website
+.
+Online store editor
+Customize your store
+.
+Store themes
+Find business apps
+.
+Shopify app store
+Own your site domain
+.
+Domains & hosting
+Explore free business tools
+.
+Tools to run your business
+Sell
+Sell your products
+.
+Sell online or in person
+Check out customers
+.
+World-class checkout
+Sell online
+.
+Grow your business online
+Sell across channels
+.
+Reach millions of shoppers and boost sales
+Sell globally
+.
+International sales
+Sell wholesale & direct
+.
+Business-to-business (B2B)
+Market
+Market your business
+.
+Reach & retain customers
+Market across social
+.
+Social media integrations
+Chat with customers
+.
+Shopify Inbox
+Nurture customers
+.
+Shopify Messaging
+Know your audience
+.
+Gain customer insights
+Manage
+Manage your business
+.
+Track sales, orders & analytics
+Measure your performance
+.
+Analytics and Reporting
+Manage your stock & orders
+.
+Inventory & order management
+Automate your business
+.
+Shopify Flow
+Shopify Developers
+.
+Build with Shopify's powerful APIs
+Plus
+.
+A commerce solution for growing digital brands
+All Products
+.
+Explore all Shopify products & features
+Pricing
+Resources
+Help and support
+Help and support
+.
+Get 24/7 support
+Business courses
+.
+Learn from proven experts
+Popular topics
+What is Shopify?
+.
+How our commerce platform works
+Essential tools
+Business name generator
+.
+Logo maker
+.
+Stock photography
+.
+QR code generator
+.
+What’s new
+Changelog
+.
+Your source for recent updates
+Newsroom
+.
+All company news and press releases
+Engineering Blog
+AI & Machine Learning
+Mobile
+Infrastructure
+Culture
+Latest
+More topics
+Security
+Developer Tooling
+Data Science Engineering
+Search
+BLOG|SECURITY
+Supporting Passkeys in Shop's Authentication Flows
+
+Passkeys are a new login credential based on public-key cryptography that replace the need for username and password sign-ins.
+
+Engineering at Shopify
+
+We’re hiring
+
+See open roles
+
+Whether processing checkouts through Shop Pay or shopping via the Shop app, security is paramount to Shopify—as is providing a frictionless authentication experience. 
+
+Passkeys are a new login credential based on public-key cryptography that replace the need for username and password sign-ins. When Passkeys began receiving mainstream adoption last year through the FIDO Alliance, the Shop team saw the perfect opportunity to upgrade our authentication mechanism while maintaining the ease of use for which our product is known. In December 2022, we started deploying passkeys to Shop's authentication flows on the web and in our native app to replace email and SMS verification.
+
+Currently, Shop Pay customers authenticate using a code that we send to their verified email address or to verified phone number via SMS. While we support the security of our users’ accounts, the security of the Shop Pay account is only as good as the security of the email account and/or phone number associated with it, which varies depending on the provider. Passkeys have proven to be phishing-resistant and generally a lot more secure than passwords, while retaining a convenient authentication process. 
+
+Passkeys are now supported in Android and Chrome by the latest version of Google Password Manager, and on iOS devices and Safari by Apple’s iCloud Keychain. This is how it works: When signing in to an app or website, users generate a private/public keypair—a private key stored locally on their device, while the website they’re registering on stores a public key. As long as the device is safe, the user credentials are safe. No usernames and passwords that can be leaked are required. On the client side, passkeys can use platform authenticators that are part of the device (such as biometrics); roaming authenticators, which can be connected to any device (hardware keys such as YubiKeys); or other software methods with high security guarantees.
+
+When users are given the option to login, they can tap the Passkeys button and their device will allow them to select from a list of passkeys previously registered on the device.
+
+Shop Pay, like Shopify, is built on Ruby on Rails. To support passkeys, we used the excellent webauthn-ruby gem, which is well maintained by the community. Although we were initially building passkeys support for our main flows on the Shop domain, we wanted our customers to be able to use these passkeys anywhere they interacted with Shopify, such as a Shopify merchant storefront. Thus, we integrated passkeys into our login component and offered passkeys from within an iframe—supported in the WebAuthn Level 2 spec.
+
+In this post, I’ll explain how the Passkey registration and login flows work, and how improving support for passkeys will help passwordless credentials gain mainstream adoption.
+
+Passkeys registration flow
+How the Passkey Registration Flow Works
+
+Initially, we’re using passkeys as an additional authentication method for users who have previously signed up for Shop. Once the user has signed up and authenticated with email or SMS verification, they have the option of adding a passkey. The passkey registration flow works like this:
+
+The user clicks on the button to enroll a new passkey.
+On the backend, call WebAuthn::Credential.options_for_create to define how webauthn credential should be created, ensuring the user can only register one passkey from a specific device. This avoids confusion during login.
+WebAuthn::Credential.options_for_create produces a challenge, which the server stores in the database for the duration of the verification. This challenge is also returned to the user's device for creating the passkey.
+The user's browser prompts them for biometric authentication or a password to generate the private/public keypair.
+When the user's browser sends back the public key, the server verifies it matches the stored challenge and comes from an allowed domain.
+The server calls WebAuthn::RelyingParty.verify_registration with the credentials sent by the user's browser and the challenge.
+The credential is then stored in the database and associated with the id generated from  WebAuthn::RelyingParty.verify_registration.
+The user is informed that the passkey was added successfully.
+Passkeys login flow
+How the Passkey Login Flow Works
+
+The process for authenticating an user once a passkey has been generated and the server has stored the public key is very similar to the above flow, except that in the last step:
+
+The server looks up the credential associated with the device by using the id, which was created earlier with WebAuthn::RelyingParty.verify_registration.
+The server calls WebAuthn::RelyingParty.verify_authentication to authenticate the user while also updating the sign count.
+What We Learned 
+
+Here are some of the lessons learned during this project about improving the passkeys experience for users: 
+
+Passkeys associated with a domain can be used to authenticate with all its subdomains. If you only want to use passkeys to authenticate with specific subdomains, make sure you whitelist those.
+To provide the best experience for users, be explicit about specifying authenticator_selection: "platform" to ask for platform authenticator (Touch ID, fingerprint, etc, and not security keys), as well as setting require_resident_key to true (discoverable credential, that is, a passkey).
+
+
+To protect against a replay attack, save the challenge to the database for the duration of the verification process. Verify the challenge once you receive the public key from the user's device and remove it after it's found.
+
+
+Conditional UI Support
+
+The Shop Pay team is also excited about Conditional UI for passkeys. This is when the passkey provider (for example browser or operating system) is proactively displaying the passkeys available for login as people are about to enter login information, eliminating the need for an explicit passkey button tap. 
+
+Given Shop Pay is available on storefronts as an embedded user experience, we see Conditional UI as a key way for users to know they can use their Shop passkey on a given website. We’re still testing and measuring the impact of Conditional UI implementations by the browser/OS providers, as they are refining both their passkey-available and passkey-not-available experience—the latter being very visible on desktop (see below screenshot). If this is the first time a user is encountering passkeys, this could be confusing. Under the right conditions, the Conditional UI experience is magical, and we’re excited to roll it out soon.
+
+
+
+Conditional UI on Chrome desktop browser risks confusion for users without Passkeys.
+What's Next for Passkeys
+
+As a user, passkeys give you peace of mind knowing that regardless of what happens, your credentials are safe within your device. For a web service like Shop, passkeys provide a lower friction, more secure experience for users. The advantage of passwords, however, is their universality: no matter what device or browser you use, you can use passwords for authentication. In order for passkeys to be more widely adopted, better support is needed so users can take advantage of passkeys, whether they're using a phone, a tablet, or a desktop computer on their browser choice. We’d also like to see better cross-device syncing and interoperability in the future so a passkey generated on a phone can be used on a desktop computer and across operating systems.
+
+After rolling out initial support in our Shop Pay and Sign in with Shop web flows, as well as the Shop App, we'll continue expanding support to every location customers interact with Shop. We'll enable Conditional UI once its support is polished, and as passkeys support grows on different devices, browsers, and operating systems, we'll ensure that millions of Shop Pay users can benefit from increased security when making a purchase.
+
+Abraão (Abe) Lourenço is a Shop Engineering Manager for the Shop Trust team, leading the team in keeping Shop and Shop Pay safe for our customers. He's passionate about technology and building high-performance teams.
+
+We all get shit done, ship fast, and learn. We operate on low process and high trust, and trade on impact. You have to care deeply about what you’re doing, and commit to continuously developing your craft, to keep pace here. If you’re seeking hypergrowth, can solve complex problems, and can thrive on change (and a bit of chaos), you’ve found the right place. Visit our Engineering career page to find your role.
+
+A(L
+by
+Abraão (Abe) Lourenço
+Published on Mar 24, 2023
+SHARE ARTICLE
+Facebook
+Twitter
+LinkedIn
+by
+Abraão (Abe) Lourenço
+Published on Mar 24, 2023
+• 6 minute read
+
+DEVELOPMENT
+Introducing Ruvy
+DEVELOPER TOOLING
+Building a ShopifyQL Code Editor
+
+APPS
+Shopify’s platform is the Web platform
+DEVELOPMENT
+The Engineering Story Behind Flex Comp
+WORK FROM ANYWHERE
+WITH SHOPIFY
+
+See our open roles and learn more about our digital by design culture.
+
+See open roles
+Shopify
+About
+Careers
+Investors
+Press and Media
+Partners
+Affiliates
+Legal
+Service status
+Support
+Merchant Support
+Shopify Help Center
+Hire a Partner
+Shopify Community
+Developers
+Shopify.dev
+API Documentation
+Dev Degree
+Products
+Shop
+Shop Pay
+Shopify for Enterprise
+Global Impact
+Sustainability
+Build Black
+Accessibility
+Research
+Solutions
+Online Store Builder
+Website Builder
+Ecommerce Website
+Terms of service
+Privacy policy
+Sitemap
+Your Privacy Choices

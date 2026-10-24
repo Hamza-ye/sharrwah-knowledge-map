@@ -1,0 +1,20 @@
+{
+ "n": 5,
+ "url": "https://docs.bigcommerce.com/developer/docs/admin/checkout-and-cart/payments/overview.md",
+ "dir": "items/005-docs.bigcommerce.com",
+ "fetched_at": "2026-10-12T10:49:40Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/docs/admin/checkout-and-cart/payments/overview.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 10407,
+ "cited_in": [
+  "S01-BC-C001",
+  "S01-BC-C004",
+  "S01-BC-C005"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "e3906f65f7dca68bf049dcc41e986e3be4a2e2260a27f28a5104fa3af078f431",
+ "raw_ext": "txt"
+}

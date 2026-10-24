@@ -1,0 +1,135 @@
+> This page is for Developer.
+
+> For clean Markdown of any page, append .md to the page URL.
+> For a complete documentation index, see https://docs.bigcommerce.com/llms.txt.
+> For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server.
+
+# MCP Server Overview
+
+> Connect AI agents to BigCommerce storefronts using the Model Context Protocol (MCP). Search products, manage carts, and hand off to checkout through natural language.
+
+An MCP server implements the Model Context Protocol so AI agents — like Claude, Cursor, and others — can discover and call tools over a standard protocol. In practice, an MCP server exposes a set of functions that agents can call to accomplish real-world tasks.
+
+The BigCommerce MCP server lets AI agents interact with a BigCommerce storefront using purpose-built commerce tools. Agents can search products, manage a shopping cart, and hand off to checkout — all through natural language.
+
+## Available tool sets
+
+| Tool set                                                      | Authentication                                              |
+| ------------------------------------------------------------- | ----------------------------------------------------------- |
+| [B2C Storefront](/developer/api-reference/mcp/storefront/b2c) | Guest and logged-in customer shopping flows                 |
+| [B2B Storefront](/developer/api-reference/mcp/storefront/b2b) | Authenticated Buyer Portal user, gated per buyer permission |
+
+Both tool sets are served from the same MCP endpoint, and B2C tools aren't exclusive to B2C stores: the catalog, cart, and checkout tools stay available to every session on a B2B-enabled store too, including guests — that's how a B2B store serves unauthenticated shoppers. The B2B tool set adds the Buyer Portal–specific tools (shopping lists, quotes) on top of that, gated per store by B2B Edition and per tool by the authenticated buyer's permissions. Logged-in B2C shoppers and B2B buyers both authenticate the same way — see [Connecting with session sync](#connecting-with-session-sync-stencil-storefronts) below.
+
+## Prerequisites
+
+* A BigCommerce store with an active storefront
+* Node.js version 18 or higher (for `npx mcp-remote`)
+
+## Enable MCP on your store
+
+You must be a **store owner** to enable MCP on a store.
+
+#### Open MCP settings
+
+In the BigCommerce control panel, go to **Settings**. Under **API and MCP**, select **MCP**.
+
+![API and MCP section of the Settings page in the BigCommerce control panel, with the MCP option listed](/_fern-img/ae5b4063dfa511b9da2858fb58b5852c5576d2a158d01c332b149029bb9aeb53.webp)
+
+#### Enable Storefront MCP and accept the terms
+
+On the **MCP** page, turn on the **Storefront MCP** toggle. Review and accept the terms of service to enable the MCP server for your store.
+
+After you accept, the page shows who accepted the terms and when.
+
+#### Get your MCP server URL
+
+Under **Select storefront**, choose a storefront to view its **MCP API Endpoint**. Each storefront has its own unique MCP server URL.
+
+Copy the URL and share it with your development team or partner solutions you want to integrate with.
+
+![MCP settings page with Storefront MCP enabled, a storefront selected, and its MCP API Endpoint URL](/_fern-img/17a6634e029701311d582f269ec394af4a767d9dec5f75813340bd899539b599.webp)
+
+## How to connect
+
+Once you've enabled the MCP server in the control panel, you will have an MCP server URL specific to your storefront. Replace `<YOUR_MCP_SERVER_URL>` in the snippets below with that URL.
+
+The steps below happen in your AI client (Claude Desktop, Claude Code, Cursor, or Warp), not in the BigCommerce control panel. Select the tab for the client you use.
+
+#### Claude Desktop
+
+In **Claude Desktop**, go to **Settings → Developer → Edit Config** and add the following:
+
+**`claude_desktop_config.json`**
+
+```json title="claude_desktop_config.json" showLineNumbers={false}
+{
+  "mcpServers": {
+    "bigcommerce": {
+      "command": "npx",
+      "args": ["mcp-remote", "<YOUR_MCP_SERVER_URL>"]
+    }
+  }
+}
+```
+
+#### Claude Code
+
+In the terminal, from the project you want to connect, run the following **Claude Code** command:
+
+```bash showLineNumbers={false}
+claude mcp add --transport http bigcommerce <YOUR_MCP_SERVER_URL>
+```
+
+If you want to enable the MCP server for all projects, use the `--scope user` option:
+
+```bash showLineNumbers={false}
+claude mcp add --transport http --scope user bigcommerce <YOUR_MCP_SERVER_URL>
+```
+
+#### Cursor
+
+In your **Cursor** project, add the following to *`.cursor/mcp.json`*:
+
+**`.cursor/mcp.json`**
+
+```json title=".cursor/mcp.json" showLineNumbers={false}
+{
+  "mcpServers": {
+    "bigcommerce": {
+      "type": "streamable-http",
+      "url": "<YOUR_MCP_SERVER_URL>"
+    }
+  }
+}
+```
+
+#### Warp
+
+In Warp, open **Settings → AI → MCP Servers** and add:
+
+```json showLineNumbers={false}
+{
+  "mcpServers": {
+    "bigcommerce": {
+      "command": "npx",
+      "args": ["mcp-remote", "<YOUR_MCP_SERVER_URL>"]
+    }
+  }
+}
+```
+
+### Connecting with session sync (Stencil storefronts)
+
+If you are building a chat widget on a Stencil storefront and want the agent to operate in the shopper's existing browser session, pass a sync token at initialization. This is the same mechanism for both tool sets — it links the MCP session to a logged-in B2C customer session or an authenticated B2B buyer session, including the buyer's company and permissions:
+
+```http showLineNumbers={false}
+POST /api/mcp
+X-Bc-Storefront-Sync-Token: <token-from-generateSessionSyncToken>
+```
+
+See [Storefront session sync](/developer/api-reference/mcp/storefront-session-sync) for setup instructions, including how to generate the token from Stencil and how to handle reverse sync when a new cart is created.
+
+> **Note**
+>
+> After enabling the MCP server in the control panel, it can take up to 10 minutes for the server to become fully available.
