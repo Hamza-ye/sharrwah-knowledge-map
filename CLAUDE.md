@@ -8,6 +8,8 @@
 
 Continue from `STATE.md`'s next step. Change the method only by a numbered amendment in its section 12. `PLAN.md` is the record of the earlier plan and is no longer followed.
 
+**Each message from the founder: frame it first.** Before acting on it, state at the start of your reply what is genuine in it, the concern or the decision, in engineering terms, so the founder can correct the framing. Record the framing in `founder-decisions.tsv`, never the message; messages are not saved (`METHOD.md` section 3).
+
 **An agent working from a brief.** Read only your brief and what it names. Nothing in `METHOD.md`, `PLAN.md`, `STATE.md` or this repository's studies should steer your reading.
 
 **Everyone:**

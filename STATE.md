@@ -2,12 +2,12 @@
 
 Where the work is, on one page (`METHOD.md` section 4). The coordinating session keeps it, and commits it at every checkpoint. The text from before 24 October is in the history: `git show a05974a:STATE.md`.
 
-**Updated:** 24 October 2026, 21:35 UTC.
+**Updated:** 24 October 2026, 22:40 UTC.
 
-**The method:** `METHOD.md`, adopted on 24 October 2026 with amendment 1.
+**The method:** `METHOD.md`, adopted on 24 October 2026 with amendments 1 and 2. Amendment 2 adds Terms and Scope to every decision record, and the rule that a record rests on evidence and accepted outcomes, never on another record's wording.
 
-**Milestone:** M1, the money boundary (subject S-01). It waits on the founder's line for Decision 1 (`reports/M1.md`).
-- **Records D-001 to D-005** are checked: D-001 and D-004 at level 3, D-002 and D-003 at level 2. The guard flags none.
+**Milestone:** M1, the money boundary (subject S-01). Amendment 2's pass is under way: Terms and Scope for D-001 to D-005, grounded in Shopify's and Salla's held payment settings. Decision 1 goes back to the founder after it.
+- **Records D-001 to D-005** are checked: D-001 and D-004 at level 3, D-002 and D-003 at level 2. The guard flags none. `decision_status.py` reports their 10 missing sections until the pass adds them.
 - **M0** closed with PR #6. M1's pull request is PR #7.
 
 **Settled** (`founder-decisions.tsv`):
@@ -19,6 +19,8 @@ Where the work is, on one page (`METHOD.md` section 4). The coordinating session
 - **Code:** spikes are allowed; production code waits for the definition of ready (`METHOD.md` section 5).
 - **Restored from 10 October:** F-01 (no US ties), F-05 (the founder's words are attestations) and F-06 (payments as their own concern).
 - **Standing rules:** the rule on credentials in evidence, and plain words for the founder.
+- **The founder's messages are framed first;** the framing is recorded, not the message, and messages are no longer saved (`METHOD.md` section 3).
+- **Amendment 2** (24 October, 22:11 UTC).
 
 **Open founder decisions:**
 - **Decision 1's line** (S-01): "No sellers' money is held through Sharrwah at launch. A and B are reserved, not built. Switching either on stays yours."
@@ -32,7 +34,7 @@ Where the work is, on one page (`METHOD.md` section 4). The coordinating session
 - The drafts as deliverables: they are now candidate options.
 - The planned review of the drafts, and the company-decisions run.
 
-**In flight:** no agents. The scheduled check-in is off.
+**In flight:** one agent, read-only: the inventory of the terms M1's records rely on, from the held payment evidence, written to `decisions/checks/M1-terms-inventory.md`. The scheduled check-in is on while it runs.
 
 **M2's feasibility test** is done (read-only; 8.2 million tokens). Its report is in the coordinator's scratchpad, and goes into M2's pull request once M1 merges. Its verdict is **partly feasible:**
 - **Within each platform,** the structures say which permission gates which page.
@@ -45,11 +47,13 @@ Where the work is, on one page (`METHOD.md` section 4). The coordinating session
 **Budget:**
 - M0 used one agent: the independent review in planning processed 7.3 million tokens.
 - M1's agents processed 22.4 million tokens against its budget of 20 million, under the stop line of 25 million. Both are counted by `method/count_tokens.py`.
-- The 2 billion stays as the upper bound. S-01's budget is 20 million agent tokens.
+- The 2 billion stays as the upper bound. S-01's budget is 20 million agent tokens, and the founder added about 5 million for amendment 2's pass (stop line 6.25 million).
 
 **The backlog:** `python3 -I method/decision_status.py` gives 16 subjects and 5 decision records: 4 proposed, 1 deferred.
 
 **Next step:**
+- when the inventory is in: the glossary (`architecture/12-glossary.md`), then Terms and Scope in D-001 to D-005, with no decision broadened; the same agent checks them;
+- then Decision 1's line goes back to the founder, in the report and PR #7;
 - on the founder's line: accept D-001 and D-004; D-002 and D-003 stand after their veto window;
 - merge PR #7 with `reports/M1.md` as its description, and add the row to `HISTORY.md`;
 - then M2, the spine, with the feasibility test first.

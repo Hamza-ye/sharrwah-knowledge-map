@@ -27,7 +27,7 @@ Questions agreed with the founder, the evidence captured to answer them, and der
 | `decisions/` | The backlog of subjects (`subjects.tsv`), the decision records, and the record template (`README.md`). |
 | `reports/` | The milestone reports for the founder, one per milestone or planned pause. |
 | `risks.tsv` | The risk register. |
-| `founder-decisions.tsv`, `founder-messages/` | What the founder has decided, and their messages, copied verbatim. |
+| `founder-decisions.tsv`, `founder-messages/` | What the founder has decided, each decision framed in engineering terms. `founder-messages/` holds the messages saved before 24 October 2026, 22:12 UTC; messages are no longer saved (`METHOD.md` section 3). |
 | `questions/` | The three agreed questions: Q1, the concern map; Q2, the Yemen stress test; Q3, placing the rows. Each file holds the question as agreed and what was settled before it runs. |
 | `method/capture/` | The capture tools that make the copies in `evidence/`, and how to run them. |
 | `shopify-payments-study/` | Eight reading passes over Shopify's Help Center, developer docs and API schemas: arrangements (A1), the processor (A2), order obligations (B), the payment provider slot (C), the money model (D), point of sale, finance and billing (E), country variability (F) and the Universal Commerce Protocol (G). Statements are from the docs unless marked "Inference". |

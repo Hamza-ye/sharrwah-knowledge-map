@@ -1,6 +1,6 @@
 # Sharrwah design method
 
-**Status: adopted on 24 October 2026, with amendment 1 (section 12).** It governs the work. `PLAN.md` stays as the record of how the work got here and is no longer followed. This document changes only by a numbered amendment (section 12). Version 1 as first proposed is at commit `b78686e`.
+**Status: adopted on 24 October 2026, with amendments 1 and 2 (section 12).** It governs the work. `PLAN.md` stays as the record of how the work got here and is no longer followed. This document changes only by a numbered amendment (section 12). Version 1 as first proposed is at commit `b78686e`.
 
 ## 1. What the work must produce
 
@@ -25,6 +25,9 @@ Each part of the method is an established practice, not one invented here. When 
 | Attribute-Driven Design | Cervantes and Kazman 2016 (SEI) | Options come from known designs (reference architectures, patterns, tactics, existing components) before anything is invented. |
 | Variability and binding time; assumptions about the world; information hiding | Clements and Northrop 2001; Pohl, Böckle and van der Linden 2005; Zave and Jackson 1997; Parnas 1972 | The market guard: what varies by market is configured, not built (section 3a). |
 | Decision records | Nygard 2011; MADR 4 | One short record per decision: context, options, evidence, outcome, consequences, status. |
+| A shared language, kept in a glossary | Evans 2003 (domain-driven design); arc42 section 12 | Each term a decision relies on has one meaning, taken from the domain's own structures: here, the reference platforms' (section 4). |
+| Decision scope, assumptions and related decisions | Tyree and Akerman 2005; Lago and van Vliet 2005 | Each record says what it decides, what it takes as given, and what it leaves open to which subject (sections 4 and 10). |
+| Stakeholder needs, stated and confirmed | ISO/IEC/IEEE 29148 | What a stakeholder says is stated as the need or decision it carries, in the project's terms, and the stakeholder confirms it. Here: the founder's messages are framed before they are acted on (section 3). |
 | Ready and done checks for a decision | Zimmermann: START and ecADR | A decision is taken only when it is ready, and is closed only when it meets the done checklist. |
 | One-way and two-way doors | Bezos, 2015 letter to shareholders | Decisions that are hard to undo go to the founder. Decisions that are cheap to undo are made quickly by engineering. |
 | Integrity levels | IEEE 1012 | Verification effort scales with the consequence of being wrong, not uniformly. |
@@ -60,6 +63,11 @@ There are three kinds of question. Each has one owner.
 
 Agents investigate and check. They never decide.
 
+**The founder's messages are framed first** (amendment 2d):
+- before acting on a message, the coordinator states what is genuine in it, the concern or the decision, in engineering terms, so that the founder can correct the framing;
+- the record holds the framing (`founder-decisions.tsv`), never the message. Messages are no longer saved; the files in `founder-messages/` from before 24 October, 22:12 UTC, stay as the record;
+- the founder's words are attestations, not evidence (F-05).
+
 ## 3a. The market guard
 
 Sharrwah is one platform for many markets. Yemen is its first market, not its design target. This comes from the founder on 10 October, from G1's B1, B2 and B7 on 18 October, and from the founder again on 24 October.
@@ -87,13 +95,23 @@ The guard makes this checkable. It comes from the frame of 10 October (`8946887:
 1. **The architecture description,** in `architecture/`, in arc42's twelve sections.
    - A section is written only when a subject fills it.
    - It carries what ISO/IEC/IEEE 42010 asks for: the stakeholders and their concerns, the views, the correspondences between them, and the decisions with their rationale.
+   - Its glossary, section 12, grows from the first record on: each record adds the terms it relies on (item 2).
 2. **Decision records,** one file each in `decisions/`, in MADR's short form. The template is in `decisions/README.md`. These fields are added:
    - door: one-way or two-way;
    - integrity level: 1, 2 or 3 (section 6);
    - outcome type, and what it varies by (section 3a);
    - the risks it addresses, by id;
    - the evidence it rests on, by id;
-   - status: `proposed`, `accepted`, `deferred` (with its trigger), `under review` (its evidence changed), or `superseded by` another record.
+   - the records whose outcomes it depends on (section 10);
+   - status: `proposed`, `accepted`, `deferred` (with its trigger), `under review` (its evidence or a term it uses changed), or `superseded by` another record.
+
+   Each record also has two sections, checked like its facts (section 6; amendment 2):
+   - **Terms:** each term the record relies on, with its extent: what it covers and what it leaves out.
+     - A term for what platforms do is defined from Shopify's and Salla's own structures, such as settings pages, schemas, permissions and help pages, by file path. It says where the two differ.
+     - A term for law, a regulator or a provider is defined from that source (Context).
+     - A term Sharrwah coins is defined by its record, and placed against the platforms' nearest terms.
+     - Each term goes into the glossary, `architecture/12-glossary.md`. A record uses the glossary's meaning, or changes it openly (section 10).
+   - **Scope:** what the record decides; what it takes as given; and what it touches but leaves open, each item naming the subject in `decisions/subjects.tsv` that will decide it. A record decides nothing outside its scope.
 3. **The backlog,** `decisions/subjects.tsv`. It has one row per subject, with:
    - the areas and questions it covers;
    - its door and risk;
@@ -146,12 +164,14 @@ There is one exception. **While a subject waits only for the founder's answer, t
 1. **Frame** (about two hours).
    - List the subject's decisions, each as a draft record, and check each one is ready (Zimmermann's START): the stakeholders are known, the time is right, there are at least two options, the criteria are known, and the template is chosen. Decisions that aren't needed yet are deferred with a trigger.
    - Pull the subject's questions from the Knowledge Map (`method/km_select.py`). Give each one a disposition: answered by a record, a driver, a scenario, or deferred with a trigger.
-   - Mark each decision's door, integrity level and outcome type. Link its risks, and set the subject's budget.
+   - Mark each decision's door, integrity level and outcome type, and draft its scope: what it decides, and what it touches but leaves to another subject. Link its risks, and set the subject's budget.
 2. **Evidence** (timeboxed).
    - Take what each decision turns on from the held records: Shopify and Salla first, then the first market's facts from the Stage 1 digest.
+   - Take the extent of each term it turns on from the platforms' own structures, and enter it in the glossary (section 4).
    - Where something is missing, run one investigation with a stated question, a timebox and a budget. Where documents can't settle it, ask a provider, a lawyer or an official source. **Merchants are not asked** (the founder, 24 October).
    - **An investigation may be a spike:** throwaway code that answers one stated question within a timebox, kept in a separate repository. Its result is evidence, and its code is never promoted.
 3. **Propose.** Each record states:
+   - its terms and its scope (section 4), before its options;
    - at least two options, drawn first from the references and then from outside experience, compared against the decision's drivers;
    - the evidence, by id, with each fact's conditions (plan, country, product, store, date) written out;
    - its outcome type, and how it passes the guard (section 3a);
@@ -184,6 +204,8 @@ Following IEEE 1012, checking scales with what a wrong decision would cost. It c
 | **2** | Engineering decisions that are expensive to change: the core data model, the money ledger | A script checks the quotes of the facts it rests on, and the coordinator checks their conditions. One independent agent reviews the record. |
 | **1** | Engineering decisions that are cheap to change | Quotes are checked by script. Nothing else. |
 
+**A record's terms and scope are checked like its facts,** at the same level (amendment 2): each term's meaning and extent against the paths it cites, and each item of its scope against what the record actually decides. At every level, a script checks that each term is in the glossary, that each item left open names a subject in the backlog, and that no record is accepted before the records it depends on.
+
 A record is **done** when it passes Zimmermann's ecADR checklist:
 - **E:** we are confident enough that it will work;
 - **C:** at least two options were compared against the criteria;
@@ -206,6 +228,7 @@ These keep the plan bounded. They are the only stop rules.
   - it passes the ready check before it is taken, and the done check after;
   - every evidence id resolves, and every quote is found word for word (by script);
   - at levels 2 and 3, every fact it rests on is written with the conditions its source gives;
+  - its terms and scope pass their checks (section 6);
   - it passes the guard (section 3a).
 - **Each subject:** it passes its scenarios, and its change scenarios.
   - A scenario follows ATAM's form: a stimulus (something happens), the environment (where and when), the expected response, and how we know.
@@ -223,7 +246,10 @@ These keep the plan bounded. They are the only stop rules.
 ## 10. Change control
 
 - **A decision changes only through a new record that supersedes it.** Both records link to each other, and the old one is never edited.
+- **What a record rests on** (amendment 2c): its facts on evidence, its terms on the glossary, and what it takes as given on accepted outcomes, which are accepted records and the founder's decisions. Never on another record's or a draft's wording.
+  - A record may take a proposed record's outcome as given only by naming it in its `depends_on` field. It is then accepted no earlier than that record.
 - **When evidence changes** (a new capture, a correction), a script lists the records that cite it. They become `under review` and are verified again at their own level.
+- **When a glossary term's meaning changes,** the records that use it become `under review` in the same way.
 - **A founder decision changes only by the founder.**
 - **This method changes only by amendment** (section 12).
 
@@ -247,6 +273,8 @@ These open the risk register, `risks.tsv`, which also holds the risks found on 2
 | W-12 | Spikes become the product | A separate repository, a timebox, and no promotion of their code |
 | W-13 | Engineering decisions pass by silent veto | The window starts at the report; level 2 decisions get an independent review |
 | W-14 | Copying Shopify's scale too early | A blog is one company's account; options that can grow, with stated triggers |
+| W-15 | A record fixes a word's meaning without knowing its extent, decides beyond its limits, or rests on another record's wording | Terms and Scope in every record, checked at its level; the glossary; section 10's rule on what a record rests on (amendment 2) |
+| W-16 | A message's wording is recorded in place of what it means | Each message from the founder is framed first, and the founder can correct the framing (section 3) |
 
 ## 12. Amendments
 
@@ -276,6 +304,25 @@ Each amendment is numbered and dated, gives its reason, and is approved by the f
 - **1g. The architecture description is the outcome** (sections 1 and 4). `HISTORY.md`, the backlog and the reports are artifacts.
 - **1h. Reversals of earlier founder decisions, made explicit** (sections 3, 7 and 13). The end check of the 179 questions and 81 rows is kept (section 8).
 - **1i. A subject that waits only for the founder** doesn't block the next one's framing and evidence (section 5).
+
+### Amendment 2, 24 October 2026
+
+**Approval.** The founder approved 2a, 2b, 2c and 2e at 22:11 UTC, on the coordinator's framing of their concern, and gave 2d at 22:12 to 22:14 UTC (`founder-decisions.tsv`).
+
+**Reason.** The founder's concern, framed:
+- M1's records fix the meaning of words such as "payment method" and "provider" without establishing their extent from the platforms' own structures, though those structures are held. A record can then narrow an area it never examined. The founder's example was Shopify's payment settings.
+- The records don't say where they stop, so what they leave to later subjects is not visible.
+- Some records were drafted from other records' or drafts' wording rather than from evidence, so errors carried forward.
+
+It asks each record to know its words and its boundary with work not yet done. It does not ask any record to decide more.
+
+**What it changes:**
+- **2a. Terms** in every record, entered in the glossary (sections 4, 5 and 6).
+- **2b. Scope** in every record: what it decides, what it takes as given, and what it leaves open to which subject (sections 4, 5 and 6).
+- **2c. What a record rests on:** evidence and accepted outcomes, never another record's or a draft's wording. A dependency on a proposed record is named, and gates acceptance (section 10).
+- **2d. The founder's messages** are framed first, and the framing is recorded, not the message (section 3).
+- **2e. M1's five records** get 2a to 2c in one pass of about 5 million agent tokens, before Decision 1 goes back to the founder. The pass neither broadens a decision nor starts another subject (section 14).
+- Its practices are added to section 2, and its risks, W-15 and W-16, to section 11.
 
 ## 13. Where we start: the position on 24 October 2026
 
@@ -347,6 +394,7 @@ The first subject is the pilot's own.
   - Stripe's exclusion concerns businesses based in Yemen, not payments to or from it;
   - YK-131 says more than its quotes on one of its wallets (`studies/proposals/checks/R5/yemen/yemen-2.tsv`).
 - **Budget:** about 20 million agent tokens, with no more than 2 tasks at a time.
+- **Terms and scope** (amendment 2e): before Decision 1 goes back to the founder, the subject's records get their Terms and Scope, in one pass of about 5 million agent tokens. The pass neither broadens a decision nor starts another subject.
 - **Output:** the founder's line, the subject's decision records, and the milestone report.
 
 **The subjects after it** are in `decisions/subjects.tsv`, in order of risk. Each is confirmed at its framing, and none starts before the one before it closes, except as section 5 allows.
@@ -372,18 +420,21 @@ The areas these leave out, such as the storefront, sales channels, B2B, analytic
 - Boehm, B. (1996). Anchoring the Software Process. *IEEE Software* 13(4).
 - Cervantes, H., Kazman, R. (2016). *Designing Software Architectures: A Practical Approach.* Addison-Wesley (Attribute-Driven Design 3.0).
 - Clements, P., Northrop, L. (2001). *Software Product Lines: Practices and Patterns.* Addison-Wesley.
+- Evans, E. (2003). *Domain-Driven Design: Tackling Complexity in the Heart of Software.* Addison-Wesley (the ubiquitous language).
 - Fairbanks, G. (2010). *Just Enough Software Architecture: A Risk-Driven Approach.* Marshall & Brainerd. Summary: "A Risk-Driven Model for Agile Software Architecture", *Methods & Tools*, https://www.methodsandtools.com/archive/agilearchi.html
 - IEEE 1012, *Standard for System, Software, and Hardware Verification and Validation* (integrity levels).
 - IEEE 828, *Standard for Configuration Management in Systems and Software Engineering.*
 - ISO 31000:2018, *Risk management: Guidelines.*
-- ISO/IEC/IEEE 29148:2018, *Requirements engineering* (traceability).
+- ISO/IEC/IEEE 29148:2018, *Requirements engineering* (traceability; stakeholder needs and requirements).
 - ISO/IEC/IEEE 42010:2022, *Architecture description.*
 - Kazman, R., Klein, M., Clements, P. (2000). *ATAM: Method for Architecture Evaluation.* CMU/SEI-2000-TR-004.
+- Lago, P., van Vliet, H. (2005). Explicit Assumptions Enrich Architectural Models. *Proceedings of the 27th International Conference on Software Engineering (ICSE 2005),* pp. 206–214.
 - MADR, *Markdown Architectural Decision Records,* version 4: https://adr.github.io/madr/
 - Nygard, M. (2011). Documenting Architecture Decisions: https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions
 - Parnas, D. (1972). On the Criteria To Be Used in Decomposing Systems into Modules. *Communications of the ACM* 15(12).
 - Pohl, K., Böckle, G., van der Linden, F. (2005). *Software Product Line Engineering: Foundations, Principles and Techniques.* Springer.
 - Poppendieck, M. and T. (2003). *Lean Software Development: An Agile Toolkit.* Addison-Wesley.
+- Tyree, J., Akerman, A. (2005). Architecture Decisions: Demystifying Architecture. *IEEE Software* 22(2), pp. 19–27 (assumptions, implications and related decisions).
 - Zave, P., Jackson, M. (1997). Four Dark Corners of Requirements Engineering. *ACM Transactions on Software Engineering and Methodology* 6(1).
 - Zimmermann, O. (2020). A Definition of Done for Architectural Decision Making (ecADR): https://ozimmer.ch/practices/2020/05/22/ADDefinitionOfDone.html
 - Zimmermann, O. (2023). A Definition of Ready for Architectural Decisions (START): https://ozimmer.ch/practices/2023/12/01/ADDefinitionOfReady.html

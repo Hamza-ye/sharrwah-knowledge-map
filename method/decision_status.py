@@ -1,6 +1,14 @@
 # Lists the backlog (decisions/subjects.tsv) and the decision records (decisions/D-*.md) by status, and checks
 # that the backlog covers each of the 34 areas once (METHOD.md sections 4 and 9).
 #
+# It also runs amendment 2's checks on each record (METHOD.md sections 4, 6 and 10; decisions/README.md):
+# - it has a Terms section and a Scope section;
+# - each term in its Terms table is a "### " heading in architecture/12-glossary.md, and its row names sources;
+# - each top-level item under **Leaves open** names a subject in the backlog (S-nn);
+# - each record in its depends_on field exists, and it is not accepted before them;
+# - each record id under **Takes as given** is accepted or in its depends_on field.
+# The meaning of a term and the extent of a scope are checked at the record's level, not by this script.
+#
 # With --guard it runs METHOD.md section 3a's market guard instead:
 # - on each decision record whose outcome is Built: its "Decision outcome" and "Consequences" sections must name
 #   no market, and its evidence must not come only from one market's Context ids (Stage 1's Y..- ids);
@@ -19,6 +27,9 @@ SKM = os.path.dirname(HERE)
 SUBJECTS = os.path.join(SKM, "decisions", "subjects.tsv")
 AREAS = os.path.join(SKM, "studies", "proposals", "areas", "areas.tsv")
 RECORDS = os.path.join(SKM, "decisions", "D-*.md")
+GLOSSARY = os.path.join(SKM, "architecture", "12-glossary.md")
+SUBJECT_ID = re.compile(r"\bS-\d\d\b")
+RECORD_ID = re.compile(r"\bD-\d{3}\b")
 MARKET = re.compile(r"\b(Yemen|Yemeni|Sana'?a|Aden|rials?|YER|Oman|Omani|Saudi|KSA|riyals?|UAE|Emirati|Egypt|Egyptian)\b"
                     r"|اليمن|صنعاء|عدن|ريال|عمان|السعودية")
 MARKET_CONTEXT_ID = re.compile(r"^Y[A-Z]-\d+")
@@ -96,7 +107,63 @@ def status():
               f"{f.get('subject', ''):<5} {f.get('title', os.path.basename(path))}")
     if records:
         print("  by status: " + ", ".join(f"{k} {v}" for k, v in sorted(rc.items())))
-    return 1 if (missing or twice or bad) else 0
+    faults = terms_scope(records, {s["id"] for s in subjects})
+    print(f"Terms and Scope: {len(faults)} faults")
+    for fault in faults:
+        print(f"  {fault}")
+    return 1 if (missing or twice or bad or faults) else 0
+
+
+def terms_scope(records, subject_ids):
+    glossary = set()
+    if os.path.exists(GLOSSARY):
+        with open(GLOSSARY, encoding="utf-8") as g:
+            glossary = {line[4:].strip().lower() for line in g if line.startswith("### ")}
+    parsed = {}
+    for path in records:
+        text = open(path, encoding="utf-8").read()
+        parsed[path] = (fields(text), text)
+    status_of = {f.get("id", ""): f.get("status", "") for f, _ in parsed.values()}
+    faults = []
+    for path, (f, text) in parsed.items():
+        rid = f.get("id", os.path.basename(path))
+        secs = sections(text)
+        for name in ("Terms", "Scope"):
+            if name not in secs:
+                faults.append(f"{rid}: no {name} section")
+        for n, line in secs.get("Terms", []):
+            cells = [c.strip() for c in line.strip().strip("|").split("|")]
+            if not line.startswith("|") or len(cells) < 3 or set(cells[0]) <= set("-: ") or cells[0] == "Term":
+                continue
+            term = re.sub(r"[*`]", "", cells[0]).strip().lower()
+            if term not in glossary:
+                faults.append(f"{rid}:{n}: a term not in the glossary: {term}")
+            if cells[-1] in ("", "—", "-"):
+                faults.append(f"{rid}:{n}: a term with no sources: {term}")
+        deps = [d for d in re.split(r"[,\s]+", f.get("depends_on", "")) if d and d != "—"]
+        for d in deps:
+            if d not in status_of:
+                faults.append(f"{rid}: depends on a record that doesn't exist: {d}")
+            elif f.get("status", "").startswith("accepted") and not status_of[d].startswith("accepted"):
+                faults.append(f"{rid}: accepted before {d}, which it depends on ({status_of[d]})")
+        part = None
+        for n, line in secs.get("Scope", []):
+            m = re.match(r"\*\*(Decides|Takes as given|Leaves open):?\*\*", line.strip())
+            if m:
+                part = m.group(1)
+                continue
+            if not line.startswith("- "):
+                continue
+            if part == "Leaves open":
+                ids = SUBJECT_ID.findall(line)
+                if not ids:
+                    faults.append(f"{rid}:{n}: left open without a subject: {line.strip()[:100]}")
+                faults += [f"{rid}:{n}: no such subject: {s}" for s in ids if s not in subject_ids]
+            elif part == "Takes as given":
+                for d in RECORD_ID.findall(line):
+                    if d != rid and d not in deps and not status_of.get(d, "").startswith("accepted"):
+                        faults.append(f"{rid}:{n}: takes {d} as given, but {d} is neither accepted nor in depends_on")
+    return faults
 
 
 def guard(paths, design):

@@ -39,6 +39,7 @@ outcome: Built              # Built, Configured, Chosen or Context (METHOD.md se
 varies_by: —                # for Configured or Chosen: what it varies by (market, plan, merchant)
 risks: W-07                 # ids in risks.tsv
 evidence: YK-131            # the ids it rests on
+depends_on: —               # records whose outcomes it takes as given while they are not yet accepted (METHOD.md section 10)
 trigger: —                  # for a deferred record: what reopens it
 date: 2026-10-24
 ---
@@ -46,6 +47,25 @@ date: 2026-10-24
 # The question, in plain words
 
 ## Context and problem statement
+
+## Terms
+
+The words this record relies on, each defined in the glossary (`architecture/12-glossary.md`) from the sources named there.
+
+| Term | What this record relies on it to cover | Sources |
+| --- | --- | --- |
+| payment method | … | `observed-sh/…`; `observed-sa/…` |
+
+## Scope
+
+**Decides:**
+- …
+
+**Takes as given:**
+- … (an accepted record, a founder decision in `founder-decisions.tsv`, or a record named in `depends_on`)
+
+**Leaves open:**
+- … — S-07
 
 ## Decision drivers
 
@@ -69,3 +89,11 @@ How we will know it works: the scenarios it must pass, and when it is reviewed.
 **What the guard reads.** For a record whose outcome is Built:
 - the "Decision outcome" and "Consequences" sections must name no market;
 - its evidence must not come only from one market's Context ids.
+
+**Terms and Scope** (`METHOD.md` sections 4, 6 and 10; amendment 2). A record decides nothing outside its Scope, and uses each term only as far as its Terms row says. `method/decision_status.py` checks that:
+- every record has both sections;
+- each term in the Terms table is a heading in the glossary, and each row names its sources;
+- each item under **Leaves open** names a subject in `subjects.tsv` (`S-nn`);
+- each record in `depends_on` exists, and a record is not accepted before the records it depends on.
+
+The checks of meaning are not a script's: at the record's level, each term is checked against the paths it cites, and each Scope item against what the record decides.
