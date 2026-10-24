@@ -29,9 +29,19 @@ Its `decisions/founder.md` holds the founder's decisions F-00 to F-06 and one op
 | 19 October decisions | `35b50a8` | 19 Oct | The areas list with the founder's marks (G2), and the drafting decisions | `founder-decisions.tsv`, 19 Oct | [`7fec7f0...35b50a8`](https://github.com/Hamza-ye/sharrwah-knowledge-map/compare/7fec7f0...35b50a8) |
 | Drafts revised | `77c4849` | 24 Oct | All eight drafts, written and revised | | [`35b50a8...77c4849`](https://github.com/Hamza-ye/sharrwah-knowledge-map/compare/35b50a8...77c4849) |
 | Paused | `32653ac` | 24 Oct | R5's checks stopped at the founder's question. The files of the 16 stopped runs are kept as they stood, unchecked. | `STATE.md` | [`77c4849...32653ac`](https://github.com/Hamza-ye/sharrwah-knowledge-map/compare/77c4849...32653ac) |
-| Method proposed | `b78686e` | 24 Oct | `METHOD.md`, proposed | Accepted by the founder on 24 October, recorded in the next pull request | [`32653ac...b78686e`](https://github.com/Hamza-ye/sharrwah-knowledge-map/compare/32653ac...b78686e) |
+| Method proposed | `b78686e` | 24 Oct | `METHOD.md`, proposed | Accepted by the founder on 24 October, recorded in PR #6 | [`32653ac...b78686e`](https://github.com/Hamza-ye/sharrwah-knowledge-map/compare/32653ac...b78686e) |
 
 **PR #5,** the founder's BigCommerce Help Center capture, was merged into this branch by `4723d64`, then closed.
+
+**PR #4 was merged into `main`** by `a05974a` on 24 October 2026.
+
+## Milestones from 24 October
+
+Each milestone is one pull request, merged into `main` with a merge commit. Its description is the milestone report in `reports/`.
+
+| Milestone | Pull request | Date | What it holds | The founder's decision on record |
+| --- | --- | --- | --- | --- |
+| M0, the re-baseline | PR #6 | 24 Oct | `METHOD.md` adopted with amendment 1; the founder's decisions of 24 October; F-00 to F-06 and O-01 restored; the backlog, the risk register and the scripts; `STATE.md` on one page; `reports/M0.md` | `founder-decisions.tsv`, 24 October; `founder-messages/2026-10-24-method-accepted.md` and `founder-messages/2026-10-24-approved-plan.md` |
 
 ## How history is kept from here
 
