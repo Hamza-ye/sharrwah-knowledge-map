@@ -1,5 +1,5 @@
-# Checks the verbatim quotes of a terms inventory (decisions/checks/*-terms-inventory.md) against the records they
-# cite, by script (METHOD.md section 6). The inventory cites held records in short forms, such as `GQL:2447` for a
+# Checks the verbatim quotes of a terms inventory (decisions/checks/*-terms-inventory.md), or of the glossary
+# (architecture/12-glossary.md), against the records they cite, by script (METHOD.md section 6). The inventory cites held records in short forms, such as `GQL:2447` for a
 # line of Shopify's admin schema or `SA-en:807` for the Salla help article at position 807; its table at the top
 # names each form's file.
 #
@@ -25,12 +25,14 @@ LINE_FILES = {
     "SSTAT": SA + "order-statuses/merchant@ar/items.jsonl",
     "SINV": SA + "invoice-settings/public-demo@en/items.jsonl",
     "SAPI": SA + "docs-operations/md-openapi/items.jsonl",
+    "SDS": SA + "docs-dataschemas/definitions/items.jsonl",
 }
+STR = SA + "dashboard-translations/en/"
 HC = SH + "help-center/help.shopify.com@en-ar/md/en/manual/"
 ARTICLES = {"SA-en": SA + "help-articles/en/texts.jsonl", "SA-ar": SA + "help-articles/ar/texts.jsonl"}
 AREAS = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "studies", "proposals", "areas", "areas.tsv")
-CITE = re.compile(r"`((?:RT|ROUTER|GQL|CLI|SMENU-en|SMENU-ar|SNAV|SSTAT|SINV|SAPI|SA-en|SA-ar):\d+(?:`[–-]`(?:\w+-?\w*):\d+)?"
-                  r"|HC:[^`:]+(?::\d+)?|AREAS)`")
+CITE = re.compile(r"`((?:RT|ROUTER|GQL|CLI|SMENU-en|SMENU-ar|SNAV|SSTAT|SINV|SAPI|SDS|SA-en|SA-ar):\d+(?:`[–-]`(?:\w+-?\w*):\d+)?"
+                  r"|HC:[^`:]+(?::\d+)?|STR:[\w.-]+|AREAS)`")
 QUOTE = re.compile(r'"([^"]{3,})"')
 SEARCH = re.compile(r"\bSearched\b|\bcorpus tool\b|\bgrepped\b")
 
@@ -40,6 +42,9 @@ def records(cite):
     kind, _, rest = cite.partition(":")
     if kind == "AREAS":
         return [open(AREAS, encoding="utf-8").read()]
+    if kind == "STR":
+        fp = STR + rest
+        return [json_unescaped(open(fp, encoding="utf-8").read())] if os.path.isfile(fp) else []
     if kind == "HC":
         fp = HC + rest.partition(":")[0]
         return [open(fp, encoding="utf-8").read()] if os.path.isfile(fp) else []

@@ -17,4 +17,4 @@ Sharrwah's architecture description, in arc42's twelve sections, meeting ISO/IEC
 | 9. Architecture decisions | started | every subject |
 | 10. Quality requirements | not yet | S-02 |
 | 11. Risks and technical debt | `risks.tsv` | every subject |
-| 12. Glossary | not yet | S-02 |
+| 12. Glossary | started | every record, from S-01 (amendment 2) |

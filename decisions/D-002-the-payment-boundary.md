@@ -9,6 +9,7 @@ outcome: Built
 varies_by: —
 risks: W-07 R-06
 evidence: E030 E031 E032 E033 E034 E035 E036 E040
+depends_on: D-001
 trigger: —
 date: 2026-10-24
 ---
@@ -27,6 +28,63 @@ date: 2026-10-24
 ## Context and problem statement
 
 D-001 builds C: each provider holds the money in the seller's own account. A and B stay reserved. Payments must be able to change on their own schedule as providers, licences and markets change, while the rest of the platform depends on something narrow and stable. Where should the line be drawn, and what crosses it?
+
+## Terms
+
+The words this record relies on, each defined in the glossary (`architecture/12-glossary.md`) from the sources named there.
+
+| Term | What this record relies on it to cover | Sources |
+| --- | --- | --- |
+| order side | The parts of Sharrwah that deal with what a buyer owes and why, as a whole; how they divide is S-05's | `GQL:2306` (nearest) |
+| payments side | The part behind the boundary, called "payments" here; F-06's concern of its own | `founder-decisions.tsv` (F-06); `CLI:70`–`CLI:75`; E030 to E032 |
+| payment boundary | The line between the two, and the seven elements that cross it | This record |
+| payment method | Kinds 1 and 2 of the glossary. Stored value is S-05's (Leaves open) | `HC:payments.md:3`; `SA-en:807`; `GQL:1672`; `SA-en:1066` |
+| payment provider | The company that processes or receives a payment for a method | `HC:payments/getting-paid.md:3`; `SA-en:24` |
+| manual payment method | A method whose outcome comes from a seller attestation or a courier event | `HC:payments/manual-payments.md:5`; `SA-en:565` |
+| cash on delivery | A method whose capabilities allow an order before payment, with a courier event as its outcome | `SA-en:565`; `SA-en:570` |
+| amount owed | One amount a buyer owes, with its reference | `GQL:2306`; `SAPI:5` |
+| attempt | One try to pay an amount owed, its id the idempotency key, with seven coarse states | `GQL:2453`; `GQL:2450` |
+| outcome record | A result posted to the order, of five kinds; Shopify's CHANGE, EMV_AUTHORIZATION and SUGGESTED_REFUND are left out | `GQL:2447`; `GQL:2452` |
+| authorization and capture | Outcome kinds, and the capability to hold and capture later. When to capture is S-07's | `HC:payments/payment-authorization.md:11`; `GQL:2452` |
+| refund and void | Outcomes that draw on an earlier one, requested through element 4 | `HC:fulfillment/managing-orders/refunding-orders.md:16`; `SA-en:804`; `SAPI:211` |
+| manual reversal | A refund made outside the provider, closed by the seller's attestation | `HC:payments/shopify-payments/refunds-troubleshooting.md:91`; `SA-en:994` |
+| custodian | Who holds a payment's money now: a provider, a courier or the seller | `GQL:318`; `SA-en:1240`; `SA-en:277` |
+| evidence level | Provider's record, courier event, seller attestation or buyer claim | `HC:fulfillment/managing-orders/payments/deferred-payments.md:129`; `GQL:2447`; `SAPI:5`; `SSTAT:3` |
+| capability | What a method can do; the list grows with the features that ask | `GQL:2447`; `GQL:2306` |
+| verdict | A risk hold, a payment under review, or a dispute's status | `GQL:2306`; `GQL:3209`; `GQL:1441` |
+| rules on payment methods | Only rules that hide, reorder or rename methods, applied by the order side's checkout | `HC:checkout-settings/checkout-customization.md:73`; `SA-en:923` |
+| payment terms | Only as a capability: an order placed before payment, by a due date the order side sets | `HC:fulfillment/managing-orders/payments/deferred-payments.md:7`; `GQL:2514` |
+| provider fees | What providers and couriers charge for payments, recorded as reported. Not Sharrwah's fees | `HC:payments/shopify-payments/payouts/pay-periods-and-fees.md:7`; `GQL:3605`; `SA-en:24` |
+| settlement and payout | Payments' records of them; under C, each provider's own | `GQL:3229`; `SA-en:807` |
+| live and test | Whether an outcome moved real money | `GQL:2447` |
+| reserved, not built | The settlement contract, and stored permissions to charge later | This record; D-001 |
+
+## Scope
+
+**Decides:**
+- Payments sits behind a boundary of its own, and the order side and payments meet only through the seven elements.
+- What each side owns, as listed under the outcome.
+- The order's payment status and the amount still owed are derived from outcome records.
+- Every amount carries its currency, and where the amount agreed and the amount charged or settled differ in currency, the record carries both, with the rate.
+- How the boundary grows: elements fixed, vocabularies growing with the features that need them.
+- Stored permissions to charge later, and the settlement contract, are reserved, not built.
+
+**Takes as given:**
+- D-001's outcome: C at launch, with A and B reserved (in `depends_on`).
+- F-06, payments as a concern of their own (`founder-decisions.tsv`).
+- G1's B7, that the rial's two editions are not part of the core (`founder-messages/2026-10-18-g1-answer.md`), and the market guard (`METHOD.md` section 3a).
+
+**Leaves open:**
+- The interfaces of the providers Sharrwah will integrate — S-07. Not carried: the elements were drawn from Shopify's and Salla's own provider contracts, and haven't been walked through a provider Sharrwah would integrate. The first providers may need an element changed. This record stays proposed until S-07 walks them through it (Gaps).
+- Gift cards, store credit and customer wallets at checkout — S-05. Carried: if S-05 makes them methods behind the boundary, their outcomes add values to the vocabularies, an evidence level and a custodian for value the seller owes. If it applies them on the order side, as Salla applies a gift card as a coupon, nothing here changes.
+- Which methods and providers are offered, manual methods included — S-07. Carried: each plugs in behind the boundary, and a manual method's outcome comes from a seller attestation or a courier event.
+- When a payment is captured: at checkout, on fulfilment, per fulfilment, or by hand — S-07. Carried: a capture is a request naming its authorization (element 4), sent when the seller's setting says. Capturing in parts adds a capability, with the feature that asks for it.
+- Seller rules that reject a payment or hold an order for review, and whether apps supply rules — S-07, with S-06 for apps. Carried: a rule applied before an attempt is the order side's, which holds the order in its own states or doesn't start the attempt. A rule applied by payments crosses as a rejection category or a verdict.
+- The order's payment statuses, and the rules of refunds, returns, edits and cancellations (area A-09) — S-05. Carried: statuses are derived from outcome records whatever their names, and refunds and voids are element 4's requests.
+- How the order side divides into modules — S-05. Carried: the boundary is between the order side as a whole and payments, and how the order side divides doesn't touch the elements.
+- Payment terms and invoices paid later for business buyers (area A-23) — S-11. Carried: an order placed before payment, with a due date the order side sets, is a capability.
+- Selling in person, with cash at the counter or card readers — S-10. Carried: an in-person result is an outcome record naming its custodian. Kinds such as Shopify's CHANGE or EMV_AUTHORIZATION would be values added to a vocabulary.
+- Currencies, their minor units and conversion — S-04. Carried: every amount carries its currency as S-04 defines it.
 
 ## Decision drivers
 
@@ -49,7 +107,7 @@ D-001 builds C: each provider holds the money in the seller's own account. A and
 2. **The order side calls each provider directly.** Simple at first, but every new provider then changes the order side.
 3. **One uniform adapter library, called in process.** Active Merchant, "a simple and unified API to access dozens of different payment gateways" (AM `README.md`:5–7), has one base class for purchase, authorize, capture, void, refund and verify (AM `lib/active_merchant/billing/gateway.rb`:9–18). It is simpler than 1, but it is synchronous, and it has no offer, no verdicts and no evidence levels. Shopify's own contract with providers is asynchronous (E031:296).
 
-Option 1 wins on long-pending and asynchronous outcomes, and on keeping providers out of the order side. Shopify's "leaks" support its element 6, the capabilities, not option 2: they are core features checking which arrangement was used, and the remedy the note gives is a capability profile (shopify-crossings.md:221–228).
+Option 1 wins on long-pending and asynchronous outcomes, and on keeping providers out of the order side. Shopify's own order transactions carry what a payment can do, `manuallyCapturable` and `multiCapturable` (`GQL:2447`), and its failure codes are "A standardized error code, independent of the payment provider." (`GQL:2450`). So the order side can ask about capabilities and categories instead of naming providers, which option 2 can't. *The seam's reading,* that some of Shopify's core features check which arrangement was used (shopify-crossings.md:221–228), points the same way. It isn't relied on, because its sources weren't traced.
 
 ## Decision outcome
 
@@ -88,13 +146,15 @@ Chosen option: **1.** The order side and payments meet only through seven elemen
    - whether an order may be placed before payment succeeds: paid on delivery, or by a due date the order side sets;
    - the currencies and markets it serves.
 
-   The order side asks "can this payment do X?" and never names a provider.
+   The order side asks "can this payment do X?" and never names a provider. The list grows when a method can do something the order side gains a feature to ask about.
 7. **Context reads.** A few typed calls from payments to the order side:
    - a check that stock and price are still valid before the debit;
    - delivery events, including cash collected or refused at the door;
    - fulfilment evidence for disputes.
 
-**Amounts.** Every amount carries its currency, as the money and currency foundation defines it (subject S-04). Where the amount agreed and the amount charged or settled are in different currencies, the record carries both, with the rate used. Shopify's amounts carry the shop's and the presentment currency (shopify-crossings.md:160). Salla's orders carry exchange rates (salla-crossings.md:77).
+**Amounts.** Every amount carries its currency, as the money and currency foundation defines it (subject S-04). Where the amount agreed and the amount charged or settled are in different currencies, the record carries both, with the rate used. Shopify's amounts are "A collection of monetary values in their respective currencies." (`GQL:2263`), in the shop's and the customer's currency. Salla's order carries an exchange rate, with its "Order Exchange Currency" (`SDS:85`).
+
+**How it grows.** The seven elements, and what each side owns, are fixed by this record. The values inside the elements are vocabularies: the states, kinds, reason categories, evidence levels and capabilities. A value is added with the feature that needs it, and an added value never changes what an existing one means.
 
 **The order side owns:**
 - what was agreed and what is due, with their terms and schedules;
@@ -107,7 +167,7 @@ Payments only reads these.
 **Payments owns:**
 - provider accounts, onboarding, and the seller's receiving profile;
 - provider protocols, including buyer steps such as one-time codes, and status checks;
-- fees, and tax on fees;
+- provider fees, and tax on them (glossary, *provider fees*). Sharrwah's own fees are not payments' (D-003, D-004);
 - settlement, payout and custody ledgers, including cash held by couriers;
 - reconciliation against providers, partners and custodians;
 - risk models, dispute mechanics, and identity checks for providers;
@@ -121,7 +181,7 @@ Payments only reads these.
 
 ## Consequences
 
-- A new provider, a new method, or a provider cut off overnight changes only what is behind the boundary.
+- A new provider, or a provider cut off overnight, changes only what is behind the boundary. So does a new method, unless it can do something the order side doesn't yet ask about. Then the order side gains the feature that asks, and the capability list grows (How it grows).
 - Sellers' statements join the order side's data and payments' data through the identifiers that cross: the reference of the amount owed, the attempt id, the outcome id and the provider reference.
 - Cash on delivery fits as a method whose capabilities allow an order before payment, and whose outcome comes from a courier event.
 - Changing an element later is costly, so the elements are reviewed when the first two providers are integrated.
@@ -141,14 +201,14 @@ Payments only reads these.
   The seam's other rules are taken up when their subject comes up.
 - **General mechanisms kept, each with a precedent:**
   - **Long pending:**
-    - on Shopify, a bank transfer is a manual method that is then marked as paid; on Salla, it has a native "under review" state with a receipt (seam.md:76);
-    - Shopify's transactions can be pending or unknown (E033:781–794);
+    - on Shopify, "Orders that accept manual payments are marked as unpaid on the **Orders** page." (`HC:payments/manual-payments.md:10`) until the seller marks them paid; on Salla, a bank transfer waits in "بإنتظار المراجعة" (`SSTAT:3`) with the buyer's receipt (`SAPI:5`);
+    - Shopify's transactions can be PENDING or UNKNOWN (`GQL:2453`; E033:781–794);
     - a payments app reports results asynchronously (E031:296–298).
 
-    The seam found no precedent for long pending combined with polling (seam.md:86). Polling stays behind the boundary, so only long pending crosses.
-  - **Evidence levels,** which the platforms show in part: Shopify's "mark as paid", and Salla's "under review" with a receipt (seam.md:76, 85).
-  - **Cash held by someone other than a provider:** Shopify's cash at the counter (seam.md:87), and Salla's cash-on-delivery remittances with its carriers (salla-crossings.md:60).
-  - **Manual reversal:** Shopify records refunds made outside any provider (seam.md:89).
+    The held sources show providers reporting results to Shopify, and don't show Shopify asking a provider for one. *The seam's reading* agrees (seam.md:86). Polling, if a provider needs it, stays behind the boundary, so only long pending crosses.
+  - **Evidence levels,** which the platforms show in part: Shopify's "**Mark as paid** - Use when you've already received payment for the current order" (`HC:fulfillment/managing-orders/payments/deferred-payments.md:129`), and Salla's review state with a receipt (`SSTAT:3`; `SAPI:5`).
+  - **Cash held by someone other than a provider:** Shopify's cash drawer, which "Tracks the balance in a cash drawer for a point of sale device over the course of a shift." (`GQL:318`), and Salla's cash-on-delivery ledger with its carriers, with columns for "Carrier" and "Payout details" (`STR:payments.json`).
+  - **Manual reversal:** on Shopify, "If the refund can't be completed to the original payment method, then you can resolve the customer outside the original payment method" (`HC:payments/shopify-payments/refunds-troubleshooting.md:91`); on Salla, "Automatic refunds are not supported for cash-on-delivery payments." (`SA-en:994`).
 
 ## Evidence
 
@@ -156,9 +216,8 @@ Payments only reads these.
   - E030 to E036, in `evidence/shopify-engineering/finding-aids/20261010-shopify-engineering-sources.tsv`, fetched on 10 October 2026: payments extensions, payments apps and their requests, transaction statuses, idempotency, and the Payment Customization Function;
   - E033's kinds of transaction appear only in the finding aid's description.
 - **E040:** Active Merchant, pinned at commit `ca45b1b`.
-- **The seam study:**
-  - its crossings: 178 for Shopify and 81 for Salla;
-  - its finding that Shopify's provider contract is "one query and 16 mutations, with no order id and no line items", while Salla's is wider because of "Salla holding the money" (seam.md, "How the answer was reached").
+- **The seam study,** a draft of 10 October. This record takes its contract v0 as option 1, and takes no fact from it unless the fact is traced to a held source above. *The seam's own findings,* not relied on: 178 crossings for Shopify and 81 for Salla; Shopify's provider contract is "one query and 16 mutations, with no order id and no line items", while Salla's is wider because of "Salla holding the money" (seam.md, "How the answer was reached").
+- **Shopify's and Salla's held structures,** cited by the glossary's short forms (`architecture/12-glossary.md`): the admin schema at observed-sh `febbf6c`, and Salla's help articles, order schema and dashboard strings at observed-sa `4ca2e89`.
 
 ## Confirmation
 
@@ -172,3 +231,7 @@ Payments only reads these.
 **Checks:** level 2. The independent review is in `decisions/checks/D-002-D-003-review.md`, with what was done about each finding in `decisions/checks/D-002-D-003-dispositions.md`.
 
 **Review** when the first two providers are integrated.
+
+**Gaps:**
+- **The elements haven't been walked through a provider Sharrwah would integrate.** The work: walk the first two providers' documented interfaces through the seven elements, on paper. It is needed before this record is accepted, and before S-05 designs the order side against the elements, whichever comes first.
+- **Shopify's provider contract** is known here through E030 to E036 and the seam's reading of it. The work: the same walkthrough, with Shopify's payments apps API as one of the two.

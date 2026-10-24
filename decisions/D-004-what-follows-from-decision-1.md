@@ -9,6 +9,7 @@ outcome: Built
 varies_by: —
 risks: W-07
 evidence: S01-VP-02 S01-VP-03 S01-VP-04 S01-VP-06 S01-VP-09 S01-VP-11 S01-VP-15 S01-VP-19 S01-VP-20 S01-VP-21 S01-VP-10
+depends_on: D-001
 trigger: —
 date: 2026-10-24
 ---
@@ -20,6 +21,37 @@ The founder's line in D-001 settles these too. The pilot's entry offered exactly
 ## Context and problem statement
 
 In the references, the party that holds the money is mostly also the one that settles it, pays it out, collects it, deducts from it, keeps the account and sets the timing. So the pilot's Decisions 2 to 12 follow from Decision 1 (`studies/subjects/S-01/entry.md`, "What Decision 1 implies for the others"). With D-001 at C, what does each become?
+
+## Terms
+
+The words this record relies on, each defined in the glossary (`architecture/12-glossary.md`) from the sources named there.
+
+| Term | What this record relies on it to cover | Sources |
+| --- | --- | --- |
+| held through Sharrwah | A or B, as the founder's guard names them; under C, neither | `founder-decisions.tsv` (G1) |
+| settlement and payout | Each provider's own, on its own terms; Sharrwah sends no payouts | `GQL:3229`; `SA-en:807`; `HC:payments/getting-paid.md:13` |
+| payment provider | The company that processes or receives a payment for a method | `HC:payments/getting-paid.md:3`; `SA-en:24` |
+| seller's own account | The seller's account with each provider, under its own contract, linked to Sharrwah by its own credentials or keys | `HC:payments/third-party-providers/configuring-providers.md:32`; `SA-en:318` |
+| cash on delivery | Collected by a courier under the seller's own contract, which settles with the seller | `SA-en:565`; `SA-en:234`; `SA-ar:359` |
+| provider fees | Each provider deducts its own | `SA-en:1241`; `GQL:3605` |
+| Sharrwah's fees | Billed apart from sellers' money, never deducted from it | `HC:payments/getting-paid.md:11` (a precedent) |
+| refund and void | Made through each provider, on its own terms | `HC:fulfillment/managing-orders/refunding-orders.md:16`; `SA-en:804` |
+| agency role | Sharrwah takes none | S01-VP-06 |
+| security interest | Sharrwah takes none | S01-VP-10 |
+
+## Scope
+
+**Decides:**
+- The pilot's Decisions 2 to 12, each as column C of its table, as listed under the outcome.
+
+**Takes as given:**
+- D-001's outcome: C at launch, with A and B reserved (in `depends_on`).
+
+**Leaves open:**
+- Sharrwah's terms with sellers, and the company that offers them — S-08. Carried: the terms say that each provider's terms govern the money it holds, whichever company offers them.
+- How Sharrwah sets and bills its fees — S-03. Carried: whatever they are, they are billed apart from sellers' money.
+- What the seller is shown of each provider's settlement times and balances — S-07. Carried: showing reads each provider's own records, and changes none of the answers above.
+- The terms of each provider Sharrwah integrates — S-07. Carried: whatever a provider's terms say, Sharrwah takes no agency role and no security interest under this record. A provider that required either from Sharrwah would come to the founder.
 
 ## Decision drivers
 
@@ -44,7 +76,7 @@ Chosen option: **1, column C,** with the pilot's recommendation for each:
 | 5. Whether Sharrwah acts as the seller's agent (S01-VP-06) | no agency role |
 | 6. Who deducts fees and refunds (S01-VP-09) | each provider its own; Sharrwah bills its own fees separately |
 | 7. Which accounts a seller holds (S01-VP-11) | an account with each provider, linked through Sharrwah; a Sharrwah account serves only Sharrwah's own billing |
-| 8. Payout timing (S01-VP-15) | each provider's settlement time, shown to the seller per payment method |
+| 8. Payout timing (S01-VP-15) | each provider's own settlement time. What the seller is shown of it is left to S-07 |
 | 9. Deducted before payout, or billed apart (S01-VP-19) | each provider deducts its own; Sharrwah bills its fees separately |
 | 10. Funds held when the service ends (S01-VP-20) | Sharrwah holds nothing; its terms say each provider's terms apply |
 | 11. When funds go back to buyers (S01-VP-21) | none for Sharrwah; its terms say each provider's terms apply |
@@ -74,3 +106,4 @@ The pilot's variation points and their statements (`studies/subjects/S-01/variat
 
   Each is answered from D-001 to D-004 alone.
 - **Checks:** level 3, with D-001.
+- **Gaps:** none bears on these answers. Which providers' terms would ask for an agency role or a security interest is read when S-07 proposes each provider.
