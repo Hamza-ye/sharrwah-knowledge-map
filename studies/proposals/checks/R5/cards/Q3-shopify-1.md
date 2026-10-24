@@ -243,7 +243,7 @@
 - note: first run's citation
 
 **Citation SH-S-0260:** `https://help.shopify.com/en/manual/payments/shopify-payments.md` | Note (requirements) | 2026-10-10 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/059-help.shopify.com/text.txt` (fetched 2026-10-11T06:13:01Z, captured)
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/059-help.shopify.com/text.txt` (3889 bytes), fetched 2026-10-11T06:13:01Z, captured
 - quote: To use Shopify Payments, you must secure your account with <a href="/en/manual/your-account/logging-in/secure-sign-in">two-step authentication</a>.
 - title: Shopify Payments
 - the page opens: Shopify Payments is the simplest way to accept payments online. It eliminates the hassle of setting up a third-party payment provider or merchant account and having to enter the credentials into Shopify. With Shopify Payments you're automatically set up to accept all major payment methods as soon as you create your Shopify store. If you already use a direct third-party payment provider, then you can also use Shopify Payments alongside your existing provider to offer additional payment methods su…
@@ -390,8 +390,8 @@
 - from: index:SH-C-173:SH-S-0108
 
 **Citation S01-SH-C058:** `https://www.shopify.com/legal/terms-shopify-payments` | Part I, B. Prohibited and Restricted Businesses | 2026-10-10 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/149-shopify.com/text.txt` (fetched 2026-10-11T06:13:11Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/119-shopify.com/text.txt` (fetched 2026-10-12T10:51:25Z, captured)
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/149-shopify.com/text.txt` (90053 bytes), fetched 2026-10-11T06:13:11Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/119-shopify.com/text.txt` (90053 bytes), fetched 2026-10-12T10:51:25Z, captured
 - quote: Prohibited Business and Restricted Business categories may be imposed by law or through the Payment Network Rules, by Shopify or the requirements of a Payment Processor's Financial Services Providers.
 - title: Shopify Payments Terms of Service - Shopify
 - in context: …he Payments Services and Shopify Payments Account may only be used in the Designated Country. By accepting this Agreement, you confirm that you will satisfy these requirements. Prohibited and Restricted Businesses. Certain categories of businesses and business practices are prohibited from using the Payments Services ("Prohibited Businesses"), or require additional review and approval by us to use the Payments Services ("Restricted Businesses"). ⟪Prohibited Business and Restricted Business categories may be imposed by law or through the Payment Network Rules, by Shopify or the requirements of a Payment Processor's Financial Services Providers.⟫ The types of business categories and business practices that are considered Prohibited Businesses or Restricted Businesses are provided by each Payment Processor in your Designated Country and can be located at the links found in the Payment Processor List. These lists are meant to be representative but not exhaustive. If you are uncertain as to whether your business is a Prohibited Business or Restricted Business, or you have questions about ho…

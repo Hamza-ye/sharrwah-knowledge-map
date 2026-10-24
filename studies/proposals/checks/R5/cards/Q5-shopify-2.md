@@ -71,8 +71,8 @@
 - note: first run's citation
 
 **Citation SH-S-0060:** `https://www.shopify.com/legal/terms` | 9.9 Third Party Services and Third Party Partners | 2026-08-01 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/143-shopify.com/text.txt` (fetched 2026-10-11T06:13:11Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/117-shopify.com/text.txt` (fetched 2026-10-12T10:51:23Z, captured)
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/143-shopify.com/text.txt` (84422 bytes), fetched 2026-10-11T06:13:11Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/117-shopify.com/text.txt` (84422 bytes), fetched 2026-10-12T10:51:23Z, captured
 - quote: Shopify does not guarantee the availability of Third Party Services and you acknowledge that Shopify may disable access to any Third Party Services at any time in its sole discretion and without notice to you.
 - title: Shopify Terms of Service - Shopify
 - in context: …Providers. You acknowledge that Shopify has no control over Third Party Services or Third Party Providers and will not be responsible or liable to you or anyone else for such Third Party Services or Third Party Providers. The availability of Third Party Services, or the integration or enabling of such Third Party Services with the Services does not constitute or imply an endorsement, authorization, sponsorship, or affiliation by or with Shopify. ⟪Shopify does not guarantee the availability of Third Party Services and you acknowledge that Shopify may disable access to any Third Party Services at any time in its sole discretion and without notice to you.⟫ Shopify is not responsible or liable to anyone for discontinuation or suspension of access to, or disablement of, any Third Party Service. Shopify strongly recommends that you seek specialist advice before using or relying on Third Party Services or Third Party Providers to ensure they will meet your needs. In particular, tax calculators should be used for reference only and not as a substitute for independent tax advice, when assessing whether …
@@ -184,7 +184,7 @@
 - from: held
 
 **Citation Q5-SH-C098:** `https://www.shopify.com/partners/terms` | C.4. Additional Terms Applicable to Payments Developers, Merchant Flexibility | 2026-02-27 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/152-shopify.com/text.txt` (fetched 2026-10-11T06:13:12Z, captured)
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/152-shopify.com/text.txt` (137217 bytes), fetched 2026-10-11T06:13:12Z, captured
 - quote: Merchant Flexibility. Payments Applications must allow for Shopify Merchants to terminate their agreement with the payment provider within 7 days’ notice, without any penalty, fine, or other consequence.
 - title: Shopify Partner Program - Partner Program Agreement - Shopify
 - in context: …hat it describes. Sync Data to Shopify. All payments and order data received from transactions processed on the Payments Application must be automatically synced to Shopify as specified in the Payments Platform Developer Guidelines. New Payments Application Feature Approval. Any updates or changes to an existing Payments Application, including the addition of new product features or new payment methods, must be submitted for review and approval. ⟪Merchant Flexibility. Payments Applications must allow for Shopify Merchants to terminate their agreement with the payment provider within 7 days' notice, without any penalty, fine, or other consequence.⟫ Settlements. All Payments Applications must settle transactions for the Merchants within a maximum of 5 days, as outlined in the Payments Platform Developer Guidelines. Wind Down Period. If Payments Developer wishes to no longer support the Payments Application, the Parties agree to the following arrangement for a period not to exceed six (6) months following the effective date of termination (the "Wind Down Period"). Notwithstanding the foregoi…
@@ -203,7 +203,7 @@
 - note: first run's citation
 
 **Citation SH-S-0293:** `https://www.shopify.com/partners/terms` | C.4. Additional Terms Applicable to Payments Developers, Wind Down Period | 2026-02-27 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/152-shopify.com/text.txt` (fetched 2026-10-11T06:13:12Z, captured)
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/152-shopify.com/text.txt` (137217 bytes), fetched 2026-10-11T06:13:12Z, captured
 - quote: If Payments Developer wishes to no longer support the Payments Application, the Parties agree to the following arrangement for a period not to exceed six (6) months following the effective date of termination (the “Wind Down Period”).
 - title: Shopify Partner Program - Partner Program Agreement - Shopify
 - in context: …ayment methods, must be submitted for review and approval. Merchant Flexibility. Payments Applications must allow for Shopify Merchants to terminate their agreement with the payment provider within 7 days' notice, without any penalty, fine, or other consequence. Settlements. All Payments Applications must settle transactions for the Merchants within a maximum of 5 days, as outlined in the Payments Platform Developer Guidelines. Wind Down Period. ⟪If Payments Developer wishes to no longer support the Payments Application, the Parties agree to the following arrangement for a period not to exceed six (6) months following the effective date of termination (the "Wind Down Period").⟫ Notwithstanding the foregoing, if the Agreement is terminated as a result of a material breach by Payments Developer, then the Wind Down Period will not exceed a period of one (1) month, or such other length of time as determined by Shopify in its sole discretion and communicated to Payments Developer in writing (email accepted). During the Wind Down Period, both Parties will continue to perform their obligations under this agreement and Payment…
@@ -221,13 +221,13 @@
 - from: held
 
 **Citation Q5-SH-C103:** `https://www.shopify.com/partners/terms` | C.4. Additional Terms Applicable to Payments Developers, 6. Termination, Suspension and Removal from the Payments Platform | 2026-02-27 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/152-shopify.com/text.txt` (fetched 2026-10-11T06:13:12Z, captured)
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/152-shopify.com/text.txt` (137217 bytes), fetched 2026-10-11T06:13:12Z, captured
 - quote: Shopify may at its sole discretion remove your Payments Application from Shopify’s public list of payment gateways, suspend or terminate your access to the Payments Platform and your participation in Shopify’s payments ecosystem,
 - title: Shopify Partner Program - Partner Program Agreement - Shopify
 - in context: …in which Payments Developer collects and uses Merchant data. Payments Developer must provide Shopify with any changes or updates to how they collect and use data in connection with their Payments Application. Payments Developer acknowledges that Shopify may share a summary of how data is collected and shared by the Payments Application in our communications with Shopify Merchants. 6. Termination, Suspension and Removal from the Payments Platform ⟪Shopify may at its sole discretion remove your Payments Application from Shopify's public list of payment gateways, suspend or terminate your access to the Payments Platform and your participation in Shopify's payments ecosystem,⟫ or take any other action that we deem necessary for the violation of any clause in this Section "Additional Terms Applicable to Payments Developers." For the avoidance of doubt, this Section does not preclude the termination rights set forth in Section 4 "Termination" of this Agreement. C.5. Additional Terms Applicable to Blockchain Developers 1. App Requirements Blockchain Developers are permitted to develop Blockchain Applications that integra…
 
 **Citation Q5-SH-C104:** `https://www.shopify.com/partners/terms` | C.4. Additional Terms Applicable to Payments Developers, 6. Termination, Suspension and Removal from the Payments Platform | 2026-02-27 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/152-shopify.com/text.txt` (fetched 2026-10-11T06:13:12Z, captured)
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/152-shopify.com/text.txt` (137217 bytes), fetched 2026-10-11T06:13:12Z, captured
 - quote: or take any other action that we deem necessary for the violation of any clause in this Section “Additional Terms Applicable to Payments Developers.”
 - title, opening and note boxes: as for this source's citation above
 - in context: …knowledges that Shopify may share a summary of how data is collected and shared by the Payments Application in our communications with Shopify Merchants. 6. Termination, Suspension and Removal from the Payments Platform Shopify may at its sole discretion remove your Payments Application from Shopify's public list of payment gateways, suspend or terminate your access to the Payments Platform and your participation in Shopify's payments ecosystem, ⟪or take any other action that we deem necessary for the violation of any clause in this Section "Additional Terms Applicable to Payments Developers."⟫ For the avoidance of doubt, this Section does not preclude the termination rights set forth in Section 4 "Termination" of this Agreement. C.5. Additional Terms Applicable to Blockchain Developers 1. App Requirements Blockchain Developers are permitted to develop Blockchain Applications that integrate blockchain-based functionalities and the Service. Applications that constitute both a Blockchain Application and another type of Application (inclu…
@@ -266,8 +266,8 @@
 - from: new
 
 **Citation S01-SH-C082:** `https://help.shopify.com/en/manual/payments/shopify-payments/payouts.md` | introduction | 2026-10-12 | kind: stated | quote check: found (markup removed)
-- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/067-help.shopify.com/text.txt` (fetched 2026-10-11T06:13:02Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/035-help.shopify.com/text.txt` (fetched 2026-10-12T10:50:13Z, captured)
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/067-help.shopify.com/text.txt` (2447 bytes), fetched 2026-10-11T06:13:02Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/035-help.shopify.com/text.txt` (2447 bytes), fetched 2026-10-12T10:50:13Z, captured
 - quote: After a customer pays for an order using Shopify Payments and specific accelerated checkouts, the funds are transferred to the payout bank account that you set up with Shopify Payments.
 - title: Getting paid with Shopify Payments
 - the page opens: After a customer pays for an order using Shopify Payments and specific accelerated checkouts, the funds are transferred to the payout bank account that you set up with Shopify Payments. The following types of accounts can accept Shopify Payments payouts: * a checking account that meets the bank account requirements for Shopify Payments in your country * a Shopify Balance account In certain countries, there's a minimum payout amount for Shopify Payments. To check whether your country has a minimu…
@@ -288,8 +288,8 @@
 - from: new
 
 **Citation S01-SH-C011:** `https://www.shopify.com/legal/terms-shopify-payments` | Part I, A. The Payment Processor | 2026-10-12 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/149-shopify.com/text.txt` (fetched 2026-10-11T06:13:11Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/119-shopify.com/text.txt` (fetched 2026-10-12T10:51:25Z, captured)
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/149-shopify.com/text.txt` (90053 bytes), fetched 2026-10-11T06:13:11Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/119-shopify.com/text.txt` (90053 bytes), fetched 2026-10-12T10:51:25Z, captured
 - quote: By accepting this Agreement and the Payment Processor Terms for your Designated Country you are agreeing to open financial accounts and/or cryptocurrency wallets with one or more Payment Processors for Payment Processing (each a "Payment Processor Account").
 - title: Shopify Payments Terms of Service - Shopify
 - in context: …parate terms of service identified in the Payment Processor List (the "Payment Processor Terms"). By accepting this Agreement, you are also accepting and agreeing to be bound by all of the Payment Processor Terms applicable in your Designated Country, which, in each case, is a legal agreement between you and the applicable Payment Processor. Shopify is not a party to any of the Payment Processor Terms and is not liable to you in respect thereof. ⟪By accepting this Agreement and the Payment Processor Terms for your Designated Country you are agreeing to open financial accounts and/or cryptocurrency wallets with one or more Payment Processors for Payment Processing (each a "Payment Processor Account").⟫ You authorize Shopify to determine which Payment Processor Account(s) we will facilitate opening on your behalf, and where you have multiple Payment Processor Accounts, which Payment Processor shall perform Payment Processing services for each Transaction. We reserve the right to change the Payment Processors, subject to the terms of our agreement with each Payment Processor. In the event of any inconsistency between this Agreement and any of th…
@@ -308,8 +308,8 @@
 - from: index:SH-C-070:SH-S-0112
 
 **Citation S01-SH-C039:** `https://www.shopify.com/legal/terms-shopify-payments` | Part I, C. Reserves | 2026-10-10 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/149-shopify.com/text.txt` (fetched 2026-10-11T06:13:11Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/119-shopify.com/text.txt` (fetched 2026-10-12T10:51:25Z, captured)
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/149-shopify.com/text.txt` (90053 bytes), fetched 2026-10-11T06:13:11Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/119-shopify.com/text.txt` (90053 bytes), fetched 2026-10-12T10:51:25Z, captured
 - quote: We, in our discretion, will set the terms of any Reserve Account and notify you of such terms, which may require that a certain amount (including the full amount) of the funds received for a Transaction are held for a period of time
 - title: Shopify Payments Terms of Service - Shopify
 - in context: …citly agree that all communication in relation to delinquent accounts will be made by electronic mail or by phone, as provided to Shopify by you. Such communication may be made by Shopify or by anyone on its behalf, including, but not limited to, a third-party collection agent. Reserves. Funds held in reserves are amounts set aside to cover chargebacks, refunds, disputes, or other payment obligations under this Agreement (the "Reserve Account"). ⟪We, in our discretion, will set the terms of any Reserve Account and notify you of such terms, which may require that a certain amount (including the full amount) of the funds received for a Transaction are held for a period of time⟫, or that additional amounts are held in the Reserve Account. We, in our discretion, may elect to change the terms of a Reserve Account at any time, for any reason, based on your payment processing history or as requested by the Payment Processors. We may require you to fund the Reserve Account by means of: (i) any funds payouts made or due to you for Transactions submitted to the Payments Services; or, (ii) amounts available in your Payout Accou…
@@ -347,8 +347,8 @@
 - from: new
 
 **Citation S01-SH-C064:** `https://help.shopify.com/en/manual/payments/getting-paid.md` | How you get paid | 2026-10-12 | kind: stated | quote check: found (markup removed)
-- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/051-help.shopify.com/text.txt` (fetched 2026-10-11T06:13:00Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/030-help.shopify.com/text.txt` (fetched 2026-10-12T10:50:08Z, captured)
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/051-help.shopify.com/text.txt` (7712 bytes), fetched 2026-10-11T06:13:00Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/030-help.shopify.com/text.txt` (7712 bytes), fetched 2026-10-12T10:50:08Z, captured
 - quote: When you set up a payment provider to accept credit card payments, each payment must be processed, so there's usually a delay between when the customer pays for their order and when you receive the payment. After the payment is processed, the purchase amount is transferred to your merchant account.
 - title: Getting paid
 - the page opens: All Shopify-supported payment methods rely on third-party providers to process your transactions. These providers might charge extra fees and enforce rules about what products you can sell using their service. When you set up a payment method, check with the company providing the service to make sure you understand their rules and fees. How you get paid When you set up a payment provider to accept credit card payments, each payment must be processed, so there's usually a delay between when the c…
@@ -370,8 +370,8 @@
 - note: first run's citation, moved from where: the sentence states how Shop Pay Installments orders meet payouts, which is a boundary
 
 **Citation SH-S-0317:** `https://help.shopify.com/en/manual/payments/getting-paid.md` | Shop Pay Installments | 2026-10-10 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/051-help.shopify.com/text.txt` (fetched 2026-10-11T06:13:00Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/030-help.shopify.com/text.txt` (fetched 2026-10-12T10:50:08Z, captured)
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/051-help.shopify.com/text.txt` (7712 bytes), fetched 2026-10-11T06:13:00Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/030-help.shopify.com/text.txt` (7712 bytes), fetched 2026-10-12T10:50:08Z, captured
 - quote: Payouts for these orders are included with your Shopify Payments payouts.
 - title: Getting paid
 - the page opens: All Shopify-supported payment methods rely on third-party providers to process your transactions. These providers might charge extra fees and enforce rules about what products you can sell using their service. When you set up a payment method, check with the company providing the service to make sure you understand their rules and fees. How you get paid When you set up a payment provider to accept credit card payments, each payment must be processed, so there's usually a delay between when the c…
@@ -393,8 +393,8 @@
 - note: first run's citation, moved from where: the sentence states how manual payments meet orders (marked as unpaid), which is a boundary
 
 **Citation SH-S-0386:** `https://help.shopify.com/en/manual/payments/manual-payments.md` | introduction | 2026-10-10 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/052-help.shopify.com/text.txt` (fetched 2026-10-11T06:13:01Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/031-help.shopify.com/text.txt` (fetched 2026-10-12T10:50:09Z, captured)
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/052-help.shopify.com/text.txt` (9943 bytes), fetched 2026-10-11T06:13:01Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/031-help.shopify.com/text.txt` (9943 bytes), fetched 2026-10-12T10:50:09Z, captured
 - quote: Orders that accept manual payments are marked as unpaid on the **Orders** page.
 - title: Manual payment methods
 - the page opens: Some customers don't want to pay for their orders using a credit card. These customers can still place their orders online if you set up a manual payment method. When your customers use a manual payment method, you can arrange to receive their payment in a way that works best for them. You can send an invoice to your customer. After you receive the payment, you can then manually approve the order. Common types of manual payments include cash on delivery (COD), money orders, and bank transfers. I…
@@ -519,7 +519,7 @@
 - from: held
 
 **Citation Q5-SH-C099:** `https://www.shopify.com/partners/terms` | C.4. Additional Terms Applicable to Payments Developers, Settlements | 2026-02-27 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/152-shopify.com/text.txt` (fetched 2026-10-11T06:13:12Z, captured)
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/152-shopify.com/text.txt` (137217 bytes), fetched 2026-10-11T06:13:12Z, captured
 - quote: Settlements. All Payments Applications must settle transactions for the Merchants within a maximum of 5 days, as outlined in the Payments Platform Developer Guidelines.
 - title: Shopify Partner Program - Partner Program Agreement - Shopify
 - in context: …atform Developer Guidelines. New Payments Application Feature Approval. Any updates or changes to an existing Payments Application, including the addition of new product features or new payment methods, must be submitted for review and approval. Merchant Flexibility. Payments Applications must allow for Shopify Merchants to terminate their agreement with the payment provider within 7 days' notice, without any penalty, fine, or other consequence. ⟪Settlements. All Payments Applications must settle transactions for the Merchants within a maximum of 5 days, as outlined in the Payments Platform Developer Guidelines.⟫ Wind Down Period. If Payments Developer wishes to no longer support the Payments Application, the Parties agree to the following arrangement for a period not to exceed six (6) months following the effective date of termination (the "Wind Down Period"). Notwithstanding the foregoing, if the Agreement is terminated as a result of a material breach by Payments Developer, then the Wind Down Period will not exceed a period of one (1) month, or such o…
@@ -538,8 +538,8 @@
 - from: index:SH-C-064:SH-S-0079
 
 **Citation S01-SH-C001:** `https://www.shopify.com/legal/terms-shopify-payments` | Part I, A. The Shopify Payments Service, Our Role | 2026-10-10 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/149-shopify.com/text.txt` (fetched 2026-10-11T06:13:11Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/119-shopify.com/text.txt` (fetched 2026-10-12T10:51:25Z, captured)
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/149-shopify.com/text.txt` (90053 bytes), fetched 2026-10-11T06:13:11Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/119-shopify.com/text.txt` (90053 bytes), fetched 2026-10-12T10:51:25Z, captured
 - quote: You hereby appoint us as your agent to deliver information and instructions on your behalf to one or more payment processors that provide such financial services (each a "Payment Processor") or other service providers
 - title: Shopify Payments Terms of Service - Shopify
 - in context: …gnated Country supplement, and where expressly stated, modify, the Global Terms. Part I (Global Terms) A. The Shopify Payments Service Our Role. The Shopify Payments service ("Shopify Payments" or the "Payments Services") is Shopify's integrated payments solution that arranges for the financial services you need to accept payments, and allows you to manage your payments directly on Shopify, in each case as more fully described in this Agreement. ⟪You hereby appoint us as your agent to deliver information and instructions on your behalf to one or more payment processors that provide such financial services (each a "Payment Processor") or other service providers⟫, in each case, in connection with the Payments Services. Under the separate Shopify Terms of Service (the "Shopify Platform Terms"), the applicable Shopify Contracting Party (as defined therein) provides you with its online storefront, shopping cart, store management, marketing, and other services (collectively, the "Shopify Platform Services"). The Shopify Platform Terms are incorporated herein by reference and by accepting this Agreement you a…
@@ -559,15 +559,15 @@
 - note: The index excerpt ends before the definition of the Payout Account; the rest of the sentence was read again on 2026-10-12 and is cited separately.
 
 **Citation S01-SH-C033:** `https://www.shopify.com/legal/terms-shopify-payments` | Part I, C. Security Interest | 2026-10-10 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/149-shopify.com/text.txt` (fetched 2026-10-11T06:13:11Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/119-shopify.com/text.txt` (fetched 2026-10-12T10:51:25Z, captured)
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/149-shopify.com/text.txt` (90053 bytes), fetched 2026-10-11T06:13:11Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/119-shopify.com/text.txt` (90053 bytes), fetched 2026-10-12T10:51:25Z, captured
 - quote: As security for performance of your obligations under this Agreement, you grant us a first priority lien and security interest on all funds processed and deposited into all bank accounts, cryptocurrency wallets, or other financial accounts designated in your Shopify Admin
 - title: Shopify Payments Terms of Service - Shopify
 - in context: … Shopify Payments again, the then current Fees shall apply to you. In addition to the Fees, you are also responsible for any penalties and fines imposed on you or on us by any bank, money services business, payment network, financial institution, or other financial intermediary resulting from your use of the Payments Services in a manner not permitted by this Agreement or by such financial intermediary's rules and regulations. Security Interest. ⟪As security for performance of your obligations under this Agreement, you grant us a first priority lien and security interest on all funds processed and deposited into all bank accounts, cryptocurrency wallets, or other financial accounts designated in your Shopify Admin⟫ to receive funds from the settlement of Transactions (the "Payout Account"), and any other bank accounts, cryptocurrency wallets, or other financial accounts associated with your Shopify Payments Account, and in any funds processed using the Payment Processing services. These security interests and liens will secure payment and performance of all of your obligations under this Agreement and any other agreements now existing or later entered into…
 
 **Citation S01-SH-C032:** `https://www.shopify.com/legal/terms-shopify-payments` | Part I, C. Security Interest | 2026-10-12 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/149-shopify.com/text.txt` (fetched 2026-10-11T06:13:11Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/119-shopify.com/text.txt` (fetched 2026-10-12T10:51:25Z, captured)
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/149-shopify.com/text.txt` (90053 bytes), fetched 2026-10-11T06:13:11Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/119-shopify.com/text.txt` (90053 bytes), fetched 2026-10-12T10:51:25Z, captured
 - quote: to receive funds from the settlement of Transactions (the "Payout Account"), and any other bank accounts, cryptocurrency wallets, or other financial accounts associated with your Shopify Payments Account, and in any funds processed using the Payment Processing services.
 - title, opening and note boxes: as for this source's citation above
 - in context: …diary resulting from your use of the Payments Services in a manner not permitted by this Agreement or by such financial intermediary's rules and regulations. Security Interest. As security for performance of your obligations under this Agreement, you grant us a first priority lien and security interest on all funds processed and deposited into all bank accounts, cryptocurrency wallets, or other financial accounts designated in your Shopify Admin ⟪to receive funds from the settlement of Transactions (the "Payout Account"), and any other bank accounts, cryptocurrency wallets, or other financial accounts associated with your Shopify Payments Account, and in any funds processed using the Payment Processing services.⟫ These security interests and liens will secure payment and performance of all of your obligations under this Agreement and any other agreements now existing or later entered into between us and you, including, without limitation, your obligation to pay any amounts due and owing to us. You will execute, deliver and pay the fees for any documents we request, and authorize Shopify to take any other action necessary including registering notice of s…
@@ -587,8 +587,8 @@
 - note: first run's citation
 
 **Citation SH-S-0152:** `https://www.shopify.com/legal/processor-list` | B. North America, row United States | 2026-10-10 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/139-shopify.com/text.txt` (fetched 2026-10-11T06:13:10Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/116-shopify.com/text.txt` (fetched 2026-10-12T10:51:22Z, captured)
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/139-shopify.com/text.txt` (31570 bytes), fetched 2026-10-11T06:13:10Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/116-shopify.com/text.txt` (31570 bytes), fetched 2026-10-12T10:51:22Z, captured
 - quote: Stripe, Inc.
 - title: Payment Processors for Shopify Payments - Shopify
 - in context: …inesses Stripe Prohibited and Restricted Businesses Debit Authorization User Bank Account Debit Authorization Mexico Stripe Payments Mexico, S. de RL de CV. Account Terms Stripe Connected Account Agreement Stripe Services Agreement Stripe Payment Method Terms Privacy Policy Stripe Privacy Policy Prohibited and Restricted Businesses Stripe Prohibited and Restricted Businesses Debit Authorization User Bank Account Debit Authorization United States ⟪Stripe, Inc.⟫ Account Terms Stripe Connected Account Agreement Stripe Services Agreement Stripe Payment Method Terms Privacy Policy Stripe Privacy Policy Prohibited and Restricted Businesses Stripe Prohibited and Restricted Businesses Debit Authorization User Bank Account Debit Authorization United States PayPal, Inc. Account Terms PayPal User Agreement Privacy Policy PayPal Privacy Statement Prohibited and Restricted Businesses PayPal Acceptable Use Policy D…
@@ -607,8 +607,8 @@
 - from: index:SH-C-065:SH-S-0118
 
 **Citation S01-SH-C045:** `https://www.shopify.com/legal/terms-shopify-payments` | Part I, D. Effects of Termination | 2026-10-10 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/149-shopify.com/text.txt` (fetched 2026-10-11T06:13:11Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/119-shopify.com/text.txt` (fetched 2026-10-12T10:51:25Z, captured)
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/149-shopify.com/text.txt` (90053 bytes), fetched 2026-10-11T06:13:11Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/119-shopify.com/text.txt` (90053 bytes), fetched 2026-10-12T10:51:25Z, captured
 - quote: Any funds in the Financial Services Provider's custody will be paid out to you subject to the Payment Processor Terms.
 - title: Shopify Payments Terms of Service - Shopify
 - in context: …tion and closing of your Shopify Payments Account, we will immediately discontinue your access to the Payments Services. You agree to complete all pending Transactions, immediately remove all logos for Cards, and stop accepting new Transactions through the Payments Services. You will not be refunded the remainder of any Fees that you have paid for the Payments Services if your access to or use of the Payments Services is terminated or suspended. ⟪Any funds in the Financial Services Provider's custody will be paid out to you subject to the Payment Processor Terms.⟫ Termination does not relieve you of your obligations as defined in this Agreement, and a Payment Processor may elect to continue to hold any funds deemed necessary, pending resolution of any other terms or obligations defined in this Agreement, including, but not limited to, chargebacks, disputes, fees, refunds, or other investigations or proceedings. Termination of this Agreement will not necessarily terminate your Shopify Platform Terms, unles…
@@ -628,7 +628,7 @@
 - from: new
 
 **Citation S01-SH-C112:** `https://help.shopify.com/en/manual/payments/shopify-payments/payouts/schedule-payouts.md` | note | 2026-10-12 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/041-help.shopify.com/text.txt` (fetched 2026-10-12T10:50:19Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/041-help.shopify.com/text.txt` (4012 bytes), fetched 2026-10-12T10:50:19Z, captured
 - quote: Shopify Payments in the United States and France uses multiple payment processing partners to ensure that your payments and payouts are processed seamlessly. Although your payouts are sent from Shopify, they're processed by these partners.
 - title: Scheduling your Shopify Payments payouts
 - the page opens: Deciding when and how often to get your payouts can be an important part of managing your finances. With Shopify Payments, you can choose a daily, weekly, or monthly payouts schedule. There are no extra charges when you switch from one payouts schedule to another payouts schedule. If you have active Shopify Capital, or Shopify Credit, then your payout schedule options might be different. For merchants in Japan, you can choose a weekly or monthly payouts schedule, but you can't have a daily payou…
@@ -637,7 +637,7 @@
 - in context: …outs schedule. There are no extra charges when you switch from one payouts schedule to another payouts schedule. If you have active [Shopify Capital](/manual/finance/shopify-capital/), or [Shopify Credit](/manual/finance/shopify-credit), then your payout schedule options might be different. For merchants in Japan, you can choose a weekly or monthly payouts schedule, but you can't have a daily payouts schedule. <aside class="note"><h4>Note</h4><p>⟪Shopify Payments in the United States and France uses multiple payment processing partners to ensure that your payments and payouts are processed seamlessly. Although your payouts are sent from Shopify, they're processed by these partners.⟫ You might receive some payouts sooner than the scheduled payout date, and more than one payout per day.</p> </aside> Understanding how monthly payouts are adapted for certain months helps with cash flow management. Specifically, monthly payouts originally set for a date beyond the current month's end are instead processed on the final day of that month, ensuring that you get timely payments. For example, if your monthly schedule is set to the 30…
 
 **Citation S01-SH-C113:** `https://help.shopify.com/en/manual/payments/shopify-payments/payouts/schedule-payouts.md` | note | 2026-10-12 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/041-help.shopify.com/text.txt` (fetched 2026-10-12T10:50:19Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/041-help.shopify.com/text.txt` (4012 bytes), fetched 2026-10-12T10:50:19Z, captured
 - quote: You might receive some payouts sooner than the scheduled payout date, and more than one payout per day.
 - title, opening and note boxes: as for this source's citation above
 - headings: Scheduling your Shopify Payments payouts
@@ -657,7 +657,7 @@
 - from: new
 
 **Citation S01-SH-C144:** `https://help.shopify.com/en/manual/payments/shopify-payments/payouts/refunds.md` | introduction | 2026-10-12 | kind: stated | quote check: found (markup removed)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/039-help.shopify.com/text.txt` (fetched 2026-10-12T10:50:17Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/039-help.shopify.com/text.txt` (9653 bytes), fetched 2026-10-12T10:50:17Z, captured
 - quote: When you issue a refund through Shopify Payments, the refunded amount is deducted from your next available payout.
 - title: Shopify Payments refunds
 - the page opens: When you issue a refund through Shopify Payments, the refunded amount is deducted from your next available payout. The refund status is marked as Pending for up to 2 business days. During this time, the funds are processed back to your customer. Due to varying processing times at your customer's bank, it might take up to 10 business days for the refunded amount to be received. Refunds are processed in accordance with your payout schedule, and are typically scheduled for the next payout. You can'…
@@ -679,15 +679,15 @@
 - from: new
 
 **Citation S01-SH-C168:** `https://www.shopify.com/legal/terms-payfac` | Part I, C. Processing Transactions and Receiving Your Funds, Settlement | 2026-09-22 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/147-shopify.com/text.txt` (fetched 2026-10-11T06:13:11Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/118-shopify.com/text.txt` (fetched 2026-10-12T10:51:24Z, captured)
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/147-shopify.com/text.txt` (12391 bytes), fetched 2026-10-11T06:13:11Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/118-shopify.com/text.txt` (12391 bytes), fetched 2026-10-12T10:51:24Z, captured
 - quote: Settlement. You get paid only after you pass our onboarding, KYC and underwriting checks. Settlement of your valid Transactions, net of fees, refunds, chargebacks, reserves, and other amounts owed, will be paid to your Payout Account.
 - title: Shopify Payments Facilitator Terms (Merchant Agreement) - Shopify
 - in context: …use the Payments Services for any business or activity on the Acquirer's prohibited/restricted list, or otherwise prohibited by Payment Network Rules. Compliance with Payment Network Rules and PCI-DSS. You will comply with all applicable Payment Network Rules and maintain PCI-DSS compliance. The Payment Networks are third-party beneficiaries of this obligation to the extent their rules require. C. Processing Transactions and Receiving Your Funds ⟪Settlement. You get paid only after you pass our onboarding, KYC and underwriting checks. Settlement of your valid Transactions, net of fees, refunds, chargebacks, reserves, and other amounts owed, will be paid to your Payout Account.⟫ Payouts from your sales may be held until you pass all of our onboarding, identity and KYC checks. Once you pass, funds owed will be paid into your Payout Account. If you do not pass, funds may be held or refunded to your customers, in accordance with applicable law and Network Rules. Fees. You owe the fees disclosed to you in the Shopify Admin for the Payments Services. Applicable fees will be withheld from your payouts. We may instead appoint …
 
 **Citation S01-SH-C169:** `https://www.shopify.com/legal/terms-payfac` | Part I, C. Processing Transactions and Receiving Your Funds, Settlement | 2026-09-22 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/147-shopify.com/text.txt` (fetched 2026-10-11T06:13:11Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/118-shopify.com/text.txt` (fetched 2026-10-12T10:51:24Z, captured)
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/147-shopify.com/text.txt` (12391 bytes), fetched 2026-10-11T06:13:11Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/118-shopify.com/text.txt` (12391 bytes), fetched 2026-10-12T10:51:24Z, captured
 - quote: Payouts from your sales may be held until you pass all of our onboarding, identity and KYC checks. Once you pass, funds owed will be paid into your Payout Account. If you do not pass, funds may be held or refunded to your customers, in accordance with applicable law and Network Rules.
 - title, opening and note boxes: as for this source's citation above
 - in context: …le Payment Network Rules and maintain PCI-DSS compliance. The Payment Networks are third-party beneficiaries of this obligation to the extent their rules require. C. Processing Transactions and Receiving Your Funds Settlement. You get paid only after you pass our onboarding, KYC and underwriting checks. Settlement of your valid Transactions, net of fees, refunds, chargebacks, reserves, and other amounts owed, will be paid to your Payout Account. ⟪Payouts from your sales may be held until you pass all of our onboarding, identity and KYC checks. Once you pass, funds owed will be paid into your Payout Account. If you do not pass, funds may be held or refunded to your customers, in accordance with applicable law and Network Rules.⟫ Fees. You owe the fees disclosed to you in the Shopify Admin for the Payments Services. Applicable fees will be withheld from your payouts. We may instead appoint one or more of our affiliates to invoice and collect, on our behalf, the fees and other amounts you owe under this Supplement, and you authorize each affiliate we appoint to do so. Reserves. Shopify may impose a Reserve and may set off amounts you owe. Chargebacks and payments disputes…

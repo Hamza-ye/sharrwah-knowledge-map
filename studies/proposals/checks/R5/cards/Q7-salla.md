@@ -67,7 +67,7 @@
 - cite_ids: SA-S-0154
 
 **Citation SA-S-0154:** `https://help.salla.sa/article/إضافة-عملة-جديدة-للمتجر/u4s3nz2yd3gxd92e8r4dpwbd` | 💡 توضيح مهم (line 697 of the rendered text) | 2026-08-31 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261010T235130Z-q1-salla-sources/items/018-help.salla.sa/text.txt` (fetched 2026-10-10T23:51:37Z, captured)
+- captured: `evidence/product-class/runs/20261010T235130Z-q1-salla-sources/items/018-help.salla.sa/text.txt` (37860 bytes), fetched 2026-10-10T23:51:37Z, captured
 - quote: عملة المتجر الافتراضية التي تظهر للعميل تعتمد على موقع العميل الجغرافي، وليست مرتبطة بالعملة الافتراضية المضافة داخل إعدادات المتجر.
 - title: إضافة عملات جديدة وتفعيلها للمتجر | مركز المساعدة - سلة
 - the page opens: إضافة عملات جديدة وتفعيلها للمتجر مركز المساعدة - سلة Enأنشئ متجرك مجاناَ الرئيسية التعليم مركز المساعدة مكتبة متكاملة لكل ما تحتاجه لبدء تجارتك مع سلة مجتمع سلة تبادل الخبرات والتجارب واستلهم طرقًا مميزة للنجاح مدونة سلة وسع دائرة معارفك بالعديد من الموضوعات المثيرة منصة المطورين انضم إلى مجتمع مطوري سلة أكاديمية سلة دورات احترافية تساعدك على نجاحك التجاري أدوات التجار أدوات متكاملة لدعم نمو متجرك الحلول متجر التطبيقات أدوات عديدة لنجاح متجرك صانع التطبيقات اصنع تطبيقًا خاصًا لمتجرك سلة سبيشل ح…
@@ -86,7 +86,7 @@
 - cite_ids: SA-S-0155
 
 **Citation SA-S-0155:** `https://help.salla.sa/article/إضافة-عملة-جديدة-للمتجر/u4s3nz2yd3gxd92e8r4dpwbd` | الأسئلة الشائعة (line 689 of the rendered text) | 2026-08-31 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261010T235130Z-q1-salla-sources/items/018-help.salla.sa/text.txt` (fetched 2026-10-10T23:51:37Z, captured)
+- captured: `evidence/product-class/runs/20261010T235130Z-q1-salla-sources/items/018-help.salla.sa/text.txt` (37860 bytes), fetched 2026-10-10T23:51:37Z, captured
 - quote: عندما يتصفح العميل المتجر، يمكنه اختيار العملة المتاحة التي تناسبه من قائمة العملات بجوار سلة المشتريات في أعلى المتجر.
 - title: إضافة عملات جديدة وتفعيلها للمتجر | مركز المساعدة - سلة
 - the page opens: إضافة عملات جديدة وتفعيلها للمتجر مركز المساعدة - سلة Enأنشئ متجرك مجاناَ الرئيسية التعليم مركز المساعدة مكتبة متكاملة لكل ما تحتاجه لبدء تجارتك مع سلة مجتمع سلة تبادل الخبرات والتجارب واستلهم طرقًا مميزة للنجاح مدونة سلة وسع دائرة معارفك بالعديد من الموضوعات المثيرة منصة المطورين انضم إلى مجتمع مطوري سلة أكاديمية سلة دورات احترافية تساعدك على نجاحك التجاري أدوات التجار أدوات متكاملة لدعم نمو متجرك الحلول متجر التطبيقات أدوات عديدة لنجاح متجرك صانع التطبيقات اصنع تطبيقًا خاصًا لمتجرك سلة سبيشل ح…
@@ -105,8 +105,8 @@
 - cite_ids: SA-S-0067
 
 **Citation SA-S-0067:** `https://help.salla.sa/article/-إدارة-طرق-الدفع-وتفعيل-المدفوعات-الإلكترونية/dtdojcntv3f4lwqzj4h0jvij` | ثانياً: تخصيص المدفوعات الإلكترونية > دورة التحويل (line 744 of the rendered text) | 2026-08-22 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261010T235130Z-q1-salla-sources/items/013-help.salla.sa/text.txt` (fetched 2026-10-10T23:51:32Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/014-help.salla.sa/text.txt` (fetched 2026-10-12T10:49:46Z, captured)
+- captured: `evidence/product-class/runs/20261010T235130Z-q1-salla-sources/items/013-help.salla.sa/text.txt` (47245 bytes), fetched 2026-10-10T23:51:32Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/014-help.salla.sa/text.txt` (47508 bytes), fetched 2026-10-12T10:49:46Z, captured
 - quote: 📝 ملاحظة: عند تفعيل التاجر لبوابة دفع سلة، يتم استقبال جميع المدفوعات بالريال السعودي.
 - title: تفعيل طرق الدفع الإلكتروني في متجرك | مركز المساعدة - سلة
 - the page opens: تفعيل طرق الدفع الإلكتروني في متجرك مركز المساعدة - سلة Enأنشئ متجرك مجاناَ الرئيسية التعليم مركز المساعدة مكتبة متكاملة لكل ما تحتاجه لبدء تجارتك مع سلة مجتمع سلة تبادل الخبرات والتجارب واستلهم طرقًا مميزة للنجاح مدونة سلة وسع دائرة معارفك بالعديد من الموضوعات المثيرة منصة المطورين انضم إلى مجتمع مطوري سلة أكاديمية سلة دورات احترافية تساعدك على نجاحك التجاري أدوات التجار أدوات متكاملة لدعم نمو متجرك الحلول متجر التطبيقات أدوات عديدة لنجاح متجرك صانع التطبيقات اصنع تطبيقًا خاصًا لمتجرك سلة سبيشل…
@@ -199,7 +199,7 @@
 
 **Citation SA-S-2388:** `observed-sa@145f137:structures/salla/staff-permission-groups/demo@en/items.jsonl` | line 11 (group إعدادات المتجر) | 2026-10-08 | kind: observed | quote check: found
 - quote: "label": "store setting edit social media account"}, {"id": 16435258, "name": "currency_setting_edit", "label": "currency setting edit"}, {"id": 1318388567, "name": "domain_management", "label": "domain management"}, {"id": 410133072, "name": "restore_data_management"
-- in context: …on": 9} {"id": 1904445108, "name": "إعدادات المتجر", "label": "إعدادات المتجر", "permissions": [{"id": 1309137353, "name": "store_setting_browse", "label": "store setting browse"}, {"id": 468515018, "name": "store_setting_edit_basic_info", "label": "store setting edit basic info"}, {"id": 1976109003, "name": "store_setting_edit_setting", "label": "store setting edit setting"}, {"id": 1201022676, "name": "store_setting_edit_social_media_account", ⟪"label": "store setting edit social media account"}, {"id": 16435258, "name": "currency_setting_edit", "label": "currency setting edit"}, {"id": 1318388567, "name": "domain_management", "label": "domain management"}, {"id": 410133072, "name": "restore_data_management"⟫, "label": "restore data management"}, {"id": 1957673870, "name": "store_setting_purchase_from_salla_store", "label": "store setting purchase from salla store"}, {"id": 1182063247, "name": "shipping_options_management", "label": "shipping options management"}, {"id": 273807752, "name": "wallet_and_invoices_management", "label": "wallet and invoices management"}, {"id": 1648236681, "name": "register_fields_management", "label": "register fields ma…
+- in context: {"id": 1904445108, "name": "إعدادات المتجر", "label": "إعدادات المتجر", "permissions": [{"id": 1309137353, "name": "store_setting_browse", "label": "store setting browse"}, {"id": 468515018, "name": "store_setting_edit_basic_info", "label": "store setting edit basic info"}, {"id": 1976109003, "name": "store_setting_edit_setting", "label": "store setting edit setting"}, {"id": 1201022676, "name": "store_setting_edit_social_media_account", ⟪"label": "store setting edit social media account"}, {"id": 16435258, "name": "currency_setting_edit", "label": "currency setting edit"}, {"id": 1318388567, "name": "domain_management", "label": "domain management"}, {"id": 410133072, "name": "restore_data_management"⟫, "label": "restore data management"}, {"id": 1957673870, "name": "store_setting_purchase_from_salla_store", "label": "store setting purchase from salla store"}, {"id": 1182063247, "name": "shipping_options_management", "label": "shipping options management"}, {"id": 273807752, "name": "wallet_and_invoices_management", "label": "wallet and invoices management"}, {"id": 1648236681, "name": "register_fields_management", "label": "register fields ma…
 
 ### Q7-SA-004
 
@@ -232,8 +232,8 @@
 - cite_ids: SA-S-0083
 
 **Citation SA-S-0083:** `https://help.salla.sa/article/تحويلات-مدفوعات-سلة-والتسويات-في-الإمارات-سلة/nvs6bt51hvlweulqzayp3o76` | الأسئلة الشائعة (line 843 of the rendered text) | 2026-09-12 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261010T235130Z-q1-salla-sources/items/021-help.salla.sa/text.txt` (fetched 2026-10-10T23:51:40Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/018-help.salla.sa/text.txt` (fetched 2026-10-12T10:49:52Z, captured)
+- captured: `evidence/product-class/runs/20261010T235130Z-q1-salla-sources/items/021-help.salla.sa/text.txt` (42745 bytes), fetched 2026-10-10T23:51:40Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/018-help.salla.sa/text.txt` (43008 bytes), fetched 2026-10-12T10:49:52Z, captured
 - quote: لا. رصيد المتجر مخصص لاشتراكات سلة وخدماتها ومشترياتها، بينما يحتفظ رصيد المدفوعات الإلكترونية بمستحقات مبيعات المتجر قبل تحويلها.
 - title: تحويلات مدفوعات سلة والتسويات في الإمارات | سلة | مركز المساعدة - سلة
 - the page opens: Enأنشئ متجرك مجاناَ الرئيسية التعليم مركز المساعدة مكتبة متكاملة لكل ما تحتاجه لبدء تجارتك مع سلة مجتمع سلة تبادل الخبرات والتجارب واستلهم طرقًا مميزة للنجاح مدونة سلة وسع دائرة معارفك بالعديد من الموضوعات المثيرة منصة المطورين انضم إلى مجتمع مطوري سلة أكاديمية سلة دورات احترافية تساعدك على نجاحك التجاري أدوات التجار أدوات متكاملة لدعم نمو متجرك الحلول متجر التطبيقات أدوات عديدة لنجاح متجرك صانع التطبيقات اصنع تطبيقًا خاصًا لمتجرك سلة سبيشل حلول تقنية متقدمة لنمو أعمال كبار التجار المدفوعات طرق …

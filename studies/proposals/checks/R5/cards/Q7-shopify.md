@@ -126,7 +126,7 @@
 - note: first run's citation
 
 **Citation SH-S-0546:** `https://help.shopify.com/en/manual/international/payments.md` | Shopify Payments and other payment providers | 2026-10-10 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/036-help.shopify.com/text.txt` (fetched 2026-10-11T06:12:59Z, captured)
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/036-help.shopify.com/text.txt` (4380 bytes), fetched 2026-10-11T06:12:59Z, captured
 - quote: At checkout, the price will be converted to your store's default currency, and your customer will be charged in that currency.
 - title: Payments
 - the page opens: Your market settings include a payments card that displays eligible local payment methods, as well as a link to your payment settings where you can activate and customize a variety of payment methods. Shopify Payments and other payment providers {#other-payment-providers} Only stores with Shopify Payments or Adyen as the primary gateway can process payments in a customer's local currency. The following payment options are compatible with multi-currency processing: * Shopify Payments credit card …
@@ -157,7 +157,7 @@
 
 **Citation Q7-SH-C149:** `observed-sh@c8b5fbee25966372a0475e6ed81f0b7760ac2921:structures/shopify/admin-graphql-schema/2026-10/items.jsonl` | line 2306 (type Order, field presentmentCurrencyCode) | 2026-09-30 | kind: stated | quote check: found
 - quote: {"name": "presentmentCurrencyCode", "type": "CurrencyCode!"}
-- in context: …neItems", "type": "[CalculatedDraftOrderLineItem!]!"}, {"name": "lineItemsSubtotalPrice", "type": "MoneyBag!"}, {"name": "marketName", "type": "String!", "deprecated": "This field is now incompatible with Markets."}, {"name": "marketRegionCountryCode", "type": "CountryCode!", "deprecated": "This field is now incompatible with Markets."}, {"name": "phone", "type": "String"}, {"name": "platformDiscounts", "type": "[DraftOrderPlatformDiscount!]!"}, ⟪{"name": "presentmentCurrencyCode", "type": "CurrencyCode!"}⟫, {"name": "purchasingEntity", "type": "PurchasingEntity"}, {"name": "shippingLine", "type": "ShippingLine"}, {"name": "subtotalPrice", "type": "Money!", "deprecated": "Use `subtotalPriceSet` instead."}, {"name": "subtotalPriceSet", "type": "MoneyBag!"}, {"name": "taxLines", "type": "[TaxLine!]!"}, {"name": "taxesIncluded", "type": "Boolean!"}, {"name": "totalDiscountsSet", "type": "MoneyBag!"}, {"name": "totalLineItemsPriceSet", "type": "MoneyBa…
+- in context: …e": "originalTotalPriceSet", "type": "MoneyBag!"}, {"name": "paymentCollectionDetails", "type": "OrderPaymentCollectionDetails!"}, {"name": "paymentGatewayNames", "type": "[String!]!"}, {"name": "paymentTerms", "type": "PaymentTerms"}, {"name": "phone", "type": "String"}, {"name": "physicalLocation", "type": "Location", "deprecated": "Use `fulfillmentOrders` to get the fulfillment location for the order"}, {"name": "poNumber", "type": "String"}, ⟪{"name": "presentmentCurrencyCode", "type": "CurrencyCode!"}⟫, {"name": "processedAt", "type": "DateTime!"}, {"name": "productNetwork", "type": "Boolean!"}, {"name": "publication", "type": "Publication"}, {"name": "purchasingEntity", "type": "PurchasingEntity"}, {"name": "referralCode", "type": "String", "deprecated": "Use `customerJourneySummary.lastVisit.referralCode` instead"}, {"name": "referrerDisplayText", "type": "String", "deprecated": "Use `customerJourneySummary.lastVisit.referralInfoHtml` instea…
 
 ### Q7-SH-004
 
@@ -658,8 +658,8 @@
 - note: first run's citation
 
 **Citation SH-S-0565:** `https://help.shopify.com/en/manual/international/managed-markets/overview.md` | Flow of funds | 2026-10-10 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/035-help.shopify.com/text.txt` (fetched 2026-10-11T06:12:59Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/028-help.shopify.com/text.txt` (fetched 2026-10-12T10:50:06Z, captured)
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/035-help.shopify.com/text.txt` (13523 bytes), fetched 2026-10-11T06:12:59Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/028-help.shopify.com/text.txt` (13523 bytes), fetched 2026-10-12T10:50:06Z, captured
 - quote: After an international Managed Markets order is placed in your store, Shopify Payments processes the transaction and holds the money in a Global-e account.
 - title: Overview of Managed Markets
 - the page opens: You can use Managed Markets to sell to customers in other countries without registering a business, registering for tax, or arranging customs clearance in each destination. Your customers buy from your store, in your brand's checkout, and pay in their own currency. Their order arrives without a surprise bill at the door. Managed Markets builds on Shopify Markets, the tools built into every store for selling in other countries, including localized domains and store translation. With Shopify Marke…
@@ -681,7 +681,7 @@
 
 **Citation Q7-SH-C156:** `observed-sh@c8b5fbee25966372a0475e6ed81f0b7760ac2921:structures/shopify/admin-graphql-schema/2026-10/items.jsonl` | line 3193 (type ShopifyPaymentsAccount, description) | 2026-09-30 | kind: stated | quote check: found
 - quote: Financial account information for merchants using Shopify Payments. Tracks current balances across all supported currencies, payout schedules, and
-- in context: …String handle String! id String! inputQuery String title String! useCreationUi Boolean! ShopifyFunctionConnection OBJECT An auto-generated type for paginating through multiple ShopifyFunctions. edges [ShopifyFunctionEdge!]! nodes [ShopifyFunction!]! pageInfo PageInfo! ShopifyFunctionEdge OBJECT An auto-generated type which holds one ShopifyFunction and a cursor during pagination. cursor String! node ShopifyFunction! ShopifyPaymentsAccount OBJECT ⟪Financial account information for merchants using Shopify Payments. Tracks current balances across all supported currencies, payout schedules, and⟫ [`ShopifyPaymentsBalanceTransaction`](https://shopify.dev/docs/api/admin-graphql/latest/objects/ShopifyPaymentsBalanceTransaction) records. accountOpenerName String activated Boolean! balance [MoneyV2!]! balanceTransactions ShopifyPaymentsBalanceTransactionConnection! hideTransfers Boolean first Int after String last Int before String reverse Boolean sortKey BalanceTransactionSortKeys query String savedSearchId ID bankAccounts ShopifyPaymentsBan…
+- in context: ShopifyPaymentsAccount OBJECT ⟪Financial account information for merchants using Shopify Payments. Tracks current balances across all supported currencies, payout schedules, and⟫ [`ShopifyPaymentsBalanceTransaction`](https://shopify.dev/docs/api/admin-graphql/latest/objects/ShopifyPaymentsBalanceTransaction) records. accountOpenerName String activated Boolean! balance [MoneyV2!]! balanceTransactions ShopifyPaymentsBalanceTransactionConnection! hideTransfers Boolean first Int after String last Int before String reverse Boolean sortKey BalanceTransactionSortKeys query String savedSearchId ID bankAccounts ShopifyPaymentsBan…
 
 ### Q7-SH-099
 

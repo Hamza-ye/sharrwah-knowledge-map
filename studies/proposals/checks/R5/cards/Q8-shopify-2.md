@@ -1,11 +1,9 @@
 # Cards: Q8 on shopify
 
-23 records cited by `studies/proposals/drafts/Q8/draft.md`, made by `method/r5_cards.py`.
+21 records cited by `studies/proposals/drafts/Q8/draft.md`, made by `method/r5_cards.py`.
 
 ## The points cited
 
-- **section 1, line 45:** - In one step's saved markup on store capture-grow (observed 2 October 2026), once on Shopify's Plus plan after its trial, the store "will move out of the My Store organization into a new organization", carrying over its "payment method and user roles". Q8-SH-109
-- **section 1, line 46:** - All five set a third party's unit apart under that party's terms. Shopify's Third Party Services are "solely between you and" their provider; WooCommerce's "Extensions may have their own requirements"; Salla's third-party services have "أحكامها المستقلة التي تتم بين التاجر وبين الطرف الثالث"; on Zid "الشريك هو المقدم للخدمة"; BigCommerce's Third-Party Products "are governed by their own terms of service". Same role (basis 4; all official pages). Q8-SH-K2169; Q8-WC-K0830; Q8-SA-035; Q8-ZD-K0366; Q8-BC-K0453
 - **section 1, line 48:** - App makers join under an agreement. Shopify's register "for a Partner Account" under the "Partner Program Agreement"; Zid's sign a partnership agreement; BigCommerce's sign "the Commerce Partner Agreement". Same role (basis 4; mixed kinds: Shopify's an official page, the others stated). Q8-SH-K2183; Q8-ZD-018; Q8-BC-062
 - **section 1, line 51:** - App charges go through the platform. On Shopify "Most app charges are billed through Shopify"; on Zid "Any required app-plan payment is completed through Zid before activation becomes available"; BigCommerce's partners have "appointed Commerce as agent for the collection and disbursement of monies". Same role (basis 4; mixed kinds: BigCommerce's an official page, the others stated). Q8-SH-030; Q8-ZD-K0167; Q8-BC-K0168
 - **section 1, line 54:** - Shopify releases API versions every three months, each working for a year; deprecations are "announced in the developer changelog", and an app still using unsupported resources is "delisted from the Shopify App Store". Q8-SH-036; Q8-SH-069; Q8-SH-070
@@ -20,7 +18,6 @@
 - **section 1, line 71:** - One step's saved markup on Shopify's Create a dev store page of organization 238086467 (the run names no store; observed 30 September 2026) holds Basic, Grow, Advanced and Plus as options of a "Shopify plan" field to "Preview plan-specific features". Q8-SH-108
 - **section 1, line 72:** - Shopify's dev stores "can't process transactions"; Salla's developers may make "متاجر تجريبية مجانية بحد أقصى ١٠ متاجر" (a help article one partner session showed on 8 October 2026); Zid's partners "test them on demo stores". Same role (basis 4; Salla's observed, the others stated). Q8-SH-051; Q8-SA-K2405; Q8-ZD-011
 - **section 1, line 73:** - WooCommerce's betas are "Meant to be used by plugin authors and early adopters"; Shopify publishes an API release candidate with each stable version. Q8-WC-056; Q8-SH-068
-- **section 2, line 82:** - A provider's offer may be Sharrwah's own, as BigCommerce's Extension is a Service, or the provider's, as Shopify's Third Party Services are. The kind decides who answers to the merchant, so it is fixed per offer now (rule 3). Q8-BC-K0457; Q8-SH-K2169
 - **section 2, line 96:** - **Release stage**: each offer is hidden (built, not switchable), preview (by invitation, on request or on test stores, marked as such, under preview terms), released (opt-in, or on by default with opt-out), or retired (held at one value, then removed). The stage is a condition of the rule, and moving an offer is a catalogue change, so code ships behind it (rule 2). Q8-WC-025; Q8-WC-011; Q8-WC-013; Q8-SH-111
 - **section 2, line 97:** - It takes WooCommerce's states (shipped) and `released` in one Salla store's answer (store merchant@en, observed 9 October 2026), and for preview Shopify's invitations and BigCommerce's closed betas. Q8-SA-K0052; Q8-SH-060; Q8-BC-K0064
 - **section 2, line 98:** - Whether preview offers fall inside Sharrwah's services, as on BigCommerce, or outside, as on Shopify, is a company decision (section 7). Q8-SH-061; Q8-BC-028
@@ -32,10 +29,8 @@
 - **section 2, line 115:** - **App charges**: listed apps and themes are billed on the merchant's Sharrwah bill, and Sharrwah pays the partner its share after a set period. The app's maker sets its plans, recurring or by use. Q8-SH-030; Q8-ZD-K0167; Q8-ZD-014
 - **section 2, line 119:** - It takes WooCommerce's ordered list per country (shipped), and Shopify's and BigCommerce's contracting party by place and place terms. Q8-SH-K1243; Q8-BC-025
 - **section 2, line 120:** - Why: this is where each place is set up (rule 1). It holds nothing for a place other than Yemen until the founder decides to enter it. Q8-SH-055
-- **section 2, line 121:** - **Account** and **Store**: an account holds one or more stores, with users and billing at the account; each store has its own plan, settings, apps and data, shares none unless linked, and can move to another account with its payment method and user roles. An account above stores, and a store's move between accounts, are costly to add to the data model after launch (rule 3). Q8-SH-046; Q8-SH-047; Q8-SA-050; Q8-SH-109
 - **section 3, line 133:** - Set per platform: terms, extension points, API versions and review rules. Q8-SH-054; Q8-SH-036
 - **section 3, line 137:** - Set per store: plan, add-ons, apps and their scopes, the merchant's switches, and one preview on a dev store. Q8-SA-050; Q8-SH-073
-- **section 3, line 145:** - Set by the provider: its own terms with the merchant. Q8-SH-K2169
 - **section 5, line 164:** - The basis that sets a store's place: Shopify's Store billing address, BigCommerce's domicile, the country of the merchant's documents in one Salla store's set-up (store Store 1, observed 8 October 2026). Keep the place and its basis as recorded fields; a company decision, with a lawyer, settles it. Q8-SH-K1243; Q8-BC-030; Q8-SA-051
 - **section 5, line 165:** - The contracting entity and place terms: keep them as place-profile data, never in code; settled by the company decision on where Sharrwah is based. Q8-BC-025; Q8-SH-K1243
 - **section 5, line 166:** - Preview offers' terms, inside or outside Sharrwah's services: keep a terms reference on each stage; the additional terms Shopify gives for its Beta Services were not in what was read. Settled by a company decision. Q8-SH-061; Q8-BC-028; Q8-SH-N01
@@ -46,46 +41,6 @@
 - **section 7, line 196:** - How many plans, their prices and the currency they are priced in for each place, whether fees grow with sales, and whether one is free. Q8-ZD-001; Q8-BC-002; Q8-SH-110
 
 ## The cards
-
-### Q8-SH-109
-
-**Cited at:** section 1, line 45; section 2, line 121
-
-**Record** (`studies/proposals/records/Q8/shopify/statements.tsv`):
-- stmt_id: Q8-SH-109
-- bears_on: 3
-- identifier: plus_inactive_account:trial:review: Scheduled plan changes
-- statement: Once your trial is over and you are on the Plus plan, this store will move out of the My Store organization into a new organization. Your payment method and user roles for this store will be carried over.
-- scope: store capture-grow, observed 2026-10-02
-- cite_ids: Q8-SH-C116
-- from: held
-- note: in the saved HTML of step 420; the step's aria.yaml shows the same words, with My Store in bold
-
-**Citation Q8-SH-C116:** `observed-sh@51626891aa711ee9c3ef2d05ce63c95396dca949:derived/step-text-from-html/20261002T004032Z-sweep-capture-grow/420.html.txt` | run 20261002T004032Z-sweep-capture-grow, step 420 | 2026-10-02 | kind: observed | quote check: found
-- step 420: visit route plus_inactive_account:trial:review (path from router) | https://admin.shopify.com/store/capture-grow/access_account/plus/trial/review | "Shopify" | 2026-10-02T04:39:42.019Z
-- the step's files: `observed-sh@febbf6c98:raw/runs/20261002T004032Z-sweep-capture-grow/steps/420.aria.yaml`, `observed-sh@febbf6c98:raw/runs/20261002T004032Z-sweep-capture-grow/steps/420.html`, `observed-sh@febbf6c98:derived/step-text-from-html/20261002T004032Z-sweep-capture-grow/420.html.txt`
-- quote: Once your trial is over and you are on the Plus plan, this store will move out of the My Store organization into a new organization. Your payment method and user roles for this store will be carried over.
-- in context: …es government-regulated products like cannabis, alcohol, weapons, or pharmaceuticals. If you think you might, contact sales to complete your plan change. [heading: Payment method] To subscribe to Plus, add a payment method that supports transactions in US Dollar (USD $). Learn about eligible payment methods Add payment method Scheduled plan changes You will automatically roll onto a Plus term with these scheduled changes at the end of the trial. ⟪Once your trial is over and you are on the Plus plan, this store will move out of the My Store organization into a new organization. Your payment method and user roles for this store will be carried over.⟫ Term length Select between a 1- or 3-year term once your 2 month trial ends. [label: Term length] $2,500 x 12 months 1 year $2,300 x 36 months Save $200/mo 3 years Plus trial 2 months $399.00 USD October 2 (Today) Plus trial $399.00 USD $399.00 USD November 30, 2026 1-year Plus term begins $2,500 USD/mo 1 for 12 months After the trial, billing for Plus will switch to the end of each monthly billing cycle. Amount due $399 USD Today plus applicabl…
-
-### Q8-SH-K2169
-
-**Cited at:** section 1, line 46; section 2, line 82; section 3, line 145
-
-**Record** (`studies/proposals/records/Q8/shopify/copied.tsv`):
-- concern_id: SH-C-156
-- placement: responsible
-- structure: https://www.shopify.com/legal/terms
-- identifier: 9.9 Third Party Services and Third Party Partners
-- statement: Such Third Party Services are made available only as a convenience, and your purchase, access or use of any such Third Party Services is solely between you and the applicable third party services provider ("Third Party Provider").
-- cite_ids: SH-S-0058
-- note: first run's citation
-
-**Citation SH-S-0058:** `https://www.shopify.com/legal/terms` | 9.9 Third Party Services and Third Party Partners | 2026-08-01 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/143-shopify.com/text.txt` (fetched 2026-10-11T06:13:11Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/117-shopify.com/text.txt` (fetched 2026-10-12T10:51:23Z, captured)
-- quote: Such Third Party Services are made available only as a convenience, and your purchase, access or use of any such Third Party Services is solely between you and the applicable third party services provider ("Third Party Provider").
-- title: Shopify Terms of Service - Shopify
-- in context: … to us sharing your data (and potentially the data of your customers) to those services. If you use third party services you agree that we do not provide a warranty, so get advice beforehand. Shopify may provide you with access to or enable third party software, applications ("Apps"), products, services or website links (collectively, "Third Party Services") for your consideration or use, including via the Shopify App Store or Partner Directory. ⟪Such Third Party Services are made available only as a convenience, and your purchase, access or use of any such Third Party Services is solely between you and the applicable third party services provider ("Third Party Provider").⟫ In addition to these Terms of Service, you also agree to be bound by the additional service-specific terms applicable to services you purchase from, or that are provided by, Third Party Providers. Your use of Third Party Services is entirely at your own risk and discretion, and it is your responsibility to read the terms and conditions between you and the Third Party Providers. In some instances, Shopify may receive a revenue share from Third Pa…
 
 ### Q8-SH-K2183
 
@@ -101,7 +56,7 @@
 - note: first run's citation
 
 **Citation SH-S-0215:** `https://www.shopify.com/legal/api-terms` | 2. Using the Shopify API | 2026-10-07 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/131-shopify.com/text.txt` (fetched 2026-10-11T06:13:09Z, captured)
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/131-shopify.com/text.txt` (58334 bytes), fetched 2026-10-11T06:13:09Z, captured
 - quote: Developer must obtain an API Client by registering for a Partner Account and agreeing to and complying with the terms and conditions of the Partner Program Agreement
 - title: Shopify API License and Terms of Use - Shopify
 - in context: …ch you use the Shopify API. If you are accessing or using the Shopify API on behalf of an entity, you represent and warrant that you have the authority to bind that entity to the Terms and by accepting the Terms, you are doing so on behalf of that entity (and all references to "you" in the Terms refer to that entity). Except in the case of Private API Credentials or unauthenticated Checkout Kit access, in order to access and use the Shopify API, ⟪Developer must obtain an API Client by registering for a Partner Account and agreeing to and complying with the terms and conditions of the Partner Program Agreement⟫ shopify.com/partners/terms or other written agreement with Shopify relating to Developer's access to and use of the Shopify API and participation in the Partner Program. If you are accessing and using the Shopify API by Private API Credentials, you may only do so with the express authorization of the account owner for the applicable Merchant Store, and only for the purposes of providing your Application's service to the Merchant to whom the Priv…
@@ -164,7 +119,7 @@
 - from: held
 
 **Citation Q8-SH-C073:** `https://shopify.dev/docs/api/usage/versioning.md` | Deprecation practices | 2026-10-11 | kind: stated | quote check: found (markup removed)
-- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/112-shopify.dev/text.txt` (fetched 2026-10-11T06:13:07Z, captured)
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/112-shopify.dev/text.txt` (9218 bytes), fetched 2026-10-11T06:13:07Z, captured
 - quote: When part of a Shopify API becomes unnecessary, unsafe, or outdated, it's deprecated across all supported stable versions and announced in the developer changelog with migration guidance.
 - title: About Shopify API versioning
 - the page opens: Shopify releases new API versions on a predictable quarterly schedule, giving you time to adopt changes before older versions are retired. Each version's release notes list the changes in that version, including anything that requires action. Subscribe to the developer changelog and keep your developer contact details up to date to stay informed about upcoming changes. * Versioned and unversioned APIs Not all Shopify APIs follow the same versioning model. Versioned APIs and libraries follow the …
@@ -184,7 +139,7 @@
 - from: held
 
 **Citation Q8-SH-C074:** `https://shopify.dev/docs/api/usage/versioning.md` | Deprecation practices | 2026-10-11 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/112-shopify.dev/text.txt` (fetched 2026-10-11T06:13:07Z, captured)
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/112-shopify.dev/text.txt` (9218 bytes), fetched 2026-10-11T06:13:07Z, captured
 - quote: If your app continues to use unsupported resources after the upgrade deadline, it's delisted from the Shopify App Store.
 - title: About Shopify API versioning
 - the page opens: Shopify releases new API versions on a predictable quarterly schedule, giving you time to adopt changes before older versions are retired. Each version's release notes list the changes in that version, including anything that requires action. Subscribe to the developer changelog and keep your developer contact details up to date to stay informed about upcoming changes. * Versioned and unversioned APIs Not all Shopify APIs follow the same versioning model. Versioned APIs and libraries follow the …
@@ -207,7 +162,7 @@
 
 **Citation SH-S-7074:** `observed-sh@e49840729:structures/shopify/plan-comparison-public/www.shopify.com_pricing/items.jsonl` | line 100 (row 'Bot protection') | 2026-09-30 | kind: official page | quote check: found
 - quote: {"kind": "row", "section": 1, "position": 96, "cells": [{"tag": "th", "text": "Bot protection", "scope": "row"}, {"tag": "td", "text": "Not included"}, {"tag": "td", "text": "Not included"}, {"tag": "td", "text": "Not included"}, {"tag": "td", "text": "Included"}]}
-- in context: …ences", "scope": "row"}, {"tag": "td", "text": "Not included"}, {"tag": "td", "text": "Not included"}, {"tag": "td", "text": "Not included"}, {"tag": "td", "text": "Included"}]} {"kind": "row", "section": 1, "position": 95, "cells": [{"tag": "th", "text": "Free expansion stores", "scope": "row"}, {"tag": "td", "text": "Not included"}, {"tag": "td", "text": "Not included"}, {"tag": "td", "text": "Not included"}, {"tag": "td", "text": "Up to 9"}]} ⟪{"kind": "row", "section": 1, "position": 96, "cells": [{"tag": "th", "text": "Bot protection", "scope": "row"}, {"tag": "td", "text": "Not included"}, {"tag": "td", "text": "Not included"}, {"tag": "td", "text": "Not included"}, {"tag": "td", "text": "Included"}]}⟫ {"kind": "row", "section": 1, "position": 97, "cells": [{"tag": "th", "text": "Up to 500% higher API call limits", "scope": "row"}, {"tag": "td", "text": "Not included"}, {"tag": "td", "text": "Not included"}, {"tag": "td", "text": "Not included"}, {"tag": "td", "text": "Included"}]} {"kind": "row", "section": 1, "position": 98, "cells": [{"tag": "th", "text": "Test new features before launch", "scope": "row"}, {"tag": "td", "text": "Not include…
+- in context: ⟪{"kind": "row", "section": 1, "position": 96, "cells": [{"tag": "th", "text": "Bot protection", "scope": "row"}, {"tag": "td", "text": "Not included"}, {"tag": "td", "text": "Not included"}, {"tag": "td", "text": "Not included"}, {"tag": "td", "text": "Included"}]}⟫
 
 ### Q8-SH-015
 
@@ -264,8 +219,8 @@
 - from: held
 
 **Citation Q8-SH-C056:** `https://www.shopify.com/legal/terms` | 3. Shopify Rights | 2026-08-01 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/143-shopify.com/text.txt` (fetched 2026-10-11T06:13:11Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/117-shopify.com/text.txt` (fetched 2026-10-12T10:51:23Z, captured)
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/143-shopify.com/text.txt` (84422 bytes), fetched 2026-10-11T06:13:11Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/117-shopify.com/text.txt` (84422 bytes), fetched 2026-10-12T10:51:23Z, captured
 - quote: The Services have a range of features and functionalities. Not all Services or features will be available to all Merchants at all times and we are under no obligation to make any Services or features available in any jurisdiction.
 - title: Shopify Terms of Service - Shopify
 - in context: … make our Services available to and we can modify them at any time. We also have the right to refuse or remove Materials from any part of the Services, including your Store. We may offer our services to your competitors, but we will never share your confidential information with them in doing so. In the event of an ownership dispute over a Shopify Account, we can freeze a Shopify Account or transfer it to the rightful owner, as determined by us. ⟪The Services have a range of features and functionalities. Not all Services or features will be available to all Merchants at all times and we are under no obligation to make any Services or features available in any jurisdiction.⟫ Except where prohibited in these Terms of Service or by applicable law, we reserve the right to modify the Services or any part thereof for any reason, without notice and at any time. It is in Shopify's sole discretion to refuse or remove any Materials from any part of the Services, including if we determine in our sole discretion that the goods or services that you offer through the Services, or the Materials uploaded or posted to the Services,…
@@ -292,8 +247,8 @@
 - from: held
 
 **Citation Q8-SH-C062:** `https://www.shopify.com/legal/terms` | 9.10 Beta Services | 2026-08-01 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/143-shopify.com/text.txt` (fetched 2026-10-11T06:13:11Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/117-shopify.com/text.txt` (fetched 2026-10-12T10:51:23Z, captured)
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/143-shopify.com/text.txt` (84422 bytes), fetched 2026-10-11T06:13:11Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/117-shopify.com/text.txt` (84422 bytes), fetched 2026-10-12T10:51:23Z, captured
 - quote: From time to time, Shopify may, in its sole discretion, invite you to use, on a trial basis, pre-release or beta features that are in development and not yet available to all merchants ("Beta Services").
 - title: Shopify Terms of Service - Shopify
 - in context: …ty Service or your relationship with a Third Party Provider. 9.10 Beta Services Which means Beta Services may be offered from time to time. They are not a part of the regular Services, and they might have errors or change at any time. You use Beta Services at your own risk, and we are not responsible for any losses or harm that might come from using a Beta Service. You may be required to keep your participation in the Beta Services confidential. ⟪From time to time, Shopify may, in its sole discretion, invite you to use, on a trial basis, pre-release or beta features that are in development and not yet available to all merchants ("Beta Services").⟫ Beta Services are not part of the Services, and Beta Services may be subject to additional terms and conditions, which Shopify will provide to you prior to your use of the Beta Services. Such Beta Services and all associated conversations and materials relating thereto will be considered Shopify Confidential Information and subject to the confidentiality provisions in this agreement. Without limiting the generality of the foregoing, you agree th…
@@ -312,8 +267,8 @@
 - from: held
 
 **Citation Q8-SH-C063:** `https://www.shopify.com/legal/terms` | 9.10 Beta Services | 2026-08-01 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/143-shopify.com/text.txt` (fetched 2026-10-11T06:13:11Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/117-shopify.com/text.txt` (fetched 2026-10-12T10:51:23Z, captured)
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/143-shopify.com/text.txt` (84422 bytes), fetched 2026-10-11T06:13:11Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/117-shopify.com/text.txt` (84422 bytes), fetched 2026-10-12T10:51:23Z, captured
 - quote: Beta Services are not part of the Services, and Beta Services may be subject to additional terms and conditions, which Shopify will provide to you prior to your use of the Beta Services.
 - title: Shopify Terms of Service - Shopify
 - in context: … errors or change at any time. You use Beta Services at your own risk, and we are not responsible for any losses or harm that might come from using a Beta Service. You may be required to keep your participation in the Beta Services confidential. From time to time, Shopify may, in its sole discretion, invite you to use, on a trial basis, pre-release or beta features that are in development and not yet available to all merchants ("Beta Services"). ⟪Beta Services are not part of the Services, and Beta Services may be subject to additional terms and conditions, which Shopify will provide to you prior to your use of the Beta Services.⟫ Such Beta Services and all associated conversations and materials relating thereto will be considered Shopify Confidential Information and subject to the confidentiality provisions in this agreement. Without limiting the generality of the foregoing, you agree that you will not make any public statements or otherwise disclose your participation in the Beta Services without Shopify's prior written consent. Shopify makes no representations or warra…
@@ -454,7 +409,7 @@
 - from: held
 
 **Citation Q8-SH-C070:** `https://shopify.dev/docs/api/usage/versioning.md` | version types | 2026-10-11 | kind: stated | quote check: found (markup removed)
-- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/112-shopify.dev/text.txt` (fetched 2026-10-11T06:13:07Z, captured)
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/112-shopify.dev/text.txt` (9218 bytes), fetched 2026-10-11T06:13:07Z, captured
 - quote: * Stable: Recommended for production. Guaranteed not to change for its supported lifetime.
 - title: About Shopify API versioning
 - the page opens: Shopify releases new API versions on a predictable quarterly schedule, giving you time to adopt changes before older versions are retired. Each version's release notes list the changes in that version, including anything that requires action. Subscribe to the developer changelog and keep your developer contact details up to date to stay informed about upcoming changes. * Versioned and unversioned APIs Not all Shopify APIs follow the same versioning model. Versioned APIs and libraries follow the …
@@ -462,14 +417,14 @@
 - in context: … to each API's reference for the exact URL pattern. If you're using an official Shopify library or a Storefront SDK, version configuration is handled for you automatically. API responses include the X-Shopify-API-Version header reflecting the version used to fulfill the request. If it differs from what you requested, your app is targeting an inaccessible version and Shopify has fallen forward to the default. Shopify supports three version types: ⟪* Stable: Recommended for production. Guaranteed not to change for its supported lifetime.⟫ * Release candidate: Published on the same date as the stable release. For example, when 2026-04 releases on April 1, 2026, the 2026-07 release candidate also becomes available. May include backwards-incompatible changes, so not recommended for production. * Unstable: Updated continuously with in-progress changes. Features can be added or removed at any time with no guarantee of release. Use it for early testing only. * Deprecation practices Whe…  (matched markup removed)
 
 **Citation Q8-SH-C071:** `https://shopify.dev/docs/api/usage/versioning.md` | version types | 2026-10-11 | kind: stated | quote check: found (markup removed)
-- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/112-shopify.dev/text.txt` (fetched 2026-10-11T06:13:07Z, captured)
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/112-shopify.dev/text.txt` (9218 bytes), fetched 2026-10-11T06:13:07Z, captured
 - quote: * Release candidate: Published on the same date as the stable release. For example, when 2026-04 releases on April 1, 2026, the 2026-07 release candidate also becomes available. May include backwards-incompatible changes, so not recommended for production.
 - title, opening and note boxes: as for this source's citation above
 - headings: About Shopify API versioning > Making requests to an API version
 - in context: …rary or a Storefront SDK, version configuration is handled for you automatically. API responses include the X-Shopify-API-Version header reflecting the version used to fulfill the request. If it differs from what you requested, your app is targeting an inaccessible version and Shopify has fallen forward to the default. Shopify supports three version types: * Stable: Recommended for production. Guaranteed not to change for its supported lifetime. ⟪* Release candidate: Published on the same date as the stable release. For example, when 2026-04 releases on April 1, 2026, the 2026-07 release candidate also becomes available. May include backwards-incompatible changes, so not recommended for production.⟫ * Unstable: Updated continuously with in-progress changes. Features can be added or removed at any time with no guarantee of release. Use it for early testing only. * Deprecation practices When part of a Shopify API becomes unnecessary, unsafe, or outdated, it's deprecated across all supported stable versions and announced in the developer changelog with migration guidance. Deprecated fields or types are removed in a subsequent release-for examp…  (matched markup removed)
 
 **Citation Q8-SH-C072:** `https://shopify.dev/docs/api/usage/versioning.md` | version types | 2026-10-11 | kind: stated | quote check: found (markup removed)
-- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/112-shopify.dev/text.txt` (fetched 2026-10-11T06:13:07Z, captured)
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/112-shopify.dev/text.txt` (9218 bytes), fetched 2026-10-11T06:13:07Z, captured
 - quote: * Unstable: Updated continuously with in-progress changes. Features can be added or removed at any time with no guarantee of release. Use it for early testing only.
 - title, opening and note boxes: as for this source's citation above
 - headings: About Shopify API versioning > Making requests to an API version

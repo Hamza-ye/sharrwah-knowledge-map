@@ -61,8 +61,8 @@
 - from: held
 
 **Citation Q6-ZD-C013:** `https://zid.sa/ar/legal/terms-conditions/` | الحسابات | 2026-08 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/text.txt` (fetched 2026-10-12T04:53:53Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/text.txt` (fetched 2026-10-12T10:51:26Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/raw.html` (626842 bytes), fetched 2026-10-12T04:53:53Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/raw.html` (626842 bytes), fetched 2026-10-12T10:51:26Z, captured
 - quote: أنت تقر بأنك ذو أهلية قانونية معتبرة شرعًا ونظامًا، وأن عمرك لا يقل عن (18) ثمانية عشر عامًا أو قد بلغت سن الرشد حسب الأنظمة واللوائح ذات العلاقة الخاضعة لها الدولة التي تستخدم منها الخدمة.
 - title: Zid | Create your online store with modern retail services
 - in context: …ه الشروط والأحكام وسياساتنا الأخرى المعمول بها. تحل هذه الشروط والأحكام محل الاتفاقات أو الترتيبات السابقة معك إن وجدت. يحق لنا إنهاء هذه الشروط أو أي من الخدمات المقدمة لك فورًا، أو إيقاف تقديم الخدمة كليًا أو جزئيًا ، في أي وقت ولأي سبب. الحسابات قد تحتاج إلى إنشاء حساب لاستخدام بعض الخدمات. يجب أن تزودنا بمعلومات دقيقة وكاملة ومحدّثة في جميع الأوقات. يُعتبر عدم الالتزام بذلك خرقًا لهذه الشروط، مما قد يؤدي إلى الإنهاء الفوري لحسابك على الخدمة. ⟪أنت تقر بأنك ذو أهلية قانونية معتبرة شرعًا ونظامًا، وأن عمرك لا يقل عن (18) ثمانية عشر عامًا أو قد بلغت سن الرشد حسب الأنظمة واللوائح ذات العلاقة الخاضعة لها الدولة التي تستخدم منها الخدمة.⟫ في حال قيامك بالتسجيل كمؤسسة أو شركة أو أي شكل نظامي آخر، فإن هذه المؤسسة أو الشركة أو الشكل النظامي الآخر يجب أن تتوافر فيه الأهلية القانونية والنظامية والشرعية اللازمة للقيام بأعمال التجارة عبر منصة زد. يجب عليك التسجيل في زد لاستخدام الخدمة والاستفادة منها وذلك عن طريق: (1) كتابة الاسم كما يظهر في الأوراق الرسمية؛ (2) والعنوان الحالي؛ (3) ورقم الجوال وبريد إلكتروني صحيح؛ (4) وأي معلومة مطلوبة في نموذج التسجيل. ويُعد عنوان البريد الإلكتروني ال…
@@ -89,7 +89,7 @@
 - cite_ids: ZD-S-0747
 
 **Citation ZD-S-0747:** `https://help.zid.sa/gcc-merchants/` | مرحلة التسجيل | 2026-08-05 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/128-help.zid.sa/text.txt` (fetched 2026-10-12T04:53:00Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/128-help.zid.sa/text.txt` (6147 bytes), fetched 2026-10-12T04:53:00Z, captured
 - quote: تحديد موقعك أو موقع المخزون.
 - title: زد - مركز المساعدة - إنشاء متجر في زد لمستخدمي دول الخليج
 - the page opens: زد - مركز المساعدة - إنشاء متجر في زد لمستخدمي دول الخليج menu right alt الدخول لمتجرك --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا EN --> الدخول لمتجرك close --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا English --> مركز المساعدة تعرف على زد الرئيسية إنشاء متجر في زد لمستخدمي دول الخليج عن ماذا تبحث ؟ دليل استخدام منصة التاجر الرئيسية --> تعرف على زد --> تعرف على زد إعدادات المتجر --> إعدادات المتجر المنتجات --> التصنيفات --> التصنيفات المنتجات --> المنتجا…
@@ -124,8 +124,8 @@
 - cite_ids: ZD-S-0727
 
 **Citation ZD-S-0727:** `https://zid.sa/ar/legal/terms-conditions/` | النظام الحاكم وآلية حسم النزاعات | 2026-08 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/text.txt` (fetched 2026-10-12T04:53:53Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/text.txt` (fetched 2026-10-12T10:51:26Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/raw.html` (626842 bytes), fetched 2026-10-12T04:53:53Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/raw.html` (626842 bytes), fetched 2026-10-12T10:51:26Z, captured
 - quote: تخضع هذه الشروط والأحكام لأنظمة وقوانين المملكة العربية السعودية، وفي حال نشوء أي نزاع بين التاجر وزد أو فيما يتعلق بها (بما في ذلك النزاع المتعلق بأي التزامات غير تعاقدية ناشئة عنها أو فيما يتعلق بها) يجب حله وديًا من خلال التسوية الودية.
 - title: Zid | Create your online store with modern retail services
 - in context: …ل على إذن كتابي صريح من زد. لا يحق للتاجر شراء محرك بحث أو كلمات دلالية أخرى تتيح الدفع بالنقر (مثل Google AdWords) أو أسماء المُعرفات التي تستخدم علامات زد أو زد و / أو الأشكال المختلفة والكتابات المُحرفة بغرض التلاعب. ستكون شروط الاستخدام متاحة باللغتين العربية والإنجليزية. في حال وجود أي تضارب أو تناقض بين شروط الاستخدام الإنجليزية وشروط الاستخدام المتوفرة باللغة العربية، فإن النسخة العربية هي النسخة المعتمدة. النظام الحاكم وآلية حسم النزاعات ⟪تخضع هذه الشروط والأحكام لأنظمة وقوانين المملكة العربية السعودية، وفي حال نشوء أي نزاع بين التاجر وزد أو فيما يتعلق بها (بما في ذلك النزاع المتعلق بأي التزامات غير تعاقدية ناشئة عنها أو فيما يتعلق بها) يجب حله وديًا من خلال التسوية الودية.⟫ إذا لم يتم تسوية النزاع وديًا خلال (30) ثلاثين يومًا من تاريخ قيام أي من الطرفين بإرسال إشعار كتابي إلى الطرف الآخر، يُحال النزاع لتسويته عبر المحاكم المختصة. لن يعتبر فشلنا في تطبيق أي حق أو حكم من هذه الشروط تنازلاً عن هذه الحقوق. إذا اعتبرت المحكمة أن أي حكم من هذه الشروط غير صالح أو غير قابل للتنفيذ، فستظل الأحكام المتبقية من هذه الشروط سارية. تُشكل هذه الشروط الاتفاقية الكاملة بيننا بخصوص الخدمة، وتحل محل أي اتفاقيات سابقة قد تكون بيننا فيم…
@@ -144,8 +144,8 @@
 - from: held
 
 **Citation Q6-ZD-C039:** `https://zid.sa/ar/legal/terms-conditions/` | زد باي > الشروط والأحكام:( السعودية) > الأنشطة المحظورة | 2026-08 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/text.txt` (fetched 2026-10-12T04:53:53Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/text.txt` (fetched 2026-10-12T10:51:26Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/raw.html` (626842 bytes), fetched 2026-10-12T04:53:53Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/raw.html` (626842 bytes), fetched 2026-10-12T10:51:26Z, captured
 - quote: التاجر  أو المستفيد النهائي ( الشريك في عملية البيع والشراء) الذي يقطن في البلدان الخاضعة للعقوبات الدولية تتضمن (إيران، سوريا، جنوب السودان، كوبا، ارتريا، جمهورية أفريقيا الوسطى) وما إلى ذلك.
 - title: Zid | Create your online store with modern retail services
 - in context: …عقوبات الدولية، تتضمن (إيران، سوريا، جنوب السودان، كوبا، ارتريا، جمهورية افريقيا الوسطى) وما إلى ذلك. التجار الذين لا يقدموا أي معلومات كافية للتحقق من هوياتهم، أو هوية المستفيد النهائي. التاجر أو المستفيد النهائي (الشريك في عملية البيع والشراء) الذين طبقت عليهم عقوبات بناء على قرارات الأمم المتحدة، أو وزارة الخزانة الإنجليزية، أو الاتحاد الأوروبي، أو مكتب مراقبة الأصول الأجنبية، أو من هو مطالب للامتثال إذا كان الاسم مطابق لأي قائمة عقوبات أخرى. ⟪التاجر أو المستفيد النهائي ( الشريك في عملية البيع والشراء) الذي يقطن في البلدان الخاضعة للعقوبات الدولية تتضمن (إيران، سوريا، جنوب السودان، كوبا، ارتريا، جمهورية أفريقيا الوسطى) وما إلى ذلك.⟫ التجار مقدمي الخدمات المالية بدون موافقة البنك المركزي على سبيل المثال (الاستثمارات المالية غير المصرح بها، شركات التداول، تجميع الأموال أو الحوالات وخلافه). الجمعيات الخيرية والمنظمات غير الربحية غير المعتمدة من الجهات المعنية في المملكة العربية السعودية. الحسابات المجهولة والمسجلة بأسماء وهمية. الحسابات المرقمة التي يتعرف على مالكها بواسطة رقم بدلاً عن الأسماء. التجار الذين لم تكتمل إجراءات التحقق الواجبة عنهم أو لا يمكن التحري عنهم نظرًا لعدم…
@@ -164,8 +164,8 @@
 - from: held
 
 **Citation Q6-ZD-C040:** `https://zid.sa/ar/legal/terms-conditions/` | زد باي > الشروط والأحكام:( الكويت) > الأنشطة المحظورة | 2026-08 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/text.txt` (fetched 2026-10-12T04:53:53Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/text.txt` (fetched 2026-10-12T10:51:26Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/raw.html` (626842 bytes), fetched 2026-10-12T04:53:53Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/raw.html` (626842 bytes), fetched 2026-10-12T10:51:26Z, captured
 - quote: التاجر  أو المستفيد النهائي ( الشريك في عملية البيع والشراء) الذي يقطن في البلدان الخاضعة للعقوبات الدولية تتضمن (إيران، سوريا، روسيا، السودان، كوبا، ارتريا،جزيرة القرم ، جمهورية أفريقيا الوسطى، كوريا الشمالية، اليمن، العراق، اوكرانيا)  وما إلى ذلك.
 - title: Zid | Create your online store with modern retail services
 - in context: …ا، ارتريا،جزيرة القرم ، جمهورية افريقيا الوسطى، كوريا الشمالية، اليمن، العراق، اوكرانيا) وما إلى ذلك. التجار الذين لا يقدموا أي معلومات كافية للتحقق من هوياتهم، أو هوية المستفيد النهائي. التاجر أو المستفيد النهائي (الشريك في عملية البيع والشراء) الذين طبقت عليهم عقوبات بناء على قرارات الأمم المتحدة، أو وزارة الخزانة الإنجليزية، أو الاتحاد الأوروبي، أو مكتب مراقبة الأصول الأجنبية، أو من هو مطالب للامتثال إذا كان الاسم مطابق لأي قائمة عقوبات أخرى. ⟪التاجر أو المستفيد النهائي ( الشريك في عملية البيع والشراء) الذي يقطن في البلدان الخاضعة للعقوبات الدولية تتضمن (إيران، سوريا، روسيا، السودان، كوبا، ارتريا،جزيرة القرم ، جمهورية أفريقيا الوسطى، كوريا الشمالية، اليمن، العراق، اوكرانيا) وما إلى ذلك.⟫ التجار مقدمي الخدمات المالية بدون موافقة البنك المركزي على سبيل المثال (الاستثمارات المالية غير المصرح بها، شركات التداول، تجميع الأموال أو الحوالات وخلافه). الحسابات المجهولة والمسجلة بأسماء وهمية. الحسابات المرقمة التي يتعرف على مالكها بواسطة رقم بدلاً عن الأسماء. التجار الذين لم تكتمل إجراءات التحقق الواجبة عنهم أو لا يمكن التحري عنهم نظرًا لعدم اليقين أو الغموض في المعلومات المتوفرة عنهم. تجارة السجائر والسجائر الإلكترونية وجميع منتجات ومستل…
@@ -183,8 +183,8 @@
 - cite_ids: ZD-S-0755
 
 **Citation ZD-S-0755:** `https://help.zid.sa/zid-faqs/%d9%87%d9%84-%d9%8a%d8%b4%d8%aa%d8%b1%d8%b7-%d9%88%d8%ac%d9%88%d8%af-%d8%b3%d8%ac%d9%84-%d8%aa%d8%ac%d8%a7%d8%b1%d9%8a-%d9%84%d9%84%d8%aa%d8%b3%d8%ac%d9%8a%d9%84-%d9%81%d9%8a-%d8%b2%d8%af-%d9%88%d8%a7/` | answer | 2026-09-24 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/178-help.zid.sa/text.txt` (fetched 2026-10-12T04:53:50Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/071-help.zid.sa/text.txt` (fetched 2026-10-12T10:50:47Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/178-help.zid.sa/text.txt` (3039 bytes), fetched 2026-10-12T04:53:50Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/071-help.zid.sa/text.txt` (3039 bytes), fetched 2026-10-12T10:50:47Z, captured
 - quote: لا، لا يشترط وجود سجل تجاري للمتجر إلا إن كنت ترغب بربط المتجر ببوابات الدفع لتوفير خدمات الدفع مثل مدى، فيزا ، ماستر كارد، آبل بي (Apple Pay)، وحساب سداد
 - title: هل يشترط وجود سجل تجاري للتسجيل في زد والاستفادة من خدماته؟ - زد - مركز المساعدة
 - the page opens: هل يشترط وجود سجل تجاري للتسجيل في زد والاستفادة من خدماته؟ - زد - مركز المساعدة menu right alt الدخول لمتجرك --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا EN --> الدخول لمتجرك close --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا English --> مركز المساعدة هل يشترط وجود سجل تجاري للتسجيل في زد والاستفادة من خدماته؟ عن ماذا تبحث ؟ دليل استخدام منصة التاجر الرئيسية --> تعرف على زد --> تعرف على زد إعدادات المتجر --> إعدادات المتجر المنتجات --> التصنيفات --> التصن…
@@ -211,8 +211,8 @@
 - cite_ids: ZD-S-0775
 
 **Citation ZD-S-0775:** `https://help.zid.sa/nafath_verification/` | intro | 2026-08-06 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/140-help.zid.sa/text.txt` (fetched 2026-10-12T04:53:12Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/064-help.zid.sa/text.txt` (fetched 2026-10-12T10:50:40Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/140-help.zid.sa/text.txt` (4982 bytes), fetched 2026-10-12T04:53:12Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/064-help.zid.sa/text.txt` (4982 bytes), fetched 2026-10-12T10:50:40Z, captured
 - quote: لتفعيل زد باي و استقبال عمليات الدفع الإلكتروني يشترط لمالك المتجر اجتياز التحقق من نفاذ.
 - title: زد - مركز المساعدة - اجتياز التحقق من نفاذ
 - the page opens: زد - مركز المساعدة - اجتياز التحقق من نفاذ menu right alt الدخول لمتجرك --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا EN --> الدخول لمتجرك close --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا English --> مركز المساعدة الرئيسية الرئيسية اجتياز التحقق من نفاذ عن ماذا تبحث ؟ دليل استخدام منصة التاجر الرئيسية --> تعرف على زد --> تعرف على زد إعدادات المتجر --> إعدادات المتجر المنتجات --> التصنيفات --> التصنيفات المنتجات --> المنتجات إدارة المخزون --> إدارة المخزون…
@@ -248,7 +248,7 @@
 - cite_ids: ZD-S-0610
 
 **Citation ZD-S-0610:** `https://help.zid.sa/gcc-merchants/` | طريقة الدفع | 2026-08-05 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/128-help.zid.sa/text.txt` (fetched 2026-10-12T04:53:00Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/128-help.zid.sa/text.txt` (6147 bytes), fetched 2026-10-12T04:53:00Z, captured
 - quote: يمكنك تفعيل بوابة الدفع تاب من خلال الاعدادات > طرق الدفع
 - title: زد - مركز المساعدة - إنشاء متجر في زد لمستخدمي دول الخليج
 - the page opens: زد - مركز المساعدة - إنشاء متجر في زد لمستخدمي دول الخليج menu right alt الدخول لمتجرك --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا EN --> الدخول لمتجرك close --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا English --> مركز المساعدة تعرف على زد الرئيسية إنشاء متجر في زد لمستخدمي دول الخليج عن ماذا تبحث ؟ دليل استخدام منصة التاجر الرئيسية --> تعرف على زد --> تعرف على زد إعدادات المتجر --> إعدادات المتجر المنتجات --> التصنيفات --> التصنيفات المنتجات --> المنتجا…
@@ -268,8 +268,8 @@
 - cite_ids: ZD-S-0693
 
 **Citation ZD-S-0693:** `https://help.zid.sa/about-zid-financing/` | متطلبات التقديم | 2026-08-13 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/081-help.zid.sa/text.txt` (fetched 2026-10-12T04:52:13Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/046-help.zid.sa/text.txt` (fetched 2026-10-12T10:50:22Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/081-help.zid.sa/text.txt` (4437 bytes), fetched 2026-10-12T04:52:13Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/046-help.zid.sa/text.txt` (4437 bytes), fetched 2026-10-12T10:50:22Z, captured
 - quote: الدولة : متاح لتجار المملكة العربية السعودية فقط.
 - title: زد - مركز المساعدة - عن تمويل زد ( لوحة التحكم الجديدة )
 - the page opens: زد - مركز المساعدة - عن تمويل زد ( لوحة التحكم الجديدة ) menu right alt الدخول لمتجرك --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا EN --> الدخول لمتجرك close --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا English --> مركز المساعدة تمويل زد تمويل زد عن تمويل زد ( لوحة التحكم الجديدة ) عن ماذا تبحث ؟ دليل استخدام منصة التاجر الرئيسية --> تعرف على زد --> تعرف على زد إعدادات المتجر --> إعدادات المتجر المنتجات --> التصنيفات --> التصنيفات المنتجات --> المنتجات إدا…
@@ -296,7 +296,7 @@
 - from: held
 
 **Citation Q6-ZD-C028:** `https://help.zid.sa/zid-faqs/%d8%b2%d8%af-%d9%8a%d8%ae%d8%af%d9%85-%d8%a7%d9%84%d8%aa%d8%ac%d8%a7%d8%b1-%d9%81%d9%8a-%d8%a7%d9%84%d8%b3%d8%b9%d9%88%d8%af%d9%8a%d8%a9-%d9%81%d9%82%d8%b7%d8%9f-%d9%87%d9%84-%d9%8a%d8%ae%d8%af%d9%85/` | زد يخدم التجار في السعودية فقط؟ هل يخدم الخليج؟ | 2023-08-30 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/175-help.zid.sa/text.txt` (fetched 2026-10-12T04:53:47Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/175-help.zid.sa/text.txt` (2402 bytes), fetched 2026-10-12T04:53:47Z, captured
 - quote: في المستقبل باذن الله نتوسع للعالم العربي.
 - title: زد يخدم التجار في السعودية فقط؟ هل يخدم الخليج؟ - زد - مركز المساعدة
 - the page opens: زد يخدم التجار في السعودية فقط؟ هل يخدم الخليج؟ - زد - مركز المساعدة menu right alt الدخول لمتجرك --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا EN --> الدخول لمتجرك close --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا English --> مركز المساعدة زد يخدم التجار في السعودية فقط؟ هل يخدم الخليج؟ عن ماذا تبحث ؟ دليل استخدام منصة التاجر الرئيسية --> تعرف على زد --> تعرف على زد إعدادات المتجر --> إعدادات المتجر المنتجات --> التصنيفات --> التصنيفات المنتجات --> المنتج…
@@ -315,7 +315,7 @@
 - cite_ids: ZD-S-0741
 
 **Citation ZD-S-0741:** `https://zid.sa/llms.txt` | ## Other countries | 2026-10-12 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/201-zid.sa/text.txt` (fetched 2026-10-12T04:54:07Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/201-zid.sa/text.txt` (11798 bytes), fetched 2026-10-12T04:54:07Z, captured
 - quote: - [Egypt](https://zid.sa/en/egypt/) - [UAE](https://zid.sa/en/uae/) - [Kuwait](https://zid.sa/en/kuwait/) - [Oman](https://zid.sa/en/oman/) - [Syria](https://zid.sa/en/syria/)
 - title: زد (Zid)
 - in context: …rs/medium-business/) - [Large business](https://zid.sa/en/customers/large-business/) - [Coffee](https://zid.sa/en/sectors/coffee/): For roasteries and specialty coffee - [Beauty and care](https://zid.sa/en/sectors/beauty-care/): For beauty brands that turn heads - [Food](https://zid.sa/en/sectors/food/): Dates, meat, nuts and other food brands - [Honey](https://zid.sa/en/sectors/honey/): For apiaries and specialty honey stores ## Other countries ⟪- [Egypt](https://zid.sa/en/egypt/) - [UAE](https://zid.sa/en/uae/) - [Kuwait](https://zid.sa/en/kuwait/) - [Oman](https://zid.sa/en/oman/) - [Syria](https://zid.sa/en/syria/)⟫ ## Help and learning - [Help center](https://help.zid.sa/): Merchant platform user guide - [Zid Academy](https://academy.zid.sa/): E-commerce courses - [Guides](https://zid.sa/en/guides/): Starting and growing an online business - [Reports](https://zid.sa/en/reports/): Saudi e-commerce market reports - [Blog](https://zid.sa/en/blog/) - [Partners and developers](https://zid.sa/en/partners/): Offer services or apps to Zid merchants
@@ -333,7 +333,7 @@
 - from: held
 
 **Citation Q6-ZD-C029:** `https://docs.zid.sa/create-cashback-rule-42661790e0.md` | Note | 2026-10-12 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/016-docs.zid.sa/text.txt` (fetched 2026-10-12T04:51:14Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/016-docs.zid.sa/text.txt` (22244 bytes), fetched 2026-10-12T04:51:14Z, captured
 - quote: Customer Wallet APIs are available only for stores using one of the following currencies: `SAR`, `AED`, `QAR`, `KWD`, `BHD`, or `OMR`.
 - title: Create Cashback Rule
 - the page opens: OpenAPI Specification yaml openapi: 3.0.1 info: title: '' description: '' version: 1.0.0 paths: /v1/customer-wallets/cashback-rules/: post: summary: Create Cashback Rule deprecated: false description: > Creates a new cashback rule for the store. third_customer_wallet_write - Customer Wallet Write:::info[] Note Customer Wallet APIs are available only for stores using one of the following currencies: SAR, AED, QAR, KWD, BHD, or OMR. Stores using any other currency receive the message: Customer wal…
@@ -341,7 +341,7 @@
 - in context: # Create Cashback Rule ## OpenAPI Specification ```yaml openapi: 3.0.1 info: title: '' description: '' version: 1.0.0 paths: /v1/customer-wallets/cashback-rules/: post: summary: Create Cashback Rule deprecated: false description: > Creates a new cashback rule for the store. <Accordion title="🔑Scopes" defaultOpen> `third_customer_wallet_write` - Customer Wallet Write </Accordion> :::info[] ## Note ⟪Customer Wallet APIs are available only for stores using one of the following currencies: `SAR`, `AED`, `QAR`, `KWD`, `BHD`, or `OMR`.⟫ Stores using any other currency receive the message: `Customer wallets is only available for GCC countries.` ::: :::warning[] ## Note This API requires prior approval before use. Only approved use cases are allowed to access `Customer Wallet write` operations. Approval is reviewed as part of the `app review` process. ::: :::note[] ## Note Provide exactly one of `cashback_amount `or `cashback_percentage`. Providing both fields or neither field ca…
 
 **Citation Q6-ZD-C030:** `https://docs.zid.sa/create-cashback-rule-42661790e0.md` | Note | 2026-10-12 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/016-docs.zid.sa/text.txt` (fetched 2026-10-12T04:51:14Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/016-docs.zid.sa/text.txt` (22244 bytes), fetched 2026-10-12T04:51:14Z, captured
 - quote: Stores using any other currency receive the message: `Customer wallets is only available for GCC countries.`
 - title, opening and note boxes: as for this source's citation above
 - headings: Create Cashback Rule > OpenAPI Specification

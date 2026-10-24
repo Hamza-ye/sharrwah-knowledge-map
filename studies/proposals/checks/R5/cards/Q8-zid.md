@@ -65,7 +65,7 @@
 - from: held
 
 **Citation Q8-ZD-C001:** `https://zid.sa/llms.txt` | # Zid — English (opening paragraph) | 2026-10-12 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/201-zid.sa/text.txt` (fetched 2026-10-12T04:54:07Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/201-zid.sa/text.txt` (11798 bytes), fetched 2026-10-12T04:54:07Z, captured
 - quote: Zid is a Saudi e-commerce platform for creating and running an online store. It covers the online store, point of sale (POS), payments, shipping, inventory, marketing and selling on marketplaces, all from one dashboard. Merchants can start on a free-forever plan and upgrade as they grow.
 - title: زد (Zid)
 - headings: زد (Zid)
@@ -84,7 +84,7 @@
 - from: held
 
 **Citation Q8-ZD-C015:** `https://help.zid.sa/subscription/` | الإضافات | 2026-08-05 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/161-help.zid.sa/text.txt` (fetched 2026-10-12T04:53:33Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/161-help.zid.sa/text.txt` (5939 bytes), fetched 2026-10-12T04:53:33Z, captured
 - quote: من خلال الخصائص الإضافية ستتمكن من شراء ميزات جديدة تعزز إدارة متجرك وتساهم في زيادة مبيعاتك وتحسين تحليلاتك ومبيعاتك، قم بالضغط على تصفح الإضافات لشراء الإضافة المناسبة لك ولاحتياج متجرك
 - title: زد - مركز المساعدة - إدارة الاشتراك ( لوحة التحكم الجديدة )
 - the page opens: زد - مركز المساعدة - إدارة الاشتراك ( لوحة التحكم الجديدة ) menu right alt الدخول لمتجرك --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا EN --> الدخول لمتجرك close --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا English --> مركز المساعدة الرئيسية الرئيسية إدارة الاشتراك ( لوحة التحكم الجديدة ) عن ماذا تبحث ؟ دليل استخدام منصة التاجر الرئيسية --> تعرف على زد --> تعرف على زد إعدادات المتجر --> إعدادات المتجر المنتجات --> التصنيفات --> التصنيفات المنتجات --> المنتج…
@@ -104,8 +104,8 @@
 - cite_ids: ZD-S-0533
 
 **Citation ZD-S-0533:** `https://zid.sa/ar/legal/zidpay-terms-conditions-sa/` | opening | 2025-01-21 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/189-zid.sa/text.txt` (fetched 2026-10-12T04:53:55Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/124-zid.sa/text.txt` (fetched 2026-10-12T10:51:28Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/189-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/189-zid.sa/raw.html` (223074 bytes), fetched 2026-10-12T04:53:55Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/124-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T104936Z-s01-sources/items/124-zid.sa/raw.html` (223074 bytes), fetched 2026-10-12T10:51:28Z, captured
 - quote: تمثل الشروط والأحكام المذكورة أدناه العقد المبرم بين مستخدمي زد باي وشركة زد.
 - title: Zid | Create your online store with modern retail services
 - in context: … زد ما الجديد؟ المدونةتعرف على كل جديد في عالم التجارة الإلكترونية تمكين التاجر تمكين التجارفريق جاهز لتمكين نموك مجتمع التجاركن مع تجار يفهموك ويشبهون طموحك أكاديمية زدتعلّم أحدث طرق واستراتيجيات التجارة مكتبة زد تقارير زد كل ما تحتاج معرفته عن السوق أدلة زدأدلة متكاملة للبدء والنمو في التجارة الإلكترونية الانتقال إلى زد زد x سلة زد x شوبيفاي زد x أوبن كارت زد x ماجنتو زد x ووردبريس EN تسجيل الدخول أنشئ متجرك شروط وأحكام زد باي الشروط والأحكام: ⟪تمثل الشروط والأحكام المذكورة أدناه العقد المبرم بين مستخدمي زد باي وشركة زد.⟫ التعريفات: زد باي: هي خدمة تمكين التاجر من تنفيذ عمليات البيع والتجارة الإلكترونية من خلال مقدمي خدمات الدفع على منصة تابعة لزد، ويشار إليها -أيضًا- في هذه الشروط والأحكام ب (" زد باي، أو الخدمة"). تفعيل الخدمة: وهي عملية طلب التاجر لتفعيل خدمة زد باي. التاجر: هو المستخدم المشترك في زد باي، والمالك لمتجر على منصة زد. الشروط العامة: يمكن فقط للشركات، والمؤسسات، والأشخاص، والمنظمات المسموح لهم إجراء عمليات دفع واستلام أموال داخل بلادهم من الجهات ا…
@@ -123,7 +123,7 @@
 - from: live
 
 **Citation Q8-ZD-C034:** `https://changelog.zid.sa/ar` | المنتجات ١٨, ١٠, ٢٠٢٦: كل سوق وله منتجاته وأسعاره | 2026-10-19 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261019T052117Z-proposals-Q8-zid-ar/items/001-changelog.zid.sa/text.txt` (fetched 2026-10-19T05:21:17Z, captured)
+- captured: `evidence/product-class/runs/20261019T052117Z-proposals-Q8-zid-ar/items/001-changelog.zid.sa/text.txt` (6907 bytes), fetched 2026-10-19T05:21:17Z, captured
 - quote: مع أسواق زد، تقدر تخصص المنتجات والأسعار حسب السوق المستهدف، وتديرها كلها من متجر واحد، بدون الحاجة لمتاجر منفصلة.
 - title: تحديثات زد
 - in context: اشترك لتتلقى التحديثات تحديثات زد المنصة الموثوقة والمتكاملة للتجارة الإلكترونية المنتجات ١٨, ١٠, ٢٠٢٦ كل سوق وله منتجاته وأسعاره.. وأنت تتحكم تبيع في أكثر من سوق؟ مو شرط كل المنتجات تناسب عملائك في كل مكان، ولا أسعارها تكون نفسها. ⟪مع أسواق زد، تقدر تخصص المنتجات والأسعار حسب السوق المستهدف، وتديرها كلها من متجر واحد، بدون الحاجة لمتاجر منفصلة.⟫ والأهم؟ إدارة أسهل ووقت أقل في التعديلات: اعرض المنتجات المناسبة: أضف منتجاتك، وانشر أو أخفِ مجموعة منها دفعة وحدة، عشان تعرض لعملائك المنتجات المناسبة لهم. خصص أسعارك بسهولة: عدّل الأسعار من صفحة واحدة، وانسخ السعر وطبّقه على صف كامل مثل Excel، بدل تعديل كل منتج لحاله. تابع حالة منتجاتك: اعرف المنشور والمخفي والمنتجات اللي ما تحدد لها سعر وتنخفى تلقائيًا، عشان تنتبه للي يحتاج تعديل قبل عرضه للعملاء. ويبدأ متجرك بسوق رئيسي تلقائيًا، وتقدر تضيف أ…
@@ -141,7 +141,7 @@
 - cite_ids: ZD-S-0893
 
 **Citation ZD-S-0893:** `https://docs.zid.sa/zid-apps-overview.md` | Subscription Apps | 2026-10-12 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/072-docs.zid.sa/text.txt` (fetched 2026-10-12T04:52:10Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/072-docs.zid.sa/text.txt` (4427 bytes), fetched 2026-10-12T04:52:10Z, captured
 - quote: Private apps:** Apps intended for specific stores only. They are not listed in the Zid App Market and can only be installed by stores explicitly granted access.
 - title: 🗂️ Overview
 - the page opens: Zid offers a strong platform for partners to develop applications that enhance the functionality of online stores. Understanding the different types of apps in Zid is essential for developers aiming for successful integrations. This article provides an overview of the app types supported by Zid, the development process, and the publishing options. App Types When you develop an app in Zid, you must decide whether it will be public or private. These options determine how the app is published and w…
@@ -161,7 +161,7 @@
 - cite_ids: ZD-S-0884
 
 **Citation ZD-S-0884:** `https://docs.zid.sa/embedded-apps-2168216m0.md` | intro | 2026-10-12 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/023-docs.zid.sa/text.txt` (fetched 2026-10-12T04:51:21Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/023-docs.zid.sa/text.txt` (7010 bytes), fetched 2026-10-12T04:51:21Z, captured
 - quote: These applications are integrated directly into the dashboard through an iframe, allowing merchants to access and interact with your app without leaving the Zid Merchant Dashboard.
 - title: Embedded Apps
 - the page opens: Developer Guide Embedded Apps within the Merchant Dashboard offer a seamless integration experience for both Merchants and Zid Partners. These applications are integrated directly into the dashboard through an iframe, allowing merchants to access and interact with your app without leaving the Zid Merchant Dashboard. Benefits for Partners * Seamless Integration: Embed your app within Zid Merchant Dashboard for a unified merchant experience. * Enhanced Visibility: Increase app exposure and engagem…
@@ -181,8 +181,8 @@
 - cite_ids: ZD-S-0694
 
 **Citation ZD-S-0694:** `https://help.zid.sa/about-zid-financing/` | متطلبات التقديم | 2026-08-13 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/081-help.zid.sa/text.txt` (fetched 2026-10-12T04:52:13Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/046-help.zid.sa/text.txt` (fetched 2026-10-12T10:50:22Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/081-help.zid.sa/text.txt` (4437 bytes), fetched 2026-10-12T04:52:13Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/046-help.zid.sa/text.txt` (4437 bytes), fetched 2026-10-12T10:50:22Z, captured
 - quote: بوابة الدفع: تفعيل واعتماد زد باي.
 - title: زد - مركز المساعدة - عن تمويل زد ( لوحة التحكم الجديدة )
 - the page opens: زد - مركز المساعدة - عن تمويل زد ( لوحة التحكم الجديدة ) menu right alt الدخول لمتجرك --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا EN --> الدخول لمتجرك close --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا English --> مركز المساعدة تمويل زد تمويل زد عن تمويل زد ( لوحة التحكم الجديدة ) عن ماذا تبحث ؟ دليل استخدام منصة التاجر الرئيسية --> تعرف على زد --> تعرف على زد إعدادات المتجر --> إعدادات المتجر المنتجات --> التصنيفات --> التصنيفات المنتجات --> المنتجات إدا…
@@ -209,8 +209,8 @@
 - cite_ids: ZD-S-0865
 
 **Citation ZD-S-0865:** `https://zid.sa/ar/legal/terms-conditions/` | سوق تطبيقات زد: آلية التنفيذ وحدود المسؤولية | 2026-08 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/text.txt` (fetched 2026-10-12T04:53:53Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/text.txt` (fetched 2026-10-12T10:51:26Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/raw.html` (626842 bytes), fetched 2026-10-12T04:53:53Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/raw.html` (626842 bytes), fetched 2026-10-12T10:51:26Z, captured
 - quote: يفهم التاجر ويوافق على أن الشريك هو المقدم للخدمة وأن علاقته بالشريك مستقلة عن علاقته بزد، وأن زد مجرد مقدم لحلول الربط التقني للاستفادة من سوق تطبيقات زد حسب التعريف الوارد أعلاه فى بند التعريفات.
 - title: Zid | Create your online store with modern retail services
 - in context: …يفات شريك سوق تطبيقات زد: هو المطور التقني الذي يملك تطبيق في سوق تطبيقات زد ليقدم خدمات وحلول برمجية لمساعدة التجار في إدارة متاجرهم الالكترونية. التطبيقات: هي جمع تطبيق، وهي خدمة برمجية يوفرها الشريك في سوق تطبيقات زد. سوق تطبيقات زد: هي منصة مملوكة لزد توفر حلول الربط التقني بين التاجر والشريك، وذلك لتمكين التاجر من ربط متجره بأحد تطبيقات المعروضة في خدمة سوق تطبيقات زد، وذلك لمساعدته في إدارة عمليات متجره بسهولة. آلية التنفيذ وحدود المسؤولية ⟪يفهم التاجر ويوافق على أن الشريك هو المقدم للخدمة وأن علاقته بالشريك مستقلة عن علاقته بزد، وأن زد مجرد مقدم لحلول الربط التقني للاستفادة من سوق تطبيقات زد حسب التعريف الوارد أعلاه فى بند التعريفات.⟫ يفهم التاجر ويوافق على تحمله مسؤولية مشاركة بيانات المتجر مع الشريك بعد تثبيت تطبيق الخدمة وإعطاءه صلاحيات النطاقات المطلوبة بحسب طبيعة الخدمة المقدمة. أي مطالبات مالية مستحقة أو تعويضية، بين التاجر والشريك ناتجة عن تفعيله للخدمة، فإنها تنحصر بين التاجر والشريك، ولا تكون زد طرفا فيها بأي شكل من الأشكال. يفهم التاجر ويوافق على أن التطبيقات الخاصة المقدمة من الشركاء عبر سوق التطبيقات للمتجر المعني يدار ويُتحكم بها بشكل كامل من قبل الشريك المعني. ل…
@@ -228,14 +228,14 @@
 - from: held
 
 **Citation Q8-ZD-C025:** `https://docs.zid.sa/create-first-app.md` | ## Request App Publish | 2026-10-12 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/018-docs.zid.sa/text.txt` (fetched 2026-10-12T04:51:16Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/018-docs.zid.sa/text.txt` (12426 bytes), fetched 2026-10-12T04:51:16Z, captured
 - quote: ✅ Signed a partnership agreement. ✅ Tested on a development store to confirm all features work as expected. ✅ App platform test accounts and login credentials are ready.
 - title: Create your First App
 - the page opens: To begin creating and developing subscription apps for the Zid App Market, ensure you have a registered partner account. Simply log in and follow the steps outlined below. Through the Partner Dashboard, you can build apps, test them on demo stores, launch them in the Zid App Market, and unlock new revenue opportunities! ZAM Merchant Dashboard Frame (3).png Create Your Draft App Navigate to My Apps from your Partner Dashboard. Click on Create Application button, and select Private/Public Applicat…
 - in context: …rivate Plan for Store"> ![CleanShot 2025-02-15 at 16.40.42@2x.png](https://api.apidog.com/api/v1/projects/613905/resources/350414/image-preview) </Frame> --- ## Request App Publish Once all required details are filled in, you can submit your app for Zid's review and testing. Our team will assess your app's functionality, usability, and overall readiness before approval. **To ensure a smooth review process, make sure your app is fully prepared:** ⟪✅ Signed a partnership agreement. ✅ Tested on a development store to confirm all features work as expected. ✅ App platform test accounts and login credentials are ready.⟫ ✅ QA test cases prepared to assist with validation. ✅ Merchant activation steps, setup requirements, and FAQs outlined. Once submitted, you'll receive a notification regarding your app's review status and estimated publish date. Ensuring your app is well-prepared will speed up approval and minimize iterations. 🚀 </Tab> <Tab title="Shipping Apps"> ✌️ Here's content that's only inside the second Tab. </Tab> </Tabs>
 
 **Citation Q8-ZD-C026:** `https://docs.zid.sa/create-first-app.md` | ## Request App Publish | 2026-10-12 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/018-docs.zid.sa/text.txt` (fetched 2026-10-12T04:51:16Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/018-docs.zid.sa/text.txt` (12426 bytes), fetched 2026-10-12T04:51:16Z, captured
 - quote: ✅ QA test cases prepared to assist with validation. ✅ Merchant activation steps, setup requirements, and FAQs outlined.
 - title, opening and note boxes: as for this source's citation above
 - headings: Create your First App > Request App Publish
@@ -254,8 +254,8 @@
 - cite_ids: ZD-S-0599
 
 **Citation ZD-S-0599:** `https://docs.zid.sa/merchant-activation.md` | Overview | 2026-10-12 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/050-docs.zid.sa/text.txt` (fetched 2026-10-12T04:51:48Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/010-docs.zid.sa/text.txt` (fetched 2026-10-12T10:49:43Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/050-docs.zid.sa/text.txt` (1779 bytes), fetched 2026-10-12T04:51:48Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/010-docs.zid.sa/text.txt` (1779 bytes), fetched 2026-10-12T10:49:43Z, captured
 - quote: thirdPartyProviderId is the unique ID of the payment service provider (Zid Payments assigns and provides this ID to the partner upfront before starting the integration)
 - title: Merchant Activation
 - the page opens: Overview This is the process of a merchant activating payments, through Zid Payments, with your system. This happens by having a special login page for Zid merchants on the provider / partner side to provide the required information and documents in order to get onboarded. Upon redirection to the provider's login page, Zid Payments will append the "storeId" query string parameter to the URL, which is the unique identifier for the merchant at Zid. After the onboarding of the merchant happens at t…
@@ -275,7 +275,7 @@
 - cite_ids: ZD-S-0684
 
 **Citation ZD-S-0684:** `https://docs.zid.sa/zid-app-activation-oauth-policy-2422816m0.md` | callout | 2026-09-09 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/071-docs.zid.sa/text.txt` (fetched 2026-10-12T04:52:09Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/071-docs.zid.sa/text.txt` (18009 bytes), fetched 2026-10-12T04:52:09Z, captured
 - quote: Any required app-plan payment is completed through Zid before activation becomes available.
 - title: Zid App Activation & OAuth Policy
 - the page opens: - Audience: Zid App Market partners and application teams - Applies to: All new apps submitted to Zid App Market - Updated: 9 September 2026:::highlight purple 🔐 Standard apps begin OAuth immediately when the merchant selects Activate in Zid. Any required app-plan payment is completed through Zid before activation becomes available. After OAuth, the merchant may complete account linking, configuration or other onboarding; the app must not require an additional partner-side payment.::::::highligh…
@@ -297,7 +297,7 @@
 - from: held
 
 **Citation Q8-ZD-C020:** `https://docs.zid.sa/create-first-app.md` | ## Add Plans and Prices > Select Subscription Model | 2026-10-12 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/018-docs.zid.sa/text.txt` (fetched 2026-10-12T04:51:16Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/018-docs.zid.sa/text.txt` (12426 bytes), fetched 2026-10-12T04:51:16Z, captured
 - quote: - **Recurring:** Merchants are charged a fixed amount at regular intervals (e.g., monthly or yearly) for continuous access to the app’s features.
 - title: Create your First App
 - the page opens: To begin creating and developing subscription apps for the Zid App Market, ensure you have a registered partner account. Simply log in and follow the steps outlined below. Through the Partner Dashboard, you can build apps, test them on demo stores, launch them in the Zid App Market, and unlock new revenue opportunities! ZAM Merchant Dashboard Frame (3).png Create Your Draft App Navigate to My Apps from your Partner Dashboard. Click on Create Application button, and select Private/Public Applicat…
@@ -305,7 +305,7 @@
 - in context: …ew) </Frame> --- ## Add Plans and Prices The final step before submitting your app for review is to define pricing plans that merchants can choose and subscribe to. <Frame> ![CleanShot 2025-02-15 at 16.13.39@2x.png](https://api.apidog.com/api/v1/projects/613905/resources/350406/image-preview) </Frame> <Steps> <Step title="Select Subscription Model"> Choose the appropriate subscription model for your app based on how you want to charge merchants. ⟪- **Recurring:** Merchants are charged a fixed amount at regular intervals (e.g., monthly or yearly) for continuous access to the app's features.⟫ - **Usage-Based:** Merchants are billed based on their actual consumption of a specific resource (e.g., per order, message, or API request), with costs varying according to usage. </Step> <Step title="Add App Plans"> To publish your app, you must create at least one pricing plan, with a maximum of four. <Accordion title="🔁 Recurring Plans" defaultClose> <Frame caption="Adding Recurring Plan"> ![App Recurring Plan.png](https://api.apidog.com/api/…
 
 **Citation Q8-ZD-C021:** `https://docs.zid.sa/create-first-app.md` | ## Add Plans and Prices > Select Subscription Model | 2026-10-12 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/018-docs.zid.sa/text.txt` (fetched 2026-10-12T04:51:16Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/018-docs.zid.sa/text.txt` (12426 bytes), fetched 2026-10-12T04:51:16Z, captured
 - quote: - **Usage-Based:** Merchants are billed based on their actual consumption of a specific resource (e.g., per order, message, or API request), with costs varying according to usage.
 - title, opening and note boxes: as for this source's citation above
 - headings: Create your First App > Add Plans and Prices
@@ -326,8 +326,8 @@
 - note: In the minified source, !0 is JavaScript true and !1 is false; a quoted number is the stated count. Keys: starter, launch, growth, pro.
 
 **Citation ZD-S-0617:** `https://zid.sa/_next/static/chunks/2501-f29c20b24ab64821.js` | compare-plans group Basic Features | 2026-10-11 | kind: shipped | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/185-zid.sa/text.txt` (fetched 2026-10-12T04:53:51Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/120-zid.sa/text.txt` (fetched 2026-10-12T10:51:24Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/185-zid.sa/text.txt` (200113 bytes), fetched 2026-10-12T04:53:51Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/120-zid.sa/text.txt` (200113 bytes), fetched 2026-10-12T10:51:24Z, captured
 - quote: name:{ar:"طرق الدفع المتقدمة",en:"Advanced Payment Methods"},description:{ar:"وفر خيارات دفع متعددة مثل تابي، تمارا، الدفع عند الاستلام لتسهيل الشراء",en:"Provide multiple payment options like Tabby, Tamara, and COD to simplify purchasing."},plans:{starter:!1,launch:!0,growth:!0,pro:!0}}
 - in context: …d set permissions for each to manage operations efficiently."},plans:{starter:"1",launch:"1",growth:"5",pro:"20"}},{name:{ar:"ربط دومين خاص",en:"Custom Domain Linking"},description:{ar:"اربط دومين خاص (yourstore.com) بدلاً من النطاق الفرعي لتعزيز هوية علامتك التجارية وثقة عملائك.",en:"Link a custom domain (yourstore.com) instead of a subdomain to strengthen your brand identity and customer trust."},plans:{starter:!1,launch:!0,growth:!0,pro:!0}},{⟪name:{ar:"طرق الدفع المتقدمة",en:"Advanced Payment Methods"},description:{ar:"وفر خيارات دفع متعددة مثل تابي، تمارا، الدفع عند الاستلام لتسهيل الشراء",en:"Provide multiple payment options like Tabby, Tamara, and COD to simplify purchasing."},plans:{starter:!1,launch:!0,growth:!0,pro:!0}}⟫,{name:{ar:"الدعم الفني عبر المحادثات",en:"Live Chat Support"},description:{ar:"احصل على مساعدة فورية من فريق زد عبر المحادثات المباشرة لحل أي مشكلة تواجهك.",en:"Get instant help from the Zid team via live chat to resolve any issue you face."},plans:{starter:!1,launch:!0,growth:!0,pro:!0}},{name:{ar:"إعدادات الفواتير والضرائب",en:"Invoice & Tax Settings"},description:{ar:"خصص إعدادات الفواتير والضريبة المضافة (VAT) لتتوافق مع متطلبات بلدك.",en:"C…
 
@@ -344,7 +344,7 @@
 - cite_ids: ZD-S-0889
 
 **Citation ZD-S-0889:** `https://docs.zid.sa/zid-apps-overview.md` | Prerequisites for Developing Private Apps | 2026-10-12 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/072-docs.zid.sa/text.txt` (fetched 2026-10-12T04:52:10Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/072-docs.zid.sa/text.txt` (4427 bytes), fetched 2026-10-12T04:52:10Z, captured
 - quote: The store must have a Professional or Enterprise plan subscription, or the merchant must have activated [API Access](https://web.zid.sa/subscriptions) from the dashboard to be able to install the private app.
 - title: 🗂️ Overview
 - the page opens: Zid offers a strong platform for partners to develop applications that enhance the functionality of online stores. Understanding the different types of apps in Zid is essential for developers aiming for successful integrations. This article provides an overview of the app types supported by Zid, the development process, and the publishing options. App Types When you develop an app in Zid, you must decide whether it will be public or private. These options determine how the app is published and w…
@@ -364,8 +364,8 @@
 - cite_ids: ZD-S-0674
 
 **Citation ZD-S-0674:** `https://zid.sa/ar/legal/terms-conditions/` | الاشتراكات | 2026-08 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/text.txt` (fetched 2026-10-12T04:53:53Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/text.txt` (fetched 2026-10-12T10:51:26Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/raw.html` (626842 bytes), fetched 2026-10-12T04:53:53Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/raw.html` (626842 bytes), fetched 2026-10-12T10:51:26Z, captured
 - quote: يجوز لنا تغيير خطط الاشتراك وأسعار الرسوم والخدمات التي نقدمها من وقت لآخر؛ ومع ذلك، سنقوم بإشعارك بأي تغييرات في الأسعار أو تغييرات في خطط الاشتراك أو الخدمات قبل تطبيقها بـ(7) سبعة أيام على الأقل.
 - title: Zid | Create your online store with modern retail services
 - in context: …أخرى المتعلقة بمعالجة طريقة الدفع الخاصة بك. قد تختلف رسوم الضرائب المحلية اعتمادًا على طريقة الدفع المستخدمة. أنت مسؤول عن سداد ودفع كافة الرسوم الضريبية، بما في ذلك ضريبة القيمة المضافة. يمكنك إلغاء اشتراكك في أي وقت، وستستمر إمكانيتك لاستخدام الخدمة حتى نهاية فترة اشتراكك. إلى الحد الذي يسمح به القانون المعمول به، المدفوعات غير قابلة للاسترداد، ولا نقدم استرداد أو ائتمانيات لأي فترات اشتراك جزئي، ولا يمكنك استخدام رسوم الخدمة في أي خدمة أخرى. ⟪يجوز لنا تغيير خطط الاشتراك وأسعار الرسوم والخدمات التي نقدمها من وقت لآخر؛ ومع ذلك، سنقوم بإشعارك بأي تغييرات في الأسعار أو تغييرات في خطط الاشتراك أو الخدمات قبل تطبيقها ب(7) سبعة أيام على الأقل.⟫ يتم دفع رسوم الاشتراك مقدما، وتحرر الفاتورة خلال (30) ثلاثين يوم ويتم تقديم الخدمة بمجرد تأكيد استلام الرسوم(كل هذه التواريخ تصنف أنها "تاريخ تحرير الفاتورة"). سيتم احتساب رسوم المعاملات والرسوم الإضافية من وقت لآخر حسب تقدير زد وسيتم تحصيل رسوم من المستخدم في تاريخ كل فاتورة لجميع الرسوم المستحقة التي لم يتم دفعها من قبل. تتم كتابة الرسوم على الفاتورة التي سيتم إرسالها إلى التاجر صاحب الحساب عبر البريد الإلكتروني المكتوب في ملف التسجيل. وستظهر …
@@ -383,7 +383,7 @@
 - from: held
 
 **Citation Q8-ZD-C014:** `https://help.zid.sa/subscription/` | ملاحظة | 2026-08-05 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/161-help.zid.sa/text.txt` (fetched 2026-10-12T04:53:33Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/161-help.zid.sa/text.txt` (5939 bytes), fetched 2026-10-12T04:53:33Z, captured
 - quote: عند التغيير إلى باقة أقل من باقتك الحالية، ستفقد جميع المزايا والخصائص المتوفرة في باقتك الحالية.
 - title: زد - مركز المساعدة - إدارة الاشتراك ( لوحة التحكم الجديدة )
 - the page opens: زد - مركز المساعدة - إدارة الاشتراك ( لوحة التحكم الجديدة ) menu right alt الدخول لمتجرك --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا EN --> الدخول لمتجرك close --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا English --> مركز المساعدة الرئيسية الرئيسية إدارة الاشتراك ( لوحة التحكم الجديدة ) عن ماذا تبحث ؟ دليل استخدام منصة التاجر الرئيسية --> تعرف على زد --> تعرف على زد إعدادات المتجر --> إعدادات المتجر المنتجات --> التصنيفات --> التصنيفات المنتجات --> المنتج…
@@ -402,7 +402,7 @@
 - from: held
 
 **Citation Q8-ZD-C017:** `https://docs.zid.sa/create-first-app.md` | # Create your First App | 2026-10-12 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/018-docs.zid.sa/text.txt` (fetched 2026-10-12T04:51:16Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/018-docs.zid.sa/text.txt` (12426 bytes), fetched 2026-10-12T04:51:16Z, captured
 - quote: Through the Partner Dashboard, you can build apps, test them on demo stores, launch them in the Zid App Market, and unlock new revenue opportunities!
 - title: Create your First App
 - the page opens: To begin creating and developing subscription apps for the Zid App Market, ensure you have a registered partner account. Simply log in and follow the steps outlined below. Through the Partner Dashboard, you can build apps, test them on demo stores, launch them in the Zid App Market, and unlock new revenue opportunities! ZAM Merchant Dashboard Frame (3).png Create Your Draft App Navigate to My Apps from your Partner Dashboard. Click on Create Application button, and select Private/Public Applicat…
@@ -422,8 +422,8 @@
 - cite_ids: ZD-S-0648
 
 **Citation ZD-S-0648:** `https://zid.sa/ar/legal/terms-conditions/` | محفظة زد | 2026-08 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/text.txt` (fetched 2026-10-12T04:53:53Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/text.txt` (fetched 2026-10-12T10:51:26Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/raw.html` (626842 bytes), fetched 2026-10-12T04:53:53Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/raw.html` (626842 bytes), fetched 2026-10-12T10:51:26Z, captured
 - quote: هي محفظة تمكن التاجر من حفظ وإدارة المبالغ الخاصة به والخاصة بمتجره الإلكتروني في منصة زد
 - title: Zid | Create your online store with modern retail services
 - in context: …يام من تاريخ إصدار فاتورة الاشتراك وبشرط ألا يتجاوز عدد الفواتير المعتمدة من خلال الخدمة (20) فاتورة. يحق للتاجر استرجاع مبلغ الخدمة المفعلة أثناء عروض اليوم الوطني أو العروض الترويجية خلال ٢٤ ساعة من تاريخ الشراء. يحق للتاجر طلب استبدال أجهزة نقاط البيع خلال (2) يومين في حال كانت الأجهزة تالفة، وفي حال اكتشاف تلف الأجهزة بعد مضي أكثر من (2) يومان على استلامها فيكون الوكيل مسؤولاً عن صيانة واستبدال هذه الأجهزة. محفظة زد ما هي محفظة التاجر في زد؟ ⟪هي محفظة تمكن التاجر من حفظ وإدارة المبالغ الخاصة به والخاصة بمتجره الإلكتروني في منصة زد⟫، من خلال إضافة رصيد مالي والاستفادة منه في شراء المنتجات، أو الخدمات المعروضة في منصة زد، أو بتحويل الأموال إلى خارج المحفظة، وذلك وفقاً لهذه الشروط والأحكام ("المحفظة") أو ("محفظة التاجر"). توثيق الحساب لتفعيل المحفظة لكي يتمكن التاجر من التحكم بالمحفظة من خلال لوحة تحكم المحفظة يجب عليه توثيق حسابه وفقًا لما يلي: إذا كان التاجر شخصية اعتبارية عليه إرفاق المستندات التالية: إدخال رقم هوية المالك. إرفاق السجل التجاري. إرفاق صورة من سجل تجاري المن…
@@ -441,7 +441,7 @@
 - cite_ids: ZD-S-0870
 
 **Citation ZD-S-0870:** `https://docs.zid.sa/authorization.md` | 2- Redirect | 2026-10-12 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/010-docs.zid.sa/text.txt` (fetched 2026-10-12T04:51:08Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/010-docs.zid.sa/text.txt` (10370 bytes), fetched 2026-10-12T04:51:08Z, captured
 - quote: The merchant will see the scopes that your application is requesting and approve (or decline)
 - title: Authorization
 - the page opens: OAuth 2.0 is the industry-standard protocol for authorizing apps, allowing secure access to resources without exposing sensitive data like passwords. It differs from authentication, which verifies the identity of the user or app. Understanding OAuth 2.0 at Zid At Zid, we use the authorization code grant type, which is ideal for confidential clients. This method involves redirecting the user to an authorization server, where they grant permissions to your app. Your server-side app must handle thi…
@@ -461,7 +461,7 @@
 - cite_ids: ZD-S-0864
 
 **Citation ZD-S-0864:** `https://docs.zid.sa/zid-app-activation-oauth-policy-2422816m0.md` | 12. Review and enforcement | 2026-09-09 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/071-docs.zid.sa/text.txt` (fetched 2026-10-12T04:52:09Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/071-docs.zid.sa/text.txt` (18009 bytes), fetched 2026-10-12T04:52:09Z, captured
 - quote: Apps that do not comply may be returned for correction, rejected during review, suspended until corrected or removed when the flow creates material security, privacy, usability or merchant-trust risk.
 - title: Zid App Activation & OAuth Policy
 - the page opens: - Audience: Zid App Market partners and application teams - Applies to: All new apps submitted to Zid App Market - Updated: 9 September 2026:::highlight purple 🔐 Standard apps begin OAuth immediately when the merchant selects Activate in Zid. Any required app-plan payment is completed through Zid before activation becomes available. After OAuth, the merchant may complete account linking, configuration or other onboarding; the app must not require an additional partner-side payment.::::::highligh…
@@ -483,8 +483,8 @@
 - cite_ids: ZD-S-1061
 
 **Citation ZD-S-1061:** `https://help.zid.sa/%d8%a7%d9%84%d8%a3%d8%b3%d8%a6%d9%84%d8%a9-%d8%a7%d9%84%d8%b4%d8%a7%d8%a6%d8%b9%d8%a9/` | السؤال 9 | 2026-08-18 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/077-help.zid.sa/text.txt` (fetched 2026-10-12T04:52:09Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/045-help.zid.sa/text.txt` (fetched 2026-10-12T10:50:21Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/077-help.zid.sa/text.txt` (33716 bytes), fetched 2026-10-12T04:52:09Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/045-help.zid.sa/text.txt` (33716 bytes), fetched 2026-10-12T10:50:21Z, captured
 - quote: يتم فرض الرسوم باستخدام المحفظة. نسمح بحد أقصى 500 ريال سعودي كرصيد. بعد ذلك، سيتوقف التطبيق عن العمل حتى تقوم بإعادة شحن محفظتك.
 - title: زد - مركز المساعدة - الأسئلة الشائعة لقنوات البيع
 - the page opens: زد - مركز المساعدة - الأسئلة الشائعة لقنوات البيع menu right alt الدخول لمتجرك --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا EN --> الدخول لمتجرك close --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا English --> مركز المساعدة منصات البيع منصات البيع الأسئلة الشائعة لقنوات البيع عن ماذا تبحث ؟ دليل استخدام منصة التاجر الرئيسية --> تعرف على زد --> تعرف على زد إعدادات المتجر --> إعدادات المتجر المنتجات --> التصنيفات --> التصنيفات المنتجات --> المنتجات إدارة المخز…
@@ -503,8 +503,8 @@
 - cite_ids: ZD-S-0692
 
 **Citation ZD-S-0692:** `https://zid.sa/ar/legal/terms-conditions/` | تمويل زد: التعريفات | 2026-08 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/text.txt` (fetched 2026-10-12T04:53:53Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/text.txt` (fetched 2026-10-12T10:51:26Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/raw.html` (626842 bytes), fetched 2026-10-12T04:53:53Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/raw.html` (626842 bytes), fetched 2026-10-12T10:51:26Z, captured
 - quote: تمويل زد: هي خدمة إلكترونية تقدمها زد، تتيح للتجار الاستفادة من عروض التمويل لجهة التمويل، وتتيح لجهة التمويل استلام دفعات السداد عن طريق الاستقطاع من عمليات بيع التاجر المنفذة على منصة زد لحلول الدفع (“زد باي”)
 - title: Zid | Create your online store with modern retail services
 - in context: …لة الكويت، أو الإفصاح عنها بعد الحصول على موافقة من التاجر. حق تقديم الخدمة بالتعاقد من الباطن يحق لزد باي تقديم الخدمة عن طريق التعاقد من الباطن دون أي إشعارات أو إفصاحات. تعديل الشروط والأحكام وإنهاؤها يجوز لزد باي تعديل الشروط والأحكام هذه في أي وقت بوضع النسخة المنقحة على موقعنا أو التطبيق، ويتعين على التاجر أن يتفهم أن مسؤولية الرجوع إلى النسخة المحدثة من أحكام الاستخدام عبر التطبيق تقع على عاتقه مع التزام زد باي بإشعاره. تمويل زد التعريفات ⟪تمويل زد: هي خدمة إلكترونية تقدمها زد، تتيح للتجار الاستفادة من عروض التمويل لجهة التمويل، وتتيح لجهة التمويل استلام دفعات السداد عن طريق الاستقطاع من عمليات بيع التاجر المنفذة على منصة زد لحلول الدفع ("زد باي")⟫ خلال مدة اشتراكه في هذه الخدمة. التاجر: هو الذي يملك متجرا في منصة زد، وفعّل الاشتراك في خدمة زد للحلول التمويلية، والذي يكون مؤهلا للاشتراك حسب هذه الشروط والأحكام. جهة التمويل: هي الجهة المقدمة لخدمة التمويل للتاجر. علاقة الشروط والأحكام: 1. تعتبر هذه الشروط والأحكام جزء يكمل التزامات التاجر بشروط وأحكام وسياسات منصة زد، ولا تتعارض معها، وفي حال التعارض فإنه يُجمع بينها بما تقتضيه حالات تقديم الخدمة، وإذا تعذّر الجمع فإنه هذه الشروط تعتبر مفسّ…

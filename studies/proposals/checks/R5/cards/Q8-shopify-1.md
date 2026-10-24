@@ -1,6 +1,6 @@
 # Cards: Q8 on shopify
 
-22 records cited by `studies/proposals/drafts/Q8/draft.md`, made by `method/r5_cards.py`.
+24 records cited by `studies/proposals/drafts/Q8/draft.md`, made by `method/r5_cards.py`.
 
 ## The points cited
 
@@ -21,12 +21,15 @@
 - **section 1, line 35:** - Shopify's Functions, which "customize your store's backend logic", and Salla's App Functions fill one role (basis 4; both stated). Q8-SH-040; Q8-SA-030
 - **section 1, line 38:** - Two list their own units beside partners'. Shopify's App Store has pages for built-in features, as B2B, "Included with Shopify Plus"; WooCommerce groups products "crafted by WooCommerce". Same role (basis 4; both stated). Q8-SH-K2696; Q8-WC-040
 - **section 1, line 44:** - Shopify's expansion stores "don't share data by default"; أسواق زد keep markets in one store, "بدون الحاجة لمتاجر منفصلة". Q8-SH-047; Q8-ZD-026
+- **section 1, line 45:** - In one step's saved markup on store capture-grow (observed 2 October 2026), once on Shopify's Plus plan after its trial, the store "will move out of the My Store organization into a new organization", carrying over its "payment method and user roles". Q8-SH-109
+- **section 1, line 46:** - All five set a third party's unit apart under that party's terms. Shopify's Third Party Services are "solely between you and" their provider; WooCommerce's "Extensions may have their own requirements"; Salla's third-party services have "أحكامها المستقلة التي تتم بين التاجر وبين الطرف الثالث"; on Zid "الشريك هو المقدم للخدمة"; BigCommerce's Third-Party Products "are governed by their own terms of service". Same role (basis 4; all official pages). Q8-SH-K2169; Q8-WC-K0830; Q8-SA-035; Q8-ZD-K0366; Q8-BC-K0453
 - **section 1, line 49:** - Apps are reviewed. Shopify's public apps "undergo Shopify's app review process"; WooCommerce's review runs from "Business review" to "Launch preparations"; on BigCommerce "The Marketplace team reviews all app submissions". Same role (basis 4). Q8-SH-029; Q8-WC-071; Q8-BC-K0316
 - **section 1, line 50:** - Payment integrations are held apart. Shopify's payments extension needs review and approval; WooCommerce requires "a separate agreement" for a "Payments Solution"; BigCommerce has "paused all new externally built payment integrations"; Zid Payments assigns a provider's ID "upfront before starting the integration". Same role (basis 4; all stated). Q8-SH-095; Q8-WC-K0353; Q8-BC-058; Q8-ZD-K0079
 - **section 2, line 77:** - **Offer catalogue**: Sharrwah would keep one catalogue of every unit it offers sellers. Each **Offer** has a kind, a maker (Sharrwah or a named partner), the terms it falls under, the offers it needs, an **Availability rule** and a **Release stage**; Sharrwah's terms would cover offers added later. Q8-SH-054; Q8-BC-018
 - **section 2, line 78:** - It takes one term for all offers, Shopify's and BigCommerce's "Services", and features and apps under one set of fields in one Salla store's answer (store merchant@en, observed 9 October 2026). Q8-SH-054; Q8-SA-K2105
 - **section 2, line 79:** - Why: each place is set up as data in one catalogue, not built apart (rule 1); a new offer is an entry that changes no other part (rule 2); which terms cover later offers is legal structure, decided now (rule 3). Q8-SH-054; Q8-BC-018
 - **section 2, line 81:** - **Offer kinds**: a **Feature**, built into Sharrwah; an **Additional service**, Sharrwah's own with terms of its own, which a provider may run; an **App**, **Theme** or **Partner service**, a partner's under the partner's terms; a **Sales channel**, a surface outside the store tied to its admin; a **Market**, a place's set-up within one store. Q8-SH-058; Q8-ZD-K0366; Q8-SH-014; Q8-ZD-026
+- **section 2, line 82:** - A provider's offer may be Sharrwah's own, as BigCommerce's Extension is a Service, or the provider's, as Shopify's Third Party Services are. The kind decides who answers to the merchant, so it is fixed per offer now (rule 3). Q8-BC-K0457; Q8-SH-K2169
 - **section 2, line 84:** - **Entitlement**: a value each store holds, on or off or a number, from its plan, add-ons and place; offers test entitlements, never a plan's name. Q8-SH-K2591; Q8-SH-K0041
 - **section 2, line 85:** - It takes Shopify's entitlement values in trial stores' answers (observed 21 September 2026), read by route conditions (shipped), and `limit` on a setting in one Salla store's answer (store merchant@en, observed 9 October 2026). Q8-SH-K2591; Q8-SH-K0041; Q8-SA-K1973
 - **section 2, line 86:** - Alternative not taken: naming plans in each offer, as the `plans` on one Salla store's settings (observed 9 October 2026) and Shopify's "plans" condition do. A new or renamed plan would then change every offer naming it (rule 2). Q8-SA-K1973; Q8-SH-K0175
@@ -45,6 +48,7 @@
 - **section 3, line 135:** - Set per plan: entitlements, features and numbers. Q8-SH-K2743; Q8-SA-K0055
 - **section 3, line 136:** - Set per account: users and billing, credentials across stores, and early access. Q8-SH-046; Q8-BC-K0292; Q8-SH-K0191
 - **section 3, line 141:** - Proposed: Sharrwah would set things at these levels, as the platforms show them. Q8-SH-K0175; Q8-SA-K1973
+- **section 3, line 145:** - Set by the provider: its own terms with the merchant. Q8-SH-K2169
 - **section 3, line 146:** - Set by the account's administrator: account-wide features, as Shopify's organization permission for test drives. Q8-SH-K0191
 - **section 7, line 195:** - Whether third parties may plug in payment methods, and under what review. Q8-BC-058; Q8-SH-095
 
@@ -63,8 +67,8 @@
 - from: held
 
 **Citation Q8-SH-C055:** `https://www.shopify.com/legal/terms` | preamble | 2026-08-01 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/143-shopify.com/text.txt` (fetched 2026-10-11T06:13:11Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/117-shopify.com/text.txt` (fetched 2026-10-12T10:51:23Z, captured)
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/143-shopify.com/text.txt` (84422 bytes), fetched 2026-10-11T06:13:11Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/117-shopify.com/text.txt` (84422 bytes), fetched 2026-10-12T10:51:23Z, captured
 - quote: Any such service or services offered by Shopify are referred to in these Terms of Services as the "Service(s)". Any new features or tools which are added to the current Services will also be subject to the Terms of Service.
 - title: Shopify Terms of Service - Shopify
 - in context: …ce activities. Among other features, this platform includes a range of tools for merchants to build and customize online stores, sell in multiple places (including web, mobile, social media, online marketplaces and other online locations ("Online Services") and in person ("POS Services")), manage products, inventory, payments, fulfillment, shipping, business operations, marketing and advertising, and engage with existing and potential customers. ⟪Any such service or services offered by Shopify are referred to in these Terms of Services as the "Service(s)". Any new features or tools which are added to the current Services will also be subject to the Terms of Service.⟫ You can review the current version of the Terms of Service at any time at https://shopify.com/legal/terms. You must read, agree with and accept all of the terms and conditions contained or expressly referenced in these Terms of Service, including Shopify's Acceptable Use Policy ("AUP") and Privacy Policy, and, if applicable, the Supplementary Terms of Service for E.U. Merchants ("EU Terms"), the Shopify API License and Terms of Use ("API Terms")…
@@ -102,8 +106,8 @@
 - from: held
 
 **Citation Q8-SH-C066:** `https://www.shopify.com/legal/terms` | site header, NON-STOP INNOVATION, Shopify Editions | 2026-08-01 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/143-shopify.com/text.txt` (fetched 2026-10-11T06:13:11Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/117-shopify.com/text.txt` (fetched 2026-10-12T10:51:23Z, captured)
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/143-shopify.com/text.txt` (84422 bytes), fetched 2026-10-11T06:13:11Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/117-shopify.com/text.txt` (84422 bytes), fetched 2026-10-12T10:51:23Z, captured
 - quote: 150+ updates to Shopify, twice a year.
 - title: Shopify Terms of Service - Shopify
 - in context: …arketplaces Global B2B Across Markets MARKETING & ANALYTICS Advertising & Campaigns Email & Customer Chat Discounts Analytics Test & Launch RUN YOUR BUSINESS Orders & Inventory Shipping Finances & Funding Workflow Automation GET PAID Checkout Payments Taxes CUSTOMIZE & EXTEND SHOPIFY Commerce for Agents Build with our agent tools Shopify App Store Largest commerce ecosystem Shopify.dev Dev docs, CLI, and more NON-STOP INNOVATION Shopify Editions ⟪150+ updates to Shopify, twice a year.⟫ LATEST UPDATES Agentic Storefronts Campaign Autopilot Shopify AI Toolkit for devs Pricing Enterprise Log in Start for free Terms of Service TABLE OF CONTENTS 1. Account Terms 2. Account Activation 3. Shopify Rights 4. Your Responsibilities 5. Payment of Fees and Taxes 6. Confidentiality 7. Limitation of Liability and Indemnification 8. Intellectual Property and Your Materials 9. Additional Services 10. Feedback and Reviews 11. Intellectual Prope…
@@ -124,7 +128,7 @@
 
 **Citation SH-S-7011:** `observed-sh@e49840729:structures/shopify/plan-comparison-public/www.shopify.com_pricing/items.jsonl` | line 18 (row 'Additional staff accounts') | 2026-09-30 | kind: official page | quote check: found
 - quote: {"kind": "row", "section": 1, "position": 14, "cells": [{"tag": "th", "text": "Additional staff accounts", "scope": "row"}, {"tag": "td", "text": "Not included"}, {"tag": "td", "text": "5"}, {"tag": "td", "text": "15"}, {"tag": "td", "text": "Unlimited"}]}
-- in context: …"cells": [{"tag": "th", "text": "Inventory management", "scope": "row"}, {"tag": "td", "text": "Included"}, {"tag": "td", "text": "Included"}, {"tag": "td", "text": "Included"}, {"tag": "td", "text": "Included"}]} {"kind": "row", "section": 1, "position": 13, "cells": [{"tag": "th", "text": "Inventory locations", "scope": "row"}, {"tag": "td", "text": "10"}, {"tag": "td", "text": "10"}, {"tag": "td", "text": "10"}, {"tag": "td", "text": "200"}]} ⟪{"kind": "row", "section": 1, "position": 14, "cells": [{"tag": "th", "text": "Additional staff accounts", "scope": "row"}, {"tag": "td", "text": "Not included"}, {"tag": "td", "text": "5"}, {"tag": "td", "text": "15"}, {"tag": "td", "text": "Unlimited"}]}⟫ {"kind": "row", "section": 1, "position": 15, "cells": [{"tag": "th", "text": "Invite third-party collaborators", "scope": "row"}, {"tag": "td", "text": "Included"}, {"tag": "td", "text": "Included"}, {"tag": "td", "text": "Included"}, {"tag": "td", "text": "Included"}]} {"kind": "row", "section": 1, "position": 16, "cells": [{"tag": "th", "text": "Sell and source products with Shopify Collective", "scope": "row"}, {"tag": "td", "text": "Include…
+- in context: ⟪{"kind": "row", "section": 1, "position": 14, "cells": [{"tag": "th", "text": "Additional staff accounts", "scope": "row"}, {"tag": "td", "text": "Not included"}, {"tag": "td", "text": "5"}, {"tag": "td", "text": "15"}, {"tag": "td", "text": "Unlimited"}]}⟫
 
 ### Q8-SH-107
 
@@ -173,8 +177,8 @@
 - from: held
 
 **Citation Q8-SH-C060:** `https://www.shopify.com/legal/terms` | 9. Additional Services, 9.1 Scope | 2026-08-01 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/143-shopify.com/text.txt` (fetched 2026-10-11T06:13:11Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/117-shopify.com/text.txt` (fetched 2026-10-12T10:51:23Z, captured)
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/143-shopify.com/text.txt` (84422 bytes), fetched 2026-10-11T06:13:11Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/117-shopify.com/text.txt` (84422 bytes), fetched 2026-10-12T10:51:23Z, captured
 - quote: Your use of, and access to, any Additional Services is subject to these Terms or, in some cases, may be subject to additional and separate fees, terms, and policies (the "Additional Service Terms").
 - title: Shopify Terms of Service - Shopify
 - in context: …wledge and agree that the Terms of Service do not give you any right to implement Shopify patents. 9. Additional Services 9.1 Scope Shopify may make available certain services, products, applications and tools, in addition to the Services, including but not limited to, Shopify Payments, Shopify Capital, Shopify Shipping, point-of-sale (POS) services and equipment, and the services outlined in this Section 9 (collectively, "Additional Services"). ⟪Your use of, and access to, any Additional Services is subject to these Terms or, in some cases, may be subject to additional and separate fees, terms, and policies (the "Additional Service Terms").⟫ 9.2 Enhanced Services Which means Enhanced Services are powered by Shopify Network Intelligence, which securely uses your customer data alongside data from other merchants and from Shopify to protect, grow, and improve your business. When you receive Shopify Enhanced Services, you should ensure you meet privacy requirements wherever you do business - check out our tools to help with that or visit the Shopify Help Center to learn more. You have a…
@@ -202,7 +206,7 @@
 
 **Citation SH-S-5203:** `observed-sh@e49840729:structures/shopify/admin-router/items.jsonl` | line 733 (market) | 2026-09-29 | kind: shipped | quote check: found
 - quote: "eligibility":{"clients":[],"permissions":[],"plans":[],"excluded":{"betas":[],"clients":[],"features":[],"plans":[]},"oneOf":[{"permissions":["OVERVIEWS","REPORTS","PRODUCTS","DOMAINS","PREFERENCES"]},{"permissions":["VIEW_MARKETS"]}]}
-- in context: …rketing-section","sliceId":"S-e61cf9","component":{"function":true,"imports":["./CreateRedirect-b753820d6d36.js"]}} {"id":"markets","position":0,"array_offset":1959396,"section":"Markets","path":"markets/*","resource":"markets","parent":"settings","sliceName":"markets-section","sliceId":"S-325a46","redirect":"/markets"} {"id":"market","position":0,"array_offset":1959555,"section":"Markets","path":"markets","resource":"market","context":["atlas"],⟪"eligibility":{"clients":[],"permissions":[],"plans":[],"excluded":{"betas":[],"clients":[],"features":[],"plans":[]},"oneOf":[{"permissions":["OVERVIEWS","REPORTS","PRODUCTS","DOMAINS","PREFERENCES"]},{"permissions":["VIEW_MARKETS"]}]}⟫,"sliceName":"markets-section","sliceId":"S-325a46","icon":"markets","loader":{"function":true,"imports":["./MarketsV2-loader-015df7acec35.js"]},"component":{"function":true,"imports":["./Markets-cbd93f4bb296.js"]}} {"id":"market:list","parent":"market","position":0,"array_offset":1960137,"section":"Markets","title":{"value":"Markets"},"resource":"market","actionType":"list","index":true,"context":["organizationFlags"],"sliceName":"markets-sectio…
+- in context: {"id":"market","position":0,"array_offset":1959555,"section":"Markets","path":"markets","resource":"market","context":["atlas"],⟪"eligibility":{"clients":[],"permissions":[],"plans":[],"excluded":{"betas":[],"clients":[],"features":[],"plans":[]},"oneOf":[{"permissions":["OVERVIEWS","REPORTS","PRODUCTS","DOMAINS","PREFERENCES"]},{"permissions":["VIEW_MARKETS"]}]}⟫,"sliceName":"markets-section","sliceId":"S-325a46","icon":"markets","loader":{"function":true,"imports":["./MarketsV2-loader-015df7acec35.js"]},"component":{"function":true,"imports":["./Markets-cbd93f4bb296.js"]}}
 
 ### Q8-SH-K0191
 
@@ -219,7 +223,7 @@
 
 **Citation SH-S-5232:** `observed-sh@e49840729:structures/shopify/admin-router/items.jsonl` | line 938 (settings:organizations:test-drive) | 2026-09-29 | kind: shipped | quote check: found
 - quote: "eligibility":{"features":["hasOrgSettings"],"organizationFeatures":["TEST_DRIVE"],"organizationPermissions":["MANAGE_TEST_DRIVE"]}
-- in context: …ports":["./OrganizationSettingsDetailsSingletonBusinessEntities-loader-62404af970e0.js"]},"component":{"function":true,"imports":["./SingletonBusinessEntities-e34216b31ec1.js"]},"breadcrumbs":["settings:general"]} {"id":"settings:organizations:test-drive","position":0,"array_offset":2134636,"section":"OrganizationSettings","path":"test-drive","resource":"test-drive","context":["organizationFeatures","organizationPermissions"],"parent":"settings",⟪"eligibility":{"features":["hasOrgSettings"],"organizationFeatures":["TEST_DRIVE"],"organizationPermissions":["MANAGE_TEST_DRIVE"]}⟫,"sliceName":"organizationsettings-section","sliceId":"S-729842","icon":"clipboard-check","component":{"function":true,"imports":["./OrganizationSettingsRoot-14dc52a2e0ad.js"]}} {"id":"settings:organizations:test-drive:list","parent":"settings:organizations:test-drive","position":0,"array_offset":2135168,"section":"OrganizationSettings","title":{"value":"Feature test drives"},"actionType":"list","index":true,"sliceName":"organizationsettings-sect…
+- in context: {"id":"settings:organizations:test-drive","position":0,"array_offset":2134636,"section":"OrganizationSettings","path":"test-drive","resource":"test-drive","context":["organizationFeatures","organizationPermissions"],"parent":"settings",⟪"eligibility":{"features":["hasOrgSettings"],"organizationFeatures":["TEST_DRIVE"],"organizationPermissions":["MANAGE_TEST_DRIVE"]}⟫,"sliceName":"organizationsettings-section","sliceId":"S-729842","icon":"clipboard-check","component":{"function":true,"imports":["./OrganizationSettingsRoot-14dc52a2e0ad.js"]}}
 
 ### Q8-SH-K2591
 
@@ -237,27 +241,27 @@
 
 **Citation SH-S-5762:** `observed-sh@e49840729:structures/shopify/shop-request-details/2jiwxs-gr/items.jsonl` | line 30 (set 0) | 2026-09-21 | kind: observed | quote check: found
 - quote: {"set": 0, "section": "entitlements", "key": "maximumLocations", "value": 2}
-- in context: …abled": true, "__typename": "MarketsCatalogsEntitlement"}, "__typename": "MarketsRetailEntitlement"}, "regions": {"enabled": true, "catalogs": {"enabled": true, "__typename": "MarketsCatalogsEntitlement"}, "__typename": "MarketsRegionsEntitlement"}, "themes": {"enabled": false, "__typename": "MarketsThemesEntitlement"}, "checkoutAndAccounts": {"enabled": false, "__typename": "MarketsCheckoutAndAccountsEntitlement"}, "__typename": "MarketsType"}} ⟪{"set": 0, "section": "entitlements", "key": "maximumLocations", "value": 2}⟫ {"set": 0, "section": "entitlements", "key": "metaobjects", "value": {"enabled": true, "__typename": "MetaobjectsType"}} {"set": 0, "section": "entitlements", "key": "storefront", "value": {"enabled": true, "__typename": "StorefrontType"}} {"set": 0, "section": "entitlements", "key": "customDomains", "value": true} {"set": 0, "section": "entitlements", "key": "selfHostedDomain", "value": {"checkout": false, "externalStorefront": false, "__typena…
+- in context: ⟪{"set": 0, "section": "entitlements", "key": "maximumLocations", "value": 2}⟫
 
 **Citation SH-S-5769:** `observed-sh@e49840729:structures/shopify/shop-request-details/ctcbwa-r1/items.jsonl` | line 30 (set 0) | 2026-09-21 | kind: observed | quote check: found
 - quote: {"set": 0, "section": "entitlements", "key": "maximumLocations", "value": 2}
-- in context: …abled": true, "__typename": "MarketsCatalogsEntitlement"}, "__typename": "MarketsRetailEntitlement"}, "regions": {"enabled": true, "catalogs": {"enabled": true, "__typename": "MarketsCatalogsEntitlement"}, "__typename": "MarketsRegionsEntitlement"}, "themes": {"enabled": false, "__typename": "MarketsThemesEntitlement"}, "checkoutAndAccounts": {"enabled": false, "__typename": "MarketsCheckoutAndAccountsEntitlement"}, "__typename": "MarketsType"}} ⟪{"set": 0, "section": "entitlements", "key": "maximumLocations", "value": 2}⟫ {"set": 0, "section": "entitlements", "key": "metaobjects", "value": {"enabled": true, "__typename": "MetaobjectsType"}} {"set": 0, "section": "entitlements", "key": "storefront", "value": {"enabled": true, "__typename": "StorefrontType"}} {"set": 0, "section": "entitlements", "key": "customDomains", "value": true} {"set": 0, "section": "entitlements", "key": "selfHostedDomain", "value": {"checkout": false, "externalStorefront": false, "__typena…
+- in context: ⟪{"set": 0, "section": "entitlements", "key": "maximumLocations", "value": 2}⟫
 
 **Citation SH-S-5772:** `observed-sh@e49840729:structures/shopify/shop-request-details/fake-demo-sharrwah/items.jsonl` | line 30 (set 0) | 2026-09-21 | kind: observed | quote check: found
 - quote: {"set": 0, "section": "entitlements", "key": "maximumLocations", "value": 2}
-- in context: …abled": true, "__typename": "MarketsCatalogsEntitlement"}, "__typename": "MarketsRetailEntitlement"}, "regions": {"enabled": true, "catalogs": {"enabled": true, "__typename": "MarketsCatalogsEntitlement"}, "__typename": "MarketsRegionsEntitlement"}, "themes": {"enabled": false, "__typename": "MarketsThemesEntitlement"}, "checkoutAndAccounts": {"enabled": false, "__typename": "MarketsCheckoutAndAccountsEntitlement"}, "__typename": "MarketsType"}} ⟪{"set": 0, "section": "entitlements", "key": "maximumLocations", "value": 2}⟫ {"set": 0, "section": "entitlements", "key": "metaobjects", "value": {"enabled": true, "__typename": "MetaobjectsType"}} {"set": 0, "section": "entitlements", "key": "storefront", "value": {"enabled": true, "__typename": "StorefrontType"}} {"set": 0, "section": "entitlements", "key": "customDomains", "value": true} {"set": 0, "section": "entitlements", "key": "selfHostedDomain", "value": {"checkout": false, "externalStorefront": false, "__typena…
+- in context: ⟪{"set": 0, "section": "entitlements", "key": "maximumLocations", "value": 2}⟫
 
 **Citation SH-S-5774:** `observed-sh@e49840729:structures/shopify/shop-request-details/ibx5bt-xy/items.jsonl` | line 30 (set 0) | 2026-09-21 | kind: observed | quote check: found
 - quote: {"set": 0, "section": "entitlements", "key": "maximumLocations", "value": 2}
-- in context: …abled": true, "__typename": "MarketsCatalogsEntitlement"}, "__typename": "MarketsRetailEntitlement"}, "regions": {"enabled": true, "catalogs": {"enabled": true, "__typename": "MarketsCatalogsEntitlement"}, "__typename": "MarketsRegionsEntitlement"}, "themes": {"enabled": false, "__typename": "MarketsThemesEntitlement"}, "checkoutAndAccounts": {"enabled": false, "__typename": "MarketsCheckoutAndAccountsEntitlement"}, "__typename": "MarketsType"}} ⟪{"set": 0, "section": "entitlements", "key": "maximumLocations", "value": 2}⟫ {"set": 0, "section": "entitlements", "key": "metaobjects", "value": {"enabled": true, "__typename": "MetaobjectsType"}} {"set": 0, "section": "entitlements", "key": "storefront", "value": {"enabled": true, "__typename": "StorefrontType"}} {"set": 0, "section": "entitlements", "key": "customDomains", "value": true} {"set": 0, "section": "entitlements", "key": "selfHostedDomain", "value": {"checkout": false, "externalStorefront": false, "__typena…
+- in context: ⟪{"set": 0, "section": "entitlements", "key": "maximumLocations", "value": 2}⟫
 
 **Citation SH-S-5775:** `observed-sh@e49840729:structures/shopify/shop-request-details/ts15uk-ug/items.jsonl` | line 30 (set 0) | 2026-09-21 | kind: observed | quote check: found
 - quote: {"set": 0, "section": "entitlements", "key": "maximumLocations", "value": 2}
-- in context: …abled": true, "__typename": "MarketsCatalogsEntitlement"}, "__typename": "MarketsRetailEntitlement"}, "regions": {"enabled": true, "catalogs": {"enabled": true, "__typename": "MarketsCatalogsEntitlement"}, "__typename": "MarketsRegionsEntitlement"}, "themes": {"enabled": false, "__typename": "MarketsThemesEntitlement"}, "checkoutAndAccounts": {"enabled": false, "__typename": "MarketsCheckoutAndAccountsEntitlement"}, "__typename": "MarketsType"}} ⟪{"set": 0, "section": "entitlements", "key": "maximumLocations", "value": 2}⟫ {"set": 0, "section": "entitlements", "key": "metaobjects", "value": {"enabled": true, "__typename": "MetaobjectsType"}} {"set": 0, "section": "entitlements", "key": "storefront", "value": {"enabled": true, "__typename": "StorefrontType"}} {"set": 0, "section": "entitlements", "key": "customDomains", "value": true} {"set": 0, "section": "entitlements", "key": "selfHostedDomain", "value": {"checkout": false, "externalStorefront": false, "__typena…
+- in context: ⟪{"set": 0, "section": "entitlements", "key": "maximumLocations", "value": 2}⟫
 
 **Citation SH-S-5776:** `observed-sh@e49840729:structures/shopify/shop-request-details/zyd38b-ze/items.jsonl` | line 30 (set 0) | 2026-09-21 | kind: observed | quote check: found
 - quote: {"set": 0, "section": "entitlements", "key": "maximumLocations", "value": 2}
-- in context: …abled": true, "__typename": "MarketsCatalogsEntitlement"}, "__typename": "MarketsRetailEntitlement"}, "regions": {"enabled": true, "catalogs": {"enabled": true, "__typename": "MarketsCatalogsEntitlement"}, "__typename": "MarketsRegionsEntitlement"}, "themes": {"enabled": false, "__typename": "MarketsThemesEntitlement"}, "checkoutAndAccounts": {"enabled": false, "__typename": "MarketsCheckoutAndAccountsEntitlement"}, "__typename": "MarketsType"}} ⟪{"set": 0, "section": "entitlements", "key": "maximumLocations", "value": 2}⟫ {"set": 0, "section": "entitlements", "key": "metaobjects", "value": {"enabled": true, "__typename": "MetaobjectsType"}} {"set": 0, "section": "entitlements", "key": "storefront", "value": {"enabled": true, "__typename": "StorefrontType"}} {"set": 0, "section": "entitlements", "key": "customDomains", "value": true} {"set": 0, "section": "entitlements", "key": "selfHostedDomain", "value": {"checkout": false, "externalStorefront": false, "__typena…
+- in context: ⟪{"set": 0, "section": "entitlements", "key": "maximumLocations", "value": 2}⟫
 
 ### Q8-SH-046
 
@@ -302,7 +306,7 @@
 - note: first run's citation
 
 **Citation SH-S-0699:** `https://shopify.dev/docs/apps/build/sales-channels.md` | What is a sales channel? | 2026-10-10 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/125-shopify.dev/text.txt` (fetched 2026-10-11T06:13:09Z, captured)
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/125-shopify.dev/text.txt` (10068 bytes), fetched 2026-10-11T06:13:09Z, captured
 - quote: A sales channel app connects a merchant's online store to surfaces outside Shopify.
 - title: Apps as sales channels
 - the page opens: * What is a sales channel? A sales channel app connects a merchant's online store to surfaces outside Shopify. Examples include traffic-driving channels like Google and Meta, and marketplaces like Amazon that have their own checkout. Sales channel apps help merchants distribute their catalog to where their buyers shop. * When to create a sales channel? Create a sales channel when you want to access the millions of sellers on Shopify and provide a way to push their catalog and inventory to your c…
@@ -343,7 +347,7 @@
 - note: first run's citation
 
 **Citation SH-S-0540:** `https://help.shopify.com/en/manual/markets.md` | introduction | 2026-10-10 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/040-help.shopify.com/text.txt` (fetched 2026-10-11T06:12:59Z, captured)
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/040-help.shopify.com/text.txt` (2125 bytes), fetched 2026-10-11T06:12:59Z, captured
 - quote: You can use Markets to manage how different customers experience your store based on their location, customer group, retail location, or sales channel.
 - title: Markets
 - the page opens: You can use Markets to manage how different customers experience your store based on their location, customer group, retail location, or sales channel. Markets let you define audiences using conditions and tailor their experience with customizations, including currency, language, pricing, and theme content. You can manage your markets from the Markets page in your Shopify admin. Understanding and setting up markets Get familiar with the key markets concepts, such as conditions and customizations…
@@ -504,3 +508,43 @@
 - a note box: Note Before creating a new store in your organization, your main store must have a payment method added under Settings > Billing and a complete billing address under Settings > General > Store Details > Store address.
 - headings: Overview of expansion stores for organizations on the Shopify Plus plan > Considerations for expansion stores on the Shopify Plus plan
 - in context: … transactions.</p> </aside> ## Considerations for expansion stores on the Shopify Plus plan Before setting up expansion stores, review the following considerations for how they operate within your Shopify Plus plan organization: * Although your organization settings allow you to manage users and billing centrally across all stores, each individual store operates completely independently with its own separate data, settings, and configurations. * ⟪Store settings, products, collections, and inventory aren't synced between stores. They don't share data by default.⟫ * Changes made to one specific store aren't reflected across other stores in the organization. However, you can use third-party apps or Enterprise Resource Planning (ERP) systems to sync certain data, such as inventory, between stores if required. * Apps are billed on a per-store basis rather than for the entire organization. * Theme licenses are required for each individual store, and a license can't be shared across stores. A paid theme that y…
+
+### Q8-SH-109
+
+**Cited at:** section 1, line 45; section 2, line 121
+
+**Record** (`studies/proposals/records/Q8/shopify/statements.tsv`):
+- stmt_id: Q8-SH-109
+- bears_on: 3
+- identifier: plus_inactive_account:trial:review: Scheduled plan changes
+- statement: Once your trial is over and you are on the Plus plan, this store will move out of the My Store organization into a new organization. Your payment method and user roles for this store will be carried over.
+- scope: store capture-grow, observed 2026-10-02
+- cite_ids: Q8-SH-C116
+- from: held
+- note: in the saved HTML of step 420; the step's aria.yaml shows the same words, with My Store in bold
+
+**Citation Q8-SH-C116:** `observed-sh@51626891aa711ee9c3ef2d05ce63c95396dca949:derived/step-text-from-html/20261002T004032Z-sweep-capture-grow/420.html.txt` | run 20261002T004032Z-sweep-capture-grow, step 420 | 2026-10-02 | kind: observed | quote check: found
+- step 420: visit route plus_inactive_account:trial:review (path from router) | https://admin.shopify.com/store/capture-grow/access_account/plus/trial/review | "Shopify" | 2026-10-02T04:39:42.019Z
+- the step's files: `observed-sh@febbf6c98:raw/runs/20261002T004032Z-sweep-capture-grow/steps/420.aria.yaml`, `observed-sh@febbf6c98:raw/runs/20261002T004032Z-sweep-capture-grow/steps/420.html`, `observed-sh@febbf6c98:derived/step-text-from-html/20261002T004032Z-sweep-capture-grow/420.html.txt`
+- quote: Once your trial is over and you are on the Plus plan, this store will move out of the My Store organization into a new organization. Your payment method and user roles for this store will be carried over.
+- in context: …es government-regulated products like cannabis, alcohol, weapons, or pharmaceuticals. If you think you might, contact sales to complete your plan change. [heading: Payment method] To subscribe to Plus, add a payment method that supports transactions in US Dollar (USD $). Learn about eligible payment methods Add payment method Scheduled plan changes You will automatically roll onto a Plus term with these scheduled changes at the end of the trial. ⟪Once your trial is over and you are on the Plus plan, this store will move out of the My Store organization into a new organization. Your payment method and user roles for this store will be carried over.⟫ Term length Select between a 1- or 3-year term once your 2 month trial ends. [label: Term length] $2,500 x 12 months 1 year $2,300 x 36 months Save $200/mo 3 years Plus trial 2 months $399.00 USD October 2 (Today) Plus trial $399.00 USD $399.00 USD November 30, 2026 1-year Plus term begins $2,500 USD/mo 1 for 12 months After the trial, billing for Plus will switch to the end of each monthly billing cycle. Amount due $399 USD Today plus applicabl…
+
+### Q8-SH-K2169
+
+**Cited at:** section 1, line 46; section 2, line 82; section 3, line 145
+
+**Record** (`studies/proposals/records/Q8/shopify/copied.tsv`):
+- concern_id: SH-C-156
+- placement: responsible
+- structure: https://www.shopify.com/legal/terms
+- identifier: 9.9 Third Party Services and Third Party Partners
+- statement: Such Third Party Services are made available only as a convenience, and your purchase, access or use of any such Third Party Services is solely between you and the applicable third party services provider ("Third Party Provider").
+- cite_ids: SH-S-0058
+- note: first run's citation
+
+**Citation SH-S-0058:** `https://www.shopify.com/legal/terms` | 9.9 Third Party Services and Third Party Partners | 2026-08-01 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/143-shopify.com/text.txt` (84422 bytes), fetched 2026-10-11T06:13:11Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/117-shopify.com/text.txt` (84422 bytes), fetched 2026-10-12T10:51:23Z, captured
+- quote: Such Third Party Services are made available only as a convenience, and your purchase, access or use of any such Third Party Services is solely between you and the applicable third party services provider ("Third Party Provider").
+- title: Shopify Terms of Service - Shopify
+- in context: … to us sharing your data (and potentially the data of your customers) to those services. If you use third party services you agree that we do not provide a warranty, so get advice beforehand. Shopify may provide you with access to or enable third party software, applications ("Apps"), products, services or website links (collectively, "Third Party Services") for your consideration or use, including via the Shopify App Store or Partner Directory. ⟪Such Third Party Services are made available only as a convenience, and your purchase, access or use of any such Third Party Services is solely between you and the applicable third party services provider ("Third Party Provider").⟫ In addition to these Terms of Service, you also agree to be bound by the additional service-specific terms applicable to services you purchase from, or that are provided by, Third Party Providers. Your use of Third Party Services is entirely at your own risk and discretion, and it is your responsibility to read the terms and conditions between you and the Third Party Providers. In some instances, Shopify may receive a revenue share from Third Pa…

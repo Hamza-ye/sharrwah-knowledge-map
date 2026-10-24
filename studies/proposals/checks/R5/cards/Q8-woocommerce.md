@@ -53,7 +53,7 @@
 - from: held
 
 **Citation Q8-WC-C042:** `https://woocommerce.com/product-category/woocommerce-extensions/` | Extensions | 2026-10-10 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261010T235357Z-q1-woocommerce-sources/items/082-woocommerce.com/text.txt` (fetched 2026-10-10T23:54:06Z, captured)
+- captured: `evidence/product-class/runs/20261010T235357Z-q1-woocommerce-sources/items/082-woocommerce.com/text.txt` (2424 bytes), fetched 2026-10-10T23:54:06Z, captured
 - quote: Grow your business with hundreds of free and paid extensions
 - title: WooCommerce extensions - WooCommerce
 - in context: WooCommerce extensions - WooCommerce Skip to navigation Skip to content Develop on Woo Hire an expert Get support Sell Extensions Resources Enterprise ecommerce Extensions ⟪Grow your business with hundreds of free and paid extensions⟫ Discover Extensions Themes Business services Search filters 30-day money-back guarantee Support teams across the world Safe and secure online payments Sell WooCommerce WooCommerce pricing Payments No-code customization Marketing Checkout Shipping Mobile app Enterprise ecommerce Marketplace WooCommerce extensions WooCommerce themes New Essentials Collections Developed by Woo Build Woo for developers Developer resources Become a Woo agency Become …
@@ -112,7 +112,7 @@
 - cite_ids: WC-S-0628
 
 **Citation WC-S-0628:** `https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/features/shipping/shipping-method-api.md` | Shipping method API | 2026-10-10 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261010T235357Z-q1-woocommerce-sources/items/019-raw.githubusercontent.com/text.txt` (fetched 2026-10-10T23:54:00Z, captured)
+- captured: `evidence/product-class/runs/20261010T235357Z-q1-woocommerce-sources/items/019-raw.githubusercontent.com/text.txt` (33596 bytes), fetched 2026-10-10T23:54:00Z, captured
 - quote: WooCommerce has a Shipping Method API which plugins can use to add their own rates.
 - title: Shipping method API
 - the page opens: WooCommerce has a Shipping Method API which plugins can use to add their own rates. This article will take you through the steps to creating a new shipping method based on the core Flat Rate method that interacts with the Shipping API. Create a plugin First off, create a regular WordPress/WooCommerce plugin - see our Building Your First Extension guide to get started. You'll define your shipping method class in this plugin file and maintain it outside of WooCommerce. Checking for WooCommerce and…
@@ -132,7 +132,7 @@
 - from: held
 
 **Citation Q8-WC-C038:** `https://woocommerce.com/products/` | WooCommerce Marketplace | 2026-08-13 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261010T235357Z-q1-woocommerce-sources/items/091-woocommerce.com/text.txt` (fetched 2026-10-10T23:54:07Z, captured)
+- captured: `evidence/product-class/runs/20261010T235357Z-q1-woocommerce-sources/items/091-woocommerce.com/text.txt` (10600 bytes), fetched 2026-10-10T23:54:07Z, captured
 - quote: Discover Extensions Themes Business services
 - title: WooCommerce Extensions, Themes, Plugins, and More
 - in context: WooCommerce Extensions, Themes, Plugins, and More Skip to navigation Skip to content Develop on Woo Hire an expert Get support Sell Extensions Resources Enterprise ecommerce WooCommerce Marketplace ⟪Discover Extensions Themes Business services⟫ Curated picks for your store See more Explore our curated selection of standout extensions to boost sales and streamline your store operations. Mastercard Merchant Cloud Free download Free download ShipStation Excellence verified Meets elevated standards for security, compatibility, maintenance, and customer satisfaction. Learn more Excellence verified Free download Free download Rated 3.8 out of 5 stars 3.8 (21) Klaviyo Free download Free downl…
@@ -150,7 +150,7 @@
 - from: held
 
 **Citation Q8-WC-C040:** `https://woocommerce.com/products/` | Built by WooCommerce | 2026-08-13 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261010T235357Z-q1-woocommerce-sources/items/091-woocommerce.com/text.txt` (fetched 2026-10-10T23:54:07Z, captured)
+- captured: `evidence/product-class/runs/20261010T235357Z-q1-woocommerce-sources/items/091-woocommerce.com/text.txt` (10600 bytes), fetched 2026-10-10T23:54:07Z, captured
 - quote: Trust in high-quality solutions crafted by WooCommerce for a seamless and powerful store experience.
 - title: WooCommerce Extensions, Themes, Plugins, and More
 - in context: …evated standards for security, compatibility, maintenance, and customer satisfaction. Learn more Excellence verified Price $199 annually $199 annually Rated 4.4 out of 5 stars 4.4 (7) Stachethemes Seat Planner Excellence verified Meets elevated standards for security, compatibility, maintenance, and customer satisfaction. Learn more Excellence verified Price $79 annually $79 annually Rated 4.8 out of 5 stars 4.8 (5) Built by WooCommerce See more ⟪Trust in high-quality solutions crafted by WooCommerce for a seamless and powerful store experience.⟫ AutomateWoo Excellence verified Meets elevated standards for security, compatibility, maintenance, and customer satisfaction. Learn more Excellence verified Price $159 annually $159 annually Rated 3.5 out of 5 stars 3.5 (28) Product Bundles Excellence verified Meets elevated standards for security, compatibility, maintenance, and customer satisfaction. Learn more Excellence verified Price $79 annually $79 annually Rated 4.7 out of 5 stars 4.7 (1…
@@ -201,9 +201,9 @@
 - cite_ids: WC-S-0465
 
 **Citation WC-S-0465:** `https://wordpress.com/tos/` | 8. Specific Service Terms: c. Woo (Extensions) | 2026-10-06 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261010T235357Z-q1-woocommerce-sources/items/101-wordpress.com/text.txt` (fetched 2026-10-10T23:54:08Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/104-wordpress.com/text.txt` (fetched 2026-10-12T10:51:14Z, captured)
-- captured: `evidence/product-class/runs/20261019T020959Z-proposals-Q6-woocommerce/items/001-wordpress.com/text.txt` (fetched 2026-10-19T02:09:59Z, captured)
+- captured: `evidence/product-class/runs/20261010T235357Z-q1-woocommerce-sources/items/101-wordpress.com/text.txt` (58 bytes), `evidence/product-class/runs/20261010T235357Z-q1-woocommerce-sources/items/101-wordpress.com/raw.html` (213225 bytes), fetched 2026-10-10T23:54:08Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/104-wordpress.com/text.txt` (58 bytes), `evidence/product-class/runs/20261012T104936Z-s01-sources/items/104-wordpress.com/raw.html` (213351 bytes), fetched 2026-10-12T10:51:14Z, captured
+- captured: `evidence/product-class/runs/20261019T020959Z-proposals-Q6-woocommerce/items/001-wordpress.com/text.txt` (58 bytes), `evidence/product-class/runs/20261019T020959Z-proposals-Q6-woocommerce/items/001-wordpress.com/raw.html` (214001 bytes), fetched 2026-10-19T02:09:59Z, captured
 - quote: Extensions may have their own requirements (like requiring a connection to their servers in order to provide their services) and terms that apply.
 - title: WordPress.com
 - in context: …m give you the power to sell your products and services in whatever way your business needs. Your use of certain Services offered via Woo, like those related to tax calculation, payment, and shipping, may require a Jetpack connection to function. If you enable those features, the Jetpack-specific terms also apply. Extensions. The software in the extensions available in the Woo Marketplace is licensed under the GNU General Public License ("GPL"). ⟪Extensions may have their own requirements (like requiring a connection to their servers in order to provide their services) and terms that apply.⟫ Compatibility, access, updates, and support. When you purchase Paid Services from WooCommerce.com, you'll receive access to any necessary downloads along with updates and support (as described in our Support Policy) for those Paid Services for a period of one year, starting on the date of your purchase. Once your year is up, you'll need to renew your subscription if you'd like continued access to updates or support, or if you need to download an…
@@ -237,7 +237,7 @@
 - from: live
 
 **Citation Q8-WC-C073:** `https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/woo-marketplace/submitting-your-product.mdx` | Review process | 2026-10-19 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261019T004412Z-proposals-Q8-woocommerce/items/004-raw.githubusercontent.com/text.txt` (fetched 2026-10-19T00:44:15Z, captured)
+- captured: `evidence/product-class/runs/20261019T004412Z-proposals-Q8-woocommerce/items/004-raw.githubusercontent.com/text.txt` (11823 bytes), fetched 2026-10-19T00:44:15Z, captured
 - quote: A review consists of the following steps:
 - title: Submitting your product to the Woo Marketplace
 - the page opens: We look forward to reviewing your extension, theme, or integration for listing in the WooCommerce.com Marketplace. Before getting started, make sure you have applied for a Marketplace vendor account and your application has been approved. Pre-submission checklist Business review This includes an analysis of the product's business model and revenue share structure with Woo, as well as product rationale, competition, and developer/company history. - Mutually beneficial partnership: Products must s…
@@ -245,28 +245,28 @@
 - in context: … process. ![Replace zip file](./_media/replace-zip-file.png) :::tip If your product is at a stage other than *Changes required*, you will not be able to replace this file. Please comment within the submission to request a status change from the Marketplace team. ::: ## Review process Once the submitted product passes automated code tests, it moves to our review queue. Once it has been reviewed, the reviewer will share feedback (if any) with you. ⟪A review consists of the following steps:⟫ 1. **Business review**: to ensure your product is a good fit for the Marketplace, and that there is a business model to share revenue. 2. **Code review**: to ensure the submitted product's code is original, secure, and aligned with overall WordPress and WooCommerce quality standards. 3. **User experience (UX) review**: to ensure the product works as expected and its look and feel aligns with our UX guidelines. 4. **Launch preparations**: once a …
 
 **Citation Q8-WC-C074:** `https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/woo-marketplace/submitting-your-product.mdx` | Review process | 2026-10-19 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261019T004412Z-proposals-Q8-woocommerce/items/004-raw.githubusercontent.com/text.txt` (fetched 2026-10-19T00:44:15Z, captured)
+- captured: `evidence/product-class/runs/20261019T004412Z-proposals-Q8-woocommerce/items/004-raw.githubusercontent.com/text.txt` (11823 bytes), fetched 2026-10-19T00:44:15Z, captured
 - quote: 1. **Business review**: to ensure your product is a good fit for the Marketplace, and that there is a business model to share revenue.
 - title, opening and note boxes: as for this source's citation above
 - headings: Submitting your product to the Woo Marketplace > Review process
 - in context: …lace-zip-file.png) :::tip If your product is at a stage other than *Changes required*, you will not be able to replace this file. Please comment within the submission to request a status change from the Marketplace team. ::: ## Review process Once the submitted product passes automated code tests, it moves to our review queue. Once it has been reviewed, the reviewer will share feedback (if any) with you. A review consists of the following steps: ⟪1. **Business review**: to ensure your product is a good fit for the Marketplace, and that there is a business model to share revenue.⟫ 2. **Code review**: to ensure the submitted product's code is original, secure, and aligned with overall WordPress and WooCommerce quality standards. 3. **User experience (UX) review**: to ensure the product works as expected and its look and feel aligns with our UX guidelines. 4. **Launch preparations**: once a submission successfully passes these review phases, it will be formally approved and proceed to onboarding for launch. ## FAQs <details…
 
 **Citation Q8-WC-C075:** `https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/woo-marketplace/submitting-your-product.mdx` | Review process | 2026-10-19 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261019T004412Z-proposals-Q8-woocommerce/items/004-raw.githubusercontent.com/text.txt` (fetched 2026-10-19T00:44:15Z, captured)
+- captured: `evidence/product-class/runs/20261019T004412Z-proposals-Q8-woocommerce/items/004-raw.githubusercontent.com/text.txt` (11823 bytes), fetched 2026-10-19T00:44:15Z, captured
 - quote: 2. **Code review**: to ensure the submitted product's code is original, secure, and aligned with overall WordPress and WooCommerce quality standards.
 - title, opening and note boxes: as for this source's citation above
 - headings: Submitting your product to the Woo Marketplace > Review process
 - in context: …e comment within the submission to request a status change from the Marketplace team. ::: ## Review process Once the submitted product passes automated code tests, it moves to our review queue. Once it has been reviewed, the reviewer will share feedback (if any) with you. A review consists of the following steps: 1. **Business review**: to ensure your product is a good fit for the Marketplace, and that there is a business model to share revenue. ⟪2. **Code review**: to ensure the submitted product's code is original, secure, and aligned with overall WordPress and WooCommerce quality standards.⟫ 3. **User experience (UX) review**: to ensure the product works as expected and its look and feel aligns with our UX guidelines. 4. **Launch preparations**: once a submission successfully passes these review phases, it will be formally approved and proceed to onboarding for launch. ## FAQs <details> <summary>How long will it take for my product to be reviewed?</summary> Once the submission is in business review, you can expect a formal decision …
 
 **Citation Q8-WC-C076:** `https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/woo-marketplace/submitting-your-product.mdx` | Review process | 2026-10-19 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261019T004412Z-proposals-Q8-woocommerce/items/004-raw.githubusercontent.com/text.txt` (fetched 2026-10-19T00:44:15Z, captured)
+- captured: `evidence/product-class/runs/20261019T004412Z-proposals-Q8-woocommerce/items/004-raw.githubusercontent.com/text.txt` (11823 bytes), fetched 2026-10-19T00:44:15Z, captured
 - quote: 3. **User experience (UX) review**: to ensure the product works as expected and its look and feel aligns with our UX guidelines.
 - title, opening and note boxes: as for this source's citation above
 - headings: Submitting your product to the Woo Marketplace > Review process
 - in context: …d code tests, it moves to our review queue. Once it has been reviewed, the reviewer will share feedback (if any) with you. A review consists of the following steps: 1. **Business review**: to ensure your product is a good fit for the Marketplace, and that there is a business model to share revenue. 2. **Code review**: to ensure the submitted product's code is original, secure, and aligned with overall WordPress and WooCommerce quality standards. ⟪3. **User experience (UX) review**: to ensure the product works as expected and its look and feel aligns with our UX guidelines.⟫ 4. **Launch preparations**: once a submission successfully passes these review phases, it will be formally approved and proceed to onboarding for launch. ## FAQs <details> <summary>How long will it take for my product to be reviewed?</summary> Once the submission is in business review, you can expect a formal decision from a reviewer within 30 days. Throughout the review process, we may provide feedback and request changes before rejecting or ap…
 
 **Citation Q8-WC-C077:** `https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/woo-marketplace/submitting-your-product.mdx` | Review process | 2026-10-19 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261019T004412Z-proposals-Q8-woocommerce/items/004-raw.githubusercontent.com/text.txt` (fetched 2026-10-19T00:44:15Z, captured)
+- captured: `evidence/product-class/runs/20261019T004412Z-proposals-Q8-woocommerce/items/004-raw.githubusercontent.com/text.txt` (11823 bytes), fetched 2026-10-19T00:44:15Z, captured
 - quote: 4. **Launch preparations**: once a submission successfully passes these review phases, it will be formally approved and proceed to onboarding for launch.
 - title, opening and note boxes: as for this source's citation above
 - headings: Submitting your product to the Woo Marketplace > Review process
@@ -292,9 +292,9 @@
 - statement: 2.2. For Products listed on the Woo Marketplace, WooCommerce will pay Partner 70% of the Product Net Revenue that WooCommerce collects in connection with a User’s purchase of the Product from the Woo Marketplace on a monthly basis within thirty (30) days of the end of each calendar month.
 - cite_ids: WC-S-0580
 
-**Citation WC-S-0580:** `https://woocommerce.com/woo-vendor-agreement/` | 2.2 | 2023-06-02 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261010T235357Z-q1-woocommerce-sources/items/096-woocommerce.com/text.txt` (fetched 2026-10-10T23:54:07Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/103-woocommerce.com/text.txt` (fetched 2026-10-12T10:51:14Z, captured)
+**Citation WC-S-0580:** `https://woocommerce.com/woo-vendor-agreement/` | 2.2 | 2023-06-02 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261010T235357Z-q1-woocommerce-sources/items/096-woocommerce.com/text.txt` (27733 bytes), fetched 2026-10-10T23:54:07Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/103-woocommerce.com/text.txt` (27733 bytes), fetched 2026-10-12T10:51:14Z, captured
 - quote: 2.2. For Products listed on the Woo Marketplace, WooCommerce will pay Partner 70% of the Product Net Revenue that WooCommerce collects in connection with a User’s purchase of the Product from the Woo Marketplace on a monthly basis within thirty (30) days of the end of each calendar month.
 - title: Marketplace Vendor Agreement - WooCommerce
 - in context: …om all Partner Products if at any time if Partner does not comply with the terms of this Agreement or does not respond to our attempts to resolve an issue. 2. Fees 2.1. For Products listed on the WP Marketplace, Automattic will pay Partner 70% of the Product Net Revenue that Automattic collects in connection with a User's subscription to the Product from WP Marketplace on a monthly basis within thirty (30) days of the end of each calendar month. ⟪2.2. For Products listed on the Woo Marketplace, WooCommerce will pay Partner 70% of the Product Net Revenue that WooCommerce collects in connection with a User's purchase of the Product from the Woo Marketplace on a monthly basis within thirty (30) days of the end of each calendar month.⟫ 2.3. Partner shall be responsible and liable for all amounts relating to Taxes. We will be responsible for facilitating any User requests or claims related to returns, cancellations, refunds, and/or fraud. We will not be liable and Partner shall have no right to claw back any such amounts relating to the amounts outlined in the preceding sentence. 3. Removal of the Product 3.1. While we do not take on an obligation to monitor the Product, we res…
@@ -402,7 +402,7 @@
 - from: live
 
 **Citation Q8-WC-C056:** `https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/docs/contribution/releases/prereleases.md` | Beta | 2026-10-19 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261019T004412Z-proposals-Q8-woocommerce/items/002-raw.githubusercontent.com/text.txt` (fetched 2026-10-19T00:44:13Z, captured)
+- captured: `evidence/product-class/runs/20261019T004412Z-proposals-Q8-woocommerce/items/002-raw.githubusercontent.com/text.txt` (4011 bytes), fetched 2026-10-19T00:44:13Z, captured
 - quote: Meant to be used by plugin authors and early adopters to test the features and functionality in an upcoming version.
 - title: WooCommerce Pre-releases
 - the page opens: WooCommerce pre-releases provide early access to upcoming features and improvements, allowing developers, testers, and the community to prepare for future releases. This document outlines the different types of pre-releases available, their timing, and how they fit into the overall release cycle. Release Name Estimated Timing ------------------- ----------------------------------------------------------------- nightly Every night -dev At feature freeze -beta.1 1 week after feature freeze -beta.2…

@@ -80,8 +80,8 @@
 - from: held
 
 **Citation Q5-BC-C068:** `https://support.bigcommerce.com/s/article/Available-Payment-Gateways?language=en_US` | Alternative Payment Methods and Digital Wallets | 2026-10-13 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/015-support.bigcommerce.com/text.txt` (fetched 2026-10-13T00:35:35Z, captured)
-- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/002-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:39:51Z, captured)
+- captured: `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/015-support.bigcommerce.com/text.txt` (0 bytes), `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/015-support.bigcommerce.com/raw.html` (961887 bytes), fetched 2026-10-13T00:35:35Z, captured
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/002-support.bigcommerce.com/text.txt` (11615 bytes), fetched 2026-10-13T05:39:51Z, captured
 - quote: Note that the Amazon Pay, Apple Pay, and Google Pay digital wallets have a unique setup experience and are found under the Digital Wallets section of Settings › Payments.
 - title: BigCommerce Help Center
 - the page opens: BigCommerce Help Center Loading ×Sorry to interrupt CSS Error Refresh…
@@ -108,7 +108,7 @@
 - from: held
 
 **Citation Q5-BC-C085:** `https://support.bigcommerce.com/s/article/Intro-to-APMs` | Benefits of Alternative Payment Methods: SELLING INTERNATIONALLY | 2026-10-13 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/032-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:40:35Z, captured)
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/032-support.bigcommerce.com/text.txt` (12266 bytes), fetched 2026-10-13T05:40:35Z, captured
 - quote: Once enabled, local payment methods have country and currency prerequisites that ensure shoppers will see only the local payment methods applicable for their geolocation.
 - title: BigCommerce Help Center
 - the page opens: BigCommerce Help Center Loading ×Sorry to interrupt CSS Error Refresh…
@@ -127,7 +127,7 @@
 - cite_ids: BC-S-0325
 
 **Citation BC-S-0325:** `https://docs.bigcommerce.com/developer/docs/integrations/apps/guide/approval-requirements.md` | App Store Approval Requirements | 2026-10-12 | kind: stated | quote check: found (markup removed)
-- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/079-docs.bigcommerce.com/text.txt` (fetched 2026-10-12T04:20:34Z, captured)
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/079-docs.bigcommerce.com/text.txt` (7233 bytes), fetched 2026-10-12T04:20:34Z, captured
 - quote: The Marketplace team reviews all app submissions and tests apps to verify they meet App Marketplace listing standards.
 - title: App Store Approval Requirements
 - the page opens: > This page is for Developer. > For clean Markdown of any page, append.md to the page URL. > For a complete documentation index, see https://docs.bigcommerce.com/llms.txt. > For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server. The Marketplace team reviews all app submissions and tests apps to verify they meet App Marketplace listing standards. Verify your app meets the requirements below before submitting it for approval. G…
@@ -146,15 +146,15 @@
 - cite_ids: Q5-BC-C096;Q5-BC-C097
 - from: held
 
-**Citation Q5-BC-C096:** `https://support.bigcommerce.com/s/article/Pricing` | OPEN PAYMENT PROVIDER FEES | 2026-10-13 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/040-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:40:47Z, captured)
+**Citation Q5-BC-C096:** `https://support.bigcommerce.com/s/article/Pricing` | OPEN PAYMENT PROVIDER FEES | 2026-10-13 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/040-support.bigcommerce.com/text.txt` (17819 bytes), fetched 2026-10-13T05:40:47Z, captured
 - quote: On self-serve plans, an Open Payment Provider fee is applied to orders, both online and offline, that are not processed through providers on the Embedded Payment Providers list. The fee is determined at the order level, meaning each order is attributed to the provider that processed it.
 - title: BigCommerce Help Center
 - the page opens: BigCommerce Help Center Loading ×Sorry to interrupt CSS Error Refresh…
 - in context: …MV exceeding the threshold, not your total GMV for the month. This means costs scale predictably with your sales volume, which is particularly useful for businesses with seasonal variability. Fees are billed monthly in arrears (after the service period) as a separate line item on your invoice. Core and Growth plans automatically upgrade when you reach their GMV threshold, so there are no overage charges on these plans. OPEN PAYMENT PROVIDER FEES ⟪On self-serve plans, an Open Payment Provider fee is applied to orders, both online and offline, that are not processed through providers on the Embedded Payment Providers list. The fee is determined at the order level, meaning each order is attributed to the provider that processed it.⟫ Stores on a contracted Performance plan and orders processed through an Embedded Payment Provider are not subject to the fee. Orders processed externally to the BigCommerce platform are also subject to the fee. This includes orders placed using offline payment methods, orders originating from marketplaces like eBay or Etsy, orders processed through a point-of-sale (POS) app, and orders created via the API. Note that custom integrations to proces…
 
-**Citation Q5-BC-C097:** `https://support.bigcommerce.com/s/article/Pricing` | OPEN PAYMENT PROVIDER FEES | 2026-10-13 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/040-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:40:47Z, captured)
+**Citation Q5-BC-C097:** `https://support.bigcommerce.com/s/article/Pricing` | OPEN PAYMENT PROVIDER FEES | 2026-10-13 | kind: stated | quote check: found
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/040-support.bigcommerce.com/text.txt` (17819 bytes), fetched 2026-10-13T05:40:47Z, captured
 - quote: Stores on a contracted Performance plan and orders processed through an Embedded Payment Provider are not subject to the fee.
 - title, opening and note boxes: as for this source's citation above
 - in context: …voice. Core and Growth plans automatically upgrade when you reach their GMV threshold, so there are no overage charges on these plans. OPEN PAYMENT PROVIDER FEES On self-serve plans, an Open Payment Provider fee is applied to orders, both online and offline, that are not processed through providers on the Embedded Payment Providers list. The fee is determined at the order level, meaning each order is attributed to the provider that processed it. ⟪Stores on a contracted Performance plan and orders processed through an Embedded Payment Provider are not subject to the fee.⟫ Orders processed externally to the BigCommerce platform are also subject to the fee. This includes orders placed using offline payment methods, orders originating from marketplaces like eBay or Etsy, orders processed through a point-of-sale (POS) app, and orders created via the API. Note that custom integrations to processors on the Embedded Payment Provider list, including those connected via third-party apps, will also incur Open Payment Provi…
@@ -183,7 +183,7 @@
 - from: new
 
 **Citation S01-BC-C071:** `https://www.bigcommerce.com/blog/bigcommerce-payments-announcement/` | introduction after Key highlights | 2026-03-31 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/006-bigcommerce.com/text.txt` (fetched 2026-10-13T00:35:27Z, captured)
+- captured: `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/006-bigcommerce.com/text.txt` (8187 bytes), fetched 2026-10-13T00:35:27Z, captured
 - quote: BigCommerce Payments is here: an embedded payment solution, powered by PayPal, now available directly in your BigCommerce control panel for US customers on Core, Growth, and Scale plans.
 - title: BigCommerce Payments Announcement | BigCommerce | BigCommerce
 - in context: …an start accepting payments without adding another tool. Manage your balances, payouts, and bank connections with PayPal from a single dashboard inside BigCommerce. Give customers more ways to pay with cards: PayPal and Venmo ready at checkout. Offer flexible Buy Now, Pay Later options with PayPal Pay Later, Klarna, and Afterpay, built right in. Let shoppers check out faster with Apple Pay, Google Pay, and Fastlane by PayPal included by default. ⟪BigCommerce Payments is here: an embedded payment solution, powered by PayPal, now available directly in your BigCommerce control panel for US customers on Core, Growth, and Scale plans.⟫ For the first time, manage payments natively in BigCommerce. Accept payments, manage payouts, track your balance, and handle bank connections with PayPal without ever leaving your store. Payments and your store, finally in one place From the perspective of most customers, payments live outside your storefront. You process an order in BigCommerce, then open a separate tab to check your balance, issue a payout, or investigate a transaction. Contex…
@@ -201,8 +201,8 @@
 - from: held
 
 **Citation Q5-BC-C038:** `https://support.bigcommerce.com/s/article/Available-Payment-Gateways?language=en_US` | Open Payment Providers | 2026-10-13 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/015-support.bigcommerce.com/text.txt` (fetched 2026-10-13T00:35:35Z, captured)
-- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/002-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:39:51Z, captured)
+- captured: `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/015-support.bigcommerce.com/text.txt` (0 bytes), `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/015-support.bigcommerce.com/raw.html` (961887 bytes), fetched 2026-10-13T00:35:35Z, captured
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/002-support.bigcommerce.com/text.txt` (11615 bytes), fetched 2026-10-13T05:39:51Z, captured
 - quote: Processing payments through methods outside of the Embedded Payment Provider list will incur Open Payment Provider fees for stores on self-serve plans. Performance plan stores operating under contracted terms are not subject to this fee.
 - title: BigCommerce Help Center
 - the page opens: BigCommerce Help Center Loading ×Sorry to interrupt CSS Error Refresh…
@@ -221,8 +221,8 @@
 - from: held
 
 **Citation Q5-BC-C062:** `https://support.bigcommerce.com/s/article/Available-Payment-Gateways?language=en_US` | Open Payment Providers: OFFLINE PAYMENT METHODS | 2026-10-13 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/015-support.bigcommerce.com/text.txt` (fetched 2026-10-13T00:35:35Z, captured)
-- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/002-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:39:51Z, captured)
+- captured: `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/015-support.bigcommerce.com/text.txt` (0 bytes), `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/015-support.bigcommerce.com/raw.html` (961887 bytes), fetched 2026-10-13T00:35:35Z, captured
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/002-support.bigcommerce.com/text.txt` (11615 bytes), fetched 2026-10-13T05:39:51Z, captured
 - quote: In addition to the above payment gateway integrations, orders processed using offline payment methods are also subject to the Open Payment Provider fee.
 - title: BigCommerce Help Center
 - the page opens: BigCommerce Help Center Loading ×Sorry to interrupt CSS Error Refresh…
@@ -241,8 +241,8 @@
 - from: held
 
 **Citation Q5-BC-C033:** `https://support.bigcommerce.com/s/article/Available-Payment-Gateways?language=en_US` | Embedded Payment Providers: APP PAYMENT PROCESSORS | 2026-10-13 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/015-support.bigcommerce.com/text.txt` (fetched 2026-10-13T00:35:35Z, captured)
-- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/002-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:39:51Z, captured)
+- captured: `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/015-support.bigcommerce.com/text.txt` (0 bytes), `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/015-support.bigcommerce.com/raw.html` (961887 bytes), fetched 2026-10-13T00:35:35Z, captured
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/002-support.bigcommerce.com/text.txt` (11615 bytes), fetched 2026-10-13T05:39:51Z, captured
 - quote: In addition to the above payment gateway integrations, the following app payment processors are also Embedded Payment Providers:
 - title: BigCommerce Help Center
 - the page opens: BigCommerce Help Center Loading ×Sorry to interrupt CSS Error Refresh…
@@ -261,8 +261,8 @@
 - from: held
 
 **Citation Q5-BC-C071:** `https://support.bigcommerce.com/s/article/Available-Payment-Gateways?language=en_US` | FAQ: What is a hosted payment gateway? | 2026-10-13 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/015-support.bigcommerce.com/text.txt` (fetched 2026-10-13T00:35:35Z, captured)
-- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/002-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:39:51Z, captured)
+- captured: `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/015-support.bigcommerce.com/text.txt` (0 bytes), `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/015-support.bigcommerce.com/raw.html` (961887 bytes), fetched 2026-10-13T00:35:35Z, captured
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/002-support.bigcommerce.com/text.txt` (11615 bytes), fetched 2026-10-13T05:39:51Z, captured
 - quote: Note that hosted gateways are not compatible with Embedded Checkout on headless storefronts. In addition, most APMs and digital wallets do not support Embedded Checkout as they redirect shoppers to a hosted payment page.
 - title: BigCommerce Help Center
 - the page opens: BigCommerce Help Center Loading ×Sorry to interrupt CSS Error Refresh…
@@ -281,7 +281,7 @@
 - cite_ids: BC-S-0462
 
 **Citation BC-S-0462:** `https://www.commerce.com/terms/` | Third-Party Product Integration | 2026-06-01 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/108-commerce.com/text.txt` (fetched 2026-10-12T04:20:53Z, captured)
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/108-commerce.com/text.txt` (56197 bytes), fetched 2026-10-12T04:20:53Z, captured
 - quote: Commerce does not guarantee the availability of Third-Party Products and you acknowledge that Commerce may disable access to any Third-Party Products at any time and for any reason in its sole discretion without notice to you.
 - title: Master Services Agreement | Commerce
 - in context: …rovider. In some instances, Commerce may receive revenue from third-parties that Commerce recommends or that you otherwise engage with through the use of our services. We provide no warranties and make no representations with respect to any third-party. The availability of Third-Party Products on Commerce's mobile application and Services does not constitute or imply an endorsement, authorization, sponsorship, or affiliation by or with Commerce. ⟪Commerce does not guarantee the availability of Third-Party Products and you acknowledge that Commerce may disable access to any Third-Party Products at any time and for any reason in its sole discretion without notice to you.⟫ Commerce is not responsible or liable to anyone for discontinuation of the Third-Party Products. Hosting Services. Commerce has entered into arrangements with one or more third parties for hosting services that are essential to the Services, incorporated within the Services and without which the Services could not be provided to you. Entire Agreement. This Agreement is the entire agreement between Commerce and Customer regarding Customer's use o…
@@ -300,7 +300,7 @@
 - note: The copy Q5-BC-K0144 says of the list on the pricing page that it "may change over time".
 
 **Citation Q5-BC-C121:** `https://www.bigcommerce.com/payments/embedded-payment-providers/` | 21 Embedded Payment Providers | 2026-10-13 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/011-bigcommerce.com/text.txt` (fetched 2026-10-13T00:35:32Z, captured)
+- captured: `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/011-bigcommerce.com/text.txt` (8175 bytes), fetched 2026-10-13T00:35:32Z, captured
 - quote: The list may evolve over time. Your business will receive advance notice of any changes.
 - title: Embedded Payment Providers | BigCommerce
 - in context: …ower rates. The fee applies only to GMV processed through Open Payment Providers. Plan Open Payment Provider Fee Core 2.0% on Open Payment Provider GMV Growth 1.0% on Open Payment Provider GMV Scale 0.6% on Open Payment Provider GMV Performance Zero Open Payment Provider Fees 21 Embedded Payment Providers Orders processed through any of these 21 providers are not subject to the Open Payment Provider Fee, based on current partner classifications. ⟪The list may evolve over time. Your business will receive advance notice of any changes.⟫ Adyen Affirm Afterpay Amazon Pay Bank of New Zealand Bankful (Pinwheel) BigCommerce Payments BlueSnap (powered by Payroc) Checkout.com Clearpay Fortis (Acumatica Payments) Global Payments Klarna PayPal Braintree PayPal Complete Payments PayPal Wallet Sezzle Stripe TD Online Mart Worldpay Zip Money 1Visit FAQs for more details 2Open Payment Provider Fee rates apply once your store moves to the new plan structure (as early as June 1, 2026). Your p…
@@ -344,13 +344,13 @@
 - from: new
 
 **Citation S01-BC-C067:** `https://www.bigcommerce.com/blog/bigcommerce-payments-announcement/` | Payments and your store, finally in one place | 2026-03-31 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/006-bigcommerce.com/text.txt` (fetched 2026-10-13T00:35:27Z, captured)
+- captured: `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/006-bigcommerce.com/text.txt` (8187 bytes), fetched 2026-10-13T00:35:27Z, captured
 - quote: When you connect to BigCommerce Payments, you create a new BigCommerce Payments account.
 - title: BigCommerce Payments Announcement | BigCommerce | BigCommerce
 - in context: … BigCommerce, then open a separate tab to check your balance, issue a payout, or investigate a transaction. Context switching adds up quickly and can create blind spots in knowing your business. BigCommerce Payments is built to close that gap. Powered by PayPal, it brings payment processing directly into the BigCommerce control panel through a co-branded integration that builds on more than a decade of partnership between BigCommerce and PayPal. ⟪When you connect to BigCommerce Payments, you create a new BigCommerce Payments account.⟫ Your all-in-one Money Dashboard. PayPal powers the payment processing behind the scenes through your linked PayPal account, but all transactions made through BigCommerce Payments flow through your new BigCommerce Payments account for simplified management. The centerpiece of that experience is a new Money dashboard, which gives you real-time access to balance insights, top-ups, payouts, bank connections, and currency management. Everything inclu…
 
 **Citation S01-BC-C068:** `https://www.bigcommerce.com/blog/bigcommerce-payments-announcement/` | Payments and your store, finally in one place | 2026-03-31 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/006-bigcommerce.com/text.txt` (fetched 2026-10-13T00:35:27Z, captured)
+- captured: `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/006-bigcommerce.com/text.txt` (8187 bytes), fetched 2026-10-13T00:35:27Z, captured
 - quote: PayPal powers the payment processing behind the scenes through your linked PayPal account, but all transactions made through BigCommerce Payments flow through your new BigCommerce Payments account for simplified management.
 - title, opening and note boxes: as for this source's citation above
 - in context: …ing adds up quickly and can create blind spots in knowing your business. BigCommerce Payments is built to close that gap. Powered by PayPal, it brings payment processing directly into the BigCommerce control panel through a co-branded integration that builds on more than a decade of partnership between BigCommerce and PayPal. When you connect to BigCommerce Payments, you create a new BigCommerce Payments account. Your all-in-one Money Dashboard. ⟪PayPal powers the payment processing behind the scenes through your linked PayPal account, but all transactions made through BigCommerce Payments flow through your new BigCommerce Payments account for simplified management.⟫ The centerpiece of that experience is a new Money dashboard, which gives you real-time access to balance insights, top-ups, payouts, bank connections, and currency management. Everything included in BigCommerce Payments BigCommerce Payments is designed to match the full capabilities customers already rely on with PayPal - everything accessible from a single interface. Here is what's included at launch: Supported payment methods. Credit and debit…
@@ -464,7 +464,7 @@
 - from: held
 
 **Citation Q5-BC-C082:** `https://support.bigcommerce.com/s/article/Intro-to-APMs` | Introduction to Alternative Payment Methods | 2026-10-13 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/032-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:40:35Z, captured)
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/032-support.bigcommerce.com/text.txt` (12266 bytes), fetched 2026-10-13T05:40:35Z, captured
 - quote: In contrast with traditional payment methods, APMs are typically offered through a cooperating payment gateway. For example, ACH Direct Debit is enabled through Adyen or BlueSnap Direct as opposed to a standalone integration.
 - title: BigCommerce Help Center
 - the page opens: BigCommerce Help Center Loading ×Sorry to interrupt CSS Error Refresh…
@@ -483,7 +483,7 @@
 - from: held
 
 **Citation Q5-BC-C124:** `https://www.bigcommerce.com/payments/embedded-payment-providers/` | Why choose Embedded Payment Providers: Deep BigCommerce integration | 2026-10-13 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/011-bigcommerce.com/text.txt` (fetched 2026-10-13T00:35:32Z, captured)
+- captured: `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/011-bigcommerce.com/text.txt` (8175 bytes), fetched 2026-10-13T00:35:32Z, captured
 - quote: Embedded Providers integrate directly with the BigCommerce platform. Setup and ongoing support run through the same dashboard as your store.
 - title: Embedded Payment Providers | BigCommerce
 - in context: … Providers. ✅ If your business uses offline orders, that offline GMV counts as Open Payment Provider volume. ✅ The fee is charged to your business by BigCommerce. It must not be passed through to shoppers at checkout. Compliance note: Payment network rules and local laws restrict shopper-facing surcharges in many jurisdictions. Your business is responsible for its own compliance. Why choose Embedded Payment Providers Deep BigCommerce integration ⟪Embedded Providers integrate directly with the BigCommerce platform. Setup and ongoing support run through the same dashboard as your store.⟫ Optimized for conversion Embedded providers are optimized for the BigCommerce checkout experience - fewer friction points, faster load times, and payment methods shoppers already trust. Built to keep getting better BigCommerce continuously develops and improves the Embedded Provider experience. Choosing one means you're always on the road we're paving. Your plan determines your rate The Open Payment Provider Fee rate is set by your plan.2 Higher…
@@ -501,8 +501,8 @@
 - from: held
 
 **Citation Q5-BC-C075:** `https://support.bigcommerce.com/s/article/Available-Payment-Gateways?language=en_US` | FAQ: How will I know if changes are made to my payment methods in the control panel? | 2026-10-13 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/015-support.bigcommerce.com/text.txt` (fetched 2026-10-13T00:35:35Z, captured)
-- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/002-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:39:51Z, captured)
+- captured: `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/015-support.bigcommerce.com/text.txt` (0 bytes), `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/015-support.bigcommerce.com/raw.html` (961887 bytes), fetched 2026-10-13T00:35:35Z, captured
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/002-support.bigcommerce.com/text.txt` (11615 bytes), fetched 2026-10-13T05:39:51Z, captured
 - quote: When a payment method is enabled, disabled, or has settings updated, a notification will appear in the control panel dashboard. You can also see records of changes to your payment methods in the Staff Action Logs.
 - title: BigCommerce Help Center
 - the page opens: BigCommerce Help Center Loading ×Sorry to interrupt CSS Error Refresh…
@@ -521,7 +521,7 @@
 - from: held
 
 **Citation Q5-BC-C077:** `https://support.bigcommerce.com/s/article/Getting-Started-Payments` | Currency | 2026-10-13 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/028-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:40:29Z, captured)
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/028-support.bigcommerce.com/text.txt` (5672 bytes), fetched 2026-10-13T05:40:29Z, captured
 - quote: To allow shoppers to check out with a currency, you must first set up a payment provider that supports it.
 - title: BigCommerce Help Center
 - the page opens: BigCommerce Help Center Loading ×Sorry to interrupt CSS Error Refresh…
@@ -557,7 +557,7 @@
 - cite_ids: BC-S-0460
 
 **Citation BC-S-0460:** `https://www.commerce.com/terms/` | Scope and Definitions: Scope | 2026-06-01 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/108-commerce.com/text.txt` (fetched 2026-10-12T04:20:53Z, captured)
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/108-commerce.com/text.txt` (56197 bytes), fetched 2026-10-12T04:20:53Z, captured
 - quote: Except as otherwise specified, this Agreement does not apply to Third-Party Products, which are governed by their own terms of service.
 - title: Master Services Agreement | Commerce
 - in context: … our explicit prior written approval. Commerce reserves the right to update or modify this Agreement at any time, with updates taking immediate effect upon posting to our website or notification to you. By engaging with Commerce's Services, you acknowledge that you have read, understood, and agree to be bound by this Agreement between you and Commerce. Scope and Definitions Scope. This Agreement governs your use of the websites and the Services. ⟪Except as otherwise specified, this Agreement does not apply to Third-Party Products, which are governed by their own terms of service.⟫ Incorporated Terms. The following policies, guidelines, and agreements ("Incorporated Terms") are hereby incorporated into, and form an integral part of, the Agreement to which you are agreeing to be bound: Privacy Policy (Commerce.com Specific) (Feedonomics Specific) (Makeswift Specific) Acceptable Use Policy API Terms Fees and Billing Terms Infringing Materials Protocol Jurisdiction-Specific Terms Merchant-Client Terms Mobile App Terms Store T…
@@ -575,13 +575,13 @@
 - from: held
 
 **Citation Q5-BC-C116:** `https://www.commerce.com/terms/` | Checkout Environment; PCI | 2026-06-01 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/108-commerce.com/text.txt` (fetched 2026-10-12T04:20:53Z, captured)
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/108-commerce.com/text.txt` (56197 bytes), fetched 2026-10-12T04:20:53Z, captured
 - quote: For example, you will be solely liable for PCI compliance with respect to modifications to the checkout environment, including modifications via apps or a developer,
 - title: Master Services Agreement | Commerce
 - in context: …Condition"): (i) you comply with Commerce documentation and in-product notifications, and (ii) you use a Commerce checkout environment that has not been modified except through the Commerce control panel. To the extent permitted by applicable law, Commerce excludes and disclaims any liability related to the unauthorized use of Customer Data, including liability due to PCI noncompliance, in the event any PCI Compliance Condition is not satisfied. ⟪For example, you will be solely liable for PCI compliance with respect to modifications to the checkout environment, including modifications via apps or a developer,⟫ modifications of Commerce's distributed open source checkout code in any manner that could result in or contribute to PCI noncompliance, use of a checkout environment not provided by Commerce, or use of a payment provider for which Commerce does not provide an integration. Use Restrictions. This is an agreement for Services, and you are not granted a license to any software by this Agreement. Except as permitted and non-excludable under applicab…
 
 **Citation Q5-BC-C117:** `https://www.commerce.com/terms/` | Checkout Environment; PCI | 2026-06-01 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/108-commerce.com/text.txt` (fetched 2026-10-12T04:20:53Z, captured)
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/108-commerce.com/text.txt` (56197 bytes), fetched 2026-10-12T04:20:53Z, captured
 - quote: use of a checkout environment not provided by Commerce, or use of a payment provider for which Commerce does not provide an integration.
 - title, opening and note boxes: as for this source's citation above
 - in context: …o the unauthorized use of Customer Data, including liability due to PCI noncompliance, in the event any PCI Compliance Condition is not satisfied. For example, you will be solely liable for PCI compliance with respect to modifications to the checkout environment, including modifications via apps or a developer, modifications of Commerce's distributed open source checkout code in any manner that could result in or contribute to PCI noncompliance, ⟪use of a checkout environment not provided by Commerce, or use of a payment provider for which Commerce does not provide an integration.⟫ Use Restrictions. This is an agreement for Services, and you are not granted a license to any software by this Agreement. Except as permitted and non-excludable under applicable law, you will not, directly or indirectly: reverse engineer, decompile, disassemble, or otherwise attempt to discover the source code, object code, or underlying structure, ideas, or algorithms of or included in the Services or any software, documentation or data related…

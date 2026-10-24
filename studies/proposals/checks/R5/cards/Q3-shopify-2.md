@@ -73,8 +73,8 @@
 - note: first run's citation, moved from decides: the sentence names the Store Owner as the contracting party, which answers who is responsible
 
 **Citation SH-S-0019:** `https://www.shopify.com/legal/terms` | 2.1 Store Owner | 2026-08-01 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/143-shopify.com/text.txt` (fetched 2026-10-11T06:13:11Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/117-shopify.com/text.txt` (fetched 2026-10-12T10:51:23Z, captured)
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/143-shopify.com/text.txt` (84422 bytes), fetched 2026-10-11T06:13:11Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/117-shopify.com/text.txt` (84422 bytes), fetched 2026-10-12T10:51:23Z, captured
 - quote: the person signing up for the Service by opening an Account will be the contracting party ("Store Owner") for the purposes of our Terms of Service
 - title: Shopify Terms of Service - Shopify
 - in context: …Store Owner responsible for your Account. We automatically create certain accounts for you to accept payments. You are responsible for activating and deactivating these accounts and complying with their terms, which may be with various third parties, including but not limited to PayPal, Apple Pay, Google Payment and Shop Pay. Any domain you purchase through us will automatically renew unless you opt out. 2.1 Store Owner Subject to Section 2.1.2, ⟪the person signing up for the Service by opening an Account will be the contracting party ("Store Owner") for the purposes of our Terms of Service⟫ and will be the person who is authorized to use any corresponding Account we may provide to the Store Owner in connection with the Service. You are responsible for ensuring that the name of the Store Owner (including the legal name of the company that owns the Store, if applicable) is clearly visible on the Store's website. If you are signing up for the Services on behalf of your employer, your employer will be the Store Owner. If you are signin…
@@ -252,8 +252,8 @@
 - from: new
 
 **Citation S01-SH-C131:** `https://help.shopify.com/en/manual/payments/shopify-payments/payouts/account-holds.md` | note | 2026-10-12 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/068-help.shopify.com/text.txt` (fetched 2026-10-11T06:13:02Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/036-help.shopify.com/text.txt` (fetched 2026-10-12T10:50:14Z, captured)
+- captured: `evidence/product-class/runs/20261011T061248Z-q1-shopify-sources/items/068-help.shopify.com/text.txt` (5425 bytes), fetched 2026-10-11T06:13:02Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/036-help.shopify.com/text.txt` (5425 bytes), fetched 2026-10-12T10:50:14Z, captured
 - quote: You can still use your Shopify store when your Shopify Payments account is on hold. You can continue to work on your store, however, you can't receive payouts through Shopify Payments until the reason for the hold is resolved.
 - title: Shopify Payments account holds
 - the page opens: After you set up your Shopify Payments account, you might receive a notification in your Shopify admin or an email from Shopify indicating that your Shopify Payments account is on hold. The message in your Shopify admin might include information that's specific to your store, or it might request that you contact Shopify Support. Only the store owner can access specific account details. The best source of information to resolve the issue is either the notification in your Shopify admin or the ema…

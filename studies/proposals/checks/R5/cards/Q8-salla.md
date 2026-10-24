@@ -105,7 +105,7 @@
 
 **Citation SA-S-3528:** `observed-sa@145f137:structures/salla/dashboard-features/merchant@en/items.jsonl` | line 568 | 2026-10-09 | kind: observed | quote check: found
 - quote: {"position": 567, "name": "plans", "value": {"basic": {"active": true, "features_count": 50}, "plus": {"active": false, "features_count": 100}, "pro": {"active": false, "features_count": 150}, "special": {"active": false, "features_count": 5000}}}
-- in context: …n": 564, "name": "multi-warehouse-link", "value": {"enabled": false, "released": false, "plans": ["team", "special"], "type": "feature"}} {"position": 565, "name": "multi-countries-advanced", "value": {"enabled": false, "released": true, "plans": ["special"], "type": "feature"}} {"position": 566, "name": "display-parent-company-name", "value": {"enabled": false, "released": false, "plans": ["basic", "plus", "pro", "special"], "type": "feature"}} ⟪{"position": 567, "name": "plans", "value": {"basic": {"active": true, "features_count": 50}, "plus": {"active": false, "features_count": 100}, "pro": {"active": false, "features_count": 150}, "special": {"active": false, "features_count": 5000}}}⟫
+- in context: ⟪{"position": 567, "name": "plans", "value": {"basic": {"active": true, "features_count": 50}, "plus": {"active": false, "features_count": 100}, "pro": {"active": false, "features_count": 150}, "special": {"active": false, "features_count": 5000}}}⟫
 
 ### Q8-SA-043
 
@@ -176,7 +176,7 @@
 
 **Citation SA-S-3500:** `observed-sa@145f137:structures/salla/dashboard-features/merchant@en/items.jsonl` | line 540 | 2026-10-09 | kind: observed | quote check: found
 - quote: {"position": 539, "name": "multi-countries", "value": {"enabled": false, "released": true, "plans": ["special", "pro"], "countries": [], "type": "feature", "count": 0, "limit": 10}}
-- in context: …: {"enabled": false, "released": false, "plans": ["plus", "pro", "special"], "countries": [], "type": "feature"}} {"position": 537, "name": "digital-file", "value": {"enabled": false, "released": true, "plans": ["plus", "pro", "special"], "countries": [], "type": "feature"}} {"position": 538, "name": "digital-product-settings", "value": {"enabled": false, "released": true, "plans": ["plus", "pro", "special"], "countries": [], "type": "feature"}} ⟪{"position": 539, "name": "multi-countries", "value": {"enabled": false, "released": true, "plans": ["special", "pro"], "countries": [], "type": "feature", "count": 0, "limit": 10}}⟫ {"position": 540, "name": "product-default-weight", "value": {"enabled": false, "released": true, "plans": ["plus", "pro", "special"], "countries": [], "type": "feature"}} {"position": 541, "name": "product-show-sku", "value": {"enabled": false, "released": true, "plans": ["plus", "pro", "special"], "countries": [], "type": "feature"}} {"position": 542, "name": "product-preview", "value": {"enabled": true, "released": true, "plans": [], "countri…
+- in context: ⟪{"position": 539, "name": "multi-countries", "value": {"enabled": false, "released": true, "plans": ["special", "pro"], "countries": [], "type": "feature", "count": 0, "limit": 10}}⟫
 
 ### Q8-SA-K2105
 
@@ -194,7 +194,7 @@
 
 **Citation SA-S-3208:** `observed-sa@145f137:structures/salla/dashboard-features/merchant@en/items.jsonl` | line 248 | 2026-10-09 | kind: observed | quote check: found
 - quote: {"position": 247, "name": "convert-flow", "value": {"enabled": false, "released": false, "type": "app", "app_id": "2055995646", "plans": ["plus", "pro", "special"], "countries": [], "url": "https://s.salla.sa/apps/install/2055995646"}}
-- in context: …false, "released": true, "type": "app", "app_id": null, "plans": ["plus", "pro", "special"], "countries": [], "url": null}} {"position": 245, "name": "passioneurs-service", "value": {"enabled": true, "released": true, "plans": [], "countries": [], "type": "feature"}} {"position": 246, "name": "poptin", "value": {"enabled": false, "released": false, "type": "app", "app_id": null, "plans": ["plus", "pro", "special"], "countries": [], "url": null}} ⟪{"position": 247, "name": "convert-flow", "value": {"enabled": false, "released": false, "type": "app", "app_id": "2055995646", "plans": ["plus", "pro", "special"], "countries": [], "url": "https://s.salla.sa/apps/install/2055995646"}}⟫ {"position": 248, "name": "mouse-flow", "value": {"enabled": false, "released": false, "type": "app", "app_id": "857091396", "plans": ["plus", "pro", "special"], "countries": [], "url": "https://s.salla.sa/apps/install/857091396"}} {"position": 249, "name": "popup-smart", "value": {"enabled": false, "released": false, "type": "app", "app_id": "1106782482", "plans": ["plus", "pro", "special"], "countries": [], "url": "https://s.salla.sa/apps/inst…
+- in context: ⟪{"position": 247, "name": "convert-flow", "value": {"enabled": false, "released": false, "type": "app", "app_id": "2055995646", "plans": ["plus", "pro", "special"], "countries": [], "url": "https://s.salla.sa/apps/install/2055995646"}}⟫
 
 ### Q8-SA-050
 
@@ -254,7 +254,7 @@
 - cite_ids: SA-S-0197
 
 **Citation SA-S-0197:** `https://docs.salla.dev/embedded-sdk/overview.md` | Overview (line 3 of the markdown) | 2026-10-10 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261010T235130Z-q1-salla-sources/items/006-docs.salla.dev/text.txt` (fetched 2026-10-10T23:51:31Z, captured)
+- captured: `evidence/product-class/runs/20261010T235130Z-q1-salla-sources/items/006-docs.salla.dev/text.txt` (3524 bytes), fetched 2026-10-10T23:51:31Z, captured
 - quote: The **Salla Embedded SDK** is a powerful communication bridge that allows your third-party application (running in an iframe) to interact securely with the Salla Merchant Dashboard.
 - title: Welcome to Salla Embedded SDK 💫
 - the page opens: The Salla Embedded SDK is a powerful communication bridge that allows your third-party application (running in an iframe) to interact securely with the Salla Merchant Dashboard. It provides a set of helper methods to sync themes, handle navigation, trigger UI components, and manage authentication ensuring your app feels like a native part of the Salla platform. This documentation is written for third-party developers to help build seamless, integrated applications that live directly within the S…
@@ -274,7 +274,7 @@
 - cite_ids: SA-S-0209
 
 **Citation SA-S-0209:** `https://docs.salla.dev/partner-apis/app-snippet.md` | # Intro to App Snippets (line 3 of the markdown) | 2026-10-10 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261010T235130Z-q1-salla-sources/items/007-docs.salla.dev/text.txt` (fetched 2026-10-10T23:51:31Z, captured)
+- captured: `evidence/product-class/runs/20261010T235130Z-q1-salla-sources/items/007-docs.salla.dev/text.txt` (14744 bytes), fetched 2026-10-10T23:51:31Z, captured
 - quote: **App Snippet** lets you extend any merchant store with custom **JavaScript** from the App Snippets section in the [Salla Partners Portal](https://portal.salla.partners). The Snippet is injected automatically when your app is installed.
 - title: Intro to App Snippets
 - the page opens: App Snippet lets you extend any merchant store with custom JavaScript from the App Snippets section in the Salla Partners Portal. The Snippet is injected automatically when your app is installed. Salla uploads your snippet as a.js file to its CDN and serves it on stores that have your app installed, no deployment or hosting needed on your end. The editor has been rebuilt from the ground up. What was once an HTML field is now a dedicated JavaScript editor, which means raw markup injection is gone…
@@ -294,7 +294,7 @@
 - from: held
 
 **Citation Q8-SA-C030:** `https://docs.salla.dev/app-functions/welcome.md` | ## What are App Functions? | 2026-10-10 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261010T235130Z-q1-salla-sources/items/003-docs.salla.dev/text.txt` (fetched 2026-10-10T23:51:31Z, captured)
+- captured: `evidence/product-class/runs/20261010T235130Z-q1-salla-sources/items/003-docs.salla.dev/text.txt` (8910 bytes), fetched 2026-10-10T23:51:31Z, captured
 - quote: App Functions allow you to embed custom logic directly into the lifecycle of merchant and customer activities on Salla.
 - title: Welcome 👋
 - the page opens: Overview Welcome to the App Functions documentation for third-party developers. This comprehensive guide will help you build powerful, event-driven applications on Salla platform. What are App Functions? App Functions allow you to embed custom logic directly into the lifecycle of merchant and customer activities on Salla. Write serverless functions that execute automatically when specific events occur in a store - no infrastructure to manage, automatic scaling, and seamless integration with Sall…
@@ -314,7 +314,7 @@
 - cite_ids: SA-S-0198
 
 **Citation SA-S-0198:** `https://partners.salla.com/legal/privacy` | المادة الأولى – المقدّمة والتعريفات (line 36 of the rendered text) | 2026-10-10 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261010T235130Z-q1-salla-sources/items/037-partners.salla.com/text.txt` (fetched 2026-10-10T23:51:51Z, captured)
+- captured: `evidence/product-class/runs/20261010T235130Z-q1-salla-sources/items/037-partners.salla.com/text.txt` (22116 bytes), fetched 2026-10-10T23:51:51Z, captured
 - quote: مزود الخدمة: الشريك الذي يقدم خدماته لتجار سلة من خلال منصة الشركاء، ويُعد طرفًا مستقلاً.
 - title: سياسة الانضمام إلى برنامج شركاء سلة | شركاء سلة
 - in context: … شريك منصة سلة أو الشريك: كل من ينضم إلى برنامج شركاء سلة لتقديم خدمات أو حلول أو منتجات إلى تجار سلة، ويشمل ذلك (مطوري التطبيقات، مطوري الثيمات، مزودي الخدمات، والمسوقين بالعمولة)، سواء كان شخصًا طبيعياً أو اعتبارياً. • التاجر: كل تاجر يستخدم منصة سلة لإنشاء متجره الإلكتروني ويستفيد من الخدمات و الحلول المقدمة من الشركاء. • الاتفاقية: تعني هذه الاتفاقية التي تتضمن شروط وأحكام استخدام منصة سلة من قبل الشريك، وتنظم العلاقة بين منصة سلة والشريك. • ⟪مزود الخدمة: الشريك الذي يقدم خدماته لتجار سلة من خلال منصة الشركاء، ويُعد طرفًا مستقلاً.⟫ المادة الثانية - أهلية الشريك القانونية: • يقر الشريك بأنه يتمتع بأهلية قانونية ونظامية وفقًا للأنظمة السارية في المملكة العربية السعودية. • إذا كان الشريك كيانًا نظاميًا (شركة أو مؤسسة)، فيجب أن يكون مرخصًا ومصرحًا له بممارسة النشاط التجاري ذي العلاقة. • يقر الشريك بأنه مسؤول مسؤولية كاملة عن الخدمات أو المنتجات التي يقدمها عبر منصة الشركاء. المادة الثالثة - شروط قبول و تسجيل الشركاء شروط القبول في البرنامج ١. هوية واضحة: يجب تقديم بيانات شخصية…
@@ -348,7 +348,7 @@
 - cite_ids: SA-S-0027
 
 **Citation SA-S-0027:** `https://partners.salla.com/legal/apps-policy` | المادة (5) – العمولات والدفع (line 55 of the rendered text) | 2026-10-10 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261010T235130Z-q1-salla-sources/items/036-partners.salla.com/text.txt` (fetched 2026-10-10T23:51:51Z, captured)
+- captured: `evidence/product-class/runs/20261010T235130Z-q1-salla-sources/items/036-partners.salla.com/text.txt` (8093 bytes), fetched 2026-10-10T23:51:51Z, captured
 - quote: تُصرف مستحقات المطورين بعد مرور فترة ضمان الجودة والاسترداد (عادة 15 يومًا).
 - title: سياسة الشروط والاستخدام – متجر تطبيقات سلة | شركاء سلة
 - in context: …كلفته وبيانات المطور قبل التفعيل. • يحق للتاجر إلغاء الاشتراك أو حذف التطبيق في أي وقت، دون استحقاق لاسترداد كامل في حال كانت الخدمة مدفوعة حسب سياسة المطور. • يجب عدم استخدام التطبيقات في أنشطة مخالفة للأنظمة أو تتعارض مع قيم المجتمع. المادة (5) - العمولات والدفع: • في حال كان التطبيق مدفوعًا، فإن عملية الدفع تتم عبر منصة سلة وتخضع للعمولات والنسب المعتمدة. • تحتفظ منصة سلة بحقها في اقتطاع نسبة من قيمة الاشتراك مقابل خدمات الاستضافة والتكامل. • ⟪تُصرف مستحقات المطورين بعد مرور فترة ضمان الجودة والاسترداد (عادة 15 يومًا).⟫ المادة (6) - الملكية الفكرية: • جميع حقوق التطبيقات تعود للمطورين ما لم يتم الاتفاق خلاف ذلك، فيما تعود واجهة المتجر والتكاملات الداخلية لمنصة سلة، ولا يجوز لأي طرف استخدامها دون إذن كتابي مسبق. المادة (7) - إيقاف الخدمة أو التطبيق: • تحتفظ منصة سلة بحقها في إيقاف أي تطبيق مؤقتًا أو دائمًا إذا تبين وجود مخالفات فنية أو قانونية. • يحق للمطور حذف تطبيقه من المتجر بعد إشعار التجار المشتركين به، ويجب أن يتم ذلك وفق سياسة إشعار مدتها 15 يومًا. • يجوز…
@@ -366,7 +366,7 @@
 - cite_ids: SA-S-0207
 
 **Citation SA-S-0207:** `https://docs.salla.dev/versioning.md` | ### When to Add a New Version? (line 19 of the markdown) | 2026-10-10 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261010T235130Z-q1-salla-sources/items/012-docs.salla.dev/text.txt` (fetched 2026-10-10T23:51:32Z, captured)
+- captured: `evidence/product-class/runs/20261010T235130Z-q1-salla-sources/items/012-docs.salla.dev/text.txt` (1249 bytes), fetched 2026-10-10T23:51:32Z, captured
 - quote: APIs should only be versioned up when a breaking change occurs.
 - title: Versioning
 - the page opens: Changes in an API are inevitable as your understanding and experience with a system evolve. To effectively manage the impact of these changes, we have implemented URI versioning. URI Versioning One approach to version a REST API is by incorporating the version number within the URI path. When the version is introduced in the URI space, the representations of resources are treated as immutable. Therefore, when modifications are necessary, a new URI space must be created. For instance, consider an…
@@ -386,7 +386,7 @@
 - cite_ids: SA-S-0208
 
 **Citation SA-S-0208:** `https://docs.salla.dev/versioning.md` | # Versioning (line 3 of the markdown) | 2026-10-10 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261010T235130Z-q1-salla-sources/items/012-docs.salla.dev/text.txt` (fetched 2026-10-10T23:51:32Z, captured)
+- captured: `evidence/product-class/runs/20261010T235130Z-q1-salla-sources/items/012-docs.salla.dev/text.txt` (1249 bytes), fetched 2026-10-10T23:51:32Z, captured
 - quote: To effectively manage the impact of these changes, we have implemented URI versioning.
 - title: Versioning
 - the page opens: Changes in an API are inevitable as your understanding and experience with a system evolve. To effectively manage the impact of these changes, we have implemented URI versioning. URI Versioning One approach to version a REST API is by incorporating the version number within the URI path. When the version is introduced in the URI space, the representations of resources are treated as immutable. Therefore, when modifications are necessary, a new URI space must be created. For instance, consider an…
@@ -477,7 +477,7 @@
 
 **Citation SA-S-3437:** `observed-sa@145f137:structures/salla/dashboard-features/merchant@en/items.jsonl` | line 477 | 2026-10-09 | kind: observed | quote check: found
 - quote: {"position": 476, "name": "apps-country-filter", "value": {"enabled": true, "released": true, "plans": [], "countries": [], "type": "feature"}}
-- in context: …type": "feature"}} {"position": 473, "name": "apps-apple-pay", "value": {"enabled": true, "released": true, "plans": [], "countries": [], "type": "feature"}} {"position": 474, "name": "apps-store-builder", "value": {"enabled": true, "released": true, "plans": [], "countries": [], "type": "feature"}} {"position": 475, "name": "services-redirect", "value": {"enabled": true, "released": true, "plans": ["basic"], "countries": [], "type": "feature"}} ⟪{"position": 476, "name": "apps-country-filter", "value": {"enabled": true, "released": true, "plans": [], "countries": [], "type": "feature"}}⟫ {"position": 477, "name": "renew-price-by-slug", "value": {"enabled": false, "released": false, "plans": [], "countries": [], "type": "feature"}} {"position": 478, "name": "currency-exchange", "value": {"enabled": true, "released": true, "plans": [], "countries": [], "type": "feature"}} {"position": 479, "name": "apps-onboarding", "value": {"enabled": true, "released": true, "plans": [], "countries": [], "type": "feature"}} {"position": 480, "na…
+- in context: ⟪{"position": 476, "name": "apps-country-filter", "value": {"enabled": true, "released": true, "plans": [], "countries": [], "type": "feature"}}⟫
 
 ### Q8-SA-K0052
 
@@ -495,7 +495,7 @@
 
 **Citation SA-S-3395:** `observed-sa@145f137:structures/salla/dashboard-features/merchant@en/items.jsonl` | line 435 | 2026-10-09 | kind: observed | quote check: found
 - quote: {"position": 434, "name": "enable-special-plan-purchase", "value": {"enabled": true, "released": false, "plans": [], "countries": [], "type": "feature"}}
-- in context: …: [], "type": "feature"}} {"position": 431, "name": "apps-bundles", "value": {"enabled": true, "released": true, "plans": [], "countries": [], "type": "feature"}} {"position": 432, "name": "apps-card-v2", "value": {"enabled": true, "released": true, "plans": [], "countries": [], "type": "feature"}} {"position": 433, "name": "merchant-app-store-login", "value": {"enabled": true, "released": false, "plans": [], "countries": [], "type": "feature"}} ⟪{"position": 434, "name": "enable-special-plan-purchase", "value": {"enabled": true, "released": false, "plans": [], "countries": [], "type": "feature"}}⟫ {"position": 435, "name": "salla-portal-marketplace", "value": {"enabled": true, "released": true, "plans": [], "countries": [], "type": "feature"}} {"position": 436, "name": "install-new-hydra-method", "value": {"enabled": true, "released": false, "plans": [], "countries": [], "type": "feature"}} {"position": 437, "name": "install-app-method-v2", "value": {"enabled": true, "released": false, "plans": [], "countries": [], "type": "feature"}} {"p…
+- in context: ⟪{"position": 434, "name": "enable-special-plan-purchase", "value": {"enabled": true, "released": false, "plans": [], "countries": [], "type": "feature"}}⟫
 
 ### Q8-SA-K2405
 

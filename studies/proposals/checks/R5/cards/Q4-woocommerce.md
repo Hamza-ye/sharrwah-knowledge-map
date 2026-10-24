@@ -45,7 +45,7 @@
 - from: held
 
 **Citation Q4-WC-C002:** `https://woocommerce.com/document/bacs/` | Direct Bank Transfer (BACS) | 2025-08-19 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/079-woocommerce.com/text.txt` (fetched 2026-10-12T10:50:50Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/079-woocommerce.com/text.txt` (5990 bytes), fetched 2026-10-12T10:50:50Z, captured
 - quote: This is an offline payment method, meaning that the payment process is manual and happens outside your WooCommerce powered store.
 - title: Direct Bank Transfer (BACS) Documentation - WooCommerce
 - in context: …erce ProductsExpand Taxes ShippingExpand Payments Orders Data and reporting Customers Marketing Site administrationExpand Store designExpand Mobile AppExpand Get helpExpand Documentation / WooCommerce / Payments / Direct Bank Transfer (BACS) Direct Bank Transfer (BACS) Direct Bank Transfer, which might also be referred to as Bank Account Clearing System (BACS), is a payment method that lets your customers pay you directly via their bank account. ⟪This is an offline payment method, meaning that the payment process is manual and happens outside your WooCommerce powered store.⟫ It's important to be clear that when a customer chooses to pay with Direct Bank Transfer, it is up to them to initiate this payment via their bank. The order is set to "On hold" in WooCommerce, as you the store owner must check your bank account for this incoming deposit before processing their order. It's essential to verify that you've been paid, and the transaction has cleared and is in your account before shipping an order and marking it as …
@@ -63,7 +63,7 @@
 - from: held
 
 **Citation Q4-WC-C004:** `https://woocommerce.com/document/cash-on-delivery/` | Cash on Delivery | 2025-05-31 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/080-woocommerce.com/text.txt` (fetched 2026-10-12T10:50:51Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/080-woocommerce.com/text.txt` (4790 bytes), fetched 2026-10-12T10:50:51Z, captured
 - quote: Cash on Delivery (COD) is a payment gateway that lets you take payments at the time of delivery of your customer’s ordered products.
 - title: Cash on Delivery Documentation - WooCommerce
 - in context: … Develop on Woo Hire an expert Get support $ USD Find extensions, themes, guides, and more Go to search results page Search Log inGet started WooCommerce WooCommerce Getting started Migrating to WooCommerce ProductsExpand Taxes ShippingExpand Payments Orders Data and reporting Customers Marketing Site administrationExpand Store designExpand Mobile AppExpand Get helpExpand Documentation / WooCommerce / Payments / Cash on Delivery Cash on Delivery ⟪Cash on Delivery (COD) is a payment gateway that lets you take payments at the time of delivery of your customer's ordered products.⟫ WooCommerce sets orders using Cash on Delivery (COD) to "Processing" until payment is collected. You, as the store owner, should confirm that payments for Cash on Delivery orders have been collected before setting orders to "Complete" in WooCommerce. If you are using the WooCommerce mobile app and a card reader to collect In-Person Payments, it marks orders "Complete" automatically at the time of payment. For more information see Managing Orders…
@@ -81,7 +81,7 @@
 - from: held
 
 **Citation Q4-WC-C018:** `https://woocommerce.com/document/managing-orders/order-statuses/` | Order statuses in WooCommerce: On hold | 2026-08-21 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261010T235357Z-q1-woocommerce-sources/items/027-woocommerce.com/text.txt` (fetched 2026-10-10T23:54:01Z, captured)
+- captured: `evidence/product-class/runs/20261010T235357Z-q1-woocommerce-sources/items/027-woocommerce.com/text.txt` (9657 bytes), fetched 2026-10-10T23:54:01Z, captured
 - quote: Offline payment methods require you to manually verify the payment was processed. Once you confirm payment has been received, you can change the status of the order.
 - title: Order Statuses Documentation - WooCommerce
 - in context: … or warehouse's cue to ship the order and manually change the status to Completed. Completed The order has been fulfilled and is complete. Requires no further action. On hold The order is awaiting payment confirmation. Stock is reduced, but you need to confirm payment. The On hold status is generally assigned to an order when a customer pays via an "offline" payment method that does not have immediate payment confirmation, like the BACS gateway. ⟪Offline payment methods require you to manually verify the payment was processed. Once you confirm payment has been received, you can change the status of the order.⟫ The On hold status may be temporarily assigned to orders if the customer paid using a delayed notification payment method, like SEPA Direct Debit. Depending on the payment gateway in use on your site, the order may move automatically from On hold to a different status once the payment clears. Check the order notes on the order and the documentation of your payment gateway for details. You may also see the On hold status if you use a payment gate…
@@ -116,7 +116,7 @@
 - from: held
 
 **Citation Q4-WC-C015:** `https://woocommerce.com/document/cash-on-delivery/` | Cash on Delivery | 2025-05-31 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/080-woocommerce.com/text.txt` (fetched 2026-10-12T10:50:51Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/080-woocommerce.com/text.txt` (4790 bytes), fetched 2026-10-12T10:50:51Z, captured
 - quote: WooCommerce sets orders using Cash on Delivery (COD) to “Processing” until payment is collected.
 - title: Cash on Delivery Documentation - WooCommerce
 - in context: … started WooCommerce WooCommerce Getting started Migrating to WooCommerce ProductsExpand Taxes ShippingExpand Payments Orders Data and reporting Customers Marketing Site administrationExpand Store designExpand Mobile AppExpand Get helpExpand Documentation / WooCommerce / Payments / Cash on Delivery Cash on Delivery Cash on Delivery (COD) is a payment gateway that lets you take payments at the time of delivery of your customer's ordered products. ⟪WooCommerce sets orders using Cash on Delivery (COD) to "Processing" until payment is collected.⟫ You, as the store owner, should confirm that payments for Cash on Delivery orders have been collected before setting orders to "Complete" in WooCommerce. If you are using the WooCommerce mobile app and a card reader to collect In-Person Payments, it marks orders "Complete" automatically at the time of payment. For more information see Managing Orders. This document takes you through the steps to activate and configure Cash on Delivery (COD) on y…
@@ -134,7 +134,7 @@
 - from: held
 
 **Citation Q4-WC-C019:** `https://woocommerce.com/document/managing-orders/order-statuses/` | Order statuses in WooCommerce: Processing | 2026-08-21 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261010T235357Z-q1-woocommerce-sources/items/027-woocommerce.com/text.txt` (fetched 2026-10-10T23:54:01Z, captured)
+- captured: `evidence/product-class/runs/20261010T235357Z-q1-woocommerce-sources/items/027-woocommerce.com/text.txt` (9657 bytes), fetched 2026-10-10T23:54:01Z, captured
 - quote: Payment has been received (paid), and the stock has been reduced. The order is awaiting fulfillment.
 - title: Order Statuses Documentation - WooCommerce
 - in context: … used by the block-based checkout before an order is submitted. Orders in the Draft status are only visible on the "Draft" sub-tab of the Orders overview page. See the Draft order status section below. Pending payment The order has been received, but no payment has been made. Pending payment orders are generally awaiting customer action. If your customer needs a payment link to make payment, see the documentation on paying for orders. Processing ⟪Payment has been received (paid), and the stock has been reduced. The order is awaiting fulfillment.⟫ All orders require processing except those in which all products are both virtual and downloadable. This is the store owner's or warehouse's cue to ship the order and manually change the status to Completed. Completed The order has been fulfilled and is complete. Requires no further action. On hold The order is awaiting payment confirmation. Stock is reduced, but you need to confirm payment. The On hold status is generally assigned to an order w…
@@ -152,7 +152,7 @@
 - from: held
 
 **Citation Q4-WC-C039:** `https://woocommerce.com/document/managing-orders/order-statuses/` | Order statuses in WooCommerce: Cancelled | 2026-08-21 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261010T235357Z-q1-woocommerce-sources/items/027-woocommerce.com/text.txt` (fetched 2026-10-10T23:54:01Z, captured)
+- captured: `evidence/product-class/runs/20261010T235357Z-q1-woocommerce-sources/items/027-woocommerce.com/text.txt` (9657 bytes), fetched 2026-10-10T23:54:01Z, captured
 - quote: When the Hold Stock setting is enabled, WooCommerce automatically cancels eligible Pending payment orders created through checkout after the configured time limit and releases their held stock back to available inventory.
 - title: Order Statuses Documentation - WooCommerce
 - in context: …immediately. With delayed notification payment methods, an order can remain On hold while the payment is confirmed, then move to Failed if the payment is rejected. See how to understand and fix failed orders in WooCommerce for more details. Cancelled The order was canceled by an admin or the customer. When an order has the Cancelled status, stock for line items on the order is returned to the store's inventory if inventory management is enabled. ⟪When the Hold Stock setting is enabled, WooCommerce automatically cancels eligible Pending payment orders created through checkout after the configured time limit and releases their held stock back to available inventory.⟫ An order with the Cancelled status may need to be refunded. Check the order notes and your payment gateway's documentation for details. Refunded An admin or shop manager has fully refunded the order's value after payment. If you use the Manual Refund option, the order can reach this status without the customer's funds having been returned. See the documentation on refunding orders in WooCommerce for more details. Visual diagram of order status f…
@@ -170,7 +170,7 @@
 - from: held
 
 **Citation Q4-WC-C026:** `https://woocommerce.com/document/managing-orders/order-statuses/` | Order statuses in WooCommerce: Refunded | 2026-08-21 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261010T235357Z-q1-woocommerce-sources/items/027-woocommerce.com/text.txt` (fetched 2026-10-10T23:54:01Z, captured)
+- captured: `evidence/product-class/runs/20261010T235357Z-q1-woocommerce-sources/items/027-woocommerce.com/text.txt` (9657 bytes), fetched 2026-10-10T23:54:01Z, captured
 - quote: If you use the Manual Refund option, the order can reach this status without the customer’s funds having been returned.
 - title: Order Statuses Documentation - WooCommerce
 - in context: …bled. When the Hold Stock setting is enabled, WooCommerce automatically cancels eligible Pending payment orders created through checkout after the configured time limit and releases their held stock back to available inventory. An order with the Cancelled status may need to be refunded. Check the order notes and your payment gateway's documentation for details. Refunded An admin or shop manager has fully refunded the order's value after payment. ⟪If you use the Manual Refund option, the order can reach this status without the customer's funds having been returned.⟫ See the documentation on refunding orders in WooCommerce for more details. Visual diagram of order status flow This flow chart shows the typical path from a temporary Draft checkout record through payment and fulfillment, plus other statuses you may see when payment is delayed, fails, is cancelled, or is refunded. Draft is a temporary block-based checkout state before submission. A submitted order typically moves from Pending payment to Processi…
@@ -189,7 +189,7 @@
 - from: held
 
 **Citation Q4-WC-C032:** `https://woocommerce.com/document/woocommerce-analytics/` | Troubleshooting (Taxes report) | 2026-10-09 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261010T235357Z-q1-woocommerce-sources/items/044-woocommerce.com/text.txt` (fetched 2026-10-10T23:54:02Z, captured)
+- captured: `evidence/product-class/runs/20261010T235357Z-q1-woocommerce-sources/items/044-woocommerce.com/text.txt` (25891 bytes), fetched 2026-10-10T23:54:02Z, captured
 - quote: With Date Paid selected, orders without a paid date are excluded from both reports.
 - title: Analytics and Sales Reports Documentation - WooCommerce
 - in context: …s differ from the actual figures on your website you can clear the cache by going to WooCommerce > Status > Tools and running the Clear Analytics Cache tool. If the figures still look off after clearing the cache, try re-importing historical data. When comparing the Taxes report with Orders or Revenue, use the same report period and the configured Date Type in Analytics > Settings. The Taxes report follows that setting; the default is Date Paid. ⟪With Date Paid selected, orders without a paid date are excluded from both reports.⟫ Changing Date Type invalidates the report cache automatically. A difference caused by the reports using different date bases does not require re-importing historical data. Questions and support Do you still have questions and need assistance? This documentation is about the free, core WooCommerce plugin, for which support is provided in our community forums on WordPress.org. By searching this forum, you'll often find that your question has been …
@@ -208,7 +208,7 @@
 - from: held
 
 **Citation Q4-WC-C033:** `https://woocommerce.com/document/cash-on-delivery/` | Setup and Configuration | 2025-05-31 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/080-woocommerce.com/text.txt` (fetched 2026-10-12T10:50:51Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/080-woocommerce.com/text.txt` (4790 bytes), fetched 2026-10-12T10:50:51Z, captured
 - quote: Enable for shipping methods – Choose which shipping methods and rates will offer COD
 - title: Cash on Delivery Documentation - WooCommerce
 - in context: …ess the Cash on Delivery configuration settings. Clicking the "Enable" button will activate COD. Once enabled, clicking the "Manage" button will take you to the configuration page where you configure COD settings. Configure your settings: Enable COD - Enable to use. Disable to turn off. Title - Choose the title shown to customers during checkout Description -Add info shown to customers if they choose COD Instructions - Explain how to pay via COD ⟪Enable for shipping methods - Choose which shipping methods and rates will offer COD⟫ Accept for virtual orders - Tick box to allow COD for virtual products Save changes This is the settings page for Cash on Delivery. Fill in the instructions for COD payments here and set which shipping methods it applies to. If you are interested in additional features, check out the Advanced Cash on Delivery with Fee extension. Questions and support Do you still have questions and need assistance? This documentation is about the free, core WooC…
@@ -227,7 +227,7 @@
 - from: held
 
 **Citation Q4-WC-C036:** `https://woocommerce.com/document/cash-on-delivery/` | Cash on Delivery | 2025-05-31 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/080-woocommerce.com/text.txt` (fetched 2026-10-12T10:50:51Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/080-woocommerce.com/text.txt` (4790 bytes), fetched 2026-10-12T10:50:51Z, captured
 - quote: If you are using the WooCommerce mobile app and a card reader to collect In-Person Payments, it marks orders “Complete” automatically at the time of payment.
 - title: Cash on Delivery Documentation - WooCommerce
 - in context: …tion / WooCommerce / Payments / Cash on Delivery Cash on Delivery Cash on Delivery (COD) is a payment gateway that lets you take payments at the time of delivery of your customer's ordered products. WooCommerce sets orders using Cash on Delivery (COD) to "Processing" until payment is collected. You, as the store owner, should confirm that payments for Cash on Delivery orders have been collected before setting orders to "Complete" in WooCommerce. ⟪If you are using the WooCommerce mobile app and a card reader to collect In-Person Payments, it marks orders "Complete" automatically at the time of payment.⟫ For more information see Managing Orders. This document takes you through the steps to activate and configure Cash on Delivery (COD) on your store. Setup and Configuration Follow the steps below to setup Cash on Delivery (COD) on your store: Navigate to: WooCommerce > Settings > Payments > Take offline payments. Click the Enable button for Cash on Delivery. After enabling, click the Manage button to access the Cash on Delivery configuration sett…
@@ -246,7 +246,7 @@
 - from: held
 
 **Citation Q4-WC-C046:** `https://woocommerce.com/document/woopayments/settings-guide/` | Payouts | 2026-09-25 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261011T084016Z-q1r-woocommerce-more/items/019-woocommerce.com/text.txt` (fetched 2026-10-11T08:40:26Z, captured)
+- captured: `evidence/product-class/runs/20261011T084016Z-q1r-woocommerce-more/items/019-woocommerce.com/text.txt` (14309 bytes), fetched 2026-10-11T08:40:26Z, captured
 - quote: The Payouts section controls how often WooPayments pays out money from incoming orders into your linked bank account or debit card.
 - title: WooPayments: Settings Guide Documentation - WooCommerce
 - in context: … a support phone number has been set, it cannot be left blank. We strongly suggest filling these settings out, since they can help prevent disputes from customers who might otherwise have trouble contacting you for assistance. NOTE: The customer support email and phone number settings covered here are not the same as updating the email or phone number that you have on file in your Stripe Express account. To do that, please see this page. Payouts ⟪The Payouts section controls how often WooPayments pays out money from incoming orders into your linked bank account or debit card.⟫ Payout schedule This setting allows you to specify a payout schedule that works best for your business. You can find more information on the options in our dedicated payout schedule document. If it's been less than 7 days since your first transaction with WooPayments, you will not be able to change your payout schedule until the initial 7 day waiting period has passed. Payout bank account Your bank account or debit card details are securely stor…

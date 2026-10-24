@@ -269,8 +269,8 @@
 - cite_ids: SA-S-0069
 
 **Citation SA-S-0069:** `https://help.salla.sa/article/-إدارة-طرق-الدفع-وتفعيل-المدفوعات-الإلكترونية/dtdojcntv3f4lwqzj4h0jvij` | أولاً: طريقة الوصول لصفحة طرق الدفع (line 696 of the rendered text) | 2026-08-22 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261010T235130Z-q1-salla-sources/items/013-help.salla.sa/text.txt` (fetched 2026-10-10T23:51:32Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/014-help.salla.sa/text.txt` (fetched 2026-10-12T10:49:46Z, captured)
+- captured: `evidence/product-class/runs/20261010T235130Z-q1-salla-sources/items/013-help.salla.sa/text.txt` (47245 bytes), fetched 2026-10-10T23:51:32Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/014-help.salla.sa/text.txt` (47508 bytes), fetched 2026-10-12T10:49:46Z, captured
 - quote: بوابات الدفع الأخرى (ميسر - هايبر باي)
 - title: تفعيل طرق الدفع الإلكتروني في متجرك | مركز المساعدة - سلة
 - the page opens: تفعيل طرق الدفع الإلكتروني في متجرك مركز المساعدة - سلة Enأنشئ متجرك مجاناَ الرئيسية التعليم مركز المساعدة مكتبة متكاملة لكل ما تحتاجه لبدء تجارتك مع سلة مجتمع سلة تبادل الخبرات والتجارب واستلهم طرقًا مميزة للنجاح مدونة سلة وسع دائرة معارفك بالعديد من الموضوعات المثيرة منصة المطورين انضم إلى مجتمع مطوري سلة أكاديمية سلة دورات احترافية تساعدك على نجاحك التجاري أدوات التجار أدوات متكاملة لدعم نمو متجرك الحلول متجر التطبيقات أدوات عديدة لنجاح متجرك صانع التطبيقات اصنع تطبيقًا خاصًا لمتجرك سلة سبيشل…
@@ -316,7 +316,7 @@
 - from: held
 
 **Citation Q5-SA-C097:** `https://docs.salla.dev/recurring-payments/overview.md` | ## Enabling Recurring Payments | 2026-10-05 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261010T235130Z-q1-salla-sources/items/009-docs.salla.dev/text.txt` (fetched 2026-10-10T23:51:31Z, captured)
+- captured: `evidence/product-class/runs/20261010T235130Z-q1-salla-sources/items/009-docs.salla.dev/text.txt` (6140 bytes), fetched 2026-10-10T23:51:31Z, captured
 - quote: Once enabled, the App can add subscription products to the cart and start processing recurring payments through the Recurring Payments API.
 - title: Overview
 - the page opens: The Recurring Payments feature enables merchants and third-party apps to offer subscription billing to customers. This feature provides comprehensive subscription lifecycle management through APIs, allowing you to create, charge, and manage recurring payments seamlessly. It supports full lifecycle operations, including subscription creation, invoicing, payment processing, renewal, and cancellation, using a consistent RESTful architecture. This API is designed for developers integrating recurring…
@@ -352,7 +352,7 @@
 - cite_ids: SA-S-0130
 
 **Citation SA-S-0130:** `https://help.salla.sa/article/-الربط-مع-knet-tap/eqc4nnrdzbtzq3alko0asl3q` | شروط الربط مع Knet tap (line 654 of the rendered text) | 2026-08-18 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261010T235130Z-q1-salla-sources/items/015-help.salla.sa/text.txt` (fetched 2026-10-10T23:51:34Z, captured)
+- captured: `evidence/product-class/runs/20261010T235130Z-q1-salla-sources/items/015-help.salla.sa/text.txt` (38012 bytes), fetched 2026-10-10T23:51:34Z, captured
 - quote: يُشترط للربط مع K net tap تفعيل خدمة الدفع Tap أولاً، وفي حال تمّ إلغاء خدمة الدفع Tap سيتم إلغاء الربط مع K net tap تلقائياً.
 - title: تفعيل وسيلة الدفع كي نت Knet | مركز المساعدة - سلة
 - the page opens: تفعيل وسيلة الدفع كي نت Knet مركز المساعدة - سلة Enأنشئ متجرك مجاناَ الرئيسية التعليم مركز المساعدة مكتبة متكاملة لكل ما تحتاجه لبدء تجارتك مع سلة مجتمع سلة تبادل الخبرات والتجارب واستلهم طرقًا مميزة للنجاح مدونة سلة وسع دائرة معارفك بالعديد من الموضوعات المثيرة منصة المطورين انضم إلى مجتمع مطوري سلة أكاديمية سلة دورات احترافية تساعدك على نجاحك التجاري أدوات التجار أدوات متكاملة لدعم نمو متجرك الحلول متجر التطبيقات أدوات عديدة لنجاح متجرك صانع التطبيقات اصنع تطبيقًا خاصًا لمتجرك سلة سبيشل حلول ت…

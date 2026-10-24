@@ -38,7 +38,7 @@ from collections import OrderedDict, defaultdict
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import record_ids as rid
 from check_proposals import points, unquoted, DOESNT_SHOW, YEMEN_FACT, ROOTS
-from quote_check import Sources, variants, html_text
+from quote_check import Sources, variants, html_text, json_unescaped
 from source_kinds import kind_of
 from runs_corpus import STEP, HTML_TEXT
 
@@ -125,8 +125,16 @@ class Context:
             key = next((k for k in (base, base + ".md", base + "/") if k in self.src.manifest), key)
         out = []
         for cap, r in self.src.manifest.get(key, []):
-            f = os.path.join(cap, r.get("dir", ""), r.get("text_file") or r.get("primary_file") or "")
-            out.append(f"`{os.path.relpath(f, SKM)}` (fetched {r.get('fetched_at', '')}, {r.get('result', '')})")
+            d = os.path.join(cap, r.get("dir", ""))
+            names = [n for n in (r.get("text_file"), r.get("primary_file")) if n]
+            files = []
+            for n in dict.fromkeys(names):
+                f = os.path.join(d, n)
+                size = os.path.getsize(f) if os.path.isfile(f) else 0
+                files.append(f"`{os.path.relpath(f, SKM)}` ({size} bytes)")
+                if size >= 500:
+                    break                   # a text file that holds the page; else its raw file too
+            out.append(", ".join(files) + f", fetched {r.get('fetched_at', '')}, {r.get('result', '')}")
         return out
 
     def git(self, repo, *args):
@@ -178,7 +186,7 @@ class Context:
     @staticmethod
     def headings(raw, quote):
         """The markdown headings above the quote's first words, outermost first."""
-        if not re.search(r"(?m)^#{1,6}\s", raw):
+        if not re.search(r"(?m)^#{1,6}\s", raw) or raw.lstrip().startswith(("{", "[")):
             return []
         probe = " ".join(variants(quote)[2][1].split()[:6])
         lines = raw.splitlines()
@@ -220,6 +228,13 @@ class Context:
         raws = self.raw_texts(source, locator)
         title = next((t for t in (self.title(r) for r in raws) if t), "")
         texts, _ = self.src.texts(source, locator)
+        ln = re.search(r"\bline (\d+)\b", locator or "")
+        if ln and raws and re.search(r"\.(jsonl|tsv)$", source):     # one article or row a line: that line only
+            rows = raws[0].splitlines()
+            k = int(ln.group(1))
+            if 0 < k <= len(rows):
+                one = [v for t in (rows[k - 1], json_unescaped(rows[k - 1])) for v in variants(t)]
+                texts = one + list(texts or [])
         for level, (kind, q) in enumerate(variants(quote)):
             if not q:
                 continue
@@ -272,7 +287,7 @@ def point_list(items, label=""):
 
 def citation_lines(c, ctx, label="", shown=None, width=WIDTH):
     source, locator, quote = c.get("source", ""), c.get("locator", ""), c.get("quote", "")
-    kind = kind_of(source, ROOTS)[0] if source else ""
+    kind = kind_of(source, ROOTS, locator)[0] if source else ""
     found = ctx.src.check_quote(quote, source, locator)[0] if source and quote else "no quote"
     lines = ["", f"**Citation {c.get('cite_id')}{label}:** `{source}` | {locator} | {c.get('source_date', '')} | "
                  f"kind: {kind} | quote check: {found}"]
@@ -417,21 +432,31 @@ def yemen_card(i, uses, entries, group, ctx):
     path, row, _, rests = hit
     cited_places = {norm_place(re.split(r",\s*as of", x.split("@", 1)[1])[0]) for x in cited_parts if "@" in x}
     cited_groups = {norm_place(group.get(p, p)) for p in cited_places}
-    keep = set()
+
+    def near(place):
+        """A place the check reads: a cited place, one grouped with it, or "place not stated"."""
+        pl = norm_place(place)
+        return pl in cited_places or norm_place(group.get(pl, pl)) in cited_groups or pl == "place not stated"
+
+    keep, other_states = set(), 0
     lines += ["", f"**Record** (`{path}`):"]
     for k, v in row.items():
         if not v:
             continue
         if k == "states":
-            lines.append("- states, one line each (the place after @, the citations in brackets):")
+            lines.append("- states at the cited places, the places grouped with them, and \"place not stated\", one line "
+                         "each (the place after @, the citations in brackets):")
             for st in v.split(" | "):
                 sm = re.match(r"^(.*?) @ (.*?) \[([^\]]*)\]\s*$", st.strip())
+                if sm and not near(sm.group(2)):
+                    other_states += 1
+                    continue
                 if sm:
-                    pl = norm_place(sm.group(2))
-                    if pl in cited_places or norm_place(group.get(pl, pl)) in cited_groups or pl == "place not stated":
-                        keep.update(re.findall(r"YE-[A-Z]\d{3,4}", sm.group(3)))
+                    keep.update(re.findall(r"YE-[A-Z]\d{3,4}", sm.group(3)))
                 lines.append(f"  - {st.strip()}")
-        elif k in ("today_cite_ids", "cite_ids"):
+            if other_states:
+                lines.append(f"  - and {other_states} states at other places (in `axes.tsv`)")
+        elif k in ("today_cite_ids", "cite_ids", "condition_ids"):
             lines.append(f"- {k}: {v}")
             if k == "cite_ids":
                 keep.update(rid.cite_split(v))
@@ -444,23 +469,39 @@ def yemen_card(i, uses, entries, group, ctx):
         members = sorted(k for k, v in group.items() if norm_place(v) == norm_place(g) and k != p)
         lines.append(f"- the place '{p}' is grouped in '{g}'" + (f", with: {'; '.join(members[:12])}" if members else ""))
     conds = [c for c in rid.cite_split(row.get("condition_ids", "")) if c]
-    if conds:
-        lines += ["", "**Its conditions** (without their citations; `record_ids.py` prints them):"]
-        for c in conds:
-            h = rid.lookup(c)
-            if h:
-                r = h[1]
-                lines.append(f"- {c}: {r.get('condition', '')} | {r.get('state', '')} | @ {r.get('place', '')} | "
-                             f"held_at {r.get('held_at', '')}" + (f" | note: {r['note'][:300]}" if r.get("note") else ""))
+    by_cite, shown, other_conds = defaultdict(list), [], 0
+    for c in conds:
+        h = rid.lookup(c)
+        if not h:
+            continue
+        r = h[1]
+        for x in rid.cite_split(r.get("cite_ids", "")):
+            by_cite[x].append(c)
+        if near(r.get("place", "")) or i.startswith("YK"):
+            shown.append((c, r))
+        else:
+            other_conds += 1
+    if shown:
+        lines += ["", "**Its conditions at those places** (each with its citations' ids; `record_ids.py` prints the "
+                      "quotes):"]
+        for c, r in shown:
+            lines.append(f"- {c}: {r.get('condition', '')} | {r.get('state', '')} | @ {r.get('place', '')} | "
+                         f"held_at {r.get('held_at', '')} | cites {r.get('cite_ids', '')}"
+                         + (f" | note: {r['note'][:300]}" if r.get("note") else ""))
+        if other_conds:
+            lines.append(f"- and {other_conds} conditions at other places")
     kept = [c for c in rests if c.get("cite_id") in keep]
     if kept:
         lines += ["", "**The citations of the cited parts, and of every state at the same place or at 'place not "
-                      "stated'** (the others' are in `studies/yemen-cases/citations.tsv`):"]
+                      "stated'**, each with the conditions that cite it (the others' are in "
+                      "`studies/yemen-cases/citations.tsv`). A citation's path names the run that holds it: the run's "
+                      "`README.md` says what kind of source it is:"]
         for c in kept:
             source, locator, quote = c.get("source", ""), c.get("locator", ""), c.get("quote", "")
             found = ctx.src.check_quote(quote, source, locator)[0] if source and quote else "no quote"
-            lines.append(f"- {c.get('cite_id')}: `{source}` | {locator} | {c.get('source_date', '')} | "
-                         f"quote check: {found} | {quote}")
+            conds_of = ", ".join(by_cite.get(c.get("cite_id"), []))
+            lines.append(f"- {c.get('cite_id')}" + (f" (for {conds_of})" if conds_of else "") +
+                         f": `{source}` | {locator} | {c.get('source_date', '')} | quote check: {found} | {quote}")
     return "\n".join(lines) + "\n"
 
 
@@ -593,7 +634,18 @@ def main(argv):
         write_parts(out, "yemen", head, items,
                     lambda it, part, final: yemen_card(it[0], it[1], entries, group, ctx), YEMEN_PART)
     if doesnt:
-        cards = [f"### {q}:{n}\n\n**Cited at:** {q}, section 6, line {n}\n\n**Point:** {p}\n" for q, n, p in doesnt]
+        entries = digest_entries()
+
+        def ds_card(q, n, p):
+            ids = list(dict.fromkeys(rid.YEMEN_ID.findall(p) + [x for x in rid.PLATFORM_ID.findall(p) if x.startswith(q)]))
+            out = [f"### {q}:{n}", "", f"**Cited at:** {q}, section 6, line {n}", "", f"**Point:** {p}"]
+            for x in ids:
+                if x in entries:
+                    out += [f"- {x}, as the digest gives it:"] + [f"  > {l.strip()}" for l in entries[x][0]]
+                elif rid.lookup(x):
+                    out.append(f"- {x}: {rid.lookup(x)[2][:400]}")
+            return "\n".join(out) + "\n"
+        cards = [ds_card(q, n, p) for q, n, p in doesnt]
         with open(os.path.join(out, "doesnt-show.md"), "w", encoding="utf-8") as f:
             f.write(f"# Cards: what the proposals say Yemen's evidence doesn't show\n\n{len(cards)} points, from "
                     f"{', '.join(qs)}, each named by its question and line.\n\n## The cards\n\n" + "\n".join(cards))

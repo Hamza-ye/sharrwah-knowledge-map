@@ -44,7 +44,7 @@
 - from: held
 
 **Citation Q6-BC-C008:** `https://www.commerce.com/terms/` | Contracting Entity: table, first column heading | 2026-06-01 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/108-commerce.com/text.txt` (fetched 2026-10-12T04:20:53Z, captured)
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/108-commerce.com/text.txt` (56197 bytes), fetched 2026-10-12T04:20:53Z, captured
 - quote: Country of Residence of Merchant
 - title: Master Services Agreement | Commerce
 - in context: Master Services Agreement | Commerce Master Services Agreement Date of Last Revision: June 1, 2026 ⟪Country of Residence of Merchant⟫ Commerce Entity Governing Law Services United States Commerce.com US, Inc., a Texas corporation in the United States New York Ecommerce Platform, Extensions, and certain Professional Services United Kingdom Commerce Software UK Ltd., a United Kingdom limited company England and Wales Ecommerce Platform, Extensions, and certain Professional Services European Union Commerce Software Ireland Ltd., an Irish limited company Ireland Ecommerce Platform…
@@ -70,7 +70,7 @@
 - from: held
 
 **Citation Q6-BC-C010:** `https://www.commerce.com/terms/jurisdiction-specific-terms/` | Incorporated Terms – Jurisdiction-Specific Terms (preamble) | 2025-10-17 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/115-commerce.com/text.txt` (fetched 2026-10-12T04:21:00Z, captured)
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/115-commerce.com/text.txt` (9611 bytes), fetched 2026-10-12T04:21:00Z, captured
 - quote: The following terms supplement, replace or modify the referenced terms for Customers domiciled in the jurisdictions below.
 - title: Jurisdiction-Specific Terms | Commerce
 - in context: … FeedonomicsFeedonomics MakeswiftMakeswift United States AboutAbout CareersCareers PressPress ContactContact Become an investorBecome an investor Incorporated Terms - Jurisdiction-Specific Terms Date of Last Revision: October 17, 2025 The terms below are incorporated into, and form an integral part of, the Commerce Master Services Agreement. Unless otherwise defined herein, capitalized terms shall have the meaning ascribed them in the Agreement. ⟪The following terms supplement, replace or modify the referenced terms for Customers domiciled in the jurisdictions below.⟫ EMEA. European Union and United Kingdom. For Customers domiciled within the European Union or the United Kingdom: Arbitration. The 'Arbitration Agreement and Class Action Waiver' section of the Agreement is supplemented with the following two additional provisions:| Internal Dispute Resolution. If you are a business established within the European Union or the United Kingdom, you are also eligible to make use of our internal dispute resolution p…
@@ -142,8 +142,8 @@
 - from: held
 
 **Citation Q6-BC-C022:** `https://support.bigcommerce.com/s/article/Connecting-with-BigCommerce-Payments?language=en_US` | BigCommerce Payments: Payment Methods: Digital Wallets | 2026-10-13 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/016-support.bigcommerce.com/text.txt` (fetched 2026-10-13T00:35:36Z, captured)
-- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/001-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:39:50Z, captured)
+- captured: `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/016-support.bigcommerce.com/text.txt` (0 bytes), `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/016-support.bigcommerce.com/raw.html` (961887 bytes), fetched 2026-10-13T00:35:36Z, captured
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/001-support.bigcommerce.com/text.txt` (40664 bytes), fetched 2026-10-13T05:39:50Z, captured
 - quote: Note that digital wallet availability depends on your store’s country and currency combination.
 - title: BigCommerce Help Center
 - the page opens: BigCommerce Help Center Loading ×Sorry to interrupt CSS Error Refresh…

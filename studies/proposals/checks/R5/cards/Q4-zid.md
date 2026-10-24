@@ -65,8 +65,8 @@
 - cite_ids: ZD-S-0643
 
 **Citation ZD-S-0643:** `https://help.zid.sa/bank-accounts/` | intro | 2026-08-06 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/088-help.zid.sa/text.txt` (fetched 2026-10-12T04:52:20Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/049-help.zid.sa/text.txt` (fetched 2026-10-12T10:50:25Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/088-help.zid.sa/text.txt` (5691 bytes), fetched 2026-10-12T04:52:20Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/049-help.zid.sa/text.txt` (5691 bytes), fetched 2026-10-12T10:50:25Z, captured
 - quote: من خلال هذه الخاصية يمكنك عرض بيانات حسابك البنكي في صفحة الدفع لتمكين العملاء من الدفع عن طريق التحويل البنكي، مع إمكانية التحكم الكامل في عرض أو إخفاء التفاصيل.
 - title: زد - مركز المساعدة - الحسابات البنكية ( لوحة التحكم الجديدة )
 - the page opens: زد - مركز المساعدة - الحسابات البنكية ( لوحة التحكم الجديدة ) menu right alt الدخول لمتجرك --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا EN --> الدخول لمتجرك close --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا English --> مركز المساعدة زد باي زد باي الحسابات البنكية ( لوحة التحكم الجديدة ) عن ماذا تبحث ؟ دليل استخدام منصة التاجر الرئيسية --> تعرف على زد --> تعرف على زد إعدادات المتجر --> إعدادات المتجر المنتجات --> التصنيفات --> التصنيفات المنتجات --> المنتج…
@@ -85,7 +85,7 @@
 - cite_ids: ZD-S-0618
 
 **Citation ZD-S-0618:** `https://help.zid.sa/zid-faqs/%d9%85%d8%a7%d9%87%d9%8a-%d8%b7%d8%b1%d9%82-%d8%a7%d9%84%d8%af%d9%81%d8%b9-%d8%a7%d9%84%d8%aa%d9%8a-%d8%a7%d8%b3%d8%aa%d8%b7%d9%8a%d8%b9-%d8%aa%d9%88%d9%81%d9%8a%d8%b1%d9%87%d8%a7-%d9%81%d9%8a-%d9%85/` | answer | 2026-09-27 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/176-help.zid.sa/text.txt` (fetched 2026-10-12T04:53:48Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/176-help.zid.sa/text.txt` (2550 bytes), fetched 2026-10-12T04:53:48Z, captured
 - quote: الدفع عند الاستلام مع شركات التوصيل. التحويل البنكي. مدى. فيزا / ماستر كارد. آبل باي (Apple Pay). أمريكان إكسبريس. سامسونج باي. سداد.
 - title: ماهي طرق الدفع التي استطيع توفيرها في متجري؟ - زد - مركز المساعدة
 - the page opens: ماهي طرق الدفع التي استطيع توفيرها في متجري؟ - زد - مركز المساعدة menu right alt الدخول لمتجرك --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا EN --> الدخول لمتجرك close --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا English --> مركز المساعدة ماهي طرق الدفع التي استطيع توفيرها في متجري؟ عن ماذا تبحث ؟ دليل استخدام منصة التاجر الرئيسية --> تعرف على زد --> تعرف على زد إعدادات المتجر --> إعدادات المتجر المنتجات --> التصنيفات --> التصنيفات المنتجات --> المنتجات إدا…
@@ -104,7 +104,7 @@
 - from: held
 
 **Citation Q4-ZD-C001:** `https://help.zid.sa/orders-properties/` | خصائص الطلبات > تفعيل الدفع اليدوي | 2026-08-03 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/142-help.zid.sa/text.txt` (fetched 2026-10-12T04:53:14Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/142-help.zid.sa/text.txt` (7765 bytes), fetched 2026-10-12T04:53:14Z, captured
 - quote: تتيح لك هذه الوسيله إنشاء وتنفيذ الطلبات دون الحاجة إلى وجود عملية دفع إلكترونية فعلية.
 - title: زد - مركز المساعدة - خصائص الطلبات والمنتجات | الطلبات ( لوحة التحكم الجديدة )
 - the page opens: زد - مركز المساعدة - خصائص الطلبات والمنتجات الطلبات ( لوحة التحكم الجديدة ) menu right alt الدخول لمتجرك --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا EN --> الدخول لمتجرك close --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا English --> مركز المساعدة عام الإعدادات خصائص الطلبات والمنتجات الطلبات ( لوحة التحكم الجديدة ) عن ماذا تبحث ؟ دليل استخدام منصة التاجر الرئيسية --> تعرف على زد --> تعرف على زد إعدادات المتجر --> إعدادات المتجر المنتجات --> التصنيفات -->…
@@ -123,8 +123,8 @@
 - from: held
 
 **Citation Q4-ZD-C033:** `https://zid.sa/ar/legal/terms-conditions/` | الشروط والأحكام | 2026-08 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/text.txt` (fetched 2026-10-12T04:53:53Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/text.txt` (fetched 2026-10-12T10:51:26Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/raw.html` (626842 bytes), fetched 2026-10-12T04:53:53Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/raw.html` (626842 bytes), fetched 2026-10-12T10:51:26Z, captured
 - quote: وعلى أن زد غير مسؤولة قانوناً أو شرعاً عن هذا الإخلال الحاصل من قبل التاجر في مواجهة المستهلك، حيث إنها ليست طرفاً في العلاقة بين المستهلك والتاجر، ولكنها تقوم بذلك لدواعي تحسين جودة تجربة التاجر والمستهلك مع زد.
 - title: Zid | Create your online store with modern retail services
 - in context: …ك تبيّن تكاليف شراء تقديم الخدمة أو المنتج وأوصافه، وإجمالي السعر، وتاريخ التسليم ومكانه. ينبغي على كافة المتاجر والتجّار الذين يقدمون منتجات أو خدمات معينة تتطلب ترخيصاً من الجهات الرسمية، بالإفصاح عن الترخيص وكافة بياناته. في حالة عدم الالتزام بأي مما ورد أعلاه فإن لزد الحق في اتخاذ أي من الإجراءات التالية والتي تشمل -على سبيل المثال لا الحصر-: التنبيه، أو إيقاف الخدمة وإغلاق المتجر، أو حجب التاجر من الوصول واستخدام الخدمات حسبما تراه مناسباً، ⟪وعلى أن زد غير مسؤولة قانوناً أو شرعاً عن هذا الإخلال الحاصل من قبل التاجر في مواجهة المستهلك، حيث إنها ليست طرفاً في العلاقة بين المستهلك والتاجر، ولكنها تقوم بذلك لدواعي تحسين جودة تجربة التاجر والمستهلك مع زد.⟫ الأخطاء وعدم الدقة قد تكون هناك معلومات في الخدمة تحتوي على أخطاء أو عدم دقة أو حذف قد يتعلق بأوصاف المنتج والأسعار والترقيات والعروض ورسوم شحن المنتج وأوقات التسليم ومدى التوفر. نحتفظ بالحق في تصحيح أي أخطاء أو عدم دقة أو سهو أو تغيير أو تحديث معلومات أو إلغاء طلبات إذا كانت أي معلومات في الخدمة أو على الموقع غير دقيقة في أي وقت دون إشعار مسبق. العروض الترويجية قد تخضع أي تخفيضات أو عروض ترويجية (يُشار إليها إجمالاً ب "عروض الترويجية" أو "عروض"…
@@ -144,8 +144,8 @@
 - note: In the minified source, !0 is JavaScript true and !1 is false; a quoted number is the stated count. Keys: starter, launch, growth, pro.
 
 **Citation ZD-S-0724:** `https://zid.sa/_next/static/chunks/2501-f29c20b24ab64821.js` | compare-plans group Payments | 2026-10-11 | kind: shipped | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/185-zid.sa/text.txt` (fetched 2026-10-12T04:53:51Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/120-zid.sa/text.txt` (fetched 2026-10-12T10:51:24Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/185-zid.sa/text.txt` (200113 bytes), fetched 2026-10-12T04:53:51Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/120-zid.sa/text.txt` (200113 bytes), fetched 2026-10-12T10:51:24Z, captured
 - quote: name:{ar:"تغيير حالة الدفع بالجملة",en:"Bulk Payment Status Update"},description:{ar:"غيّر حالة دفعات متعددة مرة وحدة لتوفير وقتك وتسريع عمليات المتابعة",en:"Change multiple payment statuses at once to save time and speed up follow-ups."},plans:{starter:!0,launch:!0,growth:!0,pro:!0}}
 - in context: …ة دفعة لأوراق الشحن لجميع طلباتك دفعة واحدة بسهولة.",en:"Save time by batch printing shipping papers for all your orders at once."},plans:{starter:!0,launch:!0,growth:!0,pro:!0}},{name:{ar:"حالة الدفع",en:"Payment Status"},description:{ar:"تابع حالة المدفوعات لحفظ أمان معاملاتك وضمان استلام الأموال بشكل سلس",en:"Track payment statuses to secure your transactions and ensure smooth fund collection."},plans:{starter:!0,launch:!0,growth:!0,pro:!0}},{⟪name:{ar:"تغيير حالة الدفع بالجملة",en:"Bulk Payment Status Update"},description:{ar:"غيّر حالة دفعات متعددة مرة وحدة لتوفير وقتك وتسريع عمليات المتابعة",en:"Change multiple payment statuses at once to save time and speed up follow-ups."},plans:{starter:!0,launch:!0,growth:!0,pro:!0}}⟫,{name:{ar:"طرق الدفع المتنوعة",en:"Various Payment Methods"},description:{ar:"وفر خيارات دفع متعددة (بطاقات ائتمانية، مدى، الدفع بالتقسيط، وغيرها) لتسهيل الشراء وزيادة معدل إتمام الطلبات.",en:"Provide multiple payment options (credit cards, Mada, installments, etc.) to simplify purchasing and increase checkout rates."},plans:{starter:!1,launch:!0,growth:!0,pro:!0}},{name:{ar:"الدفع بالتقسيط",en:"Installment Payments"},description:{ar:'مكّن عملائ…
 
@@ -162,7 +162,7 @@
 - from: held
 
 **Citation Q4-ZD-C016:** `https://docs.zid.sa/update-order-by-id.md` | components > payment_status | 2026-10-12 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/062-docs.zid.sa/text.txt` (fetched 2026-10-12T04:52:00Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/062-docs.zid.sa/text.txt` (113075 bytes), fetched 2026-10-12T04:52:00Z, captured
 - quote: Current payment status of the order. Common values: - pending - paid - failed - refunded
 - title: Change Order Status
 - the page opens: OpenAPI Specification yaml openapi: 3.0.1 info: title: '' description: '' version: 1.0.0 paths: /v1/managers/store/orders/{order-id}/change-order-status: post: summary: Change Order Status deprecated: false description: > Please note that if the order is shipped through an integrated shipping company, then we cannot update the order status from "Ready" to "New". To deliver the order through a shipping company, you need to change the order status to ready, and send the inventory_address_id value …
@@ -183,7 +183,7 @@
 - from: held
 
 **Citation Q4-ZD-C015:** `https://docs.zid.sa/update-order-by-id.md` | requestBody > order_status | 2026-10-12 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/062-docs.zid.sa/text.txt` (fetched 2026-10-12T04:52:00Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/062-docs.zid.sa/text.txt` (113075 bytes), fetched 2026-10-12T04:52:00Z, captured
 - quote: enum: - new - preparing - indelivery - delivered - cancelled - ready - reversed - reverse_in_progress - partially_reversed
 - title: Change Order Status
 - the page opens: OpenAPI Specification yaml openapi: 3.0.1 info: title: '' description: '' version: 1.0.0 paths: /v1/managers/store/orders/{order-id}/change-order-status: post: summary: Change Order Status deprecated: false description: > Please note that if the order is shipped through an integrated shipping company, then we cannot update the order status from "Ready" to "New". To deliver the order through a shipping company, you need to change the order status to ready, and send the inventory_address_id value …
@@ -202,7 +202,7 @@
 - cite_ids: ZD-S-1013
 
 **Citation ZD-S-1013:** `https://help.zid.sa/partial-return/` | إصدار بوليصة الإرجاع تلقائيًا | 2026-08-04 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/143-help.zid.sa/text.txt` (fetched 2026-10-12T04:53:15Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/143-help.zid.sa/text.txt` (5389 bytes), fetched 2026-10-12T04:53:15Z, captured
 - quote: سيتم خصم تكلفة البوليصة من محفظة زد، ويمكن استرجاع حتى 7 صناديق من إجمالي الطلب.
 - title: زد - مركز المساعدة - استرجاع جزئي للطلبات ( لوحة التحكم الجديدة )
 - the page opens: زد - مركز المساعدة - استرجاع جزئي للطلبات ( لوحة التحكم الجديدة ) menu right alt الدخول لمتجرك --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا EN --> الدخول لمتجرك close --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا English --> مركز المساعدة الطلبات الطلبات استرجاع جزئي للطلبات ( لوحة التحكم الجديدة ) عن ماذا تبحث ؟ دليل استخدام منصة التاجر الرئيسية --> تعرف على زد --> تعرف على زد إعدادات المتجر --> إعدادات المتجر المنتجات --> التصنيفات --> التصنيفات المنتجات …
@@ -221,7 +221,7 @@
 - from: held
 
 **Citation Q4-ZD-C022:** `https://help.zid.sa/dashboard-analytics/` | التحليلات | 2026-08-06 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/108-help.zid.sa/text.txt` (fetched 2026-10-12T04:52:40Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/108-help.zid.sa/text.txt` (6437 bytes), fetched 2026-10-12T04:52:40Z, captured
 - quote: طريقة الدفع : نسب استخدام طرق الدفع في متجرك
 - title: زد - مركز المساعدة - التحليلات ( لوحة التحكم الجديدة )
 - the page opens: زد - مركز المساعدة - التحليلات ( لوحة التحكم الجديدة ) menu right alt الدخول لمتجرك --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا EN --> الدخول لمتجرك close --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا English --> مركز المساعدة التحليلات التحليلات التحليلات ( لوحة التحكم الجديدة ) عن ماذا تبحث ؟ دليل استخدام منصة التاجر الرئيسية --> تعرف على زد --> تعرف على زد إعدادات المتجر --> إعدادات المتجر المنتجات --> التصنيفات --> التصنيفات المنتجات --> المنتجات إدارة…
@@ -240,8 +240,8 @@
 - from: held
 
 **Citation Q4-ZD-C006:** `https://help.zid.sa/bank-accounts/` | تفاصيل الحساب البنكي > رقم الآيبان (IBAN) | 2026-08-06 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/088-help.zid.sa/text.txt` (fetched 2026-10-12T04:52:20Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/049-help.zid.sa/text.txt` (fetched 2026-10-12T10:50:25Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/088-help.zid.sa/text.txt` (5691 bytes), fetched 2026-10-12T04:52:20Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/049-help.zid.sa/text.txt` (5691 bytes), fetched 2026-10-12T10:50:25Z, captured
 - quote: ملاحظة: يجب أن يبدأ رقم الآيبان بـ SA أو AE، ويتكون من 15 إلى 34 حرفًا دون مسافات.
 - title: زد - مركز المساعدة - الحسابات البنكية ( لوحة التحكم الجديدة )
 - the page opens: زد - مركز المساعدة - الحسابات البنكية ( لوحة التحكم الجديدة ) menu right alt الدخول لمتجرك --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا EN --> الدخول لمتجرك close --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا English --> مركز المساعدة زد باي زد باي الحسابات البنكية ( لوحة التحكم الجديدة ) عن ماذا تبحث ؟ دليل استخدام منصة التاجر الرئيسية --> تعرف على زد --> تعرف على زد إعدادات المتجر --> إعدادات المتجر المنتجات --> التصنيفات --> التصنيفات المنتجات --> المنتج…
@@ -262,8 +262,8 @@
 - note: In the minified source, !0 is JavaScript true and !1 is false; a quoted number is the stated count. Keys: starter, launch, growth, pro.
 
 **Citation ZD-S-0645:** `https://zid.sa/_next/static/chunks/2501-f29c20b24ab64821.js` | compare-plans group Payments | 2026-10-11 | kind: shipped | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/185-zid.sa/text.txt` (fetched 2026-10-12T04:53:51Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/120-zid.sa/text.txt` (fetched 2026-10-12T10:51:24Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/185-zid.sa/text.txt` (200113 bytes), fetched 2026-10-12T04:53:51Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/120-zid.sa/text.txt` (200113 bytes), fetched 2026-10-12T10:51:24Z, captured
 - quote: name:{ar:"الدفع بالتحويل البنكي",en:"Bank Transfer Payment"},description:{ar:"استقبل مدفوعات عملائك عبر التحويل البنكي المباشر لمرونة أكبر في خيارات الدفع.",en:"Receive customer payments via direct bank transfer for greater payment flexibility."},plans:{starter:!0,launch:!0,growth:!0,pro:!0}}
 - in context: …andard, heavy, international) to suit your customers' needs."},plans:{starter:!0,launch:!0,growth:!0,pro:!0}}]},{group:{ar:"الدفع",en:"Payments"},features:[{name:{ar:"الدفع عند الاستلام",en:"Cash on Delivery"},description:{ar:"امنح عملائك خيار الدفع عند استلام الطلب لزيادة ثقتهم وتعزيز المبيعات.",en:"Give your customers the option to pay upon receiving the order to increase trust and boost sales."},plans:{starter:!0,launch:!0,growth:!0,pro:!0}},{⟪name:{ar:"الدفع بالتحويل البنكي",en:"Bank Transfer Payment"},description:{ar:"استقبل مدفوعات عملائك عبر التحويل البنكي المباشر لمرونة أكبر في خيارات الدفع.",en:"Receive customer payments via direct bank transfer for greater payment flexibility."},plans:{starter:!0,launch:!0,growth:!0,pro:!0}}⟫,{name:{ar:"طباعة دفعة لأوراق الشحن",en:"Batch Print Shipping Papers"},description:{ar:"وفر وقتك بطباعة دفعة لأوراق الشحن لجميع طلباتك دفعة واحدة بسهولة.",en:"Save time by batch printing shipping papers for all your orders at once."},plans:{starter:!0,launch:!0,growth:!0,pro:!0}},{name:{ar:"حالة الدفع",en:"Payment Status"},description:{ar:"تابع حالة المدفوعات لحفظ أمان معاملاتك وضمان استلام الأموال بشكل سلس",en:"Track payment statuses to secure y…
 
@@ -281,32 +281,32 @@
 - from: held
 
 **Citation Q4-ZD-C026:** `https://help.zid.sa/payment-constraints/` | شروط القيد | 2026-08-11 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/144-help.zid.sa/text.txt` (fetched 2026-10-12T04:53:16Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/144-help.zid.sa/text.txt` (8172 bytes), fetched 2026-10-12T04:53:16Z, captured
 - quote: قيمة سلة المشتريات: يمكنك تحديد الشرط بناء على السعر الأدنى للسلة و السعر الأعلى للسلة. المنتجات : يمكنك تحديد منتجات محددة أو جميع المنتجات ماعدا منتج محدد. عدد المنتجات بسلة المشتريات: يمكنك تحديد الحد الأدنى لعدد المنتجات و الحد الأعلى لعدد المنتجات.
 - title: زد - مركز المساعدة - قيود الشحن و الدفع (لوحة التحكم الجديدة )
 - the page opens: زد - مركز المساعدة - قيود الشحن و الدفع (لوحة التحكم الجديدة ) menu right alt الدخول لمتجرك --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا EN --> الدخول لمتجرك close --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا English --> مركز المساعدة زد لوجيستك زد لوجيستك قيود الشحن و الدفع (لوحة التحكم الجديدة ) عن ماذا تبحث ؟ دليل استخدام منصة التاجر الرئيسية --> تعرف على زد --> تعرف على زد إعدادات المتجر --> إعدادات المتجر المنتجات --> التصنيفات --> التصنيفات المنتجات …
 - in context: …وباقة الأعمال الكبيرة. يمكن الوصول إلى خاصية قيود الشحن والدفع من خلال طريقتين وهي : الطريقة الاولى : الاعدادات > عام > قيود الشحن والدفع الطريقة الثانية : لوحة التحكم > اللوجستيات > الاعدادات بعد ذلك , قيود الشحن ثم الضغط على تخصيص إنشاء قيد : من خلال قيود الدفع قم بالضغط على أيقونة إنشاء قيد ثم قم بكتابة اسم القيد وتحديد خيارات الدفع المفعلة لديك بعد الانتهاء منها قم بإضافة الشروط للقيد. شروط القيد : وبإمكانك إضافة الشروط على الخيارات التالية: ⟪قيمة سلة المشتريات: يمكنك تحديد الشرط بناء على السعر الأدنى للسلة و السعر الأعلى للسلة. المنتجات : يمكنك تحديد منتجات محددة أو جميع المنتجات ماعدا منتج محدد. عدد المنتجات بسلة المشتريات: يمكنك تحديد الحد الأدنى لعدد المنتجات و الحد الأعلى لعدد المنتجات.⟫ توقيت الطلب: يمكنك تحديد أيام محددة أو ساعات محددة. قناة البيع: يمكنك تحديد قناة بيع محددة أو جميع القنوات ماعدا قناة واحدة والقنوات تشمل(تطبيق المتجر والمتجر الإلكتروني) وزن سلة المشتريات: يمكنك تحديد الوزن الأدنى للسلة والوزن الأعلى للسلة. مجموعات العملاء : يمكنك تحديد مجموعات عملاء محددة أو جميع مجموعات العملاء ماعدا مجموعة واحدة. تصنيف المنتج : يمكنك تحديد تصنيف محدد أو جميع التصنيفات ماعدا تصنيف محدد. نوع المنتج : يمكنك تحديد نوع منتج محدد …
 
 **Citation Q4-ZD-C027:** `https://help.zid.sa/payment-constraints/` | شروط القيد | 2026-08-11 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/144-help.zid.sa/text.txt` (fetched 2026-10-12T04:53:16Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/144-help.zid.sa/text.txt` (8172 bytes), fetched 2026-10-12T04:53:16Z, captured
 - quote: توقيت الطلب: يمكنك تحديد أيام محددة أو ساعات محددة. قناة البيع: يمكنك تحديد قناة بيع محددة أو جميع القنوات ماعدا قناة واحدة والقنوات تشمل(تطبيق المتجر والمتجر الإلكتروني) وزن سلة المشتريات: يمكنك تحديد الوزن الأدنى للسلة والوزن الأعلى للسلة.
 - title, opening and note boxes: as for this source's citation above
 - in context: …يود الدفع قم بالضغط على أيقونة إنشاء قيد ثم قم بكتابة اسم القيد وتحديد خيارات الدفع المفعلة لديك بعد الانتهاء منها قم بإضافة الشروط للقيد. شروط القيد : وبإمكانك إضافة الشروط على الخيارات التالية: قيمة سلة المشتريات: يمكنك تحديد الشرط بناء على السعر الأدنى للسلة و السعر الأعلى للسلة. المنتجات : يمكنك تحديد منتجات محددة أو جميع المنتجات ماعدا منتج محدد. عدد المنتجات بسلة المشتريات: يمكنك تحديد الحد الأدنى لعدد المنتجات و الحد الأعلى لعدد المنتجات. ⟪توقيت الطلب: يمكنك تحديد أيام محددة أو ساعات محددة. قناة البيع: يمكنك تحديد قناة بيع محددة أو جميع القنوات ماعدا قناة واحدة والقنوات تشمل(تطبيق المتجر والمتجر الإلكتروني) وزن سلة المشتريات: يمكنك تحديد الوزن الأدنى للسلة والوزن الأعلى للسلة.⟫ مجموعات العملاء : يمكنك تحديد مجموعات عملاء محددة أو جميع مجموعات العملاء ماعدا مجموعة واحدة. تصنيف المنتج : يمكنك تحديد تصنيف محدد أو جميع التصنيفات ماعدا تصنيف محدد. نوع المنتج : يمكنك تحديد نوع منتج محدد أو جميع أنواع المنتجات ماعدا نوع واحد وتشمل ( منتج،منتج رقمي،منتج مجمع) قسائم التخفيض : يمكنك تحديد أكواد خصم محددة أو جميع أكواد الخصم ماعدا أكواد خصم محددة. موقع العميل : يمكنك تحديد دولة ومدينة محددة أو جميع الدول والمدن ماعدا دولة أو مدين…
 
 **Citation Q4-ZD-C028:** `https://help.zid.sa/payment-constraints/` | شروط القيد | 2026-08-11 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/144-help.zid.sa/text.txt` (fetched 2026-10-12T04:53:16Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/144-help.zid.sa/text.txt` (8172 bytes), fetched 2026-10-12T04:53:16Z, captured
 - quote: مجموعات العملاء : يمكنك تحديد مجموعات عملاء محددة أو جميع مجموعات العملاء ماعدا مجموعة واحدة. تصنيف المنتج : يمكنك تحديد تصنيف محدد أو جميع التصنيفات ماعدا تصنيف محدد. نوع المنتج : يمكنك تحديد نوع منتج محدد أو جميع أنواع المنتجات ماعدا نوع واحد وتشمل ( منتج،منتج رقمي،منتج مجمع)
 - title, opening and note boxes: as for this source's citation above
 - in context: … السعر الأدنى للسلة و السعر الأعلى للسلة. المنتجات : يمكنك تحديد منتجات محددة أو جميع المنتجات ماعدا منتج محدد. عدد المنتجات بسلة المشتريات: يمكنك تحديد الحد الأدنى لعدد المنتجات و الحد الأعلى لعدد المنتجات. توقيت الطلب: يمكنك تحديد أيام محددة أو ساعات محددة. قناة البيع: يمكنك تحديد قناة بيع محددة أو جميع القنوات ماعدا قناة واحدة والقنوات تشمل(تطبيق المتجر والمتجر الإلكتروني) وزن سلة المشتريات: يمكنك تحديد الوزن الأدنى للسلة والوزن الأعلى للسلة. ⟪مجموعات العملاء : يمكنك تحديد مجموعات عملاء محددة أو جميع مجموعات العملاء ماعدا مجموعة واحدة. تصنيف المنتج : يمكنك تحديد تصنيف محدد أو جميع التصنيفات ماعدا تصنيف محدد. نوع المنتج : يمكنك تحديد نوع منتج محدد أو جميع أنواع المنتجات ماعدا نوع واحد وتشمل ( منتج،منتج رقمي،منتج مجمع)⟫ قسائم التخفيض : يمكنك تحديد أكواد خصم محددة أو جميع أكواد الخصم ماعدا أكواد خصم محددة. موقع العميل : يمكنك تحديد دولة ومدينة محددة أو جميع الدول والمدن ماعدا دولة أو مدينة محددة. عدد طلبات العميل : يمكنك تحديد طلبات العميل لتحديد نوع العميل جديد، عميل موثوق. عدد طلبات العميل الملغاة: يمكنك تحديد عدد طلبات العميل وتحديد طريقة الدفع والاستفادة من القيد لحمايتك من طلبات الدفع عند الاستلام الوهمية أو من العملاء الغير جادين. امثلة على قيود الدفع : تم…
 
 **Citation Q4-ZD-C029:** `https://help.zid.sa/payment-constraints/` | شروط القيد | 2026-08-11 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/144-help.zid.sa/text.txt` (fetched 2026-10-12T04:53:16Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/144-help.zid.sa/text.txt` (8172 bytes), fetched 2026-10-12T04:53:16Z, captured
 - quote: قسائم التخفيض : يمكنك تحديد أكواد خصم محددة أو جميع أكواد الخصم ماعدا أكواد خصم محددة. موقع العميل : يمكنك تحديد دولة ومدينة محددة أو جميع الدول والمدن ماعدا دولة أو مدينة محددة. عدد طلبات العميل : يمكنك تحديد طلبات العميل لتحديد نوع العميل جديد، عميل موثوق.
 - title, opening and note boxes: as for this source's citation above
 - in context: …حديد قناة بيع محددة أو جميع القنوات ماعدا قناة واحدة والقنوات تشمل(تطبيق المتجر والمتجر الإلكتروني) وزن سلة المشتريات: يمكنك تحديد الوزن الأدنى للسلة والوزن الأعلى للسلة. مجموعات العملاء : يمكنك تحديد مجموعات عملاء محددة أو جميع مجموعات العملاء ماعدا مجموعة واحدة. تصنيف المنتج : يمكنك تحديد تصنيف محدد أو جميع التصنيفات ماعدا تصنيف محدد. نوع المنتج : يمكنك تحديد نوع منتج محدد أو جميع أنواع المنتجات ماعدا نوع واحد وتشمل ( منتج،منتج رقمي،منتج مجمع) ⟪قسائم التخفيض : يمكنك تحديد أكواد خصم محددة أو جميع أكواد الخصم ماعدا أكواد خصم محددة. موقع العميل : يمكنك تحديد دولة ومدينة محددة أو جميع الدول والمدن ماعدا دولة أو مدينة محددة. عدد طلبات العميل : يمكنك تحديد طلبات العميل لتحديد نوع العميل جديد، عميل موثوق.⟫ عدد طلبات العميل الملغاة: يمكنك تحديد عدد طلبات العميل وتحديد طريقة الدفع والاستفادة من القيد لحمايتك من طلبات الدفع عند الاستلام الوهمية أو من العملاء الغير جادين. امثلة على قيود الدفع : تم إنشاء قيد على خيار دفع (الدفع بالحوالة البنكية ) وكان الشرط منع ظهور الحوالة البنكية في حال كانت قيمة سلة المشتريات ضمن الحد الأدنى 100 ريال والحد الأعلى 300 ريال. في حال كانت قيمة سلة مشتريات العميل تبدأ من 100 ريال كحد أدنى و 300 كحد أعلى فلن تظهر له خيار …
 
 **Citation Q4-ZD-C030:** `https://help.zid.sa/payment-constraints/` | شروط القيد | 2026-08-11 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/144-help.zid.sa/text.txt` (fetched 2026-10-12T04:53:16Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/144-help.zid.sa/text.txt` (8172 bytes), fetched 2026-10-12T04:53:16Z, captured
 - quote: عدد طلبات العميل الملغاة: يمكنك تحديد عدد طلبات العميل وتحديد طريقة الدفع والاستفادة من القيد لحمايتك من طلبات الدفع عند الاستلام الوهمية أو من العملاء الغير جادين.
 - title, opening and note boxes: as for this source's citation above
 - in context: …احدة. تصنيف المنتج : يمكنك تحديد تصنيف محدد أو جميع التصنيفات ماعدا تصنيف محدد. نوع المنتج : يمكنك تحديد نوع منتج محدد أو جميع أنواع المنتجات ماعدا نوع واحد وتشمل ( منتج،منتج رقمي،منتج مجمع) قسائم التخفيض : يمكنك تحديد أكواد خصم محددة أو جميع أكواد الخصم ماعدا أكواد خصم محددة. موقع العميل : يمكنك تحديد دولة ومدينة محددة أو جميع الدول والمدن ماعدا دولة أو مدينة محددة. عدد طلبات العميل : يمكنك تحديد طلبات العميل لتحديد نوع العميل جديد، عميل موثوق. ⟪عدد طلبات العميل الملغاة: يمكنك تحديد عدد طلبات العميل وتحديد طريقة الدفع والاستفادة من القيد لحمايتك من طلبات الدفع عند الاستلام الوهمية أو من العملاء الغير جادين.⟫ امثلة على قيود الدفع : تم إنشاء قيد على خيار دفع (الدفع بالحوالة البنكية ) وكان الشرط منع ظهور الحوالة البنكية في حال كانت قيمة سلة المشتريات ضمن الحد الأدنى 100 ريال والحد الأعلى 300 ريال. في حال كانت قيمة سلة مشتريات العميل تبدأ من 100 ريال كحد أدنى و 300 كحد أعلى فلن تظهر له خيار الدفع بالحوالة البنكية كخيار دفع في صفحة الشراء . و في حال كانت قيمة سلة مشتريات العميل أعلى من 300 ريال وهو الحد الأعلى ستظهر لها تمارا كخيار دفع. ملاحظة : متاح لك …
@@ -325,7 +325,7 @@
 - cite_ids: ZD-S-0858
 
 **Citation ZD-S-0858:** `https://help.zid.sa/payment-constraints/` | ملاحظة | 2026-08-11 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/144-help.zid.sa/text.txt` (fetched 2026-10-12T04:53:16Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/144-help.zid.sa/text.txt` (8172 bytes), fetched 2026-10-12T04:53:16Z, captured
 - quote: خاصية قيود الشحن و الدفع متاحة في باقة النمو والباقة الاحترافية وباقة الأعمال الكبيرة.
 - title: زد - مركز المساعدة - قيود الشحن و الدفع (لوحة التحكم الجديدة )
 - the page opens: زد - مركز المساعدة - قيود الشحن و الدفع (لوحة التحكم الجديدة ) menu right alt الدخول لمتجرك --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا EN --> الدخول لمتجرك close --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا English --> مركز المساعدة زد لوجيستك زد لوجيستك قيود الشحن و الدفع (لوحة التحكم الجديدة ) عن ماذا تبحث ؟ دليل استخدام منصة التاجر الرئيسية --> تعرف على زد --> تعرف على زد إعدادات المتجر --> إعدادات المتجر المنتجات --> التصنيفات --> التصنيفات المنتجات …
@@ -344,8 +344,8 @@
 - cite_ids: ZD-S-0630
 
 **Citation ZD-S-0630:** `https://help.zid.sa/cod/` | خطوات | 2026-08-05 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/098-help.zid.sa/text.txt` (fetched 2026-10-12T04:52:30Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/051-help.zid.sa/text.txt` (fetched 2026-10-12T10:50:27Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/098-help.zid.sa/text.txt` (3546 bytes), fetched 2026-10-12T04:52:30Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/051-help.zid.sa/text.txt` (3546 bytes), fetched 2026-10-12T10:50:27Z, captured
 - quote: قم بالضغط على شركة الشحن التي ترغب بتفعيل او الغاء الدفع عند الاستلام فيها
 - title: زد - مركز المساعدة - الغاء او تفعيل الدفع عند الاستلام ( لوحة التحكم الجديدة )
 - the page opens: زد - مركز المساعدة - الغاء او تفعيل الدفع عند الاستلام ( لوحة التحكم الجديدة ) menu right alt الدخول لمتجرك --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا EN --> الدخول لمتجرك close --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا English --> مركز المساعدة زد لوجيستك زد لوجيستك الغاء او تفعيل الدفع عند الاستلام ( لوحة التحكم الجديدة ) عن ماذا تبحث ؟ دليل استخدام منصة التاجر الرئيسية --> تعرف على زد --> تعرف على زد إعدادات المتجر --> إعدادات المتجر المنتجات --> ا…
@@ -364,8 +364,8 @@
 - cite_ids: ZD-S-0641
 
 **Citation ZD-S-0641:** `https://zid.sa/ar/legal/terms-conditions/` | خدمة الدفع عند الاستلام (COD) | 2026-08 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/text.txt` (fetched 2026-10-12T04:53:53Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/text.txt` (fetched 2026-10-12T10:51:26Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/raw.html` (626842 bytes), fetched 2026-10-12T04:53:53Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/raw.html` (626842 bytes), fetched 2026-10-12T10:51:26Z, captured
 - quote: هي خدمة تتيح للعميل النهائي الدفع عند استلام الشحنة بدلاً من الدفع المسبق، حيث تقوم زد بتحصيل المبلغ نيابة عن التاجر من العميل عند التسليم ثم تقوم بتحويلها إلى التاجر وفق الأحكام أدناه.
 - title: Zid | Create your online store with modern retail services
 - in context: …للتاجر تقديم طلب استرداد مالي لقيمة ما تبقى من رصيد تلك الباقة. يتحمل التاجر/المتجر أي رسوم أو تكاليف إضافية ("التكاليف الإضافية للشحن") والتي يتم تطبيقها من قِبل زد أو شركة الشحن، على سبيل المثال لا الحصر: (الرسوم الجمركية، رسوم الشحنات العكسية والرجيع من العميل النهائي إلى التاجر، وأي رسوم نقل إضافية، والرسوم الحكومية، ورسوم الدفع عند الاستلام، وفروقات الأوزان الإضافية، وأي تكاليف أو خدمات إضافية أخرى تم تطبيقها). خدمة الدفع عند الاستلام (COD) ⟪هي خدمة تتيح للعميل النهائي الدفع عند استلام الشحنة بدلاً من الدفع المسبق، حيث تقوم زد بتحصيل المبلغ نيابة عن التاجر من العميل عند التسليم ثم تقوم بتحويلها إلى التاجر وفق الأحكام أدناه.⟫ تستحق زد على خدمة الدفع عند الاستلام رسوم إضافية منفصلة يتم خصمها من إجمالي المبالغ المحصّلة قبل تحويلها إلى محفظة التاجر. تقوم زد بتحصيل المبالغ من العملاء النهائيين وتحويل إجمالي المستحقات إلى محفظة التاجر مرتين كل شهر ميلادي، ويتم خصم رسوم وتكاليف زد المتعلقة بهذه الخدمة مباشرة فور الإيداع. التاجر لا يستحق أي مبالغ مباشرة من شركات الشحن أو العملاء. وفي حال تحويل أي مبالغ من شركات الشحن إلى التاجر بشكل مباشر، يلتزم التاجر برد هذه المبالغ إلى ش…
@@ -384,8 +384,8 @@
 - cite_ids: ZD-S-0636
 
 **Citation ZD-S-0636:** `https://zid.sa/ar/legal/terms-conditions/` | خدمة الدفع عند الاستلام (COD) | 2026-08 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/text.txt` (fetched 2026-10-12T04:53:53Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/text.txt` (fetched 2026-10-12T10:51:26Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/raw.html` (626842 bytes), fetched 2026-10-12T04:53:53Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/raw.html` (626842 bytes), fetched 2026-10-12T10:51:26Z, captured
 - quote: تقوم زد بتحصيل المبالغ من العملاء النهائيين وتحويل إجمالي المستحقات إلى محفظة التاجر مرتين كل شهر ميلادي، ويتم خصم رسوم وتكاليف زد المتعلقة بهذه الخدمة مباشرة فور الإيداع.
 - title: Zid | Create your online store with modern retail services
 - in context: …سوم الحكومية، ورسوم الدفع عند الاستلام، وفروقات الأوزان الإضافية، وأي تكاليف أو خدمات إضافية أخرى تم تطبيقها). خدمة الدفع عند الاستلام (COD) هي خدمة تتيح للعميل النهائي الدفع عند استلام الشحنة بدلاً من الدفع المسبق، حيث تقوم زد بتحصيل المبلغ نيابة عن التاجر من العميل عند التسليم ثم تقوم بتحويلها إلى التاجر وفق الأحكام أدناه. تستحق زد على خدمة الدفع عند الاستلام رسوم إضافية منفصلة يتم خصمها من إجمالي المبالغ المحصّلة قبل تحويلها إلى محفظة التاجر. ⟪تقوم زد بتحصيل المبالغ من العملاء النهائيين وتحويل إجمالي المستحقات إلى محفظة التاجر مرتين كل شهر ميلادي، ويتم خصم رسوم وتكاليف زد المتعلقة بهذه الخدمة مباشرة فور الإيداع.⟫ التاجر لا يستحق أي مبالغ مباشرة من شركات الشحن أو العملاء. وفي حال تحويل أي مبالغ من شركات الشحن إلى التاجر بشكل مباشر، يلتزم التاجر برد هذه المبالغ إلى شركة الشحن المعنية فوراً وإخطار زد بذلك. في حال عدم استلام العميل النهائي للشحنة وتحول حالة الطلب إلى (رجيع)، تُعاد رسوم الدفع عند الاستلام فقط إلى محفظة التاجر، بينما لا تُعاد رسوم الشحن الأساسية. التقارير المالية والفواتير يتلقى التاجر تقارير مالية أسبوعية توضح وتفصّل جميع عمليات الشراء والدفع…
@@ -403,8 +403,8 @@
 - cite_ids: ZD-S-0638
 
 **Citation ZD-S-0638:** `https://zid.sa/ar/legal/terms-conditions/` | خدمة الدفع عند الاستلام (COD) | 2026-08 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/text.txt` (fetched 2026-10-12T04:53:53Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/text.txt` (fetched 2026-10-12T10:51:26Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/raw.html` (626842 bytes), fetched 2026-10-12T04:53:53Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/raw.html` (626842 bytes), fetched 2026-10-12T10:51:26Z, captured
 - quote: تستحق زد على خدمة الدفع عند الاستلام رسوم إضافية منفصلة يتم خصمها من إجمالي المبالغ المحصّلة قبل تحويلها إلى محفظة التاجر.
 - title: Zid | Create your online store with modern retail services
 - in context: …بيل المثال لا الحصر: (الرسوم الجمركية، رسوم الشحنات العكسية والرجيع من العميل النهائي إلى التاجر، وأي رسوم نقل إضافية، والرسوم الحكومية، ورسوم الدفع عند الاستلام، وفروقات الأوزان الإضافية، وأي تكاليف أو خدمات إضافية أخرى تم تطبيقها). خدمة الدفع عند الاستلام (COD) هي خدمة تتيح للعميل النهائي الدفع عند استلام الشحنة بدلاً من الدفع المسبق، حيث تقوم زد بتحصيل المبلغ نيابة عن التاجر من العميل عند التسليم ثم تقوم بتحويلها إلى التاجر وفق الأحكام أدناه. ⟪تستحق زد على خدمة الدفع عند الاستلام رسوم إضافية منفصلة يتم خصمها من إجمالي المبالغ المحصّلة قبل تحويلها إلى محفظة التاجر.⟫ تقوم زد بتحصيل المبالغ من العملاء النهائيين وتحويل إجمالي المستحقات إلى محفظة التاجر مرتين كل شهر ميلادي، ويتم خصم رسوم وتكاليف زد المتعلقة بهذه الخدمة مباشرة فور الإيداع. التاجر لا يستحق أي مبالغ مباشرة من شركات الشحن أو العملاء. وفي حال تحويل أي مبالغ من شركات الشحن إلى التاجر بشكل مباشر، يلتزم التاجر برد هذه المبالغ إلى شركة الشحن المعنية فوراً وإخطار زد بذلك. في حال عدم استلام العميل النهائي للشحنة وتحول حالة الطلب إلى (رجيع)، تُعاد رسوم الد…
@@ -422,8 +422,8 @@
 - cite_ids: ZD-S-0642
 
 **Citation ZD-S-0642:** `https://zid.sa/ar/legal/terms-conditions/` | خدمة الدفع عند الاستلام (COD) | 2026-08 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/text.txt` (fetched 2026-10-12T04:53:53Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/text.txt` (fetched 2026-10-12T10:51:26Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/raw.html` (626842 bytes), fetched 2026-10-12T04:53:53Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/raw.html` (626842 bytes), fetched 2026-10-12T10:51:26Z, captured
 - quote: التاجر لا يستحق أي مبالغ مباشرة من شركات الشحن أو العملاء. وفي حال تحويل أي مبالغ من شركات الشحن إلى التاجر بشكل مباشر، يلتزم التاجر برد هذه المبالغ إلى شركة الشحن المعنية فوراً وإخطار زد بذلك.
 - title: Zid | Create your online store with modern retail services
 - in context: …فع عند استلام الشحنة بدلاً من الدفع المسبق، حيث تقوم زد بتحصيل المبلغ نيابة عن التاجر من العميل عند التسليم ثم تقوم بتحويلها إلى التاجر وفق الأحكام أدناه. تستحق زد على خدمة الدفع عند الاستلام رسوم إضافية منفصلة يتم خصمها من إجمالي المبالغ المحصّلة قبل تحويلها إلى محفظة التاجر. تقوم زد بتحصيل المبالغ من العملاء النهائيين وتحويل إجمالي المستحقات إلى محفظة التاجر مرتين كل شهر ميلادي، ويتم خصم رسوم وتكاليف زد المتعلقة بهذه الخدمة مباشرة فور الإيداع. ⟪التاجر لا يستحق أي مبالغ مباشرة من شركات الشحن أو العملاء. وفي حال تحويل أي مبالغ من شركات الشحن إلى التاجر بشكل مباشر، يلتزم التاجر برد هذه المبالغ إلى شركة الشحن المعنية فوراً وإخطار زد بذلك.⟫ في حال عدم استلام العميل النهائي للشحنة وتحول حالة الطلب إلى (رجيع)، تُعاد رسوم الدفع عند الاستلام فقط إلى محفظة التاجر، بينما لا تُعاد رسوم الشحن الأساسية. التقارير المالية والفواتير يتلقى التاجر تقارير مالية أسبوعية توضح وتفصّل جميع عمليات الشراء والدفع المتعلقة بخدمات الشحن المباشر التي تم خصمها من المحفظة، بما يشمل كافة التكاليف الأساسية للشحن والتكاليف الإضافية للشحن. بناءً على هذه التقارير والتسويات تُصدر الفواتير الخاصة بالتاجر، والذي يحق…
@@ -442,8 +442,8 @@
 - note: Sources differ on timing: this FAQ (last updated July 20, 2023) says within two working weeks; the Terms (August 2026) say twice each calendar month. Recorded as found.
 
 **Citation ZD-S-0640:** `https://help.zid.sa/faqs/%d9%83%d9%8a%d9%81-%d9%8a%d8%aa%d9%85-%d8%aa%d8%ad%d8%b5%d9%8a%d9%84-%d8%a3%d9%85%d9%88%d8%a7%d9%84-%d8%b4%d8%ad%d9%86%d8%a7%d8%aa-%d9%85%d8%a8%d8%a7%d9%84%d8%ba-%d8%a7%d9%84%d8%af%d9%81%d8%b9-%d8%b9/` | answer | 2023-07-20 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/118-help.zid.sa/text.txt` (fetched 2026-10-12T04:52:50Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/055-help.zid.sa/text.txt` (fetched 2026-10-12T10:50:31Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/118-help.zid.sa/text.txt` (2478 bytes), fetched 2026-10-12T04:52:50Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/055-help.zid.sa/text.txt` (2478 bytes), fetched 2026-10-12T10:50:31Z, captured
 - quote: في حين فعلت خدمة الدفع عن الاستلام ، سيتم تحصيل مبالغ الدفع عند الاستلام من قبل زد شب وخلال أسبوعين عمل سيتم تحويل المبالغ.
 - title: كيف يتم تحصيل أموال شحنات مبالغ الدفع عند الاستلام؟ - زد - مركز المساعدة
 - the page opens: كيف يتم تحصيل أموال شحنات مبالغ الدفع عند الاستلام؟ - زد - مركز المساعدة menu right alt الدخول لمتجرك --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا EN --> الدخول لمتجرك close --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا English --> مركز المساعدة كيف يتم تحصيل أموال شحنات مبالغ الدفع عند الاستلام؟ عن ماذا تبحث ؟ دليل استخدام منصة التاجر الرئيسية --> تعرف على زد --> تعرف على زد إعدادات المتجر --> إعدادات المتجر المنتجات --> التصنيفات --> التصنيفات المنتجات --…
@@ -462,8 +462,8 @@
 - from: held
 
 **Citation Q4-ZD-C004:** `https://help.zid.sa/bank-accounts/` | خطوات إضافة حساب بنكي جديد | 2026-08-06 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/088-help.zid.sa/text.txt` (fetched 2026-10-12T04:52:20Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/049-help.zid.sa/text.txt` (fetched 2026-10-12T10:50:25Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/088-help.zid.sa/text.txt` (5691 bytes), fetched 2026-10-12T04:52:20Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/049-help.zid.sa/text.txt` (5691 bytes), fetched 2026-10-12T10:50:25Z, captured
 - quote: بإمكانك إضافة أكثر من حساب بنكي و ﺗﺨﺼﻴﺺ ﻛﻞ ﺣﺴﺎب بنكي ﻋﻠﻰ ﺣﺪة إما إظهار معلومات الحساب البنكي في صفحة خيارات الدفع و التوصيل في المتجر وإتاحته كوسيلة دفع للعملاء أو إخفائها ﻣﻦ ﺧﻠﺎل ﺧﻴﺎر اﻟﺘﻌﺪﻳﻞ.
 - title: زد - مركز المساعدة - الحسابات البنكية ( لوحة التحكم الجديدة )
 - the page opens: زد - مركز المساعدة - الحسابات البنكية ( لوحة التحكم الجديدة ) menu right alt الدخول لمتجرك --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا EN --> الدخول لمتجرك close --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا English --> مركز المساعدة زد باي زد باي الحسابات البنكية ( لوحة التحكم الجديدة ) عن ماذا تبحث ؟ دليل استخدام منصة التاجر الرئيسية --> تعرف على زد --> تعرف على زد إعدادات المتجر --> إعدادات المتجر المنتجات --> التصنيفات --> التصنيفات المنتجات --> المنتج…
@@ -482,8 +482,8 @@
 - from: held
 
 **Citation Q4-ZD-C007:** `https://help.zid.sa/bank-accounts/` | الحسابات البنكية | 2026-08-06 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/088-help.zid.sa/text.txt` (fetched 2026-10-12T04:52:20Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/049-help.zid.sa/text.txt` (fetched 2026-10-12T10:50:25Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/088-help.zid.sa/text.txt` (5691 bytes), fetched 2026-10-12T04:52:20Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/049-help.zid.sa/text.txt` (5691 bytes), fetched 2026-10-12T10:50:25Z, captured
 - quote: بعد ذلك يمكنك تعطيل أو تفعيل خاصية التحويل البنكي بشكل مؤقت عن العملاء مع الحفاظ على جميع بيانات الحساب البنكي دون حذفها من خلال الضغط على الايقونة
 - title: زد - مركز المساعدة - الحسابات البنكية ( لوحة التحكم الجديدة )
 - the page opens: زد - مركز المساعدة - الحسابات البنكية ( لوحة التحكم الجديدة ) menu right alt الدخول لمتجرك --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا EN --> الدخول لمتجرك close --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا English --> مركز المساعدة زد باي زد باي الحسابات البنكية ( لوحة التحكم الجديدة ) عن ماذا تبحث ؟ دليل استخدام منصة التاجر الرئيسية --> تعرف على زد --> تعرف على زد إعدادات المتجر --> إعدادات المتجر المنتجات --> التصنيفات --> التصنيفات المنتجات --> المنتج…
@@ -502,8 +502,8 @@
 - cite_ids: ZD-S-0722
 
 **Citation ZD-S-0722:** `https://docs.zid.sa/webhooks.md` | Order Events | 2026-10-12 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/070-docs.zid.sa/text.txt` (fetched 2026-10-12T04:52:08Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/013-docs.zid.sa/text.txt` (fetched 2026-10-12T10:49:47Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/070-docs.zid.sa/text.txt` (5363 bytes), fetched 2026-10-12T04:52:08Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/013-docs.zid.sa/text.txt` (5363 bytes), fetched 2026-10-12T10:49:47Z, captured
 - quote: order.payment_status.update | Triggered when an order's payment status changes to `paid` or `unpaid`.
 - title: Overview
 - the page opens: Webhooks allow you to receive real-time data updates for various events. These events can range from order creation to customer login activities. This page serves as a comprehensive guide to understanding the supported webhook events, their payloads, and any conditions that can be applied to them. How to Subscribe To subscribe to these webhook events, follow these steps: 1. Choose the event(s) you would like to subscribe to from the list of Supported Webhook Events below. 1. (Optional) If the ev…
@@ -523,8 +523,8 @@
 - cite_ids: ZD-S-0839
 
 **Citation ZD-S-0839:** `https://zid.sa/ar/legal/terms-conditions/` | التعويض في خدمة الشحن المباشر | 2026-08 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/text.txt` (fetched 2026-10-12T04:53:53Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/text.txt` (fetched 2026-10-12T10:51:26Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/raw.html` (626842 bytes), fetched 2026-10-12T04:53:53Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/raw.html` (626842 bytes), fetched 2026-10-12T10:51:26Z, captured
 - quote: تُعد زد وسيطاً تقنياً ومسهّلاً لخدمات الشحن، ولا تُعد شركة نقل مباشرة؛ وتخضع كافة أحكام التعويض لسياسات وشروط شركات الشحن المزودة للخدمة.
 - title: Zid | Create your online store with modern retail services
 - in context: …بة العميل النهائي، بما في ذلك دقة وصحة بيانات العنوان، والتجاوب مع الرسائل أو الاتصالات الواردة من شركة الشحن. تُعامل أي شحنة عكسية (تُعاد إلى التاجر بعد التوصيل للعميل النهائي) باعتبارها شحنة جديدة مستقلة تُطبق عليها كافة الرسوم والتكاليف الكاملة المطبقة على الشحنات الجديدة؛ ويلتزم التاجر بدفع وتغطية كافة رسومها وتكاليفها، مع حق التاجر الكامل في الرجوع على العميل النهائي ومطالبته بتلك التكاليف وفقاً لسياسته الخاصة. التعويض في خدمة الشحن المباشر ⟪تُعد زد وسيطاً تقنياً ومسهّلاً لخدمات الشحن، ولا تُعد شركة نقل مباشرة؛ وتخضع كافة أحكام التعويض لسياسات وشروط شركات الشحن المزودة للخدمة.⟫ يُعد إرفاق المستندات الإثباتية شرطاً أساسياً لقبول طلبات التعويض، ولن يتم النظر أو البتّ في أي طلب تعويض لا يحتوي على الإثباتات والمستندات الداعمة. آلية طلب التعويض للشحنات التالفة: يتم رفع طلب التعويض خلال 24 ساعة بحد أقصى من استلام العميل النهائي للشحنة التالفة، ولا يُقبل أو يُنظر في أي طلب تعويض يُقدم بعد انقضاء هذه المهلة. يجب رفع طلب التعويض عن الشحنات التالفة عن طريق رفع تذكرة دعم عبر لوحة تحكم المتجر (طلبات وبلاغات نظام تشغيل الشحن المباش…

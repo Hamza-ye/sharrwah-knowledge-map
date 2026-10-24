@@ -9,7 +9,8 @@
 import csv, glob, json, os, re
 
 OFFICIAL = re.compile(r"/(legal|terms|tos|policies|policy|privacy|pricing|plans|agreements?)\b|terms[-_]?of[-_]?service|"
-                      r"acceptable[-_]use|/conditions|/الشروط|/سياسة", re.I)
+                      r"acceptable[-_]use|/conditions|/الشروط|/سياسة|[-_]agreements?\b", re.I)
+HELP = re.compile(r"^https?://help\.|/manual/|/article/", re.I)     # a help centre's article, even on privacy or terms
 SHIPPED = re.compile(r"\.(m?js|map)(\?|$)|importmap|/bundles?/|/chunks?/|/assets/|graphql[^ ]*schema|/schema(\.json)?(\?|$)", re.I)
 SESSION_KEYS = {"trace", "bodies", "operation", "run_files", "steps", "dumps_sha256", "html_file", "step", "run_ids",
                 "captured", "element"}
@@ -18,6 +19,8 @@ _manifest_cache = {}
 SKM = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 def kind_of_url(u):
+    if HELP.search(u) and not re.search(r"/legal\b", u, re.I):
+        return "stated", "the address is a help centre's article"
     if OFFICIAL.search(u):
         return "official page", "the address is a terms, policy, legal or pricing page"
     if SHIPPED.search(u):
@@ -63,8 +66,13 @@ def _captured_url(path):
         _manifest_cache[run] = rows
     return _manifest_cache[run].get(item, "")
 
-def kind_of(source, roots):
-    """(kind, rule) for a citation's source, or ("unknown", why)."""
+def kind_of(source, roots, locator=""):
+    """(kind, rule) for a citation's source, or ("unknown", why). A fetch archive's record is judged by the address
+    its locator names, where it names one."""
+    url = re.search(r"https?://[^\s,)]+", locator or "")
+    if source.endswith(".warc.gz") and url and not re.search(r"journey|sweep|session|store|trial|capture", source):
+        k, why = kind_of_url(url.group(0))
+        return k, f"a fetched page at {url.group(0)[:80]}: {why}"
     if source.startswith("woocommerce-11.2.1:"):
         return "shipped", "a file of the WooCommerce release"
     if re.match(r"^https?://", source):

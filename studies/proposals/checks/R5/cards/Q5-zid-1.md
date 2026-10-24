@@ -66,8 +66,8 @@
 - cite_ids: ZD-S-0563
 
 **Citation ZD-S-0563:** `https://help.zid.sa/about_zidpay/` | الشبكات المدعومة | 2026-08-06 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/082-help.zid.sa/text.txt` (fetched 2026-10-12T04:52:14Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/047-help.zid.sa/text.txt` (fetched 2026-10-12T10:50:23Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/082-help.zid.sa/text.txt` (8063 bytes), fetched 2026-10-12T04:52:14Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/047-help.zid.sa/text.txt` (8063 bytes), fetched 2026-10-12T10:50:23Z, captured
 - quote: يمكنك إتاحة الشبكات في زد باي عن طريق تفعيل الشبكة المرغوبة من خلال إدارة زد باي
 - title: زد - مركز المساعدة - عن زد باي
 - the page opens: زد - مركز المساعدة - عن زد باي menu right alt الدخول لمتجرك --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا EN --> الدخول لمتجرك close --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا English --> مركز المساعدة زد باي زد باي عن زد باي عن ماذا تبحث ؟ دليل استخدام منصة التاجر الرئيسية --> تعرف على زد --> تعرف على زد إعدادات المتجر --> إعدادات المتجر المنتجات --> التصنيفات --> التصنيفات المنتجات --> المنتجات إدارة المخزون --> إدارة المخزون إدارة المنتجات --> إدارة ال…
@@ -87,7 +87,7 @@
 - from: held
 
 **Citation Q5-ZD-C002:** `https://help.zid.sa/zidpay_staff_and_currencies/` | صلاحيات فريق العمل > إدارة زد باي | 2026-08-06 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/184-help.zid.sa/text.txt` (fetched 2026-10-12T04:53:56Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/184-help.zid.sa/text.txt` (4194 bytes), fetched 2026-10-12T04:53:56Z, captured
 - quote: إدارة زد باي : من خلال هذه الصفحة بإمكانك تحديد صلاحية تفعيل | تعطيل زد باي أو شبكات الدفع.
 - title: زد - مركز المساعدة - صلاحيات فريق العمل و خاصية العملات
 - the page opens: زد - مركز المساعدة - صلاحيات فريق العمل و خاصية العملات menu right alt الدخول لمتجرك --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا EN --> الدخول لمتجرك close --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا English --> مركز المساعدة زد باي زد باي صلاحيات فريق العمل و خاصية العملات عن ماذا تبحث ؟ دليل استخدام منصة التاجر الرئيسية --> تعرف على زد --> تعرف على زد إعدادات المتجر --> إعدادات المتجر المنتجات --> التصنيفات --> التصنيفات المنتجات --> المنتجات إدارة الم…
@@ -107,7 +107,7 @@
 - note: the settings path is copy Q5-ZD-K0356
 
 **Citation Q5-ZD-C014:** `https://help.zid.sa/logistics-shipping-methods/` | طرق الشحن (body, after قيود الشحن والدفع) | 2026-08-05 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/134-help.zid.sa/text.txt` (fetched 2026-10-12T04:53:06Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/134-help.zid.sa/text.txt` (13296 bytes), fetched 2026-10-12T04:53:06Z, captured
 - quote: إخفاء وسيلة دفع معينة مثل (الدفع عند الاستلام) في حال توافقت شروط معينة من نفس الإعدادات
 - title: زد - مركز المساعدة - الشحن المباشر - دون الحاجة لعقد ( لوحة التحكم الجديدة )
 - the page opens: زد - مركز المساعدة - الشحن المباشر - دون الحاجة لعقد ( لوحة التحكم الجديدة ) menu right alt الدخول لمتجرك --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا EN --> الدخول لمتجرك close --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا English --> مركز المساعدة طرق الشحن زد لوجيستك الشحن المباشر - دون الحاجة لعقد ( لوحة التحكم الجديدة ) عن ماذا تبحث ؟ دليل استخدام منصة التاجر الرئيسية --> تعرف على زد --> تعرف على زد إعدادات المتجر --> إعدادات المتجر المنتجات --> التصني…
@@ -126,8 +126,8 @@
 - from: held
 
 **Citation Q5-ZD-C001:** `https://help.zid.sa/payment-gateways/` | بوابات الدفع الأُخرى (opening) | 2025-11-16 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/145-help.zid.sa/text.txt` (fetched 2026-10-12T04:53:17Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/065-help.zid.sa/text.txt` (fetched 2026-10-12T10:50:41Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/145-help.zid.sa/text.txt` (3753 bytes), fetched 2026-10-12T04:53:17Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/065-help.zid.sa/text.txt` (3753 bytes), fetched 2026-10-12T10:50:41Z, captured
 - quote: في زد نوفر لك خيارات دفع متعددة حسب دولتك، لتسهيل إتمام معاملاتك بكل سلاسة وأمان، وتمكينك من إدارة المدفوعات بالطريقة الأنسب لك.
 - title: زد - مركز المساعدة - بوابات الدفع الأُخرى( لوحة التحكم الجديدة)
 - the page opens: زد - مركز المساعدة - بوابات الدفع الأُخرى( لوحة التحكم الجديدة) menu right alt الدخول لمتجرك --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا EN --> الدخول لمتجرك close --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا English --> مركز المساعدة الجمعيات بوابات الدفع بوابات الدفع الأُخرى( لوحة التحكم الجديدة) عن ماذا تبحث ؟ دليل استخدام منصة التاجر الرئيسية --> تعرف على زد --> تعرف على زد إعدادات المتجر --> إعدادات المتجر المنتجات --> التصنيفات --> التصنيفات المنتجا…
@@ -186,15 +186,15 @@
 - from: index:ZD-C-011:ZD-S-0608
 
 **Citation S01-ZD-C216:** `https://zid.sa/ar/legal/zidpay-terms-conditions-sa/` | طريقة الاستفادة من خدمات زد باي | 2025-01-21 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/189-zid.sa/text.txt` (fetched 2026-10-12T04:53:55Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/124-zid.sa/text.txt` (fetched 2026-10-12T10:51:28Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/189-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/189-zid.sa/raw.html` (223074 bytes), fetched 2026-10-12T04:53:55Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/124-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T104936Z-s01-sources/items/124-zid.sa/raw.html` (223074 bytes), fetched 2026-10-12T10:51:28Z, captured
 - quote: عند تفعيلك لخدمة زد باي ستتعطل بوابة الدفع الأخرى من المتجر.
 - title: Zid | Create your online store with modern retail services
 - in context: …فق مع مزود الخدمة. طريقة الاستفادة من خدمات زد باي -تفعيل الخدمة: يجب أن تكون المعلومات المقدمة من التاجر لتفعيل الخدمة صحيحة. يجب أن يكون نشاط التاجر صحيح ولا يخدم أي من النشاطات المحظورة. في حالة عدم صحة البيانات المقدمة لتفعيل الخدمة يعطى التاجر مهلة تصحيحية مدتها ١٤ يوم، وفي حال عدم التصحيح سيتم تعطيل الحساب وإعادة جميع المبالغ للعملاء النهائيين. التاجر وحده مسؤول عن مطابقة المنتجات مع المنتجات الموجودة في المتجر، وعن توصيلها للعميل النهائي. ⟪عند تفعيلك لخدمة زد باي ستتعطل بوابة الدفع الأخرى من المتجر.⟫ -رسوم العمليات: رسوم زد باي تعتمد على حسب باقتك المختارة في متجر زد، فإن كانت باقتك الأساسية تُفرض عليك رسوم زد باي للباقة الأساسية وإن كانت باقة النمو تُفرض عليك رسوم زد باي لباقة النمو. يتم فرض رسوم كنسبة مقتطعة من العمليات الناجحة. تحديد سقف أعلى بقيمة ٢٠٠ ريال لنسبة شبكة الدفع مدى (غير شامل لضريبة القيمة المضافه). يتم فرض رسوم تشغيلية على العمليات الناجحة بمختلف شبكات الدفع وذلك حسب نوع باقة التاجر. يمكن لزد باي تحديث رسوم العمليات في أي وقت…
 
 **Citation S01-ZD-C217:** `https://zid.sa/ar/legal/zidpay-terms-conditions-kw/` | طريقة الاستفادة من خدمات زد باي، تفعيل الخدمة | 2026-10-12 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/188-zid.sa/text.txt` (fetched 2026-10-12T04:53:54Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/123-zid.sa/text.txt` (fetched 2026-10-12T10:51:27Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/188-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/188-zid.sa/raw.html` (219276 bytes), fetched 2026-10-12T04:53:54Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/123-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T104936Z-s01-sources/items/123-zid.sa/raw.html` (219276 bytes), fetched 2026-10-12T10:51:27Z, captured
 - quote: عند تفعيلك لخدمة زد باي ستتعطل بوابة الدفع الأخرى من المتجر.
 - title: Zid | Create your online store with modern retail services
 - in context: …اق صورة الهوية الوطنية من الخلف والامام للاستفادة من خدمة زد باي. يجب أن تكون المعلومات المقدمة من التاجر لتفعيل الخدمة صحيحة. يجب أن يكون نشاط التاجر صحيح ولا يخدم أي من النشاطات المحظورة. في حالة عدم صحة البيانات المقدمة لتفعيل الخدمة يعطى التاجر مهلة تصحيحية مدتها ١٤ يوم، وفي حال عدم التصحيح سيتم تعطيل الحساب وإعادة جميع المبالغ للعملاء النهائيين. التاجر وحده مسؤول عن مطابقة المنتجات مع المنتجات الموجودة في المتجر، وعن توصيلها للعميل النهائي. ⟪عند تفعيلك لخدمة زد باي ستتعطل بوابة الدفع الأخرى من المتجر.⟫ -رسوم العمليات: رسوم زد باي تعتمد على حسب باقتك المختارة في متجر زد، فإن كانت باقتك الأساسية تُفرض عليك رسوم زد باي للباقة الأساسية وإن كانت باقة النمو تُفرض عليك رسوم زد باي لباقة النمو، وفي حال كانت باقتك الباقة الاحترافية ستفرض عليك رسوم الباقة الاحترافية. يتم فرض رسوم كنسبة مقتطعة من العمليات. يمكن لزد باي تحديث رسوم العمليات في أي وقت بعد تنويه التاجر. -تحصيل المبالغ: تُحصّل المبالغ بشكل يومي. تحوّل المبالغ عند اجتياز المبالغ المحصلة ١ دينا…
@@ -212,7 +212,7 @@
 - cite_ids: ZD-S-0863
 
 **Citation ZD-S-0863:** `https://docs.zid.sa/zid-apps-overview.md` | App Development Cycle | 2026-10-12 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/072-docs.zid.sa/text.txt` (fetched 2026-10-12T04:52:10Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/072-docs.zid.sa/text.txt` (4427 bytes), fetched 2026-10-12T04:52:10Z, captured
 - quote: After developing the app, our team will take some time to review your submission and test the app functionality before publishing it to the public.
 - title: 🗂️ Overview
 - the page opens: Zid offers a strong platform for partners to develop applications that enhance the functionality of online stores. Understanding the different types of apps in Zid is essential for developers aiming for successful integrations. This article provides an overview of the app types supported by Zid, the development process, and the publishing options. App Types When you develop an app in Zid, you must decide whether it will be public or private. These options determine how the app is published and w…
@@ -232,8 +232,8 @@
 - cite_ids: ZD-S-0624
 
 **Citation ZD-S-0624:** `https://help.zid.sa/bnpl-2/` | خدمة أم آي إس باي | 2026-10-07 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/090-help.zid.sa/text.txt` (fetched 2026-10-12T04:52:22Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/050-help.zid.sa/text.txt` (fetched 2026-10-12T10:50:26Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/090-help.zid.sa/text.txt` (8691 bytes), fetched 2026-10-12T04:52:22Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/050-help.zid.sa/text.txt` (8691 bytes), fetched 2026-10-12T10:50:26Z, captured
 - quote: تقدم لك أم آي إس باي خدمة الدفع بالأقساط وتقسيم قيمة مدفوعات العملاء على 3 دفعات شهرية بدون رسوم تأخير و بحد أدنى للطلب 200 ريال و حد أعلى 2000 ريال.
 - title: زد - مركز المساعدة - خدمات التقسيط (لوحة التحكم الجديدة )
 - the page opens: زد - مركز المساعدة - خدمات التقسيط (لوحة التحكم الجديدة ) menu right alt الدخول لمتجرك --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا EN --> الدخول لمتجرك close --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا English --> مركز المساعدة زد باي زد باي خدمات التقسيط (لوحة التحكم الجديدة ) عن ماذا تبحث ؟ دليل استخدام منصة التاجر الرئيسية --> تعرف على زد --> تعرف على زد إعدادات المتجر --> إعدادات المتجر المنتجات --> التصنيفات --> التصنيفات المنتجات --> المنتجات إدارة…
@@ -271,8 +271,8 @@
 - note: The platform's definition of زد باي; it names مقدمي خدمات الدفع without naming any provider. The Kuwait document's definition is recorded in terms.tsv.
 
 **Citation S01-ZD-C003:** `https://zid.sa/ar/legal/zidpay-terms-conditions-sa/` | التعريفات | 2025-01-21 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/189-zid.sa/text.txt` (fetched 2026-10-12T04:53:55Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/124-zid.sa/text.txt` (fetched 2026-10-12T10:51:28Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/189-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/189-zid.sa/raw.html` (223074 bytes), fetched 2026-10-12T04:53:55Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/124-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T104936Z-s01-sources/items/124-zid.sa/raw.html` (223074 bytes), fetched 2026-10-12T10:51:28Z, captured
 - quote: زد باي: هي خدمة تمكين التاجر من تنفيذ عمليات البيع والتجارة الإلكترونية من خلال مقدمي خدمات الدفع على منصة تابعة لزد
 - title: Zid | Create your online store with modern retail services
 - in context: …جارفريق جاهز لتمكين نموك مجتمع التجاركن مع تجار يفهموك ويشبهون طموحك أكاديمية زدتعلّم أحدث طرق واستراتيجيات التجارة مكتبة زد تقارير زد كل ما تحتاج معرفته عن السوق أدلة زدأدلة متكاملة للبدء والنمو في التجارة الإلكترونية الانتقال إلى زد زد x سلة زد x شوبيفاي زد x أوبن كارت زد x ماجنتو زد x ووردبريس EN تسجيل الدخول أنشئ متجرك شروط وأحكام زد باي الشروط والأحكام: تمثل الشروط والأحكام المذكورة أدناه العقد المبرم بين مستخدمي زد باي وشركة زد. التعريفات: ⟪زد باي: هي خدمة تمكين التاجر من تنفيذ عمليات البيع والتجارة الإلكترونية من خلال مقدمي خدمات الدفع على منصة تابعة لزد⟫، ويشار إليها -أيضًا- في هذه الشروط والأحكام ب (" زد باي، أو الخدمة"). تفعيل الخدمة: وهي عملية طلب التاجر لتفعيل خدمة زد باي. التاجر: هو المستخدم المشترك في زد باي، والمالك لمتجر على منصة زد. الشروط العامة: يمكن فقط للشركات، والمؤسسات، والأشخاص، والمنظمات المسموح لهم إجراء عمليات دفع واستلام أموال داخل بلادهم من الجهات الرسمية، الاشتراك لاستخدام زد باي. ولا يجوز استخدام زد باي ممن لا يسمح لهم باستلام الأموال أو القيام بعمليات تجارية أو غير تجارية…
@@ -290,8 +290,8 @@
 - cite_ids: ZD-S-0604
 
 **Citation ZD-S-0604:** `https://help.zid.sa/payment-gateways/` | intro | 2025-11-16 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/145-help.zid.sa/text.txt` (fetched 2026-10-12T04:53:17Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/065-help.zid.sa/text.txt` (fetched 2026-10-12T10:50:41Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/145-help.zid.sa/text.txt` (3753 bytes), fetched 2026-10-12T04:53:17Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/065-help.zid.sa/text.txt` (3753 bytes), fetched 2026-10-12T10:50:41Z, captured
 - quote: يمكنك الوصول الى بوابات الدفع الأُخرى من خلال : المدفوعات > بوابات الدفع الأُخرى
 - title: زد - مركز المساعدة - بوابات الدفع الأُخرى( لوحة التحكم الجديدة)
 - the page opens: زد - مركز المساعدة - بوابات الدفع الأُخرى( لوحة التحكم الجديدة) menu right alt الدخول لمتجرك --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا EN --> الدخول لمتجرك close --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا English --> مركز المساعدة الجمعيات بوابات الدفع بوابات الدفع الأُخرى( لوحة التحكم الجديدة) عن ماذا تبحث ؟ دليل استخدام منصة التاجر الرئيسية --> تعرف على زد --> تعرف على زد إعدادات المتجر --> إعدادات المتجر المنتجات --> التصنيفات --> التصنيفات المنتجا…
@@ -311,8 +311,8 @@
 - from: index:ZD-C-016:ZD-S-0643
 
 **Citation S01-ZD-C144:** `https://help.zid.sa/bank-accounts/` | intro | 2026-08-06 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/088-help.zid.sa/text.txt` (fetched 2026-10-12T04:52:20Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/049-help.zid.sa/text.txt` (fetched 2026-10-12T10:50:25Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/088-help.zid.sa/text.txt` (5691 bytes), fetched 2026-10-12T04:52:20Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/049-help.zid.sa/text.txt` (5691 bytes), fetched 2026-10-12T10:50:25Z, captured
 - quote: من خلال هذه الخاصية يمكنك عرض بيانات حسابك البنكي في صفحة الدفع لتمكين العملاء من الدفع عن طريق التحويل البنكي، مع إمكانية التحكم الكامل في عرض أو إخفاء التفاصيل.
 - title: زد - مركز المساعدة - الحسابات البنكية ( لوحة التحكم الجديدة )
 - the page opens: زد - مركز المساعدة - الحسابات البنكية ( لوحة التحكم الجديدة ) menu right alt الدخول لمتجرك --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا EN --> الدخول لمتجرك close --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا English --> مركز المساعدة زد باي زد باي الحسابات البنكية ( لوحة التحكم الجديدة ) عن ماذا تبحث ؟ دليل استخدام منصة التاجر الرئيسية --> تعرف على زد --> تعرف على زد إعدادات المتجر --> إعدادات المتجر المنتجات --> التصنيفات --> التصنيفات المنتجات --> المنتج…
@@ -331,7 +331,7 @@
 - cite_ids: ZD-S-0597
 
 **Citation ZD-S-0597:** `https://docs.zid.sa/overview-1340225m0.md` | intro | 2026-10-12 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/052-docs.zid.sa/text.txt` (fetched 2026-10-12T04:51:50Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/052-docs.zid.sa/text.txt` (746 bytes), fetched 2026-10-12T04:51:50Z, captured
 - quote: This document provides a clear explanation for partners / payment service providers (PSPs) who want to integrate with Zid Payments through the Open APIs model.
 - title: Overview
 - the page opens: This document provides a clear explanation for partners / payment service providers (PSPs) who want to integrate with Zid Payments through the Open APIs model. The Open APIs integration model sets an API contract for our partners to implement. This includes listing the APIs that we require, in Zid Payments, in addition to sepcifying the request / response structure and format for each of these APIs. Partners are also expected to send some events / updates through webhooks. For this purpose, we s…
@@ -351,8 +351,8 @@
 - cite_ids: ZD-S-0600
 
 **Citation ZD-S-0600:** `https://docs.zid.sa/overview-1340608m0.md` | Direct payment | 2026-10-12 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/053-docs.zid.sa/text.txt` (fetched 2026-10-12T04:51:51Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/011-docs.zid.sa/text.txt` (fetched 2026-10-12T10:49:45Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/053-docs.zid.sa/text.txt` (573 bytes), fetched 2026-10-12T04:51:51Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/011-docs.zid.sa/text.txt` (573 bytes), fetched 2026-10-12T10:49:45Z, captured
 - quote: Zid will draw the payment form, then collect and submit the card info using an API, exposed by the provider, through a call made directly from the client side.
 - title: Overview
 - the page opens: There are two types of payment checkout on Zid and the provider will choose based on their preference; 1. Direct payment: Zid will draw the payment form, then collect and submit the card info using an API, exposed by the provider, through a call made directly from the client side. 2. Embedded payment: The provider will provide a JavaScript library that draws the payment form and submits the card info then provides Zid with a token. These actions (drawing the form, submitting the form) will be th…
@@ -373,15 +373,15 @@
 - from: held
 
 **Citation Q5-ZD-C010:** `https://zid.sa/ar/legal/zidpay-terms-conditions-sa/` | مدة/ إنهاء التعاقد | 2026-10-12 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/189-zid.sa/text.txt` (fetched 2026-10-12T04:53:55Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/124-zid.sa/text.txt` (fetched 2026-10-12T10:51:28Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/189-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/189-zid.sa/raw.html` (223074 bytes), fetched 2026-10-12T04:53:55Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/124-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T104936Z-s01-sources/items/124-zid.sa/raw.html` (223074 bytes), fetched 2026-10-12T10:51:28Z, captured
 - quote: زد باي قد توقف أو تلغي الحساب في أي وقت وقد ترسل زد باي كتاب إلى بريدك الإلكتروني المسجل إليها بالأسباب.
 - title: Zid | Create your online store with modern retail services
 - in context: …والأحكام سارية طالما تفعيلك لخدمة زد باي ساريًا. مدة التعاقد مع زد باي سنة واحدة من تاريخ استلام بريد التحقق الإلكتروني وتجدد تلقائيًا مالم يتم إنهاء التعاقد من المستخدم أو زد باي. إنهاء التعاقد لا يعني التنازل عن المتطلبات المطلوبة من المستخدم فيما يخص عمليات الدفع سابقة. في حالة فتح حساب لدى زد باي ولم تتوفر المعلومات والمستندات المطلوبة لاستكمال عملية التسجيل خلال ١٤ يوم سيلغى الحساب تلقائيًا، وستعاد المبالغ المحصلة لمصادرها -العميل النهائي-. ⟪زد باي قد توقف أو تلغي الحساب في أي وقت وقد ترسل زد باي كتاب إلى بريدك الإلكتروني المسجل إليها بالأسباب.⟫ ومثل هذه الأسباب قد تخضع إلى السلطة التقديرية لزد باي وقد تتضمن على سبيل المثال لا الحصر زيادة مخاطر العمليات، أو عمليات مشبوهة، أو أنشطة ممنوعة والغير قانونية من المستخدم، أو تغير في العمليات أو الملكية والإدارة للمستخدم. حدود المسؤولية يتحمل التاجر منفردا مسؤولية طبيعة المشترين أو العملاء الذين يتعامل معهم، ويوافق على التعامل مع العملاء الشرعيين فقط. التاجر هو المسؤول الوحيد عن طبيعة عمليات الدفع التي تتم على حسابه سواء خاطئة أو مشبوهة، وزد با…
 
 **Citation Q5-ZD-C011:** `https://zid.sa/ar/legal/zidpay-terms-conditions-sa/` | مدة/ إنهاء التعاقد | 2026-10-12 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/189-zid.sa/text.txt` (fetched 2026-10-12T04:53:55Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/124-zid.sa/text.txt` (fetched 2026-10-12T10:51:28Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/189-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/189-zid.sa/raw.html` (223074 bytes), fetched 2026-10-12T04:53:55Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/124-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T104936Z-s01-sources/items/124-zid.sa/raw.html` (223074 bytes), fetched 2026-10-12T10:51:28Z, captured
 - quote: ومثل هذه الأسباب قد تخضع إلى السلطة التقديرية لزد باي وقد تتضمن على سبيل المثال لا الحصر زيادة مخاطر العمليات، أو عمليات مشبوهة، أو أنشطة ممنوعة والغير قانونية من المستخدم، أو تغير في العمليات أو الملكية والإدارة للمستخدم.
 - title, opening and note boxes: as for this source's citation above
 - in context: …حقق الإلكتروني وتجدد تلقائيًا مالم يتم إنهاء التعاقد من المستخدم أو زد باي. إنهاء التعاقد لا يعني التنازل عن المتطلبات المطلوبة من المستخدم فيما يخص عمليات الدفع سابقة. في حالة فتح حساب لدى زد باي ولم تتوفر المعلومات والمستندات المطلوبة لاستكمال عملية التسجيل خلال ١٤ يوم سيلغى الحساب تلقائيًا، وستعاد المبالغ المحصلة لمصادرها -العميل النهائي-. زد باي قد توقف أو تلغي الحساب في أي وقت وقد ترسل زد باي كتاب إلى بريدك الإلكتروني المسجل إليها بالأسباب. ⟪ومثل هذه الأسباب قد تخضع إلى السلطة التقديرية لزد باي وقد تتضمن على سبيل المثال لا الحصر زيادة مخاطر العمليات، أو عمليات مشبوهة، أو أنشطة ممنوعة والغير قانونية من المستخدم، أو تغير في العمليات أو الملكية والإدارة للمستخدم.⟫ حدود المسؤولية يتحمل التاجر منفردا مسؤولية طبيعة المشترين أو العملاء الذين يتعامل معهم، ويوافق على التعامل مع العملاء الشرعيين فقط. التاجر هو المسؤول الوحيد عن طبيعة عمليات الدفع التي تتم على حسابه سواء خاطئة أو مشبوهة، وزد باي لن تتحمل أي مسؤولية عن أي عملية دفع لابد من ردها إلى مصدرها. إذا كان التاجر متشككا في أي معاملة فمسؤولية الإبقاء على عدم تنفيذ المعاملة تقع على عاتقه حتى يتواصل مع العميل النهائي ويجري كافة التحقيقات المطلوبة لضمان صحة وش…
@@ -400,8 +400,8 @@
 - from: index:ZD-C-003:ZD-S-0556
 
 **Citation S01-ZD-C081:** `https://help.zid.sa/faqs/%d9%81%d9%8a-%d8%ad%d8%a7%d9%84-%d8%aa%d9%85-%d8%aa%d8%b9%d8%b7%d9%8a%d9%84-%d8%b2%d8%af-%d8%a8%d8%a7%d9%8a-%d9%87%d9%84-%d9%8a%d8%aa%d9%85-%d8%aa%d8%ad%d9%88%d9%8a%d9%84-%d8%b1%d8%b5%d9%8a%d8%af/` | answer | 2023-07-15 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/115-help.zid.sa/text.txt` (fetched 2026-10-12T04:52:47Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/053-help.zid.sa/text.txt` (fetched 2026-10-12T10:50:29Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/115-help.zid.sa/text.txt` (2426 bytes), fetched 2026-10-12T04:52:47Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/053-help.zid.sa/text.txt` (2426 bytes), fetched 2026-10-12T10:50:29Z, captured
 - quote: نعم يتم تحويل المبلغ المتوفر في رصيد التاجر إلى الحساب البنكي.
 - title: في حال تم تعطيل زد باي هل يتم تحويل رصيد المبالغ؟ - زد - مركز المساعدة
 - the page opens: في حال تم تعطيل زد باي هل يتم تحويل رصيد المبالغ؟ - زد - مركز المساعدة menu right alt الدخول لمتجرك --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا EN --> الدخول لمتجرك close --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا English --> مركز المساعدة في حال تم تعطيل زد باي هل يتم تحويل رصيد المبالغ؟ عن ماذا تبحث ؟ دليل استخدام منصة التاجر الرئيسية --> تعرف على زد --> تعرف على زد إعدادات المتجر --> إعدادات المتجر المنتجات --> التصنيفات --> التصنيفات المنتجات --> ال…
@@ -421,8 +421,8 @@
 - from: index:ZD-C-023:ZD-S-0697
 
 **Citation S01-ZD-C190:** `https://zid.sa/ar/legal/terms-conditions/` | تمويل زد: أحكام وشروط عامة إضافية | 2026-08 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/text.txt` (fetched 2026-10-12T04:53:53Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/text.txt` (fetched 2026-10-12T10:51:26Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/raw.html` (626842 bytes), fetched 2026-10-12T04:53:53Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/raw.html` (626842 bytes), fetched 2026-10-12T10:51:26Z, captured
 - quote: بعد اشتراك التاجر في الخدمة، فإنه لن يتمكن من إلغاء اشتراكه في زد باي، أو التحويل إلى قناة دفع أخرى إلى حين استكمال كامل التزاماته بالسداد.
 - title: Zid | Create your online store with modern retail services
 - in context: …ما اتفق عليه مع جهة التمويل، دون أي تدخل أو علاقة من أي نوع مع زد. تمكّن زد التاجر من متابعة عمليات السداد عن طريق لوحة تحكم الكترونية، لمساعدة التجار على الإطلاع على حالة التمويل والسداد، وبقدر ما تلتزم زد بأقصى قدرة في توفير بيانات دقيقة ومتزامنة مع جهة التمويل للتسهيل على التجار، إلا أنه عند التعارض والاختلاف، فإن البيانات والمعلومات المقدمة من جهة التمويل التي تحوزها، هي الحاكمة على البيانات والمعلومات في لوحة التحكم. أحكام وشروط عامة إضافية ⟪بعد اشتراك التاجر في الخدمة، فإنه لن يتمكن من إلغاء اشتراكه في زد باي، أو التحويل إلى قناة دفع أخرى إلى حين استكمال كامل التزاماته بالسداد.⟫ لن يتمكن التاجر من إلغاء أو تعديل أي من طرق حصوله على الخدمة، بعد تقديم خدمة التمويل له من جهة التمويل، أو بعد توقيعه بالالتزام معها. لأغراض تقديم الخدمة، ستشارك زد كافة المعلومات المتعلقة بمبيعات التاجر مع جهة التمويل. في حال المنازعات، وتحت طلب السلطات والجهات الرسمية، فإن زد ستقدم للجهات الرسمية ما تطلبه من معلومات وبيانات. يُعد استخدام التاجر للخدمة، موافقة على هذه الشروط والأحكام، ومنحا للأذونات اللازمة لتنفيذها الأحكام العامة لا يجوز للتاج…
@@ -442,15 +442,15 @@
 - from: index:ZD-C-003:ZD-S-0555
 
 **Citation S01-ZD-C045:** `https://zid.sa/ar/legal/zidpay-terms-conditions-sa/` | تسوية المدفوعات وعملية الاسترداد | 2025-01-21 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/189-zid.sa/text.txt` (fetched 2026-10-12T04:53:55Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/124-zid.sa/text.txt` (fetched 2026-10-12T10:51:28Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/189-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/189-zid.sa/raw.html` (223074 bytes), fetched 2026-10-12T04:53:55Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/124-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T104936Z-s01-sources/items/124-zid.sa/raw.html` (223074 bytes), fetched 2026-10-12T10:51:28Z, captured
 - quote: يجوز لزد باي ومزود الخدمة بخصم رسوم العمليات بشكل مباشر من المبالغ المحصلة وإضافة المبلغ المستحق لرصيد التاجر.
 - title: Zid | Create your online store with modern retail services
 - in context: …د الأموال". قد تقوم زد باي بحجز مبلغ احتياطي يحسب من حجم معاملات العملاء ذوى المخاطر العالية. يتم تسوية هذا المبلغ الاحتياطي عند إغلاق الحسابات في حالة عدم استخدامها. يجوز لزد باي رد المبالغ إلى مصادرها والتي لم يتم تحويلها إلى الحساب البنكي للمستخدم لمدة أكثر من ١٤يوم وذلك لعدم قدرة المستخدم على تقديم بيانات صالحة وعليه يعتبر حسابه مهمل مما يترتب عليه إيقاف الحساب. قد تحتجز زد باي المبالغ المعلقة أو تسلمها إلى جهات أخرى وفقًا لتقدير زد باي فقط. ⟪يجوز لزد باي ومزود الخدمة بخصم رسوم العمليات بشكل مباشر من المبالغ المحصلة وإضافة المبلغ المستحق لرصيد التاجر.⟫ يجوز لزد باي ومزودو الخدمة باقتطاع رسوم رمزية على إجمالي العملية. يلتزم المستخدم بدفع أي رسوم غير مسددة خلال خمسة أيام عمل. التصديق على التوقيعات والإشعارات الإلكترونية تمثل الموافقة على تسجيل حساب في زد باي توقيعك الإلكتروني وتعتبر مراسلتنا من خلال خيار الدعم على الإيميل ([email protected]) يعتبر بمثابة إشعار رسمي منك وتعادل توقيعك الشخصي. الموافقة على أن البريد الإلكتروني المستخدم للتسجيل حساب في زد باي هو بريدك الإلكتروني المعتمد وأن كافة الم…
 
 **Citation S01-ZD-C046:** `https://zid.sa/ar/legal/zidpay-terms-conditions-kw/` | تسوية المدفوعات وعملية الاسترداد | 2026-10-12 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/188-zid.sa/text.txt` (fetched 2026-10-12T04:53:54Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/123-zid.sa/text.txt` (fetched 2026-10-12T10:51:27Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/188-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/188-zid.sa/raw.html` (219276 bytes), fetched 2026-10-12T04:53:54Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/123-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T104936Z-s01-sources/items/123-zid.sa/raw.html` (219276 bytes), fetched 2026-10-12T10:51:27Z, captured
 - quote: يجوز لزد باي ومزود الخدمة بخصم رسوم العمليات بشكل مباشر من المبالغ المحصلة وإضافة المبلغ المستحق لرصيد التاجر.
 - title: Zid | Create your online store with modern retail services
 - in context: …د الأموال". قد تقوم زد باي بحجز مبلغ احتياطي يحسب من حجم معاملات العملاء ذوى المخاطر العالية. يتم تسوية هذا المبلغ الاحتياطي عند إغلاق الحسابات في حالة عدم استخدامها. يجوز لزد باي رد المبالغ إلى مصادرها والتي لم يتم تحويلها إلى الحساب البنكي للمستخدم لمدة أكثر من x يوم وذلك لعدم قدرة المستخدم على تقديم بيانات صالحة وعليه يعتبر حسابه مهمل مما يترتب عليه إيقاف الحساب. قد تحتجز زد باي المبالغ المعلقة أو تسلمها إلى جهات أخرى وفقًا لتقدير زد باي فقط. ⟪يجوز لزد باي ومزود الخدمة بخصم رسوم العمليات بشكل مباشر من المبالغ المحصلة وإضافة المبلغ المستحق لرصيد التاجر.⟫ يجوز لزد باي ومزودو الخدمة باقتطاع رسوم رمزية على إجمالي العملية. يلتزم المستخدم بدفع أي رسوم غير مسددة خلال خمسة أيام عمل. التصديق على التوقيعات والإشعارات الإلكترونية تمثل الموافقة على تسجيل حساب في زد باي توقيعك الإلكتروني وتعتبر مراسلتنا من خلال خيار الدعم على الإيميل ([email protected]) يعتبر بمثابة إشعار رسمي منك وتعادل توقيعك الشخصي. الموافقة على أن البريد الإلكتروني المستخدم للتسجيل حساب في زد باي هو بريدك الإلكتروني المعتمد وأن كافة الم…

@@ -56,8 +56,8 @@
 - from: held
 
 **Citation Q6-WC-C006:** `https://woocommerce.com/document/woopayments/compatibility/countries/` | Restrictions on account types | 2026-09-25 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261010T235357Z-q1-woocommerce-sources/items/054-woocommerce.com/text.txt` (fetched 2026-10-10T23:54:03Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/086-woocommerce.com/text.txt` (fetched 2026-10-12T10:50:57Z, captured)
+- captured: `evidence/product-class/runs/20261010T235357Z-q1-woocommerce-sources/items/054-woocommerce.com/text.txt` (5554 bytes), fetched 2026-10-10T23:54:03Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/086-woocommerce.com/text.txt` (5548 bytes), fetched 2026-10-12T10:50:57Z, captured
 - quote: Businesses in the United Arab Emirates (UAE) do not have access to the Individual account type.
 - title: WooPayments in Your Country Documentation - WooCommerce
 - in context: … supported. Outlying territories of the U.S. A business must be located in the 50 states, Washington D.C., or Puerto Rico to sign up with WooPayments as a U.S. business. Businesses based in any other US territory, possession, etc. are not supported. Restrictions on account types Some countries do not have access to all account types because our partner (Stripe) strictly adheres to the laws and regulations of the country each account is based in. ⟪Businesses in the United Arab Emirates (UAE) do not have access to the Individual account type.⟫ Engaging in any commercial activities typically requires a trade license or permit in the UAE. Therefore, only the Business account type is available for the UAE. Other countries In support of creating a global commerce platform, the WooCommerce team is actively working to make WooPayments available to other countries. We prioritize new countries and currencies based on a number of factors, including the number of requests by WooCommerce store o…
@@ -115,8 +115,8 @@
 - cite_ids: WC-S-0504
 
 **Citation WC-S-0504:** `https://woocommerce.com/document/woopayments/account-management/partnership-with-stripe/` | WooPayments built in partnership with Stripe | 2026-09-30 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261010T235357Z-q1-woocommerce-sources/items/053-woocommerce.com/text.txt` (fetched 2026-10-10T23:54:03Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/085-woocommerce.com/text.txt` (fetched 2026-10-12T10:50:56Z, captured)
+- captured: `evidence/product-class/runs/20261010T235357Z-q1-woocommerce-sources/items/053-woocommerce.com/text.txt` (4940 bytes), fetched 2026-10-10T23:54:03Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/085-woocommerce.com/text.txt` (4943 bytes), fetched 2026-10-12T10:50:56Z, captured
 - quote: When you sign up for WooPayments, you verify your personal and business information with Stripe. This creates a Stripe Express account that is connected to the WooPayments service.
 - title: WooPayments built in partnership with Stripe Documentation - WooCommerce
 - in context: …Expand Themes Expand WooPayments WooPay WooCommerce Shipping WooCommerce Tax Retired Products Expand Woo Marketplace Code Snippets Expand WooPayments / Documentation / WooPayments Documentation / WooPayments: Account Management / WooPayments built in partnership with Stripe WooPayments built in partnership with Stripe WooPayments is built in partnership with Stripe. This document provides more information and an overview of how we work together. ⟪When you sign up for WooPayments, you verify your personal and business information with Stripe. This creates a Stripe Express account that is connected to the WooPayments service.⟫ The Express account is what's used in the background for managing your business account information and activity with WooPayments. Who will provide support Our Happiness Engineers are here to help you set up and manage your store and usage of WooPayments. The support team will assist you with all payment processing issues and other operational questions, such as why one of your customer's payments failed, or why a payout has not been received. A…
@@ -134,7 +134,7 @@
 - from: held
 
 **Citation Q6-WC-C022:** `https://woocommerce.com/document/woopayments/account-management/` | Updating your information | 2026-09-25 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/084-woocommerce.com/text.txt` (fetched 2026-10-12T10:50:55Z, captured)
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/084-woocommerce.com/text.txt` (6608 bytes), fetched 2026-10-12T10:50:55Z, captured
 - quote: If your business has moved from one country to another, there isn’t a way to update the country. Please contact our support staff for assistance with the how to handle this.
 - title: WooPayments: Account Management Documentation - WooCommerce
 - in context: …ommon examples are: How do I change my payout account information with WooPayments? How do I update my contact details such as email address or phone number? How do I update my business name or DBA with WooPayments? How do I update my tax ID number with WooPayments? How do I change my business type, e.g. from an individual to an LLC? How do I change my merchant category code (MCC)? How do I change the email address that WooPayments emails go to? ⟪If your business has moved from one country to another, there isn't a way to update the country. Please contact our support staff for assistance with the how to handle this.⟫ Finally, note that if Stripe has a problem verifying any personal or business information, you will be alerted to this on the Payments > Overview page and asked to update your information inside the WordPress dashboard. Switching and deleting accounts The following scenarios are rare, but you may run into them when operating multiple sites or shutting down a website for a business that's no longer operating. Can one WooPayments account be used w…
@@ -152,8 +152,8 @@
 - cite_ids: WC-S-0510
 
 **Citation WC-S-0510:** `https://woocommerce.com/document/woopayments/compatibility/countries/` | WooPayments in Your Country | 2026-09-25 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261010T235357Z-q1-woocommerce-sources/items/054-woocommerce.com/text.txt` (fetched 2026-10-10T23:54:03Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/086-woocommerce.com/text.txt` (fetched 2026-10-12T10:50:57Z, captured)
+- captured: `evidence/product-class/runs/20261010T235357Z-q1-woocommerce-sources/items/054-woocommerce.com/text.txt` (5554 bytes), fetched 2026-10-10T23:54:03Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/086-woocommerce.com/text.txt` (5548 bytes), fetched 2026-10-12T10:50:57Z, captured
 - quote: If you are an individual or business based in one of our supported countries, you can sign up as a merchant with WooPayments.
 - title: WooPayments in Your Country Documentation - WooCommerce
 - in context: … to content Develop on Woo Hire an expert Get support Sell Extensions Resources Enterprise ecommerce Documentation Documentation WooCommerceExpand ProductsExpand ExtensionsExpand ThemesExpand WooPayments WooPay WooCommerce Shipping WooCommerce Tax Retired ProductsExpand Woo Marketplace Code SnippetsExpand WooPayments / Documentation / WooPayments Documentation / WooPayments: Compatibility / WooPayments in Your Country WooPayments in Your Country ⟪If you are an individual or business based in one of our supported countries, you can sign up as a merchant with WooPayments.⟫ Once that's done, you can accept payments from customers anywhere in the world in over 100 supported currencies. Supported countries ↑ Back to top WooPayments is available for individuals and businesses in: 🇦🇺 Australia 🇦🇹 Austria 🇧🇪 Belgium 🇧🇬 Bulgaria 🇨🇦 Canada 🇭🇷 Croatia 🇨🇾 Cyprus 🇨🇿 Czech Republic 🇩🇰 Denmark 🇪🇪 Estonia 🇫🇮 Finland 🇫🇷 France 🇩🇪 Germany 🇬🇷 Greece 🇭🇰 Hong Kong 🇭🇺 Hungary 🇮🇪 Ireland 🇮🇹 Italy 🇯🇵 Japan 🇱🇻 Latvia 🇱🇹 Lithuania 🇱🇺 Lux…
@@ -187,8 +187,8 @@
 - from: held
 
 **Citation Q6-WC-C007:** `https://woocommerce.com/document/woopayments/compatibility/countries/` | Other countries | 2026-09-25 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261010T235357Z-q1-woocommerce-sources/items/054-woocommerce.com/text.txt` (fetched 2026-10-10T23:54:03Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/086-woocommerce.com/text.txt` (fetched 2026-10-12T10:50:57Z, captured)
+- captured: `evidence/product-class/runs/20261010T235357Z-q1-woocommerce-sources/items/054-woocommerce.com/text.txt` (5554 bytes), fetched 2026-10-10T23:54:03Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/086-woocommerce.com/text.txt` (5548 bytes), fetched 2026-10-12T10:50:57Z, captured
 - quote: If you want to use WooPayments, but it’s not available in your country, please vote for your country to be supported on the WooPayments feature requests page.
 - title: WooPayments in Your Country Documentation - WooCommerce
 - in context: …cial activities typically requires a trade license or permit in the UAE. Therefore, only the Business account type is available for the UAE. Other countries In support of creating a global commerce platform, the WooCommerce team is actively working to make WooPayments available to other countries. We prioritize new countries and currencies based on a number of factors, including the number of requests by WooCommerce store owners in that country. ⟪If you want to use WooPayments, but it's not available in your country, please vote for your country to be supported on the WooPayments feature requests page.⟫ Was this guide helpful for you? ON THIS PAGE Supported countries Outlying territories of France Outlying territories of the Netherlands Outlying territories of the UK Outlying territories of the U.S. Restrictions on account types Other countries WooPayments by Woo No payment details required • Set up in minutes Install for free 30-day money-back guarantee Support teams across the world Safe and secure online payments Sell WooCommerce WooCommerce…

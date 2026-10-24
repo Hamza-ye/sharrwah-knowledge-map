@@ -99,3 +99,20 @@ R4	revision of the draft of Q1, for the step text from saved HTML	a118af207ddaf4
 R4	revision of the draft of Q8, for the step text from saved HTML	abf86971dbb1f91d6	2026-10-24T08:16	2026-10-24T08:25	4.8	max; the same agent resumed; this row is the revision alone (its total less the 39.5 of the draft); 135 platform ids (Q8-SH-107 to 111 added; Q8-SA-K0048 no longer cited); 5,496 words
 R4	revision of the draft of Q7, for the step text from saved HTML	aeda761ec1bc30dbc	2026-10-24T08:12	2026-10-24T08:29	6.5	max; the same agent resumed; this row is the revision alone (its total less the 34.9 of the draft); 86 platform ids (Q7-SH-201 to 207 added, by each record's bears_on; Q7-ZD-K0025 no longer cited); about 5,120 words
 R5	check of the R5 brief and the company decisions' brief	a23ee0857e52045be	2026-10-24T08:27	2026-10-24T09:03	30.1	max; 22 findings, 7 must fix; tried on Q4 (8 fact cards, 2 claims, 2 Yemen facts and a doesn't-show point) and one decision, with seeded wrong rows; one run for both briefs
+R5	facts, Q4-shopify	a747fa33612dc9e4f	2026-10-24T09:30	2026-10-24T09:35	1.8	high; 21 cards: 12 holds, 6 fix point, 3 fix record
+R5	absences, claims-shopify-1	a4db009be347aaa4d	2026-10-24T09:30	2026-10-24T09:49	5.0	high; 5 cards: 3 holds, 1 fix record, 1 found
+R5	Yemen, yemen-1	ac9e3198efe13cfae	2026-10-24T09:30	2026-10-24T09:37	3.2	high; 9 cards: 3 fix point, 3 fix record, 3 holds
+R5	Yemen, doesnt-show	afa9cd9e255f54d67	2026-10-24T09:30	2026-10-24T09:41	12.0	high; 16 cards: 13 holds, 2 found, 1 open
+R5	facts, Q1-bigcommerce	aa78ed8b5d8e0275e	2026-10-24T09:42	2026-10-24T09:46	2.3	high; 18 cards: 11 holds, 5 fix point, 2 fix record
+R5	facts, Q1-salla-1	aaa59bf2caf78509d	2026-10-24T09:42	2026-10-24T09:47	2.2	high; 13 cards: 6 fix record, 5 holds, 2 fix point
+R5	facts, Q1-salla-2	ae9a9ad90a592ed7f	2026-10-24T09:42	2026-10-24T09:50	2.8	high; 16 cards: 7 fix point, 5 fix record, 4 holds
+R5	facts, Q1-shopify-1	a1c4741d71a617de5	2026-10-24T09:42	2026-10-24T09:45	1.0	high; 27 cards: 22 holds, 4 fix point, 1 fix record
+R5	facts, Q1-shopify-2	a9448aff45d1f88db	2026-10-24T09:42	2026-10-24T09:46	2.1	high; 29 cards: 23 holds, 4 fix record, 2 fix point
+R5	facts, Q1-woocommerce	aa71ef4dcd0b48bec	2026-10-24T09:42	2026-10-24T09:46	1.9	high; 19 cards: 9 holds, 7 fix point, 3 fix record
+R5	facts, Q1-zid	a019f6ff7159ab6dc	2026-10-24T09:42	2026-10-24T09:46	1.9	high; 20 cards: 12 holds, 6 fix point, 2 fix record
+R5	facts, Q2-bigcommerce	ad873e5cbf353cacd	2026-10-24T09:42	2026-10-24T09:46	2.3	high; 15 cards: 7 holds, 7 fix point, 1 fix record
+R5	facts, Q2-salla	a0c7138d900ccc4c1	2026-10-24T09:42	2026-10-24T09:46	1.9	high; 22 cards: 14 holds, 6 fix point, 2 fix record
+R5	facts, Q2-shopify-1	a8e16d25a2e6bfa35	2026-10-24T09:42	2026-10-24T09:45	1.4	high; 24 cards: 16 holds, 6 fix point, 2 fix record
+R5	facts, Q2-shopify-2	a8c36fd8c92aad345	2026-10-24T09:42	2026-10-24T09:46	1.6	high; 16 cards: 12 holds, 4 fix point
+R5	facts, Q2-woocommerce	a41cf70b40dca7eff	2026-10-24T09:42	2026-10-24T09:46	1.5	high; 18 cards: 10 holds, 5 fix point, 3 open
+R5	facts, Q2-zid	a56cec552d1f95ad9	2026-10-24T09:42	2026-10-24T09:48	4.1	high; 21 cards: 13 holds, 5 fix point, 3 fix record

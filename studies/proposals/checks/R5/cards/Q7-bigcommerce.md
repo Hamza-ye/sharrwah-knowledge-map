@@ -57,7 +57,7 @@
 - from: held
 
 **Citation Q7-BC-C015:** `https://support.bigcommerce.com/s/article/Using-Multiple-Currencies` | Setting up Payment Methods for Additional Transactional Currencies | 2026-10-13 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/049-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:41:00Z, captured)
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/049-support.bigcommerce.com/text.txt` (14272 bytes), fetched 2026-10-13T05:41:00Z, captured
 - quote: The store’s default currency, assigned during store creation, is always a transactional currency. When you create an additional transactional currency, you'll need to set up which payment methods you want to use for that currency.
 - title: BigCommerce Help Center
 - the page opens: BigCommerce Help Center Loading ×Sorry to interrupt CSS Error Refresh…
@@ -76,7 +76,7 @@
 - from: held
 
 **Citation Q7-BC-C016:** `https://support.bigcommerce.com/s/article/Using-Multiple-Currencies` | Setting up Payment Methods for Additional Transactional Currencies | 2026-10-13 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/049-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:41:00Z, captured)
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/049-support.bigcommerce.com/text.txt` (14272 bytes), fetched 2026-10-13T05:41:00Z, captured
 - quote: Display currencies transact in your store's default currency. As such, they use the payment methods configured for the store’s default currency.
 - title: BigCommerce Help Center
 - the page opens: BigCommerce Help Center Loading ×Sorry to interrupt CSS Error Refresh…
@@ -95,7 +95,7 @@
 - from: held
 
 **Citation Q7-BC-C040:** `https://support.bigcommerce.com/s/article/Managing-Currencies` | Adding a Currency: TRANSACTIONS | 2026-10-13 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/033-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:40:36Z, captured)
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/033-support.bigcommerce.com/text.txt` (6712 bytes), fetched 2026-10-13T05:40:36Z, captured
 - quote: Transacting currency — determines if the currency will be transactional or display-only.
 - title: BigCommerce Help Center
 - the page opens: BigCommerce Help Center Loading ×Sorry to interrupt CSS Error Refresh…
@@ -114,7 +114,7 @@
 - from: held
 
 **Citation Q7-BC-C005:** `https://support.bigcommerce.com/s/article/Using-Multiple-Currencies` | How Multicurrency Works in Different Parts of the Store | 2026-10-13 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/049-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:41:00Z, captured)
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/049-support.bigcommerce.com/text.txt` (14272 bytes), fetched 2026-10-13T05:41:00Z, captured
 - quote: In order for a currency to be transactional, a payment gateway that supports the currency must be enabled.
 - title: BigCommerce Help Center
 - the page opens: BigCommerce Help Center Loading ×Sorry to interrupt CSS Error Refresh…
@@ -134,7 +134,7 @@
 - from: held
 
 **Citation Q7-BC-C023:** `https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/orders.md` | ### Currency Fields | 2026-10-12 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/031-docs.bigcommerce.com/text.txt` (fetched 2026-10-12T04:19:46Z, captured)
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/031-docs.bigcommerce.com/text.txt` (2279 bytes), fetched 2026-10-12T04:19:46Z, captured
 - quote: * `currency_id` - the display currency ID. Depending on the currency selected, the value may be different from the transactional currency.
 - title: Orders V2
 - the page opens: > This page is for Developer. > For clean Markdown of any page, append.md to the page URL. > For a complete documentation index, see https://docs.bigcommerce.com/llms.txt. > For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server. Manage order coupons, messages, products, shipping addresses, statuses, taxes, shipments, and shipping address quotes. Order The Order object contains a record of the purchase agreement between a shop…
@@ -142,28 +142,28 @@
 - in context: … The Order object contains a record of the purchase agreement between a shopper and a merchant. To learn more about creating orders, see [Orders API Guide](/developer/docs/admin/checkout-and-cart/orders). ### Currency Fields The **default** currency refers to the transactional currency which is the currency the shopper pays in. The **display** currency refers to the presentational currency used to present prices to the shopper on the storefront. ⟪* `currency_id` - the display currency ID. Depending on the currency selected, the value may be different from the transactional currency.⟫ * `currency_code` - the currency code of the display currency used to present prices to the shopper on the storefront. Depending on the currency selected, the value may be different from the transactional currency. * `currency_exchange_rate` - the exchange rate between the store's default currency and the display currency. For orders created using the V2 endpoints, this value is always 1 (only in the storefront this value can be different to 1).…
 
 **Citation Q7-BC-C024:** `https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/orders.md` | ### Currency Fields | 2026-10-12 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/031-docs.bigcommerce.com/text.txt` (fetched 2026-10-12T04:19:46Z, captured)
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/031-docs.bigcommerce.com/text.txt` (2279 bytes), fetched 2026-10-12T04:19:46Z, captured
 - quote: * `currency_code` - the currency code of the display currency used to present prices to the shopper on the storefront. Depending on the currency selected, the value may be different from the transactional currency.
 - title, opening and note boxes: as for this source's citation above
 - headings: Orders V2 > Order > Currency Fields
 - in context: …rders API Guide](/developer/docs/admin/checkout-and-cart/orders). ### Currency Fields The **default** currency refers to the transactional currency which is the currency the shopper pays in. The **display** currency refers to the presentational currency used to present prices to the shopper on the storefront. * `currency_id` - the display currency ID. Depending on the currency selected, the value may be different from the transactional currency. ⟪* `currency_code` - the currency code of the display currency used to present prices to the shopper on the storefront. Depending on the currency selected, the value may be different from the transactional currency.⟫ * `currency_exchange_rate` - the exchange rate between the store's default currency and the display currency. For orders created using the V2 endpoints, this value is always 1 (only in the storefront this value can be different to 1). * `default_currency_id` - the transactional currency ID. * `default_currency_code` - the currency code of the transactional currency the shopper pays in. The following additional fields are returned on orders when …
 
 **Citation Q7-BC-C025:** `https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/orders.md` | ### Currency Fields | 2026-10-12 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/031-docs.bigcommerce.com/text.txt` (fetched 2026-10-12T04:19:46Z, captured)
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/031-docs.bigcommerce.com/text.txt` (2279 bytes), fetched 2026-10-12T04:19:46Z, captured
 - quote: * `currency_exchange_rate` - the exchange rate between the store’s default currency and the display currency. For orders created using the V2 endpoints, this value is always 1 (only in the storefront this value can be different to 1).
 - title, opening and note boxes: as for this source's citation above
 - headings: Orders V2 > Order > Currency Fields
 - in context: … refers to the presentational currency used to present prices to the shopper on the storefront. * `currency_id` - the display currency ID. Depending on the currency selected, the value may be different from the transactional currency. * `currency_code` - the currency code of the display currency used to present prices to the shopper on the storefront. Depending on the currency selected, the value may be different from the transactional currency. ⟪* `currency_exchange_rate` - the exchange rate between the store's default currency and the display currency. For orders created using the V2 endpoints, this value is always 1 (only in the storefront this value can be different to 1).⟫ * `default_currency_id` - the transactional currency ID. * `default_currency_code` - the currency code of the transactional currency the shopper pays in. The following additional fields are returned on orders when Multi-Currency is enabled on the store: * `store_default_currency_code` - the currency code of the store's default currency. * `store_default_to_transactional_exchange_rate` - the exchange rate between the store's default currency and …
 
 **Citation Q7-BC-C026:** `https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/orders.md` | ### Currency Fields | 2026-10-12 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/031-docs.bigcommerce.com/text.txt` (fetched 2026-10-12T04:19:46Z, captured)
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/031-docs.bigcommerce.com/text.txt` (2279 bytes), fetched 2026-10-12T04:19:46Z, captured
 - quote: * `default_currency_id` - the transactional currency ID.
 - title, opening and note boxes: as for this source's citation above
 - headings: Orders V2 > Order > Currency Fields
 - in context: …* `currency_code` - the currency code of the display currency used to present prices to the shopper on the storefront. Depending on the currency selected, the value may be different from the transactional currency. * `currency_exchange_rate` - the exchange rate between the store's default currency and the display currency. For orders created using the V2 endpoints, this value is always 1 (only in the storefront this value can be different to 1). ⟪* `default_currency_id` - the transactional currency ID.⟫ * `default_currency_code` - the currency code of the transactional currency the shopper pays in. The following additional fields are returned on orders when Multi-Currency is enabled on the store: * `store_default_currency_code` - the currency code of the store's default currency. * `store_default_to_transactional_exchange_rate` - the exchange rate between the store's default currency and the transactional currency used in the order. **Example:*…
 
 **Citation Q7-BC-C027:** `https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/orders.md` | ### Currency Fields | 2026-10-12 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/031-docs.bigcommerce.com/text.txt` (fetched 2026-10-12T04:19:46Z, captured)
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/031-docs.bigcommerce.com/text.txt` (2279 bytes), fetched 2026-10-12T04:19:46Z, captured
 - quote: * `default_currency_code` - the currency code of the transactional currency the shopper pays in.
 - title, opening and note boxes: as for this source's citation above
 - headings: Orders V2 > Order > Currency Fields
@@ -183,8 +183,8 @@
 - from: new
 
 **Citation S01-BC-C015:** `https://docs.bigcommerce.com/developer/docs/admin/store-configuration/currencies/overview.md` | ## Multi-currency definitions: Settlement Currency | 2026-10-12 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/073-docs.bigcommerce.com/text.txt` (fetched 2026-10-12T04:20:28Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/006-docs.bigcommerce.com/text.txt` (fetched 2026-10-12T10:49:41Z, captured)
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/073-docs.bigcommerce.com/text.txt` (13789 bytes), fetched 2026-10-12T04:20:28Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/006-docs.bigcommerce.com/text.txt` (13789 bytes), fetched 2026-10-12T10:49:41Z, captured
 - quote: If there's a discrepancy between the currency that a shopper transacts in and the currency in which a merchant settles, the merchant has to pay a conversion fee, and the conversion rate used is outside of BigCommerce's scope.
 - title: Currencies Overview
 - the page opens: > This page is for Developer. > For clean Markdown of any page, append.md to the page URL. > For a complete documentation index, see https://docs.bigcommerce.com/llms.txt. > For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server. BigCommerce's flexible Currency settings assist developers in building Multi-Currency storefronts that empower shoppers and merchants to do business in their currency of choice. Allowing customers to …
@@ -204,7 +204,7 @@
 - from: held
 
 **Citation Q7-BC-C038:** `https://support.bigcommerce.com/s/article/Managing-Currencies` | Adding a Currency: SETUP | 2026-10-13 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/033-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:40:36Z, captured)
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/033-support.bigcommerce.com/text.txt` (6712 bytes), fetched 2026-10-13T05:40:36Z, captured
 - quote: When you first create your store, your default currency is assigned based on your location. You can enable additional currencies to display prices and allow transactions where your frequent customers live.
 - title: BigCommerce Help Center
 - the page opens: BigCommerce Help Center Loading ×Sorry to interrupt CSS Error Refresh…
@@ -224,8 +224,8 @@
 - from: index:BC-C-074:BC-S-0403
 
 **Citation S01-BC-C016:** `https://docs.bigcommerce.com/developer/docs/admin/store-configuration/currencies/overview.md` | ## Multi-currency definitions | 2026-10-12 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/073-docs.bigcommerce.com/text.txt` (fetched 2026-10-12T04:20:28Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/006-docs.bigcommerce.com/text.txt` (fetched 2026-10-12T10:49:41Z, captured)
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/073-docs.bigcommerce.com/text.txt` (13789 bytes), fetched 2026-10-12T04:20:28Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/006-docs.bigcommerce.com/text.txt` (13789 bytes), fetched 2026-10-12T10:49:41Z, captured
 - quote: The merchant can set their settlement currency through its payment provider.
 - title: Currencies Overview
 - the page opens: > This page is for Developer. > For clean Markdown of any page, append.md to the page URL. > For a complete documentation index, see https://docs.bigcommerce.com/llms.txt. > For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server. BigCommerce's flexible Currency settings assist developers in building Multi-Currency storefronts that empower shoppers and merchants to do business in their currency of choice. Allowing customers to …
@@ -245,8 +245,8 @@
 - from: held
 
 **Citation Q7-BC-C064:** `https://docs.bigcommerce.com/developer/docs/admin/store-configuration/currencies/overview.md` | ## Adding a currency: Note | 2026-10-12 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/073-docs.bigcommerce.com/text.txt` (fetched 2026-10-12T04:20:28Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/006-docs.bigcommerce.com/text.txt` (fetched 2026-10-12T10:49:41Z, captured)
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/073-docs.bigcommerce.com/text.txt` (13789 bytes), fetched 2026-10-12T04:20:28Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/006-docs.bigcommerce.com/text.txt` (13789 bytes), fetched 2026-10-12T10:49:41Z, captured
 - quote: For instance, changing the default currency will not trigger price recalculation for the catalog.
 - title: Currencies Overview
 - the page opens: > This page is for Developer. > For clean Markdown of any page, append.md to the page URL. > For a complete documentation index, see https://docs.bigcommerce.com/llms.txt. > For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server. BigCommerce's flexible Currency settings assist developers in building Multi-Currency storefronts that empower shoppers and merchants to do business in their currency of choice. Allowing customers to …
@@ -266,8 +266,8 @@
 - from: held
 
 **Citation Q7-BC-C044:** `https://docs.bigcommerce.com/developer/docs/admin/store-configuration/currencies/overview.md` | ## Multi-currency definitions: Dynamic Conversion Rate | 2026-10-12 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/073-docs.bigcommerce.com/text.txt` (fetched 2026-10-12T04:20:28Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/006-docs.bigcommerce.com/text.txt` (fetched 2026-10-12T10:49:41Z, captured)
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/073-docs.bigcommerce.com/text.txt` (13789 bytes), fetched 2026-10-12T04:20:28Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/006-docs.bigcommerce.com/text.txt` (13789 bytes), fetched 2026-10-12T10:49:41Z, captured
 - quote: The merchant can either use BigCommerce Currency Service provided in the Currency setup page, or they can use the API to automatically update the exchange rate from their trusted source.
 - title: Currencies Overview
 - the page opens: > This page is for Developer. > For clean Markdown of any page, append.md to the page URL. > For a complete documentation index, see https://docs.bigcommerce.com/llms.txt. > For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server. BigCommerce's flexible Currency settings assist developers in building Multi-Currency storefronts that empower shoppers and merchants to do business in their currency of choice. Allowing customers to …
@@ -288,8 +288,8 @@
 - from: held
 
 **Citation Q7-BC-C069:** `https://support.bigcommerce.com/s/article/Connecting-with-BigCommerce-Payments?language=en_US` | Balance dashboard: MANAGING CURRENCIES AND CONVERTING BALANCES | 2026-10-13 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/016-support.bigcommerce.com/text.txt` (fetched 2026-10-13T00:35:36Z, captured)
-- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/001-support.bigcommerce.com/text.txt` (fetched 2026-10-13T05:39:50Z, captured)
+- captured: `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/016-support.bigcommerce.com/text.txt` (0 bytes), `evidence/product-class/runs/20261013T003518Z-s01-a2-sources/items/016-support.bigcommerce.com/raw.html` (961887 bytes), fetched 2026-10-13T00:35:36Z, captured
+- captured: `evidence/product-class/runs/20261013T053949Z-s01-bigcommerce-help-founder-machine/items/001-support.bigcommerce.com/text.txt` (40664 bytes), fetched 2026-10-13T05:39:50Z, captured
 - quote: In the Currencies section, you can view and manage your configured currencies, as well as the existing balance per currency.
 - title: BigCommerce Help Center
 - the page opens: BigCommerce Help Center Loading ×Sorry to interrupt CSS Error Refresh…
@@ -317,8 +317,8 @@
 - from: new
 
 **Citation S01-BC-C014:** `https://docs.bigcommerce.com/developer/docs/admin/store-configuration/currencies/overview.md` | ## Multi-currency definitions: Settlement Currency | 2026-10-12 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/073-docs.bigcommerce.com/text.txt` (fetched 2026-10-12T04:20:28Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/006-docs.bigcommerce.com/text.txt` (fetched 2026-10-12T10:49:41Z, captured)
+- captured: `evidence/product-class/runs/20261012T0419Z-q1-bigcommerce-sources/items/073-docs.bigcommerce.com/text.txt` (13789 bytes), fetched 2026-10-12T04:20:28Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/006-docs.bigcommerce.com/text.txt` (13789 bytes), fetched 2026-10-12T10:49:41Z, captured
 - quote: The currency the merchant gets paid out to their bank account.
 - title: Currencies Overview
 - the page opens: > This page is for Developer. > For clean Markdown of any page, append.md to the page URL. > For a complete documentation index, see https://docs.bigcommerce.com/llms.txt. > For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server. BigCommerce's flexible Currency settings assist developers in building Multi-Currency storefronts that empower shoppers and merchants to do business in their currency of choice. Allowing customers to …

@@ -1,9 +1,10 @@
 # Cards: Q3 on zid
 
-14 records cited by `studies/proposals/drafts/Q3/draft.md`, made by `method/r5_cards.py`.
+15 records cited by `studies/proposals/drafts/Q3/draft.md`, made by `method/r5_cards.py`.
 
 ## The points cited
 
+- **section 1, line 34:** - Payment providers and card networks set lists of what may not be sold, a match on role. On Shopify, "Prohibited Business and Restricted Business categories may be imposed by law or through the Payment Network Rules, by Shopify or the requirements of a Payment Processor's Financial Services Providers" (its terms, official page). WooPayments cites "restrictions put in place by card networks, our payment processors, and their financial service providers", and BigCommerce points to Stripe's list (help pages, stated). Zid Pay's terms accept some digital products on the service provider's assessment. Q3-SH-P0045; Q3-WC-K0416; Q3-BC-021; Q3-ZD-K0070
 - **section 1, line 37:** - Salla's agreement and Zid's terms carry the same clause for products needing an official licence, "بالإفصاح عن الترخيص وكافة بياناته": the same term, both official pages. Neither platform's full list of such products was in what was read; Zid decides the need after reviewing the data, with books and the Ministry of Media as its example. Q3-SA-047; Q3-ZD-K0247; Q3-SA-N02; Q3-ZD-N04; Q3-ZD-023
 - **section 1, line 39:** - The registered activity must match the products, a match on role: Salla's KYC schema for a demo store, observed 8 October 2026, says "Commercial registration activity must match the store activity", and Zid's help page "أن يكون نشاط الوثيقة مطابق لنشاط منتجات المتجر". Q3-SA-058; Q3-ZD-003
 - **section 1, line 45:** - A program or channel often needs another capability active, a match on role. Shop needs Shopify Payments activated; Mahally needs a paid plan and a verified store (not checked on WooCommerce; shown by Salla); and Zid Financing needs Zid Pay activated and approved. Q3-SH-077; Q3-SA-061; Q3-ZD-P0132
@@ -27,12 +28,33 @@
 - **section 2, line 99:** - **Product rule** (proposed): a rule on what may be sold, with its setter and its reach. It may bar a product for all of Sharrwah; bar it for one provider, blocking only that provider's capability; require a licence disclosed on the store with its details; require the registered activity to match the product; or require a plan for a product type. It takes Salla's selling policy, Shopify Payments' hemp rule and WooPayments' CBD rule, Salla's and Zid's licence clause, their activity match, and Salla's plan-limited product types. Why: rule 2, since each setter's list changes on its own. Q3-SA-054; Q3-SH-095; Q3-WC-K0417; Q3-SA-047; Q3-ZD-K0247; Q3-SA-058; Q3-ZD-003; Q3-SA-029
 - **section 3, line 108:** - Payment providers, each with its own requirement set and approval: American Express on Shopify, Tabby on Salla, Tap on Zid, and the providers on BigCommerce. Q3-SH-057; Q3-SA-069; Q3-ZD-K0093; Q3-BC-P0048
 - **section 3, line 110:** - Government services whose records a requirement may ask for: the Business Platform (منصة الأعمال), whose licence Salla keeps apart from its own verification, and SPL's national address, which Zid asks for to activate services such as payments. Q3-SA-037; Q3-ZD-039
+- **section 3, line 118:** - Per product category: a provider's exclusions, such as hemp and CBD, and Zid Pay's assessment of digital products. Q3-SH-095; Q3-WC-K0417; Q3-ZD-K0070
 - **section 3, line 128:** - Authorities and the law, as the platforms report them: licences on Zid, and the e-commerce law's obligations on Salla. These show what the platforms require of their sellers, not what any law requires of Sharrwah. Q3-ZD-023; Q3-SA-033
 - **section 5, line 146:** - What unmet requirements do to money: holding payouts, blocking withdrawals, returning payments to buyers, and the days between, as Shopify, Zid and Salla show them; Salla's period was not in what was read. Keep open, as a money flow: a restriction type for each, with schedules per place, all off until decided. Settled by the founder's decision under the guard, Q5's proposal and providers' terms. Q3-SH-072; Q3-ZD-P0012; Q3-SA-002; Q3-SA-N01
 - **section 5, line 147:** - Which place selects a requirement set, and what moving it costs: the country of the documents (Salla), of registration (WooPayments), or of the business's location (Shopify). Yemen adds places below a country, where two areas set one requirement differently. Keep open: a registration place that can name an area within a country, kept apart from the store's selling places, and rules for moving it, such as Zid's zero balance first. Settled by the proposals for Q1 and Q6. Q3-SA-085; Q3-WC-K0402; Q3-SH-K1536; Q3-ZD-K0230; YA-150 (within thirty days of founding or licensing @ Houthis' area, as of 2026-10-10); YA-150 (within sixty days of starting its activity @ the unified Republic's area, as of 1991)
 - **section 5, line 149:** - Which entity types a place admits, and what each gives, as Salla's freelance document is for Saudi citizens only. Keep open: entity types as a list per place. Settled by Q6 and the company decision on who may register. Q3-SA-014; Q3-ZD-K0239
 
 ## The cards
+
+### Q3-ZD-K0070
+
+**Cited at:** section 1, line 34; section 3, line 118
+
+**Record** (`studies/proposals/records/Q3/zid/copied.tsv`):
+- concern_id: ZD-C-009
+- placement: decides
+- structure: شروط وأحكام زد باي, Saudi Arabia (zid.sa/ar/legal/zidpay-terms-conditions-sa)
+- identifier: المنتجات الرقمية
+- statement: المنتجات الرقمية : يتم قبول بعض المنتجات الرقمية بناء على تقييم نوع المنتجات من قبل مزود الخدمة
+- scope: Zid Pay, Saudi Arabia
+- cite_ids: ZD-S-0590
+
+**Citation ZD-S-0590:** `https://zid.sa/ar/legal/zidpay-terms-conditions-sa/` | الأنشطة المحظورة | 2025-01-21 | kind: official page | quote check: found
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/189-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/189-zid.sa/raw.html` (223074 bytes), fetched 2026-10-12T04:53:55Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/124-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T104936Z-s01-sources/items/124-zid.sa/raw.html` (223074 bytes), fetched 2026-10-12T10:51:28Z, captured
+- quote: المنتجات الرقمية : يتم قبول بعض المنتجات الرقمية بناء على تقييم نوع المنتجات من قبل مزود الخدمة
+- title: Zid | Create your online store with modern retail services
+- in context: …غير المعتمدة من الجهات المعنية في المملكة العربية السعودية. الحسابات المجهولة والمسجلة بأسماء وهمية. الحسابات المرقمة التي يتعرف على مالكها بواسطة رقم بدلاً عن الأسماء. التجار الذين لم تكتمل إجراءات التحقق الواجبة عنهم أو لا يمكن التحري عنهم نظرًا لعدم اليقين أو الغموض في المعلومات المتوفرة عنهم. تجارة السجائر والسجائر الإلكترونية وجميع منتجات ومستلزمات التبغ. المراهنة/ المزاد. الأنشطة المحظورة أو المقيدة يمكن تحديثها في أي وقت، مع إشعار التاجر. ⟪المنتجات الرقمية : يتم قبول بعض المنتجات الرقمية بناء على تقييم نوع المنتجات من قبل مزود الخدمة⟫ أو أي نشاط آخر لا يتوافق مع مزود الخدمة. طريقة الاستفادة من خدمات زد باي -تفعيل الخدمة: يجب أن تكون المعلومات المقدمة من التاجر لتفعيل الخدمة صحيحة. يجب أن يكون نشاط التاجر صحيح ولا يخدم أي من النشاطات المحظورة. في حالة عدم صحة البيانات المقدمة لتفعيل الخدمة يعطى التاجر مهلة تصحيحية مدتها ١٤ يوم، وفي حال عدم التصحيح سيتم تعطيل الحساب وإعادة جميع المبالغ للعملاء النهائيين. التاجر وحده مسؤول عن مطابقة المنتجات مع المنتجات الموجودة في المتجر، وعن ت…
 
 ### Q3-ZD-K0247
 
@@ -47,8 +69,8 @@
 - cite_ids: ZD-S-0761
 
 **Citation ZD-S-0761:** `https://zid.sa/ar/legal/terms-conditions/` | ضوابط المتجر الإلكتروني | 2026-08 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/text.txt` (fetched 2026-10-12T04:53:53Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/text.txt` (fetched 2026-10-12T10:51:26Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/187-zid.sa/raw.html` (626842 bytes), fetched 2026-10-12T04:53:53Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T104936Z-s01-sources/items/122-zid.sa/raw.html` (626842 bytes), fetched 2026-10-12T10:51:26Z, captured
 - quote: ينبغي على كافة المتاجر والتجّار الذين يقدمون منتجات أو خدمات معينة تتطلب ترخيصاً من الجهات الرسمية، بالإفصاح عن الترخيص وكافة بياناته.
 - title: Zid | Create your online store with modern retail services
 - in context: … - السجل التجاري والرقم الضريبي أو وثيقة العمل الحر - ووسائل الاتصال الرسمية. ينبغي على كافة المتاجر والتجّار الالتزام بإيضاح الشروط والأحكام للمستهلك، وتوضيح الوسائل اللازمة لتلقي شكاوى المستهلك ومعالجتها، وسياسة الاستبدال والارجاع وكيفية ارجاع المبالغ -إن وجدت- وسياسة الخصوصية وحماية بيانات المستهلك. ينبغي على كافة المتاجر والتجّار تقديم فاتورة إلى المستهلك تبيّن تكاليف شراء تقديم الخدمة أو المنتج وأوصافه، وإجمالي السعر، وتاريخ التسليم ومكانه. ⟪ينبغي على كافة المتاجر والتجّار الذين يقدمون منتجات أو خدمات معينة تتطلب ترخيصاً من الجهات الرسمية، بالإفصاح عن الترخيص وكافة بياناته.⟫ في حالة عدم الالتزام بأي مما ورد أعلاه فإن لزد الحق في اتخاذ أي من الإجراءات التالية والتي تشمل -على سبيل المثال لا الحصر-: التنبيه، أو إيقاف الخدمة وإغلاق المتجر، أو حجب التاجر من الوصول واستخدام الخدمات حسبما تراه مناسباً، وعلى أن زد غير مسؤولة قانوناً أو شرعاً عن هذا الإخلال الحاصل من قبل التاجر في مواجهة المستهلك، حيث إنها ليست طرفاً في العلاقة بين المستهلك والتاجر، ولكنها تقوم بذلك لدواعي تحسين جودة تجربة التاجر والمستهلك مع زد. الأخطاء وعد…
@@ -66,8 +88,8 @@
 - from: held
 
 **Citation Q3-ZD-C025:** `https://help.zid.sa/payment-requirements/` | متطلبات تفعيل الدفع الالكتروني  للشركات > التراخيص ( إن تطلب الأمر ) | 2026-08-06 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/147-help.zid.sa/text.txt` (fetched 2026-10-12T04:53:19Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/066-help.zid.sa/text.txt` (fetched 2026-10-12T10:50:42Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/147-help.zid.sa/text.txt` (11499 bytes), fetched 2026-10-12T04:53:19Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/066-help.zid.sa/text.txt` (11499 bytes), fetched 2026-10-12T10:50:42Z, captured
 - quote: بعض الأنشطة التجارية تستلزم وجود تراخيص من الجهات المعنية ويحدد ذلك بعد مراجعة البيانات(مثال: بيع الكتب ،يتم استخراج الترخيص من وزارة الإعلام).
 - title: زد - مركز المساعدة - متطلبات تفعيل الدفع الالكتروني ( لوحة التحكم الجديدة )
 - the page opens: زد - مركز المساعدة - متطلبات تفعيل الدفع الالكتروني ( لوحة التحكم الجديدة ) menu right alt الدخول لمتجرك --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا EN --> الدخول لمتجرك close --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا English --> مركز المساعدة زد باي زد باي متطلبات تفعيل الدفع الالكتروني ( لوحة التحكم الجديدة ) عن ماذا تبحث ؟ دليل استخدام منصة التاجر الرئيسية --> تعرف على زد --> تعرف على زد إعدادات المتجر --> إعدادات المتجر المنتجات --> التصنيفات --> ا…
@@ -87,8 +109,8 @@
 - from: held
 
 **Citation Q3-ZD-C003:** `https://help.zid.sa/payment-requirements/` | متطلبات تفعيل الدفع الالكتروني للسعودية > الوثيقة | 2026-08-06 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/147-help.zid.sa/text.txt` (fetched 2026-10-12T04:53:19Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/066-help.zid.sa/text.txt` (fetched 2026-10-12T10:50:42Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/147-help.zid.sa/text.txt` (11499 bytes), fetched 2026-10-12T04:53:19Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/066-help.zid.sa/text.txt` (11499 bytes), fetched 2026-10-12T10:50:42Z, captured
 - quote: أن يكون نشاط الوثيقة مطابق لنشاط منتجات المتجر
 - title: زد - مركز المساعدة - متطلبات تفعيل الدفع الالكتروني ( لوحة التحكم الجديدة )
 - the page opens: زد - مركز المساعدة - متطلبات تفعيل الدفع الالكتروني ( لوحة التحكم الجديدة ) menu right alt الدخول لمتجرك --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا EN --> الدخول لمتجرك close --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا English --> مركز المساعدة زد باي زد باي متطلبات تفعيل الدفع الالكتروني ( لوحة التحكم الجديدة ) عن ماذا تبحث ؟ دليل استخدام منصة التاجر الرئيسية --> تعرف على زد --> تعرف على زد إعدادات المتجر --> إعدادات المتجر المنتجات --> التصنيفات --> ا…
@@ -109,38 +131,38 @@
 - from: index:ZD-C-023:ZD-S-0693
 
 **Citation S01-ZD-C308:** `https://help.zid.sa/about-zid-financing/` | متطلبات التقديم | 2026-08-13 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/081-help.zid.sa/text.txt` (fetched 2026-10-12T04:52:13Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/046-help.zid.sa/text.txt` (fetched 2026-10-12T10:50:22Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/081-help.zid.sa/text.txt` (4437 bytes), fetched 2026-10-12T04:52:13Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/046-help.zid.sa/text.txt` (4437 bytes), fetched 2026-10-12T10:50:22Z, captured
 - quote: الدولة : متاح لتجار المملكة العربية السعودية فقط.
 - title: زد - مركز المساعدة - عن تمويل زد ( لوحة التحكم الجديدة )
 - the page opens: زد - مركز المساعدة - عن تمويل زد ( لوحة التحكم الجديدة ) menu right alt الدخول لمتجرك --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا EN --> الدخول لمتجرك close --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا English --> مركز المساعدة تمويل زد تمويل زد عن تمويل زد ( لوحة التحكم الجديدة ) عن ماذا تبحث ؟ دليل استخدام منصة التاجر الرئيسية --> تعرف على زد --> تعرف على زد إعدادات المتجر --> إعدادات المتجر المنتجات --> التصنيفات --> التصنيفات المنتجات --> المنتجات إدا…
 - in context: …د منتجات وخدمات زد مزيد زد لوجيستك زد باي سوق التطبيقات زد نمو زد كاشير تمويل زد سوق الثيمات تطبيق الجوال تمويل زد عن تمويل زد ( لوحة التحكم الجديدة ) مشاركة متصفح الكمبيوتر آخر تحديث August 13, 2026 تمويل زد هو حل متكامل لتنمية متجرك الإلكتروني عن طريق رحلة تفعيل سلسة مع خطة سداد مرنة مؤتمتة. مميزات تمويل زد : تقديم المتطلبات الأولية تمويل يصل إلى 10 مليون هامش ربح سنوي من 10% إلى 25% خطط سداد مرنة من 5 إلى 36 شهرًا. متطلبات التقديم لتمويل زد : ⟪الدولة : متاح لتجار المملكة العربية السعودية فقط.⟫ الكيان التجاري: شركة أو مؤسسة فقط. بوابة الدفع: تفعيل واعتماد زد باي. صلاحية السجل التجاري يجب أن تكون صلاحية السجل التجاري لا تقل عن 3 أشهر شروط التقديم لتمويل زد : عمر النشاط التجاري: - إذا كان عمر المتجر 3 أشهر أو أكثر وأقل من 6 أشهر: متوسط المبيعات الشهرية خلال آخر 3 أشهر يجب أن يكون 40,000 ريال سعودي أو أكثر. -إذا كان عمر المتجر 6 أشهر أو أكثر وأقل من 12 شهرًا: متوسط المبيعات الشهرية خلال آخر 6 أشهر يجب أن يكون 20,000 ريال سعودي أو أكثر. -إ…
 
 **Citation S01-ZD-C309:** `https://help.zid.sa/about-zid-financing/` | متطلبات التقديم لتمويل زد | 2026-08-13 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/081-help.zid.sa/text.txt` (fetched 2026-10-12T04:52:13Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/046-help.zid.sa/text.txt` (fetched 2026-10-12T10:50:22Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/081-help.zid.sa/text.txt` (4437 bytes), fetched 2026-10-12T04:52:13Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/046-help.zid.sa/text.txt` (4437 bytes), fetched 2026-10-12T10:50:22Z, captured
 - quote: متطلبات التقديم لتمويل زد :
 - title: زد - مركز المساعدة - عن تمويل زد ( لوحة التحكم الجديدة )
 - the page opens: زد - مركز المساعدة - عن تمويل زد ( لوحة التحكم الجديدة ) menu right alt الدخول لمتجرك --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا EN --> الدخول لمتجرك close --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا English --> مركز المساعدة تمويل زد تمويل زد عن تمويل زد ( لوحة التحكم الجديدة ) عن ماذا تبحث ؟ دليل استخدام منصة التاجر الرئيسية --> تعرف على زد --> تعرف على زد إعدادات المتجر --> إعدادات المتجر المنتجات --> التصنيفات --> التصنيفات المنتجات --> المنتجات إدا…
 - in context: …منصات البيع التحليلات سفير زد منتجات وخدمات زد مزيد زد لوجيستك زد باي سوق التطبيقات زد نمو زد كاشير تمويل زد سوق الثيمات تطبيق الجوال تمويل زد عن تمويل زد ( لوحة التحكم الجديدة ) مشاركة متصفح الكمبيوتر آخر تحديث August 13, 2026 تمويل زد هو حل متكامل لتنمية متجرك الإلكتروني عن طريق رحلة تفعيل سلسة مع خطة سداد مرنة مؤتمتة. مميزات تمويل زد : تقديم المتطلبات الأولية تمويل يصل إلى 10 مليون هامش ربح سنوي من 10% إلى 25% خطط سداد مرنة من 5 إلى 36 شهرًا. ⟪متطلبات التقديم لتمويل زد :⟫ الدولة : متاح لتجار المملكة العربية السعودية فقط. الكيان التجاري: شركة أو مؤسسة فقط. بوابة الدفع: تفعيل واعتماد زد باي. صلاحية السجل التجاري يجب أن تكون صلاحية السجل التجاري لا تقل عن 3 أشهر شروط التقديم لتمويل زد : عمر النشاط التجاري: - إذا كان عمر المتجر 3 أشهر أو أكثر وأقل من 6 أشهر: متوسط المبيعات الشهرية خلال آخر 3 أشهر يجب أن يكون 40,000 ريال سعودي أو أكثر. -إذا كان عمر المتجر 6 أشهر أو أكثر وأقل من 12 شهرًا: متوسط المبيعات الشهرية خلال آخ…
 
 **Citation S01-ZD-C310:** `https://help.zid.sa/about-zid-financing/` | متطلبات التقديم لتمويل زد | 2026-08-13 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/081-help.zid.sa/text.txt` (fetched 2026-10-12T04:52:13Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/046-help.zid.sa/text.txt` (fetched 2026-10-12T10:50:22Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/081-help.zid.sa/text.txt` (4437 bytes), fetched 2026-10-12T04:52:13Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/046-help.zid.sa/text.txt` (4437 bytes), fetched 2026-10-12T10:50:22Z, captured
 - quote: الكيان التجاري: شركة أو مؤسسة فقط.
 - title, opening and note boxes: as for this source's citation above
 - in context: …بيقات زد نمو زد كاشير تمويل زد سوق الثيمات تطبيق الجوال تمويل زد عن تمويل زد ( لوحة التحكم الجديدة ) مشاركة متصفح الكمبيوتر آخر تحديث August 13, 2026 تمويل زد هو حل متكامل لتنمية متجرك الإلكتروني عن طريق رحلة تفعيل سلسة مع خطة سداد مرنة مؤتمتة. مميزات تمويل زد : تقديم المتطلبات الأولية تمويل يصل إلى 10 مليون هامش ربح سنوي من 10% إلى 25% خطط سداد مرنة من 5 إلى 36 شهرًا. متطلبات التقديم لتمويل زد : الدولة : متاح لتجار المملكة العربية السعودية فقط. ⟪الكيان التجاري: شركة أو مؤسسة فقط.⟫ بوابة الدفع: تفعيل واعتماد زد باي. صلاحية السجل التجاري يجب أن تكون صلاحية السجل التجاري لا تقل عن 3 أشهر شروط التقديم لتمويل زد : عمر النشاط التجاري: - إذا كان عمر المتجر 3 أشهر أو أكثر وأقل من 6 أشهر: متوسط المبيعات الشهرية خلال آخر 3 أشهر يجب أن يكون 40,000 ريال سعودي أو أكثر. -إذا كان عمر المتجر 6 أشهر أو أكثر وأقل من 12 شهرًا: متوسط المبيعات الشهرية خلال آخر 6 أشهر يجب أن يكون 20,000 ريال سعودي أو أكثر. -إذا كان عمر المتجر 12 شهرًا أو أكثر:…
 
 **Citation S01-ZD-C311:** `https://help.zid.sa/about-zid-financing/` | متطلبات التقديم | 2026-08-13 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/081-help.zid.sa/text.txt` (fetched 2026-10-12T04:52:13Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/046-help.zid.sa/text.txt` (fetched 2026-10-12T10:50:22Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/081-help.zid.sa/text.txt` (4437 bytes), fetched 2026-10-12T04:52:13Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/046-help.zid.sa/text.txt` (4437 bytes), fetched 2026-10-12T10:50:22Z, captured
 - quote: بوابة الدفع: تفعيل واعتماد زد باي.
 - title, opening and note boxes: as for this source's citation above
 - in context: …الثيمات تطبيق الجوال تمويل زد عن تمويل زد ( لوحة التحكم الجديدة ) مشاركة متصفح الكمبيوتر آخر تحديث August 13, 2026 تمويل زد هو حل متكامل لتنمية متجرك الإلكتروني عن طريق رحلة تفعيل سلسة مع خطة سداد مرنة مؤتمتة. مميزات تمويل زد : تقديم المتطلبات الأولية تمويل يصل إلى 10 مليون هامش ربح سنوي من 10% إلى 25% خطط سداد مرنة من 5 إلى 36 شهرًا. متطلبات التقديم لتمويل زد : الدولة : متاح لتجار المملكة العربية السعودية فقط. الكيان التجاري: شركة أو مؤسسة فقط. ⟪بوابة الدفع: تفعيل واعتماد زد باي.⟫ صلاحية السجل التجاري يجب أن تكون صلاحية السجل التجاري لا تقل عن 3 أشهر شروط التقديم لتمويل زد : عمر النشاط التجاري: - إذا كان عمر المتجر 3 أشهر أو أكثر وأقل من 6 أشهر: متوسط المبيعات الشهرية خلال آخر 3 أشهر يجب أن يكون 40,000 ريال سعودي أو أكثر. -إذا كان عمر المتجر 6 أشهر أو أكثر وأقل من 12 شهرًا: متوسط المبيعات الشهرية خلال آخر 6 أشهر يجب أن يكون 20,000 ريال سعودي أو أكثر. -إذا كان عمر المتجر 12 شهرًا أو أكثر: متوسط المبيعات الشهرية خلال آخر 12…
 
 **Citation S01-ZD-C312:** `https://help.zid.sa/about-zid-financing/` | متطلبات التقديم لتمويل زد | 2026-08-13 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/081-help.zid.sa/text.txt` (fetched 2026-10-12T04:52:13Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/046-help.zid.sa/text.txt` (fetched 2026-10-12T10:50:22Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/081-help.zid.sa/text.txt` (4437 bytes), fetched 2026-10-12T04:52:13Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/046-help.zid.sa/text.txt` (4437 bytes), fetched 2026-10-12T10:50:22Z, captured
 - quote: صلاحية السجل التجاري يجب أن تكون صلاحية السجل التجاري لا تقل عن 3 أشهر
 - title, opening and note boxes: as for this source's citation above
 - in context: …ويل زد ( لوحة التحكم الجديدة ) مشاركة متصفح الكمبيوتر آخر تحديث August 13, 2026 تمويل زد هو حل متكامل لتنمية متجرك الإلكتروني عن طريق رحلة تفعيل سلسة مع خطة سداد مرنة مؤتمتة. مميزات تمويل زد : تقديم المتطلبات الأولية تمويل يصل إلى 10 مليون هامش ربح سنوي من 10% إلى 25% خطط سداد مرنة من 5 إلى 36 شهرًا. متطلبات التقديم لتمويل زد : الدولة : متاح لتجار المملكة العربية السعودية فقط. الكيان التجاري: شركة أو مؤسسة فقط. بوابة الدفع: تفعيل واعتماد زد باي. ⟪صلاحية السجل التجاري يجب أن تكون صلاحية السجل التجاري لا تقل عن 3 أشهر⟫ شروط التقديم لتمويل زد : عمر النشاط التجاري: - إذا كان عمر المتجر 3 أشهر أو أكثر وأقل من 6 أشهر: متوسط المبيعات الشهرية خلال آخر 3 أشهر يجب أن يكون 40,000 ريال سعودي أو أكثر. -إذا كان عمر المتجر 6 أشهر أو أكثر وأقل من 12 شهرًا: متوسط المبيعات الشهرية خلال آخر 6 أشهر يجب أن يكون 20,000 ريال سعودي أو أكثر. -إذا كان عمر المتجر 12 شهرًا أو أكثر: متوسط المبيعات الشهرية خلال آخر 12 شهرًا يجب أن يكون 13,300 ريال سعودي أو أكثر ملاحظه: تمويل زد متاح لجمي…
@@ -167,7 +189,7 @@
 - cite_ids: ZD-S-0753
 
 **Citation ZD-S-0753:** `https://help.zid.sa/store-info-ksa/` | تفاصيل النشاط التجاري | 2026-08-03 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/158-help.zid.sa/text.txt` (fetched 2026-10-12T04:53:30Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/158-help.zid.sa/text.txt` (10849 bytes), fetched 2026-10-12T04:53:30Z, captured
 - quote: اختر تفاصيل النشاط، ثم حدد نوع النشاط (فرد، مؤسسة، شركة، جمعية خيرية) وأكمل البيانات المطلوبة ثم اضغط حفظ.
 - title: زد - مركز المساعدة - بيانات المتجر لتجار السعودية ( لوحة التحكم الجديدة )
 - the page opens: زد - مركز المساعدة - بيانات المتجر لتجار السعودية ( لوحة التحكم الجديدة ) menu right alt الدخول لمتجرك --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا EN --> الدخول لمتجرك close --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا English --> مركز المساعدة المتجر الإعدادات بيانات المتجر لتجار السعودية ( لوحة التحكم الجديدة ) عن ماذا تبحث ؟ دليل استخدام منصة التاجر الرئيسية --> تعرف على زد --> تعرف على زد إعدادات المتجر --> إعدادات المتجر المنتجات --> التصنيفات --> ال…
@@ -187,8 +209,8 @@
 - from: index:ZD-C-009:ZD-S-0591
 
 **Citation S01-ZD-C086:** `https://help.zid.sa/nafath_verification/` | ملاحظة | 2026-08-06 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/140-help.zid.sa/text.txt` (fetched 2026-10-12T04:53:12Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/064-help.zid.sa/text.txt` (fetched 2026-10-12T10:50:40Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/140-help.zid.sa/text.txt` (4982 bytes), fetched 2026-10-12T04:53:12Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/064-help.zid.sa/text.txt` (4982 bytes), fetched 2026-10-12T10:50:40Z, captured
 - quote: يكون طلب التحقق باسم مزود الخدمة.
 - title: زد - مركز المساعدة - اجتياز التحقق من نفاذ
 - the page opens: زد - مركز المساعدة - اجتياز التحقق من نفاذ menu right alt الدخول لمتجرك --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا EN --> الدخول لمتجرك close --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا English --> مركز المساعدة الرئيسية الرئيسية اجتياز التحقق من نفاذ عن ماذا تبحث ؟ دليل استخدام منصة التاجر الرئيسية --> تعرف على زد --> تعرف على زد إعدادات المتجر --> إعدادات المتجر المنتجات --> التصنيفات --> التصنيفات المنتجات --> المنتجات إدارة المخزون --> إدارة المخزون…
@@ -208,8 +230,8 @@
 - from: new
 
 **Citation S01-ZD-C070:** `https://help.zid.sa/activate-online-payments/` | مراجعة المعلومات واستقبال عمليات الدفع | 2026-09-28 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/085-help.zid.sa/text.txt` (fetched 2026-10-12T04:52:17Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/048-help.zid.sa/text.txt` (fetched 2026-10-12T10:50:24Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/085-help.zid.sa/text.txt` (7640 bytes), fetched 2026-10-12T04:52:17Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/048-help.zid.sa/text.txt` (7640 bytes), fetched 2026-10-12T10:50:24Z, captured
 - quote: بعد تفعيلك للمدفوعات سيقوم فريقنا بمراجعة المعلومات المرفوعة والتحقق من صحتها لتتمكن من استقبال العمليات و المبالغ المحصلة في حسابك البنكي ،و سيصلك إشعار عن طريق الايميل فور التحقق من قِبل الفريق.
 - title: زد - مركز المساعدة - تفعيل الدفع الالكتروني ( لوحة التحكم الجديدة )
 - the page opens: زد - مركز المساعدة - تفعيل الدفع الالكتروني ( لوحة التحكم الجديدة ) menu right alt الدخول لمتجرك --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا EN --> الدخول لمتجرك close --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا English --> مركز المساعدة زد باي زد باي تفعيل الدفع الالكتروني ( لوحة التحكم الجديدة ) عن ماذا تبحث ؟ دليل استخدام منصة التاجر الرئيسية --> تعرف على زد --> تعرف على زد إعدادات المتجر --> إعدادات المتجر المنتجات --> التصنيفات --> التصنيفات المنتجا…
@@ -228,8 +250,8 @@
 - cite_ids: ZD-S-0776
 
 **Citation ZD-S-0776:** `https://help.zid.sa/nafath_verification/` | ملاحظة | 2026-08-06 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/140-help.zid.sa/text.txt` (fetched 2026-10-12T04:53:12Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/064-help.zid.sa/text.txt` (fetched 2026-10-12T10:50:40Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/140-help.zid.sa/text.txt` (4982 bytes), fetched 2026-10-12T04:53:12Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/064-help.zid.sa/text.txt` (4982 bytes), fetched 2026-10-12T10:50:40Z, captured
 - quote: عدد محاولات التحقق المتاحة خلال اليوم الواحد هي 3 محاولات.
 - title: زد - مركز المساعدة - اجتياز التحقق من نفاذ
 - the page opens: زد - مركز المساعدة - اجتياز التحقق من نفاذ menu right alt الدخول لمتجرك --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا EN --> الدخول لمتجرك close --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا English --> مركز المساعدة الرئيسية الرئيسية اجتياز التحقق من نفاذ عن ماذا تبحث ؟ دليل استخدام منصة التاجر الرئيسية --> تعرف على زد --> تعرف على زد إعدادات المتجر --> إعدادات المتجر المنتجات --> التصنيفات --> التصنيفات المنتجات --> المنتجات إدارة المخزون --> إدارة المخزون…
@@ -248,15 +270,15 @@
 - from: held
 
 **Citation Q3-ZD-C096:** `https://zid.sa/ar/legal/zidpay-terms-conditions-sa/` | حدود المسؤولية | 2026-10-12 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/189-zid.sa/text.txt` (fetched 2026-10-12T04:53:55Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/124-zid.sa/text.txt` (fetched 2026-10-12T10:51:28Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/189-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/189-zid.sa/raw.html` (223074 bytes), fetched 2026-10-12T04:53:55Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/124-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T104936Z-s01-sources/items/124-zid.sa/raw.html` (223074 bytes), fetched 2026-10-12T10:51:28Z, captured
 - quote: التاجر مسؤول عن إشعار وإعلام زد باي بأي تغيير في العمليات أو الإدارة خلال أسبوع من تاريخه. مثل هذا التغيير قد يتضمن تغيير في الأنشطة، وتغيير في العنوان أو معلومات التواصل، وتغير في هيكل الملكية أو أي تغييرات أخرى ذات صلة.
 - title: Zid | Create your online store with modern retail services
 - in context: …والحصول على اذونات الاستلام بما أنها ستكون مطلوبة للتحقق من عمليات معينة طبقا لمتطلبات إجراءات تقييم المخاطر الخاصة بزد باي. ولابد أن يحرص على الحصول دائما على أدلة داعمة لعمليات الدفع الخاصة بحسابه . الموافقة على أن زد باي قد تشير إلى التاجر أو تستخدم الشعار الخاص بك عند تقديم سابقة أعمالها للقطاع العام أو الخاص. يجب على المستخدمين الذين لديهم حسابات معلقة أو منتهية الامتناع عن استخدام العلامة التجارية لزد باي في أي من أنشطتهم العامة او الخاصة. ⟪التاجر مسؤول عن إشعار وإعلام زد باي بأي تغيير في العمليات أو الإدارة خلال أسبوع من تاريخه. مثل هذا التغيير قد يتضمن تغيير في الأنشطة، وتغيير في العنوان أو معلومات التواصل، وتغير في هيكل الملكية أو أي تغييرات أخرى ذات صلة.⟫ عدم إعلام زد باي بهذه التغييرات قد يؤدى إلى ايقاف الحساب وانقطاع خدمة زد باي. يقر التاجر ويوافق على أن خيارات الدفع (شبكات الدفع) خاضعة لشروط وأحكام مقدم الخدمة. يحق لزد باي بناءً على توصية مزودي الخدمة القيام ب -على سبيل المثال لا الحصر- تعليق الخدمة مؤقتًا، احتجاز الأموال في حال الاشتباه بعدد من عمليات الاحتيال إلى حين ظهور نتيجة التحقيق. يحق لزد باي بناءً على توصية مزودي الخدمة القيام ب -على سبيل المثال لا الحصر- تعليق الخدمة مؤقتًا، احتجاز ب…
 
 **Citation Q3-ZD-C097:** `https://zid.sa/ar/legal/zidpay-terms-conditions-sa/` | حدود المسؤولية | 2026-10-12 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/189-zid.sa/text.txt` (fetched 2026-10-12T04:53:55Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/124-zid.sa/text.txt` (fetched 2026-10-12T10:51:28Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/189-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/189-zid.sa/raw.html` (223074 bytes), fetched 2026-10-12T04:53:55Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/124-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T104936Z-s01-sources/items/124-zid.sa/raw.html` (223074 bytes), fetched 2026-10-12T10:51:28Z, captured
 - quote: عدم إعلام زد باي بهذه التغييرات قد يؤدى إلى ايقاف الحساب وانقطاع خدمة زد باي.
 - title, opening and note boxes: as for this source's citation above
 - in context: …ي قد تشير إلى التاجر أو تستخدم الشعار الخاص بك عند تقديم سابقة أعمالها للقطاع العام أو الخاص. يجب على المستخدمين الذين لديهم حسابات معلقة أو منتهية الامتناع عن استخدام العلامة التجارية لزد باي في أي من أنشطتهم العامة او الخاصة. التاجر مسؤول عن إشعار وإعلام زد باي بأي تغيير في العمليات أو الإدارة خلال أسبوع من تاريخه. مثل هذا التغيير قد يتضمن تغيير في الأنشطة، وتغيير في العنوان أو معلومات التواصل، وتغير في هيكل الملكية أو أي تغييرات أخرى ذات صلة. ⟪عدم إعلام زد باي بهذه التغييرات قد يؤدى إلى ايقاف الحساب وانقطاع خدمة زد باي.⟫ يقر التاجر ويوافق على أن خيارات الدفع (شبكات الدفع) خاضعة لشروط وأحكام مقدم الخدمة. يحق لزد باي بناءً على توصية مزودي الخدمة القيام ب -على سبيل المثال لا الحصر- تعليق الخدمة مؤقتًا، احتجاز الأموال في حال الاشتباه بعدد من عمليات الاحتيال إلى حين ظهور نتيجة التحقيق. يحق لزد باي بناءً على توصية مزودي الخدمة القيام ب -على سبيل المثال لا الحصر- تعليق الخدمة مؤقتًا، احتجاز بعض أو كل الأموال، تمديد فترة احتجاز الأموال، أو تعليق الخدمة في حال وجود تكرار…
@@ -276,15 +298,15 @@
 - from: new
 
 **Citation S01-ZD-C017:** `https://zid.sa/ar/legal/zidpay-terms-conditions-sa/` | طريقة الاستفادة من خدمات زد باي، تفعيل الخدمة | 2026-10-12 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/189-zid.sa/text.txt` (fetched 2026-10-12T04:53:55Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/124-zid.sa/text.txt` (fetched 2026-10-12T10:51:28Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/189-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/189-zid.sa/raw.html` (223074 bytes), fetched 2026-10-12T04:53:55Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/124-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T104936Z-s01-sources/items/124-zid.sa/raw.html` (223074 bytes), fetched 2026-10-12T10:51:28Z, captured
 - quote: في حالة عدم صحة البيانات المقدمة لتفعيل الخدمة يعطى التاجر مهلة تصحيحية مدتها ١٤ يوم، وفي حال عدم التصحيح سيتم تعطيل الحساب وإعادة جميع المبالغ للعملاء النهائيين.
 - title: Zid | Create your online store with modern retail services
 - in context: …ائر والسجائر الإلكترونية وجميع منتجات ومستلزمات التبغ. المراهنة/ المزاد. الأنشطة المحظورة أو المقيدة يمكن تحديثها في أي وقت، مع إشعار التاجر. المنتجات الرقمية : يتم قبول بعض المنتجات الرقمية بناء على تقييم نوع المنتجات من قبل مزود الخدمة أو أي نشاط آخر لا يتوافق مع مزود الخدمة. طريقة الاستفادة من خدمات زد باي -تفعيل الخدمة: يجب أن تكون المعلومات المقدمة من التاجر لتفعيل الخدمة صحيحة. يجب أن يكون نشاط التاجر صحيح ولا يخدم أي من النشاطات المحظورة. ⟪في حالة عدم صحة البيانات المقدمة لتفعيل الخدمة يعطى التاجر مهلة تصحيحية مدتها ١٤ يوم، وفي حال عدم التصحيح سيتم تعطيل الحساب وإعادة جميع المبالغ للعملاء النهائيين.⟫ التاجر وحده مسؤول عن مطابقة المنتجات مع المنتجات الموجودة في المتجر، وعن توصيلها للعميل النهائي. عند تفعيلك لخدمة زد باي ستتعطل بوابة الدفع الأخرى من المتجر. -رسوم العمليات: رسوم زد باي تعتمد على حسب باقتك المختارة في متجر زد، فإن كانت باقتك الأساسية تُفرض عليك رسوم زد باي للباقة الأساسية وإن كانت باقة النمو تُفرض عليك رسوم زد باي لباقة النمو. يتم فرض رسوم كنسبة مقتطعة من العمليات الناجحة. تحديد سقف أعلى بقيمة ٢٠٠ ريال لنسبة شبكة الدفع مدى (غير …
 
 **Citation S01-ZD-C018:** `https://zid.sa/ar/legal/zidpay-terms-conditions-kw/` | طريقة الاستفادة من خدمات زد باي، تفعيل الخدمة | 2026-10-12 | kind: official page | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/188-zid.sa/text.txt` (fetched 2026-10-12T04:53:54Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/123-zid.sa/text.txt` (fetched 2026-10-12T10:51:27Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/188-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/188-zid.sa/raw.html` (219276 bytes), fetched 2026-10-12T04:53:54Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/123-zid.sa/text.txt` (91 bytes), `evidence/product-class/runs/20261012T104936Z-s01-sources/items/123-zid.sa/raw.html` (219276 bytes), fetched 2026-10-12T10:51:27Z, captured
 - quote: في حالة عدم صحة البيانات المقدمة لتفعيل الخدمة يعطى التاجر مهلة تصحيحية مدتها ١٤ يوم، وفي حال عدم التصحيح سيتم تعطيل الحساب وإعادة جميع المبالغ للعملاء النهائيين.
 - title: Zid | Create your online store with modern retail services
 - in context: …الأنشطة المحظورة أو المقيدة يمكن تحديثها في أي وقت، مع إشعار التاجر. المنتجات الرقمية : يتم قبول بعض المنتجات الرقمية بناء على تقييم نوع المنتجات من قبل مزود الخدمة أو أي نشاط آخر لا يتوافق مع مزود الخدمة. طريقة الاستفادة من خدمات زد باي -تفعيل الخدمة: يجب إرفاق صورة الهوية الوطنية من الخلف والامام للاستفادة من خدمة زد باي. يجب أن تكون المعلومات المقدمة من التاجر لتفعيل الخدمة صحيحة. يجب أن يكون نشاط التاجر صحيح ولا يخدم أي من النشاطات المحظورة. ⟪في حالة عدم صحة البيانات المقدمة لتفعيل الخدمة يعطى التاجر مهلة تصحيحية مدتها ١٤ يوم، وفي حال عدم التصحيح سيتم تعطيل الحساب وإعادة جميع المبالغ للعملاء النهائيين.⟫ التاجر وحده مسؤول عن مطابقة المنتجات مع المنتجات الموجودة في المتجر، وعن توصيلها للعميل النهائي. عند تفعيلك لخدمة زد باي ستتعطل بوابة الدفع الأخرى من المتجر. -رسوم العمليات: رسوم زد باي تعتمد على حسب باقتك المختارة في متجر زد، فإن كانت باقتك الأساسية تُفرض عليك رسوم زد باي للباقة الأساسية وإن كانت باقة النمو تُفرض عليك رسوم زد باي لباقة النمو، وفي حال كانت باقتك الباقة الاحترافية ستفرض عليك رسوم الباقة الاحترافية. يتم فرض رسوم كنسبة مقتطعة من ال…
@@ -303,16 +325,16 @@
 - from: held
 
 **Citation Q3-ZD-C013:** `https://help.zid.sa/payment-requirements/` | متطلبات تفعيل الدفع الالكتروني للمؤسسات > السجل التجاري | 2026-08-06 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/147-help.zid.sa/text.txt` (fetched 2026-10-12T04:53:19Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/066-help.zid.sa/text.txt` (fetched 2026-10-12T10:50:42Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/147-help.zid.sa/text.txt` (11499 bytes), fetched 2026-10-12T04:53:19Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/066-help.zid.sa/text.txt` (11499 bytes), fetched 2026-10-12T10:50:42Z, captured
 - quote: أن يكون نشاط السجل التجاري مطابقاً للمنتجات التي يتم بيعها من خلال المتجر ( في حال وجود منتجات غير مطابقة لنشاط السجل يجب إضافة أنشطة فرعية للسجل التجاري بشكل مباشر من خلال موقع وزارة التجارة).
 - title: زد - مركز المساعدة - متطلبات تفعيل الدفع الالكتروني ( لوحة التحكم الجديدة )
 - the page opens: زد - مركز المساعدة - متطلبات تفعيل الدفع الالكتروني ( لوحة التحكم الجديدة ) menu right alt الدخول لمتجرك --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا EN --> الدخول لمتجرك close --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا English --> مركز المساعدة زد باي زد باي متطلبات تفعيل الدفع الالكتروني ( لوحة التحكم الجديدة ) عن ماذا تبحث ؟ دليل استخدام منصة التاجر الرئيسية --> تعرف على زد --> تعرف على زد إعدادات المتجر --> إعدادات المتجر المنتجات --> التصنيفات --> ا…
 - in context: …لبطاقة المدنية من الجهتين الترخيص التجاري اعتماد التوقيع البيانات البنكية الخاصة بالشركة في حال كنت ترغب بتفعيل المدفوعات ك شركة تحتاج إلى: الترخيص التجاري اعتماد التوقيع البطاقات المدنية من الجهتين لجميع الشركاء والمدراء عقد التأسيس البيانات البنكية الخاصة بالشركة متطلبات تفعيل الدفع الالكتروني للمؤسسات: السجل التجاري. الهوية الوطنية. حساب بنكي تجاري. شهادة العنوان الوطني. السجل التجاري : يجب إرفاق السجل التجاري الخاص بالمؤسسة مع مراعاة التالي: ⟪أن يكون نشاط السجل التجاري مطابقاً للمنتجات التي يتم بيعها من خلال المتجر ( في حال وجود منتجات غير مطابقة لنشاط السجل يجب إضافة أنشطة فرعية للسجل التجاري بشكل مباشر من خلال موقع وزارة التجارة).⟫ أن يكون السجل التجاري ساري المدة مع مراعاة أن لا تقل الصلاحية عن شهرين من تاريخ التفعيل و يمكن تجديد السجل التجاري بكل سهولة من خلال موقع وزارة التجارة الكترونياً. الهوية الوطنية : يجب توفير الهوية الوطنية مع مراعاة التالي: تاريخ صلاحية الهوية المرفقة (يجب أن تكون الهوية سارية). حامل الهوية مطابق لمالك السجل التجاري. الحساب البنكي و الشهادة البنكية : يجب اختيار حساب بنكي تجاري. يجب أن يكون اسم المستفيد للحساب البنكي مطابق لاسم المنشأة في السجل ا…
 
 **Citation Q3-ZD-C014:** `https://help.zid.sa/payment-requirements/` | متطلبات تفعيل الدفع الالكتروني للمؤسسات > السجل التجاري | 2026-08-06 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/147-help.zid.sa/text.txt` (fetched 2026-10-12T04:53:19Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/066-help.zid.sa/text.txt` (fetched 2026-10-12T10:50:42Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/147-help.zid.sa/text.txt` (11499 bytes), fetched 2026-10-12T04:53:19Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/066-help.zid.sa/text.txt` (11499 bytes), fetched 2026-10-12T10:50:42Z, captured
 - quote: أن يكون السجل التجاري ساري المدة مع مراعاة  أن لا تقل الصلاحية عن شهرين من تاريخ التفعيل و يمكن تجديد السجل التجاري بكل سهولة من خلال موقع وزارة التجارة الكترونياً.
 - title, opening and note boxes: as for this source's citation above
 - in context: …هتين لجميع الشركاء والمدراء عقد التأسيس البيانات البنكية الخاصة بالشركة متطلبات تفعيل الدفع الالكتروني للمؤسسات: السجل التجاري. الهوية الوطنية. حساب بنكي تجاري. شهادة العنوان الوطني. السجل التجاري : يجب إرفاق السجل التجاري الخاص بالمؤسسة مع مراعاة التالي: أن يكون نشاط السجل التجاري مطابقاً للمنتجات التي يتم بيعها من خلال المتجر ( في حال وجود منتجات غير مطابقة لنشاط السجل يجب إضافة أنشطة فرعية للسجل التجاري بشكل مباشر من خلال موقع وزارة التجارة). ⟪أن يكون السجل التجاري ساري المدة مع مراعاة أن لا تقل الصلاحية عن شهرين من تاريخ التفعيل و يمكن تجديد السجل التجاري بكل سهولة من خلال موقع وزارة التجارة الكترونياً.⟫ الهوية الوطنية : يجب توفير الهوية الوطنية مع مراعاة التالي: تاريخ صلاحية الهوية المرفقة (يجب أن تكون الهوية سارية). حامل الهوية مطابق لمالك السجل التجاري. الحساب البنكي و الشهادة البنكية : يجب اختيار حساب بنكي تجاري. يجب أن يكون اسم المستفيد للحساب البنكي مطابق لاسم المنشأة في السجل التجاري. يجب إرفاق الشهادة البنكية مع مراعاة أن يكون اسم المستفيد في الشهادة البنكية باللغة الانجليزي. شهادة العنوان الوطني: عند إرفاق شهادة العنوان الوطني يجب مراعا…
@@ -330,8 +352,8 @@
 - cite_ids: ZD-S-0613
 
 **Citation ZD-S-0613:** `https://help.zid.sa/tap-gateway/` | تفعيل تاب | 2026-08-05 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/162-help.zid.sa/text.txt` (fetched 2026-10-12T04:53:34Z, captured)
-- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/068-help.zid.sa/text.txt` (fetched 2026-10-12T10:50:44Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/162-help.zid.sa/text.txt` (5267 bytes), fetched 2026-10-12T04:53:34Z, captured
+- captured: `evidence/product-class/runs/20261012T104936Z-s01-sources/items/068-help.zid.sa/text.txt` (5267 bytes), fetched 2026-10-12T10:50:44Z, captured
 - quote: ادخل رقم الهوية المسجل في تاب للتحقق عن طريق نفاذ واكمل المعلومات المطلوبة
 - title: زد - مركز المساعدة - بوابة الدفع تاب | Tap
 - the page opens: زد - مركز المساعدة - بوابة الدفع تاب Tap menu right alt الدخول لمتجرك --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا EN --> الدخول لمتجرك close --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا English --> مركز المساعدة الرئيسية الرئيسية بوابة الدفع تاب Tap عن ماذا تبحث ؟ دليل استخدام منصة التاجر الرئيسية --> تعرف على زد --> تعرف على زد إعدادات المتجر --> إعدادات المتجر المنتجات --> التصنيفات --> التصنيفات المنتجات --> المنتجات إدارة المخزون --> إدارة المخزون إدا…
@@ -351,7 +373,7 @@
 - from: held
 
 **Citation Q3-ZD-C049:** `https://help.zid.sa/store-info-ksa/` | العنوان التجاري > سبل | 2026-08-03 | kind: stated | quote check: found
-- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/158-help.zid.sa/text.txt` (fetched 2026-10-12T04:53:30Z, captured)
+- captured: `evidence/product-class/runs/20261012T045101Z-q1-zid-sources/items/158-help.zid.sa/text.txt` (10849 bytes), fetched 2026-10-12T04:53:30Z, captured
 - quote: قم برفع ملف إثبات العنوان الوطني من سُبل SPL ، هذة الخطوة مطلوبة لتفعيل بعد الخدمات مثل المدفوعات.
 - title: زد - مركز المساعدة - بيانات المتجر لتجار السعودية ( لوحة التحكم الجديدة )
 - the page opens: زد - مركز المساعدة - بيانات المتجر لتجار السعودية ( لوحة التحكم الجديدة ) menu right alt الدخول لمتجرك --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا EN --> الدخول لمتجرك close --> الرئيسية الأكاديمية مجتمع تجار زد الأسئلة الشائعة تواصل معنا English --> مركز المساعدة المتجر الإعدادات بيانات المتجر لتجار السعودية ( لوحة التحكم الجديدة ) عن ماذا تبحث ؟ دليل استخدام منصة التاجر الرئيسية --> تعرف على زد --> تعرف على زد إعدادات المتجر --> إعدادات المتجر المنتجات --> التصنيفات --> ال…
