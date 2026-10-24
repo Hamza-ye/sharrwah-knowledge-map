@@ -24,15 +24,15 @@ This is the pilot's Decision 1 (`studies/subjects/S-01/entry.md`, S01-VP-01). Th
 **Your line to confirm:** "No sellers' money is held through Sharrwah at launch. A and B are reserved, not built. Switching either on stays yours."
 
 **What it means.**
-- At launch, each way to pay keeps the money in the seller's own account with its provider: a wallet, the seller's bank, or a courier for cash on delivery. This is the pilot's option C.
+- At launch, each way to pay leaves the money with its own provider. A wallet or a bank holds it in the seller's own account. A courier collecting cash on delivery holds it until it settles with the seller under their agreement. This is the pilot's option C.
 - Sharrwah holds none of it, and bills its own fees separately.
 - A (Sharrwah holds a balance) and B (a processor holds it, in an account opened through Sharrwah) are not built. The payment boundary (D-002) leaves room to add either later without redesigning the rest.
 
 **Why:**
 - your guard of 18 October already keeps A and B from going live without you;
-- A needs a licence or a licensed partner, which Sharrwah doesn't have;
-- B needs a processor that would hold funds in accounts opened through Sharrwah, and none is shown to serve the first market;
-- C is what is shown working there today.
+- A would need a licence to provide payment services, under each area's own rules in the first market, and Sharrwah has none;
+- B needs a processor that serves the market and holds funds in accounts opened through a platform. The records show none for the first market: Stripe doesn't support businesses based in Yemen, and the local providers' records don't say whether they would hold funds this way;
+- C is what is shown working there today: a wallet that pays into the seller's own account, couriers that collect, and transfers into the seller's own account.
 
 **It also settles Decisions 2 to 12** as column C of the pilot's table (D-004). Decision 13 is deferred (D-005), and Decision 14, currency, moves to the markets subject.
 
@@ -49,8 +49,12 @@ This is the pilot's Decision 1 (`studies/subjects/S-01/entry.md`, S01-VP-01). Th
 ## Decision drivers
 
 - The founder's guard of 18 October.
-- **Who the references name as holding the money:** where they name anyone behind the platform's product, it is a payment processor (Evidence, B).
-- **In the first market,** providing payment services needs a central bank licence (YA-102).
+- **Who the references name as holding the money:**
+  - payment processors: Shopify's Payment Processors, and Adyen N.V. behind Shopify Payments; Stripe, in its own terms;
+  - on Shopify's international Managed Markets orders, Global-e, which acts as the merchant of record (Evidence, B).
+- **In the first market:**
+  - in the internationally recognized government's area, as of February 2026, payment services need a licence from the central bank (for banks and licensed non-bank institutions);
+  - in the Houthis' area, as of 11 February 2026, banks and fintech companies issue e-money in cooperation with the Sana'a central bank. Non-bank institutions there were made eligible in 2020 to obtain a licence to offer e-rial services (YA-102, as corrected).
 - **One platform for many markets** (G1's B1 and B2): adding a holding arrangement in a market must not need a redesign.
 - **What is shown working in the first market,** as Context.
 
@@ -58,14 +62,18 @@ This is the pilot's Decision 1 (`studies/subjects/S-01/entry.md`, S01-VP-01). Th
 
 | Option | Where the money sits | What it needs built | What it needs from outside |
 | --- | --- | --- | --- |
-| **A. Sharrwah holds a balance for the seller** | in accounts in Sharrwah's name, with a balance per seller, as Salla and Zid present their balances | a ledger of seller balances, collection into Sharrwah's accounts, payouts and reconciliation | a licence, or a licensed partner that holds the money for Sharrwah |
-| **B. A processor holds it, in an account the seller opens through Sharrwah** | with the processor, as processors do behind Shopify's, WooCommerce's and BigCommerce's payment products, within the scopes under Evidence | an integration with the processor, onboarding sellers to it, and showing its balance | a processor that serves the market and holds funds in accounts opened through Sharrwah |
+| **A. Sharrwah holds a balance for the seller** | in accounts in Sharrwah's name, with a balance per seller, as Salla and Zid present their balances | a ledger of seller balances, collection into Sharrwah's accounts, payouts and reconciliation | a licence to provide payment services wherever it is offered. In the first market that means one under each area's rules (YA-102, YK-515). *(The coordinator's reading: whether a licensed partner could hold the money for Sharrwah instead is not shown by any cited source.)* |
+| **B. A processor holds it, in an account the seller opens through Sharrwah** | with the processor, as Shopify Payments' processors (its Payment Processors; Adyen N.V.) hold, and as Stripe's terms say of funds held by Stripe, within the scopes under Evidence | an integration with the processor, onboarding sellers to it, and showing its balance | a processor that serves the market and holds funds in accounts opened through Sharrwah |
 | **C. Each payment method's provider holds it, in the seller's own account with that provider** | with each provider, as in BigCommerce's "merchant account with your merchant service provider" (S01-V-532) | an integration with each provider, one boundary over them (D-002), and showing the seller each provider's balance | a contract between the seller and each provider |
 | **Defer** | undecided | the boundary only | nothing now |
 
 ## Decision outcome
 
-Chosen option: **C at launch, with A and B reserved and not built.** Each payment method's provider holds the money, in the seller's own account with it. Sharrwah holds none. The payment boundary (D-002) is built so that A or B can be added behind it later. Each would be switched on in a market only by the founder's decision.
+Chosen option: **C at launch, with A and B reserved and not built.** Each payment method's provider holds the money:
+- where the provider keeps accounts, such as a wallet or a bank, in the seller's own account with it;
+- for a courier collecting cash on delivery, until the courier settles with the seller under their agreement.
+
+Sharrwah holds none. The payment boundary (D-002) is built so that A or B can be added behind it later. Each would be switched on in a market only by the founder's decision.
 
 ## Consequences
 
@@ -81,7 +89,7 @@ Chosen option: **C at launch, with A and B reserved and not built.** Each paymen
 ## The guard
 
 - **Outcome type: Built.** The arrangement built is C. A and B are named in the range but reserved: they are not built. Once more than one is built, which one is on in a market becomes a Configured value that the founder owns.
-- **No market's facts shape the outcome.** Nothing that holds money is built, because Sharrwah has no licence or licensed partner anywhere today, and because of the founder's guard. A market's facts decide only where A or B could later be switched on.
+- **No market's facts shape the outcome.** Nothing that holds money is built for two reasons: the founder's guard, and the fact that Sharrwah holds no payment licence anywhere today (its company is still to be decided, O-01). A market's facts decide only where A or B could later be switched on.
 
 ## Evidence
 
@@ -96,15 +104,16 @@ Each fact carries the conditions its source gives.
   - **Salla's article for the UAE,** of 12 September 2026: "يحتفظ رصيد المدفوعات الإلكترونية بمستحقات مبيعات المتجر قبل تحويلها" (the electronic payments balance keeps the store's sales proceeds before they are transferred) (S01-V-016: S01-SA-056). Salla doesn't say which partner holds the money behind the balance.
   - **Zid's help,** of 6 August 2026: "المبالغ المتوفرة في رصيد حسابك في زد باي و لكن لم يتم إيداعها إلى حسابك البنكي بعد" (the amounts in your Zid Pay account balance that have not yet been deposited to your bank account) (S01-V-023: S01-ZD-034). Zid Pay's terms are published for Saudi Arabia and for Kuwait (S01-ZD-019).
   - **Zid's terms,** of August 2026, for cash on delivery through Zid's own shipping service (Zid Ship, direct shipping): "تقوم زد بتحصيل المبالغ من العملاء النهائيين وتحويل إجمالي المستحقات إلى محفظة التاجر مرتين كل شهر ميلادي" (Zid collects the amounts from the end customers and transfers the total dues to the merchant's wallet twice each calendar month) (S01-V-656: S01-ZD-069).
-- **B, a processor holds behind the platform's payment product:**
+- **B, a processor or another party holds behind the platform's payment product:**
   - **Shopify:**
     - "The Payment Processors may hold funds in your Shopify Payments Account while awaiting the information requested above" (S01-V-003).
     - On international Managed Markets orders, which are available to businesses based in the continental US and to certain stores in Canada and the UK: "Global-e holds the funds to remit the costs to proper authorities that are involved in the cross-border commerce transaction" (S01-V-001).
     - Where Adyen N.V. is the Payment Processor (the EMEA rows of the Payment Processor List; the EU / EEA and UK terms), its terms speak of "amounts held by Processor prior to Settlement of such funds to User" (S01-V-006).
-  - **WooCommerce:**
-    - Stripe's terms speak of "funds held by Stripe or an applicable Affiliate" (S01-V-008).
-    - Settlement funds are "combined with settlement funds for other users and held in one or more Pooled Accounts at one or more Financial Providers" (S01-V-011).
-    - Money made with WooPayments "must flow through your WooPayments account balance before it’s paid out into your bank account" (S01-V-015).
+  - **Stripe, in its own terms** (recorded in the pilot with WooCommerce's statements):
+    - "funds held by Stripe or an applicable Affiliate" (S01-V-008);
+    - settlement funds are "combined with settlement funds for other users and held in one or more Pooled Accounts at one or more Financial Providers" (S01-V-011).
+- **Where no cited source says who holds the money:**
+  - **WooCommerce:** money made with WooPayments "must flow through your WooPayments account balance before it’s paid out into your bank account" (S01-V-015).
   - **BigCommerce,** with BigCommerce Payments, for US customers (blog of 31 March 2026) and for UK and EMEA customers (blog of 6 October 2026), on the Core, Growth and Scale plans: "PayPal powers the payment processing behind the scenes through your linked PayPal account, but all transactions made through BigCommerce Payments flow through your new BigCommerce Payments account" (S01-V-027).
 - **C, the seller's own account with each provider:**
   - **BigCommerce's help on payment gateways,** under "Where do I manage my funds?" (13 October 2026): "You will control and direct funds in your merchant account with your merchant service provider" (S01-V-532: S01-BC-088).
