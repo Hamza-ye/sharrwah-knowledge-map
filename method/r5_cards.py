@@ -2,7 +2,7 @@
 each quote in its source's context, so that a checking run reads one file and opens a source only where the card
 doesn't settle a point.
 
-Usage: python3 -I method/r5_cards.py [QUESTION ...] [--file NAME] [--out DIR]
+Usage: python3 -I method/r5_cards.py [QUESTION ...] [--file NAME] [--out DIR] [--quotes TSV]
 
 Reads studies/proposals/drafts/<QUESTION>/<NAME> (draft.md by default; all eight questions when none is named) and
 writes, in DIR (studies/proposals/checks/R5/cards by default):
@@ -18,6 +18,10 @@ A card gives:
   script finds the quote in the source (`method/quote_check.py`), and the quote in its context: the source's title,
   the headings above the quote where the source has them, and the text around it, with the quote between ⟪ and ⟫.
   For a step of an observed run, the step's intent, address, title and time from the run's `actions.jsonl`.
+
+With --quotes, it also writes TSV: every quote that every cited record rests on (a fact's citations, a not-found
+row's or an absence's list, and all of a Stage 1 fact's citations), each checked by script against its source, with
+the result: the plan's "every quote is checked by script".
 
 The context is the source's text as the quote check normalizes it (whitespace joined, entities decoded), so a
 table or a list reads as one line. A card decides nothing: the checking run does.
@@ -241,12 +245,38 @@ def yemen_card(i, uses):
     return "\n".join(lines) + "\n"
 
 
+def quotes(ctx, cited_by, path):
+    """Every quote each cited record rests on, checked against its source: one row per record and citation."""
+    done, rows, counts = {}, [], {}
+    for i_, qs in cited_by.items():
+        hit = rid.lookup(i_)
+        if not hit:
+            continue
+        for c in hit[3]:
+            source, locator, quote = c.get("source", ""), c.get("locator", ""), c.get("quote", "")
+            key = (quote, source, locator)
+            if key not in done:
+                done[key] = ctx.src.check_quote(quote, source, locator) if source and quote else ("no quote", "", "")
+            res, why, share = done[key]
+            counts[res.split(" ")[0]] = counts.get(res.split(" ")[0], 0) + 1
+            rows.append([" ".join(sorted(qs)), i_, c.get("cite_id", ""), source, locator, res,
+                         why or (f"best share of its six-word runs: {share}" if share else "")])
+    with open(path, "w", encoding="utf-8") as f:
+        f.write("questions\tid\tcite_id\tsource\tlocator\tresult\tnote\n")
+        for r in rows:
+            f.write("\t".join(x.replace("\t", " ").replace("\n", " ") for x in r) + "\n")
+    print(f"{os.path.basename(path)}\t{len(rows)} quotes: " + ", ".join(f"{k} {v}" for k, v in sorted(counts.items())),
+          file=sys.stderr)
+
+
 def main(argv):
-    name, out, qs = "draft.md", OUT, []
+    name, out, qs, quote_tsv = "draft.md", OUT, [], None
     i = 0
     while i < len(argv):
         if argv[i] == "--file":
             name, i = argv[i + 1], i + 2
+        elif argv[i] == "--quotes":
+            quote_tsv, i = argv[i + 1], i + 2
         elif argv[i] == "--out":
             out, i = argv[i + 1], i + 2
         else:
@@ -255,10 +285,11 @@ def main(argv):
     qs = qs or [f"Q{n}" for n in range(1, 9)]
     os.makedirs(out, exist_ok=True)
     ctx = Context()
-    claims, yemen = defaultdict(OrderedDict), OrderedDict()
+    claims, yemen, cited_by = defaultdict(OrderedDict), OrderedDict(), defaultdict(set)
     for q in qs:
         by_platform = defaultdict(list)
         for i_, uses in cited(q, name).items():
+            cited_by[i_].add(q)
             if rid.YEMEN_ID.fullmatch(i_):
                 yemen.setdefault(i_, []).extend((f"{q}, section {s}", n, p) for s, n, p in uses)
                 continue
@@ -286,6 +317,8 @@ def main(argv):
             f.write(f"# Cards: Stage 1's facts the proposals cite\n\n{len(yemen)} ids, from {', '.join(qs)}.\n\n"
                     + point_list(list(yemen.items()), "q") + "\n".join(cards))
         print(f"yemen.md\t{len(yemen)} cards", file=sys.stderr)
+    if quote_tsv:
+        quotes(ctx, cited_by, quote_tsv)
 
 
 if __name__ == "__main__":
