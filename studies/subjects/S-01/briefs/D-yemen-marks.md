@@ -1,5 +1,7 @@
 # Brief: S-01, the subject in each Yemen case (pilot, step 2)
 
+*Since 25 October 2026 this brief is not used for later subjects: one Yemen row per decision replaces the marks (the founder's decision; `PLAN.md`, section 6, step 6). It stays as the record of how the pilot was marked.*
+
 This is `PLAN.md` Stage 2, the pilot. It carries out Q2's marks for one subject. You are one agent with one task.
 
 **Read only this brief and:**

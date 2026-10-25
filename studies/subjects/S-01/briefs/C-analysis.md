@@ -40,11 +40,15 @@ Go down this list and take the first tag that applies *(the order is the coordin
   - *(The coordinator's own:)* the parties to the subject are one party on every platform: the merchant, the buyer, and the platform itself. The platform itself includes its own name, its own payment product, and its own company. So Salla naming Salla and Zid naming Zid name the same party. Any other party, such as Stripe or PayPal, is the same only by name. This rule compares platforms in step 3. It doesn't merge one platform's own variants in step 4.
 - **A party said to have no part** *(the coordinator's own, 17 October 2026)*. A variant that says a party has no part in X shows that this party isn't in its platform's set. So that platform's gap can't hold it. Where another platform names the same party as filling X, the two platforms differ.
 - **Like with like.** Compare declarations (`stated`, `official page`, `shipped`) with declarations, and `observed` with `observed`, as Q1's 12 October rule does. A cause resting on a declaration set against an observation is `unknown`, with why.
+  - *(The coordinator's own, 25 October 2026, on the review's finding 29:)* a platform's documentation about its own policies is `stated`; only the terms, pricing and legal pages themselves, and agreements they incorporate, are `official page`. So WooCommerce's "Our policies" documentation pages stay `stated`.
+  - *(The coordinator's own, 25 October 2026:)* kinds follow `method/source_kinds.py` as it stands: a help centre's article is `stated` even where its address names pricing or policies, and an address naming an agreement is an `official page`. In the pilot, five statements change kind (S01-WC-078 to 080, S01-BC-123 and 124), and no decision still open rests on them: S01-BC-124 is cited only for VP-19, which Decision 1's answer settled.
 - **Scopes** *(the coordinator's own)*. Compare variants whose scopes overlap: the same country, or general. Record the scopes compared in `scopes_compared`.
 - **Absence** counts only from an `absent` variant, which rests on a complete list. A `gap` is not absence. Absence ids (`S01-XX-N…`) may be cited wherever statements are.
 - **A cause is a reading.** Write it as one sentence beginning "Reading:". It never becomes a platform statement.
 
 ## Step 4: coexistence
+
+*(The coordinator's own, 25 October 2026, on `notes-c.md`'s problem 18:)* with joined letters, `follows` no longer tells the facets of a subject apart. From Stage 4 it is read per root decision (`PLAN.md`, Stage 4): the decision's item says which binding its recommendation takes, and the platforms' letters are its evidence.
 
 Give each platform the letter for how it binds its variants. *(The coordinator's own, 17 October 2026:)* where its statements show more than one way, give each letter, joined by `+`, as `shopify=A+B`, and cite each letter's statements in `coexistence_basis`. A platform can run some variants together in one store and bind others per market. `D` and `unknown` stand alone. The letters:
 - `A`: they coexist in one store;
