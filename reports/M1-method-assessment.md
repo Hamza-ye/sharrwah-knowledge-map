@@ -2,7 +2,7 @@
 
 **25 October 2026.** You asked for this before answering Decision 1. It takes each of your feedback points in turn, says why the gaps escaped, and tests the evidence-completeness pass you proposed on Decision 1 itself. It ends with the smallest addition that fixes what is missing, as amendment 4. Nothing in the method changes unless you approve it.
 
-Part two, `reports/M1-plan-changes.md`, compares the plan's two changes, as you asked afterwards. An independent agent then tried to refute both parts. I checked each of its 29 fixes against the evidence and applied them (`decisions/checks/M1-method-assessment-check.tsv`, with my dispositions in `decisions/checks/M1-method-assessment-dispositions.md`).
+Part two, `reports/M1-plan-changes.md`, compares the plan's two changes, as you asked afterwards. Part three, `reports/M1-evidence-and-model.md`, answers your question about earlier research and the model's role. An independent agent then tried to refute both parts. I checked each of its 29 fixes against the evidence and applied them (`decisions/checks/M1-method-assessment-check.tsv`, with my dispositions in `decisions/checks/M1-method-assessment-dispositions.md`).
 
 ## In short
 
@@ -129,13 +129,13 @@ Two expectations would be mistaken:
 | Q1's concern map (`studies/concern-map/`), 10–11 October | No | Choice 2's evidence, and Salla's apps' wallet deductions | The subject index again (4b) |
 | The Shopify payments study (`shopify-payments-study/`), 10 October | No | Shopify's bills against its payout deductions, and apps' charges on Shopify's bill (`E-pos-finance-billing.md`:29–32). Also the false "Every type has a reversal twin" (:189). That claim reached D-003 through the seam's notes (`9831536:studies/payment-seam/notes/shopify-crossings.md`:141), on a reviewer's advice (`decisions/checks/D-002-D-003-review.md`:67), and M1's inventory corrected it | Candidate evidence, checked when relied on, like the drafts |
 | Yemen setup options (`yemen-setup-options/`), 10 October | No | "Seventeen setup options across five positions" (`report.md`:92), built on Yemen's facts. That makes the first market the design driver, which the market guard now rules out. Stage 1 redid its facts, with checks | Context. Its positions are candidate options for S-07 |
-| The obligation-to-payout model (`model/`), 10 October | No, except through the payment seam, which D-002 cites | The model behind the seam | Kept, as the seam's source |
+| The obligation-to-payout model (`model/`), 10 October | No | A synthesis of the Shopify study and the Yemen options: eight lines and 81 proposed question rows. It is the seam's sibling, not its source: the seam's notes cite the study, never the model (part three) | Candidate design concepts, judged against drivers when a record uses them |
 
 **Your remarks didn't hide this work, and nothing you asked for required dropping it.** On 24 October you asked planning to "understand the current state and the leverage already available" (`founder-messages/2026-10-24-method-accepted.md`:19). My consolidations hid it. I proposed each one, merging the question sets was my own finding, and none listed what it dropped. *(Interpretation: earlier work is often broader and less checked, and later work narrower and better checked. That is why each needs a disposition, not a verdict.)*
 
 ## Amendment 4, proposed
 
-It restores the safeguards that were dropped, and makes the method's own changes traceable. Part two gives the evidence for 4c and 4d.
+It restores the safeguards that were dropped, and makes the method's own changes traceable. Part two gives the evidence for 4c and 4d, and part three for 4e.
 - **4a. Claims of absence** (section 6).
   - A claim that something isn't there ("only", "none", "doesn't show", "not found") is a fact only when it names:
     - its searches: `method/corpus_search.py`, whose header lists what it covers, plus the structures that bear on the claim, found through the repositories' indexes;
@@ -159,6 +159,10 @@ It restores the safeguards that were dropped, and makes the method's own changes
   - These are the first plan's coexistence step and generality rule (Czarnecki, Helsen and Eisenecker 2005). The second change dropped both.
   - Section 2 ties variability to markets; 4d extends it to the references' variants.
   - Choices 2 and 3 follow it since the revision of 25 October. The version sent to you said "never".
+- **4e. Whose words** (section 6; part three).
+  - "A fact about what a platform does traces to the platform's own words or behaviour, held in the evidence repositories. A study, note, draft, model or check sheet can point to it; it is never the source."
+  - `method/decision_status.py` flags a record whose facts cite such a path, and 4c's dispositions name each earlier artifact's known errors.
+  - *Fits the method:* it extends amendment 2c from "another record's or a draft's wording" to everything agents write.
 
 **Not proposed:**
 - a new mapping pass before each decision: Q1 is the map, and M2 refreshes it;

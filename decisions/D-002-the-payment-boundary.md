@@ -84,6 +84,7 @@ The words this record relies on, each defined in the glossary (`architecture/12-
 - Payment terms and invoices paid later for business buyers (area A-23) — S-11. Not carried: collecting at the due date by charging a stored card or bank account, as Shopify's B2B action does (`HC:shopify-flow/reference/actions/charge-vaulted-payment-for-b2b-order.md:3`), needs the stored permissions this record reserves. A buyer paying by the due date through a new attempt fits.
 - Selling in person, with cash at the counter or card readers — S-10. Not carried: split payment puts several attempts on one amount owed (`HC:sell-in-person/shopify-pos/payment-management/multiple-partial-payments.md:12`), while element 2's rule for when an order is made names one attempt. Kinds such as Shopify's CHANGE or EMV_AUTHORIZATION would be new kinds.
 - A courier's own charges, such as shipping invoices, deducted from cash on delivery it holds (`SA-en:277`) — S-07, with S-05 for shipping. Not carried: neither this record nor D-003 places them.
+- The quality scenarios and their targets, which judge the boundary's elements — S-02. Not carried: the elements were taken from the seam's contract v0 against the drivers held on 24 October, before any quality scenario existed. Each element is judged against the scenarios before this record is accepted, and may change.
 - Currencies, their minor units and conversion — S-04. Carried: every amount carries its currency as S-04 defines it.
 
 ## Decision drivers

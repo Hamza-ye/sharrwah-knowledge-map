@@ -2,7 +2,7 @@
 
 Where the work is, on one page (`METHOD.md` section 4). The coordinating session keeps it, and commits it at every checkpoint. The text from before 24 October is in the history: `git show a05974a:STATE.md`.
 
-**Updated:** 25 October 2026, 15:40 UTC.
+**Updated:** 25 October 2026, 16:20 UTC.
 
 **The method:** `METHOD.md`, adopted on 24 October 2026 with amendments 1, 2 and 3. Amendment 3 (the founder, 23:01 UTC) sets the evidence standard, checks that try to refute, and the acceptance rule: no record is accepted while something it leaves open could reverse it. Amendment 2 adds Terms and Scope to every decision record, and the rule that a record rests on evidence and accepted outcomes, never on another record's wording.
 
@@ -15,7 +15,8 @@ Where the work is, on one page (`METHOD.md` section 4). The coordinating session
   Their findings were verified against the evidence and applied (`decisions/checks/M1-terms-scope-dispositions.md`).
 - **Decision 1's page** puts the line and three choices on its extent to the founder, each recommended for launch: (1) where B ends, by the guard's source rather than its words: an account held under the seller's own agreement is C, even when asked for through Sharrwah; (2) Sharrwah's fees, and anything owed to it or its partners, billed apart; (3) no balance sellers pay into. The other way of choices 2 and 3 stays reserved, like A and B. D-004 is accepted with D-001 unless the founder says otherwise.
 - **The founder's remarks of 25 October** are assessed there, point by point, and an independent check tried to refute both parts: 29 fixes, all verified and applied (`decisions/checks/M1-method-assessment-dispositions.md`). Its findings: the absence audit of 13 October and the Q1 concern map as the subject index were dropped when `METHOD.md` was adopted; the plan's second change had dropped the coexistence step with its generality rule, and coarsened the inventory sweep to areas; no check looks at what a record never mentions. A trial of the omission check on Decision 1 (`method/slice_coverage.py`) changed no part of its line; it added partners' cases to choice 2 and apps (S-06) to what it leaves open, all of them already held in the repository. Amendment 4 (4a to 4d) is proposed, not adopted. W-20 is open, and W-08 records its failed mitigation.
-- **Under the acceptance rule:** D-001 and D-004 carry everything they leave open. D-002 doesn't carry nine items, and D-003 four, among them the buyer data Shopify's payment request sends a provider (E032:146–163) and stored permissions for B2B and edits. Both stay proposed, as the working basis, until those items are decided at S-05, S-07, S-10, S-11 and S-03 and the records are revised.
+- **Part three** (`reports/M1-evidence-and-model.md`), on the founder's question about earlier research and the obligation model: earlier agent-made work is candidates and pointers, never evidence or a ceiling; "the model behind the seam" was the coordinator's error (the seam cites the Shopify study, not the model); the work derives the model from decisions against drivers. D-002 and D-003 now don't carry M2's quality scenarios (S-02), so neither can be accepted before they judge it. Amendment 4e (whose words) is proposed.
+- **Under the acceptance rule:** D-001 and D-004 carry everything they leave open. D-002 doesn't carry ten items, and D-003 four, M2's quality scenarios among them, among them the buyer data Shopify's payment request sends a provider (E032:146–163) and stored permissions for B2B and edits. Both stay proposed, as the working basis, until those items are decided at S-05, S-07, S-10, S-11 and S-03 and the records are revised.
 - **Records D-001 to D-005:** the guard flags none, and `decision_status.py` finds no fault in their Terms and Scope. The glossary's quotes are checked by `method/inventory_quotes.py`. The inventory the pass used is `decisions/checks/M1-terms-inventory.md`.
 - **M0** closed with PR #6. M1's pull request is PR #7.
 
@@ -33,7 +34,7 @@ Where the work is, on one page (`METHOD.md` section 4). The coordinating session
 
 **Open founder decisions:**
 - **Decision 1's line and its three choices** (S-01; `reports/M1.md`): "No sellers' money is held through Sharrwah at launch. A and B are reserved, not built. Switching either on stays yours."
-- **Amendment 4** (`reports/M1-method-assessment.md`; `reports/M1-plan-changes.md`): approve, change or not now.
+- **Amendment 4** (`reports/M1-method-assessment.md`; `reports/M1-plan-changes.md`; `reports/M1-evidence-and-model.md`), 4a to 4e: approve, change or not now.
 - **O-01:** which legal entity and country contracts with sellers and partners (S-08).
 - **The form of F-02** (the Sana'a zone first) **and F-03** (both zones), under the guard (S-04).
 - **From M2:** the order in which the first version covers the areas, and the business targets for the quality scenarios.
@@ -44,7 +45,7 @@ Where the work is, on one page (`METHOD.md` section 4). The coordinating session
 - The drafts as deliverables: they are now candidate options.
 - The planned review of the drafts, and the company-decisions run.
 
-**In flight:** nothing. The scheduled check-in is off.
+**In flight:** one read-only checker, trying to refute part three and its edits to D-002, D-003 and amendment 4, and writing `decisions/checks/M1-evidence-and-model-check.tsv`. It is capped at 25 tool calls. The scheduled check-in is on while it runs.
 
 **M2's feasibility test** is done (read-only; 8.2 million tokens). Its report is in the coordinator's scratchpad, and goes into M2's pull request once M1 merges. Its verdict is **partly feasible:**
 - **Within each platform,** the structures say which permission gates which page.

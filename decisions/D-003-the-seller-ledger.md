@@ -55,6 +55,7 @@ The words this record relies on, each defined in the glossary (`architecture/12-
 - The founder's guard of 18 October (`founder-decisions.tsv`, G1).
 
 **Leaves open:**
+- The quality scenarios and their targets, such as reconciliation and audit — S-02. Not carried: the ledger's rules were set before any quality scenario existed. They are judged against the scenarios before this record is accepted, and may change.
 - How currencies, minor units and rounding are defined — S-04. Carried: amounts are kept in minor units as S-04 defines them, and never converted.
 - Gift cards, store credit and customer wallets — S-05. Not carried: if store credit lives in S-05's own record, nothing here changes. Recording it here would change when an entry posts, since issuing or spending store credit moves no money, and would add the buyer as a counterparty.
 - How Sharrwah's fees are set and billed — S-03. Not carried: a fee charged per sale or refund posts, keyed by the outcome it arises from. A fee with no outcome behind it, such as a subscription (`SA-en:1240`), has no posting key in this record.
