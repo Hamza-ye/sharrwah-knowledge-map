@@ -1,6 +1,6 @@
 # Why the method didn't catch what you caught
 
-**25 October 2026.** You asked for this before answering Decision 1. It takes each of your feedback points in turn, says why the gaps escaped, and tests the evidence-completeness pass you proposed on Decision 1 itself. It ends with the smallest addition that fixes what is missing, as amendment 4. Nothing in the method changes unless you approve it.
+**25 October 2026.** You asked for this before answering Decision 1. It takes each of your feedback points in turn, says why the gaps escaped, and tests the evidence-completeness pass you proposed on Decision 1 itself. It ends with the smallest addition that fixes what is missing, as amendment 4. Nothing in the method changes unless you approve it. Part two, `reports/M1-plan-changes.md`, compares the plan's two changes, as you asked afterwards, and refines amendment 4.
 
 ## In short
 
@@ -20,7 +20,7 @@
   - Four earlier bodies of work are referenced by neither the method nor any current record.
   - Two of them held what M1 missed. One also held an error M1 inherited.
   - None is better on every count. Each is a source to index and check, not a plan to bring back.
-- **The fix is small.** Amendment 4 restores the two dropped practices and makes the method's own changes traceable. It adds no pass, no agent and no step.
+- **The fix is small.** Amendment 4 restores three dropped practices and makes the method's own changes traceable. It adds no pass, no agent and no step.
 
 ## Your feedback points
 
@@ -128,6 +128,7 @@ Two expectations would be mistaken:
 
 ## Amendment 4, proposed
 
+It restores three safeguards the plan changes dropped, and makes the method's own changes traceable. Part two gives the evidence for 4c and 4d.
 - **4a. Claims of absence** (section 6).
   - A claim that something isn't there ("only", "none", "doesn't show", "not found") is a fact only when it names two things:
     - its searches, run with `method/corpus_search.py` over every held corpus and language;
@@ -137,18 +138,23 @@ Two expectations would be mistaken:
   - At levels 2 and 3 the checker audits each one, as the pilot's A3 step did.
   - *Fits the method:* the search is targeted to the claim, so "nothing is read broadly" still holds.
 - **4b. The omission check** (sections 5 and 6).
-  - At framing, `method/slice_coverage.py` lists the concern map's slice for the record's areas.
+  - At framing, `method/slice_coverage.py` lists the concern map's slice for the areas the record's Terms and Scope reach, not only its subject's areas.
   - At verification, the checker receives the slice's concerns that the record doesn't cite. It says which bear on a claim, or on an item the record leaves open.
   - The coordinator records each disposition.
-  - *Fits the method:* it is limited to the record's slice and to what bears on its claims, so checking still covers "only the facts a decision rests on". It adds no step and no agent.
-- **4c. The method's own changes** (sections 12 and 13).
-  - An amendment lists the practices it retires or replaces.
+  - *Fits the method:* it is limited to what the record reaches and to what bears on its claims, so checking still covers "only the facts a decision rests on". It adds no step and no agent.
+- **4c. The method's own changes,** checked by function (sections 12 and 13).
+  - An amendment names, for each practice it retires, the risk that practice controlled. It either reassigns the risk or enters it in the register as accepted.
   - Section 13's map of earlier work gives every body of work a disposition, as M0 did for the Knowledge Map.
   - *Fits the method:* it carries section 10's change control over to the method itself.
+- **4d. Where the references differ** (section 5, step 3).
+  - Each variant becomes an option.
+  - When one is a restricted form of another that the general one can reach by configuration, the general one is kept, and the restricted one is bound where it is needed. This is the first plan's rule, from Czarnecki, Helsen and Eisenecker (2005); the second change dropped it.
+  - *Fits the method:* section 2 already names variability and binding time; this is that practice at step 3. Choices 2 and 3 already follow it.
 
 **Not proposed:**
 - a new mapping pass before each decision: Q1 is the map, and M2 refreshes it;
 - a rule on older and newer founder decisions: sections 3 and 10 cover it;
+- the first plan's cause labels and per-subject variation points, whose cost was measured;
 - more rounds of checks.
 
 The two risks behind it, W-20 (omissions) and W-21 (safeguards lost when the method changes), are now in the register as open.
