@@ -107,7 +107,7 @@ All of it is readable at [commit `4923e1c`](https://github.com/Hamza-ye/sharrwah
 - **The cold-start test.** An agent with none of our conversation is given only "resume the work".
   - **First run:** it named the working files and what each is, found the right next step, and opened nothing in history. It also reported 19 places where a new session could misread the files. Among them: which file wins when the plan and your decisions differ, and what follows from Decision 1 if your answer isn't C. I checked each against the files, and fixed the ones that held.
   - **Second run,** on the fixed files: the same result on all three counts. It read "resume the work" as your word to go on, and would say so at the top of its reply. It reported 24 smaller points, such as a stop rule written in three places, and I fixed the ones that held.
-  - **Third run,** on the files as they now stand: not yet run at this commit.
+  - **No third run.** Both runs met what the test asks for: the right files, the right next step, and nothing read from history. I stopped a third run at your word, and wording points beyond that aren't fixed.
 
 ## What I need from you
 

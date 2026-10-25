@@ -51,7 +51,7 @@ On 25 October 2026 the founder reset the work to the plan as it stood at G1, wit
 | Baseline | Commit | What it holds |
 | --- | --- | --- |
 | Before the reset | [`4923e1c`](https://github.com/Hamza-ye/sharrwah-knowledge-map/tree/4923e1c96a0296abdaf3f5bdbd8c155e09acfebf) | Everything done between G1 and the reset: the re-frame's work, the method of 24 October and its amendments, the decision records and their checks, the M0 and M1 reports, and the decisions made on them |
-| The reset | [`005bdf1`](https://github.com/Hamza-ye/sharrwah-knowledge-map/tree/005bdf1f59d72af53c66aa3d66e6e17aa6306f8d) | The plan as it stood at G1, with the pilot's own changes; the working files only (`CLAUDE.md` lists them). The fixes from its cold-start test follow in the next commit. |
+| The reset | [`005bdf1`](https://github.com/Hamza-ye/sharrwah-knowledge-map/tree/005bdf1f59d72af53c66aa3d66e6e17aa6306f8d) | The plan as it stood at G1, with the pilot's own changes; the working files only (`CLAUDE.md` lists them). The fixes from its two cold-start tests follow in the commits after it, on the same branch. |
 
 ## How history is kept from here
 
