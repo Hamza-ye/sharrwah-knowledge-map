@@ -153,7 +153,7 @@ Each of these faults made an agent think something was missing, or readable, whe
 **Corrected on 18 October 2026.** The first version of this section counted each API request once for every line its transcript writes it on.
 - **What went wrong.** A transcript writes a request's reply over several lines, one per block (thinking, text, each tool call), and each line repeats the request's whole usage. So the first count roughly doubled every figure.
 - **The fix.** `method/count_tokens.py` counts each request once.
-- **What it touched.** The founder set the re-frame's budget and the sample's bar from the first count's figures (`founder-messages/2026-10-18-g1-answer.md`). In this count, the same budget is about 1.0 billion tokens, and the same bar, half the rate of phases A and A2, is about 0.26 million per statement.
+- **What it touched.** Every figure below. Budgets set later from the first count are history (`HISTORY.md`).
 
 **The pilot's agents processed about 1.03 billion tokens,** by their own transcripts. Most of that is context re-read on each turn.
 

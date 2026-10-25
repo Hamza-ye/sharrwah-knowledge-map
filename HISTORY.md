@@ -37,15 +37,25 @@ Its `decisions/founder.md` holds the founder's decisions F-00 to F-06 and one op
 
 ## Milestones from 24 October
 
-Each milestone is one pull request, merged into `main` with a merge commit. Its description is the milestone report in `reports/`.
+Each milestone is one pull request, merged into `main` with a merge commit. Its description is the milestone report. The reports of M0 and M1 are in `reports/` at [commit `4923e1c`](https://github.com/Hamza-ye/sharrwah-knowledge-map/tree/4923e1c96a0296abdaf3f5bdbd8c155e09acfebf/reports).
 
 | Milestone | Pull request | Date | What it holds | The founder's decision on record |
 | --- | --- | --- | --- | --- |
 | M0, the re-baseline | PR #6 | 24 Oct | `METHOD.md` adopted with amendment 1; the founder's decisions of 24 October; F-00 to F-06 and O-01 restored; the backlog, the risk register and the scripts; `STATE.md` on one page; `reports/M0.md` | `founder-decisions.tsv`, 24 October; `founder-messages/2026-10-24-method-accepted.md` and `founder-messages/2026-10-24-approved-plan.md` |
+| M1, the money boundary, ended by the reset | PR #7 | 25 Oct | The work under the method of 24 October, then the reset to the plan as it stood at G1 (below) | `founder-decisions.tsv`, 25 October |
+
+## The reset of 25 October
+
+On 25 October 2026 the founder reset the work to the plan as it stood at G1, with the pilot's own changes (`PLAN.md`, section 11).
+
+| Baseline | Commit | What it holds |
+| --- | --- | --- |
+| Before the reset | [`4923e1c`](https://github.com/Hamza-ye/sharrwah-knowledge-map/tree/4923e1c96a0296abdaf3f5bdbd8c155e09acfebf) | Everything done between G1 and the reset: the re-frame's work, the method of 24 October and its amendments, the decision records and their checks, the M0 and M1 reports, and the decisions made on them |
+| The reset | the commit after `4923e1c` on PR #7's branch | The plan as it stood at G1, with the pilot's own changes; the working files only (`CLAUDE.md` lists them) |
 
 ## How history is kept from here
 
 - **Nothing is rewritten:** no squash, rebase or force-push on a shared branch. Documents cite commits by hash, and rewriting would break those citations.
 - **One pull request per milestone.** Each one closes with its milestone report, is merged into `main` with a merge commit, and gets a row here.
-- **Superseded work stays in history.** `STATE.md` marks what is settled, open or superseded. Nothing is deleted to mark it.
+- **Superseded work stays in history.** At the reset of 25 October, the work done between G1 and the reset left the working files, so that no search of them finds it. It is read at its commit. Nothing was rewritten.
 - **Named by commit, not by tag.** This session's git access can push its working branch but not tags, so the baselines are named here by commit. A session or person allowed to push tags can turn each row into one.
