@@ -107,7 +107,7 @@ All of it holds. The count in D-003 (114 types, 38 reversals, 36 twins) was repr
 - Salla has the seller "contact the customer to agree on the refund method" for a bank transfer (`SA-en:994`);
 - Tamara's request goes through Salla: "إرسال طلب فتح حساب أعمال" (`SA-ar:881`).
 
-**The founder's principle applied to the B/C line.** On 25 October the founder said: when an earlier decision conflicts with focused evidence, establish its reason, and surface the conflict rather than let older wording win. The guard of 18 October names B in its words as "an account opened through Sharrwah", and its notes define B as "the entry's options A and B" (`founder-messages/2026-10-18-g1-answer.md`:20, :95). The entry's B is a processor holding money inside the platform's own payment product (`studies/subjects/S-01/entry.md`:119), and its Decision 7 counted an account "opened through Sharrwah" as "B or C" (:238). The evidence shows Tabby collecting under the seller's own agreement, "not through Salla Payments" (`SA-ar:865`). The first check's fix (C10) had applied the words. D-001 now puts both readings to the founder as choice 1, recommending the source's. The same treatment gives choices 2 (fees and repayments billed apart) and 3 (no balance sellers pay into), where C or the guard's words reach further than the recorded reason.
+**Why the B/C line goes to the founder.** The guard of 18 October names B in its words as "an account opened through Sharrwah", and its notes define B as "the entry's options A and B" (`founder-messages/2026-10-18-g1-answer.md`:20, :95). The entry's B is "A payment processor holds, in an account the merchant opens through Sharrwah", with platforms' own payment products as its examples (`studies/subjects/S-01/entry.md`:119), and its Decision 7 counted an account "opened through Sharrwah" as "B or C" (:238). Salla's Tabby articles tie the merchant's fees and settlement to the merchant's agreement with Tabby (`SA-en:576`; `SA-en:28`, corrected below). The first check's fix (C10) had applied the words. Under the evidence standard (amendment 3), a conflict between a decision's words and its recorded reason is surfaced, not settled by the older wording, so D-001 puts both readings to the founder as choice 1, recommending the source's. The founder asked the same question on 25 October, for their own assessment; it is not made a rule here. Choices 2 and 3 were first written as the same kind of choice. The page check corrected that (below).
 
 **Applied:**
 
@@ -134,3 +134,43 @@ All of it holds. The count in D-003 (114 types, 38 reversals, 36 twins) was repr
 | DG-1 | D-004's gap is corrected: Salla has the seller agree a refund method with the customer (`SA-en:994`). |
 | R-2, R-3, R-4 | D-004 rows 2 to 4 name couriers, and row 4 names the seller, not its bank, for a manual method. |
 | R-7 | D-004 row 7: the seller's own accounts under choice 1, and no money held in the seller's account with Sharrwah (choice 3). |
+
+## Check of D-001's page for the founder, level 3
+
+`M1-founder-page-check-D001.tsv`: a fresh agent checked each sentence of the page "For the founder", as at commit `f2003c7`, against the record, the glossary and the evidence. 44 claims: 23 hold, 18 fix, 3 open. It processed 1.0 million tokens (`method/count_tokens.py`).
+
+**The evidence its findings rest on was checked first:**
+- **Tabby.** The request through Salla is for stores in Saudi Arabia only (`SA-en:576`; `SA-ar:880`, `SA-ar:881` for Tamara). The article with the request says "Fees depend on the agreement between the merchant and Tabby" (`SA-en:576`). The sentence the page quoted on the agreement is from Salla's article for the UAE, whose stores set their account up directly with Tabby (`SA-en:28`; `SA-ar:865`). The page's English was the coordinator's rendering of the Arabic, not Salla's own English, and it joined the two articles.
+- **Shopify Capital** is for "merchants in the United States" (`HC:finance/shopify-capital/united-states.md:3`). For loans accepted from 9 March 2026, repayments are "collected directly from your Shopify Payments balance" (:131). Otherwise they are debited from a bank account, including "The external bank account that you set up in your Shopify Capital settings (for non-Shopify Payments users)." (:179).
+- **Shopify's fees.** Its fee on sales through other providers goes on its bill (`HC:payments/getting-paid.md:11`; `HC:your-account/manage-billing/billing-charges/types-of-charges/third-party-charges/third-party-transaction-fees.md:1`). Its card fees are "deducted from your payouts rather than billed on your Shopify bill" (`HC:your-account/manage-billing/billing-charges/types-of-charges.md:12`). Its bills can be paid by a seller's Shopify Balance card (`HC:your-account/manage-billing/paying-your-bills/making-payments/payment-methods-for-bills.md:30`).
+- **The backlog.** S-04 is "Markets and currency, as configuration", and S-03 covers area A-03, plans and fees (`decisions/subjects.tsv`).
+
+**Choices 2 and 3: "at launch", not "never".** The page offered both as readings of the guard, with the other way ruled out for good. The check found that neither is a reading of the guard (FP-18, FP-28): in neither does Sharrwah hold sellers' money as the glossary defines it. Shopify's evidence shows both ways for fees, divided by who holds the money: deducted where its own payment service holds it, billed apart where another provider does. Billing apart is what C allows at launch without any provider's support. It is not the more restrictive of two ways that both references take. Each choice now holds at launch, and the other way stays reserved, like A and B, for the founder's decision in a record of its own. D-001's outcome and Scope, D-004's rows 6, 7 and 9 and its Scope, and the glossary's *Sharrwah's fees*, *platform balance* and *reserved, not built* say the same. This refines the earlier dispositions FP-3 ("never taken") and T-2 above. The "never" was found while testing a concern the founder raised on 25 October, held as a hypothesis for their assessment. The correction rests on the evidence above, and no rule is made of the concern.
+
+**Applied:**
+
+| Finding | What was done |
+| --- | --- |
+| FP-04 | The line stays as the method words it (`METHOD.md` section 14). The page's *Reserved, not built* now says that, because the line says "not built", building A or B is the founder's decision too, not only switching it on. |
+| FP-05 | The courier in *What it means* is one "the seller contracts with". |
+| FP-08 | A's licence is "a licence or permission", or perhaps a licensed partner, and no source read shows which. |
+| FP-09 | B: none is shown for the first market yet, with the three reasons, and the pilot's own words, "unsettled, not unmet". |
+| FP-10 | C's examples are dated and show where the money lands. Whether the first market's wallets link a seller's own account is asked at S-07. |
+| FP-11 | The glossary's sources are named: the guard, the pilot's entry, and the platforms' help and structures. |
+| FP-18 | Choice 1 sets the guard's words against its source. Choices 2 and 3 are left open by C itself. |
+| FP-19 | The Tabby example keeps the Saudi request and the UAE article apart, quotes Salla's own English from each, and says that neither shows whose agreement covers an account asked for through Salla. The glossary's entry is corrected the same way, with the question marked open. |
+| FP-20 (holds, note) | The page adds that Shopify's PayPal help names no agreement. |
+| FP-22 | The source's own title for B is quoted. "Inside the platform's own payment product" is marked as the coordinator's reading, with BigCommerce's linked PayPal account against it. The glossary is corrected too. |
+| FP-25, FP-26 | Choice 2 shows Shopify's two ways, with Capital's US scope and how its repayments are collected. Billing apart "needs nothing from the sellers' providers"; Sharrwah still needs a provider for its own billing (choice 3). |
+| FP-28 | A balance sellers pay into holds the seller's own funds, like A, and is not sellers' money as defined. The glossary's *platform balance* and D-001's Terms say the same. |
+| FP-30 | "At launch, and until you decide otherwise in a record of its own" replaces "the first version", on the page and in the Scope. |
+| FP-36 | D-004 is named as a record of its own, which the founder's answer accepts with D-001 unless they say otherwise. |
+| FP-37 (open) | S-04 is named, with its title. |
+| FP-38 | The list of what is left open adds money products (S-02), selling in person and on outside marketplaces (S-10), what sellers are shown of their providers' balances (S-07), installments (D-005) and currencies (S-04). |
+| FP-39 | The page says that buyers' money is outside the line and would come to the founder on its own. |
+| FP-40 | Licensing at S-08 includes whether a platform that only links sellers' own providers needs a licence. |
+| FP-41 | The risk is "in my assessment", with what A and B would each need. |
+| FP-43 (open) | *Door and risk:* one-way under the method, because it decides about money (`METHOD.md` sections 2 and 6), and low risk in the coordinator's assessment because it keeps the arrangement that holds nothing. |
+| FP-44 (open) | The answer line adds "defer", which the record weighs as an option and the founder chose at G1. |
+
+**Not changed:** the line's own words (FP-04, above). **The cost to the founder:** the page grew from about 1,070 words to about 1,640.

@@ -34,7 +34,7 @@ The words this record relies on, each defined in the glossary (`architecture/12-
 | seller's own account | An account the seller holds with a provider or courier under its own agreement, linked by its own credentials, keys, account number or email, or the provider's own app; it stays the seller's own when asked for through Sharrwah, unless Sharrwah is party to the money or the agreement (D-001, choice 1). A payout-only bank account is not C | `HC:payments/third-party-providers/configuring-providers.md:32`; `SA-en:318`; `SA-en:793`; `SA-en:277`; `SA-en:1181` |
 | cash on delivery | Collected by a courier under the seller's own agreement, which settles with the seller, or by the seller's own staff | `SA-en:565`; `SA-en:234`; `SA-ar:359` |
 | provider fees | Each provider or courier charges its own on its own terms, deducting it from what it settles or invoicing the seller | `SA-en:1241`; `GQL:3605`; `SA-ar:359`; `SA-en:234` |
-| Sharrwah's fees | Billed apart from sellers' money, never deducted from it | `HC:payments/getting-paid.md:11` (a precedent) |
+| Sharrwah's fees | Billed apart from sellers' money at launch, not deducted from it; deducting them at a provider stays reserved (D-001, choice 2) | `HC:payments/getting-paid.md:11` (a precedent) |
 | refund and void | Made through each provider, on its own terms; for a manual method, by the seller directly | `HC:fulfillment/managing-orders/refunding-orders.md:16`; `SA-en:804`; `SA-en:994` |
 | agency role | Sharrwah is appointed no seller's agent to receive or hold buyers' payments. Sending a provider the seller's instructions with the seller's own keys, such as a capture or a refund, is not an agency role here. That is this record's definition, not a legal one (Gaps) | S01-VP-06 |
 | security interest | Sharrwah takes none | S01-VP-10 |
@@ -45,11 +45,11 @@ The words this record relies on, each defined in the glossary (`architecture/12-
 - The pilot's Decisions 2 to 12, each as column C of its table, as listed under the outcome.
 
 **Takes as given:**
-- D-001's outcome as proposed, with its three choices: C at launch, with A and B reserved; where B ends; fees billed apart; and no balance sellers pay into (in `depends_on`). This record is confirmed with D-001, or falls with it.
+- D-001's outcome as proposed, with its three choices: C at launch, with A and B reserved; where B ends; and, at launch, fees billed apart and no balance sellers pay into, with the other way of each reserved (in `depends_on`). This record is confirmed with D-001, or falls with it.
 
 **Leaves open:**
 - Sharrwah's terms with sellers, and the company that offers them — S-08. Carried: the terms say that each provider's terms govern the money it holds, whichever company offers them.
-- How Sharrwah sets and bills its fees — S-03. Carried: whatever they are, they are billed apart from sellers' money.
+- How Sharrwah sets and bills its fees — S-03. Carried: whatever they are, at launch they are billed apart from sellers' money (D-001, choice 2). Taking them at a provider would be the founder's decision in a record of its own, which D-001 provides for, and these answers would be decided again for it (Consequences).
 - What the seller is shown of each provider's settlement times and balances — S-07. Carried: showing reads each provider's own records, and changes none of the answers above.
 - The terms of each provider Sharrwah integrates — S-07. Carried: whatever a provider's terms say, Sharrwah takes no agency role and no security interest under this record. A provider that required either from Sharrwah would come to the founder.
 
@@ -77,16 +77,16 @@ Chosen option: **1, column C,** with the pilot's recommendation for each:
 | 6. Who deducts fees and refunds (S01-VP-09) | each provider or courier its own, on its own terms; Sharrwah bills its own fees apart (D-001, choice 2) |
 | 7. Which accounts a seller holds (S01-VP-11) | an account with each provider or courier, held under the seller's own agreement and linked to Sharrwah (D-001, choice 1). The seller's account with Sharrwah holds no money (D-001, choice 3) |
 | 8. Payout timing (S01-VP-15) | each provider's own settlement and payout times, and each courier's transfer days, under its agreement with the seller. Under a manual method the buyer pays the seller directly. What the seller is shown of them is left to S-07 |
-| 9. Deducted before payout, or billed apart (S01-VP-19) | each provider or courier charges its own on its own terms, deducting it from what it settles or invoicing the seller. Sharrwah's fees, and anything owed to Sharrwah or its partners, are billed apart, never taken from sellers' money (D-001, choice 2) |
+| 9. Deducted before payout, or billed apart (S01-VP-19) | each provider or courier charges its own on its own terms, deducting it from what it settles or invoicing the seller. Sharrwah's fees, and anything owed to Sharrwah or its partners, are billed apart at launch, not taken from sellers' money (D-001, choice 2) |
 | 10. Funds held when the service ends (S01-VP-20) | Sharrwah holds nothing; its terms say each provider's terms apply |
 | 11. When funds go back to buyers (S01-VP-21) | none for Sharrwah; its terms say each provider's terms apply |
 | 12. A security interest over the seller's funds (S01-VP-10) | Sharrwah takes none; each provider's terms apply to the funds it holds |
 
 ## Consequences
 
-- Sharrwah bills its own fees through its own billing, as entries owed by the seller (D-003). It never nets them from sellers' money.
+- Sharrwah bills its own fees through its own billing, as entries owed by the seller (D-003). At launch it doesn't net them from sellers' money (D-001, choice 2).
 - Sharrwah's terms with sellers say that each provider's terms govern the money that provider holds. The company's terms are drafted at subject S-08.
-- If A or B is switched on in a market later (D-001), each of these is decided again for that arrangement. The pilot's columns A and B give the starting answers.
+- If A or B is switched on in a market later (D-001), or the reserved way of D-001's choices 2 or 3, each of these is decided again for that arrangement. The pilot's columns A and B give the starting answers.
 
 ## The guard
 

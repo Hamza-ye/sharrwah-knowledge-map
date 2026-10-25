@@ -2,20 +2,21 @@
 
 Where the work is, on one page (`METHOD.md` section 4). The coordinating session keeps it, and commits it at every checkpoint. The text from before 24 October is in the history: `git show a05974a:STATE.md`.
 
-**Updated:** 24 October 2026, 23:56 UTC.
+**Updated:** 25 October 2026, 00:51 UTC.
 
 **The method:** `METHOD.md`, adopted on 24 October 2026 with amendments 1, 2 and 3. Amendment 3 (the founder, 23:01 UTC) sets the evidence standard, checks that try to refute, and the acceptance rule: no record is accepted while something it leaves open could reverse it. Amendment 2 adds Terms and Scope to every decision record, and the rule that a record rests on evidence and accepted outcomes, never on another record's wording.
 
-**Milestone:** M1, the money boundary (subject S-01). The founder chose to finish amendment 2's pass while it stays productive (23:01 UTC).
+**Milestone:** M1, the money boundary (subject S-01). Amendment 2's pass is finished, and Decision 1 is with the founder (`reports/M1.md`).
 - **Done:**
   - the glossary (`architecture/12-glossary.md`);
   - Terms and Scope in D-001 to D-005;
-  - a level 3 check of D-001 and D-004, and a level 2 review of D-002 and D-003, each trying to refute.
+  - four refuting checks: D-001 and D-004 at level 3, twice; D-002 and D-003 at level 2; and D-001's page for the founder at level 3.
 
-  Their findings were verified against the evidence and applied (`decisions/checks/M1-terms-scope-dispositions.md`). The largest: the glossary had narrowed the founder's guard. B now follows the guard's words, so accounts a platform opens or requests for a seller with another company, such as Salla's Tabby requests, are B.
-- **Running:** a fresh check of D-001 and D-004 as they now stand. Decision 1 comes back after it.
+  Their findings were verified against the evidence and applied (`decisions/checks/M1-terms-scope-dispositions.md`).
+- **Decision 1's page** puts the line and three choices on its extent to the founder, each recommended for launch: (1) where B ends, by the guard's source rather than its words: an account held under the seller's own agreement is C, even when asked for through Sharrwah; (2) Sharrwah's fees, and anything owed to it or its partners, billed apart; (3) no balance sellers pay into. The other way of choices 2 and 3 stays reserved, like A and B. D-004 is accepted with D-001 unless the founder says otherwise.
+- **The founder's remarks of 25 October** are held as hypotheses for their assessment. None is recorded as a decision, a rule or a change of plan (`reports/M1.md`).
 - **Under the acceptance rule:** D-001 and D-004 carry everything they leave open. D-002 doesn't carry nine items, and D-003 four, among them the buyer data Shopify's payment request sends a provider (E032:146–163) and stored permissions for B2B and edits. Both stay proposed, as the working basis, until those items are decided at S-05, S-07, S-10, S-11 and S-03 and the records are revised.
-- **Records D-001 to D-005:** their earlier checks were D-001 and D-004 at level 3, D-002 and D-003 at level 2. The guard flags none, and `decision_status.py` finds no fault in their Terms and Scope. The inventory the pass used is `decisions/checks/M1-terms-inventory.md`.
+- **Records D-001 to D-005:** the guard flags none, and `decision_status.py` finds no fault in their Terms and Scope. The glossary's quotes are checked by `method/inventory_quotes.py`. The inventory the pass used is `decisions/checks/M1-terms-inventory.md`.
 - **M0** closed with PR #6. M1's pull request is PR #7.
 
 **Settled** (`founder-decisions.tsv`):
@@ -31,8 +32,7 @@ Where the work is, on one page (`METHOD.md` section 4). The coordinating session
 - **Amendment 2** (24 October, 22:11 UTC).
 
 **Open founder decisions:**
-- **Whether amendment 2's pass goes on** after its overrun (S-01; `reports/M1.md`, item 1).
-- **Decision 1's line** (S-01), after the pass: "No sellers' money is held through Sharrwah at launch. A and B are reserved, not built. Switching either on stays yours."
+- **Decision 1's line and its three choices** (S-01; `reports/M1.md`): "No sellers' money is held through Sharrwah at launch. A and B are reserved, not built. Switching either on stays yours."
 - **O-01:** which legal entity and country contracts with sellers and partners (S-08).
 - **The form of F-02** (the Sana'a zone first) **and F-03** (both zones), under the guard (S-04).
 - **From M2:** the order in which the first version covers the areas, and the business targets for the quality scenarios.
@@ -43,7 +43,7 @@ Where the work is, on one page (`METHOD.md` section 4). The coordinating session
 - The drafts as deliverables: they are now candidate options.
 - The planned review of the drafts, and the company-decisions run.
 
-**In flight:** one read-only checker, re-checking D-001 and D-004 at commit `3e5ba3f` without the earlier checks' findings, and writing `decisions/checks/M1-terms-scope-recheck-D001-D004.tsv`. It is capped at 35 tool calls. The scheduled check-in is on while it runs.
+**In flight:** nothing. The scheduled check-in is off.
 
 **M2's feasibility test** is done (read-only; 8.2 million tokens). Its report is in the coordinator's scratchpad, and goes into M2's pull request once M1 merges. Its verdict is **partly feasible:**
 - **Within each platform,** the structures say which permission gates which page.
@@ -57,15 +57,14 @@ Where the work is, on one page (`METHOD.md` section 4). The coordinating session
 - M0 used one agent: the independent review in planning processed 7.3 million tokens.
 - M1's agents processed 22.4 million tokens against its budget of 20 million, under the stop line of 25 million. Both are counted by `method/count_tokens.py`.
 - The 2 billion stays as the upper bound. S-01's budget is 20 million agent tokens, and the founder added about 5 million for amendment 2's pass (stop line 6.25 million).
-- **The pass's agents so far:** the terms inventory 23.8 million (106 steps, its context growing from 49 thousand to 375 thousand tokens: risk W-17), the level 3 check 3.3 million, the level 2 review 4.7 million. That is 31.8 million for the pass, and 54.2 million for S-01, past the stop line, under the founder's go of 23:01 to continue while productive.
+- **The pass's agents:** the terms inventory 23.8 million (106 steps, its context growing from 49 thousand to 375 thousand tokens: risk W-17), then four capped checks of 3.3, 4.7, 2.6 and 1.0 million. That is 35.4 million for the pass, and 57.8 million for S-01, past the stop line, under the founder's go of 23:01 to continue while productive.
 
 **The backlog:** `python3 -I method/decision_status.py` gives 16 subjects and 5 decision records: 4 proposed, 1 deferred.
 
 **Next step:**
-- the founder's answer on the pass (`reports/M1.md`, item 1). If it goes on: the glossary (`architecture/12-glossary.md`) and Terms and Scope in D-001 to D-005 from the inventory, written by the coordinator with no decision broadened; then one capped independent check of the terms Decision 1 and D-004 rest on;
-- then Decision 1's line goes back to the founder;
-- on the founder's line: accept D-001 and D-004; D-002 and D-003 stand after their veto window;
+- the founder's answer to Decision 1 and its choices, and their assessment of their remarks of 25 October (`reports/M1.md`). Frame their message first;
+- on the answer: accept D-001 and D-004 with the founder's choices. D-002 and D-003 stay proposed until the subjects that decide their open items have done so (acceptance rule);
 - merge PR #7 with `reports/M1.md` as its description, and add the row to `HISTORY.md`;
-- then M2, the spine, with the feasibility test first.
+- then M2, the spine: frame it with options for its scope and budget, starting from its feasibility test.
 
 **To resume:** `METHOD.md` section 9. Read `METHOD.md`, then this file, then the open subject's records.
