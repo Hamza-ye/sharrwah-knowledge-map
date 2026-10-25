@@ -2,7 +2,7 @@
 
 Where the work is, on one page (`METHOD.md` section 4). The coordinating session keeps it, and commits it at every checkpoint. The text from before 24 October is in the history: `git show a05974a:STATE.md`.
 
-**Updated:** 25 October 2026, 16:25 UTC.
+**Updated:** 25 October 2026, 17:35 UTC.
 
 **The method:** `METHOD.md`, adopted on 24 October 2026 with amendments 1, 2 and 3. Amendment 3 (the founder, 23:01 UTC) sets the evidence standard, checks that try to refute, and the acceptance rule: no record is accepted while something it leaves open could reverse it. Amendment 2 adds Terms and Scope to every decision record, and the rule that a record rests on evidence and accepted outcomes, never on another record's wording.
 
@@ -57,7 +57,9 @@ Where the work is, on one page (`METHOD.md` section 4). The coordinating session
 - The drafts as deliverables: they are now candidate options.
 - The planned review of the drafts, and the company-decisions run.
 
-**In flight:** nothing. The scheduled check-in is off.
+**In flight:** one read-only agent, the founder's test of 25 October: Decision 1 made from the references alone, as if the first market had never been brought in. Its brief names neither the first market, D-001 nor the glossary. It writes `decisions/checks/M1-blind-decision-1.md`, capped at 30 tool calls. The scheduled check-in is on while it runs.
+
+**The glossary** is now the family's dictionary of terms: 11 of its 35 entries restated a decision's outcome, and those outcomes now stay in their records. No term's meaning changed. It names no first-market place, regulator, currency or provider.
 
 **M2's feasibility test** is done (read-only; 8.2 million tokens). Its report, brief and scripts are in `studies/subjects/S-02/`. Its verdict is **partly feasible:**
 - **Within each platform,** the structures say which permission gates which page.

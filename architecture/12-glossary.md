@@ -2,7 +2,7 @@
 
 The words Sharrwah's decision records rely on, each with its extent: what it covers and what it leaves out (`METHOD.md` sections 4 and 6; amendments 2 and 3). A record uses a term only as far as its own Terms table says. When a term's meaning changes here, the records that use it go under review (`METHOD.md` section 10).
 
-**How an entry reads.**
+**How an entry reads.** The glossary is the family's dictionary of terms (Coplien, Hoffman and Weiss 1998): what each word means in every market, and what the references show. A decision's outcome stays in its record, and an entry names the record. So a decision, or a market's setting, can change without changing a word's meaning.
 - **Here** is the term's meaning in Sharrwah's records. Where Sharrwah coins a term, a record defines it, and that is a decision, not a claim.
 - **Shopify** and **Salla** give each platform's own names and structures. These are facts, each with its source.
 - *Interpretation* and *Assumption* mark what is not a fact (`METHOD.md` section 6). *Open* marks what the held evidence doesn't settle, with what would settle it.
@@ -46,7 +46,7 @@ The evidence repositories are read at observed-sh `febbf6c` (20 October 2026) an
 - **Used by:** D-001, D-004.
 
 ### seller's own account
-- **Here:** an account the seller holds with a provider or courier under its own agreement, into which that provider or courier receives or settles the buyer's payment. The seller links it to Sharrwah with its own credentials, keys, account number or account email, or by installing the provider's own app. It is option C of D-001. Under D-001's choice 1 it stays the seller's own when the seller asked for it through Sharrwah, unless Sharrwah is party to the money or to the provider's agreement for it. A bank account that only receives payouts from a platform balance, or from an account held through Sharrwah, is not C. See *held through Sharrwah* for where C ends and B begins.
+- **Here:** an account the seller holds with a provider or courier under its own agreement, into which that provider or courier receives or settles the buyer's payment. The seller links it to Sharrwah with its own credentials, keys, account number or account email, or by installing the provider's own app. A bank account that only receives payouts from a platform balance, or from an account held through Sharrwah, is not one. Where it ends and an account held through Sharrwah begins: *held through Sharrwah*. Which arrangements Sharrwah builds: D-001.
 - **Shopify:** "Enter your account credentials for the provider that you selected." (`HC:payments/third-party-providers/configuring-providers.md:32`)
 - **Salla:** a gateway: "you need the Secret Key from your Moyasar merchant account" (`SA-en:318`). PayPal is linked by its email: "the email address for your PayPal account in the field provided" (`SA-en:793`). A carrier: "The connection is made once the contract between the two parties is in place and your account number is linked in Salla." (`SA-en:277`). Another is linked by installing its app: "To connect Torod on Salla, click All in the main menu, then open the App Store" (`SA-en:1181`).
 - **Used by:** D-001, D-004.
@@ -69,17 +69,17 @@ The evidence repositories are read at observed-sh `febbf6c` (20 October 2026) an
   D-002 (element 3) defines it, and D-003 keeps sums apart by it as posted. Later changes of custody, such as a courier settling, are in payments' custody records.
 - **Shopify:** no field names one. Cash taken at the counter is tracked per drawer: "Tracks the balance in a cash drawer for a point of sale device over the course of a shift." (`GQL:318`)
 - **Salla:** keeps cash collected on delivery apart in a balance, which "Shows confirmed COD payments collected from customers." (`SA-en:1240`). With a carrier under the seller's own contract, the carrier holds the cash until it transfers it, and may first deduct its own invoices from it: "If there are cash on delivery amounts held for you, the invoice total is deducted from them." (`SA-en:277`)
-- *Interpretation:* neither platform names a custodian on each payment. Sharrwah does because, under C, the money for one store's orders sits with several parties at once.
+- *Interpretation:* neither platform names a custodian on each payment. Sharrwah does because the money for one store's orders can sit with several parties at once.
 - **Used by:** D-002, D-003.
 
 ### platform balance
-- **Here:** money a platform keeps for a seller in a balance: from its own payment service, from cash on delivery that its own shipping labels collect, or from money sellers pay in. The first two hold sellers' money through the platform. Money a seller pays in, as Salla's wallet lets a seller "Add funds" (`SA-en:1240`), is the seller's own funds, past where *sellers' money* ends; a platform holding it is like A. None is built at launch (D-001, choice 3 for money sellers pay in).
+- **Here:** money a platform keeps for a seller in a balance: from its own payment service, from cash on delivery that its own shipping labels collect, or from money sellers pay in. The first two hold sellers' money through the platform. Money a seller pays in, as Salla's wallet lets a seller "Add funds" (`SA-en:1240`), is the seller's own funds, past where *sellers' money* ends; a platform holding it is like A. Whether Sharrwah keeps any: D-001.
 - **Shopify:** `ShopifyPaymentsAccount`, which "Tracks current balances across all supported currencies, payout schedules" (`GQL:3193`). Shopify Balance is a different product: "Shopify Balance is a money management account" (`HC:finance/shopify-balance.md:3`), in area A-13.
 - **Salla:** "three main balances:" "Store balance", "Electronic payments balance" and "Cash on Delivery (COD) payments balance" (`SA-en:1240`). The store balance is "Used for internal store services, such as:" "Auto-renewing your subscription plan" (`SA-en:1240`).
 - **Used by:** D-001.
 
 ### settlement and payout
-- **Here:** settlement is when a provider credits a payment to the seller's account with it. A payout moves money from a balance to the seller's bank account. Under C each provider does both on its own terms, and Sharrwah sends no payouts (D-004).
+- **Here:** settlement is when a provider credits a payment to the seller's account with it. A payout moves money from a balance to the seller's bank account. Whoever holds the money does both, on its own terms. Who that is: D-001 and D-004.
 - **Shopify:** "The interval at which payouts are sent to the connected bank account." (`GQL:3229`); "Settlement times vary by country, risk level, and the transaction type." (`HC:payments/shopify-payments/payouts/payout-timing.md:35`). For other providers it shows none: "If customers pay using third-party payment gateways, then you can't view payout information in your Shopify admin." (`HC:payments/getting-paid.md:13`)
 - **Salla:** "Your payout cycle is how often the money you've earned through electronic payments on your store's orders is transferred to your bank account." (`SA-en:807`). The account is set at verification: "It is used to transfer your dues from Salla to your bank account" (`SA-en:9`).
 - **Used by:** D-001, D-002, D-003, D-004, D-005.
@@ -91,20 +91,20 @@ The evidence repositories are read at observed-sh `febbf6c` (20 October 2026) an
 - **Used by:** D-002, D-003, D-004.
 
 ### Sharrwah's fees
-- **Here:** what Sharrwah charges a seller. Under D-001's choice 2 these, and anything owed to Sharrwah or its partners, are billed apart from sellers' money at launch, and not taken from it by a provider at settlement. Taking them at a provider stays reserved, the founder's decision in a record of its own. C alone leaves this open. Which fees, and their prices, are left to S-03 (area A-03).
+- **Here:** what Sharrwah charges a seller, with anything a seller owes Sharrwah or its partners. They are collected in one of two ways: billed apart from sellers' money, or taken from it where it is held. How Sharrwah collects them: D-001, choice 2. Which fees, and their prices: S-03 (area A-03).
 - **Shopify does both, by who holds the money.**
   - From its own payment service it deducts: "Shopify Payments credit card processing fees aren't included in these charge types, because they're deducted from your payouts rather than billed on your Shopify bill." (`HC:your-account/manage-billing/billing-charges/types-of-charges.md:12`). Shopify Capital, which "offers loans to merchants in the United States" (`HC:finance/shopify-capital/united-states.md:3`), is repaid "from a daily percentage rate of your daily sales" (`HC:finance/shopify-capital/united-states.md:9`); for loans accepted from 9 March 2026, "your loan repayments are collected directly from your Shopify Payments balance instead of being debited from your bank account" (`HC:finance/shopify-capital/united-states.md:131`).
   - Where other providers hold the money, it bills apart: "you're charged third-party transaction fees for all orders that aren't brokered financially by Shopify" (`HC:payments/getting-paid.md:11`), on its bill, "Third-party transaction fees on your Shopify bills" (`HC:your-account/manage-billing/billing-charges/types-of-charges/third-party-charges/third-party-transaction-fees.md:1`); "Transaction fees don't apply for POS orders or for manual payment methods" (`HC:your-account/manage-billing/billing-charges/types-of-charges/third-party-charges/third-party-transaction-fees.md:23`). Capital's repayments are debited from "The external bank account that you set up in your Shopify Capital settings (for non-Shopify Payments users)." (`HC:finance/shopify-capital/united-states.md:179`)
   - Its bills are paid by card, PayPal and others, including "your Balance card" for a seller with a Shopify Balance account (`HC:your-account/manage-billing/paying-your-bills/making-payments/payment-methods-for-bills.md:30`).
   - Partners' charges: Shopify puts apps' charges on its bill, "App charges on your Shopify bills" (`HC:your-account/manage-billing/billing-charges/types-of-charges/third-party-charges/app-charges.md:1`); a subscription charge "is included in your regular Shopify subscription bill" (`HC:your-account/manage-billing/billing-charges/types-of-charges/third-party-charges/app-charges.md:5`).
-- *Interpretation:* the held evidence shows Shopify taking fees and repayments from sellers' money only where its own service holds it. Taking them at another provider would need that provider's support; D-001 reads an agreement Sharrwah is party to for it as B (choice 1).
+- *Interpretation:* the held evidence shows Shopify taking fees and repayments from sellers' money only where its own service holds it. Taking them at another provider would need that provider's support, under an agreement the platform is party to (*held through Sharrwah*).
 - **Salla:** invoices the VAT on its own payment service's processing fees: "Payment processing fees VAT is included in the monthly Purchase Invoice issued by Salla." (`SA-en:143`). Those are provider fees of Salla's own service, so this is a precedent for invoicing apart, not for a platform's own fee on sales.
 - **Salla, partners:** apps can take from the wallet Salla keeps for the seller.
   - Dropshipping apps: "This endpoint allows you to temporarily withhold a specific amount of money for settlement from the Merchant's wallet." and "This endpoint is allowed only for dropshipping applications." (`SAPI:64`).
   - Shipping apps: "By installing this app, you authorize Salla to hold the shipping waybill amounts from your wallet balance and transfer them to the carrier on your behalf" and "When a shipping waybill is created, its value is automatically held from your electronic payments balance." (`STR:apps.json`).
   - A partner app's terms at install, the "Agreement to Salla’s Holding Management Policy": "you authorize Salla to transfer any funds related to your transactions within the partner app" (`STR:apps.json`).
   - Salla's financing for sellers, through a fund run with a partner, collects from the money Salla holds: "Collection amounts are calculated from net Mada and credit card sales after payment fees and VAT on fees." and "A 25% collection amount is calculated from the net sales of each payment, and the remaining amount is transferred to your bank account." (`STR:payments.json`); "يُحسب مبلغ التحصيل من صافي مبيعات مدى والبطاقات الائتمانية" (`STR-ar:payments.json`). Whether 25% holds for every financing isn't stated.
-  - In D-001's terms each needs a balance Sharrwah holds (A), so each is off at launch.
+  - Each needs a balance the platform holds.
 - **Used by:** D-001, D-003, D-004.
 
 ## Ways to pay
@@ -135,7 +135,7 @@ The evidence repositories are read at observed-sh `febbf6c` (20 October 2026) an
 - **Used by:** D-001, D-002.
 
 ### cash on delivery
-- **Here:** the buyer pays cash when the order is delivered, to a courier or to the seller's own staff. Under D-001 a courier under the seller's own contract holds the cash until it settles with the seller under their agreement, and Sharrwah holds none. Cash a courier collects under Sharrwah's own contract with it, whether into a platform balance, as Salla's labels do, or settled to sellers, is held through Sharrwah. It comes to the founder before it goes live (D-001; *held through Sharrwah*).
+- **Here:** the buyer pays cash when the order is delivered, to a courier or to the seller's own staff. A courier under the seller's own contract holds the cash until it settles with the seller under their agreement. Cash a courier collects under the platform's own contract with it, whether into a platform balance, as Salla's labels do, or settled to sellers, is held through the platform (*held through Sharrwah*). Which arrangement Sharrwah builds: D-001.
 - **Shopify:** a manual method: "Common types of manual payments include cash on delivery (COD), money orders, and bank transfers." (`HC:payments/manual-payments.md:5`). The held evidence shows no collection or settlement by Shopify itself (inventory, section 15). Apps fill it: "Cash/Collect on Delivery (COD) Apps" (`HC:intro-to-shopify/initial-setup/sell-in-italy/italy-cash-on-delivery.md:12`).
 - **Salla:** "Cash on Delivery (collected by the shipping company or your own courier)" (`SA-en:565`). Two arrangements:
   - **Salla's own labels:** the cash goes to Salla's cash-on-delivery balance, and Salla transfers it: "The transfer days for cash on delivery balances from shipping companies that support COD via Salla shipping labels are:" (`SA-en:570`); "الأيام المحددة لتحويل رصيد الدفع عند الاستلام من الشركات التي تدعم الدفع عند الاستلام في بوليصات سلة إلى التاجر هي" (`SA-ar:878`). "This feature is currently available only for stores operating within the Kingdom of Saudi Arabia." (`SA-en:570`)
@@ -181,7 +181,7 @@ The evidence repositories are read at observed-sh `febbf6c` (20 October 2026) an
 - **Used by:** D-005.
 
 ### stored value
-- **Here:** value a buyer holds to spend in one store: gift cards, store credit, a customer's wallet. It is value the seller owes the buyer, not money held for anyone. Whether Sharrwah offers it, and whether it is a payment method or a discount, is left to S-05. A wallet buyers pay money into would hold buyers' money, which no M1 record decides. That would be a founder decision (`METHOD.md` section 3).
+- **Here:** value a buyer holds to spend in one store: gift cards, store credit, a customer's wallet. It is value the seller owes the buyer, not money held for anyone. Whether Sharrwah offers it, and whether it is a payment method or a discount, is left to S-05. A wallet buyers pay money into would hold buyers' money. No record decides it yet.
 - **Shopify:** "A gift card that customers use as a payment method. Stores the initial value, current balance, and expiration date." (`GQL:1672`); "A store credit account contains a monetary balance that can be redeemed at checkout for purchases in the shop." (`GQL:3283`)
 - **Salla:** the customer wallet keeps "Cashback balances" and "Refunded amounts" (`SA-en:36`). A gift card is coupons in a digital product (`SA-en:1066`).
 - *Interpretation:* the held evidence shows stored value credited by the seller, as refunds or cashback, or bought as a product. It doesn't show a buyer paying money into a wallet. Salla's API deposits to a wallet, but "This endpoint will work only if the store has the" wallet application (`SAPI:93`), and doesn't say who deposits.
@@ -260,7 +260,7 @@ The evidence repositories are read at observed-sh `febbf6c` (20 October 2026) an
 ## Legal words (D-004)
 
 ### agency role
-- **Here:** whether Sharrwah is appointed the seller's agent to receive or hold buyers' payments, as the references' clauses do. Sending a provider the seller's instructions with the seller's own keys, such as a capture or a refund, is not an agency role here. That is D-004's definition, not a legal one; whether it holds in law is for counsel at S-08. Under C Sharrwah has none (D-004, row 5).
+- **Here:** whether Sharrwah is appointed the seller's agent to receive or hold buyers' payments, as the references' clauses do. Sending a provider the seller's instructions with the seller's own keys, such as a capture or a refund, is not an agency role here. That is D-004's definition, not a legal one; whether it holds in law is for counsel at S-08. Whether Sharrwah takes one: D-004, row 5.
 - **The references,** from the pilot's variation point S01-VP-06 (`studies/subjects/S-01/variation-points.tsv`, quotes checked in the pilot):
   - Shopify: "appoint us as your agent";
   - Stripe, behind WooPayments: "appoints Stripe as User’s agent";
@@ -270,6 +270,6 @@ The evidence repositories are read at observed-sh `febbf6c` (20 October 2026) an
 - **Used by:** D-004.
 
 ### security interest
-- **Here:** a right a platform or processor takes over a seller's funds, to secure what the seller owes it. Under C Sharrwah takes none (D-004, row 12).
+- **Here:** a right a platform or processor takes over a seller's funds, to secure what the seller owes it. Whether Sharrwah takes one: D-004, row 12.
 - **The references,** from S01-VP-10: Shopify, "first priority lien and security interest"; Stripe, "a lien over all funds".
 - **Used by:** D-004.
