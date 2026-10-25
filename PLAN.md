@@ -11,11 +11,11 @@ Sharrwah is one platform for many markets. Yemen is its first market, not its de
 - **One platform, many markets.** The platform is built once and each market is set up on it: product line engineering (Pohl, Böckle & van der Linden 2005).
 - **Hide what is likely to change.** Each decision likely to change sits behind its own module (Parnas 1972).
 - **Effort follows risk.** Analysis effort goes where a wrong decision costs most (Fairbanks 2010; Boehm 1988), and each decision is taken at the last responsible moment (Poppendieck & Poppendieck 2003).
-- **The guard on the first market.** The founder asked for a "very visible guard" against Yemen being "used to define the hard to change product decisions" ([24 October](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/4923e1c96a0296abdaf3f5bdbd8c155e09acfebf/founder-messages/2026-10-24-method-accepted.md?plain=1#L48)). So each subject's analysis is made from the references before Yemen's marks (Stage 4), a gap only Yemen shows is written without Yemen's name (section 6, step 5), and each decision page says whether its recommendation comes out the same without Yemen, as Decision 1's does.
+- **The guard on the first market.** The founder asked for a "very visible guard" against Yemen being "used to define the hard to change product decisions" ([24 October](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/4923e1c96a0296abdaf3f5bdbd8c155e09acfebf/founder-messages/2026-10-24-method-accepted.md?plain=1#L48)). So each subject's analysis is made from the references before its Yemen row (section 6, step 6), a gap only Yemen shows is written without Yemen's name (section 6, step 5), and each decision page says whether its recommendation comes out the same without Yemen, as Decision 1's does.
 
 **The safe shore.** This plan ends when:
 1. every subject in scope has its variation points, each with the variants the five references show, their evidence, their cause and how they coexist;
-2. every Yemen case is marked against every subject;
+2. every decision in scope has its Yemen row: what each option needs in Yemen today, and whether that exists;
 3. every existing question row is placed against a subject, or listed as unplaced with its reason;
 4. a decision register states, for each subject, what follows by engineering rule and what the founder decided or deferred;
 5. nothing in the register rests on a derived document, or on the founder's words taken as evidence of what a platform does.
@@ -26,7 +26,7 @@ Then the design of the first version starts, under its own plan. It is designed 
 
 - **Q1's question stands, but "done" changes.** Done no longer means every concern on every placement on every platform. It means every subject in scope. The five platforms' inventories, concerns and 8,191 statements stay as they are and become the index the subjects draw from. Known practice scopes analysis by what will be built and by risk (Schmid 2002; Clements & Northrop 2001).
 - **The test form becomes the main instrument.** It runs per subject, with matching and gap-closing inside the subject. It no longer waits for a full re-match.
-- **Q2 splits.** Its first step, Yemen's axes and cases, runs early (Stage 1). Its marks run per subject, after the subject's analysis.
+- **Q2 splits.** Its first step, Yemen's axes and cases, runs early (Stage 1). Its marks ran in the pilot. From Stage 4, one Yemen row per decision replaces them, after the subject's analysis (section 6, step 6; the founder, 25 October).
 - **Q3 runs once, at close-out.** It reconciles the existing rows against the finished register (Stage 5). The rows never feed a subject's analysis.
 - **Retired:** the 84 unclear matches, unreviewed. The 88 matches stay only as hints for scoping.
 - **Gaps** are closed only where a subject needs them. Before a gap goes to anyone, its route is checked against what is held.
@@ -107,7 +107,7 @@ Gate G0 comes first: the founder's go on this plan. Stages 0 and 1 don't depend 
 
 ### Stage 1. Yemen's axes and cases
 
-*Done on 17 October 2026, in `studies/yemen-cases/`. Its independent review found errors in `today` on 12 of 45 sampled axes, and later checks found ten of its records that need a correction or a caution: [`corrections.md`](studies/yemen-cases/corrections.md). This is Q2's first step, run on its own.*
+*Done on 17 October 2026, in `studies/yemen-cases/`. Its independent review found errors in `today` on 12 of 45 sampled axes, and later checks found ten of its records that need a correction or a caution: [`corrections.md`](studies/yemen-cases/corrections.md). This is Q2's first step, run on its own. Since 25 October 2026 no more work goes into it: it is a reference, read only for the facts a Yemen row needs, with `corrections.md`.*
 
 - It finds the axes Yemen varies along, and builds the cases on them, with today as the anchor case. It uses Yemen evidence only, as Q2 says.
 - Where an axis has no evidence, the case is marked unknown, not inferred. The founder's capture list says what would show it.
@@ -163,19 +163,18 @@ Gate G0 comes first: the founder's go on this plan. Stages 0 and 1 don't depend 
     - finding 36, a variant that names only what doesn't fill the role;
     - finding 29, whether WooCommerce's policy pages are terms;
     - step 5's letter rows, which no longer separate the variation points once letters join;
-  - a variant with no stated condition: phase D can't show that it fails, so its mark can only be `unknown` ([its method report, section 8](studies/subjects/S-01/method-report.md#8-phase-d-marking-the-subject-in-yemens-cases));
   - what the checker reports on the pilot with the scripts as they now stand, and did not report at G1 (`method/check_subject.py`, given every capture run in `evidence/product-class/runs/`, run on a copy of the pilot's folder, since it rewrites the subject's `kinds.tsv`):
     - three Salla gaps routed to the founder whose page is held (S01-SA-G01, G03 and G07);
     - five statements whose source kind changes (S01-WC-078 to 080, S01-BC-123 and 124).
-- Each subject goes through the pilot's five steps. Its files go in `studies/subjects/<id>/`. The pilot's own changes apply ([its method report, "Proposed changes before more subjects"](studies/subjects/S-01/method-report.md#proposed-changes-before-more-subjects)):
+- Each subject goes through the pilot's five steps, with its Yemen row in place of the Yemen marks (section 6, step 6). Its files go in `studies/subjects/<id>/`. The pilot's own changes apply ([its method report, "Proposed changes before more subjects"](studies/subjects/S-01/method-report.md#proposed-changes-before-more-subjects)):
   - **Scoped to its decisions first.** The subject names its few root decisions, from the platforms' own top-level statements. Its variation points are the facets that can change one of them, and the rest stay as notes (section 6, step 1). Phase C marks which of the founder's items depend on which (its method report, section 10).
   - **From what is recorded.** Variants come first from the statements the concern map and the pilot already hold. New reading happens only where a decision needs it.
   - **Short agent runs.** Each brief caps its steps and asks for small outputs. Mechanical steps are scripts. An agent's cost is measured after its first steps (`method/count_tokens.py`), and a run whose projection passes its share of the budget is stopped.
   - **A budget per subject,** set before it starts from the last subject's measured cost, and recorded in `STATE.md`.
   - **Depth by risk.** The analysis goes deep where a decision is both expensive to change and uncertain, and runs a light check where the references agree and Yemen's facts don't bear on it.
   - **Shopify and Salla first.** Their held evidence is the deepest (risk 5), so they are read first and in full. Zid, WooCommerce and BigCommerce come from what the concern map and the pilot recorded, and are read further only where a cause or a gap needs them. The founder asked for others "only when a specific question requires them" ([24 October](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/4923e1c96a0296abdaf3f5bdbd8c155e09acfebf/founder-messages/2026-10-24-method-accepted.md?plain=1#L42)); a cause by comparison is such a question (section 6, step 3).
-  - **The pilot's other lessons** (its method report, sections 4 and 9): gaps that ask one question of different sources are audited together; and in Stage 1, an exclusion such as "only" states a second fact, so it gets its own condition.
-  - **Yemen's facts checked before they are marked.** Every Yemen fact a subject's marks rest on is checked against its quotes, and against Stage 1's corrections, before phase D marks it. Phase D reads each part of `today` with its date. Before the next subject's phase D, Stage 1 gets its `within` relation between places, and a faithfulness pass over the axes that subject bears on.
+  - **The pilot's other lessons** (its method report, sections 4 and 9): gaps that ask one question of different sources are audited together; and a Yemen fact with an exclusion such as "only" is read as two facts, since the exclusion states a second one.
+  - **Yemen's facts checked before a Yemen row uses them.** Each fact is read with its date and with Stage 1's corrections, and checked against its source's quote. Stage 1 gets no `within` relation and no faithfulness pass: a fact is checked when a row uses it.
 - Each subject ends with:
   - a commit;
   - an update to `STATE.md`;
@@ -218,7 +217,7 @@ G1 was answered on 18 October with a re-frame. On 25 October the founder reset t
 
 **What a decision item looks like.** It takes the form of an architecture decision record (Nygard 2011):
 - the question in one line, and why it is the founder's;
-- the evidence: each platform's statement, quoted and cited, and Q2's marks for the Yemen cases;
+- the evidence: each platform's statement, quoted and cited, and the decision's Yemen row;
 - the options, each with what it needs built and what it needs from outside, such as a licence, a partner or money;
 - the coordinator's recommendation and its reason;
 - the answer: an option, or **defer**. Defer is always allowed. The variation point stays open and is set per market, at the build cost the item states.
@@ -274,7 +273,8 @@ These rules are settled, each from the source named, unless the founder objects 
      - if expensive to change, the founder decides, on a recommendation;
      - if cheap to change, it is left to the build;
    - maturity or unknown, when expensive to change: kept open as a variation point until evidence settles it;
-   - a Yemen case with no placement: a product gap, written without Yemen's name (Q2's rule 3), and a design decision for the founder.
+   - a need the Yemen row shows that no reference meets: a product gap, written without Yemen's name (Q2's rule 3), and a design decision for the founder.
+6. **The Yemen row,** after the analysis (the founder, 25 October). For each decision, it says what each option needs in Yemen today, and whether that exists: a provider, a partner, a licence, a way to pay. Each fact comes from Stage 1's records, read with its date and with `corrections.md`, and is checked against its source's quote before it is used. A fact with no evidence is marked unknown, not inferred. Q2's scenarios are used only where a decision depends on a condition that is changing.
 
 **Options beyond the references.** Where a recommendation needs more than the references show, established designs and engineering writing are read for that decision. Each is weighed by its kind of source: a company's blog is that company's own account (choosing design concepts: Cervantes & Kazman 2016). This is what the founder called "buying architectural intelligence" ([24 October](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/4923e1c96a0296abdaf3f5bdbd8c155e09acfebf/founder-messages/2026-10-24-method-accepted.md?plain=1#L28)).
 
@@ -319,7 +319,7 @@ Both sets, by the founder's choice: the 81 payment rows and the Knowledge Map's 
 | 7 | Evidence changes mid-work: the founder's new commits, or a platform changes a page | New commits touch cited paths | The subjects whose citations changed are listed, and only those re-run |
 | 8 | A session loses its context, the container resets, or a usage limit cuts a step | Designed for in advance | Every step resumes from the repository; `STATE.md` is updated at every checkpoint, with a commit per subject |
 | 9 | The founder becomes the bottleneck | An item reaches the founder with no decision attached | It doesn't reach them; each gate brings only decisions, each with a recommendation |
-| 10 | Yemen evidence is thin, or only reachable from inside Yemen | An axis or case with no evidence | It is marked unknown, not inferred; the capture list says what to capture and why |
+| 10 | Yemen evidence is thin, or only reachable from inside Yemen | A fact a Yemen row needs has no evidence | It is marked unknown, not inferred; the capture list says what to capture and why |
 | 11 | A reading of terms becomes legal advice | A statement taken as what Sharrwah must do | Quotes only. Sharrwah's legal position is a company question, for the founder with a lawyer |
 | 12 | An agent misreads: the quote is right but the meaning wrong | The independent review disagrees | The source is re-read, and the disagreement is recorded |
 | 13 | The frame is wrong after all | The pilot entry lets the founder decide nothing; errors keep coming from the method | Nothing scales; the frame is re-examined at G1, with evidence |
@@ -479,3 +479,9 @@ A dated log. Where an entry differs from a later one, the later holds, and the s
   - **Stage 1's faithfulness pass over every axis before Stage 4** guarded every axis. Weakened to the axes each subject bears on, before its phase D. Accepted: an axis no subject bears on binds nothing.
   - **All five references read alike** guarded against taking one market's pattern for a rule. Weakened: Zid, WooCommerce and BigCommerce come from what is recorded, and are read further where a cause needs them, so every cause still compares all five.
 - **25 October 2026, after the reset's two cold-start tests:** wording made consistent with the founder's decisions, the checkers named, and history's links defined as pinned links in any working file. Two decisions of the founder's of 24 October that the reset had dropped without saying so are carried, since they hold: the guard on the first market (section 1) and Shopify and Salla first (Stage 4). "Buying architectural intelligence" is attributed to the founder (section 6). The pilot's lessons it hadn't carried are added (Stage 4).
+- **25 October 2026, Yemen's scenarios cut,** with the founder's go, on the pilot's evidence. Its 183 Yemen marks, against 30 scenarios, moved no result ([its method report, section 8](studies/subjects/S-01/method-report.md#8-phase-d-marking-the-subject-in-yemens-cases)). Stage 1 cost about 1.5 billion tokens ([section 12](studies/subjects/S-01/method-report.md#12-what-a-subject-costs)), and Decision 1 used 15 of its 743 axes and constants. Changed: the safe shore's item 2 and the guard (section 1), Q2's marks (section 2), Stage 1's note and Stage 4 (section 4), the decision item (section 5), the test form's steps 5 and 6 (section 6), and risk 10 (section 7).
+
+  **What this change removes or weakens,** with the risk each part controlled:
+  - **Marking every subject against every Yemen scenario** showed, before it happened, whether a change in Yemen would rule an option in or out. Accepted: options stay switchable per market, so such a change is a setting, not a redesign. A scenario is still used where a decision depends on a condition that is changing.
+  - **Stage 1's `within` relation and faithfulness pass before each subject** guarded every axis a subject bore on. Replaced: each fact is checked against its quote when a Yemen row uses it.
+  - **The pilot's open item on variants with no stated condition** existed only because phase D had to show each variant fail. Removed with phase D's marks.

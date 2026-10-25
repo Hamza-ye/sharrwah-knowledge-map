@@ -14,7 +14,7 @@
 [`CLAUDE.md`](../CLAUDE.md), which every agent reads first, lists the working files and what each is:
 - [`PLAN.md`](../PLAN.md): the plan, which says how the work is done. It works within your decisions.
 - [`STATE.md`](../STATE.md): where the work is, and the next step.
-- [`founder-decisions.tsv`](../founder-decisions.tsv): your 13 decisions in force. They decide what Sharrwah does, and where the plan differs from one, the decision holds.
+- [`founder-decisions.tsv`](../founder-decisions.tsv): your decisions in force. They decide what Sharrwah does, and where the plan differs from one, the decision holds.
 - The evidence, which is the only authority on facts.
 - The inputs the plan names:
   - the concern map;
@@ -49,7 +49,7 @@
 - **The guard on the first market** ([section 1](../PLAN.md#1-the-aim-and-the-safe-shore)).
   - You asked for a "very visible guard" against Yemen being "used to define the hard to change product decisions" ([your message](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/4923e1c96a0296abdaf3f5bdbd8c155e09acfebf/founder-messages/2026-10-24-method-accepted.md?plain=1#L48)).
   - The plan now names it in three parts:
-    - each subject is analysed from the references before Yemen's marks;
+    - each subject is analysed from the references before Yemen is looked at;
     - a gap only Yemen shows is written without Yemen's name;
     - each decision page says whether its recommendation comes out the same without Yemen, as Decision 1's does.
 

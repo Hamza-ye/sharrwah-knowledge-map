@@ -18,7 +18,7 @@
 3. **Decision 1,** when the founder answers. Record the answer in `founder-decisions.tsv`, gate G1. What follows from each answer is on its page, under "What follows from your answer".
 4. **Stage 4, the highest-ranked subject on the list after S-01,** once step 1 is done and G2 is answered. If it depends on Decision 1's answer, it waits for it (`PLAN.md`, section 8).
    - Its budget is fixed before it starts and recorded here. It is set from the pilot's measured cost: about 1.03 billion tokens in all, and about half a billion for a run without its rework, by its method report's estimate (section 12, and its proposed changes).
-   - Before its phase D, Stage 1 gets its `within` relation and a faithfulness pass over the axes the subject bears on (`PLAN.md`, Stage 4).
+   - After its analysis, each of its decisions gets its Yemen row (`PLAN.md`, section 6, step 6).
 
 **In flight:** nothing. No agent is running.
 
