@@ -6,7 +6,7 @@
 - **`PLAN.md`:** the plan, the authority on how the work is done. It works within the founder's decisions.
 - **`STATE.md`:** where the work is, and the next step.
 - **`founder-decisions.tsv`:** the founder's decisions in force. They decide what Sharrwah does, and they bind the plan: where the plan differs from one, the decision holds and the plan is corrected.
-- **`evidence/`, and the evidence repositories observed-sh and observed-sa** (cloned at `/home/user/observed-sh` and `/home/user/observed-sa`): the only authority on facts.
+- **The evidence:** `evidence/`; the evidence repositories observed-sh and observed-sa (cloned at `/home/user/observed-sh` and `/home/user/observed-sa`); and the WooCommerce release that `evidence/product-class/woocommerce-11.2.1/` fixes by checksum (unpacked at `/home/user/woocommerce-release/11.2.1`). They are the only authority on facts. The evidence repositories' own plans and notes, such as their `docs/PLAN.md`, govern their capture work, not this work.
 - **The inputs the plan names:**
   - `studies/concern-map/`: Q1's map, the index subjects draw from;
   - `studies/yemen-cases/`: Stage 1, with its `corrections.md`;
@@ -17,9 +17,9 @@
 - **`reports/`:** reports to the founder.
 
 **Nothing else governs.**
-- The work done after the founder's answer at G1 (18 October 2026), up to the reset (25 October 2026), is history. Its files are not in the working tree: they are at the commit `HISTORY.md` names, so a search of the working files doesn't reach them.
+- The work done after the founder's answer at G1 (18 October 2026), up to the reset (25 October 2026), is history. Its files are not in the working tree: they are at the commit `HISTORY.md` names, so a search of the working files doesn't reach them. The one exception is the pages it captured into `evidence/`, which are evidence like any other.
 - Use history only through a link pinned to a commit in a working file, and only for what that link says it is for.
-- Nothing outside this repository and the two evidence repositories governs, whatever else is on the machine.
+- Nothing outside this repository and the evidence above governs, whatever else is on the machine.
 
 **The coordinating session:**
 - Read `PLAN.md`, `STATE.md` and `founder-decisions.tsv` first, then continue from `STATE.md`'s next step.

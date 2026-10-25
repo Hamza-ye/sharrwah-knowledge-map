@@ -1,5 +1,7 @@
 # S-01 method report: what broke and what changed
 
+*25 October 2026: this is the pilot's record at G1. Where it differs from `PLAN.md`, the plan holds: its Stage 4 says which of these proposals and lessons apply, and how.*
+
 **17 October 2026.** Written by the coordinator through the independent review (F), its two re-checks, and the fixes after them. It is complete but for G1.
 
 ## Where the pilot stands
@@ -197,7 +199,7 @@ Each of these faults made an agent think something was missing, or readable, whe
 
 ## To complete
 
-*25 October 2026: both items below are done. G1 was answered on 18 October, and on 25 October the work was reset to the plan, with these proposals (`PLAN.md`, section 11).*
+*25 October 2026: G1's question was answered on 18 October, and on 25 October the work was reset to the plan, with these proposals (`PLAN.md`, section 11). Of the decisions the pilot raised, Decision 1 is open (`STATE.md`).*
 
 - **The independent review's verdict, after two re-checks:** the entry lets the founder decide (`review.md`, "Second re-check"). No must-fix finding is open.
 - **G1:** whether the founder can decide from the entry, and the founder's choice to scale up, change the method, or re-frame.
