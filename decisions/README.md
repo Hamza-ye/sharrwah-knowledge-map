@@ -81,6 +81,10 @@ Chosen option: "…", because …
 
 How the outcome passes `METHOD.md` section 3a: its type, what it varies by, and why no market's facts shape it.
 
+## Evidence
+
+The sources by id, each outside source with its type in the Knowledge Map's codes, for example "E031 (DECL)", and what that type can't tell where the record leans on it (`register/README.md`, "The source types").
+
 ## Confirmation
 
 How we will know it works: the scenarios it must pass, and when it is reviewed.
@@ -100,5 +104,7 @@ How we will know it works: the scenarios it must pass, and when it is reviewed.
 - each item under **Leaves open** says "Carried:" or "Not carried:", and an accepted record has no item "Not carried" (`METHOD.md` section 6's acceptance rule).
 
 The checks of meaning are not a script's: at the record's level, each term is checked against the paths it cites, and each Scope item against what the record decides.
+
+**Source types** (`METHOD.md` section 5: "Each source is weighed by the Knowledge Map's source types"). Each outside source a record cites, such as Shopify's engineering sources (`E001` to `E040`), has its type in the Evidence section: what it is good for, what it can't tell, and how far to trust it. A platform declaration (DECL) says what a platform intends, not that it behaves so; an engineering blog or talk (LIT) is one company's account. `method/decision_status.py` flags an outside source in the `evidence` field whose type the Evidence section doesn't give. The checker at levels 2 and 3 checks the type and how the record weighs it.
 
 **The evidence standard** (`METHOD.md` section 6; amendment 3). Every claim in a record is a fact, with its source; an interpretation, marked as one (for example "*The coordinator's reading:* …"); or an assumption, marked as one, with what would confirm or refute it. A decision is not a claim: it needs reasons, not a source.

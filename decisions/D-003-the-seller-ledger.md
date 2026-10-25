@@ -55,7 +55,7 @@ The words this record relies on, each defined in the glossary (`architecture/12-
 - The founder's guard of 18 October (`founder-decisions.tsv`, G1).
 
 **Leaves open:**
-- The quality scenarios and their targets, such as reconciliation and audit — S-02. Not carried: the ledger's rules were set before any quality scenario existed. They are judged against the scenarios before this record is accepted, and may change.
+- The quality scenarios and their targets, such as reconciliation and audit — S-02. Not carried: the ledger's rules were set before M2's quality scenarios and the founder's targets existed. *The coordinator's reading:* a target on reconciling with providers' records, or on audit, could change when an entry posts or what keys it. The rules are judged against the scenarios before this record is accepted.
 - How currencies, minor units and rounding are defined — S-04. Carried: amounts are kept in minor units as S-04 defines them, and never converted.
 - Gift cards, store credit and customer wallets — S-05. Not carried: if store credit lives in S-05's own record, nothing here changes. Recording it here would change when an entry posts, since issuing or spending store credit moves no money, and would add the buyer as a counterparty.
 - How Sharrwah's fees are set and billed — S-03. Not carried: a fee charged per sale or refund posts, keyed by the outcome it arises from. A fee with no outcome behind it, such as a subscription (`SA-en:1240`), has no posting key in this record.
@@ -130,8 +130,8 @@ Chosen option: **4, two ledgers, one per owner.** This record decides the order 
 
 ## Evidence
 
-- E031, E032, E034 and E035, in `evidence/shopify-engineering/finding-aids/20261010-shopify-engineering-sources.tsv`: Shopify's idempotency, for payments-app requests and for creating refunds.
-- E040, Active Merchant, pinned at commit `ca45b1b`.
+- E031, E032, E034 and E035 (DECL: Shopify's own developer docs and changelog), in `evidence/shopify-engineering/finding-aids/20261010-shopify-engineering-sources.tsv`: Shopify's idempotency, for payments-app requests and for creating refunds.
+- E040 (OSS), Active Merchant, pinned at commit `ca45b1b`.
 - The seam's rule 19, and where it places the ledgers (seam.md:49, 156–157, 163).
 
 ## Confirmation
@@ -146,6 +146,6 @@ Chosen option: **4, two ledgers, one per owner.** This record decides the order 
 **Checks:** level 2. The independent review is in `decisions/checks/D-002-D-003-review.md`, with what was done about each finding in `decisions/checks/D-002-D-003-dispositions.md`.
 
 **Gaps:**
-- **It depends on D-002,** which stays proposed until the first providers are walked through it. This record is accepted no earlier than D-002 (`depends_on`).
+- **It depends on D-002,** which stays proposed until it is walked through M2's quality scenarios and the first providers, and S-05, S-06, S-07, S-10 and S-11 decide its items not carried. This record is accepted no earlier than D-002 (`depends_on`).
 - **How a provider reports a corrected line:** whether with the same reference, a new one, or a reversal. The work: read it in the first providers' documented interfaces, in the same walkthrough as D-002.
 - **Lost disputes and chargebacks,** and fees with no sale behind them (Leaves open). The work: decided with S-07's providers and S-03's billing, and this record revised to carry them before it is accepted.

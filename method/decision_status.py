@@ -7,7 +7,9 @@
 # - each top-level item under **Leaves open** names a subject in the backlog (S-nn), and says "Carried:" or
 #   "Not carried:"; an accepted record has no item not carried (METHOD.md section 6's acceptance rule);
 # - each record in its depends_on field exists, and it is not accepted before them;
-# - each record id under **Takes as given** is accepted or in its depends_on field.
+# - each record id under **Takes as given** is accepted or in its depends_on field;
+# - each outside source in its evidence field (E001 to E040, evidence/shopify-engineering/) has its source type,
+#   in the Knowledge Map's codes, on a line of its Evidence section (METHOD.md section 5; register/README.md).
 # The meaning of a term and the extent of a scope are checked at the record's level, not by this script.
 #
 # With --guard it runs METHOD.md section 3a's market guard instead:
@@ -31,6 +33,8 @@ RECORDS = os.path.join(SKM, "decisions", "D-*.md")
 GLOSSARY = os.path.join(SKM, "architecture", "12-glossary.md")
 SUBJECT_ID = re.compile(r"\bS-\d\d\b")
 RECORD_ID = re.compile(r"\bD-\d{3}\b")
+OUTSIDE_ID = re.compile(r"(?<![\w-])E\d{3}\b")
+SOURCE_TYPE = re.compile(r"\b(DECL|SHIP|OBS|IDX|REF|OSS|STD|LAW|PROV|ECO|LIT|PRAC|EXP|DEC)\b")
 MARKET = re.compile(r"\b(Yemen|Yemeni|Sana'?a|Aden|rials?|YER|Oman|Omani|Saudi|KSA|riyals?|UAE|Emirati|Egypt|Egyptian)\b"
                     r"|اليمن|صنعاء|عدن|ريال|عمان|السعودية")
 MARKET_CONTEXT_ID = re.compile(r"^Y[A-Z]-\d+")
@@ -109,7 +113,7 @@ def status():
     if records:
         print("  by status: " + ", ".join(f"{k} {v}" for k, v in sorted(rc.items())))
     faults = terms_scope(records, {s["id"] for s in subjects})
-    print(f"Terms and Scope: {len(faults)} faults")
+    print(f"Terms, Scope and source types: {len(faults)} faults")
     for fault in faults:
         print(f"  {fault}")
     return 1 if (missing or twice or bad or faults) else 0
@@ -171,6 +175,15 @@ def terms_scope(records, subject_ids):
                 for d in RECORD_ID.findall(text):
                     if d != rid and d not in deps and not status_of.get(d, "").startswith("accepted"):
                         faults.append(f"{rid}:{n}: takes {d} as given, but {d} is neither accepted nor in depends_on")
+        typed = set()                          # outside sources named on an Evidence line that gives a type
+        for n, line in secs.get("Evidence", []):
+            if SOURCE_TYPE.search(line):
+                typed |= set(OUTSIDE_ID.findall(line))
+                for a, b in re.findall(r"(?<![\w-])E(\d{3}) to E(\d{3})\b", line):
+                    typed |= {f"E{k:03d}" for k in range(int(a), int(b) + 1)}
+        for e in OUTSIDE_ID.findall(f.get("evidence", "")):
+            if e not in typed:
+                faults.append(f"{rid}: outside source {e} has no source type in its Evidence section (register/README.md)")
     return faults
 
 

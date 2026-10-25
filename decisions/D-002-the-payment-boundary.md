@@ -16,7 +16,7 @@ date: 2026-10-24
 
 # The payment boundary between the order side and payments
 
-**Where it starts.** The payment seam's contract, version 0 (`8946887:studies/payment-seam/seam.md`, written on 10 October; below, "seam.md" with its line numbers). It came out of the founder's direction F-06, that payments are a concern of their own (`8946887:decisions/founder.md`; restored in `founder-decisions.tsv`). This record is that contract after the market guard and an independent review (`decisions/checks/D-002-D-003-review.md`).
+**Where it starts.** The payment seam's contract, version 0 (`8946887:studies/payment-seam/seam.md`, written on 10 October; below, "seam.md" with its line numbers). It came out of the founder's direction F-06, that payments are a concern of their own (`8946887:decisions/founder.md`; restored in `founder-decisions.tsv`). That direction came from the early studies and is no premise for this record (the founder, 25 October): a line of payments' own rests on the references (Terms, *payments side*) and on the drivers below. This record is that contract after the market guard and an independent review (`decisions/checks/D-002-D-003-review.md`).
 
 **What it answers.** KM-PAY-01, how a payment method plugs in, and KM-PAY-02, payment states and how they drive the order's payment status (`register/km-questions.tsv`).
 
@@ -36,7 +36,7 @@ The words this record relies on, each defined in the glossary (`architecture/12-
 | Term | What this record relies on it to cover | Sources |
 | --- | --- | --- |
 | order side | The parts of Sharrwah that deal with what a buyer owes and why, as a whole; how they divide is S-05's | `GQL:2306` (nearest) |
-| payments side | The part behind the boundary, called "payments" here; F-06's concern of its own | `founder-decisions.tsv` (F-06); `CLI:70`–`CLI:75`; E030 to E032 |
+| payments side | The part behind the boundary, called "payments" here, as both references keep payment providers apart from orders | `HC:payments/getting-paid.md:3`; `GQL:2447`; `SA-en:24`; `SA-en:807`; `SAPI:208`; `CLI:70`–`CLI:75`; E030 to E032 |
 | payment boundary | The line between the two, and the seven elements that cross it | This record |
 | payment method | Kinds 1 and 2 of the glossary. Stored value is S-05's (Leaves open) | `HC:payments.md:3`; `SA-en:807`; `GQL:1672`; `SA-en:1066` |
 | payment provider | The company that processes or receives a payment for a method. Only a provider Sharrwah integrates with sends outcomes on its own record. A bank that only receives a transfer, with no integration, sends none, and its payments are manual | `HC:payments/getting-paid.md:3`; `SA-en:24`; `SA-en:565` |
@@ -70,7 +70,6 @@ The words this record relies on, each defined in the glossary (`architecture/12-
 
 **Takes as given:**
 - D-001's outcome: C at launch, with A and B reserved (in `depends_on`).
-- F-06, payments as a concern of their own (`founder-decisions.tsv`).
 - That the rial's two editions are not part of the core: G1's B7, the founder's intent, which F-03's row records as prevailing (`founder-decisions.tsv`, F-03). And the market guard (`founder-decisions.tsv`, "Yemen in the design"; `METHOD.md` section 3a).
 
 **Leaves open:** this record stays proposed, as the working basis, until the items not carried are decided by their subjects and it is revised to carry them.
@@ -84,7 +83,7 @@ The words this record relies on, each defined in the glossary (`architecture/12-
 - Payment terms and invoices paid later for business buyers (area A-23) — S-11. Not carried: collecting at the due date by charging a stored card or bank account, as Shopify's B2B action does (`HC:shopify-flow/reference/actions/charge-vaulted-payment-for-b2b-order.md:3`), needs the stored permissions this record reserves. A buyer paying by the due date through a new attempt fits.
 - Selling in person, with cash at the counter or card readers — S-10. Not carried: split payment puts several attempts on one amount owed (`HC:sell-in-person/shopify-pos/payment-management/multiple-partial-payments.md:12`), while element 2's rule for when an order is made names one attempt. Kinds such as Shopify's CHANGE or EMV_AUTHORIZATION would be new kinds.
 - A courier's own charges, such as shipping invoices, deducted from cash on delivery it holds (`SA-en:277`) — S-07, with S-05 for shipping. Not carried: neither this record nor D-003 places them.
-- The quality scenarios and their targets, which judge the boundary's elements — S-02. Not carried: the elements were taken from the seam's contract v0 against the drivers held on 24 October, before any quality scenario existed. Each element is judged against the scenarios before this record is accepted, and may change.
+- The quality scenarios and their targets, which judge the boundary's elements — S-02. Not carried: the elements were taken from the seam's contract v0 against the drivers held on 24 October, before M2's quality scenarios and the founder's targets existed. *The coordinator's reading:* a target on how long a payment may stay pending or unknown, or on what checkout does while a provider can't be reached, could change the outcome record (element 3) or the capabilities (element 6); one on adding a provider without changing the order side tests every element. Each element is judged against the scenarios before this record is accepted.
 - Currencies, their minor units and conversion — S-04. Carried: every amount carries its currency as S-04 defines it.
 
 ## Decision drivers
@@ -212,9 +211,9 @@ Payments only reads these.
 ## Evidence
 
 - **Shopify's developer sources:**
-  - E030 to E036, in `evidence/shopify-engineering/finding-aids/20261010-shopify-engineering-sources.tsv`, fetched on 10 October 2026: payments extensions, payments apps and their requests, transaction statuses, idempotency, and the Payment Customization Function;
+  - E030 to E036 (DECL: Shopify's own declarations of its contract with providers. They are authoritative on what the contract intends, not on how it behaves in use, and none of it was observed here), in `evidence/shopify-engineering/finding-aids/20261010-shopify-engineering-sources.tsv`, fetched on 10 October 2026: payments extensions, payments apps and their requests, transaction statuses, idempotency, and the Payment Customization Function;
   - E033's kinds of transaction appear only in the finding aid's description.
-- **E040:** Active Merchant, pinned at commit `ca45b1b`.
+- **E040 (OSS):** Active Merchant, pinned at commit `ca45b1b`. Strong on how adapters to many gateways are built; it can't tell what a platform offers its sellers.
 - **The seam study,** a draft of 10 October. This record takes its contract v0 as option 1, and takes no fact from it unless the fact is traced to a held source above. *The seam's own findings,* not relied on: 178 crossings for Shopify and 81 for Salla; Shopify's provider contract is "one query and 16 mutations, with no order id and no line items", while for Salla "The seam is wider" and "The width comes from Salla holding the money" (seam.md:17–18).
 - **Shopify's and Salla's held structures,** cited by the glossary's short forms (`architecture/12-glossary.md`): the admin schema at observed-sh `febbf6c`, and Salla's help articles, order schema and dashboard strings at observed-sa `4ca2e89`.
 
@@ -227,6 +226,8 @@ Payments only reads these.
 
 **The change scenario:** a second market whose processor holds the funds. It adds B, and the settlement contract beside the seven elements. The elements don't change.
 
+**M2's quality scenarios** (S-02), walked through the seven elements beside options 2 and 3, and beside any design the held engineering writing shows for the same line (E001 to E029, LIT: one company's account). They are written by an agent whose brief names neither this record, D-003 nor the seam, from the founder's targets and the capability map.
+
 **Checks:** level 2. The independent review is in `decisions/checks/D-002-D-003-review.md`, with what was done about each finding in `decisions/checks/D-002-D-003-dispositions.md`.
 
 **Review** when the first two providers are integrated.
@@ -235,4 +236,4 @@ Payments only reads these.
 - **The elements haven't been walked through a provider Sharrwah would integrate.** The work: walk the first two providers' documented interfaces through the seven elements, on paper. It is needed before this record is accepted, and before S-05 designs the order side against the elements, whichever comes first.
 - **Shopify's provider contract** is known here through E030 to E032, and the seam's reading of it. E033 to E036 are its Admin API, idempotency and checkout-function sources. The work: the same walkthrough, with Shopify's payments apps API as one of the two.
 - **What a provider needs from the order that no element passes,** such as the buyer's contact details and addresses in Shopify's payment request (E032:146–163). The work: the same walkthrough.
-- **The items under Leaves open marked Not carried.** The work: each is decided at its subject (S-05, S-07, S-10, S-11), and this record is then revised to carry it before it is accepted.
+- **The items under Leaves open marked Not carried.** The work: each is decided at its subject (S-02, S-05, S-06 with S-07, S-07, S-10, S-11), and this record is then revised to carry it before it is accepted.

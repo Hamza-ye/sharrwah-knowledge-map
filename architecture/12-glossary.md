@@ -195,8 +195,9 @@ The evidence repositories are read at observed-sh `febbf6c` (20 October 2026) an
 - **Used by:** D-002, D-003.
 
 ### payments side
-- **Here:** the part of Sharrwah behind the payment boundary, which D-002 and D-003 call "payments". It owns provider accounts and protocols, provider fees, settlement, payout and custody records, reconciliation, risk and disputes, and which providers are available (D-002). It carries out the founder's direction F-06, payments as a concern of their own (`founder-decisions.tsv`).
+- **Here:** the part of Sharrwah behind the payment boundary, which D-002 and D-003 call "payments". It owns provider accounts and protocols, provider fees, settlement, payout and custody records, reconciliation, risk and disputes, and which providers are available (D-002). Both references keep payment providers apart from orders: on Shopify, "All Shopify-supported payment methods rely on third-party providers to process your transactions." (`HC:payments/getting-paid.md:3`), and each transaction names its gateway (`GQL:2447`); on Salla, Salla's own Electronic Payments sits beside outside gateways (`SA-en:24`, `SA-en:807`), and each transaction names its provider (`SAPI:208`). *(F-06 of 10 October pointed the same way. It is direction from the early studies, not this term's basis: the founder, 25 October.)*
 - **Shopify, nearest:** the extension points through which providers plug in, the CLI group "Payments extensions" with six templates (`CLI:70`–`CLI:75`), and its payments apps API (E030 to E032).
+- **Salla, nearest:** its outside gateways, set beside its own Electronic Payments (`SA-en:807`; `SA-en:24`).
 - **Used by:** D-002, D-003.
 
 ### payment boundary

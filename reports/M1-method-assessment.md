@@ -127,15 +127,15 @@ Two expectations would be mistaken:
 | Work | Cited by the method or a current record | What it holds | Disposition |
 | --- | --- | --- | --- |
 | Q1's concern map (`studies/concern-map/`), 10–11 October | No | Choice 2's evidence, and Salla's apps' wallet deductions | The subject index again (4b) |
-| The Shopify payments study (`shopify-payments-study/`), 10 October | No | Shopify's bills against its payout deductions, and apps' charges on Shopify's bill (`E-pos-finance-billing.md`:29–32). Also the false "Every type has a reversal twin" (:189). That claim reached D-003 through the seam's notes (`9831536:studies/payment-seam/notes/shopify-crossings.md`:141), on a reviewer's advice (`decisions/checks/D-002-D-003-review.md`:67), and M1's inventory corrected it | Candidate evidence, checked when relied on, like the drafts |
+| The Shopify payments study (`shopify-payments-study/`), 10 October | No | Shopify's bills against its payout deductions, and apps' charges on Shopify's bill (`E-pos-finance-billing.md`:29–32). Also the false "Every type has a reversal twin" (:189). That claim reached D-003 through the seam's notes (`8946887:studies/payment-seam/notes/shopify-crossings.md`:141), on a reviewer's advice (`decisions/checks/D-002-D-003-review.md`:67) that I applied unchecked, and M1's Terms and Scope pass corrected it (`24961d6`) | Candidates and pointers, never evidence: each claim a record relies on is traced to its source in observed-sh (part three) |
 | Yemen setup options (`yemen-setup-options/`), 10 October | No | "Seventeen setup options across five positions" (`report.md`:92), built on Yemen's facts. That makes the first market the design driver, which the market guard now rules out. Stage 1 redid its facts, with checks | Context. Its positions are candidate options for S-07 |
-| The obligation-to-payout model (`model/`), 10 October | No | A synthesis of the Shopify study and the Yemen options: eight lines and 81 proposed question rows. It is the seam's sibling, not its source: the seam's notes cite the study, never the model (part three) | Candidate design concepts, judged against drivers when a record uses them |
+| The obligation-to-payout model (`model/`), 10 October | No | A synthesis of the Shopify study and the Yemen options: eight lines and 81 question rows. It came before the seam, which tagged its 81 rows to the contract's elements; the seam's Shopify facts came from the study and the engineering sources, and none of its files cites the model's eight lines. The model was made before those engineering sources were captured (part three) | Candidate design concepts, set beside the held engineering writing and judged against the drivers when a record uses them |
 
 **Your remarks didn't hide this work, and nothing you asked for required dropping it.** On 24 October you asked planning to "understand the current state and the leverage already available" (`founder-messages/2026-10-24-method-accepted.md`:19). My consolidations hid it. I proposed each one, merging the question sets was my own finding, and none listed what it dropped. *(Interpretation: earlier work is often broader and less checked, and later work narrower and better checked. That is why each needs a disposition, not a verdict.)*
 
 ## Amendment 4, proposed
 
-It restores the safeguards that were dropped, and makes the method's own changes traceable. Part two gives the evidence for 4c and 4d, and part three for 4e.
+It restores the safeguards that were dropped, and makes the method's own changes traceable. Part two gives the evidence for 4c and 4d, part three for 4e, and part four (`reports/M1-plan-trace.md`) for 4c's trace of an approved plan.
 - **4a. Claims of absence** (section 6).
   - A claim that something isn't there ("only", "none", "doesn't show", "not found") is a fact only when it names:
     - its searches: `method/corpus_search.py`, whose header lists what it covers, plus the structures that bear on the claim, found through the repositories' indexes;
@@ -150,19 +150,30 @@ It restores the safeguards that were dropped, and makes the method's own changes
   - Section 6's sentence becomes: "It covers only the facts a decision rests on, and the concerns of its slice that the record doesn't cite, never everything a document mentions."
   - Section 7's rule 3 gains: "The omission check of section 6 is bounded by the record's slice."
   - It adds one script run and one input to an existing check. In the trial, the run took seconds and the triage minutes.
-- **4c. The method's own changes,** checked by function (sections 12 and 13). It widens two things the method already has:
-  - **amendment 1's check of what version 1 dropped of your decisions,** applied to the method's own practices. Each amendment names, for each practice it retires, the risk that practice controlled, and either reassigns the risk or records it as accepted;
-  - **W-08's map, finished.** Section 13 gives every body of earlier work a disposition, as M0 did for the Knowledge Map.
+- **4c. Plans and the method's own changes, controlled by function** (sections 4, 12 and 13). It widens what the method already has (part four):
+  - **Amendment 1's check of what version 1 dropped of your decisions,** applied to the method's own practices. Each amendment names, for each practice it retires or changes, the risk that practice controlled, and either reassigns the risk or records it as accepted. You see that list with the amendment.
+  - **A plan you approve is traced before its work starts.** Each item is placed where the work reads it at its time, with the check that will show it was applied:
+    - in `METHOD.md`;
+    - or in the backlog row of the subject it applies to;
+    - or in `STATE.md`.
+
+    An item that can't be placed is named to you. The plan of 24 October is traced in `decisions/checks/M1-plan-trace.tsv`, and its unplaced items were placed on 25 October.
+  - **Each milestone report lists what changed in the method and the backlog** since the last report, from their diff, by function.
+  - **W-08's map, finished.** Section 13 gives every body of earlier work a disposition, as M0 did for the Knowledge Map, and takes three corrections:
+    - the engineering sources were gathered for the payment seam; they don't "cover payments only" (R-04);
+    - F-06 and the other decisions of 10 October are direction from the early studies, and none chooses among design options (your note of 25 October);
+    - the first plan's rule that kinds of source are compared like with like (`PLAN.md`:311; `method/source_kinds.py`) comes back at step 3.
 - **4d. Variants** (section 5, step 3).
   - Where the references differ, or one reference carries more than one variant at once, each variant becomes an option, with how it is bound: together, or one per market, store or plan.
   - When one is a restricted form of another that the general one can reach by configuration, the general one is kept, and the restricted one is bound where needed.
   - These are the first plan's coexistence step and generality rule (Czarnecki, Helsen and Eisenecker 2005). The second change dropped both.
   - Section 2 ties variability to markets; 4d extends it to the references' variants.
   - Choices 2 and 3 follow it since the revision of 25 October. The version sent to you said "never".
-- **4e. Whose words** (section 6; part three).
-  - "A fact about what a platform does traces to the platform's own words or behaviour, held in the evidence repositories. A study, note, draft, model or check sheet can point to it; it is never the source."
-  - `method/decision_status.py` flags a record whose facts cite such a path, and 4c's dispositions name each earlier artifact's known errors.
-  - *Fits the method:* it extends amendment 2c from "another record's or a draft's wording" to everything agents write.
+- **4e. Whose words** (sections 6, 10 and 13; part three, revised after its check).
+  - **Amendment 2c is widened:** a record never rests on the wording of another record, a draft, a study, a note, a model or a check. Each of these can point to a source, and a fact rests on the source.
+  - **Section 13's heading,** "Kept as evidence and inputs, not as deliverables", becomes "Kept as inputs and pointers, not as deliverables". What it lists as evidence stays evidence: `evidence/`, and the sources Stage 1 quotes.
+  - **The checker at levels 2 and 3** confirms that each fact a record rests on resolves to a source. A checker that recommends a precedent cites its source.
+  - *Fits the method:* it extends 2c, and puts the check where section 6 already places checking.
 
 **Not proposed:**
 - a new mapping pass before each decision: Q1 is the map, and M2 refreshes it;
