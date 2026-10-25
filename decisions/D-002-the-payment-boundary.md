@@ -70,7 +70,7 @@ The words this record relies on, each defined in the glossary (`architecture/12-
 
 **Takes as given:**
 - D-001's outcome: C at launch, with A and B reserved (in `depends_on`).
-- That the rial's two editions are not part of the core: G1's B7, the founder's intent, which F-03's row records as prevailing (`founder-decisions.tsv`, F-03). And the market guard (`founder-decisions.tsv`, "Yemen in the design"; `METHOD.md` section 3a).
+- That one market's currency editions are not part of the core: G1's B7, the founder's intent, which F-03's row records as prevailing (`founder-decisions.tsv`, F-03). And the market guard (`METHOD.md` section 3a).
 
 **Leaves open:** this record stays proposed, as the working basis, until the items not carried are decided by their subjects and it is revised to carry them.
 - The interfaces of the providers Sharrwah will integrate — S-07. Not carried: the elements were drawn from Shopify's and Salla's own provider contracts, and haven't been walked through a provider Sharrwah would integrate. Shopify's own payment request gives the provider the buyer's email, phone and addresses (E032:146–163), which no element passes.
@@ -188,9 +188,9 @@ Payments only reads these.
 
 - **Outcome type: Built,** the same in every market.
 - **Changes from the seam's contract v0:**
-  - **The currency "edition"** on the offer, on every amount and among the capabilities (seam.md:28, 30, 33) is removed. Amounts carry their currency as the money and currency foundation defines it, and S-04 decides that under the guard. The founder's G1 answer says "The rial's two editions are not part of the core" (`founder-messages/2026-10-18-g1-answer.md`, B7).
+  - **The currency "edition"** on the offer, on every amount and among the capabilities (seam.md:28, 30, 33) is removed. Amounts carry their currency as the money and currency foundation defines it, and S-04 decides that under the guard. The founder's G1 answer keeps one market's currency editions out of the core (`founder-messages/2026-10-18-g1-answer.md`, B7).
   - **The "status query" capability is removed,** and "rail confirmation" and "rail status query" become one level of evidence, the provider's record. How payments learns a result stays behind the boundary. Neither reference shows a platform polling a provider (seam.md:86).
-  - **Its column of notes for the first market** is adopted only where it is restated without the market: payments never reads live order data while deciding, partner cut-offs, long pending, the derived payment status, and the order side never naming a provider (seam.md:28, 33).
+  - **Its column of notes for one market** is adopted only where it is restated without the market: payments never reads live order data while deciding, partner cut-offs, long pending, the derived payment status, and the order side never naming a provider (seam.md:28, 33).
 - **Adopted from the seam's rules:**
   - rule 6: a timed-out attempt reaches the order side as expired;
   - rule 8: the seller's rules on methods are applied by the order side's checkout;

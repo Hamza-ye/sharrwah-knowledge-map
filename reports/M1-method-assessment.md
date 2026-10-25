@@ -128,14 +128,14 @@ Two expectations would be mistaken:
 | --- | --- | --- | --- |
 | Q1's concern map (`studies/concern-map/`), 10–11 October | No | Choice 2's evidence, and Salla's apps' wallet deductions | The subject index again (4b) |
 | The Shopify payments study (`shopify-payments-study/`), 10 October | No | Shopify's bills against its payout deductions, and apps' charges on Shopify's bill (`E-pos-finance-billing.md`:29–32). Also the false "Every type has a reversal twin" (:189). That claim reached D-003 through the seam's notes (`8946887:studies/payment-seam/notes/shopify-crossings.md`:141), on a reviewer's advice (`decisions/checks/D-002-D-003-review.md`:67) that I applied unchecked, and M1's Terms and Scope pass corrected it (`24961d6`) | Candidates and pointers, never evidence: each claim a record relies on is traced to its source in observed-sh (part three) |
-| Yemen setup options (`yemen-setup-options/`), 10 October | No | "Seventeen setup options across five positions" (`report.md`:92), built on Yemen's facts. That makes the first market the design driver, which the market guard now rules out. Stage 1 redid its facts, with checks | Context. Its positions are candidate options for S-07 |
+| Yemen setup options (`yemen-setup-options/`), 10 October | No | "Seventeen setup options across five positions" (`report.md`:92), built on Yemen's facts. That makes the first market the design driver, which the market guard now rules out. Stage 1 worked from the captured sources, and its brief barred it from reading the options (part three) | Context: an input to the first market's binding, never a candidate for a subject's design (revised 25 October) |
 | The obligation-to-payout model (`model/`), 10 October | No | A synthesis of the Shopify study and the Yemen options: eight lines and 81 question rows. It came before the seam, which tagged its 81 rows to the contract's elements; the seam's Shopify facts came from the study and the engineering sources, and none of its files cites the model's eight lines. The model was made before those engineering sources were captured (part three) | Candidate design concepts, set beside the held engineering writing and judged against the drivers when a record uses them |
 
 **Your remarks didn't hide this work, and nothing you asked for required dropping it.** On 24 October you asked planning to "understand the current state and the leverage already available" (`founder-messages/2026-10-24-method-accepted.md`:19). My consolidations hid it. I proposed each one, merging the question sets was my own finding, and none listed what it dropped. *(Interpretation: earlier work is often broader and less checked, and later work narrower and better checked. That is why each needs a disposition, not a verdict.)*
 
 ## Amendment 4, proposed
 
-It restores the safeguards that were dropped, and makes the method's own changes traceable. Part two gives the evidence for 4c and 4d, part three for 4e, and part four (`reports/M1-plan-trace.md`) for 4c's trace of an approved plan.
+It restores the safeguards that were dropped, and makes the method's own changes traceable. Part two gives the evidence for 4c and 4d, part three for 4e, part four (`reports/M1-plan-trace.md`) for 4c's trace of an approved plan, and part five (`reports/M1-market-binding.md`) for 4f.
 - **4a. Claims of absence** (section 6).
   - A claim that something isn't there ("only", "none", "doesn't show", "not found") is a fact only when it names:
     - its searches: `method/corpus_search.py`, whose header lists what it covers, plus the structures that bear on the claim, found through the repositories' indexes;
@@ -174,6 +174,17 @@ It restores the safeguards that were dropped, and makes the method's own changes
   - **Section 13's heading,** "Kept as evidence and inputs, not as deliverables", becomes "Kept as inputs and pointers, not as deliverables". What it lists as evidence stays evidence: `evidence/`, and the sources Stage 1 quotes.
   - **The checker at levels 2 and 3** confirms that each fact a record rests on resolves to a source. A checker that recommends a precedent cites its source.
   - *Fits the method:* it extends 2c, and puts the check where section 6 already places checking.
+
+- **4f. A market is bound once** (sections 1, 3a, 5 and 8; `reports/M1-market-binding.md`).
+  - **A market is a row and a bounded decision, nothing more.** For each decision a market binds, its row and the decision bounded to it are one record: outcome Configured, varying by that market. It holds the condition each option needs, what holds there, each fact by its id and date, and what the row binds. D-006 is the first. Other records name a market only to point to its row, in their Confirmation.
+  - **Section 5's evidence step** no longer takes "the first market's facts from the Stage 1 digest". Options are drafted and judged from the references and the drivers. At close, step 6 walks each market's row through the subject's decisions:
+    - a row the decisions carry needs nothing more;
+    - a row that needs a value is bounded in that market's record;
+    - a row the design can't carry goes to you (G1's B2).
+  - **Section 1's end walkthrough and section 8's example** speak of each launch market's row, not "the first market's flows" or a buyer in one city.
+  - **Earlier work built for one market** is an input to that market's record, never a candidate for a subject's design. This covers the Yemen setup options, the obligation model's Yemen rows and launch stages, and the 42 payment rows that name the first market.
+  - **The guard's check widens:** a market's name or its Stage 1 ids appear in a Built record only in its Confirmation, never in the glossary, and otherwise only in that market's rows.
+  - *Fits the method:* it is section 3a's own rule, "References first, then the market", made to hold at the step that breached it. It moves the first market into one record rather than adding one.
 
 **Not proposed:**
 - a new mapping pass before each decision: Q1 is the map, and M2 refreshes it;
