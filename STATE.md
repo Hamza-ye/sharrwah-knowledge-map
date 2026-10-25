@@ -2,11 +2,11 @@
 
 Where the work is, on one page (`METHOD.md` section 4). The coordinating session keeps it, and commits it at every checkpoint. The text from before 24 October is in the history: `git show a05974a:STATE.md`.
 
-**Updated:** 25 October 2026, 00:51 UTC.
+**Updated:** 25 October 2026, 14:50 UTC.
 
 **The method:** `METHOD.md`, adopted on 24 October 2026 with amendments 1, 2 and 3. Amendment 3 (the founder, 23:01 UTC) sets the evidence standard, checks that try to refute, and the acceptance rule: no record is accepted while something it leaves open could reverse it. Amendment 2 adds Terms and Scope to every decision record, and the rule that a record rests on evidence and accepted outcomes, never on another record's wording.
 
-**Milestone:** M1, the money boundary (subject S-01). Amendment 2's pass is finished, and Decision 1 is with the founder (`reports/M1.md`).
+**Milestone:** M1, the money boundary (subject S-01). Amendment 2's pass is finished. Before answering Decision 1, the founder asked for an assessment of their feedback and of an evidence-completeness pass (`founder-decisions.tsv`, 25 October): part one is `reports/M1-method-assessment.md`, part two `reports/M1-plan-changes.md`.
 - **Done:**
   - the glossary (`architecture/12-glossary.md`);
   - Terms and Scope in D-001 to D-005;
@@ -14,7 +14,7 @@ Where the work is, on one page (`METHOD.md` section 4). The coordinating session
 
   Their findings were verified against the evidence and applied (`decisions/checks/M1-terms-scope-dispositions.md`).
 - **Decision 1's page** puts the line and three choices on its extent to the founder, each recommended for launch: (1) where B ends, by the guard's source rather than its words: an account held under the seller's own agreement is C, even when asked for through Sharrwah; (2) Sharrwah's fees, and anything owed to it or its partners, billed apart; (3) no balance sellers pay into. The other way of choices 2 and 3 stays reserved, like A and B. D-004 is accepted with D-001 unless the founder says otherwise.
-- **The founder's remarks of 25 October** are held as hypotheses for their assessment. None is recorded as a decision, a rule or a change of plan (`reports/M1.md`).
+- **The founder's remarks of 25 October** are assessed there, point by point. Its findings: the pilot's absence audit and the Q1 concern map as the subject index were dropped when `METHOD.md` was adopted, and the second plan change had dropped the generality rule and coarsened the inventory sweep to areas; the method checks claims, never coverage. A trial of the omission check on Decision 1 (`method/slice_coverage.py`) changed no part of its line, and added two facts on partners' charges to choice 2 and apps (S-06) to what it leaves open. Amendment 4 (4a to 4d) is proposed, not adopted. Risks W-20 and W-21 are open.
 - **Under the acceptance rule:** D-001 and D-004 carry everything they leave open. D-002 doesn't carry nine items, and D-003 four, among them the buyer data Shopify's payment request sends a provider (E032:146–163) and stored permissions for B2B and edits. Both stay proposed, as the working basis, until those items are decided at S-05, S-07, S-10, S-11 and S-03 and the records are revised.
 - **Records D-001 to D-005:** the guard flags none, and `decision_status.py` finds no fault in their Terms and Scope. The glossary's quotes are checked by `method/inventory_quotes.py`. The inventory the pass used is `decisions/checks/M1-terms-inventory.md`.
 - **M0** closed with PR #6. M1's pull request is PR #7.
@@ -33,6 +33,7 @@ Where the work is, on one page (`METHOD.md` section 4). The coordinating session
 
 **Open founder decisions:**
 - **Decision 1's line and its three choices** (S-01; `reports/M1.md`): "No sellers' money is held through Sharrwah at launch. A and B are reserved, not built. Switching either on stays yours."
+- **Amendment 4** (`reports/M1-method-assessment.md`; `reports/M1-plan-changes.md`): approve, change or not now.
 - **O-01:** which legal entity and country contracts with sellers and partners (S-08).
 - **The form of F-02** (the Sana'a zone first) **and F-03** (both zones), under the guard (S-04).
 - **From M2:** the order in which the first version covers the areas, and the business targets for the quality scenarios.
@@ -43,7 +44,7 @@ Where the work is, on one page (`METHOD.md` section 4). The coordinating session
 - The drafts as deliverables: they are now candidate options.
 - The planned review of the drafts, and the company-decisions run.
 
-**In flight:** nothing. The scheduled check-in is off.
+**In flight:** one read-only checker, trying to refute both parts of the assessment at commit `79d8135` and writing `decisions/checks/M1-method-assessment-check.tsv`. It is capped at 40 tool calls. The scheduled check-in is on while it runs.
 
 **M2's feasibility test** is done (read-only; 8.2 million tokens). Its report is in the coordinator's scratchpad, and goes into M2's pull request once M1 merges. Its verdict is **partly feasible:**
 - **Within each platform,** the structures say which permission gates which page.
@@ -62,7 +63,8 @@ Where the work is, on one page (`METHOD.md` section 4). The coordinating session
 **The backlog:** `python3 -I method/decision_status.py` gives 16 subjects and 5 decision records: 4 proposed, 1 deferred.
 
 **Next step:**
-- the founder's answer to Decision 1 and its choices, and their assessment of their remarks of 25 October (`reports/M1.md`). Frame their message first;
+- apply the checker's findings to the assessment, after checking each against its evidence; turn the check-in off; send the founder the assessment. Frame their next message first;
+- the founder's answers on amendment 4 and on Decision 1. If amendment 4 is approved, enter it in `METHOD.md` section 12 and apply it from the next record put for acceptance;
 - on the answer: accept D-001 and D-004 with the founder's choices. D-002 and D-003 stay proposed until the subjects that decide their open items have done so (acceptance rule);
 - merge PR #7 with `reports/M1.md` as its description, and add the row to `HISTORY.md`;
 - then M2, the spine: frame it with options for its scope and budget, starting from its feasibility test.

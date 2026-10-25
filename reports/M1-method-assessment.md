@@ -35,7 +35,7 @@
 | 7 | The evidence is well indexed, if we know how and when to look (23:01) | Genuine, and accurate | The index-first rule covers the evidence repositories, not this repository's own earlier studies | 4b, with section 13's map completed |
 | 8 | "Are you sure?", on Salla's "under review" (25 Oct) | A real error | A claim of absence with no audit (point 5) | 4a |
 | 9 | When an older decision meets focused evidence, establish its reason and surface the conflict (25 Oct) | Handled by practice; carried out late | I applied the guard's words before putting both readings to you | Sections 3 and 10 already say a founder decision changes only by you. No new rule |
-| 10 | Not a copy of Salla: examine Shopify, and where they differ, don't default to the stricter way (25 Oct) | Genuine; handled in principle | Carried out wrongly: choice 2's "never" ignored the pilot's own variation point (S01-VP-19, Decision 9) and the Shopify study | 4b; section 5 step 3 already draws options from both references |
+| 10 | Not a copy of Salla: examine Shopify, and where they differ, don't default to the stricter way (25 Oct) | Genuine; handled in principle | Carried out wrongly: choice 2's "never" ignored the pilot's own variation point (S01-VP-19, Decision 9) and the Shopify study. The first plan's rule to keep the general variant had been dropped on 18 October (part two) | 4b and 4d |
 | 11 | Observed is not complete: the repositories list their own gaps, and "only" is a claim of absence (today) | Genuine | As point 5. Of 16 absence claims in M1's records and glossary, 6 concern named documents, which reading them settles. Of the 10 about the held evidence as a whole, 5 point to searches the inventory recorded and 5 name none. None names the repositories' gaps | 4a |
 | 12 | A completeness pass before decisions (today) | Partly: the map exists; using it is what's missing | Points 4 and 7 | 4b, not a new pass |
 | 13 | The plan changes may be shadowing better earlier work (today) | Genuine in part | My consolidations at each plan change | 4c, and section 13 completed |
@@ -44,11 +44,10 @@ None of your points is a plain misunderstanding. The nearest is point 12: you co
 
 ## Why they escaped
 
-1. **Safeguards were lost when the method changed (an execution failure).**
-   - It has happened three times:
-     - the market guard, and your decisions F-00 to F-06, lost with PR #3 and restored at M0;
-     - the pilot's absence rule;
-     - the concern map as the subject index.
+1. **Safeguards were lost each time the method changed (an execution failure).**
+   - With PR #3: the market guard, and your decisions F-00 to F-06, restored at M0.
+   - At the plan's second change, on 18 October: the rule to keep the general variant, and the sweep of the inventory's concerns, coarsened to areas (part two).
+   - At the third, on 24 October: the pilot's absence rule, and the concern map as the subject index.
    - Section 13 traced the method's changes to your decisions ("Founder decisions changed under this method", `METHOD.md`:413), never to its own practices. Nothing set the old practices beside the new ones.
 2. **No check looks for what is missing (a missing safeguard).**
    - IBM's classification of defects separates something missing from something incorrect or extraneous (Orthogonal Defect Classification).
