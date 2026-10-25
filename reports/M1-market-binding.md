@@ -118,6 +118,7 @@ D-006 fills it for Yemen.
   - what the row binds.
 
   D-006 is the first. Other records name the market only to point there, in their Confirmation.
+- **The pattern comes first, from the references alone.** Each subject states its variabilities, blind to every market, with the condition a market must state for each variant: the columns of every market's row. Your test showed what the first market's framing had shadowed. Both references let sellers use their own provider accounts and pay offline, and both switch their own payment service on per market.
 - **Section 5's evidence step drops the first market.** At close, each market's row is walked through the subject's decisions:
   - what the decisions carry needs nothing more;
   - a value is bounded in that market's row;

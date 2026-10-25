@@ -177,6 +177,7 @@ It restores the safeguards that were dropped, and makes the method's own changes
 
 - **4f. A market is bound once** (sections 1, 3a, 5 and 8; `reports/M1-market-binding.md`).
   - **A market is a row and a bounded decision, nothing more.** For each decision a market binds, its row and the decision bounded to it are one record: outcome Configured, varying by that market. It holds the condition each option needs, what holds there, each fact by its id and date, and what the row binds. D-006 is the first. Other records name a market only to point to its row, in their Confirmation.
+  - **The pattern comes first, from the references alone.** At framing, each subject states its variabilities from the references, blind to every market: what all members share, what varies, and the condition a market must state for each variant. That is FAST's "Parameters of Variation", and those conditions are the columns of every market's row. In M1 this is what the first market's framing shadowed: both references switch their own payment service on per market, and leave sellers' own accounts and offline payment open (`decisions/checks/M1-blind-decision-1.md`).
   - **Section 5's evidence step** no longer takes "the first market's facts from the Stage 1 digest". Options are drafted and judged from the references and the drivers. At close, step 6 walks each market's row through the subject's decisions:
     - a row the decisions carry needs nothing more;
     - a row that needs a value is bounded in that market's record;

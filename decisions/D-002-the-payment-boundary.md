@@ -226,7 +226,7 @@ Payments only reads these.
 
 **The change scenario:** a second market whose processor holds the funds. It adds B, and the settlement contract beside the seven elements. The elements don't change.
 
-**M2's quality scenarios** (S-02), walked through the seven elements beside options 2 and 3, and beside any design the held engineering writing shows for the same line (E001 to E029, LIT: one company's account). They are written by an agent whose brief names neither this record, D-003 nor the seam, from the founder's targets and the capability map.
+**M2's quality scenarios** (S-02), walked through the seven elements beside options 2 and 3, beside any design the held engineering writing shows for the same line (E001 to E029, LIT: one company's account), and beside a boundary derived from the references alone, blind to the first market and to this record. They are written by an agent whose brief names neither this record, D-003 nor the seam, from the founder's targets and the capability map.
 
 **Checks:** level 2. The independent review is in `decisions/checks/D-002-D-003-review.md`, with what was done about each finding in `decisions/checks/D-002-D-003-dispositions.md`.
 
