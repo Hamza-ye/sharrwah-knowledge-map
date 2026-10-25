@@ -2,7 +2,7 @@
 
 The answer to `questions/Q1-concern-map.md` as it is being built. This file says where each part stands and what comes next.
 
-**Since 12 October 2026 the map is the index for `PLAN.md`'s subjects, and it is frozen.** No new concerns, statements or gaps go in unless a subject needs them. Stage 0 checked every gap against what is held and re-routed 215 of them (`held-check.tsv`). `STATE.md` at the repository root says where the work is.
+**Since 12 October 2026 the map is the index for `PLAN.md`'s subjects, and it is frozen.** No new concerns, statements or gaps go in unless a subject needs them. Stage 0 checked every gap against what is held and re-routed 215 of them (`held-check.tsv`). `STATE.md` at the repository root says where the work is. The platforms' `notes.md` files are the Q1 runs' working notes: their next steps are as they stood then.
 
 ## Where it stands (11 October 2026)
 

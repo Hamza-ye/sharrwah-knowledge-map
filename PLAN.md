@@ -1,6 +1,6 @@
 # Plan: from the evidence to the decisions that are expensive to change
 
-**Status: agreed by the founder on 12 October 2026 (gate G0). On 25 October 2026, after G1, the founder reset the work to this plan, with the changes section 11 lists.** It is the only plan. `STATE.md` says where the work is.
+**Status: agreed by the founder on 12 October 2026 (gate G0). On 25 October 2026, after G1, the founder reset the work to this plan, with the changes section 11 lists.** It is the only plan, and it works within the founder's decisions (`founder-decisions.tsv`): where the two differ, the decision holds and this plan is corrected. `STATE.md` says where the work is.
 
 The coordinating session wrote this plan after the founder asked who would manage the work until it reaches a safe shore, with the right engineering, sequence and framing, leaving the founder only what is genuinely theirs to decide. Where a rule comes from known practice, it names its source, and section 10 lists the sources. A rule without a source is the coordinator's own.
 
@@ -19,7 +19,7 @@ Sharrwah is one platform for many markets. Yemen is its first market, not its de
 4. a decision register states, for each subject, what follows by engineering rule and what the founder decided or deferred;
 5. nothing in the register rests on a derived document, or on the founder's words taken as evidence of what a platform does.
 
-Then the design of the first version starts, under its own plan. It is designed for many markets, with Yemen the first set up on it, and each variation point behind its own module. An architecture description comes before any production code. Spikes, throwaway code that answers one stated question, are allowed (the founder, 24 October).
+Then the design of the first version starts, under its own plan. It is designed for many markets, with Yemen the first set up on it, and each variation point behind its own module. Spikes, throwaway code that answers one stated question, are allowed. Production code waits until requirements, an architecture description and engineering documentation exist to validate it against (the founder, 24 October).
 
 ## 2. What changes from the run so far
 
@@ -69,7 +69,7 @@ It never takes the founder's decisions, and never treats the founder's words as 
 - **A review tries to refute** what it reviews, claim by claim, and reports counter-evidence and missing evidence, not agreement. The coordinator checks each finding against its evidence before applying it.
 - **A review also looks for what an entry never cites:** the concerns in the subject's reach, from the concern map, that the entry doesn't cite, and which of them bear on a decision.
 
-**The checker** (`method/check_concern_map.py`, extended) enforces the rules mechanically:
+**The checkers** enforce the rules mechanically: `method/check_concern_map.py` on the concern map, `method/check_yemen_cases.py` on Stage 1, and `method/check_subject.py` on each subject. Between them:
 - quotes are verbatim;
 - citations are at a commit;
 - gap routes are checked against what is held;
@@ -114,7 +114,7 @@ Gate G0 comes first: the founder's go on this plan. Stages 0 and 1 don't depend 
 
 ### Stage 2. The pilot: one subject end to end
 
-*Done on 17 October 2026, in `studies/subjects/S-01/`: the entry, its independent review and the method report. G1 was answered on 18 October with a re-frame. On 25 October the founder reset the work to this plan, with the pilot's own changes, which is G1's "change the method". Decision 1 waits on the founder ([`decision-1.md`](studies/subjects/S-01/decision-1.md)).*
+*Done on 17 October 2026, in `studies/subjects/S-01/`: the entry, its independent review and the method report. G1 was answered on 18 October with a re-frame. On 25 October the founder reset the work to this plan, with the pilot's own changes. *The coordinator's reading:* that is, in effect, G1's "change the method". Decision 1 waits on the founder ([`decision-1.md`](studies/subjects/S-01/decision-1.md)).*
 
 **Subject:** who holds the merchant's funds between the buyer's payment and the merchant's payout. It was chosen because:
 - holding money is the first of the concerns Q1 names as shaping the architecture in every market;
@@ -153,16 +153,16 @@ Gate G0 comes first: the founder's go on this plan. Stages 0 and 1 don't depend 
 
 **Gate G2.** The founder marks business scope: what Sharrwah certainly won't do, and what it must. Nothing else.
 
-**Output:** `studies/subjects/subjects.tsv`, with the subject, its question ("who or what fills X"), its rank, and the evidence that put it in scope.
+**Output:** `studies/subjects/subjects.tsv`, with the subject, its question ("who or what fills X"), its rank, and the evidence that put it in scope. S-01, the pilot, is its first row.
 
 ### Stage 4. The subjects, one at a time, riskiest first
 
-- **Before the next subject runs,** these are ruled, and each ruling is marked in the briefs:
+- **Before the next subject runs,** these are ruled, and each ruling is marked in the pilot's briefs, from which the next subject's briefs are made:
   - the pilot's three open items ([its method report, section 11, "Still open after the re-check"](studies/subjects/S-01/method-report.md#11-the-independent-review-f)):
     - finding 36, a variant that names only what doesn't fill the role;
     - finding 29, whether WooCommerce's policy pages are terms;
     - step 5's letter rows, which no longer separate the variation points once letters join;
-  - what the checker reports on the pilot with the scripts as they now stand, and did not report at G1 (`method/check_subject.py`, given every capture run in `evidence/product-class/runs/`):
+  - what the checker reports on the pilot with the scripts as they now stand, and did not report at G1 (`method/check_subject.py`, given every capture run in `evidence/product-class/runs/`, run on a copy of the pilot's folder, since it rewrites the subject's `kinds.tsv`):
     - three Salla gaps routed to the founder whose page is held (S01-SA-G01, G03 and G07);
     - five statements whose source kind changes (S01-WC-078 to 080, S01-BC-123 and 124).
 - Each subject goes through the pilot's five steps. Its files go in `studies/subjects/<id>/`. The pilot's own changes apply ([its method report, "Proposed changes before more subjects"](studies/subjects/S-01/method-report.md#proposed-changes-before-more-subjects)):
@@ -176,7 +176,7 @@ Gate G0 comes first: the founder's go on this plan. Stages 0 and 1 don't depend 
   - a commit;
   - an update to `STATE.md`;
   - a short report for the founder: the decisions that are genuinely theirs (gate G3), and the subject's cost against its budget.
-- **Standing decisions early.** The founder's answer to a root decision settles the later items it pairs with (section 5, standing decisions), as an answer to Decision 1 settles the pilot's Decisions 2 to 12.
+- **Standing decisions early.** The founder's answer to a root decision settles the later items it pairs with (section 5, standing decisions), as an answer to Decision 1 can settle the pilot's Decisions 2 to 12, which its entry pairs with each option.
 - The founder's decisions go in `founder-decisions.tsv`: date, gate, question, decision, and the evidence it rested on.
 - A deferred decision is recorded with what it binds: the variation point stays open and is set per market.
 
@@ -318,7 +318,7 @@ Both sets, by the founder's choice: the 81 payment rows and the Knowledge Map's 
 | 11 | A reading of terms becomes legal advice | A statement taken as what Sharrwah must do | Quotes only. Sharrwah's legal position is a company question, for the founder with a lawyer |
 | 12 | An agent misreads: the quote is right but the meaning wrong | The independent review disagrees | The source is re-read, and the disagreement is recorded |
 | 13 | The frame is wrong after all | The pilot entry lets the founder decide nothing; errors keep coming from the method | Nothing scales; the frame is re-examined at G1, with evidence |
-| 14 | Old documents return as evidence, or old work governs again | A citation to a derived or excluded path; a brief, entry or search that draws on history outside the working files | The checker rejects the citation. History is reached only through a link this plan or a brief gives (section 9), and `method/check_surface.py` searches the working files for its framings |
+| 14 | Old documents return as evidence, or old work governs again | A citation to a derived or excluded path; a brief, entry or search that draws on history outside the working files | The checker rejects the citation. History is reached only through a link pinned to a commit in a working file (section 9), and `method/check_surface.py` searches the working files for its framings |
 | 15 | A decision is carried forward on its past acceptance alone | A step builds on a decision whose plan or premise has changed | It is assessed on its merits first: its rationale, its evidence, and whether it still holds (the founder, 25 October) |
 | 16 | A change to this plan drops a safeguard without saying so | A change lists what it adds, not what it removes | Each change lists what it removes or weakens, with the risk that part controlled (section 9) |
 
@@ -336,14 +336,14 @@ Both sets, by the founder's choice: the 81 payment rows and the Knowledge Map's 
 - **How this plan changes.** In the section it changes, so the plan stays one text, with one dated line in section 11 giving the reason and the source.
   - Each change lists what it removes or weakens, with the risk that part controlled, and whether that risk is reassigned or accepted. The founder sees that list with the change (management of change; the founder, 25 October).
   - A change to the frame needs the founder's go.
-  - A fix to the method within this plan is recorded and reported at the next gate.
+  - A fix to the method within this plan is recorded, and listed at the next report (section 3).
 - **`STATE.md` says where the work is:** the stage, the subject, what is done, the next step and the open gate. It is updated and committed at every checkpoint.
 - **Every subject ends with a commit.** Every step can resume from the repository alone.
 - **Every result traces back** through subject, variation point, variant and statement to a source at a commit (Gotel & Finkelstein 1994).
 - **`CLAUDE.md` sets what each session reads first.**
   - The coordinating session reads this plan, `STATE.md` and `founder-decisions.tsv` before anything else.
   - An agent working from a brief reads only its brief and what the brief names, so that nothing in this plan steers its reading.
-- **Nothing outside the working files governs.** The work done between G1 and the reset is history. It is outside the working files, at [commit `4923e1c`](https://github.com/Hamza-ye/sharrwah-knowledge-map/tree/4923e1c96a0296abdaf3f5bdbd8c155e09acfebf), and is reached only through a link this plan or a brief gives, saying why.
+- **Nothing outside the working files governs.** The work done between G1 and the reset is history. It is outside the working files, at [commit `4923e1c`](https://github.com/Hamza-ye/sharrwah-knowledge-map/tree/4923e1c96a0296abdaf3f5bdbd8c155e09acfebf), and is reached only through a link pinned to a commit in a working file, saying what it is for.
 - **The founder's messages.** The coordinator states its reading of each message at the top of its reply, so the founder can correct it. Only decisions go in `founder-decisions.tsv`. A question gets an answer, not a row.
 - **Reports** at each milestone and planned pause (the founder, 24 October): what is settled, what is open, the decisions that are the founder's, and the cost.
 
@@ -373,6 +373,8 @@ Both sets, by the founder's choice: the 81 payment rows and the Knowledge Map's 
 - Svahnberg, M., van Gurp, J., Bosch, J. (2005). A taxonomy of variability realization techniques. *Software: Practice and Experience* 35(8). How a variation point is realized, by when it is bound.
 
 ## 11. Changes
+
+A dated log. Where an entry differs from a later one, the later holds, and the sections above are the current text.
 
 - **12 October 2026:** proposed by the coordinating session.
 - **12 October 2026,** after the founder's questions: section 5 now says when the founder is needed, what a decision item looks like, how standing decisions work, and what spending covers.
@@ -449,9 +451,11 @@ Both sets, by the founder's choice: the 81 payment rows and the Knowledge Map's 
 
   That work, and every decision made on it, is outside the working files, at [commit `4923e1c`](https://github.com/Hamza-ye/sharrwah-knowledge-map/tree/4923e1c96a0296abdaf3f5bdbd8c155e09acfebf) (`HISTORY.md`). What it found that holds is carried as facts:
   - Stage 1's corrections (`studies/yemen-cases/corrections.md`);
-  - the facts on Decision 1's page (`studies/subjects/S-01/decision-1.md`).
+  - the facts on Decision 1's page (`studies/subjects/S-01/decision-1.md`);
+  - the pilot's cost, corrected on 18 October (its method report, section 12);
+  - six scripts' improvements, re-run against the G1 results (`reports/reset.md`).
 - **25 October 2026, the reset,** with the founder's go. Each change is made in its section:
-  - **Section 1:** the design of the first version is for many markets, with an architecture description before any production code. This replaces "a thin slice for Yemen".
+  - **Section 1:** the design of the first version is for many markets, and production code waits for requirements, an architecture description and engineering documentation (the founder, 24 October). This replaces "a thin slice for Yemen".
   - **Section 3:** the founder's guard on sellers' money; plain words; reviews that try to refute and look for what an entry never cites.
   - **Section 4, Stages 0 to 2:** marked done.
   - **Section 4, Stage 3:** concerns no longer reach the subject list through Yemen's axes. The market enters after the analysis (section 1; the pilot's analysis reached its line for Decision 1 from the references).
@@ -468,4 +472,4 @@ Both sets, by the founder's choice: the 81 payment rows and the Knowledge Map's 
   - **Stage 3's Yemen-axis candidates** covered concerns only the market raises. Reassigned: concerns the platforms scope by country or region still enter, and phase D's product gaps catch what only Yemen raises.
   - **Batches of three to five subjects** spread the founder's decisions over fewer gates. Reassigned: each subject's report carries only the decisions that are the founder's.
   - **Stage 1's faithfulness pass over every axis before Stage 4** guarded every axis. Weakened to the axes each subject bears on, before its phase D. Accepted: an axis no subject bears on binds nothing.
-
+- **25 October 2026, after the reset's cold-start test:** wording made consistent with the founder's decisions, the checkers named, and history's links defined as pinned links in any working file. No rule changed.

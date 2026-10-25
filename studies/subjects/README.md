@@ -4,6 +4,8 @@ One folder per subject of `PLAN.md` (Stages 2 and 4). A subject is a decision th
 
 ## How a subject runs
 
+The table below is how the pilot ran. From Stage 4, the pilot's own changes apply (`PLAN.md`, Stage 4): a subject names its few root decisions first, its agent runs are short and measured, and it has a budget.
+
 Each step has a brief in `<subject>/briefs/`. A separate agent inspects every brief before it runs. `method/check_subject.py` checks the files after every step.
 
 | Step | Brief | Who | Writes |

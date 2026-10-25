@@ -34,9 +34,10 @@ TERMS = {
 # Terms matched whatever their case; the rest are matched as written ("Knowledge Map", not this repository's name).
 CASE_FREE = {"the re-frame", "the payment seam", "the glossary", "the Yemen setup options", "the obligation model"}
 NAMES_HISTORY = re.compile(r"^(HISTORY\.md|reports/|method/check_surface\.py$)")
-# The platforms' own words, captured and quoted before G1 and unchanged since (Q1's map, and the pilot's records
-# per platform): their terms ("glossary", "amendment 1", "M1") are the platforms', not the history's.
-PLATFORM_DATA = re.compile(r"^studies/(concern-map/|subjects/S-01/(shopify|salla|zid|woocommerce|bigcommerce)/)")
+# The platforms' own words, captured and quoted before G1 and unchanged since (Q1's map: its platform folders, quote
+# checks and side-by-side map; and the pilot's records per platform): their terms ("glossary", "amendment 1", "M1") are
+# the platforms', not the history's. The rest of Q1's folder, written by the coordinator, is searched.
+PLATFORM_DATA = re.compile(r"^studies/(concern-map/(platforms|checks|map)/|subjects/S-01/(shopify|salla|zid|woocommerce|bigcommerce)/)")
 # (file, term): why it may appear there
 ALLOWED = {
     ("PLAN.md", "the re-frame"): "G1's three choices, and the reset's own record (Stage 2's note, section 5, section 11)",

@@ -3,10 +3,10 @@
 **What this repository is:** the work toward Sharrwah's decisions that would be expensive to change later, made from the evidence of five reference platforms. `PLAN.md` governs it.
 
 **The working files, and what each is.** Only these govern:
-- **`PLAN.md`:** the plan, the only authority on how the work is done.
+- **`PLAN.md`:** the plan, the authority on how the work is done. It works within the founder's decisions.
 - **`STATE.md`:** where the work is, and the next step.
-- **`founder-decisions.tsv`:** the founder's decisions in force, the only authority on what Sharrwah does.
-- **`evidence/`, and the evidence repositories observed-sh and observed-sa:** the only authority on facts.
+- **`founder-decisions.tsv`:** the founder's decisions in force. They decide what Sharrwah does, and they bind the plan: where the plan differs from one, the decision holds and the plan is corrected.
+- **`evidence/`, and the evidence repositories observed-sh and observed-sa** (cloned at `/home/user/observed-sh` and `/home/user/observed-sa`): the only authority on facts.
 - **The inputs the plan names:**
   - `studies/concern-map/`: Q1's map, the index subjects draw from;
   - `studies/yemen-cases/`: Stage 1, with its `corrections.md`;
@@ -17,9 +17,9 @@
 - **`reports/`:** reports to the founder.
 
 **Nothing else governs.**
-- The work done between G1 (18 October 2026) and the reset (25 October 2026) is history. It is outside the working files, at the commit `HISTORY.md` names.
-- Use it only through a link `PLAN.md` or a brief gives, and only for what that link says it is for.
-- A search of the working files does not reach it.
+- The work done after the founder's answer at G1 (18 October 2026), up to the reset (25 October 2026), is history. Its files are not in the working tree: they are at the commit `HISTORY.md` names, so a search of the working files doesn't reach them.
+- Use history only through a link pinned to a commit in a working file, and only for what that link says it is for.
+- Nothing outside this repository and the two evidence repositories governs, whatever else is on the machine.
 
 **The coordinating session:**
 - Read `PLAN.md`, `STATE.md` and `founder-decisions.tsv` first, then continue from `STATE.md`'s next step.

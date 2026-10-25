@@ -6,8 +6,8 @@
 
 - **The work is back on the plan you agreed on 12 October,** as it stood at G1, with the pilot's own changes ([`PLAN.md`](../PLAN.md)).
 - **Everything done between G1 and today is history.** It is outside the working files, so no search of them finds it. It can still be read at [commit `4923e1c`](https://github.com/Hamza-ye/sharrwah-knowledge-map/tree/4923e1c96a0296abdaf3f5bdbd8c155e09acfebf).
-- **This page says what I carried forward, and why.** You can veto any line. You don't have to approve each.
-- **Waiting on you:** this page, and [Decision 1](../studies/subjects/S-01/decision-1.md).
+- **This page says what I carried forward, and why.** It needs no answer. If any line looks wrong to you, say so, and I'll take it out or explain it.
+- **Waiting on you:** [Decision 1](../studies/subjects/S-01/decision-1.md), and your word to go on.
 
 ## What governs now
 
@@ -47,18 +47,16 @@
 - Yemen's study no longer puts concerns on the subject list. Yemen enters after each subject's analysis.
 - Subjects run one at a time, each with a budget and a short report, instead of in batches.
 
-**Your decisions in force** ([`founder-decisions.tsv`](../founder-decisions.tsv)):
-- the plan's go;
-- no standing business model: it comes from the evidence;
-- plain words;
-- the guard on sellers' money;
-- the rule on credentials in evidence;
-- Q3's rows, reconciled at the end;
-- agents' effort levels, delegated to me;
-- reports at each milestone and pause;
-- spikes allowed, but no production code before the architecture;
-- no merchant interviews;
-- today's three: the reset itself, engineering owning the method, and every decision assessed on its merits.
+**Your decisions in force** ([`founder-decisions.tsv`](../founder-decisions.tsv)). I assessed each on its merits, and none rests on the work that is now history:
+- **The plan's go** (G0): the plan is again the one in force.
+- **No standing business model:** it comes from the evidence, which is how each subject decides.
+- **Plain words** (G1): about how I write to you, whatever the plan.
+- **The guard on sellers' money** (G1): it follows the plan's rule that holding sellers' money is your company and legal question ([section 3](../PLAN.md#3-who-does-what)). Decision 1's page stands on it.
+- **Credentials in evidence:** read and cited like any other evidence.
+- **Q3's rows, reconciled at the end** (G0): the reset doesn't touch them.
+- **Agents' effort levels, delegated to me:** still how agents are run.
+- **Reports at each milestone and pause; spikes allowed, with no production code before requirements, an architecture description and engineering documentation; no merchant interviews** (24 October): each is about how you follow the work, about code or about merchants, and holds without the method of that day.
+- **Today's three:** the reset itself, engineering owning the method, and every decision assessed on its merits.
 
 ## What left the working files
 
@@ -71,14 +69,18 @@ All of it is readable at [commit `4923e1c`](https://github.com/Hamza-ye/sharrwah
 - **The studies from before the plan:** the obligation model, the Yemen setup options and the Shopify payments study.
 - **Your message files.**
 - **19 scripts.**
-- **59 decision rows** that had lapsed, or were questions.
+- **59 decision rows** that had lapsed, or were questions. Among them:
+  - your decisions of 10 October, F-00 to F-06 and O-01, restored on 24 October. What they raise is decided when a subject reaches it;
+  - G1's deferral of Decisions 1 to 14 until the re-frame had framed them. So Decision 1 comes back to you now.
 
 ## The tests
 
 - **The search test** ([`method/check_surface.py`](../method/check_surface.py)) passes. The history's terms appear in the working files only in 20 named places, each with its reason. Most are the old briefs' own lists of what their agents must not read.
-- **The cold-start test:** not yet run at this commit.
+- **The cold-start test.** An agent with none of our conversation is given only "resume the work".
+  - **First run:** it named the working files and what each is, found the right next step, and opened nothing in history. It also reported 19 places where a new session could misread the files. Among them: which file wins when the plan and your decisions differ, and what follows from Decision 1 if your answer isn't C. I checked each against the files, and fixed the ones that held.
+  - **Second run,** on the fixed files: not yet run at this commit.
 
 ## What I need from you
 
-- **Veto any line above,** or none.
-- **Decision 1:** [its page](../studies/subjects/S-01/decision-1.md). The answer line is at its end.
+- **Decision 1:** [its page](../studies/subjects/S-01/decision-1.md). The answer line is at its end, and the page says what follows from each answer.
+- **Your word to go on.** Then I start with the pilot's open items and the subject list, which don't wait on Decision 1 ([`STATE.md`](../STATE.md)).

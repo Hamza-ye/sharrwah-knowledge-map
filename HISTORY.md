@@ -15,7 +15,7 @@ On GitHub, commit `abc1234` opens at `https://github.com/Hamza-ye/sharrwah-knowl
 
 **PR #3** was closed without merging on the evening of 10 October, when the work restarted from `main` as PR #4. Commit `968cc8a` records PR #3's commits in this history, using git's "ours" merge, so they stay reachable without their files being taken in.
 
-Its `decisions/founder.md` holds the founder's decisions F-00 to F-06 and one open question, O-01: which legal entity and domicile contracts with sellers and partners. Some of these reached the later record in other words. For example, `PLAN.md` section 1 says "Yemen is the first market, not the design target". The others are not in `founder-decisions.tsv`. To read them: `git show 8946887:decisions/founder.md`.
+Its `decisions/founder.md` holds the founder's decisions F-00 to F-06 and one open question, O-01: which legal entity and domicile contracts with sellers and partners. Some of these reached the later record in other words. For example, `PLAN.md` section 1 says "Yemen is the first market, not the design target". The others are not in `founder-decisions.tsv`. They were restored on 24 October and lapsed at the reset of 25 October (`founder-decisions.tsv`, the reset). To read them: [`decisions/founder.md` at `8946887`](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/894688732f17282d8a268f657aba17b430020fed/decisions/founder.md).
 
 ## PR #4: 10 to 24 October
 
@@ -51,7 +51,7 @@ On 25 October 2026 the founder reset the work to the plan as it stood at G1, wit
 | Baseline | Commit | What it holds |
 | --- | --- | --- |
 | Before the reset | [`4923e1c`](https://github.com/Hamza-ye/sharrwah-knowledge-map/tree/4923e1c96a0296abdaf3f5bdbd8c155e09acfebf) | Everything done between G1 and the reset: the re-frame's work, the method of 24 October and its amendments, the decision records and their checks, the M0 and M1 reports, and the decisions made on them |
-| The reset | the commit after `4923e1c` on PR #7's branch | The plan as it stood at G1, with the pilot's own changes; the working files only (`CLAUDE.md` lists them) |
+| The reset | [`005bdf1`](https://github.com/Hamza-ye/sharrwah-knowledge-map/tree/005bdf1f59d72af53c66aa3d66e6e17aa6306f8d) | The plan as it stood at G1, with the pilot's own changes; the working files only (`CLAUDE.md` lists them). The fixes from its cold-start test follow in the next commit. |
 
 ## How history is kept from here
 
