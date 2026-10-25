@@ -41,17 +41,17 @@ The words this record relies on, each defined in the glossary (`architecture/12-
 ## Scope
 
 **Decides:**
-- In Yemen at launch, C is on, as in every market: the money for each sale stays with the seller's own provider, the seller's own courier, or the seller.
+- In Yemen at launch, C is on, as in every market: the money for each sale stays with the seller's own provider, the seller's own courier, or the seller. Offline methods are shown there now; the seller's own providers count once a provider serving sellers there is integrated with Sharrwah (S-07).
 - Neither A nor B can be switched on in Yemen until its condition in the row below holds, and the founder decides it in a record of its own.
 
 **Takes as given:**
 - D-001's outcome (in `depends_on`).
 
 **Leaves open:**
-- Which of Yemen's wallets and providers let a seller link its own account, and which open accounts only through a platform — S-07. Carried: one that opens accounts only through a platform is B there under D-001's choice 1, and comes to the founder.
+- Which of Yemen's wallets and providers let a seller link its own account, and which open accounts only through a platform — S-07. Carried: under D-001's choice 1, such a wallet is C where the money is held under the seller's own agreement, and B where Sharrwah would be party to the money or to the provider's agreement for it. A case between them, or one whose account would be opened through Sharrwah, comes to the founder.
 - Whether Yemen's licence for "payment services" covers a platform that only links sellers' own providers — S-08. Carried: it would change where, and by which company, Sharrwah may run there, not who holds the money.
 - Yemen's two areas, and whether a seller in one may sell to buyers in the other (F-02, F-03; PAY-43) — S-04. Carried: who holds the money is the same in both.
-- PayPal's own country list — S-07. Carried: PayPal would be C, or B if its account were opened through Sharrwah.
+- PayPal's own country list — S-07. Carried: PayPal would be C under the seller's own agreement. If its account were opened through Sharrwah, choice 1 places it, and it comes to the founder.
 
 ## Decision drivers
 
@@ -60,22 +60,29 @@ The words this record relies on, each defined in the glossary (`architecture/12-
 
 ## The row
 
-The conditions are those of the references-only decision (`decisions/checks/M1-blind-decision-1.md`, section 6), in general terms. What holds in Yemen comes from Stage 1, as corrected by the R5 checks.
+The conditions are the references-only decision's own words (`decisions/checks/M1-blind-decision-1.md`, section 6), each for one of its options: O1 and O2 are C, O3 is B, O4 is A. What holds in Yemen comes from Stage 1, as corrected by the R5 checks.
 
-| Arrangement | Its condition, in any market | In Yemen | Sources |
+**The pilot's marks come first.** Its phase D marked this variation point, S01-VP-01, in six of Yemen's cases (YC-00, YC-120 to YC-123, YC-156), each `unknown`: "No answer variant is shown to work" (`studies/subjects/S-01/yemen-marks.tsv`). The references' own arrangements either fail there or state no condition:
+- Stripe's, WooPayments' and Zid Pay's variants fail on YA-62;
+- Shopify's and BigCommerce's conditioned variants fail on Q2, "the places named in the conditions leaving out the Yemeni market";
+- the rest "state no condition".
+
+What would show it is a platform statement of where those variants hold. The rows below add what Stage 1 shows of Yemen's own providers.
+
+| Option | Its condition, in any market | In Yemen | Sources |
 | --- | --- | --- | --- |
-| C, the seller's own provider | A provider serves sellers there and settles to them directly | Shown: a wallet pays into the seller's own wallet account, and buyers pay into the seller's own accounts | YE-E765 (YK-131's Cash Pay part); YA-131 |
-| C, a courier or an offline method | The method may be used there, paid to the seller or its own courier | Shown: a courier collects on delivery, and buyers pay by transfer to the seller | YK-203; YA-131 |
-| B, a payment company through the platform | A payment company permitted there holds sellers' funds in accounts opened through a platform | None shown | YA-62; YK-514; YK-161; YA-107 |
-| A, the platform holds | A licence there to hold others' funds, or a licensed holder | Each area licenses payment services through its own central bank. Sharrwah holds none | YA-102; YK-515; YA-103; YA-106 |
+| O1, the seller's own provider (C) | "a provider integrated with Sharrwah serves sellers established there and settles to them directly" | Providers settle to sellers there: a wallet pays into the seller's own wallet account, and buyers pay into the seller's own accounts. None is integrated with Sharrwah yet (S-07) | YE-E765 (YK-131's Cash Pay part); YA-131 |
+| O2, offline (C) | "each listed offline method may be accepted there, paid to the seller or the seller's own courier" | Shown: a courier collects on delivery, and buyers pay by transfer to the seller | YK-203; YA-131 |
+| O3, a payment company through the platform (B) | "a payment company permitted there to hold sellers' funds in platform-opened accounts accepts Sharrwah; sellers can pass its verification; the founder has decided" | None shown. The pilot called this need "unsettled, not unmet" (`studies/subjects/S-01/entry.md`:119) | YA-62; YK-514; YK-161; YA-107 |
+| O4, the platform holds (A) | "Sharrwah holds any authorisation required there to hold others' funds; the founder has decided" | The government's area licenses payment services through the central bank in Aden. In the Houthis' area, non-bank institutions may obtain a licence to offer e-rial services. Whether either covers holding sellers' funds isn't shown (Gaps). *Assumption:* Sharrwah holds no licence; none is recorded. No licensed holder is shown | YA-102; YK-515; YA-103; YA-106 |
 
 ## Considered options
 
 | Option in Yemen | Its condition there |
 | --- | --- |
-| **C** | Holds |
+| **C** | Offline methods hold; the seller's own providers hold once one is integrated (S-07) |
 | **B** | Not shown |
-| **A** | Not met |
+| **A** | Not met by Sharrwah; no licensed holder shown |
 
 ## Decision outcome
 
@@ -121,7 +128,7 @@ Each fact carries the conditions its source gives. Stage 1's facts are in `studi
 1. A buyer in Aden orders and pays cash on delivery. The courier collects the cash and pays the seller. Sharrwah bills its own fee separately, and at no point holds the money.
 2. A buyer pays by wallet. The wallet takes the money into the seller's own wallet account. Sharrwah records the outcome (D-002) and what is owed (D-003).
 
-**Checks:** level 3. These facts were checked twice as part of D-001 (`decisions/checks/M1-terms-scope-dispositions.md`). This record's own wording is checked with D-001's revision.
+**Checks:** level 3. These facts were checked twice as part of D-001 (`decisions/checks/M1-terms-scope-dispositions.md`). This record's wording was checked with D-001's revision (`decisions/checks/M1-market-binding-check.tsv`), and its findings applied (`decisions/checks/M1-market-binding-dispositions.md`).
 
 **Review** when a licence, a licensed holder, or a payment company that holds through platforms appears in Yemen.
 

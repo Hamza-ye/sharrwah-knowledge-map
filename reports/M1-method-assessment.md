@@ -135,7 +135,7 @@ Two expectations would be mistaken:
 
 ## Amendment 4, proposed
 
-It restores the safeguards that were dropped, and makes the method's own changes traceable. Part two gives the evidence for 4c and 4d, part three for 4e, part four (`reports/M1-plan-trace.md`) for 4c's trace of an approved plan, and part five (`reports/M1-market-binding.md`) for 4f.
+It restores the safeguards that were dropped, in the form they already had, and makes the method's own changes traceable. Part two gives the evidence for 4c and 4d, part three for 4e, part four (`reports/M1-plan-trace.md`) for 4c's trace of an approved plan, and part five (`reports/M1-market-binding.md`) for 4f.
 - **4a. Claims of absence** (section 6).
   - A claim that something isn't there ("only", "none", "doesn't show", "not found") is a fact only when it names:
     - its searches: `method/corpus_search.py`, whose header lists what it covers, plus the structures that bear on the claim, found through the repositories' indexes;
@@ -163,34 +163,43 @@ It restores the safeguards that were dropped, and makes the method's own changes
     - the engineering sources were gathered for the payment seam; they don't "cover payments only" (R-04);
     - F-06 and the other decisions of 10 October are direction from the early studies, and none chooses among design options (your note of 25 October);
     - the first plan's rule that kinds of source are compared like with like (`PLAN.md`:311; `method/source_kinds.py`) comes back at step 3.
-- **4d. Variants** (section 5, step 3).
-  - Where the references differ, or one reference carries more than one variant at once, each variant becomes an option, with how it is bound: together, or one per market, store or plan.
-  - When one is a restricted form of another that the general one can reach by configuration, the general one is kept, and the restricted one is bound where needed.
-  - These are the first plan's coexistence step and generality rule (Czarnecki, Helsen and Eisenecker 2005). The second change dropped both.
-  - Section 2 ties variability to markets; 4d extends it to the references' variants.
-  - Choices 2 and 3 follow it since the revision of 25 October. The version sent to you said "never".
+- **4d. The first plan's test form, restored per decision** (sections 3a, 5 and 6; part two; part five, section 6).
+  - **What it restores.** The first plan (G0, 12 October) analysed each expensive decision from the references before anything else. The pilot ran it (S-01, phases B and C). The re-frame of 18 October stopped it before any other subject (`studies/proposals/plan-change.md`:21–24). It has four steps (`2842819:PLAN.md`, the test form):
+    1. the decision's variation points, and the variants the references show (phase B);
+    2. why they differ: "market, named rule", "market, pattern", "vendor choice", "maturity", "business model" or "unknown" (step 3);
+    3. how the variants coexist, A in one store, B one per store, market or plan, C one per product, D mutually exclusive, and the generality rule (step 4; Czarnecki, Helsen and Eisenecker 2005);
+    4. what follows by rule (step 5): "a variation point behind one interface, bound per market, store or plan"; "D with a market cause: a variation point bound per market"; vendor choice or business model, "if expensive to change, the founder decides, on a recommendation"; maturity or unknown, "kept open as a variation point until evidence settles it".
+  - **In proportion,** as the pilot's own report proposed for later subjects (`studies/subjects/S-01/method-report.md`, "Proposed changes before more subjects"):
+    - per decision at levels 2 and 3, not per word the platforms use: the pilot's 23 variation points cost 339 million tokens in phases B to D, rework included;
+    - from the statements already recorded, the re-frame's 2,600 and the concern map, not new reading runs;
+    - in the pilot's files: `variation-points.tsv`, `variants.tsv`, `analysis.tsv`.
+  - **The cause sets the outcome type** (section 3a): a market cause gives a Configured outcome, never a Built one.
+  - **D-001 already rests on it:** the pilot's phase C for S01-VP-01 (D-001, Evidence E). Choices 2 and 3 follow the coexistence step since the revision of 25 October. The version sent to you said "never".
 - **4e. Whose words** (sections 6, 10 and 13; part three, revised after its check).
   - **Amendment 2c is widened:** a record never rests on the wording of another record, a draft, a study, a note, a model or a check. Each of these can point to a source, and a fact rests on the source.
   - **Section 13's heading,** "Kept as evidence and inputs, not as deliverables", becomes "Kept as inputs and pointers, not as deliverables". What it lists as evidence stays evidence: `evidence/`, and the sources Stage 1 quotes.
   - **The checker at levels 2 and 3** confirms that each fact a record rests on resolves to a source. A checker that recommends a precedent cites its source.
   - *Fits the method:* it extends 2c, and puts the check where section 6 already places checking.
 
-- **4f. A market is bound once** (sections 1, 3a, 5 and 8; `reports/M1-market-binding.md`).
-  - **A market is a row and a bounded decision, nothing more.** For each decision a market binds, its row and the decision bounded to it are one record: outcome Configured, varying by that market. It holds the condition each option needs, what holds there, each fact by its id and date, and what the row binds. D-006 is the first. Other records name a market only to point to its row, in their Confirmation.
-  - **The pattern comes first, from the references alone.** At framing, each subject states its variabilities from the references, blind to every market: what all members share, what varies, and the condition a market must state for each variant. That is FAST's "Parameters of Variation", and those conditions are the columns of every market's row. In M1 this is what the first market's framing shadowed: both references switch their own payment service on per market, and leave sellers' own accounts and offline payment open (`decisions/checks/M1-blind-decision-1.md`).
-  - **Section 5's evidence step** no longer takes "the first market's facts from the Stage 1 digest". Options are drafted and judged from the references and the drivers. At close, step 6 walks each market's row through the subject's decisions:
-    - a row the decisions carry needs nothing more;
-    - a row that needs a value is bounded in that market's record;
-    - a row the design can't carry goes to you (G1's B2).
-  - **Section 1's end walkthrough and section 8's example** speak of each launch market's row, not "the first market's flows" or a buyer in one city.
-  - **Earlier work built for one market** is an input to that market's record, never a candidate for a subject's design. This covers the Yemen setup options, the obligation model's Yemen rows and launch stages, and the 42 payment rows that name the first market.
-  - **The guard's check widens:** a market's name or its Stage 1 ids appear in a Built record only in its Confirmation, never in the glossary, and otherwise only in that market's rows.
-  - *Fits the method:* it is section 3a's own rule, "References first, then the market", made to hold at the step that breached it. It moves the first market into one record rather than adding one.
+- **4f. A market is bound once, by the first plan's phase D** (sections 1, 3a, 5 and 8; part five).
+  - **What it restores.** Two pieces, in the pilot's form:
+    - the first plan's end state, "every Yemen case is marked against every subject", made after the analysis (4d), as the pilot's phase D did: 183 marks over 30 cases. The re-frame stopped it ("marking each money question against Yemen's cases: phase D");
+    - the drafts' rule of 19 October, "Yemen's evidence is read after the design sections are written" (`PLAN.md`:617), which the method's evidence step later contradicted.
+  - **Section 5's evidence step** no longer takes "the first market's facts from the Stage 1 digest". Options come from the references and 4d's analysis.
+  - **At close, each market's cases are marked against each variation point,** in the pilot's form (`bears-on.tsv`, the marks file): "carried unchanged", "carried only with a partner", `unknown` or "no placement", each with what would show it.
+  - **The first plan's rules for what the marks bind:**
+    - "a Yemen case with no placement: a product gap, written without Yemen's name (Q2's rule 3), and a design decision for the founder";
+    - "A deferred decision is recorded with what it binds: the variation point stays open and is set per market".
+  - **A market's marks for a decision, and what they bind, are one record:** outcome Configured, varying by that market. D-006 is the first, from S01-VP-01's marks. Other records name a market only to point there, in their Confirmation.
+  - **Section 1's end walkthrough and section 8's example** speak of each launch market's marks, not "the first market's flows" or a buyer in one city.
+  - **Earlier work built for one market** is an input to its marks, never a candidate for a subject's design. This covers the Yemen setup options, the obligation model's Yemen rows and launch stages, and the 42 payment rows that name the first market.
+  - **The guard's check widens:** a market's name or its Stage 1 ids appear in a Built record only in its Confirmation, never in the glossary, and otherwise only in that market's own records.
+  - *Fits the method:* it is section 3a's own rule, "References first, then the market", restored in the form the first plan gave it and the pilot ran. It adds no artifact type.
 
 **Not proposed:**
 - a new mapping pass before each decision: Q1 is the map, and M2 refreshes it;
 - a rule on older and newer founder decisions: sections 3 and 10 cover it;
-- the first plan's cause labels and per-subject variation points, whose cost was measured;
+- the first plan's analysis per word the platforms use, as the pilot ran it: 4d restores it per decision instead;
 - more rounds of checks.
 
 **The risks behind it.** W-20 (omissions) is open. The risk of safeguards lost when the method changes is W-08's, whose mitigation failed. W-08 is updated rather than a new risk added.

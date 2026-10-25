@@ -28,14 +28,15 @@ This is the pilot's Decision 1 (`studies/subjects/S-01/entry.md`, S01-VP-01). Th
 
 **Why:**
 - your guard of 18 October already keeps A and B from going live without you;
-- **in both references, a platform's own money-holding service is switched on market by market.**
-  - Shopify Payments "is only available to online stores in certain countries and regions", with Stripe as its "banking partner".
-  - Salla activates its own payments per country, after verifying the store ("How to Activate Salla payments in Kuwait"; "Activate Salla payments in the UAE").
+- **the pilot's own analysis reached this from the references, on 17 October** (`studies/subjects/S-01/analysis.tsv`, S01-VP-01). The references carry several holders, side by side in one store or set per market, store or plan (its coexistence: "salla=A; zid=A; shopify=A+B; bigcommerce=B; woocommerce=A+B", in the first plan's letters, not this record's options). The first plan's rule then gives "the platform carries all the variants at once; a variation point behind one interface, bound per market, store or plan; a decision for the founder, on a recommendation". This record follows that analysis;
+- **in both references, a platform's own money-holding service comes with conditions:**
+  - Shopify Payments "is only available to online stores in" "certain countries and regions", by "the country where your business is located". Where it is supported, "Stripe won't be available for you to activate", because "Stripe is Shopify Payments' banking partner". Its processors may hold funds (Evidence, B);
+  - Salla Payments needs "all three requirements": a store on "Salla Plus, Pro, or Special", "store verification is complete", and "Payments have been enabled for your store by the Salla team" (its articles for Kuwait and the UAE).
 
-  So A and B are a switch per market, and your guard makes each switch yours;
-- **sellers' own provider accounts, and payments made outside any provider, work in both references wherever a provider serves the seller.** That is the part every market shares, so it is what is built (C);
-- **made without the first market, the decision is the same.** An agent that never saw the first market, this record or the glossary reached this line from the references and your guard alone (`decisions/checks/M1-blind-decision-1.md`). It read your guard literally on where B ends, which is choice 1 below;
-- **the first market is one row** (D-006): C is shown working there, no payment company is shown holding through a platform, and A would need a licence in each area. So C is on there, as everywhere at launch.
+  *My reading:* so A and B can be a switch per market, and your guard makes each switch yours;
+- **both references offer sellers' own provider accounts, from a list each keeps for the seller's country, and payments made outside any provider.** On Salla, online methods need a paid plan. *My reading:* that is the part every market shares, so it is what is built (C);
+- **made without the first market, the decision comes out the same.** An agent that never saw the first market, this record or the glossary reached this line from the references and your guard (`decisions/checks/M1-blind-decision-1.md`; what it read: `M1-blind-decision-1-log.md`). It read your guard literally on where B ends, which is choice 1 below;
+- **the first market is one row** (D-006): C is shown working there, and no payment company is shown holding through a platform. *On my reading,* A would need a licence, or a licensed holder, in each area; no source read shows which (D-006, Gaps). So C is on there, as everywhere at launch.
 
 **The line's words,** as the glossary defines them from your guard, the pilot's entry, and Shopify's and Salla's own help and structures (`architecture/12-glossary.md`):
 - **Sellers' money:** what a buyer pays for a seller's order, until it reaches an account the seller holds under its own agreement, or the seller's own hands. Not Sharrwah's own fees, and not store credit, which is value a seller owes rather than money paid in.
@@ -142,14 +143,15 @@ The words this record relies on, each defined in the glossary (`architecture/12-
 - **Who the references name as holding the money:**
   - payment processors: Shopify's Payment Processors, and Adyen N.V. behind Shopify Payments; Stripe, in its own terms;
   - on Shopify's international Managed Markets orders, Global-e, which acts as the merchant of record (Evidence, B).
-- **The references switch their own money-holding service on market by market,** and leave sellers' own provider accounts and offline payments open wherever a provider serves the seller (Evidence, D).
+- **The pilot's analysis of who holds the funds** (S01-VP-01, phase C): the cause is "vendor choice", the references carry several holders at once, and the first plan's rule makes it a variation point bound per market, store or plan, decided by the founder (Evidence, E).
+- **Each reference offers its own money-holding service only in some countries, and turns it on store by store under conditions.** Beside it, each offers sellers' own provider accounts, from a list it keeps, and offline payments (Evidence, D; the conditions are the sources', the pattern is my reading).
 - **One platform for many markets** (G1's B1 and B2, which the founder gives as intent, not as decisions): "Adding a market, a currency or a provider shouldn't need a redesign", and a market's law, sanctions and licences, and the founder's choice of providers, "should mostly decide what is available there, not how Sharrwah is built". *(The coordinator's reading: adding a holding arrangement in a market shouldn't need a redesign.)*
 
 ## Considered options
 
 | Option | Where the money sits | What it needs built | What it needs from outside |
 | --- | --- | --- | --- |
-| **A. Sharrwah holds a balance for the seller** | in accounts in Sharrwah's name, with a balance per seller, as Salla and Zid present their balances | a ledger of seller balances, collection into Sharrwah's accounts, payouts and reconciliation | a licence or permission to hold others' funds, market by market, or perhaps a licensed partner to hold them: each market's row says which holds there |
+| **A. Sharrwah holds a balance for the seller** | in accounts in Sharrwah's name, with a balance per seller, as Salla and Zid present their balances | a ledger of seller balances, collection into Sharrwah's accounts, payouts and reconciliation | *My reading:* a licence or permission wherever a market's rules require one to provide payment services, or perhaps a licensed partner to hold the money. No cited source shows which. Each market's row records what is known there (D-006 for the first market) |
 | **B. A processor holds it, in an account the seller opens through Sharrwah** | with the processor, as Shopify Payments' processors (its Payment Processors; Adyen N.V.) hold, and as Stripe's terms say of funds held by Stripe, within the scopes under Evidence | an integration with the processor, onboarding sellers to it, and showing its balance | a processor that serves the market and holds funds in accounts opened through Sharrwah |
 | **C. Each payment method's own arrangement holds it:** a provider, in the seller's own account with it; a courier under the seller's own contract, until it settles with the seller; the seller, for a manual method | with each provider, as in BigCommerce's "merchant account with your merchant service provider" (S01-V-532); with each courier; with the seller | an integration with each provider and courier (none for a manual method), and one boundary over them (D-002) | a contract between the seller and each provider or courier, and, where a provider requires one, Sharrwah's own integration agreement with it: both platforms offer providers from a list they keep (`HC:payments/third-party-providers/configuring-providers.md:30`; `SA-en:807`) |
 | **Defer** | undecided | the boundary only | nothing now |
@@ -182,7 +184,7 @@ The payment boundary, as proposed (D-002), leaves room for A or B behind it. Bui
 ## The guard
 
 - **Outcome type: Built.** The arrangement built is C. A and B are named in the range but reserved: they are not built. Once more than one is built, which one is on in a market becomes a Configured value that the founder owns.
-- **No market's facts shape the outcome.** Nothing that holds money is built at launch, because this record chooses C. The founder's guard limits only what goes live: it neither requires a proposal to provide for A or B, nor rules one out. The references themselves switch their own service on per market (Evidence, D), and a market's row decides only where A or B could later be switched on. The first market's row is D-006.
+- **No market's facts shape the outcome.** Nothing that holds money is built at launch, because this record chooses C. The founder's guard limits only what goes live: it neither requires a proposal to provide for A or B, nor rules one out. The references offer their own service only in some countries, store by store (Evidence, D; my reading), and a market's row decides only where A or B could later be switched on. The first market's row is D-006.
 
 ## Evidence
 
@@ -213,11 +215,22 @@ Each fact carries the conditions its source gives.
   - **BigCommerce's PayPal page:** "Funds credit immediately into your PayPal business account while payments process" (S01-V-026: S01-BC-023). Its help describes PayPal Checkout as "a standalone PayPal integration that allows you to receive payments to your PayPal account" (S01-BC-077).
   - **Salla,** with a shipping company outside Salla's own waybills, as of 31 August 2026: "تتم تسوية مبالغ الدفع عند الاستلام مباشرة بين التاجر وشركة الشحن وفقاً للاتفاق المبرم بين الطرفين" (cash-on-delivery amounts are settled directly between the merchant and the shipping company, under the agreement between them) (S01-V-038: S01-SA-091).
 
-**D. The references switch their own service on market by market,** and sellers' own accounts stay open (quotes checked by script on 25 October 2026, from the references-only decision, `decisions/checks/M1-blind-decision-1.md`):
-- **Shopify:** "Shopify Payments is only available to online stores in" "certain countries and regions" (`HC:payments/shopify-payments.md:9`); "Shopify Payments is the only payment gateway designed and operated by Shopify", with Stripe as "Shopify Payments' banking partner" (`HC:payments/third-party-providers/payment-gateway-availability.md:17`).
-- **Salla:** "You can only start using electronic payment gateways after your store verification is complete" (`SA-en:447`); per-country articles, "How to Activate Salla payments in Kuwait" (`SA-en:1046`) and "Activate Salla payments in the UAE" (`SA-en:1080`).
+**D. The references' own services come with conditions,** and sellers' own accounts and offline payment are offered beside them (quotes checked by script on 25 October 2026):
+- **Shopify:**
+  - "Shopify Payments is only available to online stores in" "certain countries and regions" (`HC:payments/shopify-payments.md:9`).
+  - "If it's supported in the country where your business is located, then Stripe won't be available for you to activate. This is because Stripe is Shopify Payments' banking partner" (`HC:payments/third-party-providers/payment-gateway-availability.md:17`). "Banking partner" doesn't say who holds the funds; Evidence B does.
+  - Its providers are chosen "from the list" (`HC:payments/third-party-providers/configuring-providers.md:30`), filtered "by country or region" (`HC:payments/third-party-providers/payment-gateway-availability.md:7`).
+- **Salla:**
+  - "Before you can activate Salla Payments, all three requirements must be met:" "Your store is on Salla Plus, Pro, or Special.", "Your store verification is complete.", and "Payments have been enabled for your store by the Salla team." (`SA-en:651`, for Kuwait; `SA-en:566`, for the UAE).
+  - "If your store is on Basic, you can use cash on delivery. Online payment methods require an eligible paid plan" (`SA-en:651`).
 - **Sellers' own accounts, in both:** "Enter your account credentials for the provider that you selected." (`HC:payments/third-party-providers/configuring-providers.md:32`); "payments flow straight through to your account" (`SA-en:318`).
-- **Offline payment, in both:** "After you receive payment for a customer's order, you can mark the order as paid" (`HC:payments/manual-payments.md:10`); "customers must complete the bank transfer immediately and upload the payment receipt during checkout." (`SA-en:495`).
+- **Offline payment, in both:** "After you receive payment for a customer's order, you can mark the order as paid" (`HC:payments/manual-payments.md:10`); "customers must complete the bank transfer immediately and upload the payment receipt during checkout." (`SA-en:495`, which doesn't say whose account receives it).
+
+**E. The pilot's analysis,** phase C, 17 October, for S01-VP-01, `who or what fills "holds the funds"` (`studies/subjects/S-01/analysis.tsv`; `variation-points.tsv`):
+- cause: "vendor choice";
+- coexistence: "salla=A; zid=A; shopify=A+B; bigcommerce=B; woocommerce=A+B". These are the first plan's letters (`2842819:PLAN.md`, step 4), not this record's options: A, "the variants coexist in one store"; B, "one per store, market or plan, set by configuration";
+- what follows, by the first plan's step 5 (`2842819:PLAN.md`): "the platform carries all the variants at once; a variation point behind one interface, bound per market, store or plan; a decision for the founder, on a recommendation";
+- why it is expensive: "money flows, legal structure and partner contracts".
 
 ## Confirmation
 
@@ -240,4 +253,4 @@ Each fact carries the conditions its source gives.
 - Whether each provider opens its sellers' accounts itself, or through a platform. The work: ask each provider when S-07 proposes it. It decides which providers are C at launch, since one whose account would be opened through Sharrwah comes to the founder. The first market's providers are in D-006.
 - The guard's reach beyond A and B, such as a courier collecting cash under Sharrwah's own contract, is the coordinator's reading of its leading clause. Choice 1 rests on the guard's source as much as its words, and choices 2 and 3 are left open by C itself. The work: the founder confirms or corrects them with this line.
 - Whether a market's rules license a platform that only links sellers' own providers. The work: read each market's licensing definitions at S-08. The first market's are in D-006.
-- Whether Salla limits outside gateways to some kinds of store isn't settled by the held articles (glossary, *payment provider*). Nothing here turns on it.
+- Salla's articles for Kuwait and the UAE limit online payment methods to stores on a paid plan (`SA-en:651`; `SA-en:566`). Whether Salla limits outside gateways further isn't settled by the held articles (glossary, *payment provider*). The part of C every market shares carries this condition.
