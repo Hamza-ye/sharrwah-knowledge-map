@@ -27,12 +27,12 @@ LINE_FILES = {
     "SAPI": SA + "docs-operations/md-openapi/items.jsonl",
     "SDS": SA + "docs-dataschemas/definitions/items.jsonl",
 }
-STR = SA + "dashboard-translations/en/"
+STR = {"STR": SA + "dashboard-translations/en/", "STR-ar": SA + "dashboard-translations/ar/"}
 HC = SH + "help-center/help.shopify.com@en-ar/md/en/manual/"
 ARTICLES = {"SA-en": SA + "help-articles/en/texts.jsonl", "SA-ar": SA + "help-articles/ar/texts.jsonl"}
 AREAS = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "studies", "proposals", "areas", "areas.tsv")
 CITE = re.compile(r"`((?:RT|ROUTER|GQL|CLI|SMENU-en|SMENU-ar|SNAV|SSTAT|SINV|SAPI|SDS|SA-en|SA-ar):\d+(?:`[–-]`(?:\w+-?\w*):\d+)?"
-                  r"|HC:[^`:]+(?::\d+)?|STR:[\w.-]+|AREAS)`")
+                  r"|HC:[^`:]+(?::\d+)?|STR(?:-ar)?:[\w.-]+|AREAS)`")
 QUOTE = re.compile(r'"([^"]{3,})"')
 SEARCH = re.compile(r"\bSearched\b|\bcorpus tool\b|\bgrepped\b")
 
@@ -42,8 +42,8 @@ def records(cite):
     kind, _, rest = cite.partition(":")
     if kind == "AREAS":
         return [open(AREAS, encoding="utf-8").read()]
-    if kind == "STR":
-        fp = STR + rest
+    if kind in STR:
+        fp = STR[kind] + rest
         return [json_unescaped(open(fp, encoding="utf-8").read())] if os.path.isfile(fp) else []
     if kind == "HC":
         fp = HC + rest.partition(":")[0]
