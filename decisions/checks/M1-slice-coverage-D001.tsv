@@ -1,0 +1,109 @@
+area	platform_area	concern	concern_name	statements	sources	sources_cited_by_records	structures_cited_by_records	sources_cited_by_pilot
+A-03	SH-A-04	SH-C-015	Subscription plans	19	6	0	2	3
+A-03	SH-A-04	SH-C-016	Shopify bills (charges to the merchant, invoices, payment of bills)	24	5	0	1	2
+A-03	SH-A-04	SH-C-017	Taxes on Shopify's own charges	7	2	0	0	1
+A-03	SH-A-04	SH-C-018	Transaction fees on sales through payment providers other than Shopify Payments	8	3	1	0	1
+A-03	SH-A-04	SH-C-019	App charges billed through Shopify	21	6	0	1	1
+A-03	SH-A-04	SH-C-201	Shopify Plus contract terms and renewals	6	1	0	1	1
+A-11	SH-A-13	SH-C-059	Order risk and fraud analysis	11	6	0	1	1
+A-11	SH-A-13	SH-C-062	Payment providers settings (which payment methods a store accepts)	12	7	3	2	4
+A-11	SH-A-13	SH-C-074	Shop Pay	14	7	0	1	2
+A-11	SH-A-13	SH-C-075	Shop Pay Installments	13	7	2	1	3
+A-11	SH-A-13	SH-C-076	Third-party payment providers through payments apps	27	7	1	1	1
+A-11	SH-A-13	SH-C-077	PayPal Express Checkout	13	5	2	1	3
+A-11	SH-A-13	SH-C-078	Third-party wallets (Apple Pay, Google Pay, Meta Pay, Amazon Pay)	15	3	0	0	1
+A-11	SH-A-13	SH-C-079	Manual payment methods	9	3	1	1	2
+A-11	SH-A-13	SH-C-080	Local payment methods	14	4	0	1	1
+A-11	SH-A-13	SH-C-081	Cryptocurrency and stablecoin payments	11	5	1	0	2
+A-11	SH-A-13	SH-C-082	Shop Cash	3	1	0	0	0
+A-11	SH-A-13	SH-C-083	Payment customization (Shopify Function)	12	7	0	2	1
+A-11	SH-A-13	SH-C-084	Payment authorization, capture and order transactions	9	3	2	0	1
+A-11	SH-A-13	SH-C-085	Saved customer payment methods and payment mandates	16	5	0	1	1
+A-12	SH-A-14	SH-C-063	Shopify Payments	36	13	1	1	7
+A-12	SH-A-14	SH-C-064	Payment processing and settlement for Shopify Payments	33	5	3	0	4
+A-12	SH-A-14	SH-C-065	Holding the merchant's funds from Shopify Payments sales	16	6	1	0	4
+A-12	SH-A-14	SH-C-066	Payment facilitation in the EU/EEA and UK	11	2	1	0	2
+A-12	SH-A-14	SH-C-067	Regulated payment services in Canada	3	2	1	0	2
+A-12	SH-A-14	SH-C-068	Onboarding, KYC and underwriting for Shopify Payments	21	9	1	1	5
+A-12	SH-A-14	SH-C-069	Payouts	19	10	3	1	6
+A-12	SH-A-14	SH-C-070	Reserves and payout holds	10	3	1	0	3
+A-12	SH-A-14	SH-C-071	Shopify Payments processing rates	9	5	1	1	2
+A-12	SH-A-14	SH-C-072	Chargebacks and disputes	24	7	1	1	3
+A-12	SH-A-14	SH-C-073	Shopify Protect	11	5	0	1	1
+A-12	SH-A-14	SH-C-173	Prohibited and restricted businesses for Shopify Payments	7	3	1	0	2
+A-13	SH-A-15	SH-C-088	Shopify Balance account	45	10	2	1	3
+A-13	SH-A-15	SH-C-089	Shopify Balance cards	7	4	0	1	2
+A-13	SH-A-15	SH-C-090	Shopify Credit	33	9	0	1	1
+A-13	SH-A-15	SH-C-091	Shopify Capital in the United States	23	9	1	1	1
+A-13	SH-A-15	SH-C-092	Shopify Capital in the United Kingdom	15	5	0	1	1
+A-13	SH-A-15	SH-C-093	Shopify Capital in Canada	11	5	0	1	1
+A-13	SH-A-15	SH-C-094	Shopify Capital in Australia	10	5	0	1	1
+A-13	SH-A-15	SH-C-095	Shopify Capital in France	13	6	0	1	1
+A-13	SH-A-15	SH-C-096	Shopify Capital in Germany	13	6	0	1	1
+A-13	SH-A-15	SH-C-097	Shopify Capital merchant cash advances in Ireland, the Netherlands and Spain	16	8	1	1	1
+A-13	SH-A-15	SH-C-098	Shopify Bill Pay	13	6	0	1	1
+A-13	SH-A-15	SH-C-178	Complaints about financial products	4	1	0	0	0
+A-10	SH-A-12	SH-C-060	Order routing	5	5	0	2	1
+A-10	SH-A-12	SH-C-114	Shipping profiles, zones and rates	14	8	0	1	2
+A-10	SH-A-12	SH-C-115	Third-party calculated shipping rates	8	6	0	1	1
+A-10	SH-A-12	SH-C-116	Shopify Shipping (shipping labels)	20	7	0	1	2
+A-10	SH-A-12	SH-C-117	Shipping insurance	7	5	0	1	1
+A-10	SH-A-12	SH-C-118	Fulfillment orders and fulfillments	29	7	0	1	2
+A-10	SH-A-12	SH-C-119	Fulfillment services and third-party logistics	32	5	0	0	0
+A-10	SH-A-12	SH-C-120	Shopify Fulfillment Network and Shopify Logistics	6	2	0	1	1
+A-10	SH-A-12	SH-C-121	Local pickup and local delivery	8	4	0	1	1
+A-10	SH-A-12	SH-C-122	Delivery customization (Shopify Function)	8	6	0	1	0
+A-10	SH-A-12	SH-C-123	Fulfillment constraints (Shopify Function)	8	6	0	1	0
+A-10	SH-A-12	SH-C-124	Delivery option generators (Shopify Functions)	6	5	0	2	1
+A-10	SH-A-12	SH-C-125	Delivery promises	8	4	0	1	1
+A-10	SH-A-12	SH-C-126	Shipment tracking and carriers	4	3	0	1	1
+A-21	SH-A-20	SH-C-135	Sales channels and publishing	23	10	0	2	2
+A-21	SH-A-20	SH-C-136	Shop (consumer app and sales channel)	9	5	0	0	1
+A-21	SH-A-20	SH-C-137	Marketplace order sync (Marketplace Connect)	26	5	1	0	0
+A-21	SH-A-20	SH-C-138	Product feeds and listings for channels	11	4	0	1	1
+A-21	SH-A-20	SH-C-139	Headless and custom storefronts	26	6	0	1	1
+A-21	SH-A-20	SH-C-140	Agentic commerce (AI chats, Universal Commerce Protocol)	20	6	0	1	2
+A-21	SH-A-20	SH-C-141	Shopify Collective	6	4	0	1	1
+A-22	SH-A-21	SH-C-086	In-person card payments	11	5	0	1	1
+A-22	SH-A-21	SH-C-087	Cash management at POS	6	3	0	0	0
+A-22	SH-A-21	SH-C-142	Point of Sale	11	7	0	2	3
+A-22	SH-A-21	SH-C-143	POS hardware	5	2	1	0	2
+A-22	SH-A-21	SH-C-144	POS UI extensions	8	5	0	1	0
+A-03	SA-A-03	SA-C-004	Store plan subscription (Store plan / باقة المتجر: Basic, Plus, Pro, Special)	11	9	1	1	2
+A-03	SA-A-03	SA-C-014	Salla's merchant support and help desk (Self-service system; support plan)	8	5	0	1	3
+A-11	SA-A-17	SA-C-100	Checkout page and cart (Checkout; Guest checkout; Checkout APIs)	12	8	0	2	3
+A-11	SA-A-17	SA-C-115	Cash on delivery through Salla shipping labels (COD remitted through Salla)	13	7	2	1	6
+A-11	SA-A-17	SA-C-116	Cash on delivery through the merchant's own carrier or courier	11	9	3	1	8
+A-11	SA-A-17	SA-C-117	Bank transfer as a payment method (bank accounts shown to customers)	8	7	1	0	3
+A-11	SA-A-17	SA-C-118	Buy now, pay later and instalments (Tabby, Tamara, MISpay, Madfu, Emkan, Deema)	15	9	2	1	6
+A-11	SA-A-17	SA-C-119	Digital wallets and other payment methods connected by the merchant (PayPal; STC Pay direct; Mokafaa Al Rajhi)	12	6	0	1	5
+A-11	SA-A-17	SA-C-120	External payment gateways connected by the merchant (Moyasar, HyperPay, Tap, PayTabs and others)	19	6	2	1	4
+A-11	SA-A-17	SA-C-121	Payment restrictions (Payment Restrictions / قيود الدفع)	10	8	2	1	3
+A-11	SA-A-17	SA-C-122	Fraud protection (نظام الحماية من الاحتيال)	7	4	0	1	2
+A-11	SA-A-17	SA-C-125	Recurring payments and subscriptions sold by stores (Recurring Payments API; Subscriptions)	11	6	0	0	2
+A-11	SA-A-17	SA-C-126	Payment links and quick payment	5	4	0	1	1
+A-12	SA-A-18	SA-C-005	Store balance and Salla billing (Balance & billing / الرصيد والفواتير; رصيد المتجر)	17	10	1	1	5
+A-12	SA-A-18	SA-C-111	E-payments balance and payouts to the merchant's bank (رصيد المدفوعات الإلكترونية; دورة تحويل المدفوعات الإلكترونية)	24	16	5	1	13
+A-12	SA-A-18	SA-C-113	Online payment fees (رسوم المدفوعات الإلكترونية; fees calculator)	8	5	1	1	4
+A-12	SA-A-18	SA-C-114	Who processes and acquires Salla Payments transactions, and under which licence	2	4	1	0	4
+A-12	SA-A-18	SA-C-123	Payment transactions: refund, void and reverse (Transactions)	11	8	0	1	4
+A-12	SA-A-18	SA-C-124	Instant settlements withheld from the merchant's wallet by dropshipping apps (Settlements)	7	6	0	2	4
+A-12	SA-A-18	SA-C-164	Currency in which Salla Payments receives and settles funds	3	6	2	0	6
+A-12	SA-A-31	SA-C-110	Salla Payments: online payments processed through Salla (مدفوعات سلة; المدفوعات الإلكترونية)	43	22	4	2	13
+A-13	SA-A-32	SA-C-128	Financing for merchants (Salla Capital; financial support)	7	2	0	1	2
+A-10	SA-A-19	SA-C-139	Shipping carriers integrated in the dashboard (carriers named in feature flags and plan lines)	46	5	0	0	1
+A-10	SA-A-19	SA-C-140	Salla shipping labels with integrated carriers (بوليصات سلة)	18	9	0	2	4
+A-10	SA-A-19	SA-C-141	Merchant's own carriers, couriers and custom shipping companies	14	14	1	0	6
+A-10	SA-A-19	SA-C-142	Shipping zones, rates and shipping restrictions	27	10	0	1	3
+A-10	SA-A-19	SA-C-143	Shipping routes	5	3	0	0	2
+A-10	SA-A-19	SA-C-144	Shipments: creating, tracking and cancelling (Shipments)	27	7	0	0	3
+A-10	SA-A-19	SA-C-145	Shipping and fulfilment apps (Shipping App; Shipments & Fulfillment APIs; Salla AWB)	25	8	0	1	2
+A-10	SA-A-19	SA-C-146	International shipping readiness, HS codes and customs (International Shipping Readiness)	8	8	0	0	2
+A-10	SA-A-19	SA-C-147	Delivery promises	3	2	0	0	1
+A-10	SA-A-19	SA-C-148	Branch pickup and branch delivery zones	3	2	0	0	0
+A-10	SA-A-19	SA-C-149	Packaging	4	4	0	0	2
+A-10	SA-A-19	SA-C-150	Quality gateway for shipping complaints (بوابة الجودة)	10	7	0	0	2
+A-21	SA-A-16	SA-C-096	Mahally marketplace channel (محلي)	14	8	0	0	2
+A-21	SA-A-16	SA-C-097	Sales channels settings (Sales channels / قنوات البيع)	9	7	0	1	2
+A-21	SA-A-16	SA-C-098	Wholesale market (سوق الجملة; vendors)	13	5	0	1	1
+A-22	SA-A-15	SA-C-095	Salla Point point of sale (سلة بوينت)	39	8	0	0	4
