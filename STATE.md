@@ -59,7 +59,7 @@ Where the work is, on one page (`METHOD.md` section 4). The coordinating session
 - The drafts as deliverables: they are now candidate options.
 - The planned review of the drafts, and the company-decisions run.
 
-**In flight:** nothing. The scheduled check-in is off.
+**In flight:** the route assessment is done (`decisions/checks/M1-route-assessment.md`; 4.7 million tokens), its findings verified (`decisions/checks/M1-route-assessment-dispositions.md`), and the report drafted (`reports/M1-route.md`). One read-only agent is checking the report, capped at 30 tool calls; it writes `decisions/checks/M1-route-check.tsv`. The scheduled check-in is on while it runs.
 
 **M2's feasibility test** is done (read-only; 8.2 million tokens). Its report, brief and scripts are in `studies/subjects/S-02/`. Its verdict is **partly feasible:**
 - **Within each platform,** the structures say which permission gates which page.
