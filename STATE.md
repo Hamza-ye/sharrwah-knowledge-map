@@ -2,7 +2,7 @@
 
 Where the work is, on one page (`METHOD.md` section 4). The coordinating session keeps it, and commits it at every checkpoint. The text from before 24 October is in the history: `git show a05974a:STATE.md`.
 
-**Updated:** 25 October 2026, 18:15 UTC.
+**Updated:** 25 October 2026, 19:17 UTC.
 
 **The method:** `METHOD.md`, adopted on 24 October 2026 with amendments 1, 2 and 3. Amendment 3 (the founder, 23:01 UTC) sets the evidence standard, checks that try to refute, and the acceptance rule: no record is accepted while something it leaves open could reverse it. Amendment 2 adds Terms and Scope to every decision record, and the rule that a record rests on evidence and accepted outcomes, never on another record's wording.
 
@@ -29,7 +29,12 @@ Where the work is, on one page (`METHOD.md` section 4). The coordinating session
   M2's feasibility report, which was only in the session's scratchpad, is in `studies/subjects/S-02/`. 4c is widened: a plan the founder approves is traced into the places the work reads before its work starts, and each report lists what changed in the method and the backlog.
 - **F-06** (the founder, 25 October): it and the other decisions of 10 October came from the early studies, and none chooses among design options. D-001 and D-002 don't take it as given, and the glossary's *payments side* rests on both references' own words.
 - **The first market, bound once** (`reports/M1-market-binding.md`, part five; the founder's questions of 25 October): the glossary names no first-market fact, and 9 of its entries no longer restate a decision's outcome. The founder's test: Decision 1 made by an agent that never saw the first market, D-001 or the glossary reaches D-001's line, and choice 2 for fees (`decisions/checks/M1-blind-decision-1.md`; what it read: `M1-blind-decision-1-log.md`). On choice 1 it read the guard literally, the reading D-001 already puts to the founder. D-001's reasons now come from the references, and the first market is one row and its bounded decision, D-006. A level-3 check of both found 26 fixes, all verified and applied: D-001 had overstated the pattern, and the sources' conditions are now given (`decisions/checks/M1-market-binding-dispositions.md`). The first market entered through four paths the guard's check doesn't see, the first being section 5's evidence step, which contradicts section 3a.
-- **The first plan already held these safeguards** (part five, section 6). The first plan analysed each expensive decision from the references, then marked every Yemen case against it. The pilot ran both, and on 17 October its analysis of who holds the funds concluded "a variation point behind one interface, bound per market, store or plan; a decision for the founder". The re-frame of 18 October stopped both before any other subject. D-001 now rests first on that analysis, and D-006 carries the pilot's six marks. Amendment 4d and 4f are rewritten to restore the steps per decision, in the pilot's form.
+- **The first plan already held these safeguards** (part five, section 6). The first plan analysed each expensive decision from the references, then marked every Yemen case against it. The pilot ran both, and on 17 October its analysis of who holds the funds concluded "a variation point behind one interface, bound per market, store or plan; a decision for the founder". The founder's G1 answer stopped both (`founder-messages/2026-10-18-g1-answer.md`:69–70, :97), and the re-frame carried that out before any other subject. D-001 now rests first on that analysis, and D-006 carries the pilot's six marks. Amendment 4d and 4f are rewritten to restore the steps per decision, in the pilot's form.
+- **Part six, the route** (`reports/M1-route.md`; the founder's question of 25 October: continue, or rebaseline at G1). An agent that wrote none of the method assessed the routes (`decisions/checks/M1-route-assessment.md`); each finding was verified (`M1-route-assessment-dispositions.md`), and a refuting check of the report found 22 fixes, all verified and applied (`M1-route-check-dispositions.md`).
+  - **Continuing as is isn't safe.** Ten problems are confirmed, two as the coordinator's reading: among them, the method's evidence step contradicts its guard, D-001 rests on a rule the method hasn't adopted, and amendment 4 would reverse the founder's G1 decisions without saying so. A brief check G1 kept was lost on 24 October and never listed.
+  - **Recommended: the founder's route, done by a full list.** Pause; G1 as the base; an independent list of every practice and every founder decision in every version; each kept or retired on its merits, by name; one text, `METHOD.md` version 2, approved once; the six records re-checked; a measured trial before scaling. About 31 to 50 million agent tokens (an estimate).
+  - **The founder's rule** (`founder-decisions.tsv`:64): no decision is valid merely because it was accepted before. Each is assessed on its merits before anything builds on it. W-08 is widened to match.
+  - **D-001's first reason is corrected:** the pilot's analysis gives the line's structure; C at launch came from the pilot's recommendation for Yemen and the references-only run.
 - **Under the acceptance rule:** D-001 and D-004 carry everything they leave open. D-002 doesn't carry ten items, and D-003 four, M2's quality scenarios among them, among them the buyer data Shopify's payment request sends a provider (E032:146–163) and stored permissions for B2B and edits. Both stay proposed, as the working basis, until those items are decided at S-05, S-07, S-10, S-11 and S-03 and the records are revised.
 - **Records D-001 to D-006:** the guard flags none, and `decision_status.py` finds no fault in their Terms, Scope and source types. The glossary's quotes are checked by `method/inventory_quotes.py`. The inventory the pass used is `decisions/checks/M1-terms-inventory.md`.
 - **M0** closed with PR #6. M1's pull request is PR #7.
@@ -47,6 +52,7 @@ Where the work is, on one page (`METHOD.md` section 4). The coordinating session
 - **Amendment 2** (24 October, 22:11 UTC).
 
 **Open founder decisions:**
+- **The route** (`reports/M1-route.md`): rebaseline from G1 by a full list (recommended), rebaseline at the current state by a full list, or continue with amendment 4; and whether to pause until version 2 is approved. Decision 1 and amendment 4 wait on it under the recommended route.
 - **Decision 1's line and its three choices** (S-01; `reports/M1.md`): "No sellers' money is held through Sharrwah at launch. A and B are reserved, not built. Switching either on stays yours."
 - **Amendment 4** (`reports/M1-method-assessment.md`, with parts two to five), 4a to 4f, with 4c widened and 4e revised, and 4f added, on 25 October: approve, change or not now.
 - **O-01:** which legal entity and country contracts with sellers and partners (S-08).
@@ -59,7 +65,7 @@ Where the work is, on one page (`METHOD.md` section 4). The coordinating session
 - The drafts as deliverables: they are now candidate options.
 - The planned review of the drafts, and the company-decisions run.
 
-**In flight:** the route assessment is done (`decisions/checks/M1-route-assessment.md`; 4.7 million tokens), its findings verified (`decisions/checks/M1-route-assessment-dispositions.md`), and the report drafted (`reports/M1-route.md`). One read-only agent is checking the report, capped at 30 tool calls; it writes `decisions/checks/M1-route-check.tsv`. The scheduled check-in is on while it runs.
+**In flight:** nothing. The scheduled check-in is off.
 
 **M2's feasibility test** is done (read-only; 8.2 million tokens). Its report, brief and scripts are in `studies/subjects/S-02/`. Its verdict is **partly feasible:**
 - **Within each platform,** the structures say which permission gates which page.
@@ -74,16 +80,18 @@ Where the work is, on one page (`METHOD.md` section 4). The coordinating session
 - M1's agents processed 22.4 million tokens against its budget of 20 million, under the stop line of 25 million. Both are counted by `method/count_tokens.py`.
 - The 2 billion stays as the upper bound. S-01's budget is 20 million agent tokens, and the founder added about 5 million for amendment 2's pass (stop line 6.25 million).
 - **The pass's agents:** the terms inventory 23.8 million (106 steps, its context growing from 49 thousand to 375 thousand tokens: risk W-17), then four capped checks of 3.3, 4.7, 2.6 and 1.0 million. That is 35.4 million for the pass, and 57.8 million for S-01, past the stop line, under the founder's go of 23:01 to continue while productive.
-- **The assessment of 25 October:** three independent checks, 4.1 million (38 requests), 3.0 million (22 requests) and 2.2 million (13 requests), and the founder's market test, 3.3 million (25 requests). S-01 in all: 70.4 million.
-- **The route's size,** in the plan of 24 October: about 0.3 billion agent tokens to M8, give or take half. Spent so far: 85.9 million (M0 7.3, S-01 70.4, M2's test 8.2). S-01 used about three times its budget, so the estimate is re-sized at M2's framing.
+- **The assessment of 25 October:** three independent checks, 4.1 million (38 requests), 3.0 million (22 requests) and 2.2 million (13 requests), and the founder's market test, 3.3 million (25 requests). The route assessment, 4.7 million (30 requests), and the check of part six, 2.4 million (17 requests). S-01 in all: 77.5 million.
+- **The route's size,** in the plan of 24 October: about 0.3 billion agent tokens to M8, give or take half. Spent so far: 93.0 million (M0 7.3, S-01 77.5, M2's test 8.2). S-01 used about three times its budget, so the estimate is re-sized at M2's framing.
 
 **The backlog:** `python3 -I method/decision_status.py` gives 16 subjects and 6 decision records: 5 proposed, 1 deferred.
 
-**Next step:**
-- the founder's answers on amendment 4 and on Decision 1. Frame their message first;
-- if amendment 4 is approved, enter it in `METHOD.md` section 12, with its changes to sections 5, 6, 7 and 13, and apply it from the next record put for acceptance;
-- on the answer: accept D-001 and D-004 with the founder's choices. D-002 and D-003 stay proposed until the subjects that decide their open items have done so (acceptance rule);
-- merge PR #7 with `reports/M1.md` as its description, and add the row to `HISTORY.md`;
-- then M2, the spine: frame it from S-02's backlog row (the feasibility test; KM-MTH-01's commonality rule for the map; the scenarios' brief, which names neither D-002, D-003 nor the seam; Shopify's engineering sources on peak load and resilience, each weighed by its type), with options for its scope and budget, and the route re-sized.
+**Next step:** the founder's answer on the route. Frame it first.
+- **If the rebaseline from G1** (`reports/M1-route.md`, section 4):
+  - PR #7 merges as M1's pause, with `reports/M1.md` as its report, and a row in `HISTORY.md`. Nothing is accepted, and M2 doesn't start;
+  - the list's brief is written and checked by a separate agent before it runs (G1's rule, `founder-messages/2026-10-18-g1-answer.md`:65);
+  - the list, in short runs by version: every practice with the risk it controls, and every founder decision with the plan it was made for, its rationale, its evidence and whether it still holds;
+  - `METHOD.md` version 2 from the list, its independent check, and the founder's one approval, in its own pull request;
+  - D-001 to D-006 checked again under it; Decision 1 to the founder; then the trial on M2's first decision.
+- **If continue:** enter amendment 4 in every section it changes (1, 3a, 4, 5, 6, 7, 8, 10, 12 and 13), naming the G1 decisions it reverses for the founder's answer; then the founder's answers on Decision 1, PR #7's merge, and M2's framing.
 
 **To resume:** `METHOD.md` section 9. Read `METHOD.md`, then this file, then the open subject's records.

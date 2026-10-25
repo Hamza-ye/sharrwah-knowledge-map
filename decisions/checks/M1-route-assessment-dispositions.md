@@ -18,7 +18,7 @@ Each finding was tested against the lines it cites (`METHOD.md` section 6). None
 | 6. Founder decisions reversed without saying so | Holds, and is wider | **What the founder stopped at G1:** "labelling why platforms differ" and "checking each money question against Yemen's cases" (`g1-answer.md`:69–70). The founder also said section B's questions "don't take the test form" (:97). 4d and 4f bring these back, and say "the re-frame" stopped them (`M1-method-assessment.md`:167, :186).<br><br>**Wider:** part two calls dropping the variability analysis "two choices of mine" (`M1-plan-changes.md`:53). In fact the founder's G1 answer dropped it; only coarsening the sweep to areas was the coordinator's (`plan-change.md`:207).<br><br>**Qualified:** G1 stopped "going subject by subject in batches, as the plan does now" (:71). The method runs one subject at a time, not in batches. That is a partial return to subjects. The founder accepted it with the method, but it is not listed at `METHOD.md`:413–420 |
 | 7. Two reports disagree | Holds | Part two: "Not proposed: bringing back the test form's cause labels" (`M1-plan-changes.md`:81). 4d brings back the cause step (`M1-method-assessment.md`:168–169) |
 | 8. STATE under-applies amendment 4 | Holds | `STATE.md`:84 names sections 5, 6, 7 and 13. Amendment 4's own items also name sections 1, 3a, 4, 8, 10 and 12 (4c to 4f) |
-| 9. The pilot's open items were not carried | Holds | Finding 36, the "21 of 23" letter rows, and finding 29 (`method-report.md`:146–149) |
+| 9. The pilot's open items were not carried | Holds as stated: not in the method, the M1 reports or `STATE.md` | Finding 36, the "21 of 23" letter rows, and finding 29 (`method-report.md`:146–149). **Qualified by the check of part six (RC-12):** findings 36 and 29 were carried into the re-frame's drafting (`PLAN.md`:34, :616) and dropped on 24 October, and the re-frame lapsed the letter rows (`plan-change.md`:57) |
 | 10. The rewrite risk can't trip | Holds, as interpretation | W-03's trigger is "a change to METHOD.md without an amendment" (`risks.tsv`:4). Amendments 2 and 3 came the day the method was adopted, and 4 the next day |
 
 ## The routes
@@ -29,7 +29,7 @@ Each finding was tested against the lines it cites (`METHOD.md` section 6). None
   - So does "the last was itself called the re-baseline, made after the founder asked this same question" (`HISTORY.md`:44; `founder-messages/2026-10-24-method-accepted.md`:42).
   - The added constraint: a literal reset is excluded. History is never rewritten (`HISTORY.md`:48; `METHOD.md`:135), and documents cite commits by hash.
   - **Qualified:** "about half a billion tokens a subject … covers about four of the 15 open subjects" is the pilot's form, run per platform word. The form per decision, from statements already recorded, has never been measured. The assessor marks the figure as interpretation.
-- **Rebaseline at the current state, by function:** adopted as the recommendation (`reports/M1-route.md`), with the additions below.
+- **Rebaseline at the current state, by function:** its list of every practice in every version, its one text and its trial are adopted. Its base is not: after the founder's rule that no decision is valid merely because it was accepted before (`founder-decisions.tsv`:64), part six recommends the founder's route, from G1, done by the same full list (`reports/M1-route.md`, sections 3 and 5). Its list of founder decisions to carry into version 2 is replaced: each decision is assessed on its merits first.
 
 ## Added by the coordinator
 
@@ -47,6 +47,6 @@ Each finding was tested against the lines it cites (`METHOD.md` section 6). None
   - 5.5 million for the founder's market test and its check;
   - 4.7 million for this assessment.
 
-  In all, 75.1 million against 20.
+  In all, 75.1 million, against a budget of 20 million and about 5 million the founder added for amendment 2's pass, which went past its stop line under the founder's go to continue while productive (`founder-decisions.tsv`:47). The check of part six added 2.4 million: 77.5 million.
 - **Losses are not only of G1's practices.** The drafting rule of 19 October, "Yemen's evidence is read after the design sections are written" (`PLAN.md`:617), came after G1, and the method's evidence step contradicted it. So the list must cover every version, not G1's alone.
 - **The G1 point's own gaps,** for the list: the register as its end; the first market used for scope (`2842819:PLAN.md`:28, :144, :22); its unit per platform word; the cause step's first run (`PLAN.md`:496); options from the five platforms only; and cost measured only at the end (`method-report.md`:182).
