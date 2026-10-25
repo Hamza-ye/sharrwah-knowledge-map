@@ -94,6 +94,43 @@ All of it holds. The count in D-003 (114 types, 38 reversals, 36 twins) was repr
 
 **Not carried, now marked in the records:** D2-29 (stored value), D2-30 (methods and providers), D2-33 (statuses and edits), D2-35 (payment terms), D3-21 (stored value in the ledger), D3-22 (fees with no sale). D2-31 (capture timing), D2-32 (seller rules' messages), D2-36 (split payment), D2-42 (a courier's deductions) and D3-11 (lost disputes) were open. They are marked "Not carried", because a record can't claim to carry what is unsettled.
 
-## Re-check
+## Re-check of D-001 and D-004, level 3
 
-The changed wording is re-checked by a fresh independent agent, which tries to refute it. Pending.
+`M1-terms-scope-recheck-D001-D004.tsv`: a fresh agent, given the records and the evidence but not the earlier checks. 65 claims: 37 hold, 20 fix, 3 not carried, 5 open.
+
+**The evidence its findings rest on was checked first:**
+- Shopify's PayPal pays into the seller's own PayPal account at the store's email, or one it signs up for (`HC:payments/paypal/set-up-paypal.md:3`, `:5`);
+- Salla's wallet lets sellers "Add funds" and "Transfer balances between accounts" (`SA-en:1240`);
+- Shopify Capital is repaid "from a daily percentage rate of your daily sales" (`HC:finance/shopify-capital/united-states.md:5`, `:9`);
+- both platforms offer providers from a list (`HC:payments/third-party-providers/configuring-providers.md:30`; `SA-en:807`);
+- Torod on Salla is linked by installing its app (`SA-en:1181`), and Collectpluss issues the seller a username and password (`SA-en:234`);
+- Salla has the seller "contact the customer to agree on the refund method" for a bank transfer (`SA-en:994`);
+- Tamara's request goes through Salla: "إرسال طلب فتح حساب أعمال" (`SA-ar:881`).
+
+**The founder's principle applied to the B/C line.** On 25 October the founder said: when an earlier decision conflicts with focused evidence, establish its reason, and surface the conflict rather than let older wording win. The guard of 18 October names B in its words as "an account opened through Sharrwah", and its notes define B as "the entry's options A and B" (`founder-messages/2026-10-18-g1-answer.md`:20, :95). The entry's B is a processor holding money inside the platform's own payment product (`studies/subjects/S-01/entry.md`:119), and its Decision 7 counted an account "opened through Sharrwah" as "B or C" (:238). The evidence shows Tabby collecting under the seller's own agreement, "not through Salla Payments" (`SA-ar:865`). The first check's fix (C10) had applied the words. D-001 now puts both readings to the founder as choice 1, recommending the source's. The same treatment gives choices 2 (fees and repayments billed apart) and 3 (no balance sellers pay into), where C or the guard's words reach further than the recorded reason.
+
+**Applied:**
+
+| Finding | What was done |
+| --- | --- |
+| BC-1 | Shopify's PayPal is shown as a case between B and C, with the seller's own account at the store's email. |
+| BC-2, BC-3 | C's test, on the page and in the terms, is: the seller's own agreement, linked by its own keys, account email or the provider's own app (`SA-en:1181`). |
+| BC-4, open | A courier account asked for through Sharrwah is placed by choice 1: C under the seller's own agreement. |
+| BC-5 | The Tabby placement is shown as a reading, both readings with the evidence, and the founder chooses. |
+| BC-6, open | Added to D-001's Gaps: whether the first market's wallets link by the seller's own keys. |
+| FP-1 | "A would need a licence" is marked as the coordinator's reading; the definitions are unread. |
+| FP-2 | D-002's room for A and B is "as proposed". |
+| FP-3, R-9, S-10, DS-3, S-8 | Choice 2 on the page and in D-001's outcome: fees, and anything owed to Sharrwah or its partners, billed apart, never taken from sellers' money. D-004 rows 6 and 9 take it from D-001. |
+| FP-4 | The page lists a Sharrwah-run marketplace, and merchant-of-record holding as Global-e's, and states D-004's answers on agency, security interest and terms. |
+| FP-5, open | Holds. The level 3 check of 24 October read Stage 1's Torod page as "خدمات طرود للشحن والتوصيل في اليمن" (`D-001-D-004-level3-pass3.tsv`, row 42). The Torod on Salla appears to be another company with a common name. |
+| S-5 | Building B and switching it on is the founder's decision in a record of its own, which D-001 provides for, so how S-07 places a provider doesn't change D-001. |
+| T-1 | "Sellers' money" runs until an account the seller holds under its own agreement. Money paid into an account held through Sharrwah is still sellers' money. |
+| T-2 | "Platform balance" includes money sellers pay in; choice 3 rules such a balance out at launch. |
+| T-3 | Manual payments are recorded by hand, or reported by an integrated courier. |
+| T-4 | D-004's cash on delivery includes the seller's own staff. |
+| T-5, open | D-004's agency definition is marked as the record's, not a legal one; counsel at S-08 is listed under Gaps. |
+| T-6 | The Tamara quote shows the request going through Salla (`SA-ar:881`). |
+| O-2 | The option C row's "from outside" adds Sharrwah's own integration agreement with any provider that requires one, since both platforms offer providers from a list they keep (`configuring-providers.md:30`; `SA-en:807`). |
+| DG-1 | D-004's gap is corrected: Salla has the seller agree a refund method with the customer (`SA-en:994`). |
+| R-2, R-3, R-4 | D-004 rows 2 to 4 name couriers, and row 4 names the seller, not its bank, for a manual method. |
+| R-7 | D-004 row 7: the seller's own accounts under choice 1, and no money held in the seller's account with Sharrwah (choice 3). |
