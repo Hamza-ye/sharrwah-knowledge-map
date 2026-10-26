@@ -26,9 +26,9 @@
 
 **For the founder:** the orientation page, outside the repository: https://claude.ai/artifact/8fLCxo4JGKmGgPjXSpW1BN. It is updated at each milestone.
 
-**In flight:** an independent agent is inspecting S-02's phase A brief (`studies/subjects/S-02/briefs/A-one-platform.md`).
+**In flight:** S-02's phase A for Shopify and for Salla, two agents started at 22:21 UTC on 26 October, under the brief as the independent inspection and its re-check left it (`studies/subjects/S-02/briefs/A-one-platform.md`).
 
-**Next:** fix the brief from the inspection; then phase A, Shopify and Salla first, then Zid, WooCommerce and BigCommerce, with each agent's cost measured after its first steps.
+**Next:** phase A for Zid, WooCommerce and BigCommerce, two at a time; then the capture of cited live pages, and phase B, whose brief gets one more check first.
 
 **Evidence read:** observed-sh at `febbf6c`, observed-sa at `4ca2e89` (the clones' heads on 25 October 2026), and WooCommerce 11.2.1.
 
