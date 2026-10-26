@@ -1,24 +1,30 @@
 # State
 
-**What this file is:** where the work is, on one page (`PLAN.md`, section 9). Updated 25 October 2026.
+**What this file is:** where the work is, on one page (`PLAN.md`, section 9). Updated 26 October 2026.
 
 **The plan:** `PLAN.md`. It is the plan the founder agreed at G0, and on 25 October 2026 the founder reset the work to it, as it stood at G1, with the pilot's own changes and the coordinator's engineering choices (its section 11).
 
-**Where the work is:** Stages 0, 1 and 2 are done (`PLAN.md`, section 4). The pilot, S-01, is done but for the founder's answer to its Decision 1. Stages 3 and 4 haven't started.
+**Where the work is:**
+- Stages 0, 1 and 2 are done (`PLAN.md`, section 4).
+- **G1 is closed.** On 25 October 2026 the founder gave the word to go on, and answered the pilot's Decision 1: C, with the three defaults, in every market at launch. Decisions 2 to 12 follow it (`founder-decisions.tsv`).
+- **The pilot, S-01, is closed.** Its open items are ruled, in its briefs. Its decisions are traced in [`studies/subjects/S-01/register.tsv`](studies/subjects/S-01/register.tsv). Its review pack, [`reports/S-01-review.md`](reports/S-01-review.md), had an independent review ([`studies/subjects/S-01/review-2.md`](studies/subjects/S-01/review-2.md)), then a check of every quote against its line (`method/check_report.py`).
+- **Stage 3 is drafted:** the subject list, [`studies/subjects/subjects.tsv`](studies/subjects/subjects.tsv), is at gate G2.
 
-**Open gate:** G1's remaining item, the pilot's Decision 1. G1's deferral of it lapsed at the reset (`founder-decisions.tsv`).
+**Open gate:** G2 ([`reports/G2.md`](reports/G2.md)).
 
 **Waiting on the founder:**
-- **Decision 1** ([`studies/subjects/S-01/decision-1.md`](studies/subjects/S-01/decision-1.md)): who holds sellers' money.
-- **The founder's word to go on:** any message from the founder telling the coordinator to continue. After the reset, the founder asked the coordinator to wait for their instructions. The reset report ([`reports/reset.md`](reports/reset.md)) says what was carried forward from after G1, and why; it needs no answer, and the founder may veto any line of it. The reset's pull request ([PR #7](https://github.com/Hamza-ye/sharrwah-knowledge-map/pull/7)) is merged into `main`, with a merge commit, on the same word.
+- **The review of S-01's result.** The founder said they would challenge it against the product class and the evidence. The pack ends with two answers:
+  - default 2's "never": at launch, or in every arrangement;
+  - E1 and E2, keeping A and B possible in the design: keep them, bind C now, or decide when the architecture description is written.
+- **G2:** a mark per topic, or "evidence" for all.
+- **Merging [PR #7](https://github.com/Hamza-ye/sharrwah-knowledge-map/pull/7).** It holds the reset and everything since. This file had said it merges on the founder's word to go on. It wasn't merged then, and it waits for the founder's word after their review, so that the review is of open work.
 
-**Next, once the founder says to go on.** Steps 1 and 2 don't wait on Decision 1, or on each other:
-1. **The pilot's open items** (`PLAN.md`, Stage 4, its first bullet). Run the subject checker on a copy of the pilot's folder that keeps the name `S-01`, since the checker takes the subject's id from it. Rule on each item that bullet lists, and mark each ruling in the pilot's briefs.
-2. **Stage 3, the subject list,** from the evidence and ranked by cost of change, with S-01 as its first row. Then G2: the founder marks what Sharrwah won't do and what it must.
-3. **Decision 1,** when the founder answers. Record the answer in `founder-decisions.tsv`, gate G1. What follows from each answer is on its page, under "What follows from your answer".
-4. **Stage 4, the highest-ranked subject on the list after S-01,** once step 1 is done and G2 is answered. If it depends on Decision 1's answer, it waits for it (`PLAN.md`, section 8).
+**Next, once the founder answers:**
+1. **The founder's review.** Check each challenge against its source. Correct what doesn't hold, and say which challenges were checked and didn't hold, with the source. Record the two answers in `founder-decisions.tsv`: they are decisions.
+2. **Stage 4, the highest-ranked subject after S-01:** S-02, what a market is, once G2 is answered.
    - Its budget is fixed before it starts and recorded here. It is set from the pilot's measured cost: about 1.03 billion tokens in all, and about half a billion for a run without its rework, by its method report's estimate (section 12, and its proposed changes).
    - After its analysis, each of its decisions gets its Yemen row (`PLAN.md`, section 6, step 6).
+   - Its pack has an independent review, then `method/check_report.py`, before it goes to the founder.
 
 **In flight:** nothing. No agent is running.
 

@@ -42,9 +42,9 @@ Each milestone is one pull request, merged into `main` with a merge commit. Its 
 | Milestone | Pull request | Date | What it holds | The founder's decision on record |
 | --- | --- | --- | --- | --- |
 | M0, the re-baseline | PR #6 | 24 Oct | `METHOD.md` adopted with amendment 1; the founder's decisions of 24 October; F-00 to F-06 and O-01 restored; the backlog, the risk register and the scripts; `STATE.md` on one page; `reports/M0.md` | `founder-decisions.tsv`, 24 October; `founder-messages/2026-10-24-method-accepted.md` and `founder-messages/2026-10-24-approved-plan.md` |
-| M1, the money boundary, ended by the reset | PR #7 | 25 Oct | The work under the method of 24 October, then the reset to the plan as it stood at G1 (below) | `founder-decisions.tsv`, 25 October |
+| M1, the money boundary, ended by the reset | PR #7 | 25 Oct | The work under the method of 24 October, then the reset to the plan as it stood at G1, and what followed it (below) | `founder-decisions.tsv`, 25 October |
 
-## The reset of 25 October
+## The reset of 25 October, and what followed
 
 On 25 October 2026 the founder reset the work to the plan as it stood at G1, with the pilot's own changes (`PLAN.md`, section 11).
 
@@ -52,6 +52,7 @@ On 25 October 2026 the founder reset the work to the plan as it stood at G1, wit
 | --- | --- | --- |
 | Before the reset | [`4923e1c`](https://github.com/Hamza-ye/sharrwah-knowledge-map/tree/4923e1c96a0296abdaf3f5bdbd8c155e09acfebf) | Everything done between G1 and the reset: the re-frame's work, the method of 24 October and its amendments, the decision records and their checks, the M0 and M1 reports, and the decisions made on them |
 | The reset | [`005bdf1`](https://github.com/Hamza-ye/sharrwah-knowledge-map/tree/005bdf1f59d72af53c66aa3d66e6e17aa6306f8d) | The plan as it stood at G1, with the pilot's own changes; the working files only (`CLAUDE.md` lists them). The fixes from its two cold-start tests follow in the commits after it, on the same branch. |
+| G1 closed, and S-01 reviewed | [`40a06e7`](https://github.com/Hamza-ye/sharrwah-knowledge-map/tree/40a06e7db0da6b14cec31ae09ac039fc818f4fb2) | The founder's answer to Decision 1 (C, with the three defaults) and the pilot's open items ruled; S-01's decision register and its review pack, after an independent review and a check of every quote; Stage 3's draft subject list, at G2. The founder's review of this result follows. |
 
 ## How history is kept from here
 
