@@ -7,7 +7,8 @@ take, `;`-separated; empty takes every statement of the concern), `root_decision
 SUBJECT_DIR/subjects-from.tsv: `subject` (an earlier subject, such as S-01), `bullets` (`;`-separated: its statements
 under any of them are taken), `root_decisions` and `note`. For each platform it writes SUBJECT_DIR/<platform>/:
 - recorded.tsv: each statement as the concern map or the earlier subject holds it, with where it is held (`held_in`:
-  the concern and the line of the concern map's statements.tsv, or the earlier subject's statement id), and `from`,
+  the concern and the line of the concern map's statements.tsv, or the earlier subject's statement id), its release
+  `marker` (the concern map records none), and `from`,
   the value a phase A statement copied from it takes: `index:<concern_id>:<index cite_id>`, for its first citation,
   or the earlier subject's statement id;
 - recorded-citations.tsv: each citation those statements cite, unchanged.
@@ -22,7 +23,8 @@ csv.field_size_limit(10**9)
 SKM = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 INDEX = os.path.join(SKM, "studies", "concern-map", "platforms")
 PLATFORMS = ("shopify", "salla", "zid", "woocommerce", "bigcommerce")
-HEAD = ["rec", "held_in", "root_decisions", "placement", "identifier", "statement", "scope", "cite_ids", "from", "note"]
+HEAD = ["rec", "held_in", "root_decisions", "placement", "identifier", "statement", "scope", "marker", "cite_ids", "from",
+        "note"]
 
 
 def rows(path):
@@ -57,7 +59,7 @@ def from_index(plat, concerns, out, cite):
             continue
         got.setdefault(rec["concern_id"], set()).add(n)
         cids = [c for c in rec["cite_ids"].split(";") if c]
-        out.append([rds, rec["placement"], rec["identifier"], rec["statement"], rec["scope"], rec["cite_ids"],
+        out.append([rds, rec["placement"], rec["identifier"], rec["statement"], rec["scope"], "", rec["cite_ids"],
                     f"index:{rec['concern_id']}:{cids[0]}", rec["note"], f"{rec['concern_id']} line {n}"])
         cite(cids, f"statements.tsv line {n}")
     for cid, (lines, _) in concerns.items():
@@ -81,7 +83,7 @@ def from_subject(plat, e, out, cite):
         cids = [c for c in rec["cite_ids"].split(";") if c]
         note = f"{e['subject']}, bullet {rec['bullet']}" + (f"; {rec['note']}" if rec["note"] else "")
         out.append([e["root_decisions"], rec["placement"], rec["identifier"], rec["statement"], rec["scope"],
-                    rec["cite_ids"], rec["stmt_id"], note, f"{e['subject']} {rec['stmt_id']}"])
+                    rec["marker"], rec["cite_ids"], rec["stmt_id"], note, f"{e['subject']} {rec['stmt_id']}"])
         cite(cids, rec["stmt_id"])
 
 
@@ -111,7 +113,7 @@ def seed(subj, plat, concerns, earlier):
         from_subject(plat, e, out, cite)
     if not out:
         return
-    body = [[f"R{i:03d}", r[8]] + r[:8] for i, r in enumerate(out, start=1)]
+    body = [[f"R{i:03d}", r[9]] + r[:9] for i, r in enumerate(out, start=1)]
     d = os.path.join(subj, plat)
     os.makedirs(d, exist_ok=True)
     write(os.path.join(d, "recorded.tsv"), HEAD, body)

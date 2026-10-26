@@ -11,7 +11,8 @@ import csv, glob, json, os, re
 OFFICIAL = re.compile(r"/(legal|terms|tos|policies|policy|privacy|pricing|plans|agreements?)\b|terms[-_]?of[-_]?service|"
                       r"acceptable[-_]use|/conditions|/الشروط|/سياسة|[-_]agreements?\b", re.I)
 HELP = re.compile(r"^https?://help\.|/manual/|/article/", re.I)     # a help centre's article, even on privacy or terms
-SHIPPED = re.compile(r"\.(m?js|map)(\?|$)|importmap|/bundles?/|/chunks?/|/assets/|graphql[^ ]*schema|/schema(\.json)?(\?|$)", re.I)
+SHIPPED = re.compile(r"\.(m?js|map)(\?|$)|importmap|/bundles?/|/chunks?/|/assets/|graphql[^ ]*schema|/schema(\.json)?(\?|$)|"
+                     r"graphql-direct-proxy|introspection", re.I)   # an API's schema, as its own introspection answers
 SESSION_KEYS = {"trace", "bodies", "operation", "run_files", "steps", "dumps_sha256", "html_file", "step", "run_ids",
                 "captured", "element"}
 _meta_cache = {}
@@ -91,6 +92,8 @@ def kind_of(source, roots, locator=""):
         run = path.split("/")[2] if len(path.split("/")) > 2 else ""
         if re.search(r"journey|sweep|session|real|store|trial|m0-|capture|import", run, re.I):
             return "observed", f"run {run} records a store or session"
+        if SHIPPED.search(run):
+            return "shipped", f"run {run} fetched a schema the platform ships"
         return "stated", f"run {run} fetched pages"
     if path.startswith("derived/"):
         name = path.split("/")[1]
