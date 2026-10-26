@@ -199,7 +199,7 @@ Each of these faults made an agent think something was missing, or readable, whe
 
 ## To complete
 
-*25 October 2026: G1's question was answered on 18 October, and on 25 October the work was reset to the plan, with these proposals (`PLAN.md`, section 11). Of the decisions the pilot raised, Decision 1 is open (`STATE.md`).*
+*25 October 2026: G1's question was answered on 18 October, and on 25 October the work was reset to the plan, with these proposals (`PLAN.md`, section 11). Of the decisions the pilot raised, Decision 1 was answered on 25 October, and its follow-ons on 26 October (`founder-decisions.tsv`).*
 
 - **The independent review's verdict, after two re-checks:** the entry lets the founder decide (`review.md`, "Second re-check"). No must-fix finding is open.
 - **G1:** whether the founder can decide from the entry, and the founder's choice to scale up, change the method, or re-frame.

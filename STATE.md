@@ -5,26 +5,23 @@
 **The plan:** `PLAN.md`. It is the plan the founder agreed at G0, and on 25 October 2026 the founder reset the work to it, as it stood at G1, with the pilot's own changes and the coordinator's engineering choices (its section 11).
 
 **Where the work is:**
-- Stages 0, 1 and 2 are done (`PLAN.md`, section 4).
-- **G1 is closed.** On 25 October 2026 the founder gave the word to go on, and answered the pilot's Decision 1: C, with the three defaults, in every market at launch. Decisions 2 to 12 follow it (`founder-decisions.tsv`).
-- **The pilot, S-01, is closed.** Its open items are ruled, in its briefs. Its decisions are traced in [`studies/subjects/S-01/register.tsv`](studies/subjects/S-01/register.tsv). Its review pack, [`reports/S-01-review.md`](reports/S-01-review.md), had an independent review ([`studies/subjects/S-01/review-2.md`](studies/subjects/S-01/review-2.md)), then a check of every quote against its line (`method/check_report.py`).
-- **Stage 3 is drafted:** the subject list, [`studies/subjects/subjects.tsv`](studies/subjects/subjects.tsv), is at gate G2.
+- Stages 0 to 3 are done (`PLAN.md`, section 4).
+- **G1 is closed.** The founder answered Decision 1 on 25 October 2026 (C, with the three defaults, in every market at launch), and its two follow-ons on 26 October: E1 and E2 are kept, so the design keeps room for A and B; and default 2's "never" holds at launch (`founder-decisions.tsv`).
+- **The pilot, S-01, is closed:** [`studies/subjects/S-01/register.tsv`](studies/subjects/S-01/register.tsv), and its review pack, [`reports/S-01-review.md`](reports/S-01-review.md).
+- **G2 is answered:** "evidence" for all ten subjects, so each runs on the evidence, in the order of [`studies/subjects/subjects.tsv`](studies/subjects/subjects.tsv).
+- **PR #7** (the reset, G1's close and S-01's review) is merged into `main` on the founder's word of 26 October.
 
-**Open gate:** G2 ([`reports/G2.md`](reports/G2.md)).
+**Open gate:** G3, after each subject. Next: S-02.
 
-**Waiting on the founder:**
-- **The review of S-01's result.** The founder said they would challenge it against the product class and the evidence. The pack ends with two answers:
-  - default 2's "never": at launch, or in every arrangement;
-  - E1 and E2, keeping A and B possible in the design: keep them, bind C now, or decide when the architecture description is written.
-- **G2:** a mark per topic, or "evidence" for all.
-- **Merging [PR #7](https://github.com/Hamza-ye/sharrwah-knowledge-map/pull/7).** It holds the reset and everything since. This file had said it merges on the founder's word to go on. It wasn't merged then, and it waits for the founder's word after their review, so that the review is of open work.
+**Waiting on the founder:** nothing.
 
-**Next, once the founder answers:**
-1. **The founder's review.** Check each challenge against its source. Correct what doesn't hold, and say which challenges were checked and didn't hold, with the source. Record the two answers in `founder-decisions.tsv`: they are decisions.
-2. **Stage 4, the highest-ranked subject after S-01:** S-02, what a market is, once G2 is answered.
-   - Its budget is fixed before it starts and recorded here. It is set from the pilot's measured cost: about 1.03 billion tokens in all, and about half a billion for a run without its rework, by its method report's estimate (section 12, and its proposed changes).
-   - After its analysis, each of its decisions gets its Yemen row (`PLAN.md`, section 6, step 6).
-   - Its pack has an independent review, then `method/check_report.py`, before it goes to the founder.
+**Next: Stage 4, S-02, what a market is.**
+- **Budget:** 200 million agent tokens, counted by `method/count_tokens.py`. It is set from the pilot's measured cost (about 1.03 billion, of which about half a billion for a clean run, by its method report, section 12), reduced for the plan's changes: S-02 starts from its root decisions and from the statements the concern map already holds, reads Shopify and Salla in full and the other three from what is recorded, and keeps each agent's run short. At 250 million it stops and comes to the founder (`PLAN.md`, section 8).
+- **Its framing adds the concerns its draft row missed.** The row cites Shopify's Managed Markets (SH-C-110), a cross-border service, but not the core markets concerns: Shopify's Markets (SH-C-106) and backup region (SH-C-113), Zid's markets and served countries (ZD-C-034, ZD-C-032), and Salla's country reference data (SA-C-166). The row's grouping was the coordinator's reading; the founder's G2 mark doesn't change.
+- **Its steps:** the pilot's five steps under Stage 4's changes; then the Yemen row (step 6) and the scenario walk (step 7) for each root decision; an independent review; the quote check (`method/check_report.py`); and a short report for G3 with its cost against budget.
+- **The founder's decisions of 10 October, F-01 to F-06 and O-01,** bind nothing (`founder-decisions.tsv`, the reset). What they raise comes with its evidence when a subject reaches it: O-01, which company contracts with sellers, in S-03; F-01, the company's ties, where a subject needs them, such as S-07's sanctions and screening.
+
+**For the founder:** the orientation page, outside the repository: https://claude.ai/artifact/8fLCxo4JGKmGgPjXSpW1BN. It is updated at each milestone.
 
 **In flight:** nothing. No agent is running.
 

@@ -115,7 +115,7 @@ Gate G0 comes first: the founder's go on this plan. Stages 0 and 1 don't depend 
 
 ### Stage 2. The pilot: one subject end to end
 
-*Done on 17 October 2026, in `studies/subjects/S-01/`: the entry, its independent review and the method report. G1 was answered on 18 October with a re-frame. On 25 October the founder reset the work to this plan, with the pilot's own changes (`founder-decisions.tsv`, the reset). Decision 1 waits on the founder ([`decision-1.md`](studies/subjects/S-01/decision-1.md)).*
+*Done on 17 October 2026, in `studies/subjects/S-01/`: the entry, its independent review and the method report. G1 was answered on 18 October with a re-frame. On 25 October the founder reset the work to this plan, with the pilot's own changes (`founder-decisions.tsv`, the reset). Decision 1 was answered on 25 October, and its two follow-ons on 26 October (`founder-decisions.tsv`; [`decision-1.md`](studies/subjects/S-01/decision-1.md)).*
 
 **Subject:** who holds the merchant's funds between the buyer's payment and the merchant's payout. It was chosen because:
 - holding money is the first of the concerns Q1 names as shaping the architecture in every market;
@@ -166,7 +166,7 @@ Gate G0 comes first: the founder's go on this plan. Stages 0 and 1 don't depend 
   - what the checker reports on the pilot with the scripts as they now stand, and did not report at G1 (`method/check_subject.py`, given every capture run in `evidence/product-class/runs/`, run on a copy of the pilot's folder, since it rewrites the subject's `kinds.tsv`):
     - three Salla gaps routed to the founder whose page is held (S01-SA-G01, G03 and G07);
     - five statements whose source kind changes (S01-WC-078 to 080, S01-BC-123 and 124).
-- Each subject goes through the pilot's five steps, with its Yemen row in place of the Yemen marks (section 6, step 6). Its files go in `studies/subjects/<id>/`. The pilot's own changes apply ([its method report, "Proposed changes before more subjects"](studies/subjects/S-01/method-report.md#proposed-changes-before-more-subjects)):
+- Each subject goes through the pilot's five steps, with its Yemen row in place of the Yemen marks (section 6, step 6), and its scenario walk (step 7). Its files go in `studies/subjects/<id>/`. The pilot's own changes apply ([its method report, "Proposed changes before more subjects"](studies/subjects/S-01/method-report.md#proposed-changes-before-more-subjects)):
   - **Scoped to its decisions first.** The subject names its few root decisions, from the platforms' own top-level statements. Its variation points are the facets that can change one of them, and the rest stay as notes (section 6, step 1). Phase C marks which of the founder's items depend on which (its method report, section 10).
   - **From what is recorded.** Variants come first from the statements the concern map and the pilot already hold. New reading happens only where a decision needs it.
   - **Short agent runs.** Each brief caps its steps and asks for small outputs. Mechanical steps are scripts. An agent's cost is measured after its first steps (`method/count_tokens.py`), and a run whose projection passes its share of the budget is stopped.
@@ -217,7 +217,7 @@ G1 was answered on 18 October with a re-frame. On 25 October the founder reset t
 
 **What a decision item looks like.** It takes the form of an architecture decision record (Nygard 2011):
 - the question in one line, and why it is the founder's;
-- the evidence: each platform's statement, quoted and cited, and the decision's Yemen row;
+- the evidence: each platform's statement, quoted and cited, the decision's Yemen row, and its scenario walk;
 - the options, each with what it needs built and what it needs from outside, such as a licence, a partner or money;
 - the coordinator's recommendation and its reason;
 - the answer: an option, or **defer**. Defer is always allowed. The variation point stays open and is set per market, at the build cost the item states.
@@ -275,6 +275,7 @@ These rules are settled, each from the source named, unless the founder objects 
    - maturity or unknown, when expensive to change: kept open as a variation point until evidence settles it;
    - a need the Yemen row shows that no reference meets: a product gap, written without Yemen's name (Q2's rule 3), and a design decision for the founder.
 6. **The Yemen row,** after the analysis (the founder, 25 October). For each decision, it says what each option needs in Yemen today, and whether that exists: a provider, a partner, a licence, a way to pay. Each fact comes from Stage 1's records, read with its date and with `corrections.md`, and is checked against its source's quote before it is used. A fact with no evidence is marked unknown, not inferred. Q2's scenarios are used only where a decision depends on a condition that is changing.
+7. **The scenario walk,** after the Yemen row (the founder's proposal, 26 October). Each root decision is walked through three more scenarios: a second market whose conditions differ on the decision's question; the company based in another country, such as Oman or Egypt; and the first market dropped. The walk shows whether the decision keeps the alternatives the evidence justifies, or names what it closes, so that this reaches the founder before anything builds on it. It uses the subject's own evidence, and a fact it lacks is marked unknown, not inferred (change scenarios in architecture evaluation: Kazman, Klein & Clements 2000).
 
 **Options beyond the references.** Where a recommendation needs more than the references show, established designs and engineering writing are read for that decision. Each is weighed by its kind of source: a company's blog is that company's own account (choosing design concepts: Cervantes & Kazman 2016). This is what the founder called "buying architectural intelligence" ([24 October](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/4923e1c96a0296abdaf3f5bdbd8c155e09acfebf/founder-messages/2026-10-24-method-accepted.md?plain=1#L28)).
 
@@ -367,6 +368,7 @@ Both sets, by the founder's choice: the 81 payment rows and the Knowledge Map's 
 - IEEE 1012, Standard for System, Software, and Hardware Verification and Validation. Independent review.
 - ISO/IEC/IEEE 15026-2:2022, Systems and software engineering, Assurance case. Claims, arguments and evidence: every claim a fact, a reading or an assumption.
 - Kang, K., Cohen, S., Hess, J., Novak, W., Peterson, A. (1990). *Feature-Oriented Domain Analysis (FODA) Feasibility Study.* CMU/SEI-90-TR-21. Domain analysis from existing systems, which is what Q1 is.
+- Kazman, R., Klein, M., Clements, P. (2000). *ATAM: Method for Architecture Evaluation.* CMU/SEI-2000-TR-004, Software Engineering Institute. Change scenarios that test whether an architecture's decisions hold as conditions change.
 - Mill, J. S. (1843). *A System of Logic.* The methods of agreement and difference.
 - Nygard, M. (2011). Documenting architecture decisions. Cognitect blog. The form of a decision item.
 - OSHA, 29 CFR 1910.119(l), Management of change ([Cornell's Legal Information Institute](https://www.law.cornell.edu/cfr/text/29/1910.119), read 25 October 2026). Procedures to manage changes address "The technical basis for the proposed change" and its "Impact of change on safety and health" before any change. Applying it to a design method is the coordinator's reading.
@@ -485,3 +487,8 @@ A dated log. Where an entry differs from a later one, the later holds, and the s
   - **Marking every subject against every Yemen scenario** showed, before it happened, whether a change in Yemen would rule an option in or out. Accepted: options stay switchable per market, so such a change is a setting, not a redesign. A scenario is still used where a decision depends on a condition that is changing.
   - **Stage 1's `within` relation and faithfulness pass before each subject** guarded every axis a subject bore on. Replaced: each fact is checked against its quote when a Yemen row uses it.
   - **The pilot's open item on variants with no stated condition** existed only because phase D had to show each variant fail. Removed with phase D's marks.
+- **26 October 2026, after the orientation page,** with the founder's answers (`founder-decisions.tsv`): G2, evidence for all ten subjects; Decision 1's follow-ons, E1 and E2 kept, and default 2's "never" at launch; no test of Decision 1 against Shopify alone; the founder's G1 intent stays in history. Changed:
+  - **Section 6:** the scenario walk becomes the test form's step 7, on the founder's proposal. It restores the change scenarios of the method of 24 October (history), without its outcome types: the walk tests the same thing, whether one market's facts shape what is built, more directly. Stage 4 and the decision item (section 5) name it, and section 10 adds its source.
+  - **Stage 2's note** is brought up to date.
+
+  **What this change removes or weakens:** nothing. It adds one step per subject, made by reasoning over the subject's own evidence, with no new reading.
