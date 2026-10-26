@@ -24,4 +24,5 @@
 | `corpus_search.py` | Searches a platform's held text in every language it holds, for a claim of absence (`PLAN.md`, section 6). |
 | `runs_corpus.py` | The observed repositories' runs, as documents for `corpus_search.py`. |
 | `count_tokens.py` | Counts the tokens an agent run processed, once per request (`PLAN.md`, Stage 4). |
+| `check_register.py` | Checks every citation in a subject's decision register: ids, paths at a commit, and that each cited line holds what the citation names. |
 | `check_surface.py` | Searches the working files for the framings of the work that is now history, and fails where one appears outside the places allowed to name it (`PLAN.md`, risk 14). |
