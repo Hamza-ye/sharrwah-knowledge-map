@@ -25,4 +25,5 @@
 | `runs_corpus.py` | The observed repositories' runs, as documents for `corpus_search.py`. |
 | `count_tokens.py` | Counts the tokens an agent run processed, once per request (`PLAN.md`, Stage 4). |
 | `check_register.py` | Checks every citation in a subject's decision register: ids, paths at a commit, and that each cited line holds what the citation names. |
+| `check_report.py` | Checks each quote in a report against the line its pinned citation names. |
 | `check_surface.py` | Searches the working files for the framings of the work that is now history, and fails where one appears outside the places allowed to name it (`PLAN.md`, risk 14). |
