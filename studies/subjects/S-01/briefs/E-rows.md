@@ -1,6 +1,6 @@
 # Brief: S-01, the existing question rows on this subject (pilot, step 3)
 
-**Held for Stage 5.** Since 12 October 2026, Q3 runs once, at close-out (`PLAN.md` section 11), so this brief does not run in the pilot. It will be adapted to the whole register then.
+**Held for Stage 5.** Since 12 October 2026, Q3 runs once, at close-out (`PLAN.md` section 11), so this brief does not run in the pilot. It will be adapted to the whole register then. The row files are no longer in the working files: they are read at the commit `PLAN.md` links under "Q3's rows" (25 October 2026).
 
 This is `PLAN.md` Stage 2, the pilot. It carries out Q3 for one subject. You are one agent with one task.
 

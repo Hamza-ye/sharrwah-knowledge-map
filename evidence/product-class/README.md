@@ -14,6 +14,7 @@ Copies of the sources cited by Q1, the concern map (`questions/Q1-concern-map.md
 | Path | What it holds |
 | --- | --- |
 | `runs/<UTC time>-q1-<platform>-sources/` | The web pages one platform's Q1 run cites. Each page is fetched raw with curl and rendered in Chromium, using `method/capture/run.sh` with `CAPTURE_LANG='en,ar;q=0.8'`, the language preference the agents read with. `manifest.tsv` gives each page's result, date hint, primary file, sha256 and the citations that use it. |
+| `runs/20261019T*-proposals-*/` | Pages captured on 19 October 2026 by work that is now history (`HISTORY.md`). They are evidence like any other. The question numbers in their names are that work's, not `questions/`. |
 | `woocommerce-11.2.1/` | The WooCommerce release cited by file and line: its WordPress.org record, the download's headers and sha256, a list of every file in the release with its sha256, and copies of the cited files. |
 | `to-save-from-browser.md` | The salla.com and salla.sa pages the Salla run needed, which refuse this session. |
 | `blocked-evidence-founder/` | Where the founder's SingleFile saves of those pages go. |

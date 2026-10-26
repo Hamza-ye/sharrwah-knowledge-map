@@ -1,4 +1,0 @@
-ev_id	repo	kind	path	what
-sh.help-payments-en	observed-sh	DECL	raw/runs/20260930T003703Z-help-en-md/ (joined in index/ledger/sitemap--help-shopify-sitemaps.tsv)	Help Center pages on payments, finance, orders, B2B and POS payments (504 English pages, captured)
-sh.dev-payments-docs	observed-sh	DECL	raw/runs/20260930T003705Z-shopify-dev-md/ (joined in index/ledger/sitemap--shopify-dev-sitemap.tsv)	shopify.dev guides for payments apps, checkout payments, purchase options, B2B and returns (207 pages, captured)
-sa.order-statuses	observed-sa	OBS	structures/salla/order-statuses/merchant@ar/	A store's order statuses, 13 including payment_pending and under_review

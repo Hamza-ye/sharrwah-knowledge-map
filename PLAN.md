@@ -1,109 +1,89 @@
 # Plan: from the evidence to the decisions that are expensive to change
 
-**Status: superseded by `METHOD.md` on 24 October 2026 (section 11), and kept as the record.** It was agreed by the founder on 12 October 2026 (gate G0), and re-framed after G1 with the founder's go of 18 October 2026. `STATE.md` says where the work is.
+**Status: agreed by the founder on 12 October 2026 (gate G0). On 25 October 2026, after G1, the founder reset the work to this plan, with the changes section 11 lists.** It is the only plan, and it works within the founder's decisions (`founder-decisions.tsv`): where the two differ, the decision holds and this plan is corrected. `STATE.md` says where the work is.
 
-The coordinating session wrote this plan after the founder asked who would manage the work until it reaches a safe shore, with the right engineering, sequence and framing, leaving the founder only what is genuinely theirs to decide. At G1 the founder re-framed it: the work now ends with proposals the founder accepts or changes (section 1). Where a rule comes from known practice, it names its source, and section 10 lists the sources. A rule without a source is the coordinator's own.
+The coordinating session wrote this plan after the founder asked who would manage the work until it reaches a safe shore, with the right engineering, sequence and framing, leaving the founder only what is genuinely theirs to decide. Where a rule comes from known practice, it names its source, and section 10 lists the sources. A rule without a source is the coordinator's own.
 
-## 1. The aim and the end
+## 1. The aim and the safe shore
 
 Sharrwah is one platform for many markets. Yemen is its first market, not its design target. Before building, the decisions that would be expensive to change later have to be made on evidence. Everything else is decided while building, where it is cheap to change.
 
-**The aim.** For each item of the founder's intent (`founder-messages/2026-10-18-g1-answer.md`, section B), the best of what the five platforms do, framed as Sharrwah's proposed model:
-- what it is called, how it is structured and how it behaves;
-- what can plug in, what is set per what, and who sets it;
-- how the design divides into parts that can be built in order;
-- where the founder's item says something is decided later, what the design must keep open instead.
-
-That should be enough to start the design of the first build.
-
-**The principles stay:**
 - **One platform, many markets.** The platform is built once and each market is set up on it: product line engineering (Pohl, Böckle & van der Linden 2005).
 - **Hide what is likely to change.** Each decision likely to change sits behind its own module (Parnas 1972).
 - **Effort follows risk.** Analysis effort goes where a wrong decision costs most (Fairbanks 2010; Boehm 1988), and each decision is taken at the last responsible moment (Poppendieck & Poppendieck 2003).
+- **The guard on the first market.** The founder asked for a "very visible guard" against Yemen being "used to define the hard to change product decisions" ([24 October](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/4923e1c96a0296abdaf3f5bdbd8c155e09acfebf/founder-messages/2026-10-24-method-accepted.md?plain=1#L48)). So each subject's analysis is made from the references before its Yemen row (section 6, step 6), a gap only Yemen shows is written without Yemen's name (section 6, step 5), and each decision page says whether its recommendation comes out the same without Yemen, as Decision 1's does.
 
-**The end.** The work ends when the founder has accepted or changed every proposal. Then the design of the first build starts, under its own plan.
-- **It starts from the areas list, with the founder's marks, as Sharrwah's whole extent.** What the first build covers within it is for that plan.
-- **It reads open-source commerce platforms,** such as Saleor, Medusa and Vendure, for how each part is structured. Never as evidence of what sellers get.
-- Anything the accepted proposals leave open comes to the founder during that design, when it is needed. How far currencies can be set or changed is one such item.
-- No proposal rests on a derived document, or on the founder's words taken as evidence of what a platform does.
+**The safe shore.** This plan ends when:
+1. every subject in scope has its variation points, each with the variants the five references show, their evidence, their cause and how they coexist;
+2. every decision in scope has its Yemen row: what each option needs in Yemen today, and whether that exists;
+3. every existing question row is placed against a subject, or listed as unplaced with its reason;
+4. a decision register states, for each subject, what follows by engineering rule and what the founder decided or deferred;
+5. nothing in the register rests on a derived document, or on the founder's words taken as evidence of what a platform does.
+
+Then the design of the first version starts, under its own plan. It is designed for many markets, with Yemen the first set up on it, and each variation point behind its own module. Spikes, throwaway code that answers one stated question, are allowed. Production code waits until requirements, an architecture description and engineering documentation exist to validate it against (the founder, 24 October).
 
 ## 2. What changes from the run so far
 
-- **The pilot is done.** Its entry (`studies/subjects/S-01/entry.md`) let the founder decide.
-  - Its Decisions 1 to 14 are deferred. They stay open, and bind nothing, not even per market. They come back as proposals once the work has framed them: Decisions 1 to 13 with question 5, and Decision 14 with question 7.
-  - Its files are the coordinator's to use. Its 23 variation points, and its open review findings (among them 29 and 36), feed the money proposals.
-- **The guard** (`founder-decisions.tsv`, G1). No arrangement that holds sellers' money through Sharrwah goes live anywhere without the founder's decision. That covers Sharrwah itself holding it (the entry's option A), and a payment company holding it in an account opened through Sharrwah (option B). It limits only what goes live. It neither requires a proposal to provide for either arrangement nor rules one out.
-- **Questions, not subjects.** Section B's items, in neutral words (`studies/proposals/questions.md`), are what the work answers. They are not subjects, and don't take the test form. Section B's items are not standing decisions under section 5. A proposal that answers one becomes a decision only when the founder accepts it.
-- **What is recorded is reused:**
-  - the concern map's `concerns.tsv` and `statements.tsv` for all five platforms, in every placement, but not the first runs' `placements.tsv`;
-  - the pilot's files;
-  - Stage 1's output.
-
-  For each question and platform, a script copies, unchanged and with their citations, the statements under the concerns of the areas the question draws on (step R1). A gap recorded under a copied concern comes with it, as what was not found then.
-- **The 88 matches and the 84 retired unclear matches** from the concern map's first runs aren't used. Merging the platforms' areas rests on their own names, or is marked as the coordinator's own.
-- **New reading is allowed** where what is held doesn't show what a question needs. This replaces Stage 0's freeze. A page read new is captured and committed before it is cited (section 9).
-- **The count of tokens is corrected** (section 11, 18 October). This plan's figures are in the corrected count.
+- **Q1's question stands, but "done" changes.** Done no longer means every concern on every placement on every platform. It means every subject in scope. The five platforms' inventories, concerns and 8,191 statements stay as they are and become the index the subjects draw from. Known practice scopes analysis by what will be built and by risk (Schmid 2002; Clements & Northrop 2001).
+- **The test form becomes the main instrument.** It runs per subject, with matching and gap-closing inside the subject. It no longer waits for a full re-match.
+- **Q2 splits.** Its first step, Yemen's axes and cases, runs early (Stage 1). Its marks ran in the pilot. From Stage 4, one Yemen row per decision replaces them, after the subject's analysis (section 6, step 6; the founder, 25 October).
+- **Q3 runs once, at close-out.** It reconciles the existing rows against the finished register (Stage 5). The rows never feed a subject's analysis.
+- **Retired:** the 84 unclear matches, unreviewed. The 88 matches stay only as hints for scoping.
+- **Gaps** are closed only where a subject needs them. Before a gap goes to anyone, its route is checked against what is held.
 
 ## 3. Who does what
 
 **The founder decides what is genuinely theirs:**
-1. **Scope:** what Sharrwah will and won't be, its business model, and which markets come after Yemen. This includes the marks on the areas list.
+1. **Scope:** what Sharrwah will and won't be, its business model, and which markets come after Yemen.
 2. **Company and legal questions:** legal entities, licences, whether Sharrwah holds funds, and partners. Where law is involved, these are decided with a lawyer.
-3. **Building ahead:** how far to build for markets not yet planned.
+   - **The guard** (the founder, 18 October): no arrangement that holds sellers' money through Sharrwah goes live anywhere without the founder's decision, whether Sharrwah itself holds it or a payment company holds it in an account opened through Sharrwah.
+3. **Building ahead:** how far to build for markets not yet planned, that is, whether a variation point stays open or is bound now.
 4. **Spending:** stores on paid plans and consultations.
 5. **What only the founder can do:**
-   - capturing from inside Yemen, or by signing up to a platform;
+   - capturing from inside Yemen;
    - journeys in real stores;
    - contacting platforms, partners and regulators;
    - attestations.
-6. **Every proposal for section B,** accepted or changed.
-7. **Whether any arrangement that holds sellers' money through Sharrwah goes live.**
-8. **Changes to this plan's frame,** and what to cut when the re-sized plan would pass its budget.
-9. **The gates** in section 5.
+6. **The gates** in section 5.
 
-**Nothing reaches the founder without a decision attached.** Each item comes with its evidence, its options and the coordinator's recommendation, marked as such. Section 5 says when each is needed and what an item looks like. Everything that reaches the founder:
-- **is in plain business words.** A term that can't be avoided is defined in one line. Quotes and ids stay in the files;
-- **may carry several decisions in one message,** each standing on its own, with its own answer line;
-- **lists the method rulings made since the last message,** each in one plain line saying what it changes. The founder may overturn any.
+Nothing reaches the founder without a decision attached. Each item comes with its evidence, its options and the coordinator's recommendation, marked as such. Section 5 says when each is needed and what an item looks like.
+
+**Plain words** (the founder, 18 October). Everything for the founder is in plain business words, and a term that can't be avoided is defined in one line. Quotes and ids stay in the files. Several decisions may come in one message, each with its own answer line. Each method ruling is listed in one plain line at the next report, and the founder may overturn any.
 
 **Not the founder's to settle.** These follow from evidence and rule, or are the coordinator's engineering calls. The founder may challenge any of them.
 - what a platform states, and whether two platforms' concepts match (section 6);
 - whether a page is held, and each gap's kind and route;
+- causes, coexistence and generality (the test form);
 - what follows from a result by engineering rule;
-- the recommendation in each proposal;
 - sequencing, briefs, and fixes to the method within this plan.
 
 **The coordinating session (Claude Code).** It:
 - frames each step and writes the briefs;
 - runs the agents and checks;
-- integrates the results, and finishes each proposal;
+- integrates the results;
 - keeps this plan and `STATE.md`;
 - brings the gates.
 
 It never takes the founder's decisions, and never treats the founder's words as evidence of what a platform does.
 
-**Agents.** Each gets one short task from a written brief (the method report's proposal 3), and scripts do the mechanical work.
-- **Before a brief runs,** a separate agent checks it for anything that presupposes the answer, for whether it can work, and for what it will cost (inspection: Fagan 1976).
-- **Before a result reaches the founder,** an agent that did none of the work reviews it against its sources (independent verification: IEEE 1012).
+**Agents.** Each gets one bounded task from a written brief. Before a brief runs, a separate agent reads it for anything that presupposes the answer (inspection: Fagan 1976). After it runs, a separate agent reviews the result against its sources (independent verification: IEEE 1012).
+- **A review tries to refute** what it reviews, claim by claim, and reports counter-evidence and missing evidence, not agreement. The coordinator checks each finding against its evidence before applying it.
+- **A review also looks for what an entry never cites:** the concerns in the subject's reach, from the concern map, that the entry doesn't cite, and which of them bear on a decision.
 
-**The checker,** `method/check_proposals.py`, is built from the pilot's checker before step R2. It enforces mechanically:
-- quotes are verbatim, at a commit;
-- a statement a script copied is unchanged, with its citation;
-- each record is tied to a question;
-- each fact a proposal cites is tied to a statement or a Stage 1 id;
-- a "not in what was read" lists what was read, with the corpus search behind it;
-- an absence rests on a complete list;
-- a page read new is committed before it is cited.
-
-**Counting.** `method/count_tokens.py` counts each run's tokens from its transcript, each API request once: input, output, cache reads and cache writes. Each run's count goes into `studies/proposals/costs.tsv`.
+**The checkers** enforce the rules mechanically: `method/check_concern_map.py` on the concern map, `method/check_yemen_cases.py` on Stage 1, and `method/check_subject.py` on each subject. Between them:
+- quotes are verbatim;
+- citations are at a commit;
+- gap routes are checked against what is held;
+- a "searched, not found" lists what it read;
+- every row is tied to a subject.
 
 ## 4. The sequence
 
-Stages 0, 1 and 2 are done. Their text stays below as a record, unchanged. Stages 3 to 5 are replaced by steps R0 to R6. Before each step, `STATE.md` records its expected cost (`studies/proposals/sizing.md`). After it, it records the measured cost.
+Gate G0 comes first: the founder's go on this plan. Stages 0 and 1 don't depend on each other and run side by side.
 
 ### Stage 0. Repair and freeze
 
-*The coordinator does this with no input from the founder.*
+*Done on 12 October 2026 (`3e5b37b`). The coordinator did this with no input from the founder.*
 
 - **Freeze.** No new concerns, statements or gaps go into the five platform folders unless a subject needs them.
 - **Read what is held.** observed-sa at `57ba48d1` now holds as text:
@@ -127,13 +107,15 @@ Stages 0, 1 and 2 are done. Their text stays below as a record, unchanged. Stage
 
 ### Stage 1. Yemen's axes and cases
 
-*This is Q2's first step, run on its own.*
+*Done on 17 October 2026, in `studies/yemen-cases/`. Its independent review found errors in `today` on 12 of 45 sampled axes, and later checks found ten of its records that need a correction or a caution: [`corrections.md`](studies/yemen-cases/corrections.md). This is Q2's first step, run on its own. Since 25 October 2026 no more work goes into it: it is a reference, read only for the facts a Yemen row needs, with `corrections.md`.*
 
 - It finds the axes Yemen varies along, and builds the cases on them, with today as the anchor case. It uses Yemen evidence only, as Q2 says.
 - Where an axis has no evidence, the case is marked unknown, not inferred. The founder's capture list says what would show it.
 - **Done when** every axis and case cites its evidence or is marked unknown.
 
 ### Stage 2. The pilot: one subject end to end
+
+*Done on 17 October 2026, in `studies/subjects/S-01/`: the entry, its independent review and the method report. G1 was answered on 18 October with a re-frame. On 25 October the founder reset the work to this plan, with the pilot's own changes (`founder-decisions.tsv`, the reset). Decision 1 was answered on 25 October, and its two follow-ons on 26 October (`founder-decisions.tsv`; [`decision-1.md`](studies/subjects/S-01/decision-1.md)).*
 
 **Subject:** who holds the merchant's funds between the buyer's payment and the merchant's payout. It was chosen because:
 - holding money is the first of the concerns Q1 names as shaping the architecture in every market;
@@ -154,135 +136,91 @@ Stages 0, 1 and 2 are done. Their text stays below as a record, unchanged. Stage
 
 **Kill rule.** If the entry lets the founder decide nothing, or the errors come from the method again rather than the evidence, nothing scales until the frame has been re-examined.
 
-### Step R0. The plan change
+### Stage 3. The subject list
 
-1. This change, the first step's briefs and scripts, and the neutral wording of each question are drafted.
-2. An agent that did none of the drafting checks them against the founder's G1 answer and the recorded data, for whether they can work and what they will cost.
-3. The coordinator fixes what it finds, and the same agent checks the fixes.
-4. The founder gets a plain summary. Nothing else runs before the founder's go.
-5. The founder's go, of 18 October 2026, with five changes of the founder's, made in this text.
+**Candidates come from evidence only:**
+- the seven concerns Q1 names:
+  - holding money;
+  - licences and regulated activity;
+  - legal entities per country;
+  - sanctions and screening;
+  - where data lives;
+  - partners, and what happens when one fails;
+  - currency and tax;
+- every concern whose statements, in the platforms' own material, are scoped by country or region;
+- as hints only, the existing matches whose platforms state different things.
 
-### Step R1. The platforms' broad areas, then gate G2
+**Ranked by cost of change.** A subject ranks high when getting it wrong would mean changing money flows, the legal structure, the data model or partner contracts after launch. This criterion is the coordinator's own reading of Parnas's criterion and of architecturally significant requirements (Chen, Ali Babar & Nuseibeh 2013).
 
-1. **A script** (`method/areas_extract.py`) extracts each platform's own organizing lists from all that is recorded:
-   - the concern map's inventory lists, and its concerns, with what their statements show by country, plan and arrangement;
-   - Shopify's Help Center menus;
-   - Salla's help-centre categories.
+**Gate G2.** The founder marks business scope: what Sharrwah certainly won't do, and what it must. Nothing else.
 
-   So legal, place and eligibility matters show too, not one menu only.
-2. **One short run per platform** (`briefs/R1-areas-one-platform.md`) names the platform's broad areas in its own names, each with a plain line, and places each concern under one. A script (`method/place_entries.py`) places each inventory entry under the area of its concerns, and `method/check_areas.py` checks the names and the placing.
-3. **The coordinator merges the five lists into tens of areas.**
-   - Where the platforms' own names can't bring the list down to tens, the coordinator groups further, and marks each such grouping as its own.
-   - It ties each area to the questions that draw on it. For each question, a script later copies the statements under those areas' concerns (step R3).
-   - For each area, it says what a "won't do" mark removes from the work, and what evidence the questions keep anyway.
-   - For each area no question draws on, it writes one line saying why the work leaves it out. This replaces Stage 5's last sweep.
-   - For each question, it picks which platforms to read in depth and which only to check for anything that differs from or goes beyond them, each with why and what that rests on. Every platform is read for every question, in depth or as a check.
-   - It picks the sample (step R2).
+**Output:** `studies/subjects/subjects.tsv`, with the subject, its question ("who or what fills X"), its rank, and the evidence that put it in scope. S-01, the pilot, is its first row.
 
-   Its files are `areas.tsv`, `areas.md` and `depth.tsv`, as `briefs/R1-areas-review.md` describes them.
-4. **An independent review** (`briefs/R1-areas-review.md`), with its re-checks, then the founder.
-5. **Gate G2.** The founder marks what Sharrwah won't do and what it must.
-   - **"Won't do"** removes the area from the work, except the evidence the questions keep.
-   - **"Must do"** confirms the area is in Sharrwah's scope. Where no question draws on a "must do" area, the coordinator brings the founder what reading it would need, and its cost, for the founder to decide.
-   - **Anything unmarked** stays in.
+### Stage 4. The subjects, one at a time, riskiest first
 
-### Step R2. The sample
+- **Before the next subject runs,** these are ruled, and each ruling is marked in the pilot's briefs, from which the next subject's briefs are made:
+  - the pilot's three open items ([its method report, section 11, "Still open after the re-check"](studies/subjects/S-01/method-report.md#11-the-independent-review-f)):
+    - finding 36, a variant that names only what doesn't fill the role;
+    - finding 29, whether WooCommerce's policy pages are terms;
+    - step 5's letter rows, which no longer separate the variation points once letters join;
+  - what the checker reports on the pilot with the scripts as they now stand, and did not report at G1 (`method/check_subject.py`, given every capture run in `evidence/product-class/runs/`, run on a copy of the pilot's folder, since it rewrites the subject's `kinds.tsv`):
+    - three Salla gaps routed to the founder whose page is held (S01-SA-G01, G03 and G07);
+    - five statements whose source kind changes (S01-WC-078 to 080, S01-BC-123 and 124).
+- Each subject goes through the pilot's five steps, with its Yemen row in place of the Yemen marks (section 6, step 6), and its scenario walk (step 7). Its files go in `studies/subjects/<id>/`. The pilot's own changes apply ([its method report, "Proposed changes before more subjects"](studies/subjects/S-01/method-report.md#proposed-changes-before-more-subjects)):
+  - **Scoped to its decisions first.** The subject names its few root decisions, from the platforms' own top-level statements. Its variation points are the facets that can change one of them, and the rest stay as notes (section 6, step 1). Phase C marks which of the founder's items depend on which (its method report, section 10).
+  - **From what is recorded.** Variants come first from the statements the concern map and the pilot already hold. New reading happens only where a decision needs it.
+  - **Short agent runs.** Each brief caps its steps and asks for small outputs. Mechanical steps are scripts. An agent's cost is measured after its first steps (`method/count_tokens.py`), and a run whose projection passes its share of the budget is stopped.
+  - **A budget per subject,** set before it starts from the last subject's measured cost, and recorded in `STATE.md`.
+  - **Depth by risk.** The analysis goes deep where a decision is both expensive to change and uncertain, and runs a light check where the references agree and Yemen's facts don't bear on it.
+  - **Shopify and Salla first.** Their held evidence is the deepest (risk 5), so they are read first and in full. Zid, WooCommerce and BigCommerce come from what the concern map and the pilot recorded, and are read further only where a cause or a gap needs them. The founder asked for others "only when a specific question requires them" ([24 October](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/4923e1c96a0296abdaf3f5bdbd8c155e09acfebf/founder-messages/2026-10-24-method-accepted.md?plain=1#L42)); a cause by comparison is such a question (section 6, step 3).
+  - **The pilot's other lessons** (its method report, sections 4 and 9): gaps that ask one question of different sources are audited together; and a Yemen fact with an exclusion such as "only" is read as two facts, since the exclusion states a second one.
+  - **Yemen's facts checked before a Yemen row uses them.** Each fact is read with its date and with Stage 1's corrections, and checked against its source's quote. Stage 1 gets no `within` relation and no faithfulness pass: a fact is checked when a row uses it.
+- Each subject ends with:
+  - a commit;
+  - an update to `STATE.md`;
+  - a short report for the founder: the decisions that are genuinely theirs (gate G3), and the subject's cost against its budget.
+- **Standing decisions early.** The founder's answer to a root decision settles the later items it pairs with (section 5, standing decisions), as an answer to Decision 1 can settle the pilot's Decisions 2 to 12, which its entry pairs with each option.
+- The founder's decisions go in `founder-decisions.tsv`: date, gate, question, decision, and the evidence it rested on.
+- A deferred decision is recorded with what it binds: the variation point stays open and is set per market.
 
-1. **Built first:**
-   - `method/copy_statements.py`, which makes the copies for each question and platform;
-   - `method/check_proposals.py`.
-2. **The recording brief and the checking brief** are each checked before they run.
-3. **The sample** is one of the in-depth runs step R3 will make: one question on one platform. It is chosen after the depth choice, by a stated rule: of the in-depth runs, the one whose copied statements are nearest the median. It runs while the founder marks the areas, since the marks can't remove a question.
-4. **What is measured:** the run's tokens, by its transcript, over the statements it records that a script didn't copy.
-5. **For comparison,** the pilot's phases A and A2 cost 0.52 million per statement, or 0.75 million per statement not taken from the concern map.
-6. **Whatever it shows, the work goes on.** The steps that record or audit statements are re-sized from the measurement, and the others as before. The work stops and comes to the founder only if the re-sized whole would pass the budget (section 8).
+### Stage 5. Close-out
 
-### Step R3. Recording, by question
+- **Interactions.** Subjects that touch each other, such as currency, payments and tax, are checked for bindings that conflict (Calder et al. 2003).
+- **Q3, once.** Reconcile the existing rows against the register:
+  - place each row, and flag its time bombs;
+  - list the rows the register doesn't cover;
+  - list the register's decisions no row asked about.
 
-- **Depth by question.** For each question, the platforms chosen with the areas list are read in depth. The others are checked only for anything that differs or goes beyond.
-- **A script copies first, in two phases** (`method/copy_statements.py`):
-  - it lists as candidates the concerns of the areas the question draws on;
-  - the run marks each candidate as bearing on the question or not, gives its reason for each set aside, and may add concerns from other areas (`selection.tsv`);
-  - the script then copies the chosen concerns' statements, gaps and citations, unchanged.
-
-  The run then reads only what is still needed: held material first, starting from the platform's own organization of its help where it is held, then the corpus search; new material only where what is held doesn't show it.
-- **Each run is short:** one question on one platform.
-- **An in-depth run records:**
-  - each statement in the platform's own words and terms, scoped as its source scopes it;
-  - where they bear on the question, the platform's own structure (the things it names, and the levels its settings are set at) and the contracts behind its providers, including agreements its terms incorporate. This is how depth reaches the data model and the partner contracts;
-  - what it doesn't find, as "not in what was read", listing what it read. It records something as absent only from a complete list the platform publishes.
-- **A checking run** reads the in-depth runs' accounts for the question and its own platform's copies, and records only what differs from them or goes beyond them.
-- **Each run ends with a short account** of what its platform shows for the question, in the platform's own terms. Each point cites statement ids, and the account adds no claim of its own.
-- **What shows only by signing up** to a platform goes on the founder's capture list. The list reaches the founder when recording ends, so that anything captured can still feed the proposals. Capturing is optional, and the work doesn't wait for it.
-- **Depth goes where a wrong guess would be expensive to change after launch:** money flows, legal structure, the data model, and partner contracts. Every question gets enough to propose from.
-
-### Step R4. The proposals
-
-- **One drafting run per question** (its brief checked first). It reads:
-  - the question's accounts, and the records it cites;
-  - the areas list, with the founder's marks;
-  - a digest of Stage 1's axes and constants, made by script;
-  - for question 5, the pilot's entry and records: its 23 variation points, its open review findings, and Decisions 1 to 13;
-  - for question 7, the pilot's Decision 14.
-- **Each draft gives:**
-  - how the platforms handle it, in their own terms;
-  - Sharrwah's proposed names, structure and behaviour;
-  - what can plug in, what is set per what, and who sets it;
-  - how it divides into parts that can be built in order;
-  - what the design must keep open;
-  - what Yemen's evidence allows, forbids or doesn't show, each Yemen fact read with its date under section 6's Yemen rules;
-  - the company decisions it raises.
-- **The coordinator finishes each proposal** and owns its recommendation.
-- **The money proposals** (questions 4 and 5) say what the design provides for, under the founder's guard.
-- **Company decisions.** One short run gathers, from the drafts and their records, the evidence bearing on each company decision: where the company is based, which providers and partners Sharrwah works with, any licence, who may register, and any others found. The coordinator writes each in plain words, with a recommendation and whether it needs a lawyer.
-
-### Step R5. Checks by risk
-
-Once a proposal or company decision is drafted, and before its review, with each brief checked first, everything it cites gets the full checks:
-- **Each fact it cites** is re-checked against its source.
-- **Anything it cites as not found, or recorded absent,** gets the corpus search, and an audit by an agent that made none of the claims, batched by platform.
-- **Each Yemen fact it uses** is re-checked against its quotes, including whether a later state covers the same place or a place that contains it.
-- **A "Yemen's evidence doesn't show" it cites** gets the search and audit too.
-- **Every quote is checked by script.**
-- **What no proposal cites** is recorded as read, without audits.
-
-### Step R6. Independent review, then the founder
-
-- **An agent that did none of the work reviews the proposals,** in two batches of four, with the company decisions in the second, and re-checks the fixes.
-- **One short run checks how the proposals bear on each other,** for bindings that conflict: such as currency, payment methods, payouts, what must be met before taking payment, and the guard (Calder et al. 2003). This replaces Stage 5's check of interactions.
-- **One short run checks Q3's rows** against the reviewed proposals (section 6). Its list comes with them.
-- **Then the founder** gets the proposals and the company decisions, several in one message, each with its own answer line, with the method rulings made since the last message, and the rows of Q3's lists the proposals don't answer.
+  A row the register doesn't cover enters scope only if the evidence, not the row, shows it is expensive to change. Before starting, the coordinator decides again whether reconciling is worth its cost.
+- **A last sweep** of the inventory's remaining concerns, for anything expensive to change that the subject list missed. A list of the platforms' broad areas, made after G1, may serve as a cross-check that no area was missed ([`areas.tsv`](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/4923e1c96a0296abdaf3f5bdbd8c155e09acfebf/studies/proposals/areas/areas.tsv)). It is a grouping, not evidence, and it sets no subject's boundary.
+- **Gate G4, the safe shore.** The founder accepts the register, and the design of the first version starts under its own plan (section 1).
 
 ## 5. The gates
 
 | Gate | When | What the founder decides |
 | --- | --- | --- |
-| G0 | 12 October 2026, done | The plan |
-| G1 | 18 October 2026, done | Re-frame, with the decisions in `founder-decisions.tsv` |
-| The go on the change | 18 October 2026, done | The plan change, with five changes; Q3's rows checked at the end; no cuts |
-| G2 | After step R1 | The areas: what Sharrwah won't do, and what it must |
-| The proposals | After step R6 | Each proposal, accepted or changed, and the company decisions |
+| G0 | Before Stage 0 | This plan, including the rules in section 6 |
+| G1 | After the pilot | Scale up, change the method, or re-frame |
+| G2 | After the subject list | Business scope: what Sharrwah won't do, and what it must |
+| G3 | After each subject | The decisions the subject raised that are genuinely the founder's |
+| G4 | At close-out | Accept the register, and start the design |
 
-The proposals replace G3 and G4. The work ends when every proposal is accepted or changed.
+G1 was answered on 18 October with a re-frame. On 25 October the founder reset the work to this plan, with the pilot's own changes (section 11).
 
 **When the founder is needed:**
-- **At G2:** the marks on the areas list.
-- **After recording:** the capture list, which is optional.
-- **At the proposals:** each proposal, and the company decisions, with the rows of Q3's lists the proposals don't answer.
-- **Between these, only when work stops** under section 8. A step that ran past its expected cost is told in the next message, with the re-sized whole.
+- **At G0:** the go on this plan, and Q3's rows.
+- **Stages 0 and 1:** no decisions. The founder may get a capture list: what only the founder can capture, each item with why. Capturing is optional, and whatever isn't captured stays unknown.
+- **At G1, after the pilot:** whether the pilot's entry lets the founder decide, and the decisions the pilot raised.
+- **At G2:** business scope, marked on the subject list as won't do or must do.
+- **At G3, after each subject:** that subject's decisions.
+- **At G4:** accepting the register.
 
-**What a decision item looks like** (the coordinator's own form, after the architecture decision record: Nygard 2011), in plain words:
+**What a decision item looks like.** It takes the form of an architecture decision record (Nygard 2011):
 - the question in one line, and why it is the founder's;
-- what the platforms do;
-- what Yemen's evidence allows, forbids or doesn't show;
+- the evidence: each platform's statement, quoted and cited, the decision's Yemen row, and its scenario walk;
 - the options, each with what it needs built and what it needs from outside, such as a licence, a partner or money;
-- the coordinator's recommendation, and its reason;
-- for a company decision, whether it needs a lawyer;
-- the answer line.
-
-**Defer** is always allowed.
-- For the pilot's Decisions 1 to 14, it means the decision stays open and binds nothing, by the founder's G1 answer.
-- For later items, the coordinator reads it the same way, unless the founder says otherwise.
+- the coordinator's recommendation and its reason;
+- the answer: an option, or **defer**. Defer is always allowed. The variation point stays open and is set per market, at the build cost the item states.
 
 **Standing decisions.** The founder can state a decision once as a rule that settles every later item of its kind, such as a default business model.
 - It is recorded in `founder-decisions.tsv` like any decision.
@@ -291,144 +229,134 @@ The proposals replace G3 and G4. The work ends when every proposal is accepted o
 **Spending** means money paid for evidence or advice the work needs: a store on a paid plan, a lawyer's or accountant's consultation, or an official record.
 - Each request says what it buys, which decision depends on it, the cost if known, and what happens without it: the item stays unknown or open.
 - Building and running Sharrwah are not part of this plan.
-
-**The founder's decisions** go in `founder-decisions.tsv`: the date, the gate, the question, the decision, and the evidence it rested on.
+- The agents' own cost is the coordinator's to plan: each subject's budget is set from measured cost (Stage 4), and only an overrun by a quarter comes to the founder (section 8).
 
 ## 6. The rules this plan adopts
 
-These rules are settled, each from the source named. The founder may challenge any.
+These rules are settled, each from the source named, unless the founder objects at G0.
 
-### Recording
+### The test form, per subject
 
-- **Questions, not categories.** Agents get section B's items only as the neutral questions in `studies/proposals/questions-for-agents.md`. A script writes it from `studies/proposals/questions.md`, leaving out the founder's items and expectations.
-- **The platforms' own words.** Agents record what each platform says and does in its own words and terms. The founder's working words never become the names or categories they record under. The rule against our own category names (Q1, 11 October, rule 1; the pilot's A brief, rule 1) holds for everything agents record.
-- **No level or setter fixed in advance.** Nothing fixes where something is set or decided, or who sets it. "Per market" in the founder's section B is a working description, not a fixed level.
-- **All that is recorded, not only menus:** how the platforms organize their products, and also their terms, country rules, eligibility and availability.
+0. **Subject.** Is it about the product, the market context, or the company? Company questions go to the founder.
+1. **Decisions, then variation points.** Name the subject's few root decisions first, from the platforms' own top-level statements. Then split each into the facets that can change it, each a question of the form "who or what fills X".
+2. **Variants.** Take them from each of the five references, each with its evidence id, its kind and its scope.
+   - **Kind** comes from the citation's source:
+     - observed: a recorded store or journey;
+     - shipped: code or a schema the platform ships;
+     - stated: the platform's docs or help centre;
+     - official page: terms, pricing or legal pages.
 
-### Evidence
+     Kinds are compared like with like, as Q1's 12 October rule says.
+   - **Absence** counts only from a complete list the platform publishes, such as an enumerated schema or a full plan table. Otherwise it is a gap.
+3. **Cause,** found by comparing the references (Mill's methods of agreement and difference):
+   - market, named rule: a source names the law, regulator or rule;
+   - market, pattern: Salla and Zid agree with each other and differ from Shopify and BigCommerce;
+   - vendor choice: platforms in the same market differ;
+   - maturity: only from the platform's own release markers, such as beta or sunset;
+   - business model: follows from how the platform earns or what it holds;
+   - unknown.
 
-- **Statements stay verbatim,** cited at a pinned commit. A script checks every quote.
-- **Kinds of source** are assigned by rule (`method/source_kinds.py`): observed, a recorded store or journey; shipped, code or a schema the platform ships; stated, its docs or help centre; official page, its terms, pricing or legal pages. Kinds are compared like with like.
-- **"Not in what was read" and "absent".** What a run doesn't find is recorded as "not in what was read", with what it read and the corpus search behind it (`method/corpus_search.py`), in every language the platform uses and by each country, plan and arrangement it names. Something is recorded as absent only from a complete list the platform publishes, such as an enumerated schema or a full plan table.
-- **Before a gap goes to anyone,** its route is checked against what is held:
-  - if the page is held and readable, it is read;
-  - if it is held but not readable, the reader is extended;
-  - only what isn't held goes to the founder, with what exactly to capture and why.
-- **A page read new** is captured and committed before it is cited.
-- **Incorporated agreements.** An agreement that a platform's terms incorporate, such as Stripe's Connected Account Agreement under WooPayments and Shopify Payments, is part of that platform's terms, and may be read.
-- **The founder's words** are never evidence of what a platform does. The founder's decisions are recorded as decisions.
+   A cause is a reading and is labelled as one. It never becomes a platform statement.
+4. **Coexistence,** by how the variant is bound (Czarnecki, Helsen & Eisenecker 2005):
+   - A: the variants coexist in one store;
+   - B: one per store, market or plan, set by configuration;
+   - C: one per product, so one store can hold several;
+   - D: mutually exclusive: a platform offers only one.
 
-### Checks by risk
+   **Generality.** When one variant is a restricted form of another, and the general one can reach it by configuration, keep the general one.
+5. **What follows by rule** (Parnas 1972; Svahnberg, van Gurp & Bosch 2005):
+   - A: the platform carries all the variants at once;
+   - B: a variation point behind one interface, bound per market, store or plan;
+   - C: bound per product;
+   - D with a market cause: a variation point bound per market;
+   - vendor choice or business model:
+     - if expensive to change, the founder decides, on a recommendation;
+     - if cheap to change, it is left to the build;
+   - maturity or unknown, when expensive to change: kept open as a variation point until evidence settles it;
+   - a need the Yemen row shows that no reference meets: a product gap, written without Yemen's name (Q2's rule 3), and a design decision for the founder.
+6. **The Yemen row,** after the analysis (the founder, 25 October). For each decision, it says what each option needs in Yemen today, and whether that exists: a provider, a partner, a licence, a way to pay. Each fact comes from Stage 1's records, read with its date and with `corrections.md`, and is checked against its source's quote before it is used. A fact with no evidence is marked unknown, not inferred. Q2's scenarios are used only where a decision depends on a condition that is changing.
+7. **The scenario walk,** after the Yemen row (the founder's proposal, 26 October). Each root decision is walked through three more scenarios: a second market whose conditions differ on the decision's question; the company based in another country, such as Oman or Egypt; and the first market dropped. The walk shows whether the decision keeps the alternatives the evidence justifies, or names what it closes, so that this reaches the founder before anything builds on it. It uses the subject's own evidence, and a fact it lacks is marked unknown, not inferred (change scenarios in architecture evaluation: Kazman, Klein & Clements 2000).
 
-- **Everything a proposal cites** gets the full checks, by the founder's choice at the go: a re-check against its source, and, for anything not found or recorded absent, the search and audit.
-- **What no proposal cites** is recorded as read, without audits.
+**Options beyond the references.** Where a recommendation needs more than the references show, established designs and engineering writing are read for that decision. Each is weighed by its kind of source: a company's blog is that company's own account (choosing design concepts: Cervantes & Kazman 2016). This is what the founder called "buying architectural intelligence" ([24 October](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/4923e1c96a0296abdaf3f5bdbd8c155e09acfebf/founder-messages/2026-10-24-method-accepted.md?plain=1#L28)).
 
-### Comparing platforms
+### Matching, inside a subject
 
-When a proposal compares platforms, two concepts match only on one of four bases, each shown in the platforms' own words:
+Two concerns from different platforms match only on one of four bases, each shown in the platforms' own words:
 1. the same term, including a platform's own translation of it;
 2. the same identifiers: a key, scope, topic or entitlement;
 3. the same definition, with both quoted;
-4. both fill the same role in what a question asks, each by its own words (the role test). This replaces "both answer the same variation point", since there are no variation points now, and is the coordinator's own.
+4. both answer the same variation point.
 
-Matching on names alone fails on synonyms and homonyms (Rahm & Bernstein 2001), which is why bases 3 and 4 exist. A partial overlap is recorded as such. Two more rules hold:
-- **one party on every platform:** the merchant, the buyer, and the platform itself (its name, its payment product, its company);
-- **"no part":** a statement that a party has no part names no one filling the role, but shows that party isn't in its platform's set.
+A partial overlap is split into variation points and recorded. It doesn't go to the founder. Matching on names alone fails on synonyms and homonyms (Rahm & Bernstein 2001), which is why the third and fourth bases exist.
 
-### Money
+### Evidence
 
-- **The flow ends** at the payout to the merchant's own bank account.
-- **A wallet is in the flow** when its own words say it holds the merchant's sales proceeds before that payout. Where the wallet itself is the answer, the statement must say so. One whose words say only that it holds top-ups for the platform's services is outside it.
-- **A time, condition, fee or deduction** acting on an in-flow wallet's funds answers as usual.
-
-### Yemen
-
-- **Each proposal records** what Yemen's evidence allows, forbids or doesn't show, from Stage 1.
-- **Stage 1's rules for reading a state hold:**
-  - a condition's states are alternatives: only one holds at a place and time;
-  - a state's place is the scope its source gives it;
-  - only a state whose source says it holds in all of Yemen supersedes states at other places;
-  - a proposed state is never today;
-  - each part of today is read with its date.
-- **Q2's frame holds:** the merchant sells in the Yemeni market. A platform's condition naming only countries or regions is checked against it.
-- **Each Yemen fact a proposal uses is re-checked against its quotes,** including whether a later state covers the same place or a place that contains it.
-- **This replaces the faithfulness pass over every axis, and Stage 1's `within` relation, which is not built.**
-  - The `within` relation addressed a stale state taken as today's, at a place a later state covers.
-  - Each fact's re-check now catches that, for the facts the work uses.
-- **Stage 1's other open items are done only if a proposal uses them:** the review's "can follow" items, such as the internet shutdowns, and its two minor items.
-- **Other markets** wait until the founder decides to enter them.
+- **Statements** stay verbatim, cited at a pinned commit, under Q1's rules.
+- **Before a gap goes to anyone,** its route is checked against what is held:
+  - if the page is held and readable, the gap is "page not read", for an agent;
+  - if it is held but not readable, the reader is extended;
+  - only what isn't held goes to the founder, with what exactly to capture and why.
+- **A "searched, not found"** lists what it read, at a commit.
+- **Incorporated agreements.** An agreement that a platform's terms incorporate, such as Stripe's Connected Account Agreement under WooPayments and Shopify Payments, is part of that platform's terms. It may be read when a subject needs it.
+- **The founder's words** are never evidence of what a platform does. The founder's decisions about Sharrwah are recorded as decisions.
+- **Every claim** in an entry or a report is one of three: a fact traced to its source at a commit, a reading marked as one, or an assumption marked as one. A gap stays visible, with the work that would close it (claims and evidence: ISO/IEC/IEEE 15026-2).
+- **Evidence is looked up through the evidence repositories' own guides first:** their `README.md` and `docs/READING.md`.
+- **Merchants are never asked** (the founder, 24 October). Where documents can't settle a question, it goes to the platforms, partners, regulators or a lawyer, through the founder (section 3).
 
 ### Q3's rows
 
-Both sets, by the founder's choice at G0: the 81 payment rows and the Knowledge Map's 179 questions (`register/README.md`). They are checked once, at the end, by the founder's choice at the go.
-- **Why.** They are agent-written beliefs that might return as false requirements, and the founder said at G0 that some may be genuine questions. Nothing else in this plan reads them, so they can't steer the work.
-- **How.** After the review (step R6), one short run, from its own checked brief, places each row against the reviewed proposals. It lists the rows the proposals don't answer, and the rows that state as a requirement something the proposals' evidence contradicts. It reads each row only for its `id`, `question`, `needed_by` and `lane`.
-- **What comes of it.** Its list reaches the founder with the proposals. A row never adds to a proposal by itself: the founder decides what an unanswered row needs.
-- **They stay in `register/`.**
+Both sets, by the founder's choice: the 81 payment rows and the Knowledge Map's 179 questions, held outside the working files ([`register/`, as it stood at G1](https://github.com/Hamza-ye/sharrwah-knowledge-map/tree/e4d5cee3aaea9a12b3e27c1e641075a01d88052c/register)). They are reconciled once, at close-out, and read only for their `id`, `question`, `needed_by` and `lane`. A row never adds a variation point, a variant or a cause.
 
 ## 7. Risks, and what happens when one shows
 
 | # | Risk | How it shows | What happens |
 | --- | --- | --- | --- |
-| 1 | The work grows past what the proposals need | A record tied to no question; a step past its expected cost | The checker rejects untied records. A step past its expected cost re-sizes the rest, and the founder hears of it in the next message. The work stops only when the re-sized whole would pass the budget |
-| 2 | A word of ours, or the founder's, makes the result, as our category names, the matching example and the salla.com rule did | A brief or question uses a working word as a category; an agent records under it | Questions and briefs are checked before they run. The independent review looks for it. Each error is traced to its cause, and everything it touched is re-run |
+| 1 | The analysis grows past what decisions need | A row or file tied to no subject; a stage past its expected size | The checker rejects untied rows; growth goes to the next gate |
+| 2 | A rule, label, example or brief of ours makes the result, as our category names, the matching example and the salla.com rule did | The brief review finds a presupposition; the pilot shows it; an error traces to a rule | Briefs are reviewed before they run, and the pilot runs before anything scales. Each error is traced to its cause, and everything it touched is re-run |
 | 3 | Evidence we hold goes unread | A gap's route is held | The gap can't go to the founder; the reader is extended |
-| 4 | A search claims more than it read | A "not in what was read" without its list and search | The checker rejects it |
-| 5 | Depth differs by platform: accounts for Shopify and Salla, declarations for Zid and BigCommerce, code for WooCommerce | A proposal resting on absence at a weaker kind of evidence | Absence counts only from a complete list. Otherwise the proposal says "not in what was read" |
-| 6 | The same word names different things, or different words name the same thing | A comparison on none of the four bases | No match. It is recorded, and it matters only if a proposal depends on it |
-| 7 | Evidence changes mid-work: the founder's new commits, or a platform changes a page | New commits touch cited paths | The records and proposals whose citations changed are listed, and only those re-run |
-| 8 | A session loses its context, the container resets, or a usage limit cuts a step | Designed for in advance | Every run resumes from the repository. `STATE.md` is updated at every checkpoint, with a commit per run |
-| 9 | The founder becomes the bottleneck | An item reaches the founder with no decision attached | It doesn't reach them. Each message brings only decisions, each with a recommendation |
-| 10 | Yemen evidence is thin, or only reachable from inside Yemen | A proposal needs a Yemen fact no source gives | "Yemen's evidence doesn't show", not an inference. The capture list says what would show it |
-| 11 | A reading of terms becomes legal advice | A statement taken as what Sharrwah must do | Quotes only. Sharrwah's legal position is a company decision, for the founder with a lawyer |
+| 4 | A search claims more than it read | A "searched, not found" without its list | The checker rejects it |
+| 5 | Depth differs by platform: accounts for Shopify and Salla, declarations for Zid and BigCommerce, code for WooCommerce | A cause resting on absence at a weaker kind of evidence | Absence counts only from a complete list; otherwise the cause is unknown |
+| 6 | The same word names different things, or different words name the same thing | A match on none of the four bases | No match. It is recorded, and it matters only if a decision depends on it |
+| 7 | Evidence changes mid-work: the founder's new commits, or a platform changes a page | New commits touch cited paths | The subjects whose citations changed are listed, and only those re-run |
+| 8 | A session loses its context, the container resets, or a usage limit cuts a step | Designed for in advance | Every step resumes from the repository; `STATE.md` is updated at every checkpoint, with a commit per subject |
+| 9 | The founder becomes the bottleneck | An item reaches the founder with no decision attached | It doesn't reach them; each gate brings only decisions, each with a recommendation |
+| 10 | Yemen evidence is thin, or only reachable from inside Yemen | A fact a Yemen row needs has no evidence | It is marked unknown, not inferred; the capture list says what to capture and why |
+| 11 | A reading of terms becomes legal advice | A statement taken as what Sharrwah must do | Quotes only. Sharrwah's legal position is a company question, for the founder with a lawyer |
 | 12 | An agent misreads: the quote is right but the meaning wrong | The independent review disagrees | The source is re-read, and the disagreement is recorded |
-| 13 | The frame is wrong | The proposals let the founder decide nothing | The frame is re-examined, with evidence. This was met at G1 |
-| 14 | Old documents return as evidence | A citation to a derived or excluded path | The checker rejects it |
-| 15 | Statements a script copied carry an old error | A copy fails its quote check, or the review finds it wrong | Copies are checked like new ones. Everything a proposal cites gets the full checks |
-| 16 | Depth by question misses a platform's different answer | A checked platform shows something the in-depth platforms don't | Checking runs record what differs or goes beyond. The review checks each depth choice against the records |
-| 17 | The budget doesn't fit | The re-sized whole would pass 2 billion agent tokens | The work stops and comes to the founder, with what it would cut, and the founder decides |
-| 18 | A count of cost is wrong, as the pilot's first count was | A run's count disagrees with its transcript checked by hand | A script counts each run. At R2, the coordinator checks the sample's count by hand |
+| 13 | The frame is wrong after all | The pilot entry lets the founder decide nothing; errors keep coming from the method | Nothing scales; the frame is re-examined at G1, with evidence |
+| 14 | Old documents return as evidence, or old work governs again | A citation to a derived or excluded path; a brief, entry or search that draws on history outside the working files | The checker rejects the citation. History is reached only through a link pinned to a commit in a working file (section 9), and `method/check_surface.py` searches the working files for its framings |
+| 15 | A decision is carried forward on its past acceptance alone | A step builds on a decision whose plan or premise has changed | It is assessed on its merits first: its rationale, its evidence, and whether it still holds (the founder, 25 October) |
+| 16 | A change to this plan drops a safeguard without saying so | A change lists what it adds, not what it removes | Each change lists what it removes or weakens, with the risk that part controlled (section 9) |
 
 ## 8. When work stops and comes to the founder
 
-- **An error touches results already delivered.** It is measured and reported, then fixed.
-- **The re-sized whole would pass the budget,** 2 billion agent tokens.
-  - When a step runs past its expected cost, it doesn't stop. The coordinator re-sizes the rest, and tells the founder in its next message.
-  - The work stops and comes to the founder only when the re-sized whole would pass the budget. The coordinator then says what it would cut, and the founder decides.
-  - This replaces the stop for a stage that overruns its size twice.
-- **A decision that is genuinely the founder's blocks the next step,** or a proposal.
-- **New evidence changes more than one finished proposal,** or the records of more than one question.
+- **An error touches results already delivered.** It is measured and reported, then fixed, as with the Salla gaps.
+- **The pilot misses its "done when".**
+- **A subject runs past its budget by a quarter.** It stops, and comes to the founder with its measured cost. Below that, a run whose projection passes its share of the budget is stopped, and the coordinator re-plans the rest (Stage 4).
+- **A founder decision blocks the next subject,** where the decision is genuinely the founder's.
+- **New evidence changes more than one finished subject.**
 - **Something needs money, contact with a third party, or a legal judgment.**
 
 ## 9. Keeping it coherent across sessions
 
-- **How this plan changes.** Only by a dated entry in section 11, with the reason and the source.
-  - A change to the frame needs the founder's go.
-  - A fix to the method within this plan is recorded, and listed the next time work comes back to the founder.
-- **`STATE.md` says where the work is:** the step, the runs going and done, the next step, the open gate, and each step's expected and measured cost. It is updated and committed at every checkpoint.
-- **Every run ends with a commit.** Every step can resume from the repository alone.
-- **Every result traces back** through proposal, question and record to a statement or a Stage 1 fact, and from there to a source at a commit (Gotel & Finkelstein 1994).
-- **The new work's files live in `studies/proposals/`:**
-  - `questions.md` and `briefs/`;
-  - `areas/`: the extracts, the platforms' areas, the merged list, the depth choice and its review;
-  - `records/<question>/<platform>/`: the copies, `selection.tsv`, the statements recorded, what wasn't found, and the run's account;
-  - `sample/`: the sample's measurement;
-  - `drafts/`, `checks/` and `review/`;
-  - `company-decisions.md` and `capture-list.md`;
-  - `costs.tsv`: each run's measured cost.
-- **Pages read new** are captured with the repository's capture tool into `evidence/product-class/runs/<time>-proposals-<question>-<platform>/`, and committed before they are cited.
-- **How the kept checks run on these files:**
-  - verbatim quotes: `method/check_proposals.py`, on every record and draft;
-  - the search and audit: R5's runs, on what each proposal cites;
-  - each brief's check: a separate agent, before the brief runs;
-  - the independent review: R1's review of the areas list, and R6's of the proposals.
+- **How this plan changes.** In the section it changes, so the plan stays one text, with one dated line in section 11 giving the reason and the source.
+  - Each change lists what it removes or weakens, with the risk that part controlled, and whether that risk is reassigned or accepted. The list goes in the next report, where the founder sees it; it asks nothing of them (management of change; the founder, 25 October).
+  - A change to the frame needs the founder's go. The frame is the aim, the safe shore and the guard on the first market (section 1), who decides what (section 3), and the gates (section 5). The rest is method, which is the coordinator's (the founder, 25 October).
+  - A fix to the method within this plan is recorded, and listed at the next report (section 3).
+- **`STATE.md` says where the work is:** the stage, the subject, what is done, the next step and the open gate. It is updated and committed at every checkpoint.
+- **Every subject ends with a commit.** Every step can resume from the repository alone.
+- **Every result traces back** through subject, variation point, variant and statement to a source at a commit (Gotel & Finkelstein 1994).
 - **`CLAUDE.md` sets what each session reads first.**
   - The coordinating session reads this plan, `STATE.md` and `founder-decisions.tsv` before anything else.
   - An agent working from a brief reads only its brief and what the brief names, so that nothing in this plan steers its reading.
+- **Nothing outside the working files governs.** The work done between G1 and the reset is history. It is outside the working files, at [commit `4923e1c`](https://github.com/Hamza-ye/sharrwah-knowledge-map/tree/4923e1c96a0296abdaf3f5bdbd8c155e09acfebf), and is reached only through a link pinned to a commit in a working file, saying what it is for.
+- **The founder's messages.** The coordinator states its reading of each message at the top of its reply, so the founder can correct it. Only decisions go in `founder-decisions.tsv`. A question gets an answer, not a row.
+- **Reports** at each milestone and planned pause (the founder, 24 October): what is settled, what is open, the decisions that are the founder's, and the cost.
 
 ## 10. Sources
 
 - Boehm, B. (1988). A spiral model of software development and enhancement. *IEEE Computer* 21(5). Risk-driven sequencing; the riskiest part first.
+- Cervantes, H., Kazman, R. (2016). *Designing Software Architectures: A Practical Approach.* Addison-Wesley. Attribute-Driven Design: options come from known design concepts.
 - Calder, M., Kolberg, M., Magill, E., Reiff-Marganiec, S. (2003). Feature interaction: a critical review and considered forecast. *Computer Networks* 41(1). Interactions between subjects.
 - Chen, L., Ali Babar, M., Nuseibeh, B. (2013). Characterizing architecturally significant requirements. *IEEE Software* 30(2). What makes a subject rank high.
 - Clements, P., Northrop, L. (2001). *Software Product Lines: Practices and Patterns.* Addison-Wesley. Scoping as a core practice.
@@ -438,9 +366,12 @@ Both sets, by the founder's choice at G0: the 81 payment rows and the Knowledge 
 - Fairbanks, G. (2010). *Just Enough Software Architecture: A Risk-Driven Approach.* Marshall & Brainerd. Effort in proportion to risk.
 - Gotel, O., Finkelstein, A. (1994). An analysis of the requirements traceability problem. *First International Conference on Requirements Engineering.* Tracing each result to its source.
 - IEEE 1012, Standard for System, Software, and Hardware Verification and Validation. Independent review.
+- ISO/IEC/IEEE 15026-2:2022, Systems and software engineering, Assurance case. Claims, arguments and evidence: every claim a fact, a reading or an assumption.
 - Kang, K., Cohen, S., Hess, J., Novak, W., Peterson, A. (1990). *Feature-Oriented Domain Analysis (FODA) Feasibility Study.* CMU/SEI-90-TR-21. Domain analysis from existing systems, which is what Q1 is.
+- Kazman, R., Klein, M., Clements, P. (2000). *ATAM: Method for Architecture Evaluation.* CMU/SEI-2000-TR-004, Software Engineering Institute. Change scenarios that test whether an architecture's decisions hold as conditions change.
 - Mill, J. S. (1843). *A System of Logic.* The methods of agreement and difference.
 - Nygard, M. (2011). Documenting architecture decisions. Cognitect blog. The form of a decision item.
+- OSHA, 29 CFR 1910.119(l), Management of change ([Cornell's Legal Information Institute](https://www.law.cornell.edu/cfr/text/29/1910.119), read 25 October 2026). Procedures to manage changes address "The technical basis for the proposed change" and its "Impact of change on safety and health" before any change. Applying it to a design method is the coordinator's reading.
 - Parnas, D. (1972). On the criteria to be used in decomposing systems into modules. *Communications of the ACM* 15(12). Each decision likely to change behind its own module.
 - Pohl, K., Böckle, G., van der Linden, F. (2005). *Software Product Line Engineering.* Springer. One platform, many products.
 - Poppendieck, M., Poppendieck, T. (2003). *Lean Software Development: An Agile Toolkit.* Addison-Wesley. Deciding at the last responsible moment.
@@ -449,6 +380,8 @@ Both sets, by the founder's choice at G0: the 81 payment rows and the Knowledge 
 - Svahnberg, M., van Gurp, J., Bosch, J. (2005). A taxonomy of variability realization techniques. *Software: Practice and Experience* 35(8). How a variation point is realized, by when it is bound.
 
 ## 11. Changes
+
+A dated log. Where an entry differs from a later one, the later holds, and the sections above are the current text.
 
 - **12 October 2026:** proposed by the coordinating session.
 - **12 October 2026,** after the founder's questions: section 5 now says when the founder is needed, what a decision item looks like, how standing decisions work, and what spending covers.
@@ -518,125 +451,44 @@ Both sets, by the founder's choice at G0: the 81 payment rows and the Knowledge 
   - the subject's flow ends at the payout to the merchant's own bank account;
   - a wallet is in the flow when its own words say it holds the merchant's sales proceeds before that payout. Where the wallet itself is the answer, the statement must say so. One whose words say only that it holds top-ups for the platform's services is outside it;
   - a time, condition, fee or deduction acting on an in-flow wallet's funds answers as usual.
-- **18 October 2026, the re-frame after G1,** by the founder's answer (`founder-messages/2026-10-18-g1-answer.md`; `founder-decisions.tsv`, G1). The pilot's entry let the founder decide, and the founder chose to re-frame. This change has the founder's go of 18 October 2026, with five changes of the founder's, made here (`founder-messages/2026-10-18-go-on-the-plan-change.md`).
-  - **The aim.** For each item of the founder's intent (that message's section B), the best of what the five platforms do, framed as Sharrwah's proposed model. The work ends when the founder has accepted or changed the proposals. This replaces the safe shore and G4.
-  - **Questions, not subjects.** Section B's items are the questions the work answers, in neutral words. There is no subject list, and there are no batches.
-  - **Stopped:**
-    - labelling why platforms differ: the test form's step 3, and the step 5 rows that use it;
-    - marking each money question against Yemen's cases: phase D;
-    - Stages 3 and 4.
+- **18 to 25 October 2026: history.**
+  - **The re-frame:** at G1 the founder chose a re-frame (18 October).
+  - **A new method:** on 24 October a new method replaced this plan, and gained three amendments that day.
+  - **The reset:** on 25 October the founder reset the work to this plan.
 
-    Stage 0's freeze ends: new reading is allowed where the work needs it.
-  - **Kept:**
-    - verbatim quotes at a pinned commit;
-    - the search and audit behind anything a proposal cites that was not found, or is recorded absent;
-    - a separate check of each brief before it runs;
-    - one independent review of each result before it reaches the founder;
-    - gate G2, on the areas list.
-  - **Added:**
-    - a budget: 2 billion agent tokens, in the corrected count, with the coordinator's own work shown on top;
-    - a sample that measures the cost per new statement before recording runs in full, and re-sizes the rest. It doesn't stop the work;
-    - re-sizing whenever a step runs past its expected cost, told to the founder in the coordinator's next message, and a stop only when the re-sized whole would pass the budget;
-    - the founder's guard on holding sellers' money;
-    - plain words in everything that reaches the founder.
-  - **Replaced:**
-    - sections 1 to 9 are rewritten in full (Part 2), and the plan's status line and opening paragraph;
-    - Stages 3 to 5 become steps R0 to R6;
-    - Q3's rows are checked once, at the end, against the proposals (section 6);
-    - Stage 1's `within` relation, and its faithfulness pass over every axis, are replaced by re-checking each Yemen fact a proposal uses (section 6).
-  - **The count of tokens is corrected.** The method report's first count took each API request once per line of its transcript, and so roughly doubled the pilot's figures (`studies/subjects/S-01/method-report.md`, section 12). The founder's G1 answer stated its budget and bar in that count. At the go, the founder set the budget at 2 billion agent tokens in the corrected count, which this plan uses, and made the sample a measurement with no bar. A week's limit is about 2.8 billion tokens in this count.
-  - **Rulings that still bind,** each with the steps it governs:
-    - **kinds of source by rule** (12 October; `method/source_kinds.py`). Kinds are compared like with like: R3, R4, R6;
-    - **claims of absence** (13 October). A "not in what was read" shows the corpus search behind it, in every language the platform uses and by each country, plan and arrangement it names. The audit by an agent that made none of the claims now covers what each proposal cites (R5);
-    - **the role test** (17 October). A statement answers only where its own words name what fills the role the question asks about. It now anchors matching basis 4 (section 6): R3, R4, R6;
-    - **one party on every platform** (17 October, phase C): the merchant, the buyer, and the platform itself. R4, R6;
-    - **"no part"** (17 October). A statement that a party has no part names no one, but shows that party isn't in its platform's set: R4, R6;
-    - **where the money's flow ends** (17 October). It ends at the payout to the merchant's own bank account. A wallet is in the flow when its own words say it holds the merchant's sales proceeds before that payout. This governs Q5's last paragraph: R3, R4;
-    - **Stage 1's rules for reading a state** (12 October, pass 2). A condition's states are alternatives; a state's place is the scope its source gives it; only a state whose source says it holds in all of Yemen supersedes states at other places; a proposed state is never today. R4, R5;
-    - **reading each part of Yemen's today with its date** (17 October): R4, R5;
-    - **Q2's frame** (17 October, phase D). The merchant sells in the Yemeni market, and a condition naming only countries is checked against that: R4, R5;
-    - **agents' effort by step** (13 October), extended to the new steps below.
-  - **Rulings that lapse:**
-    - with the test form: step 3's order of tags, "no difference" and the "business model" test; step 5's added rows and its letter rule; causes compared on overlapping scopes; coexistence `unknown`; several coexistence letters joined by `+`; "names a law";
-    - also with the test form, since they rest on step 5's rows: the mapping of when a Q3 row must be answered (`briefs/E-rows.md`), and the four time-bomb types. The check of Q3's rows at the end gets its own brief;
-    - Q3 at close-out, which this change supersedes.
-  - **Effort by step:**
-    - `max`: each brief's check; the check of this change; R1's review; R4's drafting runs and its company-decisions run; R6's review and its check of interactions;
-    - `high`: R1's per-platform runs; R5's re-checks and audits; the check of Q3's rows at the end;
-    - `medium`: recording and checking runs (R2 and R3). A run whose check or review shows gaps is re-run at `high`, and the re-run counts in its step's cost;
-    - `low`: one-off mechanical questions.
-  - **The coordinator's own.** These are the coordinator's, not the founder's message's. The founder may overturn any:
-    - basis 4 anchored to roles (section 6);
-    - the per-platform runs that name each platform's areas, grouping further where needed, each grouping marked as the agent's own (step R1);
-    - each area tied to the questions that draw on it, with a script copying the statements under those areas (steps R1 and R3);
-    - the sample chosen by rule after the depth choice, and run while the founder marks the areas (step R2);
-    - each recording run ending with a short account, and drafting from those accounts, one question per run (steps R3 and R4);
-    - two review batches, and a separate check of how the proposals bear on each other (step R6);
-    - the capture list sent when recording ends (step R3);
-    - what a "must do" mark does (step R1);
-    - the form of a decision item (section 5);
-    - risks 15 to 18 (section 7);
-    - the check of Q3's rows run just before the proposals reach the founder, so that its list comes with them (section 6);
-    - Stage 1's open items done only if a proposal uses them (section 6).
-- **18 October 2026,** method fixes during step R1, within this plan. Each is listed to the founder in one plain line in the next message:
-  - **A platform's own names** include each part of a list entry's path, each half of an English / Arabic pair, and entries out of the concern map's scope. These are all the platform's own words; scope decides only what is placed (`method/areas_extract.py`).
-  - **The corpus search reads Shopify's Help Center** held in observed-sh, in English and Arabic, under each page's address. Before, it reached the Help Center only through older fetch archives (`method/corpus_search.py`).
-  - **The copy is in two phases** (step R3, above). Tying whole areas to a question would have handed several runs over 1,000 statements, most not bearing on it.
-  - **Agents get the questions without the founder's items or expectations,** from `studies/proposals/questions-for-agents.md` (section 6). The check of the review brief found that `questions.md` carried both.
-  - **The sample is Q2 on Salla,** by step R2's rule: of the in-depth runs, the one whose candidate statements are nearest the median, the lower on a tie.
+  That work, and every decision made on it, is outside the working files, at [commit `4923e1c`](https://github.com/Hamza-ye/sharrwah-knowledge-map/tree/4923e1c96a0296abdaf3f5bdbd8c155e09acfebf) (`HISTORY.md`). What it found that holds is carried as facts:
+  - Stage 1's corrections (`studies/yemen-cases/corrections.md`);
+  - the facts on Decision 1's page (`studies/subjects/S-01/decision-1.md`);
+  - the pilot's cost, corrected on 18 October (its method report, section 12);
+  - six scripts' improvements, re-run against the G1 results (`reports/reset.md`).
+- **25 October 2026, the reset,** with the founder's go. Each change is made in its section:
+  - **Section 1:** the design of the first version is for many markets, and production code waits for requirements, an architecture description and engineering documentation (the founder, 24 October). This replaces "a thin slice for Yemen". The guard on the first market is named, from the founder's message of 24 October.
+  - **Section 3:** the founder's guard on sellers' money; plain words; reviews that try to refute and look for what an entry never cites.
+  - **Section 4, Stages 0 to 2:** marked done.
+  - **Section 4, Stage 3:** concerns no longer reach the subject list through Yemen's axes. The market enters after the analysis (section 1; the pilot's analysis reached its line for Decision 1 from the references).
+  - **Section 4, Stage 4:** one subject at a time, with the pilot's proposals 1 to 7. The pilot's open items, and what the checker now reports on it, are ruled first. Shopify and Salla are read first and in full, and the others from what is recorded (the founder, 24 October).
+  - **Section 5:** G3 comes after each subject.
+  - **Section 4, Stage 5:** the areas list as a cross-check only.
+  - **Section 6:** decisions before variation points; options beyond the references; every claim a fact, a reading or an assumption; evidence looked up through its guides; merchants never asked.
+  - **Section 7:** risks 14 to 16.
+  - **Section 8:** a subject's budget plus a quarter.
+  - **Section 9:** changes made in place and listed with what they remove; the frame defined; history outside the working files; the founder's messages; reports.
 
-- **18 October 2026,** method fixes from the check of the R3 briefs (`studies/proposals/checks/R3-briefs-check.md`), within this plan. Each is listed to the founder in one plain line in the next message:
-  - **Reading is bounded, sentence by sentence** (step R3). For each sentence of its question, a recording run reads at most 10 pages from its platform's own map of its help, chosen by title; one corpus search, reading at most 5 of the documents it lists (10 where no map is held); and at most 5 live pages. It stops sooner once 5 pages in a row add nothing new. A checking run reads less.
-  - **Depth goes only to the sentences** that concern money flows, legal structure, the data model or partner contracts, with at most 5 more pages each (step R3).
-  - **The contracts behind a platform's providers** are recorded as the platform's own material shows them, with any agreement its terms incorporate or name as binding on the seller. A provider's own terms are otherwise not read: where the platform names them, they are recorded as not in what was read, with their address. This narrows step R3's "the contracts behind its providers".
-  - **The search behind a "not in what was read"** is one corpus search for what is missing, in each language as alternatives, and one more with the places, plans or arrangements the row is about, reading at most 5 of the documents listed. This narrows section 6's "by each country, plan and arrangement it names", which would otherwise mean one search for each.
-  - **Live pages read in step R3** are captured after each run, and before any proposal cites them. This changes, for R3's runs, the rule that a page read new is "captured and committed before it is cited", wherever the plan states it (sections 2, 3, 6 and 9): a run cites a live page before the coordinator captures it, and the checker reports its quotes as pending until then.
-  - **Copies keep their ids.** Each copy is numbered by its line in its source, and copied gaps get ids too, so an account can cite them and an id never moves to another statement.
-  - **Each question's sentences are numbered** by `method/agent_questions.py`, so that every run, and the checks, count them alike.
-- **18 October 2026,** fixes from the review of the areas list (`studies/proposals/areas/review.md`: 25 findings, 15 must fix), within this plan. Each is listed to the founder in one plain line in the next message:
-  - **Five areas added, 34 in all,** so that the founder can mark apart what the platforms keep apart: languages (A-30) and currencies (A-31), split from selling to several countries (A-15, now per-country versions of one store, with the countries a store sells to in A-16); gift cards, store credit and customer wallets (A-32), from marketing and elsewhere; catalogs and price lists (A-33); and charity stores (A-34), a help-centre category of Salla's that no area held.
-  - **Platform areas re-cut by the coordinator,** each with its reason in its note and in the platform's notes: Salla Payments and BigCommerce Payments join the platforms' own payment services (A-12); Salla's and WooCommerce's financing join A-13; WooCommerce's WordPress.com account joins accounts (A-01); Zid's list of countries joins where the platform operates (A-16).
-  - **Questions draw on more areas.** Each question now draws on the areas where the review found statements bearing on it, and Q8 draws on every area, since any unit can be introduced by plan, place or release stage. A run sets aside what doesn't bear, so wider ties lengthen its selection most, and its copies only by what it chooses to copy. Candidate statements for the in-depth runs rose from about 12,400 to about 23,000; the sample measures what that costs. A few single concerns the reviews found bearing on a question its areas miss are added as candidates (`studies/proposals/areas/extra-candidates.tsv`), and the pointers the reviews asked for go in the runs' starting messages (`studies/proposals/briefs/R3-starting-messages.md`).
-  - **The pilot's statements are offered to every question,** as the selection's last row: copied for Q5, as before, and judged like any other row for the other questions.
-  - **Zid is read in depth for Q6,** since its record shows what Shopify's and Salla's don't: Syria among the countries it lists, while Zid Pay bars dealings with it.
-  - **The checks by script** now also check that each concern a depth reason cites is reached by its question, that no area both draws a question and says the work leaves it out, and that what is kept anyway names each question drawing on the area (`method/check_areas.py`). `areas.md` shows every platform name.
-  - **The sample is now Q3 on Salla.** The same rule, applied to the revised list, picks the in-depth run whose candidate statements are nearest the median of 875: Q3 on Salla holds exactly 875.
-  - **The review's re-check** (`studies/proposals/areas/review-recheck.md`) found 21 of its 25 findings fixed and one new one to fix before the founder sees the list: A-15's heading claimed more than it held. It is now "Per-country versions of one store", and BigCommerce's Geography moved to A-16.
-- **19 October 2026,** fixes from the last read of the checking brief (`studies/proposals/checks/R3-checking-brief-read.md`: 14 findings, 8 must fix), within this plan. Each is listed to the founder in one plain line in the next message:
-  - **Basis 1 of section 6's matching rule is read narrowly in checking runs:** the same term matches only where both platforms use it for what the question's sentence asks about, each quoted with what it names. A word both platforms use for different things is no basis, as section 6's warning on homonyms intends.
-  - **A checking run's "not in what was read" rests on its search for the sentence** it belongs to, read among the documents that search listed, with one more search only for a place or plan its statements name. This narrows, for checking runs, the search behind a not-found that the entry of 18 October set.
-  - **An in-depth account's points that record only what it didn't find** are not sorted against, and a checking run cites its own open copied gaps before it records a new row.
-  - **The corpus search lists the documents most about the terms first,** by how densely they hold them, so that a capped listing doesn't fill with long reference pages.
-- **19 October 2026,** fixes from the first checking runs, within this plan. Each is listed to the founder in one plain line in the next message:
-  - **A checking run may search twice for a sentence.** Some runs chose their search terms before reading and left points out, so those points were never checked: about 30 in Q4 on WooCommerce and on Zid. A run now lists the points first, and runs one more search for any the first left out. Q3 and Q4 on WooCommerce and Q4 on Zid are continued to search for the points they left out.
-  - **Every point a checking run's reading doesn't show gets a row,** up to 20. Two runs recorded fewer than 20 and left the rest unchecked.
-- **19 October 2026,** the drafting brief (`studies/proposals/briefs/R4-drafting.md`), after its check (`studies/proposals/checks/R4-drafting-brief-check.md`: 18 findings, 8 must fix), within this plan. Each is listed to the founder in one plain line in the next message:
-  - **A draft cites only what its proposal rests on,** within limits that keep the checks of everything cited (step R5) near their sizing: about 40 facts, 7 things not found, 8 Yemen facts and 2 "Yemen's evidence doesn't show" a draft (Q5: 60, 10, 12 and 3).
-  - **No level is fixed in advance:** Sharrwah is "set up for each place it serves", and what a place is comes from the evidence, as section 6 requires. Yemen's own facts differ by area within the country.
-  - **The pilot's entry doesn't reach the drafting runs.** Q5 and Q7 get each deferred decision's topic, worded to presume no holder and no level, and the two open review findings. The entry's earlier framings and recommendations reach a proposal only when the coordinator finishes it.
-  - **Yemen's evidence is read after the design sections are written,** so that it tests the design rather than shaping it: Yemen is the first market, not the design target (section 1).
-- **19 October 2026,** the founder's decisions of that day (`founder-messages/2026-10-19-areas-drafting-and-observed-evidence.md`; `founder-decisions.tsv`), and how they are carried out. Each is listed to the founder in one plain line in the next message:
-  - **Gate G2: no marks.** All 34 areas stay in Sharrwah's extent. When each part is built is decided in the design (section 1, the end), not on the list. The drafting brief says so, and no `mark` column is added to `areas.tsv`.
-  - **The drafts' citing counts are a guide, not a limit.** A draft cites what its proposal needs. The checker counts what is past the guide as a note, not a warning, and step R5 checks everything cited. Only the 2 billion ceiling stops the work. This replaces the limits of the drafting brief's entry above.
-  - **A re-check against the observed runs comes before drafting** (step R3, re-check; `studies/proposals/briefs/R3-observed-recheck.md`). The recording runs read the platforms' published material, but not what observed-sh's and observed-sa's runs hold, though their guides describe it: the admin's answers and Salla's saved responses, the indexes and derived tables built from them, and what each step's page showed, journeys included. One run for each question on Shopify and on Salla (16) re-checks every not-found row, every copied gap its account cites, and the founder's capture list against the runs, records what they show as statements, and updates its account. A row a run closes moves to `not-found-closed.tsv` with the statements that close it. Each run reads at most 3 run documents for each open item and for each sentence, and records at most 60 new statements. At `medium`, as recording.
-  - **The search covers the runs** (`method/runs_corpus.py`, through `method/corpus_search.py`): each run's answers or saved responses, its steps' page text, the requests its pages sent, the indexes and derived tables, and the structures' source files, folded once per commit into a cache. Each run's document is listed by its own store, run and step.
-  - **The brief is tested by its first run, not by a separate check,** to save budget: it applies the rules of the recording brief, which was checked, to the runs' files. The coordinator reads the first run's output, fixes the brief, and then starts the rest.
-  - **Every not-found row's wording is checked against what it read** (`method/check_not_found_wording.py`): each phrase a row gives in quotation marks, backticks or parentheses is looked for in the sources its `read` names and in its folder's records. Of 390 rows, 13 had a phrase not found as written. Read item by item, the five on Zid hold lists whose every item is found. The eight on Shopify and Salla go to their re-check runs. Q6-SH-N01's "Type in your country" is in the held copy of the page it read (observed-sh, `raw/runs/20260930T050139Z-shopify-com-pages/fetch.warc.gz`, the record at 41642451), so it stays until its run re-checks it.
-  - **The founder's capture list waits.** It is rebuilt from the rows that stay after the re-check, and the work doesn't wait for it.
-- **24 October 2026,** step R5 and the company decisions, after the check of both briefs (`studies/proposals/checks/R5-and-company-decisions-briefs-check.md`: 22 findings, 7 must fix), within this plan. Each is listed to the founder in one plain line in the next message:
-  - **R5 checks the drafts before the coordinator finishes them,** so that finishing takes R5's findings in once. R5's re-checks then cover what finishing changes. The plan's order in step R4 ("the coordinator finishes each proposal") is kept for the recommendation, which finishing adds.
-  - **The company decisions' run comes after R5's facts and absence runs** and the coordinator's fixes to records, so that it repeats no record found wrong. R5 then checks the decisions' points against the records' rows.
-  - **A card per cited record, made by script** (`method/r5_cards.py`): each quote in its source's context, with the page's opening and note boxes, a step's files, the digest's part for a Yemen fact, and a copy cited by several questions checked once. The script also checks every quote each cited record rests on (2,150, all found) and lists the records no proposal cites, recorded as read without audits.
-  - **The runs:** facts by proposal and platform, in parts of about 100 KB (52 runs); absences by platform, at most 9 a run (8 runs); Yemen's facts (3 runs) and what Yemen's evidence doesn't show (1 run), at `high`. The first runs of each kind test the brief before the rest.
-  - **A record's statement is the source's words, and its identifier the recorder's label:** neither is a finding unless the source doesn't hold the words, or the label names something else.
-  - **A later Yemen state counts at a place** if it is at the same place (as `places.tsv` groups places), or at "place not stated" with a quote saying it holds in all of Yemen; never by geography.
-  - **In a proposal's section 6, "allows" is read as what Yemen's evidence allows:** a state showing a practice offered, available or in use supports it at its place and date. Saying that a law, a licence or an authority permits or requires something needs a state that says so.
-  - **"Was not found" said of a reading needs its row,** in the drafts' checks too.
-- **24 October 2026: this plan is superseded by `METHOD.md`.**
-  - The founder accepted the method on 24 October, and approved its amendment 1 with the plan of that evening (`founder-messages/2026-10-24-method-accepted.md`, `founder-messages/2026-10-24-approved-plan.md`, `founder-decisions.tsv`).
-  - From then on `METHOD.md` governs the work. This plan stays as the record of the work from 12 to 24 October.
-  - Its principles carry over in `METHOD.md` section 3a:
-    - "Yemen is the first market, not the design target" (section 1);
-    - one platform for many markets;
-    - Yemen's evidence read after the design.
-  - `METHOD.md` section 13 lists the earlier decisions it changes.
+  **What this change removes or weakens,** with the risk each part controlled:
+  - **"A thin slice for Yemen"** risked a design shaped by one market. Now replaced: designed for many markets, Yemen first.
+  - **Stage 3's Yemen-axis candidates** covered concerns only the market raises. Reassigned: concerns the platforms scope by country or region still enter, and phase D's product gaps catch what only Yemen raises.
+  - **Batches of three to five subjects** spread the founder's decisions over fewer gates. Reassigned: each subject's report carries only the decisions that are the founder's.
+  - **Stage 1's faithfulness pass over every axis before Stage 4** guarded every axis. Weakened to the axes each subject bears on, before its phase D. Accepted: an axis no subject bears on binds nothing.
+  - **All five references read alike** guarded against taking one market's pattern for a rule. Weakened: Zid, WooCommerce and BigCommerce come from what is recorded, and are read further where a cause needs them, so every cause still compares all five.
+- **25 October 2026, after the reset's two cold-start tests:** wording made consistent with the founder's decisions, the checkers named, and history's links defined as pinned links in any working file. Two decisions of the founder's of 24 October that the reset had dropped without saying so are carried, since they hold: the guard on the first market (section 1) and Shopify and Salla first (Stage 4). "Buying architectural intelligence" is attributed to the founder (section 6). The pilot's lessons it hadn't carried are added (Stage 4).
+- **25 October 2026, Yemen's scenarios cut,** with the founder's go, on the pilot's evidence. Its 183 Yemen marks, against 30 scenarios, moved no result ([its method report, section 8](studies/subjects/S-01/method-report.md#8-phase-d-marking-the-subject-in-yemens-cases)). Stage 1 cost about 1.5 billion tokens ([section 12](studies/subjects/S-01/method-report.md#12-what-a-subject-costs)), and Decision 1 used 15 of its 743 axes and constants. Changed: the safe shore's item 2 and the guard (section 1), Q2's marks (section 2), Stage 1's note and Stage 4 (section 4), the decision item (section 5), the test form's steps 5 and 6 (section 6), and risk 10 (section 7).
+
+  **What this change removes or weakens,** with the risk each part controlled:
+  - **Marking every subject against every Yemen scenario** showed, before it happened, whether a change in Yemen would rule an option in or out. Accepted: options stay switchable per market, so such a change is a setting, not a redesign. A scenario is still used where a decision depends on a condition that is changing.
+  - **Stage 1's `within` relation and faithfulness pass before each subject** guarded every axis a subject bore on. Replaced: each fact is checked against its quote when a Yemen row uses it.
+  - **The pilot's open item on variants with no stated condition** existed only because phase D had to show each variant fail. Removed with phase D's marks.
+- **26 October 2026, after the orientation page,** with the founder's answers (`founder-decisions.tsv`): G2, evidence for all ten subjects; Decision 1's follow-ons, E1 and E2 kept, and default 2's "never" at launch; no test of Decision 1 against Shopify alone; the founder's G1 intent stays in history. Changed:
+  - **Section 6:** the scenario walk becomes the test form's step 7, on the founder's proposal. It restores the change scenarios of the method of 24 October (history), without its outcome types: the walk tests the same thing, whether one market's facts shape what is built, more directly. Stage 4 and the decision item (section 5) name it, and section 10 adds its source.
+  - **Stage 2's note** is brought up to date.
+
+  **What this change removes or weakens:** nothing. It adds one step per subject, made by reasoning over the subject's own evidence, with no new reading.

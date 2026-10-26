@@ -1,48 +1,30 @@
 # State
 
-Where the work is, on one page (`METHOD.md` section 4). The coordinating session keeps it, and commits it at every checkpoint. The text from before 24 October is in the history: `git show a05974a:STATE.md`.
+**What this file is:** where the work is, on one page (`PLAN.md`, section 9). Updated 26 October 2026.
 
-**Updated:** 24 October 2026, 20:40 UTC.
+**The plan:** `PLAN.md`. It is the plan the founder agreed at G0, and on 25 October 2026 the founder reset the work to it, as it stood at G1, with the pilot's own changes and the coordinator's engineering choices (its section 11).
 
-**The method:** `METHOD.md`, adopted on 24 October 2026 with amendment 1.
+**Where the work is:**
+- Stages 0 to 3 are done (`PLAN.md`, section 4).
+- **G1 is closed.** The founder answered Decision 1 on 25 October 2026 (C, with the three defaults, in every market at launch), and its two follow-ons on 26 October: E1 and E2 are kept, so the design keeps room for A and B; and default 2's "never" holds at launch (`founder-decisions.tsv`).
+- **The pilot, S-01, is closed:** [`studies/subjects/S-01/register.tsv`](studies/subjects/S-01/register.tsv), and its review pack, [`reports/S-01-review.md`](reports/S-01-review.md).
+- **G2 is answered:** "evidence" for all ten subjects, so each runs on the evidence, in the order of [`studies/subjects/subjects.tsv`](studies/subjects/subjects.tsv).
+- **PR #7** (the reset, G1's close and S-01's review) is merged into `main` on the founder's word of 26 October.
 
-**Milestone:** M0, the re-baseline (subject S-00). It closes when its pull request merges with `reports/M0.md`. **Next:** M1, the money boundary (S-01).
+**Open gate:** G3, after each subject. Next: S-02.
 
-**Settled** (`founder-decisions.tsv`):
-- **The guard on money:** nothing that holds sellers' money through Sharrwah goes live without the founder (G1, 18 October).
-- **The extent:** the 34 areas (18 and 19 October).
-- **The market guard** (`METHOD.md` section 3a), and F-00: many markets, Yemen first, not the design target.
-- **References:** Shopify and Salla are primary, and the others come in only on demand.
-- **No merchant interviews.**
-- **Code:** spikes are allowed; production code waits for the definition of ready (`METHOD.md` section 5).
-- **Restored from 10 October:** F-01 (no US ties), F-05 (the founder's words are attestations) and F-06 (payments as their own concern).
-- **Standing rules:** the rule on credentials in evidence, and plain words for the founder.
+**Waiting on the founder:** nothing.
 
-**Open founder decisions:**
-- **Decision 1's line** (S-01): "No sellers' money is held through Sharrwah at launch. A and B are reserved, not built. Switching either on stays yours."
-- **O-01:** which legal entity and country contracts with sellers and partners (S-08).
-- **The form of F-02** (the Sana'a zone first) **and F-03** (both zones), under the guard (S-04).
-- **From M2:** the order in which the first version covers the areas, and the business targets for the quality scenarios.
+**Next: Stage 4, S-02, what a market is.**
+- **Budget:** 200 million agent tokens, counted by `method/count_tokens.py`. It is set from the pilot's measured cost (about 1.03 billion, of which about half a billion for a clean run, by its method report, section 12), reduced for the plan's changes: S-02 starts from its root decisions and from the statements the concern map already holds, reads Shopify and Salla in full and the other three from what is recorded, and keeps each agent's run short. At 250 million it stops and comes to the founder (`PLAN.md`, section 8).
+- **Its framing adds the concerns its draft row missed.** The row cites Shopify's Managed Markets (SH-C-110), a cross-border service, but not the core markets concerns: Shopify's Markets (SH-C-106) and backup region (SH-C-113), Zid's markets and served countries (ZD-C-034, ZD-C-032), and Salla's country reference data (SA-C-166). The row's grouping was the coordinator's reading; the founder's G2 mark doesn't change.
+- **Its steps:** the pilot's five steps under Stage 4's changes; then the Yemen row (step 6) and the scenario walk (step 7) for each root decision; an independent review; the quote check (`method/check_report.py`); and a short report for G3 with its cost against budget.
+- **The founder's decisions of 10 October, F-01 to F-06 and O-01,** bind nothing (`founder-decisions.tsv`, the reset). What they raise comes with its evidence when a subject reaches it: O-01, which company contracts with sellers, in S-03; F-01, the company's ties, where a subject needs them, such as S-07's sanctions and screening.
 
-**Superseded or stopped:**
-- `PLAN.md` as the method. It is kept as the record.
-- R5's checks of everything cited: 16 runs stopped, 17 never started.
-- The drafts as deliverables: they are now candidate options.
-- The planned review of the drafts, and the company-decisions run.
+**For the founder:** the orientation page, outside the repository: https://claude.ai/artifact/8fLCxo4JGKmGgPjXSpW1BN. It is updated at each milestone.
 
-**In flight:** no agents. The scheduled check-in (`trig_01QJwaNYp764mJnJLh5n5ago`) is off. It is turned on only while a task runs (`METHOD.md` section 9).
+**In flight:** nothing. No agent is running.
 
-**Budget:**
-- M0 used one agent: the independent review in planning processed 7.3 million tokens over 51 requests, counted by `method/count_tokens.py`.
-- The 2 billion stays as the upper bound. S-01's budget is 20 million agent tokens.
+**Evidence read:** observed-sh at `febbf6c`, observed-sa at `4ca2e89` (the clones' heads on 25 October 2026), and WooCommerce 11.2.1.
 
-**The backlog:** `python3 -I method/decision_status.py` gives 16 subjects and no decision records yet.
-
-**Next step:** once M0 merges, frame S-01 (`METHOD.md` section 5 step 1, and section 14):
-- the three corrections first;
-- then Decision 1's line;
-- the payment boundary record, from the seam's contract v0 after the guard test;
-- the ledger;
-- Decisions 2 to 12.
-
-**To resume:** `METHOD.md` section 9. Read `METHOD.md`, then this file, then the open subject's records.
+**To resume:** read `PLAN.md`, this file and `founder-decisions.tsv`.

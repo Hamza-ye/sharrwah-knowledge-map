@@ -1,5 +1,7 @@
 # S-01 method report: what broke and what changed
 
+*25 October 2026: this is the pilot's record at G1. Where it differs from `PLAN.md`, the plan holds: its Stage 4 says which of these proposals and lessons apply, and how.*
+
 **17 October 2026.** Written by the coordinator through the independent review (F), its two re-checks, and the fixes after them. It is complete but for G1.
 
 ## Where the pilot stands
@@ -153,7 +155,7 @@ Each of these faults made an agent think something was missing, or readable, whe
 **Corrected on 18 October 2026.** The first version of this section counted each API request once for every line its transcript writes it on.
 - **What went wrong.** A transcript writes a request's reply over several lines, one per block (thinking, text, each tool call), and each line repeats the request's whole usage. So the first count roughly doubled every figure.
 - **The fix.** `method/count_tokens.py` counts each request once.
-- **What it touched.** The founder set the re-frame's budget and the sample's bar from the first count's figures (`founder-messages/2026-10-18-g1-answer.md`). In this count, the same budget is about 1.0 billion tokens, and the same bar, half the rate of phases A and A2, is about 0.26 million per statement.
+- **What it touched.** Every figure below. Budgets set later from the first count are history (`HISTORY.md`).
 
 **The pilot's agents processed about 1.03 billion tokens,** by their own transcripts. Most of that is context re-read on each turn.
 
@@ -196,6 +198,8 @@ Each of these faults made an agent think something was missing, or readable, whe
    - one independent review per subject.
 
 ## To complete
+
+*25 October 2026: G1's question was answered on 18 October, and on 25 October the work was reset to the plan, with these proposals (`PLAN.md`, section 11). Of the decisions the pilot raised, Decision 1 was answered on 25 October, and its follow-ons on 26 October (`founder-decisions.tsv`).*
 
 - **The independent review's verdict, after two re-checks:** the entry lets the founder decide (`review.md`, "Second re-check"). No must-fix finding is open.
 - **G1:** whether the founder can decide from the entry, and the founder's choice to scale up, change the method, or re-frame.
