@@ -81,3 +81,14 @@ S02-SH-301 is the 301st statement, so the reading stops here. Starting points an
 ## Resumed by the coordinator (2026-10-26)
 
 The coordinator resumed the run after the stop past 300 statements, with an order for the unread starting points: (1) the nine runs' steps, (2) `index/ledger/admin-route.tsv` and `derived/admin-controls.jsonl`, (3) `shop-request-details` and the plan comparison tables in full, (4) the leads (Managed Markets subpages; B2B, retail and channel market pages; for (c) only, the Shopify Payments requirements pages). Ids continue from S02-SH-301, S02-SH-C539, S02-SH-N03, S02-SH-G05.
+53. Run `20260930T170204Z-journey-market` (store demo-fake-dev-store, 2026-09-30): actions.jsonl in full; steps 001, 002, 008, 012, 013, 017, 021, 022, 040, 050, 079, 085, 087, 092, 096, 101, 110 (.aria.yaml) read where they bear on a bullet: S02-SH-302 to S02-SH-317 (S02-SH-295 came from its step 047).
+54. Run `20261005T090923Z-journey-settings-general` (store demo-fake-dev-store, 2026-10-05): actions.jsonl in full; step 001 (text.txt) in full; steps 002 to 018 (order ID, activity log, brand, transfer and removal dialogs) by their intents, as not bearing on a bullet: S02-SH-318, S02-SH-319.
+
+## Paused by the coordinator (2026-10-26)
+
+The coordinator paused the run (PLAN.md section 8: the subject's cost goes to the founder). Everything checked is written; ids continue from S02-SH-319, S02-SH-C580, S02-SH-N03, S02-SH-G05. Still unread, in the coordinator's order:
+1. Runs' steps: `20261004T223401Z-journey-business-entity` (all steps but 031, 034, 048); `20261005T113304Z-journey-organization-details` (all steps; 006 and 023 read only through their structures); `20261006T232216Z-journey-signup-new-account` (all steps but 004, read through its structure); `20261005T003901Z-journey-vantage`; `20261007T191236Z-journey-domains`; `20261007T191626Z-journey-domains`; `20261007T234442Z-journey-store-languages` (all steps but 008). Done: `20260930T170204Z-journey-market` (item 53) and `20261005T090923Z-journey-settings-general` (item 54).
+2. `index/ledger/admin-route.tsv` and `derived/admin-controls.jsonl`: not read.
+3. `shop-request-details` and `plan-comparison-admin` / `plan-comparison-public`: not read in full (only as in items 48 and 44).
+4. Leads: the Managed Markets subpages; `b2b/markets.md` and `b2b/markets/*.md`, `sell-in-person/markets.md`, `online-sales-channels/channel-markets.md`; for (c) only, the Shopify Payments requirements pages per country (`payments/shopify-payments/supported-countries/<country>/requirements.md`). Also not read: the other leads listed under "Stopped past 300 statements".
+5. Not yet done: the re-check of gaps S02-SH-G01 to S02-SH-G05 against what is read, and a new checker run on the copy (the last run, item 52, was before S02-SH-302).
