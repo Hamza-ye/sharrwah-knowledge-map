@@ -138,7 +138,10 @@ class Sources:
             return None, f"no readable record at offset {off.group(1)}: {e}"
         cs = re.search(r"charset=([\w-]+)", headers.get("content-type", ""))
         text = body.decode(cs.group(1) if cs else "utf-8", "replace")
-        return [text, html_text(text), warc_html_text(text)], ""
+        texts = [text, html_text(text), warc_html_text(text)]
+        if "json" in headers.get("content-type", "").lower():   # its strings decoded, as a held .json file's are
+            texts.append(json_unescaped(text))
+        return texts, ""
 
     def web_texts(self, url):
         """The texts of every capture of the address: a quote is found if any capture holds it, since an earlier
