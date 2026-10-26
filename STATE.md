@@ -13,7 +13,7 @@
 
 **Open gate:** G3, after each subject. S-02 is under way.
 
-**Waiting on the founder:** nothing.
+**Waiting on the founder:** S-02's budget. S-02 reached a quarter past its 200 million tokens and stopped, as `PLAN.md` section 8 says (below).
 
 **Stage 4, S-02, what a market is.**
 - **Its frame:** [`studies/subjects/S-02/frame.md`](studies/subjects/S-02/frame.md).
@@ -26,9 +26,14 @@
 
 **For the founder:** the orientation page, outside the repository: https://claude.ai/artifact/8fLCxo4JGKmGgPjXSpW1BN. It is updated at each milestone.
 
-**In flight:** S-02's phase A for Shopify and for Salla, two agents started at 22:21 UTC on 26 October, under the brief as the independent inspection and its re-check left it (`studies/subjects/S-02/briefs/A-one-platform.md`).
+**In flight:** nothing. S-02 stopped at 250.4 million agent tokens on 26 October, at 23:30 UTC (`PLAN.md`, section 8), by `method/count_tokens.py`:
+- the inspection of the phase A and B briefs, two rounds: 27.9 million;
+- phase A, Shopify: 104.7 million, 226 requests; 319 statements, 5 gaps, 3 absences, 33 terms;
+- phase A, Salla: 117.8 million, 276 requests; 304 statements, 4 gaps, 35 terms.
 
-**Next:** phase A for Zid, WooCommerce and BigCommerce, two at a time; then the capture of cited live pages, and phase B, whose brief gets one more check first.
+Both phase A agents paused with their work in their files. Each logged what it hasn't read in its `notes.md`. On their files as they stand, the checker gives no error for either.
+
+**Next:** the founder's answer on S-02's budget. Then phase A for Shopify and Salla is finished from their notes, and Zid, WooCommerce and BigCommerce run.
 
 **Evidence read:** observed-sh at `febbf6c`, observed-sa at `4ca2e89` (the clones' heads on 25 October 2026), and WooCommerce 11.2.1.
 
