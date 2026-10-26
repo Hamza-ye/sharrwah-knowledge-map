@@ -14,6 +14,8 @@
 #   no-part     that the platform has no part in it, or holds no such thing; it needs no gap;
 #   end         an end of the subject's interval, named by a statement or recorded as a gap.
 # Without the file, the pilot's bullets hold: a to c ask, d no-part, e conditions, end-payment and end-payout.
+# A subject's limits.tsv (`limit`, `value`, `note`) may set `variation points`, the number past which phase B stops
+# and reports; it is 25 without it.
 #
 # Usage: python3 -I method/check_subject.py SUBJECT_DIR OUT [CAPTURE_RUN ...]
 import csv, glob, json, os, re, sys
@@ -60,6 +62,7 @@ YEMEN_NAMES = re.compile(r"(?i)yemen|\baden\b|sana'?a|\byer\b|اليمن|يمن�
 NON_ANSWERS = {"absent", "gap", "not covered"}
 HEAD = {
     "bullets.tsv": ["bullet", "root_decision", "asks", "role"],
+    "limits.tsv": ["limit", "value", "note"],
     "statements.tsv": ["stmt_id", "bullet", "placement", "identifier", "statement", "scope", "marker", "conditions", "cite_ids", "from", "note"],
     "terms.tsv": ["term", "translation", "definition", "cite_ids"],
     "absences.tsv": ["absence_id", "bullet", "what_is_absent", "list_cite_ids", "complete_cite_ids", "note"],
@@ -147,6 +150,20 @@ def load_bullets():
     return {r["bullet"]: r["role"] for r in rows}
 
 BULLET_ROLE = load_bullets()
+
+def load_limits():
+    rows = read(os.path.join(subj, "limits.tsv"), "limits.tsv")
+    out = {"variation points": 25}
+    for r in rows or []:
+        if r["limit"] not in out:
+            err("limits.tsv", r["limit"], f"not a limit this checker knows: {sorted(out)}")
+        elif not r["value"].isdigit():
+            err("limits.tsv", r["limit"], f"value '{r['value']}' is not a whole number")
+        else:
+            out[r["limit"]] = int(r["value"])
+    return out
+
+LIMITS = load_limits()
 ORDER = list(BULLET_ROLE)                                 # the subject's own order, for messages
 def of_role(*roles):
     return [b for b in ORDER if BULLET_ROLE[b] in roles]
@@ -377,8 +394,9 @@ vp = {}
 if vps is not None:
     unique("variation-points.tsv", vps, "vp_id", rf"^{SID}-VP-\d{{2}}$")
     vp = {v["vp_id"]: v for v in vps}
-    if len(vps) > 25:
-        err("variation-points.tsv", "", f"{len(vps)} variation points: the brief says stop and report past 25")
+    if len(vps) > LIMITS["variation points"]:
+        err("variation-points.tsv", "", f"{len(vps)} variation points: the brief says stop and report past "
+                                        f"{LIMITS['variation points']}")
     for v in vps:
         i = v["vp_id"]
         if v["bullet"] not in ASK:
@@ -443,6 +461,9 @@ if var is not None:
             sids = ids(r["stmt_ids"])
             if not sids:
                 err("variants.tsv", i, "no stmt_ids")
+            elif all(s in stmts for s in sids) and not any(stmts[s]["bullets"] & (ASK | NOPART) for s in sids):
+                err("variants.tsv", i, f"a variant rests on a statement under {one_of(of_role('ask', 'no-part'))}; "
+                                       f"the others are conditions or ends, not variants")
             for s in sids:
                 if stmts.get(s, {}).get("platform") != plat:
                     err("variants.tsv", i, f"{s} is not one of {plat}'s statements")

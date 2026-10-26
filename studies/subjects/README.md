@@ -10,7 +10,7 @@ Each step has a brief in `<subject>/briefs/`. A separate agent inspects every br
 
 From S-02, a subject's folder also holds:
 - `frame.md`: the coordinator's frame, written before any agent runs: the subject, its root decisions, the concerns it starts from, how it runs, and its budget;
-- `bullets.tsv`: the questions its phase A brief asks of each platform, with the root decision each serves, and their roles for the checker;
+- `bullets.tsv`: the questions its phase A brief asks of each platform, with the root decision each serves, and their roles for the checker; and `limits.tsv`, where it sets a limit of its own, such as how many variation points phase B may make before it stops and reports;
 - `concerns.tsv` and `subjects-from.tsv`: what `method/seed_subject.py` copies into each platform's `recorded.tsv` and `recorded-citations.tsv`, the statements its phase A starts from.
 
 | Step | Brief | Who | Writes |

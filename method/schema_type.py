@@ -9,7 +9,9 @@ is cut short there. The full text is in the introspection answer its meta.json n
 held in git. This prints each type from that record: its description, then each field, input field or enum value
 with its type and description. --search lists the types whose name or description holds any WORD.
 
-A quote from it is cited with the source and locator printed at the top, which method/quote_check.py reads.
+A quote from it is cited with the source and locator printed at the top, which method/quote_check.py reads. A
+field's or value's name is printed with its description below it, as the schema holds them one after the other, so
+"<name> <description>" can be quoted. Lines in square brackets are this tool's own, never the schema's words.
 """
 import json, os, subprocess, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -47,15 +49,17 @@ def load(structure):
 
 
 def show(t):
-    print(f"## {t['name']} ({t['kind']})")
-    print(t.get("description") or "(no description)")
+    print(f"## {t['name']} [{t['kind']}]")
+    print(t.get("description") or "[no description]")
     for key in ("fields", "inputFields", "enumValues"):
         for f in t.get(key) or []:
-            dep = f" [deprecated: {f['deprecationReason']}]" if f.get("isDeprecated") else ""
-            ty = type_name(f.get("type"))
-            print(f"- {f['name']}{': ' + ty if ty else ''}{dep}")
+            print(f["name"])                            # the name, then its description, as the schema holds them
             if f.get("description"):
                 print("    " + f["description"].replace("\n", "\n    "))
+            ty = type_name(f.get("type"))
+            if ty or f.get("isDeprecated"):
+                print("    [" + "; ".join(x for x in (f"type {ty}" if ty else "",
+                                                     f"deprecated: {f.get('deprecationReason')}" if f.get("isDeprecated") else "") if x) + "]")
     print()
 
 

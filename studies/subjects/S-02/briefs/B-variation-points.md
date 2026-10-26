@@ -3,7 +3,7 @@
 This is `PLAN.md` Stage 4, subject S-02. You are one agent with one task.
 
 **Read only this brief and, in `studies/subjects/S-02/`:**
-- `bullets.tsv`, the questions phase A asked of each platform;
+- `bullets.tsv`, the questions phase A asked of each platform, and `limits.tsv`;
 - the five platforms' phase A outputs in `{shopify,salla,woocommerce,zid,bigcommerce}/`: `statements.tsv`, `terms.tsv`, `absences.tsv`, `gaps.tsv` and `citations.tsv`;
 - `kinds.tsv`, which gives each statement's and each absence's kind by rule;
 - in the second pass, each platform's `a2.tsv` and `absence-audit.tsv`.
@@ -22,11 +22,13 @@ Don't read `notes.md` files, `recorded.tsv` files, or any `note` column.
 Phase A collected what each platform states under eight bullets. Each bullet belongs to a root decision, as `bullets.tsv` says:
 - **(a)** to **(d)**, RD1: what fills the store's own country; who sets, checks or changes it; what the platform binds to it; the countries the platform serves;
 - **(e)**, RD2: what defines a market a store sells into, how many it can hold, and who creates one;
-- **(f)**, RD3: a setting that takes its value per market, or per buyer's country, and who sets that value;
+- **(f)**, RD3: a setting that takes its value per market, whether the store's own country (as in (a)) or a market it sells into (as in (e)), or per buyer's country; and who sets that value;
 - **(g)**, RD3: that a setting holds for the whole store, or that the platform has no market of the kind in (e);
 - **(h):** where, or for whom, what a statement under (a) to (f) describes is offered.
 
-Statements under (h) are conditions, not variants. A later step reads them.
+Statements under (h) are conditions, not variants: a variant rests on at least one statement under (a) to (g). A later step reads the conditions.
+
+**Lists.** Where a source holds a list's items apart, phase A made one statement per run of items, each with the list's own identifier. Read a list's statements together by that identifier.
 
 **Your task:** split each root decision into the facets that can change it, as variation points, and place each platform's statements under them as variants. Don't judge the variants, and don't give causes; a later phase does that.
 
@@ -36,21 +38,21 @@ Statements under (h) are conditions, not variants. A later step reads them.
    - **Without the platform's translation,** `answers` may rest on your translation of the platform's words. Quote them, and mark the translation as yours in `basis_evidence`.
 1. **Candidates.** Each statement that says who or what fills some X under bullets (a) to (f) gives one candidate for each of those bullets it carries. Its X is quoted from that statement.
    - Under (b), the party, time or condition the statement gives is what fills its X.
-   - Under (c), what the platform binds to the store's country is what fills its X: X is the store's country, location or address in the statement's own words, and the variant names what is bound to it.
-   - Under (f), X is the setting, in the statement's own words, and the variant names the kind of market it takes its value per (a market, the buyer's country), or who sets it.
+   - Under (c), X is the thing the platform binds, in the statement's own words, such as a contracting party, documents, or a payment service; and the variant names what decides it: the store's country, its location, its billing address, the business's registered country or a business entity, in the statement's own words.
+   - Under (f), X is the setting, in the statement's own words, and the variant names what it takes its value per, among three kinds: the store's own country, a market the store sells into, or the buyer's country; or who sets it.
 2. **Variation points.** Candidates from different statements under the same bullet are one variation point when their X matches on one of the bases in rule 4.
    - Each variation point keeps the bullet of its statements, and so its root decision.
-   - Its question takes the form `who or what fills "X"`, with X in double quotes, quoted from one of the statements in `raised_by`. Under (c), it may take the form `what binds to "X"`.
+   - Its question takes the form `who or what fills "X"`, with X in double quotes, quoted from one of the statements in `raised_by`. Under (c), it takes the form `what decides "X"`: what fills the role of deciding the thing bound, which is how a platform's binding to a store's country shows.
    - `x_words` lists each raising platform's own words for X.
    - **Merging.** Two variation points under the same bullet, answered by exactly the same statements, are merged. List each merge in `notes-b.md`.
-   - **Facets of a root decision.** A candidate whose X no other platform's statement matches, and that no other candidate under its bullet merges with, is still a variation point if its answer could change what its root decision must hold, as its bullet asks. Otherwise it goes in `notes-b.md` with its statement ids, as a note.
+   - **Facets of a root decision** (`PLAN.md`, Stage 4). Every variation point is a facet that can change its root decision: its answers, as its bullet asks, could change what the root decision must hold. A candidate that isn't goes in `notes-b.md` with its statement ids, as a note. Apply this to every candidate, matched or not.
 3. **Variants.** For each variation point and each platform, give one row per distinct answer the platform gives, with its own `variant_id`. An answer's `variant` excerpt names the who or what that fills X. Two answers are distinct when their excerpts name a different who or what. A row takes one of four forms:
    - **an answer:** `variant` is an excerpt of one of its statements, verbatim;
    - **`absent`:** the platform's `absences.tsv` shows it absent from a complete list, under the variation point's bullet, with those `absence_ids`. Its `kind` is the kind `kinds.tsv` gives for those absences;
    - **`gap`:** the platform's gaps under the same bullet cover it, with those `gap_ids`;
    - **`not covered`:** the platform has none of these. These rows go back to that platform for gap-closing (phase A2). List them in `notes-b.md`.
 
-   A bullet (g) statement, that a setting holds for the whole store, or that the platform has no market of the kind in (e), is the platform's variant for each variation point it applies to, with the basis `answers`.
+   A bullet (g) statement, that a setting holds for the whole store, or that the platform has no market of the kind in (e), is the platform's variant for each variation point it applies to, with the basis `answers` alone.
 4. **Matching.** Compare each statement with a statement in the variation point's `raised_by` from another platform, where there is one. Record every basis that holds, with the words that show it in `basis_evidence`:
    - `term`: the same term, including a platform's own translation from `terms.tsv`. It fails when the two platforms' definitions in `terms.tsv` differ.
    - `identifiers`: the same key, scope, topic, field or entitlement;
@@ -65,11 +67,11 @@ Statements under (h) are conditions, not variants. A later step reads them.
    - `scope` is as the statements give it. If they differ, list each scope with its `stmt_ids`, `;`-separated.
 6. **No inference,** no ranking and no causes, anywhere, including notes.
 7. **Write as you go.** Write each variation point and variant to the files as soon as it is placed. If you are stopped, your files must hold everything done so far, and the next run continues from them.
-8. **Stop and report** past 25 variation points.
+8. **Stop and report** past 35 variation points (`limits.tsv`).
 
 ## Second pass, after phase A2
 
-When the coordinator says phases A2 and A3 are done, read each platform's `a2.tsv` and `absence-audit.tsv`. Revisit every row that was `gap`, `absent` or `not covered`. Recheck, under rule 4, any row you compared with a statement of its own platform. The second pass adds no variation point and splits none. A statement that fits no existing variation point is listed in `notes-b.md`. For each row revisited:
+When the coordinator says phases A2 and A3 are done, read each platform's `a2.tsv` and `absence-audit.tsv`. Revisit every row that was `gap`, `absent` or `not covered`, and each arrangement A2 was given. Recheck, under rule 4, any row you compared with a statement of its own platform. The second pass adds no variation point and splits none. A statement that fits no existing variation point is listed in `notes-b.md`. For each row revisited:
 - replace it with variants from the statements A2 added, under the rules above;
 - or make it `absent`, with A2's `absence_ids`;
 - or keep it as `gap`, with A2's `gap_ids`.

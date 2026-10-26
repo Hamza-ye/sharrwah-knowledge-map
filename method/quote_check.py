@@ -3,6 +3,11 @@
 # <repo>[@<commit>]:<path> for a repository named in roots (observed-sh, observed-sa, woocommerce-11.2.1,
 # sharrwah-knowledge-map). Matching tries the text exactly, then with markup removed, then ignoring case and
 # Arabic diacritics, after Unicode and whitespace normalization.
+#
+# Usage as a command, to test a statement or a quote before writing it:
+#   python3 -I method/quote_check.py SOURCE LOCATOR TEXT [CAPTURE_RUN ...]
+# SOURCE and LOCATOR as a citation gives them (LOCATOR matters only for a fetch archive: its record's offset).
+# Prints "found", "found (<how>)" or "not found", with the share of the text's six-word runs the source holds.
 import csv, html, io, json, os, re, subprocess, sys, unicodedata
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
@@ -195,3 +200,15 @@ class Sources:
                     return ("found" if level == 0 else f"found ({kind})"), "", ""
         best = max((shingle_share(qv[2][1], t) for tk, t in texts if tk == "case and diacritics ignored"), default=0.0)
         return "not found", "", f"{best:.2f}"
+
+
+if __name__ == "__main__":
+    if len(sys.argv) < 4:
+        sys.exit("usage: quote_check.py SOURCE LOCATOR TEXT [CAPTURE_RUN ...]")
+    here = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    roots = {"observed-sh": os.environ.get("OBSERVED_SH", "/home/user/observed-sh"),
+             "observed-sa": os.environ.get("OBSERVED_SA", "/home/user/observed-sa"),
+             "woocommerce-11.2.1": os.environ.get("WOO_RELEASE", "/home/user/woocommerce-release/11.2.1/woocommerce"),
+             "sharrwah-knowledge-map": here}
+    res, why, share = Sources(roots, sys.argv[4:]).check_quote(sys.argv[3], sys.argv[1], sys.argv[2])
+    print(res + (f"; {why}" if why else "") + (f"; {share} of its six-word runs are in the source" if share else ""))
