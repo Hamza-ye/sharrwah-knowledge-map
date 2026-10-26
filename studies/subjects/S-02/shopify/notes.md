@@ -76,3 +76,8 @@ S02-SH-301 is the 301st statement, so the reading stops here. Starting points an
 - `method/quote_check.py` takes about 15 to 20 seconds per quote on the Admin API introspection record (`raw/runs/20260930T002617Z-graphql-introspection/fetch.warc.gz`), so schema citations were tested slowly; all were found.
 - The checker's warnings on the first run (2026-10-26) were on copied citations whose quotes pass 300 characters (S02-SH-C219, S02-SH-C241 to S02-SH-C255, copied unchanged from `recorded-citations.tsv` as rule 5 requires).
 - How the enumerated types are cited: the Admin API schema's `items.jsonl` holds an enum's values as one run (with names only), so the lists in S02-SH-279 and S02-SH-285 cite `items.jsonl`, with the values' descriptions cited from the introspection record.
+52. Final check (2026-10-26) on a copy at the scratchpad's `s02/check-shopify/S-02` with `method/check_subject.py`: 301 statements, 5 gaps, 539 quotes found, no line of level error; 16 warnings (copied quotes past 300 characters, kept unchanged as rule 5 requires), 1 review (the three absences await the phase A3 audit); 19 live sources listed for capture.
+
+## Resumed by the coordinator (2026-10-26)
+
+The coordinator resumed the run after the stop past 300 statements, with an order for the unread starting points: (1) the nine runs' steps, (2) `index/ledger/admin-route.tsv` and `derived/admin-controls.jsonl`, (3) `shop-request-details` and the plan comparison tables in full, (4) the leads (Managed Markets subpages; B2B, retail and channel market pages; for (c) only, the Shopify Payments requirements pages). Ids continue from S02-SH-301, S02-SH-C539, S02-SH-N03, S02-SH-G05.

@@ -180,7 +180,8 @@ class Sources:
         return texts, ""
 
     def texts(self, source, locator=""):
-        key = (source, locator if source.endswith(".warc.gz") else "")
+        off = re.search(r"(\d{3,})", locator or "") if source.endswith(".warc.gz") else None
+        key = (source, off.group(1) if off else (locator if source.endswith(".warc.gz") else ""))   # a record, by offset
         if key in self.cache:
             return self.cache[key]
         res = self.web_texts(source) if re.match(r"^https?://", source) else self.local_texts(source, locator)
