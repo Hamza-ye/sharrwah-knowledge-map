@@ -216,13 +216,13 @@ def documents(platform):
                     except Exception:
                         pass
         for commit, name, raw in git_files(repo, pattern):
-            if kind == "articles":
-                for line in raw.splitlines():
+            if kind == "articles":               # cited by its line; the record's own position field counts from 0
+                for n, line in enumerate(raw.splitlines(), start=1):
                     try:
                         o = json.loads(line)
                     except Exception:
                         continue
-                    yield (f"{repo}:{name}", f"{repo}@{commit}:{name} position {o.get('position')}",
+                    yield (f"{repo}:{name}", f"{repo}@{commit}:{name} line {n} (position {o.get('position')})",
                            o.get("url", ""), titles.get(o.get("url", ""), ""), o.get("text", ""))
             elif kind == "lines":            # a corpus is the whole pattern, so that --max caps it, not each file
                 for i, line in enumerate(raw.splitlines(), start=1):

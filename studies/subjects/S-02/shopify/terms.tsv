@@ -1,1 +1,34 @@
 term	translation	definition	cite_ids
+market	السوق	A market is a set of customers that you define in your store.	S02-SH-C109;S02-SH-C480
+Markets	الأسواق		S02-SH-C068;S02-SH-C481
+Conditions	الشروط	Conditions define who your market applies to.	S02-SH-C097;S02-SH-C482
+Customizations	التخصيصات	Customizations define your store experience for the customers in that market, such as available products, pricing, and theme customizations.	S02-SH-C098;S02-SH-C483
+Country or region markets	أسواق البلدان أو المناطق	Country or region markets are displayed to customers based on their geographic location.	S02-SH-C136;S02-SH-C484
+Cross-border markets	الأسواق عبر الحدود		S02-SH-C100;S02-SH-C485
+Single-country markets	أسواق البلد الواحد	Single-country markets contain one country or region.	S02-SH-C139;S02-SH-C486
+Multi-country markets	أسواق متعددة البلدان	Multi-country markets contain more than one country or region.	S02-SH-C140;S02-SH-C487
+Sub-region markets	أسواق المناطق الفرعية	A sub-region market targets a specific state or province, instead of a whole country.	S02-SH-C141;S02-SH-C488
+Retail markets	أسواق البيع بالتجزئة	Retail markets use POS locations as their condition.	S02-SH-C143;S02-SH-C489
+B2B markets	أسواق B2B	B2B markets let you create customized experiences specific to the wholesale company locations you sell to.	S02-SH-C490;S02-SH-C491
+Channel markets	أسواق القنوات	Channel markets use sales channels as their condition.	S02-SH-C147;S02-SH-C492
+submarket	السوق الفرعية	A submarket is a market that exists within another market.	S02-SH-C112;S02-SH-C493
+catalog	الكتالوج	A catalog is a set of products with optional custom pricing that you assign to a market.	S02-SH-C113;S02-SH-C494
+backup region	المنطقة الاحتياطية	This backup region isn't a market. Instead, it's a setting that points to a country within one of your active markets.	S02-SH-C282;S02-SH-C495
+home country	البلد الأم		S02-SH-C084;S02-SH-C496
+Domestic market	السوق المحلية	Your store's home country or region, as determined by your store's address and currency.	S02-SH-C159;S02-SH-C497
+International market	السوق الدولية	A curated list of countries or regions where merchants similar to you also sell.	S02-SH-C160;S02-SH-C498
+primary market	السوق الرئيسية	Your primary market is the main country or region that you sell to.	S02-SH-C180;S02-SH-C499
+store country	بلد متجرك		S02-SH-C354;S02-SH-C500
+store address	عنوان المتجر	Your store address is the physical or customer-facing address of your business.	S02-SH-C501;S02-SH-C502
+billing address	عنوان الفوترة	Your billing address is the registered address that you pay Shopify from, and it's the address displayed on your Shopify bills.	S02-SH-C360;S02-SH-C503
+business entity	الكيان التجاري	A business entity is the legal entity that processes payments for orders in a market.	S02-SH-C202;S02-SH-C403;S02-SH-C504
+Designated Country			S02-SH-C056
+merchant of record	التاجر المسجل	A merchant of record is the legal entity responsible for selling products to a customer, and for adhering to local laws and regulations in another region or country.	S02-SH-C505;S02-SH-C506
+Managed Markets	Managed Markets		S02-SH-C301;S02-SH-C507
+domain and language customization	تخصيص النطاق واللغة	A domain and language customization is a combination of a URL structure and a language for a specific market.	S02-SH-C256;S02-SH-C508
+Local currencies	العملات المحلية		S02-SH-C105;S02-SH-C509
+shipping option	خيار الشحن	A shipping option is a delivery choice that a customer can select at checkout, such as Standard or Express, and each option contains rates that can vary by product and location.	S02-SH-C336;S02-SH-C510
+store location			S02-SH-C272
+primary country			S02-SH-C411
+I'm located in:			S02-SH-C014
+Market (GraphQL Admin API object)		A merchant-defined group of buyers identified by conditions such as their region, retail location, or company location.	S02-SH-C427

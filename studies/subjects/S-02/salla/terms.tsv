@@ -11,7 +11,7 @@ term	translation	definition	cite_ids
 دومين فرعي	subdomain		S02-SA-C072;S02-SA-C073;S02-SA-C101;S02-SA-C102
 تفعيل السوق	Activate market		S02-SA-C081;S02-SA-C103
 السوق الافتراضي	Default market		S02-SA-C151;S02-SA-C152
-السوق	Market		S02-SA-C153;S02-SA-C154
+السوق	Market	السوق هو الدولة أو المنطقة التي تستهدف البيع إليها، وسيُستخدم هذا السجل الضريبي تلقائياً عند البيع فيها.	S02-SA-C153;S02-SA-C154;S02-SA-C452
 اختيار السوق	Market selection	حدِّد كيف يمكن للعميل اختيار السوق عند زيارته الأولى.	S02-SA-C155;S02-SA-C156;S02-SA-C157
 تقييد الشراء حسب السوق	Restrict purchases by market	احصر تجربة الشراء على السوق المطابق لدولة العميل، وقيِّد إتمام الطلب لعناوين التوصيل خارج نطاق هذا السوق.	S02-SA-C158;S02-SA-C159;S02-SA-C160
 تفعيل الضريبة حسب دولة السوق	Tax by market country	ستُفعَّل الضريبة حسب الدولة المحددة في السوق، ويشترط أن يكون لكل سوق دولة واحدة فقط.	S02-SA-C161;S02-SA-C162;S02-SA-C163
@@ -28,3 +28,9 @@ term	translation	definition	cite_ids
 الأسواق المتعددة	Markets		S02-SA-C191;S02-SA-C192
 الأسواق المتعددة	Multi-market		S02-SA-C193;S02-SA-C194
 دولة المتجر	store country	حدد من أي دولة تسجل متجرك، لأن ذلك يحدد الوثائق الحكومية لتهيئة متجرك وفق أنظمتها.	S02-SA-C011;S02-SA-C221;S02-SA-C222
+store scopes		This endpoint allows you to list store scopes for multi-country functionality.	S02-SA-C008
+multi-countries			S02-SA-C385
+الدولة التي تبيع فيها	Country of operation		S02-SA-C522;S02-SA-C520
+مقر المتجر			S02-SA-C362
+موقع المتجر			S02-SA-C364
+سوق سلة بوينت			S02-SA-C376;S02-SA-C377
