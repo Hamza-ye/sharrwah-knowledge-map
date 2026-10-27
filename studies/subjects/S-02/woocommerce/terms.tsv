@@ -34,3 +34,11 @@ European User		If you are a user in countries located in the European Economic A
 billing country			S02-WC-C325
 Shop location			S02-WC-C345
 store location			S02-WC-C346
+Weight unit		This controls what unit you will define weights in.	S02-WC-C375
+Dimensions unit		This controls what unit you will define lengths in.	S02-WC-C376
+base currency		Each WooCommerce store can set one base currency. WooCommerce uses it to display product prices and record new orders.	S02-WC-C107
+Site Language			S02-WC-C419
+customer billing country			S02-WC-C414
+guest checkout		Allow customers to check out without creating an account.	S02-WC-C435
+Accounts and Privacy			S02-WC-C433;S02-WC-C428
+additional checkout fields			S02-WC-C437;S02-WC-C438
