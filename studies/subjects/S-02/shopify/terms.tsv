@@ -32,3 +32,7 @@ store location			S02-SH-C272
 primary country			S02-SH-C411
 I'm located in:			S02-SH-C014
 Market (GraphQL Admin API object)		A merchant-defined group of buyers identified by conditions such as their region, retail location, or company location.	S02-SH-C427
+Store default			S02-SH-C917;S02-SH-C912
+legal entity			S02-SH-C1011
+Country code			S02-SH-C908
+jurisdiction			S02-SH-C1129
