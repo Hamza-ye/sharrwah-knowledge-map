@@ -262,6 +262,7 @@ After the second pass:
 | A2-T: the nine rows the second pass left `not covered`, on BigCommerce, Salla, Zid and WooCommerce | 9 | 1 | 5, by an absence or statements | 4 | BC-G15, SA-G12, ZD-G22, ZD-G23; WooCommerce's absences N01 to N04, to be audited | 32 | 4.4 |
 | A2-SH-H: Shopify's five open gaps and capture request H-006, from held files the founder's local agent pointed to | 5 gaps, 1 request | 5 | none: each narrowed | 35 | G09 to G13, in place of G01, G02 and G06 to G08 | 83 | 17.0 |
 | A2-SA-H: Salla's twelve open gaps, from held files, before its capture requests run; and BigCommerce's apps row | 12 gaps, 1 row | 4 | 2: Salla's onboarding countries (G03), from the audit's statements, and BigCommerce's apps | 14 | SA-G13 and G14, in place of G06 and G10; Salla's absences N01 and N02, to be audited | 92 | 18.6 |
+| A2-SA-S: which of Salla's settings take a value per market, from its settings center's definitions | 6 gaps | 1 | none: G09 narrowed | 12 | SA-G15, in place of G09; Salla's absence N03, to be audited | 47 | 7.4 |
 
 **What WC-1 taught:**
 - **Our labels aren't the platform's words.** The brief said to search a kind's own name, and the part asked whether "who sells to the buyer" was one. The brief now says the kind's head word is searched, such as `domain` or `currency`, and our longer labels aren't.
@@ -396,6 +397,17 @@ After the second pass:
 - **Two parts handled a narrowed gap differently.** One kept the old gap and replaced it in `a2.tsv`; the other rewrote the old gap in place. A gap now stays in `gaps.tsv` as history, and the new one says "in place of" the old. The checker reads that: the old gap needs no audit, and a phase B row that names it is flagged until a revisit names the new one.
 - **Ids past 999.** Shopify's statements reached S02-SH-1000. The checker's id patterns now take three or four digits.
 
+**What A2-SA-S taught.** Salla's settings center gives a market field to 7 of its 94 sections, not 11: the four others are parent pages, or hold one value for the store. The seven are:
+- guest checkout;
+- the order of offers;
+- the sign-in methods;
+- WhatsApp verification;
+- gifting;
+- loyalty;
+- how much store credit an order may use.
+
+Each takes markets only where the store has the feature `multi-countries`, which every held store's feature list gives to the Special and Pro plans. Among the four is the setting for how a customer picks a market, which holds one value for the store. Analytics, the store's address, the return policy and the merchant app's notifications have no section, so their gaps stay. The apps list has no market field, an absence for the audit.
+
 **Gap-closing as a whole** (the coordinator, 27 October):
 - **What it did.** 22 parts read the pages behind 121 rows: the rows of S-02's points that were `not covered`, or whose gaps named a page not read. 118 rows were given statements, and 83 have no gap left. It added 1,165 statements: Shopify 388, Salla 118, Zid 256, WooCommerce 256 and BigCommerce 147. It cost 337.3 million, against the 350 projected at 10:30 ([the frame's budget](frame.md#budget)).
 - **What it leaves.** 49 gaps: Shopify 5, Salla 11, Zid 21, WooCommerce 5 and BigCommerce 7. None stops the second pass.
@@ -495,3 +507,18 @@ Four points now hold both `every store`, from zid.sa's own pages, and a country'
   - Salla's booking products' only time zone read as no one setting it (S02-V-1102);
   - Shopify's permission to manage and install apps placed under apps by its own name (S02-SH-766);
   - Zid's `manage.app.market.settings` read as a permission from the page it is listed on (S02-ZD-330).
+
+## 11. Phase C: its brief and its dry runs (27 October)
+
+**The first dry run** (3.4 million, 25 requests) ran the brief on six points of the three root decisions, on a copy. All six came out `vendor choice`, each with a founder item and the rules of letters A and B. The cause is the comparison, not the evidence:
+- **Whole sets almost never agree.** The pilot's rule compared each platform's whole set of answers. On S-02's points a platform holds refinements beside its main answer, such as currency per market beside a default for the whole store and a display in the buyer's currency. Each refinement makes the sets unequal, so every point differed.
+- **The letters' rules applied everywhere.** A letter's rule applies when any platform has the letter, so every point took the rules of A and B.
+
+It also found 16 smaller defects in the brief and the tools: files the brief relied on without listing them, gaps and absences the printer couldn't print, a gap rule that blocked tests it couldn't change, and checks the tool lacked.
+
+**What changed: the platforms are compared on each answer of a point, one at a time.** Mill's methods compare one phenomenon at a time. So each answer row now takes a key, the answer it gives, in a vocabulary per question. The tool works out what each platform does on each key: `gives`, `lacks`, `open` or `not stated`. It proposes the mechanical cause, and the agent checks it and adds named rules and maturity. Tried on currency, the keys tell the answers apart:
+- all five platforms show prices in the buyer's currency: no difference;
+- the four hosted platforms set currency per market, and WooCommerce's core doesn't: business model;
+- a default from the store's country, and a single value for the whole store: vendor choice.
+
+The letters' rules moved to a row per point. Expense is judged per key, so a payment provider that converts currency is expensive while the seller choosing a currency is cheap. A key whose value belongs to another subject goes to it: payments to S-04, taxes to S-05, the countries served to S-07, currency to S-09. The second dry run tests the redesign.
