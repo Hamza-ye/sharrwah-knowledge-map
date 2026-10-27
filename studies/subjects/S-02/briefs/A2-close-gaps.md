@@ -55,7 +55,7 @@ Leave a `gap` row whose gaps are routed to a capture request (`who_can` `capture
 ## Output, in `studies/subjects/S-02/<platform>/`
 
 - **In your platform's phase A files:** the new statements, citations, terms, absences and gaps, appended.
-- **`a2.tsv`:** one row per variation point you worked on. It is tab-separated, with a header row and no quoting. If it exists, append to it. Columns, each list `;`-separated:
+- **`a2.tsv`:** one row per variation point you worked on. It is tab-separated, with a header row and no quoting. If it exists, append to it. Where an earlier part's row already holds your point, update that row instead: add your statements and what you read, and in `gap_ids` replace the gaps you settle with any that take their place. Columns, each list `;`-separated:
   - `vp_id`, or `none` for a lead's statements, or a gap under (h), that answer no variation point;
   - `stmt_ids`: the statements you added for it;
   - `gap_ids`: the gaps that remain for it, the ones you recorded among them;
