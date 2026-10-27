@@ -240,6 +240,7 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 | BC-1: the store's own country (who sets, checks and changes it); documents and checks; payouts; taxes on the platform's fees; the store's data; the store's defaults; the store's taxes | 9 | 9 | 3 | 46 | G04 to G08, four of them on Help Center articles that rendered empty | 79 | 14.6 |
 | WC-3: products; discounts and offers; storefront design; contact information shown to buyers; locations; market selection | 10 | 10 | 10 | 55 | none | 98 | 18.9 |
 | BC-1b: the Help Center articles behind BC-1's gaps G04, G05, G07 and G08 | 5 | 5 | 2 | 45 | G09, G10 and G11, in place of G04, G07 and G08; G05 answered | 41 | 6.4 |
+| ZD-3: analytics and tracking; apps; notifications to the merchant; privacy and consent; staff access; store status; units and time zone; and the pricing pages as a lead | 12 | 12 | 3 | 74 | G14 to G21 | 72 | 15.6 |
 
 **What WC-1 taught:**
 - **Our labels aren't the platform's words.** The brief said to search a kind's own name, and the part asked whether "who sells to the buyer" was one. The brief now says the kind's head word is searched, such as `domain` or `currency`, and our longer labels aren't.
@@ -291,4 +292,8 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 **What BC-1b taught:**
 - **Reading what the tool had failed closed gaps cheaply:** six gaps for 6.4 million. The articles answer who may change the store's country (the Manage Settings permission, and a channel's Edit Channels, which only the store owner grants) and the default language a new store takes from its country.
 - **Two sources can disagree, and both stand.** The Help Center says a store's default country can be set "separately per channel" (S02-BC-256). The API says `store_country` "cannot be modified with channel-specific overrides" (S02-BC-100). Phase C weighs the two; neither is dropped.
+
+**What ZD-3 taught:**
+- **Zid states its settings for the store, never per market.** Every page read says what a setting is and who sets it, and none names a market. So each of Zid's "what it takes its value per" points keeps a gap: twelve, from ZD-2 and ZD-3. One observation would close most of them: a Zid store on a plan with markets, showing which settings vary by market. Zid is in neither observed repository, so it goes to the founder after gap-closing.
+- **The render fix showed Zid's prices by country:** Rise is 99 riyals a month on zid.sa and 1,128 Egyptian pounds on zid.eg, and each site's footer names its own company's registration and tax numbers (S02-ZD-347 to S02-ZD-355). Phase A had recorded neither, since the pages showed only an error text.
 
