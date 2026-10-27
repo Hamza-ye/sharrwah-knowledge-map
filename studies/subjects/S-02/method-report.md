@@ -235,6 +235,7 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 | ZD-1: taxes on the platform's fees; the countries served; who sells to the buyer; returns and cancellations; the store's address; the store's country | 8 | 7 | 5 | 35 | G08, G09; G01 stands | 74 | 14.2 |
 | WC-2: currency; language; the buyer's address; units and time zone (the rows of G05); domain; checkout and customer accounts | 10 | 8 | 8 | 58 | G08; G05 doesn't remain | 92 | 20.2 |
 | ZD-2: checkout and customer accounts; contact information shown to buyers; domain; language; locations; market selection | 11 | 11 | 6 | 66 | G10 to G13 | 117 | 29.6 |
+| SA-1: the store's data; the store's defaults; the store's taxes; who sells to the buyer; returns and cancellations | 7 | 7 | 4 | 82 | G05 to G07 | 63 | 15.7 |
 
 **What WC-1 taught:**
 - **Our labels aren't the platform's words.** The brief said to search a kind's own name, and the part asked whether "who sells to the buyer" was one. The brief now says the kind's head word is searched, such as `domain` or `currency`, and our longer labels aren't.
@@ -255,3 +256,8 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 - **Half its groups had no head word.** "Checkout and customer accounts", "contact information shown to buyers" and "market selection" are our names, so the part searched Zid's own phrases from `x_words` and its terms. The brief now says that a kind whose name is all ours is searched by its phrases.
 - **A setting documented for the whole store leaves "per market?" open.** All eleven rows were given statements, from the domain to the warehouses. But for five of them, none of Zid's pages says whether the setting takes a value per market, and its markets pages don't name these settings. The four gaps go to an observation of a store on a plan with markets, or to a question to Zid.
 - **Six groups cost the most so far:** 117 requests and 29.6 million, against about 60 requests by the sizing rule, which counts groups. Its rows each yielded six statements. Rows predict the cost better: the first four parts cost 1.8 to 2.8 million a row, 2.3 on average. At that rate, gap-closing comes to about 280 million, at the top of the frame's range ([the frame's budget](frame.md#budget)).
+
+**What SA-1 taught:**
+- **A generic head word swamps the search.** Salla's head words, such as البيانات (data), الافتراضي (default), ضريب (tax) and الاسترجاع (return), matched most of its corpus. Every group's searches passed 300 documents. The part narrowed them by dropping the bare head words and keeping the phrases, as the brief's narrowing rule says. The head word helps only where it is distinctive, as `domain` was for WooCommerce.
+- **Statements that name no market were tagged (g):** among them the Terms' statements that the merchant, not Salla, sells to the consumer (S02-SA-339 to S02-SA-344). In the second pass, phase B's role test decides whether their words hold the setting for the whole store, whatever the market.
+- **A new gap can extend a capture request already written.** G07 asks whether the store's country chosen at onboarding sets its default currency or language. That is the step after the one H-002 asks the local agent to capture. The coordinator decides after gap-closing whether H-002 takes it.
