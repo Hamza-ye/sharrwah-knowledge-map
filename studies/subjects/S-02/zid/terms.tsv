@@ -50,3 +50,8 @@ business_location			S02-ZD-C251
 markets_management.active_markets			S02-ZD-C253;S02-ZD-C254
 قنوات البيع (المتجر الإلكتروني; زد كاشير)			S02-ZD-C285
 مدينة العميل (عرض المنتجات حسب المدينة)			S02-ZD-C286
+الدولة التي تستخدم منها الخدمة	the country from which you use the Service		S02-ZD-C293;S02-ZD-C295
+تخصيص الثيم لكل سوق			S02-ZD-C031;S02-ZD-C032
+سعر مخصص لكل سوق وقناة			S02-ZD-C011
+التجار خارج المملكة (للتجار خارج المملكة العربية السعودية)			S02-ZD-C211;S02-ZD-C074
+إعدادات المتجر	store settings		S02-ZD-C297;S02-ZD-C074
