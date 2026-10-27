@@ -135,6 +135,6 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 | RD1-1: (a) and (d), all five platforms | 205 | 74 | 17.8 | 2.8 | 3 | 52 |
 
 **What RD1-1 taught:**
-- **One point per question held:** the five platforms' answers to "what fills the store's own country" fell under one variation point, as 31 fields and records, and the countries served and kept out under one each.
+- **One point per question held:** the five platforms' answers to "what fills the store's own country" fell under one variation point, as 30 fields and records and one gap, and the countries served and kept out under one each.
 - **The brief changed during the run,** and the coordinator's message named only one change. The agent found the others and applied them. A message to a running agent now lists every change.
 - **Two rules were narrower than needed,** and were widened: a statement's identifier or scope may name what fills X under any bullet, not only (c) and (f); and a `gap` row may stand beside a platform's answers. Six statements the part noted under the narrower rule are read again in the second pass: S02-SH-259, S02-SH-260, S02-SH-396, S02-SA-249, S02-ZD-148 and S02-ZD-149.
