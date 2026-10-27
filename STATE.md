@@ -46,8 +46,14 @@ At phase A's end, the checker found every quote, 3,193 of them, and no error. Wi
   - **Shopify (A2-SH-H):** 35 statements, and its five gaps narrowed to what the runs in progress can show.
   - **Salla (A2-SA-H, A2-SA-S):** the dashboard's own definitions show which of its settings take a value per market. Seven sections do, each behind the feature `multi-countries`, on the Special and Pro plans.
   - **WooCommerce (A2-T):** its settings code.
-- **Running:** an audit of seven new claims of absence (A3-2). Then the second pass's last round places what the late parts added.
-- **Phase C's brief has had two dry runs.** The first showed that comparing whole sets of answers makes every point `vendor choice`. The brief now compares the platforms on each answer of a point, one at a time; the second dry run showed that this tells the answers apart ([`briefs/C-analysis.md`](studies/subjects/S-02/briefs/C-analysis.md)).
+- **Phase B is complete:** 75 points and 904 rows, every statement placed or noted, and the full check finds no error. The audit of the late parts' absences (A3-2) confirmed five and partly contradicted two.
+- **Phase C compares the platforms on each answer of a point, one at a time,** after two dry runs ([`briefs/C-analysis.md`](studies/subjects/S-02/briefs/C-analysis.md)). Its parts are in [`c/parts.tsv`](studies/subjects/S-02/c/parts.tsv):
+  - RD2 is done;
+  - RD3's first three parts are done, and its fourth is running;
+  - RD1's two parts wait for the founder's word on the handoffs.
+
+  Most founder items ask one question, setting by setting: does it take a value per market, or once for the whole store? The register asks it once.
+- **The usage limit stopped two parts at about 20:40 UTC;** their work was saved. The founder moved to Max x20, and both were resumed.
 
 **Earlier:**
 - **Phase B's first pass is complete** ([`method-report.md`](studies/subjects/S-02/method-report.md), section 7): 73 variation points, each with a row for every platform, 671 rows, in [`variation-points.tsv`](studies/subjects/S-02/variation-points.tsv) and [`variants.tsv`](studies/subjects/S-02/variants.tsv). The full check gives no error.
@@ -57,8 +63,8 @@ At phase A's end, the checker found every quote, 3,193 of them, and no error. Wi
 - **Cost:** 1,285 million agent tokens by 19:04 UTC on 27 October, past the budget plus a quarter (875 million); the cost came to the founder at 09:55 ([the frame's budget](studies/subjects/S-02/frame.md#budget)). S-02 is projected at about 1.45 to 1.55 billion. The work goes on; no higher plan is needed yet. The coordinating session's own tokens: 606 million since S-02 began.
 
 **Next:**
-1. When the audit (A3-2) reports: the second pass's last round. Its tasks are the statements the late parts added, and the rows whose gaps they narrowed, in three small parts, one per root decision.
-2. Phase C for RD2, then RD3, in parts, two at a time.
-3. When the founder's local agent pushes: read its runs and close or narrow the gaps they answer. Then, with the founder's word on how the handoffs went, RD1's phase C.
+1. When C-RD3-4 reports: RD3's phase C is done. Merge and check phase C's files.
+2. When the founder's local agent pushes: read its runs, and close or narrow the gaps they answer. Then place the new statements and run the keys they touch again. With the founder's word on how the handoffs went, RD1's phase C.
+3. Then the Yemen row and the scenario walk, for each root decision; the register; the independent review; and S-02's report for G3.
 
 **To resume:** read `PLAN.md`, this file and `founder-decisions.tsv`.
