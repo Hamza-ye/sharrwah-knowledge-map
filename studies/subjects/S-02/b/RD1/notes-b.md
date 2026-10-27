@@ -162,28 +162,18 @@ Part RD1-2: bullet (b), for shopify, salla, zid, woocommerce, bigcommerce.
 - S02-SH-449 (b): a save refused for want of an account representative ('Legal entity must have exactly one account representative.'); its words tie no condition to a change of the country
 - S02-SH-451 (b): whether the entity can be archived ('"archivable":false'); names no party who sets, checks or changes its country, nor a condition on that change
 - S02-SH-452 (b): the store's primary entity and the entities assignable to it ('primaryLegalEntity', 'assignableLegalEntities'); names no party who sets, checks or changes the country, nor a condition on its change
-- S02-SH-572 (b): names who collects and verifies 'information about you and your business' (Shopify and its banking partners), without naming the store's country, address or location, or a record that holds it, among that information
-- S02-SH-573 (b): names who verifies 'your information' ('Shopify's banking partners', against 'government registries'), without naming the store's country, address or location, or a record that holds it
 - S02-SH-574 (b): the location of 'the people associated with the business' ('where they're located'), theirs and not the store's or its business's
-- S02-SH-582 (b): names who verifies 'your identity and business information' in China (WorldFirst), without naming the store's country, address or location, or a record that holds it
 
 ### salla (b)
 
 - S02-SA-107 (b): the shipments' pickup location ('موقع استلام الشحنات'; my translation: the shipments' pickup location), a place the store ships from, as under (a)
-- S02-SA-118 (b): names who reviews the verification request ('يقوم فريق سلة بمراجعة طلب التوثيق'; my translation: Salla's team reviews the verification request), without naming the store's country among what is reviewed
-- S02-SA-125 (b): names who reviews the request and its documents ('يراجع فريق سلة طلبك والمستندات المرفقة'; my translation: Salla's team reviews your request and the attached documents), without naming the store's country among them
-- S02-SA-133 (b): names who reviews the request and its documents ('يراجع فريق سلة طلبك والمستندات المرفقة'; my translation: Salla's team reviews your request and the attached documents), without naming the store's country among them
-- S02-SA-157 (b): names Salla's check of the data ('قرار التحقق من صحة البيانات'; my translation: the decision to verify the data's validity), and that it doesn't replace a check with government bodies ('الجهات الحكومية'), without naming the store's country among the data
-- S02-SA-210 (b): names Salla's right to refuse a store's registration ('الحق في رفض تسجيل أي متجر الكتروني'; my translation: the right to refuse registering any online store); not who sets, checks or changes the store's country
+- S02-SA-210 (b): says only that Salla may refuse a store's registration ('الحق في رفض تسجيل أي متجر الكتروني'; my translation: the right to refuse registering any online store), without a check of a field or record that holds the store's country; not who sets, checks or changes it
 - S02-SA-258 (b): 'موقع المتجر' here is added as branches and warehouses ('أضف موقع المتجر من خلال إضافة فروع ومستودعات المتجر'; my translation: add the store's location by adding the store's branches and warehouses): a place the store ships from, as under (a)
 
 ### zid (b)
 
 - S02-ZD-073 (b): a staff permission for inventory locations ('Manage inventory locations'), places the store keeps stock in
-- S02-ZD-085 (b): names a proof of the national address that the seller uploads ('قم برفع ملف إثبات العنوان الوطني من سُبل SPL'; my translation: upload the national address proof file from SPL), and what it is required for; names no party who checks the address or its country
-- S02-ZD-090 (b): names a verification through the Saudi Business Center ('توثيق منصة المركز السعودي للأعمال'; my translation: verification of the Saudi Business Center platform), without naming the store's country among what is verified
 - S02-ZD-148 (b): lists the business location's fields ('country', 'is_address_confirmed'), without naming who sets, checks or changes them, or a condition on their change
-- S02-ZD-154 (b): names the documents that activate e-payments in Saudi Arabia ('شهادة العنوان الوطني'; my translation: national address certificate); names no party who checks the store's country
 - S02-ZD-158 (b): the inventory addresses' country and city ('قم باختيار الدولة والمدينة'; my translation: choose the country and the city), places the store keeps stock in, as under (a)
 
 ### woocommerce (b)
@@ -191,10 +181,9 @@ Part RD1-2: bullet (b), for shopify, salla, zid, woocommerce, bigcommerce.
 - S02-WC-123 (b): names who may change 'the primary address sent to the tax service' ('Developers', by a filter), without saying whose address it is, as under (a)
 - S02-WC-126 (b): the base country is returned through a filter ('woocommerce_countries_base_country'); its words name no party who sets, checks or changes it
 - S02-WC-169 (b): names where the general settings are edited ('To edit these settings, go to WooCommerce > Settings > General in your WordPress dashboard'), without naming the store's address or country among them, as under (a)
-- S02-WC-186 (b): names who confirms the merchant's identity ('to work with Stripe to confirm your identity'), without naming the country among what is confirmed
 - S02-WC-187 (b): names 'account information' as not always changeable once saved, without naming the account's country among it
-- S02-WC-188 (b): names 'Most of the KYC information' as changeable via the Stripe dashboard, without saying whether the country is among it
-- S02-WC-189 (b): names 'certain account information' as updated only in the Stripe Express dashboard, without naming the country among it
+- S02-WC-188 (b): says 'Most of the KYC information' can be changed via the Stripe dashboard, without a check, and without saying the country is among it (S02-WC-182 says the account's country 'cannot be changed later')
+- S02-WC-189 (b): says 'certain account information' is updated only in the Stripe Express dashboard, without a check, and without naming the country among it
 - S02-WC-223 (b): the function that sets the business location country ('Set the business location country for the Payments settings.'), without naming who calls it
 
 ### bigcommerce (b)
@@ -211,7 +200,7 @@ Shopify is the first platform of this part, and no earlier part covered (b), so 
 
 ## `not covered` rows (part RD1-2, for phase A2)
 
-- S02-V-073: salla, under S02-VP-05 (who checks "new information"). Salla's (b) statements name who reviews the store's verification request and its documents ('يقوم فريق سلة بمراجعة طلب التوثيق', S02-SA-118; my translation: Salla's team reviews the verification request; also S02-SA-125, S02-SA-133) and Salla's own check of merchants' data (S02-SA-157), without naming the store's country among what is checked: they are noted. Salla has no gap that asks who checks the store's country.
+None.
 
 ## New kinds (part RD1-2)
 
@@ -219,11 +208,18 @@ None: (b) has no kinds.
 
 ## Problems with the method (part RD1-2)
 
-1. Rule 4's 'Who sets a value' (the brief at 896715f) came while this part ran, before any of its rows was written, and is applied to S02-VP-04. It speaks of `who sets` only, so the admin's Edit and Switch controls (S02-SH-330, S02-SH-333, S02-SH-335, S02-SH-337, S02-SH-338, S02-SH-347, S02-SH-427, S02-SH-428) are placed under S02-VP-04 by it, and under S02-VP-06 only where a statement's words name a party. If it is meant for `who changes` too, those statements would join the seller's row there.
-2. `who checks`: statements that name a check of the merchant's or the store's information, request or documents (Shopify's banking partners, S02-SH-572 and S02-SH-573; WorldFirst, S02-SH-582; Salla's team, S02-SA-118, S02-SA-125 and S02-SA-133; Salla, S02-SA-157 and S02-SA-210; the Saudi Business Center, S02-ZD-090; the national address proof from SPL, S02-ZD-085 and S02-ZD-154; Stripe, S02-WC-186) are noted, since their words don't name the store's country, address or location, or a record that holds it, as what is checked (rule 2's role test). Phase A's gaps read some of them as checks (S02-SH-G01, S02-ZD-G02). If a check of the business's information is meant to count as a check of its country, S02-VP-05 would take them.
-3. S02-VP-05's X, 'new information', is the only words of S02-SH-580, the one statement under the point, that name what is checked; the business details it means are named only in its identifier, which the checker doesn't take for X's quote.
+1. S02-VP-05's X, 'new information', is the only words of S02-SH-580, the point's first statement, that name what is checked; the business details it means are named only in its identifier, which the checker doesn't take for X's quote.
+2. Readings under `who checks`: Salla's verification request and data (S02-SA-118, S02-SA-125, S02-SA-133, S02-SA-157), the Saudi Business Center's verification (S02-ZD-090) and the merchant's identity at WooCommerce (S02-WC-186) are read as checks of the business's registration or of the KYC information. Their words don't name the record, and each row marks the reading as mine.
+3. S02-ZD-085 and S02-ZD-154 name the national address proof from SPL, which the seller uploads, but not who reviews it; SPL is the row's party, as the one the statements name.
 4. Settings and permissions: S02-ZD-171's permission names the store settings, the same words in which S02-ZD-055 holds the merchant's country, so it is placed under S02-VP-06; S02-SH-269's route key, settings:general, names no field or record of (a), so it is noted.
-5. Parties named by a permission (S02-SH-381, S02-SH-382, S02-SH-266, S02-SH-255, S02-ZD-171) and the account owner (S02-SH-579) are rows of their own, apart from the seller's, since their excerpts name a narrower party. If rule 4's 'the seller' is meant to take them in, they would merge with the seller's rows.
-6. S02-SH-116 is placed under S02-VP-04 as the platform's by 'automatically', which its words say of the markets created with the store, the domestic market being the store's home country. S02-WC-221's fallback to the base location's country, where the user set none, is taken as a default, though its words don't say 'by default'.
-7. Feature gates: S02-SH-266's and S02-SH-382's centralLegalEntitiesEnabled is placed under S02-VP-07 as a condition; S02-SH-382 is under (h) too, where the later step reads it again.
-8. S02-WC-182 ('it cannot be changed later') answers S02-VP-06 with no party: the brief has no form for an answer that no one changes X.
+5. S02-SH-116 is placed under S02-VP-04 as the platform's by 'automatically', which its words say of the markets created with the store, the domestic market being the store's home country. S02-WC-221's fallback to the base location's country, where the user set none, is taken as a default, though its words don't say 'by default'.
+6. Feature gates: S02-SH-266's and S02-SH-382's centralLegalEntitiesEnabled is placed under S02-VP-07 as a condition; S02-SH-382 is under (h) too, where the later step reads it again.
+
+## Changes after the coordinator's message at 7430da9 (part RD1-2)
+
+1. The brief at 7430da9 clarified rule 4, 'Who sets, changes or checks it', on this part's first, second, third and fifth problems; it is applied below.
+2. `who checks` (S02-VP-05), placed, with their notes removed: S02-SH-573 into S02-V-057; S02-SH-572 and S02-SH-582 as new rows; S02-SA-118, S02-SA-125, S02-SA-133 and S02-SA-157 as S02-V-073, which was `not covered`, and S02-SA-157's government bodies as a new row; S02-ZD-085 with S02-ZD-154, and S02-ZD-090, as new rows; S02-WC-186 as a new row. Still noted: S02-SA-210, a right to refuse without a check; S02-WC-188 and S02-WC-189, changes without a check and without the country.
+3. `gap` rows kept beside the new answers, each asking for an answer they don't give: S02-V-058 (S02-SH-G01), S02-V-077 (S02-ZD-G02) and S02-V-084 (S02-WC-G02); under S02-VP-06, S02-V-074 (S02-SA-G01) and S02-V-090 (S02-BC-G02). Their notes say so.
+4. `who changes` (S02-VP-06): the admin's Edit and Switch controls join S02-V-059 (S02-SH-330, S02-SH-333, S02-SH-335, S02-SH-337, S02-SH-338, S02-SH-347 to S02-SH-351, S02-SH-397, S02-SH-427, S02-SH-428, S02-SH-430, S02-SH-431, S02-SH-437, S02-SH-438, S02-SH-450, and the switch's S02-SH-261 and S02-SH-339 to S02-SH-343); the store's settings' controls join S02-V-078 (S02-ZD-083, S02-ZD-084) and S02-V-085 (S02-WC-017, S02-WC-113, S02-WC-170, S02-WC-221); new seller rows for Salla (S02-SA-179) and BigCommerce (S02-BC-110).
+5. Unchanged, as the coordinator ruled: rows for permissions, roles and the account owner (S02-V-055, S02-V-060 to S02-V-063, S02-V-079), and S02-V-086, 'it cannot be changed later'.
+6. Ids: the 39 earlier rows keep theirs; the new rows are S02-V-092 onward, at the end of variants.tsv. No `not covered` row is left.
