@@ -49,3 +49,7 @@ Store details		Details about the store that are shown in email receipts.	S02-WC-
 pickup location			S02-WC-C484;S02-WC-C486
 base_location_country			S02-WC-C518;S02-WC-C522
 consent mode		Consent mode facilitates the communication of visitors’ cookie consent preferences to Google tags.	S02-WC-C509
+Coming soon mode		Coming soon mode controls who can visit your site while you prepare it for launch.	S02-WC-C586
+Site visibility			S02-WC-C587;S02-WC-C616
+Apply to store pages only		Enabling this option ensures that only store-related pages are protected by Coming soon mode.	S02-WC-C591
+Live		When live mode is enabled, your site is fully accessible to all visitors, indicating that it is open for business.	S02-WC-C600
