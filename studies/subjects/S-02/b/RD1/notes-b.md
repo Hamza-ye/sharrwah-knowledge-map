@@ -775,3 +775,8 @@ Placed: S02-WC-246 joined S02-V-212 (S02-VP-17) and S02-V-217 (S02-VP-18), and i
 - S02-WC-319 (c): Affirm 'requires that your site only be available in U.S. English (en_US), Canadian English (en_CA), and/or Canadian French (fr_CA)': its decider is the site's languages (rule 4); in S02-VP-12's note
 - S02-WC-323 (c): 'Payment provider availability varies by country and by the information you entered during setup': its words don't say whose country (rule 2), and the information entered during setup is outside rule 1's table (rule 4); in S02-VP-12's note
 - S02-WC-421 (c): 'Rule processor that performs a comparison operation against the base * location - country': names the rule that S02-WC-419's and S02-WC-420's visibility uses, but no thing bound itself (rule 2)
+
+### Note tasks: zid (c)
+
+- S02-ZD-179 (c): They quote the Saudi Terms that zid.eg's Terms page holds in its raw HTML. The page's scripts replace them with the Terms of شركة زد مصر, under Egyptian law, so the page doesn't show these words (`method-report.md`, section 9). The statements recorded from the page as shown take their place.
+- S02-ZD-180 (c): They quote the Saudi Terms that zid.eg's Terms page holds in its raw HTML. The page's scripts replace them with the Terms of شركة زد مصر, under Egyptian law, so the page doesn't show these words (`method-report.md`, section 9). The statements recorded from the page as shown take their place.
