@@ -733,3 +733,246 @@ None. The second pass raises no point, so no search was run for the earlier plat
   - Inbox notes are read as notifications to the merchant (S02-VP-89, S02-VP-90). The extensions suggested to the merchant are noted as (c)'s kinds.
 - **Ids.** RD3-S1 wrote rows at the same time, so this part's new ids interleave with its own: S02-V-999 to S02-V-1056, not all of them this part's. The tool's lock kept the two parts' writes apart.
 - **Leads placed under several points.** The revisits placed leads under every point they answer, so rows of points that have no WooCommerce task gained statements by a join, or gained a row: S02-VP-51, S02-VP-54, S02-VP-57 to S02-VP-62, S02-VP-70, S02-VP-89 and S02-VP-90. No row was replaced or removed outside a revisit.
+
+## Second pass, RD3-S4: zid, bullets f and g
+
+Zid's tasks in `b/second-pass/RD3/worklist.tsv`: 29 revisits, then 11 `place` tasks, in the list's order; revisits whose points share their leads were done together. Zid's statements are read as the first pass read them (Part RD3-3, 'How this part reads Zid's statements'): Zid's market is its 'السوق'; 'you', the merchant, an instruction to the merchant or a control of the dashboard is the seller; 'تلقائيًا' (automatically) or a default is the platform. Each row is compared with the statement in its point's `raised_by` from another platform (rule 5); `term` rests on Zid's own translations in `terms.tsv` or on mine, marked 'my translation'. Readings are marked in their rows.
+
+### Revisits: rows replaced or removed, and what took their place
+
+- S02-V-760 (S02-VP-44, was `not covered`): replaced by the seller (S02-ZD-258 to S02-ZD-260, S02-ZD-265; later joined by S02-ZD-214 and S02-ZD-221, the legal pages' and the store's content written again in English). The leads placed under other points they answer: S02-ZD-260 to S02-ZD-263 joined S02-V-759 (S02-VP-43, the whole store: 'Current language configured for the store.', 'List of languages supported by the store.', 'Returns the store languages', and 'تحديد اللغة الأساسية للمتجر', read as the first pass read the store's base currency); S02-ZD-260's 'تفعيل العملات' joined S02-V-755 (S02-VP-42, the seller); S02-ZD-265 ('Message Language', the language of marketing messages, plans growth and pro) joined S02-V-807 (S02-VP-83, the seller), a thing of two kinds, language and messages to buyers (rule 1).
+- S02-V-761 (S02-VP-45, was `not covered`): replaced by the whole store, S02-ZD-231 under (g) ('لا يمكن تفعيل أكثر من نطاق في نفس الوقت.', my translation: 'more than one domain cannot be active at the same time'), `answers` alone (rule 4). S02-ZD-231 is also task 40's `place` under (g).
+- S02-V-762 (S02-VP-46, was `not covered`): replaced by the seller (S02-ZD-229, S02-ZD-230, S02-ZD-232 to S02-ZD-236, S02-ZD-239, S02-ZD-240, S02-ZD-244 to S02-ZD-246, S02-ZD-424); added S02-V-1064, the platform (S02-ZD-246's default link, 'رابط المتجر سيكون الرابط الافتراضي'; S02-ZD-244's temporary link created at registration, a reading), and S02-V-1065, the staff permission `manage.store.custom.domain` (S02-ZD-241, rule 4).
+- S02-V-774 (S02-VP-55, was `not covered`): replaced by `gap` S02-ZD-G10; no lead names a market, a buyer's country or the whole store for the checkout page's options. Its leads are placed under S02-VP-56.
+- S02-V-775 (S02-VP-56, was `not covered`): replaced by the seller (S02-ZD-247 to S02-ZD-254; S02-ZD-248, S02-ZD-250 and S02-ZD-253 name no party, and are read with S02-ZD-247 as options of the same page's list, a reading; later joined by S02-ZD-281); added S02-V-1066, the platform (S02-ZD-251: 'الخاصية يتم تفعيلها بشكل تلقائي', the sign-in pop-up turned on automatically). S02-ZD-252's cash on delivery in guest checkout joined S02-V-784 (S02-VP-62, the seller).
+- S02-V-787 (S02-VP-63, was `not covered`): replaced by the whole store, a reading of S02-ZD-208 ('اسم المؤسسة المستخدم في الفواتير', my translation: 'the establishment's name used in the invoices'): one name, used in the store's invoices.
+- S02-V-788 (S02-VP-64, was `not covered`): replaced by the seller (S02-ZD-206, the disclosure in the store that Zid's Terms require of every merchant; S02-ZD-208, a field of the store's data, read as the merchant's control).
+- S02-V-789 (S02-VP-65, was `not covered`): left `not covered`. No lead names a market, a buyer's country or the whole store for the exchange and return policy, and `why` names no gap; A2 recorded S02-ZD-G18 for the same legal pages under privacy ('the pages read name no market'), not for returns. Its leads are placed under S02-VP-66, or noted.
+- S02-V-790 (S02-VP-66, was `not covered`): replaced by the seller (S02-ZD-213, S02-ZD-214, S02-ZD-216, S02-ZD-217, S02-ZD-219, S02-ZD-221). S02-ZD-214 and S02-ZD-221 also joined S02-V-760.
+- S02-V-800 (S02-VP-76, was `not covered`): replaced by the whole store, a reading of S02-ZD-223 ('سيظهر العنوان الخاص الذي تم إضافة سابقاً في معلومات المتجر الأساسية', my translation: 'the address previously added in the store's basic information will appear'): the one address the invoice shows. S02-ZD-206 is placed under S02-VP-64; S02-ZD-224 and S02-ZD-226 are noted.
+- S02-V-870 (S02-VP-85, was `not covered`): left `not covered`. Its one lead, S02-ZD-226, is the account's own information, noted; the work list's gap S02-ZD-G01 is not in RD3's slice, so it is under none of RD3's bullets and gives no `gap` row (rule 4).
+- S02-V-791 (S02-VP-67, was `not covered`): replaced by a market, a reading of S02-ZD-280 (an inventory 'مع تخصيص قناة البيع لهذا المخزون إما زد كاشير أو للمتجر الإلكتروني', my translation: 'with the sales channel assigned to it, either Zid Cashier or the online store'; a sales channel is among what bullet (e) names as defining a market); added S02-V-1067 beside it, `gap` S02-ZD-G12, which asks what the inventory withdrawal priority takes its value per.
+- S02-V-802 (S02-VP-78, was `not covered`): replaced by the seller (S02-ZD-270, S02-ZD-272, S02-ZD-274 to S02-ZD-277, S02-ZD-281 to S02-ZD-283, S02-ZD-286, S02-ZD-287). S02-ZD-281 (products available for pickup, an option of the checkout page) also joined S02-V-775.
+
+### Statements noted (rule 2)
+
+- S02-ZD-227 (f): defines the domain ('النطاق هو عنوان متجرك الإلكتروني', my translation: 'the domain is your online store's address'); names neither what it takes its value per nor who sets it
+- S02-ZD-228 (f): an admin path to the domains list ('يمكنك الوصول إلى قائمة النطاقات من خلال : لوحة التحكم', my translation: 'you can reach the domains list through: Dashboard'); says where it is reached, not what it takes its value per or who sets it (as the first pass noted S02-ZD-105 and S02-ZD-141)
+- S02-ZD-257 (f): says customers outside Saudi Arabia can pay electronically with Zid Pay 'بحسب الشبكات والعملات المفعلة' (my translation: 'according to the networks and currencies enabled'); names what the payment depends on, not a market, a buyer's country or the whole store, and not who sets it
+- S02-ZD-207 (f): Zid's Terms require every store to give the consumer an invoice of the costs, the total price and the delivery's date and place ('ينبغي على كافة المتاجر والتجّار تقديم فاتورة إلى المستهلك'); names no business entity, and neither what a setting takes its value per nor who sets it
+- S02-ZD-209 (f): the merchant authorizes Zid, through the Mazeed platform ('منصة مزيد'), as 'الممثل القانوني للبائع أمام الأطراف التجارية الأخرى' (my translation: 'the seller's legal representative before other commercial parties'): a term of the merchant's contract with Zid, of (c)'s kinds (the terms), not who sells to the buyer; names no market, buyer's country or whole store
+- S02-ZD-224 (f): an order field's description ('Indicates whether the store business address is shown on printed invoices.'); names neither what the address takes its value per nor who sets it (as the first pass noted S02-ZD-052, an order field)
+- S02-ZD-226 (f): the account's own information ('إعدادات الحساب > بيانات الحساب أو معلوماتك الأساسية', my translation: 'account settings > account data or your basic information'), to which the user can add an address: a setting of the account, not of the store (rule 1); names no country, market or buyer's country
+- S02-ZD-212 (f): an admin path to the legal pages ('الاعدادات > المتجر > الصفحات القانونية'); says where they are reached, not what they take their value per or who sets them
+- S02-ZD-215 (f): lists the legal pages (the privacy policy, terms and conditions, exchange and return policy, complaints and suggestions, licenses); names neither what they take their value per nor who sets them
+- S02-ZD-218 (f): points Saudi stores to the Ministry of Commerce's regulations on e-commerce terms ('الرجاء مراجعة تنظيمات وزارة التجارة', my translation: 'please review the Ministry of Commerce's regulations'); names neither what a setting takes its value per nor who sets it: a regulator that requires a value isn't who sets it (rule 4)
+- S02-ZD-222 (f): an order field's description ('Return policy applicable to the order.'); names neither a market, a buyer's country or the whole store, nor who sets it
+- S02-ZD-269 (f): an admin path to the withdrawal priority ('يمكنك الوصول الى خاصية أولوية السحب من المخزون من خلال : لوحة التحكم'); says where it is reached, not what it takes its value per or who sets it
+- S02-ZD-278 (f): an admin path to inventory transfer requests ('يمكنك الوصول الى خاصية نقل المخزون من خلال : لوحة التحكم'); says where it is reached, not what it takes its value per or who sets it
+- S02-ZD-284 (f): an API field with no description ('fulfillment_priority: type: integer nullable: true'); names neither what it takes its value per nor who sets it
+- S02-ZD-285 (f): an order field's description ('Inventory location(s) associated with the order.'); names neither what locations take their value per nor who sets them
+
+## Second pass, RD3-S3: woocommerce, bullet g
+
+WooCommerce's tasks under (g) in `b/second-pass/RD3/worklist.tsv`: 127 `place` tasks, then 7 rereads. This part had no revisit of its own; the six rows RD3-S2 left `not covered` were read against its statements under (g). Every row or join this part wrote rests on (g) and takes `answers` alone (rule 4). A statement under (g) is placed under the whole store of each `what "X" takes its value per` point whose kind its setting is of, and under that kind's `who sets` point where it also names who sets (rule 4).
+
+How this part reads WooCommerce's statements under (g), beside the first pass's readings:
+- **The whole store.** Words that one value holds for the store or the site ('site-wide', 'throughout the store', 'your store's', 'in your store', 'the site's timezone', 'the entire site'), and one option of the store's settings (an option id such as 'woocommerce_enable_guest_checkout'), read as one value for every buyer, as the first pass read 'the store holds one value'; a reading where the words don't say so, marked in the row. A value for each product or each email is read the same way where the words name it (S02-WC-346, S02-WC-373, S02-WC-396).
+- **Not the whole store.** A statement that names only where a setting is reached, who handles a request, a party that can change a setting, or who a setting lets through, with no words that the setting holds for the whole store, is noted under (g) (rule 2).
+- **Statements under (f) and (g).** The work list was cut before RD3-S2 ran, so most of this part's `place` tasks under (f) and (g) were already in one of RD3-S2's rows, which the checker counts as placed under (g) too. This part read each one's (g) half all the same: where its words say the setting holds for the whole store and RD3-S2 had placed it only under a `who sets` point, it joined the whole-store row; where they don't, it is noted under (g), and RD3-S2's placement stands.
+
+### Revisits RD3-S2 left `not covered`
+
+- S02-V-929 (S02-VP-63, who sells to the buyer): replaced by the whole store (S02-WC-274, S02-WC-275, S02-WC-277): the merchant sells to every customer, for all the products and services the store provides, and the platform is not party to it ('We’re not involved in your relationships or transactions with any customer or potential customer, and you’re solely responsible for all of your ecommerce activities'), a reading. Recorded with `done revisit S02-V-929 f`.
+- S02-V-930 (S02-VP-64): still `not covered`. No statement under (g) names who sets who sells to the buyer: S02-WC-274's 'You have control over your store' names no setting of this kind, and its 'We’re not involved' names who is kept out (rule 5).
+- S02-V-931 (S02-VP-65, returns and cancellations): replaced by the whole store (S02-WC-281, S02-WC-282, S02-WC-284, S02-WC-285): one order withdrawal feature for the store, whose form 'accepts requests for orders of any age', one constant window (`WITHDRAWAL_WINDOW_IN_DAYS`, `= 14;`), and one Refund and Returns Policy page 'to fit your store', a reading. Recorded with `done revisit S02-V-931 f`. Under S02-VP-66, S02-WC-282 and S02-WC-285 joined the seller (S02-V-932), and S02-V-1077 was added, the platform ('We have created a sample draft Refund and Returns Policy page for you', and the constant of S02-WC-281).
+- S02-V-943, S02-V-944 (S02-VP-73, S02-VP-74, market selection): still `not covered`. No statement under (g) in this part says how a buyer's market is chosen, suggested, switched or restricted.
+- S02-V-956 (S02-VP-86, apps): still `not covered`. S02-WC-418 (Show Suggestions) is the suggestions the platform shows the merchant, not the apps a store installs, as RD3-S2 read it; S02-WC-422 is the merchant's WooCommerce.com subscription, a setting of the platform's account, not of the store (rule 1). Both are noted below.
+
+### `place` tasks: where the statements went
+
+New rows, each the whole store unless said:
+- S02-V-1078 (S02-VP-61, payment methods offered to buyers): S02-WC-266, 'customers from all over the world can use the gateway to check out and pay', a reading of the gateway as a payment method offered to buyers.
+- S02-V-1079 (S02-VP-77, units and time zone): S02-WC-290 ('the weight unit used throughout the store'); S02-WC-288, S02-WC-289 and S02-WC-291, one option each and their defaults; S02-WC-310 and S02-WC-311, the site's timezone; S02-WC-312.
+- S02-V-1080 (S02-VP-55, checkout and customer accounts): S02-WC-329 to S02-WC-333, S02-WC-338 to S02-WC-341. S02-WC-338 and S02-WC-339 share a source and an identifier, and are read together (rule 5, Lists).
+- S02-V-1081 (S02-VP-56): the platform, the defaults of S02-WC-329, S02-WC-331 and S02-WC-332.
+- S02-V-1082 (S02-VP-75, privacy and consent): S02-WC-441 to S02-WC-443, S02-WC-445, S02-WC-446, S02-WC-333, S02-WC-338, S02-WC-339.
+- S02-V-1083 (S02-VP-47, products): S02-WC-346, S02-WC-348.
+- S02-V-1084 (S02-VP-89, notifications to the merchant): S02-WC-430 to S02-WC-432.
+- S02-V-1077 (S02-VP-66): the platform, above.
+
+Joined to rows already there:
+- S02-V-893 (S02-VP-41, the whole store): S02-WC-312, S02-WC-315.
+- S02-V-900 (S02-VP-43, the whole store): S02-WC-312, S02-WC-324, S02-WC-325, and S02-WC-423 ('make sure emails are in the store language'), which RD3-S2 placed under messages to buyers.
+- S02-V-946 (S02-VP-76, the whole store): S02-WC-312.
+- S02-V-950 (S02-VP-80, the whole store): S02-WC-312, S02-WC-477, S02-WC-479, S02-WC-491 to S02-WC-495, S02-WC-501, S02-WC-502, S02-WC-504 to S02-WC-506.
+- S02-V-909 (S02-VP-51, the whole store): S02-WC-362, S02-WC-366, S02-WC-368, S02-WC-373.
+- S02-V-911 (S02-VP-53, the whole store) and S02-V-912 (S02-VP-54, the seller): S02-WC-376, the store notice, under storefront design as RD3-S2 placed S02-WC-375 and S02-WC-377.
+- S02-V-914 (S02-VP-56, the seller): S02-WC-329 to S02-WC-333, S02-WC-338 to S02-WC-341.
+- S02-V-1046 (S02-VP-84, the seller): S02-WC-333, S02-WC-338, S02-WC-339, S02-WC-441 to S02-WC-443, S02-WC-445, S02-WC-446.
+- S02-V-933 (S02-VP-67, the whole store): S02-WC-395, S02-WC-396, stock management, under locations as RD3-S2 placed them.
+- S02-V-952 (S02-VP-82, the whole store): S02-WC-386, S02-WC-387, S02-WC-426, S02-WC-428.
+- S02-V-1038 (S02-VP-87, the whole store): S02-WC-401, S02-WC-404, S02-WC-411, S02-WC-412, S02-WC-440.
+- S02-V-941 (S02-VP-71, the whole store): S02-WC-451, S02-WC-456, S02-WC-464.
+- S02-V-932 (S02-VP-66, the seller): S02-WC-282, S02-WC-285.
+
+Already under the whole store in RD3-S2's rows, so nothing was written for them: S02-WC-375 and S02-WC-377 (S02-V-911); S02-WC-408 (S02-V-1038); S02-WC-423 (S02-V-952); S02-WC-454, S02-WC-455, S02-WC-457 to S02-WC-462, S02-WC-471, S02-WC-472, S02-WC-474, S02-WC-475 (S02-V-941); S02-WC-476, S02-WC-478, S02-WC-480 to S02-WC-488, S02-WC-490, S02-WC-497, S02-WC-509 (S02-V-950).
+
+By count: 69 placed by this part, 29 already under the whole store, 29 noted (below): 127.
+
+### Rereads (rule 4, widened)
+
+- Reread of S02-WC-017: placed. Joined the seller under S02-VP-42 (S02-V-896), S02-VP-52 (S02-V-910), S02-VP-58 (S02-V-918) and S02-VP-60 (S02-V-925): 'From your store’s general settings page, you can enter your business address', with 'select the currency', 'enable tax calculations and coupons' and 'define the regions you will sell and ship orders to'. RD3 has no `who sets` point for the business address or the store's country.
+- Rereads of S02-WC-087, S02-WC-175, S02-WC-176 and S02-WC-179: placed. S02-V-1085 added under S02-VP-42, the seller ('Each WooCommerce store can set one base currency', the store read as its merchant; 'Choose', 'Specify').
+- Rereads of S02-WC-177 and S02-WC-178: placed, under S02-V-1085, and S02-V-1086 added under S02-VP-42, the platform ('this is the default option').
+- S02-V-1085 and S02-V-1086 give the answers of S02-V-896 and S02-V-897, and are kept apart from them, as each row's `note` says: a row that rests on a statement under (g) alone takes `answers` alone (rule 4), and the checker refuses one with `term`, which S02-V-896 and S02-V-897 take. S02-WC-017 is also under (a), (b) and (e), so it joined S02-V-896 and S02-V-918 themselves.
+
+### Statements noted (rule 2)
+
+- S02-WC-276 (g): 'must maintain fair and legally compliant return, refund, cancellation, and adjustment policies' names who maintains the return policies, as the terms require, without saying that they hold for the whole store; rule 4 places a statement under (g) under a `who sets` point only beside its whole-store answer
+- S02-WC-283 (g): 'It’s up to you how withdrawal requests are handled' names who handles each withdrawal request, case by case, and what the platform doesn't do ('does not automatically change the order status, cancel the order, or issue a refund'), not a setting that holds for the whole store
+- S02-WC-347 (g): the options of Catalog visibility, behind a filter; names neither what they take their value per nor that they hold for the whole store, as RD3-S2 noted it under (f)
+- S02-WC-361 (g): the coupon types WooCommerce core offers ('fixed-cart, fixed-product, and percentage-based coupons'): the platform's, not a setting of the store that holds for the whole store
+- S02-WC-364 (g): names who applies a coupon code, the customer, and who doesn't ('WooCommerce core does not apply coupon codes automatically'), not a setting that holds for the whole store
+- S02-WC-379 (g): the Customize your store task 'opens a simplified design screen'; names where the merchant starts designing, not that the design holds for the whole store
+- S02-WC-418 (g): Show Suggestions, one checkbox ('Leave this box unchecked if you do not want to pull suggested extensions from WooCommerce.com.', 'default' => 'yes'), which holds for the whole store and names who sets it; but the suggestions the platform shows the merchant are of none of rule 1's kinds of setting, and not the apps a store installs (S02-VP-86's kind), as RD3-S2 read it: a candidate for a new point (below)
+- S02-WC-422 (g): one WooCommerce.com subscription key per production site: the merchant's account with the platform, not a setting of the store (rule 1), as RD3-S2 noted it under (f)
+- S02-WC-425 (g): 'For each WooCommerce email listed, it’s possible to configure your settings (optional).': settings for each email, without saying what they take their value per or that they hold for the whole store
+- S02-WC-444 (g): 'Personal data retention', one setting for the store ('Choose how long to retain personal data'), but of none of rule 1's kinds: privacy and consent holds cookie consent and the privacy settings shown to buyers, and the statement doesn't say that retention is shown to buyers: a candidate for a new point (below)
+- S02-WC-447 (g): 'Use this section to decide how long your store keeps order data.': as S02-WC-444; 'make sure they comply with applicable laws, such as the EU GDPR' names a law that requires, not who sets (rule 4)
+- S02-WC-452 (g): how a role is assigned to a user ('choose a role from the Role dropdown'); names who assigns it, as RD3-S2 placed it under S02-VP-72, not that staff access holds for the whole store
+- S02-WC-453 (g): introduces two capabilities of the Administrator role (S02-WC-454 and S02-WC-455, under the whole store), without saying their scope
+- S02-WC-463 (g): an extension or plugin can change what each role can do; names who changes it, as RD3-S2 placed it, not that staff access holds for the whole store
+- S02-WC-465 (g): a plugin for editing role capabilities; names no scope
+- S02-WC-466 (g): as S02-WC-465
+- S02-WC-467 (g): as S02-WC-465
+- S02-WC-468 (g): the roles the release's code creates ('customer', 'shop_manager'); names no scope
+- S02-WC-469 (g): the code adds the core capabilities to two roles; names no scope
+- S02-WC-470 (g): the capabilities 'are assigned to admin/shop manager during installation or reset'; names when, not their scope
+- S02-WC-473 (g): the roles a shop manager may edit (by default 'customer'); names who may edit which roles, not the scope of staff access
+- S02-WC-489 (g): a private link 'to provide selective access to your site' names who the mode lets through, as RD3-S2 noted S02-WC-507, not that the mode holds for the whole store
+- S02-WC-496 (g): a guide for 'third-party developers and hosting providers' on integrating with the mode; names who integrates, not the mode's scope
+- S02-WC-498 (g): the mode 'can be programmatically synced from a plugin or application'; names who may change it, not its scope
+- S02-WC-499 (g): as S02-WC-498 ('a maintenance mode plugin')
+- S02-WC-500 (g): as S02-WC-498 ('a hosting provider's coming soon mode')
+- S02-WC-503 (g): exclusions that developers add, which bypass the mode 'on a specific IP address' or for 'a specific landing page': none of rule 4's four phrases, and not that the mode holds for the whole store
+- S02-WC-507 (g): users with manage_woocommerce bypass the mode; names who the mode lets through, as RD3-S2 noted it under (f)
+- S02-WC-508 (g): the exclusion filter woocommerce_coming_soon_exclude ('Defaults to false'); names whether a request is excluded, not that the mode holds for the whole store
+
+By reason, 29 statements: 13 name a party that changes, assigns, integrates with or handles a setting, or who a setting lets through, without words that it holds for the whole store (S02-WC-276, S02-WC-283, S02-WC-452, S02-WC-463, S02-WC-473, S02-WC-489, S02-WC-496, S02-WC-498 to S02-WC-500, S02-WC-503, S02-WC-507, S02-WC-508); 9 name no scope or what a value is taken per (S02-WC-347, S02-WC-379, S02-WC-425, S02-WC-453, S02-WC-465 to S02-WC-470); 2 are the platform's own, not the store's (S02-WC-361, S02-WC-422); 1 names who applies a coupon (S02-WC-364); 3 are candidates for a new point (S02-WC-418, S02-WC-444, S02-WC-447).
+
+### Candidates for a new point
+
+The second pass adds no point. These statements under (g) answer one of its questions for an X that no point's kind fits, or that no point of their kind asks:
+- **"Personal data retention"**, of none of rule 1's kinds (privacy and consent holds cookie consent and the privacy settings shown to buyers): what it takes its value per, the whole store (S02-WC-444, S02-WC-447, and S02-WC-339's 'decide how your store retains or removes personal data'); and who sets it, the seller ('Choose how long to retain personal data', 'Use this section to decide how long your store keeps order data').
+- **"suggested extensions" (Show Suggestions)**, of none of rule 1's kinds: what it takes its value per, the whole store (one checkbox, S02-WC-418); and who sets it, the seller and the platform's default 'yes'. RD3-S2 listed its `who sets` half.
+- **who sets the units and the time zone**, of the kind units and time zone (S02-VP-77 asks only what they take their value per): S02-WC-289 and S02-WC-291 ('you'), S02-WC-288 (the platform's default) and S02-WC-312 ('Set your store\'s address, visibility, currency, language, and timezone.'), whose whole-store half is under S02-V-1079. RD3-S2 listed them under (f).
+- **who sets the store's address**, of the kind the store's address (S02-VP-76 asks only what it takes its value per): S02-WC-312, and S02-WC-017 ('you can enter your business address'), whose whole-store half is under S02-V-946.
+
+### Words searched for
+
+None: the second pass raises no point, so no search was run for the earlier platforms' rows.
+
+### Problems with the brief or the tools
+
+- **(g) and `who sets`.** Rule 4 places a statement under (g) under a `who sets` point only beside its whole-store answer, so statements under (g) that name who sets a setting without saying it holds for the whole store are noted (S02-WC-276, S02-WC-283). The coordinator may rule otherwise: S02-WC-276 would join the seller under S02-VP-66.
+- **Rows with `term`.** A row that holds a statement under (g) alone must take `answers` alone, by the checker. The rereads' S02-WC-087 and S02-WC-175 to S02-WC-179 give the answers of S02-V-896 and S02-V-897, which take `answers;term`; joining them would have dropped `term`, which holds for those rows' statements under (f). So they have rows of their own (S02-V-1085, S02-V-1086), which leaves two rows of one answer each under S02-VP-42. The coordinator may merge them.
+- **The work list and RD3-S2.** Most of this part's `place` tasks were already placed by RD3-S2 when this part ran (see above); the work list was cut before. Each was read for its (g) half.
+- **Calls this part made that the coordinator may read otherwise.**
+  - Who sells to the buyer read as the merchant, the same for every buyer, from terms that say the merchant is responsible for all its ecommerce activities and the platform isn't involved (S02-V-929).
+  - The order withdrawal window, a constant that only sets when the merchant is warned of an order's age (S02-WC-284), read with the feature, its form and the policy page as returns and cancellations held for the whole store (S02-V-931).
+  - One option of the store's settings, or one value for each product or each email, read as the whole store.
+  - The gateway that customers 'from all over the world' can use (S02-V-1078), read as a payment method offered to buyers.
+  - Personal data retention read as of none of rule 1's kinds (a candidate), though S02-WC-339 names it beside the privacy policy notices.
+- **Ids.** RD3-S4 writes beside this part. This part's new rows are S02-V-1077 to S02-V-1086.
+- **Correction to RD3-S3's count "By reason" above:** 10 of the noted statements name no scope or what a value is taken per (S02-WC-347, S02-WC-379, S02-WC-425, S02-WC-453, S02-WC-465 to S02-WC-470), not 9; the total, 29, stands.
+
+## Second pass, RD3-S4: zid, bullets f and g (continued)
+
+RD3-S3 appended its section above while this part ran; this part's notes continue here.
+
+### Revisits, continued
+
+- S02-V-792 (S02-VP-68, was `not covered`): replaced by `gap` S02-ZD-G11; its leads are placed under S02-VP-79.
+- S02-V-803 (S02-VP-79, was `not covered`): replaced by the seller (S02-ZD-266 to S02-ZD-268, S02-ZD-206; S02-ZD-267 names no party, and is read with S02-ZD-266, a note of the same section, a reading). S02-ZD-266's store link also joined S02-V-762 (S02-VP-46, the seller).
+- S02-V-797 (S02-VP-73, was `not covered`): replaced by `gap` S02-ZD-G13. The leads name the Region & Language popup's country and city, which their words don't name as a market (as S02-ZD-G13 reads them). S02-ZD-289 (the 'Display products in your store based on the customer location' switch) joined S02-V-764 (S02-VP-47, the buyer's country); S02-ZD-292 ('Know your customers' locations precisely to customize offers') gave S02-V-1068 under S02-VP-51, the buyer's country (a reading); S02-ZD-291 (the popup included in 'your theme') joined S02-V-773 (S02-VP-54, the seller, a reading). S02-ZD-288 and S02-ZD-290 are noted.
+- S02-V-798 (S02-VP-74, was `not covered`): replaced by `gap` S02-ZD-G13. S02-ZD-289 joined S02-V-765 (S02-VP-48, the seller) and S02-ZD-292 joined S02-V-770 (S02-VP-52, the seller).
+- S02-V-795 (S02-VP-71, was `not covered`): replaced by `gap` S02-ZD-G17; the leads give permissions per member or group, none per market, buyer's country or the whole store.
+- S02-V-796 (S02-VP-72, was `not covered`): replaced by the seller (S02-ZD-319, S02-ZD-321, S02-ZD-322, S02-ZD-325, S02-ZD-331 to S02-ZD-333; S02-ZD-325 names no party, read as an option of the team section, a reading); added S02-V-1069, the store owner (S02-ZD-326, S02-ZD-327, S02-ZD-319, S02-ZD-331; rule 4, the account's owner), and S02-V-1070 beside them, `gap` S02-ZD-G17, which asks who sets a limit of permissions to a market. S02-ZD-332 also gave S02-V-1071 under S02-VP-62, the permission to turn the payment networks on or off (rule 4). S02-ZD-318 is placed under S02-VP-90.
+- S02-V-799 (S02-VP-75, was `not covered`): replaced by `gap` S02-ZD-G18; its leads are placed under S02-VP-84 and S02-VP-83, or noted (S02-ZD-336).
+- S02-V-808 (S02-VP-84, was `not covered`): replaced by the seller (S02-ZD-334, S02-ZD-335, S02-ZD-338, and the legal pages' privacy policy, S02-ZD-213, S02-ZD-214, S02-ZD-219); added S02-V-1072, the buyer (S02-ZD-335's opt-out, S02-ZD-337's unsubscribe), S02-V-1073, the platform (S02-ZD-339: the opt-out words recognized automatically, which can't be changed), and S02-V-1074 beside them, `gap` S02-ZD-G19, which asks about cookie preferences. The same leads under S02-VP-83 (messages to buyers): S02-ZD-338 and S02-ZD-344 joined S02-V-807 (the seller); S02-V-1075 added, the buyer (S02-ZD-337); S02-V-1076 added, the platform (S02-ZD-339).
+- S02-V-801 (S02-VP-77, was `not covered`): replaced by `gap` S02-ZD-G21. Its lead S02-ZD-346 says the merchant chooses the time zone; no point asks who sets units or time zone, so it is noted.
+- S02-V-804 (S02-VP-80, was `not covered`): replaced by `gap` S02-ZD-G20; its leads are placed under S02-VP-81.
+- S02-V-805 (S02-VP-81, was `not covered`): replaced by the seller (S02-ZD-340 to S02-ZD-344; S02-ZD-343 names no party, read with S02-ZD-340 as an option of the same list, a reading); added S02-V-1087, the platform (S02-ZD-345: Zid's right under its Terms to stop the service and close the store). S02-ZD-344's text in Arabic and English also joined S02-V-760 (S02-VP-44), and its notice to customers when the store reopens S02-V-807 (S02-VP-83).
+- S02-V-875 (S02-VP-86, was `not covered`): replaced by `gap` S02-ZD-G15. No lead names what apps take their value per (S02-ZD-G15: 'they name no market'); those that name who connects or manages apps answer a question no point asks of apps. All are noted.
+- S02-V-879 (S02-VP-87, was `not covered`): replaced by `gap` S02-ZD-G14; its leads are placed under S02-VP-88, or noted (S02-ZD-299).
+- S02-V-883 (S02-VP-88, was `not covered`): replaced by the seller (S02-ZD-293 to S02-ZD-298).
+- S02-V-887 (S02-VP-89, was `not covered`): replaced by `gap` S02-ZD-G16; its leads are placed under S02-VP-90.
+- S02-V-891 (S02-VP-90, was `not covered`): replaced by the seller (S02-ZD-313 to S02-ZD-317); added S02-V-1088, the staff permission `manage.store.staff.notifications` (S02-ZD-318, rule 4).
+
+### `place` tasks: where the statements went
+
+- S02-ZD-181 and S02-ZD-182 (the short national address required for shipments into Saudi Arabia, for customers' addresses there): joined S02-V-793 (S02-VP-69, the buyer's country). The Council of Ministers' decision S02-ZD-182 names requires the value without setting it (rule 4), so neither gives a row under S02-VP-70.
+- S02-ZD-187 (the Region & Language popup): S02-V-1089 added under S02-VP-44, the buyer ('allows customers to change the store language'); S02-V-1090 added under S02-VP-49, the buyer's country ('pricing ... tailored to the selected region'); joined S02-V-764 (products), S02-V-781 (shipping: 'delivery options') and S02-V-772 (storefront design: 'content'), the buyer's country. The selected region is the country and city the customer selects, read as the first pass read the customer's location ('موقع العميل'). Its words don't name a market (S02-ZD-G13), so it is not placed under S02-VP-73 or S02-VP-74.
+- S02-ZD-188 (the region popup settings managed on the inventory page): joined S02-V-765 (S02-VP-48, the seller), read with S02-ZD-189 as the lead-in of its list (rule 5, Lists).
+- S02-ZD-189 ('By default, Display products in your store based on the customer location is disabled for all stores.'): joined S02-V-764 (S02-VP-47, the buyer's country, which the store switches on, rule 4); S02-V-1091 added under S02-VP-48, the platform ('By default').
+- S02-ZD-399, S02-ZD-404 and S02-ZD-412 (Zid Payments' answers for Saudi Arabia and Kuwait: currencies turned on through the store's settings): joined S02-V-755 (S02-VP-42, the seller); their identifiers name the currencies (rule 5).
+- S02-ZD-231, under (g): S02-V-761 (S02-VP-45, the whole store), with its revisit above.
+- S02-ZD-191 and S02-ZD-447: noted.
+
+### Statements noted (rule 2), continued
+
+- S02-ZD-288 (f): the city a customer selects in the Region & Language popup, or 'a default city in the region that has a shipping option': its words don't name it as a market (as S02-ZD-G13 reads the popup), and it is of none of rule 1's kinds otherwise (listed below as a candidate for a new point)
+- S02-ZD-290 (f): an API to 'change the store language, country, and city'; names no party that sets them, and no market (as S02-ZD-G13 reads the popup)
+- S02-ZD-191 (f): the setRegion API ('Changes the store language, country, and city'); names no party that sets them, and no market (as S02-ZD-G13 reads the popup)
+- S02-ZD-320 (f): an admin path to the team feature ('يمكنك الوصول الى خاصية الفريق من خلال : لوحة التحكم'); says where it is reached, not what it takes its value per or who sets it
+- S02-ZD-328 (f): defines user roles and permissions ('User roles and permissions determine what a user can view, change, or manage in a store's setting'); names neither what staff access takes its value per nor who sets it
+- S02-ZD-329 (f): a staff permission over the store's settings in general ('manage.store.settings Manage store settings'), of no one kind of setting (as RD3-3 noted S02-BC-097 to S02-BC-102)
+- S02-ZD-330 (f): a staff permission over the apps' settings ('manage.app.market.settings Manage application settings'): S02-VP-86 asks only what apps take their value per, and no point asks who sets apps (listed below)
+- S02-ZD-336 (f): Zid's own Privacy Policy, the rights it gives over personal information 'regardless of where you live': Zid's policy, not a setting of the store (rule 1)
+- S02-ZD-346 (f): the merchant chooses the store's time zone ('يمكنك اختيار المنطقة الزمنية المناسبة', my translation: 'you can choose the suitable time zone'); S02-VP-77 asks only what units and time zone take their value per, and no point asks who sets them (listed below)
+- S02-ZD-299 (f): the details added when creating a Google Analytics property ('يتم اضافة اسم الموقع ( المتجر ) والمنطقة الزمنية والبلد والعملة', my translation: 'the site's (store's) name, time zone, country and currency are added'), in the passive with no party: a setting of the Google Analytics property; names neither what web analytics takes its value per nor who sets it
+- S02-ZD-300 (f): the merchant can connect any number of apps to the store ('يمكنك ربط العديد من التطبيقات ولا يوجد عدد محدد'); names no market, buyer's country or whole store (S02-ZD-G15), and no point asks who sets apps (listed below)
+- S02-ZD-301 (f): the merchant views and manages the apps activated in the store ('يمكنك استعراض جميع التطبيقات المفعّلة في متجرك، مع إمكانية إدارتها'); names no market, buyer's country or whole store, and no point asks who sets apps (listed below)
+- S02-ZD-302 (f): embedded apps, which the merchant controls in the App Market page ('التطبيقات التي يمكنك التحكم في التطبيق داخل صفحة سوق التطبيقات'); names no market, buyer's country or whole store, and no point asks who sets apps (listed below)
+- S02-ZD-303 (f): defines Zid's App Market, apps and services of third parties independent of Zid; names neither what apps take their value per nor who sets them
+- S02-ZD-304 (f): the merchant can connect the store to any app by its linking mechanism ('يمكنك ربط متجرك بأي تطبيق'); names no market, buyer's country or whole store, and no point asks who sets apps (listed below)
+- S02-ZD-305 (f): lists the App Market's categories of apps; names neither what apps take their value per nor who sets them
+- S02-ZD-306 (f): public apps, which 'All merchants on the platform can view, install, and benefit from': for whom apps are offered, (h)'s kind; names no market, buyer's country or whole store, and no point asks who sets apps (listed below)
+- S02-ZD-307 (f): private apps, installed only 'by stores explicitly granted access': a value per store, none of rule 4's four phrases; no point asks who sets apps
+- S02-ZD-309 (f): an app records the authorized store's connection, and 'Zid records the installation during token exchange': an installation per store, none of rule 4's four phrases (S02-ZD-G15); no point asks who sets apps
+- S02-ZD-310 (f): tells app partners to disclose an app's 'eligibility, country, contract or verification prerequisites'; its country doesn't say whose (rule 2's role test), and it names neither what an app takes its value per nor who sets it
+- S02-ZD-311 (f): defines Zid's App Market, a platform owned by Zid that links the merchant and the partner; names neither what apps take their value per nor who sets them
+- S02-ZD-312 (f): the merchant agrees that the partner is the app's service provider, independent of Zid: a term of the merchant's contract, of (c)'s kinds (the terms), not a setting of the store; names neither what apps take their value per nor who sets them
+- S02-ZD-447 (f): names the languages, currencies and international shipping Zid supports ('مع دعم لغات متعددة، عملات متنوعة، وشحن دولي', my translation: 'with support for many languages, various currencies and international shipping'); names neither what they take their value per nor who sets them
+
+### Candidates for a new point
+
+The second pass raises no point. These statements answer one of (f)'s questions for an X that no point's kind fits, or for a kind no point asks that question of:
+- S02-ZD-213, S02-ZD-217, S02-ZD-219: X 'الشروط والأحكام', 'الشكاوى والاقتراحات', 'التراخيص' (my translation: 'terms and conditions', 'complaints and suggestions', 'licenses'), the store's legal pages other than its return and privacy policies; question: who sets them (the seller: 'يمكنك إدارة وتخصيص السياسات القانونية'). The statements are placed under S02-VP-66 and S02-VP-84 for their return and privacy policies.
+- S02-ZD-288: X 'a default city in the region that has a shipping option', the city a customer selects in the Region & Language popup; question: who sets it (the customer; a default city otherwise). Noted.
+- S02-ZD-346: X 'المنطقة الزمنية' (my translation: 'the time zone'), of S02-VP-77's kind (units and time zone); question: who sets it (the seller: 'يمكنك اختيار المنطقة الزمنية المناسبة'), which no point asks of that kind. Noted.
+- S02-ZD-300 to S02-ZD-302, S02-ZD-304, S02-ZD-306 and S02-ZD-330: X 'التطبيقات' (apps), S02-VP-86's kind; question: who sets them (the seller: 'يمكنك ربط العديد من التطبيقات'; the permission 'manage.app.market.settings'), which no point asks of that kind. Noted.
+
+### Candidates not placed
+
+Each of these statements is placed under another point, or noted; these candidates are not placed:
+- S02-ZD-258's 'وسيتم تحويلها تلقائيا' (my translation: 'and it will be switched automatically'): its words don't say what is switched, so it gives the platform no row under S02-VP-43 or S02-VP-44.
+- S02-ZD-233's review by 'الفريق' (the team) of a request for a free domain: a review of the merchant's request, not who sets the domain (rule 4).
+- S02-ZD-280's 'يتم إتاحة مخزون للعميل' (an inventory is made available) names no party, so it gives no row under S02-VP-78.
+- S02-ZD-275's warehouse chosen for each order when it turns 'جاهز', S02-ZD-282's data per branch, S02-ZD-283's national address per warehouse in Saudi Arabia, and the permissions per member or group (S02-ZD-319 to S02-ZD-322) under S02-VP-71: values per order, location or member, none of rule 4's four phrases.
+- S02-ZD-317's 'automatic notifications': the platform sends them, but the statement names the merchant as who sets them, so no platform row under S02-VP-90.
+- S02-ZD-187's 'the store ... country, and city', changed by the customer: its words don't name a market (S02-ZD-G13), so no row under S02-VP-73 or S02-VP-74.
+
+### Words searched for
+
+None: the second pass raises no point, so no search for earlier platforms' rows was run.
+
+### Problems with the brief, the work list or the tools
+
+- **S02-ZD-G01 (S02-VP-85).** The work list names it among the A2 gaps for S02-VP-85, but it is not in RD3's slice (`slices/RD3/gaps.tsv`): it is under none of RD3's bullets, so it gives no `gap` row (rule 4: a gap under the same bullet), and S02-V-870 stays `not covered`. `method/variants_edit.py` would have taken it: it checks a gap's id against nothing.
+- **S02-V-789 (S02-VP-65) stays `not covered`.** Gap-closing found leads for the point but recorded no gap, and no lead names a market, a buyer's country or the whole store for the return policy; S02-ZD-G18 asks this of the privacy policy on the same pages. The coordinator may want a gap recorded, or the leads read as the whole store.
+- **Readings of the whole store.** S02-V-787 (the establishment's name used in the invoices, S02-ZD-208) and S02-V-800 (the address from the store's basic information that the invoice shows, S02-ZD-223) rest on readings of one value for the store, marked in their rows; gap-closing recorded no gap for these points. The coordinator may prefer `not covered` for them, as for S02-V-789.
+- **A sales channel read as a market.** S02-V-791 reads S02-ZD-280's sales channel (Zid Cashier or the online store) as a market the store sells into, since bullet (e) names a channel among what defines a market; the first pass read only 'لكل سوق وقناة' so.
+- **The Region & Language popup.** Its country and city are read as the buyer's country, not a market, as S02-ZD-G13 reads the popup; RD2's parts may read S02-ZD-187 and S02-ZD-191 (also under e) otherwise.
+- **Ids.** This part's new rows are S02-V-1064 to S02-V-1076 and S02-V-1087 to S02-V-1091; S02-V-1077 to S02-V-1086 went to RD3-S2, which ran beside it.

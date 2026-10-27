@@ -71,3 +71,41 @@ reread	S02-SH-294	f	placed: the permissions that gate the shipping option route,
 reread	S02-SH-380	f	placed: joined S02-V-1063 (the permissions that gate the shipping option route)
 reread	S02-SH-571	f	left noted: names which catalogs a B2B market can't take, a rule on what a market may hold, not that no one sets products or prices
 reread	S02-SH-244	g	placed: joined S02-V-990 for its 'can't be deactivated'; its 'apply to all regions' stays in S02-V-661
+revisit	S02-V-760	f	replaced by the seller (S02-ZD-258, S02-ZD-259, S02-ZD-260, S02-ZD-265); S02-ZD-260 to S02-ZD-263 joined S02-V-759 (VP-43, the whole store); S02-ZD-260 joined S02-V-755; S02-ZD-265 joined S02-V-807
+revisit	S02-V-761	f	replaced by the whole store (S02-ZD-231, under g); S02-ZD-227, S02-ZD-228 noted
+revisit	S02-V-762	f	replaced by the seller (12 leads); added the platform (S02-ZD-246, S02-ZD-244) and the manage.store.custom.domain permission (S02-ZD-241); S02-ZD-227, S02-ZD-228 noted
+revisit	S02-V-774	f	replaced by gap S02-ZD-G10; its leads placed under S02-VP-56 (and S02-ZD-252 under S02-VP-62); S02-ZD-257 noted
+revisit	S02-V-775	f	replaced by the seller (S02-ZD-247 to S02-ZD-254); added the platform (S02-ZD-251, automatically); S02-ZD-252 joined S02-V-784
+revisit	S02-V-787	f	replaced by the whole store, a reading (S02-ZD-208); S02-ZD-206 placed under S02-VP-64; S02-ZD-207, S02-ZD-209 noted
+revisit	S02-V-788	f	replaced by the seller (S02-ZD-206, S02-ZD-208); S02-ZD-207, S02-ZD-209 noted
+revisit	S02-V-800	f	replaced by the whole store, a reading (S02-ZD-223); S02-ZD-206 placed under S02-VP-64; S02-ZD-224, S02-ZD-226 noted
+revisit	S02-V-789	f	left not covered: no lead names a market, a buyer's country or the whole store, and why names no gap; the leads placed under S02-VP-66 (S02-ZD-214, S02-ZD-221 also S02-VP-44) or noted (S02-ZD-212, S02-ZD-215, S02-ZD-218, S02-ZD-222)
+revisit	S02-V-790	f	replaced by the seller (S02-ZD-213, S02-ZD-214, S02-ZD-216, S02-ZD-217, S02-ZD-219, S02-ZD-221); S02-ZD-214, S02-ZD-221 joined S02-V-760; S02-ZD-212, S02-ZD-215, S02-ZD-218, S02-ZD-222 noted
+revisit	S02-V-870	f	left not covered: its lead S02-ZD-226 (the account's own information) noted; S02-ZD-G01 is not under (f) or (g) in RD3's slice, so it gives no gap row (rule 4)
+revisit	S02-V-791	f	replaced by a market, a reading of S02-ZD-280's sales channel per inventory; S02-V-1067 added, gap S02-ZD-G12; the other leads placed under S02-VP-78 or noted (S02-ZD-269, S02-ZD-278, S02-ZD-284, S02-ZD-285)
+revisit	S02-V-802	f	replaced by the seller (11 leads); S02-ZD-281 joined S02-V-775; S02-ZD-269, S02-ZD-278, S02-ZD-284, S02-ZD-285 noted; S02-ZD-280 placed under S02-VP-67
+revisit	S02-V-792	f	replaced by gap S02-ZD-G11; its leads placed under S02-VP-79
+revisit	S02-V-803	f	replaced by the seller (S02-ZD-266, S02-ZD-267, S02-ZD-268, S02-ZD-206); S02-ZD-266 joined S02-V-762
+revisit	S02-V-797	f	replaced by gap S02-ZD-G13; S02-ZD-289 joined S02-V-764, S02-ZD-292 added under S02-VP-51 (the buyer's country); S02-ZD-288, S02-ZD-290, S02-ZD-291 noted
+revisit	S02-V-798	f	replaced by gap S02-ZD-G13; S02-ZD-289 joined S02-V-765, S02-ZD-292 joined S02-V-770; S02-ZD-288, S02-ZD-290, S02-ZD-291 noted
+revisit	S02-V-795	f	replaced by gap S02-ZD-G17; its leads placed under S02-VP-72 (S02-ZD-332 also S02-VP-62, S02-ZD-318 under S02-VP-90) or noted (S02-ZD-320, S02-ZD-328, S02-ZD-329, S02-ZD-330)
+revisit	S02-V-796	f	replaced by the seller; added the store owner (S02-ZD-326, S02-ZD-327, S02-ZD-319, S02-ZD-331) and gap S02-ZD-G17; S02-ZD-332 added under S02-VP-62 (a permission); S02-ZD-320, S02-ZD-328 to S02-ZD-330 noted
+revisit	S02-V-799	f	replaced by gap S02-ZD-G18; its leads placed under S02-VP-84 and S02-VP-83, S02-ZD-336 noted
+revisit	S02-V-808	f	replaced by the seller; added the buyer (S02-ZD-335, S02-ZD-337), the platform (S02-ZD-339) and gap S02-ZD-G19; S02-ZD-337, S02-ZD-339 added and S02-ZD-338 joined under S02-VP-83; S02-ZD-336 noted
+revisit	S02-V-929	f	replaced by RD3-S3: the whole store (S02-WC-274, S02-WC-275, S02-WC-277, statements under (g)): the merchant sells to every customer and the platform is not party to it
+revisit	S02-V-931	f	replaced by RD3-S3: the whole store (S02-WC-281, S02-WC-282, S02-WC-284, S02-WC-285, statements under (g)); S02-WC-283 and S02-WC-276 noted
+reread	S02-WC-017	g	placed: joined the seller under S02-VP-42, S02-VP-52, S02-VP-58 and S02-VP-60 (S02-V-896, S02-V-910, S02-V-918, S02-V-925): 'From your store’s general settings page, you can'; no point asks who sets the business address or the store's country in RD3
+reread	S02-WC-087	g	placed: S02-V-1085 added under S02-VP-42, the seller ('Each WooCommerce store can set one base currency', a reading), kept apart from S02-V-896 (answers;term)
+revisit	S02-V-801	f	replaced by gap S02-ZD-G21; its lead S02-ZD-346 (who sets the time zone, which no point asks) noted
+reread	S02-WC-175	g	placed: joined S02-V-1085 (S02-VP-42, the seller): 'Sets your store’s default currency'
+revisit	S02-V-804	f	replaced by gap S02-ZD-G20; its leads placed under S02-VP-81
+reread	S02-WC-176	g	placed: joined S02-V-1085 (S02-VP-42, the seller): 'Choose the default position of the currency symbol'
+revisit	S02-V-805	f	replaced by the seller (S02-ZD-340 to S02-ZD-344); added the platform (S02-ZD-345); S02-ZD-344 joined S02-V-760 and S02-V-807
+reread	S02-WC-177	g	placed: joined S02-V-1085 (S02-VP-42, the seller), and S02-V-1086 added, the platform ('this is the default option')
+reread	S02-WC-178	g	placed: joined S02-V-1085 (the seller) and S02-V-1086 (the platform, 'this is the default option') under S02-VP-42
+reread	S02-WC-179	g	placed: joined S02-V-1085 (S02-VP-42, the seller): 'Specify how many numbers to display'
+revisit	S02-V-879	f	replaced by gap S02-ZD-G14; its leads placed under S02-VP-88, S02-ZD-299 noted
+revisit	S02-V-883	f	replaced by the seller (S02-ZD-293 to S02-ZD-298); S02-ZD-299 noted
+revisit	S02-V-887	f	replaced by gap S02-ZD-G16; its leads placed under S02-VP-90
+revisit	S02-V-891	f	replaced by the seller (S02-ZD-313 to S02-ZD-317); added the permission manage.store.staff.notifications (S02-ZD-318)
+revisit	S02-V-875	f	replaced by gap S02-ZD-G15; its leads (S02-ZD-300 to S02-ZD-307, S02-ZD-309 to S02-ZD-312) noted: none names what apps take their value per, and no point asks who sets apps
