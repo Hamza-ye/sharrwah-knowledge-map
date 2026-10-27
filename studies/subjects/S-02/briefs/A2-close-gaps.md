@@ -24,7 +24,7 @@ Leave a `gap` row whose gaps are routed to a capture request (`who_can` `capture
 
 **For each group:**
 1. **Search the held corpora** with `python3 -I method/corpus_search.py <platform> <terms>`, two searches:
-   - **first, the group's own phrases:** the kind's phrases from `x_words` and from your platform's `terms.tsv` and statements, each kept whole as one term, such as `"guest checkout"` or `"customer accounts"`, in every language your platform uses. A single generic word, such as "checkout" or "site", goes only after `--with`, beside the kind's name;
+   - **first, the group's own phrases:** the kind's own name, as a term even when it is one word (such as `domain`), and the kind's phrases from `x_words` and from your platform's `terms.tsv` and statements, each kept whole as one term, such as `"guest checkout"` or `"customer accounts"`, in every language your platform uses. Any other single generic word, such as "checkout" or "site", goes only after `--with`, beside the kind's name;
    - **then, the same terms with `--with market markets country countries`,** and your platform's own words for a market and a country.
 
    Read the titles and snippets. Past its cap, the tool lists only addresses: rerun with `--max` at the number of documents its last line reports, up to 300. Past 300, narrow the search by its terms, and say in `notes.md` how you narrowed it.
@@ -43,6 +43,8 @@ Leave a `gap` row whose gaps are routed to a capture request (`who_can` `capture
    - where a complete list shows it absent, record an absence. The coordinator has the absence audited (phase A3);
    - where a page likely to state it couldn't be read, record a gap of kind `page not read`, whose `route` names that page;
    - otherwise record a gap of kind `searched, not found`. Its `read` names each `corpus_search.py` command you ran and each document you read.
+
+   One new gap per point at most.
 
    A new gap takes `who_can` `founder`, and its `route` says what would close it: a page, an observation of the admin, or a question to the platform. The coordinator decides whether it becomes a capture request.
 5. **A `page not read` gap whose pages you have read doesn't remain:** record what the pages state, or a new `searched, not found` gap in its place.
