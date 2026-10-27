@@ -38,7 +38,10 @@
 
 The checker finds every quote, 3,193 of them, and no error. With the briefs' inspections (30 million), S-02 has spent about 534 million of its 700 million. **The rest is projected at 350 to 650 million,** so S-02 at about 0.9 to 1.2 billion, past the budget plus a quarter ([the frame's budget](studies/subjects/S-02/frame.md#budget)). The projection is measured again after phase B's first parts, and the cost comes to the founder when the spending passes 875 million (`PLAN.md`, section 8).
 
-**In flight:** a third, independent check of the phase B brief. The second's dry run showed the rules matched a question's X by its words, so two agents would reach different variation points; X now matches by its role ([`method-report.md`](studies/subjects/S-02/method-report.md), section 5).
+**In flight:**
+- **Phase B's first part,** RD1-1: the store's own country, bullets (a) and (d), for all five platforms.
+- **A check of phase B's rules for (c) and (f),** now that each takes X from a list of kinds. The brief has had three checks; each found what two agents would do differently, and each was fixed ([`method-report.md`](studies/subjects/S-02/method-report.md), sections 5 and 6).
+- **The absence audit's brief** (phase A3), inspected and fixed; it runs beside phase B once its fixes are re-checked.
 
 **Next:** phase B in ten parts ([`b/parts.tsv`](studies/subjects/S-02/b/parts.tsv)), two at a time, each a fresh agent reading only its part of its root decision's slice. Then gap-closing and the absence audit where a root decision needs them, phase B's second pass, and phase C.
 
