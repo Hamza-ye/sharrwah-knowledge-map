@@ -277,7 +277,7 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 **The render failed some sites, not only the pages it was blamed on** (the coordinator, 27 October):
 - **What happened.** BC-1 found that every BigCommerce Help Center article not held rendered as an empty page, and ZD-1 had found that Zid's pricing pages rendered only Zid's error text. In this session the browser's own requests for those sites' scripts came back as HTTP 400, or aborted, while the same requests made outside the browser succeeded. So the pages never ran their scripts.
 - **The fix.** `method/capture/render.mjs` and `page_text.mjs` now fetch every request with Playwright's own request client and hand its answer to the page. Pages that rendered before render the same, and the Help Center article went from 0 characters to 17,870, Zid's pricing page from 50 to 4,725.
-- **What it had hidden.** 45 pages were captured again with the fix:
+- **What it had hidden.** 32 pages are now held as they render with the fix:
   - BigCommerce's five Help Center articles behind G04, G05, G07 and G08, now read by a short part, BC-1b;
   - Zid's pricing pages, read by ZD-3;
   - 24 zid.sa and zid.eg pages held until then only as an error text.
