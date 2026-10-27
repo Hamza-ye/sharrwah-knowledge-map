@@ -6,6 +6,12 @@ S02-VP-57, 'the whole store': unknown by like with like, no row blocks it. Shopi
 
 S02-VP-59, 'a market the store sells into': vendor choice on the reading that Zid's Region & Language popup (S02-ZD-187) sets the buyer's country, as RD3's rows read it. Read as RD2 reads it, as choosing a market, S02-V-781 would give the key, the four hosted platforms would agree, and the cause would be business model (WooCommerce's S02-WC-017); the founder item would stand either way, since both are expensive.
 
+S02-VP-59, revisited: S02-V-781 also takes 'لكل منتج' (S02-ZD-103, S02-ZD-104: shipping restrictions for each product or region), as S02-V-783 does under S02-VP-61, and S02-V-639 also takes 'specific products' (S02-SH-926). By the rule for 'same' the two are different keys, each vendor choice; both carry the same founder question. S02-VP-61, 'the whole store': unknown, no row blocks it. Only WooCommerce gives it, through S02-V-1078, a gateway read as a payment method (S02-WC-266); test 4 needs a WooCommerce statement of what it provides, and S02-WC-266 is advice on choosing a gateway. A WooCommerce statement that its payment methods or gateways hold for every buyer would make it business model.
+
+S02-VP-62, 'the seller': unknown, no row blocks it. Salla, Zid, Shopify and BigCommerce give it; WooCommerce's rows name only WooPay and Affirm, and no WooCommerce statement in the slice says what it provides on who sets local payment methods, so test 4 can't be shown. A WooCommerce row or statement on who turns payment methods on would settle it. S02-VP-62, 'Affirm': unknown, no row blocks it; S02-WC-319 gives Affirm's rule, not what WooCommerce provides. S02-VP-62, 'the platform': no difference rests on keying S02-V-785 (flagged: a limit on cash on delivery) as the platform's terms setting it, and Managed Markets (S02-V-648) as Shopify's own product.
+
+S02-VP-63, 'a market the store sells into': unknown, blocked by S02-V-961 (BigCommerce's gap S02-BC-G14). It would need to show whether a BigCommerce store can sell to buyers in a storefront or channel through a business or legal entity other than the merchant, or a merchant of record: if it can, market, pattern; if not, vendor choice. S02-VP-63, 'the whole store': unknown by like with like, no row blocks it: Shopify gives it only in observations (S02-SH-399 to S02-SH-401); a Shopify declaration that one entity sells for the whole store whatever the market would make it no difference.
+
 ## C-RD3-1
 
 Points S02-VP-41 to S02-VP-54, all written; check: 0 problems.

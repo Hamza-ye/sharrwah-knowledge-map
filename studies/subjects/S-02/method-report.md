@@ -597,3 +597,5 @@ The letters' rules moved to a row per point. Expense is judged per key, so a pay
 - **Two limits of the tool, worked around by readings:**
   - it reads one point's rows, so a statement phase B placed under one twin point but not the other is missed on the other. The next parts' messages say to weigh the twin's rows;
   - it proposes `market, pattern` without asking whether the two platforms' statements are of comparable kinds. On discounts per buyer's country, Salla's observed statement against Zid's shipped one, the part wrote `unknown` instead.
+
+**The usage limit** (27 October, about 20:40 UTC). Parts C-RD3-2 and C-RD3-3 stopped mid-point when the account reached its plan's usage limit. Each had written its finished points, and the point in hand was half-written. The founder moved from Max x5 to Max x20, and both parts were resumed with a message, from their transcripts. Each was told to run `check` on its points first, to see what was done. The rule that each part writes as it goes is what kept this from costing anything but time.

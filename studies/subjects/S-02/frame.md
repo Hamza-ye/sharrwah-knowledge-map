@@ -126,7 +126,7 @@ The pilot's five steps, under Stage 4's changes (`PLAN.md`, Stage 4, and section
   - the second pass reads only what its work list names (`method/second_pass_list.py`): the statements A2 and A3 added, the statements `b/second-pass.md` lists, and the rows it revisits, each printed by id, not each root decision's whole slice;
   - the coordinator captures pages and checks quotes once for every two parts, not after each, which lowers its own cost;
   - each gap-closing part counts its tool calls and stops at about 100, and a fresh agent continues from its files, since every request of a long run reads its whole context again.
-- **A higher plan:** none is needed yet. No run has been refused or slowed by a usage limit. The coordinator says so if one is.
+- **A higher plan:** at about 20:40 UTC on 27 October, two of phase C's parts stopped at the plan's usage limit (Max x5), with "resets 9:20pm (UTC)". Their work was saved as they went, so nothing was lost. The founder moved to Max x20, and both parts were resumed from where they stopped, not started again (the pilot's lesson: resuming costs little, restarting loses what was spent).
 
 **Measured again at 19:04 UTC on 27 October:** 1,285 million spent, with the second pass's last round and phase C under way. The projection is now about 1,450 to 1,550 million. It rose because held evidence was read before the capture requests run, which cost 61 million and closed or narrowed nine gaps.
 
