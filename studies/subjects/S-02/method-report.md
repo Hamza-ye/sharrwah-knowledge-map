@@ -335,8 +335,8 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 
 **What SH-2b and SH-2c taught:**
 - **A search left past 300 hides evidence.** SH-2b answered its four points and stopped before narrowing six searches. Narrowed, they gave SH-2c 72 more statements, as many as SH-2b's own. Among them:
-  - a changelog post of 22 January 2026 says a store's currency is now set from the business country in Business details (S02-SH-880 to S02-SH-904);
-  - the Contact information policy's template fills "Physical address: Yemen" from the store's settings, on a store made in Yemen.
+  - a changelog post of 22 January 2026: "Your store’s currency is now set based on the business country selected in Business details" (S02-SH-883);
+  - the Contact information policy's template, which fills "Physical address: Yemen" from the store's settings, on a store made in Yemen (S02-SH-899).
 
   The brief's narrowing step isn't optional, and a part that stops before it leaves a follow-up.
 - **Narrowing by terms can't thin a corpus of duplicates.** Most of the fetch archives' records past 300 are Help Center fetches, the same pages as the Help Center corpus, and could only be narrowed by address.
