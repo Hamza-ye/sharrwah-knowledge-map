@@ -75,6 +75,11 @@ HEAD = {
     "variation-points.tsv": ["vp_id", "bullet", "question", "x_words", "raised_by", "note"],
     "variants.tsv": ["variant_id", "vp_id", "platform", "variant", "stmt_ids", "basis", "basis_evidence", "kind", "scope",
                      "gap_ids", "absence_ids", "note"],
+    "answers.tsv": ["vp_id", "key", "rows", "gives", "lacks", "open", "not_stated", "cause", "cause_basis",
+                    "scopes_compared", "cause_reading", "blocked_by", "follows", "expensive_because", "founder_item",
+                    "depends_on", "note"],
+    "points.tsv": ["vp_id", "keys", "coexistence", "coexistence_basis", "general_variant", "general_basis", "follows",
+                   "note"],
     "analysis.tsv": ["vp_id", "cause", "cause_basis", "scopes_compared", "cause_reading", "coexistence", "coexistence_basis",
                      "general_variant", "follows", "expensive_because", "founder_item", "note"],
     "bears-on.tsv": ["vp_id", "axis_ids", "constant_ids", "basis", "note"],
@@ -671,6 +676,24 @@ if ana is not None:
             err("analysis.tsv", v, "expensive_because is empty")
         if r["founder_item"]:
             founder_items.append((v, r["founder_item"]))
+# From S-02, phase C compares the platforms on each answer of a point (its keys): answers.tsv, a row per key, and
+# points.tsv, a row per point. method/analysis_edit.py checks each row as it writes it; here, what the joined files hold.
+ans = read(os.path.join(subj, "answers.tsv"), "answers.tsv")
+pts = read(os.path.join(subj, "points.tsv"), "points.tsv")
+if ans is not None or pts is not None:
+    have = {r["vp_id"] for r in (pts or [])}
+    for v in sorted(set(vp) - have):
+        err("points.tsv", v, "no phase C row yet", "review")
+    for k, n in Counter((r["vp_id"], r["key"]) for r in (ans or [])).items():
+        if n > 1:
+            err("answers.tsv", k[0], f"{n} rows for the key {k[1]!r}")
+    for r in ans or []:
+        if r["vp_id"] not in vp:
+            err("answers.tsv", r["vp_id"], "not a variation point")
+        if r["cause"] not in CAUSES:
+            err("answers.tsv", r["vp_id"], f"cause '{r['cause']}' is not one of {CAUSES}")
+        if r["founder_item"]:
+            founder_items.append((r["vp_id"], r["founder_item"]))
 
 # ---------- step 2: Yemen marks ----------
 bears = read(os.path.join(subj, "bears-on.tsv"), "bears-on.tsv")

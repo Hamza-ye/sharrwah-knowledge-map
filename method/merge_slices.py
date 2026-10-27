@@ -2,7 +2,8 @@
 
 Usage: python3 -I method/merge_slices.py SUBJECT_DIR PHASE
 
-PHASE is `b` (variation-points.tsv, variants.tsv and notes-b.md) or `c` (analysis.tsv and notes-c.md). The agents
+PHASE is `b` (variation-points.tsv, variants.tsv and notes-b.md) or `c` (the pilot's analysis.tsv; from S-02,
+answers.tsv and points.tsv; and notes-c.md). The agents
 write in SUBJECT_DIR/<PHASE>/<root decision>/; this writes SUBJECT_DIR/<file>, in the order of the root decisions'
 names. Each TSV's header must be the same in every folder, and an id may appear in one folder only. Notes are joined
 under a heading per root decision. The subject's files are written again each time, from the folders: the folders are
@@ -15,7 +16,8 @@ is written.
 """
 import csv, os, re, sys
 
-FILES = {"b": ["variation-points.tsv", "variants.tsv", "notes-b.md"], "c": ["analysis.tsv", "notes-c.md"]}
+FILES = {"b": ["variation-points.tsv", "variants.tsv", "notes-b.md"],
+         "c": ["analysis.tsv", "answers.tsv", "points.tsv", "notes-c.md"]}
 
 
 def table(path):
@@ -93,7 +95,8 @@ def main(subj, phase):
             elif lines[0] != head:
                 sys.exit(f"{p}: its header differs from the first folder's: nothing joined")
             for l in lines[1:]:
-                key = l.split("\t")[0]                 # vp_id or variant_id: one folder's own
+                # vp_id or variant_id, or for answers.tsv a point and its key: one folder's own, and one row each
+                key = "\t".join(l.split("\t")[:2]) if name == "answers.tsv" else l.split("\t")[0]
                 if key in seen:
                     sys.exit(f"{p}: {key} is also in {seen[key]}'s file: nothing joined")
                 seen[key] = rd
