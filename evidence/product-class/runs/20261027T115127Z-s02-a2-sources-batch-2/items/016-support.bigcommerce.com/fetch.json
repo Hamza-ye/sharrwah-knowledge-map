@@ -1,0 +1,18 @@
+{
+ "n": 16,
+ "url": "https://support.bigcommerce.com/s/article/User-Permissions",
+ "dir": "items/016-support.bigcommerce.com",
+ "fetched_at": "2026-10-27T11:51:36Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://support.bigcommerce.com/s/article/User-Permissions?language=en_US",
+ "content_type": "text/html;charset=UTF-8",
+ "bytes": 191520,
+ "cited_in": [
+  "S-02 A2 BC-1b"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "66ccf43d6ec3e58e644308ec6b03ade7a9e3212e913b950cde6632d3a4410111",
+ "raw_ext": "html"
+}

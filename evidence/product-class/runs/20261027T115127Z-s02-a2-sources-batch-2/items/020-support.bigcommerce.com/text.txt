@@ -1,0 +1,149 @@
+Security Update: On October 23, PHP disclosed an additional vulnerability, CVE-2026-115560, affecting applications with a specific, uncommon configuration. Following our security team’s assessment, we have determined that Commerce systems are not impacted by this vulnerability. Commerce will continue to monitor developments and evaluate any additional guidance or security updates as they become available. Read the full update on the Security Trust Center.
+
+Close window.
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+Security Update: On October 23, PHP disclosed an additional vulnerability, CVE-2026-115560, affecting applications with a specific, uncommon configuration. Following our security team’s assessment, we have determined that Commerce systems are not impacted by this vulnerability. Commerce will continue to monitor developments and evaluate any additional guidance or security updates as they become available. Read the full update on the Security Trust Center.
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+GETTING STARTED
+PRODUCTS
+STORE SETUP
+B2B
+DESIGN AND CONTENT
+MANAGE STORE
+CHANNEL MANAGER
+MARKETING
+DATA SOLUTIONS
+ACCOUNT
+Users
+Users
+Store Owner
+Permissions
+Identifying the Store Owner
+Changing Owners
+FAQ
+User Profile
+API Accounts
+Permissions
+Billing
+TD BANK
+Store Owner User Role and Permissions
+What We'll Cover
+Requirements
+Permissions exclusive to the store owner
+Determining which user is the store owner
+Changing the store owner user
+FAQ
+
+The store owner is the primary user for your entire BigCommerce account. It is the first user account created when you start a new store and is granted all administrative permissions. Only the store owner can access the Account Dashboard to manage account information and pay invoices.
+
+ 
+Requirements
+To change the store owner user, you must be logged in as the current store owner.
+ 
+Permissions Exclusive to the Store Owner
+
+Only the store owner can:
+
+access all areas of the control panel and can change all settings.
+access your BigCommerce billing and account details.
+access your support PIN.
+change your store's subscription plan.
+purchase new storefront seats.
+purchase a domain or SSL certificate directly from BigCommerce.
+purchase themes in the Themes Marketplace.
+assign high-risk permissions to other users.
+access a preview code to allow non-users to preview a store before it is launched.
+ 
+Determining Which User is the Store Owner
+
+Unless you've changed it, the store owner email address is the same address you used to create your trial store and BigCommerce account.
+
+If you are not sure if you are the store owner, go to Settings › Users. The store owner's email address will be listed as owner under User Role.
+
+If you don't see Settings or Users in the navigation, your user account has not been granted permission to access those areas and is not the store owner user role.
+
+ 
+Changing the Store Owner User
+ 
+
+Are you transferring ownership of your store? See the “Transferring Ownership” section of The Account Dashboard for additional considerations before following the instructions below.
+
+If you are selling your store or changing permissions within your company, you may need to transfer the store owner role to a different user. Go to Settings › Users, click the Action menu (⋯) next to the user you want to assign as store owner, and select Edit. In the User Role drop-down, select Store Owner.
+
+Confirm the ownership change by entering a verification code in the pop-up window. This code can be found in an email sent to the current store owner's email address. Check your inbox for an email from from accounts@bigcommerce.com with the subject line, You have received a new verification code.
+
+If you do not see the verification email in your inbox, check your spam folder, or click Resend code to have another sent to you.
+
+After entering the verification code, click Confirm and save your changes to complete the ownership transfer. Note that after three unsuccessful verification attempts, you will be logged out of the control panel and locked out of your account. If this happens, follow the steps in Unlocking Your Account to log back into the control panel.
+
+To ensure that permissions are updated, both the previous owner and new owner should log out of the control panel by clicking the Profile icon, and selecting Log Out. Then, log back in to your user account again to view the control panel with your new user role.
+
+ 
+FAQ
+
+How do I reclaim store ownership after transferring to a developer or agency?
+
+ 
+
+We do not recommend assigning store ownership to a third party. To give a developer or agency access to your store, create a user account for them and assign only the permissions they need to perform their tasks.
+
+If you assigned an external developer or agency partner as your store’s owner for customization or setup assistance, have them follow the instructions in Changing the Store Owner User to reassign you as the store owner user.
+
+If they are unresponsive, contact our support team to request a store owner transfer. You will be asked to verify ownership with the Primary Contact information in your Account Dashboard.
+
+Additional Resources
+Logging into Your Store
+Setting Up Two-Factor Authentication (2FA)
+The Account Dashboard
+User Roles and Permissions
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+Store Owner User Role and Permissions

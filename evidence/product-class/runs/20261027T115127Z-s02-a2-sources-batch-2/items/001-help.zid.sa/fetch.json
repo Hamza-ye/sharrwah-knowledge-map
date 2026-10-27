@@ -1,0 +1,18 @@
+{
+ "n": 1,
+ "url": "https://help.zid.sa/google-analytics/",
+ "dir": "items/001-help.zid.sa",
+ "fetched_at": "2026-10-27T11:51:27Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/google-analytics/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 25653,
+ "cited_in": [
+  "S-02 A2 ZD-3"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "edb95af8450b02a929a6cd52b1085fb4ea0eaa98beca4df278abbf74e6a38a37",
+ "raw_ext": "html"
+}

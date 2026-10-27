@@ -1,0 +1,18 @@
+{
+ "n": 7,
+ "url": "https://help.zid.sa/whatsapp-opt-out/",
+ "dir": "items/007-help.zid.sa",
+ "fetched_at": "2026-10-27T11:51:33Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/whatsapp-opt-out/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 25870,
+ "cited_in": [
+  "S-02 A2 ZD-3"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "8b745d824c22431581103900f72aa32447c154239a922df7e1135b57efaae264",
+ "raw_ext": "html"
+}

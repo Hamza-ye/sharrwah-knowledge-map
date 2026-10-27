@@ -1,0 +1,312 @@
+Security Update: On October 23, PHP disclosed an additional vulnerability, CVE-2026-115560, affecting applications with a specific, uncommon configuration. Following our security team’s assessment, we have determined that Commerce systems are not impacted by this vulnerability. Commerce will continue to monitor developments and evaluate any additional guidance or security updates as they become available. Read the full update on the Security Trust Center.
+
+Close window.
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+Security Update: On October 23, PHP disclosed an additional vulnerability, CVE-2026-115560, affecting applications with a specific, uncommon configuration. Following our security team’s assessment, we have determined that Commerce systems are not impacted by this vulnerability. Commerce will continue to monitor developments and evaluate any additional guidance or security updates as they become available. Read the full update on the Security Trust Center.
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+GETTING STARTED
+PRODUCTS
+STORE SETUP
+B2B
+DESIGN AND CONTENT
+MANAGE STORE
+CHANNEL MANAGER
+MARKETING
+DATA SOLUTIONS
+ACCOUNT
+Users
+Users
+Store Owner
+User Profile
+API Accounts
+Permissions
+Requirements
+User Roles
+Permissions
+Editing Permissions
+High-risk Permissions
+Single Click Apps
+FAQ
+Billing
+TD BANK
+User Roles and Permissions
+What We'll Cover
+Requirements
+User roles
+Permissions
+Editing permissions
+High-risk permissions
+Single Click Apps
+FAQ
+
+A single store can have multiple users that log in to assist with the day-to-day functions of managing a store or performing a specific role in the business. Each user should have their own account, with permissions limited to only their areas of responsibility.
+
+On BigCommerce, there are pre-made sets of user permissions, or you can select the permissions you want to grant. The Store Owner or a System Admin can create or delete users and grant permissions from Settings › Users.
+
+In this article, we'll go over the different types of user roles and what each role can access. If you'd like to learn about creating and removing users, see Users.
+
+ 
+Requirements
+To view and manage user permissions, you must have the Manage Users, Add Users, Edit Users, and Delete Users permissions enabled on your user account.
+Only the store owner user can grant high-risk permissions.
+ 
+User Roles
+
+A user role is a built-in collection of user permissions specific to a particular job. They help to optimize efficiency and reduce the risk of human error by enabling you to delegate responsibilities and permissions to certain users only.
+
+Sales Staff — Enables all Sales Staff permissions.
+Sales Manager — Enables all Sales Staff and Sales Manager permissions.
+Store Administrator — Enables all Sales Staff, Sales Manager, and System Admin permissions.
+Store Owner — Includes all permissions and is the person financially responsible for the account; this role has exclusive access to various account-related features.
+For more information, see Store Owner User Role and Permissions.
+Custom — Use this option to create your own combination of permissions.
+You can also opt to customize one of the other roles.
+ 
+Permissions
+Sales staff permissions
+Sales manager permissions
+System admin permissions
+
+The table below lists available permissions, grouped under the user role that enables them by default. Any related required permissions are called out, as these must be enabled in order for the user to have the intended access.
+
+Check the box next to a permission to enable it. To disable it, uncheck the box. When you select a predefined user role, the default permissions associated with it are automatically enabled. You can optionally further customize a user by enabling or disabling individual permissions.
+
+SALES STAFF PERMISSIONS
+Permission	Effect	Requires
+Manage Orders	Access View Orders, Search Orders, and View Shipments; can access order actions (e.g. printing invoice and packing slip). Create draft or manual orders, create shipments, and create and manage shipping Automatic Promotions.	 
+Edit Orders	Add and edit orders	Manage Orders
+Add Orders	Add orders, and create draft or manual orders.	Manage Orders
+Finalize Manual Orders using Manual Payments	Process manual payments on manual orders.	Add Orders, Manage Orders
+Manage Returns	Add notes, change status of return requests	 
+Capture Funds	Access Capture Funds from the View Orders screen	Manage Orders
+Refund Orders	Access Refund from the order actions drop-down	Manage Orders
+Manage Customers	Access View Customers and Search Customers. Required to manage Automatic Promotions limited by customer groups.	 
+Edit Customers	Edit customer details, and sign into customer accounts.	Manage Customers
+Manage Reviews	Access View Product Reviews	Manage Products
+Edit Reviews	Approve, disapprove, and edit reviews	Product Reviews
+Delete Reviews	Delete reviews	Product Reviews
+Approve Selected	This does not currently affect anything.	 
+Manage Legacy Coupons	Access Coupon Codes	 
+Edit Legacy Coupons	Add coupon codes (switched with Add Legacy Coupons)	Manage Legacy Coupons
+Add Legacy Coupons	Edit coupon codes (switched with Edit Legacy Coupons)	Manage Legacy Coupons
+Delete Legacy Coupons	Delete coupon codes	Manage Legacy Coupons
+Manage Promotions	Access Automatic Promotions	 
+Edit Promotions	Edit and sort existing Automatic Promotions	Manage Promotions
+Add Promotions	Create new Automatic Promotions	Manage Promotions
+Delete Promotions	Delete existing Automatic Promotions	Manage Promotions
+ 	View all channel-related functionality in the control panel. This permission only enables viewing channels in the list and does not provide any management access. Cannot be disabled.	 
+Manage Pages	Access storefront web pages and change sort order	 
+Create Pages	Create new pages. This permission gives the user direct access to change the page's HTML, including the ability to add inline scripts.	Manage Pages
+Edit Pages	Edit existing pages. This permission gives the user direct access to change the page's HTML, including the ability to add inline scripts.	Manage Pages
+Delete Pages	Delete existing pages	Manage Pages
+Manage Banners	Create, edit, and delete banners, and make them visible/invisible	 
+Manage Gift Certificates	View purchased gift certificates and their details. Change status and delete certificates.	 
+Use Image Manager	Use the Image Manager	 
+View Locations	Access the Locations page, and the View Locations drop-down in the inventory editor.	 
+SALES MANAGER PERMISSIONS
+Permission	Effect	Requires
+Manage Products	Access the View Products page. Create draft or manual orders. Required to manage product discount Automatic Promotions.	 
+Create Products	Create new products. Read Channels is required to assign new products to a category.	
+
+Manage Products
+
+
+Edit Products	Edit, set as featured, and hide existing products. Manage Categories is also required to use Bulk Edit in the control panel.	Manage Products, Product Options, Manage Brands
+Delete Products	Delete existing products	Manage Products
+Download Digital Products	Download digital product files from the product edit page in the control panel.	Manage Products
+Export Catalog Entities	Export products	Manage Products
+Product Options	Access and add / edit / delete product options. This permission is required to edit products and is enabled automatically if Edit Products is active. Required to manage product discount Automatic Promotions.	Manage Products
+Manage Categories	Access the categories page, change sort order, and visibility. Create draft or manual orders. Edit Products is also required to use Bulk Edit in the control panel.	 
+Create Categories	Create new categories	Manage Categories
+Edit Categories	Edit existing categories	Manage Categories
+Delete Categories	Delete existing categories	Manage Categories
+Export Orders	Export orders	 
+Delete Orders (Restorable)	This does not currently affect anything.	 
+Delete Orders (Permanently)	Delete orders via API	 
+Restore Orders	Unarchive orders	 
+Order Messages	Send order messages	Manage Orders
+Add a Customer	Add new customers	Manage Customers
+Delete Customers	Delete existing customers	Manage Customers
+Manage Customer Store Credit	Adjust customer store credit	Manage Customers, Edit Customers
+Export Customers	Export customers and newsletter subscribers	Manage Customers
+Manage News	Access the built-in blog. This permission gives the user direct access to change the page's HTML, including the ability to add inline scripts.	 
+Google Shopping Feed	This does not currently affect anything.	 
+Google XML Sitemap	Access Google XML Sitemap modal to copy sitemap URL	 
+Manage Brands	Access View Brands. This permission is required to edit products and is enabled automatically if Edit Products is active.	 
+Add Brands	Add new brands	Manage Brands
+Edit Brands	Edit existing brands	Manage Brands
+Delete Brands	Delete existing brands	Manage Brands
+Export Subscribers	This does not currently affect anything	 
+Store Overview	View Ecommerce Analytics' Store Overview report. Must be enabled to see Store Performance (legacy analytics) in the dashboard.	 
+Product Statistics	View Ecommerce Analytics' Products report	 
+Abandoned Cart Save Attempts	View Ecommerce Analytics' Abandoned Cart Recovery report	 
+Order Statistics	View Ecommerce Analytics' Order Statistics report	 
+Customer Statistics	View Ecommerce Analytics' Customer Statistics report	 
+Search Statistics	View Ecommerce Analytics' Search Statistics report	 
+Manage Export Templates	Create, copy, and edit export templates	 
+List Products on eBay	This corresponds to legacy eBay settings and does not currently affect anything	 
+Manage Email Marketing Settings	Edit settings and add integrations	 
+Manage Abandoned Cart Notifications	Create, edit, delete, and copy Abandoned Cart Notification emails	 
+List Products on Facebook	List products to Facebook	 
+Manage Shopping Comparison Sites	This does not currently affect anything.	 
+Carts Report	This does not currently affect anything.	 
+View Inventory	View stock and low stock columns in the Product List and export inventory. When disabled, all inventory settings, except for tracking mode, are hidden when adding or editing products.	 
+Edit Inventory	Access the inventory manager and edit stock and low stock values in the Product List, and import inventory.	 
+Store Overview Report	View Ecommerce Analytics' Store Overview. Must be enabled to see Store Performance in the dashboard.	 
+Real Time Report	View Ecommerce Analytics' Real Time report	 
+Merchandising Report	View Ecommerce Analytics' Merchandising report	 
+Marketing Report	View Ecommerce Analytics' Marketing report	 
+Orders Report	View Ecommerce Analytics' Orders report	 
+Customers Report	View Ecommerce Analytics' Customers report	 
+Purchase Funnel Report	View Ecommerce Analytics' Purchase Funnel report	 
+Abandoned Carts Report	View Ecommerce Analytics' Carts report	 
+Insights Report	View Insights reports	 
+Manage Price Lists	Edit Price Lists	Manage Customers, Customer Groups, Manage Categories, Manage Products, Manage Brands
+SYSTEM ADMIN PERMISSIONS
+Permission	Effect	Requires
+Manage Users	Access View Users	 
+Add Users	Create new users	Manage Users
+Edit Users	Edit existing users	Manage Users
+Delete Users	Delete existing users	Manage Users, Edit Users
+Manage Form Fields	Access and sort Address Fields	 
+Add Form Fields	Add new address fields to the checkout. Must be enabled to show up in Settings menu	 
+Edit Form Fields	Edit existing form fields	 
+Delete Form Fields	Delete existing form fields	 
+Manage Settings	Access Product Filtering, Store Settings, Checkout, Inventory, Order Notifications, Returns, Gift Wrapping, Conversions, and Gift Certificate settings. Must be enabled to download the Cyberduck Connection File and manage currency-specific Automatic Promotions.	 
+Manage Payments	Access Payments and manage currency-specific Automatic Promotions	Manage Settings
+Manage Shipping	Access the Shipping page and manage shipping Automatic Promotions. 	 
+Manage Tax Settings	Access Tax	Manage Customers, Customer Groups to edit basic tax rates and zones.
+Manage Order Settings	Manage order notification email settings	 
+Manage Customer Privacy Settings	Manage customer groups and privacy settings for customers.	 
+Manage Abandoned Cart Settings	Manage abandoned cart email settings	 
+Manage Cart Settings	Manage cart settings	 
+Import Catalog Entities	Import products	Manage Products
+Import Customers	Import customers	Manage Customers
+Import Tracking Numbers	Import tracking numbers	Manage Orders
+Store Design	Access design menus within the control panel, such as Themes, Logo, Carousel, Web Pages, Transactional Emails, Page Builder, and Footer Scripts. To access storefront-specific design settings from the Channel Manager, the Edit Channels high-risk permission must also be enabled.	 
+Design Mode	Access Blueprint HTML Editor	Store Design
+Store Logs	Access Store Logs	 
+Customer Groups	Create, edit and delete customer groups. Required to manage Automatic Promotions limited by customer groups.	Manage Customers, Manage Categories
+Take Store Down for Maintenance	Make the storefront inactive and set the message for visitors. This permission must be checked in order to view the store in maintenance mode and to see the setting in the control panel.	Manage Settings
+301 Redirects	Add, delete, export and import 301 Redirects	 
+Manage DNS Records	Create, edit and delete DNS records	 
+Customize Order Statuses	Edit the names of order statuses	 
+Manage Web Analytics	Access and edit web analytics tools in Data Solutions	 
+Manage Data Warehouses	Access and connect data warehouses in Data Solutions	 
+Manage Customer Data Platforms	Access and connect customer data platforms in Data Solutions	 
+Create Locations	Add new locations and duplicate existing Locations	View Locations
+Edit Locations	Edit existing locations and change their status	View Locations
+Delete Locations	Delete existing locations.	View Locations
+Manage Pickup Methods	Create, add, and delete pickup methods	 
+Read Webhooks	View the list of webhooks for all API Accounts belonging to this store.	List store-level API accounts
+Use Script Manager	Access the Script Manager to manage third-party functionality added via apps, developers, or manually created by store users	 
+ 
+Editing Permissions
+
+To edit user permissions, go to Settings › Users while logged in as the store owner or a user account with the Manage Users and Edit Users permissions enabled. Click the Action button for the desired user account, then select Edit.
+
+Choose the permissions you would like to toggle on or off, then click Save.
+
+ 
+High-Risk Permissions
+
+This setting allows the store owner to grant individual users access to the High-Risk permissions listed below. Note that Two-Factor Authentication (2FA) must be set up on the store owner account to enable these permissions, and 2FA is required for any user account enabled with high-risk permissions.
+
+Permission	Effect	Requires
+Create store-level API Accounts	Generate store-level API accounts in the control panel. Only the store owner can create and manage account-level API accounts.
+List store-level API Accounts	View existing store-level API accounts.	 
+Delete store-level API Accounts	Delete a store-level API account from the store.	 
+Launch applications	Access all marketplace apps installed on the store. Users with this permission do not also need individual single-click app permissions to access certain apps.	 
+Install applications	Install apps from the App Marketplace.	 
+Uninstall applications	Uninstall apps from the store.	 
+Create Channels	Add channels in the Channel Manager.	 
+Edit Channels	Edit channel settings and additional storefronts in the Channel Manager. This permission and Store Design are required to access the Theme Marketplace and the Edit Theme Files action in Page Builder for multi-storefront stores.	 
+Delete Channels	Delete channels from the Channel Manager.	 
+
+Users who are granted high-risk permissions must have all other user permissions granted, or a mismatch between API and User permissions will occur. Note that this requirement does not apply to high-risk permissions – you can select to enable one or more of these permissions.
+
+ENABLING HIGH-RISK PERMISSIONS
+
+To enable high-risk permissions, you will need to be logged in as the store owner. Go to Settings › Users, click the Action menu (⋯) for the desired user account, then select Edit.
+
+Scroll down to the high-risk permissions section, then select which permissions the user will have access to.
+
+ 
+Single Click Apps
+
+This setting grants individual users access to third-party Single Click Apps, and makes the app available from that user's control panel. This list only shows installed apps which support the Single Click App multi-user capability — apps which are not restricted for use by the store owner only. If the list is empty, then no multi-user apps are installed on the store.
+
+Note that many third-party sales channels are apps, which can only be installed by the store owner or users with the Install applications permission.
+
+ENABLING SINGLE CLICK APP PERMISSIONS
+
+Go to Settings › Users, click the Action menu (⋯) for the desired user account, then select Edit.
+
+Scroll down to Single Click Apps and select which apps the user will have access to.
+
+ 
+ 
+FAQ
+
+Why am I getting a "Loading data error" message when attempting to load Orders, Products, or Customers?
+
+A "Loading data error" message indicates that your user account does not have the proper permissions to view an area. Confirm that your user account has all the permissions needed to view the area, including any requirements.
+
+Do this in my store
+
+GO TO USERS IN MY STORE
+
+Additional Resources
+Store Owner User Role and Permissions
+Users
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+User Roles and Permissions

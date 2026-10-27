@@ -1,0 +1,18 @@
+{
+ "n": 19,
+ "url": "https://support.bigcommerce.com/s/article/How-do-I-upgrade-my-stores-plan",
+ "dir": "items/019-support.bigcommerce.com",
+ "fetched_at": "2026-10-27T11:51:39Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://support.bigcommerce.com/s/article/How-do-I-upgrade-my-stores-plan?language=en_US",
+ "content_type": "text/html;charset=UTF-8",
+ "bytes": 191523,
+ "cited_in": [
+  "S-02 A2 BC-1b, read"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "645c0ac06c4fd55998fc4036a4ce31d181eeaf87c83e31ba01d285460ec4a7e6",
+ "raw_ext": "html"
+}

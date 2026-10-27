@@ -1,0 +1,18 @@
+{
+ "n": 6,
+ "url": "https://help.zid.sa/team-notification/",
+ "dir": "items/006-help.zid.sa",
+ "fetched_at": "2026-10-27T11:51:32Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/team-notification/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 25595,
+ "cited_in": [
+  "S-02 A2 ZD-3"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "c310fd181355f9369d7bcc228d8ffbb235dbdeff8c14b9f404df7e6f9489358d",
+ "raw_ext": "html"
+}
