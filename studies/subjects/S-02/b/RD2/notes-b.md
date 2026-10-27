@@ -151,3 +151,18 @@ None of salla's statements under (g) says that the platform has no market of the
 - S02-SA-168 (g): 'يُطبَّق هذا الترتيب وأي تعديل عليه تلقائيًا على جميع الأسواق' (my translation: this order, and any change to it, applies automatically to all markets): a setting that holds for the whole store, RD3's half
 - S02-SA-300 (g): '"Passing scope Id will make the products sort is per scope in this category, multi country feature needs to be enabled."': the products' order, a setting, RD3's half
 - S02-SA-310 (g): 'it can be set as null or left blank to indicate that the tax rate is intended to apply to all countries': a tax rate for all countries, a setting that holds for the whole store, RD3's half
+
+### zid: statements noted under (e)
+
+- S02-ZD-009 (e): the path to the markets feature ('الاعدادات > الأسواق'); answers none of (e)'s questions
+- S02-ZD-024 (e): the theme's customization shown to the customer 'على حسب دولته' (my translation: according to their country): storefront design and market selection, under (f); answers none of (e)'s questions
+- S02-ZD-026 (e): 'Retrieve a list of countries where the store operates.': X fails the role test: the statement doesn't call these countries markets or places the store sells into, and rule 1 counts the store's country of operation as its own country
+- S02-ZD-027 (e): the API scope 'countries_cities.read'; answers none of (e)'s questions
+- S02-ZD-028 (e): 'Retrieve a list of countries where the store operates.': X fails the role test, as for S02-ZD-026
+- S02-ZD-029 (e): the country schema's codes ('Two-letter country code according to ISO 3166-1 alpha-2'); answers none of (e)'s questions
+- S02-ZD-030 (e): 'The endpoint returns all countries' names, codes, and IDs': a list of all countries; answers none of (e)'s questions
+- S02-ZD-031 (e): 'Retrieve a list of cities for a specific country where the store operates or delivers.': the statement doesn't call these cities markets; answers none of (e)'s questions
+- S02-ZD-045 (e): 'عند تفعيل عملة دولة يتم تفعيل الشحن إليها' (my translation: when a country's currency is turned on, shipping to it is turned on): currency and shipping, under (f); states no definer, limit or party for a market
+- S02-ZD-160 (e): a warehouse's sales channels, 'إما المتجر الإلكتروني أو زد كاشير' (my translation: either the online store or Zid Cashier): locations, under (f); states no definer, limit or party for a market
+
+zid has no statement under (g) in RD2's slice.

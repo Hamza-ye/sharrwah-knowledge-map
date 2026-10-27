@@ -185,6 +185,7 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 | Shopify | 2 gaps, 3 absences | 4 confirmed; G01 partly contradicted | 23 | 86 | 17.2 |
 | Zid, part 1 | 3 gaps, 3 absences | all 6 confirmed | 10 | 51 | 9.2 |
 | Zid, part 2 | 4 gaps, 1 absence | 4 confirmed; N04 contradicted | 9 | 58 | 9.8 |
+| WooCommerce | 2 gaps | G01 and G03 partly contradicted | 19 | 52 | 8.6 (before the re-read) |
 
 **What it taught:**
 - **Two of the six gaps routed to capture requests were answered, in whole or in part, by what is held.** Salla's onboarding list of countries is in two runs, as the page and as the API's saved answer. `method/held_index.py` didn't list saved answers, so the gap had gone to capture. It lists them now, and H-002 is narrowed. Shopify's Help Center page on business entities, not read before, says who verifies an entity and what changes with the store's country, so H-007's second step is narrowed.
@@ -207,3 +208,7 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 - **(e)'s four questions made four points,** as the brief asks. Shopify defines a market by ten things, from conditions over a set of customers to its sales channels, and its absences rule out three more (a city, a storefront, other groups of customers).
 - **"What limits a market" took both how many a store can hold and the rules on what one may hold,** such as a country in more than one market, or a primary market of one country. Both bear on the root decision; the question now names both.
 - **Shopify's backup region "isn't a market",** in its own words, so its ten statements failed the role test under (e). They are kept in the point's note.
+
+**What WooCommerce's audit taught:**
+- **A held page was taken for unheld.** WordPress.com's Terms, which name WooCommerce's contracting entity, are held whole by the raw fetch in three runs. The browser was refused, and `method/held_index.py` judged the capture by the browser's status alone, so the auditor read them as unreadable. The tool now lists the raw body as readable, and the auditor reads the Terms for S02-WC-G01.
+- **A slip of the coordinator's:** a message to the auditor named a commit from memory, not from git; it was corrected in the next message. Commits are named only from `git rev-parse`.
