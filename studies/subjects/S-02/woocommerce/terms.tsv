@@ -1,1 +1,31 @@
 term	translation	definition	cite_ids
+Store Address		This is where your business is located. Tax rates and shipping rates will use this address.	S02-WC-C256;S02-WC-C110
+Store address		This is where you set your business’s physical address — the location where you are based as a seller.	S02-WC-C216
+Country / State		The country and state or province, if any, in which your business is located.	S02-WC-C135
+base country			S02-WC-C150;S02-WC-C125
+store country		The store country comes from WooCommerce > Settings > General > Store Address.	S02-WC-C139
+primary tax location		For a United States store, WooCommerce Tax treats the store address as the primary tax location.	S02-WC-C141;S02-WC-C140
+Business location			S02-WC-C232;S02-WC-C283
+Country where your business is based			S02-WC-C234
+account country		If you’re using WooPayments for a business, the relevant country is the one where your business is registered, not the one in which you personally live.	S02-WC-C035;S02-WC-C231
+Stripe Account Country			S02-WC-C047
+supported countries			S02-WC-C004;S02-WC-C044
+Designated Countries		We use the term “Designated Countries” to refer to Australia, Canada, Japan, Mexico, New Zealand, Russia, and all countries located in Europe.	S02-WC-C014
+Selling location(s)		This option lets you limit which countries you are willing to sell to.	S02-WC-C019;S02-WC-C217
+Shipping location(s)		Choose which countries you want to ship to, or choose to ship to all locations you sell to.	S02-WC-C020;S02-WC-C218
+Sell to specific countries			S02-WC-C197
+Shipping zones		A shipping zone is a geographic region where a certain set of shipping methods and rates apply.	S02-WC-C277;S02-WC-C116;S02-WC-C117
+Default customer location		Choose how to determine a customer’s default location. This is used help calculate default tax and shipping rates.	S02-WC-C219;S02-WC-C024
+Shop country/region		This tells the system to assume customers are in the same location as your shop.	S02-WC-C220
+Country / Region			S02-WC-C257
+address formats		These define how addresses are formatted for display in various countries.	S02-WC-C177
+country locale settings		These locales override the default country selections after a country is chosen.	S02-WC-C188;S02-WC-C190
+states			S02-WC-C205;S02-WC-C208
+Locales information			S02-WC-C209
+VAT			S02-WC-C167;S02-WC-C165
+postcode-validation-rules			S02-WC-C214
+customer currency			S02-WC-C027;S02-WC-C029
+local currency			S02-WC-C244
+Enabled currencies			S02-WC-C243
+Price rounding			S02-WC-C247
+Charm pricing		Charm pricing (also called psychological pricing) can optionally reduce the converted product price by either 0.01 or 0.05.	S02-WC-C248
