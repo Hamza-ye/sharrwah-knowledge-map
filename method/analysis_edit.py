@@ -22,6 +22,8 @@ show     prints the point's keys, what each platform does on each, its answer ro
 check    checks the rows of the points named (all the root decision's points without any), and names each key with no
          answer row, each answer row of the point with no key, and each point with no row. Exits 1 on a problem.
 notes    appends TEXT to notes-c.md under a heading for PART.
+refresh  works out again what each platform does on each key of the points named (all without any), from their
+         stored keys, as after a change to this tool.
 batch    runs the commands in FILE, one per line as they would follow RD (such as `answer S02-VP-41 'key' --cause ...`),
          under one lock, and says which lines failed.
 
@@ -29,9 +31,9 @@ Each command holds a lock on c/<RD>/ while it reads and writes; files are writte
 What each platform does on a key:
   gives       an answer row of the platform's takes the key
   lacks       an absent row of the platform's is marked as excluding the key
-  open        the platform has no answer row for the point and nothing excludes the key, or a gap row of its is
-              marked as asking for the key
-  not stated  the platform has answer rows, none takes the key, and nothing makes it open
+  open        the platform has only gap or not covered rows for the point, or a gap row of its is marked as asking
+              for the key
+  not stated  the platform has answer or absent rows, none gives or excludes the key, and nothing makes it open
 """
 import csv, fcntl, os, re, sys
 
@@ -170,8 +172,9 @@ class Subject:
                     s = "gives"
                 elif any(key in km["absent"].get(v, []) for v in mine):
                     s = "lacks"
-                elif not answers or any(key in km["open"].get(v, []) for v in mine):
-                    s = "open"
+                elif any(key in km["open"].get(v, []) for v in mine) or \
+                        not [v for v in mine if self.form(v) in ("answer", "absent")]:
+                    s = "open"                             # only gap or not covered rows, or a gap asking for it
                 else:
                     s = "not stated"
                 state[key][p] = s
@@ -480,6 +483,20 @@ def main(subj, rd, cmd, args):
                     bad += 1
         print(f"{len(args or S.points)} points checked; {bad} problems")
         sys.exit(1 if bad else 0)
+    elif cmd == "refresh":                                 # what each platform does, from the stored keys again
+        for vp in (args or S.points):
+            prow = S.point_row(vp)
+            if not prow:
+                continue
+            state, giving = S.matrix(vp, S.parse_keys(prow["keys"]))
+            for r in S.arow:
+                if r["vp_id"] == vp and r["key"] in state:
+                    st = state[r["key"]]
+                    r.update(rows=";".join(giving[r["key"]]),
+                             **{c: ";".join(p for p in PLATFORMS if st[p] == x) for c, x in
+                                (("gives", "gives"), ("lacks", "lacks"), ("open", "open"), ("not_stated", "not stated"))})
+        write(S.apath, AHEAD, S.arow)
+        print(f"refreshed: {', '.join(args or S.points)}")
     elif cmd == "batch":
         import shlex
         if len(args) != 1 or not os.path.exists(args[0]):

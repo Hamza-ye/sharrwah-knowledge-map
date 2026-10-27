@@ -562,3 +562,27 @@ The letters' rules moved to a row per point. Expense is judged per key, so a pay
   - **It refuses `D` for a platform with two answers,** and `maturity` without a marker.
   - **A `batch` command** writes a point's answers in one call, where a key a call would have passed the budget.
   - **The printer shows one platform at a time,** and each condition once per point.
+
+**Phase C's parts** (from 27 October, evening):
+
+| Part | Points | Keys | Requests | Millions |
+| --- | --- | --- | --- | --- |
+| C-RD2: what defines a market, what limits one, who creates and who changes or removes one | 4 | 43 | 24 | 4.1 |
+
+**What C-RD2 taught.**
+- **What defines a market** splits the references four ways, all `vendor choice` but one key:
+  - Salla and Zid define markets by place: a country, several, a region, a city;
+  - Shopify by conditions: places, companies, locations, channels;
+  - BigCommerce by channel and storefront, and lacks a country;
+  - WooCommerce has one store-wide list of selling locations.
+
+  The one commonality: every platform makes a default market for the store. The eleven vendor-choice keys go to the founder as one question: what may define a market in Sharrwah.
+- **What limits a market** raises five founder questions, each depending on what defines one:
+  - may a market hold more than one country;
+  - may a country, a site or a locale belong to more than one market;
+  - which settings a market of each kind may hold;
+  - may online and in-store buyers of one region take different settings.
+
+  A sixth goes to S-07: may a market hold only the countries Sharrwah serves.
+- **Who creates and who changes a market** raises none. Every key there is cheap, a screen or a permission.
+- **A tool fault, fixed:** a platform whose only row is `absent` was counted `open` on every key it didn't exclude. It now counts as `not stated` there, as the brief says. RD2's rows were refreshed (`analysis_edit.py refresh`), and their check still gives no problem. Three keys keep a cause the mechanical tests don't give, each by a reading the brief allows: Shopify's customer groups, which its absence S02-SH-N03 excludes; and two limits tied to plans, by test 4's addition.
