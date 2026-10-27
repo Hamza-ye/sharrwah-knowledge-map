@@ -1,6 +1,6 @@
 part	platform	groups	variation_points	status
 SH-1	shopify	the countries served; the store's data; a market; the buyer's address	S02-VP-03; S02-VP-19; S02-VP-27; S02-VP-69	done
-SH-2a	shopify	analytics and tracking; notifications to the merchant; store status	S02-VP-87; S02-VP-88; S02-VP-89; S02-VP-90; S02-VP-80; S02-VP-81	to run
+SH-2a	shopify	analytics and tracking; notifications to the merchant; store status	S02-VP-87; S02-VP-88; S02-VP-89; S02-VP-90; S02-VP-80; S02-VP-81	running
 SH-2b	shopify	contact information shown to buyers; locations; messages to buyers	S02-VP-79; S02-VP-78; S02-VP-82; S02-VP-83	to run
 SA-1	salla	the store's data; the store's defaults; the store's taxes; who sells to the buyer; returns and cancellations	S02-VP-19; S02-VP-18; S02-VP-16; S02-VP-63; S02-VP-64; S02-VP-65; S02-VP-66	done
 SA-2	salla	analytics and tracking; apps; notifications to the merchant; the store's address; the store's country; units and time zone	S02-VP-87; S02-VP-88; S02-VP-86; S02-VP-89; S02-VP-90; S02-VP-76; S02-VP-85; S02-VP-77	to run
@@ -14,4 +14,4 @@ WC-3	woocommerce	products; discounts and offers; storefront design; contact info
 WC-4	woocommerce	analytics and tracking; apps; messages to buyers; notifications to the merchant; privacy and consent; staff access; store status	S02-VP-87; S02-VP-88; S02-VP-86; S02-VP-82; S02-VP-83; S02-VP-89; S02-VP-90; S02-VP-75; S02-VP-84; S02-VP-71; S02-VP-72; S02-VP-80; S02-VP-81	to run
 BC-1	bigcommerce	the store's own country (who sets, checks and changes it); documents and checks; payouts; taxes on the platform's fees; the store's data; the store's defaults; the store's taxes	S02-VP-05; S02-VP-06; S02-VP-07; S02-VP-10; S02-VP-13; S02-VP-15; S02-VP-19; S02-VP-18; S02-VP-16	done
 BC-1b	bigcommerce	the pages of BC-1's gaps G04, G05, G07 and G08, and of phase A's G01 and G02, held since the render fix	S02-VP-05; S02-VP-06; S02-VP-07; S02-VP-15; S02-VP-18	done
-BC-2	bigcommerce	contact information shown to buyers; market selection; returns and cancellations; staff access; the buyer's address; who sells to the buyer	S02-VP-79; S02-VP-73; S02-VP-74; S02-VP-65; S02-VP-66; S02-VP-71; S02-VP-72; S02-VP-69; S02-VP-63; S02-VP-64	running
+BC-2	bigcommerce	contact information shown to buyers; market selection; returns and cancellations; staff access; the buyer's address; who sells to the buyer	S02-VP-79; S02-VP-73; S02-VP-74; S02-VP-65; S02-VP-66; S02-VP-71; S02-VP-72; S02-VP-69; S02-VP-63; S02-VP-64	done

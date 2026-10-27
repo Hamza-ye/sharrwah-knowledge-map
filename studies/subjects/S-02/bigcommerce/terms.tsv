@@ -44,3 +44,7 @@ hosting region (the region your store should be hosted)			S02-BC-C345;S02-BC-C34
 standard formats (Set standard formats for [country])			S02-BC-C363;S02-BC-C364
 region (your store’s plan and region)			S02-BC-C353
 Issuing Country (of the VAT number)			S02-BC-C352
+storefront selector			S02-BC-C412;S02-BC-C413
+Use global (a storefront's setting in Channel Manager)			S02-BC-C402;S02-BC-C392
+origin channel (of a customer account)			S02-BC-C421
+Allow global logins (allow_global_login)			S02-BC-C421;S02-BC-C422
