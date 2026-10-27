@@ -11,6 +11,9 @@
 # Prints "found", "found (<how>)" or "not found", with the share of the text's six-word runs the source holds.
 # --batch reads FILE's lines, each SOURCE<tab>LOCATOR<tab>TEXT, and tests them all in one process, reading each
 # source once: much faster for several quotes from one large file.
+#   python3 -I method/quote_check.py --text SOURCE [LOCATOR] [CAPTURE_RUN ...]
+# prints the source's text with its markup removed, as the checker matches quotes against it: a page held only as
+# raw HTML reads as text, so it costs a reader far less than the HTML.
 import csv, html, io, json, os, re, subprocess, sys, unicodedata
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
@@ -207,8 +210,23 @@ class Sources:
 
 
 if __name__ == "__main__":
+    if len(sys.argv) >= 3 and sys.argv[1] == "--text":
+        src, loc = sys.argv[2], (sys.argv[3] if len(sys.argv) > 3 and not os.path.isdir(sys.argv[3]) else "")
+        caps = [a for a in sys.argv[3:] if os.path.isdir(a)]
+        here = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        S = Sources({"observed-sh": "/home/user/observed-sh", "observed-sa": "/home/user/observed-sa",
+                     "woocommerce-11.2.1": "/home/user/woocommerce-release/11.2.1/woocommerce",
+                     "sharrwah-knowledge-map": here}, caps)
+        texts, why = (S.web_texts(src) if re.match(r"^https?://", src) else S.local_texts(src, loc))
+        if texts is None:
+            sys.exit(f"not readable: {why}")
+        raw = texts[0]
+        txt = html_text(raw) if re.search(r"(?i)<(html|body|div|p|span)\b", raw) else raw
+        print(re.sub(r"[ \t]+", " ", re.sub(r"\n\s*\n+", "\n", txt)).strip())
+        sys.exit(0)
     if len(sys.argv) < 4 and not (len(sys.argv) >= 3 and sys.argv[1] == "--batch"):
-        sys.exit("usage: quote_check.py SOURCE LOCATOR TEXT [CAPTURE_RUN ...]; or --batch FILE [CAPTURE_RUN ...]")
+        sys.exit("usage: quote_check.py SOURCE LOCATOR TEXT [CAPTURE_RUN ...]; or --batch FILE [CAPTURE_RUN ...]; "
+                 "or --text SOURCE [LOCATOR] [CAPTURE_RUN ...]")
     here = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     roots = {"observed-sh": os.environ.get("OBSERVED_SH", "/home/user/observed-sh"),
              "observed-sa": os.environ.get("OBSERVED_SA", "/home/user/observed-sa"),

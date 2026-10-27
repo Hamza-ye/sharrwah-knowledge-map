@@ -20,7 +20,7 @@
 | `seed_subject.py` | Copies what is already recorded for a subject's concerns, in the concern map and in earlier subjects, into the subject's folder for its phase A agents (Stage 4, "from what is recorded"). |
 | `schema_type.py` | Prints a GraphQL type in full from a schema the observed repositories hold, with the citation a quote from it takes. |
 | `held_index.py` | What observed-sa, observed-sh and this repository's capture runs hold, by address, and in what readable form. |
-| `quote_check.py` | Is a quote found, word for word, in its cited source? Shared by the checkers, and run alone to test a statement or a quote before it is written. |
+| `quote_check.py` | Is a quote found, word for word, in its cited source? Shared by the checkers, and run alone to test a statement or a quote before it is written, a batch of them at once, or to print a source's text as the checker sees it. |
 | `source_kinds.py` | The kind of a cited source, assigned by rule (`PLAN.md`, section 6, the test form). |
 | `warc_text.py` | Prints one record of a fetch archive held in git. |
 | `corpus_search.py` | Searches a platform's held text in every language it holds, for a claim of absence (`PLAN.md`, section 6). |
