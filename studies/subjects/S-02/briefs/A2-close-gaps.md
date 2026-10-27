@@ -48,7 +48,7 @@ Leave a `gap` row whose gaps are routed to a capture request (`who_can` `capture
 
    A new gap takes `who_can` `founder`, and its `route` says what would close it: a page, an observation of the admin, or a question to the platform. The coordinator decides whether it becomes a capture request.
 5. **A `page not read` gap whose pages you have read doesn't remain:** record what the pages state, or a new `searched, not found` gap in its place.
-6. **Leads.** Read each lead the message names. Record what it states as statements. Give it an `a2.tsv` row where it answers a point, and otherwise list it in `notes.md`. Where it bears on a gap routed to a capture request, name that request in the statement's `note`, so the coordinator can narrow it.
+6. **Leads.** Read each lead the message names. Record what it states as statements. Give it an `a2.tsv` row where it answers a point. Otherwise, list it in `notes.md`, and give its statements and any gap you record for it a row whose `vp_id` is `none`. A gap under (h), which has no variation point, takes that row too. Where it bears on a gap routed to a capture request, name that request in the statement's `note`, so the coordinator can narrow it.
 7. **Don't change existing rows,** with one exception. Phase A's rule for (h) applies to what you add: an existing (h) statement whose arrangement one of your new statements describes takes its `stmt_id` in `conditions`, for statements under (a) to (f) only. If that column is `none stated`, the ids replace it.
 8. **Write as you go.** Write each point's row in `a2.tsv` as soon as its group is settled, so that if you are stopped, the next part continues from your files.
 
@@ -56,7 +56,7 @@ Leave a `gap` row whose gaps are routed to a capture request (`who_can` `capture
 
 - **In your platform's phase A files:** the new statements, citations, terms, absences and gaps, appended.
 - **`a2.tsv`:** one row per variation point you worked on. It is tab-separated, with a header row and no quoting. If it exists, append to it. Columns, each list `;`-separated:
-  - `vp_id`;
+  - `vp_id`, or `none` for a lead's statements, or a gap under (h), that answer no variation point;
   - `stmt_ids`: the statements you added for it;
   - `gap_ids`: the gaps that remain for it, the ones you recorded among them;
   - `absence_ids`: the absences you recorded for it;

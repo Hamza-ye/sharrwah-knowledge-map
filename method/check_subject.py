@@ -577,7 +577,8 @@ for plat in PLATFORMS:
     a2 = read(os.path.join(subj, plat, "a2.tsv"), f"{plat}/a2.tsv")
     later = read_later(plat)
     for r in a2 or []:
-        if vp and r["vp_id"] not in vp:            # checked where the subject's variation points are present
+        # a row whose vp_id is `none` holds a lead's statements, or a gap under (h), that answer no variation point
+        if vp and r["vp_id"] != "none" and r["vp_id"] not in vp:   # checked where variation points are present
             err(f"{plat}/a2.tsv", r["vp_id"], "not a variation point")
         for s in ids(r["stmt_ids"]):
             if s not in stmts:
