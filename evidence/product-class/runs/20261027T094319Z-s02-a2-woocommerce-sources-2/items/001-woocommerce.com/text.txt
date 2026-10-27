@@ -1,0 +1,244 @@
+___
+Skip to navigation
+Skip to content
+USD
+Change site currency USD selected
+Develop on Woo
+Hire an expert
+Get support
+Sell
+Click to show 12 more items
+Extensions
+Click to show 18 more items
+Resources
+Click to show 23 more items
+Enterprise ecommerce
+Log in
+Get started
+WooCommerce
+Getting started
+Migrating to WooCommerce
+Products
+Expand
+Taxes
+Shipping
+Expand
+Payments
+Orders
+Data and reporting
+Customers
+Marketing
+Site administration
+Expand
+Store design
+Expand
+Mobile App
+Expand
+Get help
+Expand
+Documentation / WooCommerce / Getting started / WooCommerce Setup
+WooCommerce Setup
+Introduction
+
+Having a customizable ecommerce platform means that there are a lot of available settings to consider and adjust to fit your vision. The Onboarding Wizard and Setup Checklist take you through all the necessary initial steps to set up your store and get it ready to start selling!
+
+Right after activating WooCommerce, you are taken to our Onboarding Wizard. The steps here will let you fill in the most important details about your store. Details like where your store is based, what industry you are in, what type of products you sell, etc…
+
+Once you’ve gone through the onboarding wizard, you’ll see a follow-up checklist that helps make sure all aspects of your store are ready to start bringing in customers and taking orders.
+
+Onboarding Wizard
+Welcome to Woo!
+
+After activating WooCommerce, select Set up my store to begin the guided setup. You can also skip guided setup and return to it later.
+
+Which one of these best describes you?
+
+Choose the option that best matches your commerce journey: starting a business, already selling, or setting up a store for a client.
+
+Tell us a bit about your store
+
+Enter your store name, choose the type of products or services you plan to sell, confirm your store location, and add the store email address. You can change these details later in WooCommerce settings.
+
+Get a boost with our Free Features
+
+WooCommerce may recommend free features based on your store details, such as payments, shipping, tax, marketing, and security tools. You can continue with the selected features, clear selections you do not want, or skip this optional step.
+
+Jetpack Connection
+
+Some optional features use a WordPress.com connection through Jetpack. If you choose those features, follow the WordPress.com connection flow. If you skip the optional features, you may not see this step.
+
+Let’s Roll!
+
+After the wizard finishes, WooCommerce takes you to the Home screen and displays the setup checklist.
+
+Skip Setup
+
+If you select Skip guided setup from the Welcome screen, WooCommerce takes you to the setup checklist. You can return to the wizard later from the Help tab on supported WooCommerce pages.
+
+Store Setup Checklist
+
+Once you’ve finished onboarding, the setup checklist helps you complete the main tasks before launching your store.
+
+The checklist starts with the core setup tasks in this order. Depending on your store details and enabled features, the Select your shipping options task can also appear before Launch your store.
+
+Add your products
+Set up payments
+Customize your store
+Collect sales tax
+Select your shipping options, when shown
+Launch your store
+What each setup task should leave ready
+
+The checklist is a guide to the decisions your store needs before launch. You can defer optional recommendations, but complete the task that matches the outcome you need.
+
+Add your products: At least one product has the correct name, description, price, inventory settings, and catalog visibility.
+Set up payments: A payment method is connected and tested, including the customer experience and order status after payment.
+Customize your store: The theme, homepage, navigation, and key store pages present the intended customer experience.
+Collect sales tax: Your tax approach is selected and the required settings or tax service connection is configured.
+Select your shipping options: Your store location, shipping destinations, zones, and methods produce the rates customers should see.
+Launch your store: You have completed a test order, confirmed payment and email notifications, and decided whether the store should remain in Coming soon mode.
+
+You can return to the checklist from Accessing the Onboarding Wizard and Setup Checklist when you are ready to complete a deferred task.
+
+Add your products
+
+The Add your products task opens a product type picker. Choose the product type that fits what you sell, such as a physical, variable, or grouped product, or select View more product types for additional options.
+
+You can also import products from a CSV file. See the documentation on the built-in Product CSV Importer and Exporter for details, or review Adding and Managing Products before creating products manually.
+
+Set up payments
+
+The Set up payments task opens WooCommerce > Settings > Payments, where you can review payment providers available for your store country, install a provider, or enable offline payment methods.
+
+Payment provider availability varies by country and by the information you entered during setup. Some providers guide you through account creation, authentication, or additional setup before you can accept payments.
+
+Customize your store
+
+The Customize your store task opens a simplified design screen with options to start designing in the site editor or browse themes. The previous multi-step Customize Your Store flow has been removed from this documentation because it is no longer part of the current onboarding experience.
+
+Collect sales tax
+
+The Collect sales tax task lets you choose an automated tax partner when available, set up taxes manually, or mark that you do not charge sales tax.
+
+If you choose an automated tax option, WooCommerce guides you through installing, connecting, or enabling any required service. If you choose to set up tax rates manually, WooCommerce takes you to the tax settings. See Setting up taxes in WooCommerce for more information.
+
+Select your shipping options
+
+This task appears when WooCommerce needs more information about where you ship. Use it to set your store location, choose where you’ll ship, and add or review shipping zones and shipping methods before launching your store.
+
+Launch your store
+
+Use the Launch your store task when you’re ready to make your store public. This task helps you preview your store, review essential setup tasks, and turn off Coming soon mode.
+
+Accessing the Onboarding Wizard and Setup Checklist
+
+If you’d like to return to the onboarding wizard or restore a dismissed setup checklist, use the contextual Help tab on a supported WooCommerce admin page.
+
+Go to a WooCommerce page that shows the contextual Help tab, such as WooCommerce > Status.
+Select the Help menu to open it.
+In the Help menu, select Setup wizard from the options on the left.
+Select Setup wizard to re-enter the wizard, or use the available buttons to enable or disable the task lists.
+Questions and support
+
+Do you still have questions and need assistance? 
+
+This documentation is about the free, core WooCommerce plugin, for which support is provided in our community forums on WordPress.org. By searching this forum, you’ll often find that your question has been asked and answered before.
+
+If you haven’t created a WordPress.org account to use the forums, here’s how.
+
+If you’re looking to extend the core functionality shown here, we recommend reviewing available extensions in the WooCommerce Marketplace.
+Need ongoing advanced support or a customization built for WooCommerce? Hire a Woo Agency Partner.
+Are you a developer building your own WooCommerce integration or extension? Check our Developer Resources.
+
+If you weren’t able to find the information you need, please use the feedback thumbs below to let us know.
+
+Was this guide helpful for you?
+ON THIS PAGE
+Introduction
+Onboarding Wizard
+Welcome to Woo!
+Which one of these best describes you?
+Tell us a bit about your store
+Get a boost with our Free Features
+Jetpack Connection
+Let's Roll!
+Skip Setup
+Store Setup Checklist
+What each setup task should leave ready
+Add your products
+Set up payments
+Customize your store
+Collect sales tax
+Select your shipping options
+Launch your store
+Accessing the Onboarding Wizard and Setup Checklist
+Questions and support
+30-day money-back guarantee
+Support teams across the world
+Safe and secure online payments
+Sell
+WooCommerce
+WooCommerce pricing
+Payments
+No-code customization
+Marketing
+Checkout
+Shipping
+Mobile app
+Enterprise ecommerce
+Marketplace
+WooCommerce extensions
+WooCommerce themes
+New
+Essentials
+Collections
+Developed by Woo
+Build
+Woo for developers
+Developer resources
+Become a Woo agency
+Become a Marketplace partner
+Become an affiliate
+Resources
+Blog
+Documentation
+WooCommerce site examples
+Product updates
+Email newsletter
+Support
+Feature requests
+WooCommerce hosting
+Hire an agency
+Participate in customer research
+Accessibility
+Support forums
+Company
+About
+Press
+Download WooCommerce free
+Join the Woo community
+Woo trademark guidelines
+Brand and logo guidelines
+Do not sell or share my personal information
+WooCommerce Support Policy
+Refund Policy
+Contact us
+Follow us on Facebook
+Follow us on X
+Follow us on Instagram
+Follow us on LinkedIn
+USD
+Change site currency USD selected
+Terms of Service
+Privacy Policy
+Privacy Notice for California Users
+
+© WooCommerce, Inc. 2026
+
+AN
+AUTOMATTIC
+CONTRAPTION
+Use of your personal data
+We and our partners process your personal data (such as browsing data, IP Addresses, cookie information, and other unique identifiers) based on your consent and/or our legitimate interest to optimize our website, marketing activities, and your user experience.
+Customize
+Accept all

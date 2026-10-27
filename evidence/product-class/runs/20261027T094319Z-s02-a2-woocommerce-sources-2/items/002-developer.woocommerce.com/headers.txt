@@ -1,0 +1,14 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+server: nginx
+date: Tue, 27 Oct 2026 09:43:22 GMT
+content-type: text/html; charset=UTF-8
+vary: Accept-Encoding, accept, content-type
+content-encoding: br
+cache-control: max-age=300, must-revalidate
+x-rq: dca5 0 40 9980
+accept-ranges: bytes
+x-cache: HIT
+x-remembering: Eric Binnion <https://friendsofericbinnion.wordpress.com/>
+

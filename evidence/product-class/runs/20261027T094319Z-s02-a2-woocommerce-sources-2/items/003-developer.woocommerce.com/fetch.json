@@ -1,0 +1,18 @@
+{
+ "n": 3,
+ "url": "https://developer.woocommerce.com/docs/block-development/extensible-blocks/cart-and-checkout-blocks/additional-checkout-fields/",
+ "dir": "items/003-developer.woocommerce.com",
+ "fetched_at": "2026-10-27T09:43:20Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://developer.woocommerce.com/docs/block-development/extensible-blocks/cart-and-checkout-blocks/additional-checkout-fields/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 29742,
+ "cited_in": [
+  "S-02 A2 WC-2"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "59e93c780be4aa39409f189d8d2ac9e3ffec07eb62874120724f4491a0d15deb",
+ "raw_ext": "html"
+}
