@@ -780,3 +780,91 @@ Placed: S02-WC-246 joined S02-V-212 (S02-VP-17) and S02-V-217 (S02-VP-18), and i
 
 - S02-ZD-179 (c): They quote the Saudi Terms that zid.eg's Terms page holds in its raw HTML. The page's scripts replace them with the Terms of شركة زد مصر, under Egyptian law, so the page doesn't show these words (`method-report.md`, section 9). The statements recorded from the page as shown take their place.
 - S02-ZD-180 (c): They quote the Saudi Terms that zid.eg's Terms page holds in its raw HTML. The page's scripts replace them with the Terms of شركة زد مصر, under Egyptian law, so the page doesn't show these words (`method-report.md`, section 9). The statements recorded from the page as shown take their place.
+
+### Correction: S02-WC-253 (woocommerce, (c))
+
+S02-WC-253, noted above as a candidate for a new point, is placed instead: it joined S02-V-192 (S02-VP-09, the user's country of residence). Part RD1-4 read the laws a merchant must comply with under the terms as the law that applies (S02-SA-209 under S02-VP-09), and Zid's S02-ZD-220 below is read the same way; the export laws on technical data 'exported from the United States or the country in which you reside' are read so too (my reading, marked in the row). Its note above stays, and it is not a candidate.
+
+### Place tasks: zid (c)
+
+Placed: S02-ZD-178 joined S02-V-187 (S02-VP-17, the business's registered country: 'أن تكون شركة أو مؤسسة مسجّلة في المملكة العربية السعودية'; my translation: to be a company or establishment registered in Saudi Arabia, for Zid financing); S02-ZD-210 joined S02-V-185 (S02-VP-17, the merchant's place: 'تمويل زد متاح لتجار المملكة العربية السعودية'; my translation: Zid financing is available to the merchants of Saudi Arabia); S02-ZD-220 joined S02-V-171 (S02-VP-09, every store: 'ينبغي على كافة المتاجر والتُجّار الالتزام بكافة القوانين المعمول بها'; my translation: all stores and merchants must comply with all the laws in force), read as the law that applies, as S02-SA-209; S02-ZD-218 is a new row under S02-VP-09, S02-V-297, the store's place ('للمتاجر السعودية'; my translation: for Saudi stores), the Ministry of Commerce's regulations on e-commerce terms read as the law that applies (marked). Noted:
+- S02-ZD-174 (c): deposits to the bank account 'في السعودية' (my translation: in Saudi Arabia) on Sundays, Tuesdays and Thursdays, with a 3-riyal fee: its words, identifier and scope name Saudi Arabia without saying whose country (rule 2), as part RD1-4 noted S02-ZD-112
+- S02-ZD-175 (c): deposits 'في الكويت' (my translation: in Kuwait) daily, with no fee: as S02-ZD-174
+- S02-ZD-176 (c): Zid's warranty program 'حاليا فقط في السعودية' (my translation: currently only in Saudi Arabia): its words and scope don't say whose country (rule 2)
+- S02-ZD-225 (c): stopping the invoices without another accounting system 'سيعرضك لغرامات وزارة التجارة' (my translation: will expose you to the Ministry of Commerce's fines): names no decider (rule 4)
+- S02-ZD-310 (c): apps must 'Disclose applicable eligibility, country, contract or verification prerequisites': a rule for apps, naming no thing bound to the store's country nor a decider (rule 2)
+- S02-ZD-347 (c): the plans' monthly prices on zid.sa's pricing page (scope 'zid.sa pricing page'): its decider is the site, outside rule 1's table, and a scope that names a site isn't every store (rule 4); in S02-VP-14's note
+- S02-ZD-348 (c): Rise's price on zid.sa's pricing page: as S02-ZD-347
+- S02-ZD-349 (c): Growth's price on zid.sa's pricing page: as S02-ZD-347
+- S02-ZD-350 (c): zid.eg's plans, 'البداية مجاناً مدى الحياة' (my translation: Starter free for life; scope 'zid.eg pricing page (زد مصر)'): as S02-ZD-347
+- S02-ZD-351 (c): Rise's price in Egyptian pounds on zid.eg's pricing page: as S02-ZD-347
+- S02-ZD-352 (c): Growth's price in Egyptian pounds on zid.eg's pricing page: as S02-ZD-347
+- S02-ZD-353 (c): Professional's custom price on both sites' pricing pages: as S02-ZD-347
+- S02-ZD-354 (c): zid.sa's footer, 'Al-Qudrah Al-Taqniyah for Technology and Communication Company', its registration and VAT numbers: its words don't say the merchant contracts with it, nor what decides it (rule 4), as part RD1-4 noted S02-ZD-062
+- S02-ZD-355 (c): zid.eg's footer, the same company with another registration and tax number: as S02-ZD-354
+- S02-ZD-367 (c): zid.eg's Terms, 'اتفاقية ملزمة قانونياً بينك ... وبين شركة زد مصر' (my translation: a legally binding agreement between you ... and Zid Egypt), scope 'www.zid.eg': its decider is the site, outside rule 1's table (rule 4); in S02-VP-08's note
+- S02-ZD-368 (c): 'ومن يصل إلى المنصة من خارج مصر يتحمل مسؤولية الامتثال للقوانين المحلية المعمول بها' (my translation: whoever reaches the platform from outside Egypt bears responsibility for complying with the applicable local laws): the place the platform is reached from, not said to be where the merchant is based (rule 1); in S02-VP-09's note
+- S02-ZD-369 (c): Zid Egypt's plans, 'منشورة على المنصة' (my translation: published on the platform), scope 'www.zid.eg': its decider is the site (rule 4); in S02-VP-14's note
+- S02-ZD-370 (c): the payment methods zid.eg's Terms accept (Mastercard, Visa, Fawry and others), scope 'www.zid.eg': its decider is the site (rule 4); in S02-VP-14's note
+- S02-ZD-371 (c): payments 'بالجنيه المصري ... وتخضع لضريبة القيمة المضافة' (my translation: in Egyptian pounds ... and subject to VAT), scope 'www.zid.eg': its decider is the site (rule 4); in S02-VP-14's and S02-VP-15's notes
+- S02-ZD-372 (c): consumers' 14-day right to withdraw from a digital subscription under Egypt's consumer protection law, scope 'www.zid.eg': its decider is the site (rule 4); in S02-VP-09's note
+- S02-ZD-373 (c): the merchant's responsibility for 'الامتثال لجميع القوانين المصرية المعمول بها الحاكمة لنشاطك التجاري' (my translation: compliance with all applicable Egyptian laws governing your business activity), scope 'www.zid.eg': its decider is the site (rule 4); in S02-VP-09's note
+- S02-ZD-374 (c): the merchant's obligations to its customers 'وفقاً للقانون المصري' (my translation: under Egyptian law), scope 'www.zid.eg': as S02-ZD-373
+- S02-ZD-375 (c): Zid Egypt 'تعمل بوصفها مزوّداً لمنصة تقنية فحسب' (my translation: acts only as a provider of a technical platform), not a party to the merchant's sales: names no decider (rule 4)
+- S02-ZD-376 (c): use of the platform only for lawful business 'وفقاً لهذه الشروط والقانون المصري المعمول به' (my translation: under these terms and the applicable Egyptian law), scope 'www.zid.eg': as S02-ZD-373
+- S02-ZD-377 (c): an amicable settlement of disputes for at least 15 days: names no decider (rule 4)
+- S02-ZD-378 (c): consumers' right under Egyptian law to complain to the Consumer Protection Agency, scope 'www.zid.eg': its decider is the site (rule 4); in S02-VP-09's note
+- S02-ZD-379 (c): disputes referred to 'المحاكم المصرية المختصة' (my translation: the competent Egyptian courts), scope 'www.zid.eg': as S02-ZD-378
+- S02-ZD-380 (c): 'تخضع هذه الشروط وتُفسَّر وفقاً لقوانين جمهورية مصر العربية' (my translation: these terms are governed and construed by the laws of Egypt), scope 'www.zid.eg': as S02-ZD-378
+- S02-ZD-381 (c): the Egyptian courts' exclusive jurisdiction, scope 'www.zid.eg': as S02-ZD-378
+- S02-ZD-382 (c): the entire agreement 'بينك وبين زد مصر' (my translation: between you and Zid Egypt), scope 'www.zid.eg': its decider is the site (rule 4); in S02-VP-08's note
+- S02-ZD-383 (c): zid.eg's Privacy Policy names 'زد مصر' (Zid Egypt) as responsible for processing your personal data, scope 'www.zid.eg': its decider is the site (rule 4); in S02-VP-19's note
+- S02-ZD-384 (c): zid.eg's Privacy Policy issued under Egypt's Personal Data Protection Law No. 151 of 2020, scope 'www.zid.eg': as S02-ZD-383
+- S02-ZD-385 (c): some personal data 'قد يتم نقل ... ومعالجتها في دول خارج مصر' (my translation: may be transferred and processed in countries outside Egypt), scope 'www.zid.eg': as S02-ZD-383
+- S02-ZD-421 (c): Zid Syria's 'No, there's no commission on your sales' (scope 'zid.sa/en/syria (Zid Syria)'): its decider is the site (rule 4); in S02-VP-14's note
+
+### Place tasks: zid (c), continued
+
+Noted:
+- S02-ZD-389 (c): Rise's price in Egyptian pounds on zid.sa's page for Egypt (scope 'zid.sa/en/egypt: Rise'): its decider is the page, whose country isn't said to be the merchant's (rule 2), and a scope that names a site isn't every store (rule 4); in S02-VP-14's note
+- S02-ZD-390 (c): Growth's price on the same page: as S02-ZD-389
+- S02-ZD-391 (c): Rise's price in dollars on zid.sa's page for Syria: as S02-ZD-389
+- S02-ZD-392 (c): Growth's price on the same page: as S02-ZD-389
+- S02-ZD-393 (c): Rise's price in riyals on zid.sa's pages for the UAE, Kuwait and Oman: as S02-ZD-389
+- S02-ZD-394 (c): Growth's price on the same pages: as S02-ZD-389
+- S02-ZD-396 (c): '3 SAR per deposit, but Riyad Bank users get a free pass!': its decider is the merchant's bank (rule 4); in S02-VP-13's note
+- S02-ZD-397 (c): 'All banks in Saudi Arabia!': names the banks, not a decider (rule 4), as part RD1-4 noted S02-ZD-065
+- S02-ZD-399 (c): currencies 'Activate through your store settings': the merchant's choice, not a decider from rule 1's table (rule 4)
+- S02-ZD-400 (c): 'Every 2-3 days, minimum 100 SAR.': names no decider (rule 4); its scope's 'For our Saudi Superstars' doesn't say they are the merchants, as part RD1-4 noted S02-ZD-112
+- S02-ZD-401 (c): 'We'll verify your info within two business days.': names no decider (rule 4); its scope as S02-ZD-400's
+- S02-ZD-402 (c): 'Just the operational fees based on your plan and payment network.': its deciders are the plan and the payment network (rule 4); in S02-VP-14's note
+- S02-ZD-403 (c): 'All banks in Kuwait.': names the banks, not a decider (rule 4)
+- S02-ZD-404 (c): currencies 'Set it up in your store settings.': as S02-ZD-399
+- S02-ZD-405 (c): fees 'based on the network and your plan': as S02-ZD-402
+- S02-ZD-406 (c): 'operational fees based on your chosen plan': as S02-ZD-402
+- S02-ZD-407 (c): 'Daily (Sunday to Thursday), minimum 1 KWD.': names no decider (rule 4); its scope's 'For our Kuwait Crew' doesn't say they are the merchants, as part RD1-4 noted S02-ZD-112
+- S02-ZD-409 (c): a 3-riyal deposit fee, 'عدا بنك الرياض معفي من رسوم الإيداع' (my translation: except Riyad Bank, exempt from the deposit fee): as S02-ZD-396
+- S02-ZD-410 (c): 'جميع البنوك في المملكة العربية السعودية.' (my translation: all banks in Saudi Arabia): as S02-ZD-397
+- S02-ZD-412 (c): currencies 'يتم تفعيلها من خلال إعدادات المتجر' (my translation: activated through the store's settings): as S02-ZD-399
+- S02-ZD-413 (c): collection 'خلال ٢-٣ أيام، والحد الأدنى ... 100 ريال' (my translation: within 2-3 days, the minimum 100 riyals): as S02-ZD-400
+- S02-ZD-414 (c): 'يتم التأكد من صحة البيانات المرفوعة خلال يومي عمل' (my translation: the uploaded data is verified within two working days): as S02-ZD-401
+- S02-ZD-415 (c): 'جميع البنوك في دولة الكويت.' (my translation: all banks in Kuwait): as S02-ZD-397
+- S02-ZD-416 (c): Kuwait's payment networks, 'كيه نت٫ آبل باي، فيزا، أمريكان اكسبريس': names no decider (rule 4), and its identifier's Kuwait doesn't say whose country (rule 2), as part RD1-4 noted S02-ZD-067
+- S02-ZD-417 (c): fees 'بحسب الشبكة المستخدمة في عملية الدفع وباقة المتجر' (my translation: by the network used for the payment and the store's plan): as S02-ZD-402
+- S02-ZD-419 (c): collection 'بشكل يومي "من الأحد إلى الخميس"' (my translation: daily, Sunday to Thursday), minimum 1 Kuwaiti dinar: as S02-ZD-407
+- S02-ZD-420 (c): Zid Syria's 'shipping and delivery solutions suited to the Syrian market', with delivery 'inside Syria': the market orders go to and the site (scope 'zid.sa/en/syria (Zid Syria)'), not the store's own country (rule 1, rule 4); in S02-VP-17's note
+- S02-ZD-422 (c): Zid Syria's payments 'through Bemira for e-payments': its decider is the site (rule 4); in S02-VP-12's note
+- S02-ZD-423 (c): Zid Syria: 'a commercial registration isn't required to start and open your online store': its decider is the site (rule 4); in S02-VP-10's note
+- S02-ZD-436 (c): shipping 'يبدأ من 11 ريال للشحنة' (my translation: starts from 11 riyals per shipment) for Rise, on zid.sa's pages for the UAE, Kuwait and Oman: its deciders are the plan and the page (rule 4); in S02-VP-17's note
+- S02-ZD-440 (c): shipping from 10.5 riyals for Growth on the same pages: as S02-ZD-436
+- S02-ZD-443 (c): shipping from 8.5 riyals for Professional on the same pages: as S02-ZD-436
+- S02-ZD-445 (c): 'شبكة شركاء موثوقين في المدفوعات والخدمات اللوجستية والتكنولوجيا' (my translation: a network of trusted partners in payments, logistics and technology): names no decider (rule 4), and its scope, 'الإمارات; عمان' (the UAE; Oman), doesn't say whose countries (rule 2)
+- S02-ZD-446 (c): the same for Egypt and Kuwait (scope 'مصر; الكويت'): as S02-ZD-445
+
+### Candidates for a new point (part RD1-S3)
+
+None. S02-WC-253, first noted as one (X: the export laws on technical data; question: what decides it), was placed under S02-VP-09 instead (the correction above).
+
+### Searches for earlier platforms' rows (part RD1-S3)
+
+None: the second pass raises no point, and every row written here is of Zid, WooCommerce or BigCommerce, under (c).
