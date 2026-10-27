@@ -408,6 +408,7 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 | --- | --- | --- | --- | --- | --- |
 | RD1-S2: (c), Shopify and Salla | 83 | 138 | 48 | 7.5 | 2.9 |
 | RD3-S5: (f) and (g), BigCommerce | 72 | 157 | 52 | 7.8 | 3.0 |
+| RD3-S1: (f) and (g), Shopify | 66 | 487 | 71 | 14.7 | 6.9 |
 
 **What the two pilots taught:**
 - **The tool and the order tripled the rate:** about three statements a request, against about one in the dry run, at about 0.05 million a statement. At that rate the second pass comes to about 115 million in all, inside the frame's 100 to 160.
