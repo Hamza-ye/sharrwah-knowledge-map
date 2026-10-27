@@ -143,3 +143,76 @@ Held copies are in `evidence/product-class/runs/`, at 378311abab45103381b1e9d5ce
 #### Check on a copy
 
 `python3 -I method/check_subject.py` on a copy at /tmp/claude-0/-home-user/9f45def8-b710-5f9c-84f3-6a0fa7e617c8/scratchpad/s02-a3-zid-2/check/S-02, output in /tmp/claude-0/-home-user/9f45def8-b710-5f9c-84f3-6a0fa7e617c8/scratchpad/s02-a3-zid-2/check/out (2026-10-27): no line of level error and none saying a claim is not settled; 191 statements; 317 quotes found; 17 lines of level pending capture, the live citations S02-ZD-C318 to S02-ZD-C326 and the statements S02-ZD-184 to S02-ZD-191 that cite them.
+
+## Gap-closing (phase A2)
+
+### ZD-1: S02-VP-15, S02-VP-02, S02-VP-63 to S02-VP-66, S02-VP-76 and S02-VP-85 (2026-10-27)
+
+Read under `studies/subjects/S-02/briefs/A2-close-gaps.md`. Zid's eight rows under these points in `variants.tsv` (S02-V-038, S02-V-182, S02-V-787 to S02-V-790, S02-V-800, S02-V-870) were all `not covered`, so all eight were taken. No lead was named. Earlier parts of zid: none; later parts: ZD-2, ZD-3. Each point's row is in `a2.tsv`, with the searches and documents in `read`.
+
+#### What was found, by group
+
+- **Taxes on the platform's fees (S02-VP-15):** S02-ZD-192 to S02-ZD-205 (c), citations S02-ZD-C327 to S02-ZD-C346.
+  - The Terms' subscriptions section (الاشتراكات): local tax rates may vary depending on the payment method used (S02-ZD-192); the merchant pays all taxes, VAT included (S02-ZD-193); the fees exclude national sales taxes (S02-ZD-194); Zid charges taxes with its fees to the payment method (S02-ZD-195).
+  - Direct shipping (زد شب): its 1-riyal service fee and its prices exclude VAT (S02-ZD-196, S02-ZD-197). Transfer fees on App Market and Theme Market refunds: 9 riyals including VAT for domestic transfers, 50 riyals for Gulf transfers (S02-ZD-198). The wallet's transfer fee: 9 riyals including VAT within Saudi Arabia, 50 riyals outside it (S02-ZD-199, S02-ZD-200).
+  - Zid Pay: the mada cap excludes VAT (S02-ZD-201, the Saudi contract); Zid Payments' fees by plan exclude VAT (S02-ZD-202, S02-ZD-203); VAT is the fees x 15% (S02-ZD-204, an FAQ last updated July 16, 2024); the deposit's tax invoice (S02-ZD-205).
+  - Gap S02-ZD-G08 (c, searched, not found): no document read names the tax on Zid's fees for a store by its country.
+- **The countries served (S02-VP-02):** no statement added. The countries kept out are named only in the Zid Pay sections (international sanctions, S02-ZD-109, S02-ZD-110), which the general Terms and the zid.eg Terms hold in their Zid Pay sections; the Terms' sections on accounts name no country kept out. Gap S02-ZD-G09 (d, searched, not found).
+- **Who sells to the buyer (S02-VP-63, S02-VP-64):** S02-ZD-206 to S02-ZD-211, citations S02-ZD-C347 to S02-ZD-C356.
+  - The Terms' ضوابط المتجر الإلكتروني (E-Commerce Store Regulations): every store discloses its name and address, CR and tax number (S02-ZD-206) and gives the consumer an invoice (S02-ZD-207).
+  - store-info-ksa, under السعودية: the establishment's and the company's name used in invoices (S02-ZD-208).
+  - The Terms' Mazeed section: Zid, as Mazeed, the legal representative of the seller (البائع) before other commercial parties (S02-ZD-209).
+  - Two FAQs read live: Zid Financing for Saudi companies and establishments only (S02-ZD-210), and financing on the business entity approved in Zid Pay, which cannot be updated (S02-ZD-211).
+  - Recorded in phase A and bearing on these points: S02-ZD-080 to S02-ZD-082 (c), the business details the merchant chooses, whose requirements vary by business type and country.
+  - No gap recorded.
+- **Returns and cancellations (S02-VP-65, S02-VP-66):** S02-ZD-212 to S02-ZD-222, citations S02-ZD-C357 to S02-ZD-C369, and two terms (سياسة الاستبدال والارجاع; الصفحات القانونية).
+  - legal-pages: الاعدادات > المتجر > الصفحات القانونية, where the merchant manages and customizes the legal policies, سياسة الاستبدال والارجاع among them, with each policy's content in Arabic and English (S02-ZD-212 to S02-ZD-217); a note for Saudi stores pointing to the Ministry of Commerce's rules (S02-ZD-218).
+  - The Terms: every store makes clear its exchange and return policy (S02-ZD-219) and complies with the e-commerce laws they name (S02-ZD-220).
+  - store-language: the return policy and the store's other pages are written again in English when English is activated (S02-ZD-221). List Orders: return_policy, Return policy applicable to the order (S02-ZD-222).
+  - Read and not recorded: cancel-orders (live), return-order and partial-return name no market, country or policy.
+  - No gap recorded.
+- **The store's address (S02-VP-76):** S02-ZD-223 to S02-ZD-226, citations S02-ZD-C370 to S02-ZD-C376, and S02-ZD-206.
+  - invoice-settings: the store address an invoice shows is the one in the store's basic information, an item the merchant shows or hides (S02-ZD-223); stopping Zid's invoices without another accounting system exposes the merchant to the Ministry of Commerce's fines (S02-ZD-225).
+  - List Orders: store_business_address and is_store_address_active, shown on printed invoices (S02-ZD-224).
+  - account-settings: the merchant adds an address to their own account (S02-ZD-226).
+  - Recorded in phase A: the business address in بيانات المتجر (S02-ZD-083 to S02-ZD-085) and business_location (S02-ZD-148).
+  - No gap recorded.
+- **The store's country (S02-VP-85):** S02-ZD-226 only.
+  - The matches on the store's country are statements recorded in phase A and A3: the country in store settings and its change (S02-ZD-055, S02-ZD-056, S02-ZD-173, all a;b), the store operating countries (S02-ZD-029, S02-ZD-C034) and user_profile_data.country_id (S02-ZD-149).
+  - The markets article's دولته is the customer's (S02-ZD-024); the compare-plans data's نقل متجرك is the migration of a store from another platform.
+  - S02-ZD-G01 (which setting holds the store's country; confirmed by the absence audit) remains for this point and is named in its `a2.tsv` row; no new gap.
+- **The (h) exception:**
+  - S02-ZD-130 (Rise, Zid Payments gateway) now also names S02-ZD-201 to S02-ZD-205 in `conditions`.
+  - S02-ZD-133 (تمويل زد متاح لجميع الباقات ماعدا لايت) now also names S02-ZD-210.
+  - S02-ZD-135 (no commercial registration needed to sign up) now also names S02-ZD-208.
+  - S02-ZD-100 (Invoice & Tax Settings, by plan) now also names S02-ZD-223 to S02-ZD-225.
+
+#### Documents read, in order (2026-10-27)
+
+Held copies are in `evidence/product-class/runs/`, at d061aa38ba098252411513a77655f0b5735f1490; help pages as rendered text, zid.sa and zid.eg pages as raw.html through `method/quote_check.py --text`. Item numbers are those of 20261012T045101Z-q1-zid-sources unless another run is named.
+1. In passages: the Arabic and English Terms (187, 194) on subscriptions, ضوابط المتجر الإلكتروني, زد شب, the App Market and Theme Market refunds, محفظة زد, Mazeed, the Zid Pay sections and accounts; the zid.eg Terms (20261027T065700Z-s02-a3-zid-sources item 002) on the same passages.
+2. In passages: the Zid Pay terms for Saudi Arabia (189, 195) and Kuwait (188, and 20261012T190225Z-s01-sources-zid item 001).
+3. In full: the payments pages (20261012T104936Z-s01-sources item 126, and 198).
+4. help.zid.sa. In full: legal-pages (133), invoice-settings (131), account-settings (083), return-order (150), partial-return (143). In passages: the FAQ كيف يتم تحديد رسوم العمليات؟ (117), transactions (166), refund-requests (149), deposits_zidpay (110), zid-wallet (182), zatca-integration (174), store-info-ksa (158), store-language (159), about-zid-financing (081), the FAQ on Zid Pay's requirements (20261027T065700Z-s02-a3-zid-sources item 004), the help centre's FAQ page (077: its matches on عقوبات are Amazon's and Trendyol's penalties), gcc-merchants (128), the FAQ of S02-ZD-007 (175), payment-requirements (147), markets (136).
+5. zid.sa, in passages (most matches are the footer's VAT number or زد متاحة في): partner payouts (196, on app developers' invoices; not recorded), pricing (197, and 20261027T071937Z-s02-a3-zid-sources-2 item 005), the UAE, Egypt and Syria pages (20261019T003516Z-proposals-Q6-zid items 002 and 001, and 190), zid-voice (199), paymob (20261012T104936Z-s01-sources item 125), the privacy policies (186, 193), zid.sa/llms.txt (201), the compare-plans data (185, and 20261027T071937Z-s02-a3-zid-sources-2 item 006).
+6. docs.zid.sa, in passages: list-of-orders (039), get-manager-profile (027), business (012), upload-logo-image (064), llms.txt (044, its Store Settings lines).
+7. Live, not held (checked with `method/held_index.py` first): https://zid.eg/ar/pricing/ (raw: no prices and no tax; its rendered text, like that of https://zid.sa/ar/pricing/, is only Zid's error text); https://help.zid.sa/cancel-orders/; two FAQs found in faqs-sitemap.xml, ما هي الكيانات المدعومة للحصول على التمويل (S02-ZD-C355) and هل بالامكان تغيير الكيان التجاري قبل\بعد الحصول على التمويل؟ (S02-ZD-C356); https://help.zid.sa/business-account/ (Meta's business portfolio for WhatsApp) and the FAQ شروط الإستخدام (a link to the Terms), neither recorded. All rendered through `method/capture/page_text.mjs` save zid.eg/ar/pricing/.
+8. As indexes only: https://help.zid.sa/sitemap_index.xml and the nine sitemaps it lists (post-sitemap1.xml, post-sitemap2.xml, page-sitemap.xml, faqs-sitemap.xml, tips-sitemap.xml, zid-academy-sitemap.xml, promotion-sitemap.xml, zid-faqs-sitemap.xml, category-sitemap.xml): 656 addresses, decoded and searched for slugs on each group. They list no store-information article other than store-info-ksa.
+
+#### Searches, and how they were narrowed
+
+- Only S02-VP-15's second search (`--with` the market and country words) passed its cap of 40, at 44 documents; it was rerun with `--max 44`. The others were run with `--max 100` and listed every document (at most 44).
+- No search was narrowed by its terms. Documents listed but not read, by their matches: the footer's VAT number or زد متاحة في alone; API pages whose match is an order's, customer's, coupon's, cart's, delivery option's or location's field (country_id, VAT, return policy); help pages whose match is an order status (إلغاء الطلب: credit-debit-notifications, change-order-status, orders-properties, customer-wallet, jahez, product-properties, activate-online-payments); the help centre's home and category pages, which list articles.
+- From the sitemaps, not read: هل-مزيد-متاح-لتجار-الخليج (Mazeed for Gulf merchants) and هل-يستطيع-العملاء-من-خارج-السعودية-إتم (customers outside Saudi Arabia), whose slugs name Mazeed and buyers.
+
+#### Problems with the method
+
+- Single generic words (البائع, seller, fees, رسوم) went only after `--with`, as the brief says; the Terms' passages naming البائع were found by reading the Terms around the group's other terms.
+- An Arabic term matches inside words: دولتك matched عملة دولتك and حسب دولتك, and دولته the customer's country in the markets article; the documents were settled by reading the passages.
+- The rendered text of the pricing pages of zid.sa and zid.eg is Zid's error text, and their raw HTML holds no prices, which a script loads.
+- The live pages' quotes were tested against the working copies with `method/quote_check.py`'s own `variants` and `html_text`, through a helper in the scratch folder, since `quote_check.py` finds a live URL only once it is captured; the checker shows them as pending capture.
+- The repository's HEAD moved during the run (the coordinator's checkpoints); held paths are cited at d061aa38ba098252411513a77655f0b5735f1490.
+
+#### Check on a copy
+
+`python3 -I method/check_subject.py` on a copy at /tmp/claude-0/-home-user/9f45def8-b710-5f9c-84f3-6a0fa7e617c8/scratchpad/s02-a2-zd-1/check/S-02, output in /tmp/claude-0/-home-user/9f45def8-b710-5f9c-84f3-6a0fa7e617c8/scratchpad/s02-a2-zd-1/check/out (2026-10-27): no line of level error; 226 statements; 374 quotes found; 4 lines of level pending capture, the live citations S02-ZD-C355 and S02-ZD-C356 and the statements S02-ZD-210 and S02-ZD-211 that cite them.
