@@ -112,11 +112,13 @@ The pilot's five steps, under Stage 4's changes (`PLAN.md`, Stage 4, and section
 | --- | --- |
 | Spent by 27 October, 14:25 UTC (measured): the briefs' inspections, phase A for all five platforms, phase B's first pass (146), the absence audit (66), and gap-closing (337) | 1,106 |
 | An absence audit of what gap-closing records as absent: it recorded none | 0 |
-| 1B's second pass: 1,804 tasks on its work lists, 1,642 of them statement-bullet pairs to place, most of them added by A2 and A3, against the first pass's 1,715 pairs for 146 million; and 120 rows to revisit | 100 to 160 |
+| 1B's second pass, measured: its dry run and 18 parts, which placed or noted every statement under 75 points, 904 rows | 141.5 |
+| Held evidence first, measured: four gap-closing parts that read held files before any capture request runs (A2-T, A2-SH-H, A2-SA-H, A2-SA-S), and the audit of their absences (A3-2) | 60.6 |
+| 1C's two dry runs, measured | 7.2 |
 | 1C, per root decision | 90 to 150 |
 | Inspection of the later briefs | 15 to 30 |
 | 5, the review | 40 to 80 |
-| **All of S-02, projected** | **about 1,350 to 1,530** |
+| **All of S-02, projected** | **about 1,450 to 1,550** |
 
 **Past the budget plus a quarter.** S-02 passed 875 million during gap-closing's fifth and sixth parts, on 27 October, so its cost and projection came to the founder (`PLAN.md`, section 8), at 1,220 to 1,470 million. Measured again at 10:30 UTC, it was projected at 1,300 to 1,550 million; at 14:25 UTC, with gap-closing done, at 1,350 to 1,530 million, most likely about 1,440. The work goes on.
 - **Where it went over:** phase A cost 504 million, against the 325 to 375 million this table first set for it ([`method-report.md`](method-report.md), section 4). Phase B's first pass cost 146 million, within its share. Gap-closing cost 337 million, above the 200 to 290 million first set for it. It added 1,165 statements for 121 rows, and Shopify's first part ran past its stop: 53.5 million for four rows ([`method-report.md`](method-report.md), section 9). The second pass is now set at 100 to 160 million, against 45 to 80 at first, for the 1,642 statement-bullet pairs its work lists give to place, most of them added by gap-closing and the absence audit.
@@ -125,5 +127,7 @@ The pilot's five steps, under Stage 4's changes (`PLAN.md`, Stage 4, and section
   - the coordinator captures pages and checks quotes once for every two parts, not after each, which lowers its own cost;
   - each gap-closing part counts its tool calls and stops at about 100, and a fresh agent continues from its files, since every request of a long run reads its whole context again.
 - **A higher plan:** none is needed yet. No run has been refused or slowed by a usage limit. The coordinator says so if one is.
+
+**Measured again at 19:04 UTC on 27 October:** 1,285 million spent, with the second pass's last round and phase C under way. The projection is now about 1,450 to 1,550 million. It rose because held evidence was read before the capture requests run, which cost 61 million and closed or narrowed nine gaps.
 
 The budget counts the agents. The coordinating session's own tokens are reported beside it: 441 million from 21:00 UTC on 26 October, when S-02 began, to 14:25 UTC on 27 October.

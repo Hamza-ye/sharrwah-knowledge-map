@@ -522,6 +522,15 @@ Four points now hold both `every store`, from zid.sa's own pages, and a country'
   - Shopify's permission to manage and install apps placed under apps by its own name (S02-SH-766);
   - Zid's `manage.app.market.settings` read as a permission from the page it is listed on (S02-ZD-330).
 
+
+**The second pass as a whole** (27 October, 21:00 UTC). Its dry run and 18 parts cost 141.5 million, inside the frame's 100 to 160.
+- **Where phase B now stands:** 75 variation points and 904 rows. Every statement under the three root decisions' bullets is placed or noted (`unplaced.tsv` is empty), and every revisit, reread and note task has its outcome in its ledger.
+- **The full check:** no error, 17 warnings on phase A's citations, and 12 review lines on quotes found only in a page's source.
+- **What stays open, by design:**
+  - the gaps the capture requests and the founder's questions would close;
+  - Shopify's S02-SH-G10, which narrowed G02 and gives no row of its own until the local agent's sign-up run arrives;
+  - the readings each part marked, which phase C weighs.
+
 ## 11. Phase C: its brief and its dry runs (27 October)
 
 **The first dry run** (3.4 million, 25 requests) ran the brief on six points of the three root decisions, on a copy. All six came out `vendor choice`, each with a founder item and the rules of letters A and B. The cause is the comparison, not the evidence:
