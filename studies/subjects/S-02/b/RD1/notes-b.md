@@ -691,3 +691,36 @@ This part raised no point, so it searched for no earlier platform's rows (rule 3
 ### Rechecks (part RD1-S1)
 
 Rows compared with a statement of their own platform were rechecked under rule 5: each joined statement names its row's answer in its own words or, where said, by its identifier or scope, and keeps the row's basis (S02-BC-206 and S02-BC-210 by the same key or term as S02-V-048's and S02-V-050's; S02-SA-430 by S02-SA-292's keys).
+
+### Revisit S02-V-236 (bigcommerce, S02-VP-15, taxes on the platform's fees)
+
+Replaced: `not covered` became an answer row, S02-V-236, every store, 'All fees are exclusive of all applicable governmental fees, charges, or taxes' (S02-BC-232, S02-BC-234); and a `gap` row beside it, S02-V-281, with S02-BC-G10, which asks which taxes BigCommerce adds to its fees and what decides them, which the answer doesn't give. That 'US Sales, GST, VAT' (S02-BC-234) name the taxes excluded, not a country the prices are restricted to, is my reading, as part RD1-S2 read S02-V-219.
+
+Leads placed under another point of (c), S02-VP-14 (the platform's fees), read as how BigCommerce's invoice is paid (my reading, marked in each row): S02-BC-280 is a new row, S02-V-282, the store's location ('your store is located in India, the payment must be made manually'); S02-BC-281 joined S02-V-234, the merchant's place ('Merchants in India must pay their invoice manually'), and is a new row, S02-V-283, the business's location ('If your business is located in India, you will be sent an email reminder'), one answer per decider as part RD1-4's problem 6 gives. Leads noted:
+- S02-BC-233 (c): the merchant is 'solely responsible for payment of any and all taxes assessed as a result of you opting into unified billing': names no decider, and its scope, 'United States, United Kingdom, and Canada Only', doesn't say whose countries (as part RD1-4 noted S02-BC-071, of the same terms)
+- S02-BC-278 (c): 'The methods available to pay your invoice can vary depending on your store’s plan and region': the plan is outside rule 1's table, and its words don't say the store's region is where the store is based rather than where it is hosted, which rule 1 keeps out (BigCommerce's terms hold 'infrastructure_region', 'The infrastructure region where the store is located'); in S02-VP-14's note
+- S02-BC-279 (c): 'Form 1099-K is issued by your payments provider(s)': names who issues the form, not a decider (rule 4); its scope, 'US taxes', doesn't say whose country
+- S02-BC-283 (c): a 'MAX 7' error 'when the geographic distance between your billing address and the location you are attempting to make a payment from is too great': a check on where an invoice's payment is made from, not a thing bound to the store's own country (rule 4); in S02-VP-14's note
+
+### Revisit S02-V-237 (bigcommerce, S02-VP-16, the store's taxes)
+
+Left `not covered` (rewritten with a note): no lead names a decider, and gap-closing recorded no gap and no absence for the point, so none of the brief's four replacements applies (a problem with the work list, below). Its leads noted:
+- S02-BC-247 (c): 'If you have nexus in multiple states or local jurisdictions, the additional jurisdictions need to be adjusted from within your tax provider's account dashboard': names where they are adjusted, not a decider (rule 4); its words don't say the nexus is where the store is based or registered (rule 1)
+- S02-BC-249 (c): 'Access your US 1099-K and other tax forms in your account’s portal': names where the forms are, not a decider (rule 4)
+- S02-BC-250 (c): 'Your US 1099-K and other tax forms are provided by the payment processor': names who provides them, not a decider (rule 4)
+
+### Revisit S02-V-239 (bigcommerce, S02-VP-18, the store's defaults)
+
+Replaced: `not covered` became three answer rows and a `gap` row:
+- S02-V-239, your location: 'When you first create your store, your default currency is assigned based on your location.' (S02-BC-243);
+- S02-V-284 (added), the store's default country: 'To reset values to the standard formats for your store’s default country, click Set standard formats for [country].' (S02-BC-285, S02-BC-253); that the standard formats are defaults the platform sets from the store's country is my reading, marked there;
+- S02-V-285 (added), where the store is based: 'If you create a new store based in one of the following countries, the store's content will be in your country's native language by default.' (S02-BC-288, with its list, S02-BC-289 to S02-BC-291, read with it by source and identifier, marked);
+- S02-V-286 (added), `gap`, S02-BC-G11, which asks whether the units and the date and timezone settings take the default country's standard formats when the store is created, which the answers don't give.
+
+Lead placed under another point of (c): S02-BC-253 ('The default country setting determines which payment methods are available to be set up on your store') is also in a new row under S02-VP-12, S02-V-287, with the place tasks S02-BC-263 and S02-BC-260 (below). Lead noted:
+- S02-BC-244 (c): to change the default currency, add it, then 'click Action › Set as default': the merchant's choice, not the store's own country (rule 4); in S02-VP-18's note
+
+### Place tasks: bigcommerce (c)
+
+Placed: S02-BC-263 ('Default country — The country your store is run from, which determines the payment methods that are available for use with your store') and S02-BC-260 (the locale information's 'country where your store is located', whose settings 'allow you to access region-specific payment methods') are a new row under S02-VP-12, S02-V-287, with S02-BC-253: the default country, the field part RD1-S1 holds for the three under (a) in S02-V-260. Noted:
+- S02-BC-258 (c): the store profile 'can affect which payment gateways are available': its words don't say the profile holds the store's country, nor which of its information affects the gateways, as part RD1-S1 noted it under (a) (rule 4)
