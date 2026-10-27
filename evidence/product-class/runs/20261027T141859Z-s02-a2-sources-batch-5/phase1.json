@@ -1,0 +1,39 @@
+[
+{
+"n": 1,
+"url": "https://woocommerce.com/document/woopayments/testing-and-troubleshooting/",
+"dir": "items/001-woocommerce.com",
+"fetched_at": "2026-10-27T14:18:59Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://woocommerce.com/document/woopayments/testing-and-troubleshooting/",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 46256,
+"cited_in": [
+"S02-WC-C621",
+"S02-WC-C622"
+],
+"raw_file": "raw.html",
+"sha256": "8db4c4fa8b38286735a2163625bcc7c0e97697a52c0ab507f56458a9dbae3e4e",
+"raw_ext": "html"
+},
+{
+"n": 2,
+"url": "https://woocommerce.com/document/woopayments/startup-guide/onboarding-troubleshooting/",
+"dir": "items/002-woocommerce.com",
+"fetched_at": "2026-10-27T14:19:00Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 404,
+"final_url": "https://woocommerce.com/document/woopayments/startup-guide/onboarding-troubleshooting/",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 34183,
+"cited_in": [
+"S-02: the address S02-WC-G06's read lists as not held; checked by the coordinator, 27 October 2026"
+],
+"raw_file": "raw.html",
+"sha256": "3bcca1edb4afd9be535d3dfff2426bae68acbb11393117ed7a9a1e25e8d04240",
+"raw_ext": "html"
+}
+]

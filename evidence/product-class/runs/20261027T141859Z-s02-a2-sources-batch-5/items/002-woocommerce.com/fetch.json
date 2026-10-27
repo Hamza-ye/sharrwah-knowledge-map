@@ -1,0 +1,18 @@
+{
+ "n": 2,
+ "url": "https://woocommerce.com/document/woopayments/startup-guide/onboarding-troubleshooting/",
+ "dir": "items/002-woocommerce.com",
+ "fetched_at": "2026-10-27T14:19:00Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 404,
+ "final_url": "https://woocommerce.com/document/woopayments/startup-guide/onboarding-troubleshooting/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 34183,
+ "cited_in": [
+  "S-02: the address S02-WC-G06's read lists as not held; checked by the coordinator, 27 October 2026"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "3bcca1edb4afd9be535d3dfff2426bae68acbb11393117ed7a9a1e25e8d04240",
+ "raw_ext": "html"
+}
