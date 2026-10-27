@@ -16,12 +16,26 @@ const [url, out] = process.argv.slice(2);
 if (!url || !out) { console.error('usage: node page_text.mjs URL OUT_TXT'); process.exit(2); }
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36';
 
+// This session's browser fails some sites' own requests through its proxy (HTTP 400, or aborted), which left
+// pages empty or showing only an error text: BigCommerce's Help Center, Zid's pricing pages. So every request is
+// made by Playwright's own request client and its answer handed to the page. Redirects are handed over as they
+// come, so the page follows them itself. CAPTURE_ROUTE=0 turns this off.
+const ROUTE = process.env.CAPTURE_ROUTE !== '0';
+async function routeRequests(page) {
+  if (!ROUTE) return;
+  await page.route('**/*', async route => {
+    try { await route.fulfill({ response: await route.fetch({ maxRedirects: 0 }) }); }
+    catch { await route.continue().catch(() => {}); }
+  });
+}
+
 let browser;
 try { browser = await chromium.launch(process.env.CHROMIUM_PATH ? { executablePath: process.env.CHROMIUM_PATH } : {}); }
 catch { browser = await chromium.launch(); }
-const rec = { url, fetched_at: new Date().toISOString().replace(/\.\d+Z$/, 'Z') };
+const rec = { url, fetched_at: new Date().toISOString().replace(/\.\d+Z$/, 'Z'), routed: ROUTE };
 const ctx = await browser.newContext({ userAgent: UA, extraHTTPHeaders: { 'Accept-Language': 'en,ar;q=0.8' }, viewport: { width: 1366, height: 900 } });
 const page = await ctx.newPage();
+await routeRequests(page);
 try {
   const resp = await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 45000 });
   await page.waitForLoadState('networkidle', { timeout: 12000 }).catch(() => {});
