@@ -1273,3 +1273,6 @@ None. Every task named its statements, each was printed by id, and no point was 
 
 ### After the check (RD3-S10)
 - The checker, on a copy holding only `b/RD3`, gave no `error` or `warning` on this part's ids. Its three errors are on salla's rows S02-V-1092, S02-V-1094 and S02-V-1097 (gaps narrowed since), RD3-S9's tasks. RD3's rows in `unplaced.tsv` are all salla's (S02-SA-437 to S02-SA-462), RD3-S9's. `second_pass_list.py --check` lists none of this part's tasks.
+
+### After the check (RD3-S9)
+- The checker raised no error on this part's ids. Its `unplaced.tsv` listed one statement of this part's platform and bullets that no task names: S02-SA-440, under (f). Salla's `a2.tsv` names it for S02-VP-85, but the work list's only revisit of S02-V-869 (its first-round row) names S02-SA-426 to S02-SA-430, and no `place` task names it. It is a market's record, as the storefront at sa.aldakheeloud.com returns it ('"type": "scope"'), with its own languages, currencies and countries. It joined S02-V-676 (S02-VP-41, a market: '"currencies": ["SAR"]') and S02-V-680 (S02-VP-43, a market: '"languages": ["ar", "en"]'). It is not placed under S02-VP-85: its '"countries": ["SA"]' are the market's, and its words don't say they are the store's own country (rule 2's role test). S02-V-869 (`gap` S02-SA-G11), which no task of this round revisits, is left as it was.

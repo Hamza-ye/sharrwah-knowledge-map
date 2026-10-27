@@ -523,3 +523,69 @@ None. Every statement of the work list that answers one of (e)'s questions does 
 - S02-SH-604 ('Merchants can't configure web presence, domains, or discounts for channel markets.'), S02-SH-925 and S02-BC-286 ('Each channel can support up to five languages.') are rules on which settings a market may hold. They are placed under S02-VP-27 (S02-V-474, S02-V-476, S02-V-482), whose note holds both limits on how many and on what a market holds; they also bear on RD3's points.
 - S02-SH-628 and S02-SH-629, Shopify Plus's expansion stores (including 'International stores' in another region or currency), are noted: an expansion store is a store of its own, not a market of a store.
 - S02-WC-359, Google for WooCommerce's target countries, is noted. If a sales channel's target countries count as a market a store sells into, as zid's and bigcommerce's channels do (S02-V-443, S02-V-453), it answers S02-VP-27 for woocommerce, and S02-V-449 would take it in place of `not covered`.
+
+## Second pass, RD2-S2: the last round's tasks of RD2's work list (after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2), bullets (e) and (g); shopify, salla, woocommerce and bigcommerce
+
+### Revisits
+
+- S02-V-471 (shopify, S02-VP-27, was `gap` S02-SH-G07; RD2-S1 had revisited S02-V-424 into it). Its new lead S02-SH-1024 ('You’ve reached the limit of 100 markets using the “All” condition.', in the admin's code) gives an answer no row held, and replaces S02-V-471. S02-SH-1025 names two error codes: 'SHOP_REACHED_PLAN_MARKETS_LIMIT', a plan's markets limit, joined S02-V-412 ('The number of markets that you can create depends on your subscription plan.'); 'SHOP_REACHED_MARKETS_LIMIT', the same key as S02-SH-286's, joined S02-V-413 ('Can't have more than 50 markets.'), whose evidence now says the admin's code names it with no number. The leads RD2-S1 placed (S02-SH-689, S02-SH-703, S02-SH-704, S02-SH-706, S02-SH-707) stay in S02-V-411, S02-V-412, S02-V-424, S02-V-470 and S02-V-425. S02-SH-G12, which says it is 'in place of S02-SH-G07', stands beside the answers as the new row S02-V-483; S02-SH-G07 goes.
+- S02-V-449 (woocommerce, S02-VP-27, was `not covered` after RD2-S1's revisit). Its leads S02-WC-513 ('Sell to all countries, except for&hellip;', 'woocommerce_all_except_countries') and S02-WC-514 ('Sell to specific countries', 'woocommerce_specific_allowed_countries') are the selling locations' two country lists: they say what defines the market, and joined S02-V-448 under S02-VP-26, which already held the two options (S02-WC-129, S02-WC-130). They name no party, so they join no row of S02-VP-28 or S02-VP-29. S02-WC-515 is noted below; S02-WC-269 and S02-WC-270 stay noted, as RD2-S1 noted them. The row is now `absent`, with S02-WC-N01 (kind shipped; A3-2 confirmed it): no settings page caps the countries a store sells to or sets when a selling location applies.
+
+### Statements noted under (e)
+
+- S02-WC-515 (e): 'if ( ! empty( $value['options'] ) ) { $countries = $value['options']; } else { $countries = WC()->countries->countries; }': the countries any 'multi_select_countries' field offers; its words, identifier ('output_fields(), case 'multi_select_countries': the countries a country list offers') and scope name no selling location, so X fails the role test. S02-WC-N01's own words read it with S02-WC-513 and S02-WC-514 (see "Problems")
+
+### Statements placed (`place` tasks)
+
+- S02-SA-440 (salla, (e)): the storefront's settings answer on the store aldakheel-test, whose 'scope' ('"type": "scope"'), named 'متجر السعودية', holds '"countries": ["SA"]'. Joined S02-V-431 under S02-VP-26 (a country defines a market), the scope read as a market as S02-V-431 reads S02-SA-251's store scope (a reading, marked there). Its null 'country_id' and 'city_id' name no city, so it doesn't join S02-V-432. It answers none of (e)'s other questions.
+- S02-BC-358 (bigcommerce, (e)): 'Note that many third-party sales channels are apps, which can only be installed by the store owner or users with the Install applications permission.' Two new rows under S02-VP-28, each its own answer by rule 4, as S02-V-427 holds a permission for shopify: S02-V-484 'the store owner' and S02-V-485 'users with the Install applications permission'. That installing a sales channel's app creates the channel in the store is a reading, marked in both rows. 'third-party sales channels' is added to S02-VP-28's x_words for bigcommerce. It names no change or removal, so it isn't placed under S02-VP-29.
+
+### Statements noted under (g)
+
+Each is a statement under (g) on a setting of the store, which each platform's `a2.tsv` names for RD3's points (bigcommerce: S02-VP-92; salla: S02-VP-65, S02-VP-73, S02-VP-74, S02-VP-87 and S02-VP-89). None says that the platform has no market of the kind in (e), RD2's half of (g).
+- S02-BC-352 (g): 'To install or update apps and leave reviews, you must be the store owner or have the Install applications permission enabled on your user account.': who may install a store's apps, RD3's half
+- S02-BC-353 (g): 'To uninstall apps or cancel an app installation, you must have the Uninstall applications permission enabled.': who may uninstall a store's apps, RD3's half
+- S02-BC-354 (g): 'To launch apps, you must be the store owner, have the Launch applications permission, or have been granted access to a multi-user Single Click App.': who may launch a store's apps, RD3's half
+- S02-BC-355 (g): 'View a searchable list of your installed apps by going to Apps › My apps in the control panel.': the store's installed apps, managed in its control panel, RD3's half
+- S02-BC-356 (g): 'Install applications Install apps from the App Marketplace.': a user permission over the store's apps, RD3's half
+- S02-BC-357 (g): 'Uninstall applications Uninstall apps from the store.': a user permission over the store's apps, RD3's half
+- S02-SA-437 (g): '"id":"order-cancellation-form","method":"PUT","action":"settings/fields/orders.cancel_order"': the order cancellation setting's form in the settings center, RD3's half
+- S02-SA-438 (g): '"id":"all-notifications"', with '/notifications/v1/inbox/preferences/': the notifications section's field, RD3's half
+- S02-SA-442 (g): 'storeData:{id:t.id,domain:t.domain,name:t.name,currency:t.currency,kycCountry:n}': the store's data the ads tools send to connect a pixel catalog, RD3's half
+- S02-SA-443 (g): 'await rLe.post({endpoint:"ReturnPolicy",payload:{days:x}})': the return policy's days, set from the theme editor, RD3's half
+- S02-SA-450 (g): '"action":"settings/fields/scopes.browse_product_method"': the markets section's setting of how products are browsed, RD3's half
+- S02-SA-456 (g): '{"status":200,"success":true,"data":{"enabled":false,"hours":48}}': the order cancellation setting's saved value, RD3's half
+- S02-SA-457 (g): 'ze="settings/fields/orders.cancel_order"': the order cancellation setting in the dashboard's code, RD3's half
+- S02-SA-458 (g): 'fetch(Xt("/inbox/preferences/")': the signed-in user's notification preferences, read in the dashboard's code, RD3's half
+- S02-SA-459 (g): '{"level":"global","enabled":true,"channels":{"in_app":true}}': the signed-in user's notification preferences, RD3's half
+- S02-SA-460 (g): 'notifications#table.header.in_app' and 'notifications#table.header.email': the notification preferences table's columns, RD3's half
+
+### RD2-S2: rows replaced or removed
+
+- S02-V-471 (shopify, S02-VP-27): `gap` S02-SH-G07, replaced by the answer 'You’ve reached the limit of 100 markets using the “All” condition.' (S02-SH-1024); S02-SH-G12 stands beside it as S02-V-483.
+- S02-V-449 (woocommerce, S02-VP-27): `not covered`, replaced by `absent` (S02-WC-N01).
+- No row removed.
+
+### RD2-S2: rows `not covered`
+
+None. RD2-S1's one `not covered` row of RD2, S02-V-449, is now `absent`.
+
+### RD2-S2: matching (rule 5)
+
+S02-VP-27's `raised_by` (S02-SH-111, S02-SH-301, S02-SH-286) holds only shopify's statements, so shopify's rows take `answers`. S02-SH-1025 was compared with S02-SH-286, its own platform's, to join S02-V-413: they name the same key, 'SHOP_REACHED_MARKETS_LIMIT'; rechecked, the row keeps `answers`, since rule 5's bases compare with another platform's statement. S02-BC-358 shares no term, identifier or definition with S02-VP-28's `raised_by` (S02-SH-115, S02-SH-116, S02-SH-288), so S02-V-484 and S02-V-485 take `answers` alone. The rows joined (S02-V-412, S02-V-413, S02-V-431, S02-V-448) keep their bases.
+
+### RD2-S2: new kinds and searches
+
+- New kinds: none; (e)'s points take no kind (rule 3).
+- Searches for earlier platforms' rows: none; the second pass raised no point.
+
+### Candidates for a new point (RD2-S2)
+
+None. The statements of these tasks that answer one of (e)'s questions do so for a market a store sells into (shopify's markets, woocommerce's selling locations, salla's scope, bigcommerce's sales channels), the one X of (e)'s points; S02-WC-515's X is any country list field, which fails the role test rather than raising another X. None of the (g) statements says that the platform has no market of the kind in (e).
+
+### RD2-S2: problems with the method
+
+- S02-WC-515 is noted, but bears on S02-VP-27. It fills any 'multi_select_countries' field with the field's options or else WooCommerce's countries; its own words, identifier and scope name no selling location. S02-WC-513 and S02-WC-514 give the selling locations' two lists that type ('type' => 'multi_select_countries'), and S02-WC-N01's words read the three together ('its two country lists (S02-WC-513, S02-WC-514) offer the countries WooCommerce lists (S02-WC-515)'). If a reading across two statements may pass the role test, S02-WC-515 answers S02-VP-27 for woocommerce as a rule on what a selling location may hold, as S02-V-417 ('Can't add unsupported country or region.') does for shopify, and it would stand beside the `absent` row, whose absence is of a cap and of a condition on when a selling location applies. The coordinator decides.
+- S02-SH-1025's 'SHOP_REACHED_MARKETS_LIMIT' joined S02-V-413 by the same key as S02-SH-286, which the schema marks deprecated ('"isDeprecated":true', 'No longer used'). The admin's code names the key with no number. If the key in the admin's code is read as another limit than the schema's 50, S02-SH-1025 takes a row of its own for it, and stays in S02-V-412.
+- S02-BC-358 says the store owner or users with the permission install a third-party sales channel's app. That this creates a channel, S02-VP-28's question, is a reading, marked in S02-V-484 and S02-V-485.
+- `place` tasks have no `done` line: the brief's `done` records revisit, reread and note tasks, and `unplaced.tsv` checks the rest. The message's "Record each task with `done` as usual" was read that way.
