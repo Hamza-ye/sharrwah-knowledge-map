@@ -65,3 +65,39 @@ Checked with `python3 -I method/held_index.py` and not held, so not read: under 
 ## Check on a copy
 
 `python3 -I method/check_subject.py` on a copy at /tmp/claude-0/-home-user/9f45def8-b710-5f9c-84f3-6a0fa7e617c8/scratchpad/s02/check-zid/S-02, output in /tmp/claude-0/-home-user/9f45def8-b710-5f9c-84f3-6a0fa7e617c8/scratchpad/s02/check-zid/out (2026-10-27): no line of level error; every quote found; one review line, the claims of absence not yet audited (phase A3).
+
+## Absence audit
+
+Phase A3, step 1, first part: the gaps S02-ZD-G01 to S02-ZD-G03 and the absences S02-ZD-N01 to S02-ZD-N03, read under `studies/subjects/S-02/briefs/A3-absence-audit.md` (2026-10-27). S02-ZD-G04 to S02-ZD-G07 and S02-ZD-N04 are left to the second part. No capture request in `handoffs/` names these claims.
+
+### What was found
+
+- All six claims are **confirmed**: no held or live document read states what they say is missing. `absence-audit.tsv` gives each claim's searches, the documents read and the statements that bear on it.
+- Statements added, S02-ZD-173 to S02-ZD-182, with citations S02-ZD-C299 to S02-ZD-C316, and two terms (العنوان الوطني المختصر; نقل متجرك من دولة إلى دولة أخرى). Each statement's note names its claim.
+  - S02-ZD-173 (b): zid-wallet's condition on moving a Gulf merchant's store from one country to another.
+  - S02-ZD-174, S02-ZD-175 (c): the collection of payments under في السعودية and في الكويت (activate-online-payments).
+  - S02-ZD-176, S02-ZD-177 (c, h): ضمان زد, applied in Saudi Arabia only, for stores with Zid Pay or Mazeed.
+  - S02-ZD-178 (c;h): the financing page's qualification, a company or establishment registered in Saudi Arabia (live).
+  - S02-ZD-179, S02-ZD-180 (c; a;c): the entity and the governing law in the Terms served at zid.eg/ar/ (live).
+  - S02-ZD-181, S02-ZD-182 (f): the short national address, required for shipments to and within Saudi Arabia (live).
+- The (h) exception of the brief: S02-ZD-130 (Rise, Zid Payments gateway) now also names S02-ZD-174 and S02-ZD-175 in `conditions`; S02-ZD-133 (تمويل زد متاح لجميع الباقات ماعدا لايت) now also names S02-ZD-178.
+- Read but already recorded, so not added again: the other gateways' countries (S02-ZD-116 to S02-ZD-118), the Kuwait payment requirements (S02-ZD-123, S02-ZD-155), the sender ID by Gulf country (S02-ZD-C288 to S02-ZD-C292), the Zid Pay terms' prohibited activities and sanctioned countries (S02-ZD-C164 to S02-ZD-C199), the business address's country (S02-ZD-C107), Amazon in Saudi Arabia and the UAE (S02-ZD-C209).
+
+### Documents read, in order (2026-10-27)
+
+Held copies are in `evidence/product-class/runs/`, at 89bf3710fdc21bd6f09fa940900e403133d69220; help pages as their article alone (`method/corpus_search.py`'s `zid_article`), zid.sa pages as raw.html with tags removed.
+1. In full: help.zid.sa about_zidpay (082), zidpay_staff_and_currencies (184), activate-online-payments (085), payment-gateways (145), wallet-split (168), about-zid-financing (081), defaulting (109), zid-wallet (182), nafath_verification (140), bank-accounts (088), faq-zid-warranty (114), gcc-merchants (128), payment-requirements (147), store-info-ksa (158), and the FAQs on Zid Pay's banks (119) and on Zid Pay outside Saudi Arabia (123).
+2. In passages, around the words each search matched: the Arabic and English Terms (187, 194); the Zid Pay terms for Kuwait (188, and 20261012T190225Z-s01-sources-zid item 001) and for Saudi Arabia (189, 195); the privacy policies (186, 193); the logistics terms (20261012T104936Z-s01-sources item 121) and the global and domestic shipping terms (192, 191); the partner-payouts post (196); the payments pages (20261012T104936Z-s01-sources item 126, and 198); zid.sa/llms.txt (201); the country pages of the UAE, Syria and Egypt (20261019T003516Z-proposals-Q6-zid items 002 and 001, and 190); zid-assurance (200); pricing (197); the compare-plans data (185); help.zid.sa store-language (159), saudi-merchants (151), tap-gateway (162), senderid (152), whatsapp-templates (170), whatsapp-app-vs-api (169), logistics-shipping-methods (134), deposits_zidpay (110), transactions (166), refund-requests (149) and the sales channels' FAQ (077); docs.zid.sa get-vat-settings (031), list-store-locations (043), list-store-delivery-options (042), list-of-orders (039) and credit-customer-wallet (021); the Zid Payments docs 052, 054 and 050, searched for countries and currencies (none named).
+3. Live, not held (checked with `method/held_index.py` first): https://zid.eg/ar/legal/terms-conditions/ (raw; compared line by line with the held zid.sa Terms: the same 930 lines save one banner line); https://zid.sa/ar/solutions/financing/ and https://zid.sa/en/solutions/financing/ (raw); https://help.zid.sa/national-address/, https://help.zid.sa/business-verification/, https://help.zid.sa/zidfinance-requirements/, https://help.zid.sa/finance-management/ and five FAQs (ماهي متطلبات تفعيل زد باي ؟; ما هو تمويل زد؟; هل يشترط تفعيل زد باي للحصول على التمويل; هل زد باي تدعم خاصية العملات المتاحة في; كيفية تزويد زد باي بالمتطلبات لتفعيل), rendered through `method/capture/page_text.mjs`. They were found in the help centre's sitemaps (https://help.zid.sa/sitemap_index.xml, post-sitemap1.xml, post-sitemap2.xml, faqs-sitemap.xml), read as indexes only.
+
+### Searches too many to read in full, and how they were narrowed
+
+- `n01-own` (زد باي, مدفوعات زد, Zid Pay, ZidPay, Zid Payments) listed 48 documents past its cap of 40; it was rerun with `--max 48`. It was narrowed by `--with` the countries the absence names (12 documents) and `--with الدولة country` (19).
+- Documents listed but not read, because their match cannot state what a claim says is missing: API pages whose match is a customer's or an order's field (Commercial Registration, registration, ZidPay as an order's payment method: items 005, 017, 019, 020, 028, 036, 037, 038, 062, 066, 067), an app's sign-up (029, 030, 071), Apple Pay (008, 009) or products (013, 016); category and home pages of the help centre (074, 094), which list articles; changelog.zid.sa/ar (Q8 run item 001), which names no country; zid.sa/ar/paymob/ (s01 run item 125), which names no country; help pages on WhatsApp costs, payment links, Zid Pay's payment page and digital products, partial returns and returns, whose match was زد باي or محفظة زد alone.
+- The search on country names `--with الدولة country` listed every page that holds a country anywhere (13 documents); each was read in passages around the country names.
+
+### Problems with the method
+
+- An Arabic term matches inside words, so country names over-match: مصر matches مصرح, مصرف and المصروفات, and عمان matches العماني. The counts were checked by reading the passages; the zid.eg Terms hold no مصر as a word.
+- The held corpus lacks help articles and FAQs that bear on these claims (the national address, Zid Financing's requirements, Zid Pay's requirements); `corpus_search.py` cannot list a page that is not held. They were found through the help centre's sitemaps and read live.
+- The live pages' quotes were tested against the working copies with `quote_check.py`'s `norm`, since `quote_check.py` finds a live URL only once it is captured; the checker will show them as pending capture.

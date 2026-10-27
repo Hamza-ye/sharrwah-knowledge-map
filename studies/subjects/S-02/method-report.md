@@ -180,9 +180,11 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 | --- | --- | --- | --- | --- | --- |
 | Salla | 4 gaps | 3 confirmed; G03 contradicted | 8 | 62 | 12.1 |
 | Shopify | 2 gaps, 3 absences | 4 confirmed; G01 partly contradicted | 23 | 86 | 17.2 |
+| Zid, part 1 | 3 gaps, 3 absences | all 6 confirmed | 10 | 51 | 9.2 |
 
 **What it taught:**
 - **Two of the six gaps routed to capture requests were answered, in whole or in part, by what is held.** Salla's onboarding list of countries is in two runs, as the page and as the API's saved answer. `method/held_index.py` didn't list saved answers, so the gap had gone to capture. It lists them now, and H-002 is narrowed. Shopify's Help Center page on business entities, not read before, says who verifies an entity and what changes with the store's country, so H-007's second step is narrowed.
 - **The absence audit can run beside phase B,** since it adds statements the slices don't hold. Each part leaves them for the second pass, as the brief now says.
 - **A Shopify search took 10 to 15 minutes with three running at once,** against 3 minutes alone. Searching by names with `--with` returned thousands of the runs' saved answers. The auditor narrowed them by more searches and read the Help Center documents by title and snippet, as its notes say.
+- **The held corpus doesn't hold every Zid help page:** Zid's first part found Zid Pay's and Zid Financing's requirement pages, the national address article and the financing page only through the help centre's sitemaps, read live as indexes. It read twelve pages live; the coordinator captured them afterwards.
 - **One lead was left unread:** the Help Center's `organization-settings/expansion-stores.md`, for how a store made inside an organization takes its country (S02-SH-G02). It goes to gap-closing (phase A2).
