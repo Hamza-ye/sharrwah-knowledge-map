@@ -249,6 +249,7 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 | SH-2b: contact information shown to buyers; locations; messages to buyers; and SH-2a's lead | 4 | 4 | 4 | 75 | none | 76 | 14.4 |
 | SH-2c: SH-2b's searches past 300, narrowed and read | 4, again | 4 | 4 | 72 | none | 67 | 13.8 |
 | SA-2: analytics and tracking; apps; notifications to the merchant; the store's address; the store's country; units and time zone | 8 | 8 | 4 | 36 | G08 to G11 | 80 | 16.8 |
+| ZD-5: what a click shows on Zid's pages, and zid.sa's Arabic country pages | leads | 6 points updated, and the `none` row | — | 52 | none | 28 | 4.4 |
 
 **What WC-1 taught:**
 - **Our labels aren't the platform's words.** The brief said to search a kind's own name, and the part asked whether "who sells to the buyer" was one. The brief now says the kind's head word is searched, such as `domain` or `currency`, and our longer labels aren't.
@@ -347,4 +348,8 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 - **Salla's gap-closing is complete:** two parts, 15 rows, 8 of them with no gap left, and 118 statements (S02-SA-319 to S02-SA-436), for 32.5 million. Everything read was held in observed-sa, so nothing needed capturing.
 - **Some of Salla's settings take a value per country of their own,** apart from its markets: an app's supported countries, from seven (S02-SA-409 to S02-SA-412), and a digital card's codes per "store country" (S02-SA-426 to S02-SA-429). Whether an app's supported countries are matched against the store's country or its markets is one of the four gaps (G09).
 - **A kind whose words are country words makes the second search repeat the first.** For the store's country, `--with country countries` returned the first search's documents, so the part ran it with the market words only.
+
+**What ZD-5 taught:**
+- **The FAQ answers a click shows are Zid's statements on each country.** Zid Pay in Saudi Arabia and Kuwait gives its own banks, deposit fees, payout schedules and minimums, and Mada's cap. Zid Syria needs no commercial registration and takes payments through Bemira (S02-ZD-396 to S02-ZD-423). Zid's plans by country add branches, warehouses and features (S02-ZD-425 to S02-ZD-443).
+- **Opening each part in turn wasn't enough while a repeated line was dropped.** The step kept only lines not yet seen on the page, so the Arabic Syria page's answers were lost, and an answer was tied to its question only by click order. Each click's new lines are now kept under the control's label. Captured so, the Arabic Syria page gives all six of its closed answers, which match the English ones recorded (run `20261027T135846Z-s02-a2-sources-batch-4`).
 

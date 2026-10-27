@@ -365,6 +365,61 @@ Item numbers are those of 20261012T045101Z-q1-zid-sources unless another run is 
 
 `python3 -I method/check_subject.py` on a copy at /tmp/claude-0/-home-user/9f45def8-b710-5f9c-84f3-6a0fa7e617c8/scratchpad/s02-a2-zd-3/check/S-02, output in /tmp/claude-0/-home-user/9f45def8-b710-5f9c-84f3-6a0fa7e617c8/scratchpad/s02-a2-zd-3/check/out (2026-10-27): no line of level error; 366 statements, 21 gaps; 537 quotes found and 22 unresolved; 42 lines of level pending capture, the live citations S02-ZD-C479 to S02-ZD-C493, S02-ZD-C502 to S02-ZD-C505 and S02-ZD-C526 to S02-ZD-C528, and the statements S02-ZD-293 to S02-ZD-305, S02-ZD-313 to S02-ZD-316 and S02-ZD-337 to S02-ZD-339 that cite them.
 
+### ZD-5: what a click shows (2026-10-27)
+
+Read under `studies/subjects/S-02/briefs/A2-close-gaps.md`, step 6 (leads), for the coordinator's message of 27 October 2026. The leads are zid.sa pages captured with `CAPTURE_EXPAND=1` in run 20261027T121854Z-s02-a2-sources-batch-3 (committed at 5066a8e1fc5e324dcfb41dd8b659e2baa5adcaa1): what a click shows is in each item's `expanded.txt`, beside its `text.txt` (`method/capture/README.md`). Quotes are from `text.txt` and `expanded.txt` only, never from raw.html or rendered.html. Added: statements S02-ZD-396 to S02-ZD-447, citations S02-ZD-C600 to S02-ZD-C688, one term (زد سوريا); no gap, no absence.
+
+#### Documents read, in order (2026-10-27)
+
+1. Item 023, https://zid.sa/en/solutions/payments/: expanded.txt in full (18 lines, the FAQ's answers); text.txt in full (Because We Know You're Curious: For our Saudi Superstars, 11 questions; For our Kuwait Crew, 8).
+2. Item 024, https://zid.sa/ar/solutions/payments/: expanded.txt in full (16 lines); text.txt in full (لأننا نعرف أنك تحب تستكشف: لنجومنا السعوديين, 11 questions; لطاقمنا الكويتي, 8).
+3. Item 019, https://zid.sa/en/syria/: expanded.txt in full (55 lines: the Rise, Growth and Professional plans, lines 1 to 45, then six FAQ answers, lines 46 to 55); text.txt in full.
+4. Item 025, https://zid.sa/ar/syria/: expanded.txt in full (43 lines, the plans only); text.txt in full.
+5. Item 026, https://zid.sa/ar/uae/: expanded.txt in full (51 lines, the plans only; the page has no FAQ); text.txt in full.
+6. Items 027, 028 and 029, https://zid.sa/ar/egypt/, https://zid.sa/ar/kuwait/ and https://zid.sa/ar/oman/: text.txt in full. They have no expanded.txt (render.json: expanded_lines 0); their plans are in text.txt.
+7. Items 030 and 031, https://zid.sa/en/bahrain/ and https://zid.sa/en/qatar/: text.txt in full, the site's "Oops! Page not found" (HTTP 200, by the run's README).
+8. To pair each answer with its question: `method/capture/render.mjs` (expandClosed opens each closed control in page order and keeps only the lines not already on the page); the questions' order in the payments and Syria pages' rendered.html (the answers are not in it until clicked); and, for the payments pages only, the question and answer pairs in raw.html's embedded data, searched to confirm the pairing and not quoted. They pair every recorded answer as the order of opening does.
+
+#### What was found, by lead
+
+- **The payments FAQ (023, 024), (c).** For our Saudi Superstars / لنجومنا السعوديين: a deposit costs 3 SAR, free for Riyad Bank (S02-ZD-396; S02-ZD-409); all banks in Saudi Arabia (S02-ZD-397; S02-ZD-410); Mada's fee is at most 200 SAR, excluding VAT (S02-ZD-398; S02-ZD-411); currencies are activated through the store settings (S02-ZD-399; S02-ZD-412, c;f); payouts every 2-3 days, minimum 100 SAR (S02-ZD-400; S02-ZD-413); activation is instant and the information is verified within two business days (S02-ZD-401; S02-ZD-414); no hidden fees, only operational fees by plan and network (S02-ZD-402), no setup or monthly fees, a percentage and a fixed fee excluding VAT, by network and plan (S02-ZD-408). For our Kuwait Crew / لطاقمنا الكويتي: all banks in Kuwait (S02-ZD-403; S02-ZD-415); currencies set up in the store settings (S02-ZD-404, c;f); K-Net, Apple Pay, Visa, American Express, in Arabic (S02-ZD-416; the English is S02-ZD-067); on customers' payments only the network's and plan's fees (S02-ZD-405; S02-ZD-417); no setup fees, operational fees by plan (S02-ZD-406), excluding VAT in Arabic (S02-ZD-418); payouts daily, Sunday to Thursday, minimum 1 KWD (S02-ZD-407; S02-ZD-419).
+  - Not recorded: the answers on using Zid Payments with other gateways (only with Tamara and Tabby), choosing another gateway (by plan) and limits, which name no country, currency, bank or fee; the availability answers, already S02-ZD-008 and S02-ZD-201 (S02-ZD-C008, S02-ZD-C201).
+  - No line of its own in expanded.txt, so not recorded: the English Kuwait question "Is this a GCC-wide offering?", and the Arabic Kuwait questions هل يوجد حد أعلى للعمليات؟, هل تتوفر هذه الخدمة في دول الخليج؟ and هل يتم تفعيل العملات؟.
+- **The Syria FAQ in English (019).** Shipping through Tarabot and delivery inside Syria through Mersal (S02-ZD-420, c); no commission on sales (S02-ZD-421, c); payments received through Bemira (S02-ZD-422, c); no commercial registration needed to open the store, in answer to a question that names Zid Syria (S02-ZD-423, c); the store's link can be customized (S02-ZD-424, f; the page names no market for it). The answer on how a customer buys names no country, currency or fee: not recorded.
+- **The Syria page in Arabic (025).** It shows seven FAQ questions and the first answer; expanded.txt holds no line for the other six answers, so they were not read (below). Its first answer gives زد سوريا for Zid Syria: a term row (S02-ZD-C688, with S02-ZD-C239). Its hero and its partner (شريكنا الحصري في سوريا: روفو) are the Arabic of what is recorded from the English page (S02-ZD-C235, S02-ZD-139): not recorded again.
+- **The plans on the country pages (h).** Syria in English (019, on a click): electronic payment on Rise (S02-ZD-425, conditions S02-ZD-422), two currencies on Growth (S02-ZD-426), two warehouses on Growth (S02-ZD-427), multiple VAT configurations on Professional (S02-ZD-428). Syria and Egypt in Arabic (025, 027): the same four lines (S02-ZD-429 to S02-ZD-432) and 5 warehouses on Egypt's الإحترافية (S02-ZD-433). The UAE, Kuwait and Oman in Arabic (026 on a click; 028, 029): custom domain linking and Apple Pay on الانطلاقة (S02-ZD-434, S02-ZD-435); VAT calculation and display, two branches or warehouses and instant financing on النمو (S02-ZD-437, S02-ZD-438, S02-ZD-439); 5 branches or warehouses and inventory by customer's city on الإحترافية (S02-ZD-441, S02-ZD-442); shipping from 11, 10.5 and 8.5 ريال a shipment on the three plans (S02-ZD-436, S02-ZD-440, S02-ZD-443, c;h). Not recorded again: the plans' prices and Zid Pay's gateway on الانطلاقة, the Arabic of S02-ZD-389 to S02-ZD-395; the Starter's basic payment methods, the Arabic of S02-ZD-C222.
+- **The Arabic country pages' own text (025 to 029).** المنصة الأسهل للتجارة الالكترونية فالخليج on the UAE, Kuwait and Oman pages (S02-ZD-444, d); partners in payments and logistics, with technology (the UAE, Oman) or marketing (Egypt, Kuwait), none named in the text (S02-ZD-445, S02-ZD-446, c); وصول عالمي, connecting the store to the largest markets with several languages, currencies and international shipping (S02-ZD-447, e;f; the page defines no market). Not recorded again: the heroes انضم لآلاف التجار في …, the Arabic of S02-ZD-C080, S02-ZD-C234, S02-ZD-C584 and S02-ZD-C585. The Egypt page's form (activity, monthly orders, an existing store) bears on no bullet.
+- **Bahrain and Qatar (030, 031).** Both show the site's "Oops! Page not found"; they state nothing, and no statement or gap was recorded. The site index lists no Bahrain or Qatar page (S02-ZD-C006).
+
+#### Rows changed
+
+- `a2.tsv`: S02-VP-15 takes S02-ZD-398, S02-ZD-408, S02-ZD-411 and S02-ZD-418 (fees stated excluding VAT); S02-ZD-G08 remains, since none names the tax a fee carries for a store by its country. S02-VP-14 takes S02-ZD-421; S02-VP-45 takes S02-ZD-434; S02-VP-46 takes S02-ZD-424 and S02-ZD-434; S02-VP-67 takes S02-ZD-427, S02-ZD-431, S02-ZD-433, S02-ZD-438, S02-ZD-441 and S02-ZD-442; the row `none` takes the other 39. Each row's `read` names the items read for it.
+- (h) `conditions`: S02-ZD-130 and S02-ZD-395 (Zid Payments gateway on Rise) take S02-ZD-396 to S02-ZD-419; S02-ZD-071 (كي نت) takes S02-ZD-416; S02-ZD-122 (e-payment activation requirements, Saudi Arabia) takes S02-ZD-401 and S02-ZD-414; S02-ZD-135 (commercial registration) takes S02-ZD-423; S02-ZD-152 (store_language_and_currencies.currencies) takes S02-ZD-399, S02-ZD-404 and S02-ZD-412, which also replace S02-ZD-363's none stated (zid.eg, دعم عملتين).
+- Left as they were: S02-ZD-365 (zid.eg, إتاحة الدفع الإلكتروني), since the e-payments recorded here (Bemira, S02-ZD-422) are the Syria page's; S02-ZD-242 and S02-ZD-243 (custom domain), since S02-ZD-424 names the store's link, not a domain.
+
+#### What bears on S02-ZD-G03
+
+- The Syria FAQ: no commercial registration needed with Zid Syria (S02-ZD-423), no commission (S02-ZD-421), payments through Bemira (S02-ZD-422), shipping through Tarabot and Mersal (S02-ZD-420). They name no contracting party.
+- Shipping prices in ريال on the UAE, Kuwait and Oman pages (S02-ZD-436, S02-ZD-440, S02-ZD-443).
+- Partners per country, named only as a network in payments and logistics (S02-ZD-445, S02-ZD-446).
+- The English Bahrain and Qatar pages are not found (030, 031).
+- Zid Pay's Kuwait answers (S02-ZD-403 to S02-ZD-407, S02-ZD-415 to S02-ZD-419) are Zid Pay's, which G03 leaves out.
+
+#### Searches
+
+- None was run, since the task was its leads; none was narrowed.
+
+#### Problems with the method
+
+- The capture keeps only the lines a click adds that were not already on the page, so an answer identical to one shown before has no line of its own, and the pairing of answers with questions rests on the order of opening. The payments pages' embedded data confirms the pairing; the Syria page has no such data, and there the order and the answers' content agree.
+- The Arabic Syria page's six closed FAQ answers did not appear in its expanded.txt (render.json: expanded_lines 43, all plan lines). Not read from raw.html: for the coordinator to render again.
+- S02-ZD-C008 and S02-ZD-C086, under review, quote the page's embedded data; the same answers show on a click in item 023's expanded.txt (lines 7 and 15), and S02-ZD-C201's in item 024's (line 7). The coordinator decides.
+- The Arabic UAE page shows its plans only on a click, and lines shown before are dropped: its الانطلاقة shows 99 and 83 شهرياً without a currency or an annual price. The English UAE page's prices are S02-ZD-393 and S02-ZD-394.
+
+#### Check on a copy
+
+`python3 -I method/check_subject.py` on a copy at /tmp/claude-0/-home-user/9f45def8-b710-5f9c-84f3-6a0fa7e617c8/scratchpad/s02-a2-zd-5/check/S-02, output in /tmp/claude-0/-home-user/9f45def8-b710-5f9c-84f3-6a0fa7e617c8/scratchpad/s02-a2-zd-5/check/out (2026-10-27): no line of level error; 447 statements, 21 gaps; 686 quotes found and 2 found in the page's source only (S02-ZD-C008, S02-ZD-C086); 4 lines of level review, the coordinator's (S02-ZD-C008, S02-ZD-C086, S02-ZD-C313, S02-ZD-C314); 106 web sources to capture.
+
 ## ZD-4: S02-ZD-G03 audited again (2026-10-27)
 
 S02-ZD-G03 audited again under `studies/subjects/S-02/briefs/A3-absence-audit.md`. The morning's audit confirmed it on S02-ZD-179 and S02-ZD-180, which quote the raw HTML of https://zid.eg/ar/legal/terms-conditions/; the page as shown is another contract. The held corpus now includes 20261027T112044Z-zid-rerender, Zid's pages rendered with the fix; only rendered text is quoted (`A-one-platform.md`, "Reading a live page"). G03's row in `absence-audit.tsv` replaces the morning's, and says so; S02-ZD-179 and S02-ZD-180 are left as they are, and nothing is built on them.
