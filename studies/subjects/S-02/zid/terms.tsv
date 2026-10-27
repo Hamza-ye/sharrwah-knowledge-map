@@ -57,3 +57,6 @@ markets_management.active_markets			S02-ZD-C253;S02-ZD-C254
 إعدادات المتجر	store settings		S02-ZD-C297;S02-ZD-C074
 العنوان الوطني المختصر			S02-ZD-C315;S02-ZD-C316
 نقل متجرك من دولة إلى دولة أخرى			S02-ZD-C299
+Region & Language popup (region_settings_dialog)		The **Region & Language popup** allows customers to change the store language, country, and city within a modal dialog, without leaving the current page.	S02-ZD-C322
+store countries (zid.store.region.countries)			S02-ZD-C325
+Display products in your store based on the customer location			S02-ZD-C324

@@ -101,3 +101,45 @@ Held copies are in `evidence/product-class/runs/`, at 89bf3710fdc21bd6f09fa94090
 - An Arabic term matches inside words, so country names over-match: مصر matches مصرح, مصرف and المصروفات, and عمان matches العماني. The counts were checked by reading the passages; the zid.eg Terms hold no مصر as a word.
 - The held corpus lacks help articles and FAQs that bear on these claims (the national address, Zid Financing's requirements, Zid Pay's requirements); `corpus_search.py` cannot list a page that is not held. They were found through the help centre's sitemaps and read live.
 - The live pages' quotes were tested against the working copies with `quote_check.py`'s `norm`, since `quote_check.py` finds a live URL only once it is captured; the checker will show them as pending capture.
+
+### Second part: S02-ZD-G04 to S02-ZD-G07 and S02-ZD-N04 (2026-10-27)
+
+Phase A3, step 1, second part, read under `studies/subjects/S-02/briefs/A3-absence-audit.md`. No capture request in `handoffs/` names these claims.
+
+#### What was found
+
+- S02-ZD-N04 is **contradicted**: the FAQ's list السعودية ودول الخليج فقط (S02-ZD-007, last updated August 30, 2023) is not complete as a list of the countries Zid serves merchants in. About Zid Egypt, the Egypt page and the Syria page (S02-ZD-060, S02-ZD-061, S02-ZD-138, S02-ZD-140, recorded in phase A) and zid.eg/ar/ (S02-ZD-184, read live) state merchants in Egypt and Syria.
+- S02-ZD-G04, S02-ZD-G05, S02-ZD-G06 and S02-ZD-G07 are **confirmed**: no held or live document read states what they say is missing. `absence-audit.tsv` gives each claim's searches and the documents read.
+- Statements added, S02-ZD-183 to S02-ZD-191, with citations S02-ZD-C317 to S02-ZD-C326, and three terms (Region & Language popup; store countries; Display products in your store based on the customer location). Each statement's note names its claim.
+  - S02-ZD-183 (d): the FAQ's next sentence, في المستقبل باذن الله نتوسع للعالم العربي (N04).
+  - S02-ZD-184, S02-ZD-185 (d): zid.eg/ar/ on merchants in Egypt, and Zid as the platform of the Middle East and North Africa (N04, live).
+  - S02-ZD-186 (e): List Countries, GET /v1/settings/countries with countries_cities.read, the page in G04's route (live).
+  - S02-ZD-187 to S02-ZD-191 (e, f): the Region & Language popup, its settings on the inventory page, the switch off by default, and the APIs zid.store.region.countries and zid.store.region.setRegion (G06, live).
+- The (h) exception: no (h) statement's conditions changed. S02-ZD-189's switch (Display products in your store based on the customer location, on the inventory page) and عرض المنتجات حسب المدينة of shipping-adress, whose arrangement S02-ZD-162 conditions, are not tied by any source read.
+- Read but already recorded, so not added again: the market's actions (S02-ZD-013), the store operating countries (S02-ZD-C034), the localization endpoint (S02-ZD-054), the country pages of the site index (S02-ZD-006).
+
+#### Documents read, in order (2026-10-27)
+
+Held copies are in `evidence/product-class/runs/`, at 378311abab45103381b1e9d5ce672bc93955dc35; HEAD moved to e0ee694236ac99850584182f77e4661bd15a6e8b during the run, with changes to phase B's files only. Help pages are read as their article alone (`method/corpus_search.py`'s `zid_article`), zid.sa pages as raw.html through `method/quote_check.py`'s `html_text`.
+1. In full: help.zid.sa markets (136); the FAQs زد يخدم التجار في السعودية فقط؟ هل يخدم الخليج؟ (175), on payment methods (176) and on a commercial registration for signing up (178); about-zid-egypt (080).
+2. In passages, around the words the searches matched: gcc-merchants (128) and saudi-merchants (151) on the location; docs retrieve-store-operating-countries (058), localization (045), get-manager-profile (027: markets_management.active_markets, business_location, the countries of the 200 example, which are the store's currencies'), webhooks (070), events (025), list-store-locations (043) and list-of-orders (039); changelog.partner.zid.sa (20261019T052111Z-proposals-Q8-zid item 001); zid-growth (179); zid.sa/llms.txt (201); the Egypt and Syria pages (190, and 20261019T003516Z-proposals-Q6-zid item 001); the Arabic Terms (187) and the Kuwait Zid Pay terms (188), on their sanctions list.
+3. Live, not held (checked with `method/held_index.py` first), raw or `.md`: https://docs.zid.sa/countries-list.md; https://docs.zid.sa/countries-and-cities-1810988f0.md; https://docs.zid.sa/region-language-popup-1861342m0.md; https://zid.eg/ar/; https://zid.sa/ar/pricing/ and the compare-plans data it loads, https://zid.sa/_next/static/chunks/1540-05a4190cb15785f4.js (its 183 feature names searched for markets, أسواق and سوق); and three FAQs, rendered from their raw HTML: كيف ابدأ و انشئ متجر الكتروني؟, عن زد؟ and ماهي الخدمات والخصائص المقدمة في زد؟. Held, and read live only to compare with the held copy: https://docs.zid.sa/llms.txt (its lines naming market are the same) and https://zid.sa/llms.txt (its Other countries are the same five).
+4. As indexes only: the help centre's sitemaps, https://help.zid.sa/sitemap_index.xml and the six it lists that hold articles and FAQs (post-sitemap1.xml, post-sitemap2.xml, faqs-sitemap.xml, zid-faqs-sitemap.xml, page-sitemap.xml, tips-sitemap.xml), their addresses decoded and searched for slugs on markets, countries and sign-up. They list no article on the markets feature other than markets/ (lastmod 2026-08-03, the held copy's date), and zid-faqs-sitemap.xml dates the FAQ of S02-ZD-007 2023-08-30.
+
+#### Searches too many to read in full, and how they were narrowed
+
+- None passed its cap of 40; the plans search (`g07`, 40 documents) reached it and listed every document in full.
+- The country search `--with الدولة country countries` (37 documents), the sign-up search (33) and N04's own words (33) were narrowed by their titles and matched terms. Not read: API pages whose match is an order's, customer's, coupon's or location's field (registration, a country value: items 004, 005, 016, 017, 019, 020, 021, 028, 036, 037, 038, 042, 062, 067), an app's sign-up or the App Market (008, 009, 010, 018, 071, 072, api.zid.sa's app categories), help pages on fees, gateways, wallets, shipping, tax, sender IDs, WhatsApp, warranty and returns, read by phase A or the first part for these words (081, 088, 097, 114, 123, 134, 150, 152, 154, 162, 163, 170, 182), the help centre's home and category pages (074, 093, 094), which list articles, and zid.sa pages read by phase A or the first part (185, 186, 189, 191 to 200, and the s01 runs' 121, 125, 126).
+- The plans search matched Growth and النمو in the growth of a business as well as the plan; its documents were settled by their matched terms and, where open, by passages.
+
+#### Problems with the method
+
+- `corpus_search.py` also lists pages of the capture run 20261027T065700Z-s02-a3-zid-sources (the zid.eg Terms, national-address, the financing pages), which is in the working tree but not in git at the run's HEAD; they are the first part's live reads, and nothing here is cited from that run.
+- zid.sa's pricing page loads its plan comparison from a script chunk whose name changes between versions (held: 2501-f29c20b24ab64821.js; live: 1540-05a4190cb15785f4.js); the page's own HTML does not hold the comparison, so a search of it alone does not reach the plans' features.
+- The help centre's sitemap index lists zid-faqs-sitemap.xml, page-sitemap.xml and tips-sitemap.xml besides the four the first part read; zid-faqs-sitemap.xml holds the FAQ of S02-ZD-007 and the FAQs read live here.
+- An Arabic term matches inside words: السوق matched السوق in general text (احتياجات السوق, كل جديد في السوق); the documents were settled by reading the passages.
+- The live pages' quotes were tested against the working copies with `quote_check.py`'s `norm` (and `html_text` for HTML), since `quote_check.py` finds a live URL only once it is captured; the checker will show them as pending capture.
+
+#### Check on a copy
+
+`python3 -I method/check_subject.py` on a copy at /tmp/claude-0/-home-user/9f45def8-b710-5f9c-84f3-6a0fa7e617c8/scratchpad/s02-a3-zid-2/check/S-02, output in /tmp/claude-0/-home-user/9f45def8-b710-5f9c-84f3-6a0fa7e617c8/scratchpad/s02-a3-zid-2/check/out (2026-10-27): no line of level error and none saying a claim is not settled; 191 statements; 317 quotes found; 17 lines of level pending capture, the live citations S02-ZD-C318 to S02-ZD-C326 and the statements S02-ZD-184 to S02-ZD-191 that cite them.

@@ -182,6 +182,7 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 | Salla | 4 gaps | 3 confirmed; G03 contradicted | 8 | 62 | 12.1 |
 | Shopify | 2 gaps, 3 absences | 4 confirmed; G01 partly contradicted | 23 | 86 | 17.2 |
 | Zid, part 1 | 3 gaps, 3 absences | all 6 confirmed | 10 | 51 | 9.2 |
+| Zid, part 2 | 4 gaps, 1 absence | 4 confirmed; N04 contradicted | 9 | 58 | 9.8 |
 
 **What it taught:**
 - **Two of the six gaps routed to capture requests were answered, in whole or in part, by what is held.** Salla's onboarding list of countries is in two runs, as the page and as the API's saved answer. `method/held_index.py` didn't list saved answers, so the gap had gone to capture. It lists them now, and H-002 is narrowed. Shopify's Help Center page on business entities, not read before, says who verifies an entity and what changes with the store's country, so H-007's second step is narrowed.
