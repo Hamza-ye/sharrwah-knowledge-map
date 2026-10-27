@@ -243,6 +243,7 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 | ZD-3: analytics and tracking; apps; notifications to the merchant; privacy and consent; staff access; store status; units and time zone; and the pricing pages as a lead | 12 | 12 | 3 | 74 | G14 to G21 | 72 | 15.6 |
 | BC-2: contact information shown to buyers; market selection; returns and cancellations; staff access; the buyer's address; who sells to the buyer | 10 | 10 | 6 | 56 | G12, in place of G03, whose pages it read; G13, G14 | 84 | 14.5 |
 | ZD-4: the absence audit's S02-ZD-G03 again, from zid.eg's Terms as shown | 1 claim | 1 | 0 | 29 | G03 partly contradicted: Egypt answered | 43 | 7.5 |
+| SH-2a: analytics and tracking; notifications to the merchant; store status | 6 | 6 | 6 | 86 | none | 97 | 20.7 |
 
 **What WC-1 taught:**
 - **Our labels aren't the platform's words.** The brief said to search a kind's own name, and the part asked whether "who sells to the buyer" was one. The brief now says the kind's head word is searched, such as `domain` or `currency`, and our longer labels aren't.
@@ -315,4 +316,8 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 - **Some answers show only on a click.** The Syria page's FAQ answers after the first, and the payments pages' answers, are in neither the rendered text nor the source: the render doesn't click. They wait on a capture that opens them.
 - **Opening what a click shows.** The capture tools now open each closed part of a page in turn (`CAPTURE_EXPAND=1`) and keep the lines that appear in `expanded.txt`; opening them all at once failed, since an FAQ closes one answer as it opens the next. Captured so, zid.sa's Syria page shows all ten of its FAQ answers, among them that no commercial registration is needed to open a store, and zid.sa has no Bahrain or Qatar page. ZD-5 reads what these pages add.
 - **The coordinator's ruling on S02-ZD-C008 and C086:** their quotes keep the page data's punctuation (`","answer":"`), so the checker lists them for review. Their answers, "Currently in Saudi Arabia and Kuwait." and "K-Net, Apple Pay, Visa, American Express.", are shown on a click (run `20261027T121854Z-s02-a2-sources-batch-3`, item 023, `expanded.txt`), so the statements stand.
+
+**What SH-2a taught:**
+- **Shopify's own words answered every row, with no gap.** Its documents say what a setting holds for, even where that is the whole store: private mode is for the online store as a whole, and staff notifications are per recipient and per point-of-sale location. A market changes what consent allows: in markets set to require consent, web pixels run only with the visitor's permission (S02-SH-731).
+- **Searches run at once slow each other down.** The part ran six of its own searches at once, which took 10 to 18 minutes each. Launch messages now ask for at most two at once.
 
