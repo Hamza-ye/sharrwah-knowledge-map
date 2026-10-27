@@ -2,7 +2,7 @@
 variation point (its keys, letters and generality), c/<RD>/answers.tsv, a row per key of a point (what each platform
 does on it, its cause and what follows), and notes-c.md. The brief is studies/subjects/<subject>/briefs/C-analysis.md.
 
-Usage: python3 -I method/analysis_edit.py SUBJECT_DIR RD keys VP_ID --row VID=KEY[;KEY] ... [--open VID=KEY[;KEY]]
+Usage: python3 -I method/analysis_edit.py SUBJECT_DIR RD keys VP_ID [--keep] --row VID=KEY[;KEY] ... [--open VID=KEY[;KEY]]
                                                                  [--absent VID=KEY[;KEY]]
        python3 -I method/analysis_edit.py SUBJECT_DIR RD answer VP_ID KEY --cause TAG [--FIELD TEXT ...]
        python3 -I method/analysis_edit.py SUBJECT_DIR RD point VP_ID --coexistence TEXT [--FIELD TEXT ...]
@@ -14,6 +14,8 @@ Usage: python3 -I method/analysis_edit.py SUBJECT_DIR RD keys VP_ID --row VID=KE
 keys     gives each answer row of the point its keys (every answer row takes one at least), marks the gap rows that
          ask for a key (--open) and the absent rows that exclude one (--absent), and prints what each platform does on
          each key, with the cause the mechanical tests give. Answer rows of keys no longer given are dropped.
+         With --keep, it starts from the point's stored keys, less those of rows no longer there or no longer of
+         that form, and the rows named replace what they held: for a point that gained or changed rows.
 answer   writes one key's row; flags --cause, --cause-basis, --scopes, --reading, --blocked-by, --follows,
          --expensive, --founder-item, --depends-on, --note. What each platform does comes from the keys.
 point    writes the point's row; flags --coexistence, --coexistence-basis, --general, --general-basis, --follows,
@@ -359,7 +361,20 @@ def main(subj, rd, cmd, args):
     if cmd in ("keys", "answer", "point", "show") and (not args or args[0] not in S.points):
         sys.exit(f"{args[0] if args else '(none)'} is not a variation point of {rd}")
     if cmd == "keys":
+        keep = "--keep" in args
+        args = [a for a in args if a != "--keep"]
         vp, km = args[0], {"row": {}, "open": {}, "absent": {}}
+        forms = {"row": ("answer",), "open": ("gap",), "absent": ("absent",)}
+        if keep and S.point_row(vp):                       # start from the stored keys, less rows no longer there
+            old = S.parse_keys(S.point_row(vp)["keys"])
+            for flag in km:
+                for vid, ks in old[flag].items():
+                    if vid in S.rows.get(vp, {}) and S.form(vid) in forms[flag]:
+                        km[flag][vid] = list(ks)
+                    else:
+                        print(f"dropped --{flag} {vid}={';'.join(ks)}: {vid} is no longer "
+                              f"{'a row of ' + vp if vid not in S.rows.get(vp, {}) else 'a ' + forms[flag][0] + ' row'}")
+        named = set()
         k = 1
         while k < len(args):
             flag = {"--row": "row", "--open": "open", "--absent": "absent"}.get(args[k])
@@ -369,12 +384,14 @@ def main(subj, rd, cmd, args):
             vid, keys = vid.strip(), [clean(x) for x in keys.split(";") if x.strip()]
             if vid not in S.rows.get(vp, {}):
                 sys.exit(f"{vid} is not a row of {vp}")
-            want = {"row": ("answer",), "open": ("gap",), "absent": ("absent",)}[flag]
+            want = forms[flag]
             if S.form(vid) not in want:
                 sys.exit(f"--{flag} takes {want[0]} rows; {vid} is {S.form(vid)}")
             if not keys or any(re.search(r"[|=]|;;", x) for x in keys):
                 sys.exit(f"{args[k + 1]}: give one key at least, without '|' or '='")
-            km[flag].setdefault(vid, [])
+            if (flag, vid) not in named:                   # a row named replaces what it held, with --keep too
+                km[flag][vid] = []
+                named.add((flag, vid))
             km[flag][vid] += [x for x in keys if x not in km[flag][vid]]
             k += 2
         for vid, ks in km["open"].items():

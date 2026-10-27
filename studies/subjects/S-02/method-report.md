@@ -636,3 +636,35 @@ The letters' rules moved to a row per point. Expense is judged per key, so a pay
   - bound per market: 10.
 - **S-02's own founder items:** 60, in 45 distinct wordings. Most ask one question, setting by setting: does it take a value per market, or once for the whole store, or both? The register asks it once, as a standing decision, with the settings where the references differ listed under it. What defines a market (S02-VP-26) comes first, since most items depend on it.
 - **What `unknown` waits on:** in most cases, a gap that is a question to Zid, Salla or BigCommerce, named in each key's `blocked_by`. The founder's questions to the platforms ([`reports/S-02-evidence-requests.md`](../../../reports/S-02-evidence-requests.md)) would settle them.
+
+## 12. The capture round: the local agent's runs for H-006 to H-008 (27 October)
+
+**What arrived.** The founder's local agent pushed observed-sh to `19a5f6435`. It holds eleven runs from the Yemen line, each with its `trace.zip`, and the founder relayed the agent's notes:
+- what the runs found, per capture request;
+- pointers to held evidence, a Help Center passage or the schema, for five keys phase C had kept open.
+
+The notes went to the parts as leads. The parts recorded only what the run files and pages show, and left the notes' readings out.
+
+**Before the parts, three things the coordinator found:**
+- **The joined phase B files were behind their folders.** The subject's `variants.tsv` lacked the last round's ten rows, and 45 rows differed, because the folders had not been joined after the last round. The gap-closing brief reads the joined files, so they were joined again. Phase C reads the folders, so it wasn't affected.
+- **The full check needs the capture runs.** Run without `evidence/product-class/runs/*` as arguments, every web quote reads "not captured", and a quote with an ellipsis becomes an error. Run with them, the subject had no error, and every quote was found.
+- **The search tool's caches are rebuilt per commit:** about six and a half minutes for observed-sh's fetch archives. The coordinator built them before the first part ran.
+
+**A2-SH-R1** (82 requests, 14.1 million): the runs on the sign-up, the business entity's country, Shopify Payments and business types.
+- **S02-SH-G10 answered.** A sign-up that chose the United States, from a network traced to Yemen, sent country US. It made a store that is American in its country, addresses, business entity, currency and backup region (S02-SH-1035 to S02-SH-1047). Its time zone was Riyadh's.
+- **S02-SH-G09 narrowed to G14.** A switch of capture-gb-plus's business entity to a US one saved with no step asking for verification (S02-SH-1060 to S02-SH-1073). Whether a check follows later can't be seen in a run.
+- **S02-SH-G13 narrowed to G15.** A Single Member LLC needs a legal name and exactly one account representative, and saving one creates a new legal entity. Switched to it, the store's Managed Markets eligibility names no business type (S02-SH-1081 to S02-SH-1091). The other types, and anything past Shopify Payments' set-up, which stops at its step 2 without a valid SSN or ITIN, aren't held.
+- **What it taught: a gap a run answers in full had no way to be settled.** The checker counted it as a claim of absence nobody had audited. Now the statement that answers a gap says "answers S02-XX-Gnn" in its note, as a narrowed gap is settled by "in place of" in its successor. The gap-closing brief and the checker say so.
+- **The leads' readings were tested, not copied.** "Isn't checked" became the steps between the confirmation and the saved page, with the reading in a note. "The same minute" became arithmetic on the mail's time, also in a note.
+
+**A2-SH-R2** (78 requests, 13.6 million): the runs on markets and the checkout, and the five pointers.
+- **S02-SH-G11 answered:** the checkout's address form and its CountryDetails answer for Saudi Arabia, the United Arab Emirates, Japan, Brazil and Italy (S02-SH-1122 to S02-SH-1137).
+- **S02-SH-G12 narrowed to G16.** On Basic, a second B2B market, a second retail market and a submarket three levels deep each saved Active, with no limit shown. The paid Advanced store offers no POS locations condition. The Grow, Advanced and Plus dev stores, channel markets and a number per plan aren't held.
+- **The five pointers,** recorded from the Help Center and the runs:
+  - S02-VP-57's duty and tax settings: S02-SH-1138 to S02-SH-1143;
+  - S02-VP-63's business entities: S02-SH-1144 to S02-SH-1154;
+  - S02-VP-61's local payment methods: S02-SH-1155 and S02-SH-1156;
+  - S02-VP-62's Shop Pay Installments, powered by Affirm: S02-SH-1157 to S02-SH-1159;
+  - S02-VP-26's condition types on three stores: S02-SH-1094, S02-SH-1101 and S02-SH-1113.
+
+**A ruling on phase C's method** (C-RD2's problem 3, and the local agent's recommendation). Step 3 had no tag for a key that no platform gives, which happens once a contradiction is weighed toward an absence. A platform that doesn't state a key already counts as not giving it in every test. So a key that every platform lacks or doesn't state is now `no difference`, and follows as a commonality the references don't carry. The tool and the brief say so. A key some platform leaves `open` isn't one of these: the tool tries both ways.
