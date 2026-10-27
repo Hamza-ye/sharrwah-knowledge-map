@@ -12,3 +12,22 @@ reread	S02-SH-446	c	placed: joined S02-V-108 (S02-VP-10), the business entity's 
 reread	S02-SH-448	c	placed: joined S02-V-108 (S02-VP-10), the business entity's country code
 reread	S02-SH-267	c	placed: joined S02-V-108 (S02-VP-10), the business entity's country code
 reread	S02-SH-465	c	left noted: its words, identifier and scope (a list of stores) don't say whose country
+revisit	S02-V-089	b	replaced with an answer, the VAT number validated with the issuing country (S02-BC-277); gap S02-BC-G09 added beside it (S02-V-250); S02-BC-282 placed under S02-VP-06; 5 leads noted
+revisit	S02-V-090	b	replaced with an answer, the Manage Settings permission (S02-BC-261); added S02-V-251, the Information & Settings modify scope (S02-BC-205, 206, 207); 4 leads joined S02-V-099, the seller; S02-BC-260, 261 and 206 also under S02-VP-04; 11 leads noted
+revisit	S02-V-091	b	replaced with an answer, at any time (S02-BC-251); S02-BC-207, 254 and 261 placed under S02-VP-06; S02-BC-264 and 272 noted
+revisit	S02-V-026	d	replaced with an answer, nearly every country in the world (S02-SH-612)
+revisit	S02-V-084	b	replaced with an answer, Stripe checks the business details (S02-WC-258, 257, 260, 261); added S02-V-254, the platform's code checks the location's form (S02-WC-262), and gap S02-WC-G06 (S02-V-255); S02-WC-511 joined S02-V-098; S02-WC-259 joined S02-V-082 (S02-VP-04); S02-WC-512 noted
+revisit	S02-V-038	d	replaced with gap S02-ZD-G09; no leads
+reread	S02-SA-249	a	left noted: its identifier places the country in 'default_branch', a branch, which rule 1 keeps out
+reread	S02-SH-259	a	placed: joined S02-V-006 (S02-VP-01), by its identifier, combobox 'I'm located in:'
+reread	S02-SH-260	a	placed: joined S02-V-001 (S02-VP-01), by its identifier, 'Add business entity, country'
+reread	S02-SH-396	a	placed: joined S02-V-001 (S02-VP-01), by its identifier, the route that creates business details
+reread	S02-SH-260	b	already placed under (b), in S02-V-053 (S02-VP-04); no change
+reread	S02-SH-396	b	placed: joined S02-V-053 (S02-VP-04), the seller, by its identifier, the admin's form that creates business details
+reread	S02-SH-441	b	left noted: its scope now says whose country, the business entity's, but it names no one who sets, checks or changes it, nor a condition
+reread	S02-SH-448	b	left noted: its scope now says whose country, but its words give the fields' requirements, and name no one who sets, checks or changes it, nor a condition
+reread	S02-SH-259	d	left noted: its identifier names the merchant's location field, not where Shopify serves merchants
+reread	S02-ZD-148	a	placed: new row S02-V-256 (S02-VP-01), by its identifier, user.business_location
+reread	S02-ZD-149	a	left noted: its identifier says whose profile, the account user's, but not that its country is where the merchant is based, registered or resident
+reread	S02-ZD-148	b	left noted: its identifier names the business location, but it names no one who sets, checks or changes it, nor a condition
+note	S02-ZD-180	a	noted: Saudi Terms in zid.eg's raw HTML, which the page as shown replaces

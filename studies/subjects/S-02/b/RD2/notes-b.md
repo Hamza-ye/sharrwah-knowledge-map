@@ -269,3 +269,257 @@ Each point's `raised_by` holds only shopify's statements, so RD2-2's rows were c
 - BigCommerce's default channel (S02-V-466): 'provisioned with one channel out of the box' is read as 'by default', so the platform's (a reading, marked in the row).
 - Scopes and permissions: bigcommerce's S02-BC-004, the API scope 'store_channel_settings' at 'modify', 'View and modify a list of channels', is placed under S02-VP-29 as a permission that gates changing channels (S02-V-467). RD2-1 noted shopify's read scopes, which gate no change, and its page permissions; salla's 'branches_management' (S02-SA-255, S02-SA-257) gates a page, and is noted the same way.
 - Activation and publishing: salla's activating a market (S02-SA-044) is placed under S02-VP-29, as RD2-1 placed shopify's activating and deactivating (S02-V-428). Zid's creating a market hidden or published (S02-ZD-022) is placed under S02-VP-28, since its identifier puts it among the steps of creating a market.
+
+## Second pass, RD2-S1: every task of RD2's work list, bullets (e) and (g), all five platforms
+
+### Revisits
+
+- S02-V-424 (shopify, S02-VP-27, was `gap` S02-SH-G03). Its leads: S02-SH-689, S02-SH-704 and S02-SH-706 ('unlimited number of country or region markets') joined S02-V-411; S02-SH-707 ('The number of markets that you can create depends on your subscription plan.') joined S02-V-412; S02-SH-689 ('Create B2B markets'), S02-SH-706 and S02-SH-707 ('you can create') joined S02-V-425, the seller, under S02-VP-28. Two answers no row held: S02-V-424 is replaced by 'you can assign up to 3 active catalogs across all your B2B markets' (S02-SH-703, S02-SH-704), and S02-V-470 is added, 'you can create an unlimited number of B2B market catalogs' (S02-SH-703, S02-SH-704), both rules on what B2B markets may hold. S02-SH-G03 was settled by gap-closing and goes; the gap `why` names, S02-SH-G07, stands beside them as S02-V-471.
+- S02-V-449 (woocommerce, S02-VP-27, was `gap` S02-WC-G04). Its leads are about shipping zones, which RD2-2 held to be shipping, under (f), not a market; they are noted below. Gap-closing settled S02-WC-G04 and left no gap or absence for the point, so the row is now `not covered` (see "Rows `not covered`").
+
+### Rereads (RD2-2, (e); rule 4 as widened on 27 October 2026)
+
+All four are placed; their earlier notes stay.
+- S02-SA-026: the seller's controls that switch the multiple markets feature on ('اضغط (فعل الآن)', 'اضغط (تأكيد)'), joined to the seller's rows S02-V-438 (S02-VP-28) and S02-V-439 (S02-VP-29).
+- S02-SA-054: the account manager who enables the feature, a new row S02-V-472 under S02-VP-28, and in the new row S02-V-473 under S02-VP-29.
+- S02-SA-055 and S02-SA-059: the account manager who disables it, in S02-V-473 under S02-VP-29.
+
+### Statements noted under (e)
+
+- S02-WC-269 (e): 'You can add as many shipping zones or shipping methods as you need to your shipping settings; there is no limit.': a limit on shipping zones, shipping under (f), not on a market; X fails the role test
+- S02-WC-270 (e): 'A shipping zone is a geographical area to which you ship items.': shipping, under (f); X fails the role test
+- S02-SA-382 (e): 'Each store decides which countries it ships to and which payment methods it accepts.': the countries a store ships to, shipping under (f), and payment methods; X fails the role test
+- S02-SH-628 (e): 'Pre-approved expansion store types', such as 'International stores': an expansion store is a store of its own on a Shopify Plus organization's contract, not a market a store sells into; X fails the role test
+- S02-SH-629 (e): 'Shopify Plus plan organizations can have a maximum of ten stores on their contract': a limit on an organization's stores, not on a store's markets; X fails the role test
+- S02-SH-783 (e): 'you can restrict access so that only logged-in B2B customers can view your store': who may view the store, a setting under (f); answers none of (e)'s questions
+- S02-SH-784 (e): 'restricting access might redirect D2C customers to authentication on some pages': a setting of the store's access, under (f); answers none of (e)'s questions
+- S02-SH-927 (e): 'Shipping profiles and shipping rates are gradually moving to shipping options by market': shipping per market, under (f); answers none of (e)'s questions
+- S02-SH-939 (e): the shipping zone's countries and regions, with 'Add more countries/regions in Markets': a shipping zone, shipping under (f), not a market; X fails the role test, as RD2-1 held for S02-SH-235
+
+### Statements noted under (g)
+
+- S02-SH-653 (g): 'the Customer information settings apply to every country and market that you sell to': a setting that holds for the whole store, RD3's half
+
+### Shopify's other statements under (e), placed
+
+S02-SH-603, S02-SH-604, S02-SH-606, S02-SH-607, S02-SH-609, S02-SH-611, S02-SH-920, S02-SH-924 and S02-SH-925 joined S02-VP-26's rows S02-V-400, S02-V-401, S02-V-403, S02-V-404 and S02-V-405; S02-SH-605 joined S02-V-420 and S02-SH-937 S02-V-412. New rows: under S02-VP-27, S02-V-474 (S02-SH-604, what a channel market may hold), S02-V-475 (S02-SH-924, locations on Shopify POS Lite) and S02-V-476 (S02-SH-925, retail and online customers within one region); under S02-VP-28 and S02-VP-29, S02-V-477 and S02-V-478, apps (S02-SH-606); under S02-VP-29, S02-V-479, the platform, which deactivates the markets past a new plan's limit (S02-SH-937). S02-SH-609 names market types by their use ('for cross-border selling, wholesale, retail, and selling across sales channels'): only its 'sales channels' names what defines one, so it is placed in S02-V-405 only.
+
+### zid: statements noted under (e)
+
+- S02-ZD-186 (e): 'The endpoint returns all countries' names, codes, and IDs, and is not specific to any particular store's operations': a list of every country, not a market; answers none of (e)'s questions
+- S02-ZD-187 (e): 'The **Region & Language popup** allows customers to change the store language, country, and city': the buyer switches region, market selection under (f); answers none of (e)'s questions
+- S02-ZD-190 (e): '`zid.store.region.countries`', 'Returns the list of store countries': a theme function's list of countries, which the statement doesn't say define a market; answers none of (e)'s questions
+- S02-ZD-191 (e): '`zid.store.region.setRegion`', 'Changes the store language, country, and city': the buyer's region, market selection under (f); answers none of (e)'s questions
+- S02-ZD-447 (e): 'نربطك مباشرة بأكبر الأسواق' (my translation: we connect you directly to the biggest markets): names markets without what defines one, a limit, or who creates, changes or removes one; answers none of (e)'s questions
+
+### zid, bigcommerce and salla: statements noted under (g)
+
+None of these says that the platform has no market of the kind in (e), RD2's half of (g) (rule 4). Each is noted with what it says: a setting that holds for the whole store is RD3's half; the rest are neither half.
+
+- S02-ZD-231 (g): 'لا يمكن تفعيل أكثر من نطاق في نفس الوقت.' (my translation: more than one domain can't be activated at the same time): the domain, a setting that holds for the whole store, RD3's half
+- S02-BC-176 (g): 'Other features, like tax, belong to the global store': taxes, a setting that holds for the whole store, RD3's half
+- S02-BC-185 (g): 'Currently, you cannot have different warehouse locations and inventory service different storefront channels.': locations, a setting that holds for the whole store, RD3's half
+- S02-BC-292 (g): 'settings like measurement units and factoring dimension are applied globally': units, a setting that holds for the whole store, RD3's half
+- S02-SA-339 (g): the Terms of Use's definition of the consumer, '( المستهلك ) يقصَد بهذه العبارة كل مستهلك يقوم بشراء المنتج أو الخدمة من التاجر' (my translation: the consumer means every consumer who buys the product or service from the merchant): neither half
+- S02-SA-340 (g): 'في حال قيام التاجر بالتسجيل كمؤسسة أو شركة' (my translation: where the merchant registers as an establishment or company): the merchant's legal capacity, in the Terms; neither half
+- S02-SA-341 (g): 'لا تلتزم منصة سلة بإتمام عمليات بيع المنتجات أو الخدمات بين المستهلك والمتجر' (my translation: Salla doesn't undertake to complete sales between the consumer and the store): who sells, for every store; not RD2's half
+- S02-SA-342 (g): 'إن جميع التعاملات التي تتم بين التاجر والمستهلك لا علاقة لها بشخص منصة سلة' (my translation: all dealings between the merchant and the consumer have no relation to Salla itself): who sells, for every store; not RD2's half
+- S02-SA-343 (g): 'كافة المتاجر الإلكترونية المسجلة في منصة سلة تمتلك سجل تجاري الكتروني خاص بها' (my translation: every online store registered on Salla holds its own commercial register): who sells, for every store; not RD2's half
+- S02-SA-344 (g): 'اتفاقية الاستخدام هذه سارية على كافة المستخدمين لمنصة سلّة' (my translation: these Terms of Use apply to all of Salla's users): the terms, for every user; neither half
+- S02-SA-377 (g): 'المتجر الذي اشتريت منه هو من ينفّذ الاسترجاع ويصدر ردّ المبلغ' (my translation: the store you bought from carries out the return and issues the refund): returns, for every store; not RD2's half
+- S02-SA-378 (g): 'تختلف تجربة الاسترجاع من متجر لآخر' (my translation: the return experience differs from store to store): returns, which differ by store; not RD2's half
+- S02-SA-379 (g): 'As a shopper, you buy from the store itself, not from Salla.': who sells; not RD2's half
+- S02-SA-380 (g): 'It owns the product, sets the price and the return policy, prepares and ships your order': who sells, and who sets prices and returns; not RD2's half
+- S02-SA-381 (g): 'The seller is the store where you placed the order': who sells; not RD2's half
+- S02-SA-386 (g): 'Allow customers to cancel orders before they're processed.': cancellations, a setting of the whole store, RD3's half
+- S02-SA-394 (g): 'الطلبات بالعملات المختلفة بعد تحويلها إلى العملة الأساسية للمتجر' (my translation: orders in different currencies after converting them to the store's base currency): reports in the store's base currency, RD3's half
+- S02-SA-395 (g): 'converted to the store currency': reports in the store's currency, RD3's half
+- S02-SA-401 (g): 'تثبيت تطبيق Google Analytics واختيار حساب المتجر على Google Analytics' (my translation: install the Google Analytics app and choose the store's account on Google Analytics): an app linked for the store; not RD2's half
+- S02-SA-402 (g): 'أدخل نطاق/دومين متجرك' (my translation: enter your store's domain), in linking Google Analytics: not RD2's half
+- S02-SA-403 (g): 'اختر مصدر بيانات متجرك من القائمة المتاحة' (my translation: choose your store's data source from the list): an app's setting for the store; not RD2's half
+- S02-SA-404 (g): 'ويمكنك إعادة الربط مع أي حساب آخر على Google Analytics في أي وقت تريد' (my translation: you can link again with any other Google Analytics account at any time): an app's link for the store; not RD2's half
+- S02-SA-405 (g): 'create a Google Tag Manager account and container for your store URL': an app for the store; not RD2's half
+- S02-SA-406 (g): 'Keep one container per store.': an app's container for the whole store; not RD2's half
+- S02-SA-407 (g): 'The pixel, the Conversions API and your product catalog are all connected automatically when you link your account.': an app's link for the store; not RD2's half
+- S02-SA-408 (g): 'Choose the pixel you want, then click (Continue).': a step in linking an app; not RD2's half
+- S02-SA-416 (g): 'The Salla App Store is where you browse and install apps that add features to your store': apps for the store; not RD2's half
+- S02-SA-417 (g): 'Turn all store notifications on or off.': messages, a setting that holds for the whole store, RD3's half
+- S02-SA-418 (g): the notifications table's headers, 'Email' and 'App notifications': messages, RD3's half
+- S02-SA-419 (g): the staff permission 'store_notification_settings_management': staff access to the store's notification settings, RD3's half
+- S02-SA-420 (g): 'استقبل إشعارات مباشرة على جوالك أو جهازك اللوحي' (my translation: receive notifications directly on your phone or tablet): notifications to the merchant; not RD2's half
+- S02-SA-431 (g): 'Saudi Arabia time is currently the only time zone available.': the time zone of booking products, RD3's half
+- S02-SA-432 (g): 'Currently, booking times use Saudi Arabia time only.': the time zone of booking products, RD3's half
+- S02-SA-433 (g): 'If enabled, Saudi Arabia (Riyadh) time will be used in the order prep list.': the time zone of the order prep list, RD3's half
+- S02-SA-434 (g): the weight units, 'Gram', 'Kilogram', 'Pound' and 'Ounce': units, RD3's half
+- S02-SA-435 (g): 'Product weight and weight unit': units, per product; not RD2's half
+- S02-SA-436 (g): 'Default product weight for shipping': a default for the whole store, RD3's half
+
+### bigcommerce: statements under (e)
+
+Placed: S02-BC-162 in S02-V-453 and S02-V-462; S02-BC-163, S02-BC-164, S02-BC-172, S02-BC-174, S02-BC-177, S02-BC-180 and S02-BC-323 in S02-V-455, S02-BC-323 also in S02-V-456 and S02-V-457; S02-BC-172 and S02-BC-177 in S02-V-465, the merchant. New rows under S02-VP-27: S02-V-480, storefront seats or the plan (S02-BC-178); S02-V-481, a locale in one storefront only (S02-BC-179); S02-V-482, up to five languages a channel (S02-BC-286). Noted:
+
+- S02-BC-173 (e): 'Each locale's subfolder is set in the control panel on your default channel.': a domain subpath for a language on one channel, domain and language under (f); answers none of (e)'s questions
+- S02-BC-183 (e): 'The Carts API supports selling in different markets by allowing locale-based overrides for product details.': names markets without what defines one; its overrides are product details per locale, under (f); answers none of (e)'s questions
+- S02-BC-204 (e): 'Fires when customer settings that affect the specified channel are updated': a webhook on a channel's settings, under (f); answers none of (e)'s questions
+
+### woocommerce: statements noted under (g)
+
+None of woocommerce's statements under (g) in this work list says that the platform has no market of the kind in (e), RD2's half of (g) (rule 4). Each is noted with what it says: a setting that holds for the whole store is RD3's half; the rest are neither half.
+
+- S02-WC-266 (g): 'customers from all over the world can use the gateway to check out and pay': payment methods, for every buyer, RD3's half
+- S02-WC-274 (g): 'you're solely responsible for all of your ecommerce activities': who sells, in the terms; not RD2's half
+- S02-WC-275 (g): 'User is solely responsible for, and Stripe disclaims all liability for, the provision of goods and services sold to User's Customers': who sells, in a provider's terms; not RD2's half
+- S02-WC-276 (g): 'must maintain fair and legally compliant return, refund, cancellation, and adjustment policies': returns, for every store; not RD2's half
+- S02-WC-277 (g): 'are responsible for all products and services you provide, including delivery, support, refunds, returns': who sells; not RD2's half
+- S02-WC-281 (g): 'WITHDRAWAL_WINDOW_IN_DAYS           = 14': returns, a value for the whole store, RD3's half
+- S02-WC-282 (g): 'Enable the public order withdrawal feature for customer requests.': returns, a setting of the whole store, RD3's half
+- S02-WC-283 (g): 'It’s up to you how withdrawal requests are handled': returns, RD3's half
+- S02-WC-284 (g): 'The form accepts requests for orders of any age.': returns, RD3's half
+- S02-WC-285 (g): 'We have created a sample draft Refund and Returns Policy page for you.': returns, a page of the whole store, RD3's half
+- S02-WC-288 (g): '$default_weight_unit = $locale_info['US']['weight_unit'];': the units' default, RD3's half
+- S02-WC-289 (g): 'This controls what unit you will define weights in.': units, a setting of the whole store, RD3's half
+- S02-WC-290 (g): 'which determines the weight unit used throughout the store': units, a setting that holds for the whole store, RD3's half
+- S02-WC-291 (g): 'This controls what unit you will define lengths in.': units, a setting of the whole store, RD3's half
+- S02-WC-310 (g): the site's time zone, 'timezone_string': a setting of the whole site, RD3's half
+- S02-WC-311 (g): 'The date the order was created, in the site's timezone.': the site's time zone, RD3's half
+- S02-WC-312 (g): 'Set your store\'s address, visibility, currency, language, and timezone.': settings of the whole store, RD3's half
+- S02-WC-315 (g): 'Choose the currency the store will display on products.': currency, RD3's half
+- S02-WC-324 (g): 'Go to WP Admin > Settings > General and adjust the Site Language.': language, RD3's half
+- S02-WC-325 (g): 'the shop displays in your locale if the language file exists': language, RD3's half
+- S02-WC-329 (g): 'Allows customers to checkout without an account.': checkout and customer accounts, RD3's half
+- S02-WC-330 (g): 'Account creation', 'After checkout (recommended)': checkout and customer accounts, RD3's half
+- S02-WC-331 (g): 'Customers can create an account before placing their order.': checkout and customer accounts, RD3's half
+- S02-WC-332 (g): 'Account creation', 'On "My account" page': customer accounts, RD3's half
+- S02-WC-333 (g): 'Set options relating to customer accounts and data privacy.': customer accounts and privacy, RD3's half
+- S02-WC-338 (g): 'Go to WooCommerce > Settings and select the Accounts and Privacy tab.': customer accounts and privacy, RD3's half
+- S02-WC-339 (g): 'Use these settings to enable or disable guest checkout, control customer account creation': checkout and customer accounts, RD3's half
+- S02-WC-340 (g): 'Allow customers to check out without creating an account.': checkout and customer accounts, RD3's half
+- S02-WC-341 (g): 'Allow customers to create an account before placing their order.': customer accounts, RD3's half
+- S02-WC-346 (g): 'This setting determines which shop pages products will be listed on.': products, RD3's half
+- S02-WC-347 (g): the catalog visibility options 'Shop and search results', 'Shop only', 'Search results only' and 'Hidden': products, RD3's half
+- S02-WC-348 (g): 'Hide out of stock items from the catalog': products, RD3's half
+- S02-WC-361 (g): 'WooCommerce core offers fixed-cart, fixed-product, and percentage-based coupons.': discounts, RD3's half
+- S02-WC-362 (g): 'You need an administrator or shop manager account to manage coupons.': discounts and staff access, RD3's half
+- S02-WC-364 (g): 'WooCommerce core does not apply coupon codes automatically.': discounts, RD3's half
+- S02-WC-366 (g): 'Enable the use of coupon codes': discounts, a setting of the whole store, RD3's half
+- S02-WC-368 (g): 'Enable or disable coupons in your store.': discounts, RD3's half
+- S02-WC-373 (g): the product's 'Sale price', labelled with 'get_woocommerce_currency_symbol()': prices in the store's one currency, RD3's half
+- S02-WC-375 (g): 'select options that apply site-wide for Store Notice, Product Catalog, and Product Images': storefront design, RD3's half
+- S02-WC-376 (g): 'Add a store wide alert/banner notice': storefront design, RD3's half
+- S02-WC-377 (g): 'If enabled, this text will be shown site-wide.': storefront design, RD3's half
+- S02-WC-379 (g): 'The Customize your store task opens a simplified design screen': storefront design, RD3's half
+- S02-WC-386 (g): the option '"From" name', 'woocommerce_email_from_name': messages to buyers, RD3's half
+- S02-WC-387 (g): the option '"From" address', 'woocommerce_email_from_address': messages to buyers, RD3's half
+- S02-WC-395 (g): 'Enable stock management': stock, a setting of the whole store, RD3's half
+- S02-WC-396 (g): 'Track stock quantity for this product': stock, a setting per product; not RD2's half
+- S02-WC-401 (g): 'Enable this feature to track and credit channels and campaigns that contribute to orders on your site': a feature of the whole site, RD3's half
+- S02-WC-404 (g): 'You can enable (or disable) this feature by going to WooCommerce > Settings > Advanced > Features > Order Attribution.': RD3's half
+- S02-WC-408 (g): 'All data in your site’s Analytics menu will be converted into your store’s default currency.': reports in the default currency, RD3's half
+- S02-WC-411 (g): 'check or uncheck the Enable tracking checkbox': data sharing, a setting of the whole store, RD3's half
+- S02-WC-412 (g): 'You can configure GA4 in your store’s WP Admin dashboard': an extension's setting for the whole store, RD3's half
+- S02-WC-418 (g): 'Leave this box unchecked if you do not want to pull suggested extensions from WooCommerce.com.': a setting of the admin; not RD2's half
+- S02-WC-422 (g): 'One active subscription key can be used on one active (production) site': a WooCommerce.com subscription, the platform's own account; neither half
+- S02-WC-423 (g): 'Set the locale to the store locale for customer emails to make sure emails are in the store language.': messages in the store's language, RD3's half
+- S02-WC-425 (g): 'For each WooCommerce email listed, it’s possible to configure your settings (optional).': messages, RD3's half
+- S02-WC-426 (g): 'use the “From” name and “From” address fields to set the sender identity customers see': messages, RD3's half
+- S02-WC-428 (g): 'Let customers sign up to be notified when products in your store are restocked.': messages, RD3's half
+- S02-WC-430 (g): 'Enter recipients (comma separated) that will receive this notification.': notifications to the store's own staff; not RD2's half
+- S02-WC-431 (g): 'Enable low stock notifications': notifications to the store's own staff; not RD2's half
+- S02-WC-432 (g): 'Enter comma-separated recipients for this email.': emails to shop managers and admins; not RD2's half
+- S02-WC-440 (g): 'Enable WooCommerce Analytics to track your store\'s key metrics': reports, a feature of the whole store, RD3's half
+- S02-WC-441 (g): 'This section controls the display of your website privacy policy.': privacy, RD3's half
+- S02-WC-442 (g): 'Optionally add some text about your store privacy policy to show on account registration forms.': privacy, RD3's half
+- S02-WC-443 (g): 'Optionally add some text about your store privacy policy to show during checkout.': privacy, RD3's half
+- S02-WC-444 (g): 'Choose how long to retain personal data': privacy, RD3's half
+- S02-WC-445 (g): 'This section lets you select a privacy policy page': privacy, RD3's half
+- S02-WC-446 (g): 'Open Settings > Privacy, where you can select your privacy policy page.': privacy, RD3's half
+- S02-WC-447 (g): 'Use this section to decide how long your store keeps order data.': privacy, RD3's half
+- S02-WC-451 (g): 'Use these roles to control who can manage products, view reports, and configure store settings.': staff access, RD3's half
+- S02-WC-452 (g): 'choose a role from the Role dropdown': staff access, RD3's half
+- S02-WC-453 (g): 'WooCommerce adds several capabilities to the existing Administrator role.': staff access, RD3's half
+- S02-WC-454 (g): 'Manage WooCommerce — Access to WooCommerce settings and configuration.': staff access, RD3's half
+- S02-WC-455 (g): 'View WooCommerce reports — Access to all WooCommerce analytics and reports.': staff access, RD3's half
+- S02-WC-456 (g): 'The Shop Manager role allows someone to manage your store without granting full Administrator access.': staff access, RD3's half
+- S02-WC-457 (g): 'Manage WooCommerce — Full access to all WooCommerce settings and configuration.': staff access, RD3's half
+- S02-WC-458 (g): 'View WooCommerce reports — Access to all WooCommerce analytics and reports.': staff access, RD3's half
+- S02-WC-459 (g): 'Manage products — Create, edit, delete, and publish products': staff access, RD3's half
+- S02-WC-460 (g): 'Manage orders — View, edit, and delete orders, as well as process refunds.': staff access, RD3's half
+- S02-WC-461 (g): 'Manage customers — Shop Managers can view user details for all roles.': staff access, RD3's half
+- S02-WC-462 (g): 'Shop Managers also have general WordPress editor capabilities': staff access, RD3's half
+- S02-WC-463 (g): 'you can use an extension or plugin to adjust permissions without editing code': staff access, RD3's half
+- S02-WC-464 (g): 'A WooCommerce extension that allows you to add, assign, and switch user roles within your store.': staff access, RD3's half
+- S02-WC-465 (g): 'A WordPress plugin that provides a detailed interface for editing role capabilities.': staff access, RD3's half
+- S02-WC-466 (g): 'A WordPress plugin for managing user roles, capabilities, and content permissions.': staff access, RD3's half
+- S02-WC-467 (g): 'A WordPress plugin for managing group-based access control and permissions.': staff access, RD3's half
+- S02-WC-468 (g): 'add_role( 'shop_manager', 'Shop manager',': staff access, RD3's half
+- S02-WC-469 (g): '$wp_roles->add_cap( 'shop_manager', $cap );': staff access, RD3's half
+- S02-WC-470 (g): 'these are assigned to admin/shop manager during installation or reset': staff access, RD3's half
+- S02-WC-471 (g): '$capabilities['core'] = array( 'manage_woocommerce', 'create_customers', 'view_woocommerce_reports', );': staff access, RD3's half
+- S02-WC-472 (g): '$capability_types = array( 'product', 'shop_order', 'shop_coupon' );': staff access, RD3's half
+- S02-WC-473 (g): 'woocommerce_shop_manager_editable_roles': staff access, RD3's half
+- S02-WC-474 (g): ''settings' => 'manage_woocommerce'': staff access, RD3's half
+- S02-WC-475 (g): ''shipping_methods' => 'manage_woocommerce'': staff access, RD3's half
+- S02-WC-476 (g): 'Coming soon mode controls who can visit your site while you prepare it for launch.': store status, a setting of the whole site, RD3's half
+- S02-WC-477 (g): 'Go to WooCommerce > Settings > Site visibility to switch between Coming soon and Live.': store status, RD3's half
+- S02-WC-478 (g): 'The badge reads Coming soon, Store coming soon, or Live based on your visibility settings.': store status, RD3's half
+- S02-WC-479 (g): 'From this screen, choose Coming soon or Live.': store status, RD3's half
+- S02-WC-480 (g): 'When Coming soon mode is enabled, your site is in a development state and not accessible to the public.': store status, RD3's half
+- S02-WC-481 (g): 'Enabling this option ensures that only store-related pages are protected by Coming soon mode.': store status, RD3's half
+- S02-WC-482 (g): 'Visitors will not be able to access store pages without permission': store status, RD3's half
+- S02-WC-483 (g): 'the Coming soon landing page is displayed instead of the following WooCommerce store pages': store status, RD3's half
+- S02-WC-484 (g): 'Cart (Assigned via WooCommerce > Settings > Advanced).': a store page under Coming soon mode, store status, RD3's half
+- S02-WC-485 (g): 'Checkout (Assigned via WooCommerce > Settings > Advanced).': a store page under Coming soon mode, store status, RD3's half
+- S02-WC-486 (g): 'Terms and conditions (Assigned via WooCommerce > Settings > Advanced).': a store page under Coming soon mode, store status, RD3's half
+- S02-WC-487 (g): 'Shop (Assigned via WooCommerce > Settings > Products > General).': a store page under Coming soon mode, store status, RD3's half
+- S02-WC-488 (g): 'Privacy policy (Assigned via Settings > Accounts & Privacy).': a store page under Coming soon mode, store status, RD3's half
+- S02-WC-489 (g): 'A private link is generated for you to provide selective access to your site': store status, RD3's half
+- S02-WC-490 (g): 'When live mode is enabled, your site is fully accessible to all visitors': store status, RD3's half
+- S02-WC-491 (g): 'Stores that are already live will default to live mode': store status, RD3's half
+- S02-WC-492 (g): 'Stores that install WooCommerce and complete the onboarding process will default to Coming soon mode.': store status, RD3's half
+- S02-WC-493 (g): 'This is the default setting for new sites, determined by the fresh_site WordPress flag.': store status, RD3's half
+- S02-WC-494 (g): 'If the first admin user registration date is less than a month ago.': store status, RD3's half
+- S02-WC-495 (g): 'the Apply to store pages only toggle is enabled by default': store status, RD3's half
+- S02-WC-496 (g): 'This guide provides examples for third-party developers and hosting providers on how to integrate their systems with WooCommerce's coming soon mode.': store status, RD3's half
+- S02-WC-497 (g): 'WooCommerce's coming soon mode allows you to temporarily make your site invisible to the public while you work on it.': store status, RD3's half
+- S02-WC-498 (g): 'The coming soon mode can be programmatically synced from a plugin or application.': store status, RD3's half
+- S02-WC-499 (g): 'Integrating with a maintenance mode plugin.': store status, RD3's half
+- S02-WC-500 (g): 'Integrating with a hosting provider's coming soon mode.': store status, RD3's half
+- S02-WC-501 (g): 'enable or disable WooCommerce coming soon mode from another plugin by directly updating woocommerce_coming_soon option': store status, RD3's half
+- S02-WC-502 (g): 'We could also programmatically bind the coming soon option from another plugin': store status, RD3's half
+- S02-WC-503 (g): 'It is possible for developers to add custom exclusions that bypass the coming soon protection.': store status, RD3's half
+- S02-WC-504 (g): 'you may want to add a custom page to the list of store pages which will be restricted by coming soon mode': store status, RD3's half
+- S02-WC-505 (g): 'Use the Launch your store task when you’re ready to make your store public.': store status, RD3's half
+- S02-WC-506 (g): 'From the site visibility settings, you’ll be able to enable Coming soon mode': store status, RD3's half
+- S02-WC-507 (g): 'if ( current_user_can( 'manage_woocommerce' ) ) {': store status and staff access, RD3's half
+- S02-WC-508 (g): 'apply_filters( 'woocommerce_coming_soon_exclude', false )': store status, RD3's half
+- S02-WC-509 (g): ''woocommerce_coming_soon' => array( 'yes', 'no' )': store status, RD3's half
+
+### woocommerce: statements noted under (e)
+
+- S02-WC-359 (e): 'You can only select the countries that you’re targeting on Google Merchant Center. Your target countries must be eligible for both Google Merchant Center and Google Ads.': the countries the Google for WooCommerce extension targets with listings and ads on Google, which the statement doesn't say are a market the store sells into; X fails the role test (WooCommerce's market is its selling locations, as RD2-2 held)
+
+### RD2-S1: rows `not covered`
+
+- S02-V-449: woocommerce, S02-VP-27 (`what limits "market"`), was `gap` S02-WC-G04. Gap-closing settled the gap and left none for the point, and its leads (S02-WC-269, S02-WC-270) are about shipping zones, noted above. No statement, gap or absence of woocommerce answers the point, so the row goes back to woocommerce (rule 4).
+
+### RD2-S1: matching (rule 5)
+
+Each statement placed was compared with the point's `raised_by`. The rows joined are each platform's own, and keep their bases. The new rows of salla (S02-V-472, S02-V-473) and bigcommerce (S02-V-480 to S02-V-482) share no term, identifier or definition with the shopify statements in `raised_by` (S02-SH-111, S02-SH-301, S02-SH-286; S02-SH-115, S02-SH-116, S02-SH-288; S02-SH-061, S02-SH-128, S02-SH-288), so each takes `answers` alone, as do shopify's new rows.
+
+### RD2-S1: new kinds, searches and candidates for a new point
+
+- New kinds: none; (e)'s points take no kind (rule 3).
+- Searches for earlier platforms' rows: none; the second pass raised no point.
+
+### Candidates for a new point
+
+None. Every statement of the work list that answers one of (e)'s questions does so for a market a store sells into, the one X of (e)'s points, and none of the (g) statements says that the platform has no market of the kind in (e).
+
+### RD2-S1: problems with the method
+
+- S02-V-449 is now `not covered`, after gap-closing. Phase A's gap S02-WC-G04 asked, under (e), how many shipping zones a store can hold; gap-closing answered it (S02-WC-269: 'there is no limit'), but under the role test, as RD2-2 held, a shipping zone is not a market, so the answer is noted. The row goes back to woocommerce, and A2 has run: the coordinator decides.
+- Rule 4, as widened on 27 October 2026, makes the party that switches a feature on its own answer under both `who creates` and `who changes or removes`. S02-SA-054 ('Contact your account manager to enable this feature.') names no feature by name: that it is the multiple markets feature is a reading, marked in S02-V-472 and S02-V-473. S02-SA-059 is in the same list as S02-SA-058, which names the market. S02-SA-026, the seller's own controls, joined the seller's rows.
+- S02-SH-703 and S02-SH-704 set limits on the catalogs B2B markets hold. They are placed under S02-VP-27 as rules on what a market may hold (S02-V-424, S02-V-470), as RD2-1 placed what a channel market may hold (S02-V-420). If such rules are read as (f)'s alone, the two rows go.
+- S02-SH-604 ('Merchants can't configure web presence, domains, or discounts for channel markets.'), S02-SH-925 and S02-BC-286 ('Each channel can support up to five languages.') are rules on which settings a market may hold. They are placed under S02-VP-27 (S02-V-474, S02-V-476, S02-V-482), whose note holds both limits on how many and on what a market holds; they also bear on RD3's points.
+- S02-SH-628 and S02-SH-629, Shopify Plus's expansion stores (including 'International stores' in another region or currency), are noted: an expansion store is a store of its own, not a market of a store.
+- S02-WC-359, Google for WooCommerce's target countries, is noted. If a sales channel's target countries count as a market a store sells into, as zid's and bigcommerce's channels do (S02-V-443, S02-V-453), it answers S02-VP-27 for woocommerce, and S02-V-449 would take it in place of `not covered`.

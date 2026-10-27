@@ -491,3 +491,98 @@ Placed, continued: S02-SH-956 is a new row under S02-VP-17, S02-V-249, every sto
 - S02-SH-960 (c): 'You're charged based on the number of SMS marketing messages sent to each recipient': its decider is the messages and their recipients (rule 4); its example's 'if you're located in Denmark' doesn't say the location decides the charge; in S02-VP-14's note
 
 Rows compared with a statement of their own platform were rechecked under rule 5: each joined statement names its row's decider in its own words, or, where said, by its scope.
+
+## Second pass, RD1-S1
+
+Part RD1-S1 of the second pass: the tasks of `b/second-pass/RD1/worklist.tsv` under (a), (b) and (d), for Shopify, Salla, Zid, WooCommerce and BigCommerce.
+
+### Revisits S02-V-089, S02-V-090 and S02-V-091 (bigcommerce, S02-VP-05, S02-VP-06 and S02-VP-07)
+
+S02-V-089 (S02-VP-05, who checks): `gap` (S02-BC-G01) became an answer row, S02-V-089, 'validating the VAT number with the issuing country' (S02-BC-277): the account's VAT number is the merchant's tax registration, which rule 1 counts as the store's own country; that BigCommerce ('We', in the error message its identifier quotes) validates it with the issuing country is my reading, marked in its basis_evidence. Beside it, a `gap` row, S02-V-250, with S02-BC-G09, which asks who checks the default country, the country defined at sign-up or the hosting region, which the answer doesn't give. S02-BC-G01 was settled by gap-closing and goes.
+
+S02-V-090 (S02-VP-06, who changes): `gap` (S02-BC-G02) became two answer rows: S02-V-090, 'the Manage Settings permission must be enabled on your user account' (S02-BC-261), and S02-V-251 (added), 'Information & Settings | modify | `store_v2_information`' (S02-BC-207, S02-BC-205, S02-BC-206), the OAuth scope of Update Locale Settings, which updates store_country. The seller's answer was already S02-V-099's: S02-BC-254, S02-BC-251, S02-BC-260 and S02-BC-282 joined it. 'default country' is BigCommerce's term for 'The country your store is run from' (terms.tsv; S02-BC-263), so it passes the role test.
+
+Placed under another point of (b), S02-VP-04 (who sets), as S02-BC-110's 'configure' was read in the first pass under both: S02-BC-260 ('manage') joined S02-V-088 (the seller); S02-BC-261 is a new row, S02-V-252 (the Manage Settings permission); S02-BC-206 is a new row, S02-V-253, 'default: United States', a default the platform sets (rule 4).
+
+S02-V-091 (S02-VP-07, what must hold before it changes): `gap` (S02-BC-G02) became an answer row, S02-V-091, 'you can adjust these settings at any time' (S02-BC-251). Its other leads are placed under S02-VP-06 (S02-BC-207, S02-BC-254, S02-BC-261) or noted below (S02-BC-264, S02-BC-272). A call the brief left to me: as in the first pass (S02-SH-255 and S02-SH-266's permissions under S02-VP-06, its feature under S02-VP-07), a permission or scope that must be held is placed under who changes, not under what must hold.
+
+Leads noted (b):
+- S02-BC-212 (b): `country` is the 'Country where the store is located (as defined during the store sign-up process)': it says when the country is defined, not who sets, checks or changes it (rule 2)
+- S02-BC-217 (b): the Information & Settings scope manages 'store profile contact details, date and time preferences, and default language': it doesn't name the store's country (rule 2)
+- S02-BC-257 (b): channel-specific localization settings, edited with the Edit Channels permission: a channel's settings, not the store's country, which S02-BC-100 says channel-specific overrides can't modify (rule 2)
+- S02-BC-259 (b): 'You can manage store information globally from Settings › Store profile': the store information it names is 'the basic contact information ... such as the store name and email address', not the store's country (rule 2)
+- S02-BC-264 (b): 'To view and manage your store’s settings, the Manage Settings permission must be enabled': the Store Settings page, which S02-BC-110 names for 'physical dimensions and date and timezone settings', apart from the Locale settings in Store Profile; it doesn't name the store's country (rule 2)
+- S02-BC-266 (b): 'The Store Owner or a System Admin can create or delete users and grant permissions': who grants staff permissions, not who sets, checks or changes the store's country (rule 2)
+- S02-BC-267 (b): what the Manage Settings permission gives access to, 'Product Filtering, Store Settings, Checkout, ...': it doesn't name the store's country (rule 2)
+- S02-BC-268 (b): the Edit Channels permission edits 'channel settings and additional storefronts': a channel's settings, not the store's country (rule 2)
+- S02-BC-269 (b): 'Only the store owner user can grant high-risk permissions': who grants permissions, not the store's country (rule 2)
+- S02-BC-270 (b): the Store Owner role 'Includes all permissions' and 'is the person financially responsible for the account': it doesn't say the role gates the store's country (rule 4)
+- S02-BC-272 (b): 'Once you have selected a hosting region for your trial store, it cannot be changed': the hosting region, where the platform hosts the store, which rule 1 keeps out; in S02-VP-06's and S02-VP-07's notes
+- S02-BC-273 (b): 'Make sure that you are entering your actual business information in the form instead of placeholder data': it names no one who checks, and not the store's country (rule 2)
+- S02-BC-274 (b): a mismatch 'with the country, date, or time settings between your browser and your store information', a possible cause of a trial-creation error: it names no one who checks the store's country (rule 2)
+- S02-BC-283 (b): 'Our system uses your device's IP address to determine the zip code of your location when attempting to make a payment': a check of the place a payment is made from, against the billing address, not a check of the store's country (rule 2)
+
+### Revisit S02-V-026 (shopify, S02-VP-03, the countries the platform serves)
+
+Replaced: `not covered` became an answer row, S02-V-026, 'Shopify is available in nearly every country in the world' (S02-SH-612), the answer to 'In what countries can I use Shopify?'. Its one lead is placed.
+
+### Revisit S02-V-084 (woocommerce, S02-VP-05, who checks)
+
+Replaced: `gap` (S02-WC-G02) became an answer row, S02-V-084, 'Verify your business details with our payments partner, Stripe.' (S02-WC-258, S02-WC-257, S02-WC-260, S02-WC-261); added S02-V-254, 'The location argument must be a valid ISO3166 alpha-2 country code.' (S02-WC-262), the platform's code checking the business location's form, by S02-WC-224's description of the same REST routes' location; and a `gap` row beside them, S02-V-255, with S02-WC-G06, which asks whether the country itself is checked beyond its form, which the answers don't give. S02-WC-511 ('we use an embedded iframe from Stripe to verify information about you and your business') joined S02-V-098 (WooCommerce, with Stripe). S02-WC-259 ('Where is your business located?') is placed under another point of (b): it joined S02-V-082 (S02-VP-04, the seller sets it). S02-WC-G02 was settled by gap-closing (S02-WC-G06 replaces it) and goes. Leads noted:
+- S02-WC-512 (b): a test account 'requires no personal information' and 'will only operate in test mode': it names neither the store's country nor who checks it (rule 2)
+
+### Revisit S02-V-038 (zid, S02-VP-02, the countries kept out)
+
+Replaced: `not covered` became `gap`, S02-V-038, with S02-ZD-G09, which asks which countries, if any, Zid keeps out of creating a store. The revisit had no lead.
+
+### Rereads (shopify, salla and zid, (a), (b) and (d)), noted by parts RD1-1 and RD1-3, since widened
+
+Placed, under rule 5's identifier or scope:
+- S02-SH-259 (a): joined S02-V-006 (S02-VP-01): its identifier, 'combobox "I'm located in:"', names the field its words list the options of
+- S02-SH-260 (a): joined S02-V-001 (S02-VP-01): its identifier, 'Add business entity, country', names the business entity's country
+- S02-SH-396 (a, b): joined S02-V-001 (S02-VP-01) and S02-V-053 (S02-VP-04, the seller): its identifier names the admin's form that creates business details, whose first control is the button 'Yemen'
+- S02-ZD-148 (a): a new row, S02-V-256 (S02-VP-01), 'required: - country - city': its identifier names the record, 'user.business_location (DefaultStoreLocationSerializer)'
+
+Already placed: S02-SH-260 under (b), in S02-V-053 (S02-VP-04), by the first pass; no change.
+
+Left noted (their earlier notes stand):
+- S02-SA-249 (a): its identifier places the country in 'default_branch', a branch, which rule 1 keeps out of the store's own country
+- S02-SH-259 (d): its identifier names the field where the merchant gives their location, not where Shopify serves merchants
+- S02-SH-441 (b): its scope now says whose country, the business entity's, but it names no one who sets, checks or changes it, nor a condition on its change
+- S02-SH-448 (b): its scope now says whose country, but its words give the fields' requirements ('"required":true', '"validations":null'), and name no one who sets, checks or changes it, nor a condition on its change
+- S02-ZD-148 (b): its identifier names the business location, but it names no one who sets, checks or changes it ('is_address_confirmed' is a field's name), nor a condition on its change
+- S02-ZD-149 (a): its identifier says whose profile, the account user's ('GET /v1/managers/account/profile > user.user_profile_data'), but not that its 'country' is where the merchant is based, registered or resident
+
+### Note task (zid, (a))
+
+- S02-ZD-180 (a): They quote the Saudi Terms that zid.eg's Terms page holds in its raw HTML. The page's scripts replace them with the Terms of شركة زد مصر, under Egyptian law, so the page doesn't show these words (`method-report.md`, section 9). The statements recorded from the page as shown take their place.
+
+### Place tasks: bigcommerce (a) and (b)
+
+Placed under S02-VP-01 (a): S02-BC-206 and S02-BC-205 joined S02-V-048 (store_country, the same key); S02-BC-210 joined S02-V-050 ('store_address / Store Address', one term in terms.tsv); new rows: S02-V-257, '`country` ... Country where the store is located' (S02-BC-212); S02-V-258, '`country_code`' (S02-BC-213); S02-V-259, '`address` ... Display address.' (S02-BC-216); S02-V-260, 'Default country — The country your store is run from' (S02-BC-263, S02-BC-262, S02-BC-265, S02-BC-251, S02-BC-260); S02-V-261, 'Provide your VAT Number and Issuing Country' (S02-BC-277, S02-BC-275), the country of the merchant's tax registration; S02-V-262, 'your BigCommerce account's address' (S02-BC-282); S02-V-263, 'Address — The physical address of your store or place of business' (S02-BC-310). Under (b): S02-BC-275 joined S02-V-099 (S02-VP-06, the seller); S02-BC-276 is a new row, S02-V-264 (S02-VP-06), 'To access the Account Dashboard, you must be the store owner.'
+
+A call the brief left to me: `country` and `country_code` of Get Store Information are two fields, so two rows (rule 4, (a)); whether the store profile's 'Address' (S02-BC-310) is the 'Store Address' of S02-V-050 isn't stated, so it is its own row.
+
+Noted (a):
+- S02-BC-188 (a): a webhook that 'Fires when any of the global store profile settings are updated': it doesn't name the field or record that holds the store's country (rule 2)
+- S02-BC-208 (a): the locale settings, 'used to give shopper information about languages, countries, etc.': it doesn't say which country is the store's own (rule 2)
+- S02-BC-209 (a): 'If omitted, you will interact with the global settings only': a query parameter, which names no country (rule 2)
+- S02-BC-211 (a): `store_address_type`, 'Home Office', 'Commercial Office', 'Retail', 'Warehouse': the address's type, not what holds the country (rule 2)
+- S02-BC-214 (a): 'The infrastructure region where the store is located', to compare 'against GCP regions': where the platform hosts the store, which rule 1 keeps out; in S02-VP-01's note
+- S02-BC-215 (a): Get Store Information 'Returns metadata about the global settings for a store': it names no country (rule 2)
+- S02-BC-235 (a): regional hosting 'for merchants interested in hosting their stores in Europe or the Asia-Pacific (APAC) region': where the platform hosts the store, which rule 1 keeps out; in S02-VP-01's note
+- S02-BC-256 (a): 'configure the default country ... separately per channel' for additional storefronts: a storefront's country, a market the store sells into, not the store's own country (rule 1); in S02-VP-01's note
+- S02-BC-258 (a): 'The store profile provides basic information about your business': it doesn't name the store's country (rule 2)
+- S02-BC-259 (a): the store profile's 'basic contact information ... such as the store name and email address': it doesn't name the store's country (rule 2)
+- S02-BC-271 (a): the trial form's fields, 'your name, email address, a password, store name, the size of your business, and the region your store should be hosted': no country of the store; the hosting region, which rule 1 keeps out; in S02-VP-01's note
+- S02-BC-272 (a): the hosting region, which 'cannot be changed': where the platform hosts the store, which rule 1 keeps out; in S02-VP-01's note
+- S02-BC-274 (a): 'There may be a mismatch with the country, date, or time settings between your browser and your store information', a possible cause of an error: it doesn't name the field that holds the store's country (rule 2)
+- S02-BC-293 (a): 'Your Timezone — the timezone where you are located': a timezone, not a country, address or jurisdiction (rule 1)
+- S02-BC-294 (a): stores under one account 'share the same contact and billing information': it names neither the store's country nor an address (rule 2)
+- S02-BC-308 (a): 'Go to Settings › Store profile to update or change your store's contact information': it doesn't name the store's country or address (rule 2)
+- S02-BC-311 (a): 'Address type — Specifies whether the above address is a home or commercial office, retail store, or warehouse': the address's type, not what holds the country (rule 2)
+
+Noted (b):
+- S02-BC-221 (b): 'You will provide true, accurate, current, and complete information when registering for an Account': it doesn't name the store's country or an address (rule 2)
+- S02-BC-222 (b): 'Commerce reserves the right to refuse registration of, or cancel, accounts that violate this Agreement': a refusal for a violation, not who sets, checks or changes the store's country (rule 2)
+- S02-BC-243 (b): 'your default currency is assigned based on your location': it names no one who sets, checks or changes the location (rule 2)
