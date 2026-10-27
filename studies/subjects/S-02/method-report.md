@@ -140,6 +140,7 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 | RD1-4: (c), Zid, WooCommerce and BigCommerce | 198 | 72 | 17.5 | 2.8 | 1 more (19) | 72 |
 | RD3-3: (f) and (g), Zid and BigCommerce | 126 | 78 | 22.5 | 1.6 | 6 more (50) | 142 |
 | RD3-4: (f) and (g), WooCommerce | 98 | 57 | 12.2 | 1.7 | none (50) | 68 |
+| RD2-1: (e) and (g), Shopify | 184 | 46 | 8.1 | 4.0 | 4 | 31 |
 
 **What RD1-1 taught:**
 - **One point per question held:** the five platforms' answers to "what fills the store's own country" fell under one variation point, as 30 fields and records and one gap, and the countries served and kept out under one each.
@@ -201,3 +202,8 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 - **RD3's first pass is complete:** 50 points, each with a row for all five platforms; 361 rows.
 - **Code needs its own reading of "who sets":** much of WooCommerce's evidence is its release's code. The part read a value or default the code sets as the platform's, and named parties, such as developers, as their own; the brief now says so.
 - **A rule lost an answer:** a statement under (g) that names who sets a whole-store setting could answer only "what it takes its value per", so WooCommerce's row for who sets discounts came out `not covered`. The brief and the checker now let it answer `who sets` too, and its statements are on the second pass's list.
+
+**What RD2-1 taught:**
+- **(e)'s four questions made four points,** as the brief asks. Shopify defines a market by ten things, from conditions over a set of customers to its sales channels, and its absences rule out three more (a city, a storefront, other groups of customers).
+- **"What limits a market" took both how many a store can hold and the rules on what one may hold,** such as a country in more than one market, or a primary market of one country. Both bear on the root decision; the question now names both.
+- **Shopify's backup region "isn't a market",** in its own words, so its ten statements failed the role test under (e). They are kept in the point's note.
