@@ -110,12 +110,12 @@ The pilot's five steps, under Stage 4's changes (`PLAN.md`, Stage 4, and section
 
 | Step | Millions |
 | --- | --- |
-| Spent by 27 October, 03:00 UTC: the briefs' inspections, and phase A for all five platforms (measured) | 534 |
-| 1B, in ten parts, and its second pass | 150 to 300 |
-| 1A2 and 1A3, where a root decision needs them | 50 to 100 |
+| Spent by 27 October, 09:30 UTC (measured): the briefs' inspections, phase A for all five platforms, phase B's first pass (146), and the absence audit (66) | 767 |
+| 1A2, gap-closing: 120 rows in 13 parts (`a2-parts.tsv`), sized by its inspection | 200 to 290 |
+| 1B's second pass, with what A2 and A3 added | 45 to 80 |
 | 1C, per root decision | 90 to 150 |
 | Inspection of the later briefs | 15 to 30 |
 | 5, the review | 40 to 80 |
-| **All of S-02, projected** | **about 880 to 1,190** |
+| **All of S-02, projected** | **about 1,160 to 1,400** |
 
-Phase A cost 504 million, against the 325 to 375 million this table first set for it ([`method-report.md`](method-report.md), section 4). The rest is projected from phase A's measured cost per request, and is measured again after phase B's first parts. The budget counts the agents. The coordinating session's own tokens are reported beside it: 144 million from 21:00 UTC on 26 October, when S-02 began, to 03:00 UTC on 27 October. The projection passes the budget plus a quarter, 875 million. When the spending does, the cost comes to the founder with a new projection, and the work goes on (`PLAN.md`, section 8).
+Phase A cost 504 million, against the 325 to 375 million this table first set for it ([`method-report.md`](method-report.md), section 4). Phase B's first pass cost 146 million, within its share. Gap-closing is larger than first set: 120 rows in 78 groups, about 1,000 requests. The projection passes the budget plus a quarter, 875 million, during gap-closing; the cost comes to the founder then, and the work goes on (`PLAN.md`, section 8). The budget counts the agents. The coordinating session's own tokens are reported beside it: 259 million from 21:00 UTC on 26 October, when S-02 began, to 09:30 UTC on 27 October.
