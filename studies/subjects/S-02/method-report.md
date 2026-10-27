@@ -248,6 +248,7 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 | WC-4b: privacy and consent; staff access; store status | 6 | 6 | 6 | 70 | none | 65 | 12.0 |
 | SH-2b: contact information shown to buyers; locations; messages to buyers; and SH-2a's lead | 4 | 4 | 4 | 75 | none | 76 | 14.4 |
 | SH-2c: SH-2b's searches past 300, narrowed and read | 4, again | 4 | 4 | 72 | none | 67 | 13.8 |
+| SA-2: analytics and tracking; apps; notifications to the merchant; the store's address; the store's country; units and time zone | 8 | 8 | 4 | 36 | G08 to G11 | 80 | 16.8 |
 
 **What WC-1 taught:**
 - **Our labels aren't the platform's words.** The brief said to search a kind's own name, and the part asked whether "who sells to the buyer" was one. The brief now says the kind's head word is searched, such as `domain` or `currency`, and our longer labels aren't.
@@ -341,4 +342,9 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
   The brief's narrowing step isn't optional, and a part that stops before it leaves a follow-up.
 - **Narrowing by terms can't thin a corpus of duplicates.** Most of the fetch archives' records past 300 are Help Center fetches, the same pages as the Help Center corpus, and could only be narrowed by address.
 - **Named documents left unread get a part of their own:** SMS marketing's rules by region and its list of countries, WhatsApp's prices by country, and the duties journey's later steps go to SH-2d.
+
+**What SA-2 taught, and Salla's gap-closing as a whole:**
+- **Salla's gap-closing is complete:** two parts, 15 rows, 8 of them with no gap left, and 118 statements (S02-SA-319 to S02-SA-436), for 32.5 million. Everything read was held in observed-sa, so nothing needed capturing.
+- **Some of Salla's settings take a value per country of their own,** apart from its markets: an app's supported countries, from seven (S02-SA-409 to S02-SA-412), and a digital card's codes per "store country" (S02-SA-426 to S02-SA-429). Whether they follow the store's country or its markets is one of the four gaps.
+- **A kind whose words are country words makes the second search repeat the first.** For the store's country, `--with country countries` returned the first search's documents, so the part ran it with the market words only.
 
