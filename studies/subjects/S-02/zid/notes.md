@@ -216,3 +216,15 @@ Held copies are in `evidence/product-class/runs/`, at d061aa38ba098252411513a776
 #### Check on a copy
 
 `python3 -I method/check_subject.py` on a copy at /tmp/claude-0/-home-user/9f45def8-b710-5f9c-84f3-6a0fa7e617c8/scratchpad/s02-a2-zd-1/check/S-02, output in /tmp/claude-0/-home-user/9f45def8-b710-5f9c-84f3-6a0fa7e617c8/scratchpad/s02-a2-zd-1/check/out (2026-10-27): no line of level error; 226 statements; 374 quotes found; 4 lines of level pending capture, the live citations S02-ZD-C355 and S02-ZD-C356 and the statements S02-ZD-210 and S02-ZD-211 that cite them.
+
+### ZD-2: S02-VP-44 to S02-VP-46, S02-VP-55, S02-VP-56, S02-VP-67, S02-VP-68, S02-VP-73, S02-VP-74, S02-VP-78 and S02-VP-79 (2026-10-27)
+
+Read under `studies/subjects/S-02/briefs/A2-close-gaps.md`. Zid's eleven rows under these points in `variants.tsv` (S02-V-760 to S02-V-762, S02-V-774, S02-V-775, S02-V-791, S02-V-792, S02-V-797, S02-V-798, S02-V-802, S02-V-803) were all `not covered`, so all eleven were taken. One lead was named: the FAQ هل يستطيع العملاء من خارج السعودية إتمام … (item 4 below). Earlier part: ZD-1; later part: ZD-3. Each point's row is in `a2.tsv`, with the searches and documents in `read`. Held copies were read at 00a87e3aa35463857a13342705714e963399a5c5.
+
+#### Documents read, in order (2026-10-27)
+
+Item numbers are those of 20261012T045101Z-q1-zid-sources unless another run is named.
+1. Domain: help.zid.sa/domain/ (112) in full; settings-url-redirects (153), gcc-merchants (128) and saudi-merchants (151) in passages; the Arabic and English Terms (187, 194) in passages (أسماء النطاقات (رابط المتجر), Domain Names (Store Link), and the refunds of domains); the permission row manage.store.custom.domain (003); the compare-plans data's Custom Domain Linking (185); get-manager-profile's store_domain.* policies (027); the FAQ ماهي الخدمات والخصائص المقدمة في زد؟ (20261027T071937Z-s02-a3-zid-sources-2 item 009) in passages, not recorded.
+2. Live, not held (checked with `method/held_index.py` first), rendered through `method/capture/page_text.mjs`: https://help.zid.sa/buy-new-domain/ (شراء نطاق جديد ( لوحة التحكم الجديدة), last updated August 4, 2026) and the FAQ هل اقدر أغير رابط (دومين) المتجر لاسم نطاق (domain) خاص فيني؟ بدون zid.store ؟ (last updated February 27, 2024), found in ZD-1's copies of the help centre's sitemaps.
+3. As indexes only: ZD-1's decoded copies of the help centre's sitemaps (all-urls.tsv), searched for slugs on each group.
+4. The lead, live, not held: https://help.zid.sa/faqs/%d9%87%d9%84-%d9%8a%d8%b3%d8%aa%d8%b7%d9%8a%d8%b9-%d8%a7%d9%84%d8%b9%d9%85%d9%84%d8%a7%d8%a1-%d9%85%d9%86-%d8%ae%d8%a7%d8%b1%d8%ac-%d8%a7%d9%84%d8%b3%d8%b9%d9%88%d8%af%d9%8a%d8%a9-%d8%a5%d8%aa%d9%85/ (هل يستطيع العملاء من خارج السعودية إتمام عملية الدفع الإلكتروني في حال تفعيل زد باي ؟, last updated July 15, 2023), rendered.
