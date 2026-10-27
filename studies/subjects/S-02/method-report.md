@@ -299,6 +299,6 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 - **The render fix showed Zid's prices by country:** Rise is 99 riyals a month on zid.sa and 1,128 Egyptian pounds on zid.eg, and each site's footer names its own company's registration and tax numbers (S02-ZD-347 to S02-ZD-355). Phase A had recorded neither, since the pages showed only an error text.
 
 **What BC-2 taught:**
-- **BigCommerce's gap-closing is complete:** four parts, 33 rows, 191 statements, for 42 million. The Help Center, readable since the fix, answered most of BC-1b's and BC-2's rows.
-- **A platform that sets values per storefront answers the "per market" questions directly.** Multi-Storefront gives contact details, checkout settings and the storefront a shopper sees per storefront, each "Use global" by default. BigCommerce's settings are the only ones read so far that state their own scope, where Zid's and WooCommerce's name none.
+- **BigCommerce's gap-closing is complete:** three parts, 19 rows, 147 statements (S02-BC-205 to S02-BC-351), for 35.5 million. The Help Center, readable since the fix, answered most of BC-1b's and BC-2's rows.
+- **A platform that states its settings' scope answers the "per market" questions in its own words.** Multi-Storefront sets contact details, checkout settings and the storefront a shopper sees per storefront, each "Use global" by default.
 
