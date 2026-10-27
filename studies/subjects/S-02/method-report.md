@@ -377,3 +377,27 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
   - **A search left past 300 hides evidence:** SH-2c's narrowed searches gave as many statements as the part before it.
   - **A site is checked to render before agents read it.** The render fault was found only after agents had read raw pages, and it cost an audit done again.
   - **The coordinator's own quotes are checked as an agent's are.** In the founder's request, the coordinator first quoted Zid's developer blog from a search's snippet. The snippet came from that page's raw HTML, and the page, rendered again after the fix, shows "Oops! Page not found" (run `20261027T112044Z-zid-rerender`, item 012). The request quotes Zid's developer documentation instead, as its capture shows it.
+
+## 10. Phase B's second pass (27 October)
+
+**The dry run of its brief** (5.4 million, 39 requests) did 35 tasks on a copy, in two small parts: Zid's (c) under RD1 and WooCommerce's (f) under RD3. Its check passed, and its tasks left `unplaced.tsv`. It found eleven defects:
+- **Two would have failed every part's check:**
+  - joining a statement to a row must also take the row's `kind` again, which the brief didn't say;
+  - the work lists' folder, `b/second-pass/`, made `merge_slices.py` refuse the copy.
+- **Seven would have made two agents differ:**
+  - a `place` task could answer a point that a later `revisit` replaces: 738 of RD3's `place` rows were leads of its revisits;
+  - revisits named statements outside the root decision's slice, which the printer dropped in silence;
+  - nothing said what a revisit does when its answers all join rows already there, or which gaps a `gap` row keeps;
+  - a reread row carried every bullet of its statement;
+  - nothing said whether a placed reread keeps its earlier note;
+  - under (c), nothing said what to do with a decider outside rule 1's table, such as a payment method, or with a statement naming none, and Zid's fees and their VAT turn on it.
+- **The rest:** noise in a one-decision check, and no record of the revisit and reread tasks' outcomes.
+- **Its rate was about one task a request,** a third of the first pass's, mostly spent editing long rows by hand.
+
+**What changed:**
+- **The work lists** (`method/second_pass_list.py`) put revisits first. Each revisit names its leads, the statements gap-closing found for the point under its bullet, which it places or notes; those leads have no `place` row of their own. Statements outside the decision's slice are named apart. A reread has one row per bullet of the decision.
+- **A tool writes the rows** (`method/variants_edit.py`): join, add, replace, remove, the ledger of outcomes, and `x_words`. It takes `kind` and `scope` again from the statements, gives the next free id, checks that an excerpt is in its statements, and holds a lock while it writes, so that two parts of one root decision can work on different platforms at once.
+- **The ledger:** each revisit, reread and note task's outcome goes in `b/<root decision>/done.tsv`, and `second_pass_list.py --check` lists what has none.
+- **The checker** refuses a `not covered` row beside another row of its platform, and a copy that holds one root decision no longer flags the others' points. `merge_slices.py` skips the work lists' folder. The slice printer names on its standard error each id it doesn't hold.
+- **The brief's second-pass section** says how a revisit ends (replace, join and remove, `absent`, or `gap` with only the gaps gap-closing left) and how to write. Rule 4 now says what an answer under (c) names: a decider from rule 1's table, or `every store` where the statement applies the thing to all stores and names no country, site or region. A statement with another decider, or none, is noted.
+- **The parts were cut again:** ten parts, sized by their tasks with each revisit's leads counted. Parts of RD3 work one platform each.

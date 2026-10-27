@@ -1,4 +1,23 @@
 task	id	platform	bullet	vp_id	why
+revisit	S02-V-089	bigcommerce	b	S02-VP-05	was gap; leads under (b), which this task places or notes: S02-BC-212;S02-BC-259;S02-BC-273;S02-BC-274;S02-BC-277;S02-BC-282;S02-BC-283; A2 statements under this decision's other bullets, with their own tasks: S02-BC-213;S02-BC-214;S02-BC-258;S02-BC-271; A2 statements outside this decision's slice, left: none; A2 gaps: S02-BC-G09; A2 absences: none
+revisit	S02-V-090	bigcommerce	b	S02-VP-06	was gap; leads under (b), which this task places or notes: S02-BC-205;S02-BC-206;S02-BC-207;S02-BC-212;S02-BC-217;S02-BC-251;S02-BC-254;S02-BC-257;S02-BC-259;S02-BC-260;S02-BC-261;S02-BC-264;S02-BC-266;S02-BC-267;S02-BC-268;S02-BC-269;S02-BC-270;S02-BC-272; A2 statements under this decision's other bullets, with their own tasks: S02-BC-208;S02-BC-209;S02-BC-210;S02-BC-211;S02-BC-215;S02-BC-216;S02-BC-253;S02-BC-256;S02-BC-262;S02-BC-263;S02-BC-265;S02-BC-271; A2 statements outside this decision's slice, left: S02-BC-252;S02-BC-255; A2 gaps: none; A2 absences: none
+revisit	S02-V-091	bigcommerce	b	S02-VP-07	was gap; leads under (b), which this task places or notes: S02-BC-207;S02-BC-251;S02-BC-254;S02-BC-261;S02-BC-264;S02-BC-272; A2 statements under this decision's other bullets, with their own tasks: none; A2 statements outside this decision's slice, left: none; A2 gaps: none; A2 absences: none
+revisit	S02-V-226	bigcommerce	c	S02-VP-10	was not covered; leads under (c), which this task places or notes: S02-BC-218;S02-BC-219;S02-BC-220; A2 statements under this decision's other bullets, with their own tasks: S02-BC-221;S02-BC-222; A2 statements outside this decision's slice, left: none; A2 gaps: S02-BC-G06; A2 absences: none
+revisit	S02-V-233	bigcommerce	c	S02-VP-13	was not covered; leads under (c), which this task places or notes: S02-BC-223;S02-BC-224;S02-BC-225;S02-BC-226;S02-BC-227;S02-BC-228;S02-BC-229;S02-BC-230;S02-BC-231; A2 statements under this decision's other bullets, with their own tasks: none; A2 statements outside this decision's slice, left: none; A2 gaps: none; A2 absences: none
+revisit	S02-V-236	bigcommerce	c	S02-VP-15	was not covered; leads under (c), which this task places or notes: S02-BC-232;S02-BC-233;S02-BC-234;S02-BC-278;S02-BC-279;S02-BC-280;S02-BC-281;S02-BC-283; A2 statements under this decision's other bullets, with their own tasks: S02-BC-270;S02-BC-275;S02-BC-276;S02-BC-277;S02-BC-282;S02-BC-294; A2 statements outside this decision's slice, left: S02-BC-284;S02-BC-295; A2 gaps: S02-BC-G10; A2 absences: none
+revisit	S02-V-237	bigcommerce	c	S02-VP-16	was not covered; leads under (c), which this task places or notes: S02-BC-247;S02-BC-249;S02-BC-250; A2 statements under this decision's other bullets, with their own tasks: none; A2 statements outside this decision's slice, left: S02-BC-246;S02-BC-248; A2 gaps: none; A2 absences: none
+revisit	S02-V-239	bigcommerce	c	S02-VP-18	was not covered; leads under (c), which this task places or notes: S02-BC-243;S02-BC-244;S02-BC-253;S02-BC-285;S02-BC-288;S02-BC-289;S02-BC-290;S02-BC-291; A2 statements under this decision's other bullets, with their own tasks: S02-BC-251;S02-BC-293; A2 statements outside this decision's slice, left: S02-BC-245;S02-BC-286;S02-BC-287;S02-BC-292; A2 gaps: S02-BC-G11; A2 absences: none
+revisit	S02-V-240	bigcommerce	c	S02-VP-19	was not covered; leads under (c), which this task places or notes: S02-BC-235;S02-BC-236;S02-BC-237;S02-BC-238;S02-BC-239;S02-BC-240;S02-BC-241;S02-BC-242; A2 statements under this decision's other bullets, with their own tasks: none; A2 statements outside this decision's slice, left: none; A2 gaps: none; A2 absences: none
+revisit	S02-V-164	salla	c	S02-VP-16	was not covered; leads under (c), which this task places or notes: S02-SA-349;S02-SA-350;S02-SA-353;S02-SA-354;S02-SA-355;S02-SA-356;S02-SA-357;S02-SA-358;S02-SA-361;S02-SA-363;S02-SA-364;S02-SA-374;S02-SA-375; A2 statements under this decision's other bullets, with their own tasks: S02-SA-360; A2 statements outside this decision's slice, left: S02-SA-351;S02-SA-352;S02-SA-359;S02-SA-362;S02-SA-365;S02-SA-366;S02-SA-367;S02-SA-368;S02-SA-369;S02-SA-370;S02-SA-371;S02-SA-372;S02-SA-373; A2 gaps: none; A2 absences: none
+revisit	S02-V-168	salla	c	S02-VP-18	was not covered; leads under (c), which this task places or notes: S02-SA-387;S02-SA-388;S02-SA-390;S02-SA-391;S02-SA-392;S02-SA-393;S02-SA-400; A2 statements under this decision's other bullets, with their own tasks: none; A2 statements outside this decision's slice, left: S02-SA-389;S02-SA-394;S02-SA-395;S02-SA-396;S02-SA-397;S02-SA-398;S02-SA-399; A2 gaps: S02-SA-G07; A2 absences: none
+revisit	S02-V-219	salla	c	S02-VP-19	was not covered; leads under (c), which this task places or notes: S02-SA-319;S02-SA-320;S02-SA-321;S02-SA-322;S02-SA-323;S02-SA-324;S02-SA-325;S02-SA-326;S02-SA-327;S02-SA-328;S02-SA-329;S02-SA-332;S02-SA-335;S02-SA-336;S02-SA-337;S02-SA-338; A2 statements under this decision's other bullets, with their own tasks: none; A2 statements outside this decision's slice, left: S02-SA-330;S02-SA-331;S02-SA-333;S02-SA-334; A2 gaps: S02-SA-G05; A2 absences: none
+revisit	S02-V-218	shopify	c	S02-VP-19	was not covered; leads under (c), which this task places or notes: S02-SH-613;S02-SH-614;S02-SH-615;S02-SH-616;S02-SH-617;S02-SH-618;S02-SH-619;S02-SH-620;S02-SH-621;S02-SH-622;S02-SH-623;S02-SH-624;S02-SH-625;S02-SH-626;S02-SH-713;S02-SH-714;S02-SH-716;S02-SH-717;S02-SH-718; A2 statements under this decision's other bullets, with their own tasks: none; A2 statements outside this decision's slice, left: S02-SH-715; A2 gaps: none; A2 absences: none
+revisit	S02-V-026	shopify	d	S02-VP-03	was not covered; leads under (d), which this task places or notes: S02-SH-612; A2 statements under this decision's other bullets, with their own tasks: none; A2 statements outside this decision's slice, left: none; A2 gaps: none; A2 absences: none
+revisit	S02-V-084	woocommerce	b	S02-VP-05	was gap; leads under (b), which this task places or notes: S02-WC-257;S02-WC-258;S02-WC-259;S02-WC-260;S02-WC-261;S02-WC-262;S02-WC-511;S02-WC-512; A2 statements under this decision's other bullets, with their own tasks: none; A2 statements outside this decision's slice, left: none; A2 gaps: S02-WC-G06; A2 absences: none
+revisit	S02-V-194	woocommerce	c	S02-VP-10	was not covered; leads under (c), which this task places or notes: S02-WC-263; A2 statements under this decision's other bullets, with their own tasks: none; A2 statements outside this decision's slice, left: none; A2 gaps: S02-WC-G07; A2 absences: none
+revisit	S02-V-200	woocommerce	c	S02-VP-12	was not covered; leads under (c), which this task places or notes: S02-WC-264;S02-WC-265;S02-WC-267;S02-WC-268; A2 statements under this decision's other bullets, with their own tasks: none; A2 statements outside this decision's slice, left: S02-WC-266; A2 gaps: none; A2 absences: none
+revisit	S02-V-182	zid	c	S02-VP-15	was not covered; leads under (c), which this task places or notes: S02-ZD-192;S02-ZD-193;S02-ZD-194;S02-ZD-195;S02-ZD-196;S02-ZD-197;S02-ZD-198;S02-ZD-199;S02-ZD-200;S02-ZD-201;S02-ZD-202;S02-ZD-203;S02-ZD-204;S02-ZD-205;S02-ZD-398;S02-ZD-408;S02-ZD-411;S02-ZD-418; A2 statements under this decision's other bullets, with their own tasks: none; A2 statements outside this decision's slice, left: none; A2 gaps: S02-ZD-G08; A2 absences: none
+revisit	S02-V-038	zid	d	S02-VP-02	was not covered; leads under (d), which this task places or notes: none; A2 statements under this decision's other bullets, with their own tasks: none; A2 statements outside this decision's slice, left: none; A2 gaps: S02-ZD-G09; A2 absences: none
 place	S02-BC-188	bigcommerce	a		
 place	S02-BC-205	bigcommerce	a		
 place	S02-BC-206	bigcommerce	a		
@@ -31,76 +50,14 @@ place	S02-BC-294	bigcommerce	a
 place	S02-BC-308	bigcommerce	a		
 place	S02-BC-310	bigcommerce	a		
 place	S02-BC-311	bigcommerce	a		
-place	S02-BC-205	bigcommerce	b		
-place	S02-BC-206	bigcommerce	b		
-place	S02-BC-207	bigcommerce	b		
-place	S02-BC-212	bigcommerce	b		
-place	S02-BC-217	bigcommerce	b		
 place	S02-BC-221	bigcommerce	b		
 place	S02-BC-222	bigcommerce	b		
 place	S02-BC-243	bigcommerce	b		
-place	S02-BC-251	bigcommerce	b		
-place	S02-BC-254	bigcommerce	b		
-place	S02-BC-257	bigcommerce	b		
-place	S02-BC-259	bigcommerce	b		
-place	S02-BC-260	bigcommerce	b		
-place	S02-BC-261	bigcommerce	b		
-place	S02-BC-264	bigcommerce	b		
-place	S02-BC-266	bigcommerce	b		
-place	S02-BC-267	bigcommerce	b		
-place	S02-BC-268	bigcommerce	b		
-place	S02-BC-269	bigcommerce	b		
-place	S02-BC-270	bigcommerce	b		
-place	S02-BC-272	bigcommerce	b		
-place	S02-BC-273	bigcommerce	b		
-place	S02-BC-274	bigcommerce	b		
 place	S02-BC-275	bigcommerce	b		
 place	S02-BC-276	bigcommerce	b		
-place	S02-BC-277	bigcommerce	b		
-place	S02-BC-282	bigcommerce	b		
-place	S02-BC-283	bigcommerce	b		
-place	S02-BC-218	bigcommerce	c		
-place	S02-BC-219	bigcommerce	c		
-place	S02-BC-220	bigcommerce	c		
-place	S02-BC-223	bigcommerce	c		
-place	S02-BC-224	bigcommerce	c		
-place	S02-BC-225	bigcommerce	c		
-place	S02-BC-226	bigcommerce	c		
-place	S02-BC-227	bigcommerce	c		
-place	S02-BC-228	bigcommerce	c		
-place	S02-BC-229	bigcommerce	c		
-place	S02-BC-230	bigcommerce	c		
-place	S02-BC-231	bigcommerce	c		
-place	S02-BC-232	bigcommerce	c		
-place	S02-BC-233	bigcommerce	c		
-place	S02-BC-234	bigcommerce	c		
-place	S02-BC-235	bigcommerce	c		
-place	S02-BC-236	bigcommerce	c		
-place	S02-BC-237	bigcommerce	c		
-place	S02-BC-238	bigcommerce	c		
-place	S02-BC-239	bigcommerce	c		
-place	S02-BC-240	bigcommerce	c		
-place	S02-BC-241	bigcommerce	c		
-place	S02-BC-242	bigcommerce	c		
-place	S02-BC-243	bigcommerce	c		
-place	S02-BC-244	bigcommerce	c		
-place	S02-BC-247	bigcommerce	c		
-place	S02-BC-249	bigcommerce	c		
-place	S02-BC-250	bigcommerce	c		
-place	S02-BC-253	bigcommerce	c		
 place	S02-BC-258	bigcommerce	c		
 place	S02-BC-260	bigcommerce	c		
 place	S02-BC-263	bigcommerce	c		
-place	S02-BC-278	bigcommerce	c		
-place	S02-BC-279	bigcommerce	c		
-place	S02-BC-280	bigcommerce	c		
-place	S02-BC-281	bigcommerce	c		
-place	S02-BC-283	bigcommerce	c		
-place	S02-BC-285	bigcommerce	c		
-place	S02-BC-288	bigcommerce	c		
-place	S02-BC-289	bigcommerce	c		
-place	S02-BC-290	bigcommerce	c		
-place	S02-BC-291	bigcommerce	c		
 place	S02-SA-311	salla	a		
 place	S02-SA-312	salla	a		
 place	S02-SA-313	salla	a		
@@ -119,46 +76,10 @@ place	S02-SA-314	salla	c
 place	S02-SA-315	salla	c		
 place	S02-SA-316	salla	c		
 place	S02-SA-317	salla	c		
-place	S02-SA-319	salla	c		
-place	S02-SA-320	salla	c		
-place	S02-SA-321	salla	c		
-place	S02-SA-322	salla	c		
-place	S02-SA-323	salla	c		
-place	S02-SA-324	salla	c		
-place	S02-SA-325	salla	c		
-place	S02-SA-326	salla	c		
-place	S02-SA-327	salla	c		
-place	S02-SA-328	salla	c		
-place	S02-SA-329	salla	c		
-place	S02-SA-332	salla	c		
-place	S02-SA-335	salla	c		
-place	S02-SA-336	salla	c		
-place	S02-SA-337	salla	c		
-place	S02-SA-338	salla	c		
-place	S02-SA-349	salla	c		
-place	S02-SA-350	salla	c		
-place	S02-SA-353	salla	c		
-place	S02-SA-354	salla	c		
-place	S02-SA-355	salla	c		
-place	S02-SA-356	salla	c		
-place	S02-SA-357	salla	c		
-place	S02-SA-358	salla	c		
-place	S02-SA-361	salla	c		
-place	S02-SA-363	salla	c		
-place	S02-SA-364	salla	c		
-place	S02-SA-374	salla	c		
-place	S02-SA-375	salla	c		
 place	S02-SA-376	salla	c		
 place	S02-SA-383	salla	c		
 place	S02-SA-384	salla	c		
 place	S02-SA-385	salla	c		
-place	S02-SA-387	salla	c		
-place	S02-SA-388	salla	c		
-place	S02-SA-390	salla	c		
-place	S02-SA-391	salla	c		
-place	S02-SA-392	salla	c		
-place	S02-SA-393	salla	c		
-place	S02-SA-400	salla	c		
 place	S02-SA-425	salla	c		
 place	S02-SA-312	salla	d		
 place	S02-SA-313	salla	d		
@@ -201,20 +122,6 @@ place	S02-SH-593	shopify	c
 place	S02-SH-594	shopify	c		
 place	S02-SH-602	shopify	c		
 place	S02-SH-612	shopify	c		
-place	S02-SH-613	shopify	c		
-place	S02-SH-614	shopify	c		
-place	S02-SH-615	shopify	c		
-place	S02-SH-616	shopify	c		
-place	S02-SH-617	shopify	c		
-place	S02-SH-618	shopify	c		
-place	S02-SH-619	shopify	c		
-place	S02-SH-620	shopify	c		
-place	S02-SH-621	shopify	c		
-place	S02-SH-622	shopify	c		
-place	S02-SH-623	shopify	c		
-place	S02-SH-624	shopify	c		
-place	S02-SH-625	shopify	c		
-place	S02-SH-626	shopify	c		
 place	S02-SH-630	shopify	c		
 place	S02-SH-631	shopify	c		
 place	S02-SH-633	shopify	c		
@@ -236,11 +143,6 @@ place	S02-SH-705	shopify	c
 place	S02-SH-709	shopify	c		
 place	S02-SH-710	shopify	c		
 place	S02-SH-712	shopify	c		
-place	S02-SH-713	shopify	c		
-place	S02-SH-714	shopify	c		
-place	S02-SH-716	shopify	c		
-place	S02-SH-717	shopify	c		
-place	S02-SH-718	shopify	c		
 place	S02-SH-733	shopify	c		
 place	S02-SH-823	shopify	c		
 place	S02-SH-825	shopify	c		
@@ -275,7 +177,6 @@ place	S02-SH-968	shopify	c
 place	S02-SH-969	shopify	c		
 place	S02-SH-970	shopify	c		
 place	S02-SH-971	shopify	c		
-place	S02-SH-612	shopify	d		
 place	S02-WC-228	woocommerce	a		
 place	S02-WC-229	woocommerce	a		
 place	S02-WC-235	woocommerce	a		
@@ -309,12 +210,6 @@ place	S02-WC-244	woocommerce	b
 place	S02-WC-250	woocommerce	b		
 place	S02-WC-251	woocommerce	b		
 place	S02-WC-252	woocommerce	b		
-place	S02-WC-257	woocommerce	b		
-place	S02-WC-258	woocommerce	b		
-place	S02-WC-259	woocommerce	b		
-place	S02-WC-260	woocommerce	b		
-place	S02-WC-261	woocommerce	b		
-place	S02-WC-262	woocommerce	b		
 place	S02-WC-292	woocommerce	b		
 place	S02-WC-293	woocommerce	b		
 place	S02-WC-294	woocommerce	b		
@@ -323,19 +218,12 @@ place	S02-WC-296	woocommerce	b
 place	S02-WC-313	woocommerce	b		
 place	S02-WC-314	woocommerce	b		
 place	S02-WC-322	woocommerce	b		
-place	S02-WC-511	woocommerce	b		
-place	S02-WC-512	woocommerce	b		
 place	S02-WC-246	woocommerce	c		
 place	S02-WC-247	woocommerce	c		
 place	S02-WC-248	woocommerce	c		
 place	S02-WC-249	woocommerce	c		
 place	S02-WC-253	woocommerce	c		
 place	S02-WC-254	woocommerce	c		
-place	S02-WC-263	woocommerce	c		
-place	S02-WC-264	woocommerce	c		
-place	S02-WC-265	woocommerce	c		
-place	S02-WC-267	woocommerce	c		
-place	S02-WC-268	woocommerce	c		
 place	S02-WC-286	woocommerce	c		
 place	S02-WC-287	woocommerce	c		
 place	S02-WC-296	woocommerce	c		
@@ -359,20 +247,6 @@ place	S02-ZD-174	zid	c
 place	S02-ZD-175	zid	c		
 place	S02-ZD-176	zid	c		
 place	S02-ZD-178	zid	c		
-place	S02-ZD-192	zid	c		
-place	S02-ZD-193	zid	c		
-place	S02-ZD-194	zid	c		
-place	S02-ZD-195	zid	c		
-place	S02-ZD-196	zid	c		
-place	S02-ZD-197	zid	c		
-place	S02-ZD-198	zid	c		
-place	S02-ZD-199	zid	c		
-place	S02-ZD-200	zid	c		
-place	S02-ZD-201	zid	c		
-place	S02-ZD-202	zid	c		
-place	S02-ZD-203	zid	c		
-place	S02-ZD-204	zid	c		
-place	S02-ZD-205	zid	c		
 place	S02-ZD-210	zid	c		
 place	S02-ZD-218	zid	c		
 place	S02-ZD-220	zid	c		
@@ -414,7 +288,6 @@ place	S02-ZD-393	zid	c
 place	S02-ZD-394	zid	c		
 place	S02-ZD-396	zid	c		
 place	S02-ZD-397	zid	c		
-place	S02-ZD-398	zid	c		
 place	S02-ZD-399	zid	c		
 place	S02-ZD-400	zid	c		
 place	S02-ZD-401	zid	c		
@@ -424,17 +297,14 @@ place	S02-ZD-404	zid	c
 place	S02-ZD-405	zid	c		
 place	S02-ZD-406	zid	c		
 place	S02-ZD-407	zid	c		
-place	S02-ZD-408	zid	c		
 place	S02-ZD-409	zid	c		
 place	S02-ZD-410	zid	c		
-place	S02-ZD-411	zid	c		
 place	S02-ZD-412	zid	c		
 place	S02-ZD-413	zid	c		
 place	S02-ZD-414	zid	c		
 place	S02-ZD-415	zid	c		
 place	S02-ZD-416	zid	c		
 place	S02-ZD-417	zid	c		
-place	S02-ZD-418	zid	c		
 place	S02-ZD-419	zid	c		
 place	S02-ZD-420	zid	c		
 place	S02-ZD-421	zid	c		
@@ -452,40 +322,27 @@ place	S02-ZD-386	zid	d
 place	S02-ZD-387	zid	d		
 place	S02-ZD-388	zid	d		
 place	S02-ZD-444	zid	d		
-revisit	S02-V-089	bigcommerce	b	S02-VP-05	was gap; A2 statements: S02-BC-212;S02-BC-213;S02-BC-214;S02-BC-258;S02-BC-259;S02-BC-271;S02-BC-273;S02-BC-274;S02-BC-277;S02-BC-282;S02-BC-283; A2 gaps: S02-BC-G09; A2 absences: none
-revisit	S02-V-090	bigcommerce	b	S02-VP-06	was gap; A2 statements: S02-BC-205;S02-BC-206;S02-BC-207;S02-BC-208;S02-BC-209;S02-BC-210;S02-BC-211;S02-BC-212;S02-BC-215;S02-BC-216;S02-BC-217;S02-BC-251;S02-BC-252;S02-BC-253;S02-BC-254;S02-BC-255;S02-BC-256;S02-BC-257;S02-BC-259;S02-BC-260;S02-BC-261;S02-BC-262;S02-BC-263;S02-BC-264;S02-BC-265;S02-BC-266;S02-BC-267;S02-BC-268;S02-BC-269;S02-BC-270;S02-BC-271;S02-BC-272; A2 gaps: none; A2 absences: none
-revisit	S02-V-091	bigcommerce	b	S02-VP-07	was gap; A2 statements: S02-BC-207;S02-BC-251;S02-BC-254;S02-BC-261;S02-BC-264;S02-BC-272; A2 gaps: none; A2 absences: none
-revisit	S02-V-226	bigcommerce	c	S02-VP-10	was not covered; A2 statements: S02-BC-218;S02-BC-219;S02-BC-220;S02-BC-221;S02-BC-222; A2 gaps: S02-BC-G06; A2 absences: none
-revisit	S02-V-233	bigcommerce	c	S02-VP-13	was not covered; A2 statements: S02-BC-223;S02-BC-224;S02-BC-225;S02-BC-226;S02-BC-227;S02-BC-228;S02-BC-229;S02-BC-230;S02-BC-231; A2 gaps: none; A2 absences: none
-revisit	S02-V-236	bigcommerce	c	S02-VP-15	was not covered; A2 statements: S02-BC-232;S02-BC-233;S02-BC-234;S02-BC-270;S02-BC-275;S02-BC-276;S02-BC-277;S02-BC-278;S02-BC-279;S02-BC-280;S02-BC-281;S02-BC-282;S02-BC-283;S02-BC-284;S02-BC-294;S02-BC-295; A2 gaps: S02-BC-G10; A2 absences: none
-revisit	S02-V-237	bigcommerce	c	S02-VP-16	was not covered; A2 statements: S02-BC-246;S02-BC-247;S02-BC-248;S02-BC-249;S02-BC-250; A2 gaps: none; A2 absences: none
-revisit	S02-V-239	bigcommerce	c	S02-VP-18	was not covered; A2 statements: S02-BC-243;S02-BC-244;S02-BC-245;S02-BC-251;S02-BC-253;S02-BC-285;S02-BC-286;S02-BC-287;S02-BC-288;S02-BC-289;S02-BC-290;S02-BC-291;S02-BC-292;S02-BC-293; A2 gaps: S02-BC-G11; A2 absences: none
-revisit	S02-V-240	bigcommerce	c	S02-VP-19	was not covered; A2 statements: S02-BC-235;S02-BC-236;S02-BC-237;S02-BC-238;S02-BC-239;S02-BC-240;S02-BC-241;S02-BC-242; A2 gaps: none; A2 absences: none
-revisit	S02-V-164	salla	c	S02-VP-16	was not covered; A2 statements: S02-SA-349;S02-SA-350;S02-SA-351;S02-SA-352;S02-SA-353;S02-SA-354;S02-SA-355;S02-SA-356;S02-SA-357;S02-SA-358;S02-SA-359;S02-SA-360;S02-SA-361;S02-SA-362;S02-SA-363;S02-SA-364;S02-SA-365;S02-SA-366;S02-SA-367;S02-SA-368;S02-SA-369;S02-SA-370;S02-SA-371;S02-SA-372;S02-SA-373;S02-SA-374;S02-SA-375; A2 gaps: none; A2 absences: none
-revisit	S02-V-168	salla	c	S02-VP-18	was not covered; A2 statements: S02-SA-387;S02-SA-388;S02-SA-389;S02-SA-390;S02-SA-391;S02-SA-392;S02-SA-393;S02-SA-394;S02-SA-395;S02-SA-396;S02-SA-397;S02-SA-398;S02-SA-399;S02-SA-400; A2 gaps: S02-SA-G07; A2 absences: none
-revisit	S02-V-219	salla	c	S02-VP-19	was not covered; A2 statements: S02-SA-319;S02-SA-320;S02-SA-321;S02-SA-322;S02-SA-323;S02-SA-324;S02-SA-325;S02-SA-326;S02-SA-327;S02-SA-328;S02-SA-329;S02-SA-330;S02-SA-331;S02-SA-332;S02-SA-333;S02-SA-334;S02-SA-335;S02-SA-336;S02-SA-337;S02-SA-338; A2 gaps: S02-SA-G05; A2 absences: none
-revisit	S02-V-218	shopify	c	S02-VP-19	was not covered; A2 statements: S02-SH-613;S02-SH-614;S02-SH-615;S02-SH-616;S02-SH-617;S02-SH-618;S02-SH-619;S02-SH-620;S02-SH-621;S02-SH-622;S02-SH-623;S02-SH-624;S02-SH-625;S02-SH-626;S02-SH-713;S02-SH-714;S02-SH-715;S02-SH-716;S02-SH-717;S02-SH-718; A2 gaps: none; A2 absences: none
-revisit	S02-V-026	shopify	d	S02-VP-03	was not covered; A2 statements: S02-SH-612; A2 gaps: none; A2 absences: none
-revisit	S02-V-084	woocommerce	b	S02-VP-05	was gap; A2 statements: S02-WC-257;S02-WC-258;S02-WC-259;S02-WC-260;S02-WC-261;S02-WC-262;S02-WC-511;S02-WC-512; A2 gaps: S02-WC-G06; A2 absences: none
-revisit	S02-V-194	woocommerce	c	S02-VP-10	was not covered; A2 statements: S02-WC-263; A2 gaps: S02-WC-G07; A2 absences: none
-revisit	S02-V-200	woocommerce	c	S02-VP-12	was not covered; A2 statements: S02-WC-264;S02-WC-265;S02-WC-266;S02-WC-267;S02-WC-268; A2 gaps: none; A2 absences: none
-revisit	S02-V-182	zid	c	S02-VP-15	was not covered; A2 statements: S02-ZD-192;S02-ZD-193;S02-ZD-194;S02-ZD-195;S02-ZD-196;S02-ZD-197;S02-ZD-198;S02-ZD-199;S02-ZD-200;S02-ZD-201;S02-ZD-202;S02-ZD-203;S02-ZD-204;S02-ZD-205;S02-ZD-398;S02-ZD-408;S02-ZD-411;S02-ZD-418; A2 gaps: S02-ZD-G08; A2 absences: none
-revisit	S02-V-038	zid	d	S02-VP-02	was not covered; A2 statements: none; A2 gaps: S02-ZD-G09; A2 absences: none
 reread	S02-SA-249	salla	a		RD1-1, (a) and (d): Rule 5: a statement's identifier or scope may name its X, or what fills it, under any bullet
-reread	S02-SH-260	shopify	a;b		RD1-1, (a) and (d): Rule 5: a statement's identifier or scope may name its X, or what fills it, under any bullet
-reread	S02-SH-396	shopify	a;b		RD1-1, (a) and (d): Rule 5: a statement's identifier or scope may name its X, or what fills it, under any bullet
-reread	S02-SH-259	shopify	a;d		RD1-1, (a) and (d): Rule 5: a statement's identifier or scope may name its X, or what fills it, under any bullet
-reread	S02-SH-441	shopify	b;c		RD1-3, (c): Rule 2: a flag or key fails the role test only if its words, identifier and scope don't say whose country
-reread	S02-SH-448	shopify	b;c		RD1-3, (c): Rule 2: a flag or key fails the role test only if its words, identifier and scope don't say whose country
+reread	S02-SH-259	shopify	a		RD1-1, (a) and (d): Rule 5: a statement's identifier or scope may name its X, or what fills it, under any bullet
+reread	S02-SH-260	shopify	a		RD1-1, (a) and (d): Rule 5: a statement's identifier or scope may name its X, or what fills it, under any bullet
+reread	S02-SH-396	shopify	a		RD1-1, (a) and (d): Rule 5: a statement's identifier or scope may name its X, or what fills it, under any bullet
+reread	S02-SH-260	shopify	b		RD1-1, (a) and (d): Rule 5: a statement's identifier or scope may name its X, or what fills it, under any bullet
+reread	S02-SH-396	shopify	b		RD1-1, (a) and (d): Rule 5: a statement's identifier or scope may name its X, or what fills it, under any bullet
+reread	S02-SH-441	shopify	b		RD1-3, (c): Rule 2: a flag or key fails the role test only if its words, identifier and scope don't say whose country
+reread	S02-SH-448	shopify	b		RD1-3, (c): Rule 2: a flag or key fails the role test only if its words, identifier and scope don't say whose country
 reread	S02-SH-267	shopify	c		RD1-3, (c): Rule 2: a flag or key fails the role test only if its words, identifier and scope don't say whose country
+reread	S02-SH-441	shopify	c		RD1-3, (c): Rule 2: a flag or key fails the role test only if its words, identifier and scope don't say whose country
 reread	S02-SH-442	shopify	c		RD1-3, (c): Rule 2: a flag or key fails the role test only if its words, identifier and scope don't say whose country
 reread	S02-SH-443	shopify	c		RD1-3, (c): Rule 2: a flag or key fails the role test only if its words, identifier and scope don't say whose country
 reread	S02-SH-444	shopify	c		RD1-3, (c): Rule 2: a flag or key fails the role test only if its words, identifier and scope don't say whose country
 reread	S02-SH-445	shopify	c		RD1-3, (c): Rule 2: a flag or key fails the role test only if its words, identifier and scope don't say whose country
 reread	S02-SH-446	shopify	c		RD1-3, (c): Rule 2: a flag or key fails the role test only if its words, identifier and scope don't say whose country
+reread	S02-SH-448	shopify	c		RD1-3, (c): Rule 2: a flag or key fails the role test only if its words, identifier and scope don't say whose country
 reread	S02-SH-465	shopify	c		RD1-3, (c): Rule 2: a flag or key fails the role test only if its words, identifier and scope don't say whose country
+reread	S02-SH-259	shopify	d		RD1-1, (a) and (d): Rule 5: a statement's identifier or scope may name its X, or what fills it, under any bullet
+reread	S02-ZD-148	zid	a		RD1-1, (a) and (d): Rule 5: a statement's identifier or scope may name its X, or what fills it, under any bullet
 reread	S02-ZD-149	zid	a		RD1-1, (a) and (d): Rule 5: a statement's identifier or scope may name its X, or what fills it, under any bullet
-reread	S02-ZD-148	zid	a;b		RD1-1, (a) and (d): Rule 5: a statement's identifier or scope may name its X, or what fills it, under any bullet
+reread	S02-ZD-148	zid	b		RD1-1, (a) and (d): Rule 5: a statement's identifier or scope may name its X, or what fills it, under any bullet
 note	S02-ZD-180	zid	a		They quote the Saudi Terms that zid.eg's Terms page holds in its raw HTML. The page's scripts replace them with the Terms of شركة زد مصر, under Egyptian law, so the page doesn't show these words (`method-report.md`, section 9). The statements recorded from the page as shown take their place.
 note	S02-ZD-179	zid	c		They quote the Saudi Terms that zid.eg's Terms page holds in its raw HTML. The page's scripts replace them with the Terms of شركة زد مصر, under Egyptian law, so the page doesn't show these words (`method-report.md`, section 9). The statements recorded from the page as shown take their place.
 note	S02-ZD-180	zid	c		They quote the Saudi Terms that zid.eg's Terms page holds in its raw HTML. The page's scripts replace them with the Terms of شركة زد مصر, under Egyptian law, so the page doesn't show these words (`method-report.md`, section 9). The statements recorded from the page as shown take their place.

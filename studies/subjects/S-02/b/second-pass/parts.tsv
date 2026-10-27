@@ -1,11 +1,11 @@
-part	root_decision	bullets	platforms	tasks	count	status
-RD1-S1	RD1	a; b; d	shopify; salla; zid; woocommerce; bigcommerce	every task whose bullets are all among (a), (b) and (d)	184	planned
-RD1-S2	RD1	c	shopify; salla	every task under (c) for Shopify and Salla, with Shopify's two (b;c) rereads	138	planned
-RD1-S3	RD1	c	zid; woocommerce; bigcommerce	every task under (c) for Zid, WooCommerce and BigCommerce, with Zid's two notes	168	planned
-RD2-S1	RD2	e; g	shopify; salla; zid; woocommerce; bigcommerce	every task	217	planned
-RD3-S1	RD3	f	shopify	place S02-SH-604 to S02-SH-815 under (f); every Shopify revisit and reread	183	planned
-RD3-S2	RD3	f; g	shopify	place S02-SH-816 to S02-SH-994 under (f), and Shopify's (g)	160	planned
-RD3-S3	RD3	f	woocommerce	place and revisit under (f)	243	planned
-RD3-S4	RD3	g	woocommerce	place under (g), and WooCommerce's rereads	134	planned
-RD3-S5	RD3	f; g	zid	every Zid task	165	planned
-RD3-S6	RD3	f; g	salla; bigcommerce	every Salla and BigCommerce task	212	planned
+part	root_decision	bullets	platforms	tasks	count	effective	status
+RD1-S1	RD1	a; b; d	shopify; salla; zid; woocommerce; bigcommerce	every task under (a), (b) and (d)	158	198	planned
+RD1-S2	RD1	c	shopify; salla	every task under (c) for Shopify and Salla	83	138	planned
+RD1-S3	RD1	c	zid; woocommerce; bigcommerce	every task under (c) for Zid, WooCommerce and BigCommerce	106	168	planned
+RD2-S1	RD2	e; g	shopify; salla; zid; woocommerce; bigcommerce	every task	210	217	planned
+RD3-S1	RD3	f; g	shopify	every Shopify task	66	487	planned
+RD3-S2	RD3	f	woocommerce	every WooCommerce task under (f)	41	321	planned
+RD3-S3	RD3	g	woocommerce	every WooCommerce task under (g)	134	134	planned
+RD3-S4	RD3	f; g	zid	every Zid task	40	269	planned
+RD3-S5	RD3	f; g	bigcommerce	every BigCommerce task	72	157	planned
+RD3-S6	RD3	f; g	salla	every Salla task	67	90	planned

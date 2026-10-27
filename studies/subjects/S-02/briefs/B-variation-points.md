@@ -9,7 +9,7 @@ This is `PLAN.md` Stage 4, subject S-02. You are one agent with one task: one pa
   - `gaps.tsv` and `absences.tsv`: those under your root decision's bullets, with their platform, and an absence's kind;
   - `terms.tsv`: every platform's terms;
 - your root decision's own folder, `b/<root decision>/`, where earlier parts wrote;
-- in the second pass: your root decision's work list, `b/second-pass/<root decision>/worklist.tsv`; each platform's `a2.tsv` and `absence-audit.tsv`; and the slices as the coordinator cuts them again.
+- in the second pass: your root decision's work list, `b/second-pass/<root decision>/worklist.tsv`; each platform's `a2.tsv` and `absence-audit.tsv`; the slices as the coordinator cuts them again; and the usage of `method/variants_edit.py`, at the top of the file.
 
 Don't read the platforms' own folders (but for the second pass's two files), their `notes.md` or `recorded.tsv` files, or any `note` column of phase A's files. The slices hold no notes.
 
@@ -132,7 +132,8 @@ Statements under (h) are conditions, not variants: a variant rests on at least o
      - the same answer stated in two languages, by the platform's own translation, is one answer;
      - one answer from several statements is one row, with all of them in `stmt_ids`;
      - under (c), things of one kind with the same decider are one answer, such as several payment providers each offered by the merchant's country. Which country gets which stays in the statements and their scope;
-     - under (c), a statement that a thing is offered to every store, whatever its country, answers with its excerpt, and `basis_evidence` names `every store`.
+     - under (c), a statement that a thing is offered to every store, whatever its country, answers with its excerpt, and `basis_evidence` names `every store`. So does a statement whose own words apply the thing to all stores, merchants, plans, subscriptions or fees, where neither it nor its `scope` names a country, a site or a region;
+     - under (c), an answer names what decides X from rule 1's table, or `every store`. A statement whose decider is something else, such as a payment method, where a transfer goes or a carrier, answers nothing: name it in the point's `note`, and note the statement (rule 2). A statement that names no decider, and isn't `every store`, is noted too.
    - **Its form.** A row takes one of four forms:
      - **an answer:** `variant` is an excerpt of one of its statements, verbatim;
      - **`absent`:** the platform's absences show it absent from a complete list, under the variation point's bullet, with those `absence_ids`. Its `kind` is the absence's kind;
@@ -181,20 +182,33 @@ Statements under (h) are conditions, not variants: a variant rests on at least o
 
 When the coordinator says phases A2 and A3 are done, the slices are cut again to hold what they added, and each root decision gets a work list. The second pass places what was added, under the variation points the first pass raised.
 
-**Your work list** is `b/second-pass/<root decision>/worklist.tsv`, written by `method/second_pass_list.py`. Your message names your part's rows in it, by platform and bullet. Its columns are `task`, `id`, `platform`, `bullet`, `vp_id` and `why`. Don't read the slices whole: print the statements your list names by id (`--print <RD> --ids ...`), a batch at a time. The tasks:
+**Your work list** is `b/second-pass/<root decision>/worklist.tsv`, written by `method/second_pass_list.py`. Your message names your part's rows in it. Its columns are `task`, `id`, `platform`, `bullet`, `vp_id` and `why`. Do the tasks in the list's order, revisits first. Don't read the slices whole: print the statements a task names by id, 10 to 15 at a time, with only the columns you need (`--print <RD> --ids ... | cut -f1,2,4,5,7,8,9`). An id the printer doesn't print, it names on its standard error: that statement is under none of your root decision's bullets, so leave it. The tasks:
+- **`revisit`:** a row that was `gap`, `absent` or `not covered`, under the point in `vp_id`, which gap-closing worked. `why` first names its **leads**: the statements gap-closing found for the point, under the point's bullet. This task places or notes each lead under that bullet: under this point, or under another of the bullet's points that it answers, or in `notes-b.md` (rule 2). `why` then names the statements under your decision's other bullets, which have their own tasks, and those outside your slice, which you leave. Last, it names the gaps and absences gap-closing left for the point. Replace the row:
+  - **with an answer row for each distinct answer** the leads give (rule 4): the first keeps the row's `variant_id` (`replace`), and the others take new ids (`add`);
+  - **or, where every answer the leads give is one the platform's rows already hold,** join the leads to those rows (`join`), and `remove` the old row;
+  - **or with `absent`,** giving the absences `why` names;
+  - **or with `gap`,** giving only the gaps `why` names. A gap `why` doesn't name was settled by gap-closing, and goes. A `gap` row may stand beside answers (rule 4).
+
+  A `not covered` row never stands beside another row of its platform under the same point.
 - **`place`:** a statement neither in a variant nor noted, under the `bullet` given. Place it under your root decision's variation points, by the rules above, or note it, as rule 2 says. Each platform's `a2.tsv` names, by point, the statements gap-closing found for it, and `absence-audit.tsv` those the audit recorded for a claim: read them as leads to a point, not as its answer.
-- **`revisit`:** a row that was `gap`, `absent` or `not covered`, under the point in `vp_id`, which gap-closing worked; `why` gives the statements, gaps and absences it recorded for the point. Replace the row: with variants from those statements, where they answer the point; or with `absent`, giving the absences; or with `gap`, giving the gaps that remain. A `gap` row may stand beside answers (rule 4).
-- **`reread`:** a statement an earlier part noted under a rule widened since; `why` names the part and the rule. Place it, or note it again, and say which in `notes-b.md`.
-- **`note`:** a statement not to place, with the reason in `why`. Note it, under each of its bullets, with that reason.
+- **`reread`:** a statement an earlier part noted under a rule widened since. `why` names the part and the rule. Place it, or leave it noted; its earlier note stays as it is either way.
+- **`note`:** a statement not to place. Note it, under its bullet, with the reason `why` gives, in its words.
 
 The second pass adds no variation point and splits none. A statement that fits none is noted, with that reason. Recheck, under rule 5, any row you compared with a statement of its own platform.
 
-**Your files,** in your root decision's folder, `b/<root decision>/`:
-- **`variants.tsv`:** a row you revisit is replaced. Its first replacing row keeps its `variant_id`; further rows take new ids from your root decision's range in `b/ranges.tsv`, after the folder's last. Add rows for new answers the same way. A placed statement that gives an answer a row already holds joins that row's `stmt_ids` (rule 4), and the row's `basis_evidence` may add its words. Change no other row.
-- **`variation-points.tsv`:** unchanged, but for `x_words`, which takes the platforms' words for X from the statements you place, and `note`.
-- **`notes-b.md`:** under a heading "Second pass, <your part>": the statements you note, in rule 2's form; the rows you replaced, and what replaced them; and the words you searched for.
+**Writing.** Make every change to `variants.tsv`, and to `x_words`, with `method/variants_edit.py studies/subjects/S-02 <root decision> <command>`:
+- `rows <vp_id> [<platform>]` prints a point's question, `x_words` and rows;
+- `join <variant_id> --stmts <ids> [--evidence <words>]` adds statements to an answer row, and takes its `kind` and `scope` again from all its statements (rule 6);
+- `add <vp_id> <platform>` and `replace <variant_id>` write an answer (`--variant <excerpt> --stmts <ids> --basis <bases> --evidence <words>`), a `--gap` with `--gaps`, or an `--absent` with `--absences`; `add` gives the next free id of your range;
+- `remove <variant_id>`;
+- `done <task> <id> <bullet> <outcome>` records, in a few words, the outcome of each `revisit`, `reread` and `note` task, as soon as it is done;
+- `xwords <vp_id> <platform> <words>` adds a platform's words for X.
 
-**Before you finish,** check as the Output section says. In the checker's `unplaced.tsv`, your part's rows should be gone. Its `review` lines on quotes found only in a page's source are the coordinator's.
+It refuses an excerpt that isn't in its statements, a statement outside your slice, and a basis outside rule 5's four. Change no row a task doesn't lead you to. Write `notes-b.md` yourself, appending under a heading "Second pass, <your part>": the statements you note, in rule 2's form; the rows you replaced or removed, and what took their place; the rereads you placed; and the words you searched for.
+
+**Write as you go:** each revisit as soon as it is done, and every 15 to 20 other tasks.
+
+**Before you finish,** check as the Output section says, and run `python3 -I method/second_pass_list.py studies/subjects/S-02 --check`, which only reads. In the checker's `unplaced.tsv`, your part's `place` rows and your revisits' leads should be gone. In `--check`'s list, your part's revisit, reread and note tasks should be gone. The checker's `review` lines on quotes found only in a page's source are the coordinator's.
 
 ## Output, in `studies/subjects/S-02/b/<root decision>/`
 

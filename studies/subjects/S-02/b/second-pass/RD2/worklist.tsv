@@ -1,4 +1,6 @@
 task	id	platform	bullet	vp_id	why
+revisit	S02-V-424	shopify	e	S02-VP-27	was gap; leads under (e), which this task places or notes: S02-SH-689;S02-SH-703;S02-SH-704;S02-SH-706;S02-SH-707; A2 statements under this decision's other bullets, with their own tasks: none; A2 statements outside this decision's slice, left: S02-SH-690;S02-SH-691;S02-SH-692;S02-SH-693;S02-SH-694;S02-SH-695;S02-SH-696;S02-SH-697;S02-SH-698;S02-SH-699;S02-SH-700;S02-SH-701;S02-SH-702;S02-SH-705; A2 gaps: S02-SH-G07; A2 absences: none
+revisit	S02-V-449	woocommerce	e	S02-VP-27	was gap; leads under (e), which this task places or notes: S02-WC-269;S02-WC-270; A2 statements under this decision's other bullets, with their own tasks: none; A2 statements outside this decision's slice, left: S02-WC-271;S02-WC-272;S02-WC-273; A2 gaps: none; A2 absences: none
 place	S02-BC-162	bigcommerce	e		
 place	S02-BC-163	bigcommerce	e		
 place	S02-BC-164	bigcommerce	e		
@@ -60,11 +62,6 @@ place	S02-SH-609	shopify	e
 place	S02-SH-611	shopify	e		
 place	S02-SH-628	shopify	e		
 place	S02-SH-629	shopify	e		
-place	S02-SH-689	shopify	e		
-place	S02-SH-703	shopify	e		
-place	S02-SH-704	shopify	e		
-place	S02-SH-706	shopify	e		
-place	S02-SH-707	shopify	e		
 place	S02-SH-783	shopify	e		
 place	S02-SH-784	shopify	e		
 place	S02-SH-920	shopify	e		
@@ -74,8 +71,6 @@ place	S02-SH-927	shopify	e
 place	S02-SH-937	shopify	e		
 place	S02-SH-939	shopify	e		
 place	S02-SH-653	shopify	g		
-place	S02-WC-269	woocommerce	e		
-place	S02-WC-270	woocommerce	e		
 place	S02-WC-359	woocommerce	e		
 place	S02-WC-266	woocommerce	g		
 place	S02-WC-274	woocommerce	g		
@@ -210,8 +205,6 @@ place	S02-ZD-190	zid	e
 place	S02-ZD-191	zid	e		
 place	S02-ZD-447	zid	e		
 place	S02-ZD-231	zid	g		
-revisit	S02-V-424	shopify	e	S02-VP-27	was gap; A2 statements: S02-SH-689;S02-SH-690;S02-SH-691;S02-SH-692;S02-SH-693;S02-SH-694;S02-SH-695;S02-SH-696;S02-SH-697;S02-SH-698;S02-SH-699;S02-SH-700;S02-SH-701;S02-SH-702;S02-SH-703;S02-SH-704;S02-SH-705;S02-SH-706;S02-SH-707; A2 gaps: S02-SH-G07; A2 absences: none
-revisit	S02-V-449	woocommerce	e	S02-VP-27	was gap; A2 statements: S02-WC-269;S02-WC-270;S02-WC-271;S02-WC-272;S02-WC-273; A2 gaps: none; A2 absences: none
 reread	S02-SA-026	salla	e		RD2-2, (e): Rule 4: a party that gates creating a market, such as the account manager who switches the feature on, is its own answer under `who creates` and `who changes or removes`
 reread	S02-SA-054	salla	e		RD2-2, (e): Rule 4: a party that gates creating a market, such as the account manager who switches the feature on, is its own answer under `who creates` and `who changes or removes`
 reread	S02-SA-055	salla	e		RD2-2, (e): Rule 4: a party that gates creating a market, such as the account manager who switches the feature on, is its own answer under `who creates` and `who changes or removes`

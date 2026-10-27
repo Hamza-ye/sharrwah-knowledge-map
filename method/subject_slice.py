@@ -136,6 +136,11 @@ def show(subj, args):
         if want and r.get(key) not in want:
             continue
         print("\t".join(r.get(h, "") for h in head))
+    # an id asked for that the slice doesn't hold is named, so that it isn't missed in silence: it is under none of
+    # this root decision's bullets (or under none the filters let through)
+    missing = sorted(want - {r.get(key) for r in recs})
+    if missing:
+        print(f"not in {rd}'s slice: {', '.join(missing)}", file=sys.stderr)
 
 
 if __name__ == "__main__":

@@ -65,7 +65,9 @@ def checks(subj, base, rds):
 
 def main(subj, phase):
     base = os.path.join(subj, phase)
-    rds = sorted(d for d in os.listdir(base) if os.path.isdir(os.path.join(base, d))) if os.path.isdir(base) else []
+    # b/second-pass/ holds the coordinator's work lists for phase B's second pass, not a root decision's files
+    rds = sorted(d for d in os.listdir(base) if os.path.isdir(os.path.join(base, d)) and d != "second-pass") \
+        if os.path.isdir(base) else []
     if not rds:
         sys.exit(f"no folders in {base}")
     problems = checks(subj, base, rds)

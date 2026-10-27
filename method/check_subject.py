@@ -530,6 +530,15 @@ if var is not None:
         for p in PLATFORMS:
             if os.path.isdir(os.path.join(subj, p)) and (v, p) not in seen:
                 err("variants.tsv", f"{v}/{p}", "no row for this variation point and platform")
+    rows_of = {}
+    for r in var:
+        rows_of.setdefault((r["vp_id"], r["platform"]), []).append(r)
+    for (v, p), rs in rows_of.items():
+        if len(rs) > 1:
+            for r in rs:
+                if r["variant"] == "not covered":
+                    err("variants.tsv", r["variant_id"], f"'not covered' says {p} has no row of its own here, but "
+                                                         f"{len(rs) - 1} other row(s) of {v} are {p}'s: replace it")
     if not any(BULLET_RD.values()):        # the pilot: one question, so one count
         placed = {s for r in var for s in ids(r["stmt_ids"])}
         unplaced = [s for s in stmts if s not in placed and stmts[s]["bullets"] & (ASK | NOPART)]
@@ -577,12 +586,23 @@ if var is not None:
             err("variants.tsv", rd, f"{len(mine)} of {rd}'s statements, by bullet, are neither in one of its "
                                     f"variants nor noted under its heading in notes-b.md (all in unplaced.tsv): "
                                     f"{', '.join(f'{r[1]} ({r[2]})' for r in mine[:8])}", "review")
+# b/ranges.tsv gives each root decision its variation points' numbers; a copy checked with some root decisions only
+# (phase B's "Before you finish") holds the others' points nowhere, so their a2.tsv rows aren't flagged there
+_ranges = read(os.path.join(subj, "b", "ranges.tsv"), "b/ranges.tsv", check_head=False) or []
+def rd_of_vp(v):
+    m = re.search(r"-VP-(\d+)$", v or "")
+    for r in _ranges:
+        if m and int(r["vp_from"]) <= int(m.group(1)) <= int(r["vp_to"]):
+            return r["root_decision"]
+    return None if _ranges else "all"
+rds_present = {rd_of_vp(v) for v in (vp or {})} | ({"all"} if not _ranges else set())
 for plat in PLATFORMS:
     a2 = read(os.path.join(subj, plat, "a2.tsv"), f"{plat}/a2.tsv")
     later = read_later(plat)
     for r in a2 or []:
         # a row whose vp_id is `none` holds a lead's statements, or a gap under (h), that answer no variation point
-        if vp and r["vp_id"] != "none" and r["vp_id"] not in vp:   # checked where variation points are present
+        if vp and r["vp_id"] != "none" and r["vp_id"] not in vp \
+                and rd_of_vp(r["vp_id"]) in rds_present:   # checked where its root decision's points are present
             err(f"{plat}/a2.tsv", r["vp_id"], "not a variation point")
         for s in ids(r["stmt_ids"]):
             if s not in stmts:
