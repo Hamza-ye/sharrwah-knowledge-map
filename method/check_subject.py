@@ -361,7 +361,8 @@ for plat in PLATFORMS:
     # the gaps phase A2 leaves after its own searches (its a2.tsv's gap_ids) need no second audit; every other
     # claim, phase A's own searched gaps among them, has its row
     after_a2 = {g for r in (read(os.path.join(d, "a2.tsv"), f"{plat}/a2.tsv", check_head=False) or [])
-                for g in ids(r.get("gap_ids", ""))}
+                for g in ids(r.get("gap_ids", ""))
+                if "corpus_search.py" in gaps.get(g, {}).get("read", "")}   # A2's own searches are named in the gap
     for c in claims:
         if c not in done and c not in after_a2:
             err(f, c, "a claim of absence that the audit doesn't settle")
