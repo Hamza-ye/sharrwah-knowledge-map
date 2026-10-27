@@ -110,20 +110,21 @@ The pilot's five steps, under Stage 4's changes (`PLAN.md`, Stage 4, and section
 
 | Step | Millions |
 | --- | --- |
-| Spent by 27 October, 09:53 UTC (measured): the briefs' inspections, phase A for all five platforms, phase B's first pass (146), the absence audit (66), and gap-closing's first four parts (86) with the two running (10) | 864 |
-| 1A2, the rest of gap-closing: 83 rows in nine parts, at the 1.8 to 2.8 million a row its first four parts cost | 140 to 225 |
+| Spent by 27 October, 10:30 UTC (measured): the briefs' inspections, phase A for all five platforms, phase B's first pass (146), the absence audit (66), and gap-closing's first six parts (155) with the two running (1) | 925 |
+| 1A2, the rest of gap-closing: 72 rows in seven parts; 62 of them at the 1.8 to 2.8 million a row most parts have cost, and Shopify's ten in two agents of about 100 requests each | 160 to 240 |
 | An absence audit of what gap-closing records as absent | 0 to 10 |
 | 1B's second pass: about 740 statements that A2 and A3 added, at the first pass's 0.085 million a statement-bullet pair, and the rows it revisits | 70 to 110 |
 | 1C, per root decision | 90 to 150 |
 | Inspection of the later briefs | 15 to 30 |
 | 5, the review | 40 to 80 |
-| **All of S-02, projected** | **about 1,220 to 1,470** |
+| **All of S-02, projected** | **about 1,300 to 1,550** |
 
-**Past the budget plus a quarter.** S-02 passes 875 million during gap-closing's fifth and sixth parts, on 27 October, so its cost and projection come to the founder (`PLAN.md`, section 8). The work goes on.
-- **Where it went over:** phase A cost 504 million, against the 325 to 375 million this table first set for it ([`method-report.md`](method-report.md), section 4). Phase B's first pass cost 146 million, within its share. Gap-closing comes to about 280 million, at the top of the 200 to 290 million first set for it: its rows have each yielded about five statements ([`method-report.md`](method-report.md), section 9). The second pass is now set at 70 to 110 million, against 45 to 80, for the statements gap-closing adds.
+**Past the budget plus a quarter.** S-02 passed 875 million during gap-closing's fifth and sixth parts, on 27 October, so its cost and projection came to the founder (`PLAN.md`, section 8), at 1,220 to 1,470 million. Measured again at 10:30 UTC, after Shopify's first part, it is projected at 1,300 to 1,550 million, most likely about 1,420. The work goes on.
+- **Where it went over:** phase A cost 504 million, against the 325 to 375 million this table first set for it ([`method-report.md`](method-report.md), section 4). Phase B's first pass cost 146 million, within its share. Gap-closing comes to about 350 million, above the 200 to 290 million first set for it. Its rows have each yielded about five statements, and Shopify's first part ran past its stop: 53.5 million for four rows ([`method-report.md`](method-report.md), section 9). The second pass is now set at 70 to 110 million, against 45 to 80, for the statements gap-closing adds.
 - **Re-planned to cost less, with no evidence cut:**
   - the second pass reads only what it revisits: the slices are cut again to hold the statements A2 and A3 added, the statements `b/second-pass.md` lists, and the rows it revisits, not each root decision's whole slice;
-  - the coordinator captures pages and checks quotes once for every two parts, not after each, which lowers its own cost.
+  - the coordinator captures pages and checks quotes once for every two parts, not after each, which lowers its own cost;
+  - each gap-closing part counts its tool calls and stops at about 100, and a fresh agent continues from its files, since every request of a long run reads its whole context again.
 - **A higher plan:** none is needed yet. No run has been refused or slowed by a usage limit. The coordinator says so if one is.
 
 The budget counts the agents. The coordinating session's own tokens are reported beside it: 285 million from 21:00 UTC on 26 October, when S-02 began, to 10:00 UTC on 27 October.
