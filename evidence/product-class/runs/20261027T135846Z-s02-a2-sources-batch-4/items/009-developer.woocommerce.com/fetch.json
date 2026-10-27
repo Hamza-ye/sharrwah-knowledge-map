@@ -1,0 +1,18 @@
+{
+ "n": 9,
+ "url": "https://developer.woocommerce.com/docs/extensions/best-practices-extensions/gdpr-compliance/",
+ "dir": "items/009-developer.woocommerce.com",
+ "fetched_at": "2026-10-27T13:58:47Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://developer.woocommerce.com/docs/extensions/best-practices-extensions/gdpr-compliance/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 7620,
+ "cited_in": [
+  "S-02 A2 WC-4b"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "c2762996cd26742697da27f09a79fd31bec57048f6a488d64b5ede2f07f7cea6",
+ "raw_ext": "html"
+}

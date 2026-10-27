@@ -1,0 +1,18 @@
+{
+ "n": 10,
+ "url": "https://developer.woocommerce.com/docs/extensions/extension-onboarding/integrating-coming-soon-mode/",
+ "dir": "items/010-developer.woocommerce.com",
+ "fetched_at": "2026-10-27T13:58:48Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://developer.woocommerce.com/docs/extensions/extension-onboarding/integrating-coming-soon-mode/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 10283,
+ "cited_in": [
+  "S-02 A2 WC-4b"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "7214e215c4133a0185d323c45fe2d6f9a98ed1b70243f6ecc346d5d6b1365cb0",
+ "raw_ext": "html"
+}

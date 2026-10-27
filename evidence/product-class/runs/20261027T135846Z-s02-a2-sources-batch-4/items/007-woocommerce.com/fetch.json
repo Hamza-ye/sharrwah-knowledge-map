@@ -1,0 +1,18 @@
+{
+ "n": 7,
+ "url": "https://woocommerce.com/document/configuring-woocommerce-settings/emails/",
+ "dir": "items/007-woocommerce.com",
+ "fetched_at": "2026-10-27T13:58:47Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/configuring-woocommerce-settings/emails/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 49137,
+ "cited_in": [
+  "S-02 A2 WC-4a"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "0aba02a2696384dc15dfd1178dbfc56409e0aa13c5cabeb312f88fb2435076c7",
+ "raw_ext": "html"
+}

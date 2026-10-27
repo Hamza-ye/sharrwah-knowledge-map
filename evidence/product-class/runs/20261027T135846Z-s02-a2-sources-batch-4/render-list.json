@@ -1,0 +1,68 @@
+[
+{
+"n": 1,
+"url": "https://zid.sa/ar/syria/",
+"dir": "items/001-zid.sa",
+"keep_body": false
+},
+{
+"n": 2,
+"url": "https://zid.sa/en/syria/",
+"dir": "items/002-zid.sa",
+"keep_body": false
+},
+{
+"n": 3,
+"url": "https://zid.sa/en/solutions/payments/",
+"dir": "items/003-zid.sa",
+"keep_body": false
+},
+{
+"n": 4,
+"url": "https://zid.sa/ar/solutions/payments/",
+"dir": "items/004-zid.sa",
+"keep_body": false
+},
+{
+"n": 5,
+"url": "https://zid.sa/ar/uae/",
+"dir": "items/005-zid.sa",
+"keep_body": false
+},
+{
+"n": 6,
+"url": "https://woocommerce.com/document/google-analytics-integration/",
+"dir": "items/006-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 7,
+"url": "https://woocommerce.com/document/configuring-woocommerce-settings/emails/",
+"dir": "items/007-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 8,
+"url": "https://woocommerce.com/products/woocommerce-google-analytics/",
+"dir": "items/008-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 9,
+"url": "https://developer.woocommerce.com/docs/extensions/best-practices-extensions/gdpr-compliance/",
+"dir": "items/009-developer.woocommerce.com",
+"keep_body": false
+},
+{
+"n": 10,
+"url": "https://developer.woocommerce.com/docs/extensions/extension-onboarding/integrating-coming-soon-mode/",
+"dir": "items/010-developer.woocommerce.com",
+"keep_body": false
+},
+{
+"n": 11,
+"url": "https://developer.woocommerce.com/docs/extensions/best-practices-extensions/privacy-standards/",
+"dir": "items/011-developer.woocommerce.com",
+"keep_body": false
+}
+]

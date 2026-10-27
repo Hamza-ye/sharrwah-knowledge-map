@@ -1,0 +1,82 @@
+Skip to main content
+Docs
+Extensions
+API
+CLI
+Marketplace
+Blog
+GitHub
+Search
+Ctrl
+K
+Getting started
+Design a simple extension
+Build your first extension
+Core concepts
+Settings and config
+Onboarding
+Best practices
+Accessibility
+Best practices
+Compatibility
+GDPR compliance
+Privacy standards
+Support and documentation
+UX guidelines
+Review guidelines
+Best practicesPrivacy standards
+Copy markdown
+Copies the current page content as markdown format to your clipboard
+Privacy Standards for WooCommerce extensions
+
+Privacy and data protection are becoming increasingly important online, and WooCommerce extensions are no exception. This document outlines the key markers of quality regarding privacy for WooCommerce extensions, the current methods for testing compliance, and the standards developers should adhere to ensure user trust and legal compliance.
+
+Standards for privacy​
+
+To maintain high privacy standards, developers of WooCommerce extensions should adhere to the following:
+
+Presence of privacy policy page​
+A privacy policy should be readily available and easy to understand. It must clearly describe the types of data collected by the extension, the purpose of data collection, how data is processed and stored, and the users' rights concerning their data.
+No unauthorized external requests​
+All resources required by the extension should be hosted within the plugin folder/zip file unless there's a clear, justified reason for external requests, which should then be disclosed in the privacy policy.
+Unauthorized or undisclosed external requests, especially those that could expose user data to third-party services without consent, are strictly against privacy standards.
+GDPR compliance​
+
+For guidance on ensuring your WooCommerce extension complies with the General Data Protection Regulation (GDPR), please refer to our detailed documentation on GDPR compliance.
+
+Conclusion​
+
+Adhering to privacy standards is essential for WooCommerce extension developers to build trust with users and ensure compliance with legal requirements. By establishing a clear privacy policy and avoiding unauthorized external requests, developers can demonstrate their commitment to privacy and data protection. Regular testing and compliance checks will help maintain these standards and protect user data effectively.
+
+Edit this page
+Standards for privacy
+Presence of privacy policy page
+No unauthorized external requests
+GDPR compliance
+Conclusion
+COMMUNITY
+GitHub Discussions
+Community Slack
+Community Forum
+Code of Conduct
+Community Participation Guide
+GROW WITH WOO
+WooCommerce Marketplace
+Become a Woo agency partner
+Become a Marketplace partner
+Contribute to WooCommerce
+MORE
+Woo Developer Blog
+WooCommerce Monorepo
+WooCommerce Code Reference
+Woo Storybook
+Merchant Documentation
+GitHub
+Copyright © 2026 Built with Docusaurus. Documentation is licensed under GPLv3 and can be modified in the WooCommerce Monorepo.
+An  Creation
+Use of your personal data
+
+We and our partners process your personal data (such as browsing data, IP Addresses, cookie information, and other unique identifiers) based on your consent and/or our legitimate interest to optimize our website, marketing activities, and your user experience.
+
+Accept All
+Customize Preferences
