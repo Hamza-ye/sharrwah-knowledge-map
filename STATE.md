@@ -14,7 +14,7 @@
 **Open gate:** G3, after each subject. S-02 is under way.
 
 **Waiting on the founder:**
-- to hand the capture requests in [`handoffs/`](handoffs/README.md), H-001 to H-008, to the local agent. H-005 may need a store on Salla's Special plan, a spending decision that comes with it;
+- **the local agent's runs, and the founder's word on how they went** (27 October, evening). Its runs for H-006, H-007 and H-008 are in progress in observed-sh. The founder said they would pass H-001 to H-003 and H-005's step 1 for observed-sa. RD1's phase C waits for that word. Held evidence already answers part of each request (below);
 - the answers in [`reports/S-02-evidence-requests.md`](reports/S-02-evidence-requests.md), for the evidence only the founder can get: a Zid store, a BigCommerce trial, a WooCommerce test store, and questions to four platforms. Nothing waits on them: the second pass and phase C go on.
 
 **Stage 4, S-02, what a market is.**
@@ -40,13 +40,25 @@
 
 At phase A's end, the checker found every quote, 3,193 of them, and no error. With the briefs' inspections (30 million), S-02 had then spent about 534 million of its 700 million. The latest measure of its cost is under **Cost**, below ([the frame's budget](studies/subjects/S-02/frame.md#budget)).
 
-**In flight:**
+**Since the evening of 27 October** ([`method-report.md`](studies/subjects/S-02/method-report.md), sections 9 to 11):
+- **The second pass's parts are done:** RD1-S1 to RD1-S4, RD2-S1, RD3-S1 to RD3-S8. The coordinator ruled on the parts' candidates for a new point: two `who sets` points raised (S02-VP-91, S02-VP-92), and the rest left noted ([`b/second-pass.md`](studies/subjects/S-02/b/second-pass.md)).
+- **Held evidence first.** The founder's local agent showed that the search tool had never read Shopify's admin and sign-up code, held in tracked archives. The tool now reads code bundles. Three parts read held files before any run:
+  - **Shopify (A2-SH-H):** 35 statements, and its five gaps narrowed to what the runs in progress can show.
+  - **Salla (A2-SA-H, A2-SA-S):** the dashboard's own definitions show which of its settings take a value per market. Seven sections do, each behind the feature `multi-countries`, on the Special and Pro plans.
+  - **WooCommerce (A2-T):** its settings code.
+- **Running:** an audit of seven new claims of absence (A3-2). Then the second pass's last round places what the late parts added.
+- **Phase C's brief has had two dry runs.** The first showed that comparing whole sets of answers makes every point `vendor choice`. The brief now compares the platforms on each answer of a point, one at a time; the second dry run showed that this tells the answers apart ([`briefs/C-analysis.md`](studies/subjects/S-02/briefs/C-analysis.md)).
+
+**Earlier:**
 - **Phase B's first pass is complete** ([`method-report.md`](studies/subjects/S-02/method-report.md), section 7): 73 variation points, each with a row for every platform, 671 rows, in [`variation-points.tsv`](studies/subjects/S-02/variation-points.tsv) and [`variants.tsv`](studies/subjects/S-02/variants.tsv). The full check gives no error.
 - **The absence audit is complete** (section 8): 24 claims; 19 confirmed, 3 partly contradicted, 2 contradicted; 122 statements added. Two capture requests are narrowed ([H-002](handoffs/H-002-observed-sa-onboarding-countries.md), [H-007](handoffs/H-007-observed-sh-store-country-sign-up.md)), and three tools fixed to see held evidence they had missed.
 - **Gap-closing (phase A2) is complete** ([`method-report.md`](studies/subjects/S-02/method-report.md), section 9; [`a2-parts.tsv`](studies/subjects/S-02/a2-parts.tsv)): 22 parts, 121 rows, 118 of them given statements and 83 with no gap left; 1,165 statements; 337 million. Its live pages are captured, and every quote is found; twelve are ruled on after review. 49 gaps remain: 15 for the local agent, in H-008 (new) and H-002 and H-005 (extended); 34 for the founder.
 - **The render fault:** the browser in this session failed some sites' scripts, so BigCommerce's Help Center and Zid's sites rendered empty or as an error text; agents read zid.eg's Terms from a source that held the Saudi Terms. The tools now fetch each request outside the browser, open what a click shows, and tell a page's source from what it shows. 32 pages are held again as they render; Zid's audit of G03 was redone (for Egypt, the contract is with Zid Egypt, under Egyptian law). Every capture run now has its README.
-- **Cost:** 1,106 million agent tokens spent by 14:25 UTC on 27 October, past the budget plus a quarter (875 million); the cost came to the founder at 09:55 ([the frame's budget](studies/subjects/S-02/frame.md#budget)). S-02 is projected at about 1.35 to 1.53 billion. The work goes on, re-planned to cost less; no higher plan is needed yet.
+- **Cost:** 1,285 million agent tokens by 19:04 UTC on 27 October, past the budget plus a quarter (875 million); the cost came to the founder at 09:55 ([the frame's budget](studies/subjects/S-02/frame.md#budget)). S-02 is projected at about 1.45 to 1.55 billion. The work goes on; no higher plan is needed yet. The coordinating session's own tokens: 606 million since S-02 began.
 
-**Next:** phase B's second pass. The slices are cut again, and each root decision gets a work list (`method/second_pass_list.py`) of the statements A2 and A3 added, the rows to revisit, and the statements in [`b/second-pass.md`](studies/subjects/S-02/b/second-pass.md). The brief's second-pass section is inspected with a dry run, then about ten parts run, two at a time. Then phase C.
+**Next:**
+1. When the audit (A3-2) reports: the second pass's last round. Its tasks are the statements the late parts added, and the rows whose gaps they narrowed, in three small parts, one per root decision.
+2. Phase C for RD2, then RD3, in parts, two at a time.
+3. When the founder's local agent pushes: read its runs and close or narrow the gaps they answer. Then, with the founder's word on how the handoffs went, RD1's phase C.
 
 **To resume:** read `PLAN.md`, this file and `founder-decisions.tsv`.
