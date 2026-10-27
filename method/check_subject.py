@@ -187,7 +187,7 @@ def earlier_subject(sid, plat):
     return _earlier[(sid, plat)]
 
 # ---------- phase A, per platform ----------
-stmts, gaps, cit_all, kinds, absences = {}, {}, {}, {}, {}
+stmts, gaps, cit_all, kinds, absences, superseded = {}, {}, {}, {}, {}, {}
 for plat, code in PLATFORMS.items():
     d = os.path.join(subj, plat)
     if not os.path.isdir(d):
@@ -202,7 +202,7 @@ for plat, code in PLATFORMS.items():
     if ab is None:
         err(f"{plat}/absences.tsv", "", "file missing (a header row alone is fine)")
         ab = []
-    unique(f"{plat}/statements.tsv", st, "stmt_id", rf"^{pre}-\d{{3}}$")
+    unique(f"{plat}/statements.tsv", st, "stmt_id", rf"^{pre}-\d{{3,4}}$")
     unique(f"{plat}/gaps.tsv", gp, "gap_id", rf"^{pre}-G\d{{2}}$")
     unique(f"{plat}/absences.tsv", ab, "absence_id", rf"^{pre}-N\d{{2}}$")
     unique(f"{plat}/citations.tsv", ct, "cite_id", rf"^{pre}-C\d{{3,4}}$")
@@ -287,6 +287,8 @@ for plat, code in PLATFORMS.items():
     for g in gp:
         gid, f = g["gap_id"], f"{plat}/gaps.tsv"
         gaps[gid] = dict(g, platform=plat)
+        for x in re.findall(r"in place of (S\d\d-[A-Z]{2}-G\d+)", g["what_is_missing"]):
+            superseded[x] = gid                    # a gap a later part narrowed: kept as history, settled by its successor
         if g["bullet"] not in GAP_BULLETS:
             err(f, gid, f"bullet '{g['bullet']}' is not one of {one_of(of_role('ask', 'conditions', 'end'))}")
         if g["gap_kind"] not in GAP_KINDS:
@@ -336,7 +338,8 @@ for plat in PLATFORMS:
     if not os.path.isdir(d):
         continue
     audit = read(os.path.join(d, "absence-audit.tsv"), f"{plat}/absence-audit.tsv")
-    claims = [g for g, r in gaps.items() if r["platform"] == plat and r["gap_kind"] != "page not read"] + \
+    claims = [g for g, r in gaps.items() if r["platform"] == plat and r["gap_kind"] != "page not read"
+              and g not in superseded] + \
              [a for a, r in absences.items() if r["platform"] == plat]
     f = f"{plat}/absence-audit.tsv"
     if audit is None:
@@ -464,6 +467,8 @@ if var is not None:
             if not ids(r["gap_ids"]):
                 err("variants.tsv", i, "a gap variant names its gap_ids")
             for g in ids(r["gap_ids"]):
+                if g in superseded:
+                    err("variants.tsv", i, f"gap {g} was narrowed into {superseded[g]}: the row names the gap that replaced it")
                 if gaps.get(g, {}).get("platform") != plat:
                     err("variants.tsv", i, f"gap {g} is not one of {plat}'s gaps")
                 elif r["vp_id"] in vp and gaps[g]["bullet"] != vp[r["vp_id"]]["bullet"]:
@@ -572,10 +577,10 @@ if var is not None:
                 rd_now = h.group(1)
             elif rd_now:
                 # only a line that starts with its ids and their bullets is a note: "- S02-SA-011 (b): reason"
-                m = re.match(rf"^\s*[-*]?\s*((?:{SID}-[A-Z]{{2}}-\d{{3}}\s*,\s*)*{SID}-[A-Z]{{2}}-\d{{3}})"
+                m = re.match(rf"^\s*[-*]?\s*((?:{SID}-[A-Z]{{2}}-\d{{3,4}}\s*,\s*)*{SID}-[A-Z]{{2}}-\d{{3,4}})"
                              rf"\s*\(([a-z](?:\s*[,;]\s*[a-z])*)\)", line)
                 if m:
-                    for sid in re.findall(rf"{SID}-[A-Z]{{2}}-\d{{3}}", m.group(1)):
+                    for sid in re.findall(rf"{SID}-[A-Z]{{2}}-\d{{3,4}}", m.group(1)):
                         for b in re.split(r"\s*[,;]\s*", m.group(2)):
                             placed[(rd_now, b)].add(sid)
         rows_out = []

@@ -260,6 +260,8 @@ After the second pass:
 | Part | Rows | Rows given statements | Rows with no gap left | Statements added | Gaps it leaves | Requests | Millions |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | A2-T: the nine rows the second pass left `not covered`, on BigCommerce, Salla, Zid and WooCommerce | 9 | 1 | 5, by an absence or statements | 4 | BC-G15, SA-G12, ZD-G22, ZD-G23; WooCommerce's absences N01 to N04, to be audited | 32 | 4.4 |
+| A2-SH-H: Shopify's five open gaps and capture request H-006, from held files the founder's local agent pointed to | 5 gaps, 1 request | 5 | none: each narrowed | 35 | G09 to G13, in place of G01, G02 and G06 to G08 | 83 | 17.0 |
+| A2-SA-H: Salla's twelve open gaps, from held files, before its capture requests run; and BigCommerce's apps row | 12 gaps, 1 row | 4 | 2: Salla's onboarding countries (G03), from the audit's statements, and BigCommerce's apps | 14 | SA-G13 and G14, in place of G06 and G10; Salla's absences N01 and N02, to be audited | 92 | 18.6 |
 
 **What WC-1 taught:**
 - **Our labels aren't the platform's words.** The brief said to search a kind's own name, and the part asked whether "who sells to the buyer" was one. The brief now says the kind's head word is searched, such as `domain` or `currency`, and our longer labels aren't.
@@ -379,6 +381,20 @@ After the second pass:
 - **Why the searches missed it.** `method/corpus_search.py` read only the text, HTML and JSON records of the fetch archives, so JavaScript bundles were never searched. The admin's and sign-up's own code was searched by no one.
 - **What changed.** The tool now reads JavaScript records too, in pieces of 200,000 characters. A new part, A2-SH-H, reads the held files the local agent points to, as leads, before any run goes ahead.
 - **The lesson.** `CLAUDE.md` already says to look evidence up through each evidence repository's own guide (`docs/READING.md`). Before a gap goes to a capture request, every surface that guide lists is searched, and the tool is checked to reach it.
+
+**What A2-SH-H and A2-SA-H taught: held evidence first** (27 October, evening).
+- **Every lead the local agent gave for Shopify was borne out but one.** The admin's answers and code hold:
+  - Managed Markets refused on every store held, for two reasons: an unsupported region, and no Shopify Payments;
+  - which kinds of market each plan enables, and the limit on B2B catalogs;
+  - the 100-market limit on the "All" condition;
+  - the business types per country, 3 for Yemen and 11 for the US;
+  - the checkout's address forms for four countries;
+  - what the sign-up sends as the store's country, with "US" when none.
+
+  The one lead not borne out: the API's limit error does carry a number in the schema ("Can't have more than 50 markets", deprecated). Each of the five gaps narrowed to what only a run can show, which is what the local agent's runs now in progress ask (H-006 to H-008).
+- **Salla's dashboard code states, setting by setting, which settings take a value per market.** The settings center's definitions give a market field, enabled with the feature `multi-countries`, to 11 of its 94 sections. A2-SA-H recorded guest checkout's; a part of its own, A2-SA-S, records the rest. For Salla's capture requests, the held files answer two steps of H-005 (the order cancellation setting, and the merchant's notification settings), once the audit accepts their absences. The rest still need runs.
+- **Two parts handled a narrowed gap differently.** One kept the old gap and replaced it in `a2.tsv`; the other rewrote the old gap in place. A gap now stays in `gaps.tsv` as history, and the new one says "in place of" the old. The checker reads that: the old gap needs no audit, and a phase B row that names it is flagged until a revisit names the new one.
+- **Ids past 999.** Shopify's statements reached S02-SH-1000. The checker's id patterns now take three or four digits.
 
 **Gap-closing as a whole** (the coordinator, 27 October):
 - **What it did.** 22 parts read the pages behind 121 rows: the rows of S-02's points that were `not covered`, or whose gaps named a page not read. 118 rows were given statements, and 83 have no gap left. It added 1,165 statements: Shopify 388, Salla 118, Zid 256, WooCommerce 256 and BigCommerce 147. It cost 337.3 million, against the 350 projected at 10:30 ([the frame's budget](frame.md#budget)).
