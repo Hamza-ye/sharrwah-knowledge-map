@@ -414,6 +414,7 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 | RD3-S4: (f) and (g), Zid | 40 | 269 | 61 | 12.6 | 4.4 |
 | RD2-S1: (e) and (g), all five | 210 | 217 | 45 | 6.6 | 4.8 |
 | RD1-S1: (a), (b) and (d), all five | 158 | 198 | 54 | 10.8 | 3.7 |
+| RD1-S3: (c), Zid, WooCommerce and BigCommerce | 106 | 168 | 65 | 12.8 | 2.6 |
 
 **What the two pilots taught:**
 - **The tool and the order tripled the rate:** about three statements a request, against about one in the dry run, at about 0.05 million a statement. At that rate the second pass comes to about 115 million in all, inside the frame's 100 to 160.
@@ -424,3 +425,5 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 **What RD3-S2 and RD3-S3 taught:**
 - **A revisit's leads may answer nothing.** Six of WooCommerce's revisited rows had leads that answered other points, and no gap or absence, so they stayed `not covered`. RD3-S3's statements under (g) answered two: who sells to the buyer, and returns, each for the whole store. The four left (who sets the business entity, market selection's two points, and apps) take a gap when the pass ends, so that phase C reads what is missing rather than a blank.
 - **A checker rule split one answer into two rows.** It wanted `answers` alone on any row holding a statement under (g), so RD3-S3 could not join such statements to rows that also match by `term`, and wrote two rows that repeat answers already held. The rule now binds only rows that rest on statements under (g) alone, as rule 4 meant, and the coordinator joined the two rows to the rows they repeat (`b/RD3/notes-b.md`).
+
+**What RD1-S3 taught: a rule that hid the evidence it was meant to sort.** The clause added to rule 4 after the dry run kept a statement whose scope names a site from answering `every store`. Read with rule 1's table of deciders, it also kept zid.eg's Terms and Privacy Policy, both sites' prices, Zid's country pages and Zid Payments' sections for Saudi and Kuwaiti merchants from answering anything: 51 statements were noted, among them that a merchant in Egypt contracts with Zid Egypt, under Egyptian law, paying in Egyptian pounds with VAT. That is what RD1 asks: what a store's country decides. The part applied the rule as written, and said so. Rule 4 now says that the merchant's country is the decider where the platform's own words tie the site, page or section to one country and address it to merchants. The 51 statements are read again in a part of their own, RD1-S4, through the second pass's `reread` task (`b/second-pass.md`). The coordinator's lesson: a rule that narrows what counts as an answer is checked against the evidence it would exclude before parts run on it.
