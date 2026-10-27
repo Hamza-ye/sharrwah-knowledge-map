@@ -9,7 +9,7 @@ This is `PLAN.md` Stage 4, subject S-02. You are one agent with one task: one pa
   - `gaps.tsv` and `absences.tsv`: those under your root decision's bullets, with their platform, and an absence's kind;
   - `terms.tsv`: every platform's terms;
 - your root decision's own folder, `b/<root decision>/`, where earlier parts wrote;
-- in the second pass, each platform's `a2.tsv` and `absence-audit.tsv`, `b/second-pass.md`, and the slices as the coordinator cuts them again.
+- in the second pass: your root decision's work list, `b/second-pass/<root decision>/worklist.tsv`; each platform's `a2.tsv` and `absence-audit.tsv`; and the slices as the coordinator cuts them again.
 
 Don't read the platforms' own folders (but for the second pass's two files), their `notes.md` or `recorded.tsv` files, or any `note` column of phase A's files. The slices hold no notes.
 
@@ -179,12 +179,22 @@ Statements under (h) are conditions, not variants: a variant rests on at least o
 
 ## Second pass, after phases A2 and A3
 
-When the coordinator says phases A2 and A3 are done, the slices are cut again, so that they hold the statements A2 and A3 added. Read each platform's `a2.tsv` and `absence-audit.tsv`, and print the statements they name from the slice by id. Read `b/second-pass.md` too: the statements earlier parts noted under rules widened since, to read again. Revisit every row that was `gap`, `absent` or `not covered`, and each arrangement A2 was given. Recheck, under rule 5, any row you compared with a statement of its own platform. The second pass adds no variation point and splits none. A statement that fits no existing variation point is listed in `notes-b.md`. For each row revisited:
-- replace it with variants from the statements A2 added, under the rules above;
-- or make it `absent`, with A2's `absence_ids`;
-- or keep it as `gap`, with A2's `gap_ids`.
+When the coordinator says phases A2 and A3 are done, the slices are cut again to hold what they added, and each root decision gets a work list. The second pass places what was added, under the variation points the first pass raised.
 
-Record what changed in `notes-b.md`.
+**Your work list** is `b/second-pass/<root decision>/worklist.tsv`, written by `method/second_pass_list.py`. Your message names your part's rows in it, by platform and bullet. Its columns are `task`, `id`, `platform`, `bullet`, `vp_id` and `why`. Don't read the slices whole: print the statements your list names by id (`--print <RD> --ids ...`), a batch at a time. The tasks:
+- **`place`:** a statement neither in a variant nor noted, under the `bullet` given. Place it under your root decision's variation points, by the rules above, or note it, as rule 2 says. Each platform's `a2.tsv` names, by point, the statements gap-closing found for it, and `absence-audit.tsv` those the audit recorded for a claim: read them as leads to a point, not as its answer.
+- **`revisit`:** a row that was `gap`, `absent` or `not covered`, under the point in `vp_id`, which gap-closing worked; `why` gives the statements, gaps and absences it recorded for the point. Replace the row: with variants from those statements, where they answer the point; or with `absent`, giving the absences; or with `gap`, giving the gaps that remain. A `gap` row may stand beside answers (rule 4).
+- **`reread`:** a statement an earlier part noted under a rule widened since; `why` names the part and the rule. Place it, or note it again, and say which in `notes-b.md`.
+- **`note`:** a statement not to place, with the reason in `why`. Note it, under each of its bullets, with that reason.
+
+The second pass adds no variation point and splits none. A statement that fits none is noted, with that reason. Recheck, under rule 5, any row you compared with a statement of its own platform.
+
+**Your files,** in your root decision's folder, `b/<root decision>/`:
+- **`variants.tsv`:** a row you revisit is replaced. Its first replacing row keeps its `variant_id`; further rows take new ids from your root decision's range in `b/ranges.tsv`, after the folder's last. Add rows for new answers the same way. A placed statement that gives an answer a row already holds joins that row's `stmt_ids` (rule 4), and the row's `basis_evidence` may add its words. Change no other row.
+- **`variation-points.tsv`:** unchanged, but for `x_words`, which takes the platforms' words for X from the statements you place, and `note`.
+- **`notes-b.md`:** under a heading "Second pass, <your part>": the statements you note, in rule 2's form; the rows you replaced, and what replaced them; and the words you searched for.
+
+**Before you finish,** check as the Output section says. In the checker's `unplaced.tsv`, your part's rows should be gone. Its `review` lines on quotes found only in a page's source are the coordinator's.
 
 ## Output, in `studies/subjects/S-02/b/<root decision>/`
 

@@ -20,6 +20,7 @@
 | `seed_subject.py` | Copies what is already recorded for a subject's concerns, in the concern map and in earlier subjects, into the subject's folder for its phase A agents (Stage 4, "from what is recorded"). |
 | `subject_slice.py` | Cuts a subject's phase A files into one slice per root decision, for the agents that work on one decision each, and prints the part of a slice an agent asks for. |
 | `merge_slices.py` | Joins the files the agents of one root decision each wrote into the subject's own files, and refuses ids outside a decision's range, a bullet outside it, or more variation points than its cap. |
+| `second_pass_list.py` | Writes phase B's second-pass work list per root decision: the statements to place, from the checker's `unplaced.tsv`; the rows gap-closing worked, to revisit; and the statements to read again or not to place, from `b/second-pass.md`. |
 | `schema_type.py` | Prints a GraphQL type in full from a schema the observed repositories hold, with the citation a quote from it takes. |
 | `held_index.py` | What observed-sa, observed-sh and this repository's capture runs hold, by address, and in what readable form. |
 | `quote_check.py` | Is a quote found, word for word, in its cited source, and, for a web page, in the page as it renders or only in its source? Shared by the checkers, and run alone to test a statement or a quote before it is written, a batch of them at once, or to print a source's text as the checker sees it. |
