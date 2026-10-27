@@ -401,3 +401,16 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 - **The checker** refuses a `not covered` row beside another row of its platform, and a copy that holds one root decision no longer flags the others' points. `merge_slices.py` skips the work lists' folder. The slice printer names on its standard error each id it doesn't hold.
 - **The brief's second-pass section** says how a revisit ends (replace, join and remove, `absent`, or `gap` with only the gaps gap-closing left) and how to write. Rule 4 now says what an answer under (c) names: a decider from rule 1's table, or `every store` where the statement applies the thing to all stores and names no country, site or region. A statement with another decider, or none, is noted.
 - **The parts were cut again:** ten parts, sized by their tasks with each revisit's leads counted. Parts of RD3 work one platform each.
+
+**The second pass's parts:**
+
+| Part | Tasks | Statements, with revisits' leads | Requests | Millions | Statements a request |
+| --- | --- | --- | --- | --- | --- |
+| RD1-S2: (c), Shopify and Salla | 83 | 138 | 48 | 7.5 | 2.9 |
+| RD3-S5: (f) and (g), BigCommerce | 72 | 157 | 52 | 7.8 | 3.0 |
+
+**What the two pilots taught:**
+- **The tool and the order tripled the rate:** about three statements a request, against about one in the dry run, at about 0.05 million a statement. At that rate the second pass comes to about 115 million in all, inside the frame's 100 to 160.
+- **Some statements answer a question no point asks:** under (c), statements on returns and on Salla's national address; under (f), BigCommerce's order statuses, and who sets units or the store's country. The second pass raises no point, so they are noted. From RD3-S1 on, each part lists them under "Candidates for a new point" in `notes-b.md`, and the coordinator decides on them when the pass ends.
+- **Matching the first pass's deciders took new rows:** RD1's first parts split the store's country finely (its country, its location, where the business is based), so RD1-S2 gave six new answer rows to keep to the same split.
+- **Each part marks its readings in the row** (`basis_evidence`): for example, a law named only as its country's own is read as part of X, not as a limit on which stores, so Salla's and Shopify's privacy statements answer `every store`.
