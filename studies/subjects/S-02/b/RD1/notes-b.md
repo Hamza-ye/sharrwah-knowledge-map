@@ -1060,3 +1060,7 @@ Each row joined was compared with its own platform's statements already in it: S
 
 1. One command of this part wrote a wrong line to `done.tsv` ('revisit S02-V-058', with 'S02-VP-05' as its bullet and 'b' as its outcome). It was removed by hand under the folder's lock, and the right line stands. The tool has no command to remove a ledger line.
 2. RD1-S4's notes give the heroes of zid.sa's English pages (zid.sa/en/...) as what ties zid.sa's pages for the UAE, Kuwait and Oman to one country. The Arabic pages (zid.sa/ar/...), from which this part's rereads S02-ZD-436 to S02-ZD-446 are recorded, carry another hero, which names the Gulf (call 1).
+
+### Check (part RD1-S5)
+
+On a copy holding only `b/RD1`, `merge_slices.py` merged 19 points and 301 rows. `check_subject.py` gave no line of level `error`. It gave 17 warnings, on phase A's citations (16 of Shopify's, 1 of WooCommerce's), and 14 reviews: 12 quotes found only in a page's source, which are the coordinator's, and the statements of RD2 and RD3, whose folders the copy leaves out. None names this part's rows or statements. Its `unplaced.tsv` holds no row of RD1. `second_pass_list.py --check`: RD1 has no revisit, reread or note task without a row in `done.tsv`.
