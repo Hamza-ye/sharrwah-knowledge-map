@@ -89,9 +89,9 @@ The pilot's five steps, under Stage 4's changes (`PLAN.md`, Stage 4, and section
 | --- | --- | --- | --- |
 | 1A | What each platform states, under the bullets of `bullets.tsv` | one agent per platform, blind to the others | `<platform>/statements.tsv`, `terms.tsv`, `absences.tsv`, `gaps.tsv`, `citations.tsv`, `notes.md` |
 | | Capture and kinds | the coordinator | captures, then `kinds.tsv` by the checker |
-| 1B | Variation points per root decision, and variants | one agent | `variation-points.tsv`, `variants.tsv`, `notes-b.md` |
+| 1B | Variation points per root decision, and variants | in parts, each a fresh agent, one after another for the same root decision (`b/parts.tsv`) | `b/<root decision>/`, joined by `method/merge_slices.py` into `variation-points.tsv`, `variants.tsv` and `notes-b.md` |
 | 1A2, 1A3 | Closing the gaps a root decision needs, and auditing claims of absence it rests on | one agent per platform, where needed | `<platform>/a2.tsv`, `absence-audit.tsv` |
-| 1C | Cause, coexistence and what follows, per root decision | one agent | `analysis.tsv`, `notes-c.md` |
+| 1C | Cause, coexistence and what follows, per root decision | per root decision, in parts where it is large | `c/<root decision>/`, joined into `analysis.tsv` and `notes-c.md` |
 | 2 | The Yemen row per root decision (section 6, step 6) | the coordinator; each fact checked against its quote first | in the register |
 | 3 | The scenario walk per root decision (section 6, step 7) | the coordinator | in the register |
 | 4 | The register | the coordinator | `register.tsv` |
@@ -110,11 +110,12 @@ The pilot's five steps, under Stage 4's changes (`PLAN.md`, Stage 4, and section
 
 | Step | Millions |
 | --- | --- |
-| Spent by 27 October: the briefs' inspection, and phase A for Shopify and Salla | 250 |
-| Phase A: Shopify and Salla finished from their notes | 30 to 50 |
-| Phase A: Zid, WooCommerce and BigCommerce | 45 to 75 |
-| Inspection of the later briefs | 20 to 40 |
-| 1B, per root decision | 75 to 120 |
-| 1A2 and 1A3, where a root decision needs them | 50 to 90 |
-| 1C, per root decision | 45 to 90 |
+| Spent by 27 October, 03:00 UTC: the briefs' inspections, and phase A for all five platforms (measured) | 534 |
+| 1B, in nine parts, and its second pass | 150 to 300 |
+| 1A2 and 1A3, where a root decision needs them | 50 to 100 |
+| 1C, per root decision | 90 to 150 |
+| Inspection of the later briefs | 15 to 30 |
 | 5, the review | 40 to 80 |
+| **All of S-02, projected** | **about 880 to 1,190** |
+
+Phase A cost 504 million, against the 325 to 375 million this table first set for it ([`method-report.md`](method-report.md), section 4). The rest is projected from phase A's measured cost per request, and is measured again after phase B's first parts. The projection passes the budget plus a quarter, 875 million. When the spending does, the cost comes to the founder with a new projection, and the work goes on (`PLAN.md`, section 8).

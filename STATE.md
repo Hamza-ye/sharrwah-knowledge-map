@@ -1,6 +1,6 @@
 # State
 
-**What this file is:** where the work is, on one page (`PLAN.md`, section 9). Updated 26 October 2026.
+**What this file is:** where the work is, on one page (`PLAN.md`, section 9). Updated 27 October 2026.
 
 **The plan:** `PLAN.md`. It is the plan the founder agreed at G0, and on 25 October 2026 the founder reset the work to it, as it stood at G1, with the pilot's own changes and the coordinator's engineering choices (its section 11).
 
@@ -26,7 +26,7 @@
 
 **For the founder:** the orientation page, outside the repository: https://claude.ai/artifact/8fLCxo4JGKmGgPjXSpW1BN. It is updated at each milestone.
 
-**Phase A,** by 27 October (`method/count_tokens.py`; [`method-report.md`](studies/subjects/S-02/method-report.md)):
+**Phase A is finished** for all five platforms (`method/count_tokens.py`; [`method-report.md`](studies/subjects/S-02/method-report.md), sections 2 to 4):
 
 | Platform | Statements | How read | Agent tokens |
 | --- | --- | --- | --- |
@@ -34,12 +34,12 @@
 | Salla | 310 | in full, in two agents | 126 million |
 | Zid | 172 | from what is recorded, and the held pages a gap needed | 75 million |
 | WooCommerce | 227 | from what is recorded, and the release's files on countries | 48 million |
-| BigCommerce | running | from what is recorded | running |
+| BigCommerce | 161 | from what is recorded | 23 million |
 
-On each finished platform's files the checker gives no error. With the briefs' inspection (28 million), S-02 has spent about 510 million of its 700 million.
+The checker finds every quote, 3,193 of them, and no error. With the briefs' inspections (30 million), S-02 has spent about 534 million of its 700 million. **The rest is projected at 350 to 650 million,** so S-02 at about 0.9 to 1.2 billion, past the budget plus a quarter ([the frame's budget](studies/subjects/S-02/frame.md#budget)). The projection is measured again after phase B's first parts, and the cost comes to the founder when the spending passes 875 million (`PLAN.md`, section 8).
 
-**In flight:** phase A for BigCommerce; and an independent check of the phase B brief (one agent per root decision).
+**In flight:** a second, independent check of the phase B brief, with a dry run on Salla's statements.
 
-**Next:** phase B, after its brief's check: three agents, one per root decision, from the slices `method/subject_slice.py` cuts. Then gap-closing and the absence audit where a root decision needs them, phase B's second pass, and phase C.
+**Next:** phase B in nine parts ([`b/parts.tsv`](studies/subjects/S-02/b/parts.tsv)), two at a time, each a fresh agent reading only its part of its root decision's slice. Then gap-closing and the absence audit where a root decision needs them, phase B's second pass, and phase C.
 
 **To resume:** read `PLAN.md`, this file and `founder-decisions.tsv`.

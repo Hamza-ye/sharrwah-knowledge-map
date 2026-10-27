@@ -51,3 +51,29 @@
 **What changed for the next runs:**
 - Shopify's remaining reading is split in two parts: the observed runs not yet read, then the plan tables, the leads and the gaps' re-check.
 - Each agent writes only in its own scratch folder.
+
+## 4. Phase A finished: Shopify parts 2 and 3, Zid, WooCommerce and BigCommerce (27 October)
+
+**What it produced:** phase A for all five platforms, 1,458 statements: Shopify 588, Salla 310, WooCommerce 227, Zid 172 and BigCommerce 161. The checker found every quote, 3,193 of them, and no error. Seven gaps that only an observation would close went to the local agent as capture requests (`handoffs/`, H-001 to H-007).
+
+**What it cost:**
+
+| Run | Requests | Millions | Per request |
+| --- | --- | --- | --- |
+| Shopify, part 2 | 168 | 39.6 | 0.24 |
+| Shopify, part 3 | 112 | 27.8 | 0.25 |
+| Zid | 198 | 74.7 | 0.38 |
+| WooCommerce | 137 | 47.6 | 0.35 |
+| BigCommerce | 98 | 23.1 | 0.24 |
+
+Phase A cost 504 million in all, against the 325 to 375 million the frame set for it.
+
+**What it taught:**
+- **Parts of about a hundred requests held their cost at about 0.25 million a request** (Shopify's parts 2 and 3, and BigCommerce).
+- **Zid and WooCommerce each ran in one agent,** and their contexts grew: 0.38 and 0.35 million a request.
+- **Reading "from what is recorded" went well past the recorded rows,** to the held pages their gaps needed: Zid wrote 172 statements from 72 recorded rows, WooCommerce 227 from 87, and BigCommerce 161 from 81.
+- **The frame's estimates were low.** It set 45 to 75 million for Zid, WooCommerce and BigCommerce, which cost 145 million, and 30 to 50 million to finish Shopify and Salla, which cost 135 million.
+
+**What changed for the next runs:**
+- **Phase B runs in nine parts** (`b/parts.tsv`), each a root decision's bullets, or one bullet for some of its platforms. Each part's size is counted in statement-bullet pairs before it runs, and its cost is measured after it.
+- **An inspector tries each brief on a sample before it runs.** For phase B, a dry run of 30 statements gives the rate each part's size is checked against.
