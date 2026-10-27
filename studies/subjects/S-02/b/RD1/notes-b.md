@@ -538,10 +538,10 @@ Replaced: `not covered` became `gap`, S02-V-038, with S02-ZD-G09, which asks whi
 ### Rereads (shopify, salla and zid, (a), (b) and (d)), noted by parts RD1-1 and RD1-3, since widened
 
 Placed, under rule 5's identifier or scope:
-- S02-SH-259 (a): joined S02-V-006 (S02-VP-01): its identifier, 'combobox "I'm located in:"', names the field its words list the options of
-- S02-SH-260 (a): joined S02-V-001 (S02-VP-01): its identifier, 'Add business entity, country', names the business entity's country
-- S02-SH-396 (a, b): joined S02-V-001 (S02-VP-01) and S02-V-053 (S02-VP-04, the seller): its identifier names the admin's form that creates business details, whose first control is the button 'Yemen'
-- S02-ZD-148 (a): a new row, S02-V-256 (S02-VP-01), 'required: - country - city': its identifier names the record, 'user.business_location (DefaultStoreLocationSerializer)'
+- S02-SH-259, under (a): joined S02-V-006 (S02-VP-01): its identifier, 'combobox "I'm located in:"', names the field its words list the options of
+- S02-SH-260, under (a): joined S02-V-001 (S02-VP-01): its identifier, 'Add business entity, country', names the business entity's country
+- S02-SH-396, under (a) and (b): joined S02-V-001 (S02-VP-01) and S02-V-053 (S02-VP-04, the seller): its identifier names the admin's form that creates business details, whose first control is the button 'Yemen'
+- S02-ZD-148, under (a): a new row, S02-V-256 (S02-VP-01), 'required: - country - city': its identifier names the record, 'user.business_location (DefaultStoreLocationSerializer)'
 
 Already placed: S02-SH-260 under (b), in S02-V-053 (S02-VP-04), by the first pass; no change.
 
@@ -613,3 +613,81 @@ Noted (b):
 - S02-SH-591 (b): it lists what the business entity must include, 'The country your business is operating from' among them: no one who sets, checks or changes it, and no condition on its change (rule 2)
 - S02-SH-593 (b): 'Changing the store country creates a new business entity and might affect the following details': what a change does, not who makes it or what must hold before it (rule 2)
 - S02-SH-627 (b): 'Before creating a new store in your organization, your main store must have ... a complete billing address': a condition on creating an expansion store, not on setting or changing the store's country; it names no party (rule 2)
+
+### Place tasks: woocommerce (a) and (b)
+
+Placed under S02-VP-01 (a): S02-WC-245 and S02-WC-385 joined S02-V-040 (the base country); S02-WC-267 joined S02-V-041 (Business location); S02-WC-388 and S02-WC-397 joined S02-V-039 (Store Address, woocommerce_default_country); new rows: S02-V-271, '“Stripe Account Country” means the country or region User selected when opening User’s Stripe Account' (S02-WC-228); S02-V-272, 'You may provide us with more information — like your address' (S02-WC-235), the WordPress.com account's address; S02-V-273, 'Where is your business located?' (S02-WC-259); S02-V-274, 'Where is your store located?' (S02-WC-294, S02-WC-322).
+
+Placed under (b): S02-WC-228, S02-WC-243, S02-WC-292, S02-WC-294 and S02-WC-322 joined S02-V-082 (S02-VP-04, the seller); S02-WC-293 joined S02-V-083 (S02-VP-04, the platform: its code saves the setting when the profiler is skipped); S02-WC-322 joined S02-V-085 (S02-VP-06, the seller); S02-WC-230 joined S02-V-086 (S02-VP-06, no one: 'there isn’t a way to update the country'); S02-WC-231 joined S02-V-084 (S02-VP-05, Stripe); S02-WC-240 and S02-WC-295 joined S02-V-254 (S02-VP-05, the platform's code); new rows under S02-VP-06: S02-V-275, "wc_rest_check_manager_permissions( 'settings', 'edit' )" (S02-WC-241), and S02-V-276, 'Migrate the state code for the store location.' (S02-WC-242), the platform.
+
+Calls the brief left to me: the onboarding's questions 'Where is your store located?' and 'Where is your business located?' are their own rows under (a), since nothing quoted says which field stores their answers; S02-WC-295's geolocation notice is a check of the store's country by the platform's code, joined with its form checks in S02-V-254.
+
+Noted (a):
+- S02-WC-229 (a): WooPayments creates 'a special kind of Stripe account ... called a Stripe Express account': it names no country (rule 2)
+- S02-WC-236 (a): the Ecommerce Services need a WordPress.com account and, for some, 'your site URL': it names no country or address (rule 2)
+- S02-WC-237 (a): 'We may determine the approximate location of your device from your IP address': a device's location, not a country held as where the store or its merchant is based (rule 1)
+- S02-WC-238 (a): information 'relating to your Stripe account, such as your email address and phone number': it names no country or address (rule 2)
+- S02-WC-247 (a): the entity 'depends on where you reside and which Services you use': it names the merchant's residence, but not the field or record that holds it (rule 1, (a))
+- S02-WC-249 (a): 'the billing country associated with your payment method' and 'your detected location': a payment method's billing country and a detected location, neither said to be where the store or its merchant is based (rule 1)
+- S02-WC-250 (a): 'You must provide accurate and up-to-date payment information': it names no country or address (rule 2)
+- S02-WC-382 (a): the Point of Sale's 'Physical address' ('woocommerce_pos_store_address'): a place the store sells at, which rule 1 keeps out; in S02-VP-01's note
+
+Noted (b):
+- S02-WC-232 (b): reasons to delete a WooPayments account, 'the wrong country was chosen' among them: not who sets, checks or changes the country, nor what must hold before it changes (rule 2)
+- S02-WC-233 (b): 'WooPayments accounts can only be deleted by our support staff': who deletes the account, not who changes its country (rule 2)
+- S02-WC-234 (b): when an account can be deleted: not the store's country (rule 2)
+- S02-WC-239 (b): "add_action( 'update_option_woocommerce_default_country', ... )": a hook alone names no party (rule 4)
+- S02-WC-244 (b): it sets the store's currency and units from '$country_info': not who sets, checks or changes the country (rule 2)
+- S02-WC-250 (b): 'You must provide accurate and up-to-date payment information': it names no country or address (rule 2)
+- S02-WC-251 (b): 'you agree to provide us with complete and accurate information and to keep the information current': it names no country or address (rule 2)
+- S02-WC-252 (b): 'We may limit your access ... until we’re able to verify your account information, like your email address': it doesn't name the store's country (rule 2)
+- S02-WC-296 (b): 'Setting up your store in the wrong country may lead to the following issues:': what a wrong country leads to, not who checks or changes it (rule 2)
+- S02-WC-313 (b): the legacy wizard takes a currency by country ('$currency_by_country'): not the store's country's setter (rule 2)
+- S02-WC-314 (b): 'Before changing the currency, confirm that your payment gateway supports it': the currency, not the store's country (rule 2)
+
+## Second pass, RD1-S3
+
+Part RD1-S3 of the second pass: the tasks of `b/second-pass/RD1/worklist.tsv` under (c) for Zid, WooCommerce and BigCommerce.
+
+### Revisit S02-V-226 (bigcommerce, S02-VP-10, documents and checks)
+
+Replaced: `not covered` became `gap`, S02-V-226, with S02-BC-G06, which asks which documents or checks the merchant provides and what decides them. No lead names a decider. Its leads noted:
+- S02-BC-218 (c): the Actions section shows tasks 'such as completing your profile, linking a bank account, Know Your Customer (KYC) status': a check, with no decider named (rule 4); its scope is BigCommerce Payments, not every store
+- S02-BC-219 (c): an 'Account verification pending' banner until the account or business profile is complete: names no decider (rule 4)
+- S02-BC-220 (c): 'Funds may be held or blocked for several reasons, depending on different factors ... complete any requests for documents or verification': names no decider (rule 4)
+
+### Revisit S02-V-233 (bigcommerce, S02-VP-13, payouts)
+
+Replaced: `not covered` became an answer row, S02-V-233, 'Your first payout might take longer, depending on your industry risk level and country of operation.' (S02-BC-223, Stripe OCS): 'country of operation' is in rule 1's store's own country; that the first payout's timing is how the merchant is paid is my reading, marked there, as WooCommerce's S02-V-203 ('how often your balance will be paid out depending on your business location'). Its leads noted:
+- S02-BC-224 (c): 'payouts to your account are settled in your default currency': its decider is the store's default currency, outside rule 1's table (rule 4); in S02-VP-13's note
+- S02-BC-225 (c): 'The merchant can set their settlement currency through its payment provider': the merchant's choice, not the store's own country (rule 4); in S02-VP-13's note
+- S02-BC-226 (c): 'If the shopper’s card-issuing bank differs from the merchant's bank account country, additional cross-border fees may apply': the shopper's card-issuing bank and the bank account's country, neither in rule 1's table (rule 4); in S02-VP-13's note
+- S02-BC-227 (c): 'view the linked bank account and set up automatic payouts to your bank or PayPal account': names no decider (rule 4)
+- S02-BC-228 (c): 'By default, automatic payouts are transferred to your PayPal account. To switch to a bank account, click Change': the default and the merchant's choice, not the store's own country (rule 4); in S02-VP-13's note
+- S02-BC-229 (c): 'For new BigCommerce Payments accounts, initial payments are held for up to 21 days': its decider is the account's age (rule 4); in S02-VP-13's note
+- S02-BC-230 (c): 'The Fast option for a manual payout is subject to a fee of 1.50%': its decider is the payout option (rule 4); in S02-VP-13's note
+- S02-BC-231 (c): the Money dashboard's 'multi-currency balances in GBP, EUR, and more': names no decider (rule 4)
+
+### Place tasks: zid (a), (b) and (d)
+
+Placed: S02-ZD-226 is a new row under S02-VP-01, S02-V-277, 'و إضافة العنوان' (my translation: and add the address), the address the account settings hold for their user, as S02-WC-235's account address is read (S02-V-272); S02-ZD-173 joined S02-V-078 (S02-VP-06, the merchant moves the store), S02-V-080 (S02-VP-07, the wallet's balance zeroed first) and S02-V-081 (S02-VP-07, a request through customer service); S02-ZD-184 joined S02-V-035 (S02-VP-03, Egypt: the Arabic of its words); S02-ZD-444 joined S02-V-033 (S02-VP-03, the Gulf states: 'فالخليج', my translation: in the Gulf); new rows under S02-VP-03: S02-V-278, 'المنصّة المتكاملة للتجارة الإلكترونية في الشرق الأوسط وشمال أفريقيا' (S02-ZD-185; my translation: the integrated e-commerce platform in the Middle East and North Africa); S02-V-279, Kuwait (S02-ZD-386); S02-V-280, Oman (S02-ZD-387, S02-ZD-388).
+
+A call the brief left to me: an address the account holds for its user (S02-ZD-226, S02-WC-235) is read as the merchant's address, in X's role, while a profile's bare 'country' (S02-ZD-149) stays noted, since a country in a profile may not be where the merchant is based or resident.
+
+Noted:
+- S02-ZD-183 (d): 'في المستقبل باذن الله نتوسع للعالم العربي' (my translation: in the future, God willing, we will expand to the Arab world): a future expansion, not the countries Zid serves merchants in (rule 2)
+- S02-ZD-373 (a): the merchant's duty to comply with 'جميع القوانين المصرية المعمول بها الحاكمة لنشاطك التجاري' (my translation: all applicable Egyptian laws governing your business activity), in zid.eg's Terms: a law that applies, not the field or record that holds the store's country (rule 1, (a))
+- S02-ZD-380 (a): zid.eg's Terms are governed by 'قوانين جمهورية مصر العربية' (my translation: the laws of the Arab Republic of Egypt): the terms' law, not the field or record that holds the store's country (rule 1, (a))
+- S02-ZD-381 (a): 'الاختصاص الحصري للمحاكم المصرية المختصة' (my translation: the exclusive jurisdiction of the competent Egyptian courts): the terms' courts, not the field or record that holds the store's country (rule 1, (a))
+
+### Candidates for a new point
+
+None. Each question of (a), (b) and (d) already has its point (S02-VP-01 to S02-VP-07), and under these bullets every candidate of one question makes one point (rule 3), so no statement of this part answered a question for an X that no point fits. The statements whose X failed the role test (hosting regions, branches and warehouses, a Point of Sale's address, a channel's country, a tax record tied to markets) are noted above, not candidates.
+
+### Searches
+
+This part raised no point, so it searched for no earlier platform's rows (rule 3).
+
+### Rechecks (part RD1-S1)
+
+Rows compared with a statement of their own platform were rechecked under rule 5: each joined statement names its row's answer in its own words or, where said, by its identifier or scope, and keeps the row's basis (S02-BC-206 and S02-BC-210 by the same key or term as S02-V-048's and S02-V-050's; S02-SA-430 by S02-SA-292's keys).
