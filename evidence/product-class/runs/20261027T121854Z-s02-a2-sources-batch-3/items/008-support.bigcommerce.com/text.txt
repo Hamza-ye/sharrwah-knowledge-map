@@ -1,0 +1,294 @@
+Security Update: On October 23, PHP disclosed an additional vulnerability, CVE-2026-115560, affecting applications with a specific, uncommon configuration. Following our security team’s assessment, we have determined that Commerce systems are not impacted by this vulnerability. Commerce will continue to monitor developments and evaluate any additional guidance or security updates as they become available. Read the full update on the Security Trust Center.
+
+Close window.
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+Security Update: On October 23, PHP disclosed an additional vulnerability, CVE-2026-115560, affecting applications with a specific, uncommon configuration. Following our security team’s assessment, we have determined that Commerce systems are not impacted by this vulnerability. Commerce will continue to monitor developments and evaluate any additional guidance or security updates as they become available. Read the full update on the Security Trust Center.
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+QUICKSTART
+GETTING STARTED
+V3 PRODUCTS
+PROMOTIONS
+B2B EDITION
+HEADLESS COMMERCE
+MULTI-STOREFRONT
+Introduction To Multi-Storefront
+Enabling Multi-Storefront
+Configuring Storefronts
+Configuring Storefronts
+Currencies
+Email Templates
+Shipping Methods
+Out of Zone Message
+Technical Setup For Multi-Storefront
+Configuring Your Catalog For Multi-Storefront
+Customers And Multi-Storefront
+Checkout And Orders On Multi-Storefront
+SITE SPEED
+SEO
+KEYWORD RESEARCH
+GOOGLE ANALYTICS
+ECOMMERCE ANALYTICS REPORTS
+ECOMMERCE INSIGHTS
+CATALOG IMPORT/EXPORT (MODERN)
+CATALOG IMPORT/EXPORT (LEGACY)
+BIGTOOLS
+BIGAI: PREDICTIVE ANALYTICS (LTV)
+BIGAI: PREDICTIVE ANALYTICS (INVENTORY)
+ALTERNATIVE PAYMENT METHODS (APMS)
+LATAM PAYMENTS
+CRYPTOCURRENCY
+ORDER FULFILLMENT
+ORDER MANAGEMENT
+PHISHING ATTEMPTS
+FRAUD PREVENTION
+ACCESSIBILITY AND ADA COMPLIANCE
+CCPA
+BIGCOMMERCE FOR WORDPRESS
+PINTEREST
+DOMAIN & DNS
+REVERSE PROXIES
+INVENTORY MANAGEMENT
+CUSTOMER MANAGEMENT
+SHIPPING
+EMAIL
+CHANGING THEMES
+TROUBLESHOOTING IMAGES
+STORE TRANSFER
+MIGRATING FROM SHOPIFY
+MIGRATING FROM WOOCOMMERCE
+MIGRATING FROM MAGENTO
+B2B NINJA
+DATA LEVELS
+V3 CATALOG MIGRATION
+V2 PRODUCTS
+Guide to Multi-Storefront
+CHAPTER 3:
+Configuring Storefronts
+
+Once Multi-Storefront has been enabled, and you’ve created your new storefront, you are ready to start configuring its storefront-specific design and settings.
+
+In this chapter, we’ll explore how to:
+
+Choose a theme and customize it for your storefront’s target audience.
+Create categories and assign products to your storefront.
+Set up and assign currencies.
+Customize email templates and the shipping methods available per storefront.
+
+Doing these things will help to ensure your new storefront has the look, feel, and overall shopper experience that is right for its particular audience.
+
+ 
+In This Chapter
+Configuring storefronts
+Currencies
+Email templates
+Shipping methods
+Out of delivery zone message
+ 
+Configuring Storefronts
+STOREFRONT STATUS
+
+Newly created storefronts are in a Prelaunch status. This gives you an opportunity to set up your storefront before making it public.
+
+There are 3 places where you can change your storefront’s status:
+
+Channel Manager —  by clicking the ⋯ next to it and selecting make active or make inactive
+Storefront settings page — by toggling active/inactive
+Overview page — by clicking on Actions and selecting Make active or Make inactive
+
+Keep in mind, you can change a storefront’s status at any time.
+
+ 
+
+Can I move a storefront from one store to another? No, a storefront is tied to the store that it's created on. If a new store is created in order to access multi-storefront functionality, there is no way to move or connect an existing storefront to this new store.
+
+STOREFRONT OVERVIEW
+
+In Channel Manager, click a storefront name to access its overview page.
+
+This page controls several aspects of your storefront and will guide you in setting up a new storefront:
+
+Storefront name, URL, and status — If set to 'Inactive', the storefront will become unavailable to visitors and a customizable message will be displayed. This is where you can view your storefront. You can also view and delete the storefront here.
+Setup guide — Click to review various key settings to ensure that the storefront is ready to launch. These areas include:
+Theme
+Categories
+Products
+Web pages
+Emails
+Domain
+Settings and launch
+Theme — Click Manage themes to view the Theme Marketplace and select a new theme, or click Edit theme to launch Page Builder with your current theme.
+Performance for the last 30 days — View storefront analytics on products sold, orders placed, and customers registered.
+Recommended reading — View articles from the Knowledge Base on relevant topics.
+ 
+
+Can I use the Home Page Carousel on additional native storefronts? The Home Page Carousel is only available for the default native storefront. The Carousel widget in Page Builder can be used to add a custom carousel to any page on additional native storefronts.
+
+The left side navigation includes shortcuts to configure this specific storefront:
+
+Overview
+Storefront settings — includes storefront status, contact information, logo and favicon, inventory rules, and many other common settings
+Localization* — includes locale (country and language), physical dimensions, and date and timezone settings. See International Enhancements for Multi-Storefront for more information.
+Themes
+Theme Marketplace
+Home page carousel*
+Script Manager
+Currencies
+Shipping — includes the out of delivery zone message and a read-only list of shipping methods configured for the storefront
+Checkout — includes checkout behavior for guest shoppers and existing customers, checkout type, privacy policy, terms and conditions, contact email on the order confirmation page, and custom checkout and order confirmation page URLs
+Domains
+Notifications — includes order, inventory (low stock and out of stock), and abandoned cart notifications
+Social media links
+Web pages
+Data solutions — set up analytics providers, site verification tags, and affiliate conversion tracking
+
+*Some features and settings have limited availability, based on store plan and whether the selected storefront is the default native one.
+
+ 
+
+Note: Themes are purchased on a store level and can be applied (for free) to any additional storefront that’s purchased by the store.
+
+If Use global is checked, then the setting will use “global” storefront settings, which are configured outside of Channel Manager. For example, this storefront's contact information setting is using the data from Settings › Store profile.
+
+ 
+
+Can I set different country settings per storefront? Yes. If your store is on a Performance plan, you can customize country settings per storefront, including language, physical dimensions, date, and timezone. For more information on available localized settings, see International Enhancements for Multi-Storefront.
+
+MULTI-STOREFRONT SUPPORTED FEATURES AND SETTINGS
+
+These features and settings support Multi-Storefront, but they are located outside of Channel Manager:
+
+Customers*
+Customer groups
+Order search
+Price lists
+Product filtering
+Transactional emails
+Abandoned cart notifications
+Email marketing (newsletter subscribers)
+Ecommerce analytics reports
+Shipping methods
+
+* Customers have separate accounts for each storefront, but they can be viewed and managed collectively in your control panel's Customers area. See Customers for more information.
+
+ 
+
+Can I create different promotions per storefront? Yes, you can create automatic and coupon promotions per storefront using the Standard Promotions editor.
+
+ 
+Currencies
+
+On multi-storefront stores, you can configure different sets of currencies per storefront. This allows you to run a multi-region, multi-storefront business while keeping the shopping experience as local as possible, which can lead to increased checkout conversion.
+
+Go to Settings › Currencies. Click on the Channels dropdown to view a list of the storefronts the currency is currently assigned to.
+
+Select Manage channels to add or remove individual storefronts from the currency’s availability. Click Apply to save your changes.
+
+Additionally, you can manage currencies for a storefront in Channel Manager by selecting the storefront and clicking Currencies in the left navigation menu.
+
+ 
+
+Currency visibility is a global setting. Toggling off a currency’s visibility will remove it from all storefronts. If you do not want to offer a certain currency on a storefront, unassign the channel from the currency.
+
+Note that currency assignments for third-party channels, such as Amazon, in the control panel are not supported. For more information on adding and managing currencies, see Using Multiple Currencies.
+
+ 
+Email Templates
+
+Individual store emails can be configured to send or not send, and they can be customized for each storefront.
+
+Go to Marketing › Transactional Emails and use the channel selector at the top to toggle between configuring emails for all (global) or individual channels.
+
+See Customizing Transactional Emails for additional information.
+
+ 
+
+Can I set up payments and tax per storefront? Multi-Storefront payment methods and tax inclusive / exclusive price lists are currently in beta, so these features may not yet be available for all stores.
+
+ 
+Shipping Methods
+
+Shipping methods can be configured separately per storefront, giving you the ability to provide distinct shipping methods tailored to a geographical region or customer segment.
+
+To select the storefront channels for a shipping method, go to Settings › Shipping and edit a shipping zone.
+
+Click Connect or Edit next to a shipping method, then select the Channels tab. Check the box next to the storefront channel that the shipping method should display on, then manage the desired settings on the other tabs. When ready, click Submit.
+
+For an overview of shipping, including shipping methods and settings, see Shipping Setup.
+
+ 
+
+Want to offer free shipping per storefront? The Free shipping static shipping quote is a global method and cannot be managed per storefront. Consider other free shipping options, such as using a promotion.
+
+SHIPPING RULES SUMMARY
+
+In Channel Manager, you can view a read-only list of shipping methods that have been configured for a storefront. Edit the storefront and click Shipping on the left navigation menu.
+
+The Shipping rules section displays all shipping methods for the selected storefront, their related shipping zone, and their current status. Filter the list by shipping zone with the tabs at the top, and change the number of shipping methods displayed via the drop-down list.
+
+ 
+Out of Delivery Zone Message
+
+When a shopper enters a shipping address outside of your enabled shipping zones or when the cart contents do not qualify for available shipping methods, an out of delivery zone message is displayed. By default, the message in Settings › Shipping is used globally, but you can also customize the message per storefront.
+
+Go to Channels, edit the storefront, then click Shipping in the side navigation. To customize the message for this storefront, uncheck the box next to Use Global.
+
+NEXT CHAPTER: TECHNICAL SETUP FOR MULTI-STOREFRONT
+All Chapters
+Introduction to Multi-Storefront
+Enabling Multi-Storefront
+Configuring Storefronts
+Technical Setup for Multi-Storefront
+Configuring Your Catalog for Multi-Storefront
+Customers and Multi-Storefront
+Checkout and Orders on Multi-Storefront
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+Configuring Storefronts

@@ -1,0 +1,18 @@
+{
+ "n": 31,
+ "url": "https://zid.sa/en/qatar/",
+ "dir": "items/031-zid.sa",
+ "fetched_at": "2026-10-27T12:19:12Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://zid.sa/en/qatar/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 5079,
+ "cited_in": [
+  "S-02: Zid's FAQ answers shown on a click (CAPTURE_EXPAND=1)"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "9d5c4586d17188834e25b62c4d05606790c3fe94353c2bf38f68039cb89f2029",
+ "raw_ext": "html"
+}

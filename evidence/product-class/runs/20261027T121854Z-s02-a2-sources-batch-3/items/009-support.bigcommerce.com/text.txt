@@ -1,0 +1,195 @@
+Security Update: On October 23, PHP disclosed an additional vulnerability, CVE-2026-115560, affecting applications with a specific, uncommon configuration. Following our security team’s assessment, we have determined that Commerce systems are not impacted by this vulnerability. Commerce will continue to monitor developments and evaluate any additional guidance or security updates as they become available. Read the full update on the Security Trust Center.
+
+Close window.
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+Security Update: On October 23, PHP disclosed an additional vulnerability, CVE-2026-115560, affecting applications with a specific, uncommon configuration. Following our security team’s assessment, we have determined that Commerce systems are not impacted by this vulnerability. Commerce will continue to monitor developments and evaluate any additional guidance or security updates as they become available. Read the full update on the Security Trust Center.
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+QUICKSTART
+GETTING STARTED
+V3 PRODUCTS
+PROMOTIONS
+B2B EDITION
+HEADLESS COMMERCE
+MULTI-STOREFRONT
+Introduction To Multi-Storefront
+Enabling Multi-Storefront
+Configuring Storefronts
+Technical Setup For Multi-Storefront
+Configuring Your Catalog For Multi-Storefront
+Customers And Multi-Storefront
+Customer Accounts
+Customers' Privacy
+Allowing Global Logins
+Customer Groups
+Checkout And Orders On Multi-Storefront
+SITE SPEED
+SEO
+KEYWORD RESEARCH
+GOOGLE ANALYTICS
+ECOMMERCE ANALYTICS REPORTS
+ECOMMERCE INSIGHTS
+CATALOG IMPORT/EXPORT (MODERN)
+CATALOG IMPORT/EXPORT (LEGACY)
+BIGTOOLS
+BIGAI: PREDICTIVE ANALYTICS (LTV)
+BIGAI: PREDICTIVE ANALYTICS (INVENTORY)
+ALTERNATIVE PAYMENT METHODS (APMS)
+LATAM PAYMENTS
+CRYPTOCURRENCY
+ORDER FULFILLMENT
+ORDER MANAGEMENT
+PHISHING ATTEMPTS
+FRAUD PREVENTION
+ACCESSIBILITY AND ADA COMPLIANCE
+CCPA
+BIGCOMMERCE FOR WORDPRESS
+PINTEREST
+DOMAIN & DNS
+REVERSE PROXIES
+INVENTORY MANAGEMENT
+CUSTOMER MANAGEMENT
+SHIPPING
+EMAIL
+CHANGING THEMES
+TROUBLESHOOTING IMAGES
+STORE TRANSFER
+MIGRATING FROM SHOPIFY
+MIGRATING FROM WOOCOMMERCE
+MIGRATING FROM MAGENTO
+B2B NINJA
+DATA LEVELS
+V3 CATALOG MIGRATION
+V2 PRODUCTS
+Guide to Multi-Storefront
+CHAPTER 6:
+Customers and Multi-Storefront
+
+In this chapter, we will examine assigning customers to specific storefronts and leveraging customer groups to control category access, add category-level promotions, and set default groups for registered and guest customers. You can also configure storefront customer access control from the control panel and via the Customers V3 API.
+
+ 
+ 
+In This Chapter
+Customer accounts
+Customers' privacy
+Allowing global logins
+Customer groups
+ 
+Customer Accounts
+
+When a shopper creates a customer account, that account can only access the storefront on which it was created. The same login information will not work on your other native storefronts. This is the default behavior for Multi-Storefront (MSF) customer accounts, but it can be modified to allow customers to access all storefronts connected to your store. See Allowing Global Logins for more information.
+
+Whenever you manually create a new customer account in the control panel, you will need to assign it to its primary storefront (origin channel).
+
+ 
+
+Can I use the import/export tool for customers on a Multi-Storefront store? Yes, importing and exporting customers via CSV is supported on single-storefront and MSF stores. Keep in mind that files must be under 2MB when importing customers. However, as channel assignments are not included in the CSV data, we recommend importing new customers in bulk via the Customers v3 API.
+
+A customer account can only be assigned to one native storefront; however, that same customer can use the same email address to create a separate account on your other native storefronts. For this reason, a customer email address can appear more than once in your control panel customers area, but each account is assigned to different storefronts.
+
+The storefront channels an account is assigned to are displayed in a drop-down under the Channels column of the customer list.
+
+When editing a customer account, you can view the Origin channel as well as a list of all channels the account can access.
+
+When logging in to a storefront as the customer, you will be able to choose from the list of approved channels.
+
+ 
+
+Can customer accounts be used across multiple storefronts? Customer accounts can be shared across storefronts. However, the default setup depends on the storefront type. For Stencil storefronts, customer accounts are separate by default, but can be made shared via global login settings. For headless storefronts, they are shared by default..
+
+ 
+Customer’s Privacy
+
+Each storefront channel has settings that allow you to manage customer privacy and login behavior globally or separately per channel. Access these settings by going to Channels and clicking Edit settings for your desired channel, then Storefront settings › Customer’s privacy.
+
+When Use global is checked, the global settings of the store are used. Uncheck Use global to manage your channel’s customer settings separately for that channel.
+
+Turn on the cookie consent banner for my store — This displays a banner on your storefront, prompting shoppers for their consent to use cookies. See Security and Privacy Settings.
+Privacy policy URL — Enter your fully qualified privacy policy URL. See Security and Privacy Settings.
+Allow global logins — When checked, this storefront allows logins by other channel’s storefront accounts. See Allowing Global Logins.
+Customer groups — Select the default registered customer and guest shopper customer groups for your storefront channel. See Customer Groups.
+ 
+Allowing Global Logins
+
+A customer’s access to storefronts outside of their origin channel is based on the Allow global logins setting for that channel. All channels can manage their settings separately in the control panel.
+
+When Use global is checked, the behavior of the default channel (1) is used, which is initially set to allow global logins. This global channel behavior can be viewed and changed via API.
+
+Uncheck Use global to manage the Allow global logins setting for the channel. Note that a customer can always access their origin channel.
+
+When allow_global_login is set to true (default behavior) or Allow global logins is checked, customers created on any additional native and headless storefronts can access that channel. Note that headless storefront customers need access to the default storefront for checkout functionality.
+
+Greater control over storefront channel configuration per customer is possible using our API. See Creating Channel-Specific Customers on our Dev Center to learn more.
+
+ 
+Customer Groups
+
+When creating a new customer group, you can assign which storefronts and categories members of that group can access. While the same customer group can be used across multiple native storefronts, customer accounts in those groups will still only have access to the storefronts that they can log in to. Customers can be assigned to only one customer group.
+
+The default customer group for your native storefronts can use your store’s global settings or can be configured individually per channel.
+
+To manage your global and channel-specific default customer groups, go to Customers › Customer Groups and click Manage default customer groups.
+
+Once you have your global defaults set up, you can also manage channel-specific defaults directly in the channel’s settings.
+
+See Customer Groups for more information on setting up groups for retail and wholesale, setting the default group for each of your storefronts, assigning customers to groups, and how customer group discounts work.
+
+NEXT CHAPTER: CHECKOUT AND ORDERS ON MULTI-STOREFRONT
+All Chapters
+Introduction to Multi-Storefront
+Enabling Multi-Storefront
+Configuring Storefronts
+Technical Setup for Multi-Storefront
+Configuring Your Catalog for Multi-Storefront
+Customers and Multi-Storefront
+Checkout and Orders on Multi-Storefront
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+Customers and Multi-Storefront

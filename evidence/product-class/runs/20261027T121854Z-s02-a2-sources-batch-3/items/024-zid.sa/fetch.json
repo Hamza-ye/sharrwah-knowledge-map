@@ -1,0 +1,18 @@
+{
+ "n": 24,
+ "url": "https://zid.sa/ar/solutions/payments/",
+ "dir": "items/024-zid.sa",
+ "fetched_at": "2026-10-27T12:19:05Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://zid.sa/ar/solutions/payments/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 54574,
+ "cited_in": [
+  "S-02: Zid's FAQ answers shown on a click (CAPTURE_EXPAND=1)"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "1d1acf99f3e9e057ed481ced65737e35808fd422feb3313e3c9083efed79b2cb",
+ "raw_ext": "html"
+}

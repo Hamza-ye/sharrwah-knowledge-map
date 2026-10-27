@@ -1,0 +1,226 @@
+Security Update: On October 23, PHP disclosed an additional vulnerability, CVE-2026-115560, affecting applications with a specific, uncommon configuration. Following our security team’s assessment, we have determined that Commerce systems are not impacted by this vulnerability. Commerce will continue to monitor developments and evaluate any additional guidance or security updates as they become available. Read the full update on the Security Trust Center.
+
+Close window.
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+Security Update: On October 23, PHP disclosed an additional vulnerability, CVE-2026-115560, affecting applications with a specific, uncommon configuration. Following our security team’s assessment, we have determined that Commerce systems are not impacted by this vulnerability. Commerce will continue to monitor developments and evaluate any additional guidance or security updates as they become available. Read the full update on the Security Trust Center.
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+GETTING STARTED
+PRODUCTS
+STORE SETUP
+Store Settings
+Domain And Email
+Checkout And Payments
+Currency Setup
+Multicurrency
+Recurring Billing
+Test Orders
+CHECKOUT
+Optimized One-Page Checkout
+Address Autocomplete
+How It Works
+Requirements
+Generate New API key
+Update Existing Key
+BigCommerce Setup
+FAQ
+Form Fields
+Stored Credit Cards
+Gift Certificates
+Gift Wrapping
+Order-level Fees
+Persistent Cart
+Storefront Checkout Configurations
+PAYMENT METHODS
+Available Payment Gateways
+Offline Payments
+TROUBLESHOOTING
+Understanding Checkout Errors
+Shipping
+Tax
+Security
+B2B
+DESIGN AND CONTENT
+MANAGE STORE
+CHANNEL MANAGER
+MARKETING
+DATA SOLUTIONS
+ACCOUNT
+TD BANK
+Google Autocomplete for Addresses
+What We'll Cover
+How it works
+Requirements
+Generating a new API key
+Updating an existing API key
+BigCommerce setup
+FAQ
+
+Google Autocomplete, powered by Google’s Places API, improves the checkout experience by making it easier and faster for customers to enter their shipping and billing addresses.
+
+Free for up to 10,000 monthly events, merchants in any location can set up and enable Google Autocomplete for addresses. Customer addresses in Australia, Canada, New Zealand, the United Kingdom, and the United States are supported.
+
+ 
+
+Google moved the Places API to “Legacy” status on March 1, 2025. If you have previously set up a legacy Places API key, we recommend updating it to use Places API (New) or creating a new key.
+
+ 
+How It Works
+
+When customers at checkout begin entering their address, Google Autocomplete will provide a list of potential matching addresses in the supported countries. When customers select an address from the drop-down list, the rest of the address fields are automatically filled out.
+
+ 
+
+Postcodes are not autofilled for UK addresses. To prevent incorrectly autofilled shipping and billing addresses, UK customers must manually enter their postcode.
+
+ 
+Requirements
+Your store’s checkout type must be Optimized One-Page Checkout.
+You must have a new or existing Google Cloud Account.
+You must have a Google Cloud project with billing enabled.
+To manage your store’s checkout settings, you must have the Manage Settings permission enabled on your user account.
+SHOPPER REQUIREMENTS
+Shoppers must enter an address in Australia, Canada, New Zealand, the United Kingdom, or the United States.
+ 
+Generating a New API Key
+
+Google Autocomplete for addresses requires a Places API (New) key. To set up a new key:
+
+1. Ensure that you meet the prerequisites to set up an API key. You will need to:
+
+review SKU: Autocomplete Requests billing and cost for usage at Google’s Places API (New) Usage and Billing.
+verify that you have a Google Cloud Account.
+verify that you have a Google Cloud project with billing enabled.
+
+2. Enable the API in your Google Cloud project.
+
+3. Next, create an API key to make authenticated API requests. On the Google Maps Platform page, click Keys & Credentials in the left navigation. If prompted, select your project. Click Create credentials, then click API key.
+
+4. Configure your new key for your store and Places API by setting up key restrictions. Click on the key’s name to edit it.
+
+On the next page, under Set an application restriction, select Websites. Enter your store’s URL, such as https://www.mybcstore.com, then click Done.
+
+Next, under API restrictions, select Restrict key. In the drop-down list, select Places API (New), then Save the key.
+
+ 
+
+Note: If you intend to use the same API key on other sites, you will need to include the URL for each page under Set an application restriction.
+
+5. On the list of API keys, click Show key to reveal the key you will need to enter in your BigCommerce control panel. 
+
+ 
+Updating an Existing API Key
+
+Google moved the Places API to “Legacy” status on March 1, 2025. If you have previously set up a legacy Places API key, we recommend updating it to use Places API (New).
+
+Before you get started, review SKU: Autocomplete Requests billing and cost for usage at Google’s Places API (New) Usage and Billing.
+
+ 
+
+Prefer to create a new key? You can generate a brand new key with the new Places API instead of modifying your existing one. This gives you the ability to revert to your original key as a fallback, if needed.
+
+1. Log in to your Google Cloud Account’s Google Maps Platform page. 
+
+2. At the top of the page, click the project picker and select the project your existing key belongs to, then click Keys & Credentials in the left navigation.
+
+3. Click on the existing key’s name to edit it.
+
+4. Under API restrictions, select Restrict key. In the drop-down list, include Places API (New), then Save the key. Note that this is a separate key from the legacy Places API.
+
+ 
+BigCommerce Setup
+
+Once you have generated a Places API (New) key, enter it in your BigCommerce control panel to enable Google Autocomplete for Addresses at checkout. 
+
+1. Go to Settings › Checkout. 
+
+2. Under Optimized one-page checkout, scroll down to Shipping.
+
+3. Check the box next to Use Google Maps services to autocomplete shipping and billing addresses, then enter the API key that you copied from your Google Cloud project.
+
+4. Click Save.
+
+ 
+FAQ
+
+What countries are supported?
+
+Merchants in any location can use Google Autocomplete, but only customer addresses in Australia, Canada, New Zealand, the United Kingdom, and the United States are supported.
+
+What does Google Autocomplete cost?
+
+Google Autocomplete is free for up to 10,000 monthly events. If you exceed the free usage limit, you will be charged based on your usage rate and region. See SKU: Autocomplete Requests at Google’s Places API (New) Usage and Billing.
+
+If I previously set up Google autocomplete with Places API, do I need to update to the new Places API?
+
+While you aren’t required to update to the new Places API at this time, we recommend updating your existing key or creating a new one to ensure that your checkout stays current.
+
+What does the “As of March 1st, 2025, google.maps.places.AutocompleteService is not available to new customers. Please use google.maps.places.AutocompleteSuggestion instead.” error message mean?
+
+This browser console error is associated with incorrect website restrictions.
+
+In your Google Cloud Account’s Google Maps Platform page, select the project your existing key belongs to, then click Keys & Credentials in the left navigation. Under Set an application restriction, select Websites. Enter your store’s URL, such as https://www.mybcstore.com, click Done, then click Save.
+
+What does the "This API project is not authorized to use this API. Please ensure this API is activated in the Google Developers Console." error message mean?
+
+When receiving this error, Places API is not enabled in your Google Cloud project. For setup steps, see Google’s “Enable the API” in Set up the Places API (New).
+
+Do this in my store
+
+GO TO CHECKOUT IN MY STORE
+
+Additional Resources
+Optimized One-Page Checkout
+About the Places API (New) (Google)
+Google Maps Platform security guidance (Google)
+Places API Usage and Billing (Google)
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+Google Autocomplete for Addresses

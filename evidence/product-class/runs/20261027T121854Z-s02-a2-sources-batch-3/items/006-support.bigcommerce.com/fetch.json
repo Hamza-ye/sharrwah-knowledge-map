@@ -1,0 +1,18 @@
+{
+ "n": 6,
+ "url": "https://support.bigcommerce.com/s/article/Storefront-Checkout-Configurations",
+ "dir": "items/006-support.bigcommerce.com",
+ "fetched_at": "2026-10-27T12:18:55Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://support.bigcommerce.com/s/article/Storefront-Checkout-Configurations?language=en_US",
+ "content_type": "text/html;charset=UTF-8",
+ "bytes": 191528,
+ "cited_in": [
+  "S-02 A2 BC-2"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "67c6709067954767afade1bfa65cf908f9a016a6d5f71e4cf515d07225b78176",
+ "raw_ext": "html"
+}

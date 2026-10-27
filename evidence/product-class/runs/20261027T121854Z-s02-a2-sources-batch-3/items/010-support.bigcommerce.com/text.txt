@@ -1,0 +1,367 @@
+Security Update: On October 23, PHP disclosed an additional vulnerability, CVE-2026-115560, affecting applications with a specific, uncommon configuration. Following our security team’s assessment, we have determined that Commerce systems are not impacted by this vulnerability. Commerce will continue to monitor developments and evaluate any additional guidance or security updates as they become available. Read the full update on the Security Trust Center.
+
+Close window.
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+Security Update: On October 23, PHP disclosed an additional vulnerability, CVE-2026-115560, affecting applications with a specific, uncommon configuration. Following our security team’s assessment, we have determined that Commerce systems are not impacted by this vulnerability. Commerce will continue to monitor developments and evaluate any additional guidance or security updates as they become available. Read the full update on the Security Trust Center.
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+GETTING STARTED
+PRODUCTS
+STORE SETUP
+B2B
+DESIGN AND CONTENT
+MANAGE STORE
+CHANNEL MANAGER
+Channel Manager
+Getting Started With Localization
+Multi-Storefront | International Enhancements
+Requirements
+Creating Storefronts
+Settings
+Product Overrides
+FAQ
+Multi-Storefront Payment Methods
+Storefronts
+Catalyst
+BigCommerce for WordPress
+DEITY Falcon
+Marketplaces
+Ads And Social
+Point Of Sale
+MARKETING
+DATA SOLUTIONS
+ACCOUNT
+TD BANK
+International Enhancements for Multi-Storefront
+What We'll Cover
+How it works
+Requirements
+Creating an international storefront
+Localization settings
+Customizing product details per storefront (product overrides)
+Image management per storefront
+FAQ
+ 
+
+Limited Availability: This feature may not yet be available for all stores, and available functionality in stores may vary.
+
+From international brands with branches in multiple countries and regions to domestic businesses expanding to offer sophisticated cross-border shopping, shipping, and fulfillment, merchants selling in different regions need to be able to customize their settings on a per storefront basis. This means providing shoppers with local units of measurement, payments, currencies, shipping options, tax calculations, and localized content.
+
+ 
+How it Works
+
+When creating a storefront, you can select a default shopper-facing language, and assign localized store profile information and SEO settings. With the Localization settings found in the left navigation, you can assign:
+
+Default country
+Default and additional languages
+Physical dimensions
+Date and timezone
+
+While adding or editing products, you can select a storefront and customize the following fields to use the storefront’s default language and preferred content:
+
+Name
+Description
+Categories
+Images
+Variant options
+Modifier options
+Featured on this storefront
+Search keywords
+	
+Warranty information
+Availability
+Pre-order message
+Page title
+Meta description
+Product URL
+Custom fields
+
+These customizations will only apply to the product as it appears on the selected storefront. All other fields will use the global values you have set for the product.
+
+ 
+
+New to BigCommerce and Multi-Storefront? See Getting Started with Localization on Multi-Storefronts for more information on Multi-Storefront features and creating localized storefront experiences.
+
+ 
+Requirements
+To use product overrides in the control panel, your store must be on a Performance plan.
+You can create product overrides via the API regardless of your store’s plan.
+The store must meet the requirements and limitations for Multi-Storefront.
+Stores using B2B Edition must request product override functionality.
+The relevant permissions for creating storefronts, configuring localization settings, and editing products must be enabled in your user account.
+ 
+
+Functionality may not appear immediately after meeting the Multi-Storefront requirements. Store provisioning of International Enhancements for Multi-Storefront may take up to 24 hours after the eligibility checklist is passed. See Enabling Multi-Storefront for more information.
+
+ 
+Creating an International Storefront
+
+Follow the steps below to create a new storefront.
+
+1. Go to Channels › Channel Manager, and click Add new.
+
+2. Under Storefronts, click the Create button next to BigCommerce.
+
+3. Fill in your storefront name, and select the base language for shopper-facing content. Click Create when ready.
+
+4. Proceed with setting up your storefront by reviewing the following areas:
+
+Theme — View the Theme Marketplace and select a new theme, or launch Page Builder with your current theme.
+Categories — Create channel-specific categories for your products.
+Products — Assign products to channel-specific categories and manage availability.
+Web pages — Create content pages unique to the storefront.
+Emails — Determine which store emails to send for each storefront and customize email templates.
+Domain — Assign and manage the storefront's domain, and add a third-party SSL certificate.
+Settings and launch — Configure key storefront settings, such as contact information, search settings, and customer privacy, and make the storefront available to shoppers.
+
+See Configuring Storefronts for more information on storefront settings and navigation.
+
+ 
+
+Did you know? You can also set abandoned cart emails, product filters, and gift certificates per storefront, allowing you to offer a full-service localized shopping experience.
+
+ 
+Localization Settings
+Locale
+Physical dimensions
+Date and timezone
+
+Localization settings are located in the left navigation when viewing a storefront. From here, you can set the default country and language, physical dimension format for products, and date and timezone for the storefront.
+
+When configuring your storefront for a multi-region experience, ensure that Use global is unchecked for each of these settings. If the related checkbox is enabled, the setting will use “global” storefront settings, which are configured outside of Channel Manager. For example, the locale settings in the storefront (default country and language) would use the locale settings found in Settings › Localization.
+
+LOCALE
+
+The locale settings determine your storefront's country and customer-facing languages. It is similar to the locale setting found in Settings › Localization.
+
+Default country — The country your storefront is run from.
+This determines which payment and shipping providers will be available for use with your store
+Languages —Your storefront’s default language and any additional languages you have configured..
+Supported languages automatically translate system messages, checkout payment error messages, and transactional and abandoned cart emails. Themes, apps, and other integrations can use this setting to localize shopper-facing content.
+You can manually add translations for dynamic content, like product descriptions and categories, to each storefront language. See the “Storefront Languages” section of Localization Settings to learn more.
+PHYSICAL DIMENSIONS
+
+The physical dimensions settings found in the Localization settings allow you to specify the measurement units your storefront uses for product weight and volume, choose the display style for decimals, and assign a factoring dimension for calculating shipping costs.
+
+Click Show format settings to expand the fields. If you are not familiar with the standard format for the default country assigned to the storefront, click Set standard formats for [default country] to automatically assign these values.
+
+Keep in mind that the length and weight entered for a product will be autocorrected to the format set here; there is no need to edit your products' dimensions to manually convert them. This is an intended feature for comprehensive multi-region support.
+
+Weight measurements — Determines the weight measurement used when calculating the weight of physical products in your storefront.
+Available options are Pounds, Ounces, Kilograms, Grams, and Tonnes.
+Length measurements — Determines the length measurement used when calculating the dimensions of physical products in your storefront.
+Available options are Inches or Centimeters.
+Decimal token — Determines the token or character to use as the decimal separator for your product’s dimensions.
+Thousands token — Determines the token or character to use as the thousands separator for your product’s dimensions.
+Decimal places — Determines the number of decimal places to show when displaying dimensions in your store.
+Factoring dimension — Determines the dimension that will be added up per product when calculating shipping quotes.
+Available options are Product depth, Product height, or Product width.
+If Product depth is selected, then a cart uses the following dimension factoring when calculating shipping quotes:
+Width = The width of the product with the largest value in the order.
+Height = The height of the product with the largest value in the order.
+Depth = The sum of all depths of the products in the order.
+DATE AND TIMEZONE
+
+The date and timezone settings found in the Localization settings allow you to control the internal time tracking used in your store's dashboard. This helps you keep a record of when orders come in and how dates are displayed. This is also how the store tracks when to end a discount or coupon offer if they had a time limit.
+
+Click Show format settings to expand the fields. If you are not familiar with the standard format for the default country assigned to the storefront, click Set standard formats for [default country] to automatically assign these values.
+
+Store local timezone — The timezone where the storefront is located, which determines times used when applying timestamps to orders and store logs.
+Enable daylight savings time correction? — If checked, this setting adds an additional hour to your timezone.
+This is a manual setting and should be enabled only when observing Daylight Savings Time. Disable this setting when you are no longer observing Daylight Savings Time.
+Date format — The format used when displaying dates on your storefront.
+Extended date and time format — The format used when displaying dates in the control panel.
+ 
+Customizing Product Details per Storefront (Product Overrides)
+
+Once you have configured your storefront settings for localization, the next step is customizing your products to appeal to the targeted audience for your localized storefront. Whether this is translating your product details into a new language or tailoring the product description to attract shoppers of a certain brand, the ability to override global product content allows you to fine-tune products on an individual storefront level.
+
+To edit a product, go to Products › All products and locate the product you would like to edit, then click the product’s name or select Edit from the Action menu (⋯).
+
+Click on the channel drop-down to select the desired storefront. By default, Global (all channels) will be selected.
+
+After selecting a storefront, the page will update to only show the product fields available for display customization on a storefront level. These include:
+
+Basic information — Edit the product name.
+Description — Edit the product description.
+Categories — Use the storefront’s category tree to select localized categories or create new categories to assign the product.
+Images — Manage images and their attributes by assigning images, selecting the thumbnail image, changing image sort order, and editing image alt text.
+Variant options — Edit the display name of any applied variant options and values.
+Modifier options — Edit the display name of any applied modifier options and values.
+Storefront details — Select whether the product should be featured on this storefront, and edit the product’s search keywords, warranty information, and availability.
+Purchasability — Edit the pre-order message.
+SEO — Edit the page title, meta description, and product URL.
+Custom fields* — Edit field names, values, and visibility.
+
+*Overrides to custom field names and values will not update product filter facets. However, filter names can be updated on the storefront-level using contextual filters.
+
+There will be a green dot icon to indicate that a field is not using its global settings, along with a notification at the top with the number of channel specific fields currently in use.
+
+To revert a storefront-specific field back to its global setting, click on the Action menu (⋯) and select Inherit global value.
+
+You cannot apply or remove options on the storefront level. If you want to offer an exclusive version of a product on a storefront, featuring a unique set of options, we recommend making a duplicate of the product with the desired options, then assigning the product only to that storefront.
+
+ 
+Image Management per Storefront
+Adding, deleting, and assigning images
+Managing images in a collection
+
+The Images section of the Add/Edit Product page allows you to customize images and attributes per storefront. It contains two main components: the image collection and image folder.
+
+While viewing a product’s global defaults or a specific storefront’s settings, the image collection is the main display. It contains the images that shoppers see on the storefront, the featured thumbnail, and image alt texts.
+
+The image folder is a pop-up window containing every image that is attached to the product, regardless of channel. From this window you can add new images to the product, assign them to storefront channels, or delete them from the product entirely.
+
+Images within the folder are not visible to customers unless they are assigned to a storefront image collection.
+
+ADDING, DELETING, AND ASSIGNING IMAGES
+
+To add, delete, and assign images, open the image folder by clicking the plus icon (+) on an image collection.
+
+If the product does not have any existing images, click the Add button.
+
+Add new images to the folder using the options at the top of the window. Drag and drop your file directly on the designated area or click Upload to select it from a file folder on your device. If you are adding an image from the web, click Add from URL to enter the image’s URL. The image folder supports JPG, JPEG, GIF, and WEBP file types and a maximum file size of 8MB.
+
+Once added, images will appear in the table at the bottom of the window. Change the number of images displayed per page in the window from the drop-down list and use the left and right arrows to navigate between pages.
+
+To delete an image from the product completely, including all image collections, click the trash can icon next to an image, or select multiple images and click the Delete button. If you want to keep the image for future use, you can remove it from storefront image collections, which leaves it in the image folder.
+
+To assign images to the current channel’s image collection, check the box next to the desired images, then click Assign & Save.
+
+If you want to assign images to a different storefront, save your changes, then save the product. Select the desired storefront from the channel drop-down, click the plus icon (+) on the image collection, and assign the images.
+
+ 
+
+Note: You must also click Save on the product page for any changes within the image folder to take effect.
+
+MANAGING IMAGES IN A COLLECTION
+
+Once images have been assigned to the global default or a storefront channel, you can manage them from that channel’s image collection.
+
+Select the channel from the channel drop-down and scroll down to the Images section.
+
+Click an image thumbnail along the bottom to manage its details. You can enter an optional description in the Alt text field, click Make thumbnail to set it as the thumbnail image, or click Remove to remove the image from this collection. Note that this does not remove the image from other channel’s collections or from the image folder.
+
+Click and drag a thumbnail to change the display order on product pages. When you are ready, click Save.
+
+Note that global defaults and storefront channel-specific image collections are managed independently of each other. Any changes at the global level will not affect channel-specific image collections (those marked with a green dot). For example, if you assign a new image to the global image collection, you must also assign it to any channel-specific collections you want it to appear in.
+
+ 
+
+Reverting to global values? Selecting Inherit global value from the action menu will delete the channel-specific collection and revert to the global values. Any new changes to the channel-specific collection will once again sever the collection from being affected by the default.
+
+ 
+FAQ
+
+Can I assign multiple languages to a single storefront?
+
+Yes, you can configure multiple storefront languages and add custom translations from your storefront’s localization settings.
+
+Can I assign payment providers, payment methods, or accounts per storefront?
+
+Yes. With Multi-Storefront Payment Methods, you can manage channel visibility for payment provider configurations.
+
+Can I create discounts and coupons for a localized storefront?
+
+Yes, you can create automatic and coupon promotions per storefront by using Automatic and Coupon Promotions (Standard Editor).
+
+Can I create localized widgets per storefront?
+
+Yes, you can add widgets via Page Builder that are unique to a storefront. For additional storefronts, we recommend replacing banners and the home page carousel with widgets, as they only work on a default BigCommerce storefront. See the “Adding Widgets“ section of Page Builder for more information.
+
+Can order statuses be localized per storefront?
+
+Yes, the default order statuses will be automatically translated per storefront, based on the language selected as a default language per given storefront. If you have customized your order statuses, they will not be automatically translated.
+
+Can return reasons and actions be localized per storefront?
+
+Yes, the default values for return reasons and actions will be automatically translated per storefront, based on the default language selected per given storefront If you have customized your reasons and actions, they will not be automatically translated. See Processing Returns for more information.
+
+If my store is using B2B Edition, can I create a localized storefront Buyer Portal experience?
+
+By default, you can localize storefront-specific text in the Buyer Portal by using Translation settings. Additionally, product overrides can be extended to your B2B Edition account upon request, allowing you to display localized product information in the following front-end and back-end areas of B2B Edition:
+
+Front End (Buyer Portal)
+User-specific and Company-wide order details
+Draft quotes created by buyers
+Purchasable quotes submitted by sales representatives
+Shopping Lists
+Product results in the Quick Order tab
+Back End (B2B Edition Control Panel)
+New and existing quotes
+Company order details
+Line items in invoice details
+
+To request support for product overrides in your B2B Edition account, contact our Sales team.
+
+Can I offer different shipping methods per storefront?
+
+Static shipping quotes, excluding free shipping, and real-time shipping quotes can be toggled on or off per storefront, giving you the ability to provide distinct shipping methods tailored to a geographical region or customer segment.
+
+The out of delivery zone message can also be customized per storefront.
+
+Why don’t I see the option to add multiple languages in my control panel?
+
+If the setting to Enable automatic translation based on shopper’s browser language is enabled, it hides the storefront-specific language and translation settings. When you disable the setting and Save your changes, your localization settings will refresh.
+
+Additionally, the multi-language settings are not available if you have more than 100,000 products in your catalog.
+
+Do this in my store
+
+GO TO CHANNEL MANAGER IN MY STORE
+
+Additional Resources
+Getting Started with Localization on Multi-Storefronts
+Introduction to Multi-Storefront
+Localization Settings
+International Enhancements for Multi-Storefront (Developer Docs)
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+International Enhancements for Multi-Storefront

@@ -1,0 +1,18 @@
+{
+ "n": 2,
+ "url": "https://docs.bigcommerce.com/developer/docs/admin/checkout-and-cart/localization.md",
+ "dir": "items/002-docs.bigcommerce.com",
+ "fetched_at": "2026-10-27T12:18:55Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/docs/admin/checkout-and-cart/localization.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 2386,
+ "cited_in": [
+  "S-02 A2 BC-2"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "b4b219c8f5c282898e4937fa22c1eacd62c1e8b92ac277c23a24a5f717e8d7ac",
+ "raw_ext": "txt"
+}

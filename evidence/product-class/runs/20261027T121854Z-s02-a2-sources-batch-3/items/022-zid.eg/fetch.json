@@ -1,0 +1,18 @@
+{
+ "n": 22,
+ "url": "https://zid.eg/ar/",
+ "dir": "items/022-zid.eg",
+ "fetched_at": "2026-10-27T12:19:01Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://zid.eg/ar/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 41492,
+ "cited_in": [
+  "S-02: Zid's FAQ answers shown on a click (CAPTURE_EXPAND=1)"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "5f184ccee65c82386cd1a12474aa9f0f83e300ba83835d0d4a4af535f0e2c3f1",
+ "raw_ext": "html"
+}

@@ -1,0 +1,18 @@
+{
+ "n": 13,
+ "url": "https://docs.bigcommerce.com/developer/docs/storefront/stencil/themes/localization/language-selector.md",
+ "dir": "items/013-docs.bigcommerce.com",
+ "fetched_at": "2026-10-27T12:19:00Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/docs/storefront/stencil/themes/localization/language-selector.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 2311,
+ "cited_in": [
+  "S-02 A2 BC-2, read"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "f1310796f8a899d28e01138db49380fa3981f70ce01c92c067a97ffeb4576f77",
+ "raw_ext": "txt"
+}

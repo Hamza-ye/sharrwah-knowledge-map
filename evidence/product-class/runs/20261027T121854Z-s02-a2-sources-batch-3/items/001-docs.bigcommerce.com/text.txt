@@ -1,0 +1,355 @@
+> This page is for Developer.
+
+> For clean Markdown of any page, append .md to the page URL.
+> For a complete documentation index, see https://docs.bigcommerce.com/llms.txt.
+> For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server.
+
+# Translations for Address Form Fields
+
+The following entities are translatable for address form fields:
+
+* Label as `label` - The display label for the form field
+* Option values as `option_{base64string}` - Option values where the base64 string encodes the original option text
+
+## Resource fields
+
+The entities listed above are referenced differently based on resource type and must use the following values in the queries outlined below:
+
+| Entity Type        | `resourceType`        | `resourceId` Format                    |
+| ------------------ | --------------------- | -------------------------------------- |
+| Address Form Field | `ADDRESS_FORM_FIELDS` | `bc/store/addressFormField/{field_id}` |
+
+### Field Name Format for Options
+
+* `label` - The display label for the form field
+* `option_{base64string}` - Option values where the base64 string encodes the original option text
+  * Example: `option_UmVzaWRlbnRpYWw=` (where `UmVzaWRlbnRpYWw=` is base64 for "Residential")
+  * Example: `option_Q29tbWVyY2lhbA==` (where `Q29tbWVyY2lhbA==` is base64 for "Commercial")
+
+## Examples
+
+Below are examples of GraphQL queries and mutations for retrieving and managing translation settings for address form fields.
+
+### Query a List of Translations
+
+This query returns a paginated list of translations by resourceType, channel, and locale with a maximum of 50 results per request.
+
+The request below uses several variables for reusability. Replace `{{channel_id}}` and `{{locale_code}}` with the appropriate values for your use case.
+
+#### Request
+
+**`Example query: Query a list of translations`**
+
+```graphql title="Example query: Query a list of translations" showLineNumbers={false}
+GRAPHQL https://api.bigcommerce.com/stores/{{store_hash}}/graphql
+X-Auth-Token: {{token}}
+
+query {
+  store {
+    translations(
+      filters: {
+        channelId: "bc/store/channel/{{channel_id}}",
+        localeId: "bc/store/locale/{{locale_code}}",
+        resourceType: ADDRESS_FORM_FIELDS
+      }
+      first: 50
+    ) {
+      pageInfo {
+        startCursor
+        endCursor
+        hasNextPage
+        hasPreviousPage
+      }
+      edges {
+        cursor
+        node {
+          resourceId
+          fields {
+            fieldName
+            original
+            translation
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+#### Response
+
+**`Example query: Query a list of translations`**
+
+```json title="Example query: Query a list of translations" showLineNumbers={false}
+{
+  "data": {
+    "store": {
+      "translations": {
+        "pageInfo": {
+          "startCursor": "YXJyYXljb25uZWN0aW9uOjA=",
+          "endCursor": "YXJyYXljb25uZWN0aW9uOjA=",
+          "hasNextPage": false,
+          "hasPreviousPage": false
+        },
+        "edges": [
+          {
+            "cursor": "YXJyYXljb25uZWN0aW9uOjA=",
+            "node": {
+              "resourceId": "bc/store/addressFormField/18",
+              "fields": [
+                {
+                  "fieldName": "label",
+                  "original": "Street Address",
+                  "translation": "Dirección"
+                },
+                {
+                  "fieldName": "option_UmVzaWRlbnRpYWw=",
+                  "original": "Residential",
+                  "translation": "Residencial"
+                },
+                {
+                  "fieldName": "option_Q29tbWVyY2lhbA==",
+                  "original": "Commercial",
+                  "translation": "Comercial"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}
+```
+
+### Query a Translation by Resource ID
+
+This query returns translation(s) by resourceId.
+
+The request below uses several variables for reusability. Replace `{{resourceId}}`, `{{channel_id}}`, and `{{locale_code}}` with appropriate values for your use case. Make sure `resourceId` follows the format from the [Resource fields](#resource-fields) table.
+
+#### Request
+
+**`Example query: Query a translation by resource id`**
+
+```graphql title="Example query: Query a translation by resource id" showLineNumbers={false}
+GRAPHQL https://api.bigcommerce.com/stores/{{store_hash}}/graphql
+X-Auth-Token: {{token}}
+
+query {
+  store {
+    translations(
+      filters: {
+        channelId: "bc/store/channel/{{channel_id}}",
+        localeId: "bc/store/locale/{{locale_code}}",
+        resourceType: ADDRESS_FORM_FIELDS,
+        resourceIds: ["bc/store/addressFormField/18"]
+      }
+    ) {
+      edges {
+        cursor
+        node {
+          resourceId
+          fields {
+            fieldName
+            original
+            translation
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+#### Response
+
+**`Example query: Query a translation by resource id`**
+
+```json title="Example query: Query a translation by resource id" showLineNumbers={false}
+{
+  "data": {
+    "store": {
+      "translations": {
+        "edges": [
+          {
+            "cursor": "YXJyYXljb25uZWN0aW9uOjA=",
+            "node": {
+              "resourceId": "bc/store/addressFormField/18",
+              "fields": [
+                {
+                  "fieldName": "label",
+                  "original": "Street Address",
+                  "translation": "Dirección"
+                },
+                {
+                  "fieldName": "option_UmVzaWRlbnRpYWw=",
+                  "original": "Residential",
+                  "translation": "Residencial"
+                },
+                {
+                  "fieldName": "option_Q29tbWVyY2lhbA==",
+                  "original": "Commercial",
+                  "translation": "Comercial"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}
+```
+
+### Update a Translation
+
+This mutation updates a translation.
+
+#### Request
+
+**`Example mutation: Update a translation`**
+
+```graphql title="Example mutation: Update a translation" showLineNumbers={false}
+GRAPHQL https://api.bigcommerce.com/stores/{{store_hash}}/graphql
+X-Auth-Token: {{token}}
+
+mutation {
+  translation {
+    updateTranslations(
+      input: {
+        resourceType: ADDRESS_FORM_FIELDS,
+        channelId: "bc/store/channel/{{channel_id}}",
+        localeId: "bc/store/locale/{{locale_code}}",
+        entities: [
+          {
+            resourceId: "bc/store/addressFormField/18",
+            fields: [
+              { fieldName: "label", value: "Dirección de la calle" },
+              { fieldName: "option_UmVzaWRlbnRpYWw=", value: "Residencial" },
+              { fieldName: "option_Q29tbWVyY2lhbA==", value: "Comercial" }
+            ]
+          }
+        ]
+      }
+    ) {
+      __typename
+      errors {
+        __typename
+        ... on Error {
+          message
+        }
+        ... on InvalidTranslationEntityFieldsError {
+          id
+          fields
+          message
+        }
+      }
+    }
+  }
+}
+```
+
+#### Response
+
+**`Example mutation: Update a translation`**
+
+```json title="Example mutation: Update a translation" showLineNumbers={false}
+{
+  "data": {
+    "translation": {
+      "updateTranslations": {
+        "__typename": "UpdateTranslationsResult",
+        "errors": []
+      }
+    }
+  }
+}
+```
+
+> **Note**
+>
+> The mutation example above shows a successful response. If invalid fields are provided, the API will return an error response. See the [Error Handling Reference](/developer/docs/admin/store-configuration/translations/error-handling) for more details on error responses.
+>
+> Example error response for invalid fields:
+>
+> ```json showLineNumbers={false}
+> {
+>   "data": {
+>     "translation": {
+>       "updateTranslations": {
+>         "__typename": "UpdateTranslationsResult",
+>         "errors": [
+>           {
+>             "__typename": "InvalidTranslationEntityFieldsError",
+>             "id": "bc/store/addressFormField/18",
+>             "fields": ["option_SW52YWxpZA=="],
+>             "message": "Invalid fields for entity bc/store/addressFormField/18: option_SW52YWxpZA=="
+>           }
+>         ]
+>       }
+>     }
+>   }
+> }
+> ```
+
+### Delete a Translation
+
+The following mutation deletes a translation.
+
+#### Request
+
+**`Example mutation: Delete a translation`**
+
+```graphql title="Example mutation: Delete a translation" showLineNumbers={false}
+GRAPHQL https://api.bigcommerce.com/stores/{{store_hash}}/graphql
+X-Auth-Token: {{token}}
+
+mutation {
+  translation {
+    deleteTranslations(
+      input: {
+        channelId: "bc/store/channel/{{channel_id}}",
+        localeId: "bc/store/locale/{{locale_code}}",
+        resourceType: ADDRESS_FORM_FIELDS,
+        resources: [
+          { 
+            resourceId: "bc/store/addressFormField/18",
+            fields: ["label", "option_UmVzaWRlbnRpYWw=", "option_Q29tbWVyY2lhbA=="]
+          }
+        ]
+      }
+    ) {
+      __typename
+      errors {
+        __typename
+        ... on Error {
+          message
+        }
+        ... on InvalidTranslationEntityFieldsError {
+          id
+          fields
+          message
+        }
+      }
+    }
+  }
+}
+```
+
+#### Response
+
+**`Example mutation: Delete a translation`**
+
+```json title="Example mutation: Delete a translation" showLineNumbers={false}
+{
+  "data": {
+    "translation": {
+      "deleteTranslations": {
+        "__typename": "DeleteTranslationsResult",
+        "errors": []
+      }
+    }
+  }
+}
+```

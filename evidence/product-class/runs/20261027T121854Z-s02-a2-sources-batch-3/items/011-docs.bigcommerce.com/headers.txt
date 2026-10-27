@@ -1,0 +1,28 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Tue, 27 Oct 2026 12:19:01 GMT
+content-type: text/markdown; charset=utf-8
+age: 1968
+cache-control: public, max-age=0, must-revalidate
+cf-cache-status: DYNAMIC
+cf-placement: local-IAD
+x-vercel-id: iad1::rg6hc-1793103541518-8055a24f0291
+content-encoding: br
+etag: W/"920dcd8976c71083b6f260cdeff73f33"
+link: </developer/api-reference/rest/admin/management/geography/countries/get-country.md>; rel="alternate"; type="text/markdown", </developer/api-reference/rest/admin/management/geography/countries/llms.txt>; rel="describedby"
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+permissions-policy: camera=(self), microphone=(self), geolocation=()
+referrer-policy: strict-origin-when-cross-origin
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=xA3cikysieE1knDh%2BAKfxyF0wl1yk75vzD68CzBH%2B6%2FkJ3q%2FccvRXsAuu%2FNeJTQjiLe1Uoo00x%2B5YR9y8TFtm2pUXwf79d6WJO4V2Kxnc9H6L4VWqpaQA30js%2Fd0ioLmsA7QLK4zZGCGMQ%3D%3D"}]}
+server: cloudflare
+strict-transport-security: max-age=2592000; includeSubDomains
+x-content-type-options: nosniff
+x-fern-renderer: static
+x-vercel-cache: MISS
+vary: accept-encoding
+set-cookie: __cf_bm=UxWj883jj_dOux2GOJilZ9j.3R1mx4XCCyc2TaKNe98-1793103541.3989289-1.0.1.1-_enQ0.bzoSpWBhcQD6Lct6gJJoFb7uwQ3.dZekasPuxIco7k_zM49GX3p9yhn00rOt1iyyyEgaRbhgT8EUbqzbqccb1XzrUHeyzk7_eDbDAaGKjnaaIgtZlxs1A0YjBf; HttpOnly; SameSite=None; Secure; Path=/; Domain=bigcommerce.com; Expires=Tue, 27 Oct 2026 12:49:01 GMT
+bc-ray: 1
+cf-ray: a511a58dba84a3a2-IAD
+alt-svc: h3=":443"; ma=86400
+

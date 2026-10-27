@@ -1,0 +1,17 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Tue, 27 Oct 2026 12:19:02 GMT
+content-type: text/html; charset=utf-8
+cf-ray: a511a59238de5764-IAD
+cf-cache-status: BYPASS
+cache-control: public, max-age=300, s-maxage=300, stale-while-revalidate=60
+server: cloudflare
+strict-transport-security: max-age=0; includeSubDomains
+vary: RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch, Accept-Encoding
+x-powered-by: Next.js
+set-cookie: __cf_bm=iErdbaCTgIfYOnDx6G3mgHQ5DRg1ZoroImiInpgizRk-1793103542.1166112-1.0.1.1-gjHM3oIqxUDOUzXnVOdboEFBRP7uHFuY8jyw6IbPrtmDLJm_ybf8WZRz5LKv3VVwetYSnw0TImQIFJM9mIpn7cGL.pK9Fdi.fe79.l2KqSB.x69i0oR1abpF9mH32ecI; HttpOnly; SameSite=None; Secure; Path=/; Domain=zid.eg; Expires=Tue, 27 Oct 2026 12:49:02 GMT
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=vwuFnZAJTbLV%2FrpdkHacECTpvwPsWdLIXjebMGbOJyxek5D5afACoc9qj%2FQH9qTNdVemaYxqwy%2BesqCkAfO%2BPAUDp7eUIwRJr1QmQ4mPEsoaW9FM4xY1zA%3D%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+content-encoding: br
+
