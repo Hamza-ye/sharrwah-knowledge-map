@@ -244,6 +244,7 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 | BC-2: contact information shown to buyers; market selection; returns and cancellations; staff access; the buyer's address; who sells to the buyer | 10 | 10 | 6 | 56 | G12, in place of G03, whose pages it read; G13, G14 | 84 | 14.5 |
 | ZD-4: the absence audit's S02-ZD-G03 again, from zid.eg's Terms as shown | 1 claim | 1 | 0 | 29 | G03 partly contradicted: Egypt answered | 43 | 7.5 |
 | SH-2a: analytics and tracking; notifications to the merchant; store status | 6 | 6 | 6 | 86 | none | 97 | 20.7 |
+| WC-4a: analytics and tracking; apps; messages to buyers; notifications to the merchant | 7 | 7 | 7 | 40 | none | 75 | 12.5 |
 
 **What WC-1 taught:**
 - **Our labels aren't the platform's words.** The brief said to search a kind's own name, and the part asked whether "who sells to the buyer" was one. The brief now says the kind's head word is searched, such as `domain` or `currency`, and our longer labels aren't.
@@ -320,4 +321,8 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 **What SH-2a taught:**
 - **Shopify's own words answered every row, with no gap.** Its documents say what a setting holds for, even where that is the whole store: private mode is for the online store as a whole, and staff notifications are per recipient and per point-of-sale location. A market changes what consent allows: in markets set to require consent, web pixels run only with the visitor's permission (S02-SH-731).
 - **Searches run at once slow each other down.** The part ran six of its own searches at once, which took 10 to 18 minutes each. Launch messages now ask for at most two at once.
+
+**What WC-4a taught, and the coordinator's ruling on eight WooCommerce quotes:**
+- **The store's country reaches WooCommerce's suggestions, not its settings.** The extensions suggested at setup, and two inbox notes, follow the store's base country (S02-WC-419 to S02-WC-421, S02-WC-433, S02-WC-434). Analytics follows the visitor's consent and region. Customer emails go out in the store's language.
+- **Eight quotes the checker lists as only in the page's source stand:** S02-WC-C117 to C119 and C266 to C270, from WooCommerce's legacy REST API reference at woocommerce.github.io. That address serves the whole reference as static HTML. A browser is sent on by script to developer.woocommerce.com's overview page, which is what the capture of 10 October rendered (its `render.json` names it as `final_url`). The text is WooCommerce's own documentation, served at the address cited. So the statements stand, read with the release's code for the same endpoints.
 
