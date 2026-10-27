@@ -18,16 +18,16 @@ const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
 // This session's browser fails some sites' own requests through its proxy (HTTP 400, or aborted), which left
 // pages empty or showing only an error text: BigCommerce's Help Center, Zid's pricing pages. So every request is
 // made by Playwright's own request client and its answer handed to the page. Redirects are handed over as they
-// CAPTURE_EXPAND=1 opens, one at a time, what a page keeps closed until a click, such as FAQ answers, and keeps
-// every line that appears: each <details>, and each control marked aria-expanded="false" that is neither a link
-// nor a submit button. An FAQ often closes one answer as it opens the next, hence one at a time.
+// CAPTURE_EXPAND=1 opens, one at a time, what a page keeps closed until a click, such as FAQ answers: each <details>,
+// and each control marked aria-expanded="false" that is neither a link nor a submit button. An FAQ often closes one
+// answer as it opens the next, hence one at a time. Each click's new lines are kept under the control's label, marked
+// "▸ ", so that an answer stays with its question even where its words repeat a line elsewhere on the page.
 const EXPAND = process.env.CAPTURE_EXPAND === '1';
 async function expandClosed(page) {
   if (!EXPAND) return [];
   const text = () => page.evaluate(() => document.body ? document.body.innerText : '').catch(() => '');
   const lines = s => s.split('\n').map(l => l.trim()).filter(Boolean);
-  const seen = new Set(lines(await text()));
-  const added = [];
+  const out = [];
   const start = page.url();
   const count = await page.evaluate(() => {
     const els = [...document.querySelectorAll('details:not([open]) > summary, [aria-expanded="false"]')]
@@ -36,18 +36,21 @@ async function expandClosed(page) {
     return els.length;
   }).catch(() => 0);
   for (let i = 0; i < Math.min(count, 200); i++) {
-    const ok = await page.evaluate(i => {
+    const before = new Set(lines(await text()));
+    const label = await page.evaluate(i => {
       const el = document.querySelector(`[data-capture-toggle="${i}"]`);
-      if (!el) return false;
-      try { el.click(); } catch (e) { return false; }
-      return true;
-    }, i).catch(() => false);
-    if (!ok) continue;
-    await page.waitForTimeout(300);
+      if (!el) return null;
+      const l = (el.innerText || el.getAttribute('aria-label') || '').trim().split('\n')[0];
+      try { el.scrollIntoView({ block: 'center' }); el.click(); } catch (e) { return null; }
+      return l;
+    }, i).catch(() => null);
+    if (label === null) continue;
+    await page.waitForTimeout(500);
     if (page.url() !== start) break;          // a click that navigates ends the opening
-    for (const l of lines(await text())) if (!seen.has(l)) { seen.add(l); added.push(l); }
+    const appeared = lines(await text()).filter(l => !before.has(l));
+    if (appeared.length) out.push(`▸ ${label}`, ...appeared);
   }
-  return added;
+  return out;
 }
 
 // come, so the page follows them itself. CAPTURE_ROUTE=0 turns this off.
