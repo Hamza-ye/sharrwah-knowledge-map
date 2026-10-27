@@ -1,0 +1,275 @@
+Security Update: On October 23, PHP disclosed an additional vulnerability, CVE-2026-115560, affecting applications with a specific, uncommon configuration. Following our security team’s assessment, we have determined that Commerce systems are not impacted by this vulnerability. Commerce will continue to monitor developments and evaluate any additional guidance or security updates as they become available. Read the full update on the Security Trust Center.
+
+Close window.
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+Security Update: On October 23, PHP disclosed an additional vulnerability, CVE-2026-115560, affecting applications with a specific, uncommon configuration. Following our security team’s assessment, we have determined that Commerce systems are not impacted by this vulnerability. Commerce will continue to monitor developments and evaluate any additional guidance or security updates as they become available. Read the full update on the Security Trust Center.
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+GETTING STARTED
+PRODUCTS
+STORE SETUP
+B2B
+DESIGN AND CONTENT
+MANAGE STORE
+CHANNEL MANAGER
+MARKETING
+DATA SOLUTIONS
+ACCOUNT
+Users
+Billing
+Pricing
+Account Dashboard
+Requirements
+Accessing
+Updating Details
+Viewing Store Details
+Viewing OPP Summary
+Updating Payment Method
+Creating Stores
+Transferring Ownership
+FAQ
+Changing Plans
+About Invoices
+Cancelling
+TD BANK
+The Account Dashboard
+What We'll Cover
+Requirements
+Accessing the Account Dashboard
+Updating account details
+Viewing store details
+Viewing your Open Payment Provider fee summary
+Updating your payment method
+Creating additional stores
+Transferring ownership
+FAQ
+
+The Account Dashboard is where store owners manage their BigCommerce account. From the Dashboard you can manage account details, change your store’s plan, update payment methods, view your Open Payment Provider fee summary, view and pay invoices, purchase and manage domains, and purchase and manage SSL certificates.
+
+ 
+Requirements
+To access the Account Dashboard, you must be the store owner.
+ 
+Accessing the Account Dashboard
+
+To access the Account Dashboard, navigate to manage.bigcommerce.com and log into your account.
+
+If you are already logged into the control panel as the store owner, click your store name and select Manage store account from the drop-down menu.
+
+As the store owner, you always have access to the Account Dashboard, even if you are unable to log into your store’s control panel.
+
+If you have more than one account, you can switch between them by using the drop-down menu in the upper right.
+
+ 
+Updating Account Details
+
+To update your company name, VAT information, and manage contacts, click Account and select Account details from the drop-down menu.
+
+UPDATING PRIMARY AND BILLING CONTACTS
+
+Your primary and billing contacts are listed under Contacts. As the main contact, the primary contact receives most communications and can view all cases and associated issues on the account. The billing contact receives account invoices and any other billing related communications.
+
+To create a new contact for the account, click Add Contact.
+
+Click Edit next to a contact to open the drop-down menu. For any contact in your list, you can select Edit contact and update their details.
+
+For unassigned contacts, you can replace the existing primary contact by selecting Set primary contact. Replace the existing billing contact by selecting Set billing contact. Remove the contact by selecting Delete.
+
+ 
+Viewing Store Details
+Plan summary
+Store history
+Details
+Cancel store
+
+To view details about the store(s) on your account, including plan information, sales volume, and domain details, click Account and select Store details from the drop-down menu.
+
+If you have more than one store, you can switch between them using the drop-down menu at the top of the page.
+
+PLAN SUMMARY
+
+The Plan summary section displays your current store plan, plan price, and the plan’s sales volume cap. When applicable, links to upgrade or downgrade your plan, as well as change your billing frequency are also displayed.
+
+For more information on BigCommerce plans and pricing, see our pricing page. For more details on plan changes, see Changing Your Store's Plan.
+
+STORE HISTORY
+
+The Store history section displays your store’s trailing 12-month sales volume as well as the previous month’s volume and Open Payment Provider fee summary.
+
+For more information, see “Viewing Sales Volume” on About BigCommerce Pricing.
+
+DETAILS
+
+The Details section displays your store’s domain information, including your current domain and storefront's permanent address.
+
+For information about updating and managing your store’s domain, see Changing Domains. For details on purchasing a custom domain, see Purchasing a Domain.
+
+CANCEL STORE
+
+If your store is on a Core, Growth, or Scale plan, you can submit a cancellation request directly from the Cancel store section.
+
+For cancellation requirements and considerations, see Cancelling Your Store or Paid Features.
+
+ 
+
+Note: To ensure that your cancellation processes before the next billing cycle begins, we require cancellation requests to be submitted at least 2 business days before your next billing date.
+
+ 
+Viewing Your Open Payment Provider Fee Summary
+
+To view a breakdown of GMV processed through each payment method, including any revenue subject to the Open Payment Provider fee, click Account and select OPP Summary from the drop-down menu.
+
+For more information, see “Viewing your Open Payment Provider Fee Summary” on About BigCommerce Pricing.
+
+ 
+Updating Your Payment Method
+
+BigCommerce invoice charges are automatically paid using the payment method on file. To update your payment details:
+
+1. Click Account and select Payment method from the drop-down menu.
+
+2. Click Edit to select and enter new payment details. The methods available to pay your invoice can vary depending on your store’s plan and region.
+
+3. Click Save. This method will now be used to automatically pay charges for future billing cycles.
+
+If you encounter any issues when attempting to add a payment method or pay an invoice, contact our support team or create a Billing Case. Note that our support team cannot edit the payment method in your account and will never ask for your payment information.
+
+ 
+Creating Additional Stores
+
+Multiple stores can be created under the same account, allowing you to manage them efficiently. These stores share the same contact and billing information.
+
+On the Account Dashboard home page, click New Store and fill out the form on the next page.
+
+The new store will be set to a 15-day trial. You can upgrade to a paid plan at any time during the 15-day trial period.
+
+If you encounter issues creating a new store, see the troubleshooting steps under “Troubleshooting Failed Trial Creation” on Starting a BigCommerce Trial.
+
+ 
+Transferring Ownership
+
+Store ownership can be transferred to another user, whether through a sale or an organizational change.
+
+Before transferring ownership, you will need to update contact and billing information for various external aspects of your store:
+
+Your domain registrar (if purchased from a third-party registrar)
+The domain contacts (if purchased from BigCommerce)
+Email host accounts connected to your domain
+Payment gateway accounts
+Real-time shipping quote integration accounts
+Automatic tax provider accounts
+Accounts with apps from the App Marketplace
+External data management or order management systems
+Any other systems that interact with your store
+
+Once you are ready to transfer ownership, create a user account for the new owner, and then update their user role to Store Owner.
+
+The new store owner can then:
+
+Update the account details and payment method as needed.
+Remove any unneeded permissions from the old owner’s user account or set it as Inactive.
+
+As the final step, contact our support team so that we can update the owner in our systems.
+
+ 
+FAQ
+
+How do I change my password?
+
+If you are already logged into your store's control panel as the store owner, click the profile icon and select Password from the drop-down menu.
+
+On the Password page, enter your current password and new password, then click Save. Note that your new password must contain:
+
+at least 12 characters.
+one or more uppercase letters.
+one or more special characters or symbols.
+one or more lowercase letters.
+one or more numbers.
+
+After changing your password, you’ll be logged out of the control panel and must enter your new password to log back in.
+
+My password is incorrect, how can I reset it?
+
+If you are unable to log in and need to reset your account password, go to https://login.bigcommerce.com/login and click Forgot password. Enter the email address associated with the store owner user account and click Email reset link.
+
+Check your email spam folder or search your inbox for an email with the subject line “Instructions for resetting your password”. To help ensure you receive emails from BigCommerce, add accounts@bigcommerce.com and noreply@bigcommerce.com to your contacts or allowed senders list.
+
+After changing my password, why am I still unable to log into the Account Dashboard?
+
+If you are still unable to log into the Account Dashboard, ensure that the email address is associated with the store owner user account. Only the store owner can access the Account Dashboard.
+
+On the login screen, delete any autofilled credentials in the Email and Password fields and try manually entering them. The pre-filled details saved by your browser or password tool may be incorrect. You can also try logging into your account in an incognito or private browser window.
+
+Where can I find my Support PIN in the Account Dashboard?
+
+The Support PIN is located within the Help drop-down, at the top right of the Account Dashboard.
+
+Does BigCommerce send Form 1099-K for US taxes?
+
+No, Form 1099-K is issued by your payments provider(s).
+
+Why was I logged out of the Account Dashboard?
+
+The Account Dashboard automatically logs you out after 15 minutes of inactivity. Note that the timeout window cannot be adjusted.
+
+What does the "We're having trouble updating your VAT Information. Please try again later" error message mean?
+
+This error can occur when there is an issue validating the VAT number with the issuing country. Contact our support team or create a Billing Case. Provide your VAT Number and Issuing Country in your case details.
+
+Additional Resources
+About BigCommerce Pricing
+About Your BigCommerce Invoice
+Changing Your Store's Plan
+Store Owner User Role and Permissions
+Users
+User Roles and Permissions
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+The Account Dashboard

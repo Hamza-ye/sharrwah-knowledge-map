@@ -1,0 +1,189 @@
+___
+Skip to navigation
+Skip to content
+USD
+Change site currency USD selected
+Develop on Woo
+Hire an expert
+Get support
+Sell
+Click to show 12 more items
+Extensions
+Click to show 18 more items
+Resources
+Click to show 23 more items
+Enterprise ecommerce
+Log in
+Get started
+WooCommerce
+Getting started
+Migrating to WooCommerce
+Products
+Expand
+Taxes
+Shipping
+Expand
+Core Shipping Options
+Payments
+Orders
+Data and reporting
+Customers
+Marketing
+Site administration
+Expand
+Store design
+Expand
+Mobile App
+Expand
+Get help
+Expand
+Documentation / WooCommerce / Shipping / Core Shipping Options / Local Pickup
+Local Pickup
+
+Note:
+
+This document is referring to the legacy WooCommerce local pickup options. If you’re using a WooCommerce Blocks-based checkout, you can find configuration instructions for the local pickup block here.
+
+Local Pickup is a WooCommerce core shipping method that allows the customer to pick up an order themselves. On this page, you’ll learn how to: 
+
+Add Local Pickup as a shipping method.
+Configure Local Pickup.
+Local Pickup: Setup and Configuration
+
+Setting up Local Pickup starts by adding it as a shipping method to a shipping zone. Follow these steps to add the Local Pickup option:
+
+Note:
+
+This shipping method has to be added to a Shipping zone. If you haven’t configured your Shipping zones yet, please check our Setting up Shipping Zones guide before proceeding.
+
+Go to WooCommerce > Settings > Shipping > Shipping zones.
+
+2. Click the Edit link in the Shipping Zone where you want to offer this method.
+
+3. Inside the Shipping Zone, click the Add shipping method button.
+
+4. Once you see the “Create shipping method” pop-up, select the “Local Pickup” shipping method and then click the Continue button.
+
+5. Enter a Name that displays to customers in the cart and checkout pages.
+
+6. Select the Tax Status to determine whether tax is applied to the Local Pickup Cost.
+
+By default, when selecting local pickup, the store address will be used to calculate taxes regardless of the customer’s address.
+
+7. (Optional) Enter the Cost for this option. This is applied to the entire cart.
+
+8. Select Save zone and method to finish.
+
+Local Pickup: Customer view
+
+Customers can select “local pickup”  as an option in the cart/checkout if they reside in the shipping zone that includes it. This is what customers see in the cart and checkout: 
+
+Cart view:
+
+View of local pickup option in cart
+
+Checkout view
+
+View of local pickup option at checkout
+
+Note: If customers aren’t seeing the local pickup option, but they reside in the shipping zone that includes local pickup, it may be an issue with the order of shipping zones. As explained in Setting up Shipping Zones, zones need to be sorted from the smallest geographical area to the largest. Make sure that the shipping zone that includes local pickup is listed above any other shipping zones that overlap (ex. If you offer shipping to the state of California but offer local pickup specifically to the postal code 90201, then the shipping zone for local pickup needs to be above the one for California state).
+
+Local Pickup: Advanced Settings/Customization
+
+Developers can configure the following via the WooCommerce Developer Documentation:
+
+Disable local taxes when using local pickup
+Changing the location for local taxes
+Custom emails for local pickup
+Adding custom emails for local pickup (3rd-party tutorial)
+Questions and support
+
+Do you still have questions and need assistance? 
+
+This documentation is about the free, core WooCommerce plugin, for which support is provided in our community forums on WordPress.org. By searching this forum, you’ll often find that your question has been asked and answered before.
+
+If you haven’t created a WordPress.org account to use the forums, here’s how.
+
+If you’re looking to extend the core functionality shown here, we recommend reviewing available extensions in the WooCommerce Marketplace.
+Need ongoing advanced support or a customization built for WooCommerce? Hire a Woo Agency Partner.
+Are you a developer building your own WooCommerce integration or extension? Check our Developer Resources.
+
+If you weren’t able to find the information you need, please use the feedback thumbs below to let us know.
+
+ 
+Was this guide helpful for you?
+ON THIS PAGE
+Local Pickup: Setup and Configuration
+Local Pickup: Customer view
+Local Pickup: Advanced Settings/Customization
+Questions and support
+ 
+30-day money-back guarantee
+Support teams across the world
+Safe and secure online payments
+Sell
+WooCommerce
+WooCommerce pricing
+Payments
+No-code customization
+Marketing
+Checkout
+Shipping
+Mobile app
+Enterprise ecommerce
+Marketplace
+WooCommerce extensions
+WooCommerce themes
+New
+Essentials
+Collections
+Developed by Woo
+Build
+Woo for developers
+Developer resources
+Become a Woo agency
+Become a Marketplace partner
+Become an affiliate
+Resources
+Blog
+Documentation
+WooCommerce site examples
+Product updates
+Email newsletter
+Support
+Feature requests
+WooCommerce hosting
+Hire an agency
+Participate in customer research
+Accessibility
+Support forums
+Company
+About
+Press
+Download WooCommerce free
+Join the Woo community
+Woo trademark guidelines
+Brand and logo guidelines
+Do not sell or share my personal information
+WooCommerce Support Policy
+Refund Policy
+Contact us
+Follow us on Facebook
+Follow us on X
+Follow us on Instagram
+Follow us on LinkedIn
+USD
+Change site currency USD selected
+Terms of Service
+Privacy Policy
+Privacy Notice for California Users
+
+© WooCommerce, Inc. 2026
+
+AN
+AUTOMATTIC
+JOINT
+Use of your personal data
+We and our partners process your personal data (such as browsing data, IP Addresses, cookie information, and other unique identifiers) based on your consent and/or our legitimate interest to optimize our website, marketing activities, and your user experience.
+Customize
+Accept all

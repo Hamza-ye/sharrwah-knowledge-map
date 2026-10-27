@@ -1,0 +1,128 @@
+[
+{
+"n": 1,
+"url": "https://support.bigcommerce.com/s/article/Localization-Settings",
+"dir": "items/001-support.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 2,
+"url": "https://support.bigcommerce.com/s/article/Store-Profile-Settings",
+"dir": "items/002-support.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 3,
+"url": "https://support.bigcommerce.com/s/article/Account-Dashboard",
+"dir": "items/003-support.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 4,
+"url": "https://support.bigcommerce.com/s/article/Invoices",
+"dir": "items/004-support.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 5,
+"url": "https://support.bigcommerce.com/s/article/How-do-I-make-a-payment-on-my-account",
+"dir": "items/005-support.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 6,
+"url": "https://zid.sa/ar/pricing/",
+"dir": "items/006-zid.sa",
+"keep_body": false
+},
+{
+"n": 7,
+"url": "https://zid.sa/en/pricing/",
+"dir": "items/007-zid.sa",
+"keep_body": false
+},
+{
+"n": 8,
+"url": "https://zid.eg/ar/pricing/",
+"dir": "items/008-zid.eg",
+"keep_body": false
+},
+{
+"n": 9,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/settings/store-locale/update-settings-locale.md",
+"dir": "items/009-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 10,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/settings/store-locale/get-settings-locale.md",
+"dir": "items/010-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 11,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/settings/store-profile/update-settings-store-profile.md",
+"dir": "items/011-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 12,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/store-information/v2/get-store-information.md",
+"dir": "items/012-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 13,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/settings/store-profile/get-settings-store-profile.md",
+"dir": "items/013-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 14,
+"url": "https://woocommerce.com/document/coupon-management/",
+"dir": "items/014-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 15,
+"url": "https://woocommerce.com/document/woocommerce-customizer/",
+"dir": "items/015-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 16,
+"url": "https://woocommerce.com/document/woocommerce-store-editing/",
+"dir": "items/016-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 17,
+"url": "https://woocommerce.com/document/local-pickup/",
+"dir": "items/017-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 18,
+"url": "https://woocommerce.com/document/woocommerce-store-editing/customizing-cart-and-checkout/checkout-block/woocommerce-blocks-local-pickup/",
+"dir": "items/018-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 19,
+"url": "https://woocommerce.com/documentation/woocommerce/store-design/",
+"dir": "items/019-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 20,
+"url": "https://help.shopify.com/en/manual/organization-settings/expansion-stores.md",
+"dir": "items/020-help.shopify.com",
+"keep_body": false
+},
+{
+"n": 21,
+"url": "https://help.shopify.com/en/manual/organization-settings/expansion-stores",
+"dir": "items/021-help.shopify.com",
+"keep_body": true
+}
+]

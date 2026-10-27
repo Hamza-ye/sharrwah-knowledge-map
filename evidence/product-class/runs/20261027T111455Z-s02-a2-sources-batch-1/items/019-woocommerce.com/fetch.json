@@ -1,0 +1,18 @@
+{
+ "n": 19,
+ "url": "https://woocommerce.com/documentation/woocommerce/store-design/",
+ "dir": "items/019-woocommerce.com",
+ "fetched_at": "2026-10-27T11:15:04Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/documentation/woocommerce/store-design/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 38857,
+ "cited_in": [
+  "S-02 A2 WC-3, read"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "f2c017f62bbe07e74dbbd373a1906528e1291c92706d7f597762506f922ce1d1",
+ "raw_ext": "html"
+}

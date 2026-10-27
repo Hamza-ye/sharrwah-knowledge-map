@@ -1,0 +1,355 @@
+Security Update: On October 23, PHP disclosed an additional vulnerability, CVE-2026-115560, affecting applications with a specific, uncommon configuration. Following our security team’s assessment, we have determined that Commerce systems are not impacted by this vulnerability. Commerce will continue to monitor developments and evaluate any additional guidance or security updates as they become available. Read the full update on the Security Trust Center.
+
+Close window.
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+Security Update: On October 23, PHP disclosed an additional vulnerability, CVE-2026-115560, affecting applications with a specific, uncommon configuration. Following our security team’s assessment, we have determined that Commerce systems are not impacted by this vulnerability. Commerce will continue to monitor developments and evaluate any additional guidance or security updates as they become available. Read the full update on the Security Trust Center.
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+GETTING STARTED
+PRODUCTS
+STORE SETUP
+B2B
+DESIGN AND CONTENT
+MANAGE STORE
+CHANNEL MANAGER
+MARKETING
+DATA SOLUTIONS
+ACCOUNT
+TD BANK
+Localization Settings
+What We'll Cover
+Requirements
+Enabling multi-language settings
+Default country
+Storefront languages
+Physical dimensions
+Date and timezone
+FAQ
+
+Localization settings control your store’s default country, the languages that customers see on your storefront, how weights and dimensions are measured, and how dates and times are shown. They form the base experience for new stores, but you can adjust these settings at any time to better fit your business needs.
+
+The various localization settings can be accessed by going to Settings › Localization.
+
+ 
+
+Look different? This article covers the settings found under Settings › Localization, available for stores with multiple languages enabled. For information about the previous experience, see Store Profile Settings and Store Settings.
+
+ 
+Requirements
+To configure multiple languages per storefront, your store must meet the eligibility requirements.
+To view and manage languages, the Manage Settings permission must be enabled on your user account.
+To view translations for a storefront language, the Read Translations permission must be enabled.
+To edit and delete translations for a storefront language, the Edit and Delete Translations permission must be enabled.
+ 
+Enabling Multi-Language Settings
+
+The ability to configure multiple languages on your storefronts is enabled by default if your store:
+
+has fewer than 100,000 products.
+does not have the Enable automatic translation based on shopper’s browser language setting enabled.
+To learn more about this setting, see the FAQ.
+
+If your store meets both requirements, then the storefront language settings are enabled by default. If your store meets the catalog size requirement but has automatic translation setting enabled, you can enable storefront language settings manually.
+
+ 
+
+Be careful! Before disabling the automatic translation setting, be aware that until additional languages and translations have been added and configured for a channel, shoppers may not experience localized storefront content.
+
+When you are ready to enable and configure multiple languages per Stencil storefront, click the Enable more languages button in the banner at the top of Settings › Localization. This will automatically migrate your store to the multi-storefront experience.
+
+Once enabled, you will be able to add additional languages and manage translations for your Stencil storefronts.
+
+Note that you cannot enable storefront language settings if your store has 100,000 products or more. Your store profile settings will display a banner that says, “Adding additional locales is limited for this store. To get more information please contact our Support Team.”
+
+ 
+Default Country
+
+The default country setting determines which payment methods are available to be set up on your store. The selected country also allows you to quickly adjust standard dimension and date and time formats.
+
+To update your store’s default country, select a new country from the drop-down list, then click Save.
+
+ 
+Storefront Languages
+Adding languages
+Managing languages
+Managing translations
+Customer experience
+
+The Storefront Languages section displays a list of your storefront channels, channel type, default language, and additional languages.
+
+Supported languages receive automatic translations to, storefront system messages, emails, the checkout page, and default content for themes supported by BigCommerce. Additional translations can be added for custom content, such as product fields, product filters, or payment methods.
+
+Each channel can support up to five languages. To add new languages, change your default language, and manage translations, click the Action menu (⋯) and select Edit languages.
+
+ADDING LANGUAGES
+
+To add a new language, click Add language, select the new language from the drop-down list, then click Add. You can add up to five languages per storefront.
+
+For supported languages, automatic translation will be applied for checkout, system messages, emails, and default content for themes built and supported by BigCommerce. Custom content, such as product information, categories, and brands, are not automatically translated, but can be managed in the control panel.
+
+For a full list of translatable content, see Translations Admin GraphQL API in the BigCommerce Developer Center.
+
+MANAGING LANGUAGES
+
+Newly added languages are inactive by default. From the Action menu (⋯) next to the language, select Make active to enable it or Delete to remove it from the storefront channel. Note that only active languages are displayed on your storefront.
+
+For languages that are already active on your storefront, select Make inactive to disable it, Set as default to replace the current default language, or Delete to remove the language from the storefront channel.
+
+ 
+
+Deleting a language from your storefront deletes any translations you have added to dynamic content. You can use the Make inactive action to hide a language from your storefront without deleting your translations.
+
+A path is the domain subfolder where your language can be reached. This takes the form of a locale code added to the end of your store’s URL. For example, French speaking shoppers may see content in their language by visiting www.mystore.com/fr.
+
+To change a custom path for your language, select Edit path from the Action menu (⋯).
+
+In the pop-up, enter your desired path. You can also remove the path from your language by deleting it from the edit window. Note that you may only have one unpathed language at a time.
+
+Custom paths must be lowercase letters with a hyphen as the only separator, and they cannot match any existing language paths on your storefront. Additionally, they must use one of the following patterns, where “X” is a numeric or lowercase alphabetic character:
+
+XX
+XXX
+XX-XX
+XXX-XX
+XX-XXX
+
+For example, a custom path for Mexican Spanish might look like:
+
+es
+mex
+mx-es
+mex-es
+es-mex
+MANAGING TRANSLATIONS
+
+Supported languages automatically translate static content on your storefront, but you can translate dynamic content, such as products, categories, and payment methods from your localization settings.
+
+To add or manage translations, click the Action menu (⋯) and select Add translations.
+
+On the translations page, switch between channels from the Channel drop-down menu or change languages from the Locale drop-down menu.
+
+Note that to retain any new changes to translations, you must click Save before changing channels or languages.
+
+Click a tab along the top of the page to view the translatable fields for the content type. Additional tabs can be found by clicking More (⋯).
+
+Each tab displays a list of entities available for translation and their supported fields, original phrases, and any existing translations.
+
+Click the right arrow icon ( > ) next to an entity to display its translatable fields. Click a field in the Translation column to enter text.
+
+Description fields use a WYSIWYG editor to format text. Double click the field in the Translation column to open the editor and enter your translation. Click the Original phrase tab to review the content as originally entered. When ready, click Save to close the WYSIWYG window.
+
+You can view a summary of your new translations by clicking Preview at the bottom of the page.
+
+Once you have completed translations for the channel and language, click Save to confirm your changes and stay on the translations page or Save and exit to return to localization settings.
+
+CUSTOMER EXPERIENCE
+
+Visitors to your storefront will see your content displayed in the language set for the domain and path.
+
+To switch to a different language, shoppers can choose available languages from a drop-down menu. The location and appearance of the drop-down may vary depending on your theme.
+
+Natively, the language selection menu is available for storefronts using themes based on the following versions (or newer):
+
+Cornerstone 6.19.0
+Capacity 6.1.0
+Fortune 4.1.0
+Merchant 6.1.0
+Peak 5.1.0
+
+Visitors can also manually navigate to your store’s URL using the path for a specific language. For example, French speaking shoppers would be able to navigate to www.mystore.com/fr.
+
+ 
+Physical Dimensions
+
+Your store’s physical dimensions settings allow you to specify the measurement units your storefront uses for product weight and volume, choose the display style for decimals, and assign a factoring dimension for calculating shipping costs.
+
+Click Show format settings to expand the section and view or modify the settings.
+
+To manually update your storefront’s physical dimensions, select your desired measurement units from the drop-down lists or enter new decimal and thousands separators, then click Save.
+
+To reset values to the standard formats for your store’s default country, click Set standard formats for [country].
+
+For more information on each setting and how shipments are calculated in BigCommerce, see Physical Dimension Settings and the Shipping Calculator.
+
+ 
+Date and Timezone
+
+The date and timezone section allows you to manage how dates and times are displayed in your store’s control panel. This data is used in several areas, such as on orders, in store logs, and when to start and end promotions.
+
+To manually update date and timezone formatting, select your desired options from the drop-down lists or toggle daylight savings time, then click Save.
+
+To reset values to the standard formats for your store’s default country, click Set standard formats for [country].
+
+For more information on date and time settings, and daylight savings time correction, see Date and Timezone Settings.
+
+ 
+FAQ
+
+What languages support automatic translation?
+
+Automatic translation of content for checkout, system messages, emails, and default content for themes built and supported by BigCommerce is supported for the languages and locales listed below:
+
+Danish / Dansk (da)
+Dutch; Flemish / Nederlands (nl)
+English (en)
+French / Français (fr)
+French; Belgium / Français de Belgique (fr-BE)
+French; Canada / Français de Canada (fr-CA)
+German / Deutsch (de)
+Italian / Italiano (it)
+Japanese / 日本語 (ja)
+Polish (pl)
+	
+Portuguese / Português (pt)
+Spanish; Castilian / Español/Castellano (es)
+Spanish Latin America / Español Latinoamérica (es-419)
+Spanish; Argentina / Español rioplatense (es-AR)
+Spanish; Chile / Español chileno (es-CL)
+Spanish; Colombia / Español colombiano (es-CO)
+Spanish Costa Rica (es-CR)
+Spanish; Mexico / Español mexicano (es-MX)
+Spanish; Peru / Español peruano (es-PE)
+Swedish / Svenska (sv)
+
+Custom content, such as product information, categories, and brands, are not automatically translated, but can be managed in the control panel. All other languages require theme lang file customization.
+
+For a list of BigCommerce themes, see The BigCommerce Theme Marketplace.
+
+Which payment gateways support automatic translation?
+
+The following payment gateways support automatic translation for select payment methods in the languages and locales listed above.
+
+Payment Provider	Payment Methods
+Adyen	ACH, Credit card, Finnish E-Banking, Online Banking Poland, Pay by bank, SEPA
+Authorize.net	Credit card
+Bank of New Zealand	Credit card
+BigCommerce Payments	Credit card
+BlueSnap Direct	Credit card, Electronic Check (ACH)
+Braintree	Credit card
+Chase Merchant Services	Credit card
+Checkout.com	Credit card
+Clover	Credit card
+Commonwealth Bank	Credit card
+Cybersource v2	Credit card
+Electronic Payment Exchange	Credit card
+eWay Rapid	Credit card
+Heartland Payment Systems	Credit card
+Mercado Pago	Credit card, Hosted payments
+Moneris	Credit card
+Nexi XPay	Hosted payments
+NMI	Credit card
+Offline Payment Methods	Bank deposit, Cash on delivery, Check, Money order, Pay in-store
+Opayo by Elavon	Credit card
+PayPal*	Credit card, SEPA
+Quickbooks Payments	Credit card
+Serve First	Credit card
+Square	Credit card
+Stripe OCS	ACH, BACS direct debit, BECS direct debit (Australia), Credit card, NZ bank transfer
+Stripe UPE	ACH, BACS direct debit, BECS direct debit), Credit card, SEPA
+TD Online Mart	Credit card
+USAePay	Credit card
+Windcave	Credit card, Hosted payment page
+Worldpay B2B Payments	Credit card
+Worldpay Ecomm	Credit card
+
+* In addition to the payment methods automatically translated by BigCommerce, PayPal automatically translates many of its payment methods based on the shopper’s location, rather than the selected language.
+
+Can I translate content in the B2B Edition Buyer Portal?
+
+If your storefront uses one or more of the supported languages, the Buyer Portal automatically translates static content, such as navigation items, table headers, and error messages. Buyers can switch between languages by using the drop-down menu in the Buyer Portal. Note that dynamic translations are not supported in the Buyer Portal at this time.
+
+Additionally, you can customize static Buyer Portal text in your default language using B2B Edition’s translation settings. To learn more, see the “Translation Settings” section of B2B Edition Settings.
+
+Can I create locale-specific templates for my transactional emails?
+
+Transactional and abandoned cart saver emails do not support locale-specific email templates, but B2B Edition emails support the ability to translate phrases in each of your storefront’s languages. For more information, see B2B Edition Email Templates.
+
+Where do I manage locales if I am using Makeswift on Stencil?
+
+If you are participating in the Makeswift on Stencil beta, you will continue to manage your locales, languages, and translations from your storefront’s localization settings. Your configured languages and subfolder path structure is synced from the control panel to your Makeswift workspace.
+
+I have more than one storefront, can I configure channel-specific localization settings?
+
+For additional storefronts, you can use the store’s global settings or configure the default country, physical dimensions, and date and timezone settings separately per channel.
+
+Under the Storefront Languages section in Settings › Localization, click the Action menu (⋯) next to the desired channel, then select Edit channel from the drop-down list. Note that in addition to the general requirements, you must also have the Edit Channels permission enabled.
+
+You can also go to Channels and select Edit settings from your channel’s Action menu (⋯).
+
+On the channel’s Localization page, uncheck the box next to Use global to begin updating your settings.
+
+For more information about channel-specific settings and localizing other aspects of your store, see Getting Started with Localization on Multi-Storefronts.
+
+How does the legacy automatic translation setting work?
+
+Previously, automatic translation of storefront content for supported languages was based on a shopper’s browser settings. This was enabled through the Enable automatic translation based on shopper's browser language setting.
+
+This setting can be found in the Locale section of your Store Profile settings at Settings › Store profile. If you have more than one storefront, this setting may also have been enabled individually per channel under your storefront’s Localization settings in Channel Manager › Channels.
+
+This setting has been replaced with storefront language settings in most stores. Note that you do not need to disable this setting to migrate to the new multi-language experience. See Enabling Multi-Language Settings to learn more.
+
+Why is a language not displaying on my storefront?
+
+For a language to be available to shoppers through the language drop-down or by direct URL, it must be set as active in your control panel.
+
+Inactive languages can be translated, but will not be available to shoppers until Make active is selected.
+
+Do this in my store
+
+GO TO LOCALIZATION SETTINGS IN MY STORE
+
+Additional Resources
+Date and Timezone Settings
+Getting Started with Localization on Multi-Storefronts
+Physical Dimension Settings and the Shipping Calculator
+Store Profile Settings
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+Localization Settings

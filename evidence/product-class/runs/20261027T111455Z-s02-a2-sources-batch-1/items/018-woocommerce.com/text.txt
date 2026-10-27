@@ -1,0 +1,218 @@
+___
+Skip to navigation
+Skip to content
+USD
+Change site currency USD selected
+Develop on Woo
+Hire an expert
+Get support
+Sell
+Click to show 12 more items
+Extensions
+Click to show 18 more items
+Resources
+Click to show 23 more items
+Enterprise ecommerce
+Log in
+Get started
+WooCommerce
+Getting started
+Migrating to WooCommerce
+Products
+Expand
+Taxes
+Shipping
+Expand
+Payments
+Orders
+Data and reporting
+Customers
+Marketing
+Site administration
+Expand
+Store design
+Expand
+Block themes
+Expand
+Customizing your store
+Classic themes
+Mobile App
+Expand
+Get help
+Expand
+Documentation / WooCommerce / Store design / WooCommerce store editing / Customizing the Cart and Checkout Pages / Checkout block / WooCommerce Blocks: Local Pickup
+WooCommerce Blocks: Local Pickup
+
+Local Pickup in Blocks is a new enhanced delivery method that allows you to easily offer one or more pickup locations to your customers. We’ve made it easier for you to setup local pickup options by providing a new, simple to use Local Pickup settings page.
+
+This new method provides a streamlined customer experience by:
+
+Not requiring a buyer to enter a shipping address to select a pickup location
+Allowing you to include directions and/or pickup instructions for one or more locations
+Calculating taxes based on the pickup location rather than the store address
+Delivering a clean, modern UI that allows a buyer to easily toggle between the shipping and delivery methods you offer
+Setup and configuration
+
+1. To enable and use Local Pickup, your checkout must be using the Checkout block. You can follow this guide to replace your old Checkout.
+
+2. Once that’s done, you can navigate to WooCommerce -> Settings -> Shipping, there, you will see the new Local Pickup tab.
+
+3. Enable local pickup by clicking the “Enable local pickup” checkbox.
+
+4. (Optional) You can rename the method name from Local pickup to anything else in the Title input.
+
+5. (Optional) Choose how much to charge for Local pickup by enabling the “Add a price for customers who choose local pickup” checkbox, this will show a cost and tax status inputs.
+
+Note: Since Local Pickup is not set within shipping zones, it will be available at checkout regardless of customer location. To restrict local pickup to only some shipping zones, use the legacy local pickup shipping method.
+
+Adding Locations
+
+In order for Local Pickup to show up at checkout, you must add at least one location.
+
+1. In the Local Pickup page, you can see the locations section below
+
+2. Click on “Add pickup location” to open the modal.
+
+3. A pickup location supports a name, a full address, and a dedicated details section. All of those fields are visible to the customer, who can use them to find the location. The address is also used to calculate taxes for the order if the customer chooses that location.
+
+4. After you’re done adding locations, click “Save changes”.
+
+Customizing the look of Local Pickup
+
+Once Local Pickup is enabled, the Checkout block includes three related inner blocks under Checkout Fields:
+
+Delivery — Lets customers choose between the Ship and Pickup options.
+Shipping Options — Displays available shipping methods and rates when the customer selects Ship.
+Pickup Method — Displays your configured pickup locations when the customer selects Pickup.
+
+These are sibling inner blocks rather than different names for one block. The Delivery selection determines whether customers see Shipping Options or Pickup Method.
+
+Select the Delivery block in the editor to preview and customize its Ship and Pickup choices. Customers use the same selector during checkout.
+
+All block titles and descriptions are customizable, as well as having some additional settings in the block settings sidebar to control the block’s appearance:
+
+Show icon – Toggling this option shows an icon of a delivery van on the “Ship” button, and an icon of a storefront on the “Pickup” button.
+Show costs – When this option is enabled, dynamic subtitles will display that change depending on the cheapest shipping option a customer can select. When all options in that method are free, then “FREE” will show on the button.
+
+The Pickup Method block supports adding text, separators, or images as inner blocks as well as adding a description and editing the title.
+
+(Optional) You can also edit the delivery option labels, “Ship” and “Pickup” to any wording you prefer by clicking them and typing.
+
+Difference from legacy local pickup
+
+Local pickup in the Checkout block is separate from the legacy local pickup method added to shipping zones. Enabling both can confuse customers. WooCommerce shows a notice on the Local pickup settings page when both methods are enabled.
+
+Local Pickup doesn’t require an address
+
+Unlike the shipping zones’ method, the new local pickup will always surface to customers even if they didn’t provide an address, and will not attempt to collect a shipping address.
+
+Local Pickup has a dedicated section
+
+Local pickup appears in the Pickup Method step of the Checkout block when a customer selects Pickup in the Delivery block. This provides more customization options and clearly separates pickup from shipped orders.
+
+Local Pickup supports location-based taxes
+
+The legacy local pickup bases taxes on the store address if selected (not customer address), the new one will base taxes on the selected location address, allowing better taxes reporting.
+
+Caveats
+
+As it stands right now, there are some limitations with the new Local Pickup feature:
+
+When Hide shipping costs until an address is entered is enabled, delivery costs remain hidden until the customer enters a complete address. The Pickup option and your pickup locations remain available before an address is entered, but WooCommerce does not select pickup automatically. The customer must choose Pickup and select a location.
+When you have multiple packages in Checkout, those packages would be visually combined into a single package for Pickup options, this is so that the same selection is made to all packages so that taxes for that order use the same address.
+When you have multiple packages in which one of them isn’t collectible (doesn’t support local pickup), Local Pickup will be disabled.
+Local Pickup is offered to all customers regardless of shipping zones or address. If you need to restrict local pickup to certain shipping zones, we recommend using the legacy local pickup method.
+Questions and support
+
+Do you still have questions and need assistance? 
+
+This documentation is about the free, core WooCommerce plugin, for which support is provided in our community forums on WordPress.org. By searching this forum, you’ll often find that your question has been asked and answered before.
+
+If you haven’t created a WordPress.org account to use the forums, here’s how.
+
+If you’re looking to extend the core functionality shown here, we recommend reviewing available extensions in the WooCommerce Marketplace.
+Need ongoing advanced support or a customization built for WooCommerce? Hire a Woo Agency Partner.
+Are you a developer building your own WooCommerce integration or extension? Check our Developer Resources.
+
+If you weren’t able to find the information you need, please use the feedback thumbs below to let us know.
+
+Was this guide helpful for you?
+ON THIS PAGE
+Setup and configuration
+Adding Locations
+Customizing the look of Local Pickup
+Difference from legacy local pickup
+Local Pickup doesn't require an address
+Local Pickup has a dedicated section
+Local Pickup supports location-based taxes
+Caveats
+Questions and support
+30-day money-back guarantee
+Support teams across the world
+Safe and secure online payments
+Sell
+WooCommerce
+WooCommerce pricing
+Payments
+No-code customization
+Marketing
+Checkout
+Shipping
+Mobile app
+Enterprise ecommerce
+Marketplace
+WooCommerce extensions
+WooCommerce themes
+New
+Essentials
+Collections
+Developed by Woo
+Build
+Woo for developers
+Developer resources
+Become a Woo agency
+Become a Marketplace partner
+Become an affiliate
+Resources
+Blog
+Documentation
+WooCommerce site examples
+Product updates
+Email newsletter
+Support
+Feature requests
+WooCommerce hosting
+Hire an agency
+Participate in customer research
+Accessibility
+Support forums
+Company
+About
+Press
+Download WooCommerce free
+Join the Woo community
+Woo trademark guidelines
+Brand and logo guidelines
+Do not sell or share my personal information
+WooCommerce Support Policy
+Refund Policy
+Contact us
+Follow us on Facebook
+Follow us on X
+Follow us on Instagram
+Follow us on LinkedIn
+USD
+Change site currency USD selected
+Terms of Service
+Privacy Policy
+Privacy Notice for California Users
+
+© WooCommerce, Inc. 2026
+
+AN
+AUTOMATTIC
+RUCKUS
+Use of your personal data
+We and our partners process your personal data (such as browsing data, IP Addresses, cookie information, and other unique identifiers) based on your consent and/or our legitimate interest to optimize our website, marketing activities, and your user experience.
+Customize
+Accept all

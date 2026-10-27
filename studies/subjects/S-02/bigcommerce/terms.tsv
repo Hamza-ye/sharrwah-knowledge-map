@@ -32,3 +32,7 @@ Transactional currency		When a currency is set as transactional, shoppers in ass
 default currency (of a storefront)			S02-BC-C147
 price list assignment (to a sales channel, customer group, or customer group on a sales channel)			S02-BC-C021
 International Enhancements for Multi-Storefront			S02-BC-C152;S02-BC-C154
+country (Get Store Information, GET /v2/store)		Country where the store is located (as defined during the store sign-up process).	S02-BC-C272
+infrastructure_region		The infrastructure region where the store is located.	S02-BC-C274
+Locale (store locale settings)		The basic locale settings for a store, used to give shopper information about languages, countries, etc.	S02-BC-C267
+Settlement Currency		The currency the merchant gets paid out to their bank account.	S02-BC-C285

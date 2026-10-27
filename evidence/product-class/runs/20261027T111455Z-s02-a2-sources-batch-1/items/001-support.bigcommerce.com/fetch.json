@@ -1,0 +1,18 @@
+{
+ "n": 1,
+ "url": "https://support.bigcommerce.com/s/article/Localization-Settings",
+ "dir": "items/001-support.bigcommerce.com",
+ "fetched_at": "2026-10-27T11:14:55Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://support.bigcommerce.com/s/article/Localization-Settings?language=en_US",
+ "content_type": "text/html;charset=UTF-8",
+ "bytes": 191523,
+ "cited_in": [
+  "S-02 BigCommerce gaps G04, G05, G08"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "60cba91082d4fbb388d35ada6046a171765d09376f45aa68d8c9a67995b8d289",
+ "raw_ext": "html"
+}

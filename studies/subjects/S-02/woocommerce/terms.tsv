@@ -42,3 +42,8 @@ customer billing country			S02-WC-C414
 guest checkout		Allow customers to check out without creating an account.	S02-WC-C435
 Accounts and Privacy			S02-WC-C433;S02-WC-C428
 additional checkout fields			S02-WC-C437;S02-WC-C438
+Available for POS		Controls whether this product appears in the Point of Sale system.	S02-WC-C450
+Show in Point of Sale			S02-WC-C447
+Channel Visibility			S02-WC-C451
+Store details		Details about the store that are shown in email receipts.	S02-WC-C475
+pickup location			S02-WC-C484;S02-WC-C486

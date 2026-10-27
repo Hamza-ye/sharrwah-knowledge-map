@@ -1,0 +1,197 @@
+Security Update: On October 23, PHP disclosed an additional vulnerability, CVE-2026-115560, affecting applications with a specific, uncommon configuration. Following our security team’s assessment, we have determined that Commerce systems are not impacted by this vulnerability. Commerce will continue to monitor developments and evaluate any additional guidance or security updates as they become available. Read the full update on the Security Trust Center.
+
+Close window.
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+Security Update: On October 23, PHP disclosed an additional vulnerability, CVE-2026-115560, affecting applications with a specific, uncommon configuration. Following our security team’s assessment, we have determined that Commerce systems are not impacted by this vulnerability. Commerce will continue to monitor developments and evaluate any additional guidance or security updates as they become available. Read the full update on the Security Trust Center.
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+GETTING STARTED
+PRODUCTS
+STORE SETUP
+B2B
+DESIGN AND CONTENT
+MANAGE STORE
+Mobile App
+Orders
+Troubleshooting Orders
+VIEWING ORDERS
+Order Statuses
+Order IDs
+Viewing Orders
+MANAGING ORDERS
+Backorders
+Draft Orders
+Manual Orders
+Editing Orders
+Invoices
+Requirements
+Default Preview
+Printing
+Printing in Bulk
+Customizing
+FAQ
+Importing and Exporting Orders
+Capturing Funds
+Order Actions
+Packing Slips
+Refunds
+Returns
+Shipments
+Shipping Labels
+ORDER NOTIFICATIONS
+Order Notifications
+Customer Order Notifications
+Customers
+BigCommerce For WordPress
+CHANNEL MANAGER
+MARKETING
+DATA SOLUTIONS
+ACCOUNT
+TD BANK
+Editing and Printing Invoices
+What We'll Cover
+Requirements
+Default email preview
+Printing a single invoice
+Printing invoices in bulk
+Customizing the invoice email
+FAQ
+
+Invoice emails are automatically sent to your customers when they complete checkout to confirm their order was successfully placed. However, you can also print a physical copy for your own records or to include in your shipments. BigCommerce uses a default template that you can customize to suit your needs.
+
+ 
+Requirements
+To view orders and print invoices, you must have the Manage Orders permission enabled on your user account.
+To view and edit store email templates, you must have the Read Channels and Store Design permissions enabled on your user account.
+ 
+Default Email Preview
+
+The default email sent to customers contains the following elements:
+
+Email title — a greeting message
+Order number — number assigned to to the order
+Shipping or pickup address — if a shipping method is selected, the Ship to address will display here. If a pickup location is selected, that address and pickup instructions will display instead.
+Product details — product image, name, price, and quantity. If applicable, product SKU, brand, selected options, pre-order information, and custom fields will also display here.
+Order details — order total, including any shipping costs, fees, and taxes. The selected payment method and shipping method are also listed.
+Billing address — the payee’s name and address. If order comments are enabled, they will display below this section.
+
+For information on making changes to the default template, see Customizing the invoice email.
+
+ 
+Printing a Single Invoice
+
+You can print the invoice of a single order in the control panel.
+
+Go to Orders › View and click the Action menu to the right of the order you want to print an invoice for, then select Print invoice.
+
+The invoice will open in a new tab and your browser’s print dialog box will appear. Adjust any desired settings, then print your invoice.
+
+ 
+Printing Invoices in Bulk
+
+It is also possible to print multiple order invoices at a time.
+
+Go to Orders › View and check the box to the left of all orders you want to print an invoice for.
+
+From the Choose an action drop-down menu, click Print invoices for selected, then click Confirm.
+
+The invoices will open in a new tab and your browser’s print dialog box will appear. Adjust any desired settings, then print your invoices.
+
+ 
+Customizing the Invoice Email
+
+The default template can be adjusted by going to Marketing › Transactional Emails.
+
+If you have more than one storefront, you can customize each storefront’s templates independently by selecting the desired storefront from the drop-down menu at the top of the page. If you want to customize all storefront templates or have a single-storefront store, leave the menu selection on Global (storefront defaults).
+
+Click the Action menu next to Order Email and select Edit Template from the drop-down menu.
+
+Under the Phrases tab, you can customize the text used in the template. This allows you to quickly update certain aspects of the template with little to no coding.
+
+Phrase names are identifiers placed into the template code (accessible in the Content section of the Code tab). These output a text string, the Phrase value, in the subject and body of the resulting email. Phrase names are not visible to shoppers.
+
+To make changes to an outputted string, edit the text in a Phrase value field, then click Save.
+
+Additional phrases can be added by clicking + Add new at the bottom of the page. Once created, the Phrase name would need to be added to the template’s Content on the Code tab.
+
+For more ways to add branding and personalization to your emails, see Customizing Emails.
+
+For more information on email templates, see our Dev Center articles Email Templates Overview and Email Object Reference.
+
+ 
+FAQ
+
+Can I change the subject line of the email?
+
+Yes, the subject line text can be customized. See Customizing the Invoice Email for details.
+
+Do I have to use the built-in email template?
+
+No. The invoice email can be turned off by clicking the Action menu to the right of the Order Email template and selecting Disable from the drop-down menu.
+
+If you do not have another invoicing solution already set up, the customer will not receive a notification after completing an order. The App Marketplace offers several solutions for invoice, abandoned cart, and order status emails.
+
+Can I display taxes, such as state and local, as individual line items in the invoice email?
+
+If you have more than one tax rate for a location, you can control how they display on invoice emails in your store’s Tax Settings.
+
+Is there a way to preview emails before they are sent to customers?
+
+To preview the email template, click the Action menu next to Order Email and select Edit Template from the drop-down menu, then click on the Preview tab.
+
+You can also receive an example invoice in your email inbox by clicking Send test email at the top left of the page. An email with example customer, product, and shipping details will be sent to the Administrator's email address.
+
+Additional Resources
+Customizing Emails
+Creating a Test Order
+Email Templates Overview (Dev Center)
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+Editing and Printing Invoices
