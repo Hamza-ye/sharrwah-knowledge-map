@@ -239,6 +239,7 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 | SH-1: the countries served; the store's data; a market; the buyer's address; and two leads | 4 | 4 | 2 | 107 | G06, G07 and G08, in place of G04, G03 and G05, whose pages it read | 180 | 53.5 |
 | BC-1: the store's own country (who sets, checks and changes it); documents and checks; payouts; taxes on the platform's fees; the store's data; the store's defaults; the store's taxes | 9 | 9 | 3 | 46 | G04 to G08, four of them on Help Center articles that rendered empty | 79 | 14.6 |
 | WC-3: products; discounts and offers; storefront design; contact information shown to buyers; locations; market selection | 10 | 10 | 10 | 55 | none | 98 | 18.9 |
+| BC-1b: the Help Center articles behind BC-1's gaps G04, G05, G07 and G08 | 5 | 5 | 2 | 45 | G09, G10 and G11, in place of G04, G07 and G08; G05 answered | 41 | 6.4 |
 
 **What WC-1 taught:**
 - **Our labels aren't the platform's words.** The brief said to search a kind's own name, and the part asked whether "who sells to the buyer" was one. The brief now says the kind's head word is searched, such as `domain` or `currency`, and our longer labels aren't.
@@ -286,4 +287,8 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 - **A slip of the coordinator's, again:** a message to an agent named the new run from memory, and was corrected in the next message. Run names, like commits, are named only from the file system.
 - **The correction of S02-ZD-179 and S02-ZD-180:** the coordinator added a dated note to each, and listed them in `b/second-pass.md` as statements the second pass notes and doesn't place. ZD-4 redoes the audit of S02-ZD-G03 from the page as shown. The coordinator made the change while ZD-3 was appending to the same file; ZD-3's rows came through whole, but a platform's files are changed only between its parts.
 - **Runs without a README.** BC-1b found that its capture run had none, though `method/capture/README.md` asks every run for one, saying where it was fetched from and when. 37 of the 43 runs had none, all made in cloud sessions since 10 October. The coordinator wrote each one from the run's own files, marked as written afterwards, and changed nothing else in the runs. Each says whether its render fetched requests outside the browser.
+
+**What BC-1b taught:**
+- **Reading what the tool had failed closed gaps cheaply:** six gaps for 6.4 million. The articles answer who may change the store's country (the Manage Settings permission, and a channel's Edit Channels, which only the store owner grants) and the default language a new store takes from its country.
+- **Two sources can disagree, and both stand.** The Help Center says a store's default country can be set "separately per channel" (S02-BC-256). The API says `store_country` "cannot be modified with channel-specific overrides" (S02-BC-100). Phase C weighs the two; neither is dropped.
 
