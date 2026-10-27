@@ -305,8 +305,6 @@ for plat, code in PLATFORMS.items():
             err(f, cid, f"access_path '{c['access_path']}' is not one of {sorted(ACCESS)}")
         if re.match(r"^(observed-sh|observed-sa)(?!@[0-9a-f]{7,40}:)", src):
             err(f, cid, "a local source names its repository at a commit")
-        if "..." in c["quote"] or "…" in c["quote"]:
-            err(f, cid, "quote contains an ellipsis")
         if len(c["quote"]) > 300:
             err(f, cid, f"quote is {len(c['quote'])} characters; the brief allows 300", "warning")
         for col in ("locator", "source_date", "date_basis", "accessed"):
@@ -317,6 +315,8 @@ for plat, code in PLATFORMS.items():
         if re.match(r"^https?://", src):
             urls[src.split("#")[0]].add(cid)
         res, why, share = SRC.check_quote(c["quote"], src, c["locator"]) if c["quote"] and src else ("unresolved", "no quote or source", "")
+        if ("..." in c["quote"] or "…" in c["quote"]) and not res.startswith("found"):
+            err(f, cid, "quote contains an ellipsis that its source doesn't hold: a quote leaves nothing out")
         if not res.startswith("found"):
             err(f, cid, f"quote {res}{'; ' + why if why else ''}",
                 "pending capture" if res == "unresolved" and re.match(r"^https?://", src) else "error")

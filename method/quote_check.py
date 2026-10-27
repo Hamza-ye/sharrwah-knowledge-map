@@ -6,8 +6,11 @@
 #
 # Usage as a command, to test a statement or a quote before writing it:
 #   python3 -I method/quote_check.py SOURCE LOCATOR TEXT [CAPTURE_RUN ...]
+#   python3 -I method/quote_check.py --batch FILE [CAPTURE_RUN ...]
 # SOURCE and LOCATOR as a citation gives them (LOCATOR matters only for a fetch archive: its record's offset).
 # Prints "found", "found (<how>)" or "not found", with the share of the text's six-word runs the source holds.
+# --batch reads FILE's lines, each SOURCE<tab>LOCATOR<tab>TEXT, and tests them all in one process, reading each
+# source once: much faster for several quotes from one large file.
 import csv, html, io, json, os, re, subprocess, sys, unicodedata
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
@@ -204,12 +207,24 @@ class Sources:
 
 
 if __name__ == "__main__":
-    if len(sys.argv) < 4:
-        sys.exit("usage: quote_check.py SOURCE LOCATOR TEXT [CAPTURE_RUN ...]")
+    if len(sys.argv) < 4 and not (len(sys.argv) >= 3 and sys.argv[1] == "--batch"):
+        sys.exit("usage: quote_check.py SOURCE LOCATOR TEXT [CAPTURE_RUN ...]; or --batch FILE [CAPTURE_RUN ...]")
     here = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     roots = {"observed-sh": os.environ.get("OBSERVED_SH", "/home/user/observed-sh"),
              "observed-sa": os.environ.get("OBSERVED_SA", "/home/user/observed-sa"),
              "woocommerce-11.2.1": os.environ.get("WOO_RELEASE", "/home/user/woocommerce-release/11.2.1/woocommerce"),
              "sharrwah-knowledge-map": here}
-    res, why, share = Sources(roots, sys.argv[4:]).check_quote(sys.argv[3], sys.argv[1], sys.argv[2])
-    print(res + (f"; {why}" if why else "") + (f"; {share} of its six-word runs are in the source" if share else ""))
+    def show(res, why, share):
+        return res + (f"; {why}" if why else "") + (f"; {share} of its six-word runs are in the source" if share else "")
+    if sys.argv[1] == "--batch":
+        S = Sources(roots, sys.argv[3:])
+        for n, line in enumerate(open(sys.argv[2], encoding="utf-8"), start=1):
+            if not line.strip():
+                continue
+            parts = line.rstrip("\n").split("\t")
+            if len(parts) != 3:
+                print(f"{n}\tline has {len(parts)} fields, not 3 (SOURCE, LOCATOR, TEXT)")
+                continue
+            print(f"{n}\t" + show(*S.check_quote(parts[2], parts[0], parts[1])))
+    else:
+        print(show(*Sources(roots, sys.argv[4:]).check_quote(sys.argv[3], sys.argv[1], sys.argv[2])))

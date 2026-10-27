@@ -31,3 +31,23 @@
 - **Phases B and C and the review run per root decision,** three agents each, each reading only the statements its decision's bullets hold.
 - **Agents look up rows in large files with scripts,** instead of loading them whole.
 - **The budget is 700 million tokens** for S-02 (the founder, 27 October), and it never costs evidence.
+
+## 3. Phase A finished by fresh agents (27 October)
+
+**What it produced:**
+- **Salla:** 310 statements, 585 citations; no checker error.
+- **Shopify part 1:** 85 new observed statements, from seven runs, the admin's route ledger and controls, and six more stores' general settings. That makes 404 statements and 880 citations, with no checker error.
+
+**What it cost:** Salla's finisher 8.0 million (65 requests). Shopify's part 1, 59.8 million (237 requests).
+
+**What it taught:**
+- **A fresh agent with a short task costs far less per request:** Salla's finisher about 0.12 million, against 0.43 million before.
+- **A long run still grows its context,** even from a fresh start, because every tool output stays in it. Shopify's part 1 ran 237 requests at about 0.25 million each. So the parts must be small, with no more than a few hundred tool calls each.
+- **A container restart stopped two agents.** Both had written as they went, so nothing was lost, and both were resumed from their transcripts.
+- **Agents shared one scratch folder,** and one overwrote another's script. That one had already finished. Each agent now gets its own folder (phase A brief, rule 12).
+- **The quote tester read a large file again for each quote,** nine seconds a call on Shopify's 8.8 MB admin controls. It now tests a batch in one process (`method/quote_check.py --batch`).
+- **"No ellipses" turned away the platform's own text,** such as a field's "Search countries…". An ellipsis is now refused only where its source doesn't hold it (`method/check_subject.py`). The pilot's check is unchanged.
+
+**What changed for the next runs:**
+- Shopify's remaining reading is split in two parts: the observed runs not yet read, then the plan tables, the leads and the gaps' re-check.
+- Each agent writes only in its own scratch folder.

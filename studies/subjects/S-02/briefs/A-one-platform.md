@@ -68,7 +68,7 @@ Record every other bullet, or part of one, that your platform doesn't state as a
 - To find whether a page is held: `python3 -I method/held_index.py <url>`.
 - To read a record held in a fetch archive: `python3 -I method/warc_text.py <repository root> <location> --text`.
 - To search a platform's held text: `python3 -I method/corpus_search.py <platform> <terms>`. A term in Latin letters matches whole words, so give a plural as its own term ("market" and "markets"); an Arabic term matches inside words. A Shopify search takes one to three minutes and can return thousands of documents: run it with a 10-minute timeout or in the background, and narrow it with `--with` or `--only`. Snippets are folded for matching: never quote one; quote the document.
-- To test a statement or a quote before you write it: `python3 -I method/quote_check.py <source> <locator> "<text>" $(ls -d evidence/product-class/runs/*)`, from the repository's root. It prints `found` or `not found`, as the checker will.
+- To test a statement or a quote before you write it: `python3 -I method/quote_check.py <source> <locator> "<text>" $(ls -d evidence/product-class/runs/*)`, from the repository's root. It prints `found` or `not found`, as the checker will. For several quotes, `--batch FILE` (each line: source, locator and text, tab-separated) tests them all in one process and reads each source once.
 - To read a GraphQL type in full (shopify): `python3 -I method/schema_type.py /home/user/observed-sh/structures/shopify/admin-graphql-schema/2026-10 <Type> [<Type> ...]`, or `--search <words>` to find types. It prints the `source` and the `locator` (the record's offset) that a quote from it takes. Put the type's name in the locator after the offset, such as `1029798 (type Market)`. It prints each field's or value's name with its description below it, as the schema holds them, so "<name> <description>" can be quoted; lines in square brackets are the tool's own, never quote them.
 
 **Reading a live page.** Read it as the Q1 runs did: a `.md` endpoint, the raw file, or the rendered page through `method/capture/page_text.mjs`. A summary returned by a fetching tool is not the page. Don't get around logins, paywalls or bot challenges.
@@ -129,12 +129,13 @@ Record every other bullet, or part of one, that your platform doesn't state as a
    - Before you give a gap `founder` or `either`, run `method/held_index.py` on each address in its route. If the page is held and readable, read it instead.
 10. **Credentials.** Evidence that contains credentials, cookies or tokens is read and cited like any other evidence. Never skip, withhold or mask a file because of them. They come from synthetic environments the founder rotates.
 11. **No inference, anywhere.** Notes record what was read, what couldn't be read, and problems. They never record inference.
-12. **Write as you go.** Write each statement, citation, term, absence and gap to your files as soon as it is checked, never holding work in memory or in scratch files. Log each document in `notes.md` as you finish reading it. If you are stopped, your files must hold everything done so far, and the next run continues from them.
-13. **Stop and report** past 300 statements, listing in `notes.md` the starting points not yet read. If the coordinator resumes you after that, carry on with them: the stop doesn't apply again.
+12. **Your own scratch folder.** Write scripts and temporary files only in the scratch folder the message that started you names, never in another agent's.
+13. **Write as you go.** Write each statement, citation, term, absence and gap to your files as soon as it is checked, never holding work in memory or in scratch files. Log each document in `notes.md` as you finish reading it. If you are stopped, your files must hold everything done so far, and the next run continues from them.
+14. **Stop and report** past 300 statements, listing in `notes.md` the starting points not yet read. If the coordinator resumes you after that, carry on with them: the stop doesn't apply again.
 
 ## Quotes and citations
 
-- **New quotes are verbatim,** at most 300 characters, with no ellipses, and within one paragraph of the source. Arabic stays as written. The checker collapses whitespace, removes HTML tags and decodes entities, on both sides. Copied quotes stay as they are (rule 5).
+- **New quotes are verbatim,** at most 300 characters, and within one paragraph of the source. A quote leaves nothing out: an ellipsis appears only where the source itself holds one, such as a field's "Search countries…". Arabic stays as written. The checker collapses whitespace, removes HTML tags and decodes entities, on both sides. Copied quotes stay as they are (rule 5).
 - **A local source** is `<repository>@<commit>:<path>`.
   - Copied citations keep their own commit. New ones use the full commits in the table, or `woocommerce-11.2.1:<path>`.
   - A record in a fetch archive is cited by its archive path, with the offset as the locator.
