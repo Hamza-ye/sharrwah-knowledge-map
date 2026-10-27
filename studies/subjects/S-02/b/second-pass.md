@@ -8,3 +8,4 @@
 | RD1-3, (c) | S02-SH-267, S02-SH-441 to S02-SH-446, S02-SH-448, S02-SH-465 | Rule 2: a flag or key fails the role test only if its words, identifier and scope don't say whose country |
 | RD3-1, (f) | S02-SH-093, S02-SH-156 to S02-SH-159, S02-SH-213, S02-SH-214, S02-SH-294, S02-SH-380 | Rule 4: a staff permission or role that gates a setting is its own answer under `who sets` |
 | RD3-1, (f) | S02-SH-210, S02-SH-242, S02-SH-244, S02-SH-571 | Rule 4: an answer may be that no one can, in the statement's words |
+| RD3-4, (g) | S02-WC-017, S02-WC-087, S02-WC-175 to S02-WC-179 | Rule 4: a (g) statement that also names who sets its setting answers the setting's `who sets` point too |

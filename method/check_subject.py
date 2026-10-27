@@ -503,7 +503,9 @@ if var is not None:
                                            "store names 'the whole store' in basis_evidence")
             elif any(BULLET_RD.values()) and sids and all(
                     stmts.get(x, {}).get("bullets", set()) & NOPART and not stmts[x]["bullets"] & ASK
-                    for x in sids if x in stmts) and "no market" not in r["basis_evidence"]:
+                    for x in sids if x in stmts) and "no market" not in r["basis_evidence"] \
+                    and not re.match(r"(?i)^who\b", vp.get(r["vp_id"], {}).get("question", "")):
+                # a no-part statement that names who sets a whole-store setting answers that setting's "who" point
                 # S-02's brief: an answer resting only on a no-part statement either says the platform has no market
                 # of the kind asked about ("no market"), or that a setting holds for the whole store, under a "takes
                 # its value per" point

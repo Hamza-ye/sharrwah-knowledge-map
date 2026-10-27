@@ -147,8 +147,9 @@ Statements under (h) are conditions, not variants: a variant rests on at least o
      - A staff permission or role that the statement says gates it, or the account's owner, is its own answer, beside the seller's.
      - A party that requires a value without setting it, such as a regulator, isn't who sets it.
      - An answer may be that no one can, in the statement's words, such as "it cannot be changed later".
+     - In a platform's code, a value or default the code sets is the platform's. A filter or hook alone names no party. A party the code's words name, such as developers, is its own answer.
    - **(g).**
-     - **A statement that a setting holds for the whole store** is the platform's answer under each of RD3's `what "X" takes its value per` points it applies to. Its `variant` is an excerpt of it, and its `basis_evidence` names `the whole store`. Where no such point's X is of its setting's kind, it raises one.
+     - **A statement that a setting holds for the whole store** is the platform's answer under each of RD3's `what "X" takes its value per` points it applies to. Its `variant` is an excerpt of it, and its `basis_evidence` names `the whole store`. Where no such point's X is of its setting's kind, it raises one. Where it also names who sets that setting, it answers the setting's `who sets "X"` point too.
      - **A statement that the platform has no market of the kind in (e)** is its answer under each of RD2's points it applies to. Its `variant` is an excerpt of it, and its `basis_evidence` names `no market`. Where no RD2 point exists yet, it raises `what defines "X"`, with X the platform's words for the market it lacks.
      - **Basis.** Either takes the basis `answers` alone.
      - **The other half.** A statement under (g) in your root decision's slice that holds the other decision's half is noted, as rule 2 says.
