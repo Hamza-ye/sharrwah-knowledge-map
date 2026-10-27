@@ -47,3 +47,5 @@ Show in Point of Sale			S02-WC-C447
 Channel Visibility			S02-WC-C451
 Store details		Details about the store that are shown in email receipts.	S02-WC-C475
 pickup location			S02-WC-C484;S02-WC-C486
+base_location_country			S02-WC-C518;S02-WC-C522
+consent mode		Consent mode facilitates the communication of visitors’ cookie consent preferences to Google tags.	S02-WC-C509
