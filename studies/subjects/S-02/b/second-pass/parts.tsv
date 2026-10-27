@@ -1,5 +1,5 @@
 part	root_decision	bullets	platforms	tasks	count	effective	status
-RD1-S1	RD1	a; b; d	shopify; salla; zid; woocommerce; bigcommerce	every task under (a), (b) and (d)	158	198	planned
+RD1-S1	RD1	a; b; d	shopify; salla; zid; woocommerce; bigcommerce	every task under (a), (b) and (d)	158	198	running
 RD1-S2	RD1	c	shopify; salla	every task under (c) for Shopify and Salla	83	138	done
 RD1-S3	RD1	c	zid; woocommerce; bigcommerce	every task under (c) for Zid, WooCommerce and BigCommerce	106	168	planned
 RD2-S1	RD2	e; g	shopify; salla; zid; woocommerce; bigcommerce	every task	210	217	planned
