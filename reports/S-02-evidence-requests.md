@@ -4,7 +4,7 @@
 
 **Nothing here blocks the work.** Phase B's second pass and phase C go on. A question still open for a platform is marked as not stated for that platform. An answer that comes later is added, and the rows it touches are checked again.
 
-**Where the evidence stands.** Gap-closing read every page the agents could find on S-02's questions and added 1,158 statements. 49 questions remain that nothing read answers. Each is a *gap*, kept in the platform's `gaps.tsv` with the work that would close it:
+**Where the evidence stands.** Gap-closing read the pages its agents could find on S-02's open questions, and added 1,165 statements. 49 questions remain that nothing read answers. Each is a *gap*, kept in the platform's `gaps.tsv` with the work that would close it:
 - **15 can be captured by your local agent:** 5 on Shopify and 10 on Salla. They are in the capture requests ([`handoffs/`](../handoffs/README.md)).
 - **34 need you:** 21 on Zid, 7 on BigCommerce, 5 on WooCommerce and 1 on Salla. Your local agent's repositories hold only Shopify and Salla, so these need a store on the platform, or a question to it.
 
