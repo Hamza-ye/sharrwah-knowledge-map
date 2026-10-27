@@ -36,3 +36,11 @@ country (Get Store Information, GET /v2/store)		Country where the store is locat
 infrastructure_region		The infrastructure region where the store is located.	S02-BC-C274
 Locale (store locale settings)		The basic locale settings for a store, used to give shopper information about languages, countries, etc.	S02-BC-C267
 Settlement Currency		The currency the merchant gets paid out to their bank account.	S02-BC-C285
+default country (Settings › Localization; Settings › Store profile › Locale)		The country your store is run from, which determines the payment methods that are available for use with your store.	S02-BC-C336
+Locale settings (Settings › Store profile)		The Locale settings determine your store's country and customer-facing language.	S02-BC-C335
+Localization settings (Settings › Localization)		Localization settings control your store’s default country, the languages that customers see on your storefront, how weights and dimensions are measured, and how dates and times are shown.	S02-BC-C320
+country where your store is located (locale information)			S02-BC-C332
+hosting region (the region your store should be hosted)			S02-BC-C345;S02-BC-C346
+standard formats (Set standard formats for [country])			S02-BC-C363;S02-BC-C364
+region (your store’s plan and region)			S02-BC-C353
+Issuing Country (of the VAT number)			S02-BC-C352
