@@ -313,4 +313,6 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 
   On Zid's files, exactly five quotes come up for review: S02-ZD-C313 and C314, the Saudi Terms in zid.eg's source, and three FAQ answers held in pages' data, shown on a click.
 - **Some answers show only on a click.** The Syria page's FAQ answers after the first, and the payments pages' answers, are in neither the rendered text nor the source: the render doesn't click. They wait on a capture that opens them.
+- **Opening what a click shows.** The capture tools now open each closed part of a page in turn (`CAPTURE_EXPAND=1`) and keep the lines that appear in `expanded.txt`; opening them all at once failed, since an FAQ closes one answer as it opens the next. Captured so, zid.sa's Syria page shows all ten of its FAQ answers, among them that no commercial registration is needed to open a store, and zid.sa has no Bahrain or Qatar page. ZD-5 reads what these pages add.
+- **The coordinator's ruling on S02-ZD-C008 and C086:** their quotes keep the page data's punctuation (`","answer":"`), so the checker lists them for review. Their answers, "Currently in Saudi Arabia and Kuwait." and "K-Net, Apple Pay, Visa, American Express.", are shown on a click (run `20261027T121854Z-s02-a2-sources-batch-3`, item 023, `expanded.txt`), so the statements stand.
 
