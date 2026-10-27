@@ -220,8 +220,10 @@ if __name__ == "__main__":
         texts, why = (S.web_texts(src) if re.match(r"^https?://", src) else S.local_texts(src, loc))
         if texts is None:
             sys.exit(f"not readable: {why}")
-        raw = texts[0]
-        txt = html_text(raw) if re.search(r"(?i)<(html|body|div|p|span)\b", raw) else raw
+        # a capture may hold several files (raw, rendered, text): print the one with the most text, so that a
+        # page's "Loading" shell gives way to its rendered text
+        cands = [html_text(t) if re.search(r"(?i)<(html|body|div|p|span)\b", t) else t for t in texts]
+        txt = max(cands, key=lambda t: len(re.sub(r"\s+", "", t)))
         print(re.sub(r"[ \t]+", " ", re.sub(r"\n\s*\n+", "\n", txt)).strip())
         sys.exit(0)
     if len(sys.argv) < 4 and not (len(sys.argv) >= 3 and sys.argv[1] == "--batch"):

@@ -1,0 +1,6 @@
+platform	kind	absence_id	bullet	what_is_absent
+zid	stated	S02-ZD-N01	c	Zid Pay (زد باي, مدفوعات زد) for a store in the UAE, Oman, Bahrain, Qatar, Egypt or Syria: the payments page gives Saudi Arabia and Kuwait only
+zid	stated	S02-ZD-N02	c	Zid Financing (تمويل زد) for a store outside Saudi Arabia
+zid	stated	S02-ZD-N03	c	Wallet deduction from Zid Pay (الاستقطاع للمحفظة) for a store outside Saudi Arabia and Kuwait
+zid	stated	S02-ZD-N04	d	Any country outside Saudi Arabia and the Gulf (دول الخليج) among the countries the FAQ says Zid serves merchants in, such as Egypt and Syria, which the site index's country pages name (S02-ZD-006)
+bigcommerce	stated	S02-BC-N02	a	A store country among the store settings whose change triggers the store/information/updated webhook (the list holds Store Address, Language and Default Currency, and no country)

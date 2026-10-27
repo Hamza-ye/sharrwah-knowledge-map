@@ -1,0 +1,195 @@
+platform	term	translation	definition
+shopify	market	السوق	A market is a set of customers that you define in your store.
+shopify	Markets	الأسواق	
+shopify	Conditions	الشروط	Conditions define who your market applies to.
+shopify	Customizations	التخصيصات	Customizations define your store experience for the customers in that market, such as available products, pricing, and theme customizations.
+shopify	Country or region markets	أسواق البلدان أو المناطق	Country or region markets are displayed to customers based on their geographic location.
+shopify	Cross-border markets	الأسواق عبر الحدود	
+shopify	Single-country markets	أسواق البلد الواحد	Single-country markets contain one country or region.
+shopify	Multi-country markets	أسواق متعددة البلدان	Multi-country markets contain more than one country or region.
+shopify	Sub-region markets	أسواق المناطق الفرعية	A sub-region market targets a specific state or province, instead of a whole country.
+shopify	Retail markets	أسواق البيع بالتجزئة	Retail markets use POS locations as their condition.
+shopify	B2B markets	أسواق B2B	B2B markets let you create customized experiences specific to the wholesale company locations you sell to.
+shopify	Channel markets	أسواق القنوات	Channel markets use sales channels as their condition.
+shopify	submarket	السوق الفرعية	A submarket is a market that exists within another market.
+shopify	catalog	الكتالوج	A catalog is a set of products with optional custom pricing that you assign to a market.
+shopify	backup region	المنطقة الاحتياطية	This backup region isn't a market. Instead, it's a setting that points to a country within one of your active markets.
+shopify	home country	البلد الأم	
+shopify	Domestic market	السوق المحلية	Your store's home country or region, as determined by your store's address and currency.
+shopify	International market	السوق الدولية	A curated list of countries or regions where merchants similar to you also sell.
+shopify	primary market	السوق الرئيسية	Your primary market is the main country or region that you sell to.
+shopify	store country	بلد متجرك	
+shopify	store address	عنوان المتجر	Your store address is the physical or customer-facing address of your business.
+shopify	billing address	عنوان الفوترة	Your billing address is the registered address that you pay Shopify from, and it's the address displayed on your Shopify bills.
+shopify	business entity	الكيان التجاري	A business entity is the legal entity that processes payments for orders in a market.
+shopify	Designated Country		
+shopify	merchant of record	التاجر المسجل	A merchant of record is the legal entity responsible for selling products to a customer, and for adhering to local laws and regulations in another region or country.
+shopify	Managed Markets	Managed Markets	
+shopify	domain and language customization	تخصيص النطاق واللغة	A domain and language customization is a combination of a URL structure and a language for a specific market.
+shopify	Local currencies	العملات المحلية	
+shopify	shipping option	خيار الشحن	A shipping option is a delivery choice that a customer can select at checkout, such as Standard or Express, and each option contains rates that can vary by product and location.
+shopify	store location		
+shopify	primary country		
+shopify	I'm located in:		
+shopify	Market (GraphQL Admin API object)		A merchant-defined group of buyers identified by conditions such as their region, retail location, or company location.
+shopify	Store default		
+shopify	legal entity		
+shopify	Country code		
+shopify	jurisdiction		
+shopify	Rest of World		By default, this market is called Rest of World and includes all regions that are eligible for Managed Markets, but you can change your market name and remove countries and regions from the list of included regions.
+shopify	B2B All		A B2B All market is automatically created that includes all your existing companies and locations.
+shopify	shop country	بلد متجرك	
+salla	الأسواق المتعددة	Multiple markets	ميزة الأسواق المتعددة تمكنك من إنشاء نسخ مخصصة من متجرك الإلكتروني لكل دولة تستهدفها أو منطقة أو مدينة، بما يضمن ظهور المتجر للعملاء في هذه المنطقة بتجربة تتوافق مع توقعاتهم المحلية.
+salla	المعلومات الأساسية حول السوق	Basic information about the market	
+salla	العملات	Currencies	
+salla	الفروع والمستودعات	Branches and warehouses	
+salla	الشحن	Shipping	
+salla	معلومات التواصل	Contact information	
+salla	الدومين	Domain	
+salla	خيارات الدخول والتسجيل	Login and registration options	
+salla	تصميم المتجر	Store design	
+salla	دومين فرعي	subdomain	
+salla	تفعيل السوق	Activate market	
+salla	السوق الافتراضي	Default market	
+salla	السوق	Market	السوق هو الدولة أو المنطقة التي تستهدف البيع إليها، وسيُستخدم هذا السجل الضريبي تلقائياً عند البيع فيها.
+salla	اختيار السوق	Market selection	حدِّد كيف يمكن للعميل اختيار السوق عند زيارته الأولى.
+salla	تقييد الشراء حسب السوق	Restrict purchases by market	احصر تجربة الشراء على السوق المطابق لدولة العميل، وقيِّد إتمام الطلب لعناوين التوصيل خارج نطاق هذا السوق.
+salla	تفعيل الضريبة حسب دولة السوق	Tax by market country	ستُفعَّل الضريبة حسب الدولة المحددة في السوق، ويشترط أن يكون لكل سوق دولة واحدة فقط.
+salla	تسعير المنتجات	Product pricing	اختر الطريقة الأنسب لتسعير منتجاتك في كل سوق.
+salla	سعر مُخصَّص لكل سوق	Custom price per market	حدِّد سعر المنتج لكل سوق يدويًا في صفحة المنتج، دون ربطه بتحويل العملة أو تغيُّر الصرف.
+salla	تسعير تلقائي حسب سعر الصرف	Automatic pricing by exchange rate	سيُضبط سعر المنتجات تلقائيًا حسب سعر الصرف الحالي.
+salla	إعدادات المتجر (جميع الأسواق)	Store defaults (all markets)	
+salla	مفعّل في أسواق مختارة	Enable in selected markets	يمكنك اختيار الأسواق التي تود إتاحة خيار الإهداء فيها.
+salla	الأسواق المتاحة في التطبيق	Store app markets	حدِّد الأسواق المتاحة للعملاء في تطبيق المتجر.
+salla	ضبط إعادة التوجيه	Domain redirection	أعِد توجيه العميل تلقائيًا إلى الدومين الأساسي عند تعذُّر التصفح عبر الدومين الفرعي لضمان استمرارية التصفح.
+salla	تقييد التنقل بين الأسواق	Restrict market switching	حدِّد السوق تلقائيًا بناءً على عنوان (IP) الخاص بالعميل، دون إتاحة خيار التغيير أو التنقل بين الأسواق.
+salla	اسم السوق	Market name	
+salla	إعدادات الأسواق المتعددة	Multi-market settings	
+salla	الأسواق المتعددة	Markets	
+salla	الأسواق المتعددة	Multi-market	
+salla	دولة المتجر	store country	حدد من أي دولة تسجل متجرك، لأن ذلك يحدد الوثائق الحكومية لتهيئة متجرك وفق أنظمتها.
+salla	store scopes		This endpoint allows you to list store scopes for multi-country functionality.
+salla	multi-countries		
+salla	الدولة التي تبيع فيها	Country of operation	
+salla	مقر المتجر		
+salla	موقع المتجر		
+salla	سوق سلة بوينت		
+zid	الأسواق (خاصية الأسواق)		تتيح خاصية الأسواق للتاجر إدارة أسعار المنتجات وتوفّرها حسب كل سوق جغرافي بشكل مستقل.
+zid	سوق جغرافي		
+zid	السوق الافتراضي		السوق الافتراضي وهو السوق المحلي بشكل تلقائي
+zid	السوق المحلي		
+zid	السوق الرئيسي		
+zid	عملة السوق		حدّد العملة التي سيتم اعتمادها لعرض أسعار المنتجات داخل هذا السوق.
+zid	الدول المرتبطة بالسوق		
+zid	اسم السوق		أدخل اسم السوق لتمييزه داخلياً
+zid	سوق مخفي		
+zid	العملة الأساسية (العملة الأساسية للمتجر)		العملة الأساسية هي العملة التي تم إدخال أسعار المنتجات باستخدامها
+zid	العملة الرئيسية للمتجر		
+zid	عملة دولتك		
+zid	عملة دولة		
+zid	اللغات والعملات		
+zid	ضبط العملات على الموقع الجغرافي	Geo-Based Currency Settings	ضبط العملات تلقائياً حسب موقع العميل لتجربة شراء سلسة ومحترفة.
+zid	store currency		
+zid	order currency		
+zid	دولته (في إعدادات المتجر)		
+zid	عملة التاجر المحلية; العملة المحلية		
+zid	موقعك أو موقع المخزون		
+zid	العنوان (الدولة-المدينة-الحي-الشارع)		
+zid	مستخدمي دول الخليج		
+zid	Store Operating Countries (countries where the store operates)		Retrieve a list of countries where the store operates. This list includes the country's unique ID, name, ISO codes, and flag image URL.
+zid	merchant's activated countries		
+zid	Countries and Cities		
+zid	زد مصر	Zid Egypt	
+zid	مواقع المخزون	inventory locations	
+zid	short_address		A standardized location code used in Saudi Arabia for delivery and logistics purposes.
+zid	بيانات المتجر		بيانات المتجر تشمل كل ما يخص معلومات النشاط التجاري ، اسم المتجر الظاهر للعميل،و حسابات وسائل التواصل الاجتماعي و العنوان التجاري و تفاصيل النشاط الرسمية.
+zid	العنوان التجاري		
+zid	العنوان الوطني (سُبل SPL)		
+zid	دولتك (حسب دولتك)		
+zid	موقع البيع (من وين تبيع ؟)		
+zid	المركز السعودي للأعمال (توثيق منصة المركز السعودي للأعمال)		
+zid	تحديد الدول الخاضعة للضرائب	Tax-Applicable Countries	حدد بدقة الدول اللي تطبق عليها الضرائب لتحكم دقيق بالتكاليف وامتثال قانوني.
+zid	الدول المفعل فيها الضريبة; الدولة المطبق عليها الضريبة		
+zid	إعدادات الفواتير والضرائب	Invoice & Tax Settings	خصص إعدادات الفواتير والضريبة المضافة (VAT) لتتوافق مع متطلبات بلدك.
+zid	موقع العميل		
+zid	منطقة (لكل منتج أو منطقة)		
+zid	شحن دولي; الشحن الدولي	International Shipping	
+zid	الشحن المحلي		
+zid	Zid Syria		
+zid	تخصيص العنوان حسب الدولة		
+zid	عنوان العميل (عناوين العملاء)		
+zid	الاسواق المتوفرة (عن قنوات البيع)		
+zid	قنوات البيع (تطبيق قنوات البيع)		تطبيق قنوات البيع هو تطبيق يجمع لك منصات البيع ويوفر لك فرصة التوسع في مبيعاتك وبيع منتجاتك عبر مجموعة متنوعة من منصات التسوق العالمية
+zid	منصات البيع		
+zid	business_location		
+zid	markets_management.active_markets		
+zid	قنوات البيع (المتجر الإلكتروني; زد كاشير)		
+zid	مدينة العميل (عرض المنتجات حسب المدينة)		
+zid	الدولة التي تستخدم منها الخدمة	the country from which you use the Service	
+zid	تخصيص الثيم لكل سوق		
+zid	سعر مخصص لكل سوق وقناة		
+zid	التجار خارج المملكة (للتجار خارج المملكة العربية السعودية)		
+zid	إعدادات المتجر	store settings	
+woocommerce	Store Address		This is where your business is located. Tax rates and shipping rates will use this address.
+woocommerce	Store address		This is where you set your business’s physical address — the location where you are based as a seller.
+woocommerce	Country / State		The country and state or province, if any, in which your business is located.
+woocommerce	base country		
+woocommerce	store country		The store country comes from WooCommerce > Settings > General > Store Address.
+woocommerce	primary tax location		For a United States store, WooCommerce Tax treats the store address as the primary tax location.
+woocommerce	Business location		
+woocommerce	Country where your business is based		
+woocommerce	account country		If you’re using WooPayments for a business, the relevant country is the one where your business is registered, not the one in which you personally live.
+woocommerce	Stripe Account Country		
+woocommerce	supported countries		
+woocommerce	Designated Countries		We use the term “Designated Countries” to refer to Australia, Canada, Japan, Mexico, New Zealand, Russia, and all countries located in Europe.
+woocommerce	Selling location(s)		This option lets you limit which countries you are willing to sell to.
+woocommerce	Shipping location(s)		Choose which countries you want to ship to, or choose to ship to all locations you sell to.
+woocommerce	Sell to specific countries		
+woocommerce	Shipping zones		A shipping zone is a geographic region where a certain set of shipping methods and rates apply.
+woocommerce	Default customer location		Choose how to determine a customer’s default location. This is used help calculate default tax and shipping rates.
+woocommerce	Shop country/region		This tells the system to assume customers are in the same location as your shop.
+woocommerce	Country / Region		
+woocommerce	address formats		These define how addresses are formatted for display in various countries.
+woocommerce	country locale settings		These locales override the default country selections after a country is chosen.
+woocommerce	states		
+woocommerce	Locales information		
+woocommerce	VAT		
+woocommerce	postcode-validation-rules		
+woocommerce	customer currency		
+woocommerce	local currency		
+woocommerce	Enabled currencies		
+woocommerce	Price rounding		
+woocommerce	Charm pricing		Charm pricing (also called psychological pricing) can optionally reduce the converted product price by either 0.01 or 0.05.
+bigcommerce	store_country		
+bigcommerce	global country (Settings › Localization)		
+bigcommerce	country (a storefront's Localization settings)		
+bigcommerce	Country of Residence of Merchant		
+bigcommerce	domiciled (Customers domiciled in the United States)		
+bigcommerce	located in (Your store must be located in …)		
+bigcommerce	US-based merchants		
+bigcommerce	Where should your store be hosted? (North America, Europe, Asia-Pacific)		
+bigcommerce	shipping origin address		
+bigcommerce	store_address / Store Address		
+bigcommerce	channel		A channel is anywhere a merchant sells their products. This encompasses headless storefronts, marketplaces, POS systems, and marketing platforms.
+bigcommerce	channel type: storefront, marketing, pos, marketplace, custom		
+bigcommerce	platform (of a channel)		A `platform`, which indicates the platform on which shoppers primarily use the channel
+bigcommerce	default channel		Each BigCommerce store is provisioned with one channel out of the box, intended for its first Stencil storefront.
+bigcommerce	storefront		
+bigcommerce	Multi-Storefront (MSF)		“Multi-Storefront” or “MSF” means the ability to manage multiple unique Storefronts within one Store.
+bigcommerce	site		A **site** is a website owned or controlled exclusively by the merchant, usually for hosting a storefront website.
+bigcommerce	default site		The first Stencil storefront of each merchant store has an ID of `1000` and is also known as the default site.
+bigcommerce	region (separate storefronts per region; region-specific storefronts)		
+bigcommerce	segments (customer segmentation)		
+bigcommerce	shipping zones		
+bigcommerce	tax zone		A tax zone specifies the geographical area where a group of tax rates apply.
+bigcommerce	global default		
+bigcommerce	channel-specific contextual overrides		
+bigcommerce	Global-only settings		
+bigcommerce	Localization settings		
+bigcommerce	Store profile settings		
+bigcommerce	locales		
+bigcommerce	default shopper-facing language		
+bigcommerce	Transactional currency		When a currency is set as transactional, shoppers in associated countries will both see prices on the storefront in that currency and be charged in that currency when they check out.
+bigcommerce	default currency (of a storefront)		
+bigcommerce	price list assignment (to a sales channel, customer group, or customer group on a sales channel)		
+bigcommerce	International Enhancements for Multi-Storefront		

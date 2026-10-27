@@ -40,7 +40,7 @@ HOSTS = {  # captured pages in this repository's runs, by the host they came fro
     "salla": r"(^|\.)salla\.(sa|com|dev)$",
     "woocommerce": r"(^|\.)(woocommerce\.com|wordpress\.org|stripe\.com|woo\.com)$",
     "zid": r"(^|\.)zid\.(sa|dev)$",
-    "bigcommerce": r"(^|\.)(bigcommerce\.com|commerce\.com|bitpay\.com)$",
+    "bigcommerce": r"(^|\.)(bigcommerce\.com|bigcommerce\.co\.uk|commerce\.com|bitpay\.com)$",
 }
 ARCHIVES = {"salla": "observed-sa", "shopify": "observed-sh"}   # whose fetch archives each platform's search reads
 CACHE = os.path.join(os.path.expanduser("~"), ".cache", "sharrwah-corpus")

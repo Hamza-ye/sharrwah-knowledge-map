@@ -5,5 +5,5 @@ c	RD1	What the platform binds to the store's country: documents, terms, the cont
 d	RD1	The countries the platform serves merchants in, or says it doesn't, and how it holds them	ask
 e	RD2	What defines a market a store sells into (a country, region, city, group of customers, location, channel or storefront), how many a store can hold, and who creates, changes or removes one	ask
 f	RD3	A setting that takes its value per market, whether the store's own country (as in a) or a market it sells into (as in e), or per buyer's country, such as an address format; and who sets that value, the platform or the seller	ask
-g	RD3	That a setting holds for the whole store whatever the market, or that the platform has no market of the second sense	no-part
+g	RD2; RD3	That a setting holds for the whole store whatever the market, or that the platform has no market of the second sense	no-part
 h	RD1; RD2; RD3	Where, or for whom, what a statement under (a) to (f) describes is offered: the plans, features, countries or business types the platform states	conditions

@@ -1,0 +1,5 @@
+platform	gap_id	bullet	what_is_missing	gap_kind
+shopify	S02-SH-G03	e	How many markets of each kind (retail, B2B, channel, submarkets) a store can hold on each plan: S02-SH-301 states that the number depends on the plan and S02-SH-111 that country or region markets have no limit, but no number per plan is stated in what was read	page not read
+zid	S02-ZD-G05	e	Who removes a market, and how: the markets article states creating a market, managing its details, and creating it hidden or published (S02-ZD-014, S02-ZD-015, S02-ZD-022), not removing or unpublishing one	searched, not found
+zid	S02-ZD-G06	e	What the default market holds (السوق الافتراضي, which the article calls السوق المحلي, S02-ZD-012): which countries, and whether it follows the store's own country	searched, not found
+woocommerce	S02-WC-G04	e	(e), how many a store can hold: how many shipping zones a store can hold (a shopper is matched to one, S02-WC-216), and how many currencies WooPayments multi-currency can enable (S02-WC-193). The store holds one set of selling locations and one of shipping locations (S02-WC-171, S02-WC-172).	page not read

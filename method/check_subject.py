@@ -147,8 +147,11 @@ def load_bullets():
             err("bullets.tsv", r["bullet"], "asks is empty")
     if not any(r["role"] == "ask" for r in rows):
         err("bullets.tsv", "", "no bullet has the role 'ask', so no variation point can take one")
+    global BULLET_RD
+    BULLET_RD = {r["bullet"]: [x.strip() for x in r["root_decision"].split(";") if x.strip()] for r in rows}
     return {r["bullet"]: r["role"] for r in rows}
 
+BULLET_RD = {}                          # bullet -> its root decisions, from bullets.tsv; empty for the pilot
 BULLET_ROLE = load_bullets()
 
 def load_limits():
@@ -479,12 +482,42 @@ if var is not None:
         for p in PLATFORMS:
             if os.path.isdir(os.path.join(subj, p)) and (v, p) not in seen:
                 err("variants.tsv", f"{v}/{p}", "no row for this variation point and platform")
-    placed = {s for r in var for s in ids(r["stmt_ids"])}
-    unplaced = [s for s in stmts if s not in placed and stmts[s]["bullets"] & (ASK | NOPART)]
-    if unplaced:
-        err("variants.tsv", "", f"{len(unplaced)} statements under bullets {one_of(of_role('ask', 'no-part'))} "
-                                f"are under no variation point: "
-                                f"{', '.join(unplaced[:12])}", "review")
+    if not any(BULLET_RD.values()):        # the pilot: one question, so one count
+        placed = {s for r in var for s in ids(r["stmt_ids"])}
+        unplaced = [s for s in stmts if s not in placed and stmts[s]["bullets"] & (ASK | NOPART)]
+        if unplaced:
+            err("variants.tsv", "", f"{len(unplaced)} statements under bullets {one_of(of_role('ask', 'no-part'))} "
+                                    f"are under no variation point: "
+                                    f"{', '.join(unplaced[:12])}", "review")
+    else:
+        # Each root decision places every statement under one of its question or no-part bullets in a variant of its
+        # own variation points, or names it in notes-b.md under its own heading ("# RDn"), with a reason.
+        placed_in = defaultdict(set)
+        for r in var:
+            for rd in BULLET_RD.get(vp.get(r["vp_id"], {}).get("bullet", ""), []):
+                placed_in[rd].update(ids(r["stmt_ids"]))
+        noted_in, rd_now = defaultdict(set), ""
+        nb = os.path.join(subj, "notes-b.md")
+        for line in (open(nb, encoding="utf-8").read().split("\n") if os.path.exists(nb) else []):
+            h = re.match(r"^#\s+(RD\d+)\b", line)
+            if h:
+                rd_now = h.group(1)
+            elif rd_now:
+                noted_in[rd_now].update(re.findall(rf"{SID}-[A-Z]{{2}}-\d{{3}}", line))
+        rows_out = []
+        for sid, st in stmts.items():
+            for b in sorted(st["bullets"] & (ASK | NOPART)):
+                for rd in BULLET_RD.get(b, []):
+                    if sid not in placed_in[rd] and sid not in noted_in[rd]:
+                        rows_out.append((rd, sid, b))
+        rows_out = sorted(set(rows_out))
+        with open(os.path.join(OUT, "unplaced.tsv"), "w", encoding="utf-8") as f:
+            f.write("root_decision\tstmt_id\tbullet\n" + "".join(f"{a}\t{b}\t{c}\n" for a, b, c in rows_out))
+        for rd in sorted({r[0] for r in rows_out}):
+            mine = sorted({r[1] for r in rows_out if r[0] == rd})
+            err("variants.tsv", rd, f"{len(mine)} statements under {rd}'s bullets are neither in one of its "
+                                    f"variants nor named under its heading in notes-b.md (all in unplaced.tsv): "
+                                    f"{', '.join(mine[:8])}", "review")
 for plat in PLATFORMS:
     a2 = read(os.path.join(subj, plat, "a2.tsv"), f"{plat}/a2.tsv")
     later = read_later(plat)

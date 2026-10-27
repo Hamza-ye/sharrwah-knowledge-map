@@ -1,1 +1,34 @@
 term	translation	definition	cite_ids
+store_country			S02-BC-C127;S02-BC-C128
+global country (Settings › Localization)			S02-BC-C141
+country (a storefront's Localization settings)			S02-BC-C140
+Country of Residence of Merchant			S02-BC-C206
+domiciled (Customers domiciled in the United States)			S02-BC-C069
+located in (Your store must be located in …)			S02-BC-C084
+US-based merchants			S02-BC-C075
+Where should your store be hosted? (North America, Europe, Asia-Pacific)			S02-BC-C138
+shipping origin address			S02-BC-C053
+store_address / Store Address			S02-BC-C132;S02-BC-C135
+channel		A channel is anywhere a merchant sells their products. This encompasses headless storefronts, marketplaces, POS systems, and marketing platforms.	S02-BC-C002;S02-BC-C168
+channel type: storefront, marketing, pos, marketplace, custom			S02-BC-C169
+platform (of a channel)		A `platform`, which indicates the platform on which shoppers primarily use the channel	S02-BC-C170
+default channel		Each BigCommerce store is provisioned with one channel out of the box, intended for its first Stencil storefront.	S02-BC-C171
+storefront			S02-BC-C180
+Multi-Storefront (MSF)		“Multi-Storefront” or “MSF” means the ability to manage multiple unique Storefronts within one Store.	S02-BC-C008
+site		A **site** is a website owned or controlled exclusively by the merchant, usually for hosting a storefront website.	S02-BC-C172
+default site		The first Stencil storefront of each merchant store has an ID of `1000` and is also known as the default site.	S02-BC-C174
+region (separate storefronts per region; region-specific storefronts)			S02-BC-C145;S02-BC-C202
+segments (customer segmentation)			S02-BC-C017;S02-BC-C018
+shipping zones			S02-BC-C055
+tax zone		A tax zone specifies the geographical area where a group of tax rates apply.	S02-BC-C165
+global default			S02-BC-C125;S02-BC-C126
+channel-specific contextual overrides			S02-BC-C124
+Global-only settings			S02-BC-C127
+Localization settings			S02-BC-C140
+Store profile settings			S02-BC-C144
+locales			S02-BC-C036;S02-BC-C037
+default shopper-facing language			S02-BC-C146
+Transactional currency		When a currency is set as transactional, shoppers in associated countries will both see prices on the storefront in that currency and be charged in that currency when they check out.	S02-BC-C042
+default currency (of a storefront)			S02-BC-C147
+price list assignment (to a sales channel, customer group, or customer group on a sales channel)			S02-BC-C021
+International Enhancements for Multi-Storefront			S02-BC-C152;S02-BC-C154
