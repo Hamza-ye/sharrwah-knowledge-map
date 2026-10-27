@@ -993,6 +993,11 @@ S02-SH-991	observed	run 20261007T182519Z-journey-duties records a store or sessi
 S02-SH-992	observed	run 20261007T182519Z-journey-duties records a store or session
 S02-SH-993	observed	run 20261007T182519Z-journey-duties records a store or session
 S02-SH-994	observed	run 20261007T182519Z-journey-duties records a store or session
+S02-SH-995	stated	structures/shopify/help-center is built from run 20261016T213535Z-help-en-ar-html-md, which fetched pages
+S02-SH-996	stated	structures/shopify/help-center is built from run 20261016T213535Z-help-en-ar-html-md, which fetched pages
+S02-SH-997	stated	structures/shopify/help-center is built from run 20261016T213535Z-help-en-ar-html-md, which fetched pages
+S02-SH-998	stated	structures/shopify/help-center is built from run 20261016T213535Z-help-en-ar-html-md, which fetched pages
+S02-SH-999	stated	structures/shopify/help-center is built from run 20261016T213535Z-help-en-ar-html-md, which fetched pages
 S02-SH-N01	shipped	structures/shopify/admin-graphql-schema holds https://shopify.dev/admin-graphql-direct-proxy/2026-10: the address is code or a schema the platform ships
 S02-SH-N02	shipped	structures/shopify/admin-graphql-schema holds https://shopify.dev/admin-graphql-direct-proxy/2026-10: the address is code or a schema the platform ships
 S02-SH-N03	shipped	structures/shopify/admin-graphql-schema holds https://shopify.dev/admin-graphql-direct-proxy/2026-10: the address is code or a schema the platform ships
@@ -1942,6 +1947,8 @@ S02-WC-507	shipped	a file of the WooCommerce release
 S02-WC-508	shipped	a file of the WooCommerce release
 S02-WC-509	shipped	a file of the WooCommerce release
 S02-WC-510	shipped	a file of the WooCommerce release
+S02-WC-511	stated	the address is a docs, help or other page
+S02-WC-512	stated	the address is a docs, help or other page
 S02-ZD-001	official page	the address is a terms, policy, legal or pricing page
 S02-ZD-002	official page	the address is a terms, policy, legal or pricing page
 S02-ZD-003	official page	the address is a terms, policy, legal or pricing page

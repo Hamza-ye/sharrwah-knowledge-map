@@ -250,6 +250,10 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 | SH-2c: SH-2b's searches past 300, narrowed and read | 4, again | 4 | 4 | 72 | none | 67 | 13.8 |
 | SA-2: analytics and tracking; apps; notifications to the merchant; the store's address; the store's country; units and time zone | 8 | 8 | 4 | 36 | G08 to G11 | 80 | 16.8 |
 | ZD-5: what a click shows on Zid's pages, and zid.sa's Arabic country pages | leads | 6 points updated, and the `none` row | — | 52 | none | 28 | 4.4 |
+| SH-2d: the documents SH-2c named: SMS marketing's rules by region and its countries, WhatsApp's prices by country, and the duties journey's later steps | leads | 2 points updated, and the `none` row | — | 43 | none | 33 | 4.3 |
+| WC-5: WooPayments' testing and troubleshooting page, which WC-1 named and left unread | a lead | 1 point updated | — | 2 | none; G06 and G07 stand | 29 | 3.1 |
+| SH-2e: the page SH-2d left unread, Shopify Messaging's requirements, and the Arabic of its four pages | leads | 2 points updated | — | 5 | none | 21 | 2.4 |
+| **Gap-closing** | **121 rows** | **118** | **83** | **1,165** | **49 gaps open** | **1,622** | **337.3** |
 
 **What WC-1 taught:**
 - **Our labels aren't the platform's words.** The brief said to search a kind's own name, and the part asked whether "who sells to the buyer" was one. The brief now says the kind's head word is searched, such as `domain` or `currency`, and our longer labels aren't.
@@ -353,3 +357,23 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 - **The FAQ answers a click shows are Zid's statements on each country.** Zid Pay in Saudi Arabia and Kuwait gives its own banks, deposit fees, payout schedules and minimums, and Mada's cap. Zid Syria needs no commercial registration and takes payments through Bemira (S02-ZD-396 to S02-ZD-423). Zid's plans by country add branches, warehouses and features (S02-ZD-425 to S02-ZD-443).
 - **Opening each part in turn wasn't enough while a repeated line was dropped.** The step kept only lines not yet seen on the page, so the Arabic Syria page's answers were lost, and an answer was tied to its question only by click order. Each click's new lines are now kept under the control's label. Captured so, the Arabic Syria page gives all six of its closed answers, which match the English ones recorded (run `20261027T135846Z-s02-a2-sources-batch-4`).
 
+
+**What SH-2d, WC-5 and SH-2e taught:**
+- **SH-2d read what SH-2c named,** in 43 statements: SMS marketing's rules by region and its prices for 12 countries, WhatsApp's prices by country and the countries it excludes, and the duties journey's later steps. Two figures disagree, and both stand: the store's `transactionRate` for duties is 0.0085 (S02-SH-461), and the same store's duties pages show "0.5% transaction fee" (S02-SH-982, S02-SH-986). Phase C weighs them.
+- **Leads left unread are closed before a phase ends.** After the twenty parts, the coordinator read each part's notes for what it left. Three leads remained: Shopify Messaging's requirements page and the Arabic twins of four Help Center pages, from SH-2d; and WooPayments' troubleshooting page, which WC-1 listed as "not held and not read". Two short parts read them, for 5.5 million:
+  - SH-2e recorded five statements under (h): Shopify Messaging needs an active, paid plan, the Online Store channel and a payment provider, and on a trial, campaigns go only to the merchant. The Arabic pages say what the English ones do, and gave the Arabic of five terms.
+  - WC-5 recorded two statements: at sign-up, WooPayments verifies "information about you and your business" through Stripe's embedded form, and a test account "requires no personal information". Neither names a country, so G06 and G07 stand.
+  - The other address in G06's `read`, WooPayments' onboarding troubleshooting page, answers with HTTP 404 (run `20261027T141859Z-s02-a2-sources-batch-5`, item 2).
+- **From now on,** a phase closes only after the coordinator has read each part's list of what it left, and given each lead a part or a reason.
+
+**Gap-closing as a whole** (the coordinator, 27 October):
+- **What it did.** 22 parts read the pages behind 121 rows: the rows of S-02's points that were `not covered`, or whose gaps named a page not read. 118 rows were given statements, and 83 have no gap left. It added 1,165 statements: Shopify 388, Salla 118, Zid 256, WooCommerce 256 and BigCommerce 147. It cost 337.3 million, against the 350 projected at 10:30 ([the frame's budget](frame.md#budget)).
+- **What it leaves.** 49 gaps: Shopify 5, Salla 11, Zid 21, WooCommerce 5 and BigCommerce 7. None stops the second pass.
+  - **15 go to the local agent** as capture requests ([`handoffs/`](../../../handoffs/README.md)). H-008 is new, for Shopify's three on its dev stores. H-002 and H-005 are extended, for six of Salla's.
+  - **34 go to the founder** ([`reports/S-02-evidence-requests.md`](../../../reports/S-02-evidence-requests.md)). Zid's, WooCommerce's and BigCommerce's need a store on the platform, or a question to it. One of Salla's is a question.
+- **What it taught for the next subject:**
+  - **Rows predict the cost:** most parts cost 1.8 to 2.8 million a row.
+  - **Documents rarely say whether a setting differs by market.** That is what most of the gaps left ask: 11 of Zid's, 5 of Salla's, and some of BigCommerce's. Only a store with two markets answers them. So at the next subject's framing, the coordinator lists the points that only an observation can answer, and raises their capture requests before phase A, so that the captures run while the agents read.
+  - **A search left past 300 hides evidence:** SH-2c's narrowed searches gave as many statements as the part before it.
+  - **A site is checked to render before agents read it.** The render fault was found only after agents had read raw pages, and it cost an audit done again.
+  - **The coordinator's own quotes are checked as an agent's are.** In the founder's request, the coordinator first quoted Zid's developer blog from a search's snippet. The snippet came from that page's raw HTML, and the page, rendered again after the fix, shows "Oops! Page not found" (run `20261027T112044Z-zid-rerender`, item 012). The request quotes Zid's developer documentation instead, as its capture shows it.

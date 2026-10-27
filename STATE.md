@@ -13,7 +13,9 @@
 
 **Open gate:** G3, after each subject. S-02 is under way.
 
-**Waiting on the founder:** to hand the capture requests in [`handoffs/`](handoffs/README.md) (H-001 to H-007) to the local agent. H-005 may need a store on Salla's Special plan, a spending decision that comes with it.
+**Waiting on the founder:**
+- to hand the capture requests in [`handoffs/`](handoffs/README.md), H-001 to H-008, to the local agent. H-005 may need a store on Salla's Special plan, a spending decision that comes with it;
+- the answers in [`reports/S-02-evidence-requests.md`](reports/S-02-evidence-requests.md), for the evidence only the founder can get: a Zid store, a BigCommerce trial, a WooCommerce test store, and questions to four platforms. Nothing waits on them: the second pass and phase C go on.
 
 **Stage 4, S-02, what a market is.**
 - **Its frame:** [`studies/subjects/S-02/frame.md`](studies/subjects/S-02/frame.md).
@@ -41,10 +43,10 @@ The checker finds every quote, 3,193 of them, and no error. With the briefs' ins
 **In flight:**
 - **Phase B's first pass is complete** ([`method-report.md`](studies/subjects/S-02/method-report.md), section 7): 73 variation points, each with a row for every platform, 671 rows, in [`variation-points.tsv`](studies/subjects/S-02/variation-points.tsv) and [`variants.tsv`](studies/subjects/S-02/variants.tsv). The full check gives no error.
 - **The absence audit is complete** (section 8): 24 claims; 19 confirmed, 3 partly contradicted, 2 contradicted; 122 statements added. Two capture requests are narrowed ([H-002](handoffs/H-002-observed-sa-onboarding-countries.md), [H-007](handoffs/H-007-observed-sh-store-country-sign-up.md)), and three tools fixed to see held evidence they had missed.
-- **Gap-closing** (phase A2): its brief was inspected and re-checked; the rows `not covered` or `gap`, in parts run two at a time, one platform's parts after one another ([`a2-parts.tsv`](studies/subjects/S-02/a2-parts.tsv)). Twelve parts are done, BigCommerce's whole: 90 rows, 87 of them given statements and 56 with no gap left; 684 statements. Their live pages are captured, and every quote is found; four are listed for review ([`method-report.md`](studies/subjects/S-02/method-report.md), section 9). SH-2a and WC-4a are running; SH-2b, SA-2, WC-4b and ZD-5 follow.
+- **Gap-closing (phase A2) is complete** ([`method-report.md`](studies/subjects/S-02/method-report.md), section 9; [`a2-parts.tsv`](studies/subjects/S-02/a2-parts.tsv)): 22 parts, 121 rows, 118 of them given statements and 83 with no gap left; 1,165 statements; 337 million. Its live pages are captured, and every quote is found; twelve are ruled on after review. 49 gaps remain: 15 for the local agent, in H-008 (new) and H-002 and H-005 (extended); 34 for the founder.
 - **The render fault:** the browser in this session failed some sites' scripts, so BigCommerce's Help Center and Zid's sites rendered empty or as an error text; agents read zid.eg's Terms from a source that held the Saudi Terms. The tools now fetch each request outside the browser, open what a click shows, and tell a page's source from what it shows. 32 pages are held again as they render; Zid's audit of G03 was redone (for Egypt, the contract is with Zid Egypt, under Egyptian law). Every capture run now has its README.
-- **Cost:** 1,014 million agent tokens spent by 12:23 UTC on 27 October, past the budget plus a quarter (875 million); the cost came to the founder at 09:55 ([the frame's budget](studies/subjects/S-02/frame.md#budget)). S-02 is projected at about 1.3 to 1.55 billion. The work goes on, re-planned to cost less; no higher plan is needed yet.
+- **Cost:** 1,106 million agent tokens spent by 14:25 UTC on 27 October, past the budget plus a quarter (875 million); the cost came to the founder at 09:55 ([the frame's budget](studies/subjects/S-02/frame.md#budget)). S-02 is projected at about 1.35 to 1.53 billion. The work goes on, re-planned to cost less; no higher plan is needed yet.
 
-**Next:** gap-closing for the rows `not covered` or `gap` (phase A2), one agent per platform; then the slices cut again, and phase B's second pass, which reads A2's and A3's additions and the statements in [`b/second-pass.md`](studies/subjects/S-02/b/second-pass.md); then phase C.
+**Next:** phase B's second pass. The slices are cut again, and each root decision gets a work list (`method/second_pass_list.py`) of the statements A2 and A3 added, the rows to revisit, and the statements in [`b/second-pass.md`](studies/subjects/S-02/b/second-pass.md). The brief's second-pass section is inspected with a dry run, then about ten parts run, two at a time. Then phase C.
 
 **To resume:** read `PLAN.md`, this file and `founder-decisions.tsv`.

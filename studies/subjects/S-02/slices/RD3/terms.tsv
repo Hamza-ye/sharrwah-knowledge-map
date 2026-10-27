@@ -39,6 +39,23 @@ shopify	jurisdiction
 shopify	Rest of World		By default, this market is called Rest of World and includes all regions that are eligible for Managed Markets, but you can change your market name and remove countries and regions from the list of included regions.
 shopify	B2B All		A B2B All market is automatically created that includes all your existing companies and locations.
 shopify	shop country	بلد متجرك	
+shopify	private mode	الوضع الخاص	In private mode, all of your online store's pages are hidden from visitors and search engines, and your online store displays a customizable landing page instead.
+shopify	Staff notifications	إشعارات الموظفين	Alerts for your team when orders are placed or store events occur.
+shopify	Customer events	أحداث العميل	Customer events are actions that take place in the customer's browser, for example, clicking a link or adding a product to a cart.
+shopify	Store contact details	تفاصيل الاتصال بالمتجر	
+shopify	Contact information (store policy)	معلومات الاتصال	
+shopify	location	الموقع	A location is any physical place where you sell products, fulfill orders, or stock inventory.
+shopify	customer notifications	إشعارات العملاء	Customer notifications are automated emails and SMS messages sent to customers about their orders, shipping updates, and account activity.
+shopify	abandoned checkouts	عمليات الدفع المتروكة	
+shopify	Tax regions		Areas where your customers will pay tax, and where you will collect and remit.
+shopify	Duties and import taxes		
+shopify	Pricing configuration		Manage how import fees are displayed to customers on storefront and checkout
+shopify	recipient countries		
+shopify	recipient countries	بلدان مستلمة	
+shopify	targeted SMS countries	بلدان SMS المستهدفة	
+shopify	supported regions	المناطق المدعومة	
+shopify	region-specific requirements	المتطلبات الخاصة بالمنطقة	
+shopify	Country or region	البلد أو المنطقة	
 salla	الأسواق المتعددة	Multiple markets	ميزة الأسواق المتعددة تمكنك من إنشاء نسخ مخصصة من متجرك الإلكتروني لكل دولة تستهدفها أو منطقة أو مدينة، بما يضمن ظهور المتجر للعملاء في هذه المنطقة بتجربة تتوافق مع توقعاتهم المحلية.
 salla	المعلومات الأساسية حول السوق	Basic information about the market	
 salla	العملات	Currencies	
@@ -74,6 +91,10 @@ salla	الدولة التي تبيع فيها	Country of operation
 salla	مقر المتجر		
 salla	موقع المتجر		
 salla	سوق سلة بوينت		
+salla	store-country		اختر الدولة التي تصدر منها وثائقك الحكومية لتهيئة متجرك وفقًا لأنظمتها.
+salla	البيع بالنيابة (MoR)	Merchant of Record (MoR)	
+salla	اللغة الافتراضية	Default language	اللغة الافتراضية للمتجر: هي اللغة التي ستُعتمد في التعريف الأساسي لأقسام المتجر (واجهات - قوائم - منتجات - تصنيفات - الفروع - العروض - الإعلانات - ..).
+salla	الدول المدعومة	Supported countries	
 zid	الأسواق (خاصية الأسواق)		تتيح خاصية الأسواق للتاجر إدارة أسعار المنتجات وتوفّرها حسب كل سوق جغرافي بشكل مستقل.
 zid	سوق جغرافي		
 zid	السوق الافتراضي		السوق الافتراضي وهو السوق المحلي بشكل تلقائي
@@ -130,6 +151,53 @@ zid	تخصيص الثيم لكل سوق
 zid	سعر مخصص لكل سوق وقناة		
 zid	التجار خارج المملكة (للتجار خارج المملكة العربية السعودية)		
 zid	إعدادات المتجر	store settings	
+zid	العنوان الوطني المختصر		
+zid	نقل متجرك من دولة إلى دولة أخرى		
+zid	Region & Language popup (region_settings_dialog)		The **Region & Language popup** allows customers to change the store language, country, and city within a modal dialog, without leaving the current page.
+zid	store countries (zid.store.region.countries)		
+zid	Display products in your store based on the customer location		
+zid	سياسة الاستبدال والارجاع; سياسة الاستبدال والاسترجاع	refund and return policies	
+zid	الصفحات القانونية		
+zid	النطاق		النطاق هو عنوان متجرك الإلكتروني (مثل:https://store.zid.sa ) ويُستخدم للوصول إلى متجرك مباشرة.
+zid	قائمة النطاقات		
+zid	النطاق الافتراضي		
+zid	نطاق مخصص (ربط نطاق مخصص)		
+zid	النطاقات الفرعية (zid.store)	subdomains	
+zid	النطاق (الرابط)	the domain (link)	
+zid	ربط دومين خاص	Custom Domain Linking	اربط دومين خاص (yourstore.com) بدلاً من النطاق الفرعي لتعزيز هوية علامتك التجارية وثقة عملائك.
+zid	إدارة النطاق المخصص	Manage custom domain	
+zid	الشراء كزائر		
+zid	حسابات العملاء النهائيين (تسجيل الدخول باستخدام الرسائل النصية)		
+zid	صفحة خيارات الدفع		
+zid	اللغة الأساسية للمتجر		
+zid	اللغة الإنجليزية (تفعيل اللغة الإنجليزية)		
+zid	store languages (zid.store.region.languages)		
+zid	لغة الرسائل	Message Language	خصص لغة الرسائل التسويقية لتصل لعملائك بالأسلوب الذي يفهمونه ويثقون به.
+zid	معلومات المتجر (البيانات الأساسية التي تظهر لعملائك)		
+zid	بيانات التواصل (بيانات التواصل مع المتجر; حسابات التواصل الاجتماعي للمتجر)		
+zid	أولوية السحب من المخزون	Inventory Withdrawal Priority	حدد أولوية السحب من المخزون لتجنب نفاد المنتجات وضمان تلبية طلبات عملائك بسرعة.
+zid	إدارة المخازن (مواقع التخزين)		خاصية إدارة المخازن تمكّنك من تنظيم المنتجات حسب مواقع التخزين المختلفة، ومتابعة الكميات المتوفرة بدقة.
+zid	مخزن افتراضي		
+zid	مواقع المخزون; أماكن استلام منتجاتك; الاستلام من الفرع		
+zid	طلبات نقل المخزون; نقل المخزون بين الفروع	Transfer Inventory Between Branches	
+zid	Require customer to select city manually		
+zid	موقع العملاء	Customer Location	اعرف مواقع عملائك بدقة لتخصيص العروض وتحسين خدمات التوصيل.
+zid	تتبع الحملات		
+zid	سوق تطبيقات زد	Zid App Market	سوق تطبيقات زد: هي منصة مملوكة لزد توفر حلول الربط التقني بين التاجر والشريك، وذلك لتمكين التاجر من ربط متجره بأحد تطبيقات المعروضة في خدمة سوق تطبيقات زد، وذلك لمساعدته في إدارة عمليات متجره بسهولة.
+zid	تطبيقاتي		
+zid	التطبيقات المدمجة		وهي التطبيقات التي يمكنك التحكم في التطبيق داخل صفحة سوق التطبيقات دون الرجوع الى لوحة تحكم التطبيق الخارجية.
+zid	Public apps		Apps designed for wider use and are listed in Zid App Market. All merchants on the platform can view, install, and benefit from these apps.
+zid	Private apps		Apps intended for specific stores only. They are not listed in the Zid App Market and can only be installed by stores explicitly granted access.
+zid	اشعارات الفريق; إشعارات الفريق	Team Notifications	تمكنك هذه الخاصية من اشعار فريقك عبر البريد الإلكتروني بالطلب وتفاصيله في أي حالة من حالات الطلب التي يتم تحديدها.
+zid	فريق العمل; صلاحيات فريق العمل		تتيح لك هذه الخاصية إضافة و إدارة فريق العمل الخاص بك و التحكم في صلاحيات الأعضاء و تحديدها بشكل تفصيلي لكل عضو ، مما يساعدك كتاجر أو صاحب متجر الكتروني في الحفاظ على سرية البيانات.
+zid	Store Owner		Store owners have the highest level of access to a store, including creating, updating, and managing all aspects of their store. They also have the ability to create accounts for other store staff and assign them permissions.
+zid	Other Staff Members		Other staff members can have varying levels of access to the store based on the permissions granted to them by the store owner.
+zid	إلغاء الاشتراك من الرسائل		خاصية تتيح لعملائك إيقاف استقبال رسائل واتساب التسويقية والتلقائية من متجرك بأنفسهم، بمجرد إرسال كلمة معيّنة مثل «إيقاف» أو «stop»، دون أي تدخّل يدوي منك.
+zid	أوقات العمل الرسمية; اوقات العمل الرسمية		تمكنك هذه الخاصية من إغلاق المتجر تماماً ، أو عرض كل صفحات المتجر مع إيقاف عملية إتمام الشراء فقط ، أو إتاحة إمكانية الطلب ساعات معينة من اليوم أو أيام محددة من الأسبوع ، على أن يكون كل خيارات الإيقافات إما لمدة غير محددة أو مدة محدد ثم يعود لاستقبال الطلبات في تاريخ و وقت تقوم بتعيينه.
+zid	إغلاق المتجر بالكامل		عند تفعيل هذه الخاصية، سيتم إغلاق المتجر مؤقتًا بالكامل، ولن يتمكن العملاء من إجراء أي طلبات خلال الفترة التي تحددها. يمكنك أيضًا عرض عدٍّ تنازلي يُظهر للزوار موعد إعادة فتح المتجر بناءً على الوقت الذي قمت بإدخاله.
+zid	إيقاف استقبال الطلبات		لن يتمكن العملاء من إتمام عمليات الشراء أثناء تعليق المتجر، لكن يمكنهم تصفح المنتجات وإضافتها إلى السلة فقط.
+zid	المنطقة الزمنية		
+zid	زد سوريا	Zid Syria	
 woocommerce	Store Address		This is where your business is located. Tax rates and shipping rates will use this address.
 woocommerce	Store address		This is where you set your business’s physical address — the location where you are based as a seller.
 woocommerce	Country / State		The country and state or province, if any, in which your business is located.
@@ -160,6 +228,30 @@ woocommerce	local currency
 woocommerce	Enabled currencies		
 woocommerce	Price rounding		
 woocommerce	Charm pricing		Charm pricing (also called psychological pricing) can optionally reduce the converted product price by either 0.01 or 0.05.
+woocommerce	Stripe Account Country		“Stripe Account Country” means the country or region User selected when opening User’s Stripe Account and is the country or region where User's business address, as reflected in User’s account details, is located, or, in the case of an individual, the country or region where User is doing business.
+woocommerce	European User		If you are a user in countries located in the European Economic Area, Switzerland, or the United Kingdom (“European User”), some special terms apply to you as mentioned below.
+woocommerce	billing country		
+woocommerce	Shop location		
+woocommerce	store location		
+woocommerce	Weight unit		This controls what unit you will define weights in.
+woocommerce	Dimensions unit		This controls what unit you will define lengths in.
+woocommerce	base currency		Each WooCommerce store can set one base currency. WooCommerce uses it to display product prices and record new orders.
+woocommerce	Site Language		
+woocommerce	customer billing country		
+woocommerce	guest checkout		Allow customers to check out without creating an account.
+woocommerce	Accounts and Privacy		
+woocommerce	additional checkout fields		
+woocommerce	Available for POS		Controls whether this product appears in the Point of Sale system.
+woocommerce	Show in Point of Sale		
+woocommerce	Channel Visibility		
+woocommerce	Store details		Details about the store that are shown in email receipts.
+woocommerce	pickup location		
+woocommerce	base_location_country		
+woocommerce	consent mode		Consent mode facilitates the communication of visitors’ cookie consent preferences to Google tags.
+woocommerce	Coming soon mode		Coming soon mode controls who can visit your site while you prepare it for launch.
+woocommerce	Site visibility		
+woocommerce	Apply to store pages only		Enabling this option ensures that only store-related pages are protected by Coming soon mode.
+woocommerce	Live		When live mode is enabled, your site is fully accessible to all visitors, indicating that it is open for business.
 bigcommerce	store_country		
 bigcommerce	global country (Settings › Localization)		
 bigcommerce	country (a storefront's Localization settings)		
@@ -193,3 +285,19 @@ bigcommerce	Transactional currency		When a currency is set as transactional, sho
 bigcommerce	default currency (of a storefront)		
 bigcommerce	price list assignment (to a sales channel, customer group, or customer group on a sales channel)		
 bigcommerce	International Enhancements for Multi-Storefront		
+bigcommerce	country (Get Store Information, GET /v2/store)		Country where the store is located (as defined during the store sign-up process).
+bigcommerce	infrastructure_region		The infrastructure region where the store is located.
+bigcommerce	Locale (store locale settings)		The basic locale settings for a store, used to give shopper information about languages, countries, etc.
+bigcommerce	Settlement Currency		The currency the merchant gets paid out to their bank account.
+bigcommerce	default country (Settings › Localization; Settings › Store profile › Locale)		The country your store is run from, which determines the payment methods that are available for use with your store.
+bigcommerce	Locale settings (Settings › Store profile)		The Locale settings determine your store's country and customer-facing language.
+bigcommerce	Localization settings (Settings › Localization)		Localization settings control your store’s default country, the languages that customers see on your storefront, how weights and dimensions are measured, and how dates and times are shown.
+bigcommerce	country where your store is located (locale information)		
+bigcommerce	hosting region (the region your store should be hosted)		
+bigcommerce	standard formats (Set standard formats for [country])		
+bigcommerce	region (your store’s plan and region)		
+bigcommerce	Issuing Country (of the VAT number)		
+bigcommerce	storefront selector		
+bigcommerce	Use global (a storefront's setting in Channel Manager)		
+bigcommerce	origin channel (of a customer account)		
+bigcommerce	Allow global logins (allow_global_login)		
