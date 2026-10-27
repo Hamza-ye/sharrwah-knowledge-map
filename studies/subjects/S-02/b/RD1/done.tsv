@@ -42,3 +42,54 @@ revisit	S02-V-182	c	replaced with an answer, every store (S02-ZD-194, 193, 197, 
 note	S02-ZD-179	c	noted: Saudi Terms in zid.eg's raw HTML, which the page as shown replaces
 note	S02-ZD-180	c	noted: Saudi Terms in zid.eg's raw HTML, which the page as shown replaces
 revisit	S02-V-239	c	replaced with an answer, your location (S02-BC-243); added S02-V-284 (the default country's standard formats, S02-BC-285, 253), S02-V-285 (where the store is based, S02-BC-288 to 291) and gap S02-BC-G11 (S02-V-286); S02-BC-253 also under S02-VP-12; S02-BC-244 noted
+reread	S02-ZD-008	c	left noted: its source as recorded, Zid Payments' page (scope 'Zid Payments', no section in its identifier), holds sections for two countries, Saudi Arabia and Kuwait: tied to several (rule 4)
+reread	S02-ZD-112	c	placed: joined S02-V-177 (S02-VP-11), the merchant's country, Saudi Arabia or Kuwait, by each of the two sections its identifier names
+reread	S02-ZD-119	c	left noted: its source, the help centre's FAQ on sales channels (scope 'أمازون'), is tied to no country; its words name two, Saudi Arabia and the UAE
+reread	S02-ZD-122	c	placed: joined S02-V-175 (S02-VP-10), the merchant's country, Saudi Arabia, by its section's heading
+reread	S02-ZD-123	c	placed: joined S02-V-175 (S02-VP-10), the merchant's country, Kuwait, by its section's heading
+reread	S02-ZD-154	c	placed: joined S02-V-175 (S02-VP-10), the merchant's country, Saudi Arabia, by its section's heading
+reread	S02-ZD-155	c	placed: joined S02-V-175 (S02-VP-10), the merchant's country, Kuwait, by its section's heading
+reread	S02-ZD-174	c	placed: joined S02-V-180 (S02-VP-13), the merchant's country, Saudi Arabia, by its section's heading
+reread	S02-ZD-175	c	placed: joined S02-V-180 (S02-VP-13), the merchant's country, Kuwait, by its section's heading
+reread	S02-ZD-347	c	left noted: its source, zid.sa's pricing page (scope 'zid.sa pricing page'), is tied by no words of the platform to one country, and zid.sa holds pages for several (S02-ZD-389 to S02-ZD-394's scopes)
+reread	S02-ZD-348	c	left noted: as S02-ZD-347, zid.sa's pricing page, tied to no one country
+reread	S02-ZD-349	c	left noted: as S02-ZD-347, zid.sa's pricing page, tied to no one country
+reread	S02-ZD-350	c	placed: joined S02-V-181 (S02-VP-14), the merchant's country, Egypt, by the site zid.eg
+reread	S02-ZD-351	c	placed: joined S02-V-181 (S02-VP-14), the merchant's country, Egypt, by the site zid.eg
+reread	S02-ZD-352	c	placed: joined S02-V-181 (S02-VP-14), the merchant's country, Egypt, by the site zid.eg
+reread	S02-ZD-353	c	left noted: its source is two pricing pages (scope 'zid.eg and zid.sa pricing pages'), zid.eg's, tied to Egypt, and zid.sa's, tied by no words of the platform to one country
+reread	S02-ZD-367	c	placed: a new row S02-V-298 (S02-VP-08, Zid Egypt), and joined S02-V-172 (S02-VP-09), the merchant's country, Egypt, by the site zid.eg
+reread	S02-ZD-369	c	placed: joined S02-V-181 (S02-VP-14), the merchant's country, Egypt, by the site zid.eg
+reread	S02-ZD-370	c	placed: joined S02-V-181 (S02-VP-14), the merchant's country, Egypt, by the site zid.eg; its payment methods read as how the fees are billed
+reread	S02-ZD-371	c	placed: joined S02-V-181 (S02-VP-14), and a new row under S02-VP-15, the merchant's country, Egypt, by the site zid.eg
+reread	S02-ZD-372	c	placed: joined S02-V-172 (S02-VP-09), the merchant's country, Egypt, by the site zid.eg
+reread	S02-ZD-373	c	placed: joined S02-V-172 (S02-VP-09) and S02-V-184 (S02-VP-16), the merchant's country, Egypt, by the site zid.eg
+reread	S02-ZD-374	c	placed: joined S02-V-172 (S02-VP-09), the merchant's country, Egypt, by the site zid.eg
+reread	S02-ZD-376	c	placed: joined S02-V-172 (S02-VP-09), the merchant's country, Egypt, by the site zid.eg
+reread	S02-ZD-378	c	placed: joined S02-V-172 (S02-VP-09), the merchant's country, Egypt, by the site zid.eg
+reread	S02-ZD-379	c	placed: joined S02-V-172 (S02-VP-09), the merchant's country, Egypt, by the site zid.eg
+reread	S02-ZD-380	c	placed: joined S02-V-172 (S02-VP-09), the merchant's country, Egypt, by the site zid.eg
+reread	S02-ZD-381	c	placed: joined S02-V-172 (S02-VP-09), the merchant's country, Egypt, by the site zid.eg
+reread	S02-ZD-382	c	placed: joined S02-V-298 (S02-VP-08) and S02-V-172 (S02-VP-09), the merchant's country, Egypt, by the site zid.eg
+reread	S02-ZD-383	c	placed: a new row under S02-VP-19 (Zid Egypt as data controller), the merchant's country, Egypt, by the site zid.eg
+reread	S02-ZD-384	c	placed: the new row under S02-VP-19, with S02-ZD-383, the merchant's country, Egypt, by the site zid.eg
+reread	S02-ZD-385	c	placed: the new row under S02-VP-19, with S02-ZD-383, the merchant's country, Egypt, by the site zid.eg
+reread	S02-ZD-389	c	placed: joined S02-V-181 (S02-VP-14), the merchant's country, Egypt, by zid.sa's page for Egypt
+reread	S02-ZD-390	c	placed: joined S02-V-181 (S02-VP-14), the merchant's country, Egypt, by zid.sa's page for Egypt
+reread	S02-ZD-391	c	placed: joined S02-V-181 (S02-VP-14), the merchant's country, Syria, by zid.sa's page for Syria
+reread	S02-ZD-392	c	placed: joined S02-V-181 (S02-VP-14), the merchant's country, Syria, by zid.sa's page for Syria
+reread	S02-ZD-393	c	placed: joined S02-V-181 (S02-VP-14), the merchant's country, the UAE, Kuwait or Oman, by each of its three pages
+reread	S02-ZD-394	c	placed: joined S02-V-181 (S02-VP-14), the merchant's country, the UAE, Kuwait or Oman, by each of its three pages
+reread	S02-ZD-398	c	placed: joined S02-V-181 (S02-VP-14) and S02-V-299 (S02-VP-15), the merchant's country, Saudi Arabia, by Zid Payments' section
+reread	S02-ZD-400	c	placed: joined S02-V-180 (S02-VP-13), the merchant's country, Saudi Arabia, by Zid Payments' section
+reread	S02-ZD-401	c	placed: joined S02-V-175 (S02-VP-10) and S02-V-177 (S02-VP-11), the merchant's country, Saudi Arabia, by Zid Payments' section
+reread	S02-ZD-407	c	placed: joined S02-V-180 (S02-VP-13), the merchant's country, Kuwait, by Zid Payments' section
+reread	S02-ZD-408	c	placed: joined S02-V-181 (S02-VP-14) and S02-V-299 (S02-VP-15), the merchant's country, Saudi Arabia, by Zid Payments' section
+reread	S02-ZD-411	c	placed: joined S02-V-181 (S02-VP-14) and S02-V-299 (S02-VP-15), the merchant's country, Saudi Arabia, by Zid Payments' section
+reread	S02-ZD-413	c	placed: joined S02-V-180 (S02-VP-13), the merchant's country, Saudi Arabia, by Zid Payments' section
+reread	S02-ZD-414	c	placed: joined S02-V-175 (S02-VP-10) and S02-V-177 (S02-VP-11), the merchant's country, Saudi Arabia, by Zid Payments' section
+reread	S02-ZD-418	c	placed: joined S02-V-181 (S02-VP-14) and S02-V-299 (S02-VP-15), the merchant's country, Kuwait, by Zid Payments' section
+reread	S02-ZD-419	c	placed: joined S02-V-180 (S02-VP-13), the merchant's country, Kuwait, by Zid Payments' section
+reread	S02-ZD-421	c	placed: joined S02-V-181 (S02-VP-14), the merchant's country, Syria, by zid.sa's page for Syria
+reread	S02-ZD-422	c	placed: joined S02-V-179 (S02-VP-12), the merchant's country, Syria, by zid.sa's page for Syria
+reread	S02-ZD-423	c	placed: joined S02-V-175 (S02-VP-10), the merchant's country, Syria, by zid.sa's page for Syria

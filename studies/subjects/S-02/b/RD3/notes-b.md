@@ -1060,3 +1060,43 @@ None. Every task named its statements, each was printed by id, and no point was 
 - **A lead of another point.** S02-SA-382, the only lead the work list names for S02-VP-65 and S02-VP-66, names shipping countries and payment methods, not returns; it was placed where its Arabic counterpart S02-SA-278 stands.
 - **(g) and who sets.** A statement under (g) whose words name who sets but not the whole store is noted, as RD3-S3 noted S02-WC-276 (rule 4 places it under a `who sets` point only beside its whole-store answer). So S02-SA-407's platform ('connected automatically') and S02-SA-419's staff permission are in no row of S02-VP-88 or S02-VP-90, though the statements state them. The coordinator may want to rule.
 - **Readings of kind.** 'local' and 'international' SMS (S02-SA-413 to S02-SA-415) are read as the customer's country, and the default SMS app as of two kinds, apps (S02-VP-86) and messages to buyers (S02-VP-82, S02-VP-83); both readings are mine. The pickup location (S02-SA-425) is read as a location that fulfils orders (S02-VP-78), not as shipping.
+
+## Second pass, RD3-S7: salla and woocommerce, bullet g
+
+Fourteen `reread` tasks, the last fourteen rows of the work list: statements under (g) that RD3-S3 and RD3-S6 noted because rule 4 then placed a statement under (g) under a `who sets` point only beside its whole-store answer. Rule 4 as widened on 27 October 2026 places a statement under (g) that names who sets, changes or may manage a setting of the store under that setting's `who sets "X"` point. Each task is recorded in `done.tsv`. The earlier notes stay as they are.
+
+### Rereads placed: new rows
+- S02-SA-407: S02-V-1098, a new row under S02-VP-88 (who sets "web analytics"), the platform: 'The pixel, the Conversions API and your product catalog are all connected automatically when you link your account.' ('automatically', rule 4). Its 'when you link your account' names the merchant's linking of the Meta account, not who connects the pixel. Its 'your product catalog' is not placed under S02-VP-48 (products): the statement names the catalog's connection to Meta, not which products the store offers or their order. Listed below as a candidate.
+- S02-SA-419: S02-V-1099, a new row under S02-VP-90 (who sets "internal notifications"), a staff permission: 'store notification settings management', of the staff permission group 'إعدادات المتجر'. Rule 4: a staff permission that the statement says gates it is its own answer, beside the seller's (S02-V-890). A reading: the settings it gates are read as those of the settings page Notifications (S02-SA-417: 'Turn all store notifications on or off.'), by the same words 'store notification'.
+
+### Rereads placed: joined to a row
+- S02-SA-408: joined S02-V-882 (S02-VP-88, the seller): 'Choose the pixel you want, then click (Continue).', an instruction to the merchant.
+- S02-WC-276: joined S02-V-932 (S02-VP-66, the seller): 'must maintain fair and legally compliant return, refund, cancellation, and adjustment policies', under its identifier 'Your responsibilities'. The terms require the policies, and a party that requires a value isn't who sets it (rule 4). This is the placement RD3-S3 named for the coordinator.
+- S02-WC-283: joined S02-V-932 (S02-VP-66, the seller), a reading: 'It’s up to you how withdrawal requests are handled', read as who manages the store's returns and cancellations. Its 'does not automatically change the order status, cancel the order, or issue a refund' names what the platform doesn't do, so it gives no row of the platform.
+- S02-WC-473: joined S02-V-1049 (S02-VP-72, the platform): the code sets the roles a Shop Manager may edit, apply_filters( 'woocommerce_shop_manager_editable_roles', array( 'customer' ) ), and leaves 'administrator' out of them for a user without the administrator role. A value the code sets is the platform's (rule 4), and the filter alone names no party. It was already in S02-V-1051 (the Administrator role), from (f). The Shop Manager role gets no row: its editable roles, 'customer' by default, name what it is kept out of, not staff access it sets.
+
+### Rereads placed by rows they already held, from (f)
+Each of these is under (f) and (g). RD3-S2 placed it under (f) in rows of the `who sets` point that the widened rule places it under for (g). No row changed.
+- S02-WC-364: S02-V-1010 (S02-VP-52, the buyer): 'Customers enter the code at cart or checkout to receive the discount'. Its 'Send your coupon code to customers' names who sends the code, not who sets the discount, as RD3-S2 read it.
+- S02-WC-452: S02-V-942 (S02-VP-72, the seller).
+- S02-WC-463: S02-V-942 (the seller) and S02-V-1050 (an extension or plugin), under S02-VP-72.
+- S02-WC-489: S02-V-951 (S02-VP-81, the seller): 'for you to provide selective access to your site'.
+- S02-WC-496: S02-V-1055 (a hosting provider) and S02-V-1056 (developers), under S02-VP-81.
+- S02-WC-498: S02-V-1054 (S02-VP-81, another plugin or application).
+
+### Rereads left noted (rule 2)
+- S02-WC-418 (g): Show Suggestions names who sets it, the seller by its checkbox ('Leave this box unchecked if you do not want to pull suggested extensions from WooCommerce.com.') and the platform by 'default' => 'yes'; but the suggestions the platform shows the merchant are of no point's kind, and not the apps a store installs (S02-VP-86's kind), as RD3-S2 and RD3-S3 read it, and RD3 has no `who sets` point for apps: a candidate for a new point (below)
+- S02-WC-507 (g): 'if ( current_user_can( 'manage_woocommerce' ) ) { return false;' names who the coming soon mode lets through, not who sets, changes or may manage the mode, as RD3-S2 and RD3-S3 read it
+
+### Candidates for a new point
+- **who sets "suggested extensions"** (Show Suggestions: 'pull suggested extensions from WooCommerce.com'), S02-WC-418: the seller (its checkbox) and the platform ('default' => 'yes'). Of none of rule 1's kinds. RD3-S2 and RD3-S3 listed it too.
+- **who sets "your product catalog"** (its connection to Meta), S02-SA-407: the platform ('connected automatically when you link your account'). The statement is placed under S02-VP-88 for the pixel and the Conversions API. The catalog's connection is read as of no point's kind, since the statement names neither which products the store offers nor their order (S02-VP-48's kind). Read as of the products kind, it would be a new row of S02-VP-48 (salla, the platform).
+
+### Words searched for
+- In the slice's `terms.tsv`, for Salla: 'pixel', 'notification', 'إشعار', 'تنبيه'. None found.
+- Points' rows read: S02-VP-83 and S02-VP-87 to S02-VP-90 (salla); S02-VP-52, S02-VP-65, S02-VP-66, S02-VP-72 and S02-VP-81 (woocommerce).
+- x_words added: S02-VP-88, salla, 'Meta pixel; Conversions API'; S02-VP-90, salla, 'store notification settings'; S02-VP-66, woocommerce, 'return, refund, cancellation, and adjustment policies; withdrawal requests'.
+
+### Problems with the brief, the work list or the tools
+- Six of the fourteen rereads (S02-WC-364, S02-WC-452, S02-WC-463, S02-WC-489, S02-WC-496, S02-WC-498) were already in rows of the point that their (g) reading answers, placed there under (f) by RD3-S2. Their reread changed no row. S02-WC-473 was also already in one, and joined one more.
+- S02-WC-489 and S02-WC-507 both concern who the coming soon mode lets through. RD3-S2 placed S02-WC-489 in the seller's row by its 'for you to provide selective access to your site', and noted S02-WC-507. This part keeps both readings: in S02-WC-489 the merchant provides the access; S02-WC-507's capability names whom the mode doesn't apply to.

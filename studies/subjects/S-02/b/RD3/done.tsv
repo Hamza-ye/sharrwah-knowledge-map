@@ -121,3 +121,17 @@ revisit	S02-V-878	f	replaced by the whole store (S02-SA-401 to S02-SA-406, S02-S
 revisit	S02-V-882	f	replaced by the seller (S02-SA-401 to S02-SA-406, under (g)); S02-SA-407 and S02-SA-408 noted; no lead under (f)
 revisit	S02-V-886	f	replaced by the whole store (S02-SA-417, under (g)); gap S02-SA-G10 added beside it; no lead under (f)
 revisit	S02-V-890	f	replaced by the seller (S02-SA-417, under (g)); S02-SA-418 to S02-SA-420 noted; no lead under (f)
+reread	S02-SA-407	g	placed: new row S02-V-1098 under S02-VP-88, the platform ('connected automatically'); its product catalog a candidate for a new point
+reread	S02-SA-408	g	placed: joined S02-V-882 under S02-VP-88, the seller
+reread	S02-SA-419	g	placed: new row S02-V-1099 under S02-VP-90, a staff permission (a reading)
+reread	S02-WC-276	g	placed: joined S02-V-932 under S02-VP-66, the seller
+reread	S02-WC-283	g	placed: joined S02-V-932 under S02-VP-66, the seller (a reading)
+reread	S02-WC-364	g	placed: already in S02-V-1010 under S02-VP-52, the buyer, from (f); no row changed
+reread	S02-WC-418	g	left noted: who sets suggested extensions, of no point's kind; a candidate for a new point
+reread	S02-WC-452	g	placed: already in S02-V-942 under S02-VP-72, the seller, from (f); no row changed
+reread	S02-WC-463	g	placed: already in S02-V-942 (the seller) and S02-V-1050 (an extension or plugin) under S02-VP-72, from (f); no row changed
+reread	S02-WC-473	g	placed: already in S02-V-1051 under S02-VP-72 (the Administrator role); joined S02-V-1049, the platform (the code's default)
+reread	S02-WC-489	g	placed: already in S02-V-951 under S02-VP-81, the seller, from (f); no row changed
+reread	S02-WC-496	g	placed: already in S02-V-1055 (a hosting provider) and S02-V-1056 (developers) under S02-VP-81, from (f); no row changed
+reread	S02-WC-498	g	placed: already in S02-V-1054 under S02-VP-81, another plugin or application, from (f); no row changed
+reread	S02-WC-507	g	left noted: names who the mode lets through, not who sets, changes or may manage it

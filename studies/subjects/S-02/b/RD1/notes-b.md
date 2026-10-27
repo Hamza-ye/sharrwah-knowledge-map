@@ -889,3 +889,73 @@ The subsections '### Place tasks: zid (a), (b) and (d)', '### Candidates for a n
 ### Check (part RD1-S3)
 
 On a copy holding only `b/RD1`: `merge_slices.py` merged 19 points and 297 rows; `check_subject.py` gave no line of level `error`, 17 warnings (phase A's quote lengths) and 14 reviews (quotes found only in a page's source, the coordinator's; and RD2's and RD3's statements, whose folders the copy leaves out); its `unplaced.tsv` holds no row of RD1. `second_pass_list.py --check`: RD1 has no revisit, reread or note task without a row in `done.tsv`.
+
+## Second pass, RD1-S4
+
+Part RD1-S4 rereads, under (c), the 51 Zid statements that earlier parts noted and that the work list names under rule 4's last clause under (c), widened on 27 October 2026: the merchant's country is the decider where the platform's own words tie the site, page or section a statement comes from to one country, and address it to merchants. Each reread's earlier note stays as it is, whether the reread places it or not.
+
+### How the rereads are decided (part RD1-S4)
+
+1. Tied to one country. A statement is placed where each site, page or section it is recorded from (its `source`, `identifier` and `scope`) is one that the platform's own words tie to one country:
+   - zid.eg: 'زد مصر' (my translation: Zid Egypt), in the scopes and identifiers of its pricing page, Terms and Privacy Policy, and 'الدولة: جمهورية مصر العربية' (S02-ZD-383; my translation: country: the Arab Republic of Egypt);
+   - zid.sa's pages for Egypt, the UAE, Kuwait and Oman, whose heroes read 'Join thousands of merchants in Egypt and launch your online store easily.' (S02-ZD-061), and the same in the UAE (S02-ZD-137), in Kuwait (S02-ZD-386) and in Oman (S02-ZD-387);
+   - zid.sa's page for Syria: 'The best and easiest e-commerce platform in Syria' (S02-ZD-138, its hero), and 'Zid Syria' (its statements' scopes);
+   - Zid Payments' sections 'For our Saudi Superstars', 'For our Kuwait Crew', 'لنجومنا السعوديين' and 'لطاقمنا الكويتي' (my translation: for our Saudi stars; for our Kuwaiti crew), the coordinator's own example of a Zid Payments section headed for one country's merchants;
+   - the help centre's sections 'متطلبات تفعيل الدفع الالكتروني للسعودية' and 'متطلبات تفعيل الدفع الالكتروني للكويت' (my translation: the requirements to activate e-payment for Saudi Arabia; for Kuwait), and 'تحصيل المدفوعات > في السعودية' and 'تحصيل المدفوعات > في الكويت' (my translation: collecting payments > in Saudi Arabia; in Kuwait).
+
+   Where those words don't name merchants, which holds for all of them but the four heroes that read 'Join thousands of merchants in ...', the row's evidence marks the decider as a reading.
+2. Joined where the decider already has a row. Under (c), things of one kind with the same decider are one answer, and which country gets which stays in the statements and their scope (rule 4). So where a point already holds a Zid row whose decider is where the merchant is, or the merchant's country (S02-V-172, S02-V-175, S02-V-177, S02-V-179, S02-V-180, S02-V-181, S02-V-184), the statements placed under that point join it, and the evidence they add names each country as the platform ties it. Where no such row is there (S02-VP-08, S02-VP-15, S02-VP-19), a new row is added. S02-V-297 (S02-VP-09) and S02-V-183 (S02-VP-16), whose decider is the store's place ('للمتاجر السعودية'; my translation: for Saudi stores), are not joined.
+3. Left noted, where the source is tied to no country, or to several (rule 4).
+
+### Rereads, in the work list's order (part RD1-S4)
+
+- S02-ZD-008, left noted: it is recorded at the page, Zid Payments' (scope 'Zid Payments', no section in its identifier), which holds sections for two countries, Saudi Arabia and Kuwait: tied to several.
+- S02-ZD-112, placed: joined S02-V-177 (S02-VP-11). Its identifier records it under each of Zid Payments' sections, 'لنجومنا السعوديين; لطاقمنا الكويتي', each headed for one country (a reading).
+- S02-ZD-119, left noted: the help centre's FAQ on sales channels (scope 'أمازون') is tied to no country, and the statement names two, Saudi Arabia and the UAE.
+- S02-ZD-122, S02-ZD-123, S02-ZD-154 and S02-ZD-155, placed: joined S02-V-175 (S02-VP-10), the merchant's country, Saudi Arabia or Kuwait, by each section's heading (a reading).
+- S02-ZD-174 and S02-ZD-175, placed: joined S02-V-180 (S02-VP-13), the merchant's country, Saudi Arabia or Kuwait, by each section's heading (a reading).
+- S02-ZD-347, S02-ZD-348 and S02-ZD-349, left noted: zid.sa's pricing page (scope 'zid.sa pricing page') is tied by no words of the platform to one country, and zid.sa holds pages for several (S02-ZD-389 to S02-ZD-394's scopes).
+- S02-ZD-350, S02-ZD-351 and S02-ZD-352, placed: joined S02-V-181 (S02-VP-14), the merchant's country, Egypt, by the site zid.eg (a reading).
+- S02-ZD-353, left noted: its source is two pricing pages (scope 'zid.eg and zid.sa pricing pages'), zid.eg's, tied to Egypt, and zid.sa's, tied to no one country.
+- S02-ZD-367, placed: a new row, S02-V-298 (S02-VP-08), 'وبين شركة زد مصر' (my translation: and the company Zid Egypt), and joined S02-V-172 (S02-VP-09). The merchant's country, Egypt, by the site zid.eg (a reading).
+- S02-ZD-369, S02-ZD-370 and S02-ZD-371, placed: joined S02-V-181 (S02-VP-14). S02-ZD-371 also raises a new row, S02-V-299 (S02-VP-15), 'وتخضع لضريبة القيمة المضافة (ض.ق.م) بالنسبة القانونية السارية' (my translation: and are subject to VAT at the applicable legal rate). The merchant's country, Egypt, by the site zid.eg (a reading). S02-ZD-370's payment methods, which zid.eg's Terms accept for its plans, are read as how the platform's fees are billed (my reading).
+- S02-ZD-372, S02-ZD-373, S02-ZD-374, S02-ZD-376, S02-ZD-378, S02-ZD-379, S02-ZD-380, S02-ZD-381 and S02-ZD-382, placed: joined S02-V-172 (S02-VP-09), Egypt's law and courts under zid.eg's Terms. S02-ZD-373 also joined S02-V-184 (S02-VP-16), for 'الضرائب' (my translation: taxes) among the Egyptian laws the merchant must comply with. S02-ZD-382 also joined S02-V-298 (S02-VP-08). The merchant's country, Egypt, by the site zid.eg (a reading).
+- S02-ZD-383, S02-ZD-384 and S02-ZD-385, placed: a new row, S02-V-300 (S02-VP-19), 'الجهة المسؤولة عن معالجة بياناتك الشخصية هي: زد مصر' (my translation: the party responsible for processing your personal data is Zid Egypt), with Egypt's Personal Data Protection Law and transfers outside Egypt. The merchant's country, Egypt, by the site zid.eg (a reading).
+- S02-ZD-389 and S02-ZD-390, placed: joined S02-V-181 (S02-VP-14), the merchant's country, Egypt, by zid.sa's page for Egypt, whose hero names merchants.
+- S02-ZD-391 and S02-ZD-392, placed: joined S02-V-181 (S02-VP-14), the merchant's country, Syria, by zid.sa's page for Syria (a reading).
+- S02-ZD-393 and S02-ZD-394, placed: joined S02-V-181 (S02-VP-14). Each is recorded from three pages, zid.sa's for the UAE, Kuwait and Oman, each tied to one country by its hero, which names merchants, and the same price stands on each.
+- S02-ZD-398, S02-ZD-408, S02-ZD-411 and S02-ZD-418, placed: joined S02-V-181 (S02-VP-14), Zid Payments' fees, and S02-V-299 (S02-VP-15), the fees 'غير شاملة لضريبة القيمة المضافة' (my translation: excluding VAT). The merchant's country, Saudi Arabia or Kuwait, by Zid Payments' sections (a reading).
+- S02-ZD-400, S02-ZD-407, S02-ZD-413 and S02-ZD-419, placed: joined S02-V-180 (S02-VP-13), when Zid Payments pays the merchant, by the same sections (a reading).
+- S02-ZD-401 and S02-ZD-414, placed: joined S02-V-175 (S02-VP-10), the check of the merchant's information within two working days, and S02-V-177 (S02-VP-11), activation at once. Saudi Arabia, by the same sections (a reading).
+- S02-ZD-421, placed: joined S02-V-181 (S02-VP-14), no commission on sales, read as one of the platform's fees (my reading). Syria, by zid.sa's page for Syria (a reading).
+- S02-ZD-422, placed: joined S02-V-179 (S02-VP-12), Bemira for e-payments. Syria, by the same page (a reading).
+- S02-ZD-423, placed: joined S02-V-175 (S02-VP-10), no commercial registration needed to open the store. Syria, by the same page (a reading).
+
+### Rows added and joined (part RD1-S4)
+
+No row was replaced or removed. Three rows were added: S02-V-298 (S02-VP-08), S02-V-299 (S02-VP-15) and S02-V-300 (S02-VP-19). Nine rows took statements: S02-V-172, S02-V-175, S02-V-177, S02-V-179, S02-V-180, S02-V-181, S02-V-184, S02-V-298 and S02-V-299, each with the evidence for them added after its own. x_words took Zid's words for X under S02-VP-08, S02-VP-10 to S02-VP-16 and S02-VP-19. Each point the part touched has a note, "Second pass, RD1-S4", naming what it placed there.
+
+### Points that now hold both an every store answer and a country's answer (part RD1-S4)
+
+S02-VP-08 (S02-V-169 and S02-V-298), S02-VP-09 (S02-V-171 and S02-V-172), S02-VP-15 (S02-V-182 and S02-V-299) and S02-VP-19 (S02-V-220 and S02-V-300). Both are kept, and each point's note says so: phase C weighs them. Zid's gap rows S02-V-170 (S02-VP-08) and S02-V-173 (S02-VP-09), on S02-ZD-G03, and S02-V-291 (S02-VP-15), on S02-ZD-G08, stand as they were: no task of this part leads to them.
+
+### Candidates for a new point (part RD1-S4)
+
+None. Every placed statement answers one of (c)'s twelve kinds. S02-ZD-370's payment methods, which zid.eg's Terms accept for its plans, are read as how the platform's fees are billed (S02-VP-14), not as a new kind. Read otherwise, they would be a candidate: X, the means by which the merchant pays the platform, 'وسائل الدفع' (my translation: payment methods); the question, what decides it.
+
+### Searches (part RD1-S4)
+
+No point was raised, so no earlier platform's rows were searched for. To find the platform's own words that tie each page to its country, the slice's Zid statements were filtered by source: zid.sa's pages for Egypt, Syria, the UAE, Kuwait and Oman, and zid.sa's and zid.eg's pricing pages. The pages' heroes, S02-ZD-061, S02-ZD-137, S02-ZD-138, S02-ZD-386, S02-ZD-387 and S02-ZD-388 (under (d)), were read.
+
+### Rechecks (part RD1-S4)
+
+Each joined row was compared with the Zid statements already in it: its basis, `answers`, holds for each statement joined, whose own words name X, and whose site, page or section names the decider in its role.
+
+### Calls (part RD1-S4)
+
+1. S02-ZD-112 and S02-ZD-008, the Arabic and English answers to whether Zid Payments is available across the Gulf, are recorded differently. S02-ZD-112's identifier names both of the page's sections, for Saudi Arabia and for Kuwait, as S02-ZD-393's names each of three one-country pages: each place it is recorded from is tied to one country, so it is placed. S02-ZD-008's identifier and scope name only the page, which holds both sections: tied to several, it stays noted. Its answer, Saudi Arabia and Kuwait, is S02-V-177's already.
+2. S02-ZD-393 and S02-ZD-394, each recorded from three pages each tied to one country, are placed: no page they come from is tied to several.
+3. S02-ZD-353, recorded from zid.eg's and zid.sa's pricing pages, stays noted: one of its two pages is tied to no one country.
+4. zid.sa's own pricing page (S02-ZD-347 to S02-ZD-349) is read as tied to no one country: its recorded scope names none, and the site holds pages for several.
+5. Joining, not adding ("How the rereads are decided", 2): where the merchant is, and the merchant's country, are read as one decider in rule 4's sense, so one answer stays one row, and the evidence each joined statement adds names its country.
+6. Ids: this part's new rows are S02-V-298 to S02-V-300. It raised no point.
