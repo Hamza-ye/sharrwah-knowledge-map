@@ -4,7 +4,8 @@ This is `PLAN.md` Stage 4, subject S-02. You are one agent with one task: one pa
 
 **Read only this brief and, in `studies/subjects/S-02/`:**
 - `bullets.tsv`, the questions phase A asked of each platform;
-- your points' rows, and S02-VP-26's rows once, printed by `method/point_view.py`;
+- your points' rows, printed by `method/point_view.py`;
+- once, what defines a market on each platform: S02-VP-26's keys as RD2's part wrote them (`analysis_edit.py studies/subjects/S-02 RD2 show S02-VP-26`), or its rows where that part hasn't run;
 - the statements, gaps and absences those rows name, printed by id;
 - the platforms' terms, from your root decision's slice;
 - your root decision's phase C files, `c/<root decision>/answers.tsv` and `points.tsv`, through the tool's `show`, only for the points your message names.
@@ -14,7 +15,7 @@ Don't read `notes*.md` files, any `note` column, the platforms' own folders, or 
 **Printing.** Never read a file whole. Print what you need:
 
 ```
-python3 -I method/point_view.py studies/subjects/S-02 <RD> <vp_id> [<vp_id> ...]
+python3 -I method/point_view.py studies/subjects/S-02 <RD> <vp_id> [<vp_id> ...] [--platform <p>] [--full]
 python3 -I method/point_view.py studies/subjects/S-02 --records <id>,<id>
 python3 -I method/subject_slice.py studies/subjects/S-02 --print <RD> --what terms --platform <p>
 python3 -I method/subject_slice.py studies/subjects/S-02 --print <RD> --bullet <b> --platform <p> | grep -i <word>
@@ -26,6 +27,7 @@ python3 -I method/subject_slice.py studies/subjects/S-02 --print <RD> --bullet <
   - each statement with its kind, scope and release marker;
   - the statements under (h) that condition them;
   - for a `gap` row, what the gap asks; for an `absent` row, what is absent.
+- **`--platform`** prints one platform's rows, for a large point; **`--full`** prints rows' evidence whole.
 - **`--records`** prints statements, gaps and absences whole by id, from any bullet, (h) among them, each with its kind.
 - **The slice printer with `grep`** finds a platform's other statements by their words, such as those that name a law.
 
@@ -40,13 +42,13 @@ python3 -I method/subject_slice.py studies/subjects/S-02 --print <RD> --bullet <
 
 **Step 0 is done.** The subject is about the product: it asks what Sharrwah's data model holds. Don't repeat it.
 
-**What S-02 decides, and what it leaves to other subjects** (`frame.md`). S-02 decides where a value is held and who sets it, not the value itself. The value of each setting belongs to the subject that covers it:
-- payment methods and the providers that process or convert payments: S-04;
+**What S-02 decides, and what it leaves to other subjects** (`frame.md`). S-02 decides where a value is held and who sets it, for every kind of setting, currency and payment methods among them. The value itself, and what a party does with it, belong to the subject that covers it:
+- the company that sells to the buyer or contracts with the merchant, merchants of record among them: S-03;
+- payment methods' values, and the providers that process or convert payments: S-04;
 - taxes: S-05;
 - which countries Sharrwah serves: S-07;
-- currency: S-09;
-- delivery: S-10;
-- the contracting company: S-03.
+- currency's values: S-09;
+- delivery and carriers: S-10.
 
 **Then, for each point of your part,** apply the test form's steps 3 to 5 below. They are `PLAN.md`'s, section 6, as the pilot applied them. What this brief adds for S-02 is marked *(the coordinator's own, 27 October 2026)*; S-02's method report lists each, and the founder sees them in S-02's report. What the pilot added keeps its own mark.
 
@@ -72,10 +74,11 @@ Each variation point asks one question of one X, from one bullet. For each point
 | `what decides "X"` (c) | `every store`; `the store's country` (as a field or record holds it, such as the store's address or location); `the merchant's country` (where the merchant is, resides or is domiciled, and the one country a site, page or section is tied to); `the business's registered country`; `a business entity`; `the billing address`; or the platform's own word for another decider |
 | `what fills "X"` (a) | the field or record, in the platform's words: the store's address, its billing address, a business entity, the account, a country field |
 | `what countries fill "X"`, `what countries are kept out of "X"` (d) | each country, or a group the platform names, such as the Gulf states |
-| `what defines "X"` (e) | `a country`, `a region` (a state, province or group of countries), `a city`, `a group of customers`, `a location` (a retail location or point of sale), `a channel` (a sales channel or marketplace), `a storefront`; `a default market` (one the platform makes for the store, such as a domestic or primary market); `a market within a market` (a submarket); `no market` |
-| `what limits "X"` (e) | each limit or rule, as a number with what it counts, or the rule in the platform's words |
+| `what defines "X"` (e) | `a country` (one per market); `several countries` (a market of more than one country, or a group of them such as the Gulf states); `a region` (a state or province within a country); `a city`; `a group of customers` (segments or tags); `a company` (a business buyer or its locations); `a location` (a retail location or point of sale); `a channel` (a sales channel or marketplace); `a storefront` (what it serves, such as a region or a brand, goes in `note`); `a default market` (one the platform makes for the store, such as a domestic or primary market); `a market within a market` (a submarket); `no market` |
+| `what limits "X"` (e) | `a number of markets per store, set by plan`; `a number of markets per store, the same on every plan`; `no limit on the number of markets`; `markets of some kinds only on some plans`; `one country per market`; `a country in one market only`; `a number of <things> per market`, naming the things, such as catalogs, languages or domains. The numbers and plans go in `note` |
 
-Where a row gives an answer the vocabulary doesn't hold, its key is the platform's own words. A key in two platforms' own words is the same only by the rule for "same", below. Write the keys with the tool's `keys`. Every answer row takes at least one key.
+Where a row gives an answer the vocabulary doesn't hold, its key is the platform's own words. Where the platform doesn't say what its term means, `cause_reading` says so. A key in two platforms' own words is the same only by the rule for "same", below. Write the keys with the tool's `keys`. Every answer row takes at least one key.
+- **A row that answers another question than its point's** (listed under "Rows phase B left for you to weigh") is keyed by what it says. Where a decision for the founder follows, the item goes to the subject that owns that question.
 
 - **What each platform does on each key.** The tool works it out from the keys, as one of four:
   - `gives`: an answer row of the platform's takes the key;
@@ -83,7 +86,8 @@ Where a row gives an answer the vocabulary doesn't hold, its key is the platform
   - `open`: the platform has only `gap` or `not covered` rows for the point; or a `gap` row of its asks for this key's answer. Say which key with `--open`;
   - `not stated`: the platform has answer rows, none takes the key, and nothing makes it open.
 
-  `lacks` and `not stated` both count as not giving the key, so two platforms that don't give it agree. A gap blocks only the keys it asks for. A gap whose scope doesn't overlap the scope compared (below) blocks nothing.
+  `lacks` and `not stated` both count as not giving the key, so two platforms that don't give it agree. A gap blocks only the keys it asks for, and only where its platform's answer could change the cause: the tool tries both ways and says so. A gap whose scope doesn't overlap the scope compared (below) blocks nothing. A gap can't be marked open on a key its platform gives.
+- **A platform that gives a key and lacks it** contradicts itself: an answer row gives it, and an `absent` row excludes it. The tool says so. Weigh the two in `cause_reading`, and say which you follow and why.
 
 ## The references, in three groups
 
@@ -97,29 +101,30 @@ Go down this list and take the first tag that applies to the key *(the order is 
 
 1. **`no difference`** *(the pilot's coordinator's own)*: every platform gives the key.
    - *(The pilot's coordinator's own, 17 October 2026:)* a variant that names a party only to say it has no part names no one filling X.
-2. **`market, named rule`:** a statement names a law, or a regulator's rule, as the reason for, or the condition of, the key on a platform that differs from the others.
+2. **`market, named rule`:** a statement names a law, or a regulator's rule, as the reason why a platform gives the key, or doesn't, where the platforms differ on it.
    - *(The pilot's coordinator's own:)* it names a particular law, or a particular regulator with its rule. Generic wording such as "applicable law" or "a regulatory authority" doesn't count.
    - It may be any statement of the subject: one of the key's rows, a statement under (h) that conditions them, or another statement of the platform that you find by its words. Cite it.
-3. **`maturity`:** every statement that gives the key on a platform that differs carries a release marker in `marker`, such as beta, early access, preview or sunset. A marker on one of several statements doesn't decide it *(the coordinator's own, 27 October 2026, from the pilot's problems)*.
-4. **`business model`:** WooCommerce differs from the four hosted platforms on the key, the four agree, and a WooCommerce statement says what it does or doesn't provide *(the pilot's coordinator's own)*.
-   - *(The coordinator's own, 27 October 2026:)* also, under `what limits "X"`, where the limits that differ are ones the platforms' statements, or the statements under (h) that condition them, tie to their plans or fees.
+3. **`maturity`:** every statement that gives the key on a platform that differs carries a release marker in `marker`, such as beta, early access, preview or sunset; cite them, and the tool checks their markers. A marker on one of several statements doesn't decide it *(the coordinator's own, 27 October 2026, from the pilot's problems)*.
+4. **`business model`:** WooCommerce differs from the four hosted platforms on the key, the four agree, and a WooCommerce statement says what it does or doesn't provide *(the pilot's coordinator's own)*. The statement may be one of the point's rows' or one you find in the slice. Without one, this test doesn't apply.
+   - *(The coordinator's own, 27 October 2026:)* also, under `what limits "X"`, where the key is a limit the platforms' statements, or the statements under (h) that condition them, tie to their plans or fees, such as `a number of markets per store, set by plan`. This needs no WooCommerce statement.
 5. **`market, pattern`:** Salla and Zid agree on the key, Shopify and BigCommerce agree on it, and the two pairs differ.
 6. **`vendor choice`:** Salla and Zid differ on the key, or Shopify and BigCommerce do.
 7. **`unknown`:** none of the above can be shown, such as when a test needs a platform that is `open` on the key. Name the rows that leave it open in `blocked_by`.
 
 **Rules for comparing:**
-- **Same.** Two answers are the same when they use the same words, or a platform's own translation of them in `terms.tsv`, or name the same party or identifier. *(The pilot's coordinator's own:)* the merchant, the buyer and the platform itself are each one party on every platform, and any other party is the same only by name.
+- **Same.** Two answers are the same when they use the same words, or a platform's own translation of them in `terms.tsv`, or name the same party or identifier. The same words that `terms.tsv` defines differently on two platforms, such as Shopify's "Designated Country" and WooCommerce's "Designated Countries", aren't the same. *(The pilot's coordinator's own:)* the merchant, the buyer and the platform itself are each one party on every platform, and any other party is the same only by name.
 - **`a market the store sells into`** gives the same key on two platforms where it names what each one's rows under S02-VP-26, what defines a market, name for it *(the coordinator's own, 27 October 2026)*. A row may name as its market something those rows don't name for its platform, such as a sales channel, a point of sale, or a channel's target countries. Its key is then that thing, in the vocabulary of (e), and `cause_reading` says so.
 - **Like with like.** Compare declarations (`stated`, `official page`, `shipped`) with declarations, and `observed` with `observed`, as Q1's 12 October rule does. A comparison resting on a declaration set against an observation is `unknown`, with why. The pilot's rulings on kinds hold *(the pilot's coordinator's own, 25 and 26 October 2026)*:
   - a platform's documentation about its own policies is `stated`;
   - only terms, pricing and legal pages, and agreements they incorporate, are `official page`;
   - an API's schema as its own introspection answers it is `shipped`.
 
-  `--records` prints each statement's kind.
+  `--records` prints each statement's kind. Like with like compares the statements that give a key on two platforms. A platform that doesn't state a key has no statement to compare, so it counts as not giving the key, whatever the kinds of the others' statements.
 - **Scopes** *(the pilot's coordinator's own)*. Compare rows whose scopes overlap: the same country, or general. Record the scopes you compared in `scopes_compared`.
   - *(The coordinator's own, 27 October 2026, from the pilot's problems:)* a scope that names a plan, a feature, a store or a business type, but no country, region or site, is general for this test.
+  - *(The coordinator's own, 27 October 2026:)* for `no difference`, the platforms may give the key in scopes that don't overlap. Record each in `scopes_compared`.
 - **Absence** counts only from an `absent` row, which rests on a complete list. Absence ids (`S02-XX-N…`) may be cited wherever statements are.
-- **A cause is a reading.** Write it as one sentence beginning "Reading:". It never becomes a platform statement.
+- **A cause is a reading.** Write it as one sentence beginning "Reading:", for every key but one with `no difference`. It never becomes a platform statement.
 
 ## Step 4: coexistence, for each point
 
@@ -132,7 +137,9 @@ Give each platform the letter for how it binds its answers to the point. Where i
 - `D`: the platform gives only one answer. Cite a statement saying it can't be another, or an `absent` row. A platform with an open gap on the point can't be `D`;
 - `unknown` *(the pilot's coordinator's own)*: the statements don't show which.
 
-*(The coordinator's own, 27 October 2026:)* under (a) to (d), where an answer is a rule the platform's terms fix rather than a choice, give `unknown` unless a statement shows how answers bind.
+*(The coordinator's own, 27 October 2026:)*
+- under (a) to (d), give `B` where a statement shows one answer per store, chosen by a record of the store's, such as one contracting party per billing address. Where an answer is a rule the platform's terms fix, give `unknown` unless a statement shows how answers bind;
+- under `what limits "X"`, give every platform `unknown`: limits don't bind as answers do.
 
 **Generality.** When one answer is a restricted form of another, and the general one can reach it by configuration, name the general one's rows in `general_variant`, and the statement that shows it can reach the other in `general_basis`. For example, a value per market is general, and `the whole store` its restricted form, where a statement shows that a store can hold one market for all its buyers.
 
@@ -149,7 +156,7 @@ Give each platform the letter for how it binds its answers to the point. Where i
 | `maturity` or `unknown`, expensive to change | kept open as a variation point until evidence settles it |
 | `maturity` or `unknown`, cheap to change *(the pilot's coordinator's own)* | left to the build |
 
-*(The coordinator's own, 27 October 2026:)* the market rows of the pilot's table bind "D with a market cause". Read for one key at a time, a market cause binds the key per market.
+*(The coordinator's own, 27 October 2026:)* the market rows of the pilot's table bind "D with a market cause". Read for one key at a time, a market cause binds the key per market. Under (d) and (e), whose keys are about markets and countries themselves, that would be circular. There, a market cause follows as vendor choice does, and `cause_reading` names the cause.
 
 **For each point,** list in its point row each letter's rule that applies. A letter's rule applies when at least one platform has that letter *(the pilot's coordinator's own)*:
 
@@ -163,11 +170,12 @@ If none applies, write `none applies`.
 
 **Expensive to change** means that getting it wrong would mean changing money flows, the legal structure, the data model or partner contracts after launch. Judge it for each key, and say why in `expensive_because`, or write `cheap:` with why. *(The coordinator's own, 27 October 2026, from `frame.md`: S-02 is expensive because every per-market binding hangs on it.)*
 - **Where a value is held** is the data model, so expensive: the keys of `what fills`, `what decides`, `what defines`, and `a market the store sells into` under `what "X" takes its value per`. `the buyer's country`, `the store's own country` and `the whole store` are expensive where they decide what is stored. They are cheap where they only pick a default or a display: say which.
-- **Who sets, checks, creates or changes it** is expensive only where the key's party moves money, carries the legal structure, or is a partner under contract, such as a payment provider that converts or holds funds. Elsewhere it is cheap, a screen or a permission.
-- **`what limits "X"`** is cheap where the limit is a number the configuration sets, and expensive where it is a rule on what a market may hold.
+- **Who sets, checks, creates or changes it:** judge by what the key's party does with X. Moving money, holding funds, or acting under a contract with the merchant, such as converting or processing payments, is expensive. Naming, displaying or translating is cheap, and so is a screen or a permission.
+- **`what limits "X"`:** a number, whether the platform fixes it or a plan sets it, is cheap, since Sharrwah sets its own. A rule on what a market may hold is expensive.
 - **`what must hold before "X" changes`** is expensive where the condition touches money or the legal structure, such as a balance to be cleared; elsewhere, cheap.
 
 **Founder items.** Where "a decision for the founder" follows, write the founder's question in `founder_item`. The coordinator writes the recommendation, not you.
+- **Under `what defines "X"`,** the keys are options of one decision. Every key there that takes a founder item takes the same one: "What may define a market in Sharrwah?" The coordinator writes it once.
 - **A key whose value belongs to another subject** (the list under "The subject") is that subject's. Write the founder's question beginning with the subject's id, such as "S-04: does a payment provider convert the buyer's currency?". The coordinator moves it there.
 - **Dependencies** *(the coordinator's own, 27 October 2026, from the pilot's register: founder items aren't independent decisions)*. In `depends_on`, name the points whose own founder items, once answered, would settle this one, and say why in `note`. This is a reading. The likely ones:
   - a `who sets` point depends on its twin, the point of the same kind of setting that asks `what "X" takes its value per`;
@@ -200,7 +208,7 @@ Phase B's parts marked these as readings, and the coordinator lists them for you
 - **Depth by risk** (`PLAN.md`, Stage 4). A key every platform gives takes a light check: confirm it from the rows, cite one statement per platform, and go on.
 - **Stop and report** if a point can't be analysed from these files. Name what is missing.
 - **Write as you go:** each point's keys, answers and point row as soon as they are done.
-- **Size.** Keep count of your tool calls. At about 100, finish the point in hand, write its rows, run the check, and stop, saying which points are left. A fresh agent continues from your rows.
+- **Size.** Keep count of your tool calls. Write a point's answers in one `batch`. At about 100 calls, finish the point in hand, write its rows, run the check, and stop, saying which points are left. A fresh agent continues from your rows.
 
 ## Output, in `studies/subjects/S-02/c/<root decision>/`
 
@@ -213,6 +221,7 @@ python3 -I method/analysis_edit.py studies/subjects/S-02 <RD> point <vp_id> --co
 python3 -I method/analysis_edit.py studies/subjects/S-02 <RD> show <vp_id>
 python3 -I method/analysis_edit.py studies/subjects/S-02 <RD> check <vp_id> ...
 python3 -I method/analysis_edit.py studies/subjects/S-02 <RD> notes '<your part>' '<text>'
+python3 -I method/analysis_edit.py studies/subjects/S-02 <RD> batch <file>
 ```
 
 - **`keys`** writes the point's keys and prints, for each key, what each platform does on it (`gives`, `lacks`, `open`, `not stated`), with the cause the mechanical tests give. It replaces the point's keys whole, so give every row's keys each time. The point's answer rows whose key no longer exists are dropped.
@@ -221,17 +230,19 @@ python3 -I method/analysis_edit.py studies/subjects/S-02 <RD> notes '<your part>
 - **`show`** prints the point's keys, its answer rows and its point row.
 - **`check`** checks the rows of the points named, and names each answer row, key or point row that is missing.
 - **`notes`** appends your text to `notes-c.md` under a heading for your part.
+- **`batch`** runs a file of commands, one per line, each as it would follow `<RD>` (such as `answer S02-VP-41 'the whole store' --cause ...`), and says which lines failed. Keep the file in your scratch folder.
 
 It refuses:
 - a tag outside step 3;
 - a phrase outside the rule tables;
 - an id that is neither a statement, gap or absence of the subject, nor a row of a point;
 - a coexistence entry it can't read, or a platform with no entry or two;
-- `D` with no basis;
+- `D` with no basis, or for a platform that gives two keys or more;
 - `none applies` beside a rule;
 - `bound per product` without a `C`, or a `C` without it;
 - a founder decision with an empty `founder_item`, or with `cheap:`;
 - `no difference` for a key some platform doesn't give;
+- `maturity` citing a statement with no release marker;
 - a `blocked_by` row that is an answer or `absent`;
 - a `depends_on` that is no point, or the point itself.
 

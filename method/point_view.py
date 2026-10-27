@@ -1,15 +1,16 @@
 """Print what phase C reads on one or more variation points of a root decision, or records by id.
 
-Usage: python3 -I method/point_view.py SUBJECT_DIR RD VP_ID [VP_ID ...]
+Usage: python3 -I method/point_view.py SUBJECT_DIR RD VP_ID [VP_ID ...] [--full] [--platform P]
        python3 -I method/point_view.py SUBJECT_DIR --records ID[,ID ...]
 
 For each point: its question and kind of X, then each platform's rows, in the brief's three groups (Salla and Zid,
 Shopify and BigCommerce, then WooCommerce). For each row:
 - its form, excerpt and evidence (basis_evidence);
-- each statement it names, with its kind (SUBJECT_DIR/kinds.tsv), scope and release marker;
+- the statements it names, grouped by kind (SUBJECT_DIR/kinds.tsv), with their scopes and release markers;
 - the statements under (h) that name its statements in `conditions`;
 - for a `gap` row, what each of its gaps asks; for an `absent` row, what each absence says is absent.
-No `note` column is printed.
+--platform P prints one platform's rows only, for a large point. A row's evidence is cut at 800 characters, and its excerpt at 300, unless --full is given. A condition's text is printed
+once per point, at its first row; later rows name it by id. No `note` column is printed.
 
 --records prints statements, gaps and absences whole by id, from any bullet, (h) among them, each with its platform,
 kind and the columns a reader needs, but no note. Ids may be separated by commas or spaces.
@@ -77,7 +78,7 @@ class Records:
             print(f"{i}: no statement, gap or absence of the subject has this id", file=sys.stderr)
 
 
-def main(subj, rd, vps):
+def main(subj, rd, vps, full=False, only=None):
     points = {p["vp_id"]: p for p in table(os.path.join(subj, "b", rd, "variation-points.tsv"))}
     variants = table(os.path.join(subj, "b", rd, "variants.tsv"))
     R = Records(subj)
@@ -88,7 +89,8 @@ def main(subj, rd, vps):
             continue
         print(f"{vp} ({p['bullet']}) {p['question']}")
         print(f"  kind of X: {p['x_words'].split(' | ')[0]}")
-        for plat in PLATFORMS:
+        shown = set()
+        for plat in [x for x in PLATFORMS if not only or x == only]:
             rows = [v for v in variants if v["vp_id"] == vp and v["platform"] == plat]
             print(f"  {plat}:" + ("" if rows else " no row"))
             for v in rows:
@@ -96,12 +98,25 @@ def main(subj, rd, vps):
                 sids = ids(v["stmt_ids"])
                 print(f"    {v['variant_id']} {form} | basis {v['basis'] or '-'} | {len(sids)} statements")
                 if form == "answer":
-                    print(f"      variant: {cut(v['variant'], 300)}")
-                    print(f"      evidence: {cut(v['basis_evidence'], 800)}")
-                for s in sids:
-                    r = R.st.get(s, {})
-                    extra = "".join(f" | {c}: {cut(r.get(c, ''), 90)}" for c in ("scope", "marker") if r.get(c, "").strip())
-                    print(f"      {s}: kind {R.kind.get(s, '?')}{extra}")
+                    print(f"      variant: {cut(v['variant'], 10**6 if full else 300)}")
+                    print(f"      evidence: {cut(v['basis_evidence'], 10**6 if full else 800)}")
+                by_kind = {}
+                for x in sids:
+                    by_kind.setdefault(R.kind.get(x, "?"), []).append(x)
+                if sids:
+                    print("      statements by kind: " + " | ".join(f"{k}: {';'.join(v)}" for k, v in by_kind.items()))
+                scopes = {}
+                for x in sids:
+                    sc = R.st.get(x, {}).get("scope", "").strip()
+                    if sc:
+                        scopes.setdefault(sc, []).append(x)
+                for sc, xs in list(scopes.items())[:6]:
+                    print(f"      scope {cut(sc, 100)}: {';'.join(xs)}")
+                if len(scopes) > 6:
+                    print(f"      {len(scopes) - 6} more scopes (print the statements with --records)")
+                marks = [f"{x} ({R.st[x]['marker']})" for x in sids if x in R.st and R.st[x]["marker"].strip()]
+                if marks:
+                    print(f"      release markers: {'; '.join(marks)}")
                 for g in ids(v["gap_ids"]):
                     print(f"      gap {g}: {cut(R.gap.get(g, {}).get('what_is_missing', '(not found)'), 400)}")
                 for a in ids(v["absence_ids"]):
@@ -111,11 +126,16 @@ def main(subj, rd, vps):
                     for h in R.cond.get(s, []):
                         if h not in hs and h not in sids:
                             hs.append(h)
-                for h in hs[:8]:
+                again = [h for h in hs if h in shown]
+                for h in [h for h in hs if h not in shown][:8]:
                     r = R.st[h]
+                    shown.add(h)
                     print(f"      condition {h}: {cut(r['statement'], 200)}" + (f" [scope: {cut(r['scope'], 80)}]" if r["scope"].strip() else ""))
-                if len(hs) > 8:
-                    print(f"      conditions also: {';'.join(hs[8:])}")
+                rest = [h for h in hs if h not in shown]
+                if again:
+                    print(f"      conditions printed above: {';'.join(again)}")
+                if rest:
+                    print(f"      conditions also (print with --records): {';'.join(rest)}")
         print()
 
 
@@ -127,4 +147,11 @@ if __name__ == "__main__":
     elif len(sys.argv) < 4:
         sys.exit(__doc__)
     else:
-        main(sys.argv[1].rstrip("/"), sys.argv[2], sys.argv[3:])
+        rest, only = sys.argv[3:], None
+        if "--platform" in rest:
+            k = rest.index("--platform")
+            only = rest[k + 1] if k + 1 < len(rest) else sys.exit("--platform names a platform")
+            if only not in PLATFORMS:
+                sys.exit(f"--platform: {only} is not one of {', '.join(PLATFORMS)}")
+            rest = rest[:k] + rest[k + 2:]
+        main(sys.argv[1].rstrip("/"), sys.argv[2], [a for a in rest if a != "--full"], full="--full" in rest, only=only)

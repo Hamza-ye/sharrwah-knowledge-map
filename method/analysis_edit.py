@@ -9,6 +9,7 @@ Usage: python3 -I method/analysis_edit.py SUBJECT_DIR RD keys VP_ID --row VID=KE
        python3 -I method/analysis_edit.py SUBJECT_DIR RD show VP_ID
        python3 -I method/analysis_edit.py SUBJECT_DIR RD check [VP_ID ...]
        python3 -I method/analysis_edit.py SUBJECT_DIR RD notes PART TEXT
+       python3 -I method/analysis_edit.py SUBJECT_DIR RD batch FILE
 
 keys     gives each answer row of the point its keys (every answer row takes one at least), marks the gap rows that
          ask for a key (--open) and the absent rows that exclude one (--absent), and prints what each platform does on
@@ -21,6 +22,8 @@ show     prints the point's keys, what each platform does on each, its answer ro
 check    checks the rows of the points named (all the root decision's points without any), and names each key with no
          answer row, each answer row of the point with no key, and each point with no row. Exits 1 on a problem.
 notes    appends TEXT to notes-c.md under a heading for PART.
+batch    runs the commands in FILE, one per line as they would follow RD (such as `answer S02-VP-41 'key' --cause ...`),
+         under one lock, and says which lines failed.
 
 Each command holds a lock on c/<RD>/ while it reads and writes; files are written whole, to a temporary file first.
 What each platform does on a key:
@@ -91,6 +94,7 @@ class Subject:
         self.ppath, self.apath = os.path.join(self.dir, "points.tsv"), os.path.join(self.dir, "answers.tsv")
         _, pts = table(os.path.join(subj, "b", rd, "variation-points.tsv"))
         self.points = [p["vp_id"] for p in pts]
+        self.bullet = {p["vp_id"]: p["bullet"] for p in pts}
         self.all_points = set()
         self.rows, self.var = {}, {}
         for d in sorted(os.listdir(os.path.join(subj, "b"))):
@@ -109,6 +113,12 @@ class Subject:
                 _, rs = table(os.path.join(subj, p, name))
                 self.records |= {r.get(col, "") for r in rs}
         self.records.discard("")
+        self.marker, self.kind = {}, {}
+        for p in PLATFORMS:
+            _, rs = table(os.path.join(subj, p, "statements.tsv"))
+            self.marker.update({r["stmt_id"]: r.get("marker", "") for r in rs})
+        _, ks = table(os.path.join(subj, "kinds.tsv"))
+        self.kind = {r["id"]: r["kind"] for r in ks}
         ph, self.prow = table(self.ppath)
         ah, self.arow = table(self.apath)
         if ph and ph != PHEAD:
@@ -147,8 +157,9 @@ class Subject:
         """{key: {platform: state}} and {key: [variant_ids that give it]}"""
         rows = self.rows.get(vp, {})
         keys = []
-        for ks in km["row"].values():
-            keys += [k for k in ks if k not in keys]
+        for kind in ("row", "open", "absent"):             # a key may come from a gap or absence alone
+            for ks in km[kind].values():
+                keys += [k for k in ks if k not in keys]
         state, giving = {}, {}
         for key in keys:
             state[key], giving[key] = {}, [v for v, ks in km["row"].items() if key in ks]
@@ -167,19 +178,37 @@ class Subject:
         return state, giving
 
     @staticmethod
-    def propose(st):
-        if all(st[p] == "gives" for p in PLATFORMS):
-            return "no difference"
-        val = {p: (None if st[p] == "open" else st[p] == "gives") for p in PLATFORMS}
+    def _tag(val):
         sa, zd, sh, bc, wc = (val[p] for p in PLATFORMS)
+        if all(val.values()):
+            return "no difference"
         hosted = [sa, zd, sh, bc]
-        if None not in hosted and wc is not None and len(set(hosted)) == 1 and wc != hosted[0]:
+        if len(set(hosted)) == 1 and wc != hosted[0]:
             return "business model"
-        if None not in hosted and sa == zd and sh == bc and sa != sh:
+        if sa == zd and sh == bc and sa != sh:
             return "market, pattern"
-        if (sa is not None and zd is not None and sa != zd) or (sh is not None and bc is not None and sh != bc):
+        if sa != zd or sh != bc:
             return "vendor choice"
         return "unknown"
+
+    @classmethod
+    def propose(cls, st):
+        """The mechanical tags (tests 1, 4, 5, 6), trying each way an open platform could go: one tag if every way
+        gives it, else unknown. Test 4 also needs a WooCommerce statement saying what it does or doesn't provide."""
+        opened = [p for p in PLATFORMS if st[p] == "open"]
+        tags = set()
+        for n in range(2 ** len(opened)):
+            val = {p: st[p] == "gives" for p in PLATFORMS}
+            for i, p in enumerate(opened):
+                val[p] = bool(n >> i & 1)
+            tags.add(cls._tag(val))
+        return tags.pop() if len(tags) == 1 else "unknown"
+
+    @staticmethod
+    def blocking(st):
+        """The open platforms whose answer could change the mechanical tag."""
+        return [p for p in PLATFORMS if st[p] == "open"
+                and len({Subject._tag(dict({q: st[q] == "gives" for q in PLATFORMS}, **{p: b})) for b in (True, False)}) > 1]
 
     def answer_problems(self, vp, r, st=None):
         out = []
@@ -207,8 +236,12 @@ class Subject:
                 out.append(f"blocked_by: {x} is not a row of {vp}")
             elif row["variant"] not in ("gap", "not covered"):
                 out.append(f"blocked_by: {x} is {'an answer' if self.form(x) == 'answer' else 'absent'}, which leaves nothing open")
-        if c == "unknown" and any(s == "open" for s in st.values()) and not ids(r["blocked_by"]):
-            out.append("unknown with a platform open on the key: name the rows that leave it open in blocked_by")
+        if c == "unknown" and self.blocking(st) and not ids(r["blocked_by"]):
+            out.append(f"unknown while {', '.join(self.blocking(st))} could change it: name the rows that leave it open in blocked_by")
+        if c == "maturity":
+            unmarked = [x for x in ids(r["cause_basis"]) if x in self.marker and not self.marker[x].strip()]
+            if unmarked:
+                out.append(f"maturity, but {', '.join(unmarked)} carries no release marker")
         fol = phrases(r["follows"])
         allowed = (COMMON, PER_MARKET, FOUNDER, BUILD, OPEN)
         for f in fol:
@@ -217,7 +250,8 @@ class Subject:
         cheap = r["expensive_because"].startswith("cheap")
         if not r["expensive_because"].strip():
             out.append("expensive_because is empty")
-        want = {"no difference": [COMMON], "market, named rule": [PER_MARKET], "market, pattern": [PER_MARKET],
+        market = [BUILD if cheap else FOUNDER] if self.bullet.get(vp) in ("d", "e") else [PER_MARKET]
+        want = {"no difference": [COMMON], "market, named rule": market, "market, pattern": market,
                 "vendor choice": [BUILD if cheap else FOUNDER], "business model": [BUILD if cheap else FOUNDER],
                 "maturity": [BUILD if cheap else OPEN], "unknown": [BUILD if cheap else OPEN]}.get(c)
         if want and sorted(fol) != sorted(want):
@@ -248,6 +282,11 @@ class Subject:
             if m.group(2) == "D" and any(v["platform"] == m.group(1) and v["variant"] in ("gap", "not covered")
                                          for v in self.rows.get(vp, {}).values()):
                 out.append(f"{e}: a platform with an open gap on the point can't be D")
+            if m.group(2) == "D":
+                km = self.parse_keys(r["keys"])
+                given = {k for v, ks in km["row"].items() if self.rows.get(vp, {}).get(v, {}).get("platform") == m.group(1) for k in ks}
+                if len(given) > 1:
+                    out.append(f"{e}: D is one answer, but {m.group(1)} gives {len(given)} keys")
         missing = [p for p in PLATFORMS if p not in seen]
         if missing:
             out.append(f"coexistence has no entry for {', '.join(missing)}")
@@ -292,8 +331,18 @@ def show(S, vp):
     state, giving = S.matrix(vp, km)
     print(f"{vp} keys: {prow['keys']}")
     for key, st in state.items():
+        kinds = {}
+        for v in giving[key]:
+            row = S.rows[vp][v]
+            kinds.setdefault(row["platform"], set()).update(S.kind.get(x, "?") for x in ids(row["stmt_ids"]))
         print(f"  {key!r}: " + "; ".join(f"{p} {st[p]}" for p in PLATFORMS) + f" | rows {';'.join(giving[key])}"
-              f" | the tests give: {S.propose(st)}")
+              f" | the tests give: {S.propose(st)}"
+              + (f" | open and could change it: {', '.join(S.blocking(st))}" if S.blocking(st) else ""))
+        print("      kinds of what gives it: " + "; ".join(f"{p} {'/'.join(sorted(k))}" for p, k in kinds.items()))
+        for p in PLATFORMS:
+            if st[p] == "gives" and any(key in km["absent"].get(v, []) for v in S.rows[vp]
+                                        if S.rows[vp][v]["platform"] == p):
+                print(f"      contradiction: {p} gives the key and an absent row of its excludes it: weigh it in cause_reading")
     for r in S.arow:
         if r["vp_id"] == vp:
             print(f"  answer {r['key']!r}: {r['cause']} | {r['follows']} | founder: {r['founder_item'] or '-'}"
@@ -324,6 +373,11 @@ def main(subj, rd, cmd, args):
             km[flag].setdefault(vid, [])
             km[flag][vid] += [x for x in keys if x not in km[flag][vid]]
             k += 2
+        for vid, ks in km["open"].items():
+            plat = S.rows[vp][vid]["platform"]
+            given = {k for v, kk in km["row"].items() if S.rows[vp][v]["platform"] == plat for k in kk}
+            if set(ks) & given:
+                sys.exit(f"--open {vid}: {plat} gives {', '.join(sorted(set(ks) & given))}, so it isn't open on it")
         left = [v for v in S.rows.get(vp, {}) if S.form(v) == "answer" and v not in km["row"]]
         if left:
             sys.exit(f"every answer row takes a key: {', '.join(left)} has none")
@@ -414,6 +468,9 @@ def main(subj, rd, cmd, args):
                 for p in S.answer_problems(vp, r):
                     print(f"{vp} {key!r}: {p}")
                     bad += 1
+            for v, row in S.rows.get(vp, {}).items():
+                if row["variant"] == "gap" and v not in km["open"]:
+                    print(f"{vp}: note: gap row {v} marks no key; mark the key it asks for with --open, if any")
             if not prow["coexistence"]:
                 print(f"{vp}: the point row has no coexistence yet")
                 bad += 1
@@ -423,6 +480,25 @@ def main(subj, rd, cmd, args):
                     bad += 1
         print(f"{len(args or S.points)} points checked; {bad} problems")
         sys.exit(1 if bad else 0)
+    elif cmd == "batch":
+        import shlex
+        if len(args) != 1 or not os.path.exists(args[0]):
+            sys.exit("batch FILE: a file of commands, one per line, as you would give them after the root decision")
+        failed = 0
+        for n, line in enumerate(open(args[0], encoding="utf-8"), start=1):
+            if not line.strip() or line.lstrip().startswith("#"):
+                continue
+            words = shlex.split(line)
+            if words[0] == "batch":
+                sys.exit(f"line {n}: a batch can't hold a batch")
+            try:
+                main(subj, rd, words[0], words[1:])
+            except SystemExit as e:
+                if e.code not in (None, 0):
+                    print(f"line {n} failed: {e.code}")
+                    failed += 1
+        print(f"batch: {failed} lines failed")
+        sys.exit(1 if failed else 0)
     elif cmd == "notes":
         if len(args) != 2:
             sys.exit(__doc__)

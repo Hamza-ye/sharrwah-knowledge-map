@@ -522,3 +522,20 @@ It also found 16 smaller defects in the brief and the tools: files the brief rel
 - a default from the store's country, and a single value for the whole store: vendor choice.
 
 The letters' rules moved to a row per point. Expense is judged per key, so a payment provider that converts currency is expensive while the seller choosing a currency is cheap. A key whose value belongs to another subject goes to it: payments to S-04, taxes to S-05, the countries served to S-07, currency to S-09. The second dry run tests the redesign.
+
+
+**The second dry run** (on seven points, of all three root decisions) tested the redesign.
+- **The per-answer comparison tells the answers apart on the settings and on what decides the contracting party.** Currency, payment methods and the contracting party each mixed `no difference`, `business model`, `market, pattern` and `vendor choice`.
+- **On the two points about markets themselves it didn't.**
+  - **What defines a market** gave nine `vendor choice` founder items, which are one decision: what may define a market.
+  - **What limits a market** gave 31 limits, none shared, because each was a number in the platform's own words.
+- **What changed:**
+  - **Vocabularies for both points.** Under what defines a market, `several countries`, `a company` and the rest. Under what limits one, kinds of limit, with the numbers in notes.
+  - **One founder item for what defines a market.**
+  - **No circular rule.** Under (d) and (e), a market cause follows as vendor choice does, since binding a market per market would be circular.
+  - **Expense is judged by what a key's party does.** Moving money or acting under contract is expensive; naming or translating is cheap.
+  - **The tool tries each way an open platform could go,** and asks for `blocked_by` only where a gap could change the cause.
+  - **The tool flags a platform that both gives and lacks a key.**
+  - **It refuses `D` for a platform with two answers,** and `maturity` without a marker.
+  - **A `batch` command** writes a point's answers in one call, where a key a call would have passed the budget.
+  - **The printer shows one platform at a time,** and each condition once per point.
