@@ -103,7 +103,7 @@ Statements under (h) are conditions, not variants: a variant rests on at least o
    - privacy and consent: cookie consent, and the privacy settings shown to buyers;
    - store status: whether the store is open or in maintenance.
 
-   **Kinds, under (c) and (f).** A default and the options it is chosen from are one kind, such as a store's default currency and the currencies it supports. A thing or setting that fits none of the kinds raises a new kind: name it in `x_words`, and list it in `notes-b.md`. Where a statement's own words don't name its X, its `identifier` or `scope` may, as phase A recorded them from the source; quote it in `basis_evidence`.
+   **Kinds, under (c) and (f).** A default and the options it is chosen from are one kind, such as a store's default currency and the currencies it supports. A thing or setting that fits none of the kinds raises a new kind: name it in `x_words`, and list it in `notes-b.md`.
 2. **Candidates.** Each statement under one of your part's bullets that answers one of that bullet's questions gives one candidate per question and per X it answers, with its X quoted from it. A statement that names several settings, such as design, prices and currency, gives a candidate for each.
    - **The role test** applies to X itself: X must be in the question's role, as rule 1 gives it. "Market", "country" and "region" name different things on different platforms, so the test rests on what the statement says X is, not on its words.
    - **A candidate whose X passes the role test is a facet** of its root decision (`PLAN.md`, Stage 4).
@@ -136,7 +136,7 @@ Statements under (h) are conditions, not variants: a variant rests on at least o
    - **Its form.** A row takes one of four forms:
      - **an answer:** `variant` is an excerpt of one of its statements, verbatim;
      - **`absent`:** the platform's absences show it absent from a complete list, under the variation point's bullet, with those `absence_ids`. Its `kind` is the absence's kind;
-     - **`gap`:** one of the platform's gaps under the same bullet asks, in its `what_is_missing`, for this point's answer. Give those `gap_ids`;
+     - **`gap`:** one of the platform's gaps under the same bullet asks, in its `what_is_missing`, for this point's answer. Give those `gap_ids`. A `gap` row may stand beside the platform's answer rows, where its gap asks for an answer they don't give;
      - **`not covered`:** the platform has none of these. These rows go back to that platform for gap-closing (phase A2). List them in `notes-b.md`.
    - **What a value is taken per.** Under (f)'s `what "X" takes its value per`, `basis_evidence` names what the setting's value differs by, as the statement shows it, in one of four phrases: `the store's own country`, `a market the store sells into`, `the buyer's country`, or `the whole store`.
      - A value that is the same for every buyer is `the whole store`. One that differs by the buyer's country is `the buyer's country`, even where the store switches the difference on once.
@@ -152,7 +152,7 @@ Statements under (h) are conditions, not variants: a variant rests on at least o
    - `definition`: the same definition, with both quoted;
    - `answers`: the statement says who or what fills the variation point's X, in X's role.
      - `answers` rests on what the statement says, not on shared words. Its own words must name what fills X in X's role, as rule 2's role test says. `basis_evidence` quotes those words and says which role they name. The role test holds whatever a variant's basis, since shared words can be homonyms.
-     - An answer may rest on the statement's `scope`, as phase A recorded it from its source. `basis_evidence` then quotes the scope.
+     - Where a statement's own words don't name its X, or what fills it, its `identifier` or `scope` may, as phase A recorded them from the source, under any bullet. `basis_evidence` then quotes it.
      - A variant whose words name only what is kept out of X's role is not an answer variant. It goes in the variation point's `note`, with its statement's id, and its statement is noted in `notes-b.md` (rule 2). If no other variant of the platform answers, the platform's row is `gap` or `not covered`, as rule 4 says (the pilot's ruling of 25 October 2026, on its review's finding 36).
 
    A statement goes under a variation point only if at least one basis holds.

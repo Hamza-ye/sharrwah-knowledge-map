@@ -38,6 +38,12 @@ Shopify is the first platform placed under RD3, so every variation point here is
 - S02-SH-224 (f): residency or business registration requirements for buying some country-specific domains, a condition on the merchant under (c); names no setting's value per market
 - S02-SH-294 (f): the feature and permissions needed to create a shipping option, a condition of access; names no setting's value per market, and not who sets it
 - S02-SH-302 (f): an admin tree whose node 'Store default' holds the store's settings in general, of no one kind of setting
+- S02-SH-365 (f): a product price, 'Regular price 699,95 YER', on a visit intended from the United Kingdom before the market Capture UK existed (scope); one value, not what it is taken per or who sets it
+- S02-SH-366 (f): the checkout's Country/Region options and one shipping rate, 'YER 2,600.00', with 'Yemen' selected, before the market Capture UK existed (scope); one value of each, not what it is taken per or who sets it
+- S02-SH-373 (f): the same product price, 'Regular price 699,95 YER', on a visit intended from the United Kingdom after the market Capture UK was created and active (scope); one value, not what it is taken per or who sets it
+- S02-SH-374 (f): the storefront's cookie consent banner on a visit intended from the United Kingdom (scope); one banner, not what it is taken per or who sets it
+- S02-SH-375 (f): the checkout's Country/Region options, now with 'United Kingdom', and one shipping rate, 'YER 2,600.00', with 'Yemen' selected, after the market Capture UK was created (scope); one value of each, not what it is taken per or who sets it
+- S02-SH-380 (f): the feature and permissions that gate the route to update a shipping option, a condition of access; names no setting's value per market, and not who sets it
 
 ### How this part reads Shopify's statements
 

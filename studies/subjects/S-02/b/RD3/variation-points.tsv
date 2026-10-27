@@ -7,8 +7,8 @@ S02-VP-45	f	what "domains" takes its value per	domain | shopify: domains; subfol
 S02-VP-46	f	who sets "domains"	domain | shopify: domains; subfolders; URL structure; domain strategy; international domains; subfolders; web presence	S02-SH-074	
 S02-VP-47	f	what "product availability" takes its value per	products | shopify: product availability; Catalogs; available products	S02-SH-037	
 S02-VP-48	f	who sets "product availability"	products | shopify: product availability; Catalogs; available products	S02-SH-071	
-S02-VP-49	f	what "pricing" takes its value per	prices | shopify: pricing; custom prices; Catalogs (product prices and publishing); local pricing; price percentage adjustments; Global-e pricing configurations	S02-SH-055	
-S02-VP-50	f	who sets "pricing"	prices | shopify: pricing; custom prices; Catalogs (product prices and publishing); local pricing; price percentage adjustments; Global-e pricing configurations	S02-SH-055	
+S02-VP-49	f	what "pricing" takes its value per	prices | shopify: pricing; custom prices; Catalogs (product prices and publishing); local pricing; price percentage adjustments; Global-e pricing configurations; Set prices in; Compare-at price	S02-SH-055	
+S02-VP-50	f	who sets "pricing"	prices | shopify: pricing; custom prices; Catalogs (product prices and publishing); local pricing; price percentage adjustments; Global-e pricing configurations; Set prices in; Compare-at price	S02-SH-055	
 S02-VP-51	f	what "Discounts and gift cards" takes its value per	discounts and offers | shopify: Discounts and gift cards; Fixed amount discounts; discounts; discount codes	S02-SH-058	
 S02-VP-52	f	what "theme content" takes its value per	storefront design | shopify: theme content; theme customizations; theme; custom content; Hreflang tags; Section content; Online Store	S02-SH-037	
 S02-VP-53	f	who sets "theme content"	storefront design | shopify: theme content; theme customizations; theme; custom content; Hreflang tags; Section content; Online Store	S02-SH-055	
@@ -29,6 +29,7 @@ S02-VP-67	f	what "the checkout shipping and billing address form" takes its valu
 S02-VP-68	f	who sets "address autocompletion feature"	the buyer's address | shopify: checkout shipping and billing address form; address autocompletion feature; address validation feature; additional address fields	S02-SH-240	S02-SH-242 and S02-SH-244 name only who is kept out of setting the address fields and validations (rule 5): 'You can't change which additional fields are included or whether a field is required' (S02-SH-242); 'can't be deactivated unless the store is on the Shopify Plus plan' (S02-SH-244). Both are placed under the point what 'the checkout shipping and billing address form' takes its value per
 S02-VP-69	f	who sets "the Markets permission"	staff access | shopify: the Markets permission	S02-SH-238	
 S02-VP-70	f	what "inventory and fulfillment priorities" takes its value per	locations | shopify: inventory and fulfillment priorities	S02-SH-284	
-S02-VP-71	f	what "Returns and cancellations" takes its value per	returns and cancellations | shopify: Returns and cancellations; return policy profile	S02-SH-305	
-S02-VP-72	f	who sets "Returns and cancellations"	returns and cancellations | shopify: Returns and cancellations; return policy profile	S02-SH-305	
+S02-VP-71	f	what "Returns and cancellations" takes its value per	returns and cancellations | shopify: Returns and cancellations; return policy profile; Add rule	S02-SH-305	
+S02-VP-72	f	who sets "Returns and cancellations"	returns and cancellations | shopify: Returns and cancellations; return policy profile; Add rule	S02-SH-305	
 S02-VP-73	f	what "Customer privacy" takes its value per	privacy and consent | shopify: Customer privacy; Cookie banner; Data sharing opt-out	S02-SH-307	
+S02-VP-74	f	what "Business address" takes its value per	the store's address | shopify: Business address; Residential address; Address, City, State, ZIP code	S02-SH-349	
