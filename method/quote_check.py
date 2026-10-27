@@ -174,14 +174,14 @@ class Sources:
             d = os.path.join(cap, r["dir"])
             if not os.path.isdir(d):
                 continue
-            for name in sorted(os.listdir(d)):  # raw.*, raw-browser.*, rendered.html, text.txt
+            for name in sorted(os.listdir(d)):  # raw.*, raw-browser.*, rendered.html, text.txt, expanded.txt
                 fp = os.path.join(d, name)
-                if not os.path.isfile(fp) or not name.startswith(("raw", "rendered", "text")):
+                if not os.path.isfile(fp) or not name.startswith(("raw", "rendered", "text", "expanded")):
                     continue
                 if name.endswith((".pdf", ".bin", ".png", ".jpg", ".jpeg", ".gif", ".webp")):
                     continue
                 raw = open(fp, encoding="utf-8", errors="replace").read()
-                if name.startswith("text"):
+                if name.startswith(("text", "expanded")):   # the page as first shown, and the lines a click shows
                     texts.append(("shown", raw))
                     continue
                 texts.append(("source", raw))       # the markup as stored, its scripts and data included

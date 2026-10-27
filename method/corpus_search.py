@@ -279,6 +279,9 @@ def documents(platform):
                     # The page as it rendered: its visible text, and the text of its rendered markup, whose hidden
                     # parts (a closed FAQ answer) the visible text leaves out.
                     text, title = open(tp, encoding="utf-8", errors="replace").read(), ""
+                    xp = os.path.join(d, "expanded.txt")      # the lines a click shows, such as FAQ answers
+                    if os.path.isfile(xp):
+                        text += "\n" + open(xp, encoding="utf-8", errors="replace").read()
                     seen = fold(text)
                     rp = os.path.join(d, "rendered.html")
                     if os.path.isfile(rp):
