@@ -568,6 +568,7 @@ The letters' rules moved to a row per point. Expense is judged per key, so a pay
 | Part | Points | Keys | Requests | Millions |
 | --- | --- | --- | --- | --- |
 | C-RD2: what defines a market, what limits one, who creates and who changes or removes one | 4 | 43 | 24 | 4.1 |
+| C-RD3-1: currency, language, domains, product availability, prices, discounts, storefront design (both questions of each) | 14 | 52 | 50 | 9.5 |
 
 **What C-RD2 taught.**
 - **What defines a market** splits the references four ways, all `vendor choice` but one key:
@@ -586,3 +587,13 @@ The letters' rules moved to a row per point. Expense is judged per key, so a pay
   A sixth goes to S-07: may a market hold only the countries Sharrwah serves.
 - **Who creates and who changes a market** raises none. Every key there is cheap, a screen or a permission.
 - **A tool fault, fixed:** a platform whose only row is `absent` was counted `open` on every key it didn't exclude. It now counts as `not stated` there, as the brief says. RD2's rows were refreshed (`analysis_edit.py refresh`), and their check still gives no problem. Three keys keep a cause the mechanical tests don't give, each by a reading the brief allows: Shopify's customer groups, which its absence S02-SH-N03 excludes; and two limits tied to plans, by test 4's addition.
+
+**What C-RD3-1 taught.**
+- **The settings split cleanly by key:**
+  - **Commonalities:** a currency shown in the buyer's currency, and a whole-store default, on every platform. The seller sets currency, language, product availability, prices, discounts and theme content everywhere.
+  - **`business model`** where WooCommerce's core lacks what the four hosted platforms hold per market: currency, product availability, prices, discounts and theme content.
+  - **`vendor choice`** where the hosted platforms themselves differ: languages per market, domains per market.
+- **Its founder items are one question asked seven times:** whether each setting takes a value per market. Each depends on S02-VP-26, what defines a market. Six whole-store questions stand beside them. The register asks them once, as a standing decision, rather than setting by setting.
+- **Two limits of the tool, worked around by readings:**
+  - it reads one point's rows, so a statement phase B placed under one twin point but not the other is missed on the other. The next parts' messages say to weigh the twin's rows;
+  - it proposes `market, pattern` without asking whether the two platforms' statements are of comparable kinds. On discounts per buyer's country, Salla's observed statement against Zid's shipped one, the part wrote `unknown` instead.
