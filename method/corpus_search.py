@@ -4,8 +4,10 @@
 # audit re-runs. Matching ignores case, Arabic diacritics and tatweel, and the spelling variants of alef, ta
 # marbuta and alef maqsura.
 #
-# The observed repositories' fetch archives (WARC) are searched too. Their text is extracted once per commit into a
-# cache outside the repositories (~/.cache/sharrwah-corpus), which the first search builds in a few minutes.
+# The observed repositories' fetch archives (WARC) are searched too, their code bundles (JavaScript) among them, such as
+# Shopify's admin and sign-up bundles: a bundle longer than 400,000 characters is searched in pieces of 200,000, each
+# listed with its piece's number (`#piece-N`). Their text is extracted once per commit into a cache outside the
+# repositories (~/.cache/sharrwah-corpus), which the first search builds in a few minutes.
 # So are Shopify's Help Center pages held in observed-sh (English as Markdown, Arabic as content HTML), WooCommerce's
 # release files (its code first, built bundles last, and its language template i18n/languages/woocommerce.pot one
 # entry at a time), this repository's capture
@@ -45,7 +47,9 @@ HOSTS = {  # captured pages in this repository's runs, by the host they came fro
 }
 ARCHIVES = {"salla": "observed-sa", "shopify": "observed-sh"}   # whose fetch archives each platform's search reads
 CACHE = os.path.join(os.path.expanduser("~"), ".cache", "sharrwah-corpus")
-TEXTUAL = re.compile(r"(?i)text/html|application/xhtml|text/plain|text/markdown|application/json|text/x-markdown")
+TEXTUAL = re.compile(r"(?i)text/html|application/xhtml|text/plain|text/markdown|application/json|text/x-markdown|javascript|ecmascript")
+SCRIPT = re.compile(r"(?i)javascript|ecmascript")
+PIECE = 200000           # a script longer than this is held in pieces this long, each overlapping the last by 2,000
 HELD = {  # text corpora held in the observed repositories: (repository, path glob, format)
     "salla": [("observed-sa", "structures/salla/help-articles/ar/texts.jsonl", "articles"),
               ("observed-sa", "structures/salla/help-articles/en/texts.jsonl", "articles"),
@@ -174,13 +178,15 @@ def record_text(raw):
     text = body.decode(cs.group(1) if cs else "utf-8", "replace")
     if re.search(r"html", ctype, re.I):
         text = html_text(text)
+    if SCRIPT.search(ctype):                       # a code bundle is kept whole, to be cut into pieces
+        return warc.get("WARC-Target-URI", ""), text
     return warc.get("WARC-Target-URI", ""), text[:400000]
 
 def archive_documents(repo):
     """Documents of a repository's fetch archives, from the cache for its current commit, built if missing."""
     root = REPOS[repo]
     commit = subprocess.run(["git", "-C", root, "rev-parse", "HEAD"], capture_output=True, text=True).stdout.strip()
-    cache = os.path.join(CACHE, f"{repo}-{commit}.jsonl.gz")
+    cache = os.path.join(CACHE, f"{repo}-{commit}-scripts.jsonl.gz")   # "-scripts": code bundles are searched too
     if not os.path.exists(cache):
         os.makedirs(CACHE, exist_ok=True)
         names = [n for n in subprocess.run(["git", "-C", root, "ls-files"], capture_output=True, text=True).stdout.split("\n")
@@ -196,14 +202,21 @@ def archive_documents(repo):
                     for off, raw in members(p):
                         got = record_text(raw)
                         if got and got[1].strip():
-                            out.write(json.dumps({"path": n, "offset": off, "uri": got[0], "text": got[1]}, ensure_ascii=False) + "\n")
+                            text = got[1]
+                            if len(text) <= 400000:
+                                out.write(json.dumps({"path": n, "offset": off, "uri": got[0], "text": text}, ensure_ascii=False) + "\n")
+                            else:                  # a long code bundle: one document per piece, located as #piece-N
+                                for k, at in enumerate(range(0, len(text), PIECE)):
+                                    out.write(json.dumps({"path": n, "offset": off, "uri": got[0], "piece": k,
+                                                          "text": text[max(0, at - 2000):at + PIECE]}, ensure_ascii=False) + "\n")
                 except Exception as e:
                     print(f"  stopped reading {n}: {e}", file=sys.stderr)
         os.replace(tmp, cache)
     with gzip.open(cache, "rt", encoding="utf-8") as f:
         for line in f:
             o = json.loads(line)
-            yield (f"{repo} fetch archives", f"{repo}@{commit}:{o['path']}@{o['offset']}", o["uri"], "", o["text"])
+            piece = f"#piece-{o['piece']}" if "piece" in o else ""
+            yield (f"{repo} fetch archives", f"{repo}@{commit}:{o['path']}@{o['offset']}{piece}", o["uri"], "", o["text"])
 
 def documents(platform):
     """(corpus, locator, url, title, text) for every held document of the platform."""

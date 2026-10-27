@@ -1100,3 +1100,60 @@ Each of these is under (f) and (g). RD3-S2 placed it under (f) in rows of the `w
 ### Problems with the brief, the work list or the tools
 - Six of the fourteen rereads (S02-WC-364, S02-WC-452, S02-WC-463, S02-WC-489, S02-WC-496, S02-WC-498) were already in rows of the point that their (g) reading answers, placed there under (f) by RD3-S2. Their reread changed no row. S02-WC-473 was also already in one, and joined one more.
 - S02-WC-489 and S02-WC-507 both concern who the coming soon mode lets through. RD3-S2 placed S02-WC-489 in the seller's row by its 'for you to provide selective access to your site', and noted S02-WC-507. This part keeps both readings: in S02-WC-489 the merchant provides the access; S02-WC-507's capability names whom the mode doesn't apply to.
+
+## Second pass, RD3-S8: the two new who-sets points, S02-VP-91 and S02-VP-92, and rereads under (f) and (g)
+
+The 26 tasks of the coordinator's rulings when the parts ended (`b/second-pass.md`): a row for every platform under S02-VP-91 and S02-VP-92, and 24 rereads. No row was replaced or removed, and no statement was noted.
+
+### New rows: S02-VP-91, who sets "measurement and weight units, and time zone" (S02-VP-77's twin)
+- S02-V-1100, shopify, the seller: S02-SH-246 (under (g): 'Store defaults: Manage your default currency, currency formatting, measurement and weight units, and time zone in this section.'), S02-SH-345 and S02-SH-398 (the section's controls in the store's admin: 'Unit system', 'Default weight unit', 'Time zone'), from S02-VP-77's row S02-V-675. S02-SH-345's 'user level time zone' is a setting of the user's account, not of the store (rule 1), and is not read as X.
+- S02-V-1101, salla, the seller: S02-SA-433 (the order prep list's setting 'Use Saudi Arabia time zone'), from S02-V-732.
+- S02-V-1102, salla, no one can: S02-SA-431 ('Is there an option to add a time zone?': 'Not yet.') and S02-SA-432 ('Can I set a custom time zone?'), booking products, from S02-V-732. A reading: the statements say the store has no option to set the bookings' time zone, and name no party that sets it.
+- S02-V-1103, zid, the seller: the reread S02-ZD-346.
+- S02-V-1104, woocommerce, the seller: the rereads S02-WC-289 and S02-WC-291 ('This controls what unit you will define weights in.', '... lengths in.') and S02-WC-312 ('Set your store\'s address, visibility, currency, language, and timezone.').
+- S02-V-1105, woocommerce, the platform: the rereads S02-WC-244 and S02-WC-292 (onboarding sets the units from a country's locale info, with the store's location) and S02-WC-288 (the settings' defaults are the units of 'US').
+- S02-V-1106, bigcommerce, the seller: S02-BC-165, S02-BC-253, S02-BC-256 and S02-BC-285, from S02-V-860 and S02-V-983, and the reread S02-BC-257.
+- S02-V-1107, bigcommerce, the Edit Channels permission: the reread S02-BC-257.
+- S02-VP-77's statements read and not placed under S02-VP-91, as they name no one who sets, changes or may manage the setting: S02-SA-435, S02-BC-109 ('can be customized'), S02-BC-168, S02-BC-292, S02-WC-290, S02-WC-310, S02-WC-311.
+- No platform needed the search under (f) and (g): each had an answer from the rereads or from S02-VP-77's rows.
+
+### New rows: S02-VP-92, who sets "apps" (S02-VP-86's twin)
+- S02-V-1108, shopify, the seller: S02-SH-767 ('When you install an app that has app pixels') and S02-SH-946 ('After you install the Shopify Messaging app'), found by the search.
+- S02-V-1109, shopify, the staff permission 'Manage and install apps and channels': S02-SH-766, found by the search. A reading: the statement names the permission that gates managing an app's pixels, and the permission's own name is to manage and install apps. S02-SH-766 is also under S02-VP-88 (S02-V-1033).
+- S02-V-1110, salla, the seller: S02-SA-413 to S02-SA-415 (the default apps for SMS, from S02-V-874) and S02-SA-416 ('where you browse and install apps', from S02-V-1093).
+- S02-V-1111, zid, the seller: the rereads S02-ZD-300 to S02-ZD-302, S02-ZD-304 and S02-ZD-306.
+- S02-V-1112, zid, the staff permission manage.app.market.settings: the reread S02-ZD-330, read as a permission from its source, Zid's page on user roles and permissions.
+- S02-V-1113, woocommerce, the seller: S02-WC-025 (under (g): 'you will need to add a multi-currency extension/plugin') and S02-WC-415 ('you can pick another extension'), found by the search.
+- S02-V-1114, bigcommerce, `not covered` (below).
+- S02-VP-86's statements read and not placed under S02-VP-92, as they name no one who installs or manages apps: S02-SH-091, S02-BC-147.
+
+### Rereads placed: joined to a row
+- S02-WC-444 and S02-WC-447 (g), personal data retention: S02-V-1082 (S02-VP-75, the whole store) and S02-V-1046 (S02-VP-84, the seller). S02-WC-339 (g) was already in both rows, which give its retention words the same answers; their evidence now names retention.
+- S02-ZD-213, S02-ZD-217 and S02-ZD-219 (f), the store's legal pages: S02-V-773 (S02-VP-54, the seller). None of them names a market, a buyer's country or the whole store, so none answers S02-VP-53.
+- The rereads under S02-VP-91 and S02-VP-92 are in the new rows above.
+
+### `not covered` rows
+- S02-V-1114 (S02-VP-92, bigcommerce): S02-BC-147 says apps 'are installed at the store level' and names no one who installs them, and the search found no other statement. For gap-closing.
+
+### Candidates for a new point
+None.
+
+### Words searched for
+- **S02-VP-92**, in the (f) and (g) statements of shopify, bigcommerce and woocommerce: 'app', 'apps', 'app store', 'app market', 'extension', 'plugin', 'install', 'marketplace', 'تطبيق', and for woocommerce 'activate'. Read and not placed under it:
+  - shopify: S02-SH-654 ('you need an app') and S02-SH-958 ('consider using a third-party app'), an app the seller needs or uses, not who installs or manages it; S02-SH-744, S02-SH-790 and S02-SH-796, a sales channel or Inbox installed, which they don't call an app; S02-SH-729 and S02-SH-768 to S02-SH-771, the pixels' settings, under S02-VP-88; S02-SH-844, S02-SH-846, S02-SH-862, S02-SH-910, S02-SH-913 and S02-SH-943, apps as locations or as who sets them; and the others the search found, where 'app' is the Shopify app, the Shop app, Translate & Adapt's work, or the business entity used for apps (S02-SH-399 to S02-SH-401).
+  - woocommerce: S02-WC-463 ('you can use an extension or plugin to adjust permissions'), using one, as above; S02-WC-418, left noted by the coordinator's ruling; the extensions the platform suggests or recommends by the store's country (S02-WC-001 to S02-WC-003, S02-WC-061, S02-WC-205, S02-WC-416, S02-WC-417, S02-WC-419, S02-WC-420, S02-WC-434), what the platform shows the merchant, as that ruling reads S02-WC-418; S02-WC-436, S02-WC-449 and S02-WC-464 to S02-WC-467, what an extension does; S02-WC-498 to S02-WC-502, a plugin as who sets coming soon mode; S02-WC-024, S02-WC-326, S02-WC-481 and S02-WC-492, WooCommerce itself installed.
+  - bigcommerce: S02-BC-174, S02-BC-175, S02-BC-179 and S02-BC-326 (the Catalyst app, the storefront's own), S02-BC-268 (the Theme Marketplace).
+- In the slice's `terms.tsv`: 'time zone', 'timezone', 'weight', 'app', 'تطبيق', 'المنطقة الزمنية', 'extension', 'plugin', 'الصفحات القانونية', 'الشروط والأحكام'. Found: zid's 'سوق تطبيقات زد' ('Zid App Market'), 'تطبيقاتي', 'التطبيقات المدمجة', 'Public apps', 'Private apps', 'المنطقة الزمنية', 'الصفحات القانونية'; woocommerce's 'Weight unit'; bigcommerce's 'Localization settings'.
+- In the five platforms' gaps under (f), the same words: none asks who sets the units, the time zone or apps. S02-ZD-G15, S02-ZD-G21 and S02-SA-G09 ask what they take their value per. S02-WC-G05 asks whether the platform applies the per-country units or the seller chooses; S02-V-1104 and S02-V-1105 give both, so no `gap` row stands beside them.
+- `term` rests on the same words, or on a translation, marked in `basis_evidence` (rule 0): zid's own ('سوق تطبيقات زد': 'Zid App Market', so 'تطبيقات' is 'App'), or mine ('المنطقة الزمنية': 'the time zone').
+- x_words added: S02-VP-91, salla 'Use Saudi Arabia time zone; custom time zone', zid 'المنطقة الزمنية', bigcommerce 'date and timezone settings; standard dimension and date and time formats'; S02-VP-92, shopify 'app; Shopify Messaging app', zid 'التطبيقات; تطبيقاتي; التطبيقات المدمجة; Public apps; application settings', woocommerce 'extension; plugin; multi-currency extension/plugin'; S02-VP-75 and S02-VP-84, woocommerce 'Personal data retention'; S02-VP-54, zid 'الصفحات القانونية; الشروط والأحكام; الشكاوى والاقتراحات; التراخيص'.
+
+### Problems with the brief, the work list or the tools
+- The message that started this part arrived as the literal text `$(cat .../b2-parts/RD3-S8.txt)`, unexpanded; the part read that file for its tasks.
+- Rule 5 lets a statement's identifier or scope name what fills X, but not its source. S02-ZD-330's words, identifier and scope don't say it is a permission; only its source does. S02-V-1112 rests on that, as a reading.
+- `method/variants_edit.py` has a `rownote` command its usage doesn't list, and its usage doesn't say that `join` with a statement the row already holds adds only the evidence.
+
+### After the check (RD3-S8)
+- S02-V-1100, S02-V-1101 and S02-V-1102 replaced, keeping their answers and statements: each rests only on statements under (g), so each takes the basis `answers` alone (rule 4, (g), Basis), where they first gave `answers;term`. The checker named S02-V-1101 and S02-V-1102; S02-V-1100's statements also carry RD1's or RD2's bullets, but under RD3 they are (g)'s alone.
+- The checker found that the questions of S02-VP-91 and S02-VP-92 quote an X from none of their `raised_by` statements (rule 3). This part added to `raised_by`, with a line in each point's `note`: S02-SH-246 to S02-VP-91, the statement its question quotes ('measurement and weight units, and time zone'), placed in S02-V-1100; and S02-ZD-306 to S02-VP-92, a statement of the raising platform that holds 'apps' ('All merchants on the platform can view, install, and benefit from these apps.'), placed in S02-V-1111. The coordinator may prefer another; the questions are as the coordinator wrote them.
+- With S02-SH-246 in S02-VP-91's `raised_by`, S02-V-1103 (zid) was compared with it again (rule 5) and replaced with the basis `answers;term`: Zid's 'المنطقة الزمنية' (my translation: 'the time zone') and Shopify's 'time zone'.

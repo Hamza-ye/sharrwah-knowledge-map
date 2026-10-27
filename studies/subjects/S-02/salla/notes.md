@@ -241,3 +241,11 @@ From `studies/subjects/S-02/briefs/A2-close-gaps.md`, for the groups analytics a
 129. For the store's country (S02-VP-85), the kind's terms are country words, so the second search with the market and country words listed the same documents as the first; the narrowed search was run with the market words only.
 130. The kinds' head words (tracking, apps, notifications, address, country, units) match most of salla's corpus, so the first searches went past 300 and were narrowed by dropping the head words and keeping the kinds' phrases, as each group's item says. Statements saying who sets a setting, or that it is set for the store or a product, without naming a market, are given (g), as in part SA-1; the coordinator may place them otherwise.
 131. Live pages: none read; every document was held in observed-sa.
+
+### Part A2-T (2026-10-27): S02-VP-76, left `not covered` by phase B's second pass
+
+Phase B's second pass found that the statements part SA-2 recorded for S02-VP-76 (S02-SA-421 to S02-SA-425) give locations, not the store's address, and that no gap was named (`b/RD3/done.tsv`, S02-V-731). As the message asked, I read the point's question (`b/RD3/variation-points.tsv`), its ledger line and its row in `a2.tsv`, with its `read`, and ran no search again.
+
+Recorded S02-SA-G12, `searched, not found`, `who_can` `founder`. Its `read` is the row's `read` with the ledger line's reason. Its route is a question to Salla, or an observation of a test store's dashboard (the store's address, and a market's settings). The route names no address, so `held_index.py` had none to run on. The row's `gap_ids` now names it.
+
+**Check (A2-T):** on a copy holding only `bullets.tsv` and this folder (`/tmp/claude-0/-home-user/9f45def8-b710-5f9c-84f3-6a0fa7e617c8/scratchpad/s02-a2-t/check-salla/S-02`), 2026-10-27: 436 statements, 12 gaps, 738 quotes found, no issue.

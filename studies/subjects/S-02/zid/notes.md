@@ -509,3 +509,16 @@ S02-ZD-G03 audited again under `studies/subjects/S-02/briefs/A3-absence-audit.md
 - 23 lines of level `pending capture`:
   - the live citations S02-ZD-C561, S02-ZD-C563, S02-ZD-C567, S02-ZD-C577, S02-ZD-C579, S02-ZD-C581 to S02-ZD-C586, S02-ZD-C592, S02-ZD-C593, S02-ZD-C595, S02-ZD-C596, S02-ZD-C598 and S02-ZD-C599;
   - the statements S02-ZD-383 to S02-ZD-388, whose first citation is live.
+
+## Gap-closing (phase A2), part A2-T (2026-10-27): S02-VP-65 and S02-VP-85, left `not covered` by phase B's second pass
+
+This part belongs under "Gap-closing (phase A2)" above. It is appended here because section ZD-4 follows that one.
+
+Phase B's second pass found that the statements gap-closing recorded for these points name no market, buyer's country or whole store (S02-VP-65: S02-ZD-212 to S02-ZD-222, `b/RD3/done.tsv`, S02-V-789), or only the account's own information (S02-VP-85: S02-ZD-226, S02-V-870). No gap was named for either. S02-ZD-G01 is under (a), so S02-VP-85, under (f), takes a gap of its own. As the message asked, I read each point's question (`b/RD3/variation-points.tsv`), its ledger line and its row in `a2.tsv`, with its `read`, and ran no search again.
+
+- **S02-VP-65:** S02-ZD-G22, `searched, not found`, `who_can` `founder`. Its route is a question to Zid, or an observation of a test store's dashboard (الاعدادات > المتجر > الصفحات القانونية, and a market's settings).
+- **S02-VP-85:** S02-ZD-G23, `searched, not found`, `who_can` `founder`. Its route is a question to Zid, or an observation of a test store's dashboard (الاعدادات > المتجر > بيانات المتجر, where S02-ZD-G01's journey looks, and a market's settings). The row keeps S02-ZD-G01 beside it.
+
+Each gap's `read` is its row's `read` with the ledger line's reason. The routes name no address, so `held_index.py` had none to run on. Each row's `gap_ids` now names its gap.
+
+**Check (A2-T):** on a copy holding only `bullets.tsv` and this folder (`/tmp/claude-0/-home-user/9f45def8-b710-5f9c-84f3-6a0fa7e617c8/scratchpad/s02-a2-t/check-zid/S-02`), 2026-10-27: 447 statements, 23 gaps, 686 quotes found and 2 found in the page's source only, no error. The 4 `review` lines are earlier parts' citations (S02-ZD-C008, C086, C313, C314).

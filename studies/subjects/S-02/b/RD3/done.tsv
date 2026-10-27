@@ -135,3 +135,29 @@ reread	S02-WC-489	g	placed: already in S02-V-951 under S02-VP-81, the seller, fr
 reread	S02-WC-496	g	placed: already in S02-V-1055 (a hosting provider) and S02-V-1056 (developers) under S02-VP-81, from (f); no row changed
 reread	S02-WC-498	g	placed: already in S02-V-1054 under S02-VP-81, another plugin or application, from (f); no row changed
 reread	S02-WC-507	g	left noted: names who the mode lets through, not who sets, changes or may manage it
+reread	S02-WC-244	f	placed: S02-VP-91, the platform (S02-V-1105), with S02-WC-288 and S02-WC-292: the units set from $country_info in onboarding
+reread	S02-WC-288	f	placed: S02-VP-91, the platform (S02-V-1105): the default units are those of 'US', a default the code sets
+reread	S02-WC-288	g	placed: S02-VP-91, the platform (S02-V-1105), the row its (f) task placed it in (rule 4, (g): a statement under (g) that names who sets a setting answers its who-sets point)
+reread	S02-WC-289	f	placed: S02-VP-91, the seller (S02-V-1104): 'This controls what unit you will define weights in.'
+reread	S02-WC-289	g	placed: S02-VP-91, the seller (S02-V-1104), the row its (f) task placed it in (rule 4, (g): a statement under (g) that names who sets a setting answers its who-sets point)
+reread	S02-WC-291	f	placed: S02-VP-91, the seller (S02-V-1104): 'This controls what unit you will define lengths in.'
+reread	S02-WC-291	g	placed: S02-VP-91, the seller (S02-V-1104), the row its (f) task placed it in (rule 4, (g): a statement under (g) that names who sets a setting answers its who-sets point)
+reread	S02-WC-292	f	placed: S02-VP-91, the platform (S02-V-1105): the core profiler updates the units from the store's location
+reread	S02-WC-312	f	placed: S02-VP-91, the seller (S02-V-1104): 'Set your store's address, visibility, currency, language, and timezone.'
+reread	S02-WC-312	g	placed: S02-VP-91, the seller (S02-V-1104), the row its (f) task placed it in (rule 4, (g): a statement under (g) that names who sets a setting answers its who-sets point)
+reread	S02-ZD-346	f	placed: S02-VP-91, the seller (S02-V-1103): 'يمكنك اختيار المنطقة الزمنية المناسبة'
+reread	S02-BC-257	f	placed: S02-VP-91, the seller (S02-V-1106) and the Edit Channels permission (S02-V-1107)
+reread	S02-VP-91	f	rows for every platform: shopify, the seller (S02-V-1100); salla, the seller (S02-V-1101) and no one can (S02-V-1102); zid, the seller (S02-V-1103); woocommerce, the seller (S02-V-1104) and the platform (S02-V-1105); bigcommerce, the seller (S02-V-1106) and the Edit Channels permission (S02-V-1107)
+reread	S02-ZD-300	f	placed: S02-VP-92, the seller (S02-V-1111): 'يمكنك ربط العديد من التطبيقات'
+reread	S02-ZD-301	f	placed: S02-VP-92, the seller (S02-V-1111): the merchant views and manages the apps activated in the store
+reread	S02-ZD-302	f	placed: S02-VP-92, the seller (S02-V-1111): the merchant controls embedded apps in the App Market page
+reread	S02-ZD-304	f	placed: S02-VP-92, the seller (S02-V-1111): 'يمكنك ربط متجرك بأي تطبيق'
+reread	S02-ZD-306	f	placed: S02-VP-92, the seller (S02-V-1111): 'All merchants on the platform can view, install, and benefit from these apps.'
+reread	S02-ZD-330	f	placed: S02-VP-92, the staff permission manage.app.market.settings (S02-V-1112)
+reread	S02-VP-92	f	rows for every platform: shopify, the seller (S02-V-1108) and the permission Manage and install apps and channels (S02-V-1109); salla, the seller (S02-V-1110); zid, the seller (S02-V-1111) and the permission manage.app.market.settings (S02-V-1112); woocommerce, the seller (S02-V-1113); bigcommerce, not covered (S02-V-1114)
+reread	S02-WC-339	g	placed: already in S02-V-1082 (S02-VP-75, the whole store) and S02-V-1046 (S02-VP-84, the seller), which give its retention words the same answers; their evidence now names retention
+reread	S02-WC-444	g	placed: S02-VP-75, the whole store (joined S02-V-1082), and S02-VP-84, the seller (joined S02-V-1046): 'Choose how long to retain personal data'
+reread	S02-WC-447	g	placed: S02-VP-75, the whole store (joined S02-V-1082), and S02-VP-84, the seller (joined S02-V-1046): 'Use this section to decide how long your store keeps order data.'
+reread	S02-ZD-213	f	placed: S02-VP-54, the seller (joined S02-V-773): 'يمكنك إدارة وتخصيص السياسات القانونية'; not under S02-VP-53: it names no market, buyer's country or whole store
+reread	S02-ZD-217	f	placed: S02-VP-54, the seller (joined S02-V-773): the form that edits a legal page in the store's admin; not under S02-VP-53: it names no market, buyer's country or whole store
+reread	S02-ZD-219	f	placed: S02-VP-54, the seller (joined S02-V-773): the merchants state their terms, which Zid's terms require; not under S02-VP-53: 'كافة المتاجر' names the stores the rule binds, not what the pages take their value per

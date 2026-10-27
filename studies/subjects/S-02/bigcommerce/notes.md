@@ -235,3 +235,11 @@ None was named.
 #### Check
 
 `python3 -I method/check_subject.py` on a copy (`bullets.tsv` and this folder) with every capture run, 2026-10-27: 351 statements, 14 gaps, 408 quotes found, 38 unresolved; no line of level error or warning. 64 lines `pending capture`, all from this part: statements S02-BC-296, S02-BC-297, S02-BC-300 to S02-BC-307, S02-BC-314 to S02-BC-316, S02-BC-321, S02-BC-323 to S02-BC-325, S02-BC-327 to S02-BC-329 and S02-BC-341 to S02-BC-346, and their citations, from the live pages address-form-fields.md, localization.md, storefront-selector.md, team-permissions/overview.md, Address-Autocomplete, Storefront-Checkout-Configurations, Checkout-and-Orders-on-Multi-Storefront, Configuring-Storefronts, Customers-and-Multi-Storefront and International-Enhancements-for-Multi-Storefront.
+
+### Part A2-T (2026-10-27): S02-VP-16, left `not covered` by phase B's second pass
+
+Phase B's second pass found that none of the statements gap-closing recorded for S02-VP-16 (S02-BC-246 to S02-BC-250) answers the point, and gap-closing had recorded no gap (`b/RD1/done.tsv`, S02-V-237). As the message asked, I read the point's question (`b/RD1/variation-points.tsv`), its ledger line and its row in `a2.tsv`, with its `read`, and ran no search again.
+
+Recorded S02-BC-G15, `searched, not found`, `who_can` `founder`. Its `read` is the row's `read` with the ledger line's reason. Its route is a question to BigCommerce, or an observation of a test store's tax settings before and after a change of the store's country. The route names no address, so `held_index.py` had none to run on. The row's `gap_ids` now names it.
+
+**Check (A2-T):** on a copy holding only `bullets.tsv` and this folder (`/tmp/claude-0/-home-user/9f45def8-b710-5f9c-84f3-6a0fa7e617c8/scratchpad/s02-a2-t/check-bigcommerce/S-02`), 2026-10-27: 351 statements, 15 gaps, 446 quotes found, no issue.

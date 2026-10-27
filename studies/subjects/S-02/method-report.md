@@ -255,6 +255,12 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 | SH-2e: the page SH-2d left unread, Shopify Messaging's requirements, and the Arabic of its four pages | leads | 2 points updated | — | 5 | none | 21 | 2.4 |
 | **Gap-closing** | **121 rows** | **118** | **83** | **1,165** | **49 gaps open** | **1,622** | **337.3** |
 
+After the second pass:
+
+| Part | Rows | Rows given statements | Rows with no gap left | Statements added | Gaps it leaves | Requests | Millions |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| A2-T: the nine rows the second pass left `not covered`, on BigCommerce, Salla, Zid and WooCommerce | 9 | 1 | 5, by an absence or statements | 4 | BC-G15, SA-G12, ZD-G22, ZD-G23; WooCommerce's absences N01 to N04, to be audited | 32 | 4.4 |
+
 **What WC-1 taught:**
 - **Our labels aren't the platform's words.** The brief said to search a kind's own name, and the part asked whether "who sells to the buyer" was one. The brief now says the kind's head word is searched, such as `domain` or `currency`, and our longer labels aren't.
 - **Code holds the calls, not the checks.** WooPayments' business verification runs on its own server and Stripe's. The release holds only its calls and strings, so what is checked, and against what documents, can't be read from it. G06 and G07 go to WooCommerce as questions.
@@ -365,6 +371,14 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
   - WC-5 recorded two statements: at sign-up, WooPayments verifies "information about you and your business" through Stripe's embedded form, and a test account "requires no personal information". Neither names a country, so G06 and G07 stand.
   - The other address in G06's `read`, WooPayments' onboarding troubleshooting page, answers with HTTP 404 (run `20261027T141859Z-s02-a2-sources-batch-5`, item 2).
 - **From now on,** a phase closes only after the coordinator has read each part's list of what it left, and given each lead a part or a reason.
+
+**What A2-T taught.** WooCommerce's settings pages in its release are read as the complete list of a store's core settings. They hold four absences: no limit on how many countries a store sells to, no business entity, nothing that places a buyer in a market, and nothing that sets extensions per country. But the part noted two caveats. The release lets other code add settings pages through a filter, and some settings sit outside the 13 files, such as the tax options' view and the shipping zones. So each absence is audited before phase C reads it.
+
+**What the founder's local agent showed: a search that couldn't read code** (27 October, evening).
+- **What happened.** The local agent read the observed-sh capture requests before running them. Much of what H-006 to H-008 ask is already held in tracked files of observed-sh: the admin's other answers, the admin's code bundles, and the sign-up bundle.
+- **Why the searches missed it.** `method/corpus_search.py` read only the text, HTML and JSON records of the fetch archives, so JavaScript bundles were never searched. The admin's and sign-up's own code was searched by no one.
+- **What changed.** The tool now reads JavaScript records too, in pieces of 200,000 characters. A new part, A2-SH-H, reads the held files the local agent points to, as leads, before any run goes ahead.
+- **The lesson.** `CLAUDE.md` already says to look evidence up through each evidence repository's own guide (`docs/READING.md`). Before a gap goes to a capture request, every surface that guide lists is searched, and the tool is checked to reach it.
 
 **Gap-closing as a whole** (the coordinator, 27 October):
 - **What it did.** 22 parts read the pages behind 121 rows: the rows of S-02's points that were `not covered`, or whose gaps named a page not read. 118 rows were given statements, and 83 have no gap left. It added 1,165 statements: Shopify 388, Salla 118, Zid 256, WooCommerce 256 and BigCommerce 147. It cost 337.3 million, against the 350 projected at 10:30 ([the frame's budget](frame.md#budget)).
