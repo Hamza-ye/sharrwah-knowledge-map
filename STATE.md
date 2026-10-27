@@ -13,27 +13,29 @@
 
 **Open gate:** G3, after each subject. S-02 is under way.
 
-**Waiting on the founder:** S-02's budget. S-02 reached a quarter past its 200 million tokens and stopped, as `PLAN.md` section 8 says (below).
+**Waiting on the founder:** to hand the capture requests in [`handoffs/`](handoffs/README.md) (H-001 to H-006) to the local agent. H-005 may need a store on Salla's Special plan, a spending decision that comes with it.
 
 **Stage 4, S-02, what a market is.**
 - **Its frame:** [`studies/subjects/S-02/frame.md`](studies/subjects/S-02/frame.md).
   - **Three root decisions,** from the platforms' own top-level statements: the store's own country; the markets a store sells into; and what binds per market, and who sets it.
   - **What it starts from:** 36 concerns of the concern map, and the pilot's statements on where each way of holding money is offered, copied into each platform's `recorded.tsv` by `method/seed_subject.py`.
   - **Its steps:** the pilot's five steps under Stage 4's changes; the Yemen row (step 6) and the scenario walk (step 7) for each root decision; an independent review; the quote check (`method/check_report.py`); and a short report for G3, with its cost against the budget.
-- **Budget:** 200 million agent tokens, counted by `method/count_tokens.py`, split by step in the frame. It is set from the pilot's measured cost (about 1.03 billion, of which about half a billion for a clean run, by its method report, section 12), reduced for the plan's changes. At 250 million it stops and comes to the founder (`PLAN.md`, section 8).
-- **How its agents run** (the frame, from the pilot's transcripts): no more than two at once, each writing as it goes, and one that stops is resumed, never restarted.
+- **Budget:** 700 million agent tokens, counted by `method/count_tokens.py` (the founder, 27 October). The first, 200 million, was passed by a quarter in phase A; the founder said to continue, and that the budget never costs evidence about the references (`founder-decisions.tsv`).
+- **How its agents run** ([`method-report.md`](studies/subjects/S-02/method-report.md), what each run taught): no more than two at once; each writes as it goes; a long reading list is split into parts, each read by a fresh agent that continues from the files, so no context grows large.
 - **The founder's decisions of 10 October, F-01 to F-06 and O-01,** bind nothing (`founder-decisions.tsv`, the reset). What they raise comes with its evidence when a subject reaches it: O-01, which company contracts with sellers, in S-03; F-01, the company's ties, where a subject needs them, such as S-07's sanctions and screening.
 
 **For the founder:** the orientation page, outside the repository: https://claude.ai/artifact/8fLCxo4JGKmGgPjXSpW1BN. It is updated at each milestone.
 
-**In flight:** nothing. S-02 stopped at 250.4 million agent tokens on 26 October, at 23:30 UTC (`PLAN.md`, section 8), by `method/count_tokens.py`:
+**Spent on S-02 by 27 October:** 250.4 million agent tokens, by `method/count_tokens.py`:
 - the inspection of the phase A and B briefs, two rounds: 27.9 million;
 - phase A, Shopify: 104.7 million, 226 requests; 319 statements, 5 gaps, 3 absences, 33 terms;
 - phase A, Salla: 117.8 million, 276 requests; 304 statements, 4 gaps, 35 terms.
 
 Both phase A agents paused with their work in their files. Each logged what it hasn't read in its `notes.md`. On their files as they stand, the checker gives no error for either.
 
-**Next:** the founder's answer on S-02's budget. Then phase A for Shopify and Salla is finished from their notes, and Zid, WooCommerce and BigCommerce run.
+**In flight:** phase A for Shopify and Salla, finished from their notes by fresh agents.
+
+**Next:** phase A for Zid, WooCommerce and BigCommerce, two at a time; then the capture of cited live pages, and phase B per root decision, whose brief gets one more check first.
 
 **Evidence read:** observed-sh at `febbf6c`, observed-sa at `4ca2e89` (the clones' heads on 25 October 2026), and WooCommerce 11.2.1.
 

@@ -15,6 +15,7 @@
 - **`method/`:** the scripts the plan uses, listed in `method/README.md`.
 - **`HISTORY.md`:** each baseline, by commit.
 - **`reports/`:** reports to the founder.
+- **`handoffs/`:** capture requests for the local agent, who captures into observed-sh or observed-sa what a run can hold (`PLAN.md`, section 6, Evidence).
 
 **Nothing else governs.**
 - The work done after the founder's answer at G1 (18 October 2026), up to the reset (25 October 2026), is history. Its files are not in the working tree: they are at the commit `HISTORY.md` names, so a search of the working files doesn't reach them. The one exception is the pages it captured into `evidence/`, which are evidence like any other.

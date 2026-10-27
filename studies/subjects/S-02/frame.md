@@ -101,20 +101,20 @@ The pilot's five steps, under Stage 4's changes (`PLAN.md`, Stage 4, and section
 **Running the agents.** The pilot's phase A started five agents at once on 12 October, and four stopped at the usage limit within 35 minutes. Two of them had written nothing, so their 75 million tokens were lost and they were run again from the start. Resuming a paused agent cost 0.2 to 0.7 million each time (the pilot's transcripts; [the method report, section 12](../S-01/method-report.md#12-what-a-subject-costs)). So:
 - no more than two agents run at once;
 - an agent writes each finding to its files as soon as it is checked;
-- an agent that stops is resumed, never restarted;
+- an agent that stops is resumed, never started again from nothing; where its context has grown large, a fresh agent continues from its files and notes, so nothing is read twice;
 - each agent's cost is measured after its first steps with `method/count_tokens.py`.
 
 ## Budget
 
-**200 million agent tokens,** counted by `method/count_tokens.py` (`STATE.md`). At 250 million the work stops and comes to the founder (`PLAN.md`, section 8). The split below is a plan, re-set after phase A's measured cost:
+**700 million agent tokens,** counted by `method/count_tokens.py` (the founder, 27 October: `founder-decisions.tsv`). The first budget, 200 million, was passed by a quarter in phase A, whose two agents read with contexts of up to 780 thousand tokens ([`method-report.md`](method-report.md), section 2). The budget never costs evidence about the references: past a quarter over it, the cost is reported to the founder and the work goes on (`PLAN.md`, section 8).
 
 | Step | Millions |
 | --- | --- |
-| 1A: Shopify and Salla | 60 |
-| 1A: Zid, WooCommerce and BigCommerce | 15 |
-| Brief inspections | 5 |
-| 1B | 30 |
-| 1A2 and 1A3 | 30 |
-| 1C | 25 |
-| 5, the review | 25 |
-| Held back | 10 |
+| Spent by 27 October: the briefs' inspection, and phase A for Shopify and Salla | 250 |
+| Phase A: Shopify and Salla finished from their notes | 30 to 50 |
+| Phase A: Zid, WooCommerce and BigCommerce | 45 to 75 |
+| Inspection of the later briefs | 20 to 40 |
+| 1B, per root decision | 75 to 120 |
+| 1A2 and 1A3, where a root decision needs them | 50 to 90 |
+| 1C, per root decision | 45 to 90 |
+| 5, the review | 40 to 80 |

@@ -43,7 +43,7 @@ PILOT_BULLETS = {"a": "ask", "b": "ask", "c": "ask", "d": "no-part", "e": "condi
 ROLES = {"ask", "conditions", "no-part", "end"}
 PLACEMENTS = {"where", "decides", "responsible", "boundary", "reason"}
 GAP_KINDS = {"page not read", "observation needed", "searched, not found", "stated only in general terms"}
-WHO = {"agent", "founder", "either"}
+WHO = {"agent", "founder", "either", "capture"}   # capture: a run in observed-sh or observed-sa, through a handoff
 ACCESS = {"md", "raw", "rendered", "local"}
 BASES = {"term", "identifiers", "definition", "answers"}
 KINDS = {"observed", "shipped", "stated", "official page"}
@@ -288,11 +288,13 @@ for plat, code in PLATFORMS.items():
             err(f, gid, f"gap_kind '{g['gap_kind']}' is not one of {sorted(GAP_KINDS)}")
         if g["who_can"] not in WHO:
             err(f, gid, f"who_can '{g['who_can']}' is not one of {sorted(WHO)}")
+        if g["who_can"] == "capture" and not re.search(r"handoffs/H-\d{3}", g["route"]):
+            err(f, gid, "a gap for a capture run names its handoff in route (handoffs/H-NNN)")
         if not g["read"]:
             err(f, gid, "read is empty: list each path or URL read")
         if g["gap_kind"] == "searched, not found" and not names_a_source(g["read"]):
             err(f, gid, "a 'searched, not found' names what it read")
-        if g["who_can"] in ("founder", "either"):
+        if g["who_can"] in ("founder", "either", "capture"):
             for u in urls_in(g["route"]):
                 held = [h for h in HELD.lookup(u) if h["readable"]]
                 if held and not was_read(held, later):   # once A2 or A3 reads it, a2.tsv says what remains

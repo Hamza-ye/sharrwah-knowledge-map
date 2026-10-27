@@ -125,7 +125,7 @@ Record every other bullet, or part of one, that your platform doesn't state as a
 
        Read each listed document that could state it, and give the commands and the documents in `read`.
      - `stated only in general terms`: the terms speak only of the platform's services in general.
-   - `who_can`: `agent`, `founder` or `either`.
+   - `who_can`: `agent`, `founder`, `either`, or `capture` (set by the coordinator, when a run in observed-sh or observed-sa could capture it; its route then names the handoff in `handoffs/`). Give a gap that only an observation would close `founder`, and say in its route what would close it: the coordinator decides whether a run can.
    - Before you give a gap `founder` or `either`, run `method/held_index.py` on each address in its route. If the page is held and readable, read it instead.
 10. **Credentials.** Evidence that contains credentials, cookies or tokens is read and cited like any other evidence. Never skip, withhold or mask a file because of them. They come from synthetic environments the founder rotates.
 11. **No inference, anywhere.** Notes record what was read, what couldn't be read, and problems. They never record inference.

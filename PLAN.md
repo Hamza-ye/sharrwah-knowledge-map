@@ -41,7 +41,7 @@ Then the design of the first version starts, under its own plan. It is designed 
 4. **Spending:** stores on paid plans and consultations.
 5. **What only the founder can do:**
    - capturing from inside Yemen;
-   - journeys in real stores;
+   - journeys in real stores, and handing the coordinator's capture requests to a local agent, who captures them into observed-sh or observed-sa (section 6, Evidence);
    - contacting platforms, partners and regulators;
    - attestations.
 6. **The gates** in section 5.
@@ -168,9 +168,15 @@ Gate G0 comes first: the founder's go on this plan. Stages 0 and 1 don't depend 
     - five statements whose source kind changes (S01-WC-078 to 080, S01-BC-123 and 124).
 - Each subject goes through the pilot's five steps, with its Yemen row in place of the Yemen marks (section 6, step 6), and its scenario walk (step 7). Its files go in `studies/subjects/<id>/`. The pilot's own changes apply ([its method report, "Proposed changes before more subjects"](studies/subjects/S-01/method-report.md#proposed-changes-before-more-subjects)):
   - **Scoped to its decisions first.** The subject names its few root decisions, from the platforms' own top-level statements. Its variation points are the facets that can change one of them, and the rest stay as notes (section 6, step 1). Phase C marks which of the founder's items depend on which (its method report, section 10).
-  - **From what is recorded.** Variants come first from the statements the concern map and the pilot already hold. New reading happens only where a decision needs it.
-  - **Short agent runs.** Each brief caps its steps and asks for small outputs. Mechanical steps are scripts. An agent's cost is measured after its first steps (`method/count_tokens.py`), and a run whose projection passes its share of the budget is stopped.
+  - **From what is recorded.** Variants come first from the statements the concern map and the pilot already hold. New reading happens where a decision needs it, and what a decision needs is never cut for its cost (the founder, 27 October).
+  - **Short agent runs.** An agent reads its whole context again on every turn, so its cost grows with that context: in S-02's phase A, contexts reached 780,000 tokens. So each brief keeps an agent's context small:
+    - a long reading list is split into parts, each read by a fresh agent that continues from the files;
+    - large files are queried with scripts, not loaded whole;
+    - outputs are small, and mechanical steps are scripts.
+
+    An agent's cost is measured after its first steps (`method/count_tokens.py`). A run whose projection passes its share of the budget is re-planned to read the same evidence at less cost; it is never cut short of the evidence (the founder, 27 October).
   - **A budget per subject,** set before it starts from the last subject's measured cost, and recorded in `STATE.md`.
+  - **Each run's lessons.** After each run, the coordinator records in the subject's method report what it taught about running the agents and planning the work, and applies it to the next run (the founder, 27 October).
   - **Depth by risk.** The analysis goes deep where a decision is both expensive to change and uncertain, and runs a light check where the references agree and Yemen's facts don't bear on it.
   - **Shopify and Salla first.** Their held evidence is the deepest (risk 5), so they are read first and in full. Zid, WooCommerce and BigCommerce come from what the concern map and the pilot recorded, and are read further only where a cause or a gap needs them. The founder asked for others "only when a specific question requires them" ([24 October](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/4923e1c96a0296abdaf3f5bdbd8c155e09acfebf/founder-messages/2026-10-24-method-accepted.md?plain=1#L42)); a cause by comparison is such a question (section 6, step 3).
   - **The pilot's other lessons** (its method report, sections 4 and 9): gaps that ask one question of different sources are audited together; and a Yemen fact with an exclusion such as "only" is read as two facts, since the exclusion states a second one.
@@ -229,7 +235,7 @@ G1 was answered on 18 October with a re-frame. On 25 October the founder reset t
 **Spending** means money paid for evidence or advice the work needs: a store on a paid plan, a lawyer's or accountant's consultation, or an official record.
 - Each request says what it buys, which decision depends on it, the cost if known, and what happens without it: the item stays unknown or open.
 - Building and running Sharrwah are not part of this plan.
-- The agents' own cost is the coordinator's to plan: each subject's budget is set from measured cost (Stage 4), and only an overrun by a quarter comes to the founder (section 8).
+- The agents' own cost is the coordinator's to plan: each subject's budget is set from measured cost (Stage 4), and an overrun by a quarter is reported to the founder (section 8). The budget never costs evidence about the references: the founder moves to a higher plan before that happens, when the coordinator says one is needed (the founder, 27 October).
 
 ## 6. The rules this plan adopts
 
@@ -295,7 +301,9 @@ A partial overlap is split into variation points and recorded. It doesn't go to 
 - **Before a gap goes to anyone,** its route is checked against what is held:
   - if the page is held and readable, the gap is "page not read", for an agent;
   - if it is held but not readable, the reader is extended;
-  - only what isn't held goes to the founder, with what exactly to capture and why.
+  - if a run in observed-sh or observed-sa could capture it, the gap is a capture request. The coordinator writes a handoff in `handoffs/`, naming the run: a journey from the repository's own catalog, a held paid store, or a store set up for it. The founder hands it to a local agent, who captures what it can into that repository with its own tools, pushes, and says so. It isn't a decision for the founder (the founder, 27 October);
+  - docs and sitemap pages not held are captured when a subject needs them; both repositories' gap registers list them;
+  - only what no run can capture goes to the founder, with what exactly to capture and why.
 - **A "searched, not found"** lists what it read, at a commit.
 - **Incorporated agreements.** An agreement that a platform's terms incorporate, such as Stripe's Connected Account Agreement under WooPayments and Shopify Payments, is part of that platform's terms. It may be read when a subject needs it.
 - **The founder's words** are never evidence of what a platform does. The founder's decisions about Sharrwah are recorded as decisions.
@@ -327,12 +335,13 @@ Both sets, by the founder's choice: the 81 payment rows and the Knowledge Map's 
 | 14 | Old documents return as evidence, or old work governs again | A citation to a derived or excluded path; a brief, entry or search that draws on history outside the working files | The checker rejects the citation. History is reached only through a link pinned to a commit in a working file (section 9), and `method/check_surface.py` searches the working files for its framings |
 | 15 | A decision is carried forward on its past acceptance alone | A step builds on a decision whose plan or premise has changed | It is assessed on its merits first: its rationale, its evidence, and whether it still holds (the founder, 25 October) |
 | 16 | A change to this plan drops a safeguard without saying so | A change lists what it adds, not what it removes | Each change lists what it removes or weakens, with the risk that part controlled (section 9) |
+| 17 | Cost cuts evidence, or evidence a run could capture stays uncaptured | A run stopped or narrowed for its cost; a gap routed to the founder that a run could close | The run is re-planned to read the same evidence at less cost, and the founder moves to a higher plan when the coordinator says one is needed. A run that could close a gap goes as a handoff (section 6; the founder, 27 October) |
 
 ## 8. When work stops and comes to the founder
 
 - **An error touches results already delivered.** It is measured and reported, then fixed, as with the Salla gaps.
 - **The pilot misses its "done when".**
-- **A subject runs past its budget by a quarter.** It stops, and comes to the founder with its measured cost. Below that, a run whose projection passes its share of the budget is stopped, and the coordinator re-plans the rest (Stage 4).
+- **A subject runs past its budget by a quarter.** It comes to the founder with its measured cost and a new projection, and the coordinator says whether a higher plan is needed. The work goes on, re-planned to cost less, never cut short of the evidence (the founder, 27 October). Below that, a run whose projection passes its share of the budget is re-planned the same way (Stage 4).
 - **A founder decision blocks the next subject,** where the decision is genuinely the founder's.
 - **New evidence changes more than one finished subject.**
 - **Something needs money, contact with a third party, or a legal judgment.**
@@ -492,3 +501,18 @@ A dated log. Where an entry differs from a later one, the later holds, and the s
   - **Stage 2's note** is brought up to date.
 
   **What this change removes or weakens:** nothing. It adds one step per subject, made by reasoning over the subject's own evidence, with no new reading.
+- **27 October 2026, the founder's answers on S-02's cost** (`founder-decisions.tsv`): S-02 continues; the budget never costs evidence about the references; evidence a run could capture goes as a request, not a decision; each run's lessons change how the work runs; and a part of the plan that stops genuine evidence being captured is revisited. Changed:
+  - **Section 3:** the founder hands capture requests to a local agent.
+  - **Section 4, Stage 4:** "Short agent runs" keeps each agent's context small, and re-plans a run past its share of the budget instead of stopping it; "From what is recorded" never cuts what a decision needs for its cost; each run's lessons are recorded and applied.
+  - **Section 5, spending:** the budget never costs evidence; the coordinator says when a higher plan is needed.
+  - **Section 6, Evidence:** a gap a run could close becomes a handoff in `handoffs/`.
+  - **Section 7:** risk 17.
+  - **Section 8:** a subject a quarter past its budget is reported, not stopped.
+  - **Reviewed and kept:**
+    - Stage 4's "Shopify and Salla first", with the others read from what is recorded: it orders the reading and stops none of it, since a gap on a root decision is closed in phase A2, and a run that could close one goes as a handoff.
+    - The briefs' caps on statements: a check-in, which a resumed agent passes.
+
+  **What this change removes or weakens,** with the risk each part controlled:
+  - **The stop at a quarter past the budget** kept the agents' cost from growing unseen. Reassigned: the overrun still comes to the founder, with its measured cost and a projection, and the work goes on.
+  - **Stopping a run whose projection passes its share** kept one run from taking the subject's budget. Replaced: the run is re-planned to read the same evidence at less cost.
+  - **Gaps routed to the founder as decisions** made the founder choose what to capture. Reassigned: a run that could close a gap goes as a handoff, which the founder still hands on, so nothing outside the session happens without the founder.
