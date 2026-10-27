@@ -86,3 +86,4 @@ store languages (zid.store.region.languages)			S02-ZD-C440
 طلبات نقل المخزون; نقل المخزون بين الفروع	Transfer Inventory Between Branches		S02-ZD-C458;S02-ZD-C472
 Require customer to select city manually			S02-ZD-C474
 موقع العملاء	Customer Location	اعرف مواقع عملائك بدقة لتخصيص العروض وتحسين خدمات التوصيل.	S02-ZD-C478
+تتبع الحملات			S02-ZD-C479;S02-ZD-C482;S02-ZD-C484;S02-ZD-C486
