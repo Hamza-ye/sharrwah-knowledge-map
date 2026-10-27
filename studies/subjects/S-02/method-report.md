@@ -136,6 +136,7 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 | RD3-1: (f) and (g), Shopify | 264 | 65 | 15.2 | 4.1 | 37 | 76 |
 | RD1-2: (b), all five platforms | 128 | 44 | 8.3 | 2.9 | 4 | 39 |
 | RD3-2: (f) and (g), Salla | 133 | 65 | 15.8 | 2.0 | 7 more (44) | 75 |
+| RD1-3: (c), Shopify and Salla | 216 | 59 | 15.0 | 3.7 | 11 more (18) | 69 |
 
 **What RD1-1 taught:**
 - **One point per question held:** the five platforms' answers to "what fills the store's own country" fell under one variation point, as 30 fields and records and one gap, and the countries served and kept out under one each.
@@ -160,3 +161,9 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 - **The search for Shopify's rows under the new points found one answer that reading had missed:** RD3-1 had noted S02-SH-374, whose words say the visitor accepts cookies; it now answers `who sets` under privacy and consent.
 - **Two calls the part made are now in the brief,** so that the later parts make them alike: a flag or key that says "country" without saying whose fails the role test, and a party that requires a value without setting it isn't who sets it.
 - **Each part's own script rebuilt its root decision's files,** from a copy of the earlier part's. A later part that ran an earlier part's script would drop rows, so each part is told to write to the files directly.
+
+**What RD1-3 taught:**
+- **(c)'s kinds held:** Shopify's and Salla's statements fell under 11 of its 12 kinds, one point each; none raised a new kind.
+- **The flag rule met the scope rule.** Nine Shopify API calls by country code were noted under the flag rule, although their scope names the store's business entity as whose country it is. The rule now counts a flag's identifier and scope too, and the nine are read again in the second pass. The admin forms that carry the same answers were placed.
+- **Payment methods had no (c) kind,** and were placed under other payment providers. That kind now names them.
+- **The absence audit ran beside the part,** and added Salla statements its slice didn't hold. The part left them for the second pass, as the coordinator's message and now the brief say.

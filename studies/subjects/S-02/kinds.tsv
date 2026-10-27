@@ -900,6 +900,14 @@ S02-SA-307	shipped	structures/salla/docs-operations is built from an API definit
 S02-SA-308	shipped	structures/salla/docs-operations is built from an API definition the platform publishes
 S02-SA-309	shipped	structures/salla/docs-operations is built from an API definition the platform publishes
 S02-SA-310	shipped	structures/salla/docs-operations is built from an API definition the platform publishes
+S02-SA-311	observed	structures/salla/dashboard-translations is built from a recorded session
+S02-SA-312	observed	run 20261008T125139Z-sweep-merchant-routes-ar records a store or session
+S02-SA-313	observed	run 20261008T125139Z-sweep-merchant-routes-ar records a store or session
+S02-SA-314	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/en/article/: the address is a help centre's article
+S02-SA-315	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/en/article/: the address is a help centre's article
+S02-SA-316	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/en/article/: the address is a help centre's article
+S02-SA-317	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/en/article/: the address is a help centre's article
+S02-SA-318	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/en/article/: the address is a help centre's article
 S02-WC-001	shipped	a file of the WooCommerce release
 S02-WC-002	shipped	a file of the WooCommerce release
 S02-WC-003	shipped	a file of the WooCommerce release

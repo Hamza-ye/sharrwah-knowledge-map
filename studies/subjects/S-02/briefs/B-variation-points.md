@@ -71,7 +71,7 @@ Statements under (h) are conditions, not variants: a variant rests on at least o
    - the terms: which terms apply, and the law and courts that govern them;
    - documents and checks: what the merchant provides to verify the store or the business;
    - the platform's own payment service: whether and how the store can use it;
-   - other payment providers: which ones the store can use;
+   - other payment providers: which ones the store can use, and the payment methods it can offer through them, such as cash on delivery or a bank transfer;
    - payouts: where, how and in what currency the merchant is paid;
    - the platform's fees: its plans, their prices, and the currency they are billed in;
    - taxes on the platform's fees;
@@ -105,7 +105,7 @@ Statements under (h) are conditions, not variants: a variant rests on at least o
 
    **Kinds, under (c) and (f).** A default and the options it is chosen from are one kind, such as a store's default currency and the currencies it supports. A thing that sets two kinds at once, such as a catalog that sets both which products are offered and their prices, goes under both. A thing or setting that fits none of the kinds raises a new kind: name it in `x_words`, and list it in `notes-b.md`.
 2. **Candidates.** Each statement under one of your part's bullets that answers one of that bullet's questions gives one candidate per question and per X it answers, with its X quoted from it. A statement that names several settings, such as design, prices and currency, gives a candidate for each.
-   - **The role test** applies to X itself: X must be in the question's role, as rule 1 gives it. "Market", "country" and "region" name different things on different platforms, so the test rests on what the statement says X is, not on its words. A feature flag or key whose words say "country" without saying whose fails the test.
+   - **The role test** applies to X itself: X must be in the question's role, as rule 1 gives it. "Market", "country" and "region" name different things on different platforms, so the test rests on what the statement says X is, not on its words. A feature flag or key whose words, identifier and scope say "country" without saying whose fails the test.
    - **A candidate whose X passes the role test is a facet** of its root decision (`PLAN.md`, Stage 4).
    - **Noted, not placed.** A statement under one of your bullets that answers none of that bullet's questions, or whose X fails the role test, is noted in `notes-b.md`, with the reason in a few words. Write each on its own line, starting with its id and that bullet: `- S02-SA-011 (b): reason`, or `- S02-SA-011 (c, d): reason` for two bullets. Only lines that start this way count as notes, so write ids elsewhere in `notes-b.md` without a bullet in brackets after them. A statement under two of your bullets is noted, or placed, under each.
 3. **Variation points.**

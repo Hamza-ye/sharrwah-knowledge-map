@@ -7,13 +7,16 @@
 #   step       a step of a browser run in observed-sa or observed-sh whose page ended at the address, with its page
 #              text in git (steps/NNN.text.txt or NNN.aria.yaml, or observed-sh's text of the saved HTML in
 #              derived/step-text-from-html/<run>/NNN.html.txt; read it with git show)
+#   answer     what a browser run's page received, saved in git: observed-sa's responses (raw/runs/<run>/responses/
+#              NNNN.json, named in the run's responses.jsonl by host and path) and observed-sh's answers (named in
+#              its answers.jsonl by host and endpoint)
 #   warc       a record in a fetch archive that is in git (read it with method/warc_text.py)
 #   cdx-only   an index line whose archive is not in git: held, but not readable from the repository
 import csv, glob, json, os, re, subprocess, unicodedata, urllib.parse
 from collections import defaultdict
 
 csv.field_size_limit(10**9)
-RANK = {"structure": 0, "capture": 1, "step": 2, "warc": 3, "cdx-only": 4}
+RANK = {"structure": 0, "capture": 1, "step": 2, "answer": 3, "warc": 4, "cdx-only": 5}
 URL_RE = re.compile(r"https?://[^\s,;)\]>\"'|]+")
 BARE_RE = re.compile(r"(?<![\w@/.-])((?:[a-z0-9-]+\.)+(?:com|sa|dev|net|org|io|ae|me|co|app|store|partners)"
                      r"(?:/[^\s,;)\]>\"'|]*)?)", re.I)
@@ -141,6 +144,26 @@ class Held:
                     m = re.match(r"^(https://admin\.shopify\.com)/store/[^/?#]+(/.*)?$", url)
                     if m:
                         self._add(m.group(1) + (m.group(2) or "/"), dict(h))
+        # What runs' pages received, saved in git: each saved body by the address it was received from.
+        saved = set(git(root, "ls-files", "raw/runs/*/responses/*", "raw/runs/*/answers/*").split())
+        for f_name, kind in (("responses.jsonl", "responses"), ("answers.jsonl", "answers")):
+            for lst in sorted(glob.glob(os.path.join(root, "raw/runs/*", f_name))):
+                run = os.path.basename(os.path.dirname(lst))
+                with open(lst, encoding="utf-8", errors="replace") as f:
+                    for line in f:
+                        try:
+                            o = json.loads(line)
+                        except Exception:
+                            continue
+                        loc = f"raw/runs/{run}/{o.get('file', '')}"
+                        host = o.get("host") or ""
+                        path = o.get("path") if kind == "responses" else o.get("endpoint")
+                        if loc not in saved or not host or not path:
+                            continue
+                        status = str(o.get("status") or "200")
+                        self._add(f"https://{host}{path}", {"repo": repo, "commit": commit, "kind": "answer",
+                                                             "status": status, "redirect": "", "location": loc,
+                                                             "readable": status.startswith("2")})
         # Corpora held as rows, one address per row: Salla's help-centre articles (observed-sa item 11).
         for items in sorted(glob.glob(os.path.join(root, "structures/salla/help-articles/*/items.jsonl"))):
             lang_dir = os.path.relpath(os.path.dirname(items), root)

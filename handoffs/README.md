@@ -3,7 +3,7 @@
 **What this folder is:** requests to capture evidence that a run in observed-sh or observed-sa could hold, but doesn't yet (`PLAN.md`, section 6, Evidence; the founder, 27 October 2026). They aren't decisions for the founder.
 
 **How a request travels:**
-1. **The coordinator** checks that the evidence isn't held, records the gap in the subject's files with `who_can` `capture`, and writes one file here, named for the repository and what it asks.
+1. **The coordinator** checks that the evidence isn't held (`method/held_index.py`, which reads the runs' saved answers too, and `method/corpus_search.py`), records the gap in the subject's files with `who_can` `capture`, and writes one file here, named for the repository and what it asks.
 2. **The founder** hands the file to a local agent working in that repository.
 3. **The local agent** captures what it can, as that repository records runs: its own `docs/OPERATING.md`, tools and formats, with a note in its `index/run-notes.tsv`. It stops before anything that spends money or can't be undone, and before what the file says to stop at. It pushes, and tells the founder the commit.
 4. **The coordinator** reads the new runs at that commit, closes the gaps they answer, and marks the request done below, with the commit.
@@ -25,7 +25,7 @@
 | Id | Repository | Asks for | For | Raised | Status |
 | --- | --- | --- | --- | --- | --- |
 | [H-001](H-001-observed-sa-store-country-settings.md) | observed-sa | Where the merchant store shows its country, and whether it can be changed | S-02, RD1: S02-SA-G01 | 27 October 2026 | open |
-| [H-002](H-002-observed-sa-onboarding-countries.md) | observed-sa | The countries a new merchant's onboarding offers as the store's country | S-02, RD1: S02-SA-G03 | 27 October 2026 | open |
+| [H-002](H-002-observed-sa-onboarding-countries.md) | observed-sa | What the onboarding shows after a store country other than Saudi Arabia (its list of countries is held) | S-02, RD1: S02-SA-G03 | 27 October 2026 | open; narrowed on 27 October 2026 by the absence audit |
 | [H-003](H-003-observed-sa-plans-faq.md) | observed-sa | The plans pages' answers on using Salla outside Saudi Arabia | S-02, RD1: S02-SA-G04 | 27 October 2026 | open |
 | [H-004](H-004-observed-sa-verification-contract.md) | observed-sa | The payment services contract a store in the UAE or Kuwait signs at verification | S-02, RD1: S02-SA-G02 | 27 October 2026 | open |
 | [H-005](H-005-observed-sa-multi-market.md) | observed-sa | Multiple markets, switched on and set up | S-02, RD2 and RD3 | 27 October 2026 | open; may need a store on Salla's Special plan |
