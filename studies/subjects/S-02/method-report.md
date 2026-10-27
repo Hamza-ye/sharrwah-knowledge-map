@@ -135,6 +135,7 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 | RD1-1: (a) and (d), all five platforms | 205 | 74 | 17.8 | 2.8 | 3 | 52 |
 | RD3-1: (f) and (g), Shopify | 264 | 65 | 15.2 | 4.1 | 37 | 76 |
 | RD1-2: (b), all five platforms | 128 | 44 | 8.3 | 2.9 | 4 | 39 |
+| RD3-2: (f) and (g), Salla | 133 | 65 | 15.8 | 2.0 | 7 more (44) | 75 |
 
 **What RD1-1 taught:**
 - **One point per question held:** the five platforms' answers to "what fills the store's own country" fell under one variation point, as 30 fields and records and one gap, and the countries served and kept out under one each.
@@ -153,3 +154,9 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 - **Each of (b)'s four questions made one point,** as rule 3 says: who sets, who checks and who changes the store's country, and what must hold before it changes.
 - **"Who checks" was read too narrowly.** The part noted 12 statements on verifying a business's information or its address, because their words don't name the country. The store's own country includes where the merchant is registered, and (a)'s answers name the records that hold it, so a check of those records is a check of the country. The brief now says so, and the part re-reads the 12.
 - **The admin-control convention covered only `who sets`;** it now covers `who changes` too. A permission or role that gates a change, and the account's owner, stay their own answers, beside the seller's.
+
+**What RD3-2 taught:**
+- **A later platform mostly fills the earlier points:** Salla's statements gave rows under 31 of RD3-1's 37 points, and raised 7, for kinds Shopify had stated only one question of, or not at all. Its rows also cost more per pair (2.0), since each point needs Salla's row under it, answer or not.
+- **The search for Shopify's rows under the new points found one answer that reading had missed:** RD3-1 had noted S02-SH-374, whose words say the visitor accepts cookies; it now answers `who sets` under privacy and consent.
+- **Two calls the part made are now in the brief,** so that the later parts make them alike: a flag or key that says "country" without saying whose fails the role test, and a party that requires a value without setting it isn't who sets it.
+- **Each part's own script rebuilt its root decision's files,** from a copy of the earlier part's. A later part that ran an earlier part's script would drop rows, so each part is told to write to the files directly.

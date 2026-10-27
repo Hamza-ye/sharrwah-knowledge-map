@@ -36,3 +36,10 @@ S02-VP-74	f	who sets "Markets for a customer"	market selection | shopify: Market
 S02-VP-75	f	what "Customer privacy" takes its value per	privacy and consent | shopify: Customer privacy; Cookie banner; Data sharing opt-out | salla: cookies; cookie preferences; privacy policy	S02-SH-307	
 S02-VP-76	f	what "Business address" takes its value per	the store's address | shopify: Business address; Residential address; Address, City, State, ZIP code	S02-SH-349	
 S02-VP-77	f	what "measurement and weight units, and time zone" takes its value per	units and time zone | shopify: measurement and weight units, and time zone; Unit system; Default weight unit; Time zone	S02-SH-246	
+S02-VP-78	f	who sets "الفروع"	locations | salla: الفروع; الفروع والمستودعات; استراتيجية إنقاص المخزون; خيار توفر المنتج	S02-SA-033	
+S02-VP-79	f	who sets "معلومات خدمة العملاء"	contact information shown to buyers | salla: معلومات خدمة العملاء; معلومات التواصل	S02-SA-038	
+S02-VP-80	f	what "maintenance" takes its value per	store status | salla: maintenance; maintenance mode	S02-SA-063, S02-SA-064	
+S02-VP-81	f	who sets "maintenance"	store status | salla: maintenance	S02-SA-063	
+S02-VP-82	f	what "التذكير" takes its value per	messages to buyers | salla: التذكير; تذكيرات; التذكير بالسلة المتروكة	S02-SA-259	
+S02-VP-83	f	who sets "التذكير"	messages to buyers | salla: التذكير; تذكيرات; التذكير بالسلة المتروكة	S02-SA-259	
+S02-VP-84	f	who sets "cookie preferences"	privacy and consent | shopify: Customer privacy; Cookie banner; Data sharing opt-out; Cookie consent; Manage preferences | salla: cookies; cookie preferences; privacy policy	S02-SA-291	

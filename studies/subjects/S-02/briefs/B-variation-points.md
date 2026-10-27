@@ -105,7 +105,7 @@ Statements under (h) are conditions, not variants: a variant rests on at least o
 
    **Kinds, under (c) and (f).** A default and the options it is chosen from are one kind, such as a store's default currency and the currencies it supports. A thing that sets two kinds at once, such as a catalog that sets both which products are offered and their prices, goes under both. A thing or setting that fits none of the kinds raises a new kind: name it in `x_words`, and list it in `notes-b.md`.
 2. **Candidates.** Each statement under one of your part's bullets that answers one of that bullet's questions gives one candidate per question and per X it answers, with its X quoted from it. A statement that names several settings, such as design, prices and currency, gives a candidate for each.
-   - **The role test** applies to X itself: X must be in the question's role, as rule 1 gives it. "Market", "country" and "region" name different things on different platforms, so the test rests on what the statement says X is, not on its words.
+   - **The role test** applies to X itself: X must be in the question's role, as rule 1 gives it. "Market", "country" and "region" name different things on different platforms, so the test rests on what the statement says X is, not on its words. A feature flag or key whose words say "country" without saying whose fails the test.
    - **A candidate whose X passes the role test is a facet** of its root decision (`PLAN.md`, Stage 4).
    - **Noted, not placed.** A statement under one of your bullets that answers none of that bullet's questions, or whose X fails the role test, is noted in `notes-b.md`, with the reason in a few words. Write each on its own line, starting with its id and that bullet: `- S02-SA-011 (b): reason`, or `- S02-SA-011 (c, d): reason` for two bullets. Only lines that start this way count as notes, so write ids elsewhere in `notes-b.md` without a bullet in brackets after them. A statement under two of your bullets is noted, or placed, under each.
 3. **Variation points.**
@@ -145,6 +145,7 @@ Statements under (h) are conditions, not variants: a variant rests on at least o
      - Under `who sets "X"` and `who changes "X"`, a control in the store's admin means the seller sets or changes it. "Automatically", "by default" or "on your behalf" means the platform does, unless the statement names another party.
      - Under `who checks "X"`, a check of a field or record that holds the store's own country, as (a)'s answers name them, is a check of X: its address, its business entity, or the business's registration.
      - A staff permission or role that the statement says gates it, or the account's owner, is its own answer, beside the seller's.
+     - A party that requires a value without setting it, such as a regulator, isn't who sets it.
      - An answer may be that no one can, in the statement's words, such as "it cannot be changed later".
    - **(g).**
      - **A statement that a setting holds for the whole store** is the platform's answer under each of RD3's `what "X" takes its value per` points it applies to. Its `variant` is an excerpt of it, and its `basis_evidence` names `the whole store`. Where no such point's X is of its setting's kind, it raises one.
