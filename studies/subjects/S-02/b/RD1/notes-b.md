@@ -586,3 +586,30 @@ Noted (b):
 - S02-BC-221 (b): 'You will provide true, accurate, current, and complete information when registering for an Account': it doesn't name the store's country or an address (rule 2)
 - S02-BC-222 (b): 'Commerce reserves the right to refuse registration of, or cancel, accounts that violate this Agreement': a refusal for a violation, not who sets, checks or changes the store's country (rule 2)
 - S02-BC-243 (b): 'your default currency is assigned based on your location': it names no one who sets, checks or changes the location (rule 2)
+
+### Place tasks: salla (a), (b) and (d)
+
+Placed: S02-SA-311 and S02-SA-422 joined S02-V-015 (S02-VP-01, 'موقع المتجر', the store's location), and S02-SA-311 also S02-V-095 (S02-VP-06, the seller); S02-SA-312 and S02-SA-313 joined S02-V-013 (S02-VP-01, the Arabic and the API of S02-SA-284's onboarding question) and S02-V-072 (S02-VP-04, the seller); S02-SA-318 joined S02-V-024 (S02-VP-03, the UAE); S02-SA-430 joined S02-V-012 (store_country) and S02-V-018 (country), as S02-SA-292 is in both.
+
+A call the brief left to me: S02-SA-311 and S02-SA-422 say the store's location is updated 'from the branches and warehouses page'. Rule 1 keeps out a branch or warehouse, and lets the statement's own words decide: theirs don't say orders ship from the store's location or stock is kept in it, so I placed them with S02-V-015. S02-SA-423, which says branches and warehouses 'ship orders to customers', is noted.
+
+Noted:
+- S02-SA-312 (d): the options of the store-country question, 'من أي دولة تسجِّل متجرك؟' (my translation: from which country do you register your store?), 'دولة أخرى' (my translation: another country) among them: their words don't say the countries are where Salla serves merchants, as S02-SH-259's options were read under (d)
+- S02-SA-313 (d): the same question's options, from the onboarding's API ('"slug": "store-country"'): as S02-SA-312
+- S02-SA-357 (a): the address of the store's main, default branch, 'بيانات الفرع الرئيسي (الإفتراضي) لمتجرك' (my translation: the data of your store's main, default branch): a branch, which rule 1 keeps out; in S02-VP-01's note
+- S02-SA-360 (a): a tax record's country, for which the seller will 'select which markets the record applies to': a tax registration its own words tie to markets the store sells into (rule 1); in S02-VP-01's note
+- S02-SA-421 (a): 'Choose the country, address, postal code, street, and district', for a branch or warehouse: a branch or warehouse, which rule 1 keeps out; in S02-VP-01's note
+- S02-SA-423 (a): branches and warehouses, 'used to define working hours, display store locations, and ship orders to customers': places the store ships from, which rule 1 keeps out; in S02-VP-01's note
+
+### Place tasks: shopify (a) and (b)
+
+Placed under S02-VP-01 (a): S02-SH-591, S02-SH-644 and S02-SH-881 joined S02-V-001 (business details, the business entity); S02-SH-593, S02-SH-760, S02-SH-882, S02-SH-885, S02-SH-886 and S02-SH-891 joined S02-V-002 (the store address); S02-SH-598, S02-SH-627 and S02-SH-886 joined S02-V-003 (the billing address); S02-SH-600 joined S02-V-006 ('I'm located in'); S02-SH-702 joined S02-V-007 (an accurate location); S02-SH-599 is a new row, S02-V-265, the sign-up's '"storeCreatePayload": {... "country": "YE"'.
+
+Placed under (b): S02-SH-592, S02-SH-594, S02-SH-599, S02-SH-600, S02-SH-644, S02-SH-702 and S02-SH-881 joined S02-V-053 (S02-VP-04, the seller); S02-SH-594, S02-SH-595, S02-SH-602, S02-SH-702, S02-SH-881 and S02-SH-895 joined S02-V-059 (S02-VP-06, the seller); S02-SH-595 and S02-SH-884 joined S02-V-065 (S02-VP-07, deactivating financial services); S02-SH-598 joined S02-V-067 (S02-VP-07, the billing address's country matches an entity's: its Country/region is disabled beside the selected entity). New rows: S02-V-266 (S02-VP-05), 'Business entity information is sent to assessors to verify your business.' (S02-SH-589); S02-V-267 (S02-VP-07), 'Adding new business entities or making changes might require additional verification.' (S02-SH-590, S02-SH-596); S02-V-268 (S02-VP-06), 'You can't change the business type, country, or the person associated with individual or sole proprietor entities.' (S02-SH-596); S02-V-269 (S02-VP-06), 'you might need to contact Shopify Support to change a store's default business entity' (S02-SH-597); S02-V-270 (S02-VP-04), 'Your user role might not have the View permission for Business entities.' (S02-SH-601).
+
+Calls the brief left to me: 'manage' and 'maintain' are read as both setting and changing (S02-SH-594, S02-SH-702, S02-SH-881), as S02-SH-013 is in both S02-V-053 and S02-V-059; S02-SH-601's 'View permission for Business entities' is its own row, since nothing quoted shows it is S02-V-055's 'VIEW_LEGAL_ENTITIES'; S02-SH-599's store-creation payload is its own row under (a), a record apart from the sign-up's field 'I'm located in:' (S02-V-006).
+
+Noted (b):
+- S02-SH-591 (b): it lists what the business entity must include, 'The country your business is operating from' among them: no one who sets, checks or changes it, and no condition on its change (rule 2)
+- S02-SH-593 (b): 'Changing the store country creates a new business entity and might affect the following details': what a change does, not who makes it or what must hold before it (rule 2)
+- S02-SH-627 (b): 'Before creating a new store in your organization, your main store must have ... a complete billing address': a condition on creating an expansion store, not on setting or changing the store's country; it names no party (rule 2)

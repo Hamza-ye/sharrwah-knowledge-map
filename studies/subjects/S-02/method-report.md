@@ -412,6 +412,7 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 | RD3-S2: (f), WooCommerce | 41 | 321 | 38 | 6.6 | 8.4 |
 | RD3-S3: (g), WooCommerce | 134 | 134 | 48 | 7.7 | 2.8 |
 | RD3-S4: (f) and (g), Zid | 40 | 269 | 61 | 12.6 | 4.4 |
+| RD2-S1: (e) and (g), all five | 210 | 217 | 45 | 6.6 | 4.8 |
 
 **What the two pilots taught:**
 - **The tool and the order tripled the rate:** about three statements a request, against about one in the dry run, at about 0.05 million a statement. At that rate the second pass comes to about 115 million in all, inside the frame's 100 to 160.
