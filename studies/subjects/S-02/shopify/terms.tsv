@@ -51,3 +51,8 @@ Tax regions		Areas where your customers will pay tax, and where you will collect
 Duties and import taxes			S02-SH-C2409;S02-SH-C2424
 Pricing configuration		Manage how import fees are displayed to customers on storefront and checkout	S02-SH-C2415
 recipient countries			S02-SH-C2373
+recipient countries	بلدان مستلمة		S02-SH-C2373;S02-SH-C2432
+targeted SMS countries	بلدان SMS المستهدفة		S02-SH-C2389;S02-SH-C2433
+supported regions	المناطق المدعومة		S02-SH-C2398;S02-SH-C2434
+region-specific requirements	المتطلبات الخاصة بالمنطقة		S02-SH-C2376;S02-SH-C2435
+Country or region	البلد أو المنطقة		S02-SH-C2399;S02-SH-C2436
