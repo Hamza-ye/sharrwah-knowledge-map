@@ -246,6 +246,8 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 | SH-2a: analytics and tracking; notifications to the merchant; store status | 6 | 6 | 6 | 86 | none | 97 | 20.7 |
 | WC-4a: analytics and tracking; apps; messages to buyers; notifications to the merchant | 7 | 7 | 7 | 40 | none | 75 | 12.5 |
 | WC-4b: privacy and consent; staff access; store status | 6 | 6 | 6 | 70 | none | 65 | 12.0 |
+| SH-2b: contact information shown to buyers; locations; messages to buyers; and SH-2a's lead | 4 | 4 | 4 | 75 | none | 76 | 14.4 |
+| SH-2c: SH-2b's searches past 300, narrowed and read | 4, again | 4 | 4 | 72 | none | 67 | 13.8 |
 
 **What WC-1 taught:**
 - **Our labels aren't the platform's words.** The brief said to search a kind's own name, and the part asked whether "who sells to the buyer" was one. The brief now says the kind's head word is searched, such as `domain` or `currency`, and our longer labels aren't.
@@ -330,4 +332,13 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 **What WC-4b taught, and WooCommerce's gap-closing as a whole:**
 - **WooCommerce's gap-closing is complete:** five parts, 41 rows, 37 of them with no gap left, and 254 statements (S02-WC-257 to S02-WC-510), for 85.8 million. Three gaps remain on four of its rows, each routed to the founder: who checks the store's country (G06) and which documents its payments' verification asks for (G07), as questions to WooCommerce; and the domain (G08), a question or a look at a test store's admin. Phase A's G01 and G03 stand as the absence audit left them.
 - **Store-wide by design.** Roles and capabilities, Coming soon mode and the privacy texts each take one value for the whole site; no role, capability or setting is tied to a market. Consent comes from the visitor, through the WP Consent API.
+
+**What SH-2b and SH-2c taught:**
+- **A search left past 300 hides evidence.** SH-2b answered its four points and stopped before narrowing six searches. Narrowed, they gave SH-2c 72 more statements, as many as SH-2b's own. Among them:
+  - a changelog post of 22 January 2026 says a store's currency is now set from the business country in Business details (S02-SH-880 to S02-SH-904);
+  - the Contact information policy's template fills "Physical address: Yemen" from the store's settings, on a store made in Yemen.
+
+  The brief's narrowing step isn't optional, and a part that stops before it leaves a follow-up.
+- **Narrowing by terms can't thin a corpus of duplicates.** Most of the fetch archives' records past 300 are Help Center fetches, the same pages as the Help Center corpus, and could only be narrowed by address.
+- **Named documents left unread get a part of their own:** SMS marketing's rules by region and its list of countries, WhatsApp's prices by country, and the duties journey's later steps go to SH-2d.
 
