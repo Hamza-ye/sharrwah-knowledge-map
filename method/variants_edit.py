@@ -19,6 +19,7 @@ Commands (ids are `;`- or `,`-separated):
   done TASK ID BULLET OUTCOME    a row in b/RD/done.tsv, the ledger `method/second_pass_list.py --check` reads
   xwords VP_ID PLATFORM WORDS    the platform's words for X, added to the point's x_words
   vpnote VP_ID TEXT              TEXT added to the point's note after "; "
+  rownote VARIANT_ID TEXT        TEXT added to the row's own note after "; ", such as what a later task changed
 
 It reads the root decision's slice (statements, absences) for kinds, scopes and statement text, so an answer's
 excerpt is checked to be in one of its statements, and refuses: an id outside the slice; a basis outside `term`,
@@ -240,6 +241,11 @@ def main(subj, rd, cmd, args):
         recs.append(dict(zip(["task", "id", "bullet", "outcome"], args)))
         write(path, ["task", "id", "bullet", "outcome"], recs)
         print(f"done.tsv: {args[0]} {args[1]} ({args[2]}) recorded")
+    elif cmd == "rownote":
+        r = F.row(args[0])
+        r["note"] = (r["note"] + "; " if r["note"] else "") + clean(args[1])
+        F.save()
+        print(f"{args[0]}: note written")
     elif cmd in ("xwords", "vpnote"):
         p = F.point(args[0])
         if cmd == "xwords":

@@ -959,3 +959,13 @@ Each joined row was compared with the Zid statements already in it: its basis, `
 4. zid.sa's own pricing page (S02-ZD-347 to S02-ZD-349) is read as tied to no one country: its recorded scope names none, and the site holds pages for several.
 5. Joining, not adding ("How the rereads are decided", 2): where the merchant is, and the merchant's country, are read as one decider in rule 4's sense, so one answer stays one row, and the evidence each joined statement adds names its country.
 6. Ids: this part's new rows are S02-V-298 to S02-V-300. It raised no point.
+
+### Problems with the method (part RD1-S4)
+
+1. A row's own note can't be changed with the tool. S02-V-177's note still says that S02-ZD-008 and S02-ZD-112 'are noted: their words don't say whose country', while S02-ZD-112 is now joined to that row. S02-VP-11's note says so. The same holds for the points' notes: their earlier "Kept out" passages on the statements this part placed stand, and the note appended to each point names what is now placed.
+2. Rule 4 says the variant names the country as the platform ties it, and a variant is a verbatim excerpt. A row that statements joined keeps its own excerpt: S02-V-181's names 'بالريال السعودي أو بعملة التاجر المحلية' (my translation: in Saudi riyals or the merchant's local currency). Egypt, Syria, the UAE, Kuwait, Oman, Saudi Arabia and Kuwait are named only in the evidence each joined statement adds. The new rows' excerpts name the country as the platform ties it ('زد مصر').
+3. Outside the work list: S02-ZD-420, S02-ZD-436, S02-ZD-440, S02-ZD-443, S02-ZD-445 and S02-ZD-446 are noted under (c) from zid.sa's one-country pages, but their earlier notes give other reasons as well (the plan, the market orders go to, no thing bound named), and the work list doesn't name them. This part leaves them.
+
+### Check (part RD1-S4)
+
+On a copy holding only `b/RD1`: `merge_slices.py` merged 19 points and 300 rows. `check_subject.py` gave no line of level `error`, 17 warnings (phase A's citations) and 14 reviews: 12 quotes found only in a page's source, the coordinator's, and RD2's and RD3's statements, whose folders the copy leaves out. None names this part's rows or statements. Its `unplaced.tsv` holds no row of RD1. `second_pass_list.py --check`: RD1 has no revisit, reread or note task without a row in `done.tsv`.

@@ -1,8 +1,12 @@
 """Print what phase C compares for one or more variation points of a root decision: each platform's rows, with the
 answer each gives, its kind, scope, release markers and the (h) statements that condition it; then each platform's
-set of answers.
+set of answers, and the answers two or more platforms share.
 
 Usage: python3 -I method/point_view.py SUBJECT_DIR RD VP_ID [VP_ID ...]
+       python3 -I method/point_view.py SUBJECT_DIR --stmts ID[,ID...]
+
+--stmts prints statements whole by id, from any bullet, (h) among them, with their platform, bullet, identifier,
+statement, scope, marker and conditions, but no note.
 
 Reads SUBJECT_DIR/b/<RD>/variation-points.tsv and variants.tsv, SUBJECT_DIR/slices/<RD>/statements.tsv for each
 statement's kind, and each platform's statements.tsv for scope, marker and conditions. A statement under (h) names in
@@ -78,7 +82,7 @@ def main(subj, rd, vps):
                 for v in rows:
                     form = v["variant"] if v["variant"] in ("gap", "absent", "not covered") else "answer"
                     a = answer(q, v["basis_evidence"], form)
-                    got.append(a)
+                    got.extend(a.split("; "))
                     sids = ids(v["stmt_ids"])
                     marks = sorted({f"{s}: {st[s]['marker']}" for s in sids if s in st and st[s]["marker"].strip()})
                     scopes = sorted({st[s]["scope"].strip() for s in sids if s in st and st[s]["scope"].strip()})
@@ -105,10 +109,34 @@ def main(subj, rd, vps):
                         print(f"      conditions also: {';'.join(hs[5:])}")
                 sets.append(f"{plat} {{{', '.join(sorted(set(got))) or '-'}}}")
         print("  answer sets: " + " | ".join(sets))
+        share = {}
+        for line in sets:
+            plat, rest = line.split(" ", 1)
+            for a in rest.strip("{}").split(", "):
+                if a and a not in ("-", "?", "gap", "absent", "not covered"):
+                    share.setdefault(a, []).append(plat)
+        both = [f"{a}: {', '.join(ps)}" for a, ps in share.items() if len(ps) > 1]
+        print("  shared: " + (" | ".join(both) if both else "none"))
         print()
 
 
+def stmts(subj, wanted):
+    found = set()
+    for g in GROUPS:
+        for p in g:
+            for r in table(os.path.join(subj, p, "statements.tsv")):
+                if r["stmt_id"] in wanted:
+                    found.add(r["stmt_id"])
+                    print("\t".join([p, r["stmt_id"], r["bullet"], r["identifier"], r["statement"], r["scope"], r["marker"], r["conditions"]]))
+    for w in wanted:
+        if w not in found:
+            print(f"{w}: no such statement", file=sys.stderr)
+
+
 if __name__ == "__main__":
-    if len(sys.argv) < 4:
+    if len(sys.argv) == 4 and sys.argv[2] == "--stmts":
+        stmts(sys.argv[1].rstrip("/"), ids(sys.argv[3]))
+    elif len(sys.argv) < 4:
         sys.exit(__doc__)
-    main(sys.argv[1].rstrip("/"), sys.argv[2], sys.argv[3:])
+    else:
+        main(sys.argv[1].rstrip("/"), sys.argv[2], sys.argv[3:])

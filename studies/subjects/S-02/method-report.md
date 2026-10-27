@@ -416,6 +416,7 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 | RD1-S1: (a), (b) and (d), all five | 158 | 198 | 54 | 10.8 | 3.7 |
 | RD1-S3: (c), Zid, WooCommerce and BigCommerce | 106 | 168 | 65 | 12.8 | 2.6 |
 | RD3-S6: (f) and (g), Salla | 67 | 90 | 44 | 7.1 | 2.0 |
+| RD1-S4: (c), Zid, 51 rereads | 51 | 51 | 35 | 6.2 | 1.5 |
 | RD3-S7: (g), Salla and WooCommerce, 14 rereads | 14 | 14 | 24 | 2.5 | 0.6 |
 
 **What the two pilots taught:**
@@ -431,6 +432,22 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 **What RD1-S3 taught: a rule that hid the evidence it was meant to sort.** The clause added to rule 4 after the dry run kept a statement whose scope names a site from answering `every store`. Read with rule 1's table of deciders, it also kept zid.eg's Terms and Privacy Policy, both sites' prices, Zid's country pages and Zid Payments' sections for Saudi and Kuwaiti merchants from answering anything: 51 statements were noted, among them that a merchant in Egypt contracts with Zid Egypt, under Egyptian law, paying in Egyptian pounds with VAT. That is what RD1 asks: what a store's country decides. The part applied the rule as written, and said so. Rule 4 now says that the merchant's country is the decider where the platform's own words tie the site, page or section to one country and address it to merchants. The 51 statements are read again in a part of their own, RD1-S4, through the second pass's `reread` task (`b/second-pass.md`). The coordinator's lesson: a rule that narrows what counts as an answer is checked against the evidence it would exclude before parts run on it.
 
 **What RD3-S6 taught: a second rule that left answers out.** Rule 4 let a statement under (g) answer a `who sets` point only beside its own whole-store answer. So statements that name only who sets a setting were noted: on Salla, the pixel the platform connects "automatically", and a staff permission over notification settings; on WooCommerce, who maintains return policies, who applies coupons, and which roles may change what. Fourteen statements in all. Rule 4 now lets them answer the `who sets` point, and they are read again in RD3-S7. With RD3-S6, the ten parts first planned are done.
+
+**What RD1-S4 taught.** It placed 45 of the 51 statements that the narrower rule had kept out, and left six noted. Zid's answers under (c) now name the country a site, page or section is tied to:
+- the contracting party, Zid Egypt (S02-V-298);
+- the terms, under Egypt's law and courts;
+- the fees, in each country's currency, with VAT on zid.eg's fees and on Zid Payments' (S02-V-299);
+- Zid Egypt as the controller of the store's data (S02-V-300).
+
+Four points now hold both `every store`, from zid.sa's own pages, and a country's answer, from zid.eg's: the contracting party, the terms, taxes on the fees, and the store's data. Each point's note says so, and phase C compares them by scope.
+- **The coordinator's list missed six statements.** Six statements from zid.sa's one-country pages were noted under the same rule, but their notes gave other reasons as well, so the list left them out (S02-ZD-420, S02-ZD-436, S02-ZD-440, S02-ZD-443, S02-ZD-445, S02-ZD-446). They are read again in RD1-S5. The lesson: when a rule widens, list every statement whose note cites it, whatever other reasons the note gives.
+- **A row's own note could go stale,** since the tool couldn't change it. S02-V-177's note still said S02-ZD-112 was noted. `method/variants_edit.py` now has `rownote`, which appends to a row's note, and S02-V-177's note now says what changed.
+- **Two of Zid's gaps stand beside new answers:** which Zid company contracts in each country (S02-ZD-G03), and which tax its fees carry (S02-ZD-G08). zid.eg now answers both for Egypt. They stay open for the other countries.
+- **Four of its calls are readings,** marked in their rows:
+  - `where the merchant is` and `the merchant's country` read as one decider;
+  - zid.sa's own pricing page read as tied to no one country;
+  - the payment methods for zid.eg's plans read as how the fees are billed (S02-ZD-370, under S02-VP-14);
+  - S02-ZD-112 placed, while its English twin, S02-ZD-008, recorded only at the page's level, stays noted.
 
 **What RD3-S7 taught.**
 - **Six of its 14 rereads changed nothing.** RD3-S2 had already placed them, from (f), in rows of the points the widened rule places them under. The coordinator listed the rereads from the parts' notes without checking for that. The lesson: before listing a reread, check whether its statement already stands in a row of the point the new rule would place it under.
