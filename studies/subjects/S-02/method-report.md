@@ -229,11 +229,12 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 
 ## 9. Phase A2, gap-closing (27 October)
 
-| Part | Rows | Rows answered | Statements added | Gaps it leaves | Requests | Millions |
-| --- | --- | --- | --- | --- | --- | --- |
-| WC-1: documents and checks; other payment providers; the store's own country; a market; who sells to the buyer; returns and cancellations | 8 | 6 | 31 | G06, in place of G02, whose pages it read; G07 | 108 | 22.2 |
-| ZD-1: taxes on the platform's fees; the countries served; who sells to the buyer; returns and cancellations; the store's address; the store's country | 8 | 5 | 35 | G08, G09; G01 stands | 74 | 14.2 |
-| WC-2: currency; language; the buyer's address; units and time zone (the rows of G05); domain; checkout and customer accounts | 10 | 8 | 58 | G08; G05 doesn't remain | 92 | 20.2 |
+| Part | Rows | Rows given statements | Rows with no gap left | Statements added | Gaps it leaves | Requests | Millions |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| WC-1: documents and checks; other payment providers; the store's own country; a market; who sells to the buyer; returns and cancellations | 8 | 8 | 6 | 31 | G06, in place of G02, whose pages it read; G07 | 108 | 22.2 |
+| ZD-1: taxes on the platform's fees; the countries served; who sells to the buyer; returns and cancellations; the store's address; the store's country | 8 | 7 | 5 | 35 | G08, G09; G01 stands | 74 | 14.2 |
+| WC-2: currency; language; the buyer's address; units and time zone (the rows of G05); domain; checkout and customer accounts | 10 | 8 | 8 | 58 | G08; G05 doesn't remain | 92 | 20.2 |
+| ZD-2: checkout and customer accounts; contact information shown to buyers; domain; language; locations; market selection | 11 | 11 | 6 | 66 | G10 to G13 | 117 | 29.6 |
 
 **What WC-1 taught:**
 - **Our labels aren't the platform's words.** The brief said to search a kind's own name, and the part asked whether "who sells to the buyer" was one. The brief now says the kind's head word is searched, such as `domain` or `currency`, and our longer labels aren't.
@@ -249,3 +250,8 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 - **Reading a gap's route in full answers more than the gap asked.** G05's five release files and the setup wizard's page gave 41 statements under six points: the currency and units the setup wizard sets from the store's country, the site's language, and where the postcode rules apply.
 - **A route can name values that nothing applies.** G05 named locale-info's `direction` and `default_locale`, which no file of the release reads by name. The language points are answered by the site's language, which the merchant sets, so the coordinator judged that no gap takes G05's place for them. The continents route returns each country's locale information whole, so the two values are served as data, and no setting takes them. That is the coordinator's reading of `woocommerce-11.2.1:includes/rest-api/Controllers/Version3/class-wc-rest-data-continents-controller.php`, lines 118 to 134.
 - **Code names and site chrome flood the searches.** `domain` matched the namespace `Automattic\WooCommerce\Blocks\Domain` in 239 release files. woocommerce.com's header selectors for the site's currency and language matched most of its pages. The part narrowed its first search from 982 files to 170 by dropping single words, as the brief says.
+
+**What ZD-2 taught:**
+- **Half its groups had no head word.** "Checkout and customer accounts", "contact information shown to buyers" and "market selection" are our names, so the part searched Zid's own phrases from `x_words` and its terms. The brief now says that a kind whose name is all ours is searched by its phrases.
+- **A setting documented for the whole store leaves "per market?" open.** All eleven rows were given statements, from the domain to the warehouses. But for five of them, none of Zid's pages says whether the setting takes a value per market, and its markets pages don't name these settings. The four gaps go to an observation of a store on a plan with markets, or to a question to Zid.
+- **Six groups cost the most so far:** 117 requests and 29.6 million, against about 60 requests by the sizing rule, which counts groups. Its rows each yielded six statements. Rows predict the cost better: the first four parts cost 1.8 to 2.8 million a row, 2.3 on average. At that rate, gap-closing comes to about 280 million, at the top of the frame's range ([the frame's budget](frame.md#budget)).

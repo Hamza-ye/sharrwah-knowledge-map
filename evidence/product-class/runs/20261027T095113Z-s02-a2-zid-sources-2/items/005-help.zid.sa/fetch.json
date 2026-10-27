@@ -1,0 +1,18 @@
+{
+ "n": 5,
+ "url": "https://help.zid.sa/inventory-transfer/",
+ "dir": "items/005-help.zid.sa",
+ "fetched_at": "2026-10-27T09:51:17Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/inventory-transfer/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 25060,
+ "cited_in": [
+  "S-02 A2 ZD-2"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "a93fbaa2d8768004e9b369cb8f61247657b3a4eb186eb323087e65c2cb727735",
+ "raw_ext": "html"
+}

@@ -1,0 +1,18 @@
+{
+ "n": 7,
+ "url": "https://help.zid.sa/category/%d8%a7%d9%84%d8%a5%d8%b9%d8%af%d8%a7%d8%af%d8%a7%d8%aa/%d8%a7%d9%84%d8%aa%d9%88%d8%a7%d8%b5%d9%84/",
+ "dir": "items/007-help.zid.sa",
+ "fetched_at": "2026-10-27T09:51:19Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/category/%d8%a7%d9%84%d8%a5%d8%b9%d8%af%d8%a7%d8%af%d8%a7%d8%aa/%d8%a7%d9%84%d8%aa%d9%88%d8%a7%d8%b5%d9%84/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 18364,
+ "cited_in": [
+  "S-02 A2 ZD-2"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "7ca7b39506ff259ed0d5c25dfd1a5957b05f46e937537e470fafb24bf570a8bb",
+ "raw_ext": "html"
+}
