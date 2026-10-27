@@ -134,6 +134,7 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 | --- | --- | --- | --- | --- | --- | --- |
 | RD1-1: (a) and (d), all five platforms | 205 | 74 | 17.8 | 2.8 | 3 | 52 |
 | RD3-1: (f) and (g), Shopify | 264 | 65 | 15.2 | 4.1 | 37 | 76 |
+| RD1-2: (b), all five platforms | 128 | 44 | 8.3 | 2.9 | 4 | 39 |
 
 **What RD1-1 taught:**
 - **One point per question held:** the five platforms' answers to "what fills the store's own country" fell under one variation point, as 30 fields and records and one gap, and the countries served and kept out under one each.
@@ -147,3 +148,8 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 - **Who sets a value is not only the platform or the seller.** Shopify names Managed Markets with Global-e, Avalara, an app and the buyer. The brief now takes the party the statement names.
 - **Conventions the part chose, now in the brief** so the later parts read alike: a control in the store's admin means the seller sets the value; "automatically" or "by default" means the platform; a catalog goes under both products and prices.
 - **Its rows quoted every statement in `basis_evidence`,** up to 10,000 characters. The brief now asks for the words that show the basis from the statements that show it best.
+
+**What RD1-2 taught:**
+- **Each of (b)'s four questions made one point,** as rule 3 says: who sets, who checks and who changes the store's country, and what must hold before it changes.
+- **"Who checks" was read too narrowly.** The part noted 12 statements on verifying a business's information or its address, because their words don't name the country. The store's own country includes where the merchant is registered, and (a)'s answers name the records that hold it, so a check of those records is a check of the country. The brief now says so, and the part re-reads the 12.
+- **The admin-control convention covered only `who sets`;** it now covers `who changes` too. A permission or role that gates a change, and the account's owner, stay their own answers, beside the seller's.

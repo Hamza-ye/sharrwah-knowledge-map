@@ -141,7 +141,11 @@ Statements under (h) are conditions, not variants: a variant rests on at least o
    - **What a value is taken per.** Under (f)'s `what "X" takes its value per`, `basis_evidence` names what the setting's value differs by, as the statement shows it, in one of four phrases: `the store's own country`, `a market the store sells into`, `the buyer's country`, or `the whole store`.
      - A value that is the same for every buyer is `the whole store`. One that differs by the buyer's country is `the buyer's country`, even where the store switches the difference on once.
      - A market that takes the store's value until the seller changes it takes its value per `a market the store sells into`.
-   - **Who sets a value.** Under `who sets "X"`, a control in the store's admin means the seller sets it; "automatically", "by default" or "on your behalf" means the platform does, unless the statement names another party.
+   - **Who sets, changes or checks it.**
+     - Under `who sets "X"` and `who changes "X"`, a control in the store's admin means the seller sets or changes it. "Automatically", "by default" or "on your behalf" means the platform does, unless the statement names another party.
+     - Under `who checks "X"`, a check of a field or record that holds the store's own country, as (a)'s answers name them, is a check of X: its address, its business entity, or the business's registration.
+     - A staff permission or role that the statement says gates it, or the account's owner, is its own answer, beside the seller's.
+     - An answer may be that no one can, in the statement's words, such as "it cannot be changed later".
    - **(g).**
      - **A statement that a setting holds for the whole store** is the platform's answer under each of RD3's `what "X" takes its value per` points it applies to. Its `variant` is an excerpt of it, and its `basis_evidence` names `the whole store`. Where no such point's X is of its setting's kind, it raises one.
      - **A statement that the platform has no market of the kind in (e)** is its answer under each of RD2's points it applies to. Its `variant` is an excerpt of it, and its `basis_evidence` names `no market`. Where no RD2 point exists yet, it raises `what defines "X"`, with X the platform's words for the market it lacks.
