@@ -301,3 +301,66 @@ Item numbers are those of 20261012T045101Z-q1-zid-sources unless another run is 
 4. Staff access. Held (`method/held_index.py` found both after they had been rendered live; the held copies were read and cited): team-member (164, فريق العمل, August 3, 2026) and zidpay_staff_and_currencies (184, August 6, 2026), in full; User Roles and Permissions (003), in full; the compare-plans entry Add Team Members (185).
 5. Privacy and consent. Held rendered (20261027T112044Z-zid-rerender): the Privacy Policy in English (item 009), in passages (cookies, consent, Merchants, Customers, countries), and the English Terms (item 010), in passages (privacy, consent). Live: https://help.zid.sa/whatsapp-opt-out/ (إلغاء الاشتراك من الرسائل, October 21, 2026), in full, and the FAQ ماهي سياسة الخصوصية والأمان في زد؟ (September 24, 2026; a link to the Privacy Policy, not recorded), both found in the help centre's sitemaps. legal-pages (133) was recorded by ZD-1 (S02-ZD-212 to S02-ZD-218) and not read again.
 6. Store status. Held: working-hours (173, اوقات العمل الرسمية, August 5, 2026), in full; the Terms' ضوابط المتجر الإلكتروني in the rendered copies (20261027T112044Z-zid-rerender items 003 and 010), in passages (الصيانة, إغلاق المتجر; maintenance, closing the store); Store (060), in passages; the compare-plans data (185), in passages (no entry on working hours). The help centre's sitemaps list no other article whose slug names a store's closure or maintenance (two FAQs name disabling Zid Pay).
+7. Units and time zone. Held, in passages: store-info-ksa (158; المنطقة الزمنية), Store (060; timezone), get-manager-profile (027; timezone, expiry_timezone), create-a-new-product (013; a product's weight, whose examples give unit kg, with no description of the unit), list-of-orders (039; ip_timezone), payment-constraints (144; the cart's weight, with no unit named).
+8. The lead. Held rendered with their text in 20261027T111455Z-s02-a2-sources-batch-1: https://zid.sa/ar/pricing/ (item 006), https://zid.sa/en/pricing/ (item 007) and https://zid.eg/ar/pricing/ (item 008, باقات وأسعار زد مصر), in full. Their raw.html and rendered.html were searched for tax and price words (ضريب, VAT, tax, شامل, excl, incl, ريال, SAR, ج.م) and not quoted.
+
+#### What was found, by group
+
+- **Analytics and tracking (S02-VP-87, S02-VP-88):** S02-ZD-293 to S02-ZD-299, citations S02-ZD-C479 to S02-ZD-C487, one term (تتبع الحملات).
+  - Google Analytics, Facebook pixel, TikTok Pixel and Google tag manager are apps under لوحة التحكم > سوق التطبيقات > تتبع الحملات (S02-ZD-293, S02-ZD-295 to S02-ZD-297); the merchant adds the account's identifier in each app's activation field (S02-ZD-294, S02-ZD-298).
+  - The Google Analytics article's step for the account the merchant creates on Google's site: the site's name, time zone, country and currency (S02-ZD-299).
+  - Gap S02-ZD-G14 (S02-VP-87, searched, not found): whether the identifiers take a value per market. S02-VP-88 is answered by the statements; no gap.
+- **Apps (S02-VP-86):** S02-ZD-300 to S02-ZD-312, citations S02-ZD-C488 to S02-ZD-C501, five terms.
+  - No set limit on the number of apps linked to a store (S02-ZD-300); تطبيقاتي lists the apps activated in the store (S02-ZD-301); embedded apps (S02-ZD-302); the App Market's apps come from third parties independent of Zid (S02-ZD-303), linked as each app's page says (S02-ZD-304), in nine categories (S02-ZD-305).
+  - Zid Apps Overview: public apps for all merchants; private apps for stores granted access, on the Professional or Enterprise plan or with API Access (S02-ZD-306 to S02-ZD-308). The activation policy: Zid records the installation for the authorized store (S02-ZD-309); partners disclose eligibility and country prerequisites (S02-ZD-310, c;f).
+  - The Terms' سوق تطبيقات زد: the platform's definition (S02-ZD-311) and the partner as the provider of the service (S02-ZD-312).
+  - Gap S02-ZD-G15 (searched, not found): whether apps take a value per market.
+- **Notifications to the merchant (S02-VP-89, S02-VP-90):** S02-ZD-313 to S02-ZD-318, citations S02-ZD-C502 to S02-ZD-C507, one term.
+  - اشعارات الفريق: e-mail to the team on the order statuses chosen, at لوحة التحكم > الإعدادات > اشعارات الفريق, with the statuses and e-mail addresses the merchant sets (S02-ZD-313 to S02-ZD-316); by plan in the compare-plans data (S02-ZD-317, f;h); the permission manage.store.staff.notifications (S02-ZD-318).
+  - Read and not recorded: app-notifications-2 and zid-reminder, whose messages go to customers.
+  - Gap S02-ZD-G16 (S02-VP-89, searched, not found): whether team notifications take a value per market. S02-VP-90 is answered; no gap.
+- **Staff access (S02-VP-71, S02-VP-72):** S02-ZD-318 to S02-ZD-333, citations S02-ZD-C507 to S02-ZD-C522, four terms; and from the lead S02-ZD-356 to S02-ZD-361.
+  - فريق العمل at لوحة التحكم > الاعدادات > المتجر > فريق العمل: permissions per member or group (S02-ZD-319 to S02-ZD-322); the limits by plan and buying more members (S02-ZD-323, S02-ZD-324, S02-ZD-333, and the pricing pages' lines, S02-ZD-356 to S02-ZD-361); export limited to users with an e-mail on the store's domain (S02-ZD-325).
+  - User Roles and Permissions: the store owner assigns permissions to staff (S02-ZD-326 to S02-ZD-328); the permission rows manage.store.settings and manage.app.market.settings (S02-ZD-329, S02-ZD-330).
+  - Zid Pay's staff permissions (S02-ZD-331, S02-ZD-332).
+  - Gap S02-ZD-G17 (S02-VP-71 and S02-VP-72, searched, not found): whether a permission can be limited to a market. The docs' List of Available Permissions holds no permission named for markets; it was not recorded as an absence, since its rows cannot be cited whole and no words present it as the full set other than its heading.
+- **Privacy and consent (S02-VP-75, S02-VP-84):** S02-ZD-334 to S02-ZD-339, citations S02-ZD-C523 to S02-ZD-C528, one term.
+  - The Privacy Policy, which the Terms incorporate: for a store's customers, Zid acts under the Merchant's direction and the Merchant's terms and privacy policy apply (S02-ZD-334); opting out of targeted advertising on the Merchant's site (S02-ZD-335); rights regardless of where you live (S02-ZD-336).
+  - إلغاء الاشتراك من الرسائل: customers stop WhatsApp messages from the store themselves (S02-ZD-337), at الواتساب ← الإعدادات ← إلغاء الاشتراك من الرسائل (S02-ZD-338), with keywords set by the platform in Arabic and English that cannot be changed (S02-ZD-339).
+  - Recorded before: the store's legal pages, سياسة الخصوصية among them (S02-ZD-212 to S02-ZD-218), and the Terms' clause on privacy policies (S02-ZD-219).
+  - Gaps S02-ZD-G18 (S02-VP-75, searched, not found): whether the store's privacy policy or its customers' opt-outs take a value per market; S02-ZD-G19 (S02-VP-84, searched, not found): no page read names a cookie setting for a store.
+- **Store status (S02-VP-80, S02-VP-81):** S02-ZD-340 to S02-ZD-345, citations S02-ZD-C529 to S02-ZD-C535, three terms.
+  - أوقات العمل الرسمية at الاعدادات > المتجر: closing the store fully, stopping orders while customers browse, or ordering in set hours and days, set by the merchant, with a text in Arabic and English (S02-ZD-340 to S02-ZD-344).
+  - The Terms' ضوابط المتجر الإلكتروني: Zid may suspend the service and close the store when the merchant does not comply (S02-ZD-345).
+  - No page names maintenance (الصيانة) as a store setting; the Terms' matches are the maintenance of themes and point-of-sale devices.
+  - Gap S02-ZD-G20 (S02-VP-80, searched, not found): whether the closure takes a value per market. S02-VP-81 is answered; no gap.
+- **Units and time zone (S02-VP-77):** S02-ZD-346, citation S02-ZD-C536, one term (المنطقة الزمنية).
+  - store-info-ksa: the merchant chooses the time zone for showing and exporting order times (S02-ZD-346). Recorded before: the Store API's timezone (S02-ZD-032).
+  - Gap S02-ZD-G21 (searched, not found): whether the time zone or a unit takes a value per market; no page read names a store setting for units.
+- **The (h) exception:** no existing (h) statement conditions an arrangement that the new (a) to (f) statements describe; no `conditions` was changed.
+
+#### Searches, and how they were narrowed
+
+- Each group's two searches were run with `--max 100`; none passed it (the largest listed 82 documents, the first search on store status, whose head word status matched the API pages' response status). No search was narrowed by its terms.
+- Documents listed but not read are named in each point's `read` in `a2.tsv`, by their matches: order and shipment tracking, notifications and messages to customers, footers and menus of zid.sa and zid.eg pages, API fields named status, unit or timezone in other senses.
+
+#### The lead
+
+- The pricing pages, now held with their text (items 006 to 008 of 20261027T111455Z-s02-a2-sources-batch-1), were read in full and quoted from their rendered text only.
+- The plans and their prices: zid.sa, البداية free, الانطلاقة 99 and النمو 299 ريال a month, الاحترافية on request (S02-ZD-347 to S02-ZD-349, S02-ZD-353; Starter, Rise, Growth, Pro on the English page); zid.eg (باقات وأسعار زد مصر), الانطلاقة 1,128 and 940 and النمو 3,408 and 2,840 ج.م a month, with 11,286 and 34,086 ج.م billed yearly (S02-ZD-350 to S02-ZD-353). They answer S02-VP-14 (the platform's fees), which gets a new `a2.tsv` row; each names S02-ZD-057 (fees in Saudi riyals or the merchant's local currency) in `conditions`.
+- The taxes on Zid's fees: the pages name none, in their rendered text or their HTML; the footers name the company with registration and tax numbers that differ between zid.sa and zid.eg (S02-ZD-354, S02-ZD-355, c). They do not answer S02-VP-15: S02-ZD-G08 remains, and ZD-1's row for S02-VP-15 now names the pages in `read`.
+- What each plan offers (h): the team members' lines (S02-ZD-356 to S02-ZD-361, added to the rows of S02-VP-71 and S02-VP-72); VAT calculation on النمو (S02-ZD-362, zid.sa); two currencies on النمو and several VAT configurations on الإحترافية (S02-ZD-363, S02-ZD-364, zid.eg); electronic payment on الانطلاقة (S02-ZD-365, zid.eg); inventory shown by customers' city on الإحترافية (S02-ZD-366, zid.sa, conditions S02-ZD-161). These and the footers are in the `a2.tsv` row `none`. Read and not recorded: the shipping rates by plan and the other feature lines, which name no market, country or setting of S-02's bullets.
+- No gap of zid is routed to a capture request.
+
+#### Problems with the method
+
+- The coordinator's change to "Reading a live page" applied during the run: the pricing pages were quoted from their rendered text; the rendered copies of 20261027T112044Z-zid-rerender were used for the Terms and the Privacy Policy. S02-ZD-179 and S02-ZD-180 were not built on: the footers' statements name only what the footers show.
+- Some searches held single generic words as terms (permissions, unit, cookie, status), which the brief puts after `--with`; they broadened the searches, and the documents they added were read or listed as not read.
+- team-member and zidpay_staff_and_currencies were rendered live in the same command that found them held; the held copies (164, 184) were read and cited.
+- The help centre's category page أدوات التتبع renders no article list in its text; the tracking articles were found through the sitemaps.
+- The live pages' quotes were tested against working copies with `method/quote_check.py`'s own `variants` and `html_text`, through a helper in the scratch folder, as ZD-1 and ZD-2 did; the checker shows them as pending capture.
+- The repository's HEAD moved during the run; held paths are cited at the commit at which they were read: d91058af4b50a75208df739741b1e9a86b605748 (analytics), 1b32e347f3cfe8a3f285e523ba3867aaf77726bd (apps to units), 42d054999c85b3fdd48b8ca32d10aef650a42fe4 (the lead).
+
+#### Check on a copy
+
+`python3 -I method/check_subject.py` on a copy at /tmp/claude-0/-home-user/9f45def8-b710-5f9c-84f3-6a0fa7e617c8/scratchpad/s02-a2-zd-3/check/S-02, output in /tmp/claude-0/-home-user/9f45def8-b710-5f9c-84f3-6a0fa7e617c8/scratchpad/s02-a2-zd-3/check/out (2026-10-27): no line of level error; 366 statements, 21 gaps; 537 quotes found and 22 unresolved; 42 lines of level pending capture, the live citations S02-ZD-C479 to S02-ZD-C493, S02-ZD-C502 to S02-ZD-C505 and S02-ZD-C526 to S02-ZD-C528, and the statements S02-ZD-293 to S02-ZD-305, S02-ZD-313 to S02-ZD-316 and S02-ZD-337 to S02-ZD-339 that cite them.
