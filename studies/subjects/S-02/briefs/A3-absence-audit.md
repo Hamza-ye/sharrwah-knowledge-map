@@ -20,11 +20,11 @@ Audit every claim of absence your platform's files make:
 For each claim:
 1. **Search the held corpora** with `python3 -I method/corpus_search.py <platform> <terms>`:
    - **first, with your platform's own words** for what is claimed missing, in every language it uses, taken from `terms.tsv`, the claim, and the statements the claim names;
-   - **then, for each kind of name** the claim and those statements give (countries, plans, settings or parties), one search with those names as its terms, and the platform's general word for what is claimed after `--with`, such as `--with الدولة country`.
+   - **then, for each kind of name** the claim and those statements give (countries, plans, settings or parties), one search with those names as its terms, and after `--with` the general word for what the claim's bullet asks about: `الدولة country` for (a) to (d), `السوق market` for (e), and the setting's own words for (f).
 
-   Read the titles and snippets it lists. Past its cap, it lists only addresses: rerun with `--max` at least the number of documents its last line reports, or narrow the terms. A Zid help page is matched on its article alone, without the help centre's menu.
+   Read the titles and snippets it lists. Past its cap, it lists only addresses: rerun with `--max` at least the number of documents its last line reports. A Zid help page is matched on its article alone, without the help centre's menu.
 2. **Read every listed document** that could state what is claimed missing, and the pages in the gap's `route`. Run `method/held_index.py` on an address before you read it live.
-   - **Reading live.** A page that isn't held may be read live when it is on your platform's own sites:
+   - **Reading live.** For this phase, this replaces phase A's "From what is recorded" limit. A page that isn't held may be read live when it is on your platform's own sites:
      - for Shopify and Salla, the hosts phase A names;
      - for Zid, zid.sa with its help and docs, and zid.eg;
      - for WooCommerce, woocommerce.com and Automattic's legal pages;
@@ -46,7 +46,7 @@ For each claim:
 `absence-audit.tsv` holds one row per claim. It is tab-separated, with a header row and no quoting. Columns:
 - `claim_id`: the gap_id or absence_id;
 - `searches`: each corpus_search command you ran, `;`-separated;
-- `read`: each document you read. Give a held copy by its path at its commit, as `held_index.py` prints it, and a live page by its URL and the date you read it;
+- `read`: each document you read. Give a held copy by its path, as `held_index.py` prints it, with its commit after the repository's name (`<repository>@<commit>:<path>`), and a live page by its URL and the date you read it;
 - `result`: `confirmed`, `partly contradicted` or `contradicted`;
 - `stmt_ids`: every statement you added for the claim; for either kind of contradiction, also the recorded statements that show it;
 - `note`.
