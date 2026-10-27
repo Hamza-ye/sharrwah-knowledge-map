@@ -245,6 +245,7 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 | ZD-4: the absence audit's S02-ZD-G03 again, from zid.eg's Terms as shown | 1 claim | 1 | 0 | 29 | G03 partly contradicted: Egypt answered | 43 | 7.5 |
 | SH-2a: analytics and tracking; notifications to the merchant; store status | 6 | 6 | 6 | 86 | none | 97 | 20.7 |
 | WC-4a: analytics and tracking; apps; messages to buyers; notifications to the merchant | 7 | 7 | 7 | 40 | none | 75 | 12.5 |
+| WC-4b: privacy and consent; staff access; store status | 6 | 6 | 6 | 70 | none | 65 | 12.0 |
 
 **What WC-1 taught:**
 - **Our labels aren't the platform's words.** The brief said to search a kind's own name, and the part asked whether "who sells to the buyer" was one. The brief now says the kind's head word is searched, such as `domain` or `currency`, and our longer labels aren't.
@@ -325,4 +326,8 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 **What WC-4a taught, and the coordinator's ruling on eight WooCommerce quotes:**
 - **The store's country reaches WooCommerce's suggestions, not its settings.** The extensions suggested at setup, and two inbox notes, follow the store's base country (S02-WC-419 to S02-WC-421, S02-WC-433, S02-WC-434). Analytics follows the visitor's consent and region. Customer emails go out in the store's language.
 - **Eight quotes the checker lists as only in the page's source stand:** S02-WC-C117 to C119 and C266 to C270, from WooCommerce's legacy REST API reference at woocommerce.github.io. That address serves the whole reference as static HTML. A browser is sent on by script to developer.woocommerce.com's overview page, which is what the capture of 10 October rendered (its `render.json` names it as `final_url`). The text is WooCommerce's own documentation, served at the address cited. So the statements stand, read with the release's code for the same endpoints.
+
+**What WC-4b taught, and WooCommerce's gap-closing as a whole:**
+- **WooCommerce's gap-closing is complete:** five parts, 41 rows, 37 of them with no gap left, and 254 statements (S02-WC-257 to S02-WC-510), for 85.8 million. Three gaps remain on four of its rows, each routed to the founder: who checks the store's country (G06) and which documents its payments' verification asks for (G07), as questions to WooCommerce; and the domain (G08), a question or a look at a test store's admin. Phase A's G01 and G03 stand as the absence audit left them.
+- **Store-wide by design.** Roles and capabilities, Coming soon mode and the privacy texts each take one value for the whole site; no role, capability or setting is tied to a market. Consent comes from the visitor, through the WP Consent API.
 
