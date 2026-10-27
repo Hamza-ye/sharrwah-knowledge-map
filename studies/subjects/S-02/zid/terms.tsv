@@ -87,3 +87,16 @@ store languages (zid.store.region.languages)			S02-ZD-C440
 Require customer to select city manually			S02-ZD-C474
 موقع العملاء	Customer Location	اعرف مواقع عملائك بدقة لتخصيص العروض وتحسين خدمات التوصيل.	S02-ZD-C478
 تتبع الحملات			S02-ZD-C479;S02-ZD-C482;S02-ZD-C484;S02-ZD-C486
+سوق تطبيقات زد	Zid App Market	سوق تطبيقات زد: هي منصة مملوكة لزد توفر حلول الربط التقني بين التاجر والشريك، وذلك لتمكين التاجر من ربط متجره بأحد تطبيقات المعروضة في خدمة سوق تطبيقات زد، وذلك لمساعدته في إدارة عمليات متجره بسهولة.	S02-ZD-C499;S02-ZD-C500
+تطبيقاتي			S02-ZD-C489
+التطبيقات المدمجة		وهي التطبيقات التي يمكنك التحكم في التطبيق داخل صفحة سوق التطبيقات دون الرجوع الى لوحة تحكم التطبيق الخارجية.	S02-ZD-C490
+Public apps		Apps designed for wider use and are listed in Zid App Market. All merchants on the platform can view, install, and benefit from these apps.	S02-ZD-C494
+Private apps		Apps intended for specific stores only. They are not listed in the Zid App Market and can only be installed by stores explicitly granted access.	S02-ZD-C495
+اشعارات الفريق; إشعارات الفريق	Team Notifications	تمكنك هذه الخاصية من اشعار فريقك عبر البريد الإلكتروني بالطلب وتفاصيله في أي حالة من حالات الطلب التي يتم تحديدها.	S02-ZD-C502;S02-ZD-C506
+فريق العمل; صلاحيات فريق العمل		تتيح لك هذه الخاصية إضافة و إدارة فريق العمل الخاص بك و التحكم في صلاحيات الأعضاء و تحديدها بشكل تفصيلي لكل عضو ، مما يساعدك كتاجر أو صاحب متجر الكتروني في الحفاظ على سرية البيانات.	S02-ZD-C508;S02-ZD-C520
+Store Owner		Store owners have the highest level of access to a store, including creating, updating, and managing all aspects of their store. They also have the ability to create accounts for other store staff and assign them permissions.	S02-ZD-C515
+Other Staff Members		Other staff members can have varying levels of access to the store based on the permissions granted to them by the store owner.	S02-ZD-C516
+إلغاء الاشتراك من الرسائل		خاصية تتيح لعملائك إيقاف استقبال رسائل واتساب التسويقية والتلقائية من متجرك بأنفسهم، بمجرد إرسال كلمة معيّنة مثل «إيقاف» أو «stop»، دون أي تدخّل يدوي منك.	S02-ZD-C526;S02-ZD-C527
+أوقات العمل الرسمية; اوقات العمل الرسمية		تمكنك هذه الخاصية من إغلاق المتجر تماماً ، أو عرض كل صفحات المتجر مع إيقاف عملية إتمام الشراء فقط ، أو إتاحة إمكانية الطلب ساعات معينة من اليوم أو أيام محددة من الأسبوع ، على أن يكون كل خيارات الإيقافات إما لمدة غير محددة أو مدة محدد ثم يعود لاستقبال الطلبات في تاريخ و وقت تقوم بتعيينه.	S02-ZD-C529;S02-ZD-C530
+إغلاق المتجر بالكامل		عند تفعيل هذه الخاصية، سيتم إغلاق المتجر مؤقتًا بالكامل، ولن يتمكن العملاء من إجراء أي طلبات خلال الفترة التي تحددها. يمكنك أيضًا عرض عدٍّ تنازلي يُظهر للزوار موعد إعادة فتح المتجر بناءً على الوقت الذي قمت بإدخاله.	S02-ZD-C531
+إيقاف استقبال الطلبات		لن يتمكن العملاء من إتمام عمليات الشراء أثناء تعليق المتجر، لكن يمكنهم تصفح المنتجات وإضافتها إلى السلة فقط.	S02-ZD-C532
