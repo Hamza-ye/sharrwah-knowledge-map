@@ -100,6 +100,7 @@ Where a row gives an answer the vocabulary doesn't hold, its key is the platform
 Go down this list and take the first tag that applies to the key *(the order is the pilot's coordinator's own)*. The tool proposes the mechanical tags (1, 4, 5, 6 and 7); you check them, and tests 2 and 3, which need reading.
 
 1. **`no difference`** *(the pilot's coordinator's own)*: every platform gives the key.
+   - *(The coordinator's own, 27 October 2026, from C-RD2's problem 3:)* or none does: each lacks the key or doesn't state it, as when a contradiction is weighed toward an absence. A platform that doesn't state a key counts as not giving it in every test, so the five agree. A key that some platform leaves `open` isn't one of these: the tool tries both ways.
    - *(The pilot's coordinator's own, 17 October 2026:)* a variant that names a party only to say it has no part names no one filling X.
 2. **`market, named rule`:** a statement names a law, or a regulator's rule, as the reason why a platform gives the key, or doesn't, where the platforms differ on it.
    - *(The pilot's coordinator's own:)* it names a particular law, or a particular regulator with its rule. Generic wording such as "applicable law" or "a regulatory authority" doesn't count.
@@ -155,6 +156,8 @@ Give each platform the letter for how it binds its answers to the point. Where i
 | `vendor choice` or `business model`, cheap to change | left to the build |
 | `maturity` or `unknown`, expensive to change | kept open as a variation point until evidence settles it |
 | `maturity` or `unknown`, cheap to change *(the pilot's coordinator's own)* | left to the build |
+
+*(The coordinator's own, 27 October 2026:)* for a key no platform gives, "carried as the references carry it" means not carried: none of the references does it.
 
 *(The coordinator's own, 27 October 2026:)* the market rows of the pilot's table bind "D with a market cause". Read for one key at a time, a market cause binds the key per market. Under (d) and (e), whose keys are about markets and countries themselves, that would be circular. There, a market cause follows as vendor choice does, and `cause_reading` names the cause.
 
@@ -241,7 +244,7 @@ It refuses:
 - `none applies` beside a rule;
 - `bound per product` without a `C`, or a `C` without it;
 - a founder decision with an empty `founder_item`, or with `cheap:`;
-- `no difference` for a key some platform doesn't give;
+- `no difference` for a key some platforms give and others don't;
 - `maturity` citing a statement with no release marker;
 - a `blocked_by` row that is an answer or `absent`;
 - a `depends_on` that is no point, or the point itself.

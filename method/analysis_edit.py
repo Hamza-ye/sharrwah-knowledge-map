@@ -183,7 +183,7 @@ class Subject:
     @staticmethod
     def _tag(val):
         sa, zd, sh, bc, wc = (val[p] for p in PLATFORMS)
-        if all(val.values()):
+        if all(val.values()) or not any(val.values()):    # every platform gives the key, or none does
             return "no difference"
         hosted = [sa, zd, sh, bc]
         if len(set(hosted)) == 1 and wc != hosted[0]:
@@ -224,8 +224,9 @@ class Subject:
         c = r["cause"]
         if c not in CAUSES:
             out.append(f"cause {c!r} is not one of step 3's tags")
-        if c == "no difference" and not all(st[p] == "gives" for p in PLATFORMS):
-            out.append("no difference, but some platform doesn't give the key")
+        if c == "no difference" and not (all(st[p] == "gives" for p in PLATFORMS)
+                                         or all(st[p] in ("lacks", "not stated") for p in PLATFORMS)):
+            out.append("no difference, but the platforms don't agree on the key: every platform gives it, or none does")
         if c in ("market, named rule", "maturity", "business model") and not ids(r["cause_basis"]):
             out.append(f"{c} names its basis in cause_basis")
         if c != "no difference" and not r["cause_reading"].startswith("Reading:"):
