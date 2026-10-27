@@ -42,7 +42,7 @@
 
 **What it taught:**
 - **A fresh agent with a short task costs far less per request:** Salla's finisher about 0.12 million, against 0.43 million before.
-- **A long run still grows its context,** even from a fresh start, because every tool output stays in it. Shopify's part 1 ran 237 requests at about 0.25 million each. So the parts must be small, with no more than a few hundred tool calls each.
+- **A long run still grows its context,** even from a fresh start, because every tool output stays in it. Shopify's part 1 ran 237 requests at about 0.25 million each. So each part is kept to about a hundred requests.
 - **A container restart stopped two agents.** Both had written as they went, so nothing was lost, and both were resumed from their transcripts.
 - **Agents shared one scratch folder,** and one overwrote another's script. That one had already finished. Each agent now gets its own folder (phase A brief, rule 12).
 - **The quote tester read a large file again for each quote,** nine seconds a call on Shopify's 8.8 MB admin controls. It now tests a batch in one process (`method/quote_check.py --batch`).
