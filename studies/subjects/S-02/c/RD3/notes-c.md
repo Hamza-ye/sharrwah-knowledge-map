@@ -12,6 +12,12 @@ S02-VP-62, 'the seller': unknown, no row blocks it. Salla, Zid, Shopify and BigC
 
 S02-VP-63, 'a market the store sells into': unknown, blocked by S02-V-961 (BigCommerce's gap S02-BC-G14). It would need to show whether a BigCommerce store can sell to buyers in a storefront or channel through a business or legal entity other than the merchant, or a merchant of record: if it can, market, pattern; if not, vendor choice. S02-VP-63, 'the whole store': unknown by like with like, no row blocks it: Shopify gives it only in observations (S02-SH-399 to S02-SH-401); a Shopify declaration that one entity sells for the whole store whatever the market would make it no difference.
 
+S02-VP-64: all three keys ('the seller', 'the platform', 'a staff permission or role') are unknown, blocked by S02-V-843 (BigCommerce's gap S02-BC-G14). It would need to show whether a BigCommerce store can sell through a business or legal entity other than the merchant, or a merchant of record, and who sets it. If the seller does, 'the seller' is no difference; if the platform or a permission does, those keys are market, pattern; if none does, each is vendor choice. WooCommerce gives 'the seller' (S02-WC-517, WooPayments onboarding) and lacks it (S02-WC-N02, its settings pages): followed by scope, the answer row for WooPayments.
+
+S02-VP-65, 'a market the store sells into': unknown, blocked by S02-V-1092 (Salla's gap S02-SA-G13) and S02-V-789 (Zid's gap S02-ZD-G22). They would need to show whether Salla's and Zid's exchange and return policies, or their order cancellation, take a value per market. If neither does, market, pattern; if both do, test 4 with WooCommerce's S02-WC-282; if one does, vendor choice. S02-VP-65, "the buyer's country": market, named rule by test 2 (S02-SH-491, 'EU right of withdrawal'), which no open gap changes.
+
+S02-VP-66, 'the platform': market, named rule by test 2 (S02-SH-491, 'EU right of withdrawal in Managed Markets'); the mechanical tests would give market, pattern, and what follows is the same. Method: under test 2 I read 'EU right of withdrawal' as naming a particular lawmaker's rule, the EU's, rather than generic wording; here and in S02-VP-65 the cause rests on that reading.
+
 ## C-RD3-1
 
 Points S02-VP-41 to S02-VP-54, all written; check: 0 problems.

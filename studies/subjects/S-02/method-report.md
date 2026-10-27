@@ -569,6 +569,7 @@ The letters' rules moved to a row per point. Expense is judged per key, so a pay
 | --- | --- | --- | --- | --- |
 | C-RD2: what defines a market, what limits one, who creates and who changes or removes one | 4 | 43 | 24 | 4.1 |
 | C-RD3-1: currency, language, domains, product availability, prices, discounts, storefront design (both questions of each) | 14 | 52 | 50 | 9.5 |
+| C-RD3-2: checkout, taxes and duties, shipping, payment methods, who sells to the buyer, returns (both questions of each) | 12 | 52 | 38 | 7.4 |
 
 **What C-RD2 taught.**
 - **What defines a market** splits the references four ways, all `vendor choice` but one key:
@@ -599,3 +600,16 @@ The letters' rules moved to a row per point. Expense is judged per key, so a pay
   - it proposes `market, pattern` without asking whether the two platforms' statements are of comparable kinds. On discounts per buyer's country, Salla's observed statement against Zid's shipped one, the part wrote `unknown` instead.
 
 **The usage limit** (27 October, about 20:40 UTC). Parts C-RD3-2 and C-RD3-3 stopped mid-point when the account reached its plan's usage limit. Each had written its finished points, and the point in hand was half-written. The founder moved from Max x5 to Max x20, and both parts were resumed with a message, from their transcripts. Each was told to run `check` on its points first, to see what was done. The rule that each part writes as it goes is what kept this from costing anything but time.
+
+**What C-RD3-2 taught.**
+- **The first market cause by a named rule:** returns per the buyer's country, and the platform's part in them, follow the EU's right of withdrawal as Shopify's Managed Markets states it (S02-SH-491). So that key binds per market.
+- **Most founder items again ask one question:** whether a setting takes a value per market, or once for the whole store. Five more go to other subjects:
+  - Global-e as merchant of record, to S-03;
+  - Avalara's duty calculation, to S-05;
+  - carriers' cash on delivery, to S-10.
+- **What stays open for want of evidence:** whether checkout, business entities and returns can take a value per market on Zid, BigCommerce and Salla. Each is held open by its gap (`blocked_by`), and each is one of the questions to the platforms ([`reports/S-02-evidence-requests.md`](../../../reports/S-02-evidence-requests.md)).
+- **Its overrides of the tool are each a rule the tool can't apply:**
+  - like with like, where one platform's answer rests only on observations;
+  - test 4's need for a WooCommerce statement;
+  - a named rule read in a statement's heading.
+- **A reading the later parts share:** a store-level default that markets inherit or override is a default beside a value per market (letter A), not the key `the whole store`. C-RD3-4's message says so.
