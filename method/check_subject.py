@@ -337,6 +337,15 @@ for plat, code in PLATFORMS.items():
                         "data), not in the page as it renders: quote what the page shows, or shows on a click "
                         "(briefs/A-one-platform.md, \"Reading a live page\")", "review")
         quotes.append((cid, res, why, share, src, c["quote"][:200]))
+# a gap whose question a statement answers in full, so that nothing takes its place: the statement's note says
+# "answers S02-XX-Gnn" (the coordinator's, when a capture request's run answers it); kept as history, settled
+answered = {}
+for sid, r in stmts.items():
+    for g in re.findall(r"\banswers (S\d\d-[A-Z]{2}-G\d+)", r.get("note", "")):
+        if gaps.get(g, {}).get("platform") != r["platform"]:
+            err(f"{r['platform']}/statements.tsv", sid, f"its note answers {g}, which is not one of its platform's gaps")
+        else:
+            answered.setdefault(g, sid)
 # ---------- phase A3: every claim of absence is audited by an agent that didn't make it ----------
 for plat in PLATFORMS:
     d = os.path.join(subj, plat)
@@ -344,7 +353,7 @@ for plat in PLATFORMS:
         continue
     audit = read(os.path.join(d, "absence-audit.tsv"), f"{plat}/absence-audit.tsv")
     claims = [g for g, r in gaps.items() if r["platform"] == plat and r["gap_kind"] != "page not read"
-              and g not in superseded] + \
+              and g not in superseded and g not in answered] + \
              [a for a, r in absences.items() if r["platform"] == plat]
     f = f"{plat}/absence-audit.tsv"
     if audit is None:
@@ -474,6 +483,8 @@ if var is not None:
             for g in ids(r["gap_ids"]):
                 if g in superseded:
                     err("variants.tsv", i, f"gap {g} was narrowed into {superseded[g]}: the row names the gap that replaced it")
+                if g in answered:
+                    err("variants.tsv", i, f"gap {g} is answered ({answered[g]}): the row gives the answer instead")
                 if gaps.get(g, {}).get("platform") != plat:
                     err("variants.tsv", i, f"gap {g} is not one of {plat}'s gaps")
                 elif r["vp_id"] in vp and gaps[g]["bullet"] != vp[r["vp_id"]]["bullet"]:
@@ -627,6 +638,8 @@ for plat in PLATFORMS:
             if g not in gaps:
                 err(f"{plat}/a2.tsv", r["vp_id"], f"{g} is not a gap")
                 continue
+            if g in answered:
+                err(f"{plat}/a2.tsv", r["vp_id"], f"{g} is answered ({answered[g]}), so it doesn't remain")
             route = [(u, [h for h in HELD.lookup(u) if h["readable"]]) for u in urls_in(gaps[g]["route"])]
             if gaps[g]["gap_kind"] == "page not read" and route and all(h and was_read(h, later) for u, h in route):
                 err(f"{plat}/a2.tsv", r["vp_id"], f"{g} remains, but every page it waited on has been read: "
