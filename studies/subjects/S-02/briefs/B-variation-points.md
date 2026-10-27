@@ -9,7 +9,7 @@ This is `PLAN.md` Stage 4, subject S-02. You are one agent with one task: one pa
   - `gaps.tsv` and `absences.tsv`: those under your root decision's bullets, with their platform, and an absence's kind;
   - `terms.tsv`: every platform's terms;
 - your root decision's own folder, `b/<root decision>/`, where earlier parts wrote;
-- in the second pass, each platform's `a2.tsv` and `absence-audit.tsv`, and the slices as the coordinator cuts them again.
+- in the second pass, each platform's `a2.tsv` and `absence-audit.tsv`, `b/second-pass.md`, and the slices as the coordinator cuts them again.
 
 Don't read the platforms' own folders (but for the second pass's two files), their `notes.md` or `recorded.tsv` files, or any `note` column of phase A's files. The slices hold no notes.
 
@@ -178,7 +178,7 @@ Statements under (h) are conditions, not variants: a variant rests on at least o
 
 ## Second pass, after phases A2 and A3
 
-When the coordinator says phases A2 and A3 are done, the slices are cut again, so that they hold the statements A2 added. Read each platform's `a2.tsv` and `absence-audit.tsv`, and print the statements they name from the slice by id. Revisit every row that was `gap`, `absent` or `not covered`, and each arrangement A2 was given. Recheck, under rule 5, any row you compared with a statement of its own platform. The second pass adds no variation point and splits none. A statement that fits no existing variation point is listed in `notes-b.md`. For each row revisited:
+When the coordinator says phases A2 and A3 are done, the slices are cut again, so that they hold the statements A2 and A3 added. Read each platform's `a2.tsv` and `absence-audit.tsv`, and print the statements they name from the slice by id. Read `b/second-pass.md` too: the statements earlier parts noted under rules widened since, to read again. Revisit every row that was `gap`, `absent` or `not covered`, and each arrangement A2 was given. Recheck, under rule 5, any row you compared with a statement of its own platform. The second pass adds no variation point and splits none. A statement that fits no existing variation point is listed in `notes-b.md`. For each row revisited:
 - replace it with variants from the statements A2 added, under the rules above;
 - or make it `absent`, with A2's `absence_ids`;
 - or keep it as `gap`, with A2's `gap_ids`.

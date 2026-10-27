@@ -138,6 +138,7 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 | RD3-2: (f) and (g), Salla | 133 | 65 | 15.8 | 2.0 | 7 more (44) | 75 |
 | RD1-3: (c), Shopify and Salla | 216 | 59 | 15.0 | 3.7 | 11 more (18) | 69 |
 | RD1-4: (c), Zid, WooCommerce and BigCommerce | 198 | 72 | 17.5 | 2.8 | 1 more (19) | 72 |
+| RD3-3: (f) and (g), Zid and BigCommerce | 126 | 78 | 22.5 | 1.6 | 6 more (50) | 142 |
 
 **What RD1-1 taught:**
 - **One point per question held:** the five platforms' answers to "what fills the store's own country" fell under one variation point, as 30 fields and records and one gap, and the countries served and kept out under one each.
@@ -188,3 +189,8 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 - **A Shopify search took 10 to 15 minutes with three running at once,** against 3 minutes alone. Searching by names with `--with` returned thousands of the runs' saved answers. The auditor narrowed them by more searches and read the Help Center documents by title and snippet, as its notes say.
 - **The held corpus doesn't hold every Zid help page:** Zid's first part found Zid Pay's and Zid Financing's requirement pages, the national address article and the financing page only through the help centre's sitemaps, read live as indexes. It read twelve pages live; the coordinator captured them afterwards.
 - **One lead was left unread:** the Help Center's `organization-settings/expansion-stores.md`, for how a store made inside an organization takes its country (S02-SH-G02). It goes to gap-closing (phase A2).
+
+**What RD3-3 taught:**
+- **A later part's cost is in its rows under the earlier points, not its statements:** 126 pairs gave 142 rows, since Zid and BigCommerce each needed a row under every one of the 44 earlier points, 35 of them `not covered`. That made it the costliest part per pair (1.6).
+- **The kinds needed four new ones** where BigCommerce's channel settings go past them: the store's country as a channel's setting, apps, analytics, and notifications to the merchant.
+- **Rules widened after a part ran leave its notes on the older rule.** RD3-1 noted Shopify's permission statements as conditions of access, and its "you can't change" statements as kept out, before rule 4 took a permission, and "no one can", as answers; RD3-3 read BigCommerce's alike under the new rule. The statements to read again are in `b/second-pass.md`, which the second pass now reads.
