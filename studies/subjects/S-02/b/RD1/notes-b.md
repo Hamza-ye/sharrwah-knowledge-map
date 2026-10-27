@@ -969,3 +969,94 @@ Each joined row was compared with the Zid statements already in it: its basis, `
 ### Check (part RD1-S4)
 
 On a copy holding only `b/RD1`: `merge_slices.py` merged 19 points and 300 rows. `check_subject.py` gave no line of level `error`, 17 warnings (phase A's citations) and 14 reviews: 12 quotes found only in a page's source, the coordinator's, and RD2's and RD3's statements, whose folders the copy leaves out. None names this part's rows or statements. Its `unplaced.tsv` holds no row of RD1. `second_pass_list.py --check`: RD1 has no revisit, reread or note task without a row in `done.tsv`.
+
+## Second pass, RD1-S5
+
+Part RD1-S5 does, in RD1's work list, the six rereads under (c) for Zid whose `why` begins "RD1-S5", and the last round's 22 tasks, whose `why` begins "last round" (after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2): two revisits and twenty place tasks, for Shopify, Salla, WooCommerce and BigCommerce under (a), (b) and (c). Revisits first, then the rereads, then the place tasks.
+
+### Revisit S02-V-237 (bigcommerce, S02-VP-16, the store's taxes), again (part RD1-S5)
+
+RD1-S3 left the row `not covered`, since gap-closing had recorded no gap for the point. Gap-closing has since recorded S02-BC-G15 for it, and the row is replaced with `gap`, S02-BC-G15. Its leads, read again, still name no decider, and stay noted as RD1-S3 noted them:
+- S02-BC-247 (c): 'If you have nexus in multiple states or local jurisdictions, the additional jurisdictions need to be adjusted from within your tax provider's account dashboard': says where jurisdictions are adjusted, not what decides the store's taxes (rule 4); its words don't say the nexus is where the store is based or registered (rule 1)
+- S02-BC-249 (c): 'Access your US 1099-K and other tax forms in your account’s portal': names where the forms are, not a decider (rule 4)
+- S02-BC-250 (c): 'Your US 1099-K and other tax forms are provided by the payment processor': names who provides them, not a decider (rule 4)
+
+S02-BC-246 and S02-BC-248 are outside RD1's slice, and left.
+
+### Revisit S02-V-058 (shopify, S02-VP-05, who checks), again (part RD1-S5)
+
+Replaced with `gap`, S02-SH-G09, which stands in place of S02-SH-G01. None of the leads names who checks: they say the merchant 'may need to verify your business', and not who verifies. The leads answer two other points of (b):
+- S02-SH-1031, placed: joined S02-V-059 (S02-VP-06): 'When changing country, you'll receive multiple tax forms ...', in the admin's 'Confirm store address' dialog (Settings > General, business details), a control in the store's admin, so the seller changes it (rule 4). Also joined S02-V-066 (S02-VP-07): 'Store address must be in the same country as the business entity' and 'Country needs to be the same as your business entity'. Also joined S02-V-267 (S02-VP-07): 'may need to verify your business', the same answer as 'might require additional verification' (S02-SH-590).
+- S02-SH-1032, placed: joined the same three rows, from the dialog of the admin's business entity switch. Its 'Changing country creates a new entity ... The current entity ({entityName}) stays the same.' is quoted in S02-V-059's evidence. It isn't joined to S02-V-268 ('You can't change the business type, country, or the person associated with individual or sole proprietor entities'), because its words don't say the country can't be changed.
+- S02-SH-1033 (b): 'Changing business type creates a new entity. You'll get multiple tax forms and may need to verify your business': a change of business type, not of the store's country, and it names no party that checks (rule 2)
+
+### Rereads under (c), Zid, in the work list's order (part RD1-S5)
+
+Read by rule 4's clause under (c) on sites, pages and sections tied to one country, as RD1-S4 read the others ("How the rereads are decided (part RD1-S4)", 1 to 3). Two things differ here:
+- zid.sa's Arabic pages for the UAE, Kuwait and Oman (zid.sa/ar/uae, /ar/kuwait, /ar/oman) don't carry the English pages' hero. RD1-S4 cited 'Join thousands of merchants in the UAE ...' (S02-ZD-137), and the same for Kuwait (S02-ZD-386) and Oman (S02-ZD-387); those are zid.sa/en's. The Arabic pages' own hero, recorded from all three, is 'المنصة الأسهل للتجارة الالكترونية فالخليج' (S02-ZD-444; my translation: the easiest e-commerce platform in the Gulf). Read as RD1-S4 read the Syria page's hero, it ties the pages to the Gulf, several countries.
+- Each Arabic page also holds a partners' section headed for one country: 'شركاؤنا في الإمارات', 'شركاؤنا في الكويت', 'شركاؤنا في عمان' and, on zid.sa/ar/egypt, 'شركاؤنا في مصر' (my translation: our partners in the UAE; in Kuwait; in Oman; in Egypt). A statement recorded from such a section is tied to one country by it, as RD1-S4 placed the statements recorded from Zid Payments' sections, which sit on a page that holds two countries.
+
+The rereads:
+- S02-ZD-420, placed: joined S02-V-185 (S02-VP-17), the Zid row whose decider is where the merchant is: 'بإمكان التاجر إذا كان موجودا في المملكة العربية السعودية أو أي من دول الخليج تفعيل الشحن' (my translation: the merchant, if located in Saudi Arabia or any Gulf state, can activate shipping). The statement places Tarabot for shipping and Mersal for delivery in Syria, by zid.sa's page for Syria (S02-ZD-138's hero; scope 'Zid Syria'), as RD1-S4 placed S02-ZD-421 to S02-ZD-423 from the same page (a reading). Its own 'suited to the Syrian market' and 'delivery inside Syria' say where deliveries go, not what decides that the store can use them; the earlier note read them as the decider, and the widened rule reads the page.
+- S02-ZD-436, S02-ZD-440 and S02-ZD-443, left noted: shipping from 11, 10.5 and 8.5 riyals per shipment, by plan, recorded from the plans' section 'باقات تناسب احتياجك' (my translation: plans that suit your needs) of the three Arabic pages. That section names no country, and the pages are tied by their own hero to the Gulf (S02-ZD-444), several countries. Only another section of each page, its partners' heading, names one country. Their earlier notes stay as they are.
+- S02-ZD-445, placed: joined S02-V-179 (S02-VP-12), for its 'شركاء موثوقين في المدفوعات' (my translation: trusted partners in payments), read as payment providers the store can use (my reading). Also joined S02-V-185 (S02-VP-17), for its partners in 'الخدمات اللوجستية' and 'التكنولوجيا' (my translation: logistics services; technology). The UAE and Oman, by the sections it is recorded from, 'شركاؤنا في الإمارات' and 'شركاؤنا في عمان' (a reading: the headings don't name merchants, and the statement speaks to the merchant's business, 'تجارتك').
+- S02-ZD-446, placed: as S02-ZD-445, with marketing ('التسويق') in place of technology. Egypt and Kuwait, by 'شركاؤنا في مصر' and 'شركاؤنا في الكويت' (a reading).
+
+x_words took Zid's words under S02-VP-12 and S02-VP-17, and each of the two points has a note, "Second pass, RD1-S5". S02-VP-17's earlier "Kept out (second pass, RD1-S3)" passage stands; the note after it says what is now placed.
+
+### Place tasks, last round: salla, shopify, woocommerce, under (a), (b) and (c) (part RD1-S5)
+
+Placed:
+- S02-SA-441 (a), placed: a new row, S02-V-301 (S02-VP-01), 'P.storage.get("merchant")?.merchant?.kyc_country': the merchant record's kyc_country, which the dashboard sends as the request header 's-merchant-kyc', or 'SA' where the record holds none. It is read as the country of the merchant's KYC (my translation: know your customer) verification, a country the platform holds for the merchant (a reading). It is a field of its own, apart from S02-V-017's '"country":"Country of operation"', so it is a row of its own (rule 4). a2.tsv leads it to S02-VP-06, a point of (b), but the statement is under (a) only.
+- S02-SH-1000 (a) and S02-SH-1001 (a), placed: joined S02-V-265 (S02-VP-01), storeCreatePayload's country, the country the store is created with. S02-SH-1000 is the code that sends the payload, 'country:Q.country||Yf'. S02-SH-1001, 'const Yf="US"', is the value that country takes when the sign-up gives none, by its identifier; its own words name a value, not a field (a call, below).
+- S02-SH-1000 (b) and S02-SH-1001 (b), placed: joined S02-V-054 (S02-VP-04), the platform: where the sign-up gives no country, the code sets 'US', a default the code sets (rule 4). Who fills the sign-up's own country, their words don't say; S02-SH-G10 asks it.
+- S02-WC-517 (a), placed: joined S02-V-273 (S02-VP-01), the country field of WooPayments onboarding's business step, 'Where is your business located?', the same field as S02-WC-259, from the same chunk. The absence S02-WC-N02, which the audit partly contradicted, still stands for what its note says: no page holds the business's legal name or a merchant of record, and nothing per selling location.
+- S02-WC-516 (c), placed: joined S02-V-209 (S02-VP-16), the store's base country: 'have not configured a standard tax rate for your base location'. 'Base location' and 'base country' are read as one decider (my reading; a call, below). a2.tsv leads it to S02-VP-07, a point of (b), but the statement is under (c) only.
+
+Noted:
+- S02-SA-440 (a): Salla's storefront 'scope' object ('"name": "متجر السعودية"', my translation: the Saudi Arabia store; '"type": "scope"', with '"countries": ["SA"]', '"currencies": ["SAR"]' and '"languages"'): its keys say country without saying whose, and the object holds what a storefront scope sells in, not where the store is based (rule 2's role test; rule 1). a2.tsv leads it to S02-VP-85, RD3's; its (e) and (f) are RD2's and RD3's
+- S02-SH-1002 (a): the address the sign-up reached carries 'country=YE' beside the new store's 'shopPermanentDomain': the parameter's words don't say whose country it is (rule 2's role test), and whether the new store takes the sign-up's country is what S02-SH-G10 asks
+- S02-SH-1006 (a): the Dev Dashboard's call that creates a store sends '"shopName"', '"priceLookupKey"' and '"prepopulateTestData"', and no country: it names no field or record that holds the store's country (rule 2)
+- S02-SH-1002 (b): the address carries country=YE after a sign-up that chose 'I'm located in:' Yemen, from a network in Yemen (its scope; S02-SH-G10): its words name no party that set it, and whether the choice or the network filled it is S02-SH-G10's question (rule 2)
+- S02-SH-1003 (b): the mutation 'SignupCountryUpdate', with its variable 'countryCode': a definition alone names no party (rule 4), and its words, the signup country, don't say the country is where the store or its merchant is based (rule 2's role test)
+- S02-SH-1004 (b): 'updateSignupCountry' sends a country code it is given to that mutation for a shop, or throws 'Failed to update signup country': as S02-SH-1003; the code sets no value of its own (rule 4)
+- S02-SH-1005 (b): the sign-up's checkout code reads 'country' from its address, and passes a 'newCountryCode' to the sign-up's data and, for a shop, to the signup country's update: as S02-SH-1003; who gives the new country code, its words don't say
+- S02-SH-1006 (b): the call sends no country: it names no party that sets the store's country (rule 2)
+- S02-SH-1026 (b): the legal entity types for the country code YE ('Individual', 'Company', 'Non-Profit'): the types a business entity may take in a country, which names no party that sets, checks or changes the store's country, and no condition on a change (rule 2)
+- S02-SH-1027 (b): the same for US ('Individual', 'Sole Proprietorship', 'Single Member LLC', and others): as S02-SH-1026
+- S02-WC-518 (a): WooPayments reads the 'self_assessment' of the business verification step from the user's NOX profile, by '$location': its words don't say the record holds where the business is located, or whose the location is (rule 2's role test). The audit's note on S02-WC-N02 reads it as the business step's answers (S02-WC-517): a lead, not its words
+- S02-WC-519 (c): 'The location for which the providers are being determined. This is an ISO 3166-1 alpha-2 country code': a location without saying whose, so no decider from rule 1's table (rule 4), as S02-WC-001 to S02-WC-003 were noted. The audit's note on S02-WC-N04 reads it as the business location, which the same file's 'Get the business location country code for the Payments settings' gives (S02-WC-221); its own words don't (a call, below)
+- S02-WC-520 (c): ''recommended_payment_methods' => $this->get_recommended_payment_methods( $gateway, $country_code )': a country code without saying whose: as S02-WC-519
+
+S02-WC-N04, which the audit partly contradicted, still stands for what its note says: no page makes an extension take a value per selling location or per customer's country.
+
+### Rows replaced, removed, added and joined (part RD1-S5)
+
+Replaced: S02-V-237 (not covered, now gap S02-BC-G15) and S02-V-058 (gap S02-SH-G01, now gap S02-SH-G09). None removed. Added: S02-V-301 (S02-VP-01, salla). Joined: S02-V-054, S02-V-059, S02-V-066, S02-V-265 and S02-V-267 (shopify); S02-V-179 and S02-V-185 (zid); S02-V-209 and S02-V-273 (woocommerce). Each joined row's evidence names what was added, after "Second pass, RD1-S5". x_words took salla's words under S02-VP-01, shopify's under S02-VP-04, woocommerce's under S02-VP-16, and zid's under S02-VP-12 and S02-VP-17.
+
+### Candidates for a new point (part RD1-S5)
+
+None. Each statement placed answers one of its bullet's questions for an X of one of rule 1's kinds. Each statement noted answers none of its bullet's questions, or names no decider, or fails the role test.
+
+### Searches (part RD1-S5)
+
+No point was raised, so no earlier platform's rows were searched for. To read the Arabic country pages' ties, the slice's Zid statements whose source is zid.sa/ar/uae, /ar/kuwait, /ar/oman, /ar/egypt or /ar/syria were listed: S02-ZD-436, S02-ZD-440, S02-ZD-443, S02-ZD-444 (the hero), S02-ZD-445 and S02-ZD-446. The English pages' heroes S02-ZD-061, S02-ZD-137, S02-ZD-138, S02-ZD-386 and S02-ZD-387 were read. To compare the WooCommerce statements' locations, S02-WC-001 to S02-WC-003 (noted), S02-WC-221, S02-WC-223, S02-WC-226, S02-WC-227, S02-WC-259, S02-WC-263, S02-WC-267 and S02-WC-268 were read.
+
+### Rechecks (part RD1-S5)
+
+Each row joined was compared with its own platform's statements already in it: S02-V-054, S02-V-059, S02-V-066, S02-V-265 and S02-V-267 (shopify), S02-V-179 and S02-V-185 (zid), S02-V-209 and S02-V-273 (woocommerce). Its basis, `answers`, holds for each statement joined: each one's words, or for S02-SH-1001 its identifier (rule 5), name what fills X, or the party, condition or decider, in its role.
+
+### Calls (part RD1-S5)
+
+1. S02-ZD-436, S02-ZD-440 and S02-ZD-443 are left noted, though the work list calls their pages "zid.sa's pages for one country each". The Arabic pages' own hero names the Gulf (S02-ZD-444), and their plans' section names no country. RD1-S4 tied the English pages by their heroes, which name one country and its merchants. If the Arabic pages are read as tied to one country by those English versions, by their addresses, or by their partners' headings, the three join S02-V-185 as the merchant's country: the UAE, Kuwait or Oman.
+2. S02-ZD-445 and S02-ZD-446 are placed by their sections' headings, 'شركاؤنا في ...' (our partners in ...), each for one country. 'Partners in payments' is read as payment providers the store can use, and partners in logistics, technology or marketing as other services it can use (my readings).
+3. S02-WC-519 and S02-WC-520 are noted, as S02-WC-001 to S02-WC-003 were: their words name a location or country code without saying whose. Read with S02-WC-221 (same file as S02-WC-519), they would join S02-V-289, the business location, marked as a reading.
+4. S02-WC-516 joined S02-V-209 (base country), not S02-V-208 (the store address) and not a new row: 'base location' is the base country's own word family in WooCommerce's code (S02-V-040 under (a)).
+5. S02-SH-1001 joined S02-V-265 under (a) by its identifier, since its words, 'const Yf="US"', name the value and not the field. It could instead be noted under (a), as a value rather than a field; its (b) answer, the platform's default, holds either way.
+6. S02-SA-441's kyc_country is read as the merchant's country (KYC), a new field under (a). Read otherwise, it would be noted under the role test.
+7. S02-SH-G10, which a2.tsv leaves for S02-VP-04 in place of S02-SH-G02, is in no row. No row named S02-SH-G02, and no task leads to a gap row for Shopify beside S02-VP-04's answers, so none was added. The coordinator may add one.
+
+### Problems (part RD1-S5)
+
+1. One command of this part wrote a wrong line to `done.tsv` ('revisit S02-V-058', with 'S02-VP-05' as its bullet and 'b' as its outcome). It was removed by hand under the folder's lock, and the right line stands. The tool has no command to remove a ledger line.
+2. RD1-S4's notes give the heroes of zid.sa's English pages (zid.sa/en/...) as what ties zid.sa's pages for the UAE, Kuwait and Oman to one country. The Arabic pages (zid.sa/ar/...), from which this part's rereads S02-ZD-436 to S02-ZD-446 are recorded, carry another hero, which names the Gulf (call 1).
