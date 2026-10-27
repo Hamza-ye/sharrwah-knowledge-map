@@ -392,3 +392,102 @@ None. S02-VP-19 is raised for a kind of rule 1's list, the store's data, which n
 9. Absences under (c) (S02-ZD-N01 to S02-ZD-N03) are in the notes of the answer rows whose lists they bear on (S02-V-177, S02-V-185, S02-V-187), not `absent` rows, as part RD1-1 did with S02-ZD-N04.
 10. Zid's gap S02-ZD-G03 gives a `gap` row under both S02-VP-08 and S02-VP-09 (S02-V-170, S02-V-173), beside the answer rows, as S02-V-148 does for Salla.
 11. Ids: this part's rows are S02-V-169 to S02-V-240, and its point S02-VP-19. RD1 holds 19 points, under its cap of 25.
+
+## Second pass, RD1-S2
+
+Part RD1-S2 of the second pass: the tasks of `b/second-pass/RD1/worklist.tsv` under (c) for Shopify and Salla.
+
+### Revisit S02-V-164 (salla, S02-VP-16, the store's taxes)
+
+Replaced: `not covered` became an answer row, S02-V-164, 'This option is currently available for stores in Saudi Arabia only.' (S02-SA-349, S02-SA-350, S02-SA-358). Its leads noted:
+- S02-SA-353 (c): a list of products' VAT exemption reasons ('VATEX-SA-29':'Financial services' and the rest); names no decider (rule 4)
+- S02-SA-354 (c): the same list's next run (rule 5, Lists); names no decider (rule 4)
+- S02-SA-355 (c): the same list's next run (rule 5, Lists); names no decider (rule 4)
+- S02-SA-356 (c): the same list's last run (rule 5, Lists); names no decider (rule 4)
+- S02-SA-357 (c): the complete address of the store's main, default branch ('بيانات الفرع الرئيسي (الإفتراضي) لمتجرك مكتملة من حيث العنوان'; my translation: that the data of your store's main, default branch be complete as to its address), a requirement of ZATCA integration: its decider is a branch, which rule 1 keeps out of the store's own country; in S02-VP-16's note
+- S02-SA-361 (c): 'Enter the official rate that applies in the market you are selling into': its decider is a market the store sells into, RD3's (f), not the store's own country; in S02-VP-16's note
+- S02-SA-363 (c): 'Select a country and create your tax record first to enable tax collection': the tax record's country, which Salla's term ties to a market the store sells into ('السوق' in terms.tsv: 'وسيُستخدم هذا السجل الضريبي تلقائياً عند البيع فيها'; my translation: this tax record will be used automatically when selling in it), not the store's own country; in S02-VP-16's note
+- S02-SA-364 (c): 'Select a country and create your tax record first to enable government integrations': the tax record's country, as for S02-SA-363; in S02-VP-16's note
+- S02-SA-374 (c): customs duties on international shipments 'are calculated on the waybill and then settled directly from your wallet balance': names no decider of the store's taxes (rule 4)
+- S02-SA-375 (c): customs duties on DHL international shipping 'are settled through your store wallet balance': names no decider (rule 4)
+
+### Revisit S02-V-168 (salla, S02-VP-18, the store's defaults)
+
+Replaced: `not covered` became `gap`, S02-V-168, with S02-SA-G07, which asks whether the store's country sets the default currency or language. No lead answers. Its leads noted:
+- S02-SA-387 (c): the merchant can change the store's default currency 'بشرط أن لا يكون هناك طلبات شراء للعملاء' (my translation: provided there are no customer purchase orders): the merchant's choice and a condition on changing it, not the store's own country; in S02-VP-18's note
+- S02-SA-388 (c): 'you can change the default currency as long as there are no existing customer orders in the system': as S02-SA-387; in S02-VP-18's note
+- S02-SA-390 (c): what the default language is, the language of the base definition of the store's sections; names no decider (rule 4)
+- S02-SA-391 (c): the merchant sets the default language by choosing it from the languages added to the store: the merchant's choice, not the store's own country; in S02-VP-18's note
+- S02-SA-392 (c): the default language can't be changed after content is translated into other languages: a condition on changing it, not the store's own country; in S02-VP-18's note
+- S02-SA-393 (c): 'You cannot change the default language after content ... has already been translated': as S02-SA-392; in S02-VP-18's note
+- S02-SA-400 (c): entering the national address 'will be mandatory on Salla when creating or completing orders, in accordance with Transport Authority requirements': an order's address, not a default the platform sets for the store; it fits none of (c)'s kinds of thing bound, and the second pass raises no point (brief, second pass)
+
+### Revisit S02-V-219 (salla, S02-VP-19, the store's data)
+
+Replaced: `not covered` became an answer row, S02-V-219, every store, 'The merchant must comply with Salla’s Privacy Policy and all provisions of the Personal Data Protection Law in the Kingdom of Saudi Arabia.' (S02-SA-335, S02-SA-336, S02-SA-324, S02-SA-328, S02-SA-325, S02-SA-337, S02-SA-338, S02-SA-319, S02-SA-320, S02-SA-321); and a `gap` row beside it, S02-V-241, with S02-SA-G05, which asks where the store's data is stored or accessed, which the answer doesn't give. Its leads noted:
+- S02-SA-322 (c): a contact for the personal data protection department of 'شركة منصة سلة للاتصالات و تقنية المعلومات'; names no decider (rule 4)
+- S02-SA-323 (c): the definition of 'منصة سلة' (Salla's platform) and the company that owns it; names no decider of the store's data (rule 4)
+- S02-SA-326 (c): the law 'يطبق ... على أي عملية معالجة لبيانات شخصية تتعلق بالأفراد المواطنين أو المقيمين في المملكة' (my translation: applies to any processing of personal data of individuals who are citizens or residents of the Kingdom): its decider is the persons whose data is processed, not the store's own country; in S02-VP-19's note
+- S02-SA-327 (c): the Saudi Data and AI Authority receives the complaints about the law; names no decider (rule 4)
+- S02-SA-329 (c): the merchant 'يمكنك تفعيل آلية الموافقة الصريحة على ملفات تعريف الارتباط' (my translation: you can enable explicit consent to cookies): a setting the merchant switches on, RD3's privacy and consent; names no decider (rule 4)
+- S02-SA-332 (c): 'Enable cookie consent to comply with regulations like: PDPL (Saudi Arabia) GDPR (EU)': as S02-SA-329; names no decider (rule 4)
+
+A call the brief left to me: rule 4's `every store` holds 'where neither it nor its scope names a country'. These statements name Saudi Arabia only as the country of the law that applies, which is X itself (the privacy law that applies), not as a country the law is offered to or restricted to; I read them as `every store`, as part RD1-3 read S02-SA-209 (Salla's policy and Saudi Arabia's laws) under S02-VP-09's every-store row, S02-V-149.
+
+### Revisit S02-V-218 (shopify, S02-VP-19, the store's data)
+
+Replaced: `not covered` became three answer rows:
+- S02-V-218, every store, 'Shopify's collection, use, disclosure and processing of your personal information is governed by our Merchant Privacy Policy.' (S02-SH-613, S02-SH-614, S02-SH-615, S02-SH-618, S02-SH-619, S02-SH-622, S02-SH-624);
+- S02-V-242 (added), the merchant's location or residence, 'including such laws that apply based on the location or residence of Merchant and/or Your Customer(s).' (S02-SH-621, S02-SH-623, S02-SH-625, S02-SH-717);
+- S02-V-243 (added), where the person whose data it is is located, 'If you are located in Canada or the United States, your Personal Data is received by: Shopify Inc.' (S02-SH-617, S02-SH-616); the reading that the Privacy Policy's 'you' includes the merchant is marked as mine in its basis_evidence, as part RD1-4 read S02-WC-073.
+
+Leads placed under another point of (c): S02-SH-626 joined S02-V-101 (S02-VP-08: 'Shopify's primary contracting entity with merchants in EMEA ... and LATAM'); S02-SH-614 also joined S02-V-105 (S02-VP-09, every store: the terms every merchant accepts before signing up). Leads noted:
+- S02-SH-620 (c): Appendix C applies 'Where the processing of Personal Data under this DPA is subject to data protection requirements in the European Economic Area': its decider is the law's reach over the processing, not the store's own country; in S02-VP-19's note
+- S02-SH-713 (c): the admin shows 'the primary location where Shopify stores your store data, order data, and customer personal data'; names no decider (rule 4)
+- S02-SH-714 (c): the admin shows 'information about the geographic storage location of your data'; names no decider (rule 4)
+- S02-SH-716 (c): two stores' 'Data storage hosting location', observed as 'United States'; names no decider (rule 4)
+- S02-SH-718 (c): 'The GDPR doesn't require personal data to be processed or stored in Europe' and protects 'personal data of European residents transferred outside of Europe': its decider is the residence of the persons whose data it is, not the store's own country; in S02-VP-19's note
+
+### Rereads (shopify, (c)), noted by part RD1-3 under rule 2, since widened
+
+Placed, joined to S02-V-108 (S02-VP-10, documents and checks, the business entity's country code): S02-SH-441, S02-SH-442, S02-SH-443, S02-SH-444, S02-SH-445, S02-SH-446 and S02-SH-448, whose scope names the call's business entity ('its business entity 'My Store - entity' (196406207); the call's countryCode YE'), and S02-SH-267, whose identifier is the legal entity's field ('legalEntity.governmentIdentifiers') and whose scope is the legal entity's schema ('jurisdiction YE, legalEntityType default_company'); its source's file is S02-SH-448's, from another run. That the call's country code is the business entity's is my reading of the scope, marked in S02-V-108's basis_evidence. Their earlier notes stay.
+
+Left noted: S02-SH-465 ('threeDSecureEligibilityForCountry'): its words, its identifier and its scope, a list of stores and plans, don't say whose country.
+
+### Place tasks: salla (c)
+
+Placed: S02-SA-312 joined S02-V-152 (S02-VP-10; the Arabic of S02-SA-284's words); S02-SA-313 joined S02-V-151 (S02-VP-10; the question 'store-country'); S02-SA-314 joined S02-V-162 (S02-VP-14) and S02-V-150 (S02-VP-09), as Salla's English of S02-SA-147, which part RD1-3 placed in both; S02-SA-315 joined S02-V-159 (S02-VP-13), by its scope, Kuwait's and the UAE's payout articles, as part RD1-3 read S02-SA-145 and S02-SA-150. Noted:
+- S02-SA-316 (c): 'Your settlement terms and merchant fees follow your agreement with Tabby', and Tabby's payments 'are collected through Tabby rather than Salla Payments': its decider is the merchant's agreement with Tabby and the payment method, not the store's own country (rule 4); in S02-VP-13's note
+- S02-SA-317 (c): Tamara settles its orders 'according to the agreement between Tamara and the store': its decider is that agreement, not the store's own country (rule 4); in S02-VP-13's note
+- S02-SA-376 (c): the consumer's right under the Saudi E-commerce Law to withdraw within seven days of receiving the product: a buyer's right of return, which fits none of (c)'s kinds of thing bound, and names no decider (rule 4)
+- S02-SA-383 (c): 'The law entitles the consumer to return a product ... within 7 days of the purchase date': as S02-SA-376
+- S02-SA-384 (c): '5. إضافة سياسة الاستبدال والاسترجاع' (my translation: 5. add an exchange and return policy), a step of an article on the Saudi E-commerce Law: names no decider (rule 4), and returns fit none of (c)'s kinds
+- S02-SA-385 (c): '5. Add exchange and return policy': as S02-SA-384
+- S02-SA-425 (c): 'Saudi E-commerce law requires a verified store address' under 'Set your pickup location', where 'carriers will pick up orders': a place the store ships from (rule 1); and its other text's key, 'uae_desc', names a country without saying whose (rule 2)
+
+### Place tasks: shopify (c)
+
+Placed (joined to a row unless said): S02-SH-593 joined S02-V-128, S02-V-135, S02-V-138 and S02-V-145 (S02-SH-248's list); S02-SH-602 joined S02-V-142; S02-SH-612 joined S02-V-143, S02-V-113 and S02-V-121, and is a new row under S02-VP-14, S02-V-244 ('pricing and payment options can differ depending on where your business is based'); S02-SH-630, S02-SH-631, S02-SH-633 and S02-SH-637 are a new row under S02-VP-11, S02-V-245 ('Your Shopify Payments account must be located in one of the following countries'; that the account's location is where the merchant's business is is my reading, marked there); S02-SH-636 and S02-SH-641 joined S02-V-119; S02-SH-639 joined S02-V-110; S02-SH-642 joined S02-V-112; S02-SH-644 and S02-SH-645 joined S02-V-108; S02-SH-650 joined S02-V-137; S02-SH-699 and S02-SH-700 joined S02-V-127; S02-SH-701 joined S02-V-113 and S02-V-121; S02-SH-702 joined S02-V-130; S02-SH-705 joined S02-V-143; S02-SH-709 joined S02-V-115. Noted:
+- S02-SH-594 (c): the Terms of Service 'require you to maintain an accurate location', and the store address 'updates to match your new business entity address and country': what fills and changes the store's own country, (a) and (b), not a thing bound to it
+- S02-SH-651 (c): additional tax fields in early access, by 'Destination is Chile' and the like: the shipping destination, a buyer's country, not the store's own country (rule 1); in S02-VP-16's note
+- S02-SH-692 (c): 'The Shopify Plus plan pricing varies depending on the term and your billing currency': its deciders are the term and the billing currency, outside rule 1's table (rule 4), and its table's 'Available countries' don't say whose country (rule 2); in S02-VP-14's note
+- S02-SH-710 (c): 'the physical location where the POS device is logged in determines the entity': a place the store sells at (rule 1), not the store's own country
+- S02-SH-712 (c): 'you must have a separate entity for each country with retail locations': the retail locations' countries, places the store sells at (rule 1)
+
+Placed, continued: S02-SH-733 joined S02-V-242; S02-SH-823 joined S02-V-137; S02-SH-825 joined S02-V-245; S02-SH-858 joined S02-V-120; S02-SH-869 and S02-SH-870 are a new row under S02-VP-17, S02-V-246 ('SMS notifications are supported only when your business address is in one of the following countries'); S02-SH-883 joined S02-V-146; S02-SH-891 joined S02-V-138; S02-SH-921 is a new row under S02-VP-18, S02-V-247 ('The entity assigned to each retail location determines the currency for Shopify POS at that location'). Noted:
+- S02-SH-855 (c): 'you must follow the payment rules for the country you're processing the transaction in': the country of an in-person sale, a place the store sells at (rule 1); in S02-VP-11's note
+- S02-SH-856 (c): 'To accept in-person POS payments in multiple countries, you must create a separate Shopify store and Shopify Payments account for each additional country': the countries of in-person sales, places the store sells at (rule 1); in S02-VP-11's note
+- S02-SH-859 (c): in-person country requirements don't apply to sales 'using a payment solution other than Shopify Payments' or at locations 'that don't accept payments': its deciders are the payment solution and the location's use (rule 4); in S02-VP-11's note
+
+Placed, continued: S02-SH-931 joined S02-V-137; S02-SH-932 joined S02-V-142; S02-SH-933 joined S02-V-138; S02-SH-935 is a new row under S02-VP-18, S02-V-248 ('Cash rounding rules might apply automatically at checkout depending on your store's location'); S02-SH-953 and S02-SH-954 joined S02-V-242. Noted:
+- S02-SH-923 (c): 'the entity for that location must use a default payout currency that matches the country and currency requirements for that country': the country of a retail location, a place the store sells at (rule 1); in S02-VP-11's note
+- S02-SH-928 (c): 'In France, Spain, Italy, Germany, and Sweden, a return or exchange ... must be processed by the same legal entity as the original sale', for Shopify POS there: the countries of retail sales, places the store sells at (rule 1); and returns fit none of (c)'s kinds
+- S02-SH-930 (c): 'You can't sell product bundles in Shopify POS for retail locations in Spain': a retail location, a place the store sells at (rule 1); in S02-VP-17's note
+- S02-SH-936 (c): additional cash rounding rules for 'new stores created on or after July 6, 2026' and stores 'that set up their first retail location in a listed country': the store's creation date (rule 4) and a retail location (rule 1); in S02-VP-18's note
+- S02-SH-942 (c): 'Automatic receipt printing is on by default for Shopify POS locations in Italy': a POS location, a place the store sells at (rule 1); in S02-VP-18's note
+- S02-SH-950 (c): 'A $2.15 USD monthly charge applies to each approved toll-free number used for SMS marketing in the United States and Canada': where the number is used, not the store's own country (rule 4); in S02-VP-14's note
+
+Placed, continued: S02-SH-956 is a new row under S02-VP-17, S02-V-249, every store ('There are no specific country requirements for your store's location'); S02-SH-959 and S02-SH-971 joined S02-V-127; S02-SH-964 joined S02-V-141; S02-SH-965, S02-SH-966 (its list's next run, rule 5, Lists), S02-SH-968, S02-SH-969 and S02-SH-970 joined S02-V-142. Noted:
+- S02-SH-960 (c): 'You're charged based on the number of SMS marketing messages sent to each recipient': its decider is the messages and their recipients (rule 4); its example's 'if you're located in Denmark' doesn't say the location decides the charge; in S02-VP-14's note
+
+Rows compared with a statement of their own platform were rechecked under rule 5: each joined statement names its row's decider in its own words, or, where said, by its scope.

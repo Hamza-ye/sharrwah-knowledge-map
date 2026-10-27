@@ -1,0 +1,14 @@
+task	id	bullet	outcome
+revisit	S02-V-164	c	replaced with an answer: stores in Saudi Arabia (S02-SA-349, S02-SA-350, S02-SA-358); 10 leads noted
+revisit	S02-V-168	c	replaced with gap S02-SA-G07; 7 leads noted, none answers
+revisit	S02-V-219	c	replaced with an answer, every store (10 leads), and a gap row for S02-SA-G05; 6 leads noted
+revisit	S02-V-218	c	replaced with an answer, every store (7 leads); added S02-V-242 (merchant's location, 4 leads) and S02-V-243 (where you are located, 2 leads); S02-SH-626 joined S02-V-101, S02-SH-614 also S02-V-105; 5 leads noted
+reread	S02-SH-441	c	placed: joined S02-V-108 (S02-VP-10), the business entity's country code
+reread	S02-SH-442	c	placed: joined S02-V-108 (S02-VP-10), the business entity's country code
+reread	S02-SH-443	c	placed: joined S02-V-108 (S02-VP-10), the business entity's country code
+reread	S02-SH-444	c	placed: joined S02-V-108 (S02-VP-10), the business entity's country code
+reread	S02-SH-445	c	placed: joined S02-V-108 (S02-VP-10), the business entity's country code
+reread	S02-SH-446	c	placed: joined S02-V-108 (S02-VP-10), the business entity's country code
+reread	S02-SH-448	c	placed: joined S02-V-108 (S02-VP-10), the business entity's country code
+reread	S02-SH-267	c	placed: joined S02-V-108 (S02-VP-10), the business entity's country code
+reread	S02-SH-465	c	left noted: its words, identifier and scope (a list of stores) don't say whose country

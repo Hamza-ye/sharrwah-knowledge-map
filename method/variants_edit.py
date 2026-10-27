@@ -239,6 +239,7 @@ def main(subj, rd, cmd, args):
         head, recs = table(path)
         recs.append(dict(zip(["task", "id", "bullet", "outcome"], args)))
         write(path, ["task", "id", "bullet", "outcome"], recs)
+        print(f"done.tsv: {args[0]} {args[1]} ({args[2]}) recorded")
     elif cmd in ("xwords", "vpnote"):
         p = F.point(args[0])
         if cmd == "xwords":
