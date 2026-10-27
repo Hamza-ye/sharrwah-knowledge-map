@@ -1,0 +1,19 @@
+{
+ "n": 9,
+ "url": "https://help.zid.sa/national-address/",
+ "dir": "items/009-help.zid.sa",
+ "fetched_at": "2026-10-27T06:57:05Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/national-address/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 25770,
+ "cited_in": [
+  "S02-ZD-C315",
+  "S02-ZD-C316"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "5b9160057ec12e5acd01b13d8a212a5dda5c580a659bc55a98d137d4c9253a74",
+ "raw_ext": "html"
+}

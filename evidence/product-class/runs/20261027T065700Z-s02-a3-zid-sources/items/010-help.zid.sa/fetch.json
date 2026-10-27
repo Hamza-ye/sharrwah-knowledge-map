@@ -1,0 +1,18 @@
+{
+ "n": 10,
+ "url": "https://help.zid.sa/business-verification/",
+ "dir": "items/010-help.zid.sa",
+ "fetched_at": "2026-10-27T06:57:06Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/business-verification/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 26842,
+ "cited_in": [
+  "S-02 absence audit, Zid part 1: read"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "3e1823bb2091e126c578979eb2d76ab04f317f23364e716d5e661b3120c3ad97",
+ "raw_ext": "html"
+}
