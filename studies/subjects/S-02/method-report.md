@@ -173,3 +173,16 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 - **The last part of a root decision closes every point's rows:** all twelve (c) points now have a row for each platform. Of its own platforms' rows, 9 are `not covered` and go to gap-closing (phase A2).
 - **The one point it raised, the store's data, found Zid's answer by the search,** in a statement the part had first placed under the contracting party; it moved it.
 - **Stripe's entity under WooPayments isn't the platform's company,** so it went under the platform's own payment service, as Shopify's acquirer does: a reading, marked as one.
+
+## 8. Phase A3, the absence audit (27 October)
+
+| Platform | Claims | Results | Statements added | Requests | Millions |
+| --- | --- | --- | --- | --- | --- |
+| Salla | 4 gaps | 3 confirmed; G03 contradicted | 8 | 62 | 12.1 |
+| Shopify | 2 gaps, 3 absences | 4 confirmed; G01 partly contradicted | 23 | 86 | 17.2 |
+
+**What it taught:**
+- **Two of the six gaps routed to capture requests were answered, in whole or in part, by what is held.** Salla's onboarding list of countries is in two runs, as the page and as the API's saved answer. `method/held_index.py` didn't list saved answers, so the gap had gone to capture. It lists them now, and H-002 is narrowed. Shopify's Help Center page on business entities, not read before, says who verifies an entity and what changes with the store's country, so H-007's second step is narrowed.
+- **The absence audit can run beside phase B,** since it adds statements the slices don't hold. Each part leaves them for the second pass, as the brief now says.
+- **A Shopify search took 10 to 15 minutes with three running at once,** against 3 minutes alone. Searching by names with `--with` returned thousands of the runs' saved answers. The auditor narrowed them by more searches and read the Help Center documents by title and snippet, as its notes say.
+- **One lead was left unread:** the Help Center's `organization-settings/expansion-stores.md`, for how a store made inside an organization takes its country (S02-SH-G02). It goes to gap-closing (phase A2).
