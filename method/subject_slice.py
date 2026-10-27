@@ -23,7 +23,9 @@ phase A's files stay the record. Cut them again after anything adds to phase A's
 --print prints the rows of one root decision's slice, filtered by bullet, platform or ids, so an agent reads the part
 it needs instead of the whole slice.
 """
-import csv, os, sys
+import csv, os, signal, sys
+
+signal.signal(signal.SIGPIPE, signal.SIG_DFL)   # a pipe into head ends quietly
 
 csv.field_size_limit(10**9)
 PLATFORMS = ("shopify", "salla", "zid", "woocommerce", "bigcommerce")

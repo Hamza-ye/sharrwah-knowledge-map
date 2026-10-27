@@ -1,6 +1,6 @@
 # Brief: S-02, variation points and variants (step 1, phase B)
 
-This is `PLAN.md` Stage 4, subject S-02. You are one agent with one task: one part of one root decision. The message that started you names both: the root decision, the bullets you place, and the platforms whose statements you place. Other agents work on the other parts, one after another for the same root decision, each continuing from the files the last one wrote.
+This is `PLAN.md` Stage 4, subject S-02. You are one agent with one task: one part of one root decision. The message that started you names both: the root decision, the bullets you place, and the platforms whose statements you place, with the parts before and after yours. A part is some of a root decision's bullets, or one bullet for some of the platforms. Other agents work on the other parts, one after another for the same root decision, each continuing from the files the last one wrote.
 
 **Read only this brief and, in `studies/subjects/S-02/`:**
 - `bullets.tsv`, the questions phase A asked of each platform, and `b/ranges.tsv`, your root decision's ids and cap;
@@ -20,6 +20,8 @@ python3 -I method/subject_slice.py studies/subjects/S-02 --print <RD> --bullet <
 python3 -I method/subject_slice.py studies/subjects/S-02 --print <RD> --ids <id>,<id>
 python3 -I method/subject_slice.py studies/subjects/S-02 --print <RD> --what gaps|absences|terms --platform <p>
 ```
+
+A statement's columns are `platform`, `kind`, `source`, `stmt_id`, `bullet`, `placement`, `identifier`, `statement`, `scope` and `marker`. To scan many, print only those you need, such as `| cut -f1,4,5,7,8`. Read your root decision's `variants.tsv` the same way, by variation point or platform (`awk -F'\t' '$2=="S02-VP-03"'`), never whole.
 
 ## The subject
 
@@ -59,26 +61,27 @@ Statements under (h) are conditions, not variants: a variant rests on at least o
 2. **Candidates.** Each statement under one of your part's bullets that answers one of that bullet's questions gives one candidate per question it answers, with its X quoted from it.
    - **The role test** applies to X itself: X must be the thing the question names, in the root decision's sense. A country a buyer ships to is not the store's own country; a setting of the platform's own account is not a store's setting. "Market", "country" and "region" name different things on different platforms.
    - **A candidate whose X passes the role test is a facet** of its root decision (`PLAN.md`, Stage 4). One that matches no other raises its own variation point.
-   - A statement under your bullets that answers none of their questions, or whose X fails the role test, goes in `notes-b.md` by its id, with the reason in a few words.
+   - A statement under one of your bullets that answers none of that bullet's questions, or whose X fails the role test, goes in `notes-b.md` as its id followed by that bullet, such as `S02-SA-011 (b)`, with the reason in a few words. A statement under two of your bullets is noted, or placed, under each.
 3. **Variation points.** Candidates from different statements under the same question are one variation point when their X matches on one of the bases in rule 5.
    - Each variation point keeps its bullet. Its question takes that question's form from rule 1, with X in double quotes, quoted from one of the statements in `raised_by`.
    - `x_words` lists each raising platform's own words for X.
    - **Merging.** Two variation points of the same question, answered by exactly the same statements, are merged. List each merge in `notes-b.md`.
-   - **Earlier parts.** Read your root decision's `variation-points.tsv` before you start, and place your statements under its points first. Raise a new one only where none matches. For a point you raise, give a row for every platform, the earlier parts' platforms too: print their statements under that bullet and place what answers it.
+   - **Earlier parts.** Read your root decision's `variation-points.tsv` before you start, and place your statements under its points first. Raise a new one only where none matches.
+   - **Every platform has a row** under each variation point (rule 4). Give the rows of your part's platforms. For a point you raise, give also the rows of the platforms that earlier parts covered under the same bullet: print their statements under that bullet and place what answers it. The platforms a later part covers under that bullet are left to it.
 4. **Variants.** For each variation point and each platform, give one row per distinct answer the platform gives, with its own `variant_id`. An answer's `variant` excerpt names the who or what that fills X. Two answers are distinct when their excerpts name a different who or what. A row takes one of four forms:
    - **an answer:** `variant` is an excerpt of one of its statements, verbatim;
    - **`absent`:** the platform's absences show it absent from a complete list, under the variation point's bullet, with those `absence_ids`. Its `kind` is the absence's kind;
    - **`gap`:** the platform's gaps under the same bullet cover it, with those `gap_ids`;
    - **`not covered`:** the platform has none of these. These rows go back to that platform for gap-closing (phase A2). List them in `notes-b.md`.
 
-   **(g).** A statement that a setting holds for the whole store is the platform's variant, "the whole store", under each of RD3's `what "X" takes its value per` points it applies to. A statement that the platform has no market of the kind in (e) is its variant under each of RD2's points it applies to. Either takes the basis `answers` alone.
+   **(g).** A statement that a setting holds for the whole store is the platform's variant, "the whole store", under each of RD3's `what "X" takes its value per` points it applies to. Where no such point's X matches its setting, it raises one, with X its setting. A statement that the platform has no market of the kind in (e) is its variant under each of RD2's points it applies to. Either takes the basis `answers` alone. A statement under (g) in your root decision's slice that holds the other decision's half is noted, as rule 2 says.
 5. **Matching.** Compare each statement with a statement in the variation point's `raised_by` from another platform, where there is one. Record every basis that holds, with the words that show it in `basis_evidence`:
    - `term`: the same term, including a platform's own translation from `terms.tsv`. It fails when the two platforms' definitions in `terms.tsv` differ.
    - `identifiers`: the same key, scope, topic, field or entitlement, as the statement itself states it, not as its `identifier` column's heading gives it;
    - `definition`: the same definition, with both quoted;
    - `answers`: the statement says who or what fills the variation point's X, in words that name the same X.
      - `answers` rests on what the statement says, not on shared words. Its own words must name what fills X in X's role, as rule 2's role test says. `basis_evidence` quotes those words and says which role they name. The role test holds whatever a variant's basis, since shared words can be homonyms.
-     - A variant whose words name only what is kept out of X's role is not an answer variant. It goes in the variation point's `note`, with its statement's id. If no other variant of the platform answers, the platform's answer is a `gap` with its gaps under that bullet, or, if it has none, `not covered` (the pilot's ruling of 25 October 2026, on its review's finding 36).
+     - A variant whose words name only what is kept out of X's role is not an answer variant. It goes in the variation point's `note`, with its statement's id, and its statement is noted in `notes-b.md` (rule 2). If no other variant of the platform answers, the platform's answer is a `gap` with its gaps under that bullet, or, if it has none, `not covered` (the pilot's ruling of 25 October 2026, on its review's finding 36).
 
    A statement goes under a variation point only if at least one basis holds. When it only partly matches, split the variation point rather than force the match.
 
@@ -86,10 +89,10 @@ Statements under (h) are conditions, not variants: a variant rests on at least o
 6. **Kind and scope.**
    - `kind` is copied from the slice's `kind` for each statement of the variant. If they differ, list each, `;`-separated.
    - `scope` is as the statements give it. If they differ, list each scope with its `stmt_ids`, `;`-separated.
-7. **Every statement is placed or noted.** Each statement of your part, under each of your part's bullets it carries, is in a variant of one of your root decision's variation points, or in `notes-b.md` by its id with its reason (rule 2). The checker lists the rest.
+7. **Every statement is placed or noted.** Each statement of your part, under each of your part's bullets it carries, is in a variant of a variation point of that bullet (a statement under (g), of a point rule 4 places it under), or noted in `notes-b.md` as its id followed by that bullet, with its reason (rule 2). The checker lists the rest.
 8. **No inference,** no ranking and no causes, anywhere, including notes.
 9. **Write as you go.** Write each variation point and variant to the files as soon as it is placed. If you are stopped, your files must hold everything done so far, and the next run continues from them.
-10. **Stop and report** past your root decision's cap of variation points in `b/ranges.tsv`, listing in `notes-b.md` the statements not yet placed.
+10. **Stop and report** past your root decision's cap of variation points in `b/ranges.tsv`. Don't note the statements not yet placed: the checker lists them.
 
 ## Second pass, after phases A2 and A3
 
@@ -113,5 +116,6 @@ All files are tab-separated, with a header row and no quoting. Tabs and newlines
 **Before you finish,** check your files on a copy that holds only your own root decision's folder:
 1. Copy `studies/subjects/S-02` to `<your scratch folder>/S-02`, then remove from the copy every folder in `b/` but your own.
 2. Run `python3 -I method/merge_slices.py <that folder>/S-02 b`. It refuses ids outside your range, a bullet outside your root decision, or more variation points than your cap.
-3. Run `python3 -I method/check_subject.py <that folder>/S-02 <an output folder> $(ls -d evidence/product-class/runs/*)` from the repository's root.
-4. Fix, in your own folder, every line of level `error` on your ids. Its `review` line for your root decision, and `unplaced.tsv` in the output folder, list your root decision's statements neither in a variant nor noted: those of your part's bullets and platforms are yours to place or note; the rest belong to other parts.
+3. Run `python3 -I method/check_subject.py <that folder>/S-02 <an output folder> $(ls -d evidence/product-class/runs/*)` from the repository's root. It checks every quote of phase A too, and takes several minutes: give it a timeout of fifteen minutes.
+4. Fix, in your own folder, every line of level `error` on your ids, except `no row for this variation point and platform` for a platform a later part covers under that bullet.
+5. `unplaced.tsv` in the output folder lists your root decision's statements, by bullet and platform, that are neither in a variant nor noted. Those of your part's bullets and platforms are yours to place or note; the rest belong to other parts.
