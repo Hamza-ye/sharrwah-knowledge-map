@@ -23,11 +23,12 @@
 #   PLATFORM is shopify, salla, woocommerce, zid or bigcommerce. A document matches when it holds any TERM
 #   (every TERM with --all) and, with --with, also any of the terms after --with: such as a thing's names, with the
 #   places or plans it may hold for. At most N documents per corpus are listed (default 40), those where the terms
-#   are densest first; the addresses past the cap follow, one line each.
+#   are densest first; every address past the cap follows, one line each. A Zid help page is matched on its
+#   article alone, without the help centre's menu, which every page holds; a captured page shows its title.
 #   --runs-only searches only the observed repositories' runs (Shopify and Salla), in seconds; --only TEXT searches only
 #   the run corpora whose name holds TEXT, such as --only "step text from saved HTML".
 #   Snippets are folded for matching (case, diacritics, letter forms): never quote one; quote the document.
-import csv, glob, gzip, json, os, re, subprocess, sys, unicodedata, zlib
+import csv, glob, gzip, html, json, os, re, subprocess, sys, unicodedata, zlib
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from quote_check import norm, HARAKAT, html_text
 import runs_corpus
@@ -39,7 +40,7 @@ HOSTS = {  # captured pages in this repository's runs, by the host they came fro
     "shopify": r"(^|\.)(shopify\.(com|dev)|stripe\.com)$",
     "salla": r"(^|\.)salla\.(sa|com|dev)$",
     "woocommerce": r"(^|\.)(woocommerce\.com|wordpress\.org|stripe\.com|woo\.com)$",
-    "zid": r"(^|\.)zid\.(sa|dev)$",
+    "zid": r"(^|\.)zid\.(sa|dev|eg)$",
     "bigcommerce": r"(^|\.)(bigcommerce\.com|bigcommerce\.co\.uk|commerce\.com|bitpay\.com)$",
 }
 ARCHIVES = {"salla": "observed-sa", "shopify": "observed-sh"}   # whose fetch archives each platform's search reads
@@ -266,11 +267,17 @@ def documents(platform):
                 if os.path.isfile(tp):
                     # The visible text, and the raw page's text too: some sites keep their content only in the
                     # raw HTML, and render an error or an empty shell (zid.sa, for one).
-                    text = open(tp, encoding="utf-8", errors="replace").read()
+                    text, title = open(tp, encoding="utf-8", errors="replace").read(), ""
                     for raw in sorted(glob.glob(os.path.join(d, "raw*.html"))):
-                        text += "\n" + html_text(open(raw, encoding="utf-8", errors="replace").read())
+                        page = open(raw, encoding="utf-8", errors="replace").read()
+                        m = re.search(r"<title[^>]*>(.*?)</title>", page, re.S | re.I)
+                        title = title or (html.unescape(re.sub(r"\s+", " ", m.group(1))).strip() if m else "")
+                        text += "\n" + html_text(page)
+                    if host == "help.zid.sa":
+                        text = zid_article(text)
                     rel = os.path.relpath(tp, SKM)
-                    yield ("capture runs", f"sharrwah-knowledge-map@{head}:{rel} (and the raw page beside it)", r["url"], "", text)
+                    yield ("capture runs", f"sharrwah-knowledge-map@{head}:{rel} (and the raw page beside it)", r["url"],
+                           title, text)
     # The founder's saves for the platform: browser saves, and the documents saved beside them.
     for path in sorted(glob.glob(os.path.join(SKM, "evidence/product-class/blocked-evidence-founder", platform, "**", "*"),
                               recursive=True)):
@@ -312,6 +319,21 @@ def parse(argv):
         sys.exit("usage: corpus_search.py PLATFORM TERM [TERM ...] [--all] [--max N] [--with TERM [TERM ...]]; "
                  f"PLATFORM is one of {sorted(HOSTS)}")
     return terms[0], terms[1:], also, every, cap
+
+ZID_START = "آخر تحديث"
+ZID_END = ("التقييمات والمراجعات", "هل تحتاج إلى مساعدة إضافية", "لماذا زد")
+
+def zid_article(text):
+    """A Zid help page's article alone: from each "آخر تحديث" (last updated) to the ratings, the help prompt or the
+    footer, whichever comes first. Every page also holds the help centre's menu, whose words would match on every
+    page; a page without the marker is kept whole."""
+    parts, at = [], text.find(ZID_START)
+    while at >= 0:
+        ends = [e for e in (text.find(m, at) for m in ZID_END) if e > at]
+        stop = min(ends) if ends else len(text)
+        parts.append(text[at:stop])
+        at = text.find(ZID_START, stop)
+    return "\n".join(parts) if parts else text
 
 def matcher(terms):
     """The folded terms, and a test of which of them a folded text holds. A term in Latin letters matches whole
@@ -377,9 +399,8 @@ def main():
         snippet = re.sub(r"\s+", " ", body[max(0, i - 80):i + 160]).strip()
         print(f"{loc}\n    {url}\n    title: {title}\n    matched: {', '.join(t for t, _, _ in hits)}"
               + (f"; with: {', '.join(t for t, _, _ in with_hits)}" if also else "") + f"\n    …{snippet}…")
-    for corpus, rest in past.items():               # the addresses past the cap, one line each, at most 30
-        print(f"\npast the first {cap} in {corpus}:" + "".join(f"\n    {r}" for r in rest[:30])
-              + (f"\n    and {len(rest) - 30} more" if len(rest) > 30 else ""))
+    for corpus, rest in past.items():               # every address past the cap, one line each
+        print(f"\npast the first {cap} in {corpus}:" + "".join(f"\n    {r}" for r in rest))
     print(f"\nsearched {platform} for {terms} ({'every' if every else 'any'} term)"
           + (f", with any of {also}" if also else "") + ":",
           "; ".join(f"{c}: {n} documents{' (first ' + str(cap) + ' listed)' if n > cap else ''}" for c, n in total.items())

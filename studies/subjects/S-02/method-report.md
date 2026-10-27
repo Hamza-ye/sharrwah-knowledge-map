@@ -94,3 +94,29 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 - **Earlier parts' rows are found by search,** since each earlier part placed its statements under every question they answer. The searches are named in `notes-b.md`.
 - **The caps were set again** for points that match by role (`b/ranges.tsv`), and RD3's last part was split in two: ten parts.
 - **The slice printer refuses an empty or unknown option,** where it had printed the whole slice; the join writes nothing unless every file joins.
+
+## 6. The third check of phase B's brief, and the absence audit's inspection (27 October)
+
+**What they cost:** the third check of phase B's brief, 3.8 million (28 requests); the absence audit's inspection, 4.5 million (33 requests).
+
+**What the third check found, by dry runs on Salla's (a), (d) and (f):**
+- **Under (a), (b), (d) and (e), two agents now reach the same variation points:** one per question. The calls the rules left open fell from about 23 of 29 statement-bullet pairs to about 8, all of them about rows, not points.
+- **Under (c) and (f), whether two statements name "the same setting" was still a call:** Salla's first 22 (f) statements raised 22 points for 13 settings. Under (c), Zid's payment services gave one point or four.
+- **The search for an earlier platform's rows, by X's words alone, missed answers that reading finds:** a point on the currency of Zid's fees found none of Shopify's statements on billing currencies.
+- **A rule merged unrelated points** answered by the same list statement, such as prices with shipping options.
+
+**What changed:**
+- **(c) and (f) take X from a list of kinds:** under (c), from (c)'s own words in `bullets.tsv`; under (f), from the platforms' own groupings of a market's settings (Shopify's market page, Salla's sections for a market, BigCommerce's channel-specific settings). A new kind is raised only where none fits.
+- **The search reads the earlier platforms' identifiers first,** then searches their words and the point's `x_words`, and logs the words used.
+- **Notes count only on lines that start with the id and its bullet,** so a search log can't mark a statement as noted.
+- **Answers that rest only on a statement that a platform has no market of the kind say `no market`,** which the checker reads.
+
+**What the absence audit's inspection found, on Zid's gap S02-ZD-G01:**
+- **The search tool hid matches:** past its cap it named 30 addresses, then only a count, and the one document holding the field the gap names was among the unnamed. Zid's help-centre menu, on every page, made 25 of the first 40 matches.
+- **The brief didn't say whether Zid, WooCommerce and BigCommerce may read live,** so two agents would read different sources.
+- **The checker let some of phase A's searched gaps through without an audit row.**
+
+**What changed:**
+- `method/corpus_search.py` names every address past its cap, matches a Zid help page on its article alone, and shows a captured page's title.
+- The brief names the live hosts for each platform, how to run each search, and what to record whatever the result.
+- The checker asks for a row for every claim except the gaps phase A2 leaves after its own searches.

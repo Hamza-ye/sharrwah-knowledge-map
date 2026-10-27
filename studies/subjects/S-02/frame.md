@@ -90,7 +90,7 @@ The pilot's five steps, under Stage 4's changes (`PLAN.md`, Stage 4, and section
 | 1A | What each platform states, under the bullets of `bullets.tsv` | one agent per platform, blind to the others | `<platform>/statements.tsv`, `terms.tsv`, `absences.tsv`, `gaps.tsv`, `citations.tsv`, `notes.md` |
 | | Capture and kinds | the coordinator | captures, then `kinds.tsv` by the checker |
 | 1B | Variation points per root decision, and variants | in parts, each a fresh agent, one after another for the same root decision (`b/parts.tsv`) | `b/<root decision>/`, joined by `method/merge_slices.py` into `variation-points.tsv`, `variants.tsv` and `notes-b.md` |
-| 1A2, 1A3 | Closing the gaps a root decision needs, and auditing claims of absence it rests on | one agent per platform, where needed | `<platform>/a2.tsv`, `absence-audit.tsv` |
+| 1A2, 1A3 | Closing the gaps a root decision needs; and auditing every claim of absence, which can run beside phase B | one agent per platform, or per part of one | `<platform>/a2.tsv`, `absence-audit.tsv` |
 | 1C | Cause, coexistence and what follows, per root decision | per root decision, in parts where it is large | `c/<root decision>/`, joined into `analysis.tsv` and `notes-c.md` |
 | 2 | The Yemen row per root decision (section 6, step 6) | the coordinator; each fact checked against its quote first | in the register |
 | 3 | The scenario walk per root decision (section 6, step 7) | the coordinator | in the register |

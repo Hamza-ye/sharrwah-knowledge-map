@@ -331,7 +331,7 @@ for plat in PLATFORMS:
     d = os.path.join(subj, plat)
     if not os.path.isdir(d):
         continue
-    audit = read(os.path.join(d, "absence-audit.tsv"), "absence-audit.tsv")
+    audit = read(os.path.join(d, "absence-audit.tsv"), f"{plat}/absence-audit.tsv")
     claims = [g for g, r in gaps.items() if r["platform"] == plat and r["gap_kind"] != "page not read"] + \
              [a for a, r in absences.items() if r["platform"] == plat]
     f = f"{plat}/absence-audit.tsv"
@@ -353,16 +353,18 @@ for plat in PLATFORMS:
         if r["result"] == "partly contradicted" and not r["note"]:
             err(f, r["claim_id"], "a partly contradicted claim says in note what part still stands")
         if r["result"] in ("contradicted", "partly contradicted"):
-            if not ids(r["stmt_ids"]) and r["claim_id"] not in absences:
-                err(f, r["claim_id"], "a contradicted gap names the statements that state it")
+            if not ids(r["stmt_ids"]):
+                err(f, r["claim_id"], "a contradicted claim names the statements that show it")
             for x in ids(r["stmt_ids"]):
                 if stmts.get(x, {}).get("platform") != plat:
                     err(f, r["claim_id"], f"{x} is not one of {plat}'s statements")
+    # the gaps phase A2 leaves after its own searches (its a2.tsv's gap_ids) need no second audit; every other
+    # claim, phase A's own searched gaps among them, has its row
+    after_a2 = {g for r in (read(os.path.join(d, "a2.tsv"), f"{plat}/a2.tsv", check_head=False) or [])
+                for g in ids(r.get("gap_ids", ""))}
     for c in claims:
-        if c not in done:
-            g = gaps.get(c, {})
-            if not (g.get("gap_kind") == "searched, not found" and "corpus_search.py" in g.get("read", "")):
-                err(f, c, "a claim of absence that the audit doesn't settle")
+        if c not in done and c not in after_a2:
+            err(f, c, "a claim of absence that the audit doesn't settle")
 
 for sid, r in stmts.items():
     under = "/".join(f"({b})" for b in of_role("conditions"))
@@ -490,6 +492,13 @@ if var is not None:
                 elif only_nopart and "the whole store" not in named:
                     err("variants.tsv", i, "an answer resting on a statement that a setting holds for the whole "
                                            "store names 'the whole store' in basis_evidence")
+            elif any(BULLET_RD.values()) and sids and all(
+                    stmts.get(x, {}).get("bullets", set()) & NOPART and not stmts[x]["bullets"] & ASK
+                    for x in sids if x in stmts) and "no market" not in r["basis_evidence"]:
+                # S-02's brief: an answer resting only on a statement that the platform has no market of the kind
+                # asked about names "no market"
+                err("variants.tsv", i, "an answer resting only on a statement that the platform has no such "
+                                       "market names 'no market' in basis_evidence")
             want = sorted({k for s in sids if s in kinds for k in kinds[s][0].split(";") if k})
             got = sorted({k.strip() for k in r["kind"].split(";") if k.strip()})
             if want and got != want:
@@ -524,9 +533,13 @@ if var is not None:
             if h:
                 rd_now = h.group(1)
             elif rd_now:
-                for sid, bs in re.findall(rf"({SID}-[A-Z]{{2}}-\d{{3}})\s*\(([a-z](?:\s*[,;]\s*[a-z])*)\)", line):
-                    for b in re.split(r"\s*[,;]\s*", bs):
-                        placed[(rd_now, b)].add(sid)
+                # only a line that starts with its ids and their bullets is a note: "- S02-SA-011 (b): reason"
+                m = re.match(rf"^\s*[-*]?\s*((?:{SID}-[A-Z]{{2}}-\d{{3}}\s*,\s*)*{SID}-[A-Z]{{2}}-\d{{3}})"
+                             rf"\s*\(([a-z](?:\s*[,;]\s*[a-z])*)\)", line)
+                if m:
+                    for sid in re.findall(rf"{SID}-[A-Z]{{2}}-\d{{3}}", m.group(1)):
+                        for b in re.split(r"\s*[,;]\s*", m.group(2)):
+                            placed[(rd_now, b)].add(sid)
         rows_out = []
         for sid, st in stmts.items():
             for b in sorted(st["bullets"] & (ASK | NOPART)):
