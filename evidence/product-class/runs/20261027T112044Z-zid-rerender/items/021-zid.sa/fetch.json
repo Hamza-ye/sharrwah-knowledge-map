@@ -1,0 +1,18 @@
+{
+ "n": 21,
+ "url": "https://zid.sa/en/uae/",
+ "dir": "items/021-zid.sa",
+ "fetched_at": "2026-10-27T11:21:03Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://zid.sa/en/uae/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 47126,
+ "cited_in": [
+  "re-render of a page held as an error text: 20261019T003516Z-proposals-Q6-zid"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "065c26e742c61d8beef1cefebc50caca4f4d196e82b79a9c7826552fd5a0e7b5",
+ "raw_ext": "html"
+}

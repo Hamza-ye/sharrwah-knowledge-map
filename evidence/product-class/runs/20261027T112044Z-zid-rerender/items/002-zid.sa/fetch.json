@@ -1,0 +1,18 @@
+{
+ "n": 2,
+ "url": "https://zid.sa/ar/legal/privacy-policy/",
+ "dir": "items/002-zid.sa",
+ "fetched_at": "2026-10-27T11:20:44Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://zid.sa/ar/legal/privacy-policy/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 47526,
+ "cited_in": [
+  "re-render of a page held as an error text: 20261012T045101Z-q1-zid-sources"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "745f2aa4a01846adc5333a4c9d7486c41f36158f7cd3393f34a050b317120c1f",
+ "raw_ext": "html"
+}

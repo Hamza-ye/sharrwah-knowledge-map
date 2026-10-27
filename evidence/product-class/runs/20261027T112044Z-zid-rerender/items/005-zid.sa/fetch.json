@@ -1,0 +1,18 @@
+{
+ "n": 5,
+ "url": "https://zid.sa/ar/legal/zidpay-terms-conditions-sa/",
+ "dir": "items/005-zid.sa",
+ "fetched_at": "2026-10-27T11:20:47Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://zid.sa/ar/legal/zidpay-terms-conditions-sa/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 47222,
+ "cited_in": [
+  "re-render of a page held as an error text: 20261012T045101Z-q1-zid-sources, 20261012T104936Z-s01-sources"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "8062a50dc71f86d7a9caf3f3a359bd481d4150bb2710626d480bc6cfc2bfee21",
+ "raw_ext": "html"
+}

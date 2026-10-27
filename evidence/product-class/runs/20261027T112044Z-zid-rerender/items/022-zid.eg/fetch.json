@@ -1,0 +1,18 @@
+{
+ "n": 22,
+ "url": "https://zid.eg/ar/legal/terms-conditions/",
+ "dir": "items/022-zid.eg",
+ "fetched_at": "2026-10-27T11:20:59Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://zid.eg/ar/legal/terms-conditions/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 97964,
+ "cited_in": [
+  "re-render of a page held as an error text: 20261027T065700Z-s02-a3-zid-sources"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "7751d55d90037530a6939fb1c945f84d6712f4d74a77ed7ff1e85a7c5db34cab",
+ "raw_ext": "html"
+}

@@ -72,6 +72,8 @@ Record every other bullet, or part of one, that your platform doesn't state as a
 - To read a GraphQL type in full (shopify): `python3 -I method/schema_type.py /home/user/observed-sh/structures/shopify/admin-graphql-schema/2026-10 <Type> [<Type> ...]`, or `--search <words>` to find types. It prints the `source` and the `locator` (the record's offset) that a quote from it takes. Put the type's name in the locator after the offset, such as `1029798 (type Market)`. It prints each field's or value's name with its description below it, as the schema holds them, so "<name> <description>" can be quoted; lines in square brackets are the tool's own, never quote them.
 
 **Reading a live page.** Read it as the Q1 runs did: a `.md` endpoint, the raw file, or the rendered page through `method/capture/page_text.mjs`. A summary returned by a fetching tool is not the page. Don't get around logins, paywalls or bot challenges.
+- **The raw file can hold what the page doesn't show.** zid.eg's Terms page holds the Saudi Terms in its raw HTML, and its scripts replace them with the Terms of Zid Egypt. So quote a raw file only for what the rendered page shows, or shows on a click, such as an FAQ's answer.
+- **A page that renders empty, or only as an error text,** isn't read from its raw file instead. Say so in `notes.md`, so that the coordinator can render it again.
 
 **Don't open:**
 - anything else under `studies/`, except `studies/subjects/S-02/bullets.tsv`, your own output folder and the four index files above;

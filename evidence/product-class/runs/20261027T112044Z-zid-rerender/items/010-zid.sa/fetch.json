@@ -1,0 +1,18 @@
+{
+ "n": 10,
+ "url": "https://zid.sa/en/legal/terms-conditions/",
+ "dir": "items/010-zid.sa",
+ "fetched_at": "2026-10-27T11:20:52Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://zid.sa/en/legal/terms-conditions/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 96762,
+ "cited_in": [
+  "re-render of a page held as an error text: 20261012T045101Z-q1-zid-sources, 20261012T104936Z-s01-sources"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "ab46a6a6b27ef8c083e06aba336b3ae408c5d09eddf8a7939e1e7735233272b9",
+ "raw_ext": "html"
+}

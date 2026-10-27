@@ -1,0 +1,18 @@
+{
+ "n": 23,
+ "url": "https://zid.sa/en/solutions/financing/",
+ "dir": "items/023-zid.sa",
+ "fetched_at": "2026-10-27T11:21:04Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://zid.sa/en/solutions/financing/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 40984,
+ "cited_in": [
+  "re-render of a page held as an error text: 20261027T065700Z-s02-a3-zid-sources"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "01981283ba53f52d251639b402e1321a156bc0a2582fd674ceed5708811cb589",
+ "raw_ext": "html"
+}

@@ -1,0 +1,18 @@
+{
+ "n": 12,
+ "url": "https://zid.sa/en/partners/developers/blog/partner-payouts/",
+ "dir": "items/012-zid.sa",
+ "fetched_at": "2026-10-27T11:20:54Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://zid.sa/en/partners/developers/blog/partner-payouts/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 5399,
+ "cited_in": [
+  "re-render of a page held as an error text: 20261012T045101Z-q1-zid-sources"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "6daca6f0a7e2ed8be125c6db3854fef4d8c383d384fb442ac54b33cfd4f5ceed",
+ "raw_ext": "html"
+}
