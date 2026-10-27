@@ -72,16 +72,14 @@ def main(subj, phase):
     if problems:
         print("\n".join(problems))
         sys.exit(f"{len(problems)} problems: nothing joined")
+    out = {}                                           # every file is joined first, and written only if all join
     for name in FILES[phase]:
         parts = [(rd, os.path.join(base, rd, name)) for rd in rds if os.path.exists(os.path.join(base, rd, name))]
         if not parts:
             continue
-        out = os.path.join(subj, name)
         if name.endswith(".md"):
-            with open(out, "w", encoding="utf-8") as f:
-                for rd, p in parts:
-                    f.write(f"# {rd}\n\n" + open(p, encoding="utf-8").read().strip() + "\n\n")
-            print(f"{name}: {len(parts)} parts")
+            out[name] = ("".join(f"# {rd}\n\n" + open(p, encoding="utf-8").read().strip() + "\n\n" for rd, p in parts),
+                         f"{len(parts)} parts")
             continue
         head, body, seen = None, [], {}
         for rd, p in parts:
@@ -91,16 +89,18 @@ def main(subj, phase):
             if head is None:
                 head = lines[0]
             elif lines[0] != head:
-                sys.exit(f"{p}: its header differs from the first folder's")
+                sys.exit(f"{p}: its header differs from the first folder's: nothing joined")
             for l in lines[1:]:
                 key = l.split("\t")[0]                 # vp_id or variant_id: one folder's own
                 if key in seen:
-                    sys.exit(f"{p}: {key} is also in {seen[key]}'s file")
+                    sys.exit(f"{p}: {key} is also in {seen[key]}'s file: nothing joined")
                 seen[key] = rd
                 body.append(l)
-        with open(out, "w", encoding="utf-8") as f:
-            f.write(head + "\n" + "".join(l + "\n" for l in body))
-        print(f"{name}: {len(body)} rows from {len(parts)} folders")
+        out[name] = (head + "\n" + "".join(l + "\n" for l in body), f"{len(body)} rows from {len(parts)} folders")
+    for name, (text, said) in out.items():
+        with open(os.path.join(subj, name), "w", encoding="utf-8") as f:
+            f.write(text)
+        print(f"{name}: {said}")
 
 
 if __name__ == "__main__":

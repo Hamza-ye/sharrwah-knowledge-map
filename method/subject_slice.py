@@ -108,10 +108,24 @@ def show(subj, args):
     for a in it:
         if a not in opts:
             sys.exit(f"unknown option {a}")
-        opts[a] = next(it, "")
+        v = next(it, "").strip()
+        if not v or v.startswith("--"):
+            sys.exit(f"{a} needs a value")               # an empty value would print the whole slice
+        opts[a] = v
+    if opts["--what"] not in KEEP:
+        sys.exit(f"--what is one of {', '.join(KEEP)}")
+    if opts["--platform"] and opts["--platform"] not in PLATFORMS:
+        sys.exit(f"--platform is one of {', '.join(PLATFORMS)}")
     head, recs = rows(os.path.join(subj, "slices", rd, opts["--what"] + ".tsv"))
     if not head:
         sys.exit(f"no slice {rd}/{opts['--what']}.tsv: cut the slices first")
+    if opts["--bullet"]:
+        if "bullet" not in head:
+            sys.exit(f"{opts['--what']} have no bullet")
+        mine = decisions(subj).get(rd, set())
+        if opts["--bullet"] not in mine:
+            sys.exit(f"{rd}'s bullets are {', '.join(sorted(mine))}")
+    key = KEEP[opts["--what"]][0]                        # the id column: stmt_id, gap_id, absence_id or term
     want = {x.strip() for x in opts["--ids"].split(",") if x.strip()}
     print("\t".join(head))
     for r in recs:
@@ -119,7 +133,7 @@ def show(subj, args):
             continue
         if opts["--bullet"] and opts["--bullet"] not in {x.strip() for x in r.get("bullet", "").split(";")}:
             continue
-        if want and r.get(head[1 if opts["--what"] != "statements" else 3]) not in want:
+        if want and r.get(key) not in want:
             continue
         print("\t".join(r.get(h, "") for h in head))
 

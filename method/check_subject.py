@@ -42,6 +42,8 @@ PILOT_BULLETS = {"a": "ask", "b": "ask", "c": "ask", "d": "no-part", "e": "condi
                  "end-payment": "end", "end-payout": "end"}
 ROLES = {"ask", "conditions", "no-part", "end"}
 PLACEMENTS = {"where", "decides", "responsible", "boundary", "reason"}
+# What a value is taken per, under a "takes its value per" question (S-02's phase B brief, rule 4)
+PER_PHRASES = ["the store's own country", "a market the store sells into", "the buyer's country", "the whole store"]
 GAP_KINDS = {"page not read", "observation needed", "searched, not found", "stated only in general terms"}
 WHO = {"agent", "founder", "either", "capture"}   # capture: a run in observed-sh or observed-sa, through a handoff
 ACCESS = {"md", "raw", "rendered", "local"}
@@ -427,7 +429,7 @@ if vps is not None:
                 # a no-part statement (S-02's (g)) may raise a point of a question bullet of its own root decision
                 err("variation-points.tsv", i, f"raised_by {s} is not under bullet {v['bullet']}")
 if var is not None:
-    unique("variants.tsv", var, "variant_id", rf"^{SID}-V-\d{{3}}$")
+    unique("variants.tsv", var, "variant_id", rf"^{SID}-V-\d{{3,4}}$")
     seen = set()
     for r in var:
         i, plat = r["variant_id"], r["platform"]
@@ -477,6 +479,17 @@ if var is not None:
                     err("variants.tsv", i, f"{s} is not one of {plat}'s statements")
             if sids and all(s in stmts for s in sids) and not any(contained(r["variant"], stmts[s]["statement"]) for s in sids):
                 err("variants.tsv", i, "the variant is not a verbatim excerpt of any of its statements")
+            if "takes its value per" in vp.get(r["vp_id"], {}).get("question", ""):
+                # S-02's brief: under (f)'s "what X takes its value per", basis_evidence names what the value is
+                # taken per, in one of a fixed set of phrases; an answer resting on (g) alone names "the whole store"
+                named = [x for x in PER_PHRASES if x in r["basis_evidence"]]
+                only_nopart = sids and all(stmts.get(x, {}).get("bullets", set()) & NOPART
+                                           and not stmts[x]["bullets"] & ASK for x in sids if x in stmts)
+                if not named:
+                    err("variants.tsv", i, f"basis_evidence names none of {PER_PHRASES}")
+                elif only_nopart and "the whole store" not in named:
+                    err("variants.tsv", i, "an answer resting on a statement that a setting holds for the whole "
+                                           "store names 'the whole store' in basis_evidence")
             want = sorted({k for s in sids if s in kinds for k in kinds[s][0].split(";") if k})
             got = sorted({k.strip() for k in r["kind"].split(";") if k.strip()})
             if want and got != want:

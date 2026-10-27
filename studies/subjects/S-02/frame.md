@@ -111,7 +111,7 @@ The pilot's five steps, under Stage 4's changes (`PLAN.md`, Stage 4, and section
 | Step | Millions |
 | --- | --- |
 | Spent by 27 October, 03:00 UTC: the briefs' inspections, and phase A for all five platforms (measured) | 534 |
-| 1B, in nine parts, and its second pass | 150 to 300 |
+| 1B, in ten parts, and its second pass | 150 to 300 |
 | 1A2 and 1A3, where a root decision needs them | 50 to 100 |
 | 1C, per root decision | 90 to 150 |
 | Inspection of the later briefs | 15 to 30 |

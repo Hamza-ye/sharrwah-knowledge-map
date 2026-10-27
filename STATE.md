@@ -40,6 +40,6 @@ The checker finds every quote, 3,193 of them, and no error. With the briefs' ins
 
 **In flight:** a second, independent check of the phase B brief, with a dry run on Salla's statements.
 
-**Next:** phase B in nine parts ([`b/parts.tsv`](studies/subjects/S-02/b/parts.tsv)), two at a time, each a fresh agent reading only its part of its root decision's slice. Then gap-closing and the absence audit where a root decision needs them, phase B's second pass, and phase C.
+**Next:** phase B in ten parts ([`b/parts.tsv`](studies/subjects/S-02/b/parts.tsv)), two at a time, each a fresh agent reading only its part of its root decision's slice. Then gap-closing and the absence audit where a root decision needs them, phase B's second pass, and phase C.
 
 **To resume:** read `PLAN.md`, this file and `founder-decisions.tsv`.

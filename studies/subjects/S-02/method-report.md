@@ -75,5 +75,22 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 - **The frame's estimates were low.** It set 45 to 75 million for Zid, WooCommerce and BigCommerce, which cost 145 million, and 30 to 50 million to finish Shopify and Salla, which cost 135 million.
 
 **What changed for the next runs:**
-- **Phase B runs in nine parts** (`b/parts.tsv`), each a root decision's bullets, or one bullet for some of its platforms. Each part's size is counted in statement-bullet pairs before it runs, and its cost is measured after it.
+- **Phase B runs in parts** (`b/parts.tsv`), each a root decision's bullets, or one bullet for some of its platforms. Each part's size is counted in statement-bullet pairs before it runs, and its cost is measured after it.
 - **An inspector tries each brief on a sample before it runs.** For phase B, a dry run of 30 statements gives the rate each part's size is checked against.
+
+## 5. Phase B's brief, inspected twice, with a dry run (27 October)
+
+**What it cost:** the first inspection 2.3 million (22 requests), the second 4.8 million (38 requests).
+
+**What the second one found, by trying the brief on 29 of Salla's statement-bullet pairs:**
+- **The rules matched a question's X by its words.** Under (d), Salla's statements give one variation point or six, by how a reader takes "متاحة حاليًا في", "مدعوم في", "Primary markets" and "للعمل في". Under (a) they give three or about nine. About 23 of the 29 pairs needed a call the rules didn't settle. Two agents would not have reached the same points, and RD1's cap would have depended on the agent.
+- **A point raised in a later part needed rows for the earlier parts' platforms,** and the brief had the agent read their statements whole: up to 382 statements for the last part of RD3, uncounted in `parts.tsv`.
+- **A rule and the checker disagreed** on how a statement that a setting holds for the whole store is written as a variant.
+- **The dry run's rate** was about three statement-bullet pairs a request, all in.
+
+**What changed:**
+- **X matches by its role,** which each question fixes: one variation point per question under (a), (b), (d) and (e), and one per bound thing or setting under (c) and (f). Each platform's own words go in `x_words`. The brief now defines the store's own country, a setting of the store, and a market a store sells into, with what each excludes.
+- **What a value is taken per is named in one of four phrases,** which the checker reads, so the answers compare across platforms.
+- **Earlier parts' rows are found by search,** since each earlier part placed its statements under every question they answer. The searches are named in `notes-b.md`.
+- **The caps were set again** for points that match by role (`b/ranges.tsv`), and RD3's last part was split in two: ten parts.
+- **The slice printer refuses an empty or unknown option,** where it had printed the whole slice; the join writes nothing unless every file joins.
