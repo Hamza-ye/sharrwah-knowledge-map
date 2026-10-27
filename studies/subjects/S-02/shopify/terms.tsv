@@ -47,3 +47,7 @@ Contact information (store policy)	معلومات الاتصال		S02-SH-C2207;S
 location	الموقع	A location is any physical place where you sell products, fulfill orders, or stock inventory.	S02-SH-C2243;S02-SH-C2259
 customer notifications	إشعارات العملاء	Customer notifications are automated emails and SMS messages sent to customers about their orders, shipping updates, and account activity.	S02-SH-C2298;S02-SH-C2299
 abandoned checkouts	عمليات الدفع المتروكة		S02-SH-C2300;S02-SH-C2301
+Tax regions		Areas where your customers will pay tax, and where you will collect and remit.	S02-SH-C2405
+Duties and import taxes			S02-SH-C2409;S02-SH-C2424
+Pricing configuration		Manage how import fees are displayed to customers on storefront and checkout	S02-SH-C2415
+recipient countries			S02-SH-C2373
