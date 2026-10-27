@@ -1,7 +1,7 @@
 part	platform	groups	variation_points	status
 SH-1	shopify	the countries served; the store's data; a market; the buyer's address	S02-VP-03; S02-VP-19; S02-VP-27; S02-VP-69	done
-SH-2a	shopify	analytics and tracking; notifications to the merchant; store status	S02-VP-87; S02-VP-88; S02-VP-89; S02-VP-90; S02-VP-80; S02-VP-81	running
-SH-2b	shopify	contact information shown to buyers; locations; messages to buyers	S02-VP-79; S02-VP-78; S02-VP-82; S02-VP-83	to run
+SH-2a	shopify	analytics and tracking; notifications to the merchant; store status	S02-VP-87; S02-VP-88; S02-VP-89; S02-VP-90; S02-VP-80; S02-VP-81	done
+SH-2b	shopify	contact information shown to buyers; locations; messages to buyers	S02-VP-79; S02-VP-78; S02-VP-82; S02-VP-83	running
 SA-1	salla	the store's data; the store's defaults; the store's taxes; who sells to the buyer; returns and cancellations	S02-VP-19; S02-VP-18; S02-VP-16; S02-VP-63; S02-VP-64; S02-VP-65; S02-VP-66	done
 SA-2	salla	analytics and tracking; apps; notifications to the merchant; the store's address; the store's country; units and time zone	S02-VP-87; S02-VP-88; S02-VP-86; S02-VP-89; S02-VP-90; S02-VP-76; S02-VP-85; S02-VP-77	to run
 ZD-1	zid	taxes on the platform's fees; the countries served; who sells to the buyer; returns and cancellations; the store's address; the store's country	S02-VP-15; S02-VP-02; S02-VP-63; S02-VP-64; S02-VP-65; S02-VP-66; S02-VP-76; S02-VP-85	done
