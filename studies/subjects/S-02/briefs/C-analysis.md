@@ -5,6 +5,7 @@ This is `PLAN.md` Stage 4, subject S-02. You are one agent with one task: one pa
 **Read only this brief and, in `studies/subjects/S-02/`:**
 - `bullets.tsv`, the questions phase A asked of each platform;
 - your points' rows, printed by `method/point_view.py`;
+- once, the rows of S02-VP-26, what defines a market, for what each platform's market is (`point_view.py studies/subjects/S-02 RD2 S02-VP-26`);
 - the statements those rows cite, printed by id;
 - the platforms' terms, from your root decision's slice;
 - in `c/<root decision>/analysis.tsv`, only the rows of points your message names.
@@ -167,7 +168,7 @@ List every rule below that applies, each in exactly the words of the right-hand 
 Phase B's parts marked these as readings, and the coordinator listed them for you *(the coordinator's own, 27 October 2026)*. Each is a row as phase B wrote it. Compare it by the rules above, and say in `cause_reading` where the reading changes the cause.
 - **WooCommerce's channels as markets.** Rows under (f) cite Point of Sale, Google's channel visibility, and the store's allowed countries (S02-WC-278) as "a market". RD2's rows under S02-VP-26 define WooCommerce's market by its selling locations. Phase B noted S02-WC-359, Google's target countries, as not a market.
 - **Zid's sales channel as a market** (S02-V-791).
-- **The city and country a buyer picks in Zid's Region & Language popup,** read under (f) as the buyer's country.
+- **Zid's Region & Language popup** (S02-ZD-187). RD2 reads it as market selection: the buyer switches region. RD3's rows read the country and city it sets as the buyer's country (S02-V-764, S02-V-772, S02-V-781, S02-V-1090), and the buyer as who sets the language (S02-V-1089).
 - **Privacy law read as `every store`** (S02-V-218, S02-V-219).
 - **Rows that may give one answer twice:** S02-V-049 and S02-V-260 (BigCommerce), and S02-V-012 and S02-V-013 (Salla).
 - **S02-V-099:** its excerpt names "Stores with multiple languages enabled", while its statements are about any store's seller. Read its statements, not only its excerpt.

@@ -78,7 +78,7 @@ They are written out below, per platform, ready to send. The replies are the pla
 
 1. For a store whose country is Kuwait, the UAE, Oman, Bahrain, Qatar, Egypt or Syria, does Zid check the store's country and business address, and with which documents? (gap S02-ZD-G02)
 2. In each of those countries, which Zid company contracts with the merchant, and under which terms? For Egypt, zid.eg's terms name Zid Egypt. (S02-ZD-G03)
-3. Which tax do Zid's subscription and transaction fees carry for a store in each of those countries? (S02-ZD-G08)
+3. Which tax do Zid's subscription and transaction fees carry for a store in each of those countries? For Egypt, zid.eg's pricing gives its fees with VAT. (S02-ZD-G08)
 4. From which countries can a merchant not open a Zid store? (S02-ZD-G09)
 5. Is the markets feature offered on the Starter plan and on Zid Lite, and to stores outside Saudi Arabia? (S02-ZD-G07)
 6. Does a Zid store show its customers a cookie banner or cookie choices, and who sets them? (S02-ZD-G19)
