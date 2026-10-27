@@ -209,3 +209,23 @@ reread	S02-SA-026	salla	e		RD2-2, (e): Rule 4: a party that gates creating a mar
 reread	S02-SA-054	salla	e		RD2-2, (e): Rule 4: a party that gates creating a market, such as the account manager who switches the feature on, is its own answer under `who creates` and `who changes or removes`
 reread	S02-SA-055	salla	e		RD2-2, (e): Rule 4: a party that gates creating a market, such as the account manager who switches the feature on, is its own answer under `who creates` and `who changes or removes`
 reread	S02-SA-059	salla	e		RD2-2, (e): Rule 4: a party that gates creating a market, such as the account manager who switches the feature on, is its own answer under `who creates` and `who changes or removes`
+revisit	S02-V-471	shopify	e	S02-VP-27	last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2): was gap; leads under (e), which this task places or notes: S02-SH-1024;S02-SH-1025;S02-SH-689;S02-SH-703;S02-SH-704;S02-SH-706;S02-SH-707; A2 statements under this decision's other bullets, with their own tasks: none; A2 statements outside this decision's slice, left: S02-SH-1019;S02-SH-1020;S02-SH-1021;S02-SH-1022;S02-SH-1023;S02-SH-690;S02-SH-691;S02-SH-692;S02-SH-693;S02-SH-694;S02-SH-695;S02-SH-696;S02-SH-697;S02-SH-698;S02-SH-699;S02-SH-700;S02-SH-701;S02-SH-702;S02-SH-705; A2 gaps: S02-SH-G12; A2 absences: none
+revisit	S02-V-449	woocommerce	e	S02-VP-27	last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2): was not covered; leads under (e), which this task places or notes: S02-WC-269;S02-WC-270;S02-WC-513;S02-WC-514;S02-WC-515; A2 statements under this decision's other bullets, with their own tasks: none; A2 statements outside this decision's slice, left: S02-WC-271;S02-WC-272;S02-WC-273; A2 gaps: none; A2 absences: S02-WC-N01
+place	S02-BC-358	bigcommerce	e		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-BC-352	bigcommerce	g		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-BC-353	bigcommerce	g		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-BC-354	bigcommerce	g		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-BC-355	bigcommerce	g		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-BC-356	bigcommerce	g		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-BC-357	bigcommerce	g		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-SA-440	salla	e		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-SA-437	salla	g		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-SA-438	salla	g		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-SA-442	salla	g		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-SA-443	salla	g		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-SA-450	salla	g		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-SA-456	salla	g		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-SA-457	salla	g		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-SA-458	salla	g		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-SA-459	salla	g		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-SA-460	salla	g		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):

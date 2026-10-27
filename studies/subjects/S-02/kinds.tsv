@@ -998,6 +998,41 @@ S02-SH-996	stated	structures/shopify/help-center is built from run 20261016T2135
 S02-SH-997	stated	structures/shopify/help-center is built from run 20261016T213535Z-help-en-ar-html-md, which fetched pages
 S02-SH-998	stated	structures/shopify/help-center is built from run 20261016T213535Z-help-en-ar-html-md, which fetched pages
 S02-SH-999	stated	structures/shopify/help-center is built from run 20261016T213535Z-help-en-ar-html-md, which fetched pages
+S02-SH-1000	stated	run 20261006T215853Z-signup-bundles fetched pages
+S02-SH-1001	stated	run 20261006T215853Z-signup-bundles fetched pages
+S02-SH-1002	observed	run 20261006T232216Z-journey-signup-new-account records a store or session
+S02-SH-1003	stated	run 20261006T215853Z-signup-bundles fetched pages
+S02-SH-1004	stated	run 20261006T215853Z-signup-bundles fetched pages
+S02-SH-1005	stated	run 20261006T215853Z-signup-bundles fetched pages
+S02-SH-1006	observed	run 20261005T002448Z-journey-dev-store-region records a store or session
+S02-SH-1007	observed	run 20260930T025107Z-journey-buyer-checkout records a store or session
+S02-SH-1008	observed	run 20260930T025107Z-journey-buyer-checkout records a store or session
+S02-SH-1009	observed	run 20261008T030548Z-journey-delivery-option-generators records a store or session
+S02-SH-1010	observed	run 20261008T030548Z-journey-delivery-option-generators records a store or session
+S02-SH-1011	observed	run 20260930T025107Z-journey-buyer-checkout records a store or session
+S02-SH-1012	observed	run 20260930T025107Z-journey-buyer-checkout records a store or session
+S02-SH-1013	observed	run 20260930T025107Z-journey-buyer-checkout records a store or session
+S02-SH-1014	observed	run 20261008T030548Z-journey-delivery-option-generators records a store or session
+S02-SH-1015	observed	run 20261008T030548Z-journey-delivery-option-generators records a store or session
+S02-SH-1016	observed	run 20261008T030548Z-journey-delivery-option-generators records a store or session
+S02-SH-1017	observed	run 20261008T030548Z-journey-delivery-option-generators records a store or session
+S02-SH-1018	observed	run 20261005T004555Z-journey-vantage-fresh records a store or session
+S02-SH-1019	observed	structures/shopify/shop-request-details is built from a recorded session
+S02-SH-1020	observed	structures/shopify/shop-request-details is built from a recorded session
+S02-SH-1021	observed	structures/shopify/shop-request-details is built from a recorded session
+S02-SH-1022	observed	structures/shopify/shop-request-details is built from a recorded session
+S02-SH-1023	observed	structures/shopify/shop-request-details is built from a recorded session
+S02-SH-1024	stated	run 20260929T235133Z-admin-chunks-all fetched pages
+S02-SH-1025	stated	run 20260929T235133Z-admin-chunks-all fetched pages
+S02-SH-1026	observed	run 20261004T223401Z-journey-business-entity records a store or session
+S02-SH-1027	observed	run 20261004T223401Z-journey-business-entity records a store or session
+S02-SH-1028	observed	run 20260930T170204Z-journey-market records a store or session
+S02-SH-1029	stated	run 20260929T235133Z-admin-chunks-all fetched pages
+S02-SH-1030	stated	run 20260929T235133Z-admin-chunks-all fetched pages
+S02-SH-1031	stated	run 20260929T235133Z-admin-chunks-all fetched pages
+S02-SH-1032	stated	run 20260929T235133Z-admin-chunks-all fetched pages
+S02-SH-1033	stated	run 20260929T235133Z-admin-chunks-all fetched pages
+S02-SH-1034	stated	run 20260929T235133Z-admin-chunks-all fetched pages
 S02-SH-N01	shipped	structures/shopify/admin-graphql-schema holds https://shopify.dev/admin-graphql-direct-proxy/2026-10: the address is code or a schema the platform ships
 S02-SH-N02	shipped	structures/shopify/admin-graphql-schema holds https://shopify.dev/admin-graphql-direct-proxy/2026-10: the address is code or a schema the platform ships
 S02-SH-N03	shipped	structures/shopify/admin-graphql-schema holds https://shopify.dev/admin-graphql-direct-proxy/2026-10: the address is code or a schema the platform ships
@@ -1437,6 +1472,35 @@ S02-SA-433	observed	structures/salla/dashboard-translations is built from a reco
 S02-SA-434	observed	structures/salla/dashboard-translations is built from a recorded session
 S02-SA-435	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/en/article/: the address is a help centre's article
 S02-SA-436	observed	structures/salla/dashboard-translations is built from a recorded session
+S02-SA-437	observed	structures/salla/settings-center is built from a recorded session
+S02-SA-438	observed	structures/salla/settings-center is built from a recorded session
+S02-SA-439	observed	structures/salla/settings-center is built from a recorded session
+S02-SA-440	observed	run 20261009T110431Z-journey-storefront-guest-order-en records a store or session
+S02-SA-441	stated	run 20261008T115555Z-dashboard-bundles fetched pages
+S02-SA-442	stated	run 20261008T115555Z-dashboard-bundles fetched pages
+S02-SA-443	stated	run 20261008T120306Z-dashboard-bundles-chunks1 fetched pages
+S02-SA-444	observed	structures/salla/settings-center is built from a recorded session
+S02-SA-445	observed	structures/salla/settings-center is built from a recorded session
+S02-SA-446	observed	structures/salla/settings-center is built from a recorded session
+S02-SA-447	observed	structures/salla/settings-center is built from a recorded session
+S02-SA-448	observed	structures/salla/settings-center is built from a recorded session
+S02-SA-449	observed	structures/salla/settings-center is built from a recorded session
+S02-SA-450	observed	structures/salla/settings-center is built from a recorded session
+S02-SA-451	observed	structures/salla/dashboard-features is built from a recorded session
+S02-SA-452	observed	structures/salla/dashboard-features is built from a recorded session
+S02-SA-453	observed	structures/salla/dashboard-features is built from a recorded session
+S02-SA-454	observed	structures/salla/dashboard-features is built from a recorded session
+S02-SA-455	observed	structures/salla/settings-center is built from a recorded session
+S02-SA-456	observed	run 20261009T033607Z-sweep-settings-demo-en records a store or session
+S02-SA-457	stated	run 20261008T122604Z-dashboard-bundles-chunks3 fetched pages
+S02-SA-458	stated	run 20261008T121539Z-dashboard-bundles-chunks2 fetched pages
+S02-SA-459	observed	run 20261008T133523Z-sweep-demo-store-en records a store or session
+S02-SA-460	stated	run 20261008T121539Z-dashboard-bundles-chunks2 fetched pages
+S02-SA-461	stated	run 20261008T121539Z-dashboard-bundles-chunks2 fetched pages
+S02-SA-462	stated	structures/salla/help-articles holds ^https://help\.salla\.sa/article/: the address is a help centre's article
+S02-SA-N01	observed	structures/salla/settings-center is built from a recorded session
+S02-SA-N02	observed	structures/salla/settings-center is built from a recorded session
+S02-SA-N03	observed;stated	structures/salla/settings-center is built from a recorded session
 S02-WC-001	shipped	a file of the WooCommerce release
 S02-WC-002	shipped	a file of the WooCommerce release
 S02-WC-003	shipped	a file of the WooCommerce release
@@ -1949,6 +2013,18 @@ S02-WC-509	shipped	a file of the WooCommerce release
 S02-WC-510	shipped	a file of the WooCommerce release
 S02-WC-511	stated	the address is a docs, help or other page
 S02-WC-512	stated	the address is a docs, help or other page
+S02-WC-513	shipped	a file of the WooCommerce release
+S02-WC-514	shipped	a file of the WooCommerce release
+S02-WC-515	shipped	a file of the WooCommerce release
+S02-WC-516	shipped	a file of the WooCommerce release
+S02-WC-517	shipped	a file of the WooCommerce release
+S02-WC-518	shipped	a file of the WooCommerce release
+S02-WC-519	shipped	a file of the WooCommerce release
+S02-WC-520	shipped	a file of the WooCommerce release
+S02-WC-N01	shipped	a file of the WooCommerce release
+S02-WC-N02	shipped	a file of the WooCommerce release
+S02-WC-N03	shipped	a file of the WooCommerce release
+S02-WC-N04	shipped	a file of the WooCommerce release
 S02-ZD-001	official page	the address is a terms, policy, legal or pricing page
 S02-ZD-002	official page	the address is a terms, policy, legal or pricing page
 S02-ZD-003	official page	the address is a terms, policy, legal or pricing page
@@ -2751,5 +2827,12 @@ S02-BC-348	stated	the address is a help centre's article
 S02-BC-349	stated	the address is a help centre's article
 S02-BC-350	stated	the address is a help centre's article
 S02-BC-351	stated	the address is a docs, help or other page
+S02-BC-352	stated	the address is a help centre's article
+S02-BC-353	stated	the address is a help centre's article
+S02-BC-354	stated	the address is a help centre's article
+S02-BC-355	stated	the address is a help centre's article
+S02-BC-356	stated	the address is a help centre's article
+S02-BC-357	stated	the address is a help centre's article
+S02-BC-358	stated	the address is a help centre's article
 S02-BC-N01	stated	the address is a docs, help or other page
 S02-BC-N02	stated	the address is a docs, help or other page

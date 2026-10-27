@@ -459,3 +459,49 @@ reread	S02-ZD-217	zid	f		RD3-S8, (f): the coordinator's reading when the parts e
 reread	S02-ZD-219	zid	f		RD3-S8, (f): the coordinator's reading when the parts ended (27 October 2026): a store's legal pages other than its return and privacy policies are content it shows its buyers, of the kind storefront design (S02-VP-53, S02-VP-54)
 reread	S02-VP-91	all	f	S02-VP-91	RD3-S8, (f): the coordinator's ruling when the parts ended (27 October 2026): who sets "measurement and weight units, and time zone", raised as S02-VP-77's who-sets twin; give it a row for every platform
 reread	S02-VP-92	all	f	S02-VP-92	RD3-S8, (f): the coordinator's ruling when the parts ended (27 October 2026): who sets "apps", raised as S02-VP-86's who-sets twin; give it a row for every platform
+revisit	S02-V-1114	bigcommerce	f	S02-VP-92	last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2): was not covered; leads under (f), which this task places or notes: S02-BC-352;S02-BC-353;S02-BC-354;S02-BC-355;S02-BC-356;S02-BC-357;S02-BC-358; A2 statements under this decision's other bullets, with their own tasks: none; A2 statements outside this decision's slice, left: none; A2 gaps: none; A2 absences: none
+revisit	S02-V-1092	salla	f	S02-VP-65	last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2): was gap; leads under (f), which this task places or notes: S02-SA-382;S02-SA-437;S02-SA-439;S02-SA-443; A2 statements under this decision's other bullets, with their own tasks: S02-SA-377;S02-SA-378;S02-SA-379;S02-SA-380;S02-SA-381;S02-SA-386; A2 statements outside this decision's slice, left: S02-SA-376;S02-SA-383;S02-SA-384;S02-SA-385; A2 gaps: S02-SA-G13; A2 absences: S02-SA-N01
+revisit	S02-V-1094	salla	f	S02-VP-86	last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2): was gap; leads under (f), which this task places or notes: S02-SA-409;S02-SA-410;S02-SA-411;S02-SA-413;S02-SA-414;S02-SA-415; A2 statements under this decision's other bullets, with their own tasks: S02-SA-416; A2 statements outside this decision's slice, left: S02-SA-412; A2 gaps: S02-SA-G15; A2 absences: S02-SA-N03
+revisit	S02-V-1097	salla	f	S02-VP-89	last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2): was gap; leads under (f), which this task places or notes: S02-SA-438;S02-SA-439; A2 statements under this decision's other bullets, with their own tasks: S02-SA-417;S02-SA-418;S02-SA-419;S02-SA-420; A2 statements outside this decision's slice, left: none; A2 gaps: S02-SA-G14; A2 absences: S02-SA-N02
+revisit	S02-V-731	salla	f	S02-VP-76	last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2): was not covered; leads under (f), which this task places or notes: S02-SA-421;S02-SA-425; A2 statements under this decision's other bullets, with their own tasks: none; A2 statements outside this decision's slice, left: S02-SA-422;S02-SA-423;S02-SA-424; A2 gaps: S02-SA-G12; A2 absences: none
+revisit	S02-V-662	shopify	f	S02-VP-69	last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2): was gap; leads under (f), which this task places or notes: S02-SH-1007;S02-SH-1008;S02-SH-1009;S02-SH-1010;S02-SH-1011;S02-SH-1012;S02-SH-1013;S02-SH-1014;S02-SH-1015;S02-SH-1016;S02-SH-1017;S02-SH-1018;S02-SH-647;S02-SH-648;S02-SH-649;S02-SH-650;S02-SH-651;S02-SH-652;S02-SH-653;S02-SH-654;S02-SH-655;S02-SH-656;S02-SH-657;S02-SH-658;S02-SH-659;S02-SH-660;S02-SH-661;S02-SH-662;S02-SH-663;S02-SH-664;S02-SH-665;S02-SH-666;S02-SH-667;S02-SH-668;S02-SH-669;S02-SH-670;S02-SH-671;S02-SH-672;S02-SH-673;S02-SH-674;S02-SH-675;S02-SH-676;S02-SH-677;S02-SH-678;S02-SH-679;S02-SH-680;S02-SH-681;S02-SH-682;S02-SH-683;S02-SH-684;S02-SH-685;S02-SH-686;S02-SH-687;S02-SH-688; A2 statements under this decision's other bullets, with their own tasks: none; A2 statements outside this decision's slice, left: none; A2 gaps: S02-SH-G11; A2 absences: none
+revisit	S02-V-930	woocommerce	f	S02-VP-64	last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2): was not covered; leads under (f), which this task places or notes: none; A2 statements under this decision's other bullets, with their own tasks: S02-WC-274;S02-WC-275;S02-WC-277; A2 statements outside this decision's slice, left: none; A2 gaps: none; A2 absences: S02-WC-N02
+revisit	S02-V-943	woocommerce	f	S02-VP-73	last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2): was not covered; leads under (f), which this task places or notes: S02-WC-397;S02-WC-398;S02-WC-399;S02-WC-400; A2 statements under this decision's other bullets, with their own tasks: none; A2 statements outside this decision's slice, left: none; A2 gaps: none; A2 absences: S02-WC-N03
+revisit	S02-V-944	woocommerce	f	S02-VP-74	last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2): was not covered; leads under (f), which this task places or notes: S02-WC-397;S02-WC-398;S02-WC-399;S02-WC-400; A2 statements under this decision's other bullets, with their own tasks: none; A2 statements outside this decision's slice, left: none; A2 gaps: none; A2 absences: S02-WC-N03
+revisit	S02-V-956	woocommerce	f	S02-VP-86	last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2): was not covered; leads under (f), which this task places or notes: S02-WC-416;S02-WC-417;S02-WC-418;S02-WC-419;S02-WC-420;S02-WC-421;S02-WC-422; A2 statements under this decision's other bullets, with their own tasks: none; A2 statements outside this decision's slice, left: none; A2 gaps: none; A2 absences: S02-WC-N04
+revisit	S02-V-789	zid	f	S02-VP-65	last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2): was not covered; leads under (f), which this task places or notes: S02-ZD-212;S02-ZD-213;S02-ZD-214;S02-ZD-215;S02-ZD-216;S02-ZD-217;S02-ZD-218;S02-ZD-219;S02-ZD-221;S02-ZD-222; A2 statements under this decision's other bullets, with their own tasks: none; A2 statements outside this decision's slice, left: S02-ZD-220; A2 gaps: S02-ZD-G22; A2 absences: none
+revisit	S02-V-870	zid	f	S02-VP-85	last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2): was not covered; leads under (f), which this task places or notes: S02-ZD-226; A2 statements under this decision's other bullets, with their own tasks: none; A2 statements outside this decision's slice, left: none; A2 gaps: S02-ZD-G01;S02-ZD-G23; A2 absences: none
+place	S02-BC-352	bigcommerce	g		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-BC-353	bigcommerce	g		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-BC-354	bigcommerce	g		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-BC-355	bigcommerce	g		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-BC-356	bigcommerce	g		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-BC-357	bigcommerce	g		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-SA-444	salla	f		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-SA-445	salla	f		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-SA-446	salla	f		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-SA-447	salla	f		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-SA-448	salla	f		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-SA-449	salla	f		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-SA-456	salla	f		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-SA-457	salla	f		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-SA-458	salla	f		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-SA-459	salla	f		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-SA-460	salla	f		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-SA-461	salla	f		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-SA-462	salla	f		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-SA-437	salla	g		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-SA-438	salla	g		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-SA-442	salla	g		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-SA-443	salla	g		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-SA-450	salla	g		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-SA-456	salla	g		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-SA-457	salla	g		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-SA-458	salla	g		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-SA-459	salla	g		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-SA-460	salla	g		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-SH-1030	shopify	f		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-SH-1034	shopify	f		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-WC-517	woocommerce	f		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-WC-519	woocommerce	f		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):
+place	S02-WC-520	woocommerce	f		last round (27 October, after A2-T, A2-SH-H, A2-SA-H, A2-SA-S and A3-2):

@@ -56,6 +56,8 @@ shopify	targeted SMS countries	بلدان SMS المستهدفة
 shopify	supported regions	المناطق المدعومة	
 shopify	region-specific requirements	المتطلبات الخاصة بالمنطقة	
 shopify	Country or region	البلد أو المنطقة	
+shopify	signup country		
+shopify	primary business entity		
 salla	الأسواق المتعددة	Multiple markets	ميزة الأسواق المتعددة تمكنك من إنشاء نسخ مخصصة من متجرك الإلكتروني لكل دولة تستهدفها أو منطقة أو مدينة، بما يضمن ظهور المتجر للعملاء في هذه المنطقة بتجربة تتوافق مع توقعاتهم المحلية.
 salla	المعلومات الأساسية حول السوق	Basic information about the market	
 salla	العملات	Currencies	
@@ -95,6 +97,8 @@ salla	store-country		اختر الدولة التي تصدر منها وثائق
 salla	البيع بالنيابة (MoR)	Merchant of Record (MoR)	
 salla	اللغة الافتراضية	Default language	اللغة الافتراضية للمتجر: هي اللغة التي ستُعتمد في التعريف الأساسي لأقسام المتجر (واجهات - قوائم - منتجات - تصنيفات - الفروع - العروض - الإعلانات - ..).
 salla	الدول المدعومة	Supported countries	
+salla	kyc_country		
+salla	scopes		
 zid	الأسواق (خاصية الأسواق)		تتيح خاصية الأسواق للتاجر إدارة أسعار المنتجات وتوفّرها حسب كل سوق جغرافي بشكل مستقل.
 zid	سوق جغرافي		
 zid	السوق الافتراضي		السوق الافتراضي وهو السوق المحلي بشكل تلقائي
