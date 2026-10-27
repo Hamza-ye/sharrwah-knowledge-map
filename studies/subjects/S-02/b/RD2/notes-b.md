@@ -166,3 +166,52 @@ None of salla's statements under (g) says that the platform has no market of the
 - S02-ZD-160 (e): a warehouse's sales channels, 'إما المتجر الإلكتروني أو زد كاشير' (my translation: either the online store or Zid Cashier): locations, under (f); states no definer, limit or party for a market
 
 zid has no statement under (g) in RD2's slice.
+
+### woocommerce: statements noted under (e)
+
+woocommerce has no markets feature. Its selling locations, 'Selling location(s)', the countries the store sells to, pass the role test and are placed (S02-V-448 to S02-V-452). Its shipping locations and shipping zones are shipping, under (f): a shipping zone 'is a geographic region where a certain set of shipping methods and rates apply' (S02-WC-217), and the shipping locations are the countries the store ships to. They fail the role test, as RD2-1 held for shopify's shipping zones (S02-SH-235).
+
+- S02-WC-016 (e): the settings tab's label 'General'; answers none of (e)'s questions
+- S02-WC-019 (e): 'Choose which countries you want to ship to, or choose to ship to all locations you sell to.': the shipping locations, shipping under (f); X fails the role test
+- S02-WC-020 (e): the filter 'woocommerce_countries_allowed_countries'; a filter alone names no party (rule 4), and it states no definer or limit for a market
+- S02-WC-021 (e): the filter 'woocommerce_countries_shipping_countries', on the countries the store ships to: shipping, under (f); a filter alone names no party
+- S02-WC-030 (e): 'Returns an array of countries and codes.': the list of all countries; answers none of (e)'s questions
+- S02-WC-031 (e): 'Country codes and names should follow the Unicode CLDR recommendation'; answers none of (e)'s questions
+- S02-WC-032 (e): the filter 'woocommerce_countries', on the list of all countries; answers none of (e)'s questions
+- S02-WC-096 (e): the label 'Shipping zones'; answers none of (e)'s questions
+- S02-WC-097 (e): 'The shipping zones API allows you to create, view, update, and delete individual shipping zones.': shipping zones, shipping under (f); X fails the role test
+- S02-WC-098 (e): 'The shipping zone locations API allows you to view and batch update locations of a shipping zone.': shipping, under (f); X fails the role test
+- S02-WC-124 (e): 'The WooCommerce countries class stores country/state data.'; answers none of (e)'s questions
+- S02-WC-131 (e): 'Get countries that the store ships to.': shipping, under (f); X fails the role test
+- S02-WC-132 (e): 'If shipping is disabled, return an empty array.': shipping, under (f); X fails the role test
+- S02-WC-133 (e): 'Default to selling countries.', the default of the countries the store ships to: shipping, under (f); X fails the role test
+- S02-WC-134 (e): the option 'woocommerce_specific_ship_to_countries': shipping, under (f); X fails the role test
+- S02-WC-152 (e): the address locales of the allowed and shipping countries ('array_merge( $this->get_allowed_countries(), $this->get_shipping_countries() )'): the buyer's address, under (f); states no definer, limit or party for a market
+- S02-WC-156 (e): a code comment on the address's country field, with its reason, and 'Merchants who sell to a single country should use "Sell to specific countries" instead.': the buyer's address, under (f); states no definer, limit or party for a market
+- S02-WC-172 (e): 'Shipping location(s): Choose to ship to only the countries you sell to or a subset of countries.': shipping, under (f); X fails the role test
+- S02-WC-181 (e): 'you can accept payments from customers anywhere in the world in over 100 supported currencies': WooPayments' payments; states no definer, limit or party for a market
+- S02-WC-210 (e): the shipping zone's properties ('Shipping zone name', 'Shipping zone order'): shipping, under (f); X fails the role test
+- S02-WC-211 (e): the shipping zone location's properties ('Options: postcode, state, country and continent. Default is country.'): shipping, under (f); X fails the role test
+- S02-WC-216 (e): 'A shipping zone consists of the region(s) you'd like to ship to and the shipping method(s) offered.': shipping, under (f); X fails the role test
+- S02-WC-217 (e): 'A shipping zone is a geographic region where a certain set of shipping methods and rates apply.': shipping, under (f); X fails the role test
+- S02-WC-218 (e): the zone 'Rest of the world', 'An optional zone you can use to set the shipping method(s) available to any regions that have not been listed above.': shipping, under (f); X fails the role test
+- S02-WC-219 (e): 'List the regions you\'d like to include in your shipping zone.': shipping, under (f); X fails the role test
+- S02-WC-220 (e): a shipping zone that 'will not be matched because "%1$s" covers the same region earlier in the list': shipping, under (f); X fails the role test
+
+### woocommerce: statements noted under (g)
+
+None of woocommerce's statements under (g) says that the platform has no market of the kind in (e). Each says that a setting holds for the whole store, which is RD3's half.
+
+- S02-WC-017 (g): 'select the currency your shop will use for sales': a setting that holds for the whole store, RD3's half
+- S02-WC-025 (g): 'If you’d like to display products in different currencies ... you will need to add a multi-currency extension/plugin.': currency, a setting that holds for the whole store, RD3's half
+- S02-WC-085 (g): 'WooCommerce only allows for one base currency per store.': a setting that holds for the whole store, RD3's half
+- S02-WC-086 (g): 'This controls what currency prices are listed at in the catalog and which currency gateways will take payments in.': a setting that holds for the whole store, RD3's half
+- S02-WC-087 (g): 'Each WooCommerce store can set one base currency.': a setting that holds for the whole store, RD3's half
+- S02-WC-088 (g): 'Changing your base currency changes which currency your store displays and charges in.': a setting that holds for the whole store, RD3's half
+- S02-WC-089 (g): the option 'woocommerce_currency', with ''default' => 'USD'': a setting that holds for the whole store, RD3's half
+- S02-WC-175 (g): 'Currency: Sets your store’s default currency. Only one currency may be selected.': a setting that holds for the whole store, RD3's half
+- S02-WC-176 (g): 'Currency position: Choose the default position of the currency symbol for prices': a setting that holds for the whole store, RD3's half
+- S02-WC-177 (g): 'Thousand separator: Choose which symbol to use for the thousand separator': a setting that holds for the whole store, RD3's half
+- S02-WC-178 (g): 'Decimal separator': a setting that holds for the whole store, RD3's half
+- S02-WC-179 (g): 'Number of decimals': a setting that holds for the whole store, RD3's half
+- S02-WC-207 (g): 'taxes are always calculated based on your store’s location, regardless of the customer’s address': a setting that holds for the whole store, RD3's half

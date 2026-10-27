@@ -30,3 +30,5 @@ Enabled currencies			S02-WC-C243
 Price rounding			S02-WC-C247
 Charm pricing		Charm pricing (also called psychological pricing) can optionally reduce the converted product price by either 0.01 or 0.05.	S02-WC-C248
 Stripe Account Country		“Stripe Account Country” means the country or region User selected when opening User’s Stripe Account and is the country or region where User's business address, as reflected in User’s account details, is located, or, in the case of an individual, the country or region where User is doing business.	S02-WC-C292
+European User		If you are a user in countries located in the European Economic Area, Switzerland, or the United Kingdom (“European User”), some special terms apply to you as mentioned below.	S02-WC-C324
+billing country			S02-WC-C325
