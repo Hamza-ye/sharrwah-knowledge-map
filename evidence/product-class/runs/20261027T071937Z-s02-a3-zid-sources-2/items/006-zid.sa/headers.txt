@@ -1,0 +1,19 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Tue, 27 Oct 2026 07:19:40 GMT
+content-type: application/javascript; charset=UTF-8
+vary: RSC, Next-Router-State-Tree, Next-Router-Prefetch, Accept, Accept-Encoding
+cache-control: public, max-age=31536000, immutable
+accept-ranges: bytes
+last-modified: Mon, 26 Oct 2026 11:08:19 GMT
+etag: W/"30db9-1a177e59cb8"
+content-encoding: gzip
+age: 69841
+cf-cache-status: HIT
+set-cookie: __cf_bm=McN7A4LVrUZ_r5tSOCS077X83SSypM3pbAsIysdHyxA-1793085580.5913346-1.0.1.1-91GQjr0n.I.ReuSYP7OLqWMOxSV.g3mDo_RXpmGuw9UFRXR9A2FOCR50d..B3V.04J.d.Oq3KuOkgBzatydKEnvARSqqGz3dKNLpyU_ksmvlxey6YkM_45Dv0S28lPbV; HttpOnly; SameSite=None; Secure; Path=/; Domain=zid.sa; Expires=Tue, 27 Oct 2026 07:49:40 GMT
+set-cookie: _cfuvid=OHw._IqSnj9po_r76SzUcyBxz1.FMJs4uj0myJ7OAkI-1793085580.5913346-1.0.1.1-wC1xbimEa6Z82kt6KN.m5vtQAo8uGUZenMfza1uivVQ; HttpOnly; SameSite=None; Secure; Path=/; Domain=zid.sa
+strict-transport-security: max-age=0; includeSubDomains
+server: cloudflare
+cf-ray: a50fef0ea8d316cb-IAD
+
