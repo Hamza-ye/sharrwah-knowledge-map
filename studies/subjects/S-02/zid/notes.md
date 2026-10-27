@@ -364,3 +364,93 @@ Item numbers are those of 20261012T045101Z-q1-zid-sources unless another run is 
 #### Check on a copy
 
 `python3 -I method/check_subject.py` on a copy at /tmp/claude-0/-home-user/9f45def8-b710-5f9c-84f3-6a0fa7e617c8/scratchpad/s02-a2-zd-3/check/S-02, output in /tmp/claude-0/-home-user/9f45def8-b710-5f9c-84f3-6a0fa7e617c8/scratchpad/s02-a2-zd-3/check/out (2026-10-27): no line of level error; 366 statements, 21 gaps; 537 quotes found and 22 unresolved; 42 lines of level pending capture, the live citations S02-ZD-C479 to S02-ZD-C493, S02-ZD-C502 to S02-ZD-C505 and S02-ZD-C526 to S02-ZD-C528, and the statements S02-ZD-293 to S02-ZD-305, S02-ZD-313 to S02-ZD-316 and S02-ZD-337 to S02-ZD-339 that cite them.
+
+## ZD-4: S02-ZD-G03 audited again (2026-10-27)
+
+S02-ZD-G03 audited again under `studies/subjects/S-02/briefs/A3-absence-audit.md`. The morning's audit confirmed it on S02-ZD-179 and S02-ZD-180, which quote the raw HTML of https://zid.eg/ar/legal/terms-conditions/; the page as shown is another contract. The held corpus now includes 20261027T112044Z-zid-rerender, Zid's pages rendered with the fix; only rendered text is quoted (`A-one-platform.md`, "Reading a live page"). G03's row in `absence-audit.tsv` replaces the morning's, and says so; S02-ZD-179 and S02-ZD-180 are left as they are, and nothing is built on them.
+
+### What was found
+
+- **S02-ZD-G03: partly contradicted.**
+  - **Contradicted for Egypt, for the platform at www.zid.eg.** zid.eg's Terms as rendered (item 022; heading الشروط والأحكام, زد مصر) are an agreement between the subscriber and شركة زد مصر, under the laws of the Arab Republic of Egypt, with the exclusive jurisdiction of the competent Egyptian courts and every payment in Egyptian pounds, subject to VAT. zid.eg's privacy policy, which the Terms make part of the entire agreement, names زد مصر as the data controller, its country جمهورية مصر العربية.
+  - **What stands:** the contracting party and the terms for a merchant in the UAE, Oman, Bahrain, Qatar and Syria, and in Kuwait outside Zid Pay. The country pages of the UAE, Syria, Kuwait and Oman name no contracting party and no terms. Their footers, like zid.sa/en/egypt's, name the company and registration of zid.sa's footer (S02-ZD-354). The held ones (Egypt, the UAE, Syria) link Terms & Conditions to zid.sa's /en/legal/terms-conditions/; zid.eg's pages link الشروط والأحكام to zid.eg's /ar/legal/terms-conditions/. Of the gap's route, the question to Zid remains for the countries other than Egypt.
+- **Statements added:** S02-ZD-367 to S02-ZD-395, with citations S02-ZD-C560 to S02-ZD-C599. No gap, absence or term was added. Each statement's note names S02-ZD-G03. By source and bullet:
+  - **zid.eg's Terms, held rendered** (item 022). Where the English Terms at zid.eg/en/legal/terms-conditions/ give the same clause, they are cited second (read live):
+    - (c) the contracting party, شركة زد مصر, for the platform available at www.zid.eg: S02-ZD-367. It takes the role S02-ZD-179 had.
+    - (c;h) for whom the Terms are meant: users in the places where the Services are lawful. Whoever reaches the platform from outside Egypt answers for the local laws: S02-ZD-368. Its `conditions` name the other statements from these Terms.
+    - (c) Zid Egypt's subscription plans (S02-ZD-369); the payment methods it accepts (S02-ZD-370); all payments in Egyptian pounds, subject to VAT (S02-ZD-371); the right of withdrawal under Egypt's Consumer Protection Law No. 181 of 2018 (S02-ZD-372).
+    - The store's obligations under 7.1:
+      - (a;c) (أ) and (ب), among them compliance with the Egyptian laws governing its commercial activity: S02-ZD-373;
+      - (c) (ج) and (د), its obligations to end customers under Egyptian law: S02-ZD-374.
+    - (c) Zid Egypt is not a party to the store's transactions (S02-ZD-375). The platform is to be used only under the Terms and Egyptian law (S02-ZD-376).
+    - (c) settling disputes: amicably for at least 15 days, the Consumer Protection Agency, then the Egyptian courts (S02-ZD-377 to S02-ZD-379).
+    - (a;c) the laws of the Arab Republic of Egypt (S02-ZD-380) and the exclusive jurisdiction of the Egyptian courts (S02-ZD-381). Together they take the role S02-ZD-180 had.
+    - (c) the entire agreement: the Terms, the privacy policy and the other policies published on the platform (S02-ZD-382).
+  - **zid.eg's privacy policy, read live:**
+    - (c) the data controller, زد مصر, with its country (S02-ZD-383);
+    - (c) Egypt's Personal Data Protection Law No. 151 of 2020 (S02-ZD-384);
+    - (c) personal data that may be moved and processed outside Egypt (S02-ZD-385).
+  - **Country pages:**
+    - (d) the heroes of the Kuwait and Oman pages (S02-ZD-386, S02-ZD-387) and the Oman page's heading naming Zid Oman (S02-ZD-388), all read live.
+    - (c;h) the subscription prices, with conditions S02-ZD-057 like S02-ZD-347 to S02-ZD-353:
+      - Egypt in EGP: S02-ZD-389, S02-ZD-390 (held, item 006);
+      - Syria in $: S02-ZD-391, S02-ZD-392 (held, item 020);
+      - the UAE (held, item 021), Kuwait and Oman (live) in SAR: S02-ZD-393, S02-ZD-394.
+    - (h) the Zid Payments gateway line under Rise on the UAE, Kuwait and Oman pages: S02-ZD-395, with S02-ZD-130's conditions.
+- **The (h) exception:** S02-ZD-350 to S02-ZD-353 condition S02-ZD-057, the fees' currency. They now also name S02-ZD-369 and S02-ZD-371.
+- **Read, not recorded:**
+  - in zid.eg's Terms: 1.2, 2, 3 (intellectual property under Egypt's copyright law), 4, 5.4 to 5.6, 6.2 to 6.4, 7.3, 8.2, 9 to 12, 15 to 18 (liability, indemnity, electronic communications, the disclaimer; 15, 17 and 18 name Egyptian law), 19.2 to 19.5, and 20 (زد مصر's contact: www.zid.eg, info@zid.eg, 01204365750);
+  - the privacy policy's other sections;
+  - the country pages' plan features other than the Zid Payments line, and their partners, testimonials and FAQs;
+  - the footers of the country pages, the same as zid.sa's (S02-ZD-354);
+  - lines already recorded: the heroes of the Egypt, UAE and Syria pages and of zid.eg's home page (S02-ZD-061, S02-ZD-137, S02-ZD-138, S02-ZD-184), Syria's partner and first FAQ answer (S02-ZD-139, S02-ZD-140), and zid.eg's footer (S02-ZD-355).
+
+### Documents read, in order (2026-10-27)
+
+1. Held, rendered, in `evidence/product-class/runs/20261027T112044Z-zid-rerender/items/` at 03058e9504f85ad4d6d5592dad35a7135d17ed7a:
+   - read in full: 022-zid.eg (zid.eg/ar/legal/terms-conditions/), then 024-zid.eg (zid.eg/ar/), 006-zid.sa (zid.sa/en/egypt/), 020-zid.sa (zid.sa/en/syria/) and 021-zid.sa (zid.sa/en/uae/);
+   - their `rendered.html`, for the footers' links and the Syria page's FAQ answers;
+   - read in passages: 003-zid.sa and 010-zid.sa (zid.sa's Terms, in Arabic and English: the entity, the governing law, the countries);
+   - read in passages naming an entity, a governing law or Egypt: 002, 004, 005, 007, 008, 009, 011, 012, 016 and 019;
+   - read in passages around Kuwait: 013-zid.sa and 018-zid.sa (zid.sa's payments pages).
+2. Live, not held, after `method/held_index.py`, rendered through `method/capture/page_text.mjs`. Each was read in full:
+   - https://zid.eg/en/legal/terms-conditions/ and https://zid.eg/ar/legal/privacy-policy/, linked from zid.eg's Terms page;
+   - https://zid.sa/en/kuwait/ and https://zid.sa/en/oman/, listed in the site index (S02-ZD-006) and linked from the country pages' footers.
+
+   Not read: the country pages' Arabic twins (zid.sa/ar/kuwait/, /ar/oman/, /ar/syria/, /ar/uae/; not held).
+
+### Searches, and how they were narrowed
+
+- The four searches in G03's row listed 9, 18, 13 and 8 documents, none past its cap. None needed narrowing.
+- These were listed and not read again:
+  - help.zid.sa about-zid-egypt (080): read in full by the audit's first part, S02-ZD-060 to S02-ZD-064;
+  - the help centre's home (074), which lists articles;
+  - docs.zid.sa get-manager-profile, list-of-orders, list-store-delivery-options, list-store-locations, localization and countries-list: their matches are fields and lists of countries in addresses and orders;
+  - the help pages activate-online-payments (085), store-language (159) and whatsapp-templates (170): read by the audit's first part;
+  - zid.sa's and zid.eg's pricing pages (20261027T111455Z-s02-a2-sources-batch-1, items 006 and 008): read by ZD-3.
+
+### Problems with the method
+
+- `corpus_search.py` matches a captured page on its rendered text and its raw HTML together, and doesn't say which matched.
+  - For zid.eg's Terms (022), شركة القدرة التقنية and the names of the Gulf countries and Syria match only in the raw HTML, which holds the Saudi Terms.
+  - The listing's title for 022 is zid.sa's generic one, "Zid | Create your online store with modern retail services".
+- **Rendered as an error text:** zid.sa/en/partners/developers/blog/partner-payouts/ (item 012) shows only "Oops! Page not found". It is in the morning's row as read from its raw page. It was not read from the raw file; the coordinator can render it again.
+- **FAQ answers that aren't held:**
+  - The Syria page's answers past the first are in neither its rendered text nor its rendered HTML. One of them is "Do I need a commercial registration to sign up with Zid Syria?".
+  - The payments pages' FAQ answers are not in their rendered text, among them هل تتوفر هذه الخدمة في دول الخليج؟.
+
+  A click on the live page would show them (an observation).
+- S02-ZD-179 and S02-ZD-180 cite https://zid.eg/ar/legal/terms-conditions/. That URL is also held in 20261027T065700Z-s02-a3-zid-sources, as the raw page, so the checker still finds their quotes.
+- **How the quotes were tested:**
+  - the 23 held quotes with `quote_check.py --batch` against the runs: all found;
+  - the 17 live ones with `quote_check.py`'s `norm`, against the working copies in the scratch folder.
+- HEAD moved during the run, from 1ec04669da5d16dd93b41ae6a917507fdec16117 through 03058e9504f85ad4d6d5592dad35a7135d17ed7a to 87d8bf841040918f5bff260e3189ccfa7e0ce297. Held paths are cited at 03058e95…, the commit `corpus_search.py` printed. The run's files are the same at all three.
+
+### Check on a copy
+
+`python3 -I method/check_subject.py` was run on a copy holding only `bullets.tsv` and `zid/`, at /tmp/claude-0/-home-user/9f45def8-b710-5f9c-84f3-6a0fa7e617c8/scratchpad/s02-zd-4/check/S-02, with output in /tmp/claude-0/-home-user/9f45def8-b710-5f9c-84f3-6a0fa7e617c8/scratchpad/s02-zd-4/check/out (2026-10-27).
+- No line of level `error`.
+- 395 statements and 21 gaps; 582 quotes found and 17 unresolved.
+- 23 lines of level `pending capture`:
+  - the live citations S02-ZD-C561, S02-ZD-C563, S02-ZD-C567, S02-ZD-C577, S02-ZD-C579, S02-ZD-C581 to S02-ZD-C586, S02-ZD-C592, S02-ZD-C593, S02-ZD-C595, S02-ZD-C596, S02-ZD-C598 and S02-ZD-C599;
+  - the statements S02-ZD-383 to S02-ZD-388, whose first citation is live.
