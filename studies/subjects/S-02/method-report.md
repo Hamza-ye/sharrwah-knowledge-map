@@ -345,6 +345,6 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 
 **What SA-2 taught, and Salla's gap-closing as a whole:**
 - **Salla's gap-closing is complete:** two parts, 15 rows, 8 of them with no gap left, and 118 statements (S02-SA-319 to S02-SA-436), for 32.5 million. Everything read was held in observed-sa, so nothing needed capturing.
-- **Some of Salla's settings take a value per country of their own,** apart from its markets: an app's supported countries, from seven (S02-SA-409 to S02-SA-412), and a digital card's codes per "store country" (S02-SA-426 to S02-SA-429). Whether they follow the store's country or its markets is one of the four gaps.
+- **Some of Salla's settings take a value per country of their own,** apart from its markets: an app's supported countries, from seven (S02-SA-409 to S02-SA-412), and a digital card's codes per "store country" (S02-SA-426 to S02-SA-429). Whether an app's supported countries are matched against the store's country or its markets is one of the four gaps (G09).
 - **A kind whose words are country words makes the second search repeat the first.** For the store's country, `--with country countries` returned the first search's documents, so the part ran it with the market words only.
 
