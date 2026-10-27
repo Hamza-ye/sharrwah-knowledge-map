@@ -57,7 +57,7 @@ Statements under (h) are conditions, not variants: a variant rests on at least o
    | (c) | `what decides "X"` | a thing the platform binds, of one of the kinds below | what decides it: the store's own country as a field or record holds it, the merchant's residence, the business's registered country, a business entity |
    | (d) | `what countries fill "X"`; `what countries are kept out of "X"` | where the platform serves merchants, in its words | a list of countries, as the platform states or shows it |
    | (e) | `what defines "X"`; `what limits "X"`; `who creates "X"`; `who changes or removes "X"` | a market a store sells into | a country, region, city, group of customers, location, channel or storefront; the limit; the party |
-   | (f) | `what "X" takes its value per`; `who sets "X"` | a setting of the store, of one of the kinds below | what its value is taken per; the platform or the seller |
+   | (f) | `what "X" takes its value per`; `who sets "X"` | a setting of the store, of one of the kinds below | what its value is taken per; the party that sets it: the seller, the platform, the buyer, or a third party the statement names, such as a provider or an app |
 
    **The store's own country** is the country, address or jurisdiction the platform holds as where the store, or its merchant, is based, registered or resident. It includes what the platform calls the store's country, location or country of operation, the merchant's country of residence, and the country of the merchant's tax registration, unless the statement or the platform's own term ties that registration to a market the store sells into. It isn't:
    - a place the store ships from, sells at, or keeps stock in, such as a pickup point, a branch, a warehouse or a shipping origin. The statement's own words decide: a location they say orders ship from, or stock is kept in, is one of these, whatever the platform calls it;
@@ -103,7 +103,7 @@ Statements under (h) are conditions, not variants: a variant rests on at least o
    - privacy and consent: cookie consent, and the privacy settings shown to buyers;
    - store status: whether the store is open or in maintenance.
 
-   **Kinds, under (c) and (f).** A default and the options it is chosen from are one kind, such as a store's default currency and the currencies it supports. A thing or setting that fits none of the kinds raises a new kind: name it in `x_words`, and list it in `notes-b.md`.
+   **Kinds, under (c) and (f).** A default and the options it is chosen from are one kind, such as a store's default currency and the currencies it supports. A thing that sets two kinds at once, such as a catalog that sets both which products are offered and their prices, goes under both. A thing or setting that fits none of the kinds raises a new kind: name it in `x_words`, and list it in `notes-b.md`.
 2. **Candidates.** Each statement under one of your part's bullets that answers one of that bullet's questions gives one candidate per question and per X it answers, with its X quoted from it. A statement that names several settings, such as design, prices and currency, gives a candidate for each.
    - **The role test** applies to X itself: X must be in the question's role, as rule 1 gives it. "Market", "country" and "region" name different things on different platforms, so the test rests on what the statement says X is, not on its words.
    - **A candidate whose X passes the role test is a facet** of its root decision (`PLAN.md`, Stage 4).
@@ -141,6 +141,7 @@ Statements under (h) are conditions, not variants: a variant rests on at least o
    - **What a value is taken per.** Under (f)'s `what "X" takes its value per`, `basis_evidence` names what the setting's value differs by, as the statement shows it, in one of four phrases: `the store's own country`, `a market the store sells into`, `the buyer's country`, or `the whole store`.
      - A value that is the same for every buyer is `the whole store`. One that differs by the buyer's country is `the buyer's country`, even where the store switches the difference on once.
      - A market that takes the store's value until the seller changes it takes its value per `a market the store sells into`.
+   - **Who sets a value.** Under `who sets "X"`, a control in the store's admin means the seller sets it; "automatically", "by default" or "on your behalf" means the platform does, unless the statement names another party.
    - **(g).**
      - **A statement that a setting holds for the whole store** is the platform's answer under each of RD3's `what "X" takes its value per` points it applies to. Its `variant` is an excerpt of it, and its `basis_evidence` names `the whole store`. Where no such point's X is of its setting's kind, it raises one.
      - **A statement that the platform has no market of the kind in (e)** is its answer under each of RD2's points it applies to. Its `variant` is an excerpt of it, and its `basis_evidence` names `no market`. Where no RD2 point exists yet, it raises `what defines "X"`, with X the platform's words for the market it lacks.
@@ -155,7 +156,7 @@ Statements under (h) are conditions, not variants: a variant rests on at least o
      - Where a statement's own words don't name its X, or what fills it, its `identifier` or `scope` may, as phase A recorded them from the source, under any bullet. `basis_evidence` then quotes it.
      - A variant whose words name only what is kept out of X's role is not an answer variant. It goes in the variation point's `note`, with its statement's id, and its statement is noted in `notes-b.md` (rule 2). If no other variant of the platform answers, the platform's row is `gap` or `not covered`, as rule 4 says (the pilot's ruling of 25 October 2026, on its review's finding 36).
 
-   A statement goes under a variation point only if at least one basis holds.
+   A statement goes under a variation point only if at least one basis holds. `basis_evidence` quotes the words that show it from the statements that show it best; it needn't quote every statement in `stmt_ids`.
 
    **Lists.** Statements that share a `source` and an `identifier` may be runs of one list, split because the source holds the items apart. Read them together.
 6. **Kind and scope.**
