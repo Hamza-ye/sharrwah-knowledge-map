@@ -137,6 +137,7 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 | RD1-2: (b), all five platforms | 128 | 44 | 8.3 | 2.9 | 4 | 39 |
 | RD3-2: (f) and (g), Salla | 133 | 65 | 15.8 | 2.0 | 7 more (44) | 75 |
 | RD1-3: (c), Shopify and Salla | 216 | 59 | 15.0 | 3.7 | 11 more (18) | 69 |
+| RD1-4: (c), Zid, WooCommerce and BigCommerce | 198 | 72 | 17.5 | 2.8 | 1 more (19) | 72 |
 
 **What RD1-1 taught:**
 - **One point per question held:** the five platforms' answers to "what fills the store's own country" fell under one variation point, as 30 fields and records and one gap, and the countries served and kept out under one each.
@@ -167,3 +168,8 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 - **The flag rule met the scope rule.** Nine Shopify API calls by country code were noted under the flag rule, although their scope names the store's business entity as whose country it is. The rule now counts a flag's identifier and scope too, and the nine are read again in the second pass. The admin forms that carry the same answers were placed.
 - **Payment methods had no (c) kind,** and were placed under other payment providers. That kind now names them.
 - **The absence audit ran beside the part,** and added Salla statements its slice didn't hold. The part left them for the second pass, as the coordinator's message and now the brief say.
+
+**What RD1-4 taught:**
+- **The last part of a root decision closes every point's rows:** all twelve (c) points now have a row for each platform. Of its own platforms' rows, 9 are `not covered` and go to gap-closing (phase A2).
+- **The one point it raised, the store's data, found Zid's answer by the search,** in a statement the part had first placed under the contracting party; it moved it.
+- **Stripe's entity under WooPayments isn't the platform's company,** so it went under the platform's own payment service, as Shopify's acquirer does: a reading, marked as one.
