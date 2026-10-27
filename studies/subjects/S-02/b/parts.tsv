@@ -1,6 +1,6 @@
 part	root_decision	bullets	platforms	pairs	status
 RD1-1	RD1	a; d	shopify; salla; zid; woocommerce; bigcommerce	205	done
-RD1-2	RD1	b	shopify; salla; zid; woocommerce; bigcommerce	128	to run
+RD1-2	RD1	b	shopify; salla; zid; woocommerce; bigcommerce	128	running
 RD1-3	RD1	c	shopify; salla	216	to run
 RD1-4	RD1	c	zid; woocommerce; bigcommerce	198	to run
 RD2-1	RD2	e; g	shopify	184	to run

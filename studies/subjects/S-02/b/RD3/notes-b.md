@@ -44,6 +44,9 @@ Shopify is the first platform placed under RD3, so every variation point here is
 - S02-SH-374 (f): the storefront's cookie consent banner on a visit intended from the United Kingdom (scope); one banner, not what it is taken per or who sets it
 - S02-SH-375 (f): the checkout's Country/Region options, now with 'United Kingdom', and one shipping rate, 'YER 2,600.00', with 'Yemen' selected, after the market Capture UK was created (scope); one value of each, not what it is taken per or who sets it
 - S02-SH-380 (f): the feature and permissions that gate the route to update a shipping option, a condition of access; names no setting's value per market, and not who sets it
+- S02-SH-409 (f): the admin shows 'There's no page at this address' at the routes to create or update a market's shipping option on one store (scope 'store ibx5bt-xy'); names no setting's value per market, and not who sets it
+- S02-SH-553 (f): names the experience in general ('The experience that a company location receives'), determined by the markets a company location matches, of no one kind of setting
+- S02-SH-571 (f): names only the catalogs kept out of a B2B market ('You will not be able to add region catalogs or catalogs that are directly assigned to company locations to a B2B market'); in the notes of the points what 'product availability' and 'pricing' take their value per (rule 5)
 
 ### How this part reads Shopify's statements
 
