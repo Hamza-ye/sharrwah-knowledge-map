@@ -42,6 +42,8 @@ BigCommerce's pricing page says "Start with a free trial", and its Help Center d
 
 **My recommendation:** yes. It costs nothing.
 
+*Changed on 27 October 2026:* **wait for phase C.** None of these five gaps is expected to change an S-02 decision, and whether BigCommerce's sign-up works from Yemen isn't known. The trial is worth a run only if phase C finds a decision that turns on one of them.
+
 **Answer:** yes or no.
 
 ## 4. WooCommerce: a test store (2 of its 5 gaps, and part of the other 3)
@@ -53,6 +55,8 @@ WooCommerce is free software, so a test store needs only a WordPress host. Your 
 Connecting WooPayments on the same store would show what its sign-up asks for by country. WooPayments offers a test account that "requires no personal information" and runs only in test mode, so this needs none of your details. The documents a real account is asked for show only on a real sign-up, stopped at the first request.
 
 **My recommendation:** yes, after the questions in section 5, which may answer most of it first.
+
+*Changed on 27 October 2026:* **not yet.** WooCommerce's own code, which we hold at a fixed version, can settle part of this first, at no cost to you: which settings it has at all. A test store is worth it only for what the code can't show, and only if phase C needs it.
 
 **Answer:** yes or no.
 
