@@ -363,8 +363,14 @@ for plat in PLATFORMS:
     after_a2 = {g for r in (read(os.path.join(d, "a2.tsv"), f"{plat}/a2.tsv", check_head=False) or [])
                 for g in ids(r.get("gap_ids", ""))
                 if "corpus_search.py" in gaps.get(g, {}).get("read", "")}   # A2's own searches are named in the gap
+    a2_absences = {a for r in (read(os.path.join(d, "a2.tsv"), f"{plat}/a2.tsv", check_head=False) or [])
+                   for a in ids(r.get("absence_ids", ""))}
     for c in claims:
-        if c not in done and c not in after_a2:
+        if c in done or c in after_a2:
+            continue
+        if c in a2_absences:                       # an absence phase A2 recorded waits for its own audit
+            err(f, c, "an absence phase A2 recorded, waiting for its audit (phase A3)", "review")
+        else:
             err(f, c, "a claim of absence that the audit doesn't settle")
 
 for sid, r in stmts.items():
@@ -571,7 +577,7 @@ for plat in PLATFORMS:
     a2 = read(os.path.join(subj, plat, "a2.tsv"), f"{plat}/a2.tsv")
     later = read_later(plat)
     for r in a2 or []:
-        if r["vp_id"] not in vp:
+        if vp and r["vp_id"] not in vp:            # checked where the subject's variation points are present
             err(f"{plat}/a2.tsv", r["vp_id"], "not a variation point")
         for s in ids(r["stmt_ids"]):
             if s not in stmts:
