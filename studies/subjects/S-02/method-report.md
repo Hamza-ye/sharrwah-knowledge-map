@@ -241,6 +241,7 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 | WC-3: products; discounts and offers; storefront design; contact information shown to buyers; locations; market selection | 10 | 10 | 10 | 55 | none | 98 | 18.9 |
 | BC-1b: the Help Center articles behind BC-1's gaps G04, G05, G07 and G08 | 5 | 5 | 2 | 45 | G09, G10 and G11, in place of G04, G07 and G08; G05 answered | 41 | 6.4 |
 | ZD-3: analytics and tracking; apps; notifications to the merchant; privacy and consent; staff access; store status; units and time zone; and the pricing pages as a lead | 12 | 12 | 3 | 74 | G14 to G21 | 72 | 15.6 |
+| BC-2: contact information shown to buyers; market selection; returns and cancellations; staff access; the buyer's address; who sells to the buyer | 10 | 10 | 6 | 56 | G12, in place of G03, whose pages it read; G13, G14 | 84 | 14.5 |
 
 **What WC-1 taught:**
 - **Our labels aren't the platform's words.** The brief said to search a kind's own name, and the part asked whether "who sells to the buyer" was one. The brief now says the kind's head word is searched, such as `domain` or `currency`, and our longer labels aren't.
@@ -296,4 +297,8 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 **What ZD-3 taught:**
 - **Zid states its settings for the store, never per market.** Every page read says what a setting is and who sets it, and none names a market. So each of the "what it takes its value per" points ZD-2 and ZD-3 took keeps a gap: eleven, S02-ZD-G10 to S02-ZD-G18, G20 and G21. One observation would close most of them: a Zid store on a plan with markets, showing which settings vary by market. Zid is in neither observed repository, so it goes to the founder after gap-closing.
 - **The render fix showed Zid's prices by country:** Rise is 99 riyals a month on zid.sa and 1,128 Egyptian pounds on zid.eg, and each site's footer names its own company's registration and tax numbers (S02-ZD-347 to S02-ZD-355). Phase A had recorded neither, since the pages showed only an error text.
+
+**What BC-2 taught:**
+- **BigCommerce's gap-closing is complete:** four parts, 33 rows, 191 statements, for 42 million. The Help Center, readable since the fix, answered most of BC-1b's and BC-2's rows.
+- **A platform that sets values per storefront answers the "per market" questions directly.** Multi-Storefront gives contact details, checkout settings and the storefront a shopper sees per storefront, each "Use global" by default. BigCommerce's settings are the only ones read so far that state their own scope, where Zid's and WooCommerce's name none.
 
