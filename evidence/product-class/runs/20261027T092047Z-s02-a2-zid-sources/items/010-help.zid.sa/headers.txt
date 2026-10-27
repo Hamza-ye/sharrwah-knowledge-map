@@ -1,0 +1,28 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Tue, 27 Oct 2026 09:20:58 GMT
+content-type: text/xml; charset=UTF-8
+strict-transport-security: max-age=0; includeSubDomains
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=AKSgpv9wZ5grWlwj5EJzLHpK7uKABMI8Tmejlu2XNCJkLsXlwHChRH6ls%2BkfS1oc0b049zrSUl%2B3xEOt5RxuvmY7Clx4QlBMeTVQSRqjvY%2Bx9r%2Fx%2BTB4grkkzsKB"}]}
+cf-cache-status: DYNAMIC
+cache-control: no-cache, no-store, must-revalidate, max-age=0
+expires: 0
+server: cloudflare
+pragma: public
+nel: {"report_to":"cf-nel","success_fraction":0.01,"max_age":604800}
+ki-cf-cache-status: BYPASS
+ki-edge-o2o: yes
+x-content-type-options: nosniff
+x-edge-location-klb: 1
+ki-cache-type: None
+ki-edge: v=28.6.1;mv=99.9.9
+ki-origin: g1p
+x-kinsta-cache: BYPASS
+x-robots-tag: noindex
+content-encoding: br
+vary: accept-encoding
+set-cookie: __cf_bm=3yESV8TIYZz8dVwGqTz1PIUJdnCUtP9EHwuh1ugfWlw-1793092857.620608-1.0.1.1-8k65Uq4LbABcX8fKTiq24X3T_bDkynxJt1b77l1TRr7My.5t8kw8kPZLt7PcTH7SahdrzKAThBKAUXPhT.JOPKOJuFeqTaVe90dhqE16DhEgZ0e8N13xnPPSZV0RW9r1; HttpOnly; SameSite=None; Secure; Path=/; Domain=zid.sa; Expires=Tue, 27 Oct 2026 09:50:58 GMT
+set-cookie: _cfuvid=aoYmTzxoGPpMcTHS2sn07_5Z5iAoXbfdZpH9khkYmzA-1793092857.620608-1.0.1.1-.EBWVuRJfx0RhSjIbP1SnYnCBrOUkKsCMDKXzoSRL18; HttpOnly; SameSite=None; Secure; Path=/; Domain=zid.sa
+cf-ray: a510a0b81ee81972-IAD
+

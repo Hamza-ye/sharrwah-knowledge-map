@@ -1,0 +1,18 @@
+{
+ "n": 4,
+ "url": "https://help.zid.sa/cancel-orders/",
+ "dir": "items/004-help.zid.sa",
+ "fetched_at": "2026-10-27T09:20:49Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/cancel-orders/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 24054,
+ "cited_in": [
+  "S-02 A2 ZD-1, read"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "f7f1c64a18fbe9377c200eafb0eb2cea3f22c92aca98615b6092d1ddcd6bd87b",
+ "raw_ext": "html"
+}

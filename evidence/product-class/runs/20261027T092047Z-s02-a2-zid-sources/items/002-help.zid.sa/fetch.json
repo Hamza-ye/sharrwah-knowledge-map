@@ -1,0 +1,18 @@
+{
+ "n": 2,
+ "url": "https://help.zid.sa/faqs/%d9%87%d9%84-%d8%a8%d8%a7%d9%84%d8%a7%d9%85%d9%83%d8%a7%d9%86-%d8%aa%d8%ba%d9%8a%d9%8a%d8%b1-%d8%a7%d9%84%d9%83%d9%8a%d8%a7%d9%86-%d8%a7%d9%84%d8%aa%d8%ac%d8%a7%d8%b1%d9%8a-%d9%82%d8%a8%d9%84%d8%a8/",
+ "dir": "items/002-help.zid.sa",
+ "fetched_at": "2026-10-27T09:20:48Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/faqs/%d9%87%d9%84-%d8%a8%d8%a7%d9%84%d8%a7%d9%85%d9%83%d8%a7%d9%86-%d8%aa%d8%ba%d9%8a%d9%8a%d8%b1-%d8%a7%d9%84%d9%83%d9%8a%d8%a7%d9%86-%d8%a7%d9%84%d8%aa%d8%ac%d8%a7%d8%b1%d9%8a-%d9%82%d8%a8%d9%84%d8%a8/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 23131,
+ "cited_in": [
+  "S02-ZD-C356"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "202aa12ae130ea1735382780cc672f3916a65793203d0797574c0f12a4838af1",
+ "raw_ext": "html"
+}

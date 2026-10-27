@@ -1,0 +1,18 @@
+{
+ "n": 5,
+ "url": "https://help.zid.sa/business-account/",
+ "dir": "items/005-help.zid.sa",
+ "fetched_at": "2026-10-27T09:20:50Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/business-account/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 26341,
+ "cited_in": [
+  "S-02 A2 ZD-1, read"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "aaca11459b7424b860a88f7a864967825b98fdc1b73cf95c863c4483909130f2",
+ "raw_ext": "html"
+}

@@ -149,8 +149,6 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 - **The brief changed during the run,** and the coordinator's message named only one change. The agent found the others and applied them. A message to a running agent now lists every change.
 - **Two rules were narrower than needed,** and were widened: a statement's identifier or scope may name what fills X under any bullet, not only (c) and (f); and a `gap` row may stand beside a platform's answers. Six statements the part noted under the narrower rule are read again in the second pass: S02-SH-259, S02-SH-260, S02-SH-396, S02-SA-249, S02-ZD-148 and S02-ZD-149.
 
-**The absence audit's brief, re-checked** (the inspector resumed, 9 requests): ready to run. The first search for Zid's gap S02-ZD-G01 now matches 31 documents, against 128, all listed with snippets, the field the gap names among them. All 159 help-page passages Zid's citations quote fall inside the article text the search now reads. Zid's 11 claims are split between two agents run one after the other, by topic, so that each keeps its shared sources: the store's country, its checks, the contracting party and payments; then the countries served, and markets.
-
 **What RD3-1 taught:**
 - **The kinds held:** Shopify's settings fell under 19 of the listed kinds, two questions each where Shopify states both, and two new kinds (the store's address, and units and time zone): 37 points.
 - **Who sets a value is not only the platform or the seller.** Shopify names Managed Markets with Global-e, Avalara, an app and the buyer. The brief now takes the party the statement names.
@@ -179,7 +177,30 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 - **The one point it raised, the store's data, found Zid's answer by the search,** in a statement the part had first placed under the contracting party; it moved it.
 - **Stripe's entity under WooPayments isn't the platform's company,** so it went under the platform's own payment service, as Shopify's acquirer does: a reading, marked as one.
 
+**What RD3-3 taught:**
+- **A later part's cost is in its rows under the earlier points, not its statements:** 126 pairs gave 142 rows, since Zid and BigCommerce each needed a row under every one of the 44 earlier points, 35 of them `not covered`. That made it the costliest part per pair (1.6).
+- **The kinds needed four new ones** where BigCommerce's channel settings go past them: the store's country as a channel's setting, apps, analytics, and notifications to the merchant.
+- **Rules widened after a part ran leave its notes on the older rule.** RD3-1 noted Shopify's permission statements as conditions of access, and its "you can't change" statements as kept out, before rule 4 took a permission, and "no one can", as answers; RD3-3 read BigCommerce's alike under the new rule. The statements to read again are in `b/second-pass.md`, which the second pass now reads.
+
+**What RD3-4 taught:**
+- **RD3's first pass is complete:** 50 points, each with a row for all five platforms; 361 rows.
+- **Code needs its own reading of "who sets":** much of WooCommerce's evidence is its release's code. The part read a value or default the code sets as the platform's, and named parties, such as developers, as their own; the brief now says so.
+- **A rule lost an answer:** a statement under (g) that names who sets a whole-store setting could answer only "what it takes its value per", so WooCommerce's row for who sets discounts came out `not covered`. The brief and the checker now let it answer `who sets` too, and its statements are on the second pass's list.
+
+**What RD2-1 taught:**
+- **(e)'s four questions made four points,** as the brief asks. Shopify defines a market by ten things, from conditions over a set of customers to its sales channels, and its absences rule out three more (a city, a storefront, other groups of customers).
+- **"What limits a market" took both how many a store can hold and the rules on what one may hold,** such as a country in more than one market, or a primary market of one country. Both bear on the root decision; the question now names both.
+- **Shopify's backup region "isn't a market",** in its own words, so its ten statements failed the role test under (e). They are kept in the point's note.
+
+**What RD2-2 taught, and the first pass as a whole:**
+- **Phase B's first pass is complete:** 73 variation points (RD1 19, RD2 4, RD3 50), each with a row for every platform; 671 rows; every statement-bullet pair placed or noted; no checker error in any part.
+- **It cost 146 million tokens over 631 requests,** about 2.7 pairs a request, within the 150 to 300 million the frame set for phase B with its second pass.
+- **Parts kept to their size:** none passed 80 requests, and none stopped short. Parts that placed a platform under many earlier points cost more per pair (RD3-3, RD2-2); the first parts of each root decision cost least.
+- **Each part's lessons went into the brief before the next,** 14 rulings in all, and the statements earlier parts noted under a narrower rule are listed for the second pass (`b/second-pass.md`).
+
 ## 8. Phase A3, the absence audit (27 October)
+
+**The absence audit's brief, re-checked** (the inspector resumed, 9 requests): ready to run. The first search for Zid's gap S02-ZD-G01 now matches 31 documents, against 128, all listed with snippets, the field the gap names among them. All 159 help-page passages Zid's citations quote fall inside the article text the search now reads. Zid's 11 claims are split between two agents run one after the other, by topic, so that each keeps its shared sources: the store's country, its checks, the contracting party and payments; then the countries served, and markets.
 
 | Platform | Claims | Results | Statements added | Requests | Millions |
 | --- | --- | --- | --- | --- | --- |
@@ -197,32 +218,28 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 - **The held corpus doesn't hold every Zid help page:** Zid's first part found Zid Pay's and Zid Financing's requirement pages, the national address article and the financing page only through the help centre's sitemaps, read live as indexes. It read twelve pages live; the coordinator captured them afterwards.
 - **One lead was left unread:** the Help Center's `organization-settings/expansion-stores.md`, for how a store made inside an organization takes its country (S02-SH-G02). It goes to gap-closing (phase A2).
 
-**What RD3-3 taught:**
-- **A later part's cost is in its rows under the earlier points, not its statements:** 126 pairs gave 142 rows, since Zid and BigCommerce each needed a row under every one of the 44 earlier points, 35 of them `not covered`. That made it the costliest part per pair (1.6).
-- **The kinds needed four new ones** where BigCommerce's channel settings go past them: the store's country as a channel's setting, apps, analytics, and notifications to the merchant.
-- **Rules widened after a part ran leave its notes on the older rule.** RD3-1 noted Shopify's permission statements as conditions of access, and its "you can't change" statements as kept out, before rule 4 took a permission, and "no one can", as answers; RD3-3 read BigCommerce's alike under the new rule. The statements to read again are in `b/second-pass.md`, which the second pass now reads.
-
-**What RD3-4 taught:**
-- **RD3's first pass is complete:** 50 points, each with a row for all five platforms; 361 rows.
-- **Code needs its own reading of "who sets":** much of WooCommerce's evidence is its release's code. The part read a value or default the code sets as the platform's, and named parties, such as developers, as their own; the brief now says so.
-- **A rule lost an answer:** a statement under (g) that names who sets a whole-store setting could answer only "what it takes its value per", so WooCommerce's row for who sets discounts came out `not covered`. The brief and the checker now let it answer `who sets` too, and its statements are on the second pass's list.
-
-**What RD2-1 taught:**
-- **(e)'s four questions made four points,** as the brief asks. Shopify defines a market by ten things, from conditions over a set of customers to its sales channels, and its absences rule out three more (a city, a storefront, other groups of customers).
-- **"What limits a market" took both how many a store can hold and the rules on what one may hold,** such as a country in more than one market, or a primary market of one country. Both bear on the root decision; the question now names both.
-- **Shopify's backup region "isn't a market",** in its own words, so its ten statements failed the role test under (e). They are kept in the point's note.
-
 **What WooCommerce's audit taught:**
 - **A held page was taken for unheld.** WordPress.com's Terms, which name WooCommerce's contracting entity, are held whole by the raw fetch in three runs. The browser was refused, and `method/held_index.py` judged the capture by the browser's status alone, so the auditor read them as unreadable. The tool now lists the raw body as readable, and the auditor reads the Terms for S02-WC-G01.
 - **A slip of the coordinator's:** a message to the auditor named a commit from memory, not from git; it was corrected in the next message. Commits are named only from `git rev-parse`.
-
-**What RD2-2 taught, and the first pass as a whole:**
-- **Phase B's first pass is complete:** 73 variation points (RD1 19, RD2 4, RD3 50), each with a row for every platform; 671 rows; every statement-bullet pair placed or noted; no checker error in any part.
-- **It cost 146 million tokens over 631 requests,** about 2.7 pairs a request, within the 150 to 300 million the frame set for phase B with its second pass.
-- **Parts kept to their size:** none passed 80 requests, and none stopped short. Parts that placed a platform under many earlier points cost more per pair (RD3-3, RD2-2); the first parts of each root decision cost least.
-- **Each part's lessons went into the brief before the next,** 14 rulings in all, and the statements earlier parts noted under a narrower rule are listed for the second pass (`b/second-pass.md`).
 
 **What BigCommerce's audit taught, and the audit as a whole:**
 - **Every claim of absence is now audited:** 24 across the five platforms; 2 contradicted and 3 partly contradicted, about one claim in five. The audit added 122 statements.
 - **An audit that confirms its claims still adds evidence:** BigCommerce's two absences stand, and the pages read to test them added 43 statements on what a storefront channel holds per country.
 - **Markdown escapes hid an identifier from the search:** `store\_country` didn't match `store_country`. `method/corpus_search.py` now reads Markdown's escapes as the characters they escape.
+
+## 9. Phase A2, gap-closing (27 October)
+
+| Part | Rows | Rows answered | Statements added | Gaps it leaves | Requests | Millions |
+| --- | --- | --- | --- | --- | --- | --- |
+| WC-1: documents and checks; other payment providers; the store's own country; a market; who sells to the buyer; returns and cancellations | 8 | 6 | 31 | G06, in place of G02, whose pages it read; G07 | 108 | 22.2 |
+| ZD-1: taxes on the platform's fees; the countries served; who sells to the buyer; returns and cancellations; the store's address; the store's country | 8 | 5 | 35 | G08, G09; G01 stands | 74 | 14.2 |
+
+**What WC-1 taught:**
+- **Our labels aren't the platform's words.** The brief said to search a kind's own name, and the part asked whether "who sells to the buyer" was one. The brief now says the kind's head word is searched, such as `domain` or `currency`, and our longer labels aren't.
+- **Code holds the calls, not the checks.** WooPayments' business verification runs on its own server and Stripe's. The release holds only its calls and strings, so what is checked, and against what documents, can't be read from it. G06 and G07 go to WooCommerce as questions.
+- **A `page not read` gap ends once its pages are read.** G04's page answered with statements. G02's two release files gave way to G06, of kind `searched, not found`.
+
+**What ZD-1 taught:**
+- **The help centre's sitemaps found what the held corpus lacked.** Its nine sitemaps list 656 addresses. The two FAQs on the entities Zid Financing takes (S02-ZD-210, S02-ZD-211) came from them. The coordinator captured them with the pages read (run `20261027T092047Z-s02-a2-zid-sources`). ZD-2 starts from ZD-1's decoded list, with the one FAQ it left unread as a lead.
+- **A page whose content a script loads can't be quoted from its capture.** zid.sa's and zid.eg's pricing pages render only Zid's error text, and their raw HTML holds no prices.
+- **Pointing to a statement under another bullet doesn't place it.** ZD-1 named statements under (a), (b) and (c) as bearing on (f) points: the store's country in the store's settings for S02-VP-85, and the business details for S02-VP-63 and S02-VP-64. Phase B places a statement only under its own bullets, and it has placed these under RD1's points: the store's country (S02-VP-01, S02-VP-06 and S02-VP-07), and documents and checks (S02-VP-10). Zid's row under S02-VP-85 stays the gap S02-ZD-G01, which the absence audit confirmed. So these statements aren't on the second pass's list.
