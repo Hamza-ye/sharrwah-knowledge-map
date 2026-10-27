@@ -148,7 +148,7 @@ None of salla's statements under (g) says that the platform has no market of the
 
 - S02-SA-064 (g): 'Your whole store is in maintenance mode, which overrides this market's settings.': store status, a setting that holds for the whole store, RD3's half
 - S02-SA-156 (g): 'ولا يمكن تخصيص ذلك لسوق معينة' (my translation: and this can't be customized for a given market), on removing a product's category: a setting that holds for the whole store, RD3's half
-- S02-SA-168 (g): 'يُطبَّق هذا الترتيب وأي تعديل عليه تلقائيًا على جميع الأسواق' (my translation: this order, and any change to it, applies automatically to all markets): a setting that holds for the whole store, RD3's half
+- S02-SA-168 (g): 'هذا الترتيب وأي تعديل عليه تلقائيًا على جميع الأسواق' (my translation, of the unified order: this order, and any change to it, automatically on all markets): a setting that holds for the whole store, RD3's half
 - S02-SA-300 (g): '"Passing scope Id will make the products sort is per scope in this category, multi country feature needs to be enabled."': the products' order, a setting, RD3's half
 - S02-SA-310 (g): 'it can be set as null or left blank to indicate that the tax rate is intended to apply to all countries': a tax rate for all countries, a setting that holds for the whole store, RD3's half
 
@@ -203,7 +203,7 @@ woocommerce has no markets feature. Its selling locations, 'Selling location(s)'
 None of woocommerce's statements under (g) says that the platform has no market of the kind in (e). Each says that a setting holds for the whole store, which is RD3's half.
 
 - S02-WC-017 (g): 'select the currency your shop will use for sales': a setting that holds for the whole store, RD3's half
-- S02-WC-025 (g): 'If you’d like to display products in different currencies ... you will need to add a multi-currency extension/plugin.': currency, a setting that holds for the whole store, RD3's half
+- S02-WC-025 (g): 'If you’d like to display products in different currencies' and 'you will need to add a multi-currency extension/plugin.': currency, a setting that holds for the whole store, RD3's half
 - S02-WC-085 (g): 'WooCommerce only allows for one base currency per store.': a setting that holds for the whole store, RD3's half
 - S02-WC-086 (g): 'This controls what currency prices are listed at in the catalog and which currency gateways will take payments in.': a setting that holds for the whole store, RD3's half
 - S02-WC-087 (g): 'Each WooCommerce store can set one base currency.': a setting that holds for the whole store, RD3's half
@@ -215,3 +215,57 @@ None of woocommerce's statements under (g) says that the platform has no market 
 - S02-WC-178 (g): 'Decimal separator': a setting that holds for the whole store, RD3's half
 - S02-WC-179 (g): 'Number of decimals': a setting that holds for the whole store, RD3's half
 - S02-WC-207 (g): 'taxes are always calculated based on your store’s location, regardless of the customer’s address': a setting that holds for the whole store, RD3's half
+
+### bigcommerce: statements noted under (e)
+
+- S02-BC-001 (e): the API reference's section 'Create and manage sales channels, their sites, and their product listings.'; names no party that creates, changes or removes a channel
+- S02-BC-017 (e): 'Group customers into segments to offer them promotions and other customized shopping experiences.': customer segments for promotions, discounts and offers under (f); the statement doesn't call a segment a channel, storefront or market
+- S02-BC-055 (e): 'You can configure shipping zones in the control panel or use the API to designate where a merchant ships their products': shipping, under (f); X fails the role test
+- S02-BC-158 (e): 'The default country in the drop-down menu is based on the customer’s IP address.': the buyer's address, under (f); answers none of (e)'s questions
+
+### bigcommerce: statements noted under (g)
+
+None of bigcommerce's statements under (g) says that the platform has no market of the kind in (e). Each says that a setting holds for the whole store, which is RD3's half.
+
+- S02-BC-035 (g): 'They are suitable for any global information against the store that is not channel specific.': store metafields, data that holds for the whole store, RD3's half
+- S02-BC-100 (g): 'the following settings are inherently global and cannot be modified with channel-specific overrides': settings that hold for the whole store, RD3's half
+- S02-BC-142 (g): 'some store functions are global and are shared across storefronts, such as the built-in blog': functions that hold for the whole store, RD3's half
+- S02-BC-147 (g): 'All apps are designed to work at a store level and are installed at the store level.': apps that hold for the whole store, RD3's half
+
+### RD2-2: new kinds
+
+None: (e)'s points take no kind (rule 3). The brand in S02-V-457 is none of the things that bullet (e) lists (problems, below).
+
+### RD2-2: searches for earlier platforms' rows
+
+RD2-2 raised no point. Each of its statements under (e) answers one of S02-VP-26 to S02-VP-29, or is noted, and none of its statements under (g) says that the platform has no market of the kind in (e). So no search for shopify's rows was made.
+
+### RD2-2: rows `not covered`, `gap` and `absent`
+
+No row is `not covered`. Every point has a row for every platform. The rows without an answer are:
+
+- S02-V-442: zid, S02-VP-26, `gap` S02-ZD-G06 (what the default market holds), beside zid's answer rows;
+- S02-V-447: zid, S02-VP-29, `gap` S02-ZD-G05 (who removes a market);
+- S02-V-449: woocommerce, S02-VP-27, `gap` S02-WC-G04 (how many a store can hold);
+- S02-V-459: bigcommerce, S02-VP-26, `absent` S02-BC-N01 (a country, region or other place among what defines a channel), beside bigcommerce's answer rows.
+
+### RD2-2: matching (rule 5)
+
+Each point's `raised_by` holds only shopify's statements, so RD2-2's rows were compared with them. Each takes `answers` alone:
+
+- `term`: salla's 'السوق' (translation 'Market') is the same word as shopify's translation of 'market', 'السوق', but their definitions in `terms.tsv` differ: 'السوق هو الدولة أو المنطقة التي تستهدف البيع إليها' and 'A market is a set of customers that you define in your store.' So `term` fails. zid's 'الأسواق (خاصية الأسواق)' has no translation, and a definition other than shopify's. bigcommerce's 'channel' and shopify's 'Channel markets' are different terms, with different definitions. woocommerce has no term for a market.
+- `identifiers`: no key, scope, topic, field or entitlement in RD2-2's statements is the same as one in the statements of `raised_by` (S02-SH-077, S02-SH-065, S02-SH-279; S02-SH-111, S02-SH-301, S02-SH-286; S02-SH-115, S02-SH-116, S02-SH-288; S02-SH-061, S02-SH-128).
+- `definition`: no statement of RD2-2's gives the same definition as one of those.
+
+### RD2-2: problems with the method
+
+- Salla's feature 'multi-countries' (S02-V-436): its 'limit' of 10 and its 'count' are read as how many markets a store can hold and how many it holds. This is a reading, marked in the row's basis_evidence: the flag's words, 'multi-countries', don't say market. If the reading doesn't hold, S02-SA-187 and S02-SA-234 are to be noted under (e), and the row goes.
+- Salla's store scopes: S02-SA-219 holds a store scope whose scope phase A gives as 'its one market after activating multiple markets', and S02-SA-251 is the store scope's schema. They are placed in S02-V-431 and S02-V-432 as a market's countries and cities. S02-SA-251's store scope is read as a market, a reading marked in S02-V-431.
+- Enabling and disabling the multiple markets feature: S02-SA-054, S02-SA-055 and S02-SA-059 name the account manager, and S02-SA-026 the seller's controls. They are noted, since the statements don't say that enabling or disabling the feature creates, changes or removes a market. If enabling the feature counts as a gate on creating a market, they belong under S02-VP-28 and S02-VP-29, as RD2-1 said of shopify's page permissions.
+- Zid's 'الاسواق المتوفرة' (S02-V-443): the sales channels app calls the selling platforms it reaches (Amazon, Trendyol, Jahez, Mazeed) markets. The row places them as markets defined by a channel. If the role test reads 'الاسواق' there as a homonym, S02-ZD-145 and S02-ZD-146 are to be noted instead, and the row goes.
+- Zid's default market: S02-ZD-012 says that the default market appears automatically. It is placed under S02-VP-26 only: it doesn't say who creates the default market (S02-V-446's note).
+- WooCommerce has no markets feature. Its selling locations ('Selling location(s)') are placed as its market, and its shipping locations and shipping zones are noted as shipping, under (f), as RD2-1 held for shopify's shipping zones. Phase A's gap S02-WC-G04 asks, under (e)'s how many, about shipping zones and currencies; it is the `gap` row S02-V-449 under S02-VP-27, though by this role test its things are not markets. WooCommerce's rows under S02-VP-28 and S02-VP-29 are for a setting that always exists: the platform's default 'all' (S02-V-451) and the seller (S02-V-450, S02-V-452). No statement says who removes it.
+- BigCommerce: a channel is where a store sells (S02-BC-002), so its channels and storefronts are placed as its markets. The rows for a region, a group of customers and a brand (S02-V-455 to S02-V-457) rest on uses the platform suggests ('can help you', 'can be useful', 'may work for some merchants'), and stand beside the `absent` row S02-V-459 (S02-BC-N01). A brand (S02-V-457) is none of the things that bullet (e) lists: a country, region, city, group of customers, location, channel or storefront.
+- BigCommerce's default channel (S02-V-466): 'provisioned with one channel out of the box' is read as 'by default', so the platform's (a reading, marked in the row).
+- Scopes and permissions: bigcommerce's S02-BC-004, the API scope 'store_channel_settings' at 'modify', 'View and modify a list of channels', is placed under S02-VP-29 as a permission that gates changing channels (S02-V-467). RD2-1 noted shopify's read scopes, which gate no change, and its page permissions; salla's 'branches_management' (S02-SA-255, S02-SA-257) gates a page, and is noted the same way.
+- Activation and publishing: salla's activating a market (S02-SA-044) is placed under S02-VP-29, as RD2-1 placed shopify's activating and deactivating (S02-V-428). Zid's creating a market hidden or published (S02-ZD-022) is placed under S02-VP-28, since its identifier puts it among the steps of creating a market.

@@ -587,6 +587,29 @@ S02-SH-585	observed	run 20261006T232216Z-journey-signup-new-account records a st
 S02-SH-586	observed	run 20261006T232216Z-journey-signup-new-account records a store or session
 S02-SH-587	observed	run 20261006T232216Z-journey-signup-new-account records a store or session
 S02-SH-588	stated	structures/shopify/help-notes is built from run 20260930T003703Z-help-en-md, which fetched pages
+S02-SH-589	stated	structures/shopify/help-center is built from run 20261016T213535Z-help-en-ar-html-md, which fetched pages
+S02-SH-590	stated	structures/shopify/help-center is built from run 20261016T213535Z-help-en-ar-html-md, which fetched pages
+S02-SH-591	stated	structures/shopify/help-center is built from run 20261016T213535Z-help-en-ar-html-md, which fetched pages
+S02-SH-592	stated	structures/shopify/help-center is built from run 20261016T213535Z-help-en-ar-html-md, which fetched pages
+S02-SH-593	stated	structures/shopify/help-center is built from run 20261016T213535Z-help-en-ar-html-md, which fetched pages
+S02-SH-594	stated	structures/shopify/help-center is built from run 20261016T213535Z-help-en-ar-html-md, which fetched pages
+S02-SH-595	stated	structures/shopify/help-center is built from run 20261016T213535Z-help-en-ar-html-md, which fetched pages
+S02-SH-596	stated	structures/shopify/help-center is built from run 20261016T213535Z-help-en-ar-html-md, which fetched pages
+S02-SH-597	stated	structures/shopify/help-center is built from run 20261016T213535Z-help-en-ar-html-md, which fetched pages
+S02-SH-598	observed	run 20261002T003931Z-sweep-capture-advanced records a store or session
+S02-SH-599	observed	run 20261006T232216Z-journey-signup-new-account records a store or session
+S02-SH-600	stated	structures/shopify/help-center is built from run 20261016T213535Z-help-en-ar-html-md, which fetched pages
+S02-SH-601	stated	structures/shopify/help-center is built from run 20261016T213535Z-help-en-ar-html-md, which fetched pages
+S02-SH-602	stated	run 20260930T003705Z-shopify-dev-md fetched pages
+S02-SH-603	stated	run 20260930T003705Z-shopify-dev-md fetched pages
+S02-SH-604	stated	run 20260930T003705Z-shopify-dev-md fetched pages
+S02-SH-605	stated	structures/shopify/help-center is built from run 20261016T213535Z-help-en-ar-html-md, which fetched pages
+S02-SH-606	stated	run 20260930T041618Z-changelog-items fetched pages
+S02-SH-607	shipped	structures/shopify/admin-graphql-schema holds https://shopify.dev/admin-graphql-direct-proxy/2026-10: the address is code or a schema the platform ships
+S02-SH-608	shipped	run 20260930T002617Z-graphql-introspection fetched a schema the platform ships
+S02-SH-609	stated	structures/shopify/help-center is built from run 20261016T213535Z-help-en-ar-html-md, which fetched pages
+S02-SH-610	stated	structures/shopify/help-center is built from run 20261016T213535Z-help-en-ar-html-md, which fetched pages
+S02-SH-611	stated	structures/shopify/help-center is built from run 20261016T213535Z-help-en-ar-html-md, which fetched pages
 S02-SH-N01	shipped	structures/shopify/admin-graphql-schema holds https://shopify.dev/admin-graphql-direct-proxy/2026-10: the address is code or a schema the platform ships
 S02-SH-N02	shipped	structures/shopify/admin-graphql-schema holds https://shopify.dev/admin-graphql-direct-proxy/2026-10: the address is code or a schema the platform ships
 S02-SH-N03	shipped	structures/shopify/admin-graphql-schema holds https://shopify.dev/admin-graphql-direct-proxy/2026-10: the address is code or a schema the platform ships
@@ -1135,6 +1158,35 @@ S02-WC-224	shipped	a file of the WooCommerce release
 S02-WC-225	shipped	a file of the WooCommerce release
 S02-WC-226	shipped	a file of the WooCommerce release
 S02-WC-227	shipped	a file of the WooCommerce release
+S02-WC-228	official page	the address is a terms, policy, legal or pricing page
+S02-WC-229	stated	the address is a docs, help or other page
+S02-WC-230	stated	the address is a docs, help or other page
+S02-WC-231	stated	the address is a docs, help or other page
+S02-WC-232	stated	the address is a docs, help or other page
+S02-WC-233	stated	the address is a docs, help or other page
+S02-WC-234	stated	the address is a docs, help or other page
+S02-WC-235	official page	the address is a terms, policy, legal or pricing page
+S02-WC-236	official page	the address is a terms, policy, legal or pricing page
+S02-WC-237	official page	the address is a terms, policy, legal or pricing page
+S02-WC-238	official page	the address is a terms, policy, legal or pricing page
+S02-WC-239	shipped	a file of the WooCommerce release
+S02-WC-240	shipped	a file of the WooCommerce release
+S02-WC-241	shipped	a file of the WooCommerce release
+S02-WC-242	shipped	a file of the WooCommerce release
+S02-WC-243	shipped	a file of the WooCommerce release
+S02-WC-244	shipped	a file of the WooCommerce release
+S02-WC-245	shipped	a file of the WooCommerce release
+S02-WC-246	shipped	a file of the WooCommerce release
+S02-WC-247	official page	the address is a terms, policy, legal or pricing page
+S02-WC-248	official page	the address is a terms, policy, legal or pricing page
+S02-WC-249	official page	the address is a terms, policy, legal or pricing page
+S02-WC-250	official page	the address is a terms, policy, legal or pricing page
+S02-WC-251	official page	the address is a terms, policy, legal or pricing page
+S02-WC-252	official page	the address is a terms, policy, legal or pricing page
+S02-WC-253	official page	the address is a terms, policy, legal or pricing page
+S02-WC-254	official page	the address is a terms, policy, legal or pricing page
+S02-WC-255	official page	the address is a terms, policy, legal or pricing page
+S02-WC-256	official page	the address is a terms, policy, legal or pricing page
 S02-ZD-001	official page	the address is a terms, policy, legal or pricing page
 S02-ZD-002	official page	the address is a terms, policy, legal or pricing page
 S02-ZD-003	official page	the address is a terms, policy, legal or pricing page
@@ -1307,6 +1359,25 @@ S02-ZD-169	official page	the address is a terms, policy, legal or pricing page
 S02-ZD-170	stated	the address is a docs, help or other page
 S02-ZD-171	stated	the address is a docs, help or other page
 S02-ZD-172	stated	the address is a docs, help or other page
+S02-ZD-173	stated	the address is a help centre's article
+S02-ZD-174	stated	the address is a help centre's article
+S02-ZD-175	stated	the address is a help centre's article
+S02-ZD-176	stated	the address is a help centre's article
+S02-ZD-177	stated	the address is a help centre's article
+S02-ZD-178	stated	the address is a docs, help or other page
+S02-ZD-179	official page	the address is a terms, policy, legal or pricing page
+S02-ZD-180	official page	the address is a terms, policy, legal or pricing page
+S02-ZD-181	stated	the address is a help centre's article
+S02-ZD-182	stated	the address is a help centre's article
+S02-ZD-183	stated	the address is a help centre's article
+S02-ZD-184	stated	the address is a docs, help or other page
+S02-ZD-185	stated	the address is a docs, help or other page
+S02-ZD-186	stated	the address is a docs, help or other page
+S02-ZD-187	stated	the address is a docs, help or other page
+S02-ZD-188	stated	the address is a docs, help or other page
+S02-ZD-189	stated	the address is a docs, help or other page
+S02-ZD-190	stated	the address is a docs, help or other page
+S02-ZD-191	stated	the address is a docs, help or other page
 S02-ZD-N01	stated	the address is a docs, help or other page
 S02-ZD-N02	stated	the address is a help centre's article
 S02-ZD-N03	stated	the address is a help centre's article

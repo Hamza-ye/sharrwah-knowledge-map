@@ -134,13 +134,15 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 | --- | --- | --- | --- | --- | --- | --- |
 | RD1-1: (a) and (d), all five platforms | 205 | 74 | 17.8 | 2.8 | 3 | 52 |
 | RD3-1: (f) and (g), Shopify | 264 | 65 | 15.2 | 4.1 | 37 | 76 |
-| RD1-2: (b), all five platforms | 128 | 44 | 8.3 | 2.9 | 4 | 39 |
+| RD1-2: (b), all five platforms, with its re-read of 12 statements | 128 | 48 | 9.8 | 2.7 | 4 | 47 |
 | RD3-2: (f) and (g), Salla | 133 | 65 | 15.8 | 2.0 | 7 more (44) | 75 |
 | RD1-3: (c), Shopify and Salla | 216 | 59 | 15.0 | 3.7 | 11 more (18) | 69 |
 | RD1-4: (c), Zid, WooCommerce and BigCommerce | 198 | 72 | 17.5 | 2.8 | 1 more (19) | 72 |
 | RD3-3: (f) and (g), Zid and BigCommerce | 126 | 78 | 22.5 | 1.6 | 6 more (50) | 142 |
 | RD3-4: (f) and (g), WooCommerce | 98 | 57 | 12.2 | 1.7 | none (50) | 68 |
 | RD2-1: (e) and (g), Shopify | 184 | 46 | 8.1 | 4.0 | 4 | 31 |
+| RD2-2: (e) and (g), Salla, Zid, WooCommerce and BigCommerce | 163 | 67 | 12.0 | 2.4 | none (4) | 39 |
+| **Phase B's first pass** | **1,715** | **631** | **145.9** | **2.7** | **73** | **671** |
 
 **What RD1-1 taught:**
 - **One point per question held:** the five platforms' answers to "what fills the store's own country" fell under one variation point, as 30 fields and records and one gap, and the countries served and kept out under one each.
@@ -212,3 +214,9 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 **What WooCommerce's audit taught:**
 - **A held page was taken for unheld.** WordPress.com's Terms, which name WooCommerce's contracting entity, are held whole by the raw fetch in three runs. The browser was refused, and `method/held_index.py` judged the capture by the browser's status alone, so the auditor read them as unreadable. The tool now lists the raw body as readable, and the auditor reads the Terms for S02-WC-G01.
 - **A slip of the coordinator's:** a message to the auditor named a commit from memory, not from git; it was corrected in the next message. Commits are named only from `git rev-parse`.
+
+**What RD2-2 taught, and the first pass as a whole:**
+- **Phase B's first pass is complete:** 73 variation points (RD1 19, RD2 4, RD3 50), each with a row for every platform; 671 rows; every statement-bullet pair placed or noted; no checker error in any part.
+- **It cost 146 million tokens over 631 requests,** about 2.7 pairs a request, within the 150 to 300 million the frame set for phase B with its second pass.
+- **Parts kept to their size:** none passed 80 requests, and none stopped short. Parts that placed a platform under many earlier points cost more per pair (RD3-3, RD2-2); the first parts of each root decision cost least.
+- **Each part's lessons went into the brief before the next,** 14 rulings in all, and the statements earlier parts noted under a narrower rule are listed for the second pass (`b/second-pass.md`).
