@@ -193,9 +193,22 @@ class Held:
                 h = {"repo": "sharrwah-knowledge-map", "commit": "", "kind": "capture", "status": status, "redirect": "",
                      "location": f"{rel}/{r.get('dir', '')}/{r.get('text_file') or r.get('primary_file')}",
                      "readable": ok and status.startswith("2")}
+                holdings = [h]
+                # A page the browser was refused (a bot challenge) may still be held whole by the raw fetch: its body
+                # is readable where the raw fetch succeeded and the body holds more than a challenge page
+                raw_status = r.get("http_raw") or ""
+                if not h["readable"] and raw_status.startswith("2"):
+                    for raw in sorted(glob.glob(os.path.join(run, r.get("dir", ""), "raw*.html"))):
+                        if os.path.getsize(raw) > 20000:
+                            holdings.append({"repo": "sharrwah-knowledge-map", "commit": "", "kind": "capture",
+                                             "status": raw_status, "redirect": "", "readable": True,
+                                             "location": f"{rel}/{r.get('dir', '')}/{os.path.basename(raw)} "
+                                                         f"(the raw fetch; read it with method/quote_check.py --text)"})
+                            break
                 for u in {r.get("url", ""), r.get("final_url", "")}:
                     if u:
-                        self._add(u, dict(h))
+                        for x in holdings:
+                            self._add(u, dict(x))
 
     def lookup(self, url, _hops=0):
         """Every holding of an address, best first. A held redirect is followed once."""

@@ -39,7 +39,7 @@ REPOS = {"observed-sa": "/home/user/observed-sa", "observed-sh": "/home/user/obs
 HOSTS = {  # captured pages in this repository's runs, by the host they came from (a whole host or its subdomain)
     "shopify": r"(^|\.)(shopify\.(com|dev)|stripe\.com)$",
     "salla": r"(^|\.)salla\.(sa|com|dev)$",
-    "woocommerce": r"(^|\.)(woocommerce\.com|wordpress\.org|stripe\.com|woo\.com|automattic\.com)$",
+    "woocommerce": r"(^|\.)(woocommerce\.com|wordpress\.org|wordpress\.com|stripe\.com|woo\.com|automattic\.com)$",
     "zid": r"(^|\.)zid\.(sa|dev|eg)$",
     "bigcommerce": r"(^|\.)(bigcommerce\.com|bigcommerce\.co\.uk|commerce\.com|bitpay\.com)$",
 }
