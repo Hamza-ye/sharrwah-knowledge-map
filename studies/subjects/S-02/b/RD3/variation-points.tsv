@@ -1,0 +1,34 @@
+vp_id	bullet	question	x_words	raised_by	note
+S02-VP-41	f	what "currency" takes its value per	currency | shopify: currency; Local currencies; store's default currency; exchange rate settings; base currency; shop currency	S02-SH-037	
+S02-VP-42	f	who sets "currency"	currency | shopify: currency; Local currencies; store's default currency; exchange rate settings; base currency; shop currency	S02-SH-055	
+S02-VP-43	f	what "languages" takes its value per	language | shopify: languages; language; store's default language; primary language; content translations	S02-SH-037	
+S02-VP-44	f	who sets "language"	language | shopify: languages; language; store's default language; primary language; content translations	S02-SH-055	
+S02-VP-45	f	what "domains" takes its value per	domain | shopify: domains; subfolders; URL structure; domain strategy; international domains; subfolders; web presence	S02-SH-037	
+S02-VP-46	f	who sets "domains"	domain | shopify: domains; subfolders; URL structure; domain strategy; international domains; subfolders; web presence	S02-SH-074	
+S02-VP-47	f	what "product availability" takes its value per	products | shopify: product availability; Catalogs; available products	S02-SH-037	
+S02-VP-48	f	who sets "product availability"	products | shopify: product availability; Catalogs; available products	S02-SH-071	
+S02-VP-49	f	what "pricing" takes its value per	prices | shopify: pricing; custom prices; Catalogs (product prices and publishing); local pricing; price percentage adjustments; Global-e pricing configurations	S02-SH-055	
+S02-VP-50	f	who sets "pricing"	prices | shopify: pricing; custom prices; Catalogs (product prices and publishing); local pricing; price percentage adjustments; Global-e pricing configurations	S02-SH-055	
+S02-VP-51	f	what "Discounts and gift cards" takes its value per	discounts and offers | shopify: Discounts and gift cards; Fixed amount discounts; discounts; discount codes	S02-SH-058	
+S02-VP-52	f	what "theme content" takes its value per	storefront design | shopify: theme content; theme customizations; theme; custom content; Hreflang tags; Section content; Online Store	S02-SH-037	
+S02-VP-53	f	who sets "theme content"	storefront design | shopify: theme content; theme customizations; theme; custom content; Hreflang tags; Section content; Online Store	S02-SH-055	
+S02-VP-54	f	what "Checkout profile and customer account configuration" takes its value per	checkout and customer accounts | shopify: Checkout profile and customer account configuration; Merchant of record disclaimer at checkout; Checkout and accounts	S02-SH-124	
+S02-VP-55	f	who sets "Checkout profile and customer account configuration"	checkout and customer accounts | shopify: Checkout profile and customer account configuration; Merchant of record disclaimer at checkout; Checkout and accounts	S02-SH-124	S02-SH-210 names only who is kept out of setting the merchant of record disclaimer at checkout: 'You can't hide or reword it, and no setting in your Shopify admin or your theme turns it off' (rule 5)
+S02-VP-56	f	what "taxes" takes its value per	taxes and duties | shopify: taxes; Duties and tax settings; tax-inclusive pricing and duty collection; Tax display; Duty collection; tax registration; duty calculation; Taxes and duties	S02-SH-037	
+S02-VP-57	f	who sets "duty collection"	taxes and duties | shopify: taxes; Duties and tax settings; tax-inclusive pricing and duty collection; Tax display; Duty collection; tax registration; duty calculation; Taxes and duties	S02-SH-075	
+S02-VP-58	f	what "shipping options" takes its value per	shipping | shopify: shipping options; shipping zones; shipping and fulfillment	S02-SH-057	
+S02-VP-59	f	who sets "shipping options"	shipping | shopify: shipping options; shipping zones; shipping and fulfillment	S02-SH-057	
+S02-VP-60	f	what "business entities" takes its value per	who sells to the buyer | shopify: business entities; business entity; merchant of record; Managed Markets	S02-SH-076	
+S02-VP-61	f	who sets "business entities"	who sells to the buyer | shopify: business entities; business entity; merchant of record; Managed Markets	S02-SH-076	
+S02-VP-62	f	what "Markets for a customer" takes its value per	market selection | shopify: Markets for a customer; their market; backup region; country selector; redirected	S02-SH-120	
+S02-VP-63	f	who sets "Markets for a customer"	market selection | shopify: Markets for a customer; their market; backup region; country selector; redirected	S02-SH-120	
+S02-VP-64	f	who sets "discounts"	discounts and offers | shopify: Discounts and gift cards; Fixed amount discounts; discounts; discount codes	S02-SH-188	
+S02-VP-65	f	what "local payment methods" takes its value per	payment methods offered to buyers | shopify: local payment methods; local methods of payment; payment methods	S02-SH-220	
+S02-VP-66	f	who sets "local methods of payment"	payment methods offered to buyers | shopify: local payment methods; local methods of payment; payment methods	S02-SH-209	
+S02-VP-67	f	what "the checkout shipping and billing address form" takes its value per	the buyer's address | shopify: checkout shipping and billing address form; address autocompletion feature; address validation feature; additional address fields	S02-SH-242	
+S02-VP-68	f	who sets "address autocompletion feature"	the buyer's address | shopify: checkout shipping and billing address form; address autocompletion feature; address validation feature; additional address fields	S02-SH-240	S02-SH-242 and S02-SH-244 name only who is kept out of setting the address fields and validations (rule 5): 'You can't change which additional fields are included or whether a field is required' (S02-SH-242); 'can't be deactivated unless the store is on the Shopify Plus plan' (S02-SH-244). Both are placed under the point what 'the checkout shipping and billing address form' takes its value per
+S02-VP-69	f	who sets "the Markets permission"	staff access | shopify: the Markets permission	S02-SH-238	
+S02-VP-70	f	what "inventory and fulfillment priorities" takes its value per	locations | shopify: inventory and fulfillment priorities	S02-SH-284	
+S02-VP-71	f	what "Returns and cancellations" takes its value per	returns and cancellations | shopify: Returns and cancellations; return policy profile	S02-SH-305	
+S02-VP-72	f	who sets "Returns and cancellations"	returns and cancellations | shopify: Returns and cancellations; return policy profile	S02-SH-305	
+S02-VP-73	f	what "Customer privacy" takes its value per	privacy and consent | shopify: Customer privacy; Cookie banner; Data sharing opt-out	S02-SH-307	
