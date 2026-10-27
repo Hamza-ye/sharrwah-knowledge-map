@@ -237,6 +237,8 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 | ZD-2: checkout and customer accounts; contact information shown to buyers; domain; language; locations; market selection | 11 | 11 | 6 | 66 | G10 to G13 | 117 | 29.6 |
 | SA-1: the store's data; the store's defaults; the store's taxes; who sells to the buyer; returns and cancellations | 7 | 7 | 4 | 82 | G05 to G07 | 63 | 15.7 |
 | SH-1: the countries served; the store's data; a market; the buyer's address; and two leads | 4 | 4 | 2 | 107 | G06, G07 and G08, in place of G04, G03 and G05, whose pages it read | 180 | 53.5 |
+| BC-1: the store's own country (who sets, checks and changes it); documents and checks; payouts; taxes on the platform's fees; the store's data; the store's defaults; the store's taxes | 9 | 9 | 3 | 46 | G04 to G08, four of them on Help Center articles that rendered empty | 79 | 14.6 |
+| WC-3: products; discounts and offers; storefront design; contact information shown to buyers; locations; market selection | 10 | 10 | 10 | 55 | none | 98 | 18.9 |
 
 **What WC-1 taught:**
 - **Our labels aren't the platform's words.** The brief said to search a kind's own name, and the part asked whether "who sells to the buyer" was one. The brief now says the kind's head word is searched, such as `domain` or `currency`, and our longer labels aren't.
@@ -267,3 +269,18 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 - **It ran past its stop, to 180 requests and 53.5 million, the costliest part so far.** Every request of a long run reads its whole context again, here about 300 thousand tokens a request on average. The launch message's stop, "after about 110 requests", wasn't counted. The coordinator asked it to finish and report, and it had written every row by then. Launch messages now ask each part to count its tool calls and to stop at about 100, leaving the rest to a fresh agent.
 - **A route can hold less than its gap needs.** G04 named the address service's answer of every country's address fields, which the part recorded in full, as 23 statements. That answer came from an admin page. The checkout's own call returns only each country's name, code and phone prefix. So the format the checkout applies to a buyer's address stays a gap (G06), which a checkout per buyer country would close on a capture store. That is work for the local agent; the coordinator decides after gap-closing.
 - **Leads and gaps under (h) had no row in `a2.tsv`.** The checker counts a gap as searched by gap-closing only when an `a2.tsv` row names it, and G08, under (h), has no variation point. The part filed it under S02-VP-27 to clear the error. `a2.tsv` now takes a row whose `vp_id` is `none` for a lead's statements and an (h) gap; the checker and the brief say so, and G08 moved there.
+
+**What BC-1 and WC-3 taught:**
+- **A platform whose documents cover its settings answers every row.** WC-3 gave all ten of WooCommerce's rows statements and left no gap: products, coupons, design, contact details, pickup locations, and the customer's default location.
+- **A route may name pages that don't exist.** G01's and G02's routes named endpoint pages missing from BigCommerce's docs index. BC-1 found the real ones through `llms.txt`.
+
+**The render failed some sites, not only the pages it was blamed on** (the coordinator, 27 October):
+- **What happened.** BC-1 found that every BigCommerce Help Center article not held rendered as an empty page, and ZD-1 had found that Zid's pricing pages rendered only Zid's error text. In this session the browser's own requests for those sites' scripts came back as HTTP 400, or aborted, while the same requests made outside the browser succeeded. So the pages never ran their scripts.
+- **The fix.** `method/capture/render.mjs` and `page_text.mjs` now fetch every request with Playwright's own request client and hand its answer to the page. Pages that rendered before render the same, and the Help Center article went from 0 characters to 17,870, Zid's pricing page from 50 to 4,725.
+- **What it had hidden.** 45 pages were captured again with the fix:
+  - BigCommerce's five Help Center articles behind G04, G05, G07 and G08, now read by a short part, BC-1b;
+  - Zid's pricing pages, read by ZD-3;
+  - 24 zid.sa and zid.eg pages held until then only as an error text.
+- **What agents had read in its place.** Agents had read those pages' raw HTML. 130 of the 135 Zid quotes from them are in the pages as shown, and three more are FAQ answers shown on a click. But zid.eg's Terms page holds the Saudi Terms in its raw HTML, and its scripts replace them with the Terms of شركة زد مصر, under Egyptian law, in Egyptian pounds. So S02-ZD-179 and S02-ZD-180 quote text the page doesn't show. The absence audit confirmed S02-ZD-G03 (who contracts with a merchant outside Saudi Arabia) on them, and is to be redone.
+- **The rule now in phase A's brief:** quote a raw file only for what the rendered page shows, or shows on a click; a page that renders empty or as an error isn't read from its raw file instead.
+- **A slip of the coordinator's, again:** a message to an agent named the new run from memory, and was corrected in the next message. Run names, like commits, are named only from the file system.
