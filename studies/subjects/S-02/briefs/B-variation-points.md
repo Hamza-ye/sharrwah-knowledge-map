@@ -1,14 +1,18 @@
 # Brief: S-02, variation points and variants (step 1, phase B)
 
-This is `PLAN.md` Stage 4, subject S-02. You are one agent with one task.
+This is `PLAN.md` Stage 4, subject S-02. You are one agent with one task: one root decision, which the message that started you names. Two other agents work on the other two, each in its own folder.
 
 **Read only this brief and, in `studies/subjects/S-02/`:**
-- `bullets.tsv`, the questions phase A asked of each platform, and `limits.tsv`;
-- the five platforms' phase A outputs in `{shopify,salla,woocommerce,zid,bigcommerce}/`: `statements.tsv`, `terms.tsv`, `absences.tsv`, `gaps.tsv` and `citations.tsv`;
-- `kinds.tsv`, which gives each statement's and each absence's kind by rule;
+- `bullets.tsv`, the questions phase A asked of each platform;
+- your root decision's slice, `slices/<root decision>/`, cut from the five platforms' phase A files by `method/subject_slice.py`:
+  - `statements.tsv`: every statement under one of your decision's bullets, with its `platform` and its `kind` (by rule, from `kinds.tsv`);
+  - `gaps.tsv` and `absences.tsv`: those under your decision's bullets, with their platform (and an absence's kind);
+  - `terms.tsv`: every platform's terms;
 - in the second pass, each platform's `a2.tsv` and `absence-audit.tsv`.
 
-Don't read `notes.md` files, `recorded.tsv` files, or any `note` column.
+Don't read the platforms' own folders (apart from `a2.tsv` and `absence-audit.tsv` in the second pass), `notes.md` files, `recorded.tsv` files, or any `note` column. The slices hold no notes.
+
+**Large slices:** look rows up with grep or a short script where you can, rather than reading a slice whole more than once.
 
 ## The subject
 
@@ -67,7 +71,7 @@ Statements under (h) are conditions, not variants: a variant rests on at least o
    - `scope` is as the statements give it. If they differ, list each scope with its `stmt_ids`, `;`-separated.
 6. **No inference,** no ranking and no causes, anywhere, including notes.
 7. **Write as you go.** Write each variation point and variant to the files as soon as it is placed. If you are stopped, your files must hold everything done so far, and the next run continues from them.
-8. **Stop and report** past 35 variation points (`limits.tsv`).
+8. **Stop and report** past 15 variation points of your own.
 
 ## Second pass, after phase A2
 
@@ -78,14 +82,24 @@ When the coordinator says phases A2 and A3 are done, read each platform's `a2.ts
 
 Record what changed in `notes-b.md`.
 
-## Output, in `studies/subjects/S-02/`
+## Output, in `studies/subjects/S-02/b/<root decision>/`
 
-All files are tab-separated, with a header row and no quoting. Tabs and newlines never appear inside a field.
+All files are tab-separated, with a header row and no quoting. Tabs and newlines never appear inside a field. Each root decision has its own range of ids, so the three folders can be joined:
+
+| Root decision | Variation points | Variants |
+| --- | --- | --- |
+| RD1 | S02-VP-01 to S02-VP-29 | S02-V-001 to S02-V-299 |
+| RD2 | S02-VP-30 to S02-VP-49 | S02-V-300 to S02-V-499 |
+| RD3 | S02-VP-50 to S02-VP-79 | S02-V-500 to S02-V-899 |
 
 | File | Columns |
 | --- | --- |
-| `variation-points.tsv` | `vp_id` (S02-VP-01…) · `bullet` (one of `a` to `f`) · `question` · `x_words` · `raised_by` (stmt_ids) · `note` |
-| `variants.tsv` | `variant_id` (S02-V-001…) · `vp_id` · `platform` (`shopify`, `salla`, `woocommerce`, `zid` or `bigcommerce`) · `variant` (an excerpt, `absent`, `gap` or `not covered`) · `stmt_ids` · `basis` (every basis that holds, `;`-separated) · `basis_evidence` · `kind` · `scope` · `gap_ids` · `absence_ids` · `note` |
+| `variation-points.tsv` | `vp_id` · `bullet` (one of your decision's bullets from `a` to `f`) · `question` · `x_words` · `raised_by` (stmt_ids) · `note` |
+| `variants.tsv` | `variant_id` · `vp_id` · `platform` (`shopify`, `salla`, `woocommerce`, `zid` or `bigcommerce`) · `variant` (an excerpt, `absent`, `gap` or `not covered`) · `stmt_ids` · `basis` (every basis that holds, `;`-separated) · `basis_evidence` · `kind` · `scope` · `gap_ids` · `absence_ids` · `note` |
 | `notes-b.md` | Merges; partial overlaps that were split; candidates kept as notes; `not covered` rows; problems with the method. |
 
-**Before you finish,** run `python3 -I method/check_subject.py studies/subjects/S-02 <a folder in your scratchpad>`, and fix every line of level `error` whose file is `variation-points.tsv` or `variants.tsv`.
+**Before you finish,** check your files on a copy:
+1. Copy `studies/subjects/S-02` to `<a folder in your scratchpad>/S-02`.
+2. Run `python3 -I method/merge_slices.py <that folder>/S-02 b`, which joins whatever `b/` folders exist into the copy's `variation-points.tsv` and `variants.tsv`.
+3. Run `python3 -I method/check_subject.py <that folder>/S-02 <an output folder> $(ls -d evidence/product-class/runs/*)` from the repository's root.
+4. Fix, in your own `b/<root decision>/` folder, every line of level `error` on one of your ids. Lines on the other decisions' ids, and the line listing statements under no variation point, are for the coordinator, who joins the three when all are done.
