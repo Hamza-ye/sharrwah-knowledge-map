@@ -868,3 +868,24 @@ None. S02-WC-253, first noted as one (X: the export laws on technical data; ques
 ### Searches for earlier platforms' rows (part RD1-S3)
 
 None: the second pass raises no point, and every row written here is of Zid, WooCommerce or BigCommerce, under (c).
+
+### Rechecks (part RD1-S3)
+
+Rows compared with a statement of their own platform were rechecked under rule 5: each joined statement names its row's decider in its own words, or, where said, by its scope: S02-BC-281 (S02-V-234, 'Merchants in India'); S02-WC-246 (S02-V-212 and S02-V-217, 'Your store address'); S02-WC-247 (S02-V-190, 'where you reside'); S02-WC-253 and S02-WC-254 (S02-V-192, 'the country in which you reside', 'your country of residence'); S02-WC-317 (S02-V-201, 'If your WooPayments account is in'); S02-WC-433 (S02-V-209, 'get_base_country()'); S02-ZD-178 (S02-V-187, 'مسجّلة في المملكة العربية السعودية'; my translation: registered in Saudi Arabia); S02-ZD-210 (S02-V-185, 'لتجار المملكة العربية السعودية'; my translation: to the merchants of Saudi Arabia); S02-ZD-220 (S02-V-171, every store, 'كافة المتاجر والتُجّار'; my translation: all stores and merchants). Each keeps its row's basis, `answers`.
+
+### This section's order (part RD1-S3)
+
+The subsections '### Place tasks: zid (a), (b) and (d)', '### Candidates for a new point', '### Searches' and '### Rechecks (part RD1-S1)', between 'Revisit S02-V-233' and 'Revisit S02-V-236' above, are part RD1-S1's, appended while this part ran, without a heading of their own. The rest under '## Second pass, RD1-S3' is this part's.
+
+### Problems with the method (part RD1-S3)
+
+1. A revisit with no answer and no gap. S02-V-237 (bigcommerce, S02-VP-16): its three leads name no decider, and its `why` names no gap or absence, so none of the brief's four replacements applies. The row stays `not covered`, rewritten with a note; the coordinator decides whether it goes back to gap-closing.
+2. Sites as deciders. zid.eg's Terms and Privacy Policy (S02-ZD-367 to S02-ZD-385), the pricing pages of zid.sa and zid.eg and zid.sa's country pages (S02-ZD-347 to S02-ZD-353, S02-ZD-389 to S02-ZD-394, S02-ZD-436, S02-ZD-440, S02-ZD-443) and Zid Syria's page (S02-ZD-420 to S02-ZD-423) have scopes that name a site, which rule 4 keeps out of `every store`, and a site is outside rule 1's table of deciders. So they are noted, each named in its point's note. What zid.eg's pages bind (Zid Egypt as the contracting party, Egypt's law and courts, fees in Egyptian pounds with VAT, Zid Egypt as the data controller) stands only in notes; S02-ZD-G03's and S02-ZD-G08's gap rows remain.
+3. The headings of Zid Payments' sections ('For our Saudi Superstars', 'For our Kuwait Crew', 'لنجومنا السعوديين', 'لطاقمنا الكويتي') are read, as part RD1-4 read them (S02-ZD-112), as not saying they are the merchants. Read as the merchant's place, S02-ZD-398, S02-ZD-400, S02-ZD-401, S02-ZD-407, S02-ZD-408, S02-ZD-411, S02-ZD-413, S02-ZD-414, S02-ZD-418 and S02-ZD-419 would answer S02-VP-10, S02-VP-13 or S02-VP-15.
+4. The laws a merchant must comply with are read, as part RD1-4 read S02-SA-209, as the law that applies under the terms (S02-VP-09): S02-ZD-218, S02-ZD-220 and S02-WC-253, marked in their rows.
+5. An x_words slip, corrected: 'country of operation', a decider, not X, was added to S02-VP-13's x_words for bigcommerce with `xwords`, and taken out again by a script run under the folder's lock, since the tool can't remove words. S02-VP-13's x_words for bigcommerce read 'your initial payout'.
+6. Ids: this part's new rows are S02-V-281 to S02-V-297. It raised no point.
+
+### Check (part RD1-S3)
+
+On a copy holding only `b/RD1`: `merge_slices.py` merged 19 points and 297 rows; `check_subject.py` gave no line of level `error`, 17 warnings (phase A's quote lengths) and 14 reviews (quotes found only in a page's source, the coordinator's; and RD2's and RD3's statements, whose folders the copy leaves out); its `unplaced.tsv` holds no row of RD1. `second_pass_list.py --check`: RD1 has no revisit, reread or note task without a row in `done.tsv`.

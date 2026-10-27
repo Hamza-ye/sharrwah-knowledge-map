@@ -1,7 +1,7 @@
 part	root_decision	bullets	platforms	tasks	count	effective	status
 RD1-S1	RD1	a; b; d	shopify; salla; zid; woocommerce; bigcommerce	every task under (a), (b) and (d)	158	198	done
 RD1-S2	RD1	c	shopify; salla	every task under (c) for Shopify and Salla	83	138	done
-RD1-S3	RD1	c	zid; woocommerce; bigcommerce	every task under (c) for Zid, WooCommerce and BigCommerce	106	168	running
+RD1-S3	RD1	c	zid; woocommerce; bigcommerce	every task under (c) for Zid, WooCommerce and BigCommerce	106	168	done
 RD2-S1	RD2	e; g	shopify; salla; zid; woocommerce; bigcommerce	every task	210	217	done
 RD3-S1	RD3	f; g	shopify	every Shopify task	66	487	done
 RD3-S2	RD3	f	woocommerce	every WooCommerce task under (f)	41	321	done
@@ -9,3 +9,4 @@ RD3-S3	RD3	g	woocommerce	every WooCommerce task under (g)	134	134	done
 RD3-S4	RD3	f; g	zid	every Zid task	40	269	done
 RD3-S5	RD3	f; g	bigcommerce	every BigCommerce task	72	157	done
 RD3-S6	RD3	f; g	salla	every Salla task	67	90	running
+RD1-S4	RD1	c	zid	the 51 reread tasks under (c) for Zid whose why names rule 4's widening of 27 October 2026 (sites, pages and sections tied to one country)	51	51	running
