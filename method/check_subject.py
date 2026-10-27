@@ -486,10 +486,16 @@ if var is not None:
                 err("variants.tsv", i, f"basis '{r['basis']}' is not one or more of {sorted(BASES)}")
             if not r["basis_evidence"]:
                 err("variants.tsv", i, "basis_evidence is empty")
-            if any(stmts.get(x, {}).get("bullets", set()) & NOPART and not stmts[x]["bullets"] & ASK
-                   for x in ids(r["stmt_ids"])) and bs != ["answers"]:
-                err("variants.tsv", i, f"a variant resting on a {'/'.join(f'({b})' for b in of_role('no-part'))} "
-                                       "statement takes the basis 'answers'")
+            nopart = [x for x in ids(r["stmt_ids"])
+                      if stmts.get(x, {}).get("bullets", set()) & NOPART and not stmts[x]["bullets"] & ASK]
+            # a row resting only on no-part statements takes `answers` alone; a row that also holds other statements
+            # lists every basis that holds (rule 5), `answers` among them, so that one answer stays one row (rule 4)
+            if nopart and len(nopart) == len(ids(r["stmt_ids"])) and bs != ["answers"]:
+                err("variants.tsv", i, f"a variant resting only on {'/'.join(f'({b})' for b in of_role('no-part'))} "
+                                       "statements takes the basis 'answers' alone")
+            elif nopart and "answers" not in bs:
+                err("variants.tsv", i, f"a variant holding a {'/'.join(f'({b})' for b in of_role('no-part'))} "
+                                       "statement has the basis 'answers' among its bases")
             sids = ids(r["stmt_ids"])
             if not sids:
                 err("variants.tsv", i, "no stmt_ids")

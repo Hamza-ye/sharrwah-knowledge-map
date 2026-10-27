@@ -152,7 +152,7 @@ Statements under (h) are conditions, not variants: a variant rests on at least o
    - **(g).**
      - **A statement that a setting holds for the whole store** is the platform's answer under each of RD3's `what "X" takes its value per` points it applies to. Its `variant` is an excerpt of it, and its `basis_evidence` names `the whole store`. Where no such point's X is of its setting's kind, it raises one. Where it also names who sets that setting, it answers the setting's `who sets "X"` point too.
      - **A statement that the platform has no market of the kind in (e)** is its answer under each of RD2's points it applies to. Its `variant` is an excerpt of it, and its `basis_evidence` names `no market`. Where no RD2 point exists yet, it raises `what defines "X"`, with X the platform's words for the market it lacks.
-     - **Basis.** Either takes the basis `answers` alone.
+     - **Basis.** A row resting only on such statements takes the basis `answers` alone. A row that also holds other statements lists every basis that holds (rule 5), `answers` among them, so that one answer stays one row.
      - **The other half.** A statement under (g) in your root decision's slice that holds the other decision's half is noted, as rule 2 says.
 5. **Matching.** Compare each statement with a statement in the variation point's `raised_by` from another platform, where there is one. Record every basis that holds, with the words that show it in `basis_evidence`. Where `raised_by` holds no other platform's statement yet, the basis is `answers`.
    - `term`: the same term, including a platform's own translation from `terms.tsv`. It fails when the two platforms' definitions in `terms.tsv` differ.

@@ -410,9 +410,14 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 | RD3-S5: (f) and (g), BigCommerce | 72 | 157 | 52 | 7.8 | 3.0 |
 | RD3-S1: (f) and (g), Shopify | 66 | 487 | 71 | 14.7 | 6.9 |
 | RD3-S2: (f), WooCommerce | 41 | 321 | 38 | 6.6 | 8.4 |
+| RD3-S3: (g), WooCommerce | 134 | 134 | 48 | 7.7 | 2.8 |
 
 **What the two pilots taught:**
 - **The tool and the order tripled the rate:** about three statements a request, against about one in the dry run, at about 0.05 million a statement. At that rate the second pass comes to about 115 million in all, inside the frame's 100 to 160.
 - **Some statements answer a question no point asks:** under (c), statements on returns and on Salla's national address; under (f), BigCommerce's order statuses, and who sets units or the store's country. The second pass raises no point, so they are noted. From RD3-S1 on, each part lists them under "Candidates for a new point" in `notes-b.md`, and the coordinator decides on them when the pass ends.
 - **Matching the first pass's deciders took new rows:** RD1's first parts split the store's country finely (its country, its location, where the business is based), so RD1-S2 gave six new answer rows to keep to the same split.
 - **Each part marks its readings in the row** (`basis_evidence`): for example, a law named only as its country's own is read as part of X, not as a limit on which stores, so Salla's and Shopify's privacy statements answer `every store`.
+
+**What RD3-S2 and RD3-S3 taught:**
+- **A revisit's leads may answer nothing.** Six of WooCommerce's revisited rows had leads that answered other points, and no gap or absence, so they stayed `not covered`. RD3-S3's statements under (g) answered two: who sells to the buyer, and returns, each for the whole store. The four left (who sets the business entity, market selection's two points, and apps) take a gap when the pass ends, so that phase C reads what is missing rather than a blank.
+- **A checker rule split one answer into two rows.** It wanted `answers` alone on any row holding a statement under (g), so RD3-S3 could not join such statements to rows that also match by `term`, and wrote two rows that repeat answers already held. The rule now binds only rows that rest on statements under (g) alone, as rule 4 meant, and the coordinator joined the two rows to the rows they repeat (`b/RD3/notes-b.md`).

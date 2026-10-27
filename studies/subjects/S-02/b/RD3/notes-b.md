@@ -976,3 +976,7 @@ None: the second pass raises no point, so no search for earlier platforms' rows 
 - **A sales channel read as a market.** S02-V-791 reads S02-ZD-280's sales channel (Zid Cashier or the online store) as a market the store sells into, since bullet (e) names a channel among what defines a market; the first pass read only 'لكل سوق وقناة' so.
 - **The Region & Language popup.** Its country and city are read as the buyer's country, not a market, as S02-ZD-G13 reads the popup; RD2's parts may read S02-ZD-187 and S02-ZD-191 (also under e) otherwise.
 - **Ids.** This part's new rows are S02-V-1064 to S02-V-1076 and S02-V-1087 to S02-V-1091; S02-V-1077 to S02-V-1086 went to RD3-S2, which ran beside it.
+
+## Second pass, the coordinator's merge (27 October)
+
+- S02-V-1085 and S02-V-1086, which RD3-S3 gave their own rows under S02-VP-42 because the checker then wanted `answers` alone on any row holding a statement under (g), give the same answers as S02-V-896 (the seller) and S02-V-897 (the platform). Rule 4 keeps one answer in one row, so their statements joined those rows, with their evidence, and the two rows were removed. The checker and rule 4's (g) basis now say: a row resting only on statements under (g) takes `answers` alone; a row that also holds other statements lists every basis that holds, `answers` among them.
