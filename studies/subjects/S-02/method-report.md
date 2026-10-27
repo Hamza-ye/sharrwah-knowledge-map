@@ -383,7 +383,7 @@ After the second pass:
 - **The lesson.** `CLAUDE.md` already says to look evidence up through each evidence repository's own guide (`docs/READING.md`). Before a gap goes to a capture request, every surface that guide lists is searched, and the tool is checked to reach it.
 
 **What A2-SH-H and A2-SA-H taught: held evidence first** (27 October, evening).
-- **Every lead the local agent gave for Shopify was borne out but one.** The admin's answers and code hold:
+- **Of the leads A2-SH-H read, every one was borne out but one.** Six it left unread, each named in `shopify/notes.md`. The admin's answers and code hold:
   - Managed Markets refused on every store held, for two reasons: an unsupported region, and no Shopify Payments;
   - which kinds of market each plan enables, and the limit on B2B catalogs;
   - the 100-market limit on the "All" condition;
