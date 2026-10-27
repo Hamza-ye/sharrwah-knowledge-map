@@ -473,6 +473,7 @@ Each takes markets only where the store has the feature `multi-countries`, which
 | RD3-S8: the coordinator's rulings: two new points for all five platforms, and 24 rereads | 26 | 40 | 47 | 7.1 | 0.9 |
 | RD3-S9: the last round, Salla | 27 | 40 | 53 | 8.2 | 0.8 |
 | RD3-S10: the last round, Zid, WooCommerce, BigCommerce and Shopify | 19 | 35 | 51 | 6.3 | 0.7 |
+| RD2-S2: the last round, RD2 | 20 | 30 | 34 | 4.3 | 0.9 |
 
 **What the two pilots taught:**
 - **The tool and the order tripled the rate:** about three statements a request, against about one in the dry run, at about 0.05 million a statement. At that rate the second pass comes to about 115 million in all, inside the frame's 100 to 160.
