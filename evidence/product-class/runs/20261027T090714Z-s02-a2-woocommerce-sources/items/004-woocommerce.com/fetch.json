@@ -1,0 +1,18 @@
+{
+ "n": 4,
+ "url": "https://woocommerce.com/document/configuring-woocommerce-settings/",
+ "dir": "items/004-woocommerce.com",
+ "fetched_at": "2026-10-27T09:07:17Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/configuring-woocommerce-settings/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 45123,
+ "cited_in": [
+  "S-02 gap-closing, WC-1: read"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "1dc3df3bec73d80b6fb9023a24781bb3156885c4a0aa1bef6e59898ba4cf6b9a",
+ "raw_ext": "html"
+}
