@@ -228,3 +228,62 @@ Item numbers are those of 20261012T045101Z-q1-zid-sources unless another run is 
 2. Live, not held (checked with `method/held_index.py` first), rendered through `method/capture/page_text.mjs`: https://help.zid.sa/buy-new-domain/ (شراء نطاق جديد ( لوحة التحكم الجديدة), last updated August 4, 2026) and the FAQ هل اقدر أغير رابط (دومين) المتجر لاسم نطاق (domain) خاص فيني؟ بدون zid.store ؟ (last updated February 27, 2024), found in ZD-1's copies of the help centre's sitemaps.
 3. As indexes only: ZD-1's decoded copies of the help centre's sitemaps (all-urls.tsv), searched for slugs on each group.
 4. The lead, live, not held: https://help.zid.sa/faqs/%d9%87%d9%84-%d9%8a%d8%b3%d8%aa%d8%b7%d9%8a%d8%b9-%d8%a7%d9%84%d8%b9%d9%85%d9%84%d8%a7%d8%a1-%d9%85%d9%86-%d8%ae%d8%a7%d8%b1%d8%ac-%d8%a7%d9%84%d8%b3%d8%b9%d9%88%d8%af%d9%8a%d8%a9-%d8%a5%d8%aa%d9%85/ (هل يستطيع العملاء من خارج السعودية إتمام عملية الدفع الإلكتروني في حال تفعيل زد باي ؟, last updated July 15, 2023), rendered.
+5. Checkout and customer accounts: checkout-page-options (097) in full; get-manager-profile's checkout_page_options.* policies (027); llms.txt's lines on checkout and Register Guest (044); national-address (20261027T065700Z-s02-a3-zid-sources item 009) in passages; zidpay-paymentpage (183), the security settings (076) and working-hours (173), their bodies, none recorded.
+6. Language: store-language (159) in full; the Region & Language Popup (20261027T071937Z-s02-a3-zid-sources-2 item 003) in passages; Localization (045): description, 200 example and schema; get-manager-profile's store_language_and_currencies.* policies; the compare-plans feature names on language, countries, locations and inventory (185); markets (136), store-design (157) and the Egypt page (190) in passages.
+7. Contact information: store-info-ksa (158), saudi-merchants (151) and gcc-merchants (128) in passages; the Terms (187) in passages; Store (060), its StoreCorePresenter; the settings category page (093). Live, not held: the category page الإعدادات > التواصل, rendered; its text lists no articles.
+8. Locations: withdrawal-priority (172) and shipping-adress (154) in full; checkout-page-options (097); jahez (132), national-address, store-info-ksa and shipping-settings (155) in passages; List Locations (043): description, 200 example and schema; View Order (067) in passages; get-manager-profile's inventory_locations.* policies; the compare-plans entries on inventory (185). Live, not held, found in the help centre's sitemaps, rendered: https://help.zid.sa/create-inventory-address/ and https://help.zid.sa/inventory-transfer/ (both last updated August 3, 2026), and the FAQ كيف يتم إدارة مخزون الفرع مع مخزن المتجر الإلكتروني؟ (last updated July 15, 2023).
+9. Market selection: the Region & Language Popup (20261027T071937Z-s02-a3-zid-sources-2 item 003) in full; markets (136) in passages; the compare-plans entry Customer Location (185); get-manager-profile's checkout_page_options.geolocation_service; llms.txt's line on the popup.
+
+#### What was found, by group
+
+- **Domain (S02-VP-45, S02-VP-46):** S02-ZD-227 to S02-ZD-246, citations S02-ZD-C377 to S02-ZD-C408, eight terms.
+  - The domain article (قائمة النطاقات): the domain is the online store's address (S02-ZD-227), reached at الإعدادات > رابط المتجر الألكتروني (S02-ZD-228); the merchant links a custom domain and changes its name servers (S02-ZD-229, S02-ZD-230); لا يمكن تفعيل أكثر من نطاق في نفس الوقت (S02-ZD-231, f;g); the default domain can be activated at any time (S02-ZD-232); a free domain request is reviewed by the team, one per store, on Growth and Professional (S02-ZD-233, S02-ZD-234, S02-ZD-238); a domain ending in sa is booked by the merchant (S02-ZD-235); renewal and change (S02-ZD-236, S02-ZD-237).
+  - The Terms' أسماء النطاقات (رابط المتجر): subdomains under zid.store (S02-ZD-239); the merchant answers for purchasing, activating and deactivating the domain (S02-ZD-240).
+  - The permission manage.store.custom.domain (S02-ZD-241); plans: compare-plans Custom Domain Linking (S02-ZD-242) and the store_domain.* policies of the profile's 200 example (S02-ZD-243).
+  - Live: the FAQ on changing the store's link (S02-ZD-244); buy-new-domain (S02-ZD-245). The sign-up articles for Saudi and Gulf users give the same words on the store's link (S02-ZD-246).
+  - No gap recorded. None of the pages names a market.
+- **Checkout and customer accounts (S02-VP-55, S02-VP-56):** S02-ZD-247 to S02-ZD-257, citations S02-ZD-C409 to S02-ZD-C430, three terms.
+  - checkout-page-options: the merchant controls the payment settings (S02-ZD-247); login by SMS, e-mail and WhatsApp (S02-ZD-248 to S02-ZD-250); the login pop-up, on by default (S02-ZD-251); guest checkout and its payment methods (S02-ZD-252); one-page checkout (S02-ZD-253); changing the customer type to a company, on the Professional plan (S02-ZD-254, S02-ZD-255). Plans of e-mail login and single-page checkout in the profile's 200 example (S02-ZD-256).
+  - The lead (S02-ZD-257): customers outside Saudi Arabia can complete electronic payment according to the activated networks and currencies, when Zid Pay is activated. Its id is added to the conditions of S02-ZD-130 (Zid Payments gateway) and S02-ZD-071 (the networks activated in Zid Pay).
+  - Gap S02-ZD-G10 (S02-VP-55, searched, not found): whether the checkout page options take a value per market or per buyer's country.
+- **Language (S02-VP-44):** S02-ZD-258 to S02-ZD-265, citations S02-ZD-C431 to S02-ZD-C442, four terms.
+  - store-language: the merchant activates English at الاعدادات > اللغات والعملات (S02-ZD-258); activating a language is not an automatic translation (S02-ZD-259); the article lists تحديد اللغة الأساسية للمتجر among what it teaches (S02-ZD-260).
+  - Localization's language and languages (S02-ZD-261, S02-ZD-262); the popup's zid.store.region.languages (S02-ZD-263); store_language_and_currencies.languages on Rise in the profile's 200 example (S02-ZD-264); compare-plans Message Language on Growth and Pro (S02-ZD-265).
+  - Recorded before and bearing on this point: S02-ZD-187 and S02-ZD-191 (customers change the store language), S02-ZD-014, S02-ZD-016, S02-ZD-214, S02-ZD-221.
+  - No gap recorded.
+- **Contact information shown to buyers (S02-VP-68, S02-VP-79):** S02-ZD-266 to S02-ZD-268, citations S02-ZD-C443 to S02-ZD-C445, two terms.
+  - store-info-ksa: the merchant edits the basic information shown to customers (S02-ZD-266); the e-mail, phone and commercial registration number show at the bottom of the store page (S02-ZD-267). saudi-merchants: بيانات التواصل under موثوقية المتجر (S02-ZD-268); gcc-merchants names موثوقية المتجر and gives no lines under it.
+  - Recorded before: S02-ZD-206 (the Terms: every store discloses its official contact means), S02-ZD-032 (the Store API's phone and e-mail). S02-ZD-282 (Jahez: each branch's phone number), recorded for S02-VP-78, bears on S02-VP-68 too.
+  - Gap S02-ZD-G11 (S02-VP-68, searched, not found): whether the contact details take a value per market.
+- **Locations (S02-VP-67, S02-VP-78):** S02-ZD-269 to S02-ZD-287, citations S02-ZD-C446 to S02-ZD-C473, five terms.
+  - withdrawal-priority: the path, the order of the warehouses set by the merchant, and the plans (S02-ZD-269 to S02-ZD-271).
+  - shipping-adress: warehouse management, the number of warehouses by plan, the default warehouse, and choosing the warehouse when an order turns ready (S02-ZD-272 to S02-ZD-275).
+  - Live: create-inventory-address (S02-ZD-276), inventory-transfer (S02-ZD-277 to S02-ZD-279), the FAQ on branch inventory with Zid Cashier (S02-ZD-280).
+  - checkout-page-options: pickup from a branch's inventory (S02-ZD-281); jahez: each branch's phone and working hours (S02-ZD-282); national-address: the warehouses inside Saudi Arabia take the short national address (S02-ZD-283).
+  - The API: a location's fulfillment_priority (S02-ZD-284) and an order's fulfillment location(s) (S02-ZD-285); compare-plans: Inventory Withdrawal Priority and Transfer Inventory Between Branches (S02-ZD-286, S02-ZD-287).
+  - Gap S02-ZD-G12 (S02-VP-67, searched, not found): whether the withdrawal priority takes a value per market, channel or city.
+- **Market selection (S02-VP-73, S02-VP-74):** S02-ZD-288 to S02-ZD-292, citations S02-ZD-C474 to S02-ZD-C478, two terms.
+  - The Region & Language popup: Require customer to select city manually, or a default city (S02-ZD-288); the countries API depends on the merchant's switch (S02-ZD-289); setRegion (S02-ZD-290); the popup is turned on in the theme (S02-ZD-291). Compare-plans Customer Location (S02-ZD-292).
+  - Recorded before: S02-ZD-024 (the customer sees the market's customization according to their country), S02-ZD-051, S02-ZD-187 to S02-ZD-191.
+  - Gap S02-ZD-G13 (S02-VP-73 and S02-VP-74, searched, not found): how a customer's market is found and who sets it.
+- **The (h) exception:** S02-ZD-130 (Rise, Zid Payments gateway) and S02-ZD-071 (activating the networks in Zid Pay; كي نت for establishments and companies only) now also name S02-ZD-257 in `conditions`.
+
+#### Searches, and how they were narrowed
+
+- Each group's two searches were run with `--max 100`; none passed it (the largest listed 71 documents, the first search on language). No search was narrowed by its terms.
+- Documents listed but not read are named in each point's `read` in `a2.tsv`, by their matches: the Accept-Language header and names per language in the API pages, فرع inside other words (الفرعي, فرعية), Zid's own support and contact pages, and customers' or consignees' contact details and countries.
+
+#### The lead
+
+- The FAQ هل يستطيع العملاء من خارج السعودية إتمام عملية الدفع الإلكتروني في حال تفعيل زد باي ؟ (item 4) answers S02-VP-55: recorded as S02-ZD-257 and named in that point's `a2.tsv` row. No gap of zid is routed to a capture request.
+
+#### Problems with the method
+
+- The live pages' quotes were tested against working copies with `method/quote_check.py`'s own `variants` and `html_text`, through a helper in the scratch folder, as ZD-1 did; the checker shows them as pending capture.
+- The help centre's category page الإعدادات > التواصل renders no article list in its text; its articles were found through the sitemaps instead.
+- The gaps S02-ZD-G10 to S02-ZD-G12 each name a setting that the pages read state with no market named; their kind, `searched, not found`, records that no page read states its value per market. S02-ZD-G13 records that no page read states how a customer's market is found.
+- The repository's HEAD moved during the run (the coordinator's checkpoints); held paths are cited at 00a87e3aa35463857a13342705714e963399a5c5.
+
+#### Check on a copy
+
+`python3 -I method/check_subject.py` on a copy at /tmp/claude-0/-home-user/9f45def8-b710-5f9c-84f3-6a0fa7e617c8/scratchpad/s02-a2-zd-2/check/S-02, output in /tmp/claude-0/-home-user/9f45def8-b710-5f9c-84f3-6a0fa7e617c8/scratchpad/s02-a2-zd-2/check/out (2026-10-27): no line of level error; 292 statements; 469 quotes found and 9 unresolved; 17 lines of level pending capture, the live citations S02-ZD-C404, S02-ZD-C405, S02-ZD-C430 and S02-ZD-C457 to S02-ZD-C462 and the statements S02-ZD-244, S02-ZD-245, S02-ZD-257 and S02-ZD-276 to S02-ZD-280 that cite them.

@@ -71,7 +71,7 @@ Display products in your store based on the customer location			S02-ZD-C324
 ربط دومين خاص	Custom Domain Linking	اربط دومين خاص (yourstore.com) بدلاً من النطاق الفرعي لتعزيز هوية علامتك التجارية وثقة عملائك.	S02-ZD-C400
 إدارة النطاق المخصص	Manage custom domain		S02-ZD-C399
 الشراء كزائر			S02-ZD-C419
-حسابات العملاء النهائيين (تسجيل الدخول باستخدام الرسائل النصية)			S02-ZD-C410
+حسابات العملاء النهائيين (تسجيل الدخول باستخدام الرسائل النصية)			S02-ZD-C411
 صفحة خيارات الدفع			S02-ZD-C409
 اللغة الأساسية للمتجر			S02-ZD-C437
 اللغة الإنجليزية (تفعيل اللغة الإنجليزية)			S02-ZD-C431
@@ -84,3 +84,5 @@ store languages (zid.store.region.languages)			S02-ZD-C440
 مخزن افتراضي			S02-ZD-C454
 مواقع المخزون; أماكن استلام منتجاتك; الاستلام من الفرع			S02-ZD-C457
 طلبات نقل المخزون; نقل المخزون بين الفروع	Transfer Inventory Between Branches		S02-ZD-C458;S02-ZD-C472
+Require customer to select city manually			S02-ZD-C474
+موقع العملاء	Customer Location	اعرف مواقع عملائك بدقة لتخصيص العروض وتحسين خدمات التوصيل.	S02-ZD-C478
