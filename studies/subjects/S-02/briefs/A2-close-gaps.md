@@ -24,7 +24,7 @@ Leave a `gap` row whose gaps are routed to a capture request (`who_can` `capture
 
 **For each group:**
 1. **Search the held corpora** with `python3 -I method/corpus_search.py <platform> <terms>`, two searches:
-   - **first, the group's own phrases:** the kind's own name, as a term even when it is one word (such as `domain`), and the kind's phrases from `x_words` and from your platform's `terms.tsv` and statements, each kept whole as one term, such as `"guest checkout"` or `"customer accounts"`, in every language your platform uses. Any other single generic word, such as "checkout" or "site", goes only after `--with`, beside the kind's name;
+   - **first, the group's own phrases:** the kind's head word, as a term even when it is one word (such as `domain` or `currency`; our longer labels, such as "who sells to the buyer", are ours, not the platform's, and aren't searched), and the kind's phrases from `x_words` and from your platform's `terms.tsv` and statements, each kept whole as one term, such as `"guest checkout"` or `"customer accounts"`, in every language your platform uses. Any other single generic word, such as "checkout" or "site", goes only after `--with`, beside the kind's name;
    - **then, the same terms with `--with market markets country countries`,** and your platform's own words for a market and a country.
 
    Read the titles and snippets. Past its cap, the tool lists only addresses: rerun with `--max` at the number of documents its last line reports, up to 300. Past 300, narrow the search by its terms, and say in `notes.md` how you narrowed it.
