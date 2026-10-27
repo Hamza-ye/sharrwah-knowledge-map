@@ -432,6 +432,7 @@ After the second pass:
 | RD3-S6: (f) and (g), Salla | 67 | 90 | 44 | 7.1 | 2.0 |
 | RD1-S4: (c), Zid, 51 rereads | 51 | 51 | 35 | 6.2 | 1.5 |
 | RD3-S7: (g), Salla and WooCommerce, 14 rereads | 14 | 14 | 24 | 2.5 | 0.6 |
+| RD3-S8: the coordinator's rulings: two new points for all five platforms, and 24 rereads | 26 | 40 | 47 | 7.1 | 0.9 |
 
 **What the two pilots taught:**
 - **The tool and the order tripled the rate:** about three statements a request, against about one in the dry run, at about 0.05 million a statement. At that rate the second pass comes to about 115 million in all, inside the frame's 100 to 160.
@@ -468,4 +469,13 @@ Four points now hold both `every store`, from zid.sa's own pages, and a country'
 - **The coordinator changed RD3's points while RD3-S7 ran.** It added the two new `who sets` points, below, then took them out again until the part had finished. So the part's first check flagged twelve errors on them, none on its own ids, and it checked a second copy. The lesson: the coordinator changes a root decision's folder only while no part of that decision runs.
 - **Five of its calls are readings,** for phase C to weigh, each marked in its row: handling withdrawal requests read as setting the store's returns (S02-WC-283, S02-VP-66); a staff permission over the store's notification settings placed under notifications to the merchant, not messages to buyers (S02-SA-419); the Meta pixel's connection as the platform's, the seller's part being to link the account (S02-SA-407); the Shop Manager role's default editable role, `customer`, read as what it is kept out of (S02-WC-473); and RD3-S2's split between who gives access while the store is in coming soon mode and whom that mode lets through (S02-WC-489, S02-WC-507).
 
-**The coordinator's rulings when the parts ended** (`b/second-pass.md`). The parts listed 35 statements that answer a question of their bullet for an X no point asks it of. Under (f) each setting has two points, so the coordinator raised the two missing `who sets` twins: S02-VP-91 for units and time zone, and S02-VP-92 for apps. RD3 now has 52 points, within its cap of 59. Personal data retention and a store's other legal pages are read under kinds that have their points: privacy and consent, and storefront design. The rest stay noted, each with its reason. Part RD3-S8 gives the two new points a row for every platform and reads the 24 statements again.
+**The coordinator's rulings when the parts ended** (`b/second-pass.md`). The parts listed 35 statements that answer a question of their bullet for an X no point asks it of. Under (f) each setting has two points, so the coordinator raised the two missing `who sets` twins: S02-VP-91 for units and time zone, and S02-VP-92 for apps. RD3 now has 52 points, within its cap of 59. Personal data retention and a store's other legal pages are read under kinds that have their points: privacy and consent, and storefront design. The rest stay noted, each with its reason. Part RD3-S8 gives the two new points a row for every platform and reads the 24 statements again. 
+
+**What RD3-S8 taught.**
+- **The two new points needed no search.** Every platform's answer came from the rereads or from the statements already placed under the twin points. S02-VP-91 has a row on all five platforms. S02-VP-92 has one on four. BigCommerce's only statement on apps names no one who installs them, so its row is `not covered` and goes to gap-closing (A2-SA-H).
+- **A point the coordinator raises must quote its X from a statement in `raised_by`.** Neither point did, and the checker refused both. The part added the statements their X is quoted from (S02-SH-246, S02-ZD-306).
+- **The coordinator's launch message reached the part unexpanded,** as the text of a shell command naming its file. The part read the file. The lesson: pass the message's text itself.
+- **Its readings,** for phase C to weigh:
+  - Salla's booking products' only time zone read as no one setting it (S02-V-1102);
+  - Shopify's permission to manage and install apps placed under apps by its own name (S02-SH-766);
+  - Zid's `manage.app.market.settings` read as a permission from the page it is listed on (S02-ZD-330).

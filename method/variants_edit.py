@@ -7,7 +7,8 @@ Commands (ids are `;`- or `,`-separated):
   rows VP_ID [PLATFORM]          print the point's rows, its question and x_words, compactly
   join VARIANT_ID --stmts IDS [--evidence TEXT]
                                  add statements to an answer row; its kind and scope are taken again from all its
-                                 statements (the brief's rule 6); TEXT is added to basis_evidence after "; "
+                                 statements (the brief's rule 6); TEXT is added to basis_evidence after "; ". A
+                                 statement the row already holds isn't added twice: only TEXT is
   add VP_ID PLATFORM --variant EXCERPT --stmts IDS --basis BASES --evidence TEXT [--note TEXT]
   add VP_ID PLATFORM --gap --gaps IDS [--note TEXT]
   add VP_ID PLATFORM --absent --absences IDS [--note TEXT]
