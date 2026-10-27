@@ -1,0 +1,107 @@
+# RD2
+
+## C-RD2
+
+**Keys whose cause is unknown**
+- S02-VP-26, `a group of customers`: Shopify gives it in its documentation (S02-V-409: S02-SH-036, S02-SH-060) and lacks it in its API's complete list of market condition types (S02-SH-N03). I follow the absence (a reading: the list is complete, and the "customer group" of S02-SH-036 stands beside the enum's other three values as the B2B company-location condition, S02-SH-069), so no platform gives the key, and no test of step 3 tags a key that all five agree in not giving. Followed the other way, it is vendor choice and a founder item ("What may define a market in Sharrwah?").
+- S02-VP-29, `the platform`, `a staff permission or role`, `no one`: blocked by Zid's gap S02-V-447 (S02-ZD-G05), the only Zid row of the point.
+
+**Points a blocked_by row would change**
+- S02-VP-29, row S02-V-447 (S02-ZD-G05: on Zid, who removes a market, and how). To settle the three keys it would need to show, for Zid:
+  - whether the platform (an account manager, support or the code) removes or switches off markets. For `the platform`: if Zid gives it, the four hosted platforms agree against WooCommerce; if not, vendor choice;
+  - whether a staff permission gates changing a market. For `a staff permission or role`: if Zid gives it, vendor choice; if not, market, pattern;
+  - whether some market, such as the default one, can't be removed. For `no one`: as for the permission.
+
+  All three keys are cheap, so what follows, left to the build, does not change.
+
+**Problems with the method or the tools**
+1. The tool counts a platform whose only row for a point is `absent` as `open` on every key that row doesn't exclude (S02-VP-27: WooCommerce, S02-V-449). The brief's `not stated` needs answer rows and its `open` needs gap or not-covered rows, so neither fits. On `a number of markets per store, set by plan` the tool gave unknown; I wrote business model by the coordinator's addition to test 4, which needs no WooCommerce statement.
+2. Test 4's addition under `what limits`: I read "also" as a case of its own, so it applies to plan-tied limits that only Shopify gives (`markets of some kinds only on some plans`, `a number of catalogs across B2B markets, set by plan`), where the tool proposed vendor choice. Either cause leads to "left to the build".
+3. Step 3 has no tag for a key that no platform gives, which happens once a contradiction is weighed toward the absence (S02-VP-26, `a group of customers`). Only unknown remains, and it follows as "kept open as a variation point until evidence settles it", though the evidence agrees.
+4. The rows phase B wrote for S02-VP-28 (who creates a market) don't match S02-VP-26's:
+   - They give the platform for Shopify, BigCommerce and WooCommerce, and for Salla only through its account manager. No Zid row gives it, though Zid's default market appears automatically (S02-ZD-012, a row of S02-VP-26).
+   - So `the platform` came out vendor choice. Read with S02-VP-26, every platform gives it, but the tool refuses no difference for a key that Zid gives no row for.
+   - Likewise, under S02-VP-29 no BigCommerce row names the seller's control panel, which makes `the seller` vendor choice there.
+5. Gaps that ask what a key holds, rather than for a key their platform lacks, mark no key: S02-ZD-G06 (S02-VP-26: what Zid's default market holds) and S02-SH-G12 (S02-VP-27: Shopify's numbers of markets per plan). `check` notes both.
+6. Under `what limits`, keys in the platforms' own words come one per rule: S02-VP-27 has 21 keys, 17 of them given by Shopify or BigCommerce alone.
+7. S02-VP-26's keys, which RD3's parts read, rest on these readings:
+   - Salla's region (المنطقة), which Salla doesn't define, is read as part of a country.
+   - Salla Point (S02-SA-180), which Salla doesn't describe, is keyed in its own words.
+   - Zid's sales-channel marketplaces (S02-ZD-146) are keyed `a channel`.
+   - BigCommerce's point-of-sale channels are keyed `a channel`, not `a location`.
+   - BigCommerce's storefronts per region or country (S02-V-455) are keyed `a storefront`, and its absence S02-BC-N01 is marked on `a country`, `several countries`, `a region` and `a city`.
+   - WooCommerce's default selling locations, all countries (S02-WC-018), are read as `a default market`.
+
+   Each row's cause_reading or note says where its reading changes a cause.
+
+# RD3
+
+## C-RD3-2
+
+S02-VP-55, 'a market the store sells into': unknown, blocked by S02-V-774 (Zid's gap S02-ZD-G10). It would need to show whether Zid's checkout page options (sign-in methods, the sign-in pop-up, guest checkout, one-page checkout) take a value per market. If they do, the four hosted platforms agree and WooCommerce differs (test 4, with S02-WC-339 as WooCommerce's statement); if they don't, Salla and Zid differ (vendor choice).
+
+S02-VP-57, 'the whole store': unknown by like with like, no row blocks it. Shopify gives the key only in observations of its store's Taxes and duties settings (S02-SH-983, S02-SH-984, S02-SH-985, S02-SH-994), the others in declarations. A Shopify declaration that a duty or tax setting holds for the whole store would make it no difference; without one, Shopify counts as not stating it, which would make it vendor choice (Shopify and BigCommerce differ).
+
+S02-VP-59, 'a market the store sells into': vendor choice on the reading that Zid's Region & Language popup (S02-ZD-187) sets the buyer's country, as RD3's rows read it. Read as RD2 reads it, as choosing a market, S02-V-781 would give the key, the four hosted platforms would agree, and the cause would be business model (WooCommerce's S02-WC-017); the founder item would stand either way, since both are expensive.
+
+S02-VP-59, revisited: S02-V-781 also takes 'لكل منتج' (S02-ZD-103, S02-ZD-104: shipping restrictions for each product or region), as S02-V-783 does under S02-VP-61, and S02-V-639 also takes 'specific products' (S02-SH-926). By the rule for 'same' the two are different keys, each vendor choice; both carry the same founder question. S02-VP-61, 'the whole store': unknown, no row blocks it. Only WooCommerce gives it, through S02-V-1078, a gateway read as a payment method (S02-WC-266); test 4 needs a WooCommerce statement of what it provides, and S02-WC-266 is advice on choosing a gateway. A WooCommerce statement that its payment methods or gateways hold for every buyer would make it business model.
+
+S02-VP-62, 'the seller': unknown, no row blocks it. Salla, Zid, Shopify and BigCommerce give it; WooCommerce's rows name only WooPay and Affirm, and no WooCommerce statement in the slice says what it provides on who sets local payment methods, so test 4 can't be shown. A WooCommerce row or statement on who turns payment methods on would settle it. S02-VP-62, 'Affirm': unknown, no row blocks it; S02-WC-319 gives Affirm's rule, not what WooCommerce provides. S02-VP-62, 'the platform': no difference rests on keying S02-V-785 (flagged: a limit on cash on delivery) as the platform's terms setting it, and Managed Markets (S02-V-648) as Shopify's own product.
+
+S02-VP-63, 'a market the store sells into': unknown, blocked by S02-V-961 (BigCommerce's gap S02-BC-G14). It would need to show whether a BigCommerce store can sell to buyers in a storefront or channel through a business or legal entity other than the merchant, or a merchant of record: if it can, market, pattern; if not, vendor choice. S02-VP-63, 'the whole store': unknown by like with like, no row blocks it: Shopify gives it only in observations (S02-SH-399 to S02-SH-401); a Shopify declaration that one entity sells for the whole store whatever the market would make it no difference.
+
+S02-VP-64: all three keys ('the seller', 'the platform', 'a staff permission or role') are unknown, blocked by S02-V-843 (BigCommerce's gap S02-BC-G14). It would need to show whether a BigCommerce store can sell through a business or legal entity other than the merchant, or a merchant of record, and who sets it. If the seller does, 'the seller' is no difference; if the platform or a permission does, those keys are market, pattern; if none does, each is vendor choice. WooCommerce gives 'the seller' (S02-WC-517, WooPayments onboarding) and lacks it (S02-WC-N02, its settings pages): followed by scope, the answer row for WooPayments.
+
+S02-VP-65, 'a market the store sells into': unknown, blocked by S02-V-1092 (Salla's gap S02-SA-G13) and S02-V-789 (Zid's gap S02-ZD-G22). They would need to show whether Salla's and Zid's exchange and return policies, or their order cancellation, take a value per market. If neither does, market, pattern; if both do, test 4 with WooCommerce's S02-WC-282; if one does, vendor choice. S02-VP-65, "the buyer's country": market, named rule by test 2 (S02-SH-491, 'EU right of withdrawal'), which no open gap changes.
+
+S02-VP-66, 'the platform': market, named rule by test 2 (S02-SH-491, 'EU right of withdrawal in Managed Markets'); the mechanical tests would give market, pattern, and what follows is the same. Method: under test 2 I read 'EU right of withdrawal' as naming a particular lawmaker's rule, the EU's, rather than generic wording; here and in S02-VP-65 the cause rests on that reading.
+
+## C-RD3-1
+
+Points S02-VP-41 to S02-VP-54, all written; check: 0 problems.
+
+Keys whose cause is unknown:
+- S02-VP-46 'the seller' (who sets domains): Salla, Zid, Shopify and BigCommerce give it (S02-SA-052; S02-ZD-240; S02-SH-074; S02-BC-116); WooCommerce's gap S02-WC-G08 (row S02-V-903) leaves it open. If WooCommerce names the merchant, the key is no difference; if not, it stays unknown, since no WooCommerce statement would say what it provides. Cheap either way: left to the build.
+- S02-VP-51 "the buyer's country" (discounts): unknown by like with like, not by a gap. Salla's one statement is observed (S02-SA-290), Zid's is shipped (S02-ZD-292), so the Salla-Zid agreement behind the tool's market, pattern sets an observation against a declaration. A declaration from Salla, or an observation from Zid, would settle it.
+
+Points a blocked_by row would change:
+- S02-VP-46: S02-V-903 (S02-WC-G08) would need to show whether WooCommerce's merchant sets the store's domain.
+- S02-VP-45: WooCommerce's gap (S02-V-902) changes no cause: Salla and Zid differ on both keys.
+
+Causes that depart from the tool, or rest on a weighing:
+- S02-VP-50 'the platform' (who sets pricing): written vendor choice, the tool gave market, pattern. Shopify's S02-SH-179 (select Dynamic to convert prices automatically at the current exchange rate) is placed only under S02-VP-42 (S02-V-605), while Salla's S02-SA-079 and Zid's S02-ZD-020, the same answer, sit under both points; read with it, Shopify gives the key and Shopify and BigCommerce differ.
+- S02-VP-43 "the store's own country" (languages): market, pattern rests on Shopify's one statement, S02-SH-230, marked shut down; test 3 doesn't apply, since BigCommerce's S02-BC-288 carries no marker. Set aside, the cause would be vendor choice.
+- S02-VP-49 "the buyer's country" (pricing): Zid gives it only through its Region & Language popup (S02-V-1090, S02-ZD-187). Read as RD2 reads the popup, as the buyer choosing a market, Zid would not give it and the cause would be market, pattern, not vendor choice. In S02-VP-44, S02-VP-47 and S02-VP-53 the popup's reading changes no cause, or only removes a cheap key.
+- Two-answer keying that decides a cause: S02-V-677 takes the whole store beside the buyer's country (S02-SA-243 and S02-SA-389 name the default currency set in the store's settings), making S02-VP-41's 'the whole store' no difference, not vendor choice; S02-V-696 takes the whole store beside a market (S02-SA-042: a market takes the main store's theme by default), making S02-VP-53's 'the whole store' vendor choice, not market, pattern.
+- S02-V-619 (Managed Markets) is keyed the platform: its statements name Managed Markets, Shopify's product, not Global-e; keyed as a third party, S02-VP-48's 'the platform' would be market, pattern.
+
+Problems with the method:
+- The tool doesn't apply like with like to the pair agreement of test 5 (S02-VP-51 above); I overrode it by a reading.
+- Keys in (e)'s vocabulary under (f): WooCommerce's Point of Sale and Google channel (S02-VP-47 'a location', 'a channel'; S02-VP-51 'a channel') and customer groups (S02-VP-49, S02-VP-51 'a group of customers'). A hosted platform whose S02-VP-26 rows name a channel, a location or a group as a market keys its own such rows a market, so it counts as not giving these keys: the comparison is of a channel, a point of sale or a group outside markets, and the founder items that follow depend on S02-VP-26.
+- Rows answering another question: S02-V-757, S02-V-758 and S02-V-814 (who converts amounts) are keyed by their parties, and their founder items are S-04's; S02-V-623 (Global-e edits its pricing configurations) is S-03's.
+
+## C-RD3-3
+
+Unknown keys, and the rows that hold them. S02-VP-67 'a market the store sells into': S02-V-1067 (S02-ZD-G12) would need to show whether Zid's withdrawal priority takes a value per market: if so, the four hosted platforms agree and WooCommerce differs (business model only with a WooCommerce statement of what it provides); if not, vendor choice. S02-VP-68 'the whole store': S02-V-792 (S02-ZD-G11), whether Zid's store contact details hold for the store (vendor choice) or per market (market, pattern). S02-VP-68 'a location': S02-V-792, Zid's only row, so Zid is open on every key: contact details per point of sale on Zid would make it vendor choice, none business model. S02-VP-69 'the whole store': no gap row; the twin S02-VP-70 gives Zid a store-level address method by a declaration (S02-ZD-142) and Salla one by an observation only (S02-SA-094); a declaration of Salla's or an observation of Zid's would let the Saudi pair be compared. S02-VP-71 'a market the store sells into' and 'the whole store': S02-V-795 (S02-ZD-G17), whether Zid's team permissions can be limited to a market. S02-VP-74 'the seller', 'the buyer', 'the platform': S02-V-798 (S02-ZD-G13), how a Zid customer's market is found and who sets it; all three are left to the build either way. S02-VP-75 'a market the store sells into': S02-V-799 (S02-ZD-G18), whether Zid's privacy settings take a value per market. S02-VP-76 'the whole store': S02-V-731 (S02-SA-G12), whether Salla holds one business address for the store (no difference) or per market (vendor choice). S02-VP-77 'the whole store': S02-V-801 (S02-ZD-G21), whether Zid's time zone and weight unit hold for the whole store (no difference) or not (vendor choice). Causes set against the tool's proposal, each by its reading: S02-VP-67 'the whole store' vendor choice (tool unknown), from the twin's S02-ZD-274; S02-VP-69 'the whole store' unknown (tool market, pattern), from the twin's S02-ZD-142 and S02-SA-094; S02-VP-72 'the platform' and S02-VP-74 'the Geolocation app' maturity (tool vendor choice), by test 3; S02-VP-76 'the whole store' unknown (tool vendor choice), from S02-SH-885 and S02-SH-246 under S02-VP-68. Problems with the method. (1) --coexistence-basis takes ids only, and the brief's 'cite each in coexistence_basis' sent my first explanations there; they now sit in the point's note. (2) The tool holds no difference only for a key every platform's own rows give, so a twin's statement that gives the missing platform the key can't make it no difference: S02-VP-70 'the platform' (S02-ZD-182) keeps vendor choice, and S02-VP-77 'the whole store' (S02-ZD-032, time zone only) keeps unknown, each saying why. (3) A platform whose only row is a gap is open on every key, while the brief says a gap blocks only the keys it asks for; S02-VP-68 'a location' follows the tool. (4) Gap rows that ask for an answer their platform already gives mark no key: S02-V-662 and S02-V-966 (S02-VP-69), S02-V-1070 (S02-VP-72). (5) Twins outside this part: S02-VP-75's twin S02-VP-84 is another part's, and I read only its Salla and Zid rows; S02-VP-76 and S02-VP-77 have no twin among my points. (6) S02-VP-76 weighs statements of a point that isn't its twin (S02-SH-885, S02-SH-246, under S02-VP-68), which the brief's twin rule doesn't name.
+
+## C-RD3-4
+
+Points S02-VP-80 to S02-VP-92, all written; check: no problem, nothing missing.
+
+**Keys whose cause is unknown, and the rows that would change them**
+- S02-VP-85 'the whole store' (blocked by S02-V-869, S02-V-870): Shopify, BigCommerce and WooCommerce hold one store country (S02-SH-246, S02-BC-100, S02-WC-017). Salla and Zid have only gaps (S02-SA-G11, S02-ZD-G23). If both show one country for the whole store, the cause is no difference; if neither does, a market pattern; if they differ, vendor choice.
+- S02-VP-86 "the buyer's country", 'a market the store sells into' (blocked by S02-V-875): Zid has only its gap S02-ZD-G15. If Zid's apps take a value per market, or by the buyer's country, the cause is a market pattern; if not, vendor choice.
+- S02-VP-86 'the whole store' (blocked by S02-V-875): if Zid holds its apps for the whole store, WooCommerce alone differs, with no answer row and no statement of what it provides; if not, vendor choice.
+- S02-VP-87 'a market the store sells into' (blocked by S02-V-1096, S02-V-879): Shopify and BigCommerce give it (S02-SH-731, S02-BC-144). If Salla and Zid show none, a market pattern; if they differ, vendor choice; if both give it, WooCommerce alone differs.
+- S02-VP-87 'the whole store' (blocked by S02-V-879): if Zid gives it, a market pattern; if not, vendor choice.
+- S02-VP-89 'a market the store sells into' (blocked by S02-V-1097, S02-V-887): a reading, not the tool's vendor choice. Shopify's S02-SH-744, under the twin S02-VP-90, sets staff notifications for a single POS location or the web, so Shopify gives the key as BigCommerce does. If Salla and Zid both give it, no difference; if neither, a market pattern; if they differ, vendor choice.
+- S02-VP-89 "the store's own country" (blocked by S02-V-887): if Zid doesn't give it, business model (S02-WC-434); if it does, vendor choice.
+
+**Problems with the method**
+1. Like with like on agreement. Read strictly, a no difference where Salla's only statements giving the key are observed dashboard text would be unknown, since the others' are declarations. This affects S02-VP-81 (S02-SA-063), S02-VP-90 (S02-SA-417, S02-SA-438) and S02-VP-91 (S02-SA-433). I followed RD2's S02-VP-26 'a default market', a no difference with Salla observed, and said so in each row's note. The coordinator should rule on it.
+2. Gaps that ask for keys their platform gives elsewhere. The tool can't mark these open, so they block nothing. S02-V-1074 (S02-ZD-G19, S02-VP-84) asks who sets Zid's cookie settings, but Zid gives the seller, the buyer and the platform from rows about its privacy policy and message opt-outs; its cookie settings stay unanswered behind them. S02-V-1094 (S02-SA-G15, S02-VP-86) asks for the market key, which Salla gives through S02-V-1119, and for the store's country, a key no platform gives.
+3. A twin's statement can change a cause, but it can't be keyed in the other point. S02-VP-89 departs from the tool by a reading (above). On S02-VP-84 'the buyer', BigCommerce's 'cookie consent' (S02-BC-029, in both twins) doesn't say who consents. Read as the shopper's consent, the cause would be no difference rather than vendor choice; it is left to the build either way.
+4. Test 2 on S02-VP-82. S02-SH-954 names the Privacy and Electronic Communications Regulations for a store "located in or sending marketing messages to the United Kingdom". I applied it to "the buyer's country" and to "the store's own country"; the second rests on the reading that the law is conditioned on where the store is.
+5. Letter D on a reading of one value for the store or site: S02-VP-80 (Shopify S02-SH-726 and S02-SH-719; WooCommerce S02-WC-509), S02-VP-82 (WooCommerce S02-WC-386, S02-WC-387), S02-VP-86 (Shopify S02-SH-091; BigCommerce S02-BC-147). I read "all pages", "only in the default currency", "all apps at the store level" and a single option as saying the value can't be another.
+6. WooCommerce on S02-VP-86 has only an absent row (S02-WC-N04). It gives no key and so is not stated on 'the whole store', though the absence describes store-level settings. Its letter is unknown.
+

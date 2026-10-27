@@ -571,6 +571,7 @@ The letters' rules moved to a row per point. Expense is judged per key, so a pay
 | C-RD3-1: currency, language, domains, product availability, prices, discounts, storefront design (both questions of each) | 14 | 52 | 50 | 9.5 |
 | C-RD3-2: checkout, taxes and duties, shipping, payment methods, who sells to the buyer, returns (both questions of each) | 12 | 52 | 38 | 7.4 |
 | C-RD3-3: locations, contact details, the buyer's address, staff access, market selection, privacy, the store's address, units and time zone | 13 | 45 | 47 | 9.5 |
+| C-RD3-4: store status, messages to buyers, privacy's who-sets, the store's country, apps, analytics, notifications to the merchant, units' who-sets | 13 | 52 | 39 | 6.5 |
 
 **What C-RD2 taught.**
 - **What defines a market** splits the references four ways, all `vendor choice` but one key:
@@ -619,3 +620,19 @@ The letters' rules moved to a row per point. Expense is judged per key, so a pay
 - **Zid's open questions hold most of its keys open.** Six of Zid's gaps hold a key `unknown`: per-market inventory, contact details, staff permissions, market selection, privacy, and units and time zone. Each is a question in Zid's section of [`reports/S-02-evidence-requests.md`](../../../reports/S-02-evidence-requests.md). Zid's answers would settle them; nothing else now can.
 - **Its seven founder items:** six of S-02's own and one for S-10. All but one again ask whether a setting takes a value per market, or once for the whole store. The new one is how a buyer is placed in a market: by their country, or by which customers the market lets in.
 - **The tool can't take a twin's statement as giving a key.** Where a statement under the twin point would make a key `no difference`, the part kept the tool's tag and said so in its reading.
+
+**What C-RD3-4 taught.**
+- **A second named rule:** messages to buyers depend on the buyer's country, and on the store's own, by the UK's Privacy and Electronic Communications Regulations, which Shopify names (S02-SH-954). So they bind per market.
+- **Its five founder items ask the same question as the other parts', for its settings:** per market, for the whole store, or both. It adds two: whether Sharrwah itself may set a store's status, and whether a market holds a country of its own beside the store's.
+- **Analytics, apps and the store's country stay open on Salla and Zid,** each for a gap that is a question to them.
+
+**RD2 and RD3, as a whole** (56 points, 247 keys; 46.4 million in five parts, and 7.2 million for the dry runs):
+- **Causes:** vendor choice 137, unknown 37, no difference 31, business model 28, market pattern 8, a named rule 4, maturity 2.
+- **What follows:**
+  - left to the build: 111;
+  - a decision for the founder: 71, of which 11 belong to other subjects (S-03, S-04, S-05, S-07, S-10);
+  - a commonality: 31;
+  - kept open: 24;
+  - bound per market: 10.
+- **S-02's own founder items:** 60, in 45 distinct wordings. Most ask one question, setting by setting: does it take a value per market, or once for the whole store, or both? The register asks it once, as a standing decision, with the settings where the references differ listed under it. What defines a market (S02-VP-26) comes first, since most items depend on it.
+- **What `unknown` waits on:** in most cases, a gap that is a question to Zid, Salla or BigCommerce, named in each key's `blocked_by`. The founder's questions to the platforms ([`reports/S-02-evidence-requests.md`](../../../reports/S-02-evidence-requests.md)) would settle them.
