@@ -30,3 +30,4 @@
 | [H-004](H-004-observed-sa-verification-contract.md) | observed-sa | The payment services contract a store in the UAE or Kuwait signs at verification | S-02, RD1: S02-SA-G02 | 27 October 2026 | open |
 | [H-005](H-005-observed-sa-multi-market.md) | observed-sa | Multiple markets, switched on and set up | S-02, RD2 and RD3 | 27 October 2026 | open; may need a store on Salla's Special plan |
 | [H-006](H-006-observed-sh-store-outside-yemen.md) | observed-sh | The admin as a store based outside Yemen sees its markets, business entities, Managed Markets and payments | S-02, RD1 and RD3 | 27 October 2026 | open |
+| [H-007](H-007-observed-sh-store-country-sign-up.md) | observed-sh | What sets a store's country at sign-up, and whether a change of its address is checked | S-02, RD1: S02-SH-G01, S02-SH-G02 | 27 October 2026 | open |

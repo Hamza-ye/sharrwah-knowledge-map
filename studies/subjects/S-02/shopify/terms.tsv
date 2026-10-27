@@ -38,3 +38,4 @@ Country code			S02-SH-C908
 jurisdiction			S02-SH-C1129
 Rest of World		By default, this market is called Rest of World and includes all regions that are eligible for Managed Markets, but you can change your market name and remove countries and regions from the list of included regions.	S02-SH-C1389
 B2B All		A B2B All market is automatically created that includes all your existing companies and locations.	S02-SH-C1454
+shop country	بلد متجرك		S02-SH-C1801;S02-SH-C1802
