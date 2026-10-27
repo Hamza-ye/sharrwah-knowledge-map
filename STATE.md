@@ -39,8 +39,8 @@
 The checker finds every quote, 3,193 of them, and no error. With the briefs' inspections (30 million), S-02 has spent about 534 million of its 700 million. **The rest is projected at 350 to 650 million,** so S-02 at about 0.9 to 1.2 billion, past the budget plus a quarter ([the frame's budget](studies/subjects/S-02/frame.md#budget)). The projection is measured again after phase B's first parts, and the cost comes to the founder when the spending passes 875 million (`PLAN.md`, section 8).
 
 **In flight:**
-- **Phase B** ([`b/parts.tsv`](studies/subjects/S-02/b/parts.tsv)): RD1-1 (the store's own country, (a) and (d)) and RD3-1 (Shopify's settings per market) are done, with no checker error: 40 variation points and 128 rows. RD1-2 (who sets, checks and changes the store's country) and RD3-2 (Salla's settings per market) are running. The brief had four checks before it ran, and each part's lessons go into it ([`method-report.md`](studies/subjects/S-02/method-report.md), sections 5 to 7).
-- **The absence audit** (phase A3): its brief is inspected and re-checked; its six agents run as slots free.
+- **Phase B** ([`b/parts.tsv`](studies/subjects/S-02/b/parts.tsv)): five of its ten parts are done, with no checker error: RD1-1 to RD1-3 (the store's own country under (a) to (d), but (c) for Zid, WooCommerce and BigCommerce) and RD3-1 and RD3-2 (Shopify's and Salla's settings per market). RD1 has 18 variation points, RD3 44. RD1-4 is running. Each part's lessons go into the brief ([`method-report.md`](studies/subjects/S-02/method-report.md), section 7).
+- **The absence audit** (phase A3): Salla's is done. It found the onboarding's list of countries held, and [H-002](handoffs/H-002-observed-sa-onboarding-countries.md) is narrowed. Shopify's is running. WooCommerce's, BigCommerce's and Zid's follow, Zid's in two parts.
 
 **Next:** phase B in ten parts ([`b/parts.tsv`](studies/subjects/S-02/b/parts.tsv)), two at a time, each a fresh agent reading only its part of its root decision's slice. Then gap-closing and the absence audit where a root decision needs them, phase B's second pass, and phase C.
 
