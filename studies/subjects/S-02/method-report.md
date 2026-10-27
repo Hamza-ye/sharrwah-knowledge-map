@@ -66,7 +66,7 @@
 | WooCommerce | 137 | 47.6 | 0.35 |
 | BigCommerce | 98 | 23.1 | 0.24 |
 
-Phase A cost 504 million in all, against the 325 to 375 million the frame set for it.
+Phase A cost 504 million in all, against the 325 to 375 million the frame set for it. The coordinating session processed 144 million more over the same time, outside the budget, which counts the agents.
 
 **What it taught:**
 - **Parts of about a hundred requests held their cost at about 0.25 million a request** (Shopify's parts 2 and 3, and BigCommerce).
