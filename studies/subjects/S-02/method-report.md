@@ -120,3 +120,10 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 - `method/corpus_search.py` names every address past its cap, matches a Zid help page on its article alone, and shows a captured page's title.
 - The brief names the live hosts for each platform, how to run each search, and what to record whatever the result.
 - The checker asks for a row for every claim except the gaps phase A2 leaves after its own searches.
+
+**The fourth check of phase B's brief** (the third checker resumed: 2.9 million, 11 requests) found nothing that must change. Under the kinds, Salla's 22 (f) statements raise 23 points (11 kinds, two questions each, and one new kind), and Zid's payment services fall under two kinds. What it left was at the margin, and went into the brief:
+- a (c) kind for the store's own taxes;
+- the (f) kinds widened for settings at the margin (gifting, loyalty, the store's app, cookie consent, maintenance, how a buyer's market is chosen), and RD3's cap raised to 59;
+- a tax registration that the platform ties to a market isn't the store's own country;
+- under (c), "offered to every store" answers with its excerpt;
+- the checker refuses two points that share a question and a kind.

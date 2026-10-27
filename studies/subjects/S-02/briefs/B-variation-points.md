@@ -59,7 +59,7 @@ Statements under (h) are conditions, not variants: a variant rests on at least o
    | (e) | `what defines "X"`; `what limits "X"`; `who creates "X"`; `who changes or removes "X"` | a market a store sells into | a country, region, city, group of customers, location, channel or storefront; the limit; the party |
    | (f) | `what "X" takes its value per`; `who sets "X"` | a setting of the store, of one of the kinds below | what its value is taken per; the platform or the seller |
 
-   **The store's own country** is the country, address or jurisdiction the platform holds as where the store, or its merchant, is based, registered or resident. It includes what the platform calls the store's country, location or country of operation, the merchant's country of residence, and the country of the merchant's tax registration. It isn't:
+   **The store's own country** is the country, address or jurisdiction the platform holds as where the store, or its merchant, is based, registered or resident. It includes what the platform calls the store's country, location or country of operation, the merchant's country of residence, and the country of the merchant's tax registration, unless the statement or the platform's own term ties that registration to a market the store sells into. It isn't:
    - a place the store ships from, sells at, or keeps stock in, such as a pickup point, a branch, a warehouse or a shipping origin. The statement's own words decide: a location they say orders ship from, or stock is kept in, is one of these, whatever the platform calls it;
    - a buyer's country;
    - where the platform hosts the store.
@@ -75,6 +75,7 @@ Statements under (h) are conditions, not variants: a variant rests on at least o
    - payouts: where, how and in what currency the merchant is paid;
    - the platform's fees: its plans, their prices, and the currency they are billed in;
    - taxes on the platform's fees;
+   - the store's taxes: how its own sales are taxed, from its country;
    - other features and services of the platform that the store can use, such as shipping services;
    - the store's defaults: what the platform sets from the store's country, such as its currency, language or units;
    - the store's data: where it is held, and the privacy law that applies.
@@ -85,9 +86,9 @@ Statements under (h) are conditions, not variants: a variant rests on at least o
    - domain: the domain, subdomain, subfolder or URL;
    - products: which products are offered, and in what order;
    - prices: product prices, price lists and adjustments;
-   - discounts and offers;
-   - storefront design: the theme, its settings and its content;
-   - checkout and customer accounts: checkout's settings, and sign-in and registration;
+   - discounts and offers, with gift cards, gifting, store credit, loyalty and affiliates;
+   - storefront design: the theme, its settings and its content, the store's app, and what search engines are shown;
+   - checkout and customer accounts: checkout's settings and the rules an order must pass, and sign-in and registration;
    - taxes and duties;
    - shipping: zones, rates, options and carriers;
    - payment methods offered to buyers, cash on delivery among them;
@@ -97,9 +98,12 @@ Statements under (h) are conditions, not variants: a variant rests on at least o
    - contact information shown to buyers;
    - the buyer's address: its fields, format and validation;
    - messages to buyers, such as notifications and the sender's name;
-   - staff access: what staff may manage.
+   - staff access: what staff may manage;
+   - market selection: how a buyer's market is chosen, suggested, switched or restricted, a backup market among them;
+   - privacy and consent: cookie consent, and the privacy settings shown to buyers;
+   - store status: whether the store is open or in maintenance.
 
-   **Kinds, under (c) and (f).** A default and the options it is chosen from are one kind, such as a store's default currency and the currencies it supports. A thing or setting that fits none of the kinds raises a new kind: name it in `x_words`, and list it in `notes-b.md`.
+   **Kinds, under (c) and (f).** A default and the options it is chosen from are one kind, such as a store's default currency and the currencies it supports. A thing or setting that fits none of the kinds raises a new kind: name it in `x_words`, and list it in `notes-b.md`. Where a statement's own words don't name its X, its `identifier` or `scope` may, as phase A recorded them from the source; quote it in `basis_evidence`.
 2. **Candidates.** Each statement under one of your part's bullets that answers one of that bullet's questions gives one candidate per question and per X it answers, with its X quoted from it. A statement that names several settings, such as design, prices and currency, gives a candidate for each.
    - **The role test** applies to X itself: X must be in the question's role, as rule 1 gives it. "Market", "country" and "region" name different things on different platforms, so the test rests on what the statement says X is, not on its words.
    - **A candidate whose X passes the role test is a facet** of its root decision (`PLAN.md`, Stage 4).
@@ -110,7 +114,7 @@ Statements under (h) are conditions, not variants: a variant rests on at least o
      - **(c) and (f):** candidates are one variation point when their X is of the same kind, from rule 1's lists.
      - Two variation points never share a question and a kind.
    - **The question.** Each variation point keeps its bullet. Its question takes that question's form from rule 1. X is in double quotes, quoted from a statement in `raised_by`, in words that name X itself, not a variant.
-   - **`x_words`** gives, under (c) and (f), the kind's name first; then each platform's own words for X, as the platforms' rows come in.
+   - **`x_words`** gives each platform's own words for X, as the platforms' rows come in. Under (c) and (f) it starts with the kind's name, then ` | ` before each platform's words, such as `the platform's fees | shopify: billing currency | zid: الرسوم`.
    - **`raised_by`** names the statements a point was raised from. A statement is placed only by a variant row, so a statement in `raised_by` has its own row too.
    - **Earlier parts.** Read your root decision's `variation-points.tsv` before you start, and place your statements under its points first. Raise a new one only where none matches.
    - **Every platform has a row** under each variation point (rule 4). Give the rows of your part's platforms, in the order your message gives them.
@@ -126,7 +130,9 @@ Statements under (h) are conditions, not variants: a variant rests on at least o
      - in (a), each field or record is one answer;
      - in (d), each list of countries, as the platform states it, is one answer: a statement, or the runs of one list read together (rule 5, Lists). Two statements that name the same countries are one answer;
      - the same answer stated in two languages, by the platform's own translation, is one answer;
-     - one answer from several statements is one row, with all of them in `stmt_ids`.
+     - one answer from several statements is one row, with all of them in `stmt_ids`;
+     - under (c), things of one kind with the same decider are one answer, such as several payment providers each offered by the merchant's country. Which country gets which stays in the statements and their scope;
+     - under (c), a statement that a thing is offered to every store, whatever its country, answers with its excerpt, and `basis_evidence` names `every store`.
    - **Its form.** A row takes one of four forms:
      - **an answer:** `variant` is an excerpt of one of its statements, verbatim;
      - **`absent`:** the platform's absences show it absent from a complete list, under the variation point's bullet, with those `absence_ids`. Its `kind` is the absence's kind;
@@ -181,7 +187,7 @@ All files are tab-separated, with a header row and no quoting. Tabs and newlines
 | --- | --- |
 | `variation-points.tsv` | `vp_id` (S02-VP-NN) · `bullet` (one of your root decision's bullets from `a` to `f`) · `question` · `x_words` · `raised_by` (stmt_ids) · `note` |
 | `variants.tsv` | `variant_id` (S02-V-NNN, or S02-V-NNNN past 999) · `vp_id` · `platform` (`shopify`, `salla`, `woocommerce`, `zid` or `bigcommerce`) · `variant` (an excerpt, `absent`, `gap` or `not covered`) · `stmt_ids` · `basis` (every basis that holds, `;`-separated) · `basis_evidence` · `kind` · `scope` · `gap_ids` · `absence_ids` · `note` |
-| `notes-b.md` | Statements noted by id and bullet, with their reasons; merges; partial overlaps that were split; the searches for earlier parts' platforms; `not covered` rows; problems with the method. |
+| `notes-b.md` | Statements noted by id and bullet, with their reasons; new kinds; the searches for earlier platforms' rows; `not covered` rows; problems with the method. |
 
 **Before you finish,** check your files on a copy that holds only your own root decision's folder:
 1. Copy `studies/subjects/S-02` to `<your scratch folder>/S-02`, then remove from the copy every folder in `b/` but your own.

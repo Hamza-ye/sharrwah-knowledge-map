@@ -406,8 +406,17 @@ if vps is not None:
     if len(vps) > LIMITS["variation points"]:
         err("variation-points.tsv", "", f"{len(vps)} variation points: the brief says stop and report past "
                                         f"{LIMITS['variation points']}")
+    kinds_seen = {}
     for v in vps:
         i = v["vp_id"]
+        if " | " in v["x_words"]:
+            # S-02's brief: under (c) and (f), x_words starts with the kind; two points never share a question and
+            # a kind
+            key = (v["bullet"], re.sub(r'"[^"]*"|“[^”]*”|«[^»]*»', '""', v["question"]).strip(),
+                   v["x_words"].split(" | ")[0].strip())
+            if key in kinds_seen:
+                err("variation-points.tsv", i, f"shares its question and its kind '{key[2]}' with {kinds_seen[key]}")
+            kinds_seen.setdefault(key, i)
         if v["bullet"] not in ASK:
             err("variation-points.tsv", i, f"bullet '{v['bullet']}' is not {one_of(of_role('ask'))}")
         if not re.match(r"(?i)^(who|what)\b", v["question"]):
@@ -495,10 +504,11 @@ if var is not None:
             elif any(BULLET_RD.values()) and sids and all(
                     stmts.get(x, {}).get("bullets", set()) & NOPART and not stmts[x]["bullets"] & ASK
                     for x in sids if x in stmts) and "no market" not in r["basis_evidence"]:
-                # S-02's brief: an answer resting only on a statement that the platform has no market of the kind
-                # asked about names "no market"
-                err("variants.tsv", i, "an answer resting only on a statement that the platform has no such "
-                                       "market names 'no market' in basis_evidence")
+                # S-02's brief: an answer resting only on a no-part statement either says the platform has no market
+                # of the kind asked about ("no market"), or that a setting holds for the whole store, under a "takes
+                # its value per" point
+                err("variants.tsv", i, "an answer resting only on a no-part statement names 'no market' in "
+                                       "basis_evidence, or goes under a 'takes its value per' point as 'the whole store'")
             want = sorted({k for s in sids if s in kinds for k in kinds[s][0].split(";") if k})
             got = sorted({k.strip() for k in r["kind"].split(";") if k.strip()})
             if want and got != want:
