@@ -1033,6 +1033,63 @@ S02-SH-1031	stated	run 20260929T235133Z-admin-chunks-all fetched pages
 S02-SH-1032	stated	run 20260929T235133Z-admin-chunks-all fetched pages
 S02-SH-1033	stated	run 20260929T235133Z-admin-chunks-all fetched pages
 S02-SH-1034	stated	run 20260929T235133Z-admin-chunks-all fetched pages
+S02-SH-1035	observed	run 20261027T175456Z-journey-signup-located-us records a store or session
+S02-SH-1036	observed	run 20261027T175456Z-journey-signup-located-us records a store or session
+S02-SH-1037	observed	run 20261027T175456Z-journey-signup-located-us records a store or session
+S02-SH-1038	observed	run 20261027T175456Z-journey-signup-located-us records a store or session
+S02-SH-1039	observed	run 20261027T175456Z-journey-signup-located-us records a store or session
+S02-SH-1040	observed	run 20261027T175456Z-journey-signup-located-us records a store or session
+S02-SH-1041	observed	run 20261027T175456Z-journey-signup-located-us records a store or session
+S02-SH-1042	observed	run 20261027T175456Z-journey-signup-located-us records a store or session
+S02-SH-1043	observed	run 20261027T175456Z-journey-signup-located-us records a store or session
+S02-SH-1044	observed	run 20261027T175456Z-journey-signup-located-us records a store or session
+S02-SH-1045	observed	run 20261027T175456Z-journey-signup-located-us records a store or session
+S02-SH-1046	observed	run 20261027T175456Z-journey-signup-located-us records a store or session
+S02-SH-1047	observed	run 20261027T175456Z-journey-signup-located-us records a store or session
+S02-SH-1048	observed	run 20261027T175456Z-journey-signup-located-us records a store or session
+S02-SH-1049	observed	run 20261027T175456Z-journey-signup-located-us records a store or session
+S02-SH-1050	observed	run 20261027T175456Z-journey-signup-located-us records a store or session
+S02-SH-1051	observed	run 20261027T175456Z-journey-signup-located-us records a store or session
+S02-SH-1052	observed	run 20261027T183755Z-journey-email-us-account-verify records a store or session
+S02-SH-1053	observed	run 20261027T175456Z-journey-signup-located-us records a store or session
+S02-SH-1054	observed	run 20261027T175456Z-journey-signup-located-us records a store or session
+S02-SH-1055	observed	run 20261027T183628Z-journey-dev-store-us-organization records a store or session
+S02-SH-1056	observed	run 20261027T183628Z-journey-dev-store-us-organization records a store or session
+S02-SH-1057	observed	run 20261027T183628Z-journey-dev-store-us-organization records a store or session
+S02-SH-1058	observed	run 20261027T183628Z-journey-dev-store-us-organization records a store or session
+S02-SH-1059	observed	run 20261027T183628Z-journey-dev-store-us-organization records a store or session
+S02-SH-1060	observed	run 20261027T184800Z-journey-business-entity-country-change records a store or session
+S02-SH-1061	observed	run 20261027T184800Z-journey-business-entity-country-change records a store or session
+S02-SH-1062	observed	run 20261027T184800Z-journey-business-entity-country-change records a store or session
+S02-SH-1063	observed	run 20261027T184800Z-journey-business-entity-country-change records a store or session
+S02-SH-1064	observed	run 20261027T184800Z-journey-business-entity-country-change records a store or session
+S02-SH-1065	observed	run 20261027T184800Z-journey-business-entity-country-change records a store or session
+S02-SH-1066	observed	run 20261027T184800Z-journey-business-entity-country-change records a store or session
+S02-SH-1067	observed	run 20261027T184800Z-journey-business-entity-country-change records a store or session
+S02-SH-1068	observed	run 20261027T184800Z-journey-business-entity-country-change records a store or session
+S02-SH-1069	observed	run 20261027T184800Z-journey-business-entity-country-change records a store or session
+S02-SH-1070	observed	run 20261027T184800Z-journey-business-entity-country-change records a store or session
+S02-SH-1071	observed	run 20261027T184800Z-journey-business-entity-country-change records a store or session
+S02-SH-1072	observed	run 20261027T184800Z-journey-business-entity-country-change records a store or session
+S02-SH-1073	observed	run 20261027T184800Z-journey-business-entity-country-change records a store or session
+S02-SH-1074	observed	run 20261027T192317Z-journey-store-outside-yemen-payments records a store or session
+S02-SH-1075	observed	run 20261027T192317Z-journey-store-outside-yemen-payments records a store or session
+S02-SH-1076	observed	run 20261027T192317Z-journey-store-outside-yemen-payments records a store or session
+S02-SH-1077	observed	run 20261027T192317Z-journey-store-outside-yemen-payments records a store or session
+S02-SH-1078	observed	run 20261027T192317Z-journey-store-outside-yemen-payments records a store or session
+S02-SH-1079	observed	run 20261027T192317Z-journey-store-outside-yemen-payments records a store or session
+S02-SH-1080	observed	run 20261027T192317Z-journey-store-outside-yemen-payments records a store or session
+S02-SH-1081	observed	run 20261027T192936Z-journey-business-types-markets records a store or session
+S02-SH-1082	observed	run 20261027T192936Z-journey-business-types-markets records a store or session
+S02-SH-1083	observed	run 20261027T192936Z-journey-business-types-markets records a store or session
+S02-SH-1084	observed	run 20261027T192936Z-journey-business-types-markets records a store or session
+S02-SH-1085	observed	run 20261027T192936Z-journey-business-types-markets records a store or session
+S02-SH-1086	observed	run 20261027T192936Z-journey-business-types-markets records a store or session
+S02-SH-1087	observed	run 20261027T194111Z-journey-business-type-switch-markets records a store or session
+S02-SH-1088	observed	run 20261027T194111Z-journey-business-type-switch-markets records a store or session
+S02-SH-1089	observed	run 20261027T194111Z-journey-business-type-switch-markets records a store or session
+S02-SH-1090	observed	run 20261027T194111Z-journey-business-type-switch-markets records a store or session
+S02-SH-1091	observed	run 20261027T194111Z-journey-business-type-switch-markets records a store or session
 S02-SH-N01	shipped	structures/shopify/admin-graphql-schema holds https://shopify.dev/admin-graphql-direct-proxy/2026-10: the address is code or a schema the platform ships
 S02-SH-N02	shipped	structures/shopify/admin-graphql-schema holds https://shopify.dev/admin-graphql-direct-proxy/2026-10: the address is code or a schema the platform ships
 S02-SH-N03	shipped	structures/shopify/admin-graphql-schema holds https://shopify.dev/admin-graphql-direct-proxy/2026-10: the address is code or a schema the platform ships
