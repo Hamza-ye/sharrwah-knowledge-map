@@ -301,4 +301,5 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 **What BC-2 taught:**
 - **BigCommerce's gap-closing is complete:** three parts, 19 rows, 147 statements (S02-BC-205 to S02-BC-351), for 35.5 million. The Help Center, readable since the fix, answered most of BC-1b's and BC-2's rows.
 - **A platform that states its settings' scope answers the "per market" questions in its own words.** Multi-Storefront sets contact details, checkout settings and the storefront a shopper sees per storefront, each "Use global" by default.
+- **Counts written from memory, a slip of the coordinator's.** Three counts in this section were wrong as first written: the pages the fix recovered, Zid's per-market gaps, and BigCommerce's totals. Each was corrected from the files, and counts are now taken from the files before they are written.
 
