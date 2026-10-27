@@ -408,6 +408,16 @@ After the second pass:
 
 Each takes markets only where the store has the feature `multi-countries`, which every held store's feature list gives to the Special and Pro plans. Among the four is the setting for how a customer picks a market, which holds one value for the store. Analytics, the store's address, the return policy and the merchant app's notifications have no section, so their gaps stay. The apps list has no market field, an absence for the audit.
 
+**What the second audit (A3-2) taught** (13.2 million, 65 requests). It audited the seven absences the late parts recorded:
+- **Five are confirmed:** WooCommerce has no cap on the countries a store sells to, and nothing that places a buyer in a selling location. Salla's order cancellation setting, the merchant's notification preferences and its installed-apps list name no market. No market's own record holds those settings either.
+- **Two are partly contradicted,** both on WooCommerce's Payments page, whose settings live in its scripts rather than in the PHP files A2-T read:
+  - WooPayments' onboarding asks the business's type of legal entity and where it is located;
+  - the page lists payment providers, and their recommended methods, per business location.
+
+  Neither is set per selling location, so what the absences say about markets still stands.
+- **One answers part of a gap:** a Salla market can have its own login settings, with an OTP provider chosen from the store's installed SMS apps (S02-SA-461). This answers S02-SA-G15, and H-005's step 6, for SMS apps.
+- **The coordinator's own slip:** at A2-SA-S's suggestion, the coordinator had added a statement under (g) to three statements' `conditions`, where only statements under (a) to (f) may go. The audit's check found it, and it is undone.
+
 **Gap-closing as a whole** (the coordinator, 27 October):
 - **What it did.** 22 parts read the pages behind 121 rows: the rows of S-02's points that were `not covered`, or whose gaps named a page not read. 118 rows were given statements, and 83 have no gap left. It added 1,165 statements: Shopify 388, Salla 118, Zid 256, WooCommerce 256 and BigCommerce 147. It cost 337.3 million, against the 350 projected at 10:30 ([the frame's budget](frame.md#budget)).
 - **What it leaves.** 49 gaps: Shopify 5, Salla 11, Zid 21, WooCommerce 5 and BigCommerce 7. None stops the second pass.

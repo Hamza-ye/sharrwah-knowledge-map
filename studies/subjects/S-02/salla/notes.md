@@ -322,3 +322,70 @@ From `studies/subjects/S-02/briefs/A2-close-gaps.md` and the coordinator's messa
 **Gaps replaced (part A2-SA-S).** In `gaps.tsv`, S02-SA-G09's row is kept as it is; S02-SA-G15 is appended with "in place of S02-SA-G09" in its `what_is_missing`, and `a2.tsv`'s row for S02-VP-86 names S02-SA-G15 and S02-SA-N03. The rows for S02-VP-87, 85, 76, 65 and 89 add this part's reading of the settings center to `read`, their gaps unchanged. New rows: S02-VP-51, 52, 55, 56, 73, 74, and `none` (the (h) statements S02-SA-451 to 455).
 
 **Check (A2-SA-S):** on a copy holding only `bullets.tsv` and this folder (`/tmp/claude-0/-home-user/9f45def8-b710-5f9c-84f3-6a0fa7e617c8/scratchpad/s02-a2-sa-s/check/S-02`), 2026-10-27: 455 statements, 15 gaps, 779 quotes found; no line of level error; three `review` lines, for the absences S02-SA-N01, N02 and N03, waiting for their audit (phase A3).
+
+## Absence audit, part A3-2 (2026-10-27): S02-SA-N01 to S02-SA-N03
+
+Phase A3, part A3-2, by an agent that made none of the claims. Brief: `studies/subjects/S-02/briefs/A3-absence-audit.md`, with `briefs/A-one-platform.md`'s rules, and the coordinator's message. For each absence, I judged two things: whether the code shows the section's definition (or its component's code) to be the complete list of its fields, and whether the setting could take a value per market somewhere else, such as on a market's own settings pages.
+
+Rows are in `absence-audit.tsv`; statements S02-SA-456 to S02-SA-462; citations S02-SA-C780 to S02-SA-C791. S02-SA-186's `conditions` take S02-SA-461. observed-sa at 4ca2e896a729215f422a137a364e7e9488610ba3. Every search was run from the repository's root on 2026-10-27; the commands are in `absence-audit.tsv`. No live page was read.
+
+### Documents read, in order
+
+156. This folder's `absences.tsv`, the parts A2-SA-H and A2-SA-S above, and the statements and citations the absences name; observed-sa `README.md` and `docs/READING.md` (the settings surfaces); `handoffs/H-005-observed-sa-multi-market.md`, steps 4, 6 and 7.
+157. `structures/salla/settings-center/`: `orders~cancellation.json`, `notifications.json` and `apps.json` of the five instruments (demo@en, merchant@en, merchant@ar, public-demo@en, real-merchant@en). Each section holds the same bytes on all five. I read `orders~cancellation` and `notifications` in full.
+158. The code the definitions name, from the archive text:
+     - ui-merchant-utils `Component-NHkmQEG3.js` (`raw/runs/20261008T121539Z-dashboard-bundles-chunks2/fetch.warc.gz@16165605`): `notificationsFetcher` (bl) and its registration; NotificationsPreferencesTable (wl) and its list (vl); CancellationReasonsSection's lazy import and registration; and apps:installed-list (si), in full;
+     - `CancellationReasonsSection-BCVXxvoA.js` (`raw/runs/20261008T122604Z-dashboard-bundles-chunks3/fetch.warc.gz@14642613`), searched for scope, market, country and its requests.
+159. The saved answers:
+     - `GET /admin/v2/settings/fields/orders.cancel_order`: the demo store (run 20261009T033607Z-sweep-settings-demo-en, `responses/2857.json`) and the real store (20261012T010906Z-sweep-real-merchant-full-en, `responses/11714.json`);
+     - `GET /notifications/v1/inbox/preferences/`: the demo store (20261008T133523Z-sweep-demo-store-en, `responses/4339.json`).
+
+     `held_index.py` lists three more stores' answers for each of the two. I didn't read them.
+160. A market's own settings:
+     - `GET /admin/v2/scopes/1453910036` (run 20261008T180430Z-journey-localization-demo, `responses/0204.json`; recorded as S02-SA-219 and S02-SA-220) and that run's step 15 text;
+     - `index/rest-endpoints.tsv`: every endpoint whose path or query keys name a scope;
+     - the markets module, ui-merchant-localization `index-BO0T6Mr2.js` (`chunks2@5164756`): the passages naming apps/installed, login_type and otp_provider_id.
+161. Other documents the searches listed:
+     - `dashboard-features` demo@en and real-merchant@en: the two cancellation features;
+     - ui-merchant-orders: bulk-actions (`chunks2@11607714`) and salla-orders (`chunks1@32603436`), the passages naming a cancellation or scope_id;
+     - https://docs.salla.dev/settings/list.md (`raw/runs/20261005T234928Z-docs-md/fetch.warc.gz@2648925`);
+     - `dashboard-translations/en/settings.json`: the 44 cancellation keys;
+     - `help-articles/ar/texts.jsonl` lines 106, 166 and 1344: the paragraphs naming a cancellation. Line 106 gave S02-SA-462;
+     - `help-articles/en/texts.jsonl` line 1201 (the unified settings center): the paragraphs naming installed apps or markets. Its multiple markets paragraph was already recorded;
+     - ui-merchant-apps `index-DLbItk1T.js` (`chunks1@28447678`) and ui-merchant-shipping (`chunks2@14519013`, `chunks3@14092205` and `@14111438`): the passages naming apps/installed.
+
+### What I found
+- **S02-SA-N01, confirmed.**
+  - The form's fields are the definition's items, its hidden inputs, and the component CancellationReasonsSection. The component's code reads and writes the same store setting and names no market (S02-SA-457).
+  - The saved value holds only enabled and hours, on both Pro stores (S02-SA-456).
+  - The help article gives the setting's steps from the store's settings, naming no market (S02-SA-462).
+  - Elsewhere: the market's record holds no cancellation field. The held endpoints naming a market are products, coupons, the `scopes.*` settings fields, and the markets' list and record.
+- **S02-SA-N02, confirmed.**
+  - The ten fields' values are the signed-in user's own preferences, read with the user's token (S02-SA-458). The answer holds level, enabled, channels and overrides with the source subscriber, and no market key (S02-SA-459).
+  - The same code registers NotificationsPreferencesTable, which no held definition names. It shows in_app and email for a longer list of notifications, with no market column (S02-SA-460).
+  - Elsewhere: no market field holds a notification.
+- **S02-SA-N03, confirmed, for the section.**
+  - The definition and its component hold the search, the status filter and the list, and nothing else.
+  - Outside the section, which the absence doesn't reach: a market's own login settings, in the markets module, take an OTP provider chosen among the store's installed SMS apps, local and international (S02-SA-461). The market's record holds `login_type` and `otp_provider_id` (S02-SA-220).
+- **For the coordinator:**
+  - H-005 steps 4 (the order cancellation half) and 7 stay answered by S02-SA-N01 and S02-SA-N02.
+  - Step 6, and S02-SA-G15, have one held answer for one kind of app: SMS apps, as a market's OTP provider (S02-SA-461). They could be narrowed.
+- **(h):** S02-SA-186 (customize-login-for-multi-markets) takes S02-SA-461 in its `conditions`. The module reads the flag CUSTOMIZE_LOGIN_FOR_MULTI_MARKETS for a market's login settings.
+
+### Searches too many to read in full, and how I narrowed them
+- **The N01 searches** listed 2271 and 2260 saved responses past the cap of 300. I reran both with `--max 2400`, which listed everything, and grouped the responses by endpoint:
+  - 2254 are the stores' feature lists (`GET /admin/v2/user/features`), read through the structure built from them, `dashboard-features`;
+  - the rest are translation answers (the text of `dashboard-translations`) and one partners-portal help answer.
+- **The N03 own-words search** listed 434 documents:
+  - the 67 capture-run pages and the help-centre pages among the archive records match on the help centre's menu, which every page holds; I judged them by title;
+  - the 235 run steps match on the dashboard's settings menu, which lists Installed apps beside Markets. Step 15 of the localization run was read in full, and the rest were judged by title and snippet;
+  - the code bundles were read where they name apps/installed (item 161);
+  - of the help articles, line 1201 was read as item 161 says, and the others are articles on single apps, judged by title.
+
+### Problems with the method
+- An absence that rests on a settings center section also rests on the code its definition names: the fetchers (`notificationsFetcher`) and components (CancellationReasonsSection, apps:installed-list). One of them, CancellationReasonsSection, is loaded from a separate chunk. Both were held.
+- The same code holds a component (NotificationsPreferencesTable) that no held definition uses. So a section's held definition is the list as served on 2026-10-08 and 2026-10-09, not the only form the code can render.
+- The brief's (f) search form (names, then `--with` the setting's own words) gives the same set as the own-words search, with the terms swapped, since `--with` is an "and" of two "or" lists.
+- The checker reports three errors that this part didn't make: S02-SA-185, S02-SA-189 and S02-SA-221 name S02-SA-450, a (g;h) statement, in `conditions`. They were already in the copy taken before this part's first write. Left for the coordinator.
+
+**Check (A3-2):** on a copy holding only `bullets.tsv` and this folder (`/tmp/claude-0/-home-user/9f45def8-b710-5f9c-84f3-6a0fa7e617c8/scratchpad/s02-a3-2/check2-salla/S-02`, output in `.../check2-salla/out`), 2026-10-27: 462 statements, 15 gaps, 791 quotes found, none not found. My twelve quotes (S02-SA-C780 to S02-SA-C791) are all found. The review lines for S02-SA-N01 to S02-SA-N03 are gone. Three lines of level error remain, all on rows this part didn't add or change: S02-SA-185, S02-SA-189 and S02-SA-221 name S02-SA-450, a (g;h) statement, in `conditions` (see Problems with the method above).

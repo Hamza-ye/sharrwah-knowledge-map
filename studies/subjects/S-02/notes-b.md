@@ -395,6 +395,583 @@ None. S02-VP-19 is raised for a kind of rule 1's list, the store's data, which n
 10. Zid's gap S02-ZD-G03 gives a `gap` row under both S02-VP-08 and S02-VP-09 (S02-V-170, S02-V-173), beside the answer rows, as S02-V-148 does for Salla.
 11. Ids: this part's rows are S02-V-169 to S02-V-240, and its point S02-VP-19. RD1 holds 19 points, under its cap of 25.
 
+## Second pass, RD1-S2
+
+Part RD1-S2 of the second pass: the tasks of `b/second-pass/RD1/worklist.tsv` under (c) for Shopify and Salla.
+
+### Revisit S02-V-164 (salla, S02-VP-16, the store's taxes)
+
+Replaced: `not covered` became an answer row, S02-V-164, 'This option is currently available for stores in Saudi Arabia only.' (S02-SA-349, S02-SA-350, S02-SA-358). Its leads noted:
+- S02-SA-353 (c): a list of products' VAT exemption reasons ('VATEX-SA-29':'Financial services' and the rest); names no decider (rule 4)
+- S02-SA-354 (c): the same list's next run (rule 5, Lists); names no decider (rule 4)
+- S02-SA-355 (c): the same list's next run (rule 5, Lists); names no decider (rule 4)
+- S02-SA-356 (c): the same list's last run (rule 5, Lists); names no decider (rule 4)
+- S02-SA-357 (c): the complete address of the store's main, default branch ('بيانات الفرع الرئيسي (الإفتراضي) لمتجرك مكتملة من حيث العنوان'; my translation: that the data of your store's main, default branch be complete as to its address), a requirement of ZATCA integration: its decider is a branch, which rule 1 keeps out of the store's own country; in S02-VP-16's note
+- S02-SA-361 (c): 'Enter the official rate that applies in the market you are selling into': its decider is a market the store sells into, RD3's (f), not the store's own country; in S02-VP-16's note
+- S02-SA-363 (c): 'Select a country and create your tax record first to enable tax collection': the tax record's country, which Salla's term ties to a market the store sells into ('السوق' in terms.tsv: 'وسيُستخدم هذا السجل الضريبي تلقائياً عند البيع فيها'; my translation: this tax record will be used automatically when selling in it), not the store's own country; in S02-VP-16's note
+- S02-SA-364 (c): 'Select a country and create your tax record first to enable government integrations': the tax record's country, as for S02-SA-363; in S02-VP-16's note
+- S02-SA-374 (c): customs duties on international shipments 'are calculated on the waybill and then settled directly from your wallet balance': names no decider of the store's taxes (rule 4)
+- S02-SA-375 (c): customs duties on DHL international shipping 'are settled through your store wallet balance': names no decider (rule 4)
+
+### Revisit S02-V-168 (salla, S02-VP-18, the store's defaults)
+
+Replaced: `not covered` became `gap`, S02-V-168, with S02-SA-G07, which asks whether the store's country sets the default currency or language. No lead answers. Its leads noted:
+- S02-SA-387 (c): the merchant can change the store's default currency 'بشرط أن لا يكون هناك طلبات شراء للعملاء' (my translation: provided there are no customer purchase orders): the merchant's choice and a condition on changing it, not the store's own country; in S02-VP-18's note
+- S02-SA-388 (c): 'you can change the default currency as long as there are no existing customer orders in the system': as S02-SA-387; in S02-VP-18's note
+- S02-SA-390 (c): what the default language is, the language of the base definition of the store's sections; names no decider (rule 4)
+- S02-SA-391 (c): the merchant sets the default language by choosing it from the languages added to the store: the merchant's choice, not the store's own country; in S02-VP-18's note
+- S02-SA-392 (c): the default language can't be changed after content is translated into other languages: a condition on changing it, not the store's own country; in S02-VP-18's note
+- S02-SA-393 (c): 'You cannot change the default language after content ... has already been translated': as S02-SA-392; in S02-VP-18's note
+- S02-SA-400 (c): entering the national address 'will be mandatory on Salla when creating or completing orders, in accordance with Transport Authority requirements': an order's address, not a default the platform sets for the store; it fits none of (c)'s kinds of thing bound, and the second pass raises no point (brief, second pass)
+
+### Revisit S02-V-219 (salla, S02-VP-19, the store's data)
+
+Replaced: `not covered` became an answer row, S02-V-219, every store, 'The merchant must comply with Salla’s Privacy Policy and all provisions of the Personal Data Protection Law in the Kingdom of Saudi Arabia.' (S02-SA-335, S02-SA-336, S02-SA-324, S02-SA-328, S02-SA-325, S02-SA-337, S02-SA-338, S02-SA-319, S02-SA-320, S02-SA-321); and a `gap` row beside it, S02-V-241, with S02-SA-G05, which asks where the store's data is stored or accessed, which the answer doesn't give. Its leads noted:
+- S02-SA-322 (c): a contact for the personal data protection department of 'شركة منصة سلة للاتصالات و تقنية المعلومات'; names no decider (rule 4)
+- S02-SA-323 (c): the definition of 'منصة سلة' (Salla's platform) and the company that owns it; names no decider of the store's data (rule 4)
+- S02-SA-326 (c): the law 'يطبق ... على أي عملية معالجة لبيانات شخصية تتعلق بالأفراد المواطنين أو المقيمين في المملكة' (my translation: applies to any processing of personal data of individuals who are citizens or residents of the Kingdom): its decider is the persons whose data is processed, not the store's own country; in S02-VP-19's note
+- S02-SA-327 (c): the Saudi Data and AI Authority receives the complaints about the law; names no decider (rule 4)
+- S02-SA-329 (c): the merchant 'يمكنك تفعيل آلية الموافقة الصريحة على ملفات تعريف الارتباط' (my translation: you can enable explicit consent to cookies): a setting the merchant switches on, RD3's privacy and consent; names no decider (rule 4)
+- S02-SA-332 (c): 'Enable cookie consent to comply with regulations like: PDPL (Saudi Arabia) GDPR (EU)': as S02-SA-329; names no decider (rule 4)
+
+A call the brief left to me: rule 4's `every store` holds 'where neither it nor its scope names a country'. These statements name Saudi Arabia only as the country of the law that applies, which is X itself (the privacy law that applies), not as a country the law is offered to or restricted to; I read them as `every store`, as part RD1-3 read S02-SA-209 (Salla's policy and Saudi Arabia's laws) under S02-VP-09's every-store row, S02-V-149.
+
+### Revisit S02-V-218 (shopify, S02-VP-19, the store's data)
+
+Replaced: `not covered` became three answer rows:
+- S02-V-218, every store, 'Shopify's collection, use, disclosure and processing of your personal information is governed by our Merchant Privacy Policy.' (S02-SH-613, S02-SH-614, S02-SH-615, S02-SH-618, S02-SH-619, S02-SH-622, S02-SH-624);
+- S02-V-242 (added), the merchant's location or residence, 'including such laws that apply based on the location or residence of Merchant and/or Your Customer(s).' (S02-SH-621, S02-SH-623, S02-SH-625, S02-SH-717);
+- S02-V-243 (added), where the person whose data it is is located, 'If you are located in Canada or the United States, your Personal Data is received by: Shopify Inc.' (S02-SH-617, S02-SH-616); the reading that the Privacy Policy's 'you' includes the merchant is marked as mine in its basis_evidence, as part RD1-4 read S02-WC-073.
+
+Leads placed under another point of (c): S02-SH-626 joined S02-V-101 (S02-VP-08: 'Shopify's primary contracting entity with merchants in EMEA ... and LATAM'); S02-SH-614 also joined S02-V-105 (S02-VP-09, every store: the terms every merchant accepts before signing up). Leads noted:
+- S02-SH-620 (c): Appendix C applies 'Where the processing of Personal Data under this DPA is subject to data protection requirements in the European Economic Area': its decider is the law's reach over the processing, not the store's own country; in S02-VP-19's note
+- S02-SH-713 (c): the admin shows 'the primary location where Shopify stores your store data, order data, and customer personal data'; names no decider (rule 4)
+- S02-SH-714 (c): the admin shows 'information about the geographic storage location of your data'; names no decider (rule 4)
+- S02-SH-716 (c): two stores' 'Data storage hosting location', observed as 'United States'; names no decider (rule 4)
+- S02-SH-718 (c): 'The GDPR doesn't require personal data to be processed or stored in Europe' and protects 'personal data of European residents transferred outside of Europe': its decider is the residence of the persons whose data it is, not the store's own country; in S02-VP-19's note
+
+### Rereads (shopify, (c)), noted by part RD1-3 under rule 2, since widened
+
+Placed, joined to S02-V-108 (S02-VP-10, documents and checks, the business entity's country code): S02-SH-441, S02-SH-442, S02-SH-443, S02-SH-444, S02-SH-445, S02-SH-446 and S02-SH-448, whose scope names the call's business entity ('its business entity 'My Store - entity' (196406207); the call's countryCode YE'), and S02-SH-267, whose identifier is the legal entity's field ('legalEntity.governmentIdentifiers') and whose scope is the legal entity's schema ('jurisdiction YE, legalEntityType default_company'); its source's file is S02-SH-448's, from another run. That the call's country code is the business entity's is my reading of the scope, marked in S02-V-108's basis_evidence. Their earlier notes stay.
+
+Left noted: S02-SH-465 ('threeDSecureEligibilityForCountry'): its words, its identifier and its scope, a list of stores and plans, don't say whose country.
+
+### Place tasks: salla (c)
+
+Placed: S02-SA-312 joined S02-V-152 (S02-VP-10; the Arabic of S02-SA-284's words); S02-SA-313 joined S02-V-151 (S02-VP-10; the question 'store-country'); S02-SA-314 joined S02-V-162 (S02-VP-14) and S02-V-150 (S02-VP-09), as Salla's English of S02-SA-147, which part RD1-3 placed in both; S02-SA-315 joined S02-V-159 (S02-VP-13), by its scope, Kuwait's and the UAE's payout articles, as part RD1-3 read S02-SA-145 and S02-SA-150. Noted:
+- S02-SA-316 (c): 'Your settlement terms and merchant fees follow your agreement with Tabby', and Tabby's payments 'are collected through Tabby rather than Salla Payments': its decider is the merchant's agreement with Tabby and the payment method, not the store's own country (rule 4); in S02-VP-13's note
+- S02-SA-317 (c): Tamara settles its orders 'according to the agreement between Tamara and the store': its decider is that agreement, not the store's own country (rule 4); in S02-VP-13's note
+- S02-SA-376 (c): the consumer's right under the Saudi E-commerce Law to withdraw within seven days of receiving the product: a buyer's right of return, which fits none of (c)'s kinds of thing bound, and names no decider (rule 4)
+- S02-SA-383 (c): 'The law entitles the consumer to return a product ... within 7 days of the purchase date': as S02-SA-376
+- S02-SA-384 (c): '5. إضافة سياسة الاستبدال والاسترجاع' (my translation: 5. add an exchange and return policy), a step of an article on the Saudi E-commerce Law: names no decider (rule 4), and returns fit none of (c)'s kinds
+- S02-SA-385 (c): '5. Add exchange and return policy': as S02-SA-384
+- S02-SA-425 (c): 'Saudi E-commerce law requires a verified store address' under 'Set your pickup location', where 'carriers will pick up orders': a place the store ships from (rule 1); and its other text's key, 'uae_desc', names a country without saying whose (rule 2)
+
+### Place tasks: shopify (c)
+
+Placed (joined to a row unless said): S02-SH-593 joined S02-V-128, S02-V-135, S02-V-138 and S02-V-145 (S02-SH-248's list); S02-SH-602 joined S02-V-142; S02-SH-612 joined S02-V-143, S02-V-113 and S02-V-121, and is a new row under S02-VP-14, S02-V-244 ('pricing and payment options can differ depending on where your business is based'); S02-SH-630, S02-SH-631, S02-SH-633 and S02-SH-637 are a new row under S02-VP-11, S02-V-245 ('Your Shopify Payments account must be located in one of the following countries'; that the account's location is where the merchant's business is is my reading, marked there); S02-SH-636 and S02-SH-641 joined S02-V-119; S02-SH-639 joined S02-V-110; S02-SH-642 joined S02-V-112; S02-SH-644 and S02-SH-645 joined S02-V-108; S02-SH-650 joined S02-V-137; S02-SH-699 and S02-SH-700 joined S02-V-127; S02-SH-701 joined S02-V-113 and S02-V-121; S02-SH-702 joined S02-V-130; S02-SH-705 joined S02-V-143; S02-SH-709 joined S02-V-115. Noted:
+- S02-SH-594 (c): the Terms of Service 'require you to maintain an accurate location', and the store address 'updates to match your new business entity address and country': what fills and changes the store's own country, (a) and (b), not a thing bound to it
+- S02-SH-651 (c): additional tax fields in early access, by 'Destination is Chile' and the like: the shipping destination, a buyer's country, not the store's own country (rule 1); in S02-VP-16's note
+- S02-SH-692 (c): 'The Shopify Plus plan pricing varies depending on the term and your billing currency': its deciders are the term and the billing currency, outside rule 1's table (rule 4), and its table's 'Available countries' don't say whose country (rule 2); in S02-VP-14's note
+- S02-SH-710 (c): 'the physical location where the POS device is logged in determines the entity': a place the store sells at (rule 1), not the store's own country
+- S02-SH-712 (c): 'you must have a separate entity for each country with retail locations': the retail locations' countries, places the store sells at (rule 1)
+
+Placed, continued: S02-SH-733 joined S02-V-242; S02-SH-823 joined S02-V-137; S02-SH-825 joined S02-V-245; S02-SH-858 joined S02-V-120; S02-SH-869 and S02-SH-870 are a new row under S02-VP-17, S02-V-246 ('SMS notifications are supported only when your business address is in one of the following countries'); S02-SH-883 joined S02-V-146; S02-SH-891 joined S02-V-138; S02-SH-921 is a new row under S02-VP-18, S02-V-247 ('The entity assigned to each retail location determines the currency for Shopify POS at that location'). Noted:
+- S02-SH-855 (c): 'you must follow the payment rules for the country you're processing the transaction in': the country of an in-person sale, a place the store sells at (rule 1); in S02-VP-11's note
+- S02-SH-856 (c): 'To accept in-person POS payments in multiple countries, you must create a separate Shopify store and Shopify Payments account for each additional country': the countries of in-person sales, places the store sells at (rule 1); in S02-VP-11's note
+- S02-SH-859 (c): in-person country requirements don't apply to sales 'using a payment solution other than Shopify Payments' or at locations 'that don't accept payments': its deciders are the payment solution and the location's use (rule 4); in S02-VP-11's note
+
+Placed, continued: S02-SH-931 joined S02-V-137; S02-SH-932 joined S02-V-142; S02-SH-933 joined S02-V-138; S02-SH-935 is a new row under S02-VP-18, S02-V-248 ('Cash rounding rules might apply automatically at checkout depending on your store's location'); S02-SH-953 and S02-SH-954 joined S02-V-242. Noted:
+- S02-SH-923 (c): 'the entity for that location must use a default payout currency that matches the country and currency requirements for that country': the country of a retail location, a place the store sells at (rule 1); in S02-VP-11's note
+- S02-SH-928 (c): 'In France, Spain, Italy, Germany, and Sweden, a return or exchange ... must be processed by the same legal entity as the original sale', for Shopify POS there: the countries of retail sales, places the store sells at (rule 1); and returns fit none of (c)'s kinds
+- S02-SH-930 (c): 'You can't sell product bundles in Shopify POS for retail locations in Spain': a retail location, a place the store sells at (rule 1); in S02-VP-17's note
+- S02-SH-936 (c): additional cash rounding rules for 'new stores created on or after July 6, 2026' and stores 'that set up their first retail location in a listed country': the store's creation date (rule 4) and a retail location (rule 1); in S02-VP-18's note
+- S02-SH-942 (c): 'Automatic receipt printing is on by default for Shopify POS locations in Italy': a POS location, a place the store sells at (rule 1); in S02-VP-18's note
+- S02-SH-950 (c): 'A $2.15 USD monthly charge applies to each approved toll-free number used for SMS marketing in the United States and Canada': where the number is used, not the store's own country (rule 4); in S02-VP-14's note
+
+Placed, continued: S02-SH-956 is a new row under S02-VP-17, S02-V-249, every store ('There are no specific country requirements for your store's location'); S02-SH-959 and S02-SH-971 joined S02-V-127; S02-SH-964 joined S02-V-141; S02-SH-965, S02-SH-966 (its list's next run, rule 5, Lists), S02-SH-968, S02-SH-969 and S02-SH-970 joined S02-V-142. Noted:
+- S02-SH-960 (c): 'You're charged based on the number of SMS marketing messages sent to each recipient': its decider is the messages and their recipients (rule 4); its example's 'if you're located in Denmark' doesn't say the location decides the charge; in S02-VP-14's note
+
+Rows compared with a statement of their own platform were rechecked under rule 5: each joined statement names its row's decider in its own words, or, where said, by its scope.
+
+## Second pass, RD1-S1
+
+Part RD1-S1 of the second pass: the tasks of `b/second-pass/RD1/worklist.tsv` under (a), (b) and (d), for Shopify, Salla, Zid, WooCommerce and BigCommerce.
+
+### Revisits S02-V-089, S02-V-090 and S02-V-091 (bigcommerce, S02-VP-05, S02-VP-06 and S02-VP-07)
+
+S02-V-089 (S02-VP-05, who checks): `gap` (S02-BC-G01) became an answer row, S02-V-089, 'validating the VAT number with the issuing country' (S02-BC-277): the account's VAT number is the merchant's tax registration, which rule 1 counts as the store's own country; that BigCommerce ('We', in the error message its identifier quotes) validates it with the issuing country is my reading, marked in its basis_evidence. Beside it, a `gap` row, S02-V-250, with S02-BC-G09, which asks who checks the default country, the country defined at sign-up or the hosting region, which the answer doesn't give. S02-BC-G01 was settled by gap-closing and goes.
+
+S02-V-090 (S02-VP-06, who changes): `gap` (S02-BC-G02) became two answer rows: S02-V-090, 'the Manage Settings permission must be enabled on your user account' (S02-BC-261), and S02-V-251 (added), 'Information & Settings | modify | `store_v2_information`' (S02-BC-207, S02-BC-205, S02-BC-206), the OAuth scope of Update Locale Settings, which updates store_country. The seller's answer was already S02-V-099's: S02-BC-254, S02-BC-251, S02-BC-260 and S02-BC-282 joined it. 'default country' is BigCommerce's term for 'The country your store is run from' (terms.tsv; S02-BC-263), so it passes the role test.
+
+Placed under another point of (b), S02-VP-04 (who sets), as S02-BC-110's 'configure' was read in the first pass under both: S02-BC-260 ('manage') joined S02-V-088 (the seller); S02-BC-261 is a new row, S02-V-252 (the Manage Settings permission); S02-BC-206 is a new row, S02-V-253, 'default: United States', a default the platform sets (rule 4).
+
+S02-V-091 (S02-VP-07, what must hold before it changes): `gap` (S02-BC-G02) became an answer row, S02-V-091, 'you can adjust these settings at any time' (S02-BC-251). Its other leads are placed under S02-VP-06 (S02-BC-207, S02-BC-254, S02-BC-261) or noted below (S02-BC-264, S02-BC-272). A call the brief left to me: as in the first pass (S02-SH-255 and S02-SH-266's permissions under S02-VP-06, its feature under S02-VP-07), a permission or scope that must be held is placed under who changes, not under what must hold.
+
+Leads noted (b):
+- S02-BC-212 (b): `country` is the 'Country where the store is located (as defined during the store sign-up process)': it says when the country is defined, not who sets, checks or changes it (rule 2)
+- S02-BC-217 (b): the Information & Settings scope manages 'store profile contact details, date and time preferences, and default language': it doesn't name the store's country (rule 2)
+- S02-BC-257 (b): channel-specific localization settings, edited with the Edit Channels permission: a channel's settings, not the store's country, which S02-BC-100 says channel-specific overrides can't modify (rule 2)
+- S02-BC-259 (b): 'You can manage store information globally from Settings › Store profile': the store information it names is 'the basic contact information ... such as the store name and email address', not the store's country (rule 2)
+- S02-BC-264 (b): 'To view and manage your store’s settings, the Manage Settings permission must be enabled': the Store Settings page, which S02-BC-110 names for 'physical dimensions and date and timezone settings', apart from the Locale settings in Store Profile; it doesn't name the store's country (rule 2)
+- S02-BC-266 (b): 'The Store Owner or a System Admin can create or delete users and grant permissions': who grants staff permissions, not who sets, checks or changes the store's country (rule 2)
+- S02-BC-267 (b): what the Manage Settings permission gives access to, 'Product Filtering, Store Settings, Checkout, ...': it doesn't name the store's country (rule 2)
+- S02-BC-268 (b): the Edit Channels permission edits 'channel settings and additional storefronts': a channel's settings, not the store's country (rule 2)
+- S02-BC-269 (b): 'Only the store owner user can grant high-risk permissions': who grants permissions, not the store's country (rule 2)
+- S02-BC-270 (b): the Store Owner role 'Includes all permissions' and 'is the person financially responsible for the account': it doesn't say the role gates the store's country (rule 4)
+- S02-BC-272 (b): 'Once you have selected a hosting region for your trial store, it cannot be changed': the hosting region, where the platform hosts the store, which rule 1 keeps out; in S02-VP-06's and S02-VP-07's notes
+- S02-BC-273 (b): 'Make sure that you are entering your actual business information in the form instead of placeholder data': it names no one who checks, and not the store's country (rule 2)
+- S02-BC-274 (b): a mismatch 'with the country, date, or time settings between your browser and your store information', a possible cause of a trial-creation error: it names no one who checks the store's country (rule 2)
+- S02-BC-283 (b): 'Our system uses your device's IP address to determine the zip code of your location when attempting to make a payment': a check of the place a payment is made from, against the billing address, not a check of the store's country (rule 2)
+
+### Revisit S02-V-026 (shopify, S02-VP-03, the countries the platform serves)
+
+Replaced: `not covered` became an answer row, S02-V-026, 'Shopify is available in nearly every country in the world' (S02-SH-612), the answer to 'In what countries can I use Shopify?'. Its one lead is placed.
+
+### Revisit S02-V-084 (woocommerce, S02-VP-05, who checks)
+
+Replaced: `gap` (S02-WC-G02) became an answer row, S02-V-084, 'Verify your business details with our payments partner, Stripe.' (S02-WC-258, S02-WC-257, S02-WC-260, S02-WC-261); added S02-V-254, 'The location argument must be a valid ISO3166 alpha-2 country code.' (S02-WC-262), the platform's code checking the business location's form, by S02-WC-224's description of the same REST routes' location; and a `gap` row beside them, S02-V-255, with S02-WC-G06, which asks whether the country itself is checked beyond its form, which the answers don't give. S02-WC-511 ('we use an embedded iframe from Stripe to verify information about you and your business') joined S02-V-098 (WooCommerce, with Stripe). S02-WC-259 ('Where is your business located?') is placed under another point of (b): it joined S02-V-082 (S02-VP-04, the seller sets it). S02-WC-G02 was settled by gap-closing (S02-WC-G06 replaces it) and goes. Leads noted:
+- S02-WC-512 (b): a test account 'requires no personal information' and 'will only operate in test mode': it names neither the store's country nor who checks it (rule 2)
+
+### Revisit S02-V-038 (zid, S02-VP-02, the countries kept out)
+
+Replaced: `not covered` became `gap`, S02-V-038, with S02-ZD-G09, which asks which countries, if any, Zid keeps out of creating a store. The revisit had no lead.
+
+### Rereads (shopify, salla and zid, (a), (b) and (d)), noted by parts RD1-1 and RD1-3, since widened
+
+Placed, under rule 5's identifier or scope:
+- S02-SH-259, under (a): joined S02-V-006 (S02-VP-01): its identifier, 'combobox "I'm located in:"', names the field its words list the options of
+- S02-SH-260, under (a): joined S02-V-001 (S02-VP-01): its identifier, 'Add business entity, country', names the business entity's country
+- S02-SH-396, under (a) and (b): joined S02-V-001 (S02-VP-01) and S02-V-053 (S02-VP-04, the seller): its identifier names the admin's form that creates business details, whose first control is the button 'Yemen'
+- S02-ZD-148, under (a): a new row, S02-V-256 (S02-VP-01), 'required: - country - city': its identifier names the record, 'user.business_location (DefaultStoreLocationSerializer)'
+
+Already placed: S02-SH-260 under (b), in S02-V-053 (S02-VP-04), by the first pass; no change.
+
+Left noted (their earlier notes stand):
+- S02-SA-249 (a): its identifier places the country in 'default_branch', a branch, which rule 1 keeps out of the store's own country
+- S02-SH-259 (d): its identifier names the field where the merchant gives their location, not where Shopify serves merchants
+- S02-SH-441 (b): its scope now says whose country, the business entity's, but it names no one who sets, checks or changes it, nor a condition on its change
+- S02-SH-448 (b): its scope now says whose country, but its words give the fields' requirements ('"required":true', '"validations":null'), and name no one who sets, checks or changes it, nor a condition on its change
+- S02-ZD-148 (b): its identifier names the business location, but it names no one who sets, checks or changes it ('is_address_confirmed' is a field's name), nor a condition on its change
+- S02-ZD-149 (a): its identifier says whose profile, the account user's ('GET /v1/managers/account/profile > user.user_profile_data'), but not that its 'country' is where the merchant is based, registered or resident
+
+### Note task (zid, (a))
+
+- S02-ZD-180 (a): They quote the Saudi Terms that zid.eg's Terms page holds in its raw HTML. The page's scripts replace them with the Terms of شركة زد مصر, under Egyptian law, so the page doesn't show these words (`method-report.md`, section 9). The statements recorded from the page as shown take their place.
+
+### Place tasks: bigcommerce (a) and (b)
+
+Placed under S02-VP-01 (a): S02-BC-206 and S02-BC-205 joined S02-V-048 (store_country, the same key); S02-BC-210 joined S02-V-050 ('store_address / Store Address', one term in terms.tsv); new rows: S02-V-257, '`country` ... Country where the store is located' (S02-BC-212); S02-V-258, '`country_code`' (S02-BC-213); S02-V-259, '`address` ... Display address.' (S02-BC-216); S02-V-260, 'Default country — The country your store is run from' (S02-BC-263, S02-BC-262, S02-BC-265, S02-BC-251, S02-BC-260); S02-V-261, 'Provide your VAT Number and Issuing Country' (S02-BC-277, S02-BC-275), the country of the merchant's tax registration; S02-V-262, 'your BigCommerce account's address' (S02-BC-282); S02-V-263, 'Address — The physical address of your store or place of business' (S02-BC-310). Under (b): S02-BC-275 joined S02-V-099 (S02-VP-06, the seller); S02-BC-276 is a new row, S02-V-264 (S02-VP-06), 'To access the Account Dashboard, you must be the store owner.'
+
+A call the brief left to me: `country` and `country_code` of Get Store Information are two fields, so two rows (rule 4, (a)); whether the store profile's 'Address' (S02-BC-310) is the 'Store Address' of S02-V-050 isn't stated, so it is its own row.
+
+Noted (a):
+- S02-BC-188 (a): a webhook that 'Fires when any of the global store profile settings are updated': it doesn't name the field or record that holds the store's country (rule 2)
+- S02-BC-208 (a): the locale settings, 'used to give shopper information about languages, countries, etc.': it doesn't say which country is the store's own (rule 2)
+- S02-BC-209 (a): 'If omitted, you will interact with the global settings only': a query parameter, which names no country (rule 2)
+- S02-BC-211 (a): `store_address_type`, 'Home Office', 'Commercial Office', 'Retail', 'Warehouse': the address's type, not what holds the country (rule 2)
+- S02-BC-214 (a): 'The infrastructure region where the store is located', to compare 'against GCP regions': where the platform hosts the store, which rule 1 keeps out; in S02-VP-01's note
+- S02-BC-215 (a): Get Store Information 'Returns metadata about the global settings for a store': it names no country (rule 2)
+- S02-BC-235 (a): regional hosting 'for merchants interested in hosting their stores in Europe or the Asia-Pacific (APAC) region': where the platform hosts the store, which rule 1 keeps out; in S02-VP-01's note
+- S02-BC-256 (a): 'configure the default country ... separately per channel' for additional storefronts: a storefront's country, a market the store sells into, not the store's own country (rule 1); in S02-VP-01's note
+- S02-BC-258 (a): 'The store profile provides basic information about your business': it doesn't name the store's country (rule 2)
+- S02-BC-259 (a): the store profile's 'basic contact information ... such as the store name and email address': it doesn't name the store's country (rule 2)
+- S02-BC-271 (a): the trial form's fields, 'your name, email address, a password, store name, the size of your business, and the region your store should be hosted': no country of the store; the hosting region, which rule 1 keeps out; in S02-VP-01's note
+- S02-BC-272 (a): the hosting region, which 'cannot be changed': where the platform hosts the store, which rule 1 keeps out; in S02-VP-01's note
+- S02-BC-274 (a): 'There may be a mismatch with the country, date, or time settings between your browser and your store information', a possible cause of an error: it doesn't name the field that holds the store's country (rule 2)
+- S02-BC-293 (a): 'Your Timezone — the timezone where you are located': a timezone, not a country, address or jurisdiction (rule 1)
+- S02-BC-294 (a): stores under one account 'share the same contact and billing information': it names neither the store's country nor an address (rule 2)
+- S02-BC-308 (a): 'Go to Settings › Store profile to update or change your store's contact information': it doesn't name the store's country or address (rule 2)
+- S02-BC-311 (a): 'Address type — Specifies whether the above address is a home or commercial office, retail store, or warehouse': the address's type, not what holds the country (rule 2)
+
+Noted (b):
+- S02-BC-221 (b): 'You will provide true, accurate, current, and complete information when registering for an Account': it doesn't name the store's country or an address (rule 2)
+- S02-BC-222 (b): 'Commerce reserves the right to refuse registration of, or cancel, accounts that violate this Agreement': a refusal for a violation, not who sets, checks or changes the store's country (rule 2)
+- S02-BC-243 (b): 'your default currency is assigned based on your location': it names no one who sets, checks or changes the location (rule 2)
+
+### Place tasks: salla (a), (b) and (d)
+
+Placed: S02-SA-311 and S02-SA-422 joined S02-V-015 (S02-VP-01, 'موقع المتجر', the store's location), and S02-SA-311 also S02-V-095 (S02-VP-06, the seller); S02-SA-312 and S02-SA-313 joined S02-V-013 (S02-VP-01, the Arabic and the API of S02-SA-284's onboarding question) and S02-V-072 (S02-VP-04, the seller); S02-SA-318 joined S02-V-024 (S02-VP-03, the UAE); S02-SA-430 joined S02-V-012 (store_country) and S02-V-018 (country), as S02-SA-292 is in both.
+
+A call the brief left to me: S02-SA-311 and S02-SA-422 say the store's location is updated 'from the branches and warehouses page'. Rule 1 keeps out a branch or warehouse, and lets the statement's own words decide: theirs don't say orders ship from the store's location or stock is kept in it, so I placed them with S02-V-015. S02-SA-423, which says branches and warehouses 'ship orders to customers', is noted.
+
+Noted:
+- S02-SA-312 (d): the options of the store-country question, 'من أي دولة تسجِّل متجرك؟' (my translation: from which country do you register your store?), 'دولة أخرى' (my translation: another country) among them: their words don't say the countries are where Salla serves merchants, as S02-SH-259's options were read under (d)
+- S02-SA-313 (d): the same question's options, from the onboarding's API ('"slug": "store-country"'): as S02-SA-312
+- S02-SA-357 (a): the address of the store's main, default branch, 'بيانات الفرع الرئيسي (الإفتراضي) لمتجرك' (my translation: the data of your store's main, default branch): a branch, which rule 1 keeps out; in S02-VP-01's note
+- S02-SA-360 (a): a tax record's country, for which the seller will 'select which markets the record applies to': a tax registration its own words tie to markets the store sells into (rule 1); in S02-VP-01's note
+- S02-SA-421 (a): 'Choose the country, address, postal code, street, and district', for a branch or warehouse: a branch or warehouse, which rule 1 keeps out; in S02-VP-01's note
+- S02-SA-423 (a): branches and warehouses, 'used to define working hours, display store locations, and ship orders to customers': places the store ships from, which rule 1 keeps out; in S02-VP-01's note
+
+### Place tasks: shopify (a) and (b)
+
+Placed under S02-VP-01 (a): S02-SH-591, S02-SH-644 and S02-SH-881 joined S02-V-001 (business details, the business entity); S02-SH-593, S02-SH-760, S02-SH-882, S02-SH-885, S02-SH-886 and S02-SH-891 joined S02-V-002 (the store address); S02-SH-598, S02-SH-627 and S02-SH-886 joined S02-V-003 (the billing address); S02-SH-600 joined S02-V-006 ('I'm located in'); S02-SH-702 joined S02-V-007 (an accurate location); S02-SH-599 is a new row, S02-V-265, the sign-up's '"storeCreatePayload": {... "country": "YE"'.
+
+Placed under (b): S02-SH-592, S02-SH-594, S02-SH-599, S02-SH-600, S02-SH-644, S02-SH-702 and S02-SH-881 joined S02-V-053 (S02-VP-04, the seller); S02-SH-594, S02-SH-595, S02-SH-602, S02-SH-702, S02-SH-881 and S02-SH-895 joined S02-V-059 (S02-VP-06, the seller); S02-SH-595 and S02-SH-884 joined S02-V-065 (S02-VP-07, deactivating financial services); S02-SH-598 joined S02-V-067 (S02-VP-07, the billing address's country matches an entity's: its Country/region is disabled beside the selected entity). New rows: S02-V-266 (S02-VP-05), 'Business entity information is sent to assessors to verify your business.' (S02-SH-589); S02-V-267 (S02-VP-07), 'Adding new business entities or making changes might require additional verification.' (S02-SH-590, S02-SH-596); S02-V-268 (S02-VP-06), 'You can't change the business type, country, or the person associated with individual or sole proprietor entities.' (S02-SH-596); S02-V-269 (S02-VP-06), 'you might need to contact Shopify Support to change a store's default business entity' (S02-SH-597); S02-V-270 (S02-VP-04), 'Your user role might not have the View permission for Business entities.' (S02-SH-601).
+
+Calls the brief left to me: 'manage' and 'maintain' are read as both setting and changing (S02-SH-594, S02-SH-702, S02-SH-881), as S02-SH-013 is in both S02-V-053 and S02-V-059; S02-SH-601's 'View permission for Business entities' is its own row, since nothing quoted shows it is S02-V-055's 'VIEW_LEGAL_ENTITIES'; S02-SH-599's store-creation payload is its own row under (a), a record apart from the sign-up's field 'I'm located in:' (S02-V-006).
+
+Noted (b):
+- S02-SH-591 (b): it lists what the business entity must include, 'The country your business is operating from' among them: no one who sets, checks or changes it, and no condition on its change (rule 2)
+- S02-SH-593 (b): 'Changing the store country creates a new business entity and might affect the following details': what a change does, not who makes it or what must hold before it (rule 2)
+- S02-SH-627 (b): 'Before creating a new store in your organization, your main store must have ... a complete billing address': a condition on creating an expansion store, not on setting or changing the store's country; it names no party (rule 2)
+
+### Place tasks: woocommerce (a) and (b)
+
+Placed under S02-VP-01 (a): S02-WC-245 and S02-WC-385 joined S02-V-040 (the base country); S02-WC-267 joined S02-V-041 (Business location); S02-WC-388 and S02-WC-397 joined S02-V-039 (Store Address, woocommerce_default_country); new rows: S02-V-271, '“Stripe Account Country” means the country or region User selected when opening User’s Stripe Account' (S02-WC-228); S02-V-272, 'You may provide us with more information — like your address' (S02-WC-235), the WordPress.com account's address; S02-V-273, 'Where is your business located?' (S02-WC-259); S02-V-274, 'Where is your store located?' (S02-WC-294, S02-WC-322).
+
+Placed under (b): S02-WC-228, S02-WC-243, S02-WC-292, S02-WC-294 and S02-WC-322 joined S02-V-082 (S02-VP-04, the seller); S02-WC-293 joined S02-V-083 (S02-VP-04, the platform: its code saves the setting when the profiler is skipped); S02-WC-322 joined S02-V-085 (S02-VP-06, the seller); S02-WC-230 joined S02-V-086 (S02-VP-06, no one: 'there isn’t a way to update the country'); S02-WC-231 joined S02-V-084 (S02-VP-05, Stripe); S02-WC-240 and S02-WC-295 joined S02-V-254 (S02-VP-05, the platform's code); new rows under S02-VP-06: S02-V-275, "wc_rest_check_manager_permissions( 'settings', 'edit' )" (S02-WC-241), and S02-V-276, 'Migrate the state code for the store location.' (S02-WC-242), the platform.
+
+Calls the brief left to me: the onboarding's questions 'Where is your store located?' and 'Where is your business located?' are their own rows under (a), since nothing quoted says which field stores their answers; S02-WC-295's geolocation notice is a check of the store's country by the platform's code, joined with its form checks in S02-V-254.
+
+Noted (a):
+- S02-WC-229 (a): WooPayments creates 'a special kind of Stripe account ... called a Stripe Express account': it names no country (rule 2)
+- S02-WC-236 (a): the Ecommerce Services need a WordPress.com account and, for some, 'your site URL': it names no country or address (rule 2)
+- S02-WC-237 (a): 'We may determine the approximate location of your device from your IP address': a device's location, not a country held as where the store or its merchant is based (rule 1)
+- S02-WC-238 (a): information 'relating to your Stripe account, such as your email address and phone number': it names no country or address (rule 2)
+- S02-WC-247 (a): the entity 'depends on where you reside and which Services you use': it names the merchant's residence, but not the field or record that holds it (rule 1, (a))
+- S02-WC-249 (a): 'the billing country associated with your payment method' and 'your detected location': a payment method's billing country and a detected location, neither said to be where the store or its merchant is based (rule 1)
+- S02-WC-250 (a): 'You must provide accurate and up-to-date payment information': it names no country or address (rule 2)
+- S02-WC-382 (a): the Point of Sale's 'Physical address' ('woocommerce_pos_store_address'): a place the store sells at, which rule 1 keeps out; in S02-VP-01's note
+
+Noted (b):
+- S02-WC-232 (b): reasons to delete a WooPayments account, 'the wrong country was chosen' among them: not who sets, checks or changes the country, nor what must hold before it changes (rule 2)
+- S02-WC-233 (b): 'WooPayments accounts can only be deleted by our support staff': who deletes the account, not who changes its country (rule 2)
+- S02-WC-234 (b): when an account can be deleted: not the store's country (rule 2)
+- S02-WC-239 (b): "add_action( 'update_option_woocommerce_default_country', ... )": a hook alone names no party (rule 4)
+- S02-WC-244 (b): it sets the store's currency and units from '$country_info': not who sets, checks or changes the country (rule 2)
+- S02-WC-250 (b): 'You must provide accurate and up-to-date payment information': it names no country or address (rule 2)
+- S02-WC-251 (b): 'you agree to provide us with complete and accurate information and to keep the information current': it names no country or address (rule 2)
+- S02-WC-252 (b): 'We may limit your access ... until we’re able to verify your account information, like your email address': it doesn't name the store's country (rule 2)
+- S02-WC-296 (b): 'Setting up your store in the wrong country may lead to the following issues:': what a wrong country leads to, not who checks or changes it (rule 2)
+- S02-WC-313 (b): the legacy wizard takes a currency by country ('$currency_by_country'): not the store's country's setter (rule 2)
+- S02-WC-314 (b): 'Before changing the currency, confirm that your payment gateway supports it': the currency, not the store's country (rule 2)
+
+## Second pass, RD1-S3
+
+Part RD1-S3 of the second pass: the tasks of `b/second-pass/RD1/worklist.tsv` under (c) for Zid, WooCommerce and BigCommerce.
+
+### Revisit S02-V-226 (bigcommerce, S02-VP-10, documents and checks)
+
+Replaced: `not covered` became `gap`, S02-V-226, with S02-BC-G06, which asks which documents or checks the merchant provides and what decides them. No lead names a decider. Its leads noted:
+- S02-BC-218 (c): the Actions section shows tasks 'such as completing your profile, linking a bank account, Know Your Customer (KYC) status': a check, with no decider named (rule 4); its scope is BigCommerce Payments, not every store
+- S02-BC-219 (c): an 'Account verification pending' banner until the account or business profile is complete: names no decider (rule 4)
+- S02-BC-220 (c): 'Funds may be held or blocked for several reasons, depending on different factors ... complete any requests for documents or verification': names no decider (rule 4)
+
+### Revisit S02-V-233 (bigcommerce, S02-VP-13, payouts)
+
+Replaced: `not covered` became an answer row, S02-V-233, 'Your first payout might take longer, depending on your industry risk level and country of operation.' (S02-BC-223, Stripe OCS): 'country of operation' is in rule 1's store's own country; that the first payout's timing is how the merchant is paid is my reading, marked there, as WooCommerce's S02-V-203 ('how often your balance will be paid out depending on your business location'). Its leads noted:
+- S02-BC-224 (c): 'payouts to your account are settled in your default currency': its decider is the store's default currency, outside rule 1's table (rule 4); in S02-VP-13's note
+- S02-BC-225 (c): 'The merchant can set their settlement currency through its payment provider': the merchant's choice, not the store's own country (rule 4); in S02-VP-13's note
+- S02-BC-226 (c): 'If the shopper’s card-issuing bank differs from the merchant's bank account country, additional cross-border fees may apply': the shopper's card-issuing bank and the bank account's country, neither in rule 1's table (rule 4); in S02-VP-13's note
+- S02-BC-227 (c): 'view the linked bank account and set up automatic payouts to your bank or PayPal account': names no decider (rule 4)
+- S02-BC-228 (c): 'By default, automatic payouts are transferred to your PayPal account. To switch to a bank account, click Change': the default and the merchant's choice, not the store's own country (rule 4); in S02-VP-13's note
+- S02-BC-229 (c): 'For new BigCommerce Payments accounts, initial payments are held for up to 21 days': its decider is the account's age (rule 4); in S02-VP-13's note
+- S02-BC-230 (c): 'The Fast option for a manual payout is subject to a fee of 1.50%': its decider is the payout option (rule 4); in S02-VP-13's note
+- S02-BC-231 (c): the Money dashboard's 'multi-currency balances in GBP, EUR, and more': names no decider (rule 4)
+
+### Place tasks: zid (a), (b) and (d)
+
+Placed: S02-ZD-226 is a new row under S02-VP-01, S02-V-277, 'و إضافة العنوان' (my translation: and add the address), the address the account settings hold for their user, as S02-WC-235's account address is read (S02-V-272); S02-ZD-173 joined S02-V-078 (S02-VP-06, the merchant moves the store), S02-V-080 (S02-VP-07, the wallet's balance zeroed first) and S02-V-081 (S02-VP-07, a request through customer service); S02-ZD-184 joined S02-V-035 (S02-VP-03, Egypt: the Arabic of its words); S02-ZD-444 joined S02-V-033 (S02-VP-03, the Gulf states: 'فالخليج', my translation: in the Gulf); new rows under S02-VP-03: S02-V-278, 'المنصّة المتكاملة للتجارة الإلكترونية في الشرق الأوسط وشمال أفريقيا' (S02-ZD-185; my translation: the integrated e-commerce platform in the Middle East and North Africa); S02-V-279, Kuwait (S02-ZD-386); S02-V-280, Oman (S02-ZD-387, S02-ZD-388).
+
+A call the brief left to me: an address the account holds for its user (S02-ZD-226, S02-WC-235) is read as the merchant's address, in X's role, while a profile's bare 'country' (S02-ZD-149) stays noted, since a country in a profile may not be where the merchant is based or resident.
+
+Noted:
+- S02-ZD-183 (d): 'في المستقبل باذن الله نتوسع للعالم العربي' (my translation: in the future, God willing, we will expand to the Arab world): a future expansion, not the countries Zid serves merchants in (rule 2)
+- S02-ZD-373 (a): the merchant's duty to comply with 'جميع القوانين المصرية المعمول بها الحاكمة لنشاطك التجاري' (my translation: all applicable Egyptian laws governing your business activity), in zid.eg's Terms: a law that applies, not the field or record that holds the store's country (rule 1, (a))
+- S02-ZD-380 (a): zid.eg's Terms are governed by 'قوانين جمهورية مصر العربية' (my translation: the laws of the Arab Republic of Egypt): the terms' law, not the field or record that holds the store's country (rule 1, (a))
+- S02-ZD-381 (a): 'الاختصاص الحصري للمحاكم المصرية المختصة' (my translation: the exclusive jurisdiction of the competent Egyptian courts): the terms' courts, not the field or record that holds the store's country (rule 1, (a))
+
+### Candidates for a new point
+
+None. Each question of (a), (b) and (d) already has its point (S02-VP-01 to S02-VP-07), and under these bullets every candidate of one question makes one point (rule 3), so no statement of this part answered a question for an X that no point fits. The statements whose X failed the role test (hosting regions, branches and warehouses, a Point of Sale's address, a channel's country, a tax record tied to markets) are noted above, not candidates.
+
+### Searches
+
+This part raised no point, so it searched for no earlier platform's rows (rule 3).
+
+### Rechecks (part RD1-S1)
+
+Rows compared with a statement of their own platform were rechecked under rule 5: each joined statement names its row's answer in its own words or, where said, by its identifier or scope, and keeps the row's basis (S02-BC-206 and S02-BC-210 by the same key or term as S02-V-048's and S02-V-050's; S02-SA-430 by S02-SA-292's keys).
+
+### Revisit S02-V-236 (bigcommerce, S02-VP-15, taxes on the platform's fees)
+
+Replaced: `not covered` became an answer row, S02-V-236, every store, 'All fees are exclusive of all applicable governmental fees, charges, or taxes' (S02-BC-232, S02-BC-234); and a `gap` row beside it, S02-V-281, with S02-BC-G10, which asks which taxes BigCommerce adds to its fees and what decides them, which the answer doesn't give. That 'US Sales, GST, VAT' (S02-BC-234) name the taxes excluded, not a country the prices are restricted to, is my reading, as part RD1-S2 read S02-V-219.
+
+Leads placed under another point of (c), S02-VP-14 (the platform's fees), read as how BigCommerce's invoice is paid (my reading, marked in each row): S02-BC-280 is a new row, S02-V-282, the store's location ('your store is located in India, the payment must be made manually'); S02-BC-281 joined S02-V-234, the merchant's place ('Merchants in India must pay their invoice manually'), and is a new row, S02-V-283, the business's location ('If your business is located in India, you will be sent an email reminder'), one answer per decider as part RD1-4's problem 6 gives. Leads noted:
+- S02-BC-233 (c): the merchant is 'solely responsible for payment of any and all taxes assessed as a result of you opting into unified billing': names no decider, and its scope, 'United States, United Kingdom, and Canada Only', doesn't say whose countries (as part RD1-4 noted S02-BC-071, of the same terms)
+- S02-BC-278 (c): 'The methods available to pay your invoice can vary depending on your store’s plan and region': the plan is outside rule 1's table, and its words don't say the store's region is where the store is based rather than where it is hosted, which rule 1 keeps out (BigCommerce's terms hold 'infrastructure_region', 'The infrastructure region where the store is located'); in S02-VP-14's note
+- S02-BC-279 (c): 'Form 1099-K is issued by your payments provider(s)': names who issues the form, not a decider (rule 4); its scope, 'US taxes', doesn't say whose country
+- S02-BC-283 (c): a 'MAX 7' error 'when the geographic distance between your billing address and the location you are attempting to make a payment from is too great': a check on where an invoice's payment is made from, not a thing bound to the store's own country (rule 4); in S02-VP-14's note
+
+### Revisit S02-V-237 (bigcommerce, S02-VP-16, the store's taxes)
+
+Left `not covered` (rewritten with a note): no lead names a decider, and gap-closing recorded no gap and no absence for the point, so none of the brief's four replacements applies (a problem with the work list, below). Its leads noted:
+- S02-BC-247 (c): 'If you have nexus in multiple states or local jurisdictions, the additional jurisdictions need to be adjusted from within your tax provider's account dashboard': names where they are adjusted, not a decider (rule 4); its words don't say the nexus is where the store is based or registered (rule 1)
+- S02-BC-249 (c): 'Access your US 1099-K and other tax forms in your account’s portal': names where the forms are, not a decider (rule 4)
+- S02-BC-250 (c): 'Your US 1099-K and other tax forms are provided by the payment processor': names who provides them, not a decider (rule 4)
+
+### Revisit S02-V-239 (bigcommerce, S02-VP-18, the store's defaults)
+
+Replaced: `not covered` became three answer rows and a `gap` row:
+- S02-V-239, your location: 'When you first create your store, your default currency is assigned based on your location.' (S02-BC-243);
+- S02-V-284 (added), the store's default country: 'To reset values to the standard formats for your store’s default country, click Set standard formats for [country].' (S02-BC-285, S02-BC-253); that the standard formats are defaults the platform sets from the store's country is my reading, marked there;
+- S02-V-285 (added), where the store is based: 'If you create a new store based in one of the following countries, the store's content will be in your country's native language by default.' (S02-BC-288, with its list, S02-BC-289 to S02-BC-291, read with it by source and identifier, marked);
+- S02-V-286 (added), `gap`, S02-BC-G11, which asks whether the units and the date and timezone settings take the default country's standard formats when the store is created, which the answers don't give.
+
+Lead placed under another point of (c): S02-BC-253 ('The default country setting determines which payment methods are available to be set up on your store') is also in a new row under S02-VP-12, S02-V-287, with the place tasks S02-BC-263 and S02-BC-260 (below). Lead noted:
+- S02-BC-244 (c): to change the default currency, add it, then 'click Action › Set as default': the merchant's choice, not the store's own country (rule 4); in S02-VP-18's note
+
+### Place tasks: bigcommerce (c)
+
+Placed: S02-BC-263 ('Default country — The country your store is run from, which determines the payment methods that are available for use with your store') and S02-BC-260 (the locale information's 'country where your store is located', whose settings 'allow you to access region-specific payment methods') are a new row under S02-VP-12, S02-V-287, with S02-BC-253: the default country, the field part RD1-S1 holds for the three under (a) in S02-V-260. Noted:
+- S02-BC-258 (c): the store profile 'can affect which payment gateways are available': its words don't say the profile holds the store's country, nor which of its information affects the gateways, as part RD1-S1 noted it under (a) (rule 4)
+
+### Revisit S02-V-240 (bigcommerce, S02-VP-19, the store's data)
+
+Replaced: `not covered` became an answer row, S02-V-240, every store, 'We use this information as a Controller to provide Merchants with, support, and improve our services' (S02-BC-237, Merchants' information) with S02-BC-238 ('The Merchant is the Controller of this information', of Shoppers' information, Commerce acting 'as a Processor'): their words apply to all Merchants, with no country or scope. Its leads noted:
+- S02-BC-235 (c): regional hosting 'available for merchants interested in hosting their stores in Europe or the Asia-Pacific (APAC) region rather than in the United States': the merchant's choice of where the store is hosted, which rule 1 keeps out of the store's own country, not a decider from its table (rule 4); in S02-VP-19's note
+- S02-BC-236 (c): 'Commerce primarily utilizes Google Cloud’s U.S.-Central1 region as our primary data storage location': names where the data is held, not a decider (rule 4), as part RD1-S2 noted S02-SH-713
+- S02-BC-239 (c): 'it may be necessary to transmit Personal Data outside of the country, state, or province where the data was collected/received': its decider is where the data was collected, not the store's own country (rule 4); in S02-VP-19's note
+- S02-BC-240 (c): 'For third-country transfers outside of the EU/EEA we also use the Standard Contractual Clauses': its decider is the transfer's reach, as S02-SH-620 (rule 4); in S02-VP-19's note
+- S02-BC-241 (c): 'This DPA applies when a Commerce Entity acts as a Processor on behalf of the Customer': its decider is the entity's role in the processing (rule 4); in S02-VP-19's note
+- S02-BC-242 (c): 'Commerce.com may transfer, process and store Personal Data in regions in which Commerce.com or its Subprocessors operate': its decider is where Commerce.com and its subprocessors operate (rule 4); in S02-VP-19's note
+
+### Revisit S02-V-194 (woocommerce, S02-VP-10, documents and checks)
+
+Replaced: `not covered` became an answer row, S02-V-194, the onboarding's business types found by the country answered ('l=a.find(t=>"PR"===e.country?"US"===t.key:t.key===e.country)', S02-WC-263); and a `gap` row beside it, S02-V-288, with S02-WC-G07, which asks which documents or checks the business verification asks for, which the answer doesn't give. Two readings, marked there: that 'e.country' is the answer to the same step's 'Where is your business located?' (S02-WC-259, the same file, its identifier 'WooPayments onboarding, business step'), since its own words, identifier and scope don't say whose country; and that the business type is among what the merchant provides to verify the business. If the coordinator holds that the role test can't rest on another statement of the source, S02-WC-263 is noted instead, and the row is S02-V-288's gap alone.
+
+### Revisit S02-V-200 (woocommerce, S02-VP-12, other payment providers)
+
+Replaced: `not covered` became two answer rows:
+- S02-V-200, the store's location: 'you are offered different payment gateways based on your store location' (S02-WC-265), with S02-WC-264 ('Shop location and currency are factors. A payment gateway company/processor may only serve merchants based in certain countries'), the same page; that 'Shop location' and 'store location' name one location is my reading, marked;
+- S02-V-289 (added), the Payments settings' business location: '("Business location:","woocommerce")' (S02-WC-267), with the providers route's 'location', which 'Defaults to WooCommerce\'s base location country' (S02-WC-268); `term` with Shopify's 'Business location' (S02-SH-027); that the route's location is that field is my reading, by S02-WC-221.
+
+Lead placed under another point of (c): S02-WC-265 ('different payment gateways based on your store location, which includes Core Payment Options and WooPayments') is also a new row under S02-VP-11, S02-V-290, the store's location, since it names WooPayments.
+
+### Revisit S02-V-182 (zid, S02-VP-15, taxes on the platform's fees)
+
+Replaced: `not covered` became an answer row, S02-V-182, every store, 'جميع الرسوم لا تشمل المبيعات الحكومية أو الإقليمية أو المحلية' (S02-ZD-194; my translation: all fees exclude governmental, regional or local sales [taxes]), with S02-ZD-193, S02-ZD-197 and S02-ZD-203, whose own words apply the tax to all tax charges, prices and plans; and a `gap` row beside it, S02-V-291, with S02-ZD-G08, which asks whether the store's country decides the tax on Zid's fees and what tax a store's fees carry outside Saudi Arabia, which the answer doesn't give. Its leads noted:
+- S02-ZD-192 (c): 'قد تختلف رسوم الضرائب المحلية اعتمادًا على طريقة الدفع المستخدمة' (my translation: local tax charges may differ depending on the payment method used): its decider is the payment method (rule 4); in S02-VP-15's note
+- S02-ZD-195 (c): Zid may charge the fees 'مثل الضرائب ورسوم المعاملات المحتملة، على طريقة الدفع التي اخترتها' (my translation: such as taxes and possible transaction fees, to the payment method you chose): names where the charges are taken, not a decider (rule 4)
+- S02-ZD-196 (c): a service fee of 1 riyal '(غير شاملة لضريبة القيمة المضافة) لكل بوليصة شحن' (my translation: excluding VAT, per waybill) when the merchant links its own shipping company: names no decider of the tax, and its words don't apply it to all stores or fees (rule 4)
+- S02-ZD-198 (c): the bank transfer fee '9 ريالات شاملة ضريبة القيمة المضافة للحوالات الداخلية و 50 ريال لحوالات دول الخليج' (my translation: 9 riyals including VAT for domestic transfers and 50 riyals for transfers to the Gulf states): its decider is the transfer, as S02-ZD-058 (rule 4); in S02-VP-15's note
+- S02-ZD-199 (c): the wallet transfer fee of 9 riyals including VAT 'في حال كانت الحوالة داخل السعودية' (my translation: if the transfer is within Saudi Arabia): its decider is the transfer's destination (rule 4); in S02-VP-15's note
+- S02-ZD-200 (c): the wallet transfer fee of 50 riyals 'في حال كانت الحوالة خارج السعودية' (my translation: if the transfer is outside Saudi Arabia): as S02-ZD-199; in S02-VP-15's note
+- S02-ZD-201 (c): the Mada rate's cap of 200 riyals '(غير شامل لضريبة القيمة المضافه)' (my translation: excluding VAT): names no decider (rule 4), and its scope, 'Zid Pay, Saudi Arabia', doesn't say whose country (rule 2)
+- S02-ZD-202 (c): operating fees per transaction 'حسب باقتك في زد (بدون ضريبة)' (my translation: according to your plan in Zid, without tax): names no decider of the tax (rule 4)
+- S02-ZD-204 (c): 'ضريبة القيمة المضافة: الرسوم 15x%' (my translation: VAT: the fees x 15%): names the rate, not a decider, and its words don't apply it to all stores or fees (rule 4)
+- S02-ZD-205 (c): a path in the admin to the transaction's 'الفاتورة الضريبية' (my translation: the tax invoice): names no decider (rule 4)
+- S02-ZD-398 (c): the Mada cap, '200 SAR (excluding VAT).': names no decider (rule 4); its scope's 'For our Saudi Superstars' doesn't say they are the merchants, as part RD1-4 noted S02-ZD-112
+- S02-ZD-408 (c): the fees 'غير شاملة لضريبة القيمة المضافة، ويتم احتسابها بحسب شبكة الدفع و الباقة المختارة' (my translation: excluding VAT, and calculated by the payment network and the chosen plan): names no decider of the tax (rule 4); its scope's 'لنجومنا السعوديين' (my translation: for our Saudi stars) doesn't say they are the merchants, as part RD1-4 noted S02-ZD-112
+- S02-ZD-411 (c): the Mada cap of 200 riyals '(غير شاملة لضريبة القيمة المضافة)': as S02-ZD-398
+- S02-ZD-418 (c): as S02-ZD-408, its scope 'لطاقمنا الكويتي' (my translation: for our Kuwaiti crew) not saying they are the merchants
+
+### Place tasks: woocommerce (c)
+
+Placed: S02-WC-246 joined S02-V-212 (S02-VP-17) and S02-V-217 (S02-VP-18), and is a new row under S02-VP-12, S02-V-292, the store address ('Your store address is required to set the origin country for shipping, currencies, and payment options'); S02-WC-247 joined S02-V-190 (S02-VP-08, where the user resides, read as the merchant's residence, marked); S02-WC-248 and S02-WC-286 are a new row under S02-VP-09, S02-V-293, where the user is ('If you are a user in countries located in the European Economic Area, Switzerland, or the United Kingdom'; Stripe's Regional Terms for 'Users in India'), the user read as the merchant (marked); S02-WC-254 joined S02-V-192 (S02-VP-09, the user's country of residence, as S02-WC-077); S02-WC-317 joined S02-V-201 (S02-VP-13, the WooPayments account's country); S02-WC-318 is a new row under S02-VP-12, S02-V-294, the WooPayments account's country ('Their billing country matches your WooPayments account country', of Affirm, Afterpay and Klarna); S02-WC-416, S02-WC-417, S02-WC-419 and S02-WC-420 are a new row under S02-VP-17, S02-V-295, the base country (`'type' => 'base_location_country'`), the extensions the platform suggests read as features the store can use (marked); S02-WC-433 joined S02-V-209 (S02-VP-16, the base country); S02-WC-434 is a new row under S02-VP-11, S02-V-296, the base country ('Maybe add a note on WooCommerce Payments for US based sites'). Noted:
+- S02-WC-249 (c): 'Fees for some Paid Services may vary based on the billing country associated with your payment method', the price shown 'an estimate based on your detected location': a payment method's billing country and a detected location, neither said to be where the store or its merchant is based (rule 2), as part RD1-S1 noted it under (a); in S02-VP-14's note
+- S02-WC-253 (c): the user 'Will comply with all applicable laws and regulations (including ... the transmission of technical data exported from the United States or the country in which you reside': the country of residence decides which export laws on technical data apply, an X that fits none of (c)'s kinds (neither the law that governs the terms nor the store's data), and the second pass raises no point (listed below under 'Candidates for a new point')
+- S02-WC-287 (c): 'Provide clear refund and exchange language that is consistent with Laws and the Card Network Rules': names no decider (rule 4)
+- S02-WC-296 (c): 'Setting up your store in the wrong country may lead to the following issues:': names no thing bound, and the issues it introduces are under none of this decision's bullets (rule 2)
+- S02-WC-319 (c): Affirm 'requires that your site only be available in U.S. English (en_US), Canadian English (en_CA), and/or Canadian French (fr_CA)': its decider is the site's languages (rule 4); in S02-VP-12's note
+- S02-WC-323 (c): 'Payment provider availability varies by country and by the information you entered during setup': its words don't say whose country (rule 2), and the information entered during setup is outside rule 1's table (rule 4); in S02-VP-12's note
+- S02-WC-421 (c): 'Rule processor that performs a comparison operation against the base * location - country': names the rule that S02-WC-419's and S02-WC-420's visibility uses, but no thing bound itself (rule 2)
+
+### Note tasks: zid (c)
+
+- S02-ZD-179 (c): They quote the Saudi Terms that zid.eg's Terms page holds in its raw HTML. The page's scripts replace them with the Terms of شركة زد مصر, under Egyptian law, so the page doesn't show these words (`method-report.md`, section 9). The statements recorded from the page as shown take their place.
+- S02-ZD-180 (c): They quote the Saudi Terms that zid.eg's Terms page holds in its raw HTML. The page's scripts replace them with the Terms of شركة زد مصر, under Egyptian law, so the page doesn't show these words (`method-report.md`, section 9). The statements recorded from the page as shown take their place.
+
+### Correction: S02-WC-253 (woocommerce, (c))
+
+S02-WC-253, noted above as a candidate for a new point, is placed instead: it joined S02-V-192 (S02-VP-09, the user's country of residence). Part RD1-4 read the laws a merchant must comply with under the terms as the law that applies (S02-SA-209 under S02-VP-09), and Zid's S02-ZD-220 below is read the same way; the export laws on technical data 'exported from the United States or the country in which you reside' are read so too (my reading, marked in the row). Its note above stays, and it is not a candidate.
+
+### Place tasks: zid (c)
+
+Placed: S02-ZD-178 joined S02-V-187 (S02-VP-17, the business's registered country: 'أن تكون شركة أو مؤسسة مسجّلة في المملكة العربية السعودية'; my translation: to be a company or establishment registered in Saudi Arabia, for Zid financing); S02-ZD-210 joined S02-V-185 (S02-VP-17, the merchant's place: 'تمويل زد متاح لتجار المملكة العربية السعودية'; my translation: Zid financing is available to the merchants of Saudi Arabia); S02-ZD-220 joined S02-V-171 (S02-VP-09, every store: 'ينبغي على كافة المتاجر والتُجّار الالتزام بكافة القوانين المعمول بها'; my translation: all stores and merchants must comply with all the laws in force), read as the law that applies, as S02-SA-209; S02-ZD-218 is a new row under S02-VP-09, S02-V-297, the store's place ('للمتاجر السعودية'; my translation: for Saudi stores), the Ministry of Commerce's regulations on e-commerce terms read as the law that applies (marked). Noted:
+- S02-ZD-174 (c): deposits to the bank account 'في السعودية' (my translation: in Saudi Arabia) on Sundays, Tuesdays and Thursdays, with a 3-riyal fee: its words, identifier and scope name Saudi Arabia without saying whose country (rule 2), as part RD1-4 noted S02-ZD-112
+- S02-ZD-175 (c): deposits 'في الكويت' (my translation: in Kuwait) daily, with no fee: as S02-ZD-174
+- S02-ZD-176 (c): Zid's warranty program 'حاليا فقط في السعودية' (my translation: currently only in Saudi Arabia): its words and scope don't say whose country (rule 2)
+- S02-ZD-225 (c): stopping the invoices without another accounting system 'سيعرضك لغرامات وزارة التجارة' (my translation: will expose you to the Ministry of Commerce's fines): names no decider (rule 4)
+- S02-ZD-310 (c): apps must 'Disclose applicable eligibility, country, contract or verification prerequisites': a rule for apps, naming no thing bound to the store's country nor a decider (rule 2)
+- S02-ZD-347 (c): the plans' monthly prices on zid.sa's pricing page (scope 'zid.sa pricing page'): its decider is the site, outside rule 1's table, and a scope that names a site isn't every store (rule 4); in S02-VP-14's note
+- S02-ZD-348 (c): Rise's price on zid.sa's pricing page: as S02-ZD-347
+- S02-ZD-349 (c): Growth's price on zid.sa's pricing page: as S02-ZD-347
+- S02-ZD-350 (c): zid.eg's plans, 'البداية مجاناً مدى الحياة' (my translation: Starter free for life; scope 'zid.eg pricing page (زد مصر)'): as S02-ZD-347
+- S02-ZD-351 (c): Rise's price in Egyptian pounds on zid.eg's pricing page: as S02-ZD-347
+- S02-ZD-352 (c): Growth's price in Egyptian pounds on zid.eg's pricing page: as S02-ZD-347
+- S02-ZD-353 (c): Professional's custom price on both sites' pricing pages: as S02-ZD-347
+- S02-ZD-354 (c): zid.sa's footer, 'Al-Qudrah Al-Taqniyah for Technology and Communication Company', its registration and VAT numbers: its words don't say the merchant contracts with it, nor what decides it (rule 4), as part RD1-4 noted S02-ZD-062
+- S02-ZD-355 (c): zid.eg's footer, the same company with another registration and tax number: as S02-ZD-354
+- S02-ZD-367 (c): zid.eg's Terms, 'اتفاقية ملزمة قانونياً بينك ... وبين شركة زد مصر' (my translation: a legally binding agreement between you ... and Zid Egypt), scope 'www.zid.eg': its decider is the site, outside rule 1's table (rule 4); in S02-VP-08's note
+- S02-ZD-368 (c): 'ومن يصل إلى المنصة من خارج مصر يتحمل مسؤولية الامتثال للقوانين المحلية المعمول بها' (my translation: whoever reaches the platform from outside Egypt bears responsibility for complying with the applicable local laws): the place the platform is reached from, not said to be where the merchant is based (rule 1); in S02-VP-09's note
+- S02-ZD-369 (c): Zid Egypt's plans, 'منشورة على المنصة' (my translation: published on the platform), scope 'www.zid.eg': its decider is the site (rule 4); in S02-VP-14's note
+- S02-ZD-370 (c): the payment methods zid.eg's Terms accept (Mastercard, Visa, Fawry and others), scope 'www.zid.eg': its decider is the site (rule 4); in S02-VP-14's note
+- S02-ZD-371 (c): payments 'بالجنيه المصري ... وتخضع لضريبة القيمة المضافة' (my translation: in Egyptian pounds ... and subject to VAT), scope 'www.zid.eg': its decider is the site (rule 4); in S02-VP-14's and S02-VP-15's notes
+- S02-ZD-372 (c): consumers' 14-day right to withdraw from a digital subscription under Egypt's consumer protection law, scope 'www.zid.eg': its decider is the site (rule 4); in S02-VP-09's note
+- S02-ZD-373 (c): the merchant's responsibility for 'الامتثال لجميع القوانين المصرية المعمول بها الحاكمة لنشاطك التجاري' (my translation: compliance with all applicable Egyptian laws governing your business activity), scope 'www.zid.eg': its decider is the site (rule 4); in S02-VP-09's note
+- S02-ZD-374 (c): the merchant's obligations to its customers 'وفقاً للقانون المصري' (my translation: under Egyptian law), scope 'www.zid.eg': as S02-ZD-373
+- S02-ZD-375 (c): Zid Egypt 'تعمل بوصفها مزوّداً لمنصة تقنية فحسب' (my translation: acts only as a provider of a technical platform), not a party to the merchant's sales: names no decider (rule 4)
+- S02-ZD-376 (c): use of the platform only for lawful business 'وفقاً لهذه الشروط والقانون المصري المعمول به' (my translation: under these terms and the applicable Egyptian law), scope 'www.zid.eg': as S02-ZD-373
+- S02-ZD-377 (c): an amicable settlement of disputes for at least 15 days: names no decider (rule 4)
+- S02-ZD-378 (c): consumers' right under Egyptian law to complain to the Consumer Protection Agency, scope 'www.zid.eg': its decider is the site (rule 4); in S02-VP-09's note
+- S02-ZD-379 (c): disputes referred to 'المحاكم المصرية المختصة' (my translation: the competent Egyptian courts), scope 'www.zid.eg': as S02-ZD-378
+- S02-ZD-380 (c): 'تخضع هذه الشروط وتُفسَّر وفقاً لقوانين جمهورية مصر العربية' (my translation: these terms are governed and construed by the laws of Egypt), scope 'www.zid.eg': as S02-ZD-378
+- S02-ZD-381 (c): the Egyptian courts' exclusive jurisdiction, scope 'www.zid.eg': as S02-ZD-378
+- S02-ZD-382 (c): the entire agreement 'بينك وبين زد مصر' (my translation: between you and Zid Egypt), scope 'www.zid.eg': its decider is the site (rule 4); in S02-VP-08's note
+- S02-ZD-383 (c): zid.eg's Privacy Policy names 'زد مصر' (Zid Egypt) as responsible for processing your personal data, scope 'www.zid.eg': its decider is the site (rule 4); in S02-VP-19's note
+- S02-ZD-384 (c): zid.eg's Privacy Policy issued under Egypt's Personal Data Protection Law No. 151 of 2020, scope 'www.zid.eg': as S02-ZD-383
+- S02-ZD-385 (c): some personal data 'قد يتم نقل ... ومعالجتها في دول خارج مصر' (my translation: may be transferred and processed in countries outside Egypt), scope 'www.zid.eg': as S02-ZD-383
+- S02-ZD-421 (c): Zid Syria's 'No, there's no commission on your sales' (scope 'zid.sa/en/syria (Zid Syria)'): its decider is the site (rule 4); in S02-VP-14's note
+
+### Place tasks: zid (c), continued
+
+Noted:
+- S02-ZD-389 (c): Rise's price in Egyptian pounds on zid.sa's page for Egypt (scope 'zid.sa/en/egypt: Rise'): its decider is the page, whose country isn't said to be the merchant's (rule 2), and a scope that names a site isn't every store (rule 4); in S02-VP-14's note
+- S02-ZD-390 (c): Growth's price on the same page: as S02-ZD-389
+- S02-ZD-391 (c): Rise's price in dollars on zid.sa's page for Syria: as S02-ZD-389
+- S02-ZD-392 (c): Growth's price on the same page: as S02-ZD-389
+- S02-ZD-393 (c): Rise's price in riyals on zid.sa's pages for the UAE, Kuwait and Oman: as S02-ZD-389
+- S02-ZD-394 (c): Growth's price on the same pages: as S02-ZD-389
+- S02-ZD-396 (c): '3 SAR per deposit, but Riyad Bank users get a free pass!': its decider is the merchant's bank (rule 4); in S02-VP-13's note
+- S02-ZD-397 (c): 'All banks in Saudi Arabia!': names the banks, not a decider (rule 4), as part RD1-4 noted S02-ZD-065
+- S02-ZD-399 (c): currencies 'Activate through your store settings': the merchant's choice, not a decider from rule 1's table (rule 4)
+- S02-ZD-400 (c): 'Every 2-3 days, minimum 100 SAR.': names no decider (rule 4); its scope's 'For our Saudi Superstars' doesn't say they are the merchants, as part RD1-4 noted S02-ZD-112
+- S02-ZD-401 (c): 'We'll verify your info within two business days.': names no decider (rule 4); its scope as S02-ZD-400's
+- S02-ZD-402 (c): 'Just the operational fees based on your plan and payment network.': its deciders are the plan and the payment network (rule 4); in S02-VP-14's note
+- S02-ZD-403 (c): 'All banks in Kuwait.': names the banks, not a decider (rule 4)
+- S02-ZD-404 (c): currencies 'Set it up in your store settings.': as S02-ZD-399
+- S02-ZD-405 (c): fees 'based on the network and your plan': as S02-ZD-402
+- S02-ZD-406 (c): 'operational fees based on your chosen plan': as S02-ZD-402
+- S02-ZD-407 (c): 'Daily (Sunday to Thursday), minimum 1 KWD.': names no decider (rule 4); its scope's 'For our Kuwait Crew' doesn't say they are the merchants, as part RD1-4 noted S02-ZD-112
+- S02-ZD-409 (c): a 3-riyal deposit fee, 'عدا بنك الرياض معفي من رسوم الإيداع' (my translation: except Riyad Bank, exempt from the deposit fee): as S02-ZD-396
+- S02-ZD-410 (c): 'جميع البنوك في المملكة العربية السعودية.' (my translation: all banks in Saudi Arabia): as S02-ZD-397
+- S02-ZD-412 (c): currencies 'يتم تفعيلها من خلال إعدادات المتجر' (my translation: activated through the store's settings): as S02-ZD-399
+- S02-ZD-413 (c): collection 'خلال ٢-٣ أيام، والحد الأدنى ... 100 ريال' (my translation: within 2-3 days, the minimum 100 riyals): as S02-ZD-400
+- S02-ZD-414 (c): 'يتم التأكد من صحة البيانات المرفوعة خلال يومي عمل' (my translation: the uploaded data is verified within two working days): as S02-ZD-401
+- S02-ZD-415 (c): 'جميع البنوك في دولة الكويت.' (my translation: all banks in Kuwait): as S02-ZD-397
+- S02-ZD-416 (c): Kuwait's payment networks, 'كيه نت٫ آبل باي، فيزا، أمريكان اكسبريس': names no decider (rule 4), and its identifier's Kuwait doesn't say whose country (rule 2), as part RD1-4 noted S02-ZD-067
+- S02-ZD-417 (c): fees 'بحسب الشبكة المستخدمة في عملية الدفع وباقة المتجر' (my translation: by the network used for the payment and the store's plan): as S02-ZD-402
+- S02-ZD-419 (c): collection 'بشكل يومي "من الأحد إلى الخميس"' (my translation: daily, Sunday to Thursday), minimum 1 Kuwaiti dinar: as S02-ZD-407
+- S02-ZD-420 (c): Zid Syria's 'shipping and delivery solutions suited to the Syrian market', with delivery 'inside Syria': the market orders go to and the site (scope 'zid.sa/en/syria (Zid Syria)'), not the store's own country (rule 1, rule 4); in S02-VP-17's note
+- S02-ZD-422 (c): Zid Syria's payments 'through Bemira for e-payments': its decider is the site (rule 4); in S02-VP-12's note
+- S02-ZD-423 (c): Zid Syria: 'a commercial registration isn't required to start and open your online store': its decider is the site (rule 4); in S02-VP-10's note
+- S02-ZD-436 (c): shipping 'يبدأ من 11 ريال للشحنة' (my translation: starts from 11 riyals per shipment) for Rise, on zid.sa's pages for the UAE, Kuwait and Oman: its deciders are the plan and the page (rule 4); in S02-VP-17's note
+- S02-ZD-440 (c): shipping from 10.5 riyals for Growth on the same pages: as S02-ZD-436
+- S02-ZD-443 (c): shipping from 8.5 riyals for Professional on the same pages: as S02-ZD-436
+- S02-ZD-445 (c): 'شبكة شركاء موثوقين في المدفوعات والخدمات اللوجستية والتكنولوجيا' (my translation: a network of trusted partners in payments, logistics and technology): names no decider (rule 4), and its scope, 'الإمارات; عمان' (the UAE; Oman), doesn't say whose countries (rule 2)
+- S02-ZD-446 (c): the same for Egypt and Kuwait (scope 'مصر; الكويت'): as S02-ZD-445
+
+### Candidates for a new point (part RD1-S3)
+
+None. S02-WC-253, first noted as one (X: the export laws on technical data; question: what decides it), was placed under S02-VP-09 instead (the correction above).
+
+### Searches for earlier platforms' rows (part RD1-S3)
+
+None: the second pass raises no point, and every row written here is of Zid, WooCommerce or BigCommerce, under (c).
+
+### Rechecks (part RD1-S3)
+
+Rows compared with a statement of their own platform were rechecked under rule 5: each joined statement names its row's decider in its own words, or, where said, by its scope: S02-BC-281 (S02-V-234, 'Merchants in India'); S02-WC-246 (S02-V-212 and S02-V-217, 'Your store address'); S02-WC-247 (S02-V-190, 'where you reside'); S02-WC-253 and S02-WC-254 (S02-V-192, 'the country in which you reside', 'your country of residence'); S02-WC-317 (S02-V-201, 'If your WooPayments account is in'); S02-WC-433 (S02-V-209, 'get_base_country()'); S02-ZD-178 (S02-V-187, 'مسجّلة في المملكة العربية السعودية'; my translation: registered in Saudi Arabia); S02-ZD-210 (S02-V-185, 'لتجار المملكة العربية السعودية'; my translation: to the merchants of Saudi Arabia); S02-ZD-220 (S02-V-171, every store, 'كافة المتاجر والتُجّار'; my translation: all stores and merchants). Each keeps its row's basis, `answers`.
+
+### This section's order (part RD1-S3)
+
+The subsections '### Place tasks: zid (a), (b) and (d)', '### Candidates for a new point', '### Searches' and '### Rechecks (part RD1-S1)', between 'Revisit S02-V-233' and 'Revisit S02-V-236' above, are part RD1-S1's, appended while this part ran, without a heading of their own. The rest under '## Second pass, RD1-S3' is this part's.
+
+### Problems with the method (part RD1-S3)
+
+1. A revisit with no answer and no gap. S02-V-237 (bigcommerce, S02-VP-16): its three leads name no decider, and its `why` names no gap or absence, so none of the brief's four replacements applies. The row stays `not covered`, rewritten with a note; the coordinator decides whether it goes back to gap-closing.
+2. Sites as deciders. zid.eg's Terms and Privacy Policy (S02-ZD-367 to S02-ZD-385), the pricing pages of zid.sa and zid.eg and zid.sa's country pages (S02-ZD-347 to S02-ZD-353, S02-ZD-389 to S02-ZD-394, S02-ZD-436, S02-ZD-440, S02-ZD-443) and Zid Syria's page (S02-ZD-420 to S02-ZD-423) have scopes that name a site, which rule 4 keeps out of `every store`, and a site is outside rule 1's table of deciders. So they are noted, each named in its point's note. What zid.eg's pages bind (Zid Egypt as the contracting party, Egypt's law and courts, fees in Egyptian pounds with VAT, Zid Egypt as the data controller) stands only in notes; S02-ZD-G03's and S02-ZD-G08's gap rows remain.
+3. The headings of Zid Payments' sections ('For our Saudi Superstars', 'For our Kuwait Crew', 'لنجومنا السعوديين', 'لطاقمنا الكويتي') are read, as part RD1-4 read them (S02-ZD-112), as not saying they are the merchants. Read as the merchant's place, S02-ZD-398, S02-ZD-400, S02-ZD-401, S02-ZD-407, S02-ZD-408, S02-ZD-411, S02-ZD-413, S02-ZD-414, S02-ZD-418 and S02-ZD-419 would answer S02-VP-10, S02-VP-13 or S02-VP-15.
+4. The laws a merchant must comply with are read, as part RD1-4 read S02-SA-209, as the law that applies under the terms (S02-VP-09): S02-ZD-218, S02-ZD-220 and S02-WC-253, marked in their rows.
+5. An x_words slip, corrected: 'country of operation', a decider, not X, was added to S02-VP-13's x_words for bigcommerce with `xwords`, and taken out again by a script run under the folder's lock, since the tool can't remove words. S02-VP-13's x_words for bigcommerce read 'your initial payout'.
+6. Ids: this part's new rows are S02-V-281 to S02-V-297. It raised no point.
+
+### Check (part RD1-S3)
+
+On a copy holding only `b/RD1`: `merge_slices.py` merged 19 points and 297 rows; `check_subject.py` gave no line of level `error`, 17 warnings (phase A's quote lengths) and 14 reviews (quotes found only in a page's source, the coordinator's; and RD2's and RD3's statements, whose folders the copy leaves out); its `unplaced.tsv` holds no row of RD1. `second_pass_list.py --check`: RD1 has no revisit, reread or note task without a row in `done.tsv`.
+
+## Second pass, RD1-S4
+
+Part RD1-S4 rereads, under (c), the 51 Zid statements that earlier parts noted and that the work list names under rule 4's last clause under (c), widened on 27 October 2026: the merchant's country is the decider where the platform's own words tie the site, page or section a statement comes from to one country, and address it to merchants. Each reread's earlier note stays as it is, whether the reread places it or not.
+
+### How the rereads are decided (part RD1-S4)
+
+1. Tied to one country. A statement is placed where each site, page or section it is recorded from (its `source`, `identifier` and `scope`) is one that the platform's own words tie to one country:
+   - zid.eg: 'زد مصر' (my translation: Zid Egypt), in the scopes and identifiers of its pricing page, Terms and Privacy Policy, and 'الدولة: جمهورية مصر العربية' (S02-ZD-383; my translation: country: the Arab Republic of Egypt);
+   - zid.sa's pages for Egypt, the UAE, Kuwait and Oman, whose heroes read 'Join thousands of merchants in Egypt and launch your online store easily.' (S02-ZD-061), and the same in the UAE (S02-ZD-137), in Kuwait (S02-ZD-386) and in Oman (S02-ZD-387);
+   - zid.sa's page for Syria: 'The best and easiest e-commerce platform in Syria' (S02-ZD-138, its hero), and 'Zid Syria' (its statements' scopes);
+   - Zid Payments' sections 'For our Saudi Superstars', 'For our Kuwait Crew', 'لنجومنا السعوديين' and 'لطاقمنا الكويتي' (my translation: for our Saudi stars; for our Kuwaiti crew), the coordinator's own example of a Zid Payments section headed for one country's merchants;
+   - the help centre's sections 'متطلبات تفعيل الدفع الالكتروني للسعودية' and 'متطلبات تفعيل الدفع الالكتروني للكويت' (my translation: the requirements to activate e-payment for Saudi Arabia; for Kuwait), and 'تحصيل المدفوعات > في السعودية' and 'تحصيل المدفوعات > في الكويت' (my translation: collecting payments > in Saudi Arabia; in Kuwait).
+
+   Where those words don't name merchants, which holds for all of them but the four heroes that read 'Join thousands of merchants in ...', the row's evidence marks the decider as a reading.
+2. Joined where the decider already has a row. Under (c), things of one kind with the same decider are one answer, and which country gets which stays in the statements and their scope (rule 4). So where a point already holds a Zid row whose decider is where the merchant is, or the merchant's country (S02-V-172, S02-V-175, S02-V-177, S02-V-179, S02-V-180, S02-V-181, S02-V-184), the statements placed under that point join it, and the evidence they add names each country as the platform ties it. Where no such row is there (S02-VP-08, S02-VP-15, S02-VP-19), a new row is added. S02-V-297 (S02-VP-09) and S02-V-183 (S02-VP-16), whose decider is the store's place ('للمتاجر السعودية'; my translation: for Saudi stores), are not joined.
+3. Left noted, where the source is tied to no country, or to several (rule 4).
+
+### Rereads, in the work list's order (part RD1-S4)
+
+- S02-ZD-008, left noted: it is recorded at the page, Zid Payments' (scope 'Zid Payments', no section in its identifier), which holds sections for two countries, Saudi Arabia and Kuwait: tied to several.
+- S02-ZD-112, placed: joined S02-V-177 (S02-VP-11). Its identifier records it under each of Zid Payments' sections, 'لنجومنا السعوديين; لطاقمنا الكويتي', each headed for one country (a reading).
+- S02-ZD-119, left noted: the help centre's FAQ on sales channels (scope 'أمازون') is tied to no country, and the statement names two, Saudi Arabia and the UAE.
+- S02-ZD-122, S02-ZD-123, S02-ZD-154 and S02-ZD-155, placed: joined S02-V-175 (S02-VP-10), the merchant's country, Saudi Arabia or Kuwait, by each section's heading (a reading).
+- S02-ZD-174 and S02-ZD-175, placed: joined S02-V-180 (S02-VP-13), the merchant's country, Saudi Arabia or Kuwait, by each section's heading (a reading).
+- S02-ZD-347, S02-ZD-348 and S02-ZD-349, left noted: zid.sa's pricing page (scope 'zid.sa pricing page') is tied by no words of the platform to one country, and zid.sa holds pages for several (S02-ZD-389 to S02-ZD-394's scopes).
+- S02-ZD-350, S02-ZD-351 and S02-ZD-352, placed: joined S02-V-181 (S02-VP-14), the merchant's country, Egypt, by the site zid.eg (a reading).
+- S02-ZD-353, left noted: its source is two pricing pages (scope 'zid.eg and zid.sa pricing pages'), zid.eg's, tied to Egypt, and zid.sa's, tied to no one country.
+- S02-ZD-367, placed: a new row, S02-V-298 (S02-VP-08), 'وبين شركة زد مصر' (my translation: and the company Zid Egypt), and joined S02-V-172 (S02-VP-09). The merchant's country, Egypt, by the site zid.eg (a reading).
+- S02-ZD-369, S02-ZD-370 and S02-ZD-371, placed: joined S02-V-181 (S02-VP-14). S02-ZD-371 also raises a new row, S02-V-299 (S02-VP-15), 'وتخضع لضريبة القيمة المضافة (ض.ق.م) بالنسبة القانونية السارية' (my translation: and are subject to VAT at the applicable legal rate). The merchant's country, Egypt, by the site zid.eg (a reading). S02-ZD-370's payment methods, which zid.eg's Terms accept for its plans, are read as how the platform's fees are billed (my reading).
+- S02-ZD-372, S02-ZD-373, S02-ZD-374, S02-ZD-376, S02-ZD-378, S02-ZD-379, S02-ZD-380, S02-ZD-381 and S02-ZD-382, placed: joined S02-V-172 (S02-VP-09), Egypt's law and courts under zid.eg's Terms. S02-ZD-373 also joined S02-V-184 (S02-VP-16), for 'الضرائب' (my translation: taxes) among the Egyptian laws the merchant must comply with. S02-ZD-382 also joined S02-V-298 (S02-VP-08). The merchant's country, Egypt, by the site zid.eg (a reading).
+- S02-ZD-383, S02-ZD-384 and S02-ZD-385, placed: a new row, S02-V-300 (S02-VP-19), 'الجهة المسؤولة عن معالجة بياناتك الشخصية هي: زد مصر' (my translation: the party responsible for processing your personal data is Zid Egypt), with Egypt's Personal Data Protection Law and transfers outside Egypt. The merchant's country, Egypt, by the site zid.eg (a reading).
+- S02-ZD-389 and S02-ZD-390, placed: joined S02-V-181 (S02-VP-14), the merchant's country, Egypt, by zid.sa's page for Egypt, whose hero names merchants.
+- S02-ZD-391 and S02-ZD-392, placed: joined S02-V-181 (S02-VP-14), the merchant's country, Syria, by zid.sa's page for Syria (a reading).
+- S02-ZD-393 and S02-ZD-394, placed: joined S02-V-181 (S02-VP-14). Each is recorded from three pages, zid.sa's for the UAE, Kuwait and Oman, each tied to one country by its hero, which names merchants, and the same price stands on each.
+- S02-ZD-398, S02-ZD-408, S02-ZD-411 and S02-ZD-418, placed: joined S02-V-181 (S02-VP-14), Zid Payments' fees, and S02-V-299 (S02-VP-15), the fees 'غير شاملة لضريبة القيمة المضافة' (my translation: excluding VAT). The merchant's country, Saudi Arabia or Kuwait, by Zid Payments' sections (a reading).
+- S02-ZD-400, S02-ZD-407, S02-ZD-413 and S02-ZD-419, placed: joined S02-V-180 (S02-VP-13), when Zid Payments pays the merchant, by the same sections (a reading).
+- S02-ZD-401 and S02-ZD-414, placed: joined S02-V-175 (S02-VP-10), the check of the merchant's information within two working days, and S02-V-177 (S02-VP-11), activation at once. Saudi Arabia, by the same sections (a reading).
+- S02-ZD-421, placed: joined S02-V-181 (S02-VP-14), no commission on sales, read as one of the platform's fees (my reading). Syria, by zid.sa's page for Syria (a reading).
+- S02-ZD-422, placed: joined S02-V-179 (S02-VP-12), Bemira for e-payments. Syria, by the same page (a reading).
+- S02-ZD-423, placed: joined S02-V-175 (S02-VP-10), no commercial registration needed to open the store. Syria, by the same page (a reading).
+
+### Rows added and joined (part RD1-S4)
+
+No row was replaced or removed. Three rows were added: S02-V-298 (S02-VP-08), S02-V-299 (S02-VP-15) and S02-V-300 (S02-VP-19). Nine rows took statements: S02-V-172, S02-V-175, S02-V-177, S02-V-179, S02-V-180, S02-V-181, S02-V-184, S02-V-298 and S02-V-299, each with the evidence for them added after its own. x_words took Zid's words for X under S02-VP-08, S02-VP-10 to S02-VP-16 and S02-VP-19. Each point the part touched has a note, "Second pass, RD1-S4", naming what it placed there.
+
+### Points that now hold both an every store answer and a country's answer (part RD1-S4)
+
+S02-VP-08 (S02-V-169 and S02-V-298), S02-VP-09 (S02-V-171 and S02-V-172), S02-VP-15 (S02-V-182 and S02-V-299) and S02-VP-19 (S02-V-220 and S02-V-300). Both are kept, and each point's note says so: phase C weighs them. Zid's gap rows S02-V-170 (S02-VP-08) and S02-V-173 (S02-VP-09), on S02-ZD-G03, and S02-V-291 (S02-VP-15), on S02-ZD-G08, stand as they were: no task of this part leads to them.
+
+### Candidates for a new point (part RD1-S4)
+
+None. Every placed statement answers one of (c)'s twelve kinds. S02-ZD-370's payment methods, which zid.eg's Terms accept for its plans, are read as how the platform's fees are billed (S02-VP-14), not as a new kind. Read otherwise, they would be a candidate: X, the means by which the merchant pays the platform, 'وسائل الدفع' (my translation: payment methods); the question, what decides it.
+
+### Searches (part RD1-S4)
+
+No point was raised, so no earlier platform's rows were searched for. To find the platform's own words that tie each page to its country, the slice's Zid statements were filtered by source: zid.sa's pages for Egypt, Syria, the UAE, Kuwait and Oman, and zid.sa's and zid.eg's pricing pages. The pages' heroes, S02-ZD-061, S02-ZD-137, S02-ZD-138, S02-ZD-386, S02-ZD-387 and S02-ZD-388 (under (d)), were read.
+
+### Rechecks (part RD1-S4)
+
+Each joined row was compared with the Zid statements already in it: its basis, `answers`, holds for each statement joined, whose own words name X, and whose site, page or section names the decider in its role.
+
+### Calls (part RD1-S4)
+
+1. S02-ZD-112 and S02-ZD-008, the Arabic and English answers to whether Zid Payments is available across the Gulf, are recorded differently. S02-ZD-112's identifier names both of the page's sections, for Saudi Arabia and for Kuwait, as S02-ZD-393's names each of three one-country pages: each place it is recorded from is tied to one country, so it is placed. S02-ZD-008's identifier and scope name only the page, which holds both sections: tied to several, it stays noted. Its answer, Saudi Arabia and Kuwait, is S02-V-177's already.
+2. S02-ZD-393 and S02-ZD-394, each recorded from three pages each tied to one country, are placed: no page they come from is tied to several.
+3. S02-ZD-353, recorded from zid.eg's and zid.sa's pricing pages, stays noted: one of its two pages is tied to no one country.
+4. zid.sa's own pricing page (S02-ZD-347 to S02-ZD-349) is read as tied to no one country: its recorded scope names none, and the site holds pages for several.
+5. Joining, not adding ("How the rereads are decided", 2): where the merchant is, and the merchant's country, are read as one decider in rule 4's sense, so one answer stays one row, and the evidence each joined statement adds names its country.
+6. Ids: this part's new rows are S02-V-298 to S02-V-300. It raised no point.
+
+### Problems with the method (part RD1-S4)
+
+1. A row's own note can't be changed with the tool. S02-V-177's note still says that S02-ZD-008 and S02-ZD-112 'are noted: their words don't say whose country', while S02-ZD-112 is now joined to that row. S02-VP-11's note says so. The same holds for the points' notes: their earlier "Kept out" passages on the statements this part placed stand, and the note appended to each point names what is now placed.
+2. Rule 4 says the variant names the country as the platform ties it, and a variant is a verbatim excerpt. A row that statements joined keeps its own excerpt: S02-V-181's names 'بالريال السعودي أو بعملة التاجر المحلية' (my translation: in Saudi riyals or the merchant's local currency). Egypt, Syria, the UAE, Kuwait, Oman, Saudi Arabia and Kuwait are named only in the evidence each joined statement adds. The new rows' excerpts name the country as the platform ties it ('زد مصر').
+3. Outside the work list: S02-ZD-420, S02-ZD-436, S02-ZD-440, S02-ZD-443, S02-ZD-445 and S02-ZD-446 are noted under (c) from zid.sa's one-country pages, but their earlier notes give other reasons as well (the plan, the market orders go to, no thing bound named), and the work list doesn't name them. This part leaves them.
+
+### Check (part RD1-S4)
+
+On a copy holding only `b/RD1`: `merge_slices.py` merged 19 points and 300 rows. `check_subject.py` gave no line of level `error`, 17 warnings (phase A's citations) and 14 reviews: 12 quotes found only in a page's source, the coordinator's, and RD2's and RD3's statements, whose folders the copy leaves out. None names this part's rows or statements. Its `unplaced.tsv` holds no row of RD1. `second_pass_list.py --check`: RD1 has no revisit, reread or note task without a row in `done.tsv`.
+
 # RD2
 
 ## RD2-1: shopify, bullets (e) and (g)
@@ -668,6 +1245,260 @@ Each point's `raised_by` holds only shopify's statements, so RD2-2's rows were c
 - BigCommerce's default channel (S02-V-466): 'provisioned with one channel out of the box' is read as 'by default', so the platform's (a reading, marked in the row).
 - Scopes and permissions: bigcommerce's S02-BC-004, the API scope 'store_channel_settings' at 'modify', 'View and modify a list of channels', is placed under S02-VP-29 as a permission that gates changing channels (S02-V-467). RD2-1 noted shopify's read scopes, which gate no change, and its page permissions; salla's 'branches_management' (S02-SA-255, S02-SA-257) gates a page, and is noted the same way.
 - Activation and publishing: salla's activating a market (S02-SA-044) is placed under S02-VP-29, as RD2-1 placed shopify's activating and deactivating (S02-V-428). Zid's creating a market hidden or published (S02-ZD-022) is placed under S02-VP-28, since its identifier puts it among the steps of creating a market.
+
+## Second pass, RD2-S1: every task of RD2's work list, bullets (e) and (g), all five platforms
+
+### Revisits
+
+- S02-V-424 (shopify, S02-VP-27, was `gap` S02-SH-G03). Its leads: S02-SH-689, S02-SH-704 and S02-SH-706 ('unlimited number of country or region markets') joined S02-V-411; S02-SH-707 ('The number of markets that you can create depends on your subscription plan.') joined S02-V-412; S02-SH-689 ('Create B2B markets'), S02-SH-706 and S02-SH-707 ('you can create') joined S02-V-425, the seller, under S02-VP-28. Two answers no row held: S02-V-424 is replaced by 'you can assign up to 3 active catalogs across all your B2B markets' (S02-SH-703, S02-SH-704), and S02-V-470 is added, 'you can create an unlimited number of B2B market catalogs' (S02-SH-703, S02-SH-704), both rules on what B2B markets may hold. S02-SH-G03 was settled by gap-closing and goes; the gap `why` names, S02-SH-G07, stands beside them as S02-V-471.
+- S02-V-449 (woocommerce, S02-VP-27, was `gap` S02-WC-G04). Its leads are about shipping zones, which RD2-2 held to be shipping, under (f), not a market; they are noted below. Gap-closing settled S02-WC-G04 and left no gap or absence for the point, so the row is now `not covered` (see "Rows `not covered`").
+
+### Rereads (RD2-2, (e); rule 4 as widened on 27 October 2026)
+
+All four are placed; their earlier notes stay.
+- S02-SA-026: the seller's controls that switch the multiple markets feature on ('اضغط (فعل الآن)', 'اضغط (تأكيد)'), joined to the seller's rows S02-V-438 (S02-VP-28) and S02-V-439 (S02-VP-29).
+- S02-SA-054: the account manager who enables the feature, a new row S02-V-472 under S02-VP-28, and in the new row S02-V-473 under S02-VP-29.
+- S02-SA-055 and S02-SA-059: the account manager who disables it, in S02-V-473 under S02-VP-29.
+
+### Statements noted under (e)
+
+- S02-WC-269 (e): 'You can add as many shipping zones or shipping methods as you need to your shipping settings; there is no limit.': a limit on shipping zones, shipping under (f), not on a market; X fails the role test
+- S02-WC-270 (e): 'A shipping zone is a geographical area to which you ship items.': shipping, under (f); X fails the role test
+- S02-SA-382 (e): 'Each store decides which countries it ships to and which payment methods it accepts.': the countries a store ships to, shipping under (f), and payment methods; X fails the role test
+- S02-SH-628 (e): 'Pre-approved expansion store types', such as 'International stores': an expansion store is a store of its own on a Shopify Plus organization's contract, not a market a store sells into; X fails the role test
+- S02-SH-629 (e): 'Shopify Plus plan organizations can have a maximum of ten stores on their contract': a limit on an organization's stores, not on a store's markets; X fails the role test
+- S02-SH-783 (e): 'you can restrict access so that only logged-in B2B customers can view your store': who may view the store, a setting under (f); answers none of (e)'s questions
+- S02-SH-784 (e): 'restricting access might redirect D2C customers to authentication on some pages': a setting of the store's access, under (f); answers none of (e)'s questions
+- S02-SH-927 (e): 'Shipping profiles and shipping rates are gradually moving to shipping options by market': shipping per market, under (f); answers none of (e)'s questions
+- S02-SH-939 (e): the shipping zone's countries and regions, with 'Add more countries/regions in Markets': a shipping zone, shipping under (f), not a market; X fails the role test, as RD2-1 held for S02-SH-235
+
+### Statements noted under (g)
+
+- S02-SH-653 (g): 'the Customer information settings apply to every country and market that you sell to': a setting that holds for the whole store, RD3's half
+
+### Shopify's other statements under (e), placed
+
+S02-SH-603, S02-SH-604, S02-SH-606, S02-SH-607, S02-SH-609, S02-SH-611, S02-SH-920, S02-SH-924 and S02-SH-925 joined S02-VP-26's rows S02-V-400, S02-V-401, S02-V-403, S02-V-404 and S02-V-405; S02-SH-605 joined S02-V-420 and S02-SH-937 S02-V-412. New rows: under S02-VP-27, S02-V-474 (S02-SH-604, what a channel market may hold), S02-V-475 (S02-SH-924, locations on Shopify POS Lite) and S02-V-476 (S02-SH-925, retail and online customers within one region); under S02-VP-28 and S02-VP-29, S02-V-477 and S02-V-478, apps (S02-SH-606); under S02-VP-29, S02-V-479, the platform, which deactivates the markets past a new plan's limit (S02-SH-937). S02-SH-609 names market types by their use ('for cross-border selling, wholesale, retail, and selling across sales channels'): only its 'sales channels' names what defines one, so it is placed in S02-V-405 only.
+
+### zid: statements noted under (e)
+
+- S02-ZD-186 (e): 'The endpoint returns all countries' names, codes, and IDs, and is not specific to any particular store's operations': a list of every country, not a market; answers none of (e)'s questions
+- S02-ZD-187 (e): 'The **Region & Language popup** allows customers to change the store language, country, and city': the buyer switches region, market selection under (f); answers none of (e)'s questions
+- S02-ZD-190 (e): '`zid.store.region.countries`', 'Returns the list of store countries': a theme function's list of countries, which the statement doesn't say define a market; answers none of (e)'s questions
+- S02-ZD-191 (e): '`zid.store.region.setRegion`', 'Changes the store language, country, and city': the buyer's region, market selection under (f); answers none of (e)'s questions
+- S02-ZD-447 (e): 'نربطك مباشرة بأكبر الأسواق' (my translation: we connect you directly to the biggest markets): names markets without what defines one, a limit, or who creates, changes or removes one; answers none of (e)'s questions
+
+### zid, bigcommerce and salla: statements noted under (g)
+
+None of these says that the platform has no market of the kind in (e), RD2's half of (g) (rule 4). Each is noted with what it says: a setting that holds for the whole store is RD3's half; the rest are neither half.
+
+- S02-ZD-231 (g): 'لا يمكن تفعيل أكثر من نطاق في نفس الوقت.' (my translation: more than one domain can't be activated at the same time): the domain, a setting that holds for the whole store, RD3's half
+- S02-BC-176 (g): 'Other features, like tax, belong to the global store': taxes, a setting that holds for the whole store, RD3's half
+- S02-BC-185 (g): 'Currently, you cannot have different warehouse locations and inventory service different storefront channels.': locations, a setting that holds for the whole store, RD3's half
+- S02-BC-292 (g): 'settings like measurement units and factoring dimension are applied globally': units, a setting that holds for the whole store, RD3's half
+- S02-SA-339 (g): the Terms of Use's definition of the consumer, '( المستهلك ) يقصَد بهذه العبارة كل مستهلك يقوم بشراء المنتج أو الخدمة من التاجر' (my translation: the consumer means every consumer who buys the product or service from the merchant): neither half
+- S02-SA-340 (g): 'في حال قيام التاجر بالتسجيل كمؤسسة أو شركة' (my translation: where the merchant registers as an establishment or company): the merchant's legal capacity, in the Terms; neither half
+- S02-SA-341 (g): 'لا تلتزم منصة سلة بإتمام عمليات بيع المنتجات أو الخدمات بين المستهلك والمتجر' (my translation: Salla doesn't undertake to complete sales between the consumer and the store): who sells, for every store; not RD2's half
+- S02-SA-342 (g): 'إن جميع التعاملات التي تتم بين التاجر والمستهلك لا علاقة لها بشخص منصة سلة' (my translation: all dealings between the merchant and the consumer have no relation to Salla itself): who sells, for every store; not RD2's half
+- S02-SA-343 (g): 'كافة المتاجر الإلكترونية المسجلة في منصة سلة تمتلك سجل تجاري الكتروني خاص بها' (my translation: every online store registered on Salla holds its own commercial register): who sells, for every store; not RD2's half
+- S02-SA-344 (g): 'اتفاقية الاستخدام هذه سارية على كافة المستخدمين لمنصة سلّة' (my translation: these Terms of Use apply to all of Salla's users): the terms, for every user; neither half
+- S02-SA-377 (g): 'المتجر الذي اشتريت منه هو من ينفّذ الاسترجاع ويصدر ردّ المبلغ' (my translation: the store you bought from carries out the return and issues the refund): returns, for every store; not RD2's half
+- S02-SA-378 (g): 'تختلف تجربة الاسترجاع من متجر لآخر' (my translation: the return experience differs from store to store): returns, which differ by store; not RD2's half
+- S02-SA-379 (g): 'As a shopper, you buy from the store itself, not from Salla.': who sells; not RD2's half
+- S02-SA-380 (g): 'It owns the product, sets the price and the return policy, prepares and ships your order': who sells, and who sets prices and returns; not RD2's half
+- S02-SA-381 (g): 'The seller is the store where you placed the order': who sells; not RD2's half
+- S02-SA-386 (g): 'Allow customers to cancel orders before they're processed.': cancellations, a setting of the whole store, RD3's half
+- S02-SA-394 (g): 'الطلبات بالعملات المختلفة بعد تحويلها إلى العملة الأساسية للمتجر' (my translation: orders in different currencies after converting them to the store's base currency): reports in the store's base currency, RD3's half
+- S02-SA-395 (g): 'converted to the store currency': reports in the store's currency, RD3's half
+- S02-SA-401 (g): 'تثبيت تطبيق Google Analytics واختيار حساب المتجر على Google Analytics' (my translation: install the Google Analytics app and choose the store's account on Google Analytics): an app linked for the store; not RD2's half
+- S02-SA-402 (g): 'أدخل نطاق/دومين متجرك' (my translation: enter your store's domain), in linking Google Analytics: not RD2's half
+- S02-SA-403 (g): 'اختر مصدر بيانات متجرك من القائمة المتاحة' (my translation: choose your store's data source from the list): an app's setting for the store; not RD2's half
+- S02-SA-404 (g): 'ويمكنك إعادة الربط مع أي حساب آخر على Google Analytics في أي وقت تريد' (my translation: you can link again with any other Google Analytics account at any time): an app's link for the store; not RD2's half
+- S02-SA-405 (g): 'create a Google Tag Manager account and container for your store URL': an app for the store; not RD2's half
+- S02-SA-406 (g): 'Keep one container per store.': an app's container for the whole store; not RD2's half
+- S02-SA-407 (g): 'The pixel, the Conversions API and your product catalog are all connected automatically when you link your account.': an app's link for the store; not RD2's half
+- S02-SA-408 (g): 'Choose the pixel you want, then click (Continue).': a step in linking an app; not RD2's half
+- S02-SA-416 (g): 'The Salla App Store is where you browse and install apps that add features to your store': apps for the store; not RD2's half
+- S02-SA-417 (g): 'Turn all store notifications on or off.': messages, a setting that holds for the whole store, RD3's half
+- S02-SA-418 (g): the notifications table's headers, 'Email' and 'App notifications': messages, RD3's half
+- S02-SA-419 (g): the staff permission 'store_notification_settings_management': staff access to the store's notification settings, RD3's half
+- S02-SA-420 (g): 'استقبل إشعارات مباشرة على جوالك أو جهازك اللوحي' (my translation: receive notifications directly on your phone or tablet): notifications to the merchant; not RD2's half
+- S02-SA-431 (g): 'Saudi Arabia time is currently the only time zone available.': the time zone of booking products, RD3's half
+- S02-SA-432 (g): 'Currently, booking times use Saudi Arabia time only.': the time zone of booking products, RD3's half
+- S02-SA-433 (g): 'If enabled, Saudi Arabia (Riyadh) time will be used in the order prep list.': the time zone of the order prep list, RD3's half
+- S02-SA-434 (g): the weight units, 'Gram', 'Kilogram', 'Pound' and 'Ounce': units, RD3's half
+- S02-SA-435 (g): 'Product weight and weight unit': units, per product; not RD2's half
+- S02-SA-436 (g): 'Default product weight for shipping': a default for the whole store, RD3's half
+
+### bigcommerce: statements under (e)
+
+Placed: S02-BC-162 in S02-V-453 and S02-V-462; S02-BC-163, S02-BC-164, S02-BC-172, S02-BC-174, S02-BC-177, S02-BC-180 and S02-BC-323 in S02-V-455, S02-BC-323 also in S02-V-456 and S02-V-457; S02-BC-172 and S02-BC-177 in S02-V-465, the merchant. New rows under S02-VP-27: S02-V-480, storefront seats or the plan (S02-BC-178); S02-V-481, a locale in one storefront only (S02-BC-179); S02-V-482, up to five languages a channel (S02-BC-286). Noted:
+
+- S02-BC-173 (e): 'Each locale's subfolder is set in the control panel on your default channel.': a domain subpath for a language on one channel, domain and language under (f); answers none of (e)'s questions
+- S02-BC-183 (e): 'The Carts API supports selling in different markets by allowing locale-based overrides for product details.': names markets without what defines one; its overrides are product details per locale, under (f); answers none of (e)'s questions
+- S02-BC-204 (e): 'Fires when customer settings that affect the specified channel are updated': a webhook on a channel's settings, under (f); answers none of (e)'s questions
+
+### woocommerce: statements noted under (g)
+
+None of woocommerce's statements under (g) in this work list says that the platform has no market of the kind in (e), RD2's half of (g) (rule 4). Each is noted with what it says: a setting that holds for the whole store is RD3's half; the rest are neither half.
+
+- S02-WC-266 (g): 'customers from all over the world can use the gateway to check out and pay': payment methods, for every buyer, RD3's half
+- S02-WC-274 (g): 'you're solely responsible for all of your ecommerce activities': who sells, in the terms; not RD2's half
+- S02-WC-275 (g): 'User is solely responsible for, and Stripe disclaims all liability for, the provision of goods and services sold to User's Customers': who sells, in a provider's terms; not RD2's half
+- S02-WC-276 (g): 'must maintain fair and legally compliant return, refund, cancellation, and adjustment policies': returns, for every store; not RD2's half
+- S02-WC-277 (g): 'are responsible for all products and services you provide, including delivery, support, refunds, returns': who sells; not RD2's half
+- S02-WC-281 (g): 'WITHDRAWAL_WINDOW_IN_DAYS           = 14': returns, a value for the whole store, RD3's half
+- S02-WC-282 (g): 'Enable the public order withdrawal feature for customer requests.': returns, a setting of the whole store, RD3's half
+- S02-WC-283 (g): 'It’s up to you how withdrawal requests are handled': returns, RD3's half
+- S02-WC-284 (g): 'The form accepts requests for orders of any age.': returns, RD3's half
+- S02-WC-285 (g): 'We have created a sample draft Refund and Returns Policy page for you.': returns, a page of the whole store, RD3's half
+- S02-WC-288 (g): '$default_weight_unit = $locale_info['US']['weight_unit'];': the units' default, RD3's half
+- S02-WC-289 (g): 'This controls what unit you will define weights in.': units, a setting of the whole store, RD3's half
+- S02-WC-290 (g): 'which determines the weight unit used throughout the store': units, a setting that holds for the whole store, RD3's half
+- S02-WC-291 (g): 'This controls what unit you will define lengths in.': units, a setting of the whole store, RD3's half
+- S02-WC-310 (g): the site's time zone, 'timezone_string': a setting of the whole site, RD3's half
+- S02-WC-311 (g): 'The date the order was created, in the site's timezone.': the site's time zone, RD3's half
+- S02-WC-312 (g): 'Set your store\'s address, visibility, currency, language, and timezone.': settings of the whole store, RD3's half
+- S02-WC-315 (g): 'Choose the currency the store will display on products.': currency, RD3's half
+- S02-WC-324 (g): 'Go to WP Admin > Settings > General and adjust the Site Language.': language, RD3's half
+- S02-WC-325 (g): 'the shop displays in your locale if the language file exists': language, RD3's half
+- S02-WC-329 (g): 'Allows customers to checkout without an account.': checkout and customer accounts, RD3's half
+- S02-WC-330 (g): 'Account creation', 'After checkout (recommended)': checkout and customer accounts, RD3's half
+- S02-WC-331 (g): 'Customers can create an account before placing their order.': checkout and customer accounts, RD3's half
+- S02-WC-332 (g): 'Account creation', 'On "My account" page': customer accounts, RD3's half
+- S02-WC-333 (g): 'Set options relating to customer accounts and data privacy.': customer accounts and privacy, RD3's half
+- S02-WC-338 (g): 'Go to WooCommerce > Settings and select the Accounts and Privacy tab.': customer accounts and privacy, RD3's half
+- S02-WC-339 (g): 'Use these settings to enable or disable guest checkout, control customer account creation': checkout and customer accounts, RD3's half
+- S02-WC-340 (g): 'Allow customers to check out without creating an account.': checkout and customer accounts, RD3's half
+- S02-WC-341 (g): 'Allow customers to create an account before placing their order.': customer accounts, RD3's half
+- S02-WC-346 (g): 'This setting determines which shop pages products will be listed on.': products, RD3's half
+- S02-WC-347 (g): the catalog visibility options 'Shop and search results', 'Shop only', 'Search results only' and 'Hidden': products, RD3's half
+- S02-WC-348 (g): 'Hide out of stock items from the catalog': products, RD3's half
+- S02-WC-361 (g): 'WooCommerce core offers fixed-cart, fixed-product, and percentage-based coupons.': discounts, RD3's half
+- S02-WC-362 (g): 'You need an administrator or shop manager account to manage coupons.': discounts and staff access, RD3's half
+- S02-WC-364 (g): 'WooCommerce core does not apply coupon codes automatically.': discounts, RD3's half
+- S02-WC-366 (g): 'Enable the use of coupon codes': discounts, a setting of the whole store, RD3's half
+- S02-WC-368 (g): 'Enable or disable coupons in your store.': discounts, RD3's half
+- S02-WC-373 (g): the product's 'Sale price', labelled with 'get_woocommerce_currency_symbol()': prices in the store's one currency, RD3's half
+- S02-WC-375 (g): 'select options that apply site-wide for Store Notice, Product Catalog, and Product Images': storefront design, RD3's half
+- S02-WC-376 (g): 'Add a store wide alert/banner notice': storefront design, RD3's half
+- S02-WC-377 (g): 'If enabled, this text will be shown site-wide.': storefront design, RD3's half
+- S02-WC-379 (g): 'The Customize your store task opens a simplified design screen': storefront design, RD3's half
+- S02-WC-386 (g): the option '"From" name', 'woocommerce_email_from_name': messages to buyers, RD3's half
+- S02-WC-387 (g): the option '"From" address', 'woocommerce_email_from_address': messages to buyers, RD3's half
+- S02-WC-395 (g): 'Enable stock management': stock, a setting of the whole store, RD3's half
+- S02-WC-396 (g): 'Track stock quantity for this product': stock, a setting per product; not RD2's half
+- S02-WC-401 (g): 'Enable this feature to track and credit channels and campaigns that contribute to orders on your site': a feature of the whole site, RD3's half
+- S02-WC-404 (g): 'You can enable (or disable) this feature by going to WooCommerce > Settings > Advanced > Features > Order Attribution.': RD3's half
+- S02-WC-408 (g): 'All data in your site’s Analytics menu will be converted into your store’s default currency.': reports in the default currency, RD3's half
+- S02-WC-411 (g): 'check or uncheck the Enable tracking checkbox': data sharing, a setting of the whole store, RD3's half
+- S02-WC-412 (g): 'You can configure GA4 in your store’s WP Admin dashboard': an extension's setting for the whole store, RD3's half
+- S02-WC-418 (g): 'Leave this box unchecked if you do not want to pull suggested extensions from WooCommerce.com.': a setting of the admin; not RD2's half
+- S02-WC-422 (g): 'One active subscription key can be used on one active (production) site': a WooCommerce.com subscription, the platform's own account; neither half
+- S02-WC-423 (g): 'Set the locale to the store locale for customer emails to make sure emails are in the store language.': messages in the store's language, RD3's half
+- S02-WC-425 (g): 'For each WooCommerce email listed, it’s possible to configure your settings (optional).': messages, RD3's half
+- S02-WC-426 (g): 'use the “From” name and “From” address fields to set the sender identity customers see': messages, RD3's half
+- S02-WC-428 (g): 'Let customers sign up to be notified when products in your store are restocked.': messages, RD3's half
+- S02-WC-430 (g): 'Enter recipients (comma separated) that will receive this notification.': notifications to the store's own staff; not RD2's half
+- S02-WC-431 (g): 'Enable low stock notifications': notifications to the store's own staff; not RD2's half
+- S02-WC-432 (g): 'Enter comma-separated recipients for this email.': emails to shop managers and admins; not RD2's half
+- S02-WC-440 (g): 'Enable WooCommerce Analytics to track your store\'s key metrics': reports, a feature of the whole store, RD3's half
+- S02-WC-441 (g): 'This section controls the display of your website privacy policy.': privacy, RD3's half
+- S02-WC-442 (g): 'Optionally add some text about your store privacy policy to show on account registration forms.': privacy, RD3's half
+- S02-WC-443 (g): 'Optionally add some text about your store privacy policy to show during checkout.': privacy, RD3's half
+- S02-WC-444 (g): 'Choose how long to retain personal data': privacy, RD3's half
+- S02-WC-445 (g): 'This section lets you select a privacy policy page': privacy, RD3's half
+- S02-WC-446 (g): 'Open Settings > Privacy, where you can select your privacy policy page.': privacy, RD3's half
+- S02-WC-447 (g): 'Use this section to decide how long your store keeps order data.': privacy, RD3's half
+- S02-WC-451 (g): 'Use these roles to control who can manage products, view reports, and configure store settings.': staff access, RD3's half
+- S02-WC-452 (g): 'choose a role from the Role dropdown': staff access, RD3's half
+- S02-WC-453 (g): 'WooCommerce adds several capabilities to the existing Administrator role.': staff access, RD3's half
+- S02-WC-454 (g): 'Manage WooCommerce — Access to WooCommerce settings and configuration.': staff access, RD3's half
+- S02-WC-455 (g): 'View WooCommerce reports — Access to all WooCommerce analytics and reports.': staff access, RD3's half
+- S02-WC-456 (g): 'The Shop Manager role allows someone to manage your store without granting full Administrator access.': staff access, RD3's half
+- S02-WC-457 (g): 'Manage WooCommerce — Full access to all WooCommerce settings and configuration.': staff access, RD3's half
+- S02-WC-458 (g): 'View WooCommerce reports — Access to all WooCommerce analytics and reports.': staff access, RD3's half
+- S02-WC-459 (g): 'Manage products — Create, edit, delete, and publish products': staff access, RD3's half
+- S02-WC-460 (g): 'Manage orders — View, edit, and delete orders, as well as process refunds.': staff access, RD3's half
+- S02-WC-461 (g): 'Manage customers — Shop Managers can view user details for all roles.': staff access, RD3's half
+- S02-WC-462 (g): 'Shop Managers also have general WordPress editor capabilities': staff access, RD3's half
+- S02-WC-463 (g): 'you can use an extension or plugin to adjust permissions without editing code': staff access, RD3's half
+- S02-WC-464 (g): 'A WooCommerce extension that allows you to add, assign, and switch user roles within your store.': staff access, RD3's half
+- S02-WC-465 (g): 'A WordPress plugin that provides a detailed interface for editing role capabilities.': staff access, RD3's half
+- S02-WC-466 (g): 'A WordPress plugin for managing user roles, capabilities, and content permissions.': staff access, RD3's half
+- S02-WC-467 (g): 'A WordPress plugin for managing group-based access control and permissions.': staff access, RD3's half
+- S02-WC-468 (g): 'add_role( 'shop_manager', 'Shop manager',': staff access, RD3's half
+- S02-WC-469 (g): '$wp_roles->add_cap( 'shop_manager', $cap );': staff access, RD3's half
+- S02-WC-470 (g): 'these are assigned to admin/shop manager during installation or reset': staff access, RD3's half
+- S02-WC-471 (g): '$capabilities['core'] = array( 'manage_woocommerce', 'create_customers', 'view_woocommerce_reports', );': staff access, RD3's half
+- S02-WC-472 (g): '$capability_types = array( 'product', 'shop_order', 'shop_coupon' );': staff access, RD3's half
+- S02-WC-473 (g): 'woocommerce_shop_manager_editable_roles': staff access, RD3's half
+- S02-WC-474 (g): ''settings' => 'manage_woocommerce'': staff access, RD3's half
+- S02-WC-475 (g): ''shipping_methods' => 'manage_woocommerce'': staff access, RD3's half
+- S02-WC-476 (g): 'Coming soon mode controls who can visit your site while you prepare it for launch.': store status, a setting of the whole site, RD3's half
+- S02-WC-477 (g): 'Go to WooCommerce > Settings > Site visibility to switch between Coming soon and Live.': store status, RD3's half
+- S02-WC-478 (g): 'The badge reads Coming soon, Store coming soon, or Live based on your visibility settings.': store status, RD3's half
+- S02-WC-479 (g): 'From this screen, choose Coming soon or Live.': store status, RD3's half
+- S02-WC-480 (g): 'When Coming soon mode is enabled, your site is in a development state and not accessible to the public.': store status, RD3's half
+- S02-WC-481 (g): 'Enabling this option ensures that only store-related pages are protected by Coming soon mode.': store status, RD3's half
+- S02-WC-482 (g): 'Visitors will not be able to access store pages without permission': store status, RD3's half
+- S02-WC-483 (g): 'the Coming soon landing page is displayed instead of the following WooCommerce store pages': store status, RD3's half
+- S02-WC-484 (g): 'Cart (Assigned via WooCommerce > Settings > Advanced).': a store page under Coming soon mode, store status, RD3's half
+- S02-WC-485 (g): 'Checkout (Assigned via WooCommerce > Settings > Advanced).': a store page under Coming soon mode, store status, RD3's half
+- S02-WC-486 (g): 'Terms and conditions (Assigned via WooCommerce > Settings > Advanced).': a store page under Coming soon mode, store status, RD3's half
+- S02-WC-487 (g): 'Shop (Assigned via WooCommerce > Settings > Products > General).': a store page under Coming soon mode, store status, RD3's half
+- S02-WC-488 (g): 'Privacy policy (Assigned via Settings > Accounts & Privacy).': a store page under Coming soon mode, store status, RD3's half
+- S02-WC-489 (g): 'A private link is generated for you to provide selective access to your site': store status, RD3's half
+- S02-WC-490 (g): 'When live mode is enabled, your site is fully accessible to all visitors': store status, RD3's half
+- S02-WC-491 (g): 'Stores that are already live will default to live mode': store status, RD3's half
+- S02-WC-492 (g): 'Stores that install WooCommerce and complete the onboarding process will default to Coming soon mode.': store status, RD3's half
+- S02-WC-493 (g): 'This is the default setting for new sites, determined by the fresh_site WordPress flag.': store status, RD3's half
+- S02-WC-494 (g): 'If the first admin user registration date is less than a month ago.': store status, RD3's half
+- S02-WC-495 (g): 'the Apply to store pages only toggle is enabled by default': store status, RD3's half
+- S02-WC-496 (g): 'This guide provides examples for third-party developers and hosting providers on how to integrate their systems with WooCommerce's coming soon mode.': store status, RD3's half
+- S02-WC-497 (g): 'WooCommerce's coming soon mode allows you to temporarily make your site invisible to the public while you work on it.': store status, RD3's half
+- S02-WC-498 (g): 'The coming soon mode can be programmatically synced from a plugin or application.': store status, RD3's half
+- S02-WC-499 (g): 'Integrating with a maintenance mode plugin.': store status, RD3's half
+- S02-WC-500 (g): 'Integrating with a hosting provider's coming soon mode.': store status, RD3's half
+- S02-WC-501 (g): 'enable or disable WooCommerce coming soon mode from another plugin by directly updating woocommerce_coming_soon option': store status, RD3's half
+- S02-WC-502 (g): 'We could also programmatically bind the coming soon option from another plugin': store status, RD3's half
+- S02-WC-503 (g): 'It is possible for developers to add custom exclusions that bypass the coming soon protection.': store status, RD3's half
+- S02-WC-504 (g): 'you may want to add a custom page to the list of store pages which will be restricted by coming soon mode': store status, RD3's half
+- S02-WC-505 (g): 'Use the Launch your store task when you’re ready to make your store public.': store status, RD3's half
+- S02-WC-506 (g): 'From the site visibility settings, you’ll be able to enable Coming soon mode': store status, RD3's half
+- S02-WC-507 (g): 'if ( current_user_can( 'manage_woocommerce' ) ) {': store status and staff access, RD3's half
+- S02-WC-508 (g): 'apply_filters( 'woocommerce_coming_soon_exclude', false )': store status, RD3's half
+- S02-WC-509 (g): ''woocommerce_coming_soon' => array( 'yes', 'no' )': store status, RD3's half
+
+### woocommerce: statements noted under (e)
+
+- S02-WC-359 (e): 'You can only select the countries that you’re targeting on Google Merchant Center. Your target countries must be eligible for both Google Merchant Center and Google Ads.': the countries the Google for WooCommerce extension targets with listings and ads on Google, which the statement doesn't say are a market the store sells into; X fails the role test (WooCommerce's market is its selling locations, as RD2-2 held)
+
+### RD2-S1: rows `not covered`
+
+- S02-V-449: woocommerce, S02-VP-27 (`what limits "market"`), was `gap` S02-WC-G04. Gap-closing settled the gap and left none for the point, and its leads (S02-WC-269, S02-WC-270) are about shipping zones, noted above. No statement, gap or absence of woocommerce answers the point, so the row goes back to woocommerce (rule 4).
+
+### RD2-S1: matching (rule 5)
+
+Each statement placed was compared with the point's `raised_by`. The rows joined are each platform's own, and keep their bases. The new rows of salla (S02-V-472, S02-V-473) and bigcommerce (S02-V-480 to S02-V-482) share no term, identifier or definition with the shopify statements in `raised_by` (S02-SH-111, S02-SH-301, S02-SH-286; S02-SH-115, S02-SH-116, S02-SH-288; S02-SH-061, S02-SH-128, S02-SH-288), so each takes `answers` alone, as do shopify's new rows.
+
+### RD2-S1: new kinds, searches and candidates for a new point
+
+- New kinds: none; (e)'s points take no kind (rule 3).
+- Searches for earlier platforms' rows: none; the second pass raised no point.
+
+### Candidates for a new point
+
+None. Every statement of the work list that answers one of (e)'s questions does so for a market a store sells into, the one X of (e)'s points, and none of the (g) statements says that the platform has no market of the kind in (e).
+
+### RD2-S1: problems with the method
+
+- S02-V-449 is now `not covered`, after gap-closing. Phase A's gap S02-WC-G04 asked, under (e), how many shipping zones a store can hold; gap-closing answered it (S02-WC-269: 'there is no limit'), but under the role test, as RD2-2 held, a shipping zone is not a market, so the answer is noted. The row goes back to woocommerce, and A2 has run: the coordinator decides.
+- Rule 4, as widened on 27 October 2026, makes the party that switches a feature on its own answer under both `who creates` and `who changes or removes`. S02-SA-054 ('Contact your account manager to enable this feature.') names no feature by name: that it is the multiple markets feature is a reading, marked in S02-V-472 and S02-V-473. S02-SA-059 is in the same list as S02-SA-058, which names the market. S02-SA-026, the seller's own controls, joined the seller's rows.
+- S02-SH-703 and S02-SH-704 set limits on the catalogs B2B markets hold. They are placed under S02-VP-27 as rules on what a market may hold (S02-V-424, S02-V-470), as RD2-1 placed what a channel market may hold (S02-V-420). If such rules are read as (f)'s alone, the two rows go.
+- S02-SH-604 ('Merchants can't configure web presence, domains, or discounts for channel markets.'), S02-SH-925 and S02-BC-286 ('Each channel can support up to five languages.') are rules on which settings a market may hold. They are placed under S02-VP-27 (S02-V-474, S02-V-476, S02-V-482), whose note holds both limits on how many and on what a market holds; they also bear on RD3's points.
+- S02-SH-628 and S02-SH-629, Shopify Plus's expansion stores (including 'International stores' in another region or currency), are noted: an expansion store is a store of its own, not a market of a store.
+- S02-WC-359, Google for WooCommerce's target countries, is noted. If a sales channel's target countries count as a market a store sells into, as zid's and bigcommerce's channels do (S02-V-443, S02-V-453), it answers S02-VP-27 for woocommerce, and S02-V-449 would take it in place of `not covered`.
 
 # RD3
 
@@ -1031,4 +1862,803 @@ None.
 - **(c)'s kinds under (f).** Payouts, the platform's fees, and the platform's suggestions and recommendations to the merchant are noted, as RD3-1 and RD3-3 noted payouts and fees; phase A put them under (c) and (f) both.
 - **The store's country.** WooCommerce's row under S02-VP-85 rests on S02-WC-017's 'business address', read through WooCommerce's terms 'store country' ('The store country comes from WooCommerce > Settings > General > Store Address.') and 'Store address'; it is marked as a reading.
 - **Writes.** No write was refused. The rows were written with scripts in this part's scratch folder, which validate each excerpt, and each quote attributed to a statement or a term, against the slice with the checker's normalization, and which append rows or replace this part's own rows, never rebuilding the file: S02-V-912 (S02-VP-54) was appended as `not covered` and replaced in place by the seller's row after the search above found S02-WC-198. In variation-points.tsv, only the `x_words` of 16 points changed, by WooCommerce's words.
+
+## Second pass, RD3-S5: bigcommerce, bullets f and g
+
+BigCommerce's tasks in `b/second-pass/RD3/worklist.tsv`: ten revisits, then the `place` tasks. Each row is compared with the statement in its point's `raised_by` from another platform (rule 5); every new row takes `answers`. A market is read as the first pass read it (BigCommerce's 'channel', a storefront among its types, `terms.tsv`); a storefront that takes the store's global value until the seller changes it takes its value per a market (rule 4).
+
+### Revisits: rows replaced, and what took their place
+
+- S02-V-842 (S02-VP-63, was `not covered`): replaced by S02-BC-351, 'while remaining merchant of record', the whole store, a reading of 'remaining' as the merchant staying merchant of record in AI-powered shopping experiences as in its other sales; S02-V-961 added beside it, `gap` S02-BC-G14, which asks whether a market can sell through another entity.
+- S02-V-843 (S02-VP-64, was `not covered`): replaced by `gap` S02-BC-G14. S02-BC-351 names who the merchant of record is in agentic checkout, not who sets it; it is placed under S02-VP-63.
+- S02-V-844 (S02-VP-65, was `not covered`): replaced by a market, 'the default values for return reasons and actions will be automatically translated per storefront' (S02-BC-339, S02-BC-341); added S02-V-962, the whole store ('You can click to enable returns for your store.', S02-BC-339, with S02-BC-335, S02-BC-340, S02-BC-341 as readings), and S02-V-963, `gap` S02-BC-G13.
+- S02-V-845 (S02-VP-66, was `not covered`): replaced by the seller, Settings › Returns in the control panel (S02-BC-330 to S02-BC-335, S02-BC-337, S02-BC-339, S02-BC-340); added S02-V-964, the platform ('will be automatically translated per storefront', S02-BC-339, S02-BC-341, S02-BC-335), and S02-V-965, the Manage Settings permission (S02-BC-336).
+- S02-V-850 (S02-VP-69, was `gap` S02-BC-G03): replaced by a market, 'translations by resourceType, channel, and locale' (S02-BC-296, S02-BC-297, S02-BC-300); S02-V-966 added, `gap` S02-BC-G12 (S02-BC-G03 was settled by gap-closing, and goes). S02-BC-301 and S02-BC-302 joined the buyer's country (S02-V-848). Under S02-VP-70: S02-BC-301 and S02-BC-303 joined the seller (S02-V-851), S02-BC-300 the platform (S02-V-852), and S02-V-967 added, the Manage Settings permission (S02-BC-304). The leads placed under other points they answer: S02-BC-296 to S02-BC-300 joined S02-V-815 (S02-VP-43, translated content per channel and locale); S02-V-968 added under S02-VP-44, the platform (S02-BC-300, Country/State names translated within the platform); S02-BC-305 to S02-BC-307 joined S02-V-830 (S02-VP-55, a market); S02-BC-306 joined S02-V-831 (S02-VP-56, the seller); S02-V-969 added under S02-VP-56, the platform ('By default, your storefront uses your store’s checkout settings.', S02-BC-306); S02-V-970 added under S02-VP-56, the Manage Settings permission (S02-BC-304).
+- S02-V-854 (S02-VP-71, was `not covered`): replaced by the whole store, a reading of a policy's targets, 'a specific store, or the account itself', none of them a channel or storefront (S02-BC-345, S02-BC-342).
+- S02-V-855 (S02-VP-72, was `not covered`): replaced by the seller, 'To edit user permissions, go to Settings › Users' (S02-BC-348); added S02-V-971, the store owner (S02-BC-348, the account's owner, rule 4); S02-V-972, the Manage Users and Edit Users permissions (S02-BC-348); S02-V-973, the platform (S02-BC-346's default group 'provisioned with each account'; S02-BC-344's 'Predefined permission bundles', a reading).
+- S02-V-856 (S02-VP-73, was `not covered`): replaced by a market, the Allow global logins setting of each channel, which sets the storefronts a customer may shop (S02-BC-327 to S02-BC-329). The same three joined S02-V-830 (S02-VP-55, customer accounts' sign-in per storefront), S02-BC-328 and S02-BC-329 joined S02-V-831 (the seller), and S02-BC-327 and S02-BC-329 joined S02-V-969 (the platform, 'default behavior'). S02-BC-322 is a currency converter, not a choice of market: it joined S02-V-810 (S02-VP-41, the buyer's country), S02-V-813 (S02-VP-42, the platform: 'automatically') and S02-V-812 (the seller: 'the currencies you have set up'), and S02-V-976 was added under S02-VP-42, the buyer ('allow customers to choose among the currencies you have set up').
+- S02-V-857 (S02-VP-74, was `not covered`): replaced by the seller, 'You can add a selector to a theme' (S02-BC-323 to S02-BC-326, S02-BC-328, S02-BC-329); added S02-V-974, the buyer (S02-BC-323, S02-BC-326), and S02-V-975, the platform (S02-BC-327, S02-BC-329). S02-BC-323 to S02-BC-326 give no answer under S02-VP-73: they say who adds and uses the storefront selector, not what the buyer's market is taken per.
+- S02-V-862 (S02-VP-79, was `not covered`): replaced by the seller, 'Go to Settings › Store profile to update or change your store's contact information.' (S02-BC-308 to S02-BC-313, S02-BC-315 to S02-BC-321); added S02-V-977, the platform (S02-BC-316's 'By default', S02-BC-317's fallback, a reading). S02-BC-307, S02-BC-308 to S02-BC-316, S02-BC-320 and S02-BC-321 joined S02-V-847 (S02-VP-68, a market). The leads placed under other points they answer: S02-BC-314 joined S02-V-863 (store status), S02-V-827 (storefront design: 'logo and favicon') and S02-V-846 (locations: 'inventory rules'); S02-BC-321 joined S02-V-863 and S02-V-864 (store status), S02-V-858 and S02-V-867 (privacy and consent: 'customer privacy'), S02-V-820 and S02-V-821 (products: 'search settings', as the first pass read them); S02-BC-319 and S02-BC-320 joined S02-V-866 (messages to buyers, the seller), and S02-BC-320 joined S02-V-865 (a market: 'specify a store email address per storefront').
+
+### Statements noted (rule 2)
+
+- S02-BC-343 (f): defines user groups ('Named, reusable bundles of access'); names neither what staff access takes its value per nor who sets it
+- S02-BC-347 (f): says each of a store's users 'should have their own account, with permissions limited to only their areas of responsibility'; names neither what staff access takes its value per (a market, a buyer's country, the whole store) nor who sets it
+- S02-BC-349 (f): names a staff permission, Create Channels ('Add channels in the Channel Manager'), which gates creating a channel, RD2's question of who creates a market; names neither what staff access takes its value per nor who sets it
+- S02-BC-350 (f): names a staff permission, Delete Channels ('Delete channels from the Channel Manager'), which gates removing a channel, RD2's question; names neither what staff access takes its value per nor who sets it
+- S02-BC-184 (f): the format of the Carts API's locale field ('supports language, script, and region codes in the ISO-639 standard format'); names neither what a setting takes its value per nor who sets it
+- S02-BC-186 (f): the lead-in of the channel settings webhooks ('The following settings webhook events fire in response to actions that affect a specific channel on a store'): settings in general, of no one kind of setting, as RD3-3 noted S02-BC-097 to S02-BC-102
+- S02-BC-215 (f): 'Returns metadata about the global settings for a store. Some of these values are independently configurable on a per-storefront or per-channel basis.': the store's settings in general, of no one kind of setting
+
+### `place` tasks: where the statements went
+
+- S02-BC-163, S02-BC-164, S02-BC-171, S02-BC-172, S02-BC-174 (Catalyst's multi-storefront overview): language, currency, domain and payment methods per channel, joined to S02-V-815, S02-V-809, S02-V-818, S02-V-840 (a market); S02-BC-172 and S02-BC-173 to S02-V-819 (the seller, domains), S02-BC-172 to S02-V-817, S02-V-812, S02-V-841 (the seller: 'where you want to personalize the language, currency, payment methods'); S02-BC-174 and S02-BC-175 to S02-V-857 (the seller, market selection: 'mapping locales to BigCommerce channels').
+- S02-BC-165 ('manage localization settings and content for each storefront'): its localization settings joined S02-V-860 (units) and S02-V-871 (the store's country), a market.
+- S02-BC-166 to S02-BC-170, runs of one list ('The storefront content to localize includes the following'), read with S02-BC-165, of the same page, as content set per storefront: products and categories (S02-V-820), currency (S02-V-809), pricing via price lists (S02-V-822), date and physical dimension formats (S02-V-860), checkout (S02-V-830), promotions (S02-V-825), emails (S02-V-865), payment methods (S02-V-840), shipping options (S02-V-836), tax settings (S02-V-833).
+- S02-BC-175 (catalog and pricing 'assigned to storefront channels'): S02-V-820, S02-V-822 (a market), S02-V-821, S02-V-824 (the seller).
+- S02-BC-176, under (f) and (g) ('Other features, like tax, belong to the global store and require that you create zones, or regions, where you want tax rules to apply'): S02-V-978 added under S02-VP-57, the whole store, `answers` alone; joined S02-V-832 (the buyer's country, tax zones as the first pass read them) and S02-V-834 (the seller).
+- S02-BC-179, S02-BC-183, S02-BC-189, S02-BC-190, S02-BC-286 (locales per storefront or channel): S02-V-815 (a market); S02-BC-179, S02-BC-183, S02-BC-286 also S02-V-817 (the seller).
+- S02-BC-180 (US and Swiss products per channel): S02-V-820, S02-V-821.
+- S02-BC-181 ('Currencies must be **Visible** on the storefront in the global settings'): S02-V-811 (the whole store). S02-BC-182, S02-BC-187, S02-BC-245 (currency per channel): S02-V-809; S02-BC-182 and S02-BC-245 also S02-V-812 (the seller).
+- S02-BC-185, under (g) ('you cannot have different warehouse locations and inventory service different storefront channels'): S02-V-979 added under S02-VP-67, the whole store, `answers` alone.
+- S02-BC-188, S02-BC-209, S02-BC-259 (the store profile, global or per channel): S02-V-847 (a market, contact information); S02-BC-209 and S02-BC-259 also S02-V-862 (the seller).
+- S02-BC-191 to S02-BC-204 (the channel settings webhooks, 'that affect the specified channel', read as the first pass read S02-BC-043): logo, favicon, SEO and robots under storefront design (S02-V-827); checkout and customer settings (S02-V-830); search, category, product, catalog settings and search context filters under products (S02-V-820); inventory under locations (S02-V-846); security and privacy settings under privacy and consent (S02-V-858).
+- S02-BC-224 (Stripe Adaptive Pricing: 'shoppers can complete orders in their local currency'): S02-V-810 (the buyer's country) and S02-V-814 (Stripe).
+- S02-BC-246, S02-BC-248 (tax by the countries and subdivisions targeted, and price display per tax zone): S02-V-832 (the buyer's country), S02-V-834 (the seller); S02-V-980 added under S02-VP-58, the automatic tax provider ('you want the provider to calculate tax for').
+- S02-BC-253 ('The default country setting determines which payment methods are available to be set up on your store'): S02-V-839 (the store's own country, a reading of the default country); with S02-BC-285, S02-V-983 added under S02-VP-77, the store's own country ('the standard formats for your store’s default country').
+- S02-BC-255: S02-V-981 added under S02-VP-44, the Manage Settings permission ('To view and manage languages').
+- S02-BC-256, S02-BC-257 (localization settings per channel): S02-V-860 and S02-V-871 (a market).
+- S02-BC-268: S02-V-982 added under S02-VP-54, the Edit Channels and Store Design permissions that gate the Theme Marketplace and Edit Theme Files.
+- S02-BC-287 (PayPal translates its payment methods by the shopper's location): S02-V-986 added under S02-VP-43 (the buyer's country); S02-V-838 (the buyer's country, payment methods); S02-V-968 (the platform, S02-VP-44); S02-V-987 added under S02-VP-44 and S02-V-989 under S02-VP-62 (PayPal); S02-V-988 added under S02-VP-62 (the platform: 'automatically translated by BigCommerce').
+- S02-BC-288 to S02-BC-291 (a new store's content in the native language of the country it is based in, and the list of those languages, read together as one list): S02-V-985 added under S02-VP-43, the store's own country; S02-BC-288 also S02-V-968 (the platform: 'by default').
+- S02-BC-292, under (g) ('settings like measurement units and factoring dimension are applied globally', answering whether they apply per product): S02-V-984 added under S02-VP-77, the whole store, `answers` alone. S02-V-860 holds S02-BC-256's 'configure ... physical dimensions ... separately per channel': both are rows.
+- S02-BC-295 (invoice email templates per storefront, or 'Global (storefront defaults)'): S02-V-865 (a market), S02-V-866 (the seller).
+
+### Candidates not placed
+
+Each of these statements is placed under another point; these candidates are not:
+- S02-BC-168's 'Order statuses', among the storefront content to localize: of none of rule 1's kinds, and the second pass raises no point.
+- S02-BC-165's 'content': settings in general.
+- S02-BC-224's 'payouts to your account are settled in your default currency': payouts, (c)'s kind, not a setting under (f), as RD3-1 and RD3-3 read payouts.
+- S02-BC-257's Edit Channels permission for a channel's localization settings: S02-VP-77 and S02-VP-85 ask only what the value is taken per, and no point asks who sets units or the store's country.
+- S02-BC-246's 'Basic Tax is then used for all regions that are not targeted by the provider', S02-BC-288's 'All other countries and languages require theme lang file customization', S02-BC-302's 'UK customers must manually enter their postcode': they name no party that sets the setting.
+- S02-BC-323's 'multiple storefronts that target specific shopper segments, regions, or brands': RD2's question.
+
+### Words searched for
+
+None: the second pass raises no point, so no search for earlier platforms' rows was run.
+
+### Problems with the brief or the tools
+
+- **`done` prints nothing.** `method/variants_edit.py ... done` writes its row to `b/RD3/done.tsv` and prints nothing; the rows were checked in the file.
+- **Joins to a row with `term`.** S02-BC-176 is under (f) and (g); joined to S02-V-832 and S02-V-834 for its (f) half, rows that take `answers;term`. Its (g) half is S02-V-978, `answers` alone.
+- **S02-BC-322 among S02-VP-73's leads.** It is a currency converter by the visitor's IP address; BigCommerce's market is a channel, so it is placed under currency, not market selection.
+- **Leads placed under several points.** The revisits placed leads under every point they answer, as rule 2 asks, so some rows of points without a task changed by a join or gained a row (listed above); no row was replaced or removed outside a revisit.
+
+## Second pass, RD3-S1: shopify, bullets f and g
+
+Shopify's tasks in `b/second-pass/RD3/worklist.tsv`: eleven revisits, then the `place` tasks, then the rereads. A market is read as RD3-1 read it ('a set of customers that you define in your store', `terms.tsv`, with its types). Every new row takes `answers`: rows are compared with a statement of another platform in the point's `raised_by` where there is one (rule 5), and no term, identifier or definition is shared with it unless said.
+
+### Revisit S02-V-662 (S02-VP-69, was `gap` S02-SH-G04)
+
+- Replaced by `gap` S02-SH-G06, the gap `why` names; S02-SH-G04 was settled by gap-closing, and goes. Every answer the leads give under S02-VP-69 is one Shopify's rows hold: S02-SH-653, S02-SH-656, S02-SH-658, S02-SH-659, S02-SH-661, S02-SH-663, S02-SH-664 joined S02-V-660 (the buyer's country); S02-SH-653, under (f) and (g), joined S02-V-661 (the whole store, its (g) half).
+- Under S02-VP-70: S02-SH-652 and S02-SH-658 joined S02-V-663 (the seller; S02-SH-652 a reading of its identifier, 'Editing the checkout form options'); S02-SH-653 and S02-SH-656 joined S02-V-664 (the platform; S02-SH-656's 'always active on your store' a reading); S02-V-990 added, no one (S02-SH-653: 'depends on the customer's country or region and can't be changed'); S02-V-991 added, Managed Markets (S02-SH-657: 'Managed Markets checks whether the address that your customer adds during checkout is valid', a reading of checking as applying the validation; scope Managed Markets).
+- S02-SH-665 to S02-SH-687 are runs of one list: the address service's answer to the admin's Edit business details page, by their scope. The form they format is the store's address, not the buyer's, so under S02-VP-69 their X fails the role test; they joined S02-V-674 (S02-VP-76, the store's own country), the answer RD3-1 gave from the same page's captured forms.
+- The additional tax fields (S02-SH-648 to S02-SH-651, S02-SH-654) are fields of checkout 'grouped with the payment details in a section titled Additional Information', not of the address form: they are placed under checkout (S02-VP-55, S02-VP-56). S02-V-992 added, the buyer's country (S02-SH-648, S02-SH-650, S02-SH-651; S02-SH-654's 'vary checkout fields by country' a reading of whose country); S02-V-993, the store's own country (S02-SH-650: 'Italy Destination is Italy, shop billing country is Italy', the store's billing address by rule 1); S02-V-994, the whole store (S02-SH-653 (g), 'the Customer information settings apply to every country and market that you sell to', and S02-SH-649, 'activated or deactivated for all applicable countries and regions together'); S02-SH-652 joined S02-V-632 (the seller, a reading of its identifier); S02-V-995 added, the platform (S02-SH-649: 'activated by default for all stores', changed through Shopify Support; S02-SH-651); S02-V-996, an app (S02-SH-654: 'you need an app that customizes the information, shipping, and payment pages of checkout').
+- S02-SH-655 (the Marketing opt-in section): S02-V-997 added under S02-VP-75, the buyer's country ('which customer regions have the email marketing consent checkbox preselected'); joined S02-V-747 (S02-VP-84, the seller: 'You can manually choose the customer regions'); S02-V-998 added under S02-VP-84, the platform ('chosen based on the latest recommendations from Shopify. These automatic recommendations').
+
+Statements noted (rule 2):
+- S02-SH-647 (f): names the cases in which additional address fields aren't available or required (accelerated checkout such as PayPal, renamed labels, apps that read or edit addresses); names neither what the address form's value is taken per nor who sets it
+- S02-SH-660 (f): says how the platform parses and merges the additional fields' data (the library Worldwide); names neither what the address form's value is taken per nor who sets it
+- S02-SH-662 (f): lists the modes an address form field takes ('IGNORED', 'OPTIONAL', 'REQUIRED'); names neither what a field's mode is taken per nor who sets it
+- S02-SH-688 (f): the address service's answer to a buyer checkout lists each country's name, code and phone prefix only; it shows no address field, format or validation per country, nor who sets one
+
+### Revisit S02-V-733 (S02-VP-78, was `not covered`)
+
+- Replaced by the seller, 'You can add, deactivate, reactivate, and delete your locations from the Locations settings in your Shopify admin' (S02-SH-844, S02-SH-845, S02-SH-847, S02-SH-848, S02-SH-850, S02-SH-853, S02-SH-860, S02-SH-861, S02-SH-862, S02-SH-905 to S02-SH-907, S02-SH-938, S02-SH-943); added S02-V-1002, the platform ('activated by default for each new location', S02-SH-847, S02-SH-848, S02-SH-850, S02-SH-851), and S02-V-1003, third-party fulfillment service apps ('can create and manage their own locations', S02-SH-910, S02-SH-913). Compared with S02-SA-033 in `raised_by`: Shopify's 'location' (الموقع, `terms.tsv`) is not Salla's الفروع, so `answers` alone.
+- Under S02-VP-67: S02-SH-850 to S02-SH-852 joined S02-V-657 (a market: 'Locations within the same market as the shipping address are prioritized'); S02-V-1004 added, the whole store, a reading of the store's one default location (S02-SH-862).
+- Leads placed under the other points they answer: S02-SH-920 joined S02-V-603 (the whole store: POS 'transactions process in your store’s default currency', scope one business entity), S02-V-614 and S02-V-620 (a market: 'Retail markets still control catalog and price rules'); S02-SH-924 joined S02-V-614, S02-V-620, S02-V-618, S02-V-622 ('You assign catalogs to a Region market'); S02-SH-921 joined S02-V-600 and S02-V-649 (a market: 'The entity assigned to each retail location determines the currency', read with Shopify's term 'Retail markets use POS locations as their condition'); S02-SH-934 joined S02-V-600 and S02-V-604 ('You can configure the currency used at checkout with Retail markets'); S02-SH-935 joined S02-V-602 (the store's own country: 'depending on your store's location') and S02-V-605 (the platform: 'apply automatically'); S02-SH-926 joined S02-V-639, S02-V-642, S02-V-643; S02-SH-927 joined S02-V-639; S02-SH-938 joined S02-V-642; S02-SH-939 joined S02-V-640 and S02-V-642; S02-SH-940 and S02-SH-941 joined S02-V-633 and S02-V-635 (duties, by market). S02-SH-893 is placed in the revisit of S02-V-735 (contact details), and S02-SH-942 in the revisit of S02-V-745 (messages to buyers).
+
+Statements noted (rule 2):
+- S02-SH-846 (f): says which apps are treated as locations; names neither what locations take their value per nor who sets them
+- S02-SH-854 (f): the POS subscription plan chosen per location by the account owner is the platform's fees, a setting of the platform's account, not of the store (rule 1)
+- S02-SH-855 (f): a rule the merchant must follow by the country a POS transaction is processed in; names no setting of the store and who sets it
+- S02-SH-908 (f): shows one location's POS devices, subscription and staff; names neither what locations take their value per nor who sets them
+- S02-SH-909 (f): defines a location ('A physical location where merchants store and fulfill inventory'); names neither what locations take their value per nor who sets them
+- S02-SH-911 (f): the API mutation that adds a location names no party that adds it (rule 4: an API alone names no party); its 'you' is who stocks inventory
+- S02-SH-912 (f): what a location must hold ('a name and address with at least a country code'); names neither what locations take their value per nor who sets them
+- S02-SH-923 (f): a requirement on the payout currency of a location's entity: payouts, (c)'s kind, not a setting under (f)
+- S02-SH-925 (f): names market settings in general ('different market settings to retail and online customers'), of no one kind of setting
+- S02-SH-928 (f): a legal requirement on which entity processes a POS return in five countries; names no setting's value per market and no party that sets it (rule 4: a party that requires a value isn't who sets it)
+- S02-SH-929 (f): what POS receipts include by the country or province of a location, a place the store sells at (rule 1), none of the four phrases; names no party that sets it
+- S02-SH-930 (f): a restriction by the country of a retail location (Spain), a place the store sells at (rule 1), none of the four phrases; its 'You can't sell' names only who is kept out
+- S02-SH-931 (f): where the merchant's obligation to collect tax starts (its default location, where it operates from), RD1's (c); names no setting's value per market and no party that sets one
+- S02-SH-932 (f): what buying the platform's shipping labels requires (an eligible fulfillment location, the store based in the same country): a service of the platform, (c)'s kind, not a setting under (f)
+- S02-SH-933 (f): as S02-SH-932, for Evri and DPD labels: a service of the platform, (c)'s kind, not a setting under (f)
+- S02-SH-936 (f): when additional cash rounding rules apply (by when the store was created, or its first retail location in a listed country, a place the store sells at): none of the four phrases; names no party that sets them
+
+### Revisit S02-V-735 (S02-VP-79, was `not covered`)
+
+- Replaced by the seller, 'You can update your store's name, email address, and phone number' (S02-SH-809 to S02-SH-815, S02-SH-817, S02-SH-821 to S02-SH-823, S02-SH-825 to S02-SH-827, S02-SH-829, S02-SH-830, S02-SH-832, S02-SH-833, S02-SH-835 to S02-SH-837, S02-SH-840 to S02-SH-843, S02-SH-879, S02-SH-880, S02-SH-885, S02-SH-887, S02-SH-894, S02-SH-895, S02-SH-897 to S02-SH-899, S02-SH-902, S02-SH-905). A requirement on the merchant to show its contact information ('you must provide', 'mandatory for merchants selling in the EU') is read as naming the merchant as who sets it; the law or terms that require it are not who sets it (rule 4). Added S02-V-1006, the platform: automated policies and defaults (S02-SH-815, S02-SH-826, S02-SH-890, S02-SH-900), and, a reading, the platform's fallbacks (S02-SH-817, S02-SH-819, S02-SH-893), as RD3-S5 read S02-BC-317. Compared with S02-SA-038 in `raised_by`: no shared term, so `answers` alone.
+- Under S02-VP-68: S02-SH-809, S02-SH-811, S02-SH-816 to S02-SH-819, S02-SH-879, S02-SH-880, S02-SH-885, S02-SH-895, S02-SH-901 joined S02-V-658 (the whole store: one value of each in Settings > General > Store contact details, a reading as RD3-1's).
+- Leads placed under other points: S02-SH-883 joined S02-V-602 (currency, the store's own country: 'set based on the business country selected in Business details'; passive, so no `who sets` answer); S02-SH-894 joined S02-V-604 (the seller, 'store currency'); S02-SH-820 joined S02-V-609 (language, the seller: 'review the policy content available to customers in each language'). S02-SH-889 and S02-SH-892 are placed in the revisit of S02-V-745 (messages to buyers). S02-SH-823 also names a requirement by where the merchant is located or ships to; a requirement, not a value the store holds, so it is placed only under the seller.
+
+Statements noted (rule 2):
+- S02-SH-839 (f): a legal requirement on what seller information must be displayed (INFORM Consumers Act), in the passive voice; names no party that sets it, nor what it is taken per
+- S02-SH-882 (f): a renamed section ('Billing address' to 'Store address'); names neither what the contact information takes its value per nor who sets it
+- S02-SH-888 (f): says the account's email is separate from the store email; names neither what the contact information takes its value per nor who sets it
+- S02-SH-896 (f): lists the Liquid variables a privacy policy takes ('{{address}} Store address'); names neither what the contact information takes its value per nor who sets it
+- S02-SH-903 (f): names a policy type ('CONTACT_INFORMATION The contact information.'); names neither what it takes its value per nor who sets it
+- S02-SH-904 (f): the API mutation that updates a policy names no party that sets it (rule 4)
+
+### Revisits S02-V-737 and S02-V-740 (S02-VP-80, S02-VP-81, were `not covered`)
+
+- S02-V-737 replaced by the whole store, 'In private mode, all of your online store's pages are hidden from visitors and search engines' (S02-SH-719, S02-SH-752, S02-SH-756, S02-SH-759, S02-SH-775, S02-SH-778, S02-SH-781; S02-SH-726 a reading of its identifier). No lead sets the store's access per market or per buyer's country. S02-SH-723 and S02-SH-783 restrict access to B2B customers, a group of buyers, none of the four phrases: placed under S02-VP-81 only.
+- S02-V-740 replaced by the seller, 'You can manage access to your online store by activating or deactivating private mode' (S02-SH-719 to S02-SH-724, S02-SH-749, S02-SH-750, S02-SH-753 to S02-SH-756, S02-SH-760, S02-SH-776, S02-SH-777, S02-SH-779, S02-SH-780, S02-SH-783 to S02-SH-785); added S02-V-1013, the platform (by default, automatically: S02-SH-720, S02-SH-759, S02-SH-775, S02-SH-783; S02-SH-778's frozen store, a reading); S02-V-1014, the store owner (S02-SH-758, S02-SH-781); S02-V-1015, the Manage settings permission (S02-SH-727, a reading of its 'Preferences page').
+- Compared with S02-SA-063 and S02-SA-064 in `raised_by`: Shopify's 'private mode' and Salla's maintenance share no term, so `answers` alone.
+
+Statements noted (rule 2):
+- S02-SH-725 (f): defines the password page ('the landing page displayed when ... private mode is active'); names neither what the store's status takes its value per nor who sets it
+- S02-SH-751 (f): says the platform's subscription charges continue while access is restricted: the platform's fees, not a setting under (f)
+- S02-SH-772 (f): a store's status in the organization's settings (active or pending Shopify Plus contract addition) is a setting of the platform's account, not of the store (rule 1)
+- S02-SH-774 (f): as S02-SH-772, the statuses Active and Pending contract addition of the organization's stores: a setting of the platform's account, not of the store (rule 1)
+
+### Revisits S02-V-742 and S02-V-745 (S02-VP-82, S02-VP-83, were `not covered`)
+
+- S02-V-742 replaced by the buyer's country, 'you can send SMS marketing messages only to customers located in the following countries' (S02-SH-956 and S02-SH-957, runs of one list; S02-SH-946 to S02-SH-949, S02-SH-955, S02-SH-963, S02-SH-965 to S02-SH-970, S02-SH-972; S02-SH-872 a reading of whose countries). Added S02-V-1021, the store's own country ('if your business address is in a supported country', S02-SH-869; 'If your store is located in Brazil or Indonesia', S02-SH-965, S02-SH-966; S02-SH-968 to S02-SH-970), and S02-V-1022, the whole store, a reading of the store's one sender name and sender email (S02-SH-871, S02-SH-879).
+- S02-V-745 replaced by the seller, 'You can automatically send an email to customers after they have abandoned their checkout' (S02-SH-866 to S02-SH-869, S02-SH-873 to S02-SH-879, S02-SH-914 to S02-SH-919, S02-SH-942, S02-SH-944 to S02-SH-946, S02-SH-948, S02-SH-951, S02-SH-963, S02-SH-965); added S02-V-1023, the platform ('Most customer notifications are sent automatically', S02-SH-863, S02-SH-874, S02-SH-877, S02-SH-889, S02-SH-890, S02-SH-942; S02-SH-871, S02-SH-872 a reading); S02-V-1024, no one (S02-SH-863: 'can't be deactivated'); S02-V-1025, the buyer (S02-SH-864: 'can only be turned off through a customer's Shop app settings'); S02-V-1026, a third-party app (S02-SH-958). S02-SH-942 (POS receipts in Italy, from the revisit of S02-V-733) and S02-SH-889 (from the revisit of S02-V-735) are placed here; S02-SH-942's 'Shopify POS locations in Italy' is a place the store sells at (rule 1), so it answers only who sets.
+- S02-SH-874's 'the language that they placed their order in' and S02-SH-945's customers 'within a certain distance of a specific retail location' name what the message differs by, none of the four phrases: placed only under S02-VP-83.
+- Compared with S02-SA-259 in `raised_by`: no shared term, so `answers` alone.
+
+Statements noted (rule 2):
+- S02-SH-892 (f): names which addresses a Shopify Flow invoice's sender email can be ('the store email or one of the staff account emails'); names neither what it is taken per nor who sets it
+- S02-SH-950 (f): a charge for each toll-free number used for SMS marketing: the platform's fees, not a setting under (f)
+- S02-SH-952 (f): says there are additional requirements to send SMS marketing to customers in some regions: requirements, not a value the store holds; names no party that sets one
+- S02-SH-953 (f): a legal requirement (the ePrivacy Directive) on stores located in or sending to the European Union; a party that requires isn't who sets (rule 4), and no value of the store is named
+- S02-SH-954 (f): as S02-SH-953, for the United Kingdom's Privacy and Electronic Communications Regulations
+- S02-SH-959 (f): charges for SMS marketing by region: the platform's fees, not a setting under (f)
+- S02-SH-960 (f): the per-message charge for SMS marketing: the platform's fees, not a setting under (f)
+- S02-SH-961 (f): SMS marketing prices per country, runs of one list with S02-SH-962: the platform's fees, not a setting under (f)
+- S02-SH-962 (f): as S02-SH-961, the list's last run: the platform's fees
+- S02-SH-971 (f): WhatsApp messages are charged per message by region: the platform's fees, not a setting under (f)
+- S02-SH-973 (f): WhatsApp prices per region, runs of one list with S02-SH-974 to S02-SH-977: the platform's fees, not a setting under (f)
+- S02-SH-974 (f): as S02-SH-973: the platform's fees
+- S02-SH-975 (f): as S02-SH-973: the platform's fees
+- S02-SH-976 (f): as S02-SH-973: the platform's fees
+- S02-SH-977 (f): as S02-SH-973: the platform's fees
+
+### Revisits S02-V-877 and S02-V-881 (S02-VP-87, S02-VP-88, were `not covered`)
+
+- S02-V-877 replaced by a market, 'In markets configured to require consent (usually the European Economic Area (EEA) and the United Kingdom), web pixels run only when visitors have provided the permissions required' (S02-SH-731); S02-V-1027 added, the buyer's country (S02-SH-803, S02-SH-804: 'In configured cookie banner regions', 'the consent obtained in these regions', a reading of the regions as the visitors'; S02-SH-801: 'customers, such as those located in the European Economic Area').
+- S02-V-881 replaced by the seller, 'You can add and manage pixels in the Customer events section of your Shopify admin' (S02-SH-728, S02-SH-763 to S02-SH-765, S02-SH-767, S02-SH-769, S02-SH-771, S02-SH-794 to S02-SH-796, S02-SH-798 to S02-SH-800, S02-SH-805 to S02-SH-808); added S02-V-1028, the platform (S02-SH-730, S02-SH-731, S02-SH-769, S02-SH-771); S02-V-1029, apps and the third-party app partner (S02-SH-729, S02-SH-768); S02-V-1030, a developer (S02-SH-729, rule 4); S02-V-1031, the buyer (S02-SH-731, S02-SH-732, S02-SH-802); S02-V-1032, the Manage and add custom pixels permission (S02-SH-735); S02-V-1033, the Manage and install apps and channels permission (S02-SH-766); S02-V-1034, no one (S02-SH-770: 'can't be optimized').
+- S02-SH-797 ('Google Analytics can't track events until you deactivate private mode') joined S02-V-740 (S02-VP-81, the seller of the store's access).
+- Compared with S02-BC-144 and S02-BC-145 in `raised_by`: Shopify's market and pixels are not BigCommerce's storefront and web analytics as terms, so `answers` alone.
+
+Statements noted (rule 2):
+- S02-SH-734 (f): the View customer events permission gates viewing pixels, not setting them; names neither what the analytics take their value per nor who sets them
+- S02-SH-736 (f): the API object for web pixels names no party that sets them (rule 4: an API alone names no party); its 'you' is the API's caller, unnamed
+- S02-SH-737 (f): the API field for a web pixel's settings names neither what they are taken per nor who sets them
+- S02-SH-738 (f): pixels don't fire in Google AI Mode and Gemini's direct checkout: a fact of one sales channel's checkout, none of the four phrases; names no party that sets it
+- S02-SH-739 (f): as S02-SH-738, for Meta's direct checkout
+- S02-SH-740 (f): as S02-SH-738, for Microsoft Copilot's direct checkout
+
+### Revisits S02-V-885 and S02-V-889 (S02-VP-89, S02-VP-90, were `not covered`)
+
+- S02-V-885 replaced by the whole store, 'You can turn the notification off for your whole store, or for individual recipients' (S02-SH-787). A recipient is a staff member, none of the four phrases. S02-SH-744's notifications 'for orders from a particular POS location or from the web' name a place the store sells at, or a channel, not a market: placed only under S02-VP-90.
+- S02-V-889 replaced by the seller, 'You can create and edit email notifications to let you or staff know' (S02-SH-741, S02-SH-742, S02-SH-744 to S02-SH-747, S02-SH-761, S02-SH-762, S02-SH-786 to S02-SH-793; S02-SH-792 and S02-SH-793 a reading of the merchant's Shopify Flow workflows); added S02-V-1035, the platform (by default: S02-SH-741, S02-SH-742, S02-SH-788; S02-SH-791 a reading), and S02-V-1036, the Orders and Manage settings permissions (S02-SH-743, S02-SH-748). S02-SH-786's Disputes > Manage permission gates who receives the notification, not who sets it: no row.
+- S02-SH-747 and S02-SH-748 name the notifications sent to customers too: S02-SH-747 joined S02-V-745 (S02-VP-83, the seller), and S02-V-1037 was added under S02-VP-83, the Manage settings permission (S02-SH-748).
+- Compared with S02-BC-144 in `raised_by`: no shared term, so `answers` alone.
+
+### `place` tasks: where the statements went
+
+- S02-SH-604 (channel markets: 'channel-specific product availability, pricing, or currency'): S02-V-614, S02-V-620, S02-V-600 (a market), S02-V-618, S02-V-622, S02-V-604 (the seller). Its 'Merchants can't configure web presence, domains, or discounts for channel markets' gives no answer: it names what a channel market can't hold, not what the setting is taken per.
+- S02-SH-608 (MarketCatalog: 'distinct shopping experiences for different geographic regions or customer segments'): S02-V-614, S02-V-620.
+- S02-SH-610 (Retail markets: 'Set different prices for different retail locations'): S02-V-620, S02-V-622.
+- S02-SH-631, S02-SH-634, S02-SH-636, S02-SH-638, S02-SH-641 (Przelewy24, MB WAY, Bizum): S02-V-645 (a market: 'an active market that includes Portugal with EUR'); S02-SH-634 and S02-SH-638 also S02-V-646 (the buyer's country: 'Your customers must be located in Portugal'); S02-V-1048 added under S02-VP-61, the store's own country ('If your store isn't located in Portugal', S02-SH-636, S02-SH-641; S02-SH-631's 'If your Shopify Payments account is in Poland'); S02-SH-636 and S02-SH-641 joined S02-V-647 (the seller: 'You might need to change your currency or checkout settings').
+- S02-SH-646 ('You can sell products from multiple business entities on a single store'): S02-V-651 (the seller).
+- S02-SH-689, S02-SH-693 (customizing theme and checkout for each market): S02-V-627, S02-V-631 (a market), S02-V-629, S02-V-632 (the seller); S02-SH-689's B2B catalogs also S02-V-614, S02-V-620.
+- S02-SH-698 ('Custom pricing by market'): S02-V-620, S02-V-622; its 'setting manual exchange rates' S02-V-604.
+- S02-SH-710, S02-SH-711 (the entity by POS location, and regional markets for each country's entity): S02-V-649 (a market; S02-SH-710 read with Shopify's term 'Retail markets use POS locations as their condition'); S02-SH-711 and S02-SH-712 also S02-V-651 (the seller). S02-SH-710's 'staff can't manually change the entity during checkout' names only who is kept out.
+- S02-SH-714, S02-SH-715 (cookie banner regions): S02-V-997 (the buyer's country), S02-V-673 (a market: 'based on your configured markets', 'if you have active markets in these regions'), S02-V-747 (the seller), S02-SH-715 also S02-V-998 (the platform: 'we will automatically configure your cookie banner'); S02-V-1052 added under S02-VP-75, the whole store (S02-SH-714: 'Your setting for Shopify Network Intelligence takes effect globally').
+- S02-SH-978 to S02-SH-988, S02-SH-990 to S02-SH-994 (Settings > Taxes and duties): the buyer's country (S02-V-634: tax regions, S02-SH-979 to S02-SH-981 runs of one list; 'sold to European customers'; 'shipments to the United States'), a market (S02-V-633: 'in markets with dynamic tax inclusion', 'Market Duties Taxes Canada', 'markets that have tax registration'), the seller (S02-V-635: the page's controls), the platform (S02-V-636: 'Automatically calculated for Canada, European Union, and United States'), Avalara (S02-V-638: S02-SH-986).
+- S02-SH-653, under (g): placed by S02-V-661 and S02-V-994 (the revisit of S02-V-662).
+
+Statements noted (rule 2):
+- S02-SH-621 (f): names which data protection laws apply to Shopify's processing (by the merchant's or customers' location): law, not a setting of the store; names no party that sets one
+- S02-SH-623 (f): a contractual obligation on the merchant to obtain consent where it or its customers are in the EEA, United Kingdom or Switzerland: an obligation, not a value the store holds; a party that requires isn't who sets (rule 4)
+- S02-SH-694 (f): names settings in general ('configure specific settings for each international region'), of no one kind of setting
+- S02-SH-695 (f): as S02-SH-694, for the Grow plan: settings in general, of no one kind of setting
+- S02-SH-703 (f): which B2B features each plan offers: conditions (h), not what a setting takes its value per or who sets it
+- S02-SH-704 (f): which cross-border features each plan offers: conditions (h), not what a setting takes its value per or who sets it
+- S02-SH-717 (f): the obligations the GDPR and equivalent laws impose by where a business is or whom it sells to: law, not a setting of the store; names no party that sets one
+
+### Rereads (rule 4, widened)
+
+- S02-SH-093 (f): left noted. Its permissions gate the Markets page, whose settings are of no one kind (settings in general); it names no setting it gates by kind.
+- S02-SH-156 (f): left noted. 'VIEW_CATALOGS' gates viewing catalogs, not setting them.
+- S02-SH-157, S02-SH-158 (f): placed. S02-V-1057 (S02-VP-48) and S02-V-1058 (S02-VP-50) added, the permission to create and edit catalogs ('"permissions":["CREATE_AND_EDIT_CATALOGS"]'; 'The user must have permission to create and edit catalogs'): a catalog sets a market's products and prices, as RD3-1 read Shopify's term.
+- S02-SH-159 (f): placed. S02-V-1059 (S02-VP-48) and S02-V-1060 (S02-VP-50) added, the permission to delete catalogs.
+- S02-SH-210 (f): placed. S02-V-1061 added under S02-VP-56, no one: 'no setting in your Shopify admin or your theme turns it off'. Its 'You can't hide or reword it' names who is kept out, as RD3-1 noted. The point's note says so.
+- S02-SH-213, S02-SH-214 (f): placed. S02-V-1062 added under S02-VP-64, the Manage payments settings permission, which gates updating and deactivating a market's Managed Markets (a reading of Managed Markets as the merchant of record it adds, as in the point's `x_words`).
+- S02-SH-242, S02-SH-244 (f), and S02-SH-244 (g): placed. Joined S02-V-990 (S02-VP-70, no one), with S02-SH-653's 'can't be changed'. S02-SH-242's 'You can't change which additional fields are included or whether a field is required' is read as no one can, since S02-SH-653 states the same requirement in the passive; S02-SH-244's 'can't be deactivated unless the store is on the Shopify Plus plan' is passive. Their placements under S02-VP-69 stand. The point's note says so.
+- S02-SH-294, S02-SH-380 (f): placed. S02-V-1063 added under S02-VP-60, the permissions that gate creating and updating a market's shipping option ('OVERVIEWS', 'REPORTS', 'PRODUCTS', 'DOMAINS', 'PREFERENCES', or 'VIEW_MARKETS' and 'CREATE_AND_EDIT_MARKETS').
+- S02-SH-571 (f): left noted. 'You will not be able to add region catalogs ... to a B2B market' is a rule on what a market may hold, RD2's question, not that no one sets the products or prices.
+
+### Candidates for a new point
+
+None. Every statement that answered (f)'s questions had an X of one of the points' kinds. The closest calls, placed by a reading: cash rounding on POS (S02-SH-934, S02-SH-935) under currency, as how amounts are paid in a currency; POS receipts printed automatically in Italy (S02-SH-942) under messages to buyers; Shopify Network Intelligence (S02-SH-714) under privacy and consent.
+
+### Words searched for
+
+None: the second pass raises no point, so no search for earlier platforms' rows was run.
+
+### Problems with the brief or the tools
+
+- **Leads that fail their point's role test.** S02-SH-665 to S02-SH-687, leads for the buyer's address (S02-VP-69), are the address service's answer to the admin's Edit business details page, the store's address: they are placed under S02-VP-76, where RD3-1 placed the same page's captured forms. S02-SH-G06, which names them, stays as the `gap` row of S02-VP-69.
+- **Values per location.** Many of Shopify's leads set a value per location: a POS location, a fulfillment location, a retail location's country. A location is a place the store sells at (rule 1), none of the four phrases. They are placed under a market only where Shopify's term ties a POS location to a market ('Retail markets use POS locations as their condition', `terms.tsv`); otherwise only their `who sets` half is placed, or they are noted.
+- **Points without a task.** The revisits and place tasks placed statements under every point they answer, so rows were joined or added under points with no task (S02-VP-41, 42, 47 to 50, 55, 56, 57 to 64, 67, 68, 70, 75, 76, 84). No row was replaced or removed outside a revisit.
+- **Ids.** RD3-S2 writes beside this part, so this part's new ids are not consecutive (S02-V-990 to S02-V-998, S02-V-1002 to S02-V-1006, S02-V-1013 to S02-V-1015, S02-V-1021 to S02-V-1037, S02-V-1048, S02-V-1052, S02-V-1057 to S02-V-1063).
+- **`done`** now prints what it recorded.
+- **Correction to the Ids line above:** this part's rows in that range are S02-V-1002 to S02-V-1004 and S02-V-1006; S02-V-1005 is not this part's.
+
+## Second pass, RD3-S2: woocommerce, bullet f
+
+WooCommerce's tasks under (f) in `b/second-pass/RD3/worklist.tsv`: 37 revisits, then 4 `place` tasks. Each row is compared with the statement in its point's `raised_by` from another platform (rule 5); every new row takes `answers` alone. This part places the (f) half of statements under (f) and (g): where that half answers a point, it is placed there, and their (g) half is left to RD3-S3. Some rows that this part wrote under a point's `the whole store` hold statements under (f) and (g) (S02-V-911, S02-V-941, S02-V-950), so RD3-S3 will find them already placed.
+
+How this part reads WooCommerce's new statements, beside the first pass's readings:
+- **A market.** A channel is among rule 1's markets, so the second pass reads three things as a market the store sells into: Point of Sale beside the online store (S02-WC-351 to S02-WC-355, S02-WC-380 to S02-WC-385); Google, by its 'Channel Visibility' (S02-WC-356, S02-WC-357, S02-WC-371); and the countries the store sells to, its allowed countries (S02-WC-278, S02-WC-279), as the first pass read 'define the regions you will sell ... to' as WooCommerce's market under (e). Each is a reading, marked in its row. The first pass's "no WooCommerce row takes `a market the store sells into`" no longer holds.
+- **Code.** As the first pass read it. Also, the default value that the code passes to its own filter (`apply_filters( '...', true )`) is read as the platform's, and marked as a reading (S02-WC-403, S02-WC-424, S02-WC-508).
+- **Parties named.** WordPress (S02-WC-326), developers (S02-WC-342, S02-WC-496, S02-WC-503), an extension or plugin (S02-WC-343, S02-WC-450, S02-WC-463 to S02-WC-467, S02-WC-498 to S02-WC-502), a hosting provider (S02-WC-500) and Affirm (S02-WC-319) are each their own answer. 'Store managers' (S02-WC-365) and 'you' in the platform's instructions to developers (S02-WC-345, S02-WC-414) are read as the seller, as the first pass read S02-WC-159. Roles and permissions that the statements say gate a setting are their own answers (rule 4).
+- **Notifications to the merchant.** The platform's inbox notes are read under S02-VP-89 and S02-VP-90. The extensions that the platform suggests or shows to the merchant by the store's country are noted, as the first pass noted S02-WC-001: they are (c)'s kinds, not a setting of the store.
+
+### Revisits: rows replaced or removed, and what took their place
+
+- S02-V-895 (S02-VP-41, was `gap` S02-WC-G05): replaced by the store's own country, S02-WC-292 (onboarding updates the store's currency from 'storeLocation', a reading of the minified code). S02-WC-318, S02-WC-320 and S02-WC-321 joined S02-V-927 (S02-VP-61, the buyer's country), and S02-V-1000 was added there: the store's own country ('your WooPayments account country', S02-WC-318, a reading).
+- S02-V-899 (S02-VP-42, was `gap` S02-WC-G05): removed. S02-WC-312, S02-WC-314 and S02-WC-315 joined the seller (S02-V-896); S02-WC-292 and the place task S02-WC-244 joined the platform (S02-V-897).
+- S02-V-900 (S02-VP-43, was `gap` S02-WC-G05): replaced by the whole store, S02-WC-326 ('a 100% complete translation for your language', a reading of 'your language' as the site's one language). S02-WC-319 was placed under S02-VP-62: S02-V-1001 added, Affirm ('Affirm may disable your access to their payment method').
+- S02-V-901 (S02-VP-44, was `gap` S02-WC-G05): replaced by the seller (S02-WC-324, S02-WC-325, S02-WC-312). S02-V-999 was added: WordPress (S02-WC-326).
+- S02-V-902, S02-V-903 (S02-VP-45, S02-VP-46, were `not covered`): replaced by `gap` S02-WC-G08.
+- S02-V-904 (S02-VP-47, was `not covered`): replaced by a market, the channel: Point of Sale beside the online store, and Google (S02-WC-351 to S02-WC-353, S02-WC-355 to S02-WC-357, a reading).
+- S02-V-905 (S02-VP-48, was `not covered`): replaced by the seller (S02-WC-346, S02-WC-348, S02-WC-351, S02-WC-352, S02-WC-354 to S02-WC-357, S02-WC-360). S02-V-1005 was added: the platform (S02-WC-354, S02-WC-357, S02-WC-348).
+- S02-V-910 (S02-VP-52, was `not covered`): replaced by the seller (S02-WC-361 to S02-WC-363, S02-WC-365, S02-WC-366, S02-WC-368, S02-WC-370, S02-WC-371, S02-WC-373, S02-WC-374). Three rows were added: S02-V-1009, the administrator or shop manager role (S02-WC-362, S02-WC-369); S02-V-1010, the buyer (S02-WC-364, S02-WC-374); S02-V-1011, the platform ('default' => 'yes', S02-WC-366). Also added: S02-V-1012 under S02-VP-51, a market (Show coupon on Google, S02-WC-371, a reading).
+- S02-V-911 (S02-VP-53, was `not covered`): replaced by the whole store ('apply site-wide', S02-WC-375, S02-WC-377). S02-WC-375, S02-WC-377, S02-WC-378 and S02-WC-379 joined the seller (S02-V-912, S02-VP-54).
+- S02-V-913 (S02-VP-55, was `not covered`): replaced by the buyer's country ('based on what country the shopper is in', S02-WC-344).
+- S02-V-914 (S02-VP-56, was `not covered`): replaced by the seller (S02-WC-345, S02-WC-342). Added S02-V-1007, developers (S02-WC-342), and S02-V-1008, an extension (S02-WC-343).
+- S02-V-929, S02-V-930 (S02-VP-63, S02-VP-64): left `not covered`. No lead under (f), no gap and no absence; S02-WC-274, S02-WC-275 and S02-WC-277 are under (g) only, and are RD3-S3's.
+- S02-V-931 (S02-VP-65): left `not covered`. No lead answers what returns and cancellations take their value per (S02-WC-278 and S02-WC-279 were placed under other points, and S02-WC-280, S02-WC-286 and S02-WC-287 noted), and there is no gap or absence. S02-WC-281 is under (g) only, and is RD3-S3's.
+- S02-V-932 (S02-VP-66, was `not covered`): replaced by the seller, 'enable the order withdrawal feature in the Advanced settings' (S02-WC-279, a lead of S02-V-931).
+- S02-V-933 (S02-VP-67, was `not covered`): replaced by the whole store ('available at checkout regardless of customer location', S02-WC-390). Added S02-V-1018, the buyer's country (the legacy local pickup method by shipping zone, S02-WC-392, S02-WC-390). Local pickup is also a delivery method (rule 1: a thing of two kinds goes under both), so S02-WC-390 and S02-WC-392 joined S02-V-922, and S02-WC-390 joined S02-V-924 (S02-VP-59).
+- S02-V-934 (S02-VP-68, was `not covered`): replaced by a market: Point of Sale's own store details, which take the store's base address until the seller changes them (S02-WC-380 to S02-WC-385, rule 4, a reading). Added S02-V-1016, the whole store (the email Store Address tag, S02-WC-388). S02-WC-386 and S02-WC-387 (the sender's 'From' name and address) are messages to buyers, so they were placed under S02-VP-83.
+- S02-V-937 (S02-VP-69, was `gap` S02-WC-G05): removed. S02-WC-304 to S02-WC-309 joined the buyer's country (S02-V-935): the postcode is validated by its address's country. Under S02-VP-70, S02-WC-303 to S02-WC-309 and S02-WC-327 ('our policy') joined the platform (S02-V-939), and S02-WC-328 ('custom snippets') joined the seller (S02-V-938).
+- S02-V-941 (S02-VP-71, was `not covered`): replaced by the whole store: the roles' capabilities reach all the store's settings, reports, products and orders, and none is by market or country (S02-WC-454, S02-WC-455, S02-WC-457 to S02-WC-462, S02-WC-471, S02-WC-472, S02-WC-474, S02-WC-475, a reading).
+- S02-V-942 (S02-VP-72, was `not covered`): replaced by the seller (S02-WC-451, S02-WC-452, S02-WC-463, S02-WC-464). Three rows were added: S02-V-1049, the platform (S02-WC-451, S02-WC-453, S02-WC-456, S02-WC-468 to S02-WC-472); S02-V-1050, an extension or plugin (S02-WC-463 to S02-WC-467); S02-V-1051, the Administrator role (S02-WC-461, S02-WC-473).
+- S02-V-943, S02-V-944 (S02-VP-73, S02-VP-74): left `not covered`. The leads give the default customer location, which the first pass read under taxes and shipping, not market selection, through WooCommerce's term 'Default customer location'. So S02-WC-397 joined S02-V-916 and S02-V-923 (the store's own country), S02-WC-399 joined S02-V-915 and S02-V-922 (the buyer's country), and S02-WC-397 to S02-WC-399 joined S02-V-919 and S02-V-926 (the platform). S02-WC-400 was noted. There is no gap or absence.
+- S02-V-945 (S02-VP-75, was `not covered`): replaced by the buyer's country, cookie consent asked of users in the EEA, UK and Switzerland (S02-WC-413, a lead of S02-V-957).
+- S02-V-947 (S02-VP-77, was `gap` S02-WC-G05): replaced by the store's own country (S02-WC-292: the measurement units are set from the store's location in onboarding).
+- S02-V-948 (S02-VP-78, was `not covered`): replaced by the seller (S02-WC-389, S02-WC-390, S02-WC-395, S02-WC-396). Added S02-V-1019, the manage_woocommerce capability of Shop Managers (S02-WC-394), and S02-V-1020, the platform (S02-WC-395, S02-WC-393).
+- S02-V-949 (S02-VP-79, was `not covered`): replaced by the seller (S02-WC-380 to S02-WC-384). Added S02-V-1017, the platform (the defaults of S02-WC-381 to S02-WC-385).
+- S02-V-950 (S02-VP-80, was `not covered`): replaced by the whole store: Coming soon or Live is one mode for the site or its store pages (S02-WC-476, S02-WC-478, S02-WC-480 to S02-WC-488, S02-WC-490, S02-WC-497, S02-WC-509).
+- S02-V-951 (S02-VP-81, was `not covered`): replaced by the seller (S02-WC-312, read as site visibility, and S02-WC-476, S02-WC-477, S02-WC-479, S02-WC-481, S02-WC-489, S02-WC-497, S02-WC-504 to S02-WC-506). Four rows were added: S02-V-1053, the platform (S02-WC-491 to S02-WC-495, S02-WC-508); S02-V-1054, another plugin or application (S02-WC-498, S02-WC-499, S02-WC-501, S02-WC-502); S02-V-1055, a hosting provider (S02-WC-500, S02-WC-496); S02-V-1056, developers (S02-WC-503, S02-WC-496).
+- S02-V-952 (S02-VP-82, was `not covered`): replaced by the whole store (customer emails 'in the store language', S02-WC-423).
+- S02-V-953 (S02-VP-83, was `not covered`): replaced by the seller (S02-WC-425, S02-WC-426, S02-WC-428, S02-WC-429, S02-WC-386, S02-WC-387). Added S02-V-1042, the platform (S02-WC-423, S02-WC-424, S02-WC-427, S02-WC-428, S02-WC-386, S02-WC-387), and S02-V-1043, the buyer (customers sign up, S02-WC-428, S02-WC-429).
+- S02-V-954 (S02-VP-84, was `not covered`): replaced by the buyer (S02-WC-448, S02-WC-413, S02-WC-415). Added S02-V-1046, the seller (S02-WC-415), and S02-V-1047, an extension (S02-WC-450, S02-WC-415).
+- S02-V-956 (S02-VP-86): left `not covered`. The leads are the extensions the platform suggests or shows to the merchant by the store's base country, and the merchant's WooCommerce.com subscriptions. All were noted, and there is no gap or absence.
+- S02-V-957 (S02-VP-87, was `not covered`): replaced by the buyer's country (S02-WC-413). Added S02-V-1038, the whole store (analytics in the store's default currency, S02-WC-408).
+- S02-V-958 (S02-VP-88, was `not covered`): replaced by the seller (S02-WC-401, S02-WC-404, S02-WC-406, S02-WC-409, S02-WC-411, S02-WC-412, S02-WC-414, S02-WC-415, S02-WC-440). Three rows were added: S02-V-1039, the platform (S02-WC-401, S02-WC-403, S02-WC-410, S02-WC-440); S02-V-1040, the buyer (S02-WC-402, S02-WC-413, S02-WC-415, S02-WC-448); S02-V-1041, the permission to manage WooCommerce (S02-WC-407).
+- S02-V-959 (S02-VP-89, was `not covered`): replaced by the store's own country (inbox notes by the base country, S02-WC-433, S02-WC-434). Added S02-V-1044, a market (the order withdrawal note, for stores whose allowed countries include the EU: S02-WC-278, S02-WC-279, S02-WC-510, a reading).
+- S02-V-960 (S02-VP-90, was `not covered`): replaced by the seller (S02-WC-430 to S02-WC-432, S02-WC-436 to S02-WC-439). Added S02-V-1045, the platform (S02-WC-430 to S02-WC-435, S02-WC-278, S02-WC-279, S02-WC-510).
+
+A gap named in no revisit's `why` (S02-WC-G05) was settled by gap-closing, and went with the rows it stood in.
+
+### `place` tasks
+
+- S02-WC-244 (update_store_currency_and_measurement_units()) joined S02-V-897 (S02-VP-42, the platform: `'woocommerce_currency' => $country_info['currency_code']`). Its words don't say whose country `$country_info` is, so it is not placed under S02-VP-41. Its units are listed below as a candidate.
+- S02-WC-271, S02-WC-272 and S02-WC-273 were noted. S02-WC-272 and S02-WC-273 are runs of one list (rule 5).
+
+### Statements noted (rule 2)
+
+- S02-WC-293 (f): saves the store's country ('woocommerce_default_country') from the location entered in onboarding, which is (b)'s question. Its words don't name the setting that `t(...)` sets from that location. S02-WC-292, which binds t to updateStoreCurrencyAndMeasurementUnits, has another identifier, so rule 5's Lists don't join them. It names no setting's value per market, and not who sets it
+- S02-WC-297 (f): the REST API's response includes 'detailed locale information' for a country, without saying whose country it is or which setting of the store takes it; as the first pass noted S02-WC-165
+- S02-WC-298 (f): the keys the REST API returns for each country ('currency_code', 'dimension_unit' and 'weight_unit' among them), without saying whose country it is or which setting of the store takes them; as S02-WC-165
+- S02-WC-299 (f): 'Default ISO4127 alpha-3 currency code for the country.', a field of the REST API's data for each country, without saying whose country it is or which setting of the store takes it; as S02-WC-165
+- S02-WC-300 (f): 'The unit weights are defined in for this country.'; as S02-WC-299
+- S02-WC-301 (f): 'The unit lengths are defined in for this country.'; as S02-WC-299
+- S02-WC-302 (f): the onboarding settings include the file i18n/locale-info.php ('localeInfo'); names no setting's value per market, and not who sets it
+- S02-WC-313 (f): a map of currencies by country in the legacy setup wizard ('$currency_by_country'), without saying whose country it is, that the store's currency takes it, or who sets it; as S02-WC-165
+- S02-WC-316 (f): MultilingualPress 'can display your content, products, and prices in multiple languages and currencies'; names neither what the languages or currencies take their value per nor who sets them
+- S02-WC-317 (f): the daily cutoff of WooPayments' payouts by the account's country ('each day starts at midnight in your local time zone'): payouts, of (c)'s kinds, not a setting of the store; as the first pass noted S02-WC-035
+- S02-WC-288 (f): the platform's default units, those of 'US' in i18n/locale-info.php ("$locale_info['US']['weight_unit']"). This answers who sets the units (the platform, a default the code sets), and no point asks who sets units and time zone: a candidate for a new point (below)
+- S02-WC-289 (f): 'This controls what unit you will define weights in.' answers who sets the units ('you', the seller), and no point asks it: a candidate for a new point (below)
+- S02-WC-291 (f): 'This controls what unit you will define lengths in.'; as S02-WC-289
+- S02-WC-347 (f): the options of the setting Catalog visibility ('Shop and search results', 'Shop only', 'Search results only', 'Hidden'), behind a filter. It names neither what the products offered take their value per in one of rule 4's roles nor who sets them (rule 4: a filter alone names no party)
+- S02-WC-349 (f): the filter woocommerce_product_is_visible; a filter alone names no party (rule 4), and it names no value per market
+- S02-WC-350 (f): the filter woocommerce_is_purchasable; as S02-WC-349
+- S02-WC-358 (f): 'If you’re selling in the United States, your products can also appear on Google Search, Google Images, and Gmail.': where a service of Google's is offered, which is (h)'s question, not a setting of the store
+- S02-WC-359 (f): the countries the store targets on Google Merchant Center ('You can only select the countries that you’re targeting'): the market's own definition, RD2's question under (e); 'must be eligible' is a requirement, not who sets (rule 4); names no setting's value per market
+- S02-WC-367 (f): the filter woocommerce_coupons_enabled, which reads the store's option; a filter alone names no party (rule 4), and it names no value per market
+- S02-WC-334 (f): the checkout document object's schema, 'to be used for conditional visibility, requirement, and validation of fields'; it names neither what a field takes its value per in one of rule 4's roles nor who sets it
+- S02-WC-335 (f): the document object's 'Customer's billing address'; names no setting's value per market, and not who sets it
+- S02-WC-336 (f): the country field of the document object's address ('Country code (e.g., US, UK)'), without saying that a setting takes its value by it
+- S02-WC-337 (f): the release's code that evaluates a field's 'required' rules against the document object; names neither what the field takes its value per in one of rule 4's roles nor who sets its rules
+- S02-WC-280 (f): 'If you sell to customers in the EU, review the right of withdrawal and its exceptions': the right is the law's, not a setting of the store, and 'review' names no party that sets it; the law requires, it doesn't set (rule 4)
+- S02-WC-286 (f): Stripe's terms for users in India require the website to show its returns timeline: a third party that requires without setting (rule 4), the terms of (c)'s kinds; names no value per market
+- S02-WC-287 (f): Network International's terms require 'clear refund and exchange language': as S02-WC-286
+- S02-WC-391 (f): a pickup location's fields, and taxes taken from the address of the location the customer chooses. Rule 1 says a pickup point isn't the store's own country, so that is none of rule 4's four phrases, and the statement names no party that sets the locations
+- S02-WC-400 (f): the filter woocommerce_customer_default_location; a filter alone names no party (rule 4), and it names no value per market
+- S02-WC-405 (f): 'we made WooCommerce’s order attribution compatible with WP Consent API'; names neither what order attribution takes its value per nor who sets it
+- S02-WC-416 (f): the request for marketplace suggestions carries the store's base country. These are suggestions to the merchant of extensions to install, of (c)'s kinds (other features and services of the platform), not a setting of the store; as the first pass noted S02-WC-001
+- S02-WC-417 (f): the Extensions page fetches its list with the store's base country; as S02-WC-416
+- S02-WC-418 (f): 'Leave this box unchecked if you do not want to pull suggested extensions from WooCommerce.com.', 'default' => 'yes'. It answers who sets the marketplace suggestions (the seller, and the platform's default), which no point asks, of none of rule 1's kinds of setting: a candidate for a new point (below)
+- S02-WC-419 (f): the free extension ShipStation is shown to stores whose base location country is CA, GB, AU or NZ; as S02-WC-416
+- S02-WC-420 (f): the free extension Packlink is shown to stores whose base location country is among nine European countries; as S02-WC-416
+- S02-WC-421 (f): the rule processor that compares 'against the base location - country'; names no setting, only the comparison that S02-WC-419 and S02-WC-420 use
+- S02-WC-422 (f): one WooCommerce.com subscription key per production site: the merchant's account with the platform, not a setting of the store (rule 1); names no value per market
+- S02-WC-449 (f): the GDPR grants EU residents rights, and developers must make extensions comply: a law and a requirement, not a setting of the store, and a party that requires isn't who sets (rule 4)
+- S02-WC-507 (f): users with manage_woocommerce bypass the Coming soon screen. This names who the mode lets through, not what it takes its value per in one of rule 4's roles or who sets it
+- S02-WC-271 (f): 'The full list of available currencies is shown below.': the currencies WooPayments accepts. It names neither what a store's currencies take their value per nor who sets them, and 'not supported by American Express' names a party that doesn't support some, not one that sets them
+- S02-WC-272 (f): the list of currencies WooPayments accepts, read with S02-WC-273 as one list (rule 5, Lists); as S02-WC-271
+- S02-WC-273 (f): as S02-WC-272
+
+By reason, 41 statements:
+- 9 of (c)'s kinds: payouts, terms, and suggestions to the merchant (S02-WC-286, S02-WC-287, S02-WC-317, S02-WC-416, S02-WC-417, S02-WC-419 to S02-WC-422).
+- 8 of per-country data, or a filter, whose country's role or party isn't said (S02-WC-297 to S02-WC-301, S02-WC-313, S02-WC-349, S02-WC-350).
+- 4 candidates for a new point (S02-WC-288, S02-WC-289, S02-WC-291, S02-WC-418).
+- The rest name no setting's value per market and no party that sets one.
+
+### Candidates for a new point
+
+The second pass adds no point. These candidates answer a question that no point of their kind asks:
+- **who sets "units", of the kind units and time zone.** S02-VP-77 asks only what the units take their value per. The candidates are S02-WC-288 (the platform: the default units are those of 'US'), and S02-WC-289 and S02-WC-291 ('you'), all noted. Two statements give the platform and are placed under other points: S02-WC-244 (`'woocommerce_weight_unit' => $country_info['weight_unit']`) and S02-WC-292 ('updateStoreCurrencyAndMeasurementUnits').
+- **who sets "timezone", of the kind units and time zone.** S02-WC-312, the seller: 'address, visibility, currency, language, and timezone'. It is placed under S02-VP-42, S02-VP-44 and S02-VP-81.
+- **who sets "address", of the kind the store's address.** S02-VP-76 asks only what it takes its value per, and (b) asks who sets the store's own country. The candidate is S02-WC-312, as above.
+- **who sets "suggested extensions" (Show Suggestions), of no kind of rule 1's.** The suggestions are what the platform shows the merchant, not the apps a store installs (S02-VP-86's kind). The candidate is S02-WC-418 (the seller, and the platform's default 'yes'), noted.
+
+### Candidates not placed
+
+Each of these statements is placed under another point. These candidates are not:
+- S02-WC-319's 'Affirm also requires that your site only be available in U.S. English (en_US), Canadian English (en_CA), and/or Canadian French (fr_CA)': a party that requires the site's languages without setting them (rule 4).
+- S02-WC-364's 'WooCommerce core does not apply coupon codes automatically' names only who is kept out (rule 5).
+- S02-WC-318's 'They are paying in your account country’s national currency' is a condition on the currency the buyer pays in, under the payment method's point, not currency's.
+- S02-WC-480's 'Only authorized users or those with a private link can view the store' names who may view, not who sets.
+
+### Words searched for
+
+None. The second pass raises no point, so no search was run for the earlier platforms' rows.
+
+### Problems with the brief or the tools
+
+- **Revisits that end with no answer.** Six revisits are left `not covered`, each with its `done` row: S02-V-929, S02-V-930, S02-V-931, S02-V-943, S02-V-944 and S02-V-956. Their leads under (f) answer the point under none of the rules, and `why` names no gap or absence. The brief gives no outcome for this: a `gap` row needs a gap that `why` names. The coordinator may rule on each. RD3-S3's statements under (g) (S02-WC-274, S02-WC-275, S02-WC-277, S02-WC-281, S02-WC-418, S02-WC-422) may answer some of them, and the part that places one replaces the `not covered` row, since such a row never stands beside another.
+- **Calls this part made that the coordinator may read otherwise.**
+  - The default customer location (S02-WC-397 to S02-WC-399) is kept under taxes and shipping, as the first pass read it, not under market selection. That leaves S02-VP-73 and S02-VP-74 `not covered`.
+  - The channel readings: Point of Sale, Google, and the allowed countries as markets.
+  - S02-WC-293 is noted rather than read with S02-WC-292.
+  - S02-WC-334 to S02-WC-336 read together would say that a checkout field can follow the customer's billing country, which S02-V-913 already holds from S02-WC-344. They are noted, because rule 5's Lists need one identifier and theirs differ.
+  - S02-WC-280 is noted, not placed under S02-VP-65 as the buyer's country, because the right of withdrawal is the law's, not a setting of the store.
+  - Inbox notes are read as notifications to the merchant (S02-VP-89, S02-VP-90). The extensions suggested to the merchant are noted as (c)'s kinds.
+- **Ids.** RD3-S1 wrote rows at the same time, so this part's new ids interleave with its own: S02-V-999 to S02-V-1056, not all of them this part's. The tool's lock kept the two parts' writes apart.
+- **Leads placed under several points.** The revisits placed leads under every point they answer, so rows of points that have no WooCommerce task gained statements by a join, or gained a row: S02-VP-51, S02-VP-54, S02-VP-57 to S02-VP-62, S02-VP-70, S02-VP-89 and S02-VP-90. No row was replaced or removed outside a revisit.
+
+## Second pass, RD3-S4: zid, bullets f and g
+
+Zid's tasks in `b/second-pass/RD3/worklist.tsv`: 29 revisits, then 11 `place` tasks, in the list's order; revisits whose points share their leads were done together. Zid's statements are read as the first pass read them (Part RD3-3, 'How this part reads Zid's statements'): Zid's market is its 'السوق'; 'you', the merchant, an instruction to the merchant or a control of the dashboard is the seller; 'تلقائيًا' (automatically) or a default is the platform. Each row is compared with the statement in its point's `raised_by` from another platform (rule 5); `term` rests on Zid's own translations in `terms.tsv` or on mine, marked 'my translation'. Readings are marked in their rows.
+
+### Revisits: rows replaced or removed, and what took their place
+
+- S02-V-760 (S02-VP-44, was `not covered`): replaced by the seller (S02-ZD-258 to S02-ZD-260, S02-ZD-265; later joined by S02-ZD-214 and S02-ZD-221, the legal pages' and the store's content written again in English). The leads placed under other points they answer: S02-ZD-260 to S02-ZD-263 joined S02-V-759 (S02-VP-43, the whole store: 'Current language configured for the store.', 'List of languages supported by the store.', 'Returns the store languages', and 'تحديد اللغة الأساسية للمتجر', read as the first pass read the store's base currency); S02-ZD-260's 'تفعيل العملات' joined S02-V-755 (S02-VP-42, the seller); S02-ZD-265 ('Message Language', the language of marketing messages, plans growth and pro) joined S02-V-807 (S02-VP-83, the seller), a thing of two kinds, language and messages to buyers (rule 1).
+- S02-V-761 (S02-VP-45, was `not covered`): replaced by the whole store, S02-ZD-231 under (g) ('لا يمكن تفعيل أكثر من نطاق في نفس الوقت.', my translation: 'more than one domain cannot be active at the same time'), `answers` alone (rule 4). S02-ZD-231 is also task 40's `place` under (g).
+- S02-V-762 (S02-VP-46, was `not covered`): replaced by the seller (S02-ZD-229, S02-ZD-230, S02-ZD-232 to S02-ZD-236, S02-ZD-239, S02-ZD-240, S02-ZD-244 to S02-ZD-246, S02-ZD-424); added S02-V-1064, the platform (S02-ZD-246's default link, 'رابط المتجر سيكون الرابط الافتراضي'; S02-ZD-244's temporary link created at registration, a reading), and S02-V-1065, the staff permission `manage.store.custom.domain` (S02-ZD-241, rule 4).
+- S02-V-774 (S02-VP-55, was `not covered`): replaced by `gap` S02-ZD-G10; no lead names a market, a buyer's country or the whole store for the checkout page's options. Its leads are placed under S02-VP-56.
+- S02-V-775 (S02-VP-56, was `not covered`): replaced by the seller (S02-ZD-247 to S02-ZD-254; S02-ZD-248, S02-ZD-250 and S02-ZD-253 name no party, and are read with S02-ZD-247 as options of the same page's list, a reading; later joined by S02-ZD-281); added S02-V-1066, the platform (S02-ZD-251: 'الخاصية يتم تفعيلها بشكل تلقائي', the sign-in pop-up turned on automatically). S02-ZD-252's cash on delivery in guest checkout joined S02-V-784 (S02-VP-62, the seller).
+- S02-V-787 (S02-VP-63, was `not covered`): replaced by the whole store, a reading of S02-ZD-208 ('اسم المؤسسة المستخدم في الفواتير', my translation: 'the establishment's name used in the invoices'): one name, used in the store's invoices.
+- S02-V-788 (S02-VP-64, was `not covered`): replaced by the seller (S02-ZD-206, the disclosure in the store that Zid's Terms require of every merchant; S02-ZD-208, a field of the store's data, read as the merchant's control).
+- S02-V-789 (S02-VP-65, was `not covered`): left `not covered`. No lead names a market, a buyer's country or the whole store for the exchange and return policy, and `why` names no gap; A2 recorded S02-ZD-G18 for the same legal pages under privacy ('the pages read name no market'), not for returns. Its leads are placed under S02-VP-66, or noted.
+- S02-V-790 (S02-VP-66, was `not covered`): replaced by the seller (S02-ZD-213, S02-ZD-214, S02-ZD-216, S02-ZD-217, S02-ZD-219, S02-ZD-221). S02-ZD-214 and S02-ZD-221 also joined S02-V-760.
+- S02-V-800 (S02-VP-76, was `not covered`): replaced by the whole store, a reading of S02-ZD-223 ('سيظهر العنوان الخاص الذي تم إضافة سابقاً في معلومات المتجر الأساسية', my translation: 'the address previously added in the store's basic information will appear'): the one address the invoice shows. S02-ZD-206 is placed under S02-VP-64; S02-ZD-224 and S02-ZD-226 are noted.
+- S02-V-870 (S02-VP-85, was `not covered`): left `not covered`. Its one lead, S02-ZD-226, is the account's own information, noted; the work list's gap S02-ZD-G01 is not in RD3's slice, so it is under none of RD3's bullets and gives no `gap` row (rule 4).
+- S02-V-791 (S02-VP-67, was `not covered`): replaced by a market, a reading of S02-ZD-280 (an inventory 'مع تخصيص قناة البيع لهذا المخزون إما زد كاشير أو للمتجر الإلكتروني', my translation: 'with the sales channel assigned to it, either Zid Cashier or the online store'; a sales channel is among what bullet (e) names as defining a market); added S02-V-1067 beside it, `gap` S02-ZD-G12, which asks what the inventory withdrawal priority takes its value per.
+- S02-V-802 (S02-VP-78, was `not covered`): replaced by the seller (S02-ZD-270, S02-ZD-272, S02-ZD-274 to S02-ZD-277, S02-ZD-281 to S02-ZD-283, S02-ZD-286, S02-ZD-287). S02-ZD-281 (products available for pickup, an option of the checkout page) also joined S02-V-775.
+
+### Statements noted (rule 2)
+
+- S02-ZD-227 (f): defines the domain ('النطاق هو عنوان متجرك الإلكتروني', my translation: 'the domain is your online store's address'); names neither what it takes its value per nor who sets it
+- S02-ZD-228 (f): an admin path to the domains list ('يمكنك الوصول إلى قائمة النطاقات من خلال : لوحة التحكم', my translation: 'you can reach the domains list through: Dashboard'); says where it is reached, not what it takes its value per or who sets it (as the first pass noted S02-ZD-105 and S02-ZD-141)
+- S02-ZD-257 (f): says customers outside Saudi Arabia can pay electronically with Zid Pay 'بحسب الشبكات والعملات المفعلة' (my translation: 'according to the networks and currencies enabled'); names what the payment depends on, not a market, a buyer's country or the whole store, and not who sets it
+- S02-ZD-207 (f): Zid's Terms require every store to give the consumer an invoice of the costs, the total price and the delivery's date and place ('ينبغي على كافة المتاجر والتجّار تقديم فاتورة إلى المستهلك'); names no business entity, and neither what a setting takes its value per nor who sets it
+- S02-ZD-209 (f): the merchant authorizes Zid, through the Mazeed platform ('منصة مزيد'), as 'الممثل القانوني للبائع أمام الأطراف التجارية الأخرى' (my translation: 'the seller's legal representative before other commercial parties'): a term of the merchant's contract with Zid, of (c)'s kinds (the terms), not who sells to the buyer; names no market, buyer's country or whole store
+- S02-ZD-224 (f): an order field's description ('Indicates whether the store business address is shown on printed invoices.'); names neither what the address takes its value per nor who sets it (as the first pass noted S02-ZD-052, an order field)
+- S02-ZD-226 (f): the account's own information ('إعدادات الحساب > بيانات الحساب أو معلوماتك الأساسية', my translation: 'account settings > account data or your basic information'), to which the user can add an address: a setting of the account, not of the store (rule 1); names no country, market or buyer's country
+- S02-ZD-212 (f): an admin path to the legal pages ('الاعدادات > المتجر > الصفحات القانونية'); says where they are reached, not what they take their value per or who sets them
+- S02-ZD-215 (f): lists the legal pages (the privacy policy, terms and conditions, exchange and return policy, complaints and suggestions, licenses); names neither what they take their value per nor who sets them
+- S02-ZD-218 (f): points Saudi stores to the Ministry of Commerce's regulations on e-commerce terms ('الرجاء مراجعة تنظيمات وزارة التجارة', my translation: 'please review the Ministry of Commerce's regulations'); names neither what a setting takes its value per nor who sets it: a regulator that requires a value isn't who sets it (rule 4)
+- S02-ZD-222 (f): an order field's description ('Return policy applicable to the order.'); names neither a market, a buyer's country or the whole store, nor who sets it
+- S02-ZD-269 (f): an admin path to the withdrawal priority ('يمكنك الوصول الى خاصية أولوية السحب من المخزون من خلال : لوحة التحكم'); says where it is reached, not what it takes its value per or who sets it
+- S02-ZD-278 (f): an admin path to inventory transfer requests ('يمكنك الوصول الى خاصية نقل المخزون من خلال : لوحة التحكم'); says where it is reached, not what it takes its value per or who sets it
+- S02-ZD-284 (f): an API field with no description ('fulfillment_priority: type: integer nullable: true'); names neither what it takes its value per nor who sets it
+- S02-ZD-285 (f): an order field's description ('Inventory location(s) associated with the order.'); names neither what locations take their value per nor who sets them
+
+## Second pass, RD3-S3: woocommerce, bullet g
+
+WooCommerce's tasks under (g) in `b/second-pass/RD3/worklist.tsv`: 127 `place` tasks, then 7 rereads. This part had no revisit of its own; the six rows RD3-S2 left `not covered` were read against its statements under (g). Every row or join this part wrote rests on (g) and takes `answers` alone (rule 4). A statement under (g) is placed under the whole store of each `what "X" takes its value per` point whose kind its setting is of, and under that kind's `who sets` point where it also names who sets (rule 4).
+
+How this part reads WooCommerce's statements under (g), beside the first pass's readings:
+- **The whole store.** Words that one value holds for the store or the site ('site-wide', 'throughout the store', 'your store's', 'in your store', 'the site's timezone', 'the entire site'), and one option of the store's settings (an option id such as 'woocommerce_enable_guest_checkout'), read as one value for every buyer, as the first pass read 'the store holds one value'; a reading where the words don't say so, marked in the row. A value for each product or each email is read the same way where the words name it (S02-WC-346, S02-WC-373, S02-WC-396).
+- **Not the whole store.** A statement that names only where a setting is reached, who handles a request, a party that can change a setting, or who a setting lets through, with no words that the setting holds for the whole store, is noted under (g) (rule 2).
+- **Statements under (f) and (g).** The work list was cut before RD3-S2 ran, so most of this part's `place` tasks under (f) and (g) were already in one of RD3-S2's rows, which the checker counts as placed under (g) too. This part read each one's (g) half all the same: where its words say the setting holds for the whole store and RD3-S2 had placed it only under a `who sets` point, it joined the whole-store row; where they don't, it is noted under (g), and RD3-S2's placement stands.
+
+### Revisits RD3-S2 left `not covered`
+
+- S02-V-929 (S02-VP-63, who sells to the buyer): replaced by the whole store (S02-WC-274, S02-WC-275, S02-WC-277): the merchant sells to every customer, for all the products and services the store provides, and the platform is not party to it ('We’re not involved in your relationships or transactions with any customer or potential customer, and you’re solely responsible for all of your ecommerce activities'), a reading. Recorded with `done revisit S02-V-929 f`.
+- S02-V-930 (S02-VP-64): still `not covered`. No statement under (g) names who sets who sells to the buyer: S02-WC-274's 'You have control over your store' names no setting of this kind, and its 'We’re not involved' names who is kept out (rule 5).
+- S02-V-931 (S02-VP-65, returns and cancellations): replaced by the whole store (S02-WC-281, S02-WC-282, S02-WC-284, S02-WC-285): one order withdrawal feature for the store, whose form 'accepts requests for orders of any age', one constant window (`WITHDRAWAL_WINDOW_IN_DAYS`, `= 14;`), and one Refund and Returns Policy page 'to fit your store', a reading. Recorded with `done revisit S02-V-931 f`. Under S02-VP-66, S02-WC-282 and S02-WC-285 joined the seller (S02-V-932), and S02-V-1077 was added, the platform ('We have created a sample draft Refund and Returns Policy page for you', and the constant of S02-WC-281).
+- S02-V-943, S02-V-944 (S02-VP-73, S02-VP-74, market selection): still `not covered`. No statement under (g) in this part says how a buyer's market is chosen, suggested, switched or restricted.
+- S02-V-956 (S02-VP-86, apps): still `not covered`. S02-WC-418 (Show Suggestions) is the suggestions the platform shows the merchant, not the apps a store installs, as RD3-S2 read it; S02-WC-422 is the merchant's WooCommerce.com subscription, a setting of the platform's account, not of the store (rule 1). Both are noted below.
+
+### `place` tasks: where the statements went
+
+New rows, each the whole store unless said:
+- S02-V-1078 (S02-VP-61, payment methods offered to buyers): S02-WC-266, 'customers from all over the world can use the gateway to check out and pay', a reading of the gateway as a payment method offered to buyers.
+- S02-V-1079 (S02-VP-77, units and time zone): S02-WC-290 ('the weight unit used throughout the store'); S02-WC-288, S02-WC-289 and S02-WC-291, one option each and their defaults; S02-WC-310 and S02-WC-311, the site's timezone; S02-WC-312.
+- S02-V-1080 (S02-VP-55, checkout and customer accounts): S02-WC-329 to S02-WC-333, S02-WC-338 to S02-WC-341. S02-WC-338 and S02-WC-339 share a source and an identifier, and are read together (rule 5, Lists).
+- S02-V-1081 (S02-VP-56): the platform, the defaults of S02-WC-329, S02-WC-331 and S02-WC-332.
+- S02-V-1082 (S02-VP-75, privacy and consent): S02-WC-441 to S02-WC-443, S02-WC-445, S02-WC-446, S02-WC-333, S02-WC-338, S02-WC-339.
+- S02-V-1083 (S02-VP-47, products): S02-WC-346, S02-WC-348.
+- S02-V-1084 (S02-VP-89, notifications to the merchant): S02-WC-430 to S02-WC-432.
+- S02-V-1077 (S02-VP-66): the platform, above.
+
+Joined to rows already there:
+- S02-V-893 (S02-VP-41, the whole store): S02-WC-312, S02-WC-315.
+- S02-V-900 (S02-VP-43, the whole store): S02-WC-312, S02-WC-324, S02-WC-325, and S02-WC-423 ('make sure emails are in the store language'), which RD3-S2 placed under messages to buyers.
+- S02-V-946 (S02-VP-76, the whole store): S02-WC-312.
+- S02-V-950 (S02-VP-80, the whole store): S02-WC-312, S02-WC-477, S02-WC-479, S02-WC-491 to S02-WC-495, S02-WC-501, S02-WC-502, S02-WC-504 to S02-WC-506.
+- S02-V-909 (S02-VP-51, the whole store): S02-WC-362, S02-WC-366, S02-WC-368, S02-WC-373.
+- S02-V-911 (S02-VP-53, the whole store) and S02-V-912 (S02-VP-54, the seller): S02-WC-376, the store notice, under storefront design as RD3-S2 placed S02-WC-375 and S02-WC-377.
+- S02-V-914 (S02-VP-56, the seller): S02-WC-329 to S02-WC-333, S02-WC-338 to S02-WC-341.
+- S02-V-1046 (S02-VP-84, the seller): S02-WC-333, S02-WC-338, S02-WC-339, S02-WC-441 to S02-WC-443, S02-WC-445, S02-WC-446.
+- S02-V-933 (S02-VP-67, the whole store): S02-WC-395, S02-WC-396, stock management, under locations as RD3-S2 placed them.
+- S02-V-952 (S02-VP-82, the whole store): S02-WC-386, S02-WC-387, S02-WC-426, S02-WC-428.
+- S02-V-1038 (S02-VP-87, the whole store): S02-WC-401, S02-WC-404, S02-WC-411, S02-WC-412, S02-WC-440.
+- S02-V-941 (S02-VP-71, the whole store): S02-WC-451, S02-WC-456, S02-WC-464.
+- S02-V-932 (S02-VP-66, the seller): S02-WC-282, S02-WC-285.
+
+Already under the whole store in RD3-S2's rows, so nothing was written for them: S02-WC-375 and S02-WC-377 (S02-V-911); S02-WC-408 (S02-V-1038); S02-WC-423 (S02-V-952); S02-WC-454, S02-WC-455, S02-WC-457 to S02-WC-462, S02-WC-471, S02-WC-472, S02-WC-474, S02-WC-475 (S02-V-941); S02-WC-476, S02-WC-478, S02-WC-480 to S02-WC-488, S02-WC-490, S02-WC-497, S02-WC-509 (S02-V-950).
+
+By count: 69 placed by this part, 29 already under the whole store, 29 noted (below): 127.
+
+### Rereads (rule 4, widened)
+
+- Reread of S02-WC-017: placed. Joined the seller under S02-VP-42 (S02-V-896), S02-VP-52 (S02-V-910), S02-VP-58 (S02-V-918) and S02-VP-60 (S02-V-925): 'From your store’s general settings page, you can enter your business address', with 'select the currency', 'enable tax calculations and coupons' and 'define the regions you will sell and ship orders to'. RD3 has no `who sets` point for the business address or the store's country.
+- Rereads of S02-WC-087, S02-WC-175, S02-WC-176 and S02-WC-179: placed. S02-V-1085 added under S02-VP-42, the seller ('Each WooCommerce store can set one base currency', the store read as its merchant; 'Choose', 'Specify').
+- Rereads of S02-WC-177 and S02-WC-178: placed, under S02-V-1085, and S02-V-1086 added under S02-VP-42, the platform ('this is the default option').
+- S02-V-1085 and S02-V-1086 give the answers of S02-V-896 and S02-V-897, and are kept apart from them, as each row's `note` says: a row that rests on a statement under (g) alone takes `answers` alone (rule 4), and the checker refuses one with `term`, which S02-V-896 and S02-V-897 take. S02-WC-017 is also under (a), (b) and (e), so it joined S02-V-896 and S02-V-918 themselves.
+
+### Statements noted (rule 2)
+
+- S02-WC-276 (g): 'must maintain fair and legally compliant return, refund, cancellation, and adjustment policies' names who maintains the return policies, as the terms require, without saying that they hold for the whole store; rule 4 places a statement under (g) under a `who sets` point only beside its whole-store answer
+- S02-WC-283 (g): 'It’s up to you how withdrawal requests are handled' names who handles each withdrawal request, case by case, and what the platform doesn't do ('does not automatically change the order status, cancel the order, or issue a refund'), not a setting that holds for the whole store
+- S02-WC-347 (g): the options of Catalog visibility, behind a filter; names neither what they take their value per nor that they hold for the whole store, as RD3-S2 noted it under (f)
+- S02-WC-361 (g): the coupon types WooCommerce core offers ('fixed-cart, fixed-product, and percentage-based coupons'): the platform's, not a setting of the store that holds for the whole store
+- S02-WC-364 (g): names who applies a coupon code, the customer, and who doesn't ('WooCommerce core does not apply coupon codes automatically'), not a setting that holds for the whole store
+- S02-WC-379 (g): the Customize your store task 'opens a simplified design screen'; names where the merchant starts designing, not that the design holds for the whole store
+- S02-WC-418 (g): Show Suggestions, one checkbox ('Leave this box unchecked if you do not want to pull suggested extensions from WooCommerce.com.', 'default' => 'yes'), which holds for the whole store and names who sets it; but the suggestions the platform shows the merchant are of none of rule 1's kinds of setting, and not the apps a store installs (S02-VP-86's kind), as RD3-S2 read it: a candidate for a new point (below)
+- S02-WC-422 (g): one WooCommerce.com subscription key per production site: the merchant's account with the platform, not a setting of the store (rule 1), as RD3-S2 noted it under (f)
+- S02-WC-425 (g): 'For each WooCommerce email listed, it’s possible to configure your settings (optional).': settings for each email, without saying what they take their value per or that they hold for the whole store
+- S02-WC-444 (g): 'Personal data retention', one setting for the store ('Choose how long to retain personal data'), but of none of rule 1's kinds: privacy and consent holds cookie consent and the privacy settings shown to buyers, and the statement doesn't say that retention is shown to buyers: a candidate for a new point (below)
+- S02-WC-447 (g): 'Use this section to decide how long your store keeps order data.': as S02-WC-444; 'make sure they comply with applicable laws, such as the EU GDPR' names a law that requires, not who sets (rule 4)
+- S02-WC-452 (g): how a role is assigned to a user ('choose a role from the Role dropdown'); names who assigns it, as RD3-S2 placed it under S02-VP-72, not that staff access holds for the whole store
+- S02-WC-453 (g): introduces two capabilities of the Administrator role (S02-WC-454 and S02-WC-455, under the whole store), without saying their scope
+- S02-WC-463 (g): an extension or plugin can change what each role can do; names who changes it, as RD3-S2 placed it, not that staff access holds for the whole store
+- S02-WC-465 (g): a plugin for editing role capabilities; names no scope
+- S02-WC-466 (g): as S02-WC-465
+- S02-WC-467 (g): as S02-WC-465
+- S02-WC-468 (g): the roles the release's code creates ('customer', 'shop_manager'); names no scope
+- S02-WC-469 (g): the code adds the core capabilities to two roles; names no scope
+- S02-WC-470 (g): the capabilities 'are assigned to admin/shop manager during installation or reset'; names when, not their scope
+- S02-WC-473 (g): the roles a shop manager may edit (by default 'customer'); names who may edit which roles, not the scope of staff access
+- S02-WC-489 (g): a private link 'to provide selective access to your site' names who the mode lets through, as RD3-S2 noted S02-WC-507, not that the mode holds for the whole store
+- S02-WC-496 (g): a guide for 'third-party developers and hosting providers' on integrating with the mode; names who integrates, not the mode's scope
+- S02-WC-498 (g): the mode 'can be programmatically synced from a plugin or application'; names who may change it, not its scope
+- S02-WC-499 (g): as S02-WC-498 ('a maintenance mode plugin')
+- S02-WC-500 (g): as S02-WC-498 ('a hosting provider's coming soon mode')
+- S02-WC-503 (g): exclusions that developers add, which bypass the mode 'on a specific IP address' or for 'a specific landing page': none of rule 4's four phrases, and not that the mode holds for the whole store
+- S02-WC-507 (g): users with manage_woocommerce bypass the mode; names who the mode lets through, as RD3-S2 noted it under (f)
+- S02-WC-508 (g): the exclusion filter woocommerce_coming_soon_exclude ('Defaults to false'); names whether a request is excluded, not that the mode holds for the whole store
+
+By reason, 29 statements: 13 name a party that changes, assigns, integrates with or handles a setting, or who a setting lets through, without words that it holds for the whole store (S02-WC-276, S02-WC-283, S02-WC-452, S02-WC-463, S02-WC-473, S02-WC-489, S02-WC-496, S02-WC-498 to S02-WC-500, S02-WC-503, S02-WC-507, S02-WC-508); 9 name no scope or what a value is taken per (S02-WC-347, S02-WC-379, S02-WC-425, S02-WC-453, S02-WC-465 to S02-WC-470); 2 are the platform's own, not the store's (S02-WC-361, S02-WC-422); 1 names who applies a coupon (S02-WC-364); 3 are candidates for a new point (S02-WC-418, S02-WC-444, S02-WC-447).
+
+### Candidates for a new point
+
+The second pass adds no point. These statements under (g) answer one of its questions for an X that no point's kind fits, or that no point of their kind asks:
+- **"Personal data retention"**, of none of rule 1's kinds (privacy and consent holds cookie consent and the privacy settings shown to buyers): what it takes its value per, the whole store (S02-WC-444, S02-WC-447, and S02-WC-339's 'decide how your store retains or removes personal data'); and who sets it, the seller ('Choose how long to retain personal data', 'Use this section to decide how long your store keeps order data').
+- **"suggested extensions" (Show Suggestions)**, of none of rule 1's kinds: what it takes its value per, the whole store (one checkbox, S02-WC-418); and who sets it, the seller and the platform's default 'yes'. RD3-S2 listed its `who sets` half.
+- **who sets the units and the time zone**, of the kind units and time zone (S02-VP-77 asks only what they take their value per): S02-WC-289 and S02-WC-291 ('you'), S02-WC-288 (the platform's default) and S02-WC-312 ('Set your store\'s address, visibility, currency, language, and timezone.'), whose whole-store half is under S02-V-1079. RD3-S2 listed them under (f).
+- **who sets the store's address**, of the kind the store's address (S02-VP-76 asks only what it takes its value per): S02-WC-312, and S02-WC-017 ('you can enter your business address'), whose whole-store half is under S02-V-946.
+
+### Words searched for
+
+None: the second pass raises no point, so no search was run for the earlier platforms' rows.
+
+### Problems with the brief or the tools
+
+- **(g) and `who sets`.** Rule 4 places a statement under (g) under a `who sets` point only beside its whole-store answer, so statements under (g) that name who sets a setting without saying it holds for the whole store are noted (S02-WC-276, S02-WC-283). The coordinator may rule otherwise: S02-WC-276 would join the seller under S02-VP-66.
+- **Rows with `term`.** A row that holds a statement under (g) alone must take `answers` alone, by the checker. The rereads' S02-WC-087 and S02-WC-175 to S02-WC-179 give the answers of S02-V-896 and S02-V-897, which take `answers;term`; joining them would have dropped `term`, which holds for those rows' statements under (f). So they have rows of their own (S02-V-1085, S02-V-1086), which leaves two rows of one answer each under S02-VP-42. The coordinator may merge them.
+- **The work list and RD3-S2.** Most of this part's `place` tasks were already placed by RD3-S2 when this part ran (see above); the work list was cut before. Each was read for its (g) half.
+- **Calls this part made that the coordinator may read otherwise.**
+  - Who sells to the buyer read as the merchant, the same for every buyer, from terms that say the merchant is responsible for all its ecommerce activities and the platform isn't involved (S02-V-929).
+  - The order withdrawal window, a constant that only sets when the merchant is warned of an order's age (S02-WC-284), read with the feature, its form and the policy page as returns and cancellations held for the whole store (S02-V-931).
+  - One option of the store's settings, or one value for each product or each email, read as the whole store.
+  - The gateway that customers 'from all over the world' can use (S02-V-1078), read as a payment method offered to buyers.
+  - Personal data retention read as of none of rule 1's kinds (a candidate), though S02-WC-339 names it beside the privacy policy notices.
+- **Ids.** RD3-S4 writes beside this part. This part's new rows are S02-V-1077 to S02-V-1086.
+- **Correction to RD3-S3's count "By reason" above:** 10 of the noted statements name no scope or what a value is taken per (S02-WC-347, S02-WC-379, S02-WC-425, S02-WC-453, S02-WC-465 to S02-WC-470), not 9; the total, 29, stands.
+
+## Second pass, RD3-S4: zid, bullets f and g (continued)
+
+RD3-S3 appended its section above while this part ran; this part's notes continue here.
+
+### Revisits, continued
+
+- S02-V-792 (S02-VP-68, was `not covered`): replaced by `gap` S02-ZD-G11; its leads are placed under S02-VP-79.
+- S02-V-803 (S02-VP-79, was `not covered`): replaced by the seller (S02-ZD-266 to S02-ZD-268, S02-ZD-206; S02-ZD-267 names no party, and is read with S02-ZD-266, a note of the same section, a reading). S02-ZD-266's store link also joined S02-V-762 (S02-VP-46, the seller).
+- S02-V-797 (S02-VP-73, was `not covered`): replaced by `gap` S02-ZD-G13. The leads name the Region & Language popup's country and city, which their words don't name as a market (as S02-ZD-G13 reads them). S02-ZD-289 (the 'Display products in your store based on the customer location' switch) joined S02-V-764 (S02-VP-47, the buyer's country); S02-ZD-292 ('Know your customers' locations precisely to customize offers') gave S02-V-1068 under S02-VP-51, the buyer's country (a reading); S02-ZD-291 (the popup included in 'your theme') joined S02-V-773 (S02-VP-54, the seller, a reading). S02-ZD-288 and S02-ZD-290 are noted.
+- S02-V-798 (S02-VP-74, was `not covered`): replaced by `gap` S02-ZD-G13. S02-ZD-289 joined S02-V-765 (S02-VP-48, the seller) and S02-ZD-292 joined S02-V-770 (S02-VP-52, the seller).
+- S02-V-795 (S02-VP-71, was `not covered`): replaced by `gap` S02-ZD-G17; the leads give permissions per member or group, none per market, buyer's country or the whole store.
+- S02-V-796 (S02-VP-72, was `not covered`): replaced by the seller (S02-ZD-319, S02-ZD-321, S02-ZD-322, S02-ZD-325, S02-ZD-331 to S02-ZD-333; S02-ZD-325 names no party, read as an option of the team section, a reading); added S02-V-1069, the store owner (S02-ZD-326, S02-ZD-327, S02-ZD-319, S02-ZD-331; rule 4, the account's owner), and S02-V-1070 beside them, `gap` S02-ZD-G17, which asks who sets a limit of permissions to a market. S02-ZD-332 also gave S02-V-1071 under S02-VP-62, the permission to turn the payment networks on or off (rule 4). S02-ZD-318 is placed under S02-VP-90.
+- S02-V-799 (S02-VP-75, was `not covered`): replaced by `gap` S02-ZD-G18; its leads are placed under S02-VP-84 and S02-VP-83, or noted (S02-ZD-336).
+- S02-V-808 (S02-VP-84, was `not covered`): replaced by the seller (S02-ZD-334, S02-ZD-335, S02-ZD-338, and the legal pages' privacy policy, S02-ZD-213, S02-ZD-214, S02-ZD-219); added S02-V-1072, the buyer (S02-ZD-335's opt-out, S02-ZD-337's unsubscribe), S02-V-1073, the platform (S02-ZD-339: the opt-out words recognized automatically, which can't be changed), and S02-V-1074 beside them, `gap` S02-ZD-G19, which asks about cookie preferences. The same leads under S02-VP-83 (messages to buyers): S02-ZD-338 and S02-ZD-344 joined S02-V-807 (the seller); S02-V-1075 added, the buyer (S02-ZD-337); S02-V-1076 added, the platform (S02-ZD-339).
+- S02-V-801 (S02-VP-77, was `not covered`): replaced by `gap` S02-ZD-G21. Its lead S02-ZD-346 says the merchant chooses the time zone; no point asks who sets units or time zone, so it is noted.
+- S02-V-804 (S02-VP-80, was `not covered`): replaced by `gap` S02-ZD-G20; its leads are placed under S02-VP-81.
+- S02-V-805 (S02-VP-81, was `not covered`): replaced by the seller (S02-ZD-340 to S02-ZD-344; S02-ZD-343 names no party, read with S02-ZD-340 as an option of the same list, a reading); added S02-V-1087, the platform (S02-ZD-345: Zid's right under its Terms to stop the service and close the store). S02-ZD-344's text in Arabic and English also joined S02-V-760 (S02-VP-44), and its notice to customers when the store reopens S02-V-807 (S02-VP-83).
+- S02-V-875 (S02-VP-86, was `not covered`): replaced by `gap` S02-ZD-G15. No lead names what apps take their value per (S02-ZD-G15: 'they name no market'); those that name who connects or manages apps answer a question no point asks of apps. All are noted.
+- S02-V-879 (S02-VP-87, was `not covered`): replaced by `gap` S02-ZD-G14; its leads are placed under S02-VP-88, or noted (S02-ZD-299).
+- S02-V-883 (S02-VP-88, was `not covered`): replaced by the seller (S02-ZD-293 to S02-ZD-298).
+- S02-V-887 (S02-VP-89, was `not covered`): replaced by `gap` S02-ZD-G16; its leads are placed under S02-VP-90.
+- S02-V-891 (S02-VP-90, was `not covered`): replaced by the seller (S02-ZD-313 to S02-ZD-317); added S02-V-1088, the staff permission `manage.store.staff.notifications` (S02-ZD-318, rule 4).
+
+### `place` tasks: where the statements went
+
+- S02-ZD-181 and S02-ZD-182 (the short national address required for shipments into Saudi Arabia, for customers' addresses there): joined S02-V-793 (S02-VP-69, the buyer's country). The Council of Ministers' decision S02-ZD-182 names requires the value without setting it (rule 4), so neither gives a row under S02-VP-70.
+- S02-ZD-187 (the Region & Language popup): S02-V-1089 added under S02-VP-44, the buyer ('allows customers to change the store language'); S02-V-1090 added under S02-VP-49, the buyer's country ('pricing ... tailored to the selected region'); joined S02-V-764 (products), S02-V-781 (shipping: 'delivery options') and S02-V-772 (storefront design: 'content'), the buyer's country. The selected region is the country and city the customer selects, read as the first pass read the customer's location ('موقع العميل'). Its words don't name a market (S02-ZD-G13), so it is not placed under S02-VP-73 or S02-VP-74.
+- S02-ZD-188 (the region popup settings managed on the inventory page): joined S02-V-765 (S02-VP-48, the seller), read with S02-ZD-189 as the lead-in of its list (rule 5, Lists).
+- S02-ZD-189 ('By default, Display products in your store based on the customer location is disabled for all stores.'): joined S02-V-764 (S02-VP-47, the buyer's country, which the store switches on, rule 4); S02-V-1091 added under S02-VP-48, the platform ('By default').
+- S02-ZD-399, S02-ZD-404 and S02-ZD-412 (Zid Payments' answers for Saudi Arabia and Kuwait: currencies turned on through the store's settings): joined S02-V-755 (S02-VP-42, the seller); their identifiers name the currencies (rule 5).
+- S02-ZD-231, under (g): S02-V-761 (S02-VP-45, the whole store), with its revisit above.
+- S02-ZD-191 and S02-ZD-447: noted.
+
+### Statements noted (rule 2), continued
+
+- S02-ZD-288 (f): the city a customer selects in the Region & Language popup, or 'a default city in the region that has a shipping option': its words don't name it as a market (as S02-ZD-G13 reads the popup), and it is of none of rule 1's kinds otherwise (listed below as a candidate for a new point)
+- S02-ZD-290 (f): an API to 'change the store language, country, and city'; names no party that sets them, and no market (as S02-ZD-G13 reads the popup)
+- S02-ZD-191 (f): the setRegion API ('Changes the store language, country, and city'); names no party that sets them, and no market (as S02-ZD-G13 reads the popup)
+- S02-ZD-320 (f): an admin path to the team feature ('يمكنك الوصول الى خاصية الفريق من خلال : لوحة التحكم'); says where it is reached, not what it takes its value per or who sets it
+- S02-ZD-328 (f): defines user roles and permissions ('User roles and permissions determine what a user can view, change, or manage in a store's setting'); names neither what staff access takes its value per nor who sets it
+- S02-ZD-329 (f): a staff permission over the store's settings in general ('manage.store.settings Manage store settings'), of no one kind of setting (as RD3-3 noted S02-BC-097 to S02-BC-102)
+- S02-ZD-330 (f): a staff permission over the apps' settings ('manage.app.market.settings Manage application settings'): S02-VP-86 asks only what apps take their value per, and no point asks who sets apps (listed below)
+- S02-ZD-336 (f): Zid's own Privacy Policy, the rights it gives over personal information 'regardless of where you live': Zid's policy, not a setting of the store (rule 1)
+- S02-ZD-346 (f): the merchant chooses the store's time zone ('يمكنك اختيار المنطقة الزمنية المناسبة', my translation: 'you can choose the suitable time zone'); S02-VP-77 asks only what units and time zone take their value per, and no point asks who sets them (listed below)
+- S02-ZD-299 (f): the details added when creating a Google Analytics property ('يتم اضافة اسم الموقع ( المتجر ) والمنطقة الزمنية والبلد والعملة', my translation: 'the site's (store's) name, time zone, country and currency are added'), in the passive with no party: a setting of the Google Analytics property; names neither what web analytics takes its value per nor who sets it
+- S02-ZD-300 (f): the merchant can connect any number of apps to the store ('يمكنك ربط العديد من التطبيقات ولا يوجد عدد محدد'); names no market, buyer's country or whole store (S02-ZD-G15), and no point asks who sets apps (listed below)
+- S02-ZD-301 (f): the merchant views and manages the apps activated in the store ('يمكنك استعراض جميع التطبيقات المفعّلة في متجرك، مع إمكانية إدارتها'); names no market, buyer's country or whole store, and no point asks who sets apps (listed below)
+- S02-ZD-302 (f): embedded apps, which the merchant controls in the App Market page ('التطبيقات التي يمكنك التحكم في التطبيق داخل صفحة سوق التطبيقات'); names no market, buyer's country or whole store, and no point asks who sets apps (listed below)
+- S02-ZD-303 (f): defines Zid's App Market, apps and services of third parties independent of Zid; names neither what apps take their value per nor who sets them
+- S02-ZD-304 (f): the merchant can connect the store to any app by its linking mechanism ('يمكنك ربط متجرك بأي تطبيق'); names no market, buyer's country or whole store, and no point asks who sets apps (listed below)
+- S02-ZD-305 (f): lists the App Market's categories of apps; names neither what apps take their value per nor who sets them
+- S02-ZD-306 (f): public apps, which 'All merchants on the platform can view, install, and benefit from': for whom apps are offered, (h)'s kind; names no market, buyer's country or whole store, and no point asks who sets apps (listed below)
+- S02-ZD-307 (f): private apps, installed only 'by stores explicitly granted access': a value per store, none of rule 4's four phrases; no point asks who sets apps
+- S02-ZD-309 (f): an app records the authorized store's connection, and 'Zid records the installation during token exchange': an installation per store, none of rule 4's four phrases (S02-ZD-G15); no point asks who sets apps
+- S02-ZD-310 (f): tells app partners to disclose an app's 'eligibility, country, contract or verification prerequisites'; its country doesn't say whose (rule 2's role test), and it names neither what an app takes its value per nor who sets it
+- S02-ZD-311 (f): defines Zid's App Market, a platform owned by Zid that links the merchant and the partner; names neither what apps take their value per nor who sets them
+- S02-ZD-312 (f): the merchant agrees that the partner is the app's service provider, independent of Zid: a term of the merchant's contract, of (c)'s kinds (the terms), not a setting of the store; names neither what apps take their value per nor who sets them
+- S02-ZD-447 (f): names the languages, currencies and international shipping Zid supports ('مع دعم لغات متعددة، عملات متنوعة، وشحن دولي', my translation: 'with support for many languages, various currencies and international shipping'); names neither what they take their value per nor who sets them
+
+### Candidates for a new point
+
+The second pass raises no point. These statements answer one of (f)'s questions for an X that no point's kind fits, or for a kind no point asks that question of:
+- S02-ZD-213, S02-ZD-217, S02-ZD-219: X 'الشروط والأحكام', 'الشكاوى والاقتراحات', 'التراخيص' (my translation: 'terms and conditions', 'complaints and suggestions', 'licenses'), the store's legal pages other than its return and privacy policies; question: who sets them (the seller: 'يمكنك إدارة وتخصيص السياسات القانونية'). The statements are placed under S02-VP-66 and S02-VP-84 for their return and privacy policies.
+- S02-ZD-288: X 'a default city in the region that has a shipping option', the city a customer selects in the Region & Language popup; question: who sets it (the customer; a default city otherwise). Noted.
+- S02-ZD-346: X 'المنطقة الزمنية' (my translation: 'the time zone'), of S02-VP-77's kind (units and time zone); question: who sets it (the seller: 'يمكنك اختيار المنطقة الزمنية المناسبة'), which no point asks of that kind. Noted.
+- S02-ZD-300 to S02-ZD-302, S02-ZD-304, S02-ZD-306 and S02-ZD-330: X 'التطبيقات' (apps), S02-VP-86's kind; question: who sets them (the seller: 'يمكنك ربط العديد من التطبيقات'; the permission 'manage.app.market.settings'), which no point asks of that kind. Noted.
+
+### Candidates not placed
+
+Each of these statements is placed under another point, or noted; these candidates are not placed:
+- S02-ZD-258's 'وسيتم تحويلها تلقائيا' (my translation: 'and it will be switched automatically'): its words don't say what is switched, so it gives the platform no row under S02-VP-43 or S02-VP-44.
+- S02-ZD-233's review by 'الفريق' (the team) of a request for a free domain: a review of the merchant's request, not who sets the domain (rule 4).
+- S02-ZD-280's 'يتم إتاحة مخزون للعميل' (an inventory is made available) names no party, so it gives no row under S02-VP-78.
+- S02-ZD-275's warehouse chosen for each order when it turns 'جاهز', S02-ZD-282's data per branch, S02-ZD-283's national address per warehouse in Saudi Arabia, and the permissions per member or group (S02-ZD-319 to S02-ZD-322) under S02-VP-71: values per order, location or member, none of rule 4's four phrases.
+- S02-ZD-317's 'automatic notifications': the platform sends them, but the statement names the merchant as who sets them, so no platform row under S02-VP-90.
+- S02-ZD-187's 'the store ... country, and city', changed by the customer: its words don't name a market (S02-ZD-G13), so no row under S02-VP-73 or S02-VP-74.
+
+### Words searched for
+
+None: the second pass raises no point, so no search for earlier platforms' rows was run.
+
+### Problems with the brief, the work list or the tools
+
+- **S02-ZD-G01 (S02-VP-85).** The work list names it among the A2 gaps for S02-VP-85, but it is not in RD3's slice (`slices/RD3/gaps.tsv`): it is under none of RD3's bullets, so it gives no `gap` row (rule 4: a gap under the same bullet), and S02-V-870 stays `not covered`. `method/variants_edit.py` would have taken it: it checks a gap's id against nothing.
+- **S02-V-789 (S02-VP-65) stays `not covered`.** Gap-closing found leads for the point but recorded no gap, and no lead names a market, a buyer's country or the whole store for the return policy; S02-ZD-G18 asks this of the privacy policy on the same pages. The coordinator may want a gap recorded, or the leads read as the whole store.
+- **Readings of the whole store.** S02-V-787 (the establishment's name used in the invoices, S02-ZD-208) and S02-V-800 (the address from the store's basic information that the invoice shows, S02-ZD-223) rest on readings of one value for the store, marked in their rows; gap-closing recorded no gap for these points. The coordinator may prefer `not covered` for them, as for S02-V-789.
+- **A sales channel read as a market.** S02-V-791 reads S02-ZD-280's sales channel (Zid Cashier or the online store) as a market the store sells into, since bullet (e) names a channel among what defines a market; the first pass read only 'لكل سوق وقناة' so.
+- **The Region & Language popup.** Its country and city are read as the buyer's country, not a market, as S02-ZD-G13 reads the popup; RD2's parts may read S02-ZD-187 and S02-ZD-191 (also under e) otherwise.
+- **Ids.** This part's new rows are S02-V-1064 to S02-V-1076 and S02-V-1087 to S02-V-1091; S02-V-1077 to S02-V-1086 went to RD3-S2, which ran beside it.
+
+## Second pass, the coordinator's merge (27 October)
+
+- S02-V-1085 and S02-V-1086, which RD3-S3 gave their own rows under S02-VP-42 because the checker then wanted `answers` alone on any row holding a statement under (g), give the same answers as S02-V-896 (the seller) and S02-V-897 (the platform). Rule 4 keeps one answer in one row, so their statements joined those rows, with their evidence, and the two rows were removed. The checker and rule 4's (g) basis now say: a row resting only on statements under (g) takes `answers` alone; a row that also holds other statements lists every basis that holds, `answers` among them.
+
+## Second pass, RD3-S6: salla, bullets f and g
+
+Salla's tasks in `b/second-pass/RD3/worklist.tsv`: 12 revisits, then 22 `place` tasks under (f) and 33 under (g), in the list's order; the statements under (g) that answer a revisited point were placed with its revisit. Salla's statements are read as the first pass read them (Part RD3-2, 'How this part reads Salla's statements'). Under (g), as RD3-S3 read WooCommerce's: words that one value holds for the store ('your store', 'the store's', 'per store') and one option of the store's settings are read as the whole store, marked a reading where the words don't say so; a statement under (g) goes under a `who sets` point only beside its whole-store answer (rule 4); a row resting only on statements under (g) takes `answers` alone. Each statement joined to a row is compared with the statement in its point's `raised_by` from another platform (rule 5), and its own basis is given in the row's evidence. Where I compared it with a Salla statement already in the row (S02-SA-382 with S02-SA-278, S02-SA-389 with S02-SA-243), the row's bases were rechecked against `raised_by`, and stand.
+
+### Revisits: rows replaced or removed, and what took their place
+
+- S02-V-714 (S02-VP-63, was `not covered`): replaced by the whole store, from statements under (g): S02-SA-379 ('As a shopper, you buy from the store itself, not from Salla.'), S02-SA-381, S02-SA-380, S02-SA-377, and the terms of use's S02-SA-339, S02-SA-341 to S02-SA-344: the store, the merchant, sells to every buyer, and Salla is not party to the sale, a reading. Its four leads, S02-SA-345 to S02-SA-348, are noted.
+- S02-V-715 (S02-VP-64, was `not covered`): replaced by the seller, S02-SA-344 under (g), beside its whole-store answer: the legal form or entity 'يتخذه التاجر أو المتجر' (my translation: 'that the merchant or the store takes'), a reading. The leads name no one who sets it.
+- S02-V-716 (S02-VP-65, was `not covered`): replaced by the whole store, S02-SA-378 (the return experience 'تختلف ... من متجر لآخر', my translation: 'differs from one store to another', set out in the store's exchange and return policy page) and S02-SA-386 (the option 'Order cancellation' of the store's settings), both under (g), a reading; added S02-V-1092 beside it, `gap` S02-SA-G06, which asks whether the policy or the cancellation setting can take a value per market. The lead S02-SA-382 names the countries a store ships to and the payment methods it accepts, not returns: it joined S02-V-708 (S02-VP-59, the buyer's country), S02-V-709 (S02-VP-60, the seller) and S02-V-712 (S02-VP-62, the seller), where its Arabic counterpart S02-SA-278 stands.
+- S02-V-717 (S02-VP-66, was `not covered`): replaced by the seller, S02-SA-378 (some stores let the buyer submit a return from the account, some ask for customer service: the stores as who sets it, a reading) and S02-SA-386 (a control of the store's settings), under (g).
+- S02-V-731 (S02-VP-76, was `not covered`): left `not covered`. Its leads are not the store's address: S02-SA-421 is a branch's or warehouse's details ('Choose the country, address, postal code, street, and district.'), and S02-SA-425 the pickup location, 'where carriers will pick up orders' (rule 1: a location the statement says orders ship from is not the store's own). Both joined S02-V-734 (S02-VP-78, who sets locations: the seller). `why` names no gap.
+- S02-V-732 (S02-VP-77, was `not covered`): replaced by the whole store, from statements under (g): S02-SA-431 and S02-SA-432 (bookings use Saudi Arabia time only), S02-SA-433 (an option of the store's settings for the order prep list's time zone, a reading) and S02-SA-435 (a product's weight unit, set for each product, the same for every buyer, a reading, as RD3-S3 read a value for each product). No lead under (f).
+- S02-V-869 (S02-VP-85, was `not covered`): replaced by `gap` S02-SA-G11. Its five leads are noted: S02-SA-426 to S02-SA-429, a digital card product's 'store countries', several per product, whose role their words don't state; S02-SA-430, one store's observed settings.
+- S02-V-874 (S02-VP-86, was `not covered`): replaced by the buyer's country, S02-SA-413 to S02-SA-415: one default app for the local SMS notifications to customers and another for the international ones, read as told apart by the customer's country (a reading); added S02-V-1093, the whole store (S02-SA-416 under (g): apps installed 'to your store', a reading), and S02-V-1094, `gap` S02-SA-G09. The same leads are messages to buyers too (rule 1: a setting of two kinds goes under both): added S02-V-1095 under S02-VP-82 (the buyer's country, as above), and joined S02-V-746 under S02-VP-83 (the seller). Leads S02-SA-409 to S02-SA-411 are noted.
+- S02-V-878 (S02-VP-87, was `not covered`): replaced by the whole store, from statements under (g): S02-SA-406 ('Keep one container per store.'), S02-SA-405, and S02-SA-401 to S02-SA-404 (one Google Analytics account and data stream for the store's domain, a reading); and S02-SA-394 and S02-SA-395, the store's reports in its one base currency (a reading, as S02-V-1038 reads WooCommerce's Analytics). Added S02-V-1096 beside it, `gap` S02-SA-G08. No lead under (f).
+- S02-V-882 (S02-VP-88, was `not covered`): replaced by the seller, S02-SA-401 to S02-SA-406 under (g), beside their whole-store answer. No lead under (f). S02-SA-407 (the pixel 'connected automatically') and S02-SA-408 are noted: neither says the pixel holds for the whole store.
+- S02-V-886 (S02-VP-89, was `not covered`): replaced by the whole store, S02-SA-417 under (g), 'Turn all store notifications on or off.', read as the notifications to the merchant, as S02-SA-G10 describes the settings page (a reading); added S02-V-1097 beside it, `gap` S02-SA-G10. No lead under (f).
+- S02-V-890 (S02-VP-90, was `not covered`): replaced by the seller, S02-SA-417 (a control of the store's settings). No lead under (f). S02-SA-418 to S02-SA-420 are noted.
+
+### `place` tasks: where the statements went
+
+Under (f):
+- S02-SA-330 and S02-SA-331 (runs of one list: one source and identifier), S02-SA-333 and S02-SA-334 (the same): joined S02-V-730 (S02-VP-75, the buyer's country: the cookie banner by the visitors' regions); S02-SA-331, S02-SA-333 and S02-SA-334 also joined S02-V-749 (S02-VP-84, the seller).
+- S02-SA-351, S02-SA-352, S02-SA-363, S02-SA-366, S02-SA-369: joined S02-V-705 (S02-VP-58, the seller) only. Their country ('the country the tax will be applied to', 'tax rates for other countries', 'Select a country', 'the selected country') isn't said to be whose, so none is placed under S02-VP-57 (rule 2's role test). S02-SA-369 ('Legal business name') is the text of the tax record's control, read as the first pass read the dashboard's controls.
+- S02-SA-359: joined the market rows and the seller's rows of products (S02-V-684, S02-V-686), prices (S02-V-688, S02-V-689), storefront design (S02-V-696, S02-V-697) and taxes (S02-V-702, S02-V-705): 'controlling how the store appears, how products are priced, and what is available to buy and taxed in each market'.
+- S02-SA-360, S02-SA-361, S02-SA-370: joined S02-V-702 (S02-VP-57, a market) and S02-V-705 (the seller).
+- S02-SA-362, S02-SA-367, S02-SA-368: joined S02-V-703 (S02-VP-57, the buyer's country: the IOSS number 'applies to orders shipped to the EU'; S02-SA-362's 'selling to European Union countries' read the same way, a reading) and S02-V-705 (the seller).
+- S02-SA-389: joined S02-V-677 (S02-VP-41, the buyer's country) and S02-V-679 (S02-VP-42, the platform: 'displayed automatically').
+- S02-SA-396, S02-SA-397, S02-SA-399: joined S02-V-721 (S02-VP-69, the buyer's country); S02-SA-397 also S02-V-723 (S02-VP-70, the platform: 'change automatically'). S02-SA-396 and S02-SA-398 joined S02-V-700 (S02-VP-55, the buyer's country: identity fields at checkout, read as checkout's settings, as the first pass read S02-SA-247).
+- S02-SA-365: noted.
+
+Under (g):
+- S02-SA-339, S02-SA-341 to S02-SA-344, S02-SA-377, S02-SA-379 to S02-SA-381: S02-V-714 (S02-VP-63, the whole store); S02-SA-344 also S02-V-715 (S02-VP-64, the seller).
+- S02-SA-378, S02-SA-386: S02-V-716 (S02-VP-65, the whole store) and S02-V-717 (S02-VP-66, the seller).
+- S02-SA-394, S02-SA-395, S02-SA-401 to S02-SA-406: S02-V-878 (S02-VP-87, the whole store); S02-SA-401 to S02-SA-406 also S02-V-882 (S02-VP-88, the seller).
+- S02-SA-416: S02-V-1093 (S02-VP-86, the whole store).
+- S02-SA-417: S02-V-886 (S02-VP-89, the whole store) and S02-V-890 (S02-VP-90, the seller).
+- S02-SA-431 to S02-SA-433, S02-SA-435: S02-V-732 (S02-VP-77, the whole store).
+- S02-SA-340, S02-SA-407, S02-SA-408, S02-SA-418 to S02-SA-420, S02-SA-434, S02-SA-436: noted.
+
+### Statements noted (rule 2)
+
+- S02-SA-345 (f): an area of partnership that the salla-crossborder page lists for merchants expanding outside Saudi Arabia (its scope), 'المدفوعات و البيع بالنيابة (MoR)' (my translation: 'payments and selling on behalf (MoR)'), which collects payments and manages taxes and obligations 'في السوق المستهدف' (my translation: 'in the target market'): an area of partnership, not a setting of the store (rule 1); it says neither what who sells to a store's buyer takes its value per nor who sets it
+- S02-SA-346 (f): as S02-SA-345, in English ('Areas of partnership we are looking for', its scope): 'Payments and Merchant of Record (MoR) Collect payments, and manage taxes, settlements, and financial obligations in the target market.'
+- S02-SA-347 (f): as S02-SA-345, for global brands entering Saudi Arabia (its scope): 'حلول في التحصيل والتسويات، وادارة الضرائب والالتزامات المحلية' (my translation: 'solutions in collection and settlements, and the management of taxes and local obligations'); names no market, buyer's country or whole store, and no one who sets it
+- S02-SA-348 (f): as S02-SA-347, in English: 'Solutions in collection and settlements, and tax and local compliance management.'
+- S02-SA-365 (f): the tax types the tax record lists ('Value added tax (VAT)' to 'Profit Margin Tax'); names neither what a tax takes its value per nor who sets it
+- S02-SA-409 (f): the supported countries of an app's listing in the Partners portal (its scope), which the app's partner sets ('Select specific countries, or leave empty to support all'): a setting of an app's listing, not of the store (rule 1); its 'target countries' don't say whose country, the store's own or a market's (S02-SA-G09 asks it)
+- S02-SA-410 (f): the countries the Partners portal offers an app's listing ('SA +966 السعودية Saudi Arabia' to 'JO +962 الأردن Jordan'): not a setting of the store; names neither what it takes its value per nor who sets it
+- S02-SA-411 (f): a filter's label in the apps list ('"supported_countries":"Supported countries"'); names no value, what it is taken per, or who sets it
+- S02-SA-426 (f): a digital card product's codes by 'store country' ('Click + New Value to add a store country.'): a product holds several ('Store countries ({{count}}/{{max}})', S02-SA-429) with a default among them (S02-SA-427), so not the one country a store holds as its own (S02-VP-85's role), and the statement doesn't say whose country it is (rule 2's role test); it names the seller as who adds them, but no point's kind fits a product's codes: a candidate for a new point (below)
+- S02-SA-427 (f): as S02-SA-426: 'You can set a default country or remove unused options.'; a candidate for a new point (below)
+- S02-SA-428 (f): a digital card product's codes 'not linked to a specific country' ('Enter codes that are not linked to a specific country.'): the seller enters them, but no point's kind fits a product's codes, and it names no market, buyer's country or whole store: a candidate for a new point (below)
+- S02-SA-429 (f): a header counting a digital card product's store countries ('Store countries ({{count}}/{{max}})'); names neither what they are taken per nor who sets them
+- S02-SA-430 (f): one store's settings, as its storefront at https://sa.aldakheeloud.com/en/ returns them ('"store_country": "SA", "country": "SA"'): one value, not what it is taken per or who sets it (as the first pass noted S02-SA-252); S02-SA-G11 asks whether a market holds a country of its own
+- S02-SA-340 (g): the legal capacity that the establishment, company or other legal form the merchant registers as must have ('يجب أن تتوافر فيه الأهلية القانونية والنظامية والشرعية اللازمة', my translation: 'must have the necessary legal, regulatory and lawful capacity'): a requirement on the business, not that who sells to the buyer, or another setting, holds for the whole store
+- S02-SA-407 (g): 'The pixel, the Conversions API and your product catalog are all connected automatically when you link your account.' names who connects the pixel, the platform, not that it holds for the whole store; rule 4 places a statement under (g) under a `who sets` point only beside its whole-store answer
+- S02-SA-408 (g): 'Choose the pixel you want, then click (Continue).' names who chooses the pixel, the seller, not that it holds for the whole store
+- S02-SA-418 (g): the headers of the Notifications settings' table ('Email', 'App notifications'): a notification's channels, not that its value holds for the whole store, and not who sets it
+- S02-SA-419 (g): a staff permission, 'store notification settings management': who may manage the store's notification settings, not that they hold for the whole store; rule 4 places a statement under (g) under a `who sets` point only beside its whole-store answer
+- S02-SA-420 (g): the merchant app's notifications of orders' statuses and the platform's updates ('استقبل إشعارات مباشرة على جوالك أو جهازك اللوحي', my translation: 'receive direct notifications on your phone or tablet'): what the merchant receives, not that a setting holds for the whole store, or who sets it
+- S02-SA-434 (g): the weight units offered ('"g":"Gram","kg":"Kilogram","lb":"Pound","oz":"Ounce"'): the options of a product's weight unit, not that one holds for the whole store
+- S02-SA-436 (g): 'Default product weight for shipping', one setting of the store's, which holds for the whole store (a reading); but a product's default weight is of none of rule 1's kinds, and neither a unit nor a time zone (S02-VP-77's kind): a candidate for a new point (below)
+
+### Candidates for a new point
+
+- S02-SA-426, S02-SA-427 and S02-SA-428 (f): X, a digital card product's codes ('Codes by store country' and 'General codes', their identifiers); the question they answer, `who sets "X"`: the seller ('Click + New Value to add a store country.', 'You can set a default country or remove unused options.', 'Enter codes that are not linked to a specific country.'). They also take the codes per 'store country', several per product, without saying whose country that is, so they answer no `what "X" takes its value per` in rule 4's four phrases. No kind of rule 1 fits a product's codes: products holds which products are offered, and in what order.
+- S02-SA-436 (g): X, 'Default product weight for shipping'; the question it answers, `what "X" takes its value per`: the whole store (one setting of the store's, a reading). Neither a unit nor a time zone (S02-VP-77's kind), nor shipping's zones, rates, options or carriers.
+
+### Words searched for
+
+None. Every task named its statements, each was printed by id, and no point was raised, so no earlier platform's rows were searched for.
+
+### Problems with the brief, the work list or the tools
+
+- **Revisits with no lead under (f).** For S02-VP-77 and S02-VP-87 to S02-VP-90, `why` names no lead under (f), only statements under (g) with their own `place` tasks. Their `not covered` rows were replaced from those statements, since a `not covered` row never stands beside another row of its platform; each outcome is recorded with `done`.
+- **A lead of another point.** S02-SA-382, the only lead the work list names for S02-VP-65 and S02-VP-66, names shipping countries and payment methods, not returns; it was placed where its Arabic counterpart S02-SA-278 stands.
+- **(g) and who sets.** A statement under (g) whose words name who sets but not the whole store is noted, as RD3-S3 noted S02-WC-276 (rule 4 places it under a `who sets` point only beside its whole-store answer). So S02-SA-407's platform ('connected automatically') and S02-SA-419's staff permission are in no row of S02-VP-88 or S02-VP-90, though the statements state them. The coordinator may want to rule.
+- **Readings of kind.** 'local' and 'international' SMS (S02-SA-413 to S02-SA-415) are read as the customer's country, and the default SMS app as of two kinds, apps (S02-VP-86) and messages to buyers (S02-VP-82, S02-VP-83); both readings are mine. The pickup location (S02-SA-425) is read as a location that fulfils orders (S02-VP-78), not as shipping.
+
+## Second pass, RD3-S7: salla and woocommerce, bullet g
+
+Fourteen `reread` tasks, the last fourteen rows of the work list: statements under (g) that RD3-S3 and RD3-S6 noted because rule 4 then placed a statement under (g) under a `who sets` point only beside its whole-store answer. Rule 4 as widened on 27 October 2026 places a statement under (g) that names who sets, changes or may manage a setting of the store under that setting's `who sets "X"` point. Each task is recorded in `done.tsv`. The earlier notes stay as they are.
+
+### Rereads placed: new rows
+- S02-SA-407: S02-V-1098, a new row under S02-VP-88 (who sets "web analytics"), the platform: 'The pixel, the Conversions API and your product catalog are all connected automatically when you link your account.' ('automatically', rule 4). Its 'when you link your account' names the merchant's linking of the Meta account, not who connects the pixel. Its 'your product catalog' is not placed under S02-VP-48 (products): the statement names the catalog's connection to Meta, not which products the store offers or their order. Listed below as a candidate.
+- S02-SA-419: S02-V-1099, a new row under S02-VP-90 (who sets "internal notifications"), a staff permission: 'store notification settings management', of the staff permission group 'إعدادات المتجر'. Rule 4: a staff permission that the statement says gates it is its own answer, beside the seller's (S02-V-890). A reading: the settings it gates are read as those of the settings page Notifications (S02-SA-417: 'Turn all store notifications on or off.'), by the same words 'store notification'.
+
+### Rereads placed: joined to a row
+- S02-SA-408: joined S02-V-882 (S02-VP-88, the seller): 'Choose the pixel you want, then click (Continue).', an instruction to the merchant.
+- S02-WC-276: joined S02-V-932 (S02-VP-66, the seller): 'must maintain fair and legally compliant return, refund, cancellation, and adjustment policies', under its identifier 'Your responsibilities'. The terms require the policies, and a party that requires a value isn't who sets it (rule 4). This is the placement RD3-S3 named for the coordinator.
+- S02-WC-283: joined S02-V-932 (S02-VP-66, the seller), a reading: 'It’s up to you how withdrawal requests are handled', read as who manages the store's returns and cancellations. Its 'does not automatically change the order status, cancel the order, or issue a refund' names what the platform doesn't do, so it gives no row of the platform.
+- S02-WC-473: joined S02-V-1049 (S02-VP-72, the platform): the code sets the roles a Shop Manager may edit, apply_filters( 'woocommerce_shop_manager_editable_roles', array( 'customer' ) ), and leaves 'administrator' out of them for a user without the administrator role. A value the code sets is the platform's (rule 4), and the filter alone names no party. It was already in S02-V-1051 (the Administrator role), from (f). The Shop Manager role gets no row: its editable roles, 'customer' by default, name what it is kept out of, not staff access it sets.
+
+### Rereads placed by rows they already held, from (f)
+Each of these is under (f) and (g). RD3-S2 placed it under (f) in rows of the `who sets` point that the widened rule places it under for (g). No row changed.
+- S02-WC-364: S02-V-1010 (S02-VP-52, the buyer): 'Customers enter the code at cart or checkout to receive the discount'. Its 'Send your coupon code to customers' names who sends the code, not who sets the discount, as RD3-S2 read it.
+- S02-WC-452: S02-V-942 (S02-VP-72, the seller).
+- S02-WC-463: S02-V-942 (the seller) and S02-V-1050 (an extension or plugin), under S02-VP-72.
+- S02-WC-489: S02-V-951 (S02-VP-81, the seller): 'for you to provide selective access to your site'.
+- S02-WC-496: S02-V-1055 (a hosting provider) and S02-V-1056 (developers), under S02-VP-81.
+- S02-WC-498: S02-V-1054 (S02-VP-81, another plugin or application).
+
+### Rereads left noted (rule 2)
+- S02-WC-418 (g): Show Suggestions names who sets it, the seller by its checkbox ('Leave this box unchecked if you do not want to pull suggested extensions from WooCommerce.com.') and the platform by 'default' => 'yes'; but the suggestions the platform shows the merchant are of no point's kind, and not the apps a store installs (S02-VP-86's kind), as RD3-S2 and RD3-S3 read it, and RD3 has no `who sets` point for apps: a candidate for a new point (below)
+- S02-WC-507 (g): 'if ( current_user_can( 'manage_woocommerce' ) ) { return false;' names who the coming soon mode lets through, not who sets, changes or may manage the mode, as RD3-S2 and RD3-S3 read it
+
+### Candidates for a new point
+- **who sets "suggested extensions"** (Show Suggestions: 'pull suggested extensions from WooCommerce.com'), S02-WC-418: the seller (its checkbox) and the platform ('default' => 'yes'). Of none of rule 1's kinds. RD3-S2 and RD3-S3 listed it too.
+- **who sets "your product catalog"** (its connection to Meta), S02-SA-407: the platform ('connected automatically when you link your account'). The statement is placed under S02-VP-88 for the pixel and the Conversions API. The catalog's connection is read as of no point's kind, since the statement names neither which products the store offers nor their order (S02-VP-48's kind). Read as of the products kind, it would be a new row of S02-VP-48 (salla, the platform).
+
+### Words searched for
+- In the slice's `terms.tsv`, for Salla: 'pixel', 'notification', 'إشعار', 'تنبيه'. None found.
+- Points' rows read: S02-VP-83 and S02-VP-87 to S02-VP-90 (salla); S02-VP-52, S02-VP-65, S02-VP-66, S02-VP-72 and S02-VP-81 (woocommerce).
+- x_words added: S02-VP-88, salla, 'Meta pixel; Conversions API'; S02-VP-90, salla, 'store notification settings'; S02-VP-66, woocommerce, 'return, refund, cancellation, and adjustment policies; withdrawal requests'.
+
+### Problems with the brief, the work list or the tools
+- Six of the fourteen rereads (S02-WC-364, S02-WC-452, S02-WC-463, S02-WC-489, S02-WC-496, S02-WC-498) were already in rows of the point that their (g) reading answers, placed there under (f) by RD3-S2. Their reread changed no row. S02-WC-473 was also already in one, and joined one more.
+- S02-WC-489 and S02-WC-507 both concern who the coming soon mode lets through. RD3-S2 placed S02-WC-489 in the seller's row by its 'for you to provide selective access to your site', and noted S02-WC-507. This part keeps both readings: in S02-WC-489 the merchant provides the access; S02-WC-507's capability names whom the mode doesn't apply to.
+
+## Second pass, RD3-S8: the two new who-sets points, S02-VP-91 and S02-VP-92, and rereads under (f) and (g)
+
+The 26 tasks of the coordinator's rulings when the parts ended (`b/second-pass.md`): a row for every platform under S02-VP-91 and S02-VP-92, and 24 rereads. No row was replaced or removed, and no statement was noted.
+
+### New rows: S02-VP-91, who sets "measurement and weight units, and time zone" (S02-VP-77's twin)
+- S02-V-1100, shopify, the seller: S02-SH-246 (under (g): 'Store defaults: Manage your default currency, currency formatting, measurement and weight units, and time zone in this section.'), S02-SH-345 and S02-SH-398 (the section's controls in the store's admin: 'Unit system', 'Default weight unit', 'Time zone'), from S02-VP-77's row S02-V-675. S02-SH-345's 'user level time zone' is a setting of the user's account, not of the store (rule 1), and is not read as X.
+- S02-V-1101, salla, the seller: S02-SA-433 (the order prep list's setting 'Use Saudi Arabia time zone'), from S02-V-732.
+- S02-V-1102, salla, no one can: S02-SA-431 ('Is there an option to add a time zone?': 'Not yet.') and S02-SA-432 ('Can I set a custom time zone?'), booking products, from S02-V-732. A reading: the statements say the store has no option to set the bookings' time zone, and name no party that sets it.
+- S02-V-1103, zid, the seller: the reread S02-ZD-346.
+- S02-V-1104, woocommerce, the seller: the rereads S02-WC-289 and S02-WC-291 ('This controls what unit you will define weights in.', '... lengths in.') and S02-WC-312 ('Set your store\'s address, visibility, currency, language, and timezone.').
+- S02-V-1105, woocommerce, the platform: the rereads S02-WC-244 and S02-WC-292 (onboarding sets the units from a country's locale info, with the store's location) and S02-WC-288 (the settings' defaults are the units of 'US').
+- S02-V-1106, bigcommerce, the seller: S02-BC-165, S02-BC-253, S02-BC-256 and S02-BC-285, from S02-V-860 and S02-V-983, and the reread S02-BC-257.
+- S02-V-1107, bigcommerce, the Edit Channels permission: the reread S02-BC-257.
+- S02-VP-77's statements read and not placed under S02-VP-91, as they name no one who sets, changes or may manage the setting: S02-SA-435, S02-BC-109 ('can be customized'), S02-BC-168, S02-BC-292, S02-WC-290, S02-WC-310, S02-WC-311.
+- No platform needed the search under (f) and (g): each had an answer from the rereads or from S02-VP-77's rows.
+
+### New rows: S02-VP-92, who sets "apps" (S02-VP-86's twin)
+- S02-V-1108, shopify, the seller: S02-SH-767 ('When you install an app that has app pixels') and S02-SH-946 ('After you install the Shopify Messaging app'), found by the search.
+- S02-V-1109, shopify, the staff permission 'Manage and install apps and channels': S02-SH-766, found by the search. A reading: the statement names the permission that gates managing an app's pixels, and the permission's own name is to manage and install apps. S02-SH-766 is also under S02-VP-88 (S02-V-1033).
+- S02-V-1110, salla, the seller: S02-SA-413 to S02-SA-415 (the default apps for SMS, from S02-V-874) and S02-SA-416 ('where you browse and install apps', from S02-V-1093).
+- S02-V-1111, zid, the seller: the rereads S02-ZD-300 to S02-ZD-302, S02-ZD-304 and S02-ZD-306.
+- S02-V-1112, zid, the staff permission manage.app.market.settings: the reread S02-ZD-330, read as a permission from its source, Zid's page on user roles and permissions.
+- S02-V-1113, woocommerce, the seller: S02-WC-025 (under (g): 'you will need to add a multi-currency extension/plugin') and S02-WC-415 ('you can pick another extension'), found by the search.
+- S02-V-1114, bigcommerce, `not covered` (below).
+- S02-VP-86's statements read and not placed under S02-VP-92, as they name no one who installs or manages apps: S02-SH-091, S02-BC-147.
+
+### Rereads placed: joined to a row
+- S02-WC-444 and S02-WC-447 (g), personal data retention: S02-V-1082 (S02-VP-75, the whole store) and S02-V-1046 (S02-VP-84, the seller). S02-WC-339 (g) was already in both rows, which give its retention words the same answers; their evidence now names retention.
+- S02-ZD-213, S02-ZD-217 and S02-ZD-219 (f), the store's legal pages: S02-V-773 (S02-VP-54, the seller). None of them names a market, a buyer's country or the whole store, so none answers S02-VP-53.
+- The rereads under S02-VP-91 and S02-VP-92 are in the new rows above.
+
+### `not covered` rows
+- S02-V-1114 (S02-VP-92, bigcommerce): S02-BC-147 says apps 'are installed at the store level' and names no one who installs them, and the search found no other statement. For gap-closing.
+
+### Candidates for a new point
+None.
+
+### Words searched for
+- **S02-VP-92**, in the (f) and (g) statements of shopify, bigcommerce and woocommerce: 'app', 'apps', 'app store', 'app market', 'extension', 'plugin', 'install', 'marketplace', 'تطبيق', and for woocommerce 'activate'. Read and not placed under it:
+  - shopify: S02-SH-654 ('you need an app') and S02-SH-958 ('consider using a third-party app'), an app the seller needs or uses, not who installs or manages it; S02-SH-744, S02-SH-790 and S02-SH-796, a sales channel or Inbox installed, which they don't call an app; S02-SH-729 and S02-SH-768 to S02-SH-771, the pixels' settings, under S02-VP-88; S02-SH-844, S02-SH-846, S02-SH-862, S02-SH-910, S02-SH-913 and S02-SH-943, apps as locations or as who sets them; and the others the search found, where 'app' is the Shopify app, the Shop app, Translate & Adapt's work, or the business entity used for apps (S02-SH-399 to S02-SH-401).
+  - woocommerce: S02-WC-463 ('you can use an extension or plugin to adjust permissions'), using one, as above; S02-WC-418, left noted by the coordinator's ruling; the extensions the platform suggests or recommends by the store's country (S02-WC-001 to S02-WC-003, S02-WC-061, S02-WC-205, S02-WC-416, S02-WC-417, S02-WC-419, S02-WC-420, S02-WC-434), what the platform shows the merchant, as that ruling reads S02-WC-418; S02-WC-436, S02-WC-449 and S02-WC-464 to S02-WC-467, what an extension does; S02-WC-498 to S02-WC-502, a plugin as who sets coming soon mode; S02-WC-024, S02-WC-326, S02-WC-481 and S02-WC-492, WooCommerce itself installed.
+  - bigcommerce: S02-BC-174, S02-BC-175, S02-BC-179 and S02-BC-326 (the Catalyst app, the storefront's own), S02-BC-268 (the Theme Marketplace).
+- In the slice's `terms.tsv`: 'time zone', 'timezone', 'weight', 'app', 'تطبيق', 'المنطقة الزمنية', 'extension', 'plugin', 'الصفحات القانونية', 'الشروط والأحكام'. Found: zid's 'سوق تطبيقات زد' ('Zid App Market'), 'تطبيقاتي', 'التطبيقات المدمجة', 'Public apps', 'Private apps', 'المنطقة الزمنية', 'الصفحات القانونية'; woocommerce's 'Weight unit'; bigcommerce's 'Localization settings'.
+- In the five platforms' gaps under (f), the same words: none asks who sets the units, the time zone or apps. S02-ZD-G15, S02-ZD-G21 and S02-SA-G09 ask what they take their value per. S02-WC-G05 asks whether the platform applies the per-country units or the seller chooses; S02-V-1104 and S02-V-1105 give both, so no `gap` row stands beside them.
+- `term` rests on the same words, or on a translation, marked in `basis_evidence` (rule 0): zid's own ('سوق تطبيقات زد': 'Zid App Market', so 'تطبيقات' is 'App'), or mine ('المنطقة الزمنية': 'the time zone').
+- x_words added: S02-VP-91, salla 'Use Saudi Arabia time zone; custom time zone', zid 'المنطقة الزمنية', bigcommerce 'date and timezone settings; standard dimension and date and time formats'; S02-VP-92, shopify 'app; Shopify Messaging app', zid 'التطبيقات; تطبيقاتي; التطبيقات المدمجة; Public apps; application settings', woocommerce 'extension; plugin; multi-currency extension/plugin'; S02-VP-75 and S02-VP-84, woocommerce 'Personal data retention'; S02-VP-54, zid 'الصفحات القانونية; الشروط والأحكام; الشكاوى والاقتراحات; التراخيص'.
+
+### Problems with the brief, the work list or the tools
+- The message that started this part arrived as the literal text `$(cat .../b2-parts/RD3-S8.txt)`, unexpanded; the part read that file for its tasks.
+- Rule 5 lets a statement's identifier or scope name what fills X, but not its source. S02-ZD-330's words, identifier and scope don't say it is a permission; only its source does. S02-V-1112 rests on that, as a reading.
+- `method/variants_edit.py` has a `rownote` command its usage doesn't list, and its usage doesn't say that `join` with a statement the row already holds adds only the evidence.
+
+### After the check (RD3-S8)
+- S02-V-1100, S02-V-1101 and S02-V-1102 replaced, keeping their answers and statements: each rests only on statements under (g), so each takes the basis `answers` alone (rule 4, (g), Basis), where they first gave `answers;term`. The checker named S02-V-1101 and S02-V-1102; S02-V-1100's statements also carry RD1's or RD2's bullets, but under RD3 they are (g)'s alone.
+- The checker found that the questions of S02-VP-91 and S02-VP-92 quote an X from none of their `raised_by` statements (rule 3). This part added to `raised_by`, with a line in each point's `note`: S02-SH-246 to S02-VP-91, the statement its question quotes ('measurement and weight units, and time zone'), placed in S02-V-1100; and S02-ZD-306 to S02-VP-92, a statement of the raising platform that holds 'apps' ('All merchants on the platform can view, install, and benefit from these apps.'), placed in S02-V-1111. The coordinator may prefer another; the questions are as the coordinator wrote them.
+- With S02-SH-246 in S02-VP-91's `raised_by`, S02-V-1103 (zid) was compared with it again (rule 5) and replaced with the basis `answers;term`: Zid's 'المنطقة الزمنية' (my translation: 'the time zone') and Shopify's 'time zone'.
 

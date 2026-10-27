@@ -333,3 +333,51 @@ The message gave the release's settings pages as the complete list of a store's 
 - My rows were written by `/tmp/claude-0/-home-user/9f45def8-b710-5f9c-84f3-6a0fa7e617c8/scratchpad/s02-a2-t/scripts/write_rows.py`. It refuses an id already present or out of sequence and a wrong column count, and changes only the named `a2.tsv` rows. A diff against a copy taken before showed only those rows changed, and the rest appended.
 
 **Check (A2-T):** on a copy holding only `bullets.tsv` and this folder (`/tmp/claude-0/-home-user/9f45def8-b710-5f9c-84f3-6a0fa7e617c8/scratchpad/s02-a2-t/check-woocommerce/S-02`, output in `.../check-woocommerce/out`), 2026-10-27: 516 statements, 8 gaps, 623 quotes found and 8 found in the page's source only, no error. My nine quotes are all found. The `review` lines that are mine are S02-WC-N01 to S02-WC-N04, waiting for their audit. The warning (S02-WC-C024, 313 characters) and the other 8 `review` lines are earlier parts' citations.
+
+## Absence audit, part A3-2 (2026-10-27): S02-WC-N01 to S02-WC-N04
+
+Phase A3, part A3-2, by an agent that made none of the claims. Brief: `studies/subjects/S-02/briefs/A3-absence-audit.md`, with `briefs/A-one-platform.md`'s rules, and the coordinator's message: judge each absence of part A2-T against the two limits A2-T named, the filter `woocommerce_get_settings_pages` and the settings outside the 13 files. Rows in `absence-audit.tsv`; statements S02-WC-517 to S02-WC-520; citations S02-WC-C632 to S02-WC-C638. The release at `/home/user/woocommerce-release/11.2.1/woocommerce`; captured pages at sharrwah-knowledge-map de03f483ec98f2c40c3e25e4a5f8ee48129c3815 (HEAD). Every search was run from the repository's root on 2026-10-27; the commands are in `absence-audit.tsv`. No live page was read.
+
+### Read, in order
+- This folder's `absences.tsv`, the A2-T section above, and the statements and citations the four absences name.
+- **The filter.** The release's PHP searched for `add_filter` on `woocommerce_get_settings_pages`, `woocommerce_get_sections_*` and `woocommerce_get_settings_*`. No code of the release adds a page: the filter's one use is the `apply_filters` call (`includes/admin/class-wc-admin-settings.php` line 64). The release's own code adds sections or settings to four pages: Products (`FulfillmentsSettings`, `ApprovedDirectories`, `LookupDataStore`, `StockNotifications`, `MatchImageBySKU`), Advanced (`FeaturesController`'s Features section; `StockNotifications`' My account endpoint), Payments (`PaymentsController`'s sections) and Shipping (the Blocks `ShippingController`, which removes settings and holds Local Pickup). Each file was searched for a country, location, redirect, legal or business entity. The matches are redirects after saving (`ApprovedDirectories`, `FeaturesController`), a guest's redirect to a login page (`StockNotifications`), and Local Pickup's locations (recorded, S02-WC-389 to S02-WC-394). The Features list (25 features) names no market or country.
+- **The settings outside the 13 files:**
+  - `views/settings-tax.php` and `views/html-settings-tax.php`: a tax rate's country code;
+  - the shipping zones' views (`html-admin-page-shipping-*.php`): a zone's regions, and Limit to specific ZIP/postcodes;
+  - the one integration the release holds, `includes/integrations/maxmind-geolocation/`: MaxMind License Key. The list of integrations is the filter `woocommerce_integrations` (`includes/class-wc-integrations.php` line 36);
+  - the Payments page: `src/Internal/Admin/Settings/Payments.php`, `PaymentsProviders/PaymentGateway.php` and `PaymentsProviders/WooPayments/WooPaymentsService.php`, and its scripts `assets/client/admin/wp-admin-scripts/settings-embed.js`, `chunks/settings-payments-main.js` and `chunks/6018.js`.
+
+  Site visibility's page (a slot-fill) wasn't read beyond the searches, and no search listed its script.
+- The searches' documents, as `absence-audit.tsv` lists them, including four captured guides at the lines listed: WooPayments account management, Know Your Customer, Settings Guide, and Multi-currency.
+
+### What I found
+- **S02-WC-N01, confirmed.** No setting outside the 13 files caps the countries a store sells to, or sets when a selling location applies.
+- **S02-WC-N02, partly contradicted.**
+  - The Payments page's WooPayments onboarding has a business step that asks "What type of legal entity is your business?" and "What category of legal entity identify your business?", beside "Where is your business located?" (S02-WC-517). Its answers are read from the user's NOX profile for each location (S02-WC-518). The types it offers for each country: S02-WC-263.
+  - The step's chunk is the Payments page's own: the settings script loads chunk 6018 with `settings-payments-main`, and `settings-payments-main.js` opens the onboarding on the Payments settings page (`page` wc-settings, `tab` checkout). So the absence's note that S02-WC-263 is "not in the settings pages" doesn't hold.
+  - Still stands: no page holds the business's legal name or a merchant of record, and nothing is set per selling location. The Know Your Customer guide lists the business owner's legal name among the information payment signup needs. That is Stripe's verification, not a settings page.
+- **S02-WC-N03, confirmed.**
+  - The redirects found beside geolocation are the cache-busting redirect of geolocation by ajax (`includes/class-wc-cache-helper.php` lines 188-193), and checkout and admin redirects.
+  - The "switcher" is WordPress's locale switcher (`includes/wc-core-functions.php` line 2194).
+  - WooPayments' Multi-currency settings switch a customer's currency, and offer a currency switcher (recorded, S02-WC-194). That is a currency, on the extension's own page, not a selling location.
+- **S02-WC-N04, partly contradicted.**
+  - The Payments page lists its providers for the business location: the gateways and the extension suggestions (S02-WC-519).
+  - It gives each gateway's recommended payment methods for that country, which the gateway provides (S02-WC-520), and whether the gateway's onboarding is supported there (S02-WC-226, S02-WC-227).
+  - The user sets the business location on the page; it is the base country when the user set none (S02-WC-221, S02-WC-223, S02-WC-267; and S02-WC-001 to S02-WC-003).
+  - Still stands: no page makes an extension take a value per selling location or per customer's country.
+- **(h):** no existing (h) statement conditions what S02-WC-517 to S02-WC-520 describe. The (h) statements naming WooPayments condition instant payouts (S02-WC-060) and WooPay (S02-WC-255).
+
+### Searches too many to read in full, and how I narrowed them
+- None reached its cap. Some listed release files match a word in another sense, and were judged by their snippets, as `read` names them:
+  - company name: the buyer's address field, in the REST controllers and checkout schemas;
+  - redirect: checkout, admin and cache redirects;
+  - `admin_options`: the shipping methods' and gateways' own settings.
+- The captured pages titled "Checking your browser..." are bot-challenge pages, judged by their titles.
+
+### Problems with the method
+- The brief's second search for (f) puts the setting's own words after `--with`. For these claims, the names the claim gives are the settings' own words, so I paired the names with the words for what is absent instead (country, selling location, legal entity).
+- A2-T read the Payments page by its PHP file's translatable strings. Its settings are in the React page's scripts and in the `src/Internal/Admin/Settings/` classes, which a list of the 13 files' strings doesn't reach. Site visibility's page is the same kind (a slot-fill), and I didn't read it.
+- The absences stay bounded by the filter. Pages and sections that extensions add, such as WooPayments' own Multi-currency page, aren't in the release.
+
+### Check (A3-2)
+- `python3 -I method/check_subject.py` on a copy holding only `bullets.tsv` and this folder (`/tmp/claude-0/-home-user/9f45def8-b710-5f9c-84f3-6a0fa7e617c8/scratchpad/s02-a3-2/check2-woocommerce/S-02`, output in `.../check2-woocommerce/out`), 2026-10-27: 520 statements, 8 gaps; 630 quotes found and 8 found in the page's source only; no error. My seven quotes (S02-WC-C632 to S02-WC-C638) are all found. The review lines for S02-WC-N01 to S02-WC-N04 are gone. The one warning (S02-WC-C024) and the 8 review lines (S02-WC-C117 to C119, C266 to C270) are earlier parts' citations.
