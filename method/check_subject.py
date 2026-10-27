@@ -325,6 +325,10 @@ for plat, code in PLATFORMS.items():
         if not res.startswith("found"):
             err(f, cid, f"quote {res}{'; ' + why if why else ''}",
                 "pending capture" if res == "unresolved" and re.match(r"^https?://", src) else "error")
+        elif res.endswith("in the page's source only"):
+            err(f, cid, "quote found only in the page's source (its body as served, or its markup's scripts and "
+                        "data), not in the page as it renders: quote what the page shows, or shows on a click "
+                        "(briefs/A-one-platform.md, \"Reading a live page\")", "review")
         quotes.append((cid, res, why, share, src, c["quote"][:200]))
 # ---------- phase A3: every claim of absence is audited by an agent that didn't make it ----------
 for plat in PLATFORMS:

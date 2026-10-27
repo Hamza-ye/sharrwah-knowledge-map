@@ -154,9 +154,14 @@ class Sources:
             texts.append(json_unescaped(text))
         return texts, ""
 
-    def web_texts(self, url):
+    def web_texts(self, url, with_origin=False):
         """The texts of every capture of the address: a quote is found if any capture holds it, since an earlier
-        capture may hold an empty shell where a later one holds the page."""
+        capture may hold an empty shell where a later one holds the page. With with_origin, each text comes with
+        where it came from: "shown" for the page as it rendered (its visible text, text.txt, and the text of the
+        page after its scripts ran, rendered.html, hidden parts such as a closed FAQ answer included), "source"
+        for the markup as stored (the body as served, raw.* and raw-browser.*, and the rendered markup's scripts
+        and data). The source can hold what the page doesn't show: zid.eg's Terms page holds the Saudi Terms in
+        its body and its data, and its scripts show the Terms of Zid Egypt."""
         key = url.split("#")[0]
         if key not in self.manifest:            # the same page under its .md endpoint, or with or without a slash
             base = key[:-3] if key.endswith(".md") else key.rstrip("/")
@@ -176,23 +181,31 @@ class Sources:
                 if name.endswith((".pdf", ".bin", ".png", ".jpg", ".jpeg", ".gif", ".webp")):
                     continue
                 raw = open(fp, encoding="utf-8", errors="replace").read()
-                texts.append(raw)
-                if name.endswith(".html"):
-                    texts.append(html_text(raw))
+                if name.startswith("text"):
+                    texts.append(("shown", raw))
+                    continue
+                texts.append(("source", raw))       # the markup as stored, its scripts and data included
+                if name.endswith(".html"):          # the text of the page after its scripts ran, hidden parts too
+                    texts.append(("shown" if name.startswith("rendered") else "source", html_text(raw)))
                 if name.endswith(".json"):
-                    texts.append(json_unescaped(raw))
+                    texts.append(("source", json_unescaped(raw)))
         if not texts:
             return None, f"captured as '{'; '.join(results)}' with no readable text"
-        return texts, ""
+        return (texts if with_origin else [t for _, t in texts]), ""
 
     def texts(self, source, locator=""):
         off = re.search(r"(\d{3,})", locator or "") if source.endswith(".warc.gz") else None
         key = (source, off.group(1) if off else (locator if source.endswith(".warc.gz") else ""))   # a record, by offset
         if key in self.cache:
             return self.cache[key]
-        res = self.web_texts(source) if re.match(r"^https?://", source) else self.local_texts(source, locator)
-        if res[0] is not None:
-            res = ([v for t in res[0] for v in variants(t)], res[1])
+        if re.match(r"^https?://", source):
+            res = self.web_texts(source, with_origin=True)
+            if res[0] is not None:
+                res = ([(k, v, o) for o, t in res[0] for k, v in variants(t)], res[1])
+        else:
+            res = self.local_texts(source, locator)
+            if res[0] is not None:
+                res = ([(k, v, "file") for t in res[0] for k, v in variants(t)], res[1])
         self.cache[key] = res
         return res
 
@@ -201,11 +214,18 @@ class Sources:
         if texts is None:
             return "unresolved", why, ""
         qv = variants(quote)
+        # a capture that rendered the page: its visible text runs past 1,500 characters, where a failed render
+        # shows an error text or nothing
+        rendered = any(o == "shown" and k == "exact" and len(re.sub(r"\s+", "", t)) > 1500 for k, t, o in texts)
         for (kind, q), level in zip(qv, range(3)):
-            for (tkind, t) in texts:
-                if tkind == kind and q and q in t:
-                    return ("found" if level == 0 else f"found ({kind})"), "", ""
-        best = max((shingle_share(qv[2][1], t) for tk, t in texts if tk == "case and diacritics ignored"), default=0.0)
+            hits = {o for (tkind, t, o) in texts if tkind == kind and q and q in t}
+            if hits:
+                res = "found" if level == 0 else f"found ({kind})"
+                if hits == {"source"} and rendered:  # in the markup as stored, but not in the page as it renders
+                    res += " in the page's source only"
+                return res, "", ""
+        best = max((shingle_share(qv[2][1], t) for tk, t, o in texts if tk == "case and diacritics ignored"),
+                   default=0.0)
         return "not found", "", f"{best:.2f}"
 
 

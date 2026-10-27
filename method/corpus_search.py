@@ -255,6 +255,16 @@ def documents(platform):
             else:
                 yield (f"{prefix} release", f"{prefix}:{rel}", "", "", text)
     head = subprocess.run(["git", "-C", SKM, "rev-parse", "HEAD"], capture_output=True, text=True).stdout.strip()
+    # The addresses some capture rendered (its visible text past 2,000 bytes, where a failed render shows an error
+    # text or nothing): a capture of theirs that rendered nothing is left out, since the one that rendered stands
+    # for the page, with what only its source holds beside it.
+    rendered = set()
+    for mf in glob.glob(os.path.join(SKM, "evidence/product-class/runs/*/manifest.tsv")):
+        with open(mf, encoding="utf-8", newline="") as f:
+            for r in csv.DictReader(f, delimiter="\t", quoting=csv.QUOTE_NONE):
+                tp = os.path.join(os.path.dirname(mf), r.get("dir", ""), r.get("text_file") or "-")
+                if os.path.isfile(tp) and os.path.getsize(tp) > 2000:
+                    rendered.add(r.get("url", ""))
     for mf in sorted(glob.glob(os.path.join(SKM, "evidence/product-class/runs/*/manifest.tsv"))):
         run = os.path.dirname(mf)
         with open(mf, encoding="utf-8", newline="") as f:
@@ -266,19 +276,41 @@ def documents(platform):
                 d = os.path.join(run, r["dir"])
                 tp = os.path.join(d, r["text_file"])
                 if os.path.isfile(tp):
-                    # The visible text, and the raw page's text too: some sites keep their content only in the
-                    # raw HTML, and render an error or an empty shell (zid.sa, for one).
+                    # The page as it rendered: its visible text, and the text of its rendered markup, whose hidden
+                    # parts (a closed FAQ answer) the visible text leaves out.
                     text, title = open(tp, encoding="utf-8", errors="replace").read(), ""
+                    seen = fold(text)
+                    rp = os.path.join(d, "rendered.html")
+                    if os.path.isfile(rp):
+                        page = open(rp, encoding="utf-8", errors="replace").read()
+                        m = re.search(r"<title[^>]*>(.*?)</title>", page, re.S | re.I)
+                        title = html.unescape(re.sub(r"\s+", " ", m.group(1))).strip() if m else ""
+                        extra = [l for l in html_text(page).splitlines() if len(l.strip()) >= 20 and fold(l) not in seen]
+                        text += "\n" + "\n".join(extra)
+                    # The page as served, before its scripts ran. It can hold what the page doesn't show: zid.eg's
+                    # Terms page holds the Saudi Terms, which its scripts replace with the Terms of Zid Egypt.
+                    served = ""
                     for raw in sorted(glob.glob(os.path.join(d, "raw*.html"))):
                         page = open(raw, encoding="utf-8", errors="replace").read()
                         m = re.search(r"<title[^>]*>(.*?)</title>", page, re.S | re.I)
                         title = title or (html.unescape(re.sub(r"\s+", " ", m.group(1))).strip() if m else "")
-                        text += "\n" + html_text(page)
+                        served += "\n" + html_text(page)
                     if host == "help.zid.sa":
-                        text = zid_article(text)
+                        text, served = zid_article(text), zid_article(served)
                     rel = os.path.relpath(tp, SKM)
-                    yield ("capture runs", f"sharrwah-knowledge-map@{head}:{rel} (and the raw page beside it)", r["url"],
-                           title, text)
+                    if len(re.sub(r"\s+", "", text)) < 1500:
+                        if r["url"] in rendered:
+                            continue                 # another capture rendered the page, and stands for it
+                        # the render showed an error or almost nothing: the page as served is all there is
+                        yield ("capture runs", f"sharrwah-knowledge-map@{head}:{rel} (and the raw page beside it, "
+                               "since the page rendered almost nothing)", r["url"], title, text + served)
+                        continue
+                    yield ("capture runs", f"sharrwah-knowledge-map@{head}:{rel}", r["url"], title, text)
+                    seen = fold(text)
+                    only = "\n".join(l for l in served.splitlines() if len(l.strip()) >= 20 and fold(l) not in seen)
+                    if len(only) >= 200:
+                        yield ("capture runs", f"sharrwah-knowledge-map@{head}:{os.path.relpath(d, SKM)}/raw "
+                               "(the page as served: text the page as rendered doesn't show)", r["url"], title, only)
     # The founder's saves for the platform: browser saves, and the documents saved beside them.
     for path in sorted(glob.glob(os.path.join(SKM, "evidence/product-class/blocked-evidence-founder", platform, "**", "*"),
                               recursive=True)):
@@ -370,6 +402,8 @@ def main():
         if also and not with_hits:
             continue
         key = loc if corpus in runs else (url or loc)   # a run's document is its own observation
+        if "doesn't show)" in loc:
+            key = (url or loc) + " (as served)"  # what only a page's source holds is listed apart from the page
         if key not in best:
             order.append(key)
         elif len(text.strip()) <= len(best[key][4].strip()):

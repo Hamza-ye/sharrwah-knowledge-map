@@ -242,6 +242,7 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 | BC-1b: the Help Center articles behind BC-1's gaps G04, G05, G07 and G08 | 5 | 5 | 2 | 45 | G09, G10 and G11, in place of G04, G07 and G08; G05 answered | 41 | 6.4 |
 | ZD-3: analytics and tracking; apps; notifications to the merchant; privacy and consent; staff access; store status; units and time zone; and the pricing pages as a lead | 12 | 12 | 3 | 74 | G14 to G21 | 72 | 15.6 |
 | BC-2: contact information shown to buyers; market selection; returns and cancellations; staff access; the buyer's address; who sells to the buyer | 10 | 10 | 6 | 56 | G12, in place of G03, whose pages it read; G13, G14 | 84 | 14.5 |
+| ZD-4: the absence audit's S02-ZD-G03 again, from zid.eg's Terms as shown | 1 claim | 1 | 0 | 29 | G03 partly contradicted: Egypt answered | 43 | 7.5 |
 
 **What WC-1 taught:**
 - **Our labels aren't the platform's words.** The brief said to search a kind's own name, and the part asked whether "who sells to the buyer" was one. The brief now says the kind's head word is searched, such as `domain` or `currency`, and our longer labels aren't.
@@ -302,4 +303,14 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 - **BigCommerce's gap-closing is complete:** three parts, 19 rows, 147 statements (S02-BC-205 to S02-BC-351), for 35.5 million. The Help Center, readable since the fix, answered most of BC-1b's and BC-2's rows.
 - **A platform that states its settings' scope answers the "per market" questions in its own words.** Multi-Storefront sets contact details, checkout settings and the storefront a shopper sees per storefront, each "Use global" by default.
 - **Counts written from memory, a slip of the coordinator's.** Three counts in this section were wrong as first written: the pages the fix recovered, Zid's per-market gaps, and BigCommerce's totals. Each was corrected from the files, and counts are now taken from the files before they are written.
+
+**What ZD-4 taught:**
+- **The audit's result moved from confirmed to partly contradicted.** For a merchant in Egypt, the contract is with شركة زد مصر, under Egyptian law and courts, with fees in Egyptian pounds and VAT (S02-ZD-367 to S02-ZD-382), and zid.eg's privacy policy names Zid Egypt as data controller. For the UAE, Oman, Bahrain, Qatar, Syria, and Kuwait outside Zid Pay, nothing read names the contracting party; their country pages link to zid.sa's Terms.
+- **The tools now tell a page's source from what it shows.** ZD-4 found that `corpus_search.py` searched a page's rendered text and its source together, and that the checker passed a quote found only in the source. Both are changed:
+  - `quote_check.py` reports a quote found only in a page's source (its body as served, or its markup's scripts and data) while a capture renders the page without it;
+  - the checker lists such a quote for review;
+  - `corpus_search.py` lists the source's extra text as its own document, labelled as text the rendered page doesn't show, and drops a capture that rendered nothing where another rendered the page.
+
+  On Zid's files, exactly five quotes come up for review: S02-ZD-C313 and C314, the Saudi Terms in zid.eg's source, and three FAQ answers held in pages' data, shown on a click.
+- **Some answers show only on a click.** The Syria page's FAQ answers after the first, and the payments pages' answers, are in neither the rendered text nor the source: the render doesn't click. They wait on a capture that opens them.
 

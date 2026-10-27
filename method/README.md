@@ -22,7 +22,7 @@
 | `merge_slices.py` | Joins the files the agents of one root decision each wrote into the subject's own files, and refuses ids outside a decision's range, a bullet outside it, or more variation points than its cap. |
 | `schema_type.py` | Prints a GraphQL type in full from a schema the observed repositories hold, with the citation a quote from it takes. |
 | `held_index.py` | What observed-sa, observed-sh and this repository's capture runs hold, by address, and in what readable form. |
-| `quote_check.py` | Is a quote found, word for word, in its cited source? Shared by the checkers, and run alone to test a statement or a quote before it is written, a batch of them at once, or to print a source's text as the checker sees it. |
+| `quote_check.py` | Is a quote found, word for word, in its cited source, and, for a web page, in the page as it renders or only in its source? Shared by the checkers, and run alone to test a statement or a quote before it is written, a batch of them at once, or to print a source's text as the checker sees it. |
 | `source_kinds.py` | The kind of a cited source, assigned by rule (`PLAN.md`, section 6, the test form). |
 | `warc_text.py` | Prints one record of a fetch archive held in git. |
 | `corpus_search.py` | Searches a platform's held text in every language it holds, for a claim of absence (`PLAN.md`, section 6). |
