@@ -27,6 +27,8 @@ Most of Zid's gaps ask one thing: which settings can differ by market. Zid's pag
 
 **My recommendation:** (a) first, then (b) only if the development store has no markets. You, or your local agent with your account, would sign up, save each settings page as it shows, and stop before any payment or document.
 
+*Changed on 27 October 2026, after your report from Yemen:* Zid's sign-up code doesn't reach you, and no purchase or verification completes. So (a) and (b) can't be done from Yemen. **My recommendation is now (c),** with Zid's questions in section 5 sent by email. Zid's per-market questions stay open, and phase C marks them as not stated for Zid.
+
 **Answer:** a, then b if needed / a only / b / c.
 
 ## 3. BigCommerce: a free trial store (5 of its 7 gaps)

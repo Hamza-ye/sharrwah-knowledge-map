@@ -20,6 +20,14 @@
 
 **The coordinator's side never writes to observed-sh or observed-sa** (`CLAUDE.md`).
 
+## What can be captured from Yemen (the founder, 27 October 2026)
+
+The founder reports, from Yemen: Zid's sign-up code, sent by SMS, never arrives, so no Zid account can be made; and on Zid and Salla, a purchase, and the store's or the owner's verification, can't be completed. Salla's sign-up works. This is what the founder can do from Yemen, not evidence of what either platform does. What it means for these requests:
+- **Can run now, at no cost:** H-001 (read-only, on the held merchant store), H-003 (public pages, in a browser), H-002 up to the verification step, and H-007 (a new Shopify account by email; stop before any document).
+- **H-004** is shown at verification, so it may stop before the contract; its first step can ride on H-002's run, with a store whose country is the UAE or Kuwait.
+- **H-005** needs a store on Salla's Special plan, which can't be bought from Yemen. Only its step 1 runs: whether a held store's plan opens markets.
+- **H-006** needs a business entity outside Yemen, and **H-008** answers questions that phase C is not expected to turn on. Both wait until phase C shows a need.
+
 ## Requests
 
 | Id | Repository | Asks for | For | Raised | Status |

@@ -724,3 +724,43 @@ Lead placed under another point of (c): S02-BC-253 ('The default country setting
 
 Placed: S02-BC-263 ('Default country — The country your store is run from, which determines the payment methods that are available for use with your store') and S02-BC-260 (the locale information's 'country where your store is located', whose settings 'allow you to access region-specific payment methods') are a new row under S02-VP-12, S02-V-287, with S02-BC-253: the default country, the field part RD1-S1 holds for the three under (a) in S02-V-260. Noted:
 - S02-BC-258 (c): the store profile 'can affect which payment gateways are available': its words don't say the profile holds the store's country, nor which of its information affects the gateways, as part RD1-S1 noted it under (a) (rule 4)
+
+### Revisit S02-V-240 (bigcommerce, S02-VP-19, the store's data)
+
+Replaced: `not covered` became an answer row, S02-V-240, every store, 'We use this information as a Controller to provide Merchants with, support, and improve our services' (S02-BC-237, Merchants' information) with S02-BC-238 ('The Merchant is the Controller of this information', of Shoppers' information, Commerce acting 'as a Processor'): their words apply to all Merchants, with no country or scope. Its leads noted:
+- S02-BC-235 (c): regional hosting 'available for merchants interested in hosting their stores in Europe or the Asia-Pacific (APAC) region rather than in the United States': the merchant's choice of where the store is hosted, which rule 1 keeps out of the store's own country, not a decider from its table (rule 4); in S02-VP-19's note
+- S02-BC-236 (c): 'Commerce primarily utilizes Google Cloud’s U.S.-Central1 region as our primary data storage location': names where the data is held, not a decider (rule 4), as part RD1-S2 noted S02-SH-713
+- S02-BC-239 (c): 'it may be necessary to transmit Personal Data outside of the country, state, or province where the data was collected/received': its decider is where the data was collected, not the store's own country (rule 4); in S02-VP-19's note
+- S02-BC-240 (c): 'For third-country transfers outside of the EU/EEA we also use the Standard Contractual Clauses': its decider is the transfer's reach, as S02-SH-620 (rule 4); in S02-VP-19's note
+- S02-BC-241 (c): 'This DPA applies when a Commerce Entity acts as a Processor on behalf of the Customer': its decider is the entity's role in the processing (rule 4); in S02-VP-19's note
+- S02-BC-242 (c): 'Commerce.com may transfer, process and store Personal Data in regions in which Commerce.com or its Subprocessors operate': its decider is where Commerce.com and its subprocessors operate (rule 4); in S02-VP-19's note
+
+### Revisit S02-V-194 (woocommerce, S02-VP-10, documents and checks)
+
+Replaced: `not covered` became an answer row, S02-V-194, the onboarding's business types found by the country answered ('l=a.find(t=>"PR"===e.country?"US"===t.key:t.key===e.country)', S02-WC-263); and a `gap` row beside it, S02-V-288, with S02-WC-G07, which asks which documents or checks the business verification asks for, which the answer doesn't give. Two readings, marked there: that 'e.country' is the answer to the same step's 'Where is your business located?' (S02-WC-259, the same file, its identifier 'WooPayments onboarding, business step'), since its own words, identifier and scope don't say whose country; and that the business type is among what the merchant provides to verify the business. If the coordinator holds that the role test can't rest on another statement of the source, S02-WC-263 is noted instead, and the row is S02-V-288's gap alone.
+
+### Revisit S02-V-200 (woocommerce, S02-VP-12, other payment providers)
+
+Replaced: `not covered` became two answer rows:
+- S02-V-200, the store's location: 'you are offered different payment gateways based on your store location' (S02-WC-265), with S02-WC-264 ('Shop location and currency are factors. A payment gateway company/processor may only serve merchants based in certain countries'), the same page; that 'Shop location' and 'store location' name one location is my reading, marked;
+- S02-V-289 (added), the Payments settings' business location: '("Business location:","woocommerce")' (S02-WC-267), with the providers route's 'location', which 'Defaults to WooCommerce\'s base location country' (S02-WC-268); `term` with Shopify's 'Business location' (S02-SH-027); that the route's location is that field is my reading, by S02-WC-221.
+
+Lead placed under another point of (c): S02-WC-265 ('different payment gateways based on your store location, which includes Core Payment Options and WooPayments') is also a new row under S02-VP-11, S02-V-290, the store's location, since it names WooPayments.
+
+### Revisit S02-V-182 (zid, S02-VP-15, taxes on the platform's fees)
+
+Replaced: `not covered` became an answer row, S02-V-182, every store, 'جميع الرسوم لا تشمل المبيعات الحكومية أو الإقليمية أو المحلية' (S02-ZD-194; my translation: all fees exclude governmental, regional or local sales [taxes]), with S02-ZD-193, S02-ZD-197 and S02-ZD-203, whose own words apply the tax to all tax charges, prices and plans; and a `gap` row beside it, S02-V-291, with S02-ZD-G08, which asks whether the store's country decides the tax on Zid's fees and what tax a store's fees carry outside Saudi Arabia, which the answer doesn't give. Its leads noted:
+- S02-ZD-192 (c): 'قد تختلف رسوم الضرائب المحلية اعتمادًا على طريقة الدفع المستخدمة' (my translation: local tax charges may differ depending on the payment method used): its decider is the payment method (rule 4); in S02-VP-15's note
+- S02-ZD-195 (c): Zid may charge the fees 'مثل الضرائب ورسوم المعاملات المحتملة، على طريقة الدفع التي اخترتها' (my translation: such as taxes and possible transaction fees, to the payment method you chose): names where the charges are taken, not a decider (rule 4)
+- S02-ZD-196 (c): a service fee of 1 riyal '(غير شاملة لضريبة القيمة المضافة) لكل بوليصة شحن' (my translation: excluding VAT, per waybill) when the merchant links its own shipping company: names no decider of the tax, and its words don't apply it to all stores or fees (rule 4)
+- S02-ZD-198 (c): the bank transfer fee '9 ريالات شاملة ضريبة القيمة المضافة للحوالات الداخلية و 50 ريال لحوالات دول الخليج' (my translation: 9 riyals including VAT for domestic transfers and 50 riyals for transfers to the Gulf states): its decider is the transfer, as S02-ZD-058 (rule 4); in S02-VP-15's note
+- S02-ZD-199 (c): the wallet transfer fee of 9 riyals including VAT 'في حال كانت الحوالة داخل السعودية' (my translation: if the transfer is within Saudi Arabia): its decider is the transfer's destination (rule 4); in S02-VP-15's note
+- S02-ZD-200 (c): the wallet transfer fee of 50 riyals 'في حال كانت الحوالة خارج السعودية' (my translation: if the transfer is outside Saudi Arabia): as S02-ZD-199; in S02-VP-15's note
+- S02-ZD-201 (c): the Mada rate's cap of 200 riyals '(غير شامل لضريبة القيمة المضافه)' (my translation: excluding VAT): names no decider (rule 4), and its scope, 'Zid Pay, Saudi Arabia', doesn't say whose country (rule 2)
+- S02-ZD-202 (c): operating fees per transaction 'حسب باقتك في زد (بدون ضريبة)' (my translation: according to your plan in Zid, without tax): names no decider of the tax (rule 4)
+- S02-ZD-204 (c): 'ضريبة القيمة المضافة: الرسوم 15x%' (my translation: VAT: the fees x 15%): names the rate, not a decider, and its words don't apply it to all stores or fees (rule 4)
+- S02-ZD-205 (c): a path in the admin to the transaction's 'الفاتورة الضريبية' (my translation: the tax invoice): names no decider (rule 4)
+- S02-ZD-398 (c): the Mada cap, '200 SAR (excluding VAT).': names no decider (rule 4); its scope's 'For our Saudi Superstars' doesn't say they are the merchants, as part RD1-4 noted S02-ZD-112
+- S02-ZD-408 (c): the fees 'غير شاملة لضريبة القيمة المضافة، ويتم احتسابها بحسب شبكة الدفع و الباقة المختارة' (my translation: excluding VAT, and calculated by the payment network and the chosen plan): names no decider of the tax (rule 4); its scope's 'لنجومنا السعوديين' (my translation: for our Saudi stars) doesn't say they are the merchants, as part RD1-4 noted S02-ZD-112
+- S02-ZD-411 (c): the Mada cap of 200 riyals '(غير شاملة لضريبة القيمة المضافة)': as S02-ZD-398
+- S02-ZD-418 (c): as S02-ZD-408, its scope 'لطاقمنا الكويتي' (my translation: for our Kuwaiti crew) not saying they are the merchants
