@@ -188,6 +188,7 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 | Zid, part 1 | 3 gaps, 3 absences | all 6 confirmed | 10 | 51 | 9.2 |
 | Zid, part 2 | 4 gaps, 1 absence | 4 confirmed; N04 contradicted | 9 | 58 | 9.8 |
 | WooCommerce | 2 gaps | G01 and G03 partly contradicted | 29 | 60 | 10.9 |
+| BigCommerce | 2 absences | both confirmed | 43 | 46 | 6.5 |
 
 **What it taught:**
 - **Two of the six gaps routed to capture requests were answered, in whole or in part, by what is held.** Salla's onboarding list of countries is in two runs, as the page and as the API's saved answer. `method/held_index.py` didn't list saved answers, so the gap had gone to capture. It lists them now, and H-002 is narrowed. Shopify's Help Center page on business entities, not read before, says who verifies an entity and what changes with the store's country, so H-007's second step is narrowed.
@@ -220,3 +221,8 @@ Phase A cost 504 million in all, against the 325 to 375 million the frame set fo
 - **It cost 146 million tokens over 631 requests,** about 2.7 pairs a request, within the 150 to 300 million the frame set for phase B with its second pass.
 - **Parts kept to their size:** none passed 80 requests, and none stopped short. Parts that placed a platform under many earlier points cost more per pair (RD3-3, RD2-2); the first parts of each root decision cost least.
 - **Each part's lessons went into the brief before the next,** 14 rulings in all, and the statements earlier parts noted under a narrower rule are listed for the second pass (`b/second-pass.md`).
+
+**What BigCommerce's audit taught, and the audit as a whole:**
+- **Every claim of absence is now audited:** 24 across the five platforms; 2 contradicted and 3 partly contradicted, about one claim in five. The audit added 122 statements.
+- **An audit that confirms its claims still adds evidence:** BigCommerce's two absences stand, and the pages read to test them added 43 statements on what a storefront channel holds per country.
+- **Markdown escapes hid an identifier from the search:** `store\_country` didn't match `store_country`. `method/corpus_search.py` now reads Markdown's escapes as the characters they escape.

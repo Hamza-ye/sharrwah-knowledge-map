@@ -57,3 +57,40 @@ R013, R014, R015, R017, R018, R020, R023 (Settings V3 and Store Information V2 r
 
 `python3 -I method/check_subject.py` on a copy (`bullets.tsv` and this folder) with every capture run, 2026-10-27: 161 statements, 3 gaps, 217 quotes found, no line of level error. One line of level review: the 2 claims of absence await the phase A3 audit.
 
+
+## Absence audit (phase A3, 2026-10-27)
+
+Brief: `studies/subjects/S-02/briefs/A3-absence-audit.md`, with `briefs/A-one-platform.md` for what is recorded. Audited: the absences S02-BC-N01 and S02-BC-N02. The gaps S02-BC-G01 to S02-BC-G03 are all of kind `page not read`, outside the audit. One row per claim in `absence-audit.tsv`. Added: statements S02-BC-162 to S02-BC-204, citations S02-BC-C218 to S02-BC-C263. Changed (step 5): S02-BC-009's `conditions` take S02-BC-164 to S02-BC-172, S02-BC-175, S02-BC-177 and S02-BC-179, the new statements that name multi-storefront or storefront channels.
+
+### What was found
+
+- S02-BC-N01 (a place among what defines a channel; a channel type for a place): confirmed. The Create Channel endpoint, read live, requires name, type and platform, and gives `type` as an enum of pos, marketplace, storefront and marketing (S02-BC-162), without the `custom` that the overview's list names; its channel object has no field for a country, region or place. The Catalyst Multi-Storefront Overview and Setup, read live, sell into countries through a storefront channel per country and that channel's locales, domain, products, price lists and currencies (S02-BC-163 to S02-BC-182). carts.md ties "selling in different markets" to a cart's locale (S02-BC-183, S02-BC-184). The Buy Online, Pick up in Store overview states that different warehouse locations and inventory can't serve different storefront channels (S02-BC-185).
+- S02-BC-N02 (the store's country among the settings whose change triggers store/information/updated): confirmed. events.md holds no word "country"; it sends settings events to the Channel Webhooks guide, whose Settings table lists the channel settings events, none for the store's country (S02-BC-186 to S02-BC-204; the table's locale/added row is S02-BC-038).
+
+### Documents read, in order
+
+1. https://docs.bigcommerce.com/developer/docs/integrations/webhooks/event-reference/events.md, held (run 20261012T0419Z-q1-bigcommerce-sources, item 088): the Stores section in full; its pointers for Settings, Sites, Category trees and Channel events; its Info notes (the asterisk marks metafield scopes that support data filters). The page holds no word "country".
+2. The webhook lines of the 7 documents, among the third N02 search's 25, that mention webhooks: msf-international-enhancements/overview.md, B2B-Edition-Settings, orders/overview.md, payments/overview.md, Connecting-with-Stripe-OCS, Connecting-with-Braintree, llms.txt. None is on store/information/updated.
+3. In the 71 documents of the second N01 search: the passages where a channel word falls within 250 characters of a place word (15 documents hold one; they are listed in `absence-audit.tsv`).
+4. In the 21 captured documents of the third N01 search: the sentences holding "market" or "markets".
+5. https://docs.bigcommerce.com/developer/docs/integrations/webhooks/event-reference/channel-events.md, held (same run, item 087): the Settings section in full: S02-BC-186 to S02-BC-204. The page holds no word "country".
+6. https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/channels/create-channel.md, live, read 2026-10-27, in full: S02-BC-162.
+7. https://docs.bigcommerce.com/developer/docs/storefront/catalyst/features/localization/multi-storefront/overview.md, live, read 2026-10-27, in full: S02-BC-163 to S02-BC-173.
+8. https://docs.bigcommerce.com/developer/docs/storefront/catalyst/features/localization/multi-storefront/setup.md, live, read 2026-10-27, its text in full (not its code blocks): S02-BC-174 to S02-BC-182.
+9. https://docs.bigcommerce.com/developer/docs/storefront/headless/cart-and-checkout/carts.md, held (run 20261012T0426Z-q1-bigcommerce-sources-2, item 019): its note on markets and its note on the locale format: S02-BC-183, S02-BC-184.
+10. https://docs.bigcommerce.com/developer/docs/integrations/platform-solutions/buy-online-pick-up-in-store/overview.md, held (same run, item 014): its Multi-channel awareness section: S02-BC-185.
+11. https://docs.bigcommerce.com/developer/docs/admin/multi-storefront/overview.md, held (run 20261012T0419Z-q1-bigcommerce-sources, item 072): the Channels section, again (the list of S02-BC-132).
+12. https://support.bigcommerce.com/s/article/Getting-Started-Channels, held (run 20261013T053949Z-s01-bigcommerce-help-founder-machine, item 027): its lines on the kinds of channel (Point of Sale, Marketplaces, Ads & Social, multiple storefronts).
+
+### Searches too many to read in full, and how they were narrowed
+
+- `corpus_search.py bigcommerce "channel" "channels" --with "country" "countries" "region" "regions" "location" "locations"`: 71 documents, past the cap of 40; run again with `--max 80` (71 documents and one founder's save). Narrowed by printing, from each document's held text, the passages where a channel word falls within 250 characters of a place word: 15 documents hold one, and those passages were read. The two pages that define a channel, multi-storefront/overview.md and channels.md, are not among the 71: they hold no word for a country, region or location.
+- `corpus_search.py bigcommerce "Store Name" … "store settings" --with "الدولة" "country"`: 25 documents, all listed, but most support articles match "Language" only through the Help Center's header ("Preferred Language EN"). Narrowed by checking each document's held text for webhooks or store/information/updated: 7 mention webhooks, and their lines were read.
+- `corpus_search.py bigcommerce "name" "type" "platform" … --with "السوق" "market" "markets"`: 21 documents and 2 founder's saves (the same code of ethics PDF twice, read by its snippet). "name" and "type" match nearly every page, so the search reduces to the pages holding "market" or "markets": their sentences holding either word were read.
+
+### Problems with the method or the tools
+
+- `corpus_search.py` matches an identifier as written: "store_country" doesn't match the Markdown captures, which escape the underscore ("store\_country"). The escaped spelling had to be searched as its own term. Phase A's search 31 above reports "store_country" matching store-configuration.md; in this audit the same term didn't.
+- `corpus_search.py` printed held copies at commit 063b00c2187231de9e593c2dc7ca5aebaf43b512, and `held_index.py` prints this repository's captures without a commit. The repository's HEAD when they were read was f72d361fc4eacb5dd29b3bce9e55d2fd346819a3, the commit `absence-audit.tsv` gives them.
+- The brief's second search for (e) has the names of a channel's properties ("name", "type") as its terms, and they match nearly every page, so it finds no more than the general word alone.
+- The pages that state most on channels and countries (the Create Channel endpoint, the Catalyst multi-storefront pages) are not held. They were read live and are cited by their `.md` URLs, pending capture.

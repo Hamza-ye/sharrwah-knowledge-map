@@ -87,6 +87,7 @@ def help_url(name):
     return "https://help.shopify.com/" + rel
 
 def fold(s):
+    s = re.sub(r"\\([\\`*_{}\[\]()#+.!|-])", r"\1", s)    # Markdown's escapes: store\_country is store_country
     s = HARAKAT.sub("", norm(s)).casefold()
     for a, b in (("أ", "ا"), ("إ", "ا"), ("آ", "ا"), ("ة", "ه"), ("ى", "ي")):
         s = s.replace(a, b)

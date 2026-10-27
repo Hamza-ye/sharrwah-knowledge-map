@@ -1,0 +1,18 @@
+{
+ "n": 3,
+ "url": "https://docs.bigcommerce.com/developer/docs/storefront/catalyst/features/localization/multi-storefront/setup.md",
+ "dir": "items/003-docs.bigcommerce.com",
+ "fetched_at": "2026-10-27T08:26:33Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/docs/storefront/catalyst/features/localization/multi-storefront/setup.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 4493,
+ "cited_in": [
+  "S-02 absence audit, BigCommerce: cited"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "38419030582f854f532ca0d9259438cc8ea5707b1412402fe3bcd5ed5df55f3e",
+ "raw_ext": "txt"
+}
