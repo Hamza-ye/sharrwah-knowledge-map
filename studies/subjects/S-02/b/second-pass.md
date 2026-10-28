@@ -59,3 +59,21 @@ The capture round placed Shopify's statements from A2-SH-R1 and A2-SH-R2 (parts 
   - "I'm selling from" read as the store's own country (S02-V-053, S02-V-244);
   - S02-SH-1138's "countries and regions" read as the buyer's country (S02-V-634, under S02-VP-57);
   - S02-SH-1146 and S02-SH-1149 under the whole store (S02-V-650), since some orders always go to the primary entity.
+
+## The coordinator's rulings in the Salla and Zid round (28 October 2026)
+
+The round places what A2-SA-R, A2-ZD-R and A3-ZD-R recorded (parts RD1-S7, RD1-S8, RD2-S4, RD3-S12 and RD3-S13). Each part lists its calls in its section of `notes-b.md`. The coordinator rules on them here, part by part. A ruling that changes a row is a task in the round's work list, for the part named.
+
+**RD1-S7's calls:**
+1. **Salla's dashboard assistant isn't an answer.** S02-SA-483 is Mushammir's reply, under Salla's notice "Responses are AI-generated. Verify what matters most." An answer the platform's own assistant generates, under a notice that it may be wrong, is a lead to the gap it bears on, not an answer. A2-SA-R read it so: it narrowed S02-SA-G01 into S02-SA-G16 rather than answering it. So S02-SA-483 is noted under (b) with this reason, and its two placements go:
+   - S02-V-074 (S02-VP-06) becomes the gap row of S02-SA-G16 again;
+   - S02-V-307, the second gap row of S02-SA-G16 under the point, is removed;
+   - S02-V-095 keeps its two other statements, S02-SA-179 and S02-SA-311.
+
+   Part RD1-S8 makes these three changes.
+2. **S02-SA-492 under S02-VP-02 stands.** The onboarding's reply to "Other country" says which countries are kept out: every country outside its list. S02-SA-020, the same message in Arabic, reads the same way, and S02-V-027 already gives that answer, so S02-SA-020 stays where it is.
+3. **salla.com's country paths tie a page to one country,** under rule 4 under (c) as the coordinator ruled on 27 October. S02-SA-256 (`/en-ae/plans`) and S02-SA-295 (`/payments`, the Saudi path), which the first pass noted with the opposite reading, are read again under that rule. Part RD1-S8 rereads them.
+4. **`merchants_saudi_kyc` stands** as an identifier that names the merchant's country (rule 5). S02-SA-484, S02-SA-486 and S02-SA-487, from the same form, name no decider of their own, and stay noted.
+5. **and 6. The readings of S02-SA-490 and of S02-SA-493 to S02-SA-497 stand,** under documents and checks, for phase C to weigh.
+7. **S02-SA-498 under both S02-VP-10 and S02-VP-13 stands:** a statement may answer two points.
+8. **Salla's default currency gets its answer.** A2-SA-R narrowed S02-SA-G07 into S02-SA-G18, which asks only about the language, because the currency part is observed: the store whose onboarding answered the United Arab Emirates holds `kyc_country` AE and currency AED (S02-SA-501). Noting S02-SA-501 left S02-VP-18 with no row for the currency. Part RD1-S8 rereads S02-SA-501 under (c) and places it under S02-VP-18, scoped to that one store, beside S02-V-168's gap. Shopify's S02-SH-1041, which RD1-S6 noted, would read the same way. Shopify already gives the key from a stated source, so it is left noted.
