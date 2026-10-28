@@ -87,3 +87,9 @@ removed (its folder and its notes). Then commit and push: origin pushes over SSH
 git@github.com:Hamza-ye/other-product-class.git`). A push of more than a few tens of MB can drop on this connection:
 commit and push a run at a time, with `GIT_SSH_COMMAND="ssh -o ServerAliveInterval=15 -o ServerAliveCountMax=40"`,
 and push again if it drops.
+
+After every push to origin, push the same `main` to the knowledge map's branch `evidence/other-product-class`, the
+copy the knowledge map's coordinator reads (it cannot reach this repository):
+`git push knowledge-map main:evidence/other-product-class` (the remote, once:
+`git remote add knowledge-map git@github.com:Hamza-ye/sharrwah-knowledge-map.git`). The commits keep their ids, so
+`other-product-class@<commit>:<path>` cites the same bytes there.

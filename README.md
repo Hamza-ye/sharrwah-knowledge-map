@@ -42,4 +42,6 @@ sign-in store), the capture browsers' profiles, `.venv` and `node_modules`.
 ## Citing
 
 `other-product-class@<commit>:<path>[:<line>]`. Every run's bytes can be checked with
-`sha256sum -c <platform>/index/SHA256SUMS` from the repository root.
+`sha256sum -c <platform>/index/SHA256SUMS` from the repository root. The same commits, with the same ids, are on the
+knowledge map's branch `evidence/other-product-class` (github.com/Hamza-ye/sharrwah-knowledge-map), pushed after
+every push here (`docs/OPERATING.md`, "After any run").
