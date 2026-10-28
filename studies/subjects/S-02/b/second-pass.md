@@ -93,3 +93,8 @@ The round places what A2-SA-R, A2-ZD-R and A3-ZD-R recorded (parts RD1-S7, RD1-S
 4. **S02-ZD-471 under S02-VP-85,** by its scope: the store's country changed and the main market's countries didn't. This reading is phase C's to weigh.
 5. **S02-ZD-449 under each point whose setting it names** (rule 2).
 6. **`enforce_2fa`, not raised:** it fits no kind of S-02's, and whose sign-in it governs belongs to identity and permissions, not to a market.
+
+**RD3-S13's calls:** each stands. No revisit found an answer, so the six gap rows stay, each with a row note.
+- **S02-SA-535 joined to S02-V-719, `the buyer's country`.** "Nearest branch" names the buyer's location, which is finer than a country. The row already gave the key from earlier statements, so the join changes none. It is marked as a reading for phase C.
+- **S02-SA-532 noted, though gap-closing led it to S02-VP-67:** its words say what activating markets does to the store's inventory, not what inventory is taken per (the brief, `place`: a lead points to a point, and the statement's words decide).
+- **The other calls** (a captured request under no who-sets point; the markets module's contact section under S02-VP-68; the Multi Market page's instructions read as the seller's) follow earlier parts' readings.

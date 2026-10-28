@@ -1420,3 +1420,67 @@ From A2-ZD-R and A3-ZD-R (other-product-class f44be3f, folder `zid/`). The new l
 ### After the check (RD3-S12)
 - `check_subject.py` on a copy holding only b/RD3: no `error` lines; 17 warnings (Shopify's and WooCommerce's quote lengths) and 15 reviews (quotes found only in a page's source, the coordinator's, among them zid's S02-ZD-C008, C086, C313, C314). RD3's rows in `unplaced.tsv`: 11 of Salla's (S02-SA-513 to S02-SA-537, RD3-S13's); none of Zid's.
 - `second_pass_list.py --check`: RD3's list holds only S02-V-1096 (salla, RD3-S13's).
+
+## Second pass, RD3-S13: salla, bullet f, the Salla and Zid round's tasks
+
+From A2-SA-R, which read the runs of 28 October for capture requests H-001 to H-005 (observed-sa at b0bd0b16): six revisits of `gap` rows whose gaps are still open (S02-V-1092, S02-V-1094, S02-V-1096, S02-V-1097, S02-V-731, S02-V-869), and four place tasks (S02-SA-527, S02-SA-528, S02-SA-529, S02-SA-535). Each new statement's scope (the store, its plan) is kept in the rows it joined, which take their scope again from all their statements.
+
+### Revisit S02-V-1092 (salla, S02-VP-65, returns and cancellations): was `gap` (S02-SA-G13)
+- Left `gap` S02-SA-G13, which why names, with a row note. No lead gives an answer to S02-VP-65; absence S02-SA-N01 stays cited in S02-V-716 (the whole store), as RD3-S9 placed it.
+- New leads S02-SA-530 (the public demo's form that creates its first market) and S02-SA-533 (the request its Confirm sends) name the market's language, currency and branches, and no return or cancellation setting. Both joined S02-V-680 (S02-VP-43), S02-V-676 (S02-VP-41) and S02-V-718 (S02-VP-67), a market the store sells into. S02-SA-530 also joined S02-V-681 (S02-VP-44), S02-V-678 (S02-VP-42) and S02-V-734 (S02-VP-78), the seller: each of the three fields has a control 'Customize' in the store's admin (rule 4). S02-SA-533 is under none of the who-sets points: the request's keys name no party, and the values it sends are the form's (as RD3-S12 did for S02-ZD-488). Its keys 'name', 'translations' and 'countries' are (e)'s, RD2's.
+- New lead S02-SA-532, the confirmation shown before the market is created, names no return or cancellation setting either:
+- S02-SA-532 (f): says activating markets 'will affect how product quantities are configured and how inventory is deducted in your store', without saying what they take their value per or who sets them; and that 'Once enabled, it cannot be disabled except by contacting the Account Manager', of the markets feature itself, (e)'s question (RD2), not a setting of one of rule 1's kinds
+- Earlier leads stay as earlier parts placed them: S02-SA-382 in S02-V-708, S02-V-709 and S02-V-712 (RD3-S6); S02-SA-437 and S02-SA-443 in S02-V-716 and S02-V-717, and S02-SA-439 in S02-V-699 and S02-V-701 (RD3-S9).
+
+### Revisit S02-V-1094 (salla, S02-VP-86, apps): was `gap` (S02-SA-G15)
+- Left `gap` S02-SA-G15, which why names, with a row note. No lead gives an answer to S02-VP-86; absence S02-SA-N03 stays cited in S02-V-1093 (the whole store), as RD3-S9 placed it.
+- New leads S02-SA-513 and S02-SA-514 are the App Store's filter of all apps, the same labels on two stores; noted:
+- S02-SA-513 (f): the App Store's filter of all apps ('Filter Categories Delivery service type Shipping zone Support change company name Company type Price Rating Salla Apps Reset'), on the merchant store (store-1-da, Basic): filters of the apps the App Store lists, not a setting of the store; names no value of the store's apps, what one is taken per, or who sets it
+- S02-SA-514 (f): the same filter, on the new UAE store (store 21123834, Basic): as S02-SA-513
+- Earlier leads stay as earlier parts placed or noted them: S02-SA-409 to S02-SA-411 noted (RD3-S6); S02-SA-413 to S02-SA-415 in S02-V-874, S02-V-1095, S02-V-746 and S02-V-1110.
+
+### Revisit S02-V-1096 (salla, S02-VP-87, analytics and tracking): was `gap` (S02-SA-G08)
+- Left `gap` S02-SA-G08, which why names, with a row note. No lead gives an answer to S02-VP-87.
+- New leads S02-SA-530, S02-SA-532 and S02-SA-533 (the public demo's first market) name no analytics or tracking setting; they are placed or noted with the revisit of S02-V-1092, above.
+- Earlier lead S02-SA-442 stays in S02-V-878 (the whole store), as RD3-S9 placed it.
+
+### Revisit S02-V-1097 (salla, S02-VP-89, notifications to the merchant): was `gap` (S02-SA-G14)
+- Left `gap` S02-SA-G14, which why names, with a row note. No lead gives an answer to S02-VP-89; absence S02-SA-N02 stays cited in S02-V-886 (the whole store), as RD3-S9 placed it.
+- New leads S02-SA-530, S02-SA-532 and S02-SA-533 name no notification to the merchant or staff; they are placed or noted with the revisit of S02-V-1092, above.
+- Earlier leads stay as RD3-S9 placed them: S02-SA-438 in S02-V-886 and S02-V-890; S02-SA-439 (guest checkout's) in S02-V-699 and S02-V-701.
+
+### Revisit S02-V-731 (salla, S02-VP-76, the store's address): was `gap` (S02-SA-G12)
+- Left `gap` S02-SA-G12, which why names, with a row note. No lead gives an answer to S02-VP-76.
+- New leads S02-SA-536 and S02-SA-537 are the markets module's translations of its section 'contacts' (English and Arabic: 'Contact information', 'Customer support channels', 'Social media accounts'; 'معلومات التواصل', 'قنوات خدمة العملاء', 'حسابات التواصل الاجتماعي'). They name contact information shown to buyers, not the store's address, so they joined S02-V-720 (S02-VP-68, a market the store sells into): a reading from their identifier (ui-merchant-localization) and scope ('every store's dashboard: the markets module'), rule 5, beside S02-SA-028 and S02-SA-038, which name 'معلومات التواصل' among each market's sections. They name no one who sets it, so they are not under S02-VP-79.
+- Earlier leads S02-SA-421 and S02-SA-425 stay in S02-V-734 (S02-VP-78, locations), as RD3-S6 placed them.
+
+### Revisit S02-V-869 (salla, S02-VP-85, the store's country): was `gap` (S02-SA-G11)
+- Left `gap` S02-SA-G11, which why names, with a row note. No lead gives an answer to S02-VP-85.
+- New leads S02-SA-530 and S02-SA-533 name the countries of the market being created ('Countries Saudi Arabia' in the form; the key 'countries' in the request): the countries that define the market, (e)'s question (RD2), not a country the market or its storefront holds as the store's own, which S02-VP-85 asks. S02-SA-532 names no country. All three are placed or noted with the revisit of S02-V-1092, above.
+- Earlier leads stay as earlier parts placed or noted them: S02-SA-426 to S02-SA-430 noted (RD3-S6); S02-SA-440 in S02-V-676 and S02-V-680.
+
+### `place` tasks (A2-SA-R)
+- S02-SA-527 (f): the public demo's Multi Market page, before a market exists ('Expand into new markets Sell across countries and markets while delivering a localized shopping experience from one store.'): names no setting of the store, only 'a localized shopping experience', and nothing a value is taken per or who sets it; its markets are (e)'s, RD2's
+- S02-SA-528: joined S02-V-688 (S02-VP-49, a market: 'Set market-specific pricing Adjust product prices to match each market and currency.') and S02-V-689 (S02-VP-50, the seller: the page's instruction to the merchant). Its 'independent settings for each market' names a market's settings in general, of no one kind of setting, as the same words in S02-SA-065 were noted in the first pass. Its currency is what prices are adjusted to, not a setting it says takes a value per market, so it joins no row of S02-VP-41.
+- S02-SA-529: joined S02-V-696 (S02-VP-53, a market: 'Customize each market Tailor your store’s design and content') and S02-V-697 (S02-VP-54, the seller); S02-V-699 (S02-VP-55, a market: 'Choose the sign-in methods available to customers in each market.') and S02-V-701 (S02-VP-56, the seller); S02-V-684 (S02-VP-47, a market: 'Control which products are available in each market') and S02-V-686 (S02-VP-48, the seller). Each who-sets row rests on the page's instruction to the merchant in the store's admin, as S02-SA-078 to S02-SA-083 rest on the same module's.
+- S02-SA-535: joined S02-V-719 (S02-VP-67, the buyer's country or location, a reading: 'Personalize your customers' shopping experience using the nearest branch or warehouse.', 'nearest' read as nearest the customers it names, as S02-SA-034's 'الأقرب للعميل') and S02-V-734 (S02-VP-78, the seller: the page's instruction to the merchant). Its scope is the demo store store-markets (Pro).
+- The rows joined keep their bases: `answers` holds for each statement joined, by its own words or, for S02-SA-533, S02-SA-536 and S02-SA-537, its identifier and scope (rule 5); `term` stays as earlier parts found it.
+
+### Candidates for a new point
+- None. The statements this part noted name no setting of the store (S02-SA-513, S02-SA-514, S02-SA-527), or a setting of one of rule 1's kinds without an answer (S02-SA-532's inventory deduction, locations), or the markets feature itself, which (e) asks about (S02-SA-532). S02-SA-528's 'independent settings for each market' names a market's settings in general, of no one kind, as in S02-SA-065.
+
+### Words searched for
+- None: the second pass raises no point, so rule 3's search for earlier platforms' rows doesn't arise.
+
+### Calls this part made, and problems with the brief, the work list or the tools
+- No lead gives an answer to its revisited point, so each of the six `gap` rows stays as it was, with the one gap its why names, and a row note (`rownote`) records the revisit. A `replace` would have written the same row and dropped the note an earlier part left on it.
+- Of the 31 statements, 20 are earlier leads, which stay as RD3-S6, RD3-S8 and RD3-S9 placed or noted them; 11 are new: seven leads (S02-SA-513, S02-SA-514, S02-SA-530, S02-SA-532, S02-SA-533, S02-SA-536, S02-SA-537) and the four place tasks.
+- A lead that answers another point of (f) is placed there, and its not answering the revisited point is recorded under the revisit, not as a note, since a note in rule 2's form says a statement answers none of the bullet's questions.
+- S02-SA-533, a request the admin sent, joined only the rows of what a value is taken per: its keys name no party, as RD3-S12 did for S02-ZD-488. S02-SA-530, the form that sent it, gives the seller by its controls 'Customize'.
+- The Multi Market page's feature texts (S02-SA-528, S02-SA-529, S02-SA-535) are instructions to the merchant in the store's admin, so the seller, as the same module's S02-SA-078 to S02-SA-083 were placed.
+- S02-SA-535 joined S02-V-719, whose basis_evidence reads the branch or warehouse nearest the customer as `the buyer's country` ('the buyer's country or location'), as an earlier part placed S02-SA-034. Nearness is a location, not a country; the row's phrase is that part's call, kept.
+- S02-SA-532 is noted, though A2-SA-R gave it as a lead of S02-VP-67: its words say activating markets affects how inventory is deducted 'in your store', not what it is taken per.
+
+### After the check (RD3-S13)
+- `check_subject.py` on a copy holding only b/RD3: no `error` lines; 17 warnings (Shopify's and WooCommerce's quote lengths) and 14 reviews (quotes found only in a page's source, the coordinator's, and RD1's and RD2's statements, whose folders the copy leaves out). RD3's rows in `unplaced.tsv`: none.
+- `second_pass_list.py --check`: RD3's list holds no revisit, reread or note task without a row in done.tsv.
