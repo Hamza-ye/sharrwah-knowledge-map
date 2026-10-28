@@ -1,0 +1,39 @@
+- heading "Create your store" [level=4]
+- paragraph: 0% complete
+- heading "Get started" [level=6]
+- heading "50%" [level=6]
+- text: Enter your email to start
+- heading "Personal info" [level=6]
+- heading "80%" [level=6]
+- text: Provide your personal details
+- heading "Store details" [level=6]
+- heading "100%" [level=6]
+- text: Tell us about your store
+- heading "Enjoy an Extra Free Year 🎁" [level=6]
+- paragraph: Complete 96 orders and unlock an additional year of your subscription on us!
+- separator
+- heading "Earn Cashback on Every Order 💸" [level=6]
+- paragraph: Complete 100 orders and get 0.25% cashback for every completed order.
+- link "Back to login":
+  - /url: /en-sa/login
+- img "Zid"
+- link "ar":
+  - /url: /ar-sa/register/otp
+  - paragraph: ar
+- heading "Enter secure code" [level=1]
+- paragraph: A verification code has been sent to your email sharrwah+zid@gmail.com.
+- textbox "Digit 1": "5"
+- textbox "Digit 2": "9"
+- textbox "Digit 3": "0"
+- textbox "Digit 4"
+- paragraph: Didn't get a code?
+- button "Click to resend"
+- button "Verify code" [disabled]
+- button "Change email"
+- text: By proceeding, you agree to the
+- link "terms":
+  - /url: https://zid.sa/en/legal/terms-conditions
+- text: and
+- link "privacy policy":
+  - /url: https://zid.sa/en/legal/privacy-policy
+- text: .

@@ -1,0 +1,29 @@
+- img "zid-logo"
+- heading "Login" [level=2]
+- heading "Log in to Partner Dashboard" [level=5]
+- group:
+  - 'heading "Email Address: *" [level=5]':
+    - text: "Email Address:"
+    - heading "*" [level=5]
+  - textbox "example@gmail.com"
+- group:
+  - 'heading "Password: *" [level=5]':
+    - text: "Password:"
+    - heading "*" [level=5]
+  - textbox
+- group:
+  - heading "Remember Me" [level=5]
+  - checkbox "Remember Me"
+  - heading "Forgot Password?" [level=5]:
+    - link "Forgot Password?":
+      - /url: /forgot-password
+- group:
+  - button "Log in"
+- heading "Don't have an account?" [level=3]
+- link "Register now":
+  - /url: /register
+  - heading "Register now" [level=3]
+- img "zid logo"
+- heading "Join thousands of developers." [level=2]
+- paragraph: and Start your growth journey with Zid Apps Market
+- img "zid developers"

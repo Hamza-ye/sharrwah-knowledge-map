@@ -1,0 +1,13 @@
+- img "Grow with Zid Partners."
+- paragraph: Grow with Zid Partners.
+- paragraph: Tools, reach, and shared growth with Zid.
+- img "Partners Dashboard"
+- button "AR":
+  - paragraph: AR
+- button
+- heading "Verify your email" [level=2]
+- alert:
+  - paragraph: Your email has been verified.
+- link "Back to login":
+  - /url: /en-sa/login
+  - paragraph: Back to login

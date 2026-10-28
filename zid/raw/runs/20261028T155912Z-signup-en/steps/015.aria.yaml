@@ -1,0 +1,40 @@
+- heading "Create your store" [level=4]
+- paragraph: 50% complete
+- heading "Get started" [level=6]
+- heading "Completed" [level=6]
+- text: Enter your email to start
+- heading "Personal info" [level=6]
+- heading "80%" [level=6]
+- text: Provide your personal details
+- heading "Store details" [level=6]
+- heading "100%" [level=6]
+- text: Tell us about your store
+- heading "Enjoy an Extra Free Year 🎁" [level=6]
+- paragraph: Complete 96 orders and unlock an additional year of your subscription on us!
+- separator
+- heading "Earn Cashback on Every Order 💸" [level=6]
+- paragraph: Complete 100 orders and get 0.25% cashback for every completed order.
+- link "Back to login":
+  - /url: /en-sa/login
+- img "Zid"
+- link "ar":
+  - /url: /ar-sa/register/info
+  - paragraph: ar
+- heading "Personal Information" [level=1]
+- paragraph: We just need a few details about you
+- text: Full Name
+- textbox "Full Name":
+  - /placeholder: E.g. John Smith
+- text: Phone
+- combobox "sa":
+  - img "sa"
+- textbox "Phone":
+  - /placeholder: "055433332"
+- button "Continue" [disabled]
+- text: By proceeding, you agree to the
+- link "terms":
+  - /url: https://zid.sa/en/legal/terms-conditions
+- text: and
+- link "privacy policy":
+  - /url: https://zid.sa/en/legal/privacy-policy
+- text: .

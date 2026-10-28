@@ -1,0 +1,36 @@
+- link "zid logo Partner Dashboard":
+  - /url: /
+  - img "zid logo"
+  - heading "Partner Dashboard" [level=4]
+- navigation:
+  - link "dashboard Dashboard":
+    - /url: /
+    - img "dashboard"
+    - heading "Dashboard" [level=5]
+  - link "api-docs APIs Documentation":
+    - /url: https://docs.zid.sa/
+    - img "api-docs"
+    - heading "APIs Documentation" [level=5]
+  - link "help-support Help & Support":
+    - /url: /help-support
+    - img "help-support"
+    - heading "Help & Support" [level=5]
+- link "help-support 0 SAR":
+  - /url: /wallet
+  - img "help-support"
+  - heading "0 SAR" [level=5]
+- link "help-support Help & Support":
+  - /url: /help-support
+  - img "help-support"
+  - heading "Help & Support" [level=5]
+- img "notification-icon"
+- img "my-profile"
+- heading "Sharrwah Capture" [level=4]
+- img
+- button "Close":
+  - img
+- heading "Try the all new Partners Dashboard" [level=3]
+- paragraph: A fresh look, a clearer and faster experience to manage all your operations, with the option to switch back anytime.
+- button "Try it now"
+- alert:
+  - paragraph: Welcome to Partner Dashboard, Sharrwah Capture

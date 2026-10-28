@@ -1,0 +1,22 @@
+{"intent":"Zid sign-up, English","do":"goto","url":"https://dashboard.zid.sa/en-sa/register"}
+{"intent":"the capture inbox alias as the email","do":"fill","role":"textbox","name":"Email","value":"sharrwah+zid@gmail.com"}
+{"intent":"Create your store","do":"click","role":"button","name":"Create your store","exact":true,"settleMs":3000}
+{"intent":"the emailed code, digit 1","do":"fill","role":"textbox","name":"Digit 1","value":"5"}
+{"intent":"digit 2","do":"fill","role":"textbox","name":"Digit 2","value":"9"}
+{"intent":"digit 3","do":"fill","role":"textbox","name":"Digit 3","value":"0"}
+{"intent":"digit 4","do":"fill","role":"textbox","name":"Digit 4","value":"9"}
+{"intent":"Verify code","do":"click","role":"button","name":"Verify code","exact":true,"settleMs":3000}
+{"intent":"Verify code again, snapshot at once (a message may be brief)","do":"click","role":"button","name":"Verify code","exact":true,"readyTimeout":1000,"settleMs":800}
+{"intent":"Click to resend a new code","do":"click","role":"button","name":"Click to resend","exact":true,"readyTimeout":1000,"settleMs":500}
+{"intent":"clear digit 1 for the founder to enter the code","do":"fill","role":"textbox","name":"Digit 1","value":"","readyTimeout":1000,"settleMs":300}
+{"intent":"clear digit 2","do":"fill","role":"textbox","name":"Digit 2","value":"","readyTimeout":1000,"settleMs":300}
+{"intent":"clear digit 3","do":"fill","role":"textbox","name":"Digit 3","value":"","readyTimeout":1000,"settleMs":300}
+{"intent":"clear digit 4","do":"fill","role":"textbox","name":"Digit 4","value":"","readyTimeout":1000,"settleMs":300}
+{"intent":"the page after the founder entered the emailed code by hand and pressed Verify code","do":"press","key":"Shift","readyTimeout":3000,"settleMs":1500}
+{"intent":"open the phone country list","do":"click","role":"combobox","name":"sa","readyTimeout":2000,"settleMs":1500,"fullPage":true}
+{"intent":"choose Yemen for the phone","do":"click","role":"option","name":"ye","exact":true,"readyTimeout":2000,"settleMs":800}
+{"intent":"a placeholder full name","do":"fill","role":"textbox","name":"Full Name","value":"Sharrwah Capture","readyTimeout":1000,"settleMs":300}
+{"intent":"the founder's mobile number","do":"fill","role":"textbox","name":"Phone","value":"772165871","readyTimeout":1000,"settleMs":500}
+{"intent":"Continue","do":"click","role":"button","name":"Continue","exact":true,"readyTimeout":3000,"settleMs":2500}
+{"intent":"the phone code page as left: no code reached the phone","do":"press","key":"Shift","readyTimeout":2000,"settleMs":1000}
+{"do":"close"}

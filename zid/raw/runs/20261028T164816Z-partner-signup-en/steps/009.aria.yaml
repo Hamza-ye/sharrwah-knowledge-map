@@ -1,0 +1,80 @@
+- img "zid-logo"
+- heading "Create a New Account" [level=2]
+- heading "Please fill out the form below to create your account" [level=5]
+- tab "Account Information" [selected]:
+  - heading "Account Information" [level=3]
+- group:
+  - 'heading "Full Name: *" [level=5]':
+    - text: "Full Name:"
+    - heading "*" [level=5]
+  - textbox "Please write your first and last name": Sharrwah Capture
+- group:
+  - 'heading "E-mail address: *" [level=5]':
+    - text: "E-mail address:"
+    - heading "*" [level=5]
+  - textbox "example@gmail.com": sharrwah+zidpartner@gmail.com
+- group:
+  - 'heading "Mobile Number: *" [level=5]':
+    - text: "Mobile Number:"
+    - heading "*" [level=5]
+  - 'textbox "Ex: +9661234567891"': "+967772165871"
+  - heading "*write your mobile number preceded by your country code" [level=5]
+- group:
+  - 'heading "Password: *" [level=5]':
+    - text: "Password:"
+    - heading "*" [level=5]
+  - textbox: Zp9gPNjum9NiFK7k
+  - heading "*8 characters at least and contains numbers and letters" [level=5]
+- group:
+  - 'heading "confirm password: *" [level=5]':
+    - text: "confirm password:"
+    - heading "*" [level=5]
+  - textbox: Zp9gPNjum9NiFK7k
+- group:
+  - 'heading "Country: *" [level=5]':
+    - text: "Country:"
+    - heading "*" [level=5]
+  - listbox:
+    - button:
+      - img
+    - text: Saudi Arabia United Arab Emirates Kuwait Oman Bahrain Egypt Jordan Lebanon Tunisia Morocco Libyan Arab Jamahiriya Afghanistan Åland Islands Albania Algeria American Samoa AndorrA Angola Anguilla Antarctica Antigua and Barbuda Argentina Armenia Aruba Australia Austria Azerbaijan Bahamas Bangladesh Barbados Belarus Belgium Belize Benin Bermuda Bhutan Bolivia Bosnia and Herzegovina Botswana Bouvet Island Brazil British Indian Ocean Territory Brunei Darussalam Bulgaria Burkina Faso Burundi Cambodia Cameroon Canada Cape Verde Cayman Islands Central African Republic Chad Chile China Christmas Island Cocos (Keeling) Islands Colombia Comoros Congo Congo, The Democratic Republic of the Cook Islands Costa Rica Cote D'Ivoire Croatia Cuba Cyprus Czech Republic Denmark Djibouti Dominica Dominican Republic Ecuador El Salvador Equatorial Guinea Eritrea Estonia Ethiopia Falkland Islands (Malvinas) Faroe Islands Fiji Finland France French Guiana French Polynesia French Southern Territories Gabon Gambia Georgia Germany Ghana Gibraltar Greece Greenland Grenada Guadeloupe Guam Guatemala Guernsey Guinea Guinea-Bissau Guyana Haiti Heard Island and Mcdonald Islands Holy See (Vatican City State) Honduras Hong Kong Hungary Iceland India Indonesia Iran, Islamic Republic Of Iraq Ireland Isle of Man Palestine Italy Jamaica Japan Jersey Kazakhstan Kenya Kiribati Korea, Democratic People'S Republic of Korea, Republic of Kyrgyzstan Lao People'S Democratic Republic Latvia Lesotho Liberia Liechtenstein Lithuania Luxembourg Macao Macedonia, The Former Yugoslav Republic of Madagascar Malawi Malaysia Maldives Mali Malta Marshall Islands Martinique Mauritania Mauritius Mayotte Mexico Micronesia, Federated States of Moldova, Republic of Monaco Mongolia Montserrat Mozambique Myanmar Namibia Nauru Nepal Netherlands Netherlands Antilles New Caledonia New Zealand Nicaragua Niger Nigeria Niue Norfolk Island Northern Mariana Islands Norway Pakistan Palau Panama Papua New Guinea Paraguay Peru Philippines Pitcairn Poland Portugal Puerto Rico Qatar Reunion Romania Russian Federation RWANDA Saint Helena Saint Kitts and Nevis Saint Lucia Saint Pierre and Miquelon Saint Vincent and the Grenadines Samoa San Marino Sao Tome and Principe Senegal Serbia and Montenegro Seychelles Sierra Leone Singapore Slovakia Slovenia Solomon Islands Somalia South Africa South Georgia and the South Sandwich Islands Spain Sri Lanka Sudan Surilabel Svalbard and Jan Mayen Swaziland Sweden Switzerland Syrian Arab Republic Taiwan, Province of China Tajikistan Tanzania, United Republic of Thailand Timor-Leste Togo Tokelau Tonga Trinidad and Tobago Turkey Turkmenistan Turks and Caicos Islands Tuvalu Uganda Ukraine United Kingdom United States United States Minor Outlying Islands Uruguay Uzbekistan Vanuatu Venezuela Viet Nam Virgin Islands, British Virgin Islands, U.S. Wallis and Futuna Western Sahara Yemen Zambia Zimbabwe
+- group:
+  - 'heading "Are you?: *" [level=5]':
+    - text: "Are you?:"
+    - heading "*" [level=5]
+  - listbox:
+    - button:
+      - img
+- group:
+  - heading "What are you willing to develop? *" [level=5]:
+    - text: What are you willing to develop?
+    - heading "*" [level=5]
+  - listbox:
+    - button:
+      - img
+- group:
+  - 'heading "Are You Looking For Ideas To Build?: *" [level=5]':
+    - text: "Are You Looking For Ideas To Build?:"
+    - heading "*" [level=5]
+  - listbox:
+    - button:
+      - img
+- group:
+  - heading "I accept the" [level=5]
+  - checkbox "I accept the"
+  - link "terms of use":
+    - /url: https://zid.sa/en/terms-conditions/
+    - heading "terms of use" [level=5]
+- group:
+  - button "Cancel":
+    - paragraph: Cancel
+  - button "Register" [disabled]:
+    - paragraph: Register
+- heading "Already have an account?" [level=3]
+- link "Login":
+  - /url: /login
+  - heading "Login" [level=3]
+- img "zid logo"
+- heading "Join thousands of developers." [level=2]
+- paragraph: and Start your growth journey with Zid Apps Market
+- img "zid developers"

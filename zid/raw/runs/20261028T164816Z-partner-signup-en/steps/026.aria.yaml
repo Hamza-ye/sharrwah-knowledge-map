@@ -1,0 +1,98 @@
+- link "zid logo Partner Dashboard":
+  - /url: /
+  - img "zid logo"
+  - heading "Partner Dashboard" [level=4]
+- navigation:
+  - link "dashboard Dashboard":
+    - /url: /
+    - img "dashboard"
+    - heading "Dashboard" [level=5]
+  - link "my-apps My Apps":
+    - /url: /applications
+    - img "my-apps"
+    - heading "My Apps" [level=5]
+  - img "themes"
+  - heading "My Themes" [level=5]
+  - link "my-profile My profile":
+    - /url: /profile
+    - img "my-profile"
+    - heading "My profile" [level=5]
+  - link "partnership Partnership":
+    - /url: /partnership-details
+    - img "partnership"
+    - heading "Partnership" [level=5]
+  - img "payments"
+  - heading "Payments" [level=5]
+  - link "members Team Members Management":
+    - /url: /team-members
+    - img "members"
+    - heading "Team Members Management" [level=5]
+  - link "development-store Development Stores":
+    - /url: /development-stores
+    - img "development-store"
+    - heading "Development Stores" [level=5]
+  - link "api-docs APIs Documentation":
+    - /url: https://docs.zid.sa/
+    - img "api-docs"
+    - heading "APIs Documentation" [level=5]
+  - img "webhooks"
+  - heading "Webhooks" [level=5]
+  - link "notifications Notifications":
+    - /url: /notifications
+    - img "notifications"
+    - heading "Notifications" [level=5]
+  - link "help-support Help & Support":
+    - /url: /help-support
+    - img "help-support"
+    - heading "Help & Support" [level=5]
+- link "help-support 0 SAR":
+  - /url: /wallet
+  - img "help-support"
+  - heading "0 SAR" [level=5]
+- link "help-support Help & Support":
+  - /url: /help-support
+  - img "help-support"
+  - heading "Help & Support" [level=5]
+- img "notification-icon"
+- img "my-profile"
+- heading "Sharrwah Capture" [level=4]
+- img
+- heading "Development Stores" [level=2]
+- heading "Create and manage your development stores" [level=4]
+- button "Create Development Store":
+  - img
+  - heading "Create Development Store" [level=3]
+- heading "Create a new Development Store" [level=4]
+- group:
+  - heading "Store Name" [level=5]
+  - textbox: Capture Dev Store
+- group:
+  - heading "Store Password" [level=5]
+  - textbox
+- group:
+  - heading "Confirm Password" [level=5]
+  - textbox
+- button "save" [disabled]:
+  - heading "save" [level=3]
+- button "Close modal":
+  - img
+- table:
+  - rowgroup:
+    - columnheader "ID"
+    - columnheader "Store Name"
+    - columnheader "Store Link"
+    - columnheader "Dashboard Access"
+    - columnheader "Store Email"
+    - columnheader "Action"
+  - rowgroup:
+    - row "You don't have any development store yet":
+      - cell "You don't have any development store yet":
+        - paragraph: You don't have any development store yet
+- button "Close":
+  - img
+- heading "Try the all new Partners Dashboard" [level=3]
+- paragraph: A fresh look, a clearer and faster experience to manage all your operations, with the option to switch back anytime.
+- button "Try it now"
+- button "Open Intercom Messenger":
+  - img
+  - img

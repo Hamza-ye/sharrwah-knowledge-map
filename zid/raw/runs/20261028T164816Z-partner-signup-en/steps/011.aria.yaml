@@ -1,0 +1,81 @@
+- img "zid-logo"
+- heading "Create a New Account" [level=2]
+- heading "Please fill out the form below to create your account" [level=5]
+- tab "Account Information" [selected]:
+  - heading "Account Information" [level=3]
+- group:
+  - 'heading "Full Name: *" [level=5]':
+    - text: "Full Name:"
+    - heading "*" [level=5]
+  - textbox "Please write your first and last name": Sharrwah Capture
+- group:
+  - 'heading "E-mail address: *" [level=5]':
+    - text: "E-mail address:"
+    - heading "*" [level=5]
+  - textbox "example@gmail.com": sharrwah+zidpartner@gmail.com
+- group:
+  - 'heading "Mobile Number: *" [level=5]':
+    - text: "Mobile Number:"
+    - heading "*" [level=5]
+  - 'textbox "Ex: +9661234567891"': "+967772165871"
+  - heading "*write your mobile number preceded by your country code" [level=5]
+- group:
+  - 'heading "Password: *" [level=5]':
+    - text: "Password:"
+    - heading "*" [level=5]
+  - textbox: Zp9gPNjum9NiFK7k
+  - heading "*8 characters at least and contains numbers and letters" [level=5]
+- group:
+  - 'heading "confirm password: *" [level=5]':
+    - text: "confirm password:"
+    - heading "*" [level=5]
+  - textbox: Zp9gPNjum9NiFK7k
+- group:
+  - 'heading "Country: *" [level=5]':
+    - text: "Country:"
+    - heading "*" [level=5]
+  - listbox:
+    - button "Yemen":
+      - text: Yemen
+      - img
+- group:
+  - 'heading "Are you?: *" [level=5]':
+    - text: "Are you?:"
+    - heading "*" [level=5]
+  - listbox:
+    - button:
+      - img
+    - text: An Independent Developer An Employed Developer (company)
+- group:
+  - heading "What are you willing to develop? *" [level=5]:
+    - text: What are you willing to develop?
+    - heading "*" [level=5]
+  - listbox:
+    - button:
+      - img
+- group:
+  - 'heading "Are You Looking For Ideas To Build?: *" [level=5]':
+    - text: "Are You Looking For Ideas To Build?:"
+    - heading "*" [level=5]
+  - listbox:
+    - button:
+      - img
+- group:
+  - heading "I accept the" [level=5]
+  - checkbox "I accept the"
+  - link "terms of use":
+    - /url: https://zid.sa/en/terms-conditions/
+    - heading "terms of use" [level=5]
+- group:
+  - button "Cancel":
+    - paragraph: Cancel
+  - button "Register" [disabled]:
+    - paragraph: Register
+- heading "Already have an account?" [level=3]
+- link "Login":
+  - /url: /login
+  - heading "Login" [level=3]
+- img "zid logo"
+- heading "Join thousands of developers." [level=2]
+- paragraph: and Start your growth journey with Zid Apps Market
+- img "zid developers"

@@ -1,0 +1,30 @@
+{
+  "background_color": "#0D0D1A",
+  "display": "standalone",
+  "icons": [
+    {
+      "sizes": "any",
+      "src": "favicon.svg",
+      "type": "image/svg+xml"
+    },
+    {
+      "sizes": "96x96",
+      "src": "favicon-96x96.png",
+      "type": "image/png"
+    },
+    {
+      "sizes": "192x192",
+      "src": "web-app-manifest-192x192.png",
+      "type": "image/png"
+    },
+    {
+      "sizes": "512x512",
+      "src": "web-app-manifest-512x512.png",
+      "type": "image/png"
+    }
+  ],
+  "name": "Zid Partners Dashboard",
+  "short_name": "Zid Partners",
+  "start_url": ".",
+  "theme_color": "#0D0D1A"
+}

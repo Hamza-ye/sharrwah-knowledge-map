@@ -1,0 +1,92 @@
+- link "zid logo Partner Dashboard":
+  - /url: /
+  - img "zid logo"
+  - heading "Partner Dashboard" [level=4]
+- navigation:
+  - link "dashboard Dashboard":
+    - /url: /
+    - img "dashboard"
+    - heading "Dashboard" [level=5]
+  - link "api-docs APIs Documentation":
+    - /url: https://docs.zid.sa/
+    - img "api-docs"
+    - heading "APIs Documentation" [level=5]
+  - link "help-support Help & Support":
+    - /url: /help-support
+    - img "help-support"
+    - heading "Help & Support" [level=5]
+- link "help-support 0 SAR":
+  - /url: /wallet
+  - img "help-support"
+  - heading "0 SAR" [level=5]
+- link "help-support Help & Support":
+  - /url: /help-support
+  - img "help-support"
+  - heading "Help & Support" [level=5]
+- img "notification-icon"
+- img "my-profile"
+- heading "Sharrwah Capture" [level=4]
+- img
+- img "welcome"
+- heading "Welcome to Zid partner dashboard" [level=2]
+- heading "Your account was successfully created." [level=4]
+- button "Create App":
+  - img
+  - heading "Create App" [level=3]
+- heading "Get Ready For Launching Your First Application" [level=2]
+- paragraph: Follow These Steps To Get Started
+- heading "Create An Account" [level=2]
+- paragraph: Create A Developer Account In The Partner Dashboard
+- heading "2" [level=1]
+- heading "Confirm Your E-mail" [level=2]
+- paragraph: Please Confirm Your E-mail Address.
+- paragraph: Send Confirmation E-mail
+- heading "3" [level=1]
+- heading "Complete partnership details" [level=2]
+- paragraph: Please Enter The Details of Partnership Form in
+- paragraph: Partnership Page
+- heading "4" [level=1]
+- heading "Create A Development Store" [level=2]
+- paragraph: Create A One-Click Development Store And Test Your Apps On It
+- heading "5" [level=1]
+- heading "Get Started And Create Your App" [level=2]
+- paragraph: Start Creating Your App And Release It To Zid App Market
+- img
+- heading "Confirm E-mail" [level=2]
+- heading "Do You Want To Re-send Confirmation E-mail?" [level=4]
+- button "Close":
+  - heading "Close" [level=3]
+- button "Re-send E-mail":
+  - heading "Re-send E-mail" [level=3]
+- button "Close modal":
+  - img
+- heading "Your Progress" [level=4]
+- paragraph: "4"
+- paragraph: steps left
+- text: 20%
+- heading "Learn More About Applications In Our" [level=4]
+- link "Documentation":
+  - /url: https://docs.zid.sa/
+  - heading "Documentation" [level=4]
+- heading "Need help getting started?" [level=2]
+- img "book meeting"
+- heading "Book a meeting" [level=3]
+- paragraph: If you have any questions or inquiries, book an interview with one of our team members to help you
+- link "Book a meeting now":
+  - /url: https://developers.zid.sa/meeting
+  - heading "Book a meeting now" [level=4]
+  - img
+- img "book meeting"
+- heading "Join Our Community On Slack" [level=3]
+- paragraph: Ask your questions and connect with our team members and developer partners in our Slack community
+- link "Join our community":
+  - /url: https://join.slack.com/t/ziddevworkspace/shared_invite/zt-rrhu52k6-XNIWUUTKMZyFNdEtcXvKTA
+  - heading "Join our community" [level=4]
+  - img
+- button "Close":
+  - img
+- heading "Try the all new Partners Dashboard" [level=3]
+- paragraph: A fresh look, a clearer and faster experience to manage all your operations, with the option to switch back anytime.
+- button "Try it now"
+- button "Open Intercom Messenger":
+  - img

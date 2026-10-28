@@ -1,0 +1,30 @@
+{"intent":"Zid Partner Dashboard","do":"goto","url":"https://partner.zid.sa/","readyTimeout":8000,"settleMs":3000}
+{"intent":"Register now","do":"text","text":"Register now","readyTimeout":5000,"settleMs":2500}
+{"intent":"a placeholder full name","do":"fill","role":"textbox","name":"Please write your first and last name","value":"Sharrwah Capture","readyTimeout":1000,"settleMs":300}
+{"intent":"a capture inbox alias for the partner account","do":"fill","role":"textbox","name":"example@gmail.com","value":"sharrwah+zidpartner@gmail.com","readyTimeout":1000,"settleMs":300}
+{"intent":"the founder's mobile with its country code","do":"fill","role":"textbox","name":"Ex: +9661234567891","value":"+967772165871","readyTimeout":1000,"settleMs":300}
+{"intent":"password","do":"fill","css":"input[type=password]","nth":0,"value_env":"ZID_PARTNER_PASSWORD","readyTimeout":1000,"settleMs":300}
+{"intent":"confirm password","do":"fill","css":"input[type=password]","nth":1,"value_env":"ZID_PARTNER_PASSWORD","readyTimeout":1000,"settleMs":300}
+{"intent":"open the Country list","do":"click","css":"[role=group]:has-text(\"Country:\") [role=listbox]","readyTimeout":1000,"settleMs":1200,"fullPage":true}
+{"intent":"open Country","do":"click","css":".register-zid-select-header button","nth":0,"readyTimeout":1000,"settleMs":800}
+{"intent":"Yemen","do":"click","css":".zid-select-option:text-is(\"Yemen\") >> visible=true","readyTimeout":1000,"settleMs":800}
+{"intent":"open Are you?","do":"click","css":".register-zid-select-header button","nth":1,"readyTimeout":1000,"settleMs":800}
+{"intent":"An Independent Developer","do":"click","css":".zid-select-option:has-text(\"An Independent Developer\") >> visible=true","readyTimeout":1000,"settleMs":800}
+{"intent":"open What are you willing to develop?","do":"click","css":".register-zid-select-header button","nth":2,"readyTimeout":1000,"settleMs":800}
+{"intent":"Developing Public App","do":"click","css":".zid-select-option:has-text(\"Developing Public App\") >> visible=true","readyTimeout":1000,"settleMs":800}
+{"intent":"open Are You Looking For Ideas To Build?","do":"click","css":".register-zid-select-header button","nth":3,"readyTimeout":1000,"settleMs":800}
+{"intent":"No","do":"click","css":".zid-select-option:text-is(\"No\") >> visible=true","readyTimeout":1000,"settleMs":800}
+{"intent":"accept the terms of use","do":"check","role":"checkbox","name":"I accept the","readyTimeout":1000,"settleMs":800,"fullPage":true}
+{"intent":"accept the terms of use (its checkbox mark)","do":"click","css":"label.zid-checkbox .zid-checkbox__checkmark","readyTimeout":1000,"settleMs":800}
+{"intent":"Register","do":"click","role":"button","name":"Register","exact":true,"readyTimeout":4000,"settleMs":2000}
+{"intent":"the Partner Dashboard home, loaded","do":"goto","url":"https://partner.zid.sa/","readyTimeout":8000,"settleMs":6000,"fullPage":true}
+{"intent":"Send Confirmation E-mail","do":"text","text":"Send Confirmation E-mail","exact":true,"readyTimeout":3000,"settleMs":1500}
+{"intent":"the confirmation link from the email (its English path)","do":"goto","url":"https://partners.zid.sa/en-sa/verify-email?email=sharrwah%2Bzidpartner%40gmail.com&signature=Lyqh4ToXiVxYNZ8232mRrDQixlUwjKLITESYJ90KnG3pcN5sLYRrqQ1tVS3wqqV8MxTPIHdTLCRd9Q4VQn4u0TBV84ryiX3fcPaMwfVOLV1XDxokmZWFYLaLjcmupblRrvClUvr1SRQrWutaG6yEZDOEi3EUNOG3A9rPk9Xt1epm8hwKOILEtoiMNHnHGDs","readyTimeout":8000,"settleMs":4000}
+{"intent":"the Partner Dashboard home after the email was confirmed","do":"goto","url":"https://partner.zid.sa/","readyTimeout":8000,"settleMs":6000,"fullPage":true}
+{"intent":"Development Stores","do":"click","role":"link","name":"development-store Development Stores","readyTimeout":8000,"settleMs":5000,"fullPage":true}
+{"intent":"Create Development Store","do":"text","text":"Create Development Store","exact":true,"readyTimeout":5000,"settleMs":3000,"fullPage":true}
+{"intent":"the development store name","do":"fill","css":"input.zid-input[type=text]","value":"Capture Dev Store","readyTimeout":1000,"settleMs":300}
+{"intent":"its password","do":"fill","css":"input.zid-input[type=password]","nth":0,"value_env":"ZID_DEVSTORE_PASSWORD","readyTimeout":1000,"settleMs":300}
+{"intent":"its password again","do":"fill","css":"input.zid-input[type=password]","nth":1,"value_env":"ZID_DEVSTORE_PASSWORD","readyTimeout":1000,"settleMs":800}
+{"intent":"save: create the development store","do":"click","role":"button","name":"save","exact":true,"readyTimeout":5000,"settleMs":6000,"fullPage":true}
+{"do":"close"}
