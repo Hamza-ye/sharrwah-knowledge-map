@@ -14,7 +14,8 @@
 **Open gate:** G3, after each subject. S-02 is under way.
 
 **Waiting on the founder:**
-- **the founder's word on the Salla capture requests:** H-001 to H-003, H-005's step 1, and H-004 if a run reaches verification. RD1's phase C waits for it. The observed-sh requests, H-006 to H-008, ran on 27 October and are read (below);
+- **access to the repository `other-product-class`,** where the founder's local agent holds its Zid evidence (`zid/`, commit `2b8920b`), and will hold BigCommerce's and WooCommerce's. This session's GitHub access is fixed to the repositories it started with, so it can't clone it (28 October). Its 23 Zid answers wait on it.
+- *Done on 28 October:* the Salla capture requests ran at observed-sa `b0bd0b16`, and part A2-SA-R is reading them. The founder's report on them lifts RD1's wait. The founder asked that each remaining gap be pursued only if closing it could change an S-02 decision and a proportionate route exists: [`gap-assessment.tsv`](studies/subjects/S-02/gap-assessment.tsv) gives each gap's verdict;
 - the answers in [`reports/S-02-evidence-requests.md`](reports/S-02-evidence-requests.md), for the evidence only the founder can get: a Zid store, a BigCommerce trial, a WooCommerce test store, and questions to five platforms, Shopify's added on 28 October. Nothing waits on them: phase C goes on.
 
 **Stage 4, S-02, what a market is.**
