@@ -116,6 +116,7 @@ The pilot's five steps, under Stage 4's changes (`PLAN.md`, Stage 4, and section
 | Held evidence first, measured: four gap-closing parts that read held files before any capture request runs (A2-T, A2-SH-H, A2-SA-H, A2-SA-S), and the audit of their absences (A3-2) | 60.6 |
 | 1C's two dry runs, measured | 7.2 |
 | The capture round, measured: the runs for H-006 to H-008 read (A2-SH-R1, A2-SH-R2, 27.7), and phase B's three parts that placed what they found (26.9) | 54.6 |
+| Salla's and Zid's captures of 28 October read, measured (A2-SA-R 9.7, A2-ZD-R 12.3) | 22.0 |
 | 1C, per root decision | 90 to 150 |
 | Inspection of the later briefs | 15 to 30 |
 | 5, the review | 40 to 80 |
@@ -132,5 +133,7 @@ The pilot's five steps, under Stage 4's changes (`PLAN.md`, Stage 4, and section
 **Measured again at 19:04 UTC on 27 October:** 1,285 million spent, with the second pass's last round and phase C under way. The projection is now about 1,450 to 1,550 million. It rose because held evidence was read before the capture requests run, which cost 61 million and closed or narrowed nine gaps.
 
 **Measured again at 00:39 UTC on 28 October:** 1,408 million spent, with phase C done for RD2 and RD3 and its re-run on the keys the capture round touched under way. The capture round cost 55 million: it read the local agent's runs for H-006 to H-008, which answered two gaps and narrowed three, and placed what they found. The projection is now about 1,500 to 1,600 million.
+
+**Measured again at 22:09 UTC on 28 October:** 1,436 million spent. Salla's and Zid's captures were read for 22 million; the audit of Zid's absences and phase B's round for what they found are under way. The projection stays at about 1,500 to 1,600 million, as the rest of S-02 moves from recording evidence to drafting and testing the market model.
 
 The budget counts the agents. The coordinating session's own tokens are reported beside it: 441 million from 21:00 UTC on 26 October, when S-02 began, to 14:25 UTC on 27 October.

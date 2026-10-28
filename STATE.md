@@ -14,9 +14,18 @@
 **Open gate:** G3, after each subject. S-02 is under way.
 
 **Waiting on the founder:**
-- **access to the repository `other-product-class`,** where the founder's local agent holds its Zid evidence (`zid/`, commit `2b8920b`), and will hold BigCommerce's and WooCommerce's. This session's GitHub access is fixed to the repositories it started with, so it can't clone it (28 October). Its 23 Zid answers wait on it.
-- *Done on 28 October:* the Salla capture requests ran at observed-sa `b0bd0b16`, and part A2-SA-R is reading them. The founder's report on them lifts RD1's wait. The founder asked that each remaining gap be pursued only if closing it could change an S-02 decision and a proportionate route exists: [`gap-assessment.tsv`](studies/subjects/S-02/gap-assessment.tsv) gives each gap's verdict;
-- the answers in [`reports/S-02-evidence-requests.md`](reports/S-02-evidence-requests.md), for the evidence only the founder can get: a Zid store, a BigCommerce trial, a WooCommerce test store, and questions to five platforms, Shopify's added on 28 October. Nothing waits on them: phase C goes on.
+- **Three answer lines of 28 October,** in the reply on how decisions are tested. Nothing stops for them: S-02's market model is drafted and tested either way.
+  - The architecture alongside the subjects, in the tested form: yes or no. It decides whether isolation between stores, the core data model, extension by apps, and identity and permissions follow the market model.
+  - Building ahead: agree or not. With the vision recorded, engineering keeps options open for the founder's markets wherever a retrofit would be costly, and brings the founder only the expensive ones.
+  - Quality targets, when the founder can: rough numbers of stores and orders in years 1 and 3, and which quality wins when two conflict. They set the numbers in the test scenarios.
+- **The questions in [`reports/S-02-evidence-requests.md`](reports/S-02-evidence-requests.md)** that only a platform can answer. They are optional, and nothing waits on them.
+
+*Settled on 28 October:*
+- **The founder's evidence is in.** The founder's local agent took Salla and Zid as far as they can be taken:
+  - Salla's runs are in observed-sa at `b0bd0b16`;
+  - Zid's are in `other-product-class`, which this session reads from this repository's branch `evidence/other-product-class` (`CLAUDE.md`).
+- **The founder's rule for what remains:** a gap is pursued only if closing it could change an S-02 decision and a proportionate route exists. [`gap-assessment.tsv`](studies/subjects/S-02/gap-assessment.tsv) gives each gap's verdict.
+- **The scope:** MENA is the target, and Yemen is one market among those. Neither Yemen's circumstances nor today's capacity becomes a permanent constraint without a justified reason (`founder-decisions.tsv`).
 
 **Stage 4, S-02, what a market is.**
 - **Its frame:** [`studies/subjects/S-02/frame.md`](studies/subjects/S-02/frame.md).
@@ -65,15 +74,35 @@ At phase A's end, the checker found every quote, 3,193 of them, and no error. Wi
 - **Phase C again on the touched keys (part C-R), done.** Four keys changed: two `the whole store` keys (S02-VP-57, S02-VP-63) and S02-VP-26's `a group of customers` became commonalities, and an app's value per market became a founder item (S02-VP-86). RD2 and RD3 hold 247 keys. 72 founder items, 61 of them S-02's own, in 46 wordings; 20 keys are kept open.
 - **Handoffs:** H-006 to H-008 are marked done, at the commit, in [`handoffs/README.md`](handoffs/README.md).
 
+**Salla and Zid (28 October).** Two gap-closing parts read the founder's local agent's captures, recording only what the files show:
+- **Salla (A2-SA-R):** 75 statements, from the runs for H-001 to H-005 at observed-sa `b0bd0b16`.
+  - **Answered:** G03 and G04.
+  - **Narrowed:** G01, G05 and G07, into G16 to G18.
+  - **Left:** seven. Salla refused the multi-market activation, and the UAE verification waits on Salla's review.
+- **Zid (A2-ZD-R):** 39 statements and 13 absences, from a public demo store and a development store, both without Zid's markets screens.
+  - **Answered:** 10 gaps. Seven of those answers rest on absences from the dashboard's complete route list: it holds no page under a market for those settings.
+  - **Narrowed:** 10 gaps, into G24 to G33. Only G30 (who checks a store's country after it changes) stays open, for RD1's analysis. The others can't change an S-02 decision, or belong to a later subject (S-03, S-05, S-07).
+  - **Closed:** 3, which can't change a decision.
+- **Running:**
+  - the audit of Zid's 13 absences, by an agent that didn't record them (A3-ZD-R);
+  - phase B's round for the new statements, in four parts ([`b/second-pass/parts.tsv`](studies/subjects/S-02/b/second-pass/parts.tsv)): 25 rows to revisit, because they name a gap since settled, and 50 statements to place.
+
 **Earlier:**
 - **Phase B's first pass is complete** ([`method-report.md`](studies/subjects/S-02/method-report.md), section 7): 73 variation points, each with a row for every platform, 671 rows, in [`variation-points.tsv`](studies/subjects/S-02/variation-points.tsv) and [`variants.tsv`](studies/subjects/S-02/variants.tsv). The full check gives no error.
 - **The absence audit is complete** (section 8): 24 claims; 19 confirmed, 3 partly contradicted, 2 contradicted; 122 statements added. Two capture requests are narrowed ([H-002](handoffs/H-002-observed-sa-onboarding-countries.md), [H-007](handoffs/H-007-observed-sh-store-country-sign-up.md)), and three tools fixed to see held evidence they had missed.
 - **Gap-closing (phase A2) is complete** ([`method-report.md`](studies/subjects/S-02/method-report.md), section 9; [`a2-parts.tsv`](studies/subjects/S-02/a2-parts.tsv)): 22 parts, 121 rows, 118 of them given statements and 83 with no gap left; 1,165 statements; 337 million. Its live pages are captured, and every quote is found; twelve are ruled on after review. 49 gaps remain: 15 for the local agent, in H-008 (new) and H-002 and H-005 (extended); 34 for the founder.
 - **The render fault:** the browser in this session failed some sites' scripts, so BigCommerce's Help Center and Zid's sites rendered empty or as an error text; agents read zid.eg's Terms from a source that held the Saudi Terms. The tools now fetch each request outside the browser, open what a click shows, and tell a page's source from what it shows. 32 pages are held again as they render; Zid's audit of G03 was redone (for Egypt, the contract is with Zid Egypt, under Egyptian law). Every capture run now has its README.
-- **Cost:** 1,408 million agent tokens by 00:39 UTC on 28 October, past the budget plus a quarter (875 million). The cost came to the founder at 09:55 on 27 October ([the frame's budget](studies/subjects/S-02/frame.md#budget)). The capture round cost 55 million. S-02 is projected at about 1.5 to 1.6 billion. The work goes on on the founder's Max x20 plan. The coordinating session's own tokens: 719 million since S-02 began.
+- **Cost:** 1,436 million agent tokens by 22:09 UTC on 28 October, past the budget plus a quarter (875 million). The cost came to the founder at 09:55 on 27 October ([the frame's budget](studies/subjects/S-02/frame.md#budget)). The capture round cost 55 million; reading Salla's and Zid's captures cost 22 million. S-02 is projected at about 1.5 to 1.6 billion. The work goes on on the founder's Max x20 plan. The coordinating session's own tokens: 777 million since S-02 began.
 
 **Next:**
-1. With the founder's word on the Salla capture requests: read any runs they made, close or narrow their gaps, place the statements, then RD1's phase C (C-RD1-1, C-RD1-2).
-2. Then the Yemen row and the scenario walk, for each root decision; the register; the independent review; and S-02's report for G3.
+1. Finish phase B's round (RD1-S7 running; RD2-S4; then, after the audit, RD3-S12 and RD1-S8), with the full check giving no error.
+2. Phase C again on the keys the round touched (RD2, RD3); then RD1's phase C (C-RD1-1, C-RD1-2).
+3. S-02's end, in the tested form of 28 October. Its seven questions become one decision, the market model:
+   - what a market can be made of;
+   - how a setting resolves: the store's value, then the market's, then the buyer's context;
+   - which settings can vary.
+
+   It is drafted with its options, tested against scenarios from the founder's markets, attacked by an agent that didn't draft it, and tried in a spike. Yemen is one scenario among them. Then the independent review, and the report for G3.
+4. BigCommerce and WooCommerce, when the founder's local agent pushes them: their 10 gaps that could change a decision are read; 13 are closed ([`gap-assessment.tsv`](studies/subjects/S-02/gap-assessment.tsv)).
 
 **To resume:** read `PLAN.md`, this file and `founder-decisions.tsv`.
