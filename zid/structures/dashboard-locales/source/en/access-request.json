@@ -1,0 +1,41 @@
+{
+  "actions": {
+    "approve": "Approve",
+    "deny": "Deny"
+  },
+  "body": {
+    "dearMerchant": "Dear merchant,",
+    "inCaseOfApproval": "If you want to approve the request, please click the approval button below.",
+    "inCaseOfDenial": "If you want to deny the request, please click the deny button below.",
+    "inCaseYouWantToGrant": "In case you want to grant the employee access, please contact customer support.",
+    "sentiment": "Zid technical team would like to access your account to provide support and solve the challenges you are facing in your store setup.",
+    "youCanClose": "You can safely close this page."
+  },
+  "card": {
+    "title": "Access request for your store"
+  },
+  "details": {
+    "accessDuration": "Access duration",
+    "accessRole": "Role",
+    "hours_few": "{{count}} hours",
+    "hours_many": "{{count}} hours",
+    "hours_one": "{{count}} hour",
+    "hours_other": "{{count}} hours",
+    "hours_two": "{{count}} hours",
+    "hours_zero": "{{count}} hours",
+    "officerName": "Employee name",
+    "username": "User name"
+  },
+  "error": {
+    "generic": "We are sorry, an error occurred."
+  },
+  "result": {
+    "approved": "The access request has been approved.",
+    "denied": "The access request has been denied."
+  },
+  "status": {
+    "alreadyApproved": "This access request has already been approved.",
+    "alreadyDenied": "This access request has already been denied.",
+    "closed": "This access request has expired or is no longer active."
+  }
+}

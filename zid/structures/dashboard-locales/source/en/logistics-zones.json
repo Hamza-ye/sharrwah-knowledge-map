@@ -1,0 +1,267 @@
+{
+  "actions": {
+    "delete": "Delete zone",
+    "disable": "Disable zone",
+    "edit": "Edit zone",
+    "enable": "Enable zone"
+  },
+  "confirmDialog": {
+    "delete": {
+      "description": "Are you sure you want to delete the {{name}} zone?",
+      "title": "Delete Zone"
+    },
+    "disable": {
+      "description": "Are you sure you want to disable the {{name}} zone?",
+      "title": "Disable Zone"
+    },
+    "enable": {
+      "description": "Are you sure you want to enable the {{name}} zone?",
+      "title": "Enable Zone"
+    },
+    "save": {
+      "description": "Are you sure you want to save the edits in your local delivery you've created?",
+      "title": "Save Edits"
+    }
+  },
+  "create": {
+    "cities": {
+      "citiesLabel": "Cities",
+      "citiesPlaceholder": "Select cities",
+      "countriesHelper": "You can select multiple countries",
+      "countriesLabel": "Countries",
+      "countriesPlaceholder": "Select country",
+      "selectCitiesLabel": "Select cities",
+      "title": "Select Cities"
+    },
+    "configuration": {
+      "nameLabel": "Zone name",
+      "namePlaceholder": "e.g. Riyadh quick delivery",
+      "title": "Zone configuration",
+      "zoneTypeLabel": "Zone type"
+    },
+    "invalidState": "Some zone details are missing or invalid. Please review them.",
+    "inventory": {
+      "rangeHelper": "Set the maximum distance you deliver to.",
+      "rangeLabel": "Maximum distance",
+      "rangePlaceholder": "e.g. 10"
+    },
+    "placeholderDescription": "This step has no fields yet. Continue to check that the wizard keeps its progress in the URL.",
+    "shippingMethodDetails": {
+      "coverage": {
+        "description": "Cities available for this shipping method • {{count}} cities covered",
+        "dialogTitle": "Coverage details",
+        "title": "Coverage",
+        "uncovered": "Uncovered cities"
+      },
+      "firstMile": {
+        "title": "Priority pick-up"
+      },
+      "tabs": {
+        "editPrice": "Edit Price",
+        "overview": "Overview"
+      }
+    },
+    "shippingMethods": {
+      "conflict": {
+        "activateAnyway": "Activate anyway",
+        "alertDescription": "You can also activate it in this zone. If both zones cover the same customer location, the lowest shipping price from the matching zones will be shown to the customer.",
+        "alertTitle": "This shipping method is already active in <zoneName>{{zoneName}}</zoneName>.",
+        "anotherZone": "another zone",
+        "confirmAndActivate": "Confirm and activate",
+        "dialogDescription": "This shipping method is already active in <zoneName>{{zoneName}}</zoneName>.",
+        "dialogHint": "If the zones overlap, the lowest shipping price from the matching zones will be shown to the customer.",
+        "dialogTitle": "Activate in multiple zones?"
+      },
+      "createLocalDelivery": {
+        "description": "Add local delivery and manage your fleet zone.",
+        "dialogTitle": "Create new local delivery",
+        "shippingNameTitle": "Shipping name",
+        "timeSlotsInfo": "You can customize the delivery time slots after your creation.",
+        "title": "Create Local Delivery"
+      },
+      "description": "You can select only one shipping method.",
+      "detailsUnavailable": "Details are not available for this shipping method.",
+      "emptyTitle": "No shipping methods available",
+      "localDeliveryBadge": "Local delivery",
+      "localDeliverySummary": "Max distance {{distance}} km . {{pricingLabel}} {{rate}}",
+      "localDeliverySummaryWithoutDistance": "{{pricingLabel}} {{rate}}",
+      "multipleDescription": "You can select multiple shipping methods.",
+      "startingFrom": "Starting from {{rate}}",
+      "startingFromWithMaxDistance": "Up to {{distance}} km . Starting from {{rate}}",
+      "title": "Shipping methods",
+      "upToDistance": "Up to {{distance}} km"
+    },
+    "shippingPrice": {
+      "existingMethodLoadError": "We couldn’t load this zone’s shipping method. Try again before saving.",
+      "maxDistanceForBasePrice": {
+        "label": "Max distance for base price",
+        "placeholder": "Enter max distance"
+      },
+      "ratePerAdditionalDistance": {
+        "label": "Additional price per km",
+        "placeholder": "Enter additional price per km"
+      },
+      "shippingNamePlaceholder": "e.g. Fleet delivery",
+      "shippingNameTitle": "Shipping name",
+      "title": "Shipping price",
+      "upToDistance": "Up to {{distance}} km"
+    },
+    "shippingRate": {
+      "description": "Define customer shipping rates based on delivery zone. You'll be charged the default rate, while customers pay the custom rate you set.",
+      "distanceBased": "Distance-based pricing",
+      "distanceBasedDescription": "Price calculated by delivery distance in km.",
+      "flatRate": "Flat rate",
+      "flatRateDescription": "Charge customers one fixed rate. You cover any extra cost.",
+      "maximumDistanceHelper": "Set the maximum distance you deliver/coverage to.",
+      "maximumDistanceLabel": "Maximum distance per km",
+      "maximumDistanceTitle": "Maximum Distance",
+      "noteLabel_ar": "Note in Arabic",
+      "noteLabel_en": "Note in English",
+      "notesDescription": "Visible to customers when this service level is selected in checkout.",
+      "notesTitle": "Notes",
+      "readOnlyDescription": "This rate is set by the shipping courier and can't be edited yet.",
+      "resetTooltip": "Reset to default rate",
+      "savePending": "Saving a custom rate is not available yet.",
+      "shippingPricePlaceholder": "Set the shipping price",
+      "title": "Edit Price",
+      "weightBased": "Weight-based pricing",
+      "weightBasedDescription": "Charge customers based on order weight."
+    },
+    "steps": {
+      "cities": "Select Cities",
+      "configuration": "Zone Configuration",
+      "inventory": "Select Inventory",
+      "inventoryLocation": "Inventory location",
+      "shippingMethods": "Shipping methods",
+      "shippingPrice": "Shipping price",
+      "zoneType": "Zone Type"
+    },
+    "summary": {
+      "inventoryTitle": "Inventory location",
+      "shippingMethodTitle": "Shipping methods",
+      "shippingPriceTitle": "Shipping price"
+    },
+    "typeNotAvailable": "This zone type cannot be created yet.",
+    "zoneType": {
+      "aerial": {
+        "description": "Best for simple flat-rate shipping zones (e.g., \"Free delivery within a 10km radius of our warehouse\")."
+      },
+      "city": {
+        "description": "Best for standard courier services where delivery rates are strictly determined by city limits."
+      },
+      "isochrone": {
+        "description": "Best for quick-commerce where you need to guarantee a \"30-minute delivery\"."
+      },
+      "isodistance": {
+        "description": "Best for quick-commerce when you need to cover a guaranteed road-distance radius from a warehouse."
+      },
+      "title": "Select zone type"
+    }
+  },
+  "edit": {
+    "configuration": {
+      "cities": "Cities",
+      "deliveryTime": "Delivery time",
+      "description": {
+        "aerial": "Direct distance based",
+        "city": "City based",
+        "custom_polygon": "Custom coverage area",
+        "isochrone": "Road distance based",
+        "isodistance": "Road distance based"
+      },
+      "maxDistance": "Maximum distance",
+      "name": "Zone name",
+      "title": "Zone configuration",
+      "zoneType": "Zone type"
+    },
+    "inventory": {
+      "addDialogDescription": "Select new inventories you want to add as new locations.",
+      "addDialogTitle": "Add new inventory",
+      "addNew": "+ Add new",
+      "addSelectLabel": "Inventories",
+      "centerLimit": "Quick delivery zones can only have one inventory center point.",
+      "dialogDescription": "Edit or add new inventory in your location",
+      "dialogTitle": "Inventory location",
+      "emptyAction": "Add inventory",
+      "emptyDescription": "You haven’t added any inventory options yet. You must select one to continue.",
+      "emptyTitle": "Inventory",
+      "inventoryColumn": "Inventory",
+      "radiusColumn": "Radius",
+      "removeDialog": {
+        "description": "Are you sure you want to remove {{name}} from this zone?",
+        "title": "Remove inventory location from this zone?"
+      },
+      "statusColumn": "Status",
+      "title": "Inventory location"
+    },
+    "mapUnavailable": "We couldn’t load the zone map preview. Please try again.",
+    "shippingMethods": {
+      "addDialogTitle": "Add new shipping method",
+      "addNew": "+ Add new",
+      "dialogDescription": "Add shipping methods or update their zone-specific pricing.",
+      "dialogTitle": "Shipping methods",
+      "editPrice": "Edit price",
+      "emptyAction": "Add shipping method",
+      "emptyDescription": "You haven’t added any shipping method options yet. You must select one to continue.",
+      "emptyTitle": "Shipping method",
+      "nameColumn": "Name",
+      "rateRequired": "Add a rate for every shipping method that cannot be priced by its courier.",
+      "statusColumn": "Status",
+      "title": "Shipping methods"
+    },
+    "status": {
+      "description": "Activate this zone to allow deliveries within this specific coverage area.",
+      "title": "Zone status"
+    },
+    "typeDescription": {
+      "aerial": "Aerial zone - Direct distance based coverage",
+      "city": "City zone - City based coverage",
+      "isochrone": "Isochrone zone - Road distance based coverage",
+      "isodistance": "Isodistance zone - Road distance based coverage"
+    }
+  },
+  "emptyState": {
+    "action": "Create first zone",
+    "description": "Create your first zone now, it becomes the source of truth for every location-based decision in your store.",
+    "noResultsDescription": "No zone matches your search or the selected type. Try a different search term.",
+    "noResultsTitle": "No zones found",
+    "title": "Create your first zone"
+  },
+  "info": {
+    "description": "Link shipping methods and inventory locations to zones. Customer location determines which zones serve them, controlling delivery badges and checkout options.",
+    "title": "Zones are the core component for quick commerce"
+  },
+  "search": {
+    "placeholder": "Search zones"
+  },
+  "statusReason": {
+    "deactivatedNoLocations": "This zone is inactive because all linked inventory locations are disabled.",
+    "deactivatedNoShippingMethods": "This zone is inactive because all linked shipping methods are disabled.",
+    "setupIncomplete": "This zone needs at least one inventory location and one shipping method before it can serve customers."
+  },
+  "statuses": {
+    "active": "Active",
+    "deactivatedNoLocations": "Inventory disabled",
+    "deactivatedNoShippingMethods": "Shipping disabled",
+    "inactive": "Inactive",
+    "setupIncomplete": "Setup incomplete"
+  },
+  "table": {
+    "coverageDistance": "{{value}}km coverage",
+    "coverageTime": "{{value}} minutes coverage",
+    "createdAt": "Created date",
+    "name": "Name",
+    "status": "Status",
+    "type": "Type"
+  },
+  "tabs": {
+    "all": "All"
+  },
+  "types": {
+    "aerial": "Aerial",
+    "city": "City",
+    "customPolygon": "Custom area",
+    "isochrone": "Isochrone",
+    "isodistance": "Isodistance"
+  }
+}

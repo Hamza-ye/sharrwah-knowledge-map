@@ -1,0 +1,27 @@
+{
+  "landing": {
+    "designTools": {
+      "action": "Explore design tools",
+      "description": "All the tools you need—themes, customization, and SEO—in one place to build a store that sells.",
+      "title": "Professional Design, Better Experience"
+    },
+    "sales": {
+      "action": "Activate marketplaces",
+      "description": "Connect your store to leading marketplaces like Trendyol and Amazon, and manage everything in one place.",
+      "title": "Expand to New Sales Channels"
+    },
+    "storeApp": {
+      "action": "Launch your store app now",
+      "description": "Boost customer experience with a dedicated app they can browse and buy from anytime.",
+      "firstListItem": "Send real-time promotions",
+      "secondListItem": "Offer exclusive app-only discounts",
+      "thirdListItem": "Promote downloads with built-in campaigns",
+      "title": "Make Shopping Easier with Your Own App"
+    },
+    "zidPos": {
+      "action": "Discover Zid POS",
+      "description": "Zid POS connects your online store and physical locations in one seamless system.",
+      "title": "One POS for All Your Sales"
+    }
+  }
+}

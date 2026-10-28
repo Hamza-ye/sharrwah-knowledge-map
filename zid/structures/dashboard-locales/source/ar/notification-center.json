@@ -1,0 +1,23 @@
+{
+  "empty": {
+    "description": "راح تظهر هنا الإشعارات تلقائياً أول ما تكون متوفرة",
+    "title": "لا توجد إشعارات حالياً"
+  },
+  "emptyFiltered": {
+    "description": "جرّب فئة أخرى.",
+    "title": "لا توجد إشعارات في هذه الفئة"
+  },
+  "markAllAsRead": "تحديد الكل مقروءًا",
+  "meta": {
+    "paymentMethod": "طريقة الدفع",
+    "paymentStatus": "حالة الدفع",
+    "source": "المصدر",
+    "stage": "المرحلة"
+  },
+  "tabs": {
+    "all": "الكل",
+    "important": "مهم"
+  },
+  "title": "الإشعارات",
+  "viewAll": "عرض الكل"
+}

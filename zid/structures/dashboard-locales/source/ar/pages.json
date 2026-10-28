@@ -1,0 +1,1193 @@
+{
+  "LogisticsFinalizeShippingSetupPage": {
+    "title": "استكمال إعداد الشحن"
+  },
+  "OnlineStorePages": {
+    "tabs": {
+      "CustomPage": "الصفحات المخصصة",
+      "LegalPage": "الصفحات القانونية"
+    },
+    "title": "الصفحات"
+  },
+  "ZidshipLocalDelivery": {
+    "description": "توفير التوصيل المباشر من مواقعك إلى عملائك.",
+    "title": "التوصيل المحلي"
+  },
+  "ZidshipLocalDeliverySettings": {
+    "title": "إعدادات {{name}}"
+  },
+  "ZidshipPickup": {
+    "description": "اسمح لعملائك باستلام طلباتهم مباشرة من مواقع متجرك.",
+    "title": "الاستلام في المتجر"
+  },
+  "abandonedCarts": {
+    "description": "أعد استهداف السلات المتروكة لتحسين معدل تحويل المبيعات.",
+    "descriptionNGO": "أعد استهداف التبرعات المتروكة لتحسين معدل تحويل التبرعات.",
+    "ngoTitle": "التبرعات المتروكة",
+    "title": "السلات المتروكة"
+  },
+  "abandonedCartsDetails": {
+    "title": "تفاصيل السلة"
+  },
+  "accessRequest": {
+    "title": "طلب صلاحية"
+  },
+  "affiliateCreate": {
+    "title": "إضافة مسوّق بالعمولة جديد"
+  },
+  "affiliateView": {
+    "title": "تفاصيل المسوق بالعمولة"
+  },
+  "affiliates": {
+    "description": "جميع المسوقين بالعمولة في متجرك هنا.",
+    "title": "التسويق بالعمولة"
+  },
+  "analytics": {
+    "description": "نظرة عامة على أداء متجرك",
+    "title": "التحليلات"
+  },
+  "analyticsFinancial": {
+    "description": "نظرة شاملة على المبيعات والضريبة والخصومات وأداء المنصات.",
+    "title": "التحليلات المالية"
+  },
+  "analyticsInsights": {
+    "description": "اسأل بيانات متجرك، تابع التنبيهات، وأنشئ تقارير قابلة للمشاركة.",
+    "title": "نبض زد"
+  },
+  "analyticsLive": {
+    "description": "تحليلات فورية وتتبع الزوار",
+    "title": "التحليلات المباشرة"
+  },
+  "analyticsLogistics": {
+    "title": "تحليلات الشحن"
+  },
+  "analyticsMarketing": {
+    "description": "تتبع تأثير التسويق على المبيعات ومشاركة العملاء",
+    "title": "التحليلات التسويقية"
+  },
+  "analyticsOperational": {
+    "description": "نظرة تفصيلية على أداء التنفيذ والتوصيل، لمساعدتك في متابعة العمليات وتحسين الكفاءة.",
+    "title": "تحليلات العمليات"
+  },
+  "analyticsPayments": {
+    "description": "تحليل أداء المدفوعات، مع تتبع طرق الدفع، ومعدلات الفشل، والتسويات.",
+    "title": "تحليلات المدفوعات"
+  },
+  "analyticsProducts": {
+    "description": "تحليل أداء المبيعات حسب كل منتج وسلوك الشراء لدى العملاء.",
+    "title": "تحليلات المنتجات",
+    "titleNgo": "تحليلات فرص التبرع"
+  },
+  "authForgotPassword": {
+    "title": "نسيت كلمة المرور"
+  },
+  "authLogin": {
+    "title": "تسجيل الدخول"
+  },
+  "authMfa": {
+    "title": "التحقق بخطوتين"
+  },
+  "authOTP": {
+    "title": "رمز التحقق"
+  },
+  "authPasskey": {
+    "title": "تسجيل الدخول بالبصمة"
+  },
+  "authPassword": {
+    "title": "كلمة المرور"
+  },
+  "authResetPassword": {
+    "title": "إعادة تعيين كلمة المرور"
+  },
+  "autoRestock": {
+    "title": "إعادة التزويد التلقائي بين المخازن"
+  },
+  "automatedMessages": {
+    "description": "رسائل تُرسل تلقائيًا لعملائك حسب الأحداث التي تحددها.",
+    "title": "الرسائل التلقائية"
+  },
+  "automatedMessagesCreate": {
+    "title": "إنشاء رسالة تلقائية"
+  },
+  "automatedMessagesEdit": {
+    "title": "تعديل رسالة تلقائية"
+  },
+  "automaticDiscounts": {
+    "title": "الخصومات التلقائية"
+  },
+  "bankAccounts": {
+    "title": "حساباتك البنكية"
+  },
+  "bankDiscounts": {
+    "title": "خصومات البنوك"
+  },
+  "billing": {
+    "title": "الفوترة"
+  },
+  "billingAddons": {
+    "title": "الإضافات"
+  },
+  "billingPackages": {
+    "title": "الباقات"
+  },
+  "billingTransactions": {
+    "title": "فواتير العمليات"
+  },
+  "blog": {
+    "description": "أنشئ مقالات المدونة وأدرها لجذب عملائك وتعزيز تحسين محركات البحث",
+    "title": "المدونة"
+  },
+  "blogCategories": {
+    "title": "تصنيفات المدونة"
+  },
+  "blogCategoryCreate": {
+    "title": "إنشاء تصنيف"
+  },
+  "blogCategoryEdit": {
+    "title": "تعديل التصنيف"
+  },
+  "blogCreate": {
+    "title": "إنشاء مقال جديد"
+  },
+  "blogEdit": {
+    "title": "تعديل المقال"
+  },
+  "blogTagCreate": {
+    "title": "إنشاء وسم"
+  },
+  "blogTagEdit": {
+    "title": "تعديل الوسم"
+  },
+  "blogTags": {
+    "title": "وسوم المدونة"
+  },
+  "brand": {
+    "title": "هوية المتجر"
+  },
+  "brandCreate": {
+    "title": "إنشاء علامة تجارية"
+  },
+  "brandProducts": {
+    "title": "إدارة المنتجات"
+  },
+  "brandUpdate": {
+    "title": "تعديل العلامة التجارية"
+  },
+  "brands": {
+    "title": "العلامات التجارية"
+  },
+  "bundleOffers": {
+    "title": "الحزم التسويقية"
+  },
+  "bundleOffersCreate": {
+    "title": "إنشاء حزمة تسويقية"
+  },
+  "bundleOffersCreateFixedPrice": {
+    "title": "إنشاء حزمة منتجات بسعر ثابت"
+  },
+  "bundleOffersView": {
+    "title": "حزمة تسويقية"
+  },
+  "bundleOffersViewFixedPrice": {
+    "title": "حزمة منتجات بسعر ثابت"
+  },
+  "cashbackOffers": {
+    "description": "تابع عروض الكاش باك التي أنشأتها وحدّد العرض النشط في متجرك.",
+    "title": "عروض الكاش باك"
+  },
+  "cashiers": {
+    "title": "الكاشير"
+  },
+  "catalogPages": {
+    "description": "أنشئ صفحات لتعريف العملاء بخدماتك أو لإضافة معلومات ضرورية، واختر مكان ظهورها في واجهة المتجر بحسب رغبتك.",
+    "title": "الصفحات"
+  },
+  "catalogPagesCreate": {
+    "title": "إنشاء صفحة مخصصة"
+  },
+  "catalogPagesUpdate": {
+    "title": "تعديل صفحة مخصصة"
+  },
+  "catalogProductsArrange": {
+    "title": "ترتيب المنتجات"
+  },
+  "categories": {
+    "description": "إدارة تصنيفات متجرك مع إضافة صور وأوصاف مخصصة.",
+    "title": "التصنيفات"
+  },
+  "categoryCreate": {
+    "description": "تحكم في تصنيفات متجرك وأضف صورها أو أوصافها.",
+    "title": "إنشاء تصنيف جديد"
+  },
+  "categoryProducts": {
+    "title": "تحديث منتجات التصنيف"
+  },
+  "categoryUpdate": {
+    "description": "تحكم في تصنيفات متجرك وأضف صورها أو أوصافها.",
+    "title": "تحديث التصنيف"
+  },
+  "channels": {
+    "title": "القنوات"
+  },
+  "chargebacks-dispute": {
+    "chargeback-title": "الرد على شكوى\\ مطالبة الاسترداد",
+    "fraud-title": "الرد على شكوى\\ مطالبة الاحتيال"
+  },
+  "charityFostering": {
+    "title": "دعم الجمعيات الخيرية"
+  },
+  "checkout": {
+    "title": "الدفع"
+  },
+  "checkoutOptions": {
+    "title": "خيارات صفحة إتمام عملية الشراء"
+  },
+  "checkoutRedirect": {
+    "title": "الدفع"
+  },
+  "communications": {
+    "title": "الاتصالات"
+  },
+  "communicationsReviews": {
+    "description": "يمكنك إرسال إشعارات بالبريد الإلكتروني إلى عملائك لتشجيعهم على تقييم المنتجات في متجرك.",
+    "title": "إعدادات إشعارات مراجعة المنتجات"
+  },
+  "createAutoRestock": {
+    "title": "إنشاء تحويل إعادة التخزين"
+  },
+  "createBankDiscounts": {
+    "title": "إنشاء خصم بنكي جديد"
+  },
+  "credits": {
+    "title": "الائتمانات"
+  },
+  "customShippingMethods": {
+    "title": "طرق الشحن المخصصة"
+  },
+  "customerSupport": {
+    "title": "تذاكر العملاء"
+  },
+  "customerSupportView": {
+    "title": "تذكرة #{{id}}"
+  },
+  "customerWallet": {
+    "description": "رصيد محفظة العميل والمعاملات",
+    "title": "محفظة العميل"
+  },
+  "customerWalletCreateOffer": {
+    "title": "إنشاء عرض مكافأة"
+  },
+  "customerWalletUpdateOffer": {
+    "title": "تعديل عرض مكافأة"
+  },
+  "customerWallets": {
+    "description": "رصيد محافظ العملاء والمعاملات",
+    "title": "محافظ العملاء"
+  },
+  "customers": {
+    "ngoTitle": "قائمة المتبرعين",
+    "title": "قائمة العملاء"
+  },
+  "customersCreate": {
+    "ngoTitle": "إضافة متبرع جديد",
+    "title": "إضافة عميل جديد"
+  },
+  "customersGroups": {
+    "description": "عملاؤك ضمن مجموعات لسهولة المتابعة والإدارة",
+    "title": "مجموعات العملاء"
+  },
+  "customersGroupsCreate": {
+    "title": "إنشاء مجموعة"
+  },
+  "customersGroupsCustomers": {
+    "title": "عملاء المجموعة"
+  },
+  "customersGroupsEdit": {
+    "title": "تعديل المجموعة"
+  },
+  "customersReports": {
+    "ngoTitle": "تقارير المتبرعين",
+    "title": "تقارير العملاء"
+  },
+  "customersView": {
+    "ngoTitle": "تفاصيل المتبرع",
+    "title": "تفاصيل العميل"
+  },
+  "customizableReportsReportCreate": {
+    "title": "Create report"
+  },
+  "customizableReportsReportsList": {
+    "title": "التقارير"
+  },
+  "discountCreate": {
+    "title": "إنشاء خصم"
+  },
+  "discountEdit": {
+    "title": "تعديل الخصم"
+  },
+  "discounts": {
+    "title": "الخصومات"
+  },
+  "discountsBulkEdit": {
+    "title": "التعديل المجمّع للخصومات"
+  },
+  "discountsReports": {
+    "title": "تقارير أكواد الخصم"
+  },
+  "donorsGroups": {
+    "description": "المتبرعون ضمن مجموعات لسهولة المتابعة والإدارة",
+    "title": "مجموعات المتبرعين"
+  },
+  "draft": {
+    "description": "يمكنك إنشاء الطلبات وإنهاءها دون تدخل العميل، مع حفظ الطلب غير المكتمل في <1>المسودات</1>.",
+    "ngoDescription": "يمكنك إنشاء التبرعات وإنهاءها دون تدخل المتبرع، مع حفظ التبرع غير المكتمل في <1>المسودات</1>.",
+    "ngoTitle": "إنشاء تبرع يدوي جديد",
+    "title": "إنشاء طلب يدوي جديد"
+  },
+  "drafts": {
+    "ngoTitle": "التبرعات اليدوية",
+    "title": "الطلبات اليدوية"
+  },
+  "editBankDiscounts": {
+    "title": "تعديل خصم بنكي"
+  },
+  "emailConfirmation": {
+    "title": "تأكيد"
+  },
+  "exportRequests": {
+    "description": "عرض جميع طلبات التصدير، وتنزيل الملفات، وإدارة خيارات التصدير",
+    "title": "طلبات التصدير"
+  },
+  "faqCreate": {
+    "title": "إنشاء سؤال متكرر"
+  },
+  "faqEdit": {
+    "title": "تعديل سؤال متكرر"
+  },
+  "faqs": {
+    "title": "الأسئلة الشائعة"
+  },
+  "filters": {
+    "description": "استخدم معايير التصفية لتسهيل بحث العملاء عن المنتجات في متجرك",
+    "title": "معايير التصفية"
+  },
+  "filtersCreate": {
+    "title": "إضافة خيار جديد"
+  },
+  "filtersEdit": {
+    "title": "تعديل تصفية"
+  },
+  "finance": {
+    "title": "المالية"
+  },
+  "financing": {
+    "title": "التمويل"
+  },
+  "financingActivation": {
+    "title": "تفعيل التمويل"
+  },
+  "financingInfo": {
+    "title": "معلومات التمويل"
+  },
+  "fiveSalesJourney": {
+    "title": "رحلة 5 طلبات"
+  },
+  "giftCardBuilder": {
+    "title": "منشئ بطاقة الإهداء"
+  },
+  "growth": {
+    "title": "زد نمو"
+  },
+  "growthServices": {
+    "title": "تصفح الخدمات"
+  },
+  "growthTermsConditions": {
+    "title": "الشروط والأحكام"
+  },
+  "helpCenter": {
+    "title": "الأسئلة الشائعة"
+  },
+  "home": {
+    "title": "لوحة التحكم"
+  },
+  "inventories": {
+    "title": "المخزون"
+  },
+  "inventoriesStockTaking": {
+    "description": "يمكنك إدارة كميات منتجاتك بسهولة، وتحديث البيانات لضمان دقة المخزون.",
+    "title": "إدارة جرد المخزون"
+  },
+  "inventoriesStockTakingCreate": {
+    "description": "أدخل المنتجات المراد جردها",
+    "title": "إنشاء جرد"
+  },
+  "inventoriesStockTakingView": {
+    "description": "يمكنك إدارة كميات منتجاتك بسهولة، وتحديث البيانات لضمان دقة المخزون.",
+    "title": "تفاصيل الجرد"
+  },
+  "inventoryAddresses": {
+    "title": "عناوين المخزون"
+  },
+  "inventoryReports": {
+    "description": "نظرة عامة على توفر المخزون وقيمته ومواقع التخزين",
+    "title": "تقارير المخزون"
+  },
+  "inventoryStockManagement": {
+    "title": "إدارة الكميات"
+  },
+  "inventoryWithdrawalPriority": {
+    "title": "ترتيب السحب من المخزون"
+  },
+  "invoiceNotReady": {
+    "title": "الفاتورة غير جاهزة"
+  },
+  "invoiceSettings": {
+    "title": "إعدادات الفواتير"
+  },
+  "invoiceTemplates": {
+    "description": "خصص فاتورتك بتعديل القوالب والحقول لتناسب احتياجاتك",
+    "title": "قوالب الفواتير"
+  },
+  "landingPage": {
+    "title": "الصفحة المستهدفة"
+  },
+  "languagesCurrenciesSettings": {
+    "title": "لغات وعملات المتجر"
+  },
+  "logisticActivateLogistics": {
+    "title": "الشحن المخصص"
+  },
+  "logisticActivation": {
+    "title": "الشحن والتوصيل"
+  },
+  "logistics": {
+    "title": "الشحن والتوصيل"
+  },
+  "logisticsActivateLocalDelivery": {
+    "title": "تفعيل الشحن المحلي"
+  },
+  "logisticsAddRate": {
+    "title": "إضافة سعر جديد"
+  },
+  "logisticsEditRate": {
+    "title": "تعديل السعر"
+  },
+  "logisticsOtherShippingProviderDetails": {
+    "title": "التفاصيل"
+  },
+  "logisticsOtherShippingProviderDetailsTier": {
+    "title": "تفعيل الخدمة"
+  },
+  "logisticsZoneCreate": {
+    "title": "إنشاء نطاق"
+  },
+  "logisticsZoneEdit": {
+    "title": "تعديل النطاق"
+  },
+  "logisticsZones": {
+    "description": "إدارة نطاقات تغطية التوصيل والاستلام",
+    "title": "النطاقات"
+  },
+  "loyaltyProgram": {
+    "title": "برنامج الولاء"
+  },
+  "loyaltyProgramContent": {
+    "description": "أضف تفاصيل برنامج الولاء",
+    "title": "محتوى برنامج الولاء"
+  },
+  "loyaltyPrograms": {
+    "title": "برامج الولاء"
+  },
+  "manageCustomShippingMethods": {
+    "title": "إدارة طرق الشحن المخصصة"
+  },
+  "manageOtherShippingProviders": {
+    "title": "ربط مزودين خارجيين"
+  },
+  "manageShippingMethods": {
+    "title": "إدارة طرق الشحن"
+  },
+  "marketAppOverview": {
+    "title": "نظرة عامة"
+  },
+  "marketAppPlans": {
+    "title": "خطط الاشتراك لتطبيق {{name}}"
+  },
+  "marketAppSolution": {
+    "title": "الحل"
+  },
+  "marketApps": {
+    "title": "سوق التطبيقات"
+  },
+  "marketAppsBrowse": {
+    "title": "تصفح التطبيقات"
+  },
+  "marketMobileAppBanner": {
+    "title": "تطبيق الجوال"
+  },
+  "marketMobileAppPushNotifications": {
+    "title": "تطبيق الجوال"
+  },
+  "marketMyApps": {
+    "title": "تطبيقاتي"
+  },
+  "marketThemeView": {
+    "title": "نظرة عامة"
+  },
+  "marketThemes": {
+    "title": "الثيمات"
+  },
+  "marketThemesBrowse": {
+    "title": "تصفح جميع الثيمات"
+  },
+  "marketing": {
+    "title": "التسويق"
+  },
+  "marketingCampaignCreate": {
+    "title": "إنشاء حملة تسويقية بالرسائل النصية"
+  },
+  "marketingCampaignEdit": {
+    "title": "تعديل حملة تسويقية بالرسائل النصية"
+  },
+  "marketingCampaignSMSView": {
+    "title": "حملة تسويقية بالرسائل النصية"
+  },
+  "marketingCampaignView": {
+    "title": "حملة تسويقية"
+  },
+  "marketingCampaignWhatsappCreate": {
+    "title": "إنشاء حملة تسويقية بالواتساب"
+  },
+  "marketingCampaignWhatsappEdit": {
+    "title": "تعديل حملة تسويقية بالواتساب"
+  },
+  "marketingCampaignWhatsappView": {
+    "title": "حملة تسويقية بالواتساب"
+  },
+  "marketingCampaigns": {
+    "description": "أنشئ حملات بالرسائل النصية القصيرة لجذب العملاء وزيادة المبيعات.",
+    "title": "الحملات التسويقية"
+  },
+  "marketplaceConnectActivation": {
+    "title": "تفعيل منصة بيع"
+  },
+  "marketplaceConnectAdd": {
+    "title": "إضافة منصة بيع جديدة"
+  },
+  "marketplaceConnectGuideLines": {
+    "title": "الإرشادات"
+  },
+  "marketplaceConnectHome": {
+    "title": "منصات البيع"
+  },
+  "marketplaceConnectInventoryManagement": {
+    "title": "إدارة المخزون"
+  },
+  "marketplaceConnectInventoryManagementSettings": {
+    "title": "إعدادات المخزون العام"
+  },
+  "marketplaceConnectMarketplaces": {
+    "title": "منصات البيع"
+  },
+  "marketplaceConnectOrders": {
+    "title": "الطلبات"
+  },
+  "marketplaceConnectPriceConfiguration": {
+    "title": "إعدادات الأسعار"
+  },
+  "marketplaceConnectPriceManagement": {
+    "title": "إدارة الأسعار"
+  },
+  "marketplaceConnectProducts": {
+    "title": "المنتجات"
+  },
+  "marketplaceConnectSettings": {
+    "title": "الإعدادات"
+  },
+  "marketplaces": {
+    "title": "منصات البيع"
+  },
+  "mazeed": {
+    "title": "مزيد"
+  },
+  "mazeedManagement": {
+    "title": "إدارة مزيد"
+  },
+  "mazeedOrders": {
+    "title": "طلبات مزيد"
+  },
+  "mazeedProducts": {
+    "title": "منتجات مزيد"
+  },
+  "mazeedSettlementInvoice": {
+    "title": "فاتورة ضريبية"
+  },
+  "mazeedSettlements": {
+    "title": "تسويات مزيد المالية"
+  },
+  "menu": {
+    "title": "القائمة الرئيسية للمتجر"
+  },
+  "metafields": {
+    "title": "الحقول المخصصة"
+  },
+  "metafieldsCreate": {
+    "title": "إضافة حقل مخصص"
+  },
+  "metafieldsEdit": {
+    "title": "تعديل حقل مخصص"
+  },
+  "mobileApp": {
+    "title": "تطبيق الجوال"
+  },
+  "modificationRcords": {
+    "description": "راجع تفاصيل المنتجات والمخزون وحدّثها حسب كل مستودع لتواكب احتياجات متجرك.",
+    "title": "إدارة تغييرات المخزون"
+  },
+  "mokafaa": {
+    "description": "وفّر لعملائك أوثق برامج الولاء من بنك الراجحي «مكافأة» لكسب النقاط واستبدالها عند الشراء من متجرك.",
+    "title": "برنامج مكافأة"
+  },
+  "mokafaaProgram": {
+    "title": "برنامج مكافأة"
+  },
+  "mokafaaProgramContent": {
+    "description": "أضف تعريف برنامج مكافأة",
+    "title": "محتوى برنامج مكافأة"
+  },
+  "notificationCenter": {
+    "title": "مركز الإشعارات"
+  },
+  "notificationSettings": {
+    "title": "إعدادات الإشعارات"
+  },
+  "onboardingWizard": {
+    "title": "مساعد تجهيز المتجر"
+  },
+  "onlineStoreSettings": {
+    "title": "الإعدادات"
+  },
+  "onlineStoreSettingsBadges": {
+    "title": "الملصقات"
+  },
+  "onlineStoreSettingsLocation": {
+    "title": "موقع العميل"
+  },
+  "options": {
+    "title": "مكتبة الخيارات"
+  },
+  "optionsCreate": {
+    "title": "إنشاء خيار"
+  },
+  "orderDetails": {
+    "i18nTitle": "تفاصيل الطلب",
+    "ngoI18nTitle": "تفاصيل التبرع",
+    "ngoTitle": "تفاصيل التبرع {{id}}#",
+    "title": "تفاصيل الطلب {{id}}#"
+  },
+  "orderEdit": {
+    "i18nTitle": "تعديل الطلب",
+    "ngoI18nTitle": "تعديل التبرع",
+    "ngoTitle": "تعديل التبرع {{id}}#",
+    "title": "تعديل الطلب {{id}}#"
+  },
+  "orderInvoices": {
+    "ngoTitle": "فواتير التبرع",
+    "title": "فواتير الطلب"
+  },
+  "orderReverse": {
+    "i18nTitle": "استرجاع الطلب",
+    "title": "استرجاع الطلب {{id}}#"
+  },
+  "orderSummary": {
+    "title": "ملخص تأكيد الطلب"
+  },
+  "orders": {
+    "description": "جميع طلبات متجرك هنا",
+    "ngoDescription": "جميع تبرعات متجرك هنا",
+    "ngoTitle": "قائمة التبرعات",
+    "title": "قائمة الطلبات"
+  },
+  "otherShippingProviders": {
+    "title": "خيارات شحن وتوصيل اخرى"
+  },
+  "paymentMethods": {
+    "title": "طرق الدفع"
+  },
+  "payments": {
+    "title": "المدفوعات"
+  },
+  "payoutDetails": {
+    "title": "تفاصيل الدفع"
+  },
+  "payouts": {
+    "title": "المدفوعات"
+  },
+  "posGeneralSettings": {
+    "title": "الإعدادات العامة"
+  },
+  "posSettings": {
+    "title": "إعدادات نقاط البيع"
+  },
+  "preorderCampaigns": {
+    "title": "حملات الطلب المسبق"
+  },
+  "productCreate": {
+    "title": "{{ type }}"
+  },
+  "productLandingPages": {
+    "title": "صفحات هبوط المنتجات"
+  },
+  "productLandingPagesBrowse": {
+    "title": "تصفح صفحات الهبوط"
+  },
+  "productSorting": {
+    "title": "ترتيب المنتجات"
+  },
+  "productVariantCreate": {
+    "title": "إضافة متغيّر جديد للمنتج"
+  },
+  "products": {
+    "description": "جميع منتجات متجرك هنا",
+    "ngoDescription": "جميع فرص التبرع هنا",
+    "ngoTitle": "فرص التبرع",
+    "title": "المنتجات"
+  },
+  "productsBulkEdit": {
+    "title": "تعديل مجمع للمنتجات"
+  },
+  "productsCreate": {
+    "title": "إنشاء منتج جديد"
+  },
+  "productsEdit": {
+    "title": "تعديل تفاصيل المنتج"
+  },
+  "productsTrashBin": {
+    "title": "سلة المهملات"
+  },
+  "qitaf": {
+    "description": "وفر لعملائك برنامج الولاء الأشهر من STC «قطاف» لاستبدال النقاط بمشتريات من متجرك.",
+    "title": "برنامج قطاف"
+  },
+  "qitafProgram": {
+    "title": "برنامج قطاف"
+  },
+  "questions": {
+    "title": "الأسئلة"
+  },
+  "questionsCreate": {
+    "title": "إنشاء سؤال"
+  },
+  "referrals": {
+    "title": "برنامج دعوات العملاء"
+  },
+  "referralsActivate": {
+    "title": "تفعيل برنامج دعوات العملاء"
+  },
+  "reportsSales": {
+    "description": "تقرير لأداء الطلبات والعوائد والتكاليف والخدمات اللوجستية.",
+    "ngoDescription": "تقرير لأداء التبرعات والعوائد والتكاليف والخدمات اللوجستية.",
+    "ngoTitle": "تقارير التبرعات",
+    "title": "تقارير المبيعات"
+  },
+  "requestVatInvoice": {
+    "title": "طلب فاتورة ضريبية"
+  },
+  "reviews": {
+    "description": "تتيح هذه الخاصية لعملائك تقييم تجربتهم مع منتجاتك ومشاركتها مع العملاء الآخرين.",
+    "title": "التقييمات"
+  },
+  "root": {
+    "title": "زد"
+  },
+  "seoEnhancement": {
+    "description": "ساعد العملاء ووكلاء الذكاء الاصطناعي في العثور على متجرك",
+    "llmsDescription": "أدر المعلومات الموجودة في ملف llms.txt لمساعدة منصات الذكاء الاصطناعي على فهم متجرك فهمًا أفضل وتقديم ردود دقيقة للعملاء.",
+    "llmsTitle": "llms.txt",
+    "productsFeedsDescription": "أنشئ روابط خلاصة المنتجات لربط Snapchat وTikTok وGoogle وMeta وX وOpenAI.",
+    "productsFeedsTitle": "كاتالوج المنتجات",
+    "robotsDescription": "تحكم في الأجزاء التي يمكن لمحركات البحث رؤيتها من متجرك بتحرير ملف Robots.txt.",
+    "robotsTitle": "Robot.txt",
+    "seoSettings": "إعدادات تحسين محركات البحث",
+    "storePagesDescription": "خصّص طريقة ظهور الصفحات التي تُنشئها زد في نتائج البحث.",
+    "storePagesTitle": "صفحات المتجر",
+    "subTitle": "الإعدادات",
+    "title": "تحسين محركات البحث"
+  },
+  "serviceLevelDetails": {
+    "title": "طرق الشحن"
+  },
+  "services": {
+    "title": "الخدمات"
+  },
+  "settings": {
+    "title": "الإعدادات"
+  },
+  "settingsAbandonedCarts": {
+    "ngoTitle": "تنبيهات التبرعات المتروكة",
+    "title": "تنبيهات السلات المتروكة"
+  },
+  "settingsAbandonedCartsCreate": {
+    "ngoTitle": "إنشاء رسالة تنبيه للتبرعات المتروكة",
+    "title": "إنشاء رسالة تنبيه للسلات المتروكة"
+  },
+  "settingsAbandonedCartsEdit": {
+    "ngoTitle": "تعديل رسالة تنبيه للتبرعات المتروكة",
+    "title": "تعديل رسالة تنبيه للسلات المتروكة"
+  },
+  "settingsAccount": {
+    "title": "إعدادات الحساب"
+  },
+  "settingsCommunicationsOrders": {
+    "title": "إشعارات الطلبات"
+  },
+  "settingsCommunicationsQuestions": {
+    "title": "إعدادات إشعارات الأسئلة"
+  },
+  "settingsCommunicationsSenderName": {
+    "title": "اسم المرسل"
+  },
+  "settingsComplaintsAndSuggestions": {
+    "description": "توفير وسيلة تواصل لعملائك لعرض الشكاوى والمقترحات.",
+    "title": "الشكاوى والاقتراحات"
+  },
+  "settingsConstraints": {
+    "title": "قيود الشحن والدفع"
+  },
+  "settingsConstraintsEdit": {
+    "title": "تعديل القيد"
+  },
+  "settingsConstraintsPaymentCreate": {
+    "title": "إدارة قيد الدفع"
+  },
+  "settingsConstraintsShippingCreate": {
+    "title": "إدارة قيد الشحن"
+  },
+  "settingsDirectApiIntegrations": {
+    "title": "التكاملات البرمجية (API)"
+  },
+  "settingsDomains": {
+    "description": "إدارة رابط المتجر الإلكتروني",
+    "title": "قائمة النطاقات"
+  },
+  "settingsDomainsLinkExisting": {
+    "title": "ربط نطاق موجود"
+  },
+  "settingsDomainsView": {
+    "description": "إدارة رابط متجرك الإلكتروني",
+    "title": "تفاصيل النطاق"
+  },
+  "settingsExchangeAndReturns": {
+    "title": "سياسة الاستبدال والإرجاع"
+  },
+  "settingsGifting": {
+    "description": "تتيح هذه الخاصية لعملائك إرسال الهدايا إلى أشخاص آخرين.",
+    "title": "خيارات الهدايا"
+  },
+  "settingsGiftingSettings": {
+    "tabs": {
+      "giftProducts": "إضافات الهدايا",
+      "giftingCategories": "تصنيفات الهدايا",
+      "globalSettings": "الإعدادات العامة",
+      "messageTemplates": "قوالب الرسائل"
+    },
+    "title": "خيارات الإهداء"
+  },
+  "settingsLegalPages": {
+    "title": "الصفحات القانونية"
+  },
+  "settingsLicenses": {
+    "description": "إضافة تراخيص متجرك وشهاداته الموثقة.",
+    "title": "التراخيص"
+  },
+  "settingsMarketAddProducts": {
+    "title": "إضافة منتجات إلى السوق",
+    "titleWithMarket": "منتجات \"{{name}}\""
+  },
+  "settingsMarketCreate": {
+    "title": "إنشاء سوق"
+  },
+  "settingsMarketManage": {
+    "title": "إدارة السوق"
+  },
+  "settingsMarkets": {
+    "title": "الأسواق"
+  },
+  "settingsOrderProducts": {
+    "title": "خصائص الطلبات والمنتجات"
+  },
+  "settingsPrivacyPolicy": {
+    "description": "سياسة الخصوصية لمتجرك",
+    "title": "سياسة الخصوصية"
+  },
+  "settingsSecurity": {
+    "description": "إدارة إعدادات الأمان",
+    "title": "إعدادات الأمان"
+  },
+  "settingsStaffNotifications": {
+    "title": "إشعارات الموظفين"
+  },
+  "settingsTeam": {
+    "title": "فريق العمل"
+  },
+  "settingsTeamCreateMember": {
+    "title": "عضو الفريق"
+  },
+  "settingsTeamEditMember": {
+    "title": "عضو الفريق"
+  },
+  "settingsTeamGroups": {
+    "title": "مجموعات فريق العمل"
+  },
+  "settingsTeamGroupsCreate": {
+    "title": "إنشاء مجموعة"
+  },
+  "settingsTeamGroupsEdit": {
+    "title": "تعديل مجموعة"
+  },
+  "settingsTeamLogs": {
+    "title": "سجل الإجراءات"
+  },
+  "settingsTermsAndConditions": {
+    "description": "بالضغط تُقر بالموافقة على شروط العقد وتوافق على الدفع.",
+    "title": "الشروط والأحكام"
+  },
+  "settingsUrlRedirects": {
+    "title": "إعادة توجيه الروابط"
+  },
+  "settingsWorkTime": {
+    "description": "يمكنك التحكم في إغلاق متجرك أو إيقاف استقبال الطلبات. يمكنك تصفح متجرك في فترة الإغلاق من",
+    "title": "ساعات العمل"
+  },
+  "settingsZatcaConnection": {
+    "title": "الربط مع منصة فاتورة"
+  },
+  "settingsZatcaIntegration": {
+    "title": "الربط مع منصة فاتورة"
+  },
+  "shippingMethodDetails": {
+    "title": "تفاصيل طريقة الشحن"
+  },
+  "similarProducts": {
+    "description": "خصص المنتجات المشابهة التي ستُعرض أسفل صفحة المنتج.",
+    "title": "تحكم في المنتجات المقترحة"
+  },
+  "stockNotifications": {
+    "description": "إشعار العملاء عند توفر المنتجات مرة أخرى.",
+    "title": "إشعارات المخزون"
+  },
+  "stockNotificationsSettings": {
+    "title": "إعدادات التنبيهات التلقائية"
+  },
+  "storeNameInSMS": {
+    "title": "إعدادات الرسائل النصية"
+  },
+  "subscription": {
+    "title": "الاشتراك"
+  },
+  "subscriptionPlans": {
+    "title": "خطط الاشتراك"
+  },
+  "suspended": {
+    "title": "الاشتراك موقوف حاليًا"
+  },
+  "taxCreate": {
+    "title": "إضافة ضريبة بلد جديدة"
+  },
+  "taxEdit": {
+    "title": "تعديل ضريبة البلد"
+  },
+  "taxSettings": {
+    "title": "إعدادات الضريبة"
+  },
+  "themeEditor": {
+    "title": "تعديل الثيمات"
+  },
+  "ticketing": {
+    "title": "تذاكر الدعم"
+  },
+  "ticketingCreate": {
+    "title": "إنشاء تذكرة"
+  },
+  "ticketingView": {
+    "title": "استعراض تذكرة {{id}}"
+  },
+  "transactionHistory": {
+    "title": "سجل العمليات"
+  },
+  "transactions": {
+    "description": "العمليات في متجرك",
+    "title": "العمليات"
+  },
+  "transactionsDetails": {
+    "title": "عرض المعاملة {{id}}"
+  },
+  "transferRequests": {
+    "title": "طلبات النقل"
+  },
+  "transferRequestsCreate": {
+    "description": "يمكنك تحديد موقع المخزن الأساسي والمخزن الذي سيُنقل إليه.",
+    "title": "إنشاء طلب نقل"
+  },
+  "transferRequestsReceive": {
+    "description": "يمكنك تحديد موقع المخزن الأساسي والمخزن الذي سيُنقل إليه.",
+    "title": "طلب نقل"
+  },
+  "transferRequestsView": {
+    "description": "يمكنك تحديد موقع المخزن الأساسي والمخزن الذي سيُنقل إليه.",
+    "title": "عرض طلب النقل"
+  },
+  "vetrinOnlyWarning": {
+    "action": "عرض الثيمات",
+    "title": "هذا النوع من المنتجات مدعوم في نظام الثيمات الجديد فقط، ويمكنك الوصول إلى الثيمات الجديدة من هنا"
+  },
+  "walletDetails": {
+    "title": "تفاصيل المحفظة"
+  },
+  "walletFunds": {
+    "title": "إضافة أموال إلى المحفظة"
+  },
+  "walletVerify": {
+    "title": "التحقق من المحفظة"
+  },
+  "walletWithdraw": {
+    "title": "سحب الرصيد من المحفظة"
+  },
+  "whatsapp": {
+    "title": "واتساب"
+  },
+  "whatsappAutoReply": {
+    "description": "أرسل رسالة تلقائية للتفاعل مع العملاء فورًا عند بدء محادثة جديدة.",
+    "title": "الرد التلقائي"
+  },
+  "whatsappFlows": {
+    "description": "أرسل رسالة تلقائية للتفاعل مع العملاء فورًا عند بدء محادثة جديدة.",
+    "title": "شجرة الردود"
+  },
+  "whatsappFlowsEditor": {
+    "title": "تخصيص شجرة الردود"
+  },
+  "whatsappLiveChat": {
+    "title": "المحادثات المباشرة"
+  },
+  "whatsappMain": {
+    "title": "واتساب زد"
+  },
+  "whatsappMessageLogs": {
+    "title": "سجل الرسائل"
+  },
+  "whatsappMessageLogsView": {
+    "title": "تفاصيل سجل الرسالة"
+  },
+  "whatsappOptOut": {
+    "description": "اسمح للعملاء بإلغاء الاشتراك في رسائل واتساب تلقائيًا بالرد بكلمة معيّنة.",
+    "title": "إلغاء الاشتراك من الرسائل"
+  },
+  "whatsappSettings": {
+    "title": "إعدادات الواتساب"
+  },
+  "whatsappSettingsAccountDetails": {
+    "description": "حدّث معلومات حسابك وبيانات نشاطك المستخدمة في رسائل واتساب.",
+    "title": "بيانات الحساب"
+  },
+  "whatsappSettingsAutoReply": {
+    "description": "أرسل رسالة تلقائية للتفاعل مع العملاء فورًا عند بدء محادثة جديدة.",
+    "title": "الردود التلقائية"
+  },
+  "whatsappSettingsQuickReplies": {
+    "description": "أنشئ الردود المحفوظة وأدرها للرد على عملائك ردًا أسرع.",
+    "title": "الردود السريعة"
+  },
+  "whatsappSettingsTags": {
+    "description": "أدِر وسومك لتنظيم المحادثات والعملاء وتتبعهم.",
+    "title": "الوسوم"
+  },
+  "whatsappStoreWidget": {
+    "title": "زر الواتساب"
+  },
+  "whatsappSubscription": {
+    "title": "أسعار اشتراك واتساب زد"
+  },
+  "zidpayOnboarding": {
+    "description": "لتفعيل مدفوعات زد واستقبال المدفوعات الإلكترونية، تأكد من صحة البيانات التالية.",
+    "title": "تفعيل مدفوعات زد"
+  },
+  "zidpayOnboardingNafath": {
+    "description": "لإكمال عملية التحقق، افتح تطبيق نفاذ واختر الرمز",
+    "title": "التحقق من نفاذ"
+  },
+  "zidpayOtherPaymentProviders": {
+    "title": "بوابات الدفع الأخرى"
+  },
+  "zidpayPaymentAccount": {
+    "title": "حساب مدفوعات زد"
+  },
+  "zidpayPaymentLinkDetails": {
+    "title": "تفاصيل رابط الدفع"
+  },
+  "zidpaySettings": {
+    "title": "إدارة مدفوعات زد"
+  },
+  "zidpos": {
+    "title": "زد كاشير"
+  },
+  "zidposFreemium": {
+    "title": "ابدأ فريميوم"
+  },
+  "zidposReports": {
+    "title": "التقارير"
+  },
+  "zidposSales": {
+    "title": "المبيعات"
+  },
+  "zidposSubscribe": {
+    "title": "إضافة كاشير جديد"
+  },
+  "zidshipPrepaidPackages": {
+    "title": "باقات البوليصات"
+  },
+  "zidshipPrepaidPackagesReports": {
+    "title": "تقرير باقات البوليصات المسبقة الدفع"
+  },
+  "zidshipPricingZoneCreate": {
+    "title": "إنشاء منطقة شحن"
+  },
+  "zidshipPricingZoneEdit": {
+    "title": "تعديل نطاق التسعير المخصص"
+  },
+  "zidshipSettings": {
+    "description": "خصص وأدِر جميع جوانب تجربة الشحن في متجرك.",
+    "title": "إعدادات الشحن"
+  },
+  "zidshipSettingsCreateBankAccount": {
+    "title": "إنشاء حساب بنكي"
+  },
+  "zidshipSettingsEditBankAccount": {
+    "title": "تعديل الحساب البنكي"
+  },
+  "zidshipSettingsFreeShipping": {
+    "description": "تحديد متى يُقدَّم الشحن المجاني.",
+    "title": "الشحن المجاني"
+  },
+  "zidshipSettingsShippingConditions": {
+    "description": "تعريف القواعد أو القيود التي تحدد متى تُعرض طرق الشحن المحددة للعملاء.",
+    "title": "شروط الشحن"
+  },
+  "zidshipSettingsShippingPrioritization": {
+    "description": "تخصيص ترتيب طرق الشحن المعروضة للعملاء أثناء الدفع.",
+    "title": "ترتيب الشحن"
+  },
+  "zidshipSettingsShippingSurvey": {
+    "description": "تمكين استبيانات الشحن لجمع المعلومات عن سرعة التسليم وجودة التغليف والرضا العام.",
+    "title": "استبيان الشحن"
+  },
+  "zidshipSettlementsLog": {
+    "title": "سجل العمليات"
+  },
+  "zidshipShipments": {
+    "title": "الشحنات"
+  },
+  "zidshipShippingTransactions": {
+    "title": "عمليات الشحن"
+  }
+}

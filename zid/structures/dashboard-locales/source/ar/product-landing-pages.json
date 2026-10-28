@@ -1,0 +1,137 @@
+{
+  "actions": {
+    "create": "أنشئ صفحة هبوط"
+  },
+  "enhancedVersion": "واجهة مطورة",
+  "enhancedVersionTooltip": "نظام جديد ومحسن لواجهة المتاجر، يزيد سرعة المتاجر ويحسّن معدل التحويل!",
+  "form": {
+    "editTitle": "تعديل صفحة الهبوط",
+    "name": {
+      "label": "عنوان صفحة الهبوط",
+      "placeholder": "مثال: عرض اليوم الوطني"
+    },
+    "product": {
+      "browse": "تصفح المنتجات",
+      "columns": {
+        "sku": "كود SKU"
+      },
+      "dialogSubtitle": "اختيار منتج لإضافة سؤال",
+      "emptyDescription": "اختيار منتج لإضافة صفحة هبوط"
+    },
+    "seo": {
+      "description": {
+        "placeholder": "اكتب وصفًا عن صفحة الهبوط"
+      },
+      "title": {
+        "label": "العنوان",
+        "placeholder": "مثال: عرض اليوم الوطني | خصم 30%"
+      }
+    },
+    "slug": {
+      "oldValidation": "يُسمح بالأحرف الإنجليزية والشرطة (-) حصرًا، دون مسافات",
+      "placeholder": "مثال: national-day",
+      "validation": "استخدم الأحرف الإنجليزية الصغيرة والأرقام، وافصل بينها بشرطة واحدة (-) دون مسافات."
+    },
+    "steps": {
+      "product": "المنتجات",
+      "theme": "الثيم"
+    },
+    "theme": {
+      "purchaseRequired": "اشترِ هذا الثيم قبل استخدامه لإنشاء صفحة هبوط.",
+      "select": "اختر ثيمًا",
+      "selected": "تم اختيار الثيم",
+      "uninstalled": "أعد تثبيت هذا الثيم لتخصيص صفحة الهبوط.",
+      "use": "استخدم الثيم"
+    }
+  },
+  "list": {
+    "empty": {
+      "description": "اختر منتجًا وثيمًا، ثم خصص صفحتك وانشرها.",
+      "title": "لا توجد صفحات هبوط بعد"
+    },
+    "loadError": "تعذّر تحميل صفحات الهبوط الخاصة بك.",
+    "previewPage": "معاينة {{name}}",
+    "title": "صفحات الهبوط الخاصة بك",
+    "viewAnalytics": "عرض التحليلات"
+  },
+  "onboarding": {
+    "steps": {
+      "growth": "استمر في تنمية عملك",
+      "product": "اختر منتجًا",
+      "publish": "خصص محتوى الصفحة وانشرها",
+      "theme": "اختر من الثيمات الجاهزة أو طوّر ثيمك الخاص"
+    },
+    "title": "أنشئ صفحتك في 3 خطوات بسيطة"
+  },
+  "stats": {
+    "conversionRate": "معدل التحويل"
+  },
+  "themes": {
+    "actions": {
+      "browse": "تصفح جميع الثيمات",
+      "buy": "شراء",
+      "developerReference": "توثيق المطورين",
+      "install": "تثبيت",
+      "upload": "رفع ثيم"
+    },
+    "byDeveloper": "بواسطة: {{name}}",
+    "columns": {
+      "installed": "مثبّت",
+      "installedVersion": "الإصدار المثبّت",
+      "latestVersion": "أحدث إصدار",
+      "name": "اسم الثيم"
+    },
+    "custom": {
+      "editTitle": "تعديل ثيم خاص",
+      "emptyDescription": "ارفع ملف ZIP لإضافة ثيمك الخاص لصفحات هبوط المنتجات.",
+      "emptyTitle": "لم تُرفع ثيمات خاصة بعد",
+      "form": {
+        "file": {
+          "invalid": "اختر ملفًا صالحًا بصيغة ZIP.",
+          "label": "ملف الثيم بصيغة ZIP",
+          "replaceHint": "ارفع ملف ZIP فقط إذا أردت استبدال ملفات الثيم.",
+          "required": "ارفع ملف الثيم بصيغة ZIP.",
+          "uploadHint": "ارفع ملف ZIP لثيم صفحة الهبوط."
+        },
+        "name": {
+          "placeholder": "مثال: ثيم زد"
+        }
+      },
+      "loadError": "تعذّر تحميل ثيماتك الخاصة.",
+      "title": "الثيمات الخاصة",
+      "uploadTitle": "رفع ثيم خاص"
+    },
+    "details": {
+      "imageAlt": "صورة ثيم {{name}}",
+      "noImage": "لا توجد صورة متاحة"
+    },
+    "installationStatus": "",
+    "installationStatus_installed": "مثبّت",
+    "installationStatus_notInstalled": "غير مثبّت",
+    "installed": {
+      "emptyTitle": "لا توجد ثيمات مثبّتة",
+      "loadError": "تعذّر تحميل ثيماتك المثبّتة.",
+      "title": "الثيمات المثبتة"
+    },
+    "marketplace": {
+      "empty": "لا تتوفر ثيمات جاهزة بعد",
+      "loadError": "تعذّر تحميل قوالب صفحات الهبوط.",
+      "title": "قوالب صفحات الهبوط"
+    },
+    "notifications": {
+      "created": "تم رفع الثيم بنجاح",
+      "installed": "تم تثبيت الثيم بنجاح",
+      "updated": "تم تحديث الثيم بنجاح"
+    }
+  },
+  "welcome": {
+    "description": "أنشئ صفحة مخصصة لمنتجك وخصصها لحملاتك التسويقية.",
+    "features": {
+      "customization": "سهولة الإنشاء والتخصيص",
+      "design": "مصمم ومنسق باحترافية",
+      "marketing": "تسويق مبتكر لمنتجك",
+      "sales": "اعرض منتجاتك في صفحات مخصصة"
+    },
+    "title": "أهلًا بك في منشئ صفحات الهبوط"
+  }
+}

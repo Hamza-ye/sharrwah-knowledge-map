@@ -1,0 +1,64 @@
+{
+  "activateNotifyMessage": "فُعّلت الحقول المخصصة",
+  "categories": "التصنيفات",
+  "dataType": "نوع البيانات",
+  "deActivateNotifyMessage": "عُطّلت الحقول المخصصة",
+  "extraPages": "الصفحات الإضافية",
+  "form": {
+    "create": {
+      "description": "إضافة بيانات مخصصة لمنتجاتك",
+      "title": "إضافة حقل مخصص"
+    },
+    "displayIn": "العرض في",
+    "edit": {
+      "description": "تعديل بيانات مخصصة لمنتجاتك",
+      "title": "تعديل حقل مخصص"
+    },
+    "fieldNameLabel": "اسم الحقل",
+    "fieldSlug": "عنوان الحقل",
+    "fieldSlugPlaceholder": "مثال: تاريخ-1",
+    "fieldTypes": {
+      "date": "التاريخ",
+      "fieldType": "نوع الحقل",
+      "file": "ملف",
+      "image": "صورة",
+      "json": "JSON",
+      "number": "رقم",
+      "richText": "نص منسق",
+      "table": "جدول",
+      "text": "نص",
+      "time": "الوقت"
+    },
+    "merchantDashboard": "لوحة تحكم التاجر",
+    "storefront": "واجهة المتجر"
+  },
+  "products": "المنتجات",
+  "selectProductTypeHelperText": "اضغط على الخيار الذي يطابق نوع تصنيفك الجديد",
+  "states": {
+    "emptyState": {
+      "button": "إنشاء حقول مخصصة",
+      "title": "لا توجد حقول مخصصة متاحة"
+    },
+    "featureDisabled": {
+      "description": "بعد التفعيل، ستظهر خيارًا إضافيًا عند إنشاء بيانات جديدة",
+      "title": "تفعيل الحقول المخصصة"
+    }
+  },
+  "structureDefinition": {
+    "addColumn": "إضافة عمود",
+    "column": "عمود رقم {{number}}",
+    "fieldNameAr": "اسم الحقل - عربي",
+    "fieldNameArPlaceholder": "مثال - اسم المنتج",
+    "fieldNameEn": "اسم الحقل - إنجليزي",
+    "fieldNameEnPlaceholder": "Example - Product name",
+    "slug": "حقل المعرّف",
+    "slugPlaceholder": "مثال - اسم-المنتج",
+    "type": "نوع الحقل"
+  },
+  "types": {
+    "categories": "التصنيفات",
+    "extraPages": "الصفحات الإضافية",
+    "products": "المنتجات"
+  },
+  "valuesCount": "مستخدم في"
+}

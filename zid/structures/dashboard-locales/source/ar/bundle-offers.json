@@ -1,0 +1,203 @@
+{
+  "activate": "تفعيل",
+  "bundleType": {
+    "setPrice": "منتجات بسعر ثابت"
+  },
+  "createType": {
+    "buyGet": {
+      "description": "حفّز العميل على إتمام الشراء بتقديم منتج مجاني مع الطلب وحدد شروط اختيار المنتج.",
+      "label": "اشتر منتج واحصل على الآخر"
+    },
+    "fixedPrice": {
+      "description": "صرّف المخزون البطيء بربطه بسعر رمزي يشجّع العميل على إضافته بدون تردد.",
+      "label": "منتجات بسعر ثابت"
+    },
+    "helpLink": "تعرّف على كيفية إنشاء وإدارة الحزم التسويقية",
+    "helpQuestion": "هل لديك سؤال حول كيفية عمل الحزم؟",
+    "title": "إنشاء حزمة تسويقية جديدة"
+  },
+  "createdSuccessfully": "تم إنشاء حزمة تسويقية بنجاح .",
+  "deactivate": "إلغاء التفعيل",
+  "deleteSuccess": "حُذفت الحزمة التسويقية.",
+  "emptyState": {
+    "button": "إنشاء أول حزمة تسويقية",
+    "description": "الحزمة التسويقية تساعدك على بيع أكثر من منتج واحد في الوقت نفسه، وتجعل القيمة كبيرة مقارنة بالمبلغ الإجمالي بالنسبة للعميل.",
+    "title": "بيع منتجاتك في حزمة تسويقية واحدة"
+  },
+  "filterDiscount": "خصم",
+  "filterFixedOfferValue": "مبلغ من المجموع",
+  "fixedAmountHelperText": "سيحصل العميل على المنتجات مجانًا إذا كانت قيمة الخصم الثابت أعلى من قيمة المنتجات التي سيحصل عليها.",
+  "fixedDiscount": "خصم ثابت",
+  "fixedPrice": {
+    "additionalOptions": {
+      "categoryLabel": "إضافة تصنيف خاص لمنتجات الحزمة",
+      "categoryTooltip": "تُجمع منتجات الحزمة تحت هذا التصنيف في متجرك.",
+      "description": "أضف تفاصيل إضافية للحزمة للتحكم في صلاحيتها.",
+      "descriptionLabel": "إضافة وصف للحزمة",
+      "descriptionPlaceholder": "مثال: احصل على الطقم الكامل بسعر واحد",
+      "descriptionPlaceholder_ar": "مثال: احصل على الطقم الكامل بسعر واحد",
+      "descriptionPlaceholder_en": "Example: Get the full set at one price",
+      "descriptionTooltip": "يظهر للعملاء بجانب اسم الحزمة في متجرك.",
+      "title": "خيارات إضافية",
+      "usageLimitTooltip": "عدد المرات التي يمكن للعميل الواحد استخدام هذا العرض فيها."
+    },
+    "basicInfo": {
+      "addEndDate": "إضافة تاريخ انتهاء",
+      "description": "أدخل اسم الحزمة، الوصف، وفترة صلاحية العرض.",
+      "nameHelperText": "يظهر هذا الاسم للعملاء في المتجر.",
+      "namePlaceholder": "مثال: عرض العيد",
+      "namePlaceholder_ar": "مثال: عرض العيد",
+      "namePlaceholder_en": "Example: Eid offer",
+      "offerPrice": "سعر العرض",
+      "offerPriceHelperText": "حدّد سعر البيع للمنتجات المشمولة في العرض.",
+      "selectionStrategy": {
+        "description": "حدّد المنتجات التي يُطبَّق عليها العرض أولًا عند تجاوز المنتجات المؤهلة في السلة الكمية المطلوبة.",
+        "highest": "للمنتج الأعلى سعرًا أولًا",
+        "lowest": "للمنتج الأقل سعرًا أولًا",
+        "title": "أولوية تطبيق العرض"
+      },
+      "title": "المعلومات الأساسية"
+    },
+    "groups": {
+      "addGroup": "إضافة مجموعة",
+      "description": "في حالة إضافة أكثر من مجموعة، يجب على العميل تحقيق متطلبات المجموعتين للإستفادة من العرض.",
+      "groupDescription": "اختر الكمية والمنتجات التي يشتريها العميل لتحقيق المجموعة",
+      "groupTitle": "المجموعة {{number}}",
+      "limits": "الحد الأدنى {{min}} • الحد الأقصى {{max}}",
+      "quantityHelperText": "حدّد الكمية المطلوبة لتطبيق العرض.",
+      "removeGroup": "حذف المجموعة {{number}}",
+      "title": "منتجات العرض"
+    },
+    "summary": {
+      "namePlaceholder": "بدون اسم بعد",
+      "sentence": {
+        "group": "{{quantity}} {{scope}}",
+        "separator": " و ",
+        "template": "اشترِ {{groups}}، واحصل على الحزمة بـ "
+      }
+    }
+  },
+  "form": {
+    "customer": {
+      "actions": {
+        "allProducts": "كل المنتجات",
+        "browseCategories": "تصفح التصنيفات",
+        "browseProducts": "تصفح المنتجات",
+        "eligibilityLabel": "يشمل",
+        "excludeDiscountedProducts": "استبعاد المنتجات المخفّضة",
+        "selectedCategories": "التصنيفات المحددة",
+        "selectedProducts": "المنتجات المحددة"
+      },
+      "buy": {
+        "description": "اختر المنتجات التي يشتريها العميل للاستفادة من الحزمة",
+        "numberLabel": "كمية المنتجات",
+        "numberLabelPlaceholder": "أدخل الحد الأدنى لعدد المنتجات للحصول على الحزمة",
+        "title": "يشتري العميل"
+      },
+      "get": {
+        "description": "اختر المنتجات التي يحصل عليها العميل عند إضافة الكمية المحددة أعلاه إلى السلة.",
+        "numberLabel": "كمية المنتجات",
+        "numberLabelPlaceholder": "عدد المنتجات التي سيحصل عليها العميل",
+        "title": "يحصل العميل على"
+      },
+      "tables": {
+        "categoriesEmptyState": {
+          "button": "إضافة تصنيفات",
+          "description": "لتطبيق الشرط، اختر التصنيفات",
+          "title": "لم تُختر تصنيفات"
+        },
+        "productsEmptyState": {
+          "button": "إضافة منتجات",
+          "description": "لتطبيق الشرط، اختر المنتجات",
+          "title": "لم تُختر منتجات"
+        }
+      }
+    },
+    "details": {
+      "description": "أدخل اسم الحزمة ووصفها وفترة صلاحية العرض.",
+      "descriptionInput": {
+        "label": "الوصف",
+        "placeholder": "وصف الحزمة التسويقية",
+        "placeholder_ar": "وصف الحزمة التسويقية (العربية)",
+        "placeholder_en": "Bundle offer description (English)",
+        "tooltip": "يظهر عادةً للعميل داخل صفحة تفاصيل المنتج."
+      },
+      "endDate": "تاريخ الانتهاء",
+      "name": {
+        "label": "الاسم",
+        "placeholder": "اسم الحزمة التسويقية",
+        "placeholder_ar": "اسم الحزمة التسويقية (العربية)",
+        "placeholder_en": "Bundle offer name (English)",
+        "tooltip": "يظهر عادةً للعميل في بطاقة المنتج."
+      },
+      "startDate": "تاريخ البدء"
+    },
+    "discount": {
+      "autoAddingHelperText": "عند التفعيل، يُختار المنتج تلقائيًا ولا يمكن للعميل تغييره. يمكنك تحديد ما إذا كان المنتج المجاني هو الأعلى أو الأقل سعرًا.",
+      "autoHidingLabel": "إضافة المنتجات المجانية تلقائياً إلى السلة.",
+      "fixedAmount": "مبلغ ثابت",
+      "fixedToolTip": "عند تعدد المنتجات، يُخصم مبلغ الخصم من كل منتج.",
+      "freeItemSelectionStrategyHighest": "المنتج الأعلى سعراً",
+      "freeItemSelectionStrategyLowest": "المنتج الأقل سعراً",
+      "onlineStore": "المتجر الإلكتروني",
+      "title": "نوع العرض"
+    },
+    "settings": {
+      "bundleLimit": "الحد الأقصى للحزمة",
+      "bundleQuantityHelperText": "إذا لم تحدد عددًا معينًا للحزم التسويقية، ستستمر الحزم التسويقية في الظهور حتى نفاد المنتجات أو انتهاء صلاحية الباقة",
+      "bundleTimes": "عدد المرات المتاحة لاستخدام هذا العرض",
+      "cardDescription": "أضف تفاصيل إضافية للحزمة للتحكم في صلاحيتها.",
+      "categoryLabel": "تصنيف خاص للحزم التسويقية"
+    }
+  },
+  "freeProduct": "منتج مجاني",
+  "name": "الاسم",
+  "summary": {
+    "alert": "إذا أضاف العميل المنتجات نفسها إلى عدة عروض حزم يدويًا، يُطبَّق العرض على المنتجات المضافة إلى السلة أولًا.",
+    "endDate": "تاريخ الانتهاء:",
+    "mechanism": "آلية العرض",
+    "namePlaceholder": "حزمة تسويقية",
+    "notSet": "لم تُحدد بعد",
+    "salesChannels": "قنوات البيع",
+    "sentence": {
+      "reward": {
+        "fixedPrefix": " بخصم ",
+        "fixedSuffix": "",
+        "free": " مجاناً",
+        "percentage": " بخصم {{value}}%"
+      },
+      "scope": {
+        "allProducts": "من أي منتج",
+        "categories": "من تصنيفات محددة",
+        "products": "من منتجات محددة"
+      },
+      "template": "اشترِ {{buyQty}} {{buyScope}}، واحصل على {{getQty}} {{getScope}}"
+    },
+    "settings": "الإعدادات",
+    "specialCategory": "التصنيف الخاص:",
+    "startDate": "تاريخ البدء:",
+    "title": "الملخص",
+    "totalBundleLimit": "الحد الأقصى للحزمة:",
+    "usagePerCustomer": "الاستخدام لكل عميل:"
+  },
+  "tableTabs": {
+    "active": "مفعل",
+    "all": "الكل",
+    "expired": "منتهية",
+    "notStarted": "لم تبدأ بعد"
+  },
+  "type": "نوع الحزمة",
+  "types": {
+    "fixed": "مبلغ ثابت لكل منتج",
+    "percentage": "خصم بنسبة"
+  },
+  "updatedSuccessfully": "عُدّلت الحزمة التسويقية",
+  "validation": {
+    "categoriesRequired": "اختر تصنيفًا واحدًا على الأقل",
+    "minimumRequired": "أدخل الحد الأدنى المطلوب من الكمية",
+    "moreThan": "يجب أن تكون القيمة أكبر من صفر",
+    "numberOfProductsRequired": "أدخل عدد المنتجات",
+    "productsRequired": "اختر منتجًا واحدًا على الأقل",
+    "shouldBeAtLeastOne": "يجب أن تكون القيمة واحداً على الأقل"
+  }
+}

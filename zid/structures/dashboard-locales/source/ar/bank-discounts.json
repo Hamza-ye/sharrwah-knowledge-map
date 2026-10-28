@@ -1,0 +1,99 @@
+{
+  "createEditForms": {
+    "DiscountDetails": "تفاصيل الخصم",
+    "applePayAlert": "خصومات البنوك لا تشمل عمليات الدفع بخدمة ابل باي",
+    "bankName": "اسم البنك",
+    "bankPlaceholder": "اختر بنكًا",
+    "cardType": "نوع البطاقة",
+    "cartPageLabel": "عرض في صفحة السلة",
+    "createTitle": "إنشاء خصم بنكي جديد",
+    "discountConditions": "شروط الخصم",
+    "discountDate": "تاريخ الخصم",
+    "discountDisplayBanner": "عرض الخصم",
+    "discountDisplayBannerDesc": "حدد مكان عرض الخصم في المتجر",
+    "discountName": "اسم الخصم",
+    "discountNameHelper": "سيظهر الاسم لعملائك في المتجر",
+    "discountType": "نوع الخصم",
+    "discountTypeDesc": "حدد نوع الخصم الذي تريد تطبيقه",
+    "discountTypeHelper": "للتنويه: أدنى مبلغ للدفع ريالان.",
+    "discountValue": "قيمة الخصم",
+    "editTitle": "تعديل خصم بنكي",
+    "endDate": "تاريخ الانتهاء",
+    "fixedAmount": "مبلغ ثابت",
+    "maxDiscount": "الحد الأقصى للخصم",
+    "minOrder": "الحد الأدنى لقيمة الطلب",
+    "minOrderNumber": "الحد الأدنى لقيمة الطلب",
+    "optional": "اختياري",
+    "percentage": "نسبة مئوية",
+    "productPageLabel": "عرض في صفحة تفاصيل المنتج",
+    "requireMinOrderNumber": "حد أدنى لقيمة الطلب",
+    "requireMinOrderNumberHelper": "يجب أن يبلغ الحد الأدنى لقيمة الطلب هذا المبلغ ليحصل العميل على الخصم",
+    "setMaxDiscount": "وضع حد أقصى للخصم",
+    "setMaxDiscountHelper": "لن يحصل العميل على خصم أعلى من المبلغ المدخل",
+    "startDate": "تاريخ البداية",
+    "status": "الحالة"
+  },
+  "deletePopup": {
+    "cancel": "إلغاء",
+    "confirm": "حذف",
+    "description": "هل أنت متأكد من حذف هذا الخصم؟",
+    "title": "حذف خصم البنك"
+  },
+  "emptyState": {
+    "createDiscount": "ابدأ بإنشاء الخصومات",
+    "description": "أحياناً كل ما يحتاجه العميل لإتمام الشراء هو خصم بسيط. جرب ذلك وسترى الفرق بنفسك.",
+    "title": "أنشئ الخصم الأول"
+  },
+  "pageTitle": "خصومات البنوك",
+  "required": "هذا الحقل مطلوب",
+  "selectAll": "تحديد الكل",
+  "summaryNodataPlaceholders": {
+    "cardTypes": "لم تُحدَّد بطاقات",
+    "terms": "لم تُضف شروط"
+  },
+  "table": {
+    "actionsMenu": {
+      "delete": "حذف",
+      "edit": "تعديل"
+    },
+    "headers": {
+      "actions": "الإجراءات",
+      "bankName": "اسم البنك",
+      "discountName": "اسم الخصم",
+      "discountValue": "قيمة الخصم",
+      "endDate": "تاريخ الانتهاء",
+      "startDate": "تاريخ البداية",
+      "status": "الحالة"
+    },
+    "status": {
+      "active": "مفعل",
+      "expired": "منتهي",
+      "inactive": "غير نشط",
+      "scheduled": "مجدول"
+    }
+  },
+  "validations": {
+    "canNotLessThan0": "يجب أن تكون القيمة أكبر من 0",
+    "endDate": {
+      "canNotBeBeforeStartDate": "لا يمكن أن يكون تاريخ الانتهاء قبل تاريخ البدء"
+    },
+    "fixedAmount": {
+      "canNotLessThan0": "لا يمكن أن يكون الخصم أقل من 0",
+      "canNotLessThan2": "لا يمكن أن يكون الخصم أقل من 2"
+    },
+    "percentage": {
+      "canNotExceed100": "لا يمكن أن تتجاوز النسبة المئوية 100",
+      "canNotLessThan0": "لا يمكن أن تكون النسبة المئوية أقل من 0"
+    }
+  },
+  "zidPaymentsBanner": {
+    "activateZidPayments": "تفعيل مدفوعات زد",
+    "benefits": {
+      "1": "قدّم خصومات حصرية لبنوك مختارة ببضع نقرات فقط.",
+      "2": "زد من معدلات إتمام عمليات الشراء بمنح العملاء سببًا إضافيًا للدفع.",
+      "3": "أنشئ حملات محدودة المدة لتعزيز المبيعات في المواسم الرئيسية."
+    },
+    "description": "أنشئ خصومات لبطاقات بنوك محددة لجذب المزيد من العملاء، وزيادة التحويلات، وتشجيع المتسوقين على إتمام مشترياتهم.",
+    "title": "حقق مبيعات أكثر بخصومات حصرية على بطاقات البنوك."
+  }
+}

@@ -1,0 +1,633 @@
+{"key": "abandoned_carts_analytics", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "abandoned_carts_analytics.abandoned_cart_conversion_rate", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "abandoned_carts_analytics.abandoned_cart_sales_overtime", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "abandoned_carts_analytics.abandoned_carts_converted_to_sales_orders", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "abandoned_carts_analytics.cart_abandonment_stage", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "abandoned_carts_analytics.customers", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "abandoned_carts_analytics.customers_location", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "abandoned_carts_analytics.export", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "abandoned_carts_analytics.number_of_abandoned_carts", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "abandoned_carts_analytics.orders_ctr", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "abandoned_carts_analytics.return_customers_rate", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "abandoned_carts_analytics.sales_channel", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "abandoned_carts_analytics.top_customers", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "abandoned_carts_analytics.top_products", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "abandoned_carts_analytics.top_selling_cities", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "abandoned_carts_analytics.total_value_of_abandonment_carts", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "abandoned_carts_analytics.visit_sources", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "abandoned_carts_analytics.visits", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "abandoned_carts_analytics.visits_overtime", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "abandoned_carts_analytics.visits_stages", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "abandoned_carts.abandoned_carts_details", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "abandoned_carts.edit_reminder_message_content", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "abandoned_carts.export_all", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "abandoned_carts.group_reminder", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "abandoned_carts.payback_percentage_from_carts_turned_into_orders", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "abandoned_carts.send_reminder_message", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "abandoned_carts.total_value_of_abandoned_carts", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "abandoned_carts.total_value_of_converted_carts", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "account_settings.account_details", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "account_settings.change_password", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "account_settings.log_out_all_employees_from_the_control_panel", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "accounting.add_accounting", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "accounting.altflow", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "accounting.ashbk", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "accounting.eyeen", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "accounting.mcledger", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "accounting.nobe_odoo", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "accounting.plus_tech_odoo_connector", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "accounting.qoyod", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "accounting.sahelbooks", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "accounting.vom", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "accounting.xero_hesaab", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "add_products.add_digital_product", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "add_products.add_product", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "advanced_analytics", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "affiliate_marketing.add_affiliate", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "affiliate_marketing.affiliate_information", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "affiliate_marketing.commission", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "affiliate_marketing.discount", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "affiliate_marketing.export_affiliates", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "affiliate_marketing.filter", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "affiliate_marketing.links", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "affiliate_marketing.refer_order", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "affiliate_marketing.search_bar", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "analytics_&_reporting.crazyegg", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "analytics_&_reporting.hotjar", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "analytics_&_reporting.lableb_search", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "analytics_&_reporting.qumra", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "analytics_&_reporting.tajer_report", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "api_integrations.direct_integration", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "api_integrations.mokafaa", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "api_integrations.qitaf", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "api_integrations.zam_api_access", "enabled": true, "config": {}, "available_in": {"ar": "الاحترافية", "en": "Professional", "package_key": "new_professional"}, "policies": true}
+{"key": "auto_discounts.discount_for_mobile_app_customers", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "auto_discounts.discount_on_online_payment", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "auto_discounts.free_shipping_and_delivery", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "automatic_messages.abandoned_carts_messages", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "automatic_messages.manage_reviews", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "automatic_messages.orders_status_messages", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "automatic_messages.questions_ratings_messages", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "automatic_messages.sender_name", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "automatic_messages.sms_campaigns", "enabled": true, "config": {"enable_special_prices": true}, "available_in": {"ar": "برنامج النخبة", "en": "Elite", "package_key": "elite"}, "policies": true}
+{"key": "barcode_printing", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "blogs", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "campaign_tracking.facebook_conversion_api", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "campaign_tracking.facebook_pixel", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "campaign_tracking.google_ads", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "campaign_tracking.google_analytics", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "campaign_tracking.google_tag_manager", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "campaign_tracking.openai_pixel", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "campaign_tracking.snapchat_conversion_api", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "campaign_tracking.snapchat_pixel", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "campaign_tracking.tiktok_conversion_api", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "campaign_tracking.tiktok_pixel", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "campaign_tracking.twitter_pixel", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "checkout_page_options.activate_multiple_discounts", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "checkout_page_options.add_custom_terms_and_declaration_on_the_last_page", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "checkout_page_options.apple_pay_alert_in_all_browsers", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "checkout_page_options.fast_checkout_with_apple_pay", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "checkout_page_options.geolocation_service", "enabled": true, "config": {"implementation": "opensource"}, "available_in": {"ar": "برنامج النخبة", "en": "Elite", "package_key": "elite"}, "policies": true}
+{"key": "checkout_page_options.one-page_checkout", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "checkout_page_options.sign_in_with_email", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "checkout_page_options.single_page_checkout", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "coupons", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "coupons.activate_coupon", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "coupons.analytics", "enabled": true, "config": {}, "available_in": {"ar": "الاحترافية", "en": "Professional", "package_key": "new_professional"}, "policies": true}
+{"key": "coupons.bulk_update_coupons", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "coupons.deactivate_coupon", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "coupons.delete_coupon", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "coupons.duplicate_coupon", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "coupons.filter", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "coupons.multiple_coupons", "enabled": true, "config": {"with_advanced_analytics": true}, "available_in": {"ar": "برنامج الأعمال الكبيرة", "en": "Enterprise", "package_key": "enterprise"}, "policies": true}
+{"key": "coupons.search_bar", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "coupons.single_coupon", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "customer_care.customer_care", "enabled": true, "config": {"ticketing_system": true, "chat": true, "whatsapp": true, "call": true, "am": true}, "available_in": {"ar": "برنامج الأعمال الكبيرة", "en": "Enterprise", "package_key": "enterprise"}, "policies": true}
+{"key": "customer_referrals", "enabled": true, "config": {}, "available_in": {"ar": "الاحترافية", "en": "Professional", "package_key": "new_professional"}, "policies": true}
+{"key": "customer_support.abgari", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "customer_support.all_day_chat", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "customer_support.chatbot", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "customer_support.click_to_call", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "customer_support.contact_form", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "customer_support.contact_us_all_in_one", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "customer_support.crisp", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "customer_support.drdsh", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "customer_support.faal_whatsapp", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "customer_support.facebook_contact_us", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "customer_support.faq", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "customer_support.getbutton", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "customer_support.go_by_whatsloop", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "customer_support.intercom", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "customer_support.karzoun", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "customer_support.landbot", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "customer_support.lets_bot", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "customer_support.livechat", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "customer_support.morasalaty_whatsapp", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "customer_support.mottasl", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "customer_support.socialbot", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "customer_support.tawk.to", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "customer_support.telegram_contact_us", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "customer_support.tidio", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "customer_support.trengo", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "customer_support.voho", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "customer_support.whatsapp_contact_us", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "customer_support.whatsapp_inquiry_app", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "customer_support.zendesk", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "customer_wallets", "enabled": true, "config": {}, "available_in": {"ar": "الاحترافية", "en": "Professional", "package_key": "new_professional"}, "policies": true}
+{"key": "customers.add_b2b_customer", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "customers.add_new_customer", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "customers.block_cod", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "customers.block_customer", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "customers.create_customer_group", "enabled": true, "config": {"group_limit": 0}, "available_in": {"ar": "برنامج النخبة", "en": "Elite", "package_key": "elite"}, "policies": true}
+{"key": "customers.customer_details", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "customers.customer_note", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "customers.customers_filter", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "customers.edit_customer", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "customers.export_customers", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "customers.import_customers", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "customers.search_bar", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "customizable_reports", "enabled": true, "config": {}, "available_in": {"ar": "الاحترافية", "en": "Professional", "package_key": "new_professional"}, "policies": true}
+{"key": "customize_shipping_options.cod_activation_deactivation", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "customize_shipping_options.shipping_rate_customization", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "digital_products.file_count", "enabled": true, "config": {"limit": 15}, "available_in": {"ar": "برنامج الأعمال الكبيرة", "en": "Enterprise", "package_key": "enterprise"}, "policies": true}
+{"key": "digital_products.file_size", "enabled": true, "config": {"limit": 2147483648}, "available_in": {"ar": "برنامج النخبة", "en": "Elite", "package_key": "elite"}, "policies": true}
+{"key": "extended_caching", "enabled": true, "config": {}, "available_in": {"ar": "الاحترافية", "en": "Professional", "package_key": "new_professional"}, "policies": true}
+{"key": "faq.faq_page", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "financial_analytics", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "financial_analytics.export", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "financial_analytics.number_of_orders", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "financial_analytics.product_sales", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "financial_analytics.total_cash_on_delivery", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "financial_analytics.total_discount_value", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "financial_analytics.total_estore_orders", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "financial_analytics.total_estore_sales", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "financial_analytics.total_pos_orders", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "financial_analytics.total_pos_sales", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "financial_analytics.total_sales", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "financial_analytics.total_shipping", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "financial_analytics.total_vat", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "finding_products.m5azn", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "finding_products.stockzones", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "finding_products.taager", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "fostering_charity.filter", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "fostering_charity.messages_balance", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "fostering_charity.sender_name", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "gift_page_options.additions_to_gifts", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "gift_page_options.customize_gifting_status_messages", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "gift_page_options.gift_order_feature", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "importing_products.replacing_current_products_with_new_ones", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "importing_products.updating_quantity_prices_and_weights_of_existing_products", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "importing_products.updating_the_prices_of_existing_products", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "importing_products.updating_the_quantities_of_existing_products", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "importing_products.updating_the_weights_of_existing_products", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "inventory_locations.active_locations", "enabled": true, "config": {"limit": 6}, "available_in": {"ar": "برنامج النخبة", "en": "Elite", "package_key": "elite"}, "policies": true}
+{"key": "inventory_locations.display_products_based_on_customers_city", "enabled": true, "config": {}, "available_in": {"ar": "الاحترافية", "en": "Professional", "package_key": "new_professional"}, "policies": true}
+{"key": "inventory_locations.export_all_quantities", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "inventory_locations.priority_for_withdrawal_from_warehouse", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "inventory_locations.quantities_import", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "inventory_locations.stock_managment", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "inventory_locations.stocktaking", "enabled": true, "config": {}, "available_in": {"ar": "الاحترافية", "en": "Professional", "package_key": "new_professional"}, "policies": true}
+{"key": "inventory_locations.supporting_shipping_options_for_shipping_and_storage", "enabled": true, "config": {}, "available_in": {"ar": "الاحترافية", "en": "Professional", "package_key": "new_professional"}, "policies": true}
+{"key": "inventory_locations.transferring_stock", "enabled": true, "config": {}, "available_in": {"ar": "الاحترافية", "en": "Professional", "package_key": "new_professional"}, "policies": true}
+{"key": "inventory_locations.transferring_stock_auto_restock", "enabled": true, "config": {}, "available_in": {"ar": "الاحترافية", "en": "Professional", "package_key": "new_professional"}, "policies": true}
+{"key": "inventory_management.almizan", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "inventory_management.booklet", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "inventory_management.fastcoo", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "inventory_management.lightspeed", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "inventory_management.likecard", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "inventory_management.live_gold", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "inventory_management.omniful_merchant", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "inventory_management.prexle", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "inventory_management.rewaa", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "inventory_management.vend", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "inventory_management.zoho_inventory", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "inventory_product_reports", "enabled": true, "config": {}, "available_in": {"ar": "الاحترافية", "en": "Professional", "package_key": "new_professional"}, "policies": true}
+{"key": "inventory_product_reports.export", "enabled": true, "config": {}, "available_in": {"ar": "الاحترافية", "en": "Professional", "package_key": "new_professional"}, "policies": true}
+{"key": "invoice_settings.enable_zid_system_to_send_invoices", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "invoice_settings.invoice_template_and_order_summary", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "live_analytics", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "loyalty", "enabled": true, "config": {}, "available_in": {"ar": "الاحترافية", "en": "Professional", "package_key": "new_professional"}, "policies": true}
+{"key": "loyalty.create_program_content", "enabled": true, "config": {}, "available_in": {"ar": "الاحترافية", "en": "Professional", "package_key": "new_professional"}, "policies": true}
+{"key": "loyalty.customers_who_earned_points", "enabled": true, "config": {}, "available_in": {"ar": "الاحترافية", "en": "Professional", "package_key": "new_professional"}, "policies": true}
+{"key": "loyalty.earned_points", "enabled": true, "config": {}, "available_in": {"ar": "الاحترافية", "en": "Professional", "package_key": "new_professional"}, "policies": true}
+{"key": "loyalty.points_expiry_period", "enabled": true, "config": {}, "available_in": {"ar": "الاحترافية", "en": "Professional", "package_key": "new_professional"}, "policies": true}
+{"key": "loyalty.redeeming_points_methods", "enabled": true, "config": {}, "available_in": {"ar": "الاحترافية", "en": "Professional", "package_key": "new_professional"}, "policies": true}
+{"key": "loyalty.redemeed_points", "enabled": true, "config": {}, "available_in": {"ar": "الاحترافية", "en": "Professional", "package_key": "new_professional"}, "policies": true}
+{"key": "marketing.10x", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "marketing.abkhas", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "marketing.adatik", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "marketing.adwhats", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "marketing.almoutasoq", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "marketing.araboost", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "marketing.blog", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "marketing.businesschat", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "marketing.cartat_whatsapp", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "marketing.codemap", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "marketing.corner_ribbon", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "marketing.countdown_popup", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "marketing.exit_popup", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "marketing.glam", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "marketing.google_merchant_center", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "marketing.greenbill", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "marketing.information_message", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "marketing.instagram_catalog", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "marketing.instagram_follow_us", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "marketing.klaviyo", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "marketing.linkaraby", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "marketing.lucky_wheel", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "marketing.mailchimp", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "marketing.masrad", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "marketing.message_bar", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "marketing.nerachat_whatsapp_bot", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "marketing.noti_money", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "marketing.popautomate", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "marketing.popup", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "marketing.popup_forms", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "marketing.quantum_retail_media", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "marketing.reviews", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "marketing.shrinkit", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "marketing.slide", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "marketing.smartarget", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "marketing.smartarget_stories", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "marketing.social_follow_us", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "marketing.social_proof_sales", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "marketing.tapfiliate", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "marketing.tiktok_follow_us", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "marketing.upp_rewards", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "marketing.ziadah_upsell_cross_sell", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "marketing.zotabox", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "markets_management.active_markets", "enabled": true, "config": {"limit": 5}, "available_in": {"ar": "برنامج النخبة", "en": "Elite", "package_key": "elite"}, "policies": true}
+{"key": "merchants_relations.merchants_relations", "enabled": true, "config": {}, "available_in": {"ar": "الاحترافية", "en": "Professional", "package_key": "new_professional"}, "policies": true}
+{"key": "metafields", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "mobile_apps.app_bunches", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "mobile_apps.splendapp", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "multiple_xml_feeds.enabled", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "multiple_xml_feeds.max_feeds", "enabled": true, "config": {"limit": 20}, "available_in": {"ar": "برنامج النخبة", "en": "Elite", "package_key": "elite"}, "policies": true}
+{"key": "onboarding.onboarding", "enabled": true, "config": {"model": "Monthly+Yearly 1:1 Meeting"}, "available_in": {"ar": "برنامج الأعمال الكبيرة", "en": "Enterprise", "package_key": "enterprise"}, "policies": true}
+{"key": "operational_analytics", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "operational_analytics.creation_to_delivery_average", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "operational_analytics.export", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "operational_analytics.in_reverse_to_reversed_average", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "operational_analytics.number_of_orders", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "operational_analytics.order_status_summary", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "operational_analytics.payment_method", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "operational_analytics.preparation_to_ready_average", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "operational_analytics.shipping_method", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "operational_analytics.total_sales", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "operations.returnplus", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "operations.scribes", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "operations.switchpro", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "operations.yamm", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "options_library.new_option", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "order_checkout_page", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "order_checkout_page.buy_as_a_guest", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "order_checkout_page.buy_as_b2b", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "order_checkout_page.checkout_constraints", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "order_checkout_page.confirm_the_exact_address_after_purchase", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "order_checkout_page.customer_notes", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "order_checkout_page.send_invoices_via_email", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "order_management_new_order.adding_products", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "order_management_new_order.auto_dispatch", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "order_management_new_order.customer_information", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "order_management_new_order.draft_orders", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "order_management_new_order.draft_orders.adjust_product_price_in_the_order", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "order_management_new_order.order_summary", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "order_management_new_order.payment_methods", "enabled": true, "config": {"payment_methods": ["bt", "pl", "cod", "cop"]}, "available_in": {"ar": "برنامج الأعمال الكبيرة", "en": "Enterprise", "package_key": "enterprise"}, "policies": true}
+{"key": "order_management_new_order.shipping", "enabled": true, "config": {"only_zidship": false}, "available_in": {"ar": "برنامج النخبة", "en": "Elite", "package_key": "elite"}, "policies": true}
+{"key": "order_page", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "order_page.bulk_action", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "order_page.bulk_action_selected_rows", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "order_page.bulk_change_order_status", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "order_page.bulk_change_payment_status", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "order_page.bulk_order_export", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "order_page.bulk_payment_action", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "order_page.bulk_print", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "order_page.bulk_print_waybill", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "order_page.changing_order_statuses", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "order_page.edit_order", "enabled": true, "config": {"limit": 0}, "available_in": {"ar": "برنامج الأعمال الكبيرة", "en": "Enterprise", "package_key": "enterprise"}, "policies": true}
+{"key": "order_page.export_orders_preparation_list", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "order_page.order_custom_status", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "order_page.order_filter", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "order_page.order_notes", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "order_page.order_return", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "order_page.order_status", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "order_page.order_summary", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "order_page.order_tags", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "order_page.order_updates_history", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "order_page.payment_status", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "order_page.printing_invoice", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "order_page.printing_shipping_waybill", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "order_page.product_sales", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "order_page.request_due_payment", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "order_page.search_bar", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "order_page.setting_order_pickup_times", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "orders_analytics", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "orders_analytics.average_cart_value", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "orders_analytics.average_orders_per_customer", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "orders_analytics.average_products_per_order", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "orders_analytics.average_sales_per_customer", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "orders_analytics.export", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "orders_analytics.number_of_orders", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "orders_analytics.orders_ctr", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "orders_analytics.orders_overtime", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "orders_analytics.sales_per_inventory_location", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "orders_analytics.sales_value_overtime", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "orders_analytics.total_sales", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "orders_and_products_specifications.auto_return_of_quantity", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "orders_and_products_specifications.improved_product_search", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "orders_and_products_specifications.max_limit_for_order", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "orders_and_products_specifications.min_limit_for_order", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "orders_and_products_specifications.shipment_receipt_by_different_consignee", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "orders_products_specifications", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "orders_products_specifications.out_of_stock_products", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "orders_products_specifications.show_the_number_of_remaining_products", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "orders_products_specifications.similar_products", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "orders_products_specifications.sold_products_count", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "payment_options.bank_transfer", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "payment_options.enable_apple_pay_in_all_browsers", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "payment_options.installment_services", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "payment_options.non_online_guest_payments", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "payment_options.online_payments", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "payment_options.payment_gateways", "enabled": true, "config": {"gateways": ["tap"]}, "available_in": {"ar": "برنامج النخبة", "en": "Elite", "package_key": "elite"}, "policies": true}
+{"key": "payment_options.zidpay", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "payments.mispay", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "payments.tabby", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "payments.tamara", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "product_bundles.creating_bundles", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "product_bundles.filter", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "product_bundles.search_bar", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "productivity.zapier", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "products_analytics", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "products_analytics.export", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "products_analytics.number_of_times_added_to_cart", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "products_analytics.number_of_times_ordered", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "products_analytics.product_name", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "products_analytics.quantity", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "products_analytics.total_sales", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "products_analytics.total_sold_quantity", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "products.availability_notifications", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "products.barcode_printing", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "products.brands", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "products.bulk_edit_products", "enabled": true, "config": {"allow_all": true, "allow_selected": true}, "available_in": {"ar": "برنامج الأعمال الكبيرة", "en": "Enterprise", "package_key": "enterprise"}, "policies": true}
+{"key": "products.bulk_export_selected_products", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "products.bundle_offers", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "products.delete_products", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "products.downloadable", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "products.duplicate_product", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "products.dynamic_bundle", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "products.edit_product", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "products.export_products", "enabled": true, "config": {"allow_all": true, "allow_selected": true}, "available_in": {"ar": "برنامج الأعمال الكبيرة", "en": "Enterprise", "package_key": "enterprise"}, "policies": true}
+{"key": "products.gifting_products", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "products.grouped_products", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "products.import_products", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "products.metafields", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "products.product_actions", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "products.product_categories", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "products.product_filtration", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "products.products_arrangment", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "products.similar_products", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "products.stock_logs", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "products.voucher", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "products.wishlist", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "promotions_analytics", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "promotions_analytics.discount_code_results", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "promotions_analytics.export", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "promotions_analytics.number_of_customers_using_discount_codes", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "promotions_analytics.number_of_discount_codes", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "promotions_analytics.number_of_orders_from_discount_codes", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "promotions_analytics.number_of_orders_per_every_automated_discount", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "promotions_analytics.total_discount_code_order_sales", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "promotions_analytics.total_sales_from_automated_discounts", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "questions_&_ratings.bulk_delete", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "questions_&_ratings.bulk_disable", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "questions_&_ratings.bulk_filter", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "questions_&_ratings.bulk_publish", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "questions_&_ratings.delete", "enabled": true, "config": {"allow_bulk_action": true}, "available_in": {"ar": "برنامج النخبة", "en": "Elite", "package_key": "elite"}, "policies": true}
+{"key": "questions_&_ratings.disable", "enabled": true, "config": {"allow_bulk_action": true}, "available_in": {"ar": "برنامج النخبة", "en": "Elite", "package_key": "elite"}, "policies": true}
+{"key": "questions_&_ratings.filter", "enabled": true, "config": {"allow_bulk_action": true}, "available_in": {"ar": "برنامج الأعمال الكبيرة", "en": "Enterprise", "package_key": "enterprise"}, "policies": true}
+{"key": "questions_&_ratings.publish", "enabled": true, "config": {"allow_bulk_action": true}, "available_in": {"ar": "برنامج النخبة", "en": "Elite", "package_key": "elite"}, "policies": true}
+{"key": "sales_reports", "enabled": true, "config": {}, "available_in": {"ar": "الاحترافية", "en": "Professional", "package_key": "new_professional"}, "policies": true}
+{"key": "sales_reports.cancelled_orders_value", "enabled": true, "config": {}, "available_in": {"ar": "الاحترافية", "en": "Professional", "package_key": "new_professional"}, "policies": true}
+{"key": "sales_reports.discounts", "enabled": true, "config": {}, "available_in": {"ar": "الاحترافية", "en": "Professional", "package_key": "new_professional"}, "policies": true}
+{"key": "sales_reports.export", "enabled": true, "config": {}, "available_in": {"ar": "الاحترافية", "en": "Professional", "package_key": "new_professional"}, "policies": true}
+{"key": "sales_reports.gross_profit", "enabled": true, "config": {}, "available_in": {"ar": "الاحترافية", "en": "Professional", "package_key": "new_professional"}, "policies": true}
+{"key": "sales_reports.gross_sales", "enabled": true, "config": {}, "available_in": {"ar": "الاحترافية", "en": "Professional", "package_key": "new_professional"}, "policies": true}
+{"key": "sales_reports.product_cost", "enabled": true, "config": {}, "available_in": {"ar": "الاحترافية", "en": "Professional", "package_key": "new_professional"}, "policies": true}
+{"key": "sales_reports.returned_orders", "enabled": true, "config": {}, "available_in": {"ar": "الاحترافية", "en": "Professional", "package_key": "new_professional"}, "policies": true}
+{"key": "sales_reports.shipping", "enabled": true, "config": {}, "available_in": {"ar": "الاحترافية", "en": "Professional", "package_key": "new_professional"}, "policies": true}
+{"key": "sales_reports.taxes", "enabled": true, "config": {}, "available_in": {"ar": "الاحترافية", "en": "Professional", "package_key": "new_professional"}, "policies": true}
+{"key": "seo_enhancements.categories", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "seo_enhancements.homepage_description", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "seo_enhancements.homepage_title", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "seo_enhancements.products", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "seo_enhancements.sitemap", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "service_fee", "enabled": false, "config": null, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": null}
+{"key": "shipping_&_fulfilment.nitros", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "shipping_&_fulfilment.torod", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "shipping.address_fields_customizations", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "shipping.countries_and_cities_customization", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "shipping.couriers", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "shipping.couriers_customization", "enabled": true, "config": {"zidship_only": true}, "available_in": {"ar": "برنامج النخبة", "en": "Elite", "package_key": "elite"}, "policies": true}
+{"key": "shipping.custom_shipping", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "shipping.estimated_delivery_config", "enabled": true, "config": {}, "available_in": {"ar": "الاحترافية", "en": "Professional", "package_key": "new_professional"}, "policies": true}
+{"key": "shipping.fulfillment_service", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "shipping.manage", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "shipping.methods", "enabled": true, "config": {"allow_prioritization": true}, "available_in": {"ar": "برنامج النخبة", "en": "Elite", "package_key": "elite"}, "policies": true}
+{"key": "shipping.pickup_service", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "shipping.zidship", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "sms_campaigns", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "sms_campaigns.campaign_title", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "sms_campaigns.create_a_new_campaign", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "sms_campaigns.message_language", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "sms_campaigns.sms_content", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "sms_campaigns.targeting_customers", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "store_design_options.announcement_bar", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "store_design_options.copyright_statement", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "store_design_options.css", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "store_design_options.custom_llms_txt", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "store_design_options.custom_robots", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "store_design_options.extra_pages", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "store_design_options.header_and_footer_customization", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "store_design_options.js", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "store_design_options.landing_pages", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "store_design_options.language_storefront", "enabled": true, "config": {"language_limit": 0}, "available_in": {"ar": "برنامج النخبة", "en": "Elite", "package_key": "elite"}, "policies": true}
+{"key": "store_design_options.recently_added_products", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "store_design_options.sdk_theme", "enabled": true, "config": {"limit": 5}, "available_in": {"ar": "برنامج الأعمال الكبيرة", "en": "Enterprise", "package_key": "enterprise"}, "policies": true}
+{"key": "store_design_options.store_brand", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "store_design_options.store_identity", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "store_design_options.store_main_menu", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "store_design_options.templates", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "store_design_options.theme_customization", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "store_design_options.themes", "enabled": true, "config": {"allow_custom": true}, "available_in": {"ar": "برنامج الأعمال الكبيرة", "en": "Enterprise", "package_key": "enterprise"}, "policies": true}
+{"key": "store_domain.allow_domains_from_outside_zid", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "store_domain.domain_settings", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "store_domain.request_domain", "enabled": true, "config": {"no_time_limit": true}, "available_in": {"ar": "برنامج الأعمال الكبيرة", "en": "Enterprise", "package_key": "enterprise"}, "policies": true}
+{"key": "store_info.about_the_store", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "store_info.business_address", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "store_info.business_center", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "store_info.business_details", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "store_language_and_currencies.currencies", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "store_language_and_currencies.languages", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "store_whatsapp.use_without_subscription", "enabled": true, "config": {}, "available_in": {"ar": "الاحترافية", "en": "Professional", "package_key": "new_professional"}, "policies": true}
+{"key": "subscription_management.payment_options", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "subscription_management.purchase_history", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "subscription_management.recurring_payment", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "subscription_management.subscription_data", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "summary_analytics", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "summary_analytics.customers", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "summary_analytics.customers_location", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "summary_analytics.export", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "summary_analytics.number_of_orders", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "summary_analytics.orders_overtime", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "summary_analytics.sales_value_overtime", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "summary_analytics.top_customers", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "summary_analytics.top_products", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "summary_analytics.top_selling_cities", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "summary_analytics.total_sales", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "summary_analytics.visits", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "summary_analytics.visits_stages", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "technical_support.technical_support", "enabled": true, "config": {"response_time_in_hours": 3}, "available_in": {"ar": "برنامج النخبة", "en": "Elite", "package_key": "elite"}, "policies": true}
+{"key": "terms_&_conditions.complaints_&_suggestions", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "terms_&_conditions.exchange_and_return_policies", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "terms_&_conditions.license", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "terms_&_conditions.privacy_policy", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "terms_&_conditions.terms_and_conditions", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "transferring_stock", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "url_redirects", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "users_management.action_audits", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "users_management.control_closing_store", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "users_management.order_statuses_notification", "enabled": true, "config": {"notified_staff_limit": 0}, "available_in": {"ar": "برنامج الأعمال الكبيرة", "en": "Enterprise", "package_key": "enterprise"}, "policies": true}
+{"key": "users_management.permissions", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "users_management.team_members", "enabled": true, "config": {"limit": 20}, "available_in": {"ar": "برنامج النخبة", "en": "Elite", "package_key": "elite"}, "policies": true}
+{"key": "vat_tax_settings.activate_vat", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "vat_tax_settings.merchant_vat", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "vat_tax_settings.tax-taxed_countries", "enabled": true, "config": {"limit": 0}, "available_in": {"ar": "برنامج النخبة", "en": "Elite", "package_key": "elite"}, "policies": true}
+{"key": "vat_tax_settings.vat_appears", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "vat_tax_settings.vat_shipping_fees", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "zam.apps", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "zam.fulfillment_apps", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "zam.shipping_apps", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "zid_academy.zid_academy", "enabled": true, "config": {"model": "FullAccessForThreeUsers"}, "available_in": {"ar": "برنامج النخبة", "en": "Elite", "package_key": "elite"}, "policies": true}
+{"key": "zid_communities.access", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "zid_finance.zid_finance", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "zid_growth.zid_growth", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "zidpay", "enabled": true, "config": {"package_id": 4}, "available_in": {"ar": "برنامج النخبة", "en": "Elite", "package_key": "elite"}, "policies": true}
+{"key": "zidpay_analytics", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "zidpay_analytics.export", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "zidpay_analytics.failed_transactions", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "zidpay_analytics.failure_rate", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "zidpay_analytics.number_of_settled_transaction", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "zidpay_analytics.refund_rate", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "zidpay_analytics.refunded_sales_volume", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "zidpay_analytics.refunded_transaction", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "zidpay_analytics.success_rate", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "zidpay_analytics.successful_sales_volume", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "zidpay_analytics.successful_transactions", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "zidpay_analytics.successfully_settled_transaction_volume", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "zidpay_analytics.total_settled_amount", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "zidpay_analytics.total_settlements", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "zidpay_analytics.total_unsettled_transaction", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "zidpay.anti_fraud", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "zidpay.apple_pay_fast_checkout", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "zidpay.apple_pay_full_form", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "zidpay.apple_pay_quick_checkout", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "zidpay.bulk_deposit_export", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "zidpay.card_discount", "enabled": true, "config": {}, "available_in": {"ar": "الاحترافية", "en": "Professional", "package_key": "new_professional"}, "policies": true}
+{"key": "zidpay.card_in_use", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "zidpay.deposit_details_invoice_export", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "zidpay.full_and_partial_refund", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "zidpay.instant_account_creation", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "zidpay.instant_transaction_acceptance", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "zidpay.network_access_and_control", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "zidpay.open_apis_and_ksa", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "zidpay.payment_link", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "zidpay.show_card_bank", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "zidpay.transaction_list_details_invoice_and_export", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "zidpay.transaction_search_and_filter", "enabled": true, "config": {}, "available_in": {"ar": "الانطلاقة", "en": "Rise", "package_key": "rise"}, "policies": true}
+{"key": "zidpay.zidfinance", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "zidpay.zidpay_insights", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "zidpay.zidsplitting", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "zidpos.barcode_scanning", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "zidpos.bluetooth_prinitng", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "zidpos.bundle_products", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "zidpos.buy_now_pay_later", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "zidpos.buy_online_return_anywhere", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "zidpos.cash_payment", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "zidpos.cashier_access", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "zidpos.cashier_support", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "zidpos.categoryzation", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "zidpos.channels_allocation", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "zidpos.coupons_management", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "zidpos.create_transaction", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "zidpos.custom_products_screen", "enabled": true, "config": {}, "available_in": {"ar": "الاحترافية", "en": "Professional", "package_key": "new_professional"}, "policies": true}
+{"key": "zidpos.customer_display_screen", "enabled": true, "config": {}, "available_in": {"ar": "الاحترافية", "en": "Professional", "package_key": "new_professional"}, "policies": true}
+{"key": "zidpos.customer_profile", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "zidpos.customize_bill", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "zidpos.delivery_through_zidpos", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "zidpos.e-invoicing", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "zidpos.employee_attendeance", "enabled": true, "config": {}, "available_in": {"ar": "الاحترافية", "en": "Professional", "package_key": "new_professional"}, "policies": true}
+{"key": "zidpos.employee_commision", "enabled": true, "config": {}, "available_in": {"ar": "الاحترافية", "en": "Professional", "package_key": "new_professional"}, "policies": true}
+{"key": "zidpos.geobased", "enabled": true, "config": {}, "available_in": {"ar": "الاحترافية", "en": "Professional", "package_key": "new_professional"}, "policies": true}
+{"key": "zidpos.gifting_through_zidpos", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "zidpos.hold_carts", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "zidpos.inapp_reports", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "zidpos.logs_for_inventory_management", "enabled": true, "config": {}, "available_in": {"ar": "الاحترافية", "en": "Professional", "package_key": "new_professional"}, "policies": true}
+{"key": "zidpos.loyalty", "enabled": true, "config": {}, "available_in": {"ar": "الاحترافية", "en": "Professional", "package_key": "new_professional"}, "policies": true}
+{"key": "zidpos.multi-inventories", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "zidpos.multi-language_cashier_app", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "zidpos.online_&_offiling_inventory_synchronization", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "zidpos.order_fullfilment", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "zidpos.order_history", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "zidpos.order_notes", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "zidpos.order_online_pickup_from_branch", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "zidpos.organizing_products", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "zidpos.pay_in_card", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "zidpos.product_channels", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "zidpos.product_description", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "zidpos.product_options_&_additions", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "zidpos.quantity_clarification_through_cashier", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "zidpos.request_stock_through_cashier", "enabled": true, "config": {}, "available_in": {"ar": "الاحترافية", "en": "Professional", "package_key": "new_professional"}, "policies": true}
+{"key": "zidpos.send_invoice_through_email", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "zidpos.send_sms_invoice", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "zidpos.session_history", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "zidpos.split_payment", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "zidpos.stocktaking", "enabled": true, "config": {}, "available_in": {"ar": "الاحترافية", "en": "Professional", "package_key": "new_professional"}, "policies": true}
+{"key": "zidpos.taxes_enablement", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "zidpos.traffic_analysis", "enabled": true, "config": {}, "available_in": {"ar": "الاحترافية", "en": "Professional", "package_key": "new_professional"}, "policies": true}
+{"key": "zidpos.transfer_stocks_within_inventories", "enabled": true, "config": {}, "available_in": {"ar": "الاحترافية", "en": "Professional", "package_key": "new_professional"}, "policies": true}
+{"key": "zidpos.users", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "zidship.amounts_due_for_cod", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "zidship.aramex_customized", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "zidship.aramex_drop-off", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "zidship.aramex_gcc-drop-off", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "zidship.balance_under_processing", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "zidship.banking_information", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "zidship.cod_analytics", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "zidship.cold", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "zidship.commercial_registry_information", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "zidship.contact_information", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "zidship.couriers_customization_inside_each_level", "enabled": true, "config": {}, "available_in": {"ar": "الاحترافية", "en": "Professional", "package_key": "new_professional"}, "policies": true}
+{"key": "zidship.current_balance", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "zidship.custom_shipping", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "zidship.export", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "zidship.fast", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "zidship.filter", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "zidship.heavy", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "zidship.no_rush", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "zidship.now", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "zidship.online_payments_analytics", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "zidship.payment_cod", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "zidship.print", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "zidship.saudi_post-drop-off", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "zidship.service_collections_advance_payments", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "zidship.service_collections_cod", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "zidship.service_collections_prohibited_recharges", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "zidship.smsa_customized", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "zidship.smsa_drop-off", "enabled": false, "config": null, "available_in": [], "policies": null}
+{"key": "zidship.total_cod_collections", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "zidship.total_orders_analytics", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "zidship.waybills_packages", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "zidship.zidship_reports", "enabled": true, "config": {}, "available_in": {"ar": "النمو", "en": "Growth", "package_key": "new_growth"}, "policies": true}
+{"key": "zidship.zidship_reports_orders_analytics", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "zidship.zidship_reports_payments_analytics", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}
+{"key": "zidship.zidship_shipments_details", "enabled": true, "config": {}, "available_in": {"ar": "البداية", "en": "Starter", "package_key": "new_starter"}, "policies": true}

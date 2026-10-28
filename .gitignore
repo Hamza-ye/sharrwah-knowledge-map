@@ -1,0 +1,19 @@
+# Local only: the accounts' sign-in store, the capture browsers' profiles, installed packages
+.env
+/capture-profile*/
+node_modules/
+__pycache__/
+# The runner's note to its caller of the last step (the step's row is in actions.jsonl)
+/*/raw/runs/*/last.json
+# Files coding agents load as instructions are never held (docs/OPERATING.md)
+AGENTS.md
+agents.md
+CLAUDE.md
+CLAUDE.local.md
+GEMINI.md
+SKILL.md
+.cursorrules
+.windsurfrules
+.clinerules
+copilot-instructions.md
+.venv/

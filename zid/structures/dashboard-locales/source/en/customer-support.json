@@ -1,0 +1,29 @@
+{
+  "attachment": "Attachment",
+  "banner": "Customer complaints have been received for these orders. Please review and address them promptly.",
+  "columns": {
+    "additionalDetails": "Additional details",
+    "customerPhone": "Customer phone",
+    "orderId": "Order ID",
+    "reason": "Reason",
+    "type": "Type"
+  },
+  "emptyState": {
+    "description": "Tickets submitted by customers via the customer portal will appear here.",
+    "title": "No customer tickets"
+  },
+  "notifiedAt": "Notified at",
+  "status": {
+    "closed": "Closed",
+    "inProgress": "In progress",
+    "open": "Open",
+    "resolved": "Resolved"
+  },
+  "ticketInformation": "Ticket information",
+  "types": "Issue",
+  "types_cancel": "Cancel",
+  "types_edit_order": "Edit Order",
+  "types_issue": "Issue",
+  "types_return_exchange": "Return & Exchange",
+  "types_suggestion": "Suggestion"
+}

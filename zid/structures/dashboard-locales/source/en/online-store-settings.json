@@ -1,0 +1,57 @@
+{
+  "badges": {
+    "badgeText": "Badge text",
+    "description": "Description",
+    "pickup": {
+      "descriptionPlaceholder": "e.g. Local Pickup Only: Ready for pickup in as little as 2 hours.",
+      "subtitle": "Shown when a product is only available for pickup",
+      "title": "Pickup only"
+    },
+    "productDetailsView": "Product details view",
+    "productListView": "Product list view",
+    "quickDelivery": {
+      "descriptionPlaceholder": "e.g. Quick delivery: Delivered within 2 hours.",
+      "subtitle": "Show on PLP's and PDP's when quick delivery is available",
+      "title": "Quick delivery"
+    },
+    "textTooLong": "Badge text is too long. Please use a shorter label.",
+    "updateSuccess": "Badges settings saved successfully"
+  },
+  "location": {
+    "accuracy": {
+      "city": {
+        "description": "The customer selects the shipping city they are in",
+        "title": "City selection"
+      },
+      "coordinates": {
+        "description": "The customer selects the shipping location with high precision on the map",
+        "title": "GPS coordinates"
+      },
+      "title": "How to determine the customer's location"
+    },
+    "selection": {
+      "subtitle": "Control how customer location is collected on the storefront for accurate quick delivery eligibility",
+      "title": "Customer location selection"
+    },
+    "updateSuccess": "Location settings saved successfully",
+    "whenToRequire": {
+      "automatic": "Automatically based on customer location",
+      "label": "When to require",
+      "requiredOnAddToCart": "When adding a product to cart",
+      "requiredOnStoreVisit": "When visiting the store"
+    }
+  },
+  "quickCommerce": {
+    "badgeCard": {
+      "description": "Enable quick delivery and pickup-only badges and customize the text shown on your storefront.",
+      "manage": "Manage",
+      "title": "Badge"
+    },
+    "locationCard": {
+      "description": "Control how customer location is collected on the storefront for quick delivery eligibility.",
+      "manage": "Manage",
+      "title": "Location"
+    },
+    "title": "Quick commerce"
+  }
+}

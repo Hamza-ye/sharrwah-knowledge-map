@@ -1,0 +1,39 @@
+{
+  "activateAutoApprove": "تفعيل الموافقة والنشر التلقائي لمراجعات العملاء",
+  "activateAutoApproveDescription": "حدد الحد الأدنى للتقييم المطلوب لنشر المراجعة تلقائيًا دون موافقة.",
+  "customerReviewsAutoApproveSettings": "مراجعات العملاء، الموافقة والنشر التلقائي",
+  "duration": "المدة",
+  "editPeriod": "السماح للعميل بتعديل تقييمه",
+  "editPeriodDescription": "المدة المسموح فيها للعميل بتعديل تقييمه بعد نشره",
+  "merchant": {
+    "activate": "إرسال إشعار إلى بريدي الإلكتروني عند وصول تقييم جديد من عميل"
+  },
+  "minimumRating": "الحد الأدنى للتقييم",
+  "notification": {
+    "emailAddress": "عنوان رسالة البريد الإلكتروني",
+    "emailAddressPlaceholder": "عنوان البريد الإلكتروني",
+    "emailAddressPlaceholder_ar": "عنوان البريد الإلكتروني",
+    "emailAddressPlaceholder_en": "Email title",
+    "emailText": "نص رسالة البريد الإلكتروني",
+    "emailTextPlaceholder": "نص البريد الإلكتروني",
+    "emailTextPlaceholder_ar": "نص البريد الإلكتروني",
+    "emailTextPlaceholder_en": "Email content"
+  },
+  "notifyCustomersBy": "وسيلة إشعار العملاء",
+  "notifyCustomersByDescription": "إدارة الإشعارات التلقائية المتعلقة بالمراجعات المرسلة منك وتحريرها.",
+  "scheduledHours": "حدد بعد كم ساعة من اكتمال الطلب يتلقى العملاء طلب المراجعة عن طريق {{channel}}.",
+  "smsMessage": "الرسالة",
+  "smsMessagePlaceholder": "نص الرسالة",
+  "smsMessagePlaceholder_ar": "نص الرسالة",
+  "smsMessagePlaceholder_en": "Enter SMS message",
+  "star1": "نجمة واحدة",
+  "star2": "نجمتان",
+  "star3": "٣ نجوم",
+  "star4": "٤ نجوم",
+  "star5": "٥ نجوم",
+  "status": "حُدّثت إشعارات تقييم المنتجات",
+  "suggestedValues": "القيم المقترحة",
+  "whatsappPlaceholder_ar": "شكرًا {{customer_name}} لاختيارك منتجاتنا 🌟 يهمّنا تقييمك لمنتجاتنا ويسعدنا نسمع رأيك عن تجربتك معنا. تقدر تشاركنا التقييم من خلال الرابط التالي: {{order_url}} رأيك يفرق معنا ويساعدنا نطوّر خدماتنا باستمرار.",
+  "whatsappPlaceholder_en": "Thank you {{customer_name}} for choosing our products 🌟 We truly value your review of our products and would love to hear about your experience with us. You can share your feedback through the link below: {{order_url}} Your feedback helps us improve and serve you better.",
+  "whatsappText": "نص رسالة واتساب"
+}

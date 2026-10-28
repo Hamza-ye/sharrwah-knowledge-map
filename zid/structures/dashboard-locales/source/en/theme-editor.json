@@ -1,0 +1,156 @@
+{
+  "addItem": "Add item",
+  "addNewSection": "Add new section",
+  "addSection": "Add section",
+  "aiDailyLimitReached": "You've reached today's limit of AI-generated sections. You can create more tomorrow — or keep refining the sections you already have.",
+  "aiDescribeComponent": "Describe what you want to build",
+  "aiExamples": {
+    "aboutUs": {
+      "label": "About us",
+      "prompt": "Create an about-us section with an image on one side and a heading, a short paragraph and a button on the other. Let me edit the heading, the text, the button label and link, the image, and pick which side the image sits on."
+    },
+    "collectionCarousel": {
+      "label": "Collection carousel",
+      "prompt": "Build a horizontally scrolling product carousel titled 'New arrivals' that pulls its products from a category I choose. Each card shows the product image, name, price and an add-to-cart button, with arrows on both sides and 4 cards visible on desktop, 1.5 on mobile."
+    },
+    "promotionalBanner": {
+      "label": "Promotional banner",
+      "prompt": "Create a full-width promotional banner with a background image and a dark overlay, a headline, a short line of text, a discount code and a live countdown timer to a date I set. Let me edit the text, the code, the end date and the overlay strength."
+    },
+    "testimonials": {
+      "label": "Testimonials",
+      "prompt": "Create a customer testimonials section: a heading and a 3-column grid of quote cards, each with a star rating, the quote, the customer name and a photo. Make the reviews a repeatable list I can add to, and stack them into one column on mobile."
+    }
+  },
+  "aiGenerated": "AI Generated",
+  "aiGenerating": "Generating...",
+  "aiGeneratingPreview": "Generating engaging content based on your idea ...",
+  "aiGenerationFailed": "Oops, something went wrong. Your section could not be fully generated.",
+  "aiGeneratorTitle": "AI generator",
+  "aiGreeting": "Hi, I'm your AI assistant, let's build something amazing together 💜\nI can create a wide range of sections, just tell me what you need. The more details you share about your vision, the better I can tailor it to you.",
+  "aiHistoryEmpty": "No chats yet",
+  "aiHistoryToday": "Today",
+  "aiHistoryYesterday": "Yesterday",
+  "aiKeepEditingHint": "You can close this panel and keep customizing your store. The section is added as soon as it's ready.",
+  "aiLearnAboutFeature": "Learn about the AI feature",
+  "aiNeedHelp": "Need help?",
+  "aiNewChat": "New chat",
+  "aiPromoSubtitle": "Try a new way of creating sections",
+  "aiPromoTitle": "Zid AI tool",
+  "aiQuotaRemaining": "{{remaining}} of {{limit}} AI sections left today",
+  "aiSectionReady": "{{name}} is ready.",
+  "aiStartNewChat": "Start new chat",
+  "aiUntitledChat": "Untitled chat",
+  "aiWhatToImprove": "Want to improve something? Just share",
+  "aiWorkingOnImprovements": "Working on improvements...",
+  "aiWorkingOnIt": "Working to bring your idea to life ...",
+  "allChangesApplyAcrossAllThemePages": "All changes apply across all theme pages.",
+  "applyPresetDialog": {
+    "description": "Are you sure you want to apply this pre-set to the theme? This action will clear the current customization and it's irreversible.",
+    "title": "Apply changes to current theme?"
+  },
+  "categoryImage": "Category image (optional)",
+  "categoryName": "Category name",
+  "copyToLanguageDialog": {
+    "description": "Are you sure you want to copy <b>{{sectionName}}</b> to the {{language}} language?",
+    "title": "Copy section to"
+  },
+  "createNewCategory": "Create new category",
+  "createNewCategoryInfo": "This category is only used for organization and won’t appear in the storefront.",
+  "draft": "Draft",
+  "editItem": "Edit item",
+  "history": {
+    "currentVersion": "Current version",
+    "history": "History",
+    "noVersions": "No previous versions",
+    "published": "Published",
+    "restore": "Restore",
+    "restoreDialog": {
+      "description": "Are you sure you want to restore the version <b>{{date}}</b>?",
+      "title": "Restore version?"
+    },
+    "undoAllChanges": "Undo all changes",
+    "unpublishedChangesDetected": "Unpublished changes detected",
+    "versionHistory": "Version history",
+    "versionRestored": "Version restored successfully"
+  },
+  "legalPage": "Legal page",
+  "legalPages": {
+    "complaintsAndSuggestions": "Complaints & suggestions",
+    "license": "License",
+    "privacyPolicy": "Privacy policy",
+    "refundExchangePolicy": "Refund and exchange policy",
+    "shippingAndPayment": "Shipping & payments",
+    "termsAndConditions": "Terms & conditions"
+  },
+  "linkOptions": {
+    "blog": "Blog",
+    "category": "Category",
+    "customPage": "Custom page",
+    "faq": "Faqs",
+    "legalPage": "Legal page",
+    "other": "Other",
+    "product": "Product"
+  },
+  "mainSections": {
+    "footer": "Footer",
+    "header": "Header",
+    "pageContent": "Page content"
+  },
+  "marketProfile": {
+    "primary": "Primary"
+  },
+  "options": {
+    "copyToLanguage": "Copy section to {{language}} language",
+    "delete": "Delete",
+    "duplicate": "Duplicate",
+    "hide": "Hide",
+    "rename": "Rename",
+    "show": "Show"
+  },
+  "pageSections": "{{page}} sections",
+  "pageSettings": "Page settings",
+  "pages": {
+    "home": "Home page"
+  },
+  "presetAppliedSuccessfully": "Preset applied successfully",
+  "presets": "Presets",
+  "presetsPreviewInfo": "If you’ve previously customized sections, they’ll be replaced with the new layout’s structure.  Your content will be auto-filled where possible.",
+  "previewPresets": "Preview presets",
+  "productLandingPages": {
+    "empty": "No product landing pages yet",
+    "loadError": "Unable to load product landing pages",
+    "title": "Product landing pages"
+  },
+  "productsOptions": {
+    "products": "Select products",
+    "productsCategory": "Category products",
+    "recentProducts": "Recent products",
+    "saleProducts": "On sale products"
+  },
+  "publish": "Publish",
+  "published": "Published",
+  "searchBySectionName": "Search by section name",
+  "sectionAddedSuccessfully": "Section added successfully",
+  "sectionsCount_few": "{{count}} sections",
+  "sectionsCount_many": "{{count}} sections",
+  "sectionsCount_one": "One section",
+  "sectionsCount_other": "{{count}} sections",
+  "sectionsCount_two": "{{count}} sections",
+  "sectionsCount_zero": "No sections",
+  "selectBlog": "Select Blog",
+  "selectCategory": "Select category",
+  "selectCategoryProducts": "Select category products",
+  "selectImage": "Select image",
+  "selectPage": "Select page",
+  "selectProduct": "Select product",
+  "selectVideo": "Select video",
+  "switchLayoutsInOneClick": "Switch layouts in one click.",
+  "toggleView": {
+    "showPreview": "Show preview",
+    "showSections": "Show sections"
+  },
+  "uploadImage": "Upload image",
+  "uploadVideo": "Upload video",
+  "viewSection": "View section"
+}

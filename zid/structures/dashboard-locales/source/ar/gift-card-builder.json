@@ -1,0 +1,49 @@
+{
+  "appearance": {
+    "font": "الخط",
+    "textColor": "لون النص"
+  },
+  "background": {
+    "color": "لون",
+    "containersBackgroundColor": "لون خلفية الحاويات",
+    "image": "صورة",
+    "selectImage": "اختيار صورة",
+    "selectedCardBackground": "خلفية البطاقة المحددة:"
+  },
+  "fields": {
+    "alignment": "المحاذاة",
+    "message": "الرسالة",
+    "qrCode": "رمز QR",
+    "recipientName": "اسم المستلم",
+    "required": "حقل إلزامي",
+    "senderName": "اسم المرسل",
+    "storeLogo": "شعار المتجر",
+    "title": "اختر الحقول الظاهرة"
+  },
+  "padding": {
+    "bottom": "أسفل",
+    "left": "يسار",
+    "right": "يمين",
+    "title": "التباعد الداخلي للبطاقة",
+    "top": "أعلى"
+  },
+  "preview": {
+    "characterCount_few": "الحد الأقصى لعدد الأحرف: {{count}}",
+    "characterCount_many": "الحد الأقصى لعدد الأحرف: {{count}}",
+    "characterCount_one": "الحد الأقصى لعدد الأحرف: {{count}}",
+    "characterCount_other": "الحد الأقصى لعدد الأحرف: {{count}}",
+    "characterCount_two": "الحد الأقصى لعدد الأحرف: {{count}}",
+    "characterCount_zero": "الحد الأقصى لعدد الأحرف: {{count}}",
+    "from": "من:",
+    "qrHint": "امسح رمز QR للحصول على رسالة مخصصة.",
+    "storeName": "اسم المتجر",
+    "to": "إلى:"
+  },
+  "size": {
+    "large": "كبير (A4)",
+    "medium": "متوسط (A5)",
+    "small": "صغير (A6)",
+    "title": "اختر حجم البطاقة:"
+  },
+  "title": "منشئ بطاقة الإهداء"
+}

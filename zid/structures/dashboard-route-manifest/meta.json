@@ -1,0 +1,58 @@
+{
+  "structure": "zid/dashboard-route-manifest",
+  "platform": "zid",
+  "surface": "merchant dashboard (dashboard.zid.sa)",
+  "source": {
+    "run_id": "20261028T143118Z-dashboard-code",
+    "warc": "zid/raw/runs/20261028T143118Z-dashboard-code/fetch.warc.gz",
+    "uri": "https://dashboard.zid.sa/assets/manifest-48694231.js",
+    "record_id": "<urn:uuid:7ea6b2c0-5739-4c2e-a6e1-b2ecb7e781c2>",
+    "date": "2026-10-28T14:31:23Z",
+    "status": "200",
+    "content_type": "application/javascript",
+    "bytes": 630678,
+    "sha256": "c1bd7559abe98c96c405d7626a7645fb1a7767b3550e778dd3ed24b07d1ab7f2"
+  },
+  "named_by": {
+    "warc": "zid/raw/runs/20261028T143118Z-dashboard-code/fetch.warc.gz",
+    "uri": "https://dashboard.zid.sa/en-sa/demo",
+    "record_id": "<urn:uuid:417d43d0-afb5-47c6-8edf-c14086b6a687>",
+    "date": "2026-10-28T14:31:23Z",
+    "status": "200",
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 9968,
+    "sha256": "5ff42e1ac7b3b7c3deb155562538e47b2c3dda72e79329a510e07c97005e28e6"
+  },
+  "shape_observed": "one JavaScript statement, window.__reactRouterManifest = a JSON object with keys entry, routes, url, version; routes is an object keyed by route id, each route an object with id, parentId, path, index, hasAction, hasLoader, hasClientAction, hasClientLoader, hasClientMiddleware, hasDefaultExport, hasErrorBoundary, module, imports, css (React Router manifest)",
+  "manifest_top": {
+    "url": "/assets/manifest-48694231.js",
+    "version": "48694231"
+  },
+  "counts": {
+    "routes": 437,
+    "keys": {
+      "id": 437,
+      "path": 433,
+      "hasAction": 437,
+      "hasLoader": 437,
+      "hasClientAction": 437,
+      "hasClientLoader": 437,
+      "hasClientMiddleware": 437,
+      "hasDefaultExport": 437,
+      "hasErrorBoundary": 437,
+      "module": 437,
+      "imports": 437,
+      "css": 437,
+      "parentId": 436,
+      "index": 436
+    },
+    "hasClientLoader": 113,
+    "hasLoader": 0,
+    "hasAction": 0
+  },
+  "items": "items.jsonl: the routes object's values in its order, each as stated",
+  "extractor": {
+    "path": "capture/structure_zid_dashboard_manifest.py",
+    "sha256": "18afce27484bbec768266493e200dc1ef1740503c3b81adb78e0a82f51f0ebfa"
+  }
+}

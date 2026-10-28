@@ -1,0 +1,212 @@
+{
+  "activation": {
+    "acceptEradOffer": "Accept Erad offer",
+    "address": "Address",
+    "agreeToTerms": "Agree to all terms and conditions",
+    "alraedahAcceptedStatusTitle": "Dear merchant, we congratulate you on qualifying for one of the following financing plans",
+    "amount": "Amount",
+    "annualProfitMargin": "Annual profit margin",
+    "appropriatePaymentPeriod": "Appropriate payment period",
+    "articlesOfIncorporation": "A copy of the articles of incorporation",
+    "articlesOfIncorporationHelper": "Articles of incorporation mandatory for companies",
+    "attachAdditionalFiles": "Attach additional files",
+    "back": "Back",
+    "bankCertificateArabic": "Bank certificate (name of the beneficiary in Arabic)",
+    "bankCertificateEnglish": "Bank certificate (name of the beneficiary in English)",
+    "bankInformation": "Bank information",
+    "bankStatement": "Bank statement for the last 12 months",
+    "bankStatementAlertHelper": "Please attach the account statement from the approved bank account to reveive Zid Payments payouts: (IBAN: {{iban}} )",
+    "businessInformation": "Business information",
+    "cancel": "Cancel application",
+    "cancelApplicationDescription": "In order to ensure that your business grows, we offer you an initial financing offer of one of the following amounts through our partner (Erad) based on the sales of your store over the past 6 months.",
+    "cancelApplicationEradQuestion": "When you click on complete the financing application from (Erad), the financing request from (Al-Raedah) will be automatically canceled",
+    "cancelApplicationTitle": "Dear merchant, we are sorry that you wish to cancel your financing request from (Al-Raedah)",
+    "cancelFinanceApplication": "Cancel financing application",
+    "cancelReasons": {
+      "higherAmount": "A higher financing amount is needed",
+      "noNeed": "No need for financing at present",
+      "other": "Otherwise",
+      "otherReasons": "Please provide us with the reason",
+      "profitIncrease": "Increase in profits",
+      "shortPeriod": "Short repayment period",
+      "title": "We're sorry to hear you want to cancel your financing request. Please let us know your reason."
+    },
+    "cancelSuccess": "The financing request has been canceled successfully",
+    "commercialRegistrationHelperOne": "Copy of the main Commercial Registration",
+    "commercialRegistrationHelperTwo": "Commercial Registration must be valid for at least 3 months",
+    "commercialRegistrationLabel": "Copy of the subsidiary Commercial Registration",
+    "commercialRegistrationNumber": "Commercial Registration number",
+    "continueFinanceApplication": "Continue with financing application",
+    "continueWithErad": "Continue with Erad",
+    "contractAlertStepOne": "1 - Review the contract and signature before completing the signature",
+    "contractAlertStepThree": "2-The amount will be deposited in your account ({{IBAN}}) within a maximum period of two working days from signing the contract and delivering the requirements. ",
+    "contractAlertStepTwo": "1 - Submitting printed and signed documents to the financing company at its headquarters (financing request, merchant data form). To find out the company's headquarters, click here",
+    "contractAlertTitle": "Dear merchant, you've reached the final step for your financing. To deposit the amount, please follow these steps:",
+    "contractSigningGuide": "Contract signing guide",
+    "copySubsidiaryCommercialRegistration": "Copy of the subsidiary Commercial Registration",
+    "currencies": {
+      "sar": "SAR"
+    },
+    "debtorSponsor": "Information of the debtor sponsor (if any)",
+    "downloadPDFFile": "Download the PDF file",
+    "downloadPDFFileAlert": "Dear merchant, your store performance data (Zid orders for 12 months) will be shared with the financing company for evaluation.",
+    "downloadPriceOffer": "Download the price offer",
+    "email": "Store owner email",
+    "eradCommercialRegister": "Please attach the Commercial Registration approved by Zid Payments",
+    "eradContractAlertStepOne": "1. Review the contract before completing the signature.",
+    "eradContractAlertTitle": "Dear merchant, we congratulate you on reaching the final stage of financing requirements. To deposit the amount into your bank account, please follow these steps:",
+    "eradOffer": "Erad offer",
+    "eradStepFourAlert": "Dear merchant, your store sales within 6 months qualifies you for one of the following financing plans",
+    "financialStorePerformance": "Financial store performance",
+    "financingContract": "Financing contract",
+    "financingRequestIneligible": {
+      "description": "You can follow Zid Finance updates and apply for finance again through Zid finance homepage",
+      "title": "Dear merchant, We are sorry your store is not eligible for financing because:"
+    },
+    "financingRequestStatus": "Financing request status",
+    "fundingAmount": "Funding amount",
+    "fundingAmountRequired": "Funding amount required",
+    "fundingDuration": "Funding duration",
+    "ibanText": "Please attach the account statement of the approved bank account for collecting Zid Payments deposits: (IBAN: {{ iban }} )",
+    "idNumber": "The store owner's national identity number",
+    "initialKycSubmittedSuccessfully": "Initial KYC submitted successfully",
+    "linkMarketingChannels": "Link your store's marketing channels",
+    "meetingHelperText": "In the case of a remote meeting, a printed and signed copy of the contract must be sent to the financing company's headquarters",
+    "meetingTypeInPerson": "In-person meeting",
+    "meetingTypeRemote": "Attend meeting at the headquarters of Al-Raedah",
+    "merchantDataForm": "Merchant data form",
+    "merchantDataFormHelperText": "Question to download the merchant data form to be signed, click here download the merchant data form",
+    "merchantDataFormHelperTextThree": "Please upload the file signed and certified by the Chamber of Commerce.",
+    "merchantDataFormHelperTextTwo": "Please upload the file signed and certified by the Chamber of Commerce.",
+    "mobileNumber": "Mobile Number on Absher ",
+    "months": "Months",
+    "nationalAddressCertificate": "Copy of the national address certificate",
+    "nationalIdentity": "A copy of the national identity of the store owner",
+    "nationalIdentityHelper": "Please attach a copy of the owner's ID of the authorized account in Zid Payments",
+    "next": "Next",
+    "offerPrice": "Offer price",
+    "otherRequirements": "Other requirements",
+    "ownerNationalIds": "Owner's national IDs",
+    "paymentProofToGAZT": "Proof of payment of tax bills for the last quarter",
+    "paymentProofToGAZTHelper": "Please attach invoices in PDF format and contain a QR code",
+    "percentageOfDeductionFromOperations": "Percentage of deductions from operations",
+    "periodInMonths": "Period in months",
+    "personalInformation": "Personal information",
+    "reasonForRequestingFinancing": "Please let us know your reason for requesting financing",
+    "requiredDocuments": "Required documents",
+    "reservationConfirmation": "Reservation confirmation",
+    "selectMeetingType": "Select meeting type",
+    "semhaIndorsement": "Simah endorsement",
+    "semhaIndorsementDownload": "To download the Simah endorsement for signing, click here",
+    "shareFinancingOffer": "Dear merchant, please choose the appropriate financing plan",
+    "shareFundingAlertDescription": "Please download the following files and re-upload them after signing them, and please keep the hard copy (signed and sealed) to be sent to the financing company upon signing the contract.",
+    "signedContractCopy": "Signed contract copy",
+    "stepFiveAmountAlert": "Please enter the required amount and choose the appropriate repayment period to complete the initial financing requirements",
+    "stepFiveMerchantAlert": "Dear merchant, your store sales within 12 months qualifies you for one of the following financing plans",
+    "storeMarketingPerformance": "Store marketing performance",
+    "storeName": "Store name",
+    "storeOwnerName": "Store owner name",
+    "submit": "Submit finance application",
+    "successAlertDescription": "We are currently reviewing the requirements to complete the application procedures and move to the next step (sharing your financing offer). you will be contacted by phone through the financing partner (alraedah) to follow up on the application",
+    "successAlertTitle": "Dear merchant, the financing request has been received successfully",
+    "taxCertificate": "A copy of tax certificate",
+    "tip": "In the case of a remote meeting, a printed and signed copy of the contract must be sent to the financing company's headquarters"
+  },
+  "alRaedah": "Alraedah",
+  "alerts": {
+    "annualSales": {
+      "alRaedah": "Zid Financing requires your store sales to exceed 40,000 SAR in the past 3 months",
+      "title": "Dear merchant, sorry your store is not eligible for financing"
+    },
+    "establishment": {
+      "info": "Zid Financing requires a minimum of 3 months of business operation",
+      "title": "Sorry, your store is not eligible for financing"
+    },
+    "notActivedZidpay": {
+      "info": "Zid Payments must be activated to apply for financing",
+      "link": "(click here to activate Zid Payments)",
+      "title": "Sorry, your store is not eligible for financing"
+    },
+    "notInSaudiNotification": {
+      "active-notification-link": " Notify me ",
+      "info-1": "If you are a Saudi merchant, please update your",
+      "info-2": "If you are not a Saudi merchant, you can submit ",
+      "info-3": " when the service is available in my country",
+      "store-link": " store information ",
+      "title": "This service is available for companies or corporates in Saudi Arabia only."
+    },
+    "notVerifiedZidpay": {
+      "info": "You can check your Zid Payments account status",
+      "link": "here",
+      "title": "Dear merchant, you can complete the financing application after your Zid Payments account is approved"
+    },
+    "storePerformance": {
+      "info": "To review the file before sending it to the financing company, you can download it",
+      "title": "Dear merchant, your store performance data (Zid orders for 12 months) will be shared with the financing company for evaluation."
+    },
+    "subscription": {
+      "info": "Sorry, your store is not eligible for financing",
+      "link": "(click here to renew your store subscription)",
+      "title": "Zid Financing requires your store subscription to be valid for at least 3 months"
+    }
+  },
+  "announcementModal": {
+    "submit": "Activate notifications",
+    "title": "Activate notifications when Zid financing is available in your country"
+  },
+  "erad": "Erad",
+  "info": {
+    "bankAccount": "Bank account",
+    "dateOfDepositingTheFinancingAmount": "The date of depositing the financing amount",
+    "defaultAmount": "Default amount",
+    "financingContract": "Financing contract",
+    "fundingAmount": "Funding amount",
+    "month": "Month",
+    "months": "Months",
+    "paidOff": "Paid off",
+    "remainingAmount": "Remaining amount",
+    "termOfFinancingRepayment": "Term of financing repayment",
+    "title": "Finance payment details"
+  },
+  "landing": {
+    "banner": {
+      "description": "Zid Financing is an integrated solution to grow your online store through a smooth activation journey with a flexible and automated payment plan",
+      "fifthCheckMark": "Manage everything from your store's control panel",
+      "firstCheckMark": "Submitting initial requirements.",
+      "fourthCheckMark": "5-36 months flexible payment plans",
+      "secondCheckMark": "Up to 10m SAR financing",
+      "thirdCheckMark": "10-25% annual profit margin",
+      "title": "Welcome to Zid Financing"
+    },
+    "getStarted": "Get started",
+    "growth": {
+      "description": "The financing installment is paid directly by deducting a fixed percentage of electronic payments through Zid Payments",
+      "firstFeature": "The financing payment is deducted from the electronic payment transactions made through Zid Payments, and does not include other payment methods (bank transfer, cash on delivery, installments)",
+      "secondFeature": "A minimum monthly amount of financing repayment is determined, and in the event that the limit is not achieved at the end of the month, it is paid by bank transfer",
+      "title": "Zid helps finance your growth"
+    },
+    "milestoneTracker": {
+      "fifthStep": "Deposit the financing amount",
+      "firstStep": "Submitting initial requirements.",
+      "fourthStep": "Sign the contract, and review it with the finance team.",
+      "secondStep": "Share the funding offer, and review the requirements by the funding team.",
+      "sixthStep": "Keep your business growing",
+      "thirdStep": "Submit final requirements, and reviewed by the finance team.",
+      "title": "Journey to apply and get funding"
+    },
+    "requirements": {
+      "firstFeature": "Activate Zid Payments as a payment gateway and approve the account",
+      "secondFeature": "The period of operation of the commercial activity shall not be less than 6 months",
+      "thirdFeature": "The validity period of the commercial registration shall not be less than 3 months",
+      "title": "Requirements to apply for funding"
+    }
+  },
+  "months": "Months",
+  "resubmission": {
+    "alert": {
+      "description": "Please update the following data and re-submit the application to complete the procedures for obtaining financing",
+      "title": "Dear merchant, the financing request could not be completed due to these reasons:"
+    },
+    "submit-btn": "Continue Finance Application"
+  }
+}

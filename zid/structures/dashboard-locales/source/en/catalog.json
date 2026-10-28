@@ -1,0 +1,73 @@
+{
+  "faqNoResultsState": {
+    "button": "Add FAQ",
+    "description": "By including an FAQ page on your website, you're showing your customers that you value their time and are ready to help.",
+    "title": "Enhance the customer experience, and boost SEO"
+  },
+  "filters": {
+    "emptyState": {
+      "description": "Start creating filters to helo your customers find products more efficiently.",
+      "title": "No added filters yet"
+    },
+    "form": {
+      "filtrationName": "Filter name",
+      "filtrationType": "Filtration type",
+      "filtrationValues": "Filter values",
+      "imageUploadTip": "Recommended: PNG image, 64x64 pixels",
+      "name": "Filter name",
+      "selectColor": "Select Color",
+      "typeColor": "Color",
+      "typeImage": "Image",
+      "typeNone": "None",
+      "value": "Option value name"
+    },
+    "noResults": {
+      "clearSearch": "Clear search",
+      "createFilter": "Create filter",
+      "description": "No filters matched. Reset the search or create a filter from scratch.",
+      "title": "No results found"
+    },
+    "presetCount": "Preset count",
+    "showFiltersInStore": {
+      "description": "Allow customers to see and use product filters when browsing your store",
+      "title": "Show filters in store"
+    },
+    "visibility": {
+      "disabled": "Filters are now hidden from your store",
+      "enabled": "Filters are now visible in your store"
+    }
+  },
+  "options": {
+    "description": "The product options library helps you create and select options and reuse them across products",
+    "emptyState": {
+      "button": "Create a new product option",
+      "description": "Create variants for your products to cover all variables. All from one place.",
+      "title": "Add product options like size, color, or material"
+    },
+    "name": "Option name",
+    "noResults": {
+      "clearFilters": "Clear all filters",
+      "createOptions": "Create options",
+      "description": "No matches found. Reset the filters or create a option from scratch.",
+      "title": "No results found"
+    },
+    "optionValues": "Option values",
+    "presetsCount": "Presets count",
+    "value": "Option value"
+  },
+  "optionsForm": {
+    "addNewValue": "Add new option value",
+    "color": "Color",
+    "imageUploadTip": "Recommended: PNG image, 64x64 pixels",
+    "optionImage": "Option image",
+    "optionType": "Option type",
+    "typeColor": "Color",
+    "typeImage": "Image",
+    "typeText": "Text",
+    "valueName": "Option value"
+  },
+  "stockChanges": {
+    "noHistory": "No stock history found for this inventory",
+    "selectInventoryWarning": "Select an inventory to view stock history"
+  }
+}

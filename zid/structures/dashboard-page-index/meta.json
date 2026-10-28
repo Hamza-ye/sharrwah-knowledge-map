@@ -1,0 +1,27 @@
+{
+  "structure": "zid/dashboard-page-index",
+  "platform": "zid",
+  "surface": "merchant dashboard (dashboard.zid.sa)",
+  "source": {
+    "run_id": "20261028T143118Z-dashboard-code",
+    "warc": "zid/raw/runs/20261028T143118Z-dashboard-code/fetch.warc.gz",
+    "uri": "https://dashboard.zid.sa/assets/chat-poll-line-BEQmkJuU.js",
+    "record_id": "<urn:uuid:0f0e1487-80ab-47ac-af9b-19ca7eab2774>",
+    "date": "2026-10-28T14:32:15Z",
+    "status": "200",
+    "content_type": "application/javascript",
+    "bytes": 36136,
+    "sha256": "b950901de2c3c8b5289a2d11d60ec8065a761b581f50f16fcd2526b70332b3ea"
+  },
+  "shape_observed": "object literals {pageKey, path, title: t(<namespace>:<key>), sidebar?} in arrays, some inside conditional spreads, in a minified module",
+  "counts": {
+    "pages": 119,
+    "with_title_en": 119,
+    "with_title_ar": 119
+  },
+  "items": "items.jsonl: pageKey, path, title as written; title_en and title_ar joined from zid/structures/dashboard-locales on the exact <namespace>:<key>",
+  "extractor": {
+    "path": "capture/structure_zid_dashboard_page_index.py",
+    "sha256": "d969312acb3f9484000fdae9f45ce4cd5f8d84ce25f232f0e19d1ecbb2dfc67f"
+  }
+}

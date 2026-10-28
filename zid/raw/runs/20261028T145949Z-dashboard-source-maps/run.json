@@ -1,0 +1,7 @@
+{
+  "run_id": "20261028T145949Z-dashboard-source-maps", "platform": "zid", "label": "dashboard-source-maps", "kind": "fetch", "started": "2026-10-28T14:59:51Z", "ended": "2026-10-28T14:59:56Z",
+  "tool": "GNU Wget 1.21.4 built on linux-gnu.", "user_agent": "Mozilla/5.0 (X11; Linux x86_64) other-product-class-capture/0.1 (read-only evidence capture)", "wait_seconds": 0.5,
+  "url_count": 2, "urls_sha256": "238ad3193f25dc283b835683b398dc838dd640a1348b94530d5e92cd80d088bf",
+  "wget_exit": 0, "network": {"via": "curl dashboard.zid.sa/cdn-cgi/trace", "ip": "46.161.254.x", "loc": "YE", "colo": "MCT", "http": "http/2"},
+  "script": {"path": "capture/fetch.sh", "sha256": "efb183c1509dd5b1889a3492fbb9c898e6a6660a0df17603cce7e02b6ccef785"}
+}

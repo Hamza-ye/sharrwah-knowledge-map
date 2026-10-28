@@ -1,0 +1,118 @@
+{
+  "balances": {
+    "currentOnlineStorePaymentBalance": "رصيد المدفوعات الحالي للمتجر الإلكتروني",
+    "currentOnlineStorePaymentBalanceTooltip": "سيتم تحويل المبالغ المحصّلة من عملائك إلى حسابك البنكي قريبًا.",
+    "currentWalletBalance": "رصيد المحفظة الحالي",
+    "title": "الأرصدة"
+  },
+  "billing": {
+    "addOns": "الإضافات",
+    "affiliateBanner": {
+      "action": "التسجيل الآن",
+      "subtitle": "أخبر التجار عن زد واحصل على مكافأة مع كل اشتراك جديد في باقات زد",
+      "title": "اكسب عمولة 30%"
+    },
+    "affiliateDialog": {
+      "answer": "برنامج هدفه إيصال منصة زد لكل تاجر يحتاج التحول للتجارة الحديثة. وجنوده هم أنتم. وجهودكم يمكن تتبعها ومكافأتك عليها بعمولتك المستحقة.",
+      "answer_1": "برنامج هدفه إيصال منصة زد لكل تاجر يحتاج التحول للتجارة الحديثة. وجنوده هم أنتم. وجهودكم يمكن تتبعها ومكافأتك عليها بعمولتك المستحقة.",
+      "answer_2": "لك 30% من كل اشتراك يجي عن طريقك، وإذا استُخدمت العروض الموسمية تصير عمولتك 15%",
+      "answer_3": "سجّل برابط الانضمام واملأ المعلومات اللازمة، وسيصلك بعدها مباشرة رابطك وكودك للتسويق بالعمولة",
+      "answer_4": "شرطنا الوحيد رغبتك في الانضمام للبرنامج!",
+      "answer_5": "الانضمام مجاني تمامًا، وبتكسب معه عمولة ودورات تسويق متخصصة",
+      "answer_6": "كل مسوّق ينضم للبرنامج له رابط خاص وكود خاص. عند استخدام عميلك الرابط أو الكود للتسجيل والاشتراك في منصة زد، تُرصد العملية وتُسند لحسابك.",
+      "answer_7": "نحوّل لك العمولات كل شهر إلى حسابك البنكي مباشرةً",
+      "answer_8": "فريقنا موجود لإجابة كل سؤال يجي على بالك، حتى لو كان كم بيض الحمام؟",
+      "answer_9": "لكل مسوق إمكانية الخصم على سعر الباقة، تواصل معنا للحصول على الخصم.",
+      "commonQuestions": "الأسئلة الشائعة",
+      "question": "ما هو برنامج التسويق بالعمولة في زد؟",
+      "question_1": "ما هو برنامج التسويق بالعمولة في زد؟",
+      "question_2": "ما هي العمولة المستحقة لي؟",
+      "question_3": "كيف أصبح مسوقًا بالعمولة؟",
+      "question_4": "هل توجد شروط للانضمام؟",
+      "question_5": "هل توجد تكاليف للانضمام إلى البرنامج؟",
+      "question_6": "كيف أعرف مبيعاتي؟",
+      "question_7": "كم مرة تُدفع العمولات؟",
+      "question_8": "هل يُقدَّم دعم للمسوقين؟",
+      "question_9": "هل يوجد كود خصم للمسوق؟"
+    },
+    "browseAddOns": "تصفح الإضافات",
+    "cardNumber": "{{value}} ****",
+    "currentPackage": "الباقة الحالية",
+    "description": "عزّز مبيعاتك مع الإضافات المصممة خصيصًا لك.",
+    "downgradeContinue": "فهمت",
+    "downgradeDialog": {
+      "description": "فريقنا في خدمتك. تواصل معنا لإدارة اشتراكك أو تعديله",
+      "title": "أنت على وشك تغيير باقتك"
+    },
+    "downgradeInformation": "ستنتقل من باقة {{currentPackage}} إلى باقة {{selectedPackage}}. لاحظ أن التغيير سيلغي وصولك إلى الخصائص التالية.",
+    "expiryDate": "تاريخ الانتهاء",
+    "manage": "إدارة",
+    "manageSubscription": "يمكنك إدارة اشتراكك الحالي في تطبيق زد أو في حساب \"{{manager}}\"",
+    "nextPayment": "الدفعة القادمة",
+    "optimizeYourPlan": "حسّن باقتك",
+    "packageName": "اسم الباقة",
+    "purchasePayment": {
+      "deleteSubscriptionConfirmation": "هل أنت متأكد من حذف هذا الاشتراك؟",
+      "expired": "منتهية",
+      "nextRenewalDate": "تاريخ التجديد القادم"
+    },
+    "savedCards": "البطاقات المحفوظة",
+    "title": "إضافات تُساعد على زيادة الإيرادات",
+    "transactionHistory": "سجل العمليات"
+  },
+  "billingTransactions": "فواتير عملياتك",
+  "columns": {
+    "approvedDate": "تاريخ الموافقة",
+    "balance": "الرصيد",
+    "createdAt": "تاريخ الإنشاء",
+    "deservedAmount": "المبلغ المستحق",
+    "feeValue": "قيمة الرسوم",
+    "installmentPercentage": "نسبة التقسيط",
+    "installmentValue": "قيمة القسط",
+    "invoiceNo": "رقم الفاتورة",
+    "operationType": "نوع العملية",
+    "operationValue": "قيمة العملية",
+    "orderNumber": "رقم الطلب",
+    "paymentNetwork": "شبكة الدفع",
+    "paymentStatus": "حالة الدفع",
+    "price": "السعر",
+    "processFee": "رسوم المعالجة",
+    "recurringPaymentFees": "قيمة رسوم تطبيق اشترك",
+    "recurringPaymentFeesPct": "رسوم تطبيق اشترك",
+    "service": "الخدمة",
+    "transactionReference": "الرقم المرجعي للمعاملة",
+    "valueAddedTax": "ضريبة القيمة المضافة"
+  },
+  "credits": {
+    "dateOfDepositingTheFinancingAmount": "تاريخ إيداع مبلغ التمويل",
+    "defaultAmount": "المبلغ الافتراضي",
+    "detailsTitle": "تفاصيل التمويل",
+    "downloadFinancingContract": "تحميل عقد التمويل",
+    "financingAgreement": "اتفاقية التمويل",
+    "fundingAmount": "مبلغ التمويل",
+    "itHasBeenPaid": "سُدِّد",
+    "overviewTitle": "نظرة عامة على سداد التمويل",
+    "pageIsNotAvailable": {
+      "activateFinancing": "تفعيل التمويل",
+      "description": "يجب الحصول على التمويل أولًا قبل الوصول إلى هذه الصفحة.",
+      "title": "يلزم تفعيل التمويل."
+    },
+    "theBankAccount": "الحساب البنكي",
+    "theRemainingAmount": "المبلغ المتبقي",
+    "theRemainingPeriod": "المدة المتبقية"
+  },
+  "downloadInvoice": "تحميل الفاتورة",
+  "invoiceNotReady": {
+    "description": "قد تستغرق العملية حتى 15 يومًا.",
+    "title": "تُعالَج فاتورتك الآن في نظام الفوترة (منصة فاتورة)."
+  },
+  "tabs": {
+    "all": "الكل",
+    "approved": "موافق عليه",
+    "pending": "قيد الانتظار",
+    "rejected": "مرفوض"
+  },
+  "topup": "إضافة رصيد للمحفظة",
+  "viewStoreBalance": "عرض رصيد المتجر",
+  "viewWalletBalance": "عرض رصيد المحفظة"
+}

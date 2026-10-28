@@ -1,0 +1,1178 @@
+{
+  "abandonedCarts": {
+    "actualCustomerName": "اسم العميل كما هو مُسجَّل",
+    "addNewCoupon": "إنشاء كود خصم جديد",
+    "addOffer": "إنشاء عرض ترويجي",
+    "automaticDescription": "تُرسل الرسائل تلقائيًا إلى العملاء عند تحقق الشروط التي حددتها.",
+    "automaticMessage": "تنبيه تلقائي",
+    "bulk": {
+      "changeStatus": "تعطيل/تفعيل",
+      "confirmDelete": "ستُحذف الرسائل {{messagesTitles}}، هل أنت متأكد؟"
+    },
+    "cartPhaseLabel": "المرحلة الحالية للسلة المتروكة",
+    "cartReminderTitle": "عنوان رسالة التنبيه للسلة المتروكة",
+    "cartReminderTitleDescription": "هذا العنوان للاستخدام الداخلي فقط ولن يظهر للعملاء.",
+    "cartReminderTitleLabel": "عنوان الرسالة المحفوظة",
+    "cartReminderTitlePlaceholder": "تنبيه تسجيل الدخول",
+    "cartTotalLabel": "إجمالي السلة يتجاوز",
+    "columns": {
+      "alertType": "نوع التنبيه",
+      "messageStatus": "حالة الرسالة",
+      "messageTitle": "عنوان الرسالة",
+      "messageType": "نوع الرسالة"
+    },
+    "currentBalance": "الرصيد المتبقي",
+    "daysPeriod": "أيام",
+    "discountCoupon": "كود خصم",
+    "email": "البريد الإلكتروني",
+    "emailTitleHelperText": "سيظهر هذا العنوان فقط في رسائل البريد الإلكتروني",
+    "emptyState": {
+      "action": "إنشاء تنبيه",
+      "description": "ابقَ متقدمًا بإعداد التنبيهات الآن.",
+      "title": "لا توجد تنبيهات متاحة حاليًا"
+    },
+    "filters": {
+      "creationDate": "حسب تاريخ الإنشاء",
+      "dateAttribute": "نوع التاريخ",
+      "dateEnd": "حسب تاريخ الانتهاء",
+      "reminderSelection": "اختيار التنبيهات",
+      "whatsappMessageStatus": "حالة رسالة الواتسآب"
+    },
+    "fixedNamePlaceholder": "مثال: عزيزي محمود",
+    "freeShipping": "شحن مجاني",
+    "hoursPeriod": "ساعات",
+    "increaseTheBalance": "إضافة رصيد تنبيهات",
+    "isOneTypeActive": "يجب تفعيل الرسائل النصية أو البريد الإلكتروني أو الواتس آب.",
+    "manuallyDescription": "احفظ التنبيهات وأرسِلها يدويًا للعملاء من قائمة تنبيهات سلة الشراء المتروكة.",
+    "manuallyMessage": "تنبيه يدوي",
+    "messageAdded": {
+      "description": "أُضيف التنبيه وهو قيد المراجعة. تستغرق الموافقة عادةً ~٥ دقائق. إذا رُفض، تحقق من بريدك الإلكتروني المرتبط بحساب فيسبوك للحصول على التفاصيل.",
+      "title": "أُضيف التنبيه"
+    },
+    "messageText": "نص الرسالة",
+    "messageTextValue": "",
+    "messageTextValue_ar": "عزيزنا {{customer_name}} 👋  لاحظنا إنك تركت بعض المنتجات الرهيبة في سلتك 🛒🔥  حبّينا نذكّرك إنها تحتريك بفارغ الصبر 😍⏳",
+    "messageTextValue_en": "Dear {{customer_name}} 👋 We noticed you left some goodies behind in your cart 🛒🔥 We just wanted to remind you that they’re still waiting patiently for you 😍⏳",
+    "messageTitlePlaceholder": "",
+    "messageTitlePlaceholder_ar": "لا تخليه يروح عليك! كمل شرائك الآن.",
+    "messageTitlePlaceholder_en": "Don't let them get away! Complete your purchase today.",
+    "otherLabel": "أخرى",
+    "otherName": "اسم العميل",
+    "phase": {
+      "login": "تسجيل الدخول",
+      "new": "إضافة منتج",
+      "paymentMethod": "اختيار طريقة الدفع",
+      "shippingAddress": "اختيار عنوان التوصيل",
+      "shippingMethod": "اختيار طريقة الشحن",
+      "verification": "تأكيد الطلب"
+    },
+    "receiverName": "اسم المستلم",
+    "seePricingAndInfo": "تخصيص اسم المرسل",
+    "selectDiscountCoupon": "اختر كود خصم",
+    "selectPeriodType": "اختر نوع الفترة",
+    "sendBy": "الإرسال عبر",
+    "sendTheReminderAt": "إعدادات التنبيه",
+    "senderName": "اسم المرسل",
+    "senderNameAlert": "لا يمكنك إنشاء تنبيهات السلة المتروكة بالرسائل النصية القصيرة دون شراء اسم المرسل.",
+    "senderNameAlertReview": "لا يمكنك إنشاء تنبيهات السلة المتروكة بالرسائل النصية القصيرة (SMS) لأن اسم المرسل قيد مراجعة فريق Zid. بعد الموافقة، ستتمكن من إنشاء تنبيهات SMS.",
+    "sendingMethod": "طريقة الإرسال",
+    "sendingTime": "وقت الإرسال",
+    "sendingTimeDescription": "يبدأ احتساب الوقت من لحظة خروج العميل من السلة دون إتمام الشراء",
+    "sms": "الرسائل النصية",
+    "suggestedValues": "القيم المقترحة",
+    "textMessages": "رسالة نصية (SMS)",
+    "whatsapp": "واتسآب",
+    "whatsappSenderName": "اسم المرسل للواتسآب",
+    "whatsappState": {
+      "action": "شاهد تفاصيل الواتسآب",
+      "description": "فعّل خاصية الواتسآب لتنبيه عملائك بعربات التسوق المهجورة وتعزيز مبيعاتك بنسبة تصل إلى 20%",
+      "title": "وسّع نطاق وصولك باستخدام تنبيهات الواتسآب"
+    },
+    "whatsappStatusAlert": {
+      "expired": "انتهت صلاحية اشتراكك. فعّل اشتراكك لمواصلة استخدام رسائل الحملات التسويقية.",
+      "notActive": "فعّل خاصية الواتسآب لتنبيه عملائك بعربات التسوق المهجورة وتعزيز مبيعاتك بنسبة تصل إلى 20%"
+    },
+    "withoutOffer": "بدون عرض"
+  },
+  "checkout": {
+    "customer": {
+      "clarification": "النص المساعد",
+      "clarificationHelperDescription": "أدخل النص المساعد الذي ترغب في عرضه داخل حقل «ملاحظة العميل»",
+      "noteHelperText": "سيظهر هذا النص عنوانًا لحقل «ملاحظة العميل»",
+      "noteTitle": "العنوان"
+    },
+    "customizeAddress": {
+      "basedOnCountry": {
+        "customization": "تخصيص",
+        "restOfTheWorld": "باقي دول العالم",
+        "subtitle": "إعداد طريقة الحصول على عناوين العملاء في صفحة إتمام عملية الشراء",
+        "title": "تخصيص العنوان حسب الدولة"
+      },
+      "form": {
+        "addNewCustomization": "إنشاء تخصيص جديد",
+        "additionalNumber": "الرقم الإضافي",
+        "buildingNumber": "رقم المبنى",
+        "district": "الحي",
+        "districtHelperText": "تحكم في إظهار حقل الحي وكونه مطلوبًا في عناوين العملاء",
+        "editCustomization": "تعديل التخصيص",
+        "recipientNationalId": "الهوية الوطنية للمستلم",
+        "recipientNationalIdHelperText": "يظهر هذا الحقل عند إتمام الشراء لعناوين الشحن. فعّل «إلزامي» ليتوجب على العميل إدخاله قبل إتمام الطلب.",
+        "street": "الشارع",
+        "zipCode": "الرمز الإضافي"
+      },
+      "location": {
+        "formStatus": "حُدّثت إعدادات تحديد موقع العميل في صفحة إتمام عملية الشراء.",
+        "googleMap": "اختر من خرائط Google",
+        "googleMapNote": "اسمح للعميل بالبحث عن العنوان باستخدام خرائط Google",
+        "mandatory": "إلزامي",
+        "spl": "تفعيل العنوان الوطني (SPL)",
+        "splNote": "العنوان الوطني مطلوب الآن لجميع الشحنات داخل المملكة. ألزِم العميل بإدخاله لتفادي تأخير الشحنات.",
+        "title": "تحديد الموقع"
+      },
+      "title": "تخصيص عنوان العميل"
+    },
+    "form": {
+      "activateOnePageCheckout": "تفعيل صفحة إتمام عملية الشراء من خطوة واحدة",
+      "activateOnePageCheckoutText": "يوفر الدفع من صفحة واحدة تجربة شراء أسرع، ويرفع احتمال إتمام الطلب.",
+      "applePay": "تفعيل الدفع السريع باستخدام Apple Pay.",
+      "applePayAlerts": "تفعيل إشعارات Apple Pay في جميع المتصفحات",
+      "applePayAlertsText": "عرض إشعار لتوجيه المستخدم إلى متصفح Safari عند اختيار الدفع باستخدام Apple Pay من متصفح آخر.",
+      "applePayText": "تفعيل الدفع السريع بزر واحد باستخدام Apple Pay من صفحة السلة أو المنتج",
+      "bankTransfer": "التحويل البنكي",
+      "buyAsGuest": "الشراء كزائر",
+      "buyAsGuestText": "تمكين العملاء من الشراء دون تسجيل دخول",
+      "buyNowPopup": "الدفع السريع بزر اشترِ الآن",
+      "buyNowPopupText": "فعّل الدفع في نافذة منبثقة لزر «اشترِ الآن» لتسهيل العملية وتشجيع الشراء السريع. وإذا عُطّل، يُحوَّل المستخدمون إلى صفحة الدفع الكاملة.",
+      "cashOnDelivery": "الدفع عند الاستلام",
+      "collapsedView": "عرض مدمج",
+      "collapsedViewText": "إتمام شراء سريع — يرى العميل خيارات الشحن والدفع التي اختارها سابقًا فقط، جاهزة للتأكيد.",
+      "couponForm": "إظهار حقل كوبون الخصم",
+      "couponFormText": "إظهار حقل إدخال كوبون الخصم في صفحة إتمام الطلب ليتمكن العملاء من استخدام كوبونات الخصم.",
+      "customerNoteExpanded": "إظهار حقل ملاحظة الطلب مفتوحًا افتراضيًا",
+      "customerNotes": "ملاحظات العميل",
+      "customerNotesText": "تمكين العملاء من إدخال ملاحظاتهم قبل إتمام الطلب",
+      "customization": "تخصيص",
+      "directGuestCheckout": "الانتقال المباشر للدفع كزائر",
+      "directGuestCheckoutText": "نقل الزائر إلى صفحة إتمام الطلب مباشرة دون عرض شاشة تسجيل الدخول",
+      "email": "تسجيل الدخول باستخدام البريد الإلكتروني",
+      "emailText": "تمكين العملاء من تسجيل الدخول بالبريد الإلكتروني",
+      "existingUserCheckout": "طريقة عرض خيارات الشحن والدفع",
+      "existingUserCheckoutText": "اختر طريقة عرض قائمة خيارات الشحن والدفع في صفحة الشراء",
+      "fullView": "عرض كامل",
+      "fullViewText": "إتمام شراء بخيارات متعددة — يرى العميل جميع خيارات الشحن والدفع المتاحة، مع تحديد ما اختاره سابقًا.",
+      "howItAppears": "طريقة ظهورها في المتجر",
+      "loginAsPopup": "تسجيل الدخول في نافذة منبثقة",
+      "loginAsPopupText": "تفعيل تسجيل الدخول في نافذة منبثقة لتجربة دفع سريعة وسلسة تحافظ على تفاعل العملاء وتقلل نسبة التخلي عن عملية الشراء.",
+      "mandatory": "إلزامية حقل البريد الإلكتروني",
+      "methodDeterminingCustomerAddress": "تحديد عنوان العميل",
+      "methodDeterminingCustomerAddressText": "اختر كيفية الحصول على عناوين العملاء في صفحة إتمام عملية الشراء بمتجرك",
+      "multipleDiscounts": "تفعيل استخدام عدة خصومات",
+      "multipleDiscountsText": "تتيح هذه الخاصية للعميل استخدام أكثر من خصم لكل سلة",
+      "onlinePayment": "الدفع الإلكتروني",
+      "senderEmail": "إرسال الفواتير بالبريد الإلكتروني",
+      "senderEmailDescription": "إرسال فواتير الطلبات إلى عملائك بالبريد الإلكتروني، ويظهر عنوان البريد المحدد عنوانًا للمرسل.",
+      "senderEmailDialogTitle": "البريد الإلكتروني للفواتير",
+      "senderEmailInputLabel": "البريد الإلكتروني",
+      "senderEmailPending": "في انتظار تفعيل",
+      "senderEmailRemoved": "أُزيل البريد الإلكتروني للفواتير.",
+      "senderEmailVerificationDescription": "سنرسل رابط توثيق إلى هذا العنوان، وستُرسل الفواتير منه بعد التوثيق.",
+      "senderEmailVerificationSent": "أُرسل رابط توثيق إلى البريد الإلكتروني للفواتير.",
+      "serviceFee": "ضمان زد",
+      "serviceFeeText": "اضمن متابعة أسرع مع العميل واهتمام استباقي لكل تحديثات شحنته وتطمينه أن حقّه محفوظ.",
+      "showCart": "عرض المنتجات المتاحة للاستلام في صفحة إتمام عملية الشراء",
+      "showCartText": "السماح للعملاء بمعرفة المنتجات المتاحة للاستلام أثناء الدفع",
+      "showCustomerType": "السماح للعملاء بتغيير نوع العميل إلى شركة",
+      "showCustomerTypeText": "السماح للعملاء بتغيير نوع العميل إلى شركة وإدخال اسم الشركة ورقم التسجيل الضريبي ورقم السجل التجاري مباشرةً من المتجر.",
+      "smsMessages": "تسجيل الدخول باستخدام رسائل SMS",
+      "smsMessagesText": "تمكين العملاء من تسجيل الدخول بالرسائل النصية (SMS)",
+      "smsMessagesTooltip": "تسجيل الدخول بالرسائل النصية (SMS) متاح فقط للعملاء في السعودية. فعّل تسجيل الدخول بواتساب للعملاء خارج السعودية.",
+      "status": "حُدّثت إعدادات صفحة الدفع.",
+      "subtitle": "خصص إعدادات صفحة إتمام عملية الشراء لتوفير تجربة شراء سلسة لعملائك",
+      "title": "إعدادات صفحة إتمام عملية الشراء",
+      "whatsapp": "تسجيل الدخول باستخدام واتساب",
+      "whatsappText": "تمكين العملاء من تسجيل الدخول بواتساب"
+    },
+    "makeMandatory": "اجعل الحقل إلزاميًا"
+  },
+  "communications": {
+    "abandonedCarts": {
+      "description": "إعداد تنبيهات تُرسل تلقائيًا للعملاء الذين يتركون منتجات في سلتهم دون إكمال الطلب، لتحفيزهم على العودة",
+      "label": "تنبيهات السلات المتروكة"
+    },
+    "orders": {
+      "description": "إدارة الرسائل التلقائية التي تُرسل للعملاء عند تغيير حالة الطلب (مثل: مُكتمل، جاري الشحن، تم التسليم)",
+      "label": "رسائل الطلبات"
+    },
+    "questions": {
+      "description": "اختر طريقة الإشعار بالأسئلة على المنتجات.",
+      "label": "أسئلة المنتجات"
+    },
+    "reviews": {
+      "description": "إعداد رسائل لتشجيع العملاء على تقييم المنتجات التي اشتروها.",
+      "label": "رسائل التقييمات"
+    }
+  },
+  "communicationsOrders": {
+    "charitableDonation": {
+      "charitableMessageText": "مرحبًا، أُنشئ تبرع لك لدى {{store_name}}. لاستعراض تفاصيل التبرع: {{order_url}}",
+      "description": "الرسائل التي ترسل للعميل عند إتمام التبرع",
+      "status_delivered": "رسالة التبرع للدفع بالتحويل البنكي",
+      "status_new": "رسالة التبرع",
+      "title": "رسائل التبرع"
+    },
+    "messageTextIn": "نص الرسالة",
+    "messageTextInPlaceholder": "أدخل نص الرسالة",
+    "statusForm": {
+      "description": "اختر حالات الطلب التي تُرسل عند حدوثها رسالة SMS تلقائيًا.",
+      "preview": "معاينة رسائل حالات الطلب",
+      "resetDefault": "إعادة تعيين الرسالة الافتراضية",
+      "success": "حُدّثت الحالات التي تُرسل عندها الرسائل.",
+      "title": "الحالات"
+    },
+    "statuses": "الحالات",
+    "statusesDescription": "اختر الحالات التي تُرسل عند تحققها رسالة الواتس آب",
+    "tabs": {
+      "textMessages": "الرسائل النصية",
+      "whatsappMessages": "رسائل الواتساب"
+    },
+    "warning": {
+      "description": "لضمان الالتزام بلوائح هيئة الاتصالات، لا تستخدم رسائل حالات الطلب لأغراض تسويقية ولا لترويج فعاليات ولا لتوزيع أكواد خصم؛ فقد يؤدي ذلك إلى إيقاف خدمة الرسائل",
+      "title": "تجنّب إرسال محتوى دعائي"
+    },
+    "whatsappStatusAlert": {
+      "expired": "فعّل اشتراكك لمواصلة استخدام إشعارات الطلبات.",
+      "notActive": "فعّل خاصية الواتسآب لإعلام العملاء بتغييرات حالة الطلب برسائل مخصصة - سريعة ومباشرة وموثوقة."
+    }
+  },
+  "communicationsQuestions": {
+    "changeEmail": "تغيير البريد الإلكتروني",
+    "changeRecipientEmailForNotifications": "تغيير بريد المستلم للإشعارات",
+    "createNewMember": "إضافة عضو جديد",
+    "customerNotifications": "إشعار العميل تلقائيًا",
+    "customerNotificationsTooltip": "إرسال إشعار تلقائي للعملاء بعد الرد على أسئلتهم",
+    "description": "إعداد إشعارات أسئلة المنتجات",
+    "member": "عضو",
+    "merchantNotifications": "إشعار التاجر تلقائيًا",
+    "merchantNotificationsTooltip": "إشعار التاجر تلقائيًا عند إرسال سؤال جديد",
+    "notificationsWillBeSentToTheFollowingEmail": "ستُرسل الإشعارات إلى البريد الإلكتروني التالي",
+    "previewEmail": {
+      "button": "مثال على كيفية ظهوره في متجرك",
+      "title": "معاينة بريد العميل"
+    },
+    "selectTeamMember": "اختر عضوًا من الفريق أو أضف عضوًا جديدًا ليصله الإشعار"
+  },
+  "communicationsSenderName": {
+    "info1": "يُشترط وجود سجل تجاري وختم باسم المنشأة.",
+    "info2": "يتطلب تفعيل الخدمة مراجعة فريق زد، وقد يتأخر بسبب التحقق التنظيمي لدى مزود الخدمة (Unifonic).",
+    "info3": "لا تشمل رسوم تغيير اسم المرسل إعادة شحن الرصيد، وتُحتسب منفصلةً.",
+    "info4": "اسم المرسل خدمة تُجدَّد سنويًا.",
+    "information": "معلومات عن الاسم المخصص للمرسل",
+    "pricing": "التسعير"
+  },
+  "customerWalletCurrencyWarning": "محفظة العملاء تعتمد على العملة الافتراضية الحالية ولا يمكن تغييرها، تواصل مع الدعم إذا كنت بحاجة لتحديثها.",
+  "directIntegration": {
+    "accessToken": "رمز الوصول",
+    "authorizedApplications": "لا يمكن إلا للتطبيقات المُصرّح بها من زد استخدام هذه المعلومات؛ ولأسباب أمنية، لا تشاركها مع جهة غير موثوقة",
+    "directLink": "خطوات تفعيل الرابط المباشر:",
+    "generateManagerToken": "إنشاء رمز المدير",
+    "generateNewCode": "سينشئ النظام رمزًا جديدًا في كل مرة تضغط فيها زر الإنشاء. احفظ الرمز في مكان آمن.",
+    "integrateWithServices": "اربط مع الخدمات الداعمة لزد باستخدام رمزك الخاص ومعرّف المتجر",
+    "integrationHeader": "يمكنك ربط الخدمات التي تدعم زد باستخدام رمزك الخاص ومعرّف المتجر. عند الربط، يُتحقَّق من هوية متجرك باستخدام مفتاح التاجر الخاص (رمز المدير) ومعرّف المتجر. يمكنك نسخ هذه البيانات من هذه الصفحة.",
+    "integrationHelpCenter": "رابط مركز المساعدة في زد",
+    "integrationInfo": "معلومات الربط المباشر",
+    "integrationNotes": "ملاحظات مهمة:"
+  },
+  "gifting": {
+    "activate": "تفعيل خيارات الإهداء",
+    "deactivateConfirmation": "هل أنت متأكد من رغبتك في إلغاء تفعيل خيار الإهداء في متجرك؟",
+    "deactivateTitle": "إلغاء تفعيل الإهداء",
+    "form": {
+      "addCustomDesignLabel": "إضافة تصميم بطاقة إهداء مخصص",
+      "addMediaLinkLabel": "إضافة رابط فيديو أو صوت",
+      "addMessageDescription": "السماح للعملاء بإضافة رسالة إهداء",
+      "addMessageLabel": "إضافة رسالة",
+      "addedSuccessfully": "اكتملت الإضافة",
+      "additionsTitle": "إضافات للهدايا",
+      "cardName": "اسم بطاقة الإهداء",
+      "completed": "مُكتمل",
+      "donationMessageDescription": "قوالب رسائل نصية مخصصة تُرسل إلى المُهدي والمُهدى إليه في طلبات إهداء التبرعات",
+      "donationMessageHelperText": "الأحرف المتبقية: {{remainingLength}} / {{limit}} - رصيد الرسائل: {{smsCampaignsBalance}}",
+      "donationMessagePlaceholder": "أدخل نص الرسالة هنا. يمكنك إضافة متغيرات من القائمة بالأسفل",
+      "donationMessagePreview": "معاينة الرسالة",
+      "donationMessagePreviewPlaceholder": "ستظهر معاينة الرسالة هنا",
+      "donationMessageTitle": "تخصيص رسائل إهداء التبرعات",
+      "donationReceiverMessageLabel": "رسالة المُهدى إليه",
+      "donationSenderMessageLabel": "رسالة المُهدي",
+      "donationVariablePreviews": {
+        "donationName": "الصدقة الجارية",
+        "giftCardLink": "رابط بطاقة الإهداء",
+        "receiverName": "عبد الله",
+        "senderName": "أحمد",
+        "storeName": "البر الخيرية"
+      },
+      "donationVariables": {
+        "donationName": "اسم الفرصة",
+        "giftCardLink": "رابط بطاقة الإهداء",
+        "receiverName": "اسم المُهدى إليه",
+        "senderName": "اسم المُهدي",
+        "storeName": "اسم الجمعية"
+      },
+      "donationVariablesLabel": "إضافة متغيرات للنص",
+      "maxLimit": "وصلت إلى الحد الأقصى لعدد البطاقات. احذف إحدى البطاقات لإضافة تصميم جديد",
+      "motivateGiftingDescription": "عرض خيار «أرسلها كهدية» للعميل بعد إضافة المنتج إلى السلة",
+      "motivateGiftingLabel": "تشجيع العملاء على الإهداء داخل المتجر",
+      "ready": "جاهز",
+      "statusCustomizationLabel": "تخصيص الحالة",
+      "statusMessageDescription": "رسالة مخصصة تُرسل إلى العميل عند تغيير حالة الطلب",
+      "statusMessageHelperText": "ستُرسل الرسالة إلى المُرسل",
+      "statusMessageLabel": "رسالة الحالة",
+      "statusMessageTitle": "تخصيص رسائل حالات الإهداء"
+    },
+    "landing": {
+      "activate": "تفعيل خيارات الإهداء",
+      "advantages": {
+        "customerBenefits": {
+          "description": "اطلب من المستلم إضافة عنوانه، وأرسل له وللمرسل تنبيهات تفصيلية عن حالة الهدية.",
+          "title": "عنوان المستلم وتنبيهات الهدية"
+        },
+        "fullControl": {
+          "description": "أنشئ قوالب رسائل جاهزة، وحوّل روابط الصور والمقاطع التي يضيفها العميل إلى رمز QR يظهر على البطاقة.",
+          "title": "رسائل جاهزة ومحتوى شخصي"
+        },
+        "giftAdditions": {
+          "description": "خصّص تصميم البطاقة وحقولها، واسمح للعميل بكتابة رسالته أو رفع تصميمه الخاص.",
+          "title": "إضافات هدايا لكل مناسبة"
+        },
+        "whatIsGifting": {
+          "description": "خصّص تصميم البطاقة وحقولها، واسمح للعميل بكتابة رسالته أو رفع تصميمه الخاص.",
+          "title": "بطاقة إهداء بهوية متجرك"
+        }
+      },
+      "advantagesTitle": "المزايا الأساسية",
+      "hero": {
+        "description": "امنح عملاءك طريقة سهلة لتخصيص هداياهم بالإضافات والرسائل والبطاقات المصممة حسب احتياجهم.",
+        "features": {
+          "cardCustomizations": "اسمح للعملاء بإضافة رسائلهم وتصاميمهم وصورهم ومقاطعهم",
+          "sendingOptions": "قدّم إضافات هدايا تناسب مختلف المناسبات",
+          "widgets": "خصّص بطاقات الإهداء بما يعكس هوية متجرك"
+        },
+        "title": "كل هدية بتفاصيل يختارها عميلك"
+      }
+    },
+    "settingsPage": {
+      "cardMessagesDescription": "خصّص تصميم رسالة الإهداء، وحدّد التفاصيل التي يمكن للعميل إضافتها عند إرسال الهدية.",
+      "cardMessagesTitle": "رسالة الإهداء",
+      "configurationDescription": "خصّص بطاقة الإهداء والإشعارات وخيارات استلام الهدية بما يناسب متجرك.",
+      "configurationTitle": "إعدادات الإهداء",
+      "createOptions": "إنشاء الخيارات",
+      "customDesignDescription": "اسمح للعملاء برفع تصميمهم الخاص لبطاقة الإهداء بدلًا من اختيار أحد تصاميم متجرك.",
+      "customDesignTitle": "رفع تصميم خاص للبطاقة",
+      "customize": "تخصيص",
+      "giftProducts": {
+        "addProduct": "إنشاء منتج",
+        "category": "التصنيف",
+        "categoryPlaceholder": "اختر التصنيف",
+        "createProduct": "إنشاء منتج إهداء",
+        "deleteBulkConfirmation": "هل أنت متأكد من حذف المنتجات المحددة؟",
+        "editProduct": "تعديل منتج الإهداء",
+        "limitedQuantity": "كمية محدودة",
+        "product": "المنتج",
+        "productImage": "صورة المنتج",
+        "productNamePlaceholder": "مبارك التخرج",
+        "productNamePlaceholder_ar": "مبارك التخرج",
+        "productNamePlaceholder_en": "Congrats on your graduation",
+        "publishHide": "نشر / إخفاء",
+        "requiresShipping": "المنتج يتطلب الشحن",
+        "salePrice": "سعر البيع",
+        "searchPlaceholder": "البحث بالاسم",
+        "unlimitedQuantity": "كمية محدودة"
+      },
+      "giftProductsDescription": "أضف منتجات يمكن للعملاء اختيارها مع الهدية، وحدّد أسعارها ومخزونها.",
+      "giftProductsEmptyDescription": "ستظهر هنا منتجات الإهداء المحددة.",
+      "giftProductsEmptyTitle": "لا توجد منتجات إهداء بعد",
+      "giftProductsTitle": "إضافات الهدايا",
+      "giftingCategories": {
+        "addCategory": "إضافة تصنيف",
+        "categoryName": "اسم التصنيف",
+        "categoryNamePlaceholder": "مثال: عيد ميلاد",
+        "createCategory": "إنشاء تصنيف",
+        "deleteCategory": "حذف التصنيف",
+        "editCategory": "تعديل التصنيف",
+        "showInGifting": "إظهار في الإهداء"
+      },
+      "giftingCategoriesDescription": "التصنيفات المستخدمة لتنظيم تجربة الإهداء",
+      "giftingCategoriesEmptyDescription": "ستظهر هنا التصنيفات المستخدمة في الإهداء.",
+      "giftingCategoriesEmptyTitle": "لا توجد تصنيفات إهداء بعد",
+      "giftingCategoriesTitle": "تصنيفات الإهداء",
+      "messageTemplateDescription": "اسمح للعملاء باختيار رسالة من قائمة رسائل جاهزة. ستحتاج إلى إنشاء الخيارات في «قوالب الرسائل»",
+      "messageTemplateTitle": "قوالب الرسائل المقترحة",
+      "messageTemplates": {
+        "addTemplate": "إضافة رسالة",
+        "createTemplate": "إنشاء قالب رسالة",
+        "deleteTemplate": "حذف قالب الرسالة",
+        "description": "رسائل جاهزة يمكن للعملاء اختيارها عند كتابة بطاقة الإهداء.",
+        "editTemplate": "تعديل قالب الرسالة",
+        "emptyDescription": "ستظهر هنا الرسائل التي تنشئها.",
+        "emptyTitle": "لا توجد قوالب رسائل بعد",
+        "messageAr": "الرسالة (العربية)",
+        "messageEn": "الرسالة (الإنجليزية)",
+        "templateMessage": "الرسالة",
+        "templateMessagePlaceholder": "مثال: أتمنى لك عيد ميلاد سعيد!",
+        "title": "قوالب الرسائل"
+      },
+      "notificationMessageWhenCompletedLabel": "الرسالة عند اكتمال الطلب",
+      "notificationMessageWhenReadyLabel": "الرسالة عندما يكون الطلب جاهزًا",
+      "notificationMessagesDescription": "نصوص مخصصة تُرسل عندما يصبح طلب الهدية جاهزًا أو مكتملًا.",
+      "notificationMessagesTitle": "رسائل الحالة",
+      "notificationsDescription": "حدّد محتوى الرسالة لتحديثات الطلب التي تُرسل إلى مرسل الهدية.",
+      "notificationsTitle": "إشعارات المرسل",
+      "recipientAddressCollectionDescription": "حدّد رسومًا إضافية لخدمة استلام العنوان من المستلم. ستُضاف هذه الرسوم إلى تكلفة التوصيل الأساسية.",
+      "recipientAddressCollectionSmsBalanceWarning": "تأكد من توفر رصيد كافٍ في رسائل الطلبات النصية لإرسال رابط إدخال العنوان إلى المستلم. لن تُرسل الرسالة إذا كان الرصيد غير كافٍ.",
+      "recipientAddressCollectionSurcharge": "رسوم استلام العنوان",
+      "recipientAddressCollectionSurchargeText": "أدخل 0 كي لا تُضاف رسوم إلى تكلفة التوصيل الأساسية.",
+      "recipientAddressCollectionTitle": "تخصيص رسوم استلام العنوان",
+      "recipientShippingAddressDescription": "اسمح للعميل بإتمام طلب الهدية دون إدخال عنوان الشحن، وسنطلبه مباشرةً من المستلم.",
+      "recipientShippingAddressTitle": "طلب عنوان الشحن من المستلم",
+      "recipientShippingAddressTooltip": "يتطلب إرسال طلب العنوان إلى المستلم توفر رصيد كافٍ في الرسائل النصية للطلبات.",
+      "tabs": {
+        "giftProducts": "إضافات الهدايا",
+        "giftingCategories": "تصنيفات الهدايا",
+        "globalSettings": "الإعدادات العامة",
+        "messageTemplates": "قوالب الرسائل"
+      }
+    },
+    "viewGiftCardTemplate": "عرض نموذج بطاقة الإهداء"
+  },
+  "groups": {
+    "emptyState": {
+      "createGroup": "إنشاء مجموعة",
+      "description": "خصص الصلاحيات بسهولة لأعضاء فريقك",
+      "title": "أنشئ مجموعتك الأولى"
+    }
+  },
+  "information": {
+    "about": {
+      "anotherOwner": "إضافة مالك آخر"
+    },
+    "business": {
+      "instructions": {
+        "autoLocation": "إدخال الموقع تلقائيًا باستخدام خرائط Google",
+        "selectTimezone": "اختيار المنطقة الزمنية لمتجرك يساعد على توحيد التواريخ والأوقات في الطلبات والتقارير وتصدير الملفات.",
+        "youCanEnterYourLocation": "يمكنك إدخال موقعك يدويًا أو باستخدام خرائط Google"
+      },
+      "labels": {
+        "additionalNumber": "الرقم الإضافي",
+        "buildingNumber": "رقم المبنى",
+        "nationalAddress": "مثال على ملف إثبات العنوان الوطني من سُبل SPL",
+        "showLocation": "عرض العنوان في واجهة المتجر",
+        "timeZone": "المنطقة الزمنية",
+        "walletWarning": "لنقل عنوان متجرك إلى بلد آخر، اسحب رصيد المحفظة الحالي أو استخدمه. بعد التغيير ستُعدَّل عملة متجرك تلقائيًا بناءً على البلد الجديد.",
+        "zipCode": "الرمز البريدي"
+      }
+    },
+    "main": {
+      "businessType": "نوع النشاط التجاري",
+      "isNotValidMessage": "رسالة غير صحيحة",
+      "storeInfo": "معلومات المتجر",
+      "tabs": {
+        "address": "العنوان التجاري",
+        "business": "تفاصيل النشاط التجاري",
+        "store": "معلومات المتجر"
+      }
+    },
+    "ownerMobileMatchAlert": {
+      "title": "رقم جوال التاجر مطابق لرقم تواصل المتجر"
+    },
+    "socialMediaAlert": {
+      "action": "الانتقال إلى صفحة هوية المتجر",
+      "description": "يمكنك إدارة وتحديث حسابات التواصل الاجتماعي من: القنوات \\ المتجر الإلكتروني \\ هوية المتجر",
+      "title": "نُقلت إدارة حسابات التواصل الاجتماعي"
+    },
+    "status": "حُفظت التعديلات",
+    "store": {
+      "helpers": {
+        "emailHelper": "يظهر هذا البريد الإلكتروني للعميل في واجهة المتجر",
+        "nameHelper": "يظهر هذا الاسم للعميل في واجهة المتجر",
+        "phoneHelper": "يظهر رقم الهاتف هذا للعميل في واجهة المتجر",
+        "toChangeDomainName": "لتغيير اسم النطاق"
+      },
+      "labels": {
+        "businessCenter": "منصة الاعمال",
+        "facebook": "فيسبوك",
+        "instagram": "انستغرام",
+        "snapchat": "سناب شات",
+        "storeName": "اسم المتجر",
+        "storeUrl": "رابط المتجر",
+        "tiktok": "تيك توك",
+        "twitter": "اكس",
+        "website": "الموقع الإلكتروني"
+      }
+    }
+  },
+  "invoice": {
+    "clientName": "اسم العميل",
+    "form": {
+      "barcode": "الباركود",
+      "disableInvoiceGenerationMessage": "عند التعطيل، سيتوقف زد عن إنشاء الفواتير ولن تتوفر خاصية الربط مع هيئة الزكاة. لا يزال بإمكانك إرسال ملخصات الطلبات للعملاء.",
+      "disableInvoiceGenerationTitle": "تعطيل إنشاء الفواتير؟",
+      "discountCouponCode": "كود خصم",
+      "emailDescription": "عند تعطيل الخيار، سيتوقف إرسال رسائل البريد الإلكتروني من نظام زد إلى بريدك",
+      "eta": "الوقت المتوقع لتوصيل الطلب",
+      "generateInvoices": "إنشاء الفواتير من زد",
+      "generateInvoicesDescription": "عند التعطيل، سيتوقف زد عن إنشاء الفواتير. لا يزال بإمكانك إرسال ملخصات الطلبات للعملاء.",
+      "invoiceCustomizationTitle": "نموذج الفاتورة وملخص الطلب",
+      "orderInvoice": "أرغب أن يرسل نظام زد فواتير الطلبات لعملائي",
+      "orderInvoiceDescription": "عند تعطيل الخيار، سيرسل نظام زد ملخص الطلب فقط إلى البريد الإلكتروني للعميل",
+      "orderStatus": "حالة الطلب",
+      "ownerEmail": "هل ترغب في تلقي رسائل بريد إلكتروني تحتوي على فواتير طلبات متجرك؟",
+      "paymentStatus": "عرض حالة الدفع في ملخص الطلب",
+      "productDescription": "وصف المنتج",
+      "productImages": "صور المنتج",
+      "productWeights": "أوزان المنتج",
+      "qrCode": "رمز QR",
+      "returnPolicy": "سياسة الاسترجاع",
+      "sku": "رمز المنتج (SKU)",
+      "status": "عُدّلت الفاتورة",
+      "storeAddress": "عنوان المتجر",
+      "taxIdNumber": "الرقم الضريبي"
+    },
+    "invoiceId": "رقم الفاتورة",
+    "orderNotes": "ملاحظات الطلب",
+    "simplifiedTaxInvoice": "فاتورة ضريبية مبسّطة"
+  },
+  "landingPage": {
+    "account": {
+      "description": "تخصيص إعدادات الحساب الشخصي مثل كلمة المرور ومعلومات التواصل",
+      "label": "إعدادات الحساب"
+    },
+    "checkout": {
+      "description": "ضبط خيارات العميل في صفحة إتمام عملية الشراء مثل الشراء كزائر أو الدفع بصفحة واحدة",
+      "label": "إعدادات صفحة إتمام عملية الشراء"
+    },
+    "constraints": {
+      "description": "تحديد القواعد أو القيود التي تؤثر على طرق الدفع وخيارات الشحن المتاحة في ظروف معينة",
+      "label": "قيود الشحن والدفع"
+    },
+    "directApiIntegration": {
+      "description": "إنشاء رمز المدير لربط زد بأنظمة أخرى وتحسين إدارة المتجر",
+      "label": "التكاملات مع واجهات البرمجة (API)"
+    },
+    "domains": {
+      "description": "إدارة عناوين الويب (النطاقات - Domains) التي تشير إلى متجرك الإلكتروني.",
+      "label": "رابط المتجر الالكتروني\r"
+    },
+    "exportRequests": {
+      "description": "عرض جميع طلبات تصدير الملفات، وإدارتها، وتنزيل الملفات المتاحة",
+      "label": "طلبات التصدير",
+      "securityBtn": "إعدادات الأمان"
+    },
+    "gifting": {
+      "description": "ضبط خصائص الإهداء للمنتجات مثل رسائل الإهداء وبطاقات الإهداء",
+      "label": "خيارات الإهداء"
+    },
+    "giftingSettings": {
+      "description": "إدارة تجربة الإهداء في متجرك: رسائل البطاقة، منتجات الإهداء وتصنيفات الإهداء.",
+      "label": "إعدادات الإهداء"
+    },
+    "hoursOfOperation": {
+      "description": "تحديد ساعات العمل التي يُعتبر فيها متجرك الإلكتروني مفتوحًا أو تكون فيها بعض الخدمات متاحة",
+      "label": "أوقات العمل الرسمية"
+    },
+    "information": {
+      "description": "إدارة تفاصيل نشاطك التجاري، وعنوانك، ومعلومات التواصل",
+      "label": "بيانات المتجر"
+    },
+    "invoice": {
+      "description": "تخصيص شكل الفواتير والبيانات الظاهرة فيها",
+      "label": "إعدادات الفواتير"
+    },
+    "languagesCurrencies": {
+      "description": "تخصيص اللغات والعملات المتاحة",
+      "label": "اللغات والعملات"
+    },
+    "legalPages": {
+      "description": "تعديل سياسات المتجر وتراخيصه",
+      "label": "الصفحات القانونية"
+    },
+    "markets": {
+      "description": "عيّن أسعارًا مختلفة للمنتجات لكل سوق.",
+      "label": "الأسواق"
+    },
+    "ordersProducts": {
+      "description": "تخصيص خصائص الطلبات والمنتجات",
+      "label": "خصائص الطلبات والمنتجات"
+    },
+    "security": {
+      "description": "إدارة التحقق بخطوتين (2FA)، وكلمات المرور لمرة واحدة (OTP)، وجلسات الدخول",
+      "label": "إعدادات الأمان"
+    },
+    "staffNotifications": {
+      "description": "إدارة إشعارات الفريق عند تغيير حالة الطلب",
+      "label": "إشعارات الفريق"
+    },
+    "tax": {
+      "description": "تخصيص نسبة ضريبة القيمة المضافة والضرائب الأخرى",
+      "label": "إعدادات الضرائب"
+    },
+    "team": {
+      "description": "تخصيص صلاحيات أعضاء الفريق",
+      "emptyState": {
+        "addTeamMember": "إضافة عضو فريق",
+        "description": "أضف أعضاء فريق للبدء في التعاون.",
+        "title": "لم يُضف أعضاء فريق"
+      },
+      "groups": {
+        "description": "تخصيص صلاحيات المجموعات",
+        "label": "مجموعات فريق العمل"
+      },
+      "label": "فريق العمل"
+    },
+    "urlRedirects": {
+      "description": "تحويل الزائر تلقائيًا من عنوان URL قديم إلى عنوان URL آخر جديد",
+      "label": "إعادة توجيه الروابط"
+    },
+    "zatca": {
+      "description": "اربط متجرك مع هيئة الزكاة والضريبة والجمارك (ZATCA) للامتثال السلس للفوترة الإلكترونية",
+      "label": "الربط مع منصة فاتورة (ZATCA)"
+    }
+  },
+  "languagesCurrencies": {
+    "currencies": {
+      "confirmation": {
+        "description": "عند تغيير العملة، ستُعطَّل العملات الأخرى وتُعيَّن {{name}} عملةً افتراضية للمتجر"
+      },
+      "defaultCurrency": "العملة الافتراضية",
+      "notifications": {
+        "defaultUpdated": "حُدّثت العملة الافتراضية",
+        "updated": "حُدّثت العملات المتاحة في المتجر"
+      },
+      "title": "العملات"
+    },
+    "description": "نُقلت إدارة العملات إلى صفحة <1>الأسواق</1>. يمكنك إدارة عملاتك بإضافة دول إلى الأسواق الحالية أو إنشاء أسواق جديدة. لمعرفة المزيد، زُر <2>مركز المساعدة</2>.",
+    "info": "ستُحوَّل المبيعات إلى العملة الجديدة حسب سعر الصرف الحالي، وقد يتغير إجمالي المبيعات تبعًا لذلك",
+    "languages": {
+      "confirmation": {
+        "description": "عند تغيير اللغة، ستصبح {{name}} اللغة الأساسية للمتجر"
+      },
+      "defaultLanguage": "اللغة الافتراضية",
+      "description": "اختر اللغات التي يمكن للعملاء استخدامها في متجرك",
+      "notifications": {
+        "updated": "حُدّثت اللغات المتاحة في المتجر"
+      },
+      "title": "اللغات",
+      "warning": "لا يمكن إيقاف اللغة الأساسية للمتجر"
+    },
+    "title": "نُقلت إدارة العملات"
+  },
+  "legalPages": {
+    "complaintsAndSuggestions": {
+      "checkboxLabel": "عرض رابط الشكاوى والاقتراحات في تذييل المتجر",
+      "warning": "المتاجر في السعودية تخضع لأنظمة خاصة؛ راجع الرابط التالي لمعرفة التفاصيل"
+    },
+    "content": "المحتوى",
+    "defaultHint": "عبّئ معلومات التواصل لمتجرك بعد إدراج النموذج وقبل النشر",
+    "example": "مثال",
+    "exampleDialogTitle": "معاينة الشكل الذي سيظهر به للعملاء",
+    "exchangeAndReturns": {
+      "checkboxLabel": "سيُعرض النص التالي في تذييل صفحة المتجر",
+      "warning": "للمتاجر السعودية: لمعرفة سياسات وزارة التجارة بخصوص الاستبدال والاسترجاع، راجع اللوائح الرسمية من الوزارة"
+    },
+    "extraPages": "صفحات إضافية",
+    "fromHere": "من هنا",
+    "licenses": {
+      "checkboxLabel": "عرض الرخصة في تذييل الموقع",
+      "warning": "للمتاجر السعودية، يمكنكم الحصول على مزيد من المعلومات عن تراخيص التجارة الإلكترونية التابعة للوزارة؛ اطّلعوا على قوانين الوزارة"
+    },
+    "pages": "الصفحات",
+    "privacyPolicy": {
+      "checkboxLabel": "عرض سياسة الخصوصية في صفحة التسجيل",
+      "dialogDescription": "تظهر عند إنشاء حساب في الموقع",
+      "warning": "للمتاجر السعودية، يمكنكم الحصول على مزيد من المعلومات عن سياسة خصوصية التجارة الإلكترونية التابعة للوزارة؛ اطّلعوا على قوانين الوزارة."
+    },
+    "returnPolicy": {
+      "cardTitle": "قواعد سياسة الاسترجاع",
+      "itHasToBeClear": "يجب أن تكون واضحة",
+      "itHasToBePutItAGoodPlace": "يجب وضعها في مكان بارز",
+      "warning": "ستظهر سياسة الاسترجاع التالية في صفحة إتمام عملية الشراء",
+      "youCanCheckoutSaudiConsumerRight": "يمكنك مراجعة حقوق المستهلك في السعودية"
+    },
+    "savedSuccessfully": "حُفظت التغييرات",
+    "setDefault": "إدراج نموذج",
+    "termsAndConditions": {
+      "checkboxLabel": "عرض الشروط والأحكام في صفحة إتمام عملية الشراء",
+      "dialogDescription": "ستظهر في صفحة إتمام عملية الشراء كما هو موضح أدناه",
+      "warning": "للمتاجر السعودية: لمزيد من المعلومات عن شروط التجارة الإلكترونية وأحكامها، راجع تنظيمات وزارة التجارة"
+    },
+    "title": "اسم الصفحة",
+    "youHaveToEnable": "يجب تفعيل هذا الخيار"
+  },
+  "markets": {
+    "assignTheme": {
+      "active": "نشط",
+      "assign": "تعيين الثيم",
+      "browseAllThemes": "تصفح جميع الثيمات",
+      "button": "تعيين ثيم",
+      "customTheme": "ثيم مخصص",
+      "default": "افتراضي",
+      "description": "اختر ثيمًا لتعيينه لهذا السوق. سيرى عملاء هذا السوق الثيم المحدد عند زيارة متجرك.",
+      "error": "تعذّر تعيين الثيم. حاول مرة أخرى.",
+      "noThemesFound": "لم نعثر على ثيمات",
+      "searchPlaceholder": "البحث باسم الثيم",
+      "success": "عُيّن الثيم",
+      "tabs": {
+        "customThemes": "الثيمات المخصصة",
+        "themeLibrary": "مكتبة الثيمات"
+      },
+      "themeName": "اسم الثيم",
+      "title": "تعيين ثيم لـ {{market}}"
+    },
+    "currencyChangeNotice": {
+      "action": "إدارة المنتجات",
+      "description": "إذا غيّرت العملة، تبقى قيم الأسعار كما هي ويتغيّر رمز العملة فقط. راجع أسعار منتجاتك وعدّلها عند الحاجة.",
+      "title": "أسعار المنتجات والعملة"
+    },
+    "customizeTheme": "تخصيص الثيم",
+    "hasCustomTheme": "ثيم مخصص",
+    "manage": "إدارة السوق",
+    "removeMarket": {
+      "button": "حذف السوق",
+      "confirm": "حذف",
+      "description": "سيُحذف هذا السوق نهائيًا. لا يمكن التراجع عن هذا الإجراء.",
+      "error": "تعذّر حذف السوق. حاول مرة أخرى.",
+      "success": "حُذف السوق",
+      "title": "حذف {{market}}"
+    },
+    "removeTheme": {
+      "button": "إعادة للافتراضي",
+      "confirm": "إعادة للافتراضي",
+      "description": "سيُزال الثيم المعيّن لهذا السوق، ويعود السوق إلى الثيم النشط لمتجرك.",
+      "error": "تعذّرت إعادة التعيين. حاول مرة أخرى.",
+      "success": "أُعيد الثيم إلى الافتراضي",
+      "title": "إعادة ثيم {{market}} للافتراضي"
+    },
+    "themeInfo": "افتراضيًا، تستخدم جميع الأسواق الثيم النشط لمتجرك. يمكنك تعيين ثيم مختلف لكل سوق للحصول على تجربة واجهة متجر محلية، أو تخصيص الثيم الافتراضي لكل سوق من قائمة المزيد.",
+    "usedTheme": "الثيم المستخدم",
+    "walletCurrencyNotice": "محفظة العملاء تعتمد على عملة هذا السوق. تواصل مع الدعم إذا كنت بحاجة لتغييرها."
+  },
+  "marketsCreate": {
+    "addProductsStep": {
+      "addProducts": "إضافة منتجات",
+      "emptyState": {
+        "description": "أضف منتجات لتتمكن من تخصيص الأسعار.",
+        "title": "لا توجد منتجات"
+      },
+      "hidden": "مخفي",
+      "priceNotSet": "السعر غير محدد",
+      "priceNotSetTooltip": "أُخفي هذا المنتج تلقائيًا لأن السعر غير محدد لهذا السوق. حدد سعر المنتج وسيظهر المنتج.",
+      "published": "منشور",
+      "status": "الحالة"
+    },
+    "changesPreparedForSaving": "جُهّزت التغييرات للحفظ.",
+    "confirmMarketCreation": {
+      "description": "فعّل «نشر السوق» لتنشيطه، أو أنشئه مسودةً لإكمال الإعداد لاحقًا.",
+      "publishMarket": "نشر السوق",
+      "title": "تأكيد إنشاء السوق"
+    },
+    "countryName": "اسم البلد",
+    "fields": {
+      "countries": {
+        "label": "الدول",
+        "placeholder": "اختر الدول"
+      },
+      "marketCurrency": {
+        "label": "عملة السوق",
+        "placeholder": "اختر عملة السوق"
+      },
+      "marketName": {
+        "label": "اسم السوق",
+        "placeholder": "مثال: دول مجلس التعاون الخليجي"
+      },
+      "marketServes": {
+        "label": "يخدم السوق"
+      },
+      "publishMarket": {
+        "label": "نشر السوق"
+      }
+    },
+    "priceSetupStep": {
+      "info": "تُنفَّذ هذه الخطوة عند إنشاء السوق فقط",
+      "options": {
+        "option1": "نسخ الأسعار من السوق الرئيسي «كما هي» مع استخدام عملة السوق الجديدة",
+        "option2": "تحويل الأسعار تلقائيًا باستخدام سعر الصرف الحالي بين عملة السوق الرئيسي وعملة السوق الجديدة",
+        "option3": "سأدخل السعر يدويًا"
+      },
+      "title": "طريقة إعداد الأسعار"
+    },
+    "selectCountries": "اختر البلدان",
+    "showMarket": "عرض السوق",
+    "steps": {
+      "stepFour": "إدارة الأسعار",
+      "stepOne": "تفاصيل السوق",
+      "stepThree": "إعداد الأسعار",
+      "stepTwo": "إضافة منتجات"
+    },
+    "usedIn": "مستخدم في"
+  },
+  "notificationCenter": {
+    "info": "اختر إشعارات لوحة التحكم اللي تبي تستقبلها.",
+    "masterEnabled": "تفعيل الإشعارات",
+    "title": "تفضيلات الإشعارات",
+    "updated": "حُدّثت إعدادات الإشعارات"
+  },
+  "orderProducts": {
+    "autoCompletePaidOrders": "تغيير حالة الطلبات المدفوعة تلقائيًا إلى «مُكتمل»",
+    "autoCompletePaidOrdersHint": "عند تفعيل هذا الخيار، لا يمكن تعديل حالة الطلبات المدفوعة التي لا تحتاج إلى شحن.",
+    "autoReadyPaidOrders": "تغيير حالة الطلبات المدفوعة تلقائيًا إلى «جاهز»",
+    "enableLowStockAlert": "تفعيل إشعارات انخفاض المخزون",
+    "enableLowStockAlertHint": "إظهار علامة «مخزون منخفض» على المنتجات وإشعارك عندما تصل كميتها إلى الحد المحدد أعلى صفحة المنتجات",
+    "enableLowStockLabel": "عرض الكمية المتبقية من المنتج عند الوصول إلى حد المخزون الأدنى",
+    "enableManualPayment": "تفعيل الدفع اليدوي",
+    "enableManualPaymentHint": "تسجيل الطلبات اليدوية المدفوعة خارج زد دون التأثير على الحسابات المالية لمتجرك.",
+    "enableMaxOrder": "تفعيل حد أقصى للطلب",
+    "enableMinOrder": "تفعيل حد أدنى للطلب",
+    "enableRelatedProducts": "عرض المنتجات المشابهة في صفحة كل منتج",
+    "enableReorder": "تفعيل خاصية إعادة الطلب",
+    "enableSoldCount": "عرض عدد مرات شراء المنتج",
+    "enableWishlist": "تفعيل إضافة المنتجات إلى قائمة الأمنيات",
+    "extendedSearch": "عرض نتائج بحث مرنة وذكية للعملاء لسهولة الوصول للمنتجات",
+    "lowStockQuantityLimit": "تعيين حد أقصى للكمية حتى",
+    "lowStockThreshold": "حد انخفاض المخزون",
+    "lowStockThresholdHint": "إرسال تنبيه عندما تكون الكمية المتاحة مساوية أو أقل من هذا الحد",
+    "lowStockThresholdInvalid": "أدخل رقمًا صحيحًا أكبر من صفر",
+    "lowStockThresholdRequired": "أدخل حد انخفاض المخزون",
+    "maxOrder": "الحد الأقصى للطلب",
+    "minOrder": "الحد الأدنى للطلب",
+    "minSoldCount": "الحد الأدنى للشراء الذي ترغب بعرضه",
+    "ordersTitle": "خصائص الطلب",
+    "productsTitle": "خصائص المنتج",
+    "relatedProductsCount": "عدد المنتجات المشابهة التي ترغب بعرضها",
+    "restockCancelledOrders": "إعادة الكمية للمنتجات الملغاة تلقائيًا إلى المخزون",
+    "showConsigneeFeature": "عرض خيار استلام الشحنة من شخص آخر",
+    "showDonationFeature": "عرض خيار التبرع بالهدية",
+    "showOutOfStockLast": "عرض المنتجات غير المتوفرة في نهاية الصفحة",
+    "showQuickDonation": "تفعيل التبرع السريع"
+  },
+  "payments": {
+    "activateAlert": {
+      "button": "التحقق من الحقول المطلوبة",
+      "description": "عبّئ النموذج بمعلومات نشاطك التجاري وبياناتك الشخصية لتفعيل معالجة المدفوعات بأمان وامتثال",
+      "fields": {
+        "bankCertificateCopy": "نسخة من شهادة الحساب البنكي",
+        "businessAddress": "عنوان النشاط التجاري",
+        "civilId": "رقم الهوية (الوطنية أو المدنية)",
+        "civilIdCopy": "نسخة من الهوية (الوطنية أو المدنية)",
+        "commercialName": "الاسم التجاري",
+        "maroofOrFreelanceCopy": "نسخة من شهادة معروف أو وثيقة العمل الحر",
+        "nationalAddress": "العنوان الوطني",
+        "ownerMobile": "رقم جوال المالك",
+        "ownerName": "اسم مالك المتجر",
+        "storeCategory": "تصنيف المتجر",
+        "storeIndustry": "نوع النشاط التجاري"
+      },
+      "requiredFields": "الحقول المطلوبة",
+      "title": "لتفعيل مدفوعات زد، عبّئ الحقول التالية"
+    }
+  },
+  "priceManaging": {
+    "header": {
+      "description": "عيّن أسعارًا مختلفة للمنتجات لكل سوق، بما في ذلك تسعير المتاجر الخارجية",
+      "title": "سعر المنتج"
+    }
+  },
+  "priceUpdateRequiredError": {
+    "action": "صفحة المنتجات",
+    "description": "بعد تغيير العملة الأساسية، يجب عليك تحديث أسعار منتجاتك لتتوافق مع العملة الأساسية الجديدة",
+    "title": "تحديث الأسعار مطلوب!"
+  },
+  "security": {
+    "authenticator": {
+      "backupCodes": {
+        "description": "استخدم هذه الرموز لتسجيل الدخول إذا فقدت هاتفك. يعمل كل رمز مرة واحدة.",
+        "done": "حفظتها",
+        "download": "تنزيل",
+        "shownOnce": "احفظ هذه الرموز في مكان آمن الآن، فلن نعرضها مرة أخرى.",
+        "title": "رموزك الاحتياطية"
+      },
+      "backupCodesLeft_few": "تبقّت {{count}} رموز احتياطية",
+      "backupCodesLeft_many": "تبقّى {{count}} رمزًا احتياطيًا",
+      "backupCodesLeft_one": "تبقّى رمز احتياطي واحد",
+      "backupCodesLeft_other": "تبقّى {{count}} رمز احتياطي",
+      "backupCodesLeft_two": "تبقّى رمزان احتياطيان",
+      "backupCodesLeft_zero": "لا توجد رموز احتياطية متبقية",
+      "enabled": "تم تفعيل تطبيق المصادقة",
+      "enabledSince": "مفعّل منذ {{date}}",
+      "lowBackupCodes": "رموزك الاحتياطية أوشكت على النفاد. أنشئ رموزًا جديدة لتتمكن من تسجيل الدخول إذا فقدت هاتفك.",
+      "reauth": {
+        "codeDescription": "أدخل الرمز المكوّن من ٤ أرقام الذي أرسلناه إلى بريدك الإلكتروني.",
+        "codeLabel": "رمز التحقق",
+        "codeSent": "أرسلنا رمز التحقق إلى بريدك الإلكتروني",
+        "passwordDescription": "أدخل كلمة المرور لتأكيد هويتك.",
+        "submit": "تأكيد",
+        "title": "تأكيد هويتك",
+        "useCode": "أرسل لي رمزًا بالبريد الإلكتروني بدلًا من ذلك",
+        "usePassword": "استخدم كلمة المرور بدلًا من ذلك"
+      },
+      "regenerate": "إنشاء رموز احتياطية جديدة",
+      "remove": "إزالة تطبيق المصادقة",
+      "removeDescription": "لن يُطلب منك رمز من التطبيق عند تسجيل الدخول، وستتوقف رموزك الاحتياطية عن العمل.",
+      "removeTitle": "إزالة تطبيق المصادقة؟",
+      "removed": "تمت إزالة تطبيق المصادقة",
+      "replace": "الإعداد على هاتف جديد",
+      "setup": {
+        "codeHelper": "أدخل الرمز المكوّن من 6 أرقام من تطبيق المصادقة لتأكيد التفعيل.",
+        "codeLabel": "رمز التحقق",
+        "copy": "نسخ",
+        "description": "امسح رمز QR بتطبيق المصادقة، أو انسخ مفتاح الإعداد وأضفه يدويًا.",
+        "qrLabel": "رمز QR لتطبيق المصادقة",
+        "setupKey": "مفتاح الإعداد",
+        "title": "ربط تطبيق المصادقة",
+        "verify": "تحقق"
+      }
+    },
+    "exportedFilesDescription": "عند التفعيل، ستُؤمَّن جميع الملفات المصدّرة بكلمة مرور تُنشأ تلقائيًا وتُرسل إلى بريدك الإلكتروني المسجّل.",
+    "exportedFilesLabel": "حماية الملفات المصدّرة بكلمة مرور",
+    "highDescription": "سيُسجَّل خروج كل عضو غير نشط بعد ٣٠ دقيقة، ولن يتمكن من الدخول إلا من متصفح واحد",
+    "highLabel": "مرتفع",
+    "lowDescription": "سيُسجَّل خروج كل عضو غير نشط بعد ٧ أيام",
+    "lowLabel": "منخفض",
+    "moderateDescription": "سيُسجَّل خروج كل عضو غير نشط بعد ساعتين",
+    "moderateLabel": "متوسط",
+    "normalDescription": "سيُسجَّل خروج كل عضو غير نشط بعد ٢٤ ساعة",
+    "normalLabel": "عادي",
+    "passkeys": {
+      "add": "إضافة مفتاح مرور",
+      "createdAt": "أُضيف في {{date}}",
+      "deleteDescription": "لن تتمكن بعد الآن من تسجيل الدخول باستخدام \"{{name}}\". يمكنك دائمًا تسجيل الدخول برمز التحقق.",
+      "deleteTitle": "حذف مفتاح المرور؟",
+      "description": "سجّل دخولك ببصمة الإصبع أو الوجه أو قفل الشاشة بدلًا من رمز التحقق. مفاتيح المرور خاصة بحسابك فقط.",
+      "empty": "لم تقم بإضافة أي مفتاح مرور بعد.",
+      "lastUsedAt": "آخر استخدام {{date}}",
+      "loadError": "تعذّر تحميل مفاتيح المرور. يرجى المحاولة لاحقًا.",
+      "neverUsed": "لم يُستخدم بعد",
+      "title": "مفاتيح المرور والبصمة",
+      "unsupported": "هذا المتصفح أو الجهاز لا يدعم تسجيل الدخول بالبصمة، لذا لا يمكن إضافة مفتاح مرور من هنا."
+    },
+    "sessionManagement": "إدارة الجلسات",
+    "signoutAllDevices": "تسجيل الخروج من جميع الأجهزة",
+    "signoutAllDevicesWarn": "هل أنت متأكد من رغبتك في تسجيل الخروج من جميع الأجهزة؟ سيُسجَّل الخروج من جميع الأجهزة المرتبطة بحسابك، ومنها هذا الجهاز. ملاحظة: قد يؤثر هذا الإجراء في ربط Zapier وأي ربط آخر بـAPI",
+    "trustedDevices": {
+      "description": "اسمح للأجهزة الموثوقة بتخطي التحقق بخطوتين لمدة 30 يومًا.",
+      "forgetAll": "إزالة كل الأجهزة",
+      "forgotten": "تمت إزالة الأجهزة الموثوقة",
+      "remove": "إزالة",
+      "title": "الأجهزة الموثوقة",
+      "trustedSince": "موثوق منذ {{date}}",
+      "unknownDevice": "متصفح غير معروف"
+    },
+    "verification": {
+      "chooseMethod": "اختر طريقة التحقق المفضلة",
+      "ownerOnly": "يمكن لمالك المتجر فقط تغيير هذا الإعداد.",
+      "singleFactor": "التحقق بخطوة واحدة",
+      "title": "طريقة التحقق",
+      "turnOffConfirm": "إيقاف",
+      "turnOffDescription": "سيسجّل أعضاء الفريق الدخول بكلمة المرور فقط. من يستخدم تطبيق المصادقة سيعود إلى رموز البريد الإلكتروني أو الرسائل النصية، وسنرسل لهم بريدًا بذلك.",
+      "turnOffTitle": "إيقاف التحقق بخطوتين لكل الفريق؟",
+      "twoFactor": "التحقق بخطوتين (2FA)"
+    },
+    "viaAuthenticator": "عبر تطبيق المصادقة",
+    "viaEmail": "بالبريد الإلكتروني",
+    "viaSms": "بالرسائل النصية",
+    "viaWhatsapp": "بواتساب"
+  },
+  "staffNotifications": {
+    "addEmail": "إضافة بريد إلكتروني",
+    "form": {
+      "status": {
+        "canceled": "مُلغاة",
+        "delivered": "مُكتملة",
+        "inDelivery": "قيد التوصيل",
+        "new": "جديدة",
+        "preparing": "قيد التجهيز",
+        "ready": "جاهزة"
+      },
+      "title": "اختر حالات الطلبات التي ترغب في تفعيل الإشعارات لها"
+    },
+    "info": "أضف عناوين البريد الإلكتروني لفريقك وحدد حالات الطلبات التي ترغب في إرسال إشعارات لهم بشأنها",
+    "table": {
+      "title": "عناوين البريد الإلكتروني للفريق"
+    },
+    "updated": "حُدّثت إعدادات إشعارات الفريق",
+    "upgradeAlertText": "وصلت إلى الحد الأقصى من الإضافات في باقتك. لإضافة أعضاء دون حدود، رقِّ باقتك."
+  },
+  "tax": {
+    "acknowledgeVatGuide": "أُقر بأنني اطلعت على دليل ضريبة القيمة المضافة في الدول التي تُطبق فيها، والتزمت بالأنظمة المحددة",
+    "activateVatInStore": "تفعيل ضريبة القيمة المضافة في المتجر",
+    "addCountry": "إضافة دولة",
+    "applyVatOnShippingFees": "هل ترغب في تطبيق ضريبة القيمة المضافة على رسوم الشحن؟",
+    "arePricesInclusiveOfVat": "هل أسعار منتجاتك تشمل ضريبة القيمة المضافة؟",
+    "arePricesInclusiveOfVatDescription": "إذا اخترت هذا الخيار، فستكون مسؤولًا عن تضمين الضريبة في أسعار المنتجات",
+    "columns": {
+      "country": "الدولة",
+      "taxPercentage": "نسبة الضريبة",
+      "vatNumber": "الرقم الضريبي"
+    },
+    "createdSuccessfully": "أُنشئت إعدادات الضريبة",
+    "deletedSuccessfully": "حُذفت إعدادات الضريبة",
+    "displayProductPriceInclusiveOfVat": "هل ترغب في عرض أسعار المنتجات في متجرك شاملة ضريبة القيمة المضافة؟",
+    "displayProductPriceInclusiveOfVatDescription": "إذا ألغيت هذا الخيار، فسيُعرض السعر دون ضريبة عند إتمام الطلب",
+    "iHaveReviewedVatGuide": "بالضغط على حفظ، أُقر بأنني راجعت الأنظمة الضريبية المطبقة وطبّقتها حسب الأصول",
+    "inputs": {
+      "chooseCountry": {
+        "placeholder": "اختر الدولة",
+        "title": "اختر الدولة"
+      },
+      "taxNumber": {
+        "placeholder": "الرقم الضريبي",
+        "title": "الرقم الضريبي"
+      },
+      "vatPercentage": {
+        "placeholder": "نسبة ضريبة القيمة المضافة",
+        "title": "نسبة ضريبة القيمة المضافة"
+      }
+    },
+    "moreInfo": "مزيد من المعلومات",
+    "showVatCertificateSwitch": "عرض شهادة ضريبة القيمة المضافة في تذييل صفحة المتجر (كما هو موضح في المثال)",
+    "showVatNumberSwitch": "عرض الرقم الضريبي في تذييل صفحة المتجر",
+    "taxPercentageForOtherCountries": "نسبة الضريبة للدول الأخرى",
+    "taxedCountries": "الدول التي تُطبق فيها الضريبة",
+    "updatedSuccessfully": "حُدّثت إعدادات الضريبة",
+    "vatCertificate": "شهادة ضريبة القيمة المضافة",
+    "vatRegulationForSaudiStores": "للمتاجر السعودية: تنص اللائحة الضريبية للمتاجر الإلكترونية على ضرورة عرض شهادة ضريبة القيمة المضافة في المتجر. لمزيد من التفاصيل، راجع الرابط أدناه."
+  },
+  "team": {
+    "assignTeamMembersToLocationsBranches": "إسناد أعضاء الفريق إلى المخازن / الفروع",
+    "authenticator": "تطبيق المصادقة",
+    "authenticatorOff": "غير مفعّل",
+    "authenticatorOn": "مفعّل",
+    "createGroupSuccessfully": "أُنشئت المجموعة",
+    "dashboardPermission": "صلاحيات لوحة التحكم",
+    "deleteConfirm": "هل أنت متأكد من حذف هذا العضو في الفريق؟",
+    "deleteSuccess": "حُذف عضو الفريق",
+    "form": {
+      "emptyGroupsHelperText": "لم تُضف مجموعة صلاحيات",
+      "emptyUsersHelperText": "لم تُضف مستخدمين",
+      "group": "مجموعات الصلاحيات",
+      "groupHelperText": "أضف مستخدمًا جديدًا إلى مجموعة مشابهة",
+      "groupTitle": "معلومات المجموعة",
+      "is_pos_cashier_user": "مستخدم الكاشير لنقطة البيع",
+      "title": "معلومات العضو",
+      "users": "المستخدمون",
+      "usersPlaceholder": "اختر المستخدمين"
+    },
+    "grantFullPermissions": "منح جميع الصلاحيات",
+    "inventoryUsersLinkCreatedSuccessfully": "رُبط المستخدمون بالمخزون",
+    "linkToInventory": "تعيين إلى مخزون / فرع",
+    "locationsBranches": {
+      "label": "المخازن / الفروع المسندة",
+      "placeholder": "اختر المخازن / الفروع المسندة"
+    },
+    "logs": {
+      "columns": {
+        "actions": "الإجراءات",
+        "performedBy": "المعدِّل",
+        "section": "القسم",
+        "time": "الوقت"
+      },
+      "mainAlert": "تُعرض هنا إجراءات آخر {{days}} يومًا فقط.",
+      "notSelected": "غير محدد",
+      "performer": "عضو الفريق",
+      "section": "القسم",
+      "viaApp": "من تطبيق {{app}}"
+    },
+    "permissions": "الصلاحيات",
+    "permissionsCount": "{{selected}} من {{total}}",
+    "posPermission": "صلاحيات تطبيق نقاط البيع (زد كاشير)",
+    "removeGroupsDialog": {
+      "description": "أزلت صلاحيات معيّنة مسبقًا، وسيُزال المستخدم من جميع المجموعات المدرجة أدناه.",
+      "title": "إزالة من المجموعات"
+    },
+    "seatedAlert": {
+      "description": "عند منح هذا المستخدم أي صلاحية في لوحة التحكم، سيُحتسب ضمن عدد المستخدمين المتاحين في اشتراكك.",
+      "title": "إضافة عضو"
+    },
+    "seatedAlertGroup": {
+      "description": "عند إضافة أعضاء إلى هذه المجموعة ومنحهم صلاحية في لوحة التحكم، سيُحتسبون ضمن عدد أعضاء الفريق في اشتراكك.",
+      "title": "إضافة عضو إلى مجموعة"
+    },
+    "teamCreatedSuccessfully": "أُرسلت دعوة المستخدم إلى بريدك الإلكتروني",
+    "updateGroupSuccess": "حُدّثت المجموعة",
+    "updateMemberSuccess": "حُدّث عضو الفريق",
+    "upgradeLimit": "وصلت إلى الحد الأقصى لعدد الإضافات في باقتك. للتمكن من إضافة عدد غير محدود من الأعضاء، رقِّ باقتك.",
+    "usersCount": "المستخدمون"
+  },
+  "urlRedirects": {
+    "actions": {
+      "add": "إعادة توجيه رابط جديد",
+      "confirmDelete": "هل أنت متأكد من حذف إعادة التوجيه {{urlNames}}؟",
+      "export": "تصدير الروابط",
+      "import": "استيراد الروابط"
+    },
+    "columns": {
+      "urlName": "اسم رابط إعادة التوجيه",
+      "urlRedirectFrom": "التوجيه من",
+      "urlRedirectTo": "التوجيه إلى"
+    },
+    "description": "أنشئ إعادة توجيه من رابط <b>لا يعمل 404</b> إلى رابط جديد",
+    "emptyState": {
+      "action": "إعداد إعادة التوجيه",
+      "description": "لم تُعِد توجيه رابط إلى عنوان آخر بعد",
+      "title": "لا توجد روابط"
+    },
+    "form": {
+      "add": "إعادة توجيه رابط جديد",
+      "destinationPlaceholder": "مثال: Product/category/charger",
+      "edit": "تعديل إعادة توجيه رابط",
+      "pageName": "اسم رابط إعادة التوجيه",
+      "pageNamePlaceholder": "مثال: شاحن لاسلكي",
+      "sourcePlaceholder": "مثال: Product/charger"
+    },
+    "import": {
+      "failed": "تعذر استيراد الروابط",
+      "generalError": "تعذر استيراد الروابط",
+      "linksImportedSuccessfully": "استُوردت الروابط",
+      "steps": {
+        "step1": "حمّل القالب التالي لتعبئة روابطك",
+        "step2": "ارفع القالب بعد تعبئته"
+      },
+      "title": "استيراد الروابط"
+    },
+    "subTitle": "الروابط المُعادة توجيهها",
+    "title": "إعادة توجيه الروابط"
+  },
+  "workTime": {
+    "activate": "تفعيل الخاصية",
+    "activatedSuccessfully": "فُعّلت الخاصية",
+    "addNewPeriod": "إضافة فترة جديدة",
+    "address": "العنوان",
+    "alerts": {
+      "orders": "لن يتمكن العملاء من إتمام عمليات الشراء أثناء تعليق المتجر، لكن يمكنهم تصفح المنتجات وإضافتها إلى السلة فقط.",
+      "ordersTitle": "غير متاح مؤقتًا لاستقبال الطلبات",
+      "storeTitle": "سيُغلق متجرك في الفترات المحددة"
+    },
+    "closingMechanism": "اختر آلية الإغلاق",
+    "countDown": "عرض عدّاد تنازلي حتى إعادة فتح المتجر",
+    "customPeriod": "تحديد فترة مخصصة بالأيام",
+    "disable": "تعطيل الخاصية",
+    "disabledSuccessfully": "عُطّلت الخاصية",
+    "hoursPeriod": "الساعات",
+    "messageBody": "نص الرسالة",
+    "minutesPeriod": "الفترة بالدقائق",
+    "noPeriod": "دون تحديد مدة زمنية",
+    "notifyCustomerCheckbox": "عرض إشعار للعملاء عند فتح المتجر من جديد",
+    "ordersHold": "إيقاف استقبال الطلبات",
+    "period": "فترة محددة",
+    "removePeriod": "حذف الفترة",
+    "selectPeriodType": "اختر نوع الفترة",
+    "stopFromDate": "إيقاف استقبال الطلبات من تاريخ",
+    "stopToDate": "حتى تاريخ",
+    "storeClosed": "إغلاق المتجر بالكامل",
+    "submit": "حفظ",
+    "timePeriodInHours": "الفترة الزمنية بالساعات",
+    "timePeriodInMinutes": "الفترة الزمنية بالدقائق",
+    "updateSuccessfully": "حُدّثت أوقات العمل",
+    "viewExample": "عرض مثال",
+    "visitStorePage": "صفحة المتجر",
+    "workTimeExample": "مثال على طريقة ظهورها لعملائك",
+    "workTimeExampleStoreClosed": "إذا لم تُحدد وقتًا معينًا، فسيظل المتجر مغلقًا حتى تفتحه يدويًا."
+  }
+}

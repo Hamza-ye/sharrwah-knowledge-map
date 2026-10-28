@@ -1,0 +1,144 @@
+{
+  "banner": {
+    "countdown": "ينتهي العرض بعد {{duration}}",
+    "countdownPermanent": "يستمر هذا العرض دائمًا",
+    "expired": "انتهى العرض",
+    "faq": "الأسئلة الشائعة",
+    "journeyComplete": {
+      "cashbackDetails": "تفاصيل الاسترداد",
+      "description": "أنجزت جميع تحديات اليوم الوطني بنجاح، ويمكنك الآن الاستمتاع باسترداد نقدي بقيمة <amount/> مع كل طلب مكتمل",
+      "progressDetails": "تفاصيل التقدم",
+      "title": "تهانينا! اكتملت رحلة التحديات 🎉"
+    },
+    "ordersProgress": "{{completed}} من {{required}} طلب مكتمل",
+    "progressDetails": "تفاصيل إضافية",
+    "progressStatus": "خطوتك نحو المكافأة",
+    "title": "احتفل باليوم الوطني مع عروض زد",
+    "viewReports": "عرض التقارير"
+  },
+  "countdownUnits": {
+    "days": "{{count}} يوم",
+    "hours": "{{count}} ساعة",
+    "minutes": "{{count}} دقيقة",
+    "seconds": "{{count}} ثانية"
+  },
+  "dialogs": {
+    "rewardAdded": {
+      "action": "حسناً",
+      "description": "أُضيف استرداد هذا الطلب إلى محفظتك.",
+      "title": "أُضيفت مكافأتك 🎉"
+    }
+  },
+  "existing": {
+    "cashbackChoiceDescription": "أكمل {{ordersRequired}} طلب واحصل على <amount/> كاش باك عن كل طلب مكتمل. كل طلب يقرّبك من مكافأتك!",
+    "choiceSubtitle": "حقق أهدافك واربح مكافآت حصرية مع كل إنجاز",
+    "startChallenge": "بدء التحدي",
+    "subscribeNow": "اشترك الآن",
+    "subtitle": "استرداد نقدي <amount/> بعد كل طلب مكتمل",
+    "upgradeHint": "اشترك في باقة سنوية للحصول على مزايا الاشتراك مدى الحياة",
+    "yearlyChoiceDescription": "أكمل {{count}} طلبًا واستمتع بسنة إضافية مجانًا هدية منّا لك!"
+  },
+  "faq": {
+    "items": {
+      "cashbackCalculation": {
+        "answer": "تحصل على قيمة الاسترداد النقدي المحددة بعد كل طلب مؤهل مكتمل ومدفوع، وتُضاف جميع المبالغ المحصلة للطلبات المؤهلة يوميًا إلى المحفظة وفقًا لشروط الحملة.",
+        "question": "كيف يُحتسب الاسترداد النقدي (كاش باك)؟"
+      },
+      "howItWorks": {
+        "answer": "أكمل الطلبات المؤهلة في فترة الحملة لتحصل على اشتراك سنة مجاني إذا اشتركت في الباقة و/أو استرداد نقدي (كاش باك). كلما أكملت طلبات أكثر، زادت مكافآتك.",
+        "question": "كيف يعمل عرض اليوم الوطني؟"
+      },
+      "howToEarnRewards": {
+        "answer": "أكمل الطلبات المؤهلة في فترة العرض لتحصل على اشتراك الباقة المجاني و/أو الاسترداد النقدي وفقًا لشروط الحملة.",
+        "question": "كيف يمكنني كسب المكافآت؟"
+      },
+      "orderEligibility": {
+        "answer": "لا تُحتسب إلا الطلبات المؤهلة وفقًا لشروط الحملة وأحكامها.",
+        "question": "هل تُحتسب جميع الطلبات؟"
+      },
+      "trackProgress": {
+        "answer": "يمكنك متابعة عدد الطلبات المكتملة، والتقدم، والاسترداد النقدي المكتسب من لوحة التحكم.",
+        "question": "أين يمكنني متابعة تقدمي ومكافآتي؟"
+      },
+      "unlockNextMilestone": {
+        "answer": "أكمل العدد المطلوب من الطلبات المؤهلة للوصول تلقائيًا إلى المرحلة التالية والاستفادة من مكافآتها.",
+        "question": "كيف أنتقل إلى المرحلة التالية؟"
+      },
+      "whenDoesCampaignEnd": {
+        "answer": "ينتهي العرض عند انتهاء فترة الحملة المحددة. تأكد من إكمال طلباتك قبل تاريخ انتهاء العرض.",
+        "question": "متى ينتهي العرض؟"
+      }
+    },
+    "subtitle": "عرض اليوم الوطني",
+    "title": "الأسئلة الشائعة"
+  },
+  "orders": {
+    "creditedDescription": "أُضيف <amount/> إلى محفظتك بعد إتمام هذا الطلب.",
+    "creditedTitle": "أُضيفت مكافأتك 🎉",
+    "earnedAmount": "لقد حصلت على <amount/>",
+    "eligibleDescription": "حصلت على <amount/> استرداد نقدي من هذا الطلب.",
+    "eligibleTitle": "مكافأة النمو",
+    "ineligibleDescriptionLink": "مكافآت النمو",
+    "ineligibleDescriptionPrefix": "لا ينطبق على هذا الطلب برنامج ",
+    "ineligibleDescriptionSuffix": ".",
+    "ineligibleLink": "لا يستحق هذا الطلب مكافأة النمو",
+    "ineligibleTitle": "غير مؤهل لمكافآت النمو",
+    "pendingDescription": "سيُضاف استرداد نقدي بقيمة <amount/> عند اكتمال الطلب.",
+    "sectionSubtitle": "{{count}} طلب حصل على استرداد نقدي",
+    "sectionTitle": "مكافآت النمو"
+  },
+  "progressDetails": {
+    "countdownEndsIn": "ينتهي العرض بعد",
+    "description": "استمر في تنمية متجرك وإتمام طلباتك، ومع كل إنجاز تحققه تقترب من مراحل وفرص جديدة ضمن رحلة نمو متجرك",
+    "milestones": {
+      "stage_one": {
+        "subtitle": "احصل على اشتراك سنة مجانًا",
+        "title": "سنة مجانية 🎁"
+      },
+      "tier_100": {
+        "activeDescription": "أكمل {{ordersRequired}} طلب واحصل على <amount/> كاش باك عن كل طلب مكتمل. كل طلب يقرّبك من مكافأتك!",
+        "subtitle": "استرداد نقدي <amount/> بعد كل طلب ناجح",
+        "title": "اربح كاش باك مع كل طلب 💸"
+      },
+      "tier_1000": {
+        "activeDescription": "أكمل {{ordersRequired}} طلب واحصل على <amount/> كاش باك عن كل طلب مكتمل. كلما نما متجرك، كبرت مكافأتك!",
+        "subtitle": "استرداد نقدي <amount/> بعد كل طلب مكتمل",
+        "title": "ضاعف كاش باك كل طلب 📈"
+      }
+    },
+    "offerPermanent": "يستمر العرض دائمًا",
+    "ordersCompletedStatus": "<bold>{{count}}</bold> طلب مكتمل حالياً",
+    "termsApply": "تُطبق <1>الشروط والأحكام</1> على الطلبات.",
+    "title": "تابع أهدافك"
+  },
+  "stageOne": {
+    "description": "حقق العدد المطلوب من الطلبات وابدأ بجمع مكافآت عن كل طلب مكتمل",
+    "subtitle": "أكمل {{count}} طلبًا واستمتع بسنة إضافية مجانًا هدية منّا لك!",
+    "subtitleWithProgress": "أكمل {{count}} طلب ({{completed}} طلبات مكتملة)",
+    "title": "سنة مجانية 🎁"
+  },
+  "stageTwo": {
+    "bulletMilestone": "أكمل {{ordersRequired}} طلب واحصل على اشتراك سنة أخرى مجانًا 🎁",
+    "bulletPermanent": "يستمر هذا العرض دائمًا",
+    "cashbackLine": "استرداد نقدي <amount/> بعد كل طلب مكتمل",
+    "innerDescription": "أكمل {{ordersRequired}} طلب واحصل على <amount/> كاش باك عن كل طلب مكتمل. كل طلب يقرّبك من مكافأتك!",
+    "innerDescriptionX2": "أكمل {{ordersRequired}} طلب واحصل على <amount/> كاش باك عن كل طلب مكتمل. كلما نما متجرك، كبرت مكافأتك!",
+    "milestoneSubtitle": "أكمل {{ordersRequired}} طلب واحصل على اشتراك سنة أخرى مجانًا 🎁",
+    "panelTitle": "اربح كاش باك مع كل طلب 💸",
+    "panelTitleX2": "ضاعف كاش باك كل طلب 📈",
+    "permanentNote": "يستمر هذا العرض دائمًا",
+    "termsNote": "تُطبق الشروط والأحكام."
+  },
+  "switcher": {
+    "cashbackDetails": "تفاصيل الاسترداد",
+    "subtitle": "كل طلب يقرّبك من مكافآت أكثر! استلم <amount/> كاش باك بعد كل طلب مكتمل. تُطبق <terms>الشروط والأحكام</terms>",
+    "title": "استرداد فوري"
+  },
+  "wallet": {
+    "cashbackBalance": {
+      "label": "رصيد الاسترداد",
+      "ordersReceived": "{{count}} طلب حصل على استرداد نقدي",
+      "pendingDescription": "رصيدك الذي لم يصل بعد هو <amount/>"
+    }
+  }
+}

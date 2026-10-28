@@ -1,0 +1,156 @@
+{
+  "addItem": "إضافة عنصر",
+  "addNewSection": "إضافة قسم جديد",
+  "addSection": "إضافة قسم",
+  "aiDailyLimitReached": "وصلت إلى الحد اليومي لإنشاء الأقسام بالذكاء الاصطناعي. يمكنك إنشاء المزيد غدًا، أو الاستمرار في تحسين الأقسام الحالية.",
+  "aiDescribeComponent": "صف القسم الذي تريد إنشاءه",
+  "aiExamples": {
+    "aboutUs": {
+      "label": "من نحن",
+      "prompt": "أنشئ قسم «من نحن» بصورة على أحد الجانبين وعنوان وفقرة قصيرة وزر على الجانب الآخر. اجعلني أعدّل العنوان والنص ونص الزر ورابطه والصورة، وأختار جهة الصورة."
+    },
+    "collectionCarousel": {
+      "label": "معرض منتجات متحرك",
+      "prompt": "أنشئ معرض منتجات أفقياً بعنوان «وصل حديثاً» يعرض منتجات من تصنيف أختاره. تعرض كل بطاقة صورة المنتج واسمه وسعره وزر الإضافة للسلة، مع أسهم على الجانبين و٤ بطاقات ظاهرة على الحاسب و١٫٥ على الجوال."
+    },
+    "promotionalBanner": {
+      "label": "بانر ترويجي",
+      "prompt": "أنشئ بانراً ترويجياً بعرض كامل بصورة خلفية وطبقة داكنة، مع عنوان رئيسي وسطر نص قصير وكود خصم وعدّاد تنازلي مباشر حتى تاريخ أحدده. اجعلني أعدّل النصوص والكود وتاريخ الانتهاء وشدة الطبقة الداكنة."
+    },
+    "testimonials": {
+      "label": "آراء العملاء",
+      "prompt": "أنشئ قسم آراء العملاء: عنوان وشبكة من ٣ أعمدة من بطاقات الاقتباس، كل بطاقة فيها تقييم بالنجوم ونص الرأي واسم العميل وصورته. اجعل الآراء قائمة قابلة للإضافة، وبعمود واحد على الجوال."
+    }
+  },
+  "aiGenerated": "مولّد بالذكاء الاصطناعي",
+  "aiGenerating": "جارٍ الإنشاء...",
+  "aiGeneratingPreview": "جارٍ إنشاء محتوى جذّاب بناءً على فكرتك...",
+  "aiGenerationFailed": "حدث خطأ ما، تعذّر إنشاء القسم بالكامل.",
+  "aiGeneratorTitle": "مولّد الذكاء الاصطناعي",
+  "aiGreeting": "مرحباً، أنا مساعدك الذكي، لنصنع شيئاً رائعاً معاً 💜\nيمكنني إنشاء أقسام متنوعة، فقط أخبرني بما تحتاجه. كلما شاركت تفاصيل أكثر عن تصورك، كان بإمكاني تصميمه ليناسبك أكثر.",
+  "aiHistoryEmpty": "لا توجد محادثات بعد",
+  "aiHistoryToday": "اليوم",
+  "aiHistoryYesterday": "أمس",
+  "aiKeepEditingHint": "يمكنك إغلاق هذه اللوحة ومواصلة تخصيص متجرك. سيُضاف القسم فور اكتماله.",
+  "aiLearnAboutFeature": "تعرّف على خاصية الذكاء الاصطناعي",
+  "aiNeedHelp": "تحتاج مساعدة؟",
+  "aiNewChat": "محادثة جديدة",
+  "aiPromoSubtitle": "جرّب طريقة جديدة لإنشاء الأقسام",
+  "aiPromoTitle": "أداة زد للذكاء الاصطناعي",
+  "aiQuotaRemaining": "متبقّي {{remaining}} من {{limit}} أقسام بالذكاء الاصطناعي اليوم",
+  "aiSectionReady": "{{name}} جاهز.",
+  "aiStartNewChat": "بدء محادثة جديدة",
+  "aiUntitledChat": "محادثة بلا اسم",
+  "aiWhatToImprove": "تريد تحسين شيء ما؟ شاركنا",
+  "aiWorkingOnImprovements": "جارٍ العمل على التحسينات...",
+  "aiWorkingOnIt": "نعمل على تحويل فكرتك إلى واقع...",
+  "allChangesApplyAcrossAllThemePages": "تُطبّق التغييرات على جميع صفحات الثيم.",
+  "applyPresetDialog": {
+    "description": "هل أنت متأكد من تطبيق هذا القالب على الثيم؟ سيؤدي هذا الإجراء إلى مسح التخصيصات الحالية ولا يمكن التراجع عنه.",
+    "title": "تطبيق التغييرات على الثيم الحالي؟"
+  },
+  "categoryImage": "صورة التصنيف (اختياري)",
+  "categoryName": "اسم التصنيف",
+  "copyToLanguageDialog": {
+    "description": "هل أنت متأكد من نسخ <b>{{sectionName}}</b> إلى اللغة {{language}}؟",
+    "title": "نسخ القسم إلى"
+  },
+  "createNewCategory": "إنشاء تصنيف جديد",
+  "createNewCategoryInfo": "يُستخدم هذا التصنيف للتنظيم فقط ولا يظهر في المتجر.",
+  "draft": "مسودة",
+  "editItem": "تعديل عنصر",
+  "history": {
+    "currentVersion": "النسخة الحالية",
+    "history": "سجل التعديلات",
+    "noVersions": "لا توجد نسخ سابقة",
+    "published": "منشورة",
+    "restore": "استعادة",
+    "restoreDialog": {
+      "description": "هل أنت متأكد من استعادة النسخة <b>{{date}}</b>؟",
+      "title": "استعادة النسخة؟"
+    },
+    "undoAllChanges": "التراجع عن جميع التغييرات",
+    "unpublishedChangesDetected": "توجد تغييرات غير منشورة",
+    "versionHistory": "سجل التعديلات",
+    "versionRestored": "استُعيدت النسخة"
+  },
+  "legalPage": "صفحة قانونية",
+  "legalPages": {
+    "complaintsAndSuggestions": "الشكاوى والاقتراحات",
+    "license": "التراخيص",
+    "privacyPolicy": "سياسة الخصوصية",
+    "refundExchangePolicy": "سياسة الاستبدال والاسترجاع",
+    "shippingAndPayment": "خيارات الشحن والتوصيل",
+    "termsAndConditions": "الشروط والأحكام"
+  },
+  "linkOptions": {
+    "blog": "المدونة",
+    "category": "تصنيف",
+    "customPage": "صفحة مخصصة",
+    "faq": "الأسئلة الشائعة",
+    "legalPage": "صفحة قانونية",
+    "other": "أخرى",
+    "product": "منتج"
+  },
+  "mainSections": {
+    "footer": "أسفل الصفحة",
+    "header": "أعلى الصفحة",
+    "pageContent": "محتوى الصفحة"
+  },
+  "marketProfile": {
+    "primary": "الرئيسي"
+  },
+  "options": {
+    "copyToLanguage": "نسخ القسم إلى اللغة {{language}}",
+    "delete": "حذف",
+    "duplicate": "تكرار",
+    "hide": "إخفاء",
+    "rename": "إعادة تسمية",
+    "show": "عرض"
+  },
+  "pageSections": "أقسام {{page}}",
+  "pageSettings": "إعدادات الصفحة",
+  "pages": {
+    "home": "الصفحة الرئيسية"
+  },
+  "presetAppliedSuccessfully": "طُبّق القالب",
+  "presets": "القوالب",
+  "presetsPreviewInfo": "إذا كنت قد خصصت الأقسام سابقًا، فستُستبدل ببنية التخطيط الجديد. وسيُعبّأ محتواك تلقائيًا حيثما أمكن.",
+  "previewPresets": "معاينة القوالب",
+  "productLandingPages": {
+    "empty": "لا توجد صفحات هبوط للمنتجات بعد",
+    "loadError": "تعذّر تحميل صفحات هبوط المنتجات",
+    "title": "صفحات هبوط المنتجات"
+  },
+  "productsOptions": {
+    "products": "حدد منتجات مختارة",
+    "productsCategory": "منتجات التصنيف",
+    "recentProducts": "أحدث المنتجات",
+    "saleProducts": "أحدث المنتجات المخفضة"
+  },
+  "publish": "نشر",
+  "published": "منشور",
+  "searchBySectionName": "ابحث باسم القسم",
+  "sectionAddedSuccessfully": "أُضيف القسم",
+  "sectionsCount_few": "{{count}} أقسام",
+  "sectionsCount_many": "{{count}} قسمًا",
+  "sectionsCount_one": "قسم واحد",
+  "sectionsCount_other": "{{count}} قسم",
+  "sectionsCount_two": "قسمان",
+  "sectionsCount_zero": "لا توجد أقسام",
+  "selectBlog": "اختر المدونة",
+  "selectCategory": "اختر التصنيف",
+  "selectCategoryProducts": "اختر منتجات التصنيف",
+  "selectImage": "اختر الصورة",
+  "selectPage": "اختر الصفحة",
+  "selectProduct": "اختر المنتج",
+  "selectVideo": "اختر الفيديو",
+  "switchLayoutsInOneClick": "تغيير القوالب",
+  "toggleView": {
+    "showPreview": "عرض المعاينة",
+    "showSections": "عرض الأقسام"
+  },
+  "uploadImage": "إضافة صورة",
+  "uploadVideo": "إضافة فيديو",
+  "viewSection": "عرض القسم"
+}

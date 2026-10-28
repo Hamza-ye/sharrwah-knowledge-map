@@ -1,0 +1,68 @@
+{
+  "allBanks": "All banks",
+  "allBanksDescription": "These bank accounts will appear as payment methods for customers on your store.",
+  "allBanksDescription2": "Manage your payout bank account separately <1>here</1>.",
+  "banksTable": {
+    "headers": {
+      "accountNumber": "Account No.",
+      "actions": "Actions",
+      "bankName": "Bank Name",
+      "beneficiaryName": "Beneficiary Name",
+      "iban": "IBAN",
+      "isVisible": "Visible at checkout",
+      "swift": "Swift"
+    }
+  },
+  "bulkOps": {
+    "Delete": "Delete selected bank accounts",
+    "confirmationDialog": {
+      "Delete": "Are you sure you want to delete the selected banks?",
+      "hideDetails": "Are you sure you want to hide the selected banks from the checkout page?",
+      "showDetails": "Are you sure you want to show the selected banks on the checkout page?"
+    },
+    "hideDetails": "Hide selected accounts from checkout",
+    "showDetails": "Show selected accounts at checkout"
+  },
+  "create": "Add new bank account",
+  "edit": "Edit bank account",
+  "errors": {
+    "swift": {
+      "max": "Swift code must be 8 or 11 characters",
+      "min": "Swift code must be 8 or 11 characters"
+    }
+  },
+  "fields": {
+    "accountHolderName": {
+      "label": "Account holder name",
+      "placeholder": "Enter account holder name"
+    },
+    "accountNumber": {
+      "label": "Account number",
+      "placeholder": "Enter account number"
+    },
+    "bankName": {
+      "label": "Bank name",
+      "logo": "Bank logo",
+      "placeholder": "Enter bank name"
+    },
+    "beneficiaryName": {
+      "label": "Beneficiary Name",
+      "placeholder": "Enter beneficiary name"
+    },
+    "iban": {
+      "helperText": "It must be at least 22 characters",
+      "label": "IBAN",
+      "placeholder": "SA03 80000 0000 6080 XXX XXX"
+    },
+    "isVisible": {
+      "label": "Display bank account details on the payment and delivery page."
+    },
+    "swift": {
+      "label": "Swift (optional)",
+      "placeholder": "Aaa-bb-cc-123"
+    }
+  },
+
+  "toggleDescription": "You can customize each bank account by clicking on Edit.",
+  "toggleTitle": "Enable bank transfer payment method"
+}

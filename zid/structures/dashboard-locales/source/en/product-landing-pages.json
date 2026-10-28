@@ -1,0 +1,137 @@
+{
+  "actions": {
+    "create": "Create landing page"
+  },
+  "enhancedVersion": "Enhanced version",
+  "enhancedVersionTooltip": "A new and enhanced storefront that improves store speed and boosts conversion rates!",
+  "form": {
+    "editTitle": "Edit landing page",
+    "name": {
+      "label": "Landing page title",
+      "placeholder": "Example: National day offer"
+    },
+    "product": {
+      "browse": "Browse products",
+      "columns": {
+        "sku": "SKU code"
+      },
+      "dialogSubtitle": "You can select one product to provide a Q&A for",
+      "emptyDescription": "Select a product to add a landing page for it"
+    },
+    "seo": {
+      "description": {
+        "placeholder": "Write a description about the landing page"
+      },
+      "title": {
+        "label": "Title",
+        "placeholder": "Example: National day offer | 30% off"
+      }
+    },
+    "slug": {
+      "oldValidation": "Only English letters and dashes (-) are allowed, no spaces.",
+      "placeholder": "Example: national-day",
+      "validation": "Use lowercase English letters and numbers, separated by single dashes (-), without spaces."
+    },
+    "steps": {
+      "product": "Products",
+      "theme": "Theme"
+    },
+    "theme": {
+      "purchaseRequired": "Purchase this theme before using it to create a landing page.",
+      "select": "Select a theme",
+      "selected": "Theme selected",
+      "uninstalled": "Reinstall this theme to customize the landing page.",
+      "use": "Use theme"
+    }
+  },
+  "list": {
+    "empty": {
+      "description": "Choose a product and theme, customize your page, then publish it.",
+      "title": "No landing pages yet"
+    },
+    "loadError": "Could not load your landing pages.",
+    "previewPage": "Preview {{name}}",
+    "title": "Your landing pages",
+    "viewAnalytics": "View analytics"
+  },
+  "onboarding": {
+    "steps": {
+      "growth": "Keep your business growing",
+      "product": "Choose a product",
+      "publish": "Customize the page content and publish it",
+      "theme": "Choose a ready-made theme or develop your own"
+    },
+    "title": "Create your page in 3 simple steps"
+  },
+  "stats": {
+    "conversionRate": "Conversion Rate"
+  },
+  "themes": {
+    "actions": {
+      "browse": "Browse all themes",
+      "buy": "Buy",
+      "developerReference": "Developer documentation",
+      "install": "Install",
+      "upload": "Upload theme"
+    },
+    "byDeveloper": "By: {{name}}",
+    "columns": {
+      "installed": "Installed",
+      "installedVersion": "Installed version",
+      "latestVersion": "Latest version",
+      "name": "Theme name"
+    },
+    "custom": {
+      "editTitle": "Edit private theme",
+      "emptyDescription": "Upload a ZIP file to add your own product landing page theme.",
+      "emptyTitle": "No private themes uploaded",
+      "form": {
+        "file": {
+          "invalid": "Choose a valid ZIP file.",
+          "label": "Theme ZIP file",
+          "replaceHint": "Upload a ZIP file only to replace the theme files.",
+          "required": "Upload a theme ZIP file.",
+          "uploadHint": "Upload a ZIP file for your landing page theme."
+        },
+        "name": {
+          "placeholder": "Ex: Zid Theme"
+        }
+      },
+      "loadError": "Could not load your private themes.",
+      "title": "Private themes",
+      "uploadTitle": "Upload private theme"
+    },
+    "details": {
+      "imageAlt": "{{name}} theme image",
+      "noImage": "No image available"
+    },
+    "installationStatus": "",
+    "installationStatus_installed": "Installed",
+    "installationStatus_notInstalled": "Not installed",
+    "installed": {
+      "emptyTitle": "No themes installed",
+      "loadError": "Could not load your installed themes.",
+      "title": "Installed themes"
+    },
+    "marketplace": {
+      "empty": "No ready-made themes available yet",
+      "loadError": "Could not load the landing page themes.",
+      "title": "Landing page themes"
+    },
+    "notifications": {
+      "created": "Theme uploaded successfully",
+      "installed": "Theme installed successfully",
+      "updated": "Theme updated successfully"
+    }
+  },
+  "welcome": {
+    "description": "Create a dedicated page for a product and customize it for your marketing campaigns.",
+    "features": {
+      "customization": "Easy creation and customization",
+      "design": "Professionally designed and formatted",
+      "marketing": "Innovative marketing for your product",
+      "sales": "Showcase your products with dedicated pages"
+    },
+    "title": "Welcome to the landing page builder"
+  }
+}

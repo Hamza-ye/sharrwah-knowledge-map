@@ -1,0 +1,1287 @@
+{
+  "FreeShippingConditions": {
+    "description": "فعّل الشحن المجاني عند تحقق شروط معينة، مثل الحد الأدنى لقيمة الطلب.",
+    "title": "شروط الشحن المجاني"
+  },
+  "activation": {
+    "alerts": {
+      "activationSuccessMessage": {
+        "content": "فُعّلت طريقة {{name}}. يمكنك تعديل الإعدادات الافتراضية في أي وقت."
+      }
+    },
+    "getStarted": "ابدأ باختيار طرق الشحن المفضّلة لديك",
+    "options": {
+      "option1": {
+        "description": "خيارات شحن موثوقة تناسب أنواع منتجاتك المختلفة ونطاق التوصيل الذي تستهدفه.",
+        "title": "خيارات شحن مرنة"
+      },
+      "option2": {
+        "description": "تُخصم تكاليف الشحن تلقائيًا من محفظة زد عند تنفيذ الطلب.",
+        "title": "مدفوعات وفواتير مبسّطة"
+      },
+      "option3": {
+        "description": "استفد من أسعار مميزة عند شراء بوليصات الشحن بالجملة",
+        "title": "رصيد بوليصات شحن بأسعار مخفضة"
+      }
+    },
+    "otherLogisticsProviders": "مزودو خدمات لوجستية آخرون",
+    "selectShippingMethods": "اختيار طرق الشحن",
+    "setCustomShippingRates": "حدّد أسعار شحن مخصصة",
+    "setUp": "فعّل طرق الشحن التي تناسبك دون الحاجة لإدارة عقود متعددة"
+  },
+  "buttons": {
+    "activateNow": "تفعيل الآن",
+    "addLocation": "إضافة موقع",
+    "addOption": "إضافة خيار",
+    "addPickupLocation": "إضافة موقع الاستلام",
+    "completeActivation": "إكمال التفعيل",
+    "connectYourAccountButton": "تفعيل حسابك",
+    "createNewRule": "الإدارة",
+    "customShippingOption": "خيار شحن مخصص",
+    "manageShippingMethods": "إدارة طرق الشحن",
+    "noShippingMethodsAvailableButton": "تصفّح المزودين",
+    "pickupOption": "خيار الاستلام",
+    "prioritizeShipping": "أولوية الشحن",
+    "purchaseLabel": "شراء بوليصة",
+    "purchaseLabels": "شراء باقة بوليصات",
+    "requestActivation": "لا، أرسل طلب تفعيل الحساب",
+    "settings": "الإعدادات",
+    "shipmentRateCalculation": "حاسبة أسعار الشحن",
+    "startLinking": "نعم، ابدأ الربط"
+  },
+  "columns": {
+    "account_number": "رقم الحساب",
+    "account_pin": "الرقم السري (PIN) للحساب",
+    "cities": "المدن",
+    "cod": "الدفع عند الاستلام (COD)",
+    "countCities": "{{count}} مدينة",
+    "countCities_few": "{{count}} مدن",
+    "countCities_many": "{{count}} مدينة",
+    "countCities_one": "مدينة واحدة",
+    "countCities_other": "{{count}} مدينة",
+    "countCities_two": "مدينتان",
+    "countCities_zero": "{{count}} مدينة",
+    "countLabels": "{{count}} بوليصة شحن",
+    "courier": "شركة الشحن",
+    "deliveryCities": "مدن التوصيل",
+    "deliveryCost": "تكلفة التوصيل",
+    "entity": "الجهة",
+    "expireDate": "تاريخ الانتهاء",
+    "logo": "الشعار",
+    "package": "الباقة",
+    "password": "كلمة المرور",
+    "pickupCities": "مدن الاستلام",
+    "remaining": "المتبقي",
+    "shippingMethods": "طرق الشحن",
+    "shippingOption": "خيار الشحن",
+    "shippingType": "سعر الشحن",
+    "status": "الحالة",
+    "transaction": "المعاملة",
+    "username": "اسم المستخدم",
+    "zoneName": "اسم المنطقة"
+  },
+  "customMethods": {
+    "alerts": {
+      "shippingMethodUnavailable": {
+        "content": "طريقة الشحن غير متاحة في منطقتك، فعّل طريقة شحن مخصصة.",
+        "title": "طريقة الشحن غير متوفرة"
+      }
+    },
+    "aramexCustom": "أرامكس (مخصصة)",
+    "aramexGccCustom": "أرامكس دول الخليج (مخصصة)",
+    "aramexGlobalCustom": "أرامكس العالمية (مخصصة)",
+    "customShippingMethod": "تفاصيل طريقة الشحن",
+    "deleteButton": "حذف الخيار",
+    "disableButton": "تعطيل الخيار",
+    "enableButton": "تفعيل الخيار",
+    "naqelCustom": "ناقل (مخصصة)",
+    "smsaCustom": "سمسا (مخصصة)",
+    "smsaGccCustom": "سمسا الخليج (مخصصة)",
+    "table": {
+      "buttons": {
+        "create": "إضافة منطقة شحن"
+      },
+      "columns": {
+        "name": "المنطقة"
+      },
+      "description": "حدّد رسوم الشحن بناءً على المدينة أو المنطقة، وسيُعرض السعر المناسب للعميل تلقائيًا في صفحة الدفع حسب موقعه.",
+      "title": "تخصيص مناطق الشحن"
+    },
+    "upgradeDescription": "لقد وصلت إلى الحد الأقصى للخيارات المخصصة في باقتك الحالية. رقِّ باقتك لإضافة المزيد."
+  },
+  "customShipping": "شركة توصيل المتجر",
+  "customShippingPlaceholder": "شركة توصيل المتجر",
+  "customShippingPlaceholder_ar": "شركة توصيل المتجر",
+  "customShippingPlaceholder_en": "Store Courier",
+  "customShippingProvider": {
+    "coverageDetailsCard": {
+      "estimatedDeliveryTime": "الوقت المتوقع للتوصيل",
+      "estimatedPickupTime": "الوقت المتوقع للاستلام",
+      "supportedCities": "مدن الاستلام",
+      "supportedCitiesCount": "{{count}} مدينة",
+      "supportedCitiesCount_few": "{{count}} مدن",
+      "supportedCitiesCount_many": "{{count}} مدينة",
+      "supportedCitiesCount_one": "مدينة واحدة",
+      "supportedCitiesCount_other": "{{count}} مدينة",
+      "supportedCitiesCount_two": "مدينتان",
+      "supportedCitiesCount_zero": "{{count}} مدينة",
+      "supportedDeliveryCities": "مدن التوصيل",
+      "title": "تفاصيل الخدمة"
+    }
+  },
+  "emptyStateNoPackages": "لم يُعثر على باقات لهذه الخدمة",
+  "expectedDeliveryDate": {
+    "customNote": {
+      "description": "اكتب ملاحظة مختصرة وواضحة تظهر للعميل تحت خيار التوصيل.",
+      "noteLabelAr": "الملاحظة بالعربية",
+      "noteLabelEn": "الملاحظة بالإنجليزية",
+      "title": "ملاحظة مخصصة"
+    },
+    "deliveryAvailability": {
+      "allDays": "كل أيام الأسبوع",
+      "description": "حدد أيام التوصيل المتاحة للعميل.",
+      "specificDays": "أيام محددة من الأسبوع",
+      "title": "أيام التوصيل"
+    },
+    "description": "أضف ملاحظات التوصيل لعميلك، مثل الرسوم الإضافية أو شروط التوصيل أو موعد التسليم المتوقع.",
+    "earliestDeliveryDate": {
+      "dailyLimit": "تُرحَّل طلبات التوصيل عند تجاوز الحد اليومي",
+      "daysLabel": "عدد الأيام",
+      "description": "حدد متى تبدأ فترة التوصيل المتاحة بناءً على وقت إنشاء الطلب من العميل.",
+      "nextDay": "اليوم التالي",
+      "placeholder": "مثال: 100 طلب يوميًا",
+      "sameDay": "اليوم نفسه",
+      "specificDays": "بعد عدد معيّن من الأيام",
+      "specificDaysPlaceholder": "مثال: 3 أيام من تاريخ الطلب",
+      "title": "نوع التوصيل",
+      "tooltip": "عند تجاوز الحد اليومي، يُحدَّد أقرب يوم متاح تلقائيًا."
+    },
+    "example": {
+      "expectedDelivery": "يصلك في {{days}} أيام - {{date}}",
+      "shippingMethod": "مندوب المتجر",
+      "title": "مثال على طريقة العرض",
+      "today": "يصلك اليوم",
+      "tomorrow": "يصلك غداً"
+    },
+    "orderConditions": {
+      "dailyLimit": {
+        "title": "الحد اليومي للطلبات"
+      },
+      "description": "حدد شروط حساب أقرب تاريخ للتوصيل وإظهاره.",
+      "latestTime": {
+        "description": "يتوقف احتساب طلبات التوصيل بعد الساعة",
+        "placeholder": "مثال: الساعة 21:00 م",
+        "title": "وقت الإقفال",
+        "tooltip": "أقصى وقت مسموح لاستقبال طلبات التوصيل، وسيُحدَّد أقرب يوم متاح تلقائيًا."
+      },
+      "title": "شروط التوصيل"
+    },
+    "showDeliveryDateBasedOn": {
+      "automatic": "إظهار موعد التوصيل تلقائيًا",
+      "customNote": "ملاحظة مخصصة",
+      "description": "سيُعرض المحتوى هنا في صفحة الدفع فقط.",
+      "title": "محتوى الملاحظة"
+    },
+    "tabs": {
+      "title": "ملاحظة التوصيل"
+    },
+    "timeSlotSettings": {
+      "addTimeSlot": "إضافة فترة زمنية",
+      "alwaysShowSelection": "عرض اختيار وقت التوصيل دائماً",
+      "alwaysShowSelectionDescription": "عند التفعيل، تُعرض نافذة اختيار الفترة دائمًا عند اختيار طريقة التوصيل المحلي التي تحتوي على فترات زمنية، دون تحديد أقرب فترة تلقائيًا، ويجب على العميل اختيار فترة قبل المتابعة.",
+      "autoAssign": "تحديد اليوم المتوقع للتوصيل تلقائيًا",
+      "customSlotExtraDays": {
+        "helper": "أدخل 0 لعرض اليوم الحالي فقط، بحد أقصى 5 أيام.",
+        "label": "عدد الأيام المتاحة للعميل مسبقًا"
+      },
+      "description": "حدد طريقة تحديد موعد التوصيل.",
+      "endTime": "وقت النهاية",
+      "endTimeCutoffNote": "وقت النهاية هو وقت الإقفال",
+      "endTimeTooltip": "وقت النهاية هو وقت الإقفال",
+      "newTimeSlot": "فترة زمنية جديدة",
+      "pickTimeSlot": "السماح للعميل بتحديد فترة توصيل معينة",
+      "previewDialogTitle": "اختر التاريخ والوقت",
+      "previewSelectSlotTitle": "اختر فترة التوصيل:",
+      "previewSlots": {
+        "evening": "مساءً",
+        "eveningTime": "2:00 م - 5:00 م",
+        "morning": "صباحًا",
+        "morningTime": "7:00 ص - 12:00 م",
+        "night": "ليلًا",
+        "nightTime": "6:00 م - 9:00 م"
+      },
+      "previewTitle": "معاينة ما يظهر للعميل عند الدفع:",
+      "slotName": "اسم الفترة",
+      "slotNamePlaceholder": "أدخل اسم الفترة",
+      "startTime": "وقت البداية",
+      "title": "إعدادات فترات التوصيل"
+    },
+    "timeSlotVisibility": {
+      "currentAndUpcoming": "الفترات الحالية والقادمة",
+      "title": "ما فترات التوصيل التي تظهر للعميل؟",
+      "upcomingOnly": "الفترات القادمة فقط"
+    },
+    "title": "ملاحظة التوصيل",
+    "validation": {
+      "cutoffTimeInvalid": "أدخل وقتًا صحيحًا",
+      "cutoffTimeRequired": "أقصى وقت للتوصيل مطلوب",
+      "dailyCapacityMin": "الحد اليومي للطلبات يجب أن يكون على الأقل 1",
+      "dailyCapacityRequired": "الحد اليومي للطلبات مطلوب عند تفعيل الحد اليومي",
+      "daysCountMin": "عدد الأيام يجب أن يكون على الأقل 3",
+      "daysCountRequired": "عدد الأيام مطلوب عند اختيار عدد أيام معينة",
+      "noteRequired": "الملاحظة المخصصة مطلوبة عند اختيار خيار الملاحظة المخصصة"
+    }
+  },
+  "faqs": {
+    "description": "إجابات على الأسئلة المتكررة حول طريقة الشحن.",
+    "search": "ابحث باسم السؤال",
+    "title": "الأسئلة الشائعة"
+  },
+  "fields": {
+    "accountNumber": {
+      "label": "رقم الحساب",
+      "placeholder": "أدخل رقم الحساب"
+    },
+    "accountPin": {
+      "label": "الرمز السري للحساب",
+      "placeholder": "أدخل الرمز السري للحساب"
+    },
+    "activateCashOnDelivery": {
+      "label": "دفع عند الاستلام (COD)"
+    },
+    "apiKey": {
+      "label": "مفتاح الربط (API Key)",
+      "placeholder": "أدخل مفتاح الربط (API Key).."
+    },
+    "clientId": {
+      "label": "معرف العميل",
+      "placeholder": "أدخل معرف العميل"
+    },
+    "courier": {
+      "label": "طريقة الشحن",
+      "placeholder": "اختر شركة الشحن"
+    },
+    "entity": {
+      "label": "الجهة المرتبطة بالحساب",
+      "placeholder": "أدخل اسم الجهة"
+    },
+    "inventoryLocation": {
+      "label": "المخزون",
+      "placeholder": "اختر موقع المخزون"
+    },
+    "lintedInventoryLocation": {
+      "label": "الموقع المرتبط بالمخزون",
+      "placeholder": "اختر موقع المخزون"
+    },
+    "loadType": {
+      "label": "نوع الحمولة",
+      "placeholder": "اختر نوع الحمولة"
+    },
+    "name": {
+      "label": "الاسم",
+      "placeholder": "أدخل الاسم"
+    },
+    "notes": {
+      "label": "ملاحظات",
+      "placeholder": "أدخل الملاحظات"
+    },
+    "optionName": {
+      "label": "اسم خيار الاستلام",
+      "placeholder": "اسم الخيار",
+      "placeholder_ar": "اسم الخيار",
+      "placeholder_en": "Option name"
+    },
+    "password": {
+      "label": "كلمة المرور",
+      "placeholder": "أدخل كلمة المرور"
+    },
+    "serviceCode": {
+      "label": "رمز الخدمة",
+      "placeholder": "اختر رمز الخدمة"
+    },
+    "username": {
+      "label": "اسم المستخدم",
+      "placeholder": "أدخل اسم المستخدم"
+    }
+  },
+  "filters": {
+    "fields": {
+      "deliveryFrom": {
+        "label": "اختر دولة الانطلاق",
+        "placeholder": "اختر دولة الانطلاق"
+      },
+      "deliveryTo": {
+        "label": "اختر دولة الوجهة",
+        "placeholder": "اختر دولة الوجهة"
+      },
+      "packageCode": {
+        "label": "رمز الطرد",
+        "placeholder": "اختر رمز الطرد"
+      },
+      "paymentMethod": {
+        "label": "طريقة الدفع",
+        "placeholder": "اختر طريقة الدفع"
+      },
+      "paymentSource": {
+        "label": "مصدر الدفع",
+        "placeholder": "اختر مصدر الدفع"
+      },
+      "paymentStatus": {
+        "label": "حالة الدفع",
+        "placeholder": "اختر حالة الدفع"
+      },
+      "serviceLevel": {
+        "label": "طريقة الشحن",
+        "placeholder": "اختر هذه الطريقة للشحن"
+      },
+      "shipmentStatus": {
+        "label": "حالة الشحنة",
+        "placeholder": "اختر حالة الشحنة"
+      },
+      "shippingCompany": {
+        "label": "شركة الشحن",
+        "placeholder": "اختر شركة الشحن"
+      },
+      "status": {
+        "label": "الحالة",
+        "placeholder": "اختر الحالة"
+      },
+      "supportHeavyCharging": {
+        "label": "يدعم شحن المنتجات الثقيلة"
+      },
+      "supportsCashOnDelivery": {
+        "label": "يدعم الدفع عند الاستلام"
+      },
+      "supportsFastActivation": {
+        "label": "تفعيل فوري بنقرة واحدة، بدون خطوات إضافية"
+      },
+      "supportsRefrigeratedShipping": {
+        "label": "يدعم شحن المنتجات المبرّدة"
+      }
+    }
+  },
+  "helpCenter": {
+    "fifthCollapse": {
+      "sectionDesc1": "مؤشر رضا العملاء (CSAT) هو مقياس شائع يستخدمه مقدمو الخدمات لمعرفة مدى رضا العملاء عن التجربة.",
+      "sectionDesc2": "مع زد شب، يمكنك قياس رضا عملائك بسهولة حول تجربة الشحن. عند تسليم الشحنة بزد شب، يُرسَل استبيان مختصر تلقائيًا إلى جوال العميل برسالة نصية بالصيغة التالية:",
+      "sectionDesc3": "تُصنّف الردود تلقائيًا إلى ثلاث فئات: عميل راضٍ (4 أو 5)، عميل محايد (3)، وعميل غير راضٍ (1 أو 2). لحساب نسبة رضا العملاء، يُقسم عدد العملاء الراضين على العدد الإجمالي للردود، ثم يُضرب الناتج في 100. مثال: إذا استجاب 10 عملاء للاستبيان وكان 5 منهم راضين، فإن نسبة الرضا = (5 ÷ 10) × 100 = 50%.",
+      "sectionDesc4": "تُعد نسبة رضا العملاء التي تبلغ 70٪ أو أكثر ممتازة عمومًا. ويؤثر عدد العملاء الذين يُكملون الاستبيان في دقة قياس الرضا العام. في المتوسط، يستجيب نحو 15٪ فقط من العملاء لمثل هذه الاستبيانات. فمثلًا، إذا أُرسل الاستبيان إلى 100 عميل، يُتوقع الحصول على نحو 15 ردًا، وهي نسبة استجابة مقبولة عالميًا.",
+      "sectionTitle1": "ما الذي تقيسه درجة رضا العملاء؟",
+      "sectionTitle2": "ما علاقة متجري بهذا المقياس؟",
+      "sectionTitle3": "كيف تُحتسب نسبة رضا العملاء؟",
+      "sectionTitle4": "كيف أعرف إن كانت نسبة رضا العملاء لدي جيدة؟",
+      "title": "مقياس رضا العملاء"
+    },
+    "firstCollapse": {
+      "sectionDesc1": "هو حل تقني لإدارة شركات الشحن حسب طرق الشحن، ويمنحك الوصول إلى أكثر من 15 شركة نقل بعقد رقمي واحد يُفعَّل بنقرة واحدة.",
+      "sectionDesc2": "لا تفرض زد أي رسوم خدمة. ولكن لتحويل الطلبات إلى حالة «جاهز»، يجب شحن الرصيد مسبقًا بالدفع الإلكتروني أو التحويل البنكي. يُستخدم هذا المبلغ لتغطية تكاليف شحن الطلبات (بوليصات الشحن) في زد.",
+      "sectionDesc3": "يمكنك تفعيل زد شب في متجرك الإلكتروني لتقديم خدمات الشحن والتوصيل لعملائك بعدة شركات نقل تحت عقد رقمي موحد. توفر الخدمة خيارات شحن متنوعة، وأسعار تنافسية، وإمكانية تخصيص الأسعار بدعم من فريق متخصص.",
+      "sectionTitle1": "ما هي زد شب؟",
+      "sectionTitle2": "هل توجد رسوم على خدمة زد شب؟",
+      "sectionTitle3": "ما الفرق بين تفعيل زد شب وتفعيل أي شركة شحن أخرى؟",
+      "title": "حول زد شب"
+    },
+    "fourthCollapse": {
+      "sectionDesc1List1": "الدفع الإلكتروني: يجب أن يكون المبلغ من فئة 50 ريالًا سعوديًا (مثل: 50، 100، 150...)، وبحد أقصى مليون ريال. بعد الدفع، يُشحن الرصيد فورًا وتُفعّل الخدمة، وتتحوّل الطلبات إلى حالة «جاهز» للشحن.",
+      "sectionDesc1List2": "التحويل البنكي: عند اختيار الدفع بالتحويل البنكي، يجب ألا يقل المبلغ عن 50.000 ريال سعودي. سيُعتمد التحويل في 48 ساعة عمل. وبعد الاعتماد، يمكنك البدء في استخدام زد لوجستيك وتحويل الطلبات إلى حالة «جاهز» للبدء في الشحن.",
+      "sectionDesc1List3": "عند اقتراب نفاد رصيدك، ستتلقى إشعارًا بالبريد الإلكتروني، ومع ذلك، ستظل خدمة زد لوجستيك تظهر خيارَ توصيل متاحًا للعملاء في متجرك حتى عند نفاد الرصيد.",
+      "sectionDesc1List4": "في حال عدم رغبتك في الاستمرار مع فريق زد لوجستيك، يمكنك استرداد المبلغ المدفوع مسبقًا والمتبقي في رصيدك الحالي.",
+      "sectionDesc2": "يمكنك متابعة جميع الشحنات المدفوعة مسبقًا في نافذة تحصيل الخدمة، بالإضافة إلى الشحنات التي خُصمت من رصيدك المسبق. كما ستصلك كل يوم أحد من كل أسبوع فاتورة أسبوعية بالبريد توضح المبالغ المخصومة من رصيدك مقابل توصيل الشحنات المُكتملة والمرتجعة.",
+      "sectionDesc3": "عند تفعيل خدمة الدفع عند الاستلام، تحصّل زد لوجستيك المبالغ عند التسليم، ثم تحوّلها في أسبوعين عمل.",
+      "sectionTitle1": "ما خيارات الدفع المسبق المتاحة في زد شب؟",
+      "sectionTitle2": "كيف أتابع العمليات المرتبطة بالدفع المسبق؟",
+      "sectionTitle3": "كيف تُحصَّل مبالغ الشحنات المدفوعة عند الاستلام؟",
+      "title": "تسوية المدفوعات في زد شب"
+    },
+    "secondCollapse": {
+      "sectionDesc1": "يعتمد اختيار المستوى المناسب على:",
+      "sectionDesc1List1": "1- نوع منتجاتك ووزنها، لتحديد طريقة الشحن الأنسب لك، مثل الشحن المبرد للمنتجات الغذائية وما يشابهها.",
+      "sectionDesc1List2": "2- سرعة التوصيل التي تفضلها",
+      "sectionDesc1List3": "3- السعر المناسب لك ولعملائك",
+      "sectionDesc1List4": "4- طريقة التوصيل الأنسب لك ولمتجرك، مثل: استلام الشحنات من مستودعك مباشرة، أو إيصالها إلى فرع شركة الشحن.",
+      "sectionDesc2List1": "يمكنك تفعيل طرق شحن إضافية في أي وقت بالنقر على زر «تفعيل طريقة الشحن».",
+      "sectionDesc2List2": "يمكنك إلغاء أي طريقة شحن في أي وقت بزر الإلغاء، ولكن يجب التأكد من تسليم جميع الشحنات المرتبطة بها قبل الإلغاء.",
+      "sectionDesc3List1": "عند تفعيل خدمة زد لوجستيك، يمكنك تخصيص أسعار طرق الشحن حسب تفضيلاتك بالنقر على «تخصيص». كما يمكنك تحديد المدن التي تغطيها كل طريقة شحن وتقييدها لتتناسب مع احتياجاتك.",
+      "sectionDesc3List2": "على سبيل المثال: إذا كانت طريقة شحن تدعم التوصيل لجميع مدن السعودية، واخترت تقييدها بمدن محددة مثل جدة أو الدمام أو أبها، فستظهر هذه الطريقة فقط للعملاء في تلك المدن.",
+      "sectionTitle1": "كيف أختار طرق الشحن المناسبة لمتجري؟",
+      "sectionTitle2": "بعد تفعيل طريقة الشحن، هل يمكنني إضافة طرق أخرى أو إلغاؤها؟",
+      "sectionTitle3": "هل يمكنني تخصيص الأسعار والمدن لكل طريقة شحن في زد شب؟",
+      "title": "طرق الشحن في زد شب"
+    },
+    "seventhCollapse": {
+      "sectionDesc1": "أولًا: الشحن باستخدام طريقة شحن أخرى. يوضّح الجدول التالي عدد الصناديق التي تدعمها كل طريقة.",
+      "sectionDesc2": "ثانيًا: شحن الصناديق الزائدة في شحنة جديدة:",
+      "sectionDesc3": "قد لا تحتاج إلى شحن صناديق متعددة إذا أمكنك استخدام عدد أقل بحجم أكبر، فقط تأكد من أن الحجم والوزن لا يتجاوزان المسموح به لطريقة الشحن المختارة.",
+      "sectionDesc3List1": "في هذه الحالة، ستُشحن الصناديق الزائدة في شحنة جديدة وطلب جديد، وسيتطلب ذلك رسوم شحن إضافية:",
+      "sectionDesc3List2": "١ - انتقل إلى صفحة الطلبات وأنشئ طلبًا جديدًا للعميل نفسه",
+      "sectionDesc3List3": "٢ - حدد طريقة الشحن نفسها وتفاصيل الطلب",
+      "sectionTitle1": "إذا كانت طريقة الشحن التي اخترتها لا تدعم عدد الصناديق الذي ترغب في شحنه، يمكنك تجربة أحد هذه الحلول.",
+      "sectionTitle2": "تغيير طريقة الشحن يعني أن وقت التوصيل والسعر سيتغيران حسب الاختيار الجديد",
+      "sectionTitle3": "ثالثًا: تقليل عدد الصناديق والتأكد من الوزن:",
+      "title": "شحن عدة طرود بزد شب"
+    },
+    "sixthCollapse": {
+      "sectionDesc1List1": "في المحادثات المباشرة، يمكنك اختيار نوع الاستفسار أو المشكلة مع زد شب وكتابتها",
+      "sectionDesc1List2": "يمكنك الاستفادة من خدمة الاستشارة المقدمة من فريق زد شب لمساعدتك في اختيار المستوى الأنسب، وذلك بحجز موعد استشارة مع عضو في الفريق بالنقر على إحدى طرق الشحن المفعلة، ثم اختيار عرض التفاصيل وحجز الاستشارة.",
+      "sectionTitle1": "كيف يمكنني التواصل مع فريق زد شب إذا كان لدي استفسار أو واجهتني مشكلة؟",
+      "title": "تواصل مع فريق زد شب"
+    },
+    "thirdCollapse": {
+      "sectionDesc1List1": "١ - تحويل حالة الطلب إلى \"جاهز\"",
+      "sectionDesc1List2": "٢ - طباعة بوليصة الشحن لكل طلب ولصقها على الجهة الخارجية من الشحنة",
+      "sectionDesc1List3": "٣ - فرز الشحنات لكل شركة شحن على حدة (يمكنك معرفة اسم شركة الشحن من أعلى بوليصة الشحن)",
+      "sectionDesc1List4": "٤ - تسليم شحنات كل شركة إلى مندوبها فقط. وإذا كانت الشحنات تابعة لأرامكس أو سمسا أو البريد السعودي، فسلّمها إلى أقرب فرع لك.",
+      "sectionDesc1List5": "تجنّب الآتي:",
+      "sectionDesc1List6": "- لا توصّل شركة شحن شحناتٍ تابعة لشركة أخرى.",
+      "sectionDesc1List7": "لا تسلّم أي شحنة دون تغليف مناسب يحميها من الفقد أو التلف.",
+      "sectionTitle1": "كيف تُسلَّم الشحنات في زد شب؟",
+      "title": "عملية تسليم الشحنات في زد شب"
+    }
+  },
+  "localDelivery": {
+    "columns": {
+      "deliveryCities": "المدن المتاحة للتوصيل",
+      "optionName": "اسم الخيار",
+      "status": "الحالة"
+    },
+    "details": {
+      "overview": {
+        "deliveryInfo": "ملاحظات العميل",
+        "noNotes": "لم تُضف ملاحظات",
+        "placeholder": "تُوصَّل الشحنات في غضون ساعة.",
+        "placeholder_ar": "تُوصَّل الشحنات في غضون ساعة.",
+        "placeholder_en": "Shipments will be delivered within an hour."
+      }
+    },
+    "dialog": {
+      "addTitle": "إضافة خيار التوصيل المحلي",
+      "alert": "اسم الخيار يظهر لك فقط، بينما العميل يرى اسم المندوب في المتجر. ستتمكن من تحديد المناطق والأسعار لاحقًا.",
+      "button": "تعريف مناطق التوصيل",
+      "description": "قدّم التوصيل إلى المنزل من متجرك، بفريقك أو بتطبيق طرف ثالث.",
+      "editDescription": "شارك تفاصيل التسليم التي يحتاجها العملاء مثل وقت الوصول المتوقع أو تعليمات خاصة.",
+      "editTitle": "تعديل خيار التوصيل المحلي",
+      "title": "خيار التوصيل المحلي"
+    },
+    "emptyState": {
+      "description": "لم تُضف مواقع للتوصيل المحلي بعد",
+      "title": "لم تُحدَّد مواقع التسليم المحلية"
+    }
+  },
+  "otherShippingProviders": {
+    "areYouSureYouWantToActivate": "هل أنت متأكد من رغبتك في تفعيل {{name}} في متجرك؟",
+    "cashOnDelivery": "الدفع عند الاستلام (COD)",
+    "companyUrl": "رابط شركة الشحن",
+    "completetionAlert": "أكمل تسجيلك في شركة الشحن أولًا، ثم عُد هنا لتفعيل الخدمة.",
+    "confirmAccountActivation": {
+      "title": "تأكيد التفعيل"
+    },
+    "deleteConfirmation": "هل أنت متأكد من إلغاء تفعيل خيار الشحن {{name}}؟ إذا رغبت في إعادة تفعيله لاحقًا، ستحتاج لإتمام خطوات التفعيل من جديد.",
+    "disableConfirmation": "هل أنت متأكد من إخفاء خيار الشحن {{name}}؟ سيُخفى من واجهة متجرك ولن يظهر للعملاء.",
+    "editSettings": {
+      "description": "تأكد أولًا من تفعيل حسابك لدى {{name}} قبل تفعيل هذه الخدمة",
+      "title": "تعديل الإعدادات"
+    },
+    "ensureAccountActivation": "تأكد أولًا من تفعيل حسابك لدى {{name}} قبل تفعيل هذه الخدمة.",
+    "linkedInventoryLocation": "موقع المخزون المرتبط",
+    "requestAccountActivation": "طلب تفعيل الحساب",
+    "shippingDetailAramexDetail": "لمراجعة تفاصيل مناطق التوصيل، وتكلفة الشحن، ومدة الاستلام والتسليم، والتحصيل، والأوزان، والضريبة، ارجع إلى عقدك مع شركة الشحن.",
+    "shippingTypes": {
+      "customOption": "خيار مخصص",
+      "hippingCompany": "شركة الشحن",
+      "pickup": "الاستلام",
+      "shippingAndFulfillmentCompany": "شركة الشحن والتنفيذ",
+      "shippingOptions": "خيارات الشحن"
+    },
+    "supportEmail": "البريد الإلكتروني للدعم"
+  },
+  "pickupOption": {
+    "alert": {
+      "description": "نُقلت إعدادات «الاستلام من المتجر» إلى صفحة <1>المخازن</1>. انتقل إليها لإجراء التعديلات.",
+      "title": "نُقلت إعدادات الاستلام من المتجر"
+    },
+    "columns": {
+      "inventory": "المخزون",
+      "name": "اسم خيار الاستلام"
+    },
+    "details": {
+      "overview": {
+        "placeholder": "يمكنك استلام طلبك يوميًا من الساعة ١٠ص حتى ٩م.",
+        "placeholder_ar": "يمكنك استلام طلبك يوميًا من الساعة ١٠ص حتى ٩م.",
+        "placeholder_en": "Pickup available daily from 10 AM to 9 PM.."
+      }
+    },
+    "emptyState": {
+      "description": "لم تُضف مواقع لاستلام الطلب بعد",
+      "title": "لم تُحدَّد مواقع الاستلام"
+    }
+  },
+  "prepaidPackages": {
+    "activateMethod": "تفعيل طريقة الشحن",
+    "addToCart": "إضافة إلى السلة",
+    "addWaybill": "أضف {{leftCount}} بوليصة شحن للحصول على عرض بـ{{price}}",
+    "addWaybills": "أضف {{waybillsLeftToNextPackage}} بوليصة شحن إضافية لـ...",
+    "alert": "يجب تفعيل خيار الشحن لشراء باقات مسبقة الدفع.",
+    "bestOffer": "🎉 حصلت على أفضل عرض لبوليصات الشحن وأطول مدة صلاحية",
+    "bulkShippingLabelPricing": "تسعير بوليصات الشحن بالجملة",
+    "comparisonWithBasePrice": "مقارنة بالسعر الأساسي",
+    "countShippingLabelsAtPrice": "{{count}} بوليصة شحن <times>×</times> <amount><currency/> {{price}}</amount>",
+    "countShippingLabelsAtPrice_few": "{{count}} بوليصات شحن <times>×</times> <amount><currency/> {{price}}</amount>",
+    "countShippingLabelsAtPrice_many": "{{count}} بوليصة شحن <times>×</times> <amount><currency/> {{price}}</amount>",
+    "countShippingLabelsAtPrice_one": "بوليصة شحن واحدة <times>×</times> <amount><currency/> {{price}}</amount>",
+    "countShippingLabelsAtPrice_other": "{{count}} بوليصة شحن <times>×</times> <amount><currency/> {{price}}</amount>",
+    "countShippingLabelsAtPrice_two": "بوليصتا شحن <times>×</times> <amount><currency/> {{price}}</amount>",
+    "countShippingLabelsAtPrice_zero": "{{count}} بوليصة شحن <times>×</times> <amount><currency/> {{price}}</amount>",
+    "countWB": "{{count}} بوليصة شحن",
+    "countWB_few": "{{count}} بوليصات شحن",
+    "countWB_many": "{{count}} بوليصة شحن",
+    "countWB_one": "بوليصة شحن واحدة",
+    "countWB_other": "{{count}} بوليصة شحن",
+    "countWB_two": "بوليصتا شحن",
+    "countWB_zero": "{{count}} بوليصة شحن",
+    "discountCount": "خصم ({{count}}٪)",
+    "discountCount_few": "خصم ({{count}}٪)",
+    "discountCount_many": "خصم ({{count}}٪)",
+    "discountCount_one": "خصم ({{count}}٪)",
+    "discountCount_other": "خصم ({{count}}٪)",
+    "discountCount_two": "خصم ({{count}}٪)",
+    "discountCount_zero": "خصم ({{count}}٪)",
+    "enterNumberOfWaybills": "أدخل عدد بوليصات الشحن المطلوبة",
+    "fromShippingLabels": "من {{min_balance}} إلى {{max_balance}} بوليصة شحن",
+    "noPurchasedLabels": "لا توجد بوليصات مشتراة",
+    "packageValidity": "الباقة صالحة لمدة {{count}} شهر من تاريخ الشراء وتنتهي في {{expiryDate}}.",
+    "packageValidity_few": "الباقة صالحة لمدة {{count}} أشهر من تاريخ الشراء وتنتهي في {{expiryDate}}.",
+    "packageValidity_many": "الباقة صالحة لمدة {{count}} شهرًا من تاريخ الشراء وتنتهي في {{expiryDate}}.",
+    "packageValidity_one": "الباقة صالحة لمدة شهر واحد من تاريخ الشراء وتنتهي في {{expiryDate}}.",
+    "packageValidity_other": "الباقة صالحة لمدة {{count}} شهر من تاريخ الشراء وتنتهي في {{expiryDate}}.",
+    "packageValidity_two": "الباقة صالحة لمدة شهرين من تاريخ الشراء وتنتهي في {{expiryDate}}.",
+    "packageValidity_zero": "الباقة صالحة لمدة {{count}} شهر من تاريخ الشراء وتنتهي في {{expiryDate}}.",
+    "percentOff": "خصم {{discount}}٪",
+    "remainingLabels": "البوليصات المتبقية: {{remainingLabels}}",
+    "removeFromCart": "إزالة من السلة",
+    "save": "وفر {{price}}",
+    "theInventory": "المخزون",
+    "warningMessage": "باقات البوليصات تشمل تكلفة الشحن فقط، ولا تتضمن رسومًا إضافية (مثل رسوم الوزن الزائد أو الدفع عند الاستلام أو الاستلام عبر مندوب زد).",
+    "waybillsAmount": "عدد بوليصات الشحن",
+    "youCantAddLessThan": "لا يمكنك إضافة أقل من {{minBalance}} بوليصة شحن",
+    "zidshipPackagesWithYour": "باقات زد لوجستيك مع مجموعتك {{groupName}}"
+  },
+  "prepaidPackagesReports": {
+    "columns": {
+      "balance": "الرصيد",
+      "expireDate": "تاريخ الانتهاء",
+      "packageName": "اسم الباقة",
+      "price": "السعر",
+      "remainingBalance": "الرصيد المتبقي",
+      "transactionDate": "تاريخ العملية",
+      "transactionNumber": "رقم العملية"
+    },
+    "showShipments": "عرض الشحنات",
+    "waybill": "بوليصة شحن"
+  },
+  "pricingZone": {
+    "addNewRate": "إضافة منطقة جديدة",
+    "addPricingZone": "إضافة منطقة",
+    "customRates": {
+      "columns": {
+        "fields": {
+          "allRates": "جميع التسعيرات",
+          "cities": "المدن",
+          "cod": "الدفع عند الاستلام (COD)",
+          "costOrAdditionalWeight": "التكلفة للوزن الإضافي",
+          "forEachAdditional1Kg": "لكل 0.5 كجم إضافي",
+          "globalShippingRate": "تكلفة الشحن",
+          "name": "المنطقة",
+          "price": "السعر",
+          "reset": "إعادة تعيين",
+          "shippingPrice": "سعر الشحن",
+          "type": "النوع",
+          "upTo": {
+            "5Kg": "إلى 0.5 كجم"
+          },
+          "valueCities": "{{value}} مدينة"
+        }
+      },
+      "customRatesTitle": "المناطق والتسعير",
+      "description": "أنشئ مناطق مخصصة لطريقة الشحن هذه. لن يرى العملاء إلا التغطية والرسوم التي حددتها، بينما تُحسب عليك التسعيرة الأساسية في خانة «التفاصيل».",
+      "description2": "حدد تسعيرات الشحن بناءً على مناطق التوصيل.",
+      "emptyState": {
+        "button": "إضافة منطقة",
+        "description": "إنشاء مناطق جديدة سيلغي التغطية الأصلية. أضف كل المدن المطلوبة لضمان بقاء الخدمة متاحة لعملائك.",
+        "title": "لا توجد مناطق مخصّصة"
+      },
+      "globalDescription": "حدّد أسعار شحن العملاء بناءً على منطقة التوصيل. يُحتسب عليك السعر الافتراضي، بينما يدفع العملاء السعر المخصص الذي تُحدّده.",
+      "localDeliveryButton": "إضافة منطقة",
+      "localDeliveryDescription": "أنشئ مناطقك وحدّد رسوم التوصيل وخيار الدفع عند الاستلام لكل منطقة. تطبق هذه الإعدادات على مناديب المتجر فقط.",
+      "localDeliveryTitle": "مناطق التوصيل المحلي",
+      "popupDescription": "ستُخصم تكلفة بوليصة الشحن وأي رسوم وزن زائد من محفظتك عند اكتمال تجهيز الطلب.",
+      "popupTitle": "تسعيرة الشحن",
+      "title": "التخصيص",
+      "warningMessage": "عند تفعيل المناطق المخصصة، ستقتصر تغطية عملائك على المدن التي تضيفها. ننصحك بالتأكد من إدراج جميع المدن المطلوبة."
+    },
+    "customerRates": "تسعيرات شحن العملاء",
+    "customerRatesDescription": "حدد أسعار الشحن بناءً على مدينة التوصيل. السعر الافتراضي يُخصم منك، والعميل يدفع السعر الذي تحدده.",
+    "description": "أكمل تفعيل التوصيل المحلي بإضافة المناطق التي تخدمها وأسعارها.",
+    "form": {
+      "activateCashOnDelivery": {
+        "label": "الدفع عند الاستلام (COD)"
+      },
+      "addCustomTextForTheCustomer": {
+        "description": "يرى العميل هذا الخيار عند اختيار طريقة الشحن هذه في صفحة الدفع.",
+        "label": "الملاحظة",
+        "title": "ملاحظة مخصصة",
+        "tooltip": "هذه الملاحظة ستظهر لعملائك عند اختيار طريقة الشحن هذه أثناء الدفع."
+      },
+      "basePrice": {
+        "helperText": "السعر الأساسي الافتراضي هو {{rate}}",
+        "helperText2": "السعر الأساسي هو {{rate}}",
+        "label": "السعر الأساسي"
+      },
+      "citiesCount": "{{count}} من {{total}} مدينة",
+      "citiesCount_few": "{{count}} من {{total}} مدن",
+      "citiesCount_many": "{{count}} من {{total}} مدينة",
+      "citiesCount_one": "مدينة واحدة من {{total}} مدينة",
+      "citiesCount_other": "{{count}} من {{total}} مدينة",
+      "citiesCount_two": "مدينتان من {{total}} مدينة",
+      "citiesCount_zero": "{{count}} من {{total}} مدينة",
+      "codPrice": {
+        "label": "سعر الدفع عند الاستلام (COD)",
+        "placeholder": "0"
+      },
+      "customerPrice": "سعر العميل",
+      "maximumWeight": {
+        "helperText": "الوزن الأساسي الافتراضي هو {{kg}} كجم",
+        "label": "الوزن الأساسي",
+        "placeholder": "حدد الحد الأقصى للوزن المسموح به"
+      },
+      "pricingAndPaymentOptions": {
+        "flatRate": "سعر ثابت",
+        "flatRateDescription": "يحاسب العميل بسعر ثابت واحد، ويتحمل التاجر أي تكلفة إضافية.",
+        "weightBasedRate": "تسعيرة حسب الوزن",
+        "weightBasedRateDescription": "يحاسب العميل بناءً على وزن الطلب."
+      },
+      "selectAreas": "اختر المناطق",
+      "selectCities": {
+        "label": "اختر المدن",
+        "usage": "مستخدمة في منطقة أخرى «{{zone}}»"
+      },
+      "shipmentCalculationForEachExtraWeight": {
+        "helperText": "وحدة الوزن الإضافية الافتراضية هي {{kg}} كجم",
+        "label": "لكل وزن زائد",
+        "placeholder": "أدخل طريقة حساب الشحن لكل وزن زائد"
+      },
+      "shipmentCostForExtraWeight": {
+        "helperText": "السعر الافتراضي هو {{rate}} لكل وحدة إضافية",
+        "label": "الرسوم الإضافية",
+        "placeholder": "أدخل تكلفة الشحن للوزن الزائد"
+      },
+      "shippingPricing": {
+        "helperText": "سعر الشحن الافتراضي هو {{rate}}",
+        "label": "سعر الشحن",
+        "placeholder": "أدخل سعر الشحن"
+      },
+      "zoneName": {
+        "helperText": "للمرجع فقط. لن يراه العملاء.",
+        "label": "اسم المنطقة",
+        "placeholder": {
+          "ar": "منطقة محلية",
+          "en": "Domestic zone"
+        }
+      }
+    },
+    "title": "تكوين مناطق التسليم",
+    "zoneDetails": "تفاصيل المنطقة"
+  },
+  "root": {
+    "activeShippingMethods": {
+      "title": "طرق الشحن المفعّلة"
+    },
+    "customShippingMethods": {
+      "description": "أضف طرق توصيلك وشحنك وفعّلها بسهولة.",
+      "title": "شحن مخصص"
+    },
+    "otherShippingProviders": {
+      "description": "اكتشف خيارات الربط البديلة مع مزودي خدمة الشحن والتخزين.",
+      "title": "شركات الشحن الأخرى"
+    },
+    "shippingLabelTransactions": {
+      "button": "أرصدة باقات البوليصات",
+      "description": "تابع رصيد بوليصات الشحن التي اشتريتها وحالة استخدامها.",
+      "title": "رصيد بوليصات الشحن"
+    },
+    "shippingRules": {
+      "columns": {
+        "criteria": "المعايير",
+        "name": "الاسم",
+        "shippingMethods": "طرق الشحن"
+      },
+      "description": "حدّد طريقة الشحن تلقائيًا باستخدام شروط مثل: حجم السلة ونوع المنتجات وقناة البيع ومجموعة العملاء وغيرها.",
+      "title": "شروط الشحن"
+    }
+  },
+  "senderProfile": {
+    "description": "أضف بيانات المرسل لكل مخزن لاستخدامها في بوليصات الشحن وإدارة نقاط التواصل مع شركات الشحن.",
+    "editDialog": {
+      "createTitle": "إنشاء بيانات المرسل",
+      "description": "ستُطبَّق التغييرات على بوليصات الشحن الجديدة الصادرة من هذا المخزن.",
+      "email": "البريد الإلكتروني",
+      "fullName": "الاسم الكامل",
+      "inventory": "المخزن",
+      "inventoryRequired": "اختر مخزنًا",
+      "officerName": "اسم المسؤول",
+      "phoneNumber": "رقم الهاتف",
+      "title": "تعديل بيانات المرسل لـ {{inventoryName}}"
+    },
+    "senderInformation": {
+      "addContact": "إضافة مرسل",
+      "description": "أضف بيانات المرسل لكل مخزن لاستخدامها في بوليصات الشحن وإدارة نقاط التواصل مع شركات الشحن.",
+      "title": "بيانات المرسل للشحن"
+    },
+    "table": {
+      "inventoryName": "اسم المخزن",
+      "officerName": "اسم مسؤول الشحن",
+      "status": "الحالة"
+    },
+    "title": "بيانات المرسل للشحن"
+  },
+  "serviceLevelDetails": {
+    "allDeliveryCities": "جميع مدن التوصيل",
+    "allReceivingCities": "جميع مدن الاستلام",
+    "areas": "مناطق التغطية",
+    "cardFeatures": {
+      "cashOnDelivery": "الدفع عند الاستلام (COD)",
+      "costOfCashOnDelivery": "رسوم الدفع عند الاستلام (COD)",
+      "deliveryPeriod": "مدة التوصيل",
+      "notSupported": "غير مدعوم",
+      "numberOfBoxes": "حد الصناديق",
+      "pickupWindow": "موعد الاستلام",
+      "priceForEachAdditionalKg": "{{price}} لكل {{kg}} كجم إضافي",
+      "priceForEachAdditionalKm": "{{price}} لكل {{km}} كم إضافي",
+      "pricePerKg": "{{price}} حتى {{kg}} كجم",
+      "pricePerKm": " لأول {{km}} كم",
+      "pricesDoNotIncludeVAT": "الأسعار لا تشمل ضريبة القيمة المضافة",
+      "selectZone": "اختر المنطقة",
+      "shippingCost": "تكلفة الشحن",
+      "shippingCostForAdditionDistance": "تكلفة إضافية لكل كيلومتر إضافي",
+      "shippingCostForAdditionWeight": "تكلفة الشحن للوزن الزائد",
+      "supported": "مدعوم",
+      "valueBoxAsMaximum": "أقصى حد {{value}} صندوق"
+    },
+    "cardOptions": {
+      "fields": {
+        "deliveryCities": "مدن التوصيل",
+        "pricingName": "اسم التسعيرة",
+        "shippingPrice": "سعر الشحن"
+      },
+      "flatRate": "سعر ثابت",
+      "pricingZoneDeleteConfirmation": "إذا حُذف التخصيص نهائيًا، فستُحذف المدن المخصصة ولن تظهر للعملاء في المتجر لهذا المستوى.",
+      "valueCities": "{{value}} مدينة",
+      "weightBasedRate": "حسب الوزن"
+    },
+    "countriesAndCities": "الدول والمدن",
+    "custumization": {
+      "title": "التخصيص"
+    },
+    "fulfillmentSettings": {
+      "autoDispatch": "إرسال الطلبات تلقائيًا",
+      "inventorySync": "مزامنة المخزون",
+      "title": "إعدادات التنفيذ"
+    },
+    "globalShippingMethodDetails": "تفاصيل طريقة الشحن العامة",
+    "more": "+{{count}} المزيد",
+    "overview": {
+      "cashOnDelivery": {
+        "description": "فعّل الدفع عند الاستلام وحدد رسومًا مخصصة عند الحاجة",
+        "inputCodPriceLabel": "سعر الدفع عند الاستلام",
+        "inputHelperText": "سعر التاجر هو {{merchantRate}}",
+        "title": "الدفع عند الاستلام (COD)"
+      },
+      "coverage": {
+        "description": "المدن المتاحة لهذه الخدمة • تشمل {{citiesCount}} مدينة",
+        "globalDescription": "الدول المتاحة لهذه الخدمة • تشمل {{countriesCount}} دولة",
+        "title": "التغطية"
+      },
+      "customNote": {
+        "description": "ملاحظة مخصصة لطريقة الشحن تعرض للعملاء في صفحة إتمام الشراء.",
+        "label": "الملاحظة",
+        "noteContentArabic": "الملاحظة (العربية)",
+        "noteContentEnglish": "الملاحظة (الإنجليزية)",
+        "noteDesc": "أضف ملاحظة مخصصة تعرض للعملاء في صفحة إتمام الشراء.",
+        "title": "ملاحظة مخصصة"
+      },
+      "customizationAlert": "أُضيف التخصيص: حُدّثت بعض معلومات المعاينة. لم تعد الملاحظات والدفع عند الاستلام عامة، بل تُطبَّق لكل منطقة مخصصة.",
+      "description": "ملخص لخيارات التوصيل والإعدادات.",
+      "globalTermsAndConditions": "الشحن الدولي",
+      "localTermsAndConditions": "الشحن المحلي",
+      "merchantRate": {
+        "description": "السعر الأساسي للتاجر يُطبَّق عند تغيير حالة الطلب إلى «جاهز».",
+        "globalDescription": "السعر الأساسي للتاجر يُطبَّق عند تغيير حالة الطلب إلى «جاهز». يتحمل المستلم أي رسوم جمركية أو ضرائب استيراد (DDU).",
+        "popupDescription": "السعر الافتراضي لبوليصة الشحن المطبق عند تحويل الطلب إلى «جاهز».",
+        "popupTitle": "السعر",
+        "title": "تسعيرة الشحن"
+      },
+      "pickupAndDelivery": {
+        "description": "تفاصيل الاستلام، عدد الصناديق المقبولة، ومدة الشحن التقديرية.",
+        "popupTitle": "الاستلام والتوصيل",
+        "title": "تفاصيل الخدمة"
+      },
+      "priorityPickup": {
+        "description": "خاصية حصرية تتيح لك جدولة أوقات استلام الشحنات بسرعة وسلاسة (متاحة في <bold>الرياض وجدة</bold> فقط، مقابل 2 ريال لكل طلب).",
+        "enableLabel": "تفعيل الاستلام عبر مندوب زد",
+        "notSupportedMessage": "غير مدعوم في المخزن الحالي",
+        "title": "الاستلام عبر مندوب زد"
+      },
+      "supportedCities": "المدن المدعومة للتوصيل",
+      "supportedCountries": "الدول المدعومة للتوصيل",
+      "termsAndConditions": "شروط وأحكام",
+      "title": "التفاصيل الأساسية"
+    },
+    "regularShipping": "شحن عادي",
+    "resetCitiesAndPricesDesc": "عند الاستمرار في إعادة الإعدادات الافتراضية، ستُحذف جميع التخصيصات السابقة للمدن والأسعار.",
+    "searchByCity": "ابحث باسم المدينة",
+    "searchByCountry": "ابحث باسم الدولة",
+    "selfDropInstruction": {
+      "additionalInfo": "للمزيد من المعلومات،",
+      "additionalInfoLabel": "معلومات إضافية",
+      "calloutMessage": "يمكنك طلب استلام الشحنات من مخزنك عندما يكون لديك ٥ شحنات أو أكثر بتحويل الطلبات إلى «جاهز»؛ أما الكميات القليلة فيجب إيداعها يدويًا في الخزانة.",
+      "cardCodeLabel": "رمز الإيداع الذاتي",
+      "description": "لاستخدام خدمة الاستلام الذاتي، يجب عليك تفعيل مستوى الخدمة أولاً.",
+      "dropOffLink": "اطّلع على تعليمات خزائن ريدبوكس",
+      "lockerSize": {
+        "large": "كبير:",
+        "medium": "متوسط:",
+        "small": "صغير:"
+      },
+      "lockerSizeLabel": "أبعاد خزائن ريدبوكس",
+      "qrLabel": "بطاقة الإيداع الذاتي",
+      "steps": {
+        "download": "تحميل رمز الاستلام الذاتي",
+        "enterCode": "إدخال الرمز",
+        "findLocker": "العثور على الصندوق",
+        "followScreen": "اتبع تعليمات الشاشة لاستلام الشحنة",
+        "login": "انقر على «تسجيل دخول التاجر أو المندوب» على الشاشة."
+      },
+      "title": "الإيداع الذاتي"
+    },
+    "shippingCompanies": "شركات الشحن",
+    "specialRates": {
+      "allCities": "كل المدن",
+      "from": "من",
+      "price": "السعر",
+      "title": "الأسعار الخاصة",
+      "to": "إلى"
+    },
+    "tabs": {
+      "overview": "التفاصيل الأساسية"
+    },
+    "termsAndConditions": "الشروط والأحكام",
+    "viewingInventory": "المخزون المحدد:"
+  },
+  "serviceLevels": {
+    "activate": "تفعيل",
+    "activateFastServiceLevel": "تفعيل طريقة شحن {{name}}",
+    "activatePriorityPickup": "تفعيل الاستلام عبر مندوب زد",
+    "activateServiceLevel": "تفعيل مستوى الخدمة ({{name}})",
+    "activateServiceLevelDescription": "يمكنك تفعيل هذا المستوى {{name}} إذا كان غير مفعّل",
+    "activated": "مفعل",
+    "activationCondtions": {
+      "aramexGcc": {
+        "term_1": "الحد الأقصى للوزن هو الحد الأقصى للوزن المقبول بالأسعار المحددة، وسيُحتسب أي كيلوغرام إضافي وفقًا للأسعار المذكورة في تفاصيل مستوى الخدمة.",
+        "term_10": "عند الشحن إلى دولة قطر، تُخصم المستحقات التالية من محفظتك تلقائيًا حسب قيمة الشحنة:\nإذا كانت الشحنة بين 1 و272 دولارًا: 20 ريالًا قطريًا رسوم البيان الجمركي، ودولاران رسوم التخليص الجمركي.\nأما إذا تجاوزت 272 دولارًا: تُحسب %5 رسوم خدمة، و20 ريالًا قطريًا رسوم البيان الجمركي، و5.5 دولار رسوم التخليص الجمركي.",
+        "term_11": "عند الشحن إلى سلطنة عُمان، تُخصم المستحقات التالية من محفظتك تلقائيًا حسب قيمة الشحنة:\nإذا كانت الشحنة بين 1 و259 دولارًا: تُحسب %5 ضريبة دولة، وريال عُماني واحد رسوم البيان الجمركي، و2.6 دولار رسوم التخليص الجمركي.\nإذا كانت بين 259 و777 دولارًا: تُحسب %5 ضريبة دولة، و%5 رسوم خدمة، وريال عُماني واحد رسوم البيان الجمركي، و4 دولارات رسوم التخليص الجمركي.\nأما إذا تجاوزت 777 دولارًا: تُحسب %5 ضريبة دولة، و%5 رسوم خدمة، و15 ريالًا عُمانيًا رسوم البيان الجمركي، و4 دولارات رسوم التخليص الجمركي.",
+        "term_2": "إذا وُجد فرق في الوزن عند وصول الشحنة إلى مستودع زد شب أو مستودع شركة الشحن للميل الأخير، يُحدَّث الوزن تلقائيًا، وتُحسب تكلفة الشحن الجديدة ويُخصم الفارق من محفظتك.",
+        "term_3": "يُحسب الوزن الحجمي بحساب أبعاد الشحنة، والطريقة كالتالي بالتفاصيل والأمثلة لحساب الوزن الحجمي البعدي عند أرامكس وغيرها: الوزن الحجمي البعدي: هو الوزن العيني للشحنة بأخذ أبعاد الشحنة (الطول x العرض x الارتفاع)",
+        "term_4": "بخصوص شركات الشحن والتعامل معها، تأخذ شركات الشحن بالوزن الأعلى دائمًا. مثال: شحنة وزنها الفعلي 10 كيلو ووزنها الحجمي 1 كيلو يُؤخذ فيها بالوزن الفعلي، وشحنة وزنها الفعلي 1 كيلو ووزنها الحجمي 10 كيلو يُؤخذ فيها بالوزن الحجمي. طريقة حساب الوزن الحجمي البعدي هي: (الطول x العرض x الارتفاع) / 4000 (للشحنات الداخلية) و(الطول x العرض x الارتفاع) / 5000 (للشحنات الدولية). الوزن الخاضع للرسوم هو الوزن الحجمي أو الوزن الإجمالي أيهما أعلى.",
+        "term_5": "إذا كانت لدى التاجر ملاحظات (اعتراض) على الفاتورة المصدرة له، فيحق له الاعتراض في غضون (5) أيام من تاريخ صدور الفاتورة.",
+        "term_6": "لا يحق للتاجر الاعتراض بعد مضي المدة المحددة في البند السابق، وتُعد الفاتورة مستحقة الدفع.",
+        "term_7": "المستحقات التي ستُخصم من المحفظة عند الشحن إلى دولة الكويت: إذا كان مبلغ الشحنة من 1 إلى 330 دولارًا، فستُفرض رسوم تُخصم من المحفظة، وهي: دينار كويتي واحد رسوم البيان الجمركي، و5 دولارات رسوم التخليص الجمركي. وإذا كان مبلغ الشحنة أكثر من 330 دولارًا، فستُفرض رسوم تُخصم من المحفظة، وهي: 5٪ مستحقات خدمة، ودينار كويتي واحد رسوم البيان الجمركي، و10 دولارات رسوم التخليص الجمركي",
+        "term_8": "المستحقات التي ستُخصم من المحفظة عند الشحن إلى دولة البحرين: إذا كان مبلغ الشحنة من 1 إلى 770 دولارًا، فلن تُفرض رسوم على الشحنة. وإذا كان مبلغ الشحنة أكثر من 770 دولارًا، فستُفرض رسوم تُخصم من المحفظة، وهي: 10٪ ضريبة الدولة، و5٪ مستحقات خدمة، و5 دنانير بحرينية رسوم البيان الجمركي، و8 دولارات رسوم التخليص الجمركي",
+        "term_9": "المستحقات التي ستُخصم من المحفظة عند الشحن إلى دولة الإمارات: إذا كان مبلغ الشحنة من 1 إلى 272 دولارًا، فستُفرض رسوم تُخصم من المحفظة، وهي: 5٪ ضريبة الدولة. وإذا كان مبلغ الشحنة أكثر من 272 دولارًا، فستُفرض رسوم تُخصم من المحفظة، وهي: 5٪ ضريبة الدولة، و5٪ مستحقات خدمة، و40 درهمًا إماراتيًا رسوم البيان الجمركي، و5.5 دولار رسوم التخليص الجمركي"
+      },
+      "dhl": {
+        "term_1": "السعر يشمل وزن حتى 0.5 كجم، وكل 0.5 كجم إضافي عليه رسوم.",
+        "term_2": "قد تُفرض رسوم إضافية على: العطور، البضائع الخطرة، الثلج الجاف، أو بطاريات الليثيوم.",
+        "term_3": "السعر يشمل رسوم وقود بنسبة 25.75%.",
+        "term_4": "خدمة الدفع عند الاستلام غير متوفرة حالياً.",
+        "term_5": "الأسعار تختلف حسب المنطقة.",
+        "term_6": "يتحمّل التجار تكاليف أي أضرار تحدث."
+      },
+      "lockers": {
+        "term_1": "الحد الأقصى للوزن: 35 كجم، والأبعاد: 351 × 430 × 500 ملم.",
+        "term_2": "الدفع عند الاستلام متاح بالدفع الإلكتروني فقط باستخدام Visa وMada وApple Pay وMasterCard.",
+        "term_3": "السعر يشمل التخزين 48 ساعة."
+      },
+      "onDemand": {
+        "desc": "تفعيل الخاصية يضمن تمكّن عملائك من إدخال مواقعهم وعرض خيارات التوصيل المتاحة.",
+        "term_1": "استلام الشحنات متاح يوميًا من الساعة 11:00 صباحًا حتى 1:00 صباحًا، طوال أيام الأسبوع.",
+        "term_2": "يجب ألا يتجاوز حجم الشحنة 20 كيلوجرامًا.",
+        "term_3": "يجب التأكد من جاهزية العميل النهائي لاستلام الشحنة قبل تحويل الطلب إلى «جاهز».",
+        "term_4": "إذا لم يتوفر سائق وقت تحويل الطلب إلى «جاهز»، فيمكنك إعادة تفعيل الطلب وإنشاء شحنة أخرى.",
+        "term_5": "يجب ألا يتجاوز حجم الشحنة 20 كيلوجرامًا.",
+        "title": "يجب تفعيل خرائط جوجل قبل متابعة التفعيل"
+      },
+      "transcorp": {
+        "desc": "إذا كانت شحناتك أقل من ذلك، فقد يُرفض الاستلام ويتحمل التاجر مسؤولية التأخير، أو يُطلب منك تسليم الشحنات إلى فرع الشركة في حي الدار البيضاء في الرياض.",
+        "title": "الحد الأدنى للاستلام في هذه الخدمة 5 شحنات يوميًا"
+      }
+    },
+    "agreeToTerms": "بالموافقة على الشروط والأحكام",
+    "benefits": "الفوائد",
+    "cities": "مدينة",
+    "columns": {
+      "actions": "الإجراءات",
+      "coverage": "التغطية",
+      "logo": "الشعار",
+      "name": "الاسم",
+      "startingRate": "السعر الأساسي",
+      "status": "الحالة"
+    },
+    "countRemainingLabels": "{{count}} بوليصة متبقية من رصيد الباقة",
+    "countRemainingLabels_few": "{{count}} بوليصات متبقية من رصيد الباقة",
+    "countRemainingLabels_many": "{{count}} بوليصة متبقية من رصيد الباقة",
+    "countRemainingLabels_one": "بوليصة متبقية واحدة من رصيد الباقة",
+    "countRemainingLabels_other": "{{count}} بوليصة متبقية من رصيد الباقة",
+    "countRemainingLabels_two": "بوليصتان متبقيتان من رصيد الباقة",
+    "countRemainingLabels_zero": "{{count}} بوليصة متبقية من رصيد الباقة",
+    "deactivate": "إلغاء التفعيل",
+    "deactivateConfirmation": "هل أنت متأكد من إلغاء التفعيل؟ ستُخفى هذه الطريقة فورًا من صفحة إتمام عملية الشراء",
+    "deactivateDescription": "أخبرنا بسبب إلغاء تفعيل طريقة الشحن هذه، فهذا يساعدنا على تحسين خدماتنا.",
+    "deactivateError": "تعذّر إلغاء تفعيل طريقة الشحن",
+    "deactivateFeedback": {
+      "additionalFeedback": "تعليق إضافي",
+      "feedbackPlaceholder": "شارك التفاصيل (مثال: تأخير التوصيل، أسعار غير متوقعة)",
+      "question": "ما هو السبب الرئيسي لإلغاء تفعيل هذا المستوى؟",
+      "selectReason": "اختر السبب",
+      "submitAndDeactivate": "إلغاء التفعيل",
+      "title": "حسّن تجربتك في الشحن معنا"
+    },
+    "deactivateSuccess": "أُلغي تفعيل طريقة الشحن",
+    "deactivateTitle": "إلغاء تفعيل طريقة الشحن",
+    "deactivationReasons": {
+      "additionalFeedback": "ملاحظات إضافية (اختياري)",
+      "feedbackPlaceholder": "أخبرنا المزيد عن تجربتك...",
+      "notNeeded": "لم تعد مطلوبة",
+      "other": "سبب آخر",
+      "poorService": "جودة خدمة ضعيفة",
+      "required": "اختر سببًا",
+      "switchingProvider": "الانتقال إلى مزود آخر",
+      "title": "لماذا تلغي تفعيل طريقة الشحن هذه؟",
+      "tooExpensive": "مكلفة جداً"
+    },
+    "description": "نظرة عامة على جميع خيارات الشحن مع متوسط أوقات التوصيل والشروط",
+    "fastServiceActivationDescription": "الاستلام عبر مندوب زد خاصية حصرية تتيح لك جدولة أوقات استلام الشحنات بسرعة وسلاسة (متاحة في <bold>الرياض وجدة</bold> فقط، مقابل <bold>2 ريال</bold> لكل طلب).",
+    "fields": {
+      "benefits": {
+        "label": "المميزات",
+        "placeholder": "اختر"
+      },
+      "cashOnDelivery": {
+        "label": "الدفع عند الاستلام"
+      },
+      "deliveryTime": {
+        "label": "وقت التوصيل"
+      },
+      "destination_cities": {
+        "label": "المدن الوجهة",
+        "placeholder": "اختر المدن"
+      },
+      "fulfillment": {
+        "label": "طريقة التنفيذ",
+        "placeholder": "اختر"
+      },
+      "location": {
+        "label": "التغطية",
+        "value": "{{cities}} مدينة",
+        "valueCountries": "{{countries}} دولة"
+      },
+      "price": {
+        "label": "سعر البوليصة"
+      },
+      "search": {
+        "label": "البحث باسم طريقة الشحن"
+      }
+    },
+    "inventoryDescription": "يُفعَّل المستوى على المخزون: {{inventory}}",
+    "mainTitle": "طرق الشحن",
+    "new": "جديد",
+    "newestFirst": "الأحدث أولاً",
+    "noActiveShippingMethods": "لا توجد طرق شحن مفعّلة",
+    "noActiveShippingMethodsDescription": "لا توجد طرق شحن مفعّلة",
+    "noDefaultInventory": {
+      "desc": "لا يوجد مخزون افتراضي. أضف مخزونًا لتفعيل زد شب."
+    },
+    "noPrepaidLabels": "لا توجد بوليصات مسبقة الدفع",
+    "noPrepaidPackages": "لا توجد بوليصات مسبقة الدفع",
+    "noShippingMethodsAvailable": "لا توجد طرق شحن متاحة",
+    "noShippingMethodsAvailableDescription": "لم نتمكن من العثور على طرق شحن للمخزون المحدد.",
+    "oldestFirst": "الأقدم أولاً",
+    "packagesDelivered": "{{label}} شحنة مُعالَجة",
+    "prepaid": "بوليصات شحن مخفضة",
+    "prepaidLabelsDescription": "لتفعيل طريقة الشحن هذه، يجب عليك شراء بوليصات مسبقة الدفع.",
+    "prepaidLabelsNeeded": "شراء بوليصات الشحن",
+    "price": "السعر",
+    "purchaseLabels": "شراء بوليصات",
+    "remainingLabels": "بوليصة متبقية",
+    "selectShippingOrigin": "اختر موقع المخزون الذي ستشحن منه لعرض طرق الشحن.",
+    "serviceLevelIsNotSupported": {
+      "desc": "طريقة الشحن غير مدعومة في المخزون {{name}}"
+    },
+    "settings": {
+      "bankingInformation": {
+        "description": "باقات بوليصات الشحن",
+        "fields": {
+          "iban": "رقم الآيبان (IBAN)",
+          "logo": "الشعار",
+          "name": "الاسم"
+        },
+        "ibanIncorrect": "رقم الآيبان غير صحيح، عدّله لتفعيل زد شب.",
+        "ibanRequired": "يجب إدخال رقم الآيبان (IBAN) لتفعيل زد شب.",
+        "notAvailable": "غير متاح",
+        "title": "بيانات الحساب البنكي"
+      },
+      "commercialRegistryInformation": {
+        "doYouHaveACommercialRegistration": "هل لديك سجل تجاري؟",
+        "fields": {
+          "civilId": {
+            "label": "رقم الهوية الوطنية",
+            "placeholder": "أدخل رقم الهوية الوطنية"
+          },
+          "commercialRegistrationNumber": {
+            "label": "رقم السجل التجاري",
+            "placeholder": "أدخل رقم السجل التجاري"
+          }
+        },
+        "invalidPhoneNumberFormat": "رقم الجوال غير صحيح. اكتبه بصيغة دولية تبدأ برمز الدولة (مثل: ‎+966XXXXXXXXX).",
+        "title": "بيانات السجل التجاري"
+      },
+      "contactInformation": {
+        "description": "أدخل معلومات الشخص المسؤول عن تسليم الشحنات والتنسيق مع شركات الشحن",
+        "fields": {
+          "email": {
+            "label": "البريد الإلكتروني",
+            "placeholder": "أدخل البريد الإلكتروني"
+          },
+          "fullName": {
+            "label": "الاسم الكامل",
+            "placeholder": "أدخل الاسم الكامل"
+          },
+          "storeName": {
+            "label": "اسم المتجر",
+            "placeholder": "أدخل اسم المتجر"
+          }
+        },
+        "title": "بيانات التواصل"
+      },
+      "noInventory": "لا يوجد مخزون. أضف مخزونًا لتفعيل زدشب",
+      "noInventoryAddress": "لا يوجد مخزون. أضف مخزونًا لتفعيل زدشب",
+      "otp": {
+        "description": "أُرسل رمز التحقق إلى رقم جوالك {{phoneNumber}}. أدخله أدناه للمتابعة.",
+        "didntGetCode": "لم تحصل على الرمز؟",
+        "fields": {
+          "code": {
+            "label": "رمز التحقق",
+            "placeholder": "× × × ×"
+          }
+        },
+        "notVerified": "الرمز غير صحيح",
+        "sendAgain": "انقر لإعادة الإرسال",
+        "title": "التحقق من رقم الهاتف"
+      },
+      "useNewAccount": "استخدام حساب جديد"
+    },
+    "shipments": {
+      "emptyState": {
+        "button": "تصفّح طرق الشحن",
+        "description": "فعّل طرق الشحن لتبدأ استلام الشحنات وتتبعها بسهولة",
+        "title": "لا توجد شحنات بعد"
+      }
+    },
+    "startingRate": "السعر الأساسي",
+    "status": {
+      "activated": "مفعل",
+      "new": "جديد"
+    },
+    "title": "طرق الشحن",
+    "transactions": {
+      "emptyState": {
+        "description": "عند بدء إنشاء بوليصات الشحن، ستظهر الرسوم والتسويات هنا.",
+        "title": "لا توجد عمليات شحن بعد"
+      }
+    },
+    "tryOurLatestShippingMethod": "جرّب أحدث طرق الشحن"
+  },
+  "shipments": {
+    "columns": {
+      "chargeType": {
+        "COD_FEES": "رسوم الدفع عند الاستلام",
+        "COD_SETTLEMENT": "مستحقات الدفع عند الاستلام",
+        "CUSTOM_CLEARANCE_FEES": "رسوم التخليص الجمركي",
+        "DISPOSAL_FEES": "رسوم التخليص",
+        "FIRST_MILE_PICKUP_FEES": "رسوم التسليم الأول",
+        "HANDLING_FEES": "رسوم التعامل",
+        "OTHER": "أخرى",
+        "POS_FEES": "رسوم الدفع بالبطاقة (POS)",
+        "RTO_FEES": "رسوم التحويل المرتد",
+        "SERVICE_CHARGE": "رسوم الدفع عند الاستلام",
+        "SHIPPING_CHARGE": "رسوم الشحن",
+        "SHIPPING_FEES": "رسوم الشحن",
+        "WEIGHT_CHANGE": "رسوم الوزن الزائد",
+        "WEIGHT_FEES": "رسوم الوزن الزائد",
+        "title": "نوع الرسوم"
+      },
+      "customer": "العميل",
+      "customerName": "اسم العميل",
+      "destinationCity": "مدينة الوجهة",
+      "numberOfBoxes": "عدد الصناديق",
+      "orderNumber": "رقم الطلب",
+      "paymentSource": {
+        "labelCredit": "بوليصة الشحن",
+        "title": "مصدر الدفع",
+        "wallet": "المحفظة"
+      },
+      "paymentStatus": "حالة الدفع",
+      "paymentType": "نوع الدفع",
+      "referenceNumber": "المرجع",
+      "serviceLevel": "مستوى الخدمة",
+      "shipmentNumber": "رقم الشحنة",
+      "shipmentStatus": "حالة الشحنة",
+      "shipmentStatusLabel": "حالة الشحنة",
+      "shipmentWeight": "وزن الشحنة",
+      "shippingCompany": "شركة الشحن",
+      "shippingCost": "تكلفة الشحن",
+      "shortAddress": "العنوان الوطني",
+      "trackingNumber": "رقم التتبع"
+    },
+    "details": {
+      "destination": "الوجهة",
+      "noTrackingData": "أُلغيت الشحنة",
+      "noTrackingDataDescription": "لا تتوفر معلومات تتبع لأن الشحنة ملغاة. إذا كان لديك استفسار، تواصل مع الدعم.",
+      "orderDetails": "تفاصيل الطلب",
+      "reportIssue": "الإبلاغ عن مشكلة",
+      "shipmentCreated": "أُنشئت الشحنة",
+      "title": "تفاصيل الشحنة",
+      "trackingDescription": "تتبع تحديثات شركة الشحن ومسار التوصيل.",
+      "trackingTitle": "تتبع الشحنة",
+      "weight": "الوزن"
+    },
+    "print": {
+      "noOrders": "لا توجد طلبات",
+      "numberOfCustomShippingOrders": "عدد طلبات الشحن المخصصة",
+      "numberOfNewOrInProgressOrders": "عدد الطلبات الجديدة أو قيد التنفيذ",
+      "numberOfOrdersWithAWaybill": "عدد الطلبات مع بوليصة",
+      "numberOfOrdersWithoutAWaybill": "عدد الطلبات بدون بوليصة",
+      "ordersCount": "{{count}} طلب",
+      "ordersCount_few": "{{count}} طلبات",
+      "ordersCount_many": "{{count}} طلباً",
+      "ordersCount_one": "طلب واحد",
+      "ordersCount_other": "{{count}} طلب",
+      "ordersCount_two": "طلبان",
+      "ordersCount_zero": "{{count}} طلب"
+    },
+    "printInvoiceAndWaybillTogether": "طباعة الفاتورة والبوليصة معاً",
+    "printWaybill": "طباعة البوليصة",
+    "shippingCostTooltip": "حُسبت تكلفة الشحن بناءً على وزن الشحنة وطريقة الشحن المختارة.",
+    "showSupportTicket": "عرض التذكرة",
+    "tabs": {
+      "codSettlement": "تسوية الدفع عند الاستلام",
+      "serviceCharges": "رسوم الشحن"
+    }
+  },
+  "shippingConstraints": {
+    "description": "حدد القواعد والشروط التي تتحكم في ظهور كل طريقة شحن للعملاء.",
+    "title": "قيود طرق الشحن"
+  },
+  "shippingPrioritization": {
+    "description": "اختر ترتيب ظهور خيارات الشحن للعملاء في صفحة الدفع.",
+    "helperText": "عيّن ترتيب طرق الشحن كما تظهر للعملاء عند الدفع.",
+    "title": "أولوية عرض طرق الشحن"
+  },
+  "shippingProviderDetails": {
+    "cashOnDeliveryFee": "رسوم الدفع عند الاستلام",
+    "chargesCollectionDue": "موعد تحصيل الرسوم",
+    "maximumShipmentWeight": "الوزن الأقصى للشحنة",
+    "pricingAndRules": "التسعير والقواعد",
+    "shipmentCostsInsideCity": "تكاليف الشحنة (داخل المدينة)",
+    "shipmentCostsOutsideCity": "تكاليف الشحنة (خارج المدينة)",
+    "shipmentCostsRange": "تكاليف الشحنة",
+    "theCostOfDeliveryIsCalculatedAccordingToTheContractAgreed": "تُحسب تكلفة التوصيل حسب العقد المتفق عليه بين التاجر وشركة الشحن"
+  },
+  "shippingRateCalculator": {
+    "activate": "تفعيل",
+    "calculateRates": "حساب الأسعار",
+    "description": "احسب تكلفة الشحن التقديرية حسب شركة الشحن والوجهة ووزن الشحنة.",
+    "estimatedDeliveryTime": "الوقت المتوقع للتسليم: يوم إلى يومين",
+    "fillInformation": "أدخل تفاصيل الشحنة لعرض الخيارات والأسعار التقديرية.",
+    "height": "الارتفاع",
+    "length": "الطول",
+    "noOptions": "لا توجد خيارات شحن متاحة",
+    "notFound": {
+      "description": "لم نتمكن من العثور على طرق شحن في منطقتك.",
+      "title": "لا توجد خيارات شحن متاحة"
+    },
+    "packageDetails": "تفاصيل الشحنة",
+    "selectInventory": "اختر المخزن",
+    "shippingFrom": "الشحن من",
+    "shippingTo": "الشحن إلى",
+    "totalWeight": "وزن الشحنة",
+    "width": "العرض",
+    "zidLogisticsOptions": "طرق الشحن"
+  },
+  "shippingZonesUpgrade": {
+    "applyDefaultSettings": {
+      "customerRates": {
+        "description": "إذا كنت تريد تطبيق الرسوم الافتراضية (أو رسوم الدفع عند الاستلام إذا كانت متاحة) مباشرة على العملاء في صفحة الدفع.",
+        "title": "رسوم الشحن"
+      },
+      "title": "طبق الإعدادات الافتراضية إذا",
+      "zonesCoverage": {
+        "description": "إذا كنت تريد دعم جميع المدن/المناطق التي يغطيها مزود الشحن تلقائيًا ودون استثناءات.",
+        "title": "المناطق والتغطية"
+      }
+    },
+    "buttons": {
+      "applyDefaultSettings": "تطبيق الإعدادات الافتراضية",
+      "customizeFromScratch": "تخصيص من الصفر"
+    },
+    "customizeFromScratch": {
+      "customerRates": {
+        "description": "إذا كنت تريد تحديد رسوم مختلفة لكل مدينة/منطقة.",
+        "title": "رسوم الشحن"
+      },
+      "title": "خصّص من الصفر إذا",
+      "zonesCoverage": {
+        "description": "إذا كنت تريد استثناء مدن/مناطق محددة من التغطية.",
+        "title": "المناطق والتغطية"
+      }
+    },
+    "description": "طوّرنا إعدادات الشحن لتمنحك تحكمًا أفضل، وشفافية أوضح، وتقليلًا للأخطاء.",
+    "instruction": "حدّث إعدادات طريقة الشحن كالآتي:",
+    "title": "✨ نظام مناطق وأسعار الشحن الجديد",
+    "warning": {
+      "description": "تأكد من مراجعة الإعدادات بعد الحفظ، فستُطبَّق مباشرة على عملائك في صفحة الدفع.",
+      "title": "راجع إعداداتك بعد التأكيد"
+    }
+  },
+  "statuses": {
+    "activationPending": "قيد التفعيل",
+    "deactivationSuccess": "أُلغي التفعيل"
+  },
+  "storeBanner": {
+    "button": "اطلب الآن",
+    "description": "صناديق، أكياس، لفائف، ملصقات، طابعات، وأكثر بكثير...",
+    "title": "اطلب احتياجاتك من التغليف والشحن الآن"
+  },
+  "support": "مدعوم",
+  "tiers": {
+    "noTiers": "خاصية الأسعار المخصصة غير متاحة",
+    "noTiersDescription": "فعّل مستوى الخدمة لتخصيص خيارات الشحن",
+    "title": "المستويات",
+    "upgradeDescription": "وصلت إلى الحد الأقصى للإضافات في باقتك. لتخصيص خيارات الشحن بلا حدود، رقِّ باقتك"
+  },
+  "tooltips": {
+    "prioritizeShipping": "عيّن ترتيب طرق الشحن كما تظهر للعملاء عند الدفع."
+  },
+  "yup": {
+    "invalidFileType": "نوع الملف غير صالح",
+    "langRequired": "مطلوب لغة واحدة على الأقل"
+  }
+}

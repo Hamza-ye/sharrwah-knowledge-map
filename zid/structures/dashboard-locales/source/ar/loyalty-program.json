@@ -1,0 +1,93 @@
+{
+  "analytics": {
+    "earnedPoints": "النقاط المكتسبة",
+    "numberOfCustomers": "عدد العملاء الذين كسبوا نقاطًا",
+    "pendingPoints": {
+      "points": "{{ number }} نقطة معلّقة حتى تُنفَّذ الطلبات",
+      "points_one": "{{ number }} نقطة معلّقة حتى تُنفَّذ الطلبات"
+    },
+    "redeemedPoints": "النقاط المُستبدلة",
+    "title": "التحليلات"
+  },
+  "buyingFromStore": "الشراء من المتجر",
+  "buyingFromZidCashier": "الشراء من محاسب زد",
+  "columns": {
+    "discountValue": "قيمة الخصم",
+    "redemptionMethods": "طرق استبدال النقاط",
+    "requiredPoints": "النقاط المطلوبة"
+  },
+  "content": "المحتوى",
+  "deactivateConfirmation": "هل أنت متأكد من رغبتك في إيقاف برنامج الولاء؟",
+  "deactivation": {
+    "reasons": {
+      "1": "نظام النقاط غير مرن",
+      "2": "عدم توفر الدعم لبرنامج الولاء هذا",
+      "3": "لا يلبي توقعاتي",
+      "4": "تجربة سيئة مع برنامج الولاء",
+      "5": "أخرى (وضّح)",
+      "addNotes": "ملاحظات إضافية"
+    },
+    "subtitle": "ما السبب الرئيسي لرغبتك في إيقاف تفعيل مكافأة؟",
+    "title": "ساعدنا في تحسين زد الجديدة كلياً"
+  },
+  "earningPointsMethods": {
+    "description": "تحكّم بطريقة كسب العملاء للنقاط وآلية استبدالها",
+    "title": "طرق كسب النقاط"
+  },
+  "editCashbackRule": "تعديل قاعدة الاسترداد النقدي",
+  "editCashbackRuleTooltip": "تُحتسب النقاط بناءً على مجموع أسعار المنتجات فقط دون احتساب تكاليف إضافية.",
+  "editInfoButton": "تعديل المحتوى",
+  "emptyState": {
+    "button": "تفعيل برنامج الولاء",
+    "description": "عزّز ولاء عملائك وشجّعهم على تكرار الشراء ببرنامج يكافئ كل عملية شراء",
+    "title": "88٪ من عملائك أكثر عرضة للعودة عند وجود برنامج ولاء"
+  },
+  "enableLoyaltyProgram": "تفعيل برنامج الولاء في متجرك",
+  "form": {
+    "discountValue": "قيمة الخصم",
+    "edit": {
+      "title": "تعديل طريقة الاستبدال"
+    },
+    "every": "كل",
+    "fixedAmount": "مبلغ ثابت",
+    "method": "الطريقة",
+    "requiredPoints": "النقاط المطلوبة",
+    "wins": "الأرباح"
+  },
+  "loyaltyProgram": "برنامج الولاء",
+  "loyaltyProgramDescription": "مكّن عملاءك من كسب نقاط ولاء مع كل عملية شراء من متجرك.",
+  "notActivate": {
+    "description": "عزّز ولاء عملائك وشجّعهم على تكرار الشراء ببرنامج يكافئ كل عملية شراء.",
+    "title": "88٪ من العملاء يعودون عند وجود برامج ولاء"
+  },
+  "pointsEarningMethodsExplanationEnd": "نقطة",
+  "pointsEarningMethodsExplanationMiddle": "تمنح العميل",
+  "pointsEarningMethodsExplanationStart": "كل",
+  "pointsExpiryPeriod": {
+    "daysAmountLabel": "صلاحية نقاط العميل",
+    "description": "حدّد مدة صلاحية النقاط التي يكسبها العميل",
+    "title": "مدة صلاحية النقاط"
+  },
+  "redeemingPointsMethods": {
+    "description": "يمكنك إضافة 10 عناصر على الأكثر",
+    "title": "طرق استبدال النقاط"
+  },
+  "redemptionMethodDeleteConfirmation": "هل أنت متأكد من حذف طريقة الاستبدال هذه؟",
+  "setupInfoButton": "وصف برنامج الولاء",
+  "title": "العنوان",
+  "titlePlaceholder": "أضف عنوانًا لبرنامج الولاء",
+  "trial": {
+    "content": "لديك رصيد من {{discounts}} خصم. يمكنك شراء المزيد من الخصومات من خصائص المتجر أو الترقية لباقة أعلى.",
+    "contentNotActivate": "لديك رصيد من {{discounts}} خصم تجريبي. فعّل برنامج الولاء في متجرك لتكون متاحة لعملائك",
+    "content_error": "يمكنك شراء المزيد من الخصومات من خصائص المتجر أو الترقية لباقة أعلى. تتوفر هذه الخاصية مجانًا في باقة «الاحترافية» وما فوق.",
+    "content_info": "لديك رصيد من {{discounts}} خصم. يمكنك شراء المزيد من الخصومات من خصائص المتجر أو الترقية لباقة أعلى.",
+    "content_warning": "تبقى لديك 4 خصومات تجريبية. يمكنك شراء المزيد من خصائص المتجر أو الترقية لباقة أعلى.",
+    "packageUpgrade": "ترقية الباقة",
+    "purchaseFromStoreAddOns": "شراء من إضافات المتجر",
+    "title": "لديك رصيد تجريبي",
+    "titleNotActivate": "لديك رصيد تجريبي غير مفعّل",
+    "title_error": "نفد رصيدك من الخصومات",
+    "title_info": "لديك رصيد تجريبي",
+    "title_warning": "رصيدك على وشك النفاد"
+  }
+}

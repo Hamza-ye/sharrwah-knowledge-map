@@ -1,0 +1,171 @@
+{
+  "reportType": {
+    "sales": "تقرير المبيعات"
+  },
+  "reports": {
+    "allReports": "جميع التقارير",
+    "configurator": {
+      "comparison": {
+        "compared": "مقارنة",
+        "comparisonOverlapWarning": "يتداخل النطاق الزمني المحدد مع فترة المقارنة. ستؤدي المتابعة إلى إعادة تعيين المقارنة.",
+        "comparisonToPast": "المقارنة بفترة سابقة",
+        "noComparison": "بدون مقارنة",
+        "presets": {
+          "previousMonth": "الشهر السابق",
+          "previousPeriod": "الفترة السابقة",
+          "previousWeek": "الأسبوع السابق",
+          "previousYear": "السنة السابقة",
+          "previousYearMatchDow": "السنة السابقة (يوم الأسبوع)"
+        }
+      },
+      "dimensions": {
+        "label": "العرض حسب",
+        "placeholder": "مثال: حسب مدينة عنوان الشحن"
+      },
+      "filters": {
+        "addFilter": "إضافة فلتر",
+        "apply": "تطبيق",
+        "condition": "الشرط",
+        "enterValue": "أدخل القيمة",
+        "selectCondition": "اختر الشرط",
+        "selectFilter": "اختر الفلتر",
+        "selectValue": "اختر القيمة",
+        "value": "القيمة",
+        "valueFrom": "من",
+        "valueList": "القيم (مفصولة بفواصل)",
+        "valueTo": "إلى"
+      },
+      "invalidDateRange": "اختر نطاق تاريخ صالحًا.",
+      "metric": "المؤشر",
+      "operators_!=": "لا يساوي",
+      "operators_<": "أقل من",
+      "operators_<=": "أقل من أو يساوي",
+      "operators_=": "يساوي",
+      "operators_>": "أكبر من",
+      "operators_>=": "أكبر من أو يساوي",
+      "operators_between": "بين",
+      "operators_in": "ضمن",
+      "operators_not_in": "ليس ضمن",
+      "selector": {
+        "dimensionTitle": "اختر البُعد",
+        "maxSelectionsReached": "يمكنك اختيار {{count}} مؤشرات على الأكثر",
+        "maxSelectionsReached_few": "يمكنك اختيار {{count}} مؤشرات على الأكثر",
+        "maxSelectionsReached_many": "يمكنك اختيار {{count}} مؤشرًا على الأكثر",
+        "maxSelectionsReached_one": "يمكنك اختيار مؤشر واحد على الأكثر",
+        "maxSelectionsReached_other": "يمكنك اختيار {{count}} مؤشر على الأكثر",
+        "maxSelectionsReached_two": "يمكنك اختيار مؤشرين على الأكثر",
+        "maxSelectionsReached_zero": "لا يمكنك اختيار مؤشرات",
+        "metricTitle": "اختر المؤشر",
+        "noResults": "لا توجد نتائج",
+        "notCompatible": "غير متوافق",
+        "searchPlaceholder": "ابحث بالفئات أو المؤشرات",
+        "selected": "محدد"
+      },
+      "title": "إعداد التقرير"
+    },
+    "create": {
+      "nameLabel": "اسم التقرير",
+      "namePlaceholderAr": "اسم التقرير (عربي)",
+      "namePlaceholderEn": "اسم التقرير (إنجليزي)",
+      "title": "إنشاء تقرير"
+    },
+    "details": {
+      "delete": "حذف",
+      "deleteDialog": {
+        "confirm": "حذف",
+        "message": "هل أنت متأكد من رغبتك في حذف هذا التقرير؟ لا يمكن التراجع عن هذا الإجراء.",
+        "title": "حذف التقرير"
+      },
+      "errors": {
+        "configInvalid": "لا يمكن عرض إعداد هذا التقرير.",
+        "createFailed": "تعذّر إنشاء هذا التقرير. حاول مرة أخرى.",
+        "errors_configInvalid": "لا يمكن عرض إعداد هذا التقرير.",
+        "errors_queryTimeout": "استغرق التقرير وقتاً طويلاً. حاول تبسيط إعداداتك.",
+        "errors_rateLimited": "طلبات كثيرة جدًا. انتظر {{seconds}} ثانية.",
+        "invalidDateRange": "اختر نطاق تاريخ صالحًا.",
+        "queryTimeout": "استغرق التقرير وقتاً طويلاً. حاول تبسيط إعداداتك.",
+        "rateLimited": "طلبات كثيرة جدًا. انتظر {{seconds}} ثانية.",
+        "refreshFailed": "تعذّر تحديث هذا التقرير. حاول مرة أخرى.",
+        "saveFailed": "تعذّر حفظ هذا التقرير. حاول مرة أخرى."
+      },
+      "lastRefreshed": "آخر تحديث في {{time}}",
+      "title": "تفاصيل التقرير",
+      "unsavedChanges": {
+        "cancel": "البقاء",
+        "confirm": "مغادرة",
+        "message": "لم تُحفظ تغييراتك. هل أنت متأكد من رغبتك في مغادرة الصفحة؟",
+        "title": "لديك تغييرات غير محفوظة"
+      }
+    },
+    "feedback": {
+      "descriptionPlaceholder": "اكتب اقتراحك أو صف المشكلة التي واجهتك في التقارير...",
+      "storeIdIsNotDefined": "معرّف المتجر غير متوفر. حدّث الصفحة وحاول مرة أخرى.",
+      "submitButton": "إرسال ملاحظاتي",
+      "successMessage": "أُرسلت ملاحظاتك. شكرًا لك!",
+      "title": "إرسال ملاحظات حول التقارير",
+      "typeLabel": "نوع الملاحظة",
+      "typeProblem": "مشكلة في التقارير",
+      "typeSuggestion": "اقتراح لتحسين التقارير"
+    },
+    "list": {
+      "createNew": "إنشاء جديد",
+      "lastViewed": "آخر مشاهدة",
+      "neverViewed": "—",
+      "requestReport": "طلب تقرير",
+      "title": "التقارير",
+      "zidCreatedBadge": "زد"
+    },
+    "noResults": {
+      "createReport": "إنشاء تقرير",
+      "description": "لم تُنشئ تقارير بعد",
+      "searchDescription": "حاول تعديل كلمات البحث للعثور على ما تبحث عنه.",
+      "searchTitle": "لا توجد تقارير تطابق بحثك",
+      "title": "لا توجد تقارير"
+    },
+    "pinnedReports": "التقارير المثبتة",
+    "pinnedReportsShowLess": "عرض أقل",
+    "pinnedReportsShowMore": "عرض المزيد",
+    "pinnedSuccess": "ثُبّت التقرير",
+    "rename": {
+      "title": "تعديل اسم التقرير",
+      "zidReportAlert": "لأن زد أنشأ هذا التقرير، سيُنشئ تعديل اسمه نسخة منه بالاسم الجديد",
+      "zidReportConfirm": "سينشئ نسخة من التقرير بالاسم الجديد. هل أنت متأكد من رغبتك في المتابعة؟"
+    },
+    "reportsInTotal": "{{count}} تقارير إجمالاً",
+    "saveAs": {
+      "copySuffix": "(نسخة)",
+      "copySuffix_ar": "(نسخة)",
+      "copySuffix_en": "(Copy)",
+      "title": "حفظ في تقرير جديد"
+    },
+    "table": {
+      "displaySettings": "إعدادات العرض",
+      "groupBy": {
+        "label": "تجميع حسب",
+        "none": "بدون تجميع"
+      },
+      "ordering": {
+        "ascending": "تصاعدي",
+        "default": "الترتيب الافتراضي",
+        "descending": "تنازلي"
+      }
+    },
+    "truncatedResults": "تُعرض أول 1,000 صف. أضف فلاتر أخرى لعرض نتائج أدق.",
+    "unpinnedSuccess": "أُلغي تثبيت التقرير",
+    "visualization": {
+      "bar": "مخطط أعمدة",
+      "dimensionSelector": {
+        "placeholder": "مثال: حسب مدينة عنوان الشحن"
+      },
+      "line": "مخطط خطي",
+      "metricSelector": {
+        "placeholder": "مثال: إجمالي المبيعات"
+      },
+      "number": "رقم",
+      "pie": "مخطط دائري",
+      "table": "جدول فقط",
+      "title": "المخطط البياني"
+    }
+  },
+  "totalEqual": "الإجمالي -"
+}

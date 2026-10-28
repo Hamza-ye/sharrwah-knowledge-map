@@ -1,0 +1,484 @@
+{
+  "abandonedCarts": "السلات المتروكة",
+  "action": "الإجراءات",
+  "addresses": "العناوين",
+  "addressesEmptyDescription": "أضف عنوان شحن ليستخدمه العميل عند الطلب.",
+  "addressesEmptyTitle": "لا توجد عناوين محفوظة",
+  "allDonations": "جميع التبرعات",
+  "allOrders": "جميع الطلبات",
+  "averageOrderValue": "متوسط قيمة الطلب",
+  "averageValueDonation": "متوسط قيمة التبرع",
+  "bannedCustomerAlertDescription": "لا يمكنك إنشاء طلبات ولا إرسال إشعارات حتى يُفعَّل العميل.",
+  "bannedCustomerAlertTitle": "هذا العميل غير مفعل",
+  "business": "شركة",
+  "cancelledOrders_few": "{{count}} طلبات ملغاة",
+  "cancelledOrders_many": "{{count}} طلبًا ملغى",
+  "cancelledOrders_one": "طلب واحد ملغى",
+  "cancelledOrders_other": "{{count}} طلب ملغى",
+  "cancelledOrders_two": "طلبان ملغيان",
+  "cancelledOrders_zero": "لا توجد طلبات ملغاة",
+  "cartNumber": "السلة رقم #{{id}}",
+  "cartsAbandonedSinceRegistration_few": "ترك {{count}} سلات دون إتمام الشراء",
+  "cartsAbandonedSinceRegistration_many": "ترك {{count}} سلةً دون إتمام الشراء",
+  "cartsAbandonedSinceRegistration_one": "ترك سلة واحدة دون إتمام الشراء",
+  "cartsAbandonedSinceRegistration_other": "ترك {{count}} سلة دون إتمام الشراء",
+  "cartsAbandonedSinceRegistration_two": "ترك سلتين دون إتمام الشراء",
+  "cartsAbandonedSinceRegistration_zero": "لم يترك سلة",
+  "codAvailable": "الدفع عند الاستلام",
+  "codAvailableDescription": "يظهر خيار الدفع عند الاستلام لهذا العميل عند إتمام الطلب.",
+  "columns": {
+    "channel": "قناة الوصول",
+    "cod": "الدفع عند الاستلام",
+    "customerCount": "عدد العملاء",
+    "customerName": "اسم العميل",
+    "customerPercentage": "النسبة المئوية من إجمالي العملاء",
+    "donorCount": "عدد المتبرعين",
+    "donorPercentage": "النسبة المئوية من إجمالي المتبرعين",
+    "emailStatus": "حالة البريد الإلكتروني",
+    "lastOrder": "آخر طلب",
+    "newsletter": "الإعلانات والتحديثات",
+    "ngoLastOrder": "آخر تبرع",
+    "ngoOrdersCount": "إجمالي التبرعات",
+    "ordersCount": "إجمالي الطلبات",
+    "phone": "رقم الهاتف",
+    "pointsCount": "نقاط الولاء",
+    "productName": "المنتج",
+    "question": "السؤال",
+    "rating": "التقييم",
+    "reward": "المكافأة",
+    "subscriptionDate": "تاريخ الاشتراك",
+    "whatsappStatus": "حالة واتساب"
+  },
+  "completedDonations": "التبرعات المكتملة",
+  "completedOrders": "الطلبات المكتملة",
+  "createAddress": "إنشاء عنوان",
+  "createCustomer": "إنشاء عميل جديد",
+  "createNewDonation": "إنشاء تبرع جديد",
+  "createNewOrder": "إنشاء طلب للعميل",
+  "customerGroups": "المجموعات",
+  "customerNote": "ملاحظات العميل",
+  "customerNoteDescription": "ملاحظاتك ستظهر فقط لأعضاء فريقك، ولن تظهر للعملاء.",
+  "customerNotePlaceholder": "ملاحظات داخلية عن العميل، يطّلع عليها فريق العمل فقط",
+  "customerNotifications": {
+    "analytics": {
+      "description": "في الشهر الجاري",
+      "emailNotifiedCount": "إشعارات البريد الإلكتروني المرسلة",
+      "notifiedCount": "إجمالي الإشعارات المرسلة",
+      "person": "شخص",
+      "purchasedTotal": "المبيعات",
+      "reminder": "تنبيه",
+      "title": "التحليلات",
+      "totalCount": "عدد الإشعارات المسجلة",
+      "whatsappNotifiedCount": "إشعارات واتساب المرسلة"
+    },
+    "buttonText": "نص الزر",
+    "buttonTextCharCount": "عدد الأحرف 5 / 24",
+    "buttons": "الأزرار",
+    "buttonsDescription": "أضف أزرارًا تمكّن عملاءك من فتح المنتج المحدد أو نسخ كود الخصم.",
+    "copyCouponButton": "نسخ كود الخصم",
+    "copyCouponCode": "نسخ كود الخصم",
+    "copyCouponDescription": "الكود الذي يمكن للعميل نسخه بسهولة.",
+    "couponCode": "كود الخصم",
+    "couponCodePlaceholder": "كود الخصم",
+    "customerName": "اسم العميل",
+    "details": "التفاصيل",
+    "email": "البريد الإلكتروني",
+    "emptyState": {
+      "button": "إعدادات إشعارات المخزون",
+      "description": "أعد استهداف العملاء المهتمين تلقائيًا عند إعادة المخزون، وحقق أقصى استفادة من كل فرصة بيع.",
+      "title": "زد فرصك لبيع أكثر بأدوات ذكية ورؤى متقدمة."
+    },
+    "exportDialogSuccess": "أُرسلت القائمة إلى البريد الإلكتروني.",
+    "filters": {
+      "channel": "القناة",
+      "channelBoth": "كلاهما",
+      "channelEmail": "البريد الإلكتروني",
+      "channelWhatsapp": "واتساب"
+    },
+    "helperTextAreaEmail": "يملأ النظام اسم العميل واسم المنتج ورابطه تلقائيًا.",
+    "helperTextEmail": "سيظهر هذا العنوان فقط للرسائل المرسلة بالبريد الإلكتروني.",
+    "message": "الرسالة",
+    "messageLanguage": "لغة الرسالة",
+    "offer": "العرض",
+    "offerDescription": "اختر إذا كنت تريد إرسال عرض مع إشعار توفر المخزون",
+    "productLink": "رابط المنتج",
+    "productLinkButton": "زر رابط المنتج",
+    "productLinkDescription": "رابط المنتج المتوفر مجددًا الذي سيُوجَّه إليه العملاء عند النقر على الزر.",
+    "productName": "اسم المنتج",
+    "productUrl": "رابط المنتج",
+    "seeProductPlaceholder": "عرض المنتج",
+    "sendBy": "الإرسال عبر",
+    "sendByDescription": "حدد القناة التي تريد استخدامها لإرسال الإشعار",
+    "sendSuccess": "أُرسلت الرسالة.",
+    "sendingTimeAfter": "بعد",
+    "sinceRestockingTheProduct": "منذ إعادة توفير المنتج",
+    "status": {
+      "new": "جديد",
+      "notified": "تم الإشعار",
+      "purchased": "تم الشراء"
+    },
+    "storeName": "اسم المتجر",
+    "storeUrl": "رابط المتجر",
+    "tabs": {
+      "currentMonth": "الشهر الجاري",
+      "currentYear": "السنة الحالية",
+      "lastMonth": "الشهر الماضي",
+      "today": "اليوم",
+      "yesterday": "الأمس"
+    },
+    "textAreaMessage": "عزيزي (اسم العميل)، المنتج (اسم المنتج) متوفر الآن في المتجر.",
+    "title": "إرسال رسالة جديدة",
+    "titleCoupon": "كود الخصم",
+    "titleEmail": "عنوان البريد الإلكتروني",
+    "titleLabel": "العنوان",
+    "updateSuccess": "حُدّثت الإعدادات.",
+    "whatsapp": "واتساب",
+    "whatsappSendConfirm": "هل أنت متأكد من إرسال إشعار واتساب إلى {{name}}؟",
+    "whatsappSentSuccess": "أُرسل إشعار واتساب",
+    "whatsappSubscriptionExpiredButton": "تجديد/إعادة تفعيل اشتراك الواتساب",
+    "whatsappSubscriptionExpiredSubtitle": "جدّد اشتراكك أو أعد تفعيله للاستمرار في استخدام إشعارات توفر المنتج بالواتساب.",
+    "whatsappSubscriptionExpiredTitle": "انتهى اشتراكك / أُلغي تفعيل الواتساب.",
+    "withoutOffer": "بدون عرض"
+  },
+  "customerSince": "عميل منذ",
+  "customerSource": "قناة وصول العميل",
+  "customerType": "نوع العميل",
+  "customersGroups": {
+    "appliedFilters": "التصفية المطبقة:",
+    "conditions": {
+      "addCondition": "إضافة شرط",
+      "collapseAll": "طي الكل",
+      "condition": "شرط",
+      "description": "أضف شرطًا واحدًا أو أكثر لتحديد العملاء المشمولين في المجموعة تلقائيًا.",
+      "expandAll": "توسيع الكل",
+      "labels": {
+        "accountStatus": "حالة الحساب",
+        "adsAndSubscription": "الإعلانات والاشتراك",
+        "customerChannel": "قناة العميل",
+        "customerLocation": "موقع العميل",
+        "customerType": "نوع العميل",
+        "gender": "الجنس",
+        "monthOfBirth": "شهر الميلاد",
+        "orderCount": "عدد الطلبات",
+        "tags": "الوسوم"
+      },
+      "title": "الشروط",
+      "type": "النوع"
+    },
+    "createDialog": {
+      "custom": {
+        "description": "أنشئ مجموعة من الصفر باستخدام قواعدك الخاصة.",
+        "title": "مجموعة مخصصة"
+      },
+      "helpLink": "تعرف على كيفية إنشاء مجموعات العملاء وإدارتها",
+      "helpQuestion": "لديك سؤال حول كيفية عمل المجموعات؟",
+      "templates": {
+        "allBuyers": {
+          "description": "جميع العملاء الذين أتمّوا طلباً واحداً على الأقل.",
+          "title": "كل من اشترى"
+        },
+        "birthMonth": {
+          "description": "استهدف العملاء في شهر ميلادهم بعروض احتفالية مميّزة.",
+          "title": "العملاء حسب شهر الميلاد"
+        },
+        "byGender": {
+          "description": "استهدف العملاء وفقاً للجنس بحملات أنسب.",
+          "title": "العملاء حسب الجنس"
+        },
+        "localCustomers": {
+          "description": "عملاء من مدينتك، وجّه لهم عروضاً قريبة منهم.",
+          "title": "العملاء المحليون"
+        },
+        "notYetPurchased": {
+          "description": "عملاء مسجّلون دون أي طلب، استقطبهم بعروض مخصّصة.",
+          "title": "عملاء لم يشتروا بعد"
+        },
+        "oneTimeBuyers": {
+          "description": "عملاء اشتروا مرة واحدة فقط، شجّعهم على تكرار الشراء.",
+          "title": "عملاء لمرة واحدة"
+        },
+        "repeatCustomers": {
+          "description": "عملاء أتمّوا أكثر من طلب، استهدفهم لتعزيز ولائهم.",
+          "title": "العملاء المتكررون"
+        },
+        "subscribed": {
+          "description": "جمّع العملاء بناءً على حالة اشتراكهم والإعلانات.",
+          "title": "العملاء المشتركون"
+        },
+        "tagged": {
+          "description": "استهدف مجموعات مخصّصة بناءً على الوسوم التي أضفتها.",
+          "title": "العملاء حسب الوسوم"
+        },
+        "vipCustomers": {
+          "description": "أوفى عملائك حسب عدد الطلبات، كافئهم بمزايا حصرية.",
+          "title": "عملاء VIP"
+        }
+      },
+      "templatesSubtitle": "أو اختر من القوالب الجاهزة لإعداد أسرع:",
+      "title": "إنشاء مجموعة عملاء جديدة"
+    },
+    "customerList": "قائمة العملاء",
+    "customerListDescription": "أُنشئت هذه المجموعة بناءً على التصفية المطبقة",
+    "donorList": "قائمة المتبرعين",
+    "emptyState": {
+      "button": "البدء الآن",
+      "description": "قسّم حسب بيانات العملاء بنقرة واحدة وعزز التفاعل بعروض مخصصة.",
+      "ngoDescription": "قسّم حسب بيانات المتبرعين بنقرة واحدة وعزز التفاعل بعروض مخصصة.",
+      "ngoTitle": "اجمع متبرعيك وخصص رسائلك لتتناسب مع احتياجاتهم.",
+      "title": "اجمع عملاءك وخصص رسائلك لتتناسب مع احتياجاتهم."
+    },
+    "filterStatus": {
+      "accountStatus": "حالة الحساب:",
+      "cities": "المدن:",
+      "company": "شركة",
+      "countries": "الدول:",
+      "customerChannel": "قناة العميل:",
+      "customerType": "نوع العميل:",
+      "gender": "الجنس:",
+      "individual": "فرد",
+      "mazeed": "مزيد",
+      "monthOfBirth": "شهر الميلاد:",
+      "newsletterStatus": "حالة الإعلانات والتحديثات:",
+      "ngoCustomerType": "نوع المتبرع:",
+      "ngoOrdersCount": "عدد التبرعات",
+      "nonSubscribers": "غير مشتركين",
+      "onlineStore": "المتجر الإلكتروني",
+      "ordersCount": "عدد الطلبات",
+      "pos": "نقطة البيع",
+      "subscribers": "مشتركين"
+    },
+    "form": {
+      "nameHelperText": "لا يراه العميل، فهو للموظفين فقط."
+    },
+    "noResults": {
+      "action": "مسح جميع الفلاتر",
+      "description": "يبدو أنه لا توجد نتائج تطابق بحثك.",
+      "title": "لم نعثر على نتائج"
+    },
+    "summary": {
+      "conditions": "الشروط:",
+      "conditionsDescription": "يكفي استيفاء شرط واحد لإضافة العميل.",
+      "noName": "لا يوجد اسم بعد",
+      "title": "ملخص المجموعة"
+    }
+  },
+  "deleteCustomerDialog": {
+    "confirm": "إلغاء العميل",
+    "description": "سيُلغى العميل «{{name}}» من المتجر. لن تتمكن من استهدافه بقوائم التسويق ولا الحملات.",
+    "menuLabel": "إلغاء العميل من المتجر",
+    "title": "إلغاء العميل من المتجر"
+  },
+  "deleteSelected": {
+    "description": "هل أنت متأكد من حذف العملاء المحددين؟",
+    "ngoDescription": "هل أنت متأكد من حذف المتبرعين المحددين؟"
+  },
+  "donationNumber": "رقم التبرع",
+  "editAddress": "تعديل العنوان",
+  "editCustomer": "تعديل العميل",
+  "editLoyaltyPoints": "تعديل نقاط الولاء",
+  "emptyState": {
+    "button": "إضافة عميل جديد",
+    "description": "تعرّف على سلوك عملائك الشرائي وتاريخ طلباتهم ومنتجاتهم المفضلة، واستهدفهم بدقّة",
+    "link": "ابدأ ببناء قاعدة عملائك الآن وأطلق حملتك الأولى",
+    "ngoButton": "إضافة متبرع جديد",
+    "title": "كل تفاصيل عملائك في مكان واحد"
+  },
+  "eraseCustomer": {
+    "confirm": "حذف العميل والبيانات",
+    "description": "سيُحذف العميل «{{name}}» من قائمة العملاء نهائيًا، ولا يمكن استرداد معلوماته لاحقًا",
+    "menuLabel": "حذف العميل والبيانات",
+    "success": "مُسحت بيانات العميل",
+    "title": "حذف العميل والبيانات"
+  },
+  "export": {
+    "allNgoTitle": "تصدير جميع المتبرعين",
+    "allTitle": "تصدير جميع العملاء",
+    "filteredTitle": "تصدير نتائج التصفية"
+  },
+  "filters": {
+    "accountStatus": "حالة الحساب",
+    "customerChannel": "قناة العميل",
+    "customerGroups": "مجموعات العملاء",
+    "customerType": "نوع العميل",
+    "monthOfBirth": "شهر الميلاد",
+    "newsletterSubscribers": "مشتركو الإعلانات والتحديثات",
+    "ngoCustomerChannel": "قناة المتبرع",
+    "ngoCustomerType": "نوع المتبرع",
+    "ngoOrdersCountEquals": "عدد التبرعات يساوي",
+    "ngoOrdersCountLessThan": "عدد التبرعات أقل من",
+    "ngoOrdersCountMoreThan": "عدد التبرعات أكثر من",
+    "ngoTotalOrders": "إجمالي التبرعات",
+    "ordersCountCondition": "الشرط",
+    "ordersCountEquals": "عدد الطلبات يساوي",
+    "ordersCountLessThan": "عدد الطلبات أقل من",
+    "ordersCountMoreThan": "عدد الطلبات أكثر من",
+    "sectionAccountAndSubscriptions": "حالة الحساب والاشتراكات",
+    "sectionCustomerDetails": "تفاصيل العميل",
+    "sectionCustomerLocation": "موقع العميل",
+    "sectionDonationsCount": "عدد التبرعات",
+    "sectionOrdersCount": "عدد الطلبات",
+    "tags": "الوسوم",
+    "totalOrders": "إجمالي الطلبات"
+  },
+  "groups": {
+    "createSuccessfully": "أُنشئت المجموعة.",
+    "deletedSuccessfully": "حُذفت المجموعة.",
+    "exportCustomers": "تصدير العملاء",
+    "exportDonors": "تصدير المتبرعين",
+    "updateSuccessfully": "حُدّثت المجموعة.",
+    "viewCustomers": "عرض العملاء",
+    "viewDonors": "عرض المتبرعين"
+  },
+  "import": {
+    "customersImportedSuccessfully": "استُورد العملاء.",
+    "failed": "تعذر استيراد العملاء.",
+    "failedNgo": "تعذر استيراد المتبرعين.",
+    "generalError": "تعذر استيراد العملاء.",
+    "generalErrorNgo": "تعذر استيراد المتبرعين.",
+    "step1": "نزّل القالب التالي لإضافة بيانات عملائك",
+    "step2": "ارفع القالب بعد ملئه",
+    "step3": "خيارات استيراد العملاء",
+    "step3Ngo": "خيارات استيراد المتبرعين",
+    "title": "استيراد العملاء",
+    "titleNgo": "استيراد المتبرعين",
+    "updateCustomersPoints": "تحديث نقاط العملاء الحاليين",
+    "updateDonorsPoints": "تحديث نقاط المتبرعين الحاليين",
+    "updateExistingCustomers": "تحديث بيانات العملاء الحاليين",
+    "updateExistingDonors": "تحديث بيانات المتبرعين الحاليين"
+  },
+  "individual": "فرد",
+  "lastLoginAt": "آخر تسجيل دخول",
+  "lastOrderAt": "آخر طلب في",
+  "loyaltyPoints": "نقاط الولاء",
+  "loyaltyPointsBalance": "الرصيد",
+  "loyaltyPointsTotalEarned": "إجمالي المكتسب",
+  "loyaltyPointsTotalRedeemed": "إجمالي المستبدل",
+  "merchantDashboard": "لوحة تحكم التاجر",
+  "method": "الطريقة",
+  "ngoCustomerType": "نوع المتبرع",
+  "ngoOrdersEmptyDescription": "تبرعات هذا المتبرع ستظهر هنا بعد أول تبرع.",
+  "ngoOrdersEmptyTitle": "لا توجد تبرعات بعد",
+  "ngoOrdersHistory": "سجل التبرعات",
+  "ngoSubtitle": "كل ما تحتاج معرفته عن المتبرعين في مكان واحد",
+  "noPreviousVisits": "لا توجد زيارات سابقة",
+  "orderNumber": "رقم الطلب",
+  "ordersEmptyDescription": "طلبات هذا العميل ستظهر هنا بعد أول عملية شراء.",
+  "ordersEmptyTitle": "لا توجد طلبات بعد",
+  "ordersHistory": "سجل الطلبات",
+  "ordersNoResultsDescription": "جرّب تعديل البحث أو الفلاتر.",
+  "ordersNoResultsTitle": "لم نعثر على نتائج",
+  "pendingLoyaltyPoints": "نقاط معلّقة",
+  "points": "النقاط",
+  "pointsAmount": "رصيد النقاط",
+  "pointsEmptyDescription": "النقاط التي يكسبها العميل أو يستبدلها ستظهر هنا.",
+  "pointsEmptyTitle": "لا توجد نقاط بعد",
+  "pointsStatus": "حالة النقاط",
+  "productsDialog": {
+    "subtitle": "اختيار منتج لإضافة سؤال"
+  },
+  "profileOverview": "نظرة عامة",
+  "questions": {
+    "actions": {
+      "answer": "إجابة"
+    },
+    "answerPlaceholder": "أدخل الإجابة",
+    "emptyState": {
+      "addProduct": "إضافة منتج",
+      "browseProducts": "تصفح المنتجات",
+      "description": "اختيار منتج لإضافة سؤال",
+      "disableDescription": "فعّل الخاصية لإظهار قسم الأسئلة والأجوبة في صفحات المنتجات، وتمكين العملاء من طرح الأسئلة.",
+      "disableTitle": "دع عملاءك يطرحون أسئلة متعلقة بالمنتج",
+      "enableNow": "تفعيل الآن"
+    },
+    "notificationsSettings": "إعدادات الإشعارات",
+    "questionPlaceholder": "أدخل السؤال",
+    "setting": {
+      "description": "جهز قسمًا للأسئلة والأجوبة لكل منتج تعرضه."
+    }
+  },
+  "reason": "السبب",
+  "referralCode": {
+    "code": "الكود",
+    "createCode": "إنشاء كود دعوة",
+    "emptyDescription": "أنشئ كود دعوة لهذا العميل ليتمكن من دعوة أصدقائه والحصول على مكافآت.",
+    "emptyTitle": "لا يوجد كود دعوة",
+    "link": "الرابط",
+    "revokeAccess": "إلغاء الوصول",
+    "revokeCodeConfirmation": "هل أنت متأكد من إلغاء كود الدعوة هذا؟ لن يتمكن العميل من دعوة أصدقاء بهذا الكود."
+  },
+  "referralProfile": {
+    "emptyDescription": "فعّله ليدعو عملاؤك أصدقاءهم ويكسب الطرفان مكافأة.",
+    "emptyTitle": "برنامج الدعوات غير مفعّل",
+    "title": "رابط الدعوة"
+  },
+  "referralRewards": "مكافآت الدعوات",
+  "referralsIncomplete_few": "{{count}} دعوات غير مكتملة",
+  "referralsIncomplete_many": "{{count}} دعوةً غير مكتملة",
+  "referralsIncomplete_one": "دعوة واحدة غير مكتملة",
+  "referralsIncomplete_other": "{{count}} دعوة غير مكتملة",
+  "referralsIncomplete_two": "دعوتان غير مكتملتان",
+  "referralsIncomplete_zero": "لا توجد دعوات",
+  "referralsJoined_few": "انضم {{count}} من أصل {{total}} مدعو",
+  "referralsJoined_many": "انضم {{count}} من أصل {{total}} مدعو",
+  "referralsJoined_one": "انضم مدعو واحد من أصل {{total}}",
+  "referralsJoined_other": "انضم {{count}} من أصل {{total}} مدعو",
+  "referralsJoined_two": "انضم مدعوان من أصل {{total}}",
+  "referralsJoined_zero": "لم ينضم أحد من المدعوين",
+  "referredBy": "صاحب الدعوة",
+  "reviews": {
+    "actions": {
+      "disableAllConfirmation": "هل أنت متأكد من تعطيل جميع التقييمات؟",
+      "publishAllConfirmation": "هل أنت متأكد من نشر كل التقييمات؟"
+    },
+    "answer": "إجابة",
+    "deactivateProductReviews": "إلغاء تفعيل تقييمات المنتجات",
+    "edited": "معدل",
+    "emptyState": {
+      "button": "تفعيل الآن",
+      "description": "تفعيل التقييمات يساعدك على جمع التعليقات تلقائيًا وكسب ثقة العملاء.",
+      "title": "مشاركة العملاء لآرائهم تعزز المصداقية وتدعم نمو المبيعات."
+    },
+    "header": {
+      "subtitle": "اجمع رؤى العملاء بمنح المتسوقين فرصة تقييم منتجاتك ومشاركتها مع الآخرين."
+    },
+    "import": {
+      "downloadTemplate": "تحميل القالب",
+      "downloadTemplateDescription": "حمّل القالب التالي لتعبئة بيانات التقييمات",
+      "failed": "تعذّر استيراد التقييمات",
+      "note": "اتبع الخطوات أدناه لإتمام عملية الاستيراد",
+      "partialFailure_few": "تعذّر استيراد {{count}} تقييمات",
+      "partialFailure_many": "تعذّر استيراد {{count}} تقييمًا",
+      "partialFailure_one": "تعذّر استيراد تقييم واحد",
+      "partialFailure_other": "تعذّر استيراد {{count}} تقييم",
+      "partialFailure_two": "تعذّر استيراد تقييمين",
+      "rowError": "الصف {{row}}: {{error}}",
+      "running": "جاري استيراد التقييمات",
+      "title": "استيراد التقييمات",
+      "uploadFile": "رفع الملف",
+      "uploadFileDescription": "ارفع القالب بعد تعبئته"
+    },
+    "notificationsSettings": "إعدادات الإشعارات",
+    "placeholder": "أضف ردًا على التعليق هنا",
+    "ratings": {
+      "deactivateWarning": "عند التعطيل، ستُزال جميع التقييمات من متجرك، ولن يتمكن العملاء من إضافة مراجعات جديدة. يمكنك استعادتها عند إعادة التفعيل.",
+      "removeAnswer": "حذف الإجابة"
+    },
+    "review": "مراجعة"
+  },
+  "saveNote": "حفظ الملاحظة",
+  "sendReminder": "إرسال تنبيه",
+  "subscribeNewsletter": "استقبال الرسائل التسويقية",
+  "subscribeNewsletterDescription": "يستقبل العميل رسائل العروض والتحديثات التسويقية.",
+  "subtitle": "كل ما تحتاج معرفته عن عملائك في مكان واحد",
+  "tabs": {
+    "settings": "الإعدادات",
+    "wishlist": "قائمة الأمنيات"
+  },
+  "tags": "الوسوم",
+  "tagsPlaceholder": "اكتب للبحث أو اضغط Enter لإنشاء وسم جديد",
+  "totalSpent": "إجمالي المصروفات",
+  "unbanCustomer": "تفعيل العميل",
+  "walletBalance": "رصيد المحفظة",
+  "wishlistEmptyDescription": "المنتجات التي يحفظها العميل من متجرك ستظهر هنا.",
+  "wishlistEmptyTitle": "قائمة الأمنيات فارغة"
+}

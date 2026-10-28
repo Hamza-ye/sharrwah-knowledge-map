@@ -1,0 +1,44 @@
+{
+  "structure": "zid/store-plan-policies",
+  "platform": "zid",
+  "surface": "merchant API (hermod.zid.sa), as the dashboard reads it",
+  "source": {
+    "run_id": "20261028T144855Z-dashboard-routes-en",
+    "answer": "zid/raw/runs/20261028T144855Z-dashboard-routes-en/answers/hermod.zid.sa/v1/managers/account/profile/c9cbd4a41b31067c2792f8f4e479cc179686916c98a152523b27bc4227c498bf.json",
+    "host": "hermod.zid.sa",
+    "method": "GET",
+    "path": "/v1/managers/account/profile",
+    "first_call": {
+      "step": 1,
+      "t": "2026-10-28T14:49:03.004Z",
+      "status": 200
+    },
+    "sha256": "c9cbd4a41b31067c2792f8f4e479cc179686916c98a152523b27bc4227c498bf"
+  },
+  "of": {
+    "store_id": 127604,
+    "store_title": "Demo Store",
+    "subscription": {
+      "package_code": "new_professional.yearly",
+      "package_key": "new_professional",
+      "package_name": {
+        "ar": "الاحترافية",
+        "en": "Professional"
+      },
+      "subscribed_at": "2025-11-05T00:00:00+00:00",
+      "expired_at": "2026-11-05T00:00:00+00:00",
+      "is_trial": false,
+      "tier": 3
+    }
+  },
+  "shape_observed": "user.store.subscription.policies_v2: object keyed by policy key (\"<feature>\" or \"<feature>.<part>\"), each {enabled, config, available_in: {ar, en, package_key} or []}; user.store.subscription.policies: object keyed by policy key, each a boolean",
+  "counts": {
+    "policies_v2": 633,
+    "policies": 552,
+    "enabled": 488
+  },
+  "extractor": {
+    "path": "capture/structure_zid_store_profile.py",
+    "sha256": "c963db949bdee4e083ef909e24d33aa6457473aa7d3ce5a7878822b0c3b7dac1"
+  }
+}

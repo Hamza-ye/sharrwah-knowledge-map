@@ -1,0 +1,171 @@
+{
+  "reportType": {
+    "sales": "Sales report"
+  },
+  "reports": {
+    "allReports": "All reports",
+    "configurator": {
+      "comparison": {
+        "compared": "Compared",
+        "comparisonOverlapWarning": "The selected date range overlaps with the comparison period. Continuing will reset the comparison.",
+        "comparisonToPast": "Comparison to past",
+        "noComparison": "No comparison",
+        "presets": {
+          "previousMonth": "Previous month",
+          "previousPeriod": "Previous period",
+          "previousWeek": "Previous week",
+          "previousYear": "Previous year",
+          "previousYearMatchDow": "Prev. year (DoW)"
+        }
+      },
+      "dimensions": {
+        "label": "Dimensions",
+        "placeholder": "Example: by shipping city"
+      },
+      "filters": {
+        "addFilter": "Add filter",
+        "apply": "Apply",
+        "condition": "Condition",
+        "enterValue": "Enter value",
+        "selectCondition": "Select condition",
+        "selectFilter": "Select filter",
+        "selectValue": "Select value",
+        "value": "Value",
+        "valueFrom": "From",
+        "valueList": "Values (comma-separated)",
+        "valueTo": "To"
+      },
+      "invalidDateRange": "Please select a valid date range.",
+      "metric": "Metric",
+      "operators_!=": "is not",
+      "operators_<": "less than",
+      "operators_<=": "less than or equal to",
+      "operators_=": "is",
+      "operators_>": "greater than",
+      "operators_>=": "greater than or equal to",
+      "operators_between": "between",
+      "operators_in": "in",
+      "operators_not_in": "not in",
+      "selector": {
+        "dimensionTitle": "Select dimension",
+        "maxSelectionsReached": "You can select up to {{count}} metrics",
+        "maxSelectionsReached_few": "You can select up to {{count}} metrics",
+        "maxSelectionsReached_many": "You can select up to {{count}} metrics",
+        "maxSelectionsReached_one": "You can select up to {{count}} metric",
+        "maxSelectionsReached_other": "You can select up to {{count}} metrics",
+        "maxSelectionsReached_two": "You can select up to {{count}} metrics",
+        "maxSelectionsReached_zero": "You can select up to {{count}} metrics",
+        "metricTitle": "Select metric",
+        "noResults": "No results found",
+        "notCompatible": "Not compatible",
+        "searchPlaceholder": "Search by categories or metrics",
+        "selected": "Selected"
+      },
+      "title": "Report configurator"
+    },
+    "create": {
+      "nameLabel": "Report name",
+      "namePlaceholderAr": "Report name (Arabic)",
+      "namePlaceholderEn": "Report name (English)",
+      "title": "Create report"
+    },
+    "details": {
+      "delete": "Delete",
+      "deleteDialog": {
+        "confirm": "Delete",
+        "message": "Are you sure you want to delete this report? This action cannot be undone.",
+        "title": "Delete report"
+      },
+      "errors": {
+        "configInvalid": "This report configuration can't be displayed.",
+        "createFailed": "We couldn't create this report. Please try again.",
+        "errors_configInvalid": "This report configuration can't be displayed.",
+        "errors_queryTimeout": "The report took too long. Try simplifying your configuration.",
+        "errors_rateLimited": "Too many requests. Please wait {{seconds}} seconds.",
+        "invalidDateRange": "Please select a valid date range.",
+        "queryTimeout": "The report took too long. Try simplifying your configuration.",
+        "rateLimited": "Too many requests. Please wait {{seconds}} seconds.",
+        "refreshFailed": "We couldn't refresh this report. Please try again.",
+        "saveFailed": "We couldn't save this report. Please try again."
+      },
+      "lastRefreshed": "Last refreshed at {{time}}",
+      "title": "Report details",
+      "unsavedChanges": {
+        "cancel": "Stay",
+        "confirm": "Leave",
+        "message": "The changes you made haven't been saved. Are you sure you want to leave the page?",
+        "title": "You have unsaved changes"
+      }
+    },
+    "feedback": {
+      "descriptionPlaceholder": "Describe your suggestion or improvement...",
+      "storeIdIsNotDefined": "Store ID is not available. Please reload the page and try again.",
+      "submitButton": "Submit Feedback",
+      "successMessage": "Your feedback has been submitted. Thank you!",
+      "title": "Suggest an improvement",
+      "typeLabel": "Feedback type",
+      "typeProblem": "Problem",
+      "typeSuggestion": "Suggestion"
+    },
+    "list": {
+      "createNew": "Create",
+      "lastViewed": "Last viewed",
+      "neverViewed": "—",
+      "requestReport": "Request report",
+      "title": "Reports",
+      "zidCreatedBadge": "Zid"
+    },
+    "noResults": {
+      "createReport": "Create report",
+      "description": "You haven't created any reports yet",
+      "searchDescription": "Try adjusting your search terms to find what you're looking for.",
+      "searchTitle": "No reports match your search",
+      "title": "No reports found"
+    },
+    "pinnedReports": "Pinned reports",
+    "pinnedReportsShowLess": "Show less",
+    "pinnedReportsShowMore": "Show more",
+    "pinnedSuccess": "The report has been successfully pinned",
+    "rename": {
+      "title": "Rename report",
+      "zidReportAlert": "Since this template was created by Zid, renaming it will create a copy of this report with the new name",
+      "zidReportConfirm": "This will create a copy of the report with the new name. Are you sure you want to continue?"
+    },
+    "reportsInTotal": "{{count}} reports in total",
+    "saveAs": {
+      "copySuffix": "(نسخة)",
+      "copySuffix_ar": "(نسخة)",
+      "copySuffix_en": "(Copy)",
+      "title": "Save as new report"
+    },
+    "table": {
+      "displaySettings": "Display settings",
+      "groupBy": {
+        "label": "Group by",
+        "none": "No grouping"
+      },
+      "ordering": {
+        "ascending": "Ascending",
+        "default": "Default order",
+        "descending": "Descending"
+      }
+    },
+    "truncatedResults": "Showing first 1,000 records. Refine your filters to see more specific results.",
+    "unpinnedSuccess": "The report has been successfully unpinned",
+    "visualization": {
+      "bar": "Bar chart",
+      "dimensionSelector": {
+        "placeholder": "Example: by shipping city"
+      },
+      "line": "Line chart",
+      "metricSelector": {
+        "placeholder": "Example: total sales"
+      },
+      "number": "Number",
+      "pie": "Pie chart",
+      "table": "Table only",
+      "title": "Visualization"
+    }
+  },
+  "totalEqual": "Total equal -"
+}

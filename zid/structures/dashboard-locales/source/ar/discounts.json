@@ -1,0 +1,298 @@
+{
+  "appliedMethodSubtitle": "حدد طريقة تطبيق الخصم",
+  "appliedMethodTitle": "طريقة التطبيق",
+  "automatic": "تلقائي",
+  "bulk": {
+    "bulkDuplicatedSuccessfully": "أُنشئت نسخة من أكواد الخصم. قد يستغرق تطبيقها بضع دقائق.",
+    "changeCouponsStatus": "تغيير حالة الخصم",
+    "confirmDelete": "هل أنت متأكد من أنك تريد حذف كود الخصم {{couponsNames}}؟"
+  },
+  "bulkCoupon": "مجموع الكوبونات",
+  "bulkCouponTooltip": "يُنشئ النظام العدد المطلوب من النسخ الفريدة للكود المُدخل.",
+  "bulkEditAlertPackage": "عزيزي التاجر، رقِّ خطة متجرك إلى باقة {{packageName}} لتتمكن من تعديل أكواد الخصم جماعيًا.",
+  "bulkEditCouponWarning": {
+    "description": "فعِّل الأقسام التي ترغب بتعديلها. ستطبَّق التغييرات على كل الخصومات المحددة، وتبقى الأقسام غير المحددة كما هي",
+    "title": "اختر ما تريد تعديله جماعيًا"
+  },
+  "cannotBeActivated": "لا يمكنك تغيير حالة الخصم إلا بعد تعديل تاريخ البدء أو الانتهاء",
+  "code": "كود خصم",
+  "codeHint": "يجب أن يتكون كود الخصم من حروف أو أرقام فقط دون مسافات",
+  "columns": {
+    "applyingFreeShipping": "شامل الشحن المجاني",
+    "applyingMethod": "طريقة التطبيق",
+    "dateEnd": "تاريخ النهاية",
+    "dateStart": "تاريخ البداية",
+    "migratedAutoDiscount": {
+      "label": "قابل للدمج",
+      "tooltip": "يمكن دمج خصم القسيمة مع قسيمة تخفيض أخرى"
+    },
+    "orderDiscount": "قيمة الخصم",
+    "totalUsage": "مجموع مرات الاستخدام"
+  },
+  "conditions": {
+    "addNewCondition": "إضافة شرط جديد",
+    "categories": {
+      "emptyButton": "إضافة تصنيفات",
+      "emptySubtitle": "أضف تصنيفات لتطبيق الخصم عليها",
+      "emptyTitle": "لا توجد تصنيفات مختارة"
+    },
+    "collapseAll": "طي الكل",
+    "condition": "الشرط",
+    "conditionLogic": "آلية تطبيق الشروط",
+    "conditionsLogicSubtitle": "حدد المنتجات أو فئات العملاء التي يجب توفرها في السلة لتفعيل الخصم",
+    "customerGroups": {
+      "exclude": "استبعاد مجموعات العملاء المحددة",
+      "include": "تطبيق الكود فقط على مجموعات العملاء المحددة",
+      "label": "اختر مجموعات العملاء"
+    },
+    "customerLocation": {
+      "exclude": "استبعاد البلد والمدن المحددة",
+      "include": "تطبيق الكود فقط على البلد والمدن المحددة",
+      "label": "مواقع العملاء"
+    },
+    "excluding": "استبعاد",
+    "expandAll": "توسيع الكل",
+    "flexible": "مرن (أي شرط)",
+    "flexibleTooltip": "يتفعل الخصم إذا تحقق شرط واحد على الأقل من الشروط أدناه.",
+    "including": "شامل",
+    "paymentMethods": "طرق الدفع",
+    "paymentOptions": {
+      "exclude": "استبعاد خيارات الدفع المحددة",
+      "include": "تطبيق الكود فقط على خيارات الدفع المحددة",
+      "label": "اختر خيارات الدفع"
+    },
+    "products": {
+      "emptyButton": "إضافة منتجات",
+      "emptySubtitle": "سيُطبَّق الخصم على كل المنتجات إن لم تختر منتجات",
+      "emptyTitle": "لا توجد منتجات مختارة"
+    },
+    "shippingMethods": "طرق الشحن",
+    "shippingOptions": {
+      "exclude": "استبعاد شركات الشحن المحددة",
+      "include": "تطبيق الكود فقط على شركات الشحن المحددة",
+      "label": "اختر شركات الشحن"
+    },
+    "strict": "مقيد (كافة الشروط)",
+    "strictTooltip": "لا يتفعل الخصم إلا إذا تحققت جميع الشروط المذكورة أدناه معاً."
+  },
+  "confirmBulkEdit": "هل أنت متأكد من تعديل أكواد الخصم؟ ستُطبَّق الإعدادات الجديدة على جميع الأكواد المحددة.",
+  "confirmDuplicate": "هل أنت متأكد من إنشاء نسخة من كود الخصم: {{couponsNames}}؟",
+  "couponAmount": "عدد أكواد الخصم",
+  "createAsBulkCoupon": "إنشاء مجموعة كوبونات",
+  "createDiscount": "إنشاء خصم جديد",
+  "discountNote": "ملاحظة الخصم",
+  "discountTypeSubtitle": "حدد نوع الخصم الذي تريد تطبيقه",
+  "discountTypeTitle": "نوع الخصم",
+  "discountUrl": "رابط كود الخصم",
+  "eligibility": {
+    "allProducts": "جميع المنتجات",
+    "allProductsHelper": "إن لم تُضف شروطًا أو إعدادات إضافية، سيُطبَّق الكوبون على جميع المنتجات.",
+    "excludeProducts": "استبعاد منتجات محددة",
+    "includeCategories": "تضمين تصنيفات محددة",
+    "includeProducts": "تضمين منتجات محددة",
+    "label": "نوع الأهلية"
+  },
+  "emptyState": {
+    "button": "إنشاء خصمك الأول",
+    "description": "غالباً ما يكون كود الخصم الترحيبي أو الشحن المجاني هو العامل الحاسم لتحويل الزائر إلى عميل دائم.",
+    "title": "أكثر من 70% من المتسوقين يستخدمون أكواد الخصم."
+  },
+  "endDate": "تاريخ الانتهاء",
+  "filters": {
+    "activateFor": "قناة البيع",
+    "creationDate": "حسب تاريخ الإنشاء",
+    "dateEnd": "حسب تاريخ الانتهاء",
+    "details": "تفاصيل الخصم",
+    "dynamic": "تلقائي داخل سلة المشتريات",
+    "enteringCode": "إدخال كود الخصم من العميل",
+    "excludeFreeShipping": "غير شامل الشحن المجاني",
+    "fixed": "بقيمة ثابتة",
+    "includeFreeShipping": "شامل الشحن المجاني",
+    "percentage": "بنسبة مئوية",
+    "status": "حالة الخصم"
+  },
+  "fixedAmount": "مبلغ ثابت",
+  "freeShipping": "رسوم شحن مجانية",
+  "generateRandomCode": "اختيار كود عشوائي",
+  "leaveTheOrderNoteForStaffHere": "اترك ملاحظة الطلب للموظفين هنا",
+  "mainSections": {
+    "conditionsSubtitle": "أضف شرطًا واحدًا أو أكثر لتحديد وقت عرض الخصم أو تطبيقه.",
+    "conditionsTitle": "الشروط",
+    "detailsSubtitle": "حدد قيمة الخصم وآلية تطبيقه.",
+    "detailsTitle": "التفاصيل",
+    "discountSettingsTitle": "إعدادات الخصم",
+    "noteDescription": "أضف ملاحظة خاصة للموظفين.",
+    "noteTitle": "ملاحظة",
+    "productEligibilitySubtitle": "حدد المنتجات أو الفئات التي ينطبق عليها الخصم. ينطبق افتراضيًا على الكل.",
+    "productEligibilityTitle": "أهلية المنتج",
+    "saleChannelsSubtitle": "حدد قنوات البيع التي يُطبَّق فيها هذا الخصم",
+    "saleChannelsTitle": "قنوات البيع",
+    "settingsSubtitle": "حدد قيود الاستخدام لهذا الخصم عند الحاجة.",
+    "settingsTitle": "الإعدادات",
+    "tiersSubtitle": "أضف مستويين على الأقل (حتى 3 مستويات). يحصل العملاء على أفضل مستوى يستحقونه.",
+    "tiersTitle": "المستويات"
+  },
+  "nameHint": "مسمى داخلي للتتبع ولا يظهر للعملاء.",
+  "noName": "بدون اسم بعد",
+  "orderDiscount": "خصم على المنتجات",
+  "orderDiscountValue": "قيمة الخصم",
+  "percentage": "نسبة مئوية",
+  "percentageAmount": "نسبة الخصم",
+  "preview": {
+    "allProducts": "جميع المنتجات",
+    "title": "الملخص"
+  },
+  "progressive": {
+    "addTier": "إضافة مستوى",
+    "allBulkEdit": "جميع الخصومات المحددة هي خصومات تصاعدية",
+    "bulkEdit": "لا يمكن تطبيق التعديل المُجمّع على الخصومات التصاعدية.",
+    "cartTotal": "قيمة السلة",
+    "editTitle": "تعديل عرض تصاعدي",
+    "maximumDiscountAmount": "الحد الأقصى لقيمة الخصم",
+    "minimumAmount": "الحد الأدنى لإجمالي الشراء المطلوب لتطبيق العرض",
+    "minimumTiersMaximumTiers": "الحد الأدنى مستويان • الحد الأقصى ثلاثة مستويات",
+    "previewWarning": "إذا انطبقت خصومات تلقائية أخرى مع هذا العرض، فسيُطبَّق الخصم الأعلى قيمةً.",
+    "previousThreshold": "يجب أن يكون حدّ المستوى أعلى من الحدّ السابق",
+    "previousValue": "يجب أن تكون قيمة المستوى أعلى من القيمة السابقة",
+    "productQuantity": "كمية المنتجات",
+    "thresholdBasis": "أساس الحد الأدنى",
+    "thresholdBasisSubtitle": "اختر المعيار الذي يُؤهّل العميل للوصول إلى كل مستوى.",
+    "thresholdValue": "يجب أن تكون قيمة الخصم أقل من قيمة المستوى",
+    "tier": "مستوى",
+    "tierSubtitleCartTotal": "عند وصول إجمالي الطلب إلى <add></add> احصل على خصم <get></get>",
+    "tierSubtitleProductQuantity_few": "أضف {{count}} منتجات واحصل على خصم <get></get>.",
+    "tierSubtitleProductQuantity_many": "أضف {{count}} منتجًا واحصل على خصم <get></get>.",
+    "tierSubtitleProductQuantity_one": "أضف منتجًا واحدًا واحصل على خصم <get></get>.",
+    "tierSubtitleProductQuantity_other": "أضف {{count}} منتج واحصل على خصم <get></get>.",
+    "tierSubtitleProductQuantity_two": "أضف منتجين واحصل على خصم <get></get>.",
+    "tierSubtitleProductQuantity_zero": "أضف منتجات واحصل على خصم <get></get>.",
+    "tiers": "مستويات",
+    "tiersDiscount_few": "خصم بـ {{count}} مستويات",
+    "tiersDiscount_many": "خصم بـ {{count}} مستوىً",
+    "tiersDiscount_one": "خصم بمستوى واحد",
+    "tiersDiscount_other": "خصم بـ {{count}} مستوى",
+    "tiersDiscount_two": "خصم بمستويين",
+    "tiersDiscount_zero": "خصم بدون مستويات",
+    "tiersOffer": "نوع الخصم",
+    "tiersOfferSubtitle": "حدد نوع الخصم الذي يحصل عليه العميل في كل مستوى",
+    "title": "إنشاء خصم جديد",
+    "tooltip": "أنفق {{spend}} ← واحصل على خصم {{get}}",
+    "tooltipQuantity_few": "أضف {{spend}} منتجات ← احصل على خصم {{get}}",
+    "tooltipQuantity_many": "أضف {{spend}} منتجًا ← احصل على خصم {{get}}",
+    "tooltipQuantity_one": "أضف منتجًا واحدًا ← احصل على خصم {{get}}",
+    "tooltipQuantity_other": "أضف {{spend}} منتج ← احصل على خصم {{get}}",
+    "tooltipQuantity_two": "أضف منتجين ← احصل على خصم {{get}}",
+    "tooltipQuantity_zero": ""
+  },
+  "quantityEqualsTo": "الكمية تساوي",
+  "quantityIsLessThan": "الكمية أقل من",
+  "quantityIsMoreThan": "الكمية أكثر من",
+  "salesChannels": {
+    "cashier": "موظفو الفرع (نقاط البيع)",
+    "mazeed": "عملاء مزيد",
+    "onlineStore": "عملاء المتجر الإلكتروني",
+    "pos": "عملاء الفرع (نقاط البيع)"
+  },
+  "scheduled": "مجدول",
+  "settings": {
+    "excludeProductsOnSale": "استثناء المنتجات المخفّضة",
+    "limitPerCustomer": "عدد مرات الاستخدام لكل عميل",
+    "limitPerCustomerTooltip": "عدد المرات المسموح بها للعميل الواحد لاستخدام هذا الخصم.",
+    "maximumDiscountCap": "الحد الأقصى لقيمة الخصم",
+    "maximumPurchaseAmount": "الحد الأعلى للمشتريات",
+    "maximumPurchaseAmountTooltip": "أعلى قيمة للطلب يمكن تطبيق الخصم عليها.",
+    "maximumWeight": "الحد الأقصى المسموح به للوزن (بالجرام)",
+    "maximumWeightTooltip": "الحد الأقصى المسموح به للوزن للشحن المجاني",
+    "minimumPurchaseAmount": "الحد الأدنى للمشتريات",
+    "minimumPurchaseAmountTooltip": "يُحتسب من إجمالي قيمة المنتجات شاملاً ضريبة القيمة المضافة، وهو الحد الأدنى الذي يجب أن يبلغه الطلب حتى يُطبَّق الخصم.",
+    "totalUsageLimit": "إجمالي عدد مرات الاستخدام",
+    "totalUsageLimitTooltip": "أقصى عدد مرات يمكن فيها استخدام هذا الخصم لجميع العملاء."
+  },
+  "shippingFree": {
+    "freeCOD": "رسوم دفع عند الاستلام مجانية"
+  },
+  "startDate": "تاريخ البدء",
+  "stats": {
+    "numberOfCustomers": "مجموع العملاء",
+    "numberOfUsage": "مجموع مرات الاستخدام",
+    "totalSales": "مجموع المبيعات"
+  },
+  "summary": {
+    "andExcludeDiscounted": "واستثناء المنتجات المخفّضة",
+    "appliesTo": "ينطبق على",
+    "appliesToCategories_few": "{{count}} تصنيفات محددة",
+    "appliesToCategories_many": "{{count}} تصنيفًا محددًا",
+    "appliesToCategories_one": "تصنيف محدد واحد",
+    "appliesToCategories_other": "{{count}} تصنيف محدد",
+    "appliesToCategories_two": "تصنيفان محددان",
+    "appliesToCategories_zero": "لا توجد تصنيفات محددة",
+    "appliesToExcept_few": "باستثناء {{count}} تصنيفات",
+    "appliesToExcept_many": "باستثناء {{count}} تصنيفًا",
+    "appliesToExcept_one": "باستثناء تصنيف واحد",
+    "appliesToExcept_other": "باستثناء {{count}} تصنيف",
+    "appliesToExcept_two": "باستثناء تصنيفين",
+    "appliesToExcept_zero": "بدون استثناءات",
+    "appliesToProducts_few": "{{count}} منتجات محددة",
+    "appliesToProducts_many": "{{count}} منتجًا محددًا",
+    "appliesToProducts_one": "منتج محدد واحد",
+    "appliesToProducts_other": "{{count}} منتج محدد",
+    "appliesToProducts_two": "منتجان محددان",
+    "appliesToProducts_zero": "لا توجد منتجات محددة",
+    "freeCod": "رسوم دفع عند الاستلام مجانية",
+    "freeShipping": "رسوم شحن مجانية",
+    "mechanism": "آلية العرض",
+    "notSet": "لم تُحدد بعد",
+    "orderDiscountFixed": "خصم {{value}} على إجمالي المنتجات",
+    "orderDiscountPercentage": "خصم {{value}}% على إجمالي المنتجات",
+    "upTo": "بحد أقصى {{value}}"
+  },
+  "templates": {
+    "categoryDiscount": {
+      "description": "طبّق خصومات لتنشيط التصنيفات الأقل مبيعًا وتعزيز المبيعات",
+      "title": "خصم لتصنيفات محددة"
+    },
+    "countryBased": {
+      "description": "استهدف عملاء مدن أو دول محددة بخصومات مخصّصة لتعزيز المبيعات",
+      "title": "خصم لعملاء منطقة محددة"
+    },
+    "custom": {
+      "description": "أنشئ خصمًا من الصفر بتحكّم كامل في الشروط المطلوبة",
+      "title": "خصم مخصص"
+    },
+    "customerGroup": {
+      "description": "كافئ العملاء المميزين والأوفياء بخصومات حصرية",
+      "title": "خصم لمجموعة عملاء"
+    },
+    "dialogSubtitle": "أو اختر من القوالب الجاهزة لإعداد أسرع:",
+    "dialogTitle": "إنشاء خصم جديد",
+    "freeShipping": {
+      "description": "قلّل من السلات المتروكة وحفّز على زيادة قيمة الطلبات",
+      "title": "عرض الشحن المجاني"
+    },
+    "helpLink": "تعرّف على كيفية إنشاء الخصومات وإدارتها",
+    "helpQuestion": "هل لديك سؤال حول كيفية عمل الخصومات؟",
+    "names": {
+      "categoryDiscount": "خصم لتصنيفات محددة",
+      "countryBased": "خصم لعملاء منطقة محددة",
+      "customerGroup": "خصم لمجموعة عملاء",
+      "freeShipping": "عرض الشحن المجاني",
+      "paymentMethod": "خصم لخيارات دفع محددة",
+      "productDiscount": "خصم لمنتجات محددة",
+      "progressiveDiscount": "العروض التصاعدية"
+    },
+    "paymentMethod": {
+      "description": "شجّع العملاء على استخدام وسائل دفع مفضّلة بخصومات حصرية",
+      "title": "خصم لخيارات دفع محددة"
+    },
+    "productDiscount": {
+      "description": "حدّد خصومات على منتجات مختارة لتصفية المخزون أو ترويج الجديد",
+      "title": "خصم لمنتجات محددة"
+    },
+    "progressiveDiscount": {
+      "description": "زِد نسبة الخصم كلّما زادت قيمة الطلب لرفع متوسط قيمة السلة",
+      "title": "العروض التصاعدية"
+    }
+  },
+  "validityPeriod": "مدة الصلاحية",
+  "viewOrders": "عرض الطلبات"
+}

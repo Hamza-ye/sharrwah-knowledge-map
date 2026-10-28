@@ -1,0 +1,333 @@
+{
+  "NDOfferBadgeGrowth": "96 طلبًا = سنة إضافية مجانًا",
+  "NDOfferBadgePro": "1,932 طلبًا = سنة إضافية مجانًا",
+  "NDOfferBadgeRise": "23 طلبًا = سنة إضافية مجانًا",
+  "allPlansInclude": "جميع الباقات تشمل",
+  "availableOnYearly": "متوفرة سنويًا",
+  "bestSeller": "الأكثر مبيعًا",
+  "bestValue": "الأفضل قيمة",
+  "billedBiannually": "تُصدر الفاتورة كل نصف سنة",
+  "billedOnceYearly": "الدفع مرة واحدة سنويًا",
+  "bottomText": "{{discountPrice}} {{currency}} مدة {{count}} أشهر، ثم {{realPrice}} {{currency}} شهريًا",
+  "bottomText_few": "{{discountPrice}} {{currency}} مدة {{count}} أشهر، ثم {{realPrice}} {{currency}} شهريًا",
+  "bottomText_many": "{{discountPrice}} {{currency}} مدة {{count}} شهرًا، ثم {{realPrice}} {{currency}} شهريًا",
+  "bottomText_one": "{{discountPrice}} {{currency}} مدة شهر، ثم {{realPrice}} {{currency}} شهريًا",
+  "bottomText_other": "{{discountPrice}} {{currency}} مدة {{count}} شهر، ثم {{realPrice}} {{currency}} شهريًا",
+  "bottomText_two": "{{discountPrice}} {{currency}} مدة شهرين، ثم {{realPrice}} {{currency}} شهريًا",
+  "bottomText_zero": "{{discountPrice}} {{currency}} مدة 0 شهر، ثم {{realPrice}} {{currency}} شهريًا",
+  "checkout": {
+    "accountNumber": "رقم الحساب",
+    "amount": "المبلغ",
+    "applePay": "أبل باي",
+    "bankTransfer": "تحويل بنكي",
+    "bankTransferDesc": "لتحويل المبلغ، حوّله إلى حساب زد في بنك الراجحي",
+    "beneficiaryNameArabic": "اسم المستفيد (بالعربية)",
+    "beneficiaryNameEnglish": "اسم المستفيد (بالإنجليزية)",
+    "byCompletingThePaymentYouAgreeToThe": "بإتمام الدفع، فإنك توافق على",
+    "completePurchase": "إتمام الشراء",
+    "couponAddedSuccessfully": "أُضيف كود الخصم",
+    "couponRemovedSuccessfully": "حُذف كود الخصم",
+    "creditCard": "بطاقة ائتمانية",
+    "currentWalletBalance": "رصيد المحفظة الحالي: {{balance}}",
+    "finishProcess": "إتمام العملية",
+    "giftCardOrCouponCode": "بطاقة هدية أو كود خصم",
+    "iban": "رقم الآيبان (IBAN)",
+    "noAccessToUseWalletBalance": "ليس لديك صلاحية استخدام رصيد المحفظة",
+    "noEnoughBalance": "رصيدك غير كافٍ",
+    "orderSummary": {
+      "amount_credited": "المبلغ المدفوع",
+      "amount_due": "المبلغ المستحق",
+      "amount_paid": "المبلغ المدفوع",
+      "discount": "الخصم",
+      "sub_total_after_discounts": "المجموع بعد الخصومات",
+      "sub_total_after_vat": "المجموع بعد الضريبة",
+      "sub_total_before_vat": "المجموع قبل الضريبة",
+      "title": "ملخص الطلب",
+      "total": "الإجمالي",
+      "vat": "ضريبة القيمة المضافة",
+      "vat_subjected_amount": "المبلغ الخاضع للضريبة"
+    },
+    "payment": "الدفع",
+    "requestVatInvoice": "طلب فاتورة ضريبية",
+    "startNow": "البدء الآن",
+    "termsAndConditions": "الشروط والأحكام",
+    "title": "الدفع",
+    "useWalletBalance": "استخدام رصيد المحفظة",
+    "yourDiscountHasBeenApplied": "طُبّق الخصم"
+  },
+  "checkoutRedirect": {
+    "approved": {
+      "description": "اكتمل شراء الباقة، وأُرسلت التفاصيل إلى بريدك الإلكتروني. رقم الفاتورة: {{invoiceNumber}}",
+      "title": "اعتُمدت العملية"
+    },
+    "failed": {
+      "description": "رُفضت الباقة، حاول مرة أخرى",
+      "title": "تعذّر إتمام العملية"
+    },
+    "pending": {
+      "description": "الباقة قيد الانتظار. انتظر تأكيد الدفع.",
+      "title": "سيُحفظ هذا العنوان لك وحدك لتمييز الرسائل، ولن يظهر لعملائك"
+    }
+  },
+  "chooseTheBestPlan": "اختر الباقة الأنسب لك",
+  "contactSales": "التواصل مع فريق المبيعات",
+  "currentPlan": "الباقة الحالية",
+  "customPackage": "مخصصة",
+  "enterprise": {
+    "card": {
+      "accountManager": "مدير علاقات تجار مخصص يدعم نموك",
+      "cashback": "استرداد نقدي 20% من قيمة الباقة",
+      "description": "حل متكامل للمنشآت الكبيرة يوفّر خصائص متقدمة، تحليلات دقيقة، اشتراكات حصرية، ربط مباشر بمدير الحساب وأخصائي التسويق",
+      "discount": "خصم 30% على الخدمات والتطبيقات",
+      "includesAll": "كل ما في باقات البداية ولايت والنمو، إضافةً إلى ما يلي:",
+      "posSystem": "نظام نقاط البيع مجاني بالكامل",
+      "storeManagement": "صلاحية إدارة المتجر لـ20 شخصًا",
+      "subscribeNow": "الاشتراك الآن",
+      "title": "الباقة الاحترافية",
+      "whatsapp": "واتساب مجاني بالكامل"
+    },
+    "contactDialog": {
+      "cardText": "يمكنك الاشتراك فورًا دون التواصل مع فريقنا؛ ما عليك إلا اختيار باقتك وإكمال الدفع.",
+      "title": "أخبرنا عن طموحاتك"
+    },
+    "enterpriseRates": "تسعيرات خاصة للشركات الكبيرة",
+    "pricing": "أسعار مخصصة"
+  },
+  "extendSubscription": "تمديد الاشتراك",
+  "faqs": {
+    "questions": {
+      "canIPersonalizeMyStoreDomain": {
+        "content": "نعم، يمكنك تخصيص نطاقك وربطه بمتجرك بسهولة وسلاسة. وتشمل باقتا النمو والاحترافية نطاقًا مجانيًا.",
+        "title": "هل يمكنني تخصيص نطاق متجري؟"
+      },
+      "howCanCustomersShopFromMyStore": {
+        "content": "يتيح لك البيع الحديث بيع منتجاتك بسلاسة على الإنترنت أو في المتاجر التقليدية. يمكنك أيضًا تمويل تجارتك حتى ٣.٤ مليون ريال سعودي مباشرة من لوحة التحكم.",
+        "title": "كيف يمكن للعملاء التسوق من متجري؟"
+      },
+      "howCanIConfirmTheStatusOfABankTransfer": {
+        "content": "يمكنك تأكيد حالة التحويل البنكي بالدخول إلى لوحة تحكم متجرك والتحقق من حالة التحويل.",
+        "title": "كيف أؤكد حالة التحويل البنكي؟"
+      },
+      "howCanIReceivePaymentsFromMyCustomers": {
+        "buyNowPayLater": "يمكنك أيضًا تفعيل خدمة الشراء الآن والدفع لاحقًا:",
+        "content": "اربط متجرك بزد باي بسهولة لاستقبال المدفوعات بطرق دفع متنوعة وبسيطة، دون رسوم.",
+        "title": "كيف أستقبل المدفوعات من عملائي؟"
+      },
+      "howDoICreateMyOnlineStore": {
+        "content": "أنشئ متجرك الإلكتروني بسهولة، وسنرشدك خطوة بخطوة لإكمال الإعداد والبدء في بيع منتجاتك",
+        "title": "كيف أنشئ متجري الإلكتروني؟"
+      },
+      "howDoIShipOrdersToCustomers": {
+        "content": "اربط متجرك مباشرة ومجانًا مع زد لوجستيك، واشحن طلباتك بسهولة مع أكثر من 30 شركة شحن بعقد إلكتروني موحد.",
+        "mostKnownShippingCompanies": "أبرز شركات الشحن والتوصيل:",
+        "title": "كيف أشحن الطلبات إلى العملاء؟"
+      },
+      "isItNecessaryToHaveACorporate": {
+        "content": "لا، لا يشترط وجود سجل تجاري لإنشاء المتجر، إلا إذا رغبت بربط المتجر مع بوابات الدفع مثل مدى أو فيزا أو ماستركارد أو أبل باي.",
+        "recommended": "ومع ذلك، يُنصح بالحصول على سجل تجاري لحماية هويتك وكسب ثقة العملاء في متجرك وعلامتك التجارية.",
+        "title": "هل يلزمني سجل تجاري للاستفادة من خدمات زد؟"
+      },
+      "isThereAFeeChargedOnSales": {
+        "content": "لا رسوم على المبيعات في باقات لايت والنمو والاحترافية، كما يحصل التجار على نسب تحويل تنافسية لأشهر طرق الدفع مثل:",
+        "title": "هل تُحتسب رسوم على المبيعات؟"
+      }
+    },
+    "title": "الأسئلة الشائعة"
+  },
+  "features": {
+    "customizableStorefronts": {
+      "description": "اختر من بين مجموعة من القوالب وخصص متجرك بسهولة بما يتناسب مع هوية علامتك التجارية.",
+      "title": "واجهات متجر قابلة للتخصيص"
+    },
+    "flexibleShippingIntegrations": {
+      "description": "تواصل مع أفضل مزودي الشحن المحليين والدوليين، وخصص سياسات الشحن، وأدِر خيارات التوصيل بكفاءة.",
+      "title": "تكامل مرن مع شركات الشحن"
+    },
+    "highConvertingCheckoutExperience": {
+      "description": "توفر زد تجربة دفع محسّنة ومصممة لتحقيق معدلات تحويل عالية، ما يضمن تجربة سلسة للعملاء في الخليج.",
+      "title": "تجربة دفع عالية التحويل"
+    },
+    "integratedPaymentAndBNPLOptions": {
+      "description": "اقبل المدفوعات بطرق متعددة مثل مدى، فيزا، ماستركارد، أبل باي، وخدمة الشراء الآن والدفع لاحقًا.",
+      "title": "خيارات دفع مدمجة وخدمة الشراء لاحقًا"
+    },
+    "name": "الخصائص",
+    "vibrantZidCommunities": {
+      "description": "تفاعل مع شبكة نشطة من التجار الآخرين لتبادل الخبرات ومناقشة أفضل الممارسات والبقاء في صدارة التوجهات السوقية.",
+      "title": "مجتمعات زد النشطة"
+    }
+  },
+  "featuresTable": {
+    "additionalBenefits": {
+      "accountManager": "مدير حساب",
+      "accountManagerDescription": "خصص مدير حساب لدعم أداء متجرك الإلكتروني وتحسينه.",
+      "accountManagerTiers": {
+        "growth": "غير متاح",
+        "lite": "غير متاح",
+        "professional": "متاح (4 اجتماعات وتقارير أداء سنوية)"
+      },
+      "name": "مزايا إضافية",
+      "preSalesConsultant": "مستشار ما قبل البيع",
+      "preSalesConsultantDescription": "احصل على استشارات مخصصة تساعدك على إطلاق متجرك بنجاح.",
+      "preSalesConsultantTiers": {
+        "growth": "غير متاح",
+        "lite": "غير متاح",
+        "professional": "متاح"
+      },
+      "storeActivationConsultant": "مستشار تفعيل المتجر",
+      "storeActivationConsultantDescription": "دعم مخصص لتفعيل متجرك بسلاسة بعد الاشتراك.",
+      "storeActivationConsultantTiers": {
+        "growth": "خدمة نمو موثوقة مع فريق نمو التجار",
+        "lite": "خدمة مدفوعة إضافية: إعداد المتجر وتفعيله لأول 5 طلبات، ونقل المحتوى من المتجر السابق.",
+        "professional": "إعداد المتجر ونقل المحتوى من المتجر السابق، وتفعيل المتجر لتحقيق أول 10 طلبات"
+      },
+      "zidCommunities": "مجتمعات زد",
+      "zidCommunitiesDescription": "انضم إلى مجتمعات زد لتبادل الخبرات والأفكار مع أصحاب المتاجر الآخرين.",
+      "zidCommunitiesTiers": {
+        "growth": "مجتمعات زد العامة.",
+        "lite": "مجتمعات Zid العامة",
+        "professional": "مجتمعات زد الذهبية"
+      }
+    },
+    "coreFeatures": {
+      "analyticsAndReports": "التحليلات والتقارير",
+      "analyticsAndReportsDescription": "راقب أداء متجرك بتقارير دقيقة وتحليلات شاملة.",
+      "discountedShippingPolicies": "سياسات شحن مخفضة",
+      "discountedShippingPoliciesDescription": "استفد من خصومات على رسوم الشحن لطلبات متجرك.",
+      "diverseStorefrontThemes": "قوالب متنوعة للواجهة",
+      "diverseStorefrontThemesDescription": "خصّص واجهة متجرك باستخدام تصاميم متعددة تناسب نشاطك التجاري.",
+      "instantPaymentActivation": "تفعيل فوري للدفع",
+      "instantPaymentActivationDescription": "فعّل وسائل الدفع بسرعة وابدأ البيع فورًا.",
+      "inventoryManagement": "إدارة المخزون",
+      "inventoryManagementDescription": "راقب المخزون وأدِره بسهولة من أي مكان، وأضف مستودعات لمتجرك الإلكتروني أو الفعلي.",
+      "inventoryManagementTiers": {
+        "growth": "مستودع مجاني واحد",
+        "lite": "مستودع مجاني واحد",
+        "professional": "5 مستودعات مجانية"
+      },
+      "name": "الخصائص الأساسية",
+      "teamManagement": "إدارة الفريق",
+      "teamManagementDescription": "أضف أعضاء لفريقك للمساعدة في إدارة المتجر والتحكم في صلاحياتهم.",
+      "unlimitedProducts": "منتجات غير محدودة"
+    },
+    "customization": {
+      "appIntegration": "تكامل التطبيقات",
+      "appIntegrationDescription": "وسّع وظائف متجرك واربطه بالتطبيقات بسلاسة باستخدام واجهة زد البرمجية (API).",
+      "name": "التخصيص",
+      "themeSDK": "أدوات تطوير القالب (SDK)",
+      "themeSDKDescription": "أداة متقدمة لتخصيص واجهة متجرك وتصميمها بما يتماشى مع هويتك.",
+      "zidAPIIntegration": "تكامل مع واجهة زد البرمجية (API)",
+      "zidAPIIntegrationDescription": "اربط متجرك بمرونة ووسّع وظائفه باستخدام Zid API"
+    },
+    "globalExpansion": {
+      "multipleCurrencies": "دعم عملات متعددة",
+      "multipleCurrenciesDescription": "دعم عملات مختلفة لتسهيل التسوّق لعملائك حول العالم.",
+      "multipleLanguages": "دعم لغات متعددة",
+      "multipleLanguagesDescription": "دعم لغات مختلفة لتمكين العملاء من التسوّق بلغتهم المفضلة.",
+      "name": "التوسع العالمي",
+      "taxByCountry": "الضرائب حسب الدولة",
+      "taxByCountryDescription": "تطبيق الضرائب تلقائيًا بناءً على متطلبات الدولة المستهدفة."
+    },
+    "marketingTools": {
+      "advancedMarketingOffers": "عروض تسويقية متقدمة",
+      "advancedMarketingOffersDescription": "خصومات على الدفع الإلكتروني، وعروض حصرية في التطبيقات، و«اشترِ واحدة واحصل على الأخرى مجانًا».",
+      "affiliateMarketing": "التسويق بالعمولة",
+      "affiliateMarketingDescription": "فعّل التسويق بالعمولة لزيادة المبيعات بالمسوّقين",
+      "basicMarketingOffers": "عروض تسويقية أساسية",
+      "basicMarketingOffersDescription": "كوبونات خصم وعروض شحن مجاني",
+      "customerGroups": "مجموعات العملاء",
+      "customerGroupsDescription": "نظّم عملاءك في مجموعات محددة لتنفيذ حملات تسويقية موجهة.",
+      "name": "أدوات التسويق",
+      "unlimitedCustomers": "عدد غير محدود من العملاء",
+      "unlimitedCustomersDescription": "أضف عددًا غير محدود من العملاء لبناء قاعدة بيانات تسويقية قوية"
+    },
+    "paymentMethods": {
+      "applePay": "أبل باي",
+      "applePayDescription": "فعّل الدفع السهل والآمن بأبل باي.",
+      "bankTransfer": "التحويل البنكي",
+      "bankTransferDescription": "قدّم خيار الدفع بالتحويل البنكي المباشر.",
+      "bankTransferTiers": {
+        "growth": "أولوية الدعم",
+        "lite": "أساسي",
+        "professional": "دعم مميز دون انقطاع"
+      },
+      "installmentOptions": "خيارات الدفع بالتقسيط",
+      "installmentOptionsDescription": "فعّل الدفع بالتقسيط مع تمارا وتابي",
+      "name": "طرق الدفع",
+      "paymentOptions": "خيارات الدفع",
+      "paymentOptionsDescription": "فيزا، ماستركارد، مدى، أمريكان إكسبريس، الدفع عند الاستلام، وروابط الدفع."
+    },
+    "shippingDelivery": {
+      "customShippingMethods": "طرق شحن مخصصة",
+      "customShippingMethodsDescription": "أضف خيارات شحنك أو استخدم مزودي الشحن المحليين.",
+      "deliveryMethods": "طرق التوصيل",
+      "deliveryMethodsDescription": "التوصيل لعناوين العملاء أو تفعيل الاستلام من المتجر.",
+      "multipleShippingCompanies": "شركات شحن متعددة",
+      "multipleShippingCompaniesDescription": "تكامل مع أرامكس، سمسا، سبل، وأكثر من 100 شركة شحن أخرى.",
+      "name": "الشحن والتوصيل",
+      "shipmentStatusReports": "تقارير حالة الشحنات",
+      "shipmentStatusReportsDescription": "تتبّع مفصّل وتحديثات للشحنات لرفع رضا العملاء.",
+      "shippingBySpeed": "الشحن حسب السرعة",
+      "shippingBySpeedDescription": "خيارات تشمل التوصيل في نفس اليوم، وتوصيل سريع في 24 ساعة، وتوصيل قياسي (3-7 أيام).",
+      "shippingByWeight": "الشحن حسب الوزن",
+      "shippingByWeightDescription": "اختر بين الشحن القياسي أو شحن المنتجات الثقيلة.",
+      "storageAndPackagingServices": "خدمات التخزين والتغليف",
+      "storageAndPackagingServicesDescription": "حلول متكاملة لتخزين المنتجات وتغليفها باحترافية."
+    },
+    "showLess": "عرض خصائص أقل",
+    "showMore": "عرض جميع الخصائص",
+    "tiers": {
+      "growth": "باقة النمو",
+      "lite": "الباقة الأساسية",
+      "professional": "الباقة الاحترافية"
+    }
+  },
+  "firstSubscriptionBanner": {
+    "badgeLabel": "باقة التجارة الإلكترونية المتكاملة",
+    "caption": "باقات مرنة تناسب مختلف مراحل نمو المتاجر، توفر لك أدوات البيع، نظام كاشير متكامل، وربط الواتساب\nلإدارة عملياتك والتواصل مع عملائك بسهولة",
+    "cashbackBadge": "50% كاش باك",
+    "cashbackSubtitle": "على الباقات السنوية",
+    "cashbackTitle": "احصل على <1>150 ريال</1> في المحفظة!",
+    "cashbackTitleLine2": "مع اشتراكك وتجهيز متجرك",
+    "nationalDayAlt": "عرض اليوم الوطني. تجارتك مع زد لها مردود. سنة إضافية مجانًا وكاش باك على طلباتك. سنة إضافية مجانًا. كاش باك يصل لـ50 هللة على كل طلب جديد. تطبق الشروط والأحكام.",
+    "nationalDayCashback": "كاش باك يصل لـ50 هللة على كل طلب جديد 💸",
+    "nationalDayFreeYear": "سنة إضافية مجانًا 🎁",
+    "nationalDayLabel": "عرض اليوم الوطني",
+    "nationalDaySubtitle": "سنة إضافية مجانًا وكاش باك على طلباتك",
+    "nationalDayTerms": "تطبق الشروط والأحكام",
+    "nationalDayTitle": "تجارتك مع زد لها مردود 💸",
+    "title": "اختر باقة الاشتراك المناسبة لمتجرك واحصل على نظام نقاط البيع والواتساب مجانًا",
+    "titleLine1": "اختر باقة الاشتراك المناسبة لمتجرك",
+    "titleLine2": "واحصل على نظام <0>نقاط البيع</0> و<1>الواتساب</1> مجانًا",
+    "viewYearlyPackages": "عرض الباقات السنوية"
+  },
+  "lastPackageActivated": "آخر باقة مفعّلة",
+  "moveToNGOPackage": "الانتقال إلى باقة الجمعيات",
+  "nationalDayYearlyCashbackHint": "كاش باك + سنة مجانية",
+  "noPermission": "ليس لديك صلاحية للوصول إلى هذه الصفحة",
+  "perMonth": "شهريًا",
+  "professionalPackage": {
+    "customValue": "قيمة مخصصة"
+  },
+  "submitButtonText": "تجربة باقة {{packageName}}",
+  "submitButtonTextSuspended": "اختيار باقة {{packageName}}",
+  "suspended": {
+    "dialog": {
+      "description": "انتهى اشتراكك. اختر باقة للمتابعة من حيث توقفت.",
+      "storeInformation": "ستُحفظ معلومات متجرك عامين.",
+      "submitButtonText": "اختيار الباقة",
+      "title": "اختر الباقة للعودة لمتابعة عملك"
+    },
+    "processing": {
+      "description": "انتظر حتى تُفعَّل الباقة الجديدة؛ يستغرق ذلك عادةً بضع دقائق.",
+      "title": "نعالج آخر عملية شراء لك"
+    },
+    "selectPlan": "اختر خطة للعودة إلى العمل"
+  },
+  "switchToThisPlan": "اختيار الباقة",
+  "totalBilledBiannually": "الإجمالي {{amount}} {{currency}} يُدفع كل 6 أشهر",
+  "totalBilledYearly": "الإجمالي {{amount}} {{currency}} يُدفع كل 12 شهرًا",
+  "tryStarterPackage": "تجربة باقة البداية",
+  "yearlyCashbackHint": "استرداد نقدي 50%",
+  "yearlyChipText": "وفر 16%"
+}

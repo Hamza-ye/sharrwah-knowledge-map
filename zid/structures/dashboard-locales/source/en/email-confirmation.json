@@ -1,0 +1,36 @@
+{
+  "actions": {
+    "goToDashboard": "Go to dashboard"
+  },
+  "body": {
+    "confirmationFailed": "We could not confirm this request. Please try again.",
+    "farewell": "Have a nice day",
+    "greeting": "Hello {{merchantName}}",
+    "notificationNote": "This page is for notification purposes, you can close it after viewing 💜",
+    "redirectingIn": "You will be redirected to home in {{seconds}}s"
+  },
+  "footer": {
+    "copyright_part1": "© Zid Holding",
+    "copyright_part2": "Riyadh, Saudi Arabia",
+    "helpCenter": "Help center",
+    "privacyPolicy": "Privacy policy"
+  },
+  "invalidLink": {
+    "description": "This link is invalid or has expired. Please request a new one.",
+    "title": "Invalid link"
+  },
+  "types": {
+    "email_update": {
+      "successMessage": "Email address updated successfully ✅"
+    },
+    "phone_update": {
+      "successMessage": "Phone number updated successfully ✅"
+    },
+    "team_member_approval": {
+      "successMessage": "Team member added successfully ✅"
+    },
+    "verify-email": {
+      "successMessage": "Email verified successfully ✅"
+    }
+  }
+}

@@ -1,0 +1,405 @@
+{
+  "available": "متاح",
+  "availableBalance": "رصيدك المتاح",
+  "availableBalanceTooltip": "هذا هو المبلغ الذي يمكنك سحبه أو استخدامه للدفع",
+  "bankAccounts": {
+    "accountHolderName": "اسم صاحب الحساب",
+    "bankName": "البنك العربي الوطني",
+    "ibanNumber": "رقم الآيبان (IBAN)",
+    "reservedBalance": "رصيدك المعلّق",
+    "storeOwnerAccountDetails": {
+      "description": "عند السحب، يُودَع المبلغ في هذا الحساب البنكي المعتمد",
+      "title": "بيانات الحساب البنكي لصاحب المتجر"
+    },
+    "walletAccountDetails": {
+      "description": "معلومات حساب محفظتك في زد لشحنها بالحوالة البنكية",
+      "title": "بيانات حساب المحفظة"
+    }
+  },
+  "bankName": "اسم البنك",
+  "bicBank": "البنك",
+  "bicBank_AAALSARI": "البنك الأول (البنك السعودي الهولندي)",
+  "bicBank_ABDIAEAD": "مصرف أبوظبي الإسلامي (الإمارات)",
+  "bicBank_ABKKKWKW": "البنك الأهلي الكويتي",
+  "bicBank_ADCBAEAA": "بنك أبوظبي التجاري - الإمارات",
+  "bicBank_ALBISARI": "بنك البلاد",
+  "bicBank_ARNBSARI": "البنك العربي الوطني",
+  "bicBank_AUBOOMRU": "البنك الأهلي (عُمان)",
+  "bicBank_BABELBBE": "بنك بيروت - لبنان",
+  "bicBank_BBMEAEAD": "بنك HSBC الشرق الأوسط المحدود (الإمارات)",
+  "bicBank_BBMEOMR": "البنك HSBC (عُمان)",
+  "bicBank_BBYNKWKW": "بنك بوبيان (الكويت)",
+  "bicBank_BDOFOMRU": "بنك ظفار (عُمان)",
+  "bicBank_BIBBBHBM": "بنك البحرين الاسلامي",
+  "bicBank_BJAZSAJE": "بنك الجزيرة",
+  "bicBank_BKMEKWKW": "البنك الأهلي المتحد",
+  "bicBank_BMUSOMRX": "بنك مسقط (عُمان)",
+  "bicBank_BNZWOMRX": "بنك نزوى (عُمان)",
+  "bicBank_BOMLAEAD": "بنك المشرق (الإمارات)",
+  "bicBank_BRGNKWKW": "بنك برقان (الكويت)",
+  "bicBank_BSFRSARI": "البنك السعودي الفرنسي",
+  "bicBank_BSHROMRU": "بنك صحار الدولي (عُمان)",
+  "bicBank_CBDUAEAD": "بنك دبي التجاري (الإمارات)",
+  "bicBank_CLIBIAEAD": "البنك التجاري الدولي (الإمارات)",
+  "bicBank_COMBKWKW": "البنك التجاري الكويتي",
+  "bicBank_DUIBAEAD": "بنك دبي الإسلامي (الإمارات)",
+  "bicBank_EBILAEAD": "بنك الإمارات دبي الوطني (الإمارات)",
+  "bicBank_FGBMAEAA": "بنك الخليج الأول (الإمارات)",
+  "bicBank_GULBKWKW": "بنك الخليج الكويتي",
+  "bicBank_GULFSARI": "بنك الخليج الدولي - ميم",
+  "bicBank_INMASARI": "مصرف الإنماء",
+  "bicBank_KFHOKWKW": "بيت التمويل الكويتي",
+  "bicBank_KWIBKWKW": "بنك الكويت الدولي",
+  "bicBank_MEBLAEAD": "بنك الإمارات الإسلامي (الإمارات)",
+  "bicBank_NBADAEAA": "بنك أبوظبي الوطني (الإمارات)",
+  "bicBank_NBFUAEAF": "بنك الفجيرة الوطني (الإمارات)",
+  "bicBank_NBOKKWKW": "بنك الكويت الوطني",
+  "bicBank_NBOMOMRX": "البنك الوطني العماني",
+  "bicBank_NBSHAEAS": "مصرف الشارقة الإسلامي (الإمارات)",
+  "bicBank_NCBKSAJE": "البنك الأهلي التجاري (السعودية)",
+  "bicBank_NISLAEAD": "بنك نور (الإمارات)",
+  "bicBank_NRAKAEAK": "بنك رأس الخيمة الوطني (الإمارات)",
+  "bicBank_OMABOMRU": "بنك عمان العربي",
+  "bicBank_RIBLSARI": "بنك الرياض",
+  "bicBank_RJHISARI": "مصرف الراجحي",
+  "bicBank_SABBSARI": "البنك السعودي الأول (ساب)",
+  "bicBank_SAMBSARI": "مجموعة سامبا المالية (سامبا)",
+  "bicBank_SHARAEAS": "بنك الشارقة (الإمارات)",
+  "bicBank_SIBCSARI": "البنك السعودي للاستثمار",
+  "bicBank_UARBAEAA": "البنك العربي المتحد (الإمارات)",
+  "bicBank_UMMQAEAA": "بنك أم القيوين الوطني (الإمارات)",
+  "bicBank_UNBEAEAA": "بنك الاتحاد الوطني (الإمارات)",
+  "bicBank_WRBAKWKW": "بنك وربة",
+  "credits": "رصيد",
+  "currentBalance": {
+    "title": "رصيدك الحالي",
+    "topupOptions": "إضافة رصيد",
+    "withdraw": {
+      "disabled": "عذرًا، لا يمكنك السحب الآن لأن رسوم السحب أعلى من رصيدك.",
+      "disabledZeroBalance": "عذرًا، لا يمكنك السحب الآن لأن رسوم السحب أعلى من رصيدك.",
+      "pleaseVerify": "وثّق حسابك لسحب الرصيد.",
+      "title": "سحب الرصيد"
+    }
+  },
+  "funds": {
+    "confirmPayment": "تأكيد الدفع",
+    "creditCardInfo": "بيانات بطاقة الائتمان",
+    "errorCreatingPurchase": "تعذّر إنشاء جلسة الدفع. حاول مرة أخرى.",
+    "fields": {
+      "amount": {
+        "amountError": "يجب إدخال قيمة مساوية لـ {{count}} أو مضاعفاتها فقط.",
+        "amountError_few": "يجب إدخال قيمة مساوية لـ {{count}} أو مضاعفاتها فقط.",
+        "amountError_many": "يجب إدخال قيمة مساوية لـ {{count}} أو مضاعفاتها فقط.",
+        "amountError_one": "يجب إدخال قيمة مساوية لـ {{count}} أو مضاعفاتها فقط.",
+        "amountError_other": "يجب إدخال قيمة مساوية لـ {{count}} أو مضاعفاتها فقط.",
+        "amountError_two": "يجب إدخال قيمة مساوية لـ {{count}} أو مضاعفاتها فقط.",
+        "amountError_zero": "يجب إدخال قيمة مساوية لـ {{count}} أو مضاعفاتها فقط.",
+        "label": "المبلغ",
+        "placeholder": "أدخل المبلغ"
+      }
+    },
+    "nextOperationWillBeChargedValue": "سيُحصَّل مبلغ <amount></amount> لرصيد محفظتك في العملية التالية.",
+    "purchaseStatus": {
+      "approved": "قُبل الدفع.",
+      "initiated": "جارِ معالجة عملية الدفع. لن يستغرق الأمر سوى لحظات.",
+      "pending": "جارِ تنفيذ عملية الدفع، وسنبلغك فور اكتمالها",
+      "rejected": "تعذّر تنفيذ عملية الدفع. أعد المحاولة مرة أخرى أو تواصل مع فريق الدعم."
+    },
+    "storeOwnerAccountDetails": {
+      "description": "عند التحويل إلى حساب موثّق، يُودَع مبلغ التحويل في المحفظة تلقائيًا.",
+      "title": "بيانات حساب صاحب المتجر"
+    },
+    "tabs": {
+      "applePay": "أبل باي",
+      "creditCards": "بطاقات الائتمان",
+      "wireTransfer": "التحويل البنكي"
+    },
+    "walletAccountDetails": {
+      "description": "معلومات حساب محفظتك في زد لشحنها بالحوالة البنكية",
+      "title": "بيانات حساب المحفظة"
+    },
+    "walletVerificationAlert": "لتسريع عملية التحويل البنكي، أكمل إجراءات <1>التحقق من المحفظة</1>",
+    "yourNewBalance": "رصيد محفظتك الجديد:"
+  },
+  "lowBalance": "الرصيد منخفض",
+  "newBankAccount": "+ إضافة حساب بنكي جديد",
+  "reserved": "معلّق",
+  "reservedBalance": "الرصيد المعلّق",
+  "reservedBalanceTooltip": "مبلغ محجوز نتيجة استخدام خدمة معينة، ولا يمكن استخدامه ولا سحبه. يُتحقَّق منه ويُسوّى في تاريخ الاستحقاق.",
+  "transactions": {
+    "all": "الكل",
+    "columns": {
+      "amount": "المبلغ",
+      "date": "التاريخ",
+      "description": "الوصف",
+      "service": "الخدمة",
+      "transactionNumber": "رقم العملية",
+      "transactionType": "نوع العملية"
+    },
+    "credit": "إيداع",
+    "debit": "سحب",
+    "emptyState": {
+      "title": "لا توجد عمليات حاليًا"
+    },
+    "filters": {
+      "paymentSource": {
+        "label": "مصدر الدفع",
+        "labelCredit": "بوليصة الشحن",
+        "placeholder": "اختر مصدر الدفع",
+        "wallet": "المحفظة"
+      },
+      "paymentType": {
+        "label": "نوع الدفع",
+        "placeholder": "اختر نوع الدفع"
+      },
+      "service": {
+        "label": "الخدمة",
+        "placeholder": "اختر الخدمة"
+      },
+      "status": {
+        "placeholder": "اختر الحالة"
+      },
+      "transactionNumber": {
+        "label": "رقم العملية",
+        "placeholder": "أدخل رقم العملية"
+      },
+      "type": {
+        "label": "نوع العملية",
+        "placeholder": "اختر نوع العملية"
+      }
+    },
+    "paymentSource": {
+      "labelCredit": "بوليصة الشحن",
+      "wallet": "المحفظة"
+    },
+    "service": {
+      "addons": "إضافات زد",
+      "appmarket": "سوق تطبيقات زد",
+      "marketplaceConnect": "ربط قنوات البيع",
+      "mazeed": "مزيد",
+      "subscription": "اشتراكات زد",
+      "wallet": "محفظة زد",
+      "zidAgent": "وكيل زد",
+      "zidLoyalty": "برنامج الولاء",
+      "zidpay": "مدفوعات زد",
+      "zidpayDescription": "التحصيل بقسط زد باي",
+      "zidship": "شحن زد"
+    },
+    "status": {
+      "authorized": "عملية معلقة",
+      "cancelled": "عملية ملغاة",
+      "failed": "عملية فاشلة",
+      "pending": "عملية معلقة",
+      "refunded": "عملية مسترجعة",
+      "success": "عملية ناجحة",
+      "voided": "عملية ملغاة"
+    },
+    "tabs": {
+      "completed": "المكتملة",
+      "pending": "المعلقة"
+    },
+    "title": "العمليات",
+    "transactionType": {
+      "credit": "إيداع",
+      "debit": "سحب"
+    }
+  },
+  "verifiedAlert": {
+    "title": "وُثّق الحساب البنكي للمحفظة باستخدام بياناتك في مدفوعات زد."
+  },
+  "verify": {
+    "addNewBankAccount": "إضافة حساب بنكي جديد",
+    "confirmInfo": "تأكيد البيانات",
+    "fields": {
+      "accountType": {
+        "label": "نوع النشاط التجاري",
+        "options": {
+          "company": "شركة",
+          "individual": "فرد"
+        }
+      },
+      "commercialRegistrationNumber": {
+        "label": "رقم السجل التجاري",
+        "placeholder": "أدخل رقم السجل التجاري"
+      },
+      "commercialRegistrationPhoto": {
+        "label": "شهادة السجل التجاري"
+      },
+      "idNumber": {
+        "label": "رقم الهوية الوطنية",
+        "placeholder": "أدخل رقم الهوية الوطنية"
+      },
+      "mainBankAccount": {
+        "helperText": "لأتمتة العمليات تلقائياً مع المحفظة",
+        "label": "الحساب البنكي الرئيسي",
+        "placeholder": "اختر الحساب البنكي الرئيسي"
+      },
+      "nationalIdPhoto": {
+        "label": "صورة الهوية الشخصية"
+      },
+      "storeOwnerIsWalletManager": {
+        "label": "مالك المتجر هو مدير المحفظة"
+      },
+      "walletManagerMobile": {
+        "label": "رقم جوال مدير المحفظة",
+        "placeholder": "أدخل رقم جوال مدير المحفظة"
+      }
+    },
+    "otp": {
+      "codeReSentSuccessfully": "أُعيد إرسال رمز التحقق.",
+      "description": "أدخل رمز التحقق (OTP) المرسل إلى رقم جوالك.",
+      "didntGetCode": "لم يصلك رمز التحقق؟",
+      "fields": {
+        "code": {
+          "label": "رمز التحقق",
+          "placeholder": "أدخل رمز التحقق"
+        }
+      },
+      "notVerified": "رمز التحقق غير صحيح",
+      "sendAgain": "إعادة الإرسال",
+      "title": "تأكيد العملية"
+    },
+    "validation": {
+      "10DigitsLength": "يجب أن يتكون من 10 أرقام بالضبط.",
+      "invalidBank": "البنك غير صحيح. تأكد من صحة البيانات.",
+      "invalidCommercialRegistrationPhoto": "ارفع صورة سجل تجاري صالحة.",
+      "invalidNationalIdPhoto": "ارفع صورة هوية شخصية صالحة.",
+      "invalidPhoneNumberFormat": "رقم الجوال غير صحيح. اكتبه بصيغة دولية تبدأ برمز الدولة (مثل: ‎+966XXXXXXXXX).",
+      "numbersOnly": "أدخل أرقامًا فقط.",
+      "required": "عبّئ هذا الحقل"
+    }
+  },
+  "verifyAccount": {
+    "actions": {
+      "verify": "التحقق من الحساب"
+    },
+    "title": "تحقق من حسابك لتسحب رصيدك من المحفظة بسهولة وتدير جميع العمليات من مكان واحد."
+  },
+  "verifyAlert": {
+    "rejected": {
+      "description": "تواصل معنا لمزيد من التفاصيل.",
+      "reason_a_required_field_is_missing_please_complete_all_required_details_and_try_again": "حقل مطلوب مفقود. يرجى استكمال جميع البيانات المطلوبة والمحاولة مرة أخرى.",
+      "reason_additional_information_is_required_for_this_transaction_please_provide_further_details": "يلزم تقديم معلومات إضافية لهذه المعاملة. يرجى تزويدنا بمزيد من التفاصيل.",
+      "reason_authentication_failed_please_check_your_credentials_and_try_again": "فشلت المصادقة. يرجى التحقق من بيانات الدخول والمحاولة مرة أخرى.",
+      "reason_blocked_account": "الحساب محظور.",
+      "reason_closed_creditor_account_number": "رقم حساب الدائن مغلق.",
+      "reason_incorrect_account_number": "رقم الحساب غير صحيح.",
+      "reason_some_information_provided_is_incorrect_please_review_and_try_again": "بعض البيانات المقدمة غير صحيحة. يرجى مراجعتها والمحاولة مرة أخرى.",
+      "reason_the_account_associated_with_this_iban_is_active_and_available_for_transactions": "الحساب المرتبط برقم الآيبان هذا نشط ومتاح للمعاملات.",
+      "reason_the_account_associated_with_this_iban_is_currently_blocked_please_contact_your_bank_for_assistance": "الحساب المرتبط برقم الآيبان هذا محظور حاليًا. يرجى التواصل مع البنك للمساعدة.",
+      "reason_the_account_associated_with_this_iban_is_currently_unavailable_please_try_again_later_or_contact_your_bank": "الحساب المرتبط برقم الآيبان هذا غير متاح حاليًا. يرجى المحاولة لاحقًا أو التواصل مع البنك.",
+      "reason_the_account_associated_with_this_iban_you_are_trying_to_use_has_been_closed_please_use_a_different_account": "تم إغلاق الحساب المرتبط برقم الآيبان الذي تحاول استخدامه. يرجى استخدام حساب آخر.",
+      "reason_the_account_details_associated_with_this_iban_appear_correct_but_could_not_be_verified_please_check_with_your_bank": "تبدو بيانات الحساب المرتبطة برقم الآيبان هذا صحيحة ولكن تعذر التحقق منها. يرجى مراجعة البنك.",
+      "reason_the_account_details_associated_with_this_iban_have_been_changed_please_confirm_and_retry": "تم تغيير بيانات الحساب المرتبطة برقم الآيبان هذا. يرجى التأكيد وإعادة المحاولة.",
+      "reason_the_account_number_associated_with_this_iban_for_the_debtor_is_invalid_please_verify_the_details": "رقم الحساب المرتبط برقم الآيبان هذا للمدين غير صالح. يرجى التحقق من البيانات.",
+      "reason_the_account_number_or_iban_entered_is_incorrect_please_check_and_try_again": "رقم الحساب أو الآيبان المدخل غير صحيح. يرجى التحقق والمحاولة مرة أخرى.",
+      "reason_the_account_number_or_iban_entered_is_invalid_please_check_and_enter_the_correct_details": "رقم الحساب أو الآيبان المدخل غير صالح. يرجى التحقق وإدخال البيانات الصحيحة.",
+      "reason_the_account_type_associated_with_this_iban_is_not_valid_please_check_and_try_again": "نوع الحساب المرتبط برقم الآيبان هذا غير صالح. يرجى التحقق والمحاولة مرة أخرى.",
+      "reason_the_bank_account_associated_with_this_iban_has_been_closed": "تم إغلاق الحساب البنكي المرتبط برقم الآيبان هذا.",
+      "reason_the_branch_code_entered_is_incorrect_please_verify_and_enter_the_correct_code": "رمز الفرع المدخل غير صحيح. يرجى التحقق وإدخال الرمز الصحيح.",
+      "reason_the_creditor_account_associated_with_this_iban_has_been_closed_please_verify_and_try_again": "تم إغلاق حساب الدائن المرتبط برقم الآيبان هذا. يرجى التحقق والمحاولة مرة أخرى.",
+      "reason_the_creditor_account_type_associated_with_this_iban_is_not_valid_for_this_transaction": "نوع حساب الدائن المرتبط برقم الآيبان هذا غير صالح لهذه المعاملة.",
+      "reason_the_currency_selected_for_the_creditors_account_associated_with_this_iban_is_invalid_please_check_and_retry": "العملة المحددة لحساب الدائن المرتبط برقم الآيبان هذا غير صالحة. يرجى التحقق وإعادة المحاولة.",
+      "reason_the_currency_selected_for_the_debitors_account_associated_with_this_iban_is_invalid_please_verify_and_try_again": "العملة المحددة لحساب المدين المرتبط برقم الآيبان هذا غير صالحة. يرجى التحقق والمحاولة مرة أخرى.",
+      "reason_the_debtor_account_associated_with_this_iban_has_been_closed_please_verify_and_try_again": "تم إغلاق حساب المدين المرتبط برقم الآيبان هذا. يرجى التحقق والمحاولة مرة أخرى.",
+      "reason_the_debtor_account_type_associated_with_this_iban_is_not_valid": "نوع حساب المدين المرتبط برقم الآيبان هذا غير صالح.",
+      "reason_the_iban_and_id_details_do_not_match_please_verify_and_enter_the_correct_details": "بيانات الآيبان والهوية غير متطابقة. يرجى التحقق وإدخال البيانات الصحيحة.",
+      "reason_the_iban_provided_does_not_match_the_details_on_record": "رقم الآيبان المقدم لا يطابق البيانات المسجلة.",
+      "reason_the_iban_provided_does_not_match_the_details_on_record_please_verify_and_try_again": "رقم الآيبان المقدم لا يطابق البيانات المسجلة. يرجى التحقق والمحاولة مرة أخرى.",
+      "reason_the_id_details_entered_do_not_exist_please_check_and_try_again": "بيانات الهوية المدخلة غير موجودة. يرجى التحقق والمحاولة مرة أخرى.",
+      "reason_the_id_entered_does_not_match_account_name": "رقم الهوية المدخل لا يطابق اسم الحساب.",
+      "reason_the_id_type_entered_is_invalid_please_enter_a_valid_id_type": "نوع الهوية المدخل غير صالح. يرجى إدخال نوع هوية صالح.",
+      "reason_the_id_value_entered_is_incorrect_please_verify_and_enter_the_correct_details": "قيمة الهوية المدخلة غير صحيحة. يرجى التحقق وإدخال البيانات الصحيحة.",
+      "reason_the_identification_entered_is_not_valid_please_check_and_enter_a_registered_participant_id": "الهوية المدخلة غير صالحة. يرجى التحقق وإدخال رقم مشارك مسجل.",
+      "reason_the_participant_identifier_entered_is_not_valid_please_verify_and_enter_a_correct_id": "الرقم التعريفي للمشارك المدخل غير صالح. يرجى التحقق وإدخال رقم صحيح.",
+      "reason_the_payment_system_is_currently_unavailable_please_try_again_later": "نظام المدفوعات غير متاح حاليًا. يرجى المحاولة لاحقًا.",
+      "reason_the_proxy_you_entered_is_not_registered_please_verify_and_try_again": "الاسم المستعار المدخل غير مسجل. يرجى التحقق والمحاولة مرة أخرى.",
+      "reason_the_receiving_bank_is_currently_unavailable_please_try_again_later": "البنك المستلم غير متاح حاليًا. يرجى المحاولة لاحقًا.",
+      "reason_the_recipients_bank_is_not_reachable_at_the_moment_please_try_again_later": "يتعذر الوصول إلى بنك المستلم حاليًا. يرجى المحاولة لاحقًا.",
+      "reason_the_selected_currency_is_not_supported_for_the_account_associated_with_this_iban_please_choose_a_valid_currency": "العملة المحددة غير مدعومة للحساب المرتبط برقم الآيبان هذا. يرجى اختيار عملة صالحة.",
+      "reason_the_selected_participant_is_no_longer_active_please_choose_another_participant": "المشارك المحدد لم يعد نشطًا. يرجى اختيار مشارك آخر.",
+      "reason_the_transaction_could_not_be_completed_please_try_again_later": "تعذر إتمام المعاملة. يرجى المحاولة لاحقًا.",
+      "reason_the_transaction_initiator_is_temporarily_suspended_please_contact_support": "تم إيقاف مُنشئ المعاملة مؤقتًا. يرجى التواصل مع الدعم.",
+      "reason_the_transaction_initiator_is_unavailable_please_try_again_later": "مُنشئ المعاملة غير متاح حاليًا. يرجى المحاولة لاحقًا.",
+      "reason_the_type_of_account_provided_is_not_supported": "نوع الحساب المقدم غير مدعوم.",
+      "reason_there_is_an_issue_with_the_creditor_account_number": "توجد مشكلة في رقم حساب الدائن.",
+      "reason_there_is_an_issue_with_the_iban_provided": "توجد مشكلة في رقم الآيبان المقدم.",
+      "reason_there_is_an_issue_with_the_payment_processing_please_contact_saudi_payments_for_assistance": "توجد مشكلة في معالجة الدفع. يرجى التواصل مع المدفوعات السعودية للمساعدة.",
+      "reason_this_account_associated_with_this_iban_is_currently_under_liquidation": "الحساب المرتبط برقم الآيبان هذا قيد التصفية حاليًا.",
+      "reason_this_account_is_no_longer_active_due_to_the_account_holders_status": "لم يعد هذا الحساب نشطًا بسبب حالة مالك الحساب.",
+      "reason_this_bank_account_associated_with_this_iban_is_blocked": "الحساب البنكي المرتبط برقم الآيبان هذا محظور.",
+      "reason_this_bank_account_associated_with_this_iban_is_in_liquidation": "الحساب البنكي المرتبط برقم الآيبان هذا قيد التصفية.",
+      "reason_this_bank_account_associated_with_this_iban_is_sequestration": "الحساب البنكي المرتبط برقم الآيبان هذا تحت الحجز.",
+      "reason_this_bank_account_owner_associated_with_this_iban_is_deceased": "مالك الحساب البنكي المرتبط برقم الآيبان هذا متوفى.",
+      "reason_this_transaction_appears_to_be_a_duplicate_please_check_your_transaction_history": "تبدو هذه المعاملة مكررة. يرجى مراجعة سجل معاملاتك.",
+      "reason_transactions_are_not_allowed_on_the_account_associated_with_this_iban_please_contact_your_bank_for_further_assistance": "المعاملات غير مسموحة على الحساب المرتبط برقم الآيبان هذا. يرجى التواصل مع البنك لمزيد من المساعدة.",
+      "reason_transactions_with_future_dates_are_not_supported_please_enter_a_valid_date": "المعاملات ذات التواريخ المستقبلية غير مدعومة. يرجى إدخال تاريخ صالح.",
+      "reason_we_dont_support_some_of_the_details_provided_with_the_iban_or_id": "بعض البيانات المقدمة مع رقم الآيبان أو الهوية غير مدعومة.",
+      "reason_were_currently_unable_to_complete_the_request_as_the_beneficiary_bank_took_too_long_to_respond_please_try_again_in_a_few_minutes": "يتعذر علينا حاليًا إتمام الطلب لتأخر رد البنك المستفيد. يرجى المحاولة مرة أخرى بعد بضع دقائق.",
+      "reason_were_currently_unable_to_connect_with_the_receivers_bank_please_try_again_in_a_few_minutes": "يتعذر علينا حاليًا الاتصال ببنك المستلم. يرجى المحاولة مرة أخرى بعد بضع دقائق.",
+      "reason_you_have_reached_the_maximum_number_of_retries_for_this_iban_for_the_period_of_12_hours": "لقد بلغت الحد الأقصى لعدد المحاولات لرقم الآيبان هذا خلال 12 ساعة.",
+      "rejectionReason": "سبب الرفض: {{reason}}",
+      "title": "رُفض التوثيق"
+    },
+    "toBeVerified": {
+      "description": "لقد استلمنا طلب توثيق محفظتك، وجاري مراجعة بياناتك.",
+      "title": "ستُوثَّق محفظتك قريبًا."
+    },
+    "underReview": {
+      "description": "لقد استلمنا طلب توثيق محفظتك، وجاري مراجعة بياناتك.",
+      "title": "طلب توثيق محفظتك قيد المراجعة"
+    }
+  },
+  "viewBalances": "عرض الأرصدة",
+  "viewLess": "عرض أقل",
+  "wallet-splitting": {
+    "ActivedZidPaymentsDescription": "خصص نسبة أو مبلغًا ثابتًا من كل عملية بيع لتغطية نفقات المحفظة، مثل الشحن، والإضافات، أو التكاليف الداخلية.",
+    "ActivedZidPaymentsMessage": "قسّم مدفوعاتك بمرونة",
+    "NotActiveZidPaymentsMessage": "لابد من تفعيل مدفوعات زد لتفعيل الاستقطاع للمحفظة.",
+    "active-tag": "الاستقطاع للمحفظة مفعّل",
+    "alert": {
+      "btn": "إعداد الاستقطاع للمحفظة",
+      "description": "خصص نسبة أو مبلغًا ثابتًا من كل عملية بيع لتغطية نفقات المحفظة، مثل الشحن، والإضافات، أو التكاليف الداخلية.",
+      "title": "قسّم مدفوعاتك بمرونة"
+    },
+    "deactivate-dialog": "هل أنت متأكد من إلغاء تفعيل الاستقطاع للمحفظة؟",
+    "form": {
+      "amount-type": "مبلغ ثابت",
+      "amount-type-alert": "إذا كانت قيمة الطلب أقل من مبلغ الاستقطاع المدخل، فلن يُطبَّق الاستقطاع على هذا الطلب.",
+      "description": "اختر طريقة استقطاعك من المدفوعات",
+      "percentage-type": "نسبة مئوية",
+      "waybill-placeholder": "يُحسب تلقائيًا بناءً على سعر البوليصة الأساسي فقط.",
+      "waybill-type": "سعر البوليصة"
+    },
+    "setup-btn": "إعداد الاستقطاع للمحفظة",
+    "splitAmount": "مبلغ الاستقطاع",
+    "title": "الاستقطاع للمحفظة"
+  },
+  "withdraw": {
+    "availableBalanceForWithdrawal": "الرصيد المتاح للسحب",
+    "bankName": "اسم البنك",
+    "confirmWithdrawal": "تأكيد السحب",
+    "currentBalance": "الرصيد الحالي",
+    "durationMessage": "سيصل المبلغ إلى حسابك البنكي في 2 إلى 5 أيام عمل",
+    "feeMessage": "ستُخصم رسوم {{value}} من المبلغ المراد سحبه",
+    "fundsDeposit": "ستُودَع الأموال في هذا الحساب.",
+    "ibanNumber": "رقم الآيبان (IBAN)",
+    "maxLimitError": "أقصى مبلغ يمكن سحبه هو {{value}}",
+    "successMessage": "أُنشئ طلب السحب",
+    "withdrawInfo": "بيانات السحب",
+    "withdrawalFee": "رسوم السحب هي {{value}}، حتى مبلغ 20000 ريال سعودي"
+  },
+  "yourReservedBalanceIs": "رصيدك المعلق هو",
+  "zidCredit": "رصيد خدمات زد",
+  "zidCreditBalances": {
+    "anyZidServices": "رصيد لأي خدمة",
+    "appMarket": "سوق التطبيقات",
+    "description": "استخدم رصيد زد لدفع خدمات زد المحددة عند الدفع",
+    "noCredits": "لا توجد أرصدة متاحة",
+    "sms": "رسائل نصية",
+    "total": "المجموع",
+    "zidLogistics": "شحن زد",
+    "zidPos": "نقطة بيع زد"
+  },
+  "zidCreditTooltip": "يمكن استخدام رصيد زد لدفع خدمات زد المحددة. يتضمن هذا الرصيد المبالغ المستردة والتعويضات أو الرصيد الترويجي من زد. لا يمكن سحبه."
+}

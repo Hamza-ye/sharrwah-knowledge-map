@@ -1,0 +1,267 @@
+{
+  "actions": {
+    "delete": "حذف النطاق",
+    "disable": "تعطيل النطاق",
+    "edit": "تعديل النطاق",
+    "enable": "تفعيل النطاق"
+  },
+  "confirmDialog": {
+    "delete": {
+      "description": "هل أنت متأكد من حذف نطاق {{name}}؟",
+      "title": "حذف النطاق"
+    },
+    "disable": {
+      "description": "هل أنت متأكد من تعطيل نطاق {{name}}؟",
+      "title": "تعطيل النطاق"
+    },
+    "enable": {
+      "description": "هل أنت متأكد من تفعيل نطاق {{name}}؟",
+      "title": "تفعيل النطاق"
+    },
+    "save": {
+      "description": "هل أنت متأكد من حفظ التعديلات على التوصيل المحلي الذي أنشأته؟",
+      "title": "حفظ التعديلات"
+    }
+  },
+  "create": {
+    "cities": {
+      "citiesLabel": "المدن",
+      "citiesPlaceholder": "اختر المدن",
+      "countriesHelper": "يمكنك اختيار أكثر من دولة",
+      "countriesLabel": "الدول",
+      "countriesPlaceholder": "اختر الدولة",
+      "selectCitiesLabel": "اختر المدن",
+      "title": "اختيار المدن"
+    },
+    "configuration": {
+      "nameLabel": "اسم النطاق",
+      "namePlaceholder": "مثال: التوصيل السريع في الرياض",
+      "title": "إعدادات النطاق",
+      "zoneTypeLabel": "نوع النطاق"
+    },
+    "invalidState": "بعض بيانات النطاق ناقصة أو غير صحيحة؛ راجعها.",
+    "inventory": {
+      "rangeHelper": "حدد أقصى مسافة توصل إليها.",
+      "rangeLabel": "أقصى مسافة",
+      "rangePlaceholder": "مثال: 10"
+    },
+    "placeholderDescription": "لا تحتوي هذه الخطوة على حقول بعد. تابع للتأكد من أن المعالج يحتفظ بتقدمك في الرابط.",
+    "shippingMethodDetails": {
+      "coverage": {
+        "description": "المدن المتاحة لطريقة الشحن هذه • تغطية {{count}} مدينة",
+        "dialogTitle": "تفاصيل التغطية",
+        "title": "التغطية",
+        "uncovered": "المدن غير المغطاة"
+      },
+      "firstMile": {
+        "title": "الاستلام ذو الأولوية"
+      },
+      "tabs": {
+        "editPrice": "تعديل السعر",
+        "overview": "التفاصيل الأساسية"
+      }
+    },
+    "shippingMethods": {
+      "conflict": {
+        "activateAnyway": "تفعيل على أي حال",
+        "alertDescription": "يمكنك أيضاً تفعيلها في هذا النطاق. إذا تداخل النطاقان في تغطية موقع العميل، سيُعرض أقل سعر شحن من بين النطاقات المتطابقة.",
+        "alertTitle": "طريقة الشحن هذه مفعّلة بالفعل في <zoneName>{{zoneName}}</zoneName>.",
+        "anotherZone": "نطاق آخر",
+        "confirmAndActivate": "تأكيد وتفعيل",
+        "dialogDescription": "طريقة الشحن هذه مفعّلة بالفعل في <zoneName>{{zoneName}}</zoneName>.",
+        "dialogHint": "إذا تداخلت النطاقات، سيُعرض أقل سعر شحن من بين النطاقات المتطابقة للعميل.",
+        "dialogTitle": "التفعيل في نطاقات متعددة؟"
+      },
+      "createLocalDelivery": {
+        "description": "أضف توصيلاً محلياً وأدِر نطاق أسطولك.",
+        "dialogTitle": "إنشاء توصيل محلي جديد",
+        "shippingNameTitle": "اسم الشحن",
+        "timeSlotsInfo": "يمكنك تخصيص فترات التوصيل الزمنية بعد الإنشاء.",
+        "title": "إنشاء توصيل محلي"
+      },
+      "description": "يمكنك اختيار طريقة شحن واحدة فقط.",
+      "detailsUnavailable": "لا تتوفر تفاصيل لطريقة الشحن هذه.",
+      "emptyTitle": "لا توجد طرق شحن متاحة",
+      "localDeliveryBadge": "توصيل محلي",
+      "localDeliverySummary": "أقصى مسافة {{distance}} كم . {{pricingLabel}} {{rate}}",
+      "localDeliverySummaryWithoutDistance": "{{pricingLabel}} {{rate}}",
+      "multipleDescription": "يمكنك اختيار أكثر من طريقة شحن.",
+      "startingFrom": "يبدأ من {{rate}}",
+      "startingFromWithMaxDistance": "حتى {{distance}} كم . يبدأ من {{rate}}",
+      "title": "طرق الشحن",
+      "upToDistance": "حتى {{distance}} كم"
+    },
+    "shippingPrice": {
+      "existingMethodLoadError": "تعذر تحميل طريقة الشحن الخاصة بهذا النطاق. حاول مرة أخرى قبل الحفظ.",
+      "maxDistanceForBasePrice": {
+        "label": "أقصى مسافة للسعر الأساسي",
+        "placeholder": "أدخل أقصى مسافة"
+      },
+      "ratePerAdditionalDistance": {
+        "label": "السعر الإضافي لكل كم",
+        "placeholder": "أدخل السعر الإضافي لكل كم"
+      },
+      "shippingNamePlaceholder": "مثال: توصيل الأسطول",
+      "shippingNameTitle": "اسم الشحن",
+      "title": "سعر الشحن",
+      "upToDistance": "حتى {{distance}} كم"
+    },
+    "shippingRate": {
+      "description": "حدد أسعار الشحن للعملاء حسب نطاق التوصيل. سيُحتسب السعر الافتراضي عليك، بينما يدفع العملاء السعر المخصص الذي تحدده.",
+      "distanceBased": "التسعير حسب المسافة",
+      "distanceBasedDescription": "يُحتسب السعر بناءً على مسافة التوصيل بالكيلومتر.",
+      "flatRate": "سعر ثابت",
+      "flatRateDescription": "احتسب على العملاء سعرًا ثابتًا واحدًا، وتتحمل التكلفة الإضافية.",
+      "maximumDistanceHelper": "حدد أقصى مسافة توصل إليها أو تغطيها.",
+      "maximumDistanceLabel": "أقصى مسافة بالكيلومتر",
+      "maximumDistanceTitle": "أقصى مسافة",
+      "noteLabel_ar": "ملاحظة بالعربية",
+      "noteLabel_en": "ملاحظة بالإنجليزية",
+      "notesDescription": "تظهر للعملاء عند اختيار مستوى الخدمة هذا في السلة.",
+      "notesTitle": "ملاحظات",
+      "readOnlyDescription": "تحدد شركة الشحن هذا السعر، ولا يمكن تعديله حاليًا.",
+      "resetTooltip": "إعادة التعيين للسعر الافتراضي",
+      "savePending": "حفظ السعر المخصص غير متاح حاليًا.",
+      "shippingPricePlaceholder": "حدد سعر الشحن",
+      "title": "تعديل السعر",
+      "weightBased": "التسعير حسب الوزن",
+      "weightBasedDescription": "احتسب على العملاء بناءً على وزن الطلب."
+    },
+    "steps": {
+      "cities": "اختيار المدن",
+      "configuration": "إعدادات النطاق",
+      "inventory": "اختيار المستودع",
+      "inventoryLocation": "موقع المستودع",
+      "shippingMethods": "طرق الشحن",
+      "shippingPrice": "سعر الشحن",
+      "zoneType": "نوع النطاق"
+    },
+    "summary": {
+      "inventoryTitle": "موقع المستودع",
+      "shippingMethodTitle": "طرق الشحن",
+      "shippingPriceTitle": "سعر الشحن"
+    },
+    "typeNotAvailable": "لا يمكن إنشاء هذا النوع من النطاقات بعد.",
+    "zoneType": {
+      "aerial": {
+        "description": "الأفضل لنطاقات الشحن بسعر ثابت (مثال: «توصيل مجاني داخل نطاق 10 كم من المستودع»)."
+      },
+      "city": {
+        "description": "الأفضل لشركات الشحن التقليدية حيث تُحدد أسعار التوصيل حسب حدود المدينة."
+      },
+      "isochrone": {
+        "description": "الأفضل للتجارة السريعة عندما تحتاج إلى ضمان «التوصيل في 30 دقيقة»."
+      },
+      "isodistance": {
+        "description": "الأفضل للتجارة السريعة عندما تحتاج إلى تغطية مسافة طريق محددة من المستودع."
+      },
+      "title": "اختر نوع النطاق"
+    }
+  },
+  "edit": {
+    "configuration": {
+      "cities": "المدن",
+      "deliveryTime": "وقت التوصيل",
+      "description": {
+        "aerial": "بناءً على المسافة المباشرة",
+        "city": "بناءً على المدينة",
+        "custom_polygon": "نطاق تغطية مخصص",
+        "isochrone": "بناءً على مسافة الطريق",
+        "isodistance": "بناءً على مسافة الطريق"
+      },
+      "maxDistance": "الحد الأقصى للمسافة",
+      "name": "اسم النطاق",
+      "title": "إعدادات النطاق",
+      "zoneType": "نوع النطاق"
+    },
+    "inventory": {
+      "addDialogDescription": "اختر مواقع المخزون الجديدة التي تريد إضافتها.",
+      "addDialogTitle": "إضافة مخزون جديد",
+      "addNew": "+ إضافة جديد",
+      "addSelectLabel": "مواقع المخزون",
+      "centerLimit": "يمكن ربط نقطة مخزون مركزية واحدة فقط بنطاقات التوصيل السريع.",
+      "dialogDescription": "عدّل أو أضف مخزونًا جديدًا إلى موقعك",
+      "dialogTitle": "موقع المخزون",
+      "emptyAction": "إضافة مخزون",
+      "emptyDescription": "لم تضف خيارات للمخزون بعد. اختر خيارًا واحدًا للمتابعة.",
+      "emptyTitle": "المخزون",
+      "inventoryColumn": "المخزون",
+      "radiusColumn": "النطاق",
+      "removeDialog": {
+        "description": "هل أنت متأكد من إزالة {{name}} من هذا النطاق؟",
+        "title": "إزالة موقع المخزون من هذا النطاق؟"
+      },
+      "statusColumn": "الحالة",
+      "title": "موقع المخزون"
+    },
+    "mapUnavailable": "تعذر تحميل معاينة خريطة النطاق. يرجى المحاولة مرة أخرى.",
+    "shippingMethods": {
+      "addDialogTitle": "إضافة طريقة شحن جديدة",
+      "addNew": "+ إضافة جديد",
+      "dialogDescription": "أضف طرق الشحن أو عدّل أسعارها الخاصة بهذا النطاق.",
+      "dialogTitle": "طرق الشحن",
+      "editPrice": "تعديل السعر",
+      "emptyAction": "إضافة طريقة شحن",
+      "emptyDescription": "لم تضف أي خيارات لطرق الشحن بعد. يجب اختيار خيار واحد للمتابعة.",
+      "emptyTitle": "طريقة الشحن",
+      "nameColumn": "الاسم",
+      "rateRequired": "أضف سعراً لكل طريقة شحن لا يمكن لشركة الشحن تسعيرها.",
+      "statusColumn": "الحالة",
+      "title": "طرق الشحن"
+    },
+    "status": {
+      "description": "فعّل هذا النطاق للسماح بالتوصيل ضمن نطاق التغطية المحدد.",
+      "title": "حالة النطاق"
+    },
+    "typeDescription": {
+      "aerial": "نطاق جوي - تغطية بناءً على المسافة المباشرة",
+      "city": "نطاق مدن - تغطية بناءً على المدينة",
+      "isochrone": "نطاق زمني - تغطية بناءً على مسافة الطريق",
+      "isodistance": "نطاق مسافة الطريق - تغطية بناءً على مسافة الطريق"
+    }
+  },
+  "emptyState": {
+    "action": "إنشاء أول نطاق",
+    "description": "أنشئ أول نطاق الآن ليصبح المصدر الموثوق لكل قرار يعتمد على الموقع في متجرك.",
+    "noResultsDescription": "لا يوجد نطاق مطابق لبحثك ولا للنوع المحدد. جرّب كلمة بحث أخرى.",
+    "noResultsTitle": "لم نعثر على نطاقات",
+    "title": "أنشئ نطاقك الأول"
+  },
+  "info": {
+    "description": "قدّم لكل عميل خيار التوصيل المناسب لموقعه. أنشئ نطاقات توصيل حسب المدينة أو المسافة أو وقت الوصول، واربطها بطرق الشحن والمستودعات لتعرض للعملاء الخيارات المناسبة تلقائيًا وتدير التوصيل بدقة أكبر.",
+    "title": "النطاقات هي المكوّن الأساسي للتجارة السريعة"
+  },
+  "search": {
+    "placeholder": "ابحث عن نطاق"
+  },
+  "statusReason": {
+    "deactivatedNoLocations": "هذا النطاق معطّل لأن جميع فروعه غير نشطة.",
+    "deactivatedNoShippingMethods": "هذا النطاق معطّل لأن جميع طرق شحنه غير نشطة.",
+    "setupIncomplete": "يحتاج هذا النطاق إلى فرع واحد وطريقة شحن واحدة على الأقل قبل أن يتمكن من خدمة العملاء."
+  },
+  "statuses": {
+    "active": "نشط",
+    "deactivatedNoLocations": "المخزون معطّل",
+    "deactivatedNoShippingMethods": "الشحن معطّل",
+    "inactive": "غير نشط",
+    "setupIncomplete": "الإعداد غير مكتمل"
+  },
+  "table": {
+    "coverageDistance": "تغطية {{value}} كم",
+    "coverageTime": "تغطية {{value}} دقيقة",
+    "createdAt": "تاريخ الإنشاء",
+    "name": "الاسم",
+    "status": "الحالة",
+    "type": "النوع"
+  },
+  "tabs": {
+    "all": "الكل"
+  },
+  "types": {
+    "aerial": "دائرية",
+    "city": "مدينة",
+    "customPolygon": "مساحة مخصصة",
+    "isochrone": "زمنية",
+    "isodistance": "مسافة الطريق"
+  }
+}

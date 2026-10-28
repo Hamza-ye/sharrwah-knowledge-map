@@ -1,0 +1,70 @@
+{
+  "activateAutomaticMessage": "إدارة التنبيهات",
+  "analytics": "تحليلات السلات المتروكة",
+  "analyticsNGO": "تحليلات التبرعات المتروكة",
+  "cartDetails": "تفاصيل السلة",
+  "cartId": "رقم السلة",
+  "cartPrice": "قيمة السلة",
+  "cartsAmountTotalValueAmount": "إجمالي قيم السلات",
+  "customerDetails": "تفاصيل العميل",
+  "customerName": "اسم العميل",
+  "customerPhone": "رقم الجوال",
+  "donationsCount": "عدد التبرعات",
+  "donorName": "اسم المتبرع",
+  "emptyState": {
+    "description": "ذكّر عملاءك بسلاتهم المتروكة وعزز مبيعاتك بنسبة تصل إلى 20%",
+    "descriptionNGO": "ذكّر متبرعيك بتبرعاتهم المتروكة وعزز تبرعاتك بنسبة تصل إلى 20%",
+    "title": "حوّل السلات المتروكة إلى فُرص جديدة",
+    "titleNGO": "حوّل التبرعات المتروكة إلى فرص جديدة"
+  },
+  "filters": {
+    "customerType": "نوع العميل",
+    "guestCustomer": "عميل زائر",
+    "phase": "المرحلة",
+    "priceIsGreaterThan": "قيمة السلة أكبر من",
+    "productsQuantityIsMoreThan": "كمية المنتجات أكثر من",
+    "registeredCustomer": "عميل مسجّل"
+  },
+  "loadMoreMessages": "تحميل مزيد من الرسائل",
+  "messagesSettings": "إدارة التنبيهات",
+  "newMessage": "إنشاء رسالة جديدة",
+  "noRecordReminders": "لا توجد تنبيهات مسجلة",
+  "noReminderPolicy": "ذكّر عملاءك بسلاتهم المتروكة بترقية باقتك",
+  "paybackPercentage": "نسبة استرداد السلات المتروكة المحولة لطلبات",
+  "paybackPercentageNGO": "نسبة استرداد التبرعات المتروكة المحولة إلى تبرعات",
+  "phase": {
+    "completed": "اكتمل الشراء",
+    "label": "المرحلة",
+    "login": "مسجّل دخول",
+    "new": "جديد",
+    "paymentMethod": "طريقة الدفع",
+    "shippingAddress": "عنوان الشحن",
+    "shippingMethod": "طريقة الشحن",
+    "verification": "تأكيد الطلب"
+  },
+  "productsCount": "عدد المنتجات",
+  "recordReminders": "سجلّ التنبيهات",
+  "reminderAlertDescription": "شجّع عملاءك على إتمام عملية الشراء بإرسال تنبيهات يدوية أو تلقائية لهم",
+  "reminderAlertDescriptionNGO": "شجّع عملاءك على إتمام عملية التبرع بإرسال تنبيهات يدوية أو تلقائية لهم",
+  "reminderAlertTitle": "استرداد السلات المتروكة",
+  "reminderAlertTitleNGO": "استرداد التبرعات المتروكة",
+  "reminderGroup": "إرسال تنبيهات جماعية",
+  "reminderSuccess": "أُرسل التنبيه",
+  "selectMessage": "اختر رسالة",
+  "selectMethod": "اختر الطريقة",
+  "sendReminder": "إرسال التنبيه",
+  "tabs": {
+    "abandonedCarts": "السلات المتروكة",
+    "abandonedDonations": "التبرعات المتروكة",
+    "donations": "السلات التي أصبحت تبرعات",
+    "orders": "السلات التي أصبحت طلبات"
+  },
+  "totalValueCarts": "القيمة الإجمالية للسلات المتروكة",
+  "totalValueCartsToOrders": "إجمالي قيمة السلات المحولة إلى طلبات",
+  "totalValueCartsToOrdersNGO": "إجمالي قيمة التبرعات المحولة إلى تبرعات",
+  "whatsappInsufficientBalance": {
+    "description": "رصيد الواتساب غير كافٍ لإرسال هذا التنبيه. اشحن رصيدك ثم حاول مرة أخرى.",
+    "title": "رصيد الواتساب غير كافٍ",
+    "topUp": "شحن الرصيد"
+  }
+}

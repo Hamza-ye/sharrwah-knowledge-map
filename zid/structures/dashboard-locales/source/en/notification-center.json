@@ -1,0 +1,23 @@
+{
+  "empty": {
+    "description": "Notifications will appear here automatically once they are available.",
+    "title": "No notifications yet"
+  },
+  "emptyFiltered": {
+    "description": "Try another category.",
+    "title": "No notifications in this category"
+  },
+  "markAllAsRead": "Mark all as read",
+  "meta": {
+    "paymentMethod": "Payment method",
+    "paymentStatus": "Payment status",
+    "source": "Source",
+    "stage": "Stage"
+  },
+  "tabs": {
+    "all": "All",
+    "important": "Important"
+  },
+  "title": "Notifications",
+  "viewAll": "View all"
+}

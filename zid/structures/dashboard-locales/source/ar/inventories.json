@@ -1,0 +1,370 @@
+{
+  "autoRestock": {
+    "addProducts": "إضافة منتجات",
+    "columns": {
+      "destinationInventory": "وجهة المخزون",
+      "lastTriggered": "آخر تشغيل",
+      "sourceInventory": "مصدر المخزون",
+      "status": "الحالة",
+      "transferNumber": "رقم النقل"
+    },
+    "createAutoRestock": "إنشاء إعادة تزويد تلقائي",
+    "description": "إنشاء طلب نقل مخزون تلقائيًا عند انخفاض كمية المنتجات إلى الحد الأدنى المحدد لها",
+    "editAutoRestock": "تعديل إعادة التزويد التلقائي",
+    "emptyState": {
+      "description": "أنشئ عملية إعادة تزويد تلقائي لتضمينها ضمن طلبات نقل المخزون",
+      "title": "لا توجد عمليات إعادة تزويد تلقائي"
+    },
+    "ruleNumber": "طلب إعادة التخزين رقم {{id}}",
+    "searchPlaceholder": "ابحث بالمخزون",
+    "title": "نقل إعادة التخزين التلقائي"
+  },
+  "cityBasedProducts": {
+    "checkboxLabel": "إلزام العميل باختيار المدينة يدويًا",
+    "description": "اعرض المنتجات بناءً على مدينة العميل. يُحدَّد الموقع تلقائيًا افتراضيًا؛ اختر المربع أدناه لإلزام العميل بالاختيار اليدوي.",
+    "relocatedAlert": {
+      "description": "نُقلت إعدادات موقع العميل إلى صفحة <1>إعدادات المتجر الإلكتروني</1>.",
+      "title": "نُقلت إعدادات موقع العميل"
+    },
+    "title": "عرض المنتجات في متجرك بناءً على موقع العميل"
+  },
+  "columns": {
+    "action": "الإجراء",
+    "actionBy": "المنفّذ",
+    "description": "راجع منتجاتك مع إمكانية تعديل البيانات والمظهر",
+    "modification": "التعديل",
+    "modificationReason": "سبب التعديل",
+    "productName": "اسم المنتج",
+    "quantityAfter": "الكمية بعد",
+    "quantityAfterModification": "الكمية بعد التعديل",
+    "sellChannel": "قناة البيع"
+  },
+  "createAutoRestock": {
+    "form": {
+      "allProducts": "جميع المنتجات",
+      "custom": "مخصص",
+      "destinationInventory": "وجهة المخزون",
+      "frequency": "التكرار",
+      "global": "موحد",
+      "lockedTime": "12:00 ص",
+      "minimumStockLevel": "الحد الأدنى للمخزون",
+      "onlyAvailableTime": "هذا هو الوقت الوحيد المتاح. تُنفَّذ جميع عمليات النقل في هذا الوقت.",
+      "quantityMinimumStockLevel": "كمية الحد الأدنى للمخزون",
+      "restockType": "نطاق التزويد",
+      "sourceInventory": "مصدر المخزون",
+      "specificProducts": "منتجات محددة"
+    },
+    "table": {
+      "destinationQuantity": "الكمية في الوجهة",
+      "minimumStockLevel": "الحد الأدنى لمستوى المخزون"
+    },
+    "title": "إنشاء تحويل إعادة التخزين"
+  },
+  "deleteInventoryMessage": {
+    "title": "هل أنت متأكد من حذف هذا العنوان {{name}}؟"
+  },
+  "emptyState": {
+    "button": "بدء إدارة المخزون",
+    "description": "أضف المواقع لإدارة مخزونك بدقة وتجنب مفاجآت نفاد المخزون.",
+    "title": "حدّث مخزونك باستمرار، وكن جاهزًا لتلبية كل طلب."
+  },
+  "form": {
+    "addressName": "اسم العنوان",
+    "catalog": "الكتالوج",
+    "city": "المدينة",
+    "country": "الدولة",
+    "defaultInventory": "تعيينه مخزونًا افتراضيًا",
+    "deliveryZone": {
+      "description": "حدّد مسافة حول الموقع يكون التوصيل ضمنها.",
+      "previewLabel": "معاينة منطقة التوصيل من هذا الموقع",
+      "radiusLabel": "نطاق التوصيل (حتى)",
+      "radiusPlaceholder": "أدخل الحد الأقصى لمسافة التوصيل بالكيلومترات",
+      "title": "نطاق التوصيل"
+    },
+    "district": "الحي",
+    "fullAddress": "الإحداثيات",
+    "marketplaces": "منصات البيع",
+    "pos": "زد كاشير",
+    "salesChannels": "قنوات البيع",
+    "shortAddress": "العنوان الوطني المختصر",
+    "shortAddressHelperText": "العنوان الوطني المختصر مطلوب الآن وفق متطلبات الشحن داخل المملكة. <1>ابحث عن عنوانك من هنا</1>",
+    "store": "المتجر",
+    "street": "الشارع",
+    "unsetCoordinatesNote": "موقع المخزون غير محدد بشكل صحيح. حرّك الدبوس إلى موقع المخزون الدقيق على الخريطة قبل الحفظ.",
+    "validation": {
+      "coordinatesUnset": "موقع المخزون غير محدد بشكل صحيح. حرّك الدبوس إلى موقع المخزون الدقيق على الخريطة قبل الحفظ.",
+      "radiusMax": "الحد الأقصى للنطاق هو 20,000 كم",
+      "radiusMin": "الحد الأدنى للنطاق هو 0.001 كم",
+      "shortAddressFormat": "يجب أن يكون العنوان الوطني المختصر بالتنسيق الصحيح (مثال: ABCD1234)",
+      "shortAddressRequired": "أدخل العنوان الوطني المختصر قبل الحفظ."
+    },
+    "withdrawn": "سيُسحب من المستودع الافتراضي إذا لم تحدد مستودعًا"
+  },
+  "info": {
+    "description": "لديك {{count}} موقع نشط من أصل {{limit}} موقع متاح في باقتك.",
+    "description_few": "لديك {{count}} مواقع نشطة من أصل {{limit}} موقع متاح في باقتك.",
+    "description_many": "لديك {{count}} موقعاً نشطاً من أصل {{limit}} موقع متاح في باقتك.",
+    "description_one": "لديك موقع نشط واحد من أصل {{limit}} موقع متاح في باقتك.",
+    "description_other": "لديك {{count}} موقع نشط من أصل {{limit}} موقع متاح في باقتك.",
+    "description_two": "لديك موقعان نشطان من أصل {{limit}} موقع متاح في باقتك.",
+    "description_zero": "ليس لديك مواقع نشطة من أصل {{limit}} موقع متاح في باقتك.",
+    "drag": "اسحب المواقع لإعادة ترتيبها حسب الأولوية. تُوجَّه الطلبات أولًا للموقع الأعلى، وإذا لم يُنفَّذ الطلب بالكامل، يُقسَّم بين عدة مستودعات، وتُصدر بوليصة الشحن من مستودع واحد فقط.",
+    "subtitle": "إعدادات الحساب",
+    "title": "عناوين المخزون"
+  },
+  "locationNotActivatedAlert": "لا يمكنك تعيين الموقع مخزنًا افتراضيًا إذا لم يكن مفعّلًا",
+  "noSelectedProductsEmptyState": {
+    "atLeastOneProductNeeded": "اختر منتجًا واحدًا على الأقل",
+    "createProduct": "إضافة منتج إلى الجرد",
+    "description": "اختر المنتجات لتضمينها في عملية الجرد.",
+    "title": "لا توجد منتجات محددة"
+  },
+  "pickupInStore": {
+    "addNewOption": "إضافة خيار جديد",
+    "cashOnDelivery": "الدفع عند الاستلام (COD)",
+    "customerNotes": "ملاحظات العميل",
+    "emptyState": {
+      "description": "لم تُضف خيارات استلام بعد."
+    },
+    "noNoteAdded": "لا توجد ملاحظات",
+    "notSupported": "غير مدعوم",
+    "supported": "مدعوم",
+    "title": "الاستلام من المتجر"
+  },
+  "status": {
+    "activated": "فُعّل عنوان المخزون",
+    "deactivated": "أُلغي تفعيل عنوان المخزون",
+    "success": "أُنشئ عنوان المخزون",
+    "updated": "حُدّث عنوان المخزون"
+  },
+  "stockChanges": {
+    "actorTypes": {
+      "manualOrder": "طلب يدوي",
+      "marketplace": "سوق",
+      "mazeed": "مزيد",
+      "onlineStore": "المتجر الإلكتروني",
+      "pos": "نقطة البيع"
+    },
+    "events": {
+      "appChange": "تغيير من تطبيق",
+      "cartRelease": "إلغاء حجز سلة",
+      "cartReservation": "حجز سلة",
+      "manualAdjustment": "تعديل يدوي",
+      "orderCancelled": "إلغاء طلب",
+      "orderCreated": "إنشاء طلب",
+      "orderRestored": "إعادة تفعيل طلب",
+      "orderReturn": "إرجاع طلب",
+      "stockCount": "جرد المخزون",
+      "stockImport": "استيراد مخزون",
+      "stockTransferIn": "تحويل وارد",
+      "stockTransferOut": "تحويل صادر"
+    },
+    "unspecifiedReason": "السبب غير محدد"
+  },
+  "stockManagement": "إدارة الكميات",
+  "stockManagement2": {
+    "columns": {
+      "currentQuantity": "الكمية الحالية",
+      "productName": "اسم المنتج",
+      "sku": "رمز التخزين (SKU)",
+      "unlimitedQuantity": "كمية غير محدودة"
+    },
+    "emptyState": "لم يُعثر على منتجات",
+    "fields": {
+      "infinity": "كمية غير محدودة",
+      "quantity": {
+        "label": "الكمية"
+      }
+    },
+    "filters": {
+      "categories": "التصنيف",
+      "publishingStatus": "حالة النشر"
+    },
+    "inventorySelector": {
+      "label": "المخزون",
+      "placeholder": "اختر المخزون"
+    },
+    "quantities": "استيراد الكميات",
+    "searchPlaceholder": "ابحث عن منتجات",
+    "yup": {
+      "min": "يجب أن تكون القيمة أكبر من 0",
+      "required": "عبّئ هذا الحقل"
+    }
+  },
+  "stockTaking": {
+    "columns": {
+      "completionDate": "تاريخ الاكتمال",
+      "creationDate": "تاريخ الإنشاء",
+      "inventoryAddress": "عنوان المخزون",
+      "name": "اسم عملية الجرد",
+      "number": "رقم عملية الجرد",
+      "totalCost": "إجمالي التكلفة"
+    },
+    "create": "إنشاء عملية جرد جديدة",
+    "search": "ابحث باستخدام رقم أو اسم عملية الجرد",
+    "status": {
+      "cancelled": "ملغي",
+      "completed": "مكتمل",
+      "draft": "مسودة",
+      "inProgress": "قيد التنفيذ",
+      "paused": "متوقفة مؤقتًا"
+    }
+  },
+  "stockTakingView": {
+    "addProduct": "إضافة منتج إلى الجرد",
+    "cancelConfirm": "عند إلغاء عملية الجرد، ستُحذف جميع البيانات المدخلة، وستحتاج لإدخالها من جديد عند بدء جرد جديد",
+    "cancelCount": "إلغاء عملية الجرد",
+    "columns": {
+      "barcode": "رقم الباركود",
+      "cost": "تكلفة الوحدة",
+      "counted": "الكمية المعدودة",
+      "currentQuantity": "الكمية الحالية في النظام",
+      "difference": "الفرق",
+      "differenceQuantity": "فرق الكمية",
+      "expected": "الكمية المتوقعة",
+      "finalQuantity": "الكمية بعد إتمام الجرد",
+      "name": "المنتج",
+      "prevQuantity": "الكمية السابقة",
+      "soldDuringCounting": "الكمية المباعة أثناء الجرد"
+    },
+    "completeCount": "إنهاء عملية الجرد",
+    "details": {
+      "comment": "ملاحظة",
+      "countType": "نوع الجرد",
+      "creater": "مُنشئ عملية الجرد",
+      "creationDate": "تاريخ الإنشاء",
+      "description": "تفاصيل عملية الجرد",
+      "full": "شامل",
+      "location": "موقع المخزون",
+      "name": "اسم الجرد",
+      "number": "رقم الجرد",
+      "partial": "جزئي",
+      "placeholders": {
+        "countType": "مثال: جزئي",
+        "location": "مثال: مخزون الرياض",
+        "note": "مثال: جُردت تفاصيل المخزون بدقة"
+      },
+      "products": "المنتجات",
+      "status": "حالة الطلب",
+      "title": "بيانات الجرد"
+    },
+    "export": "تصدير المنتجات",
+    "exportConfirm": "سيُرسل الطلب",
+    "exportSuccess": "أُرسل الطلب",
+    "import": {
+      "description": "ارفع الملف الذي نزّلته مسبقًا لاستيراد البيانات",
+      "title": "استيراد المنتجات"
+    },
+    "importSuccess": "استُوردت المنتجات",
+    "notCounted": "غير معدود",
+    "print": "طباعة تقرير الجرد",
+    "productsAdded": "أُضيفت جميع المنتجات",
+    "productsNotAdded": "لا توجد منتجات حاليًا. أضف منتجات أولًا",
+    "reviewCount": "مراجعة الجرد",
+    "saveAsDraft": "حفظ مسودة",
+    "search": "ابحث باسم المنتج أو برمز الباركود أو كود المنتج",
+    "start": "بدء عملية الجرد",
+    "stockTakingCreated": "أُنشئت عملية الجرد",
+    "stockTakingWarning": "يجب اختيار منتجات أولًا قبل المتابعة",
+    "tabs": {
+      "all": "جميع المنتجات",
+      "counted": "منتجات جُردت",
+      "matching": "منتجات تتطابق كمياتها",
+      "mismatching": "منتجات تختلف كمياتها",
+      "notCounted": "منتجات لم تُجرد"
+    }
+  },
+  "supportingShippingOptions": {
+    "alert": {
+      "description": "اختر خيارات الشحن التي تستخدم هذا المتجر. ستظهر التعديلات التي تُجريها أدناه في صفحة <1>طرق الشحن</1>",
+      "title": "تُعرض هنا خيارات الشحن المربوطة والمفعّلة لخدمة مدينة هذا المتجر"
+    },
+    "customize": "تخصيص",
+    "supportedCities": "المدن المدعومة",
+    "supportedCountries": "الدول المدعومة",
+    "title": "خيارات الشحن المدعومة للشحن والتخزين"
+  },
+  "switch": {
+    "activated": "فُعّل المخزن",
+    "deactivated": "أُلغي تفعيل المخزن",
+    "updated": "حُدّث عنوان المخزون"
+  },
+  "table": {
+    "city": "المدينة",
+    "country": "الدولة",
+    "deliveryZone": "نطاق التوصيل",
+    "history": "السجل",
+    "name": "الاسم"
+  },
+  "toggleInventory": {
+    "description": "لإلغاء تفعيل المخزون، اختر مخزونًا آخر لنقل منتجاتك إليه",
+    "fields": {
+      "location": {
+        "label": "اسم العنوان",
+        "placeholder": "اختر العنوان"
+      }
+    },
+    "title": "إلغاء تفعيل المخزون"
+  },
+  "transferRequests": {
+    "autoRestock": "إعادة التزويد التلقائي",
+    "columns": {
+      "destinationQuantity": "الكمية في الوجهة",
+      "matched": "مطابقة",
+      "productName": "اسم المنتج",
+      "quantityToBeTransferred": "الكمية المراد نقلها",
+      "receivedQuantity": "الكمية المُستلمة",
+      "receivedQuantityDifference": "فرق الكمية المستلمة",
+      "sourceQuantity": "كمية المصدر",
+      "transferredQuantity": "الكمية المنقولة"
+    },
+    "createSuccess": "أُنشئ طلب النقل.",
+    "createdBy": "أنشئ بواسطة",
+    "creationDate": "تاريخ الإنشاء",
+    "description": "يمكنك تحديد موقع المخزن الأساسي والمخزن المنقول إليه",
+    "destinationInventory": "وجهة المخزن",
+    "emptyState": {
+      "description": "اختر المنتجات لتضمينها في طلب النقل.",
+      "title": "لم يُضف منتج بعد."
+    },
+    "form": {
+      "acceptRequest": "قبول الطلب",
+      "addProducts": "إضافة منتجات",
+      "destinationInventory": "وجهة المخزون",
+      "receiveInventory": "استلام المخزون",
+      "received": "مُستلَم",
+      "receivedBy": "المستلِم",
+      "receivedConfirmation": "هل أنت متأكد من استلام المخزون؟",
+      "receivedDate": "تاريخ الاستلام",
+      "rejectTransferRequest": "رفض طلب النقل",
+      "saveAsDraft": "حفظ مسودة",
+      "sendInventory": "إرسال المخزون",
+      "sendRequest": "إرسال الطلب",
+      "sourceInventory": "مصدر المخزون"
+    },
+    "frequency": "التكرار",
+    "requestDate": "تاريخ الطلب",
+    "requestNumber": "رقم الطلب",
+    "requestStatus": "حالة الطلب",
+    "search": "ابحث برقم الطلب",
+    "sourceInventory": "مصدر المخزون",
+    "statuses": {
+      "notFound": "غير موجود",
+      "outOfStock": "غير متوفر",
+      "partialRestock": "إعادة تزويد جزئية"
+    },
+    "stepper": {
+      "approvedBy": "وافق عليه",
+      "createdBy": "أنشئ بواسطة",
+      "pendingApproval": "في انتظار الموافقة",
+      "received": "استُلم",
+      "rejected": "رُفض",
+      "rejectedBy": "رفضه",
+      "requestNumber": "رقم الطلب",
+      "sent": "أُرسل"
+    }
+  },
+  "upgrade": {
+    "limit": "وصلت إلى الحد الأقصى للتفعيل في باقتك. لتفعيل عدد غير محدود من المستودعات، رقِّ باقة اشتراكك."
+  }
+}

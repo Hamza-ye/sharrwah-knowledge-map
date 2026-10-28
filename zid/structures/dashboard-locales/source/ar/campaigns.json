@@ -1,0 +1,374 @@
+{
+  "addLink": {
+    "buttonText": "نص الزر",
+    "description": "أضف رابطًا يمكن للعميل فتحه.",
+    "title": "إضافة رابط",
+    "websiteUrl": "رابط الموقع الإلكتروني"
+  },
+  "bulk": {
+    "confirmDelete": "ستُحذف الحملات التسويقية {{campaignsTitles}}، هل أنت متأكد؟"
+  },
+  "campaignLanguage": "لغة الحملة",
+  "campaignStatus": "حالة الحملة",
+  "campaignSummary": "الملخص",
+  "campaignTitleHelper": "لن يراه العميل، فهو للموظفين فقط.",
+  "campaignTitlePlaceholder": "حملة العيد",
+  "cancelSchedule": {
+    "action": "إلغاء الجدولة",
+    "dialog": {
+      "back": "تراجع",
+      "description": "لن تُرسل الحملة يوم {{date}}. لم يُخصم أي مبلغ من رصيدك، ويمكنك إرسالها مرة أخرى في أي وقت.",
+      "title": "إلغاء جدولة الحملة؟"
+    },
+    "toast": "تم إلغاء جدولة الحملة"
+  },
+  "channels": {
+    "sms": "رسالة نصية",
+    "whatsapp": "واتساب"
+  },
+  "columns": {
+    "campaignTitle": "عنوان الحملة",
+    "channel": "قناة التواصل",
+    "customers": "عملاء محددون",
+    "customersCount_few": "{{count}} عملاء",
+    "customersCount_many": "{{count}} عميلًا",
+    "customersCount_one": "عميل واحد",
+    "customersCount_other": "{{count}} عميل",
+    "customersCount_two": "عميلان",
+    "customersCount_zero": "{{count}} عميل",
+    "groupCustomersCount_few": "{{count}} عملاء (مجموعة)",
+    "groupCustomersCount_many": "{{count}} عميلًا (مجموعة)",
+    "groupCustomersCount_one": "عميل واحد (مجموعة)",
+    "groupCustomersCount_other": "{{count}} عميل (مجموعة)",
+    "groupCustomersCount_two": "عميلان (مجموعة)",
+    "groupCustomersCount_zero": "{{count}} عميل (مجموعة)",
+    "groups": "مجموعة عملاء",
+    "pendingTooltip": "تراجع ميتا القالب، وقد تستغرق المراجعة حتى 48 ساعة.",
+    "publishStatus": "حالة النشر",
+    "target": "الفئة المستهدفة",
+    "totalOrders": "إجمالي الطلبات",
+    "whatsappTemplate": "قالب الواتساب"
+  },
+  "content": "المحتوى",
+  "contentDescription": "أضف محتوى الحملة الذي سيظهر لعملائك.",
+  "copyCoupon": {
+    "buttonText": "نص الزر",
+    "coupnCode": "رمز القسيمة",
+    "description": "أضف الرمز الذي يمكن للعميل نسخه بسهولة.",
+    "hint": "أدخل حروفًا إنجليزية فقط.",
+    "title": "نسخ رمز القسيمة"
+  },
+  "customersCountFromGroup_few": "{{count}} عملاء من مجموعة",
+  "customersCountFromGroup_many": "{{count}} عميلًا من مجموعة",
+  "customersCountFromGroup_one": "عميل واحد من مجموعة",
+  "customersCountFromGroup_other": "{{count}} عميل من مجموعة",
+  "customersCountFromGroup_two": "عميلان من مجموعة",
+  "customersCountFromGroup_zero": "{{count}} عميل من مجموعة",
+  "details": "التفاصيل",
+  "detailsDescription": "أضف محتوى الحملة الذي سيظهر لعملائك.",
+  "emptyState": {
+    "description": "أرسل رسائل مستهدفة لعملائك مباشرة من لوحة التحكم في الوقت المثالي.",
+    "smsButton": "إنشاء حملة رسائل نصية",
+    "title": "حملات تصل وتبيع",
+    "whatsAppButton": "إنشاء حملة واتساب"
+  },
+  "filters": {
+    "campaignSelection": "تفاصيل الحملة",
+    "publishStatus": "حالة النشر",
+    "whatsappMessageStatus": "حالة رسالة الواتساب"
+  },
+  "image": "غلاف الحملة",
+  "mediaLimitsImage": "الصورة: JPG أو PNG · حتى 5 ميجابايت",
+  "mediaLimitsVideo": "الفيديو: MP4 أو 3GPP · حتى 16 ميجابايت",
+  "messageButtons": "الأزرار",
+  "messageButtonsDescription": "أضف أزرارًا تسمح لعملائك بفتح رابط محدد أو نسخ رمز القسيمة.",
+  "messageContent": "محتوى الرسالة",
+  "messageLanguage": "لغة الرسالة",
+  "messagePlaceholder": "أضف محتوى الرسالة للمعاينة...",
+  "messageSection": "الرسالة",
+  "noName": "بدون اسم بعد",
+  "notSet": "لم تُحدد بعد",
+  "progressStatus": {
+    "cancelled": "ملغاة",
+    "completed": "اكتملت المعالجة",
+    "completedWithErrors": "اكتملت مع أخطاء",
+    "legacySubmitted": "مُرسلة",
+    "paused": "متوقفة لليوم",
+    "preparationFailed": "فشل التجهيز",
+    "preparing": "جارٍ التجهيز",
+    "queued": "بانتظار التجهيز",
+    "ready": "بانتظار الإرسال",
+    "recoveringFailedBatch": "جارٍ الاسترداد",
+    "scheduled": "مجدولة",
+    "sending": "جارٍ الإرسال",
+    "unavailable": "الحالة غير متاحة"
+  },
+  "publishCampaign": "نشر الحملة",
+  "rechargeBalance": "إضافة رصيد",
+  "recipients": {
+    "customers": {
+      "emptyButton": "اختر العملاء",
+      "emptySubtitle": "اختر العملاء الذين سيستلمون هذه الحملة.",
+      "emptyTitle": "لم تختر عملاء"
+    },
+    "groups": {
+      "emptyButton": "اختر المجموعات",
+      "emptySubtitle": "اختر مجموعة أو أكثر لتحديد العملاء المستهدفين لهذه الحملة.",
+      "emptyTitle": "لم تحدد مجموعات عملاء"
+    }
+  },
+  "remove": "إزالة",
+  "resendCampaign": "إعادة الإرسال",
+  "results": {
+    "deleteConfirm": "أنت على وشك حذف الحملة «{{name}}». هل تريد المتابعة؟",
+    "duplicate": "نسخ",
+    "duplicateSuccess": "نُسخت الحملة",
+    "export": "تصدير",
+    "failureBreakdown": {
+      "errorCode": "رمز الخطأ {{code}}",
+      "learnMore": "<helpLink>تعرّف على المزيد</helpLink> عن حالات فشل رسائل واتساب وكيفية التعامل معها.",
+      "notRetryable": "غير قابلة لإعادة المحاولة",
+      "retryable": "قابلة لإعادة المحاولة",
+      "title": "تفاصيل حالات الفشل"
+    },
+    "metrics": {
+      "description": "عدد رسائل الحملة المُرسلة والمقروءة والتي تعذّر إرسالها والتي ما زالت قيد الانتظار.",
+      "failed": "تعذّر إرسالها",
+      "failedRate": "نسبة الفشل {{value}}%",
+      "pending": "قيد الانتظار",
+      "pendingRate": "نسبة الانتظار {{value}}%",
+      "read": "مقروءة",
+      "readRate": "نسبة القراءة {{value}}%",
+      "sent": "مُرسلة",
+      "sentRate": "نسبة الإرسال {{value}}%",
+      "title": "ملخص التسليم"
+    },
+    "recipients": {
+      "columns": {
+        "deliveredAt": "تاريخ التسليم",
+        "description": "الوصف",
+        "issueCode": "رمز الخطأ",
+        "phone": "رقم الهاتف",
+        "readAt": "تاريخ القراءة"
+      },
+      "description": "رسالة كل مستلم وحالة تسليمها.",
+      "emptyState": "لا يوجد مستلمون",
+      "exportAll": "تصدير المستلمين",
+      "exportFailed": "تصدير الرسائل التي لم تُرسَل",
+      "exportSuccess": "جارٍ إنشاء التصدير، وسيكون متاحًا قريبًا.",
+      "filters": {
+        "issueCode": "رمز الخطأ"
+      },
+      "resendSelected": "إعادة الإرسال للمحددين",
+      "retryAction": "إعادة المحاولة",
+      "retrySuccess": "أُعيد إرسال الرسائل",
+      "searchByPhone": "ابحث باسم العميل أو رقم الهاتف",
+      "tabs": {
+        "accepted": "مقبولة",
+        "all": "الكل",
+        "delivered": "مُسلّمة",
+        "failed": "تعذّر إرسالها",
+        "held": "بانتظار تقييم الجودة",
+        "read": "مقروءة",
+        "sent": "مُرسلة"
+      },
+      "title": "المستلمون"
+    },
+    "resend": {
+      "action": "نسخ الحملة",
+      "chooseRecipients": "تُنشأ نسخة مسودة جديدة بالمحتوى نفسه. اختر المستلمين في النسخة:",
+      "confirm": "إنشاء مسودة",
+      "descriptionFiltered_few": "ستُنشأ نسخة مسودة من الحملة لـ <bold>{{count}} مستلمين</bold> مطابقين للفلاتر المطبّقة. لن تُرسَل تلقائيًا، ويمكنك مراجعتها وإرسالها في أي وقت.",
+      "descriptionFiltered_many": "ستُنشأ نسخة مسودة من الحملة لـ <bold>{{count}} مستلمًا</bold> مطابقين للفلاتر المطبّقة. لن تُرسَل تلقائيًا، ويمكنك مراجعتها وإرسالها في أي وقت.",
+      "descriptionFiltered_one": "ستُنشأ نسخة مسودة من الحملة لـ <bold>{{count}} مستلم</bold> مطابق للفلاتر المطبّقة. لن تُرسَل تلقائيًا، ويمكنك مراجعتها وإرسالها في أي وقت.",
+      "descriptionFiltered_other": "ستُنشأ نسخة مسودة من الحملة لـ <bold>{{count}} مستلم</bold> مطابقين للفلاتر المطبّقة. لن تُرسَل تلقائيًا، ويمكنك مراجعتها وإرسالها في أي وقت.",
+      "descriptionFiltered_two": "ستُنشأ نسخة مسودة من الحملة لـ <bold>مستلمَين</bold> مطابقَين للفلاتر المطبّقة. لن تُرسَل تلقائيًا، ويمكنك مراجعتها وإرسالها في أي وقت.",
+      "descriptionFiltered_zero": "ستُنشأ نسخة مسودة من الحملة لـ <bold>{{count}} مستلم</bold> مطابق للفلاتر المطبّقة. لن تُرسَل تلقائيًا، ويمكنك مراجعتها وإرسالها في أي وقت.",
+      "recipients": {
+        "all": {
+          "description": "قائمة الحملة الأصلية نفسها.",
+          "label": "كل المستلمين"
+        },
+        "failed": {
+          "description": "مناسب لإعادة المحاولة مع من لم تصلهم الرسالة.",
+          "label": "المستلمون الذين تعذّر الإرسال إليهم فقط"
+        }
+      },
+      "success": "أُنشئت نسخة المسودة",
+      "title": "نسخ الحملة",
+      "titleFiltered": "نسخ الحملة إلى المستلمين المحددين"
+    },
+    "viewResults": "عرض النتائج"
+  },
+  "saveAndSend": "نشر الحملة",
+  "saveForReview": "إرسال للمراجعة",
+  "scheduleCampaign": "جدولة الحملة",
+  "sendCampaign": "إرسال الحملة",
+  "sendTiming": {
+    "alert": {
+      "description": "نتحقق من رصيدك ونخصم التكلفة عند بدء الحملة في الموعد المحدد.",
+      "title": "لن يُخصم أي مبلغ اليوم"
+    },
+    "date": "التاريخ",
+    "description": "اختر متى تبدأ الحملة. نخصم التكلفة بعد تجهيز المستلمين، وليس عند الإرسال.",
+    "detailsDescription": "اسم الحملة وموعد إرسالها.",
+    "now": {
+      "description": "نبدأ تجهيز الحملة فورًا.",
+      "label": "إرسال الآن"
+    },
+    "schedule": {
+      "description": "اختر اليوم والوقت المناسب.",
+      "label": "جدولة",
+      "templateNotApproved": "لا يمكنك جدولة الحملة قبل اعتماد قالب الواتساب."
+    },
+    "time": "الوقت ({{offset}})",
+    "title": "موعد الإرسال",
+    "toast": {
+      "alreadyProcessing": "الحملة قيد المعالجة بالفعل",
+      "queued": "تمت إضافة الحملة إلى قائمة الانتظار",
+      "scheduled": "تمت جدولة الحملة"
+    },
+    "validation": {
+      "future": "اختر تاريخًا ووقتًا في المستقبل."
+    }
+  },
+  "senderName": "اسم المُرسِل",
+  "senderNameCustomization": "تخصيص",
+  "sendingStatus": {
+    "cancelled": {
+      "alert": {
+        "description": "لم تُرسل أي رسالة ولم يُخصم أي مبلغ. اختر موعد الإرسال من جديد، ثم أرسل الحملة أو جدولها.",
+        "title": "تم إلغاء الحملة"
+      }
+    },
+    "completed": {
+      "description": "تمت معالجة جميع دفعات الحملة. نتائج التسليم والقراءة في البطاقات في الأسفل."
+    },
+    "completedWithErrors": {
+      "description_few": "انتهت المعالجة. {{count}} مستلمين لم تتم معالجتهم وتم استرداد تكلفتهم.",
+      "description_many": "انتهت المعالجة. {{count}} مستلمًا لم تتم معالجتهم وتم استرداد تكلفتهم.",
+      "description_one": "انتهت المعالجة. مستلم واحد لم تتم معالجته وتم استرداد تكلفته.",
+      "description_other": "انتهت المعالجة. {{count}} مستلم لم تتم معالجتهم وتم استرداد تكلفتهم.",
+      "description_two": "انتهت المعالجة. مستلمان لم تتم معالجتهما وتم استرداد تكلفتهما.",
+      "description_zero": "انتهت المعالجة.",
+      "processedPercent": "اكتملت {{value}}%"
+    },
+    "draft": {
+      "description": "لم تُرسل هذه الحملة بعد."
+    },
+    "failedBalance": {
+      "alert": {
+        "description": "اشحن رصيدك ثم أعد تجهيز الحملة. لم تُرسل أي رسالة من الحملة.",
+        "title": "رصيد الواتساب غير كافٍ"
+      },
+      "currentBalance": "رصيدك الحالي",
+      "neededBalance": "تحتاج الحملة",
+      "topUp": "شحن الرصيد",
+      "topUpAtLeast": "اشحن على الأقل"
+    },
+    "failedOther": {
+      "alert": {
+        "description": "أعد التجهيز للبدء من جديد.",
+        "title": "تعذّر إكمال تجهيز الحملة"
+      }
+    },
+    "failedTooLong": {
+      "alert": {
+        "description": "بحدود واتساب الحالية لا يمكن إكمال الإرسال خلال 5 أيام. أعد إرسال الحملة لعدد أقل من المستلمين، أو أعد التجهيز بعد رفع حد الرسائل اليومي.",
+        "title": "الحملة تحتاج وقتًا أطول من المسموح"
+      }
+    },
+    "legacySubmitted": {
+      "description": "تقدّم الإرسال غير متاح لهذه الحملة القديمة."
+    },
+    "paused": {
+      "alert": {
+        "description": "استهلكت الحملة حصتها من حد الواتساب اليومي. رسائل الطلبات ورموز التحقق تُرسل بشكل طبيعي، وستُستأنف الحملة تلقائيًا.",
+        "title": "أوقفنا الحملة مؤقتًا لتستمر رسائل طلباتك"
+      },
+      "nextCheck": "التحقق التالي الساعة {{time}}",
+      "whyPaused": "لماذا تتوقف الحملات؟"
+    },
+    "preparing": {
+      "description": "نتحقق من أرقام المستلمين ونحسب التكلفة. لم تُرسل أي رسالة بعد.",
+      "label": "جارٍ فحص العملاء"
+    },
+    "progress": {
+      "legend": {
+        "processed": "تمت معالجتهم",
+        "refunded": "تم استرداد التكلفة"
+      },
+      "processedOf": "{{processed}} من {{total}}",
+      "processedPercent": "تمت معالجة {{value}}%"
+    },
+    "queued": {
+      "description": "حملتك في قائمة الانتظار وسيبدأ تجهيزها قريبًا.",
+      "label": "في قائمة الانتظار"
+    },
+    "ready": {
+      "description": "المستلمون جاهزون وتم خصم التكلفة من رصيدك. يبدأ الإرسال فور توفر السعة.",
+      "label": "بانتظار توفر سعة الإرسال"
+    },
+    "recovering": {
+      "description": "تعذّر إكمال دفعة من الرسائل. نسترد تكلفة المستلمين الذين لم تصلهم."
+    },
+    "scheduled": {
+      "description": "مجدولة يوم {{date}} الساعة {{time}} بتوقيت {{offset}}. لم يُخصم أي مبلغ بعد، نتحقق من رصيدك ونخصم التكلفة عند بدء الحملة."
+    },
+    "sending": {
+      "description": "جارٍ معالجة حملتك. نتائج التسليم والقراءة تتحدّث في الأسفل."
+    },
+    "stats": {
+      "customersChecked": "عملاء تم فحصهم",
+      "estimatedCost": "التكلفة التقديرية",
+      "estimatedCostPoints_few": "حوالي {{amount}} نقاط",
+      "estimatedCostPoints_many": "حوالي {{amount}} نقطة",
+      "estimatedCostPoints_one": "حوالي نقطة واحدة",
+      "estimatedCostPoints_other": "حوالي {{amount}} نقطة",
+      "estimatedCostPoints_two": "حوالي نقطتين",
+      "estimatedCostPoints_zero": "حوالي {{amount}} نقطة",
+      "estimatedTime": "مدة الإرسال التقديرية",
+      "invalidNumbers": "أرقام غير صالحة تم تخطيها",
+      "preparedRecipients": "عملاء جاهزون للإرسال",
+      "processed": "تمت معالجتهم",
+      "recipients": "المستلمون",
+      "refunded": "تم استرداد تكلفتهم",
+      "remaining": "المتبقي"
+    },
+    "title": "حالة الإرسال",
+    "tooLong": {
+      "description": "بحدود الإرسال الحالية في واتساب سيستغرق الإرسال حوالي {{duration}}، أي أكثر من 5 أيام المسموح بها. أرسل الحملة لعدد أقل من المستلمين، أو ارفع حد الرسائل اليومي أولًا.",
+      "title": "إرسال هذه الحملة سيستغرق وقتًا أطول من المسموح"
+    }
+  },
+  "sendingTimeMustBeFrom7amTo10pm": "وقت الإرسال يجب أن يكون بين 7 صباحًا و10 مساءً",
+  "smsBalance": "رصيد الرسائل النصية",
+  "smsCampaign": "حملة رسائل نصية",
+  "smsStatus": "حالة الرسائل النصية",
+  "status": {
+    "approved": "مُوافق عليه",
+    "noSenderName": "لا يوجد اسم مرسل",
+    "pending": "قيد الانتظار",
+    "ready": "جاهز",
+    "setByBackoffice": "مُعيَّن من الإدارة الخلفية"
+  },
+  "summaryBar": {
+    "description": "راجع ملخص الحملة وشكل الرسالة"
+  },
+  "target": "الشريحة المستهدفة",
+  "targetDescription": "اختر من سيستلم حملتك، عملاء محددين أو مجموعة عملاء بشروط محددة.",
+  "validation": {
+    "recipientsRequired": "اختر عميلًا واحدًا أو مجموعة واحدة على الأقل"
+  },
+  "whatsAppBalance": "رصيد الواتساب",
+  "whatsappCampaign": "حملة واتساب",
+  "whatsappState": {
+    "action": "عرض تفاصيل الواتساب",
+    "description": "فعّل خاصية الواتساب لإطلاق حملات مستهدفة، وإعادة التواصل مع العملاء، وتحقيق المزيد من التحويلات.",
+    "title": "وسّع نطاق وصولك بحملات الواتساب"
+  },
+  "whatsappStatusAlert": {
+    "expired": "فعّل اشتراكك لمواصلة استخدام رسائل الحملة التسويقية.",
+    "notActive": "فعّل خاصية الواتساب لإطلاق حملات مستهدفة، وإعادة التواصل مع العملاء، وتحقيق المزيد من التحويلات."
+  }
+}

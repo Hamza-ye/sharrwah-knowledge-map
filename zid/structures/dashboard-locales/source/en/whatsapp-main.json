@@ -1,0 +1,172 @@
+{
+  "alerts": {
+    "activateSubtitle": "Connect your WhatsApp number to activate the service and start sending messages.",
+    "activateTitle": "Number not connected",
+    "canceledRenewTitle": "Number canceled. Renew your subscription to see your activation options",
+    "canceledTitle": "Number canceled. To activate it again, make sure your subscription is active, then choose one of these:",
+    "freeTrialExpiredSubtitle": "Subscribe to a plan to continue using WhatsApp features that help you engage customers, recover sales, and send timely updates.",
+    "freeTrialExpiredTitle": "Trial period ended",
+    "newAccountHint": "<bold>Activate a new account</bold> to connect a completely different number, or if the number was moved to the WhatsApp Business app.",
+    "reactivateHint": "<bold>Reactivate</bold> the same account, if Zid still has access to your Meta account and the number hasn't moved to another WhatsApp account.",
+    "subscriptionExpiredSubtitle": "Renew your plan to continue using WhatsApp features that help you engage customers, recover sales, and send timely updates.",
+    "subscriptionExpiredTitle": "WhatsApp subscription expired"
+  },
+  "autoReplies": {
+    "cta": "Try replies flow",
+    "description": "Build interactive replies that walk customers step by step to the answer they need, and handle your most repeated questions for you.",
+    "title": "Turn questions into instant replies"
+  },
+  "automations": {
+    "description": "Enable WhatsApp automations with ready-made templates to boost engagement and sales.",
+    "items": {
+      "abandonedCart": {
+        "description": "Remind customers about items left in their cart to boost conversions",
+        "title": "Abandoned cart reminder"
+      },
+      "customerBirthday": {
+        "description": "Send a greeting and a special offer on your customer's birthday",
+        "title": "Birthday greetings"
+      },
+      "customerWallet": {
+        "description": "Notify customers about cashback, rewards, and wallet balance changes",
+        "title": "Customer wallet updates"
+      },
+      "customerWelcome": {
+        "description": "Greet new customers as soon as they sign up to your store",
+        "title": "Welcome customers"
+      },
+      "marketingCampaign": {
+        "description": "Send promotional messages, offers, or updates to your customers.",
+        "title": "Marketing campaign"
+      },
+      "orderStatus": {
+        "description": "Auto-send order confirmed, shipped, and delivered notifications",
+        "title": "Order status updates"
+      },
+      "productReview": {
+        "description": "Encourage customers to leave a review or notify them of new reviews.",
+        "title": "Product review request"
+      },
+      "stockNotifications": {
+        "description": "Alert customers when out-of-stock items are available again.",
+        "title": "Stock notifications"
+      }
+    },
+    "title": "Message automations"
+  },
+  "balance": {
+    "buyMore": "Top up balance",
+    "low": "Low",
+    "title": "Points balance"
+  },
+  "disconnectDialog": {
+    "coexGuide": {
+      "stepActivate": "Activate it on Zid by selecting “Activate a new account”, then confirm the connection from the app.",
+      "stepCancel": "Cancel the account on Zid by selecting “Cancel account”.",
+      "stepDeleteFromManager": "Delete the number from your Meta account in WhatsApp Manager.",
+      "stepRegisterInApp": "Register the number on the WhatsApp Business app on your phone.",
+      "title": "To use the number on the WhatsApp Business app with Zid"
+    },
+    "cta": "Cancel account",
+    "hint_change_number": "After cancelling, select “Activate a new account” and sign up with the new number.",
+    "hint_resync_account": "After cancelling, select “Activate a new account” and sign up with the same number to reconnect.",
+    "hint_temporary_pause": "You can come back any time by selecting “Reactivate”, and your templates and settings stay saved.",
+    "noteLabel": "Additional notes (optional)",
+    "noteLabel_not_useful": "What were you expecting? (optional)",
+    "noteLabel_other": "Tell us why you're cancelling",
+    "noteLabel_other_provider": "Which provider? (optional)",
+    "noteLabel_technical_issue": "What problem did you run into? (optional)",
+    "reasonQuestion": "Why are you cancelling the account?",
+    "reason_change_number": "Connect a different number",
+    "reason_meta_restricted": "Meta restricted or banned my account",
+    "reason_not_useful": "It didn't get the results I expected",
+    "reason_other": "Another reason",
+    "reason_other_provider": "I moved to another provider",
+    "reason_resync_account": "Reconnect to refresh permissions or fix a problem",
+    "reason_switch_to_coex": "Reconnect using the WhatsApp Business app",
+    "reason_technical_issue": "I ran into a technical problem",
+    "reason_temporary_pause": "I don't need it now, I'll come back later",
+    "subtitle": "When you cancel the account, WhatsApp messages won't be sent to your customers. Your subscription, points balance and reply flows are kept. You can reactivate the account or activate a new account later.",
+    "title": "Cancel WhatsApp account"
+  },
+  "heading": {
+    "connectNewAccount": "Activate a new account",
+    "disconnectNumber": "Cancel account",
+    "grantAccess": "Restore permissions",
+    "grantAccessError": "Couldn't grant access, please try again",
+    "grantAccessSuccess": "Permissions restored successfully",
+    "reactivate": "Reactivate",
+    "reactivateSuccess": "WhatsApp account reactivated successfully",
+    "renewSubscription": "Renew subscription",
+    "showVerification": "Verification status",
+    "verifyBusiness": "Verify business"
+  },
+  "inbox": {
+    "openChat": "Open inbox"
+  },
+  "none": "None",
+  "overview": {
+    "dailyLimitMessage": "Daily limit: <bold>{{limit}}</bold> messages | Used today: <bold>{{used}}</bold>",
+    "displayName": "Display name",
+    "displayNameStatus": {
+      "approved": "Approved",
+      "available": "Available to use",
+      "deferred": "Review postponed",
+      "pending": "In review",
+      "rejected": "Rejected"
+    },
+    "mobilePhone": "Mobile phone",
+    "noActiveSubscription": "No active subscription",
+    "subscriptionPlan": "Subscription plan",
+    "tierAlertSubtitle": "Meta requires business verification to raise your daily message limit.",
+    "tierAlertTitle": "Raise your daily message limit",
+    "tierAlertVerifiedSubtitle": "You can now send more messages and unlock a higher tier.",
+    "tierAlertVerifiedTitle": "Your WhatsApp business account is verified",
+    "title": "Overview",
+    "unlimited": "Unlimited",
+    "verified": "Verified"
+  },
+  "serviceFreeQuota": {
+    "remaining_few": "{{count}} messages left",
+    "remaining_many": "{{count}} messages left",
+    "remaining_one": "{{count}} message left",
+    "remaining_other": "{{count}} messages left",
+    "remaining_two": "{{count}} messages left",
+    "remaining_zero": "No messages left",
+    "title": "Free support messages",
+    "tooltip": "Starting October 2026, Meta charges for support messages sent within 24 hours of a customer’s last message. Each number gets 1,000 free messages per month, with charges applying to additional messages.",
+    "usage": "{{used}} of {{limit}} used · renews every month"
+  },
+  "templates": {
+    "category": {
+      "authentication": "Authentication",
+      "marketing": "Marketing",
+      "utility": "Utility"
+    },
+    "columns": {
+      "category": "Category",
+      "createdDate": "Created date",
+      "language": "Language",
+      "status": "Status",
+      "templateName": "Template name"
+    },
+    "description": "View all WhatsApp templates you’ve created for automations and direct messages.",
+    "emptyState": {
+      "description": "No templates have been created yet. Start by creating your first template from the tools above.",
+      "title": "No templates to display right now"
+    },
+    "noSearchResults": {
+      "description": "Try searching with different keywords",
+      "title": "No matching results"
+    },
+    "searchPlaceholder": "Search by message title",
+    "status": {
+      "approved": "Approved",
+      "pending": "Pending review",
+      "pendingDeletion": "Pending deletion",
+      "rejected": "Rejected"
+    },
+    "title": "Message template history"
+  },
+  "unreadMessages": "Unread messages"
+}

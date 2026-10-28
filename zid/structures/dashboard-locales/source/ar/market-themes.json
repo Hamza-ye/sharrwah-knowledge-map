@@ -1,0 +1,127 @@
+{
+  "alertThemeButton": "اكتشاف جميع الثيمات",
+  "alertThemeDescription": "سيُوقف هذا الثيم قريبًا، ولن تُقدَّم له تحديثات ولا تحسينات بعد ذلك، مما قد يؤثر على أداء المتجر وتجربة العملاء.\nلذلك، ننصح بالانتقال إلى ثيم مدعوم في الواجهة المطوّرة، لضمان تجربة أفضل وتفادي فقدان تخصيصات ثيمك الحالي.",
+  "alertThemeTitle": "الثيم الحالي لمتجرك لم يعد مدعومًا في الواجهة المطوّرة!",
+  "browse": {
+    "discoveryBanner": {
+      "description": "استخدم خيارات الفلترة والترتيب الجديدة لتضييق نطاق الثيمات بسرعة بناءً على الخصائص التي تهمك.",
+      "exploreFilters": "استكشاف الفلاتر",
+      "title": "اكتشف الثيمات بذكاء!"
+    },
+    "filters": {
+      "features": "الخصائص",
+      "free": "مجاني",
+      "industry": "المجال",
+      "paid": "مدفوع",
+      "price": "السعر"
+    },
+    "marketDescription": "طوّر أعمالك مع ثيمات سوق زد اللامحدودة والقابلة للتخصيص للتجارة الإلكترونية.",
+    "marketTitle": "سوق ثيمات زد",
+    "mostPopular": "الأكثر استخداماً",
+    "newestFirst": "الأحدث أولاً",
+    "oldestFirst": "الأقدم أولاً",
+    "priceHighToLow": "السعر: من الأعلى إلى الأدنى",
+    "priceLowToHigh": "السعر: من الأدنى إلى الأعلى",
+    "resultsCount": "{{start}} - {{end}} من أصل {{total}} ثيم متاح",
+    "searchPlaceholder": "ابحث باسم التصنيف أو الثيم",
+    "topRated": "الأعلى تقييماً"
+  },
+  "buy": "شراء الثيم",
+  "css": {
+    "edit": "تعديل التصميم باستخدام CSS",
+    "editTitle": "تعديل مظهر الثيم باستخدام CSS",
+    "updateSuccess": "نُفذت تحديثات CSS، اطّلع على التغييرات في واجهة المتجر"
+  },
+  "customThemeFormHintText": {
+    "themeFile": "ملف"
+  },
+  "customThemeSteps": "دليل استخدام الثيم",
+  "deactivateDialog": {
+    "confirmation": "الثيم التالي سيتفعّل تلقائيًا بعد تعطيل هذا الثيم",
+    "deactivated": "الثيم غير مفعل حاليًا",
+    "noAvailableTheme": "هذا الثيم مستخدم حالياً ولا يمكن تعطيله",
+    "title": "إلغاء تفعيل الثيم"
+  },
+  "discoverThemes": "اكتشاف جميع الثيمات",
+  "enhancedVersion": "واجهة مطورة",
+  "enhancedVersionTooltip": "نظام جديد ومحسن لواجهة المتاجر، يزيد سرعة المتاجر ويحسّن معدل التحويل!",
+  "js": {
+    "edit": "تعديل JS",
+    "editTitle": "تعديل كود JS للثيم",
+    "putCustomJSHere": "ضع مقتطف جافاسكريبت المخصص هنا",
+    "updateSuccess": "حُدّث كود JS"
+  },
+  "overview": {
+    "additionalFeatures": "خصائص إضافية",
+    "allReviews": "جميع التقييمات",
+    "merchantAbout": "عزيزي التاجر، نحرص على تطوير الثيمات باستمرار، وملاحظاتك تهمّنا — شاركنا تجربتك",
+    "pleaseWriteReview": "كيف كانت تجربتك مع القالب؟ اكتب مراجعتك.",
+    "report": "تقرير",
+    "reviewThemeName": "كيف تقيم الثيم؟",
+    "statusRate": "وصلنا تقييمك، نشكرك على وقتك وملاحظاتك.",
+    "title": "نظرة عامة",
+    "writeReview": "شاركنا رأيك"
+  },
+  "publicThemes": "الثيمات العامة",
+  "reportDialog": {
+    "issueLabels": {
+      "issueType1": "مشكلة في تخصيص الثيم",
+      "issueType2": "التغييرات لا تظهر على واجهة المتجر",
+      "issueType3": "خصائص ناقصة في الثيم",
+      "issueType4": "أخرى"
+    },
+    "labels": {
+      "issueDetails": "تفاصيل المشكلة",
+      "issueType": "نوع المشكلة"
+    },
+    "successMsg": "وصلنا بلاغك",
+    "title": "الإبلاغ عن مشكلة في هذا الثيم"
+  },
+  "themes": {
+    "becomeFirstToActivate": "كن أول المستخدمين لهذا الثيم",
+    "byName": "بواسطة: {{name}}",
+    "currentThemeDescription": "التصميم المُفعل حاليًا في متجرك",
+    "currentThemeTitle": "الثيم الحالي",
+    "customThemes": {
+      "actions": {
+        "uploadNewTheme": "رفع ثيم جديد"
+      },
+      "columns": {
+        "activateTheme": "تفعيل الثيم",
+        "themeName": "اسم الثيم"
+      },
+      "description": "صمّم تجربة فريدة لعملائك بثيمات قابلة للتخصيص من سوق زد.",
+      "title": "الثيمات المخصصة"
+    },
+    "emptyState": {
+      "description": "رفع ثيم جديد أو قراءة متطلبات التطوير",
+      "devRequirements": "متطلبات التطوير",
+      "title": "رفع ثيم جديد",
+      "uploadNewTheme": "رفع ثيم جديد"
+    },
+    "notifications": {
+      "activated": "فُعّل الثيم",
+      "created": "أُنشئ الثيم",
+      "deleted": "حُذف الثيم",
+      "missingThemeFile": "أرفق ملف القالب",
+      "updated": "حُدّث الثيم"
+    },
+    "storeActivatedThisTheme": "متاجر فعّلت هذا الثيم",
+    "suggestedThemesTitle": "ثيمات مختارة لك",
+    "supportChannels": {
+      "channel": "قناة الدعم",
+      "website": "الموقع الإلكتروني"
+    },
+    "tabs": {
+      "features": "الخصائص",
+      "ratings": "التقييمات والمراجعات",
+      "support": "معلومات التواصل"
+    },
+    "themeLibraryDescription": "خصص قوالبك وعدّلها بسهولة بما يناسب متجرك",
+    "themeLibraryTitle": "الثيمات المثبتة",
+    "viewDetails": "عرض التفاصيل"
+  },
+  "upgrade": {
+    "themeLimit": "وصلت للحد الأقصى من القوالب المخصصة، رقِّ خطتك واستمتع بتخصيص أكبر لمتجرك."
+  }
+}

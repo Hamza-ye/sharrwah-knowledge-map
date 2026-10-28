@@ -1,0 +1,65 @@
+{
+  "actions": {
+    "contactZid": "Contact Zid customer service"
+  },
+  "badge": {
+    "supportedByPartner": "Supported by partner",
+    "supportedByZid": "Supported by Zid"
+  },
+  "contacts": {
+    "copyEmail": "Copy email",
+    "label_email": "Email",
+    "label_guide": "Guide",
+    "label_help": "Help center",
+    "label_phone": "Call",
+    "label_privacy": "Privacy policy",
+    "label_support": "Support channel",
+    "label_website": "Website",
+    "loading": "Loading contact details…",
+    "none": "This partner has not provided contact details.",
+    "whatsappAction": "Open WhatsApp chat"
+  },
+  "entry": {
+    "label": "App or Theme Assistance"
+  },
+  "guidance": {
+    "back": "Back to products",
+    "link": "When to contact Zid or the provider?",
+    "section1": {
+      "body": "Contact the app or theme provider directly using the contact details shown here. Investigating the issue requires access to their systems, which Zid does not have.",
+      "title": "Supported by partner"
+    },
+    "section2": {
+      "body": "For items marked \"Supported by Zid\", use the button on the card to open a chat with Zid customer service.",
+      "title": "Supported by Zid"
+    },
+    "section3": {
+      "body": "Share your store URL, a short description of the issue, and a screenshot or example when available.",
+      "title": "What to share with the partner"
+    }
+  },
+  "item": {
+    "viewApp": "View app"
+  },
+  "panel": {
+    "close": "Close",
+    "refresh": "Refresh",
+    "searchPlaceholder": "Search apps or partners…",
+    "title": "App & theme support"
+  },
+  "states": {
+    "empty": {
+      "apps": "No installed apps were returned for this store.",
+      "searchApps": "No apps match your search.",
+      "theme": "No active theme was returned for this store."
+    },
+    "error": {
+      "description": "Try again in a moment.",
+      "title": "We couldn't load your apps and theme"
+    }
+  },
+  "tabs": {
+    "apps": "Installed apps",
+    "themes": "Current theme"
+  }
+}

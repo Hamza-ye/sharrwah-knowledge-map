@@ -1,0 +1,249 @@
+{
+  "activatedContent": {
+    "activatedBanner": {
+      "description": "Each reward balance earned after purchase increases return likelihood and helps build stronger loyalty over time.",
+      "title": "Customer wallet activated 🎉"
+    },
+    "addOffer": "Create",
+    "analytics": {
+      "cashbackRoi": "Cashback ROI",
+      "cashbackRoiTooltip": "Total sales from orders paid with wallet balance ({{revenue}}) ÷ total rewards granted",
+      "customersEarnedCashback": "Rewarded customers",
+      "totalCashbackRewarded": "Total rewards",
+      "totalOutstandingBalance": "Outstanding balance"
+    },
+    "customersWallets": "Customer wallets",
+    "deactivate": "Deactivate",
+    "deactivateDialog": {
+      "confirm": "Confirm Deactivation",
+      "description": "After disabling the wallet, customers will no longer earn new rewards, but they can continue using their existing wallet balance until it is fully used or expires.",
+      "title": "Are you sure you want to deactivate the customer wallet?"
+    },
+    "earnAmount": "Cashback amount",
+    "offersTable": {
+      "reactivateTooltip": "Update the end date to reactivate it"
+    }
+  },
+  "amountDialog": {
+    "action": "Action:",
+    "add": "Add",
+    "cashbackAmount": "Transaction amount",
+    "deduct": "Deduct",
+    "title": "Create new transaction for {{name}}",
+    "transactionDescription": "Transaction description",
+    "transactionDescriptionHelper": "This is shown to the customer in their wallet transaction history.",
+    "validFor": "Valid for"
+  },
+  "bulkAmountDialog": {
+    "partialSuccess": "{{succeeded}} transactions completed successfully, {{failed}} failed.",
+    "success_few": "Wallet balance updated for {{count}} customers successfully.",
+    "success_many": "Wallet balance updated for {{count}} customers successfully.",
+    "success_one": "Wallet balance updated for One customer successfully.",
+    "success_other": "Wallet balance updated for {{count}} customers successfully.",
+    "success_two": "Wallet balance updated for {{count}} customers successfully.",
+    "success_zero": "Wallet balance updated for {{count}} customers successfully.",
+    "title_few": "Update wallet balance for {{count}} customers",
+    "title_many": "Update wallet balance for {{count}} customers",
+    "title_one": "Update wallet balance for one customer",
+    "title_other": "Update wallet balance for {{count}} customers",
+    "title_two": "Update wallet balance for {{count}} customers",
+    "title_zero": "Update wallet balance for {{count}} customers",
+    "updateBalance": "Update wallet balance"
+  },
+  "customersEmptyState": {
+    "cta": "Create a program",
+    "description": "Customers who earn cashback will be listed here.",
+    "title": "Launch cashback programs and grow your customer base."
+  },
+  "customersPage": {
+    "availableBalance": "Available balance",
+    "description": "Overview of customers using customer wallet program.",
+    "expiringAmount": "Balance expiring",
+    "expiryDate": "Expiry date",
+    "exportCsv": "Export CSV",
+    "exportDialog": {
+      "allPeriods": "All periods",
+      "balanceMax": "Maximum balance",
+      "balanceMaxInvalid": "Maximum balance must be greater than or equal to the minimum balance.",
+      "balanceMin": "Minimum balance",
+      "description": "Choose the customers to include in the export file.",
+      "submit": "Export",
+      "title": "Export customers"
+    },
+    "filters": {
+      "customPeriod": "Custom date",
+      "expiringBefore": "Expiring before",
+      "expiringWithin": "Balance expiring within",
+      "noResultsDescription": "No customers have a balance expiring within the selected period.",
+      "selectPeriod": "Select period",
+      "withinDays_one": "{{count}} day",
+      "withinDays_other": "{{count}} days"
+    },
+    "heldBalance": "Held balance",
+    "nextExpiryDate": "Nearest expiry date",
+    "pendingRewards": "Pending rewards",
+    "title": "Customers",
+    "totalBalance": "Total balance"
+  },
+  "dialog": {
+    "createNewTransaction": "Create new transaction",
+    "expirationDate": "Expiration date",
+    "goToCustomerProfile": "Customer profile",
+    "orderNumber": "Order number",
+    "stats": {
+      "availableBalance": {
+        "label": "Available balance",
+        "toolTip": "Balance available to use"
+      },
+      "pendingCredit": {
+        "label": "Pending rewards",
+        "toolTip": "Rewards earned from orders that have not been completed yet (edited)"
+      }
+    },
+    "title": "Transaction history for {{name}}",
+    "transactionStatus": {
+      "reserved": "Reserved",
+      "success": "Success"
+    },
+    "walletTitle": "Wallet"
+  },
+  "form": {
+    "details": {
+      "description": "Define the details and application of the cashback offer.",
+      "earnRule": {
+        "description": "Applies to the purchases total; shipping fees are not counted for earning or redemption.",
+        "fixedAmount": "Fixed price",
+        "percentageOfTotal": "Percentage of order total",
+        "title": "Cashback offer"
+      },
+      "expiryDaysHelper": "The validity period is calculated starting from the order creation date.",
+      "maxCashback": "Reward maximum amount",
+      "minimumOrderValue": "Minimum order value",
+      "nameHelper": "Internal name for tracking; not visible to customers.",
+      "percentageAmount": "Percentage",
+      "setExpiration": "Cashback validity period"
+    },
+    "editTitle": "Update cashback offer",
+    "overlapDialog": {
+      "confirm": "Save and continue",
+      "description": "Some products in this offer are also covered by other cashback offers in the same period. You can review the offers below before saving, or continue and save the offer.",
+      "duplicatedCategories": "Duplicated categories",
+      "duplicatedProducts": "Duplicated products",
+      "overlappingOffers": "Overlapping offers",
+      "title": "Overlaps with other offers"
+    },
+    "salesChannels": {
+      "description": "Choose the sale channels this offer applies to.",
+      "title": "Sales channels"
+    },
+    "scope": {
+      "applyTo": {
+        "all": "All products",
+        "categories": "Specific categories only",
+        "excludedCategories": "All products except specific categories",
+        "excludedProducts": "All products except specific products",
+        "label": "Offer applies to",
+        "products": "Specific products only"
+      },
+      "browseCategories": "Browse categories",
+      "browseProducts": "Browse products",
+      "categoriesEmptyState": {
+        "description": "Browse your categories and choose the ones this offer covers.",
+        "title": "No categories selected"
+      },
+      "description": "Specify the products or categories the offer includes or excludes.",
+      "excludeOnSaleProducts": "Exclude discounted products",
+      "excludeOnSaleProductsTooltip": "Products with a sale price will not earn cashback from this offer.",
+      "overlapping": "In another active offer",
+      "productsEmptyState": {
+        "description": "Browse your products and choose the ones this offer covers.",
+        "title": "No products selected"
+      },
+      "title": "Offer scope",
+      "unavailableProduct": "Unavailable product"
+    },
+    "settings": {
+      "description": "Define usage limits for this offer if needed.",
+      "title": "Settings"
+    },
+    "summary": {
+      "expirationDays_few": "form.summary.expirationDays",
+      "expirationDays_many": "form.summary.expirationDays",
+      "expirationDays_one": "{{count}} day",
+      "expirationDays_other": "{{count}} days",
+      "expirationDays_two": "form.summary.expirationDays",
+      "expirationDays_zero": "form.summary.expirationDays",
+      "maxCashbackSuffix": ", up to",
+      "mechanism": "How it works",
+      "mechanismFixedPrefix": "Refund ",
+      "mechanismFixedSuffix": " to the customer's wallet after delivery",
+      "mechanismPercentage": "Refund {{percentage}}% of the order total to the customer's wallet after delivery",
+      "notSet": "Not set yet",
+      "orderReward": "Cashback",
+      "overlappingWarning": {
+        "content": "An active cashback offer already exists for this period."
+      },
+      "salesChannels": "Sales channels",
+      "title": "Summary"
+    },
+    "title": "Create cashback offer"
+  },
+  "landing": {
+    "advantages": {
+      "automaticCashback": {
+        "description": "Reward customers after each order by setting a cashback percentage and encourage them to complete purchases.",
+        "title": "Automatic cashback"
+      },
+      "fullControl": {
+        "description": "Set rules to prevent misuse, such as a maximum credit, expiry date, and order value condition.",
+        "title": "Full control over rules"
+      },
+      "simpleExperience": {
+        "description": "The wallet balance appears directly to the customer and can be used easily in upcoming orders.",
+        "title": "Simple customer experience"
+      },
+      "walletCreditRefunds": {
+        "description": "Turn cash refunds it into wallet credit to help retain revenue and keep the customer coming back.",
+        "title": "Wallet credit refunds"
+      }
+    },
+    "gccOnly": "Customer wallets is only available for GCC countries.",
+    "hero": {
+      "description": "Customer Wallet helps encourage repeat purchases by offering cashback or reward credits stored in the customer’s account within your store.",
+      "subscribeNow": "Subscribe now",
+      "title": "Customer wallet"
+    },
+    "subscriptions": {
+      "description": "No commission on transactions, only a fixed monthly subscription based on your current package.",
+      "growth": {
+        "excludingVAT": "Excluding VAT",
+        "label": "Growth",
+        "period": "Monthly"
+      },
+      "professional": {
+        "label": "Professional",
+        "price": "FREE"
+      },
+      "title": "Subscriptions"
+    }
+  },
+  "notActivated": {
+    "activateButton": "Activate customer wallet",
+    "description": "Reward your customers with cashback on every purchase and encourage them to return.",
+    "title": "Customer wallet is not activated"
+  },
+  "rowAnalytics": {
+    "numberOfCustomers": "Rewarded customers",
+    "numberOfCustomersTooltip": "Number of customers who received cashback from this offer in their wallets.",
+    "numberOfUsages": "Cashback orders",
+    "numberOfUsagesTooltip": "Number of orders that earned customers cashback from this offer once the order was completed.",
+    "totalCashback": "Cashback granted",
+    "totalCashbackTooltip": "Total cashback from this offer added to customers' wallets.",
+    "totalSales": "Orders using balance",
+    "totalSalesTooltip": "Total value of orders that used cashback balance from this offer, after the balance is deducted."
+  },
+  "transactionsEmptyState": {
+    "description": "Credits and deductions on this customer's wallet will appear here.",
+    "title": "No transactions yet"
+  }
+}

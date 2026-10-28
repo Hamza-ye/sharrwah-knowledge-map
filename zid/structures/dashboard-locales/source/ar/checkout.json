@@ -1,0 +1,156 @@
+{
+  "accountNumber": "رقم الحساب",
+  "amount": "المبلغ",
+  "applePay": "أبل باي",
+  "applePayNotAvailable": "أبل باي غير متاح في الوقت الحالي",
+  "applePayNotSupported": "أبل باي غير مدعوم على جهازك",
+  "applePayPaymentDataMissing": "بيانات الدفع مفقودة",
+  "applePayPaymentError": "حدث خطأ أثناء معالجة الدفع",
+  "applePayPaymentFailed": "تعذّر الدفع بأبل باي",
+  "applePayValidationError": "خطأ في التحقق من بيانات الدفع",
+  "autoRenewsEveryYearOn": "يتجدد تلقائيًا كل {{type}} في {{date}}",
+  "bankTransfer": "التحويل البنكي",
+  "bankTransferConfirmError": "حدث خطأ في تأكيد التحويل البنكي",
+  "bankTransferDesc": "لتحويل المبلغ، أودِع القيمة المستحقة في حساب زد لدى مصرف الراجحي",
+  "bankTransferPaymentMethodError": "خطأ في طريقة الدفع بالتحويل البنكي",
+  "bankTransferSubmittedPendingApproval": "أُرسل التحويل البنكي. قد تستغرق الموافقة بضعة أيام عمل.",
+  "bankTransferSuccess": "اكتمل التحويل البنكي",
+  "beneficiaryNameArabic": "اسم المستفيد (باللغة العربية)",
+  "beneficiaryNameEnglish": "اسم المستفيد (باللغة الإنجليزية)",
+  "byCompletingThePaymentYouAgreeToThe": "بإتمام عملية الدفع فإنك توافق على الشروط والأحكام",
+  "cardNumber": "رقم البطاقة",
+  "checkoutRedirect": {
+    "processing": {
+      "description": "نُتمّ معاملتك. ستُوجَّه قريبًا.",
+      "title": "جاري معالجة عملية الدفع"
+    }
+  },
+  "clickCompletePaymentToContinue": "انقر «إتمام الشراء» للمتابعة إلى دفع نون",
+  "completePayment": "إتمام الدفع",
+  "completePurchase": "إتمام الشراء",
+  "connectingToPaymentProvider": "انتظر لحظة ريثما نتصل بمزود الدفع",
+  "couponAddedSuccessfully": "أُضيف كود الخصم",
+  "couponRemovedSuccessfully": "حُذف كود الخصم",
+  "creditCard": "البطاقة الائتمانية",
+  "creditForSelectedService": "رصيد زد المتاح لهذه الخدمة",
+  "creditForSelectedServiceTooltip": "رصيد متاح للخدمة المحددة، ويُطبَّق تلقائيًا إن توفر.",
+  "currentWalletBalance": "رصيد المحفظة الحالي: {{balance}}",
+  "cvv": "CVV",
+  "duration": {
+    "monthly": "شهر",
+    "yearly": "سنة"
+  },
+  "errors": {
+    "422": {
+      "description": "المبلغ المتبقي في حسابك أعلى من قيمة الباقة المختارة، اختر باقة أخرى",
+      "title": "لا يمكنك إتمام العملية"
+    },
+    "paymentLinkNotFound": {
+      "description": "تأكد من عنوان الرابط",
+      "title": "لم نعثر على رابط الدفع"
+    }
+  },
+  "finishProcess": "إتمام العملية",
+  "generalWalletBalance": "رصيد المحفظة المتاح",
+  "generalWalletBalanceTooltip": "رصيد المحفظة المتاح، ويُستخدم إن لم يتوفر رصيد مناسب للخدمة المحددة.",
+  "giftCardOrCouponCode": "أدخل بطاقة هدية أو كود خصم",
+  "haveACouponCode": "هل لديك كود خصم؟",
+  "iban": "رقم الآيبان (IBAN)",
+  "noAccessToUseWalletBalance": "لا تملك صلاحية استخدام رصيد المحفظة",
+  "noEnoughBalance": "رصيدك غير كافٍ",
+  "orderSummary_amount_credited": "المبلغ المُضاف",
+  "orderSummary_amount_due": "المبلغ المستحق",
+  "orderSummary_amount_paid": "المبلغ المدفوع",
+  "orderSummary_discount": "قيمة الخصم",
+  "orderSummary_discounts_total": "قيمة الخصم",
+  "orderSummary_net_total": "صافي المجموع",
+  "orderSummary_net_total_after_discount": "المجموع بعد الخصومات",
+  "orderSummary_sub_total_after_discounts": "المجموع بعد الخصومات",
+  "orderSummary_sub_total_after_vat": "المجموع بعد الضريبة",
+  "orderSummary_sub_total_before_vat": "المجموع قبل الضريبة",
+  "orderSummary_title": "ملخص الطلب",
+  "orderSummary_total": "الإجمالي",
+  "orderSummary_vat": "ضريبة القيمة المضافة",
+  "orderSummary_vat_subjected_amount": "قيمة الطلب الخاضعة لضريبة القيمة المضافة",
+  "orderSummary_vat_total": "ضريبة القيمة المضافة",
+  "orderSummary_vat_total_after_discount": "ضريبة القيمة المضافة بعد الخصومات",
+  "payment": "الدفع",
+  "paymentMethodUpdatedSuccessfully": "حُدّثت طريقة الدفع",
+  "paymentPending": {
+    "description": "نتحقق من حالة الدفع. انتظر قليلًا...",
+    "title": "جاري معالجة عملية الدفع"
+  },
+  "preparingPayment": "جاري إعداد الدفع...",
+  "redirectToNoon": "المتابعة إلى دفع نون",
+  "refreshingPurchase": "نحدّث عملية الشراء، حاول مجددًا بعد لحظات.",
+  "requestVatInvoice": "طلب فاتورة ضريبة القيمة المضافة",
+  "saveCard": "حفظ البطاقة",
+  "saveCardForFasterCheckout": "احفظ هذه البطاقة للدفع السريع",
+  "savedCards": "البطاقات المحفوظة",
+  "startNow": "البدء الآن",
+  "states": {
+    "firstSubscription": {
+      "description": "مبروك عليك متجرك صار جاهز! كمّل الخطوات البسيطة الباقية وابدأ البيع فورًا.",
+      "getStarted": "البدء الآن",
+      "playVideo": "تشغيل الفيديو",
+      "requestVatInvoice": "طلب فاتورة ضريبية",
+      "title": "متجرك جاهز، لنبدأ رحلتك من هنا",
+      "videoDuration": "2:10 دقيقة"
+    },
+    "ngoSubscription": {
+      "description": "رحلة بناء متجرك الإلكتروني الناجح تبدأ الآن. لنُعِدّ متجرك ونُضِف المنتجات ونبدأ البيع لعملائك الأوائل!",
+      "getStarted": "البدء الآن",
+      "requestVatInvoice": "طلب فاتورة ضريبية",
+      "title": "مبروك! انضممت رسميًا إلى زد 🚀"
+    },
+    "processingPayment": {
+      "contactSupport": "التواصل مع الدعم",
+      "description": "نُتمّ معاملتك. يستغرق هذا وقتًا أطول من المتوقع، انتظر ريثما نكمل عملية الدفع.",
+      "logout": "تسجيل الخروج",
+      "title": "جاري معالجة عملية الدفع"
+    },
+    "purchaseCompleted": {
+      "description": "ستجد التفاصيل في لوحة التحكم أو القسم المعني.",
+      "goToDashboard": "الذهاب إلى لوحة التحكم",
+      "requestVatInvoice": "طلب فاتورة ضريبية",
+      "title": "اكتملت عملية الشراء"
+    },
+    "purchaseIncomplete": {
+      "button": "نسخ رقم عملية الشراء",
+      "description": "لم نتمكن من تأكيد حالة الدفع. تواصل مع الدعم واذكر رقم عملية الشراء: {{purchaseId}}",
+      "title": "لم نتمكن من إتمام عملية الشراء"
+    },
+    "rejected": {
+      "description": "حدث خطأ أثناء معالجة عملية الدفع. حاول مجددًا أو راجع بياناتك وحدّثها عند الحاجة.",
+      "title": "لم نتمكن من إتمام عملية الدفع"
+    },
+    "subDescription": "أُرسلت الفاتورة رقم #{{invoiceNumber}} إلى {{email}}",
+    "subscriptionChanged": {
+      "description": "قد تستغرق التغييرات بضع دقائق لتُطبَّق كاملةً. انتظر قليلًا، وسنخبرك إن احتاج شيء إلى انتباهك.",
+      "goToDashboard": "الذهاب إلى لوحة التحكم",
+      "requestVatInvoice": "طلب فاتورة ضريبية",
+      "title": "تغيّر اشتراكك"
+    },
+    "yourEmail": "بريدك الإلكتروني"
+  },
+  "termsAndConditions": "الشروط والأحكام",
+  "title": "إتمام الدفع",
+  "totalCreditBalanceIs": "إجمالي رصيد خدمات زد",
+  "useNewCard": "استخدام بطاقة جديدة",
+  "useSavedCard": "استخدام بطاقة محفوظة",
+  "useWalletBalance": "استخدام رصيد المحفظة",
+  "vatInvoiceForm": {
+    "alert": {
+      "content": "املأها وسننشئ الفاتورة الضريبية في أقرب وقت (يستغرق ذلك عادةً ساعة واحدة على الأكثر)",
+      "title": "البيانات التالية مطلوبة لإنشاء فاتورتك الضريبية"
+    },
+    "businessAddress": "عنوان العمل",
+    "commercialRegistrationNumber": "رقم السجل التجاري",
+    "storeInfo": "معلومات المتجر",
+    "taxCertificateNumber": "رقم الشهادة الضريبية",
+    "title": "طلب فاتورة ضريبية",
+    "tradeLicenseNumber": "رقم الترخيص التجاري"
+  },
+  "walletBalance": "رصيد المحفظة",
+  "yourDiscountHasBeenApplied": "يا سلام عليك، طُبّق الخصم :)"
+}

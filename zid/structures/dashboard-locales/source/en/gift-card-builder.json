@@ -1,0 +1,45 @@
+{
+  "appearance": {
+    "font": "Font",
+    "textColor": "Text color"
+  },
+  "background": {
+    "color": "Color",
+    "containersBackgroundColor": "Containers background color",
+    "image": "Image",
+    "selectImage": "Select image",
+    "selectedCardBackground": "Selected card background:"
+  },
+  "fields": {
+    "alignment": "Alignment",
+    "message": "Message",
+    "qrCode": "QR code",
+    "recipientName": "Recipient name",
+    "required": "Required field",
+    "senderName": "Sender name",
+    "storeLogo": "Store logo",
+    "title": "Select visible fields"
+  },
+  "padding": {
+    "bottom": "Bottom",
+    "left": "Left",
+    "right": "Right",
+    "title": "Card padding",
+    "top": "Top"
+  },
+  "preview": {
+    "characterCount_one": "Number of characters: {{count}} maximum",
+    "characterCount_other": "Number of characters: {{count}} maximum",
+    "from": "FROM:",
+    "qrHint": "Scan QR code to get personalized message.",
+    "storeName": "Store name",
+    "to": "TO:"
+  },
+  "size": {
+    "large": "Large (A4)",
+    "medium": "Medium (A5)",
+    "small": "Small (A6)",
+    "title": "Choose the card size:"
+  },
+  "title": "Gift card builder"
+}

@@ -1,0 +1,130 @@
+{
+  "automaticDiscounts": {
+    "activateMobileAppWarning": "You must have a store app to activate this service",
+    "createdSuccessfully": "Automatic discount created successfully",
+    "disabledSuccessfully": "Automatic discount disabled successfully",
+    "discountPercentage": "Discount percentage",
+    "freeShippingAndDelivery": "Free shipping and delivery",
+    "mainTitle": "Manage automatic discounts for your customers",
+    "maxTotal": "Max total",
+    "minTotal": "Min total",
+    "mobileApp": "Mobile app discount",
+    "onlinePayments": "Online payment discount",
+    "selectCities": "Select delivery cities to apply the discount to",
+    "updatedSuccessfully": "Automatic discounts updated successfully"
+  },
+  "discountsReports": {
+    "addCoupon": "Add discount",
+    "columns": {
+      "code": "Code",
+      "createdAt": "Created at",
+      "discountAmount": "Discount amount",
+      "netWorth": "Net worth",
+      "salesBeforeDiscount": "Sales before discount",
+      "totalUses": "Total uses"
+    }
+  },
+  "landing": {
+    "allTools": "All tools",
+    "objectives": {
+      "basketValue": "Bigger baskets",
+      "engagementReach": "Reach and engagement",
+      "filterLabel": "Filter tools by objective",
+      "loyalty": "Loyalty and rewards"
+    },
+    "occasions": {
+      "action": "Prepare an offer",
+      "title": "Upcoming seasons"
+    },
+    "tools": {
+      "abandonedCarts": {
+        "action": "Manage carts",
+        "description": "Tailor cart reminders to each cart’s stage and value, and add an incentive to bring customers back to check out.",
+        "title": "Abandoned carts"
+      },
+      "affiliates": {
+        "action": "Add an affiliate",
+        "description": "Grow your store’s reach through affiliates, and pay commission on completed orders.",
+        "title": "Affiliate marketing"
+      },
+      "automatedMessages": {
+        "action": "Create an automated message",
+        "description": "Reach customers automatically at the right moment, from a welcome to recovering an abandoned cart.",
+        "title": "Automated messages"
+      },
+      "bankDiscounts": {
+        "action": "Create a bank discount",
+        "description": "Offer a discount to holders of specific bank cards, and attract more customers.",
+        "title": "Bank discounts"
+      },
+      "bundleOffers": {
+        "action": "Create a bundle",
+        "description": "Bundle your products: buy one get one free, one at a discount, or a set at a custom price.",
+        "title": "Bundle offers"
+      },
+      "campaigns": {
+        "action": "Create a campaign",
+        "description": "Send your offers over WhatsApp or SMS, and follow how each campaign performs.",
+        "title": "Marketing campaigns"
+      },
+      "cashback": {
+        "action": "Create offer",
+        "description": "Return part of an order to the customer’s wallet, then target balances about to expire and encourage those customers to buy again.",
+        "title": "Cashback offers"
+      },
+      "coupons": {
+        "action": "Create a coupon",
+        "description": "Create coupons for offers and occasions, or for specific groups of customers.",
+        "title": "Discount coupons"
+      },
+      "freeShipping": {
+        "action": "Create offer",
+        "description": "Offer free shipping above a set order value or to specific regions, and encourage customers to buy more.",
+        "title": "Free shipping offer"
+      },
+      "gifting": {
+        "action": "Set up gifting",
+        "description": "Let customers send products as gifts, with an experience made for occasions.",
+        "title": "Gifting"
+      },
+      "loyalty": {
+        "action": "Set up program",
+        "description": "Reward customers with points on every order, and tailor how they redeem them to encourage repeat purchases.",
+        "title": "Loyalty program"
+      },
+      "mokafaa": {
+        "action": "Set up Mokafaa",
+        "description": "Let Mokafaa by Al Rajhi customers earn points and pay with them directly in your store.",
+        "title": "Mokafaa program"
+      },
+      "progressiveDiscount": {
+        "action": "Create a progressive discount",
+        "description": "Encourage bigger baskets with a discount that rises with the number of items or the amount spent.",
+        "title": "Progressive discount"
+      },
+      "qitaf": {
+        "action": "Set up Qitaf",
+        "actionManage": "Set up Qitaf",
+        "description": "Let stc customers earn Qitaf points as they shop, and use them to pay directly in your store.",
+        "title": "Qitaf program"
+      },
+      "referrals": {
+        "action": "Set up program",
+        "description": "Reward customers for inviting friends to your store, win new customers, and grow your base for less.",
+        "title": "Customer referrals"
+      },
+      "whatsapp": {
+        "action": "Set up WhatsApp",
+        "actionManage": "Set up WhatsApp",
+        "description": "Reach customers, grow sales, and send your offers and updates over Zid Business WhatsApp.",
+        "title": "WhatsApp for business"
+      },
+      "zidAds": {
+        "action": "Get started",
+        "description": "Launch campaigns on the major ad platforms, then run them and follow their performance from one place.",
+        "title": "Zid Ads"
+      }
+    },
+    "toolsTitle": "Marketing tools"
+  }
+}

@@ -1,0 +1,272 @@
+{
+  "actionDetails": {
+    "actionType": "Action type",
+    "buttons": {
+      "add": "Add button",
+      "option": "Option",
+      "options": "Options"
+    },
+    "close": "Close",
+    "createNode": "Create Step",
+    "endDescription": "End the flow",
+    "gotoFlowTargetHelper": "Select the flow to continue with.",
+    "gotoFlowTargetLabel": "Target flow",
+    "gotoTargetLabel": "Go to node",
+    "handoffDescription": "Hand the conversation over to a human agent.",
+    "input": {
+      "saveTo": "Save response to"
+    },
+    "list": {
+      "addRow": "Add option",
+      "addSection": "Add section",
+      "buttonText": "Button text",
+      "row": "Option",
+      "section": "Section",
+      "sections": "Sections"
+    },
+    "nestedActions": "Nested actions",
+    "run": {
+      "helper": "Run an external action with the specified payload.",
+      "invalidPayload": "Invalid payload.",
+      "name": "Action name",
+      "payload": "Payload"
+    },
+    "title": "Action details"
+  },
+  "builder": {
+    "startNode": {
+      "description": "When a customer sends a message on WhatsApp",
+      "label": "Incoming message"
+    }
+  },
+  "createAutomation": "Create automation",
+  "editor": {
+    "nodeFinder": {
+      "label": "Find a step",
+      "placeholder": "Find a step by name or code"
+    },
+    "preview": {
+      "chooseOption": "Choose an option",
+      "flowComplete": "This flow is complete.",
+      "handoff": "Conversation handed off to an agent.",
+      "listTitle": "Choose an option",
+      "online": "online",
+      "storeFallback": "Your store",
+      "transferred": "This conversation continues in {{flow}}.",
+      "typeMessage": "Type a message"
+    },
+    "sidebar": {
+      "howItWorksDescription": "Each flow starts with a customer message, then moves between reply steps based on their choices.",
+      "howItWorksTitle": "How it works",
+      "overviewDescription": "Automated replies that branch based on the customer’s choices.",
+      "overviewTitle": "About WhatsApp flows",
+      "steps": {
+        "end": "When the customer reaches the final step, stops replying, uses all attempts, or the 24-hour window closes.",
+        "menu": "The first step sends a message with buttons or a list, then waits a limited time for the customer to reply.",
+        "retry": "If their reply doesn’t match an option, the choices are sent again. After a limited number of attempts, the flow ends.",
+        "route": "The customer’s choice takes them to the linked step. This continues until they reach the final step.",
+        "start": "When the customer sends a message, the flow starts and opens WhatsApp’s 24-hour service window."
+      }
+    }
+  },
+  "flowGraph": {
+    "actionType": "Action type",
+    "actionType_end": "End",
+    "actionType_goto_flow": "Go to flow",
+    "actionType_goto_node": "Go to node",
+    "actionType_handoff": "Handoff",
+    "actionType_input": "Input",
+    "actionType_reply_buttons": "Reply buttons",
+    "actionType_reply_list": "Reply list",
+    "actionType_reply_text": "Reply text",
+    "actionType_run": "Run",
+    "actionType_set_variable": "Set variable",
+    "endLabel": "End",
+    "firstStep": "First step",
+    "optionLimitReached": "Option limit reached",
+    "untitledNode": "Untitled step",
+    "untitledOption": "Untitled option",
+    "untitledSection": "Untitled section"
+  },
+  "flowList": {
+    "actions": {
+      "clone": "Clone"
+    },
+    "activateConflictDialog": {
+      "message": "Activating this flow will deactivate any current active flow, so only one default flow stays active.",
+      "title": "Activate default flow?"
+    },
+    "cloneDialog": {
+      "confirm": "Clone flow",
+      "description": "Create a draft copy of \"{{name}}\".",
+      "nameLabel": "New flow name (optional)",
+      "namePlaceholder": "Leave empty to auto-generate a name",
+      "title": "Clone flow"
+    },
+    "createDialog": {
+      "confirm": "Create flow",
+      "nameLabel": "Flow name",
+      "namePlaceholder": "e.g. Welcome menu",
+      "title": "Create flow"
+    },
+    "deactivateConflictDialog": {
+      "message": "Deactivating this flow will stop it from running for your customers.",
+      "title": "Deactivate this flow?"
+    },
+    "deleteDialog": {
+      "activeWarning": "This flow is currently active and live for your customers.",
+      "confirm": "Delete flow",
+      "message": "Are you sure you want to delete \"{{name}}\"? This action can't be undone.",
+      "title": "Delete flow"
+    },
+    "emptyState": {
+      "createFlow": "Create flow",
+      "description": "Create an automated reply flow to guide customers to the right answer.",
+      "title": "No reply flows yet"
+    },
+    "errorState": {
+      "description": "Something went wrong while loading your flows. Please try again.",
+      "retry": "Retry",
+      "title": "Couldn't load flows"
+    },
+    "limitReached_few": "You've reached the maximum of {{count}} flows.",
+    "limitReached_many": "You've reached the maximum of {{count}} flows.",
+    "limitReached_one": "You've reached the maximum of {{count}} flow.",
+    "limitReached_other": "You've reached the maximum of {{count}} flows.",
+    "limitReached_two": "You've reached the maximum of {{count}} flows.",
+    "limitReached_zero": "You've reached the maximum number of flows.",
+    "nodes": "Nodes",
+    "nodesCount_few": "{{count}} nodes",
+    "nodesCount_many": "{{count}} nodes",
+    "nodesCount_one": "{{count}} node",
+    "nodesCount_other": "{{count}} nodes",
+    "nodesCount_two": "{{count}} nodes",
+    "nodesCount_zero": "No nodes",
+    "snackbar": {
+      "activated": "Flow activated.",
+      "cloneError": "The clone didn't complete. Please try again.",
+      "cloned": "Flow cloned.",
+      "deactivated": "Flow deactivated."
+    }
+  },
+  "flowSchema": {
+    "actionTypeInvalid": "This action type isn't supported.",
+    "actionsMin": "Each step needs at least one action.",
+    "buttonLabelMax_few": "Button label can't exceed {{count}} characters.",
+    "buttonLabelMax_many": "Button label can't exceed {{count}} characters.",
+    "buttonLabelMax_one": "Button label can't exceed {{count}} character.",
+    "buttonLabelMax_other": "Button label can't exceed {{count}} characters.",
+    "buttonLabelMax_two": "Button label can't exceed {{count}} characters.",
+    "buttonLabelMax_zero": "Button label can't exceed {{count}} characters.",
+    "buttonsMax_few": "You can't add more than {{count}} buttons.",
+    "buttonsMax_many": "You can't add more than {{count}} buttons.",
+    "buttonsMax_one": "You can't add more than {{count}} button.",
+    "buttonsMax_other": "You can't add more than {{count}} buttons.",
+    "buttonsMax_two": "You can't add more than {{count}} buttons.",
+    "buttonsMax_zero": "You can't add more than {{count}} buttons.",
+    "buttonsMin": "Add at least one button.",
+    "codeFormat": "Use only lowercase letters, numbers, and underscores.",
+    "listButtonTextMax_few": "List button text can't exceed {{count}} characters.",
+    "listButtonTextMax_many": "List button text can't exceed {{count}} characters.",
+    "listButtonTextMax_one": "List button text can't exceed {{count}} character.",
+    "listButtonTextMax_other": "List button text can't exceed {{count}} characters.",
+    "listButtonTextMax_two": "List button text can't exceed {{count}} characters.",
+    "listButtonTextMax_zero": "List button text can't exceed {{count}} characters.",
+    "listRowDescriptionMax_few": "Option description can't exceed {{count}} characters.",
+    "listRowDescriptionMax_many": "Option description can't exceed {{count}} characters.",
+    "listRowDescriptionMax_one": "Option description can't exceed {{count}} character.",
+    "listRowDescriptionMax_other": "Option description can't exceed {{count}} characters.",
+    "listRowDescriptionMax_two": "Option description can't exceed {{count}} characters.",
+    "listRowDescriptionMax_zero": "Option description can't exceed {{count}} characters.",
+    "listRowLabelMax_few": "Option title can't exceed {{count}} characters.",
+    "listRowLabelMax_many": "Option title can't exceed {{count}} characters.",
+    "listRowLabelMax_one": "Option title can't exceed {{count}} character.",
+    "listRowLabelMax_other": "Option title can't exceed {{count}} characters.",
+    "listRowLabelMax_two": "Option title can't exceed {{count}} characters.",
+    "listRowLabelMax_zero": "Option title can't exceed {{count}} characters.",
+    "maxLength_few": "The value can't exceed {{count}} characters.",
+    "maxLength_many": "The value can't exceed {{count}} characters.",
+    "maxLength_one": "The value can't exceed {{count}} character.",
+    "maxLength_other": "The value can't exceed {{count}} characters.",
+    "maxLength_two": "The value can't exceed {{count}} characters.",
+    "maxLength_zero": "The value can't exceed {{count}} characters.",
+    "messageMax_few": "Message can't exceed {{count}} characters.",
+    "messageMax_many": "Message can't exceed {{count}} characters.",
+    "messageMax_one": "Message can't exceed {{count}} character.",
+    "messageMax_other": "Message can't exceed {{count}} characters.",
+    "messageMax_two": "Message can't exceed {{count}} characters.",
+    "messageMax_zero": "Message can't exceed {{count}} characters.",
+    "messageRequired": "Message text can't be empty.",
+    "nodeTypeInvalid": "This node type isn't supported.",
+    "nodesMin": "Add at least one node.",
+    "optionsMin": "Add at least one option.",
+    "required": "Field is required.",
+    "sectionTitleMax_few": "Section title can't exceed {{count}} characters.",
+    "sectionTitleMax_many": "Section title can't exceed {{count}} characters.",
+    "sectionTitleMax_one": "Section title can't exceed {{count}} character.",
+    "sectionTitleMax_other": "Section title can't exceed {{count}} characters.",
+    "sectionTitleMax_two": "Section title can't exceed {{count}} characters.",
+    "sectionTitleMax_zero": "Section title can't exceed {{count}} characters.",
+    "sectionsMax_few": "You can't add more than {{count}} sections.",
+    "sectionsMax_many": "You can't add more than {{count}} sections.",
+    "sectionsMax_one": "You can't add more than {{count}} section.",
+    "sectionsMax_other": "You can't add more than {{count}} sections.",
+    "sectionsMax_two": "You can't add more than {{count}} sections.",
+    "sectionsMax_zero": "You can't add more than {{count}} sections.",
+    "sectionsMin": "Add at least one section.",
+    "triggerTypeInvalid": "This trigger type isn't supported."
+  },
+  "nodeSettings": {
+    "buttons": {
+      "add": "Add option",
+      "optionPlaceholder": "Button option",
+      "remove": "Remove button"
+    },
+    "close": "Close",
+    "editTitle": "Edit reply",
+    "interactive": {
+      "buttonsHelper": "Add up to 3 buttons, shown in the same message.",
+      "buttonsLabel": "Buttons",
+      "description": "Select how customers can choose the reply",
+      "listHelper": "Add up to 10 options shown in an additional menu.",
+      "listLabel": "List",
+      "title": "Interactive reply types",
+      "toggleHelper": "Allow customers to select an option from the buttons or list.",
+      "toggleLabel": "Add interactive replies"
+    },
+    "list": {
+      "addRow": "Add option",
+      "addSection": "Add section",
+      "buttonTextLabel": "List button label",
+      "buttonTextPlaceholder": "e.g. View options",
+      "removeSection": "Remove section",
+      "rowDescriptionPlaceholder": "Description (optional)",
+      "rowLabelPlaceholder": "Option title",
+      "rowNumber": "Option {{number}}",
+      "rowsLabel": "List sections",
+      "sectionTitleLabel": "Section {{number}} title",
+      "sectionTitlePlaceholder": "e.g. Shopping"
+    },
+    "message": {
+      "charCounter": "Number of characters: {{current}}/{{max}}",
+      "label": "Message (English)",
+      "placeholder": "Write the reply message customers will receive"
+    },
+    "nameLabel": "Reply name",
+    "namePlaceholder": "e.g. Main menu",
+    "noEditableContent": "This step has no editable message content.",
+    "replyOptions": {
+      "hint": "(max {{max}})",
+      "title": "Reply options"
+    }
+  },
+  "status": {
+    "active": "Active",
+    "draft": "Draft"
+  },
+  "validation": {
+    "cloneNameInvalid": "Enter a name between 1 and 100 characters.",
+    "flowNameMax": "The flow name can't exceed 100 characters.",
+    "flowNameRequired": "Enter a flow name."
+  }
+}

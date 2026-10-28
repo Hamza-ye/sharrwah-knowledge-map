@@ -1,0 +1,56 @@
+{
+  "filters": {
+    "dateAttribute": "Date type",
+    "exportType": "File type",
+    "types": "File",
+    "types_abandoned_carts": "Abandoned Carts",
+    "types_affiliates_export": "Affiliates",
+    "types_coupons_export": "Coupon list",
+    "types_customers_export": "Customer list",
+    "types_detailed_orders_export": "Detailed Order list",
+    "types_download_payouts": "Download Payouts",
+    "types_marketplaces_products": "Marketplaces Products",
+    "types_order_preparation": "Order Preparation",
+    "types_orders_export": "Order list",
+    "types_product_quantities": "Product Quantities",
+    "types_product_sales": "Product Sales",
+    "types_products_export": "Product list",
+    "types_reviews_export": "Reviews",
+    "types_stock_notifications": "Stock Notifications",
+    "types_wallet_export": "Wallet",
+    "types_zidpay_payment_links": "Payment Links",
+    "types_zidpay_transactions_export": "Transactions"
+  },
+  "table": {
+    "countdownSuffix": {
+      "hours": "hours",
+      "minutes": "minutes",
+      "seconds": "seconds"
+    },
+    "emptyNoResults": {
+      "clearAllFilters": "Clear all filters",
+      "description": "Try adjusting your filters or search keywords to find what you're looking for.",
+      "title": "No export requests found"
+    },
+    "expiresIn": "Expires in",
+    "fileType": "File type",
+    "fileTypes": {
+      "detailedDonationsExport": "Detailed donations export",
+      "donationPreparation": "Donation preparation list export",
+      "donationsExport": "Donations export",
+      "donorsExport": "Donors export"
+    },
+    "filterByExpirationDate": "Filter by expiration date",
+    "filterByRequestDate": "Filter by request date",
+    "phone": "Phone",
+    "requestDate": "Request date",
+    "searchPlaceholder": "Search by File type",
+    "status": {
+      "expired": "Expired",
+      "failed": "Failed",
+      "finished": "Finished",
+      "processing": "Processing"
+    },
+    "user": "User"
+  }
+}

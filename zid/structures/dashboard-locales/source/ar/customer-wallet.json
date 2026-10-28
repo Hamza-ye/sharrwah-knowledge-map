@@ -1,0 +1,253 @@
+{
+  "activatedContent": {
+    "activatedBanner": {
+      "description": "كل رصيد يحصل عليه العميل بعد الشراء يرفع احتمالية عودته، ويساعدك على بناء ولاء أقوى بمرور الوقت.",
+      "title": "فُعّلت محفظة العميل 🎉"
+    },
+    "addOffer": "إنشاء",
+    "analytics": {
+      "cashbackRoi": "العائد على الاستثمار",
+      "cashbackRoiTooltip": "إجمالي مبيعات الطلبات المُسددة التي استُخدم فيها رصيد ({{revenue}}) مقسوم على إجمالي المكافآت الممنوحة",
+      "customersEarnedCashback": "العملاء المستفيدون",
+      "totalCashbackRewarded": "إجمالي المكافآت",
+      "totalOutstandingBalance": "إجمالي الأرصدة"
+    },
+    "customersWallets": "محافظ العملاء",
+    "deactivate": "إلغاء التفعيل",
+    "deactivateDialog": {
+      "confirm": "تأكيد الإيقاف",
+      "description": "بعد إيقاف المحفظة، سيتوقف العملاء عن كسب مكافآت جديدة، بينما يمكنهم الاستمرار في استخدام الرصيد الحالي المتوفر في محافظهم حتى يُستهلك كاملًا أو تنتهي صلاحيته.",
+      "title": "هل أنت متأكد من رغبتك في إيقاف محفظة العميل؟"
+    },
+    "earnAmount": "قيمة الكاش باك",
+    "offersTable": {
+      "reactivateTooltip": "حدّث تاريخ الانتهاء لإعادة تفعيله"
+    }
+  },
+  "amountDialog": {
+    "action": "الإجراء:",
+    "add": "إضافة",
+    "cashbackAmount": "مبلغ العملية",
+    "deduct": "خصم",
+    "title": "إنشاء عملية جديدة لـ {{name}}",
+    "transactionDescription": "وصف العملية",
+    "transactionDescriptionHelper": "يظهر هذا الوصف للعميل ضمن سجل عمليات المحفظة في المتجر.",
+    "validFor": "مدة الصلاحية"
+  },
+  "bulkAmountDialog": {
+    "partialSuccess": "نجحت {{succeeded}} عملية، وتعذّرت {{failed}} عملية.",
+    "success_few": "حُدّث رصيد المحفظة لـ {{count}} عملاء.",
+    "success_many": "حُدّث رصيد المحفظة لـ {{count}} عميلًا.",
+    "success_one": "حُدّث رصيد المحفظة لعميل واحد.",
+    "success_other": "حُدّث رصيد المحفظة لـ {{count}} عميل.",
+    "success_two": "حُدّث رصيد المحفظة لعميلين.",
+    "success_zero": "حُدّث رصيد المحفظة لـ 0 عميل.",
+    "title_few": "تحديث رصيد المحفظة لـ {{count}} عملاء",
+    "title_many": "تحديث رصيد المحفظة لـ {{count}} عميلًا",
+    "title_one": "تحديث رصيد المحفظة لعميل واحد",
+    "title_other": "تحديث رصيد المحفظة لـ {{count}} عميل",
+    "title_two": "تحديث رصيد المحفظة لعميلين",
+    "title_zero": "تحديث رصيد المحفظة لـ 0 عميل",
+    "updateBalance": "تحديث رصيد المحفظة"
+  },
+  "customersEmptyState": {
+    "cta": "إنشاء برنامج",
+    "description": "سيظهر هنا العملاء الذين يكسبون استردادًا نقديًا.",
+    "title": "أطلق برامج الاسترداد النقدي وانمِّ قاعدة عملائك."
+  },
+  "customersPage": {
+    "availableBalance": "الرصيد المتاح",
+    "description": "نظرة عامة على العملاء الذين يستخدمون برنامج محفظة العميل.",
+    "expiringAmount": "الرصيد الذي سينتهي",
+    "expiryDate": "تاريخ الانتهاء",
+    "exportCsv": "تصدير CSV",
+    "exportDialog": {
+      "allPeriods": "كل الفترات",
+      "balanceMax": "الحد الأعلى للرصيد",
+      "balanceMaxInvalid": "يجب أن يكون الحد الأعلى للرصيد أكبر من الحد الأدنى أو يساويه.",
+      "balanceMin": "الحد الأدنى للرصيد",
+      "description": "اختر العملاء الذين ستضمّنهم في ملف التصدير.",
+      "submit": "تصدير",
+      "title": "تصدير العملاء"
+    },
+    "filters": {
+      "customPeriod": "تاريخ مخصص",
+      "expiringBefore": "ينتهي قبل",
+      "expiringWithin": "الرصيد الذي سينتهي في",
+      "noResultsDescription": "لا يوجد عملاء ينتهي رصيدهم في الفترة المحددة.",
+      "selectPeriod": "اختر الفترة",
+      "withinDays_few": "{{count}} أيام",
+      "withinDays_many": "{{count}} يومًا",
+      "withinDays_one": "يوم واحد",
+      "withinDays_other": "{{count}} يوم",
+      "withinDays_two": "يومان",
+      "withinDays_zero": "{{count}} يوم"
+    },
+    "heldBalance": "الرصيد المحجوز",
+    "nextExpiryDate": "أقرب تاريخ انتهاء",
+    "pendingRewards": "المكافآت المعلّقة",
+    "title": "العملاء",
+    "totalBalance": "إجمالي الرصيد"
+  },
+  "dialog": {
+    "createNewTransaction": "إنشاء عملية جديدة",
+    "expirationDate": "تاريخ الانتهاء",
+    "goToCustomerProfile": "ملف العميل",
+    "orderNumber": "رقم الطلب",
+    "stats": {
+      "availableBalance": {
+        "label": "الرصيد المتاح",
+        "toolTip": "الرصيد المتاح للاستخدام"
+      },
+      "pendingCredit": {
+        "label": "المكافآت المعلّقة",
+        "toolTip": "مستحقات معلّقة بطلبات لم تكتمل بعد"
+      }
+    },
+    "title": "سجل عمليات {{name}}",
+    "transactionStatus": {
+      "reserved": "محجوزة",
+      "success": "ناجحة"
+    },
+    "walletTitle": "المحفظة"
+  },
+  "form": {
+    "details": {
+      "description": "حدد تفاصيل الكاش باك وآلية تطبيقه.",
+      "earnRule": {
+        "description": "يُطبَّق على مجموع المشتريات، ولا تُحتسب رسوم الشحن في الاكتساب ولا الاستبدال.",
+        "fixedAmount": "مبلغ ثابت",
+        "percentageOfTotal": "نسبة من إجمالي الطلب",
+        "title": "عرض الكاش باك"
+      },
+      "expiryDaysHelper": "تُحتسب مدة الصلاحية ابتداءً من تاريخ إنشاء الطلب.",
+      "maxCashback": "الحد الأقصى للمكافأة",
+      "minimumOrderValue": "الحد الأدنى للطلب",
+      "nameHelper": "مسمى داخلي للتتبع ولا يظهر للعملاء.",
+      "percentageAmount": "النسبة",
+      "setExpiration": "مدة صلاحية الكاش باك"
+    },
+    "editTitle": "تحديث عرض الكاش باك",
+    "overlapDialog": {
+      "confirm": "حفظ ومتابعة",
+      "description": "بعض منتجات هذا العرض مشمولة أيضًا بعروض كاش باك أخرى خلال الفترة نفسها. يمكنك مراجعة العروض أدناه قبل الحفظ، أو المتابعة وحفظ العرض.",
+      "duplicatedCategories": "التصنيفات المتكررة",
+      "duplicatedProducts": "المنتجات المتكررة",
+      "overlappingOffers": "العروض المتداخلة",
+      "title": "تداخل مع عروض أخرى"
+    },
+    "salesChannels": {
+      "description": "حدد قنوات البيع التي يُطبَّق فيها هذا العرض.",
+      "title": "قنوات البيع"
+    },
+    "scope": {
+      "applyTo": {
+        "all": "جميع المنتجات",
+        "categories": "تصنيفات محددة فقط",
+        "excludedCategories": "جميع المنتجات باستثناء تصنيفات محددة",
+        "excludedProducts": "جميع المنتجات باستثناء منتجات محددة",
+        "label": "يُطبق العرض على",
+        "products": "منتجات محددة فقط"
+      },
+      "browseCategories": "تصفح التصنيفات",
+      "browseProducts": "تصفح المنتجات",
+      "categoriesEmptyState": {
+        "description": "تصفح تصنيفاتك واختر التصنيفات التي يشملها هذا العرض.",
+        "title": "لم يتم اختيار تصنيفات"
+      },
+      "description": "حدد المنتجات أو التصنيفات التي يشملها العرض أو يستثنيها.",
+      "excludeOnSaleProducts": "استثناء المنتجات المخفضة",
+      "excludeOnSaleProductsTooltip": "لن تحصل المنتجات التي لها سعر مخفض على استرداد نقدي من هذا العرض.",
+      "overlapping": "ضمن عرض نشط آخر",
+      "productsEmptyState": {
+        "description": "تصفح منتجاتك واختر المنتجات التي يشملها هذا العرض.",
+        "title": "لم يتم اختيار منتجات"
+      },
+      "title": "نطاق العرض",
+      "unavailableProduct": "منتج غير متوفر"
+    },
+    "settings": {
+      "description": "حدد قيود الاستخدام لهذا العرض عند الحاجة.",
+      "title": "الإعدادات"
+    },
+    "summary": {
+      "expirationDays_few": "{{count}} أيام",
+      "expirationDays_many": "{{count}} يومًا",
+      "expirationDays_one": "يوم واحد",
+      "expirationDays_other": "{{count}} يوم",
+      "expirationDays_two": "يومين",
+      "expirationDays_zero": "{{count}} يوم",
+      "maxCashbackSuffix": "، بحد أقصى",
+      "mechanism": "آلية العرض",
+      "mechanismFixedPrefix": "استرداد ",
+      "mechanismFixedSuffix": " إلى محفظة العميل بعد التوصيل",
+      "mechanismPercentage": "استرداد {{percentage}}% من إجمالي الطلب إلى محفظة العميل بعد التوصيل",
+      "notSet": "لم تُحدد بعد",
+      "orderReward": "كاش باك",
+      "overlappingWarning": {
+        "content": "يوجد عرض كاش باك نشط في نفس الفترة."
+      },
+      "salesChannels": "قنوات البيع",
+      "title": "الملخص"
+    },
+    "title": "إنشاء عرض كاش باك"
+  },
+  "landing": {
+    "advantages": {
+      "automaticCashback": {
+        "description": "كافئ عميلك بعد كل طلب، حدد نسبة الكاش باك وشجّع العملاء على إتمام الشراء.",
+        "title": "كاش باك تلقائي"
+      },
+      "fullControl": {
+        "description": "حدد قواعد تمنع سوء الاستخدام: حد أقصى للكاش باك، وصلاحية محددة، وربط الاستخدام بحد أدنى للطلب.",
+        "title": "تحكم كامل في الشروط"
+      },
+      "simpleExperience": {
+        "description": "الرصيد يظهر للعميل مباشرة في صفحة الدفع ويمكنه استخدامه بسهولة في الطلبات القادمة.",
+        "title": "تجربة سهلة للعميل"
+      },
+      "walletCreditRefunds": {
+        "description": "حوّل استرجاعك لمبلغ العميل نقدًا إلى رصيد في محفظته، فتحافظ على الإيراد وترضي العميل.",
+        "title": "رصيد بدل الاسترجاع"
+      }
+    },
+    "gccOnly": "محافظ العملاء متاحة فقط لدول الخليج",
+    "hero": {
+      "description": "تساعدك محفظة العميل على تشجيع الشراء المتكرر بإضافة كاش باك أو مكافآت رصيدًا محفوظًا في حساب العميل داخل المتجر.",
+      "subscribeNow": "الاشتراك الآن",
+      "title": "محفظة العميل"
+    },
+    "subscriptions": {
+      "description": "بدون عمولة على العمليات، اشتراك شهري ثابت فقط حسب باقتك الحالية.",
+      "growth": {
+        "excludingVAT": "بدون الضريبة",
+        "label": "النمو",
+        "period": "شهرياً"
+      },
+      "professional": {
+        "label": "الاحترافية",
+        "price": "مجاناً"
+      },
+      "title": "الاشتراكات"
+    }
+  },
+  "notActivated": {
+    "activateButton": "تفعيل محفظة العميل",
+    "description": "كافئ عملاءك باسترداد نقدي على كل عملية شراء وشجعهم على العودة.",
+    "title": "محفظة العميل غير مفعّلة"
+  },
+  "rowAnalytics": {
+    "numberOfCustomers": "العملاء المستفيدون",
+    "numberOfCustomersTooltip": "عدد العملاء الذين أُضيف إلى محافظهم كاش باك من هذا العرض.",
+    "numberOfUsages": "طلبات الكاش باك",
+    "numberOfUsagesTooltip": "عدد الطلبات التي حصل العملاء مقابلها على كاش باك من هذا العرض بعد اكتمال الطلب.",
+    "totalCashback": "الكاش باك الممنوح",
+    "totalCashbackTooltip": "إجمالي مبالغ الكاش باك التي أُضيفت إلى محافظ العملاء من هذا العرض.",
+    "totalSales": "طلبات استخدمت الرصيد",
+    "totalSalesTooltip": "إجمالي قيمة الطلبات التي استُخدم فيها رصيد الكاش باك من هذا العرض، بعد خصم الرصيد."
+  },
+  "transactionsEmptyState": {
+    "description": "عمليات إضافة الرصيد وخصمه لهذا العميل ستظهر هنا.",
+    "title": "لا توجد عمليات بعد"
+  }
+}

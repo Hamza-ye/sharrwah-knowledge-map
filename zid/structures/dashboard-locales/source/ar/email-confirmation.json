@@ -1,0 +1,36 @@
+{
+  "actions": {
+    "goToDashboard": "المتابعة للرئيسية"
+  },
+  "body": {
+    "confirmationFailed": "تعذر تأكيد الطلب. حاول مرة أخرى.",
+    "farewell": "تتمنى لك يومًا سعيدًا",
+    "greeting": "هلا والله بتاجرنا {{merchantName}}",
+    "notificationNote": "هذه الصفحة لغرض التنبيه، يمكنك الخروج منها بعد مشاهدتها 💜",
+    "redirectingIn": "ستُحوَّل إلى الرئيسية بعد {{seconds}} ثانية"
+  },
+  "footer": {
+    "copyright_part1": "© زد القابضة",
+    "copyright_part2": "الرياض، المملكة العربية السعودية",
+    "helpCenter": "مركز المساعدة",
+    "privacyPolicy": "سياسة الخصوصية"
+  },
+  "invalidLink": {
+    "description": "هذا الرابط غير صالح أو انتهت صلاحيته. اطلب رابطًا جديدًا.",
+    "title": "الرابط غير صالح"
+  },
+  "types": {
+    "email_update": {
+      "successMessage": "حُدّث البريد الإلكتروني ✅"
+    },
+    "phone_update": {
+      "successMessage": "حُدّث رقم الجوال ✅"
+    },
+    "team_member_approval": {
+      "successMessage": "أُضيف العضو ✅"
+    },
+    "verify-email": {
+      "successMessage": "وُثّق البريد الإلكتروني ✅"
+    }
+  }
+}

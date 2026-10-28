@@ -1,0 +1,16 @@
+{
+  "columns": {
+    "amount": "المبلغ",
+    "bnpl": "طريقة الدفع",
+    "date": "التاريخ",
+    "netAmount": "صافي المبلغ",
+    "payoutBank": "بنك المدفوعات",
+    "payoutFees": "رسوم الدفع",
+    "payoutNumber": "رقم العملية",
+    "time": "الوقت"
+  },
+  "emptyState": {
+    "title": "ستظهر مدفوعاتك هنا"
+  },
+  "title": "الإيداعات"
+}

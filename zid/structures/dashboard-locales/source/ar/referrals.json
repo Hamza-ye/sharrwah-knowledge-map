@@ -1,0 +1,324 @@
+{
+  "activateCashback": "فعّل <l>استرداد النقود في المحفظة</l> لإعداد المكافأة.",
+  "activateCashbackLoyalty": "فعّل <l0>استرداد النقود في المحفظة</l0> أو <l1>برنامج الولاء</l1> لإعداد المكافأة.",
+  "activateLoyalty": "فعّل <l>برنامج الولاء</l> لإعداد المكافأة.",
+  "activated": {
+    "editSettings": "تعديل الإعدادات",
+    "overview": "نظرة عامة",
+    "steps": {
+      "friendGetsDiscount": "يحصل الصديق على خصم بقيمة <value/>",
+      "friendGetsInstantCashback": "يحصل الصديق على كاش باك بقيمة {{value}}",
+      "friendGetsPoints": "يحصل الصديق على <reward/>",
+      "friendGetsReward": "يحصل الصديق على مكافأة",
+      "friendPlacesOrder": "يبدأ الصديق طلبًا من متجرك",
+      "friendPlacesOrderWithMin": "يبدأ الصديق طلبًا بحد أدنى <amount/>",
+      "orderCompleted": "يُوصَّل الطلب",
+      "orderCompletedWithCooling_few": "يُوصَّل الطلب مع فترة انتظار {{count}} أيام",
+      "orderCompletedWithCooling_many": "يُوصَّل الطلب مع فترة انتظار {{count}} يومًا",
+      "orderCompletedWithCooling_one": "يُوصَّل الطلب مع فترة انتظار يوم واحد",
+      "orderCompletedWithCooling_other": "يُوصَّل الطلب مع فترة انتظار {{count}} يوم",
+      "orderCompletedWithCooling_two": "يُوصَّل الطلب مع فترة انتظار يومين",
+      "orderCompletedWithCooling_zero": "يُوصَّل الطلب مع فترة انتظار {{count}} يوم",
+      "orderCreated": "يُنشأ الطلب",
+      "orderCreatedWithCooling_few": "يُنشأ الطلب مع فترة انتظار {{count}} أيام",
+      "orderCreatedWithCooling_many": "يُنشأ الطلب مع فترة انتظار {{count}} يومًا",
+      "orderCreatedWithCooling_one": "يُنشأ الطلب مع فترة انتظار يوم واحد",
+      "orderCreatedWithCooling_other": "يُنشأ الطلب مع فترة انتظار {{count}} يوم",
+      "orderCreatedWithCooling_two": "يُنشأ الطلب مع فترة انتظار يومين",
+      "orderCreatedWithCooling_zero": "يُنشأ الطلب مع فترة انتظار {{count}} يوم",
+      "referrerGetsCashback": "يحصل الداعي على كاش باك بقيمة <value/>",
+      "referrerGetsCashbackOnDay_few": "يحصل الداعي على كاش باك بقيمة <value/> بعد {{count}} أيام",
+      "referrerGetsCashbackOnDay_many": "يحصل الداعي على كاش باك بقيمة <value/> بعد {{count}} يومًا",
+      "referrerGetsCashbackOnDay_one": "يحصل الداعي على كاش باك بقيمة <value/> بعد يوم",
+      "referrerGetsCashbackOnDay_other": "يحصل الداعي على كاش باك بقيمة <value/> بعد {{count}} يوم",
+      "referrerGetsCashbackOnDay_two": "يحصل الداعي على كاش باك بقيمة <value/> بعد يومين",
+      "referrerGetsCashbackOnDay_zero": "يحصل الداعي على كاش باك بقيمة <value/> بعد {{count}} يوم",
+      "referrerGetsPoints": "يحصل الداعي على <reward/>",
+      "referrerGetsPointsOnDay_few": "يحصل الداعي على <reward/> بعد {{count}} أيام",
+      "referrerGetsPointsOnDay_many": "يحصل الداعي على <reward/> بعد {{count}} يومًا",
+      "referrerGetsPointsOnDay_one": "يحصل الداعي على <reward/> بعد يوم",
+      "referrerGetsPointsOnDay_other": "يحصل الداعي على <reward/> بعد {{count}} يوم",
+      "referrerGetsPointsOnDay_two": "يحصل الداعي على <reward/> بعد يومين",
+      "referrerGetsPointsOnDay_zero": "يحصل الداعي على <reward/> بعد {{count}} يوم",
+      "referrerGetsReward": "يحصل الداعي على مكافأة",
+      "rewardMaxAmount": "، بحد أقصى <amount/>",
+      "sharesCode": "يشارك العميل كود الدعوة مع صديق",
+      "sharesLink": "يشارك العميل رابط الدعوة مع صديق",
+      "sharesLinkAndCode": "يشارك العميل رابط الدعوة أو كود الدعوة مع صديق"
+    }
+  },
+  "activatedBanner": {
+    "description": "اكتشف الإمكانيات الكاملة للبرنامج بإعلام عملائك أنهم يستطيعون البدء في الكسب.",
+    "learnMore": "تعرف على آلية عمل برنامج الدعوات",
+    "title": "فُعّل برنامج الدعوات 🎉"
+  },
+  "deactivateConfirmation": "هل أنت متأكد من إيقاف برنامج الدعوات مؤقتًا؟ ستستمر معالجة المكافآت المعلّقة الحالية، لكن لن تعمل روابط دعوة جديدة.",
+  "ineligibilityReasons": "أسباب عدم الأهلية",
+  "ineligibilityReasons_first_touch_lost": "نُسبت دعوة أخرى إلى العميل أولاً.",
+  "ineligibilityReasons_invalid_code": "كود الدعوة غير صالح.",
+  "ineligibilityReasons_min_order_not_met": "إجمالي الطلب أقل من الحد الأدنى لقيمة الطلب في البرنامج.",
+  "ineligibilityReasons_not_first_order": "ليس الطلب الأول للصديق المدعو.",
+  "ineligibilityReasons_program_inactive": "برنامج الدعوات كان غير مفعّل.",
+  "ineligibilityReasons_referrer_max_total_reached": "بلغ الداعي الحد الأقصى للمكافآت مدى الحياة من جميع المدعوين.",
+  "ineligibilityReasons_referrer_per_referee_max_exceeded": "بلغ الداعي الحد الأقصى للمكافآت لهذا المدعو.",
+  "ineligibilityReasons_referrer_revoked": "أُلغي كود الداعي.",
+  "ineligibilityReasons_reward_not_configured": "لا توجد قيمة مكافأة مُعدّة في لقطة البرنامج.",
+  "ineligibilityReasons_self_referral": "استخدم العميل كود دعوته.",
+  "ineligibilityReasons_zero_loyalty_points": "تحوّلت المكافأة إلى صفر نقطة ولاء.",
+  "ineligibilityReasons_zero_reward_amount": "كانت قيمة المكافأة المحسوبة صفرًا.",
+  "landing": {
+    "label": "برنامج الدعوات"
+  },
+  "loyaltyReward": {
+    "fixed": "<value/> بما يعادل {{points}} نقطة ولاء مقابل كل <amount/>",
+    "percentage": "{{rate}}% بما يعادل {{points}} نقطة ولاء مقابل كل <amount/>"
+  },
+  "notActivate": {
+    "alert": {
+      "action": "برنامج الولاء",
+      "description": "يجب تفعيل برنامج الولاء قبل تمكين برنامج الدعوات لمكافأة النقاط."
+    },
+    "benefits": {
+      "1": "الإحالات تحقق معدل تحويل 4.2% مقابل 1.1% للإعلانات المدفوعة.",
+      "2": "المكافآت المزدوجة تزيد نسبة مشاركة متجرك بـ 20%.",
+      "3": "تكلفة العميل المُحال أقل بـ 40% من البحث المدفوع."
+    },
+    "cashbackAlert": {
+      "action": "استرداد النقود في المحفظة",
+      "description": "فعّل استرداد النقود في المحفظة لإعداد مكافآت الكاش باك في برنامج الدعوات."
+    },
+    "description": "العميل اللي يجي بتوصية من صديق يشتري أكثر ويبقى أطول. فعّل دعوات العملاء: كل عميل ياخذ كود أو رابط خاص فيه، ولما يجيب صديق ويكمل طلبه، الطرفين يكسبون.",
+    "mainAdvantages": {
+      "card1": {
+        "description": "كل عميل عندك يحصل على كود إحالة مربوط بحسابه بدون أي إعداد يدوي. الكود يظهر له في صفحة تأكيد الطلب مباشرة، وهي أفضل لحظة يكون فيها متحمّس لتوصية متجرك ويرفع معدل المشاركة بأكثر من ٣٠٪.",
+        "title": "فعّله في دقايق، وحوّل عملاءك لمسوّقين تلقائيًا"
+      },
+      "card2": {
+        "description": "كاش باك بنسبة من قيمة الطلب أو مبلغ ثابت أو نقاط ولاء مخصصة للمُحيل ولصديقه. والأهم: تحدد متى تُصرف المكافأة (عند إنشاء الطلب أو بعد التسليم) مع فترة تجميد تحميك من الاسترجاع.",
+        "title": "أنت اللي تحدد قيمة المكافأة ومتى تُصرف"
+      },
+      "card3": {
+        "description": "كشف الاحتيال في الإحالات هو الجانب الأكثر إهمالًا، ويتسبب في انهيار معدل التحويل وتضخم فاتورة المكافآت. حدد حدًا أدنى لقيمة الطلب، وخصص المكافأة لأول طلب للعميل الجديد فقط، وأضف حدًا لعدد الإحالات.",
+        "title": "شروط تحميك من الاستغلال"
+      },
+      "card4": {
+        "description": "لوحة تحكم تعرض آخر الإحالات وأفضل المُحيلين ومؤشرات الأداء، وتفاصيل الإحالة تظهر داخل ملف العميل وصفحة الطلب. وعملاؤك يوصلهم إشعار لحظة صرف مكافأتهم.",
+        "title": "كل شيء موثّق ومربوط ببيانات متجرك"
+      },
+      "title": "المميزات الأساسية"
+    },
+    "title": "توصية صديق تبيع أكثر من أي إعلان"
+  },
+  "pointsConfig": "إعدادات نقاط الولاء",
+  "pointsMode": {
+    "custom": "تحديد قيمة مخصصة",
+    "inherit": "الاعتماد على إعدادات برنامج الولاء"
+  },
+  "preview": {
+    "capPerFriend": "الحد لكل صديق:",
+    "capTotal": "الحد الأقصى للدعوات:",
+    "coolingPeriod": "فترة الانتظار:",
+    "daysCount_few": "{{count}} أيام",
+    "daysCount_many": "{{count}} يومًا",
+    "daysCount_one": "{{count}} يوم",
+    "daysCount_other": "{{count}} يوم",
+    "daysCount_two": "يومان",
+    "daysCount_zero": "{{count}} يوم",
+    "discount": "خصم",
+    "discountCode": "كود الخصم",
+    "enabled": "مفعّل",
+    "firstOrderOnly": "الطلب الأول فقط:",
+    "friendGets": "يحصل الصديق على:",
+    "maxAmount": "الحد الأقصى:",
+    "minOrderValue": "الحد الأدنى للطلب:",
+    "noReward": "بدون مكافأة",
+    "notSetYet": "لم يُعيَّن بعد",
+    "onlineStore": "المتجر الإلكتروني",
+    "orderCompleted": "اكتمال الطلب",
+    "orderCreated": "إنشاء الطلب",
+    "referralCode": "كود المشاركة:",
+    "referralLink": "رابط المشاركة:",
+    "referralsCount_few": "{{count}} دعوات",
+    "referralsCount_many": "{{count}} دعوةً",
+    "referralsCount_one": "دعوة واحدة",
+    "referralsCount_other": "{{count}} دعوة",
+    "referralsCount_two": "دعوتان",
+    "referralsCount_zero": "{{count}} دعوة",
+    "referrerGets": "يحصل الداعي على:",
+    "releasePolicy": "سياسة الإصدار:",
+    "reward": "المكافأة:",
+    "rewardExpiry": "مدة الصلاحية:",
+    "salesChannels": "قنوات البيع",
+    "settings": "الإعدادات",
+    "sharableLink": "رابط قابل للمشاركة",
+    "sharingOptions": "خيارات المشاركة",
+    "timesCount_few": "{{count}} مرات",
+    "timesCount_many": "{{count}} مرةً",
+    "timesCount_one": "مرة واحدة",
+    "timesCount_other": "{{count}} مرة",
+    "timesCount_two": "مرتان",
+    "timesCount_zero": "{{count}} مرة",
+    "title": "الملخص",
+    "walletCashback": "استرداد نقدي للمحفظة"
+  },
+  "programActivatedSuccessfully": "فُعّل برنامج الدعوات",
+  "programDeactivatedSuccessfully": "أُلغي تفعيل برنامج الدعوات",
+  "programSavedSuccessfully": "حُفظ برنامج الدعوات",
+  "refereeReward": {
+    "rewardType": {
+      "label": "نوع المكافأة",
+      "loyaltyPoints": "نقاط ولاء",
+      "none": "بدون مكافأة",
+      "orderDiscount": "خصم على الطلب",
+      "walletCashback": "كاش باك للمحفظة"
+    },
+    "rewardValue": {
+      "fixedAmount": "مبلغ ثابت",
+      "fixedPrice": "سعر ثابت",
+      "label": "قيمة المكافأة",
+      "maxAmount": "الحد الأقصى",
+      "percentage": "النسبة",
+      "percentageAmount": "نسبة من إجمالي الطلب"
+    },
+    "subtitle": "حدّد المكافأة التي يحصل عليها الصديق المدعو.",
+    "title": "مكافأة الصديق",
+    "titleSuffix": "(اختيارية، يُنصح بها)"
+  },
+  "referrerReward": {
+    "limits": {
+      "capPerFriend": {
+        "helper": "عند الإيقاف، يُمنح الداعي مكافأة عن كل إعادة طلب من الصديق نفسه.",
+        "suffix": "طلبات لكل صديق",
+        "title": "حدّ المكافآت لكل صديق"
+      },
+      "capTotal": {
+        "helper": "عند الإيقاف، يمكن للداعي دعوة عدد غير محدود من الأصدقاء.",
+        "suffix": "إجمالي الدعوات",
+        "title": "حدّ إجمالي الدعوات"
+      },
+      "firstOrderOnly": {
+        "description": "كافئ الداعي على أول طلب للصديق فقط.",
+        "title": "الطلب الأول فقط"
+      },
+      "label": "الشروط"
+    },
+    "loyaltyPointsAlert": {
+      "linkText": "برنامج الولاء",
+      "posLabel": "الشراء من كاشير زد",
+      "ruleEnd": "نقطة",
+      "ruleMiddle": "يكسب",
+      "ruleStart": "كل",
+      "storeLabel": "الشراء من المتجر",
+      "title": "تتبع قيمة مكافأة نقاط الولاء القواعد نفسها المُعدة في"
+    },
+    "rewardType": {
+      "label": "نوع المكافأة",
+      "loyaltyPoints": "نقاط ولاء",
+      "walletCashback": "كاش باك للمحفظة"
+    },
+    "rewardValue": {
+      "every": "كل",
+      "fixedAmount": "مبلغ ثابت",
+      "fixedPrice": "سعر ثابت",
+      "label": "قيمة المكافأة",
+      "maxAmount": "الحد الأقصى",
+      "percentage": "نسبة مئوية",
+      "percentageAmount": "نسبة من إجمالي الطلب",
+      "wins": "يربح"
+    },
+    "subtitle": "حدّد المكافأة التي يحصل عليها الداعي.",
+    "title": "مكافأة الداعي"
+  },
+  "rewardTypes": "أنواع المكافآت",
+  "rewardTypes_loyalty_points": "نقاط ولاء",
+  "rewardTypes_wallet_cashback": "كاش باك",
+  "settings": {
+    "coolingPeriod": {
+      "helper": "الحد الأقصى 90 يومًا. يُحتفظ بالمكافأة هذه المدة قبل إضافتها إلى محفظة الداعي والصديق.",
+      "title": "فترة الانتظار"
+    },
+    "minOrderValue": {
+      "title": "الحد الأدنى لقيمة الطلب"
+    },
+    "releasePolicy": {
+      "label": "سياسة الإصدار (مرحلة الطلب)",
+      "orderCompleted": "عند اكتمال الطلب",
+      "orderCreated": "عند إنشاء الطلب"
+    },
+    "rewardExpiry": {
+      "title": "فترة انتهاء صلاحية المكافأة"
+    },
+    "subtitle": "تحكّم في صلاحية المكافآت وشروطها.",
+    "title": "الإعدادات"
+  },
+  "sharingOptions": {
+    "infoAlert": "تُنشأ الأكواد والروابط تلقائيًا بعد عملية شراء مؤكدة أو زيارة العميل للملف الشخصي. يمكنك أيضًا إنشاؤها يدويًا بعد التفعيل من صفحة العميل.",
+    "referralCode": {
+      "description": "يُنشأ كود فريد لكل عميل. مثال: REF-870912",
+      "prefixHelper": "{{current}}/{{max}} حرف",
+      "prefixLabel": "رمز الكود",
+      "title": "كود المشاركة"
+    },
+    "referralLink": {
+      "description": "يُنشأ رابط فريد لكل عميل. مثال: osama.zid.store/ref/REF-679062",
+      "title": "رابط المشاركة"
+    },
+    "selectLabel": "اختر كيفية مشاركة المستخدم للدعوة:",
+    "subtitle": "اختر طريقة مشاركة الدعوات. يمكن تفعيل الطريقتين معًا.",
+    "title": "خيارات المشاركة"
+  },
+  "stats": {
+    "conversionRate": "معدل التحويل",
+    "revenueFromReferred": "الإيرادات من المدعوين",
+    "successfulReferrals": "الدعوات الناجحة",
+    "totalReferrals": "إجمالي الدعوات"
+  },
+  "statuses": {
+    "active": "نشط",
+    "pending": "قيد الانتظار",
+    "rejected": "مرفوض",
+    "released": "تم الإطلاق",
+    "revoked": "غير نشط",
+    "rewarded": "تمت المكافأة",
+    "voided": "ملغي"
+  },
+  "table": {
+    "columns": {
+      "code": "الكود",
+      "createdDate": "تاريخ الإنشاء",
+      "createdTime": "وقت الإنشاء",
+      "customerName": "اسم العميل",
+      "orderNumber": "رقم الطلب",
+      "refereeReward": "مكافأة الصديق",
+      "referredCustomer": "العميل المدعو",
+      "referrer": "الداعي",
+      "referrerReward": "مكافأة الداعي",
+      "rewardStatus": "حالة المكافأة",
+      "rewardType": "نوع المكافأة",
+      "successfulReferrals": "الدعوات الناجحة",
+      "totalRewards": "إجمالي المكافآت",
+      "totalSales": "إجمالي المبيعات"
+    },
+    "customerEmptyStateDescription": "الدعوات التي يرسلها هذا العميل ومكافآتها ستظهر هنا",
+    "customerLinks": "العملاء والروابط",
+    "emptyStateDescription": "عندما يبدأ العملاء بدعوة أصدقائهم، ستظهر دعواتهم هنا",
+    "emptyStateTitle": "لا توجد دعوات بعد",
+    "logs": "سجلات الدعوات"
+  },
+  "validation": {
+    "amountGreaterThanZero": "يجب أن يكون المبلغ أكبر من 0",
+    "atLeastOneRedemptionMethod": "يجب تفعيل طريقة استرجاع واحدة على الأقل",
+    "atLeastOneRewardEnabled": "يجب تفعيل نوع مكافأة واحد على الأقل",
+    "capPerFriendRange": "أدخل قيمة بين 1 و50",
+    "capTotalGreaterThanZero": "أدخل قيمة أكبر من 0",
+    "codePrefixFormat": "استخدم حتى 8 أحرف أو أرقام فقط",
+    "codePrefixRequired": "بادئة الرمز مطلوبة",
+    "coolingRange": "أدخل قيمة بين 0 و90 يومًا",
+    "expiryRange": "أدخل قيمة بين 1 و365 يومًا",
+    "minOrderGreaterThanZero": "أدخل قيمة أكبر من 0",
+    "percentageRange": "أدخل نسبة بين 1 و100",
+    "pointsInteger": "يجب أن تكون النقاط رقمًا صحيحًا",
+    "pointsMin": "يجب ألا تقل النقاط عن 1",
+    "pointsRequired": "النقاط مطلوبة"
+  }
+}

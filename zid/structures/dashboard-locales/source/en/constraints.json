@@ -1,0 +1,107 @@
+{
+  "columns": {
+    "conditions": "Number of conditions",
+    "name": "Constraint name",
+    "paymentOptions": "Number of payment options",
+    "shippingOptions": "Number of shipping options"
+  },
+  "condition": "Condition",
+  "conditions": "Conditions",
+  "create": "Create constraint",
+  "created": "Constraint created successfully",
+  "deleteConfirm": "Are you sure you want to delete this constraint?",
+  "deleted": "Constraint deleted successfully",
+  "form": {
+    "activate": "Activate constraint",
+    "conditions": {
+      "add": "Add condition",
+      "cartTotal": {
+        "max": "Cart maximum price",
+        "min": "Cart minimum price"
+      },
+      "cartWeight": {
+        "max": "Cart maximum weight",
+        "min": "Cart minimum weight"
+      },
+      "coupon": {
+        "hideAll": "Specific discount codes",
+        "hideExcept": "All discount codes except specific discount codes",
+        "label": "Coupons"
+      },
+      "customerCancelledOrdersCount": "Customer cancelled orders is equal to or more than",
+      "customerGroups": {
+        "hideAll": "Specific customer groups",
+        "hideExcept": "All customer groups except specific customer group",
+        "label": "Customer groups"
+      },
+      "customerIncompleteCodOrdersCount": "Customer incomplete COD orders is equal to or more than",
+      "customerIncompleteOrdersCount": "Customer incomplete orders is equal to or more than",
+      "customerLocations": {
+        "hideAll": "Specific country and city",
+        "hideExcept": "All countries and cities except specific country or city"
+      },
+      "customerOrdersCount": "Customer total orders is equal to or less than",
+      "description": "To apply the constraint, all conditions must be met at the checkout page.",
+      "orderTime": {
+        "days": "Selected days",
+        "daysList": "Choose specific days on which the condition occurs",
+        "hours": "Selected hours",
+        "hoursEnd": "End time of the condition",
+        "hoursStart": "Start time of the condition"
+      },
+      "product": {
+        "addProduct": "Add product",
+        "hideAll": "Specific products",
+        "hideExcept": "All products except specific products"
+      },
+      "productCategory": {
+        "addCategory": "Add category",
+        "hideAll": "Specific categories",
+        "hideExcept": "All categories except specific categories"
+      },
+      "productQuantity": {
+        "max": "Products maximum quantity",
+        "min": "Products minimum quantity"
+      },
+      "productType": {
+        "hideAll": "Specific product type",
+        "hideExcept": "All product types except specific product type",
+        "label": "Product type"
+      },
+      "saleChannel": {
+        "hideAll": "Specific sales channel ",
+        "hideExcept": "All sales channels except specific sales channel",
+        "label": "Sale channels"
+      },
+      "title": "Conditions"
+    },
+    "customMessage": {
+      "addMessage": "أدخل رسالة الخطأ هنا",
+      "addMessage_ar": "أدخل رسالة الخطأ هنا",
+      "addMessage_en": "Enter your error message here",
+      "description": "Showing a customized error message for the customer at the checkout page if there is no available shipping or payment methods due to the constraint.",
+      "switchLabel": "Enable custom message",
+      "title": "Custom error message"
+    },
+    "payments": {
+      "description": "Determine the payment options you wish to customize conditions for",
+      "name": "Constraint name",
+      "options": "Payment options",
+      "title": "Payment options",
+      "tooltip": "Choose the payment methods you want to hide from checkout page if all conditions applied."
+    },
+    "shipping": {
+      "description": "Determine the shipping companies you wish to customize conditions for",
+      "name": "Constraint name",
+      "options": "Shipping options",
+      "title": "Shipping options",
+      "tooltip": "Choose the shipping methods you want to hide from checkout page if all conditions applied."
+    }
+  },
+  "payment": "Payment constraints",
+  "search": "Search by constraint name",
+  "shipping": "Shipping constraints",
+  "store": "Store",
+  "storeApp": "Store app",
+  "updated": "Constraint updated successfully"
+}

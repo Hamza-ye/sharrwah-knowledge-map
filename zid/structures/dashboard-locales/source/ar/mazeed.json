@@ -1,0 +1,267 @@
+{
+  "activationSuccess": {
+    "description": "بمجرد الموافقة عليها، ستظهر على مزيد.",
+    "message": "أُرسلت منتجاتك للمراجعة!",
+    "title": "اكتمل ربط مزيد!"
+  },
+  "bankAccount": {
+    "alert": {
+      "button": "إضافة حساب بنكي",
+      "content": "تفاصيل حسابك البنكي ضرورية لاستلام التحصيلات المالية من مزيد.",
+      "title": "أضف حسابك البنكي"
+    }
+  },
+  "dashboard": {
+    "exportAllTransactions": "تصدير جميع المعاملات",
+    "financialDues": "المستحقات المالية",
+    "orders": "الطلبات",
+    "products": "المنتجات",
+    "settings": "الإعدادات",
+    "viewAll": "عرض الكل"
+  },
+  "orders": {
+    "cards": {
+      "mazeedTotalRequests": "إجمالي طلبات مزيد",
+      "totalSalesViaMazeed": "إجمالي المبيعات في مزيد",
+      "yourAverageRatingFromRatings_few": "متوسط تقييمك من {{count}} تقييمات",
+      "yourAverageRatingFromRatings_many": "متوسط تقييمك من {{count}} تقييماً",
+      "yourAverageRatingFromRatings_one": "متوسط تقييمك من تقييم واحد",
+      "yourAverageRatingFromRatings_other": "متوسط تقييمك من {{count}} تقييم",
+      "yourAverageRatingFromRatings_two": "متوسط تقييمك من تقييمين",
+      "yourAverageRatingFromRatings_zero": "متوسط تقييمك من 0 تقييم"
+    }
+  },
+  "products": {
+    "addToMazeed": "إضافة إلى مزيد",
+    "applicationStatusSuccess": "موافق عليه",
+    "bulkActions": {
+      "add": "إضافة إلى مزيد",
+      "hide": "إخفاء المنتجات",
+      "show": "إظهار المنتجات"
+    },
+    "columns": {
+      "afterTax": "(بعد الضريبة)",
+      "beforeTax": "(قبل الضريبة)",
+      "orderNumber": "رقم الطلب",
+      "productAcceptanceStatus": "حالة الموافقة",
+      "productAppearanceStatus": "العرض في المتجر",
+      "productName": "اسم المنتج",
+      "sku": "رمز المنتج (SKU)",
+      "taxPercentage": "الضريبة (15%)"
+    },
+    "displayed": "ظاهر",
+    "filters": {
+      "added": "مُضاف إلى مزيد",
+      "all": "الكل",
+      "approvalStatus": "حالة القبول",
+      "approved": "مقبول",
+      "category": "التصنيف",
+      "displayStatus": "حالة العرض",
+      "hidden": "مخفي",
+      "inStock": "متوفر",
+      "max": "الحد الأعلى",
+      "min": "الحد الأدنى",
+      "outOfStock": "غير متوفر",
+      "priceRange": "نطاق السعر",
+      "productDetails": "تفاصيل المنتج",
+      "productStatus": "حالة المنتج",
+      "range": "نطاق",
+      "rejected": "مرفوض",
+      "shown": "معروض",
+      "stockQuantity": "كمية المخزون",
+      "underReview": "قيد المراجعة"
+    },
+    "hidden": "مخفي",
+    "inReview": "قيد المراجعة",
+    "info": {
+      "imageQuality": "جودة الصور",
+      "imageQualityDescription": "صورة بمقاس 2024×2024 بكسل وجودة لا تقل عن 72 بكسل، والصيغ المقبولة: JPG وPNG",
+      "imagesBackground": "خلفية الصور",
+      "imagesBackgroundDescription": "يفضَّل أن تكون الصورة بخلفية بيضاء بسيطة خالية من الشعارات والعبارات الإضافية، لتمنحها مظهرًا أوضح وأكثر احترافية",
+      "improveContent": "تعزيز معلومات المنتج",
+      "improveContentDescription": "إضافة وصف وكلمات مفتاحية، و3 صور على الأقل لكل منتج",
+      "title": "لضمان قبول منتجاتك وعرضها لملايين العملاء، تأكد من هذه المعايير"
+    },
+    "notAccepted": "غير مقبول"
+  },
+  "settings": {
+    "advancedSettings": "الإعدادات المتقدمة",
+    "displayMazeedLinkInSMS": "عرض رابط مزيد في الرسائل النصية",
+    "form": {
+      "additionalServices": "الخدمات الإضافية تشمل رسوم التشغيل",
+      "additionalServicesDescription": "بناءً على فئة متجرك ({{category}})، تُطبق عمولة {{commission}}%. وستُخصم رسوم إضافية من كل طلب.",
+      "bankInfo": "معلومات البنك",
+      "bankInfoDescription": "ستُحوَّل مستحقات مزيد إلى هذا الحساب البنكي",
+      "bankName": "اسم البنك",
+      "beneficiaryName": "اسم المستفيد",
+      "commercialName": "الاسم التجاري",
+      "commercialNameHelperText": "الاسم كما هو موضح في الشهادة. سيظهر هذا الاسم في الفواتير",
+      "commercialRegistrationNumber": "رقم السجل التجاري",
+      "customerRepEmail": "البريد الإلكتروني لخدمة العملاء",
+      "customerRepMobile": "رقم هاتف خدمة العملاء",
+      "discardChanges": "تجاهل التغييرات",
+      "establishment": "مؤسسة",
+      "freelancerCertificate": "شهادة العمل الحر",
+      "ibanInvalid": "رقم الآيبان غير صحيح",
+      "ibanNumber": "رقم الآيبان",
+      "ibanValid": "رقم الآيبان صحيح",
+      "individual": "فرد",
+      "mazeedServices": "خدمات مزيد تشمل الرسوم التشغيلية",
+      "mazeedServicesDescription": "بناءً على تصنيف متجرك {{service}}، فرسوم العمولة {{commission}}%، ويخصم مزيد رسوم العمولة من كل طلب",
+      "operationCoordinatorInfo": "معلومات منسق العمليات",
+      "opsEmail": "البريد الإلكتروني لمسؤول العمليات",
+      "opsName": "اسم مسؤول العمليات",
+      "opsPhoneNumber": "رقم هاتف مسؤول العمليات",
+      "opsResponsible": "منسق العمليات مسؤول كذلك عن العمليات",
+      "opsResponsibleDescription": "يتولى فريق العمليات متابعة المشكلات والتذاكر مع فريق مزيد",
+      "ownerEmail": "البريد الإلكتروني لصاحب المتجر",
+      "ownerInfo": "معلومات المالك",
+      "ownerName": "اسم المالك",
+      "ownerPhoneNumber": "رقم هاتف صاحب المتجر",
+      "ownerResponsible": "صاحب المتجر مسؤول كذلك عن العمليات",
+      "ownerResponsibleDescription": "يتولى فريق العمليات متابعة المشكلات والتذاكر مع فريق مزيد",
+      "pleaseSelectBankAccount": "اختر حسابك البنكي",
+      "storeBio": "وصف المتجر",
+      "storeCategory": "تصنيف المتجر",
+      "storeEmail": "البريد الإلكتروني للمتجر",
+      "storeInfo": "معلومات المتجر",
+      "storeInfoDescription": "رسالة مخصصة لتغييرات الحالة. إذا لم تُعيَّن، فسيُرسل إشعار الطلب الافتراضي.",
+      "storeLogoArabic": "شعار المتجر باللغة العربية",
+      "storeLogoEnglish": "شعار المتجر باللغة الإنجليزية",
+      "storeName": "اسم المتجر",
+      "storeNameHelperText": "سيظهر هذا الاسم في تطبيق مزيد",
+      "taxNumber": "الرقم الضريبي",
+      "taxNumberHelperText": "سيظهر هذا الرقم في تطبيق مزيد",
+      "withCommercialNumber": "برقم السجل التجاري",
+      "withFreelancerCertificate": "بشهادة العمل الحر"
+    },
+    "sendAbandonedCartNotifications": "إرسال إشعارات السلات المتروكة",
+    "showInCustomerProfile": "عرض مزيد في ملف العميل",
+    "showInEmails": "عرض مزيد في رسائل البريد الإلكتروني",
+    "showInOrderPage": "عرض مزيد في صفحة الطلب",
+    "showInSuccessPage": "عرض مزيد في صفحة النجاح",
+    "title": "تخصيص عرض مزيد داخل المتجر"
+  },
+  "settlementInvoice": {
+    "buyerInfo": "بيانات المشتري",
+    "invoiceCreatedDate": "تاريخ إنشاء الفاتورة",
+    "invoiceNumber": "رقم الفاتورة",
+    "marketplaceCompanyName": "شركة القدرة التقنية لتقنية المعلومات والاتصالات (شركة شخص واحد)",
+    "priceDetails": "تفاصيل الأسعار",
+    "sellerInfo": "بيانات البائع",
+    "shippingFee": "رسوم الشحن",
+    "title": "فاتورة تسوية"
+  },
+  "settlements": {
+    "alert": {
+      "button": "عرض في محفظة زد",
+      "content": "تنبيه بسيط: الفواتير القديمة ما راح تكون متاحة بعد الآن، لكن تقدر تلاقي كل فواتيرك الجديدة مباشرة في محفظة زد.",
+      "title": "نقلنا تسوياتك إلى محفظة زد لتجربة أسهل وأفضل!"
+    },
+    "latestTransactions": {
+      "columns": {
+        "date": "التاريخ",
+        "numberOfOrders": "عدد الطلبات",
+        "operationType": "نوع العملية",
+        "processStatus": "حالة المعالجة",
+        "totalAmount": "المبلغ الإجمالي",
+        "transactionNumber": "رقم المعاملة"
+      },
+      "statuses": {
+        "canceled": "ملغي",
+        "pending": "معلّقة",
+        "success": "ناجحة"
+      },
+      "title": "أحدث العمليات",
+      "transferOfDues": "تحويل المستحقات"
+    },
+    "moneyDuesWithinMazeed": {
+      "currentBalance": "الرصيد الحالي",
+      "depositInProcess": "الإيداع قيد المعالجة",
+      "lastDeposit": "آخر إيداع"
+    },
+    "settingsNote": {
+      "button": "عرض التسويات هنا",
+      "content": "حتى تصبح محفظة زد متاحة في منطقتك، يمكنك الاستمرار في الوصول إلى تسوياتك من هذه الصفحة. بمجرد توفر المحفظة، ستظهر جميع الفواتير الجديدة هناك تلقائيًا.",
+      "title": "هل تبحث عن تسوياتك؟"
+    }
+  },
+  "status": {
+    "applyAgain": "التقديم مجدداً",
+    "blocked": "محظور",
+    "inReview": "حالة طلبك للانضمام إلى مزيد قيد المراجعة",
+    "notAvailableCategory": "تصنيف متجرك غير مدعوم في مزيد حاليًا، تأكد من تصنيف المتجر وعاود لاحقًا",
+    "rejected": "حالة طلبك للانضمام إلى مزيد: مرفوض",
+    "rejectedBadge": "مرفوض",
+    "rejectedFixIssues": "أصلح المشكلات قبل التقديم مرة أخرى",
+    "underReview": "قيد المراجعة"
+  },
+  "welcomeDashboard": {
+    "activateMazeedNow": "تفعيل مزيد الآن",
+    "activationSent": "أُرسل طلب التفعيل",
+    "downloadCard": {
+      "description": "جرّب التطبيق، فهو متاح الآن للتحميل",
+      "title": "تحميل تطبيق مزيد"
+    },
+    "frequentlyAskedQuestions": {
+      "questions": {
+        "card1": {
+          "answer": "لا، ستعرض مزيد نفس خيارات الشحن المفعّلة في متجرك.",
+          "question": "هل مزيد مسؤول عن الشحن والتوصيل؟"
+        },
+        "card2": {
+          "answer": "لا، ستعرض مزيد المنتجات المفعّلة بنفس الكمية والسعر الموجودين في متجرك.",
+          "question": "هل يلزم تحديد مخزون منفصل لمزيد؟"
+        },
+        "card3": {
+          "answer": "ستظهر جميع الطلبات في صفحة الطلبات بلوحة تحكم التاجر، مع إشارة إلى مصدر الطلب، سواء كان من المتجر أو من مزيد.",
+          "question": "أين سأستلم الطلبات القادمة من مزيد؟"
+        },
+        "card4": {
+          "answer": "لا، لا توجد رسوم اشتراك. ستفرض مزيد نسبة مئوية من مبيعاتك فيها، وتظهر النسبة في العقد.",
+          "question": "هل توجد رسوم اشتراك لعرض منتجاتي في مزيد؟"
+        },
+        "card5": {
+          "answer": "نعم، ستتضمن منصة مزيد خططًا تسويقية طوال العام لمزيد والمنتجات المدرجة فيها.",
+          "question": "هل توجد خطط تسويقية لمنصة مزيد؟"
+        }
+      },
+      "title": "الأسئلة الشائعة"
+    },
+    "mainAdvantages": {
+      "card1": {
+        "description": "لا يتطلّب ربط متجرك أي مستندات إضافية أو تعقيدات تقنية.",
+        "title": "تسجيل سهل وسريع"
+      },
+      "card2": {
+        "description": "تحكم كامل بالمنتجات واستقبال للطلبات من لوحة تحكم زد واحدة.",
+        "title": "المخزون ولوحة تحكم واحدة"
+      },
+      "card3": {
+        "description": "أطلق حملة إعلانية مشتركة مع مزيد لعرض منتجاتك على وسائل التواصل الاجتماعي وداخل التطبيق.",
+        "title": "تسويق إبداعي لمنتجاتك"
+      },
+      "card4": {
+        "description": "ربط منتجاتك بمزيد يعزز فرص ظهورها لملايين العملاء، دون مجهود منك.",
+        "title": "نمو ومبيعات أكبر"
+      },
+      "title": "المميزات الرئيسية"
+    },
+    "mazedSettingsCard": {
+      "button": "إعدادات مزيد",
+      "description": "تخصيص عرض زر تحميل مزيد في صفحة العميل أو الطلبات أو تسجيل الدخول أو البريد الإلكتروني",
+      "title": "دع عملاءك يتتبعون طلباتهم بتطبيق مزيد."
+    },
+    "requiredFilesDialog": {
+      "alertContent": "تحقق من استيفاء الشروط المطلوبة لمتابعة تفعيل مزيد",
+      "attachCommercialRegistration": "إرفاق السجل التجاري أو شهادة المستشار المهني",
+      "attachLink": "إرفاقه من هنا",
+      "attachShippingOptions": "تفعيل خيار شحن واحد على الأقل",
+      "description": "للانضمام إلى مزيد، يجب تحقيق الشروط التالية في متجرك",
+      "shippingOptions": "خيارات الشحن",
+      "title": "عن المتجر"
+    },
+    "welcomeDescription": "حلٌّ لنمو متجرك، يسهّل عليك الوصول إلى ملايين العملاء بعرض أفضل المتاجر والمنتجات، ويوفر تجربة تسوق ممتعة وموثوقة للمشتري، مع شفافية في تتبع الطلبات المنفذة في مزيد أو أي من متاجر زد.",
+    "welcomeToMazeed": "مرحباً بك في مزيد"
+  }
+}

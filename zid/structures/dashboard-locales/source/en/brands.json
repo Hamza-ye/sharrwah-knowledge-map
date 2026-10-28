@@ -1,0 +1,99 @@
+{
+  "actions": {
+    "delete": "Delete",
+    "edit": "Edit information",
+    "manageProducts": "Manage products",
+    "previewInStore": "Preview in store"
+  },
+  "deleteDialog": {
+    "description": "The brand \"{{name}}\" will be permanently deleted. This action cannot be undone. Are you sure you want to continue?",
+    "title": "Delete brand"
+  },
+  "findBanner": {
+    "createBrand": "Create brand",
+    "description": "Add Brands to your store's main menu so customers can easily browse brands and their products. Enable Brands under <step>Online Store → <menuLink>Menu</menuLink></step>.",
+    "learnMore": "Learn more",
+    "title": "Make your brands easy to find"
+  },
+  "form": {
+    "brandDetails": "Brand details",
+    "cover": "Brand cover",
+    "createDescription": "Create brand to improve storefront navigation, marketing campaigns, and SEO.",
+    "createTitle": "Create brand",
+    "descriptionPlaceholder_ar": "وصف العلامة التجارية",
+    "descriptionPlaceholder_en": "Brand description",
+    "description_ar": "Brand description (Arabic)",
+    "description_en": "Brand description (English)",
+    "displayNamePlaceholder_ar": "Display Name (Arabic)",
+    "displayNamePlaceholder_en": "Display Name (English)",
+    "display_name_ar": "Display Name (Arabic)",
+    "display_name_en": "Display Name (English)",
+    "editDescription": "Edit brand information to improve storefront navigation, marketing campaigns, and SEO.",
+    "editTitle": "Edit brand",
+    "name": "Brand name",
+    "namePlaceholder": "Brand name",
+    "namePlaceholder_en": "Brand name",
+    "name_en": "Brand name (English)",
+    "noProductsSelected": "No products selected",
+    "pageDescriptionPlaceholder_ar": "أدخل وصف صفحة العلامة التجارية",
+    "pageDescriptionPlaceholder_en": "Enter brand page description",
+    "pageDescription_ar": "Brand page description (Arabic)",
+    "pageDescription_en": "Brand page description (English)",
+    "pageTitlePlaceholder_ar": "أدخل عنوان صفحة العلامة التجارية",
+    "pageTitlePlaceholder_en": "Enter brand page title",
+    "pageTitle_ar": "Brand page title (Arabic)",
+    "pageTitle_en": "Brand page title (English)",
+    "productsHint": "Select products to assign to this brand now, or add them later after the brand is created.",
+    "productsTitle": "Products",
+    "searchEngineOptimization": "Search engine optimization",
+    "seoHint": "Add information to help customers find this brand in the search engines.",
+    "storeLink": "Store link"
+  },
+  "list": {
+    "brandName": "Brand name",
+    "dateCreated": "Date created",
+    "description": "Manage brands with custom logo & descriptions for better SEO.",
+    "emptyButton": "Create brand",
+    "emptyDescription": "Create brands catalogue to help reach your target customer and improve storefront navigation, marketing campaigns, and SEO.",
+    "emptyTitle": "You have no brands",
+    "productCount": "Product count",
+    "searchPlaceholder": "Search by brand",
+    "status": "Status",
+    "title": "Brands"
+  },
+  "manageProducts": {
+    "addProducts": "Add products",
+    "addSubtitle": "Select products to assign to this brand.",
+    "addSuccess": "Products added to the brand successfully",
+    "bulkActions": {
+      "move": "Move",
+      "remove": "Remove"
+    },
+    "description": "Edit the list of products assigned to this brand.",
+    "moveDialog": {
+      "body": "Move the selected products to another brand.",
+      "confirm": "Move",
+      "searchPlaceholder": "Search by brand name",
+      "success": "The {{count}} products have been successfully moved to {{brand}}",
+      "title": "Move products"
+    },
+    "moveToTop": "Move to top",
+    "moveUp": "Move up",
+    "productColumn": "Name",
+    "removeDialog": {
+      "body": "The selected {{count}} products will be removed from this brand list. This action cannot be undone, but you can add these products back to the brand at any time. Are you sure you want to continue?",
+      "confirm": "Remove",
+      "success": "Products removed from the brand successfully",
+      "title": "Remove products from this brand"
+    },
+    "removeFromBrand": "Remove from brand",
+    "resetArrange": "Reset product arrange",
+    "searchPlaceholder": "Search by product name",
+    "title": "Manage {{name}} products"
+  },
+  "productSelector": {
+    "createNewBrand": "Create new brand",
+    "label": "Brand",
+    "placeholder": "Start typing to search and select"
+  }
+}

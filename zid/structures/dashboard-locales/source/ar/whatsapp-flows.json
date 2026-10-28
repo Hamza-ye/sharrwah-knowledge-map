@@ -1,0 +1,272 @@
+{
+  "actionDetails": {
+    "actionType": "نوع الإجراء",
+    "buttons": {
+      "add": "إضافة زر",
+      "option": "خيار",
+      "options": "خيارات"
+    },
+    "close": "إغلاق",
+    "createNode": "إنشاء رد جديد",
+    "endDescription": "إنهاء السير",
+    "gotoFlowTargetHelper": "اختر السير الذي تريد المتابعة به.",
+    "gotoFlowTargetLabel": "السير المستهدف",
+    "gotoTargetLabel": "الانتقال إلى خطوة",
+    "handoffDescription": "تحويل المحادثة إلى موظف دعم.",
+    "input": {
+      "saveTo": "حفظ الرد في"
+    },
+    "list": {
+      "addRow": "إضافة خيار",
+      "addSection": "إضافة قسم",
+      "buttonText": "نص الزر",
+      "row": "خيار",
+      "section": "قسم",
+      "sections": "الأقسام"
+    },
+    "nestedActions": "إجراءات متداخلة",
+    "run": {
+      "helper": "تشغيل إجراء خارجي باستخدام البيانات المُرسلة المحددة.",
+      "invalidPayload": "البيانات المُرسلة غير صالحة.",
+      "name": "اسم الإجراء",
+      "payload": "البيانات المُرسلة"
+    },
+    "title": "تفاصيل الإجراء"
+  },
+  "builder": {
+    "startNode": {
+      "description": "عندما يرسل العميل رسالة في واتساب",
+      "label": "رسالة واردة"
+    }
+  },
+  "createAutomation": "إنشاء سير",
+  "editor": {
+    "nodeFinder": {
+      "label": "البحث عن خطوة",
+      "placeholder": "ابحث عن خطوة بالاسم أو الرمز"
+    },
+    "preview": {
+      "chooseOption": "اختر أحد الخيارات",
+      "flowComplete": "اكتمل هذا السير.",
+      "handoff": "حُوّلت المحادثة إلى موظف دعم.",
+      "listTitle": "اختر أحد الخيارات",
+      "online": "متصل",
+      "storeFallback": "متجرك",
+      "transferred": "تستمر هذه المحادثة في سير {{flow}}.",
+      "typeMessage": "اكتب رسالة"
+    },
+    "sidebar": {
+      "howItWorksDescription": "يبدأ كل سير برسالة من العميل، ثم ينتقل بين خطوة رد وأخرى حسب اختياراته.",
+      "howItWorksTitle": "كيف يعمل",
+      "overviewDescription": "ردود تلقائية تتفرّع حسب اختيارات العميل.",
+      "overviewTitle": "عن شجرة الردود",
+      "steps": {
+        "end": "ينتهي السير عند الوصول إلى الخطوة الأخيرة، أو توقّف العميل عن الرد، أو استنفاد المحاولات، أو انتهاء نافذة الـ24 ساعة.",
+        "menu": "تصل للعميل رسالة الخطوة الأولى، وتتضمن قائمة أو أزرارًا للاختيار منها. وينتظر السير ردّه مدةً محدودة.",
+        "retry": "إذا كتب العميل ردًا لا يطابق الخيارات المتاحة، تُرسل له الخيارات مرة أخرى. وبعد عدد محدود من المحاولات، يتوقف السير.",
+        "route": "عندما يختار العميل أحد الخيارات، ينتقل إلى الخطوة المرتبطة به ويتلقى الرسالة التالية. يستمر السير بالطريقة نفسها حتى يصل إلى الخطوة الأخيرة.",
+        "start": "عندما يرسل العميل رسالة، يبدأ السير تلقائيًا وتُفتح نافذة خدمة واتساب ذات الـ24 ساعة، يمكن خلالها إرسال الردود المجانية."
+      }
+    }
+  },
+  "flowGraph": {
+    "actionType": "نوع الإجراء",
+    "actionType_end": "نهاية",
+    "actionType_goto_flow": "الانتقال إلى سير",
+    "actionType_goto_node": "الانتقال إلى خطوة",
+    "actionType_handoff": "تحويل",
+    "actionType_input": "إدخال",
+    "actionType_reply_buttons": "رد بأزرار",
+    "actionType_reply_list": "رد بقائمة",
+    "actionType_reply_text": "رد نصي",
+    "actionType_run": "تشغيل",
+    "actionType_set_variable": "تعيين متغير",
+    "endLabel": "نهاية",
+    "firstStep": "الخطوة الأولى",
+    "optionLimitReached": "وصلت إلى الحد الأقصى للخيارات",
+    "untitledNode": "خطوة بدون عنوان",
+    "untitledOption": "خيار بدون عنوان",
+    "untitledSection": "قسم بدون عنوان"
+  },
+  "flowList": {
+    "actions": {
+      "clone": "نسخ"
+    },
+    "activateConflictDialog": {
+      "message": "سيُلغي تفعيلُ هذا السير تفعيلَ السير المفعّل حاليًا، ليبقى سير افتراضي واحد فقط مفعّلًا.",
+      "title": "تفعيل السير الافتراضي؟"
+    },
+    "cloneDialog": {
+      "confirm": "نسخ السير",
+      "description": "أنشئ نسخة مسودة من «{{name}}».",
+      "nameLabel": "اسم السير الجديد (اختياري)",
+      "namePlaceholder": "اتركه فارغًا لإنشاء اسم تلقائيًا",
+      "title": "نسخ السير"
+    },
+    "createDialog": {
+      "confirm": "إنشاء السير",
+      "nameLabel": "اسم السير",
+      "namePlaceholder": "مثال: قائمة الترحيب",
+      "title": "إنشاء سير"
+    },
+    "deactivateConflictDialog": {
+      "message": "سيتوقف هذا السير عن العمل لعملائك عند إلغاء تفعيله.",
+      "title": "إلغاء تفعيل هذا السير؟"
+    },
+    "deleteDialog": {
+      "activeWarning": "هذا السير مفعّل حاليًا ويعمل لعملائك.",
+      "confirm": "حذف السير",
+      "message": "هل أنت متأكد من حذف «{{name}}»؟ لا يمكن التراجع عن هذا الإجراء.",
+      "title": "حذف السير"
+    },
+    "emptyState": {
+      "createFlow": "إنشاء شجرة ردود",
+      "description": "أنشئ سيرًا من الردود التلقائية لإرشاد عملائك إلى الإجابة المناسبة.",
+      "title": "لا توجد شجرة ردود بعد"
+    },
+    "errorState": {
+      "description": "حدث خطأ أثناء تحميل القائمة. حاول مرة أخرى.",
+      "retry": "إعادة المحاولة",
+      "title": "تعذّر تحميل قائمة شجرة الردود"
+    },
+    "limitReached_few": "لقد وصلت إلى الحد الأقصى لسير الردود، وهو {{count}}.",
+    "limitReached_many": "لقد وصلت إلى الحد الأقصى وهو {{count}} سيرًا للردود.",
+    "limitReached_one": "لقد وصلت إلى الحد الأقصى وهو سير واحد.",
+    "limitReached_other": "لقد وصلت إلى الحد الأقصى وهو {{count}} سير ردود.",
+    "limitReached_two": "لقد وصلت إلى الحد الأقصى وهو سيران للردود.",
+    "limitReached_zero": "لقد وصلت إلى الحد الأقصى لسير الردود.",
+    "nodes": "الخطوات",
+    "nodesCount_few": "{{count}} خطوات",
+    "nodesCount_many": "{{count}} خطوةً",
+    "nodesCount_one": "خطوة واحدة",
+    "nodesCount_other": "{{count}} خطوة",
+    "nodesCount_two": "خطوتان",
+    "nodesCount_zero": "{{count}} خطوة",
+    "snackbar": {
+      "activated": "فُعّل السير.",
+      "cloneError": "تعذّر إكمال النسخ. حاول مرة أخرى.",
+      "cloned": "نُسخ السير.",
+      "deactivated": "أُلغي تفعيل السير."
+    }
+  },
+  "flowSchema": {
+    "actionTypeInvalid": "نوع الإجراء هذا غير مدعوم.",
+    "actionsMin": "تحتاج كل خطوة إلى إجراء واحد على الأقل.",
+    "buttonLabelMax_few": "لا يمكن أن يتجاوز نص الزر {{count}} أحرف.",
+    "buttonLabelMax_many": "لا يمكن أن يتجاوز نص الزر {{count}} حرفًا.",
+    "buttonLabelMax_one": "لا يمكن أن يتجاوز نص الزر حرفًا واحدًا.",
+    "buttonLabelMax_other": "لا يمكن أن يتجاوز نص الزر {{count}} حرف.",
+    "buttonLabelMax_two": "لا يمكن أن يتجاوز نص الزر حرفين.",
+    "buttonLabelMax_zero": "لا يمكن أن يتجاوز نص الزر {{count}} حرف.",
+    "buttonsMax_few": "لا يمكنك إضافة أكثر من {{count}} أزرار.",
+    "buttonsMax_many": "لا يمكنك إضافة أكثر من {{count}} زرًا.",
+    "buttonsMax_one": "لا يمكنك إضافة أكثر من زر واحد.",
+    "buttonsMax_other": "لا يمكنك إضافة أكثر من {{count}} زر.",
+    "buttonsMax_two": "لا يمكنك إضافة أكثر من زرين.",
+    "buttonsMax_zero": "لا يمكنك إضافة أكثر من {{count}} زر.",
+    "buttonsMin": "أضف زرًا واحدًا على الأقل.",
+    "codeFormat": "استخدم الأحرف الإنجليزية الصغيرة والأرقام والشرطة السفلية فقط.",
+    "listButtonTextMax_few": "لا يمكن أن يتجاوز نص زر القائمة {{count}} أحرف.",
+    "listButtonTextMax_many": "لا يمكن أن يتجاوز نص زر القائمة {{count}} حرفًا.",
+    "listButtonTextMax_one": "لا يمكن أن يتجاوز نص زر القائمة حرفًا واحدًا.",
+    "listButtonTextMax_other": "لا يمكن أن يتجاوز نص زر القائمة {{count}} حرف.",
+    "listButtonTextMax_two": "لا يمكن أن يتجاوز نص زر القائمة حرفين.",
+    "listButtonTextMax_zero": "لا يمكن أن يتجاوز نص زر القائمة {{count}} حرف.",
+    "listRowDescriptionMax_few": "لا يمكن أن يتجاوز وصف الخيار {{count}} أحرف.",
+    "listRowDescriptionMax_many": "لا يمكن أن يتجاوز وصف الخيار {{count}} حرفًا.",
+    "listRowDescriptionMax_one": "لا يمكن أن يتجاوز وصف الخيار حرفًا واحدًا.",
+    "listRowDescriptionMax_other": "لا يمكن أن يتجاوز وصف الخيار {{count}} حرف.",
+    "listRowDescriptionMax_two": "لا يمكن أن يتجاوز وصف الخيار حرفين.",
+    "listRowDescriptionMax_zero": "لا يمكن أن يتجاوز وصف الخيار {{count}} حرف.",
+    "listRowLabelMax_few": "لا يمكن أن يتجاوز عنوان الخيار {{count}} أحرف.",
+    "listRowLabelMax_many": "لا يمكن أن يتجاوز عنوان الخيار {{count}} حرفًا.",
+    "listRowLabelMax_one": "لا يمكن أن يتجاوز عنوان الخيار حرفًا واحدًا.",
+    "listRowLabelMax_other": "لا يمكن أن يتجاوز عنوان الخيار {{count}} حرف.",
+    "listRowLabelMax_two": "لا يمكن أن يتجاوز عنوان الخيار حرفين.",
+    "listRowLabelMax_zero": "لا يمكن أن يتجاوز عنوان الخيار {{count}} حرف.",
+    "maxLength_few": "لا يمكن أن تتجاوز القيمة {{count}} أحرف.",
+    "maxLength_many": "لا يمكن أن تتجاوز القيمة {{count}} حرفًا.",
+    "maxLength_one": "لا يمكن أن تتجاوز القيمة حرفًا واحدًا.",
+    "maxLength_other": "لا يمكن أن تتجاوز القيمة {{count}} حرف.",
+    "maxLength_two": "لا يمكن أن تتجاوز القيمة حرفين.",
+    "maxLength_zero": "لا يمكن أن تتجاوز القيمة {{count}} حرف.",
+    "messageMax_few": "لا يمكن أن تتجاوز الرسالة {{count}} أحرف.",
+    "messageMax_many": "لا يمكن أن تتجاوز الرسالة {{count}} حرفًا.",
+    "messageMax_one": "لا يمكن أن تتجاوز الرسالة حرفًا واحدًا.",
+    "messageMax_other": "لا يمكن أن تتجاوز الرسالة {{count}} حرف.",
+    "messageMax_two": "لا يمكن أن تتجاوز الرسالة حرفين.",
+    "messageMax_zero": "لا يمكن أن تتجاوز الرسالة {{count}} حرف.",
+    "messageRequired": "لا يمكن أن يكون نص الرسالة فارغًا.",
+    "nodeTypeInvalid": "نوع الخطوة هذا غير مدعوم.",
+    "nodesMin": "أضف خطوة واحدة على الأقل.",
+    "optionsMin": "أضف خيارًا واحدًا على الأقل.",
+    "required": "هذا الحقل مطلوب.",
+    "sectionTitleMax_few": "لا يمكن أن يتجاوز عنوان القسم {{count}} أحرف.",
+    "sectionTitleMax_many": "لا يمكن أن يتجاوز عنوان القسم {{count}} حرفًا.",
+    "sectionTitleMax_one": "لا يمكن أن يتجاوز عنوان القسم حرفًا واحدًا.",
+    "sectionTitleMax_other": "لا يمكن أن يتجاوز عنوان القسم {{count}} حرف.",
+    "sectionTitleMax_two": "لا يمكن أن يتجاوز عنوان القسم حرفين.",
+    "sectionTitleMax_zero": "لا يمكن أن يتجاوز عنوان القسم {{count}} حرف.",
+    "sectionsMax_few": "لا يمكنك إضافة أكثر من {{count}} أقسام.",
+    "sectionsMax_many": "لا يمكنك إضافة أكثر من {{count}} قسمًا.",
+    "sectionsMax_one": "لا يمكنك إضافة أكثر من قسم واحد.",
+    "sectionsMax_other": "لا يمكنك إضافة أكثر من {{count}} قسم.",
+    "sectionsMax_two": "لا يمكنك إضافة أكثر من قسمين.",
+    "sectionsMax_zero": "لا يمكنك إضافة أكثر من {{count}} قسم.",
+    "sectionsMin": "أضف قسمًا واحدًا على الأقل.",
+    "triggerTypeInvalid": "نوع المشغّل هذا غير مدعوم."
+  },
+  "nodeSettings": {
+    "buttons": {
+      "add": "إضافة خيار",
+      "optionPlaceholder": "خيار الزر",
+      "remove": "حذف الزر"
+    },
+    "close": "إغلاق",
+    "editTitle": "تعديل الرد",
+    "interactive": {
+      "buttonsHelper": "أضف حتى 3 أزرار تظهر في الرسالة نفسها.",
+      "buttonsLabel": "أزرار",
+      "description": "اختر كيف يمكن للعملاء اختيار الرد",
+      "listHelper": "أضف حتى 10 خيارات تظهر في قائمة إضافية.",
+      "listLabel": "قائمة",
+      "title": "أنواع الردود التفاعلية",
+      "toggleHelper": "السماح للعميل بالرد بالأزرار أو القوائم للانتقال للخطوة التالية.",
+      "toggleLabel": "إضافة ردود تفاعلية"
+    },
+    "list": {
+      "addRow": "إضافة خيار",
+      "addSection": "إضافة قسم",
+      "buttonTextLabel": "نص زر القائمة",
+      "buttonTextPlaceholder": "مثال: عرض الخيارات",
+      "removeSection": "حذف القسم",
+      "rowDescriptionPlaceholder": "الوصف (اختياري)",
+      "rowLabelPlaceholder": "عنوان الخيار",
+      "rowNumber": "الخيار {{number}}",
+      "rowsLabel": "أقسام القائمة",
+      "sectionTitleLabel": "عنوان القسم {{number}}",
+      "sectionTitlePlaceholder": "مثال: التسوق"
+    },
+    "message": {
+      "charCounter": "عدد الأحرف: {{current}}/{{max}}",
+      "label": "الرسالة (بالإنجليزية)",
+      "placeholder": "اكتب رسالة الرد التي سيتلقاها العملاء"
+    },
+    "nameLabel": "اسم الرد",
+    "namePlaceholder": "مثال: القائمة الرئيسية",
+    "noEditableContent": "لا تحتوي هذه الخطوة على محتوى رسالة قابل للتعديل.",
+    "replyOptions": {
+      "hint": "(الحد الأقصى {{max}})",
+      "title": "خيارات الرد"
+    }
+  },
+  "status": {
+    "active": "مفعّل",
+    "draft": "مسودة"
+  },
+  "validation": {
+    "cloneNameInvalid": "أدخل اسمًا بين 1 و100 حرف.",
+    "flowNameMax": "لا يمكن أن يتجاوز اسم السير 100 حرف.",
+    "flowNameRequired": "أدخل اسمًا للسير."
+  }
+}

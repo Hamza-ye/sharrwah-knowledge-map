@@ -1,0 +1,175 @@
+{
+  "customers": {
+    "columns": {
+      "activeLoyaltyPoints": "نقاط الولاء النشطة",
+      "averageOrderValue": "متوسط قيمة الطلب",
+      "couponsUsed": "عدد الكوبونات المستخدمة",
+      "customerName": "اسم العميل",
+      "donorAverageDonationValue": "متوسط قيمة تبرع المتبرع",
+      "donorLifetimeValue": "القيمة الكلية للمتبرع",
+      "donorName": "اسم المتبرع",
+      "donorPhone": "رقم هاتف المتبرع",
+      "expiredLoyaltyPoints": "نقاط الولاء المنتهية",
+      "firstDonationDate": "تاريخ أول تبرع",
+      "firstOrderDate": "تاريخ أول طلب",
+      "firstPurchase": "قناة أول عملية شراء",
+      "lastDonationDate": "تاريخ آخر تبرع",
+      "lastOrderDate": "تاريخ آخر طلب",
+      "lifetimeValue": "القيمة الكلية للعميل",
+      "mostPurchase": "القناة الأكثر شراءً",
+      "numberOfDonations": "عدد التبرعات",
+      "numberOfOrders": "عدد الطلبات",
+      "numberOfProductsPurchased": "عدد المنتجات المختلفة المشتراة",
+      "phone": "رقم هاتف العميل",
+      "returnRate": "معدل الإرجاع",
+      "reviewsNumber": "عدد التقييمات",
+      "usedLoyaltyPoints": "نقاط الولاء المستخدمة"
+    },
+    "customerName": "اسم العميل"
+  },
+  "inventory": {
+    "columns": {
+      "averageSellingPrice": "متوسط سعر البيع (بدون ضريبة)",
+      "avgCostPricePerProduct": "متوسط تكلفة المنتج",
+      "currentInventoryCost": "قيمة تكلفة المخزون الحالي",
+      "currentInventoryValue": "قيمة المخزون الحالية (بدون ضريبة)",
+      "currentProductPrice": "سعر البيع بالتجزئة للمنتج (بدون ضريبة)",
+      "daysSalesInInventory": "عدد أيام بقاء المخزون قبل البيع",
+      "discountsApplied": "الخصومات المطبقة (بدون ضريبة)",
+      "grossMargin": "هامش الربح الإجمالي",
+      "interestedCustomersOutOfStock": "عدد العملاء المهتمين بالمنتجات غير المتوفرة",
+      "inventoryOnHand": "الكمية المتوفرة من المخزون",
+      "inventoryTurnoverRatio": "معدل دوران المخزون",
+      "locationInventory": "الموقع / المخزون",
+      "maxStockLevel": "الحد الأعلى للمخزون",
+      "minStockLevel": "الحد الأدنى للمخزون",
+      "product": "المنتج",
+      "returnRate": "معدل الإرجاع",
+      "salesRevenue": "إيرادات المبيعات (بدون ضريبة)",
+      "unitOfMeasure": "وحدة القياس",
+      "unitsSold": "عدد الوحدات المباعة"
+    }
+  },
+  "sales": {
+    "columns": {
+      "affiliateName": "اسم المسوّق بالعمولة",
+      "avgBasketSize": "متوسط حجم السلة",
+      "bundleOffer": "حزمة تسويقية",
+      "cashier": "أمين الصندوق",
+      "category": "الفئة",
+      "city": "المدينة",
+      "cogs": "تكلفة البضاعة المباعة",
+      "completedDonations": "عدد التبرعات المكتملة",
+      "completedOrders": "عدد الطلبات المكتملة",
+      "coupon": "قسيمة",
+      "discounts": "قسائم التخفيض",
+      "donationSourceName": "مصدر التبرع",
+      "grossMargin": "هامش الربح الإجمالي",
+      "inventory": "المخزون",
+      "netRevenue": "إجمالي المبيعات",
+      "numberOfDonations": "عدد التبرعات",
+      "numberOfOrders": "عدد الطلبات",
+      "numberOfReturnedCancelledDonations": "عدد التبرعات الملغاة/المرتجعة",
+      "numberOfReturnedCancelledOrders": "عدد الطلبات الملغاة/المرتجعة",
+      "orderSourceName": "مصدر الطلب",
+      "paymentMethod": "طريقة الدفع",
+      "paymentProcessingFees": "رسوم معالجة الدفع",
+      "period": "الفترة",
+      "product": "المنتج",
+      "returnedOrdersValue": "قيمة الطلبات المُرتجعة",
+      "shippingCost": "تكلفة الشحن",
+      "shippingMethod": "طريقة الشحن",
+      "shippingRevenue": "إيرادات الشحن",
+      "taxAmount": "قيمة الضريبة",
+      "totalDonations": "إجمالي التبرعات",
+      "user": "المستخدم"
+    },
+    "deprecationAlert": {
+      "content": "تم نقل هذا التقرير إلى صفحة التقارير الجديدة، وسيتم إزالة هذه الصفحة قريبًا. للحصول على أحدث تجربة للتقارير، استخدم <reportsLink>صفحة التقارير الجديدة</reportsLink>.",
+      "title": "سيتم إيقاف هذا التقرير قريبًا"
+    },
+    "periods": {
+      "day": "اليوم",
+      "hour": "الساعة",
+      "month": "الشهر",
+      "quarter": "الربع",
+      "week": "الأسبوع",
+      "year": "السنة"
+    },
+    "tabs": {
+      "affiliated": "تابع بنظام العمولة",
+      "bundleOffers": "الحزم التسويقية",
+      "cashier": "الكاشير",
+      "category": "التصنيف",
+      "channels": "القنوات",
+      "city": "المدينة",
+      "coupons": "كوبونات",
+      "location": "الموقع",
+      "paymentMethods": "طرق الدفع",
+      "periods": "الفترات",
+      "products": "المنتجات",
+      "shippingCourier": "شركة الشحن",
+      "user": "المستخدم"
+    },
+    "tooltips": {
+      "avgBasketSize": {
+        "calculation": "متوسط قيمة الطلب = إجمالي المبيعات / عدد الطلبات",
+        "description": "متوسط المبلغ الذي يُنفق لكل طلب، بما في ذلك الضرائب، محسوب من الطلبات، باستثناء الطلبات الملغاة أو المرجعة.",
+        "header": "متوسط قيمة الطلب"
+      },
+      "cogs": {
+        "description": "تكلفة البضائع المباعة.",
+        "header": "تكلفة البضائع المباعة"
+      },
+      "completedOrders": {
+        "description": "إجمالي عدد الطلبات المكتملة، باستثناء الطلبات الملغاة أو المرجعة.",
+        "header": "الطلبات المكتملة"
+      },
+      "discounts": {
+        "calculation": "إجمالي الخصومات = خصومات القسائم + خصومات الشحن",
+        "description": "الخصومات المطبقة على الطلبات، باستثناء الضرائب والطلبات الملغاة أو المرجعة.",
+        "header": "إجمالي الخصومات"
+      },
+      "grossMargin": {
+        "calculation": "الهامش الإجمالي = (صافي الإيرادات − تكلفة البضاعة المباعة − ضريبة القيمة المضافة) ÷ (صافي الإيرادات − ضريبة القيمة المضافة) × 100",
+        "description": "هامش الربح بعد الضرائب وتكلفة البضائع المباعة، باستثناء الطلبات الملغاة والمرفوضة والعكسية.",
+        "header": "الهامش الإجمالي"
+      },
+      "netRevenue": {
+        "calculation": "إجمالي المبيعات = المجموع قبل الخصم − الخصومات + الرسوم (الشحن والدفع عند الاستلام) + ضريبة القيمة المضافة",
+        "description": "إجمالي المبلغ الذي أنفقه العملاء في متجرك، باستثناء الطلبات الملغاة أو المرجعة.",
+        "header": "إجمالي المبيعات"
+      },
+      "numberOfOrders": {
+        "description": "إجمالي عدد الطلبات المُنشأة في الفترة المحددة، باستثناء الطلبات الملغاة أو المرجعة.",
+        "header": "الطلبات"
+      },
+      "numberOfReturnedCancelledOrders": {
+        "description": "إجمالي عدد الطلبات الملغاة أو المرجعة.",
+        "header": "الطلبات الملغاة/المرجعة"
+      },
+      "paymentProcessingFees": {
+        "description": "رسوم مدفوعات زد لجميع الطلبات المدفوعة بمدفوعات زد، بما في ذلك الضرائب، بغض النظر عن حالة الطلب.",
+        "header": "رسوم معالجة الدفع"
+      },
+      "returnedOrdersValue": {
+        "description": "قيمة جميع الطلبات المرجعة أو الملغاة أو العكسية، بما في ذلك الضرائب.",
+        "header": "إجمالي المرتجعات"
+      },
+      "shippingCost": {
+        "description": "تكلفة الشحن التي تدفعها لشركة الشحن لطلبات ZidShip فقط، بما في ذلك رسوم الدفع عند الاستلام، باستثناء ضريبة القيمة المضافة.",
+        "header": "تكلفة الشحن"
+      },
+      "shippingRevenue": {
+        "description": "إجمالي رسوم الشحن المحصلة من الطلبات المكتملة، باستثناء الضرائب والطلبات الملغاة أو المرجعة.",
+        "header": "رسوم الشحن"
+      },
+      "taxAmount": {
+        "description": "الضرائب المحصلة من الطلبات المكتملة، باستثناء الطلبات الملغاة أو المرجعة.",
+        "header": "إجمالي الضرائب"
+      }
+    }
+  },
+  "vatExcluded": "بدون ضريبة القيمة المضافة",
+  "vatIncluded": "شامل ضريبة القيمة المضافة"
+}

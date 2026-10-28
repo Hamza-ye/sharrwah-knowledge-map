@@ -1,0 +1,324 @@
+{
+  "activateCashback": "Activate <l>Wallet cashback</l> to set up the reward.",
+  "activateCashbackLoyalty": "Activate <l0>Wallet cashback</l0> or <l1>Loyalty program</l1> to set up the reward.",
+  "activateLoyalty": "Activate <l>Loyalty program</l> to set up the reward.",
+  "activated": {
+    "editSettings": "Edit settings",
+    "overview": "Overview",
+    "steps": {
+      "friendGetsDiscount": "Friend gets a <value/> discount",
+      "friendGetsInstantCashback": "Friend gets {{value}} wallet cashback",
+      "friendGetsPoints": "Friend gets <reward/>",
+      "friendGetsReward": "Friend gets a reward",
+      "friendPlacesOrder": "Friend starts an order",
+      "friendPlacesOrderWithMin": "Friend starts an order of at least <amount/>",
+      "orderCompleted": "Order delivered",
+      "orderCompletedWithCooling_few": "Order is delivered with a {{count}}-day cooling period",
+      "orderCompletedWithCooling_many": "Order is delivered with a {{count}}-day cooling period",
+      "orderCompletedWithCooling_one": "Order is delivered with a {{count}}-day cooling period",
+      "orderCompletedWithCooling_other": "Order is delivered with a {{count}}-day cooling period",
+      "orderCompletedWithCooling_two": "Order is delivered with a {{count}}-day cooling period",
+      "orderCompletedWithCooling_zero": "Order is delivered with a {{count}}-day cooling period",
+      "orderCreated": "Order created",
+      "orderCreatedWithCooling_few": "Order is created with a {{count}}-day cooling period",
+      "orderCreatedWithCooling_many": "Order is created with a {{count}}-day cooling period",
+      "orderCreatedWithCooling_one": "Order is created with a {{count}}-day cooling period",
+      "orderCreatedWithCooling_other": "Order is created with a {{count}}-day cooling period",
+      "orderCreatedWithCooling_two": "Order is created with a {{count}}-day cooling period",
+      "orderCreatedWithCooling_zero": "Order is created with a {{count}}-day cooling period",
+      "referrerGetsCashback": "Referrer gets <value/> wallet cashback",
+      "referrerGetsCashbackOnDay_few": "Referrer gets <value/> wallet cashback after {{count}} days",
+      "referrerGetsCashbackOnDay_many": "Referrer gets <value/> wallet cashback after {{count}} days",
+      "referrerGetsCashbackOnDay_one": "Referrer gets <value/> wallet cashback after {{count}} day",
+      "referrerGetsCashbackOnDay_other": "Referrer gets <value/> wallet cashback after {{count}} days",
+      "referrerGetsCashbackOnDay_two": "Referrer gets <value/> wallet cashback after {{count}} days",
+      "referrerGetsCashbackOnDay_zero": "Referrer gets <value/> wallet cashback after {{count}} days",
+      "referrerGetsPoints": "Referrer gets <reward/>",
+      "referrerGetsPointsOnDay_few": "Referrer gets <reward/> after {{count}} days",
+      "referrerGetsPointsOnDay_many": "Referrer gets <reward/> after {{count}} days",
+      "referrerGetsPointsOnDay_one": "Referrer gets <reward/> after {{count}} day",
+      "referrerGetsPointsOnDay_other": "Referrer gets <reward/> after {{count}} days",
+      "referrerGetsPointsOnDay_two": "Referrer gets <reward/> after {{count}} days",
+      "referrerGetsPointsOnDay_zero": "Referrer gets <reward/> after {{count}} days",
+      "referrerGetsReward": "Referrer gets a reward",
+      "rewardMaxAmount": ", up to <amount/>",
+      "sharesCode": "The customer shares the referral code with a friend",
+      "sharesLink": "The customer shares the referral link with a friend",
+      "sharesLinkAndCode": "The customer shares the referral link or code with a friend"
+    }
+  },
+  "activatedBanner": {
+    "description": "Now unlock its full potential by letting your customers know that they can start earning.",
+    "learnMore": "Learn how referral programs works",
+    "title": "Referral program activated 🎉"
+  },
+  "deactivateConfirmation": "Are you sure you want to pause the referral program? Existing pending rewards will continue processing, but no new referral links will work.",
+  "ineligibilityReasons": "ineligibilityReasons",
+  "ineligibilityReasons_first_touch_lost": "Another referral was attributed to the customer first.",
+  "ineligibilityReasons_invalid_code": "The referral code is invalid.",
+  "ineligibilityReasons_min_order_not_met": "Order total is below the program's minimum order value.",
+  "ineligibilityReasons_not_first_order": "Not the referee's first order.",
+  "ineligibilityReasons_program_inactive": "The referral program was inactive.",
+  "ineligibilityReasons_referrer_max_total_reached": "The referrer reached their lifetime rewards cap across all referees.",
+  "ineligibilityReasons_referrer_per_referee_max_exceeded": "The referrer reached their rewards cap for this referee.",
+  "ineligibilityReasons_referrer_revoked": "The referrer's code was revoked.",
+  "ineligibilityReasons_reward_not_configured": "The program snapshot has no reward rate configured.",
+  "ineligibilityReasons_self_referral": "The customer used their own referral code.",
+  "ineligibilityReasons_zero_loyalty_points": "The reward converted to zero loyalty points.",
+  "ineligibilityReasons_zero_reward_amount": "The computed reward amount was zero.",
+  "landing": {
+    "label": "Referrals program"
+  },
+  "loyaltyReward": {
+    "fixed": "<value/> as {{points}} loyalty points every <amount/>",
+    "percentage": "{{rate}}% as {{points}} loyalty points every <amount/>"
+  },
+  "notActivate": {
+    "alert": {
+      "action": "Loyalty program",
+      "description": "Loyalty Program must be activated before enabling the Referral Program to reward points."
+    },
+    "benefits": {
+      "1": "Referrals convert at 4.2%, compared to 1.1% for paid social",
+      "2": "Rewarding both parties lifts sharing by 20%",
+      "3": "A referred customer costs ~40% less than one acquired through paid search"
+    },
+    "cashbackAlert": {
+      "action": "Wallet cashback",
+      "description": "Activate Wallet cashback to set up cashback rewards in the Referral Program."
+    },
+    "description": "Referred customers spend more and stay longer. Your customers gets a code, and when a friend they invite orders, both get rewarded.",
+    "mainAdvantages": {
+      "card1": {
+        "description": "Every customer gets a referral code tied to their account, with zero manual setup. The code appears right on the order confirmation page, the moment they're most excited to recommend you, lifting sharing rates by over 30%.",
+        "title": "Your customers become marketers automatically"
+      },
+      "card2": {
+        "description": "Cashback as a percentage of the order, a fixed amount, or custom loyalty points, for both the referrer and their friend. And crucially: you choose when the reward is released, with a holding period that protects you against returns.",
+        "title": "You decide the reward and when it pays out"
+      },
+      "card3": {
+        "description": "Referral fraud is the most overlooked risk, it quietly destroys conversion rates and inflates your rewards bill. Set a minimum order value, limit rewards to a new customer's first order only, and cap referrals per customer or overall.",
+        "title": "Rules that protect you from abuse"
+      },
+      "card4": {
+        "description": "A dashboard showing your latest referrals, top referrers, and performance metrics, with referral details surfaced inside each customer profile and order page. And your customers get notified the moment their reward lands.",
+        "title": "Fully tracked and connected to your store data"
+      },
+      "title": "Main advantages"
+    },
+    "title": "No ad sells like a friend"
+  },
+  "pointsConfig": "Points Configuration",
+  "pointsMode": {
+    "custom": "Set a custom value",
+    "inherit": "Use loyalty program settings"
+  },
+  "preview": {
+    "capPerFriend": "Cap Per Friend:",
+    "capTotal": "Total Referral Cap:",
+    "coolingPeriod": "Cooling Period:",
+    "daysCount_few": "{{count}} days",
+    "daysCount_many": "{{count}} days",
+    "daysCount_one": "{{count}} day",
+    "daysCount_other": "{{count}} days",
+    "daysCount_two": "{{count}} days",
+    "daysCount_zero": "{{count}} days",
+    "discount": "discount",
+    "discountCode": "Discount code",
+    "enabled": "Enabled",
+    "firstOrderOnly": "First Order Only:",
+    "friendGets": "Friend Receives:",
+    "maxAmount": "Max amount:",
+    "minOrderValue": "Minimum Order Value:",
+    "noReward": "No reward",
+    "notSetYet": "Not set yet",
+    "onlineStore": "Online Store",
+    "orderCompleted": "Order completed",
+    "orderCreated": "Order created",
+    "referralCode": "Referral Code:",
+    "referralLink": "Referral Link:",
+    "referralsCount_few": "{{count}} referrals",
+    "referralsCount_many": "{{count}} referrals",
+    "referralsCount_one": "{{count}} referral",
+    "referralsCount_other": "{{count}} referrals",
+    "referralsCount_two": "{{count}} referrals",
+    "referralsCount_zero": "{{count}} referrals",
+    "referrerGets": "Referrer Receives:",
+    "releasePolicy": "Release Stage:",
+    "reward": "Reward:",
+    "rewardExpiry": "Reward Expiration:",
+    "salesChannels": "Sales Channels",
+    "settings": "Settings",
+    "sharableLink": "Sharable link",
+    "sharingOptions": "Sharing options",
+    "timesCount_few": "{{count}} times",
+    "timesCount_many": "{{count}} times",
+    "timesCount_one": "{{count}} time",
+    "timesCount_other": "{{count}} times",
+    "timesCount_two": "{{count}} times",
+    "timesCount_zero": "{{count}} times",
+    "title": "Summary",
+    "walletCashback": "wallet cashback"
+  },
+  "programActivatedSuccessfully": "Referral program activated successfully",
+  "programDeactivatedSuccessfully": "Referral program deactivated successfully",
+  "programSavedSuccessfully": "Referral program saved successfully",
+  "refereeReward": {
+    "rewardType": {
+      "label": "Reward Type",
+      "loyaltyPoints": "Loyalty Points",
+      "none": "No Reward",
+      "orderDiscount": "Order Discount",
+      "walletCashback": "Wallet Cashback"
+    },
+    "rewardValue": {
+      "fixedAmount": "Fixed Amount",
+      "fixedPrice": "Fixed price",
+      "label": "Reward Value",
+      "maxAmount": "Maximum Amount",
+      "percentage": "Percentage",
+      "percentageAmount": "Percentage of Order Value"
+    },
+    "subtitle": "Set the reward the referred friend earns.",
+    "title": "Friend Reward",
+    "titleSuffix": "(Optional, Recommended)"
+  },
+  "referrerReward": {
+    "limits": {
+      "capPerFriend": {
+        "helper": "When off, every reorder from the same friend earns a reward.",
+        "suffix": "orders per friend",
+        "title": "Cap rewards per friend"
+      },
+      "capTotal": {
+        "helper": "When off, the referrer can invite unlimited friends.",
+        "suffix": "total referrals",
+        "title": "Cap total referrals"
+      },
+      "firstOrderOnly": {
+        "description": "Reward the referrer only on the friend's first order.",
+        "title": "First Order Only"
+      },
+      "label": "Reward Rules"
+    },
+    "loyaltyPointsAlert": {
+      "linkText": "Loyalty program",
+      "posLabel": "Purchase from Zid cashier",
+      "ruleEnd": "points",
+      "ruleMiddle": "wins",
+      "ruleStart": "Every",
+      "storeLabel": "Purchase from the Store",
+      "title": "Reward value for loyalty points share same rules set up in"
+    },
+    "rewardType": {
+      "label": "Reward Type",
+      "loyaltyPoints": "Loyalty Points",
+      "walletCashback": "Wallet Cashback"
+    },
+    "rewardValue": {
+      "every": "Every",
+      "fixedAmount": "Fixed Amount",
+      "fixedPrice": "Fixed price",
+      "label": "Reward Value",
+      "maxAmount": "Maximum Amount",
+      "percentage": "Percentage",
+      "percentageAmount": "Percentage of Order Value",
+      "wins": "Wins"
+    },
+    "subtitle": "Set the reward the referrer earns.",
+    "title": "Referrer Reward"
+  },
+  "rewardTypes": "Reward Types",
+  "rewardTypes_loyalty_points": "Loyalty points",
+  "rewardTypes_wallet_cashback": "Cashback",
+  "settings": {
+    "coolingPeriod": {
+      "helper": "Maximum allowed 90 days. Reward is held this many days before being credited to both the referrer's and the friend's wallets.",
+      "title": "Cooling Period"
+    },
+    "minOrderValue": {
+      "title": "Minimum Order Value"
+    },
+    "releasePolicy": {
+      "label": "Reward Release Stage",
+      "orderCompleted": "When Order Is Completed",
+      "orderCreated": "When Order Is Created"
+    },
+    "rewardExpiry": {
+      "title": "Reward Expiration"
+    },
+    "subtitle": "Manage reward eligibility and redemption rules.",
+    "title": "Settings"
+  },
+  "sharingOptions": {
+    "infoAlert": "Codes and links are generated automatically after a confirmed purchase or a profile visit. You can also create them manually after activation from customer profile page.",
+    "referralCode": {
+      "description": "A unique code is generated for each customer. Example: REF-870912",
+      "prefixHelper": "{{current}}/{{max}} characters",
+      "prefixLabel": "Code Prefix",
+      "title": "Referral Code"
+    },
+    "referralLink": {
+      "description": "A unique link is generated for each referred customer. Example: osama.zid.store/ref/REF-679062",
+      "title": "Referral Link"
+    },
+    "selectLabel": "Select how user can share the referral:",
+    "subtitle": "Choose how referrers share the program. Both methods can be active.",
+    "title": "Sharing Options"
+  },
+  "stats": {
+    "conversionRate": "Conversion rate",
+    "revenueFromReferred": "Revenue from referred",
+    "successfulReferrals": "Successful referrals",
+    "totalReferrals": "Total referrals"
+  },
+  "statuses": {
+    "active": "Active",
+    "pending": "Pending",
+    "rejected": "Rejected",
+    "released": "Released",
+    "revoked": "Deactivated",
+    "rewarded": "Rewarded",
+    "voided": "Voided"
+  },
+  "table": {
+    "columns": {
+      "code": "Code",
+      "createdDate": "Created date",
+      "createdTime": "Creation time",
+      "customerName": "Customer name",
+      "orderNumber": "Order number",
+      "refereeReward": "Referee reward",
+      "referredCustomer": "Referred customer",
+      "referrer": "Referrer",
+      "referrerReward": "Referrer reward",
+      "rewardStatus": "Reward status",
+      "rewardType": "Reward type",
+      "successfulReferrals": "Successful referrals",
+      "totalRewards": "Total rewards",
+      "totalSales": "Total sales"
+    },
+    "customerEmptyStateDescription": "Referrals this customer sends, and their rewards, will appear here",
+    "customerLinks": "Customers & links",
+    "emptyStateDescription": "When customers start referring friends, their referrals will appear here",
+    "emptyStateTitle": "No referrals yet",
+    "logs": "Referral logs"
+  },
+  "validation": {
+    "amountGreaterThanZero": "Amount must be greater than 0",
+    "atLeastOneRedemptionMethod": "At least one redemption method must be enabled",
+    "atLeastOneRewardEnabled": "At least one reward type must be enabled",
+    "capPerFriendRange": "Enter a value between 1 and 50",
+    "capTotalGreaterThanZero": "Enter a value greater than 0",
+    "codePrefixFormat": "Use up to 8 letters or numbers only",
+    "codePrefixRequired": "Code prefix is required",
+    "coolingRange": "Enter a value between 0 and 90 days",
+    "expiryRange": "Enter a value between 1 and 365 days",
+    "minOrderGreaterThanZero": "Enter a value greater than 0",
+    "percentageRange": "Enter a percentage between 1 and 100",
+    "pointsInteger": "Points must be a whole number",
+    "pointsMin": "Points must be at least 1",
+    "pointsRequired": "Points are required"
+  }
+}

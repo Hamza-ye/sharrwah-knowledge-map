@@ -1,0 +1,29 @@
+{
+  "filters": {
+    "opportunity": "الفرصة",
+    "suggestion": "تصفية الاقتراحات"
+  },
+  "form": {
+    "campaignTitle": "عنوان الحملة",
+    "dialogTitle": "بيانات حملة التبرع",
+    "messageContent": "محتوى الرسالة",
+    "placeholder": "عميلنا العزيز،\nاغتنم فرصة المشاركة في الأجر بدعم جمعية {{name}} من هذا الرابط: {{url}}",
+    "status": "اكتمل دعمك بنجاح، شكرًا لمساهمتك."
+  },
+  "senderNameUnderReview": {
+    "description": "بعد مراجعة اسم المُرسل، ستتمكن من كفالة الجمعية",
+    "title": "اسم المُرسل قيد المراجعة"
+  },
+  "table": {
+    "donationExpiredPeriod": "منتهية",
+    "donationPermanentOpportunity": "فرصة دائمة",
+    "donationStartAfter": "تبدأ فرصة التبرع بعد {{days}} يوم",
+    "expiresInTitle": "مدة الفرصة",
+    "fosterNowTitle": "ابدأ بالمساهمة",
+    "itemCostTitle": "قيمة الدعم",
+    "percentageTitle": "النسبة",
+    "period": "تنتهي بعد {{days}} يوم",
+    "remainingTitle": "الوحدات المتبقية",
+    "supportedTitle": "الوحدات المدعومة"
+  }
+}

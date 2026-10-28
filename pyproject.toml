@@ -1,0 +1,12 @@
+[project]
+name = "other-product-class"
+version = "0.1.0"
+description = "Capture of platforms other than Shopify and Salla, at the source"
+requires-python = ">=3.12"
+dependencies = [
+    "warcio",
+    "brotli",
+]
+
+[tool.uv]
+package = false

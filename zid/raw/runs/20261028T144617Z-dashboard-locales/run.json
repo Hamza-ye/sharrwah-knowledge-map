@@ -1,0 +1,7 @@
+{
+  "run_id": "20261028T144617Z-dashboard-locales", "platform": "zid", "label": "dashboard-locales", "kind": "fetch", "started": "2026-10-28T14:46:19Z", "ended": "2026-10-28T14:47:35Z",
+  "tool": "GNU Wget 1.21.4 built on linux-gnu.", "user_agent": "Mozilla/5.0 (X11; Linux x86_64) other-product-class-capture/0.1 (read-only evidence capture)", "wait_seconds": 0.2,
+  "url_count": 158, "urls_sha256": "1f7b5156b658c3da00d6c28bd448e07e45f2eaf49f99c901e873bda05be9f541",
+  "wget_exit": 0, "network": {"via": "curl dashboard.zid.sa/cdn-cgi/trace", "ip": "46.161.254.x", "loc": "YE", "colo": "MCT", "http": "http/2"},
+  "script": {"path": "capture/fetch.sh", "sha256": "efb183c1509dd5b1889a3492fbb9c898e6a6660a0df17603cce7e02b6ccef785"}
+}

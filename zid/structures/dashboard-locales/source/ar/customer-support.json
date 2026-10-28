@@ -1,0 +1,29 @@
+{
+  "attachment": "مرفق",
+  "banner": "وردت شكاوى من العملاء على هذه الطلبات؛ راجعها وتعامل معها في أقرب وقت.",
+  "columns": {
+    "additionalDetails": "تفاصيل إضافية",
+    "customerPhone": "رقم العميل",
+    "orderId": "رقم الطلب",
+    "reason": "السبب",
+    "type": "النوع"
+  },
+  "emptyState": {
+    "description": "ستظهر هنا التذاكر التي يقدمها العملاء في بوابة العملاء.",
+    "title": "لا توجد تذاكر دعم"
+  },
+  "notifiedAt": "تاريخ الإشعار",
+  "status": {
+    "closed": "مغلقة",
+    "inProgress": "قيد المعالجة",
+    "open": "مفتوحة",
+    "resolved": "محلولة"
+  },
+  "ticketInformation": "بيانات التذكرة",
+  "types": "مشكلة",
+  "types_cancel": "إلغاء",
+  "types_edit_order": "تعديل الطلب",
+  "types_issue": "مشكلة",
+  "types_return_exchange": "استرجاع واستبدال",
+  "types_suggestion": "اقتراح"
+}

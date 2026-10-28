@@ -1,0 +1,922 @@
+{
+  "account": {
+    "marketplaceAccount": "حساب قناة البيع"
+  },
+  "activation": {
+    "account": "الحساب",
+    "amazon": {
+      "create": "إنشاء حساب أمازون",
+      "no": "لا، أنشئ حساب بائع جديد في أمازون",
+      "radioLabel": "هل لديك حساب بائع في أمازون؟",
+      "title": "ربط أمازون",
+      "yes": "نعم، اربط حسابي في أمازون"
+    },
+    "back": "رجوع",
+    "completeActivation": "إكمال التفعيل",
+    "connectAmazon": "ربط Amazon",
+    "connectExistingAccount": "نعم، ربط حساب البائع الحالي في Amazon",
+    "createNewAccount": "لا، إنشاء حساب بائع Amazon جديد",
+    "defaultInventory": "المخزن الافتراضي",
+    "defaultShippingMethod": "طريقة الشحن الافتراضية",
+    "existingAccountQuestion": "هل لديك حساب في Amazon؟",
+    "jahez": {
+      "activateNow": "تفعيل الآن",
+      "addNewCustomSchedule": "+ إضافة جدول مخصص جديد",
+      "allInventories": "جميع المخازن",
+      "customSchedule": {
+        "createSuccess": {
+          "description": "يمكنك تطبيقه على مخزن أو أكثر في جدول الفروع أدناه",
+          "title": "أُنشئ الجدول"
+        },
+        "editLaterHint": "يمكنك إنشاء الجداول وتعديلها لاحقًا في إعدادات جاهز",
+        "scheduleName": "اسم الجدول",
+        "scheduleNamePlaceholder": "مثال: فروع الرياض",
+        "title": "تخصيص الجدول",
+        "updateSuccess": "حُدّث الجدول وطُبّق على المخازن"
+      },
+      "emptyState": {
+        "description": "اختر المخازن التي تريد إضافتها من القسم أعلاه",
+        "title": "لم يُضف مخزن بعد"
+      },
+      "errors": {
+        "createScheduleFailed": "تعذّر إنشاء الجدول. حاول مرة أخرى.",
+        "deleteScheduleFailed": "تعذّر حذف الجدول. حاول مرة أخرى.",
+        "draftFailed": "تعذّر بدء تفعيل جاهز. حاول مرة أخرى.",
+        "submitFailed": "تعذّر إرسال طلب التفعيل. راجع الفروع وحاول مرة أخرى.",
+        "updateScheduleFailed": "تعذّر تحديث الجدول. حاول مرة أخرى."
+      },
+      "fillInventoriesDescription": "أضف رقم الفرع وجدوله الزمني لكل مخزن. اختر من الجداول الافتراضية أو أنشئ جدولاً مخصصاً حسب الحاجة.",
+      "fillInventoriesTitle": "تعبئة تفاصيل المخازن",
+      "filters": {
+        "all": "الكل",
+        "city": "المدينة",
+        "contactNumber": "رقم التواصل",
+        "contactNumberOptions": {
+          "filled": "مُعبّأ",
+          "missing": "مفقود"
+        },
+        "scheduleStatus": "حالة الجدول",
+        "scheduleStatusOptions": {
+          "custom": "جدول مخصص",
+          "filled": "جدول مكتمل",
+          "missing": "جدول مفقود"
+        },
+        "title": "تصفية",
+        "workingDays": "أيام العمل المضمنة"
+      },
+      "inventoryLabel": "المخزون",
+      "manageBranches": {
+        "description": "أضف أو احذف المخازن المرتبطة بجاهز، وحدث رقم التواصل أو جداول العمل.",
+        "fillInventoriesDescription": "راجع أو حدّث رقم التواصل وجدول العمل لكل مخزن. يمكنك الاختيار من الجداول الافتراضية أو إنشاء جدول مخصص حسب الحاجة.",
+        "fillInventoriesTitle": "بيانات المخزون",
+        "saveSuccess": "حُدّثت الفروع",
+        "selectInventoriesDescription": "تحكم في المخازن المرتبطة بجاهز",
+        "selectInventoriesTitle": "اختر المخزون",
+        "title": "إدارة المخازن"
+      },
+      "manageSchedules": {
+        "applyChangesConfirmation": {
+          "description": "عند تحديث هذا الجدول، ستُطبَّق التغييرات على جميع المخازن التي تستخدمه.",
+          "title": "تطبيق التغييرات على المخازن"
+        },
+        "createNewSchedule": "إنشاء جدول جديد",
+        "deleteConfirmation": {
+          "title": "هل أنت متأكد من حذف هذا الجدول؟"
+        },
+        "deleteSuccess": "حُذف الجدول",
+        "title": "إدارة الجداول"
+      },
+      "mazeedPoweredNote": "جاهز مُفعَّل بمزيد. عند تفعيل جاهز، تُزامَن منتجاتك تلقائيًا بمزيد، مما يوسّع قنوات مبيعاتك مع الاحتفاظ بنسبة العمولة نفسها.",
+      "noInventoriesAvailable": "لا توجد مخازن متاحة",
+      "searchByName": "البحث بالاسم",
+      "selectInventoriesDescription": "اختر المخازن التي تريد مزامنتها مع جاهز",
+      "selectInventoriesTitle": "اختر المخزن",
+      "selectInventoryPlaceholder": "اختر مخزناً",
+      "selectSchedule": "اختر الجدول",
+      "submitSuccess": "أُرسل طلب التفعيل. بانتظار موافقة جاهز.",
+      "tableColumns": {
+        "city": "المدينة",
+        "contactNumber": "رقم التواصل",
+        "name": "الاسم",
+        "schedule": "جدول عمل المخزون"
+      },
+      "title": "تفعيل جاهز"
+    },
+    "loadingCountries": "جاري تحميل البلدان...",
+    "marketplaceActivation": "ربط قناة البيع",
+    "searchByCountry": "البحث بالبلد",
+    "selectCountry": "اختر البلد:",
+    "selectInventory": "اختر المخزن",
+    "selectShippingMethod": "اختر طريقة الشحن",
+    "settings": "الإعدادات",
+    "stepCount": "{{step}} من {{count}}",
+    "stepCount_few": "{{step}} من {{count}} خطوات",
+    "stepCount_many": "{{step}} من {{count}} خطوةً",
+    "stepCount_one": "{{step}} من خطوة واحدة",
+    "stepCount_other": "{{step}} من {{count}} خطوة",
+    "stepCount_two": "{{step}} من خطوتين",
+    "stepCount_zero": "{{step}} من 0 خطوة",
+    "syncAllOrders": "مزامنة جميع الطلبات",
+    "syncAllOrdersDescription": "مزامنة كل طلب من أمازون في حساب زد (حتى لو لم يكن المنتج موجودًا في كتالوجك)",
+    "syncMatchingProducts": "مزامنة الطلبات التي تحتوي على منتجات مطابقة فقط",
+    "syncMatchingProductsDescription": "مزامنة الطلبات التي تحتوي على منتجات موجودة بالفعل في كتالوجك في زد.",
+    "syncOrdersQuestion": "كيف تريد مزامنة طلبات السوق؟"
+  },
+  "addMarketplace": {
+    "addNewMarketplaceConnection": "إضافة سوق جديد",
+    "noonInputs": {
+      "activate": "تفعيل",
+      "alertDescription": "فعّل الإعدادات المطلوبة على منصة نون قبل الاتصال والتحقق هنا.",
+      "configureNoonConnection": "تكوين اتصال Noon",
+      "credentialFile": "ملف بيانات الاعتماد",
+      "credentials": "أوراق اعتماد",
+      "credentialsDescription": "بعد إنشاء حسابك في Noon، انقر <1>هنا</1> لتحديد موقع ملف بيانات الاعتماد.",
+      "credentialsFileSize": "10 كيلوبايت • مكتمل",
+      "file": "الملف",
+      "labelAddWarehouse": "يمكنك إضافة مستودع جديد بسرعة.<1>إضافة مستودع</1>",
+      "missingNoonID": "لم تختر نون من ضمن الخيارات",
+      "noonPlaceholderSKU": "Example: N.123456765432",
+      "noonSKU": "رمز المنتج في نون",
+      "openMerchantAccountDescription": "قبل استخدام منصات البيع، تأكد من امتلاكك حساب تاجر. ليس لديك حساب بعد؟ <1>أنشئه الآن</1>",
+      "openMerchantAccountTitle": "فتح حساب تاجر",
+      "sameSKU": "رمز المنتج في نون هو نفسه في المتجر",
+      "selectWarehouse": "اختر المستودع",
+      "username": "اسم المستخدم"
+    },
+    "selectMarketplace": "اختر قناة البيع:",
+    "shortAddressRequired": {
+      "cta": "إضافة العنوان المختصر",
+      "description": "يحتاج هذا المخزون إلى عنوان وطني مختصر قبل إتمام ربط هذا المتجر.",
+      "title": "العنوان المختصر مطلوب"
+    },
+    "trendyolInputs": {
+      "apiKey": "مفتاح API",
+      "apiSecret": "الكود السري لـ API",
+      "areYouNowInTrendyol": "هل لديك حساب تاجر في ترينديول الآن؟",
+      "configureTrendyolConnection": "الربط مع Trendyol",
+      "connectAccount": "ربط الحساب",
+      "credentials": "أوراق اعتماد",
+      "credentialsDescription": "بعد إنشاء حسابك في Trendyol، انقر <1>هنا</1> لتحديد معرف البائع ومفتاح API والكود السري لـ API.",
+      "defaultZidStoreSettings": "خيارات الشحن في متجر زد",
+      "here": "هنا!!!!",
+      "no": "لا",
+      "openMerchantAccountDescription": "قبل استخدام منصات البيع، تأكد من امتلاكك حساب تاجر. ليس لديك حساب بعد؟ <1>أنشئه الآن</1>",
+      "openMerchantAccountTitle": "فتح حساب تاجر",
+      "sellerId": "رقم البائع",
+      "sellerPay": "البائع يدفع",
+      "sellerShippingFeeDescription": "يتحمل التاجر تكلفة الشحن، وتُحدَّد حسب خيار الشحن في متجرك.",
+      "shippingMethod": "طريقة الشحن:",
+      "startYourStoreNow": "ابدأ متجرك الآن",
+      "trendyolMazeedPoweredNote": "ترينديول مدعوم بمزيد، وعند تفعيل ترينديول تُزامَن منتجاتك تلقائيًا بمزيد، مما يوسّع قنوات البيع لديك بنسبة العمولة نفسها.",
+      "trendyolPay": "ترينديول يدفع",
+      "trendyolShipping": "شحن ترينديول",
+      "trendyolShippingBadge": "الأوفر",
+      "trendyolShippingFeeDescription": "يتحمل التاجر تكلفة الشحن، وتبدأ التكلفة من ٧ ريال للطلب، اطّلع على جدول الأسعار من <1>هنا</1>.",
+      "verify": "تأكيد التحقق",
+      "verifyAndSave": "تأكيد التحقق والاتصال",
+      "verifyConnection": "تحقق من اتصالك",
+      "verifyConnectionDescription": "تحقق من صحة رقم البائع وتفاصيل الـ API لإتمام الربط.",
+      "warehouse": "المستودع:",
+      "whichShippingModelDoYouUse": "ما نموذج الشحن الذي تستخدمه؟",
+      "yes": "نعم"
+    }
+  },
+  "amazonAcceptableUsePolicy": {
+    "agree": "موافقة",
+    "consent": "بالضغط على «موافقة»، فإنك توافق على سياسة الاستخدام المقبول لسوق أمازون.",
+    "description": "يُحظر إنشاء طلبات غير مرغوب بها أو عمليات شراء وهمية أو تقييمات مزيفة أو مقابل حوافز، كما يُحظر عرض منتجات مقلّدة أو منتهكة لحقوق الغير. يجب الالتزام باتفاقية البائع/المورّد في أمازون وسياساتها. قد تؤدي المخالفة إلى تعليق الحساب أو فصله وإبلاغ أمازون.",
+    "title": "سياسة الاستخدام المقبول لسوق أمازون",
+    "violationWarning": "قد تُعلَّق الحسابات التي تثبت مخالفتها <1>لسياسة الاستخدام المقبول لسوق أمازون</1> أو تُفصَل، مع إبلاغ أمازون بذلك."
+  },
+  "bulkActions": {
+    "EditDetails": "تعديل التفاصيل",
+    "addToJahez": "إضافة إلى جاهز",
+    "addToJahezSuccess": "أُضيف المنتج إلى جاهز",
+    "addToMazeed": "إضافة إلى مزيد",
+    "addToMazeedSuccess": "أُرسلت المنتجات إلى مزيد",
+    "filterByCategory": "لضمان إعداد أسرع وأدق، صفِّ المنتجات حسب الفئة قبل إدخال تفاصيلها أو إضافتها.",
+    "hideProducts": "إخفاء المنتجات",
+    "mazeedVisibilityUpdate": {
+      "hideDescription": "منتجاتك مخفية، ولم تُزل من مزيد. يمكنك تغيير ذلك وإظهارها متى شئت.",
+      "hideTitle": "اكتمل التحديث بنجاح!",
+      "showDescription": "منتجاتك الآن ظاهرة ومعروضة في مزيد.",
+      "showTitle": "اكتمل التحديث بنجاح!"
+    },
+    "resyncApproval": "إعادة مزامنة حالة المنتج",
+    "showProducts": "إظهار المنتجات",
+    "submitToTrendyol": "إرسال إلى ترينديول",
+    "visibilityUpdate": {
+      "allUpdatedHideDescription": "منتجاتك مخفية وليست محذوفة من ترينديول. يمكنك بسهولة تغيير ذلك وإظهارها متى شئت.",
+      "allUpdatedShowDescription": "منتجاتك الآن معروضة في ترينديول.",
+      "allUpdatedTitle": "اكتمل التحديث بنجاح!",
+      "description": "لا تزال بعض المنتجات بانتظار الموافقة. انتظر حتى تُنشر لإظهارها أو إخفائها.",
+      "jahezAllUpdatedHideDescription": "منتجاتك مخفية وليست محذوفة من جاهز. يمكنك بسهولة تغيير ذلك وإظهارها متى شئت.",
+      "jahezAllUpdatedShowDescription": "منتجاتك الآن معروضة في جاهز.",
+      "title": "حُدّث {{updated}} من {{total}} منتج!"
+    }
+  },
+  "bulkEditAttributesModal": {
+    "back": "رجوع",
+    "brand": "العلامة التجارية",
+    "cancel": "إلغاء",
+    "changesSubmittedToTrendyol": "أُرسلت التغييرات إلى ترينديول",
+    "infoMessage": "حدد منتجات متعددة لتطبيق سمة واحدة على جميعها، أو يمكنك تعديل كل منتج على حدة.",
+    "noChanges": "لا توجد تغييرات للحفظ. حدد علامة تجارية أو سمات لمنتج واحد على الأقل.",
+    "productNotFound": "لم يُعثر على {{count}} منتج (منتجات) ولم تُحدَّث.",
+    "productNotFound_few": "لم يُعثر على {{count}} منتجات ولم تُحدَّث.",
+    "productNotFound_many": "لم يُعثر على {{count}} منتجًا ولم تُحدَّث.",
+    "productNotFound_one": "لم يُعثر على منتج واحد ولم يُحدَّث.",
+    "productNotFound_other": "لم يُعثر على {{count}} منتج ولم تُحدَّث.",
+    "productNotFound_two": "لم يُعثر على منتجين ولم يُحدَّثا.",
+    "productNotFound_zero": "لم يُعثر على 0 منتج ولم تُحدَّث.",
+    "productsPartiallyUpdated": "حُدّث {{success}} منتج، ويحتاج {{failed}} إلى تصحيح",
+    "productsReadyToSubmit": "المنتجات جاهزة ويمكنك إرسالها إلى ترينديول في أي وقت.",
+    "productsUpdatedSuccessfully": "اكتملت تفاصيل المنتج",
+    "save": "حفظ",
+    "saveError": "تعذّر حفظ تفاصيل المنتج. حاول مرة أخرى.",
+    "saveSuccess": "اكتملت تفاصيل المنتج. المنتجات جاهزة ويمكنك إرسالها إلى ترينديول في أي وقت.",
+    "someProductsNeedCorrection": "بعض المنتجات لا تزال بحاجة إلى تصحيح قبل إرسالها.",
+    "statusUpdatesProcessTime": "عادةً ما يستغرق تحديث الحالة من 5 إلى 10 دقائق"
+  },
+  "bulkEditModal": {
+    "applyToSelection": "تعديل المنتجات",
+    "batchEditDescription": "يمكنك تطبيق صفة واحدة أو أكثر على جميع المنتجات المختارة، أو تعديل كل منتج على حدة.",
+    "batchEditTitle": "تعديل مواصفات عدة منتجات في خطوة واحدة",
+    "brand": "العلامة التجارية",
+    "brandPlaceholderFull": "اكتب حرفين على الأقل للبحث عن العلامة التجارية",
+    "brandPlaceholderShort": "ابحث عن علامة تجارية",
+    "cancel": "إلغاء",
+    "category": "الفئة",
+    "categoryInfoDescription": "بإمكانك تعديل تصنيف المنتجات من قائمة المنتجات لاحقًا.",
+    "categoryInfoTitle": "عند اختيارك تصنيفًا، سيُطبَّق على جميع المنتجات المحددة في الأسفل.",
+    "enterAttribute": "أدخل {{attribute}}",
+    "loadingSearch": "جاري البحث...",
+    "next": "التالي",
+    "noOptions": "لا توجد خيارات",
+    "noProductsSelectedTooltip": "اختر منتجات من الجدول لتطبيق التعديلات على المنتجات المختارة",
+    "price": "السعر",
+    "productName": "اسم المنتج",
+    "quantity": "الكمية",
+    "rowsPerPage": "عدد الصفوف في الصفحة:",
+    "selectAttribute": "اختر {{attribute}}",
+    "selectCategory": "اختر",
+    "sku": "رمز التخزين التعريفي",
+    "title": "تعديل تفاصيل المنتج"
+  },
+  "completeDetailsModal": {
+    "brand": "العلامة التجارية",
+    "cancel": "إلغاء",
+    "category": "الفئة",
+    "price": "السعر",
+    "productDetails": "تفاصيل المنتج",
+    "productName": "اسم المنتج",
+    "productNotFound": "لم يُعثر على المنتج",
+    "publishError": "حدث خطأ أثناء النشر",
+    "publishSuccess": "نُشر بنجاح",
+    "quantity": "الكمية",
+    "save": "حفظ",
+    "saveError": "تعذّر حفظ تفاصيل المنتج. حاول مرة أخرى.",
+    "saveSuccess": "اكتملت تفاصيل المنتج. المنتجات جاهزة ويمكنك إرسالها إلى ترينديول في أي وقت.",
+    "searchBrand": "البحث عن علامة تجارية...",
+    "selectBrand": "اختر",
+    "selectCategory": "اختر",
+    "sku": "رمز التخزين التعريفي",
+    "submitToTrendyol": "إرسال إلى ترينديول"
+  },
+  "countryInput": {
+    "activated": "مفعل",
+    "noCountriesFound": "لم يُعثر على دول",
+    "placeholder": "البحث حسب الدولة"
+  },
+  "defaultPage": {
+    "activateMarketplace": {
+      "steps": {
+        "choose": {
+          "description": "وسّع نطاق عملك وصِل إلى جمهور أوسع بالاتصال بمنصات البيع الرائدة.",
+          "title": "اختر منصة البيع"
+        },
+        "link": {
+          "description": "اربط حسابك في منصة البيع بزد بسهولة.",
+          "title": "ربط الحساب"
+        },
+        "startSelling": "ابدأ البيع",
+        "sync": {
+          "description": "زامن منتجاتك بسلاسة مع منصة البيع.",
+          "title": "مزامنة المنتجات"
+        }
+      },
+      "title": "تفعيل منصة البيع"
+    },
+    "help": {
+      "customerSupport": "خدمة العملاء",
+      "description": "فريقنا هنا لدعمك في كل خطوة — من التفعيل حتى البيع الأول.",
+      "title": "تحتاج مساعدة؟",
+      "visitHelpCenter": "مركز المساعدة"
+    },
+    "hero": {
+      "cta": "ربط منصات البيع",
+      "description": "من نون وأمازون إلى جاهز ومزيد، نساعدك على توسيع نطاق عملك بخطوات بسيطة.",
+      "title": "متجر واحد. منصات بيع لا حصر لها."
+    },
+    "whyConnect": {
+      "easyActivation": {
+        "description": "ابدأ في دقائق بإعداد بسيط وموجَّه.",
+        "title": "تفعيل سهل"
+      },
+      "expandReach": {
+        "description": "الوصول إلى ملايين المشترين الجدد بالاتصال بمنصات بيع متعددة.",
+        "title": "توسيع نطاق الوصول"
+      },
+      "simplifyOps": {
+        "description": "إدارة المنتجات والأسعار والطلبات والمخزون، كل ذلك من لوحة تحكمك في زد.",
+        "title": "تبسيط العمليات"
+      },
+      "title": "لماذا ربط منصات البيع؟"
+    }
+  },
+  "editProductModal": {
+    "title": "تعديل تفاصيل المنتج"
+  },
+  "errors": {
+    "accountBlockedError": "حساب قناة البيع الذي تحاول الربط معه مربوط مسبقًا، ألغِ ربط الحساب بالمتجر وحاول مجددًا",
+    "apiError": "لم نتمكن من تفعيل حسابك، تواصل مع الدعم.",
+    "duplicate": "حساب منصة البيع الذي تحاول ربطه مربوط بالفعل. ألغِ ربط حساب منصة البيع عن ذلك المتجر وحاول مرة أخرى",
+    "notActiveInAmazonError": "يبدو أنك لا تملك حسابًا في البلد المحدد. إذا استمرت المشكلة، تواصل مع فريق الدعم."
+  },
+  "filters": {
+    "jahez": {
+      "all": "الكل",
+      "approvalStatus": "حالة الموافقة",
+      "approved": "موافق عليه",
+      "displayStatus": "حالة العرض",
+      "hidden": "مخفي",
+      "inStock": "متوفر",
+      "max": "الحد الأقصى",
+      "min": "الحد الأدنى",
+      "needsDetails": "بحاجة إلى تفاصيل",
+      "outOfStock": "غير متوفر",
+      "priceMax": "السعر الأعلى",
+      "priceMin": "السعر الأدنى",
+      "priceRange": "نطاق السعر",
+      "productDetails": "تفاصيل المنتج",
+      "productStatus": "حالة المنتج",
+      "range": "نطاق",
+      "ready": "جاهز",
+      "rejected": "مرفوض",
+      "shown": "ظاهر",
+      "stockMax": "الكمية القصوى",
+      "stockMin": "الكمية الدنيا",
+      "stockQuantity": "كمية المخزون",
+      "underReview": "قيد المراجعة"
+    },
+    "title": "تصفية",
+    "trendyol": {
+      "all": "الكل",
+      "approved": "موافق عليه",
+      "category": "الفئة",
+      "displayStatus": "حالة العرض",
+      "hidden": "مخفي",
+      "inStock": "متوفر",
+      "max": "الحد الأقصى",
+      "min": "الحد الأدنى",
+      "needsCorrection": "يحتاج تصحيح",
+      "needsDetails": "يحتاج تفاصيل",
+      "outOfStock": "غير متوفر",
+      "priceMax": "الحد الأقصى للسعر",
+      "priceMin": "الحد الأدنى للسعر",
+      "priceRange": "نطاق السعر",
+      "productDetails": "تفاصيل المنتج",
+      "productStatus": "حالة المنتج",
+      "range": "نطاق",
+      "ready": "جاهز",
+      "rejected": "مرفوض",
+      "shown": "معروض",
+      "stockMax": "الحد الأقصى للمخزون",
+      "stockMin": "الحد الأدنى للمخزون",
+      "stockQuantity": "كمية المخزون",
+      "underReview": "قيد المراجعة"
+    }
+  },
+  "guideLines": {
+    "amazon": "أمازون",
+    "faqTitle": "الأسئلة المتكررة",
+    "general": "عام",
+    "placeholder": "بحث",
+    "trendyol": "ترينديول"
+  },
+  "inventoryManagement": {
+    "alert": {
+      "content": "بدأت بعض منتجاتك تنفد. حدّث الكميات الآن ليستمر البيع دون توقف.",
+      "title": "الكمية على وشك النفاد"
+    },
+    "columns": {
+      "editQuantity": "تعديل الكمية",
+      "manageSpecificConfiguration": "إدارة الإعدادات المحددة",
+      "productName": "اسم المنتج",
+      "sku": "رمز المنتج",
+      "toolTip": "يدير المتجر الإلكتروني FBx. لا يمكن تعديل هذه القيمة."
+    },
+    "confirmationDialog": {
+      "completedVideos": "لقد أكملت مشاهدة الفيديوهات وأوافق على",
+      "completedVideosAndTerms": "لقد أكملت مشاهدة الفيديوهات وأوافق على الشروط والأحكام",
+      "content": "هذه إدارة المخزون والتغييرات في طريقة مزامنة المنتج ستغير المنتج في أمازون بناءً على الإعدادات التي تحددها هنا. ننصحك بمراجعة الفيديو التالي الذي يشرح بالتفصيل كيفية عمل إدارة المخزون.",
+      "howToAvoidUnwantedUpdates": "كيفية تجنب التحديثات غير المرغوب فيها للمخزون في المتجر الإلكتروني",
+      "inventoryManagementExplained": "شرح إدارة المخزون",
+      "secondContent": "ننصحك بمراجعة الفيديو التالي الذي يشرح بالتفصيل كيفية عمل إدارة المخزون.",
+      "termsAndConditions": "الشروط والأحكام",
+      "title": "السماح لمنصات البيع بإدارة المخزون"
+    },
+    "filters": {
+      "fbmFulfillment": "FBM (التنفيذ بواسطة التاجر)",
+      "fbxFulfillment": "FBx (التنفيذ بواسطة المتجر الإلكتروني)",
+      "lessThan": "أقل من",
+      "marketplaceProductId": "معرف المنتج في المتجر الإلكتروني",
+      "quantity": "الكمية",
+      "typeOfFulfillment": "نوع التنفيذ"
+    },
+    "generalConfiguration": "الإعدادات العامة للمخزون",
+    "inventoryDialog": {
+      "description": "اختر المخازن التي ستُنفَّذ منها الطلبات",
+      "title": "اختر المخازن"
+    },
+    "productConfig": {
+      "columns": {
+        "doNotSyncFbmQuantities": "عدم مزامنة كميات FBM؟",
+        "fromInventoryAddress": "من عنوان المخزون",
+        "fulfillment": "أنواع التنفيذ النشطة",
+        "locationToMarketplaceFbm": "الموقع إلى المتجر الإلكتروني FBM",
+        "notAvailable": "غير متوفر",
+        "pullFromMarketplace": "سحب من المتجر الإلكتروني",
+        "pushSumOfAllInventory": "دفع مجموع كامل المخزون",
+        "pushToMarketplace": "دفع إلى المتجر الإلكتروني"
+      },
+      "inputPlaceholder": "مثال: 5",
+      "inventoryMarketplace": "مخزون المتجر الإلكتروني",
+      "lowStockAlertThresholdMarketplace": "FBx - إرسال تنبيه إذا كان مخزون المنتج يساوي أو أقل من",
+      "lowStockAlertThresholdMerchant": "FBM - إرسال تنبيه إذا كان مخزون المنتج يساوي أو أقل من",
+      "overSaleProtectionThreshold": "إيقاف البيع في المتاجر الإلكترونية عندما يكون المخزون مساويًا أو أقل من",
+      "rulesToPreventSelling": "قواعد منع البيع عند نفاد المخزون (لـ FBM فقط)",
+      "settingsCardTittle": "انخفاض مخزون المنتج — الإعدادات العامة",
+      "specificConfig": "إعدادات محددة",
+      "successUpdated": "حُدّثت الإعدادات"
+    },
+    "settings": {
+      "columns": {
+        "marketplaceName": "اسم المتجر الإلكتروني",
+        "pullInventoryQuantitiesFromFbx": "سحب كميات المخزون من FBx (التنفيذ بواسطة المتجر الإلكتروني)",
+        "pushSumOfAllInventory": "دفع مجموع كامل مواقع المخزون إلى المتجر الإلكتروني FBM"
+      },
+      "forAllMarketplaces": "لجميع المتاجر الإلكترونية",
+      "pullInventoryQuantitiesFromFbx": "سحب كميات المخزون من FBx (التنفيذ بواسطة المتجر الإلكتروني)",
+      "pushInventoryToMarketplace": "دفع المخزون إلى المتجر الإلكتروني لجميع FBM (التنفيذ بواسطة التاجر)",
+      "pushInventoryToMarketplaceDescription": "ستُدفع القيمة الإجمالية للمخزون إلى المتجر الإلكتروني في جميع المواقع التي يكون المتجر الإلكتروني قناةً لعنوان مخزونها."
+    },
+    "stats": {
+      "numberOfProduct": "عدد المنتجات التي تحتوي على أقل من 10 وحدات",
+      "salesOverStores": "مبيعات المتجر الإلكتروني مقابل مبيعات المتجر الشهرية"
+    }
+  },
+  "marketplaces": {
+    "accountLinked": "{{count}} حساب مرتبط",
+    "accountLinked_few": "{{count}} حسابات مرتبطة",
+    "accountLinked_many": "{{count}} حساباً مرتبطاً",
+    "accountLinked_one": "حساب مرتبط واحد",
+    "accountLinked_other": "{{count}} حساب مرتبط",
+    "accountLinked_two": "حسابان مرتبطان",
+    "accountLinked_zero": "لا توجد حسابات مرتبطة",
+    "activateInstantly": "ربط فوري",
+    "activation": "كيف تربط متجرك",
+    "categories": {
+      "globalMarketplace": "منصة بيع عالمية",
+      "regionalMarketplace": "منصة بيع محلية",
+      "retail": "تجزئة",
+      "zidMarketplace": "منصة بيع زد"
+    },
+    "connectMarketplaces": {
+      "description": "فعل حساباتك على منصات البيع المختلفة",
+      "title": "ربط منصات البيع"
+    },
+    "features": "الخصائص",
+    "instantActivationDescription": "اربط متجرك بضغطة واحدة ببياناتك المسجلة في زد",
+    "keyFeatures": "أهم الخصائص",
+    "linkNewAccount": "ربط حساب جديد",
+    "manage": "إدارة",
+    "mazeed": {
+      "commissionFreeOrders": "أول {{count}} طلبات بدون عمولة!",
+      "commissionFreeOrders_few": "أول {{count}} طلبات بدون عمولة!",
+      "commissionFreeOrders_many": "أول {{count}} طلباً بدون عمولة!",
+      "commissionFreeOrders_one": "طلبك الأول بدون عمولة!",
+      "commissionFreeOrders_other": "أول {{count}} طلب بدون عمولة!",
+      "commissionFreeOrders_two": "أول طلبين بدون عمولة!",
+      "commissionFreeOrders_zero": "أول 0 طلب بدون عمولة!"
+    },
+    "startActivation": "بدء التفعيل",
+    "title": "منصات البيع"
+  },
+  "orders": {
+    "alert": {
+      "content": "تأكد من ضبط إعدادات استيراد الطلبات لهذا المتجر بالنقر على «الإعدادات».",
+      "title": "إعدادات استيراد الطلبات"
+    },
+    "columns": {
+      "accountName": "اسم الحساب",
+      "byCustomer": "بواسطة العميل",
+      "customerInformationNotAvailable": "يمكن استرداد معلومات العميل فقط بعد تأكيد الطلب",
+      "customerName": "اسم العميل",
+      "fulfillment": "التنفيذ",
+      "imported": "مستورد",
+      "importedStatus": "حالة الاستيراد",
+      "marketplace": "منصة البيع",
+      "method": "طريقة",
+      "notImportedYet": "لم يُستورد بعد",
+      "orderDate": "تاريخ الطلب",
+      "orderNumber": "رقم الطلب",
+      "orderStatus": "حالة الطلب",
+      "orderStatuses": {
+        "awaiting": "قيد الانتظار",
+        "canceled": "مُلغى",
+        "cancelled": "مُلغى",
+        "confirmed": "مُؤكدة",
+        "created": "مُنشأ",
+        "delivered": "مُوصَّل",
+        "invoiceUnconfirmed": "الفاتورة غير مُؤكدة",
+        "invoiced": "صدرت الفاتورة",
+        "partiallyShipped": "شُحن جزئيًا",
+        "pending": "قيد الانتظار",
+        "pendingAvailability": "قيد التوافر",
+        "picking": "جاري التجهيز",
+        "returned": "مُرتجع",
+        "shipped": "مشحون",
+        "unDelivered": "لم يُوصَّل",
+        "unDeliveredAndReturned": "لم يُوصَّل وأُرجع",
+        "unPacked": "غير مُعبأ",
+        "unfulfillable": "غير قابل للشحن",
+        "unshipped": "غير مشحون"
+      },
+      "packageId": "رقم الحزمة",
+      "packageIdTooltip": "رقم حزمة ترينديول",
+      "paid": "مدفوع",
+      "paymentStatus": "حالة الدفع",
+      "platformOrder": "طلب المنصة",
+      "totalPaid": "إجمالي الطلب",
+      "unpaid": "غير مدفوع",
+      "zid": "زد"
+    },
+    "description": "استيراد طلبات المتجر إلى قائمة الطلبات الرئيسية في زد. قد يستغرق تحديث الطلبات حتى 5 دقائق.",
+    "filters": {
+      "canceled": "ملغي",
+      "failed": "فشل",
+      "importStatus": "حالة الاستيراد",
+      "imported": "مستورد",
+      "invoiceUnconfirmed": "فاتورة بانتظار التأكيد",
+      "notImported": "غير مستورد",
+      "orderStatus": "حالة الطلب",
+      "paid": "مدفوع",
+      "partiallyShipped": "شُحن جزئيًا",
+      "paymentStatus": "حالة الدفع",
+      "pending": "معلّق",
+      "pendingAvailability": "بانتظار التوفر",
+      "scheduled": "مجدول",
+      "selectImportStatus": "اختر حالة الاستيراد",
+      "selectOrderStatus": "اختر حالة الطلب",
+      "selectPaymentStatus": "اختر حالة الدفع",
+      "shipped": "مشحون",
+      "unfulfillable": "غير قابل للتنفيذ",
+      "unpaid": "غير مدفوع",
+      "unshipped": "غير مشحون"
+    },
+    "importOrdersToZid": "استيراد الطلبات إلى زد",
+    "orderImportConfirmation": "بمجرد استيراد الطلبات من المتجر الإلكتروني، لن يمكنك التراجع عن هذه العملية",
+    "orderImportScheduled": "جُدول استيراد الطلب"
+  },
+  "priceConfiguration": {
+    "currencyManagement": {
+      "columns": {
+        "countryCurrency": "عملة الدولة",
+        "howMuchIs1Usd": "كم يساوي 1 دولار أمريكي؟",
+        "newValue": "القيمة الجديدة"
+      },
+      "description": "يمكنك إدارة العملة وتعديلها في المتجر الإلكتروني.",
+      "resetSuccess": "أُعيد تعيين أسعار صرف العملات",
+      "success": "حُدّثت أسعار صرف العملات",
+      "switchLabel": "قيمة صرف العملة يدوياً",
+      "title": "إدارة العملة"
+    },
+    "generalPrice": {
+      "alertTitle": "ستُطبَّق إعدادات التسعير العامة على كل منتج مرتبط وكل منتج يُربط لاحقًا. تسري هذه القاعدة بمجرد ربط المنتج بزد.",
+      "columns": {
+        "amountChange": "تغيير المبلغ",
+        "marketplace": "المتجر الإلكتروني",
+        "noPriceManagement": "بدون إدارة أسعار",
+        "percentageChange": "تغيير النسبة المئوية"
+      },
+      "error": "عبّئ جميع الحقول المطلوبة",
+      "success": "حُدّثت إعدادات الأسعار",
+      "switchLabel": "تفعيل إعدادات الأسعار",
+      "title": "إعدادات الأسعار العامة"
+    }
+  },
+  "priceManagement": {
+    "alert": {
+      "content": "تُرسل تغييرات الأسعار إلى الأسواق الإلكترونية فورًا، لكن قد يستغرق ظهورها في زد حتى 6 ساعات.",
+      "title": "تنبيه!"
+    },
+    "columns": {
+      "fulfillment": "التنفيذ",
+      "productName": "اسم المنتج",
+      "zidPrice": "سعر زد"
+    },
+    "filters": {
+      "configurationType": "نوع الإعدادات",
+      "generalConfig": "إعدادات عامة",
+      "specificConfig": "إعدادات خاصة"
+    },
+    "fixedPrice": "سعر ثابت",
+    "fulfillmentStatusNotLinked": "غير مربوط",
+    "generalPriceConfiguration": "إعدادات الأسعار العامة",
+    "productPrices": "أسعار المنتجات",
+    "selectAccount": "اختر الحساب",
+    "skuLabel": "رمز المنتج",
+    "updatePricesSuccess": "حُدّثت الأسعار"
+  },
+  "products": {
+    "columns": {
+      "actions": "الإجراءات",
+      "addToTrendyol": "إضافة إلى ترينديول",
+      "approvalStatus": "حالة الموافقة",
+      "basePrice": "السعر الأساسي",
+      "category": "الفئة",
+      "completeDetails": "إكمال التفاصيل",
+      "correctDetails": "تصحيح التفاصيل",
+      "displayStatus": "حالة العرض",
+      "edit": "تعديل",
+      "linkProduct": "ربط المنتج",
+      "linkStatus": "حالة الربط",
+      "linked": "مربوط",
+      "name": "الاسم",
+      "notLinked": "غير مربوط",
+      "notPublished": "غير منشور",
+      "price": "السعر",
+      "productName": "اسم المنتج",
+      "productStatus": "حالة المنتج",
+      "published": "منشور",
+      "quantity": "الكمية",
+      "sellingPrice": "سعر البيع",
+      "showInStore": "عرض في المتجر",
+      "stock": "المخزون",
+      "submitToTrendyol": "إرسال إلى ترينديول"
+    },
+    "exportDialog": {
+      "description": "سيُرسل ملف تصدير المنتجات إلى بريدك الإلكتروني ({{email}})",
+      "success": "أُرسل ملف تصدير المنتجات إلى بريدك الإلكتروني {{email}}",
+      "title": "تصدير المنتجات"
+    },
+    "exportProducts": "تصدير المنتجات",
+    "linkProductSuccess": "رُبط المنتج",
+    "linkProductTitle": "إعدادات الربط",
+    "productInMarketplace": "المنتج في المتجر",
+    "productInZid": "المنتج في زد",
+    "selectOneFbaSkuToLink": "اختر رمز FBA واحدًا للربط:",
+    "selectOneFbmSkuToLink": "اختر رمز FBM واحدًا للربط:",
+    "selectProduct": "اختر منتجًا",
+    "title": "إدارة المنتجات",
+    "trendyol": {
+      "emptyState": {
+        "description": "ابدأ بإضافة منتجات إلى متجرك لرؤيتها هنا.",
+        "title": "لم يُعثر على منتجات"
+      }
+    },
+    "unlinkProduct": "إلغاء ربط المنتج",
+    "unlinkProductConfirmation": "هل أنت متأكد من رغبتك في إلغاء ربط هذا المنتج؟",
+    "unlinkProductSuccess": "أُلغي ربط المنتج"
+  },
+  "resyncApproval": {
+    "fetchingFromTrendyol": "جاري الجلب من ترينديول...",
+    "lastSynced": "آخر مزامنة {{time}}",
+    "successMessage": "حُدّثت حالة الموافقة",
+    "tooltip": "إعادة مزامنة حالة الموافقة من ترينديول"
+  },
+  "root": {
+    "activatedAccounts": {
+      "accountName": "اسم الحساب",
+      "accountsAvailable": "{{num}} حساب متاح",
+      "addAccount": "إضافة حساب جديد",
+      "description": "إدارة حساباتك المفعلة",
+      "manage": "إدارة",
+      "title": "الحسابات المفعلة"
+    },
+    "addMarketplace": "إضافة منصة بيع",
+    "analytics": {
+      "grossSales": "المبيعات الإجمالية",
+      "grossTotalOrders": "إجمالي الطلبات الكلي",
+      "netSales": "صافي المبيعات",
+      "netTotalOrders": "صافي إجمالي الطلبات",
+      "ordersReturnedCancelled": "الطلبات المسترجعة / الملغاة",
+      "ratio": "نسبة مبيعات السوق إلى مبيعات المتجر المباشرة",
+      "returnsCancelled": "المبالغ المسترجعة / الملغاة",
+      "title": "تحليلات منصات البيع"
+    },
+    "headTitle": "نظرة عامة",
+    "importSettings": "استيراد الإعدادات",
+    "performance": {
+      "changeFromLastMonth": "من الشهر الماضي",
+      "changeFromPrevMonth": "من الشهر السابق",
+      "monthlyOrders": "الطلبات الشهرية",
+      "monthlyOrdersSubtitle": "الطلبات المنفذة هذا الشهر",
+      "monthlyRevenue": "الإيرادات الشهرية",
+      "monthlyRevenueSubtitle": "الإيرادات من جميع الأسواق",
+      "productsSynced": "المنتجات المزامنة",
+      "productsSyncedSubtitle": "على جميع الأسواق",
+      "quickActions": {
+        "connectBtn": "ربط",
+        "connectMarketplace": "ربط سوق",
+        "connectMarketplaceDesc": "اربط متجرك بأفضل الأسواق للوصول إلى المزيد من العملاء.",
+        "publishBtn": "نشر",
+        "publishProducts": "نشر المنتجات",
+        "publishProductsDesc": "انشر منتجاتك في جميع الأسواق المتصلة",
+        "syncBtn": "مزامنة",
+        "syncInventory": "مزامنة المخزون",
+        "syncInventoryDesc": "حافظ على مزامنة المخزون بين متجرك والأسواق.",
+        "title": "إجراءات سريعة",
+        "viewBtn": "عرض",
+        "viewOrders": "عرض الطلبات",
+        "viewOrdersDesc": "تتبع طلباتك وأدر حالتها في مكان واحد."
+      },
+      "revenueByMarketplace": "الإيرادات حسب السوق",
+      "salesPerformance": "أداء المبيعات",
+      "timeRange": {
+        "1y": "آخر سنة",
+        "30d": "آخر 30 يومًا",
+        "7d": "آخر 7 أيام",
+        "90d": "آخر 3 أشهر"
+      },
+      "title": "ملخص أداء السوق"
+    },
+    "trendyolAlert": {
+      "configure": "الإعدادات",
+      "info": "تحقق من صحة معرف البائع وتفاصيل الـ API لإتمام الربط.",
+      "title": "تهيئة إعدادات ترينديول"
+    }
+  },
+  "settings": {
+    "accountStatus": {
+      "activated": "مفعل",
+      "activatedAt": "تاريخ التفعيل",
+      "title": "منصات البيع"
+    },
+    "alertDescription": "انتبه: لن تُطبَّق تغييرات إعدادات الطلبات على طلباتك المستوردة أو المدمجة سابقًا.",
+    "alertNoonDescription": "قد يستغرق جلب الكمية بعد إضافة المنتج ما يصل إلى 10 دقائق",
+    "alertTitle": "التغيير في إعدادات الطلب",
+    "aliasPlaceholder": "أدخل اسم حساب المتجر الإلكتروني",
+    "aliasTitle": "تخصيص اسم حساب المتجر الإلكتروني (اسم البائع)",
+    "allFulfillingMethods": "جميع طرق التنفيذ",
+    "allMarketplaceOrders": "جميع طلبات المتجر الإلكتروني",
+    "amazon": {
+      "invoiceCreatedByAmazon": "إنشاء الفاتورة في متجر أمازون (سيتعين عليك ضبط هذا الإعداد في أمازون)",
+      "invoiceCreatedByZid": "إنشاء الفاتورة في زد ورفعها تلقائيًا إلى المتجر الإلكتروني (إذا لم يكن الخيار متاحًا فالمتجر الإلكتروني لا يدعمه)",
+      "invoiceCreatedByZidNoUpload": "إنشاء الفاتورة في زد دون رفعها إلى المتجر الإلكتروني، وستحتاج إلى رفعها يدويًا."
+    },
+    "customName": "اسم مخصص",
+    "customerInvoiceConfiguration": "إعدادات فاتورة العميل",
+    "deactivateAccount": "إلغاء تنشيط الحساب",
+    "deactivateDescription": "سيتوقف استيراد الطلبات والمزامنة مع متجرك الإلكتروني. يمكنك إعادة تنشيطه في أي وقت",
+    "deactivateMarketplaceAccount": "إلغاء تنشيط حساب المتجر الإلكتروني",
+    "defaultZidStoreSettings": "إعدادات متجر زد الافتراضية",
+    "disconnectAccountConfirmation": "هل أنت متأكد من إلغاء ربط حسابك؟",
+    "disconnectAccountSuccess": "أُلغي ربط الحساب.",
+    "fba": "FBA (التنفيذ بواسطة أمازون)",
+    "fbaRadioLabel": "FBA - (التنفيذ بواسطة أمازون) كيف تريد التعامل مع فاتورة العميل؟",
+    "fbm": "FBM (التنفيذ بواسطة التاجر)",
+    "fbmRadioLabel": "FBM - (التنفيذ بواسطة التاجر) كيف تريد التعامل مع فاتورة العميل؟",
+    "fulfillingMethodLabel": "ما الطريقة التي تفضلها لاستيراد طلباتك؟",
+    "importOrdersConfiguration": "إعدادات استيراد الطلبات",
+    "importOrdersConfigurationDescription": "تخصيص إعدادات استيراد طلباتك",
+    "invoiceGenerationLabel": "ما الفاتورة التي تريد توليدها؟",
+    "jahez": {
+      "accountDetails": {
+        "customSellerName": "اسم البائع المخصص",
+        "customSellerNameHelper": "الاسم الذي يظهر للعملاء في متجرك على جاهز.",
+        "customSellerNamePlaceholder": "مثال: ملابس",
+        "title": "تفاصيل الحساب"
+      },
+      "inventorySettings": {
+        "autoAccept": "قبول الطلبات تلقائياً",
+        "autoAcceptTooltip": "عند إيقاف هذه الخاصية، يجب نقل الطلبات الجديدة يدويًا إلى حالة «جاهز» في مدة محددة، وإلا ستُلغى.",
+        "description": "تحكم في المخازن التي تُزامَن مع جاهز، وحدد تفاصيلها وجداول عملها.",
+        "manageInventories": "إدارة المخازن",
+        "title": "إعدادات المخازن"
+      },
+      "orderSettings": {
+        "alertDescription": "تنطبق التغييرات على الطلبات الجديدة فقط ولن تؤثر على الطلبات المستوردة سابقاً.",
+        "title": "إعدادات الطلبات"
+      }
+    },
+    "noon": {
+      "addWarehouse": "إضافة مستودع",
+      "columns": {
+        "code": "كود",
+        "country": "الدولة",
+        "name": "اسم المستودع"
+      },
+      "deleteWarehouse": "حذف المستودع",
+      "emptyState": {
+        "description": "انقر أدناه لربط منتجاتك في زد بمنصة نون. بعد الربط، يمكنك إدارة المخزون والطلبات والأسعار والمزيد، كل ذلك في مكان واحد.",
+        "products": "ربط المنتج بـ Noon",
+        "title": "لا توجد مستودعات"
+      },
+      "fields": {
+        "code": "كود",
+        "country": "الدولة",
+        "name": "اسم المستودع"
+      },
+      "importOrder": "استرداد الطلبات",
+      "invoiceCreatedByZid": "إنشاء الفاتورة في زد ورفعها تلقائيًا إلى نون",
+      "invoiceCreatedByZidNoUpload": "إنشاء الفاتورة في زد دون رفعها إلى المتجر الإلكتروني، وستحتاج إلى رفعها يدويًا.",
+      "title": "أضف مستودعاتك وهيّئها"
+    },
+    "noonApiCredentials": "بيانات اعتماد API لـ Noon",
+    "noonCredentials": "إدارة المستودعات",
+    "onlyOrdersForProductsLinked": "طلبات المنتجات المرتبطة بمتجرك الإلكتروني فقط",
+    "reset": "إعادة تعيين",
+    "resetSuccess": "أُعيد تعيين الإعدادات.",
+    "saveChanges": "حفظ التغييرات",
+    "sellerOnAmazon": "بائع على {{marketplace}}",
+    "shareInvoiceWithMarketplace": "مشاركة الفاتورة مع المتجر الإلكتروني",
+    "shippingConfiguration": "إعدادات الشحن",
+    "submitSuccess": "حُدّثت الإعدادات.",
+    "trendyol": {
+      "activationDescription": "اختر نموذج الشحن المطابق لاختيارك في ترينديول.",
+      "helpCenter": "للمزيد من المعلومات",
+      "invoiceCreatedByZid": "إنشاء الفاتورة في زد ورفعها تلقائيًا إلى المتجر الإلكتروني (إذا لم يكن الخيار متاحًا فالمتجر الإلكتروني لا يدعمه)",
+      "invoiceCreatedByZidNoUpload": "إنشاء الفاتورة في زد دون رفعها إلى المتجر الإلكتروني، وستحتاج إلى رفعها يدويًا.",
+      "sellerPays": "الدفع عبر البائع",
+      "sellerPaysActivation": "الدفع عبر البائع",
+      "sellerPaysActivationWithDescription": "الدفع عبر البائع",
+      "sellerPaysDescription": "اختر هذا الخيار إذا كنت تشحن الطلبات بنفسك بشركات الشحن المفعّلة في متجرك، دون الاعتماد على عقود ترينديول",
+      "trendyolPays": "الدفع عبر ترينديول",
+      "trendyolPaysActivation": "الدفع عبر ترينديول",
+      "trendyolPaysActivationWithDescription": "الدفع عبر ترينديول",
+      "trendyolPaysDescription": "اختر هذا الخيار إذا كنت تستخدم عقود شحن ترينديول، ولا تعتمد على إعدادات الشحن أو اتفاقياتك الموجودة في زد"
+    },
+    "trendyolApiCredentials": "بيانات اعتماد API لترينديول",
+    "trendyolShipping": "شحن ترينديول",
+    "trendyolShippingModel": "نموذج شحن Trendyol",
+    "verifyConnection": "التحقّق من الاتصال",
+    "whichOrdersToAutomaticallyImport": "أي الطلبات تريد استيرادها أو دمجها تلقائيًا؟"
+  },
+  "status": {
+    "approved": "موافق عليه",
+    "archived": "مؤرشف",
+    "blacklisted": "في القائمة السوداء",
+    "needs_correction": "يحتاج إلى تصحيح",
+    "needs_details": "يحتاج إلى تفاصيل",
+    "not_found": "غير موجود",
+    "pending": "قيد الانتظار",
+    "ready_to_submit": "جاهز للإرسال",
+    "rejected": "مرفوض",
+    "syncing": "جاري المزامنة",
+    "syncingTooltip": "أُرسل التغيير. قد تستغرق التحديثات بضع دقائق",
+    "under_review": "قيد المراجعة"
+  },
+  "submitToTrendyolModal": {
+    "brand": "العلامة التجارية",
+    "cancel": "إلغاء",
+    "notReadyDescription": "بعض المنتجات المحددة تفتقد التفاصيل المطلوبة ولا يمكن إرسالها إلى ترينديول بعد. أكمل المعلومات المطلوبة أولاً، ثم أرسلها عندما تكون جاهزة.",
+    "notReadyTitle": "بعض المنتجات ليست جاهزة للإرسال بعد.",
+    "productName": "اسم المنتج",
+    "sku": "رمز التخزين التعريفي",
+    "subcategory": "الفئة الفرعية",
+    "submit": "إرسال إلى ترينديول",
+    "submitError": "تعذّر إرسال المنتجات. حاول مرة أخرى.",
+    "submitFailed": "تعذّر إرسال {{count}} منتج (منتجات).",
+    "submitFailed_few": "تعذّر إرسال {{count}} منتجات.",
+    "submitFailed_many": "تعذّر إرسال {{count}} منتجًا.",
+    "submitFailed_one": "تعذّر إرسال منتج واحد.",
+    "submitFailed_other": "تعذّر إرسال {{count}} منتج.",
+    "submitFailed_two": "تعذّر إرسال منتجين.",
+    "submitFailed_zero": "تعذّر إرسال 0 منتج.",
+    "submitSuccess": "أُرسل {{count}} منتج (منتجات)، وهي بانتظار موافقة ترينديول.",
+    "submitSuccess_few": "أُرسلت {{count}} منتجات، وهي بانتظار موافقة ترينديول.",
+    "submitSuccess_many": "أُرسل {{count}} منتجًا، وهي بانتظار موافقة ترينديول.",
+    "submitSuccess_one": "أُرسل منتج واحد، وهو بانتظار موافقة ترينديول.",
+    "submitSuccess_other": "أُرسل {{count}} منتج، وهي بانتظار موافقة ترينديول.",
+    "submitSuccess_two": "أُرسل منتجان، وهما بانتظار موافقة ترينديول.",
+    "submitSuccess_zero": "لم تُرسل منتجات.",
+    "title": "إرسال المنتجات إلى ترينديول"
+  },
+  "tabs": {
+    "inventory": "المخازن",
+    "orders": "الطلبات",
+    "pricing": "الأسعار",
+    "products": "المنتجات"
+  },
+  "trendyol": {
+    "successBody": "متجرك الآن متاح على ترينديول. ابدأ بإضافة المنتجات للوصول إلى ملايين المتسوقين.",
+    "successTitle": "مبروك 🎉، متجرك الآن على ترينديول!"
+  },
+  "trendyolActivation": {
+    "cta": "إضافة المنتجات",
+    "description": "متجرك الآن متاح على ترينديول. ابدأ بإضافة المنتجات للوصول إلى ملايين المتسوقين.",
+    "title": "مبروك 🎉، متجرك الآن على ترينديول!"
+  }
+}

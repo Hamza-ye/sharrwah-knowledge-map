@@ -1,0 +1,64 @@
+{
+  "activateNotifyMessage": "Metafields have been activated successfully",
+  "categories": "Categories",
+  "dataType": "Type",
+  "deActivateNotifyMessage": "Metafields have been disabled successfully",
+  "extraPages": "Extra pages",
+  "form": {
+    "create": {
+      "description": "Add a custom data for your products",
+      "title": "Create custom field"
+    },
+    "displayIn": "Display in",
+    "edit": {
+      "description": "Edit custom field for your products",
+      "title": "Edit custom field"
+    },
+    "fieldNameLabel": "Field name",
+    "fieldSlug": "Field slug",
+    "fieldSlugPlaceholder": "Eg: date-1",
+    "fieldTypes": {
+      "date": "Date",
+      "fieldType": "Field type",
+      "file": "File",
+      "image": "Image",
+      "json": "JSON",
+      "number": "Number",
+      "richText": "Rich text",
+      "table": "Table",
+      "text": "Text",
+      "time": "Time"
+    },
+    "merchantDashboard": "Merchant dashboard",
+    "storefront": "Storefront"
+  },
+  "products": "Products",
+  "selectProductTypeHelperText": "Click on the option that best matches your new category type.",
+  "states": {
+    "emptyState": {
+      "button": "Create custom fields",
+      "title": "No custom fields available"
+    },
+    "featureDisabled": {
+      "description": "Once activated, you’ll see it as an extra option when creating new data.",
+      "title": "Enable custom fields"
+    }
+  },
+  "structureDefinition": {
+    "addColumn": "Add column",
+    "column": "Column {{number}}",
+    "fieldNameAr": "Field Name - Arabic",
+    "fieldNameArPlaceholder": "مثال - اسم المنتج",
+    "fieldNameEn": "Field Name - English",
+    "fieldNameEnPlaceholder": "Example - Product name",
+    "slug": "Field Slug",
+    "slugPlaceholder": "Example: product-name",
+    "type": "Field type"
+  },
+  "types": {
+    "categories": "Categories",
+    "extraPages": "Extra pages",
+    "products": "Products"
+  },
+  "valuesCount": "Used in"
+}

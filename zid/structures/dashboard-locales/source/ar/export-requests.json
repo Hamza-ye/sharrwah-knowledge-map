@@ -1,0 +1,56 @@
+{
+  "filters": {
+    "dateAttribute": "نوع التاريخ",
+    "exportType": "نوع الملف",
+    "types": "ملف",
+    "types_abandoned_carts": "العربات المتروكة",
+    "types_affiliates_export": "بيانات المسوقين",
+    "types_coupons_export": "قائمة الكوبونات",
+    "types_customers_export": "قائمة العملاء",
+    "types_detailed_orders_export": "قائمة الطلبات التفصيلية",
+    "types_download_payouts": "تحميل المدفوعات",
+    "types_marketplaces_products": "منتجات المتاجر",
+    "types_order_preparation": "تحضير الطلبات",
+    "types_orders_export": "قائمة الطلبات",
+    "types_product_quantities": "كميات المنتجات",
+    "types_product_sales": "مبيعات المنتجات",
+    "types_products_export": "قائمة المنتجات",
+    "types_reviews_export": "التقييمات",
+    "types_stock_notifications": "إشعارات المخزون",
+    "types_wallet_export": "المحفظة",
+    "types_zidpay_payment_links": "روابط الدفع",
+    "types_zidpay_transactions_export": "المعاملات"
+  },
+  "table": {
+    "countdownSuffix": {
+      "hours": "ساعات",
+      "minutes": "دقائق",
+      "seconds": "ثوانٍ"
+    },
+    "emptyNoResults": {
+      "clearAllFilters": "إزالة جميع الفلاتر",
+      "description": "جرّب تعديل عوامل التصفية أو البحث للعثور على النتائج.",
+      "title": "لا توجد نتائج تصدير"
+    },
+    "expiresIn": "ينتهي بعد",
+    "fileType": "نوع الملف",
+    "fileTypes": {
+      "detailedDonationsExport": "تصدير التبرعات التفصيلي",
+      "donationPreparation": "تصدير قائمة تجهيز التبرعات",
+      "donationsExport": "تصدير التبرعات",
+      "donorsExport": "تصدير المتبرعين"
+    },
+    "filterByExpirationDate": "فلتر حسب تاريخ الانتهاء",
+    "filterByRequestDate": "فلتر حسب تاريخ الطلب",
+    "phone": "الهاتف",
+    "requestDate": "تاريخ الطلب",
+    "searchPlaceholder": "ابحث حسب نوع الملف",
+    "status": {
+      "expired": "منتهي",
+      "failed": "تعذّر التصدير",
+      "finished": "مكتمل",
+      "processing": "قيد المعالجة"
+    },
+    "user": "المستخدم"
+  }
+}

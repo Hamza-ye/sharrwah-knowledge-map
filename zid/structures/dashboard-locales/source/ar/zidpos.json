@@ -1,0 +1,1070 @@
+{
+  "cashiers": {
+    "activateAdditionalFields": "تفعيل الحقول الإضافية",
+    "addCashier": "إضافة كاشير",
+    "cashierData": "بيانات الكاشير",
+    "cashierUpdatedSuccessfully": "حُدّثت بيانات الكاشير",
+    "cashiersLocationUpdatedSuccessfully": "حُدّث فرع الكاشير",
+    "columns": {
+      "cashierName": "اسم الكاشير",
+      "expirationDate": "تاريخ الانتهاء",
+      "referenceName": "الاسم المرجعي",
+      "statusVariants_ongoing": "مفعل",
+      "statusVariants_suspended": "منتهي",
+      "statusVariants_warning": "ينتهي قريبًا"
+    },
+    "commercialRegistration": "رقم السجل التجاري",
+    "inputs": {
+      "fieldContent": {
+        "label": "محتوى الحقل",
+        "placeholder": "اكتب محتوى الحقل"
+      },
+      "fieldTitle": {
+        "label": "عنوان الحقل",
+        "placeholder": "اختر عنوان الحقل"
+      }
+    },
+    "inventory": {
+      "label": "المخزون",
+      "placeholder": "اختر المخزون المسند"
+    },
+    "linkToInventory": "تعيين إلى مخزون / فرع",
+    "linkingTheCashierToTheInventory": "ربط الكاشير بالمخزون",
+    "locationBranch": "المخزون / الفرع",
+    "numbersOnly": "مسموح بحد أقصى ١٠ أرقام فقط"
+  },
+  "emptyStateCardTitle": "تحليلات زد كاشير",
+  "exportContent": {
+    "description": "ستُرسل الطلبات إلى البريد الإلكتروني",
+    "email": {
+      "label": "البريد الإلكتروني",
+      "placeholder": "اكتب البريد الإلكتروني"
+    },
+    "frequency": {
+      "daily": "يومي",
+      "monthly": "شهري",
+      "title": "التكرار",
+      "weekly": "أسبوعي"
+    },
+    "success": "ستُرسل الطلبات إلى البريد الإلكتروني",
+    "title": "تصدير جميع الطلبات"
+  },
+  "filters": {
+    "dateRangeTitle": "حدد نطاق التاريخ",
+    "fields": {
+      "cashier": {
+        "label": "الكاشير",
+        "placeholder": "اختر الكاشير"
+      },
+      "cashierUser": {
+        "label": "مستخدم الكاشير",
+        "placeholder": "اختر مستخدم الكاشير"
+      },
+      "coupon": {
+        "label": "أكواد الخصم",
+        "placeholder": "اختر الكود"
+      },
+      "sessionEndCashierUser": {
+        "label": "أُغلق بواسطة",
+        "placeholder": "أُغلق بواسطة"
+      },
+      "sessionStartCashierUser": {
+        "label": "بدأ بواسطة",
+        "placeholder": "بدأ بواسطة"
+      }
+    },
+    "general": "عام",
+    "generalTitle": "عام",
+    "options": {
+      "cashier": "الكاشير",
+      "cashierUser": "مستخدم الكاشير",
+      "coupon": "أكواد الخصم"
+    }
+  },
+  "freemium": {
+    "activateDialog": {
+      "description": "حمّل التطبيق لبدء قبول المدفوعات. امسح رمز QR أو اضغط أدناه لتحميل تطبيق زد كاشير من المتجر.",
+      "downloadBtn": "تحميل زد كاشير",
+      "inputPlaceholder": "أدخل البريد الإلكتروني أو رقم الهاتف",
+      "sentBtn": "إرسال الرابط",
+      "title": "فُعّلت نقطة بيعك"
+    },
+    "btn": "تفعيل كاشير جو",
+    "title": "ابدأ كاشير جو",
+    "whatIsIncluded": {
+      "feature1": {
+        "description": "أنشئ عمليات البيع داخل المتجر وأكملها بسرعة وسهولة بتطبيق زد كاشير، لتخدم عملاءك بكفاءة أعلى.",
+        "title": "إنشاء عمليات البيع بسهولة"
+      },
+      "feature2": {
+        "description": "أضف المنتجات للفواتير، وابحث عنها بالاسم أو رقم المنتج (SKU) أو الباركود، مع إمكانية إضافة بيانات العميل أو ملاحظاته لكل عملية بيع.",
+        "title": "إدارة المنتجات والعملاء"
+      },
+      "feature3": {
+        "description": "ادعم عملاءك بعدة طرق دفع مثل النقد وتابي وتمارا وروابط الدفع، جميعها متزامنة وجاهزة للاستخدام.",
+        "title": "خيارات دفع مرنة"
+      },
+      "feature4": {
+        "description": "شارك فواتيرك فورًا برمز QR أو تقنية NFC لتجربة سلسة وسريعة لعملائك.",
+        "title": "مشاركة الفواتير بسهولة"
+      },
+      "feature5": {
+        "description": "نفذ عمليات الإرجاع الكلي أو الجزئي بسهولة، واطلع على تفاصيل العمليات السابقة مباشرة من التطبيق.",
+        "title": "إدارة المرتجعات وسجل العمليات"
+      },
+      "feature6": {
+        "description": "تتزامن بيانات المبيعات تلقائيًا بين جميع الأجهزة لضمان دقة المتابعة وسلاسة العمل.",
+        "title": "مزامنة فورية للعمليات"
+      },
+      "title": "كل ما ستحصل عليه مع كاشير جو"
+    },
+    "zidpayNotActivatedError": "فعّل زد باي أولًا لتفعيل كاشير جو"
+  },
+  "generalSettingsPage": {
+    "defaultPickupOrderStatus": {
+      "description": "تعيين الحالة الافتراضية لطلبات الاستلام من نقطة البيع.",
+      "selectLabel": "اختر حالة",
+      "title": "الحالة الافتراضية لطلبات الاستلام من نقطة البيع"
+    },
+    "locationBasedAccess": {
+      "alert": "تأكد من إضافة عضو الفريق كاشيرًا في صفحة <1>إدارة الفريق</1>، ثم عيّن موقعًا لكل كاشير من صفحة <2>الكاشيرات</2>.",
+      "description": "تقييد وصول الموظفين إلى بيانات نقطة البيع والكاشيرات بناءً على المواقع المعينة لهم.",
+      "title": "تفعيل الوصول بناءً على الموقع لنقطة البيع"
+    },
+    "savedSuccessfully": "حُفظت الإعدادات العامة",
+    "statuses": {
+      "delivered": "تم التوصيل",
+      "new": "جديد"
+    },
+    "stopNotifications": {
+      "description": "استلم إشعارات فورية في تطبيق زد عند إنشاء طلب في نقاط البيع.",
+      "title": "إشعارات تطبيق زد لطلبات نقاط البيع"
+    }
+  },
+  "invoiceTemplateEditor": {
+    "content": {
+      "fields": {
+        "bottomText": {
+          "label": "النص السفلي",
+          "placeholder": "بدعم من زد"
+        },
+        "cashOnDelivery": {
+          "label": "الدفع عند الاستلام:",
+          "value": "45.00 SAR"
+        },
+        "cashierName": {
+          "label": "اسم الكاشير:",
+          "placeholder": "الرحمانية - 1"
+        },
+        "cashierUsername": {
+          "label": "اسم مستخدم الكاشير:",
+          "placeholder": "محمد فهد"
+        },
+        "commercialRegistration": {
+          "label": "رقم السجل التجاري:",
+          "placeholder": "12345"
+        },
+        "customFieldLabel": {
+          "label": "تسمية الحقل المخصص",
+          "placeholder": "---"
+        },
+        "customFieldValue": {
+          "label": "منطقة نص الحقل المخصص",
+          "placeholder": "---"
+        },
+        "customFields": {
+          "label": "ملاحظات إضافية:"
+        },
+        "customerName": {
+          "label": "اسم العميل:",
+          "placeholder": "محمد بن عبدالرحمن"
+        },
+        "customerNote": {
+          "label": "ملاحظات الطلب",
+          "placeholder": "--- لا توجد ملاحظات ---"
+        },
+        "customerNumber": {
+          "label": "رقم العميل:",
+          "placeholder": "0531112233"
+        },
+        "delivery": {
+          "label": "التوصيل:",
+          "value": "500.00 SAR"
+        },
+        "deliveryDiscount": {
+          "label": "خصم التوصيل:",
+          "value": "-500.00 SAR"
+        },
+        "discounts": {
+          "label": "الخصومات (زد 10):",
+          "value": "-50.00 SAR"
+        },
+        "invoiceDate": {
+          "label": "تاريخ الطلب:",
+          "placeholder": "2022-10-07 | 03:00ص"
+        },
+        "invoiceNumber": {
+          "label": "رقم الفاتورة:",
+          "placeholder": "20995032022121433"
+        },
+        "invoiceNumberBarcode": {
+          "label": "باركود رقم الفاتورة"
+        },
+        "invoiceStatus": {
+          "label": "حالة الطلب:",
+          "placeholder": "تم التوصيل"
+        },
+        "orderCounter": {
+          "label": "رقم الطلب:",
+          "placeholder": "23"
+        },
+        "orderNumber": {
+          "label": "رقم الطلب"
+        },
+        "orderNumberBarcode": {
+          "label": "باركود رقم الطلب"
+        },
+        "paymentMethod": {
+          "label": "طريقة الدفع:",
+          "placeholder": "مدى"
+        },
+        "paymentStatus": {
+          "label": "حالة الدفع:",
+          "placeholder": "مكتمل"
+        },
+        "priceDetails": {
+          "label": "تفاصيل السعر:"
+        },
+        "productLine": {
+          "label": "{{index}}. اسم منتج تجريبي بحروف طويلة ومتغيرة {{index}}:",
+          "productSku": "ZD-1043",
+          "productWeight": "24.26 KG",
+          "quantity": "X3",
+          "taxAmount": "183.07 SAR",
+          "taxAmountPerUnit": "61.02 SAR",
+          "taxRate": "ضريبة 15%",
+          "unitPriceInclTax": "434.87 SAR",
+          "value": "1,403.56 SAR"
+        },
+        "products": {
+          "label": "المنتجات:"
+        },
+        "returnAndExchangePolicy": {
+          "label": "سياسة الاستبدال والاسترجاع:",
+          "placeholder": "اكتب سياسة الاستبدال والاسترجاع."
+        },
+        "simplifiedTaxInvoice": {
+          "label": "فاتورة ضريبية مبسطة",
+          "value": "Simplified tax invoice"
+        },
+        "storeLocationAddress": {
+          "label": "عنوان المتجر:",
+          "placeholder": "الكويت، العارضية"
+        },
+        "storeLogo": {
+          "label": "شعار المتجر"
+        },
+        "storeMessage": {
+          "label": "رسالة المتجر",
+          "placeholder": "شكرًا لزيارتكم"
+        },
+        "storeName": {
+          "label": "اسم المتجر",
+          "placeholder": "Zbrandsa"
+        },
+        "subtotalExclVat": {
+          "label": "المجموع الفرعي (بدون ضريبة القيمة المضافة):",
+          "value": "868.14 SAR"
+        },
+        "taxableAmount": {
+          "label": "المبلغ الخاضع للضريبة:",
+          "value": "868.14 SAR"
+        },
+        "total": {
+          "label": "الإجمالي:",
+          "value": "995.00 SAR"
+        },
+        "totalProducts": {
+          "label": "إجمالي المنتجات:",
+          "value": "995.00 SAR"
+        },
+        "totalProductsIncludingVat": {
+          "label": "إجمالي المنتجات مع الضريبة:",
+          "value": "1000.00 SAR"
+        },
+        "vat": {
+          "label": "ضريبة القيمة المضافة (15٪):",
+          "value": "130.22 SAR"
+        },
+        "vatNumber": {
+          "label": "الرقم الضريبي:",
+          "placeholder": "16544645461561"
+        },
+        "zatcaQrCode": {
+          "label": "رمز الاستجابة السريعة لـ ZATCA"
+        }
+      }
+    },
+    "header": {
+      "deleteConfirmation": "حذف قالب الفاتورة؟",
+      "updatedDate": "تاريخ التحديث: {{date}}"
+    },
+    "sidebar": {
+      "customize": {
+        "additionalFields": "الحقول الإضافية",
+        "cashierDetails": "معلومات الكاشير",
+        "customerDetails": "معلومات العميل",
+        "description": "تطبق جميع التغييرات على جميع صفحات القالب",
+        "invoiceDetails": "تفاصيل الفاتورة",
+        "notesAndMessages": "الملاحظات والرسائل",
+        "orderAndPayment": "الطلب والدفع",
+        "orderAndTaxDetails": "تفاصيل الطلب والضريبة",
+        "productDetails": "تفاصيل المنتج",
+        "productPrice": "سعر المنتج",
+        "storeInformation": "معلومات المتجر",
+        "tabs": {
+          "body": "محتوى الفاتورة",
+          "footer": "أسفل الفاتورة",
+          "header": "رأس الفاتورة"
+        },
+        "title": "تخصيص"
+      },
+      "fields": {
+        "bottomTextCheckbox": {
+          "label": "النص السفلي"
+        },
+        "bottomTextInput": {
+          "placeholder": "بدعم من زد"
+        },
+        "cashierName": {
+          "label": "اسم الكاشير"
+        },
+        "cashierUserName": {
+          "label": "اسم مستخدم الكاشير"
+        },
+        "commercialRegistration": {
+          "label": "رقم السجل التجاري"
+        },
+        "customFieldLabel": {
+          "placeholder": "تسمية الحقل المخصص"
+        },
+        "customFieldValue": {
+          "placeholder": "قيمة الحقل المخصص"
+        },
+        "customFieldsCheckbox": {
+          "label": "الحقل المخصص"
+        },
+        "customerName": {
+          "label": "اسم العميل"
+        },
+        "customerNote": {
+          "label": "ملاحظات الطلب"
+        },
+        "customerNumber": {
+          "label": "رقم العميل"
+        },
+        "inventories": {
+          "label": "موقع المخزون",
+          "placeholder": "اختر المخزون"
+        },
+        "invoiceDate": {
+          "label": "تاريخ الطلب"
+        },
+        "invoiceNumber": {
+          "label": "رقم الفاتورة"
+        },
+        "invoiceNumberBarcode": {
+          "label": "باركود رقم الفاتورة"
+        },
+        "invoiceStatus": {
+          "label": "حالة الطلب"
+        },
+        "orderCounter": {
+          "label": "عداد الطلب"
+        },
+        "orderNumber": {
+          "label": "رقم الطلب"
+        },
+        "orderNumberBarcode": {
+          "label": "باركود رقم الطلب"
+        },
+        "paymentMethod": {
+          "label": "طريقة الدفع"
+        },
+        "paymentStatus": {
+          "label": "حالة الدفع"
+        },
+        "productName": {
+          "label": "اسم المنتج"
+        },
+        "productSku": {
+          "label": "رمز المنتج"
+        },
+        "productWeight": {
+          "label": "وزن المنتج"
+        },
+        "quantity": {
+          "label": "الكمية"
+        },
+        "returnExchangePolicyCheckbox": {
+          "label": "سياسة الاستبدال والاسترجاع"
+        },
+        "returnExchangePolicyInput": {
+          "placeholder": "اكتب سياسة الاستبدال والاسترجاع."
+        },
+        "storeLocationAddressCheckbox": {
+          "label": "عنوان المتجر"
+        },
+        "storeLogoCheckbox": {
+          "label": "شعار المتجر"
+        },
+        "storeMessageCheckbox": {
+          "label": "رسالة المتجر"
+        },
+        "storeMessageInput": {
+          "placeholder": "شكرًا لزيارتكم"
+        },
+        "storeNameCheckbox": {
+          "label": "اسم المتجر"
+        },
+        "storeNameInput": {
+          "placeholder": "زي براند"
+        },
+        "taxAmount": {
+          "label": "قيمة الضريبة"
+        },
+        "taxAmountPerUnit": {
+          "label": "قيمة الضريبة (لكل وحدة)"
+        },
+        "taxRate": {
+          "label": "نسبة الضريبة"
+        },
+        "templateName": {
+          "label": "اسم القالب",
+          "placeholder": "مثال: قالب رمضان"
+        },
+        "total": {
+          "label": "الإجمالي"
+        },
+        "unitPriceInclTax": {
+          "label": "سعر الوحدة (شامل الضريبة)"
+        },
+        "vatNumber": {
+          "label": "الرقم الضريبي"
+        },
+        "zatcaQrCode": {
+          "label": "رمز الاستجابة السريعة ZATCA"
+        }
+      },
+      "info": {
+        "title": "معلومات"
+      }
+    }
+  },
+  "invoiceTemplates": {
+    "addTemplate": "إضافة قالب",
+    "columns": {
+      "activate": "تفعيل",
+      "createdDate": "تاريخ الإنشاء",
+      "inventoryLocation": "الفروع / المخازن المرتبطة",
+      "templateName": "اسم القالب"
+    },
+    "deleteDialog": {
+      "button": "حذف القالب",
+      "description": "هل أنت متأكد أنك تريد حذف هذا القالب؟ هذا الإجراء لا يمكن التراجع عنه، وستفقد جميع البيانات المحفوظة المرتبطة بهذا القالب.",
+      "successMessage": "حُذف القالب",
+      "title": "حذف القالب"
+    }
+  },
+  "noResults": {
+    "clearAllFilters": "مسح جميع المرشحات",
+    "description": "يبدو أنه لا توجد نتائج تطابق بحثك.",
+    "title": "لم يُعثر على نتائج"
+  },
+  "paymentMethods": {
+    "addANewPaymentMethod": "إضافة طريقة دفع جديدة",
+    "columns": {
+      "paymentMethodName": "اسم طريقة الدفع",
+      "referenceName": "الاسم المرجعي"
+    },
+    "dialog": {
+      "nameAr": {
+        "label": "الاسم (باللغة العربية)",
+        "placeholder": "أدخل الاسم باللغة العربية"
+      },
+      "nameEn": {
+        "label": "الاسم (باللغة الإنجليزية)",
+        "placeholder": "اكتب الاسم باللغة الإنجليزية"
+      }
+    },
+    "editPaymentMethod": "تعديل طريقة الدفع",
+    "emptyState": {
+      "button": "إنشاء طريقة دفع",
+      "description": "سرّع قرار الشراء لديهم بطرق الدفع",
+      "title": "سهّل الدفع لعملائك"
+    },
+    "messages": {
+      "createPaymentMethodSuccess": "أُنشئت طريقة الدفع.",
+      "updatePaymentMethodStatusSuccess": "حُدّثت حالة طريقة الدفع.",
+      "updatePaymentMethodSuccess": "حُدّثت طريقة الدفع"
+    }
+  },
+  "posSettings": {
+    "general": {
+      "generalSettings": {
+        "description": "اضبط الوصول بناءً على موقع نقطة البيع، وإعدادات الطلبات، والإشعارات.",
+        "title": "الإعدادات العامة"
+      },
+      "invoiceTemplates": {
+        "description": "خصّص فاتورتك بتعديل القوالب والحقول لتناسب احتياجاتك",
+        "title": "قوالب الفواتير"
+      },
+      "paymentMethods": {
+        "description": "اضبط القواعد والقيود لطرق الدفع",
+        "title": "طرق الدفع"
+      }
+    }
+  },
+  "reports": {
+    "exportAll": "تصدير الكل",
+    "mailingReport": "تقرير البريد",
+    "paymentReport": "تقرير المدفوعات",
+    "sales": {
+      "cashierUsers": "مستخدمو الكاشير",
+      "cashiers": "الكاشير",
+      "costOfGoodsSold": "تكلفة البضائع المباعة",
+      "day": "التاريخ",
+      "grossMargin": "إجمالي هامش الربح (٪)",
+      "grossProfit": "إجمالي الربح",
+      "revenue": "صافي الإيرادات",
+      "sales": "المبيعات",
+      "taxAmount": "مبلغ الضريبة"
+    },
+    "salesReport": "تقرير المبيعات",
+    "sessions": {
+      "actual": "الفعلي",
+      "balanced": "متوازن",
+      "cash_amount": "نقدي",
+      "cashier": "الكاشير",
+      "creditCard": "بطاقة الائتمان",
+      "credit_card_amount": "بطاقة الائتمان",
+      "difference": "الفرق",
+      "expected": "المتوقع",
+      "notes": "الملاحظات",
+      "session": "الجلسة",
+      "sessionEndCashierUser": "أُغلق بواسطة",
+      "sessionEndTime": "وقت الانتهاء",
+      "sessionNote": "ملاحظة الجلسة",
+      "sessionStartCashierUser": "بدأ بواسطة",
+      "sessionStartTime": "وقت البداية",
+      "unBalanced": "غير متوازن"
+    },
+    "sessionsHistory": "سجل الجلسات",
+    "total": "الإجمالي"
+  },
+  "sales": {
+    "filters": {
+      "order": {
+        "selectStatus": "اختيار الحالة",
+        "status": {
+          "cancelled": "ملغي",
+          "delivered": "مُكتمل",
+          "inDelivery": "جاري التوصيل",
+          "preparing": "جاري التجهيز",
+          "ready": "جاهز",
+          "reversed": "مُسترجع",
+          "reverseinprogress": "قيد الاسترجاع"
+        }
+      }
+    },
+    "invoiceStatuses_canceled": "ملغي",
+    "invoiceStatuses_completed": "مُكتمل",
+    "invoiceStatuses_partially-returned": "مسترجع جزئيًا",
+    "invoiceStatuses_pending": "قيد المعالجة",
+    "invoiceStatuses_prepare-for-return": "قيد الاسترجاع",
+    "invoiceStatuses_returned": "مسترجع",
+    "paymentStatus_paid": "مدفوع",
+    "paymentStatus_partially-refunded": "مسترد جزئيًا",
+    "paymentStatus_pending": "بانتظار الدفع",
+    "paymentStatus_refunded": "مُسترد",
+    "paymentStatus_voided": "ملغي",
+    "salesTitle": "المبيعات",
+    "tableHeaders": {
+      "amount": "المبلغ",
+      "cashier": "الكاشير",
+      "cashierUser": "مستخدم الكاشير",
+      "invoiceNumber": "رقم الفاتورة",
+      "invoiceStatus": "حالة الطلب",
+      "orderNumber": "رقم الطلب",
+      "paymentStatus": "حالة الدفع"
+    }
+  },
+  "subscription": {
+    "caption": "حدد عدد رخص الكاشير بعد اختيار الباقة.",
+    "cashierInput": "أدخل عدد الكاشير",
+    "cashierInputLabel": "إضافة كاشيرات",
+    "compare": "مقارنة الباقات",
+    "features": {
+      "annually": "(سنوياً)",
+      "cashDrawer": "درج النقود",
+      "cashierSubscription": "اشتراك الكاشير",
+      "drawer": "درج النقود",
+      "printer": "طابعة فواتير",
+      "scanner": "قارئ باركود",
+      "tablet": "جهاز لوحي (تابلت)",
+      "tabletStand": "حامل الجهاز"
+    },
+    "freemiumEmptyState": {
+      "button": "ترقية الباقة",
+      "description": "فعّل هذه الخاصية بالترقية إلى باقة كاشير برو.",
+      "title": "غير متاحة في باقتك الحالية"
+    },
+    "includesLabel": "يشمل:",
+    "packages": {
+      "basic": "الأساسية",
+      "full": "الحزمة المتكاملة",
+      "noDevices": "النظام فقط",
+      "selectPackage": "اختر الباقة",
+      "selected": "محدَّد"
+    },
+    "subTitle": "خيارات الاشتراك",
+    "title": "إضافة كاشير جديد"
+  },
+  "transactionHistory": {
+    "empty": {
+      "description": "ليس لديك معاملات حتى الآن",
+      "filteredByActionType": "لا توجد معاملات لنوع العملية المحدد",
+      "filteredByCashier": "لا توجد معاملات للكاشير المحدد",
+      "filteredByCashierUser": "لا توجد معاملات لمستخدم الكاشير المحدد",
+      "filteredByDate": "لا توجد معاملات للفترة الزمنية المحددة",
+      "filteredByInventory": "لا توجد معاملات للمخزون المحدد",
+      "filteredByOrder": "لا توجد معاملات للطلب المحدد",
+      "filteredBySession": "لا توجد معاملات للجلسة المحددة",
+      "filteredGeneric": "لا توجد معاملات للفلاتر المحددة",
+      "title": "لم يُعثر على سجل معاملات"
+    },
+    "filters": {
+      "actionType": "نوع العملية",
+      "cashier": "الكاشير",
+      "cashierUser": "مستخدم الكاشير",
+      "orderId": "رقم الطلب"
+    },
+    "tableHeaders": {
+      "action": "العملية",
+      "amount": "المبلغ",
+      "cashier": "الكاشير",
+      "cashierUser": "مستخدم الكاشير",
+      "currency": "العملة",
+      "customer": "العميل",
+      "date": "التاريخ",
+      "inventory": "المخزون",
+      "invoiceNumber": "رقم الفاتورة",
+      "orderNumber": "رقم الطلب",
+      "paymentMethod": "طريقة الدفع",
+      "phoneNumber": "رقم الهاتف",
+      "time": "الوقت"
+    },
+    "tableValues": {
+      "buyOnlinePartialReturnInStore": "شراء أونلاين استرجاع جزئي في المتجر",
+      "buyOnlinePayInStore": "شراء أونلاين الدفع في المتجر",
+      "buyOnlineReturnInStore": "شراء أونلاين استرجاع في المتجر",
+      "partiallyRefunded": "مسترجع جزئيًا",
+      "refunded": "مسترجع",
+      "sell": "بيع"
+    },
+    "title": "سجل العمليات"
+  },
+  "welcomeDashboard": {
+    "description": "زد كاشير نظام كاشير ونقطة بيع يتيح لتجار التجزئة الجدد إدارة المبيعات في الفروع والمعارض، ويساعد التجار أيضًا على إدارة العمليات والدفع والمخزون من لوحة تحكم واحدة مع المتجر الإلكتروني.",
+    "download": {
+      "description": "حمل تطبيق زد كاشير",
+      "title": "جرّب التطبيق، فهو متاح للتحميل الآن!"
+    },
+    "features": {
+      "card1": {
+        "title": "لوحة تحكم واحدة لإدارة جميع عملياتك."
+      },
+      "card2": {
+        "title": "اتصال تقني سلس يوفر الوقت والجهد"
+      },
+      "card3": {
+        "title": "إصدار أسهل للفواتير، أرسل الفواتير بالرسائل القصيرة (SMS)"
+      },
+      "card4": {
+        "title": "السيطرة الكاملة على المخزونات المتعددة"
+      },
+      "card5": {
+        "title": "إدارة جميع طلباتك في مكان واحد"
+      },
+      "title": "مميزاتنا"
+    },
+    "freemiumBanner": {
+      "button": "البدء مع كاشير جو",
+      "description": "جرب زد كاشير مجانًا اليوم، واختر خطتك المناسبة لاحقًا!",
+      "title": "تبحث عن كاشير جو؟"
+    },
+    "frequentlyAskedQuestions": {
+      "questions": {
+        "card1": {
+          "answer": "زد كاشير هو نظام نقاط بيع ذكي يساعد التجار على إدارة المبيعات داخل المتجر، والعملاء، والمدفوعات، مع ربطها بالمتجر الإلكتروني في نظام واحد متكامل.",
+          "question": "ما هو زد كاشير؟"
+        },
+        "card2": {
+          "answer": "كاشير جو هو الخطة المجانية التي تتيح لأصحاب المتاجر البدء بالبيع داخل المتجر فورًا. تشمل الخصائص الأساسية مثل إنشاء الفواتير، وإتمام عمليات الدفع، ومشاركة الفواتير بسهولة دون أي تكلفة.",
+          "question": "ما هو كاشير جو؟"
+        },
+        "card3": {
+          "answer": "كاشير برو هو النسخة الاحترافية الكاملة من زد كاشير، ويقدم أدوات متقدمة مثل تعدد حسابات الكاشير، وإدارة الجلسات، وتخصيص حقول الفواتير، وبرامج الولاء، والتقارير التفصيلية. مصمم لدعم نمو متجرك وتطوير أداء مبيعاتك.",
+          "question": "ما هو كاشير برو؟"
+        },
+        "card4": {
+          "answer": "نعم، يجب تفعيل زد باي أولًا قبل تفعيل كاشير جو.",
+          "question": "هل توجد متطلبات لتفعيل كاشير جو؟"
+        },
+        "card5": {
+          "answer": "يمكن ترقية كاشير جو إلى كاشير برو مباشرة من لوحة التحكم في:\n\nالقنوات ← نقاط البيع ← الكاشير ← ترقية",
+          "question": "كيف يمكن الترقية إلى كاشير برو؟"
+        },
+        "card6": {
+          "answer": "نعم، يتكامل زد كاشير بسلاسة مع متجرك الإلكتروني لتبقى بيانات الطلبات والمخزون والتقارير محدثة ومتزامنة في نظام واحد.",
+          "question": "هل يدعم زد كاشير البيع في المتجر والمتجر الإلكتروني معًا؟"
+        }
+      },
+      "title": "الأسئلة الشائعة"
+    },
+    "gettingStarted": {
+      "card1": {
+        "description": "ابدأ باستخدام أدوات نقاط البيع المصمّمة لتناسب احتياجات نشاطك التجاري بكل سهولة.",
+        "title": "فعل باقتك"
+      },
+      "card2": {
+        "description": "كل مبيعاتك وعملائك ومنتجاتك في مكان واحد وفي متناول يدك.",
+        "title": "حمل تطبيق زد كاشير"
+      },
+      "card3": {
+        "description": "جهّز فريقك واربطهم بالمخزون المناسب بسهولة وسرعة.",
+        "title": "أضف الكاشيرات"
+      },
+      "card4": {
+        "description": "أنشئ فاتورتك الأولى أو طلبك الإلكتروني، وابدأ بنمو تجارتك اليوم.",
+        "title": "ابدأ أول عملية بيع"
+      },
+      "title": "كيف تبدأ مع زد كاشير"
+    },
+    "hardware": {
+      "card1": {
+        "description": "أكمل معاملات بسهولة باستخدام تطبيق الكاشير على نظام iOS",
+        "title": "آيباد"
+      },
+      "card2": {
+        "description": "اطبع الفواتير لعملائك بسهولة وسرعة باستخدام طابعة الفواتير الحرارية زد",
+        "title": "طابعة الفواتير"
+      },
+      "card3": {
+        "description": "احتفظ بنقودك آمنة مع درج نقود زد المرتبط بتطبيق الكاشير",
+        "title": "درج النقود"
+      },
+      "card4": {
+        "description": "اقرأ الباركود لمنتجاتك بسهولة وسرعة وأضفها إلى سلة التسوق",
+        "title": "قارئ الباركود"
+      },
+      "card5": {
+        "description": "احتفظ بجهازك اللوحي بأمان مع حامل زد اللوحي المرن، الذي يمكنك من تحريك الجهاز اللوحي 360 درجة أو فصله بسهولة.",
+        "title": "حامل الجهاز اللوحي"
+      },
+      "title": "أجهزة زد كاشير (الكاشير)"
+    },
+    "mainFeatures": {
+      "card1": {
+        "title": "المبيعات والفواتير"
+      },
+      "card2": {
+        "title": "المدفوعات"
+      },
+      "card3": {
+        "title": "إدارة الطلبات"
+      },
+      "card4": {
+        "title": "المنتجات"
+      },
+      "card5": {
+        "title": "المخزون"
+      },
+      "card6": {
+        "title": "قنوات البيع"
+      },
+      "card7": {
+        "title": "إدارة العملاء"
+      },
+      "card8": {
+        "title": "إدارة المستخدمين"
+      },
+      "card9": {
+        "title": "التقارير"
+      },
+      "title": "نظام زد كاشير يمنحك تحكمًا كاملًا بعملك",
+      "viewAllFeatures": "عرض جميع الخصائص"
+    },
+    "onboarding": {
+      "button": "بدء الإعداد الآن",
+      "description": "لتفعيل تجربتك لنظام نقاط البيع، ابدأ الآن بإكمال خطوات الإعداد بكل سهولة.",
+      "title": "ابدأ تجربتك المجانية لنظام نقاط البيع الآن، وفعّلها بسهولة بخطوة واحدة!"
+    },
+    "plans": {
+      "freemium": {
+        "btn": "تفعيل كاشير جو",
+        "features": {
+          "feature1": "وصول لحساب المالك فقط",
+          "feature2": "معاملات الاستلام",
+          "feature3": "إضافة المنتجات والعملاء",
+          "feature4": "مدفوعات أساسية (نقدي، تابي، تمارا، رابط دفع)",
+          "feature5": "فواتير افتراضية",
+          "feature6": "إرجاع المنتجات"
+        },
+        "featuresHeading": "ابدأ البيع في المتجر مجانًا.",
+        "title": "كاشير جو"
+      },
+      "premium": {
+        "btn": "تفعيل كاشير برو",
+        "features": {
+          "feature1": "وصول متعدد للكاشير والمستخدمين الفرعيين",
+          "feature2": "طلبات الاستلام، التوصيل، الولاء والهدايا",
+          "feature3": "الربط بمواقع المخزون وطلبات إعادة التخزين",
+          "feature4": "مدفوعات متقدمة (جهاز الدفع، Nearpay، طرق مخصصة)",
+          "feature5": "فواتير قابلة للتخصيص",
+          "feature6": "خصومات، كوبونات ومدفوعات متعددة",
+          "feature7": "تقارير متقدمة (المبيعات، المنتجات، المدفوعات)",
+          "feature8": "تكامل الأجهزة (الماسح الضوئي، الطابعة، جهاز الدفع)"
+        },
+        "featuresHeading": "احصل على أدوات متقدمة بمرونة إضافية",
+        "startFrom": "يبدأ من",
+        "title": "كاشير برو"
+      },
+      "title": "اختر خطتك"
+    },
+    "posFeaturesTable": {
+      "columns": {
+        "feature": "الخصائص",
+        "freemium": "كاشير جو",
+        "premium": "كاشير برو"
+      },
+      "rows": {
+        "header1": {
+          "row1": {
+            "feature": "تسجيل دخول الكاشير (حساب التاجر)"
+          },
+          "row2": {
+            "feature": "تسجيل دخول الكاشير (حسابات المستخدمين الفرعية)"
+          },
+          "row3": {
+            "feature": "ربط المستخدمين أو الكاشير بالمخزون"
+          },
+          "title": "تسجيل الدخول والصلاحيات"
+        },
+        "header10": {
+          "row1": {
+            "feature": "عرض معلومات الحساب"
+          },
+          "row2": {
+            "feature": "مزامنة البيانات"
+          },
+          "row3": {
+            "feature": "مركز الدعم"
+          },
+          "row4": {
+            "feature": "ربط الأجهزة (الباركود والطابعة)"
+          },
+          "row5": {
+            "feature": "ربط أجهزة الدفع"
+          },
+          "row6": {
+            "feature": "تخصيص صفحة المنتجات وترتيبها"
+          },
+          "title": "الإعدادات"
+        },
+        "header11": {
+          "row1": {
+            "feature": "إنشاء طلب مخزون"
+          },
+          "row2": {
+            "feature": "تعديل طلب مخزون"
+          },
+          "row3": {
+            "feature": "استلام طلب مخزون"
+          },
+          "title": "طلبات المخزون"
+        },
+        "header12": {
+          "row1": {
+            "feature": "موقع مخزون إضافي لكل كاشير"
+          },
+          "title": "مواقع المخزون"
+        },
+        "header2": {
+          "row1": {
+            "feature": "بدء الجلسة وإنهاؤها"
+          },
+          "row2": {
+            "feature": "سجل الجلسات"
+          },
+          "title": "إدارة الجلسات"
+        },
+        "header3": {
+          "row1": {
+            "feature": "إنشاء فاتورة بيع"
+          },
+          "row10": {
+            "feature": "منتجات بسعر متغير"
+          },
+          "row2": {
+            "feature": "إضافة المنتجات إلى الفاتورة"
+          },
+          "row3": {
+            "feature": "إضافة العملاء والملاحظات إلى الفاتورة"
+          },
+          "row4": {
+            "feature": "حفظ الفاتورة لإتمامها لاحقًا"
+          },
+          "row5": {
+            "feature": "إنشاء طلبات توصيل أو طلبات إلكترونية"
+          },
+          "row6": {
+            "feature": "إنشاء طلبات الهدايا"
+          },
+          "row7": {
+            "feature": "إضافة الخصومات أو رموز الخصم"
+          },
+          "row8": {
+            "feature": "كسب نقاط الولاء واستبدالها"
+          },
+          "row9": {
+            "feature": "الدفع بأكثر من وسيلة في عملية واحدة"
+          },
+          "title": "عمليات البيع"
+        },
+        "header4": {
+          "row1": {
+            "feature": "إرسال الفاتورة بالرسائل النصية"
+          },
+          "row2": {
+            "feature": "مشاركة الفاتورة بتقنية NFC"
+          },
+          "row3": {
+            "feature": "طباعة الفاتورة"
+          },
+          "row4": {
+            "feature": "تخصيص قوالب الفواتير"
+          },
+          "title": "الفواتير"
+        },
+        "header5": {
+          "row1": {
+            "feature": "الدفع النقدي"
+          },
+          "row2": {
+            "feature": "تابي وتمارا (اشتر الآن وادفع لاحقا)"
+          },
+          "row3": {
+            "feature": "الدفع برابط الدفع"
+          },
+          "row4": {
+            "feature": "مزامنة طرق الدفع"
+          },
+          "row5": {
+            "feature": "الدفع بالبطاقة أو أجهزة نقاط البيع"
+          },
+          "row6": {
+            "feature": "تكامل مع NearPay"
+          },
+          "row7": {
+            "feature": "إضافة أو إدارة طرق دفع مخصصة"
+          },
+          "title": "وسائل الدفع"
+        },
+        "header6": {
+          "row1": {
+            "feature": "عرض تفاصيل عملية البيع"
+          },
+          "row2": {
+            "feature": "إرجاع المنتجات (كامل أو جزئي)"
+          },
+          "title": "إدارة عمليات البيع"
+        },
+        "header7": {
+          "row1": {
+            "feature": "تحديد قنوات عرض المنتج"
+          },
+          "row2": {
+            "feature": "البحث بالاسم أو SKU أو الباركود"
+          },
+          "row3": {
+            "feature": "التصفية حسب الفئة"
+          },
+          "row4": {
+            "feature": "البحث بين المخازن"
+          },
+          "title": "المنتجات"
+        },
+        "header8": {
+          "row1": {
+            "feature": "الشراء أونلاين والاستلام من المتجر"
+          },
+          "row2": {
+            "feature": "الإرجاع في المتجر للطلبات الإلكترونية"
+          },
+          "title": "الطلبات"
+        },
+        "header9": {
+          "row1": {
+            "feature": "واجهة التقارير"
+          },
+          "row2": {
+            "feature": "طباعة تقارير المبيعات والمنتجات"
+          },
+          "row3": {
+            "feature": "تقارير المبيعات والمدفوعات"
+          },
+          "row4": {
+            "feature": "واجهة الطلبات"
+          },
+          "row5": {
+            "feature": "واجهة المبيعات المعلقة"
+          },
+          "title": "التقارير والواجهات"
+        },
+        "reviews": {
+          "title": "المراجعات"
+        }
+      }
+    },
+    "premiumBanner": {
+      "button": "الحصول على كاشير برو اليوم",
+      "description": "استكشف باقة كاشير برو!",
+      "title": "هل تبحث عن المزيد؟"
+    },
+    "sales": {
+      "card1": {
+        "description": "أضف منتجاتك، وأكمل عمليات الدفع، وأصدر الفواتير بسرعة وسهولة بواجهة استخدام مصممة لتوفير الدقة والسرعة.",
+        "title": "إدارة المبيعات بسهولة"
+      },
+      "card2": {
+        "description": "ابقَ على اطلاع دائم بمخزونك وعملائك بأدوات إدارة متزامنة في مكان واحد.",
+        "title": "تحكم في المخزون والعملاء"
+      },
+      "card3": {
+        "description": "وفر لعملائك طرق دفع متعددة تشمل الدفع النقدي، والبطاقات البنكية، وخطط الدفع بالتقسيط.",
+        "title": "خيارات دفع مرنة"
+      },
+      "title": "مبيعات أذكى، وتحكم أفضل!"
+    },
+    "welcomeToZidpos": "مرحبًا بك في زد كاشير"
+  },
+  "zidposHomePage": {
+    "cashAmount": "المبلغ النقدي",
+    "creditCardAmount": "مبلغ بطاقة الائتمان",
+    "posSalesByCashierUser": "مبيعات الكاشير حسب مستخدم الكاشير",
+    "posSalesByLocation": "مبيعات الكاشير حسب الموقع",
+    "selectYourPlan": "اختر خطتك",
+    "transactions": "العمليات"
+  }
+}
