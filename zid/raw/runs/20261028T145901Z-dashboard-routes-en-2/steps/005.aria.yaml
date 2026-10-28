@@ -1,0 +1,103 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new": "1"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home"
+  - button "Apps"
+  - button "Settings" [pressed]
+  - separator
+- list:
+  - link "General":
+    - /url: /en-sa/stores/127604/settings/account
+    - text: General
+    - button
+  - link "Communications":
+    - /url: /en-sa/stores/127604/settings/communications/orders
+  - link "Order notifications":
+    - /url: /en-sa/stores/127604/settings/communications/orders
+  - link "Abandoned cart reminders":
+    - /url: /en-sa/stores/127604/settings/communications/abandoned-carts
+  - link "Product question notifications":
+    - /url: /en-sa/stores/127604/settings/communications/questions
+  - link "Product review notifications":
+    - /url: /en-sa/stores/127604/settings/communications/reviews
+  - link "Store":
+    - /url: /en-sa/stores/127604/settings/information
+    - text: Store
+    - button
+- main:
+  - button
+  - heading "Product review notification settings" [level=5]
+  - paragraph: Notify customers to leave product ratings & reviews
+  - button "Save"
+  - heading "Customer reviews auto-approve & settings" [level=6]
+  - listitem:
+    - paragraph: Notify me by email when customer reviews are received
+    - switch
+  - separator
+  - listitem:
+    - paragraph: Auto-approve for customers reviews
+    - paragraph: Select the minimum rating required for a review to be auto-published without approval.
+    - switch
+  - separator
+  - listitem:
+    - paragraph: Ability for the customers to edit their review
+    - paragraph: Select how long customers can edit their review after submission.
+    - switch
+  - heading "Notify customers by" [level=6]
+  - paragraph: Manage and edit automated notifications related to reviews sent from this you.
+  - checkbox "SMS"
+  - text: SMS
+  - checkbox "Email" [checked]
+  - text: Email
+  - paragraph: Specify how many hours after order completion customers should receive a review request Email.
+  - text: After
+  - spinbutton "After": "1"
+  - paragraph: Hours
+  - separator
+  - text: Email title (Arabic)
+  - textbox "Email title (Arabic)":
+    - /placeholder: عنوان البريد الإلكتروني
+    - text: كتابة عنوان لتشجيع التقييم
+  - paragraph: Number of characters 26 / 40
+  - text: Email title (English)
+  - textbox "Email title (English)":
+    - /placeholder: Email title
+  - paragraph: Number of characters 0 / 40
+  - text: Email text (Arabic)
+  - textbox "Email text (Arabic)":
+    - /placeholder: نص البريد الإلكتروني
+    - text: <p>كتابة محتوى الرساله&nbsp; لتشجيع التقييم</p>
+  - paragraph: Number of characters 47 / 160
+  - text: Email text (English)
+  - textbox "Email text (English)":
+    - /placeholder: Email content
+  - paragraph: Number of characters 0 / 160
+  - text: "Suggested values:"
+  - button "Store Name"
+  - button "Order ID"
+  - button "Order URL"
+  - button "Customer Name"
+  - button "Preview"
+  - checkbox "WhatsApp" [disabled]
+  - text: WhatsApp
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

@@ -1,0 +1,107 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new": "1"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Discounts":
+    - /url: /en-sa/stores/127604/marketing/discounts
+  - link "Bank discounts New":
+    - /url: /en-sa/stores/127604/marketing/bank-discounts
+  - link "Cashback offers New":
+    - /url: /en-sa/stores/127604/marketing/cashback-offers
+  - link "Bundle offers":
+    - /url: /en-sa/stores/127604/marketing/bundle-offers
+  - link "Automated Messages New":
+    - /url: /en-sa/stores/127604/marketing/automated-messages
+  - link "Marketing campaigns":
+    - /url: /en-sa/stores/127604/marketing/campaigns
+  - link "Loyalty program":
+    - /url: /en-sa/stores/127604/marketing/loyalty
+  - link "Customer Referrals Beta":
+    - /url: /en-sa/stores/127604/marketing/referrals
+  - link "Mokafaa program New":
+    - /url: /en-sa/stores/127604/marketing/mokafaa
+  - link "Qitaf New":
+    - /url: /en-sa/stores/127604/marketing/new-qitaf
+  - link "Affiliates":
+    - /url: /en-sa/stores/127604/marketing/affiliates
+  - link "Zid Ads":
+    - /url: /en-sa/stores/127604/apps/2812/embedded
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - heading "Bank Discounts" [level=5]
+  - link "Create":
+    - /url: /en-sa/stores/127604/marketing/bank-discounts/create
+  - textbox "Search"
+  - table:
+    - rowgroup:
+      - row "Discount Name Bank Name Discount Start Date End Date Status":
+        - columnheader "Discount Name"
+        - columnheader "Bank Name"
+        - columnheader "Discount"
+        - columnheader "Start Date"
+        - columnheader "End Date"
+        - columnheader "Status"
+        - columnheader
+  - img
+  - heading "Create your first discount." [level=6]
+  - paragraph: Sometimes, all it takes to complete the purchase is a simple coupon. Try it and see the difference yourself.
+  - link "Create your first discount":
+    - /url: /en-sa/stores/127604/marketing/bank-discounts/create
+  - text: "Rows per page:"
+  - combobox "5"
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

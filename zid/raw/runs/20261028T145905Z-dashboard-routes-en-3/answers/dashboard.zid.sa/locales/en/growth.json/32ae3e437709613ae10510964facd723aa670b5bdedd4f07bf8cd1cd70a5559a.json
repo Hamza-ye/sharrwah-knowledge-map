@@ -1,0 +1,177 @@
+{
+  "analytics": {
+    "conversion": "Conversion",
+    "descriptionForLast30Days": "{{description}} (Last 30 days)",
+    "last30Days": "Last 30 days",
+    "orders": "Orders",
+    "sales": "Sales",
+    "visits": "Visits"
+  },
+  "columns": {
+    "orderCost": "Order cost",
+    "orders": "Orders",
+    "productName": "Product name",
+    "roas": "Roas",
+    "sales": "Sales",
+    "spend": "Spend"
+  },
+  "community": {
+    "activeDescription": "Engage with a thriving network of fellow merchants to exchange valuable insights, discuss best practices, and stay ahead of industry trends.",
+    "count": "Community number",
+    "inactiveDescription": "Join a thriving community of over {{value}} merchants across the gulf region. share experiences, learn from peers, and grow together.",
+    "joinCommunity": "Join community",
+    "openInWhatsApp": "Open in WhatsApp",
+    "statsLabel": {
+      "one": "Active merchants",
+      "three": "Weekly discussions",
+      "two": "Community support"
+    },
+    "title": "Zid community"
+  },
+  "compare": {
+    "averageCartValue": "Average cart value",
+    "compareAverageCartValue": "Compare average cart value",
+    "compareOrders": "Compare orders",
+    "compareSales": "Compare sales",
+    "diffDaysCount": "The number of days between the two dates must be the same",
+    "disableComparison": "Disable comparison",
+    "enableComparison": "Enable comparison",
+    "firstDate": "Select first date",
+    "numberOfDonations": "Number of donations",
+    "sameDateRange": "The two date ranges must be the different",
+    "secondDate": "Select second date",
+    "selectDate": "Select date",
+    "selectIndicator": "Select indicator",
+    "title": "Compare your growth",
+    "totalDonations": "Total donations",
+    "totalOrders": "Total orders",
+    "totalSales": "Total sales",
+    "viewGrowthInsights": "View growth insights",
+    "viewMarketingAnalytics": "View marketing analytics"
+  },
+  "emptyStateCompareYourGrowth": {
+    "createFirstCoupon": "Create first coupon",
+    "description": "Sometimes, all it takes to complete the purchase is a simple coupon. Try it and see the difference yourself.",
+    "title": "70% of customers prefer discount coupons!",
+    "viewGrowthInsights": "View growth insights"
+  },
+  "goals": {
+    "annual": "Annual",
+    "annualLabel": "Your annual goal",
+    "currentOrders": "Current orders",
+    "description": "Setting order goals helps us provide personalized recommendations and insights to boost your business performance. we'll track your progress and suggest actionable steps to reach your targets.",
+    "editGoals": "Edit goals",
+    "editOrdersGoal": "Edit your orders goal",
+    "getHelpToAchieveYourGoals": "Get help to achieve your goals",
+    "goal": "Goal",
+    "monthly": "Monthly",
+    "monthlyLabel": "Your monthly goal",
+    "ordersToGoal": "Orders to goal",
+    "progressTowardsYourGoal": "Progress towards your goal",
+    "title": "Track your goals"
+  },
+  "marketingCalendar": {
+    "benefits": {
+      "benefit1": {
+        "description": "Design offers and discounts linked to the occasion to attract more customers.",
+        "title": "Create special promotional campaigns"
+      },
+      "benefit2": {
+        "description": "Produce occasion-related content for social media and the website.",
+        "title": "Customize marketing content"
+      },
+      "benefit3": {
+        "description": "Change the appearance of your online store to align with the occasion, creating a unique shopping experience.",
+        "title": "Update store design"
+      },
+      "benefit4": {
+        "description": "Offer special or exclusive products related to the occasion to boost sales.",
+        "title": "Launch seasonal products"
+      },
+      "benefit5": {
+        "description": "Create contests or interactive events related to the occasion to enhance customer loyalty.",
+        "title": "Engage with customers"
+      },
+      "benefit6": {
+        "description": "Collaborate with other brands or influencers to create joint campaigns related to the occasion.",
+        "title": "Partnerships and collaborations"
+      },
+      "benefit7": {
+        "description": "Plan campaigns in advance using the attached calendar that highlights important global and local days.",
+        "title": "Use the marketing calendar"
+      },
+      "button": "How to benefit from the calendar",
+      "description": "As an online store owner, you can effectively leverage global and local days in marketing your business in several ways",
+      "helperText": "By leveraging these strategies, you can increase awareness of your online store, attract more visitors, and improve sales during these seasons.",
+      "title": "Utilizing global and local days in marketing for your online store"
+    },
+    "events": {
+      "eidAdha": "Eid Adha",
+      "eidFitr": "Eid Fitr",
+      "hijriNewYear": "Hijri New Year",
+      "newYear": "New Year",
+      "ramadanStart": "Ramadan start",
+      "saudiFlagDay": "Saudi Flag Day",
+      "saudiFoundationDay": "Saudi Foundation Day",
+      "saudiNationalDay": "Saudi National Day"
+    },
+    "leftDay_few": "{{count}} days left",
+    "leftDay_many": "{{count}} days left",
+    "leftDay_one": "One day left",
+    "leftDay_other": "{{count}} days left",
+    "leftDay_two": "Two days left",
+    "leftDay_zero": "Today",
+    "title": "Marketing calendar"
+  },
+  "marketingCampaigns": {
+    "addMarketingChannel": "Add marketing channel",
+    "description": "Add and manage your marketing channels and campaigns",
+    "emptyState": {
+      "description": "Start by connecting your first marketing channel like Google, Meta, TikTok, or Snapchat to unlock campaign insights.",
+      "title": "Ready to track performance?"
+    },
+    "integrateDescription": "Integrate your marketing channel to track your marketing campaigns.",
+    "link": "Link",
+    "linkAdAccount": "Linking ad account",
+    "linkAdAccountDescription": "Please select the ad account to complete the linking process and import the data",
+    "linkSuccess": "Linked successfully",
+    "noAdAccounts": "No ad accounts are linked to this account",
+    "requestMarketingReport": "Request marketing report",
+    "title": "Track your marketing campaigns from one place"
+  },
+  "relationshipManager": {
+    "info": "Get personalized support and guidance to accelerate your business growth with a dedicated relationship manager. available only for merchants with over 2,500 lifetime orders or professional and enterprise merchants.",
+    "requestQualityBusinessReview": "Request a Quarterly Business Review",
+    "scheduleMeeting": "Schedule meeting",
+    "title": "Your relationship manager",
+    "upgradeNow": "Upgrade now",
+    "upgradeNowInfo": {
+      "info1": "- Your store subscription must be on the Professional package with +2,500 Orders.",
+      "info2": "- Your store subscription must be on the Enterprise package.",
+      "title": "To get a relationship manager, you must have one of the following conditions:"
+    }
+  },
+  "services": {
+    "addToCart": "Add to cart",
+    "defaultNumberText": "Your current default number is",
+    "defaultPhone": "Default phone",
+    "expectedTime": "Expected time",
+    "newPhone": "New phone",
+    "removeFromCart": "Remove from cart",
+    "selectPhoneType": "Select phone type",
+    "selectService": "Select service",
+    "serviceLevel": "Service level",
+    "serviceProvider": "Service provider",
+    "showLess": "Show less",
+    "showMore": "Show more",
+    "termsAndConditionsLink": "Terms and Conditions",
+    "termsAndConditionsText": "By completing the order, you agree to",
+    "title": "Recommended growth services for you"
+  },
+  "specialistBanner": {
+    "button": "Apply Now",
+    "description": "Request a growth specialist to help you grow",
+    "title": "Interested in growth?"
+  },
+  "viewReport": "View report"
+}

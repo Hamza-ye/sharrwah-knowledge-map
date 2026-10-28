@@ -1,0 +1,127 @@
+{
+  "alertThemeButton": "Discover themes",
+  "alertThemeDescription": "Your current theme misses out on new storefront features, performance upgrades, and upcoming enhancements — which can slow your store down, weaken your customers' shopping experience, and cost you sales.\nSwitch to a supported theme to keep your store fast, modern, and ready for what's next.",
+  "alertThemeTitle": "Your theme is no longer supported",
+  "browse": {
+    "discoveryBanner": {
+      "description": "Use the new filters and sorting options to quickly narrow down themes based on the features that matter most to you.",
+      "exploreFilters": "Explore filters",
+      "title": "Smarter theme discovery!"
+    },
+    "filters": {
+      "features": "Features",
+      "free": "Free",
+      "industry": "Industry",
+      "paid": "Paid",
+      "price": "Price"
+    },
+    "marketDescription": "Boost your business with Zid Theme Market's limitless, customizable e-commerce themes.",
+    "marketTitle": "Zid theme market",
+    "mostPopular": "Most popular",
+    "newestFirst": "Newest first",
+    "oldestFirst": "Oldest first",
+    "priceHighToLow": "Price: high to low",
+    "priceLowToHigh": "Price: low to high",
+    "resultsCount": "{{start}} - {{end}} of {{total}} themes available",
+    "searchPlaceholder": "Search by category name",
+    "topRated": "Top rated"
+  },
+  "buy": "Buy",
+  "css": {
+    "edit": "Edit CSS",
+    "editTitle": "Edit theme CSS",
+    "updateSuccess": "CSS updated successfully"
+  },
+  "customThemeFormHintText": {
+    "themeFile": "File"
+  },
+  "customThemeSteps": "Custom Theme Steps",
+  "deactivateDialog": {
+    "confirmation": "When you deactivate this theme, the following theme will be activated",
+    "deactivated": "Theme deactivated successfully",
+    "noAvailableTheme": "You can not deactivate this theme",
+    "title": "Deactivate theme"
+  },
+  "discoverThemes": "Discover all themes",
+  "enhancedVersion": "Enhanced version",
+  "enhancedVersionTooltip": "A new and enhanced storefront that improves store speed and boosts conversion rates!",
+  "js": {
+    "edit": "Edit JS",
+    "editTitle": "Edit theme JS",
+    "putCustomJSHere": "Put your custom Javascript snippet here",
+    "updateSuccess": "JS updated successfully"
+  },
+  "overview": {
+    "additionalFeatures": "Additional features",
+    "allReviews": "All reviews",
+    "merchantAbout": "Dear merchant, we care about sharing your experience with this theme",
+    "pleaseWriteReview": "Please, write your review on this theme",
+    "report": "Report",
+    "reviewThemeName": "How do you rate this theme?",
+    "statusRate": "Review has been sent successfully.",
+    "title": "Theme details",
+    "writeReview": "Write a review"
+  },
+  "publicThemes": "Public Themes",
+  "reportDialog": {
+    "issueLabels": {
+      "issueType1": "Issue with customization",
+      "issueType2": "Store interface is not reflecting correctly",
+      "issueType3": "Missing supported features",
+      "issueType4": "Other"
+    },
+    "labels": {
+      "issueDetails": "Issue details",
+      "issueType": "Issue type"
+    },
+    "successMsg": "Issue reported successfully",
+    "title": "Report a problem with this theme"
+  },
+  "themes": {
+    "becomeFirstToActivate": "Be the first to use this theme",
+    "byName": "By: {{name}}",
+    "currentThemeDescription": "Your live storefront design.",
+    "currentThemeTitle": "Current theme",
+    "customThemes": {
+      "actions": {
+        "uploadNewTheme": "Upload new theme"
+      },
+      "columns": {
+        "activateTheme": "Activate theme",
+        "themeName": "Theme name"
+      },
+      "description": "Zid Theme Market provides the ability to customize themes for your store",
+      "title": "Custom themes"
+    },
+    "emptyState": {
+      "description": "Upload new theme or read dev requirements",
+      "devRequirements": "Dev requirements",
+      "title": "Upload new theme",
+      "uploadNewTheme": "Upload new theme"
+    },
+    "notifications": {
+      "activated": "Theme activated successfully",
+      "created": "Theme created successfully",
+      "deleted": "Theme deleted successfully",
+      "missingThemeFile": "Theme file required",
+      "updated": "Theme updated successfully"
+    },
+    "storeActivatedThisTheme": "Stores which have activated this theme:",
+    "suggestedThemesTitle": "Suggested themes",
+    "supportChannels": {
+      "channel": "Support Channel",
+      "website": "Website"
+    },
+    "tabs": {
+      "features": "Features",
+      "ratings": "Ratings & reviews",
+      "support": "Contact details"
+    },
+    "themeLibraryDescription": "View, manage, and customize your installed themes.",
+    "themeLibraryTitle": "Theme library",
+    "viewDetails": "View details"
+  },
+  "upgrade": {
+    "themeLimit": "You have reached the maximum number of custom themes allowed in your current package. To add more, please upgrade your plan."
+  }
+}

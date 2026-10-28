@@ -1,0 +1,6 @@
+{"intent":"open the demo entry in English","do":"goto","url":"https://dashboard.zid.sa/en-sa/demo","settleMs":4000}
+{"intent":"manifest route $lang.stores.$storeId.marketing.bank-discounts","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/marketing/bank-discounts"}
+{"intent":"manifest route $lang.stores.$storeId.finance.wallet_.withdraw","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/finance/wallet/withdraw"}
+{"intent":"manifest route $lang.stores.$storeId.customers.groups_.create","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/customers/groups/create"}
+{"intent":"manifest route $lang.stores.$storeId.analytics.reports._index","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/analytics/reports"}
+{"do":"close"}

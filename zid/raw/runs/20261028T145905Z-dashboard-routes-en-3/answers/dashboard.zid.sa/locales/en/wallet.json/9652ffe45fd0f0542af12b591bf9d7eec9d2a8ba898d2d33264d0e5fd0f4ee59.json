@@ -1,0 +1,405 @@
+{
+  "available": "Available",
+  "availableBalance": "Available balance",
+  "availableBalanceTooltip": "This is the amount you can withdraw or use for payments",
+  "bankAccounts": {
+    "accountHolderName": "Account holder name",
+    "bankName": "Arab National Bank",
+    "ibanNumber": "IBAN number",
+    "reservedBalance": "Reserved balance",
+    "storeOwnerAccountDetails": {
+      "description": "Upon withdrawal, the amount will be deposited into this authorized bank account.",
+      "title": "Store owner bank details"
+    },
+    "walletAccountDetails": {
+      "description": "Your wallet account information in Zid for recharging via bank transfer",
+      "title": "Wallet account details"
+    }
+  },
+  "bankName": "Bank",
+  "bicBank": "Bank",
+  "bicBank_AAALSARI": "Saudi Hollandi Bank",
+  "bicBank_ABDIAEAD": "Abu Dhabi Islamic Bank (UAE)",
+  "bicBank_ABKKKWKW": "Kuwait - Al Ahli Bank of Kuwait",
+  "bicBank_ADCBAEAA": "Abu Dhabi Commercial Bank (UAE)",
+  "bicBank_ALBISARI": "Bank Al-Bilad",
+  "bicBank_ARNBSARI": "Arab National Bank",
+  "bicBank_AUBOOMRU": "Ahli Bank (Oman)",
+  "bicBank_BABELBBE": "Beirut Bank (Lebanon)",
+  "bicBank_BBMEAEAD": "HSBC Bank Middle East Limited (UAE)",
+  "bicBank_BBMEOMR": "HSBC Oman",
+  "bicBank_BBYNKWKW": "Kuwait - Boubyan Bank",
+  "bicBank_BDOFOMRU": "Bank Dhofar (Oman)",
+  "bicBank_BIBBBHBM": "Bahrain Islamic Bank",
+  "bicBank_BJAZSAJE": "Bank Aljazira",
+  "bicBank_BKMEKWKW": "Ahli United Bank",
+  "bicBank_BMUSOMRX": "Bank Muscat (Oman)",
+  "bicBank_BNZWOMRX": "Bank Nizwa (Oman)",
+  "bicBank_BOMLAEAD": "Mashreqbank (UAE)",
+  "bicBank_BRGNKWKW": "Burgan Bank",
+  "bicBank_BSFRSARI": "Banque Saudi Fransi",
+  "bicBank_BSHROMRU": "Bank Sohar (Oman)",
+  "bicBank_CBDUAEAD": "Commercial Bank of Dubai (UAE)",
+  "bicBank_CLIBIAEAD": "Commercial Bank International (UAE)",
+  "bicBank_COMBKWKW": "Commercial Bank of Kuwait",
+  "bicBank_DUIBAEAD": "Dubai Islamic Bank (UAE)",
+  "bicBank_EBILAEAD": "Emirates NBD (UAE)",
+  "bicBank_FGBMAEAA": "First Gulf Bank (UAE)",
+  "bicBank_GULBKWKW": "Gulf Bank of Kuwait",
+  "bicBank_GULFSARI": "Gulf International Bank B.S.C. (GIB) - Meem",
+  "bicBank_INMASARI": "Alinma Bank",
+  "bicBank_KFHOKWKW": "Kuwait Finance House",
+  "bicBank_KWIBKWKW": "Kuwait International Bank",
+  "bicBank_MEBLAEAD": "Emirates Islamic Bank (UAE)",
+  "bicBank_NBADAEAA": "National Bank of Abu Dhabi (UAE)",
+  "bicBank_NBFUAEAF": "National Bank of Fujairah (UAE)",
+  "bicBank_NBOKKWKW": "National Bank of Kuwait",
+  "bicBank_NBOMOMRX": "National Bank of Oman",
+  "bicBank_NBSHAEAS": "Sharjah Islamic Bank (UAE)",
+  "bicBank_NCBKSAJE": "The National Commercial Bank (Saudi Arabia)",
+  "bicBank_NISLAEAD": "Noor Bank (UAE)",
+  "bicBank_NRAKAEAK": "RAKBANK (UAE)",
+  "bicBank_OMABOMRU": "Oman Arab Bank",
+  "bicBank_RIBLSARI": "Riyad Bank",
+  "bicBank_RJHISARI": "Al Rajhi Bank",
+  "bicBank_SABBSARI": "The Saudi British Bank (SABB)",
+  "bicBank_SAMBSARI": "Samba Financial Group (SAMBA)",
+  "bicBank_SHARAEAS": "Bank of Sharjah (UAE)",
+  "bicBank_SIBCSARI": "Saudi Investment Bank",
+  "bicBank_UARBAEAA": "United Arab Bank (UAE)",
+  "bicBank_UMMQAEAA": "National Bank of Umm Al-Qaiwain (UAE)",
+  "bicBank_UNBEAEAA": "Union National Bank (UAE)",
+  "bicBank_WRBAKWKW": "Warba Bank",
+  "credits": "Credits",
+  "currentBalance": {
+    "title": "Current balance",
+    "topupOptions": "Add Funds",
+    "withdraw": {
+      "disabled": "You cannot withdraw funds because your balance is less than the withdrawal fee",
+      "disabledZeroBalance": "You cannot withdraw funds because your balance is less than the withdrawal fee",
+      "pleaseVerify": "Please verify your account to withdraw funds",
+      "title": "Withdraw"
+    }
+  },
+  "funds": {
+    "confirmPayment": "Confirm payment",
+    "creditCardInfo": "Credit card information",
+    "errorCreatingPurchase": "We couldn't create the payment session. Please try again.",
+    "fields": {
+      "amount": {
+        "amountError": "You must enter a value of {{count}} or its multiples only",
+        "amountError_few": "You must enter a value of {{count}} or its multiples only",
+        "amountError_many": "You must enter a value of {{count}} or its multiples only",
+        "amountError_one": "You must enter a value of {{count}} or its multiples only",
+        "amountError_other": "You must enter a value of {{count}} or its multiples only",
+        "amountError_two": "You must enter a value of {{count}} or its multiples only",
+        "amountError_zero": "You must enter a value of {{count}} or its multiples only",
+        "label": "Amount",
+        "placeholder": "Enter amount"
+      }
+    },
+    "nextOperationWillBeChargedValue": "<amount></amount> will be charged for the next operation",
+    "purchaseStatus": {
+      "approved": "Your payment has been approved successfully",
+      "initiated": "We're processing your payment. this should only take a moment.",
+      "pending": "Your payment is in progress. we'll update you as soon as it's complete.",
+      "rejected": "Your payment has been rejected. please try again or contact support"
+    },
+    "storeOwnerAccountDetails": {
+      "description": "Upon withdrawal, the amount will be deposited into this authorized bank account.",
+      "title": "Store owner's account details"
+    },
+    "tabs": {
+      "applePay": "Apple Pay",
+      "creditCards": "Credit cards",
+      "wireTransfer": "Bank transfer"
+    },
+    "walletAccountDetails": {
+      "description": "Your wallet account information in Zid for recharging via bank transfer",
+      "title": "Wallet account details"
+    },
+    "walletVerificationAlert": "Completing your wallet verification will expedite bank transfers: <1>verify wallet</1> now.",
+    "yourNewBalance": "Your new wallet balance will be "
+  },
+  "lowBalance": "Low balance",
+  "newBankAccount": "+ add New Bank Account",
+  "reserved": "Reserved",
+  "reservedBalance": "Reserved balance",
+  "reservedBalanceTooltip": "The reserved balance is the amount temporarily held as payment for a specific service. It cannot be used or withdrawn. It will be reviewed and settled on the due date.",
+  "transactions": {
+    "all": "All",
+    "columns": {
+      "amount": "Amount",
+      "date": "Date",
+      "description": "Description",
+      "service": "Service",
+      "transactionNumber": "Transaction number",
+      "transactionType": "Transaction type"
+    },
+    "credit": "Credit",
+    "debit": "Debit",
+    "emptyState": {
+      "title": "No transactions at the moment"
+    },
+    "filters": {
+      "paymentSource": {
+        "label": "Payment source",
+        "labelCredit": "Prepaid labels",
+        "placeholder": "Select payment source",
+        "wallet": "Wallet"
+      },
+      "paymentType": {
+        "label": "Payment type",
+        "placeholder": "Select payment type"
+      },
+      "service": {
+        "label": "Service",
+        "placeholder": "Select service"
+      },
+      "status": {
+        "placeholder": "Select status"
+      },
+      "transactionNumber": {
+        "label": "Transaction number",
+        "placeholder": "Enter transaction number"
+      },
+      "type": {
+        "label": "Type",
+        "placeholder": "Select type"
+      }
+    },
+    "paymentSource": {
+      "labelCredit": "Prepaid labels",
+      "wallet": "Wallet"
+    },
+    "service": {
+      "addons": "Zid add-ons",
+      "appmarket": "Zid App Market",
+      "marketplaceConnect": "Marketplace connect",
+      "mazeed": "Mazeed",
+      "subscription": "Zid subscription",
+      "wallet": "Zid Wallet",
+      "zidAgent": "Zid Agent",
+      "zidLoyalty": "Zid Loyalty",
+      "zidpay": "Zid Payments",
+      "zidpayDescription": "Collection through ZidPay splitting",
+      "zidship": "Zid Logistics"
+    },
+    "status": {
+      "authorized": "Pending",
+      "cancelled": "Cancelled",
+      "failed": "Failed",
+      "pending": "Pending",
+      "refunded": "Refunded",
+      "success": "Success",
+      "voided": "Voided"
+    },
+    "tabs": {
+      "completed": "Completed",
+      "pending": " Pending"
+    },
+    "title": "Transactions",
+    "transactionType": {
+      "credit": "Credit",
+      "debit": "Debit"
+    }
+  },
+  "verifiedAlert": {
+    "title": "Wallet bank account successfully verified using your Zid Payments information."
+  },
+  "verify": {
+    "addNewBankAccount": "Add new bank account",
+    "confirmInfo": "Confirm info",
+    "fields": {
+      "accountType": {
+        "label": "Business type",
+        "options": {
+          "company": "Company",
+          "individual": "Individual"
+        }
+      },
+      "commercialRegistrationNumber": {
+        "label": "Commercial registration number",
+        "placeholder": "Enter commercial registration number"
+      },
+      "commercialRegistrationPhoto": {
+        "label": "Commercial registration certification"
+      },
+      "idNumber": {
+        "label": "ID number",
+        "placeholder": "Enter ID number"
+      },
+      "mainBankAccount": {
+        "helperText": "To automate operations by default with the wallet",
+        "label": "Main bank account",
+        "placeholder": "Select main bank account"
+      },
+      "nationalIdPhoto": {
+        "label": "Photo of your ID"
+      },
+      "storeOwnerIsWalletManager": {
+        "label": "Store owner is wallet manager"
+      },
+      "walletManagerMobile": {
+        "label": "Wallet manager mobile",
+        "placeholder": "Enter wallet manager mobile"
+      }
+    },
+    "otp": {
+      "codeReSentSuccessfully": "Code re-sent successfully",
+      "description": "Enter the OTP code sent to your phone number",
+      "didntGetCode": "Didn't get the code?",
+      "fields": {
+        "code": {
+          "label": "Code",
+          "placeholder": "Enter code"
+        }
+      },
+      "notVerified": "Code is not verified",
+      "sendAgain": "Send again",
+      "title": "Confirm operation"
+    },
+    "validation": {
+      "10DigitsLength": "Must be exactly 10 digits",
+      "invalidBank": "The bank is invalid. please select a valid bank",
+      "invalidCommercialRegistrationPhoto": "Please upload a valid commercial registration photo",
+      "invalidNationalIdPhoto": "Please upload a valid national id photo",
+      "invalidPhoneNumberFormat": "The phone number is invalid format. please enter a valid phone number",
+      "numbersOnly": "Only numbers are allowed",
+      "required": "This field is required"
+    }
+  },
+  "verifyAccount": {
+    "actions": {
+      "verify": "Verify account"
+    },
+    "title": "Verify your account to easily withdraw your balance from your wallet and to manage all transactions from one place"
+  },
+  "verifyAlert": {
+    "rejected": {
+      "description": "Please contact us for more details",
+      "reason_a_required_field_is_missing_please_complete_all_required_details_and_try_again": "A required field is missing. Please complete all required details and try again.",
+      "reason_additional_information_is_required_for_this_transaction_please_provide_further_details": "Additional information is required for this transaction. Please provide further details.",
+      "reason_authentication_failed_please_check_your_credentials_and_try_again": "Authentication failed. Please check your credentials and try again.",
+      "reason_blocked_account": "Blocked Account.",
+      "reason_closed_creditor_account_number": "Closed Creditor Account Number.",
+      "reason_incorrect_account_number": "Incorrect Account Number",
+      "reason_some_information_provided_is_incorrect_please_review_and_try_again": "Some information provided is incorrect. Please review and try again.",
+      "reason_the_account_associated_with_this_iban_is_active_and_available_for_transactions": "The account associated with this IBAN is active and available for transactions.",
+      "reason_the_account_associated_with_this_iban_is_currently_blocked_please_contact_your_bank_for_assistance": "The account associated with this IBAN is currently blocked. Please contact your bank for assistance.",
+      "reason_the_account_associated_with_this_iban_is_currently_unavailable_please_try_again_later_or_contact_your_bank": "The account associated with this IBAN is currently unavailable. Please try again later or contact your bank.",
+      "reason_the_account_associated_with_this_iban_you_are_trying_to_use_has_been_closed_please_use_a_different_account": "The account associated with this IBAN you are trying to use has been closed. Please use a different account.",
+      "reason_the_account_details_associated_with_this_iban_appear_correct_but_could_not_be_verified_please_check_with_your_bank": "The account details associated with this IBAN appear correct but could not be verified. Please check with your bank.",
+      "reason_the_account_details_associated_with_this_iban_have_been_changed_please_confirm_and_retry": "The account details associated with this IBAN have been changed. Please confirm and retry.",
+      "reason_the_account_number_associated_with_this_iban_for_the_debtor_is_invalid_please_verify_the_details": "The account number associated with this IBAN for the Debtor is invalid. Please verify the details.",
+      "reason_the_account_number_or_iban_entered_is_incorrect_please_check_and_try_again": "The account number or IBAN entered is incorrect. Please check and try again.",
+      "reason_the_account_number_or_iban_entered_is_invalid_please_check_and_enter_the_correct_details": "The account number or IBAN entered is invalid. Please check and enter the correct details.",
+      "reason_the_account_type_associated_with_this_iban_is_not_valid_please_check_and_try_again": "The account type associated with this IBAN is not valid. Please check and try again.",
+      "reason_the_bank_account_associated_with_this_iban_has_been_closed": "The bank account associated with this IBAN has been closed.",
+      "reason_the_branch_code_entered_is_incorrect_please_verify_and_enter_the_correct_code": "The branch code entered is incorrect. Please verify and enter the correct code.",
+      "reason_the_creditor_account_associated_with_this_iban_has_been_closed_please_verify_and_try_again": "The creditor account associated with this IBAN has been closed. Please verify and try again.",
+      "reason_the_creditor_account_type_associated_with_this_iban_is_not_valid_for_this_transaction": "The creditor account type associated with this IBAN is not valid for this transaction.",
+      "reason_the_currency_selected_for_the_creditors_account_associated_with_this_iban_is_invalid_please_check_and_retry": "The currency selected for the creditor's account associated with this IBAN is invalid. Please check and retry.",
+      "reason_the_currency_selected_for_the_debitors_account_associated_with_this_iban_is_invalid_please_verify_and_try_again": "The currency selected for the debitor's account associated with this IBAN is invalid. Please verify and try again.",
+      "reason_the_debtor_account_associated_with_this_iban_has_been_closed_please_verify_and_try_again": "The debtor account associated with this IBAN has been closed. Please verify and try again.",
+      "reason_the_debtor_account_type_associated_with_this_iban_is_not_valid": "The debtor account type associated with this IBAN is not valid.",
+      "reason_the_iban_and_id_details_do_not_match_please_verify_and_enter_the_correct_details": "The IBAN and id details do not match. Please verify and enter the correct details.",
+      "reason_the_iban_provided_does_not_match_the_details_on_record": "The IBAN provided does not match the details on record.",
+      "reason_the_iban_provided_does_not_match_the_details_on_record_please_verify_and_try_again": "The IBAN provided does not match the details on record. Please verify and try again.",
+      "reason_the_id_details_entered_do_not_exist_please_check_and_try_again": "The id details entered do not exist. Please check and try again.",
+      "reason_the_id_entered_does_not_match_account_name": "The ID entered does not match Account Name.",
+      "reason_the_id_type_entered_is_invalid_please_enter_a_valid_id_type": "The id type entered is invalid. Please enter a valid id type.",
+      "reason_the_id_value_entered_is_incorrect_please_verify_and_enter_the_correct_details": "The id value entered is incorrect. Please verify and enter the correct details.",
+      "reason_the_identification_entered_is_not_valid_please_check_and_enter_a_registered_participant_id": "The identification entered is not valid. Please check and enter a registered participant ID.",
+      "reason_the_participant_identifier_entered_is_not_valid_please_verify_and_enter_a_correct_id": "The participant identifier entered is not valid. Please verify and enter a correct ID.",
+      "reason_the_payment_system_is_currently_unavailable_please_try_again_later": "The payment system is currently unavailable. Please try again later.",
+      "reason_the_proxy_you_entered_is_not_registered_please_verify_and_try_again": "The proxy you entered is not registered. Please verify and try again.",
+      "reason_the_receiving_bank_is_currently_unavailable_please_try_again_later": "The receiving bank is currently unavailable. Please try again later.",
+      "reason_the_recipients_bank_is_not_reachable_at_the_moment_please_try_again_later": "The recipient's bank is not reachable at the moment. Please try again later.",
+      "reason_the_selected_currency_is_not_supported_for_the_account_associated_with_this_iban_please_choose_a_valid_currency": "The selected currency is not supported for the account associated with this IBAN. Please choose a valid currency.",
+      "reason_the_selected_participant_is_no_longer_active_please_choose_another_participant": "The selected participant is no longer active. Please choose another participant.",
+      "reason_the_transaction_could_not_be_completed_please_try_again_later": "The transaction could not be completed. Please try again later.",
+      "reason_the_transaction_initiator_is_temporarily_suspended_please_contact_support": "The transaction initiator is temporarily suspended. Please contact support.",
+      "reason_the_transaction_initiator_is_unavailable_please_try_again_later": "The transaction initiator is unavailable. Please try again later.",
+      "reason_the_type_of_account_provided_is_not_supported": "The type of account provided is not supported.",
+      "reason_there_is_an_issue_with_the_creditor_account_number": "There is an issue with the Creditor Account Number.",
+      "reason_there_is_an_issue_with_the_iban_provided": "There is an issue with the IBAN provided.",
+      "reason_there_is_an_issue_with_the_payment_processing_please_contact_saudi_payments_for_assistance": "There is an issue with the payment processing. Please contact Saudi Payments for assistance.",
+      "reason_this_account_associated_with_this_iban_is_currently_under_liquidation": "This account associated with this IBAN is currently under liquidation.",
+      "reason_this_account_is_no_longer_active_due_to_the_account_holders_status": "This account is no longer active due to the account holder's status.",
+      "reason_this_bank_account_associated_with_this_iban_is_blocked": "This bank account associated with this IBAN is blocked.",
+      "reason_this_bank_account_associated_with_this_iban_is_in_liquidation": "This bank account associated with this IBAN is in liquidation.",
+      "reason_this_bank_account_associated_with_this_iban_is_sequestration": "This bank account associated with this IBAN is sequestration.",
+      "reason_this_bank_account_owner_associated_with_this_iban_is_deceased": "This bank account owner associated with this IBAN is deceased.",
+      "reason_this_transaction_appears_to_be_a_duplicate_please_check_your_transaction_history": "This transaction appears to be a duplicate. Please check your transaction history.",
+      "reason_transactions_are_not_allowed_on_the_account_associated_with_this_iban_please_contact_your_bank_for_further_assistance": "Transactions are not allowed on the account associated with this IBAN. Please contact your bank for further assistance.",
+      "reason_transactions_with_future_dates_are_not_supported_please_enter_a_valid_date": "Transactions with future dates are not supported. Please enter a valid date.",
+      "reason_we_dont_support_some_of_the_details_provided_with_the_iban_or_id": "We don't support some of the details provided with the IBAN or ID.",
+      "reason_were_currently_unable_to_complete_the_request_as_the_beneficiary_bank_took_too_long_to_respond_please_try_again_in_a_few_minutes": "We're currently unable to complete the request as the beneficiary bank took too long to respond. Please try again in a few minutes.",
+      "reason_were_currently_unable_to_connect_with_the_receivers_bank_please_try_again_in_a_few_minutes": "We're currently unable to connect with the receiver's bank. Please try again in a few minutes.",
+      "reason_you_have_reached_the_maximum_number_of_retries_for_this_iban_for_the_period_of_12_hours": "You have reached the maximum number of retries for this IBAN for the period of 12 hours.",
+      "rejectionReason": "Reason: {{reason}}",
+      "title": "Wallet verification has been rejected"
+    },
+    "toBeVerified": {
+      "description": "We have received your wallet verification request and the details will be reviewed soon.",
+      "title": "Wallet verification is to be initiated soon"
+    },
+    "underReview": {
+      "description": "We have received your wallet verification request and the details are being confirmed.",
+      "title": "Wallet verification is under review"
+    }
+  },
+  "viewBalances": "View balances",
+  "viewLess": "View less",
+  "wallet-splitting": {
+    "ActivedZidPaymentsDescription": "Set a percentage or fixed amount of each transaction for wallet expenses, such as shipping, add-ons, or internal costs.",
+    "ActivedZidPaymentsMessage": "Split your payments with flexibility.",
+    "NotActiveZidPaymentsMessage": "You have to activate Zid Payments to enable Wallet Splitting.",
+    "active-tag": "Wallet Splitting Activated",
+    "alert": {
+      "btn": "Set up Wallet Splitting",
+      "description": "Set a percentage or fixed amount of each transaction for wallet expenses, such as shipping, add-ons, or internal costs.",
+      "title": "Split your payments with flexibility"
+    },
+    "deactivate-dialog": "Are you sure you want to deactivate Wallet Splitting?",
+    "form": {
+      "amount-type": "Fixed amount",
+      "amount-type-alert": "If the order amount is less than the entered splitting amount, splitting will not apply to this order.",
+      "description": "Select how to split payments",
+      "percentage-type": "Percentage",
+      "waybill-placeholder": "Auto calculated based on the base waybill price only.",
+      "waybill-type": "Waybill Amount"
+    },
+    "setup-btn": "Set up Wallet Splitting",
+    "splitAmount": "Split amount",
+    "title": "Wallet Splitting"
+  },
+  "withdraw": {
+    "availableBalanceForWithdrawal": "Available Balance for Withdrawal",
+    "bankName": "Bank name",
+    "confirmWithdrawal": "Confirm withdrawal",
+    "currentBalance": "Current balance",
+    "durationMessage": "The amount will reach your bank account within 2 to 5 business days",
+    "feeMessage": "A fee of {{value}} will be deducted from the amount to be withdrawn",
+    "fundsDeposit": "Funds will be deposited into this account",
+    "ibanNumber": "IBAN number",
+    "maxLimitError": "The maximum amount that can be withdrawn is {{value}}",
+    "successMessage": "Withdraw request has been created",
+    "withdrawInfo": "Withdraw info",
+    "withdrawalFee": "Withdrawal fee is {{value}}, up until the amount 20000"
+  },
+  "yourReservedBalanceIs": "Your reserved balance is",
+  "zidCredit": "Credit balances",
+  "zidCreditBalances": {
+    "anyZidServices": "Any Zid Services",
+    "appMarket": "App Market",
+    "description": "Use Zid Credit to pay for specific Zid services at checkout",
+    "noCredits": "No credits available",
+    "sms": "SMS",
+    "total": "Total",
+    "zidLogistics": "Zid Logistics",
+    "zidPos": "Zid POS"
+  },
+  "zidCreditTooltip": "Zid Credit can be used to pay for specific Zid services. This balance includes refunds, compensations, or promotional credits from Zid. It cannot be withdrawn."
+}

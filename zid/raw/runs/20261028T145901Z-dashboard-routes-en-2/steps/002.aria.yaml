@@ -1,0 +1,142 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Discounts":
+    - /url: /en-sa/stores/127604/marketing/discounts
+  - link "Bank discounts New":
+    - /url: /en-sa/stores/127604/marketing/bank-discounts
+  - link "Cashback offers New":
+    - /url: /en-sa/stores/127604/marketing/cashback-offers
+  - link "Bundle offers":
+    - /url: /en-sa/stores/127604/marketing/bundle-offers
+  - link "Automated Messages New":
+    - /url: /en-sa/stores/127604/marketing/automated-messages
+  - link "Marketing campaigns":
+    - /url: /en-sa/stores/127604/marketing/campaigns
+  - link "Loyalty program":
+    - /url: /en-sa/stores/127604/marketing/loyalty
+  - link "Customer Referrals Beta":
+    - /url: /en-sa/stores/127604/marketing/referrals
+  - link "Mokafaa program New":
+    - /url: /en-sa/stores/127604/marketing/mokafaa
+  - link "Qitaf New":
+    - /url: /en-sa/stores/127604/marketing/new-qitaf
+  - link "Affiliates":
+    - /url: /en-sa/stores/127604/marketing/affiliates
+  - link "Zid Ads":
+    - /url: /en-sa/stores/127604/apps/2812/embedded
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - button
+  - heading "Loyalty program" [level=5]
+  - button "Deactivate"
+  - heading "Analytics" [level=6]
+  - text: Last 30 days
+  - textbox: 28 Sep - 28 Oct, 2026
+  - paragraph: Earned points
+  - paragraph: Redeemed points
+  - paragraph: Customers with points
+  - heading "Loyalty program" [level=6]
+  - paragraph: Create a content for the loyalty program page.
+  - link "Set up content":
+    - /url: /en-sa/stores/127604/marketing/loyalty/content
+  - heading "Earning points methods" [level=6]
+  - paragraph: Control how your customers earn points and how they can redeem them.
+  - list:
+    - listitem:
+      - paragraph: Purchase from store
+      - text: Every 1wins 1points
+      - switch [checked]
+    - listitem:
+      - paragraph: Purchase from Zid cashier
+      - text: Every 1wins 1points
+      - switch [checked]
+  - button "Save"
+  - button "Edit"
+  - heading "Points expiry period" [level=6]
+  - paragraph: Set how long earned points remain valid.
+  - text: Customer points are valid for
+  - spinbutton "Customer points are valid for": "360"
+  - paragraph: Days
+  - button "Save"
+  - heading "Redeeming points methods" [level=6]
+  - paragraph: Create methods of redemption, you can add up of 10.
+  - table:
+    - rowgroup:
+      - row "Redemption methods Discount value Required points Status Created date":
+        - columnheader "Redemption methods"
+        - columnheader "Discount value"
+        - columnheader "Required points"
+        - columnheader "Status"
+        - columnheader "Created date"
+        - columnheader
+    - rowgroup:
+      - row "Fixed amount 50  1000 Point 2025-06-27 Delete Edit":
+        - cell "Fixed amount"
+        - cell "50 "
+        - cell "1000 Point"
+        - cell:
+          - switch [checked]
+        - cell "2025-06-27":
+          - paragraph: 2025-06-27
+        - cell "Delete Edit":
+          - button "Delete"
+          - button "Edit"
+  - button "Create"
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

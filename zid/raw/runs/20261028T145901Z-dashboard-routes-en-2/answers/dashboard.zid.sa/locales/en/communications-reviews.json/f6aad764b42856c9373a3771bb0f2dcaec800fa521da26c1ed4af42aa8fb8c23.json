@@ -1,0 +1,39 @@
+{
+  "activateAutoApprove": "Auto-approve for customers reviews",
+  "activateAutoApproveDescription": "Select the minimum rating required for a review to be auto-published without approval.",
+  "customerReviewsAutoApproveSettings": "Customer reviews auto-approve & settings",
+  "duration": "Duration",
+  "editPeriod": "Ability for the customers to edit their review",
+  "editPeriodDescription": "Select how long customers can edit their review after submission.",
+  "merchant": {
+    "activate": "Notify me by email when customer reviews are received"
+  },
+  "minimumRating": "Minimum rating",
+  "notification": {
+    "emailAddress": "Email title",
+    "emailAddressPlaceholder": "عنوان البريد الإلكتروني",
+    "emailAddressPlaceholder_ar": "عنوان البريد الإلكتروني",
+    "emailAddressPlaceholder_en": "Email title",
+    "emailText": "Email text",
+    "emailTextPlaceholder": "نص البريد الإلكتروني",
+    "emailTextPlaceholder_ar": "نص البريد الإلكتروني",
+    "emailTextPlaceholder_en": "Email content"
+  },
+  "notifyCustomersBy": "Notify customers by",
+  "notifyCustomersByDescription": "Manage and edit automated notifications related to reviews sent from this you.",
+  "scheduledHours": "Specify how many hours after order completion customers should receive a review request {{channel}}.",
+  "smsMessage": "Message",
+  "smsMessagePlaceholder": "نص الرسالة",
+  "smsMessagePlaceholder_ar": "نص الرسالة",
+  "smsMessagePlaceholder_en": "Enter SMS message",
+  "star1": "1 Star",
+  "star2": "2 Stars",
+  "star3": "3 Stars",
+  "star4": "4 Stars",
+  "star5": "5 Stars",
+  "status": "Review notifications have been updated successfully",
+  "suggestedValues": "Suggested values",
+  "whatsappPlaceholder_ar": "شكرًا {{customer_name}} لاختيارك منتجاتنا 🌟 يهمّنا تقييمك لمنتجاتنا ويسعدنا نسمع رأيك عن تجربتك معنا. تقدر تشاركنا التقييم من خلال الرابط التالي: {{order_url}} رأيك يفرق معنا ويساعدنا نطوّر خدماتنا باستمرار.",
+  "whatsappPlaceholder_en": "Thank you {{customer_name}} for choosing our products 🌟 We truly value your review of our products and would love to hear about your experience with us. You can share your feedback through the link below: {{order_url}} Your feedback helps us improve and serve you better.",
+  "whatsappText": "WhatsApp text"
+}

@@ -1,0 +1,7 @@
+{"intent":"open the demo entry in English","do":"goto","url":"https://dashboard.zid.sa/en-sa/demo","settleMs":4000}
+{"intent":"manifest route $lang.stores.$storeId.marketing.loyalty-programs._index","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/marketing/loyalty-programs"}
+{"intent":"manifest route $lang.stores.$storeId.marketing.cashback-offers_.create","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/marketing/cashback-offers/create"}
+{"intent":"manifest route $lang.stores.$storeId.channels.online-store.seo_.robots","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/channels/online-store/seo/robots"}
+{"intent":"manifest route $lang.stores.$storeId.settings.communications_.reviews","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/settings/communications/reviews"}
+{"intent":"manifest route $lang.stores.$storeId.services.whatsapp.settings_.tags","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/services/whatsapp/settings/tags"}
+{"do":"close"}

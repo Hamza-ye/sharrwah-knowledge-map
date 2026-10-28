@@ -1,0 +1,659 @@
+{
+  "averageRating": "Average rating",
+  "cashbackMilestones": {
+    "afterCompletion": "After completing",
+    "batch": "Batch {{number}}",
+    "order": "orders",
+    "orders": "orders",
+    "status": {
+      "addedToWallet": "Added to wallet",
+      "currentlyUnavailable": "Currently unavailable",
+      "inProgress": "In progress",
+      "waiting": "Waiting"
+    },
+    "subtitle": "Your growth with us means 50% cashback.",
+    "title": "Every step deserves a reward!"
+  },
+  "conversion": "Conversion",
+  "customersReviews": "Customers reviews",
+  "customersReviewsDescription": "What your customers are saying",
+  "default": "Default",
+  "demo": {
+    "actionButton": "Launch your store today",
+    "title": "Experience the store, not the idea.. Explore the demo, then launch yours 🚀"
+  },
+  "discoverGrowthPlan": "Discover the Growth plan now",
+  "donationsByChannel": "Donations by channel",
+  "donorsReviews": "Donors reviews",
+  "donorsReviewsDescription": "What your donors are saying",
+  "firstSaleJourney": {
+    "completed": "Successfully",
+    "copySuccess": "Copied!",
+    "couponPopup": {
+      "action": "Create coupon",
+      "alt": "Coupon preview",
+      "codeLabel": "Coupon code",
+      "codePlaceholder": "Enter coupon code",
+      "discountLabel": "Discount amount (percentage)",
+      "discountPreviewLabel": "Discount",
+      "off": "OFF",
+      "previewCodePlaceholder": "Code",
+      "title": "Create Coupon"
+    },
+    "createCouponFirst": "Create coupon first",
+    "header": {
+      "subtitle": "Almost there, let’s make your first order",
+      "title": "Hey {{name}},"
+    },
+    "preview": "Preview step",
+    "socialBioPopup": {
+      "alt": "Social bio preview",
+      "copyMessage": "Copy message",
+      "markAsDone": "Mark as done",
+      "suggestedBioLabel": "Suggested bio",
+      "template": "🛍️ Quality products you can trust\n📦 Easy ordering & friendly service\n🔗 Store link: {{storeUrl}}\n💰 Coupon code: {{couponCode}}",
+      "title": "Update social bio"
+    },
+    "steps": {
+      "action_coupon": "Create coupon",
+      "action_social_bio": "Update bio",
+      "action_tell_circle": "Share now",
+      "completedTitle_coupon": "Creating coupon for your first customers",
+      "completedTitle_social_bio": "Updating social networks bio",
+      "completedTitle_tell_circle": "Sharing store with friends and family",
+      "description_coupon": "Set a coupon code and discount amount to attract first-time buyers and boost your sales from day one.",
+      "description_social_bio": "Make it easy for visitors to understand what you sell and how to buy. Follow best practices and use the example bio to update your social profiles quickly.",
+      "description_tell_circle": "Share your store link and coupon with friends and family to get your first orders easily. Use the ready-to-send message and suggested channels to spread the word.",
+      "timeEstimate_coupon": "3 mins",
+      "timeEstimate_social_bio": "5 mins",
+      "timeEstimate_tell_circle": "30 Sec",
+      "title_coupon": "Create coupon for your first customers",
+      "title_social_bio": "Update your social networks bio",
+      "title_tell_circle": "Tell Your Circle"
+    },
+    "tellCirclePopup": {
+      "alt": "Tell your circle preview",
+      "markAsDone": "Mark as done",
+      "messageSuggestionLabel": "Message suggestion",
+      "messageTypeLabel": "Message type",
+      "messageTypes": {
+        "description_clearAndDirect": "Hey! I just launched my online store and wanted to share a special discount code with you 🎁\nYou can browse my products here: {{storeUrl}}\nUse the code: ✨ {{couponCode}} ✨ at checkout for an instant discount!\nWould love to hear your thoughts 💬",
+        "description_friendlyAndExcited": "It's official… my online store is live! 😍\nAnd because you're one of the first to know, here's a special discount just for you: ✨ {{couponCode}} ✨\nYou can shop here: {{storeUrl}}\nTry it out and tell me what you think — your feedback means a lot 🙌",
+        "title_clearAndDirect": "Clear and Direct",
+        "title_friendlyAndExcited": "Friendly & Excited"
+      },
+      "moreOptions": {
+        "copyMessage": "Copy message",
+        "sms": "SMS",
+        "telegram": "Telegram"
+      },
+      "shareViaLabel": "Share via",
+      "title": "Tell your circle"
+    }
+  },
+  "fiveSalesJourney": {
+    "header": {
+      "greeting": "Hey {{name}},",
+      "subtitle": "Almost there, let's reach your first 5 sales"
+    },
+    "homeCard": {
+      "currentStep": "Your current step",
+      "ordersProgress": "{{current}}/{{total}} orders",
+      "title": "5 Sales Journey",
+      "viewAllSteps": "View all steps"
+    },
+    "modals": {
+      "buildCredibility": {
+        "businessCenterHint": "Must be 10-11 digits",
+        "fields": {
+          "businessCenter": "Commercial Registration Number",
+          "label_businessCenter": "Commercial Registration Number",
+          "label_facebook": "Facebook",
+          "label_instagram": "Instagram",
+          "label_snapchat": "Snapchat",
+          "label_tiktok": "TikTok",
+          "label_x": "X (Twitter)"
+        },
+        "title": "Build store credibility"
+      },
+      "tutorial": {
+        "dayLabel": "Day {{day}}",
+        "exampleLabel": "Example (adjust to your niche):",
+        "playVideo": "Play video",
+        "scriptLabel": "Idea:",
+        "subtitle": "No followers. No ads. No experience needed.",
+        "title": "How to post on social media",
+        "videos": {
+          "example_day-1": "Fashion: \"A shot of you choosing colors or negotiating with a supplier\"\nElectronics: \"A shot of you testing the product quality\"\nPerfumes: \"A shot of you opening the package or choosing the packaging\"",
+          "example_day-10": "Caps: \"Preparing the first order after 9 months of hard work and late nights\"\nPerfumes: \"The first package going out. A moment I will never forget\"\nAbayas: \"The first order arrived. All the hard work was worth it in an instant\"",
+          "example_day-2": "Caps: \"How do you choose the right cap for your face shape?\"\nGlasses: \"How do you know which glasses suit your face shape?\"\nSoap: \"How do you know if your skin is oily, dry, or sensitive?\"",
+          "example_day-3": "Caps: \"3 things you should not do in summer!\"\nPerfumes: \"The worst time to apply your perfume\"\nShoes: \"3 pairs of shoes that are not suitable for work\"",
+          "example_day-4": "Caps: \"You may not wear a cap, but your brother or friend wears one every day. Give it to him as a gift.\"\nPerfumes: \"You may already have a perfume, but this is the perfect gift for someone you want to make happy.\"\nShoes: \"You may not need a new pair, but someone close to you may be looking for one like it.\"",
+          "example_day-5": "Caps: \"A close-up of the stitching, logo, material, and colors\"\nPerfumes: \"A shot of the bottle, cap, and fine details\"\nAbayas: \"A shot of the fabric, embroidery, and fine details\"",
+          "example_day-6": "Caps: \"Have you ever left the house and had the sun hit your face? This is one of the biggest causes of facial wrinkles.\"\nShoes: \"Have your feet ever started hurting after walking for just an hour?\"\nAbayas: \"Have you ever worn an abaya that felt heavy and uncomfortable after an hour?\"",
+          "example_day-7": "Caps: \"What gets bigger the more you take from it? Answer correctly and win a free cap.\"\nPerfumes: \"Which sense affects your memory the most? Answer correctly and win a free perfume.\"\nAbayas: \"What is the first thing you notice about anyone you see? Answer correctly and win a free abaya.\"",
+          "example_day-8": "Misbah beads: \"Can a misbah cord pull a car without breaking?\"\nPerfumes: \"If we spray our perfume on clothes at night, will it last until the next day?\"\nAbayas: \"What happens if we wash it 10 times in a row?\"",
+          "example_day-9": "Caps: \"Order two caps and get the third free\"\nPerfumes: \"Spend 200 SAR and get a free gift\"\nAbayas: \"Order before the end of the week and get free delivery\"",
+          "script_day-1": "Tap into people’s curiosity. Document your beginnings and the moments you spend preparing your product.",
+          "script_day-10": "Document the first order in every detail: the hard work, late nights, and joy. Genuine emotional moments attract people and encourage them to order from your store.",
+          "script_day-2": "Answer a question people are searching for. Helpful content reaches people faster than content that sells.",
+          "script_day-3": "Do not sell directly. Start with something that sparks the viewer’s curiosity, such as forbidden things or common mistakes, then connect it to your product.",
+          "script_day-4": "Not everyone who sees your product needs it. Speak to those who do not need it and suggest gifting it to someone dear to them.",
+          "script_day-5": "Let customers see every detail of your product. Close-up, professional shots build trust faster than any words.",
+          "script_day-6": "Do not start with the product. Start with the problem and amplify it. When viewers feel that they experience it, your product becomes the natural solution.",
+          "script_day-7": "Go out and ask people questions. Whoever answers correctly wins your product, while viewers keep watching because they either know the answer or want to find it out.",
+          "script_day-8": "Instead of listing your product’s benefits, test it on camera and let viewers judge for themselves.",
+          "script_day-9": "Show your product directly and present your offer clearly. Customers want to know what they get without any runaround.",
+          "title_day-1": "Document your journey",
+          "title_day-10": "First order moment",
+          "title_day-2": "Answer customer questions",
+          "title_day-3": "Curiosity & reverse",
+          "title_day-4": "Turn viewers into gifters",
+          "title_day-5": "Product details showcase",
+          "title_day-6": "Problem & solution",
+          "title_day-7": "Ask & reward",
+          "title_day-8": "Quality bet",
+          "title_day-9": "Product & discount"
+        }
+      }
+    },
+    "sidebar": {
+      "title": "5 Sales journey"
+    },
+    "steps": {
+      "completed": "Completed",
+      "contentEducation": {
+        "actionCapcut": "Download CapCut",
+        "actionTutorial": "Watch tutorial",
+        "description": "Make it easy for visitors to understand what you sell and how to buy. Follow best practices and use the example bio to update your social profiles quickly.",
+        "rewatchTutorials": "Rewatch tutorials",
+        "title": "Content & Traffic Education"
+      },
+      "description_contentEducation": "Make it easy for visitors to understand what you sell and how to buy. Follow best practices and use the example bio to update your social profiles quickly.",
+      "description_optimizationTrust": "Enhance your store with Zid AI: better descriptions, sharper visuals, and a persuasive tone. Add your social links to build trust with customers.",
+      "description_shippingLabel": "Reinvest your earned cashback into purchasing shipping labels to keep orders moving smoothly.",
+      "optimizationTrust": {
+        "actionCredibility": "Build Store Credibility",
+        "actionZidAi": "Optimize with Zid AI",
+        "description": "Enhance your store with Zid AI: better descriptions, sharper visuals, and a persuasive tone. Add your social links to build trust with customers.",
+        "title": "Optimization & Trust Building"
+      },
+      "shippingLabel": {
+        "action": "Go to orders",
+        "description": "Reinvest your earned cashback into purchasing shipping labels to keep orders moving smoothly.",
+        "markComplete": "Mark as complete",
+        "title": "Use Cashback to Purchase Shipping"
+      },
+      "timeEstimate_contentEducation": "35 mins",
+      "timeEstimate_optimizationTrust": "5 mins",
+      "timeEstimate_shippingLabel": "3 mins",
+      "title_contentEducation": "Content & Traffic Education",
+      "title_optimizationTrust": "Optimization & Trust Building",
+      "title_shippingLabel": "Use Cashback to Purchase Shipping"
+    }
+  },
+  "letsGetYourStoreUpAndRunning": "Let's get your store up and running",
+  "liveVisitors": "Live visitors",
+  "liveVisitorsDescription": "Real-time online store visitors",
+  "locationSelection": {
+    "locationAccessError": "Please allow location access to automatically detect your location"
+  },
+  "manageReviews": "Manage reviews",
+  "marketingPromotions": "Marketing promotions",
+  "marketingPromotionsDescription": "Promotions and discounts",
+  "monthlyRevenue": {
+    "enterprise": "Enterprise (1m SAR < )",
+    "large": "Large (400k - 1m SAR)",
+    "medium": "Medium (40k - 399k SAR)",
+    "small": "Small (< 40k SAR)"
+  },
+  "newestDonations": "Newest Donations",
+  "newestOrders": "Newest orders",
+  "newestOrdersEmptyState": {
+    "button": "Create campaign",
+    "description": "Send targeted messages to your customers right from your dashboard — at the perfect time.",
+    "ngoDescription": "Send targeted messages to your donors right from your dashboard — at the perfect time.",
+    "title": "Campaigns that reach and sell"
+  },
+  "noonSwitchNotification": {
+    "body": "In our commitment to providing you with the best experience, we wish to inform you that our payment gateway will be updated. To keep automatic renewal running without interruption, please re-add your bank card as soon as you can.\n\nPlease note that saving a card in the system requires completing a purchase, namely a subscription renewal, to confirm the card is activated and ready for future renewals.\n\nWe thank you for your cooperation and understanding.",
+    "title": "Dear merchant,"
+  },
+  "numberOfDonations": "Number of Donations",
+  "onboarding": {
+    "addProduct": {
+      "addProduct": "Add product",
+      "addProductManually": "Add products manually",
+      "description": "Start by adding your first product with some key details like name, description, and image. Not ready! Start with a sample product.",
+      "findProduct": "Find product",
+      "form": {
+        "productDescription": "Product description",
+        "productDescriptionPlaceholder": "It is a long established fact that a reader will be distracted",
+        "productName": "Product name",
+        "productNameHelpText": "Number of characters 4 / 20",
+        "productNamePlaceholder": " e.g., Test",
+        "productPrice": "Product price",
+        "unlimitedInventory": "Unlimited inventory",
+        "uploadProductPhotos": "Upload product photos"
+      },
+      "headingTitle": "Add your first product",
+      "importData": "Import",
+      "timeChip": "5 mins",
+      "title": "Add your first product"
+    },
+    "addYourBranding": {
+      "action": "Add branding",
+      "description": "Reflect your visual identity on your store through colors, a logo, and an icon. And if you need a hand, click on 'Zid AI Support 🤖'.",
+      "domain": {
+        "cannotEndWithHyphen": "Domain cannot end with a hyphen (-)",
+        "cannotStartWithHyphen": "Domain cannot start with a hyphen (-)",
+        "currentDomainLoadFailed": "We couldn't load your store's current domain. Close this dialog and open it again to try.",
+        "invalidCharacters": "Domain must only contain letters (a-z), numbers (0-9), and hyphens (-)",
+        "placeholder": "Eg. \"papermoon\" or \"paper-moon\"",
+        "title": "what's your domain",
+        "tooLong": "Domain must not exceed {{max}} characters",
+        "tooShort": "Domain must be at least {{min}} characters",
+        "unavailable": "This domain is unavailable, try another one"
+      },
+      "form": {
+        "optional": "(optional)",
+        "primaryColor": "Primary color",
+        "secondaryColor": "Secondary color",
+        "selectColor": "Select color",
+        "selectFile": "Select file",
+        "storeIcon": "Store icon",
+        "storeLogo": "Store logo"
+      },
+      "timeChip": "3 mins",
+      "title": "Add your branding",
+      "updateStoreInfo": "Zid AI Support 🤖"
+    },
+    "cashback": {
+      "description": "Complete all onboarding steps within 24 hours and get rewarded.",
+      "description100": "Complete all onboarding steps and get rewarded.",
+      "title": "Earn {{amount}} <0/> Cashback",
+      "title100": "Earn {{amount}} <0/> Cashback"
+    },
+    "congrats": {
+      "action": "Start your first sale journey",
+      "description": "Also, the cashback has been added to your wallet and can be used to purchase up to 5 shipping labels!",
+      "items": "Product ✅, Brand ✅, Theme ✅, Shipping ✅, Payment ✅",
+      "itemsWithoutPayment": "Product ✅, Brand ✅, Theme ✅, Shipping ✅",
+      "subtitle": "Your store is ready for the first sale!",
+      "title": "Congrats 🎉"
+    },
+    "description": "Complete the following steps in order to have a ready integrated store for selling your products and services online and to receive your cashback!",
+    "done": {
+      "action": "Optimize your store",
+      "share": "Share you store with your customers",
+      "text": "Optimize your store for better performance and sales",
+      "title": "Congratulations, your store is ready to receive orders!"
+    },
+    "exploreServices": {
+      "card": {
+        "action": "Explore service",
+        "description": "Let our experts build and configure your store for you from scratch.",
+        "title": "🚀 Need help setting up?"
+      },
+      "description": "We provide services to help you build your store.",
+      "empty": {
+        "description": "We're preparing services to help you complete this step. Check back soon.",
+        "title": "Services coming soon"
+      },
+      "title": "Explore Services"
+    },
+    "importData": {
+      "description": "Quickly migrate your products and customers.\n Just upload your data.",
+      "form": {
+        "customersImportedSuccessfully": "Customers imported successfully",
+        "description": "Choose how you'd like to import your products and customers to your store",
+        "downloadTemplate": "Download template",
+        "downloadTemplateAll": "Download template of all product information",
+        "downloadTemplateEssential": "Download template of essential product information",
+        "importCustomer": "Import customers",
+        "importMultiCustomer": "Import your existing customer database using a CSV file",
+        "importMultiProducts": "Import multiple products at once using a CSV file.",
+        "importProducts": "Import products",
+        "productsImportedSuccessfully": "Products imported successfully",
+        "uploadCSVFile": "Upload CSV File"
+      },
+      "importFiles": "Import files",
+      "title": "Import Your Products & Customers"
+    },
+    "importProducts": {
+      "description": "Choose how you'd like to import your products to your store",
+      "title": "Import Your Products"
+    },
+    "intercomButton": {
+      "label": "Having Issue With Onboarding?"
+    },
+    "paymentActivation": {
+      "activate": "Activate",
+      "bankSectionTitle": "Upload bank details",
+      "cancel": "Cancel",
+      "description": "Activate Payment method in seconds to finalize your store setup and get ready for your first sale.",
+      "dialogTitle": "Payment method activation",
+      "error": "Failed to activate payment method. Please try again.",
+      "success": "Payment method activated successfully",
+      "title": "Activate Payment Method",
+      "validation": {
+        "ibanFormat": "Please enter a valid IBAN (e.g., SA followed by digits)",
+        "ibanInvalid": "The IBAN number is incorrect. Please check and try again.",
+        "max": "Must not exceed 100 characters",
+        "required": "This field is required",
+        "swiftFormat": "Please enter a valid SWIFT code (8-11 alphanumeric characters)"
+      }
+    },
+    "paymentIntegration": {
+      "action": "Activate it now",
+      "description": "In just a few steps, finalize your setup, and get ready for your first sale!",
+      "title": "Finally, Activate Payment Gateway"
+    },
+    "progress": "{{done}} of {{total}} tasks completed",
+    "salesConsultation": {
+      "action": "Contact us",
+      "aiAgent": "Zid Ai Agent",
+      "contactInfo": {
+        "alertDescription": "The sales team will contact you within 24 hours to launch your store",
+        "alertTitle": "Almost there",
+        "description": "How can we contact you?",
+        "phone": "Phone number",
+        "phonePlaceholder": "Eg. 055433332",
+        "preferredTime": "Preferred contact time",
+        "sendRequest": "Send request",
+        "time": {
+          "afternoon": "Afternoon (12-3 PM)",
+          "evening": "Evening (3-6 PM)",
+          "morning": "Morning (9-11 AM)"
+        },
+        "title": "Contact info"
+      },
+      "description": "Our sales team is here to help you find the best solution for your business",
+      "dialog": {
+        "description": "Help us understand your needs better.",
+        "stepIndicator": "Step {{current}} of {{total}}",
+        "title": "Free consultation"
+      },
+      "form": {
+        "successMessage": "Your request has been sent successfully, our sales team will contact you soon"
+      },
+      "storeDetails": {
+        "description": "Tell us more about your store",
+        "ecommerceExperience": "Ecommerce experience",
+        "expectedProducts": "Expected number of products",
+        "experience": {
+          "advanced": "Advanced",
+          "beginner": "Beginner",
+          "intermediate": "Intermediate"
+        },
+        "monthlySales": "Expected monthly sales",
+        "products": {
+          "11to50": "11-50 products",
+          "1to10": "1-10 products",
+          "50plus": "More than 50 products"
+        },
+        "shipping": {
+          "localAndInternational": "Local and international",
+          "localOnly": "Local only",
+          "notSure": "Not sure"
+        },
+        "shippingNeeds": "Shipping needs",
+        "team": {
+          "20plus": "More than 20",
+          "2to5": "2-5 people",
+          "6to20": "6-20 people",
+          "solo": "Solo (one person)"
+        },
+        "teamSize": "Team size",
+        "title": "Store details"
+      },
+      "title": "Need a free consultation from the sales team?"
+    },
+    "sell": {
+      "payments": {
+        "actionIntegration": "Payment gateway integration",
+        "actionSetup": "Set up now",
+        "text": "Link your bank, activate and enable payment networks",
+        "title": "Set up payments"
+      },
+      "products": {
+        "action": "Add now",
+        "text": "Add your products to start selling",
+        "title": "Add your products"
+      },
+      "title": "Sell"
+    },
+    "setupLocation": {
+      "action": "Setup location",
+      "confirmAddress": "Confirm registered address",
+      "description": "Specify the pickup location for your orders here, and we’ll activate the shipping services instantly.",
+      "form": {
+        "action": "Use current location",
+        "description": "Select your pickup location on the map or use your current location",
+        "searchNotFound": "Location not found, try a different address",
+        "searchPlaceholder": "Search by address, short national address, or Google Maps link",
+        "shortAddressSaveError": "Failed to save the short address. Please try again.",
+        "shortNationalAddressPlaceholder": "e.g. ABCD1234 (4 letters + 4 numbers)"
+      },
+      "timeChip": "3 secs",
+      "title": "Set your shipment pickup location"
+    },
+    "ship": {
+      "shipment": {
+        "actionLogisticsActivation": "Activate now",
+        "actionLogisticsIntegration": "Shipping provider integration",
+        "text": "Activate and manage logistics settings for your store",
+        "title": "Get your store ready to ship"
+      },
+      "title": "Ship"
+    },
+    "shippingIntegration": {
+      "action": "Activate it now",
+      "description": "Specify the pickup location for your orders here, and we’ll activate the shipping services instantly.",
+      "title": "Activate a Shipping Provider"
+    },
+    "start": {
+      "identity": {
+        "action": "Get started",
+        "text": "Build a brand that reflects you",
+        "title": "Create your store identity"
+      },
+      "location": {
+        "action": "Add address",
+        "text": "Help customers find and connect with your business",
+        "title": "Add your business location"
+      },
+      "title": "Start",
+      "verification": {
+        "action": "Complete details",
+        "text": "Just a few details to complete your profile",
+        "title": "Get your business verified"
+      }
+    },
+    "supportPhoneNumber": {
+      "action": "Confirm the Registered",
+      "description": "Add a support number for your customers. You can either confirm the registered number {{phone}} or add a new support number",
+      "form": {
+        "description": "Enter a number where customers can reach you.",
+        "newNumber": "New number",
+        "placeholder": "+996 51 234 5782",
+        "useRegisteredNumber": "Use registered number"
+      },
+      "timeChip": "30 secs",
+      "title": "Confirm the support phone number",
+      "updateNew": "Add new number"
+    },
+    "taskCompletedSuccessfully": "Task Completed Successfully",
+    "title": "Welcome to our Zid! 🚀 Let’s start the journey of setting up your store.",
+    "verfiyBusiness": {
+      "action": "Start Verification",
+      "description": "Complete a quick and secure verification to unlock all features and start selling. It’s fast, effortless, and builds trust with your customers instantly.",
+      "descriptionNafath": "In just a few steps, finish the Nafath verification to activate payments, finalize your setup, and get ready for your first sale!",
+      "form": {
+        "CRnumber": "CR number",
+        "CRnumberPlaceholder": "Enter your CR",
+        "IbanNumber": "IBAN number",
+        "IbanNumberPlaceholder": "Enter your IBAN",
+        "attachFreelanceCertificate": "Attach your freelance certificate",
+        "attachYourId": "Attach your ID",
+        "avgMonthlyPaymentTransactions": "Average number of payment transactions monthly",
+        "beneficiaryName": "Beneficiary name",
+        "beneficiaryNamePlaceholder": "Enter your beneficiary name in English",
+        "birthDate": "Birth Date",
+        "entityType": "Entity Type",
+        "expectedMonthlyPaymentSalesVolume": "Expected sales volume for payments in a month",
+        "freelanceCertificateId": "Freelance certificate ID",
+        "freelanceCertificateIdPlaceholder": "Enter certificate ID",
+        "idNumber": "ID Number",
+        "idNumberPlaceholder": "Enter your ID number",
+        "title": "Verify your business",
+        "unnNumber": "UNN number",
+        "unnPlaceholder": "Enter your UNN",
+        "vatNumber": "VAT number",
+        "vatNumberPlaceholder": "Enter your VAT"
+      },
+      "timeChip": "5 mins",
+      "title": "Get verified in seconds",
+      "titleNafath": "Finally, Verify via Nafath"
+    },
+    "wizardButton": "Onboarding Wizard",
+    "zidPayActivation": {
+      "action": "Activate it now",
+      "description": "Finally, activate payments in just a few steps, finalize your setup, and get ready for your first sale!",
+      "title": "Activate Payments"
+    }
+  },
+  "orderMilestones": "Order milestones",
+  "orderMilestonesDescription": "Track your order targets and unlock rewards",
+  "orders": "Orders",
+  "passkeyOffer": {
+    "description": "Use your fingerprint, face or screen lock instead of waiting for a verification code. You can still sign in with a code at any time.",
+    "notNow": "Not now",
+    "title": "Sign in faster with biometrics"
+  },
+  "paymentHistory": "Payment history",
+  "pendingReviews": "Pending reviews",
+  "pendingUsagePayment": {
+    "action": "Pay",
+    "description": "Please settle the pending payments as soon as possible to ensure that you continue to benefit from the application's features without interruption.",
+    "title": "You have pending payments in application {{appName}}"
+  },
+  "publishedReviews": "Published reviews",
+  "sales": "Sales",
+  "salesByChannel": "Sales by channel",
+  "salesBySource": "Sales by source",
+  "shortAddress": {
+    "invalid": "Short address must be 4 letters followed by 4 digits (e.g., ABCD1234)"
+  },
+  "swiper": {
+    "aiAgent": {
+      "description": "7 uses and with any AI tool you prefer ✅\nConnect for free now →",
+      "title": "Not just one use"
+    },
+    "top100Orders": {
+      "description": "Join for Free",
+      "title": "With You to Your First 100 Orders"
+    },
+    "topEmkan": {
+      "description": "One click for you to activate",
+      "title": "4 Installments for your customer"
+    },
+    "topGrowthSpecialist": {
+      "description": "Request a growth specialist to help you grow",
+      "title": "Interested in growth?"
+    },
+    "topJahezND": {
+      "description": "Activate Jahez now",
+      "title": "Get ready for Saudi National Day with Jahez 🇸🇦"
+    },
+    "topNDBanner": {
+      "description": "Cashback on every order, with an additional subscription on your current 💸",
+      "title": "Your business with Zid pays back"
+    },
+    "topQitaf": {
+      "description": "They pay, they earn… you sell more",
+      "title": "Qitaf on your store! 👀"
+    },
+    "topQuickDonation": {
+      "description": "Enable quick donation now",
+      "title": "Bring giving closer"
+    }
+  },
+  "tasksCompleted": "{{min}} of {{max}} tasks completed",
+  "thisMonth": "This month",
+  "thisYear": "This year",
+  "topDonationsProducts": "Most opportunities donated",
+  "topSellingProducts": "Best-selling products",
+  "totalDonations": "Total Donations",
+  "totalReviews": "Total reviews",
+  "userRole": {
+    "clientSetup": "Setting up for a client",
+    "curious": "Just curious",
+    "cxoVp": "CXO/VP",
+    "influencer": "Social media influencer",
+    "soloEntrepreneur": "Solo entrepreneur",
+    "teamManager": "Team manager",
+    "title": "What best describes you?"
+  },
+  "viewAllDonations": "View all donations",
+  "viewAllOrders": "View all orders",
+  "viewAllProducts": "View all products",
+  "viewAnalytics": "View analytics",
+  "viewDetails": "View details",
+  "viewReport": "View report",
+  "visits": "Visits",
+  "widgets": {
+    "banner": {
+      "description": "What's new from Zid, and offers for your store.",
+      "name": "Announcements"
+    },
+    "compareGrowth": {
+      "description": "This period against the one before it.",
+      "name": "Growth comparison"
+    },
+    "customersReviews": {
+      "description": "The latest ratings your customers left.",
+      "name": "Customer reviews"
+    },
+    "fiveSalesJourney": {
+      "description": "The steps left to your first five orders.",
+      "name": "First five sales"
+    },
+    "goals": {
+      "description": "Your progress toward your next order milestone.",
+      "name": "Goals"
+    },
+    "liveVisitors": {
+      "description": "Who is browsing your store right now.",
+      "name": "Live visitors"
+    },
+    "ordersTable": {
+      "description": "Your most recent orders and their status.",
+      "name": "Latest orders"
+    },
+    "productsTable": {
+      "description": "Your most recently added products.",
+      "name": "Top products"
+    },
+    "salesAnalytics": {
+      "description": "How your sales break down across channels.",
+      "name": "Sales by channel"
+    },
+    "statConversion": {
+      "description": "Share of visits that became orders.",
+      "name": "Conversion rate"
+    },
+    "statOrders": {
+      "description": "Number of orders over the selected period.",
+      "name": "Orders"
+    },
+    "statSales": {
+      "description": "Total sales over the selected period.",
+      "name": "Sales"
+    },
+    "statVisits": {
+      "description": "Store visits over the selected period.",
+      "name": "Visits"
+    }
+  }
+}

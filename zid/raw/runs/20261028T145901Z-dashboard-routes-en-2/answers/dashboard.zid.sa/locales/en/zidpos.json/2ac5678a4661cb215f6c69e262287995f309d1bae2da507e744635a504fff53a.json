@@ -1,0 +1,1065 @@
+{
+  "cashiers": {
+    "activateAdditionalFields": "Activate additional fields",
+    "addCashier": "Add Cashier",
+    "cashierData": "Cashier's data",
+    "cashierUpdatedSuccessfully": "Cashier information updated successfully",
+    "cashiersLocationUpdatedSuccessfully": "Cashiers location updated successfully",
+    "columns": {
+      "cashierName": "Cashier's name",
+      "expirationDate": "Expiration date",
+      "referenceName": "Reference name",
+      "statusVariants_ongoing": "Active",
+      "statusVariants_suspended": "Expired",
+      "statusVariants_warning": "Expiring Soon"
+    },
+    "commercialRegistration": "Commercial registration number",
+    "inputs": {
+      "fieldContent": {
+        "label": "Field content",
+        "placeholder": "Type field content"
+      },
+      "fieldTitle": {
+        "label": "Field title",
+        "placeholder": "Select field title"
+      }
+    },
+    "inventory": {
+      "label": "Inventory",
+      "placeholder": "Select assigned inventory"
+    },
+    "linkToInventory": "Assign to inventory / branch",
+    "linkingTheCashierToTheInventory": "Linking the cashier to the inventory",
+    "locationBranch": "Inventory / branch",
+    "numbersOnly": "Only a max of 10 digits of numbers are allowed"
+  },
+  "emptyStateCardTitle": "Zid pos reports",
+  "exportContent": {
+    "description": "The orders will be sent to the email",
+    "email": {
+      "label": "Email",
+      "placeholder": "Type the email"
+    },
+    "frequency": {
+      "daily": "Daily",
+      "monthly": "Monthly",
+      "title": "Frequency",
+      "weekly": "Weekly"
+    },
+    "success": "The orders will be sent to the email",
+    "title": "Export all orders"
+  },
+  "filters": {
+    "dateRangeTitle": "Select date range",
+    "fields": {
+      "cashier": {
+        "label": "Cashier",
+        "placeholder": "Select cashier"
+      },
+      "cashierUser": {
+        "label": "Cashier user",
+        "placeholder": "Select cashier user"
+      },
+      "coupon": {
+        "label": "Coupon",
+        "placeholder": "Select coupon"
+      },
+      "sessionEndCashierUser": {
+        "label": "Closed by",
+        "placeholder": "Closed by"
+      },
+      "sessionStartCashierUser": {
+        "label": "Started by",
+        "placeholder": "Started by"
+      }
+    },
+    "general": "General",
+    "generalTitle": "General",
+    "options": {
+      "cashier": "Cashier",
+      "cashierUser": "Cashier user",
+      "coupon": "Coupon"
+    }
+  },
+  "freemium": {
+    "activateDialog": {
+      "description": "Download the app to start accepting payments. Scan the QR code or click below to download ZidPOS from the store.",
+      "downloadBtn": "Download ZidPOS",
+      "inputPlaceholder": "Enter email or phone number",
+      "sentBtn": "Send link",
+      "title": "Your POS is now active"
+    },
+    "btn": "Activate POS Go",
+    "title": "Start POS Go",
+    "whatIsIncluded": {
+      "feature1": {
+        "description": "Create and complete pickup transactions easily through ZidPOS app, helping you serve customers faster.",
+        "title": "Quick Sales Creation"
+      },
+      "feature2": {
+        "description": "Add products to transactions, search by name, SKU, or barcode, and attach customer details or notes to each sale.",
+        "title": "Product & Customer Management"
+      },
+      "feature3": {
+        "description": "Support for multiple payment methods like cash, Tabby, Tamara, and payment links, all synced and ready to use.",
+        "title": "Flexible Payment Options"
+      },
+      "feature4": {
+        "description": "Share invoices instantly via QR code or NFC, offering a smooth and contactless customer experience.",
+        "title": "Smart Invoice Sharing"
+      },
+      "feature5": {
+        "description": "Easily process full or partial returns and view past transaction information directly from the app.",
+        "title": "Returns & Transaction History"
+      },
+      "feature6": {
+        "description": "Keep your sales data up-to-date across all devices with automatic syncing, ensuring accurate and seamless record-keeping.",
+        "title": "Real-Time Transaction Syncing"
+      },
+      "title": "What's included in POS Go"
+    },
+    "zidpayNotActivatedError": "You need to activate ZidPay before activating ZidPOS Go"
+  },
+  "generalSettingsPage": {
+    "defaultPickupOrderStatus": {
+      "description": "Set the default status for POS pickup orders.",
+      "selectLabel": "Select a status",
+      "title": "Default status for POS pickup orders"
+    },
+    "locationBasedAccess": {
+      "alert": "Make sure the team member is added as a cashier in the <1>Team Management</1> page, then assign a location to each cashier from the <2>Cashiers</2> page.",
+      "description": "Restrict staff access to POS data and registers based on their assigned locations.",
+      "title": "Enable location-based POS access"
+    },
+    "savedSuccessfully": "General settings saved successfully",
+    "statuses": {
+      "delivered": "Delivered",
+      "new": "New"
+    },
+    "stopNotifications": {
+      "description": "Get notified in the Zid App when POS orders are created",
+      "title": "POS order push notifications"
+    }
+  },
+  "invoiceTemplateEditor": {
+    "content": {
+      "fields": {
+        "bottomText": {
+          "label": "Bottom text",
+          "placeholder": "Powered by Zid"
+        },
+        "cashOnDelivery": {
+          "label": "Cash on delivery:",
+          "value": "45.00 SAR"
+        },
+        "cashierName": {
+          "label": "Cashier name:",
+          "placeholder": "Salem bin Mohammed"
+        },
+        "cashierUsername": {
+          "label": "Cashier username:",
+          "placeholder": "Abu Huda"
+        },
+        "commercialRegistration": {
+          "label": "Commercial registration number:",
+          "placeholder": "12345"
+        },
+        "customFieldLabel": {
+          "label": "Custom field label",
+          "placeholder": "---"
+        },
+        "customFieldValue": {
+          "label": "Custom field text area",
+          "placeholder": "---"
+        },
+        "customFields": {
+          "label": "Custom fields:"
+        },
+        "customerName": {
+          "label": "Customer name:",
+          "placeholder": "Mohammed bin Abdulrahman"
+        },
+        "customerNote": {
+          "label": "Order Notes",
+          "placeholder": "--- No notes ---"
+        },
+        "customerNumber": {
+          "label": "Customer number:",
+          "placeholder": "0531112233"
+        },
+        "delivery": {
+          "label": "Delivery:",
+          "value": "500.00 SAR"
+        },
+        "deliveryDiscount": {
+          "label": "Delivery discount:",
+          "value": "-500.00 SAR"
+        },
+        "discounts": {
+          "label": "Discounts (ZID 10):",
+          "value": "-50.00 SAR"
+        },
+        "invoiceDate": {
+          "label": "Invoice date:",
+          "placeholder": "2022-10-07 | 03:00ص"
+        },
+        "invoiceNumber": {
+          "label": "Invoice number:",
+          "placeholder": "20995032022121433"
+        },
+        "invoiceNumberBarcode": {
+          "label": "Invoice number barcode"
+        },
+        "invoiceStatus": {
+          "label": "Invoice status:",
+          "placeholder": "Delivered"
+        },
+        "orderCounter": {
+          "label": "Order Counter:",
+          "placeholder": "23"
+        },
+        "orderNumber": {
+          "label": "Order number"
+        },
+        "orderNumberBarcode": {
+          "label": "Order number barcode"
+        },
+        "paymentMethod": {
+          "label": "Payment method:",
+          "placeholder": "Mada"
+        },
+        "paymentStatus": {
+          "label": "Payment status:",
+          "placeholder": "Completed"
+        },
+        "priceDetails": {
+          "label": "Price details:"
+        },
+        "productLine": {
+          "label": "{{index}}. Sample product name with long and variable characters {{index}}:",
+          "productSku": "ZD-1043",
+          "productWeight": "24.26 KG",
+          "quantity": "X3",
+          "taxAmount": "183.07 SAR",
+          "taxAmountPerUnit": "61.02 SAR",
+          "taxRate": "VAT 15%",
+          "unitPriceInclTax": "434.87 SAR",
+          "value": "1,403.56 SAR"
+        },
+        "products": {
+          "label": "Products:"
+        },
+        "returnAndExchangePolicy": {
+          "label": "Return and exchange policy:",
+          "placeholder": "Please write your Return & Exchange Policy"
+        },
+        "simplifiedTaxInvoice": {
+          "label": "Simplified Tax Invoice",
+          "value": "فاتورة ضريبية مبسطة"
+        },
+        "storeLocationAddress": {
+          "label": "Store location address:",
+          "placeholder": "Kuwait, Abraq Khaitan"
+        },
+        "storeLogo": {
+          "label": "Store logo"
+        },
+        "storeMessage": {
+          "label": "Store message",
+          "placeholder": "Thank you for visiting"
+        },
+        "storeName": {
+          "label": "Store name",
+          "placeholder": "Zbrandsa"
+        },
+        "subtotalExclVat": {
+          "label": "Subtotal (excl. VAT):",
+          "value": "868.14 SAR"
+        },
+        "taxableAmount": {
+          "label": "Taxable amount:",
+          "value": "868.14 SAR"
+        },
+        "total": {
+          "label": "Total:",
+          "value": "995.00 SAR"
+        },
+        "totalProducts": {
+          "label": "Total products:",
+          "value": "995.00 SAR"
+        },
+        "totalProductsIncludingVat": {
+          "label": "Total products including VAT:",
+          "value": "1000.00 SAR"
+        },
+        "vat": {
+          "label": "VAT (15%):",
+          "value": "130.22 SAR"
+        },
+        "vatNumber": {
+          "label": "VAT number:",
+          "placeholder": "16544645461561"
+        },
+        "zatcaQrCode": {
+          "label": "ZATCA QR code"
+        }
+      }
+    },
+    "header": {
+      "deleteConfirmation": "Are you sure you want to delete this invoice template?",
+      "updatedDate": "Updated date: {{date}}"
+    },
+    "sidebar": {
+      "customize": {
+        "additionalFields": "Additional fields",
+        "cashierDetails": "Cashier details",
+        "customerDetails": "Customer details",
+        "description": "All changes apply across all theme pages",
+        "invoiceDetails": "Invoice details",
+        "notesAndMessages": "Notes & Messages",
+        "orderAndPayment": "Order & Payment",
+        "orderAndTaxDetails": "Order & Tax details",
+        "productDetails": "Product details",
+        "productPrice": "Product price",
+        "storeInformation": "Store information",
+        "tabs": {
+          "body": "Body",
+          "footer": "Footer",
+          "header": "Header"
+        },
+        "title": "Customize"
+      },
+      "fields": {
+        "bottomTextCheckbox": {
+          "label": "Bottom text"
+        },
+        "bottomTextInput": {
+          "placeholder": "Powered by Zid"
+        },
+        "cashierName": {
+          "label": "Cashier name"
+        },
+        "cashierUserName": {
+          "label": "Cashier user name"
+        },
+        "commercialRegistration": {
+          "label": "Commercial registration number"
+        },
+        "customFieldLabel": {
+          "placeholder": "Custom field label"
+        },
+        "customFieldValue": {
+          "placeholder": "Custom field value"
+        },
+        "customFieldsCheckbox": {
+          "label": "Custom fields"
+        },
+        "customerName": {
+          "label": "Customer name"
+        },
+        "customerNote": {
+          "label": "Customer note"
+        },
+        "customerNumber": {
+          "label": "Customer number"
+        },
+        "inventories": {
+          "label": "Inventory location",
+          "placeholder": "Select inventories"
+        },
+        "invoiceDate": {
+          "label": "Invoice date"
+        },
+        "invoiceNumber": {
+          "label": "Invoice number"
+        },
+        "invoiceNumberBarcode": {
+          "label": "Invoice number barcode"
+        },
+        "invoiceStatus": {
+          "label": "Invoice status"
+        },
+        "orderCounter": {
+          "label": "Order counter"
+        },
+        "orderNumber": {
+          "label": "Order number"
+        },
+        "orderNumberBarcode": {
+          "label": "Order number barcode"
+        },
+        "paymentMethod": {
+          "label": "Payment method"
+        },
+        "paymentStatus": {
+          "label": "Payment status"
+        },
+        "productName": {
+          "label": "Product name"
+        },
+        "productSku": {
+          "label": "Product SKU"
+        },
+        "productWeight": {
+          "label": "Product weight"
+        },
+        "quantity": {
+          "label": "Quantity"
+        },
+        "returnExchangePolicyCheckbox": {
+          "label": "Return & Exchange policy"
+        },
+        "returnExchangePolicyInput": {
+          "placeholder": "Please write your Return & Exchange Policy"
+        },
+        "storeLocationAddressCheckbox": {
+          "label": "Store location address"
+        },
+        "storeLogoCheckbox": {
+          "label": "Store logo"
+        },
+        "storeMessageCheckbox": {
+          "label": "Store message"
+        },
+        "storeMessageInput": {
+          "placeholder": "Thank you for visiting"
+        },
+        "storeNameCheckbox": {
+          "label": "Store name"
+        },
+        "storeNameInput": {
+          "placeholder": "Zbrandsa"
+        },
+        "taxAmount": {
+          "label": "Tax amount"
+        },
+        "taxAmountPerUnit": {
+          "label": "Tax amount (per unit)"
+        },
+        "taxRate": {
+          "label": "Tax rate"
+        },
+        "templateName": {
+          "label": "Template name",
+          "placeholder": "Eg: Ramadan template"
+        },
+        "total": {
+          "label": "Total"
+        },
+        "unitPriceInclTax": {
+          "label": "Unit price (incl. Tax)"
+        },
+        "vatNumber": {
+          "label": "Vat number"
+        },
+        "zatcaQrCode": {
+          "label": "ZATCA QR code"
+        }
+      },
+      "info": {
+        "title": "Info"
+      }
+    }
+  },
+  "invoiceTemplates": {
+    "addTemplate": "Add template",
+    "columns": {
+      "activate": "Activate",
+      "createdDate": "Created date",
+      "inventoryLocation": "Inventory location",
+      "templateName": "Template name"
+    },
+    "deleteDialog": {
+      "button": "Delete template",
+      "description": "Are you sure you want to delete this invoice template? This action cannot be undone, and you will lose all saved data related to this template.",
+      "successMessage": "Invoice template deleted successfully",
+      "title": "Delete Invoice Template?"
+    }
+  },
+  "noResults": {
+    "clearAllFilters": "Clear all filters",
+    "description": "It seems like no results are matching your search.",
+    "title": "No results found"
+  },
+  "paymentMethods": {
+    "addANewPaymentMethod": "Add a new payment method",
+    "columns": {
+      "paymentMethodName": "Payment method name",
+      "referenceName": "Reference name"
+    },
+    "dialog": {
+      "nameAr": {
+        "label": "Name (arabic)",
+        "placeholder": "Type the name in arabic"
+      },
+      "nameEn": {
+        "label": "Name (English)",
+        "placeholder": "Type the name in English"
+      }
+    },
+    "editPaymentMethod": "Edit payment method",
+    "emptyState": {
+      "button": "Create payment method",
+      "description": "Speed up their purchase decision with payment methods",
+      "title": "Make payment easier for your customers"
+    },
+    "messages": {
+      "createPaymentMethodSuccess": "Payment method created successfully",
+      "updatePaymentMethodStatusSuccess": "Payment method status updated successfully",
+      "updatePaymentMethodSuccess": "Payment method updated successfully"
+    }
+  },
+  "posSettings": {
+    "general": {
+      "generalSettings": {
+        "description": "Configure POS location-based access, order settings, and notifications.",
+        "title": "General Settings"
+      },
+      "invoiceTemplates": {
+        "description": "Customize your invoice by adjusting templates, and fields to fit your needs",
+        "title": "Invoice templates"
+      },
+      "paymentMethods": {
+        "description": "Configure rules and restrictions for payment methods",
+        "title": "Payment methods"
+      }
+    }
+  },
+  "reports": {
+    "exportAll": "Export all",
+    "mailingReport": "Mailing report",
+    "paymentReport": "Payment report",
+    "sales": {
+      "cashierUsers": "Cashier users",
+      "cashiers": "Cashiers",
+      "costOfGoodsSold": "Cost of goods sold",
+      "day": "Date",
+      "grossMargin": "Gross margin (%)",
+      "grossProfit": "Gross profit",
+      "revenue": "Net revenue",
+      "sales": "Sales",
+      "taxAmount": "Tax amount"
+    },
+    "salesReport": "Sales report",
+    "sessions": {
+      "actual": "Actual",
+      "balanced": "Balanced",
+      "cash_amount": "Cash",
+      "cashier": "Cashier",
+      "creditCard": "Credit card",
+      "credit_card_amount": "Credit card",
+      "difference": "Difference",
+      "expected": "Expected",
+      "notes": "Notes",
+      "session": "Session",
+      "sessionEndCashierUser": "Closed by",
+      "sessionEndTime": "End time",
+      "sessionNote": "Session note",
+      "sessionStartCashierUser": "Started by",
+      "sessionStartTime": "Start time",
+      "unBalanced": "Unbalanced"
+    },
+    "sessionsHistory": "Sessions history",
+    "total": "Total"
+  },
+  "sales": {
+    "filters": {
+      "order": {
+        "selectStatus": "Select status",
+        "status": {
+          "cancelled": "Cancelled",
+          "delivered": "Completed",
+          "inDelivery": "In delivery",
+          "preparing": "Preparing",
+          "ready": "Ready",
+          "reversed": "Reversed",
+          "reverseinprogress": "Processing reverse"
+        }
+      }
+    },
+    "invoiceStatuses_canceled": "Canceled",
+    "invoiceStatuses_completed": "Completed",
+    "invoiceStatuses_partially-returned": "Partially returned",
+    "invoiceStatuses_pending": "Pending",
+    "invoiceStatuses_prepare-for-return": "Return in progress",
+    "invoiceStatuses_returned": "Returned",
+    "paymentStatus_paid": "Paid",
+    "paymentStatus_partially-refunded": "Partially refunded",
+    "paymentStatus_pending": "Pending",
+    "paymentStatus_refunded": "Refunded",
+    "paymentStatus_voided": "Voided",
+    "salesTitle": "Sales",
+    "tableHeaders": {
+      "amount": "Amount",
+      "cashier": "Cashier",
+      "cashierUser": "Cashier user",
+      "invoiceNumber": "Invoice number",
+      "invoiceStatus": "Invoice status",
+      "orderNumber": "Order number",
+      "paymentStatus": "Payment status"
+    }
+  },
+  "subscription": {
+    "caption": "Please select the number of cashier licenses after choosing your package.",
+    "cashierInput": "Enter number of cashiers",
+    "cashierInputLabel": "Add cashiers",
+    "compare": "Compare between plans",
+    "features": {
+      "annually": "(annually)",
+      "cashDrawer": "Cash drawer",
+      "cashierSubscription": "Cashier Subscription",
+      "drawer": "Cash Drawer",
+      "printer": "Receipt Printer",
+      "scanner": "Barcode Scanner",
+      "tablet": "Tablet",
+      "tabletStand": "Tablet stand"
+    },
+    "freemiumEmptyState": {
+      "button": "Upgrade plan",
+      "description": "Unlock this feature with an upgraded POS Pro plan.",
+      "title": "Not available in your plan"
+    },
+    "includesLabel": "Includes:",
+    "packages": {
+      "basic": "Basic",
+      "full": "Full Package",
+      "noDevices": "Software Only",
+      "selectPackage": "Select Package",
+      "selected": "selected"
+    },
+    "subTitle": "Subscription options",
+    "title": "Add New Cashier"
+  },
+  "transactionHistory": {
+    "empty": {
+      "description": "You don't have any transaction yet",
+      "filteredByActionType": "No transactions found for the selected action type",
+      "filteredByCashier": "No transactions found for the selected cashier",
+      "filteredByCashierUser": "No transactions found for the selected cashier user",
+      "filteredByDate": "No transactions found for the selected date range",
+      "filteredByInventory": "No transactions found for the selected inventory",
+      "filteredByOrder": "No transactions found for the selected order",
+      "filteredBySession": "No transactions found for the selected session",
+      "filteredGeneric": "No transactions found for the selected filters",
+      "title": "No transaction history found"
+    },
+    "filters": {
+      "actionType": "Action type",
+      "cashier": "Cashier",
+      "cashierUser": "Cashier user",
+      "orderId": "Order ID"
+    },
+    "tableHeaders": {
+      "action": "Action",
+      "amount": "Amount",
+      "cashier": "Cashier",
+      "cashierUser": "Cashier user",
+      "currency": "Currency",
+      "customer": "Customer",
+      "date": "Date",
+      "inventory": "Inventory",
+      "invoiceNumber": "Invoice number",
+      "orderNumber": "Order number",
+      "paymentMethod": "Payment method",
+      "phoneNumber": "Phone number",
+      "time": "Time"
+    },
+    "tableValues": {
+      "buyOnlinePartialReturnInStore": "Buy online partial return in store",
+      "buyOnlinePayInStore": "Buy online pay in store",
+      "buyOnlineReturnInStore": "Buy online return in store",
+      "partiallyRefunded": "Partially refunded",
+      "refunded": "Refunded",
+      "sell": "Sell"
+    },
+    "title": "Transactions"
+  },
+  "welcomeDashboard": {
+    "description": "Zid POS is a cashier system and point of sale that enables modern retailers to manage sales in branches and exhibitions. It also helps merchants manage operations, payment, and stock from one dashboard with the online store.",
+    "download": {
+      "description": "Download Zid POS app",
+      "title": "Get a chance to try the app available for download now!"
+    },
+    "features": {
+      "card1": {
+        "title": "A unified dashboard to manage all your operations"
+      },
+      "card2": {
+        "title": "Seamless technical connectivity to save time and effort"
+      },
+      "card3": {
+        "title": "Make billing easier—send bills via SMS"
+      },
+      "card4": {
+        "title": "Full control over multiple inventories"
+      },
+      "card5": {
+        "title": "Manage all your orders in one place"
+      },
+      "title": "Our benefits"
+    },
+    "freemiumBanner": {
+      "button": "Start POS Go",
+      "description": "Start today and pick a plan later!",
+      "title": "Looking for POS Go?"
+    },
+    "frequentlyAskedQuestions": {
+      "questions": {
+        "card1": {
+          "answer": "Zid POS is a smart point of sale system that helps merchants manage in store sales, customers, and payments all connected with their online store.",
+          "question": "What is Zid POS?"
+        },
+        "card2": {
+          "answer": "Zid POS Go is a free plan that allows store owners to start selling in store right away. It includes core cashier features like creating invoices, processing payments, and sharing receipts at no cost.",
+          "question": "What is Zid POS Go?"
+        },
+        "card3": {
+          "answer": "ZidPOS Pro is the full professional version of ZidPOS, offering advanced tools such as multiple cashier accounts, session management, customizable invoice fields, loyalty programs, and detailed reports. Designed to support your store’s growth and enhance your sales performance.",
+          "question": "What is Zid POS Pro?"
+        },
+        "card4": {
+          "answer": "Yes, merchants must have ZidPay activated before they can activate ZidPOS Go.",
+          "question": "Are there any requirements to activate Zid POS Go?"
+        },
+        "card5": {
+          "answer": "You can upgrade from Zid POS Go to Zid POS Pro directly from the Merchant Dashboard under:\n\nChannels → POS → Cashiers → Upgrade",
+          "question": "How can I upgrade to Zid POS Pro?"
+        },
+        "card6": {
+          "answer": "Yes, Zid POS connects seamlessly with your online store, keeping inventory, orders, and reports fully synchronized in one system.",
+          "question": "Does Zid POS support both online and in store sales?"
+        }
+      },
+      "title": "Frequently asked questions"
+    },
+    "gettingStarted": {
+      "card1": {
+        "description": "Unlock powerful POS tools tailored for your business needs.",
+        "title": "Activate your plan"
+      },
+      "card2": {
+        "description": "Your sales, customers, and products all in your pocket.",
+        "title": "Download ZidPOS App"
+      },
+      "card3": {
+        "description": "Set up your team and connect them to the right inventory in seconds.",
+        "title": "Assign Cashiers"
+      },
+      "card4": {
+        "description": "Create your first invoice or online order and watch your business grow.",
+        "title": "Make Your First Sale"
+      },
+      "title": "How to get started"
+    },
+    "hardware": {
+      "card1": {
+        "description": "Unlock powerful POS tools tailored for your business needs.",
+        "title": "Activate your plan"
+      },
+      "card2": {
+        "description": "Your sales, customers, and products all in your pocket.",
+        "title": "Download ZidPOS App"
+      },
+      "card3": {
+        "description": "Set up your team and connect them to the right inventory in seconds.",
+        "title": "Assign Cashiers"
+      },
+      "card4": {
+        "description": "Create your first invoice or online order and watch your business grow.",
+        "title": "Make Your First Sale"
+      }
+    },
+    "mainFeatures": {
+      "card1": {
+        "title": "Sales & Invoicing"
+      },
+      "card2": {
+        "title": "Payments"
+      },
+      "card3": {
+        "title": "Orders Management"
+      },
+      "card4": {
+        "title": "Products"
+      },
+      "card5": {
+        "title": "Inventory"
+      },
+      "card6": {
+        "title": "Sales Channels"
+      },
+      "card7": {
+        "title": "Customer Management"
+      },
+      "card8": {
+        "title": "User Management"
+      },
+      "card9": {
+        "title": "Reports"
+      },
+      "title": "Zid POS puts you in full control of your business",
+      "viewAllFeatures": "View all features"
+    },
+    "onboarding": {
+      "button": "Begin Setup Now",
+      "description": "To activate your POS trial, please start by completing your POS onboarding.",
+      "title": "Unlock your POS trial by completing onboarding now!"
+    },
+    "plans": {
+      "freemium": {
+        "btn": "Activate POS Go",
+        "features": {
+          "feature1": "Owner account access only",
+          "feature2": "Pickup transactions",
+          "feature3": "Add products & customers",
+          "feature4": "Basic payments (Cash, Tabby, Tamara, Payment link)",
+          "feature5": "Default invoices",
+          "feature6": "Return items"
+        },
+        "featuresHeading": "Start selling in-store for free.",
+        "title": "POS Go"
+      },
+      "premium": {
+        "btn": "Activate POS Pro",
+        "features": {
+          "feature1": "Multi-cashier & subuser access",
+          "feature2": "Pickup, delivery, loyalty & gift orders",
+          "feature3": "Link to inventory locations & restock requests",
+          "feature4": "Advanced payments (Payment terminal, Nearpay, custom methods)",
+          "feature5": "Customizable invoices",
+          "feature6": "Discounts, coupons & multi-payments",
+          "feature7": "Advanced reports (sales, products, payments)",
+          "feature8": "Hardware integration (scanner, printer, terminal)"
+        },
+        "featuresHeading": "Get advanced tools with extra flexibility",
+        "startFrom": "Starting from",
+        "title": "POS Pro"
+      },
+      "title": "Select your plan"
+    },
+    "posFeaturesTable": {
+      "columns": {
+        "feature": "Features",
+        "freemium": "POS Go",
+        "premium": "POS Pro"
+      },
+      "rows": {
+        "header1": {
+          "row1": {
+            "feature": "Cashier Login (Owner Account)"
+          },
+          "row2": {
+            "feature": "Cashier Login (Subuser Accounts)"
+          },
+          "row3": {
+            "feature": "Link Users or Cashiers to Inventory Locations"
+          },
+          "title": "Login & Access"
+        },
+        "header10": {
+          "row1": {
+            "feature": "View Account Information"
+          },
+          "row2": {
+            "feature": "Sync Data"
+          },
+          "row3": {
+            "feature": "Support Center"
+          },
+          "row4": {
+            "feature": "Connect Hardware (Barcode & Printer)"
+          },
+          "row5": {
+            "feature": "Connect Payment Terminal"
+          },
+          "row6": {
+            "feature": "Customize or Arrange Products Page"
+          },
+          "title": "Settings"
+        },
+        "header11": {
+          "row1": {
+            "feature": "Create Restock Request"
+          },
+          "row2": {
+            "feature": "Update Restock Request"
+          },
+          "row3": {
+            "feature": "Receive Restock Request"
+          },
+          "title": "Restock Request"
+        },
+        "header12": {
+          "row1": {
+            "feature": "Inventory Location Slot per Cashier"
+          },
+          "title": "Inventory Locations"
+        },
+        "header2": {
+          "row1": {
+            "feature": "Session Control (Start & End)"
+          },
+          "row2": {
+            "feature": "Session History"
+          },
+          "title": "Session Management"
+        },
+        "header3": {
+          "row1": {
+            "feature": "Create Pickup Transaction (Invoice)"
+          },
+          "row10": {
+            "feature": "Open Price Products"
+          },
+          "row2": {
+            "feature": "Add Products to Transaction"
+          },
+          "row3": {
+            "feature": "Add Customer & Customer Notes"
+          },
+          "row4": {
+            "feature": "Hold Invoice (Save for Later)"
+          },
+          "row5": {
+            "feature": "Delivery & Online Order Transactions"
+          },
+          "row6": {
+            "feature": "Gift Orders"
+          },
+          "row7": {
+            "feature": "Discounts & Coupons"
+          },
+          "row8": {
+            "feature": "Earn and Redeem Loyalty Points"
+          },
+          "row9": {
+            "feature": "Multi-Payments"
+          },
+          "title": "Transaction"
+        },
+        "header4": {
+          "row1": {
+            "feature": "Send via SMS"
+          },
+          "row2": {
+            "feature": "Share via NFC"
+          },
+          "row3": {
+            "feature": "Print Invoice"
+          },
+          "row4": {
+            "feature": "Customize Invoice"
+          },
+          "title": "Invoices"
+        },
+        "header5": {
+          "row1": {
+            "feature": "Cash Payments"
+          },
+          "row2": {
+            "feature": "Tabby & Tamara (Buy Now, Pay Later)"
+          },
+          "row3": {
+            "feature": "Payment Link"
+          },
+          "row4": {
+            "feature": "Sync Payment Methods"
+          },
+          "row5": {
+            "feature": "Credit Card & Terminal Payments"
+          },
+          "row6": {
+            "feature": "Nearpay Integration"
+          },
+          "row7": {
+            "feature": "Add or Manage Custom Payment Methods"
+          },
+          "title": "Payment Methods"
+        },
+        "header6": {
+          "row1": {
+            "feature": "View Transaction Details"
+          },
+          "row2": {
+            "feature": "Return Items (Full or Partial)"
+          },
+          "title": "Manage [Sales] Transactions"
+        },
+        "header7": {
+          "row1": {
+            "feature": "Publish Products by Channel"
+          },
+          "row2": {
+            "feature": "Search for Products by Name, SKU, and Barcode"
+          },
+          "row3": {
+            "feature": "Filter by Category"
+          },
+          "row4": {
+            "feature": "Search Across Inventories"
+          },
+          "title": "Products"
+        },
+        "header8": {
+          "row1": {
+            "feature": "Buy Online, Pickup in Store"
+          },
+          "row2": {
+            "feature": "Buy Online, Return in Store"
+          },
+          "title": "Orders"
+        },
+        "header9": {
+          "row1": {
+            "feature": "Reports Screen"
+          },
+          "row2": {
+            "feature": "Print Sales & Product Reports"
+          },
+          "row3": {
+            "feature": "ZidPOS Sales & Payment Reports"
+          },
+          "row4": {
+            "feature": "Orders Screen"
+          },
+          "row5": {
+            "feature": "Pending Sales Screen"
+          },
+          "title": "Reports & Screens"
+        },
+        "reviews": {
+          "title": "Reviews"
+        }
+      }
+    },
+    "premiumBanner": {
+      "button": "Get POS Pro Today",
+      "description": "Explore our POS Pro plan!",
+      "title": "Looking for more?"
+    },
+    "sales": {
+      "card1": {
+        "description": "Quickly add products, process payments, and issue invoices with an intuitive interface designed for speed and accuracy.",
+        "title": "Easy Sales Management"
+      },
+      "card2": {
+        "description": "Stay in control of your stock and customers with synchronized management tools in one place.",
+        "title": "Inventory & Customer Control"
+      },
+      "card3": {
+        "description": "Offer your customers a variety of payment methods, including cash, cards, and installment plans.",
+        "title": "Flexible Payment Options"
+      },
+      "title": "Smarter Sales, Better Control!"
+    },
+    "welcomeToZidpos": "Welcome to Zid POS"
+  },
+  "zidposHomePage": {
+    "cashAmount": "Cash amount",
+    "creditCardAmount": "Credit card amount",
+    "posSalesByCashierUser": "POS sales by cashier user",
+    "posSalesByLocation": "POS sales by location",
+    "selectYourPlan": "Select your plan",
+    "transactions": "Transactions"
+  }
+}
