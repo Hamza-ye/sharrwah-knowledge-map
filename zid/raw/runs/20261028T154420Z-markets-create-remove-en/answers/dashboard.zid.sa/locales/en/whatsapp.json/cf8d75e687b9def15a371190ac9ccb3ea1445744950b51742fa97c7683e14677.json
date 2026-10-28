@@ -1,0 +1,921 @@
+{
+  "accountInformation": {
+    "aboutStore": "About the store",
+    "categories": {
+      "apparel": "Apparel",
+      "auto": "Auto",
+      "beauty": "Beauty",
+      "edu": "Education",
+      "entertain": "Entertainment",
+      "eventPlan": "Event Planning",
+      "finance": "Finance",
+      "govt": "Government",
+      "grocery": "Grocery",
+      "health": "Health",
+      "hotel": "Hotel",
+      "nonProfit": "Nonprofit",
+      "notABusiness": "Not a Business",
+      "other": "OTHER",
+      "profServices": "Professional Services",
+      "restaurant": "Restaurant",
+      "retail": "Retail",
+      "travel": "Travel",
+      "undefined": "UNDEFINED"
+    },
+    "category": "Category",
+    "displayName": "Display name",
+    "form": {
+      "aboutPlaceHolder": "Write a text that describes your store",
+      "addressPlaceHolder": "Enter address in preferred format",
+      "descriptionPlaceHolder": "Write a text that describes your store",
+      "emailHelperText": "Email to contact WhatsApp customers",
+      "emailPlaceHolder": "example@gmail.com",
+      "websitePlaceHolder": "Enter your store's website"
+    },
+    "storeWebsite": "Store website",
+    "title": "Account information"
+  },
+  "alerts": {
+    "canceling": {
+      "subtitle": "WhatsApp number is no longer connected to your account. Contact support for help and next steps.",
+      "title": "Number disconnected"
+    },
+    "dailyLimitAlert": {
+      "description": "You can send up to {{limit}} messages per day. Remaining today: {{remaining}} messages.",
+      "title": "WhatsApp Daily Messaging Limit"
+    },
+    "expired": {
+      "action": "Activate",
+      "subtitle": "Make the most of Zid WhatsApp benefits. Any remaining points will be saved until you reactivate the feature.",
+      "title": "Your subscription is expired"
+    },
+    "expiresSoon": {
+      "subtitle": "Don’t forget to renew your plan to continue using WhatsApp features and stay connected with your customers.",
+      "title": "Subscription ending soon"
+    },
+    "expiresToday": {
+      "subtitle": "Renew your plan to continue using WhatsApp features and stay connected with your customers.",
+      "title": "Subscription ending today"
+    },
+    "freeTrialExpired": {
+      "action": "See subscriptions",
+      "subtitle": "Make the most of Zid WhatsApp benefits. Any remaining points will be saved until you select new subscription.",
+      "title": "Your free trial has ended - ready to unlock full access?"
+    },
+    "freeTrialExpiresSoon": {
+      "subtitle": "Your free trial will expire soon. Subscribe to a plan to continue using the service.",
+      "title": "Trial expiring soon"
+    },
+    "freeTrialExpiresToday": {
+      "subtitle": "Your free trial will expire today. Subscribe to a plan to continue using the service.",
+      "title": "Trial expiring today"
+    },
+    "notActive": {
+      "subtitle": "Activate the WhatsApp feature to link your number and access your account details directly."
+    },
+    "pending": {
+      "subtitle": "Your number has been connected successfully and is still under review.",
+      "title": "Number under review"
+    },
+    "unAvailable": {
+      "expired": "Your WhatsApp subscription has expired. <1>Activate</1> to resume",
+      "trialEnded": "Your WhatsApp free trial has ended, <1>Activate</1> to resume"
+    }
+  },
+  "balance": {
+    "activate": "Activate",
+    "alert": {
+      "title": "Buy points in bundles and save with our bulk discounts."
+    },
+    "current": "Current points amount",
+    "renew": "Renew",
+    "status": "Whatsapp status",
+    "subscriptionExpired": "Subscription expired",
+    "title": "Increase points balance"
+  },
+  "disconnectedSuccessfully": "Account cancelled",
+  "landing": {
+    "checklist": {
+      "card": {
+        "description": "A walkthrough from creating a Facebook account to connecting your number to Zid WhatsApp. Skip any step you've already done, and activate whenever you're ready.",
+        "title": "Activation checklist"
+      },
+      "help": {
+        "helpCenterAction": "Help center",
+        "supportAction": "Talk to the team",
+        "title": "Need help activating your WhatsApp account on Zid?"
+      }
+    },
+    "features": {
+      "abandonedCarts": {
+        "description": "Remind customers about cart they left behind and recover lost sales",
+        "title": "Recover lost sales"
+      },
+      "campaigns": {
+        "description": "Send offers and discounts to the right customers, right on time",
+        "title": "Run campaigns"
+      },
+      "liveChat": {
+        "description": "All conversations in one inbox. Reply faster, sell more",
+        "title": "Chat from one place"
+      },
+      "notifications": {
+        "description": "Update customers from order creation to delivery, automatically",
+        "title": "Share order updates"
+      },
+      "restocks": {
+        "description": "Instantly notify customers when their favorite items are available again",
+        "title": "Alert restocks"
+      },
+      "reviews": {
+        "description": "Request product reviews where customers actually respond",
+        "title": "Collect reviews"
+      }
+    },
+    "heading": {
+      "title": "Zid WhatsApp"
+    },
+    "hero": {
+      "stats": {
+        "abandonedCarts": {
+          "label": "higher abandoned cart recovery rate",
+          "value": "+29%"
+        },
+        "campaigns": {
+          "label": "higher conversion on WhatsApp campaigns compared to other channels",
+          "value": "3.5x"
+        },
+        "promotions": {
+          "label": "higher conversion rate on promotional offers over WhatsApp",
+          "value": "+25%"
+        },
+        "reviews": {
+          "label": "more product reviews and customer engagement",
+          "value": "3x"
+        }
+      },
+      "subtitle": "<bold>Zid WhatsApp is built right into your dashboard:</bold> same customers, same orders, same data.\nTurn it on with one click and it starts recovering abandoned carts and bringing customers back automatically, with no effort from you.",
+      "title": "The WhatsApp that sells for you, not just replies to your customers"
+    },
+    "pricing": {
+      "subscriptions": {
+        "bestValue": "Best value",
+        "freeBanner": {
+          "free": "Free",
+          "includedTitle": "WhatsApp subscription included in your package",
+          "messagingPointsSoldSeparately": "Messaging points are sold separately.",
+          "seeDetails": "See details here.",
+          "welcomingPoints": "Includes 200 free welcome points to get started"
+        },
+        "freePoints": "Includes 200 free messaging points to get started",
+        "subtitle": "Messaging points are sold separately, and marketing messages require the Growth plan or higher.",
+        "title": "Subscriptions",
+        "trial": {
+          "price": "30 days free",
+          "title": "Start with no fees"
+        }
+      }
+    },
+    "steps": {
+      "activate": {
+        "action": "Activate WhatsApp now",
+        "options": {
+          "dedicated": {
+            "description": "For a new number that isn't on WhatsApp. Connection is instant, and every conversation is handled from your Zid dashboard only.",
+            "step1": "Enter your business details (name, category, country)",
+            "step2": "Click \"Add a new number\" and enter the country code and phone number",
+            "step3": "Pick a verification method (SMS or call) and enter the code",
+            "step4": "Click \"Finish\" and wait for the connection to be confirmed",
+            "title": "Connect a new number"
+          },
+          "existingApp": {
+            "description": "For a number you already use on the WhatsApp Business app. It needs your approval from the app on your phone, and the number then runs on both platforms.",
+            "step1": "Enter the number linked to your WhatsApp Business app",
+            "step2": "Open the app on your phone and approve the connection request using a QR or access code",
+            "step3": "Pick \"Share all messages\" so your conversations show up in your Zid dashboard",
+            "step4": "Click \"Finish\" and wait for the connection to be confirmed",
+            "title": "Connect a number already on the WhatsApp Business app"
+          },
+          "recommended": "Preferred",
+          "title": "Pick the connection method that suits you:"
+        },
+        "subtitle": "Activation connects your store to WhatsApp Business API, which lets you send campaigns and automated messages from inside Zid.",
+        "title": "Activate your WhatsApp account on Zid"
+      },
+      "businessInfo": {
+        "action": "Complete business info",
+        "howTo": {
+          "step1": "Business name: matching the name on your Commercial Registration",
+          "step2": "Phone number: an active contact number linked to your store",
+          "step3": "Website: your store's official URL",
+          "step4": "Address: city, district, street and postal code matching your National Address"
+        },
+        "notes": {
+          "tip1": "Enter all details in English",
+          "tip2": "Make sure all details match your official documents (Commercial Registration and National Address)",
+          "tip3": "Add products, contact info and a privacy policy to your store, so Meta doesn't flag it as suspicious",
+          "title": "To keep your account safe:"
+        },
+        "subtitle": "Complete details lower the chance of restriction and raise your account credibility. Fill them in before you start.",
+        "title": "Complete your business details"
+      },
+      "facebook": {
+        "action": "Sign up with Facebook",
+        "howTo": {
+          "step1": "Create a new personal account on <facebookLink>facebook.com</facebookLink>",
+          "step2": "Or sign in with an existing account (preferred)"
+        },
+        "notes": {
+          "tip1": "Use your real full personal name, not your business name",
+          "tip2": "The account must belong to someone with admin authority over the business (the store owner or an official delegate)",
+          "tip3": "Use an active personal email, not the store email",
+          "tip4": "Creating the account from the Facebook mobile app is preferred, to reduce the chance of restriction",
+          "tip5": "Complete the account details (photo, friends, verified phone number) so it looks genuine and not suspicious",
+          "tip6": "It must be a personal account, not a business page",
+          "title": "Important tips:"
+        },
+        "subtitle": "Your personal Facebook account is the key to opening a Meta business account. Skip this step if you already have one.",
+        "title": "Create a personal Facebook account"
+      },
+      "metaBusiness": {
+        "action": "Create business account",
+        "howTo": {
+          "step1": "Go to <metaLink>business.facebook.com</metaLink> and log in with your personal Facebook account",
+          "step2": "Enter your business name, your name and your email",
+          "step3": "Click \"Submit\" and verify your account using the code sent to your email"
+        },
+        "notes": {
+          "tip1": "After creating your personal account, wait a day or two before creating the business account. Creating both back to back can get the account restricted or blocked.",
+          "tip2": "Business name must match your website and social media pages.",
+          "tip3": "Use a work email if possible (e.g., info@yourstore.com), not a personal email.",
+          "tip4": "Don't use ALL CAPS in your display name.",
+          "tip5": "Avoid symbols and emojis in your business name.",
+          "title": "Important notes:"
+        },
+        "subtitle": "A business account is the central hub for your business assets including WhatsApp. Skip this step if you already have one.",
+        "title": "Create a Meta business account"
+      }
+    }
+  },
+  "liveChat": {
+    "addNewVariable": "Add new variable",
+    "addTagsHelperText": "Type to search or press Enter to create a new tag.",
+    "addTagsInfo": "You can add tags to chats to organize, filter, and identify conversations easily.",
+    "arabic": "Arabic",
+    "areYouSureYouWantToDeleteThisSavedResponse": "Are you sure you want to delete this quick reply?",
+    "assignedToMe": "Assigned to me",
+    "automatedMessage": "Automated message",
+    "billing": {
+      "freeQuotaExhausted": "All {{limit}} free messages used this month. Replies are now charged from your WhatsApp balance.",
+      "insufficientBalance": "Insufficient WhatsApp balance",
+      "insufficientBalanceAmounts": "Your balance is {{balance}} points and this message needs {{required}} points. Please top up to continue sending messages.",
+      "insufficientBalanceDescription": "Please top up to continue sending messages.",
+      "mayNotHaveBeenSent": "This message may not have been sent",
+      "mayNotHaveBeenSentDescription": "Send the same message again to retry safely; it will not be sent or charged twice.",
+      "networkError": "Couldn’t reach the server. Send the message again to retry.",
+      "sendFailed": "Message failed to send",
+      "stillProcessing": "This message is still being processed. Please try again in a moment.",
+      "topUp": "Top up balance"
+    },
+    "changeTags": "Add chat tags",
+    "chatExpires_today": "Chat window closes today at {{time}}",
+    "chatExpires_tomorrow": "Chat window closes tomorrow at {{time}}",
+    "chatStartsWithTemplate": "Send an approved template to start the chat",
+    "chats": "Chats",
+    "chooseAPhoneNumber": "Choose a phone number",
+    "clickHereForMoreInformation": "Click here for more information",
+    "closeView": "Close view",
+    "conversationTags": "Conversation tags",
+    "copyCartLink": "Copy checkout link",
+    "copyOrderLink": "Copy order link",
+    "countryCode": "Country code",
+    "customerChoice": "Customer's choice",
+    "customerDetails": "Customer Details",
+    "customerJoined": "Joined {{time}}",
+    "customerJoined_date": "Joined on {{time}}",
+    "customerJoined_today": "Joined today",
+    "customerJoined_weekday": "Joined on {{time}}",
+    "customerJoined_yesterday": "Joined yesterday",
+    "customerTags": "Customer tags",
+    "documents": "Attach file",
+    "emoji": "Emoji",
+    "emptyState": {
+      "action": "See WhatsApp details",
+      "description": "Activate the WhatsApp feature to unlock Live Chat and explore its full benefits.",
+      "title": "Live chat is not available"
+    },
+    "english": "English",
+    "forwarded": "Forwarded",
+    "from": "From {{from}}",
+    "imagesAndVideos": "Attach photos or videos",
+    "invalidPhoneNumber": "This phone number is not valid",
+    "language": "Message language",
+    "lastOrderDate": "Last order date",
+    "lastOrderNumber": "Last order number",
+    "lastOrderValue": "Last order value",
+    "matchingResults": "Matching results",
+    "message": "Message",
+    "messageSentSuccessfully": "Message sent successfully!",
+    "messages": "Messages",
+    "moreDetails": "More details",
+    "newChat": "New chat",
+    "newMessage": "New message",
+    "newNumber": "New contact",
+    "newReaction": "New reaction",
+    "newReply": "New reply",
+    "newestCustomers": "Newest customers",
+    "noAbandonedCarts": "No abandoned carts",
+    "noCountriesFound": "No countries found",
+    "noCustomersFound": "No customers found",
+    "noFilteredResponseMessageSaved": "No quick replies found",
+    "noFilteredTemplates": "No templates",
+    "noMessages": "No messages",
+    "noPreviousChat": "No previous chat with this customer",
+    "noResponseMessageSaved": "No quick replies yet",
+    "noResponseMessageSavedInfo": "Save frequently used messages as quick replies to reply faster. Hover over a message on web or long-tap it on mobile, then choose “Add to quick replies”.",
+    "noResultsForSearch": "No results for “{{search}}”. Type a mobile number to start a new chat.",
+    "noSearchChats": "No previous chats match your search.",
+    "noSelectedChat": {
+      "noChatsSubtitle": "Start a new one to begin messaging with customers.",
+      "noChatsTitle": "No chats available",
+      "withChatsSubtitle": "Choose a chat from history or start a new one to begin messaging.",
+      "withChatsTitle": "No chat selected"
+    },
+    "noSidebarChats": "You don’t have any chat history yet.",
+    "noTagsAvailable": "No tags available",
+    "noTemplates": "No templates yet",
+    "noTemplatesDesc": "Create a template to quickly respond to customers and start conversations with ease.",
+    "noWhatsappMessages": "No messages",
+    "notStoreCustomer": "Not a store customer",
+    "notStoreCustomerDescription": "This number isn't linked to any customer in your store.",
+    "notifications": "Notifications",
+    "notificationsTabs": {
+      "all": "All",
+      "chats": "Chats",
+      "team": "Team"
+    },
+    "openChat": "Open chat",
+    "orderNumber": "Order #{{id}}",
+    "pending": {
+      "feature1": "Order Notifications – Keep customers informed at every step",
+      "feature2": "Marketing Campaigns – Send personalized promotions",
+      "feature3": "Abandoned Cart Reminders – Recover lost sales with automated nudges",
+      "featureLabel": "In the meantime, enjoy access to powerful features:",
+      "subtitle": "You’ve successfully subscribed to the WhatsApp package! We’re currently setting up Live Chat - this process typically takes a few hours. Once it’s ready, we’ll notify you via email.",
+      "title": "Live Chat set up in progress..."
+    },
+    "pendingStatus": "Pending",
+    "phoneNumberError_incomplete": "The mobile number is incomplete",
+    "phoneNumberError_invalid": "The mobile number must start with a valid country code",
+    "preview": {
+      "audio": "Audio",
+      "contact": "Contact",
+      "contactAndOthers_one": "{{name}} and 1 other",
+      "contactAndOthers_other": "{{name}} and {{count}} others",
+      "document": "Document",
+      "formSubmitted": "Customer submitted a form",
+      "location": "Location",
+      "message": "Message",
+      "order_one": "Order · 1 item",
+      "order_other": "Order · {{count}} items",
+      "order_zero": "Order",
+      "photo": "Photo",
+      "sticker": "Sticker",
+      "template": "Template message",
+      "video": "Video",
+      "voiceMessage": "Voice message"
+    },
+    "reSend": "Re-send",
+    "recentOrders": "Recent orders",
+    "record": "Record voice note",
+    "refresh": "Refresh",
+    "registerNewTemplate": "Register new template",
+    "rejected": "Rejected",
+    "remindersSent": "Reminders sent",
+    "repliedToMessageInChat": "<b>{{name}}</b> replied to message in chat.",
+    "replyWindowClosed": "Chat window closed",
+    "replyWindowClosedDescription": "Meta doesn't allow sending messages more than 24 hours after the customer's last reply. To continue, send an approved template, or message as usual once they reply.",
+    "saveAsResponse": "Add to quick replies",
+    "savedResponses": "Quick replies",
+    "searchBySavedResponse": "Search by message content",
+    "searchByTemplateNameMessage": "Search by template name or message",
+    "searchChatsPlaceholder": "Search chats",
+    "searchCountry": "Search by country or code",
+    "searchForMessages": "Search for messages",
+    "selectDateRange": "Select date range",
+    "selectDocuments": "Select documents",
+    "selectDocumentsDescription": "You can select multiple documents at once, but they will be sent as separate messages.",
+    "selectImagesAndVideos": "Select images and videos",
+    "selectImagesAndVideosDescription": "You can select multiple images and videos at once, but they will be sent as separate messages.",
+    "selectLanguage": "Select language",
+    "send": "Send",
+    "sendLocation": "Send Location",
+    "sendLocationRequest": "Request customer's location",
+    "sendLocationRequestMessage": "Send location request message",
+    "sendLocationRequestMessageDescription": "Ask the user to share their location. Once they tap the button, they can send it right from WhatsApp.",
+    "sendTemplate": "Send template",
+    "sentFromBusinessApp": "Sent from the WhatsApp Business app",
+    "startWithTemplateDescription": "WhatsApp only allows starting a new chat with an approved template message.\nAfter the customer replies, you can type freely for 24 hours.",
+    "startWithTemplateTitle": "Start the chat with a template message",
+    "storeCustomers": "Store customers",
+    "tag": "Tag",
+    "tags": "Tags",
+    "templateMessage": "Template message",
+    "templateName": "Template Name",
+    "templateNameMustBeInEnglish": "Should be in English",
+    "templates": "Templates",
+    "theMessage": "Template message",
+    "thereIsNoPhoneNumber": "There is no phone number",
+    "thisChatIsExpired": "Chat window closed",
+    "thisContactHasNoPhoneNumber": "This contact has no phone number",
+    "typeAMessage": "Type a message",
+    "typeYourTemplateNameHere": "Type your template name here",
+    "unknown": "Unknown",
+    "unsupportedMessage": "Unsupported message",
+    "userDeletedAReaction": "Customer removed a reaction",
+    "userReactedWith": "Customer reacted with {{emoji}}",
+    "userReactedWithEmoji": "<b>{{name}}</b> reacted with {{emoji}} to message",
+    "variableLabel": "Variable {{index}}",
+    "variableTitle": "Insert placeholders like customer name or order number to personalize your message before sending.",
+    "whatsappContacts": "WhatsApp contacts",
+    "whatsappStatusAlert": {
+      "expired": "Activate your subscription to continue using the Live Chat feature.",
+      "placeholder": "Live chat placeholder in disabled mode"
+    },
+    "youDeletedAReaction": "You removed a reaction",
+    "youHaveNewMessage": "New message from <b>{{name}}</b>",
+    "youHaveNoNotifications": "You don’t have any notifications yet.",
+    "youHaveWhatsappMessage": "New WhatsApp message from {{name}}",
+    "youReactedWith": "You reacted with {{emoji}}"
+  },
+  "liveChatErrors": {
+    "0": {
+      "description": "An unexpected error occurred while sending the message. Please try again or contact support if the issue persists.",
+      "title": "Unknown Error"
+    },
+    "1": {
+      "description": "The request failed due to an invalid format or server issue. Please verify your request format and try again. If the problem persists, check WhatsApp Business Platform status.",
+      "title": "Unknown Error"
+    },
+    "100": {
+      "description": "Your request contains unsupported or misspelled parameters. Contact support if the issue persists.",
+      "title": "Invalid Parameter"
+    },
+    "130472": {
+      "description": "This message was not sent because the recipient is part of a WhatsApp marketing experiment. This is a temporary restriction by Meta.",
+      "title": "User in Experiment Group"
+    },
+    "131000": {
+      "description": "The message failed to send due to an unknown error. Please try again. If the error persists, contact support with the error description.",
+      "title": "Message Sending Failed"
+    },
+    "131005": {
+      "description": "Your app does not have the required permissions. Please verify your access token has the necessary permissions in the Meta Business Suite.",
+      "title": "Access Denied"
+    },
+    "131008": {
+      "description": "Your request is missing a required parameter. Please review the API documentation and include all mandatory fields.",
+      "title": "Required Parameter Missing"
+    },
+    "131009": {
+      "description": "One or more parameter values are invalid. Please check your phone number format and ensure all values meet the API requirements.",
+      "title": "Invalid Parameter Value"
+    },
+    "131016": {
+      "description": "A WhatsApp service is temporarily unavailable. Please wait a few minutes and try again. Check WhatsApp Business Platform status for updates.",
+      "title": "Service Temporarily Unavailable"
+    },
+    "131021": {
+      "description": "The sender and recipient phone numbers are the same. Please send messages to a different phone number than your business number.",
+      "title": "Cannot Message Yourself"
+    },
+    "131026": {
+      "description": "The message could not be delivered. Possible reasons: the recipient is not on WhatsApp, has not accepted the latest Terms of Service, has blocked your number, or is using an outdated WhatsApp version. Ask the recipient to update their app and accept the latest terms.",
+      "title": "Message Undeliverable"
+    },
+    "131037": {
+      "description": "Your business phone number does not have an approved display name. Please update your display name in WhatsApp Business Manager and wait for approval before sending messages.",
+      "title": "Display Name Not Approved"
+    },
+    "131042": {
+      "description": "There is a billing problem with your WhatsApp Business Account. Please check: payment method is attached, no outstanding dues, credit limit not exceeded, timezone and currency are set, and tax information is provided in Meta Business Manager.",
+      "title": "Payment Issue"
+    },
+    "131045": {
+      "description": "The phone number is not properly registered with WhatsApp Business API. Please complete the phone number registration process before sending messages.",
+      "title": "Phone Registration Error"
+    },
+    "131047": {
+      "description": "More than 24 hours have passed since the recipient last replied. You can only send free-form messages within 24 hours of the last customer message. Please use an approved message template to re-initiate the conversation.",
+      "title": "Conversation Window Closed"
+    },
+    "131049": {
+      "description": "WhatsApp has limited delivery to maintain a healthy ecosystem. The recipient has received too many marketing messages recently. Wait at least 24 hours before retrying. Consider using utility or service templates instead.",
+      "title": "Delivery Limited by Meta"
+    },
+    "131050": {
+      "description": "This recipient has opted out of receiving marketing messages from your business on WhatsApp. Do not retry sending marketing messages to this user. Subscribe to the user_preferences webhook to track opt-in/opt-out status.",
+      "title": "Marketing Messages Blocked"
+    },
+    "131051": {
+      "description": "The message type you are trying to send is not supported by WhatsApp Business API. Please check the documentation for supported message types.",
+      "title": "Unsupported Message Type"
+    },
+    "131052": {
+      "description": "WhatsApp was unable to download the media file sent by the user. The file may be corrupted or inaccessible. Ask the user to resend the media or use an alternative method.",
+      "title": "Media Download Failed"
+    },
+    "131053": {
+      "description": "The media file could not be uploaded. Please verify the file format is supported, the file size is within limits, and the file is not corrupted. Check supported media types in the documentation.",
+      "title": "Media Upload Failed"
+    },
+    "131057": {
+      "description": "Your WhatsApp Business Account is currently under maintenance, possibly due to a throughput upgrade. Please wait and try again later.",
+      "title": "Account Under Maintenance"
+    },
+    "132000": {
+      "description": "The number of parameters provided does not match the template definition. Please verify you are sending the exact number of variables required by the template.",
+      "title": "Template Parameter Mismatch"
+    },
+    "132001": {
+      "description": "The template does not exist, is not approved, or the language code is incorrect. Please verify the template name, ensure it is approved in WhatsApp Manager, and check the language locale is correct.",
+      "title": "Template Not Found"
+    },
+    "132005": {
+      "description": "The template text exceeds the character limit after variable substitution. Please use shorter values for your template variables or create a new template with shorter text.",
+      "title": "Template Text Too Long"
+    },
+    "132007": {
+      "description": "The template content violates WhatsApp policies. Please review WhatsApp template guidelines and modify your template content to comply with their policies.",
+      "title": "Template Policy Violation"
+    },
+    "132012": {
+      "description": "The variable parameter values are not in the correct format. Please ensure your parameter values match the format specified in the template (e.g., date format, currency format).",
+      "title": "Parameter Format Invalid"
+    },
+    "132015": {
+      "description": "This template has been paused due to low quality rating. Users may have reported it as spam or it has low engagement. Please edit the template to improve quality and resubmit for approval.",
+      "title": "Template Paused"
+    },
+    "132016": {
+      "description": "This template has been permanently disabled due to repeated quality issues. It cannot be restored. Please create a new template with improved content that follows WhatsApp guidelines.",
+      "title": "Template Permanently Disabled"
+    },
+    "132068": {
+      "description": "The WhatsApp Flow is in a blocked state due to configuration issues. Please review the flow setup, fix any missing inputs or logical errors, and republish the flow.",
+      "title": "Flow Blocked"
+    },
+    "132069": {
+      "description": "This flow has been throttled because 10 messages using it were already sent in the last hour. The flow may have endpoint issues. Please fix the flow configuration and wait before retrying.",
+      "title": "Flow Throttled"
+    },
+    "133000": {
+      "description": "A previous phone number deregistration attempt failed. Please complete the deregistration process before attempting to register the number again.",
+      "title": "Incomplete Deregistration"
+    },
+    "133004": {
+      "description": "WhatsApp servers are temporarily unavailable. Please check the WhatsApp Business Platform status page and try again later.",
+      "title": "Server Temporarily Unavailable"
+    },
+    "133005": {
+      "description": "The two-step verification PIN provided is incorrect. Please verify the PIN and try again. If you forgot the PIN, disable and re-enable two-step verification.",
+      "title": "Two-Step Verification PIN Incorrect"
+    },
+    "133006": {
+      "description": "The phone number needs to be verified before it can be registered. Please complete the phone verification process first.",
+      "title": "Phone Verification Required"
+    },
+    "133008": {
+      "description": "Too many incorrect PIN attempts have been made. Your account is temporarily locked. Please wait for the specified time before trying again.",
+      "title": "Too Many PIN Attempts"
+    },
+    "133009": {
+      "description": "The two-step verification PIN was entered too quickly. Please wait a moment before trying again.",
+      "title": "PIN Entered Too Quickly"
+    },
+    "133010": {
+      "description": "This phone number is not registered on WhatsApp Business Platform. Please complete the registration process before sending messages.",
+      "title": "Phone Number Not Registered"
+    },
+    "133015": {
+      "description": "This phone number was recently deleted and the deletion process is not yet complete. Please wait at least 5 minutes before attempting to register it again.",
+      "title": "Recently Deleted Number"
+    },
+    "134011": {
+      "description": "WhatsApp Payments terms of service have not been accepted for this account. Please accept the terms of service in WhatsApp Business Manager to continue.",
+      "title": "Payment Terms Not Accepted"
+    },
+    "135000": {
+      "description": "The message failed due to an unknown error with your request parameters. Please verify your request syntax against the API documentation and try again.",
+      "title": "Request Error"
+    },
+    "2": {
+      "description": "WhatsApp servers are experiencing downtime or high load. Please wait a few minutes and try again. Check WhatsApp Business Platform status for updates.",
+      "title": "Service Temporarily Unavailable"
+    },
+    "33": {
+      "description": "The business phone number associated with this request has been deleted. Please verify the phone number is correct and active in your WhatsApp Business Account.",
+      "title": "Phone Number Deleted"
+    }
+  },
+  "messageLogs": {
+    "actions": {
+      "previewMessage": "Preview message",
+      "resendSuccess": "Messages resent successfully",
+      "retryFailedRecipients": "Retry failed recipients"
+    },
+    "columns": {
+      "category": "Category",
+      "cost": "Cost",
+      "createdDate": "Created date",
+      "fullMessage": "See full message",
+      "messageTitle": "Message content",
+      "recipient": "Recipients/Groups",
+      "recipients": "Recipients",
+      "remainingBalance": "Remaining balance",
+      "retryCount": "Retry count"
+    },
+    "emptyState": {
+      "abandonedCartAction": "Set up abandoned cart reminder",
+      "campaignAction": "Launch marketing campaign",
+      "description": "Keep customers engaged and recover sales with marketing campaigns and abandoned cart reminders.",
+      "title": "Your message log is empty"
+    },
+    "filters": {
+      "abandonedCart": "Abandoned cart",
+      "autoReply": "Auto-responder",
+      "campaign": "Marketing campaign",
+      "cashbackAvailable": "Cashback earned",
+      "cashbackExpiring": "Balance expiring",
+      "cashbackManualCredit": "Balance added",
+      "cashbackReimbursed": "Balance refunded",
+      "customerBirthday": "Birthday greeting",
+      "customerWelcome": "Customer welcome",
+      "general": "Direct message",
+      "gift": "Gift",
+      "inbox": "Inbox reply",
+      "interactiveReply": "Automated reply",
+      "messageStatus": "Message status",
+      "messageType": "Message type",
+      "orderStatus": "Order status update",
+      "productRestock": "Product in stock",
+      "productReview": "Product review"
+    },
+    "free": "Free",
+    "inactiveState": {
+      "description": "Activate Zid WhatsApp to view your message history and logs.",
+      "title": "Message logs are not available"
+    },
+    "messageStatus": {
+      "accepted": {
+        "label": "Accepted",
+        "tooltip": "WhatsApp accepted the message for processing."
+      },
+      "delivered": {
+        "label": "Delivered",
+        "tooltip": "The message was delivered to the recipient's device."
+      },
+      "failed": {
+        "label": "Failed",
+        "tooltip": "The message could not be delivered due to an error."
+      },
+      "partial": {
+        "label": "Partial",
+        "tooltip": "Some messages were delivered successfully, while others failed."
+      },
+      "pending": {
+        "label": "Held for Quality Assessment",
+        "tooltip": "The message is on hold while WhatsApp checks its quality."
+      },
+      "read": {
+        "label": "Read",
+        "tooltip": "The recipient has opened and read the message."
+      },
+      "sending": {
+        "label": "Sending",
+        "tooltip": "The message is currently being sent."
+      },
+      "sent": {
+        "label": "Sent",
+        "tooltip": "The message was sent successfully from your system to WhatsApp servers."
+      },
+      "unknown": {
+        "label": "Unknown",
+        "tooltip": "The message status is unknown."
+      }
+    },
+    "notBilled": "Not billed",
+    "resendConfirm": {
+      "confirm": "Resend",
+      "description": "Messages will be re-sent to WhatsApp. You'll only be charged for successful deliveries.",
+      "notRetryable": "This message cannot be resent",
+      "title": "Confirm resend"
+    },
+    "searchByMobile": "Search by mobile",
+    "tabs": {
+      "failedMessages": "Failed",
+      "messages": "Accepted"
+    },
+    "title": "Message logs"
+  },
+  "reviewTooltip": "Usually reviewed within 2-5 minutes. You'll be notified once approved.",
+  "settings": {
+    "accountDetails": {
+      "description": "Manage your account info and business details used in WhatsApp messages.",
+      "title": "Account details"
+    },
+    "autoReplies": {
+      "description": "Create an automated reply flow to guide customers to the right answer.",
+      "title": "Replies flow"
+    },
+    "autoReply": {
+      "description": "Send automatic message to engage customers instantly when a new chat starts.",
+      "detailsTitle": "Details",
+      "messageLabelAr": "Reply message (Arabic)",
+      "messageLabelEn": "Reply message (English)",
+      "messagePlaceholderAr": "مرحباً! 👋\nشكراً لتواصلك معنا 😊\nتم استلام رسالتك وسنقوم بالرد عليك في أقرب وقت ممكن ⏳✨",
+      "messagePlaceholderEn": "Hello! 👋\nThanks for reaching out 😊\nWe’ve received your message and will get back to you as soon as possible. ⏳✨",
+      "preview": "Preview",
+      "savedSuccessfully": "Auto-reply settings saved successfully",
+      "sessionInfo": "Automatic reply is sent once per 24-hour session.",
+      "suggestedValues": "Suggested values",
+      "title": "Automatic reply"
+    },
+    "inactiveState": {
+      "description": "Activate the WhatsApp feature to access settings and configure your account.",
+      "title": "Settings are not available"
+    },
+    "optOut": {
+      "customize": "Customize",
+      "description": "Automatically let customers unsubscribe from WhatsApp messages by replying with a keyword.",
+      "keywordsInfo": "These keywords are recognized automatically and cannot be changed.",
+      "keywordsTitle": "Recognized keywords",
+      "optInConfirmationMessageLabel": "Resubscribe confirmation message",
+      "optInConfirmationMessagePlaceholderAr": "أُعيد اشتراكك. أرسل «إيقاف» في أي وقت لإلغاء الاشتراك.",
+      "optInConfirmationMessagePlaceholderEn": "You are now re-subscribed. Reply STOP at any time to unsubscribe.",
+      "optInDetailsTitle": "Resubscribe confirmation",
+      "optInKeywordsLabel": "Resubscribe keywords",
+      "optOutConfirmationMessageLabel": "Unsubscribe confirmation message",
+      "optOutConfirmationMessagePlaceholderAr": "أُلغي اشتراكك ولن تتلقى رسائل تلقائية بعد الآن. أرسل «ابدأ» في أي وقت لإعادة الاشتراك.",
+      "optOutConfirmationMessagePlaceholderEn": "You have been unsubscribed and will no longer receive automated messages. Reply START at any time to re-subscribe.",
+      "optOutDetailsTitle": "Unsubscribe confirmation",
+      "optOutKeywordsLabel": "Unsubscribe keywords",
+      "previewTitle": "Preview",
+      "savedSuccessfully": "Unsubscribe settings saved successfully",
+      "title": "Unsubscribe from messages"
+    },
+    "quickReplies": {
+      "create": "Create quick reply",
+      "createTitle": "Create quick reply",
+      "customize": "Customize",
+      "description": "Save and reuse messages for common questions to reply faster.",
+      "emptyDescription": "Create a quick reply to prepare responses in advance and reply faster.",
+      "messageLabel": "Reply message",
+      "messagePlaceholder": "Type your reply message",
+      "title": "Quick replies"
+    },
+    "storeWidget": {
+      "customize": "Customize",
+      "description": "Customize the WhatsApp button and its placement. Customers can click it to start a WhatsApp chat with your store.",
+      "previewOnStore": "Preview on store",
+      "title": "Store widget"
+    },
+    "tags": {
+      "add": "Add tag",
+      "addTitle": "Add tag",
+      "colorLabel": "Tag color",
+      "conversation": {
+        "description": "When enabled, default tags appear and you can add and delete custom tags.",
+        "title": "Conversation tags"
+      },
+      "customer": {
+        "bulkDeleteLimit": "You can delete up to {{max}} tags at a time.",
+        "deleteDescription": "You are about to delete the customer tag \"{{name}}\" from your store.",
+        "deleteDescription_bulk": "You are about to delete the {{total}} selected customer tags from your store.",
+        "description": "View, rename, and delete your store’s customer tags.",
+        "editTitle": "Rename customer tag",
+        "emptyTitle": "No customer tags yet",
+        "inUseDescription": "This tag is used in the customer groups below. Open each group, remove the tag from its filters, save, then retry deletion.",
+        "inUseDescription_bulk": "The tags below are used in customer groups. Open each group, remove the tag from its filters, save, then retry deletion.",
+        "invalidName": "Use letters, numbers, spaces, hyphens, or underscores only.",
+        "title": "Customer tags"
+      },
+      "customize": "Customize",
+      "deleteAttachedDescription": "You are about to delete the <bold>\"{{name}}\"</bold> tag. This tag is currently attached to the following conversations:",
+      "deleteConfirm": "This action cannot be undone. Are you sure you want to proceed?",
+      "deleteDescription": "You are about to delete the <bold>\"{{name}}\"</bold> tag.",
+      "deleteTitle": "Delete tag",
+      "deleteTitle_bulk": "Delete tags",
+      "description": "Manage your tags to organize and track conversations and customers.",
+      "emptyDescription": "Create your first tag to organize and track conversations.",
+      "emptyTitle": "No tags yet",
+      "nameLabel": "Tag name",
+      "namePlaceholder": "Enter tag name",
+      "tagName": "Tag name",
+      "title": "Tags"
+    }
+  },
+  "signupDialog": {
+    "connect": "Proceed to connect",
+    "description": "Make sure you've gone through the activation steps and you're ready, then continue to complete the connection with Meta.",
+    "title": "Connect with Zid WhatsApp",
+    "warnings": {
+      "browserUnsupported": "Your browser or device doesn't support this integration. Please try again using a different browser, and make sure you're not in incognito mode.",
+      "connecting": "We're connecting your account to Zid. Please stay on this page and don't submit the form again. This may take up to 30 seconds.",
+      "incompleteData": "We couldn't retrieve all the required information. Please make sure you've completed all steps, or try again from another device.",
+      "popupOpened": "The connection page was opened in a new tab or popup. Please return to that tab/popup and complete the remaining steps."
+    }
+  },
+  "status": {
+    "accessRevoked": "Access Revoked",
+    "active": "Active",
+    "approved": "Approved",
+    "banned": "Banned",
+    "canceled": "Canceled",
+    "canceling": "Canceled",
+    "draft": "Draft",
+    "failed": "Activation failed",
+    "paused": "Paused",
+    "pending": "In review",
+    "rejected": "Rejected",
+    "restricted": "Restricted"
+  },
+  "storeWidget": {
+    "buttonStyle": {
+      "backgroundColor": "Background color",
+      "description": "Select the colors for the widget.",
+      "iconColor": "Icon color",
+      "size": "Size",
+      "sizeLarge": "Large",
+      "sizeMedium": "Medium",
+      "sizeSmall": "Small",
+      "style": "Style",
+      "styleFilled": "Filled",
+      "styleOutlined": "Outlined",
+      "theme": "Theme",
+      "themeCustom": "Custom",
+      "themeDark": "Dark",
+      "themeLight": "Light",
+      "themeOriginal": "Original",
+      "title": "Style of the button"
+    },
+    "introMessageCard": {
+      "description": "Set up a message that will be pre-filled when customers open the WhatsApp chat and can be edited before sending.",
+      "title": "Default introductory message"
+    },
+    "preview": {
+      "activated": "Activated",
+      "notActivated": "Not activated",
+      "title": "Preview"
+    },
+    "style": {
+      "description": "Control the placement & look of the WhatsApp button.",
+      "title": "Style"
+    },
+    "widgetSettings": {
+      "cornerRadius": "Corner radius",
+      "description": "Select the WhatsApp button type and position.",
+      "iconButton": "Icon button",
+      "iconTextButton": "Icon + text button",
+      "introMessage": "Intro message",
+      "left": "Left",
+      "message": "Message",
+      "message_ar": "Message (Arabic)",
+      "message_en": "Message (English)",
+      "position": "Position (for primary store language)",
+      "right": "Right",
+      "title": "Widget settings",
+      "type": "Type"
+    }
+  },
+  "subscription": {
+    "allPlansInclude": "All Plans Include",
+    "features": {
+      "abandonedCart": {
+        "description": "Remind customers about cart they left behind and recover lost sales",
+        "title": "Abandoned cart reminders"
+      },
+      "campaigns": {
+        "description": "Send offers and discounts to the right customers, right on time",
+        "title": "Campaigns"
+      },
+      "liveChat": {
+        "description": "All conversations in one inbox. Reply faster, sell more",
+        "title": "Live chat"
+      },
+      "orderNotifications": {
+        "description": "Update customers from order creation to delivery, automatically",
+        "title": "Order notifications"
+      },
+      "productReviews": {
+        "description": "Request product reviews where customers actually respond",
+        "title": "Product reviews"
+      },
+      "restockAlerts": {
+        "description": "Instantly notify customers when their favorite items are available again",
+        "title": "Restock alerts"
+      }
+    }
+  },
+  "suggestedValues": "Suggested values"
+}

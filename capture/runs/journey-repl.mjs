@@ -16,6 +16,9 @@
 //   {"intent": "...", "do": "download", "role": "link", "name": "report.csv"}   or   {..., "do": "download", "url": "..."}
 //      (saves the download as <run>/downloads/NNN-<suggested name>)
 //   {"intent": "...", "do": "scroll", "css": "..."}                 (scrolls the element into view)
+//   {"intent": "...", "do": "evaluate", "js": "<expression>"}
+//      (evaluates the expression in the page, e.g. a call to the platform's API with the headers the page's own client
+//       sends; the trace holds the request and its answer; the expression's value is printed to the runner's output)
 //   {"do": "stopped-at-confirm", "control": "Pay", "step": 8, "evidence": "..."}
 //      (records that the journey reached a confirmation at that step and did not click it; written to
 //       <run>/stopped-at-confirm.jsonl)
@@ -68,6 +71,7 @@ for (;;) {
     }
     if (c.do === 'goto') return page.goto(c.url, { waitUntil: 'domcontentloaded' });
     if (c.do === 'press') return page.keyboard.press(c.key || c.value);
+    if (c.do === 'evaluate') { console.log(`evaluate step ${stepNo}:`, JSON.stringify(await page.evaluate(c.js)).slice(0, 6000)); return null; }
     const loc = c.do === 'text' ? page.getByText(c.text, { exact: !!c.exact }).first() : locate(page, c);
     if (c.do === 'click' || c.do === 'text') return loc.click({ timeout: 15000 });
     if (c.do === 'fill') return loc.fill(c.value_env ? envValue(c.value_env) : c.value, { timeout: 15000 });

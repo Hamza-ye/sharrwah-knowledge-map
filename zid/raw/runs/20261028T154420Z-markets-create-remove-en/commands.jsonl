@@ -1,0 +1,4 @@
+{"intent":"the markets page as found: no market","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/settings/markets"}
+{"intent":"open Create","do":"click","role":"button","name":"Create","exact":true}
+{"intent":"the create-market address opened directly","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/settings/markets/create"}
+{"do":"close"}

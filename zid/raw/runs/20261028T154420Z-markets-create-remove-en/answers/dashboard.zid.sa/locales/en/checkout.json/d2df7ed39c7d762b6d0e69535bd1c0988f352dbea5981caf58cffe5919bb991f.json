@@ -1,0 +1,155 @@
+{
+  "accountNumber": "Account number",
+  "amount": "Amount",
+  "applePay": "Apple Pay",
+  "applePayNotAvailable": "Apple Pay is not available at this time",
+  "applePayNotSupported": "Apple Pay is not supported on your device",
+  "applePayPaymentDataMissing": "Payment data is missing",
+  "applePayPaymentError": "An error occurred while processing your payment",
+  "applePayPaymentFailed": "Apple Pay payment failed",
+  "applePayValidationError": "Payment validation error",
+  "autoRenewsEveryYearOn": "Auto-renews every {{type}} on {{date}}",
+  "bankTransfer": "Bank transfer",
+  "bankTransferConfirmError": "Bank transfer confirmation error",
+  "bankTransferDesc": "Al Rajhi Bank",
+  "bankTransferPaymentMethodError": "Bank transfer payment method error",
+  "bankTransferSubmittedPendingApproval": "Bank transfer submitted. Approval may take a few business days.",
+  "bankTransferSuccess": "Bank transfer completed successfully",
+  "beneficiaryNameArabic": "Beneficiary name (Arabic)",
+  "beneficiaryNameEnglish": "Beneficiary name (English)",
+  "byCompletingThePaymentYouAgreeToThe": "By completing the payment, you agree to the",
+  "cardNumber": "Card number",
+  "checkoutRedirect": {
+    "processing": {
+      "description": "Finalizing your transaction. You'll be redirected shortly.",
+      "title": "Processing your payment"
+    }
+  },
+  "clickCompletePaymentToContinue": "Click 'Complete Purchase' to continue with Noon payment",
+  "completePayment": "Complete Payment",
+  "completePurchase": "Complete purchase",
+  "connectingToPaymentProvider": "Please wait a moment while we connect to our payment provider",
+  "couponAddedSuccessfully": "Coupon code is added successfully",
+  "couponRemovedSuccessfully": "Coupon code is removed successfully",
+  "creditCard": "Credit card",
+  "creditForSelectedService": "Credit for selected service",
+  "creditForSelectedServiceTooltip": "Credit available for the selected service.Applied automatically if available.",
+  "currentWalletBalance": "Current wallet balance: {{balance}}",
+  "cvv": "CVV",
+  "duration": {
+    "monthly": "month",
+    "yearly": "year"
+  },
+  "errors": {
+    "422": {
+      "description": "The remaining amount in your account is higher than the value of the selected package, please choose another package.",
+      "title": "You cannot complete the purchase."
+    },
+    "paymentLinkNotFound": {
+      "description": "Please double-check the payment link url",
+      "title": "Payment link is not found"
+    }
+  },
+  "finishProcess": "Finish process",
+  "generalWalletBalance": "General wallet balance",
+  "generalWalletBalanceTooltip": "General wallet balance. Will be used if there’s no sufficient service-specific credit.",
+  "giftCardOrCouponCode": "Gift card or coupon code",
+  "haveACouponCode": "Have a coupon code?",
+  "iban": "Iban number",
+  "noAccessToUseWalletBalance": "You don't have access to use wallet balance",
+  "noEnoughBalance": "You don't have enough balance",
+  "orderSummary_amount_credited": "Amount credited",
+  "orderSummary_amount_due": "Amount due",
+  "orderSummary_amount_paid": "Amount paid",
+  "orderSummary_discount": "Discount",
+  "orderSummary_discounts_total": "Discount",
+  "orderSummary_net_total": "Net total",
+  "orderSummary_net_total_after_discount": "Net total after discount",
+  "orderSummary_sub_total_after_discounts": "Sub total after discounts",
+  "orderSummary_sub_total_after_vat": "Sub total after VAT",
+  "orderSummary_sub_total_before_vat": "Sub total before VAT",
+  "orderSummary_title": "Order summary",
+  "orderSummary_total": "Total",
+  "orderSummary_vat": "VAT",
+  "orderSummary_vat_subjected_amount": "VAT subjected amount",
+  "orderSummary_vat_total": "Vat total",
+  "orderSummary_vat_total_after_discount": "VAT total after discount",
+  "payment": "Payment",
+  "paymentMethodUpdatedSuccessfully": "The payment method has been updated successfully",
+  "paymentPending": {
+    "description": "We are checking your payment status. Please wait...",
+    "title": "Processing Payment"
+  },
+  "preparingPayment": "Preparing payment...",
+  "redirectToNoon": "Continue to Noon Payment",
+  "refreshingPurchase": "We’re preparing a new checkout session. Please try again in a moment.",
+  "requestVatInvoice": "Request VAT invoice",
+  "saveCard": "Save card",
+  "saveCardForFasterCheckout": "Save this card for faster checkout",
+  "savedCards": "Saved cards",
+  "startNow": "Get started",
+  "states": {
+    "firstSubscription": {
+      "description": "Congrats, your store is ready! Finish the last few simple steps and start selling immediately.",
+      "getStarted": "Start now",
+      "playVideo": "Play video",
+      "requestVatInvoice": "Request VAT invoice",
+      "title": "Your store is ready! let\u2019s begin your journey",
+      "videoDuration": "2:10 min"
+    },
+    "ngoSubscription": {
+      "description": "Your journey to build a successful online store starts now. Let's set up your store, add products, and start selling to your first customers!",
+      "getStarted": "Get started",
+      "title": "Congratulations! You've officially joined Zid 🚀"
+    },
+    "processingPayment": {
+      "contactSupport": "Contact support",
+      "description": "Finalizing your transaction. This is taking longer than expected, please hold on while we complete the payment process.",
+      "logout": "Logout",
+      "title": "Processing your payment"
+    },
+    "purchaseCompleted": {
+      "description": "You'll find the details in your dashboard or relevant section.",
+      "goToDashboard": "Go to dashboard",
+      "requestVatInvoice": "Request VAT invoice",
+      "title": "Your purchase was completed successfully"
+    },
+    "purchaseIncomplete": {
+      "button": "Copy Purchase ID",
+      "description": "We were unable to confirm your payment status. Please contact support with your purchase ID: {{purchaseId}}",
+      "title": "We couldn't complete the purchase"
+    },
+    "rejected": {
+      "description": "Something went wrong while processing your payment. Please try again or review your details and update if needed.",
+      "title": "We couldn't complete your payment"
+    },
+    "subDescription": "Invoice #{{invoiceNumber}} has been sent to {{email}}",
+    "subscriptionChanged": {
+      "description": "Changes may take a few minutes to fully apply. Hang tight - we'll let you know if anything needs your attention.",
+      "goToDashboard": "Go to dashboard",
+      "requestVatInvoice": "Request VAT invoice",
+      "title": "Your subscription has been successfully changed"
+    },
+    "yourEmail": "your email"
+  },
+  "termsAndConditions": "Terms and conditions",
+  "title": "Checkout",
+  "totalCreditBalanceIs": "Total credit balance is",
+  "useNewCard": "Use new card",
+  "useSavedCard": "Use saved card",
+  "useWalletBalance": "Use wallet balance",
+  "vatInvoiceForm": {
+    "alert": {
+      "content": "Please fill it in and we will generate the VAT invoice as soon as possible (usually takes up to 1 hour).",
+      "title": "The following information is required to generate your VAT invoice."
+    },
+    "businessAddress": "Business address",
+    "commercialRegistrationNumber": "Commercial registration number",
+    "storeInfo": "Store information",
+    "taxCertificateNumber": "TAX certificate number",
+    "title": "Request VAT invoice",
+    "tradeLicenseNumber": "Trade license number"
+  },
+  "walletBalance": "Wallet balance",
+  "yourDiscountHasBeenApplied": "Your discount has been applied!"
+}

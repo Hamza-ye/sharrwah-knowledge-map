@@ -1,0 +1,374 @@
+{
+  "addLink": {
+    "buttonText": "Button text",
+    "description": "Provide the URL that the customer will be re-directed to after clicking on that button.",
+    "title": "Add link",
+    "websiteUrl": "Website URL"
+  },
+  "bulk": {
+    "confirmDelete": "You are about to delete the campaigns: {{campaignsTitles}} \nWould you like to continue?"
+  },
+  "campaignLanguage": "Campaign language",
+  "campaignStatus": "Campaign status",
+  "campaignSummary": "Summary",
+  "campaignTitleHelper": "Customer won't see this, only for the staff.",
+  "campaignTitlePlaceholder": "Eid campaign",
+  "cancelSchedule": {
+    "action": "Cancel schedule",
+    "dialog": {
+      "back": "Go back",
+      "description": "The campaign won't be sent on {{date}}. Nothing was charged to your balance, and you can send it again at any time.",
+      "title": "Cancel the campaign schedule?"
+    },
+    "toast": "Campaign schedule cancelled"
+  },
+  "channels": {
+    "sms": "SMS",
+    "whatsapp": "WhatsApp"
+  },
+  "columns": {
+    "campaignTitle": "Campaign Name",
+    "channel": "Channel",
+    "customers": "Specific customers",
+    "customersCount_few": "{{count}} customers",
+    "customersCount_many": "{{count}} customers",
+    "customersCount_one": "{{count}} customer",
+    "customersCount_other": "{{count}} customers",
+    "customersCount_two": "{{count}} customers",
+    "customersCount_zero": "{{count}} customers",
+    "groupCustomersCount_few": "{{count}} customers (group)",
+    "groupCustomersCount_many": "{{count}} customers (group)",
+    "groupCustomersCount_one": "{{count}} customer (group)",
+    "groupCustomersCount_other": "{{count}} customers (group)",
+    "groupCustomersCount_two": "{{count}} customers (group)",
+    "groupCustomersCount_zero": "{{count}} customers (group)",
+    "groups": "Customer group",
+    "pendingTooltip": "Meta reviews the template, which may take up to 48 hours.",
+    "publishStatus": "Publish status",
+    "target": "Target segment",
+    "totalOrders": "Total orders",
+    "whatsappTemplate": "WhatsApp template"
+  },
+  "content": "Content",
+  "contentDescription": "Add the campaign content that will appear to your customers.",
+  "copyCoupon": {
+    "buttonText": "Button text",
+    "coupnCode": "Coupon code",
+    "description": "Provide the code that the customer can easily copy.",
+    "hint": "Enter English letters only.",
+    "title": "Copy coupon code"
+  },
+  "customersCountFromGroup_few": "{{count}} customers from a group",
+  "customersCountFromGroup_many": "{{count}} customers from a group",
+  "customersCountFromGroup_one": "{{count}} customer from a group",
+  "customersCountFromGroup_other": "{{count}} customers from a group",
+  "customersCountFromGroup_two": "{{count}} customers from a group",
+  "customersCountFromGroup_zero": "{{count}} customers from a group",
+  "details": "Details",
+  "detailsDescription": "Add your campaign content that will appear to your customers.",
+  "emptyState": {
+    "description": "No campaigns yet. Start creating your first campaign to engage with your customers and boost sales.",
+    "smsButton": "Create SMS campaign",
+    "title": "No marketing campaign messages",
+    "whatsAppButton": "Create WhatsApp campaign"
+  },
+  "filters": {
+    "campaignSelection": "Campaign details",
+    "publishStatus": "Publish status",
+    "whatsappMessageStatus": "WhatsApp message status"
+  },
+  "image": "Campaign cover",
+  "mediaLimitsImage": "Image: JPG or PNG · up to 5 MB",
+  "mediaLimitsVideo": "Video: MP4 or 3GPP · up to 16 MB",
+  "messageButtons": "Buttons",
+  "messageButtonsDescription": "Add buttons that let your customers open a selected link or copy the coupon code.",
+  "messageContent": "Message content",
+  "messageLanguage": "Message language",
+  "messagePlaceholder": "Add message content to preview...",
+  "messageSection": "Message",
+  "noName": "No name yet",
+  "notSet": "Not set yet",
+  "progressStatus": {
+    "cancelled": "Cancelled",
+    "completed": "Processing completed",
+    "completedWithErrors": "Completed with errors",
+    "legacySubmitted": "Submitted",
+    "paused": "Paused for today",
+    "preparationFailed": "Preparation failed",
+    "preparing": "Preparing",
+    "queued": "Waiting for preparation",
+    "ready": "Waiting to send",
+    "recoveringFailedBatch": "Recovering",
+    "scheduled": "Scheduled",
+    "sending": "Sending",
+    "unavailable": "Status unavailable"
+  },
+  "publishCampaign": "Publish campaign",
+  "rechargeBalance": "Topup balance",
+  "recipients": {
+    "customers": {
+      "emptyButton": "Select customers",
+      "emptySubtitle": "Select the customers who will receive this campaign.",
+      "emptyTitle": "No customers selected"
+    },
+    "groups": {
+      "emptyButton": "Select groups",
+      "emptySubtitle": "Select one or more groups to define the target audience for this campaign.",
+      "emptyTitle": "No customer groups selected"
+    }
+  },
+  "remove": "Remove",
+  "resendCampaign": "Resend",
+  "results": {
+    "deleteConfirm": "You are about to delete the campaign \"{{name}}\". Would you like to continue?",
+    "duplicate": "Duplicate",
+    "duplicateSuccess": "Campaign duplicated successfully",
+    "export": "Export",
+    "failureBreakdown": {
+      "errorCode": "Error code {{code}}",
+      "learnMore": "<helpLink>Learn more</helpLink> about WhatsApp message failures and how to handle them.",
+      "notRetryable": "Not retryable",
+      "retryable": "Retryable",
+      "title": "Failure details"
+    },
+    "metrics": {
+      "description": "How many of the campaign's messages were sent or read, how many failed, and how many are still pending.",
+      "failed": "Failed",
+      "failedRate": "{{value}}% failure rate",
+      "pending": "Pending",
+      "pendingRate": "{{value}}% pending rate",
+      "read": "Read",
+      "readRate": "{{value}}% read rate",
+      "sent": "Sent",
+      "sentRate": "{{value}}% send rate",
+      "title": "Delivery summary"
+    },
+    "recipients": {
+      "columns": {
+        "deliveredAt": "Delivered at",
+        "description": "Description",
+        "issueCode": "Error code",
+        "phone": "Phone number",
+        "readAt": "Read at"
+      },
+      "description": "Each recipient's message and its delivery status.",
+      "emptyState": "No recipients found",
+      "exportAll": "Export recipients",
+      "exportFailed": "Export failed recipients only",
+      "exportSuccess": "The export is being generated and will be available shortly.",
+      "filters": {
+        "issueCode": "Error code"
+      },
+      "resendSelected": "Resend to selected",
+      "retryAction": "Retry",
+      "retrySuccess": "Messages resent successfully",
+      "searchByPhone": "Search by customer name or phone",
+      "tabs": {
+        "accepted": "Accepted",
+        "all": "All",
+        "delivered": "Delivered",
+        "failed": "Failed",
+        "held": "Quality assessment pending",
+        "read": "Read",
+        "sent": "Sent"
+      },
+      "title": "Recipients"
+    },
+    "resend": {
+      "action": "Copy campaign",
+      "chooseRecipients": "A new draft copy is created with the same content. Choose the recipients for the copy:",
+      "confirm": "Create draft",
+      "descriptionFiltered_few": "This will create a draft copy of the campaign for <bold>{{count}} recipients</bold> matching the applied filters. It won't be sent automatically, you can review and send it at any time.",
+      "descriptionFiltered_many": "This will create a draft copy of the campaign for <bold>{{count}} recipients</bold> matching the applied filters. It won't be sent automatically, you can review and send it at any time.",
+      "descriptionFiltered_one": "This will create a draft copy of the campaign for <bold>{{count}} recipients</bold> matching the applied filters. It won't be sent automatically, you can review and send it at any time.",
+      "descriptionFiltered_other": "This will create a draft copy of the campaign for <bold>{{count}} recipients</bold> matching the applied filters. It won't be sent automatically, you can review and send it at any time.",
+      "descriptionFiltered_two": "This will create a draft copy of the campaign for <bold>{{count}} recipients</bold> matching the applied filters. It won't be sent automatically, you can review and send it at any time.",
+      "descriptionFiltered_zero": "This will create a draft copy of the campaign for <bold>{{count}} recipients</bold> matching the applied filters. It won't be sent automatically, you can review and send it at any time.",
+      "recipients": {
+        "all": {
+          "description": "Same recipient list as the original campaign.",
+          "label": "All recipients"
+        },
+        "failed": {
+          "description": "Best for retrying with those who didn't receive the message.",
+          "label": "Only recipients the message failed to reach"
+        }
+      },
+      "success": "Draft copy created successfully",
+      "title": "Copy campaign",
+      "titleFiltered": "Copy campaign to selected recipients"
+    },
+    "viewResults": "View results"
+  },
+  "saveAndSend": "Publish campaign",
+  "saveForReview": "Submit for review",
+  "scheduleCampaign": "Schedule campaign",
+  "sendCampaign": "Send campaign",
+  "sendTiming": {
+    "alert": {
+      "description": "We check your balance and deduct the cost when the campaign starts at the scheduled time.",
+      "title": "Nothing is charged today"
+    },
+    "date": "Date",
+    "description": "Choose when the campaign starts. We deduct the cost after preparing the recipients, not when you send.",
+    "detailsDescription": "The campaign name and when it is sent.",
+    "now": {
+      "description": "We start preparing the campaign right away.",
+      "label": "Send now"
+    },
+    "schedule": {
+      "description": "Pick the day and time that suit you.",
+      "label": "Schedule",
+      "templateNotApproved": "You can't schedule this campaign until its WhatsApp template is approved."
+    },
+    "time": "Time ({{offset}})",
+    "title": "Send time",
+    "toast": {
+      "alreadyProcessing": "This campaign is already being processed",
+      "queued": "Campaign queued",
+      "scheduled": "Campaign scheduled"
+    },
+    "validation": {
+      "future": "Choose a future date and time."
+    }
+  },
+  "senderName": "SMS Sender name",
+  "senderNameCustomization": "Customize",
+  "sendingStatus": {
+    "cancelled": {
+      "alert": {
+        "description": "No messages were sent and nothing was charged. Choose a send time again, then send or schedule the campaign.",
+        "title": "Campaign cancelled"
+      }
+    },
+    "completed": {
+      "description": "All campaign batches were processed. Delivery and read results are in the cards below."
+    },
+    "completedWithErrors": {
+      "description_few": "Processing finished. {{count}} recipients weren't processed and their cost was refunded.",
+      "description_many": "Processing finished. {{count}} recipients weren't processed and their cost was refunded.",
+      "description_one": "Processing finished. {{count}} recipient wasn't processed and their cost was refunded.",
+      "description_other": "Processing finished. {{count}} recipients weren't processed and their cost was refunded.",
+      "description_two": "Processing finished. {{count}} recipients weren't processed and their cost was refunded.",
+      "description_zero": "Processing finished.",
+      "processedPercent": "{{value}}% complete"
+    },
+    "draft": {
+      "description": "This campaign hasn't been sent yet."
+    },
+    "failedBalance": {
+      "alert": {
+        "description": "Top up your balance, then prepare the campaign again. No campaign messages were sent.",
+        "title": "Insufficient WhatsApp balance"
+      },
+      "currentBalance": "Your current balance",
+      "neededBalance": "Campaign needs",
+      "topUp": "Top up balance",
+      "topUpAtLeast": "Top up at least"
+    },
+    "failedOther": {
+      "alert": {
+        "description": "Prepare it again to start over.",
+        "title": "We couldn't finish preparing the campaign"
+      }
+    },
+    "failedTooLong": {
+      "alert": {
+        "description": "With your current WhatsApp limits, sending can't finish within 5 days. Resend the campaign to fewer recipients, or prepare it again after your daily message limit is raised.",
+        "title": "The campaign needs more time than allowed"
+      }
+    },
+    "legacySubmitted": {
+      "description": "Progress isn't available for this older campaign."
+    },
+    "paused": {
+      "alert": {
+        "description": "The campaign used its share of the daily WhatsApp limit. Order messages and verification codes are sent as usual, and the campaign will resume on its own.",
+        "title": "We paused the campaign so your order messages keep going"
+      },
+      "nextCheck": "Next check at {{time}}",
+      "whyPaused": "Why do campaigns pause?"
+    },
+    "preparing": {
+      "description": "We're checking the recipients' numbers and calculating the cost. No messages have been sent yet.",
+      "label": "Checking customers"
+    },
+    "progress": {
+      "legend": {
+        "processed": "Processed",
+        "refunded": "Cost refunded"
+      },
+      "processedOf": "{{processed}} of {{total}}",
+      "processedPercent": "{{value}}% processed"
+    },
+    "queued": {
+      "description": "Your campaign is in the queue, and its preparation will start soon.",
+      "label": "In the queue"
+    },
+    "ready": {
+      "description": "Your recipients are ready and the cost was deducted from your balance. Sending starts as soon as capacity is available.",
+      "label": "Waiting for sending capacity"
+    },
+    "recovering": {
+      "description": "A batch of messages couldn't be completed. We're refunding the cost of the recipients it didn't reach."
+    },
+    "scheduled": {
+      "description": "Scheduled for {{date}} at {{time}} ({{offset}}). Nothing has been charged yet: we check your balance and charge the cost when the campaign starts."
+    },
+    "sending": {
+      "description": "We're processing your campaign. Delivery and read results update below."
+    },
+    "stats": {
+      "customersChecked": "Customers checked",
+      "estimatedCost": "Estimated cost",
+      "estimatedCostPoints_few": "About {{amount}} points",
+      "estimatedCostPoints_many": "About {{amount}} points",
+      "estimatedCostPoints_one": "About {{amount}} point",
+      "estimatedCostPoints_other": "About {{amount}} points",
+      "estimatedCostPoints_two": "About {{amount}} points",
+      "estimatedCostPoints_zero": "About {{amount}} points",
+      "estimatedTime": "Estimated sending time",
+      "invalidNumbers": "Invalid numbers skipped",
+      "preparedRecipients": "Ready to send",
+      "processed": "Processed",
+      "recipients": "Recipients",
+      "refunded": "Refunded",
+      "remaining": "Remaining"
+    },
+    "title": "Sending status",
+    "tooLong": {
+      "description": "At your current WhatsApp sending limits, sending would take about {{duration}}, more than the 5 days allowed. Send the campaign to fewer recipients, or raise your daily messaging limit first.",
+      "title": "This campaign would take too long to send"
+    }
+  },
+  "sendingTimeMustBeFrom7amTo10pm": "Sending time must be from 7am to 10pm",
+  "smsBalance": "Sms balance",
+  "smsCampaign": "SMS campaign",
+  "smsStatus": "SMS status",
+  "status": {
+    "approved": "Approved",
+    "noSenderName": "No sender name",
+    "pending": "Pending",
+    "ready": "Ready",
+    "setByBackoffice": "Set by back office"
+  },
+  "summaryBar": {
+    "description": "Review the campaign summary and message"
+  },
+  "target": "Target segment",
+  "targetDescription": "Choose who receives your campaign, specific customers or a customer group with specific rules.",
+  "validation": {
+    "recipientsRequired": "Please select at least one customer or group"
+  },
+  "whatsAppBalance": "WhatsApp balance",
+  "whatsappCampaign": "WhatsApp campaign",
+  "whatsappState": {
+    "action": "See WhatsApp details",
+    "description": "Activate the WhatsApp feature to launch targeted campaigns, re-engage customers, and drive more conversions.",
+    "title": "Expand your reach with WhatsApp Campaigns"
+  },
+  "whatsappStatusAlert": {
+    "expired": "Activate your subscription to continue using marketing campaign messages.",
+    "notActive": "Activate the WhatsApp feature to launch targeted campaigns, re-engage customers, and drive more conversions."
+  }
+}

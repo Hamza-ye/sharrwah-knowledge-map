@@ -1,0 +1,187 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home"
+  - button "Apps"
+  - button "Settings" [pressed]
+  - separator
+- list:
+  - link "General":
+    - /url: /en-sa/stores/127604/settings/account
+  - link "Account settings":
+    - /url: /en-sa/stores/127604/settings/account
+  - link "Security settings":
+    - /url: /en-sa/stores/127604/settings/security
+  - link "Languages & currencies":
+    - /url: /en-sa/stores/127604/settings/languages-currencies
+  - link "Checkout page options":
+    - /url: /en-sa/stores/127604/settings/checkout
+  - link "Gifting settings New":
+    - /url: /en-sa/stores/127604/settings/gifting-settings
+  - link "Configure your invoices":
+    - /url: /en-sa/stores/127604/settings/invoice
+  - link "Orders and products properties":
+    - /url: /en-sa/stores/127604/settings/orders-products
+  - link "Shipping and payment constraints":
+    - /url: /en-sa/stores/127604/settings/constraints
+  - link "Tax settings":
+    - /url: /en-sa/stores/127604/settings/tax
+  - link "Fatoora platform integration":
+    - /url: /en-sa/stores/127604/settings/zatca-integration
+  - link "Staff notifications":
+    - /url: /en-sa/stores/127604/settings/staff-notifications
+  - link "API integrations":
+    - /url: /en-sa/stores/127604/settings/direct-api-integration
+  - link "Export requests":
+    - /url: /en-sa/stores/127604/settings/export-requests
+  - link "URL redirects":
+    - /url: /en-sa/stores/127604/settings/url-redirects
+  - link "Communications":
+    - /url: /en-sa/stores/127604/settings/communications/orders
+    - text: Communications
+    - button
+  - link "Store":
+    - /url: /en-sa/stores/127604/settings/information
+    - text: Store
+    - button
+- main:
+  - button
+  - heading "Checkout page options" [level=5]
+  - button "Save"
+  - heading "Configure your checkout" [level=6]
+  - paragraph: Optimize your checkout page to enhance customer experience and boost conversions.
+  - listitem:
+    - paragraph: Shipping and payment options display
+    - text: Choose how the shipping and payment options list appears on the checkout page
+  - radiogroup "Shipping and payment options display":
+    - radio "Compact view Fast checkout — the customer sees only the shipping and payment options they previously selected, ready to confirm." [checked]
+    - paragraph: Compact view
+    - text: Fast checkout — the customer sees only the shipping and payment options they previously selected, ready to confirm.
+    - radio "Full view Multi-option checkout — the customer sees all available shipping and payment options, with their previous selection highlighted."
+    - paragraph: Full view
+    - text: Multi-option checkout — the customer sees all available shipping and payment options, with their previous selection highlighted.
+  - button "How it appears in the store"
+  - separator
+  - listitem:
+    - paragraph: Customer address determination
+    - text: Choose how customer addresses are obtained on your store's checkout page.
+  - link "Customization":
+    - /url: /en-sa/stores/127604/settings/checkout/customize-address
+  - separator
+  - listitem:
+    - paragraph: Enable fast checkout with Apple Pay
+    - text: Enable one-click fast checkout through Apple Pay from the cart or product pages
+    - switch
+  - button "How it appears in the store"
+  - separator
+  - listitem:
+    - paragraph: Send invoices via email
+    - text: Send order invoices to your customers by email, using the selected address as the sender.
+    - switch
+  - separator
+  - listitem:
+    - paragraph: Sign in with SMS messages
+    - text: Enable your customers to log in using SMS messages.
+    - switch [checked]
+  - button "How it appears in the store"
+  - separator
+  - listitem:
+    - paragraph: Sign in with email
+    - text: Enable your customers to log in using email.
+    - switch
+  - button "How it appears in the store"
+  - checkbox "Make it mandatory"
+  - text: Make it mandatory
+  - separator
+  - listitem:
+    - paragraph: Sign in with WhatsApp
+    - text: Enable your customers to log in using WhatsApp.
+    - switch [checked]
+  - button "How it appears in the store"
+  - separator
+  - listitem:
+    - paragraph: Enable Apple Pay alerts in all browsers.
+    - text: Show an alert to direct the user to the Safari browser for those who use other browsers when choosing to pay with Apple Pay.
+    - switch
+  - button "How it appears in the store"
+  - separator
+  - listitem:
+    - paragraph: Login as a pop-up
+    - text: Enable pop-up login for a fast, seamless checkout that keeps customers engaged and reduces drop-offs.
+    - switch
+  - separator
+  - listitem:
+    - paragraph: Buy now as a pop-up
+    - text: Enable pop-up checkout for the 'Buy Now' button to streamline the process and encourage quick purchases. If disabled, users will be redirected to the full checkout page.
+    - switch
+  - separator
+  - listitem:
+    - paragraph: Activate multiple discounts
+    - text: This feature allows the customer to use more than one discount per cart.
+    - switch
+  - listitem:
+    - paragraph: Show coupon code field
+    - text: Show the coupon code field on the checkout page so customers can apply discount coupons.
+    - switch [checked]
+  - listitem:
+    - paragraph: Buy as a guest
+    - text: Enable your customers to buy without signing in.
+    - switch [checked]
+  - checkbox "Online payment" [checked] [disabled]
+  - text: Online payment
+  - checkbox "Cash on delivery"
+  - text: Cash on delivery
+  - checkbox "Bank transfer"
+  - text: Bank transfer
+  - checkbox "Direct guest checkout Take guest customers straight to checkout without showing the login screen."
+  - text: Direct guest checkout Take guest customers straight to checkout without showing the login screen.
+  - separator
+  - listitem:
+    - paragraph: Customer notes
+    - text: Enable customers to enter their comments before submitting their order.
+    - switch
+  - button "Customize"
+  - checkbox "Show the order note field open by default"
+  - text: Show the order note field open by default
+  - separator
+  - listitem:
+    - paragraph: Activate one-page checkout
+    - text: One-page checkout drives higher conversion.
+    - switch
+  - button "How it appears in the store"
+  - separator
+  - listitem:
+    - paragraph: Show cart items which are available for pickup on your store's checkout page.
+    - text: Allow customers to see if items are available for pickup during checkout.
+    - switch [checked]
+  - separator
+  - listitem:
+    - paragraph: Zid assurance
+    - text: Ensure faster customer follow-up and proactive handling of all shipment updates, giving your customers confidence that their rights are safeguarded
+    - switch [checked]
+  - separator
+  - listitem:
+    - paragraph: Allow customers to change their customer type to a company
+    - text: Allow customers to change their customer type to company and enter their company name , Tax number and commercial register number at the store.
+    - switch [checked]
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img
