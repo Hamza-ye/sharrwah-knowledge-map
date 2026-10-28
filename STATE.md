@@ -1,6 +1,6 @@
 # State
 
-**What this file is:** where the work is, on one page (`PLAN.md`, section 9). Updated 27 October 2026.
+**What this file is:** where the work is, on one page (`PLAN.md`, section 9). Updated 28 October 2026.
 
 **The plan:** `PLAN.md`. It is the plan the founder agreed at G0, and on 25 October 2026 the founder reset the work to it, as it stood at G1, with the pilot's own changes and the coordinator's engineering choices (its section 11).
 
@@ -14,8 +14,8 @@
 **Open gate:** G3, after each subject. S-02 is under way.
 
 **Waiting on the founder:**
-- **the local agent's runs, and the founder's word on how they went** (27 October, evening). Its runs for H-006, H-007 and H-008 are in progress in observed-sh. The founder said they would pass H-001 to H-003 and H-005's step 1 for observed-sa. RD1's phase C waits for that word. Held evidence already answers part of each request (below);
-- the answers in [`reports/S-02-evidence-requests.md`](reports/S-02-evidence-requests.md), for the evidence only the founder can get: a Zid store, a BigCommerce trial, a WooCommerce test store, and questions to four platforms. Nothing waits on them: the second pass and phase C go on.
+- **the founder's word on the Salla capture requests:** H-001 to H-003, H-005's step 1, and H-004 if a run reaches verification. RD1's phase C waits for it. The observed-sh requests, H-006 to H-008, ran on 27 October and are read (below);
+- the answers in [`reports/S-02-evidence-requests.md`](reports/S-02-evidence-requests.md), for the evidence only the founder can get: a Zid store, a BigCommerce trial, a WooCommerce test store, and questions to five platforms, Shopify's added on 28 October. Nothing waits on them: phase C goes on.
 
 **Stage 4, S-02, what a market is.**
 - **Its frame:** [`studies/subjects/S-02/frame.md`](studies/subjects/S-02/frame.md).
@@ -48,23 +48,32 @@ At phase A's end, the checker found every quote, 3,193 of them, and no error. Wi
   - **WooCommerce (A2-T):** its settings code.
 - **Phase B is complete:** 75 points and 904 rows, every statement placed or noted, and the full check finds no error. The audit of the late parts' absences (A3-2) confirmed five and partly contradicted two.
 - **Phase C compares the platforms on each answer of a point, one at a time,** after two dry runs ([`briefs/C-analysis.md`](studies/subjects/S-02/briefs/C-analysis.md)). Its parts are in [`c/parts.tsv`](studies/subjects/S-02/c/parts.tsv):
-  - RD2 is done;
-  - RD3's first three parts are done, and its fourth is running;
+  - RD2 and RD3 are done: 56 points, 247 keys;
   - RD1's two parts wait for the founder's word on the handoffs.
 
   Most founder items ask one question, setting by setting: does it take a value per market, or once for the whole store? The register asks it once.
 - **The usage limit stopped two parts at about 20:40 UTC;** their work was saved. The founder moved to Max x20, and both were resumed.
+
+**The capture round (27 and 28 October)** ([`method-report.md`](studies/subjects/S-02/method-report.md), section 12). The founder's local agent ran H-006, H-007 and H-008, and observed-sh holds the runs at `19a5f6435`. The founder relayed its notes, which went to the parts as leads. The parts recorded only what the run files and pages show:
+- **Gap-closing, two parts (A2-SH-R1, A2-SH-R2):** 125 Shopify statements.
+  - G10 and G11 are answered. A sign-up that chose the United States from a network traced to Yemen made an American store. The checkout's address form is held for five more countries.
+  - G09, G12 and G13 are narrowed to G14 to G16, which only Shopify can answer: whether a change of country is checked after it saves; markets per plan; business types for Managed Markets. Shopify Payments stops at a valid SSN or ITIN.
+  - The local agent's five pointers to held evidence are recorded.
+- **Phase B's capture round, three parts:** every new statement placed or noted, 906 rows, and the full check finds no error.
+- **A method ruling:** a key that every platform lacks or doesn't state is `no difference`, a commonality the references don't carry (the local agent's recommendation, and C-RD2's problem 3).
+- **Phase C again on the touched keys (part C-R):** running on 11 points of RD2 and RD3.
+- **Handoffs:** H-006 to H-008 are marked done, at the commit, in [`handoffs/README.md`](handoffs/README.md).
 
 **Earlier:**
 - **Phase B's first pass is complete** ([`method-report.md`](studies/subjects/S-02/method-report.md), section 7): 73 variation points, each with a row for every platform, 671 rows, in [`variation-points.tsv`](studies/subjects/S-02/variation-points.tsv) and [`variants.tsv`](studies/subjects/S-02/variants.tsv). The full check gives no error.
 - **The absence audit is complete** (section 8): 24 claims; 19 confirmed, 3 partly contradicted, 2 contradicted; 122 statements added. Two capture requests are narrowed ([H-002](handoffs/H-002-observed-sa-onboarding-countries.md), [H-007](handoffs/H-007-observed-sh-store-country-sign-up.md)), and three tools fixed to see held evidence they had missed.
 - **Gap-closing (phase A2) is complete** ([`method-report.md`](studies/subjects/S-02/method-report.md), section 9; [`a2-parts.tsv`](studies/subjects/S-02/a2-parts.tsv)): 22 parts, 121 rows, 118 of them given statements and 83 with no gap left; 1,165 statements; 337 million. Its live pages are captured, and every quote is found; twelve are ruled on after review. 49 gaps remain: 15 for the local agent, in H-008 (new) and H-002 and H-005 (extended); 34 for the founder.
 - **The render fault:** the browser in this session failed some sites' scripts, so BigCommerce's Help Center and Zid's sites rendered empty or as an error text; agents read zid.eg's Terms from a source that held the Saudi Terms. The tools now fetch each request outside the browser, open what a click shows, and tell a page's source from what it shows. 32 pages are held again as they render; Zid's audit of G03 was redone (for Egypt, the contract is with Zid Egypt, under Egyptian law). Every capture run now has its README.
-- **Cost:** 1,285 million agent tokens by 19:04 UTC on 27 October, past the budget plus a quarter (875 million); the cost came to the founder at 09:55 ([the frame's budget](studies/subjects/S-02/frame.md#budget)). S-02 is projected at about 1.45 to 1.55 billion. The work goes on; no higher plan is needed yet. The coordinating session's own tokens: 606 million since S-02 began.
+- **Cost:** 1,408 million agent tokens by 00:39 UTC on 28 October, past the budget plus a quarter (875 million). The cost came to the founder at 09:55 on 27 October ([the frame's budget](studies/subjects/S-02/frame.md#budget)). The capture round cost 55 million. S-02 is projected at about 1.5 to 1.6 billion. The work goes on on the founder's Max x20 plan. The coordinating session's own tokens: 719 million since S-02 began.
 
 **Next:**
-1. When C-RD3-4 reports: RD3's phase C is done. Merge and check phase C's files.
-2. When the founder's local agent pushes: read its runs, and close or narrow the gaps they answer. Then place the new statements and run the keys they touch again. With the founder's word on how the handoffs went, RD1's phase C.
+1. When C-R reports: merge and check phase C's files, and record what changed.
+2. With the founder's word on the Salla capture requests: read any runs they made, close or narrow their gaps, place the statements, then RD1's phase C (C-RD1-1, C-RD1-2).
 3. Then the Yemen row and the scenario walk, for each root decision; the register; the independent review; and S-02's report for G3.
 
 **To resume:** read `PLAN.md`, this file and `founder-decisions.tsv`.
