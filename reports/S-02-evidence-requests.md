@@ -8,6 +8,8 @@
 - **15 can be captured by your local agent:** 5 on Shopify and 10 on Salla. They are in the capture requests ([`handoffs/`](../handoffs/README.md)).
 - **34 need you:** 21 on Zid, 7 on BigCommerce, 5 on WooCommerce and 1 on Salla. Your local agent's repositories hold only Shopify and Salla, so these need a store on the platform, or a question to it.
 
+*Changed on 28 October 2026,* after your local agent's runs for H-006 to H-008 (observed-sh `19a5f6435`). They settled Shopify's five capturable gaps: two are answered, and three are narrowed into questions no run can answer. One needs a valid SSN or ITIN; the others need the platform's own word. Those three are now in section 5, "To Shopify". Salla's ten capturable gaps wait on H-001 to H-005.
+
 ## 1. Hand the capture requests to your local agent
 
 H-001 to H-007 are as before. What changed today:
@@ -70,7 +72,7 @@ Some questions only the platform can answer, such as:
 
 They are written out below, per platform, ready to send. The replies are the platforms' own words. Forward them, and they are held as evidence, dated.
 
-**My recommendation:** send all four.
+**My recommendation:** send all four. *(28 October 2026:)* five, with Shopify's.
 
 **Answer:** send, don't send, or send some (say which).
 
@@ -97,6 +99,13 @@ They are written out below, per platform, ready to send. The replies are the pla
 2. Can a store sell in one storefront or channel through a business other than the merchant's own, or through a merchant of record? (S02-BC-G14)
 3. Which documents or checks does BigCommerce Payments ask for, and do they differ by the store's country? (S02-BC-G06)
 4. If no trial store is looked at (section 3): is the store's country checked by anyone? Do a new store's units and date formats follow its country? Do the checkout's address fields, and which are required, follow the buyer's country or the storefront? Can return settings differ by storefront? (S02-BC-G09, G11, G12, G13)
+
+### To Shopify
+
+*Added on 28 October 2026,* from what the runs for H-006 to H-008 couldn't reach:
+1. When a store that uses no financial services, such as Shopify Payments, switches its business entity to one in another country, does Shopify check the new country, or the new store address, after the change saves? If it does, who checks, and against what? On a development store, the switch saved with no step asking for verification. (S02-SH-G14)
+2. For which business types are Managed Markets, and a business entity per market, offered? On a store in the United States, Managed Markets' eligibility named only the missing Shopify Payments. Shopify Payments' set-up asks for a valid SSN or ITIN, which no capture holds. (S02-SH-G15)
+3. How many markets of each kind (country or region, B2B, retail, channel), and how many submarkets, can a store hold on each plan? On a Basic development store, a second B2B market, a second retail market and a submarket three levels deep each saved, with no limit shown. (S02-SH-G16)
 
 ### To Salla
 
