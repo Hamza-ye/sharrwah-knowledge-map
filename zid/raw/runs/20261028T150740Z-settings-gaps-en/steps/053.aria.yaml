@@ -1,0 +1,99 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home"
+  - button "Apps"
+  - button "Settings" [pressed]
+  - separator
+- list:
+  - link "General":
+    - /url: /en-sa/stores/127604/settings/account
+    - text: General
+    - button
+  - link "Communications":
+    - /url: /en-sa/stores/127604/settings/communications/orders
+    - text: Communications
+    - button
+  - link "Store":
+    - /url: /en-sa/stores/127604/settings/information
+  - link "Store information":
+    - /url: /en-sa/stores/127604/settings/information
+  - link "Legal pages":
+    - /url: /en-sa/stores/127604/channels/online-store/pages/legal
+  - link "Hours of operation":
+    - /url: /en-sa/stores/127604/settings/hours-of-operation
+  - link "Team":
+    - /url: /en-sa/stores/127604/settings/team
+  - link "Groups":
+    - /url: /en-sa/stores/127604/settings/team/groups
+  - link "Domains list":
+    - /url: /en-sa/stores/127604/settings/domains
+- main:
+  - button
+  - heading "Store information" [level=5]
+  - button "Save" [disabled]
+  - text: Business type
+  - combobox "Business type Individual": Individual
+  - text: Commercial name
+  - textbox "Commercial name": Demo Store
+  - paragraph: Name used in commercial registration
+  - checkbox "Store manager is the owner"
+  - text: Store manager is the owner Owner Name
+  - textbox "Owner Name"
+  - text: Owner mobile
+  - textbox "Owner mobile"
+  - text: Owner Email
+  - textbox "Owner Email"
+  - text: ID Number
+  - spinbutton "ID Number": "1000000000"
+  - text: Freelancer Certificate ID
+  - textbox "Freelancer Certificate ID"
+  - paragraph: Please add freelancer certificate ID
+  - text: Owner Civil Id Image
+  - button "Choose File"
+  - img
+  - button
+  - text: Vat Registration Certificate (Income greater than 375K SAR)
+  - button "Choose File"
+  - paragraph: Upload new
+  - text: Freelance Certificate
+  - button "Choose File"
+  - paragraph: Upload new
+  - text: Ecommerce Certificate
+  - button "Choose File"
+  - paragraph: Upload new
+  - text: Bank Certificate
+  - button "Choose File"
+  - paragraph: Upload new
+  - text: Activity License
+  - button "Choose File"
+  - paragraph: Upload new
+  - text: Number of branches
+  - combobox "Number of branches"
+  - text: Store Industry
+  - combobox "Store Industry Electronics": Electronics
+  - paragraph: Please choose one
+  - text: Store Category
+  - combobox "Store Category Electrical devices and its accessories": Electrical devices and its accessories
+  - paragraph: Please choose one
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

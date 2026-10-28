@@ -1,0 +1,200 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new": "1"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "All products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Categories":
+    - /url: /en-sa/stores/127604/catalog/categories
+  - link "Brands New":
+    - /url: /en-sa/stores/127604/catalog/brands
+  - link "Preorder campaigns":
+    - /url: /en-sa/stores/127604/catalog/preorder-campaigns
+  - link "Inventory":
+    - /url: /en-sa/stores/127604/catalog/inventories
+  - link "Stock management":
+    - /url: /en-sa/stores/127604/catalog/inventories/stock-management
+  - link "Stock taking":
+    - /url: /en-sa/stores/127604/catalog/inventories/stock-taking
+  - link "Stock transfer requests":
+    - /url: /en-sa/stores/127604/catalog/inventories/transfer-requests
+  - link "Withdrawal priority":
+    - /url: /en-sa/stores/127604/catalog/inventories/withdrawal-priority
+  - link "Inventory stock changes":
+    - /url: /en-sa/stores/127604/catalog/inventory-stock-changes
+  - link "Filters":
+    - /url: /en-sa/stores/127604/catalog/filters
+  - link "Custom fields":
+    - /url: /en-sa/stores/127604/catalog/meta-fields
+  - link "Options library":
+    - /url: /en-sa/stores/127604/catalog/options
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - heading "Inventory addresses" [level=5]
+  - paragraph: The number of active locations currently in your package is 4 out of 6 available for activation
+  - link "Create":
+    - /url: /en-sa/stores/127604/catalog/inventories/create
+  - link "Withdrawal priority":
+    - /url: /en-sa/stores/127604/catalog/inventories/withdrawal-priority
+  - heading "Display products in your store based on the customer location" [level=6]
+  - paragraph: Show products based on the customer’s city. By default, location is detected automatically; select checkbox below to require manual selection.
+  - checkbox "Require customer to select city manually" [checked] [disabled]
+  - text: Require customer to select city manually
+  - switch
+  - table:
+    - rowgroup:
+      - row "Name City Country Channels Status":
+        - columnheader "Name"
+        - columnheader "City Country"
+        - columnheader "Channels"
+        - columnheader "Status"
+        - columnheader
+    - rowgroup:
+      - row "عنوان مخزونك Riyadh Saudi Arabia Store History Edit":
+        - cell "عنوان مخزونك":
+          - link "عنوان مخزونك":
+            - /url: /en-sa/stores/127604/catalog/inventories/17f8261e-c03b-453f-9431-a5f80407132f
+        - cell "Riyadh Saudi Arabia"
+        - cell "Store"
+        - cell:
+          - switch [checked]
+        - cell "History Edit":
+          - link "History":
+            - /url: /en-sa/stores/127604/catalog/inventory-stock-changes/?location_ids=17f8261e-c03b-453f-9431-a5f80407132f
+          - link "Edit":
+            - /url: /en-sa/stores/127604/catalog/inventories/17f8261e-c03b-453f-9431-a5f80407132f
+      - row "عنوان مخزونك Riyadh Saudi Arabia Store History Edit":
+        - cell "عنوان مخزونك":
+          - link "عنوان مخزونك":
+            - /url: /en-sa/stores/127604/catalog/inventories/4987a8cf-595d-4b37-b188-b25a8ed89c79
+        - cell "Riyadh Saudi Arabia"
+        - cell "Store"
+        - cell:
+          - switch [checked]
+        - cell "History Edit":
+          - link "History":
+            - /url: /en-sa/stores/127604/catalog/inventory-stock-changes/?location_ids=4987a8cf-595d-4b37-b188-b25a8ed89c79
+          - link "Edit":
+            - /url: /en-sa/stores/127604/catalog/inventories/4987a8cf-595d-4b37-b188-b25a8ed89c79
+      - row "عنوان مخزونك Riyadh Saudi Arabia Store History Edit":
+        - cell "عنوان مخزونك":
+          - link "عنوان مخزونك":
+            - /url: /en-sa/stores/127604/catalog/inventories/bf073482-0236-401b-b1bd-6364d0753789
+        - cell "Riyadh Saudi Arabia"
+        - cell "Store"
+        - cell:
+          - switch
+        - cell "History Edit":
+          - link "History":
+            - /url: /en-sa/stores/127604/catalog/inventory-stock-changes/?location_ids=bf073482-0236-401b-b1bd-6364d0753789
+          - link "Edit":
+            - /url: /en-sa/stores/127604/catalog/inventories/bf073482-0236-401b-b1bd-6364d0753789
+      - row "عنوان مخزونك Riyadh Saudi Arabia Store History Edit":
+        - cell "عنوان مخزونك":
+          - link "عنوان مخزونك":
+            - /url: /en-sa/stores/127604/catalog/inventories/791dab5b-9da1-4f39-ab1d-dc8391d22635
+        - cell "Riyadh Saudi Arabia"
+        - cell "Store"
+        - cell:
+          - switch
+        - cell "History Edit":
+          - link "History":
+            - /url: /en-sa/stores/127604/catalog/inventory-stock-changes/?location_ids=791dab5b-9da1-4f39-ab1d-dc8391d22635
+          - link "Edit":
+            - /url: /en-sa/stores/127604/catalog/inventories/791dab5b-9da1-4f39-ab1d-dc8391d22635
+      - row "Default - الافتراضي Default Dammam Saudi Arabia Store History Edit":
+        - cell "Default - الافتراضي Default":
+          - link "Default - الافتراضي Default":
+            - /url: /en-sa/stores/127604/catalog/inventories/c79d0a3f-9b73-4cf5-b4ca-b3236cffc6cc
+        - cell "Dammam Saudi Arabia"
+        - cell "Store"
+        - cell:
+          - switch [checked]
+        - cell "History Edit":
+          - link "History":
+            - /url: /en-sa/stores/127604/catalog/inventory-stock-changes/?location_ids=c79d0a3f-9b73-4cf5-b4ca-b3236cffc6cc
+          - link "Edit":
+            - /url: /en-sa/stores/127604/catalog/inventories/c79d0a3f-9b73-4cf5-b4ca-b3236cffc6cc
+      - row "test Al Farwaniyah Kuwait Store History Edit":
+        - cell "test":
+          - link "test":
+            - /url: /en-sa/stores/127604/catalog/inventories/dc4cf900-14fc-42ad-9e0f-20b518bd9254
+        - cell "Al Farwaniyah Kuwait"
+        - cell "Store"
+        - cell:
+          - switch [checked]
+        - cell "History Edit":
+          - link "History":
+            - /url: /en-sa/stores/127604/catalog/inventory-stock-changes/?location_ids=dc4cf900-14fc-42ad-9e0f-20b518bd9254
+          - link "Edit":
+            - /url: /en-sa/stores/127604/catalog/inventories/dc4cf900-14fc-42ad-9e0f-20b518bd9254
+  - text: "Rows per page:"
+  - combobox "25"
+  - navigation "pagination navigation":
+    - list:
+      - listitem:
+        - button "Go to first page" [disabled]
+      - listitem:
+        - button "Go to previous page" [disabled]
+      - listitem:
+        - button "page 1": "1"
+      - listitem:
+        - button "Go to next page" [disabled]
+      - listitem:
+        - button "Go to last page" [disabled]
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

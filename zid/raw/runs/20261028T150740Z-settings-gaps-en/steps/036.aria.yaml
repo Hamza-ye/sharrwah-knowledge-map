@@ -1,0 +1,159 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home"
+  - button "Apps" [pressed]
+  - button "Settings"
+  - separator
+- list:
+  - link "App Market":
+    - /url: /en-sa/stores/127604/apps
+  - link "My apps":
+    - /url: /en-sa/stores/127604/apps/installed
+  - link "Rewaa":
+    - /url: /en-sa/stores/127604/apps/435
+    - img
+    - text: Rewaa
+  - link "Codemap":
+    - /url: /en-sa/stores/127604/apps/1237
+    - img
+    - text: Codemap
+  - link "Snapchat Ads":
+    - /url: /en-sa/stores/127604/apps/3883/embedded
+    - img
+    - text: Snapchat Ads
+  - link "Tabby Catalogue Saudi":
+    - /url: /en-sa/stores/127604/apps/3981
+    - img
+    - text: Tabby Catalogue Saudi
+  - link "Zid AI Connector | MCP":
+    - /url: /en-sa/stores/127604/apps/4820/embedded
+    - img
+    - text: Zid AI Connector | MCP
+  - link "Zid AI":
+    - /url: /en-sa/stores/127604/apps/5979/embedded
+    - img
+    - text: Zid AI
+  - link "Contact button":
+    - /url: /en-sa/stores/127604/apps/6892/embedded
+    - img
+    - text: Contact button
+  - link "Categories":
+    - /url: /en-sa/stores/127604/apps/browse
+- main:
+  - button
+  - heading "My apps" [level=5]
+  - heading "Activated apps" [level=6]
+  - link:
+    - /url: /en-sa/stores/127604/apps/435
+    - img
+  - link "Rewaa":
+    - /url: /en-sa/stores/127604/apps/435
+  - text: From 1000.01 / Annually
+  - separator
+  - button
+  - button "Deactivate"
+  - button "Rate"
+  - link:
+    - /url: /en-sa/stores/127604/apps/1237
+    - img
+  - link "Codemap":
+    - /url: /en-sa/stores/127604/apps/1237
+  - text: Usage Based Plan
+  - separator
+  - button
+  - button "Deactivate"
+  - button "Rate"
+  - link:
+    - /url: /en-sa/stores/127604/apps/2812/embedded
+    - img
+  - link "OptimizeApp":
+    - /url: /en-sa/stores/127604/apps/2812/embedded
+  - text: 7 Day Free Trial
+  - separator
+  - button
+  - button "Deactivate"
+  - button "Rate"
+  - link:
+    - /url: /en-sa/stores/127604/apps/3883/embedded
+    - img
+  - link "Snapchat Ads":
+    - /url: /en-sa/stores/127604/apps/3883/embedded
+  - text: Free App
+  - separator
+  - button
+  - button "Deactivate"
+  - button "Rate"
+  - link:
+    - /url: /en-sa/stores/127604/apps/3981
+    - img
+  - link "Tabby Catalogue Saudi":
+    - /url: /en-sa/stores/127604/apps/3981
+  - text: Free App
+  - separator
+  - button
+  - button "Deactivate"
+  - button "Rate"
+  - link:
+    - /url: /en-sa/stores/127604/apps/4820/embedded
+    - img
+  - link "Zid AI Connector | MCP":
+    - /url: /en-sa/stores/127604/apps/4820/embedded
+  - text: Free App
+  - separator
+  - button
+  - button "Deactivate"
+  - button "Rate"
+  - link:
+    - /url: /en-sa/stores/127604/apps/5979/embedded
+    - img
+  - link "Zid AI":
+    - /url: /en-sa/stores/127604/apps/5979/embedded
+  - text: Free App
+  - separator
+  - button
+  - button "Deactivate"
+  - button "Rate"
+  - link:
+    - /url: /en-sa/stores/127604/apps/6892/embedded
+    - img
+  - link "Contact button":
+    - /url: /en-sa/stores/127604/apps/6892/embedded
+  - text: Free App
+  - separator
+  - button
+  - button "Deactivate"
+  - button "Rate"
+  - link:
+    - /url: /en-sa/stores/127604/apps/7906/embedded
+    - img
+  - link "Sarj voice":
+    - /url: /en-sa/stores/127604/apps/7906/embedded
+  - text: Free Plan Available
+  - separator
+  - button
+  - button "Deactivate"
+  - button "Rate"
+  - heading "Deactivated apps" [level=6]
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img
+- button "App or Theme Assistance"

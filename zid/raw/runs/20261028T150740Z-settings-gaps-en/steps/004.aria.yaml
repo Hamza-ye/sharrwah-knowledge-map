@@ -1,0 +1,109 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home"
+  - button "Apps"
+  - button "Settings" [pressed]
+  - separator
+- list:
+  - link "General":
+    - /url: /en-sa/stores/127604/settings/account
+  - link "Account settings":
+    - /url: /en-sa/stores/127604/settings/account
+  - link "Security settings":
+    - /url: /en-sa/stores/127604/settings/security
+  - link "Languages & currencies":
+    - /url: /en-sa/stores/127604/settings/languages-currencies
+  - link "Checkout page options":
+    - /url: /en-sa/stores/127604/settings/checkout
+  - link "Gifting settings New":
+    - /url: /en-sa/stores/127604/settings/gifting-settings
+  - link "Configure your invoices":
+    - /url: /en-sa/stores/127604/settings/invoice
+  - link "Orders and products properties":
+    - /url: /en-sa/stores/127604/settings/orders-products
+  - link "Shipping and payment constraints":
+    - /url: /en-sa/stores/127604/settings/constraints
+  - link "Tax settings":
+    - /url: /en-sa/stores/127604/settings/tax
+  - link "Fatoora platform integration":
+    - /url: /en-sa/stores/127604/settings/zatca-integration
+  - link "Staff notifications":
+    - /url: /en-sa/stores/127604/settings/staff-notifications
+  - link "API integrations":
+    - /url: /en-sa/stores/127604/settings/direct-api-integration
+  - link "Export requests":
+    - /url: /en-sa/stores/127604/settings/export-requests
+  - link "URL redirects":
+    - /url: /en-sa/stores/127604/settings/url-redirects
+  - link "Communications":
+    - /url: /en-sa/stores/127604/settings/communications/orders
+    - text: Communications
+    - button
+  - link "Store":
+    - /url: /en-sa/stores/127604/settings/information
+    - text: Store
+    - button
+- main:
+  - button
+  - heading "Security settings" [level=5]
+  - paragraph: Manage your store security settings
+  - heading "Verification method" [level=6]
+  - radiogroup:
+    - radio "Single-factor authentication" [checked]
+    - paragraph: Single-factor authentication
+    - radio "Two-factor authentication (2FA)"
+    - paragraph: Two-factor authentication (2FA)
+  - heading "Choose your preferred verification method" [level=6]
+  - radiogroup:
+    - radio "Via SMS" [checked]
+    - paragraph: Via SMS
+    - radio "Via email"
+    - paragraph: Via email
+  - button "Save" [disabled]
+  - heading "Passkeys and biometrics" [level=6]
+  - paragraph: Sign in with your fingerprint, face or screen lock instead of a verification code. Passkeys belong to your account only.
+  - alert:
+    - paragraph: This browser or device doesn't support biometric sign-in, so a passkey can't be added from here.
+  - paragraph: You haven't added a passkey yet.
+  - button "Add passkey" [disabled]
+  - heading "Protect exported files with a password" [level=6]
+  - paragraph: When enabled, all exported files will be secured with an auto-generated password sent to your registered email.
+  - switch
+  - heading "Session management" [level=6]
+  - radiogroup:
+    - radio "Low Any idle member will be logged out after 7 days." [checked]
+    - paragraph: Low
+    - text: Any idle member will be logged out after 7 days.
+    - radio "Normal Any idle member will be logged out after 24 hours."
+    - paragraph: Normal
+    - text: Any idle member will be logged out after 24 hours.
+    - radio "Moderate Any idle member will be logged out after 2 hours."
+    - paragraph: Moderate
+    - text: Any idle member will be logged out after 2 hours.
+    - radio "High Any idle member will be logged out after 30 minutes and will only be able to log in from a single browser."
+    - paragraph: High
+    - text: Any idle member will be logged out after 30 minutes and will only be able to log in from a single browser.
+  - button "Save" [disabled]
+  - button "Sign out from all devices"
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

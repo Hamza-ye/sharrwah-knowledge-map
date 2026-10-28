@@ -1,0 +1,481 @@
+{
+  "abandonedCarts": "Abandoned carts",
+  "action": "Action",
+  "addresses": "Addresses",
+  "addressesEmptyDescription": "Add a shipping address for this customer to use at checkout.",
+  "addressesEmptyTitle": "No saved addresses",
+  "allDonations": "All donations",
+  "allOrders": "All orders",
+  "averageOrderValue": "Average order value",
+  "averageValueDonation": "Average donation value",
+  "bannedCustomerAlertDescription": "You cannot create orders or send reminders until customer is unbanned.",
+  "bannedCustomerAlertTitle": "This customer is banned",
+  "business": "Business",
+  "cancelledOrders_few": "{{count}} cancelled orders",
+  "cancelledOrders_many": "{{count}} cancelled orders",
+  "cancelledOrders_one": "{{count}} cancelled order",
+  "cancelledOrders_other": "{{count}} cancelled orders",
+  "cancelledOrders_two": "{{count}} cancelled orders",
+  "cancelledOrders_zero": "No cancelled orders",
+  "cartNumber": "Cart #{{id}}",
+  "cartsAbandonedSinceRegistration_few": "Abandoned {{count}} carts without checkout",
+  "cartsAbandonedSinceRegistration_many": "Abandoned {{count}} carts without checkout",
+  "cartsAbandonedSinceRegistration_one": "Abandoned {{count}} cart without checkout",
+  "cartsAbandonedSinceRegistration_other": "Abandoned {{count}} carts without checkout",
+  "cartsAbandonedSinceRegistration_two": "Abandoned {{count}} carts without checkout",
+  "cartsAbandonedSinceRegistration_zero": "Hasn't abandoned any cart",
+  "codAvailable": "Cash on delivery",
+  "codAvailableDescription": "Show cash on delivery to this customer at checkout.",
+  "columns": {
+    "channel": "Acquisition channel",
+    "cod": "COD",
+    "customerCount": "Customer count",
+    "customerName": "Customer name",
+    "customerPercentage": "Percentage of total customers",
+    "donorCount": "Donors count",
+    "donorPercentage": "Percentage of total donors",
+    "emailStatus": "Email status",
+    "lastOrder": "Last order",
+    "newsletter": "Ads and updates",
+    "ngoLastOrder": "Last donation",
+    "ngoOrdersCount": "Total donations",
+    "ordersCount": "Total orders",
+    "phone": "Phone",
+    "pointsCount": "Loyalty points",
+    "productName": "Product",
+    "question": "Question",
+    "rating": "Rating",
+    "reward": "Reward",
+    "subscriptionDate": "Subscription date",
+    "whatsappStatus": "WhatsApp status"
+  },
+  "completedDonations": "Completed donations",
+  "completedOrders": "Completed orders",
+  "createAddress": "Create address",
+  "createCustomer": "Create customer",
+  "createNewDonation": "Create new donation",
+  "createNewOrder": "Create new order",
+  "customerGroups": "Groups",
+  "customerNote": "Customer notes",
+  "customerNoteDescription": "Customers will not see your notes but your other team members will be able to see them.",
+  "customerNotePlaceholder": "Internal notes about the customer, visible to your team only",
+  "customerNotifications": {
+    "analytics": {
+      "description": "During current month",
+      "emailNotifiedCount": "Email notifications sent",
+      "notifiedCount": "Total notifications sent",
+      "person": "Person",
+      "purchasedTotal": "Sales",
+      "reminder": "Reminder",
+      "title": "Analytics",
+      "totalCount": "Notification registered count",
+      "whatsappNotifiedCount": "WhatsApp notifications sent"
+    },
+    "buttonText": "Button text",
+    "buttonTextCharCount": "Number of characters 5 / 24",
+    "buttons": "Buttons",
+    "buttonsDescription": "Add buttons that let your customers open a selected product or copy coupon code.",
+    "copyCouponButton": "Copy coupon code",
+    "copyCouponCode": "Copy coupon code",
+    "copyCouponDescription": "The code that the customer can easily copy.",
+    "couponCode": "Coupon code",
+    "couponCodePlaceholder": "Coupon code",
+    "customerName": "Customer name",
+    "details": "Details",
+    "email": "Email",
+    "emptyState": {
+      "button": "Manage stock notifications",
+      "description": "Notify customers when items are available again — don’t miss the sale.",
+      "title": "Increase your chances to sell more with smart tools and insights."
+    },
+    "exportDialogSuccess": "The list has been sent to the email",
+    "filters": {
+      "channel": "Channel",
+      "channelBoth": "Both",
+      "channelEmail": "Email",
+      "channelWhatsapp": "WhatsApp"
+    },
+    "helperTextAreaEmail": "The customer name and the product name and URL will be automatically filled by the system",
+    "helperTextEmail": "This title will only appear for messages sent via email",
+    "message": "Message",
+    "messageLanguage": "Message language",
+    "offer": "Offer",
+    "offerDescription": "Choose if you want to send offer with a stock notification",
+    "productLink": "Product link",
+    "productLinkButton": "Product link button",
+    "productLinkDescription": "The Back in Stock product URL that customers will be redirected to when they click the button.",
+    "productName": "Product name",
+    "productUrl": "Product URL",
+    "seeProductPlaceholder": "See product",
+    "sendBy": "Send by",
+    "sendByDescription": "Select the channel you want to use for sending notification",
+    "sendSuccess": "The message was sent successfully",
+    "sendingTimeAfter": "Sending time after",
+    "sinceRestockingTheProduct": "Since restocking the product",
+    "status": {
+      "new": "New",
+      "notified": "Notified",
+      "purchased": "Purchased"
+    },
+    "storeName": "Store name",
+    "storeUrl": "Store URL",
+    "tabs": {
+      "currentMonth": "Current month",
+      "currentYear": "Current year",
+      "lastMonth": "Last month",
+      "today": "Today",
+      "yesterday": "Yesterday"
+    },
+    "textAreaMessage": "Dear (customer name), (product name) is available in store. \n  (product url)",
+    "title": "Send a new message",
+    "titleCoupon": "Coupon code",
+    "titleEmail": "Email title",
+    "titleLabel": "Title",
+    "updateSuccess": "The settings were updated successfully",
+    "whatsapp": "WhatsApp",
+    "whatsappSendConfirm": "Are you sure you want to send a WhatsApp notification to {{name}}?",
+    "whatsappSentSuccess": "WhatsApp notification sent successfully",
+    "whatsappSubscriptionExpiredButton": "Re-new/Re-activate WhatsApp subscription",
+    "whatsappSubscriptionExpiredSubtitle": "Re-new/re-activate your subscription to continue using WhatsApp stock notifications.",
+    "whatsappSubscriptionExpiredTitle": "Your subscription is expired / WhatsApp deactivated.",
+    "withoutOffer": "Without offer"
+  },
+  "customerSince": "Customer since",
+  "customerSource": "Customer source",
+  "customerType": "Customer type",
+  "customersGroups": {
+    "appliedFilters": "Applied filters:",
+    "conditions": {
+      "addCondition": "Add condition",
+      "collapseAll": "Collapse all",
+      "condition": "Condition",
+      "description": "Add one or more conditions to automatically determine which customers are included in the group.",
+      "expandAll": "Expand all",
+      "labels": {
+        "accountStatus": "Account status",
+        "adsAndSubscription": "Ads and subscription",
+        "customerChannel": "Customer channel",
+        "customerLocation": "Customer location",
+        "customerType": "Customer type",
+        "gender": "Gender",
+        "monthOfBirth": "Month of birth",
+        "orderCount": "Order count",
+        "tags": "Tags"
+      },
+      "title": "Conditions",
+      "type": "Type"
+    },
+    "createDialog": {
+      "custom": {
+        "description": "Create a group from scratch using your own rules.",
+        "title": "Custom group"
+      },
+      "helpLink": "Learn how to make and manage customer groups",
+      "helpQuestion": "Have a question on how groups works?",
+      "templates": {
+        "allBuyers": {
+          "description": "All customers who completed at least one order.",
+          "title": "All buyers"
+        },
+        "birthMonth": {
+          "description": "Target customers on their birthday with celebratory offers.",
+          "title": "Customers by birth month"
+        },
+        "byGender": {
+          "description": "Target customers by gender with more relevant campaigns.",
+          "title": "Customers by gender"
+        },
+        "localCustomers": {
+          "description": "Customers from your city, send them offers close to home.",
+          "title": "Local customers"
+        },
+        "notYetPurchased": {
+          "description": "Registered customers with no orders at all.",
+          "title": "Not yet purchased"
+        },
+        "oneTimeBuyers": {
+          "description": "Customers who purchased once, encourage them to return.",
+          "title": "One-time buyers"
+        },
+        "repeatCustomers": {
+          "description": "Loyal customers who placed more than one order.",
+          "title": "Repeat customers"
+        },
+        "subscribed": {
+          "description": "Group customers based on their ads and subscription status.",
+          "title": "Subscribed customers"
+        },
+        "tagged": {
+          "description": "Target custom groups based on the tags you've assigned.",
+          "title": "Tagged customers"
+        },
+        "vipCustomers": {
+          "description": "Reward your most loyal customers based on their order count.",
+          "title": "VIP customers"
+        }
+      },
+      "templatesSubtitle": "Or select from the already built templates for quicker set up:",
+      "title": "Create new customer group"
+    },
+    "customerList": "Customer List",
+    "customerListDescription": "This customer group is automatically generated based on the applied filters",
+    "donorList": "Donors List",
+    "emptyState": {
+      "button": "Get started now",
+      "description": "Segment by customer data in one click and boost engagement with tailored offers.",
+      "ngoDescription": "Segment by donor data in one click and boost engagement with tailored offers.",
+      "ngoTitle": "Group your donors and tailor your messages to match their needs.",
+      "title": "Group your customers and tailor your messages to match their needs."
+    },
+    "filterStatus": {
+      "accountStatus": "Account Status:",
+      "cities": "Cities:",
+      "company": "Company",
+      "countries": "Countries:",
+      "customerChannel": "Customer Channel:",
+      "customerType": "Customer Type:",
+      "gender": "Gender:",
+      "individual": "Individual",
+      "mazeed": "Mazeed",
+      "monthOfBirth": "Month of birth:",
+      "newsletterStatus": "Ads and updates Status:",
+      "ngoCustomerType": "Donor Type:",
+      "ngoOrdersCount": "Donations Count",
+      "nonSubscribers": "Non subscribers",
+      "onlineStore": "Online Store",
+      "ordersCount": "Orders Count",
+      "pos": "POS",
+      "subscribers": "Subscribers"
+    },
+    "form": {
+      "nameHelperText": "Customer won't see this, only for the staff."
+    },
+    "noResults": {
+      "action": "Clear all filters",
+      "description": "It seems like no results are matching your search.",
+      "title": "No results found"
+    },
+    "summary": {
+      "conditions": "Conditions:",
+      "conditionsDescription": "Any condition should be met to add customer.",
+      "noName": "No name yet",
+      "title": "Group summary"
+    }
+  },
+  "deleteCustomerDialog": {
+    "confirm": "Cancel customer",
+    "description": "Customer '{{name}}' will be unsubscribed from the store. You will not be able to target them with marketing lists or campaigns.",
+    "menuLabel": "Cancel customer from store",
+    "title": "Cancel customer from store"
+  },
+  "deleteSelected": {
+    "description": "Are you sure you want to delete the selected customers? This action cannot be undone.",
+    "ngoDescription": "Are you sure you want to delete the selected donors? This action cannot be undone."
+  },
+  "donationNumber": "Donation number",
+  "editAddress": "Edit address",
+  "editCustomer": "Edit customer",
+  "editLoyaltyPoints": "Edit loyalty points",
+  "emptyState": {
+    "button": "Add a new customer",
+    "description": "See who your customers are, what they’ve ordered, and group them for smarter, targeted engagement",
+    "link": "Start building your customer base now and launch your first campaign 🚀",
+    "ngoButton": "Add a new doner",
+    "title": "View customer details, order history, and behavior — all in one place."
+  },
+  "eraseCustomer": {
+    "confirm": "Delete customer and data",
+    "description": "Are you sure you want to permanently erase '{{name}}'? This action will remove all customer data and cannot be undone.",
+    "menuLabel": "Delete customer and data",
+    "success": "Customer data erased successfully",
+    "title": "Delete customer and data"
+  },
+  "export": {
+    "allNgoTitle": "Export all donors",
+    "allTitle": "Export all customers",
+    "filteredTitle": "Export filtered results"
+  },
+  "filters": {
+    "accountStatus": "Account status",
+    "customerChannel": "Customer channel",
+    "customerGroups": "Customer groups",
+    "customerType": "Customer type",
+    "monthOfBirth": "Month of birth",
+    "newsletterSubscribers": "Ads and updates subscribers",
+    "ngoCustomerChannel": "Donor channel",
+    "ngoCustomerType": "Donor type",
+    "ngoOrdersCountEquals": "Donations count equals",
+    "ngoOrdersCountLessThan": "Donations count less than",
+    "ngoOrdersCountMoreThan": "Donations count more than",
+    "ngoTotalOrders": "Total donations",
+    "ordersCountCondition": "Condition",
+    "ordersCountEquals": "Orders count equals",
+    "ordersCountLessThan": "Orders count less than",
+    "ordersCountMoreThan": "Orders count more than",
+    "sectionAccountAndSubscriptions": "Account status and subscriptions",
+    "sectionCustomerDetails": "Customer details",
+    "sectionCustomerLocation": "Customer location",
+    "sectionDonationsCount": "Donations count",
+    "sectionOrdersCount": "Orders count",
+    "tags": "Tags",
+    "totalOrders": "Total orders"
+  },
+  "groups": {
+    "createSuccessfully": "The group was created successfully",
+    "deletedSuccessfully": "The group was deleted successfully",
+    "exportCustomers": "Export customers",
+    "exportDonors": "Export donors",
+    "updateSuccessfully": "The group was updated successfully",
+    "viewCustomers": "View customers",
+    "viewDonors": "View donors"
+  },
+  "import": {
+    "customersImportedSuccessfully": "Customers imported successfully",
+    "failed": "Failed to import customers",
+    "failedNgo": "Failed to import donors",
+    "generalError": "An error occurred while importing customers",
+    "generalErrorNgo": "An error occurred while importing donors",
+    "step1": "Download the following template to fill your customers",
+    "step2": "Upload the template after filling it",
+    "step3": "Customers import options",
+    "step3Ngo": "Donors import options",
+    "title": "Import customers",
+    "titleNgo": "Import donors",
+    "updateCustomersPoints": "Update current customers points",
+    "updateDonorsPoints": "Update current donors points",
+    "updateExistingCustomers": "Update existing customers",
+    "updateExistingDonors": "Update existing donors"
+  },
+  "individual": "Individual",
+  "lastLoginAt": "Last login at",
+  "lastOrderAt": "Last order at",
+  "loyaltyPoints": "Loyalty points",
+  "loyaltyPointsBalance": "Balance",
+  "loyaltyPointsTotalEarned": "Total earned",
+  "loyaltyPointsTotalRedeemed": "Total redeemed",
+  "merchantDashboard": "Merchant dashboard",
+  "method": "Method",
+  "ngoCustomerType": "Donor type",
+  "ngoOrdersEmptyDescription": "This donor's donations will appear here after their first donation.",
+  "ngoOrdersEmptyTitle": "No donations yet",
+  "ngoOrdersHistory": "Donations history",
+  "ngoSubtitle": "Everything about your donors, in one place",
+  "noPreviousVisits": "No previous visits",
+  "orderNumber": "Order number",
+  "ordersEmptyDescription": "This customer's orders will appear here after their first purchase.",
+  "ordersEmptyTitle": "No orders yet",
+  "ordersHistory": "Orders history",
+  "ordersNoResultsDescription": "Try adjusting your search or filters.",
+  "ordersNoResultsTitle": "No results found",
+  "pendingLoyaltyPoints": "Pending points",
+  "points": "Points",
+  "pointsAmount": "Points amount",
+  "pointsEmptyDescription": "Points this customer earns or redeems will appear here.",
+  "pointsEmptyTitle": "No points yet",
+  "pointsStatus": "Points status",
+  "productsDialog": {
+    "subtitle": "You can select one product to provide a Q&A for"
+  },
+  "profileOverview": "Profile overview",
+  "questions": {
+    "actions": {
+      "answer": "Answer"
+    },
+    "answerPlaceholder": "Please add a answer to the comment here",
+    "emptyState": {
+      "addProduct": "Add product",
+      "browseProducts": "Browse products",
+      "description": "Select a product to add a question for it",
+      "disableDescription": "Enable this feature to display a Q&A section on your product pages, so customers can ask questions.",
+      "disableTitle": "Let your customers ask product-related questions",
+      "enableNow": "Enable now"
+    },
+    "notificationsSettings": "Settings",
+    "questionPlaceholder": "Please add a question to the comment here",
+    "setting": {
+      "description": "Set up a question and answer section for each of your listed products."
+    }
+  },
+  "reason": "Reason",
+  "referralCode": {
+    "code": "Code",
+    "createCode": "Generate referral code",
+    "emptyDescription": "Generate a referral code for this customer so they can refer friends and earn rewards.",
+    "emptyTitle": "No referral code",
+    "link": "URL",
+    "revokeAccess": "Revoke access",
+    "revokeCodeConfirmation": "Are you sure you want to revoke this referral code? The customer will no longer be able to refer friends using this code."
+  },
+  "referralProfile": {
+    "emptyDescription": "Turn it on to let customers invite friends and both earn a reward.",
+    "emptyTitle": "Referral program not active",
+    "title": "Referral link"
+  },
+  "referralRewards": "Referral rewards",
+  "referralsIncomplete_few": "{{count}} incomplete invitations",
+  "referralsIncomplete_many": "{{count}} incomplete invitations",
+  "referralsIncomplete_one": "{{count}} incomplete invitation",
+  "referralsIncomplete_other": "{{count}} incomplete invitations",
+  "referralsIncomplete_two": "{{count}} incomplete invitations",
+  "referralsIncomplete_zero": "No invitations",
+  "referralsJoined_few": "{{count}} of {{total}} invited joined",
+  "referralsJoined_many": "{{count}} of {{total}} invited joined",
+  "referralsJoined_one": "{{count}} of {{total}} invited joined",
+  "referralsJoined_other": "{{count}} of {{total}} invited joined",
+  "referralsJoined_two": "{{count}} of {{total}} invited joined",
+  "referralsJoined_zero": "No invited friends joined",
+  "referredBy": "Referred by",
+  "reviews": {
+    "actions": {
+      "disableAllConfirmation": "Are you sure you want to disable all?",
+      "publishAllConfirmation": "Are you sure you want to publish all?"
+    },
+    "answer": "answer",
+    "deactivateProductReviews": "Deactivate product reviews",
+    "edited": "Edited",
+    "emptyState": {
+      "button": "Enable now",
+      "description": "Turn on reviews to collect feedback automatically and show customers why they can trust your products.",
+      "title": "Let customers share their feedback — boost credibility and grow your sales."
+    },
+    "header": {
+      "subtitle": "Gather customer insights by allowing shoppers to rate and review your products and share their experience with others."
+    },
+    "import": {
+      "downloadTemplate": "Download template",
+      "downloadTemplateDescription": "Download the following template to fill your reviews",
+      "failed": "Failed to import reviews",
+      "note": "Follow the steps below to complete the import process",
+      "partialFailure_one": "{{count}} review failed to import",
+      "partialFailure_other": "{{count}} reviews failed to import",
+      "rowError": "Row {{row}}: {{error}}",
+      "running": "Importing reviews is in progress",
+      "title": "Import reviews",
+      "uploadFile": "Upload file",
+      "uploadFileDescription": "Upload the template after filling it"
+    },
+    "notificationsSettings": "Settings",
+    "placeholder": "Please add an answer to the comment here",
+    "ratings": {
+      "deactivateWarning": "When you deactivate, all reviews will be removed from your store and your customers will be unable to add any new reviews. You can restore your customers' ratings and reviews when you reactivate it again.",
+      "removeAnswer": "Remove answer"
+    },
+    "review": "review"
+  },
+  "saveNote": "Save note",
+  "sendReminder": "Send reminder",
+  "subscribeNewsletter": "Receive marketing messages",
+  "subscribeNewsletterDescription": "Send this customer offers and marketing updates.",
+  "subtitle": "Everything about your customers, in one place",
+  "tabs": {
+    "settings": "Settings",
+    "wishlist": "Wishlist"
+  },
+  "tags": "Tags",
+  "tagsPlaceholder": "Type to search or press Enter to create new",
+  "totalSpent": "Total spent",
+  "unbanCustomer": "Unban the customer",
+  "walletBalance": "Wallet balance",
+  "wishlistEmptyDescription": "Products this customer saves from your store will appear here.",
+  "wishlistEmptyTitle": "Wishlist is empty"
+}

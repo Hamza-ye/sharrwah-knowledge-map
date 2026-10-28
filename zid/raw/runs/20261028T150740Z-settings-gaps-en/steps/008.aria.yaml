@@ -1,0 +1,233 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home"
+  - button "Apps"
+  - button "Settings" [pressed]
+  - separator
+- list:
+  - link "General":
+    - /url: /en-sa/stores/127604/settings/account
+  - link "Account settings":
+    - /url: /en-sa/stores/127604/settings/account
+  - link "Security settings":
+    - /url: /en-sa/stores/127604/settings/security
+  - link "Languages & currencies":
+    - /url: /en-sa/stores/127604/settings/languages-currencies
+  - link "Checkout page options":
+    - /url: /en-sa/stores/127604/settings/checkout
+  - link "Gifting settings New":
+    - /url: /en-sa/stores/127604/settings/gifting-settings
+  - link "Configure your invoices":
+    - /url: /en-sa/stores/127604/settings/invoice
+  - link "Orders and products properties":
+    - /url: /en-sa/stores/127604/settings/orders-products
+  - link "Shipping and payment constraints":
+    - /url: /en-sa/stores/127604/settings/constraints
+  - link "Tax settings":
+    - /url: /en-sa/stores/127604/settings/tax
+  - link "Fatoora platform integration":
+    - /url: /en-sa/stores/127604/settings/zatca-integration
+  - link "Staff notifications":
+    - /url: /en-sa/stores/127604/settings/staff-notifications
+  - link "API integrations":
+    - /url: /en-sa/stores/127604/settings/direct-api-integration
+  - link "Export requests":
+    - /url: /en-sa/stores/127604/settings/export-requests
+  - link "URL redirects":
+    - /url: /en-sa/stores/127604/settings/url-redirects
+  - link "Communications":
+    - /url: /en-sa/stores/127604/settings/communications/orders
+    - text: Communications
+    - button
+  - link "Store":
+    - /url: /en-sa/stores/127604/settings/information
+    - text: Store
+    - button
+- main:
+  - button
+  - heading "Invoice settings" [level=5]
+  - button "Save"
+  - heading "Invoice settings" [level=6]
+  - list:
+    - listitem:
+      - paragraph: Generate invoices via Zid
+      - paragraph: If disabled, Zid will stop generating invoices. You can still send order summaries to customers.
+      - switch [checked]
+    - listitem:
+      - paragraph: Would you as a merchant like to receive emails containing the invoices for your store's orders?
+      - paragraph: If you choose no, then the emails being sent from Zid's system to your email will stop.
+      - switch [checked]
+    - listitem:
+      - paragraph: Do you want the Zid system to send invoices to your customers?
+      - paragraph: If you choose no, the Zid system will only send a summary of the request to the customer's email.
+      - switch [checked]
+  - heading "Invoice template and order summary" [level=6]
+  - list:
+    - listitem:
+      - paragraph: QR code
+      - switch [checked]
+    - listitem:
+      - paragraph: Barcode
+      - switch [checked]
+    - listitem:
+      - paragraph: Order status
+      - switch [checked]
+    - listitem:
+      - paragraph: ETA
+      - switch [checked]
+    - listitem:
+      - paragraph: SKU
+      - switch [checked]
+    - listitem:
+      - paragraph: Product images
+      - switch [checked]
+    - listitem:
+      - paragraph: Product weights
+      - switch [checked]
+    - listitem:
+      - paragraph: Discount coupon code
+      - switch [checked]
+    - listitem:
+      - paragraph: Return policy
+      - switch [checked]
+    - listitem:
+      - paragraph: Tax identification number
+      - switch [checked]
+    - listitem:
+      - paragraph: Store address
+      - switch [checked]
+    - listitem:
+      - paragraph: Show payment status in order summary.
+      - switch [checked]
+    - listitem:
+      - paragraph: Product description
+      - switch [checked]
+  - heading "Simplified tax invoice" [level=6]
+  - img
+  - img
+  - heading "Demo Store" [level=6]
+  - img "paid"
+  - img
+  - paragraph: "Invoice ID:"
+  - paragraph: "#0"
+  - paragraph: "Order date:"
+  - paragraph: 2020-10-07 03:00 am
+  - paragraph: "Order status:"
+  - paragraph: جديد
+  - paragraph: "Shipping method:"
+  - paragraph: مندوب
+  - paragraph: "Tracking number:"
+  - paragraph: "123456789123456"
+  - paragraph: "Shipping address:"
+  - paragraph: السعودية, الرياض, الاول, الرمال
+  - paragraph: "Client name:"
+  - paragraph: محمد بن عبدالرحمن
+  - paragraph: "Phone number:"
+  - paragraph: "+966500000005"
+  - paragraph: "Payment method:"
+  - paragraph: Bank Transfer
+  - paragraph: Products
+  - table:
+    - rowgroup:
+      - row "Product Description Weight Quantity Price Tax Price Total":
+        - columnheader
+        - columnheader "Product"
+        - columnheader "Description"
+        - columnheader "Weight"
+        - columnheader "Quantity"
+        - columnheader "Price": Price (before tax)
+        - columnheader "Tax"
+        - columnheader "Price": Price (after tax)
+        - columnheader "Total"
+    - rowgroup:
+      - row "Product 01 Z.1234.56789 Product-01 description in English 24.98 kg 1 434.78  65.22  500  500 ":
+        - cell
+        - cell "Product 01 Z.1234.56789"
+        - cell "Product-01 description in English":
+          - paragraph: Product-01 description in English
+        - cell "24.98 kg"
+        - cell "1"
+        - cell "434.78 "
+        - cell "65.22 "
+        - cell "500 "
+        - cell "500 "
+      - row "Product 02 Z.1234.56789 Product-01 description in English --- 1 434.78  65.22  500  500 ":
+        - cell
+        - cell "Product 02 Z.1234.56789"
+        - cell "Product-01 description in English":
+          - paragraph: Product-01 description in English
+        - cell "---"
+        - cell "1"
+        - cell "434.78 "
+        - cell "65.22 "
+        - cell "500 "
+        - cell "500 "
+  - paragraph: "Total product value:"
+  - paragraph: 1000 SAR
+  - paragraph: Price details
+  - list:
+    - listitem:
+      - paragraph: Total without VAT
+      - paragraph:
+        - paragraph: 868.14 SAR
+    - listitem:
+      - paragraph: Discount (ZID10)
+      - paragraph:
+        - paragraph: "-50.00 SAR"
+    - listitem:
+      - paragraph: Shipping
+      - paragraph:
+        - paragraph: 500.00 SAR
+    - listitem:
+      - paragraph: Shipping discount
+      - paragraph:
+        - paragraph: "-500.00 SAR"
+    - listitem:
+      - paragraph: Cash on delivery
+      - paragraph:
+        - paragraph: 45.00 SAR
+    - listitem:
+      - paragraph: Taxable amount
+      - paragraph:
+        - paragraph: 868.14 SAR
+    - listitem:
+      - paragraph: VAT (15%)
+      - paragraph:
+        - paragraph: 130.22 SAR
+    - listitem:
+      - paragraph: Total Inc. VAT
+      - paragraph:
+        - paragraph: 1000.00 SAR
+    - listitem:
+      - paragraph: Total
+      - paragraph:
+        - paragraph: 995.00 SAR
+  - paragraph: Order notes
+  - paragraph: This is a test order. Please cancel the order
+  - paragraph: Estimated time of arrival
+  - paragraph: Two days
+  - paragraph: Exchange and return policy
+  - paragraph: "---"
+  - text: "Store address: Saudi Arabia Dammam Tax number: 123456789123456 Commercial registration: 9823561324153241351 This invoice was issued by a third party"
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

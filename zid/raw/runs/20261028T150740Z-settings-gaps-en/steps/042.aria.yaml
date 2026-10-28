@@ -1,0 +1,165 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - heading "Select your plan" [level=5]
+  - tablist:
+    - tab "Monthly payment plan" [selected]
+    - tab "Annual payment plan Save 16%"
+  - separator
+  - heading "Rise" [level=5]
+  - heading "99" [level=4]
+  - text:  Per month
+  - paragraph: For individuals starting their business.
+  - separator
+  - button "Switch to this plan"
+  - separator
+  - heading "All features of the Starter package, plus:" [level=6]
+  - paragraph: Store management access for one additional person
+  - paragraph: Zid Payments gateway to accept Mada, Visa, and Mastercard
+  - img
+  - img
+  - img
+  - img
+  - paragraph: Enable Apple Pay for faster checkout
+  - paragraph: Access to themes store (Over 50 professional themes)
+  - paragraph: Link a custom domain to boost customer trust
+  - paragraph: Shipping rates starting from 12 SAR
+  - paragraph: Free Zid POS Go
+  - heading "Growth" [level=5]
+  - heading "299" [level=4]
+  - text:  Per month
+  - paragraph: For scaling business.
+  - separator
+  - button "Switch to this plan"
+  - separator
+  - heading "All features of the Rise package, plus:" [level=6]
+  - paragraph: Store management access for 5 additional people
+  - paragraph: Inventory management across 2 branches or warehouses
+  - paragraph: Segment customers for exclusive offers
+  - paragraph: Fraud protection to prevent losses
+  - paragraph: Instant financing to grow your business with Zid Financing
+  - paragraph: CSS interface customization
+  - paragraph: Shipping rates starting from 11 SAR
+  - paragraph: Calculate and display VAT
+  - paragraph: Free WhatsApp (Basic Plan) for one month
+  - paragraph: Free Zid POS Go
+  - separator
+  - heading "All plans include" [level=6]
+  - paragraph: Vibrant Zid communities
+  - separator
+  - paragraph: Engage with a thriving network of fellow merchants to exchange valuable insights, discuss best practices, and stay ahead of industry trends.
+  - paragraph: High converting checkout experience
+  - separator
+  - paragraph: Zid provides an optimized checkout process designed for high conversion rates, ensuring smooth transactions for customers in gcc.
+  - paragraph: Customizable storefronts
+  - separator
+  - paragraph: Choose from a variety of themes and easily customize your store to match your brand identity.
+  - paragraph: Integrated payment & BNPL options
+  - separator
+  - paragraph: Accept a variety of payment methods, including Mada, Visa, Mastercard, Apple Pay, and buy now, pay later options
+  - paragraph: Flexible shipping integrations
+  - separator
+  - paragraph: Connect with top-tier local and international shipping providers, customize shipping policies, and manage delivery options efficiently.
+  - heading "Features" [level=6]
+  - heading "Rise" [level=6]
+  - heading "Growth" [level=6]
+  - heading "Professional" [level=6]
+  - heading "Core features" [level=6]
+  - heading "Unlimited products" [level=6]
+  - text: Unlimited products
+  - heading "Diverse storefront themes" [level=6]
+  - text: Customize your store with multiple designs that suit your business.
+  - heading "Instant payment activation" [level=6]
+  - text: Quickly activate payment options to start selling immediately.
+  - heading "Team management" [level=6]
+  - text: Add team members to help manage the store and control their permissions.
+  - paragraph: 1 User
+  - paragraph: Up to 5 users
+  - paragraph: Up to 20 Users
+  - heading "Discounted shipping policies" [level=6]
+  - text: Benefit from reduced shipping rates for your store orders.
+  - button "Show all features"
+  - heading "Frequently asked questions" [level=6]
+  - heading "How do i create my online store?" [level=3]:
+    - button "How do i create my online store?":
+      - paragraph: How do i create my online store?
+  - heading "How do I ship orders to customers?" [level=3]:
+    - button "How do I ship orders to customers?":
+      - paragraph: How do I ship orders to customers?
+  - heading "Is there a fee charged on sales?" [level=3]:
+    - button "Is there a fee charged on sales?":
+      - paragraph: Is there a fee charged on sales?
+  - heading "How can i receive payments from my customers?" [level=3]:
+    - button "How can i receive payments from my customers?":
+      - paragraph: How can i receive payments from my customers?
+  - heading "How can customers shop from my store?" [level=3]:
+    - button "How can customers shop from my store?":
+      - paragraph: How can customers shop from my store?
+  - heading "Is it necessary to have a commercial registration in order to register with Zid and take advantage of its services?" [level=3]:
+    - button "Is it necessary to have a commercial registration in order to register with Zid and take advantage of its services?":
+      - paragraph: Is it necessary to have a commercial registration in order to register with Zid and take advantage of its services?
+  - heading "Can i personalize my store's domain?" [level=3]:
+    - button "Can i personalize my store's domain?":
+      - paragraph: Can i personalize my store's domain?
+  - heading "How can i confirm the status of a bank transfer?" [level=3]:
+    - button "How can i confirm the status of a bank transfer?":
+      - paragraph: How can i confirm the status of a bank transfer?
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

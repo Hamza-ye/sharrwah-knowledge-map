@@ -1,0 +1,114 @@
+{
+  "banner": {
+    "btn": "Connect now",
+    "desc1": "Easily link your invoices with the Zakat, Tax and Customs Authority (ZATCA)",
+    "desc2": "Stay compliant, avoid penalties, and keep your business running smoothly with full confidence",
+    "title": "Connect your store with Fatoora platform now"
+  },
+  "connectZatca": {
+    "mapDialog": {
+      "searchPlaceholder": "Search here",
+      "title": "Map"
+    },
+    "step1": "Information",
+    "step2": "OTP verification",
+    "step4": "POS info",
+    "step4Form": {
+      "inventories": "Inventories",
+      "locationDefaultTitle": "zatca-integration:connectZatca.step4Form.locationDefaultTitle",
+      "mapCoordinates": "Map Coordinates",
+      "shortAddress": "Short Address"
+    },
+    "stepOneForm": {
+      "multiTabWarning": "This form is currently being edited in another tab. Please close the other tab or wait for it to finish.",
+      "section1": {
+        "field1": {
+          "label": "Company legal name",
+          "placeholder": "Enter company legal name"
+        },
+        "field2": {
+          "label": "VAT number",
+          "placeholder": "Enter VAT number"
+        },
+        "field3": {
+          "helperText": "First 10 numbers of the VAT number",
+          "label": "Unique number",
+          "placeholder": "Unique number"
+        },
+        "field4": {
+          "label": "The business activity",
+          "placeholder": "Select the business activity"
+        },
+        "title": "General information"
+      },
+      "section2": {
+        "field1": {
+          "label": "Country"
+        },
+        "field2": {
+          "label": "City"
+        },
+        "field3": {
+          "label": "District",
+          "placeholder": "Enter district"
+        },
+        "field4": {
+          "label": "Street name",
+          "placeholder": "Enter street name"
+        },
+        "field5": {
+          "label": "Building number",
+          "placeholder": "Enter building number"
+        },
+        "field6": {
+          "label": "Secondary number",
+          "placeholder": "Enter secondary number"
+        },
+        "field7": {
+          "label": "Postal code",
+          "placeholder": "Enter postal code"
+        },
+        "title": "Business address"
+      },
+      "section3": {
+        "noEligibleChannels": "None of your sales channels are currently eligible for e-invoicing activation.",
+        "title": "Enabled channels"
+      },
+      "validationError": "Please fill in all required fields correctly before proceeding."
+    },
+    "stepTwoForm": {
+      "description": "Enter the verification code from Fatoora",
+      "fatoora": "Fatoora platform",
+      "howToGetCode": "How to get your code:",
+      "inputLabel": "OTP code",
+      "inputPlaceholder": "Enter OTP code",
+      "verificationBtn": "Verify information",
+      "zatcaSteps": {
+        "step1": "Go to the",
+        "step2": "Click \"Onboard new solution unit/device\"",
+        "step3": "Generate and activation code for one device",
+        "step4": "Copy the verification code and insert it here"
+      }
+    },
+    "title": "Fatoora platform integration"
+  },
+  "ctaBtn": "Add new unit",
+  "errors": {
+    "max10Digits": "Must not exceed 10 digits",
+    "mustBe15Digits": "15 digits are required",
+    "mustBe4Digits": "Must be exactly 4 digits",
+    "mustStartAndEndWith3": "Must start and end with number 3",
+    "only6Numbers": "6 numbers are required",
+    "onlyNumbers": "Only numbers are allowed",
+    "required": "This field is required"
+  },
+  "noChannelsSection": {
+    "title": "There is no active e-invoicing unit"
+  },
+  "table": {
+    "channel": "E-invoicing unit",
+    "connectedChannels": "E-invoicing units",
+    "status": "Status"
+  },
+  "title": "Fatoora platform integration"
+}

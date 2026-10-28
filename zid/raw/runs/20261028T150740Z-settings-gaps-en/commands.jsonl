@@ -1,0 +1,56 @@
+{"intent":"open the demo entry in English","do":"goto","url":"https://dashboard.zid.sa/en-sa/demo","settleMs":4000}
+{"intent":"manifest route $lang.stores.$storeId.settings._index","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/settings"}
+{"intent":"manifest route $lang.stores.$storeId.settings.account","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/settings/account"}
+{"intent":"manifest route $lang.stores.$storeId.settings.security","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/settings/security"}
+{"intent":"manifest route $lang.stores.$storeId.settings.languages-currencies","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/settings/languages-currencies"}
+{"intent":"manifest route $lang.stores.$storeId.settings.checkout","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/settings/checkout"}
+{"intent":"manifest route $lang.stores.$storeId.settings.checkout_.customize-address","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/settings/checkout/customize-address"}
+{"intent":"manifest route $lang.stores.$storeId.settings.invoice","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/settings/invoice"}
+{"intent":"manifest route $lang.stores.$storeId.settings.orders-products","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/settings/orders-products"}
+{"intent":"manifest route $lang.stores.$storeId.settings.markets","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/settings/markets"}
+{"intent":"manifest route $lang.stores.$storeId.settings.constraints","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/settings/constraints"}
+{"intent":"manifest route $lang.stores.$storeId.settings.tax","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/settings/tax"}
+{"intent":"manifest route $lang.stores.$storeId.settings.zatca-integration","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/settings/zatca-integration"}
+{"intent":"manifest route $lang.stores.$storeId.settings.staff-notifications","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/settings/staff-notifications"}
+{"intent":"manifest route $lang.stores.$storeId.settings.notification-settings","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/settings/notification-settings"}
+{"intent":"manifest route $lang.stores.$storeId.settings.communications_.orders","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/settings/communications/orders"}
+{"intent":"manifest route $lang.stores.$storeId.settings.information","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/settings/information"}
+{"intent":"manifest route $lang.stores.$storeId.settings.information_.business","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/settings/information/business"}
+{"intent":"manifest route $lang.stores.$storeId.settings.information_.address","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/settings/information/address"}
+{"intent":"manifest route $lang.stores.$storeId.settings.information_.business-kyc","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/settings/information/business-kyc"}
+{"intent":"manifest route $lang.stores.$storeId.channels.online-store.pages.legal","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/channels/online-store/pages/legal"}
+{"intent":"manifest route $lang.stores.$storeId.channels.online-store.pages_.legal_.privacy-policy","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/channels/online-store/pages/legal/privacy-policy"}
+{"intent":"manifest route $lang.stores.$storeId.channels.online-store.pages_.legal_.exchange-and-returns","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/channels/online-store/pages/legal/exchange-and-returns"}
+{"intent":"manifest route $lang.stores.$storeId.channels.online-store.pages_.legal_.terms-and-conditions","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/channels/online-store/pages/legal/terms-and-conditions"}
+{"intent":"manifest route $lang.stores.$storeId.channels.online-store.pages_.legal_.complaints-and-suggestions","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/channels/online-store/pages/legal/complaints-and-suggestions"}
+{"intent":"manifest route $lang.stores.$storeId.channels.online-store.pages_.legal_.licenses","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/channels/online-store/pages/legal/licenses"}
+{"intent":"manifest route $lang.stores.$storeId.settings.hours-of-operation","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/settings/hours-of-operation"}
+{"intent":"manifest route $lang.stores.$storeId.settings.team","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/settings/team"}
+{"intent":"manifest route $lang.stores.$storeId.settings.team_.groups","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/settings/team/groups"}
+{"intent":"manifest route $lang.stores.$storeId.settings.team_.groups_.create","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/settings/team/groups/create"}
+{"intent":"manifest route $lang.stores.$storeId.settings.team_.create","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/settings/team/create"}
+{"intent":"manifest route $lang.stores.$storeId.settings.team_.logs","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/settings/team/logs"}
+{"intent":"manifest route $lang.stores.$storeId.settings.domains","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/settings/domains"}
+{"intent":"manifest route $lang.stores.$storeId.catalog.inventories._index","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/catalog/inventories"}
+{"intent":"manifest route $lang.stores.$storeId.catalog.inventories.withdrawal-priority","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/catalog/inventories/withdrawal-priority"}
+{"intent":"manifest route $lang.stores.$storeId.apps.installed","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/apps/installed"}
+{"intent":"manifest route $lang.stores.$storeId.apps._index","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/apps"}
+{"intent":"manifest route $lang.stores.$storeId.apps.browse","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/apps/browse"}
+{"intent":"manifest route $lang.stores.$storeId.channels.online-store.settings","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/channels/online-store/settings"}
+{"intent":"manifest route $lang.stores.$storeId.channels.online-store.settings_.location","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/channels/online-store/settings/location"}
+{"intent":"manifest route $lang.stores.$storeId.finance.billing","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/finance/billing"}
+{"intent":"manifest route $lang.stores.$storeId.finance.billing_.packages","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/finance/billing/packages"}
+{"intent":"manifest route $lang.stores.$storeId.finance.billing_.addons","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/finance/billing/addons"}
+{"intent":"manifest route $lang.stores.$storeId.services.logistics.settings","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/services/logistics/settings"}
+{"intent":"manifest route $lang.stores.$storeId.settings.tax (again: step 12 was taken while the connection was down)","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/settings/tax"}
+{"intent":"manifest route $lang.stores.$storeId.settings.zatca-integration (again: step 13 was taken while the connection was down)","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/settings/zatca-integration"}
+{"intent":"manifest route $lang.stores.$storeId.settings.staff-notifications (again: step 14 was taken while the connection was down)","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/settings/staff-notifications"}
+{"intent":"manifest route $lang.stores.$storeId.settings.notification-settings (again: step 15 was taken while the connection was down)","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/settings/notification-settings"}
+{"intent":"manifest route $lang.stores.$storeId.settings.communications_.orders (again: step 16 was taken while the connection was down)","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/settings/communications/orders"}
+{"intent":"manifest route $lang.stores.$storeId.settings.information (again: step 17 was taken while the connection was down)","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/settings/information"}
+{"intent":"manifest route $lang.stores.$storeId.settings.information_.business (again: step 18 was taken while the connection was down)","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/settings/information/business"}
+{"intent":"manifest route $lang.stores.$storeId.settings.information_.address (again: step 19 was taken while the connection was down)","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/settings/information/address"}
+{"intent":"manifest route $lang.stores.$storeId.settings.information_.business-kyc (again: step 20 was taken while the connection was down)","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/settings/information/business-kyc"}
+{"intent":"manifest route $lang.stores.$storeId.channels.online-store.pages.legal (again: step 21 was taken while the connection was down)","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/channels/online-store/pages/legal"}
+{"intent":"manifest route $lang.stores.$storeId.channels.online-store.pages_.legal_.privacy-policy (again: step 22 was taken while the connection was down)","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/127604/channels/online-store/pages/legal/privacy-policy"}
+{"do":"close"}

@@ -1,0 +1,70 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new": "1"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home"
+  - button "Apps"
+  - button "Settings" [pressed]
+  - separator
+- list:
+  - link "General":
+    - /url: /en-sa/stores/127604/settings/account
+    - text: General
+    - button
+  - link "Communications":
+    - /url: /en-sa/stores/127604/settings/communications/orders
+    - text: Communications
+    - button
+  - link "Store":
+    - /url: /en-sa/stores/127604/settings/information
+  - link "Store information":
+    - /url: /en-sa/stores/127604/settings/information
+  - link "Legal pages":
+    - /url: /en-sa/stores/127604/channels/online-store/pages/legal
+  - link "Hours of operation":
+    - /url: /en-sa/stores/127604/settings/hours-of-operation
+  - link "Team":
+    - /url: /en-sa/stores/127604/settings/team
+  - link "Groups":
+    - /url: /en-sa/stores/127604/settings/team/groups
+  - link "Domains list":
+    - /url: /en-sa/stores/127604/settings/domains
+- main:
+  - button
+  - heading "Team members (0/20)" [level=5]
+  - button "Create"
+  - link "Groups":
+    - /url: /en-sa/stores/127604/settings/team/groups
+  - button
+  - table:
+    - rowgroup:
+      - row "Name Permissions Status Authenticator app Email Mobile":
+        - columnheader "Name Permissions"
+        - columnheader "Status"
+        - columnheader "Authenticator app"
+        - columnheader "Email Mobile"
+        - columnheader
+  - img
+  - heading "No team members added" [level=6]
+  - paragraph: Add team members to start collaborating.
+  - button "Add a team member"
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

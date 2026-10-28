@@ -1,0 +1,127 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - heading "Billing" [level=5]
+  - img
+  - img
+  - paragraph: 30% commission
+  - paragraph: Tell merchants about Zid and get a reward for every new subscription to Zid packages
+  - img
+  - img
+  - button "Register now"
+  - heading "Current package" [level=6]
+  - paragraph: "Expiry date:"
+  - paragraph: 05 November, 2026
+  - text: Package name
+  - paragraph: Professional
+  - link "Manage":
+    - /url: /en-sa/stores/127604/finance/billing/packages
+  - heading "Transaction history" [level=6]
+  - table:
+    - rowgroup:
+      - row "Invoice no. Service Price Payment status Approved date Created at":
+        - columnheader "Invoice no."
+        - columnheader "Service"
+        - columnheader "Price": Price Currency
+        - columnheader "Payment status"
+        - columnheader "Approved date": Approved date Time
+        - columnheader "Created at": Created at Time
+        - columnheader
+    - rowgroup:
+      - row "#1821220 Professional - Yearly 0  Approved 2025-11-05 03:17 pm 2025-11-05 03:17 pm Download invoice":
+        - cell "#1821220"
+        - cell "Professional - Yearly"
+        - cell "0 "
+        - cell "Approved"
+        - cell "2025-11-05 03:17 pm"
+        - cell "2025-11-05 03:17 pm"
+        - cell "Download invoice":
+          - link "Download invoice":
+            - /url: /en-sa/stores/127604/finance/invoice-not-ready
+      - row "#1345633 Professional - Yearly 0  Approved 2024-11-05 05:04 pm 2024-11-05 05:04 pm Download invoice":
+        - cell "#1345633"
+        - cell "Professional - Yearly"
+        - cell "0 "
+        - cell "Approved"
+        - cell "2024-11-05 05:04 pm"
+        - cell "2024-11-05 05:04 pm"
+        - cell "Download invoice":
+          - link "Download invoice":
+            - /url: /en-sa/stores/127604/finance/invoice-not-ready
+      - row "#774182 Growth - Yearly 0  Approved 2022-10-24 05:36 pm 2022-10-24 05:36 pm Download invoice":
+        - cell "#774182"
+        - cell "Growth - Yearly"
+        - cell "0 "
+        - cell "Approved"
+        - cell "2022-10-24 05:36 pm"
+        - cell "2022-10-24 05:36 pm"
+        - cell "Download invoice":
+          - link "Download invoice":
+            - /url: /en-sa/stores/127604/finance/invoice-not-ready
+  - link "View all":
+    - /url: /en-sa/stores/127604/finance/billing/transactions
+  - heading "Add-ons" [level=6]
+  - img
+  - heading "Add-ons that increase your revenue" [level=5]
+  - paragraph: Boost your sales with our curated add-ons
+  - link "Browse add-ons":
+    - /url: /en-sa/stores/127604/finance/billing/addons
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

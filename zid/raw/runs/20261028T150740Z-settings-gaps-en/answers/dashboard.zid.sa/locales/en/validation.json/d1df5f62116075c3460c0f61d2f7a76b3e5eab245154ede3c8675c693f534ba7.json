@@ -1,0 +1,76 @@
+{
+  "array": {
+    "min": "Must contain at least one element"
+  },
+  "date": {
+    "max": "Must be at earlier than {{max}}",
+    "min": "Must be later than {{min}}"
+  },
+  "decimals": {
+    "two_decimal_fraction": "Error in Affiliate Commission Percentage , only two numbers is allowed after the decimal point ."
+  },
+  "i18n": {
+    "atLeastOneLanguage": "At least one language is required"
+  },
+  "invalid": "Not valid",
+  "minimumStock": {
+    "greaterThanZero": "Minimum stock must be greater than 0",
+    "required": "Minimum stock is required"
+  },
+  "number": {
+    "max": "Must be less than or equal to {{max}}",
+    "min": "Must be greater than or equal to {{min}}"
+  },
+  "required": "Required",
+  "string": {
+    "email": "Must be a valid email",
+    "hex": "Must be a valid hex color",
+    "length": "Must be {{length}} characters",
+    "length_many": "Must be {{length}} characters long",
+    "length_one": "Must be 1 character long",
+    "length_two": "Must be 2 characters long",
+    "max": "Must be at most {{max}} characters",
+    "max_many": "Must be at most {{max}} characters long",
+    "max_one": "Must be at most 1 character long",
+    "max_two": "Must be at most 2 characters long",
+    "min": "Must be at least {{min}} characters",
+    "min_many": "Must be at least {{min}} characters long",
+    "min_one": "Must be at least 1 character long",
+    "min_two": "Must be at least 2 characters long"
+  },
+  "whatsapp": {
+    "fix": {
+      "backToBackVariables": "Insert text between variables",
+      "consecutiveBlankLines": "Use a single blank line to separate paragraphs.",
+      "couponCodeEnglishOnly": "Coupon code must contain only English letters and numbers",
+      "excessiveWhitespace": "Use a single space only between words.",
+      "invalidVariableName": "Variable names must contain only letters, numbers, or underscores.",
+      "mismatchedBraces": "Use double braces {{ }} around variables.",
+      "sequentialPunctuation": "Use a single punctuation mark only.",
+      "startsOrEndsWithVariable": "Add static text before/after the variable.",
+      "tooManyEmojis": "Reduce the number of emojis in the message to 10 or fewer.",
+      "tooManyVariables": "Add more static text to balance variables.",
+      "unmatchedClosing": "Remove {{close}} or add {{open}} before it.",
+      "unmatchedOpening": "Remove {{open}} or add {{close}} after it.",
+      "variablesOnly": "Add static text to the message alongside the parameters."
+    },
+    "message": {
+      "ar": "Message (Arabic)",
+      "en": "Message (English)"
+    },
+    "reasons": {
+      "backToBackVariables": "Back-to-back variables without separator text",
+      "consecutiveBlankLines": "Consecutive blank lines",
+      "excessiveWhitespace": "Excessive or irregular spaces",
+      "invalidVariableName": "Invalid variable name: {{varName}}",
+      "mismatchedBraces": "Mismatched or incomplete braces",
+      "sequentialPunctuation": "Repeated punctuation found: {{match}}",
+      "startsOrEndsWithVariable": "Template starts or ends with a variable",
+      "tooManyEmojis": "Message text cannot contain more than 10 emojis.",
+      "tooManyVariables": "Too many variables compared to text length",
+      "unmatchedClosing": "Unmatched closing found: {{close}}",
+      "unmatchedOpening": "Unmatched opening found: {{open}}",
+      "variablesOnly": "Message text cannot contain only parameters."
+    }
+  }
+}

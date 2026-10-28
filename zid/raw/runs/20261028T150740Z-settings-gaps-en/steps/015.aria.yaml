@@ -1,0 +1,4 @@
+# aria snapshot failed: locator.ariaSnapshot: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator('body')
+    - waiting for "https://dashboard.zid.sa/en-sa/stores/127604/settings/notification-settings" navigation to finish...

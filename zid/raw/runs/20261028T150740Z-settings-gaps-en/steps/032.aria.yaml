@@ -1,0 +1,165 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new": "1"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home"
+  - button "Apps"
+  - button "Settings" [pressed]
+  - separator
+- list:
+  - link "General":
+    - /url: /en-sa/stores/127604/settings/account
+    - text: General
+    - button
+  - link "Communications":
+    - /url: /en-sa/stores/127604/settings/communications/orders
+    - text: Communications
+    - button
+  - link "Store":
+    - /url: /en-sa/stores/127604/settings/information
+  - link "Store information":
+    - /url: /en-sa/stores/127604/settings/information
+  - link "Legal pages":
+    - /url: /en-sa/stores/127604/channels/online-store/pages/legal
+  - link "Hours of operation":
+    - /url: /en-sa/stores/127604/settings/hours-of-operation
+  - link "Team":
+    - /url: /en-sa/stores/127604/settings/team
+  - link "Groups":
+    - /url: /en-sa/stores/127604/settings/team/groups
+  - link "Domains list":
+    - /url: /en-sa/stores/127604/settings/domains
+- main:
+  - button
+  - heading "Audit Log" [level=5]
+  - alert: Only actions from the last 30 days are shown below.
+  - textbox "Search"
+  - button
+  - table:
+    - rowgroup:
+      - row "Actions Section Changed by Time":
+        - columnheader "Actions"
+        - columnheader "Section"
+        - columnheader "Changed by"
+        - columnheader "Time"
+    - rowgroup:
+      - row "Printed order invoices Orders Zid Demo Store 2026-10-28 06:11 pm":
+        - cell "Printed order invoices":
+          - paragraph: Printed order invoices
+        - cell "Orders":
+          - paragraph: Orders
+        - cell "Zid Demo Store":
+          - paragraph: Zid Demo Store
+        - cell "2026-10-28 06:11 pm"
+      - row "Printed order confirmations Orders Zid Demo Store 2026-10-28 04:00 pm":
+        - cell "Printed order confirmations":
+          - paragraph: Printed order confirmations
+        - cell "Orders":
+          - paragraph: Orders
+        - cell "Zid Demo Store":
+          - paragraph: Zid Demo Store
+        - cell "2026-10-28 04:00 pm"
+      - row "Printed waybills Orders Zid Demo Store 2026-10-28 03:53 pm":
+        - cell "Printed waybills":
+          - paragraph: Printed waybills
+        - cell "Orders":
+          - paragraph: Orders
+        - cell "Zid Demo Store":
+          - paragraph: Zid Demo Store
+        - cell "2026-10-28 03:53 pm"
+      - row "Printed order confirmations Orders Zid Demo Store 2026-10-28 03:52 pm":
+        - cell "Printed order confirmations":
+          - paragraph: Printed order confirmations
+        - cell "Orders":
+          - paragraph: Orders
+        - cell "Zid Demo Store":
+          - paragraph: Zid Demo Store
+        - cell "2026-10-28 03:52 pm"
+      - row "Printed waybills Orders Zid Demo Store 2026-10-28 03:52 pm":
+        - cell "Printed waybills":
+          - paragraph: Printed waybills
+        - cell "Orders":
+          - paragraph: Orders
+        - cell "Zid Demo Store":
+          - paragraph: Zid Demo Store
+        - cell "2026-10-28 03:52 pm"
+      - row "Printed order invoices Orders Zid Demo Store 2026-10-28 08:22 am":
+        - cell "Printed order invoices":
+          - paragraph: Printed order invoices
+        - cell "Orders":
+          - paragraph: Orders
+        - cell "Zid Demo Store":
+          - paragraph: Zid Demo Store
+        - cell "2026-10-28 08:22 am"
+      - row "Activated a store theme Storefront Zid Demo Store 2026-10-28 04:48 am":
+        - cell "Activated a store theme":
+          - paragraph: Activated a store theme
+        - cell "Storefront":
+          - paragraph: Storefront
+        - cell "Zid Demo Store":
+          - paragraph: Zid Demo Store
+        - cell "2026-10-28 04:48 am"
+      - row "Activated a store theme Storefront Zid Demo Store 2026-10-28 04:48 am":
+        - cell "Activated a store theme":
+          - paragraph: Activated a store theme
+        - cell "Storefront":
+          - paragraph: Storefront
+        - cell "Zid Demo Store":
+          - paragraph: Zid Demo Store
+        - cell "2026-10-28 04:48 am"
+      - row "Activated a store theme Storefront Zid Demo Store 2026-10-28 04:48 am":
+        - cell "Activated a store theme":
+          - paragraph: Activated a store theme
+        - cell "Storefront":
+          - paragraph: Storefront
+        - cell "Zid Demo Store":
+          - paragraph: Zid Demo Store
+        - cell "2026-10-28 04:48 am"
+      - row "Printed order invoices Orders Zid Demo Store 2026-10-28 02:20 am":
+        - cell "Printed order invoices":
+          - paragraph: Printed order invoices
+        - cell "Orders":
+          - paragraph: Orders
+        - cell "Zid Demo Store":
+          - paragraph: Zid Demo Store
+        - cell "2026-10-28 02:20 am"
+  - text: "Rows per page:"
+  - combobox "10"
+  - navigation "pagination navigation":
+    - list:
+      - listitem:
+        - button "Go to first page" [disabled]
+      - listitem:
+        - button "Go to previous page" [disabled]
+      - listitem:
+        - button "page 1": "1"
+      - listitem:
+        - button "Go to page 2": "2"
+      - listitem:
+        - button "Go to page 3": "3"
+      - listitem:
+        - button "Go to page 4": "4"
+      - listitem:
+        - button "Go to next page"
+      - listitem:
+        - button "Go to last page"
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

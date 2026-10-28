@@ -1,0 +1,112 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new": "1"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home"
+  - button "Apps"
+  - button "Settings" [pressed]
+  - separator
+- list:
+  - link "General":
+    - /url: /en-sa/stores/127604/settings/account
+    - text: General
+    - button
+  - link "Communications":
+    - /url: /en-sa/stores/127604/settings/communications/orders
+    - text: Communications
+    - button
+  - link "Store":
+    - /url: /en-sa/stores/127604/settings/information
+  - link "Store information":
+    - /url: /en-sa/stores/127604/settings/information
+  - link "Legal pages":
+    - /url: /en-sa/stores/127604/channels/online-store/pages/legal
+  - link "Hours of operation":
+    - /url: /en-sa/stores/127604/settings/hours-of-operation
+  - link "Team":
+    - /url: /en-sa/stores/127604/settings/team
+  - link "Groups":
+    - /url: /en-sa/stores/127604/settings/team/groups
+  - link "Domains list":
+    - /url: /en-sa/stores/127604/settings/domains
+- main:
+  - button
+  - heading "Domains list" [level=5]
+  - paragraph: Manage your online store domain
+  - link "Link existing domain":
+    - /url: /en-sa/stores/127604/settings/domains/link-existing
+  - paragraph: You can connect more than one domain, but you can activate only one.
+  - table:
+    - rowgroup:
+      - row "Domain Domain type Status Connected at":
+        - columnheader "Domain"
+        - columnheader "Domain type"
+        - columnheader "Status"
+        - columnheader "Connected at"
+        - columnheader
+    - rowgroup:
+      - row "zid-demostore.com Custom Active 2022-04-11 View":
+        - cell "zid-demostore.com":
+          - link "zid-demostore.com":
+            - /url: /en-sa/stores/127604/settings/domains/a8853087-dd41-46da-954e-2dc35a77402d
+        - cell "Custom"
+        - cell "Active"
+        - cell "2022-04-11"
+        - cell "View":
+          - link "View":
+            - /url: /en-sa/stores/127604/settings/domains/a8853087-dd41-46da-954e-2dc35a77402d
+      - 'row "zid-demostore-com.zid.store For more information about domains: Ready for activation 2022-04-11 View"':
+        - cell "zid-demostore-com.zid.store":
+          - link "zid-demostore-com.zid.store":
+            - /url: /en-sa/stores/127604/settings/domains/bcdb5694-1d37-4061-9c76-c47acad8b8e3
+        - cell "For more information about domains:"
+        - cell "Ready for activation"
+        - cell "2022-04-11"
+        - cell "View":
+          - link "View":
+            - /url: /en-sa/stores/127604/settings/domains/bcdb5694-1d37-4061-9c76-c47acad8b8e3
+  - heading "Request a free domain from Zid" [level=6]
+  - list:
+    - listitem:
+      - paragraph: Make sure that the required domain isn't reserved by using the following search engine
+      - link "Search":
+        - /url: https://instantdomainsearch.com
+    - listitem:
+      - paragraph: Fill out the form
+      - link "Create":
+        - /url: https://share.hsforms.com/1AZVgJo9xRdeIHaFvLhFl7A2tevd?__hstc=20065191.4eb68abcc7d10707745ff39c40ebd9f1.1793198244757.1793198244757.1793198244757.1&__hssc=20065191.33.1793198244757&__hsfp=29974c7685b004c26ffa64478bb1dc23
+  - heading "What is a domain?" [level=6]
+  - paragraph: A store domain is the electronic link to your store. Websites of various types need a domain so that visitors can easily access the site.
+  - list:
+    - listitem:
+      - paragraph: "For more information about domains:"
+      - paragraph:
+        - paragraph:
+          - link "https://help.zid.sa/domain":
+            - /url: https://help.zid.sa/domain
+    - listitem:
+      - paragraph: "To verify the domain with the Saudi Business Center:"
+      - paragraph:
+        - paragraph:
+          - link "https://help.zid.sa/saudi-business-center":
+            - /url: https://help.zid.sa/saudi-business-center
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

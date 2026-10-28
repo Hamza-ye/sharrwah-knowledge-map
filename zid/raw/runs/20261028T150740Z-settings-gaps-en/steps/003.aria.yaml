@@ -1,0 +1,119 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new": "1"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home"
+  - button "Apps"
+  - button "Settings" [pressed]
+  - separator
+- list:
+  - link "General":
+    - /url: /en-sa/stores/127604/settings/account
+  - link "Account settings":
+    - /url: /en-sa/stores/127604/settings/account
+  - link "Security settings":
+    - /url: /en-sa/stores/127604/settings/security
+  - link "Languages & currencies":
+    - /url: /en-sa/stores/127604/settings/languages-currencies
+  - link "Checkout page options":
+    - /url: /en-sa/stores/127604/settings/checkout
+  - link "Gifting settings New":
+    - /url: /en-sa/stores/127604/settings/gifting-settings
+  - link "Configure your invoices":
+    - /url: /en-sa/stores/127604/settings/invoice
+  - link "Orders and products properties":
+    - /url: /en-sa/stores/127604/settings/orders-products
+  - link "Shipping and payment constraints":
+    - /url: /en-sa/stores/127604/settings/constraints
+  - link "Tax settings":
+    - /url: /en-sa/stores/127604/settings/tax
+  - link "Fatoora platform integration":
+    - /url: /en-sa/stores/127604/settings/zatca-integration
+  - link "Staff notifications":
+    - /url: /en-sa/stores/127604/settings/staff-notifications
+  - link "API integrations":
+    - /url: /en-sa/stores/127604/settings/direct-api-integration
+  - link "Export requests":
+    - /url: /en-sa/stores/127604/settings/export-requests
+  - link "URL redirects":
+    - /url: /en-sa/stores/127604/settings/url-redirects
+  - link "Communications":
+    - /url: /en-sa/stores/127604/settings/communications/orders
+    - text: Communications
+    - button
+  - link "Store":
+    - /url: /en-sa/stores/127604/settings/information
+    - text: Store
+    - button
+- main:
+  - button
+  - heading "Account settings" [level=5]
+  - button "Save"
+  - heading "Account details" [level=6]
+  - text: Name
+  - textbox "Name": Zid Demo Store
+  - text: Phone number
+  - textbox "Phone number": "966594406244"
+  - text: Email
+  - textbox "Email": demostorezid@gmail.com
+  - text: Date of birth
+  - textbox "Date of birth": 1988-06-03
+  - text: Gender
+  - radiogroup:
+    - radio "Male"
+    - text: Male
+    - radio "Female"
+    - text: Female
+  - paragraph
+  - text: Do you work in the same organization affiliated with the store?
+  - radiogroup:
+    - radio "Yes"
+    - text: "Yes"
+    - radio "No" [checked]
+    - text: "No"
+  - paragraph
+  - text: Working organization name
+  - textbox "Working organization name":
+    - /placeholder: Enter working organization name
+  - separator
+  - text: Country
+  - combobox "Country": Saudi Arabia
+  - button "Open"
+  - text: City
+  - combobox "City": Riyadh
+  - button "Open"
+  - heading "Password" [level=6]
+  - text: Old password
+  - textbox "Old password":
+    - /placeholder: Enter password
+  - text: New password
+  - textbox "New password":
+    - /placeholder: Enter password
+  - text: Confirm new password
+  - textbox "Confirm new password":
+    - /placeholder: Enter password
+  - heading "Change POS passcode" [level=6]
+  - text: POS passcode
+  - textbox "POS passcode"
+  - button "Save" [disabled]
+  - button "Generate random passcode"
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img
