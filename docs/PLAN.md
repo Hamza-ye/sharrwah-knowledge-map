@@ -6,18 +6,20 @@ platform, with its route, is in `<platform>/GAPS.md`; what is unusual about a ru
 ## Status (2026-10-28)
 
 - Zid: the dashboard's route manifest, page index and locales (English and Arabic) are structures; its code is held
-  in run 20261028T143118Z-dashboard-code. The demo store's routes are being opened in English, the settings pages
-  the open questions of sharrwah-knowledge-map's S-02 name first (run `*-settings-gaps-en`).
-- The capture browser is `capture-profile` on port 9230, signed in to Zid's demo.
+  in run 20261028T143118Z-dashboard-code. On the demo store, 57 of the manifest's routes are opened in English
+  (`zid/index/ledger/dashboard-routes.tsv`), the settings pages sharrwah-knowledge-map's S-02 asks about first.
+- The demo store refuses changes and is not offered Markets (`zid/GAPS.md`); a store with markets needs a store of our
+  own.
+- The capture browser is `capture-profile` on port 9230, signed in to Zid's demo. Port 9231 is observed-sa's.
 
 ## Next
 
-1. Zid: the markets journey on the demo store: create a market, read its pages and every settings page again with it
-   present, look at the storefront, then remove it (the store had no market when found).
-2. Zid: the dashboard's remaining routes (`index/ledger/dashboard-routes.tsv`, status `not opened`), one run at a time.
-3. Zid: the sign-up journey with a capture email address: the countries a store can take at sign-up.
-4. Zid: the dashboard's API calls as a structure, read from `assets/api-resources-<hash>.js` with a JavaScript parser.
-5. BigCommerce, WooCommerce: when the founder says.
+1. Zid: the sign-up journey with a capture email address (what it asks, the countries a new store can take), and, if
+   Zid offers it to the new store, Markets: a market's pages and every settings page again with a second market.
+2. Zid: the dashboard's remaining routes (`zid/index/ledger/dashboard-routes.tsv`, status `not opened`), one run at a
+   time.
+3. Zid: the dashboard's API calls as a structure, read from `assets/api-resources-<hash>.js` with a JavaScript parser.
+4. BigCommerce, WooCommerce: when the founder says.
 
 ## Starting new work
 

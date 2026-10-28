@@ -24,6 +24,12 @@ Dated record of the work: what was decided, what was measured.
 - The storefront `https://zid-demostore.com/` declares an address per language and country (hreflang ar-sa at the
   root, en, ar-kw, en-kw, ar-ae, en-ae, ar-bh, en-bh, ar-om, en-om). On `/en/` its page text is Arabic, a landing page
   for a shaving kit with a footer giving a phone, a VAT number and the handle @rsmstoresa.
+- The demo store refuses changes. The dashboard's create-market route sends a store whose `must_use_markets_pricing`
+  is false back to Settings (its loader, `assets/markets_.create-<hash>.js`). `POST hermod.zid.sa/v1/markets`, sent
+  from the dashboard page with the dashboard's own headers and the create form's body, answered 403 "Authentication
+  credentials were not provided."; a save of Checkout page options answered 403 "This action is not allowed on demo
+  store"; the dashboard's own `POST /v1/analytics/sales-over-time` answered 403 `DEMO_STORE_WRITE_BLOCKED`. The demo
+  shows the store; a store with markets needs a store of our own.
 - Route sweeps: a page takes 25 to 80 seconds to settle (the dashboard keeps connections open, so the network-idle
   wait runs its full 10 seconds), and the machine was shared with other capture work (load 16 to 28 on 4 cores). With
   three sweeps at once (one in the profile's window, two in fresh-context windows), run

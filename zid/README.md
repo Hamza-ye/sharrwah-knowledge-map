@@ -7,9 +7,12 @@ merchant dashboard are held beside the English ones (`structures/dashboard-local
 
 Zid's public demo, `https://dashboard.zid.sa/en-sa/demo`, signs any visitor in to the merchant dashboard as the owner
 of one store: Zid Demo Store, store 127604, on the Professional plan (yearly, to 2026-11-05), with the storefront
-`https://zid-demostore.com/`. Every visitor shares that store, so what it shows includes what earlier visitors changed,
-and what a run changes is seen by later visitors. Its facts, each with the answer it comes from, are in
-[index/instruments.json](index/instruments.json). The runs were made from Yemen (`run.json`: `network`).
+`https://zid-demostore.com/`. Every visitor shares that store, and Zid refuses changes to it: a save answers
+"This action is not allowed on demo store" (`DEMO_STORE_WRITE_BLOCKED`), and the dashboard does not offer Markets to it
+(its feature flag `must_use_markets_pricing` is false; see [index/run-notes.tsv](index/run-notes.tsv) for runs
+20261028T154420Z-markets-create-remove-en and 20261028T155108Z-markets-api-en). Its facts, each with the answer it
+comes from, are in [index/instruments.json](index/instruments.json). The runs were made from Yemen (`run.json`:
+`network`).
 
 ## Where to start
 
