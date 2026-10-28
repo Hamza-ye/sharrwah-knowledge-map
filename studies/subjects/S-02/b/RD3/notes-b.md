@@ -1406,3 +1406,17 @@ From A2-ZD-R and A3-ZD-R (other-product-class f44be3f, folder `zid/`). The new l
 
 ### Words searched for
 - None: the second pass raises no point, so rule 3's search for earlier platforms' rows doesn't arise.
+
+### Calls this part made, and problems with the brief, the work list or the tools
+- A confirmed absence beside a lead that answers: one `the whole store (a reading)` row per point, citing the absence in its `basis_evidence`, as RD3-S9 did, and no separate `absent` row; where the revisit's why names a newer gap ("in place of" the older), a `gap` row stands beside it (S02-V-1123 to S02-V-1127).
+- The reading `the whole store` rests on a page or answer that holds the setting once, with no market or country field, outside the routes under a market, on the development store with two markets and `must_use_markets_pricing` false; the rows' scope keeps the store, plan, flag, run and step.
+- S02-V-1070 was removed, not replaced by `absent`: absence S02-ZD-N11 is of a route under a market, which S02-VP-71 asks, not who sets staff access (S02-VP-72).
+- S02-ZD-449 names several settings, so it joined the rows of each point it answers (S02-VP-41, S02-VP-43, S02-VP-55, S02-VP-68, S02-VP-77); S02-ZD-453 and S02-ZD-454 joined S02-VP-92's seller row beside S02-VP-88's.
+- S02-ZD-471 sits in S02-V-870 by a reading of its scope (the store's country changed to Kuwait and the primary market's countries didn't); S02-ZD-490 sits in S02-V-756 (the platform: its support) and S02-V-769 (store credit) by readings, both marked.
+- The RD3 slice's statements.tsv was cut again at 22:46 while this part ran: S02-ZD-489 to S02-ZD-491 printed as kind `unknown` before and `shipped` after, and their rows took `shipped`.
+- 11 of the 13 revisits' ids already had lines in done.tsv from earlier rounds, so `second_pass_list.py --check` listed only S02-V-1067 and S02-V-1070 before this part ran, as the message said it would.
+- Gap S02-ZD-G29, which S02-V-870's why names, is under a bullet outside RD3's slice, so it gives no row here.
+
+### After the check (RD3-S12)
+- `check_subject.py` on a copy holding only b/RD3: no `error` lines; 17 warnings (Shopify's and WooCommerce's quote lengths) and 15 reviews (quotes found only in a page's source, the coordinator's, among them zid's S02-ZD-C008, C086, C313, C314). RD3's rows in `unplaced.tsv`: 11 of Salla's (S02-SA-513 to S02-SA-537, RD3-S13's); none of Zid's.
+- `second_pass_list.py --check`: RD3's list holds only S02-V-1096 (salla, RD3-S13's).

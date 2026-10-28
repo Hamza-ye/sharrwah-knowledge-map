@@ -85,3 +85,11 @@ The round places what A2-SA-R, A2-ZD-R and A3-ZD-R recorded (parts RD1-S7, RD1-S
 4. **Leads in `a2.tsv` placed elsewhere, or not at all, stand:** a lead points to a point, and the statement's own words decide (the brief, `place`).
 5. **The slices were cut again during the part,** to give the dashboard's strings their kind. The part's writes all came after the swap, so its rows hold the new kinds.
 6. **S02-V-441's evidence still names the removed S02-V-442.** Its row note says so, which is enough: the evidence records what the row was joined on.
+
+**RD3-S12's calls:** each stands.
+1. **A confirmed absence cited in a whole-store answer, not a separate `absent` row,** as RD3-S9 did for Salla. In phase C's tests a platform that lacks a key and one that doesn't state it count alike: neither gives it. So the row settles Zid's state on `a market the store sells into` as well as an `absent` row would, and Zid is no longer open on it.
+2. **"The whole store" read from a setting shown once, with no market field,** on the development store while it held two markets. The audit's tests support the reading: the market's own page and its code save only the market's name, countries, currency and publication, and no setting's own page names a market. Each row marks it as a reading, scoped to the flag `must_use_markets_pricing` false.
+3. **S02-V-1070 removed, its lead joined to S02-V-796,** since N11 concerns a route under a market, which S02-VP-71 asks about, not who sets.
+4. **S02-ZD-471 under S02-VP-85,** by its scope: the store's country changed and the main market's countries didn't. This reading is phase C's to weigh.
+5. **S02-ZD-449 under each point whose setting it names** (rule 2).
+6. **`enforce_2fa`, not raised:** it fits no kind of S-02's, and whose sign-in it governs belongs to identity and permissions, not to a market.
