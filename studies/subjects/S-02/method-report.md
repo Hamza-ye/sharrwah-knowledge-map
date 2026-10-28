@@ -668,3 +668,27 @@ The notes went to the parts as leads. The parts recorded only what the run files
   - S02-VP-26's condition types on three stores: S02-SH-1094, S02-SH-1101 and S02-SH-1113.
 
 **A ruling on phase C's method** (C-RD2's problem 3, and the local agent's recommendation). Step 3 had no tag for a key that no platform gives, which happens once a contradiction is weighed toward an absence. A platform that doesn't state a key already counts as not giving it in every test. So a key that every platform lacks or doesn't state is now `no difference`, and follows as a commonality the references don't carry. The tool and the brief say so. A key some platform leaves `open` isn't one of these: the tool tries both ways.
+
+**Phase B's capture round** (three parts, 26.9 million): Shopify's 125 new statements placed in RD1, RD2 and RD3, and the rows naming a settled gap revisited.
+
+| Part | Tasks | Requests | Millions |
+| --- | --- | --- | --- |
+| RD1-S6 | 71 | 64 | 10.5 |
+| RD3-S11 | 39 | 67 | 11.0 |
+| RD2-S3 | 9 (and 3 found) | 40 | 5.4 |
+
+- **What it changed:**
+  - S02-V-058 (who checks, S02-VP-05) names G14.
+  - S02-V-483 (what limits a market, S02-VP-27) names G16. The new statements show markets one store held, which is no limit or rule, so they joined S02-VP-26's rows.
+  - S02-V-662, the address form's gap row, was removed: its answer joined S02-V-660, the buyer's country.
+  - Four rows are new: S02-V-302 under S02-VP-07, S02-V-1121 under S02-VP-62 and S02-V-1122 under S02-VP-86, and S02-V-303, which the coordinator's ruling removed.
+  - The subject holds 906 rows. The full check finds no error and nothing unplaced, and every ledger task is recorded.
+- **Three slips of the coordinator's, which the parts worked around:**
+  - **The slices weren't cut again after gap-closing,** so `variants_edit.py` refused every new statement. RD1-S6 and RD3-S11 each cut a copy's slices and wrote through the tool into the real folder, under its lock. The coordinator then cut the real slices again, before RD2-S3 started. The slicer's own instructions say to cut again after anything adds to phase A's files, after the full check has written `kinds.tsv`. The coordinator had skipped that step.
+  - **The task builder dropped a revisit's leads.** It appended only the revisits of rows naming a settled gap. A revisit it didn't append, of a gap row under S02-VP-26, took three statements as its leads, so they had no task (S02-SH-1092, S02-SH-1094, S02-SH-1095). RD2-S3 found them unplaced in its slice and placed them by the brief's last step.
+  - **The parts' message pointed to Shopify's `notes.md`,** which the phase B brief forbids, a slip made once before. The parts read only what the brief allows. RD2-S3's message no longer names it.
+- **The coordinator's rulings** are in `b/second-pass.md`:
+  - **S02-V-303 removed.** A form's required fields aren't a check of who checks: S02-VP-05's "new information" is what Shopify's banking partners verify. The two statements joined the seller's row, as the same form's others had.
+  - **The Backup Region control's two placements are left as they are,** since neither changes a key.
+  - **The other readings stand.**
+- **The checker,** run on a copy holding one root decision, listed every other root decision's phase C rows as errors, which hid a part's own. It now skips them, as it already did for `a2.tsv`.
