@@ -41,6 +41,15 @@ Dated record of the work: what was decided, what was measured.
   the market could be published, listed, read and removed in the dashboard, and no settings page showed a market.
   Its country list on Business address has 162 entries; changing the store's country to Kuwait asked only for a
   district and a street, and left the currency (SAR) and the primary market (Saudi Arabia) as they were.
+- The tracking apps (Google Analytics, Google Tag Manager, Meta pixel, TikTok pixel) each take one account code for the
+  store in their App market page, with a second market present; Google Analytics accepted a G- code, not a UA- one.
+- Zid's subscription checkout, read with the development store's country set in turn: the price is in the country's
+  currency and the VAT line, labelled "VAT %15" in every answer, is 15% for Saudi Arabia and Syria, 14% for Egypt and
+  0 for Kuwait, the UAE, Oman, Bahrain and Qatar; every checkout links zid.sa's terms. zid.sa's and zid.eg's terms
+  name AlQudrah AlTaqniyah for Technology and Communication Company LLC (CR 1010365366) and Saudi law; their pricing
+  pages give its VAT number. The address page's country list can select an option on the click that opens it (it
+  opens over the field); the address can be set through the call its form makes (POST
+  v1/managers/store/business-place).
 - Route sweeps: a page takes 25 to 80 seconds to settle (the dashboard keeps connections open, so the network-idle
   wait runs its full 10 seconds), and the machine was shared with other capture work (load 16 to 28 on 4 cores). With
   three sweeps at once (one in the profile's window, two in fresh-context windows), run

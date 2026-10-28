@@ -105,7 +105,7 @@
         "must_use_markets_pricing": false
       },
       "markets": "Main Market (primary, Saudi Arabia, SAR, published), made with the store; a Kuwait market was made and removed in run 20261028T170107Z-devstore-markets-en",
-      "changed": "business address set to Kuwait, Kuwait City, district \"Capture District\", street \"1 Capture Street\" (run 20261028T170107Z-devstore-markets-en, steps 47 to 56); currency SAR and the primary market unchanged",
+      "changed": "business address: Saudi Arabia, Riyadh, district \"Capture District\", street \"1 Capture Street\" (restored in run 20261028T190952Z-devstore-country-checkout-en, step 83, after Kuwait, Egypt, the UAE, Oman, Qatar, Syria and Bahrain); markets: Main Market and a published Kuwait market (run 20261028T185150Z-devstore-tracking-apps-en, step 2); Google Analytics activated with the placeholder code G-CAPTURE001 (same run, step 14)",
       "browser": {
         "profile": "capture-profile-signup (git-ignored)",
         "cdp_port": 9240
