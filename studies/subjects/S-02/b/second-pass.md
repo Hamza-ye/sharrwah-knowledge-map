@@ -98,3 +98,16 @@ The round places what A2-SA-R, A2-ZD-R and A3-ZD-R recorded (parts RD1-S7, RD1-S
 - **S02-SA-535 joined to S02-V-719, `the buyer's country`.** "Nearest branch" names the buyer's location, which is finer than a country. The row already gave the key from earlier statements, so the join changes none. It is marked as a reading for phase C.
 - **S02-SA-532 noted, though gap-closing led it to S02-VP-67:** its words say what activating markets does to the store's inventory, not what inventory is taken per (the brief, `place`: a lead points to a point, and the statement's words decide).
 - **The other calls** (a captured request under no who-sets point; the markets module's contact section under S02-VP-68; the Multi Market page's instructions read as the seller's) follow earlier parts' readings.
+
+**RD1-S8's calls:** each stands.
+1. **S02-ZD-468 under S02-VP-06 only:** a change of a value already set, not who sets it first.
+2. **S02-ZD-484 noted.** The subscription checkout links zid.sa's Terms for eight Business address countries. It adds no key: Zid's rows under S02-VP-08 and S02-VP-09 already give `every store` from those Terms (S02-V-169, S02-V-171). Phase C may cite it as observed evidence that the Business address country doesn't change which Terms the checkout links.
+3. **S02-ZD-476 to S02-ZD-483 as Zid's answer under S02-VP-15, and a row under S02-VP-14 for the currency the fee is billed in:** the decider, the Business address country, is a reading from their scopes, as in ruling 8 above. S02-ZD-G32 stands beside them.
+4. **S02-SA-505 and S02-SA-506 placed,** because their scope names the UAE store; forms whose scope names no country stay noted.
+5. **S02-ZD-469 under S02-VP-07:** the save's required district and street are a condition of the change, as S02-V-302 holds Shopify's. They are not a check after it, which S02-VP-05 asks about.
+6. **The others** (S02-ZD-467 and S02-ZD-468 not joined to S02-V-256; S02-SA-295's decider from its page's path) follow the brief's rules.
+
+**Problems it raised:**
+- **S02-ZD-G33 cites S02-ZD-N17,** which the audit contradicts. What G33 says stands: the Business address list holds none of the five. The audit's row says the list isn't all the countries Zid holds. The gap is closed for S-02 and goes to S-07 (`gap-assessment.tsv`), so its text is left as it is.
+- **`xwords` added duplicates.** It no longer adds a word the platform's list already holds, and the one duplicate under S02-VP-11 is removed.
+- **S02-SA-499, S02-SA-500 and S02-SA-515** (the UAE store's prices in AED) had no task. They would read as S02-SA-501 does under ruling 8. Phase C may cite them under S02-VP-14 as it may any statement, so no part is run for them.

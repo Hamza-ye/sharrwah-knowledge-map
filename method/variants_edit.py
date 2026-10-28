@@ -262,7 +262,10 @@ def main(subj, rd, cmd, args):
             parts = [x.strip() for x in p["x_words"].split(" | ")]
             for k, x in enumerate(parts):
                 if x.startswith(plat + ":"):
-                    parts[k] = x + "; " + words
+                    have = [w.strip() for w in x[len(plat) + 1:].split(";")]
+                    add = [w.strip() for w in words.split(";") if w.strip() and w.strip() not in have]
+                    if add:                       # a word the platform's list already holds isn't added twice
+                        parts[k] = x + "; " + "; ".join(add)
                     break
             else:
                 parts.append(f"{plat}: {words}")
