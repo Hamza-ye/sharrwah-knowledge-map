@@ -19,3 +19,7 @@ RD2-S2	RD2	e; g	shopify; salla; woocommerce; bigcommerce	the last round's tasks 
 RD1-S6	RD1	a; b; c	shopify	the capture round's tasks under RD1: the rows whose why begins 'capture round', from A2-SH-R1 and A2-SH-R2 (observed-sh 19a5f6435)	71	85	done
 RD2-S3	RD2	e	shopify	the capture round's tasks under RD2: the rows whose why begins 'capture round', from A2-SH-R1 and A2-SH-R2 (observed-sh 19a5f6435)	9	26	done
 RD3-S11	RD3	f	shopify	the capture round's tasks under RD3: the rows whose why begins 'capture round', from A2-SH-R1 and A2-SH-R2 (observed-sh 19a5f6435)	39	60	done
+RD1-S7	RD1	a; b; c; d	salla	the Salla and Zid round's Salla tasks under RD1: the rows whose why begins 'Salla and Zid round' and whose platform is salla, from A2-SA-R (observed-sa b0bd0b16)	37	81	running
+RD2-S4	RD2	e	salla; zid	the Salla and Zid round's tasks under RD2: the rows whose why begins 'Salla and Zid round', from A2-SA-R (observed-sa b0bd0b16) and A2-ZD-R (other-product-class f44be3f)	13	16	pending
+RD3-S12	RD3	f	salla; zid	the Salla and Zid round's tasks under RD3: the rows whose why begins 'Salla and Zid round', from A2-SA-R and A2-ZD-R, after the audit of Zid's absences (A3-ZD-R)	18	60	pending
+RD1-S8	RD1	a; b; c; d	zid	the Salla and Zid round's Zid tasks under RD1: the rows whose why begins 'Salla and Zid round' and whose platform is zid, from A2-ZD-R (other-product-class f44be3f), after the audit of Zid's absences (A3-ZD-R)	7	32	pending
