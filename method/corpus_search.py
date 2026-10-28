@@ -46,7 +46,8 @@ HOSTS = {  # captured pages in this repository's runs, by the host they came fro
     "zid": r"(^|\.)zid\.(sa|dev|eg)$",
     "bigcommerce": r"(^|\.)(bigcommerce\.com|bigcommerce\.co\.uk|commerce\.com|bitpay\.com)$",
 }
-ARCHIVES = {"salla": "observed-sa", "shopify": "observed-sh"}   # whose fetch archives each platform's search reads
+ARCHIVES = {"salla": ("observed-sa", ""), "shopify": ("observed-sh", ""),   # whose fetch archives each platform's
+            "zid": ("other-product-class", "zid/")}                        # search reads: the repository, and the folder
 CACHE = os.path.join(os.path.expanduser("~"), ".cache", "sharrwah-corpus")
 TEXTUAL = re.compile(r"(?i)text/html|application/xhtml|text/plain|text/markdown|application/json|text/x-markdown|javascript|ecmascript")
 SCRIPT = re.compile(r"(?i)javascript|ecmascript")
@@ -188,15 +189,17 @@ def record_text(raw):
         return warc.get("WARC-Target-URI", ""), text
     return warc.get("WARC-Target-URI", ""), text[:400000]
 
-def archive_documents(repo):
-    """Documents of a repository's fetch archives, from the cache for its current commit, built if missing."""
+def archive_documents(repo, prefix=""):
+    """Documents of a repository's fetch archives (those under PREFIX, if given), from the cache for its current commit,
+    built if missing."""
     root = REPOS[repo]
     commit = subprocess.run(["git", "-C", root, "rev-parse", "HEAD"], capture_output=True, text=True).stdout.strip()
-    cache = os.path.join(CACHE, f"{repo}-{commit}-scripts.jsonl.gz")   # "-scripts": code bundles are searched too
+    tag = "-" + prefix.strip("/").replace("/", "-") if prefix else ""
+    cache = os.path.join(CACHE, f"{repo}{tag}-{commit}-scripts.jsonl.gz")   # "-scripts": code bundles are searched too
     if not os.path.exists(cache):
         os.makedirs(CACHE, exist_ok=True)
         names = [n for n in subprocess.run(["git", "-C", root, "ls-files"], capture_output=True, text=True).stdout.split("\n")
-                 if n.endswith(".warc.gz")]
+                 if n.endswith(".warc.gz") and n.startswith(prefix)]
         tmp = f"{cache}.{os.getpid()}.part"           # each builder writes its own file; the last finished wins
         with gzip.open(tmp, "wt", encoding="utf-8") as out:
             for n in names:
@@ -230,7 +233,7 @@ def documents(platform):
     for repo, pattern, kind in HELD.get(platform, []):
         if kind == "articles":       # titles live in the items.jsonl beside each texts.jsonl
             for commit, name, raw in git_files(repo, pattern.replace("texts.jsonl", "items.jsonl")):
-                for line in raw.splitlines():
+                for line in raw.split("\n"):   # not splitlines(): it also breaks on U+2028 inside a JSON string
                     try:
                         o = json.loads(line)
                         titles[o["url"]] = (o.get("record") or {}).get("title") or ""
@@ -238,7 +241,7 @@ def documents(platform):
                         pass
         for commit, name, raw in git_files(repo, pattern):
             if kind == "articles":               # cited by its line; the record's own position field counts from 0
-                for n, line in enumerate(raw.splitlines(), start=1):
+                for n, line in enumerate(raw.split("\n"), start=1):   # the file's own line numbers
                     try:
                         o = json.loads(line)
                     except Exception:
@@ -246,8 +249,9 @@ def documents(platform):
                     yield (f"{repo}:{name}", f"{repo}@{commit}:{name} line {n} (position {o.get('position')})",
                            o.get("url", ""), titles.get(o.get("url", ""), ""), o.get("text", ""))
             elif kind == "lines":            # a corpus is the whole pattern, so that --max caps it, not each file
-                for i, line in enumerate(raw.splitlines(), start=1):
-                    yield (f"{repo}:{pattern}", f"{repo}@{commit}:{name} line {i}", "", "", line)
+                for i, line in enumerate(raw.split("\n"), start=1):   # the file's own line numbers
+                    if line.strip():
+                        yield (f"{repo}:{pattern}", f"{repo}@{commit}:{name} line {i}", "", "", line)
             elif kind == "help-md":
                 title = next((l[2:].strip() for l in raw.splitlines() if l.startswith("# ")), "")
                 yield ("observed-sh: Help Center, en", f"{repo}@{commit}:{name}", help_url(name), title, raw)
@@ -256,7 +260,7 @@ def documents(platform):
             else:
                 yield (f"{repo}:{pattern}", f"{repo}@{commit}:{name}", "", "", raw)
     if platform in ARCHIVES:
-        yield from archive_documents(ARCHIVES[platform])
+        yield from archive_documents(*ARCHIVES[platform])
     if platform in RELEASES:              # read as files, never run
         prefix, root = RELEASES[platform]
         rels = []

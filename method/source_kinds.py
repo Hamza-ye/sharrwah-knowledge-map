@@ -87,13 +87,15 @@ def kind_of(source, roots, locator=""):
                 return "official page", f"run {run} read the platform's terms, pricing or legal pages"
             if re.search(r"help|docs", run, re.I):
                 return "stated", f"run {run} read the platform's documentation"
-            if re.search(r"code|manifest|bundle", run, re.I):
+            if re.search(r"code|manifest|bundle|locale|source-map", run, re.I):
                 return "shipped", f"run {run} fetched the platform's own code"
             return "observed", f"run {run} records a store, dashboard or session"
         if path.startswith("structures/"):
             parts = path.split("/")
             meta = _structure_meta(os.path.join(roots.get("other-product-class", ""), plat), "/".join(parts[:2]), path) or {}
             src = meta.get("source") if isinstance(meta, dict) else None
+            if src is None and isinstance(meta, dict) and isinstance(meta.get("namespace_map"), dict):
+                src = meta["namespace_map"]          # the dashboard's strings: the code file that maps their namespaces
             if isinstance(src, dict) and isinstance(src.get("uri"), str):
                 k, why = kind_of_url(src["uri"])
                 return k, f"{plat}/{'/'.join(parts[:2])} holds {src['uri'][:80]}: {why}"

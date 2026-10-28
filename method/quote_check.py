@@ -62,12 +62,12 @@ def json_strings(o, out):
 
 def json_unescaped(raw):
     out = []
-    for line in raw.splitlines():
+    for line in raw.split("\n"):   # not splitlines(): it also breaks on U+2028 inside a JSON string
         try:
             out.append("\n".join(json_strings(json.loads(line), [])))
         except Exception:
             pass
-    for line in raw.splitlines():
+    for line in raw.split("\n"):
         try:
             out.append(json.dumps(json.loads(line), ensure_ascii=False))
         except Exception:
