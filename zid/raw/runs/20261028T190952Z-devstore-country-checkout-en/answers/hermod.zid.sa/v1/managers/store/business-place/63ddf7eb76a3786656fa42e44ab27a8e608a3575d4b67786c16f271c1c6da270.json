@@ -1,0 +1,1 @@
+{"status":"validation_error","message":{"type":"validation_errors","code":"ERROR_POPUP_OK","name":"Inputs","description":"Input errors!","validations":[{"field":"city_id","errors":["The selected city id is invalid."]}]}}

@@ -1,0 +1,217 @@
+- banner:
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/3277610
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "KWD 0"
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+- navigation "Primary navigation":
+  - button "Home"
+  - button "Apps"
+  - button "Settings" [pressed]
+  - separator
+- list:
+  - link "General":
+    - /url: /en-sa/stores/3277610/settings/account
+    - text: General
+    - button
+  - link "Communications":
+    - /url: /en-sa/stores/3277610/settings/communications/orders
+    - text: Communications
+    - button
+  - link "Store":
+    - /url: /en-sa/stores/3277610/settings/information
+  - link "Store information":
+    - /url: /en-sa/stores/3277610/settings/information
+  - link "Legal pages":
+    - /url: /en-sa/stores/3277610/channels/online-store/pages/legal
+  - link "Hours of operation":
+    - /url: /en-sa/stores/3277610/settings/hours-of-operation
+  - link "Team":
+    - /url: /en-sa/stores/3277610/settings/team
+  - link "Groups":
+    - /url: /en-sa/stores/3277610/settings/team/groups
+  - link "Domains list":
+    - /url: /en-sa/stores/3277610/settings/domains
+- main:
+  - button
+  - heading "Store information" [level=5]
+  - button "Save"
+  - tablist:
+    - tab "Store information"
+    - tab "Business details"
+    - tab "Business address" [selected]
+  - paragraph: You can enter your location manually or using Google Maps.
+  - list:
+    - listitem:
+      - paragraph: Display address in storefront
+      - switch
+    - listitem:
+      - paragraph: Enter the location automatically using Google Maps.
+      - switch [checked]
+    - listitem:
+      - paragraph: Time zone
+      - paragraph: Selecting your store's time zone will help ensure consistency in dates and times across orders, reports, and file exports.
+      - combobox "Asia/Riyadh"
+  - text: Country
+  - combobox "Country": Egypt
+  - button "Open"
+  - text: City
+  - combobox "City" [expanded]
+  - button "Close"
+  - text: Street
+  - textbox "Street": 1 Capture Street
+  - text: Zip code
+  - textbox "Zip code"
+  - region "Map"
+  - alert:
+    - text: An example of a national address proof file from SPL.
+    - button "Preview"
+  - button "Choose File"
+  - paragraph: National Address
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img
+- listbox "City":
+  - option "Cairo"
+  - option "Other"
+  - option "Alexandria"
+  - option "Assuit"
+  - option "Damietta"
+  - option "El Monfia"
+  - option "Bani Suif"
+  - option "Al Sharqia"
+  - option "Fayuom"
+  - option "Dakahlia"
+  - option "Behara"
+  - option "Badr City"
+  - option "Kafr El Shikh"
+  - option "Ismailia"
+  - option "Aswan"
+  - option "Giza"
+  - option "New Valley"
+  - option "Luxor"
+  - option "Qena"
+  - option "Marsa Matrouh"
+  - option "Madinaty"
+  - option "Sohag"
+  - option "Sharm El Sheikh"
+  - option "El Rehab"
+  - option "Port Said"
+  - option "Al Qalyubia"
+  - option "Suez"
+  - option "Obour"
+  - option "Helwan"
+  - option "Gharbia"
+  - option "Menya"
+  - option "North Coast"
+  - option "North Sinai"
+  - option "Red Sea"
+  - option "South Sinai"
+  - option "ElMontazah"
+  - option "Qesm ElRaml"
+  - option "Sidi Gaber"
+  - option "ElAttarin"
+  - option "Abu Yousef"
+  - option "Kilo 21"
+  - option "Borg ElArab"
+  - option "Bab Sharqi"
+  - option "Moharram Bek"
+  - option "ElMansheya"
+  - option "Karmouz"
+  - option "ElLabban"
+  - option "ElGomrok"
+  - option "Mina ElBasal"
+  - option "ElDekhela"
+  - option "ElAmaria"
+  - option "ElDayra ElGomrokeyah"
+  - option "King Maryout"
+  - option "ElIbrahimeyah"
+  - option "Alex Cairo Desert Road"
+  - option "Gharb El Noubareya"
+  - option "ElMaadi"
+  - option "ElKhalifa"
+  - option "ElAzbakeya"
+  - option "New Cairo"
+  - option "ElNozha"
+  - option "ElTibbin"
+  - option "Tura"
+  - option "Masr ElQadimah"
+  - option "ElSayeda Zainab"
+  - option "ElMokattam"
+  - option "Abdeen"
+  - option "Qasr ElNile"
+  - option "Bab ElSharia"
+  - option "Daher"
+  - option "ElSharabiya"
+  - option "Rod ElFarag"
+  - option "Elsahel"
+  - option "ElWaili"
+  - option "Hadaiq ElQobbah"
+  - option "ElZeytoun"
+  - option "ElMatareya"
+  - option "Ein Shams"
+  - option "Nasr City"
+  - option "Qesm ElKhalifa"
+  - option "Masaken Sheraton"
+  - option "ElSalam"
+  - option "ElBasatin"
+  - option "ElMarg"
+  - option "ElShorouk"
+  - option "Agouza"
+  - option "Boulak Abu ElEila"
+  - option "ElDarb ElAhmar"
+  - option "ElGamaliya"
+  - option "ElZamalek"
+  - option "Minshat Nasir"
+  - option "ElTahrir"
+  - option "Azhar"
+  - option "New Capital"
+  - option "ElZawya ElHamra"
+  - option "15 May"
+  - option "Masr ElGedida"
+  - option "Shobra Masr"
+  - option "Gesr ElSuez"
+  - option "Ismailia Desert Road"
+  - option "Ismailia desert road after Karta, Cairo"
+  - option "AlAtaba - El Mosky"
+  - option "Rod El Farag"
+  - option "ElHaram"
+  - option "6 October"
+  - option "Cairo Alex Desert Road"
+  - option "ElWahat ElBaharia"
+  - option "ElSheikh Zayed"
+  - option "Imbaba"
+  - option "Dokki"
+  - option "ElMunib"
+  - option "Bolak ElDakrour"
+  - option "ElHawamdeyah"
+  - option "ElBadrashein"
+  - option "ElSaf"
+  - option "ElAyat"
+  - option "Atfih"
+  - option "Awsim"
+  - option "ElWarraq"
+  - option "ElOmraniya"
+  - option "ElBahr ElAazam"
+  - option "Saqiyet Mekki"
+  - option "Abu ElNumros"
+  - option "ElManawat"
+  - option "Tamwah"
+  - option "Manyal Shihah"
+  - option "Mit Shammas"
+  - option "Mit Qadous"
+  - option "Nazlet ElAshtar"
+  - option "Saft ElLaban"
+  - option "Gezirat ElDahab"
+  - option "Hadabet ElAhram"
+  - option "Scouts Club Egypt"
+  - option "Cairo University - Gamaet AlKahira"
+  - option "Giza Square - Midan ElGiza"

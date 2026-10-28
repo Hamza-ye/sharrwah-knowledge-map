@@ -1,0 +1,18 @@
+<!DOCTYPE html><html lang="en"><head>
+    <title>noon payments - cvv</title>
+    <link rel="stylesheet" href="/sdk/styles/styles.910cc857.css">
+</head>
+
+<body>
+    <input type="password" id="cvvInput" class="full-input input-reset" style="direction:ltr" autocomplete="off" placeholder="123">
+
+    <script src="/sdk/scripts/iframe-based-component.4bb98c98.js"></script>
+
+    <script src="/sdk/scripts/textMask.1a6200b3.js"></script>
+    <script src="/sdk/scripts/masking-wrapper.d7b6a941.js"></script>
+
+    <script type="text/javascript">var cardBrand,defaultCvvLength=3,maskingService=new maskingWrapper,locale=null,customPlaceholder=null,isInputDirty=!1;function publishFocusEvent(settings,isFocused){var eventData={componentIdentifier:noonPayments.componentIdentifiers.cvv,isFocused:isFocused};settings.publishEvent(noonPayments.events.inputFocusChanged,eventData)}function validateCvv(cvv){var maxLength=noonPayments.utilities.isNil(cardBrand)?defaultCvvLength:cardBrand.cvvLength,rules={isNillOrEmpty:{error:noonPayments.reasonCodes.cvv.missingCVV},length:{min:maxLength,max:maxLength,error:noonPayments.reasonCodes.cvv.invalidCVV},dataType:{type:"NUMBER",error:noonPayments.reasonCodes.cvv.invalidCVV}};return noonPayments.smartCardValidation(rules).validate(cvv)}function getCvvMask(cvvLength){for(var mask=[],i=0;i<cvvLength;i++)mask.push(/\d/);return mask}function getPlaceHolder(){return noonPayments.utilities.isNil(customPlaceholder)?"123":customPlaceholder}document.addEventListener("DOMContentLoaded",function(){new noonPayments.newIframeBasedComponent(function(settings,resolve,reject){try{locale=settings.componentData.locale,customPlaceholder=settings.componentData.placeholder,noonPayments.domService.adjustDirection(locale);var cvvInput=document.getElementById("cvvInput");cvvInput.placeholder=getPlaceHolder();var mask=getCvvMask(defaultCvvLength);maskingService.mask(cvvInput,mask),cvvInput.addEventListener("focus",function(){publishFocusEvent(settings,!0)}),cvvInput.addEventListener("blur",function(event){if(event.target.value||isInputDirty){isInputDirty=!0;var reasonCode=validateCvv(event.target.value);if(noonPayments.utilities.isNil(reasonCode)){eventData={componentIdentifier:noonPayments.componentIdentifiers.cvv,isValid:!0};settings.publishEvent(noonPayments.events.inputValidationChanged,eventData)}else{var eventData={componentIdentifier:noonPayments.componentIdentifiers.cvv,isValid:!1,reasonCode:reasonCode};settings.publishEvent(noonPayments.events.inputValidationChanged,eventData)}}publishFocusEvent(settings,!1)}),noonPayments.domService.applyInputStyle(cvvInput,settings.componentData.inputStyle),resolve()}catch(error){reject(error)}},function(){try{var cvv=document.getElementById("cvvInput").value,reasonCode=validateCvv(cvv);return noonPayments.utilities.isNil(reasonCode)?{isValid:!0,value:cvv}:{isValid:!1,reasonCode:reasonCode}}catch(error){return{isValid:!1,reasonCode:noonPayments.reasonCodes.cvv.unknown,value:null}}},function(eventName,data){if(eventName===noonPayments.events.cardBrandChanged){cardBrand=data;var cvvInput=document.getElementById("cvvInput"),mask=getCvvMask(noonPayments.utilities.isNil(cardBrand)?defaultCvvLength:cardBrand.cvvLength);maskingService.mask(cvvInput,mask)}},noonPayments.componentIdentifiers.cvv).build()});</script>
+
+
+
+</body></html>

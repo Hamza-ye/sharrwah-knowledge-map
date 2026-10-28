@@ -1,0 +1,99 @@
+- banner:
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/3277610
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "QAR 0"
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/3277610
+  - link "Orders":
+    - /url: /en-sa/stores/3277610/orders
+  - link "Products":
+    - /url: /en-sa/stores/3277610/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/3277610/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/3277610/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/3277610/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/3277610/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/3277610/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/3277610/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/3277610/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/3277610/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/3277610/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/3277610/channels
+    - text: Channels
+    - button
+- list
+- main:
+  - button
+  - heading "Checkout" [level=5]
+  - heading "Payment" [level=6]
+  - paragraph: Auto-renews every month on November 28th
+  - heading "Credit card" [level=3]:
+    - button "Credit card" [expanded]:
+      - radio [checked]
+      - paragraph: Credit card
+      - img
+      - img
+      - img
+  - region:
+    - text: Card number
+    - iframe
+    - text: Expiry date
+    - iframe
+    - text: CVV
+    - iframe
+  - button "Complete purchase" [disabled]
+  - paragraph:
+    - text: By completing the payment, you agree to the
+    - link "Terms and conditions":
+      - /url: https://zid.sa/en/legal/terms-conditions
+  - separator
+  - heading "Order summary" [level=6]
+  - text: Gift card or coupon code
+  - textbox "Gift card or coupon code"
+  - button "Apply" [disabled]
+  - paragraph: Rise - Monthly
+  - paragraph: QAR 95
+  - separator
+  - paragraph: Sub total before VAT
+  - paragraph: QAR 95
+  - paragraph: Discount
+  - paragraph: QAR 86
+  - paragraph: VAT subjected amount
+  - paragraph: QAR 9
+  - paragraph: VAT
+  - paragraph: QAR 0
+  - paragraph: Total
+  - paragraph: QAR 9
+  - paragraph: Amount due
+  - paragraph: QAR 9
+  - separator
+  - heading "Total" [level=6]
+  - heading "QAR 9" [level=6]
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

@@ -1,0 +1,1425 @@
+{
+  "allPayouts": "All Payouts",
+  "appActivation": {
+    "title": "App activation"
+  },
+  "bankAccounts": {
+    "deleteBankAccountConfirmation": "Are you sure you want to delete this bank account?",
+    "emptyState": {
+      "addNewBankAccountButton": "Add new bank account",
+      "description": "Add one or more bank accounts as a payment method for your customers",
+      "title": "You haven't added any bank accounts"
+    },
+    "errors": {
+      "ibanIncorrect": "The iban is incorrect"
+    },
+    "title": "Bank accounts"
+  },
+  "bnpl": {
+    "activated": "Activated",
+    "activationTitle": "Activation",
+    "autoOnboarding": {
+      "labels": {
+        "ao": "Submit a business account opening request",
+        "freelancingKey": "Freelancer Key",
+        "unn": "Unified National Number (700)"
+      },
+      "tabby": {
+        "alerts": {
+          "approved": {
+            "description": "Your account is now approved. Please log in to the Tabby dashboard to retrieve your integration keys and complete activation.",
+            "title": "Your request has been approved by Tabby."
+          },
+          "info": {
+            "description": "Once approved by Tabby, you’ll be able to activate the payment service.",
+            "title": "We’ll automatically request the account for you"
+          },
+          "pending": {
+            "description": "The Tabby team will contact you via email once your application is reviewed and approved.",
+            "title": "Your request has been submitted successfully and will be reviewed."
+          },
+          "rejected": {
+            "description": "Tabby could not approve your request based on their eligibility criteria.",
+            "title": "Your request was not approved."
+          }
+        },
+        "details": "Tabby details",
+        "haveAccountLabel": "I have a Tabby business account already",
+        "subTitle": "Select how to activate with Tabby"
+      },
+      "tamara": {
+        "alerts": {
+          "approved": {
+            "description": "All linking information has been sent to your email to activate the payment service.",
+            "title": "Your request has been approved by Tamara."
+          },
+          "canTransact": {
+            "description": "You can start accepting payments through Tamara immediately.",
+            "title": "Your account is now live with Tamara."
+          },
+          "disqualified": {
+            "description": "Tamara could not approve your request at this time based on their eligibility criteria.",
+            "title": "Your request was not approved."
+          },
+          "existedAccount": {
+            "description": "Please go to the partners’ portal here to complete linking your account with your store.",
+            "title": "You already have an account registered"
+          },
+          "info": {
+            "description": "Once approved by Tamara, you’ll be able to activate the payment service.",
+            "title": "We’ll automatically request the account for you"
+          },
+          "pending": {
+            "description": "The Tamara team will contact you via email with your account details. Please log in to the Tamara Partner Portal to follow up on your application and complete the process.",
+            "title": "Your request has been submitted successfully and will be reviewed"
+          },
+          "resubmitRequired": {
+            "description": "Tamara requires additional information to complete your activation. Please continue the process directly on Tamara’s portal.",
+            "title": "Additional information is required."
+          }
+        },
+        "details": "Tamara details",
+        "haveAccountLabel": "I have a Tamara business account already",
+        "subTitle": "Select how to activate with Tamara"
+      }
+    },
+    "bnplContactTab": {
+      "emkan": {
+        "contacts": {
+          "0": {
+            "href": "https://merchants.emkanfinance.com.sa",
+            "label": "merchants.emkanfinance.com.sa"
+          }
+        }
+      },
+      "madfu": {
+        "contacts": {
+          "0": {
+            "href": "https://madfu.com.sa/ar/home",
+            "label": "contact@madfu.com.sa"
+          },
+          "1": {
+            "href": "tel:8001111316",
+            "label": "8001111316"
+          }
+        }
+      },
+      "mispay": {
+        "contacts": {
+          "0": {
+            "href": "https://mispay.co",
+            "label": "mispay.co"
+          },
+          "1": {
+            "href": "mailto:mispaysales@mispay.co",
+            "label": "mispaysales@mispay.co"
+          },
+          "2": {
+            "href": "tel:8001240192",
+            "label": "8001240192"
+          }
+        }
+      },
+      "noContacts": "No contacts",
+      "tabby": {
+        "contacts": {
+          "0": {
+            "href": "https://tabby.ai",
+            "label": "tabby.ai"
+          },
+          "1": {
+            "href": "mailto:partner@tabby.ai",
+            "label": "partner@tabby.ai"
+          },
+          "2": {
+            "href": "mailto:help@tabby.ai",
+            "label": "help@tabby.ai"
+          },
+          "3": {
+            "href": "tel:+9668001110999",
+            "label": "+966 800 111 0999"
+          }
+        }
+      },
+      "tamara": {
+        "contacts": {
+          "0": {
+            "href": "https://support.tamara.co",
+            "label": "support.tamara.co"
+          }
+        }
+      }
+    },
+    "bnplFAQTab": {
+      "emkan": {
+        "questions": {
+          "0": {
+            "answer": "Yes, your store must be located in Saudi Arabia to activate Emkan.",
+            "question": "Does my store need to be based in Saudi Arabia to use the service?"
+          },
+          "1": {
+            "answer": "<p>You can track your orders through the Partner Portal: <a href='https://merchants.emkanfinance.com.sa/login' target='_blank'>here</a></p>",
+            "question": "How can I track my orders?"
+          },
+          "2": {
+            "answer": "<p>All sectors except gold and silver.</p>",
+            "question": "Which business sectors are eligible for the service?"
+          },
+          "3": {
+            "answer": "<ol><li>Apply via the Emkan website <a href='https://merchants.emkanfinance.com.sa/register?utm_source=QadrhZ&utm_medium=Website&utm_campaign=Partnership_QadrhZ' target='_blank'>here</a></li><li>Upload the registration requirements</li><li>Get approval from Emkan (within a maximum of 24 hours).</li><li>Copy the activation code and integrate it into your store—the service will be activated automatically.</li></ol>",
+            "question": "What are the requirements for activating the \"Pay Later\" service from Emkan?"
+          },
+          "4": {
+            "answer": "<p>Emkan automatically processes payments and transfers them to merchants periodically.</p>",
+            "question": "How do I receive my payments?"
+          }
+        }
+      },
+      "madfu": {
+        "questions": {
+          "0": {
+            "answer": "<p>Madfu provides a flexible, secure payment solution that allows your customers to buy now and pay later — boosting your conversion rate and average order value.</p>",
+            "question": "How does Madfu increase my store sales?"
+          },
+          "1": {
+            "answer": "<p>Activation usually takes between 2 to 7 days after completing the registration steps.</p>",
+            "question": "How long does it take to activate Madfu in my store?"
+          },
+          "2": {
+            "answer": "<p> Ensure their card details are correct, valid, and has sufficient balance. If the issue persists, ask the customer to contact their bank.</p>",
+            "question": "What should I do if a customer faces a payment issue?"
+          },
+          "3": {
+            "answer": "<p>Yes! We have special promotional offers for partners — please check with your account manager for details.</p>",
+            "question": "Does Madfu offer any special promotions or discounts for partners?"
+          },
+          "4": {
+            "answer": "<p>Yes, your store can be listed after completing registration and activation.</p>",
+            "question": "Can my store appear in Madfu’s approved merchant directory?"
+          },
+          "5": {
+            "answer": "<p>You can reach us via live chat, email at contact@madfu.com.sa, or by calling 8001111316 or simply reach out to your Madfu account manager.</p>",
+            "question": "How can I get technical support if I face an issue?"
+          },
+          "6": {
+            "answer": "<p>Settlements are made weekly — that’s four times a month.</p>",
+            "question": "When are due amounts deposited into my store account?"
+          },
+          "7": {
+            "answer": "<p>Customers can pay via the app using Mada, Visa, or Apple Pay.</p>",
+            "question": "What payment options are available to Madfu customers?"
+          },
+          "8": {
+            "answer": "<p>They can buy what they need and split the total into 6 interest-free, fee-free installments.</p>",
+            "question": "What benefits do customers get when using Madfu?"
+          }
+        }
+      },
+      "mispay": {
+        "questions": {
+          "0": {
+            "answer": "<ul><li><p>Be a resident of the KSA with a national ID.</p></li><li><p>Be at least 18.</p></li><li><p>Have a positive SIMAH score.</p></li><li><p>Be able to receive verification codes via text.</p></li><li><p>Have a valid bank card/bank account.</p></li></ul>",
+            "question": "Who can use MIS Pay?"
+          },
+          "1": {
+            "answer": "<p>To purchase with MIS Pay:</p><ul><li><p>Select MIS Pay as your payment method at checkout of partner stores.</p></li><li><p>Log in using your mobile number/ OTP to verify.</p></li><li><p>Review installment payment in the mobile app.</p></li><li><p>Enter your payment details and complete your first payment through your favorite Payment Gateway.</p></li><li><p>Receive your order and pay later back to MIS Pay.</p></li><li><p>Get repayment notification Via app / SMS / email, 1 week before due date of each payment.</p></li><li><p>Pays back the installment through a Payment Gateway.</p></li></ul>",
+            "question": "How does the installment purchase work?"
+          },
+          "2": {
+            "answer": "<p>You can view what you have bought through MISPay app.</p><p>Just login in your MISPay account.</p>",
+            "question": "How do I see what I have bought?"
+          },
+          "3": {
+            "answer": "<p>You can pay back your installment simply through your own account:</p><ul><li><p>You will get repayment information when pressing the repayment button on the MIS Pay app or via SMS / email, 1 week before due date of each payment.</p></li><li><p>In the notification, you get the purchase details of MIS Pay SMA and a call to confirm any purchasing.</p></li><li><p>Log in one of your own bank accounts based on your preference.</p></li><li><p>Simply use any favorite payment gateways and pay your installment.</p></li></ul>",
+            "question": "How can I pay?"
+          },
+          "4": {
+            "answer": "<p>Yes, MIS Pay is absolutely free!</p><p>No fees and no interest added to your total.</p><p>Just download MIS Pay app and begin a new, stress-free shopping experience today.</p>",
+            "question": "Is MIS Pay for free?"
+          },
+          "5": {
+            "answer": "<p>We would like to protect you from overspending, so there will be purchase limit for every customer.</p><p>The limits depend on two elements:</p><ul><li><p>The store determined limits.</p></li><li><p>Your personal spending limit<ul><li><p>You will get a personal spending limit during your MIS Pay account signup.</p></li><li><p>Further spending limit depends on your shopping history with MIS Pay. The customer's history, determined by factors that include, but are not limited to, how long they have been with MIS PAY and how good they are at paying their bills on time. A good record of accomplishment will allow a customer to make numerous and more substantial purchases.</p></li></ul></p></li></ul><p>Due to these reasons, we can't provide a specific number as the limits are calculated by an intricate system that factors multiple points on an individual basis.</p>",
+            "question": "How much can I shop?"
+          },
+          "6": {
+            "answer": "<p>Yes.</p><p>We use SIMAH for initial credit check.</p><p>We are doing credit score to provide you transparent experience budget to protect you from overspending.</p>",
+            "question": "Is MIS Pay asking for my credit score?"
+          }
+        }
+      },
+      "tabby": {
+        "questions": {
+          "0": {
+            "answer": "<p>Tabby merchants see growth across the board:</p><ul><li><p>+33% increase in average order value</p></li><li><p>+18% increase in conversion rate</p></li><li><p>+40% repeat purchase rate</p></li></ul>",
+            "question": "How can Tabby help me grow?"
+          },
+          "1": {
+            "answer": "Activating Tabby only takes a few days. Tabby integrates very easily with Zid websites.",
+            "question": "How long does it take to activate Tabby?"
+          },
+          "2": {
+            "answer": "There is no risk for you as a merchant. Tabby takes on all the risk. Tabby pays its merchants, regardless of whether or not the shopper makes its payments.",
+            "question": "What happens if my customer fails to pay?"
+          },
+          "3": {
+            "answer": "Once you accept your customer's return, refunds with Tabby are easy with partial or full refunds. You can make a refund through the <a href=\"https://merchant.tabby.ai/\">Tabby dashboard.</a>",
+            "question": "How do refunds work with Tabby?"
+          },
+          "4": {
+            "answer": "Absolutely! Tabby just needs your logo and brand image. After that, Tabby can help you get set up for success.",
+            "question": "Can my store be listed on the Tabby store directory?"
+          },
+          "5": {
+            "answer": "Tabby charges a percentage of successfully completed payments + 1 SAR. The fee depends on your industry and annual sales volume. There are no additional fees for the payment gateway.",
+            "question": "How much does Tabby cost?"
+          },
+          "6": {
+            "answer": "You can choose your payout schedule when signing up with Tabby.",
+            "question": "When will Tabby pay me?"
+          },
+          "7": {
+            "answer": "<p>A customer can pay with Tabby, just like with any other payment:</p><ol><li><p>Choose their items, add to the basket, and go to checkout.</p></li><li><p>Select Tabby at checkout.</p></li><li><p>Pay 25% of the total price, and pay the rest in the following 3 months.</p></li></ol>",
+            "question": "How can a customer pay with Tabby?"
+          },
+          "8": {
+            "answer": "Tabby accepts all debit and credit cards. In the KSA and UAE Tabby also accepts Apple Pay. In the KSA Tabby also accepts MADA.",
+            "question": "Which cards can my shopper use when paying with Tabby?"
+          },
+          "9": {
+            "answer": "<p>Shoppers only have to pay 25% of the total price, and the other 75% spread out over 3 payments in the following 3 months. All without any interest or fees.</p>",
+            "question": "What are the benefits for my shopper?"
+          }
+        }
+      },
+      "tamara": {
+        "questions": {
+          "0": {
+            "answer": "<p>With Tamara, you'll experience the following advantages: </p><ol><li>Supercharge your sales, particularly during the mid-month when customers have lower purchasing power.</li><li>Increase the average order size as customers can choose to split payments into installments.</li><li>Amplify the success of your promotional and marketing campaigns by offering a convenient \"buy now, pay later\" option.</li><li>Enjoy a steady cash flow without the risk of missed payments (we settle your payments weekly, every Tuesday).</li></ol>",
+            "question": "How will my business benefit from using Tamara?"
+          },
+          "1": {
+            "answer": "We strive to activate merchants within 7-14 days, provided all registration steps and requirements are fully completed. If you haven't been activated within that timeframe, please reach out to our support team <a href=\"https://support.tamara.co/hc/en-us\" target=\"_blank\">here</a>",
+            "question": "How long does activation take?"
+          },
+          "2": {
+            "answer": "Customers can easily pay for their orders through Tamara's payment gateway. They simply enter their mobile number and receive a One Time Password (OTP) for verification. Afterward, they can access their account and complete payments using their preferred method: Mada, Credit Card, or Apple Pay.",
+            "question": "How can my customers pay in installments using Tamara?"
+          },
+          "3": {
+            "answer": "No, there are no fees for customers using Tamara. However, if customers fail to make timely payments, they will be charged a fixed SAR 25 fee for the delay, which will be fully donated to charity.",
+            "question": "Are there any fees for customers?"
+          },
+          "4": {
+            "answer": "Tamara is free for customers. We charge fixed commissions to merchants based on their sales and risk, as agreed upon in the registration form.",
+            "question": "If there are no fees for customers, is Tamara free?"
+          },
+          "5": {
+            "answer": "Financial settlements are made every Tuesday for all transactions processed and shipped prior to that day. Rest assured, your funds will be directly wired to you, leaving you free from any concerns about the customer's payment process.",
+            "question": "When will I receive my money as a merchant?"
+          }
+        }
+      }
+    },
+    "bnplOverviewTab": {
+      "emkan": {
+        "details": "<p style=\"margin:20px 0; font-size:inherit\"><strong>Benefits of the \"Pay Later\" Service:</strong></p><ul><li>Split customer bills into 5 equal installments.</li><li>Increase average cart value by up to 25%.</li><li>Improve checkout completion rates with higher approval rates for customers.</li><li>Ensure consistent cash flow with periodic transfers to your store.</li><li>Enhance customers' purchasing power through a flexible and easy payment option.</li><li>Emkan absorbs the risk associated with customer payments.</li><li>Collaborative marketing support through social media and advertising campaigns.</li></ul><p>Activate the \"Pay Later\" service and grow your store today!</p>",
+        "overview": "Emkan, a subsidiary of Al Rajhi Bank, offers the Sharia-compliant \"Pay Later\" service, which provides a higher number of installments, increasing your sales by up to 25% compared to other service providers. This is achieved by allowing your customers to split their purchases into 5 equal installments at cash price, enhancing their purchasing power and increasing their cart value effortlessly!<br /><br /><b>Boost your sales and encourage your customers</b> by allowing them to split their bills into 5 installments with the \"Pay Later\" service from Emkan—a secure payment option for your store.",
+        "steps": {
+          "0": "Apply via the Emkan website <a href=\"https://merchants.emkanfinance.com.sa/register?utm_source=QadrhZ&utm_medium=Website&utm_campaign=Partnership_QadrhZ\" target=\"_blank\">here</a>.",
+          "1": "Upload the registration requirements.",
+          "2": "Copy the activation code and link it to your store in the integration step—activation will be automatic."
+        }
+      },
+      "madfu": {
+        "details": "<p style=\"margin:20px 0;\">App Features:</p><ul><li>Your customers can now shop and split their payments into secure, interest-free installments — while you receive the full payment instantly.</li><li>If you’re looking to grow your business, seize the opportunity with Madfu and get ahead of the curve.</li><li>Need help with integration, development, or anything else? Visit our Business Help Center</li></ul>",
+        "overview": "MADFU helps you boost your store sales by enabling your customers to split their bills into flexible and convenient installments. Join Madfu today and be part of the smart commerce future.",
+        "steps": {
+          "0": "Sign up on Madfu (<a href=\"https://vendor-staging-new.madfu.com.sa/auth/login\" target=\"_blank\">here</a> )",
+          "1": "Once registration is complete, you’ll receive your API keys to integrate Madfu with your Zid store.",
+          "2": "Use marketing tools to let your customers know you offer Madfu."
+        }
+      },
+      "mispay": {
+        "details": "<p style=\"margin:20px 0;\">Payment Options</p><p>MISPay is your growth partner. Always stay on top of your payments by managing customer purchases with MISPay.</p><p style=\"margin:20px 0;\">Why MISPay is the right choice for you?</p><ul><li>Our products have been certified as Shariyah compliant by the Shariyah Review Bureau.</li><li>Give your customers the ultimate flexibility when paying and turn your customers into loyal customers.</li><li>Give your customers the ability to buy what they love today with a seamless and intuitive shopping experience.</li><li>You always get paid within the typical payment settlement, your customers pay at a later date. It doesn’t get simpler.</li><li>We will continually drive new customers to you from our app, website, and other channels.</li><li>We assume credit and fraud risk, so you can focus on running a successful business.</li></ul>",
+        "overview": "MISpay allows merchants to use buy now and pay later service in their stores. By choosing MISpay, customers can easily split payments — just pay one part of the amount immediately and the rest over the next month.<br /><strong>For more information, please visit our <a href=\"https://www.mispay.co/partners\" target=\"_blank\">Business Platform</a></strong>"
+      },
+      "tabby": {
+        "overview": "Let your customers shop now and split their purchases into 4 interest-free payments while you get paid in full, all upfront at no risk. Merchants who offer Tabby to their shoppers see an increase in the average order value, conversion rate, and the repeat purchase rate. <br><strong>Support:</strong> Get hands-on support with development, integration, marketing, and more as you scale your business. Please visit our <a href='https://help.tabby.ai/hc/en-us' target='_blank'>business help center</a>.",
+        "steps": {
+          "0": "Sign up with <a href=\"https://merchant.tabby.ai/registration\" target=\"_blank\">Tabby for Business</a>",
+          "1": "After finishing the sign up process, you will receive the API codes, and then you can connect Tabby to your Zid store.",
+          "2": "Use Tabby marketing toolkit to let your shoppers know that you now offer Tabby.",
+          "3": "Reap the benefits of Tabby network of +10 million shoppers."
+        }
+      },
+      "tamara": {
+        "overview": "Tamara is a leading payment provider dedicated to delivering a seamless payment experience for both merchants and customers. We offer a range of payment solutions designed to enhance convenience, including the ability to split payments or pay in full.",
+        "steps": {
+          "0": "Register on tamara's website <a href=\"https://business.tamara.co/signup?locale=en_US\" target=\"_blank\">here</a>",
+          "1": "Submit the necessary registration documents",
+          "2": "Enter your merchant key during the App Activation process"
+        }
+      }
+    },
+    "by": "By: Zid",
+    "contact": "Contact",
+    "emkanPay": {
+      "description": "Enable emkan - pay later to let your customers shop and split their purchases into 5 installments at the cash price.",
+      "label": "Emkan pay"
+    },
+    "emkan_details": "Emkan details",
+    "faq": "FAQ",
+    "howToTitle": "How to",
+    "madfu": {
+      "description": "MADFU helps you boost your store sales by enabling your customers to split their bills into flexible and convenient installments. Join Madfu today and be part of the smart commerce future.",
+      "label": "Madfu",
+      "overview": "MADFU",
+      "steps": {
+        "0": "Sign up on Madfu (<a href=\"https://vendor-staging-new.madfu.com.sa/auth/login\" target=\"_blank\">here</a> )",
+        "1": "Once registration is complete, you’ll receive your API keys to integrate Madfu with your Zid store.",
+        "2": "Use marketing tools to let your customers know you offer Madfu."
+      }
+    },
+    "mis_pay_details": "MiS Pay details",
+    "mispay": {
+      "description": "By choosing mispay, customers can easily split payments in 3 monthly installments with no fees or interests.",
+      "label": "Mispay"
+    },
+    "overview": "Overview",
+    "show_mispay_in_cart_page": "Show Mispay in cart page",
+    "show_mispay_in_product_page": "Show Mispay in product page",
+    "show_tabby_in_cart_page": "Show Tabby in cart page",
+    "show_tabby_in_product_page": "Show Tabby in product page",
+    "tabby": {
+      "description": "Let your customers shop now and split their purchases into 4 interest-free payments while you get paid in full-upfront.",
+      "label": "Tabby"
+    },
+    "tabby_details": "Tabby details",
+    "tamara": {
+      "description": "Grow your business by enabling your customers to shop and pay easily with a variety of payment solutions.",
+      "label": "Tamara",
+      "overview": "Tamara is a leading payment provider dedicated to delivering a seamless payment experience for both merchants and customers. We offer a range of payment solutions designed to enhance convenience, including the ability to split payments or pay in full.",
+      "steps": {
+        "0": "Register on tamara's website <a href=\"https://business.tamara.co/signup?locale=en_US\" target=\"_blank\">here</a>",
+        "1": "Submit the necessary registration documents",
+        "2": "Enter your merchant key during the App Activation process"
+      }
+    },
+    "tamara_details": "Tamara details",
+    "technicalSupportTitle": "Technical support",
+    "title": "BNPL",
+    "viewDetails": "View details"
+  },
+  "cards": {
+    "aboutZidPayments": "About Zid payments",
+    "acceptPayments": "Accept online payments instantly with our native payments solution.",
+    "activateOnlinePayment": "Activate online payments",
+    "exclusiveMerchants": "Payments are available exclusively for merchants in Saudi Arabia and Kuwait.",
+    "learnMore": "About Zid payments",
+    "noAvailableOptions": "No available options",
+    "seeAllPaymentOptions": "See all payment options",
+    "shortenList": "Shorten list",
+    "supportedPaymentNetworks": "Supported payment networks",
+    "title": "All Networks"
+  },
+  "chargebacks": {
+    "alert": {
+      "description": "You have until <span>{{date}}</span> to respond to the chargeback. If no action is taken, the amount will be deducted automatically. Check <span>{{email}}</span> for full details.",
+      "title": "Pending chargeback response for Transaction #{{transactionNumber}}",
+      "toTransaction-btn": "Open transaction"
+    },
+    "disputeForm": {
+      "additionalDetails": {
+        "charsCounter": "Number of characters: {{charsNumber}} / {{max}}",
+        "placeholder": "Please provide any additional details on the situation here.",
+        "title": "Additional Details"
+      },
+      "additionalEvidence": {
+        "description": " Include any supporting documents or screenshots that help resolve the issue.",
+        "title": "Additional evidence"
+      },
+      "cardDescription": "Provide as much evidence as possible, we’ll create a support ticket you can track on the Merchant Support page.",
+      "chargebackCardTitle": "Chargeback details",
+      "communicationEvidence": {
+        "description": "It should confirm that the customer received the order, with the phone number shown in the message matching the one on the invoice.",
+        "title": "Communication evidence"
+      },
+      "fraudCardTitle": "Fraud details",
+      "orderInvoice": {
+        "title": "Order Invoice"
+      },
+      "shippingAndDelivery": {
+        "description": "It should contain the shipment details, including both sender and recipient information.",
+        "title": "Shipping and delivery waybill"
+      },
+      "transactionScreenshot": {
+        "description": " Screenshot of the transaction from the customer's bank statement or any additional documents",
+        "title": "Screenshot of Transaction"
+      }
+    },
+    "popup": {
+      "dashboard-btn": "Go to the dashboard",
+      "description": "You have until <strong>{{date}}</strong> to respond to the chargeback. If no action is taken, the amount will be deducted automatically. Check <strong>{{email}}</strong> for full details.",
+      "response-btn": "Submit response",
+      "title": "Pending chargeback response for Transaction #{{transactionNumber}}"
+    },
+    "tooltip": "Pending chargeback response for this transaction."
+  },
+  "columns": {
+    "amount": "Amount",
+    "date": "Date",
+    "netAmount": "Net amount",
+    "payoutBank": "Payout bank",
+    "payoutFees": "Payout fees",
+    "payoutNumber": "Payout number",
+    "time": "Time"
+  },
+  "copyPaymentLink": "Copy payment link",
+  "depositDetails": {
+    "operationType": "Operation type"
+  },
+  "exportAllTransactions": "Export all transactions",
+  "fields": {
+    "AppKey": {
+      "label": "App key",
+      "placeholder": "App key"
+    },
+    "apiToken": {
+      "label": "API token",
+      "placeholder": "API token"
+    },
+    "appCode": {
+      "label": "App Code",
+      "placeholder": "App Code"
+    },
+    "appPassword": {
+      "label": "Password",
+      "placeholder": "Password"
+    },
+    "appUsername": {
+      "label": "Username",
+      "placeholder": "Username"
+    },
+    "authorizationToken": {
+      "label": "Authorization token",
+      "placeholder": "Authorization token"
+    },
+    "clientKey": {
+      "label": "Client key",
+      "placeholder": "Client key"
+    },
+    "clientSecret": {
+      "label": "Client secret",
+      "placeholder": "Client secret"
+    },
+    "isCartWidgetEnabled": {
+      "label": "Show Tamara in cart page"
+    },
+    "isEnabled": {
+      "label": "Enabled"
+    },
+    "isProductWidgetEnabled": {
+      "label": "Show Tamara in product page"
+    },
+    "merchantId": {
+      "label": "Merchant ID",
+      "placeholder": "Merchant ID"
+    },
+    "notificationToken": {
+      "label": "Notification token",
+      "placeholder": "Notification token"
+    },
+    "paymentOptions": {
+      "label": "Payment options",
+      "placeholder": "Payment options"
+    },
+    "publicKey": {
+      "label": "Public key",
+      "placeholder": "Public key"
+    },
+    "secretKey": {
+      "label": "Secret key",
+      "placeholder": "Secret key"
+    },
+    "widgetAccessKey": {
+      "label": "Widget access key",
+      "placeholder": "Widget access key"
+    },
+    "xAppId": {
+      "label": "X-app-id",
+      "placeholder": "X-app-id"
+    },
+    "xAppSecret": {
+      "label": "X-app-secret",
+      "placeholder": "X-app-secret"
+    }
+  },
+  "kycAlerts": {
+    "additionalInfo": "Additional Information",
+    "dormant": {
+      "description": "If you would like to reactivate your account, please contact customer service.",
+      "inAvtiveTitle": "We apologize for disabling your account in Zid Payments.",
+      "title": "We regret to inform you that your Zid Payments account has been disabled due to a lack of card payment transactions over the past 6 months."
+    },
+    "networksNewPath": {
+      "description": "You can access all networks by pressing Manage at the top right of the page.",
+      "title": "Payment networks"
+    },
+    "pending": {
+      "description": {
+        "active": "You will be able to receive payments for your orders as soon as your data is verified.",
+        "inActive": "You will be notified as soon as you are ready to receive payments."
+      },
+      "title": "Zid payments account status: Under review."
+    },
+    "rejected": {
+      "hint": "please change the information via ",
+      "request": "activation request",
+      "storeData": "store data",
+      "then": "then repeat ",
+      "title": "Sorry for not completing the activation request because:"
+    },
+    "suspended": {
+      "title": "We apologize for disabling your account in ZidPay."
+    },
+    "verified": {
+      "description": "The funds will be credited to your bank account on the nearest deposit day.",
+      "title": "Your Zid payments account has been successfully verified."
+    }
+  },
+  "manage": "Manage",
+  "networkableBnpls": {
+    "emkan": {
+      "description": "You can add emkanpay to your networks natively in your account by zidPayments.",
+      "subTitle": "Officially! EmkanPay now are available in ZidPayments 🎉",
+      "title": "Emkan Pay Available With ZidPayments"
+    },
+    "madfu": {
+      "description": "You can add Madfu to your networks natively in your account by ZidPayments.",
+      "subTitle": "Officially! Madfu now is available in ZidPayments 🎉",
+      "title": "Madfu Available With ZidPayments"
+    }
+  },
+  "networks": {
+    "americaExpresTitle": "American Express",
+    "americanExpressBasic": "3.4% + 1 SAR",
+    "americanExpressEnterprise": "3.2% + 0.50 SAR",
+    "americanExpressGrowth": "3.3% + 1 SAR",
+    "americanExpressNgo": "3.3% + 0.5 SAR",
+    "americanExpressProfessional": "3.2% + 0.75 SAR",
+    "americanExpressSpecial": "3.2% + 0.25 SAR",
+    "americanExpressStarter": "3.4% + 1 SAR",
+    "applepayBasic": "2.85% (Flat fee for all cards)",
+    "applepayEnterprise": "2.65% (Flat fee for all cards)",
+    "applepayGrowth": "2.75% (Flat fee for all cards)",
+    "applepayMadaTitle": "Apple Pay (Mada)",
+    "applepayProfessional": "2.65% (Flat fee for all cards)",
+    "applepaySpecial": "2.50% (Flat fee for all cards)",
+    "applepayTitle": "Apple Pay",
+    "applepayVisaTitle": "Apple Pay (Visa)",
+    "basicEmkan": "7% + 1 SAR",
+    "basicMadfu": "7% + 1 SAR",
+    "growthEmkan": "6% + 1 SAR",
+    "growthMadfu": "6% + 1 SAR",
+    "knetBasic": "1.40% (Minimum 165 fils)",
+    "knetEnterprise": "1.10% (Minimum 165 fils)",
+    "knetGrowth": "1.30% (Minimum 165 fils)",
+    "knetProfessional": "1.20% (Minimum 165 fils)",
+    "knetStarter": "1.40% + 1 SAR (Minimum 165 fils)",
+    "knetTitle": "KNet",
+    "madaBasic": "1% + 1 SAR",
+    "madaGrowth": "1% + 1 SAR",
+    "madaPayEnterprise": "1% + 0.50 SAR",
+    "madaPayNgo": "1% + 0.5 SAR",
+    "madaProfessional": "1% + 0.75 SAR",
+    "madaSpecial": "1% + 0.25 SAR",
+    "madaStarter": "1% + 1 SAR",
+    "madaTitle": "Mada",
+    "professionalEmkan": "5.5% + 0.75 SAR",
+    "professionalMadfu": "5.5% + 0.75 SAR",
+    "visaBasic": "2.4% + 1 SAR",
+    "visaEnterprise": "2.2% + 0.50 SAR",
+    "visaGrowth": "2.3% + 1 SAR",
+    "visaPayNgo": "2.3% + 0.5 SAR",
+    "visaProfessional": "2.2% + 0.75 SAR",
+    "visaSpecial": "2.2% + 0.25 SAR",
+    "visaStarter": "2.5% + 1 SAR",
+    "visaTitle": "Visa/Mastercard"
+  },
+  "onboarding": {
+    "activate": "Activate",
+    "activityLicense": "Activity license",
+    "articleOfAssociationImage": "Article of association image",
+    "businessActivityCategory": "Business activity category",
+    "businessType": "Business type",
+    "city": "City",
+    "commercialLicenseImage": "Commercial license image",
+    "commercialRegisterNumber": "Commercial register number",
+    "commercialRegistrationImage": "Commercial registration image",
+    "country": "Country",
+    "directorsFormationImgUrl": "Directors formation image",
+    "directorsIdsImgsUrl": "Directors' IDs",
+    "district": "District",
+    "email": "Email",
+    "freelanceCertificate": "Freelance certificate",
+    "idNumber": "Id number",
+    "lastStepToActivateZidPayments": {
+      "image": "Image",
+      "message": "To activate Zid Payments, your store must have at least one published product with an explanation.",
+      "name": "Name",
+      "price": "Price",
+      "title": "The last step to activate Zid payments",
+      "toOrders": "Add product"
+    },
+    "nafath": {
+      "activationCode": "Activation code",
+      "activationCodeValue": "Click on the number shown on the screen above to complete the identity verification and activate Zid Payments.",
+      "nafazApplication": "Nafaz application",
+      "nafazApplicationValue": "Open the Nafaz application and log in to the store owner with the identity shown above.",
+      "remainingTime": "Remaining Time {{time}}",
+      "remainingTrials": "Remaining trials",
+      "requestDescription": "To complete the verification process, please enter the Nafath application and choose the code.",
+      "requestSentSuccessfully": "Zid Payments activation request has been sent.",
+      "resendCode": "Resend code",
+      "serviceProvider": "Service provider",
+      "serviceProviderValue": "A group of numbers from the service provider (my fatoorah) will appear.",
+      "storeOwner": "Store owner",
+      "storeOwnerId": "Store owner ID",
+      "successDescription": "Nafaz has been verified successfully.",
+      "successMessage": "Your Zid Payments activation request has been sent.",
+      "successTitle": "In a few moments, you will be automatically directed to the Zid Payments page.",
+      "verificationSteps": "Nafaz verification steps"
+    },
+    "nationalAddressCertificate": "National address certificate",
+    "nationalIdentity": "National identity",
+    "nationalIdentityBack": "National identity back",
+    "nationalIdentityFront": "National identity front",
+    "next": "Next",
+    "ngoCertificateImgUrl": "NGO certificate image/Commercial registration image",
+    "ownerName": "Owner name",
+    "ownerSignatureImage": "Owner signature image",
+    "phone": "Phone",
+    "previous": "Previous",
+    "registeredTradeName": "Registered trade name",
+    "regulationImgUrl": "Regulation image",
+    "stepOne": {
+      "errorMessage": "Update Store Settings"
+    },
+    "stepOneTitle": "Account information",
+    "stepThree": {
+      "checkbox": "I agree to the terms and conditions.",
+      "fees": "Fees",
+      "info": "You can enable networks and modify options later on the Zid Payments settings page.",
+      "networkName": "Network name",
+      "paymentNetworks": "Payment networks"
+    },
+    "stepThreeTitle": "Activate network",
+    "stepTwo": {
+      "IbanCertificate": "IBAN certificate",
+      "averageTransactions": {
+        "label": "The average number of payment transactions per month",
+        "placeholder": "Enter the payment transactions average"
+      },
+      "bankAccount": {
+        "label": "Select the bank account you want your payouts sent to.",
+        "placeholder": "Select bank account."
+      },
+      "bankAccountInformation": "Bank Information",
+      "bankAccountNumber": "Bank account number",
+      "bankIban": "IBAN",
+      "bankName": "Bank name",
+      "bankOwnerName": "Bank owner name",
+      "beneficiaryHelperText": "The beneficiary name in the bank account must be in English and match the trade name in the commercial registration or association registration certificate.",
+      "beneficiaryName": "Beneficiary Name",
+      "beneficiaryPlaceholder": "The beneficiary name in the bank account",
+      "currentStorePackage": "The current store package",
+      "ibanHelperText": "The IBAN number must consist of 22 digits",
+      "infoCharity": "For Zid Payments to be enabled, the beneficiary name in the bank account must be in english and match the name of the business in the commercial register or the association certificate.",
+      "infoCorporate": "For Zid Payments to be enabled, the beneficiary name in the bank account must be in english and match the name of the business in the commercial register.",
+      "infoIndividuals": "For Zid Payments to be enabled, the beneficiary name in the bank account must match the name of the business in the self-employed certificate, and verify the attachment of a commercial bank certificate containing the beneficiary name and the name of the activity",
+      "newBankAccount": "Add New account",
+      "noRegisteredBankAccount": "No registered or added bank account,you can add through",
+      "paymentOptions": "Payment options",
+      "salesVolume": {
+        "label": "Expected sales volume for payments in a month",
+        "placeholder": "Enter expected sales volume"
+      },
+      "spareVerficationAlerts": {
+        "internalError": "Verification Failed",
+        "notMatchedError": "IBAN Mismatch",
+        "success": "IBAN Verified",
+        "successMsg": "Your IBAN was verified successfully."
+      },
+      "storePackage": "The current store package",
+      "title": "Operations and bank account"
+    },
+    "stepTwoTitle": "Operations and bank account",
+    "storeName": "Store name",
+    "street": "Street",
+    "taxNumber": "Tax number",
+    "title": "Activate Payments",
+    "vatCertificate": "VAT certificate"
+  },
+  "otherPaymentProviders": {
+    "afterIntegrationItIsPreferableToMakeATrialOrderToEnsureTheValidityOfTheProcess": "After integration, we recommend placing a trial order to confirm the process is working correctly. For further assistance, please contact your payment gateway's account manager.",
+    "description": "Discover alternative payment providers offering secure and flexible transaction solutions.",
+    "followTheStepsToIntegrateThePaymentGateway": "Follow the steps to integrate the payment gateway. for more info, visit our",
+    "helpCenter": "Help center",
+    "supportedNetworks": "Supported networks",
+    "title": "Other payment Providers"
+  },
+  "packages": {
+    "applepay": "According to the card used at checkout",
+    "applepayBasicKw": "2.85% *flat fee for all cards",
+    "applepayEnterpriseKw": "2.65% *flat fee for all cards",
+    "applepayGrowthKw": "2.75% *flat fee for all cards",
+    "applepayProfessionalKw": "2.65% *flat fee for all cards",
+    "applepaySpecialKw": "2.50% *flat fee for all cards",
+    "applepaySubtextKw": "Available for corporates and companies only",
+    "basicAmericanExpress": "3.4% + 1 SAR",
+    "basicEmkan": "7% + 1 SAR",
+    "basicKnet": "1.40% (165 fils as a minimum)",
+    "basicMada": "1% + 1 SAR",
+    "basicMadfu": "7% + 1 SAR",
+    "basicVisa": "2.4% + 1 SAR",
+    "enterpriseAmericanExpress": "3.2% + 0.50 SAR",
+    "enterpriseKnet": "1.10% (165 fils as a minimum)",
+    "enterpriseMada": "1% + 0.50 SAR",
+    "enterpriseVisa": "2.2% + 0.50 SAR",
+    "growthAmericanExpress": "3.3% + 1 SAR",
+    "growthEmkan": "6% + 1 SAR",
+    "growthKnet": "1.30% (165 fils as a minimum)",
+    "growthMada": "1% + 1 SAR",
+    "growthMadfu": "6% + 1 SAR",
+    "growthVisa": "2.3% + 1 SAR",
+    "ngoAmericanExpress": "3.3% + 0.5 SAR",
+    "ngoMada": "1% + 0.5 SAR",
+    "ngoVisa": "2.3% + 0.5 SAR",
+    "paymobRedirectionTitle": "Paymob",
+    "professionalAmericanExpress": "3.2% + 0.75 SAR",
+    "professionalEmkan": "5.5% + 0.75 SAR",
+    "professionalKnet": "1.20% (165 fils as a minimum)",
+    "professionalMada": "1% + 0.75 SAR",
+    "professionalMadfu": "5.5% + 0.75 SAR",
+    "professionalVisa": "2.2% + 0.75 SAR",
+    "samsungpay": "According to the card used at checkout",
+    "samsungpayBasic": "2.85% *flat fee for all cards",
+    "samsungpayEnterprise": "2.65% *flat fee for all cards",
+    "samsungpayGrowth": "2.75% *flat fee for all cards",
+    "samsungpayGrowthKw": "",
+    "samsungpayProfessional": "2.65% *flat fee for all cards",
+    "samsungpaySpecial": "2.50% *flat fee for all cards",
+    "specialAmericanExpress": "3.2% + 0.25 SAR",
+    "specialMada": "1% + 0.25 SAR",
+    "specialVisa": "2.2% + 0.25 SAR",
+    "starterAmericanExpress": "3.4% + 1 SAR",
+    "starterKnet": "1.40% + 1 SAR (165 fils as a minimum)",
+    "starterMada": "1% + 1 SAR",
+    "starterVisa": "2.5% + 1 SAR",
+    "titleAmericaExpress": "American Express",
+    "titleApplepay": "Apple Pay",
+    "titleApplepayMada": "Apple Pay Mada",
+    "titleApplepayVisa": "Apple Pay Mada (Visa)",
+    "titleEmkan": "Emkan Pay",
+    "titleKnet": "Knet",
+    "titleMada": "Mada",
+    "titleMadfu": "Madfu — مدفوع",
+    "titleSamsungpay": "Samsung Pay",
+    "titleSamsungpayMada": "Samsung Pay Mada",
+    "titleSamsungpayVisa": "Samsung Pay Visa",
+    "titleVisa": "Visa/Mastercard"
+  },
+  "paymentLinks": {
+    "LinkDeactivated": "Link deactivated successfully",
+    "cancellationTitle": "Cancel payment link",
+    "cancellationWarnMsg": "Are you sure to cancel the payment link no# {{id}}",
+    "columns": {
+      "createdDate": "Created date",
+      "customerName": "Customer",
+      "expiryDate": "Expiry date",
+      "linkStatus": "Link status",
+      "orderNumber": "Order id",
+      "paymentLinkId": "Id",
+      "paymentStatus": "Payment status",
+      "price": "Price",
+      "remainingDays": "Remaining {{remainingdays}}"
+    },
+    "copyLink": "Copy link",
+    "description": "Manage all payment links for your store",
+    "details": {
+      "abandonedCartDetails": "Abandoned cart details",
+      "amount": "Amount",
+      "bankName": "Bank name",
+      "cartId": "Abandoned cart number",
+      "customerCity": "City",
+      "customerDetails": "Customer details",
+      "dateAndTime": "Date and time",
+      "errorMessage": "Reason for the failure",
+      "failureReason": "Failure reason",
+      "feeRate": "Fee rate",
+      "financeAmount": "Finance amount",
+      "financePercentage": "Finance percentage",
+      "fixedFees": "Fixed fees",
+      "linkOpeningCount": "Link opening count",
+      "linkSendingMethod": "Link sending method",
+      "netAmount": "Net amount",
+      "network": "Network",
+      "no": "No",
+      "operationDetails": "Operation details",
+      "operationStatus": "Operation status",
+      "orderNotCreated": "The order hasn't been created",
+      "package": "Package",
+      "paymentHistory": "Payment history",
+      "paymentLinkInfo": "Payment link info",
+      "paymentLinkNumber": "Payment link number",
+      "paymentMethod": "payment method",
+      "paymentNetwork": "Payment network",
+      "paymentNumber": "Payment number",
+      "paymentProvider": "Payment provider",
+      "price": "Price",
+      "processFee": "Process fee",
+      "recurringPaymentFees": "Eshtarek App fee value",
+      "recurringPaymentFeesPct": "Eshtarek App fee",
+      "referenceId": "Reference id",
+      "refundedOperations": "Refunded operations",
+      "splittingPercentage": "Splitting percentage",
+      "splittingValue": "Splitting value",
+      "totalTransactionFees": "Total transaction fees",
+      "transactions": "Transactions",
+      "valueAddedTax": "Value added tax",
+      "vatExclusive": "Vat exclusive"
+    },
+    "emptyState": {
+      "button": "Create order",
+      "description": "Speed up their purchase decision with payment links",
+      "title": "Make payment easier for your customers"
+    },
+    "filters": {
+      "amount": {
+        "from": "From amount",
+        "placeholder": "Enter amount",
+        "to": "To amount"
+      },
+      "paymentLinkStatus": {
+        "canceled": "Canceled",
+        "created": "Created",
+        "expired": "Expired",
+        "label": "Payment link status",
+        "sent": "Sent",
+        "viewed": "Viewed"
+      }
+    },
+    "reactivateLink": "Reactivate link",
+    "reactivateLinkDialogHint": "Please change the expiry date to reactivate the paymentlink",
+    "reactivateLinkTitle": "Reactivate the payment link",
+    "reactivationSuccessMsg": "The expiry date has been updated and the link has been successfully reactivated.",
+    "title": "Payment links",
+    "whatsAppShareLink": "Share via WhatsApp"
+  },
+  "paymentProviders": {
+    "activationSuccessMsg": "The payment provider has been activated successfully.",
+    "completeActivation": "Complete activation",
+    "title": "Payment Providers"
+  },
+  "payouts": {
+    "amountsBeingProcessedToolTip": "Withdrawn amounts are being reviewed and will be deposited into your bank account on the designated settlement days.",
+    "chooseTimePeriodYouWantDownloadAllPayouts": "Dear merchant, please choose the time period you want to download all payouts for.",
+    "chooseTimePeriodYouWantDownloadTaxInvoices": "Dear merchant, please choose the time period you want to download tax invoices for.",
+    "currentBalance": "Current balance",
+    "currentBalanceTooltip": "Collected amounts from your customers are pending transfer to your bank account",
+    "downloadAllPayouts": "Download all payouts",
+    "downloadExcel": "Download excel",
+    "downloadExtension": "Download extension",
+    "downloadPDF": "Download PDF",
+    "downloadTaxInvoices": "Download tax invoices",
+    "downloadVatInvoices": "Download VAT invoices",
+    "emptyState": {
+      "title": "No payouts at the moment"
+    },
+    "latestDepositTooltip": "The last transaction in which an amount was deposited into your bank account",
+    "mostRecentPayout": "Most recent payout",
+    "mostRecentPayoutTooltips": {
+      "decreased": "Decrease since last payout",
+      "increased": " Increase since last payout",
+      "noChange": "No change since last payout"
+    },
+    "payoutsBeingProcessed": "Payouts being processed",
+    "payoutsSummary": "Payouts Summary",
+    "summaryOfYourOperations": "Summary of your operations",
+    "twoPayoutsLabel": "Two payouts"
+  },
+  "profile": {
+    "BankProfile": "Bank profile",
+    "HeadQuartersInformation": "Headquarters information",
+    "accountNumber": "Account number :",
+    "accountOnlinePaymentTransactions": "Online payment transactions",
+    "bankCertificate": "Bank certificate",
+    "bankName": "Bank name :",
+    "buisnessInfo": {
+      "RegisteredTradeName": "Registered trade name :",
+      "businessActivityCategory": "Business activity category :",
+      "businessEntity": "Business entity :",
+      "commercialRegisterNumber": "Commercial registration number:",
+      "storeName": "Store name :",
+      "taxNumber": "Tax number :",
+      "title": "Business information"
+    },
+    "canNotFindImage": "Can not find image !!",
+    "expectedTransactionsPerMonth": "The average number of payment transactions per month :",
+    "expectedTransactionsVolumePerMonth": "Expected sales volume for  payments in a month :",
+    "files": "Files",
+    "iban": "IBAN:",
+    "personalInfo": {
+      "idNumber": "Id number :",
+      "nationalIdentity": "National identity",
+      "ownerEmail": "Owner email :",
+      "ownerName": "Owner name :",
+      "ownerPhoneNumber": "Owner phone number :",
+      "title": "Personal information"
+    },
+    "personalProfile": "Personal profile"
+  },
+  "refund": {
+    "customer": {
+      "name": "Name"
+    }
+  },
+  "settings": {
+    "acceptedCardDescription": "To activate cards for other countries, you can contact customer service",
+    "acceptedCardTitle": "Purchases / payments for local and gulf cards are accepted",
+    "accountBusinessInfo": "Business information",
+    "accountHeadquartersInfo": "Headquarters information",
+    "accountNumber": "Account number",
+    "accountOnlinePaymentTransactions": "Online payment transactions",
+    "accountPersonalInfo": "Personal information",
+    "activityLicense": "Activity license",
+    "alertDisableSuspended": "We apologize for disabling your account in Zid Payments.",
+    "alertDormantDescription": "If you would like to reactivate your account, please contact customer service.",
+    "alertDormantTitle": "We apologize to inform you that your Zid Payments account has been disabled due to the lack of cardboard payment transactions during the past 6 months.",
+    "alertPending": "You can now receive your requests to be deposited as soon as your data is verified.",
+    "alertRejection": "Sorry for not completing the activation request because:",
+    "alertRejectionActivationRequest": "activation request",
+    "alertRejectionAdditional": "Additional information:",
+    "alertRejectionInfo": "Please change the information via",
+    "alertRejectionRepeat": "Then re-submit",
+    "alertRejectionStoreData": "Store settings",
+    "alertVerified": "Your Zid Payments account has been successfully verified.",
+    "alertVerifiedDescription": "The funds will be credited to your bank account on the nearest deposit day.",
+    "articleOfAssociation": "Articles of incorporation",
+    "bankCertificate": "Bank certificate",
+    "bankInfoTitle": "Bank account information",
+    "bankName": "Bank name",
+    "bardOfDirectorsAgreement": "The board of directors' agreement",
+    "boardMembersIDs": "Board members' IDs",
+    "businessEntity": "Business entity",
+    "commercialCharityName": "Registered charity trade name",
+    "commercialLicense": "Commercial license",
+    "commercialName": "Registered trade name",
+    "commercialRegisterClassification": "Business activity category",
+    "commercialRegisterClassificationCharity": "Business activity",
+    "commercialRegisterImg": "Commercial registration",
+    "commercialRegisterImgOrCharityCertificate": "Commercial registration or charity certificate",
+    "commercialRegisterNumber": "Commercial registration number",
+    "commercialRegisterNumberOrLicenseNumber": "Commercial license or license number",
+    "currentBalance": "Current balance ({{count}} messages)",
+    "currentBalanceCustomers": "With your current balance, you can send to {{count}} customers",
+    "currentBalanceCustomers_few": "With your current balance, you can send messages to {{count}} customers.",
+    "currentBalanceCustomers_many": "With your current balance, you can send messages to {{count}} customers.",
+    "currentBalanceCustomers_one": "With your current balance, you can send to {{count}} customer",
+    "currentBalanceCustomers_other": "With your current balance, you can send messages to {{count}} customers.",
+    "currentBalanceCustomers_two": "With your current balance, you can send to two customers",
+    "currentBalanceCustomers_zero": "With your current balance, you can send messages to {{count}} customers.",
+    "currentBalance_few": "Current balance ({{count}} messages)",
+    "currentBalance_many": "Current balance ({{count}} messages)",
+    "currentBalance_one": "Current balance ({{count}} message)",
+    "currentBalance_other": "Current balance ({{count}} messages)",
+    "currentBalance_two": "Current balance (two messages)",
+    "currentBalance_zero": "Current balance ({{count}} messages)",
+    "disablePaymentOptionSuccessfully": "Payment option is disabled successfully",
+    "editBankingInfoDialog": {
+      "noticeMessage": "If you want to update your IBAN due to store ownership transfer, please submit a support ticket for ownership transfer.",
+      "title": "Bank Information"
+    },
+    "enableOption": "Enable option",
+    "enablePaymentOptionSuccessfully": "Payment option is enabled successfully",
+    "expectedTransactionsPerMonth": "The average number of payment transactions per month",
+    "expectedTransactionsVolumePerMonth": "Expected sales volume for payments in a month",
+    "fees": "Fees",
+    "freelanceCertificate": "Freelance certificate",
+    "iban": "Iban",
+    "ibanCertificate": "IBAN certificate",
+    "idBackImg": "Back national identity",
+    "idFrontImg": "Front national identity",
+    "idNumber": "Id number",
+    "idNumberBoardOfDirectors": "Board chairman, vice of the chair, and authorized person IDs",
+    "inStorePaymentOption": "Availability of Zid Payments as an in-store payment option",
+    "increaseTheBalance": "Increase the balance",
+    "methodsSendingPaymentLinks": "Manage payment links & reminders",
+    "nameValidation": "The name must be in English",
+    "nationalAddressCertificate": "National adress certificate",
+    "nationalIdentity": "National identity",
+    "networkName": "Network name",
+    "organizationName": "Store name",
+    "ownerEmail": "Owner email",
+    "ownerName": "Owner name",
+    "ownerPhoneNumber": "Owner phone number",
+    "paymentLinksBlocked": "The feature is not supported for your store package",
+    "paymentLinksReminder": "Payment reminder",
+    "paymentLinksReminderDescription": "You can schedule a payment reminder to be sent to your customers after a specified period of time after sending the invoice",
+    "paymentLinksReminderPeriod": "How many days after the customer receives the invoice should a reminder be sent?",
+    "paymentLinksSms": "SMS",
+    "paymentLinksSmsDescription": "SMS costs will be deducted from your order notification balance",
+    "paymentLinksSmsHelper": "Payment links will be sent to your customers via SMS",
+    "paymentLinksSmsLink": "Order notification",
+    "paymentLinksTitle": "Payment links settings",
+    "paymentLinksUpdatedSuccessfully": "Payment links settings updated successfully",
+    "paymentNetworksTitle": "Enable payment networks",
+    "regulationsList": "The basic regulations list",
+    "sendReminderBy": "Send reminder via",
+    "signature": "Owner signature",
+    "smsUpdatedSuccessfully": "Displayed store name is updated successfully",
+    "storeMessageHint": "The name must be in english",
+    "storeMessageInfo": "Customizing the name that appears in the SMS that reach the end customer from the bank",
+    "storeMessageLabel": "The name that appears in the discount messages",
+    "storeMessageTitle": "Sender name for SMS",
+    "storePackage": "Store package",
+    "tabFiveLabel": "Payout bank details",
+    "tabFourLabel": "Your Zid Payments account",
+    "tabOneLabel": "Networks",
+    "tabThreeLabel": "Payment link settings",
+    "tabTwoLabel": "Store name in text messages",
+    "termsConditions": "Terms and conditions",
+    "vatNumber": "Tax number",
+    "vatRegistrationCertificate": "VAT registration certificate",
+    "zidpayStatusUpdatedSuccessfully": "Zid Payments status has been updated successfully"
+  },
+  "status": {
+    "completed": "Completed",
+    "failed": "Failed",
+    "label": "Payment status",
+    "pending": "Pending",
+    "voided": "Voided"
+  },
+  "storeNameInSMS": {
+    "description": "Customize the sender name for SMS messages sent to customers by the bank",
+    "title": "Sender name for SMS"
+  },
+  "thirdPartyProviders": {
+    "confirmation": {
+      "description": "The current payment gateway will be disabled to activate the new payment gateway.",
+      "successMessage": "Activated successfully.",
+      "title": "Are you sure you want to activate the payment gateway?"
+    },
+    "deactivationConfirmation": {
+      "successMessage": "The third-party payment provider has been deactivated successfully.",
+      "title": "Are you sure you want to deactivate the third-party payment provider?"
+    }
+  },
+  "transactions": {
+    "cardBankName": "Bank name",
+    "customerCardNumber": "Card number",
+    "customerCountry": "Country",
+    "customerDetails": "Customer details",
+    "customerEmail": "Email",
+    "customerMobile": "Mobile",
+    "customerName": "Name",
+    "dateAndTime": "Date and time",
+    "deductionPercentage": "Deduction percentage",
+    "deductionValue": "Deduction value",
+    "deservedAmount": "Amount due",
+    "emptyState": {
+      "description": "Make sure to add enable payment methods",
+      "title": "No transactions at the moment"
+    },
+    "errorMessage": "Reason for the failure",
+    "export": {
+      "message": "Dear merchant, the file has been sent to your email: {{email}}"
+    },
+    "feeValue": "Fee value",
+    "filters": {
+      "amountFrom": "From amount",
+      "amountPlaceholder": "Enter amount",
+      "amountTo": "To amount",
+      "paymentNetwork": {
+        "amex": "American Express",
+        "applePay": "Apple Pay",
+        "applePayMada": "Apple Pay (mada)",
+        "applePayVisa": "Apple Pay (Visa)",
+        "knet": "Knet",
+        "label": "Payment network",
+        "mada": "mada",
+        "visaMastercard": "mada/Mastercard"
+      },
+      "transactionType": {
+        "label": "Transaction type",
+        "partialRefund": "Partial refund",
+        "payment": "Payment",
+        "paymentLink": "Payment link",
+        "refund": "Refund"
+      }
+    },
+    "financingInstallmentRatio": "Financing installment ratio",
+    "fixedFee": "Fixed fee",
+    "installmentServices": "BNPL Payments",
+    "installmentValue": "Installment value",
+    "onlinePayments": "Online Payments",
+    "operationDetails": "Operations in your store",
+    "operationValue": "Operation value",
+    "orderNumber": "Order id",
+    "paymentMethod": "Payment method",
+    "paymentNetwork": "Network",
+    "payoutID": "Payout ID",
+    "processFee": "Process fee",
+    "processValue": "Amount",
+    "purchaseAmount": "Purchase amount",
+    "recentTransactions": "Recent transactions",
+    "refund": {
+      "EnterAmount": "Enter refund amount",
+      "amount": "Refund amount",
+      "confirmationMessage": "Are you sure about the {{amount}} refund process?",
+      "createdSuccessfully": "Refund request is created successfully",
+      "customer": {
+        "bankName": "Bank name",
+        "iban": "IBAN",
+        "name": "Card holder name",
+        "title": "Customer banking details"
+      },
+      "refund": "Refund",
+      "refundFees": "Fefund Fees",
+      "refundNumber": "Refund reference id:",
+      "refundReferenceNumber": "Refund Reference Number:",
+      "refundStatus": "Refund status:",
+      "refundType": "Refund type:",
+      "refunding": "Refunding",
+      "requestedAt": "Refund date and time:",
+      "requestedBy": "Requested by:"
+    },
+    "refundedOperations": "Refunded operations",
+    "splittingPercentage": "Splitting percentage",
+    "splittingValue": "Splitting value",
+    "transactionDetails": "Transaction details",
+    "transactionNumber": "Transaction number",
+    "transactionOrderNumber": "Transaction order number",
+    "transactionReferenceNumber": "Transaction reference number",
+    "transactions": "Transactions",
+    "valueAddedTax": "Value added tax",
+    "zidpayPackage": "Zid Payments package"
+  },
+  "transactionsList": "Transactions list",
+  "welcomeDashboard": {
+    "activateZidpay": "Activate Zid Payments",
+    "activateZidpayNow": "Activate Zid Payments now",
+    "description": "Zid Payments is an integrated payment solution that enables retailers to manage orders and electronic payments in one place, specially designed for retailers so that you can activate electronic payment with the click of a button.",
+    "frequentlyAskedQuestions": {
+      "questions": {
+        "card1": {
+          "answer": "The data uploaded will be verified within two business days to confirm the process of collecting the amounts to your bank account.",
+          "question": "How long does it take to activate Zid Payments?"
+        },
+        "card2": {
+          "answer": "There are no set-up or monthly fees. the fees are represented as a percentage and fixed operational fees for transactions, excluding value-added tax, and are calculated according to the payment network and store package in Zid.",
+          "question": "Are there setup fees or monthly fees?"
+        },
+        "card3": {
+          "answer1": "PUBG games and digital products",
+          "answer2": "Tobacco products and cigarettes",
+          "answer3": "Dating websites",
+          "answer4": "Subscriptions for websites and movies",
+          "answer5": "Cryptocurrencies and consulting",
+          "answer6": "Selling fake followers on social media",
+          "answer7": "Wigs",
+          "question": "What businesses are prohibited in Zid Payments?"
+        },
+        "card4": {
+          "answer": "No, there is no upper limit for transactions on Zid Payments.",
+          "question": "Is there a maximum limit for operations?"
+        },
+        "card5": {
+          "answer": "Currently, it is only available in the Kingdom of Saudi Arabia and the state of Kuwait.",
+          "question": "Is Zid Payments available in GCC countries?"
+        },
+        "card6": {
+          "answer": "You can see how to obtain a bank certificate for the most commonly used banks",
+          "question": "How to extract a bank certificate?"
+        },
+        "card7": {
+          "answer": "You can find out the appropriate activity to add to the commercial registration through a guided search on the ministry of commerce website based on the products of the online store",
+          "question": "What is the appropriate activity in the commercial registration?"
+        },
+        "card8": {
+          "answer": "You can view how to obtain a self-employment document for individuals",
+          "question": "What is the method for obtaining a freelance `work document?"
+        }
+      },
+      "title": "Frequently asked questions"
+    },
+    "mainFeatures": {
+      "card1": {
+        "feature1": "Activate e-payment with the click of a button",
+        "feature2": "Instant reception of e-payments",
+        "title": "Instant activation"
+      },
+      "card2": {
+        "feature1": "No setup fees",
+        "feature2": "No monthly fees",
+        "feature3": "No additional fees for refunds",
+        "title": "Competitive prices"
+      },
+      "card3": {
+        "feature1": "Share payment links by different means",
+        "feature2": "Send a reminder to complete the payment",
+        "title": "Quick payment links"
+      },
+      "card4": {
+        "feature1": "Follow up operations",
+        "feature2": "Follow up on balances and deposits",
+        "feature3": "Follow up on orders",
+        "title": "One control panel"
+      },
+      "card5": {
+        "feature1": "Every sunday - tuesday - thursday of every week",
+        "feature2": "The minimum collection is 100 riyals",
+        "feature3": "The deposit fee is 3 riyals on the total collection process",
+        "title": "Collecting payments"
+      },
+      "card6": {
+        "feature1": "mada",
+        "feature2": "mada & Mastercard",
+        "feature3": "Apple Pay",
+        "feature4": "American Express",
+        "feature5": "EMKAN",
+        "feature6": "Madfu — مدفوع",
+        "title": "Supported payment networks"
+      },
+      "title": "Main features"
+    },
+    "packages": {
+      "basic": {
+        "kw": {
+          "amex": "3.9%",
+          "applePay": "2.85% *Flat fee for all cards",
+          "knet": "0.175 KWD",
+          "samsungPay": "2.85% *Flat fee for all cards",
+          "visa": "2.6%"
+        },
+        "sa": {
+          "americanExpress": "3.4% + 1 SAR",
+          "applePay": "according to the card used at checkout",
+          "emkanPay": "7% + 1 SAR",
+          "mada": "1% + 1 SAR",
+          "madfu": "7% + 1 SAR",
+          "samsungPay": "according to the card used at checkout",
+          "stc": "1.5% + 1 SAR",
+          "visa": "2.4% + 1 SAR"
+        },
+        "title": "Rise"
+      },
+      "description": "Payments fees depend on your current package in Zid, upgrade your package for lower fees",
+      "growth": {
+        "kw": {
+          "amex": "3.8%",
+          "applePay": "2.75% *Flat fee for all cards",
+          "knet": "0.150 KWD",
+          "samsungPay": "2.75% *Flat fee for all cards",
+          "visa": "2.5%"
+        },
+        "sa": {
+          "americanExpress": "3.3% + 1 SAR",
+          "applePay": "according to the card used at checkout",
+          "emkanPay": "6% + 1 SAR",
+          "mada": "1% + 1 SAR",
+          "madfu": "6% + 1 SAR",
+          "samsungPay": "according to the card used at checkout",
+          "stc": "1.25% + 1 SAR",
+          "visa": "2.3% + 1 SAR"
+        },
+        "title": "Growth"
+      },
+      "inclusiveFee": "VAT exclusive fees",
+      "professional": {
+        "kw": {
+          "amex": "3.7%",
+          "applePay": "2.65% *Flat fee for all cards",
+          "knet": "0.150 KWD",
+          "samsungPay": "2.65% *Flat fee for all cards",
+          "visa": "2.4%"
+        },
+        "sa": {
+          "americanExpress": "3.2% + 0.75 SAR",
+          "applePay": "according to the card used at checkout",
+          "emkanPay": "5.5% + 0.75 SAR",
+          "mada": "1% + 0.75 SAR",
+          "madfu": "5.5% + 0.75 SAR",
+          "samsungPay": "according to the card used at checkout",
+          "stc": "1% + 1 SAR",
+          "visa": "2.2% + 0.75 SAR"
+        },
+        "title": "Professional"
+      },
+      "title": "Packages"
+    },
+    "payments": {
+      "activationRequirements": {
+        "card1": {
+          "requirement1": "Store owner ID",
+          "requirement2": "Freelance certificate",
+          "requirement3": "National address",
+          "title": "Individuals"
+        },
+        "card2": {
+          "requirement1": "Board members' IDs (for companies only)",
+          "requirement2": "Commercial registration",
+          "requirement3": "Articles of association (for companies only)",
+          "requirement4": "Commercial bank account",
+          "requirement5": "Bank certificate",
+          "title": "For businesses and establishments"
+        },
+        "card3": {
+          "requirement1": "Association registration certificate",
+          "requirement2": "Basic constitution",
+          "requirement3": "Board of directors' formation decision",
+          "requirement4": "Bank certificate",
+          "requirement5": "National address",
+          "title": "For charitable organizations"
+        },
+        "title": "Payment activation requirements"
+      }
+    },
+    "simplifyPaymentsSteps": {
+      "description": "Activate payments easily to streamline your store's processes and expand your business",
+      "step1": {
+        "description": "Owner's personal information, business information, bank account information.",
+        "title": "Activation request"
+      },
+      "step2": {
+        "description": "Nafath verifies the identity of the store owner through the nafath application",
+        "title": "Nafath validation"
+      },
+      "step3": {
+        "description": "Review the Zid payments activation request and receive electronic payments",
+        "title": "Receive payments"
+      },
+      "step4": {
+        "description": "After the activation request is successfully approved, you can receive deposits",
+        "title": "Receiving deposits"
+      },
+      "title": "Simplify your payments in 4 simple steps"
+    },
+    "title": "Payments made simple"
+  },
+  "zidPaymentSetting": "Manage",
+  "zidpayActivationBanner": {
+    "confirmation": {
+      "description": "The current payment gateway will be disabled to activate Zid Payments.",
+      "successMessage": "Activated successfully",
+      "title": "Are you sure you want to activate Zid Payments?"
+    },
+    "description": "Zid Payments lets you process payments securely and easily for your store.",
+    "title": "Enable secure payment processing for your store"
+  },
+  "zidpayNafathVerificationBanner": {
+    "btn-label": "Verify with Nafath",
+    "description": "Verify your identity through Nafath to unlock full access and start receiving payments without delays.",
+    "title": "Activate your account in seconds!"
+  }
+}

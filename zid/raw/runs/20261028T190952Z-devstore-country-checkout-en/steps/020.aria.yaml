@@ -1,0 +1,198 @@
+- banner:
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/3277610
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "AED 0"
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+- navigation "Primary navigation":
+  - button "Home"
+  - button "Apps"
+  - button "Settings" [pressed]
+  - separator
+- list:
+  - link "General":
+    - /url: /en-sa/stores/3277610/settings/account
+    - text: General
+    - button
+  - link "Communications":
+    - /url: /en-sa/stores/3277610/settings/communications/orders
+    - text: Communications
+    - button
+  - link "Store":
+    - /url: /en-sa/stores/3277610/settings/information
+  - link "Store information":
+    - /url: /en-sa/stores/3277610/settings/information
+  - link "Legal pages":
+    - /url: /en-sa/stores/3277610/channels/online-store/pages/legal
+  - link "Hours of operation":
+    - /url: /en-sa/stores/3277610/settings/hours-of-operation
+  - link "Team":
+    - /url: /en-sa/stores/3277610/settings/team
+  - link "Groups":
+    - /url: /en-sa/stores/3277610/settings/team/groups
+  - link "Domains list":
+    - /url: /en-sa/stores/3277610/settings/domains
+- main:
+  - button
+  - heading "Store information" [level=5]
+  - button "Save"
+  - tablist:
+    - tab "Store information"
+    - tab "Business details"
+    - tab "Business address" [selected]
+  - paragraph: You can enter your location manually or using Google Maps.
+  - list:
+    - listitem:
+      - paragraph: Display address in storefront
+      - switch
+    - listitem:
+      - paragraph: Enter the location automatically using Google Maps.
+      - switch [checked]
+    - listitem:
+      - paragraph: Time zone
+      - paragraph: Selecting your store's time zone will help ensure consistency in dates and times across orders, reports, and file exports.
+      - combobox "Asia/Riyadh"
+  - text: Country
+  - combobox "Country": Oman
+  - button "Open"
+  - text: City
+  - combobox "City" [expanded]
+  - button "Close"
+  - text: Street
+  - textbox "Street": 1 Capture Street
+  - text: Zip code
+  - textbox "Zip code"
+  - region "Map"
+  - alert:
+    - text: An example of a national address proof file from SPL.
+    - button "Preview"
+  - button "Choose File"
+  - paragraph: National Address
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img
+- listbox "City":
+  - option "Muscat"
+  - option "Sohar"
+  - option "Nizwa"
+  - option "Sur"
+  - option "Rustaq"
+  - option "Salalah"
+  - option "Al Amarat"
+  - option "Barka"
+  - option "Bawshar"
+  - option "Al Buraymi"
+  - option "Ibra"
+  - option "Muttrah"
+  - option "Seeb"
+  - option "Bahla"
+  - option "Suwayq"
+  - option "Khasab"
+  - option "Madha"
+  - option "Shinas"
+  - option "Qurayat"
+  - option "Samail"
+  - option "Saham"
+  - option "Adam"
+  - option "Al Awabi"
+  - option "Al Bidayah"
+  - option "Al Duqm"
+  - option "Al Hamra"
+  - option "Al Jazir"
+  - option "Al Kabil"
+  - option "Al Kamil Wal Wafi"
+  - option "Al Khodh"
+  - option "Al Khuwair"
+  - option "Al Mazyunah"
+  - option "Al Mudhaibi"
+  - option "Al Saada"
+  - option "Al Sunaynah"
+  - option "Al Amerat"
+  - option "Azaiba"
+  - option "Bidbid"
+  - option "Bideyah"
+  - option "Bukha"
+  - option "Dhalkut"
+  - option "Dhank"
+  - option "Dima Wattayeen"
+  - option "Falaj Al Qabail"
+  - option "Fanja"
+  - option "Ghala"
+  - option "Al Ghubrah"
+  - option "Haima"
+  - option "Al Humriyyah"
+  - option "Ibri"
+  - option "Izki"
+  - option "Jaalan Bani Bu Ali"
+  - option "Jaalan ni Bu Hassan"
+  - option "Jibroo"
+  - option "Khabourah"
+  - option "Liwa"
+  - option "Madinat Sultan Qaboos"
+  - option "Mahdha"
+  - option "Mahout"
+  - option "Manah"
+  - option "Masirah"
+  - option "Al Mawalih"
+  - option "Musannah"
+  - option "Nakhl"
+  - option "Qurum"
+  - option "Rusayl"
+  - option "Ruwi"
+  - option "Sadah"
+  - option "Samad Al Shan"
+  - option "Sinaw"
+  - option "Thamrait"
+  - option "Wadi Adai"
+  - option "Wadi al Maawil"
+  - option "Wadi Bani Khalid"
+  - option "Wadi Kabir"
+  - option "Al Wattayah"
+  - option "Wudam Al Sahil"
+  - option "Yankul"
+  - option "Al Halaniyat Islands"
+  - option "Al Maabilah"
+  - option "Al Mudhaireb"
+  - option "Diba"
+  - option "Marbat"
+  - option "Muqshin"
+  - option "Raysut"
+  - option "Taqah"
+  - option "Jabal Akhdar"
+  - option "Other"
+  - option "Al Ansab"
+  - option "Al Akhdar"
+  - option "Al Haffah"
+  - option "Al Haselah"
+  - option "Al Hayl"
+  - option "Dhareez"
+  - option "Rusayl Industrial Estate"
+  - option "Ar Rumays"
+  - option "At Turayf"
+  - option "Al Araqi"
+  - option "Al Awqadayn"
+  - option "Al Qawf"
+  - option "Al Mutazzah"
+  - option "Muladdah"
+  - option "Al Wadi"
+  - option "Birkat Al Mouz"
+  - option "Tanuf"
+  - option "Darsait"
+  - option "Rakhyut"
+  - option "Sahalnawt"
+  - option "Hujayrimat"
+  - option "Mina Al Fahal"
+  - option "Murtafaat Al Matar"
+  - option "Madinat al Haqq"
+  - option "Mahdah"
+  - option "Lizeg"
+  - option "Qairoon Hairitti"
+  - option "Tawi Atair"

@@ -1,0 +1,230 @@
+- banner:
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/3277610
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "0"
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+- navigation "Primary navigation":
+  - button "Home"
+  - button "Apps"
+  - button "Settings" [pressed]
+  - separator
+- list:
+  - link "General":
+    - /url: /en-sa/stores/3277610/settings/account
+    - text: General
+    - button
+  - link "Communications":
+    - /url: /en-sa/stores/3277610/settings/communications/orders
+    - text: Communications
+    - button
+  - link "Store":
+    - /url: /en-sa/stores/3277610/settings/information
+  - link "Store information":
+    - /url: /en-sa/stores/3277610/settings/information
+  - link "Legal pages":
+    - /url: /en-sa/stores/3277610/channels/online-store/pages/legal
+  - link "Hours of operation":
+    - /url: /en-sa/stores/3277610/settings/hours-of-operation
+  - link "Team":
+    - /url: /en-sa/stores/3277610/settings/team
+  - link "Groups":
+    - /url: /en-sa/stores/3277610/settings/team/groups
+  - link "Domains list":
+    - /url: /en-sa/stores/3277610/settings/domains
+- main:
+  - button
+  - heading "Store information" [level=5]
+  - button "Save"
+  - tablist:
+    - tab "Store information"
+    - tab "Business details"
+    - tab "Business address" [selected]
+  - paragraph: You can enter your location manually or using Google Maps.
+  - list:
+    - listitem:
+      - paragraph: Display address in storefront
+      - switch
+    - listitem:
+      - paragraph: Enter the location automatically using Google Maps.
+      - switch [checked]
+    - listitem:
+      - paragraph: Time zone
+      - paragraph: Selecting your store's time zone will help ensure consistency in dates and times across orders, reports, and file exports.
+      - combobox "Asia/Riyadh"
+  - text: Country
+  - combobox "Country": Qatar
+  - button "Open"
+  - text: City
+  - combobox "City" [expanded]
+  - button "Close"
+  - text: Street
+  - textbox "Street": 1 Capture Street
+  - text: Zip code
+  - textbox "Zip code"
+  - button "Keyboard shortcuts"
+  - region "Map"
+  - button "Toggle fullscreen view"
+  - button "Zoom in"
+  - button "Zoom out"
+  - link "Open this area in Google Maps (opens a new window)":
+    - /url: https://maps.google.com/maps?ll=24.736143,46.717257&z=12&t=m&hl=en-US&gl=US&mapclient=apiv3
+    - img "Google"
+  - button "Keyboard shortcuts"
+  - text: Map data ©2026 Google
+  - link "Terms (opens in new tab)":
+    - /url: https://www.google.com/intl/en-US_US/help/terms_maps.html
+    - text: Terms
+  - link "Report a map error (opens in new tab)":
+    - /url: https://www.google.com/maps/@24.736143,46.717257,12z/data=!10m1!1e1!12b1?source=apiv3&rapsrc=apiv3
+    - text: Report a map error
+  - alert:
+    - text: An example of a national address proof file from SPL.
+    - button "Preview"
+  - button "Choose File"
+  - paragraph: National Address
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img
+- listbox "City":
+  - option "Doha"
+  - option "Abu az Zuluf"
+  - option "Abu Thaylah"
+  - option "Ad Dawhah al Jadidah"
+  - 'option "Al `Arish"'
+  - option "Al Ghuwariyah"
+  - option "Al-Ghuwayriyah"
+  - option "Al Hitmi"
+  - option "Al Jasrah"
+  - option "Al Jumaliyah"
+  - option "Al Khor"
+  - option "Al Mafjar"
+  - option "Al Wakrah"
+  - option "Ras Laffan Industrial City"
+  - option "Ath Thaqab"
+  - option "Dukhan"
+  - option "Umm Bab"
+  - option "Umm Sa'id"
+  - option "Umm Salal Ali"
+  - option "Umm Salal Mohammed"
+  - 'option "Al `Adhbah"'
+  - option "Al Daayen"
+  - 'option "al Ka`ban"'
+  - option "Al Khawr"
+  - option "Ash-Shahaniyah"
+  - option "Umm Ebairiya"
+  - option "Al Aamriya"
+  - 'option "Al Bida` ash Sharqiyah"'
+  - option "Al Dhakira"
+  - option "Al Ghanim"
+  - option "Al Ghashamiya"
+  - option "Al Hilal"
+  - option "Al Hilal al Gharbiyah"
+  - option "Al Khalifat"
+  - option "Al Khara'rb"
+  - option "Al Kharrara"
+  - option "Al Kharsaah"
+  - option "Al Khuwayr"
+  - 'option "Al Nu`man"'
+  - 'option "Al Qa`abiyah"'
+  - option "Al sakhama"
+  - option "Al Utouriya"
+  - option "Al Uwaynah"
+  - option "Al Waab"
+  - option "Al Wukair"
+  - option "Ar Ru'ays"
+  - option "Al-Kiranah"
+  - option "An Najmah"
+  - option "Ar Rakiyat"
+  - option "As Salatah"
+  - option "As Salatah al Jadidah"
+  - 'option "As Sani`"'
+  - option "As Sawq"
+  - option "Fuwayrit"
+  - option "Mukaynis"
+  - option "Nasraniyah"
+  - option "Ras Matbakh"
+  - option "Rawdat Hawtan"
+  - option "Rawdat Rasid"
+  - option "Umm Al Afaei"
+  - option "Umm Al Amad"
+  - option "Umm al Shabrum"
+  - option "Umm al shkhot"
+  - option "Zekreet"
+  - option "Zubarah"
+  - option "Aradh"
+  - option "Ain Sinan"
+  - option "Mahaesh"
+  - option "Other"
+  - option "Al Dafna"
+  - option "Al Duhail"
+  - option "Al Ebaib/Al Kheesa"
+  - option "Lusai"
+  - option "Um Qarn"
+  - option "Izghawa"
+  - option "Al Mansoura/Fereej Bin Dirham"
+  - option "Al Markhiya"
+  - option "Al Messila"
+  - option "Old Slata"
+  - option "Bani Hajar"
+  - option "Dafna"
+  - option "AL Merqab Al Jadeed"
+  - option "Al Saad"
+  - option "Fereej Al Nasr"
+  - option "Al Soudan South"
+  - option "Al Thumama"
+  - option "AL Azizya"
+  - option "Al Rumaila"
+  - option "Fereej Abdul Aziz"
+  - option "Fereej Al Ali"
+  - option "Fereej Bin Mahmoud"
+  - option "AL Manaseer"
+  - option "Fereej Bin Omran"
+  - option "Fereej Kulaib"
+  - option "Hazm Al Markhiya"
+  - option "Industrial Area"
+  - option "Dahl Al Hamam"
+  - option "Madinat Khalifa North"
+  - option "Madinat Khalifa South"
+  - option "Mushaireb"
+  - option "Bu Sidra"
+  - option "Al Murra"
+  - option "Al Maamoura"
+  - option "Nuaija"
+  - option "Ain Khaled"
+  - option "Old Airport"
+  - option "Old Al Ghanim"
+  - option "Mesaimeer"
+  - option "Onaiza"
+  - option "New Al Ghaniem"
+  - option "Muaither"
+  - option "Ras Abu Abboud"
+  - option "Rawdat Al Khail"
+  - option "Umm Ghuwailina"
+  - option "Umm Lekhba"
+  - option "Wadi Al Sail"
+  - option "Abu Samra"
+  - option "Muraikh"
+  - option "Al Wajba"
+  - option "Al Kharaitiyat"
+  - option "Al Luqta"
+  - option "Fereej Al Amir"
+  - option "Wadi Al Banat"
+  - option "Mebaireek/Bu Nakhla"
+  - option "Al Adaid"
+  - option "Simaisma"
+  - option "Ras Laffan"
+  - option "Um Birka"
+  - option "Mesaieed Industrial Area"
+  - option "Old Al Rayyan"
+  - option "New Al Rayyan"
+  - option "Old Al Hitmi"
+  - option "New Al Hitmi"

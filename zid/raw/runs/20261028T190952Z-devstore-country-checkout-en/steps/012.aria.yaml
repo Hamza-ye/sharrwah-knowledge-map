@@ -1,0 +1,219 @@
+- banner:
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/3277610
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+- navigation "Primary navigation":
+  - button "Home"
+  - button "Apps"
+  - button "Settings" [pressed]
+  - separator
+- list:
+  - link "General":
+    - /url: /en-sa/stores/3277610/settings/account
+    - text: General
+    - button
+  - link "Communications":
+    - /url: /en-sa/stores/3277610/settings/communications/orders
+    - text: Communications
+    - button
+  - link "Store":
+    - /url: /en-sa/stores/3277610/settings/information
+  - link "Store information":
+    - /url: /en-sa/stores/3277610/settings/information
+  - link "Legal pages":
+    - /url: /en-sa/stores/3277610/channels/online-store/pages/legal
+  - link "Hours of operation":
+    - /url: /en-sa/stores/3277610/settings/hours-of-operation
+  - link "Team":
+    - /url: /en-sa/stores/3277610/settings/team
+  - link "Groups":
+    - /url: /en-sa/stores/3277610/settings/team/groups
+  - link "Domains list":
+    - /url: /en-sa/stores/3277610/settings/domains
+- main:
+  - button
+  - heading "Store information" [level=5]
+  - button "Save"
+  - tablist:
+    - tab "Store information"
+    - tab "Business details"
+    - tab "Business address" [selected]
+  - paragraph: You can enter your location manually or using Google Maps.
+  - list:
+    - listitem:
+      - paragraph: Display address in storefront
+      - switch
+    - listitem:
+      - paragraph: Enter the location automatically using Google Maps.
+      - switch [checked]
+    - listitem:
+      - paragraph: Time zone
+      - paragraph: Selecting your store's time zone will help ensure consistency in dates and times across orders, reports, and file exports.
+      - combobox "Asia/Riyadh"
+  - text: Country
+  - combobox "Country": UAE
+  - button "Open"
+  - text: City
+  - combobox "City" [expanded]
+  - button "Close"
+  - text: Street
+  - textbox "Street": 1 Capture Street
+  - text: Zip code
+  - textbox "Zip code"
+  - button "Keyboard shortcuts"
+  - region "Map"
+  - button "Toggle fullscreen view"
+  - button "Zoom in"
+  - button "Zoom out"
+  - link "Open this area in Google Maps (opens a new window)":
+    - /url: https://maps.google.com/maps?ll=24.736143,46.717257&z=12&t=m&hl=en-US&gl=US&mapclient=apiv3
+    - img "Google"
+  - button "Keyboard shortcuts"
+  - text: Map data ©2026 Google
+  - link "Terms (opens in new tab)":
+    - /url: https://www.google.com/intl/en-US_US/help/terms_maps.html
+    - text: Terms
+  - link "Report a map error (opens in new tab)":
+    - /url: https://www.google.com/maps/@24.736143,46.717257,12z/data=!10m1!1e1!12b1?source=apiv3&rapsrc=apiv3
+    - text: Report a map error
+  - alert:
+    - text: An example of a national address proof file from SPL.
+    - button "Preview"
+  - button "Choose File"
+  - paragraph: National Address
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img
+- button "Chat on WhatsApp":
+  - img
+  - text: Chat on WhatsApp
+- listbox "City":
+  - option "Abu Dhabi"
+  - option "Dubai"
+  - option "Sharjah"
+  - option "Ajman"
+  - option "Umm al-Quwain"
+  - option "Ras Al Khaimah"
+  - option "Fujairah"
+  - option "Al Ain"
+  - option "Khawr Fakkan"
+  - option "Al Ruways"
+  - option "Sila"
+  - option "Mussafah"
+  - option "Jebel Ali"
+  - option "Diba Al Hesn"
+  - option "Al Dhayd"
+  - option "Kalba"
+  - option "Abadilah"
+  - option "Abu Hayl"
+  - option "Abu Shagara"
+  - option "Adhan"
+  - option "Akamiyah"
+  - option "Al Ardiyah"
+  - option "Al Azrah"
+  - option "Al Duss"
+  - option "Al Fahiya"
+  - option "Al Falaj"
+  - option "Al Fulayyah"
+  - option "Al Hamraniyah"
+  - option "Al Hamriyah"
+  - option "Al Hayl"
+  - option "Al Hayr"
+  - option "Al Jazirah"
+  - option "Al Jazirah Al Hamra"
+  - option "Al Khan"
+  - option "Al Khashfah"
+  - option "Al Manak"
+  - option "Al Maqta"
+  - option "Al Marfa"
+  - option "Al Qouz"
+  - option "Al Rams"
+  - option "Al Ruwaiya"
+  - option "Al Tawoon"
+  - option "Al Zahra"
+  - option "Awanat"
+  - option "Badiyah"
+  - option "Bur Dubai"
+  - option "Bustan"
+  - option "Buteena"
+  - option "Dasman"
+  - option "Deira"
+  - option "Diba"
+  - option "Dubai Internet City"
+  - option "Falaj Al Mulla"
+  - option "Furfar"
+  - option "Ganthoot"
+  - option "Ghafia"
+  - option "Ghubaiba"
+  - option "Ghurfah"
+  - option "Habshan"
+  - option "Hatta"
+  - option "Jarf"
+  - option "Jazzat"
+  - option "Jumeirah"
+  - option "Karama"
+  - option "Khannur"
+  - option "Kharran"
+  - option "Khatt"
+  - option "Khawr Kalba"
+  - option "Khawr Khuwayr"
+  - option "Layyah"
+  - option "Mafraq"
+  - option "Maisaloon"
+  - option "Majjarah"
+  - option "Mansoora"
+  - option "Masafi"
+  - option "Masfut"
+  - option "Mina Sufooh"
+  - option "Mushrif"
+  - option "Muwafja"
+  - option "Nabbah"
+  - option "Nakheel"
+  - option "Nakheelat"
+  - option "Nasariya"
+  - option "Qasimiya"
+  - option "Qidfa"
+  - option "Ramaqiya"
+  - option "Ramlah"
+  - option "Ramtha"
+  - option "Rashidya"
+  - option "Rolla"
+  - option "Rughaylat"
+  - option "Saif"
+  - option "Salihiyah"
+  - option "Samnan"
+  - option "Saqamqam"
+  - option "Satwa"
+  - option "Shahba"
+  - option "Al Sha'M"
+  - option "Shandaghah"
+  - option "Sherqan"
+  - option "Siji"
+  - option "Suwayhan"
+  - option "Tarif Kalba"
+  - option "Um Al Nar"
+  - option "Umm Kanoor"
+  - option "Wadi Shi"
+  - option "Wasit"
+  - option "Yarmook"
+  - option "Buteen"
+  - option "Al Khatem"
+  - option "Diba Al Bay'a"
+  - option "MIZHER"
+  - option "MOHAMMED BIN ZAYED CITY"
+  - option "Al Manamah"
+  - option "Al Rafa'ah"
+  - option "Reem Community"
+  - option "Other"
+  - option "Ghiyathi"
+  - option "Zayed City"
+  - option "Khalifa"
