@@ -1201,3 +1201,22 @@ Each row joined was compared with its own platform's statements already in it (r
 ### Check (part RD1-S6)
 
 On a copy holding only `b/RD1`, `merge_slices.py` merged 19 points and 303 rows. `check_subject.py` gave 247 lines of level `error`, all in `answers.tsv`, each 'not a variation point' for a point of RD2 or RD3 (S02-VP-26 to S02-VP-92), which the copy leaves out; none names this part's rows or statements. Before this part wrote, the checker run on the copy that cut the slice named S02-V-058 ('gap S02-SH-G09 was narrowed into S02-SH-G14'), which the revisit replaced; that line is gone. It gave 17 warnings, on phase A's citations (16 of Shopify's, 1 of WooCommerce's), and 33 reviews: 12 quotes found only in a page's source, which are the coordinator's; the statements of RD2 and RD3, whose folders the copy leaves out; and 19 points with no phase C row yet. Its `unplaced.tsv` holds no row of RD1: the place tasks and the revisit's leads are gone from it. `second_pass_list.py --check`: RD1 has no revisit, reread or note task without a row in `done.tsv`, as before this part (problem 3).
+
+## Second pass, RD1-S7
+
+Part RD1-S7: the Salla and Zid round's Salla tasks under RD1 (bullets a to d), from A2-SA-R, which read the runs of 28 October for capture requests H-001 to H-005 (observed-sa b0bd0b16). Most of the statements are observations of one store on one day; each row keeps the store, its plan, and the run and step, in its scope or evidence.
+
+### Revisit S02-V-074 and S02-V-075 (salla, S02-VP-06 and S02-VP-07, who changes the store's country, and on what conditions) (part RD1-S7)
+
+- S02-V-074 (S02-VP-06), was gap S02-SA-G01: replaced with an answer, 'As the store owner, you can make this change.' (S02-SA-483): the store owner, its own answer beside the seller's, by rule 4. S02-SA-483 is the answer of Mushammir, the dashboard's assistant, on the merchant store store-1-da (Basic), run 20261028T150337Z-journey-store-country-merchant-en, step 011, marked AI-generated, as its scope says.
+- S02-SA-483 also joined S02-V-095 (S02-VP-06, the seller): 'You can change the store country after creation from Settings > Store settings > Basic store settings, then update the country/currency and save', a control in the store's admin, by rule 4. Rechecked under rule 5: S02-V-095's basis stays `answers`.
+- S02-V-303 (S02-VP-06), added: gap S02-SA-G16, in place of S02-SA-G01, beside the answers. It asks who can change the store's country as a page, a setting or a person of Salla's states it, and names S02-SA-483 as AI-generated. S02-V-095's note now names S02-SA-G16 in S02-SA-G01's place.
+- S02-V-075 (S02-VP-07), was gap S02-SA-G01: replaced with gap S02-SA-G16 (in place of S02-SA-G01). No lead states a condition. S02-SA-483 names who changes it, under S02-VP-06.
+
+Leads noted under (b):
+- S02-SA-477 (b): the merchant store's settings menu (store-1-da, Basic; run 20261028T150337Z, step 002) lists its items, none of which names the store's country, a party that changes it, or a condition; answers none of (b)'s questions
+- S02-SA-478 (b): the General section's items (Store information, Store design, Languages, Currencies) name no party that sets, checks or changes the store's country, and no condition; answers none of (b)'s questions
+- S02-SA-479 (b): the General section's items (Salla AI Connector, Salla Community, Latest platform updates) say nothing of the store's country; answers none of (b)'s questions
+- S02-SA-480 (b): the General section's items (Clear cache, Maintenance mode, Delete store) say nothing of the store's country; answers none of (b)'s questions
+- S02-SA-481 (b): the Store information page shows a Store activity field and Save, with no field for the store's country and no party for it; answers none of (b)'s questions
+- S02-SA-482 (b): the store list (Store, Store website, Plan, Role 'مدير عام') names the account's role in the store, not who sets, checks or changes the store's country; answers none of (b)'s questions
