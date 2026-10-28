@@ -3,4 +3,5 @@ zid	stated	S02-ZD-N01	c	Zid Pay (زد باي, مدفوعات زد) for a store i
 zid	stated	S02-ZD-N02	c	Zid Financing (تمويل زد) for a store outside Saudi Arabia
 zid	stated	S02-ZD-N03	c	Wallet deduction from Zid Pay (الاستقطاع للمحفظة) for a store outside Saudi Arabia and Kuwait
 zid	stated	S02-ZD-N04	d	Any country outside Saudi Arabia and the Gulf (دول الخليج) among the countries the FAQ says Zid serves merchants in, such as Egypt and Syria, which the site index's country pages name (S02-ZD-006)
+zid	observed	S02-ZD-N17	d	Iran, Cuba, Korea (North or South), Russia and Israel among the 162 countries a store can take as its Business address's country (GET /v1/settings/countries), which hold Yemen, the Syrian Arab Republic and Palestinian
 bigcommerce	stated	S02-BC-N02	a	A store country among the store settings whose change triggers the store/information/updated webhook (the list holds Store Address, Language and Default Currency, and no country)

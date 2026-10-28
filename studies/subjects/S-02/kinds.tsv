@@ -2672,10 +2672,62 @@ S02-ZD-444	stated	the address is a docs, help or other page
 S02-ZD-445	stated	the address is a docs, help or other page
 S02-ZD-446	stated	the address is a docs, help or other page
 S02-ZD-447	stated	the address is a docs, help or other page
+S02-ZD-448	observed	run 20261028T170107Z-devstore-markets-en records a store, dashboard or session
+S02-ZD-449	observed	run 20261028T170107Z-devstore-markets-en records a store, dashboard or session
+S02-ZD-450	observed	run 20261028T170107Z-devstore-markets-en records a store, dashboard or session
+S02-ZD-451	observed	run 20261028T170107Z-devstore-markets-en records a store, dashboard or session
+S02-ZD-452	observed	run 20261028T170107Z-devstore-markets-en records a store, dashboard or session
+S02-ZD-453	observed	run 20261028T185150Z-devstore-tracking-apps-en records a store, dashboard or session
+S02-ZD-454	observed	run 20261028T185150Z-devstore-tracking-apps-en records a store, dashboard or session
+S02-ZD-455	observed	run 20261028T170107Z-devstore-markets-en records a store, dashboard or session
+S02-ZD-456	observed	run 20261028T185150Z-devstore-tracking-apps-en records a store, dashboard or session
+S02-ZD-457	observed	run 20261028T170107Z-devstore-markets-en records a store, dashboard or session
+S02-ZD-458	observed	run 20261028T170107Z-devstore-markets-en records a store, dashboard or session
+S02-ZD-459	observed	run 20261028T170107Z-devstore-markets-en records a store, dashboard or session
+S02-ZD-460	observed	zid/structures/store-permissions is built from what a store's dashboard answered
+S02-ZD-461	observed	zid/structures/store-permissions is built from what a store's dashboard answered
+S02-ZD-462	observed	run 20261028T170107Z-devstore-markets-en records a store, dashboard or session
+S02-ZD-463	observed	run 20261028T170107Z-devstore-markets-en records a store, dashboard or session
+S02-ZD-464	observed	run 20261028T170107Z-devstore-markets-en records a store, dashboard or session
+S02-ZD-465	observed	run 20261028T170107Z-devstore-markets-en records a store, dashboard or session
+S02-ZD-466	observed	run 20261028T170107Z-devstore-markets-en records a store, dashboard or session
+S02-ZD-467	observed	run 20261028T170107Z-devstore-markets-en records a store, dashboard or session
+S02-ZD-468	observed	run 20261028T170107Z-devstore-markets-en records a store, dashboard or session
+S02-ZD-469	observed	run 20261028T170107Z-devstore-markets-en records a store, dashboard or session
+S02-ZD-470	observed	run 20261028T170107Z-devstore-markets-en records a store, dashboard or session
+S02-ZD-471	observed	run 20261028T170107Z-devstore-markets-en records a store, dashboard or session
+S02-ZD-472	observed	run 20261028T185150Z-devstore-tracking-apps-en records a store, dashboard or session
+S02-ZD-473	observed	run 20261028T170107Z-devstore-markets-en records a store, dashboard or session
+S02-ZD-474	observed	run 20261028T170107Z-devstore-markets-en records a store, dashboard or session
+S02-ZD-475	observed	run 20261028T170107Z-devstore-markets-en records a store, dashboard or session
+S02-ZD-476	observed	run 20261028T190952Z-devstore-country-checkout-en records a store, dashboard or session
+S02-ZD-477	observed	run 20261028T190952Z-devstore-country-checkout-en records a store, dashboard or session
+S02-ZD-478	observed	run 20261028T190952Z-devstore-country-checkout-en records a store, dashboard or session
+S02-ZD-479	observed	run 20261028T190952Z-devstore-country-checkout-en records a store, dashboard or session
+S02-ZD-480	observed	run 20261028T190952Z-devstore-country-checkout-en records a store, dashboard or session
+S02-ZD-481	observed	run 20261028T190952Z-devstore-country-checkout-en records a store, dashboard or session
+S02-ZD-482	observed	run 20261028T190952Z-devstore-country-checkout-en records a store, dashboard or session
+S02-ZD-483	observed	run 20261028T190230Z-devstore-billing-en records a store, dashboard or session
+S02-ZD-484	observed	run 20261028T190952Z-devstore-country-checkout-en records a store, dashboard or session
+S02-ZD-485	observed	zid/structures/store-plan-policies is built from what a store's dashboard answered
+S02-ZD-486	observed	run 20261028T170107Z-devstore-markets-en records a store, dashboard or session
 S02-ZD-N01	stated	the address is a docs, help or other page
 S02-ZD-N02	stated	the address is a help centre's article
 S02-ZD-N03	stated	the address is a help centre's article
 S02-ZD-N04	stated	the address is a help centre's article
+S02-ZD-N05	shipped	zid/structures/dashboard-route-manifest holds https://dashboard.zid.sa/assets/manifest-48694231.js: the address is code or a schema the platform ships
+S02-ZD-N06	shipped	zid/structures/dashboard-route-manifest holds https://dashboard.zid.sa/assets/manifest-48694231.js: the address is code or a schema the platform ships
+S02-ZD-N07	shipped	zid/structures/dashboard-route-manifest holds https://dashboard.zid.sa/assets/manifest-48694231.js: the address is code or a schema the platform ships
+S02-ZD-N08	shipped	zid/structures/dashboard-route-manifest holds https://dashboard.zid.sa/assets/manifest-48694231.js: the address is code or a schema the platform ships
+S02-ZD-N09	shipped	zid/structures/dashboard-route-manifest holds https://dashboard.zid.sa/assets/manifest-48694231.js: the address is code or a schema the platform ships
+S02-ZD-N10	shipped	zid/structures/dashboard-route-manifest holds https://dashboard.zid.sa/assets/manifest-48694231.js: the address is code or a schema the platform ships
+S02-ZD-N11	shipped	zid/structures/dashboard-route-manifest holds https://dashboard.zid.sa/assets/manifest-48694231.js: the address is code or a schema the platform ships
+S02-ZD-N12	shipped	zid/structures/dashboard-route-manifest holds https://dashboard.zid.sa/assets/manifest-48694231.js: the address is code or a schema the platform ships
+S02-ZD-N13	shipped	zid/structures/dashboard-route-manifest holds https://dashboard.zid.sa/assets/manifest-48694231.js: the address is code or a schema the platform ships
+S02-ZD-N14	shipped	zid/structures/dashboard-route-manifest holds https://dashboard.zid.sa/assets/manifest-48694231.js: the address is code or a schema the platform ships
+S02-ZD-N15	shipped	zid/structures/dashboard-route-manifest holds https://dashboard.zid.sa/assets/manifest-48694231.js: the address is code or a schema the platform ships
+S02-ZD-N16	shipped	zid/structures/dashboard-route-manifest holds https://dashboard.zid.sa/assets/manifest-48694231.js: the address is code or a schema the platform ships
+S02-ZD-N17	observed	run 20261028T170107Z-devstore-markets-en records a store, dashboard or session
 S02-BC-001	stated	the address is a docs, help or other page
 S02-BC-002	stated	the address is a docs, help or other page
 S02-BC-003	stated	the address is a docs, help or other page
