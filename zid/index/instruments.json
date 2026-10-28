@@ -1,0 +1,78 @@
+{
+  "zid": {
+    "demo_entry": {
+      "url": "https://dashboard.zid.sa/en-sa/demo",
+      "what": "opens the merchant dashboard signed in as the owner of the store below; every visitor is signed in to the same store",
+      "sign_in_call": "POST https://hermod.zid.sa/v1/managers/login (answered 429 in run 20261028T144855Z-dashboard-routes-en, step 1)",
+      "run": "20261028T144855Z-dashboard-routes-en"
+    },
+    "account": {
+      "user_id": 141744,
+      "name": "Zid Demo Store",
+      "email": "demostorezid@gmail.com",
+      "mobile": "966594406244",
+      "language_code": "en",
+      "roles": [
+        "store.owner"
+      ],
+      "business_location": {
+        "country": "SA",
+        "city": "Dammam",
+        "is_address_confirmed": true
+      },
+      "seen_in": "zid/raw/runs/20261028T144855Z-dashboard-routes-en/answers/hermod.zid.sa/v1/managers/account/profile/c9cbd4a41b31067c2792f8f4e479cc179686916c98a152523b27bc4227c498bf.json",
+      "date": "2026-10-28"
+    },
+    "store": {
+      "id": 127604,
+      "uuid": "f108d30b-5f05-4d23-9312-2e8e3006f0b1",
+      "title": "Demo Store",
+      "url": "https://zid-demostore.com/",
+      "timezone": "Asia/Riyadh",
+      "currency": "SAR",
+      "currencies": [
+        "SAR",
+        "KWD",
+        "BHD",
+        "AED",
+        "OMR"
+      ],
+      "languages": [
+        "ar",
+        "en"
+      ],
+      "created_at": "2021-08-22 23:00:50",
+      "subscription": {
+        "package_code": "new_professional.yearly",
+        "package_name": {
+          "ar": "الاحترافية",
+          "en": "Professional"
+        },
+        "subscribed_at": "2025-11-05T00:00:00+00:00",
+        "expired_at": "2026-11-05T00:00:00+00:00",
+        "is_trial": false
+      },
+      "markets": "none: GET https://hermod.zid.sa/v1/markets answered {\"results\": [], \"next\": null, \"previous\": null} (zid/raw/runs/20261028T150740Z-settings-gaps-en/answers/hermod.zid.sa/v1/markets/571f89160e17b66124ea9ffae2dfec02894ece83cdd588d26dabfa202f79757e.json, step 10)",
+      "seen_in": "zid/raw/runs/20261028T144855Z-dashboard-routes-en/answers/hermod.zid.sa/v1/managers/account/profile/c9cbd4a41b31067c2792f8f4e479cc179686916c98a152523b27bc4227c498bf.json",
+      "date": "2026-10-28",
+      "feature_flags": {
+        "must_use_markets_pricing": false,
+        "seen_in": "zid/raw/runs/20261028T144855Z-dashboard-routes-en/answers/hermod.zid.sa/v1/managers/store/feature-flags/e8462761738b04a05ac4dbb23d72d6a03fea65af48b988875daf38dcd85d2482.json"
+      }
+    },
+    "storefront": {
+      "url": "https://zid-demostore.com/",
+      "run": "20261028T145325Z-storefront-first-visit-en"
+    },
+    "browser": {
+      "profile": "capture-profile (git-ignored)",
+      "cdp_port": 9230,
+      "chrome": "154.0.8037.57",
+      "network": {
+        "loc": "YE",
+        "colo": "MCT"
+      },
+      "run": "20261028T144855Z-dashboard-routes-en"
+    }
+  }
+}
