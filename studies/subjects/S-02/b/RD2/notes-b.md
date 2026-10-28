@@ -673,3 +673,64 @@ Most statements of this round are observations of one store on one day, 28 Octob
   - S02-ZD-473, the dialog of 'More > Remove market' on settings/markets ('Remove Kuwait This market will be permanently deleted. This action cannot be undone. Cancel Remove'), development store 3277610, run 20261028T170107Z-devstore-markets-en, step 44: a control in the store's admin, so the seller removes a market (rule 4). It replaces S02-V-447.
   - S02-ZD-461, the store permission '"slug": "markets.delete", "name": "Delete markets"' on the demo store 127604 (run 20261028T144855Z-dashboard-routes-en, step 1): a staff permission that gates deleting a market, its own answer by rule 4, the new row S02-V-486.
   - S02-ZD-460, the store permission '"slug": "markets.create", "name": "Create markets"' on the same store and step: a staff permission that gates creating a market, placed under S02-VP-28 as the new row S02-V-487. It names 'markets.edit' only among the permissions markets.create relies on ('"relies_on": ["markets.view", "markets.edit", "markets.products.edit"]'), not what markets.edit gates, so it isn't placed under S02-VP-29.
+
+### Statements noted under (e)
+
+- S02-SA-528 (e): 'Manage every market Run all your markets from one dashboard with independent settings for each market. Set market-specific pricing Adjust product prices to match each market and currency.': a market's settings and its prices, under (f); states no definer, limit or party for a market, as S02-SA-065, the same sentence, is noted above
+- S02-SA-529 (e): 'Customize each market Tailor your store’s design and content to connect with local customers.', 'Choose the sign-in methods available to customers in each market.' and 'Control which products are available in each market based on customer demand.': a market's settings (its design and content, sign-in methods, products), under (f); states no definer, limit or party for a market
+
+### Statements placed (`place` tasks)
+
+salla (the runs of 28 October on the public demo, giftshop2024, badge Special, and the demo store, store-sherawya, Pro):
+- S02-SA-517 (Settings > Markets, the public demo, run 20261028T153241Z-journey-markets-public-demo-en, step 4): 'Start creating new markets and selling in multiple countries.', the words of S02-SA-053, joined S02-V-438 under S02-VP-28 (the seller creates a market), where S02-SA-053 stands. 'selling in multiple countries' names where the store sells, not what a market is, so it isn't placed under S02-VP-26, as S02-SA-053 isn't.
+- S02-SA-518 (Settings > Markets, the demo store, run 20261028T154256Z-journey-markets-demo-store-en, step 3): the same words with the control 'Activate', joined S02-V-438, and S02-V-439 under S02-VP-29, as S02-SA-026's control 'فعل الآن' stands in both (the seller's controls switch the multiple markets feature on).
+- S02-SA-527 (Products > Multi Market, the public demo, step 5): the control 'Create your first market', joined S02-V-438. 'Sell across countries and markets' states no definer, so it isn't placed under S02-VP-26.
+- S02-SA-530 (/localization/journey, 'Default market', step 17): 'Create your first market and choose the countries and settings that best fit your customers.', the words of S02-SA-061, with 'Countries Saudi Arabia' and the control 'Create market', joined S02-V-431 under S02-VP-26 (countries define a market) and S02-V-438, where S02-SA-061 stands.
+- S02-SA-531 (the default market's countries field, step 7): 'Select countries [Search] Saudi Arabia United Arab Emirates Kuwait Qatar Bahrain Oman Egypt United Kingdom United States', joined S02-V-431.
+- S02-SA-532 (the dialog after 'Create market', run 20261028T155312Z-journey-markets-public-demo-en, step 29): 'Confirm activating this feature', joined S02-V-438 and S02-V-439, as S02-SA-026's 'اضغط (تأكيد)'; 'Once enabled, it cannot be disabled except by contacting the Account Manager.', joined S02-V-473 under S02-VP-29 (the account manager), with S02-SA-055 and S02-SA-059.
+- S02-SA-533 (the write the 'Confirm' sent, POST api.salla.dev/admin/v2/multi-countries/activate, the same run): its body's 'countries' joined S02-V-431; the write on the seller's 'Confirm' joined S02-V-438 and S02-V-439, as S02-SA-532.
+- S02-SA-534 (the write's 422 answer, the same run): 'The multi-country feature was previously deactivated. To reactivate it, please contact support.' Two new rows, each its own answer by rule 4, as S02-SA-054 ('Contact your account manager to enable this feature.') stands in S02-V-472 and S02-V-473: S02-V-488 under S02-VP-28 and S02-V-489 under S02-VP-29, 'To reactivate it, please contact support.' (support, a party the statement names). That the multi-country feature is the multiple markets feature is a reading, marked in both rows.
+
+zid (the runs and structures of 28 October on the demo store 127604 and the development store 3277610, and zid's changelog):
+- S02-ZD-485 (the subscription policies of the demo store 127604, plan new_professional.yearly, run 20261028T144855Z-dashboard-routes-en, step 1): '"key": "markets_management.active_markets", "enabled": true, "config": {"limit": 5}', the key and limit of S02-ZD-151, joined S02-V-445 under S02-VP-27.
+- S02-ZD-487 (the Kuwait market's manage page on the development store 3277610, run 20261028T170107Z-devstore-markets-en, step 12): 'Countries Kuwait [Select countries]' joined S02-V-440 under S02-VP-26; the page's controls ('Save', 'Market name (Arabic)', 'Countries', 'Market currency', 'Show market Publish market') joined S02-V-447 under S02-VP-29 (the seller changes a market). It shows no control that creates a market, so it isn't placed under S02-VP-28.
+- S02-ZD-488 (the dashboard's code, the save of route settings/markets/:id/manage): 'country_codes:r' joined S02-V-440; the save joined S02-V-447, read as the save of the seller's changes on S02-ZD-487's page (a reading, marked in the row: the code's words name no party; see "Problems").
+- S02-ZD-492 (the dashboard's message common:upgrade.marketLimitReached): 'You have reached the maximum number of markets allowed in your package.', joined S02-V-444 under S02-VP-27 (the plan limits how many markets a store holds).
+- S02-ZD-494 (zid's changelog, changelog.zid.sa/ar, its entry 'المنتجات ١٨, ١٠, ٢٠٢٦'): 'ويبدأ متجرك بسوق رئيسي تلقائيًا' (my translation: and your store starts with a main market automatically) is the new row S02-V-490 under S02-VP-28 (the platform, by 'تلقائيًا', automatically: rule 4); 'وتقدر تضيف أسواق أخرى حسب باقتك' (my translation: and you can add other markets according to your plan) joined S02-V-446 under S02-VP-28 (the seller) and S02-V-444 under S02-VP-27 (the plan). 'سوق رئيسي' names a market, not what defines it, so it isn't placed under S02-VP-26.
+
+### RD2-S4: rows replaced or removed
+
+- S02-V-442 (zid, S02-VP-26): `gap` S02-ZD-G06, removed; its leads S02-ZD-471 and S02-ZD-472 joined S02-V-440. Gap-closing settled S02-ZD-G06: the work list names no gap or absence for the point.
+- S02-V-447 (zid, S02-VP-29): `gap` S02-ZD-G05, replaced by the answer 'Remove Kuwait This market will be permanently deleted.' (S02-ZD-473, the seller); S02-V-486 ('"slug": "markets.delete", "name": "Delete markets"', S02-ZD-461) added beside it. Gap-closing settled S02-ZD-G05: the work list names no gap or absence for the point.
+- New rows: S02-V-486 and S02-V-489 (S02-VP-29), S02-V-487, S02-V-488 and S02-V-490 (S02-VP-28).
+
+### RD2-S4: rows `not covered`
+
+None. Salla and zid have no `gap`, `absent` or `not covered` row left under RD2's points.
+
+### RD2-S4: matching (rule 5)
+
+The `raised_by` of S02-VP-26 (S02-SH-077, S02-SH-065, S02-SH-279), S02-VP-27 (S02-SH-111, S02-SH-301, S02-SH-286), S02-VP-28 (S02-SH-115, S02-SH-116, S02-SH-288) and S02-VP-29 (S02-SH-061, S02-SH-128, S02-SH-288) hold only shopify's statements. The new rows share no term, identifier or definition with them: S02-V-486 and S02-V-487 name zid's own permission slugs, where S02-SH-288 names the error code 'USER_LACKS_PERMISSION'; S02-V-490 says what S02-SH-116 says ('created for you automatically'), with no term of `terms.tsv` in common; S02-V-488 and S02-V-489 name support, whom no raised_by statement names. Each takes `answers` alone. Statements joined to rows of their own platform were compared with those rows' statements: S02-SA-517 and S02-SA-518 with S02-SA-053 (the same words), S02-SA-530 with S02-SA-061 (the same words), S02-ZD-485 with S02-ZD-151 (the same key, 'markets_management.active_markets'); rechecked, the rows joined (S02-V-431, S02-V-438, S02-V-439, S02-V-440, S02-V-444, S02-V-445, S02-V-446, S02-V-447, S02-V-473) keep `answers`, since rule 5's other bases compare with another platform's statement.
+
+### RD2-S4: new kinds, searches and x_words
+
+- New kinds: none; (e)'s points take no kind (rule 3).
+- Searches for earlier platforms' rows: none; the second pass raised no point.
+- x_words added for zid: 'market' (S02-VP-26: 'Market details', S02-ZD-487); 'markets; أسواق' (S02-VP-27: S02-ZD-492, S02-ZD-494); 'markets; أسواق; سوق رئيسي' (S02-VP-28: 'Create markets', S02-ZD-460; S02-ZD-494); 'market; markets' (S02-VP-29: 'Remove market', S02-ZD-473; 'Delete markets', S02-ZD-461). None for salla: its statements call X 'market', as salla's x_words already hold it.
+
+### Candidates for a new point (RD2-S4)
+
+None. Every statement of these tasks that answers one of (e)'s questions does so for salla's or zid's market, a market a store sells into, the one X of (e)'s points. Salla's 'multi-country feature' (S02-SA-534) and 'this feature' (S02-SA-532) are the feature that holds the markets, as S02-SA-054's 'this feature' is in S02-V-472, not another X.
+
+### RD2-S4: row notes added
+
+- S02-V-441: its note now says that S02-V-442, the gap row its evidence names (S02-ZD-G06), is removed, that its leads joined S02-V-440, and why S02-ZD-471 doesn't join S02-V-441 (rule 0).
+
+### RD2-S4: problems with the method
+
+- RD2's slice was cut again during this part (its `statements.tsv` at 22:46 on 28 October, after the work list at 22:38). S02-ZD-492 printed kind 'unknown' before and 'shipped' after; every row of this part was written after the new cut, so its rows take the new kinds. No other statement of these tasks changed its kind, bullets or scope.
+- S02-ZD-488 joined S02-V-447 (the seller changes a market) on its identifier, the save of the admin's route settings/markets/:id/manage, whose page S02-ZD-487 shows with its 'Save'; the code's own words name no party, and the row marks this as a reading. If code that names no party can't answer `who changes or removes "market"` through its route, S02-ZD-488 leaves S02-V-447 and stays in S02-V-440.
+- S02-SA-518 ('Activate'), S02-SA-532 ('Confirm activating this feature') and S02-SA-533 (the write on 'Confirm') joined S02-V-439 under S02-VP-29, and S02-SA-534 ('To reactivate it, please contact support.') made S02-V-489 there, as S02-SA-026 (the seller's controls that switch the feature on) and S02-SA-054 ('Contact your account manager to enable this feature.') stand under S02-VP-29 beside S02-VP-28 (rule 4, as widened on 27 October 2026). If switching the multiple markets feature on isn't a change of a market, they leave S02-V-439, and S02-V-489 goes, with S02-SA-534 staying in S02-V-488.
+- S02-ZD-G06 asked what the default market (السوق الافتراضي, S02-ZD-012) holds. The work list names no gap left, and the leads show the primary market 'Main Market' (السوق الرئيسي) and its countries (S02-ZD-471); S02-ZD-494 says the store starts with a main market (سوق رئيسي) automatically. Zid's terms hold السوق الرئيسي and السوق الافتراضي as separate terms, so S02-ZD-471 joined S02-V-440 only, and S02-V-446's note (S02-ZD-012 doesn't say who creates the default market) stands beside the new row S02-V-490. If the two terms name one market, S02-ZD-471 joins S02-V-441 too. The coordinator decides.
+- Salla's `a2.tsv` names S02-SA-517, S02-SA-518, S02-SA-527, S02-SA-528 and S02-SA-529 for S02-VP-26, and S02-SA-530 for S02-VP-27, as leads. Their words state no definer of a market ('selling in multiple countries', 'Sell across countries and markets'), or, for S02-SA-530, no limit: its marks 'Market name *' and 'Market branches and warehouses *' would be a rule on what a market must hold only as a reading of the asterisks. So they aren't placed under those points.
+- `place` tasks have no `done` line, as RD2-S2 and RD2-S3 read the brief: `second_pass_list.py --check` lists only revisit, reread and note tasks. Both revisits have their `done` lines.

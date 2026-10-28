@@ -1322,3 +1322,66 @@ None. Every task named its statements, each was printed by id, and no point was 
 
 ### Candidates for a new point
 - None. Each statement that answers one of (f)'s questions does so for an X of one of rule 1's kinds. Those noted above fail on the answer, which is none of rule 4's four phrases and names no party, not on their X.
+
+## Second pass, RD3-S12: zid, bullet f, the Salla and Zid round's tasks
+
+From A2-ZD-R and A3-ZD-R (other-product-class f44be3f, folder `zid/`). The new leads are observations of two stores, the public demo (127604, Professional) and the development store (3277610), which held a second market (Kuwait) for a time; both have the feature flag `must_use_markets_pricing` false. Each row written here keeps its statements' scope (store, plan, flag, run and step): what one store showed on one day isn't what every Zid store does. The absences S02-ZD-N05 to S02-ZD-N16, each that the dashboard's complete list of routes holds no page under a market for one setting, are confirmed by A3-ZD-R; where a lead gives the row's answer, the absence is cited in that row's `basis_evidence`, as RD3-S9 did for Salla's (S02-V-716, S02-V-886, S02-V-1093).
+
+### Revisit S02-V-1067 (zid, S02-VP-67, locations): was `gap` (S02-ZD-G12)
+- Replaced by the whole store (a reading): S02-ZD-451 (the Priority for withdrawal from warehouse page: one ordered list of the store's locations, no market field) and S02-ZD-452 (the locations answer: one `fulfillment_priority` per location, no market field); absence S02-ZD-N07 cited there.
+- Added S02-V-1123, gap S02-ZD-G25 (in place of S02-ZD-G12): per sales channel or per buyer's city.
+- S02-V-791 (a market, a reading of S02-ZD-280's sales channel per inventory) stays. The other leads (S02-ZD-269 to S02-ZD-287) stay as the revisit of S02-V-791 placed or noted them.
+
+### Revisit S02-V-1070 (zid, S02-VP-72, who sets staff access): was `gap` (S02-ZD-G17)
+- Removed: why names no gap, so gap-closing settled S02-ZD-G17. Lead S02-ZD-459 (the Create group page in the store's admin) joined S02-V-796 (the seller), which the platform's rows already hold. The other leads stay in S02-V-796, S02-V-1069 or noted, as the earlier revisit placed them. Absence S02-ZD-N11 is of a route under a market, so it is cited under S02-VP-71 (S02-V-795), not here.
+
+### Revisit S02-V-774 (zid, S02-VP-55, checkout and customer accounts): was `gap` (S02-ZD-G10)
+- Replaced by the whole store (a reading): S02-ZD-448 (Buy as a guest, shown once on settings/checkout, no country or market field) and S02-ZD-449 (the store's settings answer, one value per key: `is_single_page_checkout_enabled`); absence S02-ZD-N05 cited there.
+- Added S02-V-1124, gap S02-ZD-G24 (in place of S02-ZD-G10): per buyer's country.
+- S02-ZD-448 also joined S02-V-775 (S02-VP-56, the seller: a control in the store's admin).
+- S02-ZD-449 names several settings (rule 2), so it also joined S02-V-753 (S02-VP-41, the whole store: one `config_currency`) and S02-V-759 (S02-VP-43, the whole store: one `config_language`), and goes under S02-VP-68 and S02-VP-77 with their revisits.
+- The other leads (S02-ZD-247 to S02-ZD-254, S02-ZD-257) stay as the earlier revisit placed or noted them.
+
+### Revisit S02-V-789 (zid, S02-VP-65, returns and cancellations): was `gap` (S02-ZD-G22)
+- Replaced by the whole store (a reading): S02-ZD-466 (the Exchange and returns page, one page of the store, no country or market field; its 'For Saudi stores' points to the Ministry's rules and sets no value); absence S02-ZD-N15 cited there.
+- Added S02-V-1125, gap S02-ZD-G28 (in place of S02-ZD-G22): per buyer's country.
+- S02-ZD-466 also joined S02-V-790 (S02-VP-66, the seller: the page's Save in the store's admin). The other leads (S02-ZD-212 to S02-ZD-219, S02-ZD-221, S02-ZD-222) stay as the earlier revisits placed or noted them.
+
+### Revisit S02-V-792 (zid, S02-VP-68, contact information shown to buyers): was `gap` (S02-ZD-G11)
+- Replaced by the whole store (a reading): S02-ZD-450 (the Store information page: one Email and one Phone that appear to the customer in the storefront, no market or country field) and S02-ZD-449 (one `config_email`, `config_telephone` and `commercial_registration_number`); absence S02-ZD-N06 cited there. Why names no gap: S02-ZD-G11 was settled by gap-closing, and goes.
+- S02-ZD-450 also joined S02-V-803 (S02-VP-79, the seller). S02-ZD-266 to S02-ZD-268 stay in S02-V-803.
+
+### Revisit S02-V-795 (zid, S02-VP-71, staff access): was `gap` (S02-ZD-G17)
+- Replaced by the whole store (a reading): S02-ZD-459 (the Create group page asks a group's name and users, no market field); absence S02-ZD-N11 cited there. Why names no gap: S02-ZD-G17 was settled by gap-closing, and goes.
+- S02-ZD-459 also joined S02-V-796 (S02-VP-72, the seller), with the revisit of S02-V-1070. The other leads stay as the earlier revisit placed or noted them.
+
+### Revisit S02-V-799 (zid, S02-VP-75, privacy and consent): was `gap` (S02-ZD-G18)
+- Replaced by the whole store (a reading): S02-ZD-462 (the Privacy policy page, headed 'Privacy policy for your store', no country or market field); absence S02-ZD-N12 cited there.
+- Added S02-V-1126, gap S02-ZD-G26 (in place of S02-ZD-G18): the policy or the opt-outs per buyer's country, and the opt-outs per market.
+- S02-ZD-462 also joined S02-V-808 (S02-VP-84, the seller). The other leads (S02-ZD-334 to S02-ZD-339) stay as the earlier revisit placed or noted them.
+
+### Revisit S02-V-801 (zid, S02-VP-77, units and time zone): was `gap` (S02-ZD-G21)
+- Replaced by the whole store (a reading; `answers;term`): S02-ZD-465 ('Selecting your store's time zone', one field of Business address) and S02-ZD-449 (one `default_timezone`); absence S02-ZD-N14 cited there. `term`: 'Time zone', the same words as S02-SH-246 (raised_by); terms.tsv defines neither differently.
+- Added S02-V-1127, gap S02-ZD-G27 (in place of S02-ZD-G21): whether any setting holds a unit of weight or measurement.
+- S02-ZD-465 also joined S02-V-1103 (S02-VP-91, the seller), where S02-ZD-346 stays.
+
+### Revisit S02-V-804 (zid, S02-VP-80, store status): was `gap` (S02-ZD-G20)
+- Replaced by the whole store (a reading): S02-ZD-463 ('Manage your store closure or stop receiving orders.', the Hours of operation page) and S02-ZD-464 (one set of the store's availability settings, `is_store_closed`); absence S02-ZD-N13 cited there. Why names no gap: S02-ZD-G20 was settled by gap-closing, and goes.
+- S02-ZD-463 also joined S02-V-805 (S02-VP-81, the seller). S02-ZD-340 to S02-ZD-345 stay in S02-V-805 and S02-V-1087.
+
+### Revisit S02-V-870 (zid, S02-VP-85, the store's country): was `gap` (S02-ZD-G23)
+- Replaced by the whole store (a reading): S02-ZD-467 (one country in the store's business place, Business address > Country) and S02-ZD-471 (the primary market's own countries, unchanged after the store's country was changed to Kuwait, as its scope records); absence S02-ZD-N16 cited there.
+- Why names gap S02-ZD-G29, which is under a bullet outside RD3's slice (the slice's gaps for zid end at S02-ZD-G28), so it gives no gap row, as the earlier revisit found for S02-ZD-G01.
+- S02-ZD-471 also joined S02-V-751 (S02-VP-41, a market: the market's own `main_currency`). S02-ZD-226 stays noted. S02-ZD-468 and S02-ZD-472 are outside the slice, left. S02-ZD-467 is under (a) too: RD1's, left.
+
+### Revisit S02-V-875 (zid, S02-VP-86, apps): was `gap` (S02-ZD-G15)
+- Replaced by the whole store (a reading; `answers;term`): S02-ZD-455 (the My apps page: one list of the store's activated and deactivated apps, no market field) and S02-ZD-456 (one list of the store's installed applications); absence S02-ZD-N09 cited there. The 'market' in S02-ZD-456's path is Zid's app market (سوق تطبيقات زد), a homonym, not a market the store sells into: no basis rests on it. `term`: 'apps', as S02-BC-147 (raised_by). Why names no gap: S02-ZD-G15 was settled by gap-closing, and goes.
+- The other leads stay noted (S02-ZD-303, S02-ZD-305, S02-ZD-307, S02-ZD-309 to S02-ZD-312, RD3-S4) or in S02-V-1111 (S02-VP-92, the seller), as earlier parts placed them. S02-ZD-308 is outside the slice, left.
+
+### Revisit S02-V-879 (zid, S02-VP-87, analytics and tracking): was `gap` (S02-ZD-G14)
+- Replaced by the whole store (a reading): S02-ZD-453 and S02-ZD-454 (each tracking app's activation page asks one Account code, no market field) and S02-ZD-456 (one Google Analytics among the store's installed apps); absence S02-ZD-N08 cited there. Why names no gap: S02-ZD-G14 was settled by gap-closing, and goes.
+- S02-ZD-453 and S02-ZD-454 also joined S02-V-883 (S02-VP-88, the seller) and S02-V-1111 (S02-VP-92, the seller: an app's activation is the app's own setting). S02-ZD-293 to S02-ZD-298 stay in S02-V-883; S02-ZD-299 stays noted.
+
+### Revisit S02-V-887 (zid, S02-VP-89, notifications to the merchant): was `gap` (S02-ZD-G16)
+- Replaced by the whole store (a reading): S02-ZD-457 (the Staff notifications page: one set of statuses and e-mails) and S02-ZD-458 (one `order_statuses` and one `emails`, no market field); absence S02-ZD-N10 cited there. Why names no gap: S02-ZD-G16 was settled by gap-closing, and goes.
+- S02-ZD-457 also joined S02-V-891 (S02-VP-90, the seller). S02-ZD-313 to S02-ZD-317 stay in S02-V-891, S02-ZD-318 in S02-V-1088.
