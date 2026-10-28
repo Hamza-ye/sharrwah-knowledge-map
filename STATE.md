@@ -83,9 +83,14 @@ At phase A's end, the checker found every quote, 3,193 of them, and no error. Wi
   - **Answered:** 10 gaps. Seven of those answers rest on absences from the dashboard's complete route list: it holds no page under a market for those settings.
   - **Narrowed:** 10 gaps, into G24 to G33. Only G30 (who checks a store's country after it changes) stays open, for RD1's analysis. The others can't change an S-02 decision, or belong to a later subject (S-03, S-05, S-07).
   - **Closed:** 3, which can't change a decision.
-- **Running:**
-  - the audit of Zid's 13 absences, by an agent that didn't record them (A3-ZD-R);
-  - phase B's round for the new statements, in four parts ([`b/second-pass/parts.tsv`](studies/subjects/S-02/b/second-pass/parts.tsv)): 25 rows to revisit, because they name a gap since settled, and 50 statements to place.
+- **The audit of Zid's absences (A3-ZD-R):**
+  - **Confirmed: 12.** The market's own page and its code hold only its name, countries, currency and publication, and no setting's page names a market.
+  - **Contradicted: 1, on countries.** Zid's cities answer covers 173 countries, more than the 162 a store's address offers.
+- **Phase B's round is done,** in five parts ([`b/second-pass/parts.tsv`](studies/subjects/S-02/b/second-pass/parts.tsv), [`method-report.md`](studies/subjects/S-02/method-report.md), section 13). The full check finds no error and nothing unplaced: 75 points, 923 rows. The coordinator's rulings are in [`b/second-pass.md`](studies/subjects/S-02/b/second-pass.md).
+- **Phase C is running:**
+  - again on the RD2 and RD3 keys the round touched (C-R2a done; C-R2b running);
+  - RD1's first comparison (C-RD1-1 running; C-RD1-2 next).
+- **A container restart on 28 October** stopped two parts. Both resumed from their transcripts, and nothing was lost.
 
 **Earlier:**
 - **Phase B's first pass is complete** ([`method-report.md`](studies/subjects/S-02/method-report.md), section 7): 73 variation points, each with a row for every platform, 671 rows, in [`variation-points.tsv`](studies/subjects/S-02/variation-points.tsv) and [`variants.tsv`](studies/subjects/S-02/variants.tsv). The full check gives no error.
@@ -95,14 +100,14 @@ At phase A's end, the checker found every quote, 3,193 of them, and no error. Wi
 - **Cost:** 1,436 million agent tokens by 22:09 UTC on 28 October, past the budget plus a quarter (875 million). The cost came to the founder at 09:55 on 27 October ([the frame's budget](studies/subjects/S-02/frame.md#budget)). The capture round cost 55 million; reading Salla's and Zid's captures cost 22 million. S-02 is projected at about 1.5 to 1.6 billion. The work goes on on the founder's Max x20 plan. The coordinating session's own tokens: 777 million since S-02 began.
 
 **Next:**
-1. Finish phase B's round (RD1-S7 running; RD2-S4; then, after the audit, RD3-S12 and RD1-S8), with the full check giving no error.
-2. Phase C again on the keys the round touched (RD2, RD3); then RD1's phase C (C-RD1-1, C-RD1-2).
-3. S-02's end, in the tested form of 28 October. Its seven questions become one decision, the market model:
-   - what a market can be made of;
-   - how a setting resolves: the store's value, then the market's, then the buyer's context;
-   - which settings can vary.
-
-   It is drafted with its options, tested against scenarios from the founder's markets, attacked by an agent that didn't draft it, and tried in a spike. Yemen is one scenario among them. Then the independent review, and the report for G3.
+1. Finish phase C: C-R2b, C-RD1-1 and C-RD1-2.
+2. Record its results: the method report, the frame's budget, and this file.
+3. S-02's end, by the plan's steps: for each root decision, the Yemen row and the scenario walk; then the register, the independent review, and the report for G3. The register asks the per-market question once, not setting by setting.
+   - **If the founder says yes to the architecture track** (the answer lines of 28 October), its seven questions become one decision, the market model:
+     - what a market can be made of;
+     - how a setting resolves: the store's value, then the market's, then the buyer's context;
+     - which settings can vary.
+   - That decision is drafted with its options, tested against scenarios from the founder's markets, attacked by an agent that didn't draft it, and tried in a spike. Yemen is one scenario among them.
 4. BigCommerce and WooCommerce, when the founder's local agent pushes them: their 10 gaps that could change a decision are read; 13 are closed ([`gap-assessment.tsv`](studies/subjects/S-02/gap-assessment.tsv)).
 
 **To resume:** read `PLAN.md`, this file and `founder-decisions.tsv`.
