@@ -17,5 +17,5 @@ RD3-S9	RD3	f; g	salla	the last round's Salla tasks: the rows whose why begins 'l
 RD3-S10	RD3	f; g	zid; woocommerce; bigcommerce; shopify	the last round's other tasks under RD3: the rows whose why begins 'last round', on Zid, WooCommerce, BigCommerce and Shopify, from A2-T, A2-SH-H, A2-SA-H and A3-2	19	35	done
 RD2-S2	RD2	e; g	shopify; salla; woocommerce; bigcommerce	the last round's tasks under RD2: the rows whose why begins 'last round'	20	25	done
 RD1-S6	RD1	a; b; c	shopify	the capture round's tasks under RD1: the rows whose why begins 'capture round', from A2-SH-R1 and A2-SH-R2 (observed-sh 19a5f6435)	71	85	running
-RD2-S3	RD2	e	shopify	the capture round's tasks under RD2: the rows whose why begins 'capture round', from A2-SH-R1 and A2-SH-R2 (observed-sh 19a5f6435)	9	26	ready
-RD3-S11	RD3	f	shopify	the capture round's tasks under RD3: the rows whose why begins 'capture round', from A2-SH-R1 and A2-SH-R2 (observed-sh 19a5f6435)	39	60	running
+RD2-S3	RD2	e	shopify	the capture round's tasks under RD2: the rows whose why begins 'capture round', from A2-SH-R1 and A2-SH-R2 (observed-sh 19a5f6435)	9	26	running
+RD3-S11	RD3	f	shopify	the capture round's tasks under RD3: the rows whose why begins 'capture round', from A2-SH-R1 and A2-SH-R2 (observed-sh 19a5f6435)	39	60	done
