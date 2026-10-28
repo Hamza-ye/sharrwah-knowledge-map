@@ -701,8 +701,8 @@ if ans is not None or pts is not None:
         if n > 1:
             err("answers.tsv", k[0], f"{n} rows for the key {k[1]!r}")
     for r in ans or []:
-        if r["vp_id"] not in vp:
-            err("answers.tsv", r["vp_id"], "not a variation point")
+        if r["vp_id"] not in vp and rd_of_vp(r["vp_id"]) in rds_present:   # as for a2.tsv: checked where its
+            err("answers.tsv", r["vp_id"], "not a variation point")          # root decision's points are present
         if r["cause"] not in CAUSES:
             err("answers.tsv", r["vp_id"], f"cause '{r['cause']}' is not one of {CAUSES}")
         if r["founder_item"]:

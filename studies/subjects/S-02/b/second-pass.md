@@ -48,3 +48,14 @@ RD3 now has 52 points, within its cap of 59. Part RD3-S8 gives each a row for ev
   - the connection of a Salla store's product catalog to Meta (S02-SA-407, part RD3-S7);
   - the city a buyer picks in Zid's Region & Language popup (S02-ZD-288), set on each visit.
 - **Returns and the national address, under (c)** (S02-SA-376, S02-SA-383 to S02-SA-385, S02-SA-400, S02-SH-928). Each is a buyer's right, or an order's address, under a country's law. Returns have their own points under (f) (S02-VP-65, S02-VP-66). A statement that names a law is phase C's evidence for a cause, `market, named rule`.
+
+## The coordinator's rulings when the capture round's parts ended (28 October 2026)
+
+The capture round placed Shopify's statements from A2-SH-R1 and A2-SH-R2 (parts RD1-S6, RD2-S3 and RD3-S11). Each part listed its calls for review in its section of `notes-b.md`. The coordinator rules on these:
+- **S02-V-303 removed; S02-SH-1083 and S02-SH-1084 joined S02-V-053.** RD1-S6 read the business details form's required fields as the platform checking the business entity, under S02-VP-05, who checks. They are "Registered legal business name is required" and "Legal entity must have exactly one account representative.". The point's X is Shopify's "new information", which its banking partners re-run "through their verification process" (S02-SH-580). A form that refuses to save until its fields are filled verifies nothing the details say. It is a condition of the seller's own save, as S02-SH-437 is, which S02-V-053 holds beside the same form's S02-SH-1082 and S02-SH-1085. The word "Legal entity" the part added to S02-VP-05's x_words goes with the row.
+- **The Backup Region control, left as each part placed it.** Earlier parts placed the control observed in Settings > General (S02-SH-345, S02-SH-398 to S02-SH-404) under S02-V-668 only (S02-VP-73, the whole store). RD3-S11 placed the capture round's observations of it under S02-V-668 and also under S02-V-669 (S02-VP-74, the seller), by rule 4. Shopify already gives `the seller` under S02-VP-74 from a stated source (S02-SH-233), so the earlier statements' absence from S02-V-669 changes no key. They are left as they are.
+- **The other calls stand,** each a reading its part recorded:
+  - S02-SH-1035, the sign-up's "Yemen" before any input, under the platform (S02-V-054);
+  - "I'm selling from" read as the store's own country (S02-V-053, S02-V-244);
+  - S02-SH-1138's "countries and regions" read as the buyer's country (S02-V-634, under S02-VP-57);
+  - S02-SH-1146 and S02-SH-1149 under the whole store (S02-V-650), since some orders always go to the primary entity.
