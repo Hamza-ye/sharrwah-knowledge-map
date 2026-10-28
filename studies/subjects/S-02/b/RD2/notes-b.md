@@ -589,3 +589,73 @@ None. The statements of these tasks that answer one of (e)'s questions do so for
 - S02-SH-1025's 'SHOP_REACHED_MARKETS_LIMIT' joined S02-V-413 by the same key as S02-SH-286, which the schema marks deprecated ('"isDeprecated":true', 'No longer used'). The admin's code names the key with no number. If the key in the admin's code is read as another limit than the schema's 50, S02-SH-1025 takes a row of its own for it, and stays in S02-V-412.
 - S02-BC-358 says the store owner or users with the permission install a third-party sales channel's app. That this creates a channel, S02-VP-28's question, is a reading, marked in S02-V-484 and S02-V-485.
 - `place` tasks have no `done` line: the brief's `done` records revisit, reread and note tasks, and `unplaced.tsv` checks the rest. The message's "Record each task with `done` as usual" was read that way.
+
+## Second pass, RD2-S3: the capture round's tasks of RD2's work list (after A2-SH-R1 and A2-SH-R2, observed-sh 19a5f6435), bullet (e); shopify
+
+Most statements of this round are observations of one store on one day, 27 October 2026. Each row they joined took its `kind` and `scope` again from all its statements (rule 6), and each `basis_evidence` added names the store, its plan, and the run and step: a run says what one store showed, not what every store does.
+
+### Revisits
+
+- S02-V-483 (shopify, S02-VP-27, was `gap` S02-SH-G12; RD2-S2 had revisited S02-V-471 into it). Its new leads are the runs of 27 October on demo-fake-dev-store (Basic App Development) and fake-demo-sharrwah (Advanced, paid). None states a limit, or a rule on how many markets a store can hold or on what one may hold, so none answers S02-VP-27 (see "Problems"). They say what defines a market, and joined S02-VP-26's rows:
+  - S02-SH-1101, the condition types' menu on demo-fake-dev-store ('menuitem "Regions"', 'menuitem "POS locations"', 'menuitem "Company locations"', 'menuitem "Channels"'), joined S02-V-401, S02-V-403, S02-V-404 and S02-V-405, which hold the same menu of S02-SH-304 and S02-SH-370;
+  - S02-SH-1113, the menu on fake-demo-sharrwah ('menuitem "Regions"', 'menuitem "Company locations"', 'menuitem "Channels"'), joined S02-V-401, S02-V-403 and S02-V-405; it shows no 'POS locations', so it didn't join S02-V-404;
+  - S02-SH-1102 and S02-SH-1103, markets of the type 'B2B' that include 'Powderbound' and 'Snowdevil', and S02-SH-1115, 'Condition type Company locations' with 'Include all existing and future locations in all regions', joined S02-V-403; that Powderbound and Snowdevil are company locations is a reading, marked there;
+  - S02-SH-1104 and S02-SH-1105, markets of the type 'Retail' that include 'Shop location' and 'Capture location 2', joined S02-V-404;
+  - S02-SH-1109, 'Condition type Channels' with 'Showing 0 channels No channels found', joined S02-V-405;
+  - S02-SH-1107 ('Capture submarket Germany Region Active', 'Includes Germany', 'Parent market Austria, Belgium, Czechia, Denmark, Finland, France, and others (European Union)') joined S02-V-401 and S02-V-406, and S02-SH-1108 ('Parent market European Union', on that parent market) joined S02-V-406: a market whose parent market is another market is a submarket (S02-SH-080, S02-SH-062). RD2-1 noted S02-SH-307, whose parent market is 'Store default'; these two name another market as the parent;
+  - S02-SH-1106, the markets list after the run's markets were saved, is noted below.
+
+  The leads earlier parts placed stay: S02-SH-1024 in S02-V-471; S02-SH-1025 in S02-V-412 and S02-V-413; S02-SH-689, S02-SH-704 and S02-SH-706 in S02-V-411; S02-SH-703 and S02-SH-704 in S02-V-424 and S02-V-470; S02-SH-707 in S02-V-412; S02-SH-689, S02-SH-706 and S02-SH-707 in S02-V-425. No lead gives S02-VP-27 an answer its rows don't hold. S02-SH-G16 says it is 'in place of S02-SH-G12', so S02-SH-G12 goes, and S02-V-483 is now `gap` S02-SH-G16, beside shopify's answers. The statements the `why` names outside the slice (S02-SH-1019 to S02-SH-1023, S02-SH-1112, S02-SH-1114, S02-SH-690 to S02-SH-702, S02-SH-705) are left.
+
+### Statements noted under (e)
+
+- S02-SH-1106 (e): the markets list on demo-fake-dev-store (Basic App Development, run 20261027T194903Z, step 63), 'Capture B2B market 1 Active Powderbound Capture B2B market 2 Active Snowdevil Currency Capture retail market 1 Active Shop location Currency Capture retail market 2 Active Capture location 2 Currency': four markets the run made and named, each 'Active'. Its own words state no limit or rule on how many markets a store can hold, and name no market's type or condition and no party; the markets it lists are those of S02-SH-1102 to S02-SH-1105, placed under S02-VP-26 (see "Problems")
+
+### Statements placed (`place` tasks)
+
+- Placed in S02-V-401 (countries define a Region market): S02-SH-1091 and S02-SH-1095, the market 'Capture UK market', 'Region', 'Includes United Kingdom', on capture-us-plus (Plus dev store) in two runs; S02-SH-1118, 'Capture checkout countries Region Active' with 'Includes Brazil Japan Saudi Arabia +1 more', and S02-SH-1120, the market Canada with 'Includes Brazil Canada Japan +2 more', both on demo-fake-dev-store.
+- Placed in S02-V-401 and S02-V-425: S02-SH-1100, the admin's 'MarketsHomeMarketCreate (marketCreate)' answer at 'step 10 (Save)' on capture-us-plus: its '"type":"REGION"' says what defines the market, and the admin's Save that created it is a control in the store's admin, the seller (rule 4). Its '"businessEntity":null' is (f)'s, RD3's.
+- Placed in S02-V-400 and S02-V-425: S02-SH-1093 and S02-SH-1116, the New market page ('Includes Add condition') on capture-us-plus and fake-demo-sharrwah: conditions define a market, and the seller creates it from the admin, as the rows already hold the New market pages S02-SH-368, S02-SH-407, S02-SH-415, S02-SH-419 and S02-SH-421.
+- Placed in S02-V-428 (the seller changes or removes a market): S02-SH-1110, 'Edit market handle Delete market' under 'More actions', and S02-SH-1111, the 'Delete Capture submarket Germany?' dialog with its 'Delete' button, both on demo-fake-dev-store: controls in the store's admin (rule 4). S02-SH-1120 also joined S02-V-428: its scope says Saudi Arabia, the United Arab Emirates, Japan and Brazil were 'added to the Canada market' and saved, a change of what a market includes, made with the admin's Save, as S02-SH-125 ('You can adjust which countries or regions belong to a market') has it.
+- Not placed under S02-VP-28 or S02-VP-29: S02-SH-1118, S02-SH-1102 to S02-SH-1105 and S02-SH-1107, whose scope names a 'Save' but not whether it created or changed the market.
+
+### Statements placed that RD2's work list doesn't hold
+
+S02-SH-1092, S02-SH-1094 and S02-SH-1095 are shopify's, under (e), in RD2's slice as cut again (28 October, 00:18), and were in no row and no note. RD2's work list (27 October, 23:50) has no task for them; shopify's `a2.tsv` names them for S02-VP-26, and S02-SH-1092 for S02-VP-28 too. By the brief's Output, step 5, they are this part's to place:
+- Placed in S02-V-401: S02-SH-1092, the markets list on capture-us-plus ('Market Status Includes', over 'Canada Active Canada' and 'United States Active United States'), its 'Includes' column read as each market's condition (a reading, marked in the row). It shows no control that creates a market, so it isn't placed under S02-VP-28.
+- Placed in S02-V-401, S02-V-403, S02-V-404 and S02-V-405: S02-SH-1094, the condition types' menu on capture-us-plus, with the same four items as S02-SH-1101.
+- Placed in S02-V-401: S02-SH-1095, with S02-SH-1091 (above).
+
+### RD2-S3: rows replaced or removed
+
+- S02-V-483 (shopify, S02-VP-27): `gap` S02-SH-G12, replaced by `gap` S02-SH-G16, which is 'in place of S02-SH-G12'. No lead gave S02-VP-27 an answer its rows don't hold, so no answer row was added.
+- No row removed.
+
+### RD2-S3: rows `not covered`
+
+None.
+
+### RD2-S3: matching (rule 5)
+
+The `raised_by` of S02-VP-26 (S02-SH-077, S02-SH-065, S02-SH-279), S02-VP-28 (S02-SH-115, S02-SH-116, S02-SH-288) and S02-VP-29 (S02-SH-061, S02-SH-128, S02-SH-288) hold only shopify's statements. Each statement joined was compared with its own platform's rows; rechecked, the rows joined (S02-V-400, S02-V-401, S02-V-403, S02-V-404, S02-V-405, S02-V-406, S02-V-425, S02-V-428) keep `answers`, since rule 5's other bases compare with another platform's statement.
+
+### RD2-S3: new kinds, searches and x_words
+
+- New kinds: none; (e)'s points take no kind (rule 3).
+- Searches for earlier platforms' rows: none; the second pass raised no point.
+- x_words: none added; the statements call X 'market', as shopify's x_words already hold it.
+
+### Candidates for a new point (RD2-S3)
+
+None. Every statement of these tasks that answers one of (e)'s questions does so for shopify's market, a market a store sells into, the one X of (e)'s points.
+
+### RD2-S3: problems with the method
+
+- S02-VP-27 and the runs of 27 October. On demo-fake-dev-store (Basic App Development), a second B2B market (S02-SH-1103), a second retail market (S02-SH-1105), and a market within a market within the market European Union (S02-SH-1107, S02-SH-1108) each showed 'Active', and the markets list held the four B2B and retail markets at once (S02-SH-1106); S02-SH-G16 adds that no step of the run showed a limit or upgrade message. These statements show how many markets one store held, not a limit or a rule, which is what an answer to `what limits "market"` names (rule 1), so they are placed under S02-VP-26, or noted, and S02-SH-G16 stands as shopify's `gap` row. If a count one store held, with its scope, counts as an answer to how many a store can hold, S02-SH-1102 to S02-SH-1106 give S02-VP-27 an answer row for that store and plan (two B2B and two retail markets, each Active, at once), beside the gap. The coordinator decides.
+- S02-SH-1113 shows no 'POS locations' among fake-demo-sharrwah's condition types, where S02-SH-1101 and S02-SH-1094 show it on demo-fake-dev-store and capture-us-plus. That a store whose menu lacks the item can't hold a retail market would be an inference, so S02-SH-1113 joined only the rows of the items it shows, and isn't placed under S02-VP-27. S02-SH-G16 pairs it with S02-SH-1114 (RequestDetails, retail enabled false), which is outside RD2's slice.
+- S02-SH-1092, S02-SH-1094 and S02-SH-1095 were in RD2's slice under (e) with no task in RD2's work list (above), which was written before the slice was cut again. They are placed here.
+- `place` tasks have no `done` line, as RD2-S2 read the brief: `second_pass_list.py --check` lists only revisit, reread and note tasks. The revisit's `done` line is S02-V-483's first.
+
+### RD2-S3: row notes added
+
+- S02-V-425: its note now says that S02-SH-1116 shows the New market page on fake-demo-sharrwah (Advanced, paid, 27 October 2026), beside the earlier note's S02-SH-386 (the control 'Create market', listed without that store) and S02-SH-387 ('Request access' on it). No cause is given; each statement's scope gives its own store and plan.
