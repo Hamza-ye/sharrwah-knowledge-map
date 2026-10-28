@@ -77,3 +77,11 @@ The round places what A2-SA-R, A2-ZD-R and A3-ZD-R recorded (parts RD1-S7, RD1-S
 5. **and 6. The readings of S02-SA-490 and of S02-SA-493 to S02-SA-497 stand,** under documents and checks, for phase C to weigh.
 7. **S02-SA-498 under both S02-VP-10 and S02-VP-13 stands:** a statement may answer two points.
 8. **Salla's default currency gets its answer.** A2-SA-R narrowed S02-SA-G07 into S02-SA-G18, which asks only about the language, because the currency part is observed: the store whose onboarding answered the United Arab Emirates holds `kyc_country` AE and currency AED (S02-SA-501). Noting S02-SA-501 left S02-VP-18 with no row for the currency. Part RD1-S8 rereads S02-SA-501 under (c) and places it under S02-VP-18, scoped to that one store, beside S02-V-168's gap. Shopify's S02-SH-1041, which RD1-S6 noted, would read the same way. Shopify already gives the key from a stated source, so it is left noted.
+
+**RD2-S4's calls:** each stands, and none changes a key.
+1. **S02-ZD-471, the dev store's primary market "Main Market" (السوق الرئيسي), joins S02-V-440 only.** That the main market is the default one Zid's plans count (S02-ZD-025) is a reading. Joining it to S02-V-441 as well would change no key: Zid gives that key from S02-ZD-025.
+2. **S02-ZD-488, the manage page's save call, under S02-VP-29** stands as the seller's change through its admin, a reading the row marks.
+3. **Turning the markets feature on stays under S02-VP-29,** by rule 4's ruling of 27 October: a party that gates creating a market is its own answer under who creates, and under who changes or removes.
+4. **Leads in `a2.tsv` placed elsewhere, or not at all, stand:** a lead points to a point, and the statement's own words decide (the brief, `place`).
+5. **The slices were cut again during the part,** to give the dashboard's strings their kind. The part's writes all came after the swap, so its rows hold the new kinds.
+6. **S02-V-441's evidence still names the removed S02-V-442.** Its row note says so, which is enough: the evidence records what the row was joined on.
