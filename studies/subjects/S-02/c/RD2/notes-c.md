@@ -31,3 +31,11 @@
    - WooCommerce's default selling locations, all countries (S02-WC-018), are read as `a default market`.
 
    Each row's cause_reading or note says where its reading changes a cause.
+
+## C-R
+
+Phase C again, 28 October 2026, after part RD2-S3.
+- S02-VP-26: S02-V-409 was keyed 'a group of customers' and is now keyed 'a company', as C-RD2's reading beside S02-SH-N03 reads it (S02-SH-036's customer group as the B2B company-location condition, S02-SH-069). 'a group of customers' moves from unknown to no difference: it stands on S02-V-410's absence alone, and the other four don't state it. By step 3, test 1 (the coordinator's, of 27 October), the five agree in not giving it, so it follows as not carried. 'a company' is unchanged: its cause, vendor choice, and its reading still hold, and S02-V-409 now gives it beside S02-V-403. Phase B placed the condition-type menus from three stores (S02-SH-1094, S02-SH-1101, S02-SH-1113) on S02-V-401, S02-V-403 and S02-V-405, and on S02-V-404 where the menu lists POS locations. Each is on its condition type's row, and none is on S02-V-409.
+- S02-VP-27: S02-V-483 (S02-SH-G16) asks how many markets of each kind a store can hold on each plan. That is the key 'a number of markets per store, set by plan', with the numbers in note. Shopify gives that key (S02-V-412, S02-SH-301), as it gives 'markets of some kinds only on some plans' (S02-V-423, S02-V-475) and 'no limit on the number of markets' (S02-V-411). A gap can't be marked open on a key its platform gives, so no key is marked and no row is rewritten: G16's answer would change the numbers, not what Shopify does on a key. No row cited S02-SH-G12 or S02-V-483.
+- S02-VP-28 and S02-VP-29: Shopify gives 'the seller' from stated statements (S02-SH-115; S02-SH-061). The new observations on S02-V-425 and S02-V-428 change neither like with like nor any key, so the rows are unchanged.
+- Problems: the same as under RD3. 'show' doesn't print the fields that checking a reading needs, and 'answer' and 'point' replace a row's note.

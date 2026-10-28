@@ -6,7 +6,7 @@ Usage: python3 -I method/analysis_edit.py SUBJECT_DIR RD keys VP_ID [--keep] --r
                                                                  [--absent VID=KEY[;KEY]]
        python3 -I method/analysis_edit.py SUBJECT_DIR RD answer VP_ID KEY --cause TAG [--FIELD TEXT ...]
        python3 -I method/analysis_edit.py SUBJECT_DIR RD point VP_ID --coexistence TEXT [--FIELD TEXT ...]
-       python3 -I method/analysis_edit.py SUBJECT_DIR RD show VP_ID
+       python3 -I method/analysis_edit.py SUBJECT_DIR RD show VP_ID [--full]
        python3 -I method/analysis_edit.py SUBJECT_DIR RD check [VP_ID ...]
        python3 -I method/analysis_edit.py SUBJECT_DIR RD notes PART TEXT
        python3 -I method/analysis_edit.py SUBJECT_DIR RD batch FILE
@@ -20,7 +20,8 @@ answer   writes one key's row; flags --cause, --cause-basis, --scopes, --reading
          --expensive, --founder-item, --depends-on, --note. What each platform does comes from the keys.
 point    writes the point's row; flags --coexistence, --coexistence-basis, --general, --general-basis, --follows,
          --note.
-show     prints the point's keys, what each platform does on each, its answer rows and its point row.
+show     prints the point's keys, what each platform does on each, its answer rows and its point row; with --full,
+         also each answer row's basis, scopes, reading, blocked_by and expense, and the point row's bases, never a note.
 check    checks the rows of the points named (all the root decision's points without any), and names each key with no
          answer row, each answer row of the point with no key, and each point with no row. Exits 1 on a problem.
 notes    appends TEXT to notes-c.md under a heading for PART.
@@ -328,7 +329,7 @@ def opts(args, flags):
     return o
 
 
-def show(S, vp):
+def show(S, vp, full=False):
     prow = S.point_row(vp)
     if not prow:
         print(f"{vp}: no point row yet; run keys")
@@ -353,7 +354,23 @@ def show(S, vp):
         if r["vp_id"] == vp:
             print(f"  answer {r['key']!r}: {r['cause']} | {r['follows']} | founder: {r['founder_item'] or '-'}"
                   f" | depends on: {r['depends_on'] or '-'}")
+            if full:                                       # what a re-run weighs again; never the note
+                for c in ("cause_basis", "scopes_compared", "cause_reading", "blocked_by", "expensive_because"):
+                    if r[c].strip():
+                        print(f"      {c}: {r[c]}")
     print(f"  point: {prow['coexistence'] or '-'} | general {prow['general_variant'] or '-'} | {prow['follows'] or '-'}")
+    if full:
+        for c in ("coexistence_basis", "general_basis"):
+            if prow[c].strip():
+                print(f"      {c}: {prow[c]}")
+
+
+def keep_note(old, new):
+    """A row written again keeps its earlier note, which an agent may not read: the new note follows it."""
+    old, new = (old or "").strip(), (new or "").strip()
+    if not old or new.startswith(old):
+        return new or old
+    return old if not new or new in old else f"{old} {new}"
 
 
 def main(subj, rd, cmd, args):
@@ -439,6 +456,8 @@ def main(subj, rd, cmd, args):
         bad = S.answer_problems(vp, r)
         if bad:
             sys.exit("not written:\n  " + "\n  ".join(bad))
+        was = next((x for x in S.arow if x["vp_id"] == vp and x["key"] == key), None)
+        r["note"] = keep_note(was["note"] if was else "", r["note"])
         S.arow = [x for x in S.arow if not (x["vp_id"] == vp and x["key"] == key)] + [r]
         order = {p: i for i, p in enumerate(S.points)}
         S.arow.sort(key=lambda x: order.get(x["vp_id"], 10**6))
@@ -451,6 +470,7 @@ def main(subj, rd, cmd, args):
             sys.exit(f"{vp} has no keys yet: run keys first")
         new = {h: prow[h] if h in ("vp_id", "keys") else "" for h in PHEAD}
         new.update(opts(args[1:], PFLAGS))
+        new["note"] = keep_note(prow["note"], new["note"])
         bad = S.point_problems(vp, new)
         if bad:
             sys.exit("not written:\n  " + "\n  ".join(bad))
@@ -458,7 +478,7 @@ def main(subj, rd, cmd, args):
         write(S.ppath, PHEAD, S.prow)
         print(f"{vp}: point row written ({new['coexistence']}; {new['follows']})")
     elif cmd == "show":
-        show(S, args[0])
+        show(S, args[0], full="--full" in args[1:])
     elif cmd == "check":
         unknown = [v for v in args if v not in S.points]
         if unknown:
