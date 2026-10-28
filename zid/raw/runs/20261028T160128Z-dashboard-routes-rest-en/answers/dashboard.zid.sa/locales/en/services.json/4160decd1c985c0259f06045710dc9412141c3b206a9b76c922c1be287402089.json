@@ -1,0 +1,27 @@
+{
+  "landing": {
+    "financing": {
+      "action": "Apply for financing",
+      "description": "Fast financing based on your store’s performance,with simple steps and repayment plans that match your sales.",
+      "title": "Get up to SAR 5 Million in Financing!"
+    },
+    "paymentOptions": {
+      "action": "Activate payment",
+      "description": "Make buying easier with multiple payment options—cash, online payments, installments, and loyalty points.",
+      "title": "One Gateway, Multiple Payment Options"
+    },
+    "plan": {
+      "action": "Explore growth tools",
+      "description": "Everything you need to grow your business  all in one place.",
+      "firstListItem": "Connect your ad channels and track results in real-time",
+      "secondListItem": "Access services from 25+ expert providers",
+      "thirdListItem": "Plan your campaigns and monitor your goals with clear insights",
+      "title": "Plan Smarter, Grow Faster"
+    },
+    "shippingMethods": {
+      "action": "Explore shipping methods",
+      "description": "No negotiations, no paperwork. Access the best rates and manage every shipment in one place.",
+      "title": "35+ Shipping Providers in One Digital Agreement"
+    }
+  }
+}

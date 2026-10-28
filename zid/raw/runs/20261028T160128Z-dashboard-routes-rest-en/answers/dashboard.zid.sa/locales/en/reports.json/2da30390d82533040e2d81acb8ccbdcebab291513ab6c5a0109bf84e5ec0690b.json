@@ -1,0 +1,175 @@
+{
+  "customers": {
+    "columns": {
+      "activeLoyaltyPoints": "Active Loyalty Points",
+      "averageOrderValue": "Average Order Value",
+      "couponsUsed": "Number of Coupons Used",
+      "customerName": "Customer Name",
+      "donorAverageDonationValue": "Donor Average Donation Value",
+      "donorLifetimeValue": "Donor Life Time Value",
+      "donorName": "Donor Name",
+      "donorPhone": "Donor Phone",
+      "expiredLoyaltyPoints": "Expired Loyalty Points",
+      "firstDonationDate": "First Donation Date",
+      "firstOrderDate": "First Order Date",
+      "firstPurchase": "First Purchase Channel",
+      "lastDonationDate": "Last Donation Date",
+      "lastOrderDate": "Last Order Date",
+      "lifetimeValue": "Life Time Value",
+      "mostPurchase": "Most Purchase Channel",
+      "numberOfDonations": "Number of Donations",
+      "numberOfOrders": "Number of Orders",
+      "numberOfProductsPurchased": "Number of Different Products Purchased",
+      "phone": "Customer Phone Number",
+      "returnRate": "Return Rate",
+      "reviewsNumber": "Number of Reviews",
+      "usedLoyaltyPoints": "Used loyalty points"
+    },
+    "customerName": "Customer Name"
+  },
+  "inventory": {
+    "columns": {
+      "averageSellingPrice": "Average selling price (vat excl.)",
+      "avgCostPricePerProduct": "Average cost price per product",
+      "currentInventoryCost": "Current inventory cost",
+      "currentInventoryValue": "Current inventory value (VAT excl.)",
+      "currentProductPrice": "Retail price per product (vat excl.)",
+      "daysSalesInInventory": "Days sales in inventory",
+      "discountsApplied": "Discounts applied (VAT excl.)",
+      "grossMargin": "Gross margin",
+      "interestedCustomersOutOfStock": "Interested customers (out of stock)",
+      "inventoryOnHand": "Inventory on hand",
+      "inventoryTurnoverRatio": "Inventory turnover ratio",
+      "locationInventory": "Location/inventory",
+      "maxStockLevel": "Maximum stock level",
+      "minStockLevel": "Minimum stock level",
+      "product": "Product",
+      "returnRate": "Return rate",
+      "salesRevenue": "Sales revenue (VAT excl.)",
+      "unitOfMeasure": "Unit of measure",
+      "unitsSold": "Units sold"
+    }
+  },
+  "sales": {
+    "columns": {
+      "affiliateName": "Affiliate name",
+      "avgBasketSize": "Average basket size",
+      "bundleOffer": "Bundle offer",
+      "cashier": "Cashier",
+      "category": "Category",
+      "city": "City",
+      "cogs": "Cogs",
+      "completedDonations": "Number of completed donations",
+      "completedOrders": "Number of completed orders",
+      "coupon": "Coupon",
+      "discounts": "Discounts",
+      "donationSourceName": "Donation source name",
+      "grossMargin": "Gross margin",
+      "inventory": "Inventory",
+      "netRevenue": "Total sales",
+      "numberOfDonations": "Number of donations",
+      "numberOfOrders": "Number of orders",
+      "numberOfReturnedCancelledDonations": "Number of cancelled/returned donations",
+      "numberOfReturnedCancelledOrders": "Number of cancelled/returned orders",
+      "orderSourceName": "Order source name",
+      "paymentMethod": "Payment method",
+      "paymentProcessingFees": "Payment processing fees",
+      "period": "Period",
+      "product": "Product",
+      "returnedOrdersValue": "Returned orders value",
+      "shippingCost": "Shipping cost",
+      "shippingMethod": "Shipping method",
+      "shippingRevenue": "Shipping revenue",
+      "taxAmount": "Tax amount",
+      "totalDonations": "Total donations",
+      "user": "User"
+    },
+    "deprecationAlert": {
+      "content": "This report has been migrated to the new Reports page and will be removed soon. For the latest reporting experience, please use the <reportsLink>new Reports page</reportsLink>.",
+      "title": "This report will be deprecated soon"
+    },
+    "periods": {
+      "day": "Day",
+      "hour": "Hour",
+      "month": "Month",
+      "quarter": "Quarter",
+      "week": "Week",
+      "year": "Year"
+    },
+    "tabs": {
+      "affiliated": "Affiliates",
+      "bundleOffers": "Bundle offers",
+      "cashier": "Cashier",
+      "category": "Category",
+      "channels": "Channels",
+      "city": "City",
+      "coupons": "Coupons",
+      "location": "Location",
+      "paymentMethods": "Payment methods",
+      "periods": "Periods",
+      "products": "Products",
+      "shippingCourier": "Shipping courier",
+      "user": "User"
+    },
+    "tooltips": {
+      "avgBasketSize": {
+        "calculation": "Average order value = total sales / orders",
+        "description": "The average amount spent per order, including taxes, calculated from orders, excluding cancelled and returned orders.",
+        "header": "Average order value"
+      },
+      "cogs": {
+        "description": "The cost of items sold.",
+        "header": "Cost of goods sold"
+      },
+      "completedOrders": {
+        "description": "Total number of orders that have been completed, excluding cancelled and returned orders.",
+        "header": "Completed orders"
+      },
+      "discounts": {
+        "calculation": "Total discounts = coupon discounts + shipping discounts",
+        "description": "Discounts applied to orders, excluding taxes and cancelled or returned orders.",
+        "header": "Total discounts"
+      },
+      "grossMargin": {
+        "calculation": "Gross margin = (net revenue - taxes COGS) ÷ (net revenue - taxes) × 100",
+        "description": "Profit margin after taxes and COGS, excluding cancelled, reversed, and in-reversed orders.",
+        "header": "Gross margin"
+      },
+      "netRevenue": {
+        "calculation": "Total sales = subtotal - discounts + fees (shipping and COD) + tax",
+        "description": "Total amount customers spent in your store, excluding cancelled and returned orders.",
+        "header": "Total sales"
+      },
+      "numberOfOrders": {
+        "description": "Total number of orders created during the specified period, excluding cancelled and returned orders.",
+        "header": "Orders"
+      },
+      "numberOfReturnedCancelledOrders": {
+        "description": "Total number of orders that have been cancelled or returned.",
+        "header": "Cancelled/returned orders"
+      },
+      "paymentProcessingFees": {
+        "description": "Zid Payments fees for all orders paid via Zid Payments, including taxes, regardless of order status.",
+        "header": "Payment processing fees"
+      },
+      "returnedOrdersValue": {
+        "description": "Value of all returned, reversed, or cancelled orders, including taxes.",
+        "header": "Total returns"
+      },
+      "shippingCost": {
+        "description": "The cost you pay to the shipping courier for ZidShip orders only, including any Cash on Delivery (COD) fees, excluding VAT.",
+        "header": "Shipping cost"
+      },
+      "shippingRevenue": {
+        "description": "Total shipping fees collected from completed orders, excluding taxes and cancelled or returned orders.",
+        "header": "Shipping fees"
+      },
+      "taxAmount": {
+        "description": "Taxes collected from completed orders, excluding cancelled or returned orders.",
+        "header": "Total tax amount"
+      }
+    }
+  },
+  "vatExcluded": "VAT excl.",
+  "vatIncluded": "VAT incl."
+}

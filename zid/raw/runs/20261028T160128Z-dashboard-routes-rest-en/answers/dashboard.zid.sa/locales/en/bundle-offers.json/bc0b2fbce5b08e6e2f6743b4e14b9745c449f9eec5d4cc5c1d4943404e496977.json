@@ -1,0 +1,203 @@
+{
+  "activate": "Activate",
+  "bundleType": {
+    "setPrice": "Set-price products"
+  },
+  "createType": {
+    "buyGet": {
+      "description": "Encourage customers to complete the order by offering a free product, with your own product selection rules.",
+      "label": "Buy a product, get another"
+    },
+    "fixedPrice": {
+      "description": "Clear slow-moving stock by attaching a token price that makes customers add it without hesitation.",
+      "label": "Products at a fixed price"
+    },
+    "helpLink": "Learn how to create and manage bundle offers",
+    "helpQuestion": "Have a question about how bundles work?",
+    "title": "Create a new bundle offer"
+  },
+  "createdSuccessfully": "Bundle offer created successfully",
+  "deactivate": "Deactivate",
+  "deleteSuccess": "Bundle offer deleted successfully",
+  "emptyState": {
+    "button": "Create your first bundle",
+    "description": "Bundle offers help you sell more than one item at once — and make the value clearer and easier for the customer.",
+    "title": "Sell your products as one bundle"
+  },
+  "filterDiscount": "Discount",
+  "filterFixedOfferValue": "Fixed amount discount",
+  "fixedAmountHelperText": "Customer will get the products for free in case of the fixed discount amount is higher than the products value that he will get.",
+  "fixedDiscount": "Fixed discount",
+  "fixedPrice": {
+    "additionalOptions": {
+      "categoryLabel": "Add a special category for bundle products",
+      "categoryTooltip": "Bundle products are grouped under this category in your store.",
+      "description": "Add extra bundle details to control its validity.",
+      "descriptionLabel": "Add a bundle description",
+      "descriptionPlaceholder": "Example: Get the full set at one price",
+      "descriptionPlaceholder_ar": "مثال: احصل على الطقم الكامل بسعر واحد",
+      "descriptionPlaceholder_en": "Example: Get the full set at one price",
+      "descriptionTooltip": "Shown to customers alongside the bundle name in your store.",
+      "title": "Additional options",
+      "usageLimitTooltip": "How many times a single customer can use this offer."
+    },
+    "basicInfo": {
+      "addEndDate": "Add an end date",
+      "description": "Provide the bundle name, the description and the offer validity period.",
+      "nameHelperText": "This name is shown to customers in your store.",
+      "namePlaceholder": "Example: Eid offer",
+      "namePlaceholder_ar": "مثال: عرض العيد",
+      "namePlaceholder_en": "Example: Eid offer",
+      "offerPrice": "Offer price",
+      "offerPriceHelperText": "Set the selling price for the products included in the offer.",
+      "selectionStrategy": {
+        "description": "Choose which products the offer applies to first when the cart has more eligible products than the required quantity.",
+        "highest": "Highest-priced product first",
+        "lowest": "Lowest-priced product first",
+        "title": "Offer application priority"
+      },
+      "title": "Basic information"
+    },
+    "groups": {
+      "addGroup": "Add a group",
+      "description": "When more than one group is added, the customer must satisfy every group to qualify for the offer.",
+      "groupDescription": "Choose the quantity and products the customer buys to satisfy this group",
+      "groupTitle": "Group {{number}}",
+      "limits": "Minimum {{min}} • Maximum {{max}}",
+      "quantityHelperText": "Set the quantity required for the offer to apply.",
+      "removeGroup": "Remove group {{number}}",
+      "title": "Offer products"
+    },
+    "summary": {
+      "namePlaceholder": "No name yet",
+      "sentence": {
+        "group": "{{quantity}} {{scope}}",
+        "separator": " and ",
+        "template": "Buy {{groups}}, and get the bundle for "
+      }
+    }
+  },
+  "form": {
+    "customer": {
+      "actions": {
+        "allProducts": "All products",
+        "browseCategories": "Browse categories",
+        "browseProducts": "Browse products",
+        "eligibilityLabel": "Applies to",
+        "excludeDiscountedProducts": "Exclude discounted products",
+        "selectedCategories": "Selected Categories",
+        "selectedProducts": "Selected Products"
+      },
+      "buy": {
+        "description": "Select what customer can buy to be eligible for the bundle",
+        "numberLabel": "Products quantity",
+        "numberLabelPlaceholder": "Please enter minimum quantity of items to receive bundle",
+        "title": "Customer buy"
+      },
+      "get": {
+        "description": "Select what customer can get if quantity of items specified above added to their cart.",
+        "numberLabel": "Products quantity",
+        "numberLabelPlaceholder": "The amount of items customer will get",
+        "title": "Customer gets"
+      },
+      "tables": {
+        "categoriesEmptyState": {
+          "button": "Add categories",
+          "description": "To apply condition, please select categories",
+          "title": "No categories selected"
+        },
+        "productsEmptyState": {
+          "button": "Add products",
+          "description": "To apply condition, please select products",
+          "title": "No products selected"
+        }
+      }
+    },
+    "details": {
+      "description": "Provide bundle name, description and bundle eligibility period.",
+      "descriptionInput": {
+        "label": "Description",
+        "placeholder": "وصف الحزمة التسويقية",
+        "placeholder_ar": "وصف الحزمة التسويقية (العربية)",
+        "placeholder_en": "Bundle offer description (English)",
+        "tooltip": "Usually shown to customers on the product details page."
+      },
+      "endDate": "End date",
+      "name": {
+        "label": "Name",
+        "placeholder": "اسم الحزمة التسويقية",
+        "placeholder_ar": "اسم الحزمة التسويقية (العربية)",
+        "placeholder_en": "Bundle offer name (English)",
+        "tooltip": "Usually shown to customers on the product card."
+      },
+      "startDate": "Start date"
+    },
+    "discount": {
+      "autoAddingHelperText": "If selected, the item will be automatically chosen and cannot be changed by the customer. You can configure whether the highest or lowest priced item is gifted.",
+      "autoHidingLabel": "Automatically add free products to the cart",
+      "fixedAmount": "Fixed amount",
+      "fixedToolTip": "For multiple items, the discount amount will be taken off each item.",
+      "freeItemSelectionStrategyHighest": "With highest priced item",
+      "freeItemSelectionStrategyLowest": "With the lowest priced item",
+      "onlineStore": "Online store",
+      "title": "Offer type"
+    },
+    "settings": {
+      "bundleLimit": "Total bundle limit",
+      "bundleQuantityHelperText": "If not set, bundles run until sold out or expired",
+      "bundleTimes": "Usage limit per customer",
+      "cardDescription": "Add additional bundle details to control validity. ",
+      "categoryLabel": "A special category for the bundle offers"
+    }
+  },
+  "freeProduct": "Free product",
+  "name": "Name",
+  "summary": {
+    "alert": "If a customer adds the same products to multiple bundle offers manually, the offer will be applied to the products that are added to the cart first.",
+    "endDate": "End date:",
+    "mechanism": "How it works",
+    "namePlaceholder": "Bundle offer",
+    "notSet": "Not set yet",
+    "salesChannels": "Sales channels",
+    "sentence": {
+      "reward": {
+        "fixedPrefix": " with ",
+        "fixedSuffix": " off",
+        "free": " for free",
+        "percentage": " with {{value}}% off"
+      },
+      "scope": {
+        "allProducts": "from any product",
+        "categories": "from specific categories",
+        "products": "from specific products"
+      },
+      "template": "Buy {{buyQty}} {{buyScope}}, get {{getQty}} {{getScope}}"
+    },
+    "settings": "Settings",
+    "specialCategory": "Special category:",
+    "startDate": "Start date:",
+    "title": "Summary",
+    "totalBundleLimit": "Total bundle limit:",
+    "usagePerCustomer": "Usage per customer:"
+  },
+  "tableTabs": {
+    "active": "Active",
+    "all": "All",
+    "expired": "Expired",
+    "notStarted": "Not started yet"
+  },
+  "type": "Bundle type",
+  "types": {
+    "fixed": "Fixed amount off each",
+    "percentage": "Percentage discount"
+  },
+  "updatedSuccessfully": "Bundle offer updated successfully",
+  "validation": {
+    "categoriesRequired": "Please select at least one category",
+    "minimumRequired": "Please enter the minimum required quantity",
+    "moreThan": "Must be greater than 0",
+    "numberOfProductsRequired": "Please enter the number of products",
+    "productsRequired": "Please select at least one product",
+    "shouldBeAtLeastOne": "Value must be at least one"
+  }
+}

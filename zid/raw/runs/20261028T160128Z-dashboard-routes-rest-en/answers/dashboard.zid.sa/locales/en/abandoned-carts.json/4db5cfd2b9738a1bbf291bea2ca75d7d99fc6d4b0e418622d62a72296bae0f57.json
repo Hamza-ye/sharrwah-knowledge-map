@@ -1,0 +1,70 @@
+{
+  "activateAutomaticMessage": "Manage reminders",
+  "analytics": "Analytics",
+  "analyticsNGO": "Abandoned donations analytics",
+  "cartDetails": "Cart details",
+  "cartId": "Cart ID",
+  "cartPrice": "Cart price",
+  "cartsAmountTotalValueAmount": "Carts amount/Total value amount",
+  "customerDetails": "Customer details",
+  "customerName": "Customer name",
+  "customerPhone": "Customer phone",
+  "donationsCount": "Donations count",
+  "donorName": "Donor name",
+  "emptyState": {
+    "description": "Remind your customers about their abandoned carts and boost your sales by up to 20%",
+    "descriptionNGO": "Remind your donors about their abandoned donations and boost your donations by up to 20%",
+    "title": "Turn missed carts into new opportunities",
+    "titleNGO": "Turn abandoned donations into new opportunities"
+  },
+  "filters": {
+    "customerType": "Customer type",
+    "guestCustomer": "Guest customer",
+    "phase": "Phase",
+    "priceIsGreaterThan": "Price is greater than",
+    "productsQuantityIsMoreThan": "Product quantity is more than",
+    "registeredCustomer": "Registered customer"
+  },
+  "loadMoreMessages": "Load more messages",
+  "messagesSettings": "Manage reminders",
+  "newMessage": "Create new message",
+  "noRecordReminders": "No record reminders",
+  "noReminderPolicy": "Upgrade your package to be able to send reminders",
+  "paybackPercentage": "Payback % from carts converted into orders",
+  "paybackPercentageNGO": "Payback % from donations converted into donations",
+  "phase": {
+    "completed": "Purchased",
+    "label": "Phase",
+    "login": "Login",
+    "new": "New",
+    "paymentMethod": "Payment method",
+    "shippingAddress": "Shipping address",
+    "shippingMethod": "Shipping method",
+    "verification": "Order confirmation"
+  },
+  "productsCount": "Products count",
+  "recordReminders": "Record reminders",
+  "reminderAlertDescription": "Motivate your customers to complete their purchase process with manual and automated reminders",
+  "reminderAlertDescriptionNGO": "Motivate your customers to complete their donation process with manual and automated reminders",
+  "reminderAlertTitle": "Reclaim your abandoned carts",
+  "reminderAlertTitleNGO": "Reclaim your abandoned donations",
+  "reminderGroup": "Send bulk reminders",
+  "reminderSuccess": "Reminder sent successfully",
+  "selectMessage": "Select message",
+  "selectMethod": "Select method",
+  "sendReminder": "Send reminder",
+  "tabs": {
+    "abandonedCarts": "Abandoned carts",
+    "abandonedDonations": "Abandoned donations",
+    "donations": "Carts converted into donations",
+    "orders": "Carts converted into orders"
+  },
+  "totalValueCarts": "Total value of all abandoned carts",
+  "totalValueCartsToOrders": "Total value of carts that have been converted into orders",
+  "totalValueCartsToOrdersNGO": "Total value of donations that have been converted into donations",
+  "whatsappInsufficientBalance": {
+    "description": "Your WhatsApp balance is insufficient to send this reminder. Top up your balance, then try again.",
+    "title": "Insufficient WhatsApp balance",
+    "topUp": "Top up balance"
+  }
+}

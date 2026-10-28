@@ -1,0 +1,333 @@
+{
+  "NDOfferBadgeGrowth": "96 orders = 1 Free Year",
+  "NDOfferBadgePro": "1,932 orders = 1 Free Year",
+  "NDOfferBadgeRise": "23 orders = 1 Free Year",
+  "allPlansInclude": "All plans include",
+  "availableOnYearly": "Available on yearly",
+  "bestSeller": "Best seller",
+  "bestValue": "Best value",
+  "billedBiannually": "Billed every half year",
+  "billedOnceYearly": "Billed once yearly",
+  "bottomText": "{{discountPrice}} {{currency}} for {{count}} months, then {{realPrice}} {{currency}}/month.",
+  "bottomText_few": "{{discountPrice}} {{currency}} for {{count}} months, then {{realPrice}} {{currency}}/month.",
+  "bottomText_many": "{{discountPrice}} {{currency}} for {{count}} months, then {{realPrice}} {{currency}}/month.",
+  "bottomText_one": "{{discountPrice}} {{currency}} for a month, then {{realPrice}} {{currency}}/month.",
+  "bottomText_other": "{{discountPrice}} {{currency}} for {{count}} months, then {{realPrice}} {{currency}}/month.",
+  "bottomText_two": "{{discountPrice}} {{currency}} for {{count}} months, then {{realPrice}} {{currency}}/month.",
+  "bottomText_zero": "{{discountPrice}} {{currency}} for {{count}} months, then {{realPrice}} {{currency}}/month.",
+  "checkout": {
+    "accountNumber": "Account number",
+    "amount": "Amount",
+    "applePay": "Apple Pay",
+    "bankTransfer": "Bank transfer",
+    "bankTransferDesc": "To pay by bank transfer, please transfer the due amount to the Zid account at Al Rajhi Bank",
+    "beneficiaryNameArabic": "Beneficiary name (Arabic)",
+    "beneficiaryNameEnglish": "Beneficiary name (English)",
+    "byCompletingThePaymentYouAgreeToThe": "By completing the payment, you agree to",
+    "completePurchase": "Complete purchase",
+    "couponAddedSuccessfully": "Coupon code added successfully",
+    "couponRemovedSuccessfully": "Coupon code removed successfully",
+    "creditCard": "Credit card",
+    "currentWalletBalance": "Current wallet balance: {{balance}}",
+    "finishProcess": "Finish process",
+    "giftCardOrCouponCode": "Gift card or coupon code",
+    "iban": "IBAN number",
+    "noAccessToUseWalletBalance": "You don't have permission to use the wallet balance",
+    "noEnoughBalance": "You don't have enough balance",
+    "orderSummary": {
+      "amount_credited": "Amount paid",
+      "amount_due": "Amount due",
+      "amount_paid": "Amount paid",
+      "discount": "Discount",
+      "sub_total_after_discounts": "Subtotal after discounts",
+      "sub_total_after_vat": "Subtotal after VAT",
+      "sub_total_before_vat": "Subtotal before VAT",
+      "title": "Order summary",
+      "total": "Total",
+      "vat": "Value added tax",
+      "vat_subjected_amount": "Taxable amount"
+    },
+    "payment": "Payment",
+    "requestVatInvoice": "Request VAT invoice",
+    "startNow": "Let's get started",
+    "termsAndConditions": "Terms and conditions",
+    "title": "Payment",
+    "useWalletBalance": "Use wallet balance",
+    "yourDiscountHasBeenApplied": "Your discount has been applied!"
+  },
+  "checkoutRedirect": {
+    "approved": {
+      "description": "The package has been purchased and details have been sent to your email. Invoice number: {{invoiceNumber}}",
+      "title": "Transaction approved"
+    },
+    "failed": {
+      "description": "The package was rejected, please try again",
+      "title": "Transaction failed"
+    },
+    "pending": {
+      "description": "The package is pending. Please wait for payment confirmation.",
+      "title": "This title will be saved for you only to distinguish between messages and will not be shown to end customers"
+    }
+  },
+  "chooseTheBestPlan": "Choose the best plan for you",
+  "contactSales": "Contact sales",
+  "currentPlan": "Current plan",
+  "customPackage": "Custom",
+  "enterprise": {
+    "card": {
+      "accountManager": "A dedicated business relationship manager to support your growth",
+      "cashback": "20% cashback from the package value",
+      "description": "A complete solution for large enterprises that provides advanced features, accurate analytics, exclusive subscriptions, direct linking with an account manager and a marketing specialist",
+      "discount": "30% discount on services and applications",
+      "includesAll": "Everything in Starter, Rise, and Growth packages, plus the following:",
+      "posSystem": "Full free Point of Sale system",
+      "storeManagement": "Store management authority for 20 people",
+      "subscribeNow": "Subscribe now",
+      "title": "The Professional Package",
+      "whatsapp": "Full free WhatsApp"
+    },
+    "contactDialog": {
+      "cardText": "You can subscribe instantly without contacting our team — just choose your plan and complete the payment.",
+      "title": "Tell us about your ambitions"
+    },
+    "enterpriseRates": "Enterprise rates",
+    "pricing": "Custom rates"
+  },
+  "extendSubscription": "Extend your subscription",
+  "faqs": {
+    "questions": {
+      "canIPersonalizeMyStoreDomain": {
+        "content": "Yes, you can personalize and connect your own domain with your store easily and seamlessly. please note that merchants receive a free domain for the growth and professional packages.",
+        "title": "Can i personalize my store's domain?"
+      },
+      "howCanCustomersShopFromMyStore": {
+        "content": "Modern retail allows you to seamlessly sell products online and in physical stores, expanding your business by selling at multiple points of sale. you can also easily finance your trade up to 3.4 million riyals directly from your store dashboard.",
+        "title": "How can customers shop from my store?"
+      },
+      "howCanIConfirmTheStatusOfABankTransfer": {
+        "content": "You can confirm the status of your bank transfer by logging into your store dashboard and checking the status of the bank transfer.",
+        "title": "How can i confirm the status of a bank transfer?"
+      },
+      "howCanIReceivePaymentsFromMyCustomers": {
+        "buyNowPayLater": "You can also activate the buy now and pay later services:",
+        "content": "Easily link your store with Zid Payments to receive payments using a variety of simple payment methods – all for free.",
+        "title": "How can i receive payments from my customers?"
+      },
+      "howDoICreateMyOnlineStore": {
+        "content": "Create your online store easily and you will be guided step by step to finish setting up your online store and start selling your products",
+        "title": "How do i create my online store?"
+      },
+      "howDoIShipOrdersToCustomers": {
+        "content": "Link your store instantly and for free with Zid Logistics, and easily ship your orders with more than 30 shipping companies using one electronic contract.",
+        "mostKnownShippingCompanies": "The most well-known shipping and delivery companies:",
+        "title": "How do I ship orders to customers?"
+      },
+      "isItNecessaryToHaveACorporate": {
+        "content": "No, a commercial registry is not necessary for the store unless you would like to link the store with payment gateways to provide payment services such as Mada, Visa, Mastercard, or Apple Pay.",
+        "recommended": "However, it is recommended to obtain a commercial registry to preserve and validate your identity, as well as increase customer confidence in your store and brand.",
+        "title": "Is it necessary to have a commercial registration in order to register with Zid and take advantage of its services?"
+      },
+      "isThereAFeeChargedOnSales": {
+        "content": "No, there are no fees charged on sales for the Rise, Growth, and Professional packages, and merchants receive competitive conversion rates for the most popular payment methods, such as:",
+        "title": "Is there a fee charged on sales?"
+      }
+    },
+    "title": "Frequently asked questions"
+  },
+  "features": {
+    "customizableStorefronts": {
+      "description": "Choose from a variety of themes and easily customize your store to match your brand identity.",
+      "title": "Customizable storefronts"
+    },
+    "flexibleShippingIntegrations": {
+      "description": "Connect with top-tier local and international shipping providers, customize shipping policies, and manage delivery options efficiently.",
+      "title": "Flexible shipping integrations"
+    },
+    "highConvertingCheckoutExperience": {
+      "description": "Zid provides an optimized checkout process designed for high conversion rates, ensuring smooth transactions for customers in gcc.",
+      "title": "High converting checkout experience"
+    },
+    "integratedPaymentAndBNPLOptions": {
+      "description": "Accept a variety of payment methods, including Mada, Visa, Mastercard, Apple Pay, and buy now, pay later options",
+      "title": "Integrated payment & BNPL options"
+    },
+    "name": "Features",
+    "vibrantZidCommunities": {
+      "description": "Engage with a thriving network of fellow merchants to exchange valuable insights, discuss best practices, and stay ahead of industry trends.",
+      "title": "Vibrant Zid communities"
+    }
+  },
+  "featuresTable": {
+    "additionalBenefits": {
+      "accountManager": "Account manager",
+      "accountManagerDescription": "Assign a dedicated account manager to support and develop your online store performance.",
+      "accountManagerTiers": {
+        "growth": "Not available",
+        "lite": "Not available",
+        "professional": "Available (4 meetings and annual performance reports)"
+      },
+      "name": "Additional benefits",
+      "preSalesConsultant": "Pre-sales consultant",
+      "preSalesConsultantDescription": "Receive tailored sales consultations to help you successfully launch your store.",
+      "preSalesConsultantTiers": {
+        "growth": "Not available",
+        "lite": "Not available",
+        "professional": "Available"
+      },
+      "storeActivationConsultant": "Store activation consultant",
+      "storeActivationConsultantDescription": "Dedicated support to activate your online store smoothly after subscription.",
+      "storeActivationConsultantTiers": {
+        "growth": "Trusted growth service with the merchant growth team",
+        "lite": "Additional paid service: store setup, activation for the first 5 orders, and migrating existing content.",
+        "professional": "Setting up the online store and transferring content from the existing store, activating the store to achieve the first 10 orders"
+      },
+      "zidCommunities": "Zid communities",
+      "zidCommunitiesDescription": "Join Zid communities to exchange experiences and ideas with other store owners.",
+      "zidCommunitiesTiers": {
+        "growth": "Public Zid communities",
+        "lite": "Public Zid communities",
+        "professional": "Golden Zid communities"
+      }
+    },
+    "coreFeatures": {
+      "analyticsAndReports": "Analytics and reports",
+      "analyticsAndReportsDescription": "Track your store's performance with accurate reports and comprehensive analytics.",
+      "discountedShippingPolicies": "Discounted shipping policies",
+      "discountedShippingPoliciesDescription": "Benefit from reduced shipping rates for your store orders.",
+      "diverseStorefrontThemes": "Diverse storefront themes",
+      "diverseStorefrontThemesDescription": "Customize your store with multiple designs that suit your business.",
+      "instantPaymentActivation": "Instant payment activation",
+      "instantPaymentActivationDescription": "Quickly activate payment options to start selling immediately.",
+      "inventoryManagement": "Inventory management",
+      "inventoryManagementDescription": "Manage and track inventory easily from anywhere and add warehouses for online or physical stores.",
+      "inventoryManagementTiers": {
+        "growth": "1 free warehouse",
+        "lite": "1 free warehouse",
+        "professional": "5 free warehouses"
+      },
+      "name": "Core features",
+      "teamManagement": "Team management",
+      "teamManagementDescription": "Add team members to help manage the store and control their permissions.",
+      "unlimitedProducts": "Unlimited products"
+    },
+    "customization": {
+      "appIntegration": "App integration",
+      "appIntegrationDescription": "Seamlessly connect and expand your store's functionality using Zid api.",
+      "name": "Customization",
+      "themeSDK": "Theme SDK",
+      "themeSDKDescription": "Advanced tool to customize and design your store's interface to match your brand.",
+      "zidAPIIntegration": "Zid API integration",
+      "zidAPIIntegrationDescription": "Seamlessly connect and expand your store's functionality using Zid API."
+    },
+    "globalExpansion": {
+      "multipleCurrencies": "Multiple currencies",
+      "multipleCurrenciesDescription": "Support multiple currencies to simplify shopping for customers worldwide.",
+      "multipleLanguages": "Multiple languages",
+      "multipleLanguagesDescription": "Support multiple languages to allow customers to shop in their preferred language.",
+      "name": "Global expansion",
+      "taxByCountry": "Tax by country",
+      "taxByCountryDescription": "Automatically apply taxes based on the destination country's requirements."
+    },
+    "marketingTools": {
+      "advancedMarketingOffers": "Advanced marketing offers",
+      "advancedMarketingOffersDescription": "Online payment discounts, app-exclusive discounts, and 'buy one, get one' offers.",
+      "affiliateMarketing": "Affiliate marketing",
+      "affiliateMarketingDescription": "Activate affiliate marketing to increase sales through marketers.",
+      "basicMarketingOffers": "Basic marketing offers",
+      "basicMarketingOffersDescription": "Discount coupons and free shipping promotions.",
+      "customerGroups": "Customer groups",
+      "customerGroupsDescription": "Organize customers into specific groups for targeted marketing.",
+      "name": "Marketing tools",
+      "unlimitedCustomers": "Unlimited customers",
+      "unlimitedCustomersDescription": "Add unlimited customers to build a strong marketing database."
+    },
+    "paymentMethods": {
+      "applePay": "Apple Pay",
+      "applePayDescription": "Enable easy and secure payment through Apple Pay.",
+      "bankTransfer": "Bank transfer",
+      "bankTransferDescription": "Offer the option to pay via direct bank transfers.",
+      "bankTransferTiers": {
+        "growth": "Priority",
+        "lite": "Standard",
+        "professional": "24/7 premium"
+      },
+      "installmentOptions": "Installment options",
+      "installmentOptionsDescription": "Enable installment plans through tamara and tabby.",
+      "name": "Payment methods",
+      "paymentOptions": "Payment options",
+      "paymentOptionsDescription": "Visa, Mastercard, Mada cards, American Express, cash on delivery, and payment links."
+    },
+    "shippingDelivery": {
+      "customShippingMethods": "Custom shipping methods",
+      "customShippingMethodsDescription": "Add your own shipping options or use local couriers.",
+      "deliveryMethods": "Delivery methods",
+      "deliveryMethodsDescription": "Deliver to customers' addresses or enable in-store pickup.",
+      "multipleShippingCompanies": "Multiple shipping companies",
+      "multipleShippingCompaniesDescription": "Integrate with Aramex, SMSA, SPL, and over 100 other shipping providers.",
+      "name": "Shipping & delivery",
+      "shipmentStatusReports": "Shipment status reports",
+      "shipmentStatusReportsDescription": "Detailed tracking and updates for shipments to improve customer satisfaction.",
+      "shippingBySpeed": "Shipping by speed",
+      "shippingBySpeedDescription": "Options include same-day delivery, express delivery within 24 hours, and standard delivery (3-7 days).",
+      "shippingByWeight": "Shipping by weight",
+      "shippingByWeightDescription": "Choose between standard or heavy product shipping.",
+      "storageAndPackagingServices": "Storage and packaging services",
+      "storageAndPackagingServicesDescription": "Comprehensive solutions for product storage and professional packaging."
+    },
+    "showLess": "Show fewer features",
+    "showMore": "Show all features",
+    "tiers": {
+      "growth": "Growth",
+      "lite": "Rise",
+      "professional": "Professional"
+    }
+  },
+  "firstSubscriptionBanner": {
+    "badgeLabel": "Integrated E-commerce Package",
+    "caption": "Flexible packages that suit different stages of store growth, providing you with sales tools, an integrated cashier system, and WhatsApp integration to manage your operations and communicate with customers easily.",
+    "cashbackBadge": "50% Cashback",
+    "cashbackSubtitle": "On annual plans",
+    "cashbackTitle": "Get <1>150 SAR</1> in your wallet!",
+    "cashbackTitleLine2": "With your subscription and store setup",
+    "nationalDayAlt": "National Day Offer. Your business with Zid pays off. 1 extra year, plus cashback on your orders. An extra year free. Up to 50 halalas cashback on every new order. Terms & Conditions apply.",
+    "nationalDayCashback": "Up to 50 halalas cashback on every new order 💸",
+    "nationalDayFreeYear": "An extra year free 🎁",
+    "nationalDayLabel": "National Day Offer",
+    "nationalDaySubtitle": "1 Extra year, plus cashback on your orders.",
+    "nationalDayTerms": "Terms & Conditions Apply",
+    "nationalDayTitle": "Your business with Zid pays off 💸",
+    "title": "Choose the right subscription package for your store and get POS system and WhatsApp for free",
+    "titleLine1": "Choose the right subscription package for your store",
+    "titleLine2": "and get <0>POS system</0> and <1>WhatsApp</1> for free",
+    "viewYearlyPackages": "View yearly packages"
+  },
+  "lastPackageActivated": "Last activated package",
+  "moveToNGOPackage": "Move to NGO Package",
+  "nationalDayYearlyCashbackHint": "Cashback + 1 Free Year",
+  "noPermission": "You don't have permission to access this page",
+  "perMonth": "Per month",
+  "professionalPackage": {
+    "customValue": "Custom value"
+  },
+  "submitButtonText": "Try {{packageName}}",
+  "submitButtonTextSuspended": "Select {{packageName}}",
+  "suspended": {
+    "dialog": {
+      "description": "Your subscription has ended. select a plan to pick up right where you left off.",
+      "storeInformation": "Your store information will be stored for 2 years.",
+      "submitButtonText": "Select plan",
+      "title": "Select plan to get back to business"
+    },
+    "processing": {
+      "description": "Please wait for the new plan to be activated. Usually it takes a few minutes.",
+      "title": "We are processing your last purchase"
+    },
+    "selectPlan": "Select plan to get back to business"
+  },
+  "switchToThisPlan": "Switch to this plan",
+  "totalBilledBiannually": "Total {{amount}} {{currency}} billed every 6 months",
+  "totalBilledYearly": "Total {{amount}} {{currency}} billed every 12 months",
+  "tryStarterPackage": "Try Starter Package",
+  "yearlyCashbackHint": "50% cashback",
+  "yearlyChipText": "Save 16%"
+}

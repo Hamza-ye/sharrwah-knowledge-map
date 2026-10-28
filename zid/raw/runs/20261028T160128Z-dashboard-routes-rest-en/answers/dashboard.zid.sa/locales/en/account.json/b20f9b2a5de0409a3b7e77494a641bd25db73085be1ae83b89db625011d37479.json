@@ -1,0 +1,35 @@
+{
+  "emailRequiredConfirmation": "Requires email confirmation",
+  "emailRequiredConfirmationDescription": "Changes to email require user confirmation. An email has been sent to your original address for verification. The update will be effective once confirmed by you.",
+  "info": {
+    "affiliated": "Do you work in the same organization affiliated with the store?",
+    "date": "Date of birth",
+    "organizationName": "Working organization name",
+    "organizationNamePlaceholder": "Enter working organization name",
+    "phone": "Phone number",
+    "subtitle": "Account details"
+  },
+  "password": {
+    "confirmPassword": "Confirm new password",
+    "enter": "Enter password",
+    "newPassword": "New password",
+    "oldPassword": "Old password"
+  },
+  "phoneRequiredConfirmation": "Requires phone confirmation",
+  "phoneRequiredConfirmationDescription": "Changes to phone require user confirmation. An email has been sent to your email address for verification. The update will be effective once confirmed by you.",
+  "status": {
+    "updated": "Your account details have been updated successfully"
+  },
+  "validation": {
+    "passwordMin": "Password must be at least 8 characters long",
+    "passwordSpecial": "Password must contain at least one symbol (e.g., @#$%&)",
+    "passwordUppercase": "Password must contain at least one uppercase letter",
+    "passwordsMismatch": "Passwords do not match",
+    "phoneInvalid": "Please enter a valid phone number"
+  },
+  "zidposPasscode": {
+    "generate": "Generate random passcode",
+    "label": "POS passcode",
+    "title": "Change POS passcode"
+  }
+}

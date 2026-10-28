@@ -1,0 +1,62 @@
+{
+  "activatationTitle": "Activate Qitaf",
+  "activate": "Activate Qitaf Now",
+  "activationPopup": {
+    "description": "Activate Qitaf now and start rewarding your customers instantly. By joining, you give your customers the ability to earn points on every purchase and redeem points directly in your store, boosting loyalty and driving repeat sales.",
+    "link": " Terms & Conditions.",
+    "terms0": "I agree to the Qitaf ",
+    "terms1": "",
+    "title": "Qitaf Activation"
+  },
+  "advantageOneDescription": "Qitaf is a loyalty program from STC that offers rewards, discounts, and special offers for STC customers. When you activate the Qitaf service in your store, Qitaf customers can redeem their points for purchases from your store or earn new points when they shop.",
+  "advantageOneTitle": "What is Qitaf?",
+  "advantageTwoDescription": "Your customers will benefit from redeeming Qitaf program points when they purchase from your online store or earning new points with every successful purchase from your store.",
+  "advantageTwoTitle": "How will your customer benefit from adding Qitaf to your store?",
+  "alertInfo": "Submitting requests to activate the Qitaf program is currently suspended. Submitting activation requests will be available later.",
+  "benefit1": "Number of Qitaf program users: 15.7+ million",
+  "benefit2": "Feature to increase your sales and earn customer loyalty",
+  "benefit3": "Ability to redeem through qitaf balance",
+  "benefit4": "Customers can earn Qitaf points when they shop from your store",
+  "conversion-point": {
+    "Earn": "Every 1 SAR = 0.1 points",
+    "Redeem": "Every 5 points = 1 SAR",
+    "customer-points": {
+      "earn": "Every 1 SAR earns 0.1 point",
+      "redeem": "Every 5 points convert to 1 SAR"
+    },
+    "description": "Overview of customers’ points rule (earn & redeem).",
+    "title": "Customer points conversion"
+  },
+  "earn": "Earning",
+  "loyalty-program": {
+    "analytics": {
+      "earnedPoints": "Earned Points",
+      "numberOfCustomers": "Qitaf program customers",
+      "redeemedPoints": "Redeemed Amount",
+      "title": "Analytics"
+    }
+  },
+  "mainAdvantages": "Main advantages",
+  "onlyForZidPayments": "The Qitaf loyalty program is available only for stores that have activated ZidPayments.",
+
+  "orders": {
+    "title": "Orders"
+  },
+  "program": {
+    "points-info": {
+      "customer-points": "Customers Points",
+      "description": "Overview of customers’ points rule (earn & redeem) and your plan usage fees.",
+      "merchant-fees": "Merchant usage fee  • ",
+      "title": "Qitaf rates & customer points conversion"
+    }
+  },
+  "programDescription": "Provide your customers with the most popular loyalty program from STC 'Qitaf' to redeem points for purchases from your store",
+  "programTitle": "Qitaf Program",
+  "rates": {
+    "description": "Qitaf loyalty fees depend on your current Zid package.",
+    "title": "Qitaf rates by plan"
+  },
+  "redeem": "Redeem",
+  "saudiMerchantsOnly": "The Qitaf loyalty program is not available for stores outside Saudi Arabia.",
+  "statusButtonText": "View your account details"
+}

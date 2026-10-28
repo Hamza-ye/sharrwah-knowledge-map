@@ -1,0 +1,166 @@
+{
+  "mobileApp": {
+    "banner": {
+      "actionTitle": "Create your app",
+      "description": "Create an app that reflects your store’s identity to boost customer loyalty and drive repeat purchases.",
+      "title": "Easily create your mobile app"
+    },
+    "callToAction": {
+      "actionTitle": "Create your app now",
+      "title": "Create your mobile app easily"
+    },
+    "description": "Note: The system retains notifications for up to 30 days.",
+    "emptyState": {
+      "createNotification": "Create push notification",
+      "description": "Start promoting the mobile app and sending push notifications to encourage customers to place a new order.",
+      "title": "Your orders from mobile app will show here"
+    },
+    "faq": {
+      "faq01": {
+        "answer": "No. You will be able to manage pages / categories / products / orders / shipping companies / payment methods from the same Zid dashboard",
+        "question": "Does app content management require a separate control panel from Zid?"
+      },
+      "faq02": {
+        "answer": "Free without limits. The application notifications feature is linked with the one signal service provider, and unlimited notifications can be sent for free.",
+        "question": "Do app notifications and alerts have an additional cost based on the number of messages?"
+      },
+      "faq03": {
+        "answer": "Abandoned cart recovery is available with the Pro package. Merchants can customize the message content and set the timing for when it’s sent. A cart is considered abandoned when a user adds a product to the cart within the app without completing the purchase, even if they’re not logged in. A reminder notification is then automatically sent to the customer at no additional cost.",
+        "question": "How and when are abandoned cart alerts sent through the app?"
+      },
+      "title": "Frequently Asked Questions"
+    },
+    "features": {
+      "dashboard": "One dashboard for store and app",
+      "discounts": "Special discounts for app users",
+      "notifications": "Sending notifications to app users",
+      "retargeting": "Retargeting abandoned carts in the app",
+      "title": "App features"
+    },
+    "orders": {
+      "columns": {
+        "order": "Order number",
+        "payment": "Payment",
+        "shipping": "Shipping",
+        "total": "Total"
+      },
+      "title": "Order list from the mobile app"
+    },
+    "overview": {
+      "averageSales": "Average sales",
+      "createNotification": "Create notification",
+      "title": "Overview",
+      "totalDiscounts": "Total discounts value",
+      "totalOrders": "Total orders",
+      "totalSales": "Total sales"
+    },
+    "settings": {
+      "banner": {
+        "label": "App download advertisement"
+      }
+    },
+    "stats": {
+      "converting": "Converting customers into buyers",
+      "costs": "Lower marketing costs",
+      "profit": "Increase returns and profits",
+      "retentionRate": "Customer retention rate",
+      "storeAcccess": "Customer access to your store",
+      "title": "Make your business sustainable through the app"
+    },
+    "storeApps": {
+      "storeNames": {
+        "store01": "Raseel",
+        "store02": "Faisal Al-Dayel",
+        "store03": "Power store",
+        "store04": "Reefi"
+      },
+      "title": "Featured store apps"
+    },
+    "title": "Sent Notifications"
+  },
+  "mobileAppBanner": {
+    "customization": {
+      "developer": {
+        "label_ar": "The name of the application developer (Arabic)",
+        "label_en": "The name of the application developer (English)",
+        "placeholder_ar": "Add developer name in Arabic",
+        "placeholder_en": "Add developer name in English"
+      },
+      "icon": {
+        "label": "App icon"
+      },
+      "name": {
+        "label_ar": "App name (Arabic)",
+        "label_en": "App name (English)",
+        "placeholder_ar": "Add app name here in Arabic",
+        "placeholder_en": "Add app name here in English"
+      },
+      "promotional": {
+        "label_ar": "Promotional text (Arabic)",
+        "label_en": "Promotional text (English)",
+        "placeholder_ar": "Write the promotional text for your app in Arabic",
+        "placeholder_en": "Write the promotional text for your app in English"
+      },
+      "title": "Customize app download ad"
+    },
+    "preview": {
+      "developer": "Developer name",
+      "name": "App name",
+      "promo": "Promotional text for your app",
+      "title": "Ad preview"
+    },
+    "publishing": {
+      "description": "Use this feature to show the app download ad on your store",
+      "label": "Publish advertisement",
+      "title": "App download advertisement from the store"
+    }
+  },
+  "mobileAppPushNotifications": {
+    "error_mobileApp": "You need to activate the mobile app first",
+    "error_ssl": "You need to activate SSL first",
+    "form": {
+      "addCategory": "Add category",
+      "addProduct": "Add product",
+      "changeCategory": "Change category",
+      "changeProduct": "Change product",
+      "contentsEn": {
+        "label": "Message",
+        "placeholder": "Type the text of the notification message"
+      },
+      "description": "Through this form you can send notifications to your store app users",
+      "headingsEn": {
+        "label": "Main title",
+        "placeholder": "Add the main title of the message"
+      },
+      "redirectTo": {
+        "label": "When you click the notification redirect to"
+      },
+      "subtitleEn": {
+        "label": "Sub title",
+        "placeholder": "Add subtitle"
+      },
+      "title": "Send notifications"
+    },
+    "preview": {
+      "android": "Android",
+      "ios": "iOS",
+      "messagePlaceholder": "Notification message will appear here",
+      "now": "now",
+      "title": "Notification preview",
+      "titlePlaceholder": "Notification title"
+    },
+    "success": "Sent successfully",
+    "table": {
+      "columns": {
+        "date": "The date and time of sending",
+        "message": "Message",
+        "percentage": "Percentage of clickers",
+        "success": "Successfully sent to"
+      },
+      "emptyState": {
+        "description": "Start sending notifications to encourage your customers to create a new order or to inform them about new offers and products.",
+        "title": "No notifications to display"
+      }
+    }
+  }
+}

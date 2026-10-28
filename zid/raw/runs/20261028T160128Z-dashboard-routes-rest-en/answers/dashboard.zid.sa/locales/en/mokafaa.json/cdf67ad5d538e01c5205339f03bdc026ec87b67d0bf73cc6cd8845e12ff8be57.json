@@ -1,0 +1,88 @@
+{
+  "activatationTitle": "Activate Mokafaa",
+  "activate": "Activate the Mokafaa program",
+  "activateGrow": "Activate & Start Growing",
+  "activateNow": "Activate Now",
+  "activationPopup": {
+    "description": "Activate Mokafaa now and start rewarding your customers instantly. By joining, you give your customers the ability to earn points on every purchase and redeem points directly in your store, boosting loyalty and driving repeat sales.",
+    "link": " Terms & Conditions.",
+    "terms0": "I agree to the Mokafaa ",
+    "terms1": "",
+    "title": "Mokafaa Activation"
+  },
+  "advantageOneDescription": "Mokafaa is a loyalty program from Al Rajhi Bank that rewards customers with points for every purchase. By activating Mokafaa in your store, your customers can use their existing Mokafaa points to pay, or earn new points every time they shop.",
+  "advantageOneTitle": "What is Mokafaa?",
+  "advantageTwoDescription": "Your customers can redeem their Mokafaa points at checkout to get discounts, or earn new points that increase their balance with every purchase. This makes shopping at your store more rewarding and keeps them coming back.",
+  "advantageTwoTitle": "How will your customers benefit from Mokafaa in your store?",
+  "alertInfo": "Submitting requests to activate the Mokafaa program is currently suspended. Submitting activation requests will be available later.",
+  "benefit1": "More than 14+ million customers enrolled in Mokafaa",
+  "benefit2": "Boost your sales and strengthen customer loyalty",
+  "benefit3": "Enable customers to pay partially or fully with points",
+  "benefit4": "Customers earn Mokafaa points every time they shop from your store",
+  "conversion-point": {
+    "Earn": "Every 1 SAR earns 10 points",
+    "Redeem": "Every 250 points convert to 1 SAR",
+    "customer-points": {
+      "earn": "Every 1 SAR earns 10 points",
+      "redeem": "Every 250 points convert to 1 SAR"
+    },
+    "description": "Overview of customers’ points rule (earn & redeem).",
+    "title": "Customer points conversion"
+  },
+  "earn": "Earning",
+  "landing": {
+    "activateButton": "Activate Mokafaa",
+    "advantages": {
+      "customerBenefit": {
+        "description": "Your customers can redeem their Mokafaa points at checkout to get discounts, or earn new points that increase their balance with every purchase. This makes shopping at your store more rewarding and keeps them coming back.",
+        "label": "What will your customer benefit from adding Mokafaa to your store?"
+      },
+      "title": "Main advantages",
+      "whatIs": {
+        "description": "Mokafaa is a loyalty program from Al Rajhi Bank that rewards customers with points for every purchase. By activating Mokafaa in your store, your customers can use their existing Mokafaa points to pay, or earn new points every time they shop.",
+        "label": "What is Mokafaa?"
+      }
+    },
+    "banner": {
+      "benefits": {
+        "first": "More than 14+ million customers enrolled in Mokafaa.",
+        "fourth": "Customers earn Mokafaa points every time they shop from your store.",
+        "second": "Boost your sales and strengthen customer loyalty.",
+        "third": "Enable customers to pay partially or fully with points."
+      },
+      "description": "Provide your customers with the most trusted loyalty program from Al Rajhi Bank 'Mokafaa' to earn and redeem points in your store.",
+      "title": "Mokafaa program"
+    }
+  },
+  "loyalty-program": {
+    "analytics": {
+      "earnedPoints": "Earned Points",
+      "numberOfCustomers": "Mokafaa program customers",
+      "redeemedPoints": "Redeemed Amount",
+      "title": "Analytics"
+    }
+  },
+  "mainAdvantages": "Main advantages",
+  "onlyForZidPayments": "The Mokafa loyalty program is available only for stores that have activated ZidPayments.",
+
+  "orders": {
+    "title": "Orders"
+  },
+  "program": {
+    "points-info": {
+      "customer-points": "Customers Points",
+      "description": "Overview of customers’ points rule (earn & redeem) and your plan usage fees.",
+      "merchant-fees": "Merchant usage fee  • ",
+      "title": "Mokafaa rates & customer points conversion"
+    }
+  },
+  "programDescription": "Provide your customers with one of the most popular loyalty programs in Saudi Arabia to redeem points for purchases from your store.",
+  "programTitle": "Mokafaa",
+  "rates": {
+    "description": "Mokafaa loyalty fees depend on your current Zid package.",
+    "title": "Mokafaa rates by plan"
+  },
+  "redeem": "Redeem",
+  "saudiMerchantsOnly": "The Mokafa loyalty program is not available for stores outside Saudi Arabia.",
+  "statusButtonText": "View your account details"
+}

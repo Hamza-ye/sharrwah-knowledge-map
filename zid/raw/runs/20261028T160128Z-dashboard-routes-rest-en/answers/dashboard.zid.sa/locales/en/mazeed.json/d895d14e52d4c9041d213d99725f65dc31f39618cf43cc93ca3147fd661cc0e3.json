@@ -1,0 +1,267 @@
+{
+  "activationSuccess": {
+    "description": "once approved, they'll appear on Mazeed.",
+    "message": "Your products are sent for review!",
+    "title": "Mazeed is connected!"
+  },
+  "bankAccount": {
+    "alert": {
+      "button": "Add Bank Account",
+      "content": "Your bank account details are essential for receiving settlements from Mazeed.",
+      "title": "Add your bank account"
+    }
+  },
+  "dashboard": {
+    "exportAllTransactions": "Export all transactions",
+    "financialDues": "Financial dues",
+    "orders": "Orders",
+    "products": "Products",
+    "settings": "Settings",
+    "viewAll": "View all"
+  },
+  "orders": {
+    "cards": {
+      "mazeedTotalRequests": "Mazeed total requests",
+      "totalSalesViaMazeed": "Total sales via mazeed",
+      "yourAverageRatingFromRatings_few": "Your average rating from {{count}} ratings",
+      "yourAverageRatingFromRatings_many": "Your average rating from {{count}} ratings",
+      "yourAverageRatingFromRatings_one": "Your average rating from {{count}} rating",
+      "yourAverageRatingFromRatings_other": "Your average rating from {{count}} ratings",
+      "yourAverageRatingFromRatings_two": "Your average rating from {{count}} ratings",
+      "yourAverageRatingFromRatings_zero": "Your average rating from {{count}} ratings"
+    }
+  },
+  "products": {
+    "addToMazeed": "Add to Mazeed",
+    "applicationStatusSuccess": "Approved",
+    "bulkActions": {
+      "add": "Add products to mazeed",
+      "hide": "Hide products",
+      "show": "Show products"
+    },
+    "columns": {
+      "afterTax": "(after tax)",
+      "beforeTax": "(before tax)",
+      "orderNumber": "Order number",
+      "productAcceptanceStatus": "Approval status",
+      "productAppearanceStatus": "Show in store",
+      "productName": "Product name",
+      "sku": "SKU",
+      "taxPercentage": "Tax (15%)"
+    },
+    "displayed": "Shown",
+    "filters": {
+      "added": "Is Added on Mazeed",
+      "all": "All",
+      "approvalStatus": "Approval status",
+      "approved": "Approved",
+      "category": "Category",
+      "displayStatus": "Display status",
+      "hidden": "Hidden",
+      "inStock": "In stock",
+      "max": "Max",
+      "min": "Min",
+      "outOfStock": "Out of stock",
+      "priceRange": "Price range",
+      "productDetails": "Product details",
+      "productStatus": "Product status",
+      "range": "Range",
+      "rejected": "Rejected",
+      "shown": "Shown",
+      "stockQuantity": "Stock quantity",
+      "underReview": "Under review"
+    },
+    "hidden": "Hidden",
+    "inReview": "Under review",
+    "info": {
+      "imageQuality": "Image quality",
+      "imageQualityDescription": "Use images sized 2024×2024 pixels, with a quality of at least 72 dpi. We accept PNG and JPG formats.",
+      "imagesBackground": "Images background",
+      "imagesBackgroundDescription": "Make sure that product image without any logos or words the background should be plain and light color, preferred to be white",
+      "improveContent": "Improve content of each product",
+      "improveContentDescription": "Add description and key words Each product should have at least 3 images",
+      "title": "Acceptance & presentation guidelines"
+    },
+    "notAccepted": "Not accepted"
+  },
+  "settings": {
+    "advancedSettings": "Advanced settings",
+    "displayMazeedLinkInSMS": "Display Mazeed link in SMS",
+    "form": {
+      "additionalServices": "Additional services include operating fees",
+      "additionalServicesDescription": "Based on your store's category ({{category}}), a {{commission}}% commission applies. Additional fees will be deducted from each order.",
+      "bankInfo": "Bank Information",
+      "bankInfoDescription": "Mazeed will settled to this Bank account",
+      "bankName": "Bank Name",
+      "beneficiaryName": "Beneficiary Name",
+      "commercialName": "Commercial Name",
+      "commercialNameHelperText": "Name as per certificate. Name will be shown in invoices",
+      "commercialRegistrationNumber": "Commercial Registration Number",
+      "customerRepEmail": "Customer service email",
+      "customerRepMobile": "Customer service phone number",
+      "discardChanges": "Discard changes",
+      "establishment": "Establishment",
+      "freelancerCertificate": "Freelancer Certificate",
+      "ibanInvalid": "IBAN is invalid",
+      "ibanNumber": "IBAN number",
+      "ibanValid": "IBAN is valid",
+      "individual": "Individual",
+      "mazeedServices": "Mazeed Services include operational fees",
+      "mazeedServicesDescription": "Based on your industry {{service}}, the commission fees are {{commission}}%, and Mazeed deducts commission fees on each order",
+      "operationCoordinatorInfo": "Operation coordinator info",
+      "opsEmail": "Operation coordinator email",
+      "opsName": "Operation coordinator name",
+      "opsPhoneNumber": "Operation coordinator phone number",
+      "opsResponsible": "The Operation coordinator is also responsible of operation",
+      "opsResponsibleDescription": "Operation will be responsible to follow up in regards any issue or tickets with Mazeed team",
+      "ownerEmail": "Store Owner email",
+      "ownerInfo": "Owner Info",
+      "ownerName": "Owner name",
+      "ownerPhoneNumber": "Store Owner phone number",
+      "ownerResponsible": "The store owner is also responsible of operation",
+      "ownerResponsibleDescription": "Operation will be responsible to follow up in regards any issue or tickets with Mazeed team",
+      "pleaseSelectBankAccount": "Please select your bank account",
+      "storeBio": "Store bio",
+      "storeCategory": "Store Category",
+      "storeEmail": "Store Email",
+      "storeInfo": "Store Info",
+      "storeInfoDescription": "Custom message for status changes. If not set, the default order notification will be sent.",
+      "storeLogoArabic": "Store Logo in Arabic",
+      "storeLogoEnglish": "Store Logo in English",
+      "storeName": "Store Name",
+      "storeNameHelperText": "This name will show up in the Mazeed app",
+      "taxNumber": "Tax Number",
+      "taxNumberHelperText": "This number will show up in the Mazeed app",
+      "withCommercialNumber": "With commercial number",
+      "withFreelancerCertificate": "With freelancer certificate"
+    },
+    "sendAbandonedCartNotifications": "Send abandoned cart notifications",
+    "showInCustomerProfile": "Show Mazeed in customer profile",
+    "showInEmails": "Show Mazeed in emails",
+    "showInOrderPage": "Show Mazeed in order page",
+    "showInSuccessPage": "Show Mazeed in success page",
+    "title": "Customize showing Mazeed inside the store"
+  },
+  "settlementInvoice": {
+    "buyerInfo": "Buyer data",
+    "invoiceCreatedDate": "Invoice created date",
+    "invoiceNumber": "Invoice number",
+    "marketplaceCompanyName": "Technical Qudrah for Information and Communication Technology Company (One Person Company)",
+    "priceDetails": "Price details",
+    "sellerInfo": "Seller details",
+    "shippingFee": "Shipping fee",
+    "title": "Settlement invoice"
+  },
+  "settlements": {
+    "alert": {
+      "button": "View in Zid wallet",
+      "content": "We've moved your settlements to Zid Wallet for a smoother and more convenient experience!\nPlease note that older invoices won't be accessible anymore – but from now on, you can easily find all your new invoices right in Zid Wallet.",
+      "title": "Settlements moved to Zid Wallet"
+    },
+    "latestTransactions": {
+      "columns": {
+        "date": "Date",
+        "numberOfOrders": "Number of orders",
+        "operationType": "Operation type",
+        "processStatus": "Process status",
+        "totalAmount": "Total amount",
+        "transactionNumber": "Transaction number"
+      },
+      "statuses": {
+        "canceled": "Canceled",
+        "pending": "Pending",
+        "success": "Success"
+      },
+      "title": "Latest transactions",
+      "transferOfDues": "Transfer of dues"
+    },
+    "moneyDuesWithinMazeed": {
+      "currentBalance": "Current balance",
+      "depositInProcess": "Deposit in process",
+      "lastDeposit": "Last deposit"
+    },
+    "settingsNote": {
+      "button": "View settlements here",
+      "content": "Until Zid Wallet is available in your region, you can continue accessing your settlements from this page. Once Wallet becomes available, all new invoices will appear there automatically.",
+      "title": "Looking for your settlements?"
+    }
+  },
+  "status": {
+    "applyAgain": "Apply again",
+    "blocked": "Blocked",
+    "inReview": "Your activation status is under review",
+    "notAvailableCategory": "Your store category is not supported in mazeed at this time, please check the store category and come back later",
+    "rejected": "Your request to join Mazeed is rejected",
+    "rejectedBadge": "Rejected",
+    "rejectedFixIssues": "Please fix the issues before you apply again",
+    "underReview": "Under review"
+  },
+  "welcomeDashboard": {
+    "activateMazeedNow": "Activate Mazeed now",
+    "activationSent": "Activation request sent successfully",
+    "downloadCard": {
+      "description": "Get a chance to try the app, now available for download",
+      "title": "Download the Mazeed app"
+    },
+    "frequentlyAskedQuestions": {
+      "questions": {
+        "card1": {
+          "answer": "No, Mazeed will show the same shipping options activated on your store.",
+          "question": "Is Mazeed responsible for shipping and delivery?"
+        },
+        "card2": {
+          "answer": "No, Mazeed will show activated products using the same quantity and price as on your store.",
+          "question": "Is it necessary to specify a separate inventory for Mazeed?"
+        },
+        "card3": {
+          "answer": "All orders will be shown under the order page on the merchant dashboard with an indication of the order source, whether the order is from the store or Mazeed.",
+          "question": "Where will I receive orders coming from Mazeed?"
+        },
+        "card4": {
+          "answer": "No, there is no subscription fee. Mazeed will charge a percentage from sales on Mazeed, and the percentage is shown on the contract.",
+          "question": "Is there any subscription fee for listing my product on Mazeed?"
+        },
+        "card5": {
+          "answer": "Yes, the Mazeed platform will include marketing plans throughout the year for Mazeed and the products listed on it.",
+          "question": "Are there any marketing plans for the Mazeed platform?"
+        }
+      },
+      "title": "Frequently Asked Questions"
+    },
+    "mainAdvantages": {
+      "card1": {
+        "description": "Linking your store requires no additional documentation or technical complications",
+        "title": "Quick and easy registration"
+      },
+      "card2": {
+        "description": "Full product control and order reception from one Zid console",
+        "title": "Inventory and one control panel"
+      },
+      "card3": {
+        "description": "Run a joint ad campaign with mazeed to show your products on social media and in-app",
+        "title": "Creative marketing of your products"
+      },
+      "card4": {
+        "description": "Associate your products with more exposure to millions of customers, without any effort from you",
+        "title": "Greater sales & growth"
+      },
+      "title": "Main advantages"
+    },
+    "mazedSettingsCard": {
+      "button": "Mazeed settings",
+      "description": "Customize disabling Mazeed download button in customer profile, orders, login, or in emails",
+      "title": "Let customers track their orders with the Mazeed app."
+    },
+    "requiredFilesDialog": {
+      "alertContent": "Please check that the required conditions are met to continue activating Mazeed",
+      "attachCommercialRegistration": "Attach commercial registration or freelance certificate",
+      "attachLink": "Attach it from here",
+      "attachShippingOptions": "Activate at least one shipping option",
+      "description": "To join mazeed these criteria are required in your store",
+      "shippingOptions": "Shipping options",
+      "title": "About the store"
+    },
+    "welcomeDescription": "A solution for the growth of your store, making it easier for you to reach millions of customers by reviewing the best stores and products, providing an enjoyable and reliable shopping experience for the buyer, and transparency in tracking orders made through Mazeed or any of the Zid stores.",
+    "welcomeToMazeed": "Welcome to Mazeed"
+  }
+}

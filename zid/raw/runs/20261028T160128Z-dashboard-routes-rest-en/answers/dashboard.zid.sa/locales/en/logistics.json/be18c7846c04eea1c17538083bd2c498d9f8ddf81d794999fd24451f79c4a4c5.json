@@ -1,0 +1,1285 @@
+{
+  "FreeShippingConditions": {
+    "description": "Enable free shipping when certain conditions are met, such as a minimum order value.",
+    "title": "Free shipping conditions"
+  },
+  "activation": {
+    "alerts": {
+      "activationSuccessMessage": {
+        "content": "You've successfully activated {{name}} method! you can customize the default settings anytime"
+      }
+    },
+    "getStarted": "Get started by selecting your preferred shipping methods",
+    "options": {
+      "option1": {
+        "description": "Reliable shipping options that suit your different product types and coverage needs",
+        "title": "Flexible shipping options"
+      },
+      "option2": {
+        "description": "Shipping costs are automatically deducted from your Zid Wallet when an order is placed",
+        "title": "Simplified payments & invoicing"
+      },
+      "option3": {
+        "description": "Unlock special rates by purchasing shipping labels in bulk",
+        "title": "Discounted shipping label credits"
+      }
+    },
+    "otherLogisticsProviders": "Other logistics providers",
+    "selectShippingMethods": "Select shipping methods",
+    "setCustomShippingRates": "Set custom shipping rates",
+    "setUp": "Set up your preferred shipping methods without the hassle of managing separate contracts"
+  },
+  "buttons": {
+    "activateNow": "Activate now",
+    "addLocation": "Add location",
+    "addOption": "Add option",
+    "addPickupLocation": "Add pickup location",
+    "completeActivation": "Complete activation",
+    "connectYourAccountButton": "Connect your account",
+    "createNewRule": "Manage",
+    "customShippingOption": "Custom shipping option",
+    "manageShippingMethods": "Manage shipping methods",
+    "noShippingMethodsAvailableButton": "Browse available providers",
+    "pickupOption": "Pickup option",
+    "prioritizeShipping": "Prioritize shipping",
+    "purchaseLabel": "Purchase labels",
+    "purchaseLabels": "Purchase labels",
+    "requestActivation": "No, request to activate the account",
+    "settings": "Settings",
+    "shipmentRateCalculation": "Shipping rate calculator",
+    "startLinking": "Yes, start linking"
+  },
+  "columns": {
+    "account_number": "Account number",
+    "account_pin": "Account PIN",
+    "cities": "Cities",
+    "cod": "Cash on delivery",
+    "countCities": "{{count}} cities",
+    "countCities_few": "{{count}} cities",
+    "countCities_many": "{{count}} cities",
+    "countCities_one": "{{count}} city",
+    "countCities_other": "{{count}} cities",
+    "countCities_two": "{{count}} cities",
+    "countCities_zero": "{{count}} cities",
+    "countLabels": "{{count}} labels",
+    "courier": "Courier",
+    "deliveryCities": "Delivery cities",
+    "deliveryCost": "Delivery cost",
+    "entity": "Entity",
+    "expireDate": "Expiry date",
+    "logo": "Logo",
+    "package": "Package",
+    "password": "Password",
+    "pickupCities": "Pickup cities",
+    "remaining": "Remaining",
+    "shippingMethods": "Shipping methods",
+    "shippingOption": "Shipping option",
+    "shippingType": "Shipping rate",
+    "status": "Status",
+    "transaction": "Transaction",
+    "username": "Username",
+    "zoneName": "Zone name"
+  },
+  "customMethods": {
+    "alerts": {
+      "shippingMethodUnavailable": {
+        "content": "Shipping method is not available in your region, please activate a custom shipping method.",
+        "title": "Shipping method unavailable"
+      }
+    },
+    "aramexCustom": "Aramex (custom)",
+    "aramexGccCustom": "Aramex GCC (custom)",
+    "aramexGlobalCustom": "Aramex global (custom)",
+    "customShippingMethod": "Shipping method details",
+    "deleteButton": "Delete Option",
+    "disableButton": "Disable Option",
+    "enableButton": "Enable Option",
+    "naqelCustom": "Naqel (custom)",
+    "smsaCustom": "SMSA (custom)",
+    "smsaGccCustom": "SMSA GCC (custom)",
+    "table": {
+      "buttons": {
+        "create": "Add shipping zone"
+      },
+      "columns": {
+        "name": "Zone"
+      },
+      "description": "Set shipping rates based on the city or region. The applicable rate will automatically be shown to the customer at checkout based on their location.",
+      "title": "Shipping zone customization"
+    },
+    "upgradeDescription": "You've reached the limit for custom options in your current package. Upgrade to add more."
+  },
+  "customShipping": "Store Courier",
+  "customShippingPlaceholder": "شركة توصيل المتجر",
+  "customShippingPlaceholder_ar": "شركة توصيل المتجر",
+  "customShippingPlaceholder_en": "Store Courier",
+  "customShippingProvider": {
+    "coverageDetailsCard": {
+      "estimatedDeliveryTime": "Estimated delivery time",
+      "estimatedPickupTime": "Estimated pickup time",
+      "supportedCities": "Pickup cities",
+      "supportedCitiesCount": "{{count}} cities",
+      "supportedCitiesCount_few": "{{count}} cities",
+      "supportedCitiesCount_many": "{{count}} cities",
+      "supportedCitiesCount_one": "{{count}} city",
+      "supportedCitiesCount_other": "{{count}} cities",
+      "supportedCitiesCount_two": "{{count}} cities",
+      "supportedCitiesCount_zero": "{{count}} cities",
+      "supportedDeliveryCities": "Delivery cities",
+      "title": "Service details"
+    }
+  },
+  "emptyStateNoPackages": "No packages found for this service",
+  "expectedDeliveryDate": {
+    "customNote": {
+      "description": "Write a short, clear note that appears under the delivery option.",
+      "noteLabelAr": "Note in Arabic",
+      "noteLabelEn": "Note in English",
+      "title": "Custom Note"
+    },
+    "deliveryAvailability": {
+      "allDays": "All days of the week",
+      "description": "Select which days you deliver.",
+      "specificDays": "Specific days of the week",
+      "title": "Delivery days"
+    },
+    "description": "Add delivery note for your customer, such as extra fees, delivery terms, or the expected delivery date.",
+    "earliestDeliveryDate": {
+      "dailyLimit": "Delivery orders are rolled over when the daily limit is exceeded.",
+      "daysLabel": "Number of days",
+      "description": "Set when the delivery window starts based on order time.",
+      "nextDay": "Next day",
+      "placeholder": "Example: 100 orders per day",
+      "sameDay": "Same day",
+      "specificDays": "After a specified number of days",
+      "specificDaysPlaceholder": "Example: 3 days from the order date",
+      "title": "Delivery type",
+      "tooltip": "When the daily limit is exceeded, the nearest available day will be automatically selected."
+    },
+    "example": {
+      "expectedDelivery": "Delivery in {{days}} days - {{date}}",
+      "shippingMethod": "Store representative",
+      "title": "Example of display method",
+      "today": "Delivery today",
+      "tomorrow": "Delivery tomorrow"
+    },
+    "orderConditions": {
+      "dailyLimit": {
+        "title": "Daily limit for orders"
+      },
+      "description": "Define the rules for calculating and displaying the earliest delivery date.",
+      "latestTime": {
+        "description": "Delivery orders are no longer counted after",
+        "placeholder": "Example: 9:00 PM",
+        "title": "Cut-off time",
+        "tooltip": "The maximum time allowed for receiving delivery requests will be determined automatically using the nearest available day."
+      },
+      "title": "Delivery rules"
+    },
+    "showDeliveryDateBasedOn": {
+      "automatic": "Show dynamic delivery date",
+      "customNote": "Custom note",
+      "description": "This content will appear on the checkout page only.",
+      "title": "Note content"
+    },
+    "tabs": {
+      "title": "Delivery note"
+    },
+    "timeSlotSettings": {
+      "addTimeSlot": "Add time slot",
+      "alwaysShowSelection": "Always show delivery time selection",
+      "alwaysShowSelectionDescription": "When enabled, selecting this local delivery method always opens the time slot popup. The nearest slot is not auto-selected, and the customer must choose a slot before continuing.",
+      "autoAssign": "Auto-assign expected delivery date",
+      "customSlotExtraDays": {
+        "helper": "Enter 0 for today only. Maximum 5 days.",
+        "label": "Advance booking"
+      },
+      "description": "Choose how delivery time is assigned.",
+      "endTime": "End time",
+      "endTimeCutoffNote": "End time is a cut-off time",
+      "endTimeTooltip": "End time is a cut-off time",
+      "newTimeSlot": "New time slot",
+      "pickTimeSlot": "Let customer choose a time slot",
+      "previewDialogTitle": "Choose date & time",
+      "previewSelectSlotTitle": "Select delivery time slot:",
+      "previewSlots": {
+        "evening": "Evening",
+        "eveningTime": "2:00 PM - 5:00 PM",
+        "morning": "Morning",
+        "morningTime": "7:00 AM - 12:00 PM",
+        "night": "Night",
+        "nightTime": "6:00 PM - 9:00 PM"
+      },
+      "previewTitle": "Customer preview at checkout:",
+      "slotName": "Slot name",
+      "slotNamePlaceholder": "Enter time slot name",
+      "startTime": "Start time",
+      "title": "Time slot settings"
+    },
+    "timeSlotVisibility": {
+      "currentAndUpcoming": "Current and upcoming time slots",
+      "title": "Which delivery time slots should customers see?",
+      "upcomingOnly": "Upcoming time slots only"
+    },
+    "title": "Delivery note",
+    "validation": {
+      "cutoffTimeInvalid": "Please enter a valid time",
+      "cutoffTimeRequired": "Latest time for delivery is required",
+      "dailyCapacityMin": "Daily order capacity must be at least 1",
+      "dailyCapacityRequired": "Daily order capacity is required when daily limit is enabled",
+      "daysCountMin": "Number of days must be at least 3",
+      "daysCountRequired": "Number of days is required when specific days is selected",
+      "noteRequired": "Custom note is required when custom note option is selected"
+    }
+  },
+  "faqs": {
+    "description": "Answers to frequently asked questions about the shipping method.",
+    "search": "Search faq by name",
+    "title": "Frequently Asked Questions"
+  },
+  "fields": {
+    "accountNumber": {
+      "label": "Account number",
+      "placeholder": "Enter account number"
+    },
+    "accountPin": {
+      "label": "Account PIN",
+      "placeholder": "Enter account PIN"
+    },
+    "activateCashOnDelivery": {
+      "label": "Cash on delivery (COD)"
+    },
+    "apiKey": {
+      "label": "API key",
+      "placeholder": "Enter API key.."
+    },
+    "clientId": {
+      "label": "Client Id",
+      "placeholder": "Enter Client Id"
+    },
+    "courier": {
+      "label": "Shipping method",
+      "placeholder": "Select a courier"
+    },
+    "entity": {
+      "label": "Entity",
+      "placeholder": "Enter entity name"
+    },
+    "inventoryLocation": {
+      "label": "Inventory",
+      "placeholder": "Select inventory location"
+    },
+    "lintedInventoryLocation": {
+      "label": "Linked inventory location",
+      "placeholder": "Select inventory location"
+    },
+    "loadType": {
+      "label": "Load type",
+      "placeholder": "Select a load type"
+    },
+    "name": {
+      "label": "Name",
+      "placeholder": "Enter name"
+    },
+    "notes": {
+      "label": "Notes",
+      "placeholder": "Enter notes"
+    },
+    "optionName": {
+      "label": "Option name",
+      "placeholder": "اسم الخيار",
+      "placeholder_ar": "اسم الخيار",
+      "placeholder_en": "Option name"
+    },
+    "password": {
+      "label": "Password",
+      "placeholder": "Enter password"
+    },
+    "serviceCode": {
+      "label": "Service code",
+      "placeholder": "Select a service code"
+    },
+    "username": {
+      "label": "Username",
+      "placeholder": "Enter username"
+    }
+  },
+  "filters": {
+    "fields": {
+      "deliveryFrom": {
+        "label": "Delivery from",
+        "placeholder": "Select delivery origin"
+      },
+      "deliveryTo": {
+        "label": "Delivery to",
+        "placeholder": "Select delivery destination"
+      },
+      "packageCode": {
+        "label": "Package code",
+        "placeholder": "Select package code"
+      },
+      "paymentMethod": {
+        "label": "Payment method",
+        "placeholder": "Select payment method"
+      },
+      "paymentSource": {
+        "label": "Payment source",
+        "placeholder": "Select payment source"
+      },
+      "paymentStatus": {
+        "label": "Payment status",
+        "placeholder": "Select payment status"
+      },
+      "serviceLevel": {
+        "label": "Shipping method",
+        "placeholder": "Select this shipping method"
+      },
+      "shipmentStatus": {
+        "label": "Shipment status",
+        "placeholder": "Select shipment status"
+      },
+      "shippingCompany": {
+        "label": "Shipping company",
+        "placeholder": "Select shipping company"
+      },
+      "status": {
+        "label": "Status",
+        "placeholder": "Select status"
+      },
+      "supportHeavyCharging": {
+        "label": "Supports heavy shipping"
+      },
+      "supportsCashOnDelivery": {
+        "label": "Supports cash on delivery"
+      },
+      "supportsFastActivation": {
+        "label": "Supports fast activation (one click, no actions)"
+      },
+      "supportsRefrigeratedShipping": {
+        "label": "Supports refrigerated shipping"
+      }
+    }
+  },
+  "helpCenter": {
+    "fifthCollapse": {
+      "sectionDesc1": "Customer Satisfaction Score (CSAT) is a widely used metric that helps service providers gauge how satisfied customers are with various aspects of their experience, such as purchasing, shipping, and more",
+      "sectionDesc2": "With Zid Logistics, you can easily measure how satisfied your customers are with their shipping experience. When a shipment is delivered through Zid Logistics, a brief questionnaire is automatically sent via SMS to the customer's mobile phone in the following format:",
+      "sectionDesc3": "Customer responses are automatically categorized into three groups: satisfied customers are those who rate the service a 4 or 5, neutral customers give a rating of 3, and dissatisfied customers rate it a 1 or 2. To calculate the customer satisfaction rate, divide the number of satisfied responses by the total number of responses and multiply by 100. For example, if 10 customers responded to the questionnaire and 5 of them were satisfied, the satisfaction rate would be (5 ÷ 10) × 100 = 50%.",
+      "sectionDesc4": "A customer satisfaction rate of 70% or higher is generally considered excellent. It's important to note that the number of customers who complete the survey can impact how accurately you assess overall satisfaction. On average, only about 15% of customers respond to such surveys. For example, if you send the questionnaire to 100 customers, you can expect around 15 responses, based on the typical global response rate of 15%. This is widely accepted as a good and reliable benchmark.",
+      "sectionTitle1": "What does the customer satisfaction score measure?",
+      "sectionTitle2": "What does my store have to do with this scale?",
+      "sectionTitle3": "How is my customer satisfaction rate calculated?",
+      "sectionTitle4": "How do i know if my customer satisfaction rate is good?",
+      "title": "Customer satisfaction scale"
+    },
+    "firstCollapse": {
+      "sectionDesc1": "It is a technical solution for managing shipping companies based on shipping methods, offering access to over 15 carriers through a single digital contract—all activated with just one click.",
+      "sectionDesc2": "Zid Logistics does not charge any service fees. However, to transfer orders to \"Ready,\" you must top up your balance in advance via electronic payment or bank transfer. This prepaid amount is used to cover the cost of your shipments (shipping labels) through Zid Logistics.",
+      "sectionDesc3": "Zid Logistics can be activated in your online store to offer shipping and delivery services to your customers through multiple carriers under a single digital contract. It provides various shipping options, competitive rates, and the ability to customize pricing with the support of a dedicated team.",
+      "sectionTitle1": "What is Zid Logistics?",
+      "sectionTitle2": "Does the Zid Logistics service have any fees?\r",
+      "sectionTitle3": "What is the difference between activating Zid Logistics and activating any other shipping company?",
+      "title": "About Zid Logistics"
+    },
+    "fourthCollapse": {
+      "sectionDesc1List1": "- online payment: when choosing online payment, the amount must be a multiple of fifty (50), noting that the maximum charge limit is 1,000,000. the balance will be charged immediately, and you will start using Zid Logistics, and your orders will be changed to ready status to start shipping",
+      "sectionDesc1List2": "- bank transfer: when you choose to pay via bank transfer, the minimum amount for shipment is SAR 50,000. The transfer will be accepted within 48 working hours. After accepting it, you can start using Zid Logistics and change the order to ready status to start shipping.",
+      "sectionDesc1List3": "When your balance is about to expire, you will receive an e-mail to notify you of this, but even when the balance is depleted, the Zid Logistics option will still appear to your customers in the store as an available delivery option.",
+      "sectionDesc1List4": "In the event that you do not want to compete with the Zid Logistics team, you can refund the amount that you paid in advance and which is in your current balance.",
+      "sectionDesc2": "You can follow all prepaid shipments through the service collection window and shipments that have been deducted from your prepaid balance. Every sunday of every week, you will receive in the mail a weekly invoice for the amounts deducted from your balance for the delivery of your completed and returned shipments.",
+      "sectionDesc3": "While the payment service for cash on delivery has been activated, the payment amounts will be collected upon delivery by Zid Logistics and within two working weeks, the amounts will be transferred.",
+      "sectionTitle1": "What prepaid payment options are available with Zid Logistics?",
+      "sectionTitle2": "How do i follow up on advance payment-related operations?",
+      "sectionTitle3": "How is the money collected for shipments of cash on delivery amounts?",
+      "title": "Payments settlement in Zid Logistics"
+    },
+    "secondCollapse": {
+      "sectionDesc1": "Choosing the right level depends on:",
+      "sectionDesc1List1": "1 - The type and weight of your products to choose the appropriate shipping type for you (for example: refrigerated shipping for food and the like)",
+      "sectionDesc1List2": "2 - The delivery speed you prefer",
+      "sectionDesc1List3": "3 - The right price for you and your customers",
+      "sectionDesc1List4": "4 - Your preferred delivery method and the most suitable for your store (e.g., the shipping company picks up shipments from your warehouse, or you deliver them yourself to the shipping company branch).",
+      "sectionDesc2List1": "- you can activate additional shipping methods at any time by clicking the \"Activate Shipping Method\" button",
+      "sectionDesc2List2": "- you can cancel any shipping method at any time by pressing the cancel button, but you must ensure that all shipments assigned to this method are delivered before canceling it",
+      "sectionDesc3List1": "When you activate the Zid Logistics service, you can customize shipping method prices to fit your preferences by clicking on \"Customize.\" You can also define and limit city coverage for each shipping method to match your specific needs.",
+      "sectionDesc3List2": "For example, if a shipping method supports delivery to all cities in Saudi Arabia, but you choose to limit it to specific cities like Jeddah, Dammam, and Abha, then this shipping method will only be shown to customers in those selected cities",
+      "sectionTitle1": "How do i choose the appropriate shipping methods for my store?",
+      "sectionTitle2": "After activating the shipping method, can I add or cancel any of the shipping methods?",
+      "sectionTitle3": "Can i customize prices with Zid Logistics, and customize delivery cities for shipping methods?",
+      "title": "Zid Logistics shipping methods"
+    },
+    "seventhCollapse": {
+      "sectionDesc1": "First: charge at another shipping method. The following table shows the number of cartons supported by each shipping method.",
+      "sectionDesc2": "Second: ship the excess cartons as a new shipment:",
+      "sectionDesc3": "You may not need to ship multiple cartons, if you can use fewer cartons in a larger size, just make sure that the size and weight of the carton does not exceed the allowable weight for each shipping method.",
+      "sectionDesc3List1": "In this case, the extra cartons will be shipped as a new shipment and a new order, and this will cost you an additional shipping value:",
+      "sectionDesc3List2": "1 - Go to the orders page and create a new order for the same customer",
+      "sectionDesc3List3": "2 - Specify the same shipping method and order details",
+      "sectionTitle1": "If the shipping method that you selected does not support the number of cartons that you want to ship, you can try one of these solutions",
+      "sectionTitle2": "Changing the shipping method means that the delivery time chosen by the customer will vary, as well as the price",
+      "sectionTitle3": "Third: reduce the number of cartons and make sure of the weight:",
+      "title": "Shipping multiple boxes with Zid Logistics"
+    },
+    "sixthCollapse": {
+      "sectionDesc1List1": "- through direct chats, you can choose an inquiry or problem with Zid Logistics and write it down",
+      "sectionDesc1List2": "- you can benefit from the consulting service provided by the Zid Logistics team to help choose the most appropriate level of service by booking a consultation with a member of the team by clicking on one of the activated shipping methods, then choosing to view the details and book the consultation",
+      "sectionTitle1": "How can I reach the Zid Logistics team if i have an inquiry or encounter a problem?",
+      "title": "Connect with the Zid Logistics team"
+    },
+    "thirdCollapse": {
+      "sectionDesc1List1": "1 - Change the order status to ready",
+      "sectionDesc1List2": "2 - Print the shipping label for each order and stick each bill on the outside of the shipment",
+      "sectionDesc1List3": "3 - Sort the shipments for each shipping company separately (you can identify the name of the shipping company that appears at the top of the shipping label)",
+      "sectionDesc1List4": "4 - Hand over the shipments of each company to its representative only, while the shipments were at the level of Aramex, SMSA or Saudi Post policies. hand them over to your nearest branch",
+      "sectionDesc1List5": "And avoid the following:",
+      "sectionDesc1List6": "- no shipping company delivers orders other than its own",
+      "sectionDesc1List7": "Do not deliver any shipment without proper packaging that protects it from loss or damage.",
+      "sectionTitle1": "How does the shipment delivery process work with Zid Logistics?",
+      "title": "Zid Logistics shipment delivery process"
+    }
+  },
+  "localDelivery": {
+    "columns": {
+      "deliveryCities": "Delivery cities",
+      "optionName": "Option name",
+      "status": "Status"
+    },
+    "details": {
+      "overview": {
+        "deliveryInfo": "Customer notes",
+        "noNotes": "No note added",
+        "placeholder": "سيتم تسليم الشحنات في غضون ساعة.",
+        "placeholder_ar": "سيتم تسليم الشحنات في غضون ساعة.",
+        "placeholder_en": "Shipments will be delivered within an hour."
+      }
+    },
+    "dialog": {
+      "addTitle": "Add local delivery option",
+      "alert": "The option name is visible only to you; customers see the store courier name. You’ll be able to define zones and rates afterward.",
+      "button": "Configure delivery zone",
+      "description": "Provide doorstep delivery from your store, fulfilled by your team or a third-party app.",
+      "editDescription": "Share delivery details customers need like the ETA or any special instructions.",
+      "editTitle": "Edit local delivery option",
+      "title": "Local delivery option"
+    },
+    "emptyState": {
+      "description": "You haven’t added any locations for local deliveries yet.",
+      "title": "No local delivery locations set up"
+    }
+  },
+  "otherShippingProviders": {
+    "areYouSureYouWantToActivate": "Are you sure you want to activate {{name}} in your store?",
+    "cashOnDelivery": "Cash on delivery (COD)",
+    "companyUrl": "Company URL",
+    "completetionAlert": "Complete courier registration first, then return here to activate the service.",
+    "confirmAccountActivation": {
+      "title": "Confirm activation"
+    },
+    "deleteConfirmation": "Are you sure to deactivate the shipping option {{name}}? in case of you want to reactivate this shipping option, you will have to repeat the activation steps",
+    "disableConfirmation": "Do you want to disable the shipping option {{name}}? disabling the shipping option will hide it from appearing to customers",
+    "editSettings": {
+      "description": "Ensure that your account in {{name}} is activated first before enabling this service",
+      "title": "Edit settings"
+    },
+    "ensureAccountActivation": "Ensure that your account with {{name}} is activated first before enabling this service",
+    "linkedInventoryLocation": "Linked inventory location",
+    "requestAccountActivation": "Request account activation",
+    "shippingDetailAramexDetail": "For details on delivery coverage, delivery cost, periods and times for receiving and delivering orders, collecting the required amount, weight and tax value, please review them with the company according to your contract.",
+    "shippingTypes": {
+      "customOption": "Custom option",
+      "hippingCompany": "Shipping company",
+      "pickup": "Pickup",
+      "shippingAndFulfillmentCompany": "Shipping and fulfillment company",
+      "shippingOptions": "Shipping options"
+    },
+    "supportEmail": "Support email"
+  },
+  "pickupOption": {
+    "alert": {
+      "description": "\"Pickup in Store\" settings have been moved to the <1>inventories</1> page. Please navigate there to make any adjustments.",
+      "title": "Pickup in Store settings relocated"
+    },
+    "columns": {
+      "inventory": "Inventory",
+      "name": "Pickup name"
+    },
+    "details": {
+      "overview": {
+        "placeholder": "يمكنك استلام طلبك يوميًا من الساعة ١٠ص حتى ٩م.",
+        "placeholder_ar": "يمكنك استلام طلبك يوميًا من الساعة ١٠ص حتى ٩م.",
+        "placeholder_en": "Pickup available daily from 10 AM to 9 PM.."
+      }
+    },
+    "emptyState": {
+      "description": "You haven’t added any locations for order pickup yet",
+      "title": "No pickup locations set up"
+    }
+  },
+  "prepaidPackages": {
+    "activateMethod": "Activate method",
+    "addToCart": "Add to cart",
+    "addWaybill": "Add {{leftCount}} shipping label to get {{price}}",
+    "addWaybills": "Add {{waybillsLeftToNextPackage}} shipping labels and",
+    "alert": "The shipping method must be enabled to purchase packages.",
+    "bestOffer": "You got the best offer for shipping labels and the longest expiry date 🎉",
+    "bulkShippingLabelPricing": "Bulk shipping label credits pricing",
+    "comparisonWithBasePrice": "Compared with the base price",
+    "countShippingLabelsAtPrice": "{{count}} shipping labels <times>×</times> <amount><currency/> {{price}}</amount>",
+    "countShippingLabelsAtPrice_few": "{{count}} shipping labels <times>×</times> <amount><currency/> {{price}}</amount>",
+    "countShippingLabelsAtPrice_many": "{{count}} shipping labels <times>×</times> <amount><currency/> {{price}}</amount>",
+    "countShippingLabelsAtPrice_one": "{{count}} shipping label <times>×</times> <amount><currency/> {{price}}</amount>",
+    "countShippingLabelsAtPrice_other": "{{count}} shipping labels <times>×</times> <amount><currency/> {{price}}</amount>",
+    "countShippingLabelsAtPrice_two": "{{count}} shipping labels <times>×</times> <amount><currency/> {{price}}</amount>",
+    "countShippingLabelsAtPrice_zero": "{{count}} shipping labels <times>×</times> <amount><currency/> {{price}}</amount>",
+    "countWB": "{{count}} shipping label",
+    "countWB_few": "{{count}} shipping labels",
+    "countWB_many": "{{count}} shipping labels",
+    "countWB_one": "{{count}} shipping label",
+    "countWB_other": "{{count}} shipping labels",
+    "countWB_two": "{{count}} shipping labels",
+    "countWB_zero": "{{count}} shipping labels",
+    "discountCount": "Discount ({{count}}% off)",
+    "discountCount_few": "Discount ({{count}}% off)",
+    "discountCount_many": "Discount ({{count}}% off)",
+    "discountCount_one": "Discount ({{count}}% off)",
+    "discountCount_other": "Discount ({{count}}% off)",
+    "discountCount_two": "Discount ({{count}}% off)",
+    "discountCount_zero": "Discount ({{count}}% off)",
+    "enterNumberOfWaybills": "Enter number of shipping labels",
+    "fromShippingLabels": "From {{min_balance}}-{{max_balance}} shipping labels",
+    "noPurchasedLabels": "No purchased labels",
+    "packageValidity": "The package is valid for {{count}} months from the date of purchase and expires on {{expiryDate}}.",
+    "packageValidity_few": "The package is valid for {{count}} months from the date of purchase and expires on {{expiryDate}}.",
+    "packageValidity_many": "The package is valid for {{count}} months from the date of purchase and expires on {{expiryDate}}.",
+    "packageValidity_one": "The package is valid for 1 month from the date of purchase and expires on {{expiryDate}}.",
+    "packageValidity_other": "The package is valid for {{count}} months from the date of purchase and expires on {{expiryDate}}.",
+    "packageValidity_two": "The package is valid for {{count}} months from the date of purchase and expires on {{expiryDate}}.",
+    "packageValidity_zero": "The package is valid for {{count}} months from the date of purchase and expires on {{expiryDate}}.",
+    "percentOff": "{{discount}}% off",
+    "remainingLabels": "{{remainingLabels}} remaining labels",
+    "removeFromCart": "Remove from cart",
+    "save": "Save {{price}}",
+    "theInventory": "Inventory",
+    "warningMessage": "Label packages include the shipping cost only, and do not cover any additional fees (such as overweight fees, cash on delivery, or Zid courier pickup fees).",
+    "waybillsAmount": "Amount of shipping labels",
+    "youCantAddLessThan": "You can't add less than {{minBalance}} shipping labels",
+    "zidshipPackagesWithYour": "Zid Logistics packages with your {{groupName}}"
+  },
+  "prepaidPackagesReports": {
+    "columns": {
+      "balance": "Balance",
+      "expireDate": "Expiry date",
+      "packageName": "Package name",
+      "price": "Price",
+      "remainingBalance": "Remaining balance",
+      "transactionDate": "Transaction date",
+      "transactionNumber": "Transaction number"
+    },
+    "showShipments": "Show shipments",
+    "waybill": "Shipping label"
+  },
+  "pricingZone": {
+    "addNewRate": "Add new rate",
+    "addPricingZone": "Add rate",
+    "customRates": {
+      "columns": {
+        "fields": {
+          "allRates": "All rates",
+          "cities": "Cities",
+          "cod": "COD",
+          "costOrAdditionalWeight": "Cost for additional weight",
+          "forEachAdditional1Kg": "For each additional 0.5 kg",
+          "globalShippingRate": "Shipping cost",
+          "name": "Zone",
+          "price": "Price",
+          "reset": "Reset",
+          "shippingPrice": "Shipping cost",
+          "type": "Type",
+          "upTo": {
+            "5Kg": "Up to 0.5 kg"
+          },
+          "valueCities": "{{value}} cities"
+        }
+      },
+      "customRatesTitle": "Zones & Pricing",
+      "description": "Create custom zones for this shipping method. Customers will see only the coverage and fees you set, while you're charged the base rate in the \"Details\" tab.",
+      "description2": "Define customer shipping rates based on delivery zones.",
+      "emptyState": {
+        "button": "Create zone",
+        "description": "Creating new zones will replace the original coverage. Make sure to add all required cities to keep the service available for your customers.",
+        "title": "No custom zones"
+      },
+      "globalDescription": "Define customer shipping rates based on delivery zone. You’ll be charged the default rate, while customers pay the custom rate you set.",
+      "localDeliveryButton": "Add zone",
+      "localDeliveryDescription": "Create your zones and set the delivery fee and COD option. These settings apply to store couriers only.",
+      "localDeliveryTitle": "Local delivery zones",
+      "popupDescription": "The shipping label cost and any overweight charges will be deducted from your wallet once the order is ready.",
+      "popupTitle": "Shipping rate",
+      "title": "Customization",
+      "warningMessage": "When custom zones are enabled, your customers’ coverage will be limited to the cities you add. We recommend ensuring all required cities are included."
+    },
+    "customerRates": "Customer shipping rates",
+    "customerRatesDescription": "Define customer shipping rates based on delivery cities. You will be charged the default rate, while customers pay the custom rate you set.",
+    "description": "Finish activating local delivery by adding the areas you serve and their rates.",
+    "form": {
+      "activateCashOnDelivery": {
+        "label": "Cash on delivery (COD)"
+      },
+      "addCustomTextForTheCustomer": {
+        "description": "The customer sees this option when selecting this shipping method at checkout. ",
+        "label": "Note",
+        "title": "Custom note",
+        "tooltip": "This will be visible to your customers when this shipping method is selected at checkout"
+      },
+      "basePrice": {
+        "helperText": "Default base rate is {{rate}}",
+        "helperText2": "Base rate is {{rate}}",
+        "label": "Base price"
+      },
+      "citiesCount": "{{count}} out of {{total}} cities",
+      "citiesCount_few": "{{count}} out of {{total}} cities",
+      "citiesCount_many": "{{count}} out of {{total}} cities",
+      "citiesCount_one": "{{count}} out of {{total}} city",
+      "citiesCount_other": "{{count}} out of {{total}} cities",
+      "citiesCount_two": "{{count}} out of {{total}} cities",
+      "citiesCount_zero": "{{count}} out of {{total}} cities",
+      "codPrice": {
+        "label": "COD rate",
+        "placeholder": "0"
+      },
+      "customerPrice": "Customer price",
+      "maximumWeight": {
+        "helperText": "Default base weight is {{kg}} KG",
+        "label": "Base weight",
+        "placeholder": "Select maximum weight"
+      },
+      "pricingAndPaymentOptions": {
+        "flatRate": "Flat rate",
+        "flatRateDescription": "Fixed price for the customer, extra cost on the merchant.",
+        "weightBasedRate": "Weight-based pricing",
+        "weightBasedRateDescription": "Customer charged by order weight."
+      },
+      "selectAreas": "Select areas",
+      "selectCities": {
+        "label": "Select cities",
+        "usage": "Used in another zone '{{zone}}'"
+      },
+      "shipmentCalculationForEachExtraWeight": {
+        "helperText": "Default additional weight unit is {{kg}}kg",
+        "label": "For each additional weight",
+        "placeholder": "Enter shipment calculation for each extra weight"
+      },
+      "shipmentCostForExtraWeight": {
+        "helperText": "Default rate is {{rate}} per additional unit",
+        "label": "Extra charge",
+        "placeholder": "Enter shipment cost for extra weight"
+      },
+      "shippingPricing": {
+        "helperText": "Default base rate is {{rate}}",
+        "label": "Shipping price",
+        "placeholder": "Select shipping price"
+      },
+      "zoneName": {
+        "helperText": "For reference only. Not visible to customers.",
+        "label": "Zone name",
+        "placeholder": {
+          "ar": "منطقة محلية",
+          "en": "Domestic zone"
+        }
+      }
+    },
+    "title": "Configure delivery zones",
+    "zoneDetails": "Zone details"
+  },
+  "root": {
+    "activeShippingMethods": {
+      "title": "Active shipping methods"
+    },
+    "customShippingMethods": {
+      "description": "Add and manage your own delivery and shipping methods.",
+      "title": "Custom shipping"
+    },
+    "otherShippingProviders": {
+      "description": "Explore integrations with alternative fulfillment and shipping providers.",
+      "title": "Other shipping providers"
+    },
+    "shippingLabelTransactions": {
+      "button": "Label package balances",
+      "description": "Track your purchased shipping label credits and their status",
+      "title": "Shipping label credits"
+    },
+    "shippingRules": {
+      "columns": {
+        "criteria": "Criteria",
+        "name": "Name",
+        "shippingMethods": "Shipping methods"
+      },
+      "description": "Set shipping methods based on conditions like basket size, products, sales channel, customer groups, and more",
+      "title": "Shipping conditions"
+    }
+  },
+  "senderProfile": {
+    "description": "Add sender details per inventory for shipping labels and contacts.",
+    "editDialog": {
+      "createTitle": "Create sender profile",
+      "description": "Changes will apply to new shipping labels issued from this inventory.",
+      "email": "Email",
+      "fullName": "Full name",
+      "inventory": "Inventory",
+      "inventoryRequired": "Please select an inventory",
+      "officerName": "Officer name",
+      "phoneNumber": "Phone number",
+      "title": "Edit sender details for {{inventoryName}}"
+    },
+    "senderInformation": {
+      "addContact": "Add contact",
+      "description": "Add sender details per inventory for shipping labels and contacts.",
+      "title": "Shipping sender information"
+    },
+    "table": {
+      "inventoryName": "Inventory name",
+      "officerName": "Officer name",
+      "status": "Status"
+    },
+    "title": "Shipping sender information"
+  },
+  "serviceLevelDetails": {
+    "allDeliveryCities": "All delivery cities",
+    "allReceivingCities": "All receiving cities",
+    "areas": "Coverage areas",
+    "cardFeatures": {
+      "cashOnDelivery": "Cash on delivery (COD)",
+      "costOfCashOnDelivery": "Cost of cash on delivery (COD)",
+      "deliveryPeriod": "Transit time",
+      "notSupported": "Not supported",
+      "numberOfBoxes": "Box allowance",
+      "pickupWindow": "Pickup window",
+      "priceForEachAdditionalKg": "{{price}} for each additional {{kg}}kg",
+      "priceForEachAdditionalKm": "{{price}} for each additional {{km}}km",
+      "pricePerKg": "{{price}} up to {{kg}}kg",
+      "pricePerKm": " for the first {{km}} km",
+      "pricesDoNotIncludeVAT": "Prices don't include VAT",
+      "selectZone": "Select zone",
+      "shippingCost": "Shipping cost",
+      "shippingCostForAdditionDistance": "Additional cost per extra kilometer",
+      "shippingCostForAdditionWeight": "Shipping cost for additional weight",
+      "supported": "Supported",
+      "valueBoxAsMaximum": "{{value}} boxes maximum"
+    },
+    "cardOptions": {
+      "fields": {
+        "deliveryCities": "Delivery cities",
+        "pricingName": "Pricing name",
+        "shippingPrice": "Shipping price"
+      },
+      "flatRate": "Flat rate",
+      "pricingZoneDeleteConfirmation": "If the customization is permanently deleted, the custom cities will be deleted and will not appear to your customers in the store for this level.",
+      "valueCities": "{{value}} cities",
+      "weightBasedRate": "Weight-based"
+    },
+    "countriesAndCities": "Countries and cities",
+    "custumization": {
+      "title": "Customization"
+    },
+    "fulfillmentSettings": {
+      "autoDispatch": "Automatic orders dispatching",
+      "inventorySync": "Inventory synchronization",
+      "title": "Fulfillment settings"
+    },
+    "globalShippingMethodDetails": "Global shipping method details",
+    "more": "+{{count}} more",
+    "overview": {
+      "cashOnDelivery": {
+        "description": "Enable Cash on Delivery and set a custom fee if needed.",
+        "inputCodPriceLabel": "COD fee",
+        "inputHelperText": "Merchant rate is {{merchantRate}}",
+        "title": "Cash on delivery (COD)"
+      },
+      "coverage": {
+        "description": "Cities available for this shipping method • {{citiesCount}} cities covered",
+        "globalDescription": "Countries available for this shipping method • {{countriesCount}} countries covered",
+        "title": "Coverage"
+      },
+      "customNote": {
+        "description": "A custom note for the shipping method, shown to customers on the checkout page.",
+        "label": "Note",
+        "noteContentArabic": "Note (Arabic)",
+        "noteContentEnglish": "Note (English)",
+        "noteDesc": "Add a custom note, shown to customers on the checkout page.",
+        "title": "Custom note"
+      },
+      "customizationAlert": "Customization added: some Overview info has been updated. Notes & COD are no longer global, they now apply per custom zone.",
+      "description": "A summary of the delivery options and configurations.",
+      "globalTermsAndConditions": "International shipping",
+      "localTermsAndConditions": "Domestic shipping",
+      "merchantRate": {
+        "description": "The base merchant rate applied when the order status changes to Ready",
+        "globalDescription": "The base merchant rate applied when the order status changes to Ready. The recipient is responsible for any import duties or taxes (DDU).",
+        "title": "Rate"
+      },
+      "pickupAndDelivery": {
+        "description": "Pickup time window, shipment limits, and estimated delivery time",
+        "popupTitle": "Pickup and delivery",
+        "title": "Service details"
+      },
+      "priorityPickup": {
+        "description": "An exclusive feature that lets you schedule shipment pickups quickly and smoothly (available in <bold> Riyadh and Jeddah </bold> only, for SAR 2 per order).",
+        "enableLabel": "Enable priority pick-up",
+        "notSupportedMessage": "Not supported in current inventory",
+        "title": "Pickup by Zid Courier"
+      },
+      "supportedCities": "Supported delivery cities",
+      "supportedCountries": "Supported delivery countries",
+      "termsAndConditions": "Terms and conditions",
+      "title": "Overview"
+    },
+    "regularShipping": "Regular shipping",
+    "resetCitiesAndPricesDesc": "If you continue to reset the default settings, you will lose all the data you have previously customized for cities and prices",
+    "searchByCity": "Search by city",
+    "searchByCountry": "Search by country",
+    "selfDropInstruction": {
+      "additionalInfo": "For more information,",
+      "additionalInfoLabel": "Additional information",
+      "calloutMessage": "Arrange a courier pickup when you have 5 or more shipments by marking the order \"ready\" - smaller batches must be dropped off.",
+      "cardCodeLabel": "Self drop-off code",
+      "description": "To use the self-drop-off service, you need to activate the service level first.",
+      "dropOffLink": "see Redbox Lockers Instructions.",
+      "lockerSize": {
+        "large": "Large:",
+        "medium": "Medium:",
+        "small": "Small:"
+      },
+      "lockerSizeLabel": "RedBox Locker Sizes",
+      "qrLabel": "Self drop-off pass",
+      "steps": {
+        "download": "Download & print the QR label.",
+        "enterCode": "Enter your unique code.",
+        "findLocker": "Go to the nearest RedBox Locker.",
+        "followScreen": "Follow the on-screen instructions to complete the drop-off process.",
+        "login": "Click on \"Courier or Merchant Login\" on the screen."
+      },
+      "title": "Self drop-off"
+    },
+    "shippingCompanies": "Shipping companies",
+    "specialRates": {
+      "allCities": "All cities",
+      "from": "From",
+      "price": "Price",
+      "title": "Special rates",
+      "to": "To"
+    },
+    "tabs": {
+      "overview": "Overview"
+    },
+    "termsAndConditions": "Terms and conditions.",
+    "viewingInventory": "Selected inventory:"
+  },
+  "serviceLevels": {
+    "activate": "Activate",
+    "activateFastServiceLevel": "Activate {{name}} shipment method",
+    "activatePriorityPickup": "Activate priority pick-up",
+    "activateServiceLevel": "Activate service level ({{name}})",
+    "activateServiceLevelDescription": "To activate the Zid Logistic service {{name}}",
+    "activated": "Activated",
+    "activationCondtions": {
+      "aramexGcc": {
+        "term_1": "The maximum weight: 35 kg, and the dimensions: 351 × 430 × 500 mm.",
+        "term_10": "Dues that will be deducted from the wallet when shipping to Qatar: If the shipment amount is between $1 and $272, a 20 Qatari riyal customs declaration fee and a $2 customs clearance fee will be charged and deducted from the wallet. If the shipment amount is more than $272, a 5% service fees and a 20 riyal customs clearance fee will be charged and deducted from the wallet. Qatari customs declaration fees, $5.5 customs clearance fees.",
+        "term_11": "Dues that will be deducted from the wallet when shipping to Oman: If the shipment amount is between $1 and $259, the following fees will be charged and deducted from the wallet: 5% state tax, 1 Omani riyal customs declaration fee, and $2.6 customs clearance fee. If the shipment amount is between $259 and $777, the following fees will be charged and deducted from the wallet: 5% state tax, 5% service fees, 1 Omani riyal customs declaration fee, and $4 customs clearance fee. If the shipment amount is more than $777, the following fees will be charged and deducted from the wallet: 5% state tax, 5% service fees, 15 Omani riyal customs declaration fee, and $4 customs clearance fee.",
+        "term_2": "Zid Logistics calculates the excess weight when the shipment arrives at the Zid Logistics warehouse or the last mile shipping company's warehouse, and accordingly the weight and shipment cost are updated and the wallet will be debited accordingly.",
+        "term_3": "The volume weight is calculated by calculating the dimensions of the shipment as follows: the volume weight: is the actual weight of the shipment by taking the dimensions (length x width x height)",
+        "term_4": "Regarding shipping companies and dealing with it, shipping companies always take the higher weight. Example: A shipment with an actual weight of 10 kg and a volumetric weight of 1 kg, the actual weight is taken. A shipment with an actual weight of 1 kg and a volumetric weight of 10 kg, the volumetric weight is taken. The method for calculating the dimensional volumetric weight is: (length x width x height) / 4000 (for domestic shipments) and (length x width x height) / 5000 (for international shipments). The weight subject to fees is the volumetric weight or the total weight, whichever is higher.",
+        "term_5": "In case of any notes (objection) regarding the invoice issued to the merchant, the merchant can object within (5) days from the date of issuance of the invoice.",
+        "term_6": "The merchant has no right to object after the expiry of the period specified in the above clause, and the invoice is considered due and payable.",
+        "term_7": "Dues that will be deducted from the wallet when shipping to the country: Kuwait: If the shipment amount is between $1 and $330, fees will be charged and deducted from the wallet, namely: 1 Kuwaiti Dinar customs declaration fee, $5 customs clearance fee. If the shipment amount exceeds $330, fees will be charged and deducted from the wallet, namely: 5% service fees, 1 Kuwaiti Dinar customs declaration fee, $10 customs clearance fee.",
+        "term_8": "Dues that will be deducted from the wallet when shipping to the country of Bahrain: If the shipment amount is between $1 and $770, no fees will be charged on the shipment. If the shipment amount exceeds $770, fees will be charged and deducted from the wallet, namely: 10% state tax, 5% service fees, and 5 Kuwaiti Dinars. Bahraini customs declaration fees, $8 customs clearance fees",
+        "term_9": "Dues that will be deducted from the wallet when shipping to the UAE: If the shipment amount is between $1 and $272, a 5% state tax will be charged and deducted from the wallet. If the shipment amount is more than $272, a 5% state tax, 5% service fees, AED 40 customs declaration fees, and $5.5 customs clearance fees will be charged and deducted from the wallet."
+      },
+      "dhl": {
+        "term_1": "The maximum weight: 35 kg, and the dimensions: 351 × 430 × 500 mm.",
+        "term_2": "Payment at pickup is only available via electronic payment using Visa, Mada, Apple Pay, and MasterCard.",
+        "term_3": "The price includes storage for 48 hours.",
+        "term_4": "Cash on Delivery service is currently unavailable",
+        "term_5": "Prices vary by region",
+        "term_6": "Any damages incurred will be charged to the merchant"
+      },
+      "lockers": {
+        "term_1": "The maximum weight: 35 kg, and the dimensions: 351 × 430 × 500 mm.",
+        "term_2": "Payment at pickup is only available via electronic payment using Visa, Mada, Apple Pay, and MasterCard.",
+        "term_3": "The price includes storage for 48 hours."
+      },
+      "onDemand": {
+        "desc": "Ensure your customers can enter their location correctly and view available delivery options.",
+        "term_1": "It is mandatory to activate the location service using Google Maps here and make it mandatory for the customer.",
+        "term_2": "The time for receiving shipments is from 11:00 AM to 1:00 PM daily.",
+        "term_3": "The size of the shipment must not exceed 20 kg.",
+        "term_4": "It is mandatory to ensure that the shipment is ready for receipt by the final customer before converting the request to ready.",
+        "term_5": "In case no driver is available at the time of converting the request to ready, you can reactivate the request and create another shipment.",
+        "title": "Google Maps must be enabled before activation"
+      },
+      "transcorp": {
+        "desc": "If your shipments are fewer, pickup may be rejected and you may be asked to drop off the shipments at the courier’s branch in Al Dar Al Baidaa district, Riyadh.",
+        "title": "This service requires a minimum of 5 shipments per day for pickup."
+      }
+    },
+    "agreeToTerms": "By proceeding, you agree to the",
+    "benefits": "Benefits",
+    "cities": "cities",
+    "columns": {
+      "actions": "Actions",
+      "coverage": "Coverage",
+      "logo": "Logo",
+      "name": "Name",
+      "startingRate": "Starting Rate",
+      "status": "Status"
+    },
+    "countRemainingLabels": "{{count}} remaining labels",
+    "countRemainingLabels_few": "{{count}} remaining labels",
+    "countRemainingLabels_many": "{{count}} remaining labels",
+    "countRemainingLabels_one": "{{count}} remaining label",
+    "countRemainingLabels_other": "{{count}} remaining labels",
+    "countRemainingLabels_two": "{{count}} remaining labels",
+    "countRemainingLabels_zero": "{{count}} remaining labels",
+    "deactivate": "Deactivate",
+    "deactivateConfirmation": "Deactivating this shipping method will immediately remove it from your customers’ checkout options. Are you sure you want to proceed?",
+    "deactivateDescription": "Please let us know why you're deactivating this shipping method. This helps us improve our services.",
+    "deactivateError": "Failed to deactivate shipping method",
+    "deactivateFeedback": {
+      "additionalFeedback": "Additional feedback",
+      "feedbackPlaceholder": "Share specifics (e.g., delivery delays, unexpected rates)",
+      "question": "What is the primary reason you’re deactivating this shipping method?",
+      "selectReason": "Select reason",
+      "submitAndDeactivate": "Deactivate",
+      "title": "Help us improve your shipping experience"
+    },
+    "deactivateSuccess": "Shipping method deactivated successfully",
+    "deactivateTitle": "Deactivate shipping method",
+    "deactivationReasons": {
+      "additionalFeedback": "Additional feedback (optional)",
+      "feedbackPlaceholder": "Tell us more about your experience...",
+      "notNeeded": "No longer needed",
+      "other": "Other reason",
+      "poorService": "Poor service quality",
+      "required": "Please select a reason",
+      "switchingProvider": "Switching to another provider",
+      "title": "Why are you deactivating this shipping method?",
+      "tooExpensive": "Too expensive"
+    },
+    "description": "Overview of all shipping options with average delivery times and conditions",
+    "fastServiceActivationDescription": "Pickup by Zid Courier is an exclusive feature that lets you schedule shipment pickups quickly and smoothly (available in <bold> Riyadh and Jeddah </bold> only, for <bold> SAR 2 </bold> per order).",
+    "fields": {
+      "benefits": {
+        "label": "Benefits",
+        "placeholder": "Select"
+      },
+      "cashOnDelivery": {
+        "label": "Cash on delivery"
+      },
+      "deliveryTime": {
+        "label": "Delivery time"
+      },
+      "destination_cities": {
+        "label": "Destination cities",
+        "placeholder": "Select cities"
+      },
+      "fulfillment": {
+        "label": "Fulfilment type",
+        "placeholder": "Select"
+      },
+      "location": {
+        "label": "Coverage",
+        "value": "{{cities}} cities",
+        "valueCountries": "{{countries}} countries"
+      },
+      "price": {
+        "label": "Starting rate"
+      },
+      "search": {
+        "label": "Search by shipping method name"
+      }
+    },
+    "inventoryDescription": "The feature will be activated on the warehouse: {{inventory}}",
+    "mainTitle": "Shipping methods",
+    "new": "New",
+    "newestFirst": "Newest first",
+    "noActiveShippingMethods": "No active shipping methods",
+    "noActiveShippingMethodsDescription": "No active shipping methods",
+    "noDefaultInventory": {
+      "desc": "No default inventory. please add an inventory to activate the Zid Logistics"
+    },
+    "noPrepaidLabels": "No prepaid labels",
+    "noPrepaidPackages": "No prepaid packages",
+    "noShippingMethodsAvailable": "No shipping methods available",
+    "noShippingMethodsAvailableDescription": "We couldn’t find any shipping methods for the selected inventory.",
+    "oldestFirst": "Oldest first",
+    "packagesDelivered": "{{label}} Shipments Processed",
+    "prepaid": "Discounted labels",
+    "prepaidLabelsDescription": "To activate this shipping method, you must purchase prepaid labels.",
+    "prepaidLabelsNeeded": "Prepaid labels needed",
+    "price": "Price",
+    "purchaseLabels": "Purchase Labels",
+    "remainingLabels": "remaining labels",
+    "selectShippingOrigin": "Select a Ship-from Inventory Location to load shipping methods.",
+    "serviceLevelIsNotSupported": {
+      "desc": "The shipping method is not supported in {{name}} inventory"
+    },
+    "settings": {
+      "bankingInformation": {
+        "description": "Enter your bank account for collectings payments",
+        "fields": {
+          "iban": "IBAN",
+          "logo": "Logo",
+          "name": "Name"
+        },
+        "ibanIncorrect": "The IBAN is incorrect, please modify it to activate Zid Logistics",
+        "ibanRequired": "You must enter an IBAN number to activate Zid Logistics",
+        "notAvailable": "Not available",
+        "title": "Banking information"
+      },
+      "commercialRegistryInformation": {
+        "doYouHaveACommercialRegistration": "Do you have a commercial registration?",
+        "fields": {
+          "civilId": {
+            "label": "Civil ID",
+            "placeholder": "Enter civil ID"
+          },
+          "commercialRegistrationNumber": {
+            "label": "Commercial registration number",
+            "placeholder": "Enter commercial registration number"
+          }
+        },
+        "invalidPhoneNumberFormat": "The phone number is in an invalid format. Please enter a valid phone number.",
+        "title": "Commercial registry information"
+      },
+      "contactInformation": {
+        "description": "Enter the information of the person in charge of delivering shipments and coordinating with couriers",
+        "fields": {
+          "email": {
+            "label": "Email",
+            "placeholder": "Enter email"
+          },
+          "fullName": {
+            "label": "Full name",
+            "placeholder": "Enter full name"
+          },
+          "storeName": {
+            "label": "Store name",
+            "placeholder": "Enter store name"
+          }
+        },
+        "title": "Contact information"
+      },
+      "noInventory": "No inventory available. Please add inventory to activate Logistics.",
+      "noInventoryAddress": "No inventory address. Please add an inventory address to activate Zid Logistics",
+      "otp": {
+        "description": "A verification code has been sent to your phone number {{phoneNumber}}. Please enter it below to proceed.",
+        "didntGetCode": "Didn't get a code?",
+        "fields": {
+          "code": {
+            "label": "OTP code",
+            "placeholder": "× × × ×"
+          }
+        },
+        "notVerified": "The code is not verified",
+        "sendAgain": "Click to resend",
+        "title": "Phone number verification"
+      },
+      "useNewAccount": "Use new account"
+    },
+    "shipments": {
+      "emptyState": {
+        "button": "Browse shipping methods",
+        "description": "Activate your shipping methods to start receiving and tracking shipments with ease",
+        "title": "No shipments yet"
+      }
+    },
+    "startingRate": "Starting rate",
+    "status": {
+      "activated": "Activated",
+      "new": "New"
+    },
+    "title": "Shipping methods",
+    "transactions": {
+      "emptyState": {
+        "description": "Once you start generating shipping labels, charges and settlements will appear here.",
+        "title": "No shipment transactions yet"
+      }
+    },
+    "tryOurLatestShippingMethod": "Try Our Latest Shipping Method"
+  },
+  "shipments": {
+    "columns": {
+      "chargeType": {
+        "COD_FEES": "COD fees",
+        "COD_SETTLEMENT": "COD settlement",
+        "CUSTOM_CLEARANCE_FEES": "Customs clearance fees",
+        "DISPOSAL_FEES": "Disposal fees",
+        "FIRST_MILE_PICKUP_FEES": "First mile pickup fees",
+        "HANDLING_FEES": "Handling fees",
+        "OTHER": "Other",
+        "POS_FEES": "POS fees",
+        "RTO_FEES": "RTO fees",
+        "SERVICE_CHARGE": "POS fees",
+        "SHIPPING_CHARGE": "Shipping fees",
+        "SHIPPING_FEES": "Shipping fees",
+        "WEIGHT_CHANGE": "Weight change",
+        "WEIGHT_FEES": "Weight difference",
+        "title": "Charge type"
+      },
+      "customer": "Customer",
+      "customerName": "Customer name",
+      "destinationCity": "Destination city",
+      "numberOfBoxes": "Pieces count",
+      "orderNumber": "Order number",
+      "paymentSource": {
+        "labelCredit": "Prepaid labels",
+        "title": "Payment source",
+        "wallet": "Wallet"
+      },
+      "paymentStatus": "Payment status",
+      "paymentType": "Payment type",
+      "referenceNumber": "Reference",
+      "serviceLevel": "Shipping method",
+      "shipmentNumber": "Shipment number",
+      "shipmentStatus": "Status",
+      "shipmentStatusLabel": "Shipment status",
+      "shipmentWeight": "Shipment weight",
+      "shippingCompany": "Shipping method",
+      "shippingCost": "Shipping cost",
+      "shortAddress": "Short address",
+      "trackingNumber": "Tracking number"
+    },
+    "details": {
+      "destination": "Destination",
+      "noTrackingData": "Shipment Cancelled",
+      "noTrackingDataDescription": "Tracking information isn’t available because this shipment has been cancelled. If you have any questions, please contact Support.",
+      "orderDetails": "Order details",
+      "reportIssue": "Report issue",
+      "shipmentCreated": "Shipment created",
+      "title": "shipment details",
+      "trackingDescription": "Track the courier's updates and delivery route.",
+      "trackingTitle": "Shipment tracking",
+      "weight": "Weight"
+    },
+    "print": {
+      "noOrders": "0 orders",
+      "numberOfCustomShippingOrders": "Number of custom shipping orders",
+      "numberOfNewOrInProgressOrders": "Number of new or in progress orders",
+      "numberOfOrdersWithAWaybill": "Number of orders with a shipping label",
+      "numberOfOrdersWithoutAWaybill": "Number of orders without a shipping label",
+      "ordersCount": "{{count}} orders",
+      "ordersCount_few": "{{count}} orders",
+      "ordersCount_many": "{{count}} orders",
+      "ordersCount_one": "{{count}} order",
+      "ordersCount_other": "{{count}} orders",
+      "ordersCount_two": "{{count}} orders",
+      "ordersCount_zero": "{{count}} orders"
+    },
+    "printInvoiceAndWaybillTogether": "Print invoice and shipping label together",
+    "printWaybill": "Print shipping label",
+    "shippingCostTooltip": "Total shipment price was adjusted due to incorrect weight.",
+    "showSupportTicket": "Show ticket",
+    "tabs": {
+      "codSettlement": "COD settlement",
+      "serviceCharges": "Shipping fees"
+    }
+  },
+  "shippingConstraints": {
+    "description": "Define rules that control when each shipping method is available to customers.",
+    "title": "Shipping constraints"
+  },
+  "shippingPrioritization": {
+    "description": "Set the display order of shipping methods shown to customers during checkout.",
+    "helperText": "Sort shipping methods by dragging them up and down or enter the order number in the number box and press enter.",
+    "title": "Shipping method display order"
+  },
+  "shippingProviderDetails": {
+    "cashOnDeliveryFee": "Cash on delivery (COD) fee",
+    "chargesCollectionDue": "Charges collection due",
+    "maximumShipmentWeight": "Maximum shipment weight",
+    "pricingAndRules": "Pricing & rules",
+    "shipmentCostsInsideCity": "Shipment costs (inside the city)",
+    "shipmentCostsOutsideCity": "Shipment costs (outside the city)",
+    "shipmentCostsRange": "Shipment costs",
+    "theCostOfDeliveryIsCalculatedAccordingToTheContractAgreed": "The cost of delivery is calculated according to the contract agreed between the merchant and the shipping company"
+  },
+  "shippingRateCalculator": {
+    "activate": "Activate",
+    "calculateRates": "Calculate rates",
+    "description": "Calculate the estimated shipping cost based on the shipping method, destination, and shipment weight.",
+    "estimatedDeliveryTime": "Estimated delivery time: 1-2 days",
+    "fillInformation": "Enter the shipment details to view available options and estimated rates.",
+    "height": "Height",
+    "length": "Length",
+    "noOptions": "No shipping options available",
+    "notFound": {
+      "description": "No rates available for this route. Try different inventory to check options.",
+      "title": "No results found"
+    },
+    "packageDetails": "Shipment details",
+    "selectInventory": "Select inventory",
+    "shippingFrom": "Shipping from",
+    "shippingTo": "Shipping to",
+    "totalWeight": "Shipment weight",
+    "width": "Width",
+    "zidLogisticsOptions": "Shipping methods"
+  },
+  "shippingZonesUpgrade": {
+    "applyDefaultSettings": {
+      "customerRates": {
+        "description": "You're fine applying the default shipping rate directly to customers at checkout.",
+        "title": "Customer Rates"
+      },
+      "title": "Apply default settings if",
+      "zonesCoverage": {
+        "description": "You want to automatically support all cities/zones covered by this shipping method without restrictions.",
+        "title": "Zones & Coverage"
+      }
+    },
+    "buttons": {
+      "applyDefaultSettings": "Apply default settings",
+      "customizeFromScratch": "Customize from scratch"
+    },
+    "customizeFromScratch": {
+      "customerRates": {
+        "description": "You want to set different rates for each city/zone.",
+        "title": "Customer Rates"
+      },
+      "title": "Customize from scratch if",
+      "zonesCoverage": {
+        "description": "You want to exclude specific cities/zones from coverage.",
+        "title": "Zones & Coverage"
+      }
+    },
+    "description": "We've upgraded shipping setup to give you better control, transparency, and fewer errors.",
+    "instruction": "Update your shipping method settings as follows:",
+    "title": "✨ New Shipping Zones & Rates System",
+    "warning": {
+      "description": "Please make sure to review your settings after saving, as they will be applied directly to your customers on the checkout page.",
+      "title": "Review your settings after confirmation"
+    }
+  },
+  "statuses": {
+    "activationPending": "Pending activation",
+    "deactivationSuccess": "Deactivation is done successfully"
+  },
+  "storeBanner": {
+    "button": "Order Now",
+    "description": "Boxes, bags, rolls, labels, printers, and much more...",
+    "title": "Order your packaging and shipping needs now"
+  },
+  "support": "Support",
+  "tiers": {
+    "noTiers": "The custom rates feature is not available",
+    "noTiersDescription": "Activate the service level to customize your shipping options",
+    "title": "Tiers",
+    "upgradeDescription": "You've reached the maximum number of additions in your plan. To customize unlimited shipping options, upgrade your plan."
+  },
+  "tooltips": {
+    "prioritizeShipping": "Set the order of shipping methods as displayed to customers at checkout."
+  },
+  "yup": {
+    "invalidFileType": "Invalid file type",
+    "langRequired": "At least one language is required"
+  }
+}

@@ -1,0 +1,298 @@
+{
+  "appliedMethodSubtitle": "Select the method on how the of discount is applied",
+  "appliedMethodTitle": "Applied method",
+  "automatic": "Automatic",
+  "bulk": {
+    "bulkDuplicatedSuccessfully": "discounts duplicated successfully. Changes may take a few moments to reflect.",
+    "changeCouponsStatus": "Change status",
+    "confirmDelete": "You are about to delete the discounts: {{couponsNames}} \nWould you like to continue?"
+  },
+  "bulkCoupon": "Total coupons",
+  "bulkCouponTooltip": "The system creates the required number of unique versions of the entered code.",
+  "bulkEditAlertPackage": "Dear merchant, please upgrade your store plan to the {{packageName}} Plan to be able to edit multiple discounts at once.",
+  "bulkEditCouponWarning": {
+    "description": "Turn on the sections you want to change. Changes apply to every selected discount; untouched sections remain as they are.",
+    "title": "Choose what to update in bulk"
+  },
+  "cannotBeActivated": "You need to change the start date or end date to be able to control discount status",
+  "code": "Code",
+  "codeHint": "Code should consist of letters and numbers only, with no spaces.",
+  "columns": {
+    "applyingFreeShipping": "Included free shipping",
+    "applyingMethod": "Applying method",
+    "dateEnd": "End date",
+    "dateStart": "Start date",
+    "migratedAutoDiscount": {
+      "label": "Combinable",
+      "tooltip": "Coupon Discount Can be combined with other coupon discount"
+    },
+    "orderDiscount": "Discount value",
+    "totalUsage": "Total usage"
+  },
+  "conditions": {
+    "addNewCondition": "Add new condition",
+    "categories": {
+      "emptyButton": "Add categories",
+      "emptySubtitle": "To apply condition, please select categories",
+      "emptyTitle": "No categories selected"
+    },
+    "collapseAll": "Collapse all",
+    "condition": "Condition",
+    "conditionLogic": "Condition logic",
+    "conditionsLogicSubtitle": "Define which products or customer groups must be in the cart for the discount to work.",
+    "customerGroups": {
+      "exclude": "Excluding customer groups",
+      "include": "Including customer groups",
+      "label": "Customer groups"
+    },
+    "customerLocation": {
+      "exclude": "Excluding countries and cities",
+      "include": "Including countries and cities",
+      "label": "Customer locations"
+    },
+    "excluding": "Excluding",
+    "expandAll": "Expand all",
+    "flexible": "Flexible (any condition)",
+    "flexibleTooltip": "The discount works if the cart meets at least one of the rules below.",
+    "including": "Including",
+    "paymentMethods": "Payment methods",
+    "paymentOptions": {
+      "exclude": "Excluding payment methods",
+      "include": "Including payment methods",
+      "label": "Payment methods"
+    },
+    "products": {
+      "emptyButton": "Add products",
+      "emptySubtitle": "If no selected products, discount will apply to all products",
+      "emptyTitle": "No products selected"
+    },
+    "shippingMethods": "Shipping methods",
+    "shippingOptions": {
+      "exclude": "Excluding shipping methods",
+      "include": "Including shipping methods",
+      "label": "Shipping methods"
+    },
+    "strict": "Strict (all conditions)",
+    "strictTooltip": "The discount only works if the cart meets every single rule listed below."
+  },
+  "confirmBulkEdit": "Are you sure you want to edit the coupons? The new settings will be applied to all selected coupons.",
+  "confirmDuplicate": "You are about to duplicate the coupons: {{couponsNames}} \nWould you like to continue?",
+  "couponAmount": "Number of discount codes",
+  "createAsBulkCoupon": "Create a coupon group",
+  "createDiscount": "Create new discount",
+  "discountNote": "Discount note",
+  "discountTypeSubtitle": "Specify what discount you want to provide with this coupon",
+  "discountTypeTitle": "Discount type",
+  "discountUrl": "Discount URL",
+  "eligibility": {
+    "allProducts": "All products",
+    "allProductsHelper": "If no additional conditions or settings are added, the coupon applies to all products.",
+    "excludeProducts": "Exclude specific products",
+    "includeCategories": "Include specific categories",
+    "includeProducts": "Include specific products",
+    "label": "Eligibility type"
+  },
+  "emptyState": {
+    "button": "Create your first discount",
+    "description": "A welcome offer or free shipping is often the deciding factor in turning a visitor into a loyal customer.",
+    "title": "Over 70% of shoppers use discount codes."
+  },
+  "endDate": "End date",
+  "filters": {
+    "activateFor": "Sales channel",
+    "creationDate": "By creation date",
+    "dateEnd": "By end date",
+    "details": "Discount details",
+    "dynamic": "Auto applied in cart",
+    "enteringCode": "Entering code",
+    "excludeFreeShipping": "Doesn’t Include free shipping",
+    "fixed": "As fixed amount",
+    "includeFreeShipping": "Included free shipping",
+    "percentage": "As percentage",
+    "status": "Discount status"
+  },
+  "fixedAmount": "Fixed amount",
+  "freeShipping": "Free shipping",
+  "generateRandomCode": "Choose random code",
+  "leaveTheOrderNoteForStaffHere": "Leave the order note for the staff here",
+  "mainSections": {
+    "conditionsSubtitle": "Add one or more conditions to control when the discount is shown/applied.",
+    "conditionsTitle": "Conditions",
+    "detailsSubtitle": "Define the value and application of this discount.",
+    "detailsTitle": "Details",
+    "discountSettingsTitle": "Discount settings",
+    "noteDescription": "Add a private note for the staff.",
+    "noteTitle": "Note",
+    "productEligibilitySubtitle": "Select to which products or categories the discount applies. By default it applies to all.",
+    "productEligibilityTitle": "Product eligibility",
+    "saleChannelsSubtitle": "Select for which channels you would like to activate this discount.",
+    "saleChannelsTitle": "Sales channels",
+    "settingsSubtitle": "Define usage limits for this discount if needed.",
+    "settingsTitle": "Settings",
+    "tiersSubtitle": "Add at least 2 tiers (up to 3). Customers get the best tier they qualify for.",
+    "tiersTitle": "Tiers"
+  },
+  "nameHint": "Internal name for tracking; not visible to customers.",
+  "noName": "No name yet",
+  "orderDiscount": "Products discount",
+  "orderDiscountValue": "Order discount value",
+  "percentage": "Percentage",
+  "percentageAmount": "Discount percentage",
+  "preview": {
+    "allProducts": "All products",
+    "title": "Summary"
+  },
+  "progressive": {
+    "addTier": "Add tier",
+    "allBulkEdit": "All selected discounts are progressive discounts",
+    "bulkEdit": "Bulk edit isn’t available for progressive discounts.",
+    "cartTotal": "Cart value",
+    "editTitle": "Edit progressive discount",
+    "maximumDiscountAmount": "Maximum discount amount",
+    "minimumAmount": "Minimum total purchase required to apply the offer",
+    "minimumTiersMaximumTiers": "Minimum 2 tiers • Maximum 3 tiers",
+    "previewWarning": "If other automatic discounts apply along with this offer, the discount with the higher value takes priority.",
+    "previousThreshold": "Tier threshold should be larger than previous one",
+    "previousValue": "Tier value should be larger than previous one",
+    "productQuantity": "Products quantity",
+    "thresholdBasis": "Threshold basis",
+    "thresholdBasisSubtitle": "Choose the criterion that qualifies customers to reach each tier.",
+    "thresholdValue": "Value should be less than threshold",
+    "tier": "Tier",
+    "tierSubtitleCartTotal": "With order total of <add></add> get <get></get> discount",
+    "tierSubtitleProductQuantity_few": "Add {{count}} products and get <get></get> discount.",
+    "tierSubtitleProductQuantity_many": "Add {{count}} products and get <get></get> discount.",
+    "tierSubtitleProductQuantity_one": "Add one product and get <get></get> discount.",
+    "tierSubtitleProductQuantity_other": "Add {{count}} products and get <get></get> discount.",
+    "tierSubtitleProductQuantity_two": "Add two products and get <get></get> discount.",
+    "tierSubtitleProductQuantity_zero": "Add {{count}} products and get <get></get> discount.",
+    "tiers": "Tiers",
+    "tiersDiscount_few": "{{count}} tiers discount",
+    "tiersDiscount_many": "{{count}} tiers discount",
+    "tiersDiscount_one": "One tier discount",
+    "tiersDiscount_other": "{{count}} tiers discount",
+    "tiersDiscount_two": "Two tiers discount",
+    "tiersDiscount_zero": "{{count}} tiers discount",
+    "tiersOffer": "Discount type",
+    "tiersOfferSubtitle": "Specify the type of discount the customer gets at each tier",
+    "title": "Create new discount",
+    "tooltip": "Spend {{spend}} → Get {{get}} off",
+    "tooltipQuantity_few": "Add {{spend}} products → Get {{get}} off",
+    "tooltipQuantity_many": "Add {{spend}} products → Get {{get}} off",
+    "tooltipQuantity_one": "Add one product → Get {{get}} off",
+    "tooltipQuantity_other": "Add {{spend}} products → Get {{get}} off",
+    "tooltipQuantity_two": "Add two products → Get {{get}} off",
+    "tooltipQuantity_zero": "Add {{spend}} products → Get {{get}} off"
+  },
+  "quantityEqualsTo": "Quantity equals to",
+  "quantityIsLessThan": "Quantity is less than",
+  "quantityIsMoreThan": "Quantity is more than",
+  "salesChannels": {
+    "cashier": "Branch staff (POS)",
+    "mazeed": "Mazeed customers",
+    "onlineStore": "Online store customers",
+    "pos": "Branch customers (POS)"
+  },
+  "scheduled": "Scheduled",
+  "settings": {
+    "excludeProductsOnSale": "Exclude discounted products",
+    "limitPerCustomer": "Limit per customer",
+    "limitPerCustomerTooltip": "How many times a single customer can use this discount.",
+    "maximumDiscountCap": "Maximum discount amount",
+    "maximumPurchaseAmount": "Maximum purchase amount",
+    "maximumPurchaseAmountTooltip": "The highest order value eligible for this discount.",
+    "maximumWeight": "Maximum weight (in grams)",
+    "maximumWeightTooltip": "Maximum weight allowed for free shipping",
+    "minimumPurchaseAmount": "Minimum purchase amount",
+    "minimumPurchaseAmountTooltip": "Calculated from the product subtotal (including VAT) — the minimum an order must reach for this discount to apply.",
+    "totalUsageLimit": "Total usage limit",
+    "totalUsageLimitTooltip": "Maximum number of times this discount can be used by all customers."
+  },
+  "shippingFree": {
+    "freeCOD": "Free cash on delivery"
+  },
+  "startDate": "Start date",
+  "stats": {
+    "numberOfCustomers": "Customer count",
+    "numberOfUsage": "Usage count",
+    "totalSales": "Total revenue"
+  },
+  "summary": {
+    "andExcludeDiscounted": "and excluding discounted products",
+    "appliesTo": "Applies to",
+    "appliesToCategories_few": "{{count}} selected categories",
+    "appliesToCategories_many": "{{count}} selected categories",
+    "appliesToCategories_one": "{{count}} selected category",
+    "appliesToCategories_other": "{{count}} selected categories",
+    "appliesToCategories_two": "{{count}} selected categories",
+    "appliesToCategories_zero": "No selected categories",
+    "appliesToExcept_few": "Products except {{count}}",
+    "appliesToExcept_many": "Products except {{count}}",
+    "appliesToExcept_one": "Products except {{count}}",
+    "appliesToExcept_other": "Products except {{count}}",
+    "appliesToExcept_two": "Products except {{count}}",
+    "appliesToExcept_zero": "All products",
+    "appliesToProducts_few": "{{count}} selected products",
+    "appliesToProducts_many": "{{count}} selected products",
+    "appliesToProducts_one": "{{count}} selected product",
+    "appliesToProducts_other": "{{count}} selected products",
+    "appliesToProducts_two": "{{count}} selected products",
+    "appliesToProducts_zero": "No selected products",
+    "freeCod": "Free cash on delivery",
+    "freeShipping": "Free shipping",
+    "mechanism": "How it works",
+    "notSet": "Not set yet",
+    "orderDiscountFixed": "{{value}} off the products total",
+    "orderDiscountPercentage": "{{value}}% off the products total",
+    "upTo": "up to {{value}}"
+  },
+  "templates": {
+    "categoryDiscount": {
+      "description": "Offer customers a discount on selected categories.",
+      "title": "Discount for specific category"
+    },
+    "countryBased": {
+      "description": "Offer tailored discounts to customers in specific regions",
+      "title": "Location-specific discount"
+    },
+    "custom": {
+      "description": "Create a discount from scratch with full control over the conditions",
+      "title": "Custom discount"
+    },
+    "customerGroup": {
+      "description": "Reward VIP and loyal customers with exclusive discounts",
+      "title": "Customer group discount"
+    },
+    "dialogSubtitle": "Or select from the already built templates for quicker set up:",
+    "dialogTitle": "Create new discount",
+    "freeShipping": {
+      "description": "Reduce cart abandonment and drive higher order values",
+      "title": "Free shipping offer"
+    },
+    "helpLink": "Learn how to create and manage discounts",
+    "helpQuestion": "Have a question about how discounts work?",
+    "names": {
+      "categoryDiscount": "Discount for specific category",
+      "countryBased": "Location-specific discount",
+      "customerGroup": "Customer group discount",
+      "freeShipping": "Free shipping offer",
+      "paymentMethod": "Payment method discount",
+      "productDiscount": "Discount on specific products",
+      "progressiveDiscount": "Progressive discount"
+    },
+    "paymentMethod": {
+      "description": "Encourage customers to use preferred payment methods",
+      "title": "Payment method discount"
+    },
+    "productDiscount": {
+      "description": "Discount selected products to clear stock",
+      "title": "Discount on specific products"
+    },
+    "progressiveDiscount": {
+      "description": "Increase the discount as customers spend more to boost average order value",
+      "title": "Progressive discount"
+    }
+  },
+  "validityPeriod": "Validity period",
+  "viewOrders": "View orders"
+}

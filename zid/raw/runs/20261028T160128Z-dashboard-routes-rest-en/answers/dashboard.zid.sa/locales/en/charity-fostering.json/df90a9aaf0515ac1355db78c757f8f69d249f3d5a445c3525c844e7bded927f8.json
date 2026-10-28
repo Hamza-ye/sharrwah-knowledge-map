@@ -1,0 +1,29 @@
+{
+  "filters": {
+    "opportunity": "Opportunity",
+    "suggestion": "Filter suggestions"
+  },
+  "form": {
+    "campaignTitle": "Campaign title",
+    "dialogTitle": "Charity campaign information",
+    "messageContent": "Message content",
+    "placeholder": "Dear customer of Osama's testing store, in our desire to share the reward and goodness, we are pleased to invite you to participate in the donation in partnership with the {{name}} association at the next opportunity : {{url}}",
+    "status": "Successfully done"
+  },
+  "senderNameUnderReview": {
+    "description": "Once the sender’s name is approved, you’ll be able to sponsor the charity",
+    "title": "Sender name is under review"
+  },
+  "table": {
+    "donationExpiredPeriod": "Period expired",
+    "donationPermanentOpportunity": "Permanent opportunity",
+    "donationStartAfter": "Opportunity to donate begins after {{days}} day",
+    "expiresInTitle": "Expires in",
+    "fosterNowTitle": "Foster now",
+    "itemCostTitle": "Item cost",
+    "percentageTitle": "Percentage",
+    "period": "Expires in {{days}} days",
+    "remainingTitle": "Remaining units",
+    "supportedTitle": "Supported units"
+  }
+}

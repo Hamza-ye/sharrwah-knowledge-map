@@ -1,0 +1,92 @@
+{
+  "analytics": {
+    "earnedPoints": "Earned points",
+    "numberOfCustomers": "Customers with points",
+    "pendingPoints": {
+      "points": "{{ number }} points pending. Points will be earned once the orders are fulfilled."
+    },
+    "redeemedPoints": "Redeemed points",
+    "title": "Analytics"
+  },
+  "buyingFromStore": "Purchase from store",
+  "buyingFromZidCashier": "Purchase from Zid cashier",
+  "columns": {
+    "discountValue": "Discount value",
+    "redemptionMethods": "Redemption methods",
+    "requiredPoints": "Required points"
+  },
+  "content": "Content",
+  "deactivateConfirmation": "Are you sure you want to deactivate the loyalty program?",
+  "deactivation": {
+    "reasons": {
+      "1": "Non-flexible points system",
+      "2": "Lack of support for this loyalty program",
+      "3": "Doesn’t meet my expectations",
+      "4": "Poor experience with loyalty program",
+      "5": "Other (please specify)",
+      "addNotes": "Additional feedback"
+    },
+    "subtitle": "What is the primary reason you’re deactivating Mokafaa?",
+    "title": "Help us improve the all-new Zid"
+  },
+  "earningPointsMethods": {
+    "description": "Control how your customers earn points and how they can redeem them.",
+    "title": "Earning points methods"
+  },
+  "editCashbackRule": "Edit cashback rule",
+  "editCashbackRuleTooltip": "The calculation is based on the total product prices only, excluding other costs",
+  "editInfoButton": "Edit content",
+  "emptyState": {
+    "button": "Activate Loyalty Program",
+    "description": "Boost customer loyalty and encourage repeat visits with a program that rewards every purchase.",
+    "title": "88% of your customers are more likely to return with a loyalty program"
+  },
+  "enableLoyaltyProgram": "Enable loyalty program for your store",
+  "form": {
+    "discountValue": "Discount value",
+    "edit": {
+      "title": "Edit redemption method"
+    },
+    "every": "Every",
+    "fixedAmount": "Fixed amount",
+    "method": "Method",
+    "requiredPoints": "Required points",
+    "wins": "Wins"
+  },
+  "loyaltyProgram": "Loyalty program",
+  "loyaltyProgramDescription": "Create a content for the loyalty program page.",
+  "notActivate": {
+    "description": "Boost customer loyalty and encourage repeat visits with a program that rewards every purchase.",
+    "title": "88% of customers return with loyalty programs"
+  },
+  "pointsEarningMethodsExplanationEnd": "points",
+  "pointsEarningMethodsExplanationMiddle": "wins",
+  "pointsEarningMethodsExplanationStart": "Every",
+  "pointsExpiryPeriod": {
+    "daysAmountLabel": "Customer points are valid for",
+    "description": "Set how long earned points remain valid.",
+    "title": "Points expiry period"
+  },
+  "redeemingPointsMethods": {
+    "description": "Create methods of redemption, you can add up of 10.",
+    "title": "Redeeming points methods"
+  },
+  "redemptionMethodDeleteConfirmation": "Are you sure you want to delete this redemption method?",
+  "setupInfoButton": "Set up content",
+  "title": "Title",
+  "titlePlaceholder": "Add loyalty program title",
+  "trial": {
+    "content": "You have a balance of {{discounts}} discounts. You can purchase more discounts from the store features or upgrade your plan (the feature is available for free in the Professional package and above)",
+    "contentNotActivate": "You have a balance of {{discounts}} trial discounts. Activate the loyalty program in your store to make them available to your customers",
+    "content_error": "You can purchase more discounts from the store features or upgrade your plan (the feature is available for free in the Professional package and above).",
+    "content_info": "You have a balance of {{discounts}} discounts. You can purchase more discounts from the store features or upgrade your plan (the feature is available for free in the Professional package and above)",
+    "content_warning": "Your remaining balance for the trial discounts is 4 discounts. You can purchase more discounts from the store features or upgrade your plan (the feature is available for free in the Professional package and above)",
+    "packageUpgrade": "Package upgrade",
+    "purchaseFromStoreAddOns": "Purchase from store add-ons",
+    "title": "You have a trial balance",
+    "titleNotActivate": "You have an inactive trial balance",
+    "title_error": "Your discount balance has run out",
+    "title_info": "You have a trial balance",
+    "title_warning": "Your balance is about to run out"
+  }
+}
