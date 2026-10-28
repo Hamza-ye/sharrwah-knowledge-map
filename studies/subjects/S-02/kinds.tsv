@@ -2711,6 +2711,19 @@ S02-ZD-483	observed	run 20261028T190230Z-devstore-billing-en records a store, da
 S02-ZD-484	observed	run 20261028T190952Z-devstore-country-checkout-en records a store, dashboard or session
 S02-ZD-485	observed	zid/structures/store-plan-policies is built from what a store's dashboard answered
 S02-ZD-486	observed	run 20261028T170107Z-devstore-markets-en records a store, dashboard or session
+S02-ZD-487	observed	run 20261028T170107Z-devstore-markets-en records a store, dashboard or session
+S02-ZD-488	shipped	run 20261028T143118Z-dashboard-code fetched the platform's own code
+S02-ZD-489	unknown	zid/structures/dashboard-locales's meta.json names no address or answer
+S02-ZD-490	unknown	zid/structures/dashboard-locales's meta.json names no address or answer
+S02-ZD-491	unknown	zid/structures/dashboard-locales's meta.json names no address or answer
+S02-ZD-492	unknown	zid/structures/dashboard-locales's meta.json names no address or answer
+S02-ZD-493	stated	the address is a docs, help or other page
+S02-ZD-494	stated	the address is a docs, help or other page
+S02-ZD-495	observed	run 20261028T190952Z-devstore-country-checkout-en records a store, dashboard or session
+S02-ZD-496	observed	run 20261028T190952Z-devstore-country-checkout-en records a store, dashboard or session
+S02-ZD-497	observed	run 20261028T190952Z-devstore-country-checkout-en records a store, dashboard or session
+S02-ZD-498	observed	run 20261028T190952Z-devstore-country-checkout-en records a store, dashboard or session
+S02-ZD-499	observed	run 20261028T190952Z-devstore-country-checkout-en records a store, dashboard or session
 S02-ZD-N01	stated	the address is a docs, help or other page
 S02-ZD-N02	stated	the address is a help centre's article
 S02-ZD-N03	stated	the address is a help centre's article

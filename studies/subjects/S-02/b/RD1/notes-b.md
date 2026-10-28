@@ -1210,7 +1210,7 @@ Part RD1-S7: the Salla and Zid round's Salla tasks under RD1 (bullets a to d), f
 
 - S02-V-074 (S02-VP-06), was gap S02-SA-G01: replaced with an answer, 'As the store owner, you can make this change.' (S02-SA-483): the store owner, its own answer beside the seller's, by rule 4. S02-SA-483 is the answer of Mushammir, the dashboard's assistant, on the merchant store store-1-da (Basic), run 20261028T150337Z-journey-store-country-merchant-en, step 011, marked AI-generated, as its scope says.
 - S02-SA-483 also joined S02-V-095 (S02-VP-06, the seller): 'You can change the store country after creation from Settings > Store settings > Basic store settings, then update the country/currency and save', a control in the store's admin, by rule 4. Rechecked under rule 5: S02-V-095's basis stays `answers`.
-- S02-V-303 (S02-VP-06), added: gap S02-SA-G16, in place of S02-SA-G01, beside the answers. It asks who can change the store's country as a page, a setting or a person of Salla's states it, and names S02-SA-483 as AI-generated. S02-V-095's note now names S02-SA-G16 in S02-SA-G01's place.
+- S02-V-307 (S02-VP-06), added: gap S02-SA-G16, in place of S02-SA-G01, beside the answers. It asks who can change the store's country as a page, a setting or a person of Salla's states it, and names S02-SA-483 as AI-generated. S02-V-095's note now names S02-SA-G16 in S02-SA-G01's place.
 - S02-V-075 (S02-VP-07), was gap S02-SA-G01: replaced with gap S02-SA-G16 (in place of S02-SA-G01). No lead states a condition. S02-SA-483 names who changes it, under S02-VP-06.
 
 Leads noted under (b):
@@ -1220,3 +1220,111 @@ Leads noted under (b):
 - S02-SA-480 (b): the General section's items (Clear cache, Maintenance mode, Delete store) say nothing of the store's country; answers none of (b)'s questions
 - S02-SA-481 (b): the Store information page shows a Store activity field and Save, with no field for the store's country and no party for it; answers none of (b)'s questions
 - S02-SA-482 (b): the store list (Store, Store website, Plan, Role 'مدير عام') names the account's role in the store, not who sets, checks or changes the store's country; answers none of (b)'s questions
+
+### Revisit S02-V-168 (salla, S02-VP-18, the store's defaults) (part RD1-S7)
+
+S02-V-168, was gap S02-SA-G07: replaced with gap S02-SA-G18, in place of S02-SA-G07. S02-SA-G18 asks only whether the store's country, chosen at onboarding, sets the default language. No lead names what decides a default (rule 4). S02-VP-18's note now names S02-SA-G18 for Salla's row.
+
+Leads noted under (c):
+- S02-SA-499 (c): the plans after onboarding, 'Plus For small businesses 99.00 AED Month', on the new UAE store (store 21123834; run 20261028T174130Z, step 040): its words don't say what decides the price or its currency (rule 4), and the page's words tie it to no country
+- S02-SA-500 (c): 'Pro For established companies 299.00 AED Month', on the same store and step: as S02-SA-499
+- S02-SA-501 (c): the new UAE store's information, '"currency":"AED"' beside '"kyc_country":"AE"' (store 21123834, Basic; run 20261028T174130Z, responses/0451.json): its words don't say what decides the currency (rule 4), as RD1-S6 noted S02-SH-1041. Its (a) is placed below
+- S02-SA-515 (c): an app's price in the App Store, '96.94 AED67.57 AED / Monthly', on the new UAE store (run 20261028T174130Z, step 051): its words don't say what decides the price or its currency (rule 4)
+- S02-SA-516 (c): the same app's price, '99 69 / Monthly', on the merchant store store-1-da (Basic; run 20261028T181625Z, step 002): as S02-SA-515
+
+S02-SA-387, S02-SA-388, S02-SA-390, S02-SA-391, S02-SA-392, S02-SA-393 and S02-SA-400, the earlier leads, stay noted under (c), with the reasons given above in this file; the new run adds nothing to them.
+
+### Revisit S02-V-241 (salla, S02-VP-19, the store's data) (part RD1-S7)
+
+S02-V-241, was gap S02-SA-G05: replaced with gap S02-SA-G17, in place of S02-SA-G05. It stands beside S02-V-219 (every store), which doesn't say where the data is held. The earlier leads stay where they are: S02-SA-319 to S02-SA-321, S02-SA-324, S02-SA-325, S02-SA-328 and S02-SA-335 to S02-SA-338 in S02-V-219, and S02-SA-322, S02-SA-323, S02-SA-326, S02-SA-327, S02-SA-329 and S02-SA-332 noted above in this file.
+
+Leads noted under (c):
+- S02-SA-510 (c): a report export's download, 'https://sallaexport.s3.amazonaws.com/...', its credential naming 'eu-central-1', on the demo store (run 20261008T213916Z, responses/0291.json): where one file is held, with no decider named (rule 4)
+- S02-SA-511 (c): the advanced import's file, 'https://migration-stores.s3.eu-central-1.amazonaws.com/...', on the demo store (run 20261008T171647Z, responses/0063.json): as S02-SA-510
+- S02-SA-512 (c): a verification document, the store's 'cr_license_document', at 'https://storage.googleapis.com/salla-274413-kyb-api-documents/...', its credential naming the region 'auto', on the new UAE store (store 21123834, Basic; run 20261028T182142Z, responses/0053.json): where one file is held, and a document the store provided, with no decider named for either (rule 4); a2.tsv also leads it to S02-VP-10
+
+### Revisit S02-V-027 (salla, S02-VP-02, the countries kept out), with the place task S02-SA-491 (d) (part RD1-S7)
+
+S02-V-027, was gap S02-SA-G04, which gap-closing settled (the work list names no gap or absence for it): replaced with an answer, 'We’ll notify you when Salla becomes available in your country.' (S02-SA-492). Its identifier says it is the onboarding's answer to 'Where is your business based?' answered 'Other country', and the step offers only 'Back to log in': the countries kept out, as the onboarding shows them, are 'Other country', every country beside the six its options list (S02-SA-491).
+
+Placed under S02-VP-03 (what countries fill), from the revisit's leads:
+- S02-SA-463, S02-SA-465 (the Saudi path's answer to 'Can I use Salla outside Saudi Arabia?', in English and Arabic: Saudi Arabia and the UAE, 'coming soon to the rest of the GCC') and S02-SA-492 (the onboarding's message: 'We’re currently available in Saudi Arabia and the UAE'): joined S02-V-020, the same two countries.
+- S02-SA-464, S02-SA-466 (the UAE path's answer, in English and Arabic), S02-SA-475, S02-SA-476 (the plans pages' footer, 'Available in' and 'مدعوم في') and the place task's S02-SA-491 (the onboarding's options): a new row, S02-V-304, the same six countries: Saudi Arabia, the United Arab Emirates, Kuwait, Qatar, Oman and Bahrain.
+
+x_words took 'available in your country' under S02-VP-02, and 'currently available in; Available in' under S02-VP-03.
+
+### Place tasks, Salla and Zid round: salla (a) and (b) (part RD1-S7)
+
+Placed:
+- S02-SA-490, under (a): joined S02-V-013 (S02-VP-01), the onboarding's question by its slug 'store-country', now 'Where is your business based?', 'Select the country where your business is legally registered or where you issue official documents' (run 20261028T174130Z, responses/0033.json).
+- S02-SA-501, under (a): joined S02-V-301 (S02-VP-01), the key 'kyc_country', '"kyc_country":"AE"' in the store's information of the new UAE store (store 21123834, Basic; run 20261028T174130Z, responses/0451.json).
+- S02-SA-490, under (b): joined S02-V-072 (S02-VP-04), the seller: the merchant selects the country in the onboarding, '"is_mandatory":true'.
+
+Noted:
+- S02-SA-477 (a): the merchant store's settings menu (store-1-da, Basic; run 20261028T150337Z, step 002) lists its items, none of which is a field or record holding the store's country; answers none of (a)'s questions
+- S02-SA-478 (a): the General section's items (Store information, Store design, Languages, Currencies) hold no field for the store's country; answers none of (a)'s questions
+- S02-SA-479 (a): the General section's items (Salla AI Connector, Salla Community, Latest platform updates) hold no field for the store's country; answers none of (a)'s questions
+- S02-SA-480 (a): the General section's items (Clear cache, Maintenance mode, Delete store) hold no field for the store's country; answers none of (a)'s questions
+- S02-SA-481 (a): the Store information page (step 003) shows 'Store activity' and Save, and no field for the store's country; answers none of (a)'s questions
+- S02-SA-482 (a): the store list (step 005) shows Store, Store website, Plan and Role, and no country; answers none of (a)'s questions
+- S02-SA-489 (a): the sign-up's body keys, '"name","email","mobile","country_code","password"' (run 20261028T164828Z, writes.jsonl): 'country_code', beside 'mobile', doesn't say whose country it is (rule 2's role test)
+- S02-SA-489 (b): as under (a): the key doesn't say whose country it is (rule 2's role test), and the body names no party that sets the store's country
+
+x_words took 'Where is your business based?; kyc_country' under S02-VP-01, 'Where is your business based?' under S02-VP-04, and 'store country' under S02-VP-06.
+
+### Place tasks, Salla and Zid round: salla (c) (part RD1-S7)
+
+Placed:
+- S02-SA-467, S02-SA-468, S02-SA-469, S02-SA-470: a new row, S02-V-305 (S02-VP-10), the merchant's country, by the coordinator's ruling of 27 October 2026 (a reading): the plans pages' answer to 'What do I need to start a store on Salla?' names 'A Saudi mobile number' and 'A Saudi bank account' on the Saudi paths (salla.com/en-sa/plans, salla.com/plans) and no country on the UAE paths (salla.com/en-ae/plans, salla.com/ar-ae/plans). The paths' codes tie each page to one country; the words don't name the country's merchants.
+- S02-SA-488: joined S02-V-305 (S02-VP-10): the merchant store's verification form renders the schema 'merchants_saudi_kyc' (store-1-da, Basic; run 20261028T150337Z, responses/0226.json), the platform's identifier tying the form to Saudi merchants (a reading).
+- S02-SA-485: joined S02-V-154 (S02-VP-10), the owner's residence: 'For Citizens and Residents', the words of S02-SA-117 in English, on store-1-da's Store Verification page (step 006).
+- S02-SA-490, S02-SA-493, S02-SA-494, S02-SA-495, S02-SA-496, S02-SA-497, S02-SA-498: joined S02-V-152 (S02-VP-10), the country selected in the onboarding (run 20261028T174130Z): 'We'll use this to apply the correct regulations to your store' (S02-SA-490, a reading: the regulations read as S02-SA-284's legal requirements); the legal entities offered for the country queried, each slug carrying its code (S02-SA-493 to S02-SA-497, a reading: the legal entity as part of what the merchant provides); 'Do you have the legal requirements to sell in the UAE?' with its documents (S02-SA-498).
+- S02-SA-471, S02-SA-472, S02-SA-473, S02-SA-474: joined S02-V-158 (S02-VP-12), the merchant's country, by the coordinator's ruling (a reading): 'What payment methods does Salla support?' names Mada, cards, Apple Pay, cash on delivery and Buy Now, Pay Later on the Saudi paths, and the same without Mada on the UAE paths. None names Salla Payments, so none is placed under S02-VP-11.
+- S02-SA-498: also a new row, S02-V-306 (S02-VP-13, payouts): 'To activate your store and receive payouts you need: ... Business bank account (UAE)', on the onboarding whose country was the United Arab Emirates (its scope).
+
+Noted:
+- S02-SA-484 (c): store-1-da's Store Verification requirement '1. Freelance Work Permit For Saudi Citizens Only' (step 006): the owner's nationality, outside the decider's role, as S02-V-153's note says of S02-SA-116; its scope names the store and no country; names no decider (rule 4)
+- S02-SA-486 (c): the verification's requirements preview, '"consent":true' and its next states (store_owner_details, government_documents, bank_account, review_confirm, finish), on store-1-da (responses/0229.json): the verification's steps, with no decider named (rule 4)
+- S02-SA-487 (c): store-1-da's Store Owner Details step, the owner's mobile 'registered in Absher' and 'national ID or Iqama number consisting of 10 digits' (step 008): names no decider (rule 4)
+
+x_words took 'requirements for creating a store on Salla; Choose your legal entity; Store Verification; merchants_saudi_kyc' under S02-VP-10, 'payment options' under S02-VP-12, and 'receive payouts' under S02-VP-13.
+
+### Rows replaced, removed, added and joined (part RD1-S7)
+
+Replaced: S02-V-074 (S02-VP-06, gap S02-SA-G01, now 'As the store owner, you can make this change.', S02-SA-483); S02-V-075 (S02-VP-07, gap S02-SA-G01, now gap S02-SA-G16); S02-V-168 (S02-VP-18, gap S02-SA-G07, now gap S02-SA-G18); S02-V-241 (S02-VP-19, gap S02-SA-G05, now gap S02-SA-G17); S02-V-027 (S02-VP-02, gap S02-SA-G04, now 'We’ll notify you when Salla becomes available in your country.', S02-SA-492). None removed. Added: S02-V-307 (S02-VP-06, gap S02-SA-G16), S02-V-304 (S02-VP-03, the six countries), S02-V-305 (S02-VP-10, the merchant's country), S02-V-306 (S02-VP-13, a business bank account in the UAE). Joined, all Salla's: S02-V-013 and S02-V-301 (S02-VP-01); S02-V-020 (S02-VP-03); S02-V-072 (S02-VP-04); S02-V-095 (S02-VP-06); S02-V-152 and S02-V-154 (S02-VP-10); S02-V-158 (S02-VP-12). Each joined row's evidence names what was added, after "second pass, RD1-S7", with the store, its plan, and the run and step. Notes added: S02-VP-18's (Salla's row now S02-SA-G18's gap) and S02-V-095's (S02-SA-G16 in S02-SA-G01's place).
+
+S02-V-303 is the id that RD1-S6's notes, above, give to a Shopify row under S02-VP-05, which was removed after that part (its statements, S02-SH-1083 and S02-SH-1084, are now in S02-V-053). `add` gave the id again, as the next after the folder's last. Here it names the Salla gap row under S02-VP-06. (The coordinator renumbered this part's row S02-V-307 on 28 October, so that each id names one row; `add` no longer gives an id that a ledger or note has named.)
+
+### Candidates for a new point (part RD1-S7)
+
+None noted. Two placements rest on a reading (calls 5 and 6, below). If the coordinator rejects those readings, they are candidates:
+- S02-SA-490, under (c): X 'the correct regulations', which 'Where is your business based?' is used to apply to the store. The question it answers: what decides the regulations applied to the store. Placed in S02-V-152 (documents and checks), read as S02-SA-284's legal requirements.
+- S02-SA-493 to S02-SA-497, under (c): X 'legal entity', from 'Choose your legal entity'. The question they answer: what decides which legal entities a store can register as. The options differ by the country queried. Placed in S02-V-152 (documents and checks), read as part of what the merchant provides.
+
+### Searches (part RD1-S7)
+
+No point was raised, so no earlier platform's rows were searched for. To place the round's statements beside the rows that hold their like, this part read: Salla's rows under S02-VP-01 to S02-VP-04, S02-VP-06 to S02-VP-13, S02-VP-18 and S02-VP-19; every platform's rows under S02-VP-06, S02-VP-07 and S02-VP-18; the full rows of S02-V-095, S02-V-151 to S02-V-154, S02-V-157, S02-V-158 and S02-V-179; and Zid's rows under S02-VP-10, by their excerpts. In this file, it searched for the earlier notes on S02-SA-387 to S02-SA-400, and for 'en-ae', 'ar-ae', 'en-sa', 'Saudi path', 'UAE path' and 'ties the', to see how earlier parts read salla.com's paths. It found S02-SA-256 and S02-SA-295, noted in the first pass (call 3).
+
+### Rechecks (part RD1-S7)
+
+Each row joined was compared with its own platform's statements already in it (rule 5). Its basis, `answers`, holds for each statement joined: S02-V-013, S02-V-020, S02-V-072, S02-V-095, S02-V-152, S02-V-154, S02-V-158 and S02-V-301. The new and replaced answer rows rest on `answers` alone: S02-V-027, S02-V-074, S02-V-304, S02-V-305 and S02-V-306. Their points' `raised_by` statements from other platforms share no term, identifier or definition with them. S02-V-074's 'store owner' isn't S02-SH-579's 'account owner of the store' in the same words.
+
+### Calls (part RD1-S7)
+
+1. S02-SA-483, the dashboard assistant's answer, is placed although its scope marks it AI-generated. It gives two answers: the store owner (S02-V-074) and the seller (joined S02-V-095). S02-SA-G16 stands beside them, as S02-V-307, since it asks for the answer as a page, a setting or a person of Salla's states it. If an answer marked AI-generated isn't to be placed, S02-SA-483 would be noted, S02-V-074 would be gap S02-SA-G16, and S02-V-307 would go.
+2. S02-SA-492 answers S02-VP-02 by its identifier, 'answered Other country': the countries kept out are 'Other country', as the onboarding shows them. Read as S02-V-027's earlier note read S02-SA-020 (the same message in Arabic: it 'names no country kept out'), S02-SA-492 would sit under S02-VP-03 only, and S02-V-027 would be `not covered`, since gap-closing settled S02-SA-G04. S02-SA-020 itself is left in S02-V-020: no task leads to it.
+3. salla.com's paths are read as tying a page to one country, by the coordinator's ruling of 27 October 2026 (a reading): 'en-sa' and the default path to Saudi Arabia, 'en-ae' and 'ar-ae' to the UAE, as phase A's scopes name them. That gives S02-V-305 (S02-VP-10) and the joins to S02-V-158 (S02-VP-12). Earlier, in the first pass, S02-SA-256 and S02-SA-295 were noted with 'the path is the site's, not a field or record of the store', before the ruling, and have no reread task. Read the other way, S02-SA-467 to S02-SA-474 would be noted, and S02-V-305 would hold only S02-SA-488.
+4. S02-SA-488's schema id, 'merchants_saudi_kyc', is read as tying the merchant store's verification form to Saudi merchants (a reading: an identifier, not a heading). S02-SA-484, S02-SA-486 and S02-SA-487 come from the same run and form, and their own words name no decider, so they are noted. Read together with S02-SA-488, they would join S02-V-305.
+5. In S02-SA-490 (c), 'We'll use this to apply the correct regulations to your store' is read as S02-SA-284's 'legal requirements' (S02-V-152, documents and checks), since the same description names 'where you issue official documents'. Read otherwise, it fits no kind of (c) (above).
+6. S02-SA-493 to S02-SA-497: the legal entities the onboarding offers for the country it queries are read as part of what the merchant provides to verify the business (documents and checks), as a2.tsv also leads them. Read otherwise, they fit no kind of (c) (above).
+7. S02-SA-498 answers two points. Its documents join S02-V-152 (S02-VP-10), and 'receive payouts ... Business bank account (UAE)' raises S02-V-306 (S02-VP-13). a2.tsv doesn't lead it to S02-VP-13. Its decider is the onboarding's country, from its scope. Its words 'to sell in the UAE' name the same country.
+8. S02-SA-501 is placed under (a), as kyc_country (S02-V-301), and noted under (c), as RD1-S6 noted S02-SH-1041. Gap-closing narrowed S02-SA-G07 into S02-SA-G18, which asks only about the default language. So, under S02-VP-18, Salla's default currency now has neither an answer row nor a gap. If the coordinator reads S02-SA-501 with its scope (a store whose onboarding answered the UAE holds the currency AED) as the store's country deciding the currency, it would raise a Salla answer row there (a reading).
+
+### Problems (part RD1-S7)
+
+1. Six statements are in RD1's slice and in `unplaced.tsv`, but no task in the work list names them: S02-SA-504 to S02-SA-509 (c). They are Salla's, from the same runs of 28 October. a2.tsv leads them to S02-VP-08, with S02-SA-G02 still open, and all but S02-SA-507 and S02-SA-509 to S02-VP-10 as well. S02-V-148, S02-SA-G02's gap row under S02-VP-08, has no revisit task either. This part left them all, since no task leads to them. From their words: S02-SA-504 is the new UAE store's verification schema 'merchants_uae_kyb_workflow', and S02-SA-509 the verification's state 'my_fatoorah_review'.
+2. `add` gives the id after the folder's last, so the id of a removed last row is given again (S02-V-303, above). (The coordinator renumbered this part's row S02-V-307 on 28 October, so that each id names one row; `add` no longer gives an id that a ledger or note has named.)
+
+### Check (part RD1-S7)
+
+This part ran the check on a copy holding only `b/RD1`. `merge_slices.py` merged 19 points and 306 rows. `check_subject.py` (3,073 statements, as phase A3 ran beside it) gave 5 lines of level `error`. All five are on Zid's rows of this round, which another part revisits: S02-V-038, S02-V-077, S02-V-170, S02-V-173 and S02-V-291, each naming a gap that was narrowed into another. None names this part's rows or statements. It gave 17 warnings, on phase A's citations, and 38 reviews, among them the quotes found only in a page's source, which are the coordinator's. In its `unplaced.tsv`, RD1's only Salla rows are S02-SA-504 to S02-SA-509 (c), for which the work list has no task (problem 1). This part's place tasks and its revisits' leads are gone from it. In `second_pass_list.py --check`, RD1's open tasks are four revisits of Zid's (S02-V-077, S02-V-170, S02-V-173, S02-V-291). This part's five revisits are gone from it.

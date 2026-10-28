@@ -106,7 +106,13 @@ class Folder:
         sys.exit(f"{vp} is not a variation point of b/{self.rd}/variation-points.tsv")
 
     def next_id(self):
+        """The id after the highest this decision has used: its rows', and those its ledger and notes, or the second
+        pass's rulings, name, so a removed row's id is never given to another row."""
         used = [int(re.search(r"(\d+)$", r["variant_id"]).group(1)) for r in self.var]
+        for p in (os.path.join(self.dir, "done.tsv"), os.path.join(self.dir, "notes-b.md"),
+                  os.path.join(self.subj, "b", "second-pass.md")):
+            if os.path.exists(p):
+                used += [int(n) for n in re.findall(r"\bS02-V-(\d+)\b", open(p, encoding="utf-8").read())]
         n = max([u for u in used if self.lo <= u <= self.hi] + [self.lo - 1]) + 1
         if n > self.hi:
             sys.exit(f"{self.rd}'s variant range ends at {self.hi}")
