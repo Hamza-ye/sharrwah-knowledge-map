@@ -121,6 +121,8 @@ Go down this list and take the first tag that applies to the key *(the order is 
   - an API's schema as its own introspection answers it is `shipped`.
 
   `--records` prints each statement's kind. Like with like compares the statements that give a key on two platforms. A platform that doesn't state a key has no statement to compare, so it counts as not giving the key, whatever the kinds of the others' statements.
+
+  *(The coordinator's own, 28 October 2026, after C-R2a's problem 4:)* like with like guards a difference, and a reading of what a page doesn't show, such as `the whole store` read from a setting shown once: a store may lack what its platform offers. Where every platform gives a key, and a platform's giving rests on an observed act, such as the seller setting a value in the admin or the platform creating a market, that observation is enough for `no difference`: what a store shows it can do, its platform offers. Name each platform's kinds in `scopes_compared`.
 - **Scopes** *(the pilot's coordinator's own)*. Compare rows whose scopes overlap: the same country, or general. Record the scopes you compared in `scopes_compared`.
   - *(The coordinator's own, 27 October 2026, from the pilot's problems:)* a scope that names a plan, a feature, a store or a business type, but no country, region or site, is general for this test.
   - *(The coordinator's own, 27 October 2026:)* for `no difference`, the platforms may give the key in scopes that don't overlap. Record each in `scopes_compared`.
