@@ -1064,3 +1064,140 @@ Each row joined was compared with its own platform's statements already in it: S
 ### Check (part RD1-S5)
 
 On a copy holding only `b/RD1`, `merge_slices.py` merged 19 points and 301 rows. `check_subject.py` gave no line of level `error`. It gave 17 warnings, on phase A's citations (16 of Shopify's, 1 of WooCommerce's), and 14 reviews: 12 quotes found only in a page's source, which are the coordinator's, and the statements of RD2 and RD3, whose folders the copy leaves out. None names this part's rows or statements. Its `unplaced.tsv` holds no row of RD1. `second_pass_list.py --check`: RD1 has no revisit, reread or note task without a row in `done.tsv`.
+
+## Second pass, RD1-S6
+
+Part RD1-S6 does, in RD1's work list, the capture round's 71 tasks, whose `why` begins "capture round" (27 and 28 October, after A2-SH-R1 and A2-SH-R2, observed-sh 19a5f6435), all of them Shopify's: one revisit, of S02-V-058 under S02-VP-05, and 70 place tasks, 26 under (a), 21 under (b) and 23 under (c). The revisit first, then the place tasks, by bullet, in the work list's order.
+
+### The slice this part read (part RD1-S6)
+
+RD1's slice, `slices/RD1/`, was cut at 19:21 on 27 October, before the capture round's statements reached Shopify's phase A files (statements at 23:39, gaps at 23:42), and holds none of them: the printer named S02-SH-1035 as not in RD1's slice, and `variants_edit.py` refuses an id outside the slice. `kinds.tsv` (23:25) had no kind for 68 of the round's ids. This part writes only in its scratch folder and `b/RD1/`, so it cut the slice again on a copy of S-02 in its scratch folder: `check_subject.py` on the copy, which writes the copy's `kinds.tsv`, then `subject_slice.py` on the copy. It printed from that cut, and ran `variants_edit.py` on a scratch folder whose `slices` is that cut and whose `b` is the repository's own `b`, so every row was written to `b/RD1/` under the tool's lock. The cut reads the same phase A files the coordinator's would.
+
+### Revisit S02-V-058 (shopify, S02-VP-05, who checks), a third time (part RD1-S6)
+
+Replaced with `gap`, S02-SH-G14, which stands in place of S02-SH-G09: whether the platform checks the new country of a store's business entity, and of the store address that follows it, after a change of country saves, on a store that uses no financial services; and if it does, who checks it and against what. None of the new leads names who checks. They come from two runs: capture-gb-plus's switch from its Yemen entity to the organization's US entity, 'Capture Entity', and back (run 20261027T184800Z), and capture-us-plus's switch to another US entity (run 20261027T194111Z). Each is an observation of one store on one day, and each row joined keeps its scope. The leads under (b):
+- S02-SH-1031 and S02-SH-1032: placed by RD1-S5 (S02-V-059, S02-V-066, S02-V-267), unchanged.
+- S02-SH-1033: noted by RD1-S5, unchanged.
+- S02-SH-1060, placed: joined S02-V-059 (S02-VP-06): Settings > General before the switch, with 'Manage entities in Organization settings' beside the store's entity 'capture gb plus - entity Yemen': where the seller manages the entity that holds the store's country, a control in the store's admin (rule 4). That the line is a link the text doesn't show: a reading.
+- S02-SH-1062, placed: joined S02-V-059: the switch's dialog 'Review payment methods after switching', with its 'button "Continue"', a control in the store's admin. Its (c) is placed below.
+- S02-SH-1063, placed: joined S02-V-059 ('Switching will update this store's business details', the words of S02-SH-338, which the row holds) and S02-V-267 (S02-VP-07): 'may need to verify your business', the same answer as S02-SH-1031 and S02-SH-1032. It names no party that checks.
+- S02-SH-1064, placed: joined S02-V-059 (the seller's choice in the switch's dialog, 'radio "Capture Entity, United States" [checked]') and S02-V-066 ('Store address will update to match new legal entity', the words of S02-SH-261, which S02-V-066 holds).
+- S02-SH-1065, placed: joined S02-V-059 (the dialog 'Confirm store address' and its 'button "Confirm"') and S02-V-066 ('Store address must be in the same country as the business entity').
+- S02-SH-1066, placed: joined S02-V-059: the admin's call 'UpdatePrimaryLegalEntity' at Confirm, with the store address the run entered, '"country": "US"' (step 30, Confirm, by its scope).
+- S02-SH-1067, placed: joined S02-V-059: Settings > General after Confirm, 'Capture Entity United States' and 'Store address 476 5th Ave, New York New York 10018, United States'.
+- S02-SH-1072, placed: joined S02-V-059 (the dialog of the switch back) and S02-V-066 (its same-country line), and raised a new row, S02-V-302 (S02-VP-07): Confirm on the switch back to Yemen met 'Street can't be blank' and 'City can't be blank', and the switch saved after the run filled both (S02-SH-1073): a store address with a street and a city held before the country changed. No row of S02-VP-07 held that condition.
+- S02-SH-1073, placed: joined S02-V-059: Settings > General after the switch back, 'capture gb plus - entity Yemen' and 'Store address 1 Capture Street, Sanaa, Yemen'.
+- S02-SH-1088 (b): capture-us-plus's switch to 'Capture Placeholder LLC', a US entity, saved with '"userErrors":[]': a change of the store's business entity within one country, the United States, not of the store's country, and it names no party that checks (rule 2), as RD1-S5 noted S02-SH-1033
+- S02-SH-1089 (b): Settings > General after that switch, 'Capture Placeholder LLC Single member LLC · United States': as S02-SH-1088. Its (a) is placed below
+
+S02-V-267's evidence ended by naming S02-SH-G09 as what asks who verifies. It was replaced, keeping its variant and statements, to join S02-SH-1063 and to name S02-SH-G14 in its place; its note says so.
+
+### Place tasks, capture round: shopify (a) (part RD1-S6)
+
+Placed:
+- S02-SH-1035, S02-SH-1036: joined S02-V-006 (S02-VP-01), the sign-up's field 'I'm located in:' (their identifier), with 'Yemen' selected before any input and 'United States' after the run chose it (run 20261027T175456Z, from a network in Yemen).
+- S02-SH-1039: joined S02-V-265, storeCreatePayload's '"country": "US"', sent after that choice.
+- S02-SH-1040: joined S02-V-005, the new shop's '"countryCode":"US"'.
+- S02-SH-1041: joined S02-V-003 (its 'billingAddress', '"countryCodeV2":"US"') and S02-V-004 (its 'shopAddress', the same).
+- S02-SH-1071: joined S02-V-003, capture-gb-plus's billing address after the switch, in New York. Its (c) is noted below.
+- S02-SH-1044, S02-SH-1056, S02-SH-1060, S02-SH-1067, S02-SH-1073: joined S02-V-001 (Settings > General's business entity, with its name and country) and S02-V-002 (the store address on the same page).
+- S02-SH-1065, S02-SH-1072: joined S02-V-002, the switch's 'Updated store address', with its country.
+- S02-SH-1066: joined S02-V-001 (the store's primary legal entity, which the call 'UpdatePrimaryLegalEntity' sets, by its '"externalLegalEntityId"') and S02-V-002 (the address it sends, '"country": "US"').
+- S02-SH-1047, S02-SH-1058, S02-SH-1081: joined S02-V-001, the shop API's 'primaryLegalEntity' with its '"countryCode":"US"'.
+- S02-SH-1051: joined S02-V-001, the shop API's 'businessEntities', each with its address's country code.
+- S02-SH-1087, S02-SH-1089: joined S02-V-001, the switch's choices, each entity with its country, and the page after the switch.
+- S02-SH-1152, S02-SH-1153: joined S02-V-001: 'An entity can be assigned to multiple stores' and 'You can set a default business entity for a store', of the business entity, the record S02-V-001 holds. They are the Help Center's, with no scope.
+
+Noted:
+- S02-SH-1037 (a): the trace the run took, when it started, of the network its browser used for the sign-up host, '"loc": "YE"': a location of that network, not a field or record that holds where the store or its merchant is based (rule 1; rule 2's role test)
+- S02-SH-1038 (a): '"geoCountryCode":"YE"' in the admin page's own data for store tuu1u4-v0, whose shop holds '"countryCode":"US"' (S02-SH-1040): its key doesn't say whose country it is (rule 2's role test)
+- S02-SH-1050 (a): SignupCountryUpdate's '"countryCode": "YE"' at step 17 and '"countryCode": "US"' at step 18, the steps at which the plan checkout's 'I’m selling from' changed (S02-SH-1049): its words, the signup country, don't say whose country it is (rule 2's role test), as RD1-S5 noted S02-SH-1002 and S02-SH-1003 (a call, below)
+- S02-SH-1055 (a): the Dev Dashboard's call that created capture-us-plus sends '"shopName": "capture us plus"', '"priceLookupKey"' and '"prepopulateTestData"', and no country: it names no field or record that holds the store's country (rule 2), as RD1-S5 noted S02-SH-1006
+
+x_words took 'primaryLegalEntity; businessEntities' under S02-VP-01.
+
+### Place tasks, capture round: shopify (b) (part RD1-S6)
+
+Placed:
+- S02-SH-1035: joined S02-V-054 (S02-VP-04, the platform): before any input, 'I'm located in:' held 'Yemen', on a sign-up from a network in Yemen: a value the page sets before the merchant chooses (a reading of its scope, 'Shift pressed, no input').
+- S02-SH-1036, S02-SH-1039: joined S02-V-053 (the seller): the run's choice of 'United States', and the sign-up's call that followed it, '"country": "US"'.
+- S02-SH-1048, S02-SH-1049: joined S02-V-053: the plan checkout's combobox 'Business location' (their identifier), 'I’m selling from', a control the seller sets; the run set it to Yemen and back. Their (c) is placed below.
+- S02-SH-1082, S02-SH-1085: joined S02-V-053: capture-us-plus's 'Edit business details' form for a 'Single Member LLC' ('Country code United States', its identifier), and the save's answer, the new entity with '"countryCode":"US"', as that row holds S02-SH-437, S02-SH-438 and S02-SH-450.
+- S02-SH-1153: joined S02-V-053: 'You can set a default business entity for a store from the Settings > General page of your Shopify admin'.
+- S02-SH-1083, S02-SH-1084: a new row, S02-V-303 (S02-VP-05): the admin's 'Registered legal business name is required' and its API's 'Legal entity must have exactly one account representative.', when the store's entity was saved as a Single Member LLC: the platform checks the business entity's details, a check of the record that holds the store's country (rule 4). No row of S02-VP-05 named the platform alone (a call, below).
+- S02-SH-1087: joined S02-V-059 (S02-VP-06): the switch's choices of the organization's entities, by country, a control in the store's admin.
+- S02-SH-1154: joined S02-V-059 ('before you can switch business entities in your Shopify admin') and S02-V-065 (S02-VP-07: 'you need to deactivate all financial services before you can switch business entities', and 'Only the store owner can deactivate Shopify Payments').
+
+Noted:
+- S02-SH-1047 (b): the store's primary legal entity on tuu1u4-v0, '"countryCode":"US"': its words name no party that set, checked or changed it (rule 2)
+- S02-SH-1050 (b): as under (a): the signup country's words don't say whose country it is (rule 2's role test), as RD1-S5 noted S02-SH-1003 to S02-SH-1005
+- S02-SH-1051 (b): the store's business entities, the primary with '"countryCode":"US"' and an archived one with '"countryCode":"YE"': their words name no party that set, checked or changed them (rule 2)
+- S02-SH-1055 (b): the call sends no country: it names no party that sets the store's country (rule 2), as RD1-S5 noted S02-SH-1006
+- S02-SH-1058 (b): as S02-SH-1047, on capture-us-plus
+- S02-SH-1075 (b): the first step of Shopify Payments' set-up, where the seller says how the store is run ('I am running my store as: [x] An individual'): it sets the business type, not the store's country, and names no party that checks it (rule 2). Its (c) is placed below
+- S02-SH-1080 (b): the set-up's call records the seller's answer, '"kind": "INDIVIDUAL"', with the entity's '"countryCode": "US"': as S02-SH-1075. Its (c) is placed below
+- S02-SH-1081 (b): as S02-SH-1047, on capture-us-plus
+- S02-SH-1086 (b): the store's primary legal entity after the save, still 'capture us plus - entity' with '"countryCode":"US"' and '"category":"INDIVIDUAL"', and the entities assignable to the shop: names no party that sets, checks or changes the store's country (rule 2)
+
+x_words took 'I’m selling from; Business location' under S02-VP-04 and 'Legal entity' under S02-VP-05.
+
+### Place tasks, capture round: shopify (c) (part RD1-S6)
+
+Placed:
+- S02-SH-1075, S02-SH-1076, S02-SH-1077, S02-SH-1078, S02-SH-1079, S02-SH-1080: joined S02-V-108 (S02-VP-10), the business entity's country code: capture-us-plus's Shopify Payments set-up for its US entity, with its US registration, identification numbers and documents. S02-SH-1079 by its scope, which names the entity's country (a reading, as for S02-SH-326 and S02-SH-327 in that row).
+- S02-SH-1054, S02-SH-1061, S02-SH-1068: joined S02-V-115 (S02-VP-11), the business entity: Shopify Payments' account and eligibility held per business entity, not eligible for capture-gb-plus's Yemen entity and eligible for its US entity.
+- S02-SH-1062: joined S02-V-122 (S02-VP-12), the business entity: third-party or manual payment methods may need reconnecting after changing business entity.
+- S02-SH-1048, S02-SH-1049: joined S02-V-244 (S02-VP-14), where the business is based: the plan's price at the same checkout, $39 a month with the United States and $27 with Yemen.
+- S02-SH-1064: joined S02-V-129 (S02-VP-14) and S02-V-139 (S02-VP-17), the words of S02-SH-261, which both rows hold.
+- S02-SH-1044, S02-SH-1056, S02-SH-1067: joined S02-V-136 (S02-VP-16) and S02-V-139 (S02-VP-17), 'Business entity used for financial products, markets, apps, and taxes in this shop', the words of S02-SH-318, which both rows hold. a2.tsv also leads S02-SH-1041, S02-SH-1044, S02-SH-1056 and S02-SH-1067 to S02-VP-18: each shows the store's currency beside its country, and none says what decides it (a call, below).
+
+Noted:
+- S02-SH-1041 (c): the new store's addresses, '"countryCodeV2":"US"', beside its '"currencyCode":"USD"': its words don't say what decides the currency (rule 4)
+- S02-SH-1052 (c): the mail 'Payment settings changed', 'My Store Admin deactivated Shopify Payments as a payment provider': it names who changed the setting, not what decides whether or how the store can use Shopify Payments (rule 4)
+- S02-SH-1053 (c): Settings > Payments of tuu1u4-v0 offers Shopify Payments ('Complete setup'), with 'Card rates starting at 2.5% + $0.30': its words name no decider (rule 4)
+- S02-SH-1069 (c): Settings > Payments of capture-gb-plus after the switch: 'Development stores can only process test payments', and Shopify Payments with 'Card rates starting at 3.5% + $0.30': the store's type, a development store, is no decider of rule 1's table, and its words name no other (rule 4). Named in S02-VP-11's note
+- S02-SH-1070 (c): Managed Markets' '"ineligibilityReasons":["UNSUPPORTED_REGION","MISSING_SHOPIFY_PAYMENTS"]' on capture-gb-plus with its US entity and New York address: Shopify Payments is no decider of rule 1's table, and 'UNSUPPORTED_REGION' doesn't say whose region (rule 4; rule 2's role test). Named in S02-VP-17's note
+- S02-SH-1071 (c): the Markets page's query 'ManagedMarketsShopAddress' returns the shop's billing address, in New York: its words don't say the address decides Managed Markets, or anything else (rule 4). Its (a) is placed above
+- S02-SH-1074 (c): Settings > Payments of capture-us-plus: 'Development stores can only process test payments', and Shopify Payments with 'Card rates starting at 2.5% + $0.30': as S02-SH-1069
+
+x_words took 'documentRequirements; Identification numbers' under S02-VP-10, 'third-party or manual payment methods' under S02-VP-12 and 'Basic plan' under S02-VP-14.
+
+### Rows replaced, removed, added and joined (part RD1-S6)
+
+Replaced: S02-V-058 (gap S02-SH-G09, now gap S02-SH-G14); S02-V-267 (the same answer, joined by S02-SH-1063, its evidence naming S02-SH-G14 where it named S02-SH-G09). None removed. Added: S02-V-302 (S02-VP-07, 'Street can't be blank - listitem: City can't be blank') and S02-V-303 (S02-VP-05, 'Legal entity must have exactly one account representative.'). Joined, all Shopify's: S02-V-001, S02-V-002, S02-V-003, S02-V-004, S02-V-005, S02-V-006 and S02-V-265 (S02-VP-01); S02-V-053 and S02-V-054 (S02-VP-04); S02-V-059 (S02-VP-06); S02-V-065 and S02-V-066 (S02-VP-07); S02-V-108 (S02-VP-10); S02-V-115 (S02-VP-11); S02-V-122 (S02-VP-12); S02-V-129 and S02-V-244 (S02-VP-14); S02-V-136 (S02-VP-16); S02-V-139 (S02-VP-17). Each joined row's evidence names what was added, after "Second pass, RD1-S6", and keeps each statement's scope: the store, its plan, and the run and step. Points' notes: S02-VP-11 and S02-VP-17. x_words: Shopify's under S02-VP-01, S02-VP-04, S02-VP-05, S02-VP-10, S02-VP-12 and S02-VP-14. S02-V-053's note named S02-SH-G02 as the gap that asks which field 'I'm located in:' sets; it was replaced, keeping the row's variant, statements and evidence, with what run 20261027T175456Z shows (call 11).
+
+### Candidates for a new point (part RD1-S6)
+
+None. Each statement placed answers one of its bullet's questions for an X of one of rule 1's kinds. Each statement noted answers none of its bullet's questions, names no decider of rule 1's table, or fails the role test; none was noted because its X fits no point's kind.
+
+### Searches (part RD1-S6)
+
+No point was raised, so no earlier platform's rows were searched for. To place the round's statements beside the rows that hold their like, Shopify's rows were read under S02-VP-01, S02-VP-04 to S02-VP-07, S02-VP-10 to S02-VP-12, S02-VP-14 and S02-VP-16 to S02-VP-18; the full rows of S02-V-053, S02-V-058, S02-V-059, S02-V-066, S02-V-108, S02-V-115, S02-V-122 and S02-V-267; the statements S02-SH-437, S02-SH-438 and S02-SH-450 (an earlier save of a business entity's details, in S02-V-053); and S02-SH-1031 to S02-SH-1033 (the revisit's earlier leads).
+
+### Rechecks (part RD1-S6)
+
+Each row joined was compared with its own platform's statements already in it (rule 5). Its basis, `answers`, holds for each statement joined: by the statement's words, or, where rule 5 allows, by its identifier or scope (S02-SH-1035, S02-SH-1048, S02-SH-1049, S02-SH-1066, S02-SH-1079, S02-SH-1082). The new rows, S02-V-302 and S02-V-303, rest on `answers` alone: their points' `raised_by` holds no other platform's statement.
+
+### Calls (part RD1-S6)
+
+1. The slice: RD1's slice held none of the round's statements, and this part cut it again on a copy in its scratch folder (above). The coordinator may cut the slices again in place; the cut reads the same phase A files.
+2. S02-SH-1083 and S02-SH-1084 raised S02-V-303 under S02-VP-05 (who checks): the admin's own messages on saving a business entity's details, read as the platform's check of the business entity (rule 4: a check of the business entity is a check of X; what a platform's code does is the platform's). S02-SH-437 ('Couldn't save changes', 'Assign a business representative'), an earlier statement of the same kind, sits in S02-V-053 and S02-V-059 and not under S02-VP-05; no task led to it, and it is left. Read instead as a requirement of the form, S02-SH-1083 and S02-SH-1084 would join S02-V-053 beside S02-SH-437, and S02-V-303 would go.
+3. S02-SH-1088 and S02-SH-1089 are noted under (b), and S02-SH-1087 placed: capture-us-plus's switch went from one US entity to another, so the store's country didn't change, while the dialog of S02-SH-1087 offers an entity in Yemen too, a control that can change it. Read as a change of the business entity, the record that holds the store's country, S02-SH-1088 and S02-SH-1089 would join S02-V-059.
+4. S02-SH-1050 is noted under (a) and (b), as RD1-S5 noted S02-SH-1002 to S02-SH-1005: the signup country's words don't say whose it is. Read with S02-SH-1049, whose step is the same and whose combobox is 'Business location', it would join S02-V-053 under (b), and S02-VP-01 under (a) (a reading).
+5. S02-SH-1035 joined S02-V-054, the platform, by its scope: 'Yemen' was selected before any input, on a sign-up from a network in Yemen. That the page set it by default is a reading.
+6. S02-SH-1048 and S02-SH-1049: the plan checkout's 'I’m selling from' (combobox 'Business location') is read as the business's location, the store's own country (rule 1), not a place the store sells at. Read otherwise, both would be noted under (b) and (c).
+7. S02-SH-1075 to S02-SH-1080 joined S02-V-108 by the reading that row already makes: each set-up shows, under its entity's country code, what it asks for. a2.tsv also leads S02-SH-1075, S02-SH-1076, S02-SH-1077 and S02-SH-1080 to S02-VP-11; they were placed under S02-VP-10 only, since what they show is what the set-up asks the merchant to provide.
+8. S02-VP-18 (the store's defaults): a2.tsv leads S02-SH-1041, S02-SH-1044, S02-SH-1056 and S02-SH-1067 to it. Each shows the store's currency beside its country: US Dollar on the US stores, and Yemeni Rial still after capture-gb-plus's switch to a US entity (S02-SH-1067). None says what decides the currency, so none is placed there (rule 4).
+9. S02-SH-1054, S02-SH-1061 and S02-SH-1068 joined S02-V-115 (the business entity), since the shop API holds Shopify Payments' account and eligibility under each business entity.
+10. S02-V-302 holds a condition met on one store on one day, a store address with a street and a city, as the run showed it. It is a row of its own, apart from S02-V-066's same-country condition.
+11. S02-V-053's note named S02-SH-G02, which S02-SH-G10 replaced. The checker reads only a row's `gap_ids`, and this part doesn't read whether gap-closing recorded S02-SH-G10 as answered, so the note now gives what the run shows, on one store on one day: chosen as United States from a network in Yemen, 'I'm located in:' filled the sign-up's country, and the new store held US as its countryCode, its addresses' and its business entity's. If the coordinator reads S02-SH-G10 as still open, the note should name it as open instead.
+
+### Problems (part RD1-S6)
+
+1. RD1's slice, cut at 19:21 on 27 October, held none of the capture round's statements, and `kinds.tsv` had no kind for 68 of them, though the work list, written at 23:50, names them. The printer named them as outside RD1's slice, which the brief reads as "under none of your root decision's bullets"; read so, all 70 place tasks would have been left. This part cut the slice again on a copy (above).
+2. The task message points to Shopify's `notes.md` sections "Part A2-SH-R1" and "Part A2-SH-R2", and to the statements' `note` column ("answers S02-SH-Gnn"), which the brief says not to read. This part read neither: it read `a2.tsv` and the gaps' own words in the slice, and left the checker to name rows that name a settled gap.
+3. `second_pass_list.py --check` keys on (task, id, bullet), so RD1-S5's ledger line for the same revisit satisfied it before this part ran: the check can't show whether this part's revisit was done. The ledger holds a second line for it.
+
+### Check (part RD1-S6)
+
+On a copy holding only `b/RD1`, `merge_slices.py` merged 19 points and 303 rows. `check_subject.py` gave 247 lines of level `error`, all in `answers.tsv`, each 'not a variation point' for a point of RD2 or RD3 (S02-VP-26 to S02-VP-92), which the copy leaves out; none names this part's rows or statements. Before this part wrote, the checker run on the copy that cut the slice named S02-V-058 ('gap S02-SH-G09 was narrowed into S02-SH-G14'), which the revisit replaced; that line is gone. It gave 17 warnings, on phase A's citations (16 of Shopify's, 1 of WooCommerce's), and 33 reviews: 12 quotes found only in a page's source, which are the coordinator's; the statements of RD2 and RD3, whose folders the copy leaves out; and 19 points with no phase C row yet. Its `unplaced.tsv` holds no row of RD1: the place tasks and the revisit's leads are gone from it. `second_pass_list.py --check`: RD1 has no revisit, reread or note task without a row in `done.tsv`, as before this part (problem 3).
