@@ -1385,3 +1385,24 @@ From A2-ZD-R and A3-ZD-R (other-product-class f44be3f, folder `zid/`). The new l
 ### Revisit S02-V-887 (zid, S02-VP-89, notifications to the merchant): was `gap` (S02-ZD-G16)
 - Replaced by the whole store (a reading): S02-ZD-457 (the Staff notifications page: one set of statuses and e-mails) and S02-ZD-458 (one `order_statuses` and one `emails`, no market field); absence S02-ZD-N10 cited there. Why names no gap: S02-ZD-G16 was settled by gap-closing, and goes.
 - S02-ZD-457 also joined S02-V-891 (S02-VP-90, the seller). S02-ZD-313 to S02-ZD-317 stay in S02-V-891, S02-ZD-318 in S02-V-1088.
+
+### `place` tasks (A2-ZD-R and A3-ZD-R)
+- S02-ZD-474: joined S02-V-771 (S02-VP-53, a market: 'By default, all markets use your store's active theme. You can assign a different theme to each market', a market that takes the store's value until the seller changes it, rule 4) and S02-V-773 (S02-VP-54, the seller: 'You can assign').
+- S02-ZD-487: joined S02-V-751 (S02-VP-41, a market: the Kuwait market's 'Market currency [KWD]') and S02-V-755 (S02-VP-42, the seller: a field of the market's manage page in the store's admin). Its 'Product prices and currency' is a section heading that shows no value, so it joins no row of S02-VP-49. Under (e) too: RD2's, left.
+- S02-ZD-488: joined S02-V-751 (a market: the code that saves a market sends 'main_currency:t.market_currency' with the market's id). Not under S02-VP-42: the code's words name no party, and the value it sends is the form's (rule 4). Under (e) too: RD2's, left.
+- S02-ZD-489: joined S02-V-766 (S02-VP-49, a market: 'Set different product prices for each market and customer type') and S02-V-767 (S02-VP-50, the seller). Per customer type is none of rule 4's four phrases; it stays in the evidence.
+- S02-ZD-490: joined S02-V-751 (S02-VP-41, a market: 'Customer Wallet uses this market's currency.'), S02-V-769 (S02-VP-51, a market, a reading: the Customer Wallet read as store credit) and S02-V-756 (S02-VP-42, the platform, a reading: 'Contact support if you need to change it.', a change made by Zid's support, not by a control of the store's admin).
+- S02-ZD-491: joined S02-V-771 (a market: 'Customers from this market will see the selected theme') and S02-V-773 (the seller: 'Select a theme to assign to this market.').
+- S02-ZD-493: joined S02-V-763 (S02-VP-47) and S02-V-766 (S02-VP-49), a market ('حسب السوق المستهدف', my translation: 'by the target market'), and S02-V-765 (S02-VP-48) and S02-V-767 (S02-VP-50), the seller ('تقدر', my translation: 'you can').
+
+### x_words added for zid
+- S02-VP-55 'Checkout page options; Buy as a guest; is_single_page_checkout_enabled'; S02-VP-65 'Exchange and returns'; S02-VP-67 'Priority for withdrawal from warehouse; fulfillment_priority'; S02-VP-68 'Store information; Email; Phone; config_email; config_telephone'; S02-VP-71 'Create group; Group information'; S02-VP-75 'Privacy policy'; S02-VP-77 'Time zone; default_timezone'; S02-VP-80 'Hours of operation; store closure; is_store_closed'; S02-VP-85 'Business address > Country; business_location'; S02-VP-86 'My apps; تطبيقاتي; installed_applications'; S02-VP-87 'Google Analytics; Google Tag Manager; Meta pixel; TikTok pixel; Account code'; S02-VP-89 'Staff notifications; order_statuses; emails'; S02-VP-41 'Market currency; main_currency'; S02-VP-49 'product prices; B2B pricing'; S02-VP-51 'Customer Wallet'; S02-VP-53 'Used theme; Assign theme; active theme'.
+
+### Statements noted (rule 2)
+- None: every lead under (f) and every place task's statement is placed. The earlier leads stay as earlier parts placed or noted them, and their notes stay as they are.
+
+### Candidates for a new point
+- S02-ZD-449's key `enforce_2fa` ('"key":"enforce_2fa","value":"0"'): X is two-step sign-in enforced through the store's settings, and the statement answers what it takes its value per (one value in the store's settings answer, the whole store, a reading). No kind of rule 1 fits: staff access is what staff may manage, not how they sign in; and its words don't say whose sign-in it governs, so it may be a setting of the platform's own account, which isn't a setting of the store. The statement is placed for its other keys (S02-VP-41, S02-VP-43, S02-VP-55, S02-VP-68, S02-VP-77), so this is listed here and not as a note.
+
+### Words searched for
+- None: the second pass raises no point, so rule 3's search for earlier platforms' rows doesn't arise.
