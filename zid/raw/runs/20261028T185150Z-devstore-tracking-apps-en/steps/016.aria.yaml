@@ -1,0 +1,108 @@
+- banner:
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/3277610
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "KWD 0"
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+- navigation "Primary navigation":
+  - button "Home"
+  - button "Apps" [pressed]
+  - button "Settings"
+  - separator
+- list:
+  - link "App Market":
+    - /url: /en-sa/stores/3277610/apps
+  - link "My apps":
+    - /url: /en-sa/stores/3277610/apps/installed
+    - text: My apps
+    - button [expanded]
+  - link "Google Analytics":
+    - /url: /en-sa/stores/3277610/apps/16
+    - img
+    - text: Google Analytics
+  - link "Categories":
+    - /url: /en-sa/stores/3277610/apps/browse
+  - link " Marketing & Growth":
+    - /url: /en-sa/stores/3277610/apps/browse?tab=51
+  - link " AI & Analytics":
+    - /url: /en-sa/stores/3277610/apps/browse?tab=69
+  - link " Store & Customer Experience":
+    - /url: /en-sa/stores/3277610/apps/browse?tab=67
+  - link " Finance & Payments":
+    - /url: /en-sa/stores/3277610/apps/browse?tab=72
+  - link " Operations & Store Management":
+    - /url: /en-sa/stores/3277610/apps/browse?tab=78
+  - link " Sales & Conversion":
+    - /url: /en-sa/stores/3277610/apps/browse?tab=59
+- main:
+  - button
+  - heading "Browse apps" [level=5]
+  - heading "App market" [level=6]
+  - textbox "Search by app name": Facebook
+  - button
+  - separator
+  - link "Meta pixel improve and measure the effectiveness of advertising campaigns for your store visitors on Facebook and Instagram Tracking & Attribution 1 Star 4.7 Free App Add to compare":
+    - /url: /en-sa/stores/3277610/apps/29
+    - img
+    - paragraph: Meta pixel
+    - separator
+    - text: improve and measure the effectiveness of advertising campaigns for your store visitors on Facebook and Instagram Tracking & Attribution
+    - separator
+    - img "1 Star"
+    - text: 4.7 Free App
+    - button "Add to compare"
+  - link "Meta conversion API Improve and measure the effectiveness of advertising campaigns for your store visitors on facebook and instagram Tracking & Attribution 1 Star 5.0 Free App Add to compare":
+    - /url: /en-sa/stores/3277610/apps/950
+    - img
+    - paragraph: Meta conversion API
+    - separator
+    - text: Improve and measure the effectiveness of advertising campaigns for your store visitors on facebook and instagram Tracking & Attribution
+    - separator
+    - img "1 Star"
+    - text: 5.0 Free App
+    - button "Add to compare"
+  - link "Facebook Contact Us Lets make it easier for your customers to contact you via Facebook Messenger Customer Support & Chat 1 Star 5.0 From KWD 3.000 / 1 Month Add to compare":
+    - /url: /en-sa/stores/3277610/apps/1150
+    - img
+    - paragraph: Facebook Contact Us
+    - separator
+    - text: Lets make it easier for your customers to contact you via Facebook Messenger Customer Support & Chat
+    - separator
+    - img "1 Star"
+    - text: 5.0 From KWD 3.000 / 1 Month
+    - button "Add to compare"
+  - link "Ersal Manage all your messages across WhatsApp, Instagram, Facebook, and TikTok from a single platform. WhatsApp Marketing 1 Star 5.0 From KWD 6.000 / 1 Month Add to compare":
+    - /url: /en-sa/stores/3277610/apps/6056
+    - img
+    - paragraph: Ersal
+    - separator
+    - text: Manage all your messages across WhatsApp, Instagram, Facebook, and TikTok from a single platform. WhatsApp Marketing
+    - separator
+    - img "1 Star"
+    - text: 5.0 From KWD 6.000 / 1 Month
+    - button "Add to compare"
+  - text: "Per page:"
+  - combobox "25"
+  - navigation "pagination navigation":
+    - list:
+      - listitem:
+        - button "Go to first page" [disabled]
+      - listitem:
+        - button "Go to previous page" [disabled]
+      - listitem:
+        - button "page 1": "1"
+      - listitem:
+        - button "Go to next page" [disabled]
+      - listitem:
+        - button "Go to last page" [disabled]
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

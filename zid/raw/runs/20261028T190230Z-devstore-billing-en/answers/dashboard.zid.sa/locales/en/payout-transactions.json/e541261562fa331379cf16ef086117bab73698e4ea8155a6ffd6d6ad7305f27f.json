@@ -1,0 +1,16 @@
+{
+  "columns": {
+    "amount": "Amount",
+    "bnpl": "Bnpl",
+    "date": "Date",
+    "netAmount": "Net amount",
+    "payoutBank": "Payout bank",
+    "payoutFees": "Payout fees",
+    "payoutNumber": "Payout ID",
+    "time": "Time"
+  },
+  "emptyState": {
+    "title": "Your payouts will appear here"
+  },
+  "title": "Payout transactions"
+}

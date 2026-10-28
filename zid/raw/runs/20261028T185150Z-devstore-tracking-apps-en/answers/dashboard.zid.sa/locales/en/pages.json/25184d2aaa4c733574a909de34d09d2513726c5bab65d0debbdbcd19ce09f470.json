@@ -1,0 +1,1193 @@
+{
+  "LogisticsFinalizeShippingSetupPage": {
+    "title": "Finalize your shipping setup"
+  },
+  "OnlineStorePages": {
+    "tabs": {
+      "CustomPage": "Custom Pages",
+      "LegalPage": "Legal Pages"
+    },
+    "title": "Pages"
+  },
+  "ZidshipLocalDelivery": {
+    "description": "Offer direct delivery from your locations to your customers.",
+    "title": "Local delivery"
+  },
+  "ZidshipLocalDeliverySettings": {
+    "title": "Settings {{name}}"
+  },
+  "ZidshipPickup": {
+    "description": "Let customers pick up their orders directly from your physical locations.",
+    "title": "Pickup in store"
+  },
+  "abandonedCarts": {
+    "description": "Track and recover abandoned shopping carts to boost your sales conversion",
+    "descriptionNGO": "Track and recover abandoned shopping donations to boost your sales conversion",
+    "ngoTitle": "Abandoned donations",
+    "title": "Abandoned carts"
+  },
+  "abandonedCartsDetails": {
+    "title": "Cart details"
+  },
+  "accessRequest": {
+    "title": "Access request"
+  },
+  "affiliateCreate": {
+    "title": "Create affiliate"
+  },
+  "affiliateView": {
+    "title": "Affiliate view"
+  },
+  "affiliates": {
+    "description": "All affiliates in your store are here",
+    "title": "Affiliates"
+  },
+  "analytics": {
+    "description": "Understanding your store's performance",
+    "title": "Analytics"
+  },
+  "analyticsFinancial": {
+    "description": "Comprehensive snapshot of sales, VAT, discounts, and channel performance",
+    "title": "Financial analytics"
+  },
+  "analyticsInsights": {
+    "description": "Ask your store data, follow alerts, and create reports ready to share.",
+    "title": "Zid Insights"
+  },
+  "analyticsLive": {
+    "description": "Real-time analytics and visitor tracking",
+    "title": "Live analytics"
+  },
+  "analyticsLogistics": {
+    "title": "Logistics analytics"
+  },
+  "analyticsMarketing": {
+    "description": "Track marketing impact across sales and customer engagement",
+    "title": "Marketing analytics"
+  },
+  "analyticsOperational": {
+    "description": "Fulfillment and delivery timing insights",
+    "title": "Analytics operational"
+  },
+  "analyticsPayments": {
+    "description": "Summary of payment transaction status, failures, and settlements",
+    "title": "Payments analytics"
+  },
+  "analyticsProducts": {
+    "description": "Product-level sales performance and customer ordering behavior",
+    "title": "Analytics products",
+    "titleNgo": "Analytics donations opportunities"
+  },
+  "authForgotPassword": {
+    "title": "Forgot password"
+  },
+  "authLogin": {
+    "title": "Login"
+  },
+  "authMfa": {
+    "title": "Two-step verification"
+  },
+  "authOTP": {
+    "title": "Verification code"
+  },
+  "authPasskey": {
+    "title": "Biometric sign-in"
+  },
+  "authPassword": {
+    "title": "Password"
+  },
+  "authResetPassword": {
+    "title": "Reset password"
+  },
+  "autoRestock": {
+    "title": "Auto Restock Transfer"
+  },
+  "automatedMessages": {
+    "description": "Messages automatically sent to your customers based on events you specify.",
+    "title": "Automated Messages"
+  },
+  "automatedMessagesCreate": {
+    "title": "Create automated message"
+  },
+  "automatedMessagesEdit": {
+    "title": "Edit automated message"
+  },
+  "automaticDiscounts": {
+    "title": "Automatic discounts"
+  },
+  "bankAccounts": {
+    "title": "Bank accounts"
+  },
+  "bankDiscounts": {
+    "title": "Bank discounts"
+  },
+  "billing": {
+    "title": "Billing"
+  },
+  "billingAddons": {
+    "title": "Add-ons"
+  },
+  "billingPackages": {
+    "title": "Select your plan"
+  },
+  "billingTransactions": {
+    "title": "Billing transactions"
+  },
+  "blog": {
+    "description": "Create and manage blog posts to engage your customers and boost SEO",
+    "title": "Blog"
+  },
+  "blogCategories": {
+    "title": "Blog categories"
+  },
+  "blogCategoryCreate": {
+    "title": "Create category"
+  },
+  "blogCategoryEdit": {
+    "title": "Edit category"
+  },
+  "blogCreate": {
+    "title": "Create new blog post"
+  },
+  "blogEdit": {
+    "title": "Edit blog post"
+  },
+  "blogTagCreate": {
+    "title": "Create tag"
+  },
+  "blogTagEdit": {
+    "title": "Edit tag"
+  },
+  "blogTags": {
+    "title": "Blog tags"
+  },
+  "brand": {
+    "title": "Brand"
+  },
+  "brandCreate": {
+    "title": "Create brand"
+  },
+  "brandProducts": {
+    "title": "Manage products"
+  },
+  "brandUpdate": {
+    "title": "Edit brand"
+  },
+  "brands": {
+    "title": "Brands"
+  },
+  "bundleOffers": {
+    "title": "Bundle offers"
+  },
+  "bundleOffersCreate": {
+    "title": "Create bundle"
+  },
+  "bundleOffersCreateFixedPrice": {
+    "title": "Create fixed-price bundle"
+  },
+  "bundleOffersView": {
+    "title": "Bundle offer"
+  },
+  "bundleOffersViewFixedPrice": {
+    "title": "Fixed-price bundle"
+  },
+  "cashbackOffers": {
+    "description": "Track the cashback offers you've created and choose the active offer for your store.",
+    "title": "Cashback offers"
+  },
+  "cashiers": {
+    "title": "Cashiers"
+  },
+  "catalogPages": {
+    "description": "Edit the content of the pages to appear at the bottom of the store or add custom pages",
+    "title": "Pages"
+  },
+  "catalogPagesCreate": {
+    "title": "Create custom page"
+  },
+  "catalogPagesUpdate": {
+    "title": "Update custom page"
+  },
+  "catalogProductsArrange": {
+    "title": "Product sorting"
+  },
+  "categories": {
+    "description": "Manage categories with custom images & descriptions",
+    "title": "Categories"
+  },
+  "categoryCreate": {
+    "description": "Control your store categories and insert its image or descriptions",
+    "title": "Create category"
+  },
+  "categoryProducts": {
+    "title": "Update category products"
+  },
+  "categoryUpdate": {
+    "description": "Control your store categories and insert its image or descriptions",
+    "title": "Update category"
+  },
+  "channels": {
+    "title": "Channels"
+  },
+  "chargebacks-dispute": {
+    "chargeback-title": "Chargeback dispute response",
+    "fraud-title": "Fraud dispute response"
+  },
+  "charityFostering": {
+    "title": "Charity fostering"
+  },
+  "checkout": {
+    "title": "Checkout"
+  },
+  "checkoutOptions": {
+    "title": "Checkout page options"
+  },
+  "checkoutRedirect": {
+    "title": "Checkout"
+  },
+  "communications": {
+    "title": "Communications"
+  },
+  "communicationsReviews": {
+    "description": "Notify customers to leave product ratings & reviews",
+    "title": "Product review notification settings"
+  },
+  "createAutoRestock": {
+    "title": "Auto Restock transfer"
+  },
+  "createBankDiscounts": {
+    "title": "Create new bank discount"
+  },
+  "credits": {
+    "title": "Credits"
+  },
+  "customShippingMethods": {
+    "title": "Custom shipping methods"
+  },
+  "customerSupport": {
+    "title": "Customer Tickets"
+  },
+  "customerSupportView": {
+    "title": "Ticket #{{id}}"
+  },
+  "customerWallet": {
+    "description": "Customer wallet balance and transactions",
+    "title": "Customer wallet"
+  },
+  "customerWalletCreateOffer": {
+    "title": "Create reward offer"
+  },
+  "customerWalletUpdateOffer": {
+    "title": "Update reward offer"
+  },
+  "customerWallets": {
+    "description": "Customer wallets balance and transactions",
+    "title": "Customer wallets"
+  },
+  "customers": {
+    "ngoTitle": "Donors list",
+    "title": "Customer list"
+  },
+  "customersCreate": {
+    "ngoTitle": "Add a new doner",
+    "title": "Add a new customer"
+  },
+  "customersGroups": {
+    "description": "Your customers organized into groups for easier tracking and management",
+    "title": "Customer groups"
+  },
+  "customersGroupsCreate": {
+    "title": "Create group"
+  },
+  "customersGroupsCustomers": {
+    "title": "Group customers"
+  },
+  "customersGroupsEdit": {
+    "title": "Edit group"
+  },
+  "customersReports": {
+    "ngoTitle": "Donors reports",
+    "title": "Customers reports"
+  },
+  "customersView": {
+    "ngoTitle": "Donor details",
+    "title": "Customer details"
+  },
+  "customizableReportsReportCreate": {
+    "title": "Create report"
+  },
+  "customizableReportsReportsList": {
+    "title": "Reports"
+  },
+  "discountCreate": {
+    "title": "Create Discount"
+  },
+  "discountEdit": {
+    "title": "Edit Discount"
+  },
+  "discounts": {
+    "title": "Discounts"
+  },
+  "discountsBulkEdit": {
+    "title": "Bulk edit discounts"
+  },
+  "discountsReports": {
+    "title": "Discounts reports"
+  },
+  "donorsGroups": {
+    "description": "Your donors organized into groups for easier tracking and management",
+    "title": "Donors groups"
+  },
+  "draft": {
+    "description": "Create orders for customers without their intervention. if all steps are not completed, the order will be saved on the <1>manual orders</1> page",
+    "ngoDescription": "Create donations without the donor's intervention. If all steps are not completed, the donation will be saved on the <1>manual donations</1> page",
+    "ngoTitle": "Create a new manual donation",
+    "title": "Create a new manual order"
+  },
+  "drafts": {
+    "ngoTitle": "Manual donations",
+    "title": "Manual orders"
+  },
+  "editBankDiscounts": {
+    "title": "Edit bank discount"
+  },
+  "emailConfirmation": {
+    "title": "Confirmation"
+  },
+  "exportRequests": {
+    "description": "View all your export requests, download files, and manage export options",
+    "title": "Export requests"
+  },
+  "faqCreate": {
+    "title": "Create FAQ"
+  },
+  "faqEdit": {
+    "title": "Edit FAQ"
+  },
+  "faqs": {
+    "title": "FAQ"
+  },
+  "filters": {
+    "description": "Control how filters are displayed to customers in your store",
+    "title": "Filters"
+  },
+  "filtersCreate": {
+    "title": "Create filter"
+  },
+  "filtersEdit": {
+    "title": "Edit filter"
+  },
+  "finance": {
+    "title": "Finance"
+  },
+  "financing": {
+    "title": "Financing"
+  },
+  "financingActivation": {
+    "title": "Activate financing"
+  },
+  "financingInfo": {
+    "title": "Financing information"
+  },
+  "fiveSalesJourney": {
+    "title": "5 Sales Journey"
+  },
+  "giftCardBuilder": {
+    "title": "Gift card builder"
+  },
+  "growth": {
+    "title": "Growth"
+  },
+  "growthServices": {
+    "title": "Browse growth services"
+  },
+  "growthTermsConditions": {
+    "title": "Terms and Conditions"
+  },
+  "helpCenter": {
+    "title": "Frequently asked questions"
+  },
+  "home": {
+    "title": "Dashboard"
+  },
+  "inventories": {
+    "title": "Inventories"
+  },
+  "inventoriesStockTaking": {
+    "description": "You can manage count, information, and stock taking",
+    "title": "Stock taking"
+  },
+  "inventoriesStockTakingCreate": {
+    "description": "Enter the products to be inventoried",
+    "title": "Create count stocktaking"
+  },
+  "inventoriesStockTakingView": {
+    "description": "You can manage count, information, and stock taking",
+    "title": "Stock taking details"
+  },
+  "inventoryAddresses": {
+    "title": "Inventory addresses"
+  },
+  "inventoryReports": {
+    "description": "Overview of stock availability, inventory value, and storage locations",
+    "title": "Inventory reports"
+  },
+  "inventoryStockManagement": {
+    "title": "Stock management"
+  },
+  "inventoryWithdrawalPriority": {
+    "title": "Priority for withdrawal from warehouse"
+  },
+  "invoiceNotReady": {
+    "title": "invoice not ready"
+  },
+  "invoiceSettings": {
+    "title": "Invoice settings"
+  },
+  "invoiceTemplates": {
+    "description": "Customize your invoice by adjusting templates, and fields to fit your needs",
+    "title": "Invoice templates"
+  },
+  "landingPage": {
+    "title": "Landing page"
+  },
+  "languagesCurrenciesSettings": {
+    "title": "Store language and currencies"
+  },
+  "logisticActivateLogistics": {
+    "title": "Manage custom shipping methods"
+  },
+  "logisticActivation": {
+    "title": "Logistics"
+  },
+  "logistics": {
+    "title": "Logistics"
+  },
+  "logisticsActivateLocalDelivery": {
+    "title": "Activate local delivery"
+  },
+  "logisticsAddRate": {
+    "title": "Add new rate"
+  },
+  "logisticsEditRate": {
+    "title": "Edit rate"
+  },
+  "logisticsOtherShippingProviderDetails": {
+    "title": "Details"
+  },
+  "logisticsOtherShippingProviderDetailsTier": {
+    "title": "Service Activation"
+  },
+  "logisticsZoneCreate": {
+    "title": "Create zone"
+  },
+  "logisticsZoneEdit": {
+    "title": "Edit zone"
+  },
+  "logisticsZones": {
+    "description": "Manage delivery and pickup coverage areas",
+    "title": "Zones"
+  },
+  "loyaltyProgram": {
+    "title": "Loyalty program"
+  },
+  "loyaltyProgramContent": {
+    "description": "Add loyalty program definition",
+    "title": "Loyalty program content"
+  },
+  "loyaltyPrograms": {
+    "title": "Loyalty programs"
+  },
+  "manageCustomShippingMethods": {
+    "title": "Manage custom shipping methods"
+  },
+  "manageOtherShippingProviders": {
+    "title": "External integrations"
+  },
+  "manageShippingMethods": {
+    "title": "Manage shipping methods"
+  },
+  "marketAppOverview": {
+    "title": "Overview"
+  },
+  "marketAppPlans": {
+    "title": "Subscription plans"
+  },
+  "marketAppSolution": {
+    "title": "Solution"
+  },
+  "marketApps": {
+    "title": "App market"
+  },
+  "marketAppsBrowse": {
+    "title": "Browse apps"
+  },
+  "marketMobileAppBanner": {
+    "title": "Mobile app"
+  },
+  "marketMobileAppPushNotifications": {
+    "title": "Mobile app"
+  },
+  "marketMyApps": {
+    "title": "My apps"
+  },
+  "marketThemeView": {
+    "title": "Overview"
+  },
+  "marketThemes": {
+    "title": "Themes"
+  },
+  "marketThemesBrowse": {
+    "title": "Browse all themes"
+  },
+  "marketing": {
+    "title": "Marketing"
+  },
+  "marketingCampaignCreate": {
+    "title": "Create SMS marketing campaign"
+  },
+  "marketingCampaignEdit": {
+    "title": "Edit SMS marketing campaign"
+  },
+  "marketingCampaignSMSView": {
+    "title": "SMS marketing campaign"
+  },
+  "marketingCampaignView": {
+    "title": "Marketing campaign"
+  },
+  "marketingCampaignWhatsappCreate": {
+    "title": "Create WhatsApp marketing campaign"
+  },
+  "marketingCampaignWhatsappEdit": {
+    "title": "Edit WhatsApp marketing campaign"
+  },
+  "marketingCampaignWhatsappView": {
+    "title": "View WhatsApp marketing campaign"
+  },
+  "marketingCampaigns": {
+    "description": "Create SMS campaigns to engage customers, and drive sales.",
+    "title": "Marketing Campaign"
+  },
+  "marketplaceConnectActivation": {
+    "title": "Marketplace activation"
+  },
+  "marketplaceConnectAdd": {
+    "title": "Add new marketplace"
+  },
+  "marketplaceConnectGuideLines": {
+    "title": "Marketplace guideline"
+  },
+  "marketplaceConnectHome": {
+    "title": "Marketplaces"
+  },
+  "marketplaceConnectInventoryManagement": {
+    "title": "Inventory management"
+  },
+  "marketplaceConnectInventoryManagementSettings": {
+    "title": "General Inventory syncing configuration"
+  },
+  "marketplaceConnectMarketplaces": {
+    "title": "Marketplace"
+  },
+  "marketplaceConnectOrders": {
+    "title": "Order management"
+  },
+  "marketplaceConnectPriceConfiguration": {
+    "title": "Price configuration"
+  },
+  "marketplaceConnectPriceManagement": {
+    "title": "Price management"
+  },
+  "marketplaceConnectProducts": {
+    "title": "Product management"
+  },
+  "marketplaceConnectSettings": {
+    "title": "Settings"
+  },
+  "marketplaces": {
+    "title": "Marketplaces"
+  },
+  "mazeed": {
+    "title": "Mazeed"
+  },
+  "mazeedManagement": {
+    "title": "Mazeed management"
+  },
+  "mazeedOrders": {
+    "title": "Mazeed orders"
+  },
+  "mazeedProducts": {
+    "title": "Mazeed products"
+  },
+  "mazeedSettlementInvoice": {
+    "title": "Settlement invoice"
+  },
+  "mazeedSettlements": {
+    "title": "Mazeed settlements"
+  },
+  "menu": {
+    "title": "Menu"
+  },
+  "metafields": {
+    "title": "Custom fields"
+  },
+  "metafieldsCreate": {
+    "title": "Create custom field"
+  },
+  "metafieldsEdit": {
+    "title": "Edit custom field"
+  },
+  "mobileApp": {
+    "title": "Mobile app"
+  },
+  "modificationRcords": {
+    "description": "View your products by modifying data and appearances",
+    "title": "Inventory stock changes"
+  },
+  "mokafaa": {
+    "description": "Provide your customers with the most trusted loyalty program from Al Rajhi Bank ‘Mokafaa’ to earn and redeem points in your store.",
+    "title": "Mokafaa program"
+  },
+  "mokafaaProgram": {
+    "title": "Mokafaa program"
+  },
+  "mokafaaProgramContent": {
+    "description": "Add mokafaa program definition",
+    "title": "Mokafaa program content"
+  },
+  "notificationCenter": {
+    "title": "Notification center"
+  },
+  "notificationSettings": {
+    "title": "Notification settings"
+  },
+  "onboardingWizard": {
+    "title": "Onboarding Wizard"
+  },
+  "onlineStoreSettings": {
+    "title": "Settings"
+  },
+  "onlineStoreSettingsBadges": {
+    "title": "Badges"
+  },
+  "onlineStoreSettingsLocation": {
+    "title": "Location"
+  },
+  "options": {
+    "title": "Options library"
+  },
+  "optionsCreate": {
+    "title": "Create option"
+  },
+  "orderDetails": {
+    "i18nTitle": "Order details",
+    "ngoI18nTitle": "Donation details",
+    "ngoTitle": "Donation details #{{id}}",
+    "title": "Order details #{{id}}"
+  },
+  "orderEdit": {
+    "i18nTitle": "Edit order",
+    "ngoI18nTitle": "Edit donation",
+    "ngoTitle": "Edit donation #{{id}}",
+    "title": "Edit order #{{id}}"
+  },
+  "orderInvoices": {
+    "ngoTitle": "Donation invoices",
+    "title": "Order invoices"
+  },
+  "orderReverse": {
+    "i18nTitle": "Return order",
+    "title": "Return order #{{id}}"
+  },
+  "orderSummary": {
+    "title": "Order confirmation document"
+  },
+  "orders": {
+    "description": "Manage all of your store's orders",
+    "ngoDescription": "Manage all of your store's donations",
+    "ngoTitle": "Donations",
+    "title": "Orders"
+  },
+  "otherShippingProviders": {
+    "title": "Other shipping providers"
+  },
+  "paymentMethods": {
+    "title": "Payment methods"
+  },
+  "payments": {
+    "title": "Payments"
+  },
+  "payoutDetails": {
+    "title": "Payout details"
+  },
+  "payouts": {
+    "title": "Payouts"
+  },
+  "posGeneralSettings": {
+    "title": "General settings"
+  },
+  "posSettings": {
+    "title": "POS settings"
+  },
+  "preorderCampaigns": {
+    "title": "Preorder campaigns"
+  },
+  "productCreate": {
+    "title": "{{ type }}"
+  },
+  "productLandingPages": {
+    "title": "Product landing pages"
+  },
+  "productLandingPagesBrowse": {
+    "title": "Browse Landing Pages"
+  },
+  "productSorting": {
+    "title": "Product sorting"
+  },
+  "productVariantCreate": {
+    "title": "Add new variant"
+  },
+  "products": {
+    "description": "All products",
+    "ngoDescription": "All donation opportunities",
+    "ngoTitle": "Donation opportunities",
+    "title": "Products"
+  },
+  "productsBulkEdit": {
+    "title": "Bulk edit products"
+  },
+  "productsCreate": {
+    "title": "Create product"
+  },
+  "productsEdit": {
+    "title": "Edit product details"
+  },
+  "productsTrashBin": {
+    "title": "Trash bin"
+  },
+  "qitaf": {
+    "description": "Provide your customers with the most popular loyalty program from STC 'Qitaf' to redeem points for purchases from your store",
+    "title": "Qitaf program"
+  },
+  "qitafProgram": {
+    "title": "Qitaf program"
+  },
+  "questions": {
+    "title": "Questions"
+  },
+  "questionsCreate": {
+    "title": "Create Question"
+  },
+  "referrals": {
+    "title": "Customer referrals program"
+  },
+  "referralsActivate": {
+    "title": "Activate customer referrals program"
+  },
+  "reportsSales": {
+    "description": "Monthly breakdown of orders, revenue, costs, and shipping performance",
+    "ngoDescription": "Monthly breakdown of donations, revenue, costs, and shipping performance",
+    "ngoTitle": "Donation reports",
+    "title": "Sales reports"
+  },
+  "requestVatInvoice": {
+    "title": "Request VAT invoice"
+  },
+  "reviews": {
+    "description": "Enable customers to leave product reviews that help other shoppers",
+    "title": "Reviews"
+  },
+  "root": {
+    "title": "Zid"
+  },
+  "seoEnhancement": {
+    "description": "Help customers and AI agents find your store",
+    "llmsDescription": "Manage the information in your llms.txt file to help AI platforms better understand your store and provide accurate responses to customers.",
+    "llmsTitle": "llms.txt",
+    "productsFeedsDescription": "Generate product feeds to connect your store with Snapchat, TikTok, Google, Meta, X, and OpenAI.",
+    "productsFeedsTitle": "Products feed",
+    "robotsDescription": "Control which parts of your store search engines can see by editing your Robots.txt file.",
+    "robotsTitle": "Robot.txt",
+    "seoSettings": "SEO Settings",
+    "storePagesDescription": "Customize how Zid-generated pages appear in search results.",
+    "storePagesTitle": "Store pages",
+    "subTitle": "Settings",
+    "title": "SEO"
+  },
+  "serviceLevelDetails": {
+    "title": "Shipping methods"
+  },
+  "services": {
+    "title": "Services"
+  },
+  "settings": {
+    "title": "Settings"
+  },
+  "settingsAbandonedCarts": {
+    "ngoTitle": "Abandoned donation reminders",
+    "title": "Abandoned cart reminders"
+  },
+  "settingsAbandonedCartsCreate": {
+    "ngoTitle": "Create abandoned donation reminder",
+    "title": "Create abandoned cart reminder"
+  },
+  "settingsAbandonedCartsEdit": {
+    "ngoTitle": "Edit abandoned donation reminder",
+    "title": "Edit abandoned carts reminder"
+  },
+  "settingsAccount": {
+    "title": "Account settings"
+  },
+  "settingsCommunicationsOrders": {
+    "title": "Order notifications"
+  },
+  "settingsCommunicationsQuestions": {
+    "title": "Product question notification settings"
+  },
+  "settingsCommunicationsSenderName": {
+    "title": "Custom sender name"
+  },
+  "settingsComplaintsAndSuggestions": {
+    "description": "Add complaints & suggestions information for your store",
+    "title": "Complaints and suggestions"
+  },
+  "settingsConstraints": {
+    "title": "Shipping and payment constraints"
+  },
+  "settingsConstraintsEdit": {
+    "title": "Edit constraint"
+  },
+  "settingsConstraintsPaymentCreate": {
+    "title": "Manage payment constraint"
+  },
+  "settingsConstraintsShippingCreate": {
+    "title": "Manage shipping constraint"
+  },
+  "settingsDirectApiIntegrations": {
+    "title": "API integrations"
+  },
+  "settingsDomains": {
+    "description": "Manage your online store domain",
+    "title": "Domains list"
+  },
+  "settingsDomainsLinkExisting": {
+    "title": "Link existing domain"
+  },
+  "settingsDomainsView": {
+    "description": "Manage your online store link",
+    "title": "Domain details"
+  },
+  "settingsExchangeAndReturns": {
+    "title": "Exchange and returns"
+  },
+  "settingsGifting": {
+    "description": "Enable your customers to send gifts to other people on their behalf",
+    "title": "Gift options"
+  },
+  "settingsGiftingSettings": {
+    "tabs": {
+      "giftProducts": "Gift add-ons",
+      "giftingCategories": "Gift categories",
+      "globalSettings": "Global settings",
+      "messageTemplates": "Message templates"
+    },
+    "title": "Gifting"
+  },
+  "settingsLegalPages": {
+    "title": "Legal pages"
+  },
+  "settingsLicenses": {
+    "description": "Add licenses information for your store",
+    "title": "Licenses"
+  },
+  "settingsMarketAddProducts": {
+    "title": "Add products to market",
+    "titleWithMarket": "\"{{name}}\" products"
+  },
+  "settingsMarketCreate": {
+    "title": "Create market"
+  },
+  "settingsMarketManage": {
+    "title": "Market manage"
+  },
+  "settingsMarkets": {
+    "title": "Markets"
+  },
+  "settingsOrderProducts": {
+    "title": "Order and product properties"
+  },
+  "settingsPrivacyPolicy": {
+    "description": "Privacy policy for your store",
+    "title": "Privacy policy"
+  },
+  "settingsSecurity": {
+    "description": "Manage your store security settings",
+    "title": "Security settings"
+  },
+  "settingsStaffNotifications": {
+    "title": "Staff notifications"
+  },
+  "settingsTeam": {
+    "title": "Team members"
+  },
+  "settingsTeamCreateMember": {
+    "title": "Team member"
+  },
+  "settingsTeamEditMember": {
+    "title": "Team member"
+  },
+  "settingsTeamGroups": {
+    "title": "Groups"
+  },
+  "settingsTeamGroupsCreate": {
+    "title": "Create group"
+  },
+  "settingsTeamGroupsEdit": {
+    "title": "Edit group"
+  },
+  "settingsTeamLogs": {
+    "title": "Audit Log"
+  },
+  "settingsTermsAndConditions": {
+    "description": "By clicking, you confirm your acceptance of the contract and agree to pay.",
+    "title": "Terms and conditions"
+  },
+  "settingsUrlRedirects": {
+    "title": "URL redirects"
+  },
+  "settingsWorkTime": {
+    "description": "Manage your store closure or stop receiving orders. You can browse your store during the closure period through",
+    "title": "Hours of operation"
+  },
+  "settingsZatcaConnection": {
+    "title": "Fatoora platform integration"
+  },
+  "settingsZatcaIntegration": {
+    "title": "Fatoora platform integration"
+  },
+  "shippingMethodDetails": {
+    "title": "Shipping method details"
+  },
+  "similarProducts": {
+    "description": "Customize similar products that will appear at the bottom of the product page",
+    "title": "Customize similar products"
+  },
+  "stockNotifications": {
+    "description": "Notify customers when items are back in stock",
+    "title": "Stock notifications"
+  },
+  "stockNotificationsSettings": {
+    "title": "Stock notification settings"
+  },
+  "storeNameInSMS": {
+    "title": "SMS Settings"
+  },
+  "subscription": {
+    "title": "Subscription"
+  },
+  "subscriptionPlans": {
+    "title": "Subscription plans"
+  },
+  "suspended": {
+    "title": "Suspended"
+  },
+  "taxCreate": {
+    "title": "Add new country tax"
+  },
+  "taxEdit": {
+    "title": "Edit country tax"
+  },
+  "taxSettings": {
+    "title": "Tax settings"
+  },
+  "themeEditor": {
+    "title": "Theme editor"
+  },
+  "ticketing": {
+    "title": "Merchant support"
+  },
+  "ticketingCreate": {
+    "title": "Create ticket"
+  },
+  "ticketingView": {
+    "title": "View ticket {{id}}"
+  },
+  "transactionHistory": {
+    "title": "Transaction history"
+  },
+  "transactions": {
+    "description": "Manage all transactions from your store",
+    "title": "Transactions"
+  },
+  "transactionsDetails": {
+    "title": "View transaction {{id}}"
+  },
+  "transferRequests": {
+    "title": "Transfer requests"
+  },
+  "transferRequestsCreate": {
+    "description": "You can specify the location of the basic inventory and the inventory to which the transfer will be made",
+    "title": "Create transfer request"
+  },
+  "transferRequestsReceive": {
+    "description": "You can specify the location of the basic inventory and the inventory to which the transfer will be made",
+    "title": "Receive transfer request"
+  },
+  "transferRequestsView": {
+    "description": "You can specify the location of the basic inventory and the inventory to which the transfer will be made",
+    "title": "View transfer request"
+  },
+  "vetrinOnlyWarning": {
+    "action": "View themes",
+    "title": "This product type is only supported in the new theme system, you can access the new themes from here"
+  },
+  "walletDetails": {
+    "title": "Wallet details"
+  },
+  "walletFunds": {
+    "title": "Add funds to wallet"
+  },
+  "walletVerify": {
+    "title": "Verify wallet"
+  },
+  "walletWithdraw": {
+    "title": "Withdraw from wallet"
+  },
+  "whatsapp": {
+    "title": "WhatsApp"
+  },
+  "whatsappAutoReply": {
+    "description": "Send automatic message to engage customers instantly when a new chat starts.",
+    "title": "Automatic reply"
+  },
+  "whatsappFlows": {
+    "description": "Send automatic message to engage customers instantly when a new chat starts.",
+    "title": "Automatic replies"
+  },
+  "whatsappFlowsEditor": {
+    "title": "Automatic replies editor"
+  },
+  "whatsappLiveChat": {
+    "title": "Live chat"
+  },
+  "whatsappMain": {
+    "title": "WhatsApp Business"
+  },
+  "whatsappMessageLogs": {
+    "title": "Message logs"
+  },
+  "whatsappMessageLogsView": {
+    "title": "Message log details"
+  },
+  "whatsappOptOut": {
+    "description": "Automatically let customers unsubscribe from WhatsApp messages by replying with a keyword.",
+    "title": "Unsubscribe from messages"
+  },
+  "whatsappSettings": {
+    "title": "WhatsApp settings"
+  },
+  "whatsappSettingsAccountDetails": {
+    "description": "Manage your account info and business details used in WhatsApp messages.",
+    "title": "Account details"
+  },
+  "whatsappSettingsAutoReply": {
+    "description": "Send automatic message to engage customers instantly when a new chat starts.",
+    "title": "Automatic replies"
+  },
+  "whatsappSettingsQuickReplies": {
+    "description": "Create and manage saved replies to respond to your customers faster.",
+    "title": "Quick replies"
+  },
+  "whatsappSettingsTags": {
+    "description": "Manage your tags to organize and track conversations and customers.",
+    "title": "Tags"
+  },
+  "whatsappStoreWidget": {
+    "title": "Store widget"
+  },
+  "whatsappSubscription": {
+    "title": "Zid WhatsApp subscription options"
+  },
+  "zidpayOnboarding": {
+    "description": "To activate Zid Payments and receive online payments immediately, please review the following data",
+    "title": "Activate Zid Payments"
+  },
+  "zidpayOnboardingNafath": {
+    "description": "To complete the verification process, please enter the nafath application and choose the code",
+    "title": "Nafath check"
+  },
+  "zidpayOtherPaymentProviders": {
+    "title": "Other payment providers"
+  },
+  "zidpayPaymentAccount": {
+    "title": "Zid payments account"
+  },
+  "zidpayPaymentLinkDetails": {
+    "title": "Payment link details"
+  },
+  "zidpaySettings": {
+    "title": "Manage Zid Payments"
+  },
+  "zidpos": {
+    "title": "ZidPOS"
+  },
+  "zidposFreemium": {
+    "title": "Start Freemium"
+  },
+  "zidposReports": {
+    "title": "Reports"
+  },
+  "zidposSales": {
+    "title": "Sales"
+  },
+  "zidposSubscribe": {
+    "title": "Add New Cashier"
+  },
+  "zidshipPrepaidPackages": {
+    "title": "Label packages"
+  },
+  "zidshipPrepaidPackagesReports": {
+    "title": "Prepaid label packages report"
+  },
+  "zidshipPricingZoneCreate": {
+    "title": "Create shipping zone"
+  },
+  "zidshipPricingZoneEdit": {
+    "title": "Edit pricing zone"
+  },
+  "zidshipSettings": {
+    "description": "Customize and manage all aspects of your store’s shipping experience.",
+    "title": "Logistics settings"
+  },
+  "zidshipSettingsCreateBankAccount": {
+    "title": "Create bank account"
+  },
+  "zidshipSettingsEditBankAccount": {
+    "title": "Edit bank account"
+  },
+  "zidshipSettingsFreeShipping": {
+    "description": "Define when free shipping is offered.",
+    "title": "Free shipping"
+  },
+  "zidshipSettingsShippingConditions": {
+    "description": "Set rules or limitations that determine when specific shipping methods are shown to customers.",
+    "title": "Shipping conditions"
+  },
+  "zidshipSettingsShippingPrioritization": {
+    "description": "Customize the order of shipping methods displayed to customers during checkout.",
+    "title": "Shipping prioritization"
+  },
+  "zidshipSettingsShippingSurvey": {
+    "description": "Enable shipping surveys to collect insights on delivery speed, packaging quality, and overall satisfaction.",
+    "title": "Shipping survey"
+  },
+  "zidshipSettlementsLog": {
+    "title": "Transactions log"
+  },
+  "zidshipShipments": {
+    "title": "Shipments"
+  },
+  "zidshipShippingTransactions": {
+    "title": "Shipping transactions"
+  }
+}

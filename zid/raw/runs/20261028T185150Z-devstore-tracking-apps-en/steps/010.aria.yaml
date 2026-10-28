@@ -1,0 +1,132 @@
+- banner:
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/3277610
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "KWD 0"
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+- navigation "Primary navigation":
+  - button "Home"
+  - button "Apps" [pressed]
+  - button "Settings"
+  - separator
+- list:
+  - link "App Market":
+    - /url: /en-sa/stores/3277610/apps
+  - link "My apps":
+    - /url: /en-sa/stores/3277610/apps/installed
+  - link "Categories":
+    - /url: /en-sa/stores/3277610/apps/browse
+- main:
+  - heading "Overview" [level=5]
+  - button "Activate"
+  - img
+  - heading "Google Analytics" [level=6]
+  - text: Free App
+  - iframe
+  - img "slide-0"
+  - button
+  - button
+  - paragraph: A service that enables you to collect and analyze data from your store easily and smoothly
+  - text: "By: Zid App Market Analytics & Reporting"
+  - tablist:
+    - tab "App details" [selected]
+    - tab "Contact details"
+    - tab "Ratings & reviews"
+  - separator
+  - heading "Overview" [level=6]
+  - paragraph:
+    - strong: "App overview:"
+  - paragraph: "The Google Analytics app helps you understand your store visitors’ behavior through accurate, detailed data, such as:"
+  - paragraph: "- The number of visitors and visits during a specific time period"
+  - paragraph: "- The age group and gender of your store visitors"
+  - paragraph: "- The devices and browsers used to access your store"
+  - paragraph: "- Traffic sources (search engines, social media, ads, and more)"
+  - paragraph:
+    - strong: "How to connect:"
+  - paragraph:
+    - text: To learn how to activate the app and link it to your store,
+    - strong:
+      - link "click here.":
+        - /url: https://help.zid.sa/google-analytics/
+  - heading "App activation" [level=6]
+  - paragraph: Enter your account code to activate the application
+  - text: Account code
+  - textbox "Account code":
+    - /placeholder: "Ex: UA-xxxxxxxx-x"
+    - text: UA-00000000-1
+  - button "Activate" [disabled]
+  - heading "Suggested apps" [level=6]
+  - link "Qumra 1 Star 5.0 3 Day Free Trial Detailed indicators of your store performance from the first day it started":
+    - /url: /en-sa/stores/3277610/apps/830
+    - img
+    - paragraph: Qumra
+    - img "1 Star"
+    - text: "5.0"
+    - img
+    - text: 3 Day Free Trial Detailed indicators of your store performance from the first day it started
+  - separator
+  - button "Add to compare"
+  - link "Qaema 1 Star 5.0 From KWD 5.000 / 1 Month Qaema streamlines your business operations for ease and efficiency.":
+    - /url: /en-sa/stores/3277610/apps/3004
+    - img
+    - paragraph: Qaema
+    - img "1 Star"
+    - text: "5.0"
+    - img
+    - text: From KWD 5.000 / 1 Month Qaema streamlines your business operations for ease and efficiency.
+  - separator
+  - button "Add to compare"
+  - link "INFN Analytics. 1 Star 5.0 14 Day Free Trial INFN delivers comprehensive analytics and insights for Zid stores to maximize sales growth":
+    - /url: /en-sa/stores/3277610/apps/4224
+    - img
+    - paragraph: INFN Analytics.
+    - img "1 Star"
+    - text: "5.0"
+    - img
+    - text: 14 Day Free Trial INFN delivers comprehensive analytics and insights for Zid stores to maximize sales growth
+  - separator
+  - button "Add to compare"
+  - 'link "Datajar 1 Star 5.0 14 Day Free Trial Your AI analyst for Zid: sales, profit and customer analytics in Arabic or English."':
+    - /url: /en-sa/stores/3277610/apps/7087
+    - img
+    - paragraph: Datajar
+    - img "1 Star"
+    - text: "5.0"
+    - img
+    - text: "14 Day Free Trial Your AI analyst for Zid: sales, profit and customer analytics in Arabic or English."
+  - separator
+  - button "Add to compare"
+  - link "Nabd - Live Sales Screen 1 Star 5.0 7 Day Free Trial Live sales screen for your Zid store on the office TV, with bonus levels that motivate your team.":
+    - /url: /en-sa/stores/3277610/apps/8057
+    - img
+    - paragraph: Nabd - Live Sales Screen
+    - img "1 Star"
+    - text: "5.0"
+    - img
+    - text: 7 Day Free Trial Live sales screen for your Zid store on the office TV, with bonus levels that motivate your team.
+  - separator
+  - button "Add to compare"
+  - link "Tajer report 1 Star 5.0 30 Day Free Trial app provides you with most important performance indicators of your store regularly through email":
+    - /url: /en-sa/stores/3277610/apps/2107
+    - img
+    - paragraph: Tajer report
+    - img "1 Star"
+    - text: "5.0"
+    - img
+    - text: 30 Day Free Trial app provides you with most important performance indicators of your store regularly through email
+  - separator
+  - text: 10% off
+  - button "Add to compare"
+  - link "View all":
+    - /url: /en-sa/stores/3277610/apps/browse/
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

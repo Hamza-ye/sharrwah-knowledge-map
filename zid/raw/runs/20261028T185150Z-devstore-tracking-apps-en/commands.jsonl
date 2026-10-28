@@ -1,0 +1,20 @@
+{"intent":"the markets page of the development store","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/3277610/settings/markets","readyTimeout":30000,"settleMs":3000}
+{"intent":"create a second market as the dashboard create form does (POST v1/markets): Kuwait, KWD, published","do":"evaluate","js":"(async () => { const h = {\"accept\": \"application/json\", \"content-type\": \"application/json\", \"accept-language\": \"en\", \"role\": localStorage.getItem(\"role\"), \"store-id\": localStorage.getItem(\"storeId\"), \"x-manager-token\": localStorage.getItem(\"_t\")}; const r = await fetch(\"https://hermod.zid.sa/v1/markets\", {method: \"POST\", headers: h, credentials: \"include\", body: JSON.stringify({\"name\": {\"ar\": \"الكويت\", \"en\": \"Kuwait\"}, \"country_codes\": [\"KW\"], \"main_currency\": \"KWD\", \"is_primary\": false, \"is_published\": true})}); return {status: r.status, body: await r.text()}; })()","readyTimeout":2000,"settleMs":500}
+{"intent":"the App market","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/3277610/apps","readyTimeout":30000,"settleMs":4000,"fullPage":true}
+{"intent":"Browse apps","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/3277610/apps/browse","readyTimeout":30000,"settleMs":4000,"fullPage":true}
+{"intent":"search the App market for Google Analytics","do":"fill","role":"textbox","name":"Search by app name","value":"Google Analytics","readyTimeout":3000,"settleMs":4000}
+{"intent":"the Google Analytics app page","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/3277610/apps/16","readyTimeout":30000,"settleMs":4000,"fullPage":true}
+{"intent":"a placeholder account code","do":"fill","role":"textbox","name":"Ex: UA-xxxxxxxx-x","value":"UA-00000000-1","readyTimeout":2000,"settleMs":500}
+{"intent":"Activate Google Analytics","do":"click","css":"main button:has-text(\"Activate\") >> nth=1","readyTimeout":3000,"settleMs":4000,"fullPage":true}
+{"intent":"a placeholder account code","do":"fill","css":"#input-code","value":"UA-00000000-1","readyTimeout":2000,"settleMs":800}
+{"intent":"Activate Google Analytics","do":"click","css":"#input-code >> xpath=ancestor::*[.//button][1]//button[normalize-space()=\"Activate\"]","readyTimeout":3000,"settleMs":4000,"fullPage":true}
+{"intent":"Activate Google Analytics (the activation form button)","do":"click","role":"button","name":"Activate","exact":true,"nth":1,"readyTimeout":3000,"settleMs":4000,"fullPage":true}
+{"intent":"the app header Activate","do":"click","role":"button","name":"Activate","exact":true,"nth":0,"readyTimeout":3000,"settleMs":4000,"fullPage":true}
+{"intent":"a placeholder GA4 measurement id","do":"fill","css":"#input-code","value":"G-CAPTURE001","readyTimeout":2000,"settleMs":1000}
+{"intent":"Activate Google Analytics with the code","do":"click","role":"button","name":"Activate","exact":true,"nth":1,"readyTimeout":3000,"settleMs":5000,"fullPage":true}
+{"intent":"search the App market for Tag Manager","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/3277610/apps/browse?search=Tag+Manager","readyTimeout":30000,"settleMs":4000}
+{"intent":"search the App market for Facebook","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/3277610/apps/browse?search=Facebook","readyTimeout":30000,"settleMs":4000}
+{"intent":"the Google Tag Manager app page","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/3277610/apps/28","readyTimeout":30000,"settleMs":4000,"fullPage":true}
+{"intent":"the Meta pixel app page","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/3277610/apps/29","readyTimeout":30000,"settleMs":4000,"fullPage":true}
+{"intent":"the TikTok pixel app page","do":"goto","url":"https://dashboard.zid.sa/en-sa/stores/3277610/apps/35","readyTimeout":30000,"settleMs":4000,"fullPage":true}
+{"do":"close"}

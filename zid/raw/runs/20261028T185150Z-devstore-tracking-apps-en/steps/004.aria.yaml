@@ -1,0 +1,277 @@
+- banner:
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/3277610
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "KWD 0"
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+- navigation "Primary navigation":
+  - button "Home"
+  - button "Apps" [pressed]
+  - button "Settings"
+  - separator
+- list:
+  - link "App Market":
+    - /url: /en-sa/stores/3277610/apps
+  - link "My apps":
+    - /url: /en-sa/stores/3277610/apps/installed
+  - link "Categories":
+    - /url: /en-sa/stores/3277610/apps/browse
+  - link " Marketing & Growth":
+    - /url: /en-sa/stores/3277610/apps/browse?tab=51
+  - link " AI & Analytics":
+    - /url: /en-sa/stores/3277610/apps/browse?tab=69
+  - link " Store & Customer Experience":
+    - /url: /en-sa/stores/3277610/apps/browse?tab=67
+  - link " Finance & Payments":
+    - /url: /en-sa/stores/3277610/apps/browse?tab=72
+  - link " Operations & Store Management":
+    - /url: /en-sa/stores/3277610/apps/browse?tab=78
+  - link " Sales & Conversion":
+    - /url: /en-sa/stores/3277610/apps/browse?tab=59
+- main:
+  - button
+  - heading "Browse apps" [level=5]
+  - heading "App market" [level=6]
+  - textbox "Search by app name"
+  - button
+  - separator
+  - link "Ziadah AI Upsell Boost your order with 15 ways using AI-powered recommendations personalized for every customer Cross-sell & Upsell 1 Star 5.0 7 Day Free Trial Add to compare":
+    - /url: /en-sa/stores/3277610/apps/1826
+    - img
+    - paragraph: Ziadah AI Upsell
+    - separator
+    - text: Boost your order with 15 ways using AI-powered recommendations personalized for every customer Cross-sell & Upsell
+    - separator
+    - img "1 Star"
+    - text: 5.0 7 Day Free Trial
+    - button "Add to compare"
+  - link "Zid AI Connector | MCP Enable your AI assistant to manage your Zid store through a simple, secure connection. AI & Assistants 1 Star 5.0 Free App Add to compare":
+    - /url: /en-sa/stores/3277610/apps/4820
+    - img
+    - paragraph: Zid AI Connector | MCP
+    - separator
+    - text: Enable your AI assistant to manage your Zid store through a simple, secure connection. AI & Assistants
+    - separator
+    - img "1 Star"
+    - text: 5.0 Free App
+    - button "Add to compare"
+  - link "Thunder Slash Your Wasted Ad Spend by Up to 50 Precent Tracking & Attribution 1 Star 5.0 30 Day Free Trial Add to compare":
+    - /url: /en-sa/stores/3277610/apps/4035
+    - img
+    - paragraph: Thunder
+    - separator
+    - text: Slash Your Wasted Ad Spend by Up to 50 Precent Tracking & Attribution
+    - separator
+    - img "1 Star"
+    - text: 5.0 30 Day Free Trial
+    - button "Add to compare"
+  - link "53% off Shrinkit Confirm COD orders and recover abandoned carts automatically via WhatsApp. Marketing Automation 1 Star 5.0 7 Day Free Trial Add to compare":
+    - /url: /en-sa/stores/3277610/apps/1912
+    - img
+    - text: 53% off
+    - paragraph: Shrinkit
+    - separator
+    - text: Confirm COD orders and recover abandoned carts automatically via WhatsApp. Marketing Automation
+    - separator
+    - img "1 Star"
+    - text: 5.0 7 Day Free Trial
+    - button "Add to compare"
+  - link "40% off Cartat Whatsapp Cartat, your store marketing manager through WhatsApp WhatsApp Marketing 1 Star 4.7 From KWD 10.000 / 1 Month Add to compare":
+    - /url: /en-sa/stores/3277610/apps/1397
+    - img
+    - text: 40% off
+    - paragraph: Cartat Whatsapp
+    - separator
+    - text: Cartat, your store marketing manager through WhatsApp WhatsApp Marketing
+    - separator
+    - img "1 Star"
+    - text: 4.7 From KWD 10.000 / 1 Month
+    - button "Add to compare"
+  - link "Convertedin Automate targeting and promoting your customers automatically with artificial intelligence. Marketing Automation 1 Star 5.0 From KWD 582.000 / 1 Month Add to compare":
+    - /url: /en-sa/stores/3277610/apps/974
+    - img
+    - paragraph: Convertedin
+    - separator
+    - text: Automate targeting and promoting your customers automatically with artificial intelligence. Marketing Automation
+    - separator
+    - img "1 Star"
+    - text: 5.0 From KWD 582.000 / 1 Month
+    - button "Add to compare"
+  - link "Whatsapp inquiry app You can add a button on the product page that allows customers to inquire via WhatsApp. Customer Support & Chat 1 Star 4.8 Free App Add to compare":
+    - /url: /en-sa/stores/3277610/apps/46
+    - img
+    - paragraph: Whatsapp inquiry app
+    - separator
+    - text: You can add a button on the product page that allows customers to inquire via WhatsApp. Customer Support & Chat
+    - separator
+    - img "1 Star"
+    - text: 4.8 Free App
+    - button "Add to compare"
+  - link "LetsBot WhatsApp Alerts WhatsApp order alerts, abandoned cart reminders, review requests, AI chatbot and live chat WhatsApp Marketing 1 Star 5.0 14 Day Free Trial Add to compare":
+    - /url: /en-sa/stores/3277610/apps/2382
+    - img
+    - paragraph: LetsBot WhatsApp Alerts
+    - separator
+    - text: WhatsApp order alerts, abandoned cart reminders, review requests, AI chatbot and live chat WhatsApp Marketing
+    - separator
+    - img "1 Star"
+    - text: 5.0 14 Day Free Trial
+    - button "Add to compare"
+  - link "Lucky Wheel Allow customers to spin the lucky wheel and convert them to leads. Offers & Promotions 1 Star 5.0 From KWD 3.000 / 1 Month Add to compare":
+    - /url: /en-sa/stores/3277610/apps/1057
+    - img
+    - paragraph: Lucky Wheel
+    - separator
+    - text: Allow customers to spin the lucky wheel and convert them to leads. Offers & Promotions
+    - separator
+    - img "1 Star"
+    - text: 5.0 From KWD 3.000 / 1 Month
+    - button "Add to compare"
+  - link "OpenAI Ads Measure the sales your ChatGPT ads bring to your store, from first visit to completed order. Tracking & Attribution 1 Star 5.0 Free App Add to compare":
+    - /url: /en-sa/stores/3277610/apps/8098
+    - img
+    - paragraph: OpenAI Ads
+    - separator
+    - text: Measure the sales your ChatGPT ads bring to your store, from first visit to completed order. Tracking & Attribution
+    - separator
+    - img "1 Star"
+    - text: 5.0 Free App
+    - button "Add to compare"
+  - link "TikTok pixel تيك توك بكسل خدمة تمكنك من تحسين وقياس فاعلية الحملات الإعلانية لزوار متجرك Tracking & Attribution 1 Star 4.8 Free App Add to compare":
+    - /url: /en-sa/stores/3277610/apps/35
+    - img
+    - paragraph: TikTok pixel
+    - separator
+    - text: تيك توك بكسل خدمة تمكنك من تحسين وقياس فاعلية الحملات الإعلانية لزوار متجرك Tracking & Attribution
+    - separator
+    - img "1 Star"
+    - text: 4.8 Free App
+    - button "Add to compare"
+  - link "X pixel improve and measure the effectiveness of advertising campaigns for your store visitors Tracking & Attribution 1 Star 4.9 Free App Add to compare":
+    - /url: /en-sa/stores/3277610/apps/41
+    - img
+    - paragraph: X pixel
+    - separator
+    - text: improve and measure the effectiveness of advertising campaigns for your store visitors Tracking & Attribution
+    - separator
+    - img "1 Star"
+    - text: 4.9 Free App
+    - button "Add to compare"
+  - link "Splend App SplendApp is the super-easy solution to get a mobile application on iOS and Android in only 48hrs. Mobile Apps 1 Star 5.0 From KWD 102.000 / 3 Months Add to compare":
+    - /url: /en-sa/stores/3277610/apps/929
+    - img
+    - paragraph: Splend App
+    - separator
+    - text: SplendApp is the super-easy solution to get a mobile application on iOS and Android in only 48hrs. Mobile Apps
+    - separator
+    - img "1 Star"
+    - text: 5.0 From KWD 102.000 / 3 Months
+    - button "Add to compare"
+  - link "Namaa AI-powered upsells. Smart product recommendations for every customer, automatically Cross-sell & Upsell 1 Star 5.0 15 Day Free Trial Add to compare":
+    - /url: /en-sa/stores/3277610/apps/6038
+    - img
+    - paragraph: Namaa
+    - separator
+    - text: AI-powered upsells. Smart product recommendations for every customer, automatically Cross-sell & Upsell
+    - separator
+    - img "1 Star"
+    - text: 5.0 15 Day Free Trial
+    - button "Add to compare"
+  - link "Qumra Detailed indicators of your store performance from the first day it started Analytics & Reporting 1 Star 5.0 3 Day Free Trial Add to compare":
+    - /url: /en-sa/stores/3277610/apps/830
+    - img
+    - paragraph: Qumra
+    - separator
+    - text: Detailed indicators of your store performance from the first day it started Analytics & Reporting
+    - separator
+    - img "1 Star"
+    - text: 5.0 3 Day Free Trial
+    - button "Add to compare"
+  - link "Bookings Easy, All-in-One Management for Booking Products on Zid Stores Bookings & Subscriptions 1 Star 5.0 7 Day Free Trial Add to compare":
+    - /url: /en-sa/stores/3277610/apps/6947
+    - img
+    - paragraph: Bookings
+    - separator
+    - text: Easy, All-in-One Management for Booking Products on Zid Stores Bookings & Subscriptions
+    - separator
+    - img "1 Star"
+    - text: 5.0 7 Day Free Trial
+    - button "Add to compare"
+  - link "15% off Sanid Sanid is an AI-powered sales assistant, helping customers find the right products. Cross-sell & Upsell 1 Star 5.0 2 Day Free Trial Add to compare":
+    - /url: /en-sa/stores/3277610/apps/7426
+    - img
+    - text: 15% off
+    - paragraph: Sanid
+    - separator
+    - text: Sanid is an AI-powered sales assistant, helping customers find the right products. Cross-sell & Upsell
+    - separator
+    - img "1 Star"
+    - text: 5.0 2 Day Free Trial
+    - button "Add to compare"
+  - link "LogesTechs LogesTechs app simplifies the operations for merchants on Zid by integrating with delivery companies Product Sourcing 1 Star 5.0 7 Day Free Trial Add to compare":
+    - /url: /en-sa/stores/3277610/apps/5121
+    - img
+    - paragraph: LogesTechs
+    - separator
+    - text: LogesTechs app simplifies the operations for merchants on Zid by integrating with delivery companies Product Sourcing
+    - separator
+    - img "1 Star"
+    - text: 5.0 7 Day Free Trial
+    - button "Add to compare"
+  - link "Popup Show popups in your store to increase interaction with your ad Offers & Promotions 1 Star 5.0 14 Day Free Trial Add to compare":
+    - /url: /en-sa/stores/3277610/apps/1030
+    - img
+    - paragraph: Popup
+    - separator
+    - text: Show popups in your store to increase interaction with your ad Offers & Promotions
+    - separator
+    - img "1 Star"
+    - text: 5.0 14 Day Free Trial
+    - button "Add to compare"
+  - link "50% off Mystery Box Gamify shopping and boost sales! Engage visitors with exciting Mystery Boxes and rewards. Offers & Promotions 1 Star 5.0 5 Day Free Trial Add to compare":
+    - /url: /en-sa/stores/3277610/apps/6400
+    - img
+    - text: 50% off
+    - paragraph: Mystery Box
+    - separator
+    - text: Gamify shopping and boost sales! Engage visitors with exciting Mystery Boxes and rewards. Offers & Promotions
+    - separator
+    - img "1 Star"
+    - text: 5.0 5 Day Free Trial
+    - button "Add to compare"
+  - text: "Per page:"
+  - combobox "25"
+  - navigation "pagination navigation":
+    - list:
+      - listitem:
+        - button "Go to first page" [disabled]
+      - listitem:
+        - button "Go to previous page" [disabled]
+      - listitem:
+        - button "page 1": "1"
+      - listitem:
+        - button "Go to page 2": "2"
+      - listitem:
+        - button "Go to page 3": "3"
+      - listitem:
+        - button "Go to page 4": "4"
+      - listitem:
+        - button "Go to page 5": "5"
+      - listitem: …
+      - listitem:
+        - button "Go to page 15": "15"
+      - listitem:
+        - button "Go to next page"
+      - listitem:
+        - button "Go to last page"
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

@@ -1,0 +1,118 @@
+{
+  "balances": {
+    "currentOnlineStorePaymentBalance": "Current online store payment balance",
+    "currentOnlineStorePaymentBalanceTooltip": "Collected amounts from your customers which are pending transfer to your bank account",
+    "currentWalletBalance": "Current wallet balance",
+    "title": "Balances"
+  },
+  "billing": {
+    "addOns": "Add-ons",
+    "affiliateBanner": {
+      "action": "Register now",
+      "subtitle": "Tell merchants about Zid and get a reward for every new subscription to Zid packages",
+      "title": "30% commission"
+    },
+    "affiliateDialog": {
+      "answer": "It aims to introduce the Zid platform to every merchant in need of transitioning to modern commerce. You are the soldiers, and your efforts can be tracked, rewarding you with your deserved commission.",
+      "answer_1": "It aims to introduce the Zid platform to every merchant in need of transitioning to modern commerce. You are the soldiers, and your efforts can be tracked, rewarding you with your deserved commission.",
+      "answer_2": "You get 30% for every subscription made through you, and if a seasonal promotional discount is used, your commission is 15%",
+      "answer_3": "Register through the joining link, fill in the necessary information, and you will receive your link and code as an affiliate marketer.",
+      "answer_4": "Our only condition is your desire to join the program!",
+      "answer_5": "Joining is completely free, and you earn commissions and specialized marketing courses with it.",
+      "answer_6": "Every marketer joining the program has a unique link and code. When your customer uses the link or code to register and subscribe to the Zid platform, the process is tracked and assigned to your account.",
+      "answer_7": "We transfer your commissions automatically to your bank account every month.",
+      "answer_8": "Our team is here to answer any questions you may have, no matter how silly you think it is!",
+      "answer_9": "Every marketer has the possibility to have discount , contact us to have it",
+      "commonQuestions": "Common questions",
+      "question": "What is the Zid Affiliate Marketing Program?",
+      "question_1": "What is the Zid Affiliate Marketing Program?",
+      "question_2": "How much is my commission going to be?",
+      "question_3": "How do I become an affiliate marketer?",
+      "question_4": "Are there any joining conditions?",
+      "question_5": "Are there any costs associated with joining the program?",
+      "question_6": "How do I track my sales?",
+      "question_7": "How often are commissions paid?",
+      "question_8": "Is there any support provided to marketers?",
+      "question_9": "Is there a discount code for marketers?"
+    },
+    "browseAddOns": "Browse add-ons",
+    "cardNumber": "**** {{value}}",
+    "currentPackage": "Current package",
+    "description": "Boost your sales with our curated add-ons",
+    "downgradeContinue": "I understand",
+    "downgradeDialog": {
+      "description": "Our team is at your service. Contact us to change or manage your subscription.",
+      "title": "You’re about to change your plan"
+    },
+    "downgradeInformation": "You're moving from the {{currentPackage}} plan to the {{selectedPackage}} plan. Please note that this change will remove access to the following features.",
+    "expiryDate": "Expiry date",
+    "manage": "Manage",
+    "manageSubscription": "Manage your current subscription through the Zid app or your \"{{manager}}\" account",
+    "nextPayment": "Next payment",
+    "optimizeYourPlan": "Optimize your plan",
+    "packageName": "Package name",
+    "purchasePayment": {
+      "deleteSubscriptionConfirmation": "Are you sure you want to delete this subscription?",
+      "expired": "Expired",
+      "nextRenewalDate": "Next renewal date"
+    },
+    "savedCards": "Saved cards",
+    "title": "Add-ons that increase your revenue",
+    "transactionHistory": "Transaction history"
+  },
+  "billingTransactions": "Billing transactions",
+  "columns": {
+    "approvedDate": "Approved date",
+    "balance": "Balance",
+    "createdAt": "Created at",
+    "deservedAmount": "Deserved amount",
+    "feeValue": "Fee value",
+    "installmentPercentage": "Installment percentage",
+    "installmentValue": "Installment value",
+    "invoiceNo": "Invoice no.",
+    "operationType": "Operation type",
+    "operationValue": "Operation value",
+    "orderNumber": "Order number",
+    "paymentNetwork": "Payment network",
+    "paymentStatus": "Payment status",
+    "price": "Price",
+    "processFee": "Process fee",
+    "recurringPaymentFees": "Eshtarek App fee value",
+    "recurringPaymentFeesPct": "Eshtarek App fee",
+    "service": "Service",
+    "transactionReference": "Transaction reference",
+    "valueAddedTax": "Value added tax"
+  },
+  "credits": {
+    "dateOfDepositingTheFinancingAmount": "Date of depositing the financing amount",
+    "defaultAmount": "Default amount",
+    "detailsTitle": "Financing details",
+    "downloadFinancingContract": "Download financing contract",
+    "financingAgreement": "Financing agreement",
+    "fundingAmount": "Funding amount",
+    "itHasBeenPaid": "It has been paid.",
+    "overviewTitle": "Financing repayment overview",
+    "pageIsNotAvailable": {
+      "activateFinancing": "Activate Financing",
+      "description": "you should get financed first before access this page !",
+      "title": "Financing Activation Is Needed !"
+    },
+    "theBankAccount": "The bank account",
+    "theRemainingAmount": "The remaining amount",
+    "theRemainingPeriod": "The remaining period"
+  },
+  "downloadInvoice": "Download invoice",
+  "invoiceNotReady": {
+    "description": "It might take up to 15 days to proceed. ",
+    "title": "Your invoice is being processed in the tax system (Fatora platform)"
+  },
+  "tabs": {
+    "all": "All",
+    "approved": "Approved",
+    "pending": "Pending",
+    "rejected": "Rejected"
+  },
+  "topup": "Add funds",
+  "viewStoreBalance": "View store balance",
+  "viewWalletBalance": "View wallet details"
+}

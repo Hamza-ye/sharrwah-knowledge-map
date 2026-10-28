@@ -1,0 +1,281 @@
+- banner:
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/3277610
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "KWD 0"
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+- navigation "Primary navigation":
+  - button "Home"
+  - button "Apps" [pressed]
+  - button "Settings"
+  - separator
+- list:
+  - link "App Market":
+    - /url: /en-sa/stores/3277610/apps
+  - link "My apps":
+    - /url: /en-sa/stores/3277610/apps/installed
+  - link "Categories":
+    - /url: /en-sa/stores/3277610/apps/browse
+- main:
+  - heading "App market" [level=5]
+  - textbox "Search by categories, name, tags"
+  - text: "Quick preset:"
+  - button "AI-Powered"
+  - button "Made for Zid"
+  - button "Free Tier"
+  - button "WhatsApp"
+  - button "National Day Offers"
+  - link "Explore featured apps":
+    - /url: /en-sa/stores/3277610/apps/browse?tag_ids[]=5&limit=50
+    - img "Explore featured apps"
+  - heading "Featured apps" [level=6]
+  - 'link "Zid AI 1 Star 5.0 Free App Zid AI: Professional product photos and SEO descriptions to grow your store in one click."':
+    - /url: /en-sa/stores/3277610/apps/5979
+    - img
+    - paragraph: Zid AI
+    - img "1 Star"
+    - text: "5.0"
+    - img
+    - text: "Free App Zid AI: Professional product photos and SEO descriptions to grow your store in one click."
+  - separator
+  - text: Embedded
+  - button "Add to compare"
+  - link "Bookings 1 Star 5.0 7 Day Free Trial Easy, All-in-One Management for Booking Products on Zid Stores":
+    - /url: /en-sa/stores/3277610/apps/6947
+    - img
+    - paragraph: Bookings
+    - img "1 Star"
+    - text: "5.0"
+    - img
+    - text: 7 Day Free Trial Easy, All-in-One Management for Booking Products on Zid Stores
+  - separator
+  - text: Embedded
+  - button "Add to compare"
+  - link "Qumra 1 Star 5.0 3 Day Free Trial Detailed indicators of your store performance from the first day it started":
+    - /url: /en-sa/stores/3277610/apps/830
+    - img
+    - paragraph: Qumra
+    - img "1 Star"
+    - text: "5.0"
+    - img
+    - text: 3 Day Free Trial Detailed indicators of your store performance from the first day it started
+  - separator
+  - button "Add to compare"
+  - link "Namaa 1 Star 5.0 15 Day Free Trial AI-powered upsells. Smart product recommendations for every customer, automatically":
+    - /url: /en-sa/stores/3277610/apps/6038
+    - img
+    - paragraph: Namaa
+    - img "1 Star"
+    - text: "5.0"
+    - img
+    - text: 15 Day Free Trial AI-powered upsells. Smart product recommendations for every customer, automatically
+  - separator
+  - button "Add to compare"
+  - link "Splend App 1 Star 5.0 From KWD 102.000 / 3 Months SplendApp is the super-easy solution to get a mobile application on iOS and Android in only 48hrs.":
+    - /url: /en-sa/stores/3277610/apps/929
+    - img
+    - paragraph: Splend App
+    - img "1 Star"
+    - text: "5.0"
+    - img
+    - text: From KWD 102.000 / 3 Months SplendApp is the super-easy solution to get a mobile application on iOS and Android in only 48hrs.
+  - separator
+  - button "Add to compare"
+  - heading "Apps of the month" [level=6]
+  - button
+  - img "slide-0"
+  - img
+  - heading "eshtarek app" [level=4]
+  - img "1 Star"
+  - text: 5.0 eshtarek
+  - heading "Sell on repeat One purchase becomes recurring orders, automatically" [level=6]
+  - link "Application details":
+    - /url: /en-sa/stores/3277610/apps/2877
+  - img "slide-1"
+  - img
+  - heading "WebEngage" [level=4]
+  - img "1 Star"
+  - text: 5.0 WebEngage
+  - heading "Always on time Automatically connect with customers on 12+ channels" [level=6]
+  - link "Application details":
+    - /url: /en-sa/stores/3277610/apps/4228
+  - img "slide-2"
+  - img
+  - heading "Revora" [level=4]
+  - img "1 Star"
+  - text: 5.0 Revora
+  - heading "Never miss a message Track, reply, and remind customers across every channel" [level=6]
+  - link "Application details":
+    - /url: /en-sa/stores/3277610/apps/2899
+  - img "slide-3"
+  - img
+  - heading "Halai Ai" [level=4]
+  - img "1 Star"
+  - text: 5.0 Halai
+  - heading "Just add ideas Halai's AI studio turns products into ready-to-post content" [level=6]
+  - link "Application details":
+    - /url: /en-sa/stores/3277610/apps/6471
+  - img "slide-4"
+  - img
+  - heading "e-FATOORA" [level=4]
+  - img "1 Star"
+  - text: 5.0 Business Elite LLC and DataValue KSA
+  - heading "Always compliant Auto-submit every invoice to ZATCA, no uploads" [level=6]
+  - link "Application details":
+    - /url: /en-sa/stores/3277610/apps/5075
+  - img "slide-5"
+  - img
+  - heading "AlFinder" [level=4]
+  - img "1 Star"
+  - text: 5.0 AI Finder
+  - heading "Search that gets it Even with typos, shoppers find what they want, fast" [level=6]
+  - link "Application details":
+    - /url: /en-sa/stores/3277610/apps/4062
+  - button
+  - heading "Newest apps" [level=6]
+  - link "AEO Boost for Zid 1 Star 5.0 1 Day Free Trial Improve product pages for AI search and answers with practical, copy-ready recommendations.":
+    - /url: /en-sa/stores/3277610/apps/7767
+    - img
+    - paragraph: AEO Boost for Zid
+    - img "1 Star"
+    - text: "5.0"
+    - img
+    - text: 1 Day Free Trial Improve product pages for AI search and answers with practical, copy-ready recommendations.
+  - separator
+  - text: Embedded
+  - button "Add to compare"
+  - link "Nexa 1 Star 5.0 7 Day Free Trial AI shop assistant that answers shoppers, fills their cart and completes orders.":
+    - /url: /en-sa/stores/3277610/apps/7387
+    - img
+    - paragraph: Nexa
+    - img "1 Star"
+    - text: "5.0"
+    - img
+    - text: 7 Day Free Trial AI shop assistant that answers shoppers, fills their cart and completes orders.
+  - separator
+  - text: Embedded
+  - button "Add to compare"
+  - link "Wassal Flow 1 Star 5.0 7 Day Free Trial WhatsApp QR, AI replies, carts, and campaigns for Zid stores.":
+    - /url: /en-sa/stores/3277610/apps/6809
+    - img
+    - paragraph: Wassal Flow
+    - img "1 Star"
+    - text: "5.0"
+    - img
+    - text: 7 Day Free Trial WhatsApp QR, AI replies, carts, and campaigns for Zid stores.
+  - separator
+  - button "Add to compare"
+  - link "Nabd - Live Sales Screen 1 Star 5.0 7 Day Free Trial Live sales screen for your Zid store on the office TV, with bonus levels that motivate your team.":
+    - /url: /en-sa/stores/3277610/apps/8057
+    - img
+    - paragraph: Nabd - Live Sales Screen
+    - img "1 Star"
+    - text: "5.0"
+    - img
+    - text: 7 Day Free Trial Live sales screen for your Zid store on the office TV, with bonus levels that motivate your team.
+  - separator
+  - button "Add to compare"
+  - link "Pblish 1 Star 5.0 7 Day Free Trial Automate product-based creatives from the Zid catalog via API for ads and social media at scale.":
+    - /url: /en-sa/stores/3277610/apps/5639
+    - img
+    - paragraph: Pblish
+    - img "1 Star"
+    - text: "5.0"
+    - img
+    - text: 7 Day Free Trial Automate product-based creatives from the Zid catalog via API for ads and social media at scale.
+  - separator
+  - text: Embedded
+  - button "Add to compare"
+  - link "View all":
+    - /url: /en-sa/stores/3277610/apps/browse?order=date
+  - heading "Zid Solutions for App Market" [level=6]
+  - link "National Day Offers to Grow Your Store National Day Offers to Grow Your Store Subscribe for a year and get a year free on participating apps Renewals are included, even if your current subscription has not ended.":
+    - /url: /en-sa/stores/3277610/apps/solution/8
+    - img "National Day Offers to Grow Your Store"
+    - heading "National Day Offers to Grow Your Store" [level=6]
+    - paragraph: Subscribe for a year and get a year free on participating apps Renewals are included, even if your current subscription has not ended.
+  - link "More Orders and Bigger Carts This National Day More Orders and Bigger Carts This National Day Apps to turn National Day visits into orders and help customers build bigger carts":
+    - /url: /en-sa/stores/3277610/apps/solution/9
+    - img "More Orders and Bigger Carts This National Day"
+    - heading "More Orders and Bigger Carts This National Day" [level=6]
+    - paragraph: Apps to turn National Day visits into orders and help customers build bigger carts
+  - link "Keep Your National Day Customers Coming Back Keep Your National Day Customers Coming Back Apps to build customer loyalty and encourage repeat purchases beyond National Day offers":
+    - /url: /en-sa/stores/3277610/apps/solution/10
+    - img "Keep Your National Day Customers Coming Back"
+    - heading "Keep Your National Day Customers Coming Back" [level=6]
+    - paragraph: Apps to build customer loyalty and encourage repeat purchases beyond National Day offers
+  - heading "Merchant Success Stories" [level=6]
+  - heading "1M+ SAR" [level=3]
+  - text: In sales
+  - paragraph: “Ribal was losing customers at checkout. After adding the app Ziadah, it provided smart, well-timed offers, which turned hesitation into 151,507 completed orders.”
+  - separator
+  - heading "Ribal" [level=6]
+  - text: Cleaning Supplies Store
+  - heading "Merchant Success Stories" [level=6]
+  - heading "99%" [level=3]
+  - text: Sales data accuracy across channels
+  - paragraph: “Alakaifak's branches, online store, and finance systems were running separately. With the app Reachware, everything now syncs in real time, reaching 99% accuracy and saving 20+ hours a week in manual fixes.”
+  - separator
+  - heading "Alakaifak" [level=6]
+  - text: Retail Chain
+  - heading "Merchant Success Stories" [level=6]
+  - heading "8.5%" [level=3]
+  - text: Average conversion rate on cart recovery
+  - paragraph: “Rasees, a leading fragrance brand, was drowning in customer messages as orders grew. With BusinessChat automating conversations and cart reminders, they recovered millions in lost sales with some recovery campaigns converting above 15%.”
+  - separator
+  - heading "Rasees" [level=6]
+  - text: Fragrance Store
+  - button
+  - button
+  - heading "Embedded Apps in Your Dashboard" [level=6]
+  - link "OptimizeApp 1 Star 5.0 7 Day Free Trial The easiest way to to launch digital campaigns and drive results.":
+    - /url: /en-sa/stores/3277610/apps/2812
+    - img
+    - paragraph: OptimizeApp
+    - img "1 Star"
+    - text: "5.0"
+    - img
+    - text: 7 Day Free Trial The easiest way to to launch digital campaigns and drive results.
+  - separator
+  - text: Embedded 40% off
+  - button "Add to compare"
+  - link "Digital Pro 1 Star 5.0 From KWD 36.000 / Annually Integrate with Digital Pro App and print accounting and inventory reports easily and flexibility.":
+    - /url: /en-sa/stores/3277610/apps/3671
+    - img
+    - paragraph: Digital Pro
+    - img "1 Star"
+    - text: "5.0"
+    - img
+    - text: From KWD 36.000 / Annually Integrate with Digital Pro App and print accounting and inventory reports easily and flexibility.
+  - separator
+  - text: Embedded
+  - button "Add to compare"
+  - link "Ziadah AI Upsell 1 Star 5.0 7 Day Free Trial Boost your order with 15 ways using AI-powered recommendations personalized for every customer":
+    - /url: /en-sa/stores/3277610/apps/1826
+    - img
+    - paragraph: Ziadah AI Upsell
+    - img "1 Star"
+    - text: "5.0"
+    - img
+    - text: 7 Day Free Trial Boost your order with 15 ways using AI-powered recommendations personalized for every customer
+  - separator
+  - button "Add to compare"
+  - link "View all":
+    - /url: /en-sa/stores/3277610/apps/browse
+  - heading "Suggestions and private applications" [level=6]
+  - paragraph: We are committed to supporting your store’s growth and management by recommending relevant applications or developing custom solutions tailored to your specific needs
+  - link "Get a custom app":
+    - /url: https://partner.zid.sa/login
+  - link "Suggest an app":
+    - /url: https://share.hsforms.com/1gAj1LynWQ9eX747IeBVR8A2tevd
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

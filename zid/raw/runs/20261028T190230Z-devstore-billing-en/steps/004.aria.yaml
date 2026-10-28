@@ -1,0 +1,28 @@
+- dialog "Optimize your plan":
+  - heading "Optimize your plan" [level=2]
+  - alert: You're moving from the Professional plan to the Rise plan. Please note that this change will remove access to the following features.
+  - list:
+    - listitem:
+      - paragraph: Shipping and Fulfillment apps
+    - listitem:
+      - paragraph: Number of Users Up to 20
+    - listitem:
+      - paragraph: Detailed Analytics for Orders and Customers
+    - listitem:
+      - paragraph: Issuing and printing sales reports
+    - listitem:
+      - paragraph: Add and manage withdrawals from 5 inventories
+    - listitem:
+      - paragraph: Selling and issuing wholesale invoices B2B
+    - listitem:
+      - paragraph: Personalized storefront via Theme SDK
+    - listitem:
+      - paragraph: Loyalty Program for customers
+    - listitem:
+      - paragraph: Multiple taxes by country
+    - listitem:
+      - paragraph: Direct integration through Zid
+    - listitem:
+      - paragraph: Priority of support
+  - button "Cancel"
+  - button "I understand"

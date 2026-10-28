@@ -1,0 +1,7 @@
+{
+  "run_id": "20261028T190806Z-terms-pricing-sa-eg", "platform": "zid", "label": "terms-pricing-sa-eg", "kind": "fetch", "started": "2026-10-28T19:08:08Z", "ended": "2026-10-28T19:08:46Z",
+  "tool": "GNU Wget 1.21.4 built on linux-gnu.", "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36", "wait_seconds": 1,
+  "url_count": 8, "urls_sha256": "af195567949d090128ce4fe6cab46fe7c9100b2b04c4e0756bf5e01807afac4b",
+  "wget_exit": 0, "network": {"via": "curl zid.sa/cdn-cgi/trace", "ip": "176.123.29.x", "loc": "YE", "colo": "MCT", "http": "http/2"},
+  "script": {"path": "capture/fetch.sh", "sha256": "efb183c1509dd5b1889a3492fbb9c898e6a6660a0df17603cce7e02b6ccef785"}
+}

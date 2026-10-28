@@ -1,0 +1,126 @@
+  HTTP/1.1 200 OK
+  Date: Wed, 28 Oct 2026 19:08:10 GMT
+  Content-Type: text/html; charset=utf-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Vary: RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch, Accept-Encoding
+  X-Powered-By: Next.js
+  Cache-Control: private, no-cache, no-store, max-age=0, must-revalidate
+  Strict-Transport-Security: max-age=0; includeSubDomains
+  cf-cache-status: BYPASS
+  set-cookie: __cf_bm=XlxtlhRT0_vzS8TpXwj1SmWk19GeX1vW1eT_2S1WQB8-1793214490.0626261-1.0.1.1-TL03NI4lVy57vBkYwRefArPMk2k2GxoaWOlb4qBK5TVnLt4FNS63GSVdPpdbXOF64yXyrN0YV_jlPtBIMF6643lJDQl.kzw0voxDxU448xeflwMJ7MmVH6XNF1P5iffL; HttpOnly; SameSite=None; Secure; Path=/; Domain=zid.sa; Expires=Wed, 28 Oct 2026 19:38:10 GMT
+  set-cookie: _cfuvid=v4gTN8k.Cq13c46_D5RAKtlg3kp2gQUyA5_p4ShT_gI-1793214490.0626261-1.0.1.1-_Owoy2VyngxS6ZIIaEqf2WxnR7hA7ewp.LEgR03fDu8; HttpOnly; SameSite=None; Secure; Path=/; Domain=zid.sa
+  Content-Encoding: gzip
+  Server: cloudflare
+  CF-RAY: a51c3a42dc32de47-MCT
+2026-10-28 22:08:11 URL:https://zid.sa/en/legal/terms-conditions/ [436644] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/zid/raw/runs/20261028T190806Z-terms-pricing-sa-eg/tmp/index.html.tmp" [1]
+  HTTP/1.1 200 OK
+  Date: Wed, 28 Oct 2026 19:08:13 GMT
+  Content-Type: text/html; charset=utf-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Strict-Transport-Security: max-age=0; includeSubDomains
+  Vary: RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch, Accept-Encoding
+  X-Powered-By: Next.js
+  Cache-Control: private, no-cache, no-store, max-age=0, must-revalidate
+  cf-cache-status: BYPASS
+  Content-Encoding: gzip
+  Server: cloudflare
+  CF-RAY: a51c3a5539f0de47-MCT
+2026-10-28 22:08:14 URL:https://zid.sa/ar/legal/terms-conditions/ [627624] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/zid/raw/runs/20261028T190806Z-terms-pricing-sa-eg/tmp/index.html.tmp" [1]
+  HTTP/1.1 200 OK
+  Date: Wed, 28 Oct 2026 19:08:16 GMT
+  Content-Type: text/html; charset=utf-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  CF-Ray: a51c3a680b001915-FRA
+  CF-Cache-Status: BYPASS
+  Cache-Control: public, max-age=300, s-maxage=300, stale-while-revalidate=60
+  Server: cloudflare
+  Strict-Transport-Security: max-age=0; includeSubDomains
+  Vary: RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch, Accept-Encoding
+  X-Powered-By: Next.js
+  set-cookie: __cf_bm=LVKpRNdUdejDU3YtZ4ZemTxSAqnaD3S_hyCXiGswYE0-1793214496.011211-1.0.1.1-J7nWKfg230BcQMCgHNsMvWtc1yRd.SBlvYCsAHXv_V0AzG4QprWEp8YmWXgR3Ig1krjh7MA8p4W3JXirEi6G0n84F8df3MUMZ6Dfl8w6aKykoueHcyKrarSso089lnRv; HttpOnly; SameSite=None; Secure; Path=/; Domain=zid.eg; Expires=Wed, 28 Oct 2026 19:38:16 GMT
+  Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=DNMUu4U3tfGixWSgbZXHDwip2zTHZskgPQz0UBZfCUnDOUCyoAqbnv%2F0fPYIpMFwryevaanJxw4ECSPRuMRqHYOsIohILCDZwSLZcbqsKCtJsua4z3%2FY4g%3D%3D"}]}
+  Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+  Content-Encoding: gzip
+2026-10-28 22:08:17 URL:https://zid.eg/en/legal/terms-conditions/ [433083] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/zid/raw/runs/20261028T190806Z-terms-pricing-sa-eg/tmp/index.html.tmp" [1]
+  HTTP/1.1 200 OK
+  Date: Wed, 28 Oct 2026 19:08:19 GMT
+  Content-Type: text/html; charset=utf-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  CF-Ray: a51c3a7a8c951915-FRA
+  CF-Cache-Status: BYPASS
+  Cache-Control: public, max-age=300, s-maxage=300, stale-while-revalidate=60
+  Server: cloudflare
+  Strict-Transport-Security: max-age=0; includeSubDomains
+  Vary: RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch, Accept-Encoding
+  X-Powered-By: Next.js
+  Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=cQhtY4EockdzIkRcQRl7Y6OKQPzgnJr0Gfhgx9iEvFo75%2Fenl7pNGxaRm13M2NXJIf22FMm%2Fg9Of0MiB9s3X6UcOBilnNIVq%2FFwv345cm2nR8MbmSvR%2FuQ%3D%3D"}]}
+  Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+  Content-Encoding: gzip
+2026-10-28 22:08:20 URL:https://zid.eg/ar/legal/terms-conditions/ [624014] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/zid/raw/runs/20261028T190806Z-terms-pricing-sa-eg/tmp/index.html.tmp" [1]
+  HTTP/1.1 200 OK
+  Date: Wed, 28 Oct 2026 19:08:25 GMT
+  Content-Type: text/html; charset=utf-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Strict-Transport-Security: max-age=0; includeSubDomains
+  Vary: RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch, Accept-Encoding
+  X-Powered-By: Next.js
+  Cache-Control: private, no-cache, no-store, max-age=0, must-revalidate
+  cf-cache-status: BYPASS
+  Content-Encoding: gzip
+  Server: cloudflare
+  CF-RAY: a51c3aa10ef7f9cb-MCT
+2026-10-28 22:08:27 URL:https://zid.sa/en/pricing/ [344987] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/zid/raw/runs/20261028T190806Z-terms-pricing-sa-eg/tmp/index.html.tmp" [1]
+  HTTP/1.1 200 OK
+  Date: Wed, 28 Oct 2026 19:08:28 GMT
+  Content-Type: text/html; charset=utf-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Strict-Transport-Security: max-age=0; includeSubDomains
+  Vary: RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch, Accept-Encoding
+  X-Powered-By: Next.js
+  Cache-Control: private, no-cache, no-store, max-age=0, must-revalidate
+  cf-cache-status: BYPASS
+  Content-Encoding: gzip
+  Server: cloudflare
+  CF-RAY: a51c3ab79ca5f9cb-MCT
+2026-10-28 22:08:32 URL:https://zid.sa/ar/pricing/ [353163] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/zid/raw/runs/20261028T190806Z-terms-pricing-sa-eg/tmp/index.html.tmp" [1]
+  HTTP/1.1 200 OK
+  Date: Wed, 28 Oct 2026 19:08:37 GMT
+  Content-Type: text/html; charset=utf-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  CF-Ray: a51c3aedacefbbda-FRA
+  CF-Cache-Status: BYPASS
+  Cache-Control: public, max-age=300, s-maxage=300, stale-while-revalidate=60
+  Server: cloudflare
+  Strict-Transport-Security: max-age=0; includeSubDomains
+  Vary: RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch, Accept-Encoding
+  X-Powered-By: Next.js
+  Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=lrnPDmJp2sNL409vJSXEtGWkNJ1xJLSpFLXT1asRhIJ4PB%2BXIo%2F72AIL%2B78R%2Fq5Df1fGIRcfkUuE3DUDgOOx0Yb4iFK%2BZzA%2F09zNvjdxRt%2BK1yn6w1SAew%3D%3D"}]}
+  Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+  Content-Encoding: gzip
+2026-10-28 22:08:39 URL:https://zid.eg/en/pricing/ [191888] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/zid/raw/runs/20261028T190806Z-terms-pricing-sa-eg/tmp/index.html.tmp" [1]
+  HTTP/1.1 200 OK
+  Date: Wed, 28 Oct 2026 19:08:40 GMT
+  Content-Type: text/html; charset=utf-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  CF-Ray: a51c3affeaa6bbda-FRA
+  CF-Cache-Status: BYPASS
+  Cache-Control: public, max-age=300, s-maxage=300, stale-while-revalidate=60
+  Server: cloudflare
+  Strict-Transport-Security: max-age=0; includeSubDomains
+  Vary: RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch, Accept-Encoding
+  X-Powered-By: Next.js
+  Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=GU5KZzo4FWWo%2F0Zcj0R8CBw8Z%2B41YZEQNUlIoRANRAX60FGidBzIx3NjsIEOgmtjt1RCvYc1GeqlEoIh1stFIgrard3gMLRJZyHbpPJRJEB1h%2FEvLG7jTQ%3D%3D"}]}
+  Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+  Content-Encoding: gzip
+2026-10-28 22:08:46 URL:https://zid.eg/ar/pricing/ [196067] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/zid/raw/runs/20261028T190806Z-terms-pricing-sa-eg/tmp/index.html.tmp" [1]
+FINISHED --2026-10-28 22:08:46--
+Total wall clock time: 38s
+Downloaded: 8 files, 601K in 10s (57.3 KB/s)

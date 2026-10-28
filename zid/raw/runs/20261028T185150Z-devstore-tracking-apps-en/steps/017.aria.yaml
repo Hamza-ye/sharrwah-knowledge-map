@@ -1,0 +1,153 @@
+- banner:
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/3277610
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "KWD 0"
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+- navigation "Primary navigation":
+  - button "Home"
+  - button "Apps" [pressed]
+  - button "Settings"
+  - separator
+- list:
+  - link "App Market":
+    - /url: /en-sa/stores/3277610/apps
+  - link "My apps":
+    - /url: /en-sa/stores/3277610/apps/installed
+    - text: My apps
+    - button [expanded]
+  - link "Google Analytics":
+    - /url: /en-sa/stores/3277610/apps/16
+    - img
+    - text: Google Analytics
+  - link "Categories":
+    - /url: /en-sa/stores/3277610/apps/browse
+- main:
+  - heading "Overview" [level=5]
+  - button "Activate"
+  - img
+  - heading "Google Tag Manager" [level=6]
+  - text: Free App
+  - iframe
+  - img "slide-0"
+  - button
+  - button
+  - paragraph: A service that enables you to add tools and analyze the behavior of your store visitors
+  - text: "By: Zid Tracking & Attribution"
+  - tablist:
+    - tab "App details" [selected]
+    - tab "Contact details"
+    - tab "Ratings & reviews"
+  - separator
+  - heading "Overview" [level=6]
+  - paragraph: Google Tag Manager app lets you add a Google Tag Manager (GTM) container without needing to manually edit your store’s code.
+  - heading "Key points merchants should pay attention to when adding Google Tag Manager:" [level=3]
+  - paragraph:
+    - strong: "-"
+    - text: "Get the Container ID: Make sure you create a GTM account and copy your GTM-XXXXXX Container ID before installation.."
+    - strong: "-"
+    - text: "Set up events in GTM: After installing the Pixel, you should:"
+    - strong: "-"
+    - text: Add triggers for key events (e.g., Page View, AddToCart, Purchase).
+    - strong: "-"
+    - text: Link variables to the data available from Zid (e.g., value, items).
+    - strong: "-"
+    - text: "Test before publishing:"
+    - strong: "-"
+    - text: Use GTM Preview Mode + tools like Google Tag Assistant to test
+  - paragraph:
+    - strong: To track Snapchat Pixel events or TikTok conversions, we strongly recommend enabling their official apps (e.g., Snapchat Ads app or the official TikTok Pixel app on Zid) instead of relying only on Google Tag Manager.
+  - paragraph:
+    - strong: This ensures better performance, more accurate tracking, and deeper integration with advertising platforms.
+  - paragraph:
+    - strong: Integration Steps
+  - paragraph:
+    - text: Have a look at this guide from
+    - link "here":
+      - /url: https://help.zid.sa/google-tag-manager
+      - strong: here
+  - paragraph:
+    - text: For More details about Google Tag Manger it is recommended to check the
+    - link "article":
+      - /url: https://help.zid.sa/%d8%b9%d9%86-google-tag-manager/
+      - strong: article
+  - heading "App activation" [level=6]
+  - paragraph: Enter your account code to activate the application
+  - text: Account code
+  - textbox "Account code":
+    - /placeholder: "Ex: GTM-xxxxxxx"
+  - button "Activate" [disabled]
+  - heading "Suggested apps" [level=6]
+  - link "Thunder 1 Star 5.0 30 Day Free Trial Slash Your Wasted Ad Spend by Up to 50 Precent":
+    - /url: /en-sa/stores/3277610/apps/4035
+    - img
+    - paragraph: Thunder
+    - img "1 Star"
+    - text: "5.0"
+    - img
+    - text: 30 Day Free Trial Slash Your Wasted Ad Spend by Up to 50 Precent
+  - separator
+  - button "Add to compare"
+  - link "Raasid | Server-side 1 Star 5.0 30 Day Free Trial A server-side solution will increase your ad channels sales by sending accurate data and sales.":
+    - /url: /en-sa/stores/3277610/apps/6842
+    - img
+    - paragraph: Raasid | Server-side
+    - img "1 Star"
+    - text: "5.0"
+    - img
+    - text: 30 Day Free Trial A server-side solution will increase your ad channels sales by sending accurate data and sales.
+  - separator
+  - button "Add to compare"
+  - link "qeen Integration 1 Star 5.0 90 Day Free Trial Connect your Zid store with qeen for real-time insights and marketing.":
+    - /url: /en-sa/stores/3277610/apps/4855
+    - img
+    - paragraph: qeen Integration
+    - img "1 Star"
+    - text: "5.0"
+    - img
+    - text: 90 Day Free Trial Connect your Zid store with qeen for real-time insights and marketing.
+  - separator
+  - button "Add to compare"
+  - 'link "Flow by DataBrief.sa 1 Star 5.0 From KWD 27.000 / 1 Month Know which campaign earned every order: analytics and marketing attribution for your store."':
+    - /url: /en-sa/stores/3277610/apps/7330
+    - img
+    - paragraph: Flow by DataBrief.sa
+    - img "1 Star"
+    - text: "5.0"
+    - img
+    - text: "From KWD 27.000 / 1 Month Know which campaign earned every order: analytics and marketing attribution for your store."
+  - separator
+  - button "Add to compare"
+  - link "BirunX 1 Star 5.0 14 Day Free Trial See the profit on every order, and connect Google Ads to bid on margin, not revenue":
+    - /url: /en-sa/stores/3277610/apps/7690
+    - img
+    - paragraph: BirunX
+    - img "1 Star"
+    - text: "5.0"
+    - img
+    - text: 14 Day Free Trial See the profit on every order, and connect Google Ads to bid on margin, not revenue
+  - separator
+  - button "Add to compare"
+  - link "MIQAS 1 Star 5.0 7 Day Free Trial Know which ad brought each order. CAPI sends conversions back, so retargeting reaches real buyers.":
+    - /url: /en-sa/stores/3277610/apps/7460
+    - img
+    - paragraph: MIQAS
+    - img "1 Star"
+    - text: "5.0"
+    - img
+    - text: 7 Day Free Trial Know which ad brought each order. CAPI sends conversions back, so retargeting reaches real buyers.
+  - separator
+  - button "Add to compare"
+  - link "View all":
+    - /url: /en-sa/stores/3277610/apps/browse/
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

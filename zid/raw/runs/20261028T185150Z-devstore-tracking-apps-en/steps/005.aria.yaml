@@ -1,0 +1,72 @@
+- banner:
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/3277610
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "KWD 0"
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+- navigation "Primary navigation":
+  - button "Home"
+  - button "Apps" [pressed]
+  - button "Settings"
+  - separator
+- list:
+  - link "App Market":
+    - /url: /en-sa/stores/3277610/apps
+  - link "My apps":
+    - /url: /en-sa/stores/3277610/apps/installed
+  - link "Categories":
+    - /url: /en-sa/stores/3277610/apps/browse
+  - link " Marketing & Growth":
+    - /url: /en-sa/stores/3277610/apps/browse?tab=51
+  - link " AI & Analytics":
+    - /url: /en-sa/stores/3277610/apps/browse?tab=69
+  - link " Store & Customer Experience":
+    - /url: /en-sa/stores/3277610/apps/browse?tab=67
+  - link " Finance & Payments":
+    - /url: /en-sa/stores/3277610/apps/browse?tab=72
+  - link " Operations & Store Management":
+    - /url: /en-sa/stores/3277610/apps/browse?tab=78
+  - link " Sales & Conversion":
+    - /url: /en-sa/stores/3277610/apps/browse?tab=59
+- main:
+  - button
+  - heading "Browse apps" [level=5]
+  - heading "App market" [level=6]
+  - textbox "Search by app name": Google Analytics
+  - button
+  - separator
+  - link "Google Analytics A service that enables you to collect and analyze data from your store easily and smoothly Analytics & Reporting 1 Star 4.8 Free App Add to compare":
+    - /url: /en-sa/stores/3277610/apps/16
+    - img
+    - paragraph: Google Analytics
+    - separator
+    - text: A service that enables you to collect and analyze data from your store easily and smoothly Analytics & Reporting
+    - separator
+    - img "1 Star"
+    - text: 4.8 Free App
+    - button "Add to compare"
+  - text: "Per page:"
+  - combobox "25"
+  - navigation "pagination navigation":
+    - list:
+      - listitem:
+        - button "Go to first page" [disabled]
+      - listitem:
+        - button "Go to previous page" [disabled]
+      - listitem:
+        - button "page 1": "1"
+      - listitem:
+        - button "Go to next page" [disabled]
+      - listitem:
+        - button "Go to last page" [disabled]
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

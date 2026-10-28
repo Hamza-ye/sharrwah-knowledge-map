@@ -1,0 +1,922 @@
+{
+  "account": {
+    "marketplaceAccount": "Marketplace account"
+  },
+  "activation": {
+    "account": "Account",
+    "amazon": {
+      "create": "Create Amazon account",
+      "no": "No, create a new Amazon seller account",
+      "radioLabel": "Do you have an existing account in Amazon?",
+      "title": "Amazon activation",
+      "yes": "Yes, connect my Amazon seller account"
+    },
+    "back": "Back",
+    "completeActivation": "Complete Activation",
+    "connectAmazon": "Connect Amazon",
+    "connectExistingAccount": "Yes, connect my Amazon seller account",
+    "createNewAccount": "No, create a new Amazon seller account",
+    "defaultInventory": "Default inventory",
+    "defaultShippingMethod": "Default Shipping Method",
+    "existingAccountQuestion": "Do you have an existing account in Amazon?",
+    "jahez": {
+      "activateNow": "Activate now",
+      "addNewCustomSchedule": "+ Add new custom schedule",
+      "allInventories": "All inventories",
+      "customSchedule": {
+        "createSuccess": {
+          "description": "You can apply it on one or more inventories from the branches table below",
+          "title": "Schedule has been created successfully"
+        },
+        "editLaterHint": "You can create and edit schedules later in Jahez Settings",
+        "scheduleName": "Schedule name",
+        "scheduleNamePlaceholder": "Ex: Riyadh branches",
+        "title": "Customize schedule",
+        "updateSuccess": "Schedule successfully updated and applied on inventories"
+      },
+      "emptyState": {
+        "description": "Select the inventories you want to add from the section above",
+        "title": "No inventory added yet"
+      },
+      "errors": {
+        "createScheduleFailed": "Could not create the schedule. Please try again.",
+        "deleteScheduleFailed": "Could not delete the schedule. Please try again.",
+        "draftFailed": "Could not start the Jahez activation. Please try again.",
+        "submitFailed": "Could not submit the activation. Please review your branches and try again.",
+        "updateScheduleFailed": "Could not update the schedule. Please try again."
+      },
+      "fillInventoriesDescription": "Add branch number, and schedule for each inventory. Pick from the default schedules or make your own custom one as needed.",
+      "fillInventoriesTitle": "Fill inventories details",
+      "filters": {
+        "all": "All",
+        "city": "City",
+        "contactNumber": "Contact number",
+        "contactNumberOptions": {
+          "filled": "Filled",
+          "missing": "Missing"
+        },
+        "scheduleStatus": "Schedule status",
+        "scheduleStatusOptions": {
+          "custom": "Custom schedule",
+          "filled": "Schedule filled",
+          "missing": "Missing schedule"
+        },
+        "title": "Filter",
+        "workingDays": "Include working days"
+      },
+      "inventoryLabel": "Inventory",
+      "manageBranches": {
+        "description": "Add or remove inventories connected to Jahez, and update their contact number or working schedules.",
+        "fillInventoriesDescription": "Add inventory number, and schedule for each inventory. Pick from the default schedules or make your own custom one as needed.",
+        "fillInventoriesTitle": "Fill inventories details",
+        "saveSuccess": "Branches updated successfully",
+        "selectInventoriesDescription": "Select the inventories you want to sync with Jahez",
+        "selectInventoriesTitle": "Select inventories",
+        "title": "Manage inventories"
+      },
+      "manageSchedules": {
+        "applyChangesConfirmation": {
+          "description": "When updating this schedule, changes will be applied on all inventories that use this schedule.",
+          "title": "Apply changes on inventories"
+        },
+        "createNewSchedule": "Create new schedule",
+        "deleteConfirmation": {
+          "title": "Are you sure you want to delete this schedule?"
+        },
+        "deleteSuccess": "Schedule deleted",
+        "title": "Manage schedules"
+      },
+      "mazeedPoweredNote": "Jahez is powered through Mazeed. Activating Jahez automatically syncs your products via Mazeed, expanding your sales channels with the same commission rate.",
+      "noInventoriesAvailable": "No inventories available",
+      "searchByName": "Search by name",
+      "selectInventoriesDescription": "Select the inventories you want to sync with Jahez",
+      "selectInventoriesTitle": "Select inventories",
+      "selectInventoryPlaceholder": "Select inventory",
+      "selectSchedule": "Select schedule",
+      "submitSuccess": "Activation submitted. Waiting for Jahez approval.",
+      "tableColumns": {
+        "city": "City",
+        "contactNumber": "Inventory contact number",
+        "name": "Name",
+        "schedule": "Inventory schedule"
+      },
+      "title": "Activate Jahez"
+    },
+    "loadingCountries": "Loading countries...",
+    "marketplaceActivation": "Marketplace Activation",
+    "searchByCountry": "Search by country",
+    "selectCountry": "Select country:",
+    "selectInventory": "Select inventory",
+    "selectShippingMethod": "Select shipping method",
+    "settings": "Settings",
+    "stepCount": "{{step}} out of {{count}}",
+    "stepCount_few": "{{step}} out of {{count}} steps",
+    "stepCount_many": "{{step}} out of {{count}} steps",
+    "stepCount_one": "{{step}} out of {{count}} step",
+    "stepCount_other": "{{step}} out of {{count}} steps",
+    "stepCount_two": "{{step}} out of {{count}} steps",
+    "stepCount_zero": "{{step}} out of {{count}} steps",
+    "syncAllOrders": "Sync all orders",
+    "syncAllOrdersDescription": "Sync every order from {{marketplace}} in your Zid account (even if the product doesn't exist in your catalog)",
+    "syncMatchingProducts": "Sync only orders with matching products",
+    "syncMatchingProductsDescription": "Sync only the orders that have products already in your Zid catalog",
+    "syncOrdersQuestion": "How do you want to sync your Marketplace orders?"
+  },
+  "addMarketplace": {
+    "addNewMarketplaceConnection": "Add new marketplace",
+    "noonInputs": {
+      "activate": "Activate",
+      "alertDescription": "Activate required settings on the Noon platform before connecting and verifying here.",
+      "configureNoonConnection": "Configure Noon Connection",
+      "credentialFile": "Credential File",
+      "credentials": "Credentials",
+      "credentialsDescription": "After creating your Noon account, check <1>here</1> to locate your Credential file.",
+      "credentialsFileSize": "10kb • Complete",
+      "file": "File",
+      "labelAddWarehouse": "You can quick add new warehouse.<1>Add warehouse</1>",
+      "missingNoonID": "Missing Noon ID",
+      "noonPlaceholderSKU": "Example: N.123456765432",
+      "noonSKU": "SKU in Noon",
+      "openMerchantAccountDescription": "Before you can use Noon Marketplaces, make sure you have a merchant account. Don't have one yet? <1>Create it now</1>",
+      "openMerchantAccountTitle": "Open merchant account",
+      "sameSKU": "SKU in Noon same as in Zid",
+      "selectWarehouse": "Select Warehouse",
+      "username": "API user email"
+    },
+    "selectMarketplace": "Select marketplace:",
+    "shortAddressRequired": {
+      "cta": "Add short address",
+      "description": "This warehouse needs a short national address before you can connect this marketplace.",
+      "title": "Short address needed"
+    },
+    "trendyolInputs": {
+      "apiKey": "API key",
+      "apiSecret": "API secret",
+      "areYouNowInTrendyol": "Are you currently on Trendyol or not?",
+      "configureTrendyolConnection": "Configure Trendyol connection",
+      "connectAccount": "Connect account",
+      "credentials": "Credentials",
+      "credentialsDescription": "After creating your Trendyol account, check <1>here</1> to locate your Seller ID, API Key, and API Secret.",
+      "defaultZidStoreSettings": "Shipping options in your Zid store",
+      "here": "HERE!!!!",
+      "no": "No",
+      "openMerchantAccountDescription": "Before you can use Trendyol Marketplaces, make sure you have a merchant account. Don't have one yet? <1>Create it now</1>",
+      "openMerchantAccountTitle": "Open merchant account",
+      "sellerId": "Seller ID",
+      "sellerPay": "Seller Pays",
+      "sellerShippingFeeDescription": "Fees are determined based on the shipping option.",
+      "shippingMethod": "Shipping Method:",
+      "startYourStoreNow": "Start your store now",
+      "trendyolMazeedPoweredNote": "Trendyol is powered through Mazeed. Activating Trendyol automatically syncs your products via Mazeed, expanding your sales channels with the same commission rate.",
+      "trendyolPay": "Trendyol Pays",
+      "trendyolShipping": "Trendyol Shipping",
+      "trendyolShippingBadge": "Lowest cost",
+      "trendyolShippingFeeDescription": "Fees start from 7 SAR per order. You can view the price list <1>here</1>.",
+      "verify": "Verify",
+      "verifyAndSave": "Verify And Save",
+      "verifyConnection": "Verify your connection",
+      "verifyConnectionDescription": "Verify that your seller ID and API details are correct to complete your integration.",
+      "warehouse": "Warehouse:",
+      "whichShippingModelDoYouUse": "Which shipping model do you use?",
+      "yes": "Yes"
+    }
+  },
+  "amazonAcceptableUsePolicy": {
+    "agree": "Agree",
+    "consent": "By clicking \"Agree\", you agree to the Amazon Marketplace Acceptable Use Policy.",
+    "description": "Brushing, fake orders, and fake or incentivized reviews are prohibited. You may not list counterfeit or infringing products. You must comply with Amazon's Seller/Vendor agreement and policies. Violations may lead to suspension, disconnection, and reporting to Amazon.",
+    "title": "Amazon Marketplace Acceptable Use Policy",
+    "violationWarning": "Accounts found in violation of <1>Amazon Marketplace Acceptable Use Policy</1> may be suspended or disconnected, and reported to Amazon."
+  },
+  "bulkActions": {
+    "EditDetails": "Edit details",
+    "addToJahez": "Add to Jahez",
+    "addToJahezSuccess": "Product added to Jahez successfully",
+    "addToMazeed": "Add to Mazeed",
+    "addToMazeedSuccess": "Products submitted to Mazeed successfully",
+    "filterByCategory": "To ensure a quicker and more precise setup, filter products by category before entering their details or adding them.",
+    "hideProducts": "Hide products",
+    "mazeedVisibilityUpdate": {
+      "hideDescription": "Your products are hidden, not removed from Mazeed marketplace. You can easily change this and show them whenever you like.",
+      "hideTitle": "Successfully updated!",
+      "showDescription": "Your products are now visible and displayed on Mazeed marketplace.",
+      "showTitle": "Updated successfully!"
+    },
+    "resyncApproval": "Resync product status",
+    "showProducts": "Show products",
+    "submitToTrendyol": "Submit to Trendyol",
+    "visibilityUpdate": {
+      "allUpdatedHideDescription": "Your products are hidden, not removed from Trendyol marketplace. You can easily change this and show them whenever you like.",
+      "allUpdatedShowDescription": "Your products are now visible and displayed on Trendyol marketplace.",
+      "allUpdatedTitle": "Updated successfully!",
+      "description": "A few products are still awaiting approval. Please wait until they are published to show or hide them.",
+      "jahezAllUpdatedHideDescription": "Your products are hidden, not removed from Jahez. You can easily change this and show them whenever you like.",
+      "jahezAllUpdatedShowDescription": "Your products are now visible and displayed on Jahez.",
+      "title": "{{updated}} of the {{total}} products have been updated successfully!"
+    }
+  },
+  "bulkEditAttributesModal": {
+    "back": "Back",
+    "brand": "Brand",
+    "cancel": "Cancel",
+    "changesSubmittedToTrendyol": "Changes submitted to Trendyol",
+    "infoMessage": "Select multiple products to apply a single attribute to all of them, or you can edit each one individually.",
+    "noChanges": "No changes to save. Please select a brand or attributes for at least one product.",
+    "productNotFound": "{{count}} product(s) were not found and could not be updated.",
+    "productNotFound_few": "{{count}} products were not found and could not be updated.",
+    "productNotFound_many": "{{count}} products were not found and could not be updated.",
+    "productNotFound_one": "{{count}} product was not found and could not be updated.",
+    "productNotFound_other": "{{count}} products were not found and could not be updated.",
+    "productNotFound_two": "{{count}} products were not found and could not be updated.",
+    "productNotFound_zero": "{{count}} products were not found and could not be updated.",
+    "productsPartiallyUpdated": "{{success}} products updated, {{failed}} need correction",
+    "productsReadyToSubmit": "The products are ready and you can submit them to Trendyol at any time.",
+    "productsUpdatedSuccessfully": "Product details have been completed successfully",
+    "save": "Save",
+    "saveError": "Failed to save product details. Please try again.",
+    "saveSuccess": "Product details have been completed successfully. The products are ready and you can submit them to Trendyol at any time.",
+    "someProductsNeedCorrection": "Some products still need correction before they can be submitted.",
+    "statusUpdatesProcessTime": "Status updates typically process within 5-10 minutes"
+  },
+  "bulkEditModal": {
+    "applyToSelection": "Apply to selection",
+    "batchEditDescription": "You can apply one or more attributes to all selected products, or edit each product individually.",
+    "batchEditTitle": "Apply batch edit to selected products",
+    "brand": "Brand",
+    "brandPlaceholderFull": "Please enter minimum 2 characters to select brand",
+    "brandPlaceholderShort": "Search brands",
+    "cancel": "Cancel",
+    "category": "Category",
+    "categoryInfoDescription": "You can edit product details and category from the product list at any time.",
+    "categoryInfoTitle": "The selected category will be applied to all selected products.",
+    "enterAttribute": "Enter {{attribute}}",
+    "loadingSearch": "Searching...",
+    "next": "Next",
+    "noOptions": "No options",
+    "noProductsSelectedTooltip": "Select products from the table to apply batch edits",
+    "price": "Price",
+    "productName": "Product name",
+    "quantity": "Quantity",
+    "rowsPerPage": "Rows per page:",
+    "selectAttribute": "Select {{attribute}}",
+    "selectCategory": "Select",
+    "sku": "SKU",
+    "title": "Edit product details"
+  },
+  "completeDetailsModal": {
+    "brand": "Brand",
+    "cancel": "Cancel",
+    "category": "Category",
+    "price": "Price",
+    "productDetails": "Product details",
+    "productName": "Product name",
+    "productNotFound": "Product not found",
+    "publishError": "An error occurred while publishing",
+    "publishSuccess": "Published successfully",
+    "quantity": "Quantity",
+    "save": "Save",
+    "saveError": "Failed to save product details. Please try again.",
+    "saveSuccess": "Product details have been completed successfully. The products are ready and you can submit them to Trendyol at any time.",
+    "searchBrand": "Search brand...",
+    "selectBrand": "Select",
+    "selectCategory": "Select",
+    "sku": "SKU",
+    "submitToTrendyol": "Submit to Trendyol"
+  },
+  "countryInput": {
+    "activated": "Activated",
+    "noCountriesFound": "No countries found",
+    "placeholder": "Search by country"
+  },
+  "defaultPage": {
+    "activateMarketplace": {
+      "steps": {
+        "choose": {
+          "description": "Expand your business and reach a wider audience by connecting to leading marketplaces.",
+          "title": "Choose Marketplace"
+        },
+        "link": {
+          "description": "Easily connect your marketplace account to Zid.",
+          "title": "Link Account"
+        },
+        "startSelling": "Start Selling",
+        "sync": {
+          "description": "Sync your products seamlessly with the marketplace.",
+          "title": "Sync Products"
+        }
+      },
+      "title": "Activate Marketplace"
+    },
+    "help": {
+      "customerSupport": "Customer support",
+      "description": "Our team is here to support you at every step — from activation to your first sale.",
+      "title": "Need help?",
+      "visitHelpCenter": "Visit Help center"
+    },
+    "hero": {
+      "cta": "Connect marketplaces",
+      "description": "From Noon and Amazon to Jahez and more, we help you expand your business in simple steps.",
+      "title": "One Store. Endless Marketplaces."
+    },
+    "whyConnect": {
+      "easyActivation": {
+        "description": "Get started in minutes with a simple, guided setup.",
+        "title": "Easy activation"
+      },
+      "expandReach": {
+        "description": "Access millions of new buyers by connecting to multiple marketplaces.",
+        "title": "Expand your reach"
+      },
+      "simplifyOps": {
+        "description": "Manage products, pricing, orders and inventory - all from your Zid dashboard.",
+        "title": "Simplify operations"
+      },
+      "title": "Why Connect Marketplaces?"
+    }
+  },
+  "editProductModal": {
+    "title": "Edit product details"
+  },
+  "errors": {
+    "accountBlockedError": "It looks like your account is blocked, please contact the Amazon support",
+    "apiError": "We couldn't activate your account, please contact the support.",
+    "duplicate": "The marketplace you are trying to connect is already connected. Please disconnect the marketplace from that store and retry",
+    "notActiveInAmazonError": "We have checked but you don’t seem to have a account in the country selected. If the problem persists please connect with our support team"
+  },
+  "filters": {
+    "jahez": {
+      "all": "All",
+      "approvalStatus": "Approval status",
+      "approved": "Approved",
+      "displayStatus": "Display status",
+      "hidden": "Hidden",
+      "inStock": "In stock",
+      "max": "Max",
+      "min": "Min",
+      "needsDetails": "Needs details",
+      "outOfStock": "Out of stock",
+      "priceMax": "Price max",
+      "priceMin": "Price min",
+      "priceRange": "Price range",
+      "productDetails": "Product details",
+      "productStatus": "Product status",
+      "range": "Range",
+      "ready": "Ready",
+      "rejected": "Rejected",
+      "shown": "Shown",
+      "stockMax": "Stock max",
+      "stockMin": "Stock min",
+      "stockQuantity": "Stock quantity",
+      "underReview": "Under review"
+    },
+    "title": "Filter",
+    "trendyol": {
+      "all": "All",
+      "approved": "Approved",
+      "category": "Category",
+      "displayStatus": "Display status",
+      "hidden": "Hidden",
+      "inStock": "In stock",
+      "max": "Max",
+      "min": "Min",
+      "needsCorrection": "Needs correction",
+      "needsDetails": "Needs details",
+      "outOfStock": "Out of stock",
+      "priceMax": "Price max",
+      "priceMin": "Price min",
+      "priceRange": "Price range",
+      "productDetails": "Product details",
+      "productStatus": "Product status",
+      "range": "Range",
+      "ready": "Ready",
+      "rejected": "Rejected",
+      "shown": "Shown",
+      "stockMax": "Stock max",
+      "stockMin": "Stock min",
+      "stockQuantity": "Stock quantity",
+      "underReview": "Under review"
+    }
+  },
+  "guideLines": {
+    "amazon": "Amazon",
+    "faqTitle": "Frequently Asked Questions",
+    "general": "General",
+    "placeholder": "Search",
+    "trendyol": "Trendyol"
+  },
+  "inventoryManagement": {
+    "alert": {
+      "content": "Some of your products are running low. Update quantities now to ensure continuous sales without interruption.",
+      "title": "Quantity Running Low"
+    },
+    "columns": {
+      "editQuantity": "Edit quantity",
+      "manageSpecificConfiguration": "Manage specific configuration",
+      "productName": "Product name",
+      "sku": "SKU",
+      "toolTip": "FBx is managed by the marketplace. This value cannot be modified."
+    },
+    "confirmationDialog": {
+      "completedVideos": "I have completed the watching videos and accept the",
+      "completedVideosAndTerms": "I have completed watching the videos and accept the Terms and Conditions",
+      "content": "This is inventory management and changes to the way you sync the product will change the product in Amazon based on the configuration you set here. We advice that you check on the following video that explains in detail how the inventory management works.",
+      "howToAvoidUnwantedUpdates": "How to avoid unwanted updates of inventory in the Marketplace",
+      "inventoryManagementExplained": "Inventory management explained",
+      "secondContent": "We advice that you check on the following video that explains in detail how the inventory management works.",
+      "termsAndConditions": "Terms and Conditions",
+      "title": "Allow Marketplaces to Manage Inventories"
+    },
+    "filters": {
+      "fbmFulfillment": "FBM (Fulfillment by Merchant)",
+      "fbxFulfillment": "FBx (Fulfillment by Marketplace)",
+      "lessThan": "Less than",
+      "marketplaceProductId": "Marketplace Product ID",
+      "quantity": "Quantity is",
+      "typeOfFulfillment": "Type of Fulfillment"
+    },
+    "generalConfiguration": "Inventory general configuration",
+    "inventoryDialog": {
+      "description": "Select which inventories that will fulfill orders for",
+      "title": "Select inventories"
+    },
+    "productConfig": {
+      "columns": {
+        "doNotSyncFbmQuantities": "Do not sync FBM quantities?",
+        "fromInventoryAddress": "from Inventory address",
+        "fulfillment": "Active types of fulfillment",
+        "locationToMarketplaceFbm": "Location to marketplace FBM",
+        "notAvailable": "Not available",
+        "pullFromMarketplace": "Pull from Marketplace",
+        "pushSumOfAllInventory": "Push sum of all inventosry",
+        "pushToMarketplace": "Push to Marketplace"
+      },
+      "inputPlaceholder": "example: 5",
+      "inventoryMarketplace": "Inventory Marketplace",
+      "lowStockAlertThresholdMarketplace": "FBx - Send an alert if a product stock is equal or lower than",
+      "lowStockAlertThresholdMerchant": "FBM - Send an alert if a product stock is equal or lower than",
+      "overSaleProtectionThreshold": "Stop selling on marketplaces when the stock is equal or lower than",
+      "rulesToPreventSelling": "Rules to prevent selling with out of stock (only for FBM)",
+      "settingsCardTittle": "Low Product Stock — General Configuration",
+      "specificConfig": "Specific config",
+      "successUpdated": "The settings have been updated successfully"
+    },
+    "settings": {
+      "columns": {
+        "marketplaceName": "Marketplace name",
+        "pullInventoryQuantitiesFromFbx": "Pull inventory quantities from FBx (Fulfilled by the marketplace)",
+        "pushSumOfAllInventory": "Push sum of all inventory location to marketplace FBM"
+      },
+      "forAllMarketplaces": "for all marketplaces",
+      "pullInventoryQuantitiesFromFbx": "Pull inventory quantities from FBx (Fulfilled by the marketplace)",
+      "pushInventoryToMarketplace": "Push Inventory to Marketplace for all FBM (Fulfilled by Merchant)",
+      "pushInventoryToMarketplaceDescription": "All locations that include the marketplace as a channel of the inventory address will have the total value of the inventory pushed to the marketplace."
+    },
+    "stats": {
+      "numberOfProduct": "Number of products with less than 10 units",
+      "salesOverStores": "Marketplace sales over store sales MTD"
+    }
+  },
+  "marketplaces": {
+    "accountLinked": "{{count}} Account linked",
+    "accountLinked_few": "{{count}} Accounts linked",
+    "accountLinked_many": "{{count}} Accounts linked",
+    "accountLinked_one": "{{count}} Account linked",
+    "accountLinked_other": "{{count}} Accounts linked",
+    "accountLinked_two": "{{count}} Accounts linked",
+    "accountLinked_zero": "{{count}} Accounts linked",
+    "activateInstantly": "Activate instantly",
+    "activation": "Activation",
+    "categories": {
+      "globalMarketplace": "Global marketplace",
+      "regionalMarketplace": "Regional marketplace",
+      "retail": "Retail",
+      "zidMarketplace": "Zid marketplace"
+    },
+    "connectMarketplaces": {
+      "description": "Activate your accounts on many different marketplace.",
+      "title": "Connect Marketplaces"
+    },
+    "features": "Features",
+    "instantActivationDescription": "One-click activation using Zid registered details",
+    "keyFeatures": "Key features",
+    "linkNewAccount": "Link new account",
+    "manage": "Manage",
+    "mazeed": {
+      "commissionFreeOrders": "Your first {{count}} orders are commission-free!",
+      "commissionFreeOrders_few": "Your first {{count}} orders are commission-free!",
+      "commissionFreeOrders_many": "Your first {{count}} orders are commission-free!",
+      "commissionFreeOrders_one": "Your first {{count}} order is commission-free!",
+      "commissionFreeOrders_other": "Your first {{count}} orders are commission-free!",
+      "commissionFreeOrders_two": "Your first {{count}} orders are commission-free!",
+      "commissionFreeOrders_zero": "Your first {{count}} orders are commission-free!"
+    },
+    "startActivation": "Start activation",
+    "title": "Marketplaces"
+  },
+  "orders": {
+    "alert": {
+      "content": "Ensure you have the configuration of orders importing for this marketplace. In order to do so please link on “Settings”.",
+      "title": "Import Orders Configuration"
+    },
+    "columns": {
+      "accountName": "Account name",
+      "byCustomer": "By customer",
+      "customerInformationNotAvailable": "Customer information can only be retrieved once the order is confirmed",
+      "customerName": "Customer name",
+      "fulfillment": "Fulfillment",
+      "imported": "Imported",
+      "importedStatus": "Import status",
+      "marketplace": "Marketplace",
+      "method": "Method",
+      "notImportedYet": "Not imported yet",
+      "orderDate": "Order date",
+      "orderNumber": "Order number",
+      "orderStatus": "Order status",
+      "orderStatuses": {
+        "awaiting": "Awaiting",
+        "canceled": "Canceled",
+        "cancelled": "Cancelled",
+        "confirmed": "Confirmed",
+        "created": "Created",
+        "delivered": "Delivered",
+        "invoiceUnconfirmed": "Invoice Unconfirmed",
+        "invoiced": "Invoiced",
+        "partiallyShipped": "Partially Shipped",
+        "pending": "Pending",
+        "pendingAvailability": "Pending Availability",
+        "picking": "Picking",
+        "returned": "Returned",
+        "shipped": "Shipped",
+        "unDelivered": "Undelivered",
+        "unDeliveredAndReturned": "UnDelivered and returned",
+        "unPacked": "UnPacked",
+        "unfulfillable": "Unfulfillable",
+        "unshipped": "Unshipped"
+      },
+      "packageId": "Package ID",
+      "packageIdTooltip": "Trendyol package ID number",
+      "paid": "Paid",
+      "paymentStatus": "Payment status",
+      "platformOrder": "Platform order",
+      "totalPaid": "Total paid",
+      "unpaid": "Unpaid",
+      "zid": "zid"
+    },
+    "description": "Import marketplace orders to your main list orders in Zid. Orders can take up to 5 mins to be refreshed.",
+    "filters": {
+      "canceled": "Canceled",
+      "failed": "Failed",
+      "importStatus": "Import status",
+      "imported": "Imported",
+      "invoiceUnconfirmed": "Invoice unconfirmed",
+      "notImported": "Not imported",
+      "orderStatus": "Order status",
+      "paid": "Paid",
+      "partiallyShipped": "Partially shipped",
+      "paymentStatus": "Payment status",
+      "pending": "Pending",
+      "pendingAvailability": "Pending availability",
+      "scheduled": "Scheduled",
+      "selectImportStatus": "Select import status",
+      "selectOrderStatus": "Select order status",
+      "selectPaymentStatus": "Select payment status",
+      "shipped": "Shipped",
+      "unfulfillable": "Unfulfillable",
+      "unpaid": "Unpaid",
+      "unshipped": "Unshipped"
+    },
+    "importOrdersToZid": "Import orders to Zid",
+    "orderImportConfirmation": "Once you have imported the orders from the marketplace you won't be able to undo",
+    "orderImportScheduled": "Order import scheduled"
+  },
+  "priceConfiguration": {
+    "currencyManagement": {
+      "columns": {
+        "countryCurrency": "Country Currency",
+        "howMuchIs1Usd": "How much is 1 USD ?",
+        "newValue": "New Value"
+      },
+      "description": "You can manage and adjust currency in marketplace.",
+      "resetSuccess": "The currency exchange rates have been reset successfully",
+      "success": "The currency exchange rates have been updated successfully",
+      "switchLabel": "Manual currency exchange value",
+      "title": "Currency management"
+    },
+    "generalPrice": {
+      "alertTitle": "General pricing configuration will apply to any product that is already linked or any new product that becomes linked. This rule takes effect as soon as a product is linked to Zid.",
+      "columns": {
+        "amountChange": "Amount Change",
+        "marketplace": "Marketplace",
+        "noPriceManagement": "No Price Management",
+        "percentageChange": "Percentage Change"
+      },
+      "error": "Please fill in all the fields",
+      "success": "The price configuration has been updated successfully",
+      "switchLabel": "Enable price configuration",
+      "title": "General price configuration"
+    }
+  },
+  "priceManagement": {
+    "alert": {
+      "content": "Price changes are sent to marketplaces instantly, but they may take up to 6 hours to appear on Zid.",
+      "title": "Heads up!"
+    },
+    "columns": {
+      "fulfillment": "Fulfillment",
+      "productName": "Product name",
+      "zidPrice": "Zid price"
+    },
+    "filters": {
+      "configurationType": "Configuration type",
+      "generalConfig": "General config",
+      "specificConfig": "Specific config"
+    },
+    "fixedPrice": "Fixed price",
+    "fulfillmentStatusNotLinked": "Not linked",
+    "generalPriceConfiguration": "General price configuration",
+    "productPrices": "Product prices",
+    "selectAccount": "Select account",
+    "skuLabel": "SKU code",
+    "updatePricesSuccess": "Prices updated successfully"
+  },
+  "products": {
+    "columns": {
+      "actions": "Actions",
+      "addToTrendyol": "Add to Trendyol",
+      "approvalStatus": "Approval Status",
+      "basePrice": "Base Price",
+      "category": "Category",
+      "completeDetails": "Complete Details",
+      "correctDetails": "Correct Details",
+      "displayStatus": "Display status",
+      "edit": "Edit",
+      "linkProduct": "Link Product",
+      "linkStatus": "Link status",
+      "linked": "Linked",
+      "name": "Name",
+      "notLinked": "Not linked",
+      "notPublished": "Not published",
+      "price": "Price",
+      "productName": "Product name",
+      "productStatus": "Product Status",
+      "published": "Published",
+      "quantity": "Quantity",
+      "sellingPrice": "Selling Price",
+      "showInStore": "Show in Store",
+      "stock": "Stock",
+      "submitToTrendyol": "Submit to Trendyol"
+    },
+    "exportDialog": {
+      "description": "Product export file will be sent to your email ({{email}})",
+      "success": "Product export file will be sent to your email ({{email}})",
+      "title": "Export products"
+    },
+    "exportProducts": "Export products",
+    "linkProductSuccess": "Product linked successfully",
+    "linkProductTitle": "Link settings",
+    "productInMarketplace": "Product in marketplace",
+    "productInZid": "Product in Zid",
+    "selectOneFbaSkuToLink": "Select one FBA SKU to link:",
+    "selectOneFbmSkuToLink": "Select one FBM SKU to link:",
+    "selectProduct": "Select product",
+    "title": "Product management",
+    "trendyol": {
+      "emptyState": {
+        "description": "Start by adding products to your store to see them here.",
+        "title": "No products found"
+      }
+    },
+    "unlinkProduct": "Unlink product",
+    "unlinkProductConfirmation": "Are you sure you want to unlink this product?",
+    "unlinkProductSuccess": "Product unlinked successfully"
+  },
+  "resyncApproval": {
+    "fetchingFromTrendyol": "Fetching from Trendyol...",
+    "lastSynced": "Last synced {{time}}",
+    "successMessage": "Approval status updated successfully",
+    "tooltip": "Resync approval status from Trendyol"
+  },
+  "root": {
+    "activatedAccounts": {
+      "accountName": "Account name",
+      "accountsAvailable": "{{num}} accounts available",
+      "addAccount": "Add a new account",
+      "description": "Manage your activated accounts",
+      "manage": "Manage",
+      "title": "Activated accounts"
+    },
+    "addMarketplace": "Add marketplace",
+    "analytics": {
+      "grossSales": "Gross sales",
+      "grossTotalOrders": "Gross total orders",
+      "netSales": "Net sales",
+      "netTotalOrders": "Net total orders",
+      "ordersReturnedCancelled": "Orders returned / cancelled",
+      "ratio": "Ratio of Marketplace Sales over store direct sales",
+      "returnsCancelled": "Returns / Cancellations",
+      "title": "Marketplace analytics"
+    },
+    "headTitle": "Overview",
+    "importSettings": "Import settings",
+    "performance": {
+      "changeFromLastMonth": "from last month",
+      "changeFromPrevMonth": "from previous month",
+      "monthlyOrders": "Monthly orders",
+      "monthlyOrdersSubtitle": "Fulfilled orders this month",
+      "monthlyRevenue": "Monthly revenue",
+      "monthlyRevenueSubtitle": "Revenue from all marketplaces",
+      "productsSynced": "Products Synced",
+      "productsSyncedSubtitle": "On all marketplaces",
+      "quickActions": {
+        "connectBtn": "Connect",
+        "connectMarketplace": "Connect Marketplace",
+        "connectMarketplaceDesc": "Link your store to top marketplaces and reach more customers.",
+        "publishBtn": "Publish",
+        "publishProducts": "Publish products",
+        "publishProductsDesc": "Publish your products across all connected marketplaces",
+        "syncBtn": "Sync",
+        "syncInventory": "Sync inventory",
+        "syncInventoryDesc": "Keep your inventory synced across your store and marketplaces.",
+        "title": "Quick actions",
+        "viewBtn": "View",
+        "viewOrders": "View orders",
+        "viewOrdersDesc": "Track your orders and manage their status in one place."
+      },
+      "revenueByMarketplace": "Revenue by marketplace",
+      "salesPerformance": "Sales performance",
+      "timeRange": {
+        "1y": "Last year",
+        "30d": "Last 30 days",
+        "7d": "Last 7 days",
+        "90d": "Last 3 months"
+      },
+      "title": "Marketplace performance summary"
+    },
+    "trendyolAlert": {
+      "configure": "Configure",
+      "info": "Verify that your seller ID and API details are correct to complete your integration.",
+      "title": "Configure your Trendyol settings"
+    }
+  },
+  "settings": {
+    "accountStatus": {
+      "activated": "Activated",
+      "activatedAt": "Account activated at",
+      "title": "Marketplaces"
+    },
+    "alertDescription": "Be aware that when changing the order settings these changes will not be applied to your previous imported or integrated orders.",
+    "alertNoonDescription": "Fetching quantity after a product is added can take up to 10 minutes",
+    "alertTitle": "Changes in the order settings",
+    "aliasPlaceholder": "Enter your marketplace account name",
+    "aliasTitle": "Customize the name of your marketplace account (seller name)",
+    "allFulfillingMethods": "All fulfilling methods",
+    "allMarketplaceOrders": "All marketplace orders",
+    "amazon": {
+      "invoiceCreatedByAmazon": "Invoice created by Amazon marketplace (you will have to configure this in Amazon!)",
+      "invoiceCreatedByZid": "Invoice created by Zid and uploaded to the marketplace (if unavailable, the marketplace doesn't support it).",
+      "invoiceCreatedByZidNoUpload": "Invoice created by Zid but not uploaded to the marketplace. You will need to upload this manually."
+    },
+    "customName": "Custom name",
+    "customerInvoiceConfiguration": "Customer invoice configuration",
+    "deactivateAccount": "Deactivate account",
+    "deactivateDescription": "This will stop importing orders and syncing with your marketplace. You can reactivate it anytime",
+    "deactivateMarketplaceAccount": "Deactivate marketplace account",
+    "defaultZidStoreSettings": "Default Zid store Settings",
+    "disconnectAccountConfirmation": "Are you sure you want to disconnect your account?",
+    "disconnectAccountSuccess": "Account disconnected successfully",
+    "fba": "FBA (Fulfillment by Amazon)",
+    "fbaRadioLabel": "FBA - (Fulfilled by Amazon) How would you like to handle the customer invoice?",
+    "fbm": "FBM (Fulfillment by Merchant)",
+    "fbmRadioLabel": "FBM - (Fulfilled by Merchant) How would you like to handle the customer invoice?",
+    "fulfillingMethodLabel": "For which fulfilling method would you like your orders to be imported?",
+    "importOrdersConfiguration": "Import orders configuration",
+    "importOrdersConfigurationDescription": "Customize the configuration on how to import your orders",
+    "invoiceGenerationLabel": "Which invoice to generation?",
+    "jahez": {
+      "accountDetails": {
+        "customSellerName": "Custom seller name",
+        "customSellerNameHelper": "The name displayed to customers on your Jahez storefront.",
+        "customSellerNamePlaceholder": "e.g clothing",
+        "title": "Account details"
+      },
+      "inventorySettings": {
+        "autoAccept": "Auto accept orders",
+        "autoAcceptTooltip": "When disabled, you have to manually move new orders to \"Ready\" within a defined time period, or they will be cancelled.",
+        "description": "Control which of your store's inventories sync with Jahez, and set their details and working schedules.",
+        "manageInventories": "Manage inventories",
+        "title": "Inventory settings"
+      },
+      "orderSettings": {
+        "alertDescription": "Changes apply to new orders only and won't affect previously imported orders.",
+        "title": "Order settings"
+      }
+    },
+    "noon": {
+      "addWarehouse": "Add Warehouse",
+      "columns": {
+        "code": "Code",
+        "country": "Country",
+        "name": "Name"
+      },
+      "deleteWarehouse": "Delete Warehouse",
+      "emptyState": {
+        "description": "Click below to link your Zid products to Noon. Once connected, you can manage inventory, orders, pricing, and more — all in one place.",
+        "products": "Link product to Noon",
+        "title": "There is no warehouse"
+      },
+      "fields": {
+        "code": "Code",
+        "country": "Country",
+        "name": "Name"
+      },
+      "importOrder": "Import Orders from Files",
+      "invoiceCreatedByZid": "Generate and upload to Noon",
+      "invoiceCreatedByZidNoUpload": "Generate and have you upload to Noon manually",
+      "title": "Add and configure your warehouses"
+    },
+    "noonApiCredentials": "Noon API credentials",
+    "noonCredentials": "Warehouse management",
+    "onlyOrdersForProductsLinked": "Only orders for products linked to your marketplace",
+    "reset": "Reset",
+    "resetSuccess": "Settings reset successfully",
+    "saveChanges": "Save changes",
+    "sellerOnAmazon": "Seller on {{marketplace}}",
+    "shareInvoiceWithMarketplace": "Share the invoice with the marketplace",
+    "shippingConfiguration": "Shipping configuration",
+    "submitSuccess": "Settings updated successfully",
+    "trendyol": {
+      "activationDescription": "Select the shipping model you have configured in Trendyol.",
+      "helpCenter": "See more details here",
+      "invoiceCreatedByZid": "Invoice created by Zid and automatically uploaded to the marketplace (if not available it means it is not supported by the marketplace)",
+      "invoiceCreatedByZidNoUpload": "Invoice created by Zid but not uploaded to the marketplace. You will need to upload this manually.",
+      "sellerPays": "Seller Pays",
+      "sellerPaysActivation": "Seller Pays",
+      "sellerPaysActivationWithDescription": "Seller Pays",
+      "sellerPaysDescription": "You will be shipping the products yourself and utilize your store shipping methods and not the contracts from Trendyol",
+      "trendyolPays": "Trendyol Pays",
+      "trendyolPaysActivation": "Trendyol Pays",
+      "trendyolPaysActivationWithDescription": "Trendyol Pays",
+      "trendyolPaysDescription": "You will use the contracts of Trendyol to ship. By doing so you won't be able to ship the order using your agreements and the configuration in Zid but you will use those in Trendyol"
+    },
+    "trendyolApiCredentials": "Edit Activation Parameters",
+    "trendyolShipping": "Trendyol Shipping",
+    "trendyolShippingModel": "Trendyol Shipping Model",
+    "verifyConnection": "Verify connection",
+    "whichOrdersToAutomaticallyImport": "Which orders to automatically import / integrate?"
+  },
+  "status": {
+    "approved": "Approved",
+    "archived": "Archived",
+    "blacklisted": "Blacklisted",
+    "needs_correction": "Needs correction",
+    "needs_details": "Needs details",
+    "not_found": "Not found",
+    "pending": "Pending",
+    "ready_to_submit": "Ready to submit",
+    "rejected": "Rejected",
+    "syncing": "Syncing",
+    "syncingTooltip": "Change submitted. Updates may take few minutes",
+    "under_review": "Under review"
+  },
+  "submitToTrendyolModal": {
+    "brand": "Brand",
+    "cancel": "Cancel",
+    "notReadyDescription": "A few selected products are missing required details and can't be submitted to Trendyol yet. Complete the required information first, then submit them when you're ready.",
+    "notReadyTitle": "Some products aren't ready to be submitted yet.",
+    "productName": "Product name",
+    "sku": "SKU",
+    "subcategory": "Subcategory",
+    "submit": "Submit to Trendyol",
+    "submitError": "Failed to submit products. Please try again.",
+    "submitFailed": "{{count}} product(s) failed to submit.",
+    "submitFailed_few": "{{count}} products failed to submit.",
+    "submitFailed_many": "{{count}} products failed to submit.",
+    "submitFailed_one": "{{count}} product failed to submit.",
+    "submitFailed_other": "{{count}} products failed to submit.",
+    "submitFailed_two": "{{count}} products failed to submit.",
+    "submitFailed_zero": "{{count}} products failed to submit.",
+    "submitSuccess": "{{count}} product(s) has been submitted successfully and is pending Trendyol approval.",
+    "submitSuccess_few": "{{count}} products have been submitted successfully and are pending Trendyol approval.",
+    "submitSuccess_many": "{{count}} products have been submitted successfully and are pending Trendyol approval.",
+    "submitSuccess_one": "{{count}} product has been submitted successfully and is pending Trendyol approval.",
+    "submitSuccess_other": "{{count}} products have been submitted successfully and are pending Trendyol approval.",
+    "submitSuccess_two": "{{count}} products have been submitted successfully and are pending Trendyol approval.",
+    "submitSuccess_zero": "{{count}} products have been submitted successfully and are pending Trendyol approval.",
+    "title": "Submit products to Trendyol"
+  },
+  "tabs": {
+    "inventory": "Inventory",
+    "orders": "Orders",
+    "pricing": "Pricing",
+    "products": "Products"
+  },
+  "trendyol": {
+    "successBody": "Your store is now available on Trendyol. Start adding products to reach millions of shoppers.",
+    "successTitle": "Congratulations 🎉, your store is now on Trendyol!"
+  },
+  "trendyolActivation": {
+    "cta": "Add products",
+    "description": "Your store is now live on Trendyol. Start adding products to reach millions of shoppers.",
+    "title": "Congrats 🎉, Trendyol is now active!"
+  }
+}

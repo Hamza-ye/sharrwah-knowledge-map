@@ -1,0 +1,13 @@
+- button "Play video"
+- button "Hide player controls"
+- link "طريقة تثبيت فيسبوك بكسل | زد":
+  - /url: https://www.youtube.com/watch?v=KSi_1VH1U5Y
+- link "Zid - زد":
+  - /url: /channel/UCcPU3vP1sTR4f1zupXGYa8Q
+- button "thumbnail-image":
+  - img "thumbnail-image"
+- text: Zid - زد 32.6K subscribers
+- button "Share"
+- link "Watch on YouTube":
+  - /url: https://www.youtube.com/watch?v=KSi_1VH1U5Y
+  - text: Watch on
