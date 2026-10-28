@@ -692,3 +692,25 @@ The notes went to the parts as leads. The parts recorded only what the run files
   - **The Backup Region control's two placements are left as they are,** since neither changes a key.
   - **The other readings stand.**
 - **The checker,** run on a copy holding one root decision, listed every other root decision's phase C rows as errors, which hid a part's own. It now skips them, as it already did for `a2.tsv`.
+
+**Phase C again on the keys the capture round touched** (C-R: 38 requests, 4.8 million; 11 points of RD2 and RD3). Four keys changed:
+- **S02-VP-57 and S02-VP-63, `the whole store`: `unknown` to `no difference`.** Both had been held by like with like, since Shopify's statements giving the key were observations only. The Help Center's statements now declare it: the store's tax and duty settings, and the primary entity for every market's subscription payments.
+- **S02-VP-26, `a group of customers`: `unknown` to `no difference`,** not carried. Under the ruling above, S02-V-409 is keyed as C-RD2's reading reads it, `a company`. The key then stands on Shopify's absence alone, and the new-market pages on three stores offer no customer group.
+- **S02-VP-86, `a market the store sells into`: `unknown` to `vendor choice`,** a founder item that depends on S02-VP-26. Shopify's new row has an app configured per market. BigCommerce installs every app for the whole store.
+- **Unchanged after a check:**
+  - `Affirm` (S02-VP-62). Shopify names Affirm reviewing the store, not setting the method, so the key stays open. Phase B and phase C read it the same way.
+  - S02-VP-61's `the whole store`, S02-VP-63's `a market the store sells into`, and S02-VP-27 to S02-VP-29.
+
+After C-R, RD2's and RD3's 247 keys stand as follows.
+- **Causes:** vendor choice 138, no difference 34, unknown 33, business model 28, market pattern 8, a named rule 4, maturity 2.
+- **What follows:**
+  - left to the build: 111;
+  - a decision for the founder: 72, 61 of them S-02's own, in 46 wordings;
+  - a commonality: 34;
+  - kept open: 20;
+  - bound per market: 10.
+
+**What C-R taught about the tool:**
+- **A row written again lost its earlier note.** The phase C brief doesn't let an agent read notes, and the tool wrote the whole row. Six notes were lost, two of them the reasons for each platform's letters. The coordinator restored them from the files before C-R, and the tool now keeps a row's note and adds the new one after it.
+- **`show` printed no readings.** A re-run weighs a key's reading, basis and scopes again, so the agent printed those columns with its own script. `show --full` now prints them, never a note.
+- **A gap that asks only for a number within a key its platform gives can't be marked open.** An example is S02-SH-G16, how many markets per plan, under `a number of markets per store, set by plan`. The tool notes it, and the gap stands as a question to the platform.

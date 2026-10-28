@@ -61,7 +61,7 @@ At phase A's end, the checker found every quote, 3,193 of them, and no error. Wi
   - The local agent's five pointers to held evidence are recorded.
 - **Phase B's capture round, three parts:** every new statement placed or noted, 906 rows, and the full check finds no error.
 - **A method ruling:** a key that every platform lacks or doesn't state is `no difference`, a commonality the references don't carry (the local agent's recommendation, and C-RD2's problem 3).
-- **Phase C again on the touched keys (part C-R):** running on 11 points of RD2 and RD3.
+- **Phase C again on the touched keys (part C-R), done.** Four keys changed: two `the whole store` keys (S02-VP-57, S02-VP-63) and S02-VP-26's `a group of customers` became commonalities, and an app's value per market became a founder item (S02-VP-86). RD2 and RD3 hold 247 keys. 72 founder items, 61 of them S-02's own, in 46 wordings; 20 keys are kept open.
 - **Handoffs:** H-006 to H-008 are marked done, at the commit, in [`handoffs/README.md`](handoffs/README.md).
 
 **Earlier:**
@@ -72,8 +72,7 @@ At phase A's end, the checker found every quote, 3,193 of them, and no error. Wi
 - **Cost:** 1,408 million agent tokens by 00:39 UTC on 28 October, past the budget plus a quarter (875 million). The cost came to the founder at 09:55 on 27 October ([the frame's budget](studies/subjects/S-02/frame.md#budget)). The capture round cost 55 million. S-02 is projected at about 1.5 to 1.6 billion. The work goes on on the founder's Max x20 plan. The coordinating session's own tokens: 719 million since S-02 began.
 
 **Next:**
-1. When C-R reports: merge and check phase C's files, and record what changed.
-2. With the founder's word on the Salla capture requests: read any runs they made, close or narrow their gaps, place the statements, then RD1's phase C (C-RD1-1, C-RD1-2).
-3. Then the Yemen row and the scenario walk, for each root decision; the register; the independent review; and S-02's report for G3.
+1. With the founder's word on the Salla capture requests: read any runs they made, close or narrow their gaps, place the statements, then RD1's phase C (C-RD1-1, C-RD1-2).
+2. Then the Yemen row and the scenario walk, for each root decision; the register; the independent review; and S-02's report for G3.
 
 **To resume:** read `PLAN.md`, this file and `founder-decisions.tsv`.
