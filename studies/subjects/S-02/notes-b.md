@@ -1331,6 +1331,136 @@ Each row joined was compared with its own platform's statements already in it (r
 
 This part ran the check on a copy holding only `b/RD1`. `merge_slices.py` merged 19 points and 306 rows. `check_subject.py` (3,073 statements, as phase A3 ran beside it) gave 5 lines of level `error`. All five are on Zid's rows of this round, which another part revisits: S02-V-038, S02-V-077, S02-V-170, S02-V-173 and S02-V-291, each naming a gap that was narrowed into another. None names this part's rows or statements. It gave 17 warnings, on phase A's citations, and 38 reviews, among them the quotes found only in a page's source, which are the coordinator's. In its `unplaced.tsv`, RD1's only Salla rows are S02-SA-504 to S02-SA-509 (c), for which the work list has no task (problem 1). This part's place tasks and its revisits' leads are gone from it. In `second_pass_list.py --check`, RD1's open tasks are four revisits of Zid's (S02-V-077, S02-V-170, S02-V-173, S02-V-291). This part's five revisits are gone from it.
 
+## Second pass, RD1-S8
+
+Part RD1-S8: the Salla and Zid round's Zid tasks under RD1 (bullets a to d), from A2-ZD-R and A3-ZD-R (other-product-class f44be3f, folder `zid/`); Salla's revisit of S02-V-148, which the round's first task list dropped; and six tasks of the coordinator's rulings on RD1-S7's calls (b/second-pass.md). Zid's statements are observations of two stores on 28 October: the development store 3277610 (plan new_professional.lifetime) and the public demo 127604 (Professional), both with the feature flag `must_use_markets_pricing` false. Each row keeps the store, its plan, the flag, and the run and step, in its scope or evidence.
+
+### Revisit S02-V-077 (zid, S02-VP-05, who checks the store's country) (part RD1-S8)
+
+S02-V-077, was gap S02-ZD-G02: replaced with gap S02-ZD-G30, in place of S02-ZD-G02. S02-ZD-G30 asks who checks the country and address of a store outside Saudi Arabia, and how, after they are saved. No lead names a party that checks.
+
+Leads placed under (b):
+- S02-ZD-468: joined S02-V-078 (S02-VP-06, who changes the store's country): the business location gave Kuwait 'after Kuwait and Kuwait City were chosen on Business address and saved (steps 49 to 55, POST /v1/managers/store/business-place answered 200 at step 55)' (its scope), where it gave Saudi Arabia at step 22 (S02-ZD-467). Business address > Country > Save is a control in the store's admin, so the seller changes it (rule 4), as S02-V-078's 'في حال قيام التاجر بنقل أو تغيير دولته في إعدادات المتجر' says. It is a change of a value already set, so it isn't joined under S02-VP-04 (who sets) too (call 1).
+- S02-ZD-469: a new row, S02-V-308 (S02-VP-07, what must hold before the store's country changes): 'District district cannot be null Street street cannot be null', on the first save after Kuwait and Kuwait City were chosen (step 52): the district and the street must be given before the save that changes the country goes through (a reading: the words name the fields the save requires).
+
+Lead noted under (b):
+- S02-ZD-470 (b): the business location after the save that set Kuwait, '"national_address_certificate":null,"is_address_confirmed":true' (development store 3277610; run 20261028T170107Z-devstore-markets-en, steps 55 and 56): two keys of the record, which name no party that checks the store's country or address, and no check after the save (S02-ZD-G30); answers none of (b)'s questions
+
+### Revisit S02-V-170 and S02-V-173 (zid, S02-VP-08 and S02-VP-09, the contracting party and the terms) (part RD1-S8)
+
+S02-V-170 (S02-VP-08) and S02-V-173 (S02-VP-09), each was gap S02-ZD-G03: each replaced with gap S02-ZD-G31, in place of S02-ZD-G03. S02-ZD-G31 asks which company contracts with a merchant outside Saudi Arabia, and under which terms.
+
+Lead noted under (c):
+- S02-ZD-484 (c): the Rise monthly checkout's link '- link "Terms and conditions": - /url: https://zid.sa/en/legal/terms-conditions', the same with the development store's Business address country Egypt, the UAE, Oman, Qatar, Syria, Bahrain, Saudi Arabia and Kuwait (its scope; runs 20261028T190952Z-devstore-country-checkout-en and 20261028T190230Z-devstore-billing-en): a link names no company that contracts (S02-VP-08); for the terms (S02-VP-09), its words name no decider, and its scope names eight countries, so it isn't 'every store, whatever its country' (rule 4) (call 2)
+
+### Revisit S02-V-291 (zid, S02-VP-15, taxes on the platform's fees) (part RD1-S8)
+
+S02-V-291, was gap S02-ZD-G08: replaced with an answer, '"name":"VAT %15","value":{"amount":13874,"currency":"EGP","formatted":"EGP 138.74"}' (S02-ZD-476 to S02-ZD-483): the Rise monthly checkout's VAT line on the development store, each with a different Business address country in its scope. Egypt gives EGP 138.74 on 991.00; the UAE, Oman, Qatar, Bahrain and Kuwait 0; the Syrian Arab Republic and Saudi Arabia SAR 1.17 on 7.83; each labelled 'VAT %15'. The decider is the store's own country as its Business address holds it (S02-V-029), a reading: the statements give the line for each country, and their words don't say what decides it. The coordinator read S02-SA-501's currency with its store's country the same way (28 October, on RD1-S7's call 8) (call 3).
+
+S02-V-309 (S02-VP-15), added: gap S02-ZD-G32, in place of S02-ZD-G08, beside the answer. It asks what tax Zid's other fees carry for a store outside Saudi Arabia (the transaction fees, Zid Pay's fees, the apps' and services' fees), and the tax on the invoice Zid issues.
+
+S02-V-310 (S02-VP-14, the platform's fees), added from the same leads: the invoice lines' 'VAT Subjected Amount' is in a currency for each Business address country (EGP, AED, OMR, QAR, SAR, BHD, KWD), the currency the subscription is billed in. Same decider and reading as S02-V-291. It stands beside S02-V-181 (the merchant's local currency; zid.eg's prices in Egyptian pounds), whose decider is another (call 3).
+
+The earlier leads stay where they are: S02-ZD-193, S02-ZD-194, S02-ZD-197 and S02-ZD-203 in S02-V-182 (every store); S02-ZD-398, S02-ZD-408, S02-ZD-411 and S02-ZD-418 in S02-V-299; S02-ZD-192, S02-ZD-195, S02-ZD-196, S02-ZD-198 to S02-ZD-202, S02-ZD-204 and S02-ZD-205 noted under (c) above in this file.
+
+x_words took 'VAT %15' under S02-VP-15, and 'Rise - Monthly; VAT Subjected Amount' under S02-VP-14.
+
+### Revisit S02-V-038 (zid, S02-VP-02, the countries kept out) (part RD1-S8)
+
+S02-V-038, was gap S02-ZD-G09: replaced with gap S02-ZD-G33, in place of S02-ZD-G09. S02-ZD-G33 asks which countries, if any, Zid keeps out of creating a store at its public sign-up. The work list also names absence S02-ZD-N17: Iran, Cuba, Korea (North or South), Russia and Israel are not among the 162 countries a store can take as its Business address's country. Its audit contradicts it (zid/absence-audit.tsv). The cities endpoint, GET /v1/settings/cities?per_page=3000 (run 20261028T190952Z-devstore-country-checkout-en, step 74), names cities of 43 countries outside the 162, among them the five of S02-ZD-495 to S02-ZD-499. So the 162 are not all the countries Zid's API holds, and the list isn't shown complete. What still stands: none of the five is among the 162 that the Business address page lists (step 48) and the countries endpoint answers; whether a store can take any of them as its country isn't shown. An `absent` row needs a complete list (rule 4), so none rests on S02-ZD-N17. The row's note says so.
+
+Lead noted under (d):
+- S02-ZD-475 (d): the options of Business address's Country, 162 countries, from 'Saudi Arabia UAE Kuwait Oman Bahrain Egypt Qatar Jordan' to 'Palestinian South Sudan Isle of Man', Yemen and the Syrian Arab Republic among them (development store 3277610; run 20261028T170107Z-devstore-markets-en, step 48; 'GET /v1/settings/countries gives the same 162 names in the same order', its scope): their words don't say the countries are where Zid serves merchants, or name any it keeps out, as S02-SH-259's and S02-SA-312's options were read under (d)
+
+### Revisit S02-V-148 (salla, S02-VP-08, the contracting party) (part RD1-S8)
+
+S02-V-148, gap S02-SA-G02: replaced with the same gap, which the work list names as still open. S02-SA-G02 asks for the contracting party of the payment services contract ('عقد خدمات الدفع') that stores in the UAE and Kuwait sign during store verification. The new UAE store's verification (store 21123834, Basic; A2-SA-R, observed-sa b0bd0b16) names no contracting party. This task was missing from the round's first task list (RD1-S7's problem 1).
+
+Leads placed under (c):
+- S02-SA-504: joined S02-V-305 (S02-VP-10, the merchant's country, as the platform ties a page or form to one country): '"renderer_schema":{"id":"merchants_uae_kyb_workflow"', the platform's identifier tying the UAE store's verification form to the UAE's merchants (a reading), as the coordinator ruled S02-SA-488's 'merchants_saudi_kyc' names the merchant's country (28 October, on RD1-S7's call 4).
+- S02-SA-505, S02-SA-506: joined S02-V-152 (S02-VP-10, the country selected for the store): the UAE store's Business Details step asks for 'Company Name*', 'TL/CR Number*', 'TL/CR Expiry Date*', 'Tax Registration Number (Optional)', 'TL/CR Document*', 'VAT Registration Certificate (Optional)' and 'Memorandum or Articles of Association'. Their identifier and scope name the UAE store, whose onboarding answered United Arab Emirates (S02-SA-501's scope). A reading: their words name no country, and S02-SA-284 says 'Your country selection sets the legal requirements for your store' (call 4).
+
+Leads noted under (c):
+- S02-SA-507 (c): the UAE store's declaration, 'I confirm that my Salla store information is accurate and up to date, and I agree to keep it updated and comply with applicable regulations and Salla's User Agreement.' (store 21123834, Basic): it names the terms the merchant agrees to, but no decider (rule 4), and no company that contracts; it isn't the payment services contract S02-SA-G02 asks about
+- S02-SA-508 (c): the notice after submission, 'Your application has been received and is being reviewed. We will notify you via WhatsApp once a decision is made.' (store 21123834, Basic): a review of the verification, with no decider named (rule 4), and no contracting party
+- S02-SA-509 (c): the verification's status after completion, '"status":"completed","current_state":"my_fatoorah_review"' (store 21123834, Basic; GET api.aws.salla.dev/kyc/api/kyc/status): it names a review state, not the party of a contract (S02-SA-G02), and no decider (rule 4)
+
+### Revisit S02-V-074, S02-V-307 and S02-V-095 (salla, S02-VP-06, who changes the store's country), by the coordinator's ruling on RD1-S7's call 1 (part RD1-S8)
+
+The coordinator ruled on 28 October (b/second-pass.md, RD1-S7's call 1) that S02-SA-483, the reply of Salla's dashboard assistant under the notice that responses are AI-generated, is a lead to S02-SA-G16, not an answer. So:
+- S02-V-074, was 'As the store owner, you can make this change.' (S02-SA-483): replaced with gap S02-SA-G16.
+- S02-V-307, the second gap row of S02-SA-G16 under the point: removed, since S02-V-074 now holds the gap.
+- S02-V-095 (the seller): replaced without S02-SA-483, keeping S02-SA-179 and S02-SA-311, its excerpt 'اضغط (تحديد الموقع) لتحديد موقع المتجر من الخريطة', their basis `answers` and their evidence. Its note now names S02-SA-G16's row, S02-V-074, beside it.
+- S02-V-075 (S02-VP-07, gap S02-SA-G16): its note took a line saying that S02-SA-483 is now noted.
+
+Noted under (b):
+- S02-SA-483 (b): the reply of Mushammir, the dashboard's assistant, 'You can change the store country after creation from Settings > Store settings > Basic store settings, then update the country/currency and save. As the store owner, you can make this change.' (store-1-da, Basic; run 20261028T150337Z-journey-store-country-merchant-en, step 011), under Salla's notice 'Responses are AI-generated. Verify what matters most.': an answer the platform's own assistant generates, under a notice that it may be wrong, is a lead to the gap it bears on (S02-SA-G16), not an answer (the coordinator's ruling of 28 October on RD1-S7's call 1)
+
+### Place tasks, Salla and Zid round: zid (a) and (d) (part RD1-S8)
+
+Placed:
+- S02-ZD-467, S02-ZD-468, under (a): joined S02-V-029 (S02-VP-01, the business address, 'العنوان التجاري'). Their identifier names 'settings/information (Store information) > Business address (settings/information/address) > Country' and 'GET /v1/managers/store/business-place > business_location > country'. The record gave Saudi Arabia at step 22 (S02-ZD-467) and Kuwait after the save at step 55 (S02-ZD-468) (development store 3277610; run 20261028T170107Z-devstore-markets-en). The record's key, 'business_location', is the key S02-V-256 names in the account's profile ('user.business_location'), from another endpoint; they aren't joined there (call 5).
+
+Noted:
+- S02-ZD-495 (d): the cities endpoint's entry '"country_id":54,"country_name":"Cuba","country_code":"CU"' (GET /v1/settings/cities?per_page=3000&countries_ids=+; development store 3277610; run 20261028T190952Z-devstore-country-checkout-en, step 74): a country whose cities Zid's API holds; its words don't say Zid serves merchants there or keeps them out (rule 2's role test). With S02-ZD-496 to S02-ZD-499, it contradicts absence S02-ZD-N17's completeness (revisit S02-V-038, above)
+- S02-ZD-496 (d): the same answer's entry '"country_id":101,"country_name":"Iran( Islamic Republic of)","country_code":"IR"': as S02-ZD-495
+- S02-ZD-497 (d): the same answer's entry '"country_id":112,"country_name":"North Korea","country_code":"KP"': as S02-ZD-495
+- S02-ZD-498 (d): the same answer's entry '"country_id":113,"country_name":"South Korea","country_code":"KR"': as S02-ZD-495
+- S02-ZD-499 (d): the same answer's entry '"country_id":176,"country_name":"Russian Federation","country_code":"RU"': as S02-ZD-495
+
+x_words took 'Business address; business_location' under S02-VP-01.
+
+### Rereads, by the coordinator's rulings on RD1-S7's calls 3 and 8 (part RD1-S8)
+
+Placed (each earlier note stays as it is):
+- S02-SA-256 (c), the coordinator's ruling on call 3: a new row, S02-V-311 (S02-VP-14, the platform's fees). 'Salla Plus For small businesses AED 990 / year', on salla.com/en-ae/plans, the UAE path (its scope): the path's code, 'ae', ties the page to the UAE. So the decider is the merchant's country, the UAE, as the platform ties the page to it (a reading: the words don't name merchants), by rule 4 under (c) as ruled on 27 October. It stands beside S02-V-161 (every store, 'كافة الرسوم تحتسب بالريال السعودي') and S02-V-162 (the payment services contract).
+- S02-SA-295 (c), the coordinator's ruling on call 3: a new row, S02-V-312 (S02-VP-11, the platform's own payment service). 'لا يتطلب تفعيل مدفوعات سلة توقيع عقود مع طرف ثالث أو فتح حساب في بنك محدد. يمكنك البدء بمجرد توثيق متجرك!' (my translation: activating Salla Payments doesn't require signing contracts with a third party or opening an account at a specific bank; you can start once your store is verified), on salla.com/payments, the Saudi path (its scope), addressed to the merchant ('يمكنك'). So the decider is the merchant's country, Saudi Arabia, as the platform ties the page to it (a reading). It stands beside S02-V-156, whose decider is where the store is ('لمتاجر الكويت'). Its words also name the store's verification as what activation follows; that stays in the row's evidence, not as a second decider.
+- S02-SA-501 (c), the coordinator's ruling on call 8: a new row, S02-V-313 (S02-VP-18, the store's defaults), '"currency":"AED"' beside '"kyc_country":"AE"' on the new UAE store (store 21123834, Basic), whose onboarding answered United Arab Emirates: the store's country, as kyc_country holds it (S02-V-301), decides its currency, for this one store (a reading). S02-V-168, gap S02-SA-G18 (the default language), stands beside it.
+
+x_words took 'Salla Plus' under S02-VP-14, 'currency' under S02-VP-18, and 'مدفوعات سلة' under S02-VP-11, which Salla's words there already held (problem 2).
+
+### Rows replaced, removed, added and joined (part RD1-S8)
+
+Replaced: S02-V-077 (S02-VP-05, gap S02-ZD-G02, now gap S02-ZD-G30); S02-V-170 (S02-VP-08) and S02-V-173 (S02-VP-09), each gap S02-ZD-G03, now gap S02-ZD-G31; S02-V-291 (S02-VP-15, gap S02-ZD-G08, now the Rise monthly checkout's VAT line, S02-ZD-476 to S02-ZD-483); S02-V-038 (S02-VP-02, gap S02-ZD-G09, now gap S02-ZD-G33); S02-V-148 (S02-VP-08, gap S02-SA-G02, the same gap); S02-V-074 (S02-VP-06, 'As the store owner, you can make this change.', S02-SA-483, now gap S02-SA-G16); S02-V-095 (S02-VP-06, the seller, now without S02-SA-483).
+
+Removed: S02-V-307 (S02-VP-06, gap S02-SA-G16), whose gap S02-V-074 now holds.
+
+Added: S02-V-308 (S02-VP-07, zid, the district and street the save requires, S02-ZD-469); S02-V-309 (S02-VP-15, zid, gap S02-ZD-G32); S02-V-310 (S02-VP-14, zid, the subscription's billing currency by the Business address country, S02-ZD-476 to S02-ZD-483); S02-V-311 (S02-VP-14, salla, S02-SA-256); S02-V-312 (S02-VP-11, salla, S02-SA-295); S02-V-313 (S02-VP-18, salla, S02-SA-501).
+
+Joined: S02-V-029 (S02-VP-01, zid: S02-ZD-467, S02-ZD-468); S02-V-078 (S02-VP-06, zid: S02-ZD-468); S02-V-305 (S02-VP-10, salla: S02-SA-504); S02-V-152 (S02-VP-10, salla: S02-SA-505, S02-SA-506). Each joined row's evidence names what was added, after "second pass, RD1-S8". S02-V-075's note took a line saying S02-SA-483 is now noted.
+
+### Candidates for a new point (part RD1-S8)
+
+None. Every statement this part placed fits a point's kind; those noted answer none of their bullet's questions, or name no decider.
+
+### Searches (part RD1-S8)
+
+No point was raised, so no earlier platform's rows were searched for. To place the round's statements beside the rows that hold their like, this part read: Zid's rows under S02-VP-01 to S02-VP-04, S02-VP-06 to S02-VP-09 and S02-VP-14; every platform's rows under S02-VP-05 and S02-VP-15; Salla's rows under S02-VP-06, S02-VP-11, S02-VP-14 and S02-VP-18; and the full rows of S02-V-074, S02-V-095, S02-V-148, S02-V-152, S02-V-156, S02-V-158, S02-V-181, S02-V-182, S02-V-299, S02-V-305 and S02-V-307. In Zid's terms.tsv, it searched for 'Business address', 'العنوان التجاري' and 'business_location' (no translation or definition). In this file, it searched for the earlier notes on S02-ZD-192 to S02-ZD-205, S02-ZD-398, S02-ZD-408, S02-ZD-411, S02-ZD-418, S02-SA-256, S02-SA-295, S02-SA-483 and S02-SA-501, and, among notes under (d), for 'list', 'options', 'select' and 'countries a store', to see how earlier parts read a list of countries under (d). It found S02-SH-259 and S02-SA-312.
+
+### Rechecks (part RD1-S8)
+
+Each row joined was compared with its own platform's statements already in it (rule 5). S02-V-029's basis, `term;answers`, holds for S02-ZD-467 and S02-ZD-468: 'Business address' is the same words as Shopify's 'your business address' (S02-SH-258), and the field holds the store's country. `answers` holds for each statement joined to S02-V-078, S02-V-152 and S02-V-305, the last two as readings, as their evidence marks. S02-V-095 keeps `answers` for S02-SA-179 and S02-SA-311. The new answer rows rest on `answers` alone: S02-V-291, S02-V-308, S02-V-310, S02-V-311, S02-V-312 and S02-V-313. Their points' `raised_by` statements from other platforms share no term, identifier or definition with them. Shopify's 'billing address' (S02-SH-251) isn't Zid's 'Business address'. 'currency', in S02-SA-501's key, is only a common word with S02-SH-248's 'local language and currency for your store'; the decider's words don't match.
+
+### Calls (part RD1-S8)
+
+1. S02-ZD-468, under (b), is placed under S02-VP-06 (who changes) only. It saved Kuwait over Saudi Arabia, which the record gave at step 22 (S02-ZD-467). Earlier parts placed the Business address help (S02-ZD-083, S02-ZD-084) under both S02-VP-04 and S02-VP-06. If saving a new value also answers who sets the country, S02-ZD-468 would join S02-V-076 as well, with the same answer, the seller.
+2. S02-ZD-484, the same Terms link at the subscription checkout for eight Business address countries, is noted under (c). It names no company. For the terms, eight countries in its scope aren't 'every store, whatever its country' (rule 4). Read as every store, it would join S02-V-171 (the terms, every store). Reading the linked Terms as the ones that bind, it would also join S02-V-169 (the Saudi company, every store). Gap-closing kept S02-ZD-G31 open on it.
+3. S02-ZD-476 to S02-ZD-483 are placed with the decider their scopes name: the development store's Business address country, one checkout each (a reading). This follows the coordinator's ruling on RD1-S7's call 8, which read S02-SA-501's currency with its store's country. They also answer the platform's fees: the invoice's currency changes with the country. So they raise S02-V-310 under S02-VP-14, although a2.tsv leads them only to S02-VP-15. If the reading is rejected, they would be noted, S02-V-291 would be gap S02-ZD-G32, S02-V-309 would go, and S02-V-310 would go.
+4. S02-SA-505 and S02-SA-506 join S02-V-152 (the country selected for the store). Their identifier and scope name 'the UAE store' (rule 5), and S02-SA-284 says 'Your country selection sets the legal requirements for your store'. The coordinator kept S02-SA-484, S02-SA-486 and S02-SA-487 noted (RD1-S7's call 4), but those came from store-1-da's form, whose scope names no country. If the UAE store's form is read the same way, S02-SA-505 and S02-SA-506 would be noted. S02-SA-507 to S02-SA-509 are noted. They come from the same store, but S02-SA-284's words cover legal requirements, not Salla's User Agreement, a review notice or a review state.
+5. S02-ZD-467 and S02-ZD-468, under (a), join S02-V-029 (the Business address), as their identifier names the page's field. They don't join S02-V-256 ('user.business_location', from the account's profile, GET /v1/managers/account/profile). That row's key is the same, 'business_location', but from another endpoint. If the coordinator reads the two as one record, they would join S02-V-256 too.
+6. S02-ZD-469 is placed under S02-VP-07 as a condition (a reading): the save that changes the country requires the address's district and street. Read as the save's own requirements, not a condition on the country, it would be noted under (b), and S02-V-308 would go.
+7. S02-SA-295's own words name the store's verification as what Salla Payments' activation follows. Under the ruling, the decider placed is the merchant's country, as the Saudi path ties the page. The verification stays in the row's evidence, and the first pass's note stands.
+
+### Problems (part RD1-S8)
+
+1. S02-ZD-G33, made in place of S02-ZD-G09, says the Business address takes 162 countries 'and not Iran, Cuba, Korea, Russia or Israel (S02-ZD-N17)'. Its audit contradicts S02-ZD-N17, and the audit's note says the coordinator may need to restate the gap. S02-V-038 names S02-ZD-G33 and records S02-ZD-N17's state in its note.
+2. `xwords` adds a word that the platform's x_words already hold. 'مدفوعات سلة' is now twice in Salla's words under S02-VP-11, and the tool has no command to take a word out. Likewise, S02-VP-06 keeps Salla's 'store country', which RD1-S7 added from S02-SA-483, now noted. Salla uses the same words under S02-VP-01.
+3. S02-SA-499 and S02-SA-500 (the plans in AED on the new UAE store) and S02-SA-515 (an app's price in AED there) stay noted under (c), as RD1-S7 noted them. Under the coordinator's ruling on call 8, they would read as S02-SA-501 does, under S02-VP-14. No task leads to them, so this part left them.
+
+### Check (part RD1-S8)
+
+This part ran the check on a copy holding only `b/RD1`. `merge_slices.py` merged 19 points and 311 rows. `check_subject.py` (3,073 statements, 90 gaps) gave no line of level `error`; the five errors RD1-S7's check gave, on Zid's rows naming a gap narrowed into another (S02-V-038, S02-V-077, S02-V-170, S02-V-173, S02-V-291), are gone. It gave 17 warnings, on the length of phase A's quotes (Shopify's and WooCommerce's citations), and 33 reviews: 19 on points with no phase C row yet, 12 on quotes found only in a page's source (WooCommerce's and Zid's citations), which are the coordinator's, and 2 on RD2's and RD3's statements, whose folders the copy leaves out. None names this part's rows or statements. In its `unplaced.tsv`, RD1 has no row: this part's place tasks and its revisits' leads are gone from it. In `second_pass_list.py --check`, RD1 has no open revisit, reread or note task.
+
 # RD2
 
 ## RD2-1: shopify, bullets (e) and (g)
@@ -1994,6 +2124,81 @@ None. Every statement of these tasks that answers one of (e)'s questions does so
 ### RD2-S3: row notes added
 
 - S02-V-425: its note now says that S02-SH-1116 shows the New market page on fake-demo-sharrwah (Advanced, paid, 27 October 2026), beside the earlier note's S02-SH-386 (the control 'Create market', listed without that store) and S02-SH-387 ('Request access' on it). No cause is given; each statement's scope gives its own store and plan.
+
+## Second pass, RD2-S4: the Salla and Zid round's tasks of RD2's work list (after A2-SA-R at observed-sa b0bd0b16, and A2-ZD-R and A3-ZD-R at other-product-class f44be3f), bullet (e); salla and zid
+
+Most statements of this round are observations of one store on one day, 28 October 2026: salla's public demo (giftshop2024, badge Special) and demo store (store-sherawya, Pro); zid's demo store 127604 (Zid Demo Store, plan new_professional.yearly) and development store 3277610 (Capture Dev Store, plan new_professional.lifetime), both with zid's feature flag `must_use_markets_pricing` false. Each row they joined took its `kind` and `scope` again from all its statements (rule 6), and each `basis_evidence` added names the store, its plan where the statement gives it, and the run and step: a run says what one store showed, not what every store does.
+
+### Revisits
+
+- S02-V-442 (zid, S02-VP-26, was `gap` S02-ZD-G06). RD2's work list names no gap or absence left for it: gap-closing settled S02-ZD-G06. Its leads give no answer zid's rows don't hold, so they joined S02-V-440 and the row is removed:
+  - S02-ZD-471, the record of the primary market 'Main Market' (السوق الرئيسي) of the development store 3277610 ('"is_primary": true, "is_published": true, "countries": ["SA"]', run 20261028T170107Z-devstore-markets-en, steps 3 and 57, the second after the store's country was changed to Kuwait), joined S02-V-440: a market's record holds its countries. Its words name 'Main Market', not السوق الافتراضي (S02-ZD-012, S02-V-441), and zid's terms hold السوق الرئيسي and السوق الافتراضي as separate terms, so it doesn't join S02-V-441 (rule 0). S02-V-441 has a row note saying so.
+  - S02-ZD-472, the answer of POST /v1/markets for the market Kuwait on the same store ('"countries": ["KW"]', run 20261028T185150Z-devstore-tracking-apps-en, step 2), joined S02-V-440. Its words name no party, so it isn't placed under S02-VP-28.
+- S02-V-447 (zid, S02-VP-29, was `gap` S02-ZD-G05). RD2's work list names no gap or absence left for it: gap-closing settled S02-ZD-G05. Its leads give two answers no row held, and one under S02-VP-28:
+  - S02-ZD-473, the dialog of 'More > Remove market' on settings/markets ('Remove Kuwait This market will be permanently deleted. This action cannot be undone. Cancel Remove'), development store 3277610, run 20261028T170107Z-devstore-markets-en, step 44: a control in the store's admin, so the seller removes a market (rule 4). It replaces S02-V-447.
+  - S02-ZD-461, the store permission '"slug": "markets.delete", "name": "Delete markets"' on the demo store 127604 (run 20261028T144855Z-dashboard-routes-en, step 1): a staff permission that gates deleting a market, its own answer by rule 4, the new row S02-V-486.
+  - S02-ZD-460, the store permission '"slug": "markets.create", "name": "Create markets"' on the same store and step: a staff permission that gates creating a market, placed under S02-VP-28 as the new row S02-V-487. It names 'markets.edit' only among the permissions markets.create relies on ('"relies_on": ["markets.view", "markets.edit", "markets.products.edit"]'), not what markets.edit gates, so it isn't placed under S02-VP-29.
+
+### Statements noted under (e)
+
+- S02-SA-528 (e): 'Manage every market Run all your markets from one dashboard with independent settings for each market. Set market-specific pricing Adjust product prices to match each market and currency.': a market's settings and its prices, under (f); states no definer, limit or party for a market, as S02-SA-065, the same sentence, is noted above
+- S02-SA-529 (e): 'Customize each market Tailor your store’s design and content to connect with local customers.', 'Choose the sign-in methods available to customers in each market.' and 'Control which products are available in each market based on customer demand.': a market's settings (its design and content, sign-in methods, products), under (f); states no definer, limit or party for a market
+
+### Statements placed (`place` tasks)
+
+salla (the runs of 28 October on the public demo, giftshop2024, badge Special, and the demo store, store-sherawya, Pro):
+- S02-SA-517 (Settings > Markets, the public demo, run 20261028T153241Z-journey-markets-public-demo-en, step 4): 'Start creating new markets and selling in multiple countries.', the words of S02-SA-053, joined S02-V-438 under S02-VP-28 (the seller creates a market), where S02-SA-053 stands. 'selling in multiple countries' names where the store sells, not what a market is, so it isn't placed under S02-VP-26, as S02-SA-053 isn't.
+- S02-SA-518 (Settings > Markets, the demo store, run 20261028T154256Z-journey-markets-demo-store-en, step 3): the same words with the control 'Activate', joined S02-V-438, and S02-V-439 under S02-VP-29, as S02-SA-026's control 'فعل الآن' stands in both (the seller's controls switch the multiple markets feature on).
+- S02-SA-527 (Products > Multi Market, the public demo, step 5): the control 'Create your first market', joined S02-V-438. 'Sell across countries and markets' states no definer, so it isn't placed under S02-VP-26.
+- S02-SA-530 (/localization/journey, 'Default market', step 17): 'Create your first market and choose the countries and settings that best fit your customers.', the words of S02-SA-061, with 'Countries Saudi Arabia' and the control 'Create market', joined S02-V-431 under S02-VP-26 (countries define a market) and S02-V-438, where S02-SA-061 stands.
+- S02-SA-531 (the default market's countries field, step 7): 'Select countries [Search] Saudi Arabia United Arab Emirates Kuwait Qatar Bahrain Oman Egypt United Kingdom United States', joined S02-V-431.
+- S02-SA-532 (the dialog after 'Create market', run 20261028T155312Z-journey-markets-public-demo-en, step 29): 'Confirm activating this feature', joined S02-V-438 and S02-V-439, as S02-SA-026's 'اضغط (تأكيد)'; 'Once enabled, it cannot be disabled except by contacting the Account Manager.', joined S02-V-473 under S02-VP-29 (the account manager), with S02-SA-055 and S02-SA-059.
+- S02-SA-533 (the write the 'Confirm' sent, POST api.salla.dev/admin/v2/multi-countries/activate, the same run): its body's 'countries' joined S02-V-431; the write on the seller's 'Confirm' joined S02-V-438 and S02-V-439, as S02-SA-532.
+- S02-SA-534 (the write's 422 answer, the same run): 'The multi-country feature was previously deactivated. To reactivate it, please contact support.' Two new rows, each its own answer by rule 4, as S02-SA-054 ('Contact your account manager to enable this feature.') stands in S02-V-472 and S02-V-473: S02-V-488 under S02-VP-28 and S02-V-489 under S02-VP-29, 'To reactivate it, please contact support.' (support, a party the statement names). That the multi-country feature is the multiple markets feature is a reading, marked in both rows.
+
+zid (the runs and structures of 28 October on the demo store 127604 and the development store 3277610, and zid's changelog):
+- S02-ZD-485 (the subscription policies of the demo store 127604, plan new_professional.yearly, run 20261028T144855Z-dashboard-routes-en, step 1): '"key": "markets_management.active_markets", "enabled": true, "config": {"limit": 5}', the key and limit of S02-ZD-151, joined S02-V-445 under S02-VP-27.
+- S02-ZD-487 (the Kuwait market's manage page on the development store 3277610, run 20261028T170107Z-devstore-markets-en, step 12): 'Countries Kuwait [Select countries]' joined S02-V-440 under S02-VP-26; the page's controls ('Save', 'Market name (Arabic)', 'Countries', 'Market currency', 'Show market Publish market') joined S02-V-447 under S02-VP-29 (the seller changes a market). It shows no control that creates a market, so it isn't placed under S02-VP-28.
+- S02-ZD-488 (the dashboard's code, the save of route settings/markets/:id/manage): 'country_codes:r' joined S02-V-440; the save joined S02-V-447, read as the save of the seller's changes on S02-ZD-487's page (a reading, marked in the row: the code's words name no party; see "Problems").
+- S02-ZD-492 (the dashboard's message common:upgrade.marketLimitReached): 'You have reached the maximum number of markets allowed in your package.', joined S02-V-444 under S02-VP-27 (the plan limits how many markets a store holds).
+- S02-ZD-494 (zid's changelog, changelog.zid.sa/ar, its entry 'المنتجات ١٨, ١٠, ٢٠٢٦'): 'ويبدأ متجرك بسوق رئيسي تلقائيًا' (my translation: and your store starts with a main market automatically) is the new row S02-V-490 under S02-VP-28 (the platform, by 'تلقائيًا', automatically: rule 4); 'وتقدر تضيف أسواق أخرى حسب باقتك' (my translation: and you can add other markets according to your plan) joined S02-V-446 under S02-VP-28 (the seller) and S02-V-444 under S02-VP-27 (the plan). 'سوق رئيسي' names a market, not what defines it, so it isn't placed under S02-VP-26.
+
+### RD2-S4: rows replaced or removed
+
+- S02-V-442 (zid, S02-VP-26): `gap` S02-ZD-G06, removed; its leads S02-ZD-471 and S02-ZD-472 joined S02-V-440. Gap-closing settled S02-ZD-G06: the work list names no gap or absence for the point.
+- S02-V-447 (zid, S02-VP-29): `gap` S02-ZD-G05, replaced by the answer 'Remove Kuwait This market will be permanently deleted.' (S02-ZD-473, the seller); S02-V-486 ('"slug": "markets.delete", "name": "Delete markets"', S02-ZD-461) added beside it. Gap-closing settled S02-ZD-G05: the work list names no gap or absence for the point.
+- New rows: S02-V-486 and S02-V-489 (S02-VP-29), S02-V-487, S02-V-488 and S02-V-490 (S02-VP-28).
+
+### RD2-S4: rows `not covered`
+
+None. Salla and zid have no `gap`, `absent` or `not covered` row left under RD2's points.
+
+### RD2-S4: matching (rule 5)
+
+The `raised_by` of S02-VP-26 (S02-SH-077, S02-SH-065, S02-SH-279), S02-VP-27 (S02-SH-111, S02-SH-301, S02-SH-286), S02-VP-28 (S02-SH-115, S02-SH-116, S02-SH-288) and S02-VP-29 (S02-SH-061, S02-SH-128, S02-SH-288) hold only shopify's statements. The new rows share no term, identifier or definition with them: S02-V-486 and S02-V-487 name zid's own permission slugs, where S02-SH-288 names the error code 'USER_LACKS_PERMISSION'; S02-V-490 says what S02-SH-116 says ('created for you automatically'), with no term of `terms.tsv` in common; S02-V-488 and S02-V-489 name support, whom no raised_by statement names. Each takes `answers` alone. Statements joined to rows of their own platform were compared with those rows' statements: S02-SA-517 and S02-SA-518 with S02-SA-053 (the same words), S02-SA-530 with S02-SA-061 (the same words), S02-ZD-485 with S02-ZD-151 (the same key, 'markets_management.active_markets'); rechecked, the rows joined (S02-V-431, S02-V-438, S02-V-439, S02-V-440, S02-V-444, S02-V-445, S02-V-446, S02-V-447, S02-V-473) keep `answers`, since rule 5's other bases compare with another platform's statement.
+
+### RD2-S4: new kinds, searches and x_words
+
+- New kinds: none; (e)'s points take no kind (rule 3).
+- Searches for earlier platforms' rows: none; the second pass raised no point.
+- x_words added for zid: 'market' (S02-VP-26: 'Market details', S02-ZD-487); 'markets; أسواق' (S02-VP-27: S02-ZD-492, S02-ZD-494); 'markets; أسواق; سوق رئيسي' (S02-VP-28: 'Create markets', S02-ZD-460; S02-ZD-494); 'market; markets' (S02-VP-29: 'Remove market', S02-ZD-473; 'Delete markets', S02-ZD-461). None for salla: its statements call X 'market', as salla's x_words already hold it.
+
+### Candidates for a new point (RD2-S4)
+
+None. Every statement of these tasks that answers one of (e)'s questions does so for salla's or zid's market, a market a store sells into, the one X of (e)'s points. Salla's 'multi-country feature' (S02-SA-534) and 'this feature' (S02-SA-532) are the feature that holds the markets, as S02-SA-054's 'this feature' is in S02-V-472, not another X.
+
+### RD2-S4: row notes added
+
+- S02-V-441: its note now says that S02-V-442, the gap row its evidence names (S02-ZD-G06), is removed, that its leads joined S02-V-440, and why S02-ZD-471 doesn't join S02-V-441 (rule 0).
+
+### RD2-S4: problems with the method
+
+- RD2's slice was cut again during this part (its `statements.tsv` at 22:46 on 28 October, after the work list at 22:38). S02-ZD-492 printed kind 'unknown' before and 'shipped' after; every row of this part was written after the new cut, so its rows take the new kinds. No other statement of these tasks changed its kind, bullets or scope.
+- S02-ZD-488 joined S02-V-447 (the seller changes a market) on its identifier, the save of the admin's route settings/markets/:id/manage, whose page S02-ZD-487 shows with its 'Save'; the code's own words name no party, and the row marks this as a reading. If code that names no party can't answer `who changes or removes "market"` through its route, S02-ZD-488 leaves S02-V-447 and stays in S02-V-440.
+- S02-SA-518 ('Activate'), S02-SA-532 ('Confirm activating this feature') and S02-SA-533 (the write on 'Confirm') joined S02-V-439 under S02-VP-29, and S02-SA-534 ('To reactivate it, please contact support.') made S02-V-489 there, as S02-SA-026 (the seller's controls that switch the feature on) and S02-SA-054 ('Contact your account manager to enable this feature.') stand under S02-VP-29 beside S02-VP-28 (rule 4, as widened on 27 October 2026). If switching the multiple markets feature on isn't a change of a market, they leave S02-V-439, and S02-V-489 goes, with S02-SA-534 staying in S02-V-488.
+- S02-ZD-G06 asked what the default market (السوق الافتراضي, S02-ZD-012) holds. The work list names no gap left, and the leads show the primary market 'Main Market' (السوق الرئيسي) and its countries (S02-ZD-471); S02-ZD-494 says the store starts with a main market (سوق رئيسي) automatically. Zid's terms hold السوق الرئيسي and السوق الافتراضي as separate terms, so S02-ZD-471 joined S02-V-440 only, and S02-V-446's note (S02-ZD-012 doesn't say who creates the default market) stands beside the new row S02-V-490. If the two terms name one market, S02-ZD-471 joins S02-V-441 too. The coordinator decides.
+- Salla's `a2.tsv` names S02-SA-517, S02-SA-518, S02-SA-527, S02-SA-528 and S02-SA-529 for S02-VP-26, and S02-SA-530 for S02-VP-27, as leads. Their words state no definer of a market ('selling in multiple countries', 'Sell across countries and markets'), or, for S02-SA-530, no limit: its marks 'Market name *' and 'Market branches and warehouses *' would be a rule on what a market must hold only as a reading of the asterisks. So they aren't placed under those points.
+- `place` tasks have no `done` line, as RD2-S2 and RD2-S3 read the brief: `second_pass_list.py --check` lists only revisit, reread and note tasks. Both revisits have their `done` lines.
 
 # RD3
 
@@ -3321,4 +3526,166 @@ None. Every task named its statements, each was printed by id, and no point was 
 
 ### Candidates for a new point
 - None. Each statement that answers one of (f)'s questions does so for an X of one of rule 1's kinds. Those noted above fail on the answer, which is none of rule 4's four phrases and names no party, not on their X.
+
+## Second pass, RD3-S12: zid, bullet f, the Salla and Zid round's tasks
+
+From A2-ZD-R and A3-ZD-R (other-product-class f44be3f, folder `zid/`). The new leads are observations of two stores, the public demo (127604, Professional) and the development store (3277610), which held a second market (Kuwait) for a time; both have the feature flag `must_use_markets_pricing` false. Each row written here keeps its statements' scope (store, plan, flag, run and step): what one store showed on one day isn't what every Zid store does. The absences S02-ZD-N05 to S02-ZD-N16, each that the dashboard's complete list of routes holds no page under a market for one setting, are confirmed by A3-ZD-R; where a lead gives the row's answer, the absence is cited in that row's `basis_evidence`, as RD3-S9 did for Salla's (S02-V-716, S02-V-886, S02-V-1093).
+
+### Revisit S02-V-1067 (zid, S02-VP-67, locations): was `gap` (S02-ZD-G12)
+- Replaced by the whole store (a reading): S02-ZD-451 (the Priority for withdrawal from warehouse page: one ordered list of the store's locations, no market field) and S02-ZD-452 (the locations answer: one `fulfillment_priority` per location, no market field); absence S02-ZD-N07 cited there.
+- Added S02-V-1123, gap S02-ZD-G25 (in place of S02-ZD-G12): per sales channel or per buyer's city.
+- S02-V-791 (a market, a reading of S02-ZD-280's sales channel per inventory) stays. The other leads (S02-ZD-269 to S02-ZD-287) stay as the revisit of S02-V-791 placed or noted them.
+
+### Revisit S02-V-1070 (zid, S02-VP-72, who sets staff access): was `gap` (S02-ZD-G17)
+- Removed: why names no gap, so gap-closing settled S02-ZD-G17. Lead S02-ZD-459 (the Create group page in the store's admin) joined S02-V-796 (the seller), which the platform's rows already hold. The other leads stay in S02-V-796, S02-V-1069 or noted, as the earlier revisit placed them. Absence S02-ZD-N11 is of a route under a market, so it is cited under S02-VP-71 (S02-V-795), not here.
+
+### Revisit S02-V-774 (zid, S02-VP-55, checkout and customer accounts): was `gap` (S02-ZD-G10)
+- Replaced by the whole store (a reading): S02-ZD-448 (Buy as a guest, shown once on settings/checkout, no country or market field) and S02-ZD-449 (the store's settings answer, one value per key: `is_single_page_checkout_enabled`); absence S02-ZD-N05 cited there.
+- Added S02-V-1124, gap S02-ZD-G24 (in place of S02-ZD-G10): per buyer's country.
+- S02-ZD-448 also joined S02-V-775 (S02-VP-56, the seller: a control in the store's admin).
+- S02-ZD-449 names several settings (rule 2), so it also joined S02-V-753 (S02-VP-41, the whole store: one `config_currency`) and S02-V-759 (S02-VP-43, the whole store: one `config_language`), and goes under S02-VP-68 and S02-VP-77 with their revisits.
+- The other leads (S02-ZD-247 to S02-ZD-254, S02-ZD-257) stay as the earlier revisit placed or noted them.
+
+### Revisit S02-V-789 (zid, S02-VP-65, returns and cancellations): was `gap` (S02-ZD-G22)
+- Replaced by the whole store (a reading): S02-ZD-466 (the Exchange and returns page, one page of the store, no country or market field; its 'For Saudi stores' points to the Ministry's rules and sets no value); absence S02-ZD-N15 cited there.
+- Added S02-V-1125, gap S02-ZD-G28 (in place of S02-ZD-G22): per buyer's country.
+- S02-ZD-466 also joined S02-V-790 (S02-VP-66, the seller: the page's Save in the store's admin). The other leads (S02-ZD-212 to S02-ZD-219, S02-ZD-221, S02-ZD-222) stay as the earlier revisits placed or noted them.
+
+### Revisit S02-V-792 (zid, S02-VP-68, contact information shown to buyers): was `gap` (S02-ZD-G11)
+- Replaced by the whole store (a reading): S02-ZD-450 (the Store information page: one Email and one Phone that appear to the customer in the storefront, no market or country field) and S02-ZD-449 (one `config_email`, `config_telephone` and `commercial_registration_number`); absence S02-ZD-N06 cited there. Why names no gap: S02-ZD-G11 was settled by gap-closing, and goes.
+- S02-ZD-450 also joined S02-V-803 (S02-VP-79, the seller). S02-ZD-266 to S02-ZD-268 stay in S02-V-803.
+
+### Revisit S02-V-795 (zid, S02-VP-71, staff access): was `gap` (S02-ZD-G17)
+- Replaced by the whole store (a reading): S02-ZD-459 (the Create group page asks a group's name and users, no market field); absence S02-ZD-N11 cited there. Why names no gap: S02-ZD-G17 was settled by gap-closing, and goes.
+- S02-ZD-459 also joined S02-V-796 (S02-VP-72, the seller), with the revisit of S02-V-1070. The other leads stay as the earlier revisit placed or noted them.
+
+### Revisit S02-V-799 (zid, S02-VP-75, privacy and consent): was `gap` (S02-ZD-G18)
+- Replaced by the whole store (a reading): S02-ZD-462 (the Privacy policy page, headed 'Privacy policy for your store', no country or market field); absence S02-ZD-N12 cited there.
+- Added S02-V-1126, gap S02-ZD-G26 (in place of S02-ZD-G18): the policy or the opt-outs per buyer's country, and the opt-outs per market.
+- S02-ZD-462 also joined S02-V-808 (S02-VP-84, the seller). The other leads (S02-ZD-334 to S02-ZD-339) stay as the earlier revisit placed or noted them.
+
+### Revisit S02-V-801 (zid, S02-VP-77, units and time zone): was `gap` (S02-ZD-G21)
+- Replaced by the whole store (a reading; `answers;term`): S02-ZD-465 ('Selecting your store's time zone', one field of Business address) and S02-ZD-449 (one `default_timezone`); absence S02-ZD-N14 cited there. `term`: 'Time zone', the same words as S02-SH-246 (raised_by); terms.tsv defines neither differently.
+- Added S02-V-1127, gap S02-ZD-G27 (in place of S02-ZD-G21): whether any setting holds a unit of weight or measurement.
+- S02-ZD-465 also joined S02-V-1103 (S02-VP-91, the seller), where S02-ZD-346 stays.
+
+### Revisit S02-V-804 (zid, S02-VP-80, store status): was `gap` (S02-ZD-G20)
+- Replaced by the whole store (a reading): S02-ZD-463 ('Manage your store closure or stop receiving orders.', the Hours of operation page) and S02-ZD-464 (one set of the store's availability settings, `is_store_closed`); absence S02-ZD-N13 cited there. Why names no gap: S02-ZD-G20 was settled by gap-closing, and goes.
+- S02-ZD-463 also joined S02-V-805 (S02-VP-81, the seller). S02-ZD-340 to S02-ZD-345 stay in S02-V-805 and S02-V-1087.
+
+### Revisit S02-V-870 (zid, S02-VP-85, the store's country): was `gap` (S02-ZD-G23)
+- Replaced by the whole store (a reading): S02-ZD-467 (one country in the store's business place, Business address > Country) and S02-ZD-471 (the primary market's own countries, unchanged after the store's country was changed to Kuwait, as its scope records); absence S02-ZD-N16 cited there.
+- Why names gap S02-ZD-G29, which is under a bullet outside RD3's slice (the slice's gaps for zid end at S02-ZD-G28), so it gives no gap row, as the earlier revisit found for S02-ZD-G01.
+- S02-ZD-471 also joined S02-V-751 (S02-VP-41, a market: the market's own `main_currency`). S02-ZD-226 stays noted. S02-ZD-468 and S02-ZD-472 are outside the slice, left. S02-ZD-467 is under (a) too: RD1's, left.
+
+### Revisit S02-V-875 (zid, S02-VP-86, apps): was `gap` (S02-ZD-G15)
+- Replaced by the whole store (a reading; `answers;term`): S02-ZD-455 (the My apps page: one list of the store's activated and deactivated apps, no market field) and S02-ZD-456 (one list of the store's installed applications); absence S02-ZD-N09 cited there. The 'market' in S02-ZD-456's path is Zid's app market (سوق تطبيقات زد), a homonym, not a market the store sells into: no basis rests on it. `term`: 'apps', as S02-BC-147 (raised_by). Why names no gap: S02-ZD-G15 was settled by gap-closing, and goes.
+- The other leads stay noted (S02-ZD-303, S02-ZD-305, S02-ZD-307, S02-ZD-309 to S02-ZD-312, RD3-S4) or in S02-V-1111 (S02-VP-92, the seller), as earlier parts placed them. S02-ZD-308 is outside the slice, left.
+
+### Revisit S02-V-879 (zid, S02-VP-87, analytics and tracking): was `gap` (S02-ZD-G14)
+- Replaced by the whole store (a reading): S02-ZD-453 and S02-ZD-454 (each tracking app's activation page asks one Account code, no market field) and S02-ZD-456 (one Google Analytics among the store's installed apps); absence S02-ZD-N08 cited there. Why names no gap: S02-ZD-G14 was settled by gap-closing, and goes.
+- S02-ZD-453 and S02-ZD-454 also joined S02-V-883 (S02-VP-88, the seller) and S02-V-1111 (S02-VP-92, the seller: an app's activation is the app's own setting). S02-ZD-293 to S02-ZD-298 stay in S02-V-883; S02-ZD-299 stays noted.
+
+### Revisit S02-V-887 (zid, S02-VP-89, notifications to the merchant): was `gap` (S02-ZD-G16)
+- Replaced by the whole store (a reading): S02-ZD-457 (the Staff notifications page: one set of statuses and e-mails) and S02-ZD-458 (one `order_statuses` and one `emails`, no market field); absence S02-ZD-N10 cited there. Why names no gap: S02-ZD-G16 was settled by gap-closing, and goes.
+- S02-ZD-457 also joined S02-V-891 (S02-VP-90, the seller). S02-ZD-313 to S02-ZD-317 stay in S02-V-891, S02-ZD-318 in S02-V-1088.
+
+### `place` tasks (A2-ZD-R and A3-ZD-R)
+- S02-ZD-474: joined S02-V-771 (S02-VP-53, a market: 'By default, all markets use your store's active theme. You can assign a different theme to each market', a market that takes the store's value until the seller changes it, rule 4) and S02-V-773 (S02-VP-54, the seller: 'You can assign').
+- S02-ZD-487: joined S02-V-751 (S02-VP-41, a market: the Kuwait market's 'Market currency [KWD]') and S02-V-755 (S02-VP-42, the seller: a field of the market's manage page in the store's admin). Its 'Product prices and currency' is a section heading that shows no value, so it joins no row of S02-VP-49. Under (e) too: RD2's, left.
+- S02-ZD-488: joined S02-V-751 (a market: the code that saves a market sends 'main_currency:t.market_currency' with the market's id). Not under S02-VP-42: the code's words name no party, and the value it sends is the form's (rule 4). Under (e) too: RD2's, left.
+- S02-ZD-489: joined S02-V-766 (S02-VP-49, a market: 'Set different product prices for each market and customer type') and S02-V-767 (S02-VP-50, the seller). Per customer type is none of rule 4's four phrases; it stays in the evidence.
+- S02-ZD-490: joined S02-V-751 (S02-VP-41, a market: 'Customer Wallet uses this market's currency.'), S02-V-769 (S02-VP-51, a market, a reading: the Customer Wallet read as store credit) and S02-V-756 (S02-VP-42, the platform, a reading: 'Contact support if you need to change it.', a change made by Zid's support, not by a control of the store's admin).
+- S02-ZD-491: joined S02-V-771 (a market: 'Customers from this market will see the selected theme') and S02-V-773 (the seller: 'Select a theme to assign to this market.').
+- S02-ZD-493: joined S02-V-763 (S02-VP-47) and S02-V-766 (S02-VP-49), a market ('حسب السوق المستهدف', my translation: 'by the target market'), and S02-V-765 (S02-VP-48) and S02-V-767 (S02-VP-50), the seller ('تقدر', my translation: 'you can').
+
+### x_words added for zid
+- S02-VP-55 'Checkout page options; Buy as a guest; is_single_page_checkout_enabled'; S02-VP-65 'Exchange and returns'; S02-VP-67 'Priority for withdrawal from warehouse; fulfillment_priority'; S02-VP-68 'Store information; Email; Phone; config_email; config_telephone'; S02-VP-71 'Create group; Group information'; S02-VP-75 'Privacy policy'; S02-VP-77 'Time zone; default_timezone'; S02-VP-80 'Hours of operation; store closure; is_store_closed'; S02-VP-85 'Business address > Country; business_location'; S02-VP-86 'My apps; تطبيقاتي; installed_applications'; S02-VP-87 'Google Analytics; Google Tag Manager; Meta pixel; TikTok pixel; Account code'; S02-VP-89 'Staff notifications; order_statuses; emails'; S02-VP-41 'Market currency; main_currency'; S02-VP-49 'product prices; B2B pricing'; S02-VP-51 'Customer Wallet'; S02-VP-53 'Used theme; Assign theme; active theme'.
+
+### Statements noted (rule 2)
+- None: every lead under (f) and every place task's statement is placed. The earlier leads stay as earlier parts placed or noted them, and their notes stay as they are.
+
+### Candidates for a new point
+- S02-ZD-449's key `enforce_2fa` ('"key":"enforce_2fa","value":"0"'): X is two-step sign-in enforced through the store's settings, and the statement answers what it takes its value per (one value in the store's settings answer, the whole store, a reading). No kind of rule 1 fits: staff access is what staff may manage, not how they sign in; and its words don't say whose sign-in it governs, so it may be a setting of the platform's own account, which isn't a setting of the store. The statement is placed for its other keys (S02-VP-41, S02-VP-43, S02-VP-55, S02-VP-68, S02-VP-77), so this is listed here and not as a note.
+
+### Words searched for
+- None: the second pass raises no point, so rule 3's search for earlier platforms' rows doesn't arise.
+
+### Calls this part made, and problems with the brief, the work list or the tools
+- A confirmed absence beside a lead that answers: one `the whole store (a reading)` row per point, citing the absence in its `basis_evidence`, as RD3-S9 did, and no separate `absent` row; where the revisit's why names a newer gap ("in place of" the older), a `gap` row stands beside it (S02-V-1123 to S02-V-1127).
+- The reading `the whole store` rests on a page or answer that holds the setting once, with no market or country field, outside the routes under a market, on the development store with two markets and `must_use_markets_pricing` false; the rows' scope keeps the store, plan, flag, run and step.
+- S02-V-1070 was removed, not replaced by `absent`: absence S02-ZD-N11 is of a route under a market, which S02-VP-71 asks, not who sets staff access (S02-VP-72).
+- S02-ZD-449 names several settings, so it joined the rows of each point it answers (S02-VP-41, S02-VP-43, S02-VP-55, S02-VP-68, S02-VP-77); S02-ZD-453 and S02-ZD-454 joined S02-VP-92's seller row beside S02-VP-88's.
+- S02-ZD-471 sits in S02-V-870 by a reading of its scope (the store's country changed to Kuwait and the primary market's countries didn't); S02-ZD-490 sits in S02-V-756 (the platform: its support) and S02-V-769 (store credit) by readings, both marked.
+- The RD3 slice's statements.tsv was cut again at 22:46 while this part ran: S02-ZD-489 to S02-ZD-491 printed as kind `unknown` before and `shipped` after, and their rows took `shipped`.
+- 11 of the 13 revisits' ids already had lines in done.tsv from earlier rounds, so `second_pass_list.py --check` listed only S02-V-1067 and S02-V-1070 before this part ran, as the message said it would.
+- Gap S02-ZD-G29, which S02-V-870's why names, is under a bullet outside RD3's slice, so it gives no row here.
+
+### After the check (RD3-S12)
+- `check_subject.py` on a copy holding only b/RD3: no `error` lines; 17 warnings (Shopify's and WooCommerce's quote lengths) and 15 reviews (quotes found only in a page's source, the coordinator's, among them zid's S02-ZD-C008, C086, C313, C314). RD3's rows in `unplaced.tsv`: 11 of Salla's (S02-SA-513 to S02-SA-537, RD3-S13's); none of Zid's.
+- `second_pass_list.py --check`: RD3's list holds only S02-V-1096 (salla, RD3-S13's).
+
+## Second pass, RD3-S13: salla, bullet f, the Salla and Zid round's tasks
+
+From A2-SA-R, which read the runs of 28 October for capture requests H-001 to H-005 (observed-sa at b0bd0b16): six revisits of `gap` rows whose gaps are still open (S02-V-1092, S02-V-1094, S02-V-1096, S02-V-1097, S02-V-731, S02-V-869), and four place tasks (S02-SA-527, S02-SA-528, S02-SA-529, S02-SA-535). Each new statement's scope (the store, its plan) is kept in the rows it joined, which take their scope again from all their statements.
+
+### Revisit S02-V-1092 (salla, S02-VP-65, returns and cancellations): was `gap` (S02-SA-G13)
+- Left `gap` S02-SA-G13, which why names, with a row note. No lead gives an answer to S02-VP-65; absence S02-SA-N01 stays cited in S02-V-716 (the whole store), as RD3-S9 placed it.
+- New leads S02-SA-530 (the public demo's form that creates its first market) and S02-SA-533 (the request its Confirm sends) name the market's language, currency and branches, and no return or cancellation setting. Both joined S02-V-680 (S02-VP-43), S02-V-676 (S02-VP-41) and S02-V-718 (S02-VP-67), a market the store sells into. S02-SA-530 also joined S02-V-681 (S02-VP-44), S02-V-678 (S02-VP-42) and S02-V-734 (S02-VP-78), the seller: each of the three fields has a control 'Customize' in the store's admin (rule 4). S02-SA-533 is under none of the who-sets points: the request's keys name no party, and the values it sends are the form's (as RD3-S12 did for S02-ZD-488). Its keys 'name', 'translations' and 'countries' are (e)'s, RD2's.
+- New lead S02-SA-532, the confirmation shown before the market is created, names no return or cancellation setting either:
+- S02-SA-532 (f): says activating markets 'will affect how product quantities are configured and how inventory is deducted in your store', without saying what they take their value per or who sets them; and that 'Once enabled, it cannot be disabled except by contacting the Account Manager', of the markets feature itself, (e)'s question (RD2), not a setting of one of rule 1's kinds
+- Earlier leads stay as earlier parts placed them: S02-SA-382 in S02-V-708, S02-V-709 and S02-V-712 (RD3-S6); S02-SA-437 and S02-SA-443 in S02-V-716 and S02-V-717, and S02-SA-439 in S02-V-699 and S02-V-701 (RD3-S9).
+
+### Revisit S02-V-1094 (salla, S02-VP-86, apps): was `gap` (S02-SA-G15)
+- Left `gap` S02-SA-G15, which why names, with a row note. No lead gives an answer to S02-VP-86; absence S02-SA-N03 stays cited in S02-V-1093 (the whole store), as RD3-S9 placed it.
+- New leads S02-SA-513 and S02-SA-514 are the App Store's filter of all apps, the same labels on two stores; noted:
+- S02-SA-513 (f): the App Store's filter of all apps ('Filter Categories Delivery service type Shipping zone Support change company name Company type Price Rating Salla Apps Reset'), on the merchant store (store-1-da, Basic): filters of the apps the App Store lists, not a setting of the store; names no value of the store's apps, what one is taken per, or who sets it
+- S02-SA-514 (f): the same filter, on the new UAE store (store 21123834, Basic): as S02-SA-513
+- Earlier leads stay as earlier parts placed or noted them: S02-SA-409 to S02-SA-411 noted (RD3-S6); S02-SA-413 to S02-SA-415 in S02-V-874, S02-V-1095, S02-V-746 and S02-V-1110.
+
+### Revisit S02-V-1096 (salla, S02-VP-87, analytics and tracking): was `gap` (S02-SA-G08)
+- Left `gap` S02-SA-G08, which why names, with a row note. No lead gives an answer to S02-VP-87.
+- New leads S02-SA-530, S02-SA-532 and S02-SA-533 (the public demo's first market) name no analytics or tracking setting; they are placed or noted with the revisit of S02-V-1092, above.
+- Earlier lead S02-SA-442 stays in S02-V-878 (the whole store), as RD3-S9 placed it.
+
+### Revisit S02-V-1097 (salla, S02-VP-89, notifications to the merchant): was `gap` (S02-SA-G14)
+- Left `gap` S02-SA-G14, which why names, with a row note. No lead gives an answer to S02-VP-89; absence S02-SA-N02 stays cited in S02-V-886 (the whole store), as RD3-S9 placed it.
+- New leads S02-SA-530, S02-SA-532 and S02-SA-533 name no notification to the merchant or staff; they are placed or noted with the revisit of S02-V-1092, above.
+- Earlier leads stay as RD3-S9 placed them: S02-SA-438 in S02-V-886 and S02-V-890; S02-SA-439 (guest checkout's) in S02-V-699 and S02-V-701.
+
+### Revisit S02-V-731 (salla, S02-VP-76, the store's address): was `gap` (S02-SA-G12)
+- Left `gap` S02-SA-G12, which why names, with a row note. No lead gives an answer to S02-VP-76.
+- New leads S02-SA-536 and S02-SA-537 are the markets module's translations of its section 'contacts' (English and Arabic: 'Contact information', 'Customer support channels', 'Social media accounts'; 'معلومات التواصل', 'قنوات خدمة العملاء', 'حسابات التواصل الاجتماعي'). They name contact information shown to buyers, not the store's address, so they joined S02-V-720 (S02-VP-68, a market the store sells into): a reading from their identifier (ui-merchant-localization) and scope ('every store's dashboard: the markets module'), rule 5, beside S02-SA-028 and S02-SA-038, which name 'معلومات التواصل' among each market's sections. They name no one who sets it, so they are not under S02-VP-79.
+- Earlier leads S02-SA-421 and S02-SA-425 stay in S02-V-734 (S02-VP-78, locations), as RD3-S6 placed them.
+
+### Revisit S02-V-869 (salla, S02-VP-85, the store's country): was `gap` (S02-SA-G11)
+- Left `gap` S02-SA-G11, which why names, with a row note. No lead gives an answer to S02-VP-85.
+- New leads S02-SA-530 and S02-SA-533 name the countries of the market being created ('Countries Saudi Arabia' in the form; the key 'countries' in the request): the countries that define the market, (e)'s question (RD2), not a country the market or its storefront holds as the store's own, which S02-VP-85 asks. S02-SA-532 names no country. All three are placed or noted with the revisit of S02-V-1092, above.
+- Earlier leads stay as earlier parts placed or noted them: S02-SA-426 to S02-SA-430 noted (RD3-S6); S02-SA-440 in S02-V-676 and S02-V-680.
+
+### `place` tasks (A2-SA-R)
+- S02-SA-527 (f): the public demo's Multi Market page, before a market exists ('Expand into new markets Sell across countries and markets while delivering a localized shopping experience from one store.'): names no setting of the store, only 'a localized shopping experience', and nothing a value is taken per or who sets it; its markets are (e)'s, RD2's
+- S02-SA-528: joined S02-V-688 (S02-VP-49, a market: 'Set market-specific pricing Adjust product prices to match each market and currency.') and S02-V-689 (S02-VP-50, the seller: the page's instruction to the merchant). Its 'independent settings for each market' names a market's settings in general, of no one kind of setting, as the same words in S02-SA-065 were noted in the first pass. Its currency is what prices are adjusted to, not a setting it says takes a value per market, so it joins no row of S02-VP-41.
+- S02-SA-529: joined S02-V-696 (S02-VP-53, a market: 'Customize each market Tailor your store’s design and content') and S02-V-697 (S02-VP-54, the seller); S02-V-699 (S02-VP-55, a market: 'Choose the sign-in methods available to customers in each market.') and S02-V-701 (S02-VP-56, the seller); S02-V-684 (S02-VP-47, a market: 'Control which products are available in each market') and S02-V-686 (S02-VP-48, the seller). Each who-sets row rests on the page's instruction to the merchant in the store's admin, as S02-SA-078 to S02-SA-083 rest on the same module's.
+- S02-SA-535: joined S02-V-719 (S02-VP-67, the buyer's country or location, a reading: 'Personalize your customers' shopping experience using the nearest branch or warehouse.', 'nearest' read as nearest the customers it names, as S02-SA-034's 'الأقرب للعميل') and S02-V-734 (S02-VP-78, the seller: the page's instruction to the merchant). Its scope is the demo store store-markets (Pro).
+- The rows joined keep their bases: `answers` holds for each statement joined, by its own words or, for S02-SA-533, S02-SA-536 and S02-SA-537, its identifier and scope (rule 5); `term` stays as earlier parts found it.
+
+### Candidates for a new point
+- None. The statements this part noted name no setting of the store (S02-SA-513, S02-SA-514, S02-SA-527), or a setting of one of rule 1's kinds without an answer (S02-SA-532's inventory deduction, locations), or the markets feature itself, which (e) asks about (S02-SA-532). S02-SA-528's 'independent settings for each market' names a market's settings in general, of no one kind, as in S02-SA-065.
+
+### Words searched for
+- None: the second pass raises no point, so rule 3's search for earlier platforms' rows doesn't arise.
+
+### Calls this part made, and problems with the brief, the work list or the tools
+- No lead gives an answer to its revisited point, so each of the six `gap` rows stays as it was, with the one gap its why names, and a row note (`rownote`) records the revisit. A `replace` would have written the same row and dropped the note an earlier part left on it.
+- Of the 31 statements, 20 are earlier leads, which stay as RD3-S6, RD3-S8 and RD3-S9 placed or noted them; 11 are new: seven leads (S02-SA-513, S02-SA-514, S02-SA-530, S02-SA-532, S02-SA-533, S02-SA-536, S02-SA-537) and the four place tasks.
+- A lead that answers another point of (f) is placed there, and its not answering the revisited point is recorded under the revisit, not as a note, since a note in rule 2's form says a statement answers none of the bullet's questions.
+- S02-SA-533, a request the admin sent, joined only the rows of what a value is taken per: its keys name no party, as RD3-S12 did for S02-ZD-488. S02-SA-530, the form that sent it, gives the seller by its controls 'Customize'.
+- The Multi Market page's feature texts (S02-SA-528, S02-SA-529, S02-SA-535) are instructions to the merchant in the store's admin, so the seller, as the same module's S02-SA-078 to S02-SA-083 were placed.
+- S02-SA-535 joined S02-V-719, whose basis_evidence reads the branch or warehouse nearest the customer as `the buyer's country` ('the buyer's country or location'), as an earlier part placed S02-SA-034. Nearness is a location, not a country; the row's phrase is that part's call, kept.
+- S02-SA-532 is noted, though A2-SA-R gave it as a lead of S02-VP-67: its words say activating markets affects how inventory is deducted 'in your store', not what it is taken per.
+
+### After the check (RD3-S13)
+- `check_subject.py` on a copy holding only b/RD3: no `error` lines; 17 warnings (Shopify's and WooCommerce's quote lengths) and 14 reviews (quotes found only in a page's source, the coordinator's, and RD1's and RD2's statements, whose folders the copy leaves out). RD3's rows in `unplaced.tsv`: none.
+- `second_pass_list.py --check`: RD3's list holds no revisit, reread or note task without a row in done.tsv.
 
