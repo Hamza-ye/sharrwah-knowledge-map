@@ -5,7 +5,8 @@
 Default: every finished browser run of <platform> with no answers.jsonl yet (a run does not change after it ends);
 --all writes every such run again.
 
-Reads the run's trace.zip: the calls of the pages the run acted on (the pages its .trace members hold snapshots of),
+Reads the run's trace.zip (or its parts, trace.zip.00, .01, ..., when it was cut to stay under GitHub's 100 MB
+limit for one file): the calls of the pages the run acted on (the pages its .trace members hold snapshots of),
 from its .network members, with their bodies from resources/. Writes each JSON response body exactly as received:
   <platform>/raw/runs/<run>/answers/<host>/<path>/<sha256>.json   an answer, under its request path
   <platform>/raw/runs/<run>/answers.jsonl   one row per answer: file, host, method, path, bytes, calls (step, between,
@@ -30,6 +31,14 @@ from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parent.parent
 READS = {'GET', 'HEAD', 'OPTIONS'}
+
+
+def trace_zip(run):
+    """The run's trace: trace.zip, or the parts it was cut into in order (trace.zip.00, trace.zip.01, ...)."""
+    if (run / 'trace.zip').exists():
+        return zipfile.ZipFile(run / 'trace.zip')
+    parts = sorted(run.glob('trace.zip.[0-9][0-9]'))
+    return zipfile.ZipFile(io.BytesIO(b''.join(p.read_bytes() for p in parts))) if parts else None
 
 
 def safe(part):
@@ -64,7 +73,7 @@ def run_answers(run):
         shutil.rmtree(out)
     steps = [json.loads(l) for l in open(run / 'actions.jsonl') if l.strip()] if (run / 'actions.jsonl').exists() else []
     starts = [s['t_start'] for s in steps]
-    z = zipfile.ZipFile(run / 'trace.zip')
+    z = trace_zip(run)
     names = set(z.namelist())
 
     def res(f):
@@ -136,7 +145,8 @@ def main():
     runs = ROOT / platform / 'raw' / 'runs'
     every = '--all' in rest
     names = [a for a in rest if a != '--all'] or sorted(
-        p.name for p in runs.iterdir() if (p / 'run.json').exists() and (p / 'trace.zip').exists()
+        p.name for p in runs.iterdir() if (p / 'run.json').exists()
+        and ((p / 'trace.zip').exists() or (p / 'trace.zip.00').exists())
         and (every or not (p / 'answers.jsonl').exists()))
     for name in names:
         rows = run_answers(runs / name)

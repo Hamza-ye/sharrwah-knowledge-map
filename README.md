@@ -35,8 +35,9 @@ Each platform folder holds:
 ## What is in git
 
 Everything a run writes, as written: traces, screenshots, HTML, answers and archives included, with tokens, cookies
-and passwords as received. Not in git: `.env` (the accounts' sign-in store), the capture browsers' profiles, `.venv`
-and `node_modules`.
+and passwords as received. A file over GitHub's 100 MB limit is held as ordered parts (`trace.zip.00`, `trace.zip.01`,
+…; `cat trace.zip.?? > trace.zip` gives it back; its hash is in the run's note). Not in git: `.env` (the accounts'
+sign-in store), the capture browsers' profiles, `.venv` and `node_modules`.
 
 ## Citing
 

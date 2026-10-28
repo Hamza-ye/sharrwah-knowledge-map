@@ -78,6 +78,10 @@ sha256sum -c --quiet zid/index/SHA256SUMS
 git add -A
 ```
 
+A run file over 95 MB is cut in order before `git add` (GitHub refuses a file over 100 MB):
+`split -b 90000000 -d -a 2 trace.zip trace.zip.`, check that `cat trace.zip.?? | sha256sum` equals the file's
+sha256, remove the file, and give the hash in the run's note; `capture/answers.py` reads the parts.
+
 Note anything unusual about a run in `<platform>/index/run-notes.tsv`. A run that a later run re-drives in full is
 removed (its folder and its notes). Then commit and push: origin pushes over SSH (`git remote set-url --push origin
 git@github.com:Hamza-ye/other-product-class.git`). A push of more than a few tens of MB can drop on this connection:
