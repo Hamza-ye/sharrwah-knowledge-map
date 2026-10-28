@@ -78,6 +78,29 @@ def kind_of(source, roots, locator=""):
         return "shipped", "a file of the WooCommerce release"
     if re.match(r"^https?://", source):
         return kind_of_url(source)
+    o = re.match(r"^other-product-class(?:@[0-9a-f]+)?:([a-z]+)/(.+)$", source)
+    if o:      # the founder's local agent's captures of Zid, BigCommerce and WooCommerce, one folder per platform
+        plat, path = o.group(1), o.group(2).strip().lstrip("/")
+        if path.startswith("raw/runs/"):
+            run = path.split("/")[2] if len(path.split("/")) > 2 else ""
+            if re.search(r"terms|pricing|plans|legal|polic", run, re.I):
+                return "official page", f"run {run} read the platform's terms, pricing or legal pages"
+            if re.search(r"help|docs", run, re.I):
+                return "stated", f"run {run} read the platform's documentation"
+            if re.search(r"code|manifest|bundle", run, re.I):
+                return "shipped", f"run {run} fetched the platform's own code"
+            return "observed", f"run {run} records a store, dashboard or session"
+        if path.startswith("structures/"):
+            parts = path.split("/")
+            meta = _structure_meta(os.path.join(roots.get("other-product-class", ""), plat), "/".join(parts[:2]), path) or {}
+            src = meta.get("source") if isinstance(meta, dict) else None
+            if isinstance(src, dict) and isinstance(src.get("uri"), str):
+                k, why = kind_of_url(src["uri"])
+                return k, f"{plat}/{'/'.join(parts[:2])} holds {src['uri'][:80]}: {why}"
+            if isinstance(src, dict) and (src.get("answer") or src.get("run_id")):
+                return "observed", f"{plat}/{'/'.join(parts[:2])} is built from what a store's dashboard answered"
+            return "unknown", f"{plat}/{'/'.join(parts[:2])}'s meta.json names no address or answer"
+        return "unknown", "a file of other-product-class outside runs and structures"
     m = re.match(r"^(observed-sh|observed-sa|sharrwah-knowledge-map)(?:@[0-9a-f]+)?:(.+)$", source)
     if not m:
         return "unknown", "not a known source form"
@@ -137,6 +160,7 @@ def kind_of(source, roots, locator=""):
 if __name__ == "__main__":
     import sys
     roots = {"observed-sh": os.environ.get("OBSERVED_SH", "/home/user/observed-sh"),
-             "observed-sa": os.environ.get("OBSERVED_SA", "/home/user/observed-sa")}
+             "observed-sa": os.environ.get("OBSERVED_SA", "/home/user/observed-sa"),
+             "other-product-class": os.environ.get("OTHER_PRODUCT_CLASS", "/home/user/other-product-class")}
     for s in sys.argv[1:]:
         print(s, "->", *kind_of(s, roots), sep="\t")

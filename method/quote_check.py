@@ -253,6 +253,7 @@ if __name__ == "__main__":
     here = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     roots = {"observed-sh": os.environ.get("OBSERVED_SH", "/home/user/observed-sh"),
              "observed-sa": os.environ.get("OBSERVED_SA", "/home/user/observed-sa"),
+             "other-product-class": os.environ.get("OTHER_PRODUCT_CLASS", "/home/user/other-product-class"),
              "woocommerce-11.2.1": os.environ.get("WOO_RELEASE", "/home/user/woocommerce-release/11.2.1/woocommerce"),
              "sharrwah-knowledge-map": here}
     def show(res, why, share):

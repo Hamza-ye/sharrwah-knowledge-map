@@ -522,3 +522,95 @@ Phase B's second pass found that the statements gap-closing recorded for these p
 Each gap's `read` is its row's `read` with the ledger line's reason. The routes name no address, so `held_index.py` had none to run on. Each row's `gap_ids` now names its gap.
 
 **Check (A2-T):** on a copy holding only `bullets.tsv` and this folder (`/tmp/claude-0/-home-user/9f45def8-b710-5f9c-84f3-6a0fa7e617c8/scratchpad/s02-a2-t/check-zid/S-02`), 2026-10-27: 447 statements, 23 gaps, 686 quotes found and 2 found in the page's source only, no error. The 4 `review` lines are earlier parts' citations (S02-ZD-C008, C086, C313, C314).
+
+## Gap-closing (phase A2), part A2-ZD-R (2026-10-28): the Zid captures of 28 October (other-product-class, zid/)
+
+This part belongs under "Gap-closing (phase A2)" above. It is appended at the end, as A2-T's part was. The evidence is other-product-class@f44be3f3c97f5863cd58e56d1bf40f41ea3bf45f, folder `zid/`, read through its guides (`README.md`, `zid/README.md`), its run notes and its ledger. It shows two stores: the public demo store (127604, Professional) and the development store (3277610, `new_professional.lifetime`). Both have the feature flag `must_use_markets_pricing` false (S02-ZD-486; `zid/README.md`), so their settings pages are those of a store without Zid's markets screens. Every statement from them gives the store, its plan, the flag and the run and step in `scope`.
+
+### What was found, by group
+
+**Group 1: the gaps that hold phase C's keys open.**
+- **Read on the development store with two markets** (Main Market: Saudi Arabia, SAR, primary; Kuwait: KWD, published; run 20261028T170107Z-devstore-markets-en, steps 15 to 34). Each setting's page shows one value or one set, with no market field: checkout options (S02-ZD-448), contact email and phone (S02-ZD-450), withdrawal priority (S02-ZD-451), My apps (S02-ZD-455), staff notifications (S02-ZD-457), group permissions (S02-ZD-459), privacy policy (S02-ZD-462), hours of operation (S02-ZD-463), time zone (S02-ZD-465), exchange and returns (S02-ZD-466). The answers behind them hold each setting as a record of the store, with no market: S02-ZD-449, S02-ZD-452, S02-ZD-458, S02-ZD-464 and S02-ZD-467. The tracking apps were read in run 20261028T185150Z-devstore-tracking-apps-en, with two markets: each takes one Account code (S02-ZD-453, S02-ZD-454, S02-ZD-456).
+- **The complete lists.** The route manifest (437 routes) holds three routes under a market: `settings/markets/:id/manage`, `/products` and `/price-managing`. Each setting's route is a child of the store. Absences S02-ZD-N05 to S02-ZD-N16 record this, one per gap.
+- **The dashboard's strings**, searched in full by script (every string, English and Arabic, for market, markets, السوق, الأسواق and أسواق), name a market only in these places:
+  - the markets pages;
+  - the products' market prices and display;
+  - the notice moving currencies to Markets;
+  - the plan's limit message;
+  - the analytics insights, where "market" is the industry's market.
+
+  The page index names one page for markets (`settings.markets`). The permissions named for markets are `markets.view`, `markets.create`, `markets.edit`, `markets.products.edit` and `markets.delete`, and none names one market (S02-ZD-460, S02-ZD-461).
+- **Answered:**
+  - S02-ZD-G11: S02-ZD-450, N06;
+  - S02-ZD-G14: S02-ZD-453, N08;
+  - S02-ZD-G15: S02-ZD-455, N09;
+  - S02-ZD-G16: S02-ZD-457, N10;
+  - S02-ZD-G17: S02-ZD-459, N11;
+  - S02-ZD-G23: S02-ZD-467, N16. The store's country is `business_location` on Store information > Business address, one per store. The markets hold countries of their own (S02-ZD-472). The primary market kept Saudi Arabia and SAR after the store's country became Kuwait (S02-ZD-468, S02-ZD-471).
+- **Narrowed:**
+  - S02-ZD-G10 to S02-ZD-G24 (per buyer's country);
+  - S02-ZD-G12 to S02-ZD-G25 (per sales channel or buyer's city);
+  - S02-ZD-G18 to S02-ZD-G26 (per buyer's country, and the opt-outs);
+  - S02-ZD-G21 to S02-ZD-G27 (a unit of weight or measurement);
+  - S02-ZD-G22 to S02-ZD-G28 (per buyer's country);
+  - S02-ZD-G01 to S02-ZD-G29 (whether the Terms' country is the Business address's, and the sign-up's location).
+- **Also found:** the theme takes a value per market, set from a market's More menu (S02-ZD-474). A market's record is S02-ZD-472.
+
+**Group 2: the store's own country.**
+- **S02-ZD-G02 to S02-ZD-G30.** Saving Kuwait asked for a district and a street (S02-ZD-469). The save was accepted, giving Kuwait with `national_address_certificate` null and `is_address_confirmed` true (S02-ZD-468, S02-ZD-470).
+- **S02-ZD-G03 to S02-ZD-G31.** The subscription checkout links zid.sa's English Terms for every country tried (S02-ZD-484).
+- **S02-ZD-G08 to S02-ZD-G32.** The Rise monthly checkout's VAT line is recorded for eight store countries (S02-ZD-476 to S02-ZD-483). Every line is labelled VAT %15. Egypt's is EGP 138.74 on 991.00. The UAE, Oman, Qatar, Bahrain and Kuwait carry 0. Syria and Saudi Arabia carry SAR 1.17 on 7.83.
+- **S02-ZD-G09 to S02-ZD-G33.** The Business address takes 162 countries, Yemen among them (S02-ZD-475), and not Iran, Cuba, Korea, Russia or Israel (S02-ZD-N17). GET /v1/settings/countries gives the same list, and the docs say it returns all countries (S02-ZD-186).
+
+**Group 3.**
+- **Answered:**
+  - S02-ZD-G04 (S02-ZD-475);
+  - S02-ZD-G05 (S02-ZD-473): More > Remove market, with a confirmation, on a market other than the primary one;
+  - S02-ZD-G06 (S02-ZD-471);
+  - S02-ZD-G20 (S02-ZD-463, N13).
+- **Left:**
+  - S02-ZD-G07. S02-ZD-485 records the demo store's plan policy (enabled, limit 5, `available_in` Elite). Starter's card (run 20261028T190230Z-devstore-billing-en, step 3) was read. Zid Lite was not seen.
+  - S02-ZD-G13. Only the run notes and `GAPS.md` were read, and no single step settles it.
+  - S02-ZD-G19. No step text of run 20261028T173028Z-devstore-storefront-kw holds "cookie", and `GAPS.md` says that storefront's banner is not read yet.
+
+### Rows changed
+- **`a2.tsv`:**
+  - the rows of S02-VP-02, 15, 55, 65, 67, 68, 71, 72, 73, 74, 75, 77, 80, 84, 85, 86, 87, 89 and `none`;
+  - new rows for S02-VP-05, 08, 09, 26 and 29.
+- **The (h) rows' `conditions`:**
+  - S02-ZD-025, S02-ZD-150 and S02-ZD-151 (adding S02-ZD-471 to S02-ZD-474);
+  - S02-ZD-256 (adding S02-ZD-448 and S02-ZD-449);
+  - S02-ZD-271 and S02-ZD-286 (adding S02-ZD-451 and S02-ZD-452);
+  - S02-ZD-317 (adding S02-ZD-457 and S02-ZD-458).
+- **Not changed:** the rows on the number of team members (S02-ZD-323, 333, 356 to 361), on plan prices (S02-ZD-347 to 353, 389) and on private apps (S02-ZD-308). The new statements describe a group's permissions, the VAT at checkout and the installed apps, not those arrangements.
+
+### Searches, and how they were narrowed
+- **Group 1's complete lists** were read by script, not with `corpus_search.py`, whose output caps the documents it lists.
+- **Each gap that remains** got the brief's two searches, each command named in the gap's `read` and its row: its phrases, then the same with `--with market markets country countries الأسواق السوق دولة`. Nothing was narrowed.
+  - **The answers match nearly every search.** The account profile holds the permissions' "markets" and the countries.
+  - **The step and string matches** that also hold a market or a country word are the settings menu, the currency table, the business address's country and the storefront's footer links. None is a market or country field on the setting's page.
+
+### The leads
+`leads.md` (scratch folder) and `zid/index/run-notes.tsv` were read and tested against the files:
+- **"One value for the whole store" (G10 to G22)** is a reading. The pages' and answers' own words were recorded, with the absences.
+- **G03's "zid.eg's terms do not name a Zid Egypt company (as served 2026-10-28)"** comes from the fetch run 20261028T190806Z-terms-pricing-sa-eg, which is raw HTML. Phase A's brief says zid.eg's raw page holds the Saudi Terms, which its scripts replace. As rendered, it names شركة زد مصر (S02-ZD-367). The lead is not recorded.
+- **G08's "14% Egypt".** The answers label every VAT line "VAT %15". The amounts were recorded as given.
+- **G04 and G09's "sign-up phone codes 207, partner registration 242"** were not read: they are lists of phone codes and of partners' countries.
+- **G19's "No cookie banner ... at first visit"** is not recorded. `GAPS.md` says the development store's banner is not read yet. The demo storefront's page, it says, is not the store's data.
+- **G06's "Every new store gets a primary market"** was seen on one store only, and S02-ZD-471 is scoped to it.
+
+### Problems with the method, the brief and the tools
+1. **`quote_check.py` misses other-product-class.** Its usual and `--batch` modes don't resolve the repository: they answer "unresolved; not a known local source", since their roots lack it; only `--text` has it. A wrapper in this part's scratch folder (`qc.py`) adds the root to its `Sources`. `check_subject.py` resolves it.
+2. **The checker reads "answers" only from statements.** The message says that the statement or the absence that answers a gap says `answers S02-ZD-Gnn`. The checker reads it only from statements' notes, so each answered gap's main statement says it too.
+3. **The checker wants searches in every gap A2 leaves.** It expects `corpus_search.py` commands in each one's `read`. Group 1's procedure has none, so the two searches were run for each gap that remains.
+4. **The absences rest on routes.** A setting's page could show a market field without a route of its own. The strings name no market on those pages, but strings are not a list of fields. The stores' flag is false.
+5. **Some checkout steps' intents name the wrong country.** The run note says so. Each VAT statement takes its country from the business-place answer read before its checkout. Saudi Arabia's comes from step 86, after the save of step 83.
+6. **A copy command overwrote the new rows in the scratch folder.** It replaced them with this folder's files, and the first apply then doubled these files. They were restored from a backup taken just before, and the rows written again. The check below is on the result.
+
+### Check on a copy (A2-ZD-R)
+The copy held only `bullets.tsv` and this folder, at /tmp/claude-0/-home-user/9f45def8-b710-5f9c-84f3-6a0fa7e617c8/scratchpad/s02-a2-zd-r/check/S-02, with its output in `check/out` (2026-10-28).
+- **Totals:** 486 statements and 33 gaps; 764 quotes found and 2 found in the page's source only. There is no line of level `error` and no `pending capture` line.
+- **56 `review` lines:**
+  - 39 say "a citation's kind is unknown under method/source_kinds.py": the new statements S02-ZD-448 to S02-ZD-486, whose sources are in other-product-class, which `source_kinds.py` doesn't list;
+  - 13 are the absences S02-ZD-N05 to S02-ZD-N17, which wait for their audit;
+  - 4 are earlier parts' citations (S02-ZD-C008, C086, C313 and C314).
