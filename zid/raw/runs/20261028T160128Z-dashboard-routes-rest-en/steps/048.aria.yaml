@@ -1,0 +1,157 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "All customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Customer wallet New":
+    - /url: /en-sa/stores/127604/customers/wallet
+  - link "Groups":
+    - /url: /en-sa/stores/127604/customers/groups
+  - link "Customer Tickets":
+    - /url: /en-sa/stores/127604/customers/support
+  - link "Reviews":
+    - /url: /en-sa/stores/127604/customers/reviews
+  - link "Questions":
+    - /url: /en-sa/stores/127604/customers/questions
+  - link "Stock notifications":
+    - /url: /en-sa/stores/127604/customers/stock-notifications
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - button
+  - heading "Stock notification settings" [level=5]
+  - heading "Details" [level=6]
+  - text: Sending time after
+  - spinbutton "Sending time after" [disabled]: "15"
+  - paragraph: Minutes
+  - paragraph: Since restocking the product
+  - heading "Offer" [level=6]
+  - paragraph: Choose if you want to send offer with a stock notification
+  - radiogroup:
+    - radio "Coupon code"
+    - text: Coupon code
+    - radio "Without offer" [checked]
+    - text: Without offer
+  - heading "Send by" [level=6]
+  - paragraph: Select the channel you want to use for sending notification
+  - heading "Email" [level=3]:
+    - button "Email" [expanded]:
+      - checkbox "Email" [checked]
+      - text: Email
+  - region:
+    - text: Title (Arabic)
+    - textbox "Title (Arabic)": "{product_name} متوفر الآن في {store_name}!"
+    - paragraph: Number of characters 42 / 160
+    - text: Title (English)
+    - textbox "Title (English)": "{product_name} is now available on {store_name}!"
+    - paragraph: Number of characters 48 / 160
+    - text: "Suggested values:"
+    - button "Customer name"
+    - button "Product name"
+    - button "Product URL"
+    - button "Store URL"
+    - button "Store name"
+    - separator
+    - text: Message (Arabic)
+    - textbox "Message (Arabic)": "مرحبًا {customer_name} 👋 المنتج الذي تنتظره عاد! ✨ {product_name} متوفر الآن في {store_name}. اطلبه قبل أن ينفد!"
+    - paragraph: Number of characters 113 / 160
+    - text: Message (English)
+    - textbox "Message (English)": "Hi {customer_name} 👋 The product you've been waiting for is back! ✨ {product_name} is now available at {store_name}. Order before it's gone!"
+    - paragraph: Number of characters 141 / 160
+    - text: "Suggested values:"
+    - button "Customer name"
+    - button "Product name"
+    - button "Product URL"
+    - button "Store URL"
+    - button "Store name"
+    - button "Save" [disabled]
+  - heading "WhatsApp" [level=3]:
+    - button "WhatsApp" [disabled] [expanded]:
+      - checkbox "WhatsApp"
+      - text: WhatsApp
+  - region:
+    - heading "Message language" [level=6]
+    - radiogroup:
+      - radio "en EN" [checked] [disabled]
+      - img "en"
+      - text: EN
+      - radio "ar AR" [disabled]
+      - img "ar"
+      - text: AR
+    - paragraph: Message
+    - button
+    - button
+    - button
+    - button
+    - button
+    - text: "Hi {{customer name}} 👋 The product you've been waiting for is back! ✨ {{product name}} is now available at {{store name}}. Order before it's gone!"
+    - paragraph: Number of characters 147 / 1024
+    - text: "Suggested values:"
+    - button "Customer name" [disabled]
+    - button "Product name" [disabled]
+    - button "Product URL" [disabled]
+    - button "Store URL" [disabled]
+    - button "Store name" [disabled]
+    - separator
+    - heading "Buttons" [level=6]
+    - text: (Optional)
+    - paragraph: Add buttons that let your customers open a selected product or copy coupon code.
+    - checkbox "Product link button" [disabled]
+    - text: Product link button
+    - button "Save" [disabled]
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

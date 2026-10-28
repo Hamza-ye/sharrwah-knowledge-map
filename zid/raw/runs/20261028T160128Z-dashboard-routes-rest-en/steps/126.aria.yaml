@@ -1,0 +1,170 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Discounts":
+    - /url: /en-sa/stores/127604/marketing/discounts
+  - link "Bank discounts New":
+    - /url: /en-sa/stores/127604/marketing/bank-discounts
+  - link "Cashback offers New":
+    - /url: /en-sa/stores/127604/marketing/cashback-offers
+  - link "Bundle offers":
+    - /url: /en-sa/stores/127604/marketing/bundle-offers
+  - link "Automated Messages New":
+    - /url: /en-sa/stores/127604/marketing/automated-messages
+  - link "Marketing campaigns":
+    - /url: /en-sa/stores/127604/marketing/campaigns
+  - link "Loyalty program":
+    - /url: /en-sa/stores/127604/marketing/loyalty
+  - link "Customer Referrals Beta":
+    - /url: /en-sa/stores/127604/marketing/referrals
+  - link "Mokafaa program New":
+    - /url: /en-sa/stores/127604/marketing/mokafaa
+  - link "Qitaf New":
+    - /url: /en-sa/stores/127604/marketing/new-qitaf
+  - link "Affiliates":
+    - /url: /en-sa/stores/127604/marketing/affiliates
+  - link "Zid Ads":
+    - /url: /en-sa/stores/127604/apps/2812/embedded
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - button
+  - heading "Create new discount" [level=5]
+  - button "Create"
+  - button "Preview"
+  - heading "Details" [level=2]
+  - paragraph: Define the value and application of this discount.
+  - separator
+  - text: Name
+  - textbox "Name"
+  - paragraph: Internal name for tracking; not visible to customers.
+  - text: Start date
+  - textbox "Start date": 28 Oct, 2026
+  - text: End date
+  - textbox "End date": 28 Nov, 2026
+  - heading "Discount type" [level=6]
+  - paragraph: Specify what discount you want to provide with this coupon
+  - heading "Products discount" [level=3]:
+    - button "Products discount" [expanded]:
+      - paragraph: Products discount
+      - switch [checked]
+  - region:
+    - radiogroup:
+      - radio "Percentage" [checked]
+      - text: Percentage
+      - radio "Fixed amount"
+      - text: Fixed amount
+    - text: Discount percentage
+    - textbox "Discount percentage"
+    - text: Maximum discount amount
+    - textbox "Maximum discount amount"
+  - heading "Free shipping" [level=3]:
+    - button "Free shipping":
+      - paragraph: Free shipping
+      - switch
+  - heading "Free cash on delivery" [level=3]:
+    - button "Free cash on delivery":
+      - paragraph: Free cash on delivery
+      - switch
+  - heading "Applied method" [level=6]
+  - paragraph: Select the method on how the of discount is applied
+  - radiogroup:
+    - radio "Code" [checked]
+    - text: Code
+    - radio "Automatic"
+    - text: Automatic
+  - text: Code
+  - textbox "Code"
+  - paragraph: Code should consist of letters and numbers only, with no spaces.
+  - button "Choose random code"
+  - checkbox "Create a coupon group"
+  - paragraph: Create a coupon group
+  - heading "Product eligibility Select to which products or categories the discount applies. By default it applies to all." [level=3]:
+    - button "Product eligibility Select to which products or categories the discount applies. By default it applies to all.":
+      - heading "Product eligibility" [level=6]
+      - paragraph: Select to which products or categories the discount applies. By default it applies to all.
+  - heading "Settings Define usage limits for this discount if needed." [level=3]:
+    - button "Settings Define usage limits for this discount if needed.":
+      - heading "Settings" [level=6]
+      - paragraph: Define usage limits for this discount if needed.
+  - heading "Conditions Add one or more conditions to control when the discount is shown/applied." [level=3]:
+    - button "Conditions Add one or more conditions to control when the discount is shown/applied.":
+      - heading "Conditions" [level=6]
+      - paragraph: Add one or more conditions to control when the discount is shown/applied.
+  - heading "Sales channels Select for which channels you would like to activate this discount." [level=3]:
+    - button "Sales channels Select for which channels you would like to activate this discount.":
+      - heading "Sales channels" [level=6]
+      - paragraph: Select for which channels you would like to activate this discount.
+  - heading "Note Add a private note for the staff." [level=3]:
+    - button "Note Add a private note for the staff.":
+      - heading "Note" [level=6]
+      - paragraph: Add a private note for the staff.
+  - heading "Summary" [level=6]
+  - heading "No name yet" [level=6]
+  - heading "How it works" [level=6]
+  - paragraph: Not set yet
+  - paragraph: "Applies to:"
+  - paragraph: All products
+  - paragraph: "Start date:"
+  - paragraph: 28 Oct, 2026
+  - paragraph: "End date:"
+  - paragraph: 28 Nov, 2026
+  - separator
+  - heading "Sales channels" [level=6]
+  - text: Online store customers
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

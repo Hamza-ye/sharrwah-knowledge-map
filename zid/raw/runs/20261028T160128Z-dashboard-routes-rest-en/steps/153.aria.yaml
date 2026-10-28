@@ -1,0 +1,120 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Transactions":
+    - /url: /en-sa/stores/127604/services/payments/transactions
+  - link "Payment links":
+    - /url: /en-sa/stores/127604/services/payments/payment-links
+  - link "Payouts":
+    - /url: /en-sa/stores/127604/services/payments/payouts
+  - link "Bank accounts":
+    - /url: /en-sa/stores/127604/services/payments/bank-accounts
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - heading "Payouts" [level=5]
+  - button "Download all payouts"
+  - button "Download tax invoices"
+  - heading "Summary of your operations" [level=6]
+  - paragraph: Current balance
+  - paragraph:  96.61
+  - paragraph: Payouts being processed
+  - paragraph:  96.61
+  - paragraph: Most recent payout
+  - paragraph:  98.25
+  - text: 2023-03-30
+  - textbox "Search"
+  - table:
+    - rowgroup:
+      - row "Payout ID Net amount Currency Payout fees Currency Amount Currency Payout bank Date Time":
+        - columnheader "Payout ID"
+        - columnheader "Net amount Currency"
+        - columnheader "Payout fees Currency"
+        - columnheader "Amount Currency"
+        - columnheader "Payout bank"
+        - columnheader "Date Time"
+        - columnheader
+    - rowgroup:
+      - row "#175196 95.25 SAR 3 SAR 98.25 SAR 2023-03-30 05:50 pm View":
+        - cell "#175196":
+          - link "#175196":
+            - /url: /en-sa/stores/127604/services/payments/payouts/165464/175196
+        - cell "95.25 SAR"
+        - cell "3 SAR"
+        - cell "98.25 SAR"
+        - cell:
+          - img
+        - cell "2023-03-30 05:50 pm"
+        - cell "View":
+          - link "View":
+            - /url: /en-sa/stores/127604/services/payments/payouts/165464/175196
+  - text: "Rows per page:"
+  - combobox "5"
+  - navigation "pagination navigation":
+    - list:
+      - listitem:
+        - button "Go to first page" [disabled]
+      - listitem:
+        - button "Go to previous page" [disabled]
+      - listitem:
+        - button "page 1": "1"
+      - listitem:
+        - button "Go to next page" [disabled]
+      - listitem:
+        - button "Go to last page" [disabled]
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

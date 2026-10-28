@@ -1,0 +1,116 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "All products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Categories":
+    - /url: /en-sa/stores/127604/catalog/categories
+  - link "Brands New":
+    - /url: /en-sa/stores/127604/catalog/brands
+  - link "Preorder campaigns":
+    - /url: /en-sa/stores/127604/catalog/preorder-campaigns
+  - link "Inventory":
+    - /url: /en-sa/stores/127604/catalog/inventories
+  - link "Inventory stock changes":
+    - /url: /en-sa/stores/127604/catalog/inventory-stock-changes
+  - link "Filters":
+    - /url: /en-sa/stores/127604/catalog/filters
+  - link "Custom fields":
+    - /url: /en-sa/stores/127604/catalog/meta-fields
+  - link "Options library":
+    - /url: /en-sa/stores/127604/catalog/options
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - heading "Inventory stock changes" [level=5]
+  - paragraph: View your products by modifying data and appearances
+  - alert: Select an inventory to view stock history
+  - combobox "Select inventory"
+  - button "Open"
+  - button
+  - table:
+    - rowgroup:
+      - row "Name SKU code Time Action Action by Quantity Quantity after modification":
+        - columnheader "Name SKU code"
+        - columnheader "Time"
+        - columnheader "Action"
+        - columnheader "Action by"
+        - columnheader "Quantity"
+        - columnheader "Quantity after modification"
+    - rowgroup:
+      - row "منتج فردي تجريبي Z..17555068065421941 08:17 am 16 September 2026 Manual adjustment Unspecified reason Zid Demo Store +4845 5,000":
+        - cell "منتج فردي تجريبي Z..17555068065421941":
+          - link "منتج فردي تجريبي":
+            - /url: /en-sa/stores/127604/catalog/products/7b766683-f842-4dea-b268-7016e464d6c9
+          - text: Z..17555068065421941
+        - cell "08:17 am 16 September 2026"
+        - cell "Manual adjustment Unspecified reason"
+        - cell "Zid Demo Store"
+        - cell "+4845"
+        - cell "5,000"
+      - row "منتج فردي تجريبي Z..17555068065421941 02:56 pm 13 September 2026 Manual adjustment New stock Zid Demo Store +6 155":
+        - cell "منتج فردي تجريبي Z..17555068065421941":
+          - link "منتج فردي تجريبي":
+            - /url: /en-sa/stores/127604/catalog/products/7b766683-f842-4dea-b268-7016e464d6c9
+          - text: Z..17555068065421941
+        - cell "02:56 pm 13 September 2026"
+        - cell "Manual adjustment New stock"
+        - cell "Zid Demo Store"
+        - cell "+6"
+        - cell "155"
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

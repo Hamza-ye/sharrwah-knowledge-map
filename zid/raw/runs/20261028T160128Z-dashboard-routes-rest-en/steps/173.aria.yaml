@@ -1,0 +1,102 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Transactions":
+    - /url: /en-sa/stores/127604/services/payments/transactions
+  - link "Payment links":
+    - /url: /en-sa/stores/127604/services/payments/payment-links
+  - link "Payouts":
+    - /url: /en-sa/stores/127604/services/payments/payouts
+  - link "Bank accounts":
+    - /url: /en-sa/stores/127604/services/payments/bank-accounts
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - button
+  - heading "MADFU" [level=5]
+  - img
+  - heading "Madfu" [level=6]
+  - text: "By: Zid"
+  - paragraph: MADFU helps you boost your store sales by enabling your customers to split their bills into flexible and convenient installments. Join Madfu today and be part of the smart commerce future.
+  - tablist:
+    - tab "Overview" [selected]
+    - tab "FAQ"
+    - tab "Contact"
+  - separator
+  - paragraph: MADFU helps you boost your store sales by enabling your customers to split their bills into flexible and convenient installments. Join Madfu today and be part of the smart commerce future.
+  - paragraph:
+    - paragraph: "App Features:"
+    - list:
+      - listitem: Your customers can now shop and split their payments into secure, interest-free installments — while you receive the full payment instantly.
+      - listitem: If you’re looking to grow your business, seize the opportunity with Madfu and get ahead of the curve.
+      - listitem: Need help with integration, development, or anything else? Visit our Business Help Center
+  - heading "Activation" [level=6]
+  - text: App Code
+  - textbox "App Code"
+  - text: Username
+  - textbox "Username"
+  - text: App key
+  - textbox "App key"
+  - text: Authorization token
+  - textbox "Authorization token"
+  - text: Password
+  - textbox "Password"
+  - checkbox "Enabled"
+  - text: Enabled
+  - button "Save"
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

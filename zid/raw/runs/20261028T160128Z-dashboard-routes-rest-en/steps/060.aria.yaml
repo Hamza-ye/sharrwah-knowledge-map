@@ -1,0 +1,120 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+  - link "Marketplaces":
+    - /url: /en-sa/stores/127604/channels/marketplaces/connect/marketplaces
+  - link "Mobile app":
+    - /url: /en-sa/stores/127604/channels/mobile-app
+  - link "POS":
+    - /url: /en-sa/stores/127604/channels/pos
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - heading "Mazeed products (undefined/undefined)" [level=5]
+  - tablist:
+    - tab "Products" [selected]
+    - tab "Orders"
+    - tab "Financial dues"
+    - tab "Settings"
+  - heading "Acceptance & presentation guidelines" [level=6]
+  - heading "Improve content of each product" [level=6]
+  - separator
+  - paragraph: Add description and key words Each product should have at least 3 images
+  - heading "Images background" [level=6]
+  - separator
+  - paragraph: Make sure that product image without any logos or words the background should be plain and light color, preferred to be white
+  - heading "Image quality" [level=6]
+  - separator
+  - paragraph: Use images sized 2024×2024 pixels, with a quality of at least 72 dpi. We accept PNG and JPG formats.
+  - textbox "Search"
+  - button
+  - table:
+    - rowgroup:
+      - row "Name Price Quantity Show in store Approval status":
+        - columnheader:
+          - checkbox
+        - columnheader
+        - columnheader "Name"
+        - columnheader "Price"
+        - columnheader "Quantity"
+        - columnheader "Show in store"
+        - columnheader "Approval status"
+    - rowgroup:
+      - row "Demo Voucher Product Z.127604.17540471746968408  12  100 Out of stock (0) Hidden Add to Mazeed":
+        - cell:
+          - checkbox
+        - cell
+        - cell "Demo Voucher Product Z.127604.17540471746968408"
+        - cell " 12  100"
+        - cell "Out of stock (0)"
+        - cell "Hidden":
+          - paragraph: Hidden
+          - switch
+        - cell "Add to Mazeed":
+          - button "Add to Mazeed"
+      - row "Demo Digital Files Z.127604.1754027702823264 100  Unlimited Hidden Add to Mazeed":
+        - cell:
+          - checkbox
+        - cell
+        - cell "Demo Digital Files Z.127604.1754027702823264"
+        - cell "100 "
+        - cell "Unlimited"
+        - cell "Hidden":
+          - paragraph: Hidden
+          - switch
+        - cell "Add to Mazeed":
+          - button "Add to Mazeed"
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

@@ -1,0 +1,230 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home"
+  - button "Apps"
+  - button "Settings" [pressed]
+  - separator
+- list:
+  - link "General":
+    - /url: /en-sa/stores/127604/settings/account
+  - link "Account settings":
+    - /url: /en-sa/stores/127604/settings/account
+  - link "Security settings":
+    - /url: /en-sa/stores/127604/settings/security
+  - link "Languages & currencies":
+    - /url: /en-sa/stores/127604/settings/languages-currencies
+  - link "Checkout page options":
+    - /url: /en-sa/stores/127604/settings/checkout
+  - link "Gifting settings New":
+    - /url: /en-sa/stores/127604/settings/gifting-settings
+  - link "Configure your invoices":
+    - /url: /en-sa/stores/127604/settings/invoice
+  - link "Orders and products properties":
+    - /url: /en-sa/stores/127604/settings/orders-products
+  - link "Shipping and payment constraints":
+    - /url: /en-sa/stores/127604/settings/constraints
+  - link "Tax settings":
+    - /url: /en-sa/stores/127604/settings/tax
+  - link "Fatoora platform integration":
+    - /url: /en-sa/stores/127604/settings/zatca-integration
+  - link "Staff notifications":
+    - /url: /en-sa/stores/127604/settings/staff-notifications
+  - link "API integrations":
+    - /url: /en-sa/stores/127604/settings/direct-api-integration
+  - link "Export requests":
+    - /url: /en-sa/stores/127604/settings/export-requests
+  - link "URL redirects":
+    - /url: /en-sa/stores/127604/settings/url-redirects
+  - link "Communications":
+    - /url: /en-sa/stores/127604/settings/communications/orders
+    - text: Communications
+    - button
+  - link "Store":
+    - /url: /en-sa/stores/127604/settings/information
+    - text: Store
+    - button
+- main:
+  - button
+  - heading "Export requests" [level=5]
+  - paragraph: View all your export requests, download files, and manage export options
+  - link "Security settings":
+    - /url: /en-sa/stores/127604/settings/security
+  - textbox "Search by File type"
+  - button
+  - button
+  - table:
+    - rowgroup:
+      - row "File type User Phone Status Expires in Request date":
+        - columnheader "File type"
+        - columnheader "User Phone"
+        - columnheader "Status"
+        - columnheader "Expires in"
+        - columnheader "Request date"
+        - columnheader
+    - rowgroup:
+      - row "Abandoned carts export Zid Demo Store 966594406244 Finished 05:08:27 hours 2026/10/28 01:22 AM Download":
+        - cell "Abandoned carts export"
+        - cell "Zid Demo Store 966594406244"
+        - cell "Finished"
+        - cell "05:08:27 hours":
+          - paragraph: 05:08:27 hours
+        - cell "2026/10/28 01:22 AM"
+        - cell "Download":
+          - button "Download"
+      - row "Abandoned carts export Zid Demo Store 966594406244 Finished 05:08:20 hours 2026/10/28 01:21 AM Download":
+        - cell "Abandoned carts export"
+        - cell "Zid Demo Store 966594406244"
+        - cell "Finished"
+        - cell "05:08:20 hours":
+          - paragraph: 05:08:20 hours
+        - cell "2026/10/28 01:21 AM"
+        - cell "Download":
+          - button "Download"
+      - row "Abandoned carts export Zid Demo Store 966594406244 Finished 05:08:15 hours 2026/10/28 01:21 AM Download":
+        - cell "Abandoned carts export"
+        - cell "Zid Demo Store 966594406244"
+        - cell "Finished"
+        - cell "05:08:15 hours":
+          - paragraph: 05:08:15 hours
+        - cell "2026/10/28 01:21 AM"
+        - cell "Download":
+          - button "Download"
+      - row "POS reports export Zid Demo Store 966594406244 Expired _ 2026/09/23 02:04 PM Download":
+        - cell "POS reports export"
+        - cell "Zid Demo Store 966594406244"
+        - cell "Expired"
+        - cell "_":
+          - paragraph: _
+        - cell "2026/09/23 02:04 PM"
+        - cell "Download":
+          - button "Download" [disabled]
+      - row "Tax Invoices Zid Demo Store 966594406244 Failed _ 2026/09/22 11:58 PM Download":
+        - cell "Tax Invoices"
+        - cell "Zid Demo Store 966594406244"
+        - cell "Failed"
+        - cell "_":
+          - paragraph: _
+        - cell "2026/09/22 11:58 PM"
+        - cell "Download":
+          - button "Download" [disabled]
+      - row "Payouts export Zid Demo Store 966594406244 Failed _ 2026/09/22 11:58 PM Download":
+        - cell "Payouts export"
+        - cell "Zid Demo Store 966594406244"
+        - cell "Failed"
+        - cell "_":
+          - paragraph: _
+        - cell "2026/09/22 11:58 PM"
+        - cell "Download":
+          - button "Download" [disabled]
+      - row "Reviews export Zid Demo Store 966594406244 Expired _ 2026/09/22 11:56 PM Download":
+        - cell "Reviews export"
+        - cell "Zid Demo Store 966594406244"
+        - cell "Expired"
+        - cell "_":
+          - paragraph: _
+        - cell "2026/09/22 11:56 PM"
+        - cell "Download":
+          - button "Download" [disabled]
+      - row "Payment links export Zid Demo Store 966594406244 Failed _ 2026/09/22 11:56 PM Download":
+        - cell "Payment links export"
+        - cell "Zid Demo Store 966594406244"
+        - cell "Failed"
+        - cell "_":
+          - paragraph: _
+        - cell "2026/09/22 11:56 PM"
+        - cell "Download":
+          - button "Download" [disabled]
+      - row "Abandoned carts export Zid Demo Store 966594406244 Expired _ 2026/09/22 11:47 PM Download":
+        - cell "Abandoned carts export"
+        - cell "Zid Demo Store 966594406244"
+        - cell "Expired"
+        - cell "_":
+          - paragraph: _
+        - cell "2026/09/22 11:47 PM"
+        - cell "Download":
+          - button "Download" [disabled]
+      - row "Abandoned carts export Zid Demo Store 966594406244 Expired _ 2026/09/21 03:16 PM Download":
+        - cell "Abandoned carts export"
+        - cell "Zid Demo Store 966594406244"
+        - cell "Expired"
+        - cell "_":
+          - paragraph: _
+        - cell "2026/09/21 03:16 PM"
+        - cell "Download":
+          - button "Download" [disabled]
+      - row "Tax Invoices Zid Demo Store 966594406244 Failed _ 2026/09/14 02:43 AM Download":
+        - cell "Tax Invoices"
+        - cell "Zid Demo Store 966594406244"
+        - cell "Failed"
+        - cell "_":
+          - paragraph: _
+        - cell "2026/09/14 02:43 AM"
+        - cell "Download":
+          - button "Download" [disabled]
+      - row "Tax Invoices Zid Demo Store 966594406244 Failed _ 2026/09/14 02:43 AM Download":
+        - cell "Tax Invoices"
+        - cell "Zid Demo Store 966594406244"
+        - cell "Failed"
+        - cell "_":
+          - paragraph: _
+        - cell "2026/09/14 02:43 AM"
+        - cell "Download":
+          - button "Download" [disabled]
+      - row "Transactions export Zid Demo Store 966594406244 Expired _ 2026/09/14 02:34 AM Download":
+        - cell "Transactions export"
+        - cell "Zid Demo Store 966594406244"
+        - cell "Expired"
+        - cell "_":
+          - paragraph: _
+        - cell "2026/09/14 02:34 AM"
+        - cell "Download":
+          - button "Download" [disabled]
+      - row "Tax Invoices Zid Demo Store 966594406244 Failed _ 2026/09/14 02:22 AM Download":
+        - cell "Tax Invoices"
+        - cell "Zid Demo Store 966594406244"
+        - cell "Failed"
+        - cell "_":
+          - paragraph: _
+        - cell "2026/09/14 02:22 AM"
+        - cell "Download":
+          - button "Download" [disabled]
+  - text: "Rows per page:"
+  - combobox "25"
+  - navigation "pagination navigation":
+    - list:
+      - listitem:
+        - button "Go to first page" [disabled]
+      - listitem:
+        - button "Go to previous page" [disabled]
+      - listitem:
+        - button "page 1": "1"
+      - listitem:
+        - button "Go to page 2": "2"
+      - listitem:
+        - button "Go to page 3": "3"
+      - listitem:
+        - button "Go to next page"
+      - listitem:
+        - button "Go to last page"
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

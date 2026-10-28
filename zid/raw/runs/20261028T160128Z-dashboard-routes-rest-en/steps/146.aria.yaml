@@ -1,0 +1,100 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "All products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Categories":
+    - /url: /en-sa/stores/127604/catalog/categories
+  - link "Brands New":
+    - /url: /en-sa/stores/127604/catalog/brands
+  - link "Preorder campaigns":
+    - /url: /en-sa/stores/127604/catalog/preorder-campaigns
+  - link "Inventory":
+    - /url: /en-sa/stores/127604/catalog/inventories
+  - link "Inventory stock changes":
+    - /url: /en-sa/stores/127604/catalog/inventory-stock-changes
+  - link "Filters":
+    - /url: /en-sa/stores/127604/catalog/filters
+  - link "Custom fields":
+    - /url: /en-sa/stores/127604/catalog/meta-fields
+  - link "Options library":
+    - /url: /en-sa/stores/127604/catalog/options
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - heading "Preorder campaigns" [level=5]
+  - link "Create":
+    - /url: /en-sa/stores/127604/catalog/preorder-campaigns/create
+  - textbox "Search"
+  - button
+  - button
+  - table:
+    - rowgroup:
+      - row "Name Start date End date Status":
+        - columnheader "Name"
+        - columnheader "Start date End date"
+        - columnheader "Status"
+        - columnheader
+  - img
+  - heading "No preorder campaigns" [level=6]
+  - paragraph: Create a preorder campaign to start accepting preorders on your products.
+  - link "Create campaign":
+    - /url: /en-sa/stores/127604/catalog/preorder-campaigns/create
+  - text: "Rows per page:"
+  - combobox "25"
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

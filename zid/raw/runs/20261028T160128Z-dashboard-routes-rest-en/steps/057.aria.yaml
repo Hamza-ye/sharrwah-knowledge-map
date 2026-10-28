@@ -1,0 +1,131 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+  - link "Marketplaces":
+    - /url: /en-sa/stores/127604/channels/marketplaces/connect/marketplaces
+  - link "Mobile app":
+    - /url: /en-sa/stores/127604/channels/mobile-app
+  - link "POS":
+    - /url: /en-sa/stores/127604/channels/pos
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - heading "Marketplaces" [level=5]
+  - button "Save changes"
+  - button "Reset"
+  - tablist:
+    - tab "Overview"
+    - tab "Marketplaces"
+    - tab "Orders"
+    - tab "Products"
+    - tab "Inventory"
+    - tab "Pricing"
+    - tab "Settings" [selected]
+  - heading "Marketplace account" [level=6]
+  - combobox "Amazon SA"
+  - heading "Import orders configuration" [level=6]
+  - paragraph: Customize the configuration on how to import your orders
+  - alert:
+    - text: Changes in the order settings
+    - paragraph: Be aware that when changing the order settings these changes will not be applied to your previous imported or integrated orders.
+  - heading "Customize the name of your marketplace account (seller name)" [level=6]
+  - text: Custom name
+  - paragraph: Amazon SA
+  - textbox "Custom name":
+    - /placeholder: Enter your marketplace account name
+  - heading "Which orders to automatically import / integrate?" [level=6]
+  - radiogroup:
+    - radio "All marketplace orders"
+    - text: All marketplace orders
+    - radio "Only orders for products linked to your marketplace"
+    - text: Only orders for products linked to your marketplace
+  - paragraph
+  - separator
+  - heading "For which fulfilling method would you like your orders to be imported?" [level=6]
+  - radiogroup:
+    - radio "All fulfilling methods"
+    - text: All fulfilling methods
+    - radio "FBA (Fulfillment by Amazon)"
+    - text: FBA (Fulfillment by Amazon)
+    - radio "FBM (Fulfillment by Merchant)"
+    - text: FBM (Fulfillment by Merchant)
+  - paragraph
+  - heading "Customer invoice configuration" [level=6]
+  - heading "FBM - (Fulfilled by Merchant) How would you like to handle the customer invoice?" [level=6]
+  - radiogroup:
+    - radio "Invoice created by Amazon marketplace (you will have to configure this in Amazon!)"
+    - text: Invoice created by Amazon marketplace (you will have to configure this in Amazon!)
+    - radio "Invoice created by Zid and uploaded to the marketplace (if unavailable, the marketplace doesn't support it)." [disabled]
+    - text: Invoice created by Zid and uploaded to the marketplace (if unavailable, the marketplace doesn't support it).
+    - radio "Invoice created by Zid but not uploaded to the marketplace. You will need to upload this manually."
+    - text: Invoice created by Zid but not uploaded to the marketplace. You will need to upload this manually.
+  - paragraph
+  - separator
+  - heading "FBA - (Fulfilled by Amazon) How would you like to handle the customer invoice?" [level=6]
+  - radiogroup:
+    - radio "Invoice created by Amazon marketplace (you will have to configure this in Amazon!)"
+    - text: Invoice created by Amazon marketplace (you will have to configure this in Amazon!)
+    - radio "Invoice created by Zid and uploaded to the marketplace (if unavailable, the marketplace doesn't support it)." [disabled]
+    - text: Invoice created by Zid and uploaded to the marketplace (if unavailable, the marketplace doesn't support it).
+    - radio "Invoice created by Zid but not uploaded to the marketplace. You will need to upload this manually."
+    - text: Invoice created by Zid but not uploaded to the marketplace. You will need to upload this manually.
+  - paragraph
+  - alert:
+    - paragraph: Accounts found in violation of Amazon Marketplace Acceptable Use Policy may be suspended or disconnected, and reported to Amazon.
+  - heading "Deactivate marketplace account" [level=6]
+  - paragraph: This will stop importing orders and syncing with your marketplace. You can reactivate it anytime
+  - button "Deactivate account"
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

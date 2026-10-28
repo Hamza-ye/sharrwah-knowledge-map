@@ -1,0 +1,109 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "All orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Manual orders":
+    - /url: /en-sa/stores/127604/orders/drafts
+  - link "Abandoned carts":
+    - /url: /en-sa/stores/127604/orders/abandoned-carts
+  - link "Zid Voice New 🔥":
+    - /url: /en-sa/stores/127604/apps/7906/embedded
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - button
+  - heading "Customize status" [level=5]
+  - paragraph: Edit and manage your custom order status flow
+  - button "Save" [disabled]
+  - button "Reset"
+  - heading "Status" [level=6]
+  - alert:
+    - text: Manage Order Notifications
+    - paragraph: To customize the texts and messages for order statuses, you can go to the Order notifications.
+    - link "Order notifications":
+      - /url: /en-sa/stores/127604/settings/communications/orders
+  - heading "New" [level=3]:
+    - button "New":
+      - paragraph: New
+      - button
+  - heading "Preparing" [level=3]:
+    - button "Preparing":
+      - paragraph: Preparing
+      - button
+  - heading "Ready" [level=3]:
+    - button "Ready":
+      - paragraph: Ready
+      - button
+  - heading "In delivery" [level=3]:
+    - button "In delivery":
+      - paragraph: In delivery
+      - button
+  - heading "Delivered" [level=3]:
+    - button "Delivered":
+      - paragraph: Delivered
+      - button
+  - heading "Canceled" [level=3]:
+    - button "Canceled":
+      - paragraph: Canceled
+      - button
+  - heading "Reversed" [level=3]:
+    - button "Reversed":
+      - paragraph: Reversed
+      - button
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

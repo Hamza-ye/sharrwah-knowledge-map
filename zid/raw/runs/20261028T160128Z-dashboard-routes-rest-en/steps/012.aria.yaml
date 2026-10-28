@@ -1,0 +1,5 @@
+- img "banner"
+- heading "Invalid link" [level=6]
+- paragraph: This link is invalid or has expired. Please request a new one.
+- button "Go to dashboard"
+- img

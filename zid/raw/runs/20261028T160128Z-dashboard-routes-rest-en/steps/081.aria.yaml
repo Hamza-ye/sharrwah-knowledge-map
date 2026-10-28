@@ -1,0 +1,146 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Discounts":
+    - /url: /en-sa/stores/127604/marketing/discounts
+  - link "Bank discounts New":
+    - /url: /en-sa/stores/127604/marketing/bank-discounts
+  - link "Cashback offers New":
+    - /url: /en-sa/stores/127604/marketing/cashback-offers
+  - link "Bundle offers":
+    - /url: /en-sa/stores/127604/marketing/bundle-offers
+  - link "Automated Messages New":
+    - /url: /en-sa/stores/127604/marketing/automated-messages
+  - link "Marketing campaigns":
+    - /url: /en-sa/stores/127604/marketing/campaigns
+  - link "Loyalty program":
+    - /url: /en-sa/stores/127604/marketing/loyalty
+  - link "Customer Referrals Beta":
+    - /url: /en-sa/stores/127604/marketing/referrals
+  - link "Mokafaa program New":
+    - /url: /en-sa/stores/127604/marketing/mokafaa
+  - link "Qitaf New":
+    - /url: /en-sa/stores/127604/marketing/new-qitaf
+  - link "Affiliates":
+    - /url: /en-sa/stores/127604/marketing/affiliates
+  - link "Zid Ads":
+    - /url: /en-sa/stores/127604/apps/2812/embedded
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - heading "Mokafaa program" [level=5]
+  - paragraph: Provide your customers with the most trusted loyalty program from Al Rajhi Bank ‘Mokafaa’ to earn and redeem points in your store.
+  - button "Activate Mokafaa"
+  - img
+  - img
+  - heading "Mokafaa" [level=1]
+  - heading "Provide your customers with one of the most popular loyalty programs in Saudi Arabia to redeem points for purchases from your store." [level=6]
+  - paragraph: More than 14+ million customers enrolled in Mokafaa
+  - paragraph: Boost your sales and strengthen customer loyalty
+  - paragraph: Enable customers to pay partially or fully with points
+  - paragraph: Customers earn Mokafaa points every time they shop from your store
+  - button "Activate Mokafaa"
+  - heading "Main advantages" [level=6]
+  - paragraph: What is Mokafaa?
+  - separator
+  - paragraph: Mokafaa is a loyalty program from Al Rajhi Bank that rewards customers with points for every purchase. By activating Mokafaa in your store, your customers can use their existing Mokafaa points to pay, or earn new points every time they shop.
+  - paragraph: How will your customers benefit from Mokafaa in your store?
+  - separator
+  - paragraph: Your customers can redeem their Mokafaa points at checkout to get discounts, or earn new points that increase their balance with every purchase. This makes shopping at your store more rewarding and keeps them coming back.
+  - heading "Mokafaa rates by plan" [level=6]
+  - paragraph: Mokafaa loyalty fees depend on your current Zid package.
+  - img
+  - paragraph: Rise Package
+  - separator
+  - paragraph: Earning
+  - paragraph: 8.5 %
+  - paragraph: Redeem
+  - paragraph: 15 %
+  - img
+  - paragraph: Growth Package
+  - separator
+  - paragraph: Earning
+  - paragraph: 8 %
+  - paragraph: Redeem
+  - paragraph: 13 %
+  - img
+  - paragraph: Professional Package
+  - separator
+  - paragraph: Earning
+  - paragraph: 7 %
+  - paragraph: Redeem
+  - paragraph: 10 %
+  - heading "Customer points conversion" [level=6]
+  - paragraph: Overview of customers’ points rule (earn & redeem).
+  - list:
+    - listitem:
+      - paragraph:
+        - paragraph: Earning
+      - paragraph:
+        - paragraph:
+          - paragraph: Every 1 SAR earns 10 points
+    - listitem:
+      - paragraph:
+        - paragraph: Redeem
+      - paragraph:
+        - paragraph:
+          - paragraph: Every 250 points convert to 1 SAR
+  - heading "Activate Mokafaa" [level=6]
+  - paragraph: Provide your customers with one of the most popular loyalty programs in Saudi Arabia to redeem points for purchases from your store.
+  - button "Activate Now"
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

@@ -1,0 +1,62 @@
+- link:
+  - /url: /en-sa/stores/127604/channels/pos/settings/invoice-templates
+- separator
+- button [disabled]
+- button [disabled]
+- button "Reset" [disabled]
+- button "Save" [disabled]
+- heading "Info" [level=3]:
+  - button "Info" [expanded]:
+    - paragraph: Info
+- region:
+  - text: Template name
+  - textbox "Template name":
+    - /placeholder: "Eg: Ramadan template"
+  - text: Inventory location
+  - combobox "Inventory location"
+  - button "Open"
+  - paragraph
+- heading "Customize All changes apply across all theme pages" [level=3]:
+  - button "Customize All changes apply across all theme pages" [expanded]:
+    - paragraph: Customize
+    - text: All changes apply across all theme pages
+- region:
+  - tablist:
+    - tab "Header" [selected]
+    - tab "Body"
+    - tab "Footer"
+  - paragraph: Store information
+  - checkbox "Store logo"
+  - text: Store logo
+  - checkbox "Store name"
+  - text: Store name
+  - textbox "Demo Store" [disabled]
+  - button "Reset" [disabled]
+  - paragraph: Invoice details
+  - checkbox "Invoice number" [checked] [disabled]
+  - text: Invoice number
+  - checkbox "Invoice date" [checked] [disabled]
+  - text: Invoice date
+  - checkbox "Invoice number barcode"
+  - text: Invoice number barcode
+  - paragraph: Order & Payment
+  - checkbox "Invoice status" [checked] [disabled]
+  - text: Invoice status
+  - checkbox "Payment status" [checked] [disabled]
+  - text: Payment status
+  - checkbox "Payment method" [checked] [disabled]
+  - text: Payment method
+  - checkbox "Order counter"
+  - text: Order counter
+  - paragraph: Customer details
+  - checkbox "Customer name"
+  - text: Customer name
+  - checkbox "Customer number"
+  - text: Customer number
+  - paragraph: Cashier details
+  - checkbox "Cashier name"
+  - text: Cashier name
+  - checkbox "Cashier user name"
+  - text: Cashier user name
+- text: "فاتورة ضريبية مبسطة Simplified tax invoice رقم الفاتورة: 20995032022121433 تاريخ الطلب: 2022-10-07 | 03:00ص حالة الدفع: مكتمل حالة الطلب: تم التوصيل طريقة الدفع: مدى المنتجات: 1. اسم منتج تجريبي بحروف طويلة ومتغيرة 1: 434.87 SAR ضريبة 15% 1,403.56 SAR 2. اسم منتج تجريبي بحروف طويلة ومتغيرة 2: 434.87 SAR ضريبة 15% 1,403.56 SAR 3. اسم منتج تجريبي بحروف طويلة ومتغيرة 3: 434.87 SAR ضريبة 15% 1,403.56 SAR 4. اسم منتج تجريبي بحروف طويلة ومتغيرة 4: 434.87 SAR ضريبة 15% 1,403.56 SAR 5. اسم منتج تجريبي بحروف طويلة ومتغيرة 5: 434.87 SAR ضريبة 15% 1,403.56 SAR إجمالي المنتجات: 995.00 SAR تفاصيل السعر: المجموع الفرعي (بدون ضريبة القيمة المضافة): 868.14 SAR الخصومات (زد 10): -50.00 SAR التوصيل: 500.00 SAR خصم التوصيل: -500.00 SAR الدفع عند الاستلام: 45.00 SAR المبلغ الخاضع للضريبة: 868.14 SAR ضريبة القيمة المضافة (15٪): 130.22 SAR إجمالي المنتجات مع الضريبة: 1000.00 SAR الإجمالي: 995.00 SAR"
+- img

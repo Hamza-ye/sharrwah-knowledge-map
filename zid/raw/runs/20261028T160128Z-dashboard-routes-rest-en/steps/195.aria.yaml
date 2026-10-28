@@ -1,0 +1,110 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Discounts":
+    - /url: /en-sa/stores/127604/marketing/discounts
+  - link "Bank discounts New":
+    - /url: /en-sa/stores/127604/marketing/bank-discounts
+  - link "Cashback offers New":
+    - /url: /en-sa/stores/127604/marketing/cashback-offers
+  - link "Bundle offers":
+    - /url: /en-sa/stores/127604/marketing/bundle-offers
+  - link "Automated Messages New":
+    - /url: /en-sa/stores/127604/marketing/automated-messages
+  - link "Marketing campaigns":
+    - /url: /en-sa/stores/127604/marketing/campaigns
+  - link "Loyalty program":
+    - /url: /en-sa/stores/127604/marketing/loyalty
+  - link "Customer Referrals Beta":
+    - /url: /en-sa/stores/127604/marketing/referrals
+  - link "Mokafaa program New":
+    - /url: /en-sa/stores/127604/marketing/mokafaa
+  - link "Qitaf New":
+    - /url: /en-sa/stores/127604/marketing/new-qitaf
+  - link "Affiliates":
+    - /url: /en-sa/stores/127604/marketing/affiliates
+  - link "Zid Ads":
+    - /url: /en-sa/stores/127604/apps/2812/embedded
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - heading "Customer referrals program" [level=5]
+  - link "Activate":
+    - /url: /en-sa/stores/127604/marketing/referrals/program
+  - img
+  - heading "No ad sells like a friend" [level=4]
+  - paragraph: Referred customers spend more and stay longer. Your customers gets a code, and when a friend they invite orders, both get rewarded.
+  - paragraph: Referrals convert at 4.2%, compared to 1.1% for paid social
+  - paragraph: Rewarding both parties lifts sharing by 20%
+  - paragraph: A referred customer costs ~40% less than one acquired through paid search
+  - link "Activate":
+    - /url: /en-sa/stores/127604/marketing/referrals/program
+  - heading "Main advantages" [level=6]
+  - paragraph: Your customers become marketers automatically
+  - separator
+  - paragraph: Every customer gets a referral code tied to their account, with zero manual setup. The code appears right on the order confirmation page, the moment they're most excited to recommend you, lifting sharing rates by over 30%.
+  - paragraph: You decide the reward and when it pays out
+  - separator
+  - paragraph: "Cashback as a percentage of the order, a fixed amount, or custom loyalty points, for both the referrer and their friend. And crucially: you choose when the reward is released, with a holding period that protects you against returns."
+  - paragraph: Rules that protect you from abuse
+  - separator
+  - paragraph: Referral fraud is the most overlooked risk, it quietly destroys conversion rates and inflates your rewards bill. Set a minimum order value, limit rewards to a new customer's first order only, and cap referrals per customer or overall.
+  - paragraph: Fully tracked and connected to your store data
+  - separator
+  - paragraph: A dashboard showing your latest referrals, top referrers, and performance metrics, with referral details surfaced inside each customer profile and order page. And your customers get notified the moment their reward lands.
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

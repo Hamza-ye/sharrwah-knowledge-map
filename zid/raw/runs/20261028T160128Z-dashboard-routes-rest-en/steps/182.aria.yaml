@@ -1,0 +1,194 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - heading "Growth" [level=5]
+  - heading "Interested in growth?" [level=4]
+  - paragraph: Request a growth specialist to help you grow
+  - link "Apply Now":
+    - /url: https://share.hsforms.com/1D6gcK3M_S3KTU1ZjIt9WWw2tevd?uuid=f108d30b-5f05-4d23-9312-2e8e3006f0b1
+  - heading "Your relationship manager" [level=6]
+  - paragraph: Get personalized support and guidance to accelerate your business growth with a dedicated relationship manager. available only for merchants with over 2,500 lifetime orders or professional and enterprise merchants.
+  - button "Upgrade now"
+  - heading "Zid community" [level=6]
+  - paragraph: Join a thriving community of over 10,000+ merchants across the gulf region. share experiences, learn from peers, and grow together.
+  - paragraph: Active merchants
+  - paragraph: 10,000+
+  - paragraph: Community support
+  - paragraph: 24/7
+  - paragraph: Weekly discussions
+  - paragraph: 150+
+  - button "Join community"
+  - paragraph: Sales
+  - paragraph:  0
+  - img
+  - link "View report":
+    - /url: /en-sa/stores/127604/analytics/marketing/summary#sales-value-overtime-chart
+  - paragraph: Orders
+  - paragraph: "0"
+  - img
+  - link "View report":
+    - /url: /en-sa/stores/127604/analytics/marketing/orders#orders-overtime-chart
+  - paragraph: Visits
+  - paragraph: "40"
+  - img
+  - link "View report":
+    - /url: /en-sa/stores/127604/analytics/marketing/customers#visits-overtime-chart
+  - paragraph: Conversion
+  - paragraph: 0.00%
+  - combobox "All order sources"
+  - img
+  - link "View report":
+    - /url: /en-sa/stores/127604/analytics/marketing/customers#abandoned-cart-conversion-rate-chart
+  - heading "Recommended growth services for you" [level=6]
+  - img "User-Generated Content"
+  - paragraph: User-Generated Content
+  - separator
+  - text: Starts from  1,840.00
+  - button
+  - img "Amazon - Basic package"
+  - paragraph: Amazon - Basic package
+  - separator
+  - text: Starts from  1,532.95
+  - button
+  - img "Switch store service"
+  - paragraph: Switch store service
+  - separator
+  - text: Starts from  2,500.10
+  - button
+  - img "(10k-49k) Zid Ads - Basic Package 3 Months"
+  - paragraph: (10k-49k) Zid Ads - Basic Package 3 Months
+  - separator
+  - text: Starts from  27,600.00
+  - button
+  - link "View all":
+    - /url: /en-sa/stores/127604/services/growth/services
+  - heading "Track your marketing campaigns from one place" [level=6]
+  - paragraph: Integrate your marketing channel to track your marketing campaigns.
+  - button
+  - table:
+    - rowgroup:
+      - row "Product name Spend Currency Order cost Currency Orders Sales Currency Roas":
+        - columnheader
+        - columnheader "Product name"
+        - columnheader "Spend Currency"
+        - columnheader "Order cost Currency"
+        - columnheader "Orders"
+        - columnheader "Sales Currency"
+        - columnheader "Roas"
+  - img
+  - heading "Ready to track performance?" [level=6]
+  - paragraph: Start by connecting your first marketing channel like Google, Meta, TikTok, or Snapchat to unlock campaign insights.
+  - button "Add marketing channel"
+  - heading "Track your goals" [level=6]
+  - paragraph: Setting order goals helps us provide personalized recommendations and insights to boost your business performance. we'll track your progress and suggest actionable steps to reach your targets.
+  - separator
+  - tablist:
+    - tab "Monthly" [selected]
+    - tab "Annual"
+  - heading "Progress towards your goal" [level=6]
+  - paragraph: 0.00%
+  - progressbar
+  - text: 0k 1.3k 2.5k 3.8k 5.0k
+  - paragraph: Current orders
+  - paragraph: "0"
+  - paragraph: Goal
+  - paragraph: 5,000
+  - paragraph: Orders to goal
+  - paragraph: 5,000
+  - button "Edit goals"
+  - heading "Marketing calendar" [level=6]
+  - button
+  - paragraph: New Year
+  - text: 65 days left
+  - button
+  - paragraph: Ramadan start
+  - text: 103 days left
+  - button
+  - paragraph: Saudi Foundation Day
+  - text: 117 days left
+  - button
+  - paragraph: Eid Fitr
+  - text: 133 days left
+  - button
+  - paragraph: Saudi Flag Day
+  - text: 134 days left
+  - button
+  - paragraph: Eid Adha
+  - text: 201 days left
+  - button
+  - paragraph: Hijri New Year
+  - text: 221 days left
+  - button
+  - paragraph: Saudi National Day
+  - text: 330 days left
+  - button "How to benefit from the calendar"
+  - heading "Compare your growth" [level=6]
+  - separator
+  - paragraph: 0 orders
+  - paragraph: Total orders
+  - text: Select indicator
+  - combobox "Select indicator Total orders": Total orders
+  - text: Select date Last 30 days
+  - textbox "Select date": 28 Sep - 28 Oct, 2026
+  - button
+  - img
+  - text: Oct 22, 2026 Oct 24, 2026 Oct 26, 2026 Oct 28, 2026 0
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

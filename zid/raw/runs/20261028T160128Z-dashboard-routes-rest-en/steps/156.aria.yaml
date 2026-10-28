@@ -1,0 +1,99 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - heading "Financing" [level=5]
+  - alert:
+    - text: Dear merchant, sorry your store is not eligible for financing
+    - paragraph: Zid Financing requires your store sales to exceed 40,000  in the past 3 months
+  - heading "Welcome to Zid Financing" [level=4]
+  - paragraph: Zid Financing is an integrated solution to grow your online store through a smooth activation journey with a flexible and automated payment plan
+  - paragraph: Submitting initial requirements.
+  - paragraph: Up to 10m  financing
+  - paragraph: 10-25% annual profit margin
+  - paragraph: 5-36 months flexible payment plans
+  - paragraph: Manage everything from your store's control panel
+  - img
+  - img
+  - heading "Zid helps finance your growth" [level=6]
+  - paragraph: The financing installment is paid directly by deducting a fixed percentage of electronic payments through Zid Payments
+  - paragraph: The financing payment is deducted from the electronic payment transactions made through Zid Payments, and does not include other payment methods (bank transfer, cash on delivery, installments)
+  - paragraph: A minimum monthly amount of financing repayment is determined, and in the event that the limit is not achieved at the end of the month, it is paid by bank transfer
+  - img
+  - heading "Requirements to apply for funding" [level=6]
+  - text: "01"
+  - paragraph: Activate Zid Payments as a payment gateway and approve the account
+  - text: "02"
+  - paragraph: The period of operation of the commercial activity shall not be less than 6 months
+  - text: "03"
+  - paragraph: The validity period of the commercial registration shall not be less than 3 months
+  - heading "Journey to apply and get funding" [level=6]
+  - paragraph: "1"
+  - paragraph: Submitting initial requirements.
+  - paragraph: "2"
+  - paragraph: Share the funding offer, and review the requirements by the funding team.
+  - paragraph: "3"
+  - paragraph: Submit final requirements, and reviewed by the finance team.
+  - paragraph: "4"
+  - paragraph: Sign the contract, and review it with the finance team.
+  - paragraph: "5"
+  - paragraph: Deposit the financing amount
+  - paragraph: Keep your business growing
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

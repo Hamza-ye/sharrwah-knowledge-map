@@ -1,0 +1,93 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - button
+  - heading "Activate financing" [level=5]
+  - heading "Financial store performance" [level=4]
+  - alert: Dear merchant, your store sales within 12 months qualifies you for one of the following financing plans
+  - table:
+    - rowgroup:
+      - row "Amount Period in months":
+        - columnheader "Amount"
+        - columnheader "Period in months"
+    - rowgroup:
+      - row "Nothing to show here yet":
+        - cell "Nothing to show here yet":
+          - heading "Nothing to show here yet" [level=6]
+  - alert: Please enter the required amount and choose the appropriate repayment period to complete the initial financing requirements
+  - text: Store owner name
+  - textbox "Store owner name": Deemo Store
+  - text: Mobile Number on Absher
+  - textbox "Mobile Number on Absher": "966920020033"
+  - text: Funding amount required
+  - textbox "Funding amount required"
+  - paragraph: SAR
+  - text: Appropriate payment period
+  - combobox "Appropriate payment period"
+  - alert:
+    - text: Dear merchant, your store performance data (Zid orders for 12 months) will be shared with the financing company for evaluation.
+    - button "Download the PDF file"
+  - checkbox "Agree to all terms and conditions"
+  - text: Agree to all terms and conditions
+  - button "Submit finance application" [disabled]
+  - link "Cancel application":
+    - /url: /en-sa/stores/127604/services/financing
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

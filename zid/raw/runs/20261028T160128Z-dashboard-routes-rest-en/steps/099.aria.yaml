@@ -1,0 +1,242 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Shipping methods":
+    - /url: /en-sa/stores/127604/services/logistics/shipping-methods
+  - link "Shipments tracking":
+    - /url: /en-sa/stores/127604/services/logistics/shipments
+  - link "Transactions log":
+    - /url: /en-sa/stores/127604/services/logistics/shipments/transactions
+  - link "Label packages":
+    - /url: /en-sa/stores/127604/services/logistics/labels
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - button
+  - heading "External integrations" [level=5]
+  - textbox "Search"
+  - button
+  - table:
+    - rowgroup:
+      - row "Shipping option Pickup cities Delivery cities Delivery cost Status":
+        - columnheader
+        - columnheader "Shipping option"
+        - columnheader "Pickup cities"
+        - columnheader "Delivery cities"
+        - columnheader "Delivery cost"
+        - columnheader "Status"
+        - columnheader
+    - rowgroup:
+      - row "3rd Partner Shipping and fulfillment company 1 city 334 cities Based on contract Not activated View":
+        - cell:
+          - img
+        - cell "3rd Partner Shipping and fulfillment company"
+        - cell "1 city"
+        - cell "334 cities"
+        - cell "Based on contract"
+        - cell "Not activated"
+        - cell "View":
+          - link "View":
+            - /url: /en-sa/stores/127604/services/logistics/integrations-not-activated/377?delivery_cost_type=text
+      - row "4destinations Shipping company 485 cities 485 cities Based on contract Not activated View":
+        - cell:
+          - img
+        - cell "4destinations Shipping company"
+        - cell "485 cities"
+        - cell "485 cities"
+        - cell "Based on contract"
+        - cell "Not activated"
+        - cell "View":
+          - link "View":
+            - /url: /en-sa/stores/127604/services/logistics/integrations-not-activated/1348?delivery_cost_type=text
+      - row "4ship Shipping company 2 cities 486 cities Based on contract Not activated View":
+        - cell:
+          - img
+        - cell "4ship Shipping company"
+        - cell "2 cities"
+        - cell "486 cities"
+        - cell "Based on contract"
+        - cell "Not activated"
+        - cell "View":
+          - link "View":
+            - /url: /en-sa/stores/127604/services/logistics/integrations-not-activated/1425?delivery_cost_type=text
+      - row "AJEX Shipping company 585 cities 585 cities Based on contract Not activated View":
+        - cell:
+          - img
+        - cell "AJEX Shipping company"
+        - cell "585 cities"
+        - cell "585 cities"
+        - cell "Based on contract"
+        - cell "Not activated"
+        - cell "View":
+          - link "View":
+            - /url: /en-sa/stores/127604/services/logistics/integrations-not-activated/388?delivery_cost_type=text
+      - row "Abar Shipping company 2 cities 463 cities  23 -  38 Not activated View":
+        - cell:
+          - img
+        - cell "Abar Shipping company"
+        - cell "2 cities"
+        - cell "463 cities"
+        - cell " 23 -  38"
+        - cell "Not activated"
+        - cell "View":
+          - link "View":
+            - /url: /en-sa/stores/127604/services/logistics/integrations-not-activated/755?delivery_cost_type=range
+      - row "Aber Elsahab Shipping and fulfillment company 482 cities 1600 cities Based on contract Not activated View":
+        - cell:
+          - img
+        - cell "Aber Elsahab Shipping and fulfillment company"
+        - cell "482 cities"
+        - cell "1600 cities"
+        - cell "Based on contract"
+        - cell "Not activated"
+        - cell "View":
+          - link "View":
+            - /url: /en-sa/stores/127604/services/logistics/integrations-not-activated/1095?delivery_cost_type=text
+      - row "Alimtiaz Shipping company 463 cities 463 cities  15 -  24 Not activated View":
+        - cell:
+          - img
+        - cell "Alimtiaz Shipping company"
+        - cell "463 cities"
+        - cell "463 cities"
+        - cell " 15 -  24"
+        - cell "Not activated"
+        - cell "View":
+          - link "View":
+            - /url: /en-sa/stores/127604/services/logistics/integrations-not-activated/729?delivery_cost_type=range
+      - row "Alnaqil Almahalli Shipping company 334 cities 334 cities Based on contract Not activated View":
+        - cell:
+          - img
+        - cell "Alnaqil Almahalli Shipping company"
+        - cell "334 cities"
+        - cell "334 cities"
+        - cell "Based on contract"
+        - cell "Not activated"
+        - cell "View":
+          - link "View":
+            - /url: /en-sa/stores/127604/services/logistics/integrations-not-activated/201?delivery_cost_type=text
+      - row "Alshrouq Express Shipping company 45 cities 45 cities Based on contract Not activated View":
+        - cell:
+          - img
+        - cell "Alshrouq Express Shipping company"
+        - cell "45 cities"
+        - cell "45 cities"
+        - cell "Based on contract"
+        - cell "Not activated"
+        - cell "View":
+          - link "View":
+            - /url: /en-sa/stores/127604/services/logistics/integrations-not-activated/1326?delivery_cost_type=text
+      - row "Araba ksa Shipping company 7 cities 6 cities Based on contract Not activated View":
+        - cell:
+          - img
+        - cell "Araba ksa Shipping company"
+        - cell "7 cities"
+        - cell "6 cities"
+        - cell "Based on contract"
+        - cell "Not activated"
+        - cell "View":
+          - link "View":
+            - /url: /en-sa/stores/127604/services/logistics/integrations-not-activated/217?delivery_cost_type=text
+      - row "Arabexsa Shipping and fulfillment company 1 city 1010 cities Based on contract Not activated View":
+        - cell:
+          - img
+        - cell "Arabexsa Shipping and fulfillment company"
+        - cell "1 city"
+        - cell "1010 cities"
+        - cell "Based on contract"
+        - cell "Not activated"
+        - cell "View":
+          - link "View":
+            - /url: /en-sa/stores/127604/services/logistics/integrations-not-activated/312?delivery_cost_type=text
+      - row "AtUrHome Company Fulfilment Shipping and fulfillment company 1 city 482 cities  14 -  18 Not activated View":
+        - cell:
+          - img
+        - cell "AtUrHome Company Fulfilment Shipping and fulfillment company"
+        - cell "1 city"
+        - cell "482 cities"
+        - cell " 14 -  18"
+        - cell "Not activated"
+        - cell "View":
+          - link "View":
+            - /url: /en-sa/stores/127604/services/logistics/integrations-not-activated/1256?delivery_cost_type=range
+  - text: "Rows per page:"
+  - combobox "25"
+  - navigation "pagination navigation":
+    - list:
+      - listitem:
+        - button "Go to first page" [disabled]
+      - listitem:
+        - button "Go to previous page" [disabled]
+      - listitem:
+        - button "page 1": "1"
+      - listitem:
+        - button "Go to page 2": "2"
+      - listitem:
+        - button "Go to page 3": "3"
+      - listitem:
+        - button "Go to page 4": "4"
+      - listitem:
+        - button "Go to page 5": "5"
+      - listitem: …
+      - listitem:
+        - button "Go to page 9": "9"
+      - listitem:
+        - button "Go to next page"
+      - listitem:
+        - button "Go to last page"
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

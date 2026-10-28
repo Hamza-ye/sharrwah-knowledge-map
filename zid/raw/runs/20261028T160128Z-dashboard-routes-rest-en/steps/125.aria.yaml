@@ -1,0 +1,148 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Discounts":
+    - /url: /en-sa/stores/127604/marketing/discounts
+  - link "Bank discounts New":
+    - /url: /en-sa/stores/127604/marketing/bank-discounts
+  - link "Cashback offers New":
+    - /url: /en-sa/stores/127604/marketing/cashback-offers
+  - link "Bundle offers":
+    - /url: /en-sa/stores/127604/marketing/bundle-offers
+  - link "Automated Messages New":
+    - /url: /en-sa/stores/127604/marketing/automated-messages
+  - link "Marketing campaigns":
+    - /url: /en-sa/stores/127604/marketing/campaigns
+  - link "Loyalty program":
+    - /url: /en-sa/stores/127604/marketing/loyalty
+  - link "Customer Referrals Beta":
+    - /url: /en-sa/stores/127604/marketing/referrals
+  - link "Mokafaa program New":
+    - /url: /en-sa/stores/127604/marketing/mokafaa
+  - link "Qitaf New":
+    - /url: /en-sa/stores/127604/marketing/new-qitaf
+  - link "Affiliates":
+    - /url: /en-sa/stores/127604/marketing/affiliates
+  - link "Zid Ads":
+    - /url: /en-sa/stores/127604/apps/2812/embedded
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - button
+  - heading "Qitaf program" [level=5]
+  - paragraph: Provide your customers with the most popular loyalty program from STC 'Qitaf' to redeem points for purchases from your store
+  - button "Activate Qitaf Now"
+  - img
+  - heading "Qitaf Program" [level=1]
+  - heading "Provide your customers with the most popular loyalty program from STC 'Qitaf' to redeem points for purchases from your store" [level=6]
+  - paragraph: "Number of Qitaf program users: 15.7+ million"
+  - paragraph: Feature to increase your sales and earn customer loyalty
+  - paragraph: Ability to redeem through qitaf balance
+  - paragraph: Customers can earn Qitaf points when they shop from your store
+  - button "Activate Qitaf Now"
+  - heading "Main advantages" [level=6]
+  - img "What is Qitaf?"
+  - paragraph: What is Qitaf?
+  - separator
+  - paragraph: Qitaf is a loyalty program from STC that offers rewards, discounts, and special offers for STC customers. When you activate the Qitaf service in your store, Qitaf customers can redeem their points for purchases from your store or earn new points when they shop.
+  - img "How will your customer benefit from adding Qitaf to your store?"
+  - paragraph: How will your customer benefit from adding Qitaf to your store?
+  - separator
+  - paragraph: Your customers will benefit from redeeming Qitaf program points when they purchase from your online store or earning new points with every successful purchase from your store.
+  - heading "Qitaf rates by plan" [level=6]
+  - paragraph: Qitaf loyalty fees depend on your current Zid package.
+  - img
+  - paragraph: Rise Package
+  - separator
+  - paragraph: Earning
+  - paragraph: 8.5 %
+  - paragraph: Redeem
+  - paragraph: 15 %
+  - img
+  - paragraph: Growth Package
+  - separator
+  - paragraph: Earning
+  - paragraph: 8 %
+  - paragraph: Redeem
+  - paragraph: 13 %
+  - img
+  - paragraph: Professional Package
+  - separator
+  - paragraph: Earning
+  - paragraph: 7 %
+  - paragraph: Redeem
+  - paragraph: 10 %
+  - heading "Customer points conversion" [level=6]
+  - paragraph: Overview of customers’ points rule (earn & redeem).
+  - list:
+    - listitem:
+      - paragraph:
+        - paragraph: Earning
+      - paragraph:
+        - paragraph:
+          - paragraph: Every 1 SAR = 0.1 points
+    - listitem:
+      - paragraph:
+        - paragraph: Redeem
+      - paragraph:
+        - paragraph:
+          - paragraph: Every 5 points = 1 SAR
+  - heading "Activate Qitaf" [level=6]
+  - paragraph: Provide your customers with the most popular loyalty program from STC 'Qitaf' to redeem points for purchases from your store
+  - button "Activate Qitaf Now"
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

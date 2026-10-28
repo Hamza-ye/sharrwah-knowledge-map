@@ -1,0 +1,153 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "All products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Categories":
+    - /url: /en-sa/stores/127604/catalog/categories
+  - link "Brands New":
+    - /url: /en-sa/stores/127604/catalog/brands
+  - link "Preorder campaigns":
+    - /url: /en-sa/stores/127604/catalog/preorder-campaigns
+  - link "Inventory":
+    - /url: /en-sa/stores/127604/catalog/inventories
+  - link "Stock management":
+    - /url: /en-sa/stores/127604/catalog/inventories/stock-management
+  - link "Stock taking":
+    - /url: /en-sa/stores/127604/catalog/inventories/stock-taking
+  - link "Stock transfer requests":
+    - /url: /en-sa/stores/127604/catalog/inventories/transfer-requests
+  - link "Withdrawal priority":
+    - /url: /en-sa/stores/127604/catalog/inventories/withdrawal-priority
+  - link "Inventory stock changes":
+    - /url: /en-sa/stores/127604/catalog/inventory-stock-changes
+  - link "Filters":
+    - /url: /en-sa/stores/127604/catalog/filters
+  - link "Custom fields":
+    - /url: /en-sa/stores/127604/catalog/meta-fields
+  - link "Options library":
+    - /url: /en-sa/stores/127604/catalog/options
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - heading "Transfer requests" [level=5]
+  - paragraph: You can specify the location of the basic inventory and the inventory to which the transfer will be made
+  - link "Create":
+    - /url: /en-sa/stores/127604/catalog/inventories/transfer-requests/create
+  - link "Auto Restock":
+    - /url: /en-sa/stores/127604/catalog/inventories/auto-restock
+  - textbox "Search by request number"
+  - table:
+    - rowgroup:
+      - row "Request number Source inventory Destination inventory Request date Request status":
+        - columnheader "Request number"
+        - columnheader "Source inventory"
+        - columnheader "Destination inventory"
+        - columnheader "Request date"
+        - columnheader "Request status"
+        - columnheader
+    - rowgroup:
+      - row "9282 Default - الافتراضي عنوان مخزونك 2026-08-01 Received View Edit":
+        - cell "9282"
+        - cell "Default - الافتراضي"
+        - cell "عنوان مخزونك"
+        - cell "2026-08-01":
+          - paragraph: 2026-08-01
+        - cell "Received"
+        - cell "View Edit":
+          - link "View":
+            - /url: /en-sa/stores/127604/catalog/inventories/transfer-requests/9282
+          - link "Edit":
+            - /url: /en-sa/stores/127604/catalog/inventories/transfer-requests/9282/edit
+      - row "7942 Default - الافتراضي عنوان مخزونك 2026-04-24 Received View Edit":
+        - cell "7942"
+        - cell "Default - الافتراضي"
+        - cell "عنوان مخزونك"
+        - cell "2026-04-24":
+          - paragraph: 2026-04-24
+        - cell "Received"
+        - cell "View Edit":
+          - link "View":
+            - /url: /en-sa/stores/127604/catalog/inventories/transfer-requests/7942
+          - link "Edit":
+            - /url: /en-sa/stores/127604/catalog/inventories/transfer-requests/7942/edit
+      - row "6053 Default - الافتراضي عنوان مخزونك 2026-01-11 Pending View Edit":
+        - cell "6053"
+        - cell "Default - الافتراضي"
+        - cell "عنوان مخزونك"
+        - cell "2026-01-11":
+          - paragraph: 2026-01-11
+        - cell "Pending"
+        - cell "View Edit":
+          - link "View":
+            - /url: /en-sa/stores/127604/catalog/inventories/transfer-requests/6053
+          - link "Edit":
+            - /url: /en-sa/stores/127604/catalog/inventories/transfer-requests/6053/edit
+  - navigation "pagination navigation":
+    - list:
+      - listitem:
+        - button "Go to first page" [disabled]
+      - listitem:
+        - button "Go to previous page" [disabled]
+      - listitem:
+        - button "page 1": "1"
+      - listitem:
+        - button "Go to next page" [disabled]
+      - listitem:
+        - button "Go to last page" [disabled]
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

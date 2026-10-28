@@ -1,0 +1,148 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Discounts":
+    - /url: /en-sa/stores/127604/marketing/discounts
+  - link "Bank discounts New":
+    - /url: /en-sa/stores/127604/marketing/bank-discounts
+  - link "Cashback offers New":
+    - /url: /en-sa/stores/127604/marketing/cashback-offers
+  - link "Bundle offers":
+    - /url: /en-sa/stores/127604/marketing/bundle-offers
+  - link "Automated Messages New":
+    - /url: /en-sa/stores/127604/marketing/automated-messages
+  - link "Marketing campaigns":
+    - /url: /en-sa/stores/127604/marketing/campaigns
+  - link "Loyalty program":
+    - /url: /en-sa/stores/127604/marketing/loyalty
+  - link "Customer Referrals Beta":
+    - /url: /en-sa/stores/127604/marketing/referrals
+  - link "Mokafaa program New":
+    - /url: /en-sa/stores/127604/marketing/mokafaa
+  - link "Qitaf New":
+    - /url: /en-sa/stores/127604/marketing/new-qitaf
+  - link "Affiliates":
+    - /url: /en-sa/stores/127604/marketing/affiliates
+  - link "Zid Ads":
+    - /url: /en-sa/stores/127604/apps/2812/embedded
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - heading "Marketing" [level=5]
+  - heading "Upcoming seasons" [level=6]
+  - heading "New Year" [level=6]
+  - text: 65 days left
+  - heading "Ramadan start" [level=6]
+  - text: 103 days left
+  - heading "Saudi Foundation Day" [level=6]
+  - text: 117 days left
+  - heading "Eid Fitr" [level=6]
+  - text: 133 days left
+  - link "Prepare an offer":
+    - /url: /en-sa/stores/127604/marketing/discounts/create
+  - heading "Marketing tools" [level=6]
+  - tablist "Filter tools by objective":
+    - tab "All tools 17" [selected]
+    - tab "Bigger baskets 5"
+    - tab "Loyalty and rewards 5"
+    - tab "Reach and engagement 7"
+  - heading "Automated messages" [level=6]
+  - link "Create an automated message":
+    - /url: /en-sa/stores/127604/marketing/automated-messages
+  - text: Reach customers automatically at the right moment, from a welcome to recovering an abandoned cart. Reach and engagement New
+  - heading "Cashback offers" [level=6]
+  - link "Create offer":
+    - /url: /en-sa/stores/127604/marketing/cashback-offers
+  - text: Return part of an order to the customer’s wallet, then target balances about to expire and encourage those customers to buy again. Loyalty and rewards New
+  - heading "Free shipping offer" [level=6]
+  - link "Create offer":
+    - /url: /en-sa/stores/127604/marketing/discounts/create?template=free-shipping
+  - text: Offer free shipping above a set order value or to specific regions, and encourage customers to buy more. Bigger baskets
+  - heading "WhatsApp for business" [level=6]
+  - link "Set up WhatsApp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - text: Reach customers, grow sales, and send your offers and updates over Zid Business WhatsApp. Reach and engagement
+  - heading "Bundle offers" [level=6]
+  - link "Create a bundle":
+    - /url: /en-sa/stores/127604/marketing/bundle-offers
+  - text: "Bundle your products: buy one get one free, one at a discount, or a set at a custom price. Bigger baskets"
+  - heading "Customer referrals" [level=6]
+  - link "Set up program":
+    - /url: /en-sa/stores/127604/marketing/referrals
+  - text: Reward customers for inviting friends to your store, win new customers, and grow your base for less. Loyalty and rewards Beta
+  - heading "Bank discounts" [level=6]
+  - link "Create a bank discount":
+    - /url: /en-sa/stores/127604/marketing/bank-discounts
+  - text: Offer a discount to holders of specific bank cards, and attract more customers. Bigger baskets New
+  - navigation "pagination navigation":
+    - list:
+      - listitem:
+        - button "Go to first page" [disabled]
+      - listitem:
+        - button "Go to previous page" [disabled]
+      - listitem:
+        - button "page 1": "1"
+      - listitem:
+        - button "Go to page 2": "2"
+      - listitem:
+        - button "Go to page 3": "3"
+      - listitem:
+        - button "Go to next page"
+      - listitem:
+        - button "Go to last page"
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

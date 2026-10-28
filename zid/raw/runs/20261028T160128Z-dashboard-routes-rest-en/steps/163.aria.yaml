@@ -1,0 +1,196 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "All analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Reports New":
+    - /url: /en-sa/stores/127604/analytics/customizable-reports
+  - link "Zid Insights New":
+    - /url: /en-sa/stores/127604/analytics/insights
+  - link "Live analytics":
+    - /url: /en-sa/stores/127604/analytics/live
+  - link "Sales reports":
+    - /url: /en-sa/stores/127604/analytics/reports/sales
+  - link "Inventory reports":
+    - /url: /en-sa/stores/127604/analytics/reports/inventory
+  - link "Customers reports":
+    - /url: /en-sa/stores/127604/analytics/reports/customers
+  - link "Financial":
+    - /url: /en-sa/stores/127604/analytics/financial
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/analytics/marketing
+  - link "Operational":
+    - /url: /en-sa/stores/127604/analytics/operational
+  - link "Products":
+    - /url: /en-sa/stores/127604/analytics/products
+  - link "Payments":
+    - /url: /en-sa/stores/127604/analytics/payments
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/analytics/logistics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - button
+  - heading "Zid Insights" [level=5]
+  - img
+  - heading "Know what deserves your attention." [level=3]
+  - paragraph: Zid Insights monitors store performance, explains what changed, and highlights what deserves review. Ask your data directly or create a report for your team.
+  - button "Start free trial"
+  - text: Free for 3 months.
+  - img "Example from Zid Insights":
+    - heading "Ask Zid Insights" [level=6]
+    - text: Example from Zid Insights
+    - paragraph: Which products do customers buy together?
+    - paragraph: We found the most frequent product pairs. Open the report for details.
+    - paragraph: Jasmine perfume + body lotion
+    - text: 128 orders
+    - progressbar
+    - paragraph: Oud oil + incense burner
+    - text: 94 orders
+    - progressbar
+    - paragraph: Amber perfume + linen spray
+    - text: 61 orders
+    - progressbar
+    - paragraph: Type your question here...
+  - heading "Three ways to understand your store" [level=5]
+  - article:
+    - heading "Follow what needs attention" [level=3]
+    - paragraph: Get a clear alert when an important store-performance metric changes.
+  - article:
+    - heading "Ask your store data" [level=3]
+    - paragraph: Ask about sales, products, or customers and get an answer grounded in your store data.
+  - article:
+    - heading "Know where to expand" [level=3]
+    - paragraph: Find the cities and areas where demand is growing so you can plan expansion with confidence.
+  - heading "Available Zid Insights analyses" [level=5]
+  - heading "Market Pulse" [level=6]
+  - separator
+  - list:
+    - listitem:
+      - paragraph: Market position vs. competitors
+    - listitem:
+      - paragraph: Market trends & seasonality
+    - listitem:
+      - paragraph: Price positioning
+    - listitem:
+      - paragraph: Payment gaps
+    - listitem:
+      - paragraph: Store reputation & reviews
+    - listitem:
+      - paragraph: Competitor Watch
+      - text: Coming Soon
+  - heading "Products" [level=6]
+  - separator
+  - list:
+    - listitem:
+      - paragraph: Slow moving stock
+    - listitem:
+      - paragraph: Product performance
+    - listitem:
+      - paragraph: Frequently bought together
+    - listitem:
+      - paragraph: Stock at risk
+    - listitem:
+      - paragraph: Category performance
+    - listitem:
+      - paragraph: Inventory turnover
+  - heading "Customers" [level=6]
+  - separator
+  - list:
+    - listitem:
+      - paragraph: Customer reactivation
+    - listitem:
+      - paragraph: Sales by region
+    - listitem:
+      - paragraph: Gender distribution & buying behavior
+  - heading "Operations" [level=6]
+  - separator
+  - list:
+    - listitem:
+      - paragraph: Carrier shipping performance
+    - listitem:
+      - paragraph: Best days & hours to sell
+    - listitem:
+      - paragraph: Cart recovery
+    - listitem:
+      - paragraph: Orders needing follow-up
+    - listitem:
+      - paragraph: Order fulfillment speed
+  - heading "Marketing & Discounts" [level=6]
+  - separator
+  - list:
+    - listitem:
+      - paragraph: Coupon performance & ROI
+    - listitem:
+      - paragraph: Profitable vs. losing discount rules
+  - heading "Growth" [level=6]
+  - separator
+  - list:
+    - listitem:
+      - paragraph: App recommendations for your store
+    - listitem:
+      - paragraph: Highest-converting marketing channels
+    - listitem:
+      - paragraph: Where to open next
+      - text: Coming Soon
+  - img
+  - heading "Try Zid Insights free for 3 months" [level=4]
+  - paragraph: Follow what changes in your store, ask your data, and create clear reports to share with your team.
+  - button "Start free trial"
+  - text: Activate directly Cancel at any time
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

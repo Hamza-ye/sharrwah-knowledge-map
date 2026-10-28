@@ -1,0 +1,829 @@
+<!DOCTYPE html><html style="display:none;width:0px;height:0px;opacity:0;background:transparent;"><head>
+  
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+  <script type="text/javascript">
+    
+
+"use strict";var _createClass=function(){function e(e,n){for(var t=0;t<n.length;t++){var r=n[t];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}return function(n,t,r){return t&&e(n.prototype,t),r&&e(n,r),n}}();function _classCallCheck(e,n){if(!(e instanceof n))throw new TypeError("Cannot call a class as a function")}var idbKeyval=function(e){var n=function(){function e(){var n=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"keyval-store",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"keyval";_classCallCheck(this,e),this.storeName=t,this._dbp=new Promise(function(e,r){var o=indexedDB.open(n,1);o.onerror=function(){return r(o.error)},o.onsuccess=function(){return e(o.result)},o.onupgradeneeded=function(){o.result.createObjectStore(t)}})}return _createClass(e,[{key:"_withIDBStore",value:function(e,n){var t=this;return this._dbp.then(function(r){return new Promise(function(o,i){var u=r.transaction(t.storeName,e);u.oncomplete=function(){return o()},u.onabort=u.onerror=function(){return i(u.error)},n(u.objectStore(t.storeName))})})}}]),e}(),t=void 0;function r(){return t||(t=new n),t}return e.Store=n,e.get=function(e){var n=void 0;return(arguments.length>1&&void 0!==arguments[1]?arguments[1]:r())._withIDBStore("readonly",function(t){n=t.get(e)}).then(function(){return n.result})},e.set=function(e,n){return(arguments.length>2&&void 0!==arguments[2]?arguments[2]:r())._withIDBStore("readwrite",function(t){t.put(n,e)})},e.del=function(e){return(arguments.length>1&&void 0!==arguments[1]?arguments[1]:r())._withIDBStore("readwrite",function(n){n.delete(e)})},e.clear=function(){return(arguments.length>0&&void 0!==arguments[0]?arguments[0]:r())._withIDBStore("readwrite",function(e){e.clear()})},e.keys=function(){var e=[];return(arguments.length>0&&void 0!==arguments[0]?arguments[0]:r())._withIDBStore("readonly",function(n){(n.openKeyCursor||n.openCursor).call(n).onsuccess=function(){this.result&&(e.push(this.result.key),this.result.continue())}}).then(function(){return e})},e}({});
+
+(function() {
+  
+
+var _PRODUCT_CODE = 'ibbIuQVd28400';
+var _PERMISSIONS_KEY = '_BEAMER_NOTIFICATIONS_PERMITTED_' + _PRODUCT_CODE;
+var _FILTER_KEY = '_BEAMER_FILTER_' + _PRODUCT_CODE;
+var _USER_KEY = '_BEAMER_USER_' + _PRODUCT_CODE;
+var _FIRSTNAME_KEY = '_BEAMER_FIRSTNAME_' + _PRODUCT_CODE;
+var _LASTNAME_KEY = '_BEAMER_LASTNAME_' + _PRODUCT_CODE;
+var _EMAIL_KEY = '_BEAMER_EMAIL_' + _PRODUCT_CODE;
+var _CUSTOM_USER_KEY = '_BEAMER_CUSTOM_USER_' + _PRODUCT_CODE;
+var _LANGUAGE_KEY = '_BEAMER_LANGUAGE_' + _PRODUCT_CODE;
+var _LAST_REQUEST_DATE_KEY = '_BEAMER_NOTIFICATIONS_LAST_REQUEST_' + _PRODUCT_CODE;
+var _REQUEST_ATTEPMTS_KEY = '_BEAMER_NOTIFICATIONS_REQUEST_ATTEPMTS_' + _PRODUCT_CODE;
+var _LAST_DATA_UPDATE = '_BEAMER_LAST_DATA_UPDATE_' + _PRODUCT_CODE;
+var _LAST_UPDATE_REQUEST = '_BEAMER_LAST_UPDATE_REQUEST_' + _PRODUCT_CODE;
+var _PUBLIC = false;
+
+
+
+
+
+
+
+	var _LANGUAGE = 'EN';
+
+
+var _BASE_URL = "https://push.getbeamer.com/";
+var _USER_DETAILS;
+var _PENDING_BACKEND_SAVES = [];
+var _BACKEND_SAVE_TIMEOUT;
+
+function sendTokenToServer(token, alreadyGranted) {
+	var data = 'token=' + token;
+
+	data += '&product=' + _PRODUCT_CODE;
+
+	return buildTokenUrl(data).then(function(url) {
+		if (url.indexOf('custom_user_id') < 0 && typeof custom_user_id !== 'undefined' && custom_user_id !== '') {
+			url += '&custom_user_id=' + encodeURIComponent(custom_user_id);
+		}
+
+		if (typeof alreadyGranted !== 'undefined' && alreadyGranted) {
+			url += '&alreadyGranted=true';
+		}
+
+		if (typeof _REF_URL !== 'undefined' && _REF_URL) {
+			url += '&ref=' + encodeURIComponent(_REF_URL);
+		}
+
+		doSubscriptionRequest(url, function(xhttp) {
+			if(xhttp.readyState == 4) {
+				if (xhttp.status == 200) {
+					saveInStorage(_PERMISSIONS_KEY, true);
+					saveInDB(_LAST_UPDATE_REQUEST, new Date().getTime())
+						.then(exit);
+				} else {
+					exit();
+				}
+			}
+		});
+	});
+}
+
+function doSubscriptionRequest(data, callback) {
+	if (typeof XMLHttpRequest !== 'undefined') {
+		var xhttp = new XMLHttpRequest();
+		xhttp.open('POST', _BASE_URL + 'subscribeToPush', true);
+		xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+		xhttp.onreadystatechange = function() {
+			if (callback) {
+				callback(xhttp);
+			}
+		};
+		xhttp.send(data);
+	} else {
+		var request = new Request(_BASE_URL + 'subscribeToPush?' + data);
+		var options = {
+			method: 'GET',
+		}
+
+		return fetch(request, options).then(callback);
+	}
+}
+
+function logError(error) {
+	var baseData = 'message=' + encodeURIComponent(error) + '&product=' + _PRODUCT_CODE;
+
+	buildTokenUrl(baseData).then(function(data) {
+		if (typeof XMLHttpRequest !== 'undefined') {
+			var xhttp = new XMLHttpRequest();
+			xhttp.open('POST', _BASE_URL + 'logPushError', true);
+			xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+			xhttp.send(data);
+		} else {
+			var request = new Request(_BASE_URL + 'logPushError?' + data);
+			var options = {
+				method: 'GET',
+			}
+			return fetch(request, options);
+		}
+	});
+}
+
+function saveInStorage(key, data) {
+	try {
+		// if (window.localStorage) {
+		// 	if (typeof data !== 'string') {
+		// 		data = JSON.stringify(data);
+		// 	}
+		// 	localStorage.setItem(key, data);
+		// }
+
+		//Backend Fallback
+		setToBackend(key, data);
+	} catch (e) {
+	}
+}
+
+function getFromStorage(key) {
+	try {
+		return getFromBackend(key);
+		// var value;
+
+		// if (window.localStorage) {
+		// 	value = localStorage.getItem(key);
+		// 	if (typeof value !== 'undefined') {
+		// 		return value;
+		// 	}
+		// }
+
+		// var value = getFromBackend(key);
+
+		// if (window.localStorage) {
+		// 	var data = value;
+		// 	if (typeof data !== 'string') {
+		// 		data = JSON.stringify(data);
+		// 	}
+		// 	localStorage.setItem(key, data);
+		// }
+
+		// return value;
+	} catch (e) {
+	}
+}
+
+function removeFromStorage(key) {
+	try {
+		// if (window.localStorage) {
+		// 	localStorage.removeItem(key);
+		// }
+
+		setToBackend(key, '');
+	} catch(e) {
+	}
+}
+
+function getFromDB(key) {
+	if (typeof getFromWorkerDB !== 'undefined') {
+		return getFromWorkerDB(key);
+	}
+	// return idbKeyval.get(key).then(function(value) {
+	// 	if (typeof value !== 'undefined') {
+	// 		return value;
+	// 	}
+	// 	return getFromBackend(key);
+	// });
+	return Promise.resolve(getFromBackend(key));
+}
+
+function saveInDB(key, data) {
+	// setToBackend(key, data);
+	// return idbKeyval.set(key, data);
+	return new Promise(function(resolve) {
+		setToBackend(key, data);
+		resolve();
+	});
+}
+
+function getFromBackend(cname) {
+	var value = _USER_DETAILS[cname];
+	if (typeof value === 'string' && /^-?\d+$/.test(value)) {
+		return parseInt(value);
+	}
+	return value;
+	// var url = _BASE_URL + 'getPushPromptLastInteraction'
+	// var data = Beamer.ajax(url, function(response) { return response })
+	// var formData = {
+	// 	product: _PRODUCT_CODE,
+	// 	user_id: _USER,
+	// 	key: cname
+	// }
+	// sendData(formData, url, 'GET', function(xhttp) {
+	// 	if (xhttp.readyState == 4) {
+	// 		if (xhttp.status == 200) {
+	// 			return xhttp.data;
+	// 		} else {
+	// 			exit();
+	// 		}
+	// 	}
+	// });
+}
+
+function setToBackend(cname, data) {
+	var currentValue = getFromBackend(cname);
+	if (
+		(typeof currentValue === 'undefined' && (typeof data === 'undefined' || data === ''))
+		|| (typeof currentValue !== 'undefined' && currentValue == data)
+	) {
+		return;
+	}
+
+	_USER_DETAILS[cname] = data;
+
+	if (typeof _BACKEND_SAVE_TIMEOUT !== 'undefined' && !!_BACKEND_SAVE_TIMEOUT) {
+		clearTimeout(_BACKEND_SAVE_TIMEOUT);
+	}
+
+	_PENDING_BACKEND_SAVES.push({key: cname, value: data});
+
+	_BACKEND_SAVE_TIMEOUT = setTimeout(function() {
+		var keyValues = {};
+		while (_PENDING_BACKEND_SAVES.length > 0) {
+			var keyValue = _PENDING_BACKEND_SAVES.pop();
+			keyValues[keyValue.key] = keyValue.value;
+		}
+
+		var url = _BASE_URL + 'updateUserPushDetails'
+		var formData = {
+			product: _PRODUCT_CODE,
+			user_id: _USER,
+			keyValues: JSON.stringify(keyValues)
+		}
+		sendData(formData, url, 'POST');
+
+		_BACKEND_SAVE_TIMEOUT = null;
+	}, 500);
+}
+
+function exit() {
+	if (
+		(typeof _useCustomPushDomain === 'undefined' || !_useCustomPushDomain)
+		&& (
+			typeof Beamer === 'undefined'
+			|| typeof Beamer.pushDomain === 'undefined'
+			|| (
+				Beamer.pushDomain !== window.location.host
+				&& (!window.location.host.endsWith('.' + Beamer.pushDomain))
+			)
+		)
+	) {
+		if (typeof _BACKEND_SAVE_TIMEOUT !== 'undefined' && !!_BACKEND_SAVE_TIMEOUT) {
+			setTimeout(function() {
+				window.close();
+			}, 1000);
+		} else {
+			window.close();
+		}
+	}
+}
+
+function initMessaging() {
+	firebase.initializeApp({
+		apiKey: 'AIzaSyCcZbbK1LEqht5CvQmRtssDaEK3bMn6qD8',
+		projectId: 'getbeamer',
+		messagingSenderId: '703343904461',
+		appId: '1:703343904461:web:460f6175a3f28fa1368b84'
+	});
+
+	return firebase.messaging();
+}
+
+function detectOS() {
+	try {
+		var nAgt = navigator.userAgent;
+
+		var os = '';
+		var clientStrings = [
+			{s:'Windows 10', r:/(Windows 10.0|Windows NT 10.0)/},
+			{s:'Windows 8.1', r:/(Windows 8.1|Windows NT 6.3)/},
+			{s:'Windows 8', r:/(Windows 8|Windows NT 6.2)/},
+			{s:'Windows 7', r:/(Windows 7|Windows NT 6.1)/},
+			{s:'Windows Vista', r:/Windows NT 6.0/},
+			{s:'Windows Server 2003', r:/Windows NT 5.2/},
+			{s:'Windows XP', r:/(Windows NT 5.1|Windows XP)/},
+			{s:'Windows 2000', r:/(Windows NT 5.0|Windows 2000)/},
+			{s:'Windows ME', r:/(Win 9x 4.90|Windows ME)/},
+			{s:'Windows 98', r:/(Windows 98|Win98)/},
+			{s:'Windows 95', r:/(Windows 95|Win95|Windows_95)/},
+			{s:'Windows NT 4.0', r:/(Windows NT 4.0|WinNT4.0|WinNT|Windows NT)/},
+			{s:'Windows CE', r:/Windows CE/},
+			{s:'Windows 3.11', r:/Win16/},
+			{s:'Android', r:/Android/},
+			{s:'Open BSD', r:/OpenBSD/},
+			{s:'Sun OS', r:/SunOS/},
+			{s:'Linux', r:/(Linux|X11)/},
+			{s:'iOS', r:/(iPhone|iPad|iPod)/},
+			{s:'Mac OS X', r:/Mac OS X/},
+			{s:'Mac OS', r:/(MacPPC|MacIntel|Mac_PowerPC|Macintosh)/},
+			{s:'QNX', r:/QNX/},
+			{s:'UNIX', r:/UNIX/},
+			{s:'BeOS', r:/BeOS/},
+			{s:'OS/2', r:/OS\/2/},
+			{s:'Search Bot', r:/(nuhk|Googlebot|Yammybot|Openbot|Slurp|MSNBot|Ask Jeeves\/Teoma|ia_archiver)/}
+		];
+		for (var id in clientStrings) {
+			var cs = clientStrings[id];
+			if (cs.r.test(nAgt)) {
+				os = cs.s;
+				break;
+			}
+		}
+
+		return os;
+	} catch(e) {
+
+	}
+}
+
+function isMacOS() {
+	var os = detectOS();
+	return os && os.indexOf('Mac') > -1;
+}
+
+function isSafari() {
+	return /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+}
+
+function buildTokenUrl(url) {
+	return appendUrlParameter(url, _FILTER_KEY, 'role')
+		.then(function(url) {
+			return appendUrlParameter(url, _USER_KEY, 'user_id');
+		})
+		.then(function(url) {
+			return appendUrlParameter(url, _FIRSTNAME_KEY, 'user_firstname');
+		})
+		.then(function(url) {
+			return appendUrlParameter(url, _LASTNAME_KEY, 'user_lastname');
+		})
+		.then(function(url) {
+			return appendUrlParameter(url, _EMAIL_KEY, 'user_email');
+		})
+		.then(function(url) {
+			return appendUrlParameter(url, _CUSTOM_USER_KEY, 'custom_user_id');
+		})
+		.then(function(url) {
+			return appendUrlParameter(url, _LANGUAGE_KEY, 'language');
+		});
+}
+
+function appendUrlParameter(url, dbKey, parameter) {
+	return getFromDB(dbKey).then(function(value) {
+		if (value && (typeof value !== 'string' || value.trim() !== '')) {
+			if (url.indexOf(parameter + '=') > 0) {
+				return url;
+			}
+
+			if (url.indexOf('?') < 0 && url.indexOf('&') < 0) {
+				url += '?';
+			} else {
+				url += '&';
+			}
+			url += parameter + '=' + encodeURIComponent(value);
+		}
+		return url;
+	});
+}
+
+function sendData(data, url, method, callback) {
+	if (typeof XMLHttpRequest !== 'undefined') {
+		if (typeof data !== 'undefined' && method === 'GET') {
+			data = new URLSearchParams(data).toString();
+			
+			if (url.indexOf('?') > -1) {
+				url += '&';
+			} else {
+				url += '?';
+			}
+
+			url += data;
+		}
+
+		var xhttp = new XMLHttpRequest();
+		xhttp.open(method, url, true);
+		xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+		xhttp.onreadystatechange = function() {
+			if (xhttp.readyState == 4) {
+				if (xhttp.status == 200) {
+					if (typeof callback !== 'undefined' && !!callback) {
+						callback(JSON.parse(xhttp.responseText));
+					}
+				} else {
+					exit();
+				}
+			}
+		};
+
+		if (typeof data !== 'undefined' && method !== 'GET') {
+			data = new URLSearchParams(data).toString();
+			xhttp.send(data);
+		} else {
+			xhttp.send();
+		}
+	} else if (typeof postFetch !== 'undefined') {
+		if (typeof data !== 'undefined') {
+			data = new URLSearchParams(data).toString();
+			
+			if (url.indexOf('?') > -1) {
+				url += '&';
+			} else {
+				url += '?';
+			}
+
+			url += data;
+		}
+
+		postFetch(url).then(function(response) {
+			if (typeof callback !== 'undefined' && !!callback) {
+  				if (response.headers.get("content-type").includes("application/json")) {
+					response.json().then(callback);
+				} else {
+					callback();
+				}
+  			}
+	    })
+	} else {
+		var request = new Request(url + '?' + data);
+		var options = {
+			method,
+		}
+
+		return fetch(request, options).then(callback);
+	}
+}
+
+function retrieveBackendDetails(callback) {
+	var url = _BASE_URL + 'userPushDetails';
+	var formData = {
+		product: _PRODUCT_CODE
+	};
+
+	if (typeof _USER !== 'undefined') {
+		formData.user_id = _USER;
+	}
+	if (typeof _TOKEN !== 'undefined') {
+		formData.token = _TOKEN;
+	}
+	if (typeof _LANGUAGE !== 'undefined') {
+		formData.language = _LANGUAGE;
+	}
+	if (typeof _LAST_PUSH_UPDATE_TIME !== 'undefined') {
+		formData.l = _LAST_PUSH_UPDATE_TIME;
+	}
+
+	sendData(formData, url, 'GET', function(data) {
+		_USER_DETAILS = data;
+		if (typeof callback !== 'undefined' && !!callback) {
+			callback();
+		}
+	});
+}
+
+  var _REFUSE_PERMISSION = false;
+  var _RETRY_REQUEST = true;
+
+  function parseDate(string) {
+    try {
+      var b = string.split(/\D+/);
+      return new Date(Date.UTC(b[0], --b[1], b[2], b[3], b[4], b[5], b[6]));
+    } catch(err) {
+      try {
+        return new Date(string);
+      } catch(err) {
+      }
+    }
+  }
+
+  function shouldRequestPermission() {
+    if (!_RETRY_REQUEST) {
+      return false;
+    }
+    
+    var should = false;
+
+    var lastRequestDateString = getFromStorage(_LAST_REQUEST_DATE_KEY);
+
+    if (lastRequestDateString) {
+      var requestDate = parseDate(lastRequestDateString);
+      if (requestDate) {
+        var timeAgo = new Date().getTime() - requestDate.getTime();
+        var daysAgo = timeAgo / 1000 / 60 / 60 / 24;
+        var attempts = getFromStorage(_REQUEST_ATTEPMTS_KEY);
+        if (!attempts) {
+          attempts = 1;
+        }
+
+        should = (attempts == 1 && daysAgo >= 7)
+          || (attempts == 2 && daysAgo >= 30)
+          || (attempts > 2 && daysAgo >= 180);
+      }
+    } else {
+      saveInStorage(_LAST_REQUEST_DATE_KEY, new Date().toISOString());
+    }
+
+    return should;
+  }
+
+  function updateSubscription() {
+    var hasPermission = getFromStorage(_PERMISSIONS_KEY);
+
+    if (typeof hasPermission !== 'undefined' && (hasPermission === 'true' || hasPermission === true) && navigator && navigator.serviceWorker) {
+      navigator.serviceWorker.ready
+        .then(function(serviceWorkerRegistration) {
+          return serviceWorkerRegistration.pushManager.getSubscription();
+        })
+        .then(function(subscription) {
+          if (subscription) {
+            navigator.serviceWorker.controller.postMessage('dataUpdated:' + _PRODUCT_CODE + ':' + _USER);
+          }
+        });
+    }
+  }
+
+  function checkSubscriptionUpdate() {
+    getFromDB(_LAST_UPDATE_REQUEST).then(function(lastUpdateRequest) {
+      if (!lastUpdateRequest) {
+        updateSubscription();
+        return;
+      }
+
+      getFromDB(_LAST_DATA_UPDATE).then(function(lastDataUpdate) {
+        if (lastDataUpdate && lastDataUpdate > lastUpdateRequest) {
+          updateSubscription();
+        }
+      });
+    });
+  }
+
+  function sendMessageToParent(message, data) {
+    if (typeof data !== 'undefined' && data) {
+      message += ':' + JSON.stringify(data);
+    }
+    window.parent.postMessage(message, '*');
+  }
+
+  function initMessageHandler() {
+    window.addEventListener('message', function(evt) {
+      var event;
+      var data;
+      if (
+        evt.data
+        && typeof evt.data === 'string'
+        && evt.data[0] !== '{'
+        && evt.data.indexOf(':') > -1
+      ) {
+        try {
+          var index = evt.data.indexOf(':');
+          var event = evt.data.substring(0, index);
+          var data = JSON.parse(evt.data.substr(index + 1));
+        } catch(e) {
+          return;
+        }
+      } else {
+        event = evt.data;
+      }
+
+      if (event == 'updateUserData') {
+        if (typeof data !== 'undefined' && data) {
+          updateUserData(data);
+        }
+        init();
+      }
+    }, false);
+  }
+
+  function closeIframe() {
+    sendMessageToParent('removeNotificationsIframe');
+  }
+
+  function requestUserData() {
+    if (typeof beamer_config !== 'undefined' && typeof Beamer !== 'undefined' && typeof Beamer.buildUserData !== 'undefined') {
+      updateUserData(Beamer.buildUserData());
+      init();
+    } else {
+      sendMessageToParent('requestUserData', {
+        id: 'beamerPush'
+      });
+    }
+  }
+
+  function updateUserData(data) {
+    if (typeof data.filter !== 'undefined') {
+      if (typeof _FILTER !== 'undefined') {
+        _FILTER = data.filter;
+      } else {
+        window._FILTER = data.filter;
+      }
+    }
+    if (typeof data.user_id !== 'undefined') {
+      if (typeof _USER !== 'undefined') {
+        _USER = data.user_id;
+      } else {
+        window._USER = data.user_id;
+      }
+    }
+    if (typeof data.custom_user_id !== 'undefined') {
+      if (typeof _CUSTOM_USER !== 'undefined') {
+        _CUSTOM_USER = data.custom_user_id;
+      } else {
+        window._CUSTOM_USER = data.custom_user_id;
+      }
+    }
+    if (typeof data.email !== 'undefined') {
+      if (typeof _EMAIL !== 'undefined') {
+        _EMAIL = data.email;
+      } else {
+        window._EMAIL = data.email;
+      }
+    }
+    if (typeof data.firstname !== 'undefined') {
+      if (typeof _FIRSTNAME !== 'undefined') {
+        _FIRSTNAME = data.firstname;
+      } else {
+        window._FIRSTNAME = data.firstname;
+      }
+    }
+    if (typeof data.lastname !== 'undefined') {
+      if (typeof _LASTNAME !== 'undefined') {
+        _LASTNAME = data.lastname;
+      } else {
+        window._LASTNAME = data.lastname;
+      }
+    }
+    if (typeof data.ref !== 'undefined') {
+      if (typeof _REF_URL !== 'undefined') {
+        _REF_URL = data.ref;
+      } else {
+        window._REF_URL = data.ref;
+      }
+    }
+    if (typeof data.refuse !== 'undefined') {
+      if (typeof _REFUSE_PERMISSION !== 'undefined') {
+        _REFUSE_PERMISSION = data.refuse;
+      } else {
+        window._REFUSE_PERMISSION = data.refuse;
+      }
+    }
+    if (typeof data.lastPushUpdateTime !== 'undefined') {
+      window._LAST_PUSH_UPDATE_TIME = data.lastPushUpdateTime;
+    } else {
+      window._LAST_PUSH_UPDATE_TIME = 0;
+    }
+  }
+
+  function isSameValue(a, b) {
+    var aHasNovalue = typeof a === 'undefined' || a === null || a === '';
+    var bHasNovalue = typeof b === 'undefined' || b === null || b === '';
+    if (aHasNovalue && bHasNovalue) {
+      return true;
+    }
+    return a == b;
+  }
+
+  function init() {
+    retrieveBackendDetails(function() {
+      if (!_PUBLIC) {
+        var promises = [];
+        if (typeof _FILTER !== 'undefined') {
+          var promise = getFromDB(_FILTER_KEY).then(function(filter) {
+            if (!isSameValue(filter, _FILTER)) {
+              return saveInDB(_FILTER_KEY, _FILTER).then(function() {
+                return true;
+              });
+            }
+            return false;
+          });
+          promises.push(promise);
+        } else {
+          promises.push(saveInDB(_FILTER_KEY, ''));
+        }
+        if (typeof _USER !== 'undefined') {
+          var promise = getFromDB(_USER_KEY).then(function(user) {
+            if (!isSameValue(user, _USER)) {
+              return saveInDB(_USER_KEY, _USER).then(function() {
+                return true;
+              });
+            }
+            return false;
+          });
+          promises.push(promise);
+        } else {
+          promises.push(saveInDB(_USER_KEY, ''));
+        }
+        if (typeof _FIRSTNAME !== 'undefined') {
+          var promise = getFromDB(_FIRSTNAME_KEY).then(function(firstname) {
+            if (!isSameValue(firstname, _FIRSTNAME)) {
+              return saveInDB(_FIRSTNAME_KEY, _FIRSTNAME).then(function() {
+                return true;
+              });
+            }
+            return false;
+          });
+          promises.push(promise);
+        } else {
+          promises.push(saveInDB(_FIRSTNAME_KEY, ''));
+        }
+        if (typeof _LASTNAME !== 'undefined') {
+          var promise = getFromDB(_LASTNAME_KEY).then(function(lastname) {
+            if (!isSameValue(lastname, _LASTNAME)) {
+              return saveInDB(_LASTNAME_KEY, _LASTNAME).then(function() {
+                return true;
+              });
+            }
+            return false;
+          });
+          promises.push(promise);
+        } else {
+          promises.push(saveInDB(_LASTNAME_KEY, ''));
+        }
+        if (typeof _EMAIL !== 'undefined') {
+          var promise = getFromDB(_EMAIL_KEY).then(function(email) {
+            if (!isSameValue(email, _EMAIL)) {
+              return saveInDB(_EMAIL_KEY, _EMAIL).then(function() {
+                return true;
+              });
+            }
+            return false;
+          });
+          promises.push(promise);
+        } else {
+          promises.push(saveInDB(_EMAIL_KEY, ''));
+        }
+        if (typeof _CUSTOM_USER !== 'undefined') {
+          var promise = getFromDB(_CUSTOM_USER_KEY).then(function(customUser) {
+            if (!isSameValue(customUser, _CUSTOM_USER)) {
+              return saveInDB(_CUSTOM_USER_KEY, _CUSTOM_USER).then(function() {
+                return true;
+              });
+            }
+            return false;
+          });
+          promises.push(promise);
+        } else {
+          promises.push(saveInDB(_CUSTOM_USER_KEY, ''));
+        }
+        if (typeof _LANGUAGE !== 'undefined') {
+          var promise = getFromDB(_LANGUAGE_KEY).then(function(language) {
+            if (!isSameValue(language, _LANGUAGE)) {
+              return saveInDB(_LANGUAGE_KEY, _LANGUAGE).then(function() {
+                return true;
+              });
+            }
+            return false;
+          });
+          promises.push(promise);
+        } else {
+          promises.push(saveInDB(_LANGUAGE_KEY, ''));
+        }
+        
+        promises.push(saveInDB(_PERMISSIONS_KEY, getFromStorage(_PERMISSIONS_KEY)));
+
+        if (promises.length > 0) {
+          Promise.all(promises)
+            .then(function(shouldUpdate) {
+              for (var i = 0; i < shouldUpdate.length; i++) {
+                if (shouldUpdate[i]) {
+                  saveInDB(_LAST_DATA_UPDATE, new Date().getTime());
+                  updateSubscription();
+                  return;
+                }
+              }
+
+              checkSubscriptionUpdate();
+            })
+            .catch(function(e) {
+              // console.log('Can\'t access database');
+            });
+        } else {
+          checkSubscriptionUpdate();
+        }
+      }
+
+      if (_REFUSE_PERMISSION) {
+        saveInStorage(_PERMISSIONS_KEY, false);
+        saveInStorage(_LAST_REQUEST_DATE_KEY, new Date().toISOString());
+
+        var attempts = getFromStorage(_REQUEST_ATTEPMTS_KEY);
+        if (!attempts) {
+          attempts = 0;
+        }
+        attempts++;
+        saveInStorage(_REQUEST_ATTEPMTS_KEY, attempts);
+      } else {
+        var hasPermission;
+        if (isSafari()) {
+          hasPermission = false;
+        } else {
+          hasPermission = getFromStorage(_PERMISSIONS_KEY);
+          if ((hasPermission === 'false' || hasPermission === false) && shouldRequestPermission()) {
+            hasPermission = null;
+            removeFromStorage(_PERMISSIONS_KEY);
+          }
+        }
+
+        if (hasPermission === undefined || hasPermission === null) {
+          sendMessageToParent('requestNotificationsPermission');
+        }
+      }
+    });
+  }
+
+  initMessageHandler();
+  requestUserData();
+  setTimeout(closeIframe, 10000);
+})();
+  </script>
+</head>
+<body>
+
+</body></html>

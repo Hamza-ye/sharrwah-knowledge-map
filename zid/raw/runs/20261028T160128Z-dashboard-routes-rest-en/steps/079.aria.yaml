@@ -1,0 +1,60 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home"
+  - button "Apps"
+  - button "Settings" [pressed]
+  - separator
+- list:
+  - link "General":
+    - /url: /en-sa/stores/127604/settings/account
+    - text: General
+    - button
+  - link "Communications":
+    - /url: /en-sa/stores/127604/settings/communications/orders
+  - link "Order notifications":
+    - /url: /en-sa/stores/127604/settings/communications/orders
+  - link "Abandoned cart reminders":
+    - /url: /en-sa/stores/127604/settings/communications/abandoned-carts
+  - link "Product question notifications":
+    - /url: /en-sa/stores/127604/settings/communications/questions
+  - link "Product review notifications":
+    - /url: /en-sa/stores/127604/settings/communications/reviews
+  - link "Store":
+    - /url: /en-sa/stores/127604/settings/information
+    - text: Store
+    - button
+- main:
+  - button
+  - heading "Product question notification settings" [level=5]
+  - paragraph: Configure notifications for product questions
+  - button "Save"
+  - paragraph: Automatic customer notification
+  - text: Automatically notify customers after replying to their questions.
+  - switch
+  - button "Example of how it appears on your site."
+  - separator
+  - paragraph: Automatic merchant notification
+  - text: Automatically notify the merchant when a new question is submitted.
+  - switch
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

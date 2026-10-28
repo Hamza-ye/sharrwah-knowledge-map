@@ -1,0 +1,157 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Discounts":
+    - /url: /en-sa/stores/127604/marketing/discounts
+  - link "Bank discounts New":
+    - /url: /en-sa/stores/127604/marketing/bank-discounts
+  - link "Cashback offers New":
+    - /url: /en-sa/stores/127604/marketing/cashback-offers
+  - link "Bundle offers":
+    - /url: /en-sa/stores/127604/marketing/bundle-offers
+  - link "Automated Messages New":
+    - /url: /en-sa/stores/127604/marketing/automated-messages
+  - link "Marketing campaigns":
+    - /url: /en-sa/stores/127604/marketing/campaigns
+  - link "Loyalty program":
+    - /url: /en-sa/stores/127604/marketing/loyalty
+  - link "Customer Referrals Beta":
+    - /url: /en-sa/stores/127604/marketing/referrals
+  - link "Mokafaa program New":
+    - /url: /en-sa/stores/127604/marketing/mokafaa
+  - link "Qitaf New":
+    - /url: /en-sa/stores/127604/marketing/new-qitaf
+  - link "Affiliates":
+    - /url: /en-sa/stores/127604/marketing/affiliates
+  - link "Zid Ads":
+    - /url: /en-sa/stores/127604/apps/2812/embedded
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - button
+  - heading "Create new bank discount" [level=5]
+  - button "Create" [disabled]
+  - heading "Discount Details" [level=3]:
+    - button "Discount Details" [expanded]:
+      - heading "Discount Details" [level=6]
+  - region:
+    - alert: Bank card discounts aren't available with Apple Pay.
+    - text: Discount Name
+    - textbox "Discount Name"
+    - paragraph: The name will be visible to your customers in the store
+    - text: Bank Name
+    - combobox "Bank Name"
+    - button "Open"
+    - heading "Card Type" [level=6]
+    - checkbox "Select All"
+    - text: Select All
+    - img
+    - checkbox
+    - img
+    - checkbox
+    - img
+    - checkbox
+    - heading "Discount Type" [level=6]
+    - paragraph: Specify the type you want to provide with this discount
+    - radiogroup:
+      - radio "Fixed Amount" [checked]
+      - text: Fixed Amount
+      - radio "Percentage"
+      - text: Percentage
+    - text: Fixed Amount
+    - textbox "Fixed Amount"
+    - paragraph: 
+    - paragraph: Consider that the minimum amount for your customers should be 2 SAR.
+    - heading "Discount Date" [level=6]
+    - text: Start Date
+    - textbox "Start Date": Select date
+    - text: End Date
+    - textbox "End Date" [disabled]: Select date
+  - heading "Discount Conditions Optional" [level=3]:
+    - button "Discount Conditions Optional" [expanded]:
+      - heading "Discount Conditions Optional" [level=6]:
+        - text: Discount Conditions
+        - paragraph: Optional
+  - region:
+    - checkbox "Set Maximum Discount The customer will not receive a discount higher than the entered amount"
+    - paragraph: Set Maximum Discount
+    - paragraph: The customer will not receive a discount higher than the entered amount
+    - checkbox "Require Minimum Order Number The minimum order value must be met for the customer to receive the discount"
+    - paragraph: Require Minimum Order Number
+    - paragraph: The minimum order value must be met for the customer to receive the discount
+  - heading "Display discount banner Specify where the discount banner appears in the store." [level=3]:
+    - button "Display discount banner Specify where the discount banner appears in the store.":
+      - heading "Display discount banner" [level=6]
+      - paragraph: Specify where the discount banner appears in the store.
+  - heading "Summary" [level=6]
+  - paragraph: N/A
+  - heading "N/A SAR" [level=6]
+  - heading "Discount Date" [level=6]
+  - listitem:
+    - paragraph: Start Date
+    - paragraph:
+      - paragraph: N/A
+  - listitem:
+    - paragraph: End Date
+    - paragraph:
+      - paragraph: N/A
+  - heading "Card Type" [level=6]
+  - paragraph: No card types selected
+  - heading "Discount Conditions" [level=6]
+  - paragraph: No terms added
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

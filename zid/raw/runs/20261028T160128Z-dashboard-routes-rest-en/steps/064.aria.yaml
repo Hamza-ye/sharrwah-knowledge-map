@@ -1,0 +1,244 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Transactions":
+    - /url: /en-sa/stores/127604/services/payments/transactions
+  - link "Payment links":
+    - /url: /en-sa/stores/127604/services/payments/payment-links
+  - link "Payouts":
+    - /url: /en-sa/stores/127604/services/payments/payouts
+  - link "Bank accounts":
+    - /url: /en-sa/stores/127604/services/payments/bank-accounts
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - heading "Payments" [level=5]
+  - link "Manage":
+    - /url: /en-sa/stores/127604/services/payments/settings
+  - alert:
+    - text: Payment networks
+    - paragraph: You can access all networks by pressing Manage at the top right of the page.
+    - link "Manage":
+      - /url: /en-sa/stores/127604/services/payments/settings/networks
+    - button "Close"
+  - heading "Payouts Summary" [level=6]
+  - paragraph: Current balance
+  - paragraph:  96.61
+  - paragraph: Payouts being processed
+  - paragraph:  96.61
+  - paragraph: Most recent payout
+  - paragraph:  98.25
+  - text: 2023-03-30
+  - link "All Payouts":
+    - /url: /en-sa/stores/127604/services/payments/payouts
+  - heading "Recent transactions" [level=6]
+  - table:
+    - rowgroup:
+      - row "Transaction number Operation type Name Mobile Order id Amount Currency Network Date Time Payout ID Status":
+        - columnheader "Transaction number Operation type"
+        - columnheader "Name Mobile"
+        - columnheader "Order id"
+        - columnheader "Amount Currency"
+        - columnheader "Network"
+        - columnheader "Date Time"
+        - columnheader "Payout ID"
+        - columnheader "Status"
+        - columnheader
+    - rowgroup:
+      - 'row "#26850279 Purchase علي الشمري 96599521252 #58332475 100  2025-09-27 07:50:17 - Success View"':
+        - cell "#26850279 Purchase":
+          - link "#26850279 Purchase":
+            - /url: /en-sa/stores/127604/services/payments/transactions/6812d0c4-14f9-463f-ad7d-6057424b2113
+        - cell "علي الشمري 96599521252"
+        - cell "#58332475"
+        - cell "100 "
+        - cell
+        - cell "2025-09-27 07:50:17"
+        - cell "-"
+        - cell "Success"
+        - cell "View":
+          - link "View":
+            - /url: /en-sa/stores/127604/services/payments/transactions/6812d0c4-14f9-463f-ad7d-6057424b2113
+      - 'row "#26850221 Purchase علي الشمري 96599521252 #54fed4e5-52cd-4174-82ca-92e7eb365019 100  2025-09-27 07:42:57 - Failed View"':
+        - cell "#26850221 Purchase":
+          - link "#26850221 Purchase":
+            - /url: /en-sa/stores/127604/services/payments/transactions/897af5b3-8afb-48e9-98bd-00cfe762bcd7
+        - cell "علي الشمري 96599521252"
+        - cell "#54fed4e5-52cd-4174-82ca-92e7eb365019"
+        - cell "100 "
+        - cell
+        - cell "2025-09-27 07:42:57"
+        - cell "-"
+        - cell "Failed"
+        - cell "View":
+          - link "View":
+            - /url: /en-sa/stores/127604/services/payments/transactions/897af5b3-8afb-48e9-98bd-00cfe762bcd7
+      - 'row "#26813962 Purchase راشد المري 966546788700 #c23df70a-ba0f-4d7f-9e25-74bed32df09f 100  2025-09-26 10:51:04 - Failed View"':
+        - cell "#26813962 Purchase":
+          - link "#26813962 Purchase":
+            - /url: /en-sa/stores/127604/services/payments/transactions/ed1a4d1b-5e82-40e1-bf92-907b11e677b0
+        - cell "راشد المري 966546788700"
+        - cell "#c23df70a-ba0f-4d7f-9e25-74bed32df09f"
+        - cell "100 "
+        - cell
+        - cell "2025-09-26 10:51:04"
+        - cell "-"
+        - cell "Failed"
+        - cell "View":
+          - link "View":
+            - /url: /en-sa/stores/127604/services/payments/transactions/ed1a4d1b-5e82-40e1-bf92-907b11e677b0
+      - 'row "#24858416 Purchase Mateen Shahbaz 923184502010 #00171a58-96b5-474d-87a1-4d3b38b3fa64 223  2025-07-18 16:38:55 - Failed View"':
+        - cell "#24858416 Purchase":
+          - link "#24858416 Purchase":
+            - /url: /en-sa/stores/127604/services/payments/transactions/4ff2b77e-e4a0-403d-aba1-8816f9514475
+        - cell "Mateen Shahbaz 923184502010"
+        - cell "#00171a58-96b5-474d-87a1-4d3b38b3fa64"
+        - cell "223 "
+        - cell
+        - cell "2025-07-18 16:38:55"
+        - cell "-"
+        - cell "Failed"
+        - cell "View":
+          - link "View":
+            - /url: /en-sa/stores/127604/services/payments/transactions/4ff2b77e-e4a0-403d-aba1-8816f9514475
+      - 'row "#14987272 Purchase yasser alahmadi 966503072295 #ad11bfea-c11b-4cef-af80-20c8050469f5 121  2024-06-24 14:55:04 - Failed View"':
+        - cell "#14987272 Purchase":
+          - link "#14987272 Purchase":
+            - /url: /en-sa/stores/127604/services/payments/transactions/2e768ecb-bc4c-4646-9471-4b1808e571ac
+        - cell "yasser alahmadi 966503072295"
+        - cell "#ad11bfea-c11b-4cef-af80-20c8050469f5"
+        - cell "121 "
+        - cell
+        - cell "2024-06-24 14:55:04"
+        - cell "-"
+        - cell "Failed"
+        - cell "View":
+          - link "View":
+            - /url: /en-sa/stores/127604/services/payments/transactions/2e768ecb-bc4c-4646-9471-4b1808e571ac
+  - link "View all":
+    - /url: /en-sa/stores/127604/services/payments/transactions
+  - heading "BNPL" [level=6]
+  - img
+  - paragraph: Madfu
+  - text: Not activated MADFU helps you boost your store sales by enabling your customers to split their bills into flexible and convenient installments. Join Madfu today and be part of the smart commerce future.
+  - link "Activate":
+    - /url: /en-sa/stores/127604/services/payments/settings/networks
+  - img
+  - paragraph: Emkan pay
+  - text: Not activated Enable emkan - pay later to let your customers shop and split their purchases into 5 installments at the cash price.
+  - link "Activate":
+    - /url: /en-sa/stores/127604/services/payments/settings/networks
+  - img
+  - paragraph: Tabby
+  - text: Not activated Let your customers shop now and split their purchases into 4 interest-free payments while you get paid in full-upfront.
+  - link "Activate":
+    - /url: /en-sa/stores/127604/services/payments/tabby
+  - img
+  - paragraph: Tamara
+  - text: Not activated Grow your business by enabling your customers to shop and pay easily with a variety of payment solutions.
+  - link "Activate":
+    - /url: /en-sa/stores/127604/services/payments/tamara
+  - img
+  - paragraph: Mispay
+  - text: Not activated By choosing mispay, customers can easily split payments in 3 monthly installments with no fees or interests.
+  - link "Activate":
+    - /url: /en-sa/stores/127604/services/payments/mis-pay
+  - heading "All banks" [level=6]
+  - paragraph:
+    - paragraph: Enable bank transfer payment method
+    - text: You can customize each bank account by clicking on Edit.
+    - switch [checked]
+    - text: These bank accounts will appear as payment methods for customers on your store. Manage your payout bank account separately
+    - link "here":
+      - /url: /en-sa/stores/127604/services/payments/settings/bank-information
+    - text: .
+  - table:
+    - rowgroup:
+      - row "Bank Name Beneficiary Name Account No. IBAN Swift Visible at checkout":
+        - columnheader:
+          - checkbox
+        - columnheader "Bank Name"
+        - columnheader "Beneficiary Name"
+        - columnheader "Account No."
+        - columnheader "IBAN"
+        - columnheader "Swift"
+        - columnheader "Visible at checkout"
+        - columnheader
+    - rowgroup:
+      - row "Al Rajhi Bank Demo Store 000296608010756115 SA438000029660... RJHISARI Edit":
+        - cell:
+          - checkbox
+        - cell "Al Rajhi Bank":
+          - img
+          - paragraph: Al Rajhi Bank
+        - cell "Demo Store":
+          - paragraph: Demo Store
+        - cell "000296608010756115":
+          - paragraph: "000296608010756115"
+        - cell "SA438000029660...":
+          - paragraph: SA438000029660...
+        - cell "RJHISARI":
+          - paragraph: RJHISARI
+        - cell:
+          - switch [checked]
+        - cell "Edit":
+          - button "Edit"
+  - button "Create"
+  - link "View all":
+    - /url: /en-sa/stores/127604/services/payments/bank-accounts
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

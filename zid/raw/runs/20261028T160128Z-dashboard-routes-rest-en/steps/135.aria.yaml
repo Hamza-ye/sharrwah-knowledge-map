@@ -1,0 +1,115 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "All analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Reports New":
+    - /url: /en-sa/stores/127604/analytics/customizable-reports
+  - link "Zid Insights New":
+    - /url: /en-sa/stores/127604/analytics/insights
+  - link "Live analytics":
+    - /url: /en-sa/stores/127604/analytics/live
+  - link "Sales reports":
+    - /url: /en-sa/stores/127604/analytics/reports/sales
+  - link "Inventory reports":
+    - /url: /en-sa/stores/127604/analytics/reports/inventory
+  - link "Customers reports":
+    - /url: /en-sa/stores/127604/analytics/reports/customers
+  - link "Financial":
+    - /url: /en-sa/stores/127604/analytics/financial
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/analytics/marketing
+  - link "Operational":
+    - /url: /en-sa/stores/127604/analytics/operational
+  - link "Products":
+    - /url: /en-sa/stores/127604/analytics/products
+  - link "Payments":
+    - /url: /en-sa/stores/127604/analytics/payments
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/analytics/logistics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - heading "Customers reports" [level=5]
+  - paragraph: last updated October 28, 2026 07:00 PM
+  - textbox "Search"
+  - button
+  - button
+  - table:
+    - rowgroup:
+      - row "Customer Phone Number Customer Name Life Time Value Average Order Value Number of Orders Active Loyalty Points Used loyalty points Expired Loyalty Points First Order Date Last Order Date Number of Different Products Purchased First Purchase Channel Most Purchase Channel Number of Coupons Used Return Rate Number of Reviews":
+        - columnheader "Customer Phone Number"
+        - columnheader "Customer Name"
+        - columnheader "Life Time Value"
+        - columnheader "Average Order Value"
+        - columnheader "Number of Orders"
+        - columnheader "Active Loyalty Points"
+        - columnheader "Used loyalty points"
+        - columnheader "Expired Loyalty Points"
+        - columnheader "First Order Date"
+        - columnheader "Last Order Date"
+        - columnheader "Number of Different Products Purchased"
+        - columnheader "First Purchase Channel"
+        - columnheader "Most Purchase Channel"
+        - columnheader "Number of Coupons Used"
+        - columnheader "Return Rate"
+        - columnheader "Number of Reviews"
+  - heading "Nothing to show here yet" [level=6]
+  - text: "Rows per page:"
+  - combobox "25"
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

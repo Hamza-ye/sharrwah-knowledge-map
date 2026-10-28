@@ -1,0 +1,145 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "All products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Categories":
+    - /url: /en-sa/stores/127604/catalog/categories
+  - link "Brands New":
+    - /url: /en-sa/stores/127604/catalog/brands
+  - link "Preorder campaigns":
+    - /url: /en-sa/stores/127604/catalog/preorder-campaigns
+  - link "Inventory":
+    - /url: /en-sa/stores/127604/catalog/inventories
+  - link "Inventory stock changes":
+    - /url: /en-sa/stores/127604/catalog/inventory-stock-changes
+  - link "Filters":
+    - /url: /en-sa/stores/127604/catalog/filters
+  - link "Custom fields":
+    - /url: /en-sa/stores/127604/catalog/meta-fields
+  - link "Options library":
+    - /url: /en-sa/stores/127604/catalog/options
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - button
+  - heading "Create category" [level=5]
+  - paragraph: Control your store categories and insert its image or descriptions
+  - button "Save"
+  - link "Cancel":
+    - /url: /en-sa/stores/127604/catalog/categories
+  - heading "Category name" [level=6]
+  - text: Category name (Arabic)
+  - textbox "Category name (Arabic)":
+    - /placeholder: Category name
+  - text: Category name (English)
+  - textbox "Category name (English)":
+    - /placeholder: Category name
+  - text: Category image description (Arabic)
+  - textbox "Category image description (Arabic)":
+    - /placeholder: Category image description
+  - text: Category image description (English)
+  - textbox "Category image description (English)":
+    - /placeholder: Category image description
+  - paragraph: Category image
+  - button "Choose File"
+  - paragraph: Browse
+  - heading "Or drag and drop" [level=6]
+  - paragraph: PNG, JPG Or JPEG
+  - paragraph: Category cover image
+  - button "Choose File"
+  - paragraph: Browse
+  - heading "Or drag and drop" [level=6]
+  - paragraph: PNG, JPG Or JPEG
+  - heading "Main category" [level=6]
+  - text: Parent category
+  - combobox "Parent category"
+  - button "Open"
+  - text: Category description (Arabic)
+  - textbox "Category description (Arabic)":
+    - /placeholder: Category description
+  - text: Category description (English)
+  - textbox "Category description (English)":
+    - /placeholder: Category description
+  - heading "Search engine optimization" [level=6]
+  - text: Category page title (Arabic)
+  - textbox "Category page title (Arabic)":
+    - /placeholder: Category page title
+  - paragraph: Number of characters 0 / 70
+  - text: Category page title (English)
+  - textbox "Category page title (English)":
+    - /placeholder: Category page title
+  - paragraph: Number of characters 0 / 70
+  - text: Category page description (Arabic)
+  - textbox "Category page description (Arabic)":
+    - /placeholder: Category page description
+  - paragraph: Number of characters 0 / 320
+  - text: Category page description (English)
+  - textbox "Category page description (English)":
+    - /placeholder: Category page description
+  - paragraph: Number of characters 0 / 320
+  - heading "Create link" [level=6]
+  - text: Link
+  - paragraph: https://zid-demostore.com/categories/
+  - textbox "Link"
+  - heading "Custom fields" [level=6]
+  - alert:
+    - text: You can modify and control the type and content of fields and their options through the custom fields settings page.
+    - link "Custom fields settings":
+      - /url: /en-sa/stores/127604/catalog/meta-fields/categories
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

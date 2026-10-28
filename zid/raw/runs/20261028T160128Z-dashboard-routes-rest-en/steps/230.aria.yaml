@@ -1,0 +1,149 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "All analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Reports New":
+    - /url: /en-sa/stores/127604/analytics/customizable-reports
+  - link "Zid Insights New":
+    - /url: /en-sa/stores/127604/analytics/insights
+  - link "Live analytics":
+    - /url: /en-sa/stores/127604/analytics/live
+  - link "Sales reports":
+    - /url: /en-sa/stores/127604/analytics/reports/sales
+  - link "Inventory reports":
+    - /url: /en-sa/stores/127604/analytics/reports/inventory
+  - link "Customers reports":
+    - /url: /en-sa/stores/127604/analytics/reports/customers
+  - link "Financial":
+    - /url: /en-sa/stores/127604/analytics/financial
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/analytics/marketing
+  - link "Operational":
+    - /url: /en-sa/stores/127604/analytics/operational
+  - link "Products":
+    - /url: /en-sa/stores/127604/analytics/products
+  - link "Payments":
+    - /url: /en-sa/stores/127604/analytics/payments
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/analytics/logistics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - heading "Live analytics" [level=5]
+  - paragraph: Real-time analytics and visitor tracking
+  - paragraph: Current visits
+  - paragraph: 0 Visit
+  - paragraph: Visit
+  - paragraph: 11 Visit
+  - paragraph: Total orders
+  - paragraph: 0 Order
+  - paragraph: Total sales
+  - paragraph:  0
+  - heading "Most visited pages" [level=6]
+  - paragraph: Store pages which have attracted the most visitors
+  - table:
+    - rowgroup:
+      - row "Page Number of visits":
+        - columnheader "Page"
+        - columnheader "Number of visits"
+    - rowgroup:
+      - row "Home 7":
+        - cell "Home":
+          - link "Home":
+            - /url: /
+        - cell "7"
+      - row "/en/ 2":
+        - cell /en/:
+          - link /en/:
+            - /url: /en/
+        - cell "2"
+      - row "/en-kw/ 1":
+        - cell /en-kw/:
+          - link /en-kw/:
+            - /url: /en-kw/
+        - cell "1"
+      - row "/products/voucher-product 1":
+        - cell "/products/voucher-product":
+          - link "/products/voucher-product":
+            - /url: /products/voucher-product
+        - cell "1"
+  - heading "Best-performing cities" [level=6]
+  - paragraph: Total orders and sales by city since the start of the day
+  - table:
+    - rowgroup:
+      - row "City Number of orders Total sales Currency":
+        - columnheader "City"
+        - columnheader "Number of orders"
+        - columnheader "Total sales Currency"
+  - heading "Nothing to show here yet" [level=6]
+  - heading "Best-selling products" [level=6]
+  - paragraph: Most popular products by units sold and revenue
+  - table:
+    - rowgroup:
+      - row "Product Total orders Total sales":
+        - columnheader
+        - columnheader "Product"
+        - columnheader "Total orders"
+        - columnheader "Total sales"
+  - heading "Nothing to show here yet" [level=6]
+  - heading "Visit sources" [level=6]
+  - paragraph: Where your visitors are coming from
+  - img
+  - text: "https://dashboard.zid.sa Direct Visits https://www.google.com https://dashboard.zid.sa: 45.5% Direct Visits: 36.4% https://www.google.com: 18.2%"
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

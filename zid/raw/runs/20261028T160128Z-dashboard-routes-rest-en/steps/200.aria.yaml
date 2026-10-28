@@ -1,0 +1,185 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+  - link "Marketplaces":
+    - /url: /en-sa/stores/127604/channels/marketplaces/connect/marketplaces
+  - link "Mobile app":
+    - /url: /en-sa/stores/127604/channels/mobile-app
+  - link "POS":
+    - /url: /en-sa/stores/127604/channels/pos
+  - link "Reports":
+    - /url: /en-sa/stores/127604/channels/pos/reports
+  - link "Cashiers":
+    - /url: /en-sa/stores/127604/channels/pos/cashiers
+  - link "Sales":
+    - /url: /en-sa/stores/127604/channels/pos/sales
+  - link "Transactions":
+    - /url: /en-sa/stores/127604/channels/pos/transaction-history
+  - link "Settings":
+    - /url: /en-sa/stores/127604/channels/pos/settings
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - heading "ZidPOS" [level=5]
+  - heading "Welcome to Zid POS" [level=4]
+  - paragraph: Zid POS is a cashier system and point of sale that enables modern retailers to manage sales in branches and exhibitions. It also helps merchants manage operations, payment, and stock from one dashboard with the online store.
+  - button "Select your plan"
+  - link "Contact us":
+    - /url: https://meetings.hubspot.com/ibrahim-majrashi/zidpos
+    - button "Contact us"
+  - img
+  - heading "Zid POS puts you in full control of your business" [level=6]
+  - paragraph: Sales & Invoicing
+  - paragraph: Payments
+  - paragraph: Orders Management
+  - paragraph: Products
+  - paragraph: Inventory
+  - paragraph: Sales Channels
+  - paragraph: Customer Management
+  - paragraph: User Management
+  - paragraph: Reports
+  - button "View all features"
+  - heading "How to get started" [level=6]
+  - paragraph: "1"
+  - heading "Activate your plan" [level=6]
+  - paragraph: Unlock powerful POS tools tailored for your business needs.
+  - paragraph: "2"
+  - heading "Download ZidPOS App" [level=6]
+  - paragraph: Your sales, customers, and products all in your pocket.
+  - paragraph: "3"
+  - heading "Assign Cashiers" [level=6]
+  - paragraph: Set up your team and connect them to the right inventory in seconds.
+  - heading "Make Your First Sale" [level=6]
+  - paragraph: Create your first invoice or online order and watch your business grow.
+  - heading "Select your plan" [level=6]
+  - heading "POS Go" [level=5]
+  - separator
+  - heading "Start selling in-store for free." [level=6]
+  - paragraph: Owner account access only
+  - paragraph: Pickup transactions
+  - paragraph: Add products & customers
+  - paragraph: Basic payments (Cash, Tabby, Tamara, Payment link)
+  - paragraph: Default invoices
+  - paragraph: Return items
+  - link "Activate POS Go":
+    - /url: /en-sa/stores/127604/channels/pos/freemium
+  - heading "POS Pro" [level=5]
+  - paragraph: Starting from
+  - heading "2,300" [level=4]
+  - heading "" [level=5]
+  - separator
+  - heading "Get advanced tools with extra flexibility" [level=6]
+  - paragraph: Multi-cashier & subuser access
+  - paragraph: Pickup, delivery, loyalty & gift orders
+  - paragraph: Link to inventory locations & restock requests
+  - paragraph: Advanced payments (Payment terminal, Nearpay, custom methods)
+  - paragraph: Customizable invoices
+  - paragraph: Discounts, coupons & multi-payments
+  - paragraph: Advanced reports (sales, products, payments)
+  - paragraph: Hardware integration (scanner, printer, terminal)
+  - link "Activate POS Pro":
+    - /url: /en-sa/stores/127604/channels/pos/subscribe
+  - button "Compare between plans"
+  - heading "Download Zid POS app" [level=6]
+  - heading "Get a chance to try the app available for download now!" [level=5]
+  - link:
+    - /url: https://play.google.com/store/apps/details?id=sa.zid.pos
+    - img
+  - link:
+    - /url: https://apps.apple.com/sa/app/zidpos-%D8%B2%D8%AF-%D9%83%D8%A7%D8%B4%D9%8A%D8%B1/id6443907051
+    - img
+  - link:
+    - /url: https://kit.imin.sg/appinfo.html?id=sa.zid.pos
+    - img
+  - img
+  - heading "Smarter Sales, Better Control!" [level=6]
+  - img
+  - paragraph: Easy Sales Management
+  - separator
+  - paragraph: Quickly add products, process payments, and issue invoices with an intuitive interface designed for speed and accuracy.
+  - img
+  - paragraph: Inventory & Customer Control
+  - separator
+  - paragraph: Stay in control of your stock and customers with synchronized management tools in one place.
+  - img
+  - paragraph: Flexible Payment Options
+  - separator
+  - paragraph: Offer your customers a variety of payment methods, including cash, cards, and installment plans.
+  - heading "Looking for POS Go?" [level=6]
+  - heading "Start today and pick a plan later!" [level=4]
+  - link "Start POS Go":
+    - /url: /en-sa/stores/127604/channels/pos/freemium
+  - img
+  - heading "Frequently asked questions" [level=6]
+  - heading "What is Zid POS?" [level=3]:
+    - button "What is Zid POS?":
+      - paragraph: What is Zid POS?
+  - heading "What is Zid POS Go?" [level=3]:
+    - button "What is Zid POS Go?":
+      - paragraph: What is Zid POS Go?
+  - heading "What is Zid POS Pro?" [level=3]:
+    - button "What is Zid POS Pro?":
+      - paragraph: What is Zid POS Pro?
+  - heading "Are there any requirements to activate Zid POS Go?" [level=3]:
+    - button "Are there any requirements to activate Zid POS Go?":
+      - paragraph: Are there any requirements to activate Zid POS Go?
+  - heading "How can I upgrade to Zid POS Pro?" [level=3]:
+    - button "How can I upgrade to Zid POS Pro?":
+      - paragraph: How can I upgrade to Zid POS Pro?
+  - heading "Does Zid POS support both online and in store sales?" [level=3]:
+    - button "Does Zid POS support both online and in store sales?":
+      - paragraph: Does Zid POS support both online and in store sales?
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

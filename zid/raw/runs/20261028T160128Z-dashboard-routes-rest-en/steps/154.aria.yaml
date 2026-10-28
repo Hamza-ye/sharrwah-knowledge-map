@@ -1,0 +1,112 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Transactions":
+    - /url: /en-sa/stores/127604/services/payments/transactions
+  - link "Payment links":
+    - /url: /en-sa/stores/127604/services/payments/payment-links
+  - link "Payouts":
+    - /url: /en-sa/stores/127604/services/payments/payouts
+  - link "Bank accounts":
+    - /url: /en-sa/stores/127604/services/payments/bank-accounts
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - button
+  - heading "MiS Pay details" [level=5]
+  - img
+  - heading "Mispay" [level=6]
+  - text: "By: Zid"
+  - paragraph: By choosing mispay, customers can easily split payments in 3 monthly installments with no fees or interests.
+  - tablist:
+    - tab "Overview" [selected]
+    - tab "FAQ"
+    - tab "Contact"
+  - separator
+  - paragraph:
+    - text: MISpay allows merchants to use buy now and pay later service in their stores. By choosing MISpay, customers can easily split payments — just pay one part of the amount immediately and the rest over the next month.
+    - strong:
+      - text: For more information, please visit our
+      - link "Business Platform":
+        - /url: https://www.mispay.co/partners
+  - paragraph:
+    - paragraph: Payment Options
+    - paragraph: MISPay is your growth partner. Always stay on top of your payments by managing customer purchases with MISPay.
+    - paragraph: Why MISPay is the right choice for you?
+    - list:
+      - listitem: Our products have been certified as Shariyah compliant by the Shariyah Review Bureau.
+      - listitem: Give your customers the ultimate flexibility when paying and turn your customers into loyal customers.
+      - listitem: Give your customers the ability to buy what they love today with a seamless and intuitive shopping experience.
+      - listitem: You always get paid within the typical payment settlement, your customers pay at a later date. It doesn’t get simpler.
+      - listitem: We will continually drive new customers to you from our app, website, and other channels.
+      - listitem: We assume credit and fraud risk, so you can focus on running a successful business.
+  - heading "Activation" [level=6]
+  - text: X-app-id
+  - textbox "X-app-id"
+  - text: X-app-secret
+  - textbox "X-app-secret"
+  - text: Widget access key
+  - textbox "Widget access key"
+  - checkbox "Show Mispay in product page"
+  - text: Show Mispay in product page
+  - checkbox "Show Mispay in cart page"
+  - text: Show Mispay in cart page
+  - checkbox "Enabled"
+  - text: Enabled
+  - button "Save"
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

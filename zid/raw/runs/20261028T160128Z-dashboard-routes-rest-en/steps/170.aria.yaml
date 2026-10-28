@@ -1,0 +1,230 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - button
+  - heading "Browse growth services" [level=5]
+  - heading "Recommended growth services for you" [level=6]
+  - img "User-Generated Content"
+  - paragraph: User-Generated Content
+  - separator
+  - text: Starts from  1,840.00
+  - button
+  - img "Amazon - Basic package"
+  - paragraph: Amazon - Basic package
+  - separator
+  - text: Starts from  1,532.95
+  - button
+  - img "Switch store service"
+  - paragraph: Switch store service
+  - separator
+  - text: Starts from  2,500.10
+  - button
+  - img "(10k-49k) Zid Ads - Basic Package 3 Months"
+  - paragraph: (10k-49k) Zid Ads - Basic Package 3 Months
+  - separator
+  - text: Starts from  27,600.00
+  - button
+  - img "Lifestyle product photography"
+  - paragraph: Lifestyle product photography
+  - separator
+  - text: Starts from  90.85
+  - button
+  - img "Store Content Writing"
+  - paragraph: Store Content Writing
+  - separator
+  - text: Starts from  652.05
+  - button
+  - img "Zid Ads Packages"
+  - paragraph: Zid Ads Packages
+  - separator
+  - text: Starts from  2,185.00
+  - button
+  - img "Paid Campaign Management"
+  - paragraph: Paid Campaign Management
+  - separator
+  - text: Starts from  3,220.00
+  - button
+  - img "Past Ad Campaigns Audit"
+  - paragraph: Past Ad Campaigns Audit
+  - separator
+  - text: Starts from  575.00
+  - button
+  - img "Store Seasonal Look Setup"
+  - paragraph: Store Seasonal Look Setup
+  - separator
+  - text: Starts from  495.99
+  - button
+  - img "Store Management"
+  - paragraph: Store Management
+  - separator
+  - text: Starts from  4,140.00
+  - button
+  - img "Search Engine Optimization"
+  - paragraph: Search Engine Optimization
+  - separator
+  - text: Starts from  3,257.95
+  - button
+  - img "Social Media Management"
+  - paragraph: Social Media Management
+  - separator
+  - text: Starts from  3,065.90
+  - button
+  - img "Zid Ads - Full package"
+  - paragraph: Zid Ads - Full package
+  - separator
+  - text: Starts from  20,930.00
+  - button
+  - img "Voiceover Service"
+  - paragraph: Voiceover Service
+  - separator
+  - text: Starts from  350.75
+  - button
+  - img "Zid Ads - Advance Package"
+  - paragraph: Zid Ads - Advance Package
+  - separator
+  - text: Starts from  10,925.00
+  - button
+  - img "Visual Identity Design"
+  - paragraph: Visual Identity Design
+  - separator
+  - text: Starts from  1,380.00
+  - button
+  - img "SDK Theme"
+  - paragraph: SDK Theme
+  - separator
+  - text: Starts from  9,200.00
+  - button
+  - img "Advertising and Analytics Setup"
+  - paragraph: Advertising and Analytics Setup
+  - separator
+  - text: Starts from  1,759.50
+  - button
+  - img "Reels Video Ads"
+  - paragraph: Reels Video Ads
+  - separator
+  - text: Starts from  897.00
+  - button
+  - img "Professional UI/UX"
+  - paragraph: Professional UI/UX
+  - separator
+  - text: Starts from  4,140.00
+  - button
+  - img "Amazon - Growth package"
+  - paragraph: Amazon - Growth package
+  - separator
+  - text: Starts from  2,300.00
+  - button
+  - img "Advanced Store Setup"
+  - paragraph: Advanced Store Setup
+  - separator
+  - text: Starts from  1,173.00
+  - button
+  - img "Legal Setup & Store Linking"
+  - paragraph: Legal Setup & Store Linking
+  - separator
+  - text: Starts from  196.00
+  - button
+  - img "Banners design"
+  - paragraph: Banners design
+  - separator
+  - text: Starts from  105.80
+  - button
+  - img "Sponsored Ads Designs"
+  - paragraph: Sponsored Ads Designs
+  - separator
+  - text: Starts from  517.50
+  - button
+  - img "Activation Package"
+  - paragraph: Activation Package
+  - separator
+  - text: Starts from  4,217.05
+  - button
+  - img "Trendyol - Growth package"
+  - paragraph: Trendyol - Growth package
+  - separator
+  - text: Starts from  1,150.00
+  - button
+  - img "Conversion Rate Optimization"
+  - paragraph: Conversion Rate Optimization
+  - separator
+  - text: Starts from  1,532.95
+  - button
+  - img "Theme Changing Service"
+  - paragraph: Theme Changing Service
+  - separator
+  - text: Starts from  460.00
+  - button
+  - img "Zid Ads - Basic package"
+  - paragraph: Zid Ads - Basic package
+  - separator
+  - text: Starts from  9,200.00
+  - button
+  - img "Product photography with a white background"
+  - paragraph: Product photography with a white background
+  - separator
+  - text: Starts from  129.95
+  - button
+  - img "Zid Ads Services"
+  - paragraph: Zid Ads Services
+  - separator
+  - text: Starts from  7,475.00
+  - button
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

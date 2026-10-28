@@ -1,0 +1,128 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+  - link "Marketplaces":
+    - /url: /en-sa/stores/127604/channels/marketplaces/connect/marketplaces
+  - link "Mobile app":
+    - /url: /en-sa/stores/127604/channels/mobile-app
+  - link "POS":
+    - /url: /en-sa/stores/127604/channels/pos
+  - link "Reports":
+    - /url: /en-sa/stores/127604/channels/pos/reports
+  - link "Cashiers":
+    - /url: /en-sa/stores/127604/channels/pos/cashiers
+  - link "Sales":
+    - /url: /en-sa/stores/127604/channels/pos/sales
+  - link "Transactions":
+    - /url: /en-sa/stores/127604/channels/pos/transaction-history
+  - link "Settings":
+    - /url: /en-sa/stores/127604/channels/pos/settings
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - button
+  - heading "Start POS Go" [level=5]
+  - button "Activate POS Go"
+  - heading "What's included in POS Go" [level=6]
+  - heading "Quick Sales Creation" [level=6]
+  - separator
+  - paragraph: Create and complete pickup transactions easily through ZidPOS app, helping you serve customers faster.
+  - heading "Product & Customer Management" [level=6]
+  - separator
+  - paragraph: Add products to transactions, search by name, SKU, or barcode, and attach customer details or notes to each sale.
+  - heading "Flexible Payment Options" [level=6]
+  - separator
+  - paragraph: Support for multiple payment methods like cash, Tabby, Tamara, and payment links, all synced and ready to use.
+  - heading "Smart Invoice Sharing" [level=6]
+  - separator
+  - paragraph: Share invoices instantly via QR code or NFC, offering a smooth and contactless customer experience.
+  - heading "Returns & Transaction History" [level=6]
+  - separator
+  - paragraph: Easily process full or partial returns and view past transaction information directly from the app.
+  - heading "Real-Time Transaction Syncing" [level=6]
+  - separator
+  - paragraph: Keep your sales data up-to-date across all devices with automatic syncing, ensuring accurate and seamless record-keeping.
+  - heading "Looking for more?" [level=6]
+  - heading "Explore our POS Pro plan!" [level=4]
+  - link "Get POS Pro Today":
+    - /url: /en-sa/stores/127604/channels/pos/subscribe
+  - img
+  - heading "Smarter Sales, Better Control!" [level=6]
+  - img
+  - paragraph: Easy Sales Management
+  - separator
+  - paragraph: Quickly add products, process payments, and issue invoices with an intuitive interface designed for speed and accuracy.
+  - img
+  - paragraph: Inventory & Customer Control
+  - separator
+  - paragraph: Stay in control of your stock and customers with synchronized management tools in one place.
+  - img
+  - paragraph: Flexible Payment Options
+  - separator
+  - paragraph: Offer your customers a variety of payment methods, including cash, cards, and installment plans.
+  - heading "Download Zid POS app" [level=6]
+  - heading "Get a chance to try the app available for download now!" [level=5]
+  - link:
+    - /url: https://play.google.com/store/apps/details?id=sa.zid.pos
+    - img
+  - link:
+    - /url: https://apps.apple.com/sa/app/zidpos-%D8%B2%D8%AF-%D9%83%D8%A7%D8%B4%D9%8A%D8%B1/id6443907051
+    - img
+  - link:
+    - /url: https://kit.imin.sg/appinfo.html?id=sa.zid.pos
+    - img
+  - img
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

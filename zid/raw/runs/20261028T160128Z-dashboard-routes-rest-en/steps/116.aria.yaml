@@ -1,0 +1,209 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Discounts":
+    - /url: /en-sa/stores/127604/marketing/discounts
+  - link "Bank discounts New":
+    - /url: /en-sa/stores/127604/marketing/bank-discounts
+  - link "Cashback offers New":
+    - /url: /en-sa/stores/127604/marketing/cashback-offers
+  - link "Bundle offers":
+    - /url: /en-sa/stores/127604/marketing/bundle-offers
+  - link "Automated Messages New":
+    - /url: /en-sa/stores/127604/marketing/automated-messages
+  - link "Marketing campaigns":
+    - /url: /en-sa/stores/127604/marketing/campaigns
+  - link "Loyalty program":
+    - /url: /en-sa/stores/127604/marketing/loyalty
+  - link "Customer Referrals Beta":
+    - /url: /en-sa/stores/127604/marketing/referrals
+  - link "Mokafaa program New":
+    - /url: /en-sa/stores/127604/marketing/mokafaa
+  - link "Qitaf New":
+    - /url: /en-sa/stores/127604/marketing/new-qitaf
+  - link "Affiliates":
+    - /url: /en-sa/stores/127604/marketing/affiliates
+  - link "Zid Ads":
+    - /url: /en-sa/stores/127604/apps/2812/embedded
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - button
+  - heading "Activate customer referrals program" [level=5]
+  - button "Activate"
+  - button
+  - heading "Sharing Options Choose how referrers share the program. Both methods can be active." [level=3]:
+    - button "Sharing Options Choose how referrers share the program. Both methods can be active." [expanded]:
+      - heading "Sharing Options" [level=6]
+      - paragraph: Choose how referrers share the program. Both methods can be active.
+  - region:
+    - alert:
+      - paragraph: Codes and links are generated automatically after a confirmed purchase or a profile visit. You can also create them manually after activation from customer profile page.
+    - text: Code Prefix
+    - textbox "Code Prefix":
+      - /placeholder: REF
+      - text: REF
+    - paragraph: 3/8 characters
+    - heading "Select how user can share the referral:" [level=6]
+    - paragraph: Referral Code
+    - paragraph: "A unique code is generated for each customer. Example: REF-870912"
+    - switch [checked]
+    - paragraph: Referral Link
+    - paragraph: "A unique link is generated for each referred customer. Example: osama.zid.store/ref/REF-679062"
+    - switch [checked]
+  - heading "Referrer Reward Set the reward the referrer earns." [level=3]:
+    - button "Referrer Reward Set the reward the referrer earns." [expanded]:
+      - heading "Referrer Reward" [level=6]
+      - paragraph: Set the reward the referrer earns.
+  - region:
+    - heading "Reward Type" [level=6]
+    - radiogroup:
+      - radio "Wallet Cashback"
+      - text: Wallet Cashback
+      - radio "Loyalty Points" [checked]
+      - text: Loyalty Points
+    - separator
+    - heading "Reward Value" [level=6]
+    - radiogroup:
+      - radio "Percentage" [checked]
+      - text: Percentage
+      - radio "Fixed price"
+      - text: Fixed price
+    - text: Percentage of Order Value
+    - spinbutton "Percentage of Order Value"
+    - text: Maximum Amount
+    - spinbutton "Maximum Amount"
+    - separator
+    - heading "Points Configuration" [level=6]
+    - radiogroup:
+      - radio "Use loyalty program settings" [checked]
+      - text: Use loyalty program settings
+      - radio "Set a custom value"
+      - text: Set a custom value
+    - alert:
+      - text: Reward value for loyalty points share same rules set up in
+      - link "Loyalty program.":
+        - /url: /en-sa/stores/127604/marketing/loyalty
+      - paragraph:
+        - paragraph: Purchase from the Store Every 1 wins 1 points
+        - paragraph: Purchase from Zid cashier Every 1 wins 1 points
+    - separator
+    - heading "Reward Rules" [level=6]
+    - paragraph: First Order Only
+    - text: Reward the referrer only on the friend's first order.
+    - switch
+    - checkbox "Cap rewards per friend"
+    - text: Cap rewards per friend
+    - checkbox "Cap total referrals"
+    - text: Cap total referrals
+  - heading "Friend Reward (Optional, Recommended) Set the reward the referred friend earns." [level=3]:
+    - button "Friend Reward (Optional, Recommended) Set the reward the referred friend earns." [expanded]:
+      - heading "Friend Reward" [level=6]
+      - text: (Optional, Recommended)
+      - paragraph: Set the reward the referred friend earns.
+  - region:
+    - heading "Reward Type" [level=6]
+    - radiogroup:
+      - radio "No Reward" [checked]
+      - text: No Reward
+      - radio "Order Discount"
+      - text: Order Discount
+      - radio "Wallet Cashback"
+      - text: Wallet Cashback
+      - radio "Loyalty Points"
+      - text: Loyalty Points
+  - heading "Settings Manage reward eligibility and redemption rules." [level=3]:
+    - button "Settings Manage reward eligibility and redemption rules." [expanded]:
+      - heading "Settings" [level=6]
+      - paragraph: Manage reward eligibility and redemption rules.
+  - region:
+    - heading "Reward Release Stage" [level=6]
+    - radiogroup:
+      - radio "When Order Is Created"
+      - text: When Order Is Created
+      - radio "When Order Is Completed" [checked]
+      - text: When Order Is Completed
+    - separator
+    - checkbox "Cooling Period"
+    - text: Cooling Period
+    - checkbox "Reward Expiration"
+    - text: Reward Expiration
+    - checkbox "Minimum Order Value"
+    - text: Minimum Order Value
+  - heading "Summary" [level=6]
+  - heading "Sharing options" [level=6]
+  - paragraph: "Referral Code:"
+  - paragraph: REF
+  - paragraph: "Referral Link:"
+  - paragraph: Discount code, Sharable link
+  - separator
+  - heading "Referrer Receives:" [level=6]
+  - paragraph: "Reward:"
+  - paragraph: Not set yet
+  - separator
+  - heading "Friend Receives:" [level=6]
+  - paragraph: "Reward:"
+  - paragraph: No reward
+  - separator
+  - heading "Settings" [level=6]
+  - paragraph: "Release Stage:"
+  - paragraph: Order completed
+  - separator
+  - heading "Sales Channels" [level=6]
+  - text: Online Store
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

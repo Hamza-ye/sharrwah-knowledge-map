@@ -1,0 +1,65 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - button
+  - heading "Terms and Conditions" [level=5]
+  - text: Dear Merchant, the following terms and conditions have been drafted to ensure the service is provided to you with the best possible quality and to ensure that work proceeds as required. Therefore, we hope for your cooperation in everything mentioned to ensure a smooth experience that adds tangible value to your business. - The merchant is committed to providing all the information required by the partner within a maximum of 48 hours to ensure that the work proceeds as required. - In case the service requires granting permissions on the online store, the merchant is obligated to grant the permissions and service requirements within 72 hours of requesting the service, or the service will be automatically canceled, and fees will be imposed if applicable. - The merchant has the right to request modifications to the work submitted only twice, with a clear explanation of expectations before the work begins. - The merchant cannot request the cancellation and refund of additional and complementary services to the primary service after the service has started. - The merchant bears the costs of shipping products to the partner's headquarters and returning them if desired. - Some products may be opened or damaged for photography purposes, and therefore, neither the partner nor Zid bears any compensatory costs. - For promotional services, the fees paid are administrative fees for providing the service only. The merchant bears the promotional fees for platforms and influencers if these services are selected. - Because your experience matters to us, please commit to evaluating the service provided within a maximum of 5 business days from receiving the service, or the service will be considered fully evaluated on its own. - Paid amounts are non-refundable, and in the event of a bad experience with the partner, the matter will be reviewed, and the project may be reassigned to another partner if necessary. - Some services provided by the service provider (such as design services and technical services) cannot be canceled or refunded because they are heavily dependent on individual artistic taste, and if any issues or differences arise between the merchant and the service provider, the agreed terms between the merchant and the service provider will be referred to. - In case of any delay in response from the partner, please contact Zid on the unified number. - The merchant agrees that the Zid platform has full authority without legal liability to make any modifications or updates to this policy, and using the service is considered legal acceptance and binding of the policy, including any modifications. Thank you! We wish you a great experience.
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

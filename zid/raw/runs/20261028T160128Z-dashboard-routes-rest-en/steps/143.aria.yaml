@@ -1,0 +1,105 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+  - link "Marketplaces":
+    - /url: /en-sa/stores/127604/channels/marketplaces/connect/marketplaces
+  - link "Mobile app":
+    - /url: /en-sa/stores/127604/channels/mobile-app
+  - link "POS":
+    - /url: /en-sa/stores/127604/channels/pos
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - button
+  - heading "Mobile app" [level=5]
+  - button "Save"
+  - heading "App download advertisement from the store" [level=6]
+  - list:
+    - listitem:
+      - paragraph: Publish advertisement
+      - paragraph: Use this feature to show the app download ad on your store
+      - switch
+  - heading "Customize app download ad" [level=6]
+  - text: App icon
+  - button "Choose File"
+  - paragraph: Browse
+  - heading "Or drag and drop" [level=6]
+  - paragraph: PNG Or JPG (max. 1.95MB)
+  - text: Image dimension - 200x200 App name (Arabic)
+  - textbox "App name (Arabic)":
+    - /placeholder: Add app name here in Arabic
+  - text: App name (English)
+  - textbox "App name (English)":
+    - /placeholder: Add app name here in English
+  - text: The name of the application developer (Arabic)
+  - textbox "The name of the application developer (Arabic)":
+    - /placeholder: Add developer name in Arabic
+  - text: The name of the application developer (English)
+  - textbox "The name of the application developer (English)":
+    - /placeholder: Add developer name in English
+  - text: Promotional text (Arabic)
+  - textbox "Promotional text (Arabic)":
+    - /placeholder: Write the promotional text for your app in Arabic
+  - text: Promotional text (English)
+  - textbox "Promotional text (English)":
+    - /placeholder: Write the promotional text for your app in English
+  - heading "Ad preview" [level=6]
+  - tablist:
+    - tab "Arabic" [selected]
+    - tab "English"
+  - heading "App name" [level=6]
+  - text: Developer name Promotional text for your app
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

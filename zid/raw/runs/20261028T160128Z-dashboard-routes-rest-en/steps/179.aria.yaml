@@ -1,0 +1,135 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "All analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Reports New":
+    - /url: /en-sa/stores/127604/analytics/customizable-reports
+  - link "Zid Insights New":
+    - /url: /en-sa/stores/127604/analytics/insights
+  - link "Live analytics":
+    - /url: /en-sa/stores/127604/analytics/live
+  - link "Sales reports":
+    - /url: /en-sa/stores/127604/analytics/reports/sales
+  - link "Inventory reports":
+    - /url: /en-sa/stores/127604/analytics/reports/inventory
+  - link "Customers reports":
+    - /url: /en-sa/stores/127604/analytics/reports/customers
+  - link "Financial":
+    - /url: /en-sa/stores/127604/analytics/financial
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/analytics/marketing
+  - link "Operational":
+    - /url: /en-sa/stores/127604/analytics/operational
+  - link "Products":
+    - /url: /en-sa/stores/127604/analytics/products
+  - link "Payments":
+    - /url: /en-sa/stores/127604/analytics/payments
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/analytics/logistics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - heading "Sales reports" [level=5]
+  - paragraph: Monthly breakdown of orders, revenue, costs, and shipping performance
+  - alert:
+    - text: This report will be deprecated soon
+    - paragraph:
+      - text: This report has been migrated to the new Reports page and will be removed soon. For the latest reporting experience, please use the
+      - link "new Reports page":
+        - /url: /en-sa/stores/127604/analytics/customizable-reports
+      - text: .
+  - tablist:
+    - tab "Periods" [selected]
+    - tab "Channels"
+    - tab "Location"
+    - tab "Products"
+    - tab "Category"
+    - tab "Coupons"
+    - tab "City"
+    - tab "Payment methods"
+    - tab "Shipping courier"
+    - tab "Cashier"
+    - tab "User"
+    - tab "Affiliates"
+    - tab "Bundle offers"
+  - separator
+  - button
+  - button
+  - table:
+    - rowgroup:
+      - row "Period Number of orders Average basket size Currency Total sales VAT incl. Cogs VAT excl. Discounts VAT excl. Shipping revenue VAT excl. Shipping cost VAT excl. Payment processing fees VAT incl. Tax amount Currency Gross margin Returned orders value Currency Number of completed orders Number of cancelled/returned orders":
+        - columnheader "Period"
+        - columnheader "Number of orders"
+        - columnheader "Average basket size Currency"
+        - columnheader "Total sales VAT incl."
+        - columnheader "Cogs VAT excl."
+        - columnheader "Discounts VAT excl."
+        - columnheader "Shipping revenue VAT excl."
+        - columnheader "Shipping cost VAT excl."
+        - columnheader "Payment processing fees VAT incl."
+        - columnheader "Tax amount Currency"
+        - columnheader "Gross margin"
+        - columnheader "Returned orders value Currency"
+        - columnheader "Number of completed orders"
+        - columnheader "Number of cancelled/returned orders"
+        - columnheader
+  - heading "Nothing to show here yet" [level=6]
+  - text: "Rows per page:"
+  - combobox "25"
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

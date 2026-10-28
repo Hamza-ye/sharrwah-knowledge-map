@@ -1,0 +1,105 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+  - link "Marketplaces":
+    - /url: /en-sa/stores/127604/channels/marketplaces/connect/marketplaces
+  - link "Mobile app":
+    - /url: /en-sa/stores/127604/channels/mobile-app
+  - link "POS":
+    - /url: /en-sa/stores/127604/channels/pos
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - heading "Marketplaces" [level=5]
+  - link "Import settings":
+    - /url: /en-sa/stores/127604/channels/marketplaces/connect/settings
+  - tablist:
+    - tab "Overview"
+    - tab "Marketplaces"
+    - tab "Orders" [selected]
+    - tab "Products"
+    - tab "Inventory"
+    - tab "Pricing"
+    - tab "Settings"
+  - alert:
+    - text: Import Orders Configuration
+    - paragraph: Ensure you have the configuration of orders importing for this marketplace. In order to do so please link on “Settings”.
+  - heading "Marketplace account" [level=6]
+  - combobox "Amazon SA"
+  - heading "Orders" [level=6]
+  - paragraph: Import marketplace orders to your main list orders in Zid. Orders can take up to 5 mins to be refreshed.
+  - textbox "Search"
+  - button
+  - button
+  - table:
+    - rowgroup:
+      - row "Order number Order number Customer name Total paid Account name Order date Fulfillment Import status Order status Payment status":
+        - columnheader
+        - columnheader "Order number": Order number Marketplace
+        - columnheader "Order number": Order number zid
+        - columnheader "Customer name"
+        - columnheader "Total paid": Total paid By customer
+        - columnheader "Account name"
+        - columnheader "Order date"
+        - columnheader "Fulfillment": Fulfillment Method
+        - columnheader "Import status"
+        - columnheader "Order status"
+        - columnheader "Payment status"
+    - rowgroup:
+      - row "Nothing to show here yet":
+        - cell "Nothing to show here yet":
+          - heading "Nothing to show here yet" [level=6]
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

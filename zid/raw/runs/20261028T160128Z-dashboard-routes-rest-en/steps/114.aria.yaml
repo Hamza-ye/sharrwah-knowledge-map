@@ -1,0 +1,237 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Transactions":
+    - /url: /en-sa/stores/127604/services/payments/transactions
+  - link "Payment links":
+    - /url: /en-sa/stores/127604/services/payments/payment-links
+  - link "Payouts":
+    - /url: /en-sa/stores/127604/services/payments/payouts
+  - link "Bank accounts":
+    - /url: /en-sa/stores/127604/services/payments/bank-accounts
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - button
+  - heading "Payments" [level=5]
+  - heading "Payments made simple" [level=4]
+  - paragraph: Zid Payments is an integrated payment solution that enables retailers to manage orders and electronic payments in one place, specially designed for retailers so that you can activate electronic payment with the click of a button.
+  - img
+  - img
+  - heading "Main features" [level=6]
+  - heading "Instant activation" [level=6]
+  - separator
+  - list:
+    - listitem:
+      - paragraph: Activate e-payment with the click of a button
+    - listitem:
+      - paragraph: Instant reception of e-payments
+  - heading "Competitive prices" [level=6]
+  - separator
+  - list:
+    - listitem:
+      - paragraph: No setup fees
+    - listitem:
+      - paragraph: No monthly fees
+    - listitem:
+      - paragraph: No additional fees for refunds
+  - heading "Quick payment links" [level=6]
+  - separator
+  - list:
+    - listitem:
+      - paragraph: Share payment links by different means
+    - listitem:
+      - paragraph: Send a reminder to complete the payment
+  - heading "One control panel" [level=6]
+  - separator
+  - list:
+    - listitem:
+      - paragraph: Follow up operations
+    - listitem:
+      - paragraph: Follow up on balances and deposits
+    - listitem:
+      - paragraph: Follow up on orders
+  - heading "Collecting payments" [level=6]
+  - separator
+  - list:
+    - listitem:
+      - paragraph: Every sunday - tuesday - thursday of every week
+    - listitem:
+      - paragraph: The minimum collection is 100 riyals
+    - listitem:
+      - paragraph: The deposit fee is 3 riyals on the total collection process
+  - heading "Supported payment networks" [level=6]
+  - separator
+  - list:
+    - listitem:
+      - paragraph: mada
+    - listitem:
+      - paragraph: mada & Mastercard
+    - listitem:
+      - paragraph: Apple Pay
+    - listitem:
+      - paragraph: American Express
+    - listitem:
+      - paragraph: EMKAN
+    - listitem:
+      - paragraph: Madfu — مدفوع
+  - heading "Packages" [level=6]
+  - paragraph: Payments fees depend on your current package in Zid, upgrade your package for lower fees
+  - heading "Rise" [level=6]
+  - paragraph: 1% + 1 SAR
+  - paragraph: 2.4% + 1 SAR
+  - paragraph: 3.4% + 1 SAR
+  - text: according to the card used at checkout according to the card used at checkout
+  - paragraph: 7% + 1 SAR
+  - paragraph: 7% + 1 SAR
+  - text: VAT exclusive fees
+  - heading "Growth" [level=6]
+  - paragraph: 1% + 1 SAR
+  - paragraph: 2.3% + 1 SAR
+  - paragraph: 3.3% + 1 SAR
+  - text: according to the card used at checkout according to the card used at checkout
+  - paragraph: 6% + 1 SAR
+  - paragraph: 6% + 1 SAR
+  - text: VAT exclusive fees
+  - heading "Professional" [level=6]
+  - paragraph: 1% + 0.75 SAR
+  - paragraph: 2.2% + 0.75 SAR
+  - paragraph: 3.2% + 0.75 SAR
+  - text: according to the card used at checkout according to the card used at checkout
+  - paragraph: 5.5% + 0.75 SAR
+  - paragraph: 5.5% + 0.75 SAR
+  - text: VAT exclusive fees
+  - heading "Payment activation requirements" [level=6]
+  - img
+  - paragraph: Individuals
+  - separator
+  - list:
+    - listitem:
+      - paragraph: Store owner ID
+    - listitem:
+      - paragraph: Freelance certificate
+    - listitem:
+      - paragraph: National address
+  - img
+  - paragraph: For businesses and establishments
+  - separator
+  - list:
+    - listitem:
+      - paragraph: Board members' IDs (for companies only)
+    - listitem:
+      - paragraph: Commercial registration
+    - listitem:
+      - paragraph: Articles of association (for companies only)
+    - listitem:
+      - paragraph: Commercial bank account
+    - listitem:
+      - paragraph: Bank certificate
+  - img
+  - paragraph: For charitable organizations
+  - separator
+  - list:
+    - listitem:
+      - paragraph: Association registration certificate
+    - listitem:
+      - paragraph: Basic constitution
+    - listitem:
+      - paragraph: Board of directors' formation decision
+    - listitem:
+      - paragraph: Bank certificate
+    - listitem:
+      - paragraph: National address
+  - heading "Simplify your payments in 4 simple steps" [level=6]
+  - paragraph: Activate payments easily to streamline your store's processes and expand your business
+  - paragraph: "1"
+  - heading "Activation request" [level=6]
+  - paragraph: Owner's personal information, business information, bank account information.
+  - paragraph: "2"
+  - heading "Nafath validation" [level=6]
+  - paragraph: Nafath verifies the identity of the store owner through the nafath application
+  - paragraph: "3"
+  - heading "Receive payments" [level=6]
+  - paragraph: Review the Zid payments activation request and receive electronic payments
+  - paragraph: "4"
+  - heading "Receiving deposits" [level=6]
+  - paragraph: After the activation request is successfully approved, you can receive deposits
+  - heading "Frequently asked questions" [level=6]
+  - heading "How long does it take to activate Zid Payments?" [level=3]:
+    - button "How long does it take to activate Zid Payments?":
+      - paragraph: How long does it take to activate Zid Payments?
+  - heading "Are there setup fees or monthly fees?" [level=3]:
+    - button "Are there setup fees or monthly fees?":
+      - paragraph: Are there setup fees or monthly fees?
+  - heading "What businesses are prohibited in Zid Payments?" [level=3]:
+    - button "What businesses are prohibited in Zid Payments?":
+      - paragraph: What businesses are prohibited in Zid Payments?
+  - heading "Is there a maximum limit for operations?" [level=3]:
+    - button "Is there a maximum limit for operations?":
+      - paragraph: Is there a maximum limit for operations?
+  - heading "Is Zid Payments available in GCC countries?" [level=3]:
+    - button "Is Zid Payments available in GCC countries?":
+      - paragraph: Is Zid Payments available in GCC countries?
+  - heading "How to extract a bank certificate?" [level=3]:
+    - button "How to extract a bank certificate?":
+      - paragraph: How to extract a bank certificate?
+  - heading "What is the appropriate activity in the commercial registration?" [level=3]:
+    - button "What is the appropriate activity in the commercial registration?":
+      - paragraph: What is the appropriate activity in the commercial registration?
+  - 'heading "What is the method for obtaining a freelance `work document?" [level=3]':
+    - 'button "What is the method for obtaining a freelance `work document?"':
+      - paragraph: "What is the method for obtaining a freelance `work document?"
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

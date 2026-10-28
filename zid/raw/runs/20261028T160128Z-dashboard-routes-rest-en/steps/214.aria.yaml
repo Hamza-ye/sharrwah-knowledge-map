@@ -1,0 +1,93 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "All customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Customer wallet New":
+    - /url: /en-sa/stores/127604/customers/wallet
+  - link "Groups":
+    - /url: /en-sa/stores/127604/customers/groups
+  - link "Customer Tickets":
+    - /url: /en-sa/stores/127604/customers/support
+  - link "Reviews":
+    - /url: /en-sa/stores/127604/customers/reviews
+  - link "Questions":
+    - /url: /en-sa/stores/127604/customers/questions
+  - link "Stock notifications":
+    - /url: /en-sa/stores/127604/customers/stock-notifications
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - heading "Customer groups" [level=5]
+  - paragraph: Your customers organized into groups for easier tracking and management
+  - button "Create"
+  - textbox "Search"
+  - table:
+    - rowgroup:
+      - row "Name Percentage of total customers Customer count":
+        - columnheader "Name"
+        - columnheader "Percentage of total customers"
+        - columnheader "Customer count"
+        - columnheader
+  - img
+  - heading "Group your customers and tailor your messages to match their needs." [level=6]
+  - paragraph: Segment by customer data in one click and boost engagement with tailored offers.
+  - button "Get started now"
+  - text: "Rows per page:"
+  - combobox "25"
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

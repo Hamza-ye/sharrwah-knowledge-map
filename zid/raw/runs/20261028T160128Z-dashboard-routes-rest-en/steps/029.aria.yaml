@@ -1,0 +1,146 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home"
+  - button "Apps"
+  - button "Settings" [pressed]
+  - separator
+- list:
+  - link "General":
+    - /url: /en-sa/stores/127604/settings/account
+  - link "Account settings":
+    - /url: /en-sa/stores/127604/settings/account
+  - link "Security settings":
+    - /url: /en-sa/stores/127604/settings/security
+  - link "Languages & currencies":
+    - /url: /en-sa/stores/127604/settings/languages-currencies
+  - link "Checkout page options":
+    - /url: /en-sa/stores/127604/settings/checkout
+  - link "Gifting settings New":
+    - /url: /en-sa/stores/127604/settings/gifting-settings
+  - link "Configure your invoices":
+    - /url: /en-sa/stores/127604/settings/invoice
+  - link "Orders and products properties":
+    - /url: /en-sa/stores/127604/settings/orders-products
+  - link "Shipping and payment constraints":
+    - /url: /en-sa/stores/127604/settings/constraints
+  - link "Tax settings":
+    - /url: /en-sa/stores/127604/settings/tax
+  - link "Fatoora platform integration":
+    - /url: /en-sa/stores/127604/settings/zatca-integration
+  - link "Staff notifications":
+    - /url: /en-sa/stores/127604/settings/staff-notifications
+  - link "API integrations":
+    - /url: /en-sa/stores/127604/settings/direct-api-integration
+  - link "Export requests":
+    - /url: /en-sa/stores/127604/settings/export-requests
+  - link "URL redirects":
+    - /url: /en-sa/stores/127604/settings/url-redirects
+  - link "Communications":
+    - /url: /en-sa/stores/127604/settings/communications/orders
+    - text: Communications
+    - button
+  - link "Store":
+    - /url: /en-sa/stores/127604/settings/information
+    - text: Store
+    - button
+- main:
+  - button
+  - heading "Create new customization" [level=5]
+  - button "Save"
+  - text: Country
+  - combobox "Country": Saudi Arabia
+  - button "Open"
+  - heading "District" [level=3]:
+    - button "District" [expanded]:
+      - switch "District" [checked]
+      - text: District
+  - region:
+    - separator
+    - text: District (Arabic)
+    - textbox "District (Arabic)"
+    - text: District (English)
+    - textbox "District (English)"
+    - checkbox "Make mandatory" [checked]
+    - text: Make mandatory
+  - heading "Street" [level=3]:
+    - button "Street" [expanded]:
+      - switch "Street" [checked]
+      - text: Street
+  - region:
+    - separator
+    - text: Street (Arabic)
+    - textbox "Street (Arabic)"
+    - text: Street (English)
+    - textbox "Street (English)"
+    - checkbox "Make mandatory"
+    - text: Make mandatory
+  - heading "Building Number" [level=3]:
+    - button "Building Number" [expanded]:
+      - switch "Building Number" [checked]
+      - text: Building Number
+  - region:
+    - separator
+    - text: Building Number (Arabic)
+    - textbox "Building Number (Arabic)"
+    - text: Building Number (English)
+    - textbox "Building Number (English)"
+    - checkbox "Make mandatory"
+    - text: Make mandatory
+  - heading "Additional number" [level=3]:
+    - button "Additional number" [expanded]:
+      - switch "Additional number" [checked]
+      - text: Additional number
+  - region:
+    - separator
+    - text: Additional number (Arabic)
+    - textbox "Additional number (Arabic)"
+    - text: Additional number (English)
+    - textbox "Additional number (English)"
+    - checkbox "Make mandatory"
+    - text: Make mandatory
+  - heading "Zip code" [level=3]:
+    - button "Zip code" [expanded]:
+      - switch "Zip code"
+      - text: Zip code
+  - region:
+    - separator
+    - text: Zip code (Arabic)
+    - textbox "Zip code (Arabic)"
+    - text: Zip code (English)
+    - textbox "Zip code (English)"
+    - checkbox "Make mandatory"
+    - text: Make mandatory
+  - heading "Recipient's National ID" [level=3]:
+    - button "Recipient's National ID" [expanded]:
+      - switch "Recipient's National ID"
+      - text: Recipient's National ID
+  - region:
+    - separator
+    - text: Recipient's National ID (Arabic)
+    - textbox "Recipient's National ID (Arabic)"
+    - text: Recipient's National ID (English)
+    - textbox "Recipient's National ID (English)"
+    - checkbox "Make mandatory"
+    - text: Make mandatory
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

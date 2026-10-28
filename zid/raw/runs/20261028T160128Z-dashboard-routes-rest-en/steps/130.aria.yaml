@@ -1,0 +1,96 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Themes":
+    - /url: /en-sa/stores/127604/channels/online-store/themes
+  - link "Landing pages":
+    - /url: /en-sa/stores/127604/channels/landing-pages
+  - link "Brand":
+    - /url: /en-sa/stores/127604/channels/online-store/brand
+  - link "Menu":
+    - /url: /en-sa/stores/127604/channels/online-store/menu
+  - link "Blog":
+    - /url: /en-sa/stores/127604/channels/online-store/blog
+  - link "Pages":
+    - /url: /en-sa/stores/127604/channels/online-store/pages
+  - link "SEO":
+    - /url: /en-sa/stores/127604/channels/online-store/seo
+  - link "FAQs":
+    - /url: /en-sa/stores/127604/channels/online-store/faqs
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - heading "Pages" [level=5]
+  - paragraph: Edit the content of the pages to appear at the bottom of the store or add custom pages
+  - link "Create":
+    - /url: /en-sa/stores/127604/channels/online-store/pages/create
+  - button "Disable"
+  - tablist:
+    - tab "Custom Pages" [selected]
+    - tab "Legal Pages"
+  - table:
+    - rowgroup:
+      - row "Page name":
+        - columnheader "Page name"
+        - columnheader
+  - img
+  - heading "No pages found" [level=6]
+  - paragraph: Add pages your store
+  - text: "Rows per page:"
+  - combobox "25"
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

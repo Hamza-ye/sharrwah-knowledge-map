@@ -1,0 +1,423 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "All customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Customer wallet New":
+    - /url: /en-sa/stores/127604/customers/wallet
+  - link "Groups":
+    - /url: /en-sa/stores/127604/customers/groups
+  - link "Customer Tickets":
+    - /url: /en-sa/stores/127604/customers/support
+  - link "Reviews":
+    - /url: /en-sa/stores/127604/customers/reviews
+  - link "Questions":
+    - /url: /en-sa/stores/127604/customers/questions
+  - link "Stock notifications":
+    - /url: /en-sa/stores/127604/customers/stock-notifications
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - heading "Customer list" [level=5]
+  - paragraph: Everything about your customers, in one place
+  - link "Create":
+    - /url: /en-sa/stores/127604/customers/create
+  - button
+  - tablist:
+    - tab "All" [selected]
+    - tab "Active 712"
+    - tab "Banned 0"
+  - separator
+  - textbox "Search"
+  - button
+  - button
+  - table:
+    - rowgroup:
+      - row "Name Type Mobile Email City Country Total orders Last order Loyalty points Acquisition channel":
+        - columnheader:
+          - checkbox
+        - columnheader
+        - columnheader "Name Type"
+        - columnheader "Mobile Email"
+        - columnheader "City Country"
+        - columnheader "Total orders"
+        - columnheader "Last order"
+        - columnheader "Loyalty points"
+        - columnheader "Acquisition channel"
+        - columnheader
+    - rowgroup:
+      - row "منصة زد Individual 966536760020 info@zidapp.com Riyadh Saudi Arabia 8 -- 0 Online store Edit":
+        - cell:
+          - checkbox
+        - cell
+        - cell "منصة زد Individual":
+          - link "منصة زد Individual":
+            - /url: /en-sa/stores/127604/customers/5076659
+        - cell "966536760020 info@zidapp.com"
+        - cell "Riyadh Saudi Arabia"
+        - cell "8":
+          - paragraph: "8"
+        - cell "--":
+          - paragraph: "--"
+        - cell "0":
+          - paragraph: "0"
+        - cell "Online store":
+          - paragraph: Online store
+        - cell "Edit":
+          - button
+          - link "Edit":
+            - /url: /en-sa/stores/127604/customers/5076659
+      - row "Majed Individual 966536419564 majed.alkhathami@hotmail.com Riyadh Saudi Arabia 2 -- 0 Online store Edit":
+        - cell:
+          - checkbox
+        - cell
+        - cell "Majed Individual":
+          - link "Majed Individual":
+            - /url: /en-sa/stores/127604/customers/1937232
+        - cell "966536419564 majed.alkhathami@hotmail.com"
+        - cell "Riyadh Saudi Arabia"
+        - cell "2":
+          - paragraph: "2"
+        - cell "--":
+          - paragraph: "--"
+        - cell "0":
+          - paragraph: "0"
+        - cell "Online store":
+          - paragraph: Online store
+        - cell "Edit":
+          - button
+          - link "Edit":
+            - /url: /en-sa/stores/127604/customers/1937232
+      - row "نورة الحميد Individual 966533960980 Nourahalhomaid@gmail.com Riyadh Saudi Arabia 1 -- 0 Online store Edit":
+        - cell:
+          - checkbox
+        - cell
+        - cell "نورة الحميد Individual":
+          - link "نورة الحميد Individual":
+            - /url: /en-sa/stores/127604/customers/47965
+        - cell "966533960980 Nourahalhomaid@gmail.com"
+        - cell "Riyadh Saudi Arabia"
+        - cell "1":
+          - paragraph: "1"
+        - cell "--":
+          - paragraph: "--"
+        - cell "0":
+          - paragraph: "0"
+        - cell "Online store":
+          - paragraph: Online store
+        - cell "Edit":
+          - button
+          - link "Edit":
+            - /url: /en-sa/stores/127604/customers/47965
+      - row "ام كروز Individual 966552256649 amooam2014@gmail.com Najran Saudi Arabia 1 -- 0 Online store Edit":
+        - cell:
+          - checkbox
+        - cell
+        - cell "ام كروز Individual":
+          - link "ام كروز Individual":
+            - /url: /en-sa/stores/127604/customers/224278
+        - cell "966552256649 amooam2014@gmail.com"
+        - cell "Najran Saudi Arabia"
+        - cell "1":
+          - paragraph: "1"
+        - cell "--":
+          - paragraph: "--"
+        - cell "0":
+          - paragraph: "0"
+        - cell "Online store":
+          - paragraph: Online store
+        - cell "Edit":
+          - button
+          - link "Edit":
+            - /url: /en-sa/stores/127604/customers/224278
+      - row "الحلقة للخضار والفواكة Individual 966563393838 saleh38.saad38@gmail.com Yanbu Saudi Arabia 0 -- 0 Online store Edit":
+        - cell:
+          - checkbox
+        - cell
+        - cell "الحلقة للخضار والفواكة Individual":
+          - link "الحلقة للخضار والفواكة Individual":
+            - /url: /en-sa/stores/127604/customers/1467165
+        - cell "966563393838 saleh38.saad38@gmail.com"
+        - cell "Yanbu Saudi Arabia"
+        - cell "0":
+          - paragraph: "0"
+        - cell "--":
+          - paragraph: "--"
+        - cell "0":
+          - paragraph: "0"
+        - cell "Online store":
+          - paragraph: Online store
+        - cell "Edit":
+          - button
+          - link "Edit":
+            - /url: /en-sa/stores/127604/customers/1467165
+      - row "تركي الزهراني Individual 966506762502 kantrolvib@gmail.com Abu Fatira Kuwait 0 -- 0 Online store Edit":
+        - cell:
+          - checkbox
+        - cell
+        - cell "تركي الزهراني Individual":
+          - link "تركي الزهراني Individual":
+            - /url: /en-sa/stores/127604/customers/5264738
+        - cell "966506762502 kantrolvib@gmail.com"
+        - cell "Abu Fatira Kuwait"
+        - cell "0":
+          - paragraph: "0"
+        - cell "--":
+          - paragraph: "--"
+        - cell "0":
+          - paragraph: "0"
+        - cell "Online store":
+          - paragraph: Online store
+        - cell "Edit":
+          - button
+          - link "Edit":
+            - /url: /en-sa/stores/127604/customers/5264738
+      - row "عبدالله Individual 966533401175 rabie.edu22@gmail.com Riyadh Saudi Arabia 0 -- 0 Online store Edit":
+        - cell:
+          - checkbox
+        - cell
+        - cell "عبدالله Individual":
+          - link "عبدالله Individual":
+            - /url: /en-sa/stores/127604/customers/5554604
+        - cell "966533401175 rabie.edu22@gmail.com"
+        - cell "Riyadh Saudi Arabia"
+        - cell "0":
+          - paragraph: "0"
+        - cell "--":
+          - paragraph: "--"
+        - cell "0":
+          - paragraph: "0"
+        - cell "Online store":
+          - paragraph: Online store
+        - cell "Edit":
+          - button
+          - link "Edit":
+            - /url: /en-sa/stores/127604/customers/5554604
+      - row "عبدالله احمد ناصر بوحسن Individual 966544121442 abdullah.1770771@gmail.com Al Ahsa Saudi Arabia 0 -- 0 Online store Edit":
+        - cell:
+          - checkbox
+        - cell
+        - cell "عبدالله احمد ناصر بوحسن Individual":
+          - link "عبدالله احمد ناصر بوحسن Individual":
+            - /url: /en-sa/stores/127604/customers/1711167
+        - cell "966544121442 abdullah.1770771@gmail.com"
+        - cell "Al Ahsa Saudi Arabia"
+        - cell "0":
+          - paragraph: "0"
+        - cell "--":
+          - paragraph: "--"
+        - cell "0":
+          - paragraph: "0"
+        - cell "Online store":
+          - paragraph: Online store
+        - cell "Edit":
+          - button
+          - link "Edit":
+            - /url: /en-sa/stores/127604/customers/1711167
+      - row "محمد العتيبي Individual 966502992997 cc444222c@gmail.com Riyadh Saudi Arabia 0 -- 0 Online store Edit":
+        - cell:
+          - checkbox
+        - cell
+        - cell "محمد العتيبي Individual":
+          - link "محمد العتيبي Individual":
+            - /url: /en-sa/stores/127604/customers/935762
+        - cell "966502992997 cc444222c@gmail.com"
+        - cell "Riyadh Saudi Arabia"
+        - cell "0":
+          - paragraph: "0"
+        - cell "--":
+          - paragraph: "--"
+        - cell "0":
+          - paragraph: "0"
+        - cell "Online store":
+          - paragraph: Online store
+        - cell "Edit":
+          - button
+          - link "Edit":
+            - /url: /en-sa/stores/127604/customers/935762
+      - row "احمد عيسى Individual 966530088936 ysya59422@gmail.com Baysh Saudi Arabia 0 -- 0 Online store Edit":
+        - cell:
+          - checkbox
+        - cell
+        - cell "احمد عيسى Individual":
+          - link "احمد عيسى Individual":
+            - /url: /en-sa/stores/127604/customers/2820256
+        - cell "966530088936 ysya59422@gmail.com"
+        - cell "Baysh Saudi Arabia"
+        - cell "0":
+          - paragraph: "0"
+        - cell "--":
+          - paragraph: "--"
+        - cell "0":
+          - paragraph: "0"
+        - cell "Online store":
+          - paragraph: Online store
+        - cell "Edit":
+          - button
+          - link "Edit":
+            - /url: /en-sa/stores/127604/customers/2820256
+      - row "محمدالسليمان Individual 966565546112 mohed134@gmail.com Riyadh Saudi Arabia 0 -- 0 Online store Edit":
+        - cell:
+          - checkbox
+        - cell
+        - cell "محمدالسليمان Individual":
+          - link "محمدالسليمان Individual":
+            - /url: /en-sa/stores/127604/customers/266108
+        - cell "966565546112 mohed134@gmail.com"
+        - cell "Riyadh Saudi Arabia"
+        - cell "0":
+          - paragraph: "0"
+        - cell "--":
+          - paragraph: "--"
+        - cell "0":
+          - paragraph: "0"
+        - cell "Online store":
+          - paragraph: Online store
+        - cell "Edit":
+          - button
+          - link "Edit":
+            - /url: /en-sa/stores/127604/customers/266108
+      - row "saeed Individual 966548850214 be.saeed.gh@gmail.com Jeddah Saudi Arabia 0 -- 0 Online store Edit":
+        - cell:
+          - checkbox
+        - cell
+        - cell "saeed Individual":
+          - link "saeed Individual":
+            - /url: /en-sa/stores/127604/customers/5626008
+        - cell "966548850214 be.saeed.gh@gmail.com"
+        - cell "Jeddah Saudi Arabia"
+        - cell "0":
+          - paragraph: "0"
+        - cell "--":
+          - paragraph: "--"
+        - cell "0":
+          - paragraph: "0"
+        - cell "Online store":
+          - paragraph: Online store
+        - cell "Edit":
+          - button
+          - link "Edit":
+            - /url: /en-sa/stores/127604/customers/5626008
+      - row "Mohammed Individual 966505646324 moh2015198@gmail.com Buraydah Saudi Arabia 1 -- 0 Online store Edit":
+        - cell:
+          - checkbox
+        - cell
+        - cell "Mohammed Individual":
+          - link "Mohammed Individual":
+            - /url: /en-sa/stores/127604/customers/1119198
+        - cell "966505646324 moh2015198@gmail.com"
+        - cell "Buraydah Saudi Arabia"
+        - cell "1":
+          - paragraph: "1"
+        - cell "--":
+          - paragraph: "--"
+        - cell "0":
+          - paragraph: "0"
+        - cell "Online store":
+          - paragraph: Online store
+        - cell "Edit":
+          - button
+          - link "Edit":
+            - /url: /en-sa/stores/127604/customers/1119198
+      - row "Naif Almoqnaie Individual 966554415036 alnaif.10@hotmail.com Riyadh Saudi Arabia 0 -- 0 Online store Edit":
+        - cell:
+          - checkbox
+        - cell
+        - cell "Naif Almoqnaie Individual":
+          - link "Naif Almoqnaie Individual":
+            - /url: /en-sa/stores/127604/customers/459275
+        - cell "966554415036 alnaif.10@hotmail.com"
+        - cell "Riyadh Saudi Arabia"
+        - cell "0":
+          - paragraph: "0"
+        - cell "--":
+          - paragraph: "--"
+        - cell "0":
+          - paragraph: "0"
+        - cell "Online store":
+          - paragraph: Online store
+        - cell "Edit":
+          - button
+          - link "Edit":
+            - /url: /en-sa/stores/127604/customers/459275
+  - text: "Rows per page:"
+  - combobox "25"
+  - navigation "pagination navigation":
+    - list:
+      - listitem:
+        - button "Go to first page" [disabled]
+      - listitem:
+        - button "Go to previous page" [disabled]
+      - listitem:
+        - button "page 1": "1"
+      - listitem:
+        - button "Go to page 2": "2"
+      - listitem:
+        - button "Go to page 3": "3"
+      - listitem:
+        - button "Go to page 4": "4"
+      - listitem:
+        - button "Go to page 5": "5"
+      - listitem: …
+      - listitem:
+        - button "Go to page 29": "29"
+      - listitem:
+        - button "Go to next page"
+      - listitem:
+        - button "Go to last page"
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

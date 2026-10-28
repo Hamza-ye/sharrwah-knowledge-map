@@ -1,0 +1,175 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Discounts":
+    - /url: /en-sa/stores/127604/marketing/discounts
+  - link "Bank discounts New":
+    - /url: /en-sa/stores/127604/marketing/bank-discounts
+  - link "Cashback offers New":
+    - /url: /en-sa/stores/127604/marketing/cashback-offers
+  - link "Bundle offers":
+    - /url: /en-sa/stores/127604/marketing/bundle-offers
+  - link "Automated Messages New":
+    - /url: /en-sa/stores/127604/marketing/automated-messages
+  - link "Marketing campaigns":
+    - /url: /en-sa/stores/127604/marketing/campaigns
+  - link "Loyalty program":
+    - /url: /en-sa/stores/127604/marketing/loyalty
+  - link "Customer Referrals Beta":
+    - /url: /en-sa/stores/127604/marketing/referrals
+  - link "Mokafaa program New":
+    - /url: /en-sa/stores/127604/marketing/mokafaa
+  - link "Qitaf New":
+    - /url: /en-sa/stores/127604/marketing/new-qitaf
+  - link "Affiliates":
+    - /url: /en-sa/stores/127604/marketing/affiliates
+  - link "Zid Ads":
+    - /url: /en-sa/stores/127604/apps/2812/embedded
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - button
+  - heading "Create bundle" [level=5]
+  - button "Create"
+  - heading "Details" [level=2]
+  - paragraph: Provide bundle name, description and bundle eligibility period.
+  - separator
+  - text: Name (Arabic)
+  - button "English"
+  - button "AI"
+  - textbox "Name (Arabic) English AI":
+    - /placeholder: اسم الحزمة التسويقية (العربية)
+  - paragraph: Number of characters 0 / 20
+  - text: Name (English)
+  - button "العربية"
+  - button "AI"
+  - textbox "Name (English) العربية AI":
+    - /placeholder: Bundle offer name (English)
+  - paragraph: Number of characters 0 / 20
+  - text: Description (Arabic)
+  - textbox "Description (Arabic)":
+    - /placeholder: وصف الحزمة التسويقية (العربية)
+  - paragraph: Number of characters 0 / 120
+  - text: Description (English)
+  - textbox "Description (English)":
+    - /placeholder: Bundle offer description (English)
+  - paragraph: Number of characters 0 / 120
+  - text: Start date
+  - textbox "Start date": 28 Oct, 2026
+  - text: End date
+  - textbox "End date": Select date
+  - heading "Customer buy Select what customer can buy to be eligible for the bundle" [level=3]:
+    - button "Customer buy Select what customer can buy to be eligible for the bundle" [expanded]:
+      - heading "Customer buy" [level=6]
+      - paragraph: Select what customer can buy to be eligible for the bundle
+  - region:
+    - text: Applies to
+    - combobox "Applies to All products": All products
+    - text: Products quantity
+    - spinbutton "Products quantity"
+    - checkbox "Exclude discounted products"
+    - text: Exclude discounted products
+  - heading "Customer gets Select what customer can get if quantity of items specified above added to their cart." [level=3]:
+    - button "Customer gets Select what customer can get if quantity of items specified above added to their cart." [expanded]:
+      - heading "Customer gets" [level=6]
+      - paragraph: Select what customer can get if quantity of items specified above added to their cart.
+  - region:
+    - text: Applies to
+    - combobox "Applies to All products": All products
+    - text: Products quantity
+    - spinbutton "Products quantity"
+    - checkbox "Exclude discounted products"
+    - text: Exclude discounted products
+    - separator
+    - heading "Offer type" [level=6]
+    - radiogroup:
+      - radio "Free" [checked]
+      - text: Free
+      - radio "Percentage discount"
+      - text: Percentage discount
+      - radio "Fixed amount off each"
+      - text: Fixed amount off each
+    - listitem:
+      - paragraph: Automatically add free products to the cart
+      - paragraph: If selected, the item will be automatically chosen and cannot be changed by the customer. You can configure whether the highest or lowest priced item is gifted.
+      - paragraph:
+        - paragraph:
+          - switch
+    - separator
+    - radiogroup:
+      - radio "With the lowest priced item" [checked]
+      - text: With the lowest priced item
+      - radio "With highest priced item"
+      - text: With highest priced item
+  - heading "Settings Add additional bundle details to control validity." [level=3]:
+    - button "Settings Add additional bundle details to control validity.":
+      - heading "Settings" [level=6]
+      - paragraph: Add additional bundle details to control validity.
+  - heading "Summary" [level=6]
+  - heading "Bundle offer" [level=6]
+  - separator
+  - heading "How it works" [level=6]
+  - paragraph: Not set yet
+  - paragraph: "Start date:"
+  - paragraph: 2026-10-28
+  - separator
+  - heading "Sales channels" [level=6]
+  - text: Online store
+  - separator
+  - alert: If a customer adds the same products to multiple bundle offers manually, the offer will be applied to the products that are added to the cart first.
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

@@ -1,0 +1,108 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home"
+  - button "Apps"
+  - button "Settings" [pressed]
+  - separator
+- list:
+  - link "General":
+    - /url: /en-sa/stores/127604/settings/account
+    - text: General
+    - button
+  - link "Communications":
+    - /url: /en-sa/stores/127604/settings/communications/orders
+  - link "Order notifications":
+    - /url: /en-sa/stores/127604/settings/communications/orders
+  - link "Abandoned cart reminders":
+    - /url: /en-sa/stores/127604/settings/communications/abandoned-carts
+  - link "Product question notifications":
+    - /url: /en-sa/stores/127604/settings/communications/questions
+  - link "Product review notifications":
+    - /url: /en-sa/stores/127604/settings/communications/reviews
+  - link "Store":
+    - /url: /en-sa/stores/127604/settings/information
+    - text: Store
+    - button
+- main:
+  - button
+  - heading "Abandoned cart reminders" [level=5]
+  - link "Create":
+    - /url: /en-sa/stores/127604/settings/communications/abandoned-carts/create
+  - link "Recharge reminder credits":
+    - /url: /en-sa/stores/127604/finance/billing/addons?tab=fdff6382-3cde-42a3-b393-b49eca8cfb92
+  - heading "Current balance" [level=6]
+  - paragraph: SMS status
+  - heading "Not activated" [level=6]
+  - link "Activate":
+    - /url: /en-sa/stores/127604/settings/communications/sender-name
+  - paragraph: Whatsapp status
+  - heading "Not activated" [level=6]
+  - link "Activate":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - heading "Sender name" [level=6]
+  - text: SMS Sender name
+  - paragraph: Zid
+  - link "Customize" [disabled]:
+    - /url: /en-sa/stores/127604/settings/communications/sender-name
+  - text: WhasApp sender name
+  - paragraph: "---"
+  - link "Customize":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - tablist:
+    - tab "All 1" [selected]
+    - tab "SMS"
+    - tab "Email"
+    - tab "WhatsApp"
+  - separator
+  - textbox "Search"
+  - button
+  - button
+  - table:
+    - rowgroup:
+      - row "Reminder title Alert type Reminder type Message status Active Created date":
+        - columnheader:
+          - checkbox
+        - columnheader "Reminder title"
+        - columnheader "Alert type"
+        - columnheader "Reminder type"
+        - columnheader "Message status"
+        - columnheader "Active"
+        - columnheader "Created date"
+        - columnheader
+    - rowgroup:
+      - row "رسالة افتراضية Automatic reminder Email - 2024-11-05 05:04 pm Delete Edit":
+        - cell:
+          - checkbox
+        - cell "رسالة افتراضية"
+        - cell "Automatic reminder"
+        - cell "Email"
+        - cell "-"
+        - cell:
+          - switch [checked]
+        - cell "2024-11-05 05:04 pm"
+        - cell "Delete Edit":
+          - button "Delete"
+          - link "Edit":
+            - /url: /en-sa/stores/127604/settings/communications/abandoned-carts/192ad7f1-e326-4d93-bdaf-52e4a6548929
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

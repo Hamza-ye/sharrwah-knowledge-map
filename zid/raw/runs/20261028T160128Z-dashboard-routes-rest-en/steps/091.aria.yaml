@@ -1,0 +1,123 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Themes":
+    - /url: /en-sa/stores/127604/channels/online-store/themes
+  - link "Landing pages":
+    - /url: /en-sa/stores/127604/channels/landing-pages
+  - link "Brand":
+    - /url: /en-sa/stores/127604/channels/online-store/brand
+  - link "Menu":
+    - /url: /en-sa/stores/127604/channels/online-store/menu
+  - link "Blog":
+    - /url: /en-sa/stores/127604/channels/online-store/blog
+  - link "Pages":
+    - /url: /en-sa/stores/127604/channels/online-store/pages
+  - link "SEO":
+    - /url: /en-sa/stores/127604/channels/online-store/seo
+  - link "Store pages":
+    - /url: /en-sa/stores/127604/channels/online-store/seo/store-pages
+  - link "Robots.txt":
+    - /url: /en-sa/stores/127604/channels/online-store/seo/robots
+  - link "Product Feeds":
+    - /url: /en-sa/stores/127604/channels/online-store/seo/feeds
+  - link "llms.txt":
+    - /url: /en-sa/stores/127604/channels/online-store/seo/llms-txt
+  - link "FAQs":
+    - /url: /en-sa/stores/127604/channels/online-store/faqs
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - button
+  - heading "Products feed" [level=5]
+  - paragraph: Generate product feeds to connect your store with Snapchat, TikTok, Google, Meta, X, and OpenAI.
+  - heading "Details" [level=6]
+  - text: Platform
+  - combobox "Platform Google":
+    - paragraph: Google
+  - text: Language
+  - combobox "Language Arabic": Arabic
+  - text: Currency
+  - combobox "Currency Saudi Riyal": Saudi Riyal
+  - button "Generate Link"
+  - heading "Previously generated links" [level=6]
+  - table:
+    - rowgroup:
+      - row "Platform Language Currency Product feed link":
+        - columnheader "Platform"
+        - columnheader "Language"
+        - columnheader "Currency"
+        - columnheader "Product feed link"
+    - rowgroup:
+      - row "google AR SAR https://zid-demostore.com/feeds/bHD-veKJlq5QsfR91B9O45K22EAAJlkp/feed.xml":
+        - cell "google":
+          - paragraph: google
+        - cell "AR":
+          - text: AR
+          - img
+        - cell "SAR":
+          - paragraph: SAR
+        - cell "https://zid-demostore.com/feeds/bHD-veKJlq5QsfR91B9O45K22EAAJlkp/feed.xml":
+          - link "https://zid-demostore.com/feeds/bHD-veKJlq5QsfR91B9O45K22EAAJlkp/feed.xml":
+            - /url: https://zid-demostore.com/feeds/bHD-veKJlq5QsfR91B9O45K22EAAJlkp/feed.xml
+          - button "Copy"
+          - button [disabled]
+          - button
+  - text: "Rows per page:"
+  - combobox "10"
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

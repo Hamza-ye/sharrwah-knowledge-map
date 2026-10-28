@@ -1,0 +1,176 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "All analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Reports New":
+    - /url: /en-sa/stores/127604/analytics/customizable-reports
+  - link "Zid Insights New":
+    - /url: /en-sa/stores/127604/analytics/insights
+  - link "Live analytics":
+    - /url: /en-sa/stores/127604/analytics/live
+  - link "Sales reports":
+    - /url: /en-sa/stores/127604/analytics/reports/sales
+  - link "Inventory reports":
+    - /url: /en-sa/stores/127604/analytics/reports/inventory
+  - link "Customers reports":
+    - /url: /en-sa/stores/127604/analytics/reports/customers
+  - link "Financial":
+    - /url: /en-sa/stores/127604/analytics/financial
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/analytics/marketing
+  - link "Operational":
+    - /url: /en-sa/stores/127604/analytics/operational
+  - link "Products":
+    - /url: /en-sa/stores/127604/analytics/products
+  - link "Payments":
+    - /url: /en-sa/stores/127604/analytics/payments
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/analytics/logistics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - heading "Reports" [level=5]
+  - paragraph: Last refreshed at 07:43 PM
+  - button "Create"
+  - button "Submit Feedback"
+  - heading "All reports" [level=6]
+  - textbox "Search"
+  - link "Sales over time This report shows the sales over time. Zid 3 days ago":
+    - /url: /en-sa/stores/127604/analytics/customizable-reports/019e886e-5c91-76a8-91e1-65433598ad6e
+    - heading "Sales over time" [level=6]
+    - text: This report shows the sales over time.
+    - separator
+    - img
+    - text: Zid 3 days ago
+  - link "Product sales This report shows the sales of products by product SKU. Zid 3 days ago":
+    - /url: /en-sa/stores/127604/analytics/customizable-reports/019e886e-5c5b-7315-8042-680dd6857168
+    - heading "Product sales" [level=6]
+    - text: This report shows the sales of products by product SKU.
+    - separator
+    - img
+    - text: Zid 3 days ago
+  - link "Top Customers This report shows the top customers by sales. Zid a month ago":
+    - /url: /en-sa/stores/127604/analytics/customizable-reports/019f513a-6765-74e0-b125-c8a4a042a293
+    - heading "Top Customers" [level=6]
+    - text: This report shows the top customers by sales.
+    - separator
+    - img
+    - text: Zid a month ago
+  - link "Payments by payment network This report shows successful transaction count and amount by payment network. Zid 2 months ago":
+    - /url: /en-sa/stores/127604/analytics/customizable-reports/01a058a6-7427-712e-bc8d-66348ed78755
+    - heading "Payments by payment network" [level=6]
+    - text: This report shows successful transaction count and amount by payment network.
+    - separator
+    - img
+    - text: Zid 2 months ago
+  - link "Coupon performance This report shows coupon performance based on sales. Zid 2 months ago":
+    - /url: /en-sa/stores/127604/analytics/customizable-reports/01a00c05-142c-7297-b37a-b43d2ac1889e
+    - heading "Coupon performance" [level=6]
+    - text: This report shows coupon performance based on sales.
+    - separator
+    - img
+    - text: Zid 2 months ago
+  - link "Total Sales by City Zid 2 months ago":
+    - /url: /en-sa/stores/127604/analytics/customizable-reports/019d6289-f478-7248-91f6-e7360addf08c
+    - heading "Total Sales by City" [level=6]
+    - separator
+    - img
+    - text: Zid 2 months ago
+  - link "Total Sales by Channel Zid 3 months ago":
+    - /url: /en-sa/stores/127604/analytics/customizable-reports/019d6289-f496-7601-9678-6f85731f2a93
+    - heading "Total Sales by Channel" [level=6]
+    - separator
+    - img
+    - text: Zid 3 months ago
+  - link "Visits by location This report shows visits by country and city. Zid Never viewed":
+    - /url: /en-sa/stores/127604/analytics/customizable-reports/01a17ad0-5e89-77e4-862c-65b7518a1ad3
+    - heading "Visits by location" [level=6]
+    - text: This report shows visits by country and city.
+    - separator
+    - img
+    - text: Zid Never viewed
+  - link "Visits by campaign This report shows the visit funnel by UTM campaign, source, and medium. Zid Never viewed":
+    - /url: /en-sa/stores/127604/analytics/customizable-reports/01a17ad0-5e79-7451-85a6-97bd5e19fd27
+    - heading "Visits by campaign" [level=6]
+    - text: This report shows the visit funnel by UTM campaign, source, and medium.
+    - separator
+    - img
+    - text: Zid Never viewed
+  - link "Visits by source This report shows visits by UTM source. Zid Never viewed":
+    - /url: /en-sa/stores/127604/analytics/customizable-reports/01a17ad0-5e6a-716a-966f-adba4562c47e
+    - heading "Visits by source" [level=6]
+    - text: This report shows visits by UTM source.
+    - separator
+    - img
+    - text: Zid Never viewed
+  - link "Visits over time This report shows visit funnel metrics over time. Zid Never viewed":
+    - /url: /en-sa/stores/127604/analytics/customizable-reports/01a17ad0-5e51-7487-9765-1e13944c6cad
+    - heading "Visits over time" [level=6]
+    - text: This report shows visit funnel metrics over time.
+    - separator
+    - img
+    - text: Zid Never viewed
+  - link "POS sales by location This report shows in-store sales amounts, average order value, orders, and tax by inventory location and day. Zid Never viewed":
+    - /url: /en-sa/stores/127604/analytics/customizable-reports/01a164ee-68ab-74d2-a71c-231be7983169
+    - heading "POS sales by location" [level=6]
+    - text: This report shows in-store sales amounts, average order value, orders, and tax by inventory location and day.
+    - separator
+    - img
+    - text: Zid Never viewed
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

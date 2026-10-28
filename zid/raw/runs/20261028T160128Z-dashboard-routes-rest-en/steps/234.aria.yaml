@@ -1,0 +1,755 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "All orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Manual orders":
+    - /url: /en-sa/stores/127604/orders/drafts
+  - link "Abandoned carts":
+    - /url: /en-sa/stores/127604/orders/abandoned-carts
+  - link "Zid Voice New 🔥":
+    - /url: /en-sa/stores/127604/apps/7906/embedded
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - heading "Orders" [level=5]
+  - paragraph: Manage all of your store's orders
+  - button "Create"
+  - button "Import orders"
+  - button
+  - tablist:
+    - tab "All 115" [selected]
+    - tab "New 104"
+    - tab "Preparing 2"
+    - tab "Ready 3"
+    - tab "In delivery 1"
+    - tab "Completed 4"
+    - tab "Cancelled 1"
+    - tab "Processing reverse"
+    - tab "Partially Reversed"
+    - tab "Reversed"
+  - separator
+  - textbox "Search"
+  - button
+  - button
+  - button
+  - table:
+    - rowgroup:
+      - row "Order number Customer Platform Payment Shipping Payment status Total Status Tags Created date":
+        - columnheader
+        - columnheader:
+          - checkbox
+        - columnheader "Order number": Order number Source
+        - columnheader "Customer": Customer Mobile
+        - columnheader "Platform"
+        - columnheader "Payment"
+        - columnheader "Shipping"
+        - columnheader "Payment status"
+        - columnheader "Total": Total Currency
+        - columnheader "Status"
+        - columnheader "Tags"
+        - columnheader "Created date": Created date Updated date
+    - rowgroup:
+      - row "58332475 Store علي الشمري 96599521252 - Apple Pay Doesn't Require Shipping Paid 8.149 KWD New -- 2025-09-27 2025-09-27":
+        - cell:
+          - button
+        - cell:
+          - checkbox
+        - cell "58332475 Store":
+          - link "58332475 Store":
+            - /url: /en-sa/stores/127604/orders/58332475
+        - cell "علي الشمري 96599521252":
+          - link "علي الشمري 96599521252":
+            - /url: /en-sa/stores/127604/customers/14802702
+            - text: علي الشمري
+            - paragraph: "96599521252"
+        - cell "-":
+          - paragraph: "-"
+        - cell "Apple Pay"
+        - cell "Doesn't Require Shipping":
+          - img
+          - paragraph: Doesn't Require Shipping
+        - cell "Paid"
+        - cell "8.149 KWD"
+        - cell "New"
+        - cell "--":
+          - paragraph: "--"
+        - cell "2025-09-27 2025-09-27"
+      - row "58278453 Store راشد المري 966546788700 - Bank Transfer Doesn't Require Shipping Unpaid 100  New -- 2025-09-26 2025-09-26":
+        - cell:
+          - button
+        - cell:
+          - checkbox
+        - cell "58278453 Store":
+          - link "58278453 Store":
+            - /url: /en-sa/stores/127604/orders/58278453
+        - cell "راشد المري 966546788700":
+          - link "راشد المري 966546788700":
+            - /url: /en-sa/stores/127604/customers/8358724
+            - text: راشد المري
+            - paragraph: "966546788700"
+        - cell "-":
+          - paragraph: "-"
+        - cell "Bank Transfer"
+        - cell "Doesn't Require Shipping":
+          - img
+          - paragraph: Doesn't Require Shipping
+        - cell "Unpaid"
+        - cell "100 "
+        - cell "New"
+        - cell "--":
+          - paragraph: "--"
+        - cell "2025-09-26 2025-09-26"
+      - row "58128293 Store Waqas +919537612458 - Bank Transfer Doesn't Require Shipping Unpaid 10.25 New -- 2025-09-23 2025-09-23":
+        - cell:
+          - button
+        - cell:
+          - checkbox
+        - cell "58128293 Store":
+          - link "58128293 Store":
+            - /url: /en-sa/stores/127604/orders/58128293
+        - cell "Waqas +919537612458":
+          - link "Waqas +919537612458":
+            - /url: /en-sa/stores/127604/customers/16350571
+            - text: Waqas
+            - paragraph: "+919537612458"
+        - cell "-":
+          - paragraph: "-"
+        - cell "Bank Transfer"
+        - cell "Doesn't Require Shipping":
+          - img
+          - paragraph: Doesn't Require Shipping
+        - cell "Unpaid"
+        - cell "10.25"
+        - cell "New"
+        - cell "--":
+          - paragraph: "--"
+        - cell "2025-09-23 2025-09-23"
+      - row "56697484 Store Z2QSTORE +962796579127 - Cash on Delivery مندوب Unpaid 230  New -- 2025-08-31 2025-08-31":
+        - cell:
+          - button
+        - cell:
+          - checkbox
+        - cell "56697484 Store":
+          - link "56697484 Store":
+            - /url: /en-sa/stores/127604/orders/56697484
+        - cell "Z2QSTORE +962796579127":
+          - link "Z2QSTORE +962796579127":
+            - /url: /en-sa/stores/127604/customers/16091445
+            - text: Z2QSTORE
+            - paragraph: "+962796579127"
+        - cell "-":
+          - paragraph: "-"
+        - cell "Cash on Delivery"
+        - cell "مندوب":
+          - img
+          - paragraph: مندوب
+        - cell "Unpaid"
+        - cell "230 "
+        - cell "New"
+        - cell "--":
+          - paragraph: "--"
+        - cell "2025-08-31 2025-08-31"
+      - row "56151997 Store آية +201065880262 - Bank Transfer Fast Unpaid 821  New -- 2025-08-18 2025-08-18":
+        - cell:
+          - button
+        - cell:
+          - checkbox
+        - cell "56151997 Store":
+          - link "56151997 Store":
+            - /url: /en-sa/stores/127604/orders/56151997
+        - cell "آية +201065880262":
+          - link "آية +201065880262":
+            - /url: /en-sa/stores/127604/customers/9516581
+            - text: آية
+            - paragraph: "+201065880262"
+        - cell "-":
+          - paragraph: "-"
+        - cell "Bank Transfer"
+        - cell "Fast":
+          - img
+          - paragraph: Fast
+        - cell "Unpaid"
+        - cell "821 "
+        - cell "New"
+        - cell "--":
+          - paragraph: "--"
+        - cell "2025-08-18 2025-08-18"
+      - row "56151371 Store آية +201065880262 - Bank Transfer Fast Unpaid 921  New -- 2025-08-18 2025-08-18":
+        - cell:
+          - button
+        - cell:
+          - checkbox
+        - cell "56151371 Store":
+          - link "56151371 Store":
+            - /url: /en-sa/stores/127604/orders/56151371
+        - cell "آية +201065880262":
+          - link "آية +201065880262":
+            - /url: /en-sa/stores/127604/customers/9516581
+            - text: آية
+            - paragraph: "+201065880262"
+        - cell "-":
+          - paragraph: "-"
+        - cell "Bank Transfer"
+        - cell "Fast":
+          - img
+          - paragraph: Fast
+        - cell "Unpaid"
+        - cell "921 "
+        - cell "New"
+        - cell "--":
+          - paragraph: "--"
+        - cell "2025-08-18 2025-08-18"
+      - row "55753749 Store يزن الفاضل 966506252211 - Bank Transfer مندوب Unpaid 100  New -- 2025-08-07 2025-08-07":
+        - cell:
+          - button
+        - cell:
+          - checkbox
+        - cell "55753749 Store":
+          - link "55753749 Store":
+            - /url: /en-sa/stores/127604/orders/55753749
+        - cell "يزن الفاضل 966506252211":
+          - link "يزن الفاضل 966506252211":
+            - /url: /en-sa/stores/127604/customers/4755399
+            - text: يزن الفاضل
+            - paragraph: "966506252211"
+        - cell "-":
+          - paragraph: "-"
+        - cell "Bank Transfer"
+        - cell "مندوب":
+          - img
+          - paragraph: مندوب
+        - cell "Unpaid"
+        - cell "100 "
+        - cell "New"
+        - cell "--":
+          - paragraph: "--"
+        - cell "2025-08-07 2025-08-07"
+      - row "55717729 Store Mateen Shahbaz +923184502010 - Cash on Delivery Fast Unpaid 121  New -- 2025-08-06 2025-08-06":
+        - cell:
+          - button
+        - cell:
+          - checkbox
+        - cell "55717729 Store":
+          - link "55717729 Store":
+            - /url: /en-sa/stores/127604/orders/55717729
+        - cell "Mateen Shahbaz +923184502010":
+          - link "Mateen Shahbaz +923184502010":
+            - /url: /en-sa/stores/127604/customers/15853162
+            - text: Mateen Shahbaz
+            - paragraph: "+923184502010"
+        - cell "-":
+          - paragraph: "-"
+        - cell "Cash on Delivery"
+        - cell "Fast":
+          - img
+          - paragraph: Fast
+        - cell "Unpaid"
+        - cell "121 "
+        - cell "New"
+        - cell "--":
+          - paragraph: "--"
+        - cell "2025-08-06 2025-08-06"
+      - row "55515717 Store Mateen Shahbaz +923184502010 - Cash on Delivery Fast Unpaid 281  New -- 2025-08-01 2025-08-01":
+        - cell:
+          - button
+        - cell:
+          - checkbox
+        - cell "55515717 Store":
+          - link "55515717 Store":
+            - /url: /en-sa/stores/127604/orders/55515717
+        - cell "Mateen Shahbaz +923184502010":
+          - link "Mateen Shahbaz +923184502010":
+            - /url: /en-sa/stores/127604/customers/15853162
+            - text: Mateen Shahbaz
+            - paragraph: "+923184502010"
+        - cell "-":
+          - paragraph: "-"
+        - cell "Cash on Delivery"
+        - cell "Fast":
+          - img
+          - paragraph: Fast
+        - cell "Unpaid"
+        - cell "281 "
+        - cell "New"
+        - cell "--":
+          - paragraph: "--"
+        - cell "2025-08-01 2025-08-01"
+      - row "55515205 Store Mateen Shahbaz +923184502010 - Cash on Delivery Fast Unpaid 281  New -- 2025-08-01 2025-08-01":
+        - cell:
+          - button
+        - cell:
+          - checkbox
+        - cell "55515205 Store":
+          - link "55515205 Store":
+            - /url: /en-sa/stores/127604/orders/55515205
+        - cell "Mateen Shahbaz +923184502010":
+          - link "Mateen Shahbaz +923184502010":
+            - /url: /en-sa/stores/127604/customers/15853162
+            - text: Mateen Shahbaz
+            - paragraph: "+923184502010"
+        - cell "-":
+          - paragraph: "-"
+        - cell "Cash on Delivery"
+        - cell "Fast":
+          - img
+          - paragraph: Fast
+        - cell "Unpaid"
+        - cell "281 "
+        - cell "New"
+        - cell "--":
+          - paragraph: "--"
+        - cell "2025-08-01 2025-08-01"
+      - row "55376135 Store Mateen Shahbaz +923184502010 - Cash on Delivery Fast Unpaid 41  New -- 2025-07-29 2025-07-29":
+        - cell:
+          - button
+        - cell:
+          - checkbox
+        - cell "55376135 Store":
+          - link "55376135 Store":
+            - /url: /en-sa/stores/127604/orders/55376135
+        - cell "Mateen Shahbaz +923184502010":
+          - link "Mateen Shahbaz +923184502010":
+            - /url: /en-sa/stores/127604/customers/15853162
+            - text: Mateen Shahbaz
+            - paragraph: "+923184502010"
+        - cell "-":
+          - paragraph: "-"
+        - cell "Cash on Delivery"
+        - cell "Fast":
+          - img
+          - paragraph: Fast
+        - cell "Unpaid"
+        - cell "41 "
+        - cell "New"
+        - cell "--":
+          - paragraph: "--"
+        - cell "2025-07-29 2025-07-29"
+      - row "55137943 Store صديق ناصر 966542237513 - Cash on Delivery ZidShip - Aramex Unpaid 57  New -- 2025-07-23 2025-07-23":
+        - cell:
+          - button
+        - cell:
+          - checkbox
+        - cell "55137943 Store":
+          - link "55137943 Store":
+            - /url: /en-sa/stores/127604/orders/55137943
+        - cell "صديق ناصر 966542237513":
+          - link "صديق ناصر 966542237513":
+            - /url: /en-sa/stores/127604/customers/13289196
+            - text: صديق ناصر
+            - paragraph: "966542237513"
+        - cell "-":
+          - paragraph: "-"
+        - cell "Cash on Delivery"
+        - cell "ZidShip - Aramex":
+          - img
+          - paragraph: ZidShip - Aramex
+        - cell "Unpaid"
+        - cell "57 "
+        - cell "New"
+        - cell "--":
+          - paragraph: "--"
+        - cell "2025-07-23 2025-07-23"
+      - row "55079282 Store Mateen Shahbaz +923184502010 - Cash on Delivery Fast Unpaid 305.27  New -- 2025-07-21 2025-07-21":
+        - cell:
+          - button
+        - cell:
+          - checkbox
+        - cell "55079282 Store":
+          - link "55079282 Store":
+            - /url: /en-sa/stores/127604/orders/55079282
+        - cell "Mateen Shahbaz +923184502010":
+          - link "Mateen Shahbaz +923184502010":
+            - /url: /en-sa/stores/127604/customers/15853162
+            - text: Mateen Shahbaz
+            - paragraph: "+923184502010"
+        - cell "-":
+          - paragraph: "-"
+        - cell "Cash on Delivery"
+        - cell "Fast":
+          - img
+          - paragraph: Fast
+        - cell "Unpaid"
+        - cell "305.27 "
+        - cell "New"
+        - cell "--":
+          - paragraph: "--"
+        - cell "2025-07-21 2025-07-21"
+      - row "54739140 Store Note Test edit22 966500000005 - Cash on Delivery مندوب Unpaid 130  New -- 2025-07-10 2025-07-10":
+        - cell:
+          - button
+        - cell:
+          - checkbox
+        - cell "54739140 Store Note":
+          - link "54739140 Store Note":
+            - /url: /en-sa/stores/127604/orders/54739140
+        - cell "Test edit22 966500000005":
+          - link "Test edit22 966500000005":
+            - /url: /en-sa/stores/127604/customers/15141670
+            - text: Test edit22
+            - paragraph: "966500000005"
+        - cell "-":
+          - paragraph: "-"
+        - cell "Cash on Delivery"
+        - cell "مندوب":
+          - img
+          - paragraph: مندوب
+        - cell "Unpaid"
+        - cell "130 "
+        - cell "New"
+        - cell "--":
+          - paragraph: "--"
+        - cell "2025-07-10 2025-07-10"
+      - row "53752742 Store فاعل خير 966533090148 - Bank Transfer No rush Unpaid 125  Delivered -- 2025-06-12 2025-06-27":
+        - cell:
+          - button
+        - cell:
+          - checkbox
+        - cell "53752742 Store":
+          - link "53752742 Store":
+            - /url: /en-sa/stores/127604/orders/53752742
+        - cell "فاعل خير 966533090148":
+          - link "فاعل خير 966533090148":
+            - /url: /en-sa/stores/127604/customers/9994549
+            - text: فاعل خير
+            - paragraph: "966533090148"
+        - cell "-":
+          - paragraph: "-"
+        - cell "Bank Transfer"
+        - cell "No rush":
+          - img
+          - paragraph: No rush
+        - cell "Unpaid"
+        - cell "125 "
+        - cell "Delivered"
+        - cell "--":
+          - paragraph: "--"
+        - cell "2025-06-12 2025-06-27"
+      - row "53146770 Store ahmad ghaleb 966541007926 - Cash on Delivery مندوب Unpaid 698.39  New -- 2025-06-02 2025-06-02":
+        - cell:
+          - button
+        - cell:
+          - checkbox
+        - cell "53146770 Store":
+          - link "53146770 Store":
+            - /url: /en-sa/stores/127604/orders/53146770
+        - cell "ahmad ghaleb 966541007926":
+          - link "ahmad ghaleb 966541007926":
+            - /url: /en-sa/stores/127604/customers/6944460
+            - text: ahmad ghaleb
+            - paragraph: "966541007926"
+        - cell "-":
+          - paragraph: "-"
+        - cell "Cash on Delivery"
+        - cell "مندوب":
+          - img
+          - paragraph: مندوب
+        - cell "Unpaid"
+        - cell "698.39 "
+        - cell "New"
+        - cell "--":
+          - paragraph: "--"
+        - cell "2025-06-02 2025-06-02"
+      - row "51061123 Store بييبل +201148153521 - Bank Transfer Fast Unpaid 121  New -- 2025-04-11 2025-04-11":
+        - cell:
+          - button
+        - cell:
+          - checkbox
+        - cell "51061123 Store":
+          - link "51061123 Store":
+            - /url: /en-sa/stores/127604/orders/51061123
+        - cell "بييبل +201148153521":
+          - link "بييبل +201148153521":
+            - /url: /en-sa/stores/127604/customers/15306871
+            - text: بييبل
+            - paragraph: "+201148153521"
+        - cell "-":
+          - paragraph: "-"
+        - cell "Bank Transfer"
+        - cell "Fast":
+          - img
+          - paragraph: Fast
+        - cell "Unpaid"
+        - cell "121 "
+        - cell "New"
+        - cell "--":
+          - paragraph: "--"
+        - cell "2025-04-11 2025-04-11"
+      - row "48174619 Store محمد 966500737549 - Bank Transfer ZidShip - Aramex Unpaid 123  New -- 2025-02-27 2025-02-27":
+        - cell:
+          - button
+        - cell:
+          - checkbox
+        - cell "48174619 Store":
+          - link "48174619 Store":
+            - /url: /en-sa/stores/127604/orders/48174619
+        - cell "محمد 966500737549":
+          - link "محمد 966500737549":
+            - /url: /en-sa/stores/127604/customers/14132925
+            - text: محمد
+            - paragraph: "966500737549"
+        - cell "-":
+          - paragraph: "-"
+        - cell "Bank Transfer"
+        - cell "ZidShip - Aramex":
+          - img
+          - paragraph: ZidShip - Aramex
+        - cell "Unpaid"
+        - cell "123 "
+        - cell "New"
+        - cell "--":
+          - paragraph: "--"
+        - cell "2025-02-27 2025-02-27"
+      - row "46997653 Store سعود عبدالله الزبيدي 966590011782 - Cash on Delivery ZidShip - SMSA Unpaid 133  New -- 2025-02-02 2025-02-02":
+        - cell:
+          - button
+        - cell:
+          - checkbox
+        - cell "46997653 Store":
+          - link "46997653 Store":
+            - /url: /en-sa/stores/127604/orders/46997653
+        - cell "سعود عبدالله الزبيدي 966590011782":
+          - link "سعود عبدالله الزبيدي 966590011782":
+            - /url: /en-sa/stores/127604/customers/1929692
+            - text: سعود عبدالله الزبيدي
+            - paragraph: "966590011782"
+        - cell "-":
+          - paragraph: "-"
+        - cell "Cash on Delivery"
+        - cell "ZidShip - SMSA":
+          - img
+          - paragraph: ZidShip - SMSA
+        - cell "Unpaid"
+        - cell "133 "
+        - cell "New"
+        - cell "--":
+          - paragraph: "--"
+        - cell "2025-02-02 2025-02-02"
+      - row "46892334 Store Hotel to test 971581623688 - Bank Transfer ZidShip - Aramex GCC Unpaid 131.22 AED New -- 2025-01-31 2025-01-31":
+        - cell:
+          - button
+        - cell:
+          - checkbox
+        - cell "46892334 Store":
+          - link "46892334 Store":
+            - /url: /en-sa/stores/127604/orders/46892334
+        - cell "Hotel to test 971581623688":
+          - link "Hotel to test 971581623688":
+            - /url: /en-sa/stores/127604/customers/14716104
+            - text: Hotel to test
+            - paragraph: "971581623688"
+        - cell "-":
+          - paragraph: "-"
+        - cell "Bank Transfer"
+        - cell "ZidShip - Aramex GCC":
+          - img
+          - paragraph: ZidShip - Aramex GCC
+        - cell "Unpaid"
+        - cell "131.22 AED"
+        - cell "New"
+        - cell "--":
+          - paragraph: "--"
+        - cell "2025-01-31 2025-01-31"
+      - row "45842126 Store Abdalstar Abdo +201094144292 - Cash on Delivery Fast Unpaid 2,934.6  New -- 2024-12-31 2024-12-31":
+        - cell:
+          - button
+        - cell:
+          - checkbox
+        - cell "45842126 Store":
+          - link "45842126 Store":
+            - /url: /en-sa/stores/127604/orders/45842126
+        - cell "Abdalstar Abdo +201094144292":
+          - link "Abdalstar Abdo +201094144292":
+            - /url: /en-sa/stores/127604/customers/10832825
+            - text: Abdalstar Abdo
+            - paragraph: "+201094144292"
+        - cell "-":
+          - paragraph: "-"
+        - cell "Cash on Delivery"
+        - cell "Fast":
+          - img
+          - paragraph: Fast
+        - cell "Unpaid"
+        - cell "2,934.6 "
+        - cell "New"
+        - cell "--":
+          - paragraph: "--"
+        - cell "2024-12-31 2024-12-31"
+      - row "45609457 Store yousef sarkar 966507859778 - Bank Transfer ZidShip - Saudi Post Unpaid 120  New -- 2024-12-27 2024-12-27":
+        - cell:
+          - button
+        - cell:
+          - checkbox
+        - cell "45609457 Store":
+          - link "45609457 Store":
+            - /url: /en-sa/stores/127604/orders/45609457
+        - cell "yousef sarkar 966507859778":
+          - link "yousef sarkar 966507859778":
+            - /url: /en-sa/stores/127604/customers/5410853
+            - text: yousef sarkar
+            - paragraph: "966507859778"
+        - cell "-":
+          - paragraph: "-"
+        - cell "Bank Transfer"
+        - cell "ZidShip - Saudi Post":
+          - img
+          - paragraph: ZidShip - Saudi Post
+        - cell "Unpaid"
+        - cell "120 "
+        - cell "New"
+        - cell "--":
+          - paragraph: "--"
+        - cell "2024-12-27 2024-12-27"
+      - row "45608543 Store yousef sarkar 966507859778 - Cash on Delivery مندوب Unpaid 130  New -- 2024-12-27 2024-12-27":
+        - cell:
+          - button
+        - cell:
+          - checkbox
+        - cell "45608543 Store":
+          - link "45608543 Store":
+            - /url: /en-sa/stores/127604/orders/45608543
+        - cell "yousef sarkar 966507859778":
+          - link "yousef sarkar 966507859778":
+            - /url: /en-sa/stores/127604/customers/5410853
+            - text: yousef sarkar
+            - paragraph: "966507859778"
+        - cell "-":
+          - paragraph: "-"
+        - cell "Cash on Delivery"
+        - cell "مندوب":
+          - img
+          - paragraph: مندوب
+        - cell "Unpaid"
+        - cell "130 "
+        - cell "New"
+        - cell "--":
+          - paragraph: "--"
+        - cell "2024-12-27 2024-12-27"
+      - row "45029953 Store فارس العطوي 966599998026 - Bank Transfer مندوب Unpaid 100  New -- 2024-12-11 2024-12-11":
+        - cell:
+          - button
+        - cell:
+          - checkbox
+        - cell "45029953 Store":
+          - link "45029953 Store":
+            - /url: /en-sa/stores/127604/orders/45029953
+        - cell "فارس العطوي 966599998026":
+          - link "فارس العطوي 966599998026":
+            - /url: /en-sa/stores/127604/customers/601737
+            - text: فارس العطوي
+            - paragraph: "966599998026"
+        - cell "-":
+          - paragraph: "-"
+        - cell "Bank Transfer"
+        - cell "مندوب":
+          - img
+          - paragraph: مندوب
+        - cell "Unpaid"
+        - cell "100 "
+        - cell "New"
+        - cell "--":
+          - paragraph: "--"
+        - cell "2024-12-11 2024-12-11"
+      - row "42653282 Store Doodee . 966558240399 - Bank Transfer Fast Unpaid 121  New -- 2024-10-04 2024-10-04":
+        - cell:
+          - button
+        - cell:
+          - checkbox
+        - cell "42653282 Store":
+          - link "42653282 Store":
+            - /url: /en-sa/stores/127604/orders/42653282
+        - cell "Doodee . 966558240399":
+          - link "Doodee . 966558240399":
+            - /url: /en-sa/stores/127604/customers/14031612
+            - text: Doodee .
+            - paragraph: "966558240399"
+        - cell "-":
+          - paragraph: "-"
+        - cell "Bank Transfer"
+        - cell "Fast":
+          - img
+          - paragraph: Fast
+        - cell "Unpaid"
+        - cell "121 "
+        - cell "New"
+        - cell "--":
+          - paragraph: "--"
+        - cell "2024-10-04 2024-10-04"
+  - text: "Rows per page:"
+  - combobox "25"
+  - navigation "pagination navigation":
+    - list:
+      - listitem:
+        - button "Go to first page" [disabled]
+      - listitem:
+        - button "Go to previous page" [disabled]
+      - listitem:
+        - button "page 1": "1"
+      - listitem:
+        - button "Go to page 2": "2"
+      - listitem:
+        - button "Go to page 3": "3"
+      - listitem:
+        - button "Go to page 4": "4"
+      - listitem:
+        - button "Go to page 5": "5"
+      - listitem:
+        - button "Go to next page"
+      - listitem:
+        - button "Go to last page"
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

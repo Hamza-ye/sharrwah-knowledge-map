@@ -1,0 +1,76 @@
+- link:
+  - /url: /en-sa/stores/127604/settings/gifting-settings
+- button "Save"
+- heading "Gift card builder" [level=6]
+- text: Text color
+- 'textbox "Text color Pick color #0E0217"': "#0e0217"
+- text: Pick color
+- paragraph: "#0E0217"
+- heading "Selected card background:" [level=6]
+- radiogroup:
+  - radio "Color" [checked]
+  - text: Color
+  - radio "Image"
+  - text: Image
+- text: Containers background color
+- textbox "Containers background color Pick color": "#000000"
+- text: Pick color
+- paragraph
+- heading "Choose the card size:" [level=6]
+- radiogroup:
+  - radio "Small (A6) 10.5 × 14.8 cm"
+  - paragraph: Small (A6)
+  - text: 10.5 × 14.8 cm
+  - radio "Medium (A5) 14.8 × 21 cm"
+  - paragraph: Medium (A5)
+  - text: 14.8 × 21 cm
+  - radio "Large (A4) 21 × 29.7 cm" [checked]
+  - paragraph: Large (A4)
+  - text: 21 × 29.7 cm
+- heading "Card padding" [level=6]
+- text: Left
+- spinbutton "Left": "12"
+- paragraph: cm
+- text: Right
+- spinbutton "Right": "12"
+- paragraph: cm
+- text: Top
+- spinbutton "Top": "12"
+- paragraph: cm
+- text: Bottom
+- spinbutton "Bottom": "12"
+- paragraph: cm
+- separator
+- heading "Select visible fields" [level=6]
+- heading "Store logo" [level=3]:
+  - button "Store logo":
+    - button
+    - paragraph: Store logo
+    - switch [checked]
+- heading "Recipient name" [level=3]:
+  - button "Recipient name":
+    - button
+    - paragraph: Recipient name
+    - switch [checked]
+- heading "Message" [level=3]:
+  - button "Message":
+    - button
+    - paragraph: Message
+    - switch [checked]
+- heading "Sender name" [level=3]:
+  - button "Sender name":
+    - button
+    - paragraph: Sender name
+    - switch [checked]
+- heading "QR code" [level=3]:
+  - button "QR code":
+    - button
+    - paragraph: QR code
+    - switch [checked]
+- status
+- img "Demo Store"
+- text: "TO: Recipient name"
+- paragraph: Message
+- paragraph: "Number of characters: 240 maximum"
+- text: "FROM: Sender name"
+- paragraph: Scan QR code to get personalized message.

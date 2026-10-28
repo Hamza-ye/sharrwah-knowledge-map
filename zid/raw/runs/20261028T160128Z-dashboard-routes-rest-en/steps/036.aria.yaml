@@ -1,0 +1,5 @@
+- dialog:
+  - heading "Amazon Marketplace Acceptable Use Policy" [level=6]
+  - paragraph: Brushing, fake orders, and fake or incentivized reviews are prohibited. You may not list counterfeit or infringing products. You must comply with Amazon's Seller/Vendor agreement and policies. Violations may lead to suspension, disconnection, and reporting to Amazon.
+  - paragraph: By clicking "Agree", you agree to the Amazon Marketplace Acceptable Use Policy.
+  - button "Agree"

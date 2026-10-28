@@ -1,0 +1,142 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Live chat":
+    - /url: /en-sa/stores/127604/services/whatsapp/live-chat
+  - link "Automatic replies New":
+    - /url: /en-sa/stores/127604/services/whatsapp/settings/auto-replies
+  - link "Message logs":
+    - /url: /en-sa/stores/127604/services/whatsapp/message-logs
+  - link "Settings":
+    - /url: /en-sa/stores/127604/services/whatsapp/settings
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - heading "Zid WhatsApp" [level=5]
+  - button "Activate"
+  - heading "The WhatsApp that sells for you, not just replies to your customers" [level=4]
+  - paragraph:
+    - strong: "Zid WhatsApp is built right into your dashboard:"
+    - text: same customers, same orders, same data. Turn it on with one click and it starts recovering abandoned carts and bringing customers back automatically, with no effort from you.
+  - heading "+29%" [level=6]
+  - text: higher abandoned cart recovery rate
+  - heading "3.5x" [level=6]
+  - text: higher conversion on WhatsApp campaigns compared to other channels
+  - heading "+25%" [level=6]
+  - text: higher conversion rate on promotional offers over WhatsApp
+  - heading "3x" [level=6]
+  - text: more product reviews and customer engagement
+  - img "whatsapp shopping cart"
+  - img
+  - heading "Activation checklist" [level=6]
+  - paragraph: A walkthrough from creating a Facebook account to connecting your number to Zid WhatsApp. Skip any step you've already done, and activate whenever you're ready.
+  - heading "1 Create a personal Facebook account Your personal Facebook account is the key to opening a Meta business account. Skip this step if you already have one." [level=3]:
+    - button "1 Create a personal Facebook account Your personal Facebook account is the key to opening a Meta business account. Skip this step if you already have one.":
+      - text: "1"
+      - heading "Create a personal Facebook account" [level=6]
+      - text: Your personal Facebook account is the key to opening a Meta business account. Skip this step if you already have one.
+  - heading "2 Create a Meta business account A business account is the central hub for your business assets including WhatsApp. Skip this step if you already have one." [level=3]:
+    - button "2 Create a Meta business account A business account is the central hub for your business assets including WhatsApp. Skip this step if you already have one.":
+      - text: "2"
+      - heading "Create a Meta business account" [level=6]
+      - text: A business account is the central hub for your business assets including WhatsApp. Skip this step if you already have one.
+  - heading "3 Complete your business details Complete details lower the chance of restriction and raise your account credibility. Fill them in before you start." [level=3]:
+    - button "3 Complete your business details Complete details lower the chance of restriction and raise your account credibility. Fill them in before you start.":
+      - text: "3"
+      - heading "Complete your business details" [level=6]
+      - text: Complete details lower the chance of restriction and raise your account credibility. Fill them in before you start.
+  - heading "Activate your WhatsApp account on Zid Activation connects your store to WhatsApp Business API, which lets you send campaigns and automated messages from inside Zid." [level=3]:
+    - button "Activate your WhatsApp account on Zid Activation connects your store to WhatsApp Business API, which lets you send campaigns and automated messages from inside Zid.":
+      - heading "Activate your WhatsApp account on Zid" [level=6]
+      - text: Activation connects your store to WhatsApp Business API, which lets you send campaigns and automated messages from inside Zid.
+  - heading "Need help activating your WhatsApp account on Zid?" [level=6]
+  - button "Talk to the team"
+  - link "Help center":
+    - /url: https://help.zid.sa/whatsapp/
+  - img "whatsapp support team"
+  - img
+  - heading "Run campaigns" [level=6]
+  - separator
+  - paragraph: Send offers and discounts to the right customers, right on time
+  - img
+  - heading "Recover lost sales" [level=6]
+  - separator
+  - paragraph: Remind customers about cart they left behind and recover lost sales
+  - img
+  - heading "Share order updates" [level=6]
+  - separator
+  - paragraph: Update customers from order creation to delivery, automatically
+  - img
+  - heading "Chat from one place" [level=6]
+  - separator
+  - paragraph: All conversations in one inbox. Reply faster, sell more
+  - img
+  - heading "Collect reviews" [level=6]
+  - separator
+  - paragraph: Request product reviews where customers actually respond
+  - img
+  - heading "Alert restocks" [level=6]
+  - separator
+  - paragraph: Instantly notify customers when their favorite items are available again
+  - heading "WhatsApp subscription included in your package" [level=5]
+  - heading "Free" [level=4]
+  - text: Includes 200 free welcome points to get started Messaging points are sold separately.
+  - link "See details here.":
+    - /url: https://zid-platform.s3.eu-west-1.amazonaws.com/public/documents/zid_whatsapp_pricing.pdf
+  - img
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

@@ -1,0 +1,99 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+  - link "Marketplaces":
+    - /url: /en-sa/stores/127604/channels/marketplaces/connect/marketplaces
+  - link "Mobile app":
+    - /url: /en-sa/stores/127604/channels/mobile-app
+  - link "POS":
+    - /url: /en-sa/stores/127604/channels/pos
+  - link "Reports":
+    - /url: /en-sa/stores/127604/channels/pos/reports
+  - link "Cashiers":
+    - /url: /en-sa/stores/127604/channels/pos/cashiers
+  - link "Sales":
+    - /url: /en-sa/stores/127604/channels/pos/sales
+  - link "Transactions":
+    - /url: /en-sa/stores/127604/channels/pos/transaction-history
+  - link "Settings":
+    - /url: /en-sa/stores/127604/channels/pos/settings
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - heading "Reports" [level=5]
+  - button "Export all"
+  - tablist:
+    - tab "Sales report" [selected]
+    - tab "Payment report"
+    - tab "Sessions history"
+  - button
+  - table:
+    - rowgroup:
+      - row "Date Sales Net revenue Cost of goods sold Gross profit Gross margin (%) Tax amount":
+        - columnheader
+        - columnheader "Date"
+        - columnheader "Sales"
+        - columnheader "Net revenue"
+        - columnheader "Cost of goods sold"
+        - columnheader "Gross profit"
+        - columnheader "Gross margin (%)"
+        - columnheader "Tax amount"
+        - columnheader
+  - img
+  - heading "Nothing here yet 🫣" [level=6]
+  - text: "Rows per page:"
+  - combobox "25"
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

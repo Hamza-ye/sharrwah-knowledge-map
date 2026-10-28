@@ -1,0 +1,140 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+  - link "Marketplaces":
+    - /url: /en-sa/stores/127604/channels/marketplaces/connect/marketplaces
+  - link "Mobile app":
+    - /url: /en-sa/stores/127604/channels/mobile-app
+  - link "POS":
+    - /url: /en-sa/stores/127604/channels/pos
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - button
+  - heading "Mobile app" [level=5]
+  - heading "Easily create your mobile app" [level=4]
+  - paragraph: Create an app that reflects your store’s identity to boost customer loyalty and drive repeat purchases.
+  - link "Create your app":
+    - /url: /en-sa/stores/127604/apps/421
+  - img
+  - heading "Make your business sustainable through the app" [level=6]
+  - text: 98%
+  - paragraph: Customer access to your store
+  - text: 3x
+  - paragraph: Customer retention rate
+  - text: 5x
+  - paragraph: Converting customers into buyers
+  - text: 40%
+  - paragraph: Lower marketing costs
+  - text: 70%
+  - paragraph: Increase returns and profits
+  - heading "App features" [level=6]
+  - paragraph: One dashboard for store and app
+  - paragraph: Retargeting abandoned carts in the app
+  - paragraph: Special discounts for app users
+  - paragraph: Sending notifications to app users
+  - heading "Featured store apps" [level=6]
+  - img
+  - img
+  - paragraph: Raseel
+  - link:
+    - /url: https://apps.apple.com/sa/app/%D8%B1%D8%B3%D9%8A%D9%84-raseel/id1559507627
+    - img
+  - link:
+    - /url: https://play.google.com/store/apps/details?id=com.raseel
+    - img
+  - img
+  - img
+  - paragraph: Faisal Al-Dayel
+  - link:
+    - /url: https://apps.apple.com/sa/app/%D9%81%D9%8A%D8%B5%D9%84-%D8%A7%D9%84%D8%AF%D8%A7%D9%8A%D9%84/id1491163538
+    - img
+  - link:
+    - /url: https://play.google.com/store/apps/details?id=com.appsbunches.faisalaldayel
+    - img
+  - img
+  - img
+  - paragraph: Power store
+  - link:
+    - /url: https://apps.apple.com/sa/app/%D8%A8%D8%A7%D9%88%D8%B1-%D8%B3%D8%AA%D9%88%D8%B1-power-store/id1437941227
+    - img
+  - link:
+    - /url: https://play.google.com/store/apps/details?id=com.appsbunches.powerstore
+    - img
+  - img
+  - img
+  - paragraph: Reefi
+  - link:
+    - /url: https://apps.apple.com/sa/app/%D8%B1%D9%8A%D9%81%D9%8A-reefi/id1594619585
+    - img
+  - link:
+    - /url: https://play.google.com/store/apps/details?id=com.salla.reefi
+    - img
+  - heading "Frequently Asked Questions" [level=6]
+  - heading "Does app content management require a separate control panel from Zid?" [level=3]:
+    - button "Does app content management require a separate control panel from Zid?":
+      - paragraph: Does app content management require a separate control panel from Zid?
+  - heading "Do app notifications and alerts have an additional cost based on the number of messages?" [level=3]:
+    - button "Do app notifications and alerts have an additional cost based on the number of messages?":
+      - paragraph: Do app notifications and alerts have an additional cost based on the number of messages?
+  - heading "How and when are abandoned cart alerts sent through the app?" [level=3]:
+    - button "How and when are abandoned cart alerts sent through the app?":
+      - paragraph: How and when are abandoned cart alerts sent through the app?
+  - heading "Create your mobile app easily" [level=6]
+  - link "Create your app now":
+    - /url: /en-sa/stores/127604/apps/421
+  - img
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

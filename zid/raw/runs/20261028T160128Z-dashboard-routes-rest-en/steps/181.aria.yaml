@@ -1,0 +1,87 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home"
+  - button "Apps"
+  - button "Settings" [pressed]
+  - separator
+- list:
+  - link "General":
+    - /url: /en-sa/stores/127604/settings/account
+    - text: General
+    - button
+  - link "Communications":
+    - /url: /en-sa/stores/127604/settings/communications/orders
+    - text: Communications
+    - button
+  - link "Store":
+    - /url: /en-sa/stores/127604/settings/information
+    - text: Store
+    - button
+- main:
+  - button
+  - heading "Fatoora platform integration" [level=5]
+  - text: Information OTP verification
+  - heading "General information" [level=6]
+  - text: Company legal name
+  - textbox "Company legal name":
+    - /placeholder: Enter company legal name
+    - text: Demo Store
+  - text: VAT number
+  - textbox "VAT number":
+    - /placeholder: Enter VAT number
+  - text: Unique number
+  - textbox "Unique number"
+  - paragraph: First 10 numbers of the VAT number
+  - text: The business activity
+  - combobox "The business activity Electronics": Electronics
+  - heading "Business address" [level=6]
+  - text: Country
+  - combobox "Country": Saudi Arabia
+  - button "Open"
+  - text: City
+  - combobox "City": Dammam
+  - button "Open"
+  - text: District
+  - textbox "District":
+    - /placeholder: Enter district
+  - text: Street name
+  - textbox "Street name":
+    - /placeholder: Enter street name
+  - text: Building number
+  - textbox "Building number":
+    - /placeholder: Enter building number
+  - text: Secondary number
+  - textbox "Secondary number":
+    - /placeholder: Enter secondary number
+  - text: Postal code
+  - textbox "Postal code":
+    - /placeholder: Enter postal code
+  - heading "Enabled channels" [level=6]
+  - checkbox "Online Store" [checked]
+  - text: Online Store
+  - checkbox "Zid Cashier" [disabled]
+  - text: Zid Cashier
+  - button "Back"
+  - button "Next"
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

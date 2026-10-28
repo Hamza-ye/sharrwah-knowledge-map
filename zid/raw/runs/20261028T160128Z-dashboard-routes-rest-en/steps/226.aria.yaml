@@ -1,0 +1,162 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - heading "Wallet details" [level=5]
+  - button "Export"
+  - heading "Current balance" [level=6]
+  - heading " 50 Low balance View balances" [level=3]:
+    - button " 50 Low balance View balances":
+      - paragraph:  50
+      - text: Low balance
+      - paragraph: View balances
+  - button "Withdraw"
+  - link "Add Funds":
+    - /url: /en-sa/stores/127604/finance/wallet/funds
+  - alert:
+    - text: Split your payments with flexibility
+    - paragraph:
+      - paragraph: Set a percentage or fixed amount of each transaction for wallet expenses, such as shipping, add-ons, or internal costs.
+      - link "Set up Wallet Splitting":
+        - /url: /en-sa/stores/127604/finance/wallet/funds
+  - heading "Wallet account details" [level=6]
+  - paragraph: Your wallet account information in Zid for recharging via bank transfer
+  - list:
+    - listitem:
+      - paragraph: Account holder name
+      - paragraph:
+        - paragraph: Demo Store
+    - listitem:
+      - paragraph: Bank
+      - paragraph:
+        - paragraph: Arab National Bank
+    - listitem:
+      - paragraph: IBAN number
+      - paragraph:
+        - paragraph: SA2030100819000001276041
+      - button "Copy"
+  - heading "Store owner bank details" [level=6]
+  - paragraph: Upon withdrawal, the amount will be deposited into this authorized bank account.
+  - list:
+    - listitem:
+      - paragraph: Account holder name
+      - paragraph:
+        - paragraph: Demo Store
+    - listitem:
+      - paragraph: Bank
+      - paragraph:
+        - paragraph: Al Rajhi Bank
+    - listitem:
+      - paragraph: IBAN number
+      - paragraph:
+        - paragraph: SA4380000296608010756115
+      - button "Copy"
+  - tablist:
+    - tab "Completed" [selected]
+    - tab "Pending"
+  - separator
+  - heading "Transactions" [level=6]
+  - button
+  - table:
+    - rowgroup:
+      - row "Description Transaction number Service Amount Currency Transaction type Status Date Time":
+        - columnheader "Description Transaction number"
+        - columnheader "Service"
+        - columnheader "Amount Currency"
+        - columnheader "Transaction type"
+        - columnheader "Status"
+        - columnheader "Date Time"
+        - columnheader
+    - rowgroup:
+      - row "مكافأة ترويجية BEPMTXN-1276045275 Zid Wallet 35  Credit Success 2025-06-27 10:29 pm View":
+        - cell "مكافأة ترويجية BEPMTXN-1276045275"
+        - cell "Zid Wallet"
+        - cell "35 "
+        - cell "Credit"
+        - cell "Success"
+        - cell "2025-06-27 10:29 pm"
+        - cell "View":
+          - link "View":
+            - /url: https://wallet.zid.sa/wallets/wallet_aspNTUGb7LQxVXAGEm8poE/transactions/transaction_3EQpnGxRTTTPGRAA4fossD/attachment?is_hermes=1&fallback_url=%2Fen-sa%2Fstores%2F127604%2Ffinance%2Finvoice-not-ready
+      - row "مكافأة ترويجية BEPMTXN-1276045274 Zid Wallet 15  Credit Success 2025-06-27 10:29 pm View":
+        - cell "مكافأة ترويجية BEPMTXN-1276045274"
+        - cell "Zid Wallet"
+        - cell "15 "
+        - cell "Credit"
+        - cell "Success"
+        - cell "2025-06-27 10:29 pm"
+        - cell "View":
+          - link "View":
+            - /url: https://wallet.zid.sa/wallets/wallet_aspNTUGb7LQxVXAGEm8poE/transactions/transaction_WfMjHHJAoZvfVuKHexCcZy/attachment?is_hermes=1&fallback_url=%2Fen-sa%2Fstores%2F127604%2Ffinance%2Finvoice-not-ready
+  - text: "Rows per page:"
+  - combobox "25"
+  - navigation "pagination navigation":
+    - list:
+      - listitem:
+        - button "Go to first page" [disabled]
+      - listitem:
+        - button "Go to previous page" [disabled]
+      - listitem:
+        - button "page 1": "1"
+      - listitem:
+        - button "Go to next page" [disabled]
+      - listitem:
+        - button "Go to last page" [disabled]
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

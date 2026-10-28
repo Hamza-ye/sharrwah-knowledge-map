@@ -1,0 +1,158 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "All products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Categories":
+    - /url: /en-sa/stores/127604/catalog/categories
+  - link "Brands New":
+    - /url: /en-sa/stores/127604/catalog/brands
+  - link "Preorder campaigns":
+    - /url: /en-sa/stores/127604/catalog/preorder-campaigns
+  - link "Inventory":
+    - /url: /en-sa/stores/127604/catalog/inventories
+  - link "Inventory stock changes":
+    - /url: /en-sa/stores/127604/catalog/inventory-stock-changes
+  - link "Filters":
+    - /url: /en-sa/stores/127604/catalog/filters
+  - link "Custom fields":
+    - /url: /en-sa/stores/127604/catalog/meta-fields
+  - link "Options library":
+    - /url: /en-sa/stores/127604/catalog/options
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - button
+  - heading "Create preorder campaign" [level=5]
+  - paragraph: Set up a pre-order campaign to accept orders for products before they are in stock.
+  - button "Create"
+  - heading "About campaign" [level=6]
+  - text: Campaign name (Arabic)
+  - textbox "Campaign name (Arabic)":
+    - /placeholder: "مثال: حملة الطلب المسبق لشتاء 2025"
+  - text: Campaign name (English)
+  - textbox "Campaign name (English)":
+    - /placeholder: e.g., Winter 2025 Pre-Order
+  - text: Start date
+  - textbox "Start date": Select date
+  - text: End date
+  - textbox "End date": Select date
+  - text: Order limit
+  - spinbutton "Order limit"
+  - paragraph: Show countdown
+  - text: If enabled, a countdown timer will appear on the product page showing the remaining time for the pre-order campaign.
+  - switch
+  - separator
+  - text: Preorder by stock
+  - radiogroup:
+    - radio "Out of stock Preorder is active when the product is out of stock."
+    - paragraph: Out of stock
+    - text: Preorder is active when the product is out of stock.
+    - radio "In stock Preorder is active when the product is in stock." [checked]
+    - paragraph: In stock
+    - text: Preorder is active when the product is in stock.
+  - separator
+  - text: Order status
+  - radiogroup:
+    - radio "New The order status will be set to \"New\"." [checked]
+    - paragraph: New
+    - text: The order status will be set to "New".
+    - radio "Custom status The order status will be set to your selected status."
+    - paragraph: Custom status
+    - text: The order status will be set to your selected status.
+  - separator
+  - text: Ability to combine preorder & in-stock products in one order
+  - radiogroup:
+    - radio "Allow Customers can mix preorder and in-stock products in one order." [checked]
+    - paragraph: Allow
+    - text: Customers can mix preorder and in-stock products in one order.
+    - radio "Disallow Customers must order pre-order products separately."
+    - paragraph: Disallow
+    - text: Customers must order pre-order products separately.
+  - separator
+  - heading "Custom messaging" [level=6]
+  - text: Promotional title (Arabic)
+  - textbox "Promotional title (Arabic)":
+    - /placeholder: "مثال: اطلب مسبقاً الآن"
+  - text: Promotional title (English)
+  - textbox "Promotional title (English)":
+    - /placeholder: e.g., Pre-Order Now
+  - text: Release note (Arabic)
+  - textbox "Release note (Arabic)"
+  - text: Release note (English)
+  - textbox "Release note (English)"
+  - heading "Selected products" [level=6]
+  - table:
+    - rowgroup:
+      - row "Product name SKU Quantity Price Sale Price":
+        - columnheader
+        - columnheader "Product name SKU"
+        - columnheader "Quantity"
+        - columnheader "Price"
+        - columnheader "Sale Price":
+          - paragraph: Sale Price
+        - columnheader
+  - heading "No products selected" [level=6]
+  - button "Edit products"
+  - heading "Product preview" [level=6]
+  - alert:
+    - paragraph: This is a preview of the product and the final appearance may vary from your store's theme.
+  - text: Pre-order
+  - heading " 185" [level=6]
+  - button "Preorder now" [disabled]
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

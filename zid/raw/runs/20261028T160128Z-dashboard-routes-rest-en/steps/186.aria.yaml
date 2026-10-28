@@ -1,0 +1,147 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "All products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Categories":
+    - /url: /en-sa/stores/127604/catalog/categories
+  - link "Brands New":
+    - /url: /en-sa/stores/127604/catalog/brands
+  - link "Preorder campaigns":
+    - /url: /en-sa/stores/127604/catalog/preorder-campaigns
+  - link "Inventory":
+    - /url: /en-sa/stores/127604/catalog/inventories
+  - link "Inventory stock changes":
+    - /url: /en-sa/stores/127604/catalog/inventory-stock-changes
+  - link "Filters":
+    - /url: /en-sa/stores/127604/catalog/filters
+  - link "Custom fields":
+    - /url: /en-sa/stores/127604/catalog/meta-fields
+  - link "Options library":
+    - /url: /en-sa/stores/127604/catalog/options
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - button
+  - heading "Create brand" [level=5]
+  - paragraph: Create brand to improve storefront navigation, marketing campaigns, and SEO.
+  - button "Save"
+  - link "Cancel":
+    - /url: /en-sa/stores/127604/catalog/brands
+  - heading "Brand details" [level=6]
+  - text: Brand name
+  - textbox "Brand name"
+  - text: Display Name (Arabic)
+  - textbox "Display Name (Arabic)"
+  - paragraph: Number of characters 0 / 70
+  - text: Display Name (English)
+  - textbox "Display Name (English)"
+  - paragraph: Number of characters 0 / 70
+  - text: Brand description (Arabic)
+  - textbox "Brand description (Arabic)":
+    - /placeholder: وصف العلامة التجارية
+  - paragraph: Number of characters 0 / 320
+  - text: Brand description (English)
+  - textbox "Brand description (English)":
+    - /placeholder: Brand description
+  - paragraph: Number of characters 0 / 320
+  - heading "Brand cover" [level=6]
+  - button "Choose File"
+  - paragraph: Browse
+  - heading "Or drag and drop" [level=6]
+  - paragraph: SVG, PNG, JPEG Or JPG (max. 15.63MB)
+  - text: Image dimension - 1200x1200
+  - heading "Search engine optimization Add information to help customers find this brand in the search engines." [level=3]:
+    - button "Search engine optimization Add information to help customers find this brand in the search engines." [expanded]:
+      - heading "Search engine optimization" [level=6]
+      - paragraph: Add information to help customers find this brand in the search engines.
+  - region:
+    - text: Brand page title (Arabic)
+    - textbox "Brand page title (Arabic)":
+      - /placeholder: أدخل عنوان صفحة العلامة التجارية
+    - paragraph: Number of characters 0 / 70
+    - text: Brand page title (English)
+    - textbox "Brand page title (English)":
+      - /placeholder: Enter brand page title
+    - paragraph: Number of characters 0 / 70
+    - text: Brand page description (Arabic)
+    - textbox "Brand page description (Arabic)":
+      - /placeholder: أدخل وصف صفحة العلامة التجارية
+    - paragraph: Number of characters 0 / 320
+    - text: Brand page description (English)
+    - textbox "Brand page description (English)":
+      - /placeholder: Enter brand page description
+    - paragraph: Number of characters 0 / 320
+    - text: Store link
+    - paragraph: https://zid-demostore.com/brands/
+    - textbox "Store link"
+  - heading "Products Select products to assign to this brand now, or add them later after the brand is created." [level=3]:
+    - button "Products Select products to assign to this brand now, or add them later after the brand is created." [expanded]:
+      - heading "Products" [level=6]
+      - paragraph: Select products to assign to this brand now, or add them later after the brand is created.
+  - region:
+    - table:
+      - rowgroup:
+        - row "Name":
+          - columnheader "Name"
+          - columnheader
+    - img
+    - heading "No products selected" [level=6]
+    - button "Add products"
+    - status
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

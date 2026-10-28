@@ -1,0 +1,109 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "All customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Customer wallet New":
+    - /url: /en-sa/stores/127604/customers/wallet
+  - link "Groups":
+    - /url: /en-sa/stores/127604/customers/groups
+  - link "Customer Tickets":
+    - /url: /en-sa/stores/127604/customers/support
+  - link "Reviews":
+    - /url: /en-sa/stores/127604/customers/reviews
+  - link "Questions":
+    - /url: /en-sa/stores/127604/customers/questions
+  - link "Stock notifications":
+    - /url: /en-sa/stores/127604/customers/stock-notifications
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - button
+  - heading "Customer wallets" [level=5]
+  - link "Cashback offers":
+    - /url: /en-sa/stores/127604/marketing/cashback-offers
+  - button "Export CSV"
+  - button
+  - paragraph: Outstanding balance
+  - paragraph: SAR 0
+  - paragraph: Total rewards
+  - paragraph: SAR 0
+  - paragraph: Rewarded customers
+  - paragraph: "0"
+  - paragraph: Cashback ROI
+  - paragraph: "-"
+  - heading "Customers" [level=6]
+  - paragraph: Overview of customers using customer wallet program.
+  - button
+  - table:
+    - rowgroup:
+      - row "Name Mobile Email Available balance Currency Held balance Currency Total balance Currency Pending rewards Currency Nearest expiry date Balance expiring":
+        - columnheader:
+          - checkbox
+        - columnheader "Name"
+        - columnheader "Mobile Email"
+        - columnheader "Available balance Currency"
+        - columnheader "Held balance Currency"
+        - columnheader "Total balance Currency"
+        - columnheader "Pending rewards Currency"
+        - columnheader "Nearest expiry date Balance expiring"
+        - columnheader
+  - heading "Nothing to show here yet" [level=6]
+  - text: "Rows per page:"
+  - combobox "25"
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

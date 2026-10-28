@@ -1,0 +1,181 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "All products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Categories":
+    - /url: /en-sa/stores/127604/catalog/categories
+  - link "Brands New":
+    - /url: /en-sa/stores/127604/catalog/brands
+  - link "Preorder campaigns":
+    - /url: /en-sa/stores/127604/catalog/preorder-campaigns
+  - link "Inventory":
+    - /url: /en-sa/stores/127604/catalog/inventories
+  - link "Inventory stock changes":
+    - /url: /en-sa/stores/127604/catalog/inventory-stock-changes
+  - link "Filters":
+    - /url: /en-sa/stores/127604/catalog/filters
+  - link "Custom fields":
+    - /url: /en-sa/stores/127604/catalog/meta-fields
+  - link "Options library":
+    - /url: /en-sa/stores/127604/catalog/options
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - heading "Products" [level=5]
+  - paragraph: All products
+  - button "Create"
+  - button
+  - tablist:
+    - tab "All 4" [selected]
+    - tab "Single product 1"
+    - tab "Voucher 1"
+    - tab "Grouped product 1"
+    - tab "Digital files 1"
+    - tab "Dynamic Bundle 0"
+  - separator
+  - textbox "Search"
+  - button
+  - button
+  - button
+  - table:
+    - rowgroup:
+      - row "Name Quantity Price Status Created date":
+        - columnheader:
+          - checkbox
+        - columnheader
+        - columnheader "Name": Name SKU code
+        - columnheader "Quantity"
+        - columnheader "Price": Price Currency
+        - columnheader "Status"
+        - columnheader "Created date": Created date Updated date
+        - columnheader
+    - rowgroup:
+      - row "Demo Grouped Product Z..1755526186720875 Unlimited 100  Hidden 2025-08-18 2026-09-24 Edit Delete":
+        - cell:
+          - checkbox
+        - cell:
+          - link:
+            - /url: /en-sa/stores/127604/catalog/products/0b0dff5d-435d-4283-beb0-d69d9de25e7e
+        - cell "Demo Grouped Product Z..1755526186720875":
+          - link "Demo Grouped Product Z..1755526186720875":
+            - /url: /en-sa/stores/127604/catalog/products/0b0dff5d-435d-4283-beb0-d69d9de25e7e
+        - cell "Unlimited"
+        - cell "100 "
+        - cell "Hidden"
+        - cell "2025-08-18 2026-09-24"
+        - cell "Edit Delete":
+          - link "Edit":
+            - /url: /en-sa/stores/127604/catalog/products/0b0dff5d-435d-4283-beb0-d69d9de25e7e
+          - button "Delete"
+          - button
+      - row "Demo Single Product Z..17555068065421941 Unlimited 100  Hidden 2025-08-18 5 days ago Edit Delete":
+        - cell:
+          - checkbox
+        - cell:
+          - link:
+            - /url: /en-sa/stores/127604/catalog/products/7b766683-f842-4dea-b268-7016e464d6c9
+        - cell "Demo Single Product Z..17555068065421941":
+          - link "Demo Single Product Z..17555068065421941":
+            - /url: /en-sa/stores/127604/catalog/products/7b766683-f842-4dea-b268-7016e464d6c9
+        - cell "Unlimited"
+        - cell "100 "
+        - cell "Hidden"
+        - cell "2025-08-18 5 days ago"
+        - cell "Edit Delete":
+          - link "Edit":
+            - /url: /en-sa/stores/127604/catalog/products/7b766683-f842-4dea-b268-7016e464d6c9
+          - button "Delete"
+          - button
+      - row "Demo Voucher Product Z.127604.17540471746968408 Out of stock (0)  12  100 Published 2025-08-01 2026-09-21 Edit Delete":
+        - cell:
+          - checkbox
+        - cell:
+          - link:
+            - /url: /en-sa/stores/127604/catalog/products/96da32bd-5039-47ec-8284-7f7c4ad8a849
+        - cell "Demo Voucher Product Z.127604.17540471746968408":
+          - link "Demo Voucher Product Z.127604.17540471746968408":
+            - /url: /en-sa/stores/127604/catalog/products/96da32bd-5039-47ec-8284-7f7c4ad8a849
+        - cell "Out of stock (0)"
+        - cell " 12  100"
+        - cell "Published"
+        - cell "2025-08-01 2026-09-21"
+        - cell "Edit Delete":
+          - link "Edit":
+            - /url: /en-sa/stores/127604/catalog/products/96da32bd-5039-47ec-8284-7f7c4ad8a849
+          - button "Delete"
+          - button
+      - row "Demo Digital Files Z.127604.1754027702823264 Unlimited 100  Published 2025-08-01 2026-09-24 Edit Delete":
+        - cell:
+          - checkbox
+        - cell:
+          - link:
+            - /url: /en-sa/stores/127604/catalog/products/6cadaf5c-c3e8-4708-8178-0d40d9358410
+        - cell "Demo Digital Files Z.127604.1754027702823264":
+          - link "Demo Digital Files Z.127604.1754027702823264":
+            - /url: /en-sa/stores/127604/catalog/products/6cadaf5c-c3e8-4708-8178-0d40d9358410
+        - cell "Unlimited"
+        - cell "100 "
+        - cell "Published"
+        - cell "2025-08-01 2026-09-24"
+        - cell "Edit Delete":
+          - link "Edit":
+            - /url: /en-sa/stores/127604/catalog/products/6cadaf5c-c3e8-4708-8178-0d40d9358410
+          - button "Delete"
+          - button
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

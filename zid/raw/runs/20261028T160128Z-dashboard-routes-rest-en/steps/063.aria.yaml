@@ -1,0 +1,67 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home"
+  - button "Apps"
+  - button "Settings" [pressed]
+  - separator
+- list:
+  - link "General":
+    - /url: /en-sa/stores/127604/settings/account
+    - text: General
+    - button
+  - link "Communications":
+    - /url: /en-sa/stores/127604/settings/communications/orders
+    - text: Communications
+    - button
+  - link "Store":
+    - /url: /en-sa/stores/127604/settings/information
+    - text: Store
+    - button
+- main:
+  - button
+  - heading "Custom sender name" [level=5]
+  - heading "Information on the custom sender name" [level=6]
+  - paragraph: "01"
+  - paragraph: A commercial registration and official stamp in the name of the establishment are required.
+  - paragraph: "02"
+  - paragraph: Service activation requires Zid team review and may be delayed due to regulatory checks by the provider (Unifonic).
+  - paragraph: "03"
+  - paragraph: Sender name change fees are not included in balance recharging and will be charged separately.
+  - paragraph: "04"
+  - paragraph: The sender's name is a service that is renewed annually.
+  - heading "Pricing" [level=6]
+  - radiogroup:
+    - radio "SMS Sender Id - KSA only | SAR 530.00"
+    - text: SMS Sender Id - KSA only | SAR 530.00
+    - radio "SMS Sender Id - GCC Excluding KSA & UAE | SAR 575.00"
+    - text: SMS Sender Id - GCC Excluding KSA & UAE | SAR 575.00
+    - radio "GCC only | SAR 575.00"
+    - text: GCC only | SAR 575.00
+    - radio "SMS Sender Id - KSA & GCC Excluding UAE | SAR 1,099.99"
+    - text: SMS Sender Id - KSA & GCC Excluding UAE | SAR 1,099.99
+    - radio "SMS Sender Id -UAE only | SAR 2,599.00"
+    - text: SMS Sender Id -UAE only | SAR 2,599.00
+  - link "Proceed to checkout" [disabled]:
+    - /url: /en-sa/stores/127604/checkout?filters.addons=
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

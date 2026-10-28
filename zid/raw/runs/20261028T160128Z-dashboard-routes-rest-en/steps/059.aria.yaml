@@ -1,0 +1,168 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+  - link "Marketplaces":
+    - /url: /en-sa/stores/127604/channels/marketplaces/connect/marketplaces
+  - link "Mobile app":
+    - /url: /en-sa/stores/127604/channels/mobile-app
+  - link "POS":
+    - /url: /en-sa/stores/127604/channels/pos
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - heading "Mazeed management" [level=5]
+  - button "Save"
+  - tablist:
+    - tab "Products"
+    - tab "Orders"
+    - tab "Financial dues"
+    - tab "Settings" [selected]
+  - heading "Owner Info" [level=6]
+  - text: Owner name
+  - textbox "Owner name"
+  - text: Store Owner phone number
+  - paragraph: "+966"
+  - textbox "Store Owner phone number"
+  - text: Store Owner email
+  - textbox "Store Owner email"
+  - listitem:
+    - paragraph: The store owner is also responsible of operation
+    - paragraph: Operation will be responsible to follow up in regards any issue or tickets with Mazeed team
+    - switch
+  - text: Operation coordinator name
+  - textbox "Operation coordinator name"
+  - text: Operation coordinator phone number
+  - paragraph: "+966"
+  - textbox "Operation coordinator phone number"
+  - text: Operation coordinator email
+  - textbox "Operation coordinator email"
+  - text: Customer service phone number
+  - paragraph: "+966"
+  - textbox "Customer service phone number"
+  - text: Customer service email
+  - textbox "Customer service email"
+  - heading "Store Info" [level=6]
+  - paragraph: Custom message for status changes. If not set, the default order notification will be sent.
+  - radio "Establishment With commercial number"
+  - paragraph: Establishment
+  - text: With commercial number
+  - radio "Individual With freelancer certificate" [checked]
+  - paragraph: Individual
+  - text: With freelancer certificate Store Name
+  - textbox "Store Name": Demo Store
+  - paragraph: This name will show up in the Mazeed app
+  - text: Store Category
+  - textbox "Store Category" [disabled]
+  - text: Store Email
+  - textbox "Store Email"
+  - alert:
+    - text: Mazeed Services include operational fees
+    - paragraph: Based on your industry Unknown, the commission fees are %, and Mazeed deducts commission fees on each order
+  - text: Commercial Name
+  - textbox "Commercial Name": Demo Store
+  - paragraph: Name as per certificate. Name will be shown in invoices
+  - text: Tax Number
+  - textbox "Tax Number"
+  - paragraph: This number will show up in the Mazeed app
+  - text: Freelancer Certificate
+  - button "Choose File"
+  - paragraph: Upload new
+  - text: Store bio
+  - textbox "Store bio"
+  - paragraph: Number of characters / 100
+  - text: Store Logo in Arabic (اختياري)
+  - button "Choose File"
+  - img
+  - button "Crop image"
+  - text: Store Logo in English (optional)
+  - button "Choose File"
+  - img
+  - button "Crop image"
+  - heading "Bank Information" [level=6]
+  - paragraph: Mazeed will settled to this Bank account
+  - text: Bank Name
+  - combobox "Bank Name"
+  - text: Beneficiary Name
+  - textbox "Beneficiary Name"
+  - text: IBAN number
+  - paragraph: SA
+  - textbox "IBAN number"
+  - button "Discard changes"
+  - heading "Advanced settings" [level=6]
+  - heading "Customize showing Mazeed inside the store" [level=3]:
+    - button "Customize showing Mazeed inside the store" [expanded]:
+      - heading "Customize showing Mazeed inside the store" [level=6]
+  - region:
+    - list:
+      - listitem:
+        - switch [checked]
+        - paragraph: Show Mazeed in customer profile
+      - listitem:
+        - switch
+        - paragraph: Send abandoned cart notifications
+      - listitem:
+        - switch
+        - paragraph: Show Mazeed in emails
+      - listitem:
+        - switch [checked]
+        - paragraph: Display Mazeed link in SMS
+      - listitem:
+        - switch [checked]
+        - paragraph: Show Mazeed in success page
+      - listitem:
+        - switch [checked]
+        - paragraph: Show Mazeed in order page
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

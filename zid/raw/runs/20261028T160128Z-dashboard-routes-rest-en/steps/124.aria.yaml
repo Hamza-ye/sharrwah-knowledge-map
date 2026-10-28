@@ -1,0 +1,104 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Transactions":
+    - /url: /en-sa/stores/127604/services/payments/transactions
+  - link "Payment links":
+    - /url: /en-sa/stores/127604/services/payments/payment-links
+  - link "Payouts":
+    - /url: /en-sa/stores/127604/services/payments/payouts
+  - link "Bank accounts":
+    - /url: /en-sa/stores/127604/services/payments/bank-accounts
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - button
+  - heading "Emkan details" [level=5]
+  - img
+  - heading "Emkan pay" [level=6]
+  - text: "By: Zid"
+  - paragraph: Enable emkan - pay later to let your customers shop and split their purchases into 5 installments at the cash price.
+  - tablist:
+    - tab "Overview" [selected]
+    - tab "FAQ"
+    - tab "Contact"
+  - separator
+  - paragraph: Emkan, a subsidiary of Al Rajhi Bank, offers the Sharia-compliant "Pay Later" service, which provides a higher number of installments, increasing your sales by up to 25% compared to other service providers. This is achieved by allowing your customers to split their purchases into 5 equal installments at cash price, enhancing their purchasing power and increasing their cart value effortlessly! Boost your sales and encourage your customers by allowing them to split their bills into 5 installments with the "Pay Later" service from Emkan—a secure payment option for your store.
+  - paragraph:
+    - paragraph:
+      - strong: "Benefits of the \"Pay Later\" Service:"
+    - list:
+      - listitem: Split customer bills into 5 equal installments.
+      - listitem: Increase average cart value by up to 25%.
+      - listitem: Improve checkout completion rates with higher approval rates for customers.
+      - listitem: Ensure consistent cash flow with periodic transfers to your store.
+      - listitem: Enhance customers' purchasing power through a flexible and easy payment option.
+      - listitem: Emkan absorbs the risk associated with customer payments.
+      - listitem: Collaborative marketing support through social media and advertising campaigns.
+    - paragraph: Activate the "Pay Later" service and grow your store today!
+  - heading "Activation" [level=6]
+  - text: Client key
+  - textbox "Client key"
+  - text: Client secret
+  - textbox "Client secret"
+  - text: Merchant ID
+  - textbox "Merchant ID"
+  - checkbox "Enabled"
+  - text: Enabled
+  - button "Save"
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

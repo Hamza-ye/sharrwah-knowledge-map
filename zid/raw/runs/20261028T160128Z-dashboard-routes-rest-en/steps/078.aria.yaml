@@ -1,0 +1,112 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+  - link "Marketplaces":
+    - /url: /en-sa/stores/127604/channels/marketplaces/connect/marketplaces
+  - link "Mobile app":
+    - /url: /en-sa/stores/127604/channels/mobile-app
+  - link "POS":
+    - /url: /en-sa/stores/127604/channels/pos
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - heading "Mazeed" [level=5]
+  - heading "Welcome to Mazeed" [level=4]
+  - paragraph: A solution for the growth of your store, making it easier for you to reach millions of customers by reviewing the best stores and products, providing an enjoyable and reliable shopping experience for the buyer, and transparency in tracking orders made through Mazeed or any of the Zid stores.
+  - button "Activate Mazeed now"
+  - img
+  - heading "Main advantages" [level=6]
+  - heading "Quick and easy registration" [level=6]
+  - separator
+  - paragraph: Linking your store requires no additional documentation or technical complications
+  - heading "Inventory and one control panel" [level=6]
+  - separator
+  - paragraph: Full product control and order reception from one Zid console
+  - heading "Creative marketing of your products" [level=6]
+  - separator
+  - paragraph: Run a joint ad campaign with mazeed to show your products on social media and in-app
+  - heading "Greater sales & growth" [level=6]
+  - separator
+  - paragraph: Associate your products with more exposure to millions of customers, without any effort from you
+  - paragraph: Get a chance to try the app, now available for download
+  - heading "Download the Mazeed app" [level=6]
+  - link:
+    - /url: https://play.google.com/store/apps/details?id=sa.zid.mazeed
+    - img
+  - link:
+    - /url: https://onelink.to/mazeed_website
+    - img
+  - heading "Frequently Asked Questions" [level=6]
+  - heading "Is Mazeed responsible for shipping and delivery?" [level=3]:
+    - button "Is Mazeed responsible for shipping and delivery?":
+      - paragraph: Is Mazeed responsible for shipping and delivery?
+  - heading "Is it necessary to specify a separate inventory for Mazeed?" [level=3]:
+    - button "Is it necessary to specify a separate inventory for Mazeed?":
+      - paragraph: Is it necessary to specify a separate inventory for Mazeed?
+  - heading "Where will I receive orders coming from Mazeed?" [level=3]:
+    - button "Where will I receive orders coming from Mazeed?":
+      - paragraph: Where will I receive orders coming from Mazeed?
+  - heading "Is there any subscription fee for listing my product on Mazeed?" [level=3]:
+    - button "Is there any subscription fee for listing my product on Mazeed?":
+      - paragraph: Is there any subscription fee for listing my product on Mazeed?
+  - heading "Are there any marketing plans for the Mazeed platform?" [level=3]:
+    - button "Are there any marketing plans for the Mazeed platform?":
+      - paragraph: Are there any marketing plans for the Mazeed platform?
+  - heading "Let customers track their orders with the Mazeed app." [level=6]
+  - paragraph: Customize disabling Mazeed download button in customer profile, orders, login, or in emails
+  - link "Mazeed settings":
+    - /url: /en-sa/stores/127604/channels/marketplaces/mazeed/settings
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

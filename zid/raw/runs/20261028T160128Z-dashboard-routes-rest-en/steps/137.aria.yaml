@@ -1,0 +1,101 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Live chat":
+    - /url: /en-sa/stores/127604/services/whatsapp/live-chat
+  - link "Automatic replies New":
+    - /url: /en-sa/stores/127604/services/whatsapp/settings/auto-replies
+  - link "Message logs":
+    - /url: /en-sa/stores/127604/services/whatsapp/message-logs
+  - link "Settings":
+    - /url: /en-sa/stores/127604/services/whatsapp/settings
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - button
+  - heading "WhatsApp settings" [level=5]
+  - heading "Settings" [level=6]
+  - heading "Replies flow New" [level=6]
+  - paragraph: Create an automated reply flow to guide customers to the right answer.
+  - link "Edit" [disabled]:
+    - /url: /en-sa/stores/127604/services/whatsapp/settings/auto-replies
+  - heading "Account details" [level=6]
+  - paragraph: Manage your account info and business details used in WhatsApp messages.
+  - link "Edit" [disabled]:
+    - /url: /en-sa/stores/127604/services/whatsapp/settings/account-information
+  - heading "Quick replies" [level=6]
+  - paragraph: Save and reuse messages for common questions to reply faster.
+  - link "Customize" [disabled]:
+    - /url: /en-sa/stores/127604/services/whatsapp/settings/quick-replies
+  - heading "Tags New" [level=6]
+  - paragraph: Manage your tags to organize and track conversations and customers.
+  - link "Customize" [disabled]:
+    - /url: /en-sa/stores/127604/services/whatsapp/settings/tags
+  - heading "Store widget" [level=6]
+  - paragraph: Customize the WhatsApp button and its placement. Customers can click it to start a WhatsApp chat with your store.
+  - switch [disabled]
+  - link "Preview on store" [disabled]:
+    - /url: https://zid-demostore.com/
+  - link "Customize" [disabled]:
+    - /url: /en-sa/stores/127604/services/whatsapp/settings/store-widget
+  - heading "Unsubscribe from messages" [level=6]
+  - paragraph: Automatically let customers unsubscribe from WhatsApp messages by replying with a keyword.
+  - switch [disabled]
+  - link "Customize" [disabled]:
+    - /url: /en-sa/stores/127604/services/whatsapp/settings/opt-out
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

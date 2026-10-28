@@ -1,0 +1,151 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+  - link "Marketplaces":
+    - /url: /en-sa/stores/127604/channels/marketplaces/connect/marketplaces
+  - link "Mobile app":
+    - /url: /en-sa/stores/127604/channels/mobile-app
+  - link "POS":
+    - /url: /en-sa/stores/127604/channels/pos
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - button
+  - heading "Mobile app" [level=5]
+  - button "Send"
+  - heading "Send notifications" [level=6]
+  - paragraph: Through this form you can send notifications to your store app users
+  - text: Main title
+  - textbox "Main title":
+    - /placeholder: Add the main title of the message
+  - text: Sub title
+  - textbox "Sub title":
+    - /placeholder: Add subtitle
+  - text: Message
+  - textbox "Message":
+    - /placeholder: Type the text of the notification message
+  - text: When you click the notification redirect to
+  - combobox "When you click the notification redirect to Home": Home
+  - heading "Notification preview" [level=6]
+  - tablist:
+    - tab "iOS" [selected]
+    - tab "Android"
+  - text: now
+  - paragraph: Notification title
+  - text: Notification message will appear here
+  - heading "Sent Notifications" [level=6]
+  - paragraph: "Note: The system retains notifications for up to 30 days."
+  - table:
+    - rowgroup:
+      - row "Message The date and time of sending Successfully sent to Percentage of clickers":
+        - columnheader "Message"
+        - columnheader "The date and time of sending"
+        - columnheader "Successfully sent to"
+        - columnheader "Percentage of clickers"
+    - rowgroup:
+      - row:
+        - cell
+        - cell
+        - cell
+        - cell
+      - row:
+        - cell
+        - cell
+        - cell
+        - cell
+      - row:
+        - cell
+        - cell
+        - cell
+        - cell
+      - row:
+        - cell
+        - cell
+        - cell
+        - cell
+      - row:
+        - cell
+        - cell
+        - cell
+        - cell
+      - row:
+        - cell
+        - cell
+        - cell
+        - cell
+      - row:
+        - cell
+        - cell
+        - cell
+        - cell
+      - row:
+        - cell
+        - cell
+        - cell
+        - cell
+      - row:
+        - cell
+        - cell
+        - cell
+        - cell
+      - row:
+        - cell
+        - cell
+        - cell
+        - cell
+  - text: "Rows per page:"
+  - combobox "10"
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

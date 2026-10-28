@@ -1,0 +1,97 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+  - link "Marketplaces":
+    - /url: /en-sa/stores/127604/channels/marketplaces/connect/marketplaces
+  - link "Mobile app":
+    - /url: /en-sa/stores/127604/channels/mobile-app
+  - link "POS":
+    - /url: /en-sa/stores/127604/channels/pos
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - heading "Marketplaces" [level=5]
+  - link "General price configuration":
+    - /url: /en-sa/stores/127604/channels/marketplaces/connect/price-configuration
+  - tablist:
+    - tab "Overview"
+    - tab "Marketplaces"
+    - tab "Orders"
+    - tab "Products"
+    - tab "Inventory"
+    - tab "Pricing" [selected]
+    - tab "Settings"
+  - alert:
+    - text: Heads up!
+    - paragraph: Price changes are sent to marketplaces instantly, but they may take up to 6 hours to appear on Zid.
+  - heading "Product prices 0" [level=6]
+  - combobox "Select account":
+    - paragraph: Select account
+  - textbox "Search"
+  - button
+  - button
+  - table:
+    - rowgroup:
+      - row "Product name Zid price Fulfillment Amazon SA":
+        - columnheader "Product name"
+        - columnheader "Zid price"
+        - columnheader "Fulfillment"
+        - columnheader "Amazon SA": Amazon SA FBX | FBM
+    - rowgroup:
+      - row "Nothing to show here yet":
+        - cell "Nothing to show here yet":
+          - heading "Nothing to show here yet" [level=6]
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

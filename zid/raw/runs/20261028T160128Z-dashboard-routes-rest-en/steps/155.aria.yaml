@@ -1,0 +1,139 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Shipping methods":
+    - /url: /en-sa/stores/127604/services/logistics/shipping-methods
+  - link "Shipments tracking":
+    - /url: /en-sa/stores/127604/services/logistics/shipments
+  - link "Transactions log":
+    - /url: /en-sa/stores/127604/services/logistics/shipments/transactions
+  - link "Label packages":
+    - /url: /en-sa/stores/127604/services/logistics/labels
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - heading "Logistics" [level=5]
+  - link "Settings":
+    - /url: /en-sa/stores/127604/services/logistics/settings
+  - button "Shipping rate calculator"
+  - heading "Order your packaging and shipping needs now" [level=4]
+  - paragraph: Boxes, bags, rolls, labels, printers, and much more...
+  - link "Order Now":
+    - /url: https://store.zid.sa/
+  - heading "Inventory" [level=6]
+  - paragraph: Select a Ship-from Inventory Location to load shipping methods.
+  - text: Inventory
+  - combobox "Inventory"
+  - heading "Local delivery" [level=6]
+  - paragraph: Offer direct delivery from your locations to your customers.
+  - table:
+    - rowgroup:
+      - row "Option name Delivery cities Status":
+        - columnheader "Option name"
+        - columnheader "Delivery cities"
+        - columnheader "Status"
+        - columnheader
+    - rowgroup:
+      - row "مندوب 332 View":
+        - cell "مندوب"
+        - cell "332"
+        - cell:
+          - switch [checked]
+        - cell "View":
+          - link "View":
+            - /url: /en-sa/stores/127604/services/logistics/local-delivery/372247
+  - button "Add option"
+  - link "View all":
+    - /url: /en-sa/stores/127604/services/logistics/local-delivery
+  - heading "Pickup in store" [level=6]
+  - alert:
+    - text: Pickup in Store settings relocated
+    - paragraph:
+      - text: "\"Pickup in Store\" settings have been moved to the"
+      - link "inventories":
+        - /url: /en-sa/stores/127604/catalog/inventories
+      - text: page. Please navigate there to make any adjustments.
+  - heading "Shipments" [level=6]
+  - table:
+    - rowgroup:
+      - row "Order number Customer Tracking number Destination city Short address Shipping cost Currency Shipment weight Unit Pieces count Shipping method Status Created date Updated date":
+        - columnheader "Order number Customer"
+        - columnheader "Tracking number"
+        - columnheader "Destination city Short address"
+        - columnheader "Shipping cost Currency"
+        - columnheader "Shipment weight Unit"
+        - columnheader "Pieces count"
+        - columnheader "Shipping method"
+        - columnheader "Status"
+        - columnheader "Created date Updated date"
+        - columnheader
+  - img
+  - heading "No shipments yet" [level=6]
+  - heading "Inventory" [level=6]
+  - paragraph: Select a Ship-from Inventory Location to load shipping methods.
+  - text: Inventory
+  - combobox "Inventory"
+  - heading "Other shipping providers" [level=6]
+  - paragraph: Explore integrations with alternative fulfillment and shipping providers.
+  - link "Browse":
+    - /url: /en-sa/stores/127604/services/logistics/integrations
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img
+- alert:
+  - alert:
+    - text: This action is not allowed on demo store
+    - button "Close"

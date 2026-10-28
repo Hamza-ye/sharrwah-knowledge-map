@@ -1,0 +1,118 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "All analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Reports New":
+    - /url: /en-sa/stores/127604/analytics/customizable-reports
+  - link "Zid Insights New":
+    - /url: /en-sa/stores/127604/analytics/insights
+  - link "Live analytics":
+    - /url: /en-sa/stores/127604/analytics/live
+  - link "Sales reports":
+    - /url: /en-sa/stores/127604/analytics/reports/sales
+  - link "Inventory reports":
+    - /url: /en-sa/stores/127604/analytics/reports/inventory
+  - link "Customers reports":
+    - /url: /en-sa/stores/127604/analytics/reports/customers
+  - link "Financial":
+    - /url: /en-sa/stores/127604/analytics/financial
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/analytics/marketing
+  - link "Operational":
+    - /url: /en-sa/stores/127604/analytics/operational
+  - link "Products":
+    - /url: /en-sa/stores/127604/analytics/products
+  - link "Payments":
+    - /url: /en-sa/stores/127604/analytics/payments
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/analytics/logistics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - heading "Inventory reports" [level=5]
+  - paragraph: Overview of stock availability, inventory value, and storage locations (last updated October 28, 2026 07:00 PM)
+  - textbox "Search"
+  - button
+  - button
+  - table:
+    - rowgroup:
+      - row "Product Location/inventory Inventory on hand Current inventory value (VAT excl.) Currency Current inventory cost Minimum stock level Maximum stock level Average cost price per product Currency Discounts applied (VAT excl.) Currency Retail price per product (vat excl.) Currency Unit of measure Units sold Sales revenue (VAT excl.) Average selling price (vat excl.) Currency Inventory turnover ratio Days sales in inventory Interested customers (out of stock) Gross margin Currency Return rate":
+        - columnheader "Product"
+        - columnheader "Location/inventory"
+        - columnheader "Inventory on hand"
+        - columnheader "Current inventory value (VAT excl.) Currency"
+        - columnheader "Current inventory cost"
+        - columnheader "Minimum stock level"
+        - columnheader "Maximum stock level"
+        - columnheader "Average cost price per product Currency"
+        - columnheader "Discounts applied (VAT excl.) Currency"
+        - columnheader "Retail price per product (vat excl.) Currency"
+        - columnheader "Unit of measure"
+        - columnheader "Units sold"
+        - columnheader "Sales revenue (VAT excl.)"
+        - columnheader "Average selling price (vat excl.) Currency"
+        - columnheader "Inventory turnover ratio"
+        - columnheader "Days sales in inventory"
+        - columnheader "Interested customers (out of stock)"
+        - columnheader "Gross margin Currency"
+        - columnheader "Return rate"
+  - heading "Nothing to show here yet" [level=6]
+  - text: "Rows per page:"
+  - combobox "25"
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

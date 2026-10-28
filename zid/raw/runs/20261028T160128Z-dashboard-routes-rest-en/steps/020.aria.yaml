@@ -1,0 +1,14 @@
+- dialog "Allow Marketplaces to Manage Inventories":
+  - heading "Allow Marketplaces to Manage Inventories" [level=2]
+  - paragraph: This is inventory management and changes to the way you sync the product will change the product in Amazon based on the configuration you set here. We advice that you check on the following video that explains in detail how the inventory management works.
+  - paragraph: We advice that you check on the following video that explains in detail how the inventory management works.
+  - checkbox "Inventory management explained"
+  - link "Inventory management explained":
+    - /url: https://drive.google.com/file/d/1V0Eer8xyEcpFqOPISMAx_jn6MLcLtsdb/view?usp=sharing
+  - checkbox "How to avoid unwanted updates of inventory in the Marketplace"
+  - link "How to avoid unwanted updates of inventory in the Marketplace":
+    - /url: https://drive.google.com/file/d/1V0Eer8xyEcpFqOPISMAx_jn6MLcLtsdb/view?usp=sharing
+  - checkbox "I have completed watching the videos and accept the Terms and Conditions"
+  - paragraph: I have completed watching the videos and accept the Terms and Conditions
+  - button "Cancel"
+  - button "Confirm" [disabled]

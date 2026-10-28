@@ -1,0 +1,140 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "All analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Reports New":
+    - /url: /en-sa/stores/127604/analytics/customizable-reports
+  - link "Zid Insights New":
+    - /url: /en-sa/stores/127604/analytics/insights
+  - link "Live analytics":
+    - /url: /en-sa/stores/127604/analytics/live
+  - link "Sales reports":
+    - /url: /en-sa/stores/127604/analytics/reports/sales
+  - link "Inventory reports":
+    - /url: /en-sa/stores/127604/analytics/reports/inventory
+  - link "Customers reports":
+    - /url: /en-sa/stores/127604/analytics/reports/customers
+  - link "Financial":
+    - /url: /en-sa/stores/127604/analytics/financial
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/analytics/marketing
+  - link "Operational":
+    - /url: /en-sa/stores/127604/analytics/operational
+  - link "Products":
+    - /url: /en-sa/stores/127604/analytics/products
+  - link "Payments":
+    - /url: /en-sa/stores/127604/analytics/payments
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/analytics/logistics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - heading "Logistics analytics" [level=5]
+  - button "Export"
+  - text: Last 90 days
+  - textbox: 30 Jul - 28 Oct, 2026
+  - heading "Shipments" [level=6]
+  - paragraph: last updated 26 minutes ago
+  - paragraph: Total
+  - paragraph: "0"
+  - paragraph: Delivered
+  - paragraph: "0"
+  - paragraph: In progress
+  - paragraph: "0"
+  - paragraph: Created
+  - paragraph: "0"
+  - paragraph: Cancelled
+  - paragraph: "0"
+  - paragraph: Failed
+  - paragraph: "0"
+  - paragraph: Lost
+  - paragraph: "0"
+  - paragraph: Damaged
+  - paragraph: "0"
+  - paragraph: Delayed
+  - paragraph: "0"
+  - paragraph: Delayed pickup
+  - paragraph: "0"
+  - heading "Performance" [level=6]
+  - paragraph: last updated a few seconds ago
+  - paragraph: Total successful delivery rate
+  - paragraph: 0 (%)
+  - paragraph: Online payment delivery success rate
+  - paragraph: 0 (%)
+  - paragraph: Cash on delivery (COD) success rate
+  - paragraph: 0 (%)
+  - paragraph: Overall customer satisfaction (CSAT)
+  - paragraph: 0 (%)
+  - paragraph: Best customer satisfaction level (CSAT)
+  - paragraph: 0 Service level
+  - paragraph: Worst customer satisfaction level (CSAT)
+  - paragraph: 0 Service level
+  - paragraph: Average delivery time
+  - paragraph: 0 Time (hours)
+  - paragraph: Average pickup time
+  - paragraph: 0 Time (hours)
+  - heading "Payments" [level=6]
+  - paragraph: last updated 26 minutes ago
+  - paragraph: Total COD payments collected
+  - paragraph:  0
+  - paragraph: Pending COD payments
+  - paragraph:  0
+  - paragraph: Next COD payment transfer date
+  - paragraph: 2026-10-28
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

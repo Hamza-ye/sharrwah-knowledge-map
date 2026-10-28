@@ -1,0 +1,835 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "All orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Manual orders":
+    - /url: /en-sa/stores/127604/orders/drafts
+  - link "Abandoned carts":
+    - /url: /en-sa/stores/127604/orders/abandoned-carts
+  - link "Zid Voice New 🔥":
+    - /url: /en-sa/stores/127604/apps/7906/embedded
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - heading "Abandoned carts" [level=5]
+  - paragraph: Track and recover abandoned shopping carts to boost your sales conversion
+  - button "Export"
+  - link "Manage reminders":
+    - /url: /en-sa/stores/127604/settings/communications/abandoned-carts
+  - heading "Analytics" [level=6]
+  - text: Presets
+  - textbox: 23 Aug, 2021 - 28 Oct, 2026
+  - paragraph: Total value of all abandoned carts
+  - paragraph: 306 carts/ 307,345.01
+  - paragraph: Total value of carts that have been converted into orders
+  - paragraph:  8,195.13
+  - paragraph: Payback % from carts converted into orders
+  - paragraph: 2.6%
+  - alert:
+    - text: Reclaim your abandoned carts
+    - paragraph: Motivate your customers to complete their purchase process with manual and automated reminders
+    - link "Manage reminders":
+      - /url: /en-sa/stores/127604/settings/communications/abandoned-carts
+  - tablist:
+    - tab "Abandoned carts" [selected]
+    - tab "Carts converted into orders"
+  - separator
+  - textbox "Search"
+  - button
+  - button
+  - table:
+    - rowgroup:
+      - row "Customer name Customer phone Cart price Products count Phase Created date Updated date":
+        - columnheader:
+          - checkbox
+        - columnheader "Customer name": Customer name Email
+        - columnheader "Customer phone"
+        - columnheader "Cart price": Cart price Currency
+        - columnheader "Products count"
+        - columnheader "Phase"
+        - columnheader "Created date"
+        - columnheader "Updated date"
+        - columnheader
+    - rowgroup:
+      - row "محمد test@test.com +201111004397 100  1 Payment method 2025-12-10 2025-12-10 Send reminder View":
+        - cell:
+          - checkbox
+        - cell "محمد test@test.com":
+          - link "محمد test@test.com":
+            - /url: /en-sa/stores/127604/customers/6096792
+        - cell "+201111004397":
+          - link "+201111004397":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/bf470d3b-9937-4c16-86d2-acf0316296f8
+        - cell "100 ":
+          - link "100 ":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/bf470d3b-9937-4c16-86d2-acf0316296f8
+        - cell "1":
+          - link "1":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/bf470d3b-9937-4c16-86d2-acf0316296f8
+        - cell "Payment method":
+          - link "Payment method":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/bf470d3b-9937-4c16-86d2-acf0316296f8
+        - cell "2025-12-10":
+          - link "2025-12-10":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/bf470d3b-9937-4c16-86d2-acf0316296f8
+        - cell "2025-12-10":
+          - link "2025-12-10":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/bf470d3b-9937-4c16-86d2-acf0316296f8
+        - cell "Send reminder View":
+          - button "Send reminder"
+          - link "View":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/bf470d3b-9937-4c16-86d2-acf0316296f8
+      - row "Ghkk chnnn@hjj.vom 971522565677 97.86 AED 1 Payment method 2025-12-08 2025-12-08 Send reminder View":
+        - cell:
+          - checkbox
+        - cell "Ghkk chnnn@hjj.vom":
+          - link "Ghkk chnnn@hjj.vom":
+            - /url: /en-sa/stores/127604/customers/16788952
+        - cell "971522565677":
+          - link "971522565677":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/c1145197-3810-4f18-a5e9-7efc2029ed08
+        - cell "97.86 AED":
+          - link "97.86 AED":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/c1145197-3810-4f18-a5e9-7efc2029ed08
+        - cell "1":
+          - link "1":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/c1145197-3810-4f18-a5e9-7efc2029ed08
+        - cell "Payment method":
+          - link "Payment method":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/c1145197-3810-4f18-a5e9-7efc2029ed08
+        - cell "2025-12-08":
+          - link "2025-12-08":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/c1145197-3810-4f18-a5e9-7efc2029ed08
+        - cell "2025-12-08":
+          - link "2025-12-08":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/c1145197-3810-4f18-a5e9-7efc2029ed08
+        - cell "Send reminder View":
+          - button "Send reminder"
+          - link "View":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/c1145197-3810-4f18-a5e9-7efc2029ed08
+      - row "احمد شراح adsharrah@gmail.com 966535761948 100  1 Payment method 2025-10-15 2025-10-15 Send reminder View":
+        - cell:
+          - checkbox
+        - cell "احمد شراح adsharrah@gmail.com":
+          - link "احمد شراح adsharrah@gmail.com":
+            - /url: /en-sa/stores/127604/customers/6462463
+        - cell "966535761948":
+          - link "966535761948":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/3ebd61b6-49d6-4bcc-a8d6-0b5e65638a23
+        - cell "100 ":
+          - link "100 ":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/3ebd61b6-49d6-4bcc-a8d6-0b5e65638a23
+        - cell "1":
+          - link "1":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/3ebd61b6-49d6-4bcc-a8d6-0b5e65638a23
+        - cell "Payment method":
+          - link "Payment method":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/3ebd61b6-49d6-4bcc-a8d6-0b5e65638a23
+        - cell "2025-10-15":
+          - link "2025-10-15":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/3ebd61b6-49d6-4bcc-a8d6-0b5e65638a23
+        - cell "2025-10-15":
+          - link "2025-10-15":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/3ebd61b6-49d6-4bcc-a8d6-0b5e65638a23
+        - cell "Send reminder View":
+          - button "Send reminder"
+          - link "View":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/3ebd61b6-49d6-4bcc-a8d6-0b5e65638a23
+      - row "رفعه محمد البيشي ms0502566675@gmail.com 966502566675 300  1 New 2025-10-07 2025-10-08 Send reminder View":
+        - cell:
+          - checkbox
+        - cell "رفعه محمد البيشي ms0502566675@gmail.com":
+          - link "رفعه محمد البيشي ms0502566675@gmail.com":
+            - /url: /en-sa/stores/127604/customers/16440872
+        - cell "966502566675":
+          - link "966502566675":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/92c4145b-874d-45f3-bbaf-8d3c10b37e2a
+        - cell "300 ":
+          - link "300 ":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/92c4145b-874d-45f3-bbaf-8d3c10b37e2a
+        - cell "1":
+          - link "1":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/92c4145b-874d-45f3-bbaf-8d3c10b37e2a
+        - cell "New":
+          - link "New":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/92c4145b-874d-45f3-bbaf-8d3c10b37e2a
+        - cell "2025-10-07":
+          - link "2025-10-07":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/92c4145b-874d-45f3-bbaf-8d3c10b37e2a
+        - cell "2025-10-08":
+          - link "2025-10-08":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/92c4145b-874d-45f3-bbaf-8d3c10b37e2a
+        - cell "Send reminder View":
+          - button "Send reminder"
+          - link "View":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/92c4145b-874d-45f3-bbaf-8d3c10b37e2a
+      - row "علي الشمري new1ali@icloud.com 96599521252 16.298 KWD 1 New 2025-09-27 2025-09-28 Send reminder View":
+        - cell:
+          - checkbox
+        - cell "علي الشمري new1ali@icloud.com":
+          - link "علي الشمري new1ali@icloud.com":
+            - /url: /en-sa/stores/127604/customers/14802702
+        - cell "96599521252":
+          - link "96599521252":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/79304104-91aa-4a1c-a638-7ef12fb68e64
+        - cell "16.298 KWD":
+          - link "16.298 KWD":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/79304104-91aa-4a1c-a638-7ef12fb68e64
+        - cell "1":
+          - link "1":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/79304104-91aa-4a1c-a638-7ef12fb68e64
+        - cell "New":
+          - link "New":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/79304104-91aa-4a1c-a638-7ef12fb68e64
+        - cell "2025-09-27":
+          - link "2025-09-27":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/79304104-91aa-4a1c-a638-7ef12fb68e64
+        - cell "2025-09-28":
+          - link "2025-09-28":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/79304104-91aa-4a1c-a638-7ef12fb68e64
+        - cell "Send reminder View":
+          - button "Send reminder"
+          - link "View":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/79304104-91aa-4a1c-a638-7ef12fb68e64
+      - row "حسن سعيد hassan.saeed.9@icloud.com 966562140738 0  1 Shipping address 2025-09-08 2025-09-08 Send reminder View":
+        - cell:
+          - checkbox
+        - cell "حسن سعيد hassan.saeed.9@icloud.com":
+          - link "حسن سعيد hassan.saeed.9@icloud.com":
+            - /url: /en-sa/stores/127604/customers/11651579
+        - cell "966562140738":
+          - link "966562140738":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/a9a2e082-2627-449b-8d3a-87ea9ec170d6
+        - cell "0 ":
+          - link "0 ":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/a9a2e082-2627-449b-8d3a-87ea9ec170d6
+        - cell "1":
+          - link "1":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/a9a2e082-2627-449b-8d3a-87ea9ec170d6
+        - cell "Shipping address":
+          - link "Shipping address":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/a9a2e082-2627-449b-8d3a-87ea9ec170d6
+        - cell "2025-09-08":
+          - link "2025-09-08":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/a9a2e082-2627-449b-8d3a-87ea9ec170d6
+        - cell "2025-09-08":
+          - link "2025-09-08":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/a9a2e082-2627-449b-8d3a-87ea9ec170d6
+        - cell "Send reminder View":
+          - button "Send reminder"
+          - link "View":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/a9a2e082-2627-449b-8d3a-87ea9ec170d6
+      - row "Customer 966591185021 243  1 Order confirmation 2025-08-17 2025-08-17 Send reminder View":
+        - cell:
+          - checkbox
+        - cell "Customer":
+          - link "Customer":
+            - /url: /en-sa/stores/127604/customers/15440167
+        - cell "966591185021":
+          - link "966591185021":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/1fd27fc6-b477-4f9d-bbce-b6f6f72be0e9
+        - cell "243 ":
+          - link "243 ":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/1fd27fc6-b477-4f9d-bbce-b6f6f72be0e9
+        - cell "1":
+          - link "1":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/1fd27fc6-b477-4f9d-bbce-b6f6f72be0e9
+        - cell "Order confirmation":
+          - link "Order confirmation":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/1fd27fc6-b477-4f9d-bbce-b6f6f72be0e9
+        - cell "2025-08-17":
+          - link "2025-08-17":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/1fd27fc6-b477-4f9d-bbce-b6f6f72be0e9
+        - cell "2025-08-17":
+          - link "2025-08-17":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/1fd27fc6-b477-4f9d-bbce-b6f6f72be0e9
+        - cell "Send reminder View":
+          - button "Send reminder"
+          - link "View":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/1fd27fc6-b477-4f9d-bbce-b6f6f72be0e9
+      - row "ahsan khalid ahsan6775676@gmail.com +923162297994 74.27  1 Shipping address 2025-07-21 2025-07-21 Send reminder View":
+        - cell:
+          - checkbox
+        - cell "ahsan khalid ahsan6775676@gmail.com":
+          - link "ahsan khalid ahsan6775676@gmail.com":
+            - /url: /en-sa/stores/127604/customers/15865384
+        - cell "+923162297994":
+          - link "+923162297994":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/200f080b-2a1c-4d1d-9494-1bc36ea4070f
+        - cell "74.27 ":
+          - link "74.27 ":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/200f080b-2a1c-4d1d-9494-1bc36ea4070f
+        - cell "1":
+          - link "1":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/200f080b-2a1c-4d1d-9494-1bc36ea4070f
+        - cell "Shipping address":
+          - link "Shipping address":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/200f080b-2a1c-4d1d-9494-1bc36ea4070f
+        - cell "2025-07-21":
+          - link "2025-07-21":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/200f080b-2a1c-4d1d-9494-1bc36ea4070f
+        - cell "2025-07-21":
+          - link "2025-07-21":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/200f080b-2a1c-4d1d-9494-1bc36ea4070f
+        - cell "Send reminder View":
+          - button "Send reminder"
+          - link "View":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/200f080b-2a1c-4d1d-9494-1bc36ea4070f
+      - row "ماهر الجهني anconda1020@gmail.com 966555362563 100  1 Shipping address 2025-07-19 2025-07-19 Send reminder View":
+        - cell:
+          - checkbox
+        - cell "ماهر الجهني anconda1020@gmail.com":
+          - link "ماهر الجهني anconda1020@gmail.com":
+            - /url: /en-sa/stores/127604/customers/3371241
+        - cell "966555362563":
+          - link "966555362563":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/28f42f85-e78c-4cbd-9fc4-2e0d5bbba8c1
+        - cell "100 ":
+          - link "100 ":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/28f42f85-e78c-4cbd-9fc4-2e0d5bbba8c1
+        - cell "1":
+          - link "1":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/28f42f85-e78c-4cbd-9fc4-2e0d5bbba8c1
+        - cell "Shipping address":
+          - link "Shipping address":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/28f42f85-e78c-4cbd-9fc4-2e0d5bbba8c1
+        - cell "2025-07-19":
+          - link "2025-07-19":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/28f42f85-e78c-4cbd-9fc4-2e0d5bbba8c1
+        - cell "2025-07-19":
+          - link "2025-07-19":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/28f42f85-e78c-4cbd-9fc4-2e0d5bbba8c1
+        - cell "Send reminder View":
+          - button "Send reminder"
+          - link "View":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/28f42f85-e78c-4cbd-9fc4-2e0d5bbba8c1
+      - row "اصيل السلطان asilalsoltan5@gmail.com 966536122293 200  1 Shipping address 2025-07-16 2025-07-16 Send reminder View":
+        - cell:
+          - checkbox
+        - cell "اصيل السلطان asilalsoltan5@gmail.com":
+          - link "اصيل السلطان asilalsoltan5@gmail.com":
+            - /url: /en-sa/stores/127604/customers/15845044
+        - cell "966536122293":
+          - link "966536122293":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/d39bfd8b-83dd-4efa-8373-493908522c95
+        - cell "200 ":
+          - link "200 ":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/d39bfd8b-83dd-4efa-8373-493908522c95
+        - cell "1":
+          - link "1":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/d39bfd8b-83dd-4efa-8373-493908522c95
+        - cell "Shipping address":
+          - link "Shipping address":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/d39bfd8b-83dd-4efa-8373-493908522c95
+        - cell "2025-07-16":
+          - link "2025-07-16":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/d39bfd8b-83dd-4efa-8373-493908522c95
+        - cell "2025-07-16":
+          - link "2025-07-16":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/d39bfd8b-83dd-4efa-8373-493908522c95
+        - cell "Send reminder View":
+          - button "Send reminder"
+          - link "View":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/d39bfd8b-83dd-4efa-8373-493908522c95
+      - row "Harith Alissa almohmmad harithalissa@gmail.com +31685764961 100  1 Shipping address 2025-06-28 2025-06-28 Send reminder View":
+        - cell:
+          - checkbox
+        - cell "Harith Alissa almohmmad harithalissa@gmail.com":
+          - link "Harith Alissa almohmmad harithalissa@gmail.com":
+            - /url: /en-sa/stores/127604/customers/15755816
+        - cell "+31685764961":
+          - link "+31685764961":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/7c66984b-92f1-4f62-88bd-39f7914cc7ff
+        - cell "100 ":
+          - link "100 ":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/7c66984b-92f1-4f62-88bd-39f7914cc7ff
+        - cell "1":
+          - link "1":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/7c66984b-92f1-4f62-88bd-39f7914cc7ff
+        - cell "Shipping address":
+          - link "Shipping address":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/7c66984b-92f1-4f62-88bd-39f7914cc7ff
+        - cell "2025-06-28":
+          - link "2025-06-28":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/7c66984b-92f1-4f62-88bd-39f7914cc7ff
+        - cell "2025-06-28":
+          - link "2025-06-28":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/7c66984b-92f1-4f62-88bd-39f7914cc7ff
+        - cell "Send reminder View":
+          - button "Send reminder"
+          - link "View":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/7c66984b-92f1-4f62-88bd-39f7914cc7ff
+      - row "الأناقة bsamalmarwsi123@gmail.com +967772913814 14.93  1 Shipping address 2025-06-26 2025-06-26 Send reminder View":
+        - cell:
+          - checkbox
+        - cell "الأناقة bsamalmarwsi123@gmail.com":
+          - link "الأناقة bsamalmarwsi123@gmail.com":
+            - /url: /en-sa/stores/127604/customers/15737984
+        - cell "+967772913814":
+          - link "+967772913814":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/31ee4960-0400-469d-9f43-62b0c041df51
+        - cell "14.93 ":
+          - link "14.93 ":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/31ee4960-0400-469d-9f43-62b0c041df51
+        - cell "1":
+          - link "1":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/31ee4960-0400-469d-9f43-62b0c041df51
+        - cell "Shipping address":
+          - link "Shipping address":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/31ee4960-0400-469d-9f43-62b0c041df51
+        - cell "2025-06-26":
+          - link "2025-06-26":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/31ee4960-0400-469d-9f43-62b0c041df51
+        - cell "2025-06-26":
+          - link "2025-06-26":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/31ee4960-0400-469d-9f43-62b0c041df51
+        - cell "Send reminder View":
+          - button "Send reminder"
+          - link "View":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/31ee4960-0400-469d-9f43-62b0c041df51
+      - row "ماهر mahe9r@gmail.com 966502560095 99.27  1 Payment method 2025-05-26 2025-05-27 Send reminder View":
+        - cell:
+          - checkbox
+        - cell "ماهر mahe9r@gmail.com":
+          - link "ماهر mahe9r@gmail.com":
+            - /url: /en-sa/stores/127604/customers/527206
+        - cell "966502560095":
+          - link "966502560095":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/812e2c52-12ea-41dd-b63a-cdd73aa6ab37
+        - cell "99.27 ":
+          - link "99.27 ":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/812e2c52-12ea-41dd-b63a-cdd73aa6ab37
+        - cell "1":
+          - link "1":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/812e2c52-12ea-41dd-b63a-cdd73aa6ab37
+        - cell "Payment method":
+          - link "Payment method":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/812e2c52-12ea-41dd-b63a-cdd73aa6ab37
+        - cell "2025-05-26":
+          - link "2025-05-26":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/812e2c52-12ea-41dd-b63a-cdd73aa6ab37
+        - cell "2025-05-27":
+          - link "2025-05-27":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/812e2c52-12ea-41dd-b63a-cdd73aa6ab37
+        - cell "Send reminder View":
+          - button "Send reminder"
+          - link "View":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/812e2c52-12ea-41dd-b63a-cdd73aa6ab37
+      - row "عصام الشرعبي esam2020s76@gmail.com 966509939238 100  1 Shipping address 2025-05-26 2025-05-26 Send reminder View":
+        - cell:
+          - checkbox
+        - cell "عصام الشرعبي esam2020s76@gmail.com":
+          - link "عصام الشرعبي esam2020s76@gmail.com":
+            - /url: /en-sa/stores/127604/customers/3449544
+        - cell "966509939238":
+          - link "966509939238":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/dc57d6f2-472c-4c7a-81f6-ab06a172aecb
+        - cell "100 ":
+          - link "100 ":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/dc57d6f2-472c-4c7a-81f6-ab06a172aecb
+        - cell "1":
+          - link "1":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/dc57d6f2-472c-4c7a-81f6-ab06a172aecb
+        - cell "Shipping address":
+          - link "Shipping address":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/dc57d6f2-472c-4c7a-81f6-ab06a172aecb
+        - cell "2025-05-26":
+          - link "2025-05-26":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/dc57d6f2-472c-4c7a-81f6-ab06a172aecb
+        - cell "2025-05-26":
+          - link "2025-05-26":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/dc57d6f2-472c-4c7a-81f6-ab06a172aecb
+        - cell "Send reminder View":
+          - button "Send reminder"
+          - link "View":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/dc57d6f2-472c-4c7a-81f6-ab06a172aecb
+      - row "محمد هلال سلمان mohammedhilal@outlook.com 97336455499 114.12 BHD 1 Payment method 2025-05-19 2025-05-19 Send reminder View":
+        - cell:
+          - checkbox
+        - cell "محمد هلال سلمان mohammedhilal@outlook.com":
+          - link "محمد هلال سلمان mohammedhilal@outlook.com":
+            - /url: /en-sa/stores/127604/customers/4844746
+        - cell "97336455499":
+          - link "97336455499":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/17dffcb0-2b44-45ef-af11-92d3de04a384
+        - cell "114.12 BHD":
+          - link "114.12 BHD":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/17dffcb0-2b44-45ef-af11-92d3de04a384
+        - cell "1":
+          - link "1":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/17dffcb0-2b44-45ef-af11-92d3de04a384
+        - cell "Payment method":
+          - link "Payment method":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/17dffcb0-2b44-45ef-af11-92d3de04a384
+        - cell "2025-05-19":
+          - link "2025-05-19":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/17dffcb0-2b44-45ef-af11-92d3de04a384
+        - cell "2025-05-19":
+          - link "2025-05-19":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/17dffcb0-2b44-45ef-af11-92d3de04a384
+        - cell "Send reminder View":
+          - button "Send reminder"
+          - link "View":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/17dffcb0-2b44-45ef-af11-92d3de04a384
+      - row "Rana ranaeasa07@gmail.com 966559565410 223  2 Payment method 2025-05-12 2025-05-12 Send reminder View":
+        - cell:
+          - checkbox
+        - cell "Rana ranaeasa07@gmail.com":
+          - link "Rana ranaeasa07@gmail.com":
+            - /url: /en-sa/stores/127604/customers/12339385
+        - cell "966559565410":
+          - link "966559565410":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/4ffd3d03-e562-4ee4-ab59-f9b0d8fc2e27
+        - cell "223 ":
+          - link "223 ":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/4ffd3d03-e562-4ee4-ab59-f9b0d8fc2e27
+        - cell "2":
+          - link "2":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/4ffd3d03-e562-4ee4-ab59-f9b0d8fc2e27
+        - cell "Payment method":
+          - link "Payment method":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/4ffd3d03-e562-4ee4-ab59-f9b0d8fc2e27
+        - cell "2025-05-12":
+          - link "2025-05-12":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/4ffd3d03-e562-4ee4-ab59-f9b0d8fc2e27
+        - cell "2025-05-12":
+          - link "2025-05-12":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/4ffd3d03-e562-4ee4-ab59-f9b0d8fc2e27
+        - cell "Send reminder View":
+          - button "Send reminder"
+          - link "View":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/4ffd3d03-e562-4ee4-ab59-f9b0d8fc2e27
+      - row "محمد بكري mohammed@bahamdoon.com 966552995040 100  1 Shipping address 2025-04-29 2025-04-29 Send reminder View":
+        - cell:
+          - checkbox
+        - cell "محمد بكري mohammed@bahamdoon.com":
+          - link "محمد بكري mohammed@bahamdoon.com":
+            - /url: /en-sa/stores/127604/customers/15378534
+        - cell "966552995040":
+          - link "966552995040":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/8b487015-d857-4996-84ba-68fd25e8eca2
+        - cell "100 ":
+          - link "100 ":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/8b487015-d857-4996-84ba-68fd25e8eca2
+        - cell "1":
+          - link "1":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/8b487015-d857-4996-84ba-68fd25e8eca2
+        - cell "Shipping address":
+          - link "Shipping address":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/8b487015-d857-4996-84ba-68fd25e8eca2
+        - cell "2025-04-29":
+          - link "2025-04-29":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/8b487015-d857-4996-84ba-68fd25e8eca2
+        - cell "2025-04-29":
+          - link "2025-04-29":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/8b487015-d857-4996-84ba-68fd25e8eca2
+        - cell "Send reminder View":
+          - button "Send reminder"
+          - link "View":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/8b487015-d857-4996-84ba-68fd25e8eca2
+      - row "صالح الشهري sss900aaa1l7@gmail.com 966559008671 100  1 Shipping address 2025-04-28 2025-04-28 Send reminder View":
+        - cell:
+          - checkbox
+        - cell "صالح الشهري sss900aaa1l7@gmail.com":
+          - link "صالح الشهري sss900aaa1l7@gmail.com":
+            - /url: /en-sa/stores/127604/customers/1657149
+        - cell "966559008671":
+          - link "966559008671":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/132ff0e3-5a2d-49b3-bc4c-71c8f7f2bfff
+        - cell "100 ":
+          - link "100 ":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/132ff0e3-5a2d-49b3-bc4c-71c8f7f2bfff
+        - cell "1":
+          - link "1":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/132ff0e3-5a2d-49b3-bc4c-71c8f7f2bfff
+        - cell "Shipping address":
+          - link "Shipping address":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/132ff0e3-5a2d-49b3-bc4c-71c8f7f2bfff
+        - cell "2025-04-28":
+          - link "2025-04-28":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/132ff0e3-5a2d-49b3-bc4c-71c8f7f2bfff
+        - cell "2025-04-28":
+          - link "2025-04-28":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/132ff0e3-5a2d-49b3-bc4c-71c8f7f2bfff
+        - cell "Send reminder View":
+          - button "Send reminder"
+          - link "View":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/132ff0e3-5a2d-49b3-bc4c-71c8f7f2bfff
+      - row "Mahid Lucman lucmanm@icloud.com 966552449592 500  1 Shipping address 2025-04-23 2025-04-23 Send reminder View":
+        - cell:
+          - checkbox
+        - cell "Mahid Lucman lucmanm@icloud.com":
+          - link "Mahid Lucman lucmanm@icloud.com":
+            - /url: /en-sa/stores/127604/customers/15352790
+        - cell "966552449592":
+          - link "966552449592":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/a87f17ea-1c0a-4b00-9dbe-24c61e1eefc1
+        - cell "500 ":
+          - link "500 ":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/a87f17ea-1c0a-4b00-9dbe-24c61e1eefc1
+        - cell "1":
+          - link "1":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/a87f17ea-1c0a-4b00-9dbe-24c61e1eefc1
+        - cell "Shipping address":
+          - link "Shipping address":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/a87f17ea-1c0a-4b00-9dbe-24c61e1eefc1
+        - cell "2025-04-23":
+          - link "2025-04-23":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/a87f17ea-1c0a-4b00-9dbe-24c61e1eefc1
+        - cell "2025-04-23":
+          - link "2025-04-23":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/a87f17ea-1c0a-4b00-9dbe-24c61e1eefc1
+        - cell "Send reminder View":
+          - button "Send reminder"
+          - link "View":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/a87f17ea-1c0a-4b00-9dbe-24c61e1eefc1
+      - row "Mahid Lucman lucmanm@compu-tech.com.sa 966562617554 100  1 Shipping address 2025-04-23 2025-04-24 Send reminder View":
+        - cell:
+          - checkbox
+        - cell "Mahid Lucman lucmanm@compu-tech.com.sa":
+          - link "Mahid Lucman lucmanm@compu-tech.com.sa":
+            - /url: /en-sa/stores/127604/customers/15352768
+        - cell "966562617554":
+          - link "966562617554":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/18760407-3a79-4f8a-827d-f1853b340c2c
+        - cell "100 ":
+          - link "100 ":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/18760407-3a79-4f8a-827d-f1853b340c2c
+        - cell "1":
+          - link "1":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/18760407-3a79-4f8a-827d-f1853b340c2c
+        - cell "Shipping address":
+          - link "Shipping address":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/18760407-3a79-4f8a-827d-f1853b340c2c
+        - cell "2025-04-23":
+          - link "2025-04-23":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/18760407-3a79-4f8a-827d-f1853b340c2c
+        - cell "2025-04-24":
+          - link "2025-04-24":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/18760407-3a79-4f8a-827d-f1853b340c2c
+        - cell "Send reminder View":
+          - button "Send reminder"
+          - link "View":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/18760407-3a79-4f8a-827d-f1853b340c2c
+      - row "ياسين ابراهيم yassinealo12@gmail.com 966581505432 211.16  1 Order confirmation 2025-04-16 2025-04-18 Send reminder View":
+        - cell:
+          - checkbox
+        - cell "ياسين ابراهيم yassinealo12@gmail.com":
+          - link "ياسين ابراهيم yassinealo12@gmail.com":
+            - /url: /en-sa/stores/127604/customers/15327603
+        - cell "966581505432":
+          - link "966581505432":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/13832ce8-5554-48e5-a19d-d99acf0c8102
+        - cell "211.16 ":
+          - link "211.16 ":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/13832ce8-5554-48e5-a19d-d99acf0c8102
+        - cell "1":
+          - link "1":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/13832ce8-5554-48e5-a19d-d99acf0c8102
+        - cell "Order confirmation":
+          - link "Order confirmation":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/13832ce8-5554-48e5-a19d-d99acf0c8102
+        - cell "2025-04-16":
+          - link "2025-04-16":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/13832ce8-5554-48e5-a19d-d99acf0c8102
+        - cell "2025-04-18":
+          - link "2025-04-18":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/13832ce8-5554-48e5-a19d-d99acf0c8102
+        - cell "Send reminder View":
+          - button "Send reminder"
+          - link "View":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/13832ce8-5554-48e5-a19d-d99acf0c8102
+      - row "فهد راني الدايل nnosh7810@gmail.com 966569521453 670.48  2 New 2025-04-13 2025-04-18 Send reminder View":
+        - cell:
+          - checkbox
+        - cell "فهد راني الدايل nnosh7810@gmail.com":
+          - link "فهد راني الدايل nnosh7810@gmail.com":
+            - /url: /en-sa/stores/127604/customers/15103674
+        - cell "966569521453":
+          - link "966569521453":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/95f3b8ba-89a3-4a4c-acdc-505093bdb3bc
+        - cell "670.48 ":
+          - link "670.48 ":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/95f3b8ba-89a3-4a4c-acdc-505093bdb3bc
+        - cell "2":
+          - link "2":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/95f3b8ba-89a3-4a4c-acdc-505093bdb3bc
+        - cell "New":
+          - link "New":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/95f3b8ba-89a3-4a4c-acdc-505093bdb3bc
+        - cell "2025-04-13":
+          - link "2025-04-13":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/95f3b8ba-89a3-4a4c-acdc-505093bdb3bc
+        - cell "2025-04-18":
+          - link "2025-04-18":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/95f3b8ba-89a3-4a4c-acdc-505093bdb3bc
+        - cell "Send reminder View":
+          - button "Send reminder"
+          - link "View":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/95f3b8ba-89a3-4a4c-acdc-505093bdb3bc
+      - row "ahmed ali mido1978@gmail.com +201145096437 35.93  1 Payment method 2025-03-13 2025-04-18 Send reminder View":
+        - cell:
+          - checkbox
+        - cell "ahmed ali mido1978@gmail.com":
+          - link "ahmed ali mido1978@gmail.com":
+            - /url: /en-sa/stores/127604/customers/15063179
+        - cell "+201145096437":
+          - link "+201145096437":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/ba466a62-a3f8-4def-a623-e76b724e9058
+        - cell "35.93 ":
+          - link "35.93 ":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/ba466a62-a3f8-4def-a623-e76b724e9058
+        - cell "1":
+          - link "1":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/ba466a62-a3f8-4def-a623-e76b724e9058
+        - cell "Payment method":
+          - link "Payment method":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/ba466a62-a3f8-4def-a623-e76b724e9058
+        - cell "2025-03-13":
+          - link "2025-03-13":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/ba466a62-a3f8-4def-a623-e76b724e9058
+        - cell "2025-04-18":
+          - link "2025-04-18":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/ba466a62-a3f8-4def-a623-e76b724e9058
+        - cell "Send reminder View":
+          - button "Send reminder"
+          - link "View":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/ba466a62-a3f8-4def-a623-e76b724e9058
+      - row "Shakir Mahmood +9647701088892 300  2 Shipping address 2025-03-05 2025-04-19 Send reminder View":
+        - cell:
+          - checkbox
+        - cell "Shakir Mahmood":
+          - link "Shakir Mahmood":
+            - /url: /en-sa/stores/127604/customers/14699089
+        - cell "+9647701088892":
+          - link "+9647701088892":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/8791479e-3e09-42cf-896c-2d315775a810
+        - cell "300 ":
+          - link "300 ":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/8791479e-3e09-42cf-896c-2d315775a810
+        - cell "2":
+          - link "2":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/8791479e-3e09-42cf-896c-2d315775a810
+        - cell "Shipping address":
+          - link "Shipping address":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/8791479e-3e09-42cf-896c-2d315775a810
+        - cell "2025-03-05":
+          - link "2025-03-05":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/8791479e-3e09-42cf-896c-2d315775a810
+        - cell "2025-04-19":
+          - link "2025-04-19":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/8791479e-3e09-42cf-896c-2d315775a810
+        - cell "Send reminder View":
+          - button "Send reminder"
+          - link "View":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/8791479e-3e09-42cf-896c-2d315775a810
+      - row "عبدالله KSA.Jeddah.2036@gmail.com 966556649026 3.7  1 New 2025-02-19 2025-04-18 Send reminder View":
+        - cell:
+          - checkbox
+        - cell "عبدالله KSA.Jeddah.2036@gmail.com":
+          - link "عبدالله KSA.Jeddah.2036@gmail.com":
+            - /url: /en-sa/stores/127604/customers/14841144
+        - cell "966556649026":
+          - link "966556649026":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/300141b8-8a13-4132-a644-0eefc024a19f
+        - cell "3.7 ":
+          - link "3.7 ":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/300141b8-8a13-4132-a644-0eefc024a19f
+        - cell "1":
+          - link "1":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/300141b8-8a13-4132-a644-0eefc024a19f
+        - cell "New":
+          - link "New":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/300141b8-8a13-4132-a644-0eefc024a19f
+        - cell "2025-02-19":
+          - link "2025-02-19":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/300141b8-8a13-4132-a644-0eefc024a19f
+        - cell "2025-04-18":
+          - link "2025-04-18":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/300141b8-8a13-4132-a644-0eefc024a19f
+        - cell "Send reminder View":
+          - button "Send reminder"
+          - link "View":
+            - /url: /en-sa/stores/127604/orders/abandoned-carts/300141b8-8a13-4132-a644-0eefc024a19f
+  - text: "Rows per page:"
+  - combobox "25"
+  - navigation "pagination navigation":
+    - list:
+      - listitem:
+        - button "Go to first page" [disabled]
+      - listitem:
+        - button "Go to previous page" [disabled]
+      - listitem:
+        - button "page 1": "1"
+      - listitem:
+        - button "Go to page 2": "2"
+      - listitem:
+        - button "Go to page 3": "3"
+      - listitem:
+        - button "Go to page 4": "4"
+      - listitem:
+        - button "Go to page 5": "5"
+      - listitem: …
+      - listitem:
+        - button "Go to page 12": "12"
+      - listitem:
+        - button "Go to next page"
+      - listitem:
+        - button "Go to last page"
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

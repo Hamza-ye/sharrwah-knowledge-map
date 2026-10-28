@@ -1,0 +1,100 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+  - link "Marketplaces":
+    - /url: /en-sa/stores/127604/channels/marketplaces/connect/marketplaces
+  - link "Mobile app":
+    - /url: /en-sa/stores/127604/channels/mobile-app
+  - link "POS":
+    - /url: /en-sa/stores/127604/channels/pos
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - heading "Mazeed orders" [level=5]
+  - button "Export all transactions"
+  - tablist:
+    - tab "Products"
+    - tab "Orders"
+    - tab "Financial dues" [selected]
+    - tab "Settings"
+  - alert:
+    - text: Settlements moved to Zid Wallet
+    - paragraph: We've moved your settlements to Zid Wallet for a smoother and more convenient experience! Please note that older invoices won't be accessible anymore – but from now on, you can easily find all your new invoices right in Zid Wallet.
+    - link "View in Zid wallet":
+      - /url: /en-sa/stores/127604/finance/wallet
+  - paragraph: Current balance
+  - paragraph: SAR 0.00
+  - paragraph: Deposit in process
+  - paragraph: SAR 0.00
+  - paragraph: Last deposit
+  - paragraph: SAR 0.00
+  - heading "Latest transactions" [level=6]
+  - table:
+    - rowgroup:
+      - row "Transaction number Operation type Number of orders Total amount Process status Date":
+        - columnheader "Transaction number"
+        - columnheader "Operation type"
+        - columnheader "Number of orders"
+        - columnheader "Total amount": Total amount Currency
+        - columnheader "Process status"
+        - columnheader "Date"
+        - columnheader
+    - rowgroup:
+      - row "Nothing here yet 🫣":
+        - cell "Nothing here yet 🫣":
+          - img
+          - heading "Nothing here yet 🫣" [level=6]
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

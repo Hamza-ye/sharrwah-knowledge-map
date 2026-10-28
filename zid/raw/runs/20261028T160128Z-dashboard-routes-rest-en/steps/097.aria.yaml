@@ -1,0 +1,112 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Transactions":
+    - /url: /en-sa/stores/127604/services/payments/transactions
+  - link "Payment links":
+    - /url: /en-sa/stores/127604/services/payments/payment-links
+  - link "Payouts":
+    - /url: /en-sa/stores/127604/services/payments/payouts
+  - link "Bank accounts":
+    - /url: /en-sa/stores/127604/services/payments/bank-accounts
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - heading "Bank accounts" [level=5]
+  - button "Create"
+  - heading "All banks" [level=6]
+  - paragraph:
+    - paragraph: Enable bank transfer payment method
+    - text: You can customize each bank account by clicking on Edit.
+    - switch [checked]
+    - text: These bank accounts will appear as payment methods for customers on your store. Manage your payout bank account separately
+    - link "here":
+      - /url: /en-sa/stores/127604/services/payments/settings/bank-information
+    - text: .
+  - table:
+    - rowgroup:
+      - row "Bank Name Beneficiary Name Account No. IBAN Swift Visible at checkout":
+        - columnheader:
+          - checkbox
+        - columnheader "Bank Name"
+        - columnheader "Beneficiary Name"
+        - columnheader "Account No."
+        - columnheader "IBAN"
+        - columnheader "Swift"
+        - columnheader "Visible at checkout"
+        - columnheader
+    - rowgroup:
+      - row "Al Rajhi Bank Demo Store 000296608010756115 SA438000029660... RJHISARI Edit":
+        - cell:
+          - checkbox
+        - cell "Al Rajhi Bank":
+          - img
+          - paragraph: Al Rajhi Bank
+        - cell "Demo Store":
+          - paragraph: Demo Store
+        - cell "000296608010756115":
+          - paragraph: "000296608010756115"
+        - cell "SA438000029660...":
+          - paragraph: SA438000029660...
+        - cell "RJHISARI":
+          - paragraph: RJHISARI
+        - cell:
+          - switch [checked]
+        - cell "Edit":
+          - button "Edit"
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

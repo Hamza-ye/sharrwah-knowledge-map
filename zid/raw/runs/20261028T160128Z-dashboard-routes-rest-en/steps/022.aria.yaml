@@ -1,0 +1,157 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home"
+  - button "Apps"
+  - button "Settings" [pressed]
+  - separator
+- list:
+  - link "General":
+    - /url: /en-sa/stores/127604/settings/account
+    - text: General
+    - button
+  - link "Communications":
+    - /url: /en-sa/stores/127604/settings/communications/orders
+  - link "Order notifications":
+    - /url: /en-sa/stores/127604/settings/communications/orders
+  - link "Abandoned cart reminders":
+    - /url: /en-sa/stores/127604/settings/communications/abandoned-carts
+  - link "Product question notifications":
+    - /url: /en-sa/stores/127604/settings/communications/questions
+  - link "Product review notifications":
+    - /url: /en-sa/stores/127604/settings/communications/reviews
+  - link "Store":
+    - /url: /en-sa/stores/127604/settings/information
+    - text: Store
+    - button
+- main:
+  - button
+  - heading "Create abandoned cart reminder" [level=5]
+  - button "Save"
+  - alert:
+    - paragraph: You can't create SMS-based abandoned cart reminders without purchasing a custom sender name.
+    - link "See pricing and info":
+      - /url: /en-sa/stores/127604/settings/communications/sender-name
+  - heading "Abandoned cart reminder title" [level=6]
+  - paragraph: This title is for your reference only and won't be visible to end customers.
+  - text: Title of the reminder
+  - textbox "Title of the reminder":
+    - /placeholder: e.g. Login reminder
+  - heading "Sending method" [level=6]
+  - radiogroup:
+    - radio "Automatic reminder Reminders are sent automatically to clients when the criteria you set are met." [checked]
+    - paragraph: Automatic reminder
+    - text: Reminders are sent automatically to clients when the criteria you set are met.
+    - radio "Manual reminder Save your reminders and send them to your customers manually from your abandoned cart reminders list."
+    - paragraph: Manual reminder
+    - text: Save your reminders and send them to your customers manually from your abandoned cart reminders list.
+  - heading "Reminder settings" [level=6]
+  - paragraph: Total basket size over
+  - radiogroup:
+    - radio " 100"
+    - text:  100
+    - radio " 300"
+    - text:  300
+    - radio " 500"
+    - text:  500
+    - radio " 1,000"
+    - text:  1,000
+    - radio "Other"
+    - text: Other
+  - paragraph: "Abandoned cart phase is:"
+  - checkbox "Login"
+  - text: Login
+  - checkbox "Add product"
+  - text: Add product
+  - checkbox "Selecting shipping address"
+  - text: Selecting shipping address
+  - checkbox "Selecting shipping method"
+  - text: Selecting shipping method
+  - checkbox "Selecting payment method"
+  - text: Selecting payment method
+  - checkbox "Order confirmation"
+  - text: Order confirmation
+  - paragraph: Sending time
+  - text: Time is tracked from the moment the customer abandons the cart. Select period type
+  - combobox "Select period type Hours": Hours
+  - text: Hours
+  - spinbutton "Hours": "1"
+  - paragraph: Add offer
+  - radiogroup:
+    - radio "Discount coupon"
+    - text: Discount coupon
+    - radio "Free shipping"
+    - text: Free shipping
+    - radio "Without offer" [checked]
+    - text: Without offer
+  - paragraph: Receiver name
+  - radiogroup:
+    - radio "Actual customer name" [checked]
+    - text: Actual customer name
+    - radio "Customer name"
+    - text: Customer name
+  - paragraph: Send by
+  - checkbox "SMS" [disabled]
+  - text: SMS
+  - checkbox "Email" [checked]
+  - text: Email Reminder text (Arabic)
+  - textbox "Reminder text (Arabic)":
+    - /placeholder: لا تخليه يروح عليك! كمل شرائك الآن.
+  - paragraph: This address will only appear for messages by email.
+  - text: Reminder text (English)
+  - textbox "Reminder text (English)":
+    - /placeholder: Don't let them get away! Complete your purchase today.
+  - paragraph: This address will only appear for messages by email.
+  - text: Reminder text (Arabic)
+  - textbox "Reminder text (Arabic)":
+    - /placeholder: "عزيزنا ({customer_name}) ،لاحظنا أنك تركت بعض المنتجات الرهيبه في سلتك! بغينا نذكرك أنها تحتريك بفارغ الصبر"
+  - paragraph: Number of characters 0 / 160
+  - text: Reminder text (English)
+  - textbox "Reminder text (English)":
+    - /placeholder: "Dear ({customer_name}) We noticed you left some goodies behind in your cart! We just wanted to remind you that they're still waiting patiently for you."
+  - paragraph: Number of characters 0 / 160
+  - text: "Suggested values:"
+  - button "Customer Name"
+  - checkbox "WhatsApp" [disabled]
+  - text: WhatsApp
+  - alert:
+    - text: WhatsApp Daily Messaging Limit
+    - paragraph:
+      - paragraph: "You can send up to 0 messages per day. Remaining today: 0 messages."
+  - paragraph: Message text in (Arabic)
+  - button
+  - button
+  - button
+  - button
+  - button
+  - text: Enter the message text
+  - paragraph: Number of characters 0 / 1024
+  - paragraph: Message text in (English)
+  - button
+  - button
+  - button
+  - button
+  - button
+  - text: Enter the message text
+  - paragraph: Number of characters 0 / 1024
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img
