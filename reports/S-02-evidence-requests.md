@@ -10,6 +10,11 @@
 
 *Changed on 28 October 2026,* after your local agent's runs for H-006 to H-008 (observed-sh `19a5f6435`). They settled Shopify's five capturable gaps: two are answered, and three are narrowed into questions no run can answer. One needs a valid SSN or ITIN; the others need the platform's own word. Those three are now in section 5, "To Shopify". Salla's ten capturable gaps wait on H-001 to H-005.
 
+*Changed on the evening of 28 October 2026,* after your local agent's captures of Salla (H-001 to H-005, observed-sa `b0bd0b16`) and Zid (`other-product-class`, `zid/`):
+- **Sections 1 and 2 need no answer now.** H-001 to H-008 have run, as far as Salla's review and gate allowed, and Zid has been looked at.
+- **Sections 3 and 4 need none either.** Your local agent is capturing BigCommerce and WooCommerce.
+- **What remains is section 5,** the questions only a platform can answer. Each gap's verdict, whether closing it could change an S-02 decision, is in [`gap-assessment.tsv`](../studies/subjects/S-02/gap-assessment.tsv).
+
 ## 1. Hand the capture requests to your local agent
 
 H-001 to H-007 are as before. What changed today:
@@ -19,6 +24,8 @@ H-001 to H-007 are as before. What changed today:
 H-005 may still need a store on Salla's Special plan, a spending decision that comes with it.
 
 **Answer:** handed over, or not now.
+
+*Done on 28 October 2026:* H-006 to H-008 ran at observed-sh `19a5f6435`, and H-001 to H-003 at observed-sa `b0bd0b16`. H-004 stopped at Salla's review, and H-005 at Salla's gate ([`handoffs/README.md`](../handoffs/README.md)).
 
 ## 2. Zid: a store to look at (up to 17 of its 21 gaps)
 
@@ -32,6 +39,11 @@ Most of Zid's gaps ask one thing: which settings can differ by market. Zid's pag
 *Changed on 27 October 2026, after your report from Yemen:* Zid's sign-up code doesn't reach you, and no purchase or verification completes. So (a) and (b) can't be done from Yemen. **My recommendation is now (c),** with Zid's questions in section 5 sent by email. Zid's per-market questions stay open, and phase C marks them as not stated for Zid.
 
 **Answer:** a, then b if needed / a only / b / c.
+
+*Done on 28 October 2026:* your local agent looked at Zid's public demo store and at a development store, and pushed what it saw to `other-product-class`. Neither store shows Zid's markets screens: Zid keeps them behind a setting only Zid turns on. Of Zid's 23 gaps:
+- **10 are answered.** Seven of those answers rest on the dashboard's complete list of routes, which holds no page under a market for those settings. An agent that didn't record them is auditing them.
+- **10 are narrowed.** Only one could still change an S-02 decision: who checks a store's country after it changes (S02-ZD-G30).
+- **3 can't change a decision,** and are closed.
 
 ## 3. BigCommerce: a free trial store (5 of its 7 gaps)
 
@@ -48,6 +60,8 @@ BigCommerce's pricing page says "Start with a free trial", and its Help Center d
 
 **Answer:** yes or no.
 
+*28 October 2026:* your local agent is capturing BigCommerce into `other-product-class`. When it is pushed, the gaps that could change a decision are read first.
+
 ## 4. WooCommerce: a test store (2 of its 5 gaps, and part of the other 3)
 
 WooCommerce is free software, so a test store needs only a WordPress host. Your local agent would record two things:
@@ -62,6 +76,8 @@ Connecting WooPayments on the same store would show what its sign-up asks for by
 
 **Answer:** yes or no.
 
+*28 October 2026:* your local agent is capturing WooCommerce into `other-product-class`, as for BigCommerce.
+
 ## 5. Questions to the platforms (what no store shows)
 
 Some questions only the platform can answer, such as:
@@ -74,17 +90,17 @@ They are written out below, per platform, ready to send. The replies are the pla
 
 **My recommendation:** send all four. *(28 October 2026:)* five, with Shopify's.
 
+*Changed on the evening of 28 October 2026:* Zid's list is shorter, and each question names the subject that needs it. Only Zid's first question, Shopify's first, and the WooCommerce and BigCommerce questions on checks bear on S-02. The rest serve later subjects. Sending them all at once costs you one message per platform. Nothing waits on any of them.
+
 **Answer:** send, don't send, or send some (say which).
 
 ### To Zid
 
-1. For a store whose country is Kuwait, the UAE, Oman, Bahrain, Qatar, Egypt or Syria, does Zid check the store's country and business address, and with which documents? (gap S02-ZD-G02)
-2. In each of those countries, which Zid company contracts with the merchant, and under which terms? For Egypt, zid.eg's terms name Zid Egypt. (S02-ZD-G03)
-3. Which tax do Zid's subscription and transaction fees carry for a store in each of those countries? For Egypt, zid.eg's pricing gives its fees with VAT. (S02-ZD-G08)
-4. From which countries can a merchant not open a Zid store? (S02-ZD-G09)
-5. Is the markets feature offered on the Starter plan and on Zid Lite, and to stores outside Saudi Arabia? (S02-ZD-G07)
-6. Does a Zid store show its customers a cookie banner or cookie choices, and who sets them? (S02-ZD-G19)
-7. If no store can be looked at (section 2): which of these can take a different value per market: the checkout options, the contact details shown to customers, the inventory withdrawal priority, the tracking IDs (Google Analytics, Google Tag Manager, the Meta and TikTok pixels), installed apps, team notifications, staff permissions, the privacy policy, working hours and closure, and the time zone? How is a customer's market chosen on a first visit, which countries does the default market hold, and how is a market removed? (S02-ZD-G05, G06, G10 to G18, G20, G21)
+*Rewritten on 28 October 2026,* after your local agent's captures. The questions they answered are gone.
+1. For a store whose Business address country is outside Saudi Arabia, such as Kuwait, the UAE, Oman, Bahrain, Qatar, Egypt or Syria, does Zid check that country and address after they are saved, and with which documents? On a development store, Kuwait saved once the form's district and street were filled in, and the store's address then read `is_address_confirmed` true, with no step after the save. (S02-ZD-G30; S-02, and S-07 on verification)
+2. In each of those countries, which Zid company contracts with the merchant, and under which terms? The subscription checkout links zid.sa's terms for each of them; zid.eg's terms name Zid Egypt. (S02-ZD-G31; S-03)
+3. Which tax do Zid's transaction fees, Zid Pay's fees and app fees carry for a store in each of those countries? The subscription checkout's VAT already varies by the store's country. (S02-ZD-G32; S-05)
+4. From which countries can a merchant not open a Zid store at its public sign-up? A store's Business address offers 162 countries. (S02-ZD-G33; S-07)
 
 ### To WooCommerce
 
@@ -109,4 +125,4 @@ They are written out below, per platform, ready to send. The replies are the pla
 
 ### To Salla
 
-1. In which country or countries are a store's data and its customers' personal data stored and processed, and from where may they be accessed? Salla's privacy policy names its data protection contact: dataprotection@salla.sa. (S02-SA-G05)
+1. In which country or countries are a store's data and its customers' personal data stored and processed, and from where may they be accessed? Salla's privacy policy names its data protection contact: dataprotection@salla.sa. (S02-SA-G05, narrowed on 28 October into S02-SA-G17; S-08)
