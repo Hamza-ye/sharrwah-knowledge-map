@@ -1,0 +1,1174 @@
+{
+  "abandonedCarts": {
+    "actualCustomerName": "Actual customer name",
+    "addNewCoupon": "Add new coupon",
+    "addOffer": "Add offer",
+    "automaticDescription": "Reminders are sent automatically to clients when the criteria you set are met.",
+    "automaticMessage": "Automatic reminder",
+    "bulk": {
+      "changeStatus": "Deactivate/Activate",
+      "confirmDelete": "You are about to delete the messages: {{messagesTitles}} \nWould you like to continue?"
+    },
+    "cartPhaseLabel": "Abandoned cart phase is",
+    "cartReminderTitle": "Abandoned cart reminder title",
+    "cartReminderTitleDescription": "This title is for your reference only and won't be visible to end customers.",
+    "cartReminderTitleLabel": "Title of the reminder",
+    "cartReminderTitlePlaceholder": "e.g. Login reminder",
+    "cartTotalLabel": "Total basket size over",
+    "columns": {
+      "alertType": "Alert type",
+      "messageStatus": "Message status",
+      "messageTitle": "Reminder title",
+      "messageType": "Reminder type"
+    },
+    "currentBalance": "Current balance",
+    "daysPeriod": "Days",
+    "discountCoupon": "Discount coupon",
+    "email": "Email",
+    "emailTitleHelperText": "This address will only appear for messages by email.",
+    "emptyState": {
+      "action": "Create reminder",
+      "description": "Stay ahead by setting up reminders now.",
+      "title": "No reminders available at the moment"
+    },
+    "filters": {
+      "creationDate": "Filter by creation date",
+      "dateAttribute": "Date type",
+      "dateEnd": "Filter by end date",
+      "reminderSelection": "Reminder selection",
+      "whatsappMessageStatus": "WhatsApp message status"
+    },
+    "fixedNamePlaceholder": "e.g. Dear Mahmoud",
+    "freeShipping": "Free shipping",
+    "hoursPeriod": "Hours",
+    "increaseTheBalance": "Recharge reminder credits",
+    "isOneTypeActive": "Either SMS, email or WhatsApp must be active.",
+    "manuallyDescription": "Save your reminders and send them to your customers manually from your abandoned cart reminders list.",
+    "manuallyMessage": "Manual reminder",
+    "messageAdded": {
+      "description": "The reminder has been added and is under review. Approval usually takes ~5 minutes. If rejected, check your Facebook-linked email for details.",
+      "title": "Reminder added"
+    },
+    "messageText": "Reminder text",
+    "messageTextValue": "عزيزنا ({customer_name}) ،لاحظنا أنك تركت بعض المنتجات الرهيبه في سلتك! بغينا نذكرك أنها تحتريك بفارغ الصبر",
+    "messageTextValue_ar": "عزيزنا ({customer_name}) ،لاحظنا أنك تركت بعض المنتجات الرهيبه في سلتك! بغينا نذكرك أنها تحتريك بفارغ الصبر",
+    "messageTextValue_en": "Dear ({customer_name}) We noticed you left some goodies behind in your cart! We just wanted to remind you that they're still waiting patiently for you.",
+    "messageTitlePlaceholder": "لا تخليه يروح عليك! كمل شرائك الآن.",
+    "messageTitlePlaceholder_ar": "لا تخليه يروح عليك! كمل شرائك الآن.",
+    "messageTitlePlaceholder_en": "Don't let them get away! Complete your purchase today.",
+    "otherLabel": "Other",
+    "otherName": "Customer name",
+    "phase": {
+      "login": "Login",
+      "new": "Add product",
+      "paymentMethod": "Selecting payment method",
+      "shippingAddress": "Selecting shipping address",
+      "shippingMethod": "Selecting shipping method",
+      "verification": "Order confirmation"
+    },
+    "receiverName": "Receiver name",
+    "seePricingAndInfo": "See pricing and info",
+    "selectDiscountCoupon": "Select discount coupon",
+    "selectPeriodType": "Select period type",
+    "sendBy": "Send by",
+    "sendTheReminderAt": "Reminder settings",
+    "senderName": "Sender name",
+    "senderNameAlert": "You can't create SMS-based abandoned cart reminders without purchasing a custom sender name.",
+    "senderNameAlertReview": "You can't create SMS-based abandoned cart reminders as the custom sender name is under Zid team review. Once approved, you'll be able to create SMS reminders.",
+    "sendingMethod": "Sending method",
+    "sendingTime": "Sending time",
+    "sendingTimeDescription": "Time is tracked from the moment the customer abandons the cart.",
+    "sms": "SMS",
+    "suggestedValues": "Suggested values",
+    "textMessages": "SMS",
+    "whatsapp": "WhatsApp",
+    "whatsappSenderName": "WhasApp sender name",
+    "whatsappState": {
+      "action": "See WhatsApp details",
+      "description": "Activate the WhatsApp feature to remind your customers about their abandoned carts and boost your sales by up to 20% ",
+      "title": "Expand your reach with WhatsApp reminders"
+    },
+    "whatsappStatusAlert": {
+      "expired": "Your subscription is expired. Activate your subscription to continue using marketing campaign messages.",
+      "notActive": "Activate the WhatsApp feature to remind your customers about their abandoned carts and boost your sales by up to 20%"
+    },
+    "withoutOffer": "Without offer"
+  },
+  "checkout": {
+    "customer": {
+      "clarification": "Hint text",
+      "clarificationHelperDescription": "Enter the hint text you want to appear as a placeholder in the input field for \"Customer note.\"",
+      "noteHelperText": "This text will appear as a title for the \"Customer note\" field.",
+      "noteTitle": "Title"
+    },
+    "customizeAddress": {
+      "basedOnCountry": {
+        "customization": "Customization",
+        "restOfTheWorld": "Rest of the world",
+        "subtitle": "Configure how customer addresses are obtained on the checkout page.",
+        "title": "Customize the address according to the country"
+      },
+      "form": {
+        "addNewCustomization": "Create new customization",
+        "additionalNumber": "Additional number",
+        "buildingNumber": "Building Number",
+        "district": "District",
+        "districtHelperText": "Control whether the district field is shown and required in customer addresses.",
+        "editCustomization": "Edit customization",
+        "recipientNationalId": "Recipient's National ID",
+        "recipientNationalIdHelperText": "Show this field at checkout for shipping addresses. Enable mandatory to require customers to enter it before placing an order.",
+        "street": "Street",
+        "zipCode": "Zip code"
+      },
+      "location": {
+        "formStatus": "Checkout options for location determination have been updated successfully.",
+        "googleMap": "Select on Google Maps",
+        "googleMapNote": "Allow customer to search for address using Google Maps.",
+        "mandatory": "Make it required",
+        "spl": "Activate national address (SPL)",
+        "splNote": "The national address is now required for all domestic shipments in Saudi. Make it mandatory to avoid shipment delays.",
+        "title": "Location determination"
+      },
+      "title": "Customize customer address"
+    },
+    "form": {
+      "activateOnePageCheckout": "Activate one-page checkout",
+      "activateOnePageCheckoutText": "One-page checkout drives higher conversion.",
+      "applePay": "Enable fast checkout with Apple Pay",
+      "applePayAlerts": "Enable Apple Pay alerts in all browsers.",
+      "applePayAlertsText": "Show an alert to direct the user to the Safari browser for those who use other browsers when choosing to pay with Apple Pay.",
+      "applePayText": "Enable one-click fast checkout through Apple Pay from the cart or product pages",
+      "bankTransfer": "Bank transfer",
+      "buyAsGuest": "Buy as a guest",
+      "buyAsGuestText": "Enable your customers to buy without signing in.",
+      "buyNowPopup": "Buy now as a pop-up",
+      "buyNowPopupText": "Enable pop-up checkout for the 'Buy Now' button to streamline the process and encourage quick purchases. If disabled, users will be redirected to the full checkout page.",
+      "cashOnDelivery": "Cash on delivery",
+      "collapsedView": "Compact view",
+      "collapsedViewText": "Fast checkout — the customer sees only the shipping and payment options they previously selected, ready to confirm.",
+      "couponForm": "Show coupon code field",
+      "couponFormText": "Show the coupon code field on the checkout page so customers can apply discount coupons.",
+      "customerNoteExpanded": "Show the order note field open by default",
+      "customerNotes": "Customer notes",
+      "customerNotesText": "Enable customers to enter their comments before submitting their order.",
+      "customization": "Customization",
+      "directGuestCheckout": "Direct guest checkout",
+      "directGuestCheckoutText": "Take guest customers straight to checkout without showing the login screen.",
+      "email": "Sign in with email",
+      "emailText": "Enable your customers to log in using email.",
+      "existingUserCheckout": "Shipping and payment options display",
+      "existingUserCheckoutText": "Choose how the shipping and payment options list appears on the checkout page",
+      "fullView": "Full view",
+      "fullViewText": "Multi-option checkout — the customer sees all available shipping and payment options, with their previous selection highlighted.",
+      "howItAppears": "How it appears in the store",
+      "loginAsPopup": "Login as a pop-up",
+      "loginAsPopupText": "Enable pop-up login for a fast, seamless checkout that keeps customers engaged and reduces drop-offs.",
+      "mandatory": "Make it mandatory",
+      "methodDeterminingCustomerAddress": "Customer address determination",
+      "methodDeterminingCustomerAddressText": "Choose how customer addresses are obtained on your store's checkout page.",
+      "multipleDiscounts": "Activate multiple discounts",
+      "multipleDiscountsText": "This feature allows the customer to use more than one discount per cart.",
+      "onlinePayment": "Online payment",
+      "senderEmail": "Send invoices via email",
+      "senderEmailDescription": "Send order invoices to your customers by email, using the selected address as the sender.",
+      "senderEmailDialogTitle": "Billing email",
+      "senderEmailInputLabel": "Email address",
+      "senderEmailPending": "Waiting for activation",
+      "senderEmailRemoved": "The billing email has been removed.",
+      "senderEmailVerificationDescription": "We will send a verification link to this address. Invoices will be sent from it after verification.",
+      "senderEmailVerificationSent": "A verification link has been sent to the billing email.",
+      "serviceFee": "Zid assurance",
+      "serviceFeeText": "Ensure faster customer follow-up and proactive handling of all shipment updates, giving your customers confidence that their rights are safeguarded",
+      "showCart": "Show cart items which are available for pickup on your store's checkout page.",
+      "showCartText": "Allow customers to see if items are available for pickup during checkout.",
+      "showCustomerType": "Allow customers to change their customer type to a company",
+      "showCustomerTypeText": "Allow customers to change their customer type to company and enter their company name , Tax number and commercial register number at the store.",
+      "smsMessages": "Sign in with SMS messages",
+      "smsMessagesText": "Enable your customers to log in using SMS messages.",
+      "smsMessagesTooltip": "SMS login is available only for customers in Saudi Arabia. Enable WhatsApp login for customers outside Saudi Arabia.",
+      "status": "Checkout options updated successfully",
+      "subtitle": "Optimize your checkout page to enhance customer experience and boost conversions.",
+      "title": "Configure your checkout",
+      "whatsapp": "Sign in with WhatsApp",
+      "whatsappText": "Enable your customers to log in using WhatsApp."
+    },
+    "makeMandatory": "Make mandatory"
+  },
+  "communications": {
+    "abandonedCarts": {
+      "description": "Set up reminders that are automatically sent to customers who leave items in their shopping cart without completing the purchase, encouraging them to return.",
+      "label": "Abandoned cart reminders"
+    },
+    "orders": {
+      "description": "Manage automated messages sent to customers when the status of their order changes (e.g., confirmed, shipped, delivered).",
+      "label": "Order notifications"
+    },
+    "questions": {
+      "description": "Configure how you would like to get notified about product questions and to notify customer when you reply.",
+      "label": "Product question notifications"
+    },
+    "reviews": {
+      "description": "Set up and send messages prompting customers to leave reviews for the products they purchased.",
+      "label": "Product review notifications"
+    }
+  },
+  "communicationsOrders": {
+    "charitableDonation": {
+      "charitableMessageText": "Hi {{customer_name}}, A donation has been created for you on {{store_name}}. To view its details {{order_url}}",
+      "description": "Messages sent to the customer when a donation is completed",
+      "status_delivered": "Donation message for payment via bank transfer",
+      "status_new": "Donation Message",
+      "title": "Donation Messages"
+    },
+    "messageTextIn": "Message text in",
+    "messageTextInPlaceholder": "Enter the message text",
+    "statusForm": {
+      "description": "Select the order statuses that will trigger an automatic SMS when they occur.",
+      "preview": "Preview order status messages",
+      "resetDefault": "Reset to default",
+      "success": "The cases that will be sent have been updated successfully.",
+      "title": "Configure automated order notifications"
+    },
+    "statuses": "Statuses",
+    "statusesDescription": "Choose the order statuses that will trigger an automatic WhatsApp message when they occur.",
+    "tabs": {
+      "textMessages": "Text messages",
+      "whatsappMessages": "WhatsApp messages"
+    },
+    "warning": {
+      "description": "To ensure compliance with communication authority regulations, please refrain from using order status messages for marketing, event promotions, or distributing discount codes. Non-compliance may result in the suspension of your messaging services.",
+      "title": "Avoid sending sponsored content"
+    },
+    "whatsappStatusAlert": {
+      "expired": "Activate your subscription to continue using order notifications.",
+      "notActive": "Activate the WhatsApp feature to notify customers about order status changes with personalized messages - fast, direct, and reliable."
+    }
+  },
+  "communicationsQuestions": {
+    "changeEmail": "Change email",
+    "changeRecipientEmailForNotifications": "Change recipient email for notifications",
+    "createNewMember": "Create new member",
+    "customerNotifications": "Automatic customer notification",
+    "customerNotificationsTooltip": "Automatically notify customers after replying to their questions.",
+    "description": "Configure notifications for product questions",
+    "member": "member",
+    "merchantNotifications": "Automatic merchant notification",
+    "merchantNotificationsTooltip": "Automatically notify the merchant when a new question is submitted.",
+    "notificationsWillBeSentToTheFollowingEmail": "Notifications will be sent to the following email.",
+    "previewEmail": {
+      "button": "Example of how it appears on your site.",
+      "title": "Preview of the customer email"
+    },
+    "selectTeamMember": "Select or create a new team member to send the notifications to."
+  },
+  "communicationsSenderName": {
+    "info1": "A commercial registration and official stamp in the name of the establishment are required.",
+    "info2": "Service activation requires Zid team review and may be delayed due to regulatory checks by the provider (Unifonic).",
+    "info3": "Sender name change fees are not included in balance recharging and will be charged separately.",
+    "info4": "The sender's name is a service that is renewed annually.",
+    "information": "Information on the custom sender name",
+    "pricing": "Pricing"
+  },
+  "customerWalletCurrencyWarning": "Customer Wallet depends on the current default currency and cannot be changed. Contact support if you need to update it.",
+  "directIntegration": {
+    "accessToken": "Access token",
+    "authorizedApplications": "Only authorized applications from Zid will be able to use this information, and for security precautions, do not share this information with any untrusted party.",
+    "directLink": "Direct link activation steps:",
+    "generateManagerToken": "Generate manager token",
+    "generateNewCode": "The system will generate a new code each time you press the generate button. Please be sure to keep the code in a safe place.",
+    "integrateWithServices": "Integrate with services that support Zid through your own token and store ID.",
+    "integrationHeader": "Integrate with services that support Zid through your own token and store ID. When connecting with any service that supports Zid, your store's identity will be verified using the merchant's private key (Manager Token) and Store ID. You can copy this information from this page.",
+    "integrationHelpCenter": "Help center link for Zid",
+    "integrationInfo": "Direct integration info",
+    "integrationNotes": "Important notes:"
+  },
+  "gifting": {
+    "activate": "Activate the gift options",
+    "deactivateConfirmation": "Are you sure you want to deactivate the gifting option from your store?",
+    "deactivateTitle": "Deactivate gifting",
+    "form": {
+      "addCustomDesignLabel": "Add a custom gift card design",
+      "addMediaLinkLabel": "Add a video or audio link",
+      "addMessageDescription": "Let customers include a gift message.",
+      "addMessageLabel": "Add a message",
+      "addedSuccessfully": "Added successfully",
+      "additionsTitle": "Additions to gifts",
+      "cardName": "Gift card name",
+      "completed": "Completed",
+      "donationMessageDescription": "Customized SMS templates sent to the sender and recipient for donation gift orders.",
+      "donationMessageHelperText": "Remaining characters: {{remainingLength}} / {{limit}} - SMS balance: {{smsCampaignsBalance}}",
+      "donationMessagePlaceholder": "Enter the message text here. You can add variables from the list below.",
+      "donationMessagePreview": "Message preview",
+      "donationMessagePreviewPlaceholder": "A preview of the message will appear here.",
+      "donationMessageTitle": "Customize donation gift messages",
+      "donationReceiverMessageLabel": "Gift receiver message",
+      "donationSenderMessageLabel": "Gift sender message",
+      "donationVariablePreviews": {
+        "donationName": "Ongoing charity",
+        "giftCardLink": "Gift card link",
+        "receiverName": "Abdullah",
+        "senderName": "Ahmed",
+        "storeName": "Al-Bir Charity"
+      },
+      "donationVariables": {
+        "donationName": "Opportunity name",
+        "giftCardLink": "Gift card link",
+        "receiverName": "Recipient name",
+        "senderName": "Sender name",
+        "storeName": "Association name"
+      },
+      "donationVariablesLabel": "Add variables to message",
+      "maxLimit": "You have reached the maximum number of cards. Please delete one of the cards to add a new design",
+      "motivateGiftingDescription": "Show the 'send it as a gift' shortcut to the customer after adding the product to the cart",
+      "motivateGiftingLabel": "Motivating customers to gift in store",
+      "ready": "Ready",
+      "statusCustomizationLabel": "Status customization",
+      "statusMessageDescription": "A customized text message that reaches the customer when the order status is changed.",
+      "statusMessageHelperText": "The text message will reach the sender.",
+      "statusMessageLabel": "Status message",
+      "statusMessageTitle": "Customize gifting status messages"
+    },
+    "landing": {
+      "activate": "Activate gifting",
+      "advantages": {
+        "customerBenefits": {
+          "description": "Customers can personalize a gift card with their own message, choose how the gift is delivered, and send products to the people they care about without leaving your store.",
+          "title": "What will your customers gain from gifting?"
+        },
+        "fullControl": {
+          "description": "You decide where gifting appears across the store, which card fields customers can fill in, and which products and categories are available as gifts.",
+          "title": "Do I have full control over gifting?"
+        },
+        "giftAdditions": {
+          "description": "Customize the card design and fields, and let customers write their message or upload their own design.",
+          "title": "Gift add-ons for every occasion"
+        },
+        "whatIsGifting": {
+          "description": "Gifting lets your customers buy a product on behalf of someone else, add a personalized message and a branded gift card, and have it delivered as a gift.",
+          "title": "What is gifting?"
+        }
+      },
+      "advantagesTitle": "Main advantages",
+      "hero": {
+        "description": "Create new experiences for your customers to seamlessly gift your products. Customers can add personalized messages and gift cards. This creates a new channel for product distribution that you can effectively measure and market.",
+        "features": {
+          "cardCustomizations": "Gift card customizations, your brand, your style, their message.",
+          "sendingOptions": "Flexible gift sending options",
+          "widgets": "Customize gift cards to reflect your store's identity"
+        },
+        "title": "Enable the gift of giving"
+      }
+    },
+    "settingsPage": {
+      "cardMessagesDescription": "Choose the card style and decide which fields customers can fill in when sending a gift card.",
+      "cardMessagesTitle": "Gift card messages",
+      "configurationDescription": "Global settings for your store's gifting experience",
+      "configurationTitle": "Gifting configuration",
+      "createOptions": "Create options",
+      "customDesignDescription": "Let customers upload their own design when personalizing a gift card.",
+      "customDesignTitle": "Custom card design",
+      "customize": "Customize",
+      "giftProducts": {
+        "addProduct": "Create product",
+        "category": "Category",
+        "categoryPlaceholder": "Select a category",
+        "createProduct": "Create gift product",
+        "deleteBulkConfirmation": "Are you sure you want to delete the selected products?",
+        "editProduct": "Edit gift product",
+        "limitedQuantity": "Limited quantity",
+        "product": "Product",
+        "productImage": "Product image",
+        "productNamePlaceholder": "Congrats on your graduation",
+        "productNamePlaceholder_ar": "مبارك التخرج",
+        "productNamePlaceholder_en": "Congrats on your graduation",
+        "publishHide": "Publish / hide",
+        "requiresShipping": "Product requires shipping",
+        "salePrice": "Sale price",
+        "searchPlaceholder": "Search by name",
+        "unlimitedQuantity": "Limited quantity"
+      },
+      "giftProductsDescription": "Add products customers can choose with their gift, and set their prices and inventory.",
+      "giftProductsEmptyDescription": "Products marked as gift products will be listed here.",
+      "giftProductsEmptyTitle": "No gift products yet",
+      "giftProductsTitle": "Gifting settings",
+      "giftingCategories": {
+        "addCategory": "Add category",
+        "categoryName": "Category name",
+        "categoryNamePlaceholder": "e.g Birthday",
+        "createCategory": "Create category",
+        "deleteCategory": "Delete category",
+        "editCategory": "Edit category",
+        "showInGifting": "Show in the gifting"
+      },
+      "giftingCategoriesDescription": "Categories used to group your gifting experience",
+      "giftingCategoriesEmptyDescription": "Categories used for gifting will be listed here.",
+      "giftingCategoriesEmptyTitle": "No gifting categories yet",
+      "giftingCategoriesTitle": "Gifting categories",
+      "messageTemplateDescription": "Allow customers to select from a list of pre-written messages. You'll need to create the option in 'Message templates'",
+      "messageTemplateTitle": "Suggested message template",
+      "messageTemplates": {
+        "addTemplate": "Add message",
+        "createTemplate": "Create message template",
+        "deleteTemplate": "Delete message template",
+        "description": "Curated messages customers can select when composing their gift card.",
+        "editTemplate": "Edit message template",
+        "emptyDescription": "Messages you create will be listed here.",
+        "emptyTitle": "No message templates yet",
+        "messageAr": "Message (Arabic)",
+        "messageEn": "Message (English)",
+        "templateMessage": "Message",
+        "templateMessagePlaceholder": "e.g Wishing you the happiest of birthdays!",
+        "title": "Message templates"
+      },
+      "notificationMessageWhenCompletedLabel": "Message when the order is completed",
+      "notificationMessageWhenReadyLabel": "Message when the order is ready",
+      "notificationMessagesDescription": "Custom texts sent when the gift order becomes ready or completed.",
+      "notificationMessagesTitle": "Status messages",
+      "notificationsDescription": "Allow customers to include a gift message.",
+      "notificationsTitle": "Gifting notification settings",
+      "recipientAddressCollectionDescription": "Set an additional fee for collecting the delivery address from the recipient. This fee will be added to the base shipping cost.",
+      "recipientAddressCollectionSmsBalanceWarning": "Make sure you have sufficient order SMS balance to send the address collection link to the recipient. The message won't be sent if your balance is insufficient.",
+      "recipientAddressCollectionSurcharge": "Address Collection Fee",
+      "recipientAddressCollectionSurchargeText": "Enter 0 to apply only the base shipping cost.",
+      "recipientAddressCollectionTitle": "Customize Address Collection Fee",
+      "recipientShippingAddressDescription": "Let customers complete a gift order without entering a shipping address; we will request it directly from the recipient.",
+      "recipientShippingAddressTitle": "Request the shipping address from the recipient",
+      "recipientShippingAddressTooltip": "Sending an address request to the recipient requires sufficient order SMS balance.",
+      "tabs": {
+        "giftProducts": "Gift add-ons",
+        "giftingCategories": "Gift categories",
+        "globalSettings": "Global settings",
+        "messageTemplates": "Message templates"
+      }
+    },
+    "viewGiftCardTemplate": "View the gift card template"
+  },
+  "groups": {
+    "emptyState": {
+      "createGroup": "Create group",
+      "description": "Assign permissions easier to your team members",
+      "title": "Create your first group"
+    }
+  },
+  "information": {
+    "about": {
+      "anotherOwner": "Add another owner"
+    },
+    "business": {
+      "instructions": {
+        "autoLocation": "Enter the location automatically using Google Maps.",
+        "selectTimezone": "Selecting your store's time zone will help ensure consistency in dates and times across orders, reports, and file exports.",
+        "youCanEnterYourLocation": "You can enter your location manually or using Google Maps."
+      },
+      "labels": {
+        "additionalNumber": "Additional number",
+        "buildingNumber": "Building number",
+        "nationalAddress": "An example of a national address proof file from SPL.",
+        "showLocation": "Display address in storefront",
+        "timeZone": "Time zone",
+        "walletWarning": "To move your store to another country, withdraw or consume your current wallet balance first. Once changed, your store’s currency will automatically adjust based on the new country.",
+        "zipCode": "Zip code"
+      }
+    },
+    "main": {
+      "businessType": "Business type",
+      "isNotValidMessage": "Not valid message",
+      "storeInfo": "Store information",
+      "tabs": {
+        "address": "Business address",
+        "business": "Business details",
+        "store": "Store information"
+      }
+    },
+    "ownerMobileMatchAlert": {
+      "title": "Owner’s mobile number matches the store’s contact number."
+    },
+    "socialMediaAlert": {
+      "action": "Go to Brand page",
+      "description": "You can manage and update your social media accounts from: Channels \\ Online Store \\ Brand.",
+      "title": "Social media account management moved"
+    },
+    "status": "Edited successfully",
+    "store": {
+      "helpers": {
+        "emailHelper": "This email appears to the customer in the storefront.",
+        "nameHelper": "This name appears to the customer in the storefront.",
+        "phoneHelper": "This phone number appears to the customer in the storefront.",
+        "toChangeDomainName": "To change the domain name "
+      },
+      "labels": {
+        "businessCenter": "Business center",
+        "facebook": "Facebook",
+        "instagram": "Instagram",
+        "snapchat": "Snapchat",
+        "storeName": "Store name",
+        "storeUrl": "Store URL",
+        "tiktok": "Tiktok",
+        "twitter": "X",
+        "website": "Website"
+      }
+    }
+  },
+  "invoice": {
+    "clientName": "Client name",
+    "form": {
+      "barcode": "Barcode",
+      "disableInvoiceGenerationMessage": "If disabled, Zid will no longer generate invoices, and ZATCA integration will be unavailable. You can still send order summaries to customers.",
+      "disableInvoiceGenerationTitle": "Stop invoice generation?",
+      "discountCouponCode": "Discount coupon code",
+      "emailDescription": "If you choose no, then the emails being sent from Zid's system to your email will stop.",
+      "eta": "ETA",
+      "generateInvoices": "Generate invoices via Zid",
+      "generateInvoicesDescription": "If disabled, Zid will stop generating invoices. You can still send order summaries to customers.",
+      "invoiceCustomizationTitle": "Invoice template and order summary",
+      "orderInvoice": "Do you want the Zid system to send invoices to your customers?",
+      "orderInvoiceDescription": "If you choose no, the Zid system will only send a summary of the request to the customer's email.",
+      "orderStatus": "Order status",
+      "ownerEmail": "Would you as a merchant like to receive emails containing the invoices for your store's orders?",
+      "paymentStatus": "Show payment status in order summary.",
+      "productDescription": "Product description",
+      "productImages": "Product images",
+      "productWeights": "Product weights",
+      "qrCode": "QR code",
+      "returnPolicy": "Return policy",
+      "sku": "SKU",
+      "status": "Invoice edited successfully",
+      "storeAddress": "Store address",
+      "taxIdNumber": "Tax identification number"
+    },
+    "invoiceId": "Invoice ID",
+    "orderNotes": "Order notes",
+    "simplifiedTaxInvoice": "Simplified tax invoice"
+  },
+  "landingPage": {
+    "account": {
+      "description": "Customize personal account settings, such as your password and contact details.",
+      "label": "Account settings"
+    },
+    "checkout": {
+      "description": "Set customer options on the checkout page, such as guest checkout and one-page purchase.",
+      "label": "Checkout page options"
+    },
+    "constraints": {
+      "description": "Define rules or limitations that affect which payment methods and shipping options are available under certain conditions.",
+      "label": "Shipping and payment constraints"
+    },
+    "directApiIntegration": {
+      "description": "Create a manager token to connect Zid with other systems and improve store management.",
+      "label": "API integrations"
+    },
+    "domains": {
+      "description": "Manage the web addresses (domains) that point to your online store.",
+      "label": "Domains list"
+    },
+    "exportRequests": {
+      "description": "View all your export requests, download files, and manage export options",
+      "label": "Export requests",
+      "securityBtn": "Security settings"
+    },
+    "gifting": {
+      "description": "Configure gift features for products like gift messaging and gift cards.",
+      "label": "Gift options"
+    },
+    "giftingSettings": {
+      "description": "Manage your store's gifting experience: card messages, gift products and gifting categories.",
+      "label": "Gifting settings"
+    },
+    "hoursOfOperation": {
+      "description": "Define the business hours when your online store is considered open or when certain services are available.",
+      "label": "Hours of operation"
+    },
+    "information": {
+      "description": "Manage details about your business, address, and contacts.",
+      "label": "Store information"
+    },
+    "invoice": {
+      "description": "Customize the appearance and details included in the invoices generated by your store.",
+      "label": "Configure your invoices"
+    },
+    "languagesCurrencies": {
+      "description": "Customize activated languages and currencies.",
+      "label": "Languages & currencies"
+    },
+    "legalPages": {
+      "description": "Modify store policies and licenses",
+      "label": "Legal pages"
+    },
+    "markets": {
+      "description": "Set different product prices for each market and customer type, including B2B pricing.",
+      "label": "Markets"
+    },
+    "ordersProducts": {
+      "description": "Customize order and product properties.",
+      "label": "Orders and products properties"
+    },
+    "security": {
+      "description": "Enable/disable two-factor authentication (2FA), manage one-time passwords (OTP), and session tokens.",
+      "label": "Security settings"
+    },
+    "staffNotifications": {
+      "description": "Manage team member notifications for order status changes.",
+      "label": "Staff notifications"
+    },
+    "tax": {
+      "description": "Customize VAT and tax percentages.",
+      "label": "Tax settings"
+    },
+    "team": {
+      "description": "Customize team member permissions.",
+      "emptyState": {
+        "addTeamMember": "Add a team member",
+        "description": "Add team members to start collaborating.",
+        "title": "No team members added"
+      },
+      "groups": {
+        "description": "Customize team member group permissions.",
+        "label": "Groups"
+      },
+      "label": "Team"
+    },
+    "urlRedirects": {
+      "description": "Prevent old links from breaking by redirecting your customers to another page.",
+      "label": "URL redirects"
+    },
+    "zatca": {
+      "description": "Connect your store with Zakat, Tax and Customs Authority (ZATCA) for seamless e-invoice compliance",
+      "label": "Fatoora platform integration"
+    }
+  },
+  "languagesCurrencies": {
+    "currencies": {
+      "confirmation": {
+        "description": "Changing your currency will disable all other currencies and set {{name}} as your store's default"
+      },
+      "defaultCurrency": "Default currency",
+      "notifications": {
+        "defaultUpdated": "Default currency has been updated successfully",
+        "updated": "Store currencies have been updated successfully"
+      },
+      "title": "Currencies"
+    },
+    "description": "Currency management has been relocated to the <1>markets</1> page. You can manage your currencies by adding countries to existing markets or creating new markets. To learn more, please visit the <2>help center</2>.",
+    "info": "Sales will be converted to the new currency based on the current exchange rate when you change the currency. Accordingly, the total sales figure may change.",
+    "languages": {
+      "confirmation": {
+        "description": "When you change the language, {{name}} will become your store's primary language"
+      },
+      "defaultLanguage": "Default language",
+      "description": "Select languages available to customers in your store.",
+      "notifications": {
+        "updated": "Store languages have been updated successfully"
+      },
+      "title": "Languages",
+      "warning": "The default store language cannot be turned off."
+    },
+    "title": "Currency management relocated"
+  },
+  "legalPages": {
+    "complaintsAndSuggestions": {
+      "checkboxLabel": "Show complaints and suggestions on the footer of the site",
+      "warning": "For Saudi stores, you can get more information about the Ministry's e-commerce licenses. Please check this link for more information."
+    },
+    "content": "Content",
+    "defaultHint": "Fill the Store Contact information before publishing the privacy policy",
+    "example": "Example",
+    "exampleDialogTitle": "Example of how it appears to your customers.",
+    "exchangeAndReturns": {
+      "checkboxLabel": "The following text will be displayed at the bottom of the store page.",
+      "warning": "For Saudi stores, you can get more information about the Ministry's e-commerce exchange and return policies. Please see the Ministry's laws."
+    },
+    "extraPages": "extra pages",
+    "fromHere": "From here",
+    "licenses": {
+      "checkboxLabel": "Show license on the footer of the website",
+      "warning": "For Saudi stores, you can get more information about the Ministry's e-commerce licenses. Please check this link for more information."
+    },
+    "pages": "Pages",
+    "privacyPolicy": {
+      "checkboxLabel": "Show privacy policy on the registration page",
+      "dialogDescription": "Appears when creating an account on the site",
+      "warning": "For Saudi stores, you can get more information about the e-commerce privacy policy set by the Ministry. Please see the Ministry's laws."
+    },
+    "returnPolicy": {
+      "cardTitle": "Return policy rules",
+      "itHasToBeClear": "It must be clear.",
+      "itHasToBePutItAGoodPlace": "It must be put in a suitable place.",
+      "warning": "The following return policy will appear in the checkout.",
+      "youCanCheckoutSaudiConsumerRight": "You can review Saudi consumer rights."
+    },
+    "savedSuccessfully": "Saved successfully",
+    "setDefault": "Attach a sample",
+    "termsAndConditions": {
+      "checkboxLabel": "Display terms and conditions on the checkout page for orders",
+      "dialogDescription": "Appears in the checkout page for your orders as shown below",
+      "warning": "For Saudi stores, you can get more information about the e-commerce terms and conditions set by the Ministry. Please review the Ministry's regulations."
+    },
+    "title": "Page name",
+    "youHaveToEnable": "You have to enable"
+  },
+  "markets": {
+    "assignTheme": {
+      "active": "Active",
+      "assign": "Assign theme",
+      "browseAllThemes": "Browse all themes",
+      "button": "Assign Theme",
+      "customTheme": "Custom Theme",
+      "default": "Default",
+      "description": "Select a theme to assign to this market. Customers from this market will see the selected theme when visiting your store.",
+      "error": "Failed to assign theme. Please try again.",
+      "noThemesFound": "No themes found",
+      "searchPlaceholder": "Search by theme name",
+      "success": "Theme assigned successfully",
+      "tabs": {
+        "customThemes": "Custom themes",
+        "themeLibrary": "Theme library"
+      },
+      "themeName": "Theme name",
+      "title": "Assign theme to {{market}}"
+    },
+    "currencyChangeNotice": {
+      "action": "Manage products",
+      "description": "If you change the currency, price amounts stay the same and only the currency is updated. Review your product prices and adjust them if needed.",
+      "title": "Product prices and currency"
+    },
+    "customizeTheme": "Customize theme",
+    "hasCustomTheme": "Custom Theme",
+    "manage": "Manage",
+    "removeMarket": {
+      "button": "Remove market",
+      "confirm": "Remove",
+      "description": "This market will be permanently deleted. This action cannot be undone.",
+      "error": "Failed to remove market. Please try again.",
+      "success": "Market removed successfully",
+      "title": "Remove {{market}}"
+    },
+    "removeTheme": {
+      "button": "Reset to default",
+      "confirm": "Reset to default",
+      "description": "The assigned theme for this market will be removed, and it will fall back to your store's active theme.",
+      "error": "Failed to remove theme. Please try again.",
+      "success": "Theme reset to default successfully",
+      "title": "Reset theme for {{market}}"
+    },
+    "themeInfo": "By default, all markets use your store's active theme. You can assign a different theme to each market for a localized storefront experience, or customize the default theme per market from the More menu.",
+    "usedTheme": "Used theme",
+    "walletCurrencyNotice": "Customer Wallet uses this market's currency. Contact support if you need to change it."
+  },
+  "marketsCreate": {
+    "addProductsStep": {
+      "addProducts": "Add products",
+      "emptyState": {
+        "description": "Add products to be able to customize prices.",
+        "title": "No products"
+      },
+      "hidden": "Hidden",
+      "priceNotSet": "Price not set",
+      "priceNotSetTooltip": "This product was automatically hidden because a price is not set for this market. Set a product price and the product will appear.",
+      "published": "Published",
+      "status": "Status"
+    },
+    "changesPreparedForSaving": "The changes are prepared for saving.",
+    "confirmMarketCreation": {
+      "description": "Enable \"Publish market\" to make it active, or create as draft to finish setup later.",
+      "publishMarket": "Publish market",
+      "title": "Confirm market creation"
+    },
+    "countryName": "Country Name",
+    "fields": {
+      "countries": {
+        "label": "Countries",
+        "placeholder": "Select countries"
+      },
+      "marketCurrency": {
+        "label": "Market currency",
+        "placeholder": "Select market currency"
+      },
+      "marketName": {
+        "label": "Market name",
+        "placeholder": "Example GCC countries"
+      },
+      "marketServes": {
+        "label": "Market serves"
+      },
+      "publishMarket": {
+        "label": "Publish market"
+      }
+    },
+    "priceSetupStep": {
+      "info": "This step is only done when creating the market",
+      "options": {
+        "option1": "Copy prices from the primary market \"as-is\" but use the new market's currency",
+        "option2": "Automatically convert prices using the current exchange rate between the primary market currency and the new market currency",
+        "option3": "I will enter the price manually"
+      },
+      "title": "Price setup method"
+    },
+    "selectCountries": "Select Countries",
+    "showMarket": "Show market",
+    "steps": {
+      "stepFour": "Manage prices",
+      "stepOne": "Market details",
+      "stepThree": "Price setup",
+      "stepTwo": "Add products"
+    },
+    "usedIn": "Used in the"
+  },
+  "notificationCenter": {
+    "info": "Choose which in-app notifications you want to receive.",
+    "masterEnabled": "Enable notifications",
+    "title": "Notification preferences",
+    "updated": "Notification settings updated successfully"
+  },
+  "orderProducts": {
+    "autoCompletePaidOrders": "Automatically change paid new orders status to \"completed\"",
+    "autoCompletePaidOrdersHint": "When this feature is enabled, you won't be able to manually modify the status of paid orders that don't require shipping.",
+    "autoReadyPaidOrders": "Automatically change paid new orders status to \"ready\"",
+    "enableLowStockAlert": "Enable low stock notifications",
+    "enableLowStockAlertHint": "Show a “Low stock” label on products and notify you when their quantity reaches the set limit on the top of products page",
+    "enableLowStockLabel": "Show remaining quantity for products when they reach a certain inventory threshold.",
+    "enableManualPayment": "Enable manual payment",
+    "enableManualPaymentHint": "Record manual orders with payment handled outside Zid without affecting your business financial calculations.",
+    "enableMaxOrder": "Enable maximum order limit",
+    "enableMinOrder": "Enable minimum order limit",
+    "enableRelatedProducts": "Enable similar products on each product page",
+    "enableReorder": "Enable reorder feature",
+    "enableSoldCount": "Show product purchase count",
+    "enableWishlist": "Enable adding the products to wishlist",
+    "extendedSearch": "Show more flexible results to customers. When this option is enabled, product search results will be smarter and more comprehensive.",
+    "lowStockQuantityLimit": "Set quantity limit up to ",
+    "lowStockThreshold": "Low stock threshold",
+    "lowStockThresholdHint": "Send an alert when the available quantity is at or below this limit",
+    "lowStockThresholdInvalid": "Enter a whole number greater than 0",
+    "lowStockThresholdRequired": "Enter a low stock threshold",
+    "maxOrder": "Maximum order limit",
+    "minOrder": "Minimum order limit",
+    "minSoldCount": "Minimum number of purchases you want to display.",
+    "ordersTitle": "Order Properties",
+    "productsTitle": "Product properties",
+    "relatedProductsCount": "Number of related products you want to display",
+    "restockCancelledOrders": "Automatically return canceled orders' product quantities to inventory.",
+    "showConsigneeFeature": "Show feature for shipment receipt by another person.",
+    "showDonationFeature": "Show donation gift feature",
+    "showOutOfStockLast": "Show out of stock products at the end of the page.",
+    "showQuickDonation": "Enable Quick Donation"
+  },
+  "payments": {
+    "activateAlert": {
+      "button": "Check requested fields",
+      "description": "Complete the form with your business and personal details to enable secure and compliant payment processing.",
+      "fields": {
+        "bankCertificateCopy": "Copy of bank certificate",
+        "businessAddress": "Business address",
+        "civilId": "Civil ID",
+        "civilIdCopy": "Copy of Civil ID",
+        "commercialName": "Commercial name",
+        "maroofOrFreelanceCopy": "Copy of Maroof or freelance certificate",
+        "nationalAddress": "National address",
+        "ownerMobile": "Owner mobile number",
+        "ownerName": "Owner name",
+        "storeCategory": "Store category",
+        "storeIndustry": "Store industry"
+      },
+      "requiredFields": "Required fields",
+      "title": "To activate Zid Payments, please fill the following fields"
+    }
+  },
+  "priceManaging": {
+    "header": {
+      "description": "Set different product prices for each market and customer type, Marketplace pricing",
+      "title": "Product price"
+    }
+  },
+  "priceUpdateRequiredError": {
+    "action": "Products page",
+    "description": "You must change your product prices based on the new base currency you have selected.",
+    "title": "Change your product prices!"
+  },
+  "security": {
+    "authenticator": {
+      "backupCodes": {
+        "description": "Use these codes to log in if you lose your phone. Each code works once.",
+        "done": "I've saved them",
+        "download": "Download",
+        "shownOnce": "Save these codes somewhere safe now. We won't show them again.",
+        "title": "Your backup codes"
+      },
+      "backupCodesLeft_one": "1 backup code left",
+      "backupCodesLeft_other": "{{count}} backup codes left",
+      "enabled": "Authenticator app turned on",
+      "enabledSince": "On since {{date}}",
+      "lowBackupCodes": "You are running low on backup codes. Create new ones so you can still log in if you lose your phone.",
+      "reauth": {
+        "codeDescription": "Enter the 4-digit code we emailed you.",
+        "codeLabel": "Verification code",
+        "codeSent": "We emailed you a verification code",
+        "passwordDescription": "Enter your password to confirm it's you.",
+        "submit": "Confirm",
+        "title": "Confirm it's you",
+        "useCode": "Email me a code instead",
+        "usePassword": "Use my password instead"
+      },
+      "regenerate": "Generate new backup codes",
+      "remove": "Remove authenticator",
+      "removeDescription": "Logins will no longer ask for a code from the app, and your backup codes will stop working.",
+      "removeTitle": "Remove the authenticator app?",
+      "removed": "Authenticator app removed",
+      "replace": "Set up on a new phone",
+      "setup": {
+        "codeHelper": "Enter the 6-digit code from your authenticator app to confirm activation.",
+        "codeLabel": "Verification code",
+        "copy": "Copy",
+        "description": "Scan the QR code with your authenticator app, or copy the setup key and add it manually.",
+        "qrLabel": "QR code for your authenticator app",
+        "setupKey": "Setup key",
+        "title": "Connect authenticator app",
+        "verify": "Verify"
+      }
+    },
+    "exportedFilesDescription": "When enabled, all exported files will be secured with an auto-generated password sent to your registered email.",
+    "exportedFilesLabel": "Protect exported files with a password",
+    "highDescription": "Any idle member will be logged out after 30 minutes and will only be able to log in from a single browser.",
+    "highLabel": "High",
+    "lowDescription": "Any idle member will be logged out after 7 days.",
+    "lowLabel": "Low",
+    "moderateDescription": "Any idle member will be logged out after 2 hours.",
+    "moderateLabel": "Moderate",
+    "normalDescription": "Any idle member will be logged out after 24 hours.",
+    "normalLabel": "Normal",
+    "passkeys": {
+      "add": "Add passkey",
+      "createdAt": "Added {{date}}",
+      "deleteDescription": "You will no longer be able to sign in with \"{{name}}\". You can still sign in with a verification code.",
+      "deleteTitle": "Delete this passkey?",
+      "description": "Sign in with your fingerprint, face or screen lock instead of a verification code. Passkeys belong to your account only.",
+      "empty": "You haven't added a passkey yet.",
+      "lastUsedAt": "Last used {{date}}",
+      "loadError": "We couldn't load your passkeys. Please try again later.",
+      "neverUsed": "Never used",
+      "title": "Passkeys and biometrics",
+      "unsupported": "This browser or device doesn't support biometric sign-in, so a passkey can't be added from here."
+    },
+    "sessionManagement": "Session management",
+    "signoutAllDevices": "Sign out from all devices",
+    "signoutAllDevicesWarn": "Are you sure you want to sign out from all devices? All devices will be signed out from your account, including this device. Note: Signing out may affect Zapier integrations and any existing API integrations.",
+    "trustedDevices": {
+      "description": "Allow trusted devices to skip two-factor authentication for 30 days.",
+      "forgetAll": "Remove all devices",
+      "forgotten": "Trusted devices removed",
+      "remove": "Remove",
+      "title": "Trusted devices",
+      "trustedSince": "Trusted since {{date}}",
+      "unknownDevice": "Unknown browser"
+    },
+    "verification": {
+      "chooseMethod": "Choose your preferred verification method",
+      "ownerOnly": "Only the store owner can change this.",
+      "singleFactor": "Single-factor authentication",
+      "title": "Verification method",
+      "turnOffConfirm": "Turn off",
+      "turnOffDescription": "Team members will log in with their password only. Anyone using an authenticator app goes back to email or SMS codes, and we email them about it.",
+      "turnOffTitle": "Turn off two-factor authentication for the whole team?",
+      "twoFactor": "Two-factor authentication (2FA)"
+    },
+    "viaAuthenticator": "Via authenticator app",
+    "viaEmail": "Via email",
+    "viaSms": "Via SMS",
+    "viaWhatsapp": "Via WhatsApp"
+  },
+  "staffNotifications": {
+    "addEmail": "Add email",
+    "form": {
+      "status": {
+        "canceled": "Canceled",
+        "delivered": "Delivered",
+        "inDelivery": "In delivery",
+        "new": "New",
+        "preparing": "Preparing",
+        "ready": "Ready"
+      },
+      "title": "Select the statuses for which you would like to notify your team members"
+    },
+    "info": "Select the statuses for which you would like to notify your team members, then add their emails.",
+    "table": {
+      "title": "Team member emails"
+    },
+    "updated": "Staff notifications updated successfully",
+    "upgradeAlertText": "You have reached the maximum number of additions in your package. To add members without limits, upgrade your package."
+  },
+  "tax": {
+    "acknowledgeVatGuide": "I acknowledge that I have reviewed the VAT guide in the countries in which it is applied, and the stipulations have been applied.",
+    "activateVatInStore": "Activate VAT in store",
+    "addCountry": "Add country",
+    "applyVatOnShippingFees": "Do you want to apply VAT on shipping fees?",
+    "arePricesInclusiveOfVat": "Are the prices of your products inclusive of VAT?",
+    "arePricesInclusiveOfVatDescription": "By opting into this choice, you will be responsible for including the VAT in the product prices.",
+    "columns": {
+      "country": "Country",
+      "taxPercentage": "Tax percentage",
+      "vatNumber": "VAT number"
+    },
+    "createdSuccessfully": "Tax settings have been created successfully",
+    "deletedSuccessfully": "Tax settings have been deleted successfully",
+    "displayProductPriceInclusiveOfVat": "Do you want to display the product's price in your store inclusive of VAT?",
+    "displayProductPriceInclusiveOfVatDescription": "By opting out, the product will be shown without VAT at checkout.",
+    "iHaveReviewedVatGuide": "By clicking Save, I confirm that I have reviewed the applicable VAT regulations and applied them accordingly.",
+    "inputs": {
+      "chooseCountry": {
+        "placeholder": "Select country",
+        "title": "Select country"
+      },
+      "taxNumber": {
+        "placeholder": "Tax number",
+        "title": "Tax number"
+      },
+      "vatPercentage": {
+        "placeholder": "VAT percentage",
+        "title": "VAT percentage"
+      }
+    },
+    "moreInfo": "More info",
+    "showVatCertificateSwitch": "Show the VAT certificate at the bottom of the website page (example of how it appears on the site)",
+    "showVatNumberSwitch": "Show the VAT number at the bottom of the website page",
+    "taxPercentageForOtherCountries": "Tax percentage for other countries",
+    "taxedCountries": "Tax-taxed countries",
+    "updatedSuccessfully": "Tax settings has been updated successfully",
+    "vatCertificate": "VAT certificate",
+    "vatRegulationForSaudiStores": "For Saudi stores, tax regulations for e-commerce stores stipulate that the certificate must be shown in the store. For more information, see the regulation via the link below."
+  },
+  "team": {
+    "assignTeamMembersToLocationsBranches": "Assign team members to inventories / branches",
+    "authenticator": "Authenticator app",
+    "authenticatorOff": "Off",
+    "authenticatorOn": "On",
+    "createGroupSuccessfully": "Group has been created successfully.",
+    "dashboardPermission": "Dashboard permissions",
+    "deleteConfirm": "Are you sure you want to delete this team member?",
+    "deleteSuccess": "Team member has been deleted successfully.",
+    "form": {
+      "emptyGroupsHelperText": "You did not add any permission group.",
+      "emptyUsersHelperText": "You did not add any user.",
+      "group": "Permission groups",
+      "groupHelperText": "Add a new user to a similar group.",
+      "groupTitle": "Group information",
+      "is_pos_cashier_user": "POS cashier user",
+      "title": "Team member details",
+      "users": "Users",
+      "usersPlaceholder": "Select users"
+    },
+    "grantFullPermissions": "Grant full permission",
+    "inventoryUsersLinkCreatedSuccessfully": "Inventory users link created successfully",
+    "linkToInventory": "Assign to inventory / branch",
+    "locationsBranches": {
+      "label": "Assigned inventories / branches",
+      "placeholder": "Choose assigned inventories / branches"
+    },
+    "logs": {
+      "columns": {
+        "actions": "Actions",
+        "performedBy": "Changed by",
+        "section": "Section",
+        "time": "Time"
+      },
+      "mainAlert": "Only actions from the last {{days}} days are shown below.",
+      "notSelected": "Not selected",
+      "performer": "Team member",
+      "section": "Section",
+      "viaApp": "via {{app}}"
+    },
+    "permissions": "Permissions",
+    "permissionsCount": "{{selected}} of {{total}}",
+    "posPermission": "POS app permissions (ZidPOS)",
+    "removeGroupsDialog": {
+      "description": "You have removed some permissions that were previously assigned. This will remove the user from all groups listed below.",
+      "title": "Remove from groups"
+    },
+    "seatedAlert": {
+      "description": "If this user is granted any dashboard permissions, they will count as a seated user.",
+      "title": "Adding a user"
+    },
+    "seatedAlertGroup": {
+      "description": "When adding a user to this group and granting them dashboard permissions, they will count as a seated user.",
+      "title": "Adding a user to a group"
+    },
+    "teamCreatedSuccessfully": "User invitation has been sent to your email.",
+    "updateGroupSuccess": "Group has been updated successfully.",
+    "updateMemberSuccess": "Team member has been updated successfully.",
+    "upgradeLimit": "You have reached the maximum additions allowed in your package. To add unlimited members, upgrade your package.",
+    "usersCount": "Users"
+  },
+  "urlRedirects": {
+    "actions": {
+      "add": "Create New Link",
+      "confirmDelete": "هل أنت متأكد من أنك تريد حذف إعادة التوجية {{urlNames}}?",
+      "export": "Export Links",
+      "import": "Import Links"
+    },
+    "columns": {
+      "urlName": "Redirect Name",
+      "urlRedirectFrom": "Redirect From",
+      "urlRedirectTo": "Redirect To"
+    },
+    "description": "Create a redirect from <b>a broken link (404)</b> to a new one.",
+    "emptyState": {
+      "action": "Set Up Redirection",
+      "description": "You have not redirected any link to another address.",
+      "title": "There are no links."
+    },
+    "form": {
+      "add": "Add new redirect link",
+      "destinationPlaceholder": "e.g product/category/charger",
+      "edit": "Edit redirect link",
+      "pageName": "Redirect Name",
+      "pageNamePlaceholder": "e.g Wireless charger",
+      "sourcePlaceholder": "e.g product/charger"
+    },
+    "import": {
+      "failed": "Failed to import Links",
+      "generalError": "Failed to import Links",
+      "linksImportedSuccessfully": "Links imported successfully",
+      "steps": {
+        "step1": "Download the following template to fill your links",
+        "step2": "Upload the template after filling it"
+      },
+      "title": "Import Links"
+    },
+    "subTitle": "Redirected links",
+    "title": "URL Redirects"
+  },
+  "workTime": {
+    "activate": "Activate feature",
+    "activatedSuccessfully": "Feature has been activated successfully",
+    "addNewPeriod": "Add new period",
+    "address": "Address",
+    "alerts": {
+      "orders": "Your customers will not be able to make any purchases while the store is suspended; they can only browse the store and add items to cart.",
+      "ordersTitle": "Temporarily Unavailable for Orders",
+      "storeTitle": "Your store will be closed during selected periods"
+    },
+    "closingMechanism": "Choose the closing mechanism",
+    "countDown": "Show countdown until store reopens.",
+    "customPeriod": "Custom days period",
+    "disable": "Disable feature",
+    "disabledSuccessfully": "Feature has been disabled successfully",
+    "hoursPeriod": "Hours",
+    "messageBody": "Message text",
+    "minutesPeriod": "Minutes period",
+    "noPeriod": "No specific duration",
+    "notifyCustomerCheckbox": "Show notification to customers when store reopens.",
+    "ordersHold": "Stop receiving orders",
+    "period": "Specific period",
+    "removePeriod": "Remove period",
+    "selectPeriodType": "Select period type",
+    "stopFromDate": "Stop from date",
+    "stopToDate": "To date",
+    "storeClosed": "Close store completely",
+    "submit": "Save",
+    "timePeriodInHours": "Time period in hours",
+    "timePeriodInMinutes": "Time period in minutes",
+    "updateSuccessfully": "Updated hours of operations successfully",
+    "viewExample": "View example",
+    "visitStorePage": "store page",
+    "workTimeExample": "Example of how it appears in your store.",
+    "workTimeExampleStoreClosed": "If you do not select a specific time, the store will be closed until you open it again."
+  }
+}

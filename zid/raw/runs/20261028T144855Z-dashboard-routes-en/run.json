@@ -1,0 +1,52 @@
+{
+  "run_id": "20261028T144855Z-dashboard-routes-en",
+  "platform": "zid",
+  "label": "dashboard-routes-en",
+  "kind": "browser",
+  "started": "2026-10-28T14:48:58.328Z",
+  "extra": {
+    "store": "127604",
+    "commands_file": "/tmp/claude-1000/-home-hamza-projects-sharrwah-review-records-observed-sh/7bd6c2ef-97fa-428a-b1cc-51d5547d92a9/scratchpad/zid-demo/sweep-commands.jsonl"
+  },
+  "script": {
+    "path": "capture/runs/journey-repl.mjs",
+    "sha256": "e0e17262e2b7bc0e98a04efaafe98de1802669fd99120874e98678af83fd8916"
+  },
+  "ended": "2026-10-28T15:07:24.299Z",
+  "network": {
+    "via": "browser <host>/cdn-cgi/trace",
+    "hosts": {
+      "dashboard.zid.sa": {
+        "ip": "134.35.227.x",
+        "loc": "YE",
+        "colo": "MCT",
+        "http": "http/2"
+      },
+      "hermod.zid.sa": {
+        "ip": "134.35.227.x",
+        "loc": "YE",
+        "colo": "MCT",
+        "http": "http/2"
+      },
+      "zid.sa": {
+        "ip": "134.35.227.x",
+        "loc": "YE",
+        "colo": "MCT",
+        "http": "http/2"
+      }
+    },
+    "ip": "134.35.227.x",
+    "loc": "YE",
+    "colo": "MCT",
+    "http": "http/2"
+  },
+  "context": "capture profile",
+  "browser_version": "154.0.8037.57",
+  "playwright_core": "1.63.0",
+  "node": "v23.0.0",
+  "cdp": "http://127.0.0.1:9230",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  }
+}

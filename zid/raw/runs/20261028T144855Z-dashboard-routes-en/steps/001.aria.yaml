@@ -1,0 +1,31 @@
+- banner:
+  - img
+  - link "ar":
+    - /url: /ar-sa/login
+    - paragraph: ar
+- main:
+  - heading "Welcome back!" [level=1]
+  - paragraph: Let's get you back to what matters.
+  - text: Email
+  - textbox "Email":
+    - /placeholder: Eg. example@gmail.com
+  - button "Next" [disabled]
+  - separator:
+    - paragraph: or
+  - button "Login with Google"
+  - paragraph: Don't have an account?
+  - link "Create account":
+    - /url: /en-sa/register
+- contentinfo:
+  - text: By proceeding, you agree to the
+  - link "terms":
+    - /url: https://zid.sa/en/legal/terms-conditions
+  - text: and
+  - link "privacy policy":
+    - /url: https://zid.sa/en/legal/privacy-policy
+  - text: .
+- heading "Enjoy an Extra Free Year 🎁" [level=6]
+- paragraph: Complete 96 orders and unlock an additional year of your subscription on us!
+- separator
+- heading "Earn Cashback on Every Order 💸" [level=6]
+- paragraph: Complete 100 orders and get 0.25% cashback for every completed order.

@@ -1,0 +1,20 @@
+{"intent":"open the demo entry in English","do":"goto","url":"https://dashboard.zid.sa/en-sa/demo","settleMs":4000}
+{"intent":"manifest route root","do":"goto","url":"https://dashboard.zid.sa/"}
+{"intent":"manifest route $lang.create-store.monthly-revenue-call","do":"goto","url":"https://dashboard.zid.sa/en-sa/create-store/monthly-revenue-call"}
+{"intent":"manifest route $lang.create-store.agent-call-schedule","do":"goto","url":"https://dashboard.zid.sa/en-sa/create-store/agent-call-schedule"}
+{"intent":"manifest route $lang.create-store.where-do-you-sell","do":"goto","url":"https://dashboard.zid.sa/en-sa/create-store/where-do-you-sell"}
+{"intent":"manifest route $lang.create-store.what-do-you-sell","do":"goto","url":"https://dashboard.zid.sa/en-sa/create-store/what-do-you-sell"}
+{"intent":"manifest route $lang.create-store.selling-channels","do":"goto","url":"https://dashboard.zid.sa/en-sa/create-store/selling-channels"}
+{"intent":"manifest route $lang.create-store.current-platform","do":"goto","url":"https://dashboard.zid.sa/en-sa/create-store/current-platform"}
+{"intent":"manifest route $lang.create-store.platform-switch","do":"goto","url":"https://dashboard.zid.sa/en-sa/create-store/platform-switch"}
+{"intent":"manifest route $lang.create-store.monthly-revenue","do":"goto","url":"https://dashboard.zid.sa/en-sa/create-store/monthly-revenue"}
+{"intent":"manifest route $lang.create-store.launching-time","do":"goto","url":"https://dashboard.zid.sa/en-sa/create-store/launching-time"}
+{"intent":"manifest route $lang.create-store.business-type","do":"goto","url":"https://dashboard.zid.sa/en-sa/create-store/business-type"}
+{"intent":"manifest route $lang.create-store.store-name","do":"goto","url":"https://dashboard.zid.sa/en-sa/create-store/store-name"}
+{"intent":"manifest route $lang.create-store.user-role","do":"goto","url":"https://dashboard.zid.sa/en-sa/create-store/user-role"}
+{"intent":"manifest route $lang.create-store.thank-you","do":"goto","url":"https://dashboard.zid.sa/en-sa/create-store/thank-you"}
+{"intent":"manifest route $lang.subscription.checkout","do":"goto","url":"https://dashboard.zid.sa/en-sa/subscription/checkout"}
+{"intent":"manifest route $lang.register_.mobile-otp","do":"goto","url":"https://dashboard.zid.sa/en-sa/register/mobile-otp"}
+{"intent":"manifest route $lang.subscription._index","do":"goto","url":"https://dashboard.zid.sa/en-sa/subscription"}
+{"intent":"manifest route $lang.create-store._index","do":"goto","url":"https://dashboard.zid.sa/en-sa/create-store"}
+{"do":"close"}

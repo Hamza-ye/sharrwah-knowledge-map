@@ -1,0 +1,148 @@
+{
+  "banner": {
+    "countdown": "Offer ends in {{duration}}",
+    "countdownPermanent": "This offer continues permanently",
+    "expired": "Offer ended",
+    "faq": "FAQ",
+    "journeyComplete": {
+      "cashbackDetails": "Cashback details",
+      "description": "You have successfully completed all National Day challenges, and you can now enjoy <amount/> cashback with every completed order",
+      "progressDetails": "Progress details",
+      "title": "Congratulations! The challenge journey is complete 🎉"
+    },
+    "ordersProgress": "{{completed}} of {{required}} orders completed",
+    "progressDetails": "More details",
+    "progressStatus": "Your Reward Progress",
+    "title": "Celebrate Saudi National Day with Zid",
+    "viewReports": "View reports"
+  },
+  "countdownUnits": {
+    "days_one": "{{count}} day",
+    "days_other": "{{count}} days",
+    "hours_one": "{{count}} hour",
+    "hours_other": "{{count}} hours",
+    "minutes_one": "{{count}} minute",
+    "minutes_other": "{{count}} minutes",
+    "seconds_one": "{{count}} second",
+    "seconds_other": "{{count}} seconds"
+  },
+  "dialogs": {
+    "rewardAdded": {
+      "action": "Got it",
+      "description": "The cashback for this order has been added to your wallet.",
+      "title": "Your reward has been added 🎉"
+    }
+  },
+  "existing": {
+    "cashbackChoiceDescription": "Complete {{ordersRequired}} orders and get <amount/> cashback for every completed order. Every order brings you closer to your reward!",
+    "choiceSubtitle": "Reach your goals and unlock exclusive rewards with every milestone",
+    "startChallenge": "Start challenge",
+    "subscribeNow": "Subscribe now",
+    "subtitle": "<amount/> cashback after every completed order",
+    "upgradeHint": "Subscribe to a yearly package to unlock lifetime subscription benefits",
+    "yearlyChoiceDescription": "Complete {{count}} orders and unlock an additional year of your subscription on us!"
+  },
+  "faq": {
+    "items": {
+      "cashbackCalculation": {
+        "answer": "You earn the specified cashback amount for each eligible completed and paid order, and all of the money collected will be deposited daily to the wallet according to the campaign Terms & Conditions.",
+        "question": "How is cashback calculated?"
+      },
+      "howItWorks": {
+        "answer": "Complete eligible orders during the campaign period to earn a free year subscription and / or cashback. The more eligible orders you complete, the more rewards you earn.",
+        "question": "How does the National Day campaign work?"
+      },
+      "howToEarnRewards": {
+        "answer": "Complete eligible orders during the campaign period to earn the free year subscription and / or cashback based on the campaign rules.",
+        "question": "How do I earn rewards?"
+      },
+      "orderEligibility": {
+        "answer": "Only eligible orders that meet the campaign Terms & Conditions will be counted.",
+        "question": "Are all orders eligible?"
+      },
+      "trackProgress": {
+        "answer": "You can track your completed orders, progress, and earned cashback from the campaign page or your dashboard.",
+        "question": "Where can I track my progress and rewards?"
+      },
+      "unlockNextMilestone": {
+        "answer": "Complete the required number of eligible orders to automatically unlock the next milestone and its rewards.",
+        "question": "How do I unlock the next milestone?"
+      },
+      "whenDoesCampaignEnd": {
+        "answer": "The campaign ends at the end of the promotional period. Make sure to complete your eligible orders before the campaign ends.",
+        "question": "When does the campaign end?"
+      }
+    },
+    "subtitle": "National Day Offer",
+    "title": "Frequently asked questions"
+  },
+  "orders": {
+    "creditedDescription": "<amount/> cashback was added to your wallet after this order was completed.",
+    "creditedTitle": "Your reward has been added 🎉",
+    "earnedAmount": "You earned <amount/>",
+    "eligibleDescription": "You earned <amount/> cashback from this order.",
+    "eligibleTitle": "Growth reward",
+    "ineligibleDescriptionLink": "growth rewards",
+    "ineligibleDescriptionPrefix": "This order does not qualify for the ",
+    "ineligibleDescriptionSuffix": " program.",
+    "ineligibleLink": "This order does not qualify for the growth reward",
+    "ineligibleTitle": "Not eligible for growth rewards",
+    "pendingDescription": "Your cashback of <amount/> will be added once the order is completed.",
+    "sectionSubtitle": "{{count}} orders received cashback",
+    "sectionTitle": "Growth rewards"
+  },
+  "progressDetails": {
+    "countdownEndsIn": "Offer ends in",
+    "description": "Keep growing your store and completing orders. Each milestone unlocks new stages and opportunities in your growth journey.",
+    "milestones": {
+      "stage_one": {
+        "subtitle": "Get a free year of subscription",
+        "title": "Enjoy an Extra Free Year 🎁"
+      },
+      "tier_100": {
+        "activeDescription": "Complete {{ordersRequired}} orders and get <amount/> cashback for every completed order. Every order brings you closer to your reward!",
+        "subtitle": "<amount/> cashback after every successful order",
+        "title": "Earn Cashback on Every Order 💸"
+      },
+      "tier_1000": {
+        "activeDescription": "Complete {{ordersRequired}} orders and earn <amount/> cashback for every completed order. The more your store grows, the bigger your reward!",
+        "subtitle": "<amount/> cashback after every completed order",
+        "title": "Double Your Cashback 📈"
+      }
+    },
+    "offerPermanent": "This offer continues permanently",
+    "ordersCompletedStatus": "<bold>{{count}}</bold> orders completed so far",
+    "termsApply": "<1>Terms and conditions</1> apply to orders.",
+    "title": "Track Your Goals"
+  },
+  "stageOne": {
+    "description": "Reach the required number of orders and start earning rewards for every completed order",
+    "subtitle": "Complete {{count}} orders and unlock an additional year of your subscription on us!",
+    "subtitleWithProgress": "Complete {{count}} orders ({{completed}} orders completed)",
+    "title": "Enjoy an Extra Free Year 🎁"
+  },
+  "stageTwo": {
+    "bulletMilestone": "Complete {{ordersRequired}} orders and get another year of subscription for free 🎁",
+    "bulletPermanent": "This offer continues permanently",
+    "cashbackLine": "<amount/> cashback after every completed order",
+    "innerDescription": "Complete {{ordersRequired}} orders and get <amount/> cashback for every completed order. Every order brings you closer to your reward!",
+    "innerDescriptionX2": "Complete {{ordersRequired}} orders and earn <amount/> cashback for every completed order. The more your store grows, the bigger your reward!",
+    "milestoneSubtitle": "Complete {{ordersRequired}} orders and get another year of subscription for free 🎁",
+    "panelTitle": "Earn Cashback on Every Order 💸",
+    "panelTitleX2": "Double Your Cashback 📈",
+    "permanentNote": "This offer continues permanently",
+    "termsNote": "Terms and conditions apply."
+  },
+  "switcher": {
+    "cashbackDetails": "Cashback details",
+    "subtitle": "Every order gets you closer to more rewards! Earn <amount/> cashback on every completed order. <terms>Terms & Conditions</terms> apply.",
+    "title": "Immediate cashback"
+  },
+  "wallet": {
+    "cashbackBalance": {
+      "label": "Cashback balance",
+      "ordersReceived": "{{count}} orders received cashback",
+      "pendingDescription": "Your balance that has not arrived yet is <amount/>"
+    }
+  }
+}

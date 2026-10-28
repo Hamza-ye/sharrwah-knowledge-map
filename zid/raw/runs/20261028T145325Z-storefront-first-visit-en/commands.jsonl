@@ -1,0 +1,3 @@
+{"intent":"first visit to the storefront, English path, no cookies","do":"goto","url":"https://zid-demostore.com/en/","settleMs":4000}
+{"intent":"the storefront address the page declares for English in Kuwait (hreflang en-kw)","do":"goto","url":"https://zid-demostore.com/en-kw/","settleMs":4000}
+{"do":"close"}

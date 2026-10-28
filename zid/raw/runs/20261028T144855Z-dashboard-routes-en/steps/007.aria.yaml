@@ -1,0 +1,324 @@
+- banner:
+  - img
+  - heading "Experience the store, not the idea.. Explore the demo, then launch yours 🚀" [level=6]
+  - button "Launch your store today"
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/127604
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "50"
+  - link:
+    - /url: /en-sa/stores/127604/support
+  - button
+  - button "Whats new"
+  - button "Pinned and recent pages"
+  - img
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604
+  - link "Orders":
+    - /url: /en-sa/stores/127604/orders
+  - link "Products":
+    - /url: /en-sa/stores/127604/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/127604/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/127604/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/127604/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/127604/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/127604/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/127604/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/127604/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/127604/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/127604/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/127604/channels
+    - text: Channels
+    - button
+- list:
+  - heading "Return to Old Dashboard" [level=6]
+  - text: You can always switch back to the all-new Zid later.
+  - button "Take me back"
+- main:
+  - heading "Welcome back, Zid Demo Store" [level=5]
+  - text: Last 90 days
+  - textbox: 30 Jul - 28 Oct, 2026
+  - button
+  - heading "Quick access" [level=6]
+  - button "View all"
+  - button "Pin page"
+  - link "Dashboard":
+    - /url: /en-sa/stores/127604/
+    - paragraph: Dashboard
+  - separator
+  - button "Pin page"
+  - link "All orders":
+    - /url: /en-sa/stores/127604/orders
+    - paragraph: All orders
+  - separator
+  - button "Pin page"
+  - link "All products":
+    - /url: /en-sa/stores/127604/catalog/products
+    - paragraph: All products
+  - separator
+  - button "Pin page"
+  - link "Store information":
+    - /url: /en-sa/stores/127604/settings/information
+    - paragraph: Store information
+  - separator
+  - button "Pin page"
+  - link "Legal pages":
+    - /url: /en-sa/stores/127604/channels/online-store/pages/legal
+    - paragraph: Legal pages
+  - separator
+  - button "Pin page"
+  - link "Configure your invoices":
+    - /url: /en-sa/stores/127604/settings/invoice
+    - paragraph: Configure your invoices
+  - separator
+  - button "Pin page"
+  - link "Account settings":
+    - /url: /en-sa/stores/127604/settings/account
+    - paragraph: Account settings
+  - text: Celebrate Saudi National Day with Zid
+  - button "More details"
+  - paragraph: Reach your goals and unlock exclusive rewards with every milestone
+  - paragraph: Enjoy an Extra Free Year 🎁
+  - paragraph: Complete 1932 orders and unlock an additional year of your subscription on us!
+  - button "Subscribe now"
+  - paragraph: Earn Cashback on Every Order 💸
+  - paragraph: Complete 100 orders and get 0.25  cashback for every completed order. Every order brings you closer to your reward!
+  - button "Start challenge"
+  - button
+  - button
+  - link "swiper Qitaf on your store! 👀 They pay, they earn… you sell more":
+    - /url: https://dashboard.zid.sa/en-sa/stores/37213/marketing/new-qitaf
+    - img "swiper"
+    - heading "Qitaf on your store! 👀" [level=4]
+    - paragraph: They pay, they earn… you sell more
+  - link "swiper 4 Installments for your customer One click for you to activate":
+    - /url: https://dashboard.zid.sa/en-sa/stores/3/services/payments/settings/networks
+    - img "swiper"
+    - heading "4 Installments for your customer" [level=4]
+    - paragraph: One click for you to activate
+  - link "swiper Your business with Zid pays back Cashback on every order, with an additional subscription on your current 💸":
+    - /url: https://zid.sa/en/national-day/
+    - img "swiper"
+    - heading "Your business with Zid pays back" [level=4]
+    - paragraph: Cashback on every order, with an additional subscription on your current 💸
+  - link "swiper Get ready for Saudi National Day with Jahez 🇸🇦 Activate Jahez now":
+    - /url: https://dashboard.zid.sa/en-sa/stores/3/channels/marketplaces/connect/activation/jahez
+    - img "swiper"
+    - heading "Get ready for Saudi National Day with Jahez 🇸🇦" [level=4]
+    - paragraph: Activate Jahez now
+  - paragraph: Sales
+  - heading " 0" [level=6]
+  - img
+  - combobox "Default"
+  - link "View report":
+    - /url: /en-sa/stores/127604/analytics/marketing/summary#sales-value-overtime-chart
+  - paragraph: Orders
+  - heading "0" [level=6]
+  - img
+  - combobox "Default"
+  - link "View report":
+    - /url: /en-sa/stores/127604/analytics/marketing/orders#orders-overtime-chart
+  - paragraph: Visits
+  - heading "490" [level=6]
+  - img
+  - combobox "Default"
+  - link "View report":
+    - /url: /en-sa/stores/127604/analytics/marketing/customers#visits-overtime-chart
+  - paragraph: Conversion
+  - heading "0.00%" [level=6]
+  - combobox "All order sources"
+  - img
+  - combobox "Default"
+  - link "View report":
+    - /url: /en-sa/stores/127604/analytics/marketing/customers
+  - heading "Track your goals" [level=6]
+  - paragraph: Setting order goals helps us provide personalized recommendations and insights to boost your business performance. we'll track your progress and suggest actionable steps to reach your targets.
+  - separator
+  - tablist:
+    - tab "Monthly" [selected]
+    - tab "Annual"
+  - heading "Progress towards your goal" [level=6]
+  - paragraph: 0.00%
+  - progressbar
+  - text: 0k 1.3k 2.5k 3.8k 5.0k
+  - paragraph: Current orders
+  - paragraph: "0"
+  - paragraph: Goal
+  - paragraph: 5,000
+  - paragraph: Orders to goal
+  - paragraph: 5,000
+  - link "Get help to achieve your goals":
+    - /url: /en-sa/stores/127604/services/growth
+  - button "Edit goals"
+  - heading "Compare your growth" [level=6]
+  - separator
+  - paragraph: 0 orders
+  - paragraph: Total orders
+  - text: Select indicator
+  - combobox "Select indicator Total orders": Total orders
+  - text: Select date Last 30 days
+  - textbox "Select date": 28 Sep - 28 Oct, 2026
+  - button
+  - img
+  - text: Oct 22, 2026 Oct 24, 2026 Oct 26, 2026 Oct 28, 2026 0
+  - heading "Newest orders" [level=6]
+  - table:
+    - rowgroup:
+      - row "Order number Customer Payment Shipping Price Order status Created date":
+        - columnheader "Order number"
+        - columnheader "Customer": Customer Mobile
+        - columnheader "Payment": Payment Payment status
+        - columnheader "Shipping"
+        - columnheader "Price"
+        - columnheader "Order status"
+        - columnheader "Created date"
+        - columnheader
+    - rowgroup:
+      - row "#58332475 علي الشمري 96599521252 Apple Pay Doesn't Require Shipping 8.149 KWD New 2025-09-27 07:50 am View":
+        - cell "#58332475":
+          - link "#58332475":
+            - /url: /en-sa/stores/127604/orders/58332475
+        - cell "علي الشمري 96599521252":
+          - link "علي الشمري 96599521252":
+            - /url: /en-sa/stores/127604/customers/14802702
+            - text: علي الشمري
+            - paragraph: "96599521252"
+        - cell "Apple Pay":
+          - link "Apple Pay":
+            - /url: /en-sa/stores/127604/orders/58332475
+        - cell "Doesn't Require Shipping":
+          - link "Doesn't Require Shipping":
+            - /url: /en-sa/stores/127604/orders/58332475
+            - img
+            - paragraph: Doesn't Require Shipping
+        - cell "8.149 KWD":
+          - link "8.149 KWD":
+            - /url: /en-sa/stores/127604/orders/58332475
+        - cell "New":
+          - link "New":
+            - /url: /en-sa/stores/127604/orders/58332475
+        - cell "2025-09-27 07:50 am":
+          - link "2025-09-27 07:50 am":
+            - /url: /en-sa/stores/127604/orders/58332475
+        - cell "View":
+          - link "View":
+            - /url: /en-sa/stores/127604/orders/58332475
+      - row "#58278453 راشد المري 966546788700 Bank Transfer Doesn't Require Shipping 100  New 2025-09-26 10:51 am View":
+        - cell "#58278453":
+          - link "#58278453":
+            - /url: /en-sa/stores/127604/orders/58278453
+        - cell "راشد المري 966546788700":
+          - link "راشد المري 966546788700":
+            - /url: /en-sa/stores/127604/customers/8358724
+            - text: راشد المري
+            - paragraph: "966546788700"
+        - cell "Bank Transfer":
+          - link "Bank Transfer":
+            - /url: /en-sa/stores/127604/orders/58278453
+        - cell "Doesn't Require Shipping":
+          - link "Doesn't Require Shipping":
+            - /url: /en-sa/stores/127604/orders/58278453
+            - img
+            - paragraph: Doesn't Require Shipping
+        - cell "100 ":
+          - link "100 ":
+            - /url: /en-sa/stores/127604/orders/58278453
+        - cell "New":
+          - link "New":
+            - /url: /en-sa/stores/127604/orders/58278453
+        - cell "2025-09-26 10:51 am":
+          - link "2025-09-26 10:51 am":
+            - /url: /en-sa/stores/127604/orders/58278453
+        - cell "View":
+          - link "View":
+            - /url: /en-sa/stores/127604/orders/58278453
+      - row "#58128293 Waqas +919537612458 Bank Transfer Doesn't Require Shipping 10.25 New 2025-09-23 07:33 pm View":
+        - cell "#58128293":
+          - link "#58128293":
+            - /url: /en-sa/stores/127604/orders/58128293
+        - cell "Waqas +919537612458":
+          - link "Waqas +919537612458":
+            - /url: /en-sa/stores/127604/customers/16350571
+            - text: Waqas
+            - paragraph: "+919537612458"
+        - cell "Bank Transfer":
+          - link "Bank Transfer":
+            - /url: /en-sa/stores/127604/orders/58128293
+        - cell "Doesn't Require Shipping":
+          - link "Doesn't Require Shipping":
+            - /url: /en-sa/stores/127604/orders/58128293
+            - img
+            - paragraph: Doesn't Require Shipping
+        - cell "10.25":
+          - link "10.25":
+            - /url: /en-sa/stores/127604/orders/58128293
+        - cell "New":
+          - link "New":
+            - /url: /en-sa/stores/127604/orders/58128293
+        - cell "2025-09-23 07:33 pm":
+          - link "2025-09-23 07:33 pm":
+            - /url: /en-sa/stores/127604/orders/58128293
+        - cell "View":
+          - link "View":
+            - /url: /en-sa/stores/127604/orders/58128293
+  - link "View all orders":
+    - /url: /en-sa/stores/127604/orders
+  - heading "Sales by channel" [level=6]
+  - combobox "Default"
+  - img
+  - heading "Hang tight — once your 'Sales channel' data starts rolling in, you’ll see it all right here" [level=6]
+  - link "View report":
+    - /url: /en-sa/stores/127604/analytics/marketing/customers#sales-channel-chart
+  - heading "Live visitors" [level=6]
+  - paragraph: Real-time online store visitors
+  - heading "0" [level=4]
+  - link "View analytics":
+    - /url: /en-sa/stores/127604/analytics/live
+  - heading "Customers reviews" [level=6]
+  - paragraph: What your customers are saying
+  - paragraph: Total reviews
+  - paragraph: "0"
+  - paragraph: Published reviews
+  - paragraph: "0"
+  - paragraph: Pending reviews
+  - paragraph: "0"
+  - link "Manage reviews":
+    - /url: /en-sa/stores/127604/customers/reviews
+  - heading "Top products" [level=6]
+  - combobox "Select option":
+    - paragraph: Select option
+  - tablist:
+    - tab "Total sold quantity" [selected]
+    - tab "Total sales value"
+  - table:
+    - rowgroup:
+      - row "Product Total sold quantity Total sales value":
+        - columnheader "Product"
+        - columnheader "Total sold quantity"
+        - columnheader "Total sales value"
+  - heading "Nothing to show here yet" [level=6]
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img
