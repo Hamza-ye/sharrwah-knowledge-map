@@ -15,8 +15,17 @@ The system Google Chrome (`google-chrome`) is used, headed.
 ## Browser
 
 ```sh
-capture/chrome.sh [start-url]     # ./capture-profile, port 9230
+capture/chrome.sh [start-url]                                                  # ./capture-profile, port 9230 (Zid's demo)
+CAPTURE_PROFILE=$PWD/capture-profile-signup CDP_PORT=9240 capture/chrome.sh    # Zid partner account, development store
 ```
+
+- A run on the second browser takes `CDP_URL=http://127.0.0.1:9240`.
+- The development store is signed in to from the Partner Dashboard (`partner.zid.sa`, Development Stores, Dashboard
+  Access: a one-time link to `dashboard.zid.sa/en-sa/login/otl/…`).
+- Codes Zid emails go to the capture inbox (`sharrwah@gmail.com`, read in observed-sh's owner browser, port 9222,
+  Gmail account 1). A sign-up code expires in about two minutes: read it at once, and type all its digits in one
+  `journey_step.py` call with `"readyTimeout": 1000` on each step (a page without a main landmark otherwise waits 30
+  seconds a step).
 
 - Do not close a tab a run is using: its trace is written when the run closes.
 - After signing in to a new account or store, add it to `<platform>/index/instruments.json` with the run that shows it.

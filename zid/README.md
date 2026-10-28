@@ -14,6 +14,13 @@ of one store: Zid Demo Store, store 127604, on the Professional plan (yearly, to
 comes from, are in [index/instruments.json](index/instruments.json). The runs were made from Yemen (`run.json`:
 `network`).
 
+A second store is our own: development store 3277610, "Capture Dev Store" (`https://gx4idm.zid.store/`), made from a
+Zid Partner Dashboard account (`partner.zid.sa`, Development Stores) and signed in to through the partner dashboard's
+one-time link. It is on `new_professional.lifetime`, with a primary market made with it; a second market was made on
+it through the API and removed, and its country was changed to Kuwait (run notes of runs
+20261028T164816Z-partner-signup-en and 20261028T170107Z-devstore-markets-en). A store from Zid's public sign-up was
+not reached: its phone code did not arrive (run 20261028T155912Z-signup-en).
+
 ## Where to start
 
 | To find | Read |

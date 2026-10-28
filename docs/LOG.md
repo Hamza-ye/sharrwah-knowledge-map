@@ -30,6 +30,17 @@ Dated record of the work: what was decided, what was measured.
   credentials were not provided."; a save of Checkout page options answered 403 "This action is not allowed on demo
   store"; the dashboard's own `POST /v1/analytics/sales-over-time` answered 403 `DEMO_STORE_WRITE_BLOCKED`. The demo
   shows the store; a store with markets needs a store of our own.
+- Zid's public sign-up: email, then personal information (name, phone with a country list of 207 codes, Yemen among
+  them), then store details. The emailed code expires fast: typed after about two minutes it answered "Verification
+  code has expired"; the founder typed a resent one by hand and it passed. The phone step answers "Verification code
+  is sent to your whatsapp number"; no message reached the founder's Yemeni numbers.
+- Zid's Partner Dashboard (`partner.zid.sa`) registers a partner with no phone code (country list of 242 entries),
+  confirms the email by a link, and makes a development store in one step (name and password). The development store
+  is on `new_professional.lifetime`, has a primary market made with it (Saudi Arabia, SAR) and the flag
+  `must_use_markets_pricing` false, like the demo. On it, `POST v1/markets` with the create form's body answered 201;
+  the market could be published, listed, read and removed in the dashboard, and no settings page showed a market.
+  Its country list on Business address has 162 entries; changing the store's country to Kuwait asked only for a
+  district and a street, and left the currency (SAR) and the primary market (Saudi Arabia) as they were.
 - Route sweeps: a page takes 25 to 80 seconds to settle (the dashboard keeps connections open, so the network-idle
   wait runs its full 10 seconds), and the machine was shared with other capture work (load 16 to 28 on 4 cores). With
   three sweeps at once (one in the profile's window, two in fresh-context windows), run

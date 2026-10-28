@@ -73,6 +73,45 @@
         "colo": "MCT"
       },
       "run": "20261028T144855Z-dashboard-routes-en"
+    },
+    "merchant_signup": {
+      "email": "sharrwah+zid@gmail.com",
+      "user_id": 3348515,
+      "phone": "the founder's Yemeni mobile (+967)",
+      "state": "email verified; the phone code step not passed (no WhatsApp or SMS message reached the phone): no store",
+      "run": "20261028T155912Z-signup-en",
+      "date": "2026-10-28"
+    },
+    "partner_account": {
+      "dashboard": "https://partner.zid.sa/",
+      "email": "sharrwah+zidpartner@gmail.com",
+      "password": ".env ZID_PARTNER_PASSWORD",
+      "country": "Yemen",
+      "type": "An Independent Developer, Developing Public App",
+      "email_verified": true,
+      "run": "20261028T164816Z-partner-signup-en",
+      "date": "2026-10-28"
+    },
+    "development_store": {
+      "id": 3277610,
+      "uuid": "a317597e-b2e1-4b0d-bdb8-47f5829e2842",
+      "title": "Capture Dev Store",
+      "storefront": "https://gx4idm.zid.store/",
+      "store_email": "6o579eanci@zam-partner.email",
+      "password": ".env ZID_DEVSTORE_PASSWORD",
+      "sign_in": "Partner Dashboard > Development Stores > Dashboard Access (a one-time link to dashboard.zid.sa)",
+      "package": "new_professional.lifetime",
+      "feature_flags": {
+        "must_use_markets_pricing": false
+      },
+      "markets": "Main Market (primary, Saudi Arabia, SAR, published), made with the store; a Kuwait market was made and removed in run 20261028T170107Z-devstore-markets-en",
+      "changed": "business address set to Kuwait, Kuwait City, district \"Capture District\", street \"1 Capture Street\" (run 20261028T170107Z-devstore-markets-en, steps 47 to 56); currency SAR and the primary market unchanged",
+      "browser": {
+        "profile": "capture-profile-signup (git-ignored)",
+        "cdp_port": 9240
+      },
+      "run": "20261028T164816Z-partner-signup-en",
+      "date": "2026-10-28"
     }
   }
 }
