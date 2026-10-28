@@ -116,7 +116,7 @@ The pilot's five steps, under Stage 4's changes (`PLAN.md`, Stage 4, and section
 | Held evidence first, measured: four gap-closing parts that read held files before any capture request runs (A2-T, A2-SH-H, A2-SA-H, A2-SA-S), and the audit of their absences (A3-2) | 60.6 |
 | 1C's two dry runs, measured | 7.2 |
 | The capture round, measured: the runs for H-006 to H-008 read (A2-SH-R1, A2-SH-R2, 27.7), and phase B's three parts that placed what they found (26.9) | 54.6 |
-| Salla's and Zid's captures of 28 October read, measured (A2-SA-R 9.7, A2-ZD-R 12.3) | 22.0 |
+| Salla's and Zid's captures of 28 October, measured: read (A2-SA-R 9.7, A2-ZD-R 12.3), Zid's absences audited (A3-ZD-R 10.9), and phase B's five parts that placed what they found (36.8) | 69.7 |
 | 1C, per root decision | 90 to 150 |
 | Inspection of the later briefs | 15 to 30 |
 | 5, the review | 40 to 80 |
