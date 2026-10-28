@@ -1,0 +1,86 @@
+- banner:
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/3277610
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "0"
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+- navigation "Primary navigation":
+  - button "Home"
+  - button "Apps"
+  - button "Settings" [pressed]
+  - separator
+- list:
+  - link "General":
+    - /url: /en-sa/stores/3277610/settings/account
+    - text: General
+    - button
+  - link "Communications":
+    - /url: /en-sa/stores/3277610/settings/communications/orders
+    - text: Communications
+    - button
+  - link "Store":
+    - /url: /en-sa/stores/3277610/settings/information
+  - link "Store information":
+    - /url: /en-sa/stores/3277610/settings/information
+  - link "Legal pages":
+    - /url: /en-sa/stores/3277610/channels/online-store/pages/legal
+  - link "Hours of operation":
+    - /url: /en-sa/stores/3277610/settings/hours-of-operation
+  - link "Team":
+    - /url: /en-sa/stores/3277610/settings/team
+  - link "Groups":
+    - /url: /en-sa/stores/3277610/settings/team/groups
+  - link "Domains list":
+    - /url: /en-sa/stores/3277610/settings/domains
+- main:
+  - button
+  - heading "Store information" [level=5]
+  - button "Save" [disabled]
+  - tablist:
+    - tab "Store information"
+    - tab "Business details"
+    - tab "Business address" [selected]
+  - paragraph: You can enter your location manually or using Google Maps.
+  - list:
+    - listitem:
+      - paragraph: Display address in storefront
+      - switch
+    - listitem:
+      - paragraph: Enter the location automatically using Google Maps.
+      - switch
+    - listitem:
+      - paragraph: Time zone
+      - paragraph: Selecting your store's time zone will help ensure consistency in dates and times across orders, reports, and file exports.
+      - combobox "Asia/Riyadh"
+  - text: Country
+  - combobox "Country": Saudi Arabia
+  - button "Open"
+  - text: City
+  - combobox "City": Riyadh
+  - button "Open"
+  - text: District
+  - textbox "District"
+  - text: Street
+  - textbox "Street"
+  - text: Building number
+  - textbox "Building number"
+  - text: Zip code
+  - textbox "Zip code"
+  - text: Additional number
+  - textbox "Additional number"
+  - alert:
+    - text: An example of a national address proof file from SPL.
+    - button "Preview"
+  - button "Choose File"
+  - paragraph: National Address
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

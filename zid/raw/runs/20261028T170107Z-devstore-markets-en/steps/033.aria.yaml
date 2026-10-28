@@ -1,0 +1,97 @@
+- banner:
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/3277610
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "0"
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+- navigation "Primary navigation":
+  - button "Home"
+  - button "Apps"
+  - button "Settings" [pressed]
+  - separator
+- list:
+  - link "General":
+    - /url: /en-sa/stores/3277610/settings/account
+    - text: General
+    - button
+  - link "Communications":
+    - /url: /en-sa/stores/3277610/settings/communications/orders
+  - link "Order notifications":
+    - /url: /en-sa/stores/3277610/settings/communications/orders
+  - link "Abandoned cart reminders":
+    - /url: /en-sa/stores/3277610/settings/communications/abandoned-carts
+  - link "Product question notifications":
+    - /url: /en-sa/stores/3277610/settings/communications/questions
+  - link "Product review notifications":
+    - /url: /en-sa/stores/3277610/settings/communications/reviews
+  - link "Store":
+    - /url: /en-sa/stores/3277610/settings/information
+    - text: Store
+    - button
+- main:
+  - button
+  - heading "Order notifications" [level=5]
+  - tablist:
+    - tab "Text messages" [selected]
+    - tab "WhatsApp messages"
+  - alert:
+    - text: Avoid sending sponsored content
+    - paragraph: To ensure compliance with communication authority regulations, please refrain from using order status messages for marketing, event promotions, or distributing discount codes. Non-compliance may result in the suspension of your messaging services.
+  - heading "Configure automated order notifications" [level=6]
+  - paragraph: Select the order statuses that will trigger an automatic SMS when they occur.
+  - text: SMS Sender name
+  - paragraph: Zid
+  - link "Customize" [disabled]:
+    - /url: /en-sa/stores/3277610/settings/communications/sender-name
+  - paragraph: Sms balance
+  - text: Low
+  - heading "No messages" [level=6]
+  - button
+  - separator
+  - heading "New" [level=3]:
+    - button "New":
+      - checkbox "New"
+      - text: New
+  - heading "Preparing" [level=3]:
+    - button "Preparing":
+      - checkbox "Preparing"
+      - text: Preparing
+  - heading "Ready" [level=3]:
+    - button "Ready":
+      - checkbox "Ready"
+      - text: Ready
+  - heading "In delivery" [level=3]:
+    - button "In delivery":
+      - checkbox "In delivery"
+      - text: In delivery
+  - heading "Delivered" [level=3]:
+    - button "Delivered":
+      - checkbox "Delivered"
+      - text: Delivered
+  - heading "Canceled" [level=3]:
+    - button "Canceled":
+      - checkbox "Canceled"
+      - text: Canceled
+  - heading "Processing Reverse" [level=3]:
+    - button "Processing Reverse":
+      - checkbox "Processing Reverse"
+      - text: Processing Reverse
+  - heading "Reversed" [level=3]:
+    - button "Reversed":
+      - checkbox "Reversed"
+      - text: Reversed
+  - heading "Partially Reversed" [level=3]:
+    - button "Partially Reversed":
+      - checkbox "Partially Reversed"
+      - text: Partially Reversed
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

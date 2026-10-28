@@ -1,0 +1,250 @@
+- banner:
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/3277610
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "0"
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+- navigation "Primary navigation":
+  - button "Home"
+  - button "Apps"
+  - button "Settings" [pressed]
+  - separator
+- list:
+  - link "General":
+    - /url: /en-sa/stores/3277610/settings/account
+    - text: General
+    - button
+  - link "Communications":
+    - /url: /en-sa/stores/3277610/settings/communications/orders
+    - text: Communications
+    - button
+  - link "Store":
+    - /url: /en-sa/stores/3277610/settings/information
+  - link "Store information":
+    - /url: /en-sa/stores/3277610/settings/information
+  - link "Legal pages":
+    - /url: /en-sa/stores/3277610/channels/online-store/pages/legal
+  - link "Hours of operation":
+    - /url: /en-sa/stores/3277610/settings/hours-of-operation
+  - link "Team":
+    - /url: /en-sa/stores/3277610/settings/team
+  - link "Groups":
+    - /url: /en-sa/stores/3277610/settings/team/groups
+  - link "Domains list":
+    - /url: /en-sa/stores/3277610/settings/domains
+- main:
+  - button
+  - heading "Store information" [level=5]
+  - button "Save" [disabled]
+  - tablist:
+    - tab "Store information"
+    - tab "Business details"
+    - tab "Business address" [selected]
+  - paragraph: You can enter your location manually or using Google Maps.
+  - list:
+    - listitem:
+      - paragraph: Display address in storefront
+      - switch
+    - listitem:
+      - paragraph: Enter the location automatically using Google Maps.
+      - switch
+    - listitem:
+      - paragraph: Time zone
+      - paragraph: Selecting your store's time zone will help ensure consistency in dates and times across orders, reports, and file exports.
+      - combobox "Asia/Riyadh"
+  - text: Country
+  - combobox "Country" [expanded]: Saudi Arabia
+  - button "Clear"
+  - button "Close"
+  - text: City
+  - combobox "City": Riyadh
+  - button "Open"
+  - text: District
+  - textbox "District"
+  - text: Street
+  - textbox "Street"
+  - text: Building number
+  - textbox "Building number"
+  - text: Zip code
+  - textbox "Zip code"
+  - text: Additional number
+  - textbox "Additional number"
+  - alert:
+    - text: An example of a national address proof file from SPL.
+    - button "Preview"
+  - button "Choose File"
+  - paragraph: National Address
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img
+- listbox "Country":
+  - option "Saudi Arabia" [selected]
+  - option "UAE"
+  - option "Kuwait"
+  - option "Oman"
+  - option "Bahrain"
+  - option "Egypt"
+  - option "Qatar"
+  - option "Jordan"
+  - option "Lebanon"
+  - option "Tunisia"
+  - option "Morocco"
+  - option "Libya"
+  - option "Afghanistan"
+  - option "Albania"
+  - option "Algeria"
+  - option "American Samoa"
+  - option "Andorra"
+  - option "Angola"
+  - option "Anguilla"
+  - option "Argentina"
+  - option "Armenia"
+  - option "Aruba"
+  - option "Australia"
+  - option "Austria"
+  - option "Azerbaijan"
+  - option "Bahamas"
+  - option "Barbados"
+  - option "Belarus"
+  - option "Belgium"
+  - option "Belize"
+  - option "Bermuda"
+  - option "Bolivia"
+  - option "Brazil"
+  - option "Bulgaria"
+  - option "Burkina Faso"
+  - option "Cameroon"
+  - option "Canada"
+  - option "Cape Verde"
+  - option "Chad"
+  - option "Chile"
+  - option "China"
+  - option "Colombia"
+  - option "Comoros"
+  - option "Costa Rica"
+  - option "Croatia"
+  - option "Cyprus"
+  - option "Czech Republic"
+  - option "Denmark"
+  - option "Djibouti"
+  - option "Dominica"
+  - option "East Timor"
+  - option "Ecuador"
+  - option "El Salvador"
+  - option "Estonia"
+  - option "Ethiopia"
+  - option "Fiji"
+  - option "Finland"
+  - option "France"
+  - option "French Polynesia"
+  - option "Gambia"
+  - option "Georgia"
+  - option "Germany"
+  - option "Ghana"
+  - option "Greece"
+  - option "Greenland"
+  - option "Grenada"
+  - option "Guadeloupe"
+  - option "Guam"
+  - option "Guatemala"
+  - option "Guinea"
+  - option "Guyana"
+  - option "Haiti"
+  - option "Honduras"
+  - option "Hong Kong"
+  - option "Hungary"
+  - option "Iceland"
+  - option "India"
+  - option "Indonesia"
+  - option "Iraq"
+  - option "Ireland"
+  - option "Italy"
+  - option "Jamaica"
+  - option "Japan"
+  - option "Kazakhstan"
+  - option "Kenya"
+  - option "Kiribati"
+  - option "Latvia"
+  - option "Liechtenstein"
+  - option "Lithuania"
+  - option "Luxembourg"
+  - option "Macau"
+  - option "Malaysia"
+  - option "Maldives"
+  - option "Mali"
+  - option "Malta"
+  - option "Martinique"
+  - option "Mauritania"
+  - option "Mayotte"
+  - option "Mexico"
+  - option "Monaco"
+  - option "Mongolia"
+  - option "Montserrat"
+  - option "Myanmar"
+  - option "Nauru"
+  - option "Nepal"
+  - option "Netherlands"
+  - option "New Caledonia"
+  - option "New Zealand"
+  - option "Nicaragua"
+  - option "Niger"
+  - option "Nigeria"
+  - option "Norfolk Island"
+  - option "Norway"
+  - option "Pakistan"
+  - option "Palau"
+  - option "Panama"
+  - option "Paraguay"
+  - option "Peru"
+  - option "Philippines"
+  - option "Poland"
+  - option "Portugal"
+  - option "Puerto Rico"
+  - option "Romania"
+  - option "Rwanda"
+  - option "Samoa"
+  - option "San Marino"
+  - option "Senegal"
+  - option "Singapore"
+  - option "Slovak Republic"
+  - option "Slovenia"
+  - option "Somalia"
+  - option "South Africa"
+  - option "Spain"
+  - option "Sri Lanka"
+  - option "Sudan"
+  - option "Suriname"
+  - option "Sweden"
+  - option "Switzerland"
+  - option "Syrian Arab Republic"
+  - option "Taiwan"
+  - option "Tajikistan"
+  - option "Thailand"
+  - option "Tonga"
+  - option "Turkey"
+  - option "Turkmenistan"
+  - option "Tuvalu"
+  - option "Uganda"
+  - option "Ukraine"
+  - option "United Kingdom"
+  - option "United States"
+  - option "Uruguay"
+  - option "Uzbekistan"
+  - option "Vanuatu"
+  - option "Venezuela"
+  - option "Vietnam"
+  - option "Yemen"
+  - option "Zimbabwe"
+  - option "Montenegro"
+  - option "Serbia"
+  - option "Palestinian"
+  - option "South Sudan"
+  - option "Isle of Man"

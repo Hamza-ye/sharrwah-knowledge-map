@@ -1,0 +1,493 @@
+- dialog "Select Countries":
+  - heading "Select Countries" [level=2]
+  - textbox "Search"
+  - checkbox
+  - heading "Country Name" [level=6]
+  - checkbox [checked]
+  - img "Saudi Arabia"
+  - paragraph: Saudi Arabia
+  - checkbox
+  - img "UAE"
+  - paragraph: UAE
+  - checkbox
+  - img "Kuwait"
+  - paragraph: Kuwait
+  - checkbox
+  - img "Oman"
+  - paragraph: Oman
+  - checkbox
+  - img "Bahrain"
+  - paragraph: Bahrain
+  - checkbox
+  - img "Egypt"
+  - paragraph: Egypt
+  - checkbox
+  - img "Qatar"
+  - paragraph: Qatar
+  - checkbox
+  - img "Jordan"
+  - paragraph: Jordan
+  - checkbox
+  - img "Lebanon"
+  - paragraph: Lebanon
+  - checkbox
+  - img "Tunisia"
+  - paragraph: Tunisia
+  - checkbox
+  - img "Morocco"
+  - paragraph: Morocco
+  - checkbox
+  - img "Libya"
+  - paragraph: Libya
+  - checkbox
+  - img "Afghanistan"
+  - paragraph: Afghanistan
+  - checkbox
+  - img "Albania"
+  - paragraph: Albania
+  - checkbox
+  - img "Algeria"
+  - paragraph: Algeria
+  - checkbox
+  - img "American Samoa"
+  - paragraph: American Samoa
+  - checkbox
+  - img "Andorra"
+  - paragraph: Andorra
+  - checkbox
+  - img "Angola"
+  - paragraph: Angola
+  - checkbox
+  - img "Anguilla"
+  - paragraph: Anguilla
+  - checkbox
+  - img "Argentina"
+  - paragraph: Argentina
+  - checkbox
+  - img "Armenia"
+  - paragraph: Armenia
+  - checkbox
+  - img "Aruba"
+  - paragraph: Aruba
+  - checkbox
+  - img "Australia"
+  - paragraph: Australia
+  - checkbox
+  - img "Austria"
+  - paragraph: Austria
+  - checkbox
+  - img "Azerbaijan"
+  - paragraph: Azerbaijan
+  - checkbox
+  - img "Bahamas"
+  - paragraph: Bahamas
+  - checkbox
+  - img "Barbados"
+  - paragraph: Barbados
+  - checkbox
+  - img "Belarus"
+  - paragraph: Belarus
+  - checkbox
+  - img "Belgium"
+  - paragraph: Belgium
+  - checkbox
+  - img "Belize"
+  - paragraph: Belize
+  - checkbox
+  - img "Bermuda"
+  - paragraph: Bermuda
+  - checkbox
+  - img "Bolivia"
+  - paragraph: Bolivia
+  - checkbox
+  - img "Brazil"
+  - paragraph: Brazil
+  - checkbox
+  - img "Bulgaria"
+  - paragraph: Bulgaria
+  - checkbox
+  - img "Burkina Faso"
+  - paragraph: Burkina Faso
+  - checkbox
+  - img "Cameroon"
+  - paragraph: Cameroon
+  - checkbox
+  - img "Canada"
+  - paragraph: Canada
+  - checkbox
+  - img "Cape Verde"
+  - paragraph: Cape Verde
+  - checkbox
+  - img "Chad"
+  - paragraph: Chad
+  - checkbox
+  - img "Chile"
+  - paragraph: Chile
+  - checkbox
+  - img "China"
+  - paragraph: China
+  - checkbox
+  - img "Colombia"
+  - paragraph: Colombia
+  - checkbox
+  - img "Comoros"
+  - paragraph: Comoros
+  - checkbox
+  - img "Costa Rica"
+  - paragraph: Costa Rica
+  - checkbox
+  - img "Croatia"
+  - paragraph: Croatia
+  - checkbox
+  - img "Cyprus"
+  - paragraph: Cyprus
+  - checkbox
+  - img "Czech Republic"
+  - paragraph: Czech Republic
+  - checkbox
+  - img "Denmark"
+  - paragraph: Denmark
+  - checkbox
+  - img "Djibouti"
+  - paragraph: Djibouti
+  - checkbox
+  - img "Dominica"
+  - paragraph: Dominica
+  - checkbox
+  - img "East Timor"
+  - paragraph: East Timor
+  - checkbox
+  - img "Ecuador"
+  - paragraph: Ecuador
+  - checkbox
+  - img "El Salvador"
+  - paragraph: El Salvador
+  - checkbox
+  - img "Estonia"
+  - paragraph: Estonia
+  - checkbox
+  - img "Ethiopia"
+  - paragraph: Ethiopia
+  - checkbox
+  - img "Fiji"
+  - paragraph: Fiji
+  - checkbox
+  - img "Finland"
+  - paragraph: Finland
+  - checkbox
+  - img "France"
+  - paragraph: France
+  - checkbox
+  - img "French Polynesia"
+  - paragraph: French Polynesia
+  - checkbox
+  - img "Gambia"
+  - paragraph: Gambia
+  - checkbox
+  - img "Georgia"
+  - paragraph: Georgia
+  - checkbox
+  - img "Germany"
+  - paragraph: Germany
+  - checkbox
+  - img "Ghana"
+  - paragraph: Ghana
+  - checkbox
+  - img "Greece"
+  - paragraph: Greece
+  - checkbox
+  - img "Greenland"
+  - paragraph: Greenland
+  - checkbox
+  - img "Grenada"
+  - paragraph: Grenada
+  - checkbox
+  - img "Guadeloupe"
+  - paragraph: Guadeloupe
+  - checkbox
+  - img "Guam"
+  - paragraph: Guam
+  - checkbox
+  - img "Guatemala"
+  - paragraph: Guatemala
+  - checkbox
+  - img "Guinea"
+  - paragraph: Guinea
+  - checkbox
+  - img "Guyana"
+  - paragraph: Guyana
+  - checkbox
+  - img "Haiti"
+  - paragraph: Haiti
+  - checkbox
+  - img "Honduras"
+  - paragraph: Honduras
+  - checkbox
+  - img "Hong Kong"
+  - paragraph: Hong Kong
+  - checkbox
+  - img "Hungary"
+  - paragraph: Hungary
+  - checkbox
+  - img "Iceland"
+  - paragraph: Iceland
+  - checkbox
+  - img "India"
+  - paragraph: India
+  - checkbox
+  - img "Indonesia"
+  - paragraph: Indonesia
+  - checkbox
+  - img "Iraq"
+  - paragraph: Iraq
+  - checkbox
+  - img "Ireland"
+  - paragraph: Ireland
+  - checkbox
+  - img "Italy"
+  - paragraph: Italy
+  - checkbox
+  - img "Jamaica"
+  - paragraph: Jamaica
+  - checkbox
+  - img "Japan"
+  - paragraph: Japan
+  - checkbox
+  - img "Kazakhstan"
+  - paragraph: Kazakhstan
+  - checkbox
+  - img "Kenya"
+  - paragraph: Kenya
+  - checkbox
+  - img "Kiribati"
+  - paragraph: Kiribati
+  - checkbox
+  - img "Latvia"
+  - paragraph: Latvia
+  - checkbox
+  - img "Liechtenstein"
+  - paragraph: Liechtenstein
+  - checkbox
+  - img "Lithuania"
+  - paragraph: Lithuania
+  - checkbox
+  - img "Luxembourg"
+  - paragraph: Luxembourg
+  - checkbox
+  - img "Macau"
+  - paragraph: Macau
+  - checkbox
+  - img "Malaysia"
+  - paragraph: Malaysia
+  - checkbox
+  - img "Maldives"
+  - paragraph: Maldives
+  - checkbox
+  - img "Mali"
+  - paragraph: Mali
+  - checkbox
+  - img "Malta"
+  - paragraph: Malta
+  - checkbox
+  - img "Martinique"
+  - paragraph: Martinique
+  - checkbox
+  - img "Mauritania"
+  - paragraph: Mauritania
+  - checkbox
+  - img "Mayotte"
+  - paragraph: Mayotte
+  - checkbox
+  - img "Mexico"
+  - paragraph: Mexico
+  - checkbox
+  - img "Monaco"
+  - paragraph: Monaco
+  - checkbox
+  - img "Mongolia"
+  - paragraph: Mongolia
+  - checkbox
+  - img "Montserrat"
+  - paragraph: Montserrat
+  - checkbox
+  - img "Myanmar"
+  - paragraph: Myanmar
+  - checkbox
+  - img "Nauru"
+  - paragraph: Nauru
+  - checkbox
+  - img "Nepal"
+  - paragraph: Nepal
+  - checkbox
+  - img "Netherlands"
+  - paragraph: Netherlands
+  - checkbox
+  - img "New Caledonia"
+  - paragraph: New Caledonia
+  - checkbox
+  - img "New Zealand"
+  - paragraph: New Zealand
+  - checkbox
+  - img "Nicaragua"
+  - paragraph: Nicaragua
+  - checkbox
+  - img "Niger"
+  - paragraph: Niger
+  - checkbox
+  - img "Nigeria"
+  - paragraph: Nigeria
+  - checkbox
+  - img "Norfolk Island"
+  - paragraph: Norfolk Island
+  - checkbox
+  - img "Norway"
+  - paragraph: Norway
+  - checkbox
+  - img "Pakistan"
+  - paragraph: Pakistan
+  - checkbox
+  - img "Palau"
+  - paragraph: Palau
+  - checkbox
+  - img "Panama"
+  - paragraph: Panama
+  - checkbox
+  - img "Paraguay"
+  - paragraph: Paraguay
+  - checkbox
+  - img "Peru"
+  - paragraph: Peru
+  - checkbox
+  - img "Philippines"
+  - paragraph: Philippines
+  - checkbox
+  - img "Poland"
+  - paragraph: Poland
+  - checkbox
+  - img "Portugal"
+  - paragraph: Portugal
+  - checkbox
+  - img "Puerto Rico"
+  - paragraph: Puerto Rico
+  - checkbox
+  - img "Romania"
+  - paragraph: Romania
+  - checkbox
+  - img "Rwanda"
+  - paragraph: Rwanda
+  - checkbox
+  - img "Samoa"
+  - paragraph: Samoa
+  - checkbox
+  - img "San Marino"
+  - paragraph: San Marino
+  - checkbox
+  - img "Senegal"
+  - paragraph: Senegal
+  - checkbox
+  - img "Singapore"
+  - paragraph: Singapore
+  - checkbox
+  - img "Slovak Republic"
+  - paragraph: Slovak Republic
+  - checkbox
+  - img "Slovenia"
+  - paragraph: Slovenia
+  - checkbox
+  - img "Somalia"
+  - paragraph: Somalia
+  - checkbox
+  - img "South Africa"
+  - paragraph: South Africa
+  - checkbox
+  - img "Spain"
+  - paragraph: Spain
+  - checkbox
+  - img "Sri Lanka"
+  - paragraph: Sri Lanka
+  - checkbox
+  - img "Sudan"
+  - paragraph: Sudan
+  - checkbox
+  - img "Suriname"
+  - paragraph: Suriname
+  - checkbox
+  - img "Sweden"
+  - paragraph: Sweden
+  - checkbox
+  - img "Switzerland"
+  - paragraph: Switzerland
+  - checkbox
+  - img "Syrian Arab Republic"
+  - paragraph: Syrian Arab Republic
+  - checkbox
+  - img "Taiwan"
+  - paragraph: Taiwan
+  - checkbox
+  - img "Tajikistan"
+  - paragraph: Tajikistan
+  - checkbox
+  - img "Thailand"
+  - paragraph: Thailand
+  - checkbox
+  - img "Tonga"
+  - paragraph: Tonga
+  - checkbox
+  - img "Turkey"
+  - paragraph: Turkey
+  - checkbox
+  - img "Turkmenistan"
+  - paragraph: Turkmenistan
+  - checkbox
+  - img "Tuvalu"
+  - paragraph: Tuvalu
+  - checkbox
+  - img "Uganda"
+  - paragraph: Uganda
+  - checkbox
+  - img "Ukraine"
+  - paragraph: Ukraine
+  - checkbox
+  - img "United Kingdom"
+  - paragraph: United Kingdom
+  - checkbox
+  - img "United States"
+  - paragraph: United States
+  - checkbox
+  - img "Uruguay"
+  - paragraph: Uruguay
+  - checkbox
+  - img "Uzbekistan"
+  - paragraph: Uzbekistan
+  - checkbox
+  - img "Vanuatu"
+  - paragraph: Vanuatu
+  - checkbox
+  - img "Venezuela"
+  - paragraph: Venezuela
+  - checkbox
+  - img "Vietnam"
+  - paragraph: Vietnam
+  - checkbox
+  - img "Yemen"
+  - paragraph: Yemen
+  - checkbox
+  - img "Zimbabwe"
+  - paragraph: Zimbabwe
+  - checkbox
+  - img "Montenegro"
+  - paragraph: Montenegro
+  - checkbox
+  - img "Serbia"
+  - paragraph: Serbia
+  - checkbox
+  - img "Palestinian"
+  - paragraph: Palestinian
+  - checkbox
+  - img "South Sudan"
+  - paragraph: South Sudan
+  - checkbox
+  - img "Isle of Man"
+  - paragraph: Isle of Man
+  - button "Cancel"
+  - button "Confirm"

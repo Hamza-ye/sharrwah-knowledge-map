@@ -1,0 +1,77 @@
+- banner:
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/3277610
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "0"
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+- navigation "Primary navigation":
+  - button "Home"
+  - button "Apps"
+  - button "Settings" [pressed]
+  - separator
+- list:
+  - link "General":
+    - /url: /en-sa/stores/3277610/settings/account
+    - text: General
+    - button
+  - link "Communications":
+    - /url: /en-sa/stores/3277610/settings/communications/orders
+    - text: Communications
+    - button
+  - link "Store":
+    - /url: /en-sa/stores/3277610/settings/information
+  - link "Store information":
+    - /url: /en-sa/stores/3277610/settings/information
+  - link "Legal pages":
+    - /url: /en-sa/stores/3277610/channels/online-store/pages/legal
+  - link "Hours of operation":
+    - /url: /en-sa/stores/3277610/settings/hours-of-operation
+  - link "Team":
+    - /url: /en-sa/stores/3277610/settings/team
+  - link "Groups":
+    - /url: /en-sa/stores/3277610/settings/team/groups
+  - link "Domains list":
+    - /url: /en-sa/stores/3277610/settings/domains
+- main:
+  - button
+  - heading "Hours of operation" [level=5]
+  - paragraph:
+    - paragraph: Manage your store closure or stop receiving orders. You can browse your store during the closure period through
+    - link "store page":
+      - /url: https://gx4idm.zid.store/?owner_token=null
+  - button "Save"
+  - button "Activate feature"
+  - text: Choose the closing mechanism
+  - radiogroup:
+    - radio "Close store completely"
+    - text: Close store completely
+    - radio "Stop receiving orders"
+    - text: Stop receiving orders
+  - alert:
+    - text: Temporarily Unavailable for Orders
+    - paragraph:
+      - paragraph: Your customers will not be able to make any purchases while the store is suspended; they can only browse the store and add items to cart.
+    - button "View example"
+  - separator
+  - text: Select period type
+  - combobox "Select period type"
+  - text: Show countdown until store reopens.
+  - radiogroup:
+    - radio "Yes"
+    - text: "Yes"
+    - radio "No" [checked]
+    - text: "No"
+  - text: Message text (Arabic)
+  - textbox "Message text (Arabic)"
+  - paragraph: Number of characters 0 / 200
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

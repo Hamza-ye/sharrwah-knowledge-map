@@ -1,0 +1,190 @@
+- banner:
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/3277610
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "KWD 0"
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+- navigation "Primary navigation":
+  - button "Home"
+  - button "Apps"
+  - button "Settings" [pressed]
+  - separator
+- list:
+  - link "General":
+    - /url: /en-sa/stores/3277610/settings/account
+  - link "Account settings":
+    - /url: /en-sa/stores/3277610/settings/account
+  - link "Security settings":
+    - /url: /en-sa/stores/3277610/settings/security
+  - link "Languages & currencies":
+    - /url: /en-sa/stores/3277610/settings/languages-currencies
+  - link "Checkout page options":
+    - /url: /en-sa/stores/3277610/settings/checkout
+  - link "Gifting settings New":
+    - /url: /en-sa/stores/3277610/settings/gifting-settings
+  - link "Configure your invoices":
+    - /url: /en-sa/stores/3277610/settings/invoice
+  - link "Orders and products properties":
+    - /url: /en-sa/stores/3277610/settings/orders-products
+  - link "Shipping and payment constraints":
+    - /url: /en-sa/stores/3277610/settings/constraints
+  - link "Tax settings":
+    - /url: /en-sa/stores/3277610/settings/tax
+  - link "Fatoora platform integration":
+    - /url: /en-sa/stores/3277610/settings/zatca-integration
+  - link "Staff notifications":
+    - /url: /en-sa/stores/3277610/settings/staff-notifications
+  - link "API integrations":
+    - /url: /en-sa/stores/3277610/settings/direct-api-integration
+  - link "Export requests":
+    - /url: /en-sa/stores/3277610/settings/export-requests
+  - link "URL redirects":
+    - /url: /en-sa/stores/3277610/settings/url-redirects
+  - link "Communications":
+    - /url: /en-sa/stores/3277610/settings/communications/orders
+    - text: Communications
+    - button
+  - link "Store":
+    - /url: /en-sa/stores/3277610/settings/information
+    - text: Store
+    - button
+- main:
+  - button
+  - heading "Store language and currencies" [level=5]
+  - heading "Languages" [level=6]
+  - paragraph: Select languages available to customers in your store.
+  - switch [checked] [disabled]
+  - heading "أ ب ت" [level=6]
+  - paragraph: Arabic
+  - text: Default language
+  - switch
+  - heading "ABC" [level=6]
+  - paragraph: English
+  - button "Set as default"
+  - alert: Sales will be converted to the new currency based on the current exchange rate when you change the currency. Accordingly, the total sales figure may change.
+  - heading "Currencies" [level=6]
+  - textbox "Search"
+  - table:
+    - rowgroup:
+      - row "Country Currency Active":
+        - columnheader "Country"
+        - columnheader "Currency"
+        - columnheader "Active"
+        - columnheader
+    - rowgroup:
+      - row "United States US Dollar":
+        - cell "United States":
+          - paragraph: United States
+        - cell "US Dollar"
+        - cell:
+          - switch
+        - cell
+      - row "Saudi Arabia Saudi Riyal Default currency":
+        - cell "Saudi Arabia":
+          - paragraph: Saudi Arabia
+        - cell "Saudi Riyal"
+        - cell:
+          - switch
+        - cell "Default currency"
+      - row "Kuwait Kuwaiti Dinar":
+        - cell "Kuwait":
+          - paragraph: Kuwait
+        - cell "Kuwaiti Dinar"
+        - cell:
+          - switch
+        - cell
+      - row "Bahrain Bahraini Dinar":
+        - cell "Bahrain":
+          - paragraph: Bahrain
+        - cell "Bahraini Dinar"
+        - cell:
+          - switch
+        - cell
+      - row "UAE UAE Dirham":
+        - cell "UAE":
+          - paragraph: UAE
+        - cell "UAE Dirham"
+        - cell:
+          - switch
+        - cell
+      - row "Oman Rial Omani":
+        - cell "Oman":
+          - paragraph: Oman
+        - cell "Rial Omani"
+        - cell:
+          - switch
+        - cell
+      - row "Germany Germany Euro":
+        - cell "Germany":
+          - paragraph: Germany
+        - cell "Germany Euro"
+        - cell:
+          - switch
+        - cell
+      - row "Spain Spain Euro":
+        - cell "Spain":
+          - paragraph: Spain
+        - cell "Spain Euro"
+        - cell:
+          - switch
+        - cell
+      - row "Italy Euro Italy":
+        - cell "Italy":
+          - paragraph: Italy
+        - cell "Euro Italy"
+        - cell:
+          - switch
+        - cell
+      - row "France France Euro":
+        - cell "France":
+          - paragraph: France
+        - cell "France Euro"
+        - cell:
+          - switch
+        - cell
+      - row "Ireland Ireland Euro":
+        - cell "Ireland":
+          - paragraph: Ireland
+        - cell "Ireland Euro"
+        - cell:
+          - switch
+        - cell
+      - row "Greece Greece Euro":
+        - cell "Greece":
+          - paragraph: Greece
+        - cell "Greece Euro"
+        - cell:
+          - switch
+        - cell
+      - row "Austria Austria Euro":
+        - cell "Austria":
+          - paragraph: Austria
+        - cell "Austria Euro"
+        - cell:
+          - switch
+        - cell
+      - row "Netherlands Netherlands Euro":
+        - cell "Netherlands":
+          - paragraph: Netherlands
+        - cell "Netherlands Euro"
+        - cell:
+          - switch
+        - cell
+      - row "Portugal Portugal Euro":
+        - cell "Portugal":
+          - paragraph: Portugal
+        - cell "Portugal Euro"
+        - cell:
+          - switch
+        - cell
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

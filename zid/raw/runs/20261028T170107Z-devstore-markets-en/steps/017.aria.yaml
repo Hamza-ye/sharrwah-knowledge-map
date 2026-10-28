@@ -1,0 +1,40 @@
+- banner:
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/3277610
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "0"
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+- navigation "Primary navigation":
+  - button "Home"
+  - button "Apps"
+  - button "Settings" [pressed]
+  - separator
+- list:
+  - link "General":
+    - /url: /en-sa/stores/3277610/settings/account
+    - text: General
+    - button
+  - link "Communications":
+    - /url: /en-sa/stores/3277610/settings/communications/orders
+    - text: Communications
+    - button
+  - link "Store":
+    - /url: /en-sa/stores/3277610/settings/information
+    - text: Store
+    - button
+- main:
+  - img "404"
+  - heading "Oops! Something broke" [level=5]
+  - paragraph: Well, that didn’t go as planned. Give it a sec and try again — we’re probably already fixing it.
+  - button "Retry"
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

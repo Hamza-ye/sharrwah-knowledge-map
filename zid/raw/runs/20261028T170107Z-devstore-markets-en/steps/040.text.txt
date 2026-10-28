@@ -1,0 +1,5 @@
+# visible text failed: page.evaluate: TypeError: Cannot read properties of null (reading 'nodeType')
+    at walk (eval at evaluate (:311:30), <anonymous>:6:11)
+    at eval (eval at evaluate (:311:30), <anonymous>:31:3)
+    at UtilityScript.evaluate (<anonymous>:313:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)

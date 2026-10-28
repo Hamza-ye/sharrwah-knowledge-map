@@ -1,0 +1,73 @@
+- banner:
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/3277610
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "0"
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/3277610
+  - link "Orders":
+    - /url: /en-sa/stores/3277610/orders
+  - link "Products":
+    - /url: /en-sa/stores/3277610/catalog/products
+  - link "All products":
+    - /url: /en-sa/stores/3277610/catalog/products
+  - link "Categories":
+    - /url: /en-sa/stores/3277610/catalog/categories
+  - link "Brands New":
+    - /url: /en-sa/stores/3277610/catalog/brands
+  - link "Preorder campaigns":
+    - /url: /en-sa/stores/3277610/catalog/preorder-campaigns
+  - link "Inventory":
+    - /url: /en-sa/stores/3277610/catalog/inventories
+  - link "Inventory stock changes":
+    - /url: /en-sa/stores/3277610/catalog/inventory-stock-changes
+  - link "Filters":
+    - /url: /en-sa/stores/3277610/catalog/filters
+  - link "Custom fields":
+    - /url: /en-sa/stores/3277610/catalog/meta-fields
+  - link "Options library":
+    - /url: /en-sa/stores/3277610/catalog/options
+  - link "Customers":
+    - /url: /en-sa/stores/3277610/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/3277610/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/3277610/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/3277610/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/3277610/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/3277610/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/3277610/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/3277610/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/3277610/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/3277610/channels
+    - text: Channels
+    - button
+- list
+- main:
+  - heading "Oops.. You entered incorrect item id." [level=5]
+  - paragraph: Please double check and use you're using the correct item id..
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

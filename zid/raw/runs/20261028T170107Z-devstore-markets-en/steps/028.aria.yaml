@@ -1,0 +1,133 @@
+- banner:
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/3277610
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "0"
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+- navigation "Primary navigation":
+  - button "Home"
+  - button "Apps"
+  - button "Settings" [pressed]
+  - separator
+- list:
+  - link "General":
+    - /url: /en-sa/stores/3277610/settings/account
+    - text: General
+    - button
+  - link "Communications":
+    - /url: /en-sa/stores/3277610/settings/communications/orders
+    - text: Communications
+    - button
+  - link "Store":
+    - /url: /en-sa/stores/3277610/settings/information
+  - link "Store information":
+    - /url: /en-sa/stores/3277610/settings/information
+  - link "Legal pages":
+    - /url: /en-sa/stores/3277610/channels/online-store/pages/legal
+  - link "Hours of operation":
+    - /url: /en-sa/stores/3277610/settings/hours-of-operation
+  - link "Team":
+    - /url: /en-sa/stores/3277610/settings/team
+  - link "Groups":
+    - /url: /en-sa/stores/3277610/settings/team/groups
+  - link "Domains list":
+    - /url: /en-sa/stores/3277610/settings/domains
+- main:
+  - button
+  - heading "Create group" [level=5]
+  - button "Save"
+  - heading "Group information" [level=6]
+  - text: Name
+  - textbox "Name"
+  - text: Users
+  - combobox "Users"
+  - button "Open"
+  - checkbox "Grant full permission"
+  - text: Grant full permission
+  - heading "Homepage" [level=3]:
+    - button "Homepage":
+      - checkbox "Homepage"
+      - text: Homepage
+  - heading "Orders" [level=3]:
+    - button "Orders":
+      - checkbox "Orders"
+      - text: Orders
+  - heading "Products" [level=3]:
+    - button "Products":
+      - checkbox "Products"
+      - text: Products
+  - heading "Customers" [level=3]:
+    - button "Customers":
+      - checkbox "Customers"
+      - text: Customers
+  - heading "Store Front & Themes" [level=3]:
+    - button "Store Front & Themes":
+      - checkbox "Store Front & Themes"
+      - text: Store Front & Themes
+  - heading "Marketing" [level=3]:
+    - button "Marketing":
+      - checkbox "Marketing"
+      - text: Marketing
+  - heading "Analytics and Reports" [level=3]:
+    - button "Analytics and Reports":
+      - checkbox "Analytics and Reports"
+      - text: Analytics and Reports
+  - heading "Payments" [level=3]:
+    - button "Payments":
+      - checkbox "Payments"
+      - text: Payments
+  - heading "Wallet" [level=3]:
+    - button "Wallet":
+      - checkbox "Wallet"
+      - text: Wallet
+  - heading "Shipping" [level=3]:
+    - button "Shipping":
+      - checkbox "Shipping"
+      - text: Shipping
+  - heading "App Market" [level=3]:
+    - button "App Market":
+      - checkbox "App Market"
+      - text: App Market
+  - heading "Mazeed" [level=3]:
+    - button "Mazeed":
+      - checkbox "Mazeed"
+      - text: Mazeed
+  - heading "POS" [level=3]:
+    - button "POS":
+      - checkbox "POS"
+      - text: POS
+  - heading "Zid Growth" [level=3]:
+    - button "Zid Growth":
+      - checkbox "Zid Growth"
+      - text: Zid Growth
+  - heading "Manage Inventories" [level=3]:
+    - button "Manage Inventories":
+      - checkbox "Manage Inventories"
+      - text: Manage Inventories
+  - heading "Feature Settings" [level=3]:
+    - button "Feature Settings":
+      - checkbox "Feature Settings"
+      - text: Feature Settings
+  - heading "Store Settings" [level=3]:
+    - button "Store Settings":
+      - checkbox "Store Settings"
+      - text: Store Settings
+  - heading "Store Whatsapp" [level=3]:
+    - button "Store Whatsapp":
+      - checkbox "Store Whatsapp"
+      - text: Store Whatsapp
+  - heading "Store App" [level=3]:
+    - button "Store App":
+      - checkbox "Store App"
+      - text: Store App
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

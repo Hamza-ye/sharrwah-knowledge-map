@@ -1,0 +1,57 @@
+- banner:
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/3277610
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "0"
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+- navigation "Primary navigation":
+  - button "Home"
+  - button "Apps"
+  - button "Settings" [pressed]
+  - separator
+- list:
+  - link "General":
+    - /url: /en-sa/stores/3277610/settings/account
+    - text: General
+    - button
+  - link "Communications":
+    - /url: /en-sa/stores/3277610/settings/communications/orders
+    - text: Communications
+    - button
+  - link "Store":
+    - /url: /en-sa/stores/3277610/settings/information
+    - text: Store
+    - button
+- main:
+  - button
+  - heading "Market manage" [level=5]
+  - button "Save" [disabled]
+  - button "Cancel"
+  - heading "Market details" [level=6]
+  - text: Market name (Arabic)
+  - textbox "Market name (Arabic)":
+    - /placeholder: Example GCC countries
+    - text: السوق الرئيسي
+  - text: Countries
+  - button "Saudi Arabia"
+  - combobox "Countries"
+  - button "Open"
+  - text: Market currency
+  - combobox "Market currency": SAR
+  - button "Open"
+  - alert:
+    - text: Product prices and currency
+    - paragraph: If you change the currency, price amounts stay the same and only the currency is updated. Review your product prices and adjust them if needed.
+    - link "Manage products":
+      - /url: /en-sa/stores/3277610/settings/markets/01a18374-7fac-7a83-9b1d-17c5c5977a2e/products
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

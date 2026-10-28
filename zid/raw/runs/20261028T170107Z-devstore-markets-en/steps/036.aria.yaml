@@ -1,0 +1,7 @@
+- menu:
+  - menuitem "Manage products":
+    - paragraph: Manage products
+  - menuitem "Customize theme":
+    - paragraph: Customize theme
+  - menuitem "Remove market":
+    - paragraph: Remove market

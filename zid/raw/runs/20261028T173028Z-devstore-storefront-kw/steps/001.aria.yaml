@@ -1,0 +1,85 @@
+- banner:
+  - navigation:
+    - link "الرئيسية":
+      - /url: /
+      - heading "Capture Dev Store" [level=2]
+    - list:
+      - listitem:
+        - link "الصفحة الرئيسية":
+          - /url: /
+      - listitem:
+        - link "جميع المنتجات":
+          - /url: /products/
+      - listitem:
+        - button "الكترونيات":
+          - text: الكترونيات
+          - img
+      - listitem:
+        - link "أثاث":
+          - /url: /categories/1769417/أثاث
+      - listitem:
+        - link "سيارات":
+          - /url: /categories/1769418/سيارات
+      - listitem:
+        - link "جميع التصنيفات":
+          - /url: /categories/
+    - list:
+      - listitem:
+        - button "بحث":
+          - img
+      - listitem:
+        - button "تسجيل الدخول":
+          - img
+      - listitem:
+        - link:
+          - /url: https://gx4idm.zid.store/cart
+          - img
+- main:
+  - link "سونى A7 الاصدار التالت أضف للمفضلة":
+    - /url: https://gx4idm.zid.store/products/سونى-a7-الاصدار-التالت
+    - img "سونى A7 الاصدار التالت"
+    - button "أضف للمفضلة":
+      - img
+  - heading "سونى A7 الاصدار التالت" [level=3]:
+    - link "سونى A7 الاصدار التالت":
+      - /url: https://gx4idm.zid.store/products/سونى-a7-الاصدار-التالت
+  - paragraph:
+    - text: 10,000.00
+    - img
+  - paragraph: كاميرا فيديو احترافيه
+  - button "أضف للسلة"
+- contentinfo:
+  - heading "Capture Dev Store" [level=2]
+  - paragraph
+  - heading "تابعنا" [level=3]
+  - heading "تواصل معنا" [level=3]
+  - list
+  - link "صنع بواسطة":
+    - /url: https://zid.sa/?utm_source=store_powered_zid&utm_campaign=gx4idm.zid.store
+    - paragraph: صنع بواسطة
+    - img
+  - link "مندوب المتجر":
+    - /url: /shipping-and-payment
+    - img "مندوب المتجر"
+  - link "apple_pay":
+    - /url: /shipping-and-payment
+    - img "apple_pay"
+  - link "visa":
+    - /url: /shipping-and-payment
+    - img "visa"
+  - link "mastercard":
+    - /url: /shipping-and-payment
+    - img "mastercard"
+  - link "mada":
+    - /url: /shipping-and-payment
+    - img "mada"
+  - link "amex":
+    - /url: /shipping-and-payment
+    - img "amex"
+  - link "دفع عند الاستلام":
+    - /url: /shipping-and-payment
+    - img "دفع عند الاستلام"
+  - link "تحويل بنكي":
+    - /url: /shipping-and-payment
+    - img "تحويل بنكي"
+- region "Notifications alt+T"

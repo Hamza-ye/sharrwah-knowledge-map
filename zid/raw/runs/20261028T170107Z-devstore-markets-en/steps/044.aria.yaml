@@ -1,0 +1,6 @@
+- dialog "Remove Kuwait This market will be permanently deleted. This action cannot be undone.":
+  - heading "Remove Kuwait This market will be permanently deleted. This action cannot be undone." [level=2]:
+    - text: Remove Kuwait
+    - paragraph: This market will be permanently deleted. This action cannot be undone.
+  - button "Cancel"
+  - button "Remove"

@@ -1,0 +1,57 @@
+- banner:
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/3277610
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "0"
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+- navigation "Primary navigation":
+  - button "Home"
+  - button "Apps"
+  - button "Settings" [pressed]
+  - separator
+- list:
+  - link "General":
+    - /url: /en-sa/stores/3277610/settings/account
+    - text: General
+    - button
+  - link "Communications":
+    - /url: /en-sa/stores/3277610/settings/communications/orders
+    - text: Communications
+    - button
+  - link "Store":
+    - /url: /en-sa/stores/3277610/settings/information
+    - text: Store
+    - button
+- main:
+  - button
+  - heading "Markets" [level=5]
+  - button "Create"
+  - alert:
+    - paragraph: By default, all markets use your store's active theme. You can assign a different theme to each market for a localized storefront experience, or customize the default theme per market from the More menu.
+  - paragraph: Main Market
+  - text: 1 country Primary
+  - separator
+  - paragraph: "Used theme:"
+  - paragraph: Growth
+  - button
+  - link "Manage":
+    - /url: /en-sa/stores/3277610/settings/markets/01a18374-7fac-7a83-9b1d-17c5c5977a2e/manage
+  - paragraph: Kuwait
+  - text: 1 country
+  - separator
+  - paragraph: "Used theme:"
+  - paragraph: Growth
+  - button
+  - link "Manage":
+    - /url: /en-sa/stores/3277610/settings/markets/01a1837c-5185-7952-9a9c-c3f7c2c4dce9/manage
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

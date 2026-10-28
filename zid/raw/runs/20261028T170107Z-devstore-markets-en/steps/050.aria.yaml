@@ -1,0 +1,232 @@
+- banner:
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/3277610
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "0"
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+- navigation "Primary navigation":
+  - button "Home"
+  - button "Apps"
+  - button "Settings" [pressed]
+  - separator
+- list:
+  - link "General":
+    - /url: /en-sa/stores/3277610/settings/account
+    - text: General
+    - button
+  - link "Communications":
+    - /url: /en-sa/stores/3277610/settings/communications/orders
+    - text: Communications
+    - button
+  - link "Store":
+    - /url: /en-sa/stores/3277610/settings/information
+  - link "Store information":
+    - /url: /en-sa/stores/3277610/settings/information
+  - link "Legal pages":
+    - /url: /en-sa/stores/3277610/channels/online-store/pages/legal
+  - link "Hours of operation":
+    - /url: /en-sa/stores/3277610/settings/hours-of-operation
+  - link "Team":
+    - /url: /en-sa/stores/3277610/settings/team
+  - link "Groups":
+    - /url: /en-sa/stores/3277610/settings/team/groups
+  - link "Domains list":
+    - /url: /en-sa/stores/3277610/settings/domains
+- main:
+  - button
+  - heading "Store information" [level=5]
+  - button "Save"
+  - tablist:
+    - tab "Store information"
+    - tab "Business details"
+    - tab "Business address" [selected]
+  - paragraph: You can enter your location manually or using Google Maps.
+  - list:
+    - listitem:
+      - paragraph: Display address in storefront
+      - switch
+    - listitem:
+      - paragraph: Enter the location automatically using Google Maps.
+      - switch
+    - listitem:
+      - paragraph: Time zone
+      - paragraph: Selecting your store's time zone will help ensure consistency in dates and times across orders, reports, and file exports.
+      - combobox "Asia/Riyadh"
+  - text: Country
+  - combobox "Country": Kuwait
+  - button "Open"
+  - text: City
+  - combobox "City" [expanded]
+  - button "Close"
+  - text: District
+  - textbox "District"
+  - text: Street
+  - textbox "Street"
+  - text: Building number
+  - textbox "Building number"
+  - text: Zip code
+  - textbox "Zip code"
+  - text: Additional number
+  - textbox "Additional number"
+  - alert:
+    - text: An example of a national address proof file from SPL.
+    - button "Preview"
+  - button "Choose File"
+  - paragraph: National Address
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img
+- listbox "City":
+  - option "Kuwait City"
+  - option "Hawally"
+  - option "Al Farwaniyah"
+  - option "Al Ahmadi"
+  - option "Al Jahra"
+  - option "Mubarak Al-Kabeer"
+  - option "Abbasiyah"
+  - option "Abdali"
+  - option "Abdulla Port"
+  - option "Abraq Khaitan"
+  - option "Adailiya"
+  - option "Adan"
+  - option "Al Hasawi"
+  - option "Al Khiran Pearl City"
+  - option "Al Metlaa"
+  - option "Al Mubarakyia"
+  - option "Al Salmi"
+  - option "Al Shadadiya"
+  - option "Al Soor"
+  - option "Al Wetiyah"
+  - option "Al Zour"
+  - option "Ali Sabah Al Salem"
+  - option "Amgara"
+  - option "Amghara Industrial Area"
+  - option "Andalous"
+  - option "Ardiya"
+  - option "Ardiya Industrial"
+  - option "Bayan"
+  - option "Bnaider"
+  - option "Daiya"
+  - option "Dasma"
+  - option "Dhaher"
+  - option "Fahaheel"
+  - option "Fahaheel Industrial"
+  - option "Faiha"
+  - option "Fintas"
+  - option "Firdous"
+  - option "Granada"
+  - option "Hadiya"
+  - option "Hateen"
+  - option "Jaber Al Ahmad"
+  - option "Jaber Al Ali"
+  - option "Jabriya"
+  - option "Jahra Industrial Area"
+  - option "Julaiya"
+  - option "Kabd"
+  - option "Kaifan"
+  - option "Kazma"
+  - option "Khairan"
+  - option "Khaitan"
+  - option "Khaldiya"
+  - option "Kuwait International Airport"
+  - option "Magwa"
+  - option "Mahboula"
+  - option "Maidan Hawalliy"
+  - option "Mangaf"
+  - option "Mansouriya"
+  - option "Messila"
+  - option "Mishref"
+  - option "Nahda"
+  - option "Nuwaiseeb"
+  - option "Nuzha"
+  - option "Omariya"
+  - option "Qortoba"
+  - option "Al Qarin"
+  - option "Qusur"
+  - option "Rabiya"
+  - option "Rai"
+  - option "Rawda"
+  - option "Rawdatain"
+  - option "Regiee"
+  - option "Rehab"
+  - option "Rumaithia"
+  - option "Sabah Al Ahmad"
+  - option "Sabah Al Nasser"
+  - option "Sabah Al Salem"
+  - option "Sabriya"
+  - option "Safat"
+  - option "Al Salam"
+  - option "Salhiya"
+  - option "Salmiya"
+  - option "Sawaber"
+  - option "Shaab"
+  - option "Shamiya"
+  - option "Sharq"
+  - option "Shuaiba"
+  - option "Shuaiba Industrial Area"
+  - option "Shuawaikh"
+  - option "Shuwaikh Education Area"
+  - option "Shuwaikh Health Area"
+  - option "Shuwaikh Port"
+  - option "South Sabahiyah"
+  - option "Subiya"
+  - option "Sulaibikhat"
+  - option "Sulaibiya"
+  - option "Sulaibiyah Industrial Area"
+  - option "Surra"
+  - option "Um Seddah"
+  - option "Umm Al Aish"
+  - option "Umm Hayman"
+  - option "Wafra"
+  - option "Wousta"
+  - option "Yarmouk"
+  - option "Zahra"
+  - option "Abdullah al-Salem"
+  - option "Abdulla Al Mubarak Al Sabah"
+  - option "Abu Hasaniya"
+  - option "Abu Fatira"
+  - option "Abu Halifa"
+  - option "Al-Bidea"
+  - option "Al-Dajeej"
+  - option "Al-Masayel"
+  - option "Al-Riqqa"
+  - option "Al-Siddeeq"
+  - option "Assabahiyah"
+  - option "Bnied Al-Gar"
+  - option "Doha"
+  - option "Eqaila"
+  - option "Fahad Al Ahmad"
+  - option "Fnaitees"
+  - option "Ishbiliya"
+  - option "Jleeb Al-Shuyoukh"
+  - option "Mubarak Al-Abdullah"
+  - option "Naeem"
+  - option "Naseem"
+  - option "North West Sulaibikhat"
+  - option "Ayoun"
+  - option "Qadsiya"
+  - option "Qairawan"
+  - option "Qasr"
+  - option "Qiblah"
+  - option "Saad Al Abdullah Al Jahra"
+  - option "Salwa"
+  - option "Shuhada"
+  - option "Shuwaikh Industrial Area"
+  - option "Shuwaikh Residential"
+  - option "Taima"
+  - option "Waha"
+  - option "Al Qaysariya"
+  - option "Dasman"
+  - option "Mirqab"
+  - option "Sabhan"
+  - option "Other"
+  - option "West of Abu Fatira Al-Herafia"
+  - option "West Abdullah alMubarak"

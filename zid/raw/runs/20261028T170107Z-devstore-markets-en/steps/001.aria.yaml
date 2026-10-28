@@ -1,0 +1,101 @@
+- banner:
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/3277610
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "0"
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+- navigation "Primary navigation":
+  - button "Home" [pressed]
+  - button "Apps"
+  - button "Settings"
+  - separator
+- list:
+  - link "Dashboard":
+    - /url: /en-sa/stores/3277610
+  - link "Orders":
+    - /url: /en-sa/stores/3277610/orders
+  - link "Products":
+    - /url: /en-sa/stores/3277610/catalog/products
+  - link "Customers":
+    - /url: /en-sa/stores/3277610/customers
+  - link "Marketing":
+    - /url: /en-sa/stores/3277610/marketing
+  - link "Whatsapp":
+    - /url: /en-sa/stores/3277610/services/whatsapp
+  - link "Online store":
+    - /url: /en-sa/stores/3277610/channels/online-store
+  - link "Analytics":
+    - /url: /en-sa/stores/3277610/analytics
+  - link "Logistics":
+    - /url: /en-sa/stores/3277610/services/logistics
+  - link "Payments":
+    - /url: /en-sa/stores/3277610/services/payments
+  - link "Financing":
+    - /url: /en-sa/stores/3277610/services/financing
+  - link "Growth":
+    - /url: /en-sa/stores/3277610/services/growth
+  - link "Channels":
+    - /url: /en-sa/stores/3277610/channels
+    - text: Channels
+    - button
+- list
+- progressbar:
+  - img
+- text: 2/5
+- heading "Earn 150  Cashback" [level=6]
+- text: Complete all onboarding steps within 24 hours and get rewarded. 23h 57m 38s
+- main:
+  - heading "Welcome to our Zid! 🚀 Let’s start the journey of setting up your store." [level=5]
+  - paragraph: Complete the following steps in order to have a ready integrated store for selling your products and services online and to receive your cashback!
+  - button "Onboarding Wizard"
+  - text: Celebrate Saudi National Day with Zid
+  - button "More details"
+  - paragraph: Reach your goals and unlock exclusive rewards with every milestone
+  - paragraph: Enjoy an Extra Free Year 🎁
+  - paragraph: Complete 1932 orders and unlock an additional year of your subscription on us!
+  - button "Subscribe now"
+  - paragraph: Earn Cashback on Every Order 💸
+  - paragraph: Complete 100 orders and get 0.25  cashback for every completed order. Every order brings you closer to your reward!
+  - button "Start challenge"
+  - heading "Need a free consultation from the sales team?" [level=6]
+  - paragraph: Our sales team is here to help you find the best solution for your business
+  - button "Zid Ai Agent"
+  - button "Contact us"
+  - img "sales"
+  - heading "Add product" [level=6]
+  - text: Task Completed Successfully
+  - img "services"
+  - heading "🚀 Need help setting up?" [level=6]
+  - text: Let our experts build and configure your store for you from scratch.
+  - button "Explore service"
+  - text: 3 mins
+  - img "sales"
+  - heading "Add your branding" [level=6]
+  - text: Reflect your visual identity on your store through colors, a logo, and an icon. And if you need a hand, click on 'Zid AI Support 🤖'.
+  - button "Add branding"
+  - button "Zid AI Support 🤖"
+  - text: 30 secs
+  - img "sales"
+  - heading "Confirm the support phone number" [level=6]
+  - text: Add a support number for your customers. You can either confirm the registered number +967772165871 or add a new support number
+  - button "Confirm the Registered"
+  - button "Add new number"
+  - text: 5 mins
+  - img "sales"
+  - heading "Get verified in seconds" [level=6]
+  - text: Complete a quick and secure verification to unlock all features and start selling. It’s fast, effortless, and builds trust with your customers instantly.
+  - button "Start Verification"
+  - img "sales"
+  - heading "Set your shipment pickup location" [level=6]
+  - text: Task Completed Successfully
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img

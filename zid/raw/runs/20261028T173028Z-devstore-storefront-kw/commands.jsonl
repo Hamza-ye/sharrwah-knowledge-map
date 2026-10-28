@@ -1,0 +1,5 @@
+{"intent":"first visit, the English address","do":"goto","url":"https://gx4idm.zid.store/en/","readyTimeout":15000,"settleMs":3000}
+{"intent":"the address for English in Kuwait (a published Kuwait market exists)","do":"goto","url":"https://gx4idm.zid.store/en-kw/","readyTimeout":15000,"settleMs":3000}
+{"intent":"the address for Arabic in Kuwait","do":"goto","url":"https://gx4idm.zid.store/ar-kw/","readyTimeout":15000,"settleMs":3000}
+{"intent":"the storefront home","do":"goto","url":"https://gx4idm.zid.store/","readyTimeout":15000,"settleMs":3000,"fullPage":true}
+{"do":"close"}

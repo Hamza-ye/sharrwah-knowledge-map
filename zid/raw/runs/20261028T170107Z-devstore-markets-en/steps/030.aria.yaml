@@ -1,0 +1,34 @@
+- banner:
+  - button "Toggle sidebar"
+  - link "Zid":
+    - /url: /en-sa/stores/3277610
+  - button "Add"
+  - textbox "Search"
+  - text: Ctrl + K
+  - button "Zid AI"
+  - button "0"
+  - button
+  - button "Whats new" [disabled]
+  - button "Pinned and recent pages"
+- navigation "Primary navigation":
+  - button "Home"
+  - button "Apps" [pressed]
+  - button "Settings"
+  - separator
+- list:
+  - link "App Market":
+    - /url: /en-sa/stores/3277610/apps
+  - link "My apps":
+    - /url: /en-sa/stores/3277610/apps/installed
+  - link "Categories":
+    - /url: /en-sa/stores/3277610/apps/browse
+- main:
+  - button
+  - heading "My apps" [level=5]
+  - heading "Activated apps" [level=6]
+  - heading "Deactivated apps" [level=6]
+  - paragraph: © Zid 2026 commercial registration number 1010365366
+  - paragraph: Made in Saudi by
+  - link:
+    - /url: https://zid.sa
+    - img
