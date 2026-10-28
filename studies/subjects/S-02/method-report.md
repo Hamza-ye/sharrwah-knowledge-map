@@ -714,3 +714,60 @@ After C-R, RD2's and RD3's 247 keys stand as follows.
 - **A row written again lost its earlier note.** The phase C brief doesn't let an agent read notes, and the tool wrote the whole row. Six notes were lost, two of them the reasons for each platform's letters. The coordinator restored them from the files before C-R, and the tool now keeps a row's note and adds the new one after it.
 - **`show` printed no readings.** A re-run weighs a key's reading, basis and scopes again, so the agent printed those columns with its own script. `show --full` now prints them, never a note.
 - **A gap that asks only for a number within a key its platform gives can't be marked open.** An example is S02-SH-G16, how many markets per plan, under `a number of markets per store, set by plan`. The tool notes it, and the gap stands as a question to the platform.
+
+## 13. Salla and Zid: the local agent's captures of 28 October
+
+**What arrived.**
+- **Salla:** observed-sa at `b0bd0b16` holds the runs for H-001 to H-005. H-004 stopped at Salla's review, and H-005 at Salla's gate.
+- **Zid:** a new repository, `other-product-class`, folder `zid/`. It holds a public demo store and a development store, both with Zid's feature flag `must_use_markets_pricing` false, so neither shows Zid's markets screens. It also holds the dashboard's route manifest, page index, strings and code.
+- **Access:** this session's GitHub access couldn't reach the new repository. The founder's local agent pushed it to this repository's branch `evidence/other-product-class`, which the session reads as a detached worktree (`CLAUDE.md`).
+
+**The founder's rule for what remains:** pursue a gap only if closing it could change an S-02 decision and a proportionate route exists. Otherwise leave it open, or close it. [`gap-assessment.tsv`](gap-assessment.tsv) gives each gap's verdict.
+
+**A2-SA-R** (65 requests, 9.7 million): Salla's runs.
+- **Answered:** S02-SA-G03 and G04.
+- **Narrowed:** G01, G05 and G07, into G16 to G18.
+- **Left:** seven. Salla refused the multi-market activation, and the UAE verification waits on Salla's review.
+- **G16 needed no agent.** The held help article it named was read in full by the coordinator, and it doesn't say who may change the store's country. G16 stays open for RD1's analysis.
+
+**A2-ZD-R** (69 requests, 12.3 million): Zid's captures.
+- **Recorded:** 39 statements and 13 absences.
+- **Answered:** 10 gaps, seven of them on absences from the dashboard's complete route list.
+- **Narrowed:** 10, into G24 to G33. Only G30 (who checks a store's country after it changes) can still change an S-02 decision. The others go to their subjects (S-03, S-05, S-07) or are closed.
+- **Left:** 3, which can't change a decision, so they are closed.
+
+**A3-ZD-R** (66 requests, 10.9 million): the 13 absences audited by an agent that didn't record them.
+- **N05 to N16 confirmed,** by four tests:
+  1. **The market's own page:** its code saves only a market's name, countries, currency and publication.
+  2. **Each setting's own page:** none names a market.
+  3. **The manifest's completeness:** the dashboard is a single-page app whose routes are all declared at start, and all 119 page-index paths are in the manifest.
+  4. **Zid's own word:** its help and changelog name only a market's countries, currency, products, prices and theme.
+- **N17 contradicted:** Zid's cities answer holds 173 countries, among them the five the Business address list of 162 lacks. What still stands is that the Business address list holds none of the five.
+- **What it taught:** an absence from a list of routes rests on two things, that the list is complete and that the thing would need a route of its own. A page can hold a field without a route, so the audit tested the pages' own code too. A brief that relies on a route list should ask for that test.
+
+**Phase B's round** (five parts, 36.8 million): every new statement placed or noted, and the rows naming a settled gap revisited.
+
+| Part | Tasks | Requests | Millions |
+| --- | --- | --- | --- |
+| RD1-S7 (Salla) | 37 | 61 | 8.8 |
+| RD2-S4 (Salla and Zid) | 17 | 57 | 7.4 |
+| RD3-S12 (Zid) | 20 | 49 | 6.3 |
+| RD3-S13 (Salla) | 10 | 49 | 5.3 |
+| RD1-S8 (Zid, a Salla revisit, and the rulings' six tasks) | 19 | 65 | 9.0 |
+
+- **What it changed:** twelve of Zid's gap rows under RD3 now give `the whole store`. Each is a reading of a setting shown once, with no market field, on the two-market store, beside the audited absence. Where gap-closing narrowed a gap, a gap row stands beside the answer.
+- **The full check:** the subject holds 923 rows under 75 points. It finds no error and nothing unplaced, and every quote is found.
+- **The coordinator's rulings** are in `b/second-pass.md`. Two change rows:
+  - **An answer the platform's own assistant generates is a lead, not an answer.** Salla's dashboard assistant answers under the notice "Responses are AI-generated. Verify what matters most."
+  - **Salla's default currency gets its row:** the store whose onboarding answered the UAE holds currency AED.
+
+**What the round taught about the tools.** The coordinator fixed each before the next part ran:
+- **The task builder dropped a revisit's leads again,** the slip of section 12. It is now `method/round_tasks.py`. It appends every revisit whose leads have no other task, and dedupes within a round. Run again, it found the 13 Salla statements the round's first list had dropped.
+- **`variants_edit.py add` gave a removed row's id to a new row** (S02-V-303). It now skips every id the ledger, notes or rulings name, and the new row is renumbered S02-V-307.
+- **JSONL was split with Python's `splitlines()`,** which also breaks on U+2028 inside a JSON string, and so dropped records: 13 of Zid's `answers.jsonl` and one Salla structure, of 2,531 held JSONL files. The search, run and quote tools now split on newlines alone, so their line numbers are the files' own.
+- **Zid's fetch archives were outside the search.** `corpus_search.py zid` now reads them, so the dashboard's code is searched.
+- **The dashboard's strings had no kind.** Their structure names its source in another field. `source_kinds.py` now reads it, so they are `shipped`.
+- **The slices were cut again while parts ran,** to carry those kinds. Each file was replaced whole and at once, so a part read either the old file or the new one.
+- **`xwords` added duplicates.** It no longer does.
+
+**Cost of the round:** 69.7 million: gap-closing and the audit 32.9, phase B 36.8.
