@@ -6,7 +6,7 @@
 - **`PLAN.md`:** the plan, the authority on how the work is done. It works within the founder's decisions.
 - **`STATE.md`:** where the work is, and the next step.
 - **`founder-decisions.tsv`:** the founder's decisions in force. They decide what Sharrwah does, and they bind the plan: where the plan differs from one, the decision holds and the plan is corrected.
-- **The evidence:** `evidence/`; the evidence repositories observed-sh and observed-sa (cloned at `/home/user/observed-sh` and `/home/user/observed-sa`); and the WooCommerce release that `evidence/product-class/woocommerce-11.2.1/` fixes by checksum (unpacked at `/home/user/woocommerce-release/11.2.1`). They are the only authority on facts. The evidence repositories' own plans and notes, such as their `docs/PLAN.md`, govern their capture work, not this work.
+- **The evidence:** `evidence/`; the evidence repositories observed-sh and observed-sa (cloned at `/home/user/observed-sh` and `/home/user/observed-sa`); other-product-class, where the founder's local agent captures Zid, BigCommerce and WooCommerce (this repository's branch `evidence/other-product-class`, its commit ids unchanged, checked out read-only with `git fetch origin evidence/other-product-class && git worktree add --detach /home/user/other-product-class origin/evidence/other-product-class`); and the WooCommerce release that `evidence/product-class/woocommerce-11.2.1/` fixes by checksum (unpacked at `/home/user/woocommerce-release/11.2.1`). They are the only authority on facts. The evidence repositories' own plans and notes, such as their `docs/PLAN.md`, govern their capture work, not this work.
 - **The inputs the plan names:**
   - `studies/concern-map/`: Q1's map, the index subjects draw from;
   - `studies/yemen-cases/`: Stage 1, with its `corrections.md`;
@@ -31,7 +31,7 @@
 **An agent working from a brief:** read only your brief and what it names.
 
 **Everyone:**
-- `observed-sh` and `observed-sa` are read-only here. Never commit or push to them.
+- `observed-sh`, `observed-sa` and `other-product-class` are read-only here. Never commit or push to them, or to the branch `evidence/other-product-class`.
 - Run Python that reads evidence with `python3 -I`.
 - The founder's words are never evidence of what a platform does.
 - Every claim is one of three (`PLAN.md`, section 6):

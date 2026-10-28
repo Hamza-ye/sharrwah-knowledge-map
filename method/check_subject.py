@@ -33,6 +33,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 SKM = os.path.dirname(HERE)
 ROOTS = {"observed-sh": os.environ.get("OBSERVED_SH", "/home/user/observed-sh"),
          "observed-sa": os.environ.get("OBSERVED_SA", "/home/user/observed-sa"),
+         "other-product-class": os.environ.get("OTHER_PRODUCT_CLASS", "/home/user/other-product-class"),
          "woocommerce-11.2.1": os.environ.get("WOO_RELEASE", "/home/user/woocommerce-release/11.2.1/woocommerce"),
          "sharrwah-knowledge-map": SKM}
 SRC = Sources(ROOTS, CAPTURES)
@@ -315,7 +316,7 @@ for plat, code in PLATFORMS.items():
         cid, src, f = c["cite_id"], c["source"], f"{plat}/citations.tsv"
         if c["access_path"] not in ACCESS:
             err(f, cid, f"access_path '{c['access_path']}' is not one of {sorted(ACCESS)}")
-        if re.match(r"^(observed-sh|observed-sa)(?!@[0-9a-f]{7,40}:)", src):
+        if re.match(r"^(observed-sh|observed-sa|other-product-class)(?!@[0-9a-f]{7,40}:)", src):
             err(f, cid, "a local source names its repository at a commit")
         if len(c["quote"]) > 300:
             err(f, cid, f"quote is {len(c['quote'])} characters; the brief allows 300", "warning")

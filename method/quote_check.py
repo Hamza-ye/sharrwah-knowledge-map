@@ -235,6 +235,7 @@ if __name__ == "__main__":
         caps = [a for a in sys.argv[3:] if os.path.isdir(a)]
         here = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         S = Sources({"observed-sh": "/home/user/observed-sh", "observed-sa": "/home/user/observed-sa",
+                     "other-product-class": "/home/user/other-product-class",
                      "woocommerce-11.2.1": "/home/user/woocommerce-release/11.2.1/woocommerce",
                      "sharrwah-knowledge-map": here}, caps)
         texts, why = (S.web_texts(src) if re.match(r"^https?://", src) else S.local_texts(src, loc))

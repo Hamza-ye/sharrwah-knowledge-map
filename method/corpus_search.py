@@ -37,7 +37,8 @@ import runs_corpus
 
 csv.field_size_limit(10**9)
 SKM = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-REPOS = {"observed-sa": "/home/user/observed-sa", "observed-sh": "/home/user/observed-sh"}
+REPOS = {"observed-sa": "/home/user/observed-sa", "observed-sh": "/home/user/observed-sh",
+         "other-product-class": os.environ.get("OTHER_PRODUCT_CLASS", "/home/user/other-product-class")}
 HOSTS = {  # captured pages in this repository's runs, by the host they came from (a whole host or its subdomain)
     "shopify": r"(^|\.)(shopify\.(com|dev)|stripe\.com)$",
     "salla": r"(^|\.)salla\.(sa|com|dev)$",
@@ -51,6 +52,11 @@ TEXTUAL = re.compile(r"(?i)text/html|application/xhtml|text/plain|text/markdown|
 SCRIPT = re.compile(r"(?i)javascript|ecmascript")
 PIECE = 200000           # a script longer than this is held in pieces this long, each overlapping the last by 2,000
 HELD = {  # text corpora held in the observed repositories: (repository, path glob, format)
+    # Zid as the founder's local agent captured it (28 October 2026): its dashboard's own structures (routes, page
+    # index, locales, plan policies, permissions), and its runs' step text and saved answers
+    "zid": [("other-product-class", "zid/structures/**/items.jsonl", "lines"),
+            ("other-product-class", "zid/raw/runs/*/steps/*.text.txt", "text"),
+            ("other-product-class", "zid/raw/runs/*/answers/**/*.json", "text")],
     "salla": [("observed-sa", "structures/salla/help-articles/ar/texts.jsonl", "articles"),
               ("observed-sa", "structures/salla/help-articles/en/texts.jsonl", "articles"),
               ("observed-sa", "structures/salla/com-policies/*/text.txt", "text"),
