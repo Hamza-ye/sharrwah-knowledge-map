@@ -5,8 +5,9 @@ Usage: python3 -I method/check_yemen_row.py SUBJECT_DIR
 It checks:
 - the columns, in the brief's order;
 - that each `decision_id` is a founder decision of SUBJECT_DIR/register.tsv, and that every founder decision has rows;
-- that `exists` is yes, no or unknown; that a yes or a no cites Stage 1's ids, with each fact's date in `as_of`; and
-  that an unknown says what would show it;
+- that `exists` is yes, no or unknown; that a yes or a no cites Stage 1's ids, with each fact's date in `as_of`, unless
+  the option needs nothing particular in any market or the row takes another row's facts ("As (a)"); and that an
+  unknown says what would show it;
 - that each cited Stage 1 id (YA, YK, YC, YE, YQ) is in its file in `studies/yemen-cases/`;
 - that no product gap names Yemen, or a place, party or currency that only Yemen has (`PLAN.md`, section 6, step 5).
 It warns where a lettered option of a decision's `alternatives`, (a), (b) and on, has no row that starts with it.
@@ -68,7 +69,9 @@ def main(subj):
         if exists not in ("yes", "no", "unknown"):
             problems.append(f"{where}: exists is '{exists}'")
         cited = re.findall(r"\bY[AKCEQ]-[A-Z]?\d+\b", r.get("evidence", ""))
-        if exists in ("yes", "no") and not cited:
+        # An option that needs nothing particular in any market cites nothing; a row may take another row's facts ("As (a)")
+        bare = "nothing particular" in r.get("needs", "").lower() or r.get("evidence", "").startswith("As ")
+        if exists in ("yes", "no") and not cited and not bare:
             problems.append(f"{where}: exists is {exists} with no Stage 1 id")
         if cited and not r.get("as_of", "").strip():
             problems.append(f"{where}: cites {', '.join(cited)} with no date in as_of")
