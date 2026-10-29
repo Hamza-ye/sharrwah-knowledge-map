@@ -110,7 +110,7 @@ So item 2's step is smaller than building a model from scratch: join Q1 across t
 | 0 | You settle the text, with section 5's lines or without them | this page | — |
 | 1 | Record it verbatim. Fold it into `PLAN.md`: section 1 (aim and safe shore), section 3 (who decides), section 4 (a stage for the model's extent before architecture, with subjects as the variation analysis), section 5 (G3 holds only your list, and G4 is redefined), section 6 (the narrowing test), and section 11 (what each change removes or weakens). Then an independent reading of the change | `founder-decisions.tsv`, `PLAN.md`, `CLAUDE.md`, `STATE.md` | the coordinator, plus about 10 million |
 | 2 | S-02's register re-statused under the intent, and E5 ruled | `studies/subjects/S-02/` | about 5 million |
-| 3 | The class's model, its extent. The Knowledge Map's areas are checked and relabelled from all five platforms, and Q1 is joined across them as a product map of capability, platforms and placement. A dry run on 2 areas comes first, then the 32 areas in parts, then an independent review | a new `studies/class-model/` | 170 to 240 million, budget 250 |
+| 3 | The class's model, its extent. One domain per part, all five platforms at once, from Q1's evidence (`studies/class-model/briefs/B-extent.md`, inspected twice). A dry run on one domain comes first, reviewed on its output. Then the conventions and a checker, the other domains, and an independent review | `studies/class-model/` | 170 to 240 million, budget 250 |
 | 4 | Architecture and the model's detail, area by area, beside the subjects, with spikes where the model raises a question | per area | each area sized at its start |
 
 **When:** step 1 the day you settle the text; step 2 the same day; step 3 over a day to a day and a half, then step 4. I'd run steps 2 and 3 from a fresh coordinating session.
@@ -215,3 +215,17 @@ Each change goes in its section, with a dated line in section 11 saying what it 
 | 4, the sequence | A stage for the class's model. Part 1: each concern's area and each area's labels. Part 2: the product map. Then an independent review, and a report of the extent. The subjects continue as the analysis of where the class varies by market | Adds a stage, and removes nothing. Subjects run beside the model, and S-03's company questions are yours |
 | 5, the gates | G3, after each subject, brings you only what your list holds. Engineering's rulings are listed for veto. The extent's report is engineering's, with your veto. G4 accepts the model's extent and the register | Weakens G3 from every founder item to your list. Risk: an item you'd want slips through. It is held by the veto list |
 | 6, the rules | The narrowing test. The kinds class, slot and world. The evidence rules stay as they are | Removes nothing |
+
+## 12. On your go
+
+**This session, in order:**
+1. **Record** rows 1 to 3 (section 10) in `founder-decisions.tsv`.
+2. **Fold** them into `PLAN.md` (section 11), and add `studies/class-model/` to `CLAUDE.md`'s working files. Then `STATE.md`.
+3. **Have an agent that made none of it read the plan change** for contradictions. Its findings are fixed before anything builds on the change.
+4. **Re-status S-02's register:** the nine decisions become engineering's rulings, listed for your veto, with E5 ruled. [`reports/S-02.md`](S-02.md) is marked replaced by this page.
+5. **Commit and push,** and update PR #8.
+
+**Then a fresh coordinating session** runs the class's model: the dry run on one domain (catalogue and inventory), the review of its output, then the rest. It starts from `CLAUDE.md`, `PLAN.md`, `STATE.md` and `founder-decisions.tsv`, as the reset's cold-start test showed it can.
+
+**The one question for you:** do you open the fresh session yourself, or do I start it and you follow it there?
+
