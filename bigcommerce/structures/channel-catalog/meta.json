@@ -1,0 +1,33 @@
+{
+  "structure": "bigcommerce/channel-catalog",
+  "platform": "bigcommerce",
+  "surface": "control panel (Channel Manager > Create channel)",
+  "source": {
+    "run_id": "20261029T023811Z-channels-en",
+    "step": 2,
+    "held_as": "bigcommerce/raw/runs/20261029T023811Z-channels-en/steps/002.frame-0.aria.yaml",
+    "sha256": "60949245f147ebcde8040595d4813ad9364b0e26cac56a8846605b0fd525665a",
+    "store": "trial store w5pamplexj, default country Oman, currency OMR"
+  },
+  "shape": "a navigation of categories, then a region per category with cards: name, description, a Connect or Create button",
+  "categories_in_order": [
+    "Featured channels",
+    "Storefronts",
+    "Ads and social",
+    "Point of sale",
+    "Marketplaces",
+    "Affiliate and Influencer"
+  ],
+  "regions_in_order": [
+    "Featured channels by Feedonomics",
+    "Storefronts",
+    "Ads and social",
+    "Point of sale",
+    "Marketplaces",
+    "Affiliate and Influencer"
+  ],
+  "counts": {
+    "cards": 19
+  },
+  "items": "items.jsonl: one card per line in page order, with its region and the button it offers; the storefronts region also states \"Create more storefronts with paid plan\""
+}
