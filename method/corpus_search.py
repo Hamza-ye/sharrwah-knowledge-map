@@ -47,7 +47,9 @@ HOSTS = {  # captured pages in this repository's runs, by the host they came fro
     "bigcommerce": r"(^|\.)(bigcommerce\.com|bigcommerce\.co\.uk|commerce\.com|bitpay\.com)$",
 }
 ARCHIVES = {"salla": ("observed-sa", ""), "shopify": ("observed-sh", ""),   # whose fetch archives each platform's
-            "zid": ("other-product-class", "zid/")}                        # search reads: the repository, and the folder
+            "zid": ("other-product-class", "zid/"),                        # search reads: the repository, and the folder
+            "bigcommerce": ("other-product-class", "bigcommerce/"),
+            "woocommerce": ("other-product-class", "woocommerce/")}
 CACHE = os.path.join(os.path.expanduser("~"), ".cache", "sharrwah-corpus")
 TEXTUAL = re.compile(r"(?i)text/html|application/xhtml|text/plain|text/markdown|application/json|text/x-markdown|javascript|ecmascript")
 SCRIPT = re.compile(r"(?i)javascript|ecmascript")
@@ -58,6 +60,15 @@ HELD = {  # text corpora held in the observed repositories: (repository, path gl
     "zid": [("other-product-class", "zid/structures/**/items.jsonl", "lines"),
             ("other-product-class", "zid/raw/runs/*/steps/*.text.txt", "text"),
             ("other-product-class", "zid/raw/runs/*/answers/**/*.json", "text")],
+    # BigCommerce and WooCommerce as the founder's local agent captured them (29 October 2026): a trial store and a
+    # test store of our own, their runs' step text and saved answers, BigCommerce's standard formats by country, and
+    # the test store's options table
+    "bigcommerce": [("other-product-class", "bigcommerce/structures/**/items.jsonl", "lines"),
+                    ("other-product-class", "bigcommerce/raw/runs/*/steps/*.text.txt", "text"),
+                    ("other-product-class", "bigcommerce/raw/runs/*/answers/**/*.json", "text")],
+    "woocommerce": [("other-product-class", "woocommerce/raw/runs/*/steps/*.text.txt", "text"),
+                    ("other-product-class", "woocommerce/raw/runs/*/answers/**/*.json", "text"),
+                    ("other-product-class", "woocommerce/raw/runs/*/options.tsv", "lines")],
     "salla": [("observed-sa", "structures/salla/help-articles/ar/texts.jsonl", "articles"),
               ("observed-sa", "structures/salla/help-articles/en/texts.jsonl", "articles"),
               ("observed-sa", "structures/salla/com-policies/*/text.txt", "text"),
