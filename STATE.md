@@ -104,7 +104,8 @@ At phase A's end, the checker found every quote, 3,193 of them, and no error. Wi
 - **The scenario walk** ([`scenario-walk.tsv`](studies/subjects/S-02/scenario-walk.tsv)): 51 scenarios. 41 cost a setting and 9 one module. 1 is a redesign: data held in-country, a hypothesis for S-08.
 - **Designs beyond the references,** for D8 and D9 ([`designs.tsv`](studies/subjects/S-02/designs.tsv)): 11 sources, captured in `evidence/designs/`. They changed both recommendations.
 - **The independent review** ([`review.md`](studies/subjects/S-02/review.md)): 24 findings, 9 of them must fix. All are resolved after its re-checks.
-- **No container restart** since 23:47 UTC on 28 October.
+- **No container restart while the session worked overnight.** A third restart came at 05:00 UTC on 29 October, while the session sat idle with nothing running. It lost nothing.
+- **BigCommerce and WooCommerce (05:00 UTC):** the founder's local agent pushed them (other-product-class at `3f2438f3`). Two gap-closing parts read the ten gaps that could change a decision: 2 answered, 7 narrowed, 1 left ([`gap-assessment.tsv`](studies/subjects/S-02/gap-assessment.tsv)). Phase B's parts RD1-S9 and RD3-S14 are placing their 43 statements. Then phase C runs again on the keys they touch, and any change to a decision is marked on the founder's page.
 
 **Earlier:**
 - **Phase B's first pass is complete** ([`method-report.md`](studies/subjects/S-02/method-report.md), section 7): 73 variation points, each with a row for every platform, 671 rows, in [`variation-points.tsv`](studies/subjects/S-02/variation-points.tsv) and [`variants.tsv`](studies/subjects/S-02/variants.tsv). The full check gives no error.
@@ -117,6 +118,6 @@ At phase A's end, the checker found every quote, 3,193 of them, and no error. Wi
 1. **The founder's answers** to [`reports/S-02.md`](reports/S-02.md): the three answer lines, the nine decisions, and E5. Each answer goes in `founder-decisions.tsv`, and the register records it.
 2. **Then S-02 closes,** with this file, its report, and PR #8's merge on the founder's word.
 3. **S-03 starts** as the founder's answer on the tested form says. If yes, decisions come first, under the four tests. If no, S-03 runs by the plan's steps.
-4. **BigCommerce and WooCommerce,** when the founder's local agent pushes them: their ten gaps that could change a decision are read ([`gap-assessment.tsv`](studies/subjects/S-02/gap-assessment.tsv)).
+4. **BigCommerce and WooCommerce:** phase B places what gap-closing found, phase C runs again on the keys it touches, and the register and the founder's page change only if a decision does.
 
 **To resume:** read `PLAN.md`, this file and `founder-decisions.tsv`.
