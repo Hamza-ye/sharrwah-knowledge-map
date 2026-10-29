@@ -91,10 +91,23 @@ The register's second pass (`register.tsv` at f4d3d4c6) added two things and rew
   - (b) is `yes`, and leaves payment services and the currency keyed on the country;
   - (c) is `yes` for the area read from the address, and `unknown` for the bounds of an authority's area, as S02-D4 (a).
 - **S02-D7.**
-  - The row that tested one rate per currency pair moved from (c) to (e), the per-currency form, as the options are now worded. It stays `no`, with no gap.
+  - The row that tested one rate per currency pair moved from (c) to (e), the per-currency form, as the options are now worded. It stays `no`. It was given no gap then; that is withdrawn after the third pass (below).
   - A new (e) row holds the rate per market, kept on each order: `yes`.
-  - Gap 3 is now half met by (e). The register moves its other half to S-09 (S02-M6).
+  - Gap 3 was then read as half met by (e). That reading is withdrawn after the third pass (below).
 - **S02-D3.** Its options are unchanged, and its rows still match. Gaps 1 and 2 now say the register takes them up as S02-D8.
-- **Problem 3 above is answered:**
-  - option (e) shows a rate held per market;
-  - S02-D8 (b) shows references keying tax and a feature on an area, but not payment services or the currency.
+- **Problem 3 above is answered in part:** S02-D8 (b) shows references keying tax and a feature on an area, but not payment services or the currency. The reading that option (e)'s rate per market meets gap 3 is withdrawn after the third pass (below).
+
+## After the register's third pass
+
+The independent review (`review.md`, findings 6 and 19) and the register's third pass (`register.tsv` at 47847720) changed the row. It now has 48 rows: 33 `yes`, 8 `no`, 7 `unknown`. `method/check_yemen_row.py` passes, with 0 problems and 0 warnings.
+- **Finding 6: gap 3 is not met.** No reference sells two areas of one country under one currency code at two rates. A sub-region market inherits its parent's currency (S02-SH-104), and Salla converts at the currency's rate (S02-SA-103). The register drafts the gap as S02-D9, and the row now points to it:
+  - S02-D7 (a)'s gap (line 35) is S02-D9's, in full;
+  - S02-D7 (e)'s per-market row (line 40) names Shopify only, and its note says why two areas of one country can't sell at two rates under it;
+  - the per-currency row (line 41) adds Salla, and its gap is S02-D9;
+  - S02-D1 (e) and S02-D3 (f) point to S02-D9.
+- **S02-D9, new.** Four rows:
+  - (a) is `no`, as S02-D7 (e)'s per-currency row;
+  - (b) is `yes`, and leaves the gap;
+  - (c) is `yes` for the currency areas, their notes and rates, and `unknown` for which buyers are in which area, as S02-D4 (a).
+- **Finding 19.** S02-D1 (c)'s "from abroad" (line 4) is now marked as an assumption: where the company is based is S-03's, and open.
+- **S02-D4 and S02-D5.** S02-D4's options changed only in (d)'s evidence, so its rows still match. S02-D5 (b) now reads as the register words it: "the most specific settings".
