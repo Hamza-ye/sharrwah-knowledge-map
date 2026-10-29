@@ -95,8 +95,15 @@ capture/woocommerce/db_snapshot.sh <label>    # the database as a run: wordpress
   update` took the image's 6.9.4 to 7.1.4).
 - The store's REST API is called from its own admin page with `{"do": "evaluate", "js": "wp.apiFetch({...})"}`; the
   trace holds each call and answer.
-- WordPress.com answers the Jetpack connection with a human check ("Confirm you are human"), which is the founder's
-  hand; WooPayments' test account and business verification wait for that connection.
+- WordPress.com may answer the Jetpack connection with a human check ("Confirm you are human"), which is the founder's
+  hand; WooPayments' test account and business verification need that connection.
+- Stripe's sign-in popup in WooPayments' verification refuses while a run is attached to the browser
+  (`captcha_try_again_later_support_error`): close the run, let the founder sign in by hand (email, phone, the code
+  Stripe texts), then start a run with `RUN_ADOPT_PAGE` on the admin tab. Stripe's form frame predates such a run and
+  is not among its step frames: take its screens with `"fullPage": true`, and its requirements from
+  `GET /wc/v3/payments/accounts` (`capability_requirements`).
+- `POST /wp-json/wc-admin/settings/payments/woopayments/onboarding/reset` deletes the account, test or live, when Stripe
+  allows, so the next business location can be onboarded.
 
 ## Structures
 
