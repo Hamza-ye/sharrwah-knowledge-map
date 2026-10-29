@@ -92,11 +92,13 @@ The pilot's five steps, under Stage 4's changes (`PLAN.md`, Stage 4, and section
 | 1B | Variation points per root decision, and variants | in parts, each a fresh agent, one after another for the same root decision (`b/parts.tsv`) | `b/<root decision>/`, joined by `method/merge_slices.py` into `variation-points.tsv`, `variants.tsv` and `notes-b.md` |
 | 1A2, 1A3 | Closing the gaps a root decision needs; and auditing every claim of absence, which can run beside phase B | one agent per platform, or per part of one | `<platform>/a2.tsv`, `absence-audit.tsv` |
 | 1C | Cause, coexistence and what follows, per root decision | per root decision, in parts where it is large | `c/<root decision>/`, joined into `analysis.tsv` and `notes-c.md` |
-| 2 | The Yemen row per root decision (section 6, step 6) | the coordinator; each fact checked against its quote first | in the register |
-| 3 | The scenario walk per root decision (section 6, step 7) | the coordinator | in the register |
-| 4 | The register | the coordinator | `register.tsv` |
-| 5 | Independent review | one agent that produced none of it | `review.md` |
+| 4 | The register, drafted first: each founder question asked once, with its options and an engineering recommendation (`briefs/D-register.md`) | one agent; the coordinator checks it | `register.tsv`, `decisions.md` |
+| 2 | The Yemen row for each decision of the register (section 6, step 6; `briefs/E-yemen-row.md`) | one agent, each fact checked against its quote; the coordinator checks it | `yemen-row.tsv` |
+| 3 | The scenario walk per root decision (section 6, step 7; `briefs/F-scenario-walk.md`) | one agent; the coordinator checks it | `scenario-walk.tsv` |
+| 5 | Independent review (`briefs/G-review.md`) | one agent that produced none of it | `review.md` |
 | 6 | The quote check, and the report for G3 with the cost against the budget | the coordinator | `reports/S-02.md` |
+
+*Changed on 29 October 2026 (the coordinator's, a fix to the method):* the register comes first, so that the Yemen row and the scenario walk test a handful of decisions, not 142 founder items. Agents draft steps 2 to 4 from briefs, and the coordinator checks each, since the coordinating session's context has grown large enough that its own steps cost several times an agent's.
 
 **Running the agents.** The pilot's phase A started five agents at once on 12 October, and four stopped at the usage limit within 35 minutes. Two of them had written nothing, so their 75 million tokens were lost and they were run again from the start. Resuming a paused agent cost 0.2 to 0.7 million each time (the pilot's transcripts; [the method report, section 12](../S-01/method-report.md#12-what-a-subject-costs)). So:
 - no more than two agents run at once;
