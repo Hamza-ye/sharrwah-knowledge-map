@@ -1,0 +1,15 @@
+- dialog:
+  - document:
+    - heading "Set up WooPayments" [level=2]
+    - img "Step completed"
+    - text: Choose your payment methods
+    - img "Step active"
+    - text: Connect with WordPress.com
+    - img "Step active"
+    - text: Activate payments
+    - img "Step active"
+    - text: Submit for verification
+    - button
+    - heading "Connect to WordPress.com" [level=1]
+    - paragraph: You’ll be briefly redirected to connect your store to your WordPress.com account and unlock the full features and functionality of WooPayments
+    - button "Connect"

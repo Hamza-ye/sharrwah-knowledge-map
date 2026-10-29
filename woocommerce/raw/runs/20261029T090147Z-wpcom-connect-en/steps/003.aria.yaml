@@ -1,0 +1,56 @@
+- dialog:
+  - document:
+    - heading "Set up WooPayments" [level=2]
+    - img "Step active"
+    - text: Choose your payment methods
+    - img "Step active"
+    - text: Connect with WordPress.com
+    - img "Step active"
+    - text: Activate payments
+    - img "Step active"
+    - text: Submit for verification
+    - heading "Choose your payment methods" [level=1]
+    - button
+    - text: Select which payment methods you'd like to offer to your shoppers. You can update these at any time.
+    - img "Credit/debit card logo"
+    - text: Credit/debit card Accepts all major credit and debit cards
+    - checkbox [checked] [disabled]
+    - img "Apple Pay logo"
+    - text: Apple Pay Give your shoppers an easy and secure way to pay, with Apple Pay.
+    - img "Google Pay logo"
+    - text: Google Pay Offer customers a fast and secure checkout experience with Google Pay.
+    - checkbox [checked]
+    - img "WooPay logo"
+    - text: WooPay Boost conversions and customer loyalty by offering a secure way to pay with a single click.
+    - checkbox [checked]
+    - img "Affirm logo"
+    - text: Affirm Allow your shoppers to pay over time with Affirm.
+    - checkbox [checked]
+    - img "Cash App Afterpay logo"
+    - text: Cash App Afterpay Allow your shoppers to pay over time with Cash App Afterpay.
+    - checkbox [checked]
+    - img "Klarna logo"
+    - text: Klarna Allow your shoppers to pay over time with Klarna.
+    - checkbox [checked]
+    - img "Bancontact logo"
+    - text: Bancontact Bancontact is a bank redirect payment method offered by more than 80% of online businesses in Belgium.
+    - checkbox
+    - img "EPS logo"
+    - text: EPS Accept your payment with EPS — a common payment method in Austria.
+    - checkbox
+    - img "iDEAL logo"
+    - text: iDEAL iDEAL is a Netherlands-based payment method that allows customers to complete transactions online using their bank credentials.
+    - checkbox
+    - img "Multibanco logo"
+    - text: Multibanco A voucher based payment method for your customers in Portugal.
+    - checkbox
+    - img "Amazon Pay logo"
+    - text: Amazon Pay Offer customers a fast, secure checkout experience with Amazon Pay.
+    - checkbox [checked]
+    - img "Alipay logo"
+    - text: Alipay A digital wallet for customers with mainland China Alipay accounts. Regional versions like AlipayHK are not supported.
+    - checkbox
+    - img "WeChat Pay logo"
+    - text: WeChat Pay A digital wallet for customers with mainland China WeChat Pay wallets. Regional versions like WeChat Pay HK are not supported.
+    - checkbox
+    - button "Continue"

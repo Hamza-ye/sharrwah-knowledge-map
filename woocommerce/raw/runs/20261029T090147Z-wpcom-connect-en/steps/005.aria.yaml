@@ -1,0 +1,29 @@
+- img
+- navigation:
+  - link "Log in":
+    - /url: /log-in?redirect_to=%2Fjetpack%2Fconnect%2Fauthorize%3Fclient_id%3D258291858%26redirect_uri%3Dhttps%253A%252F%252Fbelfast-portal-fruit-sell.trycloudflare.com%252Fwp-admin%252Fadmin.php%253Fhandler%253Djetpack-connection-webhooks%2526action%253Dauthorize%2526_wpnonce%253D362dd11f16%2526redirect%253Dhttps%25253A%25252F%25252Fbelfast-portal-fruit-sell.trycloudflare.com%25252Fwp-admin%25252Fadmin.php%25253Fpage%25253Dwc-settings%252526tab%25253Dcheckout%252526path%25253D%2525252Fwoopayments%2525252Fonboarding%252526wpcom_connection_return%25253D1%252526source%25253Dsettings_payments%252526from%25253DWPCOM%26state%3D1%26scope%3Dadministrator%253Ae0dbc36bc70ba76f35406867976ffa0c%26user_email%3D7amza.it%252Bwoo%2540gmail.com%26jp_version%3D%26secret%3DNVbJu2MvPHnb5D5pQoZOakmrGMyJVrBJ%26blogname%3DCapture%2BTest%2BStore%26site_url%3Dhttps%253A%252F%252Fbelfast-portal-fruit-sell.trycloudflare.com%26home_url%3Dhttps%253A%252F%252Fbelfast-portal-fruit-sell.trycloudflare.com%26site_icon%3D%26site_lang%3Den_US%26site_created%3D2026-10-29%2B01%253A15%253A40%26allow_site_connection%3D1%26calypso_env%3Dproduction%26source%3D%26plugins%3Dwoocommerce-payments%252Cwoocommerce%252Cwoocommerce-services%26locale%3Den%26from%3Dwoocommerce-onboarding%26plugin_name%3Dwoocommerce-payments%26color_scheme%3Dmodern%26_ui%3Djetpack%253At9CW9D%252FX5%252BvhE9CkjMqV6YvI%26_ut%3Danon%26purchase_nonce%3DKXzVOwc4%26_wp_nonce%3Db5c9265dbc%26redirect_after_auth%3Dhttps%253A%252F%252Fbelfast-portal-fruit-sell.trycloudflare.com%252Fwp-admin%252Fadmin.php%253Fpage%253Dwc-settings%2526tab%253Dcheckout%2526path%253D%25252Fwoopayments%25252Fonboarding%2526wpcom_connection_return%253D1%2526source%253Dsettings_payments%2526from%253DWPCOM%26site%3Dhttps%253A%252F%252Fbelfast-portal-fruit-sell.trycloudflare.com%26auth_approved%3Dtrue&from=woocommerce-onboarding&signup_url=%2Fstart%2Faccount%2Fuser-social%3Fredirect_to%3D%252Fjetpack%252Fconnect%252Fauthorize%253Fclient_id%253D258291858%2526redirect_uri%253Dhttps%25253A%25252F%25252Fbelfast-portal-fruit-sell.trycloudflare.com%25252Fwp-admin%25252Fadmin.php%25253Fhandler%25253Djetpack-connection-webhooks%252526action%25253Dauthorize%252526_wpnonce%25253D362dd11f16%252526redirect%25253Dhttps%2525253A%2525252F%2525252Fbelfast-portal-fruit-sell.trycloudflare.com%2525252Fwp-admin%2525252Fadmin.php%2525253Fpage%2525253Dwc-settings%25252526tab%2525253Dcheckout%25252526path%2525253D%252525252Fwoopayments%252525252Fonboarding%25252526wpcom_connection_return%2525253D1%25252526source%2525253Dsettings_payments%25252526from%2525253DWPCOM%2526state%253D1%2526scope%253Dadministrator%25253Ae0dbc36bc70ba76f35406867976ffa0c%2526user_email%253D7amza.it%25252Bwoo%252540gmail.com%2526jp_version%253D%2526secret%253DNVbJu2MvPHnb5D5pQoZOakmrGMyJVrBJ%2526blogname%253DCapture%252BTest%252BStore%2526site_url%253Dhttps%25253A%25252F%25252Fbelfast-portal-fruit-sell.trycloudflare.com%2526home_url%253Dhttps%25253A%25252F%25252Fbelfast-portal-fruit-sell.trycloudflare.com%2526site_icon%253D%2526site_lang%253Den_US%2526site_created%253D2026-10-29%252B01%25253A15%25253A40%2526allow_site_connection%253D1%2526calypso_env%253Dproduction%2526source%253D%2526plugins%253Dwoocommerce-payments%25252Cwoocommerce%25252Cwoocommerce-services%2526locale%253Den%2526from%253Dwoocommerce-onboarding%2526plugin_name%253Dwoocommerce-payments%2526color_scheme%253Dmodern%2526_ui%253Djetpack%25253At9CW9D%25252FX5%25252BvhE9CkjMqV6YvI%2526_ut%253Danon%2526purchase_nonce%253DKXzVOwc4%2526_wp_nonce%253Db5c9265dbc%2526redirect_after_auth%253Dhttps%25253A%25252F%25252Fbelfast-portal-fruit-sell.trycloudflare.com%25252Fwp-admin%25252Fadmin.php%25253Fpage%25253Dwc-settings%252526tab%25253Dcheckout%252526path%25253D%2525252Fwoopayments%2525252Fonboarding%252526wpcom_connection_return%25253D1%252526source%25253Dsettings_payments%252526from%25253DWPCOM%2526site%253Dhttps%25253A%25252F%25252Fbelfast-portal-fruit-sell.trycloudflare.com%2526auth_approved%253Dtrue%26from%3Dwoocommerce-onboarding%26plugin_name%3Dwoocommerce-payments&plugin_name=woocommerce-payments&plugins=woocommerce-payments%2Cwoocommerce%2Cwoocommerce-services
+- img
+- heading "Create an account with WordPress.com" [level=1]
+- heading "To access all of the features and functionality of the extensions you've chosen, you'll first need to connect your store to an account." [level=2]
+- heading "By continuing with any of the options below, you agree to our Terms of Service and have read our Privacy Policy." [level=3]:
+  - text: By continuing with any of the options below, you agree to our
+  - link "Terms of Service":
+    - /url: https://wordpress.com/tos/
+  - text: and have read our
+  - link "Privacy Policy":
+    - /url: https://automattic.com/privacy/
+  - text: .
+- group:
+  - text: Your email
+  - textbox "Your email"
+- button "Continue"
+- text: or
+- button "Continue with Google":
+  - img
+  - text: Continue with Google
+- button "Continue with Apple":
+  - img
+  - text: Continue with Apple
+- button "Continue with GitHub":
+  - img
+  - text: Continue with GitHub

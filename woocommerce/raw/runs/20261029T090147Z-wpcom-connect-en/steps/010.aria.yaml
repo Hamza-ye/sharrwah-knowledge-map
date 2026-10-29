@@ -1,0 +1,15 @@
+- dialog:
+  - document:
+    - heading "Set up WooPayments" [level=2]
+    - img "Step completed"
+    - text: Choose your payment methods
+    - img "Step completed"
+    - text: Connect with WordPress.com
+    - img "Step active"
+    - text: Activate payments
+    - img "Step active"
+    - text: Submit for verification
+    - button
+    - img "Setup"
+    - heading "Finishing payments setup" [level=1]
+    - text: In just a few moments, you'll be ready to test payments on your store.

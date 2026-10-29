@@ -1,0 +1,447 @@
+- navigation "Main menu":
+  - link "Skip to main content":
+    - /url: "#wpbody-content"
+  - link "Skip to toolbar":
+    - /url: "#wp-toolbar"
+  - list:
+    - listitem:
+      - link "Dashboard":
+        - /url: index.php
+      - list:
+        - listitem:
+          - link "Home":
+            - /url: index.php
+        - listitem:
+          - link "Updates 4":
+            - /url: update-core.php
+    - listitem:
+      - link "Posts":
+        - /url: edit.php
+      - list:
+        - listitem:
+          - link "All Posts":
+            - /url: edit.php
+        - listitem:
+          - link "Add Post":
+            - /url: post-new.php
+        - listitem:
+          - link "Categories":
+            - /url: edit-tags.php?taxonomy=category
+        - listitem:
+          - link "Tags":
+            - /url: edit-tags.php?taxonomy=post_tag
+    - listitem:
+      - link "Media":
+        - /url: upload.php
+      - list:
+        - listitem:
+          - link "Library":
+            - /url: upload.php
+        - listitem:
+          - link "Add Media File":
+            - /url: media-new.php
+    - listitem:
+      - link "Pages":
+        - /url: edit.php?post_type=page
+      - list:
+        - listitem:
+          - link "All Pages":
+            - /url: edit.php?post_type=page
+        - listitem:
+          - link "Add Page":
+            - /url: post-new.php?post_type=page
+    - listitem:
+      - link "Comments":
+        - /url: edit-comments.php
+    - listitem:
+      - link "WooCommerce":
+        - /url: admin.php?page=wc-admin
+      - list:
+        - listitem:
+          - link "Home 3":
+            - /url: admin.php?page=wc-admin
+        - listitem:
+          - link "Orders":
+            - /url: admin.php?page=wc-orders
+        - listitem:
+          - link "Customers":
+            - /url: admin.php?page=wc-admin&path=/customers
+        - listitem:
+          - link "Coupons":
+            - /url: admin.php?page=coupons-moved
+        - listitem:
+          - link "Reports":
+            - /url: admin.php?page=wc-reports
+        - listitem:
+          - link "Settings":
+            - /url: admin.php?page=wc-settings
+        - listitem:
+          - link "Status":
+            - /url: admin.php?page=wc-status
+        - listitem:
+          - link "Extensions":
+            - /url: admin.php?page=wc-admin&path=/extensions
+    - listitem:
+      - link "Products":
+        - /url: edit.php?post_type=product
+      - list:
+        - listitem:
+          - link "All Products":
+            - /url: edit.php?post_type=product
+        - listitem:
+          - link "Add new product":
+            - /url: post-new.php?post_type=product
+        - listitem:
+          - link "Brands":
+            - /url: edit-tags.php?taxonomy=product_brand&post_type=product
+        - listitem:
+          - link "Categories":
+            - /url: edit-tags.php?taxonomy=product_cat&post_type=product
+        - listitem:
+          - link "Tags":
+            - /url: edit-tags.php?taxonomy=product_tag&post_type=product
+        - listitem:
+          - link "Attributes":
+            - /url: edit.php?post_type=product&page=product_attributes
+        - listitem:
+          - link "Reviews":
+            - /url: edit.php?post_type=product&page=product-reviews
+    - listitem:
+      - link "Payments":
+        - /url: admin.php?page=wc-admin&path=/payments/overview
+      - list:
+        - listitem:
+          - link "Overview":
+            - /url: admin.php?page=wc-admin&path=/payments/overview
+        - listitem:
+          - link "Payouts":
+            - /url: admin.php?page=wc-admin&path=/payments/payouts
+        - listitem:
+          - link "Transactions":
+            - /url: admin.php?page=wc-admin&path=/payments/transactions
+        - listitem:
+          - link "Disputes":
+            - /url: admin.php?page=wc-admin&path=/payments/disputes
+        - listitem:
+          - link "Settings":
+            - /url: https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=checkout&section=woocommerce_payments
+    - listitem:
+      - link "Analytics":
+        - /url: admin.php?page=wc-admin&path=/analytics/overview
+      - list:
+        - listitem:
+          - link "Overview":
+            - /url: admin.php?page=wc-admin&path=/analytics/overview
+        - listitem:
+          - link "Products":
+            - /url: admin.php?page=wc-admin&path=/analytics/products
+        - listitem:
+          - link "Revenue":
+            - /url: admin.php?page=wc-admin&path=/analytics/revenue
+        - listitem:
+          - link "Orders":
+            - /url: admin.php?page=wc-admin&path=/analytics/orders
+        - listitem:
+          - link "Variations":
+            - /url: admin.php?page=wc-admin&path=/analytics/variations
+        - listitem:
+          - link "Categories":
+            - /url: admin.php?page=wc-admin&path=/analytics/categories
+        - listitem:
+          - link "Coupons":
+            - /url: admin.php?page=wc-admin&path=/analytics/coupons
+        - listitem:
+          - link "Taxes":
+            - /url: admin.php?page=wc-admin&path=/analytics/taxes
+        - listitem:
+          - link "Downloads":
+            - /url: admin.php?page=wc-admin&path=/analytics/downloads
+        - listitem:
+          - link "Stock":
+            - /url: admin.php?page=wc-admin&path=/analytics/stock
+        - listitem:
+          - link "Settings":
+            - /url: admin.php?page=wc-admin&path=/analytics/settings
+    - listitem:
+      - link "Marketing":
+        - /url: admin.php?page=wc-admin&path=/marketing
+      - list:
+        - listitem:
+          - link "Overview":
+            - /url: admin.php?page=wc-admin&path=/marketing
+        - listitem:
+          - link "Coupons":
+            - /url: edit.php?post_type=shop_coupon
+    - listitem:
+      - link "Appearance":
+        - /url: themes.php
+      - list:
+        - listitem:
+          - link "Themes 3":
+            - /url: themes.php
+        - listitem:
+          - link "Editor":
+            - /url: site-editor.php
+        - listitem:
+          - link "Fonts":
+            - /url: font-library.php
+    - listitem:
+      - link "Plugins 1":
+        - /url: plugins.php
+      - list:
+        - listitem:
+          - link "Installed Plugins":
+            - /url: plugins.php
+        - listitem:
+          - link "Add Plugin":
+            - /url: plugin-install.php
+    - listitem:
+      - link "Users":
+        - /url: users.php
+      - list:
+        - listitem:
+          - link "All Users":
+            - /url: users.php
+        - listitem:
+          - link "Add User":
+            - /url: user-new.php
+        - listitem:
+          - link "Profile":
+            - /url: profile.php
+    - listitem:
+      - link "Tools":
+        - /url: tools.php
+      - list:
+        - listitem:
+          - link "Available Tools":
+            - /url: tools.php
+        - listitem:
+          - link "Import":
+            - /url: import.php
+        - listitem:
+          - link "Export":
+            - /url: export.php
+        - listitem:
+          - link "Site Health":
+            - /url: site-health.php
+        - listitem:
+          - link "Export Personal Data":
+            - /url: export-personal-data.php
+        - listitem:
+          - link "Erase Personal Data":
+            - /url: erase-personal-data.php
+        - listitem:
+          - link "Scheduled Actions":
+            - /url: tools.php?page=action-scheduler
+        - listitem:
+          - link "Theme File Editor":
+            - /url: theme-editor.php
+        - listitem:
+          - link "Plugin File Editor":
+            - /url: plugin-editor.php
+    - listitem:
+      - link "Settings":
+        - /url: options-general.php
+      - list:
+        - listitem:
+          - link "General":
+            - /url: options-general.php
+        - listitem:
+          - link "Connectors":
+            - /url: options-connectors.php
+        - listitem:
+          - link "Writing":
+            - /url: options-writing.php
+        - listitem:
+          - link "Reading":
+            - /url: options-reading.php
+        - listitem:
+          - link "Discussion":
+            - /url: options-discussion.php
+        - listitem:
+          - link "Media":
+            - /url: options-media.php
+        - listitem:
+          - link "Permalinks":
+            - /url: options-permalink.php
+        - listitem:
+          - link "Privacy":
+            - /url: options-privacy.php
+    - listitem:
+      - button "Collapse Main menu" [expanded]: Collapse Menu
+- navigation "Toolbar":
+  - menu:
+    - group:
+      - menuitem "About WordPress"
+    - group:
+      - menuitem "Capture Test Store"
+    - group:
+      - menuitem "Coming soon"
+    - group:
+      - menuitem "4 updates available"
+    - group:
+      - menuitem "Ctrl+K Open command palette"
+    - group:
+      - menuitem "0 Comments in moderation"
+    - group:
+      - menuitem "New"
+  - menu:
+    - group:
+      - menuitem "Howdy, capture-admin"
+- heading "Settings" [level=1]
+- main:
+  - navigation:
+    - link "General":
+      - /url: https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=general
+    - link "Products":
+      - /url: https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=products
+    - link "Tax":
+      - /url: https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=tax
+    - link "Shipping":
+      - /url: https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=shipping
+    - link "Payments":
+      - /url: https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=checkout
+    - link "Accounts & Privacy":
+      - /url: https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=account
+    - link "Emails":
+      - /url: https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=email
+    - link "Integration":
+      - /url: https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=integration
+    - link "Site visibility":
+      - /url: https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=site-visibility
+    - link "Point of Sale":
+      - /url: https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=point-of-sale
+    - link "Multi-currency":
+      - /url: https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=wcpay_multi_currency
+    - link "Advanced":
+      - /url: https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=advanced
+  - heading "General" [level=1]
+  - paragraph:
+    - strong: Your settings have been saved.
+  - heading "Store Address" [level=2]
+  - paragraph: This is where your business is located. Tax rates and shipping rates will use this address.
+  - table:
+    - rowgroup:
+      - row "Address line 1 The street address for your business location.":
+        - rowheader "Address line 1 The street address for your business location.": Address line 1 
+        - cell:
+          - textbox "Address line 1 The street address for your business location.":
+            - /placeholder: ""
+      - row "Address line 2 An additional, optional address line for your business location.":
+        - rowheader "Address line 2 An additional, optional address line for your business location.": Address line 2 
+        - cell:
+          - textbox "Address line 2 An additional, optional address line for your business location.":
+            - /placeholder: ""
+      - row "City The city in which your business is located.":
+        - rowheader "City The city in which your business is located.": City 
+        - cell:
+          - textbox "City The city in which your business is located.":
+            - /placeholder: ""
+      - row "Country / State The country and state or province, if any, in which your business is located. Yemen":
+        - rowheader "Country / State The country and state or province, if any, in which your business is located.": Country / State 
+        - cell "Yemen":
+          - combobox "Yemen":
+            - textbox "Yemen"
+      - row "Postcode / ZIP The postal code, if any, in which your business is located.":
+        - rowheader "Postcode / ZIP The postal code, if any, in which your business is located.": Postcode / ZIP 
+        - cell:
+          - textbox "Postcode / ZIP The postal code, if any, in which your business is located.":
+            - /placeholder: ""
+  - heading "General options" [level=2]
+  - table:
+    - rowgroup:
+      - row "Selling location(s) This option lets you limit which countries you are willing to sell to. Sell to all countries":
+        - rowheader "Selling location(s) This option lets you limit which countries you are willing to sell to.": Selling location(s) 
+        - cell "Sell to all countries":
+          - combobox "Sell to all countries":
+            - textbox "Sell to all countries"
+      - row "Shipping location(s) Choose which countries you want to ship to, or choose to ship to all locations you sell to. Ship to all countries you sell to":
+        - rowheader "Shipping location(s) Choose which countries you want to ship to, or choose to ship to all locations you sell to.": Shipping location(s) 
+        - cell "Ship to all countries you sell to":
+          - combobox "Ship to all countries you sell to":
+            - textbox "Ship to all countries you sell to"
+      - row "Default customer location This option determines a customers default location. The MaxMind GeoLite Database will be periodically downloaded to your wp-content directory if using geolocation. Shop country/region":
+        - rowheader "Default customer location This option determines a customers default location. The MaxMind GeoLite Database will be periodically downloaded to your wp-content directory if using geolocation.": Default customer location 
+        - cell "Shop country/region":
+          - combobox "Shop country/region":
+            - textbox "Shop country/region"
+      - row "Address autocomplete Address autocomplete":
+        - rowheader "Address autocomplete"
+        - cell "Address autocomplete":
+          - group "Address autocomplete":
+            - text: Address autocomplete
+            - checkbox "Enable predictive address search"
+            - text: Enable predictive address search
+            - paragraph: Suggest full addresses to customers as they type.
+  - heading "Taxes and coupons" [level=2]
+  - paragraph: Enable taxes and coupons and configure how they are calculated.
+  - table:
+    - rowgroup:
+      - row "Enable taxes Enable taxes":
+        - rowheader "Enable taxes"
+        - cell "Enable taxes":
+          - group "Enable taxes":
+            - text: Enable taxes
+            - checkbox "Enable tax rates and calculations" [checked]
+            - text: Enable tax rates and calculations
+            - paragraph: Rates will be configurable and taxes will be calculated during checkout.
+      - row "Enable coupons Enable coupons":
+        - rowheader "Enable coupons"
+        - cell "Enable coupons":
+          - group "Enable coupons":
+            - text: Enable coupons
+            - checkbox "Enable the use of coupon codes" [checked]
+            - text: Enable the use of coupon codes
+            - paragraph: Coupons can be applied from the cart and checkout pages.
+          - group:
+            - checkbox "Calculate coupon discounts sequentially"
+            - text: Calculate coupon discounts sequentially
+            - paragraph: When applying multiple coupons, apply the first coupon to the full price and the second coupon to the discounted price and so on.
+  - heading "Currency options" [level=2]
+  - paragraph: The following options affect how prices are displayed on the frontend.
+  - table:
+    - rowgroup:
+      - row "Currency This controls what currency prices are listed at in the catalog and which currency gateways will take payments in. United States (US) dollar ($) — USD":
+        - rowheader "Currency This controls what currency prices are listed at in the catalog and which currency gateways will take payments in.": Currency 
+        - cell "United States (US) dollar ($) — USD":
+          - combobox "United States (US) dollar ($) — USD":
+            - textbox "United States (US) dollar ($) — USD"
+      - row "Currency position This controls the position of the currency symbol. Left":
+        - rowheader "Currency position This controls the position of the currency symbol.": Currency position 
+        - cell "Left":
+          - combobox "Left":
+            - textbox "Left"
+      - row "Thousand separator This sets the thousand separator of displayed prices. ,":
+        - rowheader "Thousand separator This sets the thousand separator of displayed prices.": Thousand separator 
+        - cell ",":
+          - textbox "Thousand separator This sets the thousand separator of displayed prices.":
+            - /placeholder: ""
+            - text: ","
+      - row "Decimal separator This sets the decimal separator of displayed prices. .":
+        - rowheader "Decimal separator This sets the decimal separator of displayed prices.": Decimal separator 
+        - cell ".":
+          - textbox "Decimal separator This sets the decimal separator of displayed prices.":
+            - /placeholder: ""
+            - text: .
+      - row "Number of decimals This sets the number of decimal points shown in displayed prices. 2":
+        - rowheader "Number of decimals This sets the number of decimal points shown in displayed prices.": Number of decimals 
+        - cell "2":
+          - spinbutton "Number of decimals This sets the number of decimal points shown in displayed prices.": "2"
+  - paragraph:
+    - button "Save changes" [disabled]
+  - paragraph:
+    - link "Discover additional solutions":
+      - /url: https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-admin&path=%2Fextensions
+    - text: to boost your business and expand what your store can do.
+- contentinfo:
+  - paragraph:
+    - text: If you like
+    - strong: WooCommerce
+    - text: please leave us a
+    - link "five star":
+      - /url: https://wordpress.org/support/plugin/woocommerce/reviews?rate=5#new-post
+      - text: ★★★★★
+    - text: rating. A huge thanks in advance!
+  - paragraph: Version 11.2.1
+- img
+- img

@@ -1,0 +1,564 @@
+- navigation "Main menu":
+  - link "Skip to main content":
+    - /url: "#wpbody-content"
+  - link "Skip to toolbar":
+    - /url: "#wp-toolbar"
+  - list:
+    - listitem:
+      - link "Dashboard":
+        - /url: index.php
+      - list:
+        - listitem:
+          - link "Home":
+            - /url: index.php
+        - listitem:
+          - link "Updates 4":
+            - /url: update-core.php
+    - listitem:
+      - link "Posts":
+        - /url: edit.php
+      - list:
+        - listitem:
+          - link "All Posts":
+            - /url: edit.php
+        - listitem:
+          - link "Add Post":
+            - /url: post-new.php
+        - listitem:
+          - link "Categories":
+            - /url: edit-tags.php?taxonomy=category
+        - listitem:
+          - link "Tags":
+            - /url: edit-tags.php?taxonomy=post_tag
+    - listitem:
+      - link "Media":
+        - /url: upload.php
+      - list:
+        - listitem:
+          - link "Library":
+            - /url: upload.php
+        - listitem:
+          - link "Add Media File":
+            - /url: media-new.php
+    - listitem:
+      - link "Pages":
+        - /url: edit.php?post_type=page
+      - list:
+        - listitem:
+          - link "All Pages":
+            - /url: edit.php?post_type=page
+        - listitem:
+          - link "Add Page":
+            - /url: post-new.php?post_type=page
+    - listitem:
+      - link "Comments":
+        - /url: edit-comments.php
+    - listitem:
+      - link "WooCommerce":
+        - /url: admin.php?page=wc-admin
+      - list:
+        - listitem:
+          - link "Home 3":
+            - /url: admin.php?page=wc-admin
+        - listitem:
+          - link "Orders":
+            - /url: admin.php?page=wc-orders
+        - listitem:
+          - link "Customers":
+            - /url: admin.php?page=wc-admin&path=/customers
+        - listitem:
+          - link "Coupons":
+            - /url: admin.php?page=coupons-moved
+        - listitem:
+          - link "Reports":
+            - /url: admin.php?page=wc-reports
+        - listitem:
+          - link "Settings":
+            - /url: admin.php?page=wc-settings
+        - listitem:
+          - link "Status":
+            - /url: admin.php?page=wc-status
+        - listitem:
+          - link "Extensions":
+            - /url: admin.php?page=wc-admin&path=/extensions
+    - listitem:
+      - link "Products":
+        - /url: edit.php?post_type=product
+      - list:
+        - listitem:
+          - link "All Products":
+            - /url: edit.php?post_type=product
+        - listitem:
+          - link "Add new product":
+            - /url: post-new.php?post_type=product
+        - listitem:
+          - link "Brands":
+            - /url: edit-tags.php?taxonomy=product_brand&post_type=product
+        - listitem:
+          - link "Categories":
+            - /url: edit-tags.php?taxonomy=product_cat&post_type=product
+        - listitem:
+          - link "Tags":
+            - /url: edit-tags.php?taxonomy=product_tag&post_type=product
+        - listitem:
+          - link "Attributes":
+            - /url: edit.php?post_type=product&page=product_attributes
+        - listitem:
+          - link "Reviews":
+            - /url: edit.php?post_type=product&page=product-reviews
+    - listitem:
+      - link "Payments":
+        - /url: admin.php?page=wc-admin&path=/payments/overview
+      - list:
+        - listitem:
+          - link "Overview":
+            - /url: admin.php?page=wc-admin&path=/payments/overview
+        - listitem:
+          - link "Payouts":
+            - /url: admin.php?page=wc-admin&path=/payments/payouts
+        - listitem:
+          - link "Transactions":
+            - /url: admin.php?page=wc-admin&path=/payments/transactions
+        - listitem:
+          - link "Disputes":
+            - /url: admin.php?page=wc-admin&path=/payments/disputes
+        - listitem:
+          - link "Settings":
+            - /url: https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=checkout&section=woocommerce_payments
+    - listitem:
+      - link "Analytics":
+        - /url: admin.php?page=wc-admin&path=/analytics/overview
+      - list:
+        - listitem:
+          - link "Overview":
+            - /url: admin.php?page=wc-admin&path=/analytics/overview
+        - listitem:
+          - link "Products":
+            - /url: admin.php?page=wc-admin&path=/analytics/products
+        - listitem:
+          - link "Revenue":
+            - /url: admin.php?page=wc-admin&path=/analytics/revenue
+        - listitem:
+          - link "Orders":
+            - /url: admin.php?page=wc-admin&path=/analytics/orders
+        - listitem:
+          - link "Variations":
+            - /url: admin.php?page=wc-admin&path=/analytics/variations
+        - listitem:
+          - link "Categories":
+            - /url: admin.php?page=wc-admin&path=/analytics/categories
+        - listitem:
+          - link "Coupons":
+            - /url: admin.php?page=wc-admin&path=/analytics/coupons
+        - listitem:
+          - link "Taxes":
+            - /url: admin.php?page=wc-admin&path=/analytics/taxes
+        - listitem:
+          - link "Downloads":
+            - /url: admin.php?page=wc-admin&path=/analytics/downloads
+        - listitem:
+          - link "Stock":
+            - /url: admin.php?page=wc-admin&path=/analytics/stock
+        - listitem:
+          - link "Settings":
+            - /url: admin.php?page=wc-admin&path=/analytics/settings
+    - listitem:
+      - link "Marketing":
+        - /url: admin.php?page=wc-admin&path=/marketing
+      - list:
+        - listitem:
+          - link "Overview":
+            - /url: admin.php?page=wc-admin&path=/marketing
+        - listitem:
+          - link "Coupons":
+            - /url: edit.php?post_type=shop_coupon
+    - listitem:
+      - link "Appearance":
+        - /url: themes.php
+      - list:
+        - listitem:
+          - link "Themes 3":
+            - /url: themes.php
+        - listitem:
+          - link "Editor":
+            - /url: site-editor.php
+        - listitem:
+          - link "Fonts":
+            - /url: font-library.php
+    - listitem:
+      - link "Plugins 1":
+        - /url: plugins.php
+      - list:
+        - listitem:
+          - link "Installed Plugins":
+            - /url: plugins.php
+        - listitem:
+          - link "Add Plugin":
+            - /url: plugin-install.php
+    - listitem:
+      - link "Users":
+        - /url: users.php
+      - list:
+        - listitem:
+          - link "All Users":
+            - /url: users.php
+        - listitem:
+          - link "Add User":
+            - /url: user-new.php
+        - listitem:
+          - link "Profile":
+            - /url: profile.php
+    - listitem:
+      - link "Tools":
+        - /url: tools.php
+      - list:
+        - listitem:
+          - link "Available Tools":
+            - /url: tools.php
+        - listitem:
+          - link "Import":
+            - /url: import.php
+        - listitem:
+          - link "Export":
+            - /url: export.php
+        - listitem:
+          - link "Site Health":
+            - /url: site-health.php
+        - listitem:
+          - link "Export Personal Data":
+            - /url: export-personal-data.php
+        - listitem:
+          - link "Erase Personal Data":
+            - /url: erase-personal-data.php
+        - listitem:
+          - link "Scheduled Actions":
+            - /url: tools.php?page=action-scheduler
+        - listitem:
+          - link "Theme File Editor":
+            - /url: theme-editor.php
+        - listitem:
+          - link "Plugin File Editor":
+            - /url: plugin-editor.php
+    - listitem:
+      - link "Settings":
+        - /url: options-general.php
+      - list:
+        - listitem:
+          - link "General":
+            - /url: options-general.php
+        - listitem:
+          - link "Connectors":
+            - /url: options-connectors.php
+        - listitem:
+          - link "Writing":
+            - /url: options-writing.php
+        - listitem:
+          - link "Reading":
+            - /url: options-reading.php
+        - listitem:
+          - link "Discussion":
+            - /url: options-discussion.php
+        - listitem:
+          - link "Media":
+            - /url: options-media.php
+        - listitem:
+          - link "Permalinks":
+            - /url: options-permalink.php
+        - listitem:
+          - link "Privacy":
+            - /url: options-privacy.php
+    - listitem:
+      - button "Collapse Main menu" [expanded]: Collapse Menu
+- navigation "Toolbar":
+  - menu:
+    - group:
+      - menuitem "About WordPress"
+    - group:
+      - menuitem "Capture Test Store"
+    - group:
+      - menuitem "Coming soon"
+    - group:
+      - menuitem "4 updates available"
+    - group:
+      - menuitem "Ctrl+K Open command palette"
+    - group:
+      - menuitem "0 Comments in moderation"
+    - group:
+      - menuitem "New"
+  - menu:
+    - group:
+      - menuitem "Howdy, capture-admin"
+- heading "Settings" [level=1]
+- main:
+  - navigation:
+    - link "General":
+      - /url: https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=general
+    - link "Products":
+      - /url: https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=products
+    - link "Tax":
+      - /url: https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=tax
+    - link "Shipping":
+      - /url: https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=shipping
+    - link "Payments":
+      - /url: https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=checkout
+    - link "Accounts & Privacy":
+      - /url: https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=account
+    - link "Emails":
+      - /url: https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=email
+    - link "Integration":
+      - /url: https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=integration
+    - link "Site visibility":
+      - /url: https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=site-visibility
+    - link "Point of Sale":
+      - /url: https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=point-of-sale
+    - link "Multi-currency":
+      - /url: https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=wcpay_multi_currency
+    - link "Advanced":
+      - /url: https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=advanced
+  - heading "Payments" [level=1]
+  - paragraph:
+    - text: You are using a test account. Provide additional details about your business so you can begin accepting real payments.
+    - link "Learn more":
+      - /url: https://woocommerce.com/document/woopayments/startup-guide/#signup-process
+  - paragraph:
+    - link "Activate payments":
+      - /url: "#"
+  - heading "Return to paymentsWooPayments" [level=2]:
+    - link "Return to payments":
+      - /url: admin.php?page=wc-settings&tab=checkout
+    - text: WooPayments
+  - status
+  - heading "General" [level=2]
+  - paragraph: Enable or disable WooPayments on your store.
+  - checkbox "Enable WooPayments" [checked]
+  - text: Enable WooPayments
+  - paragraph: When enabled, payment methods powered by WooPayments will appear on checkout.
+  - heading "Payments accepted on checkout" [level=2]
+  - paragraph: Add and edit payments available to customers at checkout. Based on their device type, location, and purchase history, your customers will only see the most relevant payment methods.
+  - heading "Payment methods" [level=3]
+  - list:
+    - listitem:
+      - checkbox "Credit / Debit Cards" [checked] [disabled]
+      - img "Credit / Debit Cards"
+      - text: Credit / Debit Cards(Required) Let your customers pay with major credit and debit cards without leaving your store.
+      - img "visa"
+      - img "mastercard"
+      - img "amex"
+      - img "discover"
+      - img "diners"
+      - img "jcb"
+      - img "cartes_bancaires"
+      - img "unionpay"
+      - button "From 2.9% + 0,30 $"
+    - listitem:
+      - checkbox "Alipay"
+      - img "Alipay"
+      - text: Alipay A digital wallet for customers with mainland China Alipay accounts. Regional versions like AlipayHK are not supported.
+      - button "From 2.9% + 0,30 $"
+    - listitem:
+      - checkbox "Bancontact"
+      - img "Bancontact"
+      - text: Bancontact Bancontact is a bank redirect payment method offered by more than 80% of online businesses in Belgium.
+      - button "From 1.4% + 0,30 $"
+    - listitem:
+      - checkbox "EPS"
+      - img "EPS"
+      - text: EPS Accept your payment with EPS — a common payment method in Austria.
+      - button "From 1.8% + 0,30 $"
+    - listitem:
+      - checkbox "iDEAL | Wero"
+      - img "iDEAL | Wero"
+      - text: iDEAL | Wero Expand your business with iDEAL | Wero — Netherlands's most popular payment method.
+      - button "From 0% + 0,80 $"
+    - listitem:
+      - checkbox "Multibanco"
+      - img "Multibanco"
+      - text: Multibanco A voucher based payment method for your customers in Portugal.
+      - button "From 2.95% + 0,30 $"
+    - listitem:
+      - checkbox "WeChat Pay"
+      - img "WeChat Pay"
+      - text: WeChat Pay A digital wallet for customers with mainland China WeChat Pay wallets. Regional versions like WeChat Pay HK are not supported.
+      - button "From 2.9% + 0,30 $"
+  - heading "Buy now, pay later" [level=2]
+  - paragraph: Boost sales by offering customers additional buying power and flexible payment options.
+  - link "Learn more (opens in a new tab)":
+    - /url: https://woocommerce.com/document/woopayments/payment-methods/buy-now-pay-later/
+    - text: Learn more ↗
+  - list:
+    - listitem:
+      - checkbox "Affirm" [checked]
+      - img "Affirm"
+      - text: Affirm Allow customers to pay over time with Affirm.
+      - button "From 6% + 0,30 $"
+    - listitem:
+      - checkbox "Cash App Afterpay" [checked]
+      - img "Cash App Afterpay"
+      - text: Cash App Afterpay Allow customers to pay over time with Cash App Afterpay.
+      - button "From 6% + 0,30 $"
+    - listitem:
+      - checkbox "Klarna" [checked]
+      - img "Klarna"
+      - text: Klarna Allow customers to pay over time or pay now with Klarna.
+      - button "From 5.99% + 0,30 $"
+  - heading "Express checkouts" [level=2]
+  - paragraph: Let your customers use their favorite express payment methods and digital wallets for faster, more secure checkouts across different parts of your store.
+  - link "Learn more (opens in a new tab)":
+    - /url: https://woocommerce.com/document/woopayments/settings-guide/#express-checkouts
+    - text: Learn more ↗
+  - list:
+    - listitem:
+      - checkbox "WooPay" [checked]
+      - img "WooPay"
+      - text: WooPay Boost conversion and customer loyalty by offering a single click, secure way to pay.
+      - link "Customize":
+        - /url: admin.php?page=wc-settings&tab=checkout&section=woocommerce_payments&method=woopay
+    - listitem:
+      - checkbox "Apple Pay / Google Pay" [checked]
+      - img "Apple Pay"
+      - text: Apple Pay Apple Pay is an easy and secure way for customers to pay on your store.
+      - img "Google Pay"
+      - text: Google Pay Offer customers a fast, secure checkout experience with Google Pay.
+      - link "Customize":
+        - /url: admin.php?page=wc-settings&tab=checkout&section=woocommerce_payments&method=payment_request
+      - text: Warning notice This payment method is enabled by other extensions.
+      - link "Review extensions":
+        - /url: admin.php?page=wc-settings&tab=checkout
+      - text: to improve the shopper experience.
+      - button "Close"
+    - listitem:
+      - checkbox "Link" [disabled]
+      - img "Link"
+      - text: Link Link autofills your customers' payment and shipping details to deliver an easy and seamless checkout experience. By enabling this feature, you agree to the
+      - link "Link by Stripe terms":
+        - /url: https://link.com/terms
+      - text: ", and"
+      - link "Privacy Policy":
+        - /url: https://link.com/privacy
+      - text: .
+      - link "Read more":
+        - /url: https://woocommerce.com/document/woopayments/payment-methods/link-by-stripe/
+      - text: Warning notice To enable Link by Stripe, you must first disable WooPay.
+    - listitem:
+      - checkbox "Amazon Pay" [checked]
+      - img "Amazon Pay"
+      - text: Amazon Pay Offer customers a fast, secure checkout experience with Amazon Pay. By activating this feature, you accept
+      - link "Stripe":
+        - /url: https://stripe.com/legal/ssa
+      - text: and
+      - link "Amazon":
+        - /url: https://stripe.com/legal/amazon-pay
+      - text: "'s terms of use."
+      - link "Customize":
+        - /url: admin.php?page=wc-settings&tab=checkout&section=woocommerce_payments&method=amazon_pay
+  - heading "Transactions" [level=2]
+  - paragraph: Update your store's configuration to ensure smooth transactions.
+  - link "View our documentation (opens in a new tab)":
+    - /url: https://woocommerce.com/document/woopayments/
+    - text: View our documentation ↗
+  - heading "Transaction preferences" [level=4]
+  - checkbox "Enable payments via saved cards" [checked]
+  - text: Enable payments via saved cards
+  - paragraph: When enabled, users will be able to pay with a saved card during checkout. Card details are stored in our platform, not on your store.
+  - checkbox "Enable manual capture"
+  - text: Enable manual capture
+  - paragraph:
+    - text: Issue an authorization on checkout and capture later.
+    - link "Learn more":
+      - /url: https://woocommerce.com/document/woopayments/settings-guide/authorize-and-capture/
+    - text: . The setting is not applied to
+    - link "In-Person Payments (opens in a new tab)":
+      - /url: https://woocommerce.com/in-person-payments/
+      - text: In-Person Payments ↗
+    - text: (please note that In-Person Payments should be captured within 2 days of authorization).
+  - heading "Customer statements" [level=4]
+  - paragraph: Edit the way your store name appears on your customers' bank statements.
+  - text: Customer bank statement
+  - textbox "Customer bank statement": CAPTURE TEST STORE
+  - heading "Customer support" [level=4]
+  - paragraph: Provide contact information where customers can reach you for support.
+  - status
+  - text: Support email
+  - textbox "Support email": plenty.helpful@example.com
+  - paragraph: This may be visible on receipts, invoices, and automated emails from your store.
+  - text: Support phone number (required)
+  - 'combobox "United States: +1"': "+1"
+  - textbox "Support phone number (required)":
+    - /placeholder: Mobile number
+    - text: "0000000000"
+  - paragraph: This number may appear on customer bank statements and in-person purchase receipts, but not in order emails. Use a number you're comfortable sharing publicly. (+1 0000000000 can be used for test accounts)
+  - heading "Payouts" [level=2]
+  - paragraph: Funds are available for payout 2 business days after they’re received.
+  - link "Learn more about payout schedules (opens in a new tab)":
+    - /url: https://woocommerce.com/document/woopayments/payouts/payout-schedule/
+    - text: Learn more about payout schedules ↗
+  - heading "Payout schedule" [level=4]
+  - text: Frequency
+  - combobox "Frequency":
+    - option "Daily" [selected]
+    - option "Weekly"
+    - option "Monthly"
+  - paragraph: Payouts will occur every business day.
+  - heading "Payout bank account" [level=4]
+  - paragraph: Manage and update your bank account information to receive payouts.
+  - heading "Account notifications" [level=2]
+  - paragraph: Receive important notifications about your WooPayments account.
+  - link "Learn more (opens in a new tab)":
+    - /url: https://woocommerce.com/document/woopayments/settings-guide/#account-notifications
+    - text: Learn more ↗
+  - heading "Notifications email" [level=4]
+  - paragraph: Provide an email address where you would like to receive communications about your WooPayments account.
+  - text: Warning notice Anyone with access to this email address will be treated as the account owner. Please verify the address carefully.
+  - status
+  - text: Email address
+  - textbox "Email address": 7amza.it+woo@gmail.com
+  - status
+  - heading "Fraud protection" [level=2]
+  - paragraph: Help avoid unauthorized transactions and disputes by setting your fraud protection level.
+  - link "Learn more about fraud protection (opens in a new tab)":
+    - /url: https://woocommerce.com/document/woopayments/fraud-and-disputes/fraud-protection/
+    - text: Learn more about fraud protection ↗
+  - heading "Set your payment risk level" [level=4]
+  - group:
+    - list:
+      - listitem:
+        - radio "Basic" [checked]
+        - text: Basic
+        - img "Basic level help icon"
+        - paragraph: Provides the base level of platform protection.
+      - listitem:
+        - radio "Advanced Allows you to fine-tune the level of filtering according to your business needs."
+        - paragraph: Advanced
+        - paragraph: Allows you to fine-tune the level of filtering according to your business needs.
+        - button "Configure" [disabled]
+  - heading "Advanced settings" [level=2]
+  - paragraph: More options for specific payment needs.
+  - link "View our documentation (opens in a new tab)":
+    - /url: https://woocommerce.com/document/woopayments/settings-guide/#advanced-settings
+    - text: View our documentation ↗
+  - checkbox "Enable Multi-Currency" [checked]
+  - text: Enable Multi-Currency
+  - paragraph:
+    - text: Allow customers to shop and pay in multiple currencies.
+    - link "Learn more (opens in a new tab)":
+      - /url: https://woocommerce.com/document/woopayments/currencies/multi-currency-setup/
+      - text: Learn more ↗
+  - heading "Debug mode" [level=4]
+  - checkbox "Log error messages"
+  - text: Log error messages
+  - paragraph: When enabled, payment error logs will be saved to WooCommerce > Status > Logs.
+  - button "Save changes" [disabled]
+  - paragraph
+- contentinfo:
+  - paragraph:
+    - text: If you like
+    - strong: WooCommerce
+    - text: please leave us a
+    - link "five star":
+      - /url: https://wordpress.org/support/plugin/woocommerce/reviews?rate=5#new-post
+      - text: ★★★★★
+    - text: rating. A huge thanks in advance!
+  - paragraph: Version 11.2.1
+- img
+- paragraph: Notifications
+- text: Anyone with access to this email address will be treated as the account owner. Please verify the address carefully.

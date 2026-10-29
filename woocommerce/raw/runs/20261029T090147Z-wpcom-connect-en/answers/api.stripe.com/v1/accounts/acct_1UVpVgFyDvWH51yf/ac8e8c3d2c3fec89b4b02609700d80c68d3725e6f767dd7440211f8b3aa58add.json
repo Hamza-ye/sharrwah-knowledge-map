@@ -1,0 +1,12 @@
+{
+  "id": "acct_1UVpVgFyDvWH51yf",
+  "capabilities": {
+    "affirm_payments": "inactive",
+    "afterpay_clearpay_payments": "inactive",
+    "amazon_pay_payments": "inactive",
+    "card_payments": "inactive",
+    "klarna_payments": "inactive",
+    "tax_reporting_us_1099_k": "active",
+    "transfers": "inactive"
+  }
+}

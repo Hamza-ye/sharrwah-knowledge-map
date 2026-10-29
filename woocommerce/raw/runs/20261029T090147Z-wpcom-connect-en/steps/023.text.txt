@@ -1,0 +1,273 @@
+Skip to main content
+Skip to toolbar
+Dashboard
+Home
+Updates
+4
+Posts
+All Posts
+Add Post
+Categories
+Tags
+Media
+Library
+Add Media File
+Pages
+All Pages
+Add Page
+Comments
+WooCommerce
+Home
+3
+Orders
+Customers
+Coupons
+Reports
+Settings
+Status
+Extensions
+Products
+All Products
+Add new product
+Brands
+Categories
+Tags
+Attributes
+Reviews
+Payments
+Overview
+Payouts
+Transactions
+Disputes
+Settings
+Analytics
+Overview
+Products
+Revenue
+Orders
+Variations
+Categories
+Coupons
+Taxes
+Downloads
+Stock
+Settings
+Marketing
+Overview
+Coupons
+Appearance
+Themes
+3
+Editor
+Fonts
+Plugins
+1
+Installed Plugins
+Add Plugin
+Users
+All Users
+Add User
+Profile
+Tools
+Available Tools
+Import
+Export
+Site Health
+Export Personal Data
+Erase Personal Data
+Scheduled Actions
+Theme File Editor
+Plugin File Editor
+Settings
+General
+Connectors
+Writing
+Reading
+Discussion
+Media
+Permalinks
+Privacy
+Collapse Menu
+About WordPress
+Capture Test Store
+Coming soon
+4
+4 updates available
+Ctrl+K
+Open command palette
+0
+0 Comments in moderation
+New
+Howdy, capture-admin
+Settings
+General
+Products
+Tax
+Shipping
+Payments
+Accounts & Privacy
+Emails
+Integration
+Site visibility
+Point of Sale
+Multi-currency
+Advanced
+Payments
+You are using a test account. Provide additional details about your business so you can begin accepting real payments. Learn more
+Activate payments
+WooPayments
+General
+Enable or disable WooPayments on your store.
+[x]
+Enable WooPayments
+When enabled, payment methods powered by WooPayments will appear on checkout.
+Payments accepted on checkout
+Add and edit payments available to customers at checkout. Based on their device type, location, and purchase history, your customers will only see the most relevant payment methods.
+Payment methods
+[x]
+Credit / Debit Cards(Required)
+Let your customers pay with major credit and debit cards without leaving your store.
+From 2.9% + 0,30 $
+[ ]
+Alipay
+A digital wallet for customers with mainland China Alipay accounts. Regional versions like AlipayHK are not supported.
+From 2.9% + 0,30 $
+[ ]
+Bancontact
+Bancontact is a bank redirect payment method offered by more than 80% of online businesses in Belgium.
+From 1.4% + 0,30 $
+[ ]
+EPS
+Accept your payment with EPS — a common payment method in Austria.
+From 1.8% + 0,30 $
+[ ]
+iDEAL | Wero
+Expand your business with iDEAL | Wero — Netherlands's most popular payment method.
+From 0% + 0,80 $
+[ ]
+Multibanco
+A voucher based payment method for your customers in Portugal.
+From 2.95% + 0,30 $
+[ ]
+WeChat Pay
+A digital wallet for customers with mainland China WeChat Pay wallets. Regional versions like WeChat Pay HK are not supported.
+From 2.9% + 0,30 $
+Buy now, pay later
+Boost sales by offering customers additional buying power and flexible payment options.
+Learn more
+↗
+[x]
+Affirm
+Allow customers to pay over time with Affirm.
+From 6% + 0,30 $
+[x]
+Cash App Afterpay
+Allow customers to pay over time with Cash App Afterpay.
+From 6% + 0,30 $
+[x]
+Klarna
+Allow customers to pay over time or pay now with Klarna.
+From 5.99% + 0,30 $
+Express checkouts
+Let your customers use their favorite express payment methods and digital wallets for faster, more secure checkouts across different parts of your store.
+Learn more
+↗
+[x]
+WooPay
+Boost conversion and customer loyalty by offering a single click, secure way to pay.
+Customize
+[x]
+Apple Pay
+Apple Pay is an easy and secure way for customers to pay on your store.
+Google Pay
+Offer customers a fast, secure checkout experience with Google Pay.
+Customize
+Warning notice
+This payment method is enabled by other extensions. Review extensions to improve the shopper experience.
+[ ]
+Link
+Link autofills your customers' payment and shipping details to deliver an easy and seamless checkout experience.By enabling this feature, you agree to the Link by Stripe terms, and Privacy Policy.
+Read more
+Warning notice
+To enable Link by Stripe, you must first disable WooPay.
+[x]
+Amazon Pay
+Offer customers a fast, secure checkout experience with Amazon Pay. By activating this feature, you accept Stripe and Amazon's terms of use.
+Customize
+Transactions
+Update your store's configuration to ensure smooth transactions.
+View our documentation
+↗
+Transaction preferences
+[x]
+Enable payments via saved cards
+When enabled, users will be able to pay with a saved card during checkout. Card details are stored in our platform, not on your store.
+[ ]
+Enable manual capture
+Issue an authorization on checkout and capture later. Learn more. The setting is not applied to In-Person Payments
+↗
+(please note that In-Person Payments should be captured within 2 days of authorization).
+Customer statements
+Edit the way your store name appears on your customers' bank statements.
+Customer bank statement
+[CAPTURE TEST STORE]
+18 / 22
+Customer support
+Provide contact information where customers can reach you for support.
+Support email
+[plenty.helpful@example.com]
+This may be visible on receipts, invoices, and automated emails from your store.
+Support phone number (required)
++1
+[0000000000]
+This number may appear on customer bank statements and in-person purchase receipts, but not in order emails. Use a number you're comfortable sharing publicly.
+(+1 0000000000 can be used for test accounts)
+Payouts
+Funds are available for payout 2 business days after they’re received.
+Learn more about payout schedules
+↗
+Payout schedule
+Frequency
+[Daily]
+Payouts will occur every business day.
+Payout bank account
+Manage and update your bank account information to receive payouts.
+Account notifications
+Receive important notifications about your WooPayments account.
+Learn more
+↗
+Notifications email
+Provide an email address where you would like to receive communications about your WooPayments account.
+Warning notice
+Anyone with access to this email address will be treated as the account owner. Please verify the address carefully.
+Email address
+[7amza.it+woo@gmail.com]
+Fraud protection
+Help avoid unauthorized transactions and disputes by setting your fraud protection level.
+Learn more about fraud protection
+↗
+Set your payment risk level
+[x]
+Basic
+Provides the base level of platform protection.
+[ ]
+Advanced
+Allows you to fine-tune the level of filtering according to your business needs.
+Configure
+Advanced settings
+More options for specific payment needs.
+View our documentation
+↗
+[x]
+Enable Multi-Currency
+Allow customers to shop and pay in multiple currencies. Learn more
+↗
+Debug mode
+[ ]
+Log error messages
+When enabled, payment error logs will be saved to WooCommerce > Status > Logs.
+Save changes
+If you like WooCommerce please leave us a ★★★★★ rating. A huge thanks in advance!
+Version 11.2.1
+Notifications
+Anyone with access to this email address will be treated as the account owner. Please verify the address carefully.
