@@ -105,3 +105,31 @@ Problems with the method:
 2. The 28 October exception for no difference names an observed act, and a setting shown on a page isn't one. A no difference resting only on such a page would stay unknown. On S02-VP-77, Zid's own declarations carry it.
 3. An unknown that rests on like with like has no gap row to name in blocked_by. S02-VP-71 (both keys), S02-VP-86 'the whole store' and S02-VP-87 'the whole store' name none. The reading of each says what would settle it.
 4. Point rows are left as they were. Zid's letter stays unknown on each point: no statement says its one answer can't be another, and S02-ZD-N08 to S02-ZD-N16 cover routes only. But their coexistence_basis still cites Zid's superseded gaps (S02-ZD-G14 to G18, G20, G21, G23). Two rows whose states didn't change also still cite the old gaps: S02-VP-75 'the buyer's country' cites S02-ZD-G18, and S02-VP-77 'a market the store sells into' cites S02-ZD-G21, where S02-ZD-G26 and S02-ZD-G27 now stand.
+
+After the coordinator's ruling of 28 October on my problem 1 (brief, Like with like): a reading of `the whole store` that also rests on a confirmed absence from the shipped code is weighed as shipped.
+
+Keys written again:
+- S02-VP-71 'a market the store sells into' and 'the whole store' are now vendor choice. What follows is a decision for the founder: "Are a store's staff permissions held per market in Sharrwah, for the whole store, or both?" The per-market key depends on S02-VP-26.
+- S02-VP-87 'the whole store' is now market, pattern. What follows is a variation point bound per market.
+
+S02-VP-86 'the whole store' stays unknown, for its other reason alone. The four hosted platforms now agree like with like. But WooCommerce has no answer row, only S02-WC-N04, and its slice's statements on extensions don't say what it provides for installed apps: S02-WC-001 to 003 are payment extension suggestions, S02-WC-418 is marketplace suggestions, and S02-WC-463 to 467 are role editors. So test 4 doesn't apply.
+
+Readings written again where the ruling made them wrong. Their causes and what follows are unchanged:
+- S02-VP-75 'the whole store'.
+- S02-VP-80, both keys. Salla's observation set against Zid's reading, now weighed as shipped, is unlike in kind; the cause rests on the global pair.
+- S02-VP-87 and S02-VP-89 'a market the store sells into'. Each is now held open by Salla's gap alone (S02-V-1096 and S02-V-1097).
+
+Point rows of all nine written again:
+- zid=D on S02-VP-71, 80, 85, 86, 87 and 89, as on S02-VP-68. Each cites its observation and its confirmed absence.
+- Zid stays unknown on S02-VP-75 and S02-VP-77, citing the newer gaps S02-ZD-G26 and S02-ZD-G27.
+- Zid also stays unknown on S02-VP-72. Its one answer is the seller, and no statement or absent row says it can't be another.
+- No basis now cites S02-ZD-G14 to G18, G20, G21 or G23. The other platforms' letters and bases are kept as phase C wrote them.
+
+Keys unknown now:
+- S02-VP-75 'a market the store sells into', blocked by S02-V-1126.
+- S02-VP-85 'the whole store', blocked by S02-V-869.
+- S02-VP-86 'the whole store', by test 4, with no row to name.
+- S02-VP-87 'a market the store sells into', blocked by S02-V-1096.
+- S02-VP-89 'a market the store sells into', blocked by S02-V-1097.
+
+Left as they were, since their states didn't change: S02-VP-75 'the buyer's country' and S02-VP-77 'a market the store sells into'. Their scopes_compared text still names S02-ZD-G18 and S02-ZD-G21, though neither is in any basis.
