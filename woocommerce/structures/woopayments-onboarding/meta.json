@@ -1,0 +1,17 @@
+{
+  "structure": "woocommerce/woopayments-onboarding",
+  "platform": "woocommerce",
+  "surface": "store admin (WooPayments onboarding)",
+  "source": {
+    "runs": [
+      "20261029T020454Z-store-setup-en",
+      "20261029T023051Z-country-change-en"
+    ],
+    "call": "POST /wp-json/wc-admin/settings/payments/woopayments/onboarding"
+  },
+  "shape": "JSON {state: {supported, started, completed, test_mode, dev_mode}, messages, steps: [{id, path, required_steps, status, errors, context, actions}], context}",
+  "counts": {
+    "distinct_answers": 6
+  },
+  "items": "items.jsonl: each distinct answer as received, with the steps and times of the calls that received it (supported true or false follows the business location)"
+}

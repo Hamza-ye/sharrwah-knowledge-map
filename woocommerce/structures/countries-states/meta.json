@@ -1,0 +1,21 @@
+{
+  "structure": "woocommerce/countries-states",
+  "platform": "woocommerce",
+  "surface": "code",
+  "source": {
+    "run_id": "20261029T023950Z-plugin-code",
+    "files": "woocommerce.11.2.1.zip: woocommerce/i18n/countries.php, woocommerce/i18n/states.php",
+    "sha256": {
+      "countries.php": "dc6f4956f59ea64eca724ebd80caee3fa96bd25dd51499569c59689dcb9f0e0d",
+      "states.php": "1aa65d74e0a91791a44b38c1e7957aa23607801b694f5141937199aab79a3fa1"
+    }
+  },
+  "shape": "PHP arrays: countries code => __( name ); states country code => array( state code => __( name ) ), or array() for a country stated to have none; a country with no entry in states.php is left out of it",
+  "counts": {
+    "countries": 250,
+    "with_states_listed": 68,
+    "with_empty_entry": 1,
+    "with_no_entry": 181
+  },
+  "items": "items.jsonl: one country per line in the order countries.php lists them, with its states as states.php lists them"
+}
