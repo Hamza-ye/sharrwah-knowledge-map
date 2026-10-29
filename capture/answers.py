@@ -42,7 +42,10 @@ def trace_zip(run):
 
 
 def safe(part):
-    return re.sub(r'[^A-Za-z0-9_.@=-]', '_', part).strip('_') or '_'
+    # A path segment longer than a file name may be (a token in the address) keeps its first 64 characters and the
+    # sha256 of the whole segment.
+    s = re.sub(r'[^A-Za-z0-9_.@=-]', '_', part).strip('_') or '_'
+    return s if len(s) <= 120 else f"{s[:64]}~{hashlib.sha256(part.encode()).hexdigest()[:16]}"
 
 
 def content_key(data):
