@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 # The journey helper: every operation on a live journey run (capture/runs/journey-repl.mjs) in one command.
-#   PLATFORM=<platform> capture/jstep.sh <label> start <store> <cdp-port> <fresh|profile>   start the runner
+#   PLATFORM=<platform> capture/jstep.sh <label> start <store> <cdp-port> <fresh|profile> [<platform>] [<adopt-prefix>]
+#                                                     start the runner (the platform and RUN_ADOPT_PAGE may be given as
+#                                                     arguments, so the whole command starts with this script)
 #   capture/jstep.sh <label> '<json>' ['<json>' ...]   run steps; prints each step row and the last step's main region
 #                                                     and dialogs (accessibility tree, link addresses left out)
 #   capture/jstep.sh <label> show <step> aria|text|frame|html|htmlctx [<regex>]
@@ -15,7 +17,7 @@ SP=${JOURNEY_WORKDIR:-/tmp/other-product-class-journeys}; mkdir -p "$SP"
 L=$1; shift
 case "$1" in
   start)
-    store=$2; port=$3; ctx=$4
+    store=$2; port=$3; ctx=$4; PLATFORM=${5:-$PLATFORM}; RUN_ADOPT_PAGE=${6:-$RUN_ADOPT_PAGE}
     [ -n "${PLATFORM:-}" ] && [ -d "$PLATFORM" ] || { echo "PLATFORM must name a platform folder"; exit 1; }
     : > "$SP/$L-cmds.jsonl"; echo "$PLATFORM" > "$SP/$L.platform"
     env PLATFORM="$PLATFORM" CDP_URL="http://127.0.0.1:$port" $([ "$ctx" = fresh ] && echo RUN_CONTEXT=fresh) ${RUN_ADOPT_PAGE:+RUN_ADOPT_PAGE=$RUN_ADOPT_PAGE} \
