@@ -2,6 +2,8 @@
 
 **What this is:** the scenario walk of `PLAN.md` section 6, step 7, done from the brief `briefs/F-scenario-walk.md`. Each of S-02's seven decisions for the founder (S02-D1 to S02-D7) and five engineering constraints (S02-E1 to S02-E5) goes through three scenarios: a second market, the company based elsewhere, and the first market dropped. The rows are in `scenario-walk.tsv`: 39 rows, 12 items × 3 scenarios, with two second-market rows for S02-D1 and S02-D3 and two company-elsewhere rows for S02-E2. The walk tests the recommendations. It chooses nothing.
 
+**Re-walked** after the register's second pass (f4d3d4c6). The table now holds 44 rows. Where the two differ, the last section, "Re-walk after the register's second pass", supersedes the findings below.
+
 ## What was read
 
 - The brief; `PLAN.md` section 1 and section 6, step 7; `founder-decisions.tsv`, the row of 28 October; `register.tsv` and `decisions.md`.
@@ -207,3 +209,57 @@ The source shown is each statement's first citation, as the slice prints it. A U
 | S02-ZD-468; S02-ZD-471 | observed | other-product-class@f44be3f3c97f5863cd58e56d1bf40f41ea3bf45f:zid/raw/runs/20261028T170107Z-devstore-markets-en/: the business address saved as Kuwait (S02-ZD-468); the Main Market, primary, SAR, `"countries": ["SA"]` (S02-ZD-471) |
 
 **Checks run:** every row has 12 fields. Each of the 12 items has its three scenarios. Costs and flags take only the brief's values. All 127 ids cited resolve in S-02's slices, `variants.tsv`, the register or phase C's files. The script is in the scratchpad, outside the repository.
+
+## Re-walk after the register's second pass
+
+**What was re-walked.** The register's second pass (f4d3d4c6) changed S02-D1, S02-D3, S02-D5, S02-D6, S02-D7, S02-E1, S02-E2, S02-E4 and S02-E5, and added S02-D8.
+- Each was walked again through the three scenarios, and its rows were replaced: 35 rows. Of these, 16 are new, and 19 were re-walked, found unchanged and kept word for word.
+- The 9 rows of S02-D2, S02-D4 and S02-E3 are untouched.
+- `python3 -I method/check_scenario_walk.py studies/subjects/S-02` reports 44 rows and 0 problems.
+
+**My first findings, against the change:**
+
+| First finding | Now |
+| --- | --- |
+| A second business serving a market is a redesign under S02-E2's store key (S02-D1, S02-E2) | **Resolved.** E2 takes the order or market, and each order records its business (as Shopify's do, S02-SH-147). Both Egypt rows are now a setting. |
+| S02-D3 closes a rule keyed on where stock is held (`premature`) | **Resolved:** named as not closed, a key of S-10's. One module. |
+| S02-D3 closes an owner's residence and a provider account's country (`premature`) | **Resolved:** not closed, keys of S-07's and S-04's. One module each. |
+| S02-D6 closes combining a set across the markets a buyer matches (`premature`) | **Resolved:** a set may combine (S02-SH-109). A setting. |
+| S02-E4 closes payouts per business, and gift cards in a market's currency (`premature`) | **Payouts resolved:** each provider pays out on its own terms (S02-R4). **Gift cards not resolved:** still `premature`, since E4's only evidence is Shopify's own limit (S02-SH-189). |
+| Data held in-country is a redesign outside S02-E2 (a hypothesis, S-08's) | **Unchanged.** It isn't E2's to resolve; S-08 settles it before storage is designed. |
+| S02-E1 names no layer for limits a platform or a law sets | **Not resolved.** The layer must now also apply after a set combines (one module). |
+| S02-D7: a provider's conversion puts a third currency on a payment | **Moved** to S-09 (S02-M6), where it stands. |
+| S02-E5 reads the founder's "market" | **Resolved as far as the walk goes:** it is now the founder's to confirm, with the other reading named. A merchant of record is one module under the first reading, a setting under the other. |
+| Conditions on rows not re-walked or reused: S02-D4's buyer context; S02-E3's main market's places may change; S02-E4's store currency may change | **Unchanged.** Still to be stated. |
+
+**New from the re-walk.** No new redesign and no new flag under the recommendations as now worded. Six conditions, each a reading:
+- **S02-D8, second market:**
+  - One module if the area is held at more than one level from the start (province or state, city, district); a redesign if it is one fixed field.
+  - The references key on a province (S02-SH-513), a state (S02-WC-118) and a part of one country (S02-SH-486). Zid's Kuwait business address asks a district (S02-ZD-469).
+  - Two of D8's examples (S02-SH-485, S02-SH-486) key on where fulfilment locations are, which S02-D3 leaves to S-10, not on the business record's address.
+- **S02-D8, first market dropped:**
+  - The area key still rests on the references' tax keys.
+  - Its use for payment services, the currency and the rate rests on one market's need today.
+  - That use is unused room, not a constraint on any market, so it isn't flagged `one market`. The founder may weigh it so.
+- **S02-D8 against S02-E2:** D8 says E2's entry point takes an area and that each order keeps it; E2's text names only the business. If D8 is accepted, E2 needs the area.
+- **S02-E2 (and S02-D1):** a rule about a business before it serves an order or market, such as verifying it (S-07), answers for the business itself. One module, inside the entry point.
+- **S02-D5:**
+  - Which kind of market is more specific is stated only for B2B, retail and region markets (S02-SH-109). A channel market against a place market is unknown from S-02's evidence.
+  - D5's "by their country" shouldn't be read as country only: a channel market matches by channel.
+- **S02-D6 and S02-E1:** how a set combines is part of its declared kind. Products offered combine by union. For payment methods, the limits apply after combining, so a buyer outside Saudi Arabia is never offered cash on delivery (S02-SA-283).
+- **S02-D7, one currency code at two values in two areas (a hypothesis):**
+  - Selling is a setting: a market per area, each with its own rate.
+  - A report that sums by code would mix the two values. Whether an amount's currency names its area is S-09's question.
+  - That stays one module if amounts refer to a currency record; it is a redesign if every amount is a bare code.
+
+**Per changed item, each scenario's cost** (second market · company elsewhere · first market dropped):
+- **S02-D1:** one module (the UAE, Kuwait), and a setting (Egypt) · a setting · a setting.
+- **S02-D3:** one module (Saudi Arabia), and one module (the UAE) · a setting · a setting.
+- **S02-D8:** one module (hypothetical) · a setting · a setting.
+- **S02-E2:** a setting (Egypt) · a setting, and **a redesign** (hypothetical: data held in-country, S-08's) · a setting.
+- **S02-E5:** one module under the first reading (Saudi Arabia, the UAE) · a setting · a setting.
+- **S02-D5:** a setting (the UAE and Saudi Arabia), and a setting (Saudi Arabia: channel and place markets) · a setting · a setting.
+- **S02-D6:** a setting (hypothetical) · a setting · a setting.
+- **S02-D7:** a setting (Kuwait, the UAE), and a setting (hypothetical: one code at two values) · a setting · a setting.
+- **S02-E1:** one module (Saudi Arabia, the UAE) · a setting · a setting.
+- **S02-E4:** one module, `premature` (Kuwait: gift cards) · a setting · a setting, if records carry their currency.
