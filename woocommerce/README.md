@@ -12,9 +12,9 @@ on the merchant's own site, so the store's database and the plugins' code are he
 holds `wordpress.sql` and `options.tsv`, and run `20261029T023950Z-plugin-code` holds the three plugins as WordPress.org
 serves them. Its facts, each with the run it comes from, are in [index/instruments.json](index/instruments.json).
 
-The site is registered with WordPress.com (Jetpack, site 258291858); the store owner's WordPress.com connection, which
-WooPayments needs before a test account or verification, was answered with a human check
-([GAPS.md](GAPS.md)).
+The site is registered with WordPress.com (Jetpack, site 258291858) and connected to a WordPress.com account
+(7amza.it+woo@gmail.com); WooPayments' test account and live accounts for the US, the UAE and the UK were made and
+reset in turn; no WooPayments account is left ([GAPS.md](GAPS.md)).
 
 ## Where to start
 
@@ -24,6 +24,7 @@ WooPayments needs before a test account or verification, was answered with a hum
 | Where the store's country, currency and units are held, and the payments business location | runs `20261029T023002Z-db-after-setup`, `20261029T023745Z-db-after-country-change` (`options.tsv`; `wordpress.sql` for `wp_usermeta`) |
 | What a change of the store's Country / State does with orders and tax rates, and which country decides WooPayments' support | run `20261029T023051Z-country-change-en` |
 | The set-up's free features by country | run `20261029T024814Z-free-extensions-en` |
+| The WordPress.com connection, the test account, a country change with an account, and WooPayments' live verification by country (US, UAE, UK) with the requirements Stripe states for each | runs `20261029T090147Z-wpcom-connect-en`, `20261029T101705Z-stripe-onboarding-us-en`; the accounts as held: `20261029T090847Z-db-after-test-account`, `20261029T102003Z-db-live-account-us`, `20261029T102416Z-db-live-account-ae`, `20261029T102848Z-db-live-account-gb` |
 | The code (where WooPayments reads its account country, its supported countries, the business location) | run `20261029T023950Z-plugin-code` (`fetch.warc.gz`; `capture/warcbody.py` writes a zip out) |
 | Every run, and what is unusual about one | [index/runs.tsv](index/runs.tsv), [index/run-notes.tsv](index/run-notes.tsv) |
 | Every self-description seen, held or not | [structures/REGISTER.tsv](structures/REGISTER.tsv) |

@@ -110,3 +110,13 @@ Dated record of the work: what was decided, what was measured.
 - BigCommerce's "standard formats" for all 245 countries it offers: 229 share one set (KGS, Centimeters, "jS M Y",
   +00:00), Oman, Saudi Arabia, Yemen and the UAE among them; 16 have their own (the US, Canada, Mexico, Chile,
   Colombia, Peru, Australia and nine European countries). A store made with Oman has that shared set.
+- WooPayments with an account: the WordPress.com connection made the account from the email alone; a test account
+  is held in `wcpay_account_data` (country US); changing the store's country with it saved silently and changed
+  neither the account nor its payments. Stripe's embedded sign-in refused every attempt while this capture's
+  automation was attached to the browser (`captcha_try_again_later_support_error`, after hCaptcha passed) and took
+  the founder's own sign-in with no challenge. The live accounts' requirements, as Stripe states them to WooPayments:
+  a US individual, name, date of birth, address, email, phone and SSN, no documents; a UAE company (the only type
+  WooPayments offers there, with no test account), the company licence, memorandum of association, proof of bank
+  account ownership and passports of the representative, owners and executives as files; a UK individual, no
+  documents and an ID number for some methods. The forms ask a phone in the account's country. Each account was
+  reset; none is left.
