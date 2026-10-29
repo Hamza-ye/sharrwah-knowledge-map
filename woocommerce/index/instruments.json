@@ -11,13 +11,14 @@
         "woocommerce-services (WooCommerce Tax)": "3.7.3"
       },
       "country": "US:CA (woocommerce_default_country), currency USD, weight lbs, dimensions in (runs 20261029T023002Z-db-after-setup, 20261029T023745Z-db-after-country-change)",
-      "payments_business_location": "US (user 1's woocommerce_payments_nox_profile; Oman between run 20261029T020454Z-store-setup-en step 102 and run 20261029T023051Z-country-change-en step 37)",
+      "payments_business_location": "US (user 1's woocommerce_payments_nox_profile), set back in run 20261029T101705Z-stripe-onboarding-us-en step 34",
       "jetpack_site_id": 258291858,
-      "wordpress_com_user_connection": "not made: wordpress.com/jetpack/connect/authorize answered \"Confirm you are human\" (run 20261029T020454Z-store-setup-en step 85)",
-      "woopayments_account": "none yet",
+      "wordpress_com_user_connection": "made 2026-10-29 with the WordPress.com account 7amza.it+woo@gmail.com (the email alone made it), run 20261029T090147Z-wpcom-connect-en, steps 5 to 9",
+      "woopayments_account": "none left: a test account (US, run 20261029T090147Z-wpcom-connect-en step 12), then live accounts for the US (acct_1UVpVgFyDvWH51yf), the UAE and the UK, each reset through onboarding/reset (run 20261029T101705Z-stripe-onboarding-us-en)",
       "data": "product 13 (TEST product, 10.00); orders 14 (Los Angeles) and 15 (Riyadh), cash on delivery, pending; tax rates US CA 7.25% and SA 15% (run 20261029T023051Z-country-change-en)",
       "run": "20261029T020454Z-store-setup-en",
-      "date": "2026-10-29"
+      "date": "2026-10-29",
+      "stripe_user": "7amza.it+woo@gmail.com with the founder's phone (+967), registered by the founder's own sign-in in Stripe's popup"
     },
     "browser": {
       "profile": "capture-profile-woocommerce (git-ignored)",

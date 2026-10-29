@@ -20,8 +20,9 @@ platform, with its route, is in `<platform>/GAPS.md`; what is unusual about a ru
   KYC, a second storefront, an invoice) is in `bigcommerce/GAPS.md`.
 - WooCommerce: a test store of our own on this machine (`woocommerce/README.md`): where it holds its country, what a
   country change does with orders and tax rates, the set-up's and the Payments page's checks of the country, the code.
-  WooPayments' account, its verification and a country change with an account wait for the WordPress.com connection,
-  which WordPress.com answered with a human check (`woocommerce/GAPS.md`).
+  With the WordPress.com connection: WooPayments' test account, a country change with it, and the live verification's
+  requirements for the US, the UAE and the UK; Stripe's later screens need a phone in the account's country
+  (`woocommerce/GAPS.md`).
 - Browsers: port 9250 BigCommerce (`capture-profile-bigcommerce`), 9251 WooCommerce (`capture-profile-woocommerce`),
   9222 the capture inbox (observed-sh's profile). The WooCommerce store's containers (`woocommerce-capture`) and its
   tunnel run on this machine; the tunnel's address is `SITE_URL` in `.env`.
