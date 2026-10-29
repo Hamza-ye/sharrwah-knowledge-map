@@ -1,0 +1,338 @@
+<html><head>
+	<style>
+		.spinner:after,
+		.spinner:before {
+			content: ''
+		}
+
+		#recaptcha {
+			z-index: 1
+		}
+
+		@-webkit-keyframes rotation {
+			from {
+				-webkit-transform: rotate(0);
+				transform: rotate(0)
+			}
+
+			to {
+				-webkit-transform: rotate(359deg);
+				transform: rotate(359deg)
+			}
+		}
+
+		@-moz-keyframes rotation {
+			from {
+				-moz-transform: rotate(0);
+				transform: rotate(0)
+			}
+
+			to {
+				-moz-transform: rotate(359deg);
+				transform: rotate(359deg)
+			}
+		}
+
+		@-o-keyframes rotation {
+			from {
+				-o-transform: rotate(0);
+				transform: rotate(0)
+			}
+
+			to {
+				-o-transform: rotate(359deg);
+				transform: rotate(359deg)
+			}
+		}
+
+		@keyframes rotation {
+			from {
+				transform: rotate(0)
+			}
+
+			to {
+				transform: rotate(359deg)
+			}
+		}
+
+		.spinner:before {
+			display: block;
+			margin: 40px auto;
+			width: 34px;
+			height: 34px;
+			border-left: 8px solid rgba(0, 0, 0, .2);
+			border-right: 8px solid rgba(0, 0, 0, .2);
+			border-bottom: 8px solid rgba(0, 0, 0, .2);
+			border-top: 8px solid #2180c0;
+			border-radius: 50px;
+			-webkit-animation: rotation .7s infinite linear;
+			-moz-animation: rotation .7s infinite linear;
+			-o-animation: rotation .7s infinite linear;
+			animation: rotation .7s infinite linear
+		}
+
+		.spinner:after {
+			position: fixed;
+			z-index: -1;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background: #FFF;
+			opacity: .2;
+			filter: alpha(opacity=20)
+		}
+	</style>
+    <script type="text/javascript">
+		var timeOutOp;
+		var hCaptcha = null;
+		var scriptLoaded = false;
+		let IframeName = "hcaptchaiframe";
+		var hCaptchaRenderStartTime;
+		var hCaptchaScriptLoadTime;
+		var pp_loc_map = {
+			"ar_EG": "ar", "bg_BG":"bg", "bn_IN":"bn-in", "cs_CZ":"cs", "da_DK": "da", "de_DE": "de", "el_GR": "el", "es_ES": "es", "es_XC": "es-mx", "fi_FI": "fi", "fr_CA": "fr-ca", "fr_FR": "fr",
+			"fr_XC": "fr", "he_IL": "he", "hi_IN" : "hi", "hr_HR" : "hr", "hu_HU" : "hu", "id_ID": "id", "it_IT": "it", "ja_JP": "ja", "ko_KR": "ko", "nl_NL": "nl",
+			"no_NO": "no", "pl_PL": "pl", "pt_BR": "pt-br", "ro_RO": "ro", "sk_SK": "sk", "sv_SE": "sv", "ta_IN": "ta", "te_IN": "te", "th_TH": "th",
+			"tr_TR": "tr", "uk_UA": "uk", "vi_VN": "vi", "zh_CN": "zh-cn", "zh_HK": "zh-hk", "zh_TW": "zh-tw", "zh_XC": "zh", "ar": "ar", "da": "da",
+			"de": "de", "en": "en", "es": "es", "fr": "fr", "id": "id", "ko": "ko", "pt": "pt", "ru": "ru", "zh": "zh"
+		};
+
+		function isPayPalSubDomain(domain) {
+			const paypalSubDomains = ['hcaptcha.paypal.com','newassets.hcaptcha.paypal.com','imgs.hcaptcha.paypal.com','accounts.hcaptcha.paypal.com']
+			return paypalSubDomains.indexOf(domain) >= 0;
+		}
+		// Final safety gate: reject any URL containing breakout characters.
+		function safeScriptSrc(url, fallback) {
+			return /^https:\/\/[A-Za-z0-9._:\/?=&%-]+$/.test(url) ? url : fallback;
+		}
+
+		function getTargetOrigin(){
+			var allowedDomains = ['paypal.com','paypalinc.com','paypal.cn','venmo.com','paypalobjects.com'];
+			var targetOrigin = '/';
+			try{
+				if(!window.URL){
+					return targetOrigin;
+				}
+
+				var originUrl = "";
+				if(!document.referrer) {
+					var ancetorOrigins = window.location && window.location.ancestorOrigins;
+					ancetorOrigins = ancetorOrigins.length > 0 ? ancetorOrigins[0] : '';
+					originUrl = new window.URL(ancetorOrigins);
+				} else {
+					originUrl = new window.URL(document.referrer);
+				}
+				
+				if(!originUrl || !originUrl.hostname || typeof originUrl.hostname !== "string"){
+					return targetOrigin;
+				}
+
+				var originUrlParts = originUrl.hostname.split('.');
+				if(!originUrlParts){
+					return targetOrigin;
+				}
+
+				if(Array && Array.isArray && !Array.isArray(originUrlParts)){
+					return targetOrigin;
+				}
+
+				if(!originUrlParts.length || originUrlParts.length < 2){
+					return targetOrigin;
+				}
+
+				originUrlParts = originUrlParts.slice(-2);
+				if(!originUrlParts || !originUrlParts.length || originUrlParts.length < 2){
+					return targetOrigin;
+				}
+
+				var referrerDomain = originUrlParts.join('.');
+				if(!referrerDomain){
+					return targetOrigin;
+				}
+
+				if(allowedDomains.indexOf(referrerDomain) >= 0){
+					targetOrigin = originUrl.origin;
+				}
+
+			}
+			catch(e){
+				console.error(e);
+			}
+			return targetOrigin;
+
+		}
+
+		function sendMessageToParent(obj) {
+			if (typeof obj === "string" || obj instanceof String) {
+				let temp = {
+					result: obj,
+					source: IframeName
+				}
+				obj = temp;
+			}
+			else {
+				obj.source = IframeName;
+			}
+			parent.postMessage(JSON.stringify(obj), getTargetOrigin());
+		}
+
+		function gethCaptchaLocale(l, c) {
+			if(pp_loc_map[l]){
+				return pp_loc_map[l];
+			}
+			l = l.split("_")[0];
+			return pp_loc_map[l] || 'en';
+		}
+		var getKey = function (key) {
+			var regexS = "[\\?&]" + key + "=([^&#]*)";
+			var regex = new RegExp(regexS);
+			var results = regex.exec(window.location.href);
+			if (results == null) {
+				return "";
+			} else {
+				return results[1];
+			}
+		};
+
+		var verifyCallback = function (response) {
+			sendMessageToParent( {
+				token: response,
+				renderData:{
+					hcaptchaRenderStartTime:hCaptchaRenderStartTime,
+					hcaptchaRenderEndTime: hCaptchaScriptLoadTime ,
+					hcaptchaVerificationTime: new Date().getTime(),
+				},
+			});
+			sendMessageToParent({
+				frameHeight: ''
+			});
+			
+		};
+
+		var hCaptchaCallback = function () {
+			window.clearTimeout(timeOutOp);
+			sendMessageToParent( {
+				log :  true,
+				captchaState : "CLIENT_SIDE_HCAPTCHA_JS_LOADED"
+			});
+			try {
+				scriptLoaded = true;
+				hCaptchaScriptLoadTime =  new Date().getTime();
+				document.getElementById("spinnerDiv").removeAttribute("class");
+                hcaptcha.render('hcaptcha-d', {
+                    sitekey: getKey('siteKey'),
+                    callback:verifyCallback,
+                    'open-callback':function() { 
+						sendMessageToParent( {
+							log :  true,
+							captchaState : "CLIENT_SIDE_HCAPTCHA_SHOWN"
+						});
+					},
+                    'close-callback':function() { 
+						sendMessageToParent( {
+							log :  true,
+							captchaState : "CLIENT_SIDE_HCAPTCHA_SUPRESSED"
+						});
+					},
+                    'chalexpired-callback':function() { 
+						sendMessageToParent( {
+							log :  true,
+							captchaState : "CLIENT_SIDE_HCAPTCHA_CHALLENGE_EXPIRED"
+						});
+					},
+                    'error-callback':function() { 
+						sendMessageToParent( {
+							log :  true,
+							captchaState : "CLIENT_SIDE_HCAPTCHA_SUPRESSED"
+						});
+					},
+                  });
+				
+			} catch (e) {
+				window.clearTimeout(timeOutOp);
+				sendMessageToParent({
+					token: 'RENDER_FAILURE',
+					renderData:{
+						hCaptchaRenderStartTime:hCaptchaRenderStartTime,
+						hCaptchaRenderEndTime: new Date().getTime() ,
+					}
+				});
+			}
+		};
+		var checkConnection = function () {
+			if (scriptLoaded === false && typeof hcaptcha === "undefined") {
+				sendMessageToParent({
+					token: 'NOT_REACHABLE',
+					renderData:{
+						hCaptchaRenderStartTime:hCaptchaRenderStartTime,
+						hCaptchaRenderEndTime:  new Date().getTime() ,
+					}
+				});
+			}
+		};
+		var getLocale = function () {
+			var loc = getKey('locale.x');
+			var country = getKey('country.x');
+			return gethCaptchaLocale(loc, country);
+		};
+		var getConnectionTimeout = function () {
+			var connectionTimeout = parseInt(getKey('checkConnectionTimeout'));
+			return isNaN(connectionTimeout) ? 5000 : connectionTimeout;
+		};
+		var onLoad = () => {
+			scriptLoaded = true;
+			sendMessageToParent( {
+				log :  true,
+				captchaState : "CLIENT_SIDE_HCAPTCHA_SCRIPT_ONLOAD"
+			});
+		};
+        var onError = () => {
+            console.log('error')
+			sendMessageToParent({
+				log: true,
+				captchaState : "CLIENT_SIDE_HCAPTCHA_SCRIPT_ONERROR"
+			})
+		};
+		var getHcaptchaDomain = () => {
+			var clientDomain = getKey('domain') || '';
+			var imgsDomain = getKey('imgsDomain') || '';
+			var assetsDomain = getKey('assetsDomain') || '';
+			var accountsDomain = getKey('accountsDomain') || '';
+			var isValid = isPayPalSubDomain(clientDomain) && isPayPalSubDomain(imgsDomain) && isPayPalSubDomain(assetsDomain) && isPayPalSubDomain(accountsDomain);
+			if(isValid) {
+				return `https://${clientDomain}/1/api.js?endpoint=https%3A%2F%2F${clientDomain}&assethost=https%3A%2F%2F${assetsDomain}&imghost=https%3A%2F%2F${imgsDomain}&sentry=false&reportapi=https%3A%2F%2F${accountsDomain}&host=${clientDomain}&onload=hCaptchaCallback&render=explicit`
+			} else {
+				return 'https://js.hcaptcha.com/1/api.js?onload=hCaptchaCallback&render=explicit'
+			}
+		};
+	</script>
+</head>
+
+<body>
+    <div id="spinnerDiv"></div>
+<div id="hcaptcha-d" align="center" style="transform:scale(0.99);-webkit-transform:scale(0.99);transform-origin:0 0;-webkit-transform-origin:0 0;"><iframe src="https://newassets.hcaptcha.paypal.com/captcha/v1/3b71cbe0d677f40e17dc54f11aed7a067d3e1066/static/hcaptcha.html#frame=checkbox&amp;id=0l2n9lw8tdis&amp;host=hcaptcha.paypal.com&amp;sentry=false&amp;reportapi=https%3A%2F%2Faccounts.hcaptcha.paypal.com&amp;recaptchacompat=true&amp;custom=false&amp;hl=en&amp;assethost=https%3A%2F%2Fnewassets.hcaptcha.paypal.com&amp;imghost=https%3A%2F%2Fimgs.hcaptcha.paypal.com&amp;tplinks=on&amp;andint=off&amp;pstissuer=https%3A%2F%2Fpst-issuer.hcaptcha.com&amp;sitekey=bf07db68-5c2e-42e8-8779-ea8384890eea&amp;endpoint=https%3A%2F%2Fhcaptcha.paypal.com&amp;theme=light&amp;origin=https%3A%2F%2Fwww.paypalobjects.com&amp;clientOptions=%7B%22sentry%22%3Afalse%2C%22reportapi%22%3A%22https%3A%2F%2Faccounts.hcaptcha.paypal.com%22%2C%22recaptchacompat%22%3A%22true%22%2C%22custom%22%3Afalse%2C%22hl%22%3A%22en%22%2C%22assethost%22%3A%22https%3A%2F%2Fnewassets.hcaptcha.paypal.com%22%2C%22imghost%22%3A%22https%3A%2F%2Fimgs.hcaptcha.paypal.com%22%2C%22tplinks%22%3A%22on%22%2C%22andint%22%3A%22off%22%2C%22pat%22%3A%22on%22%2C%22pstissuer%22%3A%22https%3A%2F%2Fpst-issuer.hcaptcha.com%22%2C%22endpoint%22%3A%22https%3A%2F%2Fhcaptcha.paypal.com%22%2C%22theme%22%3A%22light%22%2C%22size%22%3A%22normal%22%2C%22confirm-nav%22%3Afalse%7D" tabindex="0" frameborder="0" scrolling="no" allow="private-state-token-redemption" title="Widget containing checkbox for hCaptcha security challenge" data-hcaptcha-widget-id="0l2n9lw8tdis" data-hcaptcha-response="" style="pointer-events: auto; background-color: rgba(255, 255, 255, 0); border-radius: 4px; width: 302px; height: 76px; overflow: hidden;"></iframe><textarea id="g-recaptcha-response-0l2n9lw8tdis" name="g-recaptcha-response" style="display: none;"></textarea><textarea id="h-captcha-response-0l2n9lw8tdis" name="h-captcha-response" style="display: none;"></textarea></div>
+<script type="text/javascript">
+    hCaptchaRenderStartTime =new Date().getTime();
+		(function(){
+		var hCaptchaScript = document.createElement("script");
+        var locale = getLocale()
+		var DEFAULT_HC_SRC = 'https://js.hcaptcha.com/1/api.js?onload=hCaptchaCallback&render=explicit';
+		var builtHcSrc = (getHcaptchaDomain() || DEFAULT_HC_SRC) + (locale ? '&hl=' + encodeURIComponent(locale) : '');
+		hCaptchaScript.src = safeScriptSrc(builtHcSrc, DEFAULT_HC_SRC);
+		hCaptchaScript.async=true;
+		hCaptchaScript.defer=true;
+		hCaptchaScript.onload = onLoad;
+		hCaptchaScript.onerror = onError;
+		document.body.appendChild(hCaptchaScript);
+		
+		document.body.onscroll =  function(){
+			sendMessageToParent({
+				frameHeight: document.body.scrollHeight + "px"
+			});
+		};
+	})();
+    timeOutOp = window.setTimeout(checkConnection, getConnectionTimeout());
+</script><script src="https://hcaptcha.paypal.com/1/api.js?endpoint=https%3A%2F%2Fhcaptcha.paypal.com&amp;assethost=https%3A%2F%2Fnewassets.hcaptcha.paypal.com&amp;imghost=https%3A%2F%2Fimgs.hcaptcha.paypal.com&amp;sentry=false&amp;reportapi=https%3A%2F%2Faccounts.hcaptcha.paypal.com&amp;host=hcaptcha.paypal.com&amp;onload=hCaptchaCallback&amp;render=explicit&amp;hl=en" async="" defer=""></script>
+
+<div aria-hidden="true" style="background-color: rgb(255, 255, 255); border: 1px solid rgb(215, 215, 215); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px; border-radius: 4px; left: auto; top: -10000px; z-index: -2147483648; position: absolute; pointer-events: auto; transition: opacity 0.15s ease-out; opacity: 0; visibility: hidden;"><div style="position: relative; z-index: 1;"><iframe src="https://newassets.hcaptcha.paypal.com/captcha/v1/3b71cbe0d677f40e17dc54f11aed7a067d3e1066/static/hcaptcha.html#frame=challenge&amp;id=0l2n9lw8tdis&amp;host=hcaptcha.paypal.com&amp;sentry=false&amp;reportapi=https%3A%2F%2Faccounts.hcaptcha.paypal.com&amp;recaptchacompat=true&amp;custom=false&amp;hl=en&amp;assethost=https%3A%2F%2Fnewassets.hcaptcha.paypal.com&amp;imghost=https%3A%2F%2Fimgs.hcaptcha.paypal.com&amp;tplinks=on&amp;andint=off&amp;pstissuer=https%3A%2F%2Fpst-issuer.hcaptcha.com&amp;sitekey=bf07db68-5c2e-42e8-8779-ea8384890eea&amp;endpoint=https%3A%2F%2Fhcaptcha.paypal.com&amp;theme=light&amp;origin=https%3A%2F%2Fwww.paypalobjects.com&amp;clientOptions=%7B%22sentry%22%3Afalse%2C%22reportapi%22%3A%22https%3A%2F%2Faccounts.hcaptcha.paypal.com%22%2C%22recaptchacompat%22%3A%22true%22%2C%22custom%22%3Afalse%2C%22hl%22%3A%22en%22%2C%22assethost%22%3A%22https%3A%2F%2Fnewassets.hcaptcha.paypal.com%22%2C%22imghost%22%3A%22https%3A%2F%2Fimgs.hcaptcha.paypal.com%22%2C%22tplinks%22%3A%22on%22%2C%22andint%22%3A%22off%22%2C%22pat%22%3A%22on%22%2C%22pstissuer%22%3A%22https%3A%2F%2Fpst-issuer.hcaptcha.com%22%2C%22endpoint%22%3A%22https%3A%2F%2Fhcaptcha.paypal.com%22%2C%22theme%22%3A%22light%22%2C%22size%22%3A%22normal%22%2C%22confirm-nav%22%3Afalse%7D" frameborder="0" scrolling="no" allow="private-state-token-redemption" title="hCaptcha challenge" style="border: 0px; z-index: 2000000000; position: relative;"></iframe></div><div style="width: 100%; height: 100%; position: fixed; pointer-events: none; top: 0px; left: 0px; z-index: 0; background-color: rgb(255, 255, 255); opacity: 0.05;"></div><div style="border-width: 11px; border-style: none; position: absolute; pointer-events: none; margin-top: -11px; z-index: 1; right: 100%;"><div style="border-width: 10px; border-style: solid; border-color: transparent rgb(255, 255, 255) transparent transparent; position: relative; top: 10px; z-index: 1;"></div><div style="border-width: 11px; border-style: solid; border-color: transparent rgb(215, 215, 215) transparent transparent; position: relative; top: -11px; z-index: 0;"></div></div></div></body></html>

@@ -1,0 +1,11 @@
+- checkbox "'I am human', Select in order to trigger the challenge, or to bypass it if you have an accessibility cookie"
+- text: I am human
+- button "hCaptcha logo, opens new window with more information"
+- link "hCaptcha Privacy Policy, opens in a new tab":
+  - /url: https://hcaptcha.com/privacy?ref=hcaptcha.paypal.com&utm_campaign=bf07db68-5c2e-42e8-8779-ea8384890eea&utm_medium=checkbox&hl=en
+  - text: Privacy
+- text: "-"
+- link "hCaptcha Terms of Service, opens in a new tab":
+  - /url: https://hcaptcha.com/terms?ref=hcaptcha.paypal.com&utm_campaign=bf07db68-5c2e-42e8-8779-ea8384890eea&utm_medium=checkbox&hl=en
+  - text: Terms
+- status

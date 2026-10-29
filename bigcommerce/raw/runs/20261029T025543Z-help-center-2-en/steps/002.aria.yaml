@@ -1,0 +1,56 @@
+- main:
+  - navigation:
+    - img "PayPal"
+  - heading "Create a business account" [level=2]
+  - textbox "Legal first name":
+    - /placeholder: " "
+  - text: Legal first name
+  - textbox "Legal last name":
+    - /placeholder: " "
+  - text: Legal last name Enter the account owner’s name. Make sure it matches a government ID.
+  - combobox "Country": United States
+  - text: Country Choose the country or region where your business is legally established. If you’re a sole trader, choose the country or region where you’re a legal resident. This helps set up your account correctly and can’t be changed later.
+  - textbox "Email":
+    - /placeholder: " "
+  - text: Email Make business account creation easier by using an email not associated with your personal PayPal account.
+  - textbox "Password":
+    - /placeholder: " "
+  - text: Password
+  - button "show"
+  - img "information icon":
+    - img
+  - paragraph: 8 characters or more
+  - img "information icon":
+    - img
+  - paragraph: Use upper and lowercase letters
+  - img "information icon":
+    - img
+  - paragraph: Enter at least 1 number or 1 symbol (such as !@#$%^)
+  - button "Code US +1":
+    - img "US"
+    - text: "+1"
+  - text: Code
+  - textbox "Phone number":
+    - /placeholder: " "
+  - text: Phone number
+  - paragraph: By continuing, you confirm you can receive texts at this phone number and you're authorized to use it. Carrier fees may apply.
+  - paragraph:
+    - paragraph:
+      - text: You've read
+      - strong: and agree to
+      - link "PayPal's User Agreement":
+        - /url: https://www.paypal.com/US/webapps/mpp/ua/useragreement-full?locale.x=en-US
+      - text: ","
+      - link "Privacy Statement":
+        - /url: https://www.paypal.com/US/webapps/mpp/ua/privacy-full?locale.x=en-US
+      - text: and
+      - link "E-Sign Disclosure":
+        - /url: https://www.paypal.com/US/webapps/mpp/ua/esign-full?locale.x=en-US
+      - text: ", and"
+      - strong: you consent
+      - text: to receive all communications electronically.
+  - button "Agree and Create Account"
+  - paragraph:
+    - text: Already have an account?
+    - link "Sign in":
+      - /url: https://www.paypal.com/signin?country.x=US&locale.x=en_US&flowId=Djv3SrsNQ-p0M8SPoMEoqBvVzDGhg771&ctxId=ul145c409c1a904a9283efc152dcc3a02e&returnUri=https%3A%2F%2Fwww.paypal.com%2Funifiedonboarding%2Fafter-login%3Fcountry.x%3DUS%26locale.x%3Den_US%26YWRzZGRjYXB0Y2hh%3D1

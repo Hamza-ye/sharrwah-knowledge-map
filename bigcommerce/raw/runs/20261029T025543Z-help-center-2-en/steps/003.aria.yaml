@@ -1,0 +1,4 @@
+- main:
+  - img "PayPal"
+  - heading "Security Challenge" [level=1]
+  - iframe

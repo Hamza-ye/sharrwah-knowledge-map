@@ -1,0 +1,436 @@
+Help center
+Contact
+Preferred Language
+EN
+Log in
+[Search]
+Contact
+System Status
+All Systems Operational
+Refreshedless than 1 minute ago
+Get Help
+Ask the Community
+Get answers from experts
+Live Chat
+YourSupport PINis required
+Phone Support
+YourSupport PINis required
+Email Support
+YourSupport PINis required
+Common Questions
+no items
+Phone Support
+Help Center
+Community
+Getting Started
+Products
+Store Setup
+B2B
+Design and Content
+Manage Store
+Channel Manager
+Marketing
+Data Solutions
+Account
+TD Bank
+Connecting with BigCommerce Payments
+What We'll Cover
+BigCommerce Payments features
+Requirements
+Setting up BigCommerce Payments
+Settings
+Fastlane by PayPal
+PayPal Pay Later
+Balance dashboard
+FAQ
+BigCommerce Payments, a native solution powered by PayPal, enables BigCommerce merchants to seamlessly accept various payment methods, including cards, PayPal, Venmo, Pay Later options, and popular digital wallets. Shoppers benefit from a unified checkout experience, and funds are conveniently managed within a dedicated Balance dashboard directly inside BigCommerce.
+BigCommerce Payments Features
+BigCommerce Payments allows you to:
+manage your funds balances.
+keep track of your accounts from a single login.
+offer many popular payment methods.
+use additional tools to help you grow your business.
+sell securely with a brand your customers trust.
+Requirements
+Your store must be on a Core, Growth, or Scale plan.
+Select Performance plan stores may be eligible to enable BigCommerce Payments. Check your store's control panel for availability.
+Your store’s checkout type must be Optimized One-Page Checkout or Custom Checkout.
+Your store must be located in the United Kingdom or the United States.
+Your new or existing PayPal Business account must be UK or US-based.
+To set up and manage payment methods, the Manage Payments and Manage Settingspermissions must be enabled on your user account.
+Setting up BigCommerce Payments
+To connect BigCommerce Payments with your store, go to Settings › Payments, and select a supported currency from the drop-down list. Under the Embedded tab, expand Online Payment Methods and click Set up next to BigCommerce Payments.
+On the next page, click Set up to begin the onboarding flow.
+When you connect BigCommerce Payments, a brand new PayPal platform account dedicated to your BigCommerce store is created. The BigCommerce Payments account is automatically linked to your PayPal Business account. See our FAQ for more details.
+Set up faster and easier — Select to use details from an existing PayPal Business account to create and link a new BigCommerce Payments account.
+Add info on your own — Select to create new PayPal Business and BigCommerce Payments accounts and link them together.
+Settings
+Actions
+Account
+Cards
+Digital wallets
+Buy Now, Pay Later
+Local payment methods
+Transaction settings
+Post-purchase & operations
+Once you have connected your PayPal Business account to a BigCommerce Payments account, you can customize your customer’s payment experience.
+ACTIONS
+The Actions section allows you to see real-time alerts for your BigCommerce Payments account. Tasks, such as completing your profile, linking a bank account, Know Your Customer (KYC) status, and fund holds will be displayed here.
+Just above the Actions area is a link to access the Balance dashboard in the BigCommerce control panel, as well links to your account’s portal pages on PayPal’s website where you can manage payment disputes, view insights, and view reports.
+For more information about disputes and PayPal’s Resolution Center, PayPal’s merchant guide on dispute transactions.
+ACCOUNT
+Live account — When connected, your live account email address and Merchant ID are displayed.
+To remove the connected account, click Disconnect live account.
+Test account — When connected, your sandbox account email address and Merchant ID are displayed.
+To connect your test account, click Set up test account.
+To switch to a different connected account, click Change PayPal sandbox account.
+Test mode — Check to simulate transactions without processing real payments.
+Note that enabling test mode pauses transactions on your live account.
+CARDS
+Under Payment Methods, the Cards section lets you manage your credit/debit card and Faslane by PayPal accelerated checkout settings.
+Click Configure to expand each feature’s available options.
+Enable credit/debit card payments through PayPal — Check to enable credit/debit card payments at checkout.
+If you have multiple payment gateways set up for a currency, we recommend only using one to accept credit/debit payments.
+Display name — Enter how the payment method is labeled at checkout, customer invoices, and order details.
+Enable Fastlane by PayPal — Check to enable Fastlane by PayPal, accelerating checkout for guest shoppers.
+Note that Fastlane cannot be enabled when the Customers must have or create an account to checkout option is enabled in your Optimized-One Page Checkout settings.
+Default delivery method — Shoppers are taken directly to the Payment step at checkout with your Default shipping option preselected.
+Shoppers can click Edit next to the Shipping step to choose a different method.
+Select delivery method — Shoppers are directed to the Shipping step, allowing them to select a shipping method after signing into their Fastlane account.
+Use Fastlane by PayPal’s privacy setting — Check to display the Fastlane logo below the email address field on the checkout page. Clicking the logo displays a disclaimer and a link to Fastlane’s privacy statement.
+When unchecked, the selected Guest shopper consent to privacy policy option in your Checkout settings will apply.
+Customize Fastlane’s appearance — Check to optionally customize how Fastlane appears on your checkout page.
+Not sure which privacy display option is right for your business? We highly recommend consulting your legal advisor to ensure you are displaying the necessary information at checkout. Note that our support team is not qualified to give advice on regional privacy requirements.
+DIGITAL WALLETS
+Under Payment Methods, the Digital Wallets section lets you manage the PayPal button and other digital wallet payment methods that appear at checkout and on storefront pages.
+Note that digital wallet availability depends on your store’s country and currency combination.
+PayPal Checkout — Check to add PayPal a button to product, cart, and checkout pages.
+PayPal will also appear as a payment option on the payment step of checkout.
+When enabled, shoppers will be able to pay using their PayPal account.
+Venmo*† — Check to accept Venmo payments.
+Only available for USD.
+Stored payment methods and recurring payments are not supported.
+Google Pay*† — Check to accept Google Pay payments.
+Note that Google Pay can only be enabled for one payment gateway at a time.
+Stored payment methods and recurring payments are not supported.
+Apple Pay*† — Click Set up to open the Apple Pay configuration page in a new tab.
+Stored payment methods and recurring payments are not supported.
+* Before accepting payments, you must confirm your BigCommerce Payments account in the Actions section.
+† Alternative payment method transactions are Authorize and capture only, regardless of the selected Transaction type. Delayed capture is not supported.
+BUY NOW, PAY LATER
+Under Payment Methods, the Buy Now, Pay Later section lets you manage your installment payment methods.
+Note that Buy Now, Pay Later availability depends on your store’s country and currency combination.
+Pay Later by PayPal*† — Check to add a Pay Later button to product, cart, and checkout pages that redirects shoppers to the checkout page.
+Branded as PayPal Pay in 3 in the United Kingdom.
+Note that Pay Later is disabled if Stored PayPal Accounts is checked.
+Klarna*† — Check to accept Klarna payments.
+Stored payment methods and recurring payments are not supported.
+Afterpay*† — Check to accept Afterpay payments.
+Branded as Clearpay in the United Kingdom.
+Stored payment methods and recurring payments are not supported.
+Pay Later Messaging — Configure on which pages Pay Later messaging appears and customize messaging appearance.
+For more details and customization options, see PayPal Pay Later.
+* Before accepting payments, you must confirm your BigCommerce Payments account in the Actions section.
+† Alternative payment method transactions are Authorize and capture only, regardless of the selected Transaction type. Delayed capture is not supported.
+LOCAL PAYMENT METHODS
+Under Payment Methods, the Local Payment Methods section allows you to manage additional payment methods; letting eligible shoppers pay in their local currency.
+Note that availability for local payment methods depend on your store’s country and currency combination.
+Before accepting payments, you must confirm your BigCommerce Payments account in the Actions section.
+Alternative payment method transactions are Authorize and capture only, regardless of the selected Transaction type. Delayed capture is not supported.
+Stored payment methods and recurring payments are not supported.
+Bancontact — Check to accept Bancontact payments.
+BLIK — Check to accept BLIK payments.
+EPS — Check to accept EPS (Electronic Payment Standard) payments.
+iDEAL — Check to accept iDEAL payments.
+MyBank —- Check to accept MyBank payments.
+Przelewy24 (P24) — Check to accept Przelewy24 payments.
+SEPA — Check to accept SEPA (Single Euro Payments Area) Direct Debit payments.
+TRANSACTION SETTINGS
+Transaction type — Select Authorize and capture to automatically charge customers or Authorize only to manually capture funds. To learn more, see Manually Capturing Transactions (Authorize Only).
+Note that certain digital wallet and Buy Now, Pay Later transactions use Authorize and capture regardless of this setting.
+Use 3D Secure — Check to enable 3D Secure, an extra layer of security that prompts shoppers to enter a password for their credit/debit card and Fastlane payments during checkout.
+Strong Customer Authentication when required — Select this option to only enforce Strong Customer Authentication (SCA) based on local regulations.
+Strong Customers Authentication always — Select this option to enforce SCA on all credit/debit card and Fastlane transactions.
+Stored credit cards — Check to allow customers with a storefront account to securely save their card information for future purchases.
+Your store must be on a Growth plan or higher.
+Enable real-time account updater — When stored credit cards are enabled, check to enable real-time account updater, an optional paid service that automatically updates stored card information, such as new numbers, new expiration dates, and closed accounts.
+Real-time account updater must first be activated in your PayPal account Payment Preferences.
+Only stored Mastercard and Visa cards are supported.
+Real-time account updater cannot be used with stored PayPal accounts.
+Enable automated card delete — When real-time account updater is enabled, check to automatically delete closed customer cards from a customer’s list of saved payment methods.
+Stored PayPal Accounts — When PayPal Checkout is enabled, check to allow customers to save their PayPal account credentials on your storefront for quicker checkout.
+Your store must be on a Growth plan or higher.
+Note that Pay Later is disabled when stored PayPal accounts are enabled
+Require CVV for manual orders — Check to require CVV/CVV2/CVSD code during manual order creation in the BigCommerce control panel.
+Note that this setting must be enabled to process manual orders using credit cards through BigCommerce Payments.
+POST PURCHASE & OPERATIONS
+When enabled, post-purchase settings allow order details like item names, product images, and shipping tracking numbers to be automatically shared with PayPal. This allows customers to track their orders in the PayPal app or use the automated dispute resolution process, should an issue occur. Note that only orders using BigCommerce Payments will be synced.
+Sync order statuses — Check to share order actions and statuses in BigCommerce with PayPal.
+Requires the Authorize and captureTransaction type.
+Sync shipping info — Check to share shipping statuses and product information with PayPal.
+Requires the Authorize and captureTransaction type.
+Provide package tracking to customers — Check to allow PayPal to provide live shipping updates to customers.
+Send order IDs — Check to associate a BigCommerce Payments transaction with a BigCommerce order ID.
+Note that order IDs must be unique.
+If an order ID has been used for a prior PayPal or BigCommerce Payments transaction, PayPal will decline the payment.
+Fastlane by PayPal
+Fastlane by PayPal provides merchants with a fast, passwordless checkout solution for guest shoppers. With Fastlane, shoppers create a payment profile after making a credit card or PayPal payment, then use that profile on future orders to complete checkout with a single click.
+After completing the order, the shopper will receive an email confirming that their Fastlane profile has been created. When they enter their email address during subsequent checkouts, they will be prompted to enter a verification code sent to their mobile device.
+If a shopper has a PayPal account associated with their email address and has not yet created a Fastlane profile, they will be prompted to create one when entering their email address at the beginning of checkout, rather than after selecting PayPal as their payment method.
+After receiving a verification code to the mobile number associated with their PayPal account, the checkout page will be pre-filled with the shipping, billing, and payment information saved in their PayPal account.
+CUSTOMIZING FASTLANE’S APPEARANCE
+Once you have enabled Fastlane and made your privacy selection, you can customize how Fastlane appears to shoppers.
+Fastlane by PayPal allows you to customize the colors of the pop-up elements that your shoppers interact with at checkout. Check the box next to Customize Fastlane’s appearance to view the style settings.
+General appearance
+Background Color — Enter a hex code to specify the color of the pop-up background.
+Error Color —Enter a hex code to specify the color of error messaging.
+Form fields
+Background Color — Enter a hex code to specify the color of input fields.
+Text Color Base — Enter a hex code to specify the color of input text.
+Border Color — Enter a hex code to specify the color of the input field borders.
+Focus Border Base — Enter a hex code to specify the color of the input field borders when highlighted.
+PayPal Pay Later
+Customizing Pay Later messaging
+Pay Later messaging preview
+PayPal Pay Later lets customers buy now and pay over time. This feature means that the shopper will owe the money to PayPal while you, the merchant, always get paid. PayPay Pay Later also includes messaging banners that inform your customers of the installment options available at checkout. This can encourage larger purchases and increase your average order value (AOV).
+Did you know? On stores based in the United Kingdom, PayPal Pay Later will be displayed to shoppers as PayPal Pay in 3.
+Under Buy Now, Pay Later, click Configure Pay Later messaging to customize the appearance of the Pay Later banners and the storefront pages on which they appear. You can also view how your changes affect the banner’s appearance using the preview pane.
+CUSTOMIZING PAY LATER MESSAGING
+For each page type, click the down arrow to view the drop-down lists that controls how aspects of the PayPal Pay Later banner appear on the specific page.
+For product, cart, and checkout pages, you can customize the banner’s logo type, logo position (full logo only), text color, and text size.
+For the home page, you can customize the banner’s color and size.
+PAY LATER MESSAGING PREVIEW
+The preview pane allows you to review your message banner customizations before saving your changes.
+Preview selector — In the upper left, the preview icons allow you to switch between viewing just the banner itself or the banner as it will appear on desktop and mobile displays.
+Dark mode — In the upper right, toggle between viewing the preview pane in light or dark mode.
+Preview pane — In the center, the preview pane displays the banner based on your other preview selections.
+Page selector — At the bottom, use the navigation arrows to switch between previewing the banner on the product, cart, checkout, or home page.
+Balance Dashboard
+Viewing and linking banks
+Managing currencies and converting balances
+Adding money to your balance
+Viewing payouts
+Automatic payouts
+Manual payouts
+The Balance dashboard, located by navigating to Finance › BigCommerce Payments, provides a real-time overview of your BigCommerce Payments account balance. From here, you can also link bank accounts, manage currencies, perform currency conversions, add additional funds to your balance, and manage payouts to linked accounts
+In the upper left of the page, you can select which BigCommerce Payments configuration to view from the Payment profile drop-down list.
+In the upper right are links to your account’s portal pages on PayPal’s website where you can manage payment disputes, view insights, and view reports. For more information about disputes and PayPal’s Resolution Center, see PayPal’s merchant guide on dispute transactions.
+VIEWING AND LINKING BANKS
+In the Banks section at the bottom of the dashboard, you can view bank accounts linked to your BigCommerce Payments account. Click an existing bank to open a pop-up window where you can set it as your preferred bank or unlink and remove it from your list of banks.
+To connect a new bank, click Link a bank. In the pop-up window, click on the tile for your bank or use the search bar to locate a bank. Quickly link your account using Mastercard Data Connect or manually by entering your account details. Note that manual connection can take up to three business days to complete.
+If your bank cannot be found in the search results, you can also manually enter your bank details.
+You can also perform these functions directly in your PayPal dashboard by clicking Manage banks from your PayPal account.
+MANAGING CURRENCIES AND CONVERTING BALANCES
+In the Currencies section, you can view and manage your configured currencies, as well as the existing balance per currency.
+Expand your primary currency to view the linked bank account and set up automatic payouts to your bank or PayPal account.
+On the right side of the section, you can perform currency and balance actions, such as using the currency calculator to review balance exchanges, add additional currencies, mark a currency as primary, remove (close) a currency, and convert existing balances from one currency to another.
+To change existing balance from one enabled currency to another, click Convert currency. In the pop-up window, select your From and To currencies from their respective drop-down lists. The available balances for each currency and the conversion rate will update upon your selections.
+Click the pencil icon to enter the amount that you want to convert, then click Convert.
+If you do not have enough funds in your desired From currency, you will need to add more.
+ADDING MONEY TO YOUR BALANCE
+To add money to your BigCommerce Payments balance, click Add Money in the upper-right of the page.
+In the pop-up window, click the pencil icon to enter the amount to add to your primary currency’s balance. Click Change to switch the source bank or link a new one. When you are ready, click Add.
+Note that most transfers are completed within three to five business days.
+VIEWING PAYOUTS
+In the Payouts section, you can view your payouts and manage manual and automatic payouts.
+The payouts list shows your most recent payouts, click Load More to display additional lines. To change which payouts are displayed, click Filter. In the pop-up window, you can select a different time frame (past 7, 30, 90, and 365 days), select a specific currency, and set a minimum or maximum amount.
+AUTOMATIC PAYOUTS
+You can enable automatic payouts from your BigCommerce Payments balance to a linked bank account or PayPal account. To begin, click Set up auto payments in the upper-right of the dashboard or at the top of the Payouts section.
+In the pop-up window, select a payout frequency. By default, automatic payouts are transferred to your PayPal account. To switch to a bank account, click Change and link a new account or select an existing one.
+Note that your entire balance transfers when using automatic payouts. To transfer specific values, perform a manual payout.
+Refunds are issued from your BigCommerce Payments balance. Payouts may reduce your available balance below the amount to be refunded. Before performing a refund, check the Balance dashboard to ensure that you have sufficient funds.
+MANUAL PAYOUTS
+You can perform manual payouts from your BigCommerce Payments balance to a linked bank account. To begin, click Payout Now in the upper-right of the dashboard or at the top of the Payouts section.
+In the pop-up window, click the pencil icon to enter the payout amount. Select Fast to receive the payout in minutes (fees apply) or Standard to receive the payout in up to three business days. If your bank does not offer Fast Payout, you’ll need to link a new one or select Standard.
+To change the destination bank account, click Change and link a new account or select an existing one. Note that only bank accounts are eligible for manual payout; to transfer your balance to a PayPal account, set up automatic payouts.
+Refunds are issued from your BigCommerce Payments balance. Payouts may reduce your available balance below the amount to be refunded. Before performing a refund, check the Balance dashboard to ensure that you have sufficient funds.
+FAQ
+Auto-migration to BigCommerce Payments
+General
+Account eligibility
+Pricing and fees
+Additional features
+Transactions
+Refunds
+Payment disputes
+Troubleshooting and support
+AUTO-MIGRATION TO BIGCOMMERCE PAYMENTS
+This section only pertains to stores that automatically migrated to BigCommerce Payments after receiving communications from BigCommerce and PayPal. If you did not receive a notification from PayPal regarding an automatic migration, your store is unaffected and you can refer to the FAQ sections from General and below.
+What is the difference between PayPal Checkout integration on BigCommerce and BigCommerce Payments, powered by PayPal?
+Your current integration, PayPal Checkout on BigCommerce is a standalone PayPal integration that allows you to receive payments to your PayPal account. As part of this migration you would move to BigCommerce Payments, powered by PayPal, which is a native payment solution built directly into the BigCommerce platform.
+BigCommerce Payments allows you to accept major payment methods, including PayPal, Pay Later, Venmo*, credit and debit cards, and more, while managing your payments operation from your BigCommerce control panel. This includes a dedicated Balance dashboard to track your funds and payouts, tools to handle refunds and disputes, and automatic order syncing with PayPal for streamlined reporting and customer communication.
+*Not available in the United Kingdom.
+I'm currently using PayPal Checkout on BigCommerce. Do I have to switch to BigCommerce Payments?
+The migration to BigCommerce Payments is being rolled out in waves. If your account is selected, your payment processing will automatically move to BigCommerce Payments on a scheduled date unless you choose to opt out. You will receive an email from PayPal with your migration date and instructions on how to opt out if you prefer to stay on your current setup.
+If I opt out of auto-migration, can I set up BigCommerce Payments later?
+Yes. If you opt out of the migration, you can set up BigCommerce Payments at any time from your BigCommerce control panel under Settings › Payments.
+Note that stores that are migrated to BigCommerce Payments are subject to the fees listed here. Stores that set up BigCommerce Payments at a later date follow the fee structure listed in the FAQ under Pricing and Fees.
+What happens to my existing PayPal account if I migrate to BigCommerce Payments?
+When you move to BigCommerce Payments, a brand new PayPal platform account dedicated to your BigCommerce store is created and will handle all settlement from your BigCommerce store going forward. The BigCommerce Payments account is automatically linked to your PayPal Business account, which remains fully operational, and you retain full access to it.
+You can view your BigCommerce Payments account through your Balance dashboard. You can also access it by logging in to your PayPal account, clicking your business name in the upper left, and in the pop-up window, clicking on your BigCommerce Payments account under Platform accounts.
+Will the migration cause any disruption to my store?
+Your store will continue to accept payments throughout the migration process, and your customers' checkout experience will not be interrupted. Once the migration is complete, all new transactions will be processed through your BigCommerce Payments account.
+If you decide to migrate to BigCommerce Payments and change your mind before the migration date and want to be excluded, contact BigCommerce Support.
+What fees apply after I migrate to BigCommerce Payments?
+Your fees will not change and will remain the same as what you are charged today for PayPal and cards.
+Your rates will not change for at least 6 months after migration. After this period, and for net new merchants, payments processed through BigCommerce Payments will follow the fee structure listed in the FAQ under Pricing and Fees.
+Payments processed through your existing PayPal account outside of BigCommerce will continue to follow standard PayPal merchant fees.
+Can I still use my existing PayPal account independently after migrating to BigCommerce Payments?
+Yes. Your existing PayPal Business account remains fully functional. You can continue to use it for invoicing, in-store payments, or any other PayPal services. The new BigCommerce Payments platform account only handles the transactions coming through your BigCommerce store.
+Where will my past transaction history and reporting be available after the migration?
+Your past account activity from PayPal Checkout on BigCommerce will remain accessible in your PayPal dashboard.
+Going forward, you'll manage your BigCommerce Payments orders, payouts, refunds, and disputes from the BigCommerce control panel. You can also access your BigCommerce Payments transaction activity by logging in to your PayPal account, clicking your business name in the upper left, and in the pop-up window, clicking on your BigCommerce Payments account under Platform accounts.
+How will I receive communications about my BigCommerce Payments integration?
+Once you're on BigCommerce Payments, any updates, changes, or notices related to your integration will come from BigCommerce.
+Who should I contact for support with my BigCommerce Payments integration?
+If you have questions about your BigCommerce Payments integration, need help with your setup, or would like to discontinue the service, contact the BigCommerce support team.
+GENERAL
+What is the difference between PayPal Checkout integration on BigCommerce and BigCommerce Payments, powered by PayPal?
+PayPal Checkout on BigCommerce is a standalone PayPal integration that allows you to receive payments to your PayPal account. BigCommerce Payments, powered by PayPal, is a native payment solution built directly into the BigCommerce platform.
+BigCommerce Payments allows you to accept major payment methods, including PayPal, Pay Later, Venmo, credit and debit cards, and more, while managing your payments operation from your BigCommerce control panel. This includes a dedicated Balance dashboard to track your funds and payouts, tools to handle refunds and disputes, and automatic order syncing with PayPal for streamlined reporting and customer communication.
+What is the difference between a BigCommerce Payments account and a PayPal Business account?
+When you connect BigCommerce Payments, a brand new PayPal platform account dedicated to your BigCommerce store is created. The BigCommerce Payments account is automatically linked to your PayPal Business account.
+These are two distinct accounts:
+Your existing PayPal Business account remains fully intact and operational. Nothing about it changes.
+Your new BigCommerce Payments account is what processes and settles all transactions made through your BigCommerce store going forward.
+You can view your BigCommerce Payments account through your Balance dashboard. You can also access it by logging in to your PayPal account, clicking your business name in the upper left, and in the pop-up window, clicking on your BigCommerce Payments account under Platform accounts.
+Note: For new BigCommerce Payments accounts, initial payments are held for up to 21 days before being available for payout. For more information, see PayPal’s New PayPal account – payments on hold and accessing your money quicker.
+I linked the wrong PayPal account. How do I switch my configuration to the correct account?
+To switch the PayPal account that is linked to BigCommerce Payments, you must disconnect your current configuration and reconnect the BigCommerce Payments integration.
+To disconnect BigCommerce Payments, go to Settings › Payments and select the appropriate currency from the drop-down list. Under the Embedded tab, click Online Payment Methods, then click the toggle switch next to BigCommerce Payments.
+Once disconnected, go back through the BigCommerce Payments setup flow and link the desired account.
+Where do I get my 1099-K tax form?
+Access your US 1099-K and other tax forms in your account’s portal. For details, see PayPal’s How do I find, download or request a correction to my 1099 and click the Business tab.
+ACCOUNT ELIGIBILITY
+What countries are supported?
+BigCommerce Payments supports United Kingdom and United States-based stores and requires a UK or US-based PayPal business account.
+What currencies are supported?
+Our integration supports the following currencies:
+AUDDKKILSNZDSGD
+BRLEURJPYPHPTHB
+CADGBPMXNPLNTWD
+CHFHKDMYRRUBUSD
+CZKHUFNOKSEK
+PRICING AND FEES
+For US-based stores, what are the associated fees?
+For US-based merchants that manually switch to BigCommerce Payments or are new to processing with PayPal, transaction rates for BigCommerce Payments are as follows:
+Core Credit Card Processing:
+Core plan — 2.89% + $0.30
+Growth plan — 2.59% + $0.30
+Scale and Performance plans — 2.39% + $0.30
+PayPal Branded (PayPal button & Venmo):
+All plans — 3.49% + $0.49
+BNPL with Afterpay or Klarna:
+All plans — 4.99% + $0.30
+International Transactions*:
+All plans — Applicable rate above + 1.50%
+*Transactions are considered international when the sender and receiver are registered with or identified by PayPal as residents of different markets. For more details, including PayPal’s market grouping table, see PayPal Merchant Fees.
+For UK-based stores, what are the associated fees?
+For UK-based merchants that manually switch to BigCommerce Payments or are new to processing with PayPal, transaction rates for BigCommerce Payments are as follows:
+Core Credit Card Processing:
+Core plan — 1.4% + £0.30
+Growth plan — 1.4% + £0.30
+Scale and Performance plans — 1.2% + £0.30
+PayPal Pay Later & Checkout:
+All plans — 2.9% + £0.30
+BNPL (Klarna, Clearpay, Zip):
+All plans — 4.99% + £0.30
+Local Payment Methods (All plans):
+Bancontact — 1.4% + £0.20
+BLIK — 1.6% + £0.20
+EPS — 1.6% + £0.20
+iDEAL / Wero — 1.6% + £0.20
+Przelewy24 (P24) — 2.2% + £0.20
+SEPA — £0.30
+International Transactions*:
+All plans — Applicable rate above + 1.50%
+*Transactions are considered international when the sender and receiver are registered with or identified by PayPal as residents of different markets. For more details, including PayPal’s market grouping table, see PayPal Merchant Fees.
+What fees are associated with instant transfer payouts?
+The Fast option for a manual payout is subject to a fee of 1.50% of the amount transferred (minimum $0.50).
+For more information, see “Withdrawal Out of PayPal” on PayPal Merchant Fees.
+Are there any fees associated with refunds or payment disputes?
+For information on PayPal’s fees, see PayPal Merchant Fees.
+ADDITIONAL FEATURES
+Is 3D Secure supported?
+Yes, 3D Secure is supported by BigCommerce Payments. See the Transaction settings section for setup details and more information.
+Is Level 2 and Level 3 data supported?
+Yes, Level 2 and Level 3 data fields are supported for corporate and purchase credit card transactions placed by commercial shoppers. Note that Level 2 and Level 3 cost optimization benefits are not applicable to debit cards.
+See PayPal's documentation for more information on supported card networks and data field mapping.
+Is multicurrency supported?
+Yes, multicurrency is supported by our integration. To learn more about setting up multiple currencies, see Using Multiple Currencies.
+Is cryptocurrency supported?
+No, cryptocurrency is not supported.
+Can I place payment buttons at the top of my checkout page?
+You can place payment buttons at the top of checkout by checking Show wallet buttons at the top of checkout located under Settings › Checkout. Note that buttons will appear above the Customer step for guest shoppers only.
+TRANSACTIONS
+How long until a transaction’s funds are available for payout?
+Funds are typically available in your Balance dashboard shortly after a payment is captured.
+Note: For new BigCommerce Payments accounts, initial payments are held for up to 21 days before being available for payout. For more information, see PayPal’s New PayPal account – payments on hold and accessing your money quicker.
+Are delayed or manual capture payments supported?
+Yes, BigCommerce Payments supports manual capture when using the Authorize onlyTransaction type.
+Are recurring or subscription payments supported?
+Yes, recurring payments through stored PayPal accounts or stored credit cards functionality is supported. Note that your store must be on a Growth plan or higher.
+REFUNDS
+How soon after a transaction can I perform a refund?
+Once a payment is captured, there is no delay before you can issue a refund.
+Note that refunds are issued from your BigCommerce Payments balance, not from linked bank accounts. Before performing a refund, check the Balance dashboard to ensure that you have sufficient funds.
+PAYMENT DISPUTES
+How are payment disputes handled?
+Payment disputes can be addressed by clicking Manage disputesabove Actions or in the Balance dashboard to be redirected to PayPal’s Resolution Center page. For more information, see PayPal’s merchant guide on dispute transactions.
+TROUBLESHOOTING AND SUPPORT
+Why are payment methods, such as credit/debit cards or APMs not available to be enabled?
+If payment methods are not available to be enabled, your BigCommerce Payments account or PayPal business profile may be incomplete. Check the Actions section and your PayPal dashboard for any notifications regarding account setup.
+You may also see an “Account verification pending” banner above the Actions section. Once you have completed your account or business profile, the payment methods are usually available within one business day.
+If you need additional assistance with setting up your account, contact PayPal support.
+Why did my refund fail?
+Insufficient funds are a common cause for failed refunds. As refunds are issued from your BigCommerce Payments balance rather than linked bank accounts, your balance may have been too low for the refund to be successful.
+Note that failed refunds cannot be retried in the BigCommerce control panel and must be completed in the PayPal dashboard.
+Why are some of my funds held or otherwise unavailable for payout?
+Funds may be held or blocked for several reasons, depending on different factors. Check the Actions section for any notifications and complete any requests for documents or verification.
+For new BigCommerce Payments accounts, initial payments are held for up to 21 days before being available for payout. For more information, see PayPal’s New PayPal account – payments on hold and accessing your money quicker.
+If you have added the requested account details and the funds are still held or blocked, contact PayPal support.
+Why do I see different balances in the BigCommerce Payments Balance dashboard and my PayPal account?
+The balance in the BigCommerce control panel displays funds from your BigCommerce Payments account while your PayPal business account contains any other funds, including funds transferred by automatic payout.
+To access your BigCommerce Payments funds, go to Finance › BigCommerce Payments in the BigCommerce control panel. To access your PayPal funds, log into the PayPal dashboard and go to Finance › Money.
+What does the “Something went wrong” error message mean when trying to connect BigCommerce Payments with an existing PayPal Business account?
+If you receive this error, ensure that the email address you entered is correct and matches the one on your PayPal Business account. Next, log into your PayPal dashboard and confirm that your account has been fully set up.
+If you need additional assistance, contact PayPal support.
+What do I do if a bank account won’t link or the pop-up window goes blank or reloads?
+If the linking window goes blank or reloads, your account may still have linked successfully. Close the pop-up window and refresh your Balance dashboard to check the Banks section. If your bank isn’t displayed, try the linking process again.
+If you need additional assistance linking a bank account, contact PayPal support.
+What do I do if I don’t see my funds after a completed payout?
+If the funds from a payout marked Completed in the Balance dashboard are missing or reversed, contact PayPal support.
+Why did my customer receive a “Duplicate Invoice ID detected. To avoid a potential duplicate transaction your account setting requires that Invoice Id be unique for each transaction” error when trying to check out?
+When starting a new BigCommerce store, if you link an existing PayPal Business account that has past PayPal or BigCommerce Payments transactions and elect to sync your order IDs with PayPal, you will need to change your store's Starting Order Number.
+For example, if you have an existing PayPal Invoice ID "100" and your next BigCommerce order ID will also be “100”, the transaction will fail with the error message, "Duplicate Invoice ID detected. To avoid a potential duplicate transaction your account setting requires Invoice ID to be unique for each transaction."
+To avoid these errors, update your store’s Starting Order Number to a number higher than any of your existing PayPal Invoice IDs.
+Once the Starting Order Number is updated, future shoppers should not encounter the error. However, shoppers with items in their cart prior to the update may still receive the error at checkout. These shoppers should delete all items from their cart and start over to successfully check out.
+Who should I contact for support with my BigCommerce Payments integration?
+Unless otherwise noted above, if you need assistance, contact the BigCommerce support team.
+Do this in my store
+Go to Payments in my store
+Additional Resources
+Available Payment Gateways
+Optimized One-Page Checkout
+Manually Capturing Transactions (Authorize Only)
+Processing Refunds
+Don't see what you're looking for? Ask the Community
+Ask a Question
+Looking for actionable advice to improve your site?
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+Share your site
+Community Guide
+Community Ideas
+Community Code of Conduct
+Community Terms of Use
+Become a Partner
+Become an Affiliate
+Contact Support
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+Twitter
+Facebook
+Linkedin
+Youtube
+Pinterest
+Instagram
+Connecting with BigCommerce Payments

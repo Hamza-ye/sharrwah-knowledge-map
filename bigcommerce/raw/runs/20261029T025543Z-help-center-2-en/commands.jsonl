@@ -1,0 +1,5 @@
+{"intent":"Help Center article Connecting with BigCommerce Payments (English)","do":"goto","url":"https://support.bigcommerce.com/s/article/Connecting-with-BigCommerce-Payments?language=en_US","readyTimeout":30000,"settleMs":6000}
+{"intent":"PayPal's business onboarding entry the BigCommerce Payments article links, for the United States (a visitor; no account is made)","do":"goto","url":"https://www.paypal.com/unifiedonboarding/entry?country.x=US&locale.x=en_US","readyTimeout":30000,"settleMs":6000}
+{"intent":"The same entry for the United Kingdom","do":"goto","url":"https://www.paypal.com/unifiedonboarding/entry?country.x=GB&locale.x=en_GB","readyTimeout":30000,"settleMs":6000}
+{"do":"stopped-at-confirm","control":"PayPal Security Challenge","step":3,"evidence":"step 3: paypal.com/unifiedonboarding/entry?country.x=GB answered a Security Challenge (a human check), which is the founder's"}
+{"do":"close"}
