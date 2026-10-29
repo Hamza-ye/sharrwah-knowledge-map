@@ -6,7 +6,7 @@ This is `PLAN.md` Stage 4, subject S-02, step 5. You review what other agents an
 - this brief;
 - `PLAN.md`, sections 1 and 6;
 - `founder-decisions.tsv`;
-- in `studies/subjects/S-02/`: `register.tsv`, `decisions.md`, `yemen-row.tsv`, `scenario-walk.tsv`, phase C's files (`c/RD1/`, `c/RD2/`, `c/RD3/`), `variation-points.tsv`, `variants.tsv`, and statements by id (`python3 -I method/subject_slice.py studies/subjects/S-02 --print RD --ids ...`);
+- in `studies/subjects/S-02/`: `register.tsv`, `decisions.md`, `yemen-row.tsv`, `scenario-walk.tsv`, phase C's files (`c/RD1/`, `c/RD2/`, `c/RD3/`), `variation-points.tsv`, `variants.tsv`, and statements by id (`python3 -I method/subject_slice.py studies/subjects/S-02 --print RD1 --ids ...`, and RD2 or RD3 for their slices; a statement not in a slice is in its platform's `statements.tsv`);
 - of `studies/subjects/S-02/briefs/`: `C-analysis.md` (its rules), `D-register.md`, `E-yemen-row.md` and `F-scenario-walk.md`;
 - Stage 1's records in `studies/yemen-cases/`, and the sources any of these files cite, to check them.
 

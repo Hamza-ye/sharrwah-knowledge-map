@@ -11,7 +11,7 @@ This is `PLAN.md` Stage 4, subject S-02, step 4: the decision register. You are 
 - `studies/subjects/S-02/frame.md` (the root decisions, and "How S-02 relates to other subjects");
 - `studies/subjects/S-01/register.tsv` (its shape, and the drivers and decisions S-02 builds on);
 - S-02's phase C files: `c/RD1/`, `c/RD2/` and `c/RD3/` (`answers.tsv` and `points.tsv`), and `variation-points.tsv`. Print them with short scripts, not whole. Leave out every `note` column, and `notes*.md`;
-- statements and variants by id, as your evidence needs them: `python3 -I method/subject_slice.py studies/subjects/S-02 --print RD --ids ...`, and `variants.tsv` filtered by `variant_id`.
+- statements and variants by id, as your evidence needs them: `python3 -I method/subject_slice.py studies/subjects/S-02 --print RD1 --ids ...`, with RD2 or RD3 for their slices; a statement in no slice is in its platform's `statements.tsv`, and `variants.tsv` filtered by `variant_id`.
 
 ## The task
 

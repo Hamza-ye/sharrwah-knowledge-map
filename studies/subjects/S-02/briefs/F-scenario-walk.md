@@ -9,7 +9,7 @@ This is `PLAN.md` Stage 4, subject S-02, its section 6, step 7: the scenario wal
 - `PLAN.md`, section 1 and section 6, step 7;
 - `founder-decisions.tsv`, its row of 28 October (Sharrwah's markets: the GCC; North Africa, among them Egypt, Morocco, Algeria and Tunisia; Jordan, Lebanon and others; Yemen among them);
 - `studies/subjects/S-02/register.tsv` and `decisions.md`;
-- S-02's evidence, as a scenario needs it: phase C's files (`c/RD1/`, `c/RD2/`, `c/RD3/`), statements by id through `python3 -I method/subject_slice.py studies/subjects/S-02 --print RD --ids ...`.
+- S-02's evidence, as a scenario needs it: phase C's files (`c/RD1/`, `c/RD2/`, `c/RD3/`), statements by id through `python3 -I method/subject_slice.py studies/subjects/S-02 --print RD1 --ids ...`, with RD2 or RD3 for their slices; a statement in no slice is in its platform's `statements.tsv`.
 
 ## The task
 
