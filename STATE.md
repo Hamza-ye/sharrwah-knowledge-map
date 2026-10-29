@@ -23,8 +23,8 @@
 *Settled on 28 October:*
 - **The founder's evidence is in.** The founder's local agent took Salla and Zid as far as they can be taken:
   - Salla's runs are in observed-sa at `b0bd0b16`;
-  - Zid's are in `other-product-class`, which this session reads from this repository's branch `evidence/other-product-class` (`CLAUDE.md`).
-- **The founder's rule for what remains:** a gap is pursued only if closing it could change an S-02 decision and a proportionate route exists. [`gap-assessment.tsv`](studies/subjects/S-02/gap-assessment.tsv) gives each gap's verdict.
+  - Zid's, BigCommerce's and WooCommerce's are in `other-product-class`, read from the founder's own repository, or from this repository's mirror branch where a session can't reach it (`CLAUDE.md`).
+- **The founder's rule for what remains:** a gap is pursued only if closing it could change the class's model or a decision (widened on 29 October), and a proportionate route exists. [`gap-assessment.tsv`](studies/subjects/S-02/gap-assessment.tsv) gives each gap's verdict.
 - **The scope:** MENA is the target, and Yemen is one market among those. Neither Yemen's circumstances nor today's capacity becomes a permanent constraint without a justified reason (`founder-decisions.tsv`).
 
 **Stage 4, S-02, what a market is.**
@@ -120,12 +120,14 @@ At phase A's end, the checker found every quote, 3,193 of them, and no error. Wi
 1. **An independent reading of the plan change** for contradictions. Its findings are fixed before anything builds on it.
 2. **S-02's register re-statused** under the intent. E5 is ruled; [`reports/S-02.md`](reports/S-02.md) is replaced by [`reports/intent-review.md`](reports/intent-review.md).
 3. **A fresh coordinating session** runs Stage 4A. It reads observed-sh, observed-sa and other-product-class from their own repositories, and runs:
-   1. the anchor's dry run on catalogue and inventory, with WooCommerce mapped onto it;
+   1. the inspection of `B-extent.md`, which changed after its last inspection; then the anchor's dry run on catalogue and inventory, with WooCommerce mapped onto it;
    2. the review of its output, which checks every placement against all of Q1's statements;
    3. the conventions and a checker;
    4. the other domains and platforms;
-   5. Q3's check for what the model misses;
+   5. Q3's check for what the model misses, then an independent review of the whole extent;
    6. the extent's report, and the orientation page updated before it reaches the founder.
 4. **After GM:** architecture and the model's detail, area by area, beside the subjects.
+
+**For later:** "depth over speed" isn't decided. It was the coordinator's reading, not the founder's decision, and it comes back when a second market is near (`founder-messages/2026-10-29-intent-handoff.md`).
 
 **To resume:** read `PLAN.md`, this file and `founder-decisions.tsv`.

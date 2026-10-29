@@ -1,6 +1,6 @@
 # Q3. Placing the rows
 
-**Status:** waits for Q1 and Q2, and for the founder's go. Since 12 October 2026, `PLAN.md` runs it per subject, with step 3 at close-out.
+**Status:** waits for Q1 and Q2, and for the founder's go. Since 12 October 2026, `PLAN.md` runs it per subject, with step 3 at close-out. Since 29 October 2026, it first runs at the end of the class's model's extent, as its check for what the model misses (`PLAN.md`, Stage 4A), and its rows are read without their founder lane.
 
 The founder agreed this question on 10 October 2026, together with Q1 and Q2. It places the existing question rows against the concern map. The founder's concern behind it is that these questions are time bombs: if they aren't sorted by the engineering found in the product class, they will explode now or later.
 
