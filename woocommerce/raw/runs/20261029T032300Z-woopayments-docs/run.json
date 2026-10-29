@@ -1,0 +1,7 @@
+{
+  "run_id": "20261029T032300Z-woopayments-docs", "platform": "woocommerce", "label": "woopayments-docs", "kind": "fetch", "started": "2026-10-29T03:23:04Z", "ended": "2026-10-29T03:23:38Z",
+  "tool": "GNU Wget 1.21.4 built on linux-gnu.", "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36", "wait_seconds": 1,
+  "url_count": 15, "urls_sha256": "149a040e43f2e26047de2ef6364c9d19aca73ceeebd4dd2c0786b24dc6b0e1fb",
+  "wget_exit": 0, "network": {"via": "woocommerce.com answered no /cdn-cgi/trace"},
+  "script": {"path": "capture/fetch.sh", "sha256": "c45c04d5d6ec3f5e95153aa6491bbb948819b76b2badbbbd3d95c933fe7b4479"}
+}

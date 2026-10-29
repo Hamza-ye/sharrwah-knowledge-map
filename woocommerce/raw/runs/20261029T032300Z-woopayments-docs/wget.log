@@ -1,0 +1,380 @@
+  HTTP/1.1 200 OK
+  Server: nginx
+  Date: Thu, 29 Oct 2026 03:23:05 GMT
+  Content-Type: text/html; charset=UTF-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Vary: Accept-Encoding, accept, content-type
+  X-hacker: If you're reading this, you should visit https://join.a8c.com/viphacker and apply to join the fun, mention this header.
+  X-Powered-By: WordPress VIP <https://wpvip.com>
+  Host-Header: a9130478a60e5f9135f765b23f26593b
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Content-Security-Policy: upgrade-insecure-requests
+  Link: <https://woocommerce.com/wp-json/>; rel="https://api.w.org/"
+  Link: <https://woocommerce.com/wp-json/wp/v2/documentation/18734000975089>; rel="alternate"; title="JSON"; type="application/json"
+  Link: <https://woocommerce.com/?p=18734000975089>; rel=shortlink
+  Content-Encoding: gzip
+  accept-ranges: bytes
+  x-rq: sin1 0 40 9980
+  cache-control: public, max-age=300, must-revalidate, s-maxage=86400
+  x-cache: MISS
+  Strict-Transport-Security: max-age=31536000;includeSubdomains
+  X-Remembering: Eric Binnion <https://friendsofericbinnion.wordpress.com/>
+2026-10-29 06:23:06 URL:https://woocommerce.com/document/woopayments/ [269067] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/woocommerce/raw/runs/20261029T032300Z-woopayments-docs/tmp/index.html.tmp" [1]
+  HTTP/1.1 200 OK
+  Server: nginx
+  Date: Thu, 29 Oct 2026 03:23:08 GMT
+  Content-Type: text/html; charset=UTF-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Vary: Accept-Encoding, accept, content-type
+  X-hacker: If you're reading this, you should visit https://join.a8c.com/viphacker and apply to join the fun, mention this header.
+  X-Powered-By: WordPress VIP <https://wpvip.com>
+  Host-Header: a9130478a60e5f9135f765b23f26593b
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Content-Security-Policy: upgrade-insecure-requests
+  Link: <https://woocommerce.com/wp-json/>; rel="https://api.w.org/"
+  Link: <https://woocommerce.com/wp-json/wp/v2/documentation/8736490>; rel="alternate"; title="JSON"; type="application/json"
+  Link: <https://woocommerce.com/?p=8736490>; rel=shortlink
+  Content-Encoding: gzip
+  x-rq: sin2 0 40 9980
+  accept-ranges: bytes
+  cache-control: public, max-age=300, must-revalidate, s-maxage=86400
+  x-cache: MISS
+  Strict-Transport-Security: max-age=31536000;includeSubdomains
+  X-Remembering: Eric Binnion <https://friendsofericbinnion.wordpress.com/>
+2026-10-29 06:23:08 URL:https://woocommerce.com/document/woopayments/startup-guide/ [357463] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/woocommerce/raw/runs/20261029T032300Z-woopayments-docs/tmp/index.html.tmp" [1]
+  HTTP/1.1 200 OK
+  Server: nginx
+  Date: Thu, 29 Oct 2026 03:23:10 GMT
+  Content-Type: text/html; charset=UTF-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Vary: Accept-Encoding, accept, content-type
+  X-hacker: If you're reading this, you should visit https://join.a8c.com/viphacker and apply to join the fun, mention this header.
+  X-Powered-By: WordPress VIP <https://wpvip.com>
+  Host-Header: a9130478a60e5f9135f765b23f26593b
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Content-Security-Policy: upgrade-insecure-requests
+  Link: <https://woocommerce.com/wp-json/>; rel="https://api.w.org/"
+  Link: <https://woocommerce.com/wp-json/wp/v2/documentation/18734001007443>; rel="alternate"; title="JSON"; type="application/json"
+  Link: <https://woocommerce.com/?p=18734001007443>; rel=shortlink
+  Content-Encoding: gzip
+  x-rq: sin2 0 40 9980
+  accept-ranges: bytes
+  x-cache: MISS
+  cache-control: public, max-age=300, must-revalidate, s-maxage=86400
+  Strict-Transport-Security: max-age=31536000;includeSubdomains
+  X-Remembering: Eric Binnion <https://friendsofericbinnion.wordpress.com/>
+2026-10-29 06:23:10 URL:https://woocommerce.com/document/woopayments/our-policies/know-your-customer/ [248169] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/woocommerce/raw/runs/20261029T032300Z-woopayments-docs/tmp/index.html.tmp" [1]
+  HTTP/1.1 200 OK
+  Server: nginx
+  Date: Thu, 29 Oct 2026 03:23:12 GMT
+  Content-Type: text/html; charset=UTF-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Vary: Accept-Encoding, accept, content-type
+  X-hacker: If you're reading this, you should visit https://join.a8c.com/viphacker and apply to join the fun, mention this header.
+  X-Powered-By: WordPress VIP <https://wpvip.com>
+  Host-Header: a9130478a60e5f9135f765b23f26593b
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Content-Security-Policy: upgrade-insecure-requests
+  Link: <https://woocommerce.com/wp-json/>; rel="https://api.w.org/"
+  Link: <https://woocommerce.com/wp-json/wp/v2/documentation/8738136>; rel="alternate"; title="JSON"; type="application/json"
+  Link: <https://woocommerce.com/?p=8738136>; rel=shortlink
+  Content-Encoding: gzip
+  accept-ranges: bytes
+  x-rq: sin1 0 40 9980
+  cache-control: public, max-age=300, must-revalidate, s-maxage=86400
+  x-cache: MISS
+  Strict-Transport-Security: max-age=31536000;includeSubdomains
+  X-Remembering: Eric Binnion <https://friendsofericbinnion.wordpress.com/>
+2026-10-29 06:23:12 URL:https://woocommerce.com/document/woopayments/our-policies/connection/ [273253] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/woocommerce/raw/runs/20261029T032300Z-woopayments-docs/tmp/index.html.tmp" [1]
+  HTTP/1.1 200 OK
+  Server: nginx
+  Date: Thu, 29 Oct 2026 03:23:14 GMT
+  Content-Type: text/html; charset=UTF-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Vary: Accept-Encoding, accept, content-type
+  X-hacker: If you're reading this, you should visit https://join.a8c.com/viphacker and apply to join the fun, mention this header.
+  X-Powered-By: WordPress VIP <https://wpvip.com>
+  Host-Header: a9130478a60e5f9135f765b23f26593b
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Content-Security-Policy: upgrade-insecure-requests
+  Link: <https://woocommerce.com/wp-json/>; rel="https://api.w.org/"
+  Link: <https://woocommerce.com/wp-json/wp/v2/documentation/8769315>; rel="alternate"; title="JSON"; type="application/json"
+  Link: <https://woocommerce.com/?p=8769315>; rel=shortlink
+  Content-Encoding: gzip
+  x-rq: sin2 0 40 9980
+  cache-control: public, max-age=300, must-revalidate, s-maxage=86400
+  accept-ranges: bytes
+  x-cache: MISS
+  Strict-Transport-Security: max-age=31536000;includeSubdomains
+  X-Remembering: Eric Binnion <https://friendsofericbinnion.wordpress.com/>
+2026-10-29 06:23:15 URL:https://woocommerce.com/document/woopayments/compatibility/countries/ [269466] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/woocommerce/raw/runs/20261029T032300Z-woopayments-docs/tmp/index.html.tmp" [1]
+  HTTP/1.1 200 OK
+  Server: nginx
+  Date: Thu, 29 Oct 2026 03:23:16 GMT
+  Content-Type: text/html; charset=UTF-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Vary: Accept-Encoding, accept, content-type
+  X-hacker: If you're reading this, you should visit https://join.a8c.com/viphacker and apply to join the fun, mention this header.
+  X-Powered-By: WordPress VIP <https://wpvip.com>
+  Host-Header: a9130478a60e5f9135f765b23f26593b
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Content-Security-Policy: upgrade-insecure-requests
+  Link: <https://woocommerce.com/wp-json/>; rel="https://api.w.org/"
+  Link: <https://woocommerce.com/wp-json/wp/v2/documentation/8735960>; rel="alternate"; title="JSON"; type="application/json"
+  Link: <https://woocommerce.com/?p=8735960>; rel=shortlink
+  Content-Encoding: gzip
+  x-rq: sin2 0 40 9980
+  accept-ranges: bytes
+  cache-control: public, max-age=300, must-revalidate, s-maxage=86400
+  x-cache: MISS
+  Strict-Transport-Security: max-age=31536000;includeSubdomains
+  X-Remembering: Eric Binnion <https://friendsofericbinnion.wordpress.com/>
+2026-10-29 06:23:17 URL:https://woocommerce.com/document/woopayments/testing-and-troubleshooting/test-accounts/ [278498] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/woocommerce/raw/runs/20261029T032300Z-woopayments-docs/tmp/index.html.tmp" [1]
+  HTTP/1.1 200 OK
+  Server: nginx
+  Date: Thu, 29 Oct 2026 03:23:18 GMT
+  Content-Type: text/html; charset=UTF-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Vary: Accept-Encoding, accept, content-type
+  X-hacker: If you're reading this, you should visit https://join.a8c.com/viphacker and apply to join the fun, mention this header.
+  X-Powered-By: WordPress VIP <https://wpvip.com>
+  Host-Header: a9130478a60e5f9135f765b23f26593b
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Content-Security-Policy: upgrade-insecure-requests
+  Link: <https://woocommerce.com/wp-json/>; rel="https://api.w.org/"
+  Link: <https://woocommerce.com/wp-json/wp/v2/documentation/8736493>; rel="alternate"; title="JSON"; type="application/json"
+  Link: <https://woocommerce.com/?p=8736493>; rel=shortlink
+  Content-Encoding: gzip
+  x-rq: sin2 0 40 9980
+  accept-ranges: bytes
+  cache-control: public, max-age=300, must-revalidate, s-maxage=86400
+  x-cache: MISS
+  Strict-Transport-Security: max-age=31536000;includeSubdomains
+  X-Remembering: Eric Binnion <https://friendsofericbinnion.wordpress.com/>
+2026-10-29 06:23:19 URL:https://woocommerce.com/document/woopayments/testing-and-troubleshooting/testing/ [315518] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/woocommerce/raw/runs/20261029T032300Z-woopayments-docs/tmp/index.html.tmp" [1]
+  HTTP/1.1 200 OK
+  Server: nginx
+  Date: Thu, 29 Oct 2026 03:23:21 GMT
+  Content-Type: text/html; charset=UTF-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Vary: Accept-Encoding, accept, content-type
+  X-hacker: If you're reading this, you should visit https://join.a8c.com/viphacker and apply to join the fun, mention this header.
+  X-Powered-By: WordPress VIP <https://wpvip.com>
+  Host-Header: a9130478a60e5f9135f765b23f26593b
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Content-Security-Policy: upgrade-insecure-requests
+  Link: <https://woocommerce.com/wp-json/>; rel="https://api.w.org/"
+  Link: <https://woocommerce.com/wp-json/wp/v2/documentation/18734001114469>; rel="alternate"; title="JSON"; type="application/json"
+  Link: <https://woocommerce.com/?p=18734001114469>; rel=shortlink
+  Content-Encoding: gzip
+  x-rq: sin2 0 40 9980
+  accept-ranges: bytes
+  cache-control: public, max-age=300, must-revalidate, s-maxage=86400
+  x-cache: MISS
+  Strict-Transport-Security: max-age=31536000;includeSubdomains
+  X-Remembering: Eric Binnion <https://friendsofericbinnion.wordpress.com/>
+2026-10-29 06:23:21 URL:https://woocommerce.com/document/woopayments/account-management/developer-or-agency-setup/ [270909] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/woocommerce/raw/runs/20261029T032300Z-woopayments-docs/tmp/index.html.tmp" [1]
+  HTTP/1.1 200 OK
+  Server: nginx
+  Date: Thu, 29 Oct 2026 03:23:23 GMT
+  Content-Type: text/html; charset=UTF-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Vary: Accept-Encoding, accept, content-type
+  X-hacker: If you're reading this, you should visit https://join.a8c.com/viphacker and apply to join the fun, mention this header.
+  X-Powered-By: WordPress VIP <https://wpvip.com>
+  Host-Header: a9130478a60e5f9135f765b23f26593b
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Content-Security-Policy: upgrade-insecure-requests
+  Link: <https://woocommerce.com/wp-json/>; rel="https://api.w.org/"
+  Link: <https://woocommerce.com/wp-json/wp/v2/documentation/8736525>; rel="alternate"; title="JSON"; type="application/json"
+  Link: <https://woocommerce.com/?p=8736525>; rel=shortlink
+  Content-Encoding: gzip
+  x-rq: sin1 0 40 9980
+  x-cache: MISS
+  accept-ranges: bytes
+  cache-control: public, max-age=300, must-revalidate, s-maxage=86400
+  Strict-Transport-Security: max-age=31536000;includeSubdomains
+  X-Remembering: Eric Binnion <https://friendsofericbinnion.wordpress.com/>
+2026-10-29 06:23:24 URL:https://woocommerce.com/document/woopayments/account-management/tax-id-changes/ [267177] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/woocommerce/raw/runs/20261029T032300Z-woopayments-docs/tmp/index.html.tmp" [1]
+  HTTP/1.1 200 OK
+  Server: nginx
+  Date: Thu, 29 Oct 2026 03:23:25 GMT
+  Content-Type: text/html; charset=UTF-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Vary: Accept-Encoding, accept, content-type
+  X-hacker: If you're reading this, you should visit https://join.a8c.com/viphacker and apply to join the fun, mention this header.
+  X-Powered-By: WordPress VIP <https://wpvip.com>
+  Host-Header: a9130478a60e5f9135f765b23f26593b
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Content-Security-Policy: upgrade-insecure-requests
+  Link: <https://woocommerce.com/wp-json/>; rel="https://api.w.org/"
+  Link: <https://woocommerce.com/wp-json/wp/v2/documentation/18734001022192>; rel="alternate"; title="JSON"; type="application/json"
+  Link: <https://woocommerce.com/?p=18734001022192>; rel=shortlink
+  Content-Encoding: gzip
+  x-rq: sin1 0 40 9980
+  accept-ranges: bytes
+  x-cache: MISS
+  cache-control: public, max-age=300, must-revalidate, s-maxage=86400
+  Strict-Transport-Security: max-age=31536000;includeSubdomains
+  X-Remembering: Eric Binnion <https://friendsofericbinnion.wordpress.com/>
+2026-10-29 06:23:26 URL:https://woocommerce.com/document/woopayments/account-management/change-business-type/ [271167] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/woocommerce/raw/runs/20261029T032300Z-woopayments-docs/tmp/index.html.tmp" [1]
+  HTTP/1.1 200 OK
+  Server: nginx
+  Date: Thu, 29 Oct 2026 03:23:27 GMT
+  Content-Type: text/html; charset=UTF-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Vary: Accept-Encoding, accept, content-type
+  X-hacker: If you're reading this, you should visit https://join.a8c.com/viphacker and apply to join the fun, mention this header.
+  X-Powered-By: WordPress VIP <https://wpvip.com>
+  Host-Header: a9130478a60e5f9135f765b23f26593b
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Content-Security-Policy: upgrade-insecure-requests
+  Link: <https://woocommerce.com/wp-json/>; rel="https://api.w.org/"
+  Link: <https://woocommerce.com/wp-json/wp/v2/documentation/8735386>; rel="alternate"; title="JSON"; type="application/json"
+  Link: <https://woocommerce.com/?p=8735386>; rel=shortlink
+  Content-Encoding: gzip
+  x-cache: MISS
+  cache-control: public, max-age=300, must-revalidate, s-maxage=86400
+  accept-ranges: bytes
+  x-rq: sin2 0 40 9980
+  Strict-Transport-Security: max-age=31536000;includeSubdomains
+  X-Remembering: Eric Binnion <https://friendsofericbinnion.wordpress.com/>
+2026-10-29 06:23:28 URL:https://woocommerce.com/document/woopayments/account-management/partnership-with-stripe/ [265020] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/woocommerce/raw/runs/20261029T032300Z-woopayments-docs/tmp/index.html.tmp" [1]
+  HTTP/1.1 200 OK
+  Server: nginx
+  Date: Thu, 29 Oct 2026 03:23:29 GMT
+  Content-Type: text/html; charset=UTF-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Vary: Accept-Encoding, accept, content-type
+  X-hacker: If you're reading this, you should visit https://join.a8c.com/viphacker and apply to join the fun, mention this header.
+  X-Powered-By: WordPress VIP <https://wpvip.com>
+  Host-Header: a9130478a60e5f9135f765b23f26593b
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Content-Security-Policy: upgrade-insecure-requests
+  Link: <https://woocommerce.com/wp-json/>; rel="https://api.w.org/"
+  Link: <https://woocommerce.com/wp-json/wp/v2/documentation/8735914>; rel="alternate"; title="JSON"; type="application/json"
+  Link: <https://woocommerce.com/?p=8735914>; rel=shortlink
+  Content-Encoding: gzip
+  x-rq: sin2 0 40 9980
+  cache-control: public, max-age=300, must-revalidate, s-maxage=86400
+  accept-ranges: bytes
+  x-cache: MISS
+  Strict-Transport-Security: max-age=31536000;includeSubdomains
+  X-Remembering: Eric Binnion <https://friendsofericbinnion.wordpress.com/>
+2026-10-29 06:23:30 URL:https://woocommerce.com/document/woopayments/account-management/existing-stripe-account/ [261150] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/woocommerce/raw/runs/20261029T032300Z-woopayments-docs/tmp/index.html.tmp" [1]
+  HTTP/1.1 200 OK
+  Server: nginx
+  Date: Thu, 29 Oct 2026 03:23:31 GMT
+  Content-Type: text/html; charset=UTF-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Vary: Accept-Encoding, accept, content-type
+  X-hacker: If you're reading this, you should visit https://join.a8c.com/viphacker and apply to join the fun, mention this header.
+  X-Powered-By: WordPress VIP <https://wpvip.com>
+  Host-Header: a9130478a60e5f9135f765b23f26593b
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Content-Security-Policy: upgrade-insecure-requests
+  Link: <https://woocommerce.com/wp-json/>; rel="https://api.w.org/"
+  Link: <https://woocommerce.com/wp-json/wp/v2/documentation/18734001031195>; rel="alternate"; title="JSON"; type="application/json"
+  Link: <https://woocommerce.com/?p=18734001031195>; rel=shortlink
+  Content-Encoding: gzip
+  x-cache: MISS
+  accept-ranges: bytes
+  cache-control: public, max-age=300, must-revalidate, s-maxage=86400
+  x-rq: sin2 0 40 9980
+  Strict-Transport-Security: max-age=31536000;includeSubdomains
+  X-Remembering: Eric Binnion <https://friendsofericbinnion.wordpress.com/>
+2026-10-29 06:23:32 URL:https://woocommerce.com/document/woopayments/taxes/ [244989] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/woocommerce/raw/runs/20261029T032300Z-woopayments-docs/tmp/index.html.tmp" [1]
+  HTTP/1.1 200 OK
+  Server: nginx
+  Date: Thu, 29 Oct 2026 03:23:33 GMT
+  Content-Type: text/html; charset=UTF-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Vary: Accept-Encoding, accept, content-type
+  X-hacker: If you're reading this, you should visit https://join.a8c.com/viphacker and apply to join the fun, mention this header.
+  X-Powered-By: WordPress VIP <https://wpvip.com>
+  Host-Header: a9130478a60e5f9135f765b23f26593b
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Content-Security-Policy: upgrade-insecure-requests
+  Link: <https://woocommerce.com/wp-json/>; rel="https://api.w.org/"
+  Link: <https://woocommerce.com/wp-json/wp/v2/documentation/18734001007659>; rel="alternate"; title="JSON"; type="application/json"
+  Link: <https://woocommerce.com/?p=18734001007659>; rel=shortlink
+  Content-Encoding: gzip
+  x-cache: MISS
+  accept-ranges: bytes
+  cache-control: public, max-age=300, must-revalidate, s-maxage=86400
+  x-rq: sin2 0 40 9980
+  Strict-Transport-Security: max-age=31536000;includeSubdomains
+  X-Remembering: Eric Binnion <https://friendsofericbinnion.wordpress.com/>
+2026-10-29 06:23:34 URL:https://woocommerce.com/document/woopayments/fees/ [450959] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/woocommerce/raw/runs/20261029T032300Z-woopayments-docs/tmp/index.html.tmp" [1]
+  HTTP/1.1 200 OK
+  Server: nginx
+  Date: Thu, 29 Oct 2026 03:23:37 GMT
+  Content-Type: text/html; charset=utf-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Content-Security-Policy: base-uri 'none'; child-src 'self'; connect-src https://c.increment.com https://c.stripe.dev https://c.stripe.global https://c.stripe.partners https://edge-api.stripe.com wss://stripe-cli-ws-nw.stripe.com/subscribe/ wss://stripe-cli.stripe.com/subscribe/ wss://stripecli-ws-nw.stripe.com/subscribe/ wss://stripecli.stripe.com/subscribe/ https://api.stripe.com https://ai.stripe.com https://developer-ai.corp.stripe.com https://b.stripecdn.com https://errors.stripe.com https://insights.algolia.io https://js.stripe.com https://link.co/cookie-settings/ https://link.com/cookie-settings/ https://r.stripe.com https://raw.githubusercontent.com/stripe/stripe-go/master/VERSION https://raw.githubusercontent.com/stripe/stripe-java/master/VERSION https://stripe.com https://stripecli-ws-nw.stripe.com/subscribe/ https://y4pfttj91h-1.algolianet.com https://y4pfttj91h-2.algolianet.com https://y4pfttj91h-3.algolianet.com https://y4pfttj91h-dsn.algolia.net https://dashboard.stripe.com/ajax/anonymous_sandbox_assignment_handoff 'self'; default-src 'none'; font-src data: https://b.stripecdn.com https://b.stripecdn.com/docs-statics-srv/assets/ 'self'; form-action 'none'; frame-ancestors https://docs-edit.corp.stripe.com https://markdraft.corp.stripe.com https://admin.corp.stripe.com 'self'; frame-src https://edge-checkout.stripe.com https://b.stripecdn.com https://checkout.stripe.com https://connect-js.stripe.com https://stripe-data-exports.s3.amazonaws.com https://js.stripe.com 'self'; img-src https://docs.stripecdn.com https://cdn.stripeextensions.com/com.example.docs-stripe-apps-examples/ https://cdn.stripeextensions.com/com.stripe.stripe-apps-examples/ blob: data: https://b.stripecdn.com https://d37ugbyn3rpeym.cloudfront.net https://dashboard.stripe.com https://files.stripe.com https://i.ytimg.com/vi/ https://i.ytimg.com/vi_webp/ https://js.stripe.com https://q.stripe.com https://s3.amazonaws.com/stripe-uploads/ https://stripe-images.s3.amazonaws.com/docs/ 'self' https://extensibility.stripe.com https://d1wqzb5bdbcre6.cloudfront.net https://stripe-camo.global.ssl.fastly.net; media-src https://docs.stripecdn.com blob: https://b.stripecdn.com https://d37ugbyn3rpeym.cloudfront.net 'self'; script-src https://cdn.stripeextensions.com/com.example.docs-stripe-apps-examples/ https://cdn.stripeextensions.com/com.stripe.stripe-apps-examples/ https://b.stripecdn.com https://connect-js.stripe.com https://js.stripe.com 'nonce-u+NJFIx74NyTfccLi1rzRQ==' 'self' 'sha256-SGInGn8KvQpcjiIcYyTFbUNfqdqBIxQ8WJd9xgQQrsI=' 'sha256-yXxHrLNbJc+6m1MH8jUxHmvOsUducN4u40nNchqiv9Q=' 'sha256-u66Rr9rFgMi2ZdDqGzZ3gml5O9dXP6CGDbfPcaQajKI=' 'report-sample'; style-src https://b.stripecdn.com 'report-sample' 'self' 'unsafe-inline'; worker-src 'self'; upgrade-insecure-requests; report-uri https://q.stripe.com/csp-violation?q=NbZkqj4jpb8QunimfpkYEz96ijCJlNBF4Nh-B9eOklofIOXfZ8P62Vfkfn8tjqcjMHL1v6uI; report-to csp
+  Content-Security-Policy-Report-Only: base-uri 'none'; child-src 'self'; connect-src https://c.increment.com https://c.stripe.dev https://c.stripe.global https://c.stripe.partners https://edge-api.stripe.com wss://stripe-cli-ws-nw.stripe.com/subscribe/ wss://stripe-cli.stripe.com/subscribe/ wss://stripecli-ws-nw.stripe.com/subscribe/ wss://stripecli.stripe.com/subscribe/ https://api.stripe.com https://ai.stripe.com https://developer-ai.corp.stripe.com https://b.stripecdn.com https://errors.stripe.com https://insights.algolia.io https://js.stripe.com https://link.co/cookie-settings/ https://link.com/cookie-settings/ https://r.stripe.com https://raw.githubusercontent.com/stripe/stripe-go/master/VERSION https://raw.githubusercontent.com/stripe/stripe-java/master/VERSION https://stripe.com https://stripecli-ws-nw.stripe.com/subscribe/ https://y4pfttj91h-1.algolianet.com https://y4pfttj91h-2.algolianet.com https://y4pfttj91h-3.algolianet.com https://y4pfttj91h-dsn.algolia.net https://dashboard.stripe.com/ajax/anonymous_sandbox_assignment_handoff 'self'; default-src 'none'; font-src data: https://b.stripecdn.com https://b.stripecdn.com/docs-statics-srv/assets/ 'self'; form-action 'none'; frame-ancestors https://docs-edit.corp.stripe.com https://markdraft.corp.stripe.com https://admin.corp.stripe.com 'self'; frame-src https://edge-checkout.stripe.com https://b.stripecdn.com https://checkout.stripe.com https://connect-js.stripe.com https://stripe-data-exports.s3.amazonaws.com https://js.stripe.com 'self'; img-src https://docs.stripecdn.com https://cdn.stripeextensions.com/com.example.docs-stripe-apps-examples/ https://cdn.stripeextensions.com/com.stripe.stripe-apps-examples/ blob: data: https://b.stripecdn.com https://d37ugbyn3rpeym.cloudfront.net https://dashboard.stripe.com https://files.stripe.com https://i.ytimg.com/vi/ https://i.ytimg.com/vi_webp/ https://js.stripe.com https://q.stripe.com https://s3.amazonaws.com/stripe-uploads/ https://stripe-images.s3.amazonaws.com/docs/ 'self' https://extensibility.stripe.com https://d1wqzb5bdbcre6.cloudfront.net https://stripe-camo.global.ssl.fastly.net; media-src https://docs.stripecdn.com blob: https://b.stripecdn.com https://d37ugbyn3rpeym.cloudfront.net 'self'; script-src https://cdn.stripeextensions.com/com.example.docs-stripe-apps-examples/ https://cdn.stripeextensions.com/com.stripe.stripe-apps-examples/ https://b.stripecdn.com https://connect-js.stripe.com https://js.stripe.com 'nonce-u+NJFIx74NyTfccLi1rzRQ==' 'self' 'sha256-SGInGn8KvQpcjiIcYyTFbUNfqdqBIxQ8WJd9xgQQrsI=' 'sha256-yXxHrLNbJc+6m1MH8jUxHmvOsUducN4u40nNchqiv9Q=' 'sha256-u66Rr9rFgMi2ZdDqGzZ3gml5O9dXP6CGDbfPcaQajKI=' 'report-sample'; style-src https://b.stripecdn.com 'report-sample' 'self' 'nonce-u+NJFIx74NyTfccLi1rzRQ==' 'unsafe-hashes' 'sha256-NJH8hYZIeTx31th404J3fVwWvWaQo7beRAtJPe8DFzU=' 'sha256-t9PfmYlrli/SKfkOu1F3ru9qqFWjdE+tphvqhn5jlzA=' 'sha256-MtxTLcyxVEJFNLEIqbVTaqR4WWr0+lYSZ78AzGmNsuA=' 'sha256-3EP1piOo/O4YWqWO7mQYW6fCsMcX8uB/C/w3Cgomac4=' 'sha256-cXvVZOWrN9TDXv7R/dtCO6LdUavSrfsGBWTELGF2rgU=' 'sha256-p+jqvcoDFck2fLI5IGQFZCBLba8R7EGM34IhwqtKGwk=' 'sha256-1loH7bEUMovDekeuu7ZSI1ArVQdHA8eYrBlfpYm2/W0=' 'sha256-m0FjobEXOs23AaDaISFNF5h11EJKKqE/N9X1q5tWsfQ=' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU='; worker-src 'self'; report-uri https://q.stripe.com/csp-violation?q=NbZkqj4jpb8QunimfpkYEz96ijCJlNBF4Nh-B9eOklofIOXfZ8P62Vfkfn8tjqcjMHL1v6uI; report-to csp
+  Cross-Origin-Opener-Policy: same-origin-allow-popups; report-to="wsp_coop"
+  Cross-Origin-Opener-Policy-Report-Only: same-origin-allow-popups; report-to="wsp_coop"
+  Link: </.well-known/skills/index.json>; rel="service-meta"
+  Report-To: {"group":"wsp_coop","max_age":8640,"endpoints":[{"url":"https://q.stripe.com/coop-report?s=NbZkqj4jpb8QunimfpkYEz96ijCJlNBF4Nh-B9eOklofIOXfZ8P62Vfkfn8tjqcjMHL1v6uI"}],"include_subdomains":true}, {"group":"wsp_coep","max_age":8640,"endpoints":[{"url":"https://q.stripe.com/coep-report?s=NbZkqj4jpb8QunimfpkYEz96ijCJlNBF4Nh-B9eOklofIOXfZ8P62Vfkfn8tjqcjMHL1v6uI"}],"include_subdomains":true}, {"group":"csp","max_age":8640,"endpoints":[{"url":"https://q.stripe.com/csp-report-v2?q=NbZkqj4jpb8QunimfpkYEz96ijCJlNBF4Nh-B9eOklofIOXfZ8P62Vfkfn8tjqcjMHL1v6uI&t=1"}],"include_subdomains":true}
+  Reporting-Endpoints: wsp_coop="https://q.stripe.com/coop-report?s=NbZkqj4jpb8QunimfpkYEz96ijCJlNBF4Nh-B9eOklofIOXfZ8P62Vfkfn8tjqcjMHL1v6uI", wsp_coep="https://q.stripe.com/coep-report?s=NbZkqj4jpb8QunimfpkYEz96ijCJlNBF4Nh-B9eOklofIOXfZ8P62Vfkfn8tjqcjMHL1v6uI", csp="https://q.stripe.com/csp-report-v2?q=NbZkqj4jpb8QunimfpkYEz96ijCJlNBF4Nh-B9eOklofIOXfZ8P62Vfkfn8tjqcjMHL1v6uI&t=1"
+  Set-Cookie: __Host-sandbox_assignment=ARV-wf0Vge9rVVMLl2IbCHisfEJaUCX8nwxvj6MLaP95XU8B9Z9kT2NFLu_9XiDvxGP4Yj8M6Ic-QoxPZzuTNtkcJ_tDVXfirx_eBMighEt_; path=/; expires=Thu, 05 Nov 2026 03:23:37 GMT; secure; HttpOnly; SameSite=Lax
+  Set-Cookie: cid=e0898831-4296-4ea1-9e10-06dcbafd6946; domain=stripe.com; path=/; expires=Wed, 27 Jan 2027 03:23:37 GMT; secure; SameSite=Lax
+  Vary: Accept
+  X-Content-Age: 0
+  X-Content-Timestamp: 2026-10-29T03:23:37Z
+  X-Frame-Options: SAMEORIGIN
+  X-Location: https://docs.stripe.com/connect/required-verification-information
+  X-Stripe-App-Name: docs-app
+  X-Stripe-Proxy-Response: upstream
+  X-Stripe-Server-Rpc-Duration-Micros: 316697
+  X-Wc: 3f7
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+  Content-Encoding: gzip
+2026-10-29 06:23:38 URL:https://docs.stripe.com/connect/required-verification-information [1074955] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/woocommerce/raw/runs/20261029T032300Z-woopayments-docs/tmp/required-verification-information.tmp" [1]
+FINISHED --2026-10-29 06:23:38--
+Total wall clock time: 34s
+Downloaded: 15 files, 832K in 5.5s (152 KB/s)
