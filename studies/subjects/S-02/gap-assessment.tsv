@@ -78,5 +78,5 @@ S02-BC-G17	bigcommerce	c	RD1	S02-VP-18	no: which formats a new store takes is le
 S02-BC-G18	bigcommerce	f	RD3	S02-VP-63;S02-VP-64	yes, but held open: a business entity or merchant of record per storefront; the register keeps entities per market open (S02-D1, S02-E2)	BigCommerce's word	leave open; the register keeps the room
 S02-WC-G09	woocommerce	b	RD1	S02-VP-07	no: a change once a WooPayments account exists belongs to S-04	a WooPayments account	leave open for S-04
 S02-WC-G10	woocommerce	a	RD1	S02-VP-01	no: where WooPayments holds the account's country is S-04's	a WooPayments account	leave open for S-04
-S02-WC-G11	woocommerce	b	RD1	S02-VP-05	no: what Stripe checks belongs to S-07	a WooPayments account	leave open for S-07
-S02-WC-G12	woocommerce	c	RD1	S02-VP-10	no: WooPayments' documents per country belong to S-07	a WooPayments account	leave open for S-07
+S02-WC-G11	woocommerce	b	RD1	S02-VP-05	no: what Stripe checks belongs to S-07	captured for S-07: other-product-class at 0d79b794, run 20261029T101705Z-stripe-onboarding-us-en (WooPayments' live verification for the US, the UAE and the UK)	leave open for S-07
+S02-WC-G12	woocommerce	c	RD1	S02-VP-10	no: WooPayments' documents per country belong to S-07	captured for S-07: other-product-class at 0d79b794, run 20261029T101705Z-stripe-onboarding-us-en (WooPayments' live verification for the US, the UAE and the UK)	leave open for S-07
