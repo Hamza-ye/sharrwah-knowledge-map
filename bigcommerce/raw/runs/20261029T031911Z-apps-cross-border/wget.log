@@ -1,0 +1,82 @@
+  HTTP/1.1 200 OK
+  Date: Thu, 29 Oct 2026 03:19:15 GMT
+  Content-Type: text/html; charset=utf-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Age: 101
+  Cache-Control: public, max-age=0, must-revalidate
+  Set-Cookie: c_consent=%7B%22anonymousId%22%3A%2225b62a5d-6ee0-48bf-a9e5-76ccb60153c7%22%2C%22geo%22%3A%7B%22country%22%3A%22Oman%22%2C%22region%22%3A%22Masqa%C5%A3%22%7D%2C%22gpc%22%3Afalse%7D; Path=/; Expires=Fri, 29 Oct 2027 03:19:15 GMT; Domain=bigcommerce.com; SameSite=lax
+  Set-Cookie: originUrl=www.bigcommerce.com; Path=/; Expires=Fri, 29 Oct 2027 03:19:15 GMT; Domain=bigcommerce.com; SameSite=lax
+  Set-Cookie: c_user=%7B%22anonymousId%22%3A%2225b62a5d-6ee0-48bf-a9e5-76ccb60153c7%22%2C%22traits%22%3A%7B%7D%7D; Path=/; Expires=Fri, 29 Oct 2027 03:19:15 GMT; Domain=bigcommerce.com; SameSite=lax
+  Set-Cookie: ajs_anonymous_id=25b62a5d-6ee0-48bf-a9e5-76ccb60153c7; Path=/; Expires=Fri, 29 Oct 2027 03:19:15 GMT; Domain=bigcommerce.com; SameSite=lax
+  Set-Cookie: segmentAnonId=25b62a5d-6ee0-48bf-a9e5-76ccb60153c7; Path=/; Expires=Fri, 29 Oct 2027 03:19:15 GMT; Domain=bigcommerce.com; SameSite=lax
+  set-cookie: __cf_bm=G7iMjhZA.9NBEAMHgHVZamCWajVlQ6aJMYGgQKdR5Wc-1793243955.468617-1.0.1.1-0DE2Q0quAUheFzs.0Qs88Q55hc3rghuqiN8HxBsHsPdtJ2iPSJL0PYEhZV79yVITJgAEplnHNuRmc8ZzS7Giqh_2JeUKvvKMlPh6VgknO8eRlpAT4y26ieErOYFRkioV; HttpOnly; SameSite=None; Secure; Path=/; Domain=bigcommerce.com; Expires=Thu, 29 Oct 2026 03:49:15 GMT
+  content-security-policy: frame-ancestors 'self' app.makeswift.com
+  document-policy: js-profiling
+  vary: accept-encoding
+  referrer-policy: no-referrer-when-downgrade
+  Server: cloudflare
+  BC-Ray: 1
+  strict-transport-security: max-age=2592000; includeSubDomains
+  x-matched-path: /en-US/apps/[slug]
+  x-powered-by: Next.js
+  x-vercel-cache: HIT
+  x-vercel-id: bom1::iad1::nwn67-1793243955504-7bf852971561
+  cf-cache-status: DYNAMIC
+  Content-Encoding: gzip
+  CF-RAY: a51f09a1ab5cd1d8-MCT
+  alt-svc: h3=":443"; ma=86400
+2026-10-29 06:19:15 URL:https://www.bigcommerce.com/apps/global-e/ [594959] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/bigcommerce/raw/runs/20261029T031911Z-apps-cross-border/tmp/index.html.tmp" [1]
+  HTTP/1.1 200 OK
+  Date: Thu, 29 Oct 2026 03:19:16 GMT
+  Content-Type: text/html; charset=utf-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Age: 34
+  Cache-Control: public, max-age=0, must-revalidate
+  BC-Ray: 1
+  content-security-policy: frame-ancestors 'self' app.makeswift.com
+  document-policy: js-profiling
+  vary: accept-encoding
+  referrer-policy: no-referrer-when-downgrade
+  Server: cloudflare
+  Set-Cookie: c_consent=%7B%22anonymousId%22%3A%2225b62a5d-6ee0-48bf-a9e5-76ccb60153c7%22%2C%22traits%22%3A%7B%7D%2C%22geo%22%3A%7B%22country%22%3A%22Oman%22%2C%22region%22%3A%22Masqa%C5%A3%22%7D%2C%22gpc%22%3Afalse%7D; Path=/; Expires=Fri, 29 Oct 2027 03:19:16 GMT; Domain=bigcommerce.com; SameSite=lax
+  Set-Cookie: c_user=%7B%22anonymousId%22%3A%2225b62a5d-6ee0-48bf-a9e5-76ccb60153c7%22%2C%22traits%22%3A%7B%7D%7D; Path=/; Expires=Fri, 29 Oct 2027 03:19:16 GMT; Domain=bigcommerce.com; SameSite=lax
+  strict-transport-security: max-age=2592000; includeSubDomains
+  x-matched-path: /en-US/apps/[slug]
+  x-powered-by: Next.js
+  x-vercel-cache: HIT
+  x-vercel-id: bom1::iad1::r52b2-1793243956843-6b85a6a5cbf9
+  cf-cache-status: DYNAMIC
+  Content-Encoding: gzip
+  CF-RAY: a51f09aa0fd4d1d8-MCT
+  alt-svc: h3=":443"; ma=86400
+2026-10-29 06:19:17 URL:https://www.bigcommerce.com/apps/zonos-checkout/ [593343] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/bigcommerce/raw/runs/20261029T031911Z-apps-cross-border/tmp/index.html.tmp" [1]
+  HTTP/1.1 200 OK
+  Date: Thu, 29 Oct 2026 03:19:18 GMT
+  Content-Type: text/html; charset=utf-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Age: 97
+  Cache-Control: public, max-age=0, must-revalidate
+  BC-Ray: 1
+  content-security-policy: frame-ancestors 'self' app.makeswift.com
+  document-policy: js-profiling
+  vary: accept-encoding
+  referrer-policy: no-referrer-when-downgrade
+  Server: cloudflare
+  Set-Cookie: c_consent=%7B%22anonymousId%22%3A%2225b62a5d-6ee0-48bf-a9e5-76ccb60153c7%22%2C%22traits%22%3A%7B%7D%2C%22geo%22%3A%7B%22country%22%3A%22Oman%22%2C%22region%22%3A%22Masqa%C5%A3%22%7D%2C%22gpc%22%3Afalse%7D; Path=/; Expires=Fri, 29 Oct 2027 03:19:18 GMT; Domain=bigcommerce.com; SameSite=lax
+  Set-Cookie: c_user=%7B%22anonymousId%22%3A%2225b62a5d-6ee0-48bf-a9e5-76ccb60153c7%22%2C%22traits%22%3A%7B%7D%7D; Path=/; Expires=Fri, 29 Oct 2027 03:19:18 GMT; Domain=bigcommerce.com; SameSite=lax
+  strict-transport-security: max-age=2592000; includeSubDomains
+  x-matched-path: /en-US/apps/[slug]
+  x-powered-by: Next.js
+  x-vercel-cache: HIT
+  x-vercel-id: bom1::iad1::z8ktx-1793243958116-facb6976b338
+  cf-cache-status: DYNAMIC
+  Content-Encoding: gzip
+  CF-RAY: a51f09b1fb62d1d8-MCT
+  alt-svc: h3=":443"; ma=86400
+2026-10-29 06:19:18 URL:https://www.bigcommerce.com/apps/zonos-hello/ [576513] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/bigcommerce/raw/runs/20261029T031911Z-apps-cross-border/tmp/index.html.tmp" [1]
+FINISHED --2026-10-29 06:19:18--
+Total wall clock time: 4.3s
+Downloaded: 3 files, 193K in 0.1s (1.69 MB/s)

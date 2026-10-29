@@ -1,0 +1,7 @@
+{
+  "run_id": "20261029T031911Z-apps-cross-border", "platform": "bigcommerce", "label": "apps-cross-border", "kind": "fetch", "started": "2026-10-29T03:19:13Z", "ended": "2026-10-29T03:19:18Z",
+  "tool": "GNU Wget 1.21.4 built on linux-gnu.", "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36", "wait_seconds": 1,
+  "url_count": 3, "urls_sha256": "33068046bbef167714b72b8c91b639b063fac0e8dd16ab7a42fe907c977ad4c9",
+  "wget_exit": 0, "network": {"via": "curl www.bigcommerce.com/cdn-cgi/trace", "ip": "176.123.23.62", "loc": "YE", "colo": "MCT", "http": "http/2"},
+  "script": {"path": "capture/fetch.sh", "sha256": "c45c04d5d6ec3f5e95153aa6491bbb948819b76b2badbbbd3d95c933fe7b4479"}
+}
