@@ -1,0 +1,137 @@
+{"intent":"The test store's WordPress log-in (through its tunnel address)","do":"goto","url":"https://belfast-portal-fruit-sell.trycloudflare.com/wp-login.php","readyTimeout":20000,"settleMs":3000}
+{"intent":"Username","do":"fill","css":"#user_login","value":"capture-admin","readyTimeout":3000,"settleMs":300}
+{"intent":"Password (WOO_ADMIN_PASSWORD in .env)","do":"fill","css":"#user_pass","value_env":"WOO_ADMIN_PASSWORD","readyTimeout":3000,"settleMs":300}
+{"intent":"Log In","do":"click","css":"#wp-submit","readyTimeout":30000,"settleMs":4000}
+{"intent":"Plugins: the two plugins, installed and not active","do":"goto","url":"https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/plugins.php","readyTimeout":30000,"settleMs":3000}
+{"intent":"Activate WooCommerce (a first activation: WooCommerce's own set-up follows)","do":"click","role":"link","name":"Activate WooCommerce","readyTimeout":60000,"settleMs":8000}
+{"intent":"Set up my store","do":"click","role":"button","name":"Set up my store","readyTimeout":30000,"settleMs":4000}
+{"intent":"Which one of these best describes you: I’m just starting my business (the default), Continue","do":"click","role":"button","name":"Continue","readyTimeout":30000,"settleMs":4000}
+{"intent":"Select an industry: open its list","do":"click","role":"combobox","name":"Select an industry","readyTimeout":5000,"settleMs":1500}
+{"intent":"Industry: Clothing and accessories","do":"click","role":"option","name":"Clothing and accessories","readyTimeout":5000,"settleMs":1000}
+{"intent":"Where is your store located: open its country list (Yemen was filled in)","do":"click","css":"input[role=combobox][aria-autocomplete], .woocommerce-profiler-select-control__country input","readyTimeout":5000,"settleMs":1500}
+{"intent":"Close the industry list","do":"press","key":"Escape","readyTimeout":3000,"settleMs":800}
+{"intent":"Where is your store located: open its country list","do":"click","role":"combobox","nth":1,"readyTimeout":5000,"settleMs":2000}
+{"intent":"Close the country list (the store stays in Yemen, as WooCommerce filled it in)","do":"press","key":"Escape","readyTimeout":3000,"settleMs":800}
+{"intent":"Continue (store in Yemen)","do":"click","role":"button","name":"Continue","readyTimeout":60000,"settleMs":6000}
+{"intent":"Where is your store located: type Yemen (the value WooCommerce filled in, cleared when the list opened)","do":"fill","role":"combobox","name":"Select country/region","value":"Yemen","readyTimeout":3000,"settleMs":1500}
+{"intent":"Show the matching countries","do":"press","key":"ArrowDown","readyTimeout":3000,"settleMs":1000}
+{"intent":"Clear the location field","do":"fill","role":"combobox","name":"Select country/region","value":"","readyTimeout":3000,"settleMs":500}
+{"intent":"Type Y","do":"press","key":"Y","readyTimeout":2000,"settleMs":300}
+{"intent":"Type e","do":"press","key":"e","readyTimeout":2000,"settleMs":300}
+{"intent":"Type m","do":"press","key":"m","readyTimeout":2000,"settleMs":1500}
+{"intent":"Clear the location field","do":"fill","role":"combobox","name":"Select country/region","value":"","readyTimeout":2000,"settleMs":300}
+{"intent":"Type Oman: which locations the list matches","do":"fill","role":"combobox","name":"Select country/region","value":"Oman","readyTimeout":2000,"settleMs":1000}
+{"intent":"Open the matches","do":"press","key":"ArrowDown","readyTimeout":2000,"settleMs":1000}
+{"intent":"Clear the location field","do":"fill","role":"combobox","name":"Select country/region","value":"","readyTimeout":2000,"settleMs":300}
+{"intent":"Type Saudi: which locations the list matches","do":"fill","role":"combobox","name":"Select country/region","value":"Saudi","readyTimeout":2000,"settleMs":1000}
+{"intent":"Open the matches","do":"press","key":"ArrowDown","readyTimeout":2000,"settleMs":1000}
+{"intent":"Clear the location field","do":"fill","role":"combobox","name":"Select country/region","value":"","readyTimeout":2000,"settleMs":300}
+{"intent":"Type United Arab: which locations the list matches","do":"fill","role":"combobox","name":"Select country/region","value":"United Arab","readyTimeout":2000,"settleMs":1000}
+{"intent":"Open the matches","do":"press","key":"ArrowDown","readyTimeout":2000,"settleMs":1000}
+{"intent":"Clear the location field","do":"fill","role":"combobox","name":"Select country/region","value":"","readyTimeout":2000,"settleMs":300}
+{"intent":"Type Afghan: which locations the list matches","do":"fill","role":"combobox","name":"Select country/region","value":"Afghan","readyTimeout":2000,"settleMs":1000}
+{"intent":"Open the matches","do":"press","key":"ArrowDown","readyTimeout":2000,"settleMs":1000}
+{"intent":"Clear the location field","do":"fill","role":"combobox","name":"Select country/region","value":"","readyTimeout":2000,"settleMs":300}
+{"intent":"Type Yemen once more: does the list match it","do":"fill","role":"combobox","name":"Select country/region","value":"Yemen","readyTimeout":2000,"settleMs":1000}
+{"intent":"Open the matches","do":"press","key":"ArrowDown","readyTimeout":2000,"settleMs":1000}
+{"intent":"Clear the location field","do":"fill","role":"combobox","name":"Select country/region","value":"","readyTimeout":2000,"settleMs":300}
+{"intent":"Type United States (US) — California","do":"fill","role":"combobox","name":"Select country/region","value":"California","readyTimeout":2000,"settleMs":1000}
+{"intent":"Open the matches","do":"press","key":"ArrowDown","readyTimeout":2000,"settleMs":1000}
+{"intent":"Choose United States (US) — California","do":"click","role":"option","name":"United States (US) — California","readyTimeout":3000,"settleMs":1000}
+{"intent":"Continue (store in United States — California)","do":"click","role":"button","name":"Continue","readyTimeout":60000,"settleMs":6000}
+{"intent":"Back to the store details step","do":"goto","url":"https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-admin&path=%2Fsetup-wizard&step=business-info","readyTimeout":30000,"settleMs":4000}
+{"intent":"Clear the location field","do":"fill","role":"combobox","name":"Select country/region","value":"","readyTimeout":3000,"settleMs":300}
+{"intent":"Type Saudi Arabia","do":"fill","role":"combobox","name":"Select country/region","value":"Saudi Arabia","readyTimeout":3000,"settleMs":1000}
+{"intent":"Open the matches","do":"press","key":"ArrowDown","readyTimeout":2000,"settleMs":800}
+{"intent":"Choose Saudi Arabia","do":"click","role":"option","name":"Saudi Arabia","exact":true,"readyTimeout":3000,"settleMs":800}
+{"intent":"Continue (store in Saudi Arabia): the free features offered","do":"click","role":"button","name":"Continue","readyTimeout":60000,"settleMs":6000}
+{"intent":"Back to the store details step","do":"goto","url":"https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-admin&path=%2Fsetup-wizard&step=business-info","readyTimeout":30000,"settleMs":4000}
+{"intent":"Clear the location field","do":"fill","role":"combobox","name":"Select country/region","value":"","readyTimeout":3000,"settleMs":300}
+{"intent":"Type United Arab Emirates","do":"fill","role":"combobox","name":"Select country/region","value":"United Arab Emirates","readyTimeout":3000,"settleMs":1000}
+{"intent":"Open the matches","do":"press","key":"ArrowDown","readyTimeout":2000,"settleMs":800}
+{"intent":"Choose United Arab Emirates","do":"click","role":"option","name":"United Arab Emirates","exact":true,"readyTimeout":3000,"settleMs":800}
+{"intent":"Continue (store in United Arab Emirates): the free features offered","do":"click","role":"button","name":"Continue","readyTimeout":60000,"settleMs":6000}
+{"intent":"Back to the store details step","do":"goto","url":"https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-admin&path=%2Fsetup-wizard&step=business-info","readyTimeout":30000,"settleMs":4000}
+{"intent":"Clear the location field","do":"fill","role":"combobox","name":"Select country/region","value":"","readyTimeout":3000,"settleMs":300}
+{"intent":"Type Oman","do":"fill","role":"combobox","name":"Select country/region","value":"Oman","readyTimeout":3000,"settleMs":1000}
+{"intent":"Open the matches","do":"press","key":"ArrowDown","readyTimeout":2000,"settleMs":800}
+{"intent":"Choose Oman","do":"click","role":"option","name":"Oman","exact":true,"readyTimeout":3000,"settleMs":800}
+{"intent":"Continue (store in Oman): the free features offered","do":"click","role":"button","name":"Continue","readyTimeout":60000,"settleMs":6000}
+{"intent":"Back to the store details step","do":"goto","url":"https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-admin&path=%2Fsetup-wizard&step=business-info","readyTimeout":30000,"settleMs":4000}
+{"intent":"Clear the location field","do":"fill","role":"combobox","name":"Select country/region","value":"","readyTimeout":3000,"settleMs":300}
+{"intent":"Type California","do":"fill","role":"combobox","name":"Select country/region","value":"California","readyTimeout":3000,"settleMs":1000}
+{"intent":"Open the matches","do":"press","key":"ArrowDown","readyTimeout":2000,"settleMs":800}
+{"intent":"Choose United States (US) — California","do":"click","role":"option","name":"United States (US) — California","readyTimeout":3000,"settleMs":800}
+{"intent":"Continue (store in United States — California)","do":"click","role":"button","name":"Continue","readyTimeout":60000,"settleMs":6000}
+{"intent":"Back to the store details step","do":"goto","url":"https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-admin&path=%2Fsetup-wizard&step=business-info","readyTimeout":30000,"settleMs":4000}
+{"intent":"The warning's Yemen button: what it sets the store's location to","do":"click","role":"button","name":"Yemen","readyTimeout":5000,"settleMs":2000}
+{"intent":"Continue with the store in Yemen (set by the warning's button): the free features offered","do":"click","role":"button","name":"Continue","readyTimeout":60000,"settleMs":6000}
+{"intent":"Back to the store details step","do":"goto","url":"https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-admin&path=%2Fsetup-wizard&step=business-info","readyTimeout":30000,"settleMs":4000}
+{"intent":"Open the location list","do":"click","role":"combobox","nth":1,"readyTimeout":5000,"settleMs":1500}
+{"intent":"Type California","do":"fill","role":"combobox","nth":1,"value":"California","readyTimeout":3000,"settleMs":1000}
+{"intent":"Open the matches","do":"press","key":"ArrowDown","readyTimeout":2000,"settleMs":800}
+{"intent":"Choose United States (US) — California","do":"click","role":"option","name":"United States (US) — California","readyTimeout":3000,"settleMs":1500}
+{"intent":"Continue (store in United States — California, past the warning)","do":"click","role":"button","name":"Continue","readyTimeout":60000,"settleMs":6000}
+{"intent":"Untick woocommerce-shipping (only WooPayments and WooCommerce Tax are needed for the questions)","do":"click","role":"checkbox","name":"woocommerce-shipping","readyTimeout":3000,"settleMs":300}
+{"intent":"Untick woocommerce-paypal-payments:wallet-only (only WooPayments and WooCommerce Tax are needed for the questions)","do":"click","role":"checkbox","name":"woocommerce-paypal-payments:wallet-only","readyTimeout":3000,"settleMs":300}
+{"intent":"Untick jetpack Protect (only WooPayments and WooCommerce Tax are needed for the questions)","do":"click","role":"checkbox","name":"jetpack Protect","readyTimeout":3000,"settleMs":300}
+{"intent":"Untick pinterest-for-woocommerce (only WooPayments and WooCommerce Tax are needed for the questions)","do":"click","role":"checkbox","name":"pinterest-for-woocommerce","readyTimeout":3000,"settleMs":300}
+{"intent":"Untick klaviyo Boost (only WooPayments and WooCommerce Tax are needed for the questions)","do":"click","role":"checkbox","name":"klaviyo Boost","readyTimeout":3000,"settleMs":300}
+{"intent":"Untick google-listings-and-ads (only WooPayments and WooCommerce Tax are needed for the questions)","do":"click","role":"checkbox","name":"google-listings-and-ads","readyTimeout":3000,"settleMs":300}
+{"intent":"Untick snapchat-for-woocommerce (only WooPayments and WooCommerce Tax are needed for the questions)","do":"click","role":"checkbox","name":"snapchat-for-woocommerce","readyTimeout":3000,"settleMs":300}
+{"intent":"Untick reddit-for-woocommerce (only WooPayments and WooCommerce Tax are needed for the questions)","do":"click","role":"checkbox","name":"reddit-for-woocommerce","readyTimeout":3000,"settleMs":300}
+{"intent":"Continue: install WooPayments and WooCommerce Tax (the page states that installing them agrees to WooCommerce's Terms of Service; the founder authorized this setup)","do":"click","role":"button","name":"Continue","readyTimeout":120000,"settleMs":10000}
+{"intent":"Read where the set-up lands once the features are installed","do":"evaluate","js":"location.href","readyTimeout":60000,"settleMs":15000}
+{"intent":"WordPress.com, after its browser check","do":"evaluate","js":"location.href","readyTimeout":60000,"settleMs":15000}
+{"do":"stopped-at-confirm","control":"WordPress.com \"Confirm you are human\" (\"I am human\")","step":85,"evidence":"step 85: the Jetpack connection (from the WooCommerce set-up, plugin_name=woocommerce-payments) reached wordpress.com/jetpack/connect/authorize, which answered \"Checking your browser\" and then \"Confirm you are human. We need to check you are not a robot before you can enter this site.\" A human check is ticked by the founder, not by this capture."}
+{"intent":"Back to the store: WooCommerce home after the set-up","do":"goto","url":"https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-admin","readyTimeout":60000,"settleMs":8000}
+{"intent":"WooCommerce > Settings > Payments: what WooPayments shows before an account (store in United States — California)","do":"goto","url":"https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=checkout","readyTimeout":60000,"settleMs":8000}
+{"intent":"Business location: open the list of locations the Payments page offers","do":"click","role":"combobox","name":"Business location:","readyTimeout":5000,"settleMs":2000}
+{"intent":"Payments page","do":"goto","url":"https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=checkout","readyTimeout":60000,"settleMs":6000}
+{"intent":"Business location: open the list","do":"click","role":"combobox","name":"Business location:","readyTimeout":5000,"settleMs":1500}
+{"intent":"Business location: Yemen (the providers offered for it)","do":"click","role":"option","name":"Yemen","exact":true,"readyTimeout":30000,"settleMs":6000}
+{"intent":"Payments page","do":"goto","url":"https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=checkout","readyTimeout":60000,"settleMs":6000}
+{"intent":"Business location: open the list","do":"click","role":"combobox","name":"Business location:","readyTimeout":5000,"settleMs":1500}
+{"intent":"Business location: Saudi Arabia (the providers offered for it)","do":"click","role":"option","name":"Saudi Arabia","exact":true,"readyTimeout":30000,"settleMs":6000}
+{"intent":"Payments page","do":"goto","url":"https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=checkout","readyTimeout":60000,"settleMs":6000}
+{"intent":"Business location: open the list","do":"click","role":"combobox","name":"Business location:","readyTimeout":5000,"settleMs":1500}
+{"intent":"Business location: United Arab Emirates (the providers offered for it)","do":"click","role":"option","name":"United Arab Emirates","exact":true,"readyTimeout":30000,"settleMs":6000}
+{"intent":"Payments page","do":"goto","url":"https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=checkout","readyTimeout":60000,"settleMs":6000}
+{"intent":"Business location: open the list","do":"click","role":"combobox","name":"Business location:","readyTimeout":5000,"settleMs":1500}
+{"intent":"Business location: Oman (the providers offered for it)","do":"click","role":"option","name":"Oman","exact":true,"readyTimeout":30000,"settleMs":6000}
+{"intent":"Business location: search Yemen","do":"fill","role":"textbox","name":"Search countries","value":"Yemen","readyTimeout":3000,"settleMs":1000}
+{"intent":"Choose the match","do":"press","key":"Enter","readyTimeout":30000,"settleMs":6000}
+{"intent":"Payments page","do":"goto","url":"https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=checkout","readyTimeout":60000,"settleMs":6000}
+{"intent":"Business location: open the list","do":"click","role":"combobox","name":"Business location:","readyTimeout":5000,"settleMs":1500}
+{"intent":"Business location: search Yemen","do":"fill","role":"textbox","name":"Search countries","value":"Yemen","readyTimeout":3000,"settleMs":1000}
+{"intent":"Business location: Yemen (the providers offered for it)","do":"click","role":"option","name":"Yemen","exact":true,"readyTimeout":30000,"settleMs":3000}
+{"intent":"Payments page again, to read it as saved","do":"goto","url":"https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=checkout","readyTimeout":60000,"settleMs":8000}
+{"intent":"Payments page","do":"goto","url":"https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=checkout","readyTimeout":60000,"settleMs":6000}
+{"intent":"Business location: open the list","do":"click","role":"combobox","name":"Business location:","readyTimeout":5000,"settleMs":1500}
+{"intent":"Business location: search Saudi Arabia","do":"fill","role":"textbox","name":"Search countries","value":"Saudi Arabia","readyTimeout":3000,"settleMs":1000}
+{"intent":"Business location: Saudi Arabia (the providers offered for it)","do":"click","role":"option","name":"Saudi Arabia","exact":true,"readyTimeout":30000,"settleMs":3000}
+{"intent":"Payments page again, to read it as saved","do":"goto","url":"https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=checkout","readyTimeout":60000,"settleMs":8000}
+{"intent":"Payments page","do":"goto","url":"https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=checkout","readyTimeout":60000,"settleMs":6000}
+{"intent":"Business location: open the list","do":"click","role":"combobox","name":"Business location:","readyTimeout":5000,"settleMs":1500}
+{"intent":"Business location: search United Arab Emirates","do":"fill","role":"textbox","name":"Search countries","value":"United Arab Emirates","readyTimeout":3000,"settleMs":1000}
+{"intent":"Business location: United Arab Emirates (the providers offered for it)","do":"click","role":"option","name":"United Arab Emirates","exact":true,"readyTimeout":30000,"settleMs":3000}
+{"intent":"Payments page again, to read it as saved","do":"goto","url":"https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=checkout","readyTimeout":60000,"settleMs":8000}
+{"intent":"Payments page","do":"goto","url":"https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=checkout","readyTimeout":60000,"settleMs":6000}
+{"intent":"Business location: open the list","do":"click","role":"combobox","name":"Business location:","readyTimeout":5000,"settleMs":1500}
+{"intent":"Business location: search Yemen","do":"fill","role":"textbox","name":"Search countries","value":"Yemen","readyTimeout":3000,"settleMs":1000}
+{"intent":"Business location: Yemen","do":"click","role":"option","name":"Yemen","exact":true,"readyTimeout":5000,"settleMs":1500}
+{"intent":"Close the list (commits the choice)","do":"click","css":"h1, .woocommerce-settings-payments-main, #wpbody-content","readyTimeout":30000,"settleMs":8000}
+{"intent":"Payments page again, to read it as saved","do":"goto","url":"https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=checkout","readyTimeout":60000,"settleMs":8000}
+{"intent":"Payments page","do":"goto","url":"https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=checkout","readyTimeout":60000,"settleMs":6000}
+{"intent":"Business location: open the list","do":"click","role":"combobox","name":"Business location:","readyTimeout":5000,"settleMs":1500}
+{"intent":"Business location: search Saudi Arabia","do":"fill","role":"textbox","name":"Search countries","value":"Saudi Arabia","readyTimeout":3000,"settleMs":1000}
+{"intent":"Business location: Saudi Arabia","do":"click","role":"option","name":"Saudi Arabia","exact":true,"readyTimeout":5000,"settleMs":1500}
+{"intent":"Close the list (commits the choice)","do":"click","css":"h1, .woocommerce-settings-payments-main, #wpbody-content","readyTimeout":30000,"settleMs":8000}
+{"intent":"Payments page again, to read it as saved","do":"goto","url":"https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=checkout","readyTimeout":60000,"settleMs":8000}
+{"intent":"Payments page","do":"goto","url":"https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=checkout","readyTimeout":60000,"settleMs":6000}
+{"intent":"Business location: open the list","do":"click","role":"combobox","name":"Business location:","readyTimeout":5000,"settleMs":1500}
+{"intent":"Business location: search United Arab Emirates","do":"fill","role":"textbox","name":"Search countries","value":"United Arab Emirates","readyTimeout":3000,"settleMs":1000}
+{"intent":"Business location: United Arab Emirates","do":"click","role":"option","name":"United Arab Emirates","exact":true,"readyTimeout":5000,"settleMs":1500}
+{"intent":"Close the list (commits the choice)","do":"click","css":"h1, .woocommerce-settings-payments-main, #wpbody-content","readyTimeout":30000,"settleMs":8000}
+{"intent":"Payments page again, to read it as saved","do":"goto","url":"https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=checkout","readyTimeout":60000,"settleMs":8000}
+{"do":"close"}

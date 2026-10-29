@@ -1,0 +1,21 @@
+- heading "Log In" [level=1]
+- link "Powered by WordPress":
+  - /url: https://wordpress.org/
+- paragraph:
+  - text: Username or Email Address
+  - textbox "Username or Email Address": capture-admin
+- text: Password
+- textbox "Password"
+- button "Show password"
+- paragraph:
+  - checkbox "Remember Me"
+  - text: Remember Me
+  - button "Help"
+- paragraph:
+  - button "Log In"
+- paragraph:
+  - link "Lost your password?":
+    - /url: https://belfast-portal-fruit-sell.trycloudflare.com/wp-login.php?action=lostpassword
+- paragraph:
+  - link "← Go to Capture Test Store":
+    - /url: https://belfast-portal-fruit-sell.trycloudflare.com/

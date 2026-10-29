@@ -1,0 +1,41 @@
+- main:
+  - img
+  - button "Skip this step"
+  - heading "Get a boost with our free features" [level=1]
+  - heading "No commitment required – you can remove them at any time." [level=2]
+  - checkbox "woocommerce-paypal-payments Maximize conversions with PayPal Payments Offer more ways to pay with this all-in-one checkout solution" [checked]
+  - img "woocommerce-paypal-payments"
+  - heading "Maximize conversions with PayPal Payments" [level=3]
+  - paragraph: Offer more ways to pay with this all-in-one checkout solution
+  - checkbox "jetpack Protect your store and your shoppers with Jetpack Keep your store online with full security and backups" [checked]
+  - img "jetpack"
+  - heading "Protect your store and your shoppers with Jetpack" [level=3]
+  - paragraph: Keep your store online with full security and backups
+  - checkbox "pinterest-for-woocommerce Showcase your products with Pinterest Get your products in front of a highly engaged audience" [checked]
+  - img "pinterest-for-woocommerce"
+  - heading "Showcase your products with Pinterest" [level=3]
+  - paragraph: Get your products in front of a highly engaged audience
+  - checkbox "klaviyo Boost sales with Klaviyo Build personalized email and SMS campaigns using Klaviyo" [checked]
+  - img "klaviyo"
+  - heading "Boost sales with Klaviyo" [level=3]
+  - paragraph: Build personalized email and SMS campaigns using Klaviyo
+  - checkbox "google-listings-and-ads Drive sales with Google for WooCommerce Create ads for your products straight from your dashboard" [checked]
+  - img "google-listings-and-ads"
+  - heading "Drive sales with Google for WooCommerce" [level=3]
+  - paragraph: Create ads for your products straight from your dashboard
+  - checkbox "snapchat-for-woocommerce Find new customers with Snapchat Ads Reach an untapped audience on Snapchat and drive more sales" [checked]
+  - img "snapchat-for-woocommerce"
+  - heading "Find new customers with Snapchat Ads" [level=3]
+  - paragraph: Reach an untapped audience on Snapchat and drive more sales
+  - checkbox "reddit-for-woocommerce Reach ready-to-buy shoppers on Reddit Seamlessly sync your products and start Reddit Ads" [checked]
+  - img "reddit-for-woocommerce"
+  - heading "Reach ready-to-buy shoppers on Reddit" [level=3]
+  - paragraph: Seamlessly sync your products and start Reddit Ads
+  - button "Continue"
+  - paragraph:
+    - text: By installing Jetpack plugin for free you agree to our
+    - link "Terms of Service":
+      - /url: https://wordpress.com/tos/
+    - text: .
+- paragraph: Notifications
+- text: "It looks like you’re located in Yemen . Are you sure you want to create a store in Yemen ? Setting up your store in the wrong country may lead to the following issues: Tax and duty obligations Payment issues Shipping issues"

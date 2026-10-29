@@ -1,0 +1,619 @@
+- navigation "Main menu":
+  - link "Skip to main content":
+    - /url: "#wpbody-content"
+  - link "Skip to toolbar":
+    - /url: "#wp-toolbar"
+  - list:
+    - listitem:
+      - link "Dashboard":
+        - /url: index.php
+      - list:
+        - listitem:
+          - link "Home":
+            - /url: index.php
+        - listitem:
+          - link "Updates 4":
+            - /url: update-core.php
+    - listitem:
+      - link "Posts":
+        - /url: edit.php
+      - list:
+        - listitem:
+          - link "All Posts":
+            - /url: edit.php
+        - listitem:
+          - link "Add Post":
+            - /url: post-new.php
+        - listitem:
+          - link "Categories":
+            - /url: edit-tags.php?taxonomy=category
+        - listitem:
+          - link "Tags":
+            - /url: edit-tags.php?taxonomy=post_tag
+    - listitem:
+      - link "Media":
+        - /url: upload.php
+      - list:
+        - listitem:
+          - link "Library":
+            - /url: upload.php
+        - listitem:
+          - link "Add Media File":
+            - /url: media-new.php
+    - listitem:
+      - link "Pages":
+        - /url: edit.php?post_type=page
+      - list:
+        - listitem:
+          - link "All Pages":
+            - /url: edit.php?post_type=page
+        - listitem:
+          - link "Add Page":
+            - /url: post-new.php?post_type=page
+    - listitem:
+      - link "Comments":
+        - /url: edit-comments.php
+    - listitem:
+      - link "WooCommerce":
+        - /url: admin.php?page=wc-admin
+      - list:
+        - listitem:
+          - link "Home 5":
+            - /url: admin.php?page=wc-admin
+        - listitem:
+          - link "Orders":
+            - /url: admin.php?page=wc-orders
+        - listitem:
+          - link "Customers":
+            - /url: admin.php?page=wc-admin&path=/customers
+        - listitem:
+          - link "Coupons":
+            - /url: admin.php?page=coupons-moved
+        - listitem:
+          - link "Reports":
+            - /url: admin.php?page=wc-reports
+        - listitem:
+          - link "Settings":
+            - /url: admin.php?page=wc-settings
+        - listitem:
+          - link "Status":
+            - /url: admin.php?page=wc-status
+        - listitem:
+          - link "Extensions":
+            - /url: admin.php?page=wc-admin&path=/extensions
+    - listitem:
+      - link "Products":
+        - /url: edit.php?post_type=product
+      - list:
+        - listitem:
+          - link "All Products":
+            - /url: edit.php?post_type=product
+        - listitem:
+          - link "Add new product":
+            - /url: post-new.php?post_type=product
+        - listitem:
+          - link "Brands":
+            - /url: edit-tags.php?taxonomy=product_brand&post_type=product
+        - listitem:
+          - link "Categories":
+            - /url: edit-tags.php?taxonomy=product_cat&post_type=product
+        - listitem:
+          - link "Tags":
+            - /url: edit-tags.php?taxonomy=product_tag&post_type=product
+        - listitem:
+          - link "Attributes":
+            - /url: edit.php?post_type=product&page=product_attributes
+        - listitem:
+          - link "Reviews":
+            - /url: edit.php?post_type=product&page=product-reviews
+    - listitem:
+      - link "Payments 1":
+        - /url: admin.php?page=wc-settings&tab=checkout&from=PAYMENTS_MENU_ITEM
+    - listitem:
+      - link "Analytics":
+        - /url: admin.php?page=wc-admin&path=/analytics/overview
+      - list:
+        - listitem:
+          - link "Overview":
+            - /url: admin.php?page=wc-admin&path=/analytics/overview
+        - listitem:
+          - link "Products":
+            - /url: admin.php?page=wc-admin&path=/analytics/products
+        - listitem:
+          - link "Revenue":
+            - /url: admin.php?page=wc-admin&path=/analytics/revenue
+        - listitem:
+          - link "Orders":
+            - /url: admin.php?page=wc-admin&path=/analytics/orders
+        - listitem:
+          - link "Variations":
+            - /url: admin.php?page=wc-admin&path=/analytics/variations
+        - listitem:
+          - link "Categories":
+            - /url: admin.php?page=wc-admin&path=/analytics/categories
+        - listitem:
+          - link "Coupons":
+            - /url: admin.php?page=wc-admin&path=/analytics/coupons
+        - listitem:
+          - link "Taxes":
+            - /url: admin.php?page=wc-admin&path=/analytics/taxes
+        - listitem:
+          - link "Downloads":
+            - /url: admin.php?page=wc-admin&path=/analytics/downloads
+        - listitem:
+          - link "Stock":
+            - /url: admin.php?page=wc-admin&path=/analytics/stock
+        - listitem:
+          - link "Settings":
+            - /url: admin.php?page=wc-admin&path=/analytics/settings
+    - listitem:
+      - link "Marketing":
+        - /url: admin.php?page=wc-admin&path=/marketing
+      - list:
+        - listitem:
+          - link "Overview":
+            - /url: admin.php?page=wc-admin&path=/marketing
+        - listitem:
+          - link "Coupons":
+            - /url: edit.php?post_type=shop_coupon
+    - listitem:
+      - link "Appearance":
+        - /url: themes.php
+      - list:
+        - listitem:
+          - link "Themes 3":
+            - /url: themes.php
+        - listitem:
+          - link "Editor":
+            - /url: site-editor.php
+        - listitem:
+          - link "Fonts":
+            - /url: font-library.php
+    - listitem:
+      - link "Plugins 1":
+        - /url: plugins.php
+      - list:
+        - listitem:
+          - link "Installed Plugins":
+            - /url: plugins.php
+        - listitem:
+          - link "Add Plugin":
+            - /url: plugin-install.php
+    - listitem:
+      - link "Users":
+        - /url: users.php
+      - list:
+        - listitem:
+          - link "All Users":
+            - /url: users.php
+        - listitem:
+          - link "Add User":
+            - /url: user-new.php
+        - listitem:
+          - link "Profile":
+            - /url: profile.php
+    - listitem:
+      - link "Tools":
+        - /url: tools.php
+      - list:
+        - listitem:
+          - link "Available Tools":
+            - /url: tools.php
+        - listitem:
+          - link "Import":
+            - /url: import.php
+        - listitem:
+          - link "Export":
+            - /url: export.php
+        - listitem:
+          - link "Site Health":
+            - /url: site-health.php
+        - listitem:
+          - link "Export Personal Data":
+            - /url: export-personal-data.php
+        - listitem:
+          - link "Erase Personal Data":
+            - /url: erase-personal-data.php
+        - listitem:
+          - link "Scheduled Actions":
+            - /url: tools.php?page=action-scheduler
+        - listitem:
+          - link "Theme File Editor":
+            - /url: theme-editor.php
+        - listitem:
+          - link "Plugin File Editor":
+            - /url: plugin-editor.php
+    - listitem:
+      - link "Settings":
+        - /url: options-general.php
+      - list:
+        - listitem:
+          - link "General":
+            - /url: options-general.php
+        - listitem:
+          - link "Connectors":
+            - /url: options-connectors.php
+        - listitem:
+          - link "Writing":
+            - /url: options-writing.php
+        - listitem:
+          - link "Reading":
+            - /url: options-reading.php
+        - listitem:
+          - link "Discussion":
+            - /url: options-discussion.php
+        - listitem:
+          - link "Media":
+            - /url: options-media.php
+        - listitem:
+          - link "Permalinks":
+            - /url: options-permalink.php
+        - listitem:
+          - link "Privacy":
+            - /url: options-privacy.php
+    - listitem:
+      - button "Collapse Main menu" [expanded]: Collapse Menu
+- navigation "Toolbar":
+  - menu:
+    - group:
+      - menuitem "About WordPress"
+    - group:
+      - menuitem "Capture Test Store"
+    - group:
+      - menuitem "Coming soon"
+    - group:
+      - menuitem "4 updates available"
+    - group:
+      - menuitem "Ctrl+K Open command palette"
+    - group:
+      - menuitem "0 Comments in moderation"
+    - group:
+      - menuitem "New"
+  - menu:
+    - group:
+      - menuitem "Howdy, capture-admin"
+- heading "Settings" [level=1]
+- main:
+  - navigation:
+    - link "General":
+      - /url: https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=general
+    - link "Products":
+      - /url: https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=products
+    - link "Shipping":
+      - /url: https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=shipping
+    - link "Payments":
+      - /url: https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=checkout
+    - link "Accounts & Privacy":
+      - /url: https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=account
+    - link "Emails":
+      - /url: https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=email
+    - link "Integration":
+      - /url: https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=integration
+    - link "Site visibility":
+      - /url: https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=site-visibility
+    - link "Point of Sale":
+      - /url: https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=point-of-sale
+    - link "Multi-currency":
+      - /url: https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=wcpay_multi_currency
+    - link "Advanced":
+      - /url: https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=advanced
+  - heading "Payments" [level=1]
+  - img "Incentive illustration"
+  - text: Limited time offer
+  - heading "Save 10% on processing fees during your first 3 months when you sign up for WooPayments." [level=2]
+  - paragraph: Use the native payments solution built and supported by Woo to accept online and in-person payments, track revenue, and handle all payment activity in one place.
+  - text: See
+  - link "Terms and Conditions":
+    - /url: https://woocommerce.com/terms-conditions/woopayments-action-promotion-2023/
+  - text: for details.
+  - button "Install and save 10%"
+  - button "Dismiss"
+  - text: Payment providers
+  - combobox "Business location:" [expanded]: Business location:United States (US)
+  - listbox:
+    - textbox "Search countries":
+      - /placeholder: Search
+    - button "Search":
+      - img "Search"
+    - option "Afghanistan"
+    - option "Åland Islands"
+    - option "Albania"
+    - option "Algeria"
+    - option "American Samoa"
+    - option "Andorra"
+    - option "Angola"
+    - option "Anguilla"
+    - option "Antarctica"
+    - option "Antigua and Barbuda"
+    - option "Argentina"
+    - option "Armenia"
+    - option "Aruba"
+    - option "Australia"
+    - option "Austria"
+    - option "Azerbaijan"
+    - option "Bahamas"
+    - option "Bahrain"
+    - option "Bangladesh"
+    - option "Barbados"
+    - option "Belarus"
+    - option "Belau"
+    - option "Belgium"
+    - option "Belize"
+    - option "Benin"
+    - option "Bermuda"
+    - option "Bhutan"
+    - option "Bolivia"
+    - option "Bonaire, Saint Eustatius and Saba"
+    - option "Bosnia and Herzegovina"
+    - option "Botswana"
+    - option "Bouvet Island"
+    - option "Brazil"
+    - option "British Indian Ocean Territory"
+    - option "Brunei"
+    - option "Bulgaria"
+    - option "Burkina Faso"
+    - option "Burundi"
+    - option "Cambodia"
+    - option "Cameroon"
+    - option "Canada"
+    - option "Cape Verde"
+    - option "Cayman Islands"
+    - option "Central African Republic"
+    - option "Chad"
+    - option "Chile"
+    - option "China"
+    - option "Christmas Island"
+    - option "Cocos (Keeling) Islands"
+    - option "Colombia"
+    - option "Comoros"
+    - option "Congo (Brazzaville)"
+    - option "Congo (Kinshasa)"
+    - option "Cook Islands"
+    - option "Costa Rica"
+    - option "Croatia"
+    - option "Cuba"
+    - option "Curaçao"
+    - option "Cyprus"
+    - option "Czech Republic"
+    - option "Denmark"
+    - option "Djibouti"
+    - option "Dominica"
+    - option "Dominican Republic"
+    - option "Ecuador"
+    - option "Egypt"
+    - option "El Salvador"
+    - option "Equatorial Guinea"
+    - option "Eritrea"
+    - option "Estonia"
+    - option "Eswatini"
+    - option "Ethiopia"
+    - option "Falkland Islands"
+    - option "Faroe Islands"
+    - option "Fiji"
+    - option "Finland"
+    - option "France"
+    - option "French Guiana"
+    - option "French Polynesia"
+    - option "French Southern Territories"
+    - option "Gabon"
+    - option "Gambia"
+    - option "Georgia"
+    - option "Germany"
+    - option "Ghana"
+    - option "Gibraltar"
+    - option "Greece"
+    - option "Greenland"
+    - option "Grenada"
+    - option "Guadeloupe"
+    - option "Guam"
+    - option "Guatemala"
+    - option "Guernsey"
+    - option "Guinea"
+    - option "Guinea-Bissau"
+    - option "Guyana"
+    - option "Haiti"
+    - option "Heard Island and McDonald Islands"
+    - option "Honduras"
+    - option "Hong Kong"
+    - option "Hungary"
+    - option "Iceland"
+    - option "India"
+    - option "Indonesia"
+    - option "Iran"
+    - option "Iraq"
+    - option "Ireland"
+    - option "Isle of Man"
+    - option "Israel"
+    - option "Italy"
+    - option "Ivory Coast"
+    - option "Jamaica"
+    - option "Japan"
+    - option "Jersey"
+    - option "Jordan"
+    - option "Kazakhstan"
+    - option "Kenya"
+    - option "Kiribati"
+    - option "Kosovo"
+    - option "Kuwait"
+    - option "Kyrgyzstan"
+    - option "Laos"
+    - option "Latvia"
+    - option "Lebanon"
+    - option "Lesotho"
+    - option "Liberia"
+    - option "Libya"
+    - option "Liechtenstein"
+    - option "Lithuania"
+    - option "Luxembourg"
+    - option "Macao"
+    - option "Madagascar"
+    - option "Malawi"
+    - option "Malaysia"
+    - option "Maldives"
+    - option "Mali"
+    - option "Malta"
+    - option "Marshall Islands"
+    - option "Martinique"
+    - option "Mauritania"
+    - option "Mauritius"
+    - option "Mayotte"
+    - option "Mexico"
+    - option "Micronesia"
+    - option "Moldova"
+    - option "Monaco"
+    - option "Mongolia"
+    - option "Montenegro"
+    - option "Montserrat"
+    - option "Morocco"
+    - option "Mozambique"
+    - option "Myanmar"
+    - option "Namibia"
+    - option "Nauru"
+    - option "Nepal"
+    - option "Netherlands"
+    - option "New Caledonia"
+    - option "New Zealand"
+    - option "Nicaragua"
+    - option "Niger"
+    - option "Nigeria"
+    - option "Niue"
+    - option "Norfolk Island"
+    - option "North Korea"
+    - option "North Macedonia"
+    - option "Northern Mariana Islands"
+    - option "Norway"
+    - option "Oman"
+    - option "Pakistan"
+    - option "Palestinian Territory"
+    - option "Panama"
+    - option "Papua New Guinea"
+    - option "Paraguay"
+    - option "Peru"
+    - option "Philippines"
+    - option "Pitcairn"
+    - option "Poland"
+    - option "Portugal"
+    - option "Puerto Rico"
+    - option "Qatar"
+    - option "Reunion"
+    - option "Romania"
+    - option "Russia"
+    - option "Rwanda"
+    - option "Saint Barthélemy"
+    - option "Saint Helena"
+    - option "Saint Kitts and Nevis"
+    - option "Saint Lucia"
+    - option "Saint Martin (Dutch part)"
+    - option "Saint Martin (French part)"
+    - option "Saint Pierre and Miquelon"
+    - option "Saint Vincent and the Grenadines"
+    - option "Samoa"
+    - option "San Marino"
+    - option "São Tomé and Príncipe"
+    - option "Saudi Arabia"
+    - option "Senegal"
+    - option "Serbia"
+    - option "Seychelles"
+    - option "Sierra Leone"
+    - option "Singapore"
+    - option "Slovakia"
+    - option "Slovenia"
+    - option "Solomon Islands"
+    - option "Somalia"
+    - option "South Africa"
+    - option "South Georgia/Sandwich Islands"
+    - option "South Korea"
+    - option "South Sudan"
+    - option "Spain"
+    - option "Sri Lanka"
+    - option "Sudan"
+    - option "Suriname"
+    - option "Svalbard and Jan Mayen"
+    - option "Sweden"
+    - option "Switzerland"
+    - option "Syria"
+    - option "Taiwan"
+    - option "Tajikistan"
+    - option "Tanzania"
+    - option "Thailand"
+    - option "Timor-Leste"
+    - option "Togo"
+    - option "Tokelau"
+    - option "Tonga"
+    - option "Trinidad and Tobago"
+    - option "Tunisia"
+    - option "Türkiye"
+    - option "Turkmenistan"
+    - option "Turks and Caicos Islands"
+    - option "Tuvalu"
+    - option "Uganda"
+    - option "Ukraine"
+    - option "United Arab Emirates"
+    - option "United Kingdom (UK)"
+    - option "United States (US)" [selected]
+    - option "United States (US) Minor Outlying Islands"
+    - option "Uruguay"
+    - option "Uzbekistan"
+    - option "Vanuatu"
+    - option "Vatican"
+    - option "Venezuela"
+    - option "Vietnam"
+    - option "Virgin Islands (British)"
+    - option "Virgin Islands (US)"
+    - option "Wallis and Futuna"
+    - option "Western Sahara"
+    - option "Yemen"
+    - option "Zambia"
+    - option "Zimbabwe"
+    - button "Apply"
+  - button
+  - img "Accept payments with Woo logo"
+  - text: Accept payments with Woo Save 10% on processing fees
+  - button "More information"
+  - button "Official WooCommerce extension badge Official":
+    - img "Official WooCommerce extension badge"
+    - text: Official
+  - text: Credit/debit cards, Apple Pay, Google Pay, and more.
+  - button "+ 11"
+  - button "Complete setup"
+  - button "Payment provider options":
+    - img
+  - button
+  - img "PayPal Payments logo"
+  - text: PayPal Payments
+  - button "Official WooCommerce extension badge Official":
+    - img "Official WooCommerce extension badge"
+    - text: Official
+  - text: PayPal Payments lets you offer PayPal, Venmo (US only), Pay Later options and more.
+  - button "Install"
+  - button "Payment provider actions":
+    - img
+  - button
+  - img "Take offline payments logo"
+  - text: Take offline payments Accept payments offline using multiple different methods. These can also be used to test purchases.
+  - link "Take offline payments":
+    - /url: https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/admin.php?page=wc-settings&tab=checkout&path=/offline
+    - img
+  - status
+  - button "More payment options Stripe small logo Square small logo Visa Acceptance Solutions small logo Airwallex Payments small logo Elavon small logo Expand section":
+    - text: More payment options
+    - img "Stripe small logo"
+    - img "Square small logo"
+    - img "Visa Acceptance Solutions small logo"
+    - img "Airwallex Payments small logo"
+    - img "Elavon small logo"
+    - img
+    - text: Expand section
+  - table
+  - paragraph
+- contentinfo:
+  - paragraph:
+    - text: If you like
+    - strong: WooCommerce
+    - text: please leave us a
+    - link "five star":
+      - /url: https://wordpress.org/support/plugin/woocommerce/reviews?rate=5#new-post
+      - text: ★★★★★
+    - text: rating. A huge thanks in advance!
+  - paragraph: Version 11.2.1
+- img

@@ -1,0 +1,10 @@
+- main:
+  - img
+  - heading "Welcome to Woo!" [level=1]
+  - heading "It’s great to have you here with us! We’ll be guiding you through the setup process – first, answer a few questions to tailor your experience." [level=2]
+  - button "Set up my store"
+  - button "Skip guided setup"
+  - checkbox "I agree to share my data to tailor my store setup experience, get more relevant content, and help make WooCommerce better for everyone. You can opt out at any time in WooCommerce settings. Learn more about usage tracking." [checked]
+  - text: I agree to share my data to tailor my store setup experience, get more relevant content, and help make WooCommerce better for everyone. You can opt out at any time in WooCommerce settings.
+  - link "Learn more about usage tracking.":
+    - /url: https://woocommerce.com/usage-tracking?utm_medium=product

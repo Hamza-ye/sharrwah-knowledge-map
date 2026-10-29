@@ -1,0 +1,17 @@
+- main:
+  - img
+  - button "Skip this step"
+  - heading "Which one of these best describes you?" [level=1]
+  - heading "Let us know where you are in your commerce journey so that we can tailor your Woo experience for you." [level=2]
+  - group "Which one of these best describes you?":
+    - text: Which one of these best describes you?
+    - radio "I’m just starting my business":
+      - radio "I’m just starting my business" [checked]
+      - text: I’m just starting my business
+    - radio "I’m already selling":
+      - radio "I’m already selling"
+      - text: I’m already selling
+    - radio "I’m setting up a store for a client":
+      - radio "I’m setting up a store for a client"
+      - text: I’m setting up a store for a client
+  - button "Continue"

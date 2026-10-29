@@ -1,0 +1,353 @@
+- navigation "Main menu":
+  - link "Skip to main content":
+    - /url: "#wpbody-content"
+  - link "Skip to toolbar":
+    - /url: "#wp-toolbar"
+  - list:
+    - listitem:
+      - link "Dashboard":
+        - /url: index.php
+      - list:
+        - listitem:
+          - link "Home":
+            - /url: index.php
+        - listitem:
+          - link "Updates 3":
+            - /url: update-core.php
+    - listitem:
+      - link "Posts":
+        - /url: edit.php
+      - list:
+        - listitem:
+          - link "All Posts":
+            - /url: edit.php
+        - listitem:
+          - link "Add Post":
+            - /url: post-new.php
+        - listitem:
+          - link "Categories":
+            - /url: edit-tags.php?taxonomy=category
+        - listitem:
+          - link "Tags":
+            - /url: edit-tags.php?taxonomy=post_tag
+    - listitem:
+      - link "Media":
+        - /url: upload.php
+      - list:
+        - listitem:
+          - link "Library":
+            - /url: upload.php
+        - listitem:
+          - link "Add Media File":
+            - /url: media-new.php
+    - listitem:
+      - link "Pages":
+        - /url: edit.php?post_type=page
+      - list:
+        - listitem:
+          - link "All Pages":
+            - /url: edit.php?post_type=page
+        - listitem:
+          - link "Add Page":
+            - /url: post-new.php?post_type=page
+    - listitem:
+      - link "Comments":
+        - /url: edit-comments.php
+    - listitem:
+      - link "WooCommerce":
+        - /url: admin.php?page=wc-admin
+      - list:
+        - listitem:
+          - link "Home 5":
+            - /url: admin.php?page=wc-admin
+        - listitem:
+          - link "Orders":
+            - /url: admin.php?page=wc-orders
+        - listitem:
+          - link "Customers":
+            - /url: admin.php?page=wc-admin&path=%2Fcustomers
+        - listitem:
+          - link "Coupons":
+            - /url: admin.php?page=coupons-moved
+        - listitem:
+          - link "Reports":
+            - /url: admin.php?page=wc-reports
+        - listitem:
+          - link "Settings":
+            - /url: admin.php?page=wc-settings
+        - listitem:
+          - link "Status":
+            - /url: admin.php?page=wc-status
+        - listitem:
+          - link "Extensions":
+            - /url: admin.php?page=wc-admin&path=%2Fextensions
+    - listitem:
+      - link "Products":
+        - /url: edit.php?post_type=product
+      - list:
+        - listitem:
+          - link "All Products":
+            - /url: edit.php?post_type=product
+        - listitem:
+          - link "Add new product":
+            - /url: post-new.php?post_type=product
+        - listitem:
+          - link "Brands":
+            - /url: edit-tags.php?taxonomy=product_brand&post_type=product
+        - listitem:
+          - link "Categories":
+            - /url: edit-tags.php?taxonomy=product_cat&post_type=product
+        - listitem:
+          - link "Tags":
+            - /url: edit-tags.php?taxonomy=product_tag&post_type=product
+        - listitem:
+          - link "Attributes":
+            - /url: edit.php?post_type=product&page=product_attributes
+        - listitem:
+          - link "Reviews":
+            - /url: edit.php?post_type=product&page=product-reviews
+    - listitem:
+      - link "Payments 1":
+        - /url: admin.php?page=wc-settings&tab=checkout&from=PAYMENTS_MENU_ITEM
+    - listitem:
+      - link "Analytics":
+        - /url: admin.php?page=wc-admin&path=%2Fanalytics%2Foverview
+      - list:
+        - listitem:
+          - link "Overview":
+            - /url: admin.php?page=wc-admin&path=%2Fanalytics%2Foverview
+        - listitem:
+          - link "Products":
+            - /url: admin.php?page=wc-admin&path=%2Fanalytics%2Fproducts
+        - listitem:
+          - link "Revenue":
+            - /url: admin.php?page=wc-admin&path=%2Fanalytics%2Frevenue
+        - listitem:
+          - link "Orders":
+            - /url: admin.php?page=wc-admin&path=%2Fanalytics%2Forders
+        - listitem:
+          - link "Variations":
+            - /url: admin.php?page=wc-admin&path=%2Fanalytics%2Fvariations
+        - listitem:
+          - link "Categories":
+            - /url: admin.php?page=wc-admin&path=%2Fanalytics%2Fcategories
+        - listitem:
+          - link "Coupons":
+            - /url: admin.php?page=wc-admin&path=%2Fanalytics%2Fcoupons
+        - listitem:
+          - link "Taxes":
+            - /url: admin.php?page=wc-admin&path=%2Fanalytics%2Ftaxes
+        - listitem:
+          - link "Downloads":
+            - /url: admin.php?page=wc-admin&path=%2Fanalytics%2Fdownloads
+        - listitem:
+          - link "Stock":
+            - /url: admin.php?page=wc-admin&path=%2Fanalytics%2Fstock
+        - listitem:
+          - link "Settings":
+            - /url: admin.php?page=wc-admin&path=%2Fanalytics%2Fsettings
+    - listitem:
+      - link "Marketing":
+        - /url: admin.php?page=wc-admin&path=%2Fmarketing
+      - list:
+        - listitem:
+          - link "Overview":
+            - /url: admin.php?page=wc-admin&path=%2Fmarketing
+        - listitem:
+          - link "Coupons":
+            - /url: edit.php?post_type=shop_coupon
+    - listitem:
+      - link "Appearance":
+        - /url: themes.php
+      - list:
+        - listitem:
+          - link "Themes 3":
+            - /url: themes.php
+        - listitem:
+          - link "Editor":
+            - /url: site-editor.php
+        - listitem:
+          - link "Fonts":
+            - /url: font-library.php
+    - listitem:
+      - link "Plugins":
+        - /url: plugins.php
+      - list:
+        - listitem:
+          - link "Installed Plugins":
+            - /url: plugins.php
+        - listitem:
+          - link "Add Plugin":
+            - /url: plugin-install.php
+    - listitem:
+      - link "Users":
+        - /url: users.php
+      - list:
+        - listitem:
+          - link "All Users":
+            - /url: users.php
+        - listitem:
+          - link "Add User":
+            - /url: user-new.php
+        - listitem:
+          - link "Profile":
+            - /url: profile.php
+    - listitem:
+      - link "Tools":
+        - /url: tools.php
+      - list:
+        - listitem:
+          - link "Available Tools":
+            - /url: tools.php
+        - listitem:
+          - link "Import":
+            - /url: import.php
+        - listitem:
+          - link "Export":
+            - /url: export.php
+        - listitem:
+          - link "Site Health":
+            - /url: site-health.php
+        - listitem:
+          - link "Export Personal Data":
+            - /url: export-personal-data.php
+        - listitem:
+          - link "Erase Personal Data":
+            - /url: erase-personal-data.php
+        - listitem:
+          - link "Scheduled Actions":
+            - /url: tools.php?page=action-scheduler
+        - listitem:
+          - link "Theme File Editor":
+            - /url: theme-editor.php
+        - listitem:
+          - link "Plugin File Editor":
+            - /url: plugin-editor.php
+    - listitem:
+      - link "Settings":
+        - /url: options-general.php
+      - list:
+        - listitem:
+          - link "General":
+            - /url: options-general.php
+        - listitem:
+          - link "Connectors":
+            - /url: options-connectors.php
+        - listitem:
+          - link "Writing":
+            - /url: options-writing.php
+        - listitem:
+          - link "Reading":
+            - /url: options-reading.php
+        - listitem:
+          - link "Discussion":
+            - /url: options-discussion.php
+        - listitem:
+          - link "Media":
+            - /url: options-media.php
+        - listitem:
+          - link "Permalinks":
+            - /url: options-permalink.php
+        - listitem:
+          - link "Privacy":
+            - /url: options-privacy.php
+    - listitem:
+      - button "Collapse Main menu" [expanded]: Collapse Menu
+- navigation "Toolbar":
+  - menu:
+    - group:
+      - menuitem "About WordPress"
+    - group:
+      - menuitem "Capture Test Store"
+    - group:
+      - menuitem "Coming soon"
+    - group:
+      - menuitem "4 updates available"
+    - group:
+      - menuitem "Ctrl+K Open command palette"
+    - group:
+      - menuitem "0 Comments in moderation"
+    - group:
+      - menuitem "New"
+  - menu:
+    - group:
+      - menuitem "Howdy, capture-admin"
+- main:
+  - heading "Home" [level=1]
+  - heading "Store Activity" [level=2]
+  - complementary "Store Activity":
+    - tablist:
+      - tab "Preview store"
+      - button "Display options":
+        - img
+      - button "User options"
+      - tab "Help"
+  - heading "Welcome to Capture Test Store" [level=1]
+  - button "Task list options"
+  - paragraph: Follow these steps to start selling quickly. 0 out of 5 complete.
+  - progressbar
+  - img "Products illustration"
+  - heading "List your products" [level=1]
+  - paragraph: Start selling by adding products or services to your store. Choose to list products manually, or import them from a different store.
+  - button "Add products"
+  - list:
+    - button "1 Add your products"
+    - button "2 Set up payments"
+    - button "3 Customize your store"
+    - button "4 Collect sales tax"
+    - button "5 Launch your store"
+  - text: Things to do next 4
+  - button "Task list options"
+  - list:
+    - button "Grow your business 2 minutes Skip":
+      - text: Grow your business 2 minutes
+      - button "Skip"
+    - button "Enhance your store with extensions Skip":
+      - text: Enhance your store with extensions
+      - button "Skip"
+    - button "Get the free WooCommerce mobile app Skip":
+      - text: Get the free WooCommerce mobile app
+      - button "Skip"
+    - button "Review shipping options Skip":
+      - text: Review shipping options
+      - button "Skip"
+  - text: Inbox 1
+  - button "Inbox notes options"
+  - menu:
+    - text: 15 minutes ago
+    - heading "Setup a Refund and Returns Policy page to boost your store's credibility." [level=3]:
+      - link "Setup a Refund and Returns Policy page to boost your store's credibility.":
+        - /url: https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/post.php?post=11&action=edit
+    - text: We have created a sample draft Refund and Returns Policy page for you. Please have a look and update it to fit your store.
+    - link "Edit page":
+      - /url: https://belfast-portal-fruit-sell.trycloudflare.com/wp-admin/post.php?post=11&action=edit
+    - button "Dismiss"
+  - text: Stats overview
+  - button "Choose which values to display"
+  - tablist:
+    - tab "Today" [selected]
+    - tab "Week to date"
+    - tab "Month to date"
+  - tabpanel "Today":
+    - article:
+      - heading "Get traffic stats with Jetpack" [level=2]
+      - paragraph: Keep an eye on your views and visitors metrics with Jetpack. Requires Jetpack plugin and a WordPress.com account.
+      - button "Get Jetpack"
+      - button "No thanks"
+    - list:
+      - listitem:
+        - menuitem "Total sales $0.00 No change from Previous period:": Total sales $0.00 0%
+      - listitem:
+        - menuitem "Orders 0 No change from Previous period:": Orders 0 0%
+  - link "View detailed stats":
+    - /url: admin.php?page=wc-admin&path=%2Fanalytics%2Foverview
+- contentinfo:
+  - paragraph:
+    - text: If you like
+    - strong: WooCommerce
+    - text: please leave us a
+    - link "five star":
+      - /url: https://wordpress.org/support/plugin/woocommerce/reviews?rate=5#new-post
+      - text: ★★★★★
+    - text: rating. A huge thanks in advance!
+  - paragraph: Version 11.2.1

@@ -1,0 +1,27 @@
+- main:
+  - img
+  - heading "Tell us a bit about your store" [level=1]
+  - heading "We’ll use this information to help you set up payments, shipping, and taxes, as well as recommending the best theme for your store." [level=2]
+  - text: Give your store a name
+  - textbox "Give your store a name":
+    - /placeholder: Ex. My awesome store
+    - text: Capture Test Store
+  - paragraph: Don’t worry — you can always change it later!
+  - paragraph: What type of products or services do you plan to sell?
+  - combobox "Select an industry": Clothing and accessories
+  - paragraph
+  - paragraph: Where is your store located?*
+  - combobox "Select country/region" [expanded]:
+    - text: United Arab
+    - listbox:
+      - option "United Arab Emirates"
+  - paragraph
+  - text: Your email address
+  - textbox "Your email address":
+    - /placeholder: wordpress@example.com
+    - text: 7amza.it+woo@gmail.com
+  - checkbox "Opt-in to receive tips, discounts, and recommendations from the Woo team directly in your inbox."
+  - text: Opt-in to receive tips, discounts, and recommendations from the Woo team directly in your inbox.
+  - button "Continue"
+- paragraph: Notifications
+- text: 1 result found, use up and down arrow keys to navigate.
