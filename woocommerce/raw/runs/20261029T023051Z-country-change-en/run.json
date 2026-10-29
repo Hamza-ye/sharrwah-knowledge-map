@@ -1,0 +1,42 @@
+{
+  "run_id": "20261029T023051Z-country-change-en",
+  "platform": "woocommerce",
+  "label": "country-change-en",
+  "kind": "browser",
+  "started": "2026-10-29T02:30:53.444Z",
+  "extra": {
+    "store": "-",
+    "commands_file": "/tmp/other-product-class-journeys/country-change-en-cmds.jsonl"
+  },
+  "script": {
+    "path": "capture/runs/journey-repl.mjs",
+    "sha256": "3f65bbf741958b079677d0f65d89d5799fd3546ee2ec4f78d31cbd8c9c6dd958"
+  },
+  "ended": "2026-10-29T02:37:43.475Z",
+  "network": {
+    "via": "browser https://public-api.wordpress.com/geo/",
+    "hosts": {
+      "public-api.wordpress.com": {
+        "loc": "YE",
+        "answer": {
+          "latitude": "15.354732",
+          "longitude": "44.206566",
+          "country_short": "YE",
+          "country_long": "Yemen",
+          "region": "Amanat al 'Asimah",
+          "city": "Sanaa"
+        }
+      }
+    },
+    "loc": "YE"
+  },
+  "context": "capture profile",
+  "browser_version": "154.0.8037.57",
+  "playwright_core": "1.63.0",
+  "node": "v23.0.0",
+  "cdp": "http://127.0.0.1:9251",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  }
+}
