@@ -309,3 +309,5 @@ bigcommerce	storefront selector
 bigcommerce	Use global (a storefront's setting in Channel Manager)		
 bigcommerce	origin channel (of a customer account)		
 bigcommerce	Allow global logins (allow_global_login)		
+bigcommerce	Importer of Record		The Importer of Record is a person or entity who assumes the responsibility for ensuring goods imported to a particular country are appropriately documented and valued.
+bigcommerce	Default country		Determines available payment options.

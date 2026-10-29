@@ -2221,6 +2221,21 @@ S02-WC-517	shipped	a file of the WooCommerce release
 S02-WC-518	shipped	a file of the WooCommerce release
 S02-WC-519	shipped	a file of the WooCommerce release
 S02-WC-520	shipped	a file of the WooCommerce release
+S02-WC-521	observed	run 20261029T023002Z-db-after-setup records a store, dashboard or session
+S02-WC-522	observed	run 20261029T023002Z-db-after-setup records a store, dashboard or session
+S02-WC-523	observed	run 20261029T023051Z-country-change-en records a store, dashboard or session
+S02-WC-524	observed	run 20261029T023051Z-country-change-en records a store, dashboard or session
+S02-WC-525	observed	run 20261029T023051Z-country-change-en records a store, dashboard or session
+S02-WC-526	observed	run 20261029T023051Z-country-change-en records a store, dashboard or session
+S02-WC-527	observed	run 20261029T023051Z-country-change-en records a store, dashboard or session
+S02-WC-528	observed	run 20261029T023051Z-country-change-en records a store, dashboard or session
+S02-WC-529	observed;shipped	a file of the WooCommerce release
+S02-WC-530	observed	run 20261029T020454Z-store-setup-en records a store, dashboard or session
+S02-WC-531	observed	run 20261029T020454Z-store-setup-en records a store, dashboard or session
+S02-WC-532	observed	run 20261029T020454Z-store-setup-en records a store, dashboard or session
+S02-WC-533	observed	run 20261029T032517Z-stripe-requirements-en records a store, dashboard or session
+S02-WC-534	observed	run 20261029T032517Z-stripe-requirements-en records a store, dashboard or session
+S02-WC-535	observed	run 20261029T032517Z-stripe-requirements-en records a store, dashboard or session
 S02-WC-N01	shipped	a file of the WooCommerce release
 S02-WC-N02	shipped	a file of the WooCommerce release
 S02-WC-N03	shipped	a file of the WooCommerce release
@@ -3099,5 +3114,33 @@ S02-BC-355	stated	the address is a help centre's article
 S02-BC-356	stated	the address is a help centre's article
 S02-BC-357	stated	the address is a help centre's article
 S02-BC-358	stated	the address is a help centre's article
+S02-BC-359	observed	run 20261029T015915Z-plan-upgrade-en records a store, dashboard or session
+S02-BC-360	observed	run 20261029T015915Z-plan-upgrade-en records a store, dashboard or session
+S02-BC-361	observed	run 20261029T015915Z-plan-upgrade-en records a store, dashboard or session
+S02-BC-362	observed	run 20261029T015915Z-plan-upgrade-en records a store, dashboard or session
+S02-BC-363	observed	run 20261029T015915Z-plan-upgrade-en records a store, dashboard or session
+S02-BC-364	observed	run 20261029T015915Z-plan-upgrade-en records a store, dashboard or session
+S02-BC-365	observed	run 20261029T015915Z-plan-upgrade-en records a store, dashboard or session
+S02-BC-366	observed	run 20261029T015915Z-plan-upgrade-en records a store, dashboard or session
+S02-BC-367	observed	run 20261029T015915Z-plan-upgrade-en records a store, dashboard or session
+S02-BC-368	observed	run 20261029T012951Z-store-settings-en records a store, dashboard or session
+S02-BC-369	observed	run 20261029T012951Z-store-settings-en records a store, dashboard or session
+S02-BC-370	observed	run 20261029T012951Z-store-settings-en records a store, dashboard or session
+S02-BC-371	stated	run 20261029T024758Z-help-center-en read the platform's documentation
+S02-BC-372	stated	run 20261029T024758Z-help-center-en read the platform's documentation
+S02-BC-373	stated	run 20261029T024758Z-help-center-en read the platform's documentation
+S02-BC-374	observed	run 20261029T012951Z-store-settings-en records a store, dashboard or session
+S02-BC-375	observed	run 20261029T012951Z-store-settings-en records a store, dashboard or session
+S02-BC-376	observed	bigcommerce/structures/standard-formats is built from what a store's dashboard answered
+S02-BC-377	observed	bigcommerce/structures/standard-formats is built from what a store's dashboard answered
+S02-BC-378	observed	run 20261029T012951Z-store-settings-en records a store, dashboard or session
+S02-BC-379	observed	run 20261029T012951Z-store-settings-en records a store, dashboard or session
+S02-BC-380	observed	run 20261029T011432Z-trial-signup-ye-hand-en records a store, dashboard or session
+S02-BC-381	observed	run 20261029T011432Z-trial-signup-ye-hand-en records a store, dashboard or session
+S02-BC-382	stated	run 20261029T024758Z-help-center-en read the platform's documentation
+S02-BC-383	stated	run 20261029T024758Z-help-center-en read the platform's documentation
+S02-BC-384	stated	run 20261029T024758Z-help-center-en read the platform's documentation
+S02-BC-385	stated	run 20261029T025543Z-help-center-2-en read the platform's documentation
+S02-BC-386	observed	run 20261029T012951Z-store-settings-en records a store, dashboard or session
 S02-BC-N01	stated	the address is a docs, help or other page
 S02-BC-N02	stated	the address is a docs, help or other page
