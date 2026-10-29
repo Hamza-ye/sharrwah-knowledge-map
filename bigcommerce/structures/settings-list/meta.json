@@ -1,0 +1,28 @@
+{
+  "structure": "bigcommerce/settings-list",
+  "platform": "bigcommerce",
+  "surface": "control panel (Settings)",
+  "source": {
+    "run_id": "20261029T012951Z-store-settings-en",
+    "step": 2,
+    "frame": "https://store-w5pamplexj.mybigcommerce.com/manage/microapps/settings-list-ui",
+    "held_as": "bigcommerce/raw/runs/20261029T012951Z-store-settings-en/steps/002.frame-0.aria.yaml",
+    "sha256": "8b58cfa247a4f8246e3b8e39e4a3a41c4b1ae33f44442b6d9b5a16c569258ba5"
+  },
+  "shape": "level-2 headings (groups), each with a navigation list of links; each link a level-4 heading (section), a paragraph (description) and an address",
+  "groups_in_order": [
+    "Setup",
+    "General",
+    "Orders",
+    "Products",
+    "Marketing",
+    "Domain",
+    "Advanced",
+    "API and MCP"
+  ],
+  "counts": {
+    "groups": 8,
+    "sections": 40
+  },
+  "items": "items.jsonl: one section per line in page order, with its group, position in the group, description and address as the page states them"
+}

@@ -1,0 +1,40 @@
+{"group": "Setup", "position": 1, "section": "Store profile", "description": "Basic information about your business", "address": "/manage/microapps/localization-settings-ui"}
+{"group": "Setup", "position": 2, "section": "Localization", "description": "Languages and regional settings for your storefronts", "address": "/manage/microapps/ng-currencies"}
+{"group": "Setup", "position": 3, "section": "Currencies", "description": "Currencies customers will see and be charged in at your store", "address": "/manage/microapps/payments-settings-ui"}
+{"group": "Setup", "position": 4, "section": "Payments", "description": "Payment methods for the currencies you support in your store", "address": "/manage/microapps/inventory-locations-app"}
+{"group": "Setup", "position": 5, "section": "Locations", "description": "Locations represent the physical places where you stock inventory", "address": "/manage/microapps/pickup-methods"}
+{"group": "Setup", "position": 6, "section": "Pick up methods", "description": "Create and edit in-person pick up methods for online orders.", "address": "/manage/microapps/ng-shipping-manager"}
+{"group": "Setup", "position": 7, "section": "Shipping", "description": "Store's origin address, shipping zones, and shipping services", "address": "/manage/microapps/tax"}
+{"group": "Setup", "position": 8, "section": "Tax", "description": "Your own tax rules and recommended services", "address": "/admin/index.php?ToDo=viewSettings#WebsiteSettingsTab"}
+{"group": "General", "position": 1, "section": "Website", "description": "Physical dimension settings, search engine optimization, HTTPS, search engine robots", "address": "/admin/index.php?ToDo=viewSettings#DisplaySettingsTab"}
+{"group": "General", "position": 2, "section": "Display", "description": "Settings related to displaying products, categories, control panel etc.", "address": "/admin/index.php?ToDo=viewSettings#SocialSettingsTab"}
+{"group": "General", "position": 3, "section": "Share", "description": "Social sharing settings on product pages and blog posts", "address": "/admin/index.php?ToDo=viewSettings#URLStructure"}
+{"group": "General", "position": 4, "section": "URL structure", "description": "Product, category and web pages URL settings", "address": "/admin/index.php?ToDo=viewSettings#SearchSettingsTab"}
+{"group": "General", "position": 5, "section": "Search", "description": "Default product sort, default content sort, search logic", "address": "/admin/index.php?ToDo=viewSettings#SecuritySettingsTab"}
+{"group": "General", "position": 6, "section": "Security & Privacy", "description": "Security & privacy settings for storefront and control panel", "address": "/admin/index.php?ToDo=viewSettings#MiscellaneousSettingsTab"}
+{"group": "General", "position": 7, "section": "Miscellaneous", "description": "Email settings, advanced store settings, order settings, throttler", "address": "/admin/index.php?ToDo=viewNotificationSettings"}
+{"group": "Orders", "position": 1, "section": "Order notifications", "description": "Brief messages informing you that an order has been placed, etc.", "address": "/admin/index.php?ToDo=viewReturnsSettings"}
+{"group": "Orders", "position": 2, "section": "Returns", "description": "Products return rules", "address": "/manage/microapps/ng-order-statuses"}
+{"group": "Orders", "position": 3, "section": "Statuses", "description": "Order statuses and order status descriptions", "address": "/manage/microapps/inventory-settings-ui"}
+{"group": "Products", "position": 1, "section": "Inventory", "description": "What shoppers will see when a product is out of stock, etc.", "address": "/admin/index.php?ToDo=viewGiftWrapping"}
+{"group": "Products", "position": 2, "section": "Gift wrapping", "description": "Name your gift wrapping option, set a price, etc.", "address": "/admin/index.php?ToDo=viewCommentSystemSettings"}
+{"group": "Products", "position": 3, "section": "Comments", "description": "Shoppers comments about products", "address": "/manage/microapps/promotions-settings-ui"}
+{"group": "Marketing", "position": 1, "section": "Promotions and coupons", "description": "Promotion calculation rules and coupon limits", "address": "https://manage.bigcommerce.com/account/stores/1003524922/domains"}
+{"group": "Domain", "position": 1, "section": "Domain name", "description": "Buy a new domain or add an existing one", "address": "/manage/microapps/redirects?page&limit&sort&direction"}
+{"group": "Domain", "position": 2, "section": "301 Redirects", "description": "301 redirect tells search engines that a page on your website has moved", "address": "/admin/tools/domains"}
+{"group": "Domain", "position": 3, "section": "Email & DNS records", "description": "Manage your domain, subdomain, and email records", "address": "https://manage.bigcommerce.com/account/stores/1003524922/ssl_certs"}
+{"group": "Domain", "position": 4, "section": "SSL certificates", "description": "Encrypting Internet traffic and verifying server identity", "address": "/admin/apps/accounting"}
+{"group": "Advanced", "position": 1, "section": "Accounting", "description": "Connecting accounting software", "address": "/manage/microapps/data-solutions-ui"}
+{"group": "Advanced", "position": 2, "section": "Data solutions", "description": "Web analytics, data warehouses, business intelligence platforms, customer data platform", "address": "/admin/index.php?ToDo=viewCheckoutSettings"}
+{"group": "Advanced", "position": 3, "section": "Checkout", "description": "Features that minimize friction and smooth process of checkout", "address": "/admin/index.php?ToDo=viewFormFields"}
+{"group": "Advanced", "position": 4, "section": "Account sign up form", "description": "List of form fields for signup, addresses on checkout etc.", "address": "/admin/index.php?ToDo=viewExportTemplates"}
+{"group": "Advanced", "position": 5, "section": "Export templates", "description": "Orders, customers and products export settings", "address": "/admin/index.php?ToDo=systemLog"}
+{"group": "Advanced", "position": 6, "section": "Store logs", "description": "System logs and staff action logs rules", "address": "/admin/index.php?ToDo=viewFileAccess"}
+{"group": "Advanced", "position": 7, "section": "File access (WebDAV)", "description": "Application that allows uploading files to store's server", "address": "/admin/index.php?ToDo=viewUsers"}
+{"group": "Advanced", "position": 8, "section": "Users", "description": "Providing access to the administration area of your store", "address": "/manage/microapps/ai-labs-ui"}
+{"group": "Advanced", "position": 9, "section": "Early access", "description": "Try new tools, beta functionality, and upcoming features", "address": "https://gql-playground.bigcommerce.com/?storefront_hostname=capture-test-store-na.mybigcommerce.com&storefront_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiJ9.eyJjaWQiOlsxXSwiY29ycyI6WyJodHRwczovL2dxbC1wbGF5Z3JvdW5kLmJpZ2NvbW1lcmNlLmNvbSJdLCJlYXQiOjE3OTM0MTAwOTIsImlhdCI6MTc5MzIzNzI5MiwiaXNzIjoiQkMiLCJzaWQiOjEwMDM1MjQ5MjIsInN1YiI6IkJDIiwic3ViX3R5cGUiOjAsInRva2VuX3R5cGUiOjF9.BpGTqn8iKLUuOAFydbTP19QaD0wiT3Mw_pg1W6ZSFNabWczBk2W8Xy-Pg9RKl65fh_uOkmts0ViOFRZRaUAxXg"}
+{"group": "API and MCP", "position": 1, "section": "Storefront API Playground", "description": "API queries examples and additional information", "address": "/manage/microapps/api-accounts-ui"}
+{"group": "API and MCP", "position": 2, "section": "Store-level API accounts", "description": "Create specific permissions for some apps and integrations", "address": "/manage/microapps/api-accounts-ui/storefront-tokens"}
+{"group": "API and MCP", "position": 3, "section": "Storefront API tokens", "description": "View and revoke tokens used to access the Storefront API", "address": "https://accounts.bigcommerce.com/tokens"}
+{"group": "API and MCP", "position": 4, "section": "Account-level API accounts", "description": "Create specific permissions for some account level operations", "address": "/manage/microapps/ai-labs-ui/mcp-settings"}
+{"group": "API and MCP", "position": 5, "section": "MCP", "description": "Enable and configure Model Context Protocol endpoints for AI agents"}
