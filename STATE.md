@@ -116,18 +116,26 @@ At phase A's end, the checker found every quote, 3,193 of them, and no error. Wi
 - **The render fault:** the browser in this session failed some sites' scripts, so BigCommerce's Help Center and Zid's sites rendered empty or as an error text; agents read zid.eg's Terms from a source that held the Saudi Terms. The tools now fetch each request outside the browser, open what a click shows, and tell a page's source from what it shows. 32 pages are held again as they render; Zid's audit of G03 was redone (for Egypt, the contract is with Zid Egypt, under Egyptian law). Every capture run now has its README.
 - **Cost:** 1,638 million agent tokens at 11:15 UTC on 29 October, with the WooPayments round's 10.5. That is 1,582 at the end of the night, inside the projection of 1,500 to 1,600, and 45.5 for BigCommerce's and WooCommerce's round. The coordinating session's own tokens since S-02 began: 975 million ([the frame's budget](studies/subjects/S-02/frame.md#budget)).
 
+**The intent's own work (29 October, from 11:15 UTC):**
+- **The plan change** was read by an agent that made none of it ([`reports/plan-change-check.md`](reports/plan-change-check.md)): 26 findings, 15 of them must fix. All 15 are fixed, and 10 of the 11 optional ones; the eleventh, that S-02's re-status ran in the session that folded the change, is said to the founder.
+- **S-02's register** is re-statused under the intent: its nine decisions and five constraints are engineering's rulings, listed for the founder's veto; E5 is ruled. [`reports/S-02.md`](reports/S-02.md) is replaced by [`reports/intent-review.md`](reports/intent-review.md).
+- **Cost:** agents 19.0 million (the extent brief's inspection 4.2, the plan-change reading 9.6, the register's re-status 5.2); the coordinating session 64.5 million. The coordinating session's own tokens since S-02 began: 1,052 million.
+- **PR #8** (S-02 and the intent) is ready to merge on the founder's word. The work continues on the same branch. Once PR #8 is merged, the branch restarts from `main` and Stage 4A goes in a new pull request.
+
 **Next:**
-1. **An independent reading of the plan change** for contradictions. Its findings are fixed before anything builds on it.
-2. **S-02's register re-statused** under the intent. E5 is ruled; [`reports/S-02.md`](reports/S-02.md) is replaced by [`reports/intent-review.md`](reports/intent-review.md).
-3. **A fresh coordinating session** runs Stage 4A. It reads observed-sh, observed-sa and other-product-class from their own repositories, and runs:
-   1. the inspection of `B-extent.md`, which changed after its last inspection; then the anchor's dry run on catalogue and inventory, with WooCommerce mapped onto it;
-   2. the review of its output, which checks every placement against all of Q1's statements;
-   3. the conventions and a checker;
-   4. the other domains and platforms;
-   5. Q3's check for what the model misses, then an independent review of the whole extent;
-   6. the extent's report, and the orientation page updated before it reaches the founder.
-4. **After GM:** architecture and the model's detail, area by area, beside the subjects.
+1. **A fresh coordinating session** runs Stage 4A. It reads observed-sh, observed-sa and other-product-class from their own repositories, and runs:
+   1. the orientation page, updated to the founder's intent and checked for its links and quotes, since the frame has changed (`PLAN.md`, section 9);
+   2. the inspection of `B-extent.md`, which changed after its last inspection; then the anchor's dry run on catalogue and inventory, with WooCommerce mapped onto it;
+   3. the review of its output, which checks every placement against all of Q1's statements;
+   4. the conventions and a checker;
+   5. the other domains and platforms; the merge, with each capability's kind and count, and S-01's and S-02's variation points landed on the model;
+   6. Q3's check for what the model misses, then an independent review of the whole extent;
+   7. the extent's report, and the orientation page updated before it reaches the founder.
+2. **After GM:** architecture and the model's detail, area by area, beside the subjects.
 
 **For later:** "depth over speed" isn't decided. It was the coordinator's reading, not the founder's decision, and it comes back when a second market is near (`founder-messages/2026-10-29-intent-handoff.md`).
 
-**To resume:** read `PLAN.md`, this file and `founder-decisions.tsv`.
+**To resume:** read `PLAN.md`, this file and `founder-decisions.tsv`. A fresh container first sets up the evidence `CLAUDE.md` names, read-only:
+- **observed-sh and observed-sa,** each added to the session and cloned at `/home/user/observed-sh` and `/home/user/observed-sa` with its history since 5 October 2026 (`git clone --shallow-since=2026-10-05`). The checkers read evidence at the commits the records cite, back to observed-sh `b46731d0` and observed-sa `145f137`, both of 9 October.
+- **other-product-class,** added to the session and cloned whole at `/home/user/other-product-class`, with the fallback `CLAUDE.md` gives.
+- **The WooCommerce release:** `https://downloads.wordpress.org/plugin/woocommerce.11.2.1.zip`, checked against `evidence/product-class/woocommerce-11.2.1/woocommerce.11.2.1.zip.sha256` and unpacked at `/home/user/woocommerce-release/11.2.1`. The scripts read `/home/user/woocommerce-release/11.2.1/woocommerce`.
