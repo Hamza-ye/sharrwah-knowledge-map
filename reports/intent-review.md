@@ -156,3 +156,62 @@ So item 2's step is smaller than building a model from scratch: join Q1 across t
 - **One item your list misses:** a buyer app, a consumer app across stores such as Shopify's Shop. INT-04 names it beside own payments and a marketplace. It belongs with the services Sharrwah's own company would run.
 
 **On updating the page: I agree, not now.** One source is the right call. One condition: when the register enters the working files as the seed, its file says plainly that it is a seed at `e4d5cee`, and that its founder lane and "target market" aren't current, so no reader takes them as decisions. The page is rebuilt later, from the class's model.
+
+## 9. On process machinery
+
+You're right about where the burden went. Rules written to guard your concerns sent their judgments back to you: the founder lane, 84 matches left for your ruling, gaps routed to you as decisions. Under your intent those judgments are engineering's.
+
+Two pieces of evidence argue for keeping some rules, though:
+- **The Knowledge Map, made freely,** came out coherent because it followed the platforms' own groupings. But its pointers no longer resolve, its questions assume one market, and its founder lane sent engineering's calls to you.
+- **Q1's first free run** answered placements in our own categories. 95% of its values were our words, not the platforms', and many were force-fits. That is why the placement step was reshaped on 11 October.
+
+So the line I'd draw is between two kinds of rule:
+- **Keep the rules that tie claims to evidence:** the platform's own words, a citation for every claim, and every reading marked. They are established practice (traceability; `PLAN.md` section 9), and they are what guarantees you that no agent invents beyond the evidence.
+- **Drop the rules that turn one person's concerns into categories.**
+
+The model's brief now keeps only two categories beyond the platforms' words, and both come from your intent:
+- **class or slot:** what the platform establishes, and where outside parties plug in;
+- **the platform company's own service:** a separate line such as payments, shipping or a buyer app, which marks the services your list keeps for you.
+
+Everything else stays in the platforms' own words, with the reading marked.
+
+## 10. The text as it would be recorded
+
+You agreed with each point above, so these are the rows I'd write on your go. Each row's basis is your messages of 29 October.
+
+**Row 1, Sharrwah's intent.** Your text verbatim, and then the lines added on review:
+
+> A need one of my markets shows that the class doesn't meet is a product gap: engineering keeps room for it where that is cheap, and building it goes with that market's setup.
+>
+> In my list of services, the decision is whether Sharrwah's own company operates the service in the merchant's business (payments, balances, financing, shipping, a marketplace, point of sale, data services, a buyer app), where and when. The platform's capabilities for each remain the class's.
+>
+> Keeping room means no commitment closes it. It doesn't mean designing it before its time.
+>
+> My decision of 28 October stays in force where this one doesn't restate it: Sharrwah competes on regional fit, through local ecosystems and partners, and on product quality.
+
+**Row 2, architecture alongside the subjects.** Not before the class's model has its extent. Then architecture and the model's detail grow together, area by area, beside the subjects, with spikes for the questions the model raises.
+
+**Row 3, quality.** The order stands for now:
+1. trustworthiness;
+2. coherence and user experience;
+3. performance;
+4. completeness, read as what each release delivers, never what the model covers.
+
+Scale numbers come later.
+
+**Not rows,** since they aren't decisions:
+- E5, now engineering's ruling (section 6);
+- depth over speed, which isn't decided;
+- building ahead, which the intent takes in.
+
+## 11. The plan as it would change
+
+Each change goes in its section, with a dated line in section 11 saying what it removes or weakens (`PLAN.md` section 9).
+
+| Section | The change | What it removes or weakens, and the risk |
+| --- | --- | --- |
+| 1, the aim | The work establishes the class's model, its extent first, before architecture. Then architecture and the model's detail grow area by area beside the subjects, and the register of costly decisions continues within it. The guard on the first market stays, now stated as your intent's rule: a market fills slots and never defines the platform | Weakens "decisions expensive to change later" as the only output. Risk: scope grows. It is held by doing breadth first, and depth only area by area |
+| 3, who decides | Your list, verbatim. Everything else is engineering's, and each ruling is listed at the next report for your veto | Removes your "scope" and "building ahead". Risk: engineering calls go unseen. That risk moves to the veto list at every report |
+| 4, the sequence | A stage for the class's model. Part 1: each concern's area and each area's labels. Part 2: the product map. Then an independent review, and a report of the extent. The subjects continue as the analysis of where the class varies by market | Adds a stage, and removes nothing. Subjects run beside the model, and S-03's company questions are yours |
+| 5, the gates | G3, after each subject, brings you only what your list holds. Engineering's rulings are listed for veto. The extent's report is engineering's, with your veto. G4 accepts the model's extent and the register | Weakens G3 from every founder item to your list. Risk: an item you'd want slips through. It is held by the veto list |
+| 6, the rules | The narrowing test. The kinds class, slot and world. The evidence rules stay as they are | Removes nothing |
