@@ -1,0 +1,363 @@
+Skip to content
+Search
+/
+Ask AI
+Create account
+Sign in
+Get started
+Payments
+Revenue
+Risk
+Data
+Money management
+Stablecoins
+Embedded finance
+Developer resources
+APIs & SDKs
+Help
+Home
+/
+Embedded finance
+/
+Capabilities and information requirements
+Required verification information
+Identify current and future information requirements that connected accounts must provide based on their business, location, and requested capabilities.
+Ask about this page
+Set up agent
+How to use this tool
+To view the current requirements for your connected accounts, enter your configuration using the following form. Use the Requirement update dropdown to see updated requirements for a current or upcoming requirement update. The Capabilities dropdown only includes capabilities that are compatible with the selected configuration. To compare your current requirements with the requirements for a different configuration or upcoming update, select the Setup B tab and enter the different configuration or update. Then turn on the Compare toggle.
+See the Connect integration guide to learn more about connected account configurations.
+View upcoming changes needed in Europe
+Configure Setup A to your current setup for accounts in Europe. Then repeat for Setup B, selecting Europe in the Requirement update field. Use the Compare toggle to view differences.
+Updates for Europe are subject to change. Learn more about upcoming changes in Europe.
+Setup A
+Setup B
+Compare
+[ ]
+Accounts API
+v1
+Platform country
+United States (US)
+Account country
+United Arab Emirates (AE)
+Dashboard type
+none
+Service agreement
+Learn more about service agreement types
+full
+Business type
+company
+Business structure
+Select…
+Requirements update
+Learn more about upcoming requirements updates
+None
+No requirement updates for this account country.
+Capabilities
+Learn more about capabilities
+transfers, card_payments
+[x]
+Table
+[ ]
+JSON
+Copy prompt for LLM
+Owners
+View API docs
+Requirement
+Verification
+Enforcement action
+Testing
+Name
+owners.first_name
+owners.last_name
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+—
+Date of birth
+owners.dob.day
+owners.dob.month
+owners.dob.year
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+View test tokens
+Address
+owners.address.line1
+owners.address.state
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+View test tokens
+Tax information
+owners.id_number
+Emirates ID (EID) - 15 digit number. For non-UAE nationals a passport number is acceptable
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+View test tokens
+Nationality
+owners.nationality
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+—
+Passport
+owners.documents.passport.files
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+—
+Company
+View API docs
+Requirement
+Verification
+Enforcement action
+Testing
+Company name
+company.name
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+View test tokens
+Company address
+company.address.line1
+company.address.state
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+View test tokens
+Company phone
+company.phone
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+View test tokens
+Company tax ID
+company.tax_id
+Company Registration Number
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+View test tokens
+Owners provided
+company.owners_provided
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+—
+Executives provided
+company.executives_provided
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+—
+Executives
+View API docs
+Requirement
+Verification
+Enforcement action
+Testing
+Name
+executives.first_name
+executives.last_name
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+—
+Date of birth
+executives.dob.day
+executives.dob.month
+executives.dob.year
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+View test tokens
+Address
+executives.address.line1
+executives.address.state
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+View test tokens
+Tax information
+executives.id_number
+Emirates ID (EID) - 15 digit number. For non-UAE nationals a passport number is acceptable
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+View test tokens
+Nationality
+executives.nationality
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+—
+Passport
+executives.documents.passport.files
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+—
+Account
+View API docs
+Requirement
+Verification
+Enforcement action
+Testing
+Merchant category code
+business_profile.mcc
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+—
+URL
+business_profile.url
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+View test tokens
+Product description
+business_profile.product_description
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+View test tokens
+Support phone
+business_profile.support_phone
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+View test tokens
+Terms of service
+tos_acceptance.date
+tos_acceptance.ip
+—
+Card payments and Transfers will be paused immediately if not provided.
+Also, Card payments, Payouts, and Transfers will be paused immediately if not verified.
+—
+External account
+external_account
+—
+Payouts will be paused immediately if not provided.
+—
+Representative
+View API docs
+Requirement
+Verification
+Enforcement action
+Testing
+Name
+representative.first_name
+representative.last_name
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+—
+Date of birth
+representative.dob.day
+representative.dob.month
+representative.dob.year
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+View test tokens
+Address
+representative.address.line1
+representative.address.state
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+View test tokens
+Email
+representative.email
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+—
+Phone
+representative.phone
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+View test tokens
+Tax information
+representative.id_number
+Emirates ID (EID) - 15 digit number. For non-UAE nationals a passport number is acceptable
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+View test tokens
+Job title
+representative.relationship.title
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+—
+Relationship with legal entity
+representative.relationship.executive
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+—
+Nationality
+representative.nationality
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+—
+Passport
+representative.documents.passport.files
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+—
+Documents
+View API docs
+Requirement
+Verification
+Enforcement action
+Testing
+Trade license
+documents.company_license.files
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+—
+Memorandum of Association
+documents.company_memorandum_of_association.files
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+—
+Proof of bank account
+documents.bank_account_ownership_verification.files
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+—
+Additional information
+Processing live charges and receiving payouts
+In the UAE, company documents such as the
+Trade License
+and
+Proof of Bank Account
+as well as relevant identity documents must be verified before a connected account can start processing live charges and receiving payouts
+. For all businesses except sole establishments and free zone establishments, the
+Memorandum of Association
+must be verified as well.
+Uploading identity documents
+For the company representative, beneficial owners and executives, we require the following identity documents for verification:
+Passport: all individuals
+Emirates ID: UAE nationals & UAE residents
+Residence visa: foreign nationals who are resident in the UAE
+The Emirates ID can be provided in the parameter called
+verification.document
+. Passports and residence visas should be provided under a separate parameter called
+documents
+.
+Keeping up to date with expired verification documents
+In the UAE, Stripe is required to keep up to date with a company’s
+Trade License
+in addition to the primary identity document of the company’s representative, beneficial owners and executives. The primary identity document is either the Emirates ID for UAE nationals and residents, otherwise it’s an individual’s
+Passport
+. Companies have up to 28 days after the expiration date of these documents to provide an updated version. Expired documents appear under
+company requirements
+or
+individual requirements
+and marked as currently due for 2 weeks before capabilities become disabled.
+Ultimate Beneficial Owners
+Stripe is required to verify all the beneficial owners of a business. These are the individuals who own 25% or more of the primary business. If a holding company has 25% or more ownership of the business, then the Memorandum of Association of this holding company as well that of the primary business must be uploaded. These documents must show the persons where
+relationship.owner
+is set to true.
+Additional information on the company representative
+This connected account needs to be activated by a person, known as the company representative, with significant responsibility to control, manage, or direct the organization and is authorized by the organization to agree to Stripe’s terms. The representative must either be an owner or an executive, which you specify by setting
+relationship.owner
+to true or
+relationship.executive
+to true. For a sole establishment or free zone establishment, the account must be activated by the owner of the business.
+VAT Information
+Stripe doesn’t charge UAE VAT on Stripe fees to customers located in the UAE, where a valid UAE VAT ID has been provided. Local UAE VAT self-assessment obligations might be triggered upon receipt of a monthly invoice
+from Stripe. Stripe does charge UAE VAT at 5% on Stripe fees to customers located in the UAE, where a valid UAE VAT ID hasn’t been provided.
+Power of Attorney
+If the company representative doesn’t appear on the company’s Trade License or the Memorandum of Association, then you must upload a
+Power of Attorney
+that shows that the company representative has the authority to act on behalf of the company or a notarized letter of authorization.
+Supported business structures
+In the UAE, the only possible business type is company and the following business structures
+are accepted:
+sole_establishment
+free_zone_establishment
+llc
+free_zone_llc
+Setup A:6 sections · 51 requirements
+Was this page helpful?
+Yes
+No
+Need help? Contact Support.
+Chat with Stripe developers on Discord.
+Check out our changelog.
+Questions? Contact Sales.
+LLM? Read llms.txt.
+Powered by Markdoc

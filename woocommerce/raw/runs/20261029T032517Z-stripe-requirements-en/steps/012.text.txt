@@ -1,0 +1,233 @@
+Skip to content
+Search
+/
+Ask AI
+Create account
+Sign in
+Get started
+Payments
+Revenue
+Risk
+Data
+Money management
+Stablecoins
+Embedded finance
+Developer resources
+APIs & SDKs
+Help
+Home
+/
+Embedded finance
+/
+Capabilities and information requirements
+Required verification information
+Identify current and future information requirements that connected accounts must provide based on their business, location, and requested capabilities.
+Ask about this page
+Set up agent
+How to use this tool
+To view the current requirements for your connected accounts, enter your configuration using the following form. Use the Requirement update dropdown to see updated requirements for a current or upcoming requirement update. The Capabilities dropdown only includes capabilities that are compatible with the selected configuration. To compare your current requirements with the requirements for a different configuration or upcoming update, select the Setup B tab and enter the different configuration or update. Then turn on the Compare toggle.
+See the Connect integration guide to learn more about connected account configurations.
+View upcoming changes needed in Europe
+Configure Setup A to your current setup for accounts in Europe. Then repeat for Setup B, selecting Europe in the Requirement update field. Use the Compare toggle to view differences.
+Updates for Europe are subject to change. Learn more about upcoming changes in Europe.
+Setup A
+Setup B
+Compare
+[ ]
+Accounts API
+v1
+Platform country
+United States (US)
+Account country
+Saudi Arabia (SA)
+Dashboard type
+none
+Service agreement
+Learn more about service agreement types
+recipient
+Account country only supports recipient service agreements.
+Business type
+company
+Business structure
+Select…
+Requirements update
+Learn more about upcoming requirements updates
+None
+No requirement updates for this account country.
+Capabilities
+Learn more about capabilities
+transfers
+The card_payments capability is not available for accounts with a recipient service agreement.
+[x]
+Table
+[ ]
+JSON
+Copy prompt for LLM
+Company
+View API docs
+Requirement
+Verification
+Enforcement action
+Testing
+Company name
+company.name
+—
+Payments and Transfers will be paused immediately if not provided.
+View test tokens
+Company address
+company.address.city
+company.address.line1
+company.address.postal_code
+—
+Payments and Transfers will be paused immediately if not provided.
+View test tokens
+Account
+View API docs
+Requirement
+Verification
+Enforcement action
+Testing
+Terms of service
+tos_acceptance.date
+tos_acceptance.ip
+—
+Payments will be paused immediately if not provided.
+—
+External account
+external_account
+—
+Payouts will be paused immediately if not provided.
+—
+Setup A:2 sections · 7 requirements
+Was this page helpful?
+Yes
+No
+Need help? Contact Support.
+Chat with Stripe developers on Discord.
+Check out our changelog.
+Questions? Contact Sales.
+LLM? Read llms.txt.
+Powered by Markdoc
+Account country
+Account country
+Albania (AL)
+Algeria (DZ)
+Angola (AO)
+Antigua & Barbuda (AG)
+Argentina (AR)
+Armenia (AM)
+Australia (AU)
+Austria (AT)
+Azerbaijan (AZ)
+Bahamas (BS)
+Bahrain (BH)
+Bangladesh (BD)
+Belgium (BE)
+Benin (BJ)
+Bhutan (BT)
+Bolivia (BO)
+Bosnia & Herzegovina (BA)
+Botswana (BW)
+Brazil (BR)
+Brunei (BN)
+Bulgaria (BG)
+Cambodia (KH)
+Canada (CA)
+Chile (CL)
+Colombia (CO)
+Costa Rica (CR)
+Côte d’Ivoire (CI)
+Croatia (HR)
+Cyprus (CY)
+Czech Republic (CZ)
+Denmark (DK)
+Dominican Republic (DO)
+Ecuador (EC)
+Egypt (EG)
+El Salvador (SV)
+Estonia (EE)
+Ethiopia (ET)
+Finland (FI)
+France (FR)
+Gabon (GA)
+Gambia (GM)
+Germany (DE)
+Ghana (GH)
+Gibraltar (GI)
+Greece (GR)
+Guatemala (GT)
+Guyana (GY)
+Hong Kong (HK)
+Hungary (HU)
+Iceland (IS)
+India (IN)
+Indonesia (ID)
+Ireland (IE)
+Israel (IL)
+Italy (IT)
+Jamaica (JM)
+Japan (JP)
+Jordan (JO)
+Kazakhstan (KZ)
+Kenya (KE)
+Kuwait (KW)
+Laos (LA)
+Latvia (LV)
+Liechtenstein (LI)
+Lithuania (LT)
+Luxembourg (LU)
+Macao SAR China (MO)
+Madagascar (MG)
+Malaysia (MY)
+Malta (MT)
+Mauritius (MU)
+Mexico (MX)
+Moldova (MD)
+Monaco (MC)
+Mongolia (MN)
+Morocco (MA)
+Mozambique (MZ)
+Namibia (NA)
+Netherlands (NL)
+New Zealand (NZ)
+Niger (NE)
+Nigeria (NG)
+North Macedonia (MK)
+Norway (NO)
+Oman (OM)
+Pakistan (PK)
+Panama (PA)
+Paraguay (PY)
+Peru (PE)
+Philippines (PH)
+Poland (PL)
+Portugal (PT)
+Qatar (QA)
+Romania (RO)
+Rwanda (RW)
+San Marino (SM)
+Saudi Arabia (SA)
+Senegal (SN)
+Serbia (RS)
+Singapore (SG)
+Slovakia (SK)
+Slovenia (SI)
+South Africa (ZA)
+South Korea (KR)
+Spain (ES)
+Sri Lanka (LK)
+St. Lucia (LC)
+Sweden (SE)
+Switzerland (CH)
+Taiwan (TW)
+Tanzania (TZ)
+Thailand (TH)
+Trinidad & Tobago (TT)
+Tunisia (TN)
+Turkey (TR)
+United Arab Emirates (AE)
+United Kingdom (GB)
+United States (US)
+Uruguay (UY)
+Uzbekistan (UZ)
+Vietnam (VN)

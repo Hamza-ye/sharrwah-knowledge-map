@@ -1,0 +1,268 @@
+- link "Skip to content":
+  - /url: "#main-content"
+- link "The Stripe Docs logo":
+  - /url: /
+  - img "The Stripe Docs logo"
+- button "Search"
+- button "Stripe Assistant": Ask AI
+- link "Create account":
+  - /url: https://dashboard.stripe.com/register/connect
+- link "Sign in":
+  - /url: https://dashboard.stripe.com/login?redirect=https%3A%2F%2Fdocs.stripe.com%2Fconnect%2Frequired-verification-information
+- navigation "Documentation topics":
+  - list:
+    - listitem:
+      - link "Get started":
+        - /url: /get-started
+    - listitem:
+      - link "Payments":
+        - /url: /payments
+    - listitem:
+      - link "Revenue":
+        - /url: /revenue
+    - listitem:
+      - link "Risk":
+        - /url: /risk
+    - listitem:
+      - link "Data":
+        - /url: /data
+    - listitem:
+      - link "Money management":
+        - /url: /money-management
+    - listitem:
+      - link "Stablecoins":
+        - /url: /stablecoins
+    - listitem:
+      - link "Embedded finance":
+        - /url: /connect
+    - listitem:
+      - link "Developer resources":
+        - /url: /development
+- button "APIs & SDKs"
+- button "Help"
+- button "Change the country setting":
+  - img
+- button "Change the language setting"
+- button "Click to open the sidebar and show the navigation":
+  - img "Click to open the sidebar and show the navigation"
+- navigation "Breadcrumbs":
+  - list:
+    - listitem:
+      - link "Home":
+        - /url: /
+      - text: /
+    - listitem:
+      - link "Embedded finance":
+        - /url: /connect
+      - text: /
+    - listitem: Capabilities and information requirements
+- article:
+  - heading "Required verification information" [level=1]
+  - heading "Identify current and future information requirements that connected accounts must provide based on their business, location, and requested capabilities." [level=2]
+  - toolbar "Actions":
+    - button "Ask about this page"
+    - separator
+    - button "Set up agent"
+  - button "How to use this tool"
+  - region "How to use this tool":
+    - paragraph:
+      - text: To view the current requirements for your connected accounts, enter your configuration using the following form. Use the
+      - strong: Requirement update
+      - text: dropdown to see updated requirements for a current or upcoming requirement update. The
+      - strong: Capabilities
+      - text: dropdown only includes capabilities that are compatible with the selected configuration. To compare your current requirements with the requirements for a different configuration or upcoming update, select the
+      - strong: Setup B
+      - text: tab and enter the different configuration or update. Then turn on the
+      - strong: Compare
+      - text: toggle.
+    - paragraph:
+      - text: See the
+      - link "Connect integration guide":
+        - /url: /connect/interactive-platform-guide
+      - text: to learn more about connected account configurations.
+  - button "View upcoming changes needed in Europe"
+  - region "View upcoming changes needed in Europe":
+    - paragraph:
+      - text: Configure
+      - strong: Setup A
+      - text: to your current setup for accounts in Europe. Then repeat for
+      - strong: Setup B
+      - text: ", selecting Europe in the"
+      - strong: Requirement update
+      - text: field. Use the
+      - strong: Compare
+      - text: toggle to view differences.
+    - paragraph:
+      - text: Updates for Europe are subject to change.
+      - link "Learn more about upcoming changes":
+        - /url: https://support.stripe.com/questions/europe-verification-requirement-updates-for-connected-accounts
+      - text: in Europe.
+  - tablist:
+    - tab "Setup A" [selected]
+    - tab "Setup B"
+  - text: Compare
+  - switch "Compare"
+  - tabpanel "Setup A":
+    - text: Accounts API
+    - button "Accounts API": v1
+    - text: Platform country
+    - button "Platform country": United States (US)
+    - text: Account country
+    - button "Account country": Saudi Arabia (SA)
+    - text: Dashboard type
+    - button "Dashboard type": none
+    - text: Service agreement
+    - link "Learn more about service agreement types":
+      - /url: https://docs.stripe.com/connect/service-agreement-types
+    - button "Service agreement" [disabled]: recipient
+    - text: Account country only supports recipient service agreements. Business type
+    - button "Business type": company
+    - text: Business structure
+    - button "Business structure": Select…
+    - text: Requirements update
+    - link "Learn more about upcoming requirements updates":
+      - /url: https://docs.stripe.com/connect/upcoming-requirements-updates
+    - button "Requirements update" [disabled]: None
+    - text: No requirement updates for this account country. Capabilities
+    - link "Learn more about capabilities":
+      - /url: https://docs.stripe.com/connect/account-capabilities?accounts-namespace=v1
+    - button "Capabilities": transfers
+    - alert:
+      - text: The
+      - code: card_payments
+      - text: capability is not available for accounts with a
+      - code: recipient
+      - text: service agreement.
+  - separator
+  - group "viewingOptionToggle":
+    - tab "Table" [selected]:
+      - radio "Table" [checked]
+      - text: Table
+    - tab "JSON":
+      - radio "JSON"
+      - text: JSON
+  - button "Copy prompt for LLM"
+  - separator
+  - tabpanel "Table":
+    - button "Company" [expanded]:
+      - heading "Company" [level=4]
+    - link "View API docs":
+      - /url: https://docs.stripe.com/api/accounts/object#account_object-company
+    - region "Company":
+      - table:
+        - rowgroup:
+          - row "Requirement Verification Enforcement action Testing":
+            - columnheader
+            - columnheader "Requirement"
+            - columnheader "Verification"
+            - columnheader "Enforcement action"
+            - columnheader "Testing"
+        - rowgroup:
+          - row "Company name company.name — Payments and Transfers will be paused immediately if not provided. View test tokens":
+            - cell "Company name"
+            - cell "company.name":
+              - list:
+                - listitem:
+                  - code: company.name
+            - cell "—"
+            - cell "Payments and Transfers will be paused immediately if not provided.":
+              - text: Payments and Transfers will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "View test tokens":
+              - link "View test tokens":
+                - /url: https://docs.stripe.com/connect/testing#test-company-name-verification
+          - row "Company address company.address.city company.address.line1 company.address.postal_code — Payments and Transfers will be paused immediately if not provided. View test tokens":
+            - cell "Company address"
+            - cell "company.address.city company.address.line1 company.address.postal_code":
+              - list:
+                - listitem:
+                  - code: company.address.city
+                - listitem:
+                  - code: company.address.line1
+                - listitem:
+                  - code: company.address.postal_code
+            - cell "—"
+            - cell "Payments and Transfers will be paused immediately if not provided.":
+              - text: Payments and Transfers will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "View test tokens":
+              - link "View test tokens":
+                - /url: https://docs.stripe.com/connect/testing#test-validation-addresses
+    - button "Account" [expanded]:
+      - heading "Account" [level=4]
+    - link "View API docs":
+      - /url: https://docs.stripe.com/api/accounts/object
+    - region "Account":
+      - table:
+        - rowgroup:
+          - row "Requirement Verification Enforcement action Testing":
+            - columnheader
+            - columnheader "Requirement"
+            - columnheader "Verification"
+            - columnheader "Enforcement action"
+            - columnheader "Testing"
+        - rowgroup:
+          - row "Terms of service tos_acceptance.date tos_acceptance.ip — Payments will be paused immediately if not provided. —":
+            - cell "Terms of service"
+            - cell "tos_acceptance.date tos_acceptance.ip":
+              - list:
+                - listitem:
+                  - code: tos_acceptance.date
+                - listitem:
+                  - code: tos_acceptance.ip
+            - cell "—"
+            - cell "Payments will be paused immediately if not provided.":
+              - text: Payments will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "—"
+          - row "External account external_account — Payouts will be paused immediately if not provided. —":
+            - cell "External account"
+            - cell "external_account":
+              - list:
+                - listitem:
+                  - code: external_account
+            - cell "—"
+            - cell "Payouts will be paused immediately if not provided.":
+              - text: Payouts will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "—"
+    - text: "Setup A: 2 sections · 7 requirements"
+  - text: Was this page helpful?
+  - button "Yes"
+  - button "No"
+  - separator
+  - list:
+    - listitem:
+      - text: Need help?
+      - link "Contact Support":
+        - /url: https://support.stripe.com/
+      - text: .
+    - listitem:
+      - text: Chat with Stripe developers on
+      - link "Discord":
+        - /url: https://stripe.com/go/developer-chat
+      - text: .
+    - listitem:
+      - text: Check out our
+      - link "changelog":
+        - /url: /changelog
+      - text: .
+    - listitem:
+      - text: Questions?
+      - link "Contact Sales":
+        - /url: https://stripe.com/contact/sales
+      - text: .
+    - listitem:
+      - text: LLM?
+      - link "Read llms.txt":
+        - /url: /llms.txt
+      - text: .
+    - listitem:
+      - text: Powered by
+      - link "Markdoc":
+        - /url: https://markdoc.dev
+- iframe

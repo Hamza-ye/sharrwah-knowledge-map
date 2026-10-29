@@ -1,0 +1,784 @@
+- link "Skip to content":
+  - /url: "#main-content"
+- link "The Stripe Docs logo":
+  - /url: /
+  - img "The Stripe Docs logo"
+- button "Search"
+- button "Stripe Assistant": Ask AI
+- link "Create account":
+  - /url: https://dashboard.stripe.com/register/connect
+- link "Sign in":
+  - /url: https://dashboard.stripe.com/login?redirect=https%3A%2F%2Fdocs.stripe.com%2Fconnect%2Frequired-verification-information
+- navigation "Documentation topics":
+  - list:
+    - listitem:
+      - link "Get started":
+        - /url: /get-started
+    - listitem:
+      - link "Payments":
+        - /url: /payments
+    - listitem:
+      - link "Revenue":
+        - /url: /revenue
+    - listitem:
+      - link "Risk":
+        - /url: /risk
+    - listitem:
+      - link "Data":
+        - /url: /data
+    - listitem:
+      - link "Money management":
+        - /url: /money-management
+    - listitem:
+      - link "Stablecoins":
+        - /url: /stablecoins
+    - listitem:
+      - link "Embedded finance":
+        - /url: /connect
+    - listitem:
+      - link "Developer resources":
+        - /url: /development
+- button "APIs & SDKs"
+- button "Help"
+- button "Change the country setting":
+  - img
+- button "Change the language setting"
+- button "Click to open the sidebar and show the navigation":
+  - img "Click to open the sidebar and show the navigation"
+- navigation "Breadcrumbs":
+  - list:
+    - listitem:
+      - link "Home":
+        - /url: /
+      - text: /
+    - listitem:
+      - link "Embedded finance":
+        - /url: /connect
+      - text: /
+    - listitem: Capabilities and information requirements
+- article:
+  - heading "Required verification information" [level=1]
+  - heading "Identify current and future information requirements that connected accounts must provide based on their business, location, and requested capabilities." [level=2]
+  - toolbar "Actions":
+    - button "Ask about this page"
+    - separator
+    - button "Set up agent"
+  - button "How to use this tool"
+  - region "How to use this tool":
+    - paragraph:
+      - text: To view the current requirements for your connected accounts, enter your configuration using the following form. Use the
+      - strong: Requirement update
+      - text: dropdown to see updated requirements for a current or upcoming requirement update. The
+      - strong: Capabilities
+      - text: dropdown only includes capabilities that are compatible with the selected configuration. To compare your current requirements with the requirements for a different configuration or upcoming update, select the
+      - strong: Setup B
+      - text: tab and enter the different configuration or update. Then turn on the
+      - strong: Compare
+      - text: toggle.
+    - paragraph:
+      - text: See the
+      - link "Connect integration guide":
+        - /url: /connect/interactive-platform-guide
+      - text: to learn more about connected account configurations.
+  - button "View upcoming changes needed in Europe"
+  - region "View upcoming changes needed in Europe":
+    - paragraph:
+      - text: Configure
+      - strong: Setup A
+      - text: to your current setup for accounts in Europe. Then repeat for
+      - strong: Setup B
+      - text: ", selecting Europe in the"
+      - strong: Requirement update
+      - text: field. Use the
+      - strong: Compare
+      - text: toggle to view differences.
+    - paragraph:
+      - text: Updates for Europe are subject to change.
+      - link "Learn more about upcoming changes":
+        - /url: https://support.stripe.com/questions/europe-verification-requirement-updates-for-connected-accounts
+      - text: in Europe.
+  - tablist:
+    - tab "Setup A" [selected]
+    - tab "Setup B"
+  - text: Compare
+  - switch "Compare"
+  - tabpanel "Setup A":
+    - text: Accounts API
+    - button "Accounts API": v1
+    - text: Platform country
+    - button "Platform country": United States (US)
+    - text: Account country
+    - button "Account country": United States (US)
+    - text: Dashboard type
+    - button "Dashboard type": none
+    - text: Service agreement
+    - link "Learn more about service agreement types":
+      - /url: https://docs.stripe.com/connect/service-agreement-types
+    - button "Service agreement" [disabled]: full
+    - text: Account country only supports full service agreements. Business type
+    - button "Business type": company
+    - text: Business structure
+    - button "Business structure": Select…
+    - text: Requirements update
+    - link "Learn more about upcoming requirements updates":
+      - /url: https://docs.stripe.com/connect/upcoming-requirements-updates
+    - button "Requirements update": Select…
+    - text: Capabilities
+    - link "Learn more about capabilities":
+      - /url: https://docs.stripe.com/connect/account-capabilities?accounts-namespace=v1
+    - button "Capabilities": transfers, card_payments
+  - separator
+  - group "viewingOptionToggle":
+    - tab "Table" [selected]:
+      - radio "Table" [checked]
+      - text: Table
+    - tab "JSON":
+      - radio "JSON"
+      - text: JSON
+  - button "Copy prompt for LLM"
+  - separator
+  - tabpanel "Table":
+    - button "Company" [expanded]:
+      - heading "Company" [level=4]
+    - link "View API docs":
+      - /url: https://docs.stripe.com/api/accounts/object#account_object-company
+    - region "Company":
+      - table:
+        - rowgroup:
+          - row "Requirement Verification Enforcement action Testing":
+            - columnheader
+            - columnheader "Requirement"
+            - columnheader "Verification"
+            - columnheader "Enforcement action"
+            - columnheader "Testing"
+        - rowgroup:
+          - row "Company name company.name — Card payments and Transfers will be paused immediately if not provided. Also, Card payments, Payouts, and Transfers will be paused immediately if not verified. View test tokens":
+            - cell "Company name"
+            - cell "company.name":
+              - list:
+                - listitem:
+                  - code: company.name
+            - cell "—"
+            - cell "Card payments and Transfers will be paused immediately if not provided. Also, Card payments, Payouts, and Transfers will be paused immediately if not verified.":
+              - text: Card payments and Transfers will be paused immediately if not
+              - strong: provided
+              - text: . Also, Card payments, Payouts, and Transfers will be paused immediately if not
+              - strong: verified
+              - text: .
+            - cell "View test tokens":
+              - link "View test tokens":
+                - /url: https://docs.stripe.com/connect/testing#test-company-name-verification
+          - row "Company address company.address.city company.address.line1 company.address.postal_code company.address.state Must be a U.S. address. PO boxes are not allowed. Card payments and Payouts will be paused immediately if not provided. Also, Payouts will be paused in 30 days after requesting capability or when lifetime total payment volume reaches $600 if not verified. View test tokens":
+            - cell "Company address"
+            - cell "company.address.city company.address.line1 company.address.postal_code company.address.state":
+              - list:
+                - listitem:
+                  - code: company.address.city
+                - listitem:
+                  - code: company.address.line1
+                - listitem:
+                  - code: company.address.postal_code
+                - listitem:
+                  - code: company.address.state
+            - cell "Must be a U.S. address. PO boxes are not allowed.":
+              - list:
+                - listitem: Must be a U.S. address. PO boxes are not allowed.
+            - cell "Card payments and Payouts will be paused immediately if not provided. Also, Payouts will be paused in 30 days after requesting capability or when lifetime total payment volume reaches $600 if not verified.":
+              - text: Card payments and Payouts will be paused immediately if not
+              - strong: provided
+              - text: . Also, Payouts will be paused in 30 days after requesting capability or when lifetime total payment volume reaches $600 if not
+              - strong: verified
+              - text: .
+            - cell "View test tokens":
+              - link "View test tokens":
+                - /url: https://docs.stripe.com/connect/testing#test-validation-addresses
+          - row "Company phone company.phone Must be a U.S. phone number. Card payments and Payouts will be paused immediately if not verified. View test tokens":
+            - cell "Company phone"
+            - cell "company.phone":
+              - list:
+                - listitem:
+                  - code: company.phone
+            - cell "Must be a U.S. phone number.":
+              - list:
+                - listitem: Must be a U.S. phone number.
+            - cell "Card payments and Payouts will be paused immediately if not verified.":
+              - text: Card payments and Payouts will be paused immediately if not
+              - strong: verified
+              - text: .
+            - cell "View test tokens":
+              - link "View test tokens":
+                - /url: https://docs.stripe.com/connect/testing#test-phone-number-validation
+          - row "Company tax ID company.tax_id — Payouts will be paused when lifetime total payment volume reaches $3,000 if not provided. Also, Card payments and Payouts will be paused immediately if not verified. View test tokens":
+            - cell "Company tax ID"
+            - cell "company.tax_id":
+              - list:
+                - listitem:
+                  - code: company.tax_id
+            - cell "—"
+            - cell "Payouts will be paused when lifetime total payment volume reaches $3,000 if not provided. Also, Card payments and Payouts will be paused immediately if not verified.":
+              - text: Payouts will be paused when lifetime total payment volume reaches $3,000 if not
+              - strong: provided
+              - text: . Also, Card payments and Payouts will be paused immediately if not
+              - strong: verified
+              - text: .
+            - cell "View test tokens":
+              - link "View test tokens":
+                - /url: https://docs.stripe.com/connect/testing#test-business-tax-ids
+          - row "Owners provided company.owners_provided — Card payments and Payouts will be paused immediately if not provided. —":
+            - cell "Owners provided"
+            - cell "company.owners_provided":
+              - list:
+                - listitem:
+                  - code: company.owners_provided
+            - cell "—"
+            - cell "Card payments and Payouts will be paused immediately if not provided.":
+              - text: Card payments and Payouts will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "—"
+    - button "Account" [expanded]:
+      - heading "Account" [level=4]
+    - link "View API docs":
+      - /url: https://docs.stripe.com/api/accounts/object
+    - region "Account":
+      - table:
+        - rowgroup:
+          - row "Requirement Verification Enforcement action Testing":
+            - columnheader
+            - columnheader "Requirement"
+            - columnheader "Verification"
+            - columnheader "Enforcement action"
+            - columnheader "Testing"
+        - rowgroup:
+          - row "Merchant category code business_profile.mcc — Card payments and Payouts will be paused immediately if not provided. —":
+            - cell "Merchant category code"
+            - cell "business_profile.mcc":
+              - list:
+                - listitem:
+                  - code: business_profile.mcc
+            - cell "—"
+            - cell "Card payments and Payouts will be paused immediately if not provided.":
+              - text: Card payments and Payouts will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "—"
+          - row "URL business_profile.url or business_profile.product_description Must be a valid, publicly accessible business website. Website content should match your business name and product description. Card payments and Transfers will be paused immediately if not provided. Also, Card payments, Payouts, and Transfers will be paused immediately if not verified. View test tokens":
+            - cell "URL"
+            - cell "business_profile.url or business_profile.product_description":
+              - list:
+                - listitem:
+                  - code: business_profile.url
+                  - text: or
+                  - code: business_profile.product_description
+            - cell "Must be a valid, publicly accessible business website. Website content should match your business name and product description.":
+              - list:
+                - listitem: Must be a valid, publicly accessible business website.
+                - listitem: Website content should match your business name and product description.
+            - cell "Card payments and Transfers will be paused immediately if not provided. Also, Card payments, Payouts, and Transfers will be paused immediately if not verified.":
+              - text: Card payments and Transfers will be paused immediately if not
+              - strong: provided
+              - text: . Also, Card payments, Payouts, and Transfers will be paused immediately if not
+              - strong: verified
+              - text: .
+            - cell "View test tokens":
+              - link "View test tokens":
+                - /url: https://docs.stripe.com/connect/testing#test-business-url-verification
+          - 'row "Statement descriptors settings.payments.statement_descriptor Must be a valid statement descriptor: at least 5 characters, similar to the business name or URL, not a well-known generic name. Card payments and Payouts will be paused immediately if not verified. View test tokens"':
+            - cell "Statement descriptors"
+            - cell "settings.payments.statement_descriptor":
+              - list:
+                - listitem:
+                  - code: settings.payments.statement_descriptor
+            - 'cell "Must be a valid statement descriptor: at least 5 characters, similar to the business name or URL, not a well-known generic name."':
+              - list:
+                - listitem: "Must be a valid statement descriptor: at least 5 characters, similar to the business name or URL, not a well-known generic name."
+            - cell "Card payments and Payouts will be paused immediately if not verified.":
+              - text: Card payments and Payouts will be paused immediately if not
+              - strong: verified
+              - text: .
+            - cell "View test tokens":
+              - link "View test tokens":
+                - /url: https://docs.stripe.com/connect/testing#test-statement-descriptor-verification
+          - row "Terms of service tos_acceptance.date tos_acceptance.ip — Payments will be paused immediately if not provided. —":
+            - cell "Terms of service"
+            - cell "tos_acceptance.date tos_acceptance.ip":
+              - list:
+                - listitem:
+                  - code: tos_acceptance.date
+                - listitem:
+                  - code: tos_acceptance.ip
+            - cell "—"
+            - cell "Payments will be paused immediately if not provided.":
+              - text: Payments will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "—"
+          - row "External account external_account — Payouts will be paused immediately if not provided. —":
+            - cell "External account"
+            - cell "external_account":
+              - list:
+                - listitem:
+                  - code: external_account
+            - cell "—"
+            - cell "Payouts will be paused immediately if not provided.":
+              - text: Payouts will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "—"
+    - button "Representative" [expanded]:
+      - heading "Representative" [level=4]
+    - link "View API docs":
+      - /url: https://docs.stripe.com/api/persons/object
+    - region "Representative":
+      - table:
+        - rowgroup:
+          - row "Requirement Verification Enforcement action Testing":
+            - columnheader
+            - columnheader "Requirement"
+            - columnheader "Verification"
+            - columnheader "Enforcement action"
+            - columnheader "Testing"
+        - rowgroup:
+          - row "Name representative.first_name representative.last_name — Card payments and Payouts will be paused immediately if not provided. —":
+            - cell "Name"
+            - cell "representative.first_name representative.last_name":
+              - list:
+                - listitem:
+                  - code: representative.first_name
+                - listitem:
+                  - code: representative.last_name
+            - cell "—"
+            - cell "Card payments and Payouts will be paused immediately if not provided.":
+              - text: Card payments and Payouts will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "—"
+          - row "Date of birth representative.dob.day representative.dob.month representative.dob.year Must be between 13 and 120 years old. Card payments and Payouts will be paused immediately if not verified. View test tokens":
+            - cell "Date of birth"
+            - cell "representative.dob.day representative.dob.month representative.dob.year":
+              - list:
+                - listitem:
+                  - code: representative.dob.day
+                - listitem:
+                  - code: representative.dob.month
+                - listitem:
+                  - code: representative.dob.year
+            - cell "Must be between 13 and 120 years old.":
+              - list:
+                - listitem: Must be between 13 and 120 years old.
+            - cell "Card payments and Payouts will be paused immediately if not verified.":
+              - text: Card payments and Payouts will be paused immediately if not
+              - strong: verified
+              - text: .
+            - cell "View test tokens":
+              - link "View test tokens":
+                - /url: https://docs.stripe.com/connect/testing#test-dobs
+          - row "Address representative.address.city representative.address.line1 representative.address.postal_code representative.address.state PO boxes are not allowed. Card payments and Payouts will be paused immediately if not provided. Also, Payouts will be paused in 30 days after requesting capability or when lifetime total payment volume reaches $600 if not verified. View test tokens":
+            - cell "Address"
+            - cell "representative.address.city representative.address.line1 representative.address.postal_code representative.address.state":
+              - list:
+                - listitem:
+                  - code: representative.address.city
+                - listitem:
+                  - code: representative.address.line1
+                - listitem:
+                  - code: representative.address.postal_code
+                - listitem:
+                  - code: representative.address.state
+            - cell "PO boxes are not allowed.":
+              - list:
+                - listitem: PO boxes are not allowed.
+            - cell "Card payments and Payouts will be paused immediately if not provided. Also, Payouts will be paused in 30 days after requesting capability or when lifetime total payment volume reaches $600 if not verified.":
+              - text: Card payments and Payouts will be paused immediately if not
+              - strong: provided
+              - text: . Also, Payouts will be paused in 30 days after requesting capability or when lifetime total payment volume reaches $600 if not
+              - strong: verified
+              - text: .
+            - cell "View test tokens":
+              - link "View test tokens":
+                - /url: https://docs.stripe.com/connect/testing#test-verification-addresses
+          - row "Email representative.email — Card payments and Payouts will be paused immediately if not provided. —":
+            - cell "Email"
+            - cell "representative.email":
+              - list:
+                - listitem:
+                  - code: representative.email
+            - cell "—"
+            - cell "Card payments and Payouts will be paused immediately if not provided.":
+              - text: Card payments and Payouts will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "—"
+          - row "Phone representative.phone — Card payments and Payouts will be paused immediately if not verified. View test tokens":
+            - cell "Phone"
+            - cell "representative.phone":
+              - list:
+                - listitem:
+                  - code: representative.phone
+            - cell "—"
+            - cell "Card payments and Payouts will be paused immediately if not verified.":
+              - text: Card payments and Payouts will be paused immediately if not
+              - strong: verified
+              - text: .
+            - cell "View test tokens":
+              - link "View test tokens":
+                - /url: https://docs.stripe.com/connect/testing#test-phone-number-validation
+          - row "Tax information representative.ssn_last_4 Must be the last 4 digits of a 9 digit U.S. Social Security number (SSN). Card payments and Payouts will be paused immediately if not provided. View test tokens":
+            - cell "Tax information"
+            - cell "representative.ssn_last_4":
+              - list:
+                - listitem:
+                  - code: representative.ssn_last_4
+            - cell "Must be the last 4 digits of a 9 digit U.S. Social Security number (SSN).":
+              - list:
+                - listitem: Must be the last 4 digits of a 9 digit U.S. Social Security number (SSN).
+            - cell "Card payments and Payouts will be paused immediately if not provided.":
+              - text: Card payments and Payouts will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "View test tokens":
+              - link "View test tokens":
+                - /url: https://docs.stripe.com/connect/testing#test-personal-id-numbers
+          - row "Job title representative.relationship.title — Card payments and Payouts will be paused immediately if not provided. —":
+            - cell "Job title"
+            - cell "representative.relationship.title":
+              - list:
+                - listitem:
+                  - code: representative.relationship.title
+            - cell "—"
+            - cell "Card payments and Payouts will be paused immediately if not provided.":
+              - text: Card payments and Payouts will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "—"
+    - button "Owners" [expanded]:
+      - heading "Owners" [level=4]
+    - link "View API docs":
+      - /url: https://docs.stripe.com/api/persons/object
+    - region "Owners":
+      - table:
+        - rowgroup:
+          - row "Requirement Verification Enforcement action Testing":
+            - columnheader
+            - columnheader "Requirement"
+            - columnheader "Verification"
+            - columnheader "Enforcement action"
+            - columnheader "Testing"
+        - rowgroup:
+          - row "Name owners.first_name owners.last_name — Card payments and Payouts will be paused immediately if not provided. —":
+            - cell "Name"
+            - cell "owners.first_name owners.last_name":
+              - list:
+                - listitem:
+                  - code: owners.first_name
+                - listitem:
+                  - code: owners.last_name
+            - cell "—"
+            - cell "Card payments and Payouts will be paused immediately if not provided.":
+              - text: Card payments and Payouts will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "—"
+          - row "Email owners.email — Card payments and Payouts will be paused immediately if not provided. —":
+            - cell "Email"
+            - cell "owners.email":
+              - list:
+                - listitem:
+                  - code: owners.email
+            - cell "—"
+            - cell "Card payments and Payouts will be paused immediately if not provided.":
+              - text: Card payments and Payouts will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "—"
+    - heading "Additional information" [level=2]
+    - heading "Additional tax information" [level=4]:
+      - text: Additional tax information
+      - button
+    - paragraph:
+      - text: If Stripe can’t verify the
+      - code: company.tax_id
+      - text: ", upload a copy of"
+      - link "an IRS Letter 147C document or an IRS SS-4 confirmation letter":
+        - /url: https://support.stripe.com/questions/using-irs-documentation-as-reference-when-entering-business-name-and-tax-id-number-tin-for-us-based-businesses
+      - text: using the
+      - link "company.verification.document.front":
+        - /url: /api/accounts/object#account_object-company-verification-document-front
+      - text: parameter. The document must include the connected account’s
+      - code: company.name
+      - text: and
+      - code: company.tax_id
+      - text: .
+    - heading "Additional information on the account" [level=4]:
+      - text: Additional information on the account
+      - button
+    - paragraph:
+      - text: Enabling card payments requires a validated city, state, and postal code for
+      - code: company.address
+      - text: . It also requires the
+      - code: company.tax_id
+      - text: (EIN) within 30 days or before 1,500 USD in payments, whichever comes first. If Stripe can’t verify the EIN before the deadline, we disable card payments.
+    - paragraph:
+      - text: Enabling
+      - link "payouts":
+        - /url: /payouts
+      - text: ", requires a validated full"
+      - code: company.address
+      - text: and
+      - code: company.tax_id
+      - text: (EIN) within 30 days. Stripe disables payouts if we haven’t verified the full address or the
+      - code: company.tax_id
+      - text: before the deadline.
+    - heading "Additional information on the representative" [level=4]:
+      - text: Additional information on the representative
+      - button
+    - paragraph:
+      - text: A
+      - link "Person":
+        - /url: /api/persons
+      - text: known as a representative must activate this connected account. The representative must have significant responsibility to control, manage, or direct the organization, and must be authorized by the organization to agree to Stripe’s terms. The representative must be either
+      - link "an owner or an executive":
+        - /url: https://support.stripe.com/questions/beneficial-owner-and-director-definitions
+      - text: ", which you specify by setting"
+      - link "relationship.owner":
+        - /url: /api/persons/object#person_object-relationship-owner
+      - text: or
+      - link "relationship.executive":
+        - /url: /api/persons/object#person_object-relationship-executive
+      - text: to true.
+    - paragraph:
+      - text: If the representative fails verification with
+      - code: ssn_last_4
+      - text: ", then enabling card payments requires verifying their full SSN and their identity. Upload their full SSN using the"
+      - link "person.id_number":
+        - /url: /api/persons/update#update_person-id_number
+      - text: parameter.
+    - paragraph:
+      - text: If Stripe can’t verify the representative, or if the person doesn’t have an SSN, then enabling card payments requires you to provide a scan of an
+      - link "ID document":
+        - /url: /connect/handling-api-verification#acceptable-verification-documents
+      - text: . Upload the front and back of the document using the
+      - link "verification.document.front":
+        - /url: /api/persons/object#person_object-verification-document-front
+      - text: and
+      - link "verification.document.back":
+        - /url: /api/persons/object#person_object-verification-document-back
+      - text: parameters.
+    - heading "Additional information for minors" [level=4]:
+      - text: Additional information for minors
+      - button
+    - paragraph:
+      - text: If the account representative is a minor, you must verify the minor’s legal guardian. A legal guardian is a
+      - link "Person":
+        - /url: /api/persons
+      - text: object on the account with
+      - link "relationship.legal_guardian":
+        - /url: /api/persons/create#create_person-relationship-legal_guardian
+      - text: set to
+      - code: "true"
+      - text: . Additionally, the legal guardian must provide their information and sign the Stripe terms of service, which we store on the
+      - code: Person
+      - text: object that represents the guardian. Store the legal guardian’s terms of service acceptance in the
+      - link "additional_tos_acceptances":
+        - /url: /api/persons/create#create_person-additional_tos_acceptances
+      - text: hash.
+    - paragraph:
+      - text: If the legal guardian fails verification with their
+      - code: ssn_last_4
+      - text: ", then enabling card payments requires verifying their full SSN and their identity. Upload their full SSN using the"
+      - link "person.id_number":
+        - /url: /api/persons/update#update_person-id_number
+      - text: parameter.
+    - paragraph:
+      - text: If Stripe can’t verify the legal guardian, or if the person doesn’t have an SSN, then enabling card payments requires you to provide a scan of an
+      - link "ID document":
+        - /url: /connect/handling-api-verification#acceptable-verification-documents
+      - text: . Upload the front and back of the document using the
+      - link "verification.document.front":
+        - /url: /api/persons/object#person_object-verification-document-front
+      - text: and
+      - link "verification.document.back":
+        - /url: /api/persons/object#person_object-verification-document-back
+      - text: parameters.
+    - heading "Additional information on owners" [level=4]:
+      - text: Additional information on owners
+      - button
+    - paragraph:
+      - text: You must collect information on all
+      - link "owners":
+        - /url: https://support.stripe.com/questions/beneficial-owner-and-director-definitions
+      - text: who have 25% or more ownership of the company, represented by
+      - link "Person":
+        - /url: /api/persons
+      - text: objects on the account. When you finish collecting the required owner information, you must set
+      - link "company.owners_provided":
+        - /url: /api/accounts/update#update_account-company-owners_provided
+      - text: to true.
+    - paragraph: "If the company has any unverified 25% owners, Stripe can disable payouts on the connected account when it reaches 750,000 USD in charges. To avoid disabling payouts, you must collect the following information for all 25% owners:"
+    - list:
+      - listitem:
+        - link "address":
+          - /url: /api/persons/update#update_person-address
+      - listitem:
+        - link "dob.day":
+          - /url: /api/persons/update#update_person-dob-day
+      - listitem:
+        - link "dob.month":
+          - /url: /api/persons/update#update_person-dob-month
+      - listitem:
+        - link "dob.year":
+          - /url: /api/persons/update#update_person-dob-year
+      - listitem:
+        - link "id_number":
+          - /url: /api/persons/update#update_person-id_number
+      - listitem:
+        - link "phone":
+          - /url: /api/persons/update#update_person-phone
+    - paragraph:
+      - text: If Stripe can’t verify an owner, or if an owner doesn’t have an SSN, you must provide a scan of an
+      - link "ID document":
+        - /url: /connect/handling-api-verification#acceptable-verification-documents
+      - text: for them. Upload the front and back of the document using the
+      - link "verification.document.front":
+        - /url: /api/persons/object#person_object-verification-document-front
+      - text: and
+      - link "verification.document.back":
+        - /url: /api/persons/object#person_object-verification-document-back
+      - text: parameters.
+    - paragraph:
+      - text: Optionally, you can collect company ownership information by setting
+      - link "relationship.owner":
+        - /url: /api/persons/object#person_object-relationship-owner
+      - text: to true and
+      - link "relationship.percent_ownership":
+        - /url: /api/persons/object#person_object-relationship-percent_ownership
+      - text: to the person’s ownership percentage. If you don’t specify
+      - code: relationship.percent_ownership
+      - text: ", it defaults to 25%."
+    - heading "Supported business structures" [level=4]:
+      - text: Supported business structures
+      - button
+    - paragraph:
+      - text: Optionally, you can provide information on the
+      - link "legal structure":
+        - /url: /connect/identity-verification#business-structure
+      - text: of your connected account’s business using the
+      - link "company.structure":
+        - /url: /api/accounts/create#create_account-company-structure
+      - text: parameter.
+    - paragraph: "Stripe supports the following business structures for privately held companies:"
+    - list:
+      - listitem:
+        - code: multi_member_llc
+      - listitem:
+        - code: single_member_llc
+      - listitem:
+        - code: private_partnership
+      - listitem:
+        - code: private_corporation
+      - listitem:
+        - code: unincorporated_association
+    - paragraph:
+      - text: Stripe supports the following business structures for publicly traded companies. If you assign either of these structures to the business, then the
+      - link "representative":
+        - /url: "#additional-company-card-representative-us"
+      - text: doesn’t need to be an owner or an executive, and you don’t need to provide information on additional owners.
+    - list:
+      - listitem:
+        - code: public_corporation
+      - listitem:
+        - code: public_partnership
+    - heading "Tax reporting information" [level=4]:
+      - text: Tax reporting information
+      - button
+    - paragraph:
+      - text: By default, the requirements for
+      - code: transfers
+      - text: don’t collect all information at the appropriate thresholds to file IRS Form 1099-K or Form 1099-MISC. If your business has US federal 1099 filing requirements and plans to file these through Stripe, request the
+      - link "appropriate tax reporting capability":
+        - /url: /connect/account-capabilities?accounts-namespace=v1#tax-reporting
+      - text: and make sure to collect the
+      - link "necessary information":
+        - /url: /connect/required-verification-information-taxes
+      - text: from your users.
+    - heading "Threshold information" [level=4]:
+      - text: Threshold information
+      - button
+    - paragraph:
+      - text: In addition to the onboarding requirements, payouts require that you provide your connected account’s
+      - code: company.tax_id
+      - text: (EIN) before its charges reach a certain threshold. The threshold is either 10,000 USD or 3,000 USD, depending on your industry and Stripe’s review of your platform profile. If Stripe can’t verify your connected account’s EIN before it reaches the threshold, we disable payouts.
+    - heading "Payments threshold information" [level=4]:
+      - text: Payments threshold information
+      - button
+    - paragraph:
+      - text: When a connected account with
+      - code: card_payments
+      - text: reaches 500,000 USD in lifetime charges, we’ll collect the last four digits of their SSN or ITIN for US-resident owners and attempt to programmatically obtain the full nine digit SSN for them. If we’re unable to obtain the full number using information provided, the User will need to provide the full nine digits. If the full number has already been provided, it isn’t needed again.
+    - paragraph:
+      - text: For connected accounts with
+      - code: business_type
+      - text: set to
+      - code: individual
+      - text: ", and where the owner isn’t a minor, update the"
+      - code: Account
+      - text: ’s
+      - link "individual.id_number":
+        - /url: /api/accounts/update#update_account-individual-id_number
+      - text: . For other accounts, which have persons with
+      - code: relationship.legal_guardian
+      - text: ","
+      - code: relationship.representative
+      - text: ", or"
+      - code: relationship.owner
+      - text: set to true, update the appropriate
+      - code: Person
+      - text: ’s
+      - link "id_number":
+        - /url: /api/persons/update#update_person-id_number
+      - text: .
+    - heading "Support phone number" [level=4]:
+      - text: Support phone number
+      - button
+    - paragraph:
+      - text: For accounts without access to a Stripe-hosted dashboard, and where Stripe is responsible for negative balances, activating
+      - code: card_payments
+      - text: requires
+      - code: business_profile.support_phone
+      - text: .
+    - text: "Setup A: 4 sections · 30 requirements"
+  - text: Was this page helpful?
+  - button "Yes"
+  - button "No"
+  - separator
+  - list:
+    - listitem:
+      - text: Need help?
+      - link "Contact Support":
+        - /url: https://support.stripe.com/
+      - text: .
+    - listitem:
+      - text: Chat with Stripe developers on
+      - link "Discord":
+        - /url: https://stripe.com/go/developer-chat
+      - text: .
+    - listitem:
+      - text: Check out our
+      - link "changelog":
+        - /url: /changelog
+      - text: .
+    - listitem:
+      - text: Questions?
+      - link "Contact Sales":
+        - /url: https://stripe.com/contact/sales
+      - text: .
+    - listitem:
+      - text: LLM?
+      - link "Read llms.txt":
+        - /url: /llms.txt
+      - text: .
+    - listitem:
+      - text: Powered by
+      - link "Markdoc":
+        - /url: https://markdoc.dev
+- iframe

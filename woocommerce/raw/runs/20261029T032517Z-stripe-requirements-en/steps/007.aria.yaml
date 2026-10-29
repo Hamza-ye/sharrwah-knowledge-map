@@ -1,0 +1,894 @@
+- link "Skip to content":
+  - /url: "#main-content"
+- link "The Stripe Docs logo":
+  - /url: /
+  - img "The Stripe Docs logo"
+- button "Search"
+- button "Stripe Assistant": Ask AI
+- link "Create account":
+  - /url: https://dashboard.stripe.com/register/connect
+- link "Sign in":
+  - /url: https://dashboard.stripe.com/login?redirect=https%3A%2F%2Fdocs.stripe.com%2Fconnect%2Frequired-verification-information
+- navigation "Documentation topics":
+  - list:
+    - listitem:
+      - link "Get started":
+        - /url: /get-started
+    - listitem:
+      - link "Payments":
+        - /url: /payments
+    - listitem:
+      - link "Revenue":
+        - /url: /revenue
+    - listitem:
+      - link "Risk":
+        - /url: /risk
+    - listitem:
+      - link "Data":
+        - /url: /data
+    - listitem:
+      - link "Money management":
+        - /url: /money-management
+    - listitem:
+      - link "Stablecoins":
+        - /url: /stablecoins
+    - listitem:
+      - link "Embedded finance":
+        - /url: /connect
+    - listitem:
+      - link "Developer resources":
+        - /url: /development
+- button "APIs & SDKs"
+- button "Help"
+- button "Change the country setting":
+  - img
+- button "Change the language setting"
+- button "Click to open the sidebar and show the navigation":
+  - img "Click to open the sidebar and show the navigation"
+- navigation "Breadcrumbs":
+  - list:
+    - listitem:
+      - link "Home":
+        - /url: /
+      - text: /
+    - listitem:
+      - link "Embedded finance":
+        - /url: /connect
+      - text: /
+    - listitem: Capabilities and information requirements
+- article:
+  - heading "Required verification information" [level=1]
+  - heading "Identify current and future information requirements that connected accounts must provide based on their business, location, and requested capabilities." [level=2]
+  - toolbar "Actions":
+    - button "Ask about this page"
+    - separator
+    - button "Set up agent"
+  - button "How to use this tool"
+  - region "How to use this tool":
+    - paragraph:
+      - text: To view the current requirements for your connected accounts, enter your configuration using the following form. Use the
+      - strong: Requirement update
+      - text: dropdown to see updated requirements for a current or upcoming requirement update. The
+      - strong: Capabilities
+      - text: dropdown only includes capabilities that are compatible with the selected configuration. To compare your current requirements with the requirements for a different configuration or upcoming update, select the
+      - strong: Setup B
+      - text: tab and enter the different configuration or update. Then turn on the
+      - strong: Compare
+      - text: toggle.
+    - paragraph:
+      - text: See the
+      - link "Connect integration guide":
+        - /url: /connect/interactive-platform-guide
+      - text: to learn more about connected account configurations.
+  - button "View upcoming changes needed in Europe"
+  - region "View upcoming changes needed in Europe":
+    - paragraph:
+      - text: Configure
+      - strong: Setup A
+      - text: to your current setup for accounts in Europe. Then repeat for
+      - strong: Setup B
+      - text: ", selecting Europe in the"
+      - strong: Requirement update
+      - text: field. Use the
+      - strong: Compare
+      - text: toggle to view differences.
+    - paragraph:
+      - text: Updates for Europe are subject to change.
+      - link "Learn more about upcoming changes":
+        - /url: https://support.stripe.com/questions/europe-verification-requirement-updates-for-connected-accounts
+      - text: in Europe.
+  - tablist:
+    - tab "Setup A" [selected]
+    - tab "Setup B"
+  - text: Compare
+  - switch "Compare"
+  - tabpanel "Setup A":
+    - text: Accounts API
+    - button "Accounts API": v1
+    - text: Platform country
+    - button "Platform country": United States (US)
+    - text: Account country
+    - button "Account country": United Arab Emirates (AE)
+    - text: Dashboard type
+    - button "Dashboard type": none
+    - text: Service agreement
+    - link "Learn more about service agreement types":
+      - /url: https://docs.stripe.com/connect/service-agreement-types
+    - button "Service agreement": full
+    - text: Business type
+    - button "Business type": company
+    - text: Business structure
+    - button "Business structure": Select…
+    - text: Requirements update
+    - link "Learn more about upcoming requirements updates":
+      - /url: https://docs.stripe.com/connect/upcoming-requirements-updates
+    - button "Requirements update" [disabled]: None
+    - text: No requirement updates for this account country. Capabilities
+    - link "Learn more about capabilities":
+      - /url: https://docs.stripe.com/connect/account-capabilities?accounts-namespace=v1
+    - button "Capabilities": card_payments, transfers
+  - separator
+  - group "viewingOptionToggle":
+    - tab "Table" [selected]:
+      - radio "Table" [checked]
+      - text: Table
+    - tab "JSON":
+      - radio "JSON"
+      - text: JSON
+  - button "Copy prompt for LLM"
+  - separator
+  - tabpanel "Table":
+    - button "Owners" [expanded]:
+      - heading "Owners" [level=4]
+    - link "View API docs":
+      - /url: https://docs.stripe.com/api/persons/object
+    - region "Owners":
+      - table:
+        - rowgroup:
+          - row "Requirement Verification Enforcement action Testing":
+            - columnheader
+            - columnheader "Requirement"
+            - columnheader "Verification"
+            - columnheader "Enforcement action"
+            - columnheader "Testing"
+        - rowgroup:
+          - row "Name owners.first_name owners.last_name — Card payments, Payouts, and Transfers will be paused immediately if not provided. —":
+            - cell "Name"
+            - cell "owners.first_name owners.last_name":
+              - list:
+                - listitem:
+                  - code: owners.first_name
+                - listitem:
+                  - code: owners.last_name
+            - cell "—"
+            - cell "Card payments, Payouts, and Transfers will be paused immediately if not provided.":
+              - text: Card payments, Payouts, and Transfers will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "—"
+          - row "Date of birth owners.dob.day owners.dob.month owners.dob.year — Card payments, Payouts, and Transfers will be paused immediately if not provided. View test tokens":
+            - cell "Date of birth"
+            - cell "owners.dob.day owners.dob.month owners.dob.year":
+              - list:
+                - listitem:
+                  - code: owners.dob.day
+                - listitem:
+                  - code: owners.dob.month
+                - listitem:
+                  - code: owners.dob.year
+            - cell "—"
+            - cell "Card payments, Payouts, and Transfers will be paused immediately if not provided.":
+              - text: Card payments, Payouts, and Transfers will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "View test tokens":
+              - link "View test tokens":
+                - /url: https://docs.stripe.com/connect/testing#test-dobs
+          - row "Address owners.address.line1 owners.address.state — Card payments, Payouts, and Transfers will be paused immediately if not provided. View test tokens":
+            - cell "Address"
+            - cell "owners.address.line1 owners.address.state":
+              - list:
+                - listitem:
+                  - code: owners.address.line1
+                - listitem:
+                  - code: owners.address.state
+            - cell "—"
+            - cell "Card payments, Payouts, and Transfers will be paused immediately if not provided.":
+              - text: Card payments, Payouts, and Transfers will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "View test tokens":
+              - link "View test tokens":
+                - /url: https://docs.stripe.com/connect/testing#test-verification-addresses
+          - row "Tax information owners.id_number Emirates ID (EID) - 15 digit number. For non-UAE nationals a passport number is acceptable Card payments, Payouts, and Transfers will be paused immediately if not provided. View test tokens":
+            - cell "Tax information"
+            - cell "owners.id_number":
+              - list:
+                - listitem:
+                  - code: owners.id_number
+            - cell "Emirates ID (EID) - 15 digit number. For non-UAE nationals a passport number is acceptable":
+              - list:
+                - listitem: Emirates ID (EID) - 15 digit number. For non-UAE nationals a passport number is acceptable
+            - cell "Card payments, Payouts, and Transfers will be paused immediately if not provided.":
+              - text: Card payments, Payouts, and Transfers will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "View test tokens":
+              - link "View test tokens":
+                - /url: https://docs.stripe.com/connect/testing#test-personal-id-numbers
+          - row "Nationality owners.nationality — Card payments, Payouts, and Transfers will be paused immediately if not provided. —":
+            - cell "Nationality"
+            - cell "owners.nationality":
+              - list:
+                - listitem:
+                  - code: owners.nationality
+            - cell "—"
+            - cell "Card payments, Payouts, and Transfers will be paused immediately if not provided.":
+              - text: Card payments, Payouts, and Transfers will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "—"
+          - row "Passport owners.documents.passport.files — Card payments, Payouts, and Transfers will be paused immediately if not provided. —":
+            - cell "Passport"
+            - cell "owners.documents.passport.files":
+              - list:
+                - listitem:
+                  - code: owners.documents.passport.files
+            - cell "—"
+            - cell "Card payments, Payouts, and Transfers will be paused immediately if not provided.":
+              - text: Card payments, Payouts, and Transfers will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "—"
+    - button "Company" [expanded]:
+      - heading "Company" [level=4]
+    - link "View API docs":
+      - /url: https://docs.stripe.com/api/accounts/object#account_object-company
+    - region "Company":
+      - table:
+        - rowgroup:
+          - row "Requirement Verification Enforcement action Testing":
+            - columnheader
+            - columnheader "Requirement"
+            - columnheader "Verification"
+            - columnheader "Enforcement action"
+            - columnheader "Testing"
+        - rowgroup:
+          - row "Company name company.name — Card payments, Payouts, and Transfers will be paused immediately if not provided. View test tokens":
+            - cell "Company name"
+            - cell "company.name":
+              - list:
+                - listitem:
+                  - code: company.name
+            - cell "—"
+            - cell "Card payments, Payouts, and Transfers will be paused immediately if not provided.":
+              - text: Card payments, Payouts, and Transfers will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "View test tokens":
+              - link "View test tokens":
+                - /url: https://docs.stripe.com/connect/testing#test-company-name-verification
+          - row "Company address company.address.line1 company.address.state — Card payments, Payouts, and Transfers will be paused immediately if not provided. View test tokens":
+            - cell "Company address"
+            - cell "company.address.line1 company.address.state":
+              - list:
+                - listitem:
+                  - code: company.address.line1
+                - listitem:
+                  - code: company.address.state
+            - cell "—"
+            - cell "Card payments, Payouts, and Transfers will be paused immediately if not provided.":
+              - text: Card payments, Payouts, and Transfers will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "View test tokens":
+              - link "View test tokens":
+                - /url: https://docs.stripe.com/connect/testing#test-validation-addresses
+          - row "Company phone company.phone — Card payments, Payouts, and Transfers will be paused immediately if not provided. View test tokens":
+            - cell "Company phone"
+            - cell "company.phone":
+              - list:
+                - listitem:
+                  - code: company.phone
+            - cell "—"
+            - cell "Card payments, Payouts, and Transfers will be paused immediately if not provided.":
+              - text: Card payments, Payouts, and Transfers will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "View test tokens":
+              - link "View test tokens":
+                - /url: https://docs.stripe.com/connect/testing#test-phone-number-validation
+          - row "Company tax ID company.tax_id Company Registration Number Card payments, Payouts, and Transfers will be paused immediately if not provided. View test tokens":
+            - cell "Company tax ID"
+            - cell "company.tax_id":
+              - list:
+                - listitem:
+                  - code: company.tax_id
+            - cell "Company Registration Number":
+              - list:
+                - listitem: Company Registration Number
+            - cell "Card payments, Payouts, and Transfers will be paused immediately if not provided.":
+              - text: Card payments, Payouts, and Transfers will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "View test tokens":
+              - link "View test tokens":
+                - /url: https://docs.stripe.com/connect/testing#test-business-tax-ids
+          - row "Owners provided company.owners_provided — Card payments, Payouts, and Transfers will be paused immediately if not provided. —":
+            - cell "Owners provided"
+            - cell "company.owners_provided":
+              - list:
+                - listitem:
+                  - code: company.owners_provided
+            - cell "—"
+            - cell "Card payments, Payouts, and Transfers will be paused immediately if not provided.":
+              - text: Card payments, Payouts, and Transfers will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "—"
+          - row "Executives provided company.executives_provided — Card payments, Payouts, and Transfers will be paused immediately if not provided. —":
+            - cell "Executives provided"
+            - cell "company.executives_provided":
+              - list:
+                - listitem:
+                  - code: company.executives_provided
+            - cell "—"
+            - cell "Card payments, Payouts, and Transfers will be paused immediately if not provided.":
+              - text: Card payments, Payouts, and Transfers will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "—"
+    - button "Executives" [expanded]:
+      - heading "Executives" [level=4]
+    - link "View API docs":
+      - /url: https://docs.stripe.com/api/persons/object
+    - region "Executives":
+      - table:
+        - rowgroup:
+          - row "Requirement Verification Enforcement action Testing":
+            - columnheader
+            - columnheader "Requirement"
+            - columnheader "Verification"
+            - columnheader "Enforcement action"
+            - columnheader "Testing"
+        - rowgroup:
+          - row "Name executives.first_name executives.last_name — Card payments, Payouts, and Transfers will be paused immediately if not provided. —":
+            - cell "Name"
+            - cell "executives.first_name executives.last_name":
+              - list:
+                - listitem:
+                  - code: executives.first_name
+                - listitem:
+                  - code: executives.last_name
+            - cell "—"
+            - cell "Card payments, Payouts, and Transfers will be paused immediately if not provided.":
+              - text: Card payments, Payouts, and Transfers will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "—"
+          - row "Date of birth executives.dob.day executives.dob.month executives.dob.year — Card payments, Payouts, and Transfers will be paused immediately if not provided. View test tokens":
+            - cell "Date of birth"
+            - cell "executives.dob.day executives.dob.month executives.dob.year":
+              - list:
+                - listitem:
+                  - code: executives.dob.day
+                - listitem:
+                  - code: executives.dob.month
+                - listitem:
+                  - code: executives.dob.year
+            - cell "—"
+            - cell "Card payments, Payouts, and Transfers will be paused immediately if not provided.":
+              - text: Card payments, Payouts, and Transfers will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "View test tokens":
+              - link "View test tokens":
+                - /url: https://docs.stripe.com/connect/testing#test-dobs
+          - row "Address executives.address.line1 executives.address.state — Card payments, Payouts, and Transfers will be paused immediately if not provided. View test tokens":
+            - cell "Address"
+            - cell "executives.address.line1 executives.address.state":
+              - list:
+                - listitem:
+                  - code: executives.address.line1
+                - listitem:
+                  - code: executives.address.state
+            - cell "—"
+            - cell "Card payments, Payouts, and Transfers will be paused immediately if not provided.":
+              - text: Card payments, Payouts, and Transfers will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "View test tokens":
+              - link "View test tokens":
+                - /url: https://docs.stripe.com/connect/testing#test-verification-addresses
+          - row "Tax information executives.id_number Emirates ID (EID) - 15 digit number. For non-UAE nationals a passport number is acceptable Card payments, Payouts, and Transfers will be paused immediately if not provided. View test tokens":
+            - cell "Tax information"
+            - cell "executives.id_number":
+              - list:
+                - listitem:
+                  - code: executives.id_number
+            - cell "Emirates ID (EID) - 15 digit number. For non-UAE nationals a passport number is acceptable":
+              - list:
+                - listitem: Emirates ID (EID) - 15 digit number. For non-UAE nationals a passport number is acceptable
+            - cell "Card payments, Payouts, and Transfers will be paused immediately if not provided.":
+              - text: Card payments, Payouts, and Transfers will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "View test tokens":
+              - link "View test tokens":
+                - /url: https://docs.stripe.com/connect/testing#test-personal-id-numbers
+          - row "Nationality executives.nationality — Card payments, Payouts, and Transfers will be paused immediately if not provided. —":
+            - cell "Nationality"
+            - cell "executives.nationality":
+              - list:
+                - listitem:
+                  - code: executives.nationality
+            - cell "—"
+            - cell "Card payments, Payouts, and Transfers will be paused immediately if not provided.":
+              - text: Card payments, Payouts, and Transfers will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "—"
+          - row "Passport executives.documents.passport.files — Card payments, Payouts, and Transfers will be paused immediately if not provided. —":
+            - cell "Passport"
+            - cell "executives.documents.passport.files":
+              - list:
+                - listitem:
+                  - code: executives.documents.passport.files
+            - cell "—"
+            - cell "Card payments, Payouts, and Transfers will be paused immediately if not provided.":
+              - text: Card payments, Payouts, and Transfers will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "—"
+    - button "Account" [expanded]:
+      - heading "Account" [level=4]
+    - link "View API docs":
+      - /url: https://docs.stripe.com/api/accounts/object
+    - region "Account":
+      - table:
+        - rowgroup:
+          - row "Requirement Verification Enforcement action Testing":
+            - columnheader
+            - columnheader "Requirement"
+            - columnheader "Verification"
+            - columnheader "Enforcement action"
+            - columnheader "Testing"
+        - rowgroup:
+          - row "Merchant category code business_profile.mcc — Card payments, Payouts, and Transfers will be paused immediately if not provided. —":
+            - cell "Merchant category code"
+            - cell "business_profile.mcc":
+              - list:
+                - listitem:
+                  - code: business_profile.mcc
+            - cell "—"
+            - cell "Card payments, Payouts, and Transfers will be paused immediately if not provided.":
+              - text: Card payments, Payouts, and Transfers will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "—"
+          - row "URL business_profile.url — Card payments, Payouts, and Transfers will be paused immediately if not provided. View test tokens":
+            - cell "URL"
+            - cell "business_profile.url":
+              - list:
+                - listitem:
+                  - code: business_profile.url
+            - cell "—"
+            - cell "Card payments, Payouts, and Transfers will be paused immediately if not provided.":
+              - text: Card payments, Payouts, and Transfers will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "View test tokens":
+              - link "View test tokens":
+                - /url: https://docs.stripe.com/connect/testing#test-business-url-verification
+          - row "Product description business_profile.product_description — Card payments, Payouts, and Transfers will be paused immediately if not provided. View test tokens":
+            - cell "Product description"
+            - cell "business_profile.product_description":
+              - list:
+                - listitem:
+                  - code: business_profile.product_description
+            - cell "—"
+            - cell "Card payments, Payouts, and Transfers will be paused immediately if not provided.":
+              - text: Card payments, Payouts, and Transfers will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "View test tokens":
+              - link "View test tokens":
+                - /url: https://docs.stripe.com/connect/testing#test-product-description-verification
+          - row "Support phone business_profile.support_phone — Card payments, Payouts, and Transfers will be paused immediately if not provided. View test tokens":
+            - cell "Support phone"
+            - cell "business_profile.support_phone":
+              - list:
+                - listitem:
+                  - code: business_profile.support_phone
+            - cell "—"
+            - cell "Card payments, Payouts, and Transfers will be paused immediately if not provided.":
+              - text: Card payments, Payouts, and Transfers will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "View test tokens":
+              - link "View test tokens":
+                - /url: https://docs.stripe.com/connect/testing#test-phone-number-validation
+          - row "Terms of service tos_acceptance.date tos_acceptance.ip — Card payments and Transfers will be paused immediately if not provided. Also, Card payments, Payouts, and Transfers will be paused immediately if not verified. —":
+            - cell "Terms of service"
+            - cell "tos_acceptance.date tos_acceptance.ip":
+              - list:
+                - listitem:
+                  - code: tos_acceptance.date
+                - listitem:
+                  - code: tos_acceptance.ip
+            - cell "—"
+            - cell "Card payments and Transfers will be paused immediately if not provided. Also, Card payments, Payouts, and Transfers will be paused immediately if not verified.":
+              - text: Card payments and Transfers will be paused immediately if not
+              - strong: provided
+              - text: . Also, Card payments, Payouts, and Transfers will be paused immediately if not
+              - strong: verified
+              - text: .
+            - cell "—"
+          - row "External account external_account — Payouts will be paused immediately if not provided. —":
+            - cell "External account"
+            - cell "external_account":
+              - list:
+                - listitem:
+                  - code: external_account
+            - cell "—"
+            - cell "Payouts will be paused immediately if not provided.":
+              - text: Payouts will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "—"
+    - button "Representative" [expanded]:
+      - heading "Representative" [level=4]
+    - link "View API docs":
+      - /url: https://docs.stripe.com/api/persons/object
+    - region "Representative":
+      - table:
+        - rowgroup:
+          - row "Requirement Verification Enforcement action Testing":
+            - columnheader
+            - columnheader "Requirement"
+            - columnheader "Verification"
+            - columnheader "Enforcement action"
+            - columnheader "Testing"
+        - rowgroup:
+          - row "Name representative.first_name representative.last_name — Card payments, Payouts, and Transfers will be paused immediately if not provided. —":
+            - cell "Name"
+            - cell "representative.first_name representative.last_name":
+              - list:
+                - listitem:
+                  - code: representative.first_name
+                - listitem:
+                  - code: representative.last_name
+            - cell "—"
+            - cell "Card payments, Payouts, and Transfers will be paused immediately if not provided.":
+              - text: Card payments, Payouts, and Transfers will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "—"
+          - row "Date of birth representative.dob.day representative.dob.month representative.dob.year — Card payments, Payouts, and Transfers will be paused immediately if not provided. View test tokens":
+            - cell "Date of birth"
+            - cell "representative.dob.day representative.dob.month representative.dob.year":
+              - list:
+                - listitem:
+                  - code: representative.dob.day
+                - listitem:
+                  - code: representative.dob.month
+                - listitem:
+                  - code: representative.dob.year
+            - cell "—"
+            - cell "Card payments, Payouts, and Transfers will be paused immediately if not provided.":
+              - text: Card payments, Payouts, and Transfers will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "View test tokens":
+              - link "View test tokens":
+                - /url: https://docs.stripe.com/connect/testing#test-dobs
+          - row "Address representative.address.line1 representative.address.state — Card payments, Payouts, and Transfers will be paused immediately if not provided. View test tokens":
+            - cell "Address"
+            - cell "representative.address.line1 representative.address.state":
+              - list:
+                - listitem:
+                  - code: representative.address.line1
+                - listitem:
+                  - code: representative.address.state
+            - cell "—"
+            - cell "Card payments, Payouts, and Transfers will be paused immediately if not provided.":
+              - text: Card payments, Payouts, and Transfers will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "View test tokens":
+              - link "View test tokens":
+                - /url: https://docs.stripe.com/connect/testing#test-verification-addresses
+          - row "Email representative.email — Card payments, Payouts, and Transfers will be paused immediately if not provided. —":
+            - cell "Email"
+            - cell "representative.email":
+              - list:
+                - listitem:
+                  - code: representative.email
+            - cell "—"
+            - cell "Card payments, Payouts, and Transfers will be paused immediately if not provided.":
+              - text: Card payments, Payouts, and Transfers will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "—"
+          - row "Phone representative.phone — Card payments, Payouts, and Transfers will be paused immediately if not provided. View test tokens":
+            - cell "Phone"
+            - cell "representative.phone":
+              - list:
+                - listitem:
+                  - code: representative.phone
+            - cell "—"
+            - cell "Card payments, Payouts, and Transfers will be paused immediately if not provided.":
+              - text: Card payments, Payouts, and Transfers will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "View test tokens":
+              - link "View test tokens":
+                - /url: https://docs.stripe.com/connect/testing#test-phone-number-validation
+          - row "Tax information representative.id_number Emirates ID (EID) - 15 digit number. For non-UAE nationals a passport number is acceptable Card payments, Payouts, and Transfers will be paused immediately if not provided. View test tokens":
+            - cell "Tax information"
+            - cell "representative.id_number":
+              - list:
+                - listitem:
+                  - code: representative.id_number
+            - cell "Emirates ID (EID) - 15 digit number. For non-UAE nationals a passport number is acceptable":
+              - list:
+                - listitem: Emirates ID (EID) - 15 digit number. For non-UAE nationals a passport number is acceptable
+            - cell "Card payments, Payouts, and Transfers will be paused immediately if not provided.":
+              - text: Card payments, Payouts, and Transfers will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "View test tokens":
+              - link "View test tokens":
+                - /url: https://docs.stripe.com/connect/testing#test-personal-id-numbers
+          - row "Job title representative.relationship.title — Card payments, Payouts, and Transfers will be paused immediately if not provided. —":
+            - cell "Job title"
+            - cell "representative.relationship.title":
+              - list:
+                - listitem:
+                  - code: representative.relationship.title
+            - cell "—"
+            - cell "Card payments, Payouts, and Transfers will be paused immediately if not provided.":
+              - text: Card payments, Payouts, and Transfers will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "—"
+          - row "Relationship with legal entity representative.relationship.executive — Card payments, Payouts, and Transfers will be paused immediately if not provided. —":
+            - cell "Relationship with legal entity"
+            - cell "representative.relationship.executive":
+              - list:
+                - listitem:
+                  - code: representative.relationship.executive
+            - cell "—"
+            - cell "Card payments, Payouts, and Transfers will be paused immediately if not provided.":
+              - text: Card payments, Payouts, and Transfers will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "—"
+          - row "Nationality representative.nationality — Card payments, Payouts, and Transfers will be paused immediately if not provided. —":
+            - cell "Nationality"
+            - cell "representative.nationality":
+              - list:
+                - listitem:
+                  - code: representative.nationality
+            - cell "—"
+            - cell "Card payments, Payouts, and Transfers will be paused immediately if not provided.":
+              - text: Card payments, Payouts, and Transfers will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "—"
+          - row "Passport representative.documents.passport.files — Card payments, Payouts, and Transfers will be paused immediately if not provided. —":
+            - cell "Passport"
+            - cell "representative.documents.passport.files":
+              - list:
+                - listitem:
+                  - code: representative.documents.passport.files
+            - cell "—"
+            - cell "Card payments, Payouts, and Transfers will be paused immediately if not provided.":
+              - text: Card payments, Payouts, and Transfers will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "—"
+    - button "Documents" [expanded]:
+      - heading "Documents" [level=4]
+    - link "View API docs":
+      - /url: https://docs.stripe.com/api/accounts/update#update_account-documents
+    - region "Documents":
+      - table:
+        - rowgroup:
+          - row "Requirement Verification Enforcement action Testing":
+            - columnheader
+            - columnheader "Requirement"
+            - columnheader "Verification"
+            - columnheader "Enforcement action"
+            - columnheader "Testing"
+        - rowgroup:
+          - row "Trade license documents.company_license.files — Card payments, Payouts, and Transfers will be paused immediately if not provided. —":
+            - cell "Trade license"
+            - cell "documents.company_license.files":
+              - list:
+                - listitem:
+                  - code: documents.company_license.files
+            - cell "—"
+            - cell "Card payments, Payouts, and Transfers will be paused immediately if not provided.":
+              - text: Card payments, Payouts, and Transfers will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "—"
+          - row "Memorandum of Association documents.company_memorandum_of_association.files — Card payments, Payouts, and Transfers will be paused immediately if not provided. —":
+            - cell "Memorandum of Association"
+            - cell "documents.company_memorandum_of_association.files":
+              - list:
+                - listitem:
+                  - code: documents.company_memorandum_of_association.files
+            - cell "—"
+            - cell "Card payments, Payouts, and Transfers will be paused immediately if not provided.":
+              - text: Card payments, Payouts, and Transfers will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "—"
+          - row "Proof of bank account documents.bank_account_ownership_verification.files — Card payments, Payouts, and Transfers will be paused immediately if not provided. —":
+            - cell "Proof of bank account"
+            - cell "documents.bank_account_ownership_verification.files":
+              - list:
+                - listitem:
+                  - code: documents.bank_account_ownership_verification.files
+            - cell "—"
+            - cell "Card payments, Payouts, and Transfers will be paused immediately if not provided.":
+              - text: Card payments, Payouts, and Transfers will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "—"
+    - heading "Additional information" [level=2]
+    - heading "Processing live charges and receiving payouts" [level=4]:
+      - text: Processing live charges and receiving payouts
+      - button
+    - paragraph:
+      - text: In the UAE, company documents such as the
+      - link "Trade License":
+        - /url: /api/accounts/create#create_account-documents-company_license
+      - text: and
+      - link "Proof of Bank Account":
+        - /url: /api/accounts/create#create_account-documents-bank_account_ownership_verification
+      - text: as well as relevant identity documents must be verified before a connected account can start processing live charges and receiving
+      - link "payouts":
+        - /url: /payouts
+      - text: . For all businesses except sole establishments and free zone establishments, the
+      - link "Memorandum of Association":
+        - /url: /api/accounts/create#create_account-documents-company_memorandum_of_association
+      - text: must be verified as well.
+    - heading "Uploading identity documents" [level=4]:
+      - text: Uploading identity documents
+      - button
+    - paragraph: "For the company representative, beneficial owners and executives, we require the following identity documents for verification:"
+    - list:
+      - listitem: "Passport: all individuals"
+      - listitem: "Emirates ID: UAE nationals & UAE residents"
+      - listitem: "Residence visa: foreign nationals who are resident in the UAE"
+    - paragraph:
+      - text: The Emirates ID can be provided in the parameter called
+      - link "verification.document":
+        - /url: /api/persons/create#create_person-verification-document
+      - text: . Passports and residence visas should be provided under a separate parameter called
+      - link "documents":
+        - /url: /api/persons/create#create_person-documents
+      - text: .
+    - heading "Keeping up to date with expired verification documents" [level=4]:
+      - text: Keeping up to date with expired verification documents
+      - button
+    - paragraph:
+      - text: In the UAE, Stripe is required to keep up to date with a company’s
+      - link "Trade License":
+        - /url: /api/accounts/update#update_account-documents-company_license
+      - text: in addition to the primary identity document of the company’s representative, beneficial owners and executives. The primary identity document is either the Emirates ID for UAE nationals and residents, otherwise it’s an individual’s
+      - link "Passport":
+        - /url: /api/persons/update#update_person-documents-passport
+      - text: . Companies have up to 28 days after the expiration date of these documents to provide an updated version. Expired documents appear under
+      - link "company requirements":
+        - /url: /api/accounts/object#account_object-requirements-currently_due
+      - text: or
+      - link "individual requirements":
+        - /url: /api/persons/object#person_object-requirements-currently_due
+      - text: and marked as currently due for 2 weeks before capabilities become disabled.
+    - heading "Ultimate Beneficial Owners" [level=4]:
+      - text: Ultimate Beneficial Owners
+      - button
+    - paragraph:
+      - text: Stripe is required to verify all the
+      - link "beneficial owners":
+        - /url: https://support.stripe.com/questions/beneficial-owner-and-director-definitions
+      - text: of a business. These are the individuals who own 25% or more of the primary business. If a
+      - link "holding company":
+        - /url: https://support.stripe.com/questions/beneficial-ownership-by-a-trust-holding-company-or-other-legal-entity
+      - text: has 25% or more ownership of the business, then the Memorandum of Association of this holding company as well that of the primary business must be uploaded. These documents must show the persons where
+      - link "relationship.owner":
+        - /url: /api/persons/object#person_object-relationship-owner
+      - text: is set to true.
+    - heading "Additional information on the company representative" [level=4]:
+      - text: Additional information on the company representative
+      - button
+    - paragraph:
+      - text: This connected account needs to be activated by a person, known as the company representative, with significant responsibility to control, manage, or direct the organization and is authorized by the organization to agree to Stripe’s terms. The representative must either be
+      - link "an owner or an executive":
+        - /url: https://support.stripe.com/questions/beneficial-owner-and-director-definitions
+      - text: ", which you specify by setting"
+      - link "relationship.owner":
+        - /url: /api/persons/object#person_object-relationship-owner
+      - text: to
+      - code: "true"
+      - text: or
+      - link "relationship.executive":
+        - /url: /api/persons/object#person_object-relationship-executive
+      - text: to
+      - code: "true"
+      - text: . For a sole establishment or free zone establishment, the account must be activated by the owner of the business.
+    - heading "VAT Information" [level=4]:
+      - text: VAT Information
+      - button
+    - paragraph:
+      - text: Stripe doesn’t charge UAE VAT on Stripe fees to customers located in the UAE, where a valid UAE VAT ID has been provided. Local UAE VAT self-assessment obligations might be triggered upon receipt of a monthly
+      - link "invoice":
+        - /url: /api/invoices
+      - text: from Stripe. Stripe does charge UAE VAT at 5% on Stripe fees to customers located in the UAE, where a valid UAE VAT ID hasn’t been provided.
+    - heading "Power of Attorney" [level=4]:
+      - text: Power of Attorney
+      - button
+    - paragraph:
+      - text: If the company representative doesn’t appear on the company’s Trade License or the Memorandum of Association, then you must upload a
+      - link "Power of Attorney":
+        - /url: /api/persons/update#update_person-documents-company_authorization
+      - text: that shows that the company representative has the authority to act on behalf of the company or a notarized letter of authorization.
+    - heading "Supported business structures" [level=4]:
+      - text: Supported business structures
+      - button
+    - paragraph:
+      - text: In the UAE, the only possible business type is
+      - code: company
+      - text: and the following
+      - link "business structures":
+        - /url: /connect/identity-verification#business-structure
+      - text: "are accepted:"
+    - list:
+      - listitem:
+        - code: sole_establishment
+      - listitem:
+        - code: free_zone_establishment
+      - listitem:
+        - code: llc
+      - listitem:
+        - code: free_zone_llc
+    - text: "Setup A: 6 sections · 51 requirements"
+  - text: Was this page helpful?
+  - button "Yes"
+  - button "No"
+  - separator
+  - list:
+    - listitem:
+      - text: Need help?
+      - link "Contact Support":
+        - /url: https://support.stripe.com/
+      - text: .
+    - listitem:
+      - text: Chat with Stripe developers on
+      - link "Discord":
+        - /url: https://stripe.com/go/developer-chat
+      - text: .
+    - listitem:
+      - text: Check out our
+      - link "changelog":
+        - /url: /changelog
+      - text: .
+    - listitem:
+      - text: Questions?
+      - link "Contact Sales":
+        - /url: https://stripe.com/contact/sales
+      - text: .
+    - listitem:
+      - text: LLM?
+      - link "Read llms.txt":
+        - /url: /llms.txt
+      - text: .
+    - listitem:
+      - text: Powered by
+      - link "Markdoc":
+        - /url: https://markdoc.dev
+- iframe

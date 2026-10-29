@@ -1,0 +1,149 @@
+- group "Capabilities":
+  - combobox "Capabilities" [expanded]
+- listbox "Suggestions Capabilities":
+  - text: 1 of 46 selected
+  - checkbox "1 of 46 selected" [checked=mixed]
+  - text: Standard capabilities
+  - checkbox "Standard capabilities" [checked=mixed]
+  - group "Standard capabilities":
+    - option "Capabilities card_payments":
+      - checkbox "Capabilities"
+      - text: card_payments
+    - option "Capabilities transfers" [selected]:
+      - checkbox "Capabilities" [checked]
+      - text: transfers
+  - text: Local payment methods
+  - checkbox "Local payment methods"
+  - group "Local payment methods":
+    - option "Capabilities acss_debit_payments":
+      - checkbox "Capabilities"
+      - text: acss_debit_payments
+    - option "Capabilities bacs_debit_payments":
+      - checkbox "Capabilities"
+      - text: bacs_debit_payments
+    - option "Capabilities bancontact_payments":
+      - checkbox "Capabilities"
+      - text: bancontact_payments
+    - option "Capabilities cartes_bancaires_payments":
+      - checkbox "Capabilities"
+      - text: cartes_bancaires_payments
+    - option "Capabilities eps_payments":
+      - checkbox "Capabilities"
+      - text: eps_payments
+    - option "Capabilities giropay_payments":
+      - checkbox "Capabilities"
+      - text: giropay_payments
+    - option "Capabilities ideal_payments":
+      - checkbox "Capabilities"
+      - text: ideal_payments
+    - option "Capabilities oxxo_payments":
+      - checkbox "Capabilities"
+      - text: oxxo_payments
+    - option "Capabilities p24_payments":
+      - checkbox "Capabilities"
+      - text: p24_payments
+    - option "Capabilities sofort_payments":
+      - checkbox "Capabilities"
+      - text: sofort_payments
+    - option "Capabilities us_bank_account_ach_payments":
+      - checkbox "Capabilities"
+      - text: us_bank_account_ach_payments
+    - option "Capabilities affirm_payments":
+      - checkbox "Capabilities"
+      - text: affirm_payments
+    - option "Capabilities afterpay_clearpay_payments":
+      - checkbox "Capabilities"
+      - text: afterpay_clearpay_payments
+    - option "Capabilities klarna_payments":
+      - checkbox "Capabilities"
+      - text: klarna_payments
+    - option "Capabilities klarna_international_payments":
+      - checkbox "Capabilities"
+      - text: klarna_international_payments
+    - option "Capabilities twint_payments":
+      - checkbox "Capabilities"
+      - text: twint_payments
+    - option "Capabilities blik_payments":
+      - checkbox "Capabilities"
+      - text: blik_payments
+    - option "Capabilities blik_recurring_payments":
+      - checkbox "Capabilities"
+      - text: blik_recurring_payments
+    - option "Capabilities alipay_payments":
+      - checkbox "Capabilities"
+      - text: alipay_payments
+    - option "Capabilities amazon_pay_payments":
+      - checkbox "Capabilities"
+      - text: amazon_pay_payments
+    - option "Capabilities billie_payments":
+      - checkbox "Capabilities"
+      - text: billie_payments
+    - option "Capabilities bizum_payments":
+      - checkbox "Capabilities"
+      - text: bizum_payments
+    - option "Capabilities crypto_payments":
+      - checkbox "Capabilities"
+      - text: crypto_payments
+    - option "Capabilities kakao_pay_payments":
+      - checkbox "Capabilities"
+      - text: kakao_pay_payments
+    - option "Capabilities kr_card_payments":
+      - checkbox "Capabilities"
+      - text: kr_card_payments
+    - option "Capabilities kriya_payments":
+      - checkbox "Capabilities"
+      - text: kriya_payments
+    - option "Capabilities link_payments":
+      - checkbox "Capabilities"
+      - text: link_payments
+    - option "Capabilities mb_way_payments":
+      - checkbox "Capabilities"
+      - text: mb_way_payments
+    - option "Capabilities mondu_payments":
+      - checkbox "Capabilities"
+      - text: mondu_payments
+    - option "Capabilities multibanco_payments":
+      - checkbox "Capabilities"
+      - text: multibanco_payments
+    - option "Capabilities naver_pay_payments":
+      - checkbox "Capabilities"
+      - text: naver_pay_payments
+    - option "Capabilities pay_by_bank_payments":
+      - checkbox "Capabilities"
+      - text: pay_by_bank_payments
+    - option "Capabilities payco_payments":
+      - checkbox "Capabilities"
+      - text: payco_payments
+    - option "Capabilities paypal_payments":
+      - checkbox "Capabilities"
+      - text: paypal_payments
+    - option "Capabilities pix_payments":
+      - checkbox "Capabilities"
+      - text: pix_payments
+    - option "Capabilities revolut_pay_payments":
+      - checkbox "Capabilities"
+      - text: revolut_pay_payments
+    - option "Capabilities samsung_pay_payments":
+      - checkbox "Capabilities"
+      - text: samsung_pay_payments
+    - option "Capabilities satispay_payments":
+      - checkbox "Capabilities"
+      - text: satispay_payments
+    - option "Capabilities scalapay_payments":
+      - checkbox "Capabilities"
+      - text: scalapay_payments
+    - option "Capabilities sepa_debit_payments":
+      - checkbox "Capabilities"
+      - text: sepa_debit_payments
+    - option "Capabilities tamara_payments":
+      - checkbox "Capabilities"
+      - text: tamara_payments
+    - option "Capabilities toss_pay_payments":
+      - checkbox "Capabilities"
+      - text: toss_pay_payments
+    - option "Capabilities upi_payments":
+      - checkbox "Capabilities"
+      - text: upi_payments
+    - option "Capabilities wero_payments":
+      - checkbox "Capabilities"
+      - text: wero_payments

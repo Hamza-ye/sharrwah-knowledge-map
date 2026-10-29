@@ -1,0 +1,207 @@
+Skip to content
+Search
+/
+Ask AI
+Create account
+Sign in
+Get started
+Payments
+Revenue
+Risk
+Data
+Money management
+Stablecoins
+Embedded finance
+Developer resources
+APIs & SDKs
+Help
+Home
+/
+Embedded finance
+/
+Capabilities and information requirements
+Required verification information
+Identify current and future information requirements that connected accounts must provide based on their business, location, and requested capabilities.
+Ask about this page
+Set up agent
+How to use this tool
+To view the current requirements for your connected accounts, enter your configuration using the following form. Use the Requirement update dropdown to see updated requirements for a current or upcoming requirement update. The Capabilities dropdown only includes capabilities that are compatible with the selected configuration. To compare your current requirements with the requirements for a different configuration or upcoming update, select the Setup B tab and enter the different configuration or update. Then turn on the Compare toggle.
+See the Connect integration guide to learn more about connected account configurations.
+View upcoming changes needed in Europe
+Configure Setup A to your current setup for accounts in Europe. Then repeat for Setup B, selecting Europe in the Requirement update field. Use the Compare toggle to view differences.
+Updates for Europe are subject to change. Learn more about upcoming changes in Europe.
+Setup A
+Setup B
+Compare
+[ ]
+Accounts API
+v1
+Platform country
+United States (US)
+Account country
+United States (US)
+Dashboard type
+none
+Service agreement
+Learn more about service agreement types
+full
+Account country only supports full service agreements.
+Business type
+individual
+Requirements update
+Learn more about upcoming requirements updates
+Select…
+Capabilities
+Learn more about capabilities
+card_payments, transfers
+[x]
+Table
+[ ]
+JSON
+Copy prompt for LLM
+Account
+View API docs
+Requirement
+Verification
+Enforcement action
+Testing
+Merchant category code
+business_profile.mcc
+—
+Card payments and Payouts will be paused immediately if not provided.
+—
+URL
+business_profile.url or business_profile.product_description
+Must be a valid, publicly accessible business website.
+Website content should match your business name and product description.
+Card payments and Transfers will be paused immediately if not provided.
+Also, Card payments, Payouts, and Transfers will be paused immediately if not verified.
+View test tokens
+Statement descriptors
+settings.payments.statement_descriptor
+Must be a valid statement descriptor: at least 5 characters, similar to the business name or URL, not a well-known generic name.
+Card payments and Payouts will be paused immediately if not verified.
+View test tokens
+Terms of service
+tos_acceptance.date
+tos_acceptance.ip
+—
+Payments will be paused immediately if not provided.
+—
+External account
+external_account
+—
+Payouts will be paused immediately if not provided.
+—
+Individual
+View API docs
+Requirement
+Verification
+Enforcement action
+Testing
+Name
+individual.first_name
+individual.last_name
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+—
+Date of birth
+individual.dob.day
+individual.dob.month
+individual.dob.year
+Must be between 13 and 120 years old.
+Payouts will be paused when lifetime total payment volume reaches $3,000 if not provided.
+Also, Card payments and Payouts will be paused immediately if not verified.
+View test tokens
+Address
+individual.address.city
+individual.address.line1
+individual.address.postal_code
+individual.address.state
+PO boxes are not allowed.
+Card payments and Payouts will be paused immediately if not provided.
+Also, Payouts will be paused in 30 days after requesting capability or when lifetime total payment volume reaches $600 if not verified.
+View test tokens
+Email
+individual.email
+—
+Card payments and Payouts will be paused immediately if not provided.
+—
+Phone
+individual.phone
+—
+Card payments and Payouts will be paused immediately if not verified.
+View test tokens
+Tax information
+individual.ssn_last_4
+Must be the last 4 digits of a 9 digit U.S. Social Security number (SSN).
+Card payments and Payouts will be paused immediately if not provided.
+View test tokens
+Additional information
+Additional information on the individual
+Enabling card payments requires a validated city, state, and ZIP code for individual.address.
+Enabling payouts requires a validated full individual.address. Stripe disables payouts if we haven’t verified the full address within 30 days.
+If the individual fails verification with their ssn_last_4, then enabling card payments requires verifying their full SSN and their identity. Upload their full SSN using the
+individual.id_number
+parameter.
+Learn how to test identity verification information.
+Additional information for minors
+If the account representative is a minor, you must verify the minor’s legal guardian. A legal guardian is a
+Person
+object on the account with
+relationship.legal_guardian
+set to true. Additionally, the legal guardian must provide their information and sign the Stripe terms of service, which we store on the Person object that represents the guardian. Store the legal guardian’s terms of service acceptance in the
+additional_tos_acceptances
+hash.
+If the legal guardian fails verification with their ssn_last_4, then enabling card payments requires verifying their full SSN and their identity. Upload their full SSN using the
+person.id_number
+parameter.
+If Stripe can’t verify the legal guardian, or if the person doesn’t have an SSN, then enabling card payments requires you to provide a scan of an ID document
+. Upload the front and back of the document using the
+verification.document.front
+and
+verification.document.back
+parameters.
+Supported business structures
+While uncommon, there are circumstances where an individual business operates and is treated more like a company, such as a single-member LLC. For these accounts, you can optionally provide information on their legal structure
+using the
+company.structure
+parameter.
+If your connected account’s business has only one member or owner, and is registered as an LLC with a US state, you can set the business_type to company and the company.structure to single_member_llc. You collect the same required information, except you use the
+company
+hash and the
+Persons
+API instead of the individual hash. In that case, you map requirements in the individual hash to the corresponding properties of the account’s representative. For example, set first_name on the representative’s Person instead of individual.first_name on the Account.
+If your connected account has a business identification (for example, a tax ID separate from their personal ID, or a business address different than their home address), you can set the business_type to company and the company.structure to sole_proprietorship. You collect the same required information, except you use the
+company
+hash and the
+Persons
+API instead of the individual hash In that case, you map requirements in the individual hash to the corresponding properties of the account’s representative. For example, set first_name on the representative’s Person instead of individual.first_name on the Account.
+Tax reporting information
+By default, the requirements for transfers don’t collect all information at the appropriate thresholds to file IRS Form 1099-K or Form 1099-MISC. If your business has US federal 1099 filing requirements and plans to file these through Stripe, request the appropriate tax reporting capability and make sure to collect the necessary information
+from your users.
+Threshold information
+In addition to the onboarding requirements, payouts require that you provide the following information for your connected account before its charges reach a certain threshold. The threshold is either 10,000 USD or 3,000 USD, depending on your industry and Stripe’s review of your platform profile. If Stripe can’t verify this information before the account reaches the threshold, we disable payouts.
+individual.dob.day
+individual.dob.month
+individual.dob.year
+individual.ssn_last_4
+Payments threshold information
+When a connected account with card_payments reaches 500,000 USD in lifetime charges, we’ll collect the last four digits of their SSN or ITIN for US-resident owners and attempt to programmatically obtain the full nine digit SSN for them. If we’re unable to obtain the full number using information provided, the User will need to provide the full nine digits. If the full number has already been provided, it isn’t needed again.
+For connected accounts with business_type set to individual, and where the owner isn’t a minor, update the Account’s
+individual.id_number
+. For other accounts, which have persons with relationship.legal_guardian, relationship.representative, or relationship.owner set to true, update the appropriate Person’s
+id_number
+.
+Support phone number
+For accounts without access to a Stripe-hosted dashboard, and where Stripe is responsible for negative balances, activating card_payments requires business_profile.support_phone.
+Setup A:2 sections · 18 requirements
+Was this page helpful?
+Yes
+No
+Need help? Contact Support.
+Chat with Stripe developers on Discord.
+Check out our changelog.
+Questions? Contact Sales.
+LLM? Read llms.txt.
+Powered by Markdoc

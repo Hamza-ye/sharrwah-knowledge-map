@@ -1,0 +1,546 @@
+- link "Skip to content":
+  - /url: "#main-content"
+- link "The Stripe Docs logo":
+  - /url: /
+  - img "The Stripe Docs logo"
+- button "Search"
+- button "Stripe Assistant": Ask AI
+- link "Create account":
+  - /url: https://dashboard.stripe.com/register/connect
+- link "Sign in":
+  - /url: https://dashboard.stripe.com/login?redirect=https%3A%2F%2Fdocs.stripe.com%2Fconnect%2Frequired-verification-information
+- navigation "Documentation topics":
+  - list:
+    - listitem:
+      - link "Get started":
+        - /url: /get-started
+    - listitem:
+      - link "Payments":
+        - /url: /payments
+    - listitem:
+      - link "Revenue":
+        - /url: /revenue
+    - listitem:
+      - link "Risk":
+        - /url: /risk
+    - listitem:
+      - link "Data":
+        - /url: /data
+    - listitem:
+      - link "Money management":
+        - /url: /money-management
+    - listitem:
+      - link "Stablecoins":
+        - /url: /stablecoins
+    - listitem:
+      - link "Embedded finance":
+        - /url: /connect
+    - listitem:
+      - link "Developer resources":
+        - /url: /development
+- button "APIs & SDKs"
+- button "Help"
+- button "Change the country setting":
+  - img
+- button "Change the language setting"
+- button "Click to open the sidebar and show the navigation":
+  - img "Click to open the sidebar and show the navigation"
+- navigation "Breadcrumbs":
+  - list:
+    - listitem:
+      - link "Home":
+        - /url: /
+      - text: /
+    - listitem:
+      - link "Embedded finance":
+        - /url: /connect
+      - text: /
+    - listitem: Capabilities and information requirements
+- article:
+  - heading "Required verification information" [level=1]
+  - heading "Identify current and future information requirements that connected accounts must provide based on their business, location, and requested capabilities." [level=2]
+  - toolbar "Actions":
+    - button "Ask about this page"
+    - separator
+    - button "Set up agent"
+  - button "How to use this tool"
+  - region "How to use this tool":
+    - paragraph:
+      - text: To view the current requirements for your connected accounts, enter your configuration using the following form. Use the
+      - strong: Requirement update
+      - text: dropdown to see updated requirements for a current or upcoming requirement update. The
+      - strong: Capabilities
+      - text: dropdown only includes capabilities that are compatible with the selected configuration. To compare your current requirements with the requirements for a different configuration or upcoming update, select the
+      - strong: Setup B
+      - text: tab and enter the different configuration or update. Then turn on the
+      - strong: Compare
+      - text: toggle.
+    - paragraph:
+      - text: See the
+      - link "Connect integration guide":
+        - /url: /connect/interactive-platform-guide
+      - text: to learn more about connected account configurations.
+  - button "View upcoming changes needed in Europe"
+  - region "View upcoming changes needed in Europe":
+    - paragraph:
+      - text: Configure
+      - strong: Setup A
+      - text: to your current setup for accounts in Europe. Then repeat for
+      - strong: Setup B
+      - text: ", selecting Europe in the"
+      - strong: Requirement update
+      - text: field. Use the
+      - strong: Compare
+      - text: toggle to view differences.
+    - paragraph:
+      - text: Updates for Europe are subject to change.
+      - link "Learn more about upcoming changes":
+        - /url: https://support.stripe.com/questions/europe-verification-requirement-updates-for-connected-accounts
+      - text: in Europe.
+  - tablist:
+    - tab "Setup A" [selected]
+    - tab "Setup B"
+  - text: Compare
+  - switch "Compare"
+  - tabpanel "Setup A":
+    - text: Accounts API
+    - button "Accounts API": v1
+    - text: Platform country
+    - button "Platform country": United States (US)
+    - text: Account country
+    - button "Account country": Japan (JP)
+    - text: Dashboard type
+    - button "Dashboard type": none
+    - text: Service agreement
+    - link "Learn more about service agreement types":
+      - /url: https://docs.stripe.com/connect/service-agreement-types
+    - button "Service agreement": full
+    - text: Business type
+    - button "Business type": individual
+    - text: Requirements update
+    - link "Learn more about upcoming requirements updates":
+      - /url: https://docs.stripe.com/connect/upcoming-requirements-updates
+    - button "Requirements update" [disabled]: None
+    - text: No requirement updates for this account country. Capabilities
+    - link "Learn more about capabilities":
+      - /url: https://docs.stripe.com/connect/account-capabilities?accounts-namespace=v1
+    - button "Capabilities": transfers, card_payments
+  - separator
+  - group "viewingOptionToggle":
+    - tab "Table" [selected]:
+      - radio "Table" [checked]
+      - text: Table
+    - tab "JSON":
+      - radio "JSON"
+      - text: JSON
+  - button "Copy prompt for LLM"
+  - separator
+  - tabpanel "Table":
+    - button "Account" [expanded]:
+      - heading "Account" [level=4]
+    - link "View API docs":
+      - /url: https://docs.stripe.com/api/accounts/object
+    - region "Account":
+      - table:
+        - rowgroup:
+          - row "Requirement Verification Enforcement action Testing":
+            - columnheader
+            - columnheader "Requirement"
+            - columnheader "Verification"
+            - columnheader "Enforcement action"
+            - columnheader "Testing"
+        - rowgroup:
+          - row "Merchant category code business_profile.mcc — Payments and Payouts will be paused immediately if not provided. —":
+            - cell "Merchant category code"
+            - cell "business_profile.mcc":
+              - list:
+                - listitem:
+                  - code: business_profile.mcc
+            - cell "—"
+            - cell "Payments and Payouts will be paused immediately if not provided.":
+              - text: Payments and Payouts will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "—"
+          - row "URL business_profile.url — Payments and Payouts will be paused immediately if not provided. View test tokens":
+            - cell "URL"
+            - cell "business_profile.url":
+              - list:
+                - listitem:
+                  - code: business_profile.url
+            - cell "—"
+            - cell "Payments and Payouts will be paused immediately if not provided.":
+              - text: Payments and Payouts will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "View test tokens":
+              - link "View test tokens":
+                - /url: https://docs.stripe.com/connect/testing#test-business-url-verification
+          - row "Product description business_profile.product_description — Payments and Payouts will be paused immediately if not provided. View test tokens":
+            - cell "Product description"
+            - cell "business_profile.product_description":
+              - list:
+                - listitem:
+                  - code: business_profile.product_description
+            - cell "—"
+            - cell "Payments and Payouts will be paused immediately if not provided.":
+              - text: Payments and Payouts will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "View test tokens":
+              - link "View test tokens":
+                - /url: https://docs.stripe.com/connect/testing#test-product-description-verification
+          - row "Terms of service tos_acceptance.date tos_acceptance.ip — Payments will be paused immediately if not provided. —":
+            - cell "Terms of service"
+            - cell "tos_acceptance.date tos_acceptance.ip":
+              - list:
+                - listitem:
+                  - code: tos_acceptance.date
+                - listitem:
+                  - code: tos_acceptance.ip
+            - cell "—"
+            - cell "Payments will be paused immediately if not provided.":
+              - text: Payments will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "—"
+          - row "External account external_account — Payouts will be paused immediately if not provided. —":
+            - cell "External account"
+            - cell "external_account":
+              - list:
+                - listitem:
+                  - code: external_account
+            - cell "—"
+            - cell "Payouts will be paused immediately if not provided.":
+              - text: Payouts will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "—"
+    - button "Individual" [expanded]:
+      - heading "Individual" [level=4]
+    - link "View API docs":
+      - /url: https://docs.stripe.com/api/accounts/object#account_object-individual
+    - region "Individual":
+      - table:
+        - rowgroup:
+          - row "Requirement Verification Enforcement action Testing":
+            - columnheader
+            - columnheader "Requirement"
+            - columnheader "Verification"
+            - columnheader "Enforcement action"
+            - columnheader "Testing"
+        - rowgroup:
+          - row "Name individual.first_name_kana individual.first_name_kanji individual.last_name_kana individual.last_name_kanji 氏名 (かな表記) Payments and Payouts will be paused immediately if not verified. —":
+            - cell "Name"
+            - cell "individual.first_name_kana individual.first_name_kanji individual.last_name_kana individual.last_name_kanji":
+              - list:
+                - listitem:
+                  - code: individual.first_name_kana
+                - listitem:
+                  - code: individual.first_name_kanji
+                - listitem:
+                  - code: individual.last_name_kana
+                - listitem:
+                  - code: individual.last_name_kanji
+            - cell "氏名 (かな表記)":
+              - list:
+                - listitem: 氏名 (かな表記)
+            - cell "Payments and Payouts will be paused immediately if not verified.":
+              - text: Payments and Payouts will be paused immediately if not
+              - strong: verified
+              - text: .
+            - cell "—"
+          - row "Name (kana) individual.first_name_kana individual.last_name_kana 氏名 (かな表記) Payments and Payouts will be paused immediately if not verified. —":
+            - cell "Name (kana)"
+            - cell "individual.first_name_kana individual.last_name_kana":
+              - list:
+                - listitem:
+                  - code: individual.first_name_kana
+                - listitem:
+                  - code: individual.last_name_kana
+            - cell "氏名 (かな表記)":
+              - list:
+                - listitem: 氏名 (かな表記)
+            - cell "Payments and Payouts will be paused immediately if not verified.":
+              - text: Payments and Payouts will be paused immediately if not
+              - strong: verified
+              - text: .
+            - cell "—"
+          - row "Name (kanji) individual.first_name_kanji individual.last_name_kanji 氏名 (漢字表記) Payments and Payouts will be paused immediately if not verified. —":
+            - cell "Name (kanji)"
+            - cell "individual.first_name_kanji individual.last_name_kanji":
+              - list:
+                - listitem:
+                  - code: individual.first_name_kanji
+                - listitem:
+                  - code: individual.last_name_kanji
+            - cell "氏名 (漢字表記)":
+              - list:
+                - listitem: 氏名 (漢字表記)
+            - cell "Payments and Payouts will be paused immediately if not verified.":
+              - text: Payments and Payouts will be paused immediately if not
+              - strong: verified
+              - text: .
+            - cell "—"
+          - row "Date of birth individual.dob.day individual.dob.month individual.dob.year — Payments and Payouts will be paused immediately if not provided. View test tokens":
+            - cell "Date of birth"
+            - cell "individual.dob.day individual.dob.month individual.dob.year":
+              - list:
+                - listitem:
+                  - code: individual.dob.day
+                - listitem:
+                  - code: individual.dob.month
+                - listitem:
+                  - code: individual.dob.year
+            - cell "—"
+            - cell "Payments and Payouts will be paused immediately if not provided.":
+              - text: Payments and Payouts will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "View test tokens":
+              - link "View test tokens":
+                - /url: https://docs.stripe.com/connect/testing#test-dobs
+          - row "Address (kana) individual.address_kana.city individual.address_kana.line1 individual.address_kana.postal_code individual.address_kana.state individual.address_kana.town 住所 (かな表記) Payments and Payouts will be paused immediately if not provided. Also, Payments and Payouts will be paused immediately if not verified. —":
+            - cell "Address (kana)"
+            - cell "individual.address_kana.city individual.address_kana.line1 individual.address_kana.postal_code individual.address_kana.state individual.address_kana.town":
+              - list:
+                - listitem:
+                  - code: individual.address_kana.city
+                - listitem:
+                  - code: individual.address_kana.line1
+                - listitem:
+                  - code: individual.address_kana.postal_code
+                - listitem:
+                  - code: individual.address_kana.state
+                - listitem:
+                  - code: individual.address_kana.town
+            - cell "住所 (かな表記)":
+              - list:
+                - listitem: 住所 (かな表記)
+            - cell "Payments and Payouts will be paused immediately if not provided. Also, Payments and Payouts will be paused immediately if not verified.":
+              - text: Payments and Payouts will be paused immediately if not
+              - strong: provided
+              - text: . Also, Payments and Payouts will be paused immediately if not
+              - strong: verified
+              - text: .
+            - cell "—"
+          - row "Address (kanji) individual.address_kanji.city individual.address_kanji.line1 individual.address_kanji.postal_code individual.address_kanji.state individual.address_kanji.town 住所 (漢字表記) Payments and Payouts will be paused immediately if not provided. Also, Payments and Payouts will be paused immediately if not verified. —":
+            - cell "Address (kanji)"
+            - cell "individual.address_kanji.city individual.address_kanji.line1 individual.address_kanji.postal_code individual.address_kanji.state individual.address_kanji.town":
+              - list:
+                - listitem:
+                  - code: individual.address_kanji.city
+                - listitem:
+                  - code: individual.address_kanji.line1
+                - listitem:
+                  - code: individual.address_kanji.postal_code
+                - listitem:
+                  - code: individual.address_kanji.state
+                - listitem:
+                  - code: individual.address_kanji.town
+            - cell "住所 (漢字表記)":
+              - list:
+                - listitem: 住所 (漢字表記)
+            - cell "Payments and Payouts will be paused immediately if not provided. Also, Payments and Payouts will be paused immediately if not verified.":
+              - text: Payments and Payouts will be paused immediately if not
+              - strong: provided
+              - text: . Also, Payments and Payouts will be paused immediately if not
+              - strong: verified
+              - text: .
+            - cell "—"
+          - row "Email individual.email — Payments and Payouts will be paused immediately if not provided. —":
+            - cell "Email"
+            - cell "individual.email":
+              - list:
+                - listitem:
+                  - code: individual.email
+            - cell "—"
+            - cell "Payments and Payouts will be paused immediately if not provided.":
+              - text: Payments and Payouts will be paused immediately if not
+              - strong: provided
+              - text: .
+            - cell "—"
+          - row "Phone individual.phone — Payments and Payouts will be paused immediately if not provided. Also, Payments and Payouts will be paused immediately if not verified. View test tokens":
+            - cell "Phone"
+            - cell "individual.phone":
+              - list:
+                - listitem:
+                  - code: individual.phone
+            - cell "—"
+            - cell "Payments and Payouts will be paused immediately if not provided. Also, Payments and Payouts will be paused immediately if not verified.":
+              - text: Payments and Payouts will be paused immediately if not
+              - strong: provided
+              - text: . Also, Payments and Payouts will be paused immediately if not
+              - strong: verified
+              - text: .
+            - cell "View test tokens":
+              - link "View test tokens":
+                - /url: https://docs.stripe.com/connect/testing#test-phone-number-validation
+    - heading "Additional information" [level=2]
+    - heading "Provide ID document for the individual" [level=4]:
+      - text: Provide ID document for the individual
+      - button
+    - paragraph:
+      - text: You must collect a scan of an
+      - link "ID document":
+        - /url: /connect/handling-api-verification#acceptable-verification-documents
+      - text: for an individual. To collect this scan, use the
+      - link "individual.verification.document.front":
+        - /url: /api/accounts/update#update_account-individual-verification-document-front
+      - text: and
+      - link "individual.verification.document.back":
+        - /url: /api/accounts/update#update_account-individual-verification-document-back
+      - text: arguments.
+    - paragraph: Identity verification documents must be issued in Japan and show the individual’s residency status.
+    - heading "Special considerations" [level=4]:
+      - text: Special considerations
+      - button
+    - paragraph:
+      - text: Collecting information for Japanese accounts is unique in that both
+      - emphasis: kana
+      - text: and
+      - emphasis: kanji
+      - text: "language variations are required for a number of parameters:"
+    - list:
+      - listitem:
+        - code: first_name_kana
+      - listitem:
+        - code: first_name_kanji
+      - listitem:
+        - code: last_name_kana
+      - listitem:
+        - code: last_name_kanji
+      - listitem:
+        - code: name_kana
+      - listitem:
+        - code: name_kanji
+      - listitem:
+        - code: address_kana
+      - listitem:
+        - code: address_kanji
+    - paragraph:
+      - text: You need to submit information for these parameters instead of their counterparts (that is, instead of
+      - code: first_name
+      - text: ","
+      - code: last_name
+      - text: ", and so forth). It might seem counterintuitive to provide two arguments that represent the same onboarding requirement, but Stripe can’t verify a Japanese account until we’ve received information for both language variations. These variations might be composed of full- or half-width hiragana, katakana, or Latin characters, with kanji-specific API parameters also allowing for kanji characters."
+    - heading "Japanese addresses" [level=4]:
+      - text: Japanese addresses
+      - button
+    - paragraph: Both kana and kanji language variations apply to Japanese address requirements as well.
+    - paragraph:
+      - code: postal_code
+      - text: is always required when providing a Japanese address of either language variation. Stripe validates submitted addresses, and for a valid
+      - code: postal_code
+      - text: ", we attempt to automatically fill attributes for matching"
+      - code: state
+      - text: ","
+      - code: city
+      - text: ", and"
+      - code: town
+      - text: for
+      - emphasis: both
+      - code: address_kana
+      - text: and
+      - code: address_kanji
+      - text: .
+    - paragraph:
+      - text: Requests with address details that are incompatible with the provided
+      - code: postal_code
+      - text: fail.
+    - paragraph:
+      - code: line2
+      - text: should contain the building name in addition to the room number if applicable. This attribute can be omitted when the address doesn’t contain building details.
+    - paragraph: "Here’s an example representation of a Japanese address, with explanations for how each part maps to its corresponding Stripe API attribute:"
+    - button "Report incorrect code"
+    - button "Copy"
+    - button "Explain using AI"
+    - code: "// 〒150-0001 東京都渋谷区神宮前1-5-8 神宮前タワービルディング22F { \"country\": \"JP\", \"legal_entity\": { \"address_kana\": { \"country\": \"JP\", // 2-letter country code \"postal_code\": \"1500001\", // Zip/Postal Code \"state\": \"ﾄｳｷﾖｳﾄ\", // Prefecture \"city\": \"ｼﾌﾞﾔ\", // City/Ward \"town\": \"ｼﾞﾝｸﾞｳﾏｴ 1-\", // Town/cho-me \"line1\": \"5-8\", // Block/Building number \"line2\": \"ｼﾞﾝｸﾞｳﾏｴﾀﾜｰﾋﾞﾙﾃﾞｨﾝｸﾞ22F\" // Building details (optional) }, \"address_kanji\": { \"country\": \"JP\", // 2-letter country code \"postal_code\": \"１５００００１\", // Zip/Postal Code \"state\": \"東京都\", // Prefecture \"city\": \"渋谷区\", // City/Ward \"town\": \"神宮前 １丁目\", // Town/cho-me (no kanji numerals) \"line1\": \"５－８\", // Block/Building number \"line2\": \"神宮前タワービルディング22F\" // Building details (optional) } } }"
+    - heading "Statement descriptors" [level=4]:
+      - text: Statement descriptors
+      - button
+    - paragraph: Statement descriptors explain charges or payments and include information that banks and card networks require to help customers understand their statements.
+    - paragraph:
+      - text: We recommend setting the
+      - link "static":
+        - /url: /get-started/account/statement-descriptors#static
+      - text: components of statement descriptors in all three supported scripts (kanji, kana, and Latin characters) for Japanese connected accounts.
+    - table:
+      - rowgroup:
+        - row "PARAMETER":
+          - columnheader
+          - columnheader "PARAMETER"
+      - rowgroup:
+        - row "Statement descriptor settings.payments.statement_descriptor":
+          - cell "Statement descriptor"
+          - cell "settings.payments.statement_descriptor"
+        - row "Statement descriptor (kanji) settings.payments.statement_descriptor_kanji":
+          - cell "Statement descriptor (kanji)"
+          - cell "settings.payments.statement_descriptor_kanji"
+        - row "Statement descriptor (kana) settings.payments.statement_descriptor_kana":
+          - cell "Statement descriptor (kana)"
+          - cell "settings.payments.statement_descriptor_kana"
+        - row "Statement descriptor prefix settings.card_payments.statement_descriptor_prefix":
+          - cell "Statement descriptor prefix"
+          - cell "settings.card_payments.statement_descriptor_prefix"
+        - row "Statement descriptor prefix (kanji) settings.card_payments.statement_descriptor_prefix_kanji":
+          - cell "Statement descriptor prefix (kanji)"
+          - cell "settings.card_payments.statement_descriptor_prefix_kanji"
+        - row "Statement descriptor prefix (kana) settings.card_payments.statement_descriptor_prefix_kana":
+          - cell "Statement descriptor prefix (kana)"
+          - cell "settings.card_payments.statement_descriptor_prefix_kana"
+    - paragraph:
+      - text: You can set these fields when you create an
+      - link "Account":
+        - /url: /api/accounts/create#create_account-settings-payments-statement_descriptor
+      - text: .
+    - text: Command Line Select a language
+    - button "Select a language": cURL
+    - button "Report incorrect code"
+    - button "Copy"
+    - button "Explain using AI"
+    - code:
+      - text: curl https://api.stripe.com/v1/accounts \ -u "
+      - button "sk_test_..."
+      - text: :" \ -d type=custom \ -d country=JP \ -d business_type=company \ -d "capabilities[card_payments][requested]=true" \ -d "capabilities[transfers][requested]=true" \ -d "settings[payments][statement_descriptor]=example descriptor" \ -d "settings[payments][statement_descriptor_kanji]=漢字明細" \ -d "settings[payments][statement_descriptor_kana]=カナメイサイ"
+    - paragraph:
+      - text: See
+      - link "Japanese statement descriptors":
+        - /url: /get-started/account/statement-descriptors#set-japanese-statement-descriptors
+      - text: for more details.
+    - text: "Setup A: 2 sections · 29 requirements"
+  - text: Was this page helpful?
+  - button "Yes"
+  - button "No"
+  - separator
+  - list:
+    - listitem:
+      - text: Need help?
+      - link "Contact Support":
+        - /url: https://support.stripe.com/
+      - text: .
+    - listitem:
+      - text: Chat with Stripe developers on
+      - link "Discord":
+        - /url: https://stripe.com/go/developer-chat
+      - text: .
+    - listitem:
+      - text: Check out our
+      - link "changelog":
+        - /url: /changelog
+      - text: .
+    - listitem:
+      - text: Questions?
+      - link "Contact Sales":
+        - /url: https://stripe.com/contact/sales
+      - text: .
+    - listitem:
+      - text: LLM?
+      - link "Read llms.txt":
+        - /url: /llms.txt
+      - text: .
+    - listitem:
+      - text: Powered by
+      - link "Markdoc":
+        - /url: https://markdoc.dev
+- iframe

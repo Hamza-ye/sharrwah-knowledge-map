@@ -1,0 +1,92 @@
+Skip to content
+Search
+/
+Ask AI
+Create account
+Sign in
+Get started
+Payments
+Revenue
+Risk
+Data
+Money management
+Stablecoins
+Embedded finance
+Developer resources
+APIs & SDKs
+Help
+Home
+/
+Embedded finance
+/
+Capabilities and information requirements
+Required verification information
+Identify current and future information requirements that connected accounts must provide based on their business, location, and requested capabilities.
+Ask about this page
+Set up agent
+How to use this tool
+To view the current requirements for your connected accounts, enter your configuration using the following form. Use the Requirement update dropdown to see updated requirements for a current or upcoming requirement update. The Capabilities dropdown only includes capabilities that are compatible with the selected configuration. To compare your current requirements with the requirements for a different configuration or upcoming update, select the Setup B tab and enter the different configuration or update. Then turn on the Compare toggle.
+See the Connect integration guide to learn more about connected account configurations.
+View upcoming changes needed in Europe
+Configure Setup A to your current setup for accounts in Europe. Then repeat for Setup B, selecting Europe in the Requirement update field. Use the Compare toggle to view differences.
+Updates for Europe are subject to change. Learn more about upcoming changes in Europe.
+Setup A
+Setup B
+Compare
+[ ]
+Accounts API
+v1
+Platform country
+United States (US)
+Account country
+Oman (OM)
+Dashboard type
+none
+Service agreement
+Learn more about service agreement types
+recipient
+Account country only supports recipient service agreements.
+Business type
+company
+Business structure
+Select…
+Requirements update
+Learn more about upcoming requirements updates
+None
+No requirement updates for this account country.
+Capabilities
+Learn more about capabilities
+transfers
+The card_payments capability is not available for accounts with a recipient service agreement.
+[x]
+Table
+[ ]
+JSON
+Copy prompt for LLM
+Account
+View API docs
+Requirement
+Verification
+Enforcement action
+Testing
+Terms of service
+tos_acceptance.date
+tos_acceptance.ip
+—
+Payments will be paused immediately if not provided.
+—
+External account
+external_account
+—
+Payouts will be paused immediately if not provided.
+—
+Setup A:1 section · 3 requirements
+Was this page helpful?
+Yes
+No
+Need help? Contact Support.
+Chat with Stripe developers on Discord.
+Check out our changelog.
+Questions? Contact Sales.
+LLM? Read llms.txt.
+Powered by Markdoc

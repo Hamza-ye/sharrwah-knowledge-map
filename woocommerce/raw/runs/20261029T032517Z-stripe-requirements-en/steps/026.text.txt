@@ -1,0 +1,363 @@
+Skip to content
+Search
+/
+Ask AI
+Create account
+Sign in
+Get started
+Payments
+Revenue
+Risk
+Data
+Money management
+Stablecoins
+Embedded finance
+Developer resources
+APIs & SDKs
+Help
+Home
+/
+Embedded finance
+/
+Capabilities and information requirements
+Required verification information
+Identify current and future information requirements that connected accounts must provide based on their business, location, and requested capabilities.
+Ask about this page
+Set up agent
+How to use this tool
+To view the current requirements for your connected accounts, enter your configuration using the following form. Use the Requirement update dropdown to see updated requirements for a current or upcoming requirement update. The Capabilities dropdown only includes capabilities that are compatible with the selected configuration. To compare your current requirements with the requirements for a different configuration or upcoming update, select the Setup B tab and enter the different configuration or update. Then turn on the Compare toggle.
+See the Connect integration guide to learn more about connected account configurations.
+View upcoming changes needed in Europe
+Configure Setup A to your current setup for accounts in Europe. Then repeat for Setup B, selecting Europe in the Requirement update field. Use the Compare toggle to view differences.
+Updates for Europe are subject to change. Learn more about upcoming changes in Europe.
+Setup A
+Setup B
+Compare
+[ ]
+Accounts API
+v1
+Platform country
+United States (US)
+Account country
+United Kingdom (GB)
+Dashboard type
+none
+Service agreement
+Learn more about service agreement types
+full
+Business type
+company
+Business structure
+Select…
+Requirements update
+Learn more about upcoming requirements updates
+Select…
+Capabilities
+Learn more about capabilities
+transfers, card_payments
+[x]
+Table
+[ ]
+JSON
+Copy prompt for LLM
+Company
+View API docs
+Requirement
+Verification
+Enforcement action
+Testing
+Company name
+company.name
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+View test tokens
+Company address
+company.address.city
+company.address.line1
+company.address.postal_code
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+View test tokens
+Company phone
+company.phone
+—
+Card payments and Payouts will be paused immediately if not provided.
+View test tokens
+Company tax ID
+company.tax_id
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+View test tokens
+Directors provided
+company.directors_provided
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+—
+Owners provided
+company.owners_provided
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+—
+Representative
+View API docs
+Requirement
+Verification
+Enforcement action
+Testing
+Name
+representative.first_name
+representative.last_name
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+—
+Date of birth
+representative.dob.day
+representative.dob.month
+representative.dob.year
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+View test tokens
+Address
+representative.address.city
+representative.address.line1
+representative.address.postal_code
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+View test tokens
+Email
+representative.email
+—
+Card payments and Payouts will be paused immediately if not provided.
+—
+Phone
+representative.phone
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+View test tokens
+Job title
+representative.relationship.title
+—
+Card payments and Payouts will be paused immediately if not provided.
+—
+Account
+View API docs
+Requirement
+Verification
+Enforcement action
+Testing
+Merchant category code
+business_profile.mcc
+—
+Card payments and Payouts will be paused immediately if not provided.
+—
+URL
+business_profile.url
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+View test tokens
+Terms of service
+tos_acceptance.date
+tos_acceptance.ip
+—
+Payments will be paused immediately if not provided.
+—
+External account
+external_account
+—
+Payouts will be paused immediately if not provided.
+—
+Owners
+View API docs
+Requirement
+Verification
+Enforcement action
+Testing
+Name
+owners.first_name
+owners.last_name
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+—
+Date of birth
+owners.dob.day
+owners.dob.month
+owners.dob.year
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+View test tokens
+Address
+owners.address.city
+owners.address.line1
+owners.address.postal_code
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+View test tokens
+Email
+owners.email
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+—
+Directors
+View API docs
+Requirement
+Verification
+Enforcement action
+Testing
+Name
+directors.first_name
+directors.last_name
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+View test tokens
+Date of birth
+directors.dob.day
+directors.dob.month
+directors.dob.year
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+View test tokens
+Address
+directors.address.city
+directors.address.line1
+directors.address.postal_code
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+View test tokens
+Email
+directors.email
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+—
+Job title
+directors.relationship.title
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+—
+Additional information
+KYC verification
+European regulations require Stripe to verify the identity of certain persons associated with connected accounts. The following entities must provide verifiable KYC information:
+Account representative
+UBOs (for accounts deemed high risk by the Stripe risk model)
+Learn more about Identity verification for connected accounts
+.
+Stripe initially verifies identity using the information the account provides: first_name, last_name, dob, and address. In applicable countries, nationality is also required, and id_number is available as an optional field for verification.If verification fails, or if there are possible concerns about sanctions, you see the following additional requirement fields on the account:
+FieldUsage
+verification.documentA scan of an ID document (front and back).
+See how to upload additional documents.
+verification.additional_documentA scan of an address document (front and back).
+See how to upload additional documents.
+id_numberIf the person’s nationality is eligible, alternatives.alternative_fields_due contains their id_number. A connected account can also provide the representative’s national ID number, in addition to their name, birthdate, address, and nationality.
+See a list of supported national ID numbers
+and implementation guidelines.
+proof_of_livenessIf initial verification fails, you can use proof_of_liveness as an alternative verification path . Fulfill this requirement using Stripe-hosted onboarding, embedded onboarding, or the Stripe Identity API.
+See handling liveness requirements for complete implementation details.
+To learn more, see compliance requirements for Europe
+.
+For more information on uploading official documents, see Additional information on the account.
+Additional information on the account
+If Stripe can’t verify the company, or if there are possible concerns about sanctions
+, you must collect a proof-of-entity document
+to enable payouts
+. Collect it using the
+company.verification.document.front
+and
+company.verification.document.back
+parameters.
+Additional information on the representative
+A person known as a representative must activate this connected account. The representative must be a beneficial owner who is authorized to sign for the company. Indicate this relationship to Stripe by setting
+relationship.executive
+to true, or, if the representative owns more than 25% of the company, by setting
+relationship.owner
+to true.
+You might need to collect a scan of an ID document
+and an address document
+to enable payouts. That can happen if Stripe can’t verify the representative’s provided information or if there are possible concerns about sanctions
+. In some cases, depending on various calculated risk factors, Stripe can use Simplified Due Diligence and request only one document for verification at a later time.
+Additionally, for partnerships you must provide a
+relationship.percent_ownership
+value.
+You can collect ID information with the
+verification.document.front
+and
+verification.document.back
+parameters.
+Relationship verification for UBOs and directors
+European regulations require verification of the relationship of ultimate beneficial owners (UBOs) and directors to the legal entity. Stripe attempts to verify each person’s relationship using third-party sources. If automatic verification fails, the account can upload an official document
+or sign a digital attestation.
+Who needs to be verified
+UBOs: Verify the relationship of ultimate beneficial owners—individuals who own or control (directly or indirectly) more than 25% of the legal entity. Provide each UBO’s first_name, last_name, dob, address, and email.
+Directors: Verify the relationship of directors—board members or senior persons responsible for managing the business (for example, CEO, COO, managing director). Provide each director’s first_name, last_name, dob, address, email, and title. Provide information for all of your directors; if you have more than 5, you only need to provide 5.
+If automatic verification fails
+If Stripe can’t verify the provided information or if there are possible concerns about sanctions, you might need to provide additional information to enable payouts. The additional documentation can either be a digital attestation or an official document upload:
+Digital attestation: Use the following document templates:
+Ultimate beneficial owner digital attestation template—submit using documents.proof_of_ultimate_beneficial_ownership
+Director digital attestation template—submit using documents.proof_of_registration
+When submitting an attestation, you must also provide a signer.person parameter identifying the authorized person who signed the document. The signer must be an existing person associated with the account (for example, the account representative, a business owner, or a director).
+For the full API implementation details (including digital attestation integration, signer validation, and error handling), see Relationship verification for UBOs and directors
+.
+Upload additional documents:
+Directors: See Additional information on directors
+UBOs: See Additional information on beneficial owners
+Additional information on directors
+For companies, excluding partnerships, you must collect information on all directors. Directors are members of the governing board of the company. If you have more than 5 directors, you only need to provide information on 5. When you’ve finished collecting the required information from all directors, or if your company doesn’t have any directors, you must inform Stripe by setting
+company.directors_provided
+to true.
+You might need to collect a scan of an ID document
+and an address document
+to enable payouts. That can happen if Stripe can’t verify the director’s provided information or if there are possible concerns about sanctions
+. In some cases, depending on various calculated risk factors, Stripe can use Simplified Due Diligence and request only one document for verification at a later time.
+You can collect ID information using the
+verification.document.front
+and
+verification.document.back
+parameters, and address information using the
+verification.additional_document.front
+and
+verification.additional_document.back
+parameters.
+Additional information on beneficial owners (for both executives and owners)
+You must collect information on all beneficial owners. Beneficial owners are persons who exercise significant management control over the company (executives) or who own more than 25% of the company (owners). When you’ve finished collecting the required information from all beneficial owners, you must inform Stripe by setting both
+company.owners_provided
+and
+company.executives_provided
+to true.
+You might need to collect a scan of an ID document
+and an address document
+to enable payouts. That can happen if Stripe can’t verify the beneficial owner’s provided information or if there are possible concerns about sanctions
+. In some cases, depending on various calculated risk factors, Stripe can use Simplified Due Diligence and request only one document for verification at a later time.
+You can collect ID information using the
+verification.document.front
+and
+verification.document.back
+parameters, and address information using the
+verification.additional_document.front
+and
+verification.additional_document.back
+parameters.
+Optionally, you can collect ownership information on each person who owns more than 25% of the company with
+relationship.owner
+and
+relationship.percent_ownership
+.
+Additionally, for partnerships you need to provide a
+relationship.percent_ownership
+value for any owners added to the account.
+Onboarding as a government entity
+Government entities follow a specialized onboarding and verification process that differs from standard company verification. For eligibility criteria, required documentation, and step-by-step onboarding instructions, see Business verification requirements for government entities.
+Ultimate Beneficial Ownership Verification
+This requirement no longer applies. Instead, fulfill the relationship verification for UBOs and directors.
+Communicate rejection reasons
+If your platform owns onboarding and has UK-based connected accounts, you must notify your UK-based connected accounts without delay when their payments capabilities are rejected for terms of service violations or credit risk reasons.
+If the rejection reason is unacceptable credit risk, you must advise the connected account that they can continue accepting payments for 90 days and that we’ll hold funds in reserve to help cover any disputes or refunds.
+Learn how to determine the rejection reason and communicate it
+to the affected account promptly.
+Setup A:5 sections · 43 requirements
+Was this page helpful?
+Yes
+No
+Need help? Contact Support.
+Chat with Stripe developers on Discord.
+Check out our changelog.
+Questions? Contact Sales.
+LLM? Read llms.txt.
+Powered by Markdoc

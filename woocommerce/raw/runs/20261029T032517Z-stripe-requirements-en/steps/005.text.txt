@@ -1,0 +1,173 @@
+Skip to content
+Search
+/
+Ask AI
+Create account
+Sign in
+Get started
+Payments
+Revenue
+Risk
+Data
+Money management
+Stablecoins
+Embedded finance
+Developer resources
+APIs & SDKs
+Help
+Home
+/
+Embedded finance
+/
+Capabilities and information requirements
+Required verification information
+Identify current and future information requirements that connected accounts must provide based on their business, location, and requested capabilities.
+Ask about this page
+Set up agent
+How to use this tool
+To view the current requirements for your connected accounts, enter your configuration using the following form. Use the Requirement update dropdown to see updated requirements for a current or upcoming requirement update. The Capabilities dropdown only includes capabilities that are compatible with the selected configuration. To compare your current requirements with the requirements for a different configuration or upcoming update, select the Setup B tab and enter the different configuration or update. Then turn on the Compare toggle.
+See the Connect integration guide to learn more about connected account configurations.
+View upcoming changes needed in Europe
+Configure Setup A to your current setup for accounts in Europe. Then repeat for Setup B, selecting Europe in the Requirement update field. Use the Compare toggle to view differences.
+Updates for Europe are subject to change. Learn more about upcoming changes in Europe.
+Setup A
+Setup B
+Compare
+[ ]
+Accounts API
+v1
+Platform country
+United States (US)
+Account country
+United Kingdom (GB)
+Dashboard type
+none
+Service agreement
+Learn more about service agreement types
+full
+Business type
+individual
+Requirements update
+Learn more about upcoming requirements updates
+Select…
+Capabilities
+Learn more about capabilities
+card_payments, transfers
+[x]
+Table
+[ ]
+JSON
+Copy prompt for LLM
+Account
+View API docs
+Requirement
+Verification
+Enforcement action
+Testing
+Merchant category code
+business_profile.mcc
+—
+Card payments and Payouts will be paused immediately if not provided.
+—
+URL
+business_profile.url
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+View test tokens
+Terms of service
+tos_acceptance.date
+tos_acceptance.ip
+—
+Payments will be paused immediately if not provided.
+—
+External account
+external_account
+—
+Payouts will be paused immediately if not provided.
+—
+Individual
+View API docs
+Requirement
+Verification
+Enforcement action
+Testing
+Name
+individual.first_name
+individual.last_name
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+—
+Date of birth
+individual.dob.day
+individual.dob.month
+individual.dob.year
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+View test tokens
+Address
+individual.address.city
+individual.address.line1
+individual.address.postal_code
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+View test tokens
+Email
+individual.email
+—
+Card payments and Payouts will be paused immediately if not provided.
+—
+Phone
+individual.phone
+—
+Card payments, Payouts, and Transfers will be paused immediately if not provided.
+View test tokens
+Additional information
+KYC verification
+European regulations require Stripe to verify the identity of certain persons associated with connected accounts. The following entities must provide verifiable KYC information:
+Legal entity (for individuals and sole proprietor entities)
+Learn more about Identity verification for connected accounts
+.
+Stripe initially verifies identity using the information the account provides: first_name, last_name, dob, and address. In applicable countries, nationality is also required, and id_number is available as an optional field for verification.If verification fails, or if there are possible concerns about sanctions, you see the following additional requirement fields on the account:
+FieldUsage
+verification.documentA scan of an ID document (front and back).
+See how to upload additional documents.
+verification.additional_documentA scan of an address document (front and back).
+See how to upload additional documents.
+id_numberIf the person’s nationality is eligible, alternatives.alternative_fields_due contains their id_number. A connected account can also provide the representative’s national ID number, in addition to their name, birthdate, address, and nationality.
+See a list of supported national ID numbers
+and implementation guidelines.
+proof_of_livenessIf initial verification fails, you can use proof_of_liveness as an alternative verification path . Fulfill this requirement using Stripe-hosted onboarding, embedded onboarding, or the Stripe Identity API.
+See handling liveness requirements for complete implementation details.
+To learn more, see compliance requirements for Europe
+.
+For more information on uploading official documents, see Additional information on the individual.
+Additional information on the individual
+Depending on the situation, you might need to collect a scan of an ID document
+, an address document, or both to enable payouts. That can happen if Stripe can’t verify the individual or if there are possible concerns about sanctions
+. In some cases, depending on various calculated risk factors, Stripe can use Simplified Due Diligence and request only one document for verification at a later time.
+Collect ID information using the
+individual.verification.document.front
+and
+individual.verification.document.back
+parameters, and address information using the
+verification.additional_document.front
+and
+verification.additional_document.back
+parameters.
+Onboarding as a government entity
+Government entities follow a specialized onboarding and verification process that differs from standard company verification. For eligibility criteria, required documentation, and step-by-step onboarding instructions, see Business verification requirements for government entities.
+Communicate rejection reasons
+If your platform owns onboarding and has UK-based connected accounts, you must notify your UK-based connected accounts without delay when their payments capabilities are rejected for terms of service violations or credit risk reasons.
+If the rejection reason is unacceptable credit risk, you must advise the connected account that they can continue accepting payments for 90 days and that we’ll hold funds in reserve to help cover any disputes or refunds.
+Learn how to determine the rejection reason and communicate it
+to the affected account promptly.
+Setup A:2 sections · 15 requirements
+Was this page helpful?
+Yes
+No
+Need help? Contact Support.
+Chat with Stripe developers on Discord.
+Check out our changelog.
+Questions? Contact Sales.
+LLM? Read llms.txt.
+Powered by Markdoc
