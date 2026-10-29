@@ -1,0 +1,50 @@
+Settings
+Localization
+Country
+Storefront Languages
+Physical dimensions
+Date and timezone
+Country
+Default country
+Determines available payment options.
+[Germany]
+Germany
+Storefront Languages
+Channel
+Type
+Default language
+Additional languages
+Actions
+Capture Test Store NAStencilEnglish (en)
+NA
+Physical dimensions
+1,234.00 KGS/Centimeters
+Physical dimension format presented to shoppers. Length and weight entered for a product will be autoconverted into this format.
+Hide format settings
+Set standard formats for Yemen
+Weight measurement
+[Kilograms (KGS)]
+Length measurement
+[Centimeters]
+Thousands token
+[,]
+Decimal token
+[.]
+Decimal places
+[2]
+Factoring dimension
+[Product depth]
+Date and timezone
+24th Jul 2020 @ 3:49 AM, (GMT +00:00)
+Hide format settings
+Set standard formats for Yemen
+Store local timezone
+[Western Europe Time, London, Lisbon, Casablanca (GMT)]
+[ ]
+Enable daylight savings time correction
+Date format
+[24th Jul 2020]
+Extended date and time format
+[24th Jul 2020 @ 3:49 AM]
+Save
+Cancel

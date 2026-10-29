@@ -1,0 +1,49 @@
+Settings
+Localization
+Country
+Storefront Languages
+Physical dimensions
+Date and timezone
+Country
+Default country
+Determines available payment options.
+[United Kingdom]
+Storefront Languages
+Channel
+Type
+Default language
+Additional languages
+Actions
+Capture Test Store NAStencilEnglish (en)
+NA
+Physical dimensions
+1,234.00 Ounces/Inches
+Physical dimension format presented to shoppers. Length and weight entered for a product will be autoconverted into this format.
+Hide format settings
+Set standard formats for United Kingdom
+Weight measurement
+[Ounces]
+Length measurement
+[Inches]
+Thousands token
+[,]
+Decimal token
+[.]
+Decimal places
+[2]
+Factoring dimension
+[Product depth]
+Date and timezone
+Jul 24th 2020 @ 3:49 AM, (GMT +00:00)
+Hide format settings
+Set standard formats for United Kingdom
+Store local timezone
+[Western Europe Time, London, Lisbon, Casablanca (GMT)]
+[ ]
+Enable daylight savings time correction
+Date format
+[Jul 24th 2020]
+Extended date and time format
+[Jul 24th 2020 @ 3:49 AM]
+Save
+Cancel

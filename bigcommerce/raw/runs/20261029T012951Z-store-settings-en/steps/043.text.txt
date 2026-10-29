@@ -1,0 +1,24 @@
+Settings
+Tax
+Add tax service
+Recommended services
+An automated solution for sales tax calculation, integrated with BigCommerce.
+Dismiss
+Install
+Tax rules
+Basic Tax
+Enabled
+Configure your own tax classes, rates and zones. Basic tax will be used if your tax service is not targeted to a given country/subdivision, or is unavailable during a purchase. Basic tax rules will be used to display tax on your storefronts, when applicable.
+4
+Tax classes
+1
+Tax zones
+0
+Tax rates
+Edit
+Store tax settings
+Edit
+Fallback tax
+A flat rate of 10% tax applies when your automatic tax service is unreachable.
+Tax inclusive pricing
+Entered prices do not include tax.

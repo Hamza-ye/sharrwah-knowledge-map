@@ -1,0 +1,63 @@
+{"intent":"The store's Settings page: every settings section the control panel lists","do":"goto","url":"https://store-w5pamplexj.mybigcommerce.com/manage/settings","readyTimeout":30000,"settleMs":6000}
+{"intent":"The store's Settings list: every settings section the control panel lists","do":"goto","url":"https://store-w5pamplexj.mybigcommerce.com/manage/settings-list","readyTimeout":30000,"settleMs":6000}
+{"intent":"Store profile: the business information the store holds (name, address, country)","do":"goto","url":"https://store-w5pamplexj.mybigcommerce.com/manage/microapps/store-profile-ui","readyTimeout":30000,"settleMs":6000}
+{"intent":"Localization: the store's languages and regional settings","do":"goto","url":"https://store-w5pamplexj.mybigcommerce.com/manage/microapps/localization-settings-ui","readyTimeout":30000,"settleMs":6000}
+{"intent":"Physical dimensions: show the format settings the store holds","do":"click","role":"button","name":"Show format settings","nth":0,"readyTimeout":5000,"settleMs":2000}
+{"intent":"Date and timezone: show the format settings the store holds","do":"click","role":"button","name":"Show format settings","nth":0,"readyTimeout":5000,"settleMs":2000}
+{"intent":"Default country: open its list of countries","do":"click","css":"[aria-label=\"Default country\"], input[role=combobox]","readyTimeout":5000,"settleMs":2000}
+{"intent":"Close the country list","do":"press","key":"Escape","readyTimeout":3000,"settleMs":1000}
+{"intent":"Physical dimensions: Set standard formats for Oman (what the store would take for its default country)","do":"click","role":"button","name":"Set standard formats for Oman","nth":0,"readyTimeout":5000,"settleMs":2000}
+{"intent":"Date and timezone: Set standard formats for Oman","do":"click","role":"button","name":"Set standard formats for Oman","nth":1,"readyTimeout":5000,"settleMs":2000}
+{"intent":"Default country: type United States (not saved) to see the standard formats offered for it","do":"fill","role":"combobox","name":"Default country","value":"United States","readyTimeout":3000,"settleMs":1500}
+{"intent":"Choose United States in the list","do":"press","key":"Enter","readyTimeout":3000,"settleMs":2000}
+{"intent":"Physical dimensions: Set standard formats for United States (not saved)","do":"click","role":"button","name":"Set standard formats for United States","nth":0,"readyTimeout":5000,"settleMs":2000}
+{"intent":"Date and timezone: Set standard formats for United States (not saved)","do":"click","role":"button","name":"Set standard formats for United States","nth":1,"readyTimeout":5000,"settleMs":2000}
+{"intent":"Default country: United Kingdom (not saved), to see its standard formats","do":"fill","role":"combobox","name":"Default country","value":"United Kingdom","readyTimeout":3000,"settleMs":1000}
+{"intent":"Choose it in the list","do":"press","key":"Enter","readyTimeout":3000,"settleMs":1000}
+{"intent":"Physical dimensions: Set standard formats for United Kingdom (not saved)","do":"click","role":"button","name":"Set standard formats for United Kingdom","nth":0,"readyTimeout":3000,"settleMs":1000}
+{"intent":"Date and timezone: Set standard formats for United Kingdom (not saved)","do":"click","role":"button","name":"Set standard formats for United Kingdom","nth":1,"readyTimeout":3000,"settleMs":1000}
+{"intent":"Default country: Saudi Arabia (not saved), to see its standard formats","do":"fill","role":"combobox","name":"Default country","value":"Saudi Arabia","readyTimeout":3000,"settleMs":1000}
+{"intent":"Choose it in the list","do":"press","key":"Enter","readyTimeout":3000,"settleMs":1000}
+{"intent":"Physical dimensions: Set standard formats for Saudi Arabia (not saved)","do":"click","role":"button","name":"Set standard formats for Saudi Arabia","nth":0,"readyTimeout":3000,"settleMs":1000}
+{"intent":"Date and timezone: Set standard formats for Saudi Arabia (not saved)","do":"click","role":"button","name":"Set standard formats for Saudi Arabia","nth":1,"readyTimeout":3000,"settleMs":1000}
+{"intent":"Default country: Yemen (not saved), to see its standard formats","do":"fill","role":"combobox","name":"Default country","value":"Yemen","readyTimeout":3000,"settleMs":1000}
+{"intent":"Choose it in the list","do":"press","key":"Enter","readyTimeout":3000,"settleMs":1000}
+{"intent":"Physical dimensions: Set standard formats for Yemen (not saved)","do":"click","role":"button","name":"Set standard formats for Yemen","nth":0,"readyTimeout":3000,"settleMs":1000}
+{"intent":"Date and timezone: Set standard formats for Yemen (not saved)","do":"click","role":"button","name":"Set standard formats for Yemen","nth":1,"readyTimeout":3000,"settleMs":1000}
+{"intent":"Default country: Germany (not saved), to see its standard formats","do":"fill","role":"combobox","name":"Default country","value":"Germany","readyTimeout":3000,"settleMs":1000}
+{"intent":"Choose it in the list","do":"press","key":"Enter","readyTimeout":3000,"settleMs":1000}
+{"intent":"Physical dimensions: Set standard formats for Germany (not saved)","do":"click","role":"button","name":"Set standard formats for Germany","nth":0,"readyTimeout":3000,"settleMs":1000}
+{"intent":"Date and timezone: Set standard formats for Germany (not saved)","do":"click","role":"button","name":"Set standard formats for Germany","nth":1,"readyTimeout":3000,"settleMs":1000}
+{"intent":"Default country: Japan (not saved), to see its standard formats","do":"fill","role":"combobox","name":"Default country","value":"Japan","readyTimeout":3000,"settleMs":1000}
+{"intent":"Choose it in the list","do":"press","key":"Enter","readyTimeout":3000,"settleMs":1000}
+{"intent":"Physical dimensions: Set standard formats for Japan (not saved)","do":"click","role":"button","name":"Set standard formats for Japan","nth":0,"readyTimeout":3000,"settleMs":1000}
+{"intent":"Date and timezone: Set standard formats for Japan (not saved)","do":"click","role":"button","name":"Set standard formats for Japan","nth":1,"readyTimeout":3000,"settleMs":1000}
+{"intent":"Cancel the unsaved country and format changes (the store keeps Oman)","do":"click","role":"button","name":"Cancel","readyTimeout":5000,"settleMs":2000}
+{"intent":"Payments, with the default country as the store was made (Oman): the payment methods the store is offered","do":"goto","url":"https://store-w5pamplexj.mybigcommerce.com/manage/microapps/payments-settings-ui","readyTimeout":30000,"settleMs":6000}
+{"intent":"Localization again","do":"goto","url":"https://store-w5pamplexj.mybigcommerce.com/manage/microapps/localization-settings-ui","readyTimeout":30000,"settleMs":5000}
+{"intent":"Default country: United States (to be saved: does anything check it, and does Payments change)","do":"fill","role":"combobox","name":"Default country","value":"United States","readyTimeout":3000,"settleMs":1000}
+{"intent":"Choose United States","do":"press","key":"Enter","readyTimeout":3000,"settleMs":1500}
+{"intent":"Save","do":"click","role":"button","name":"Save","readyTimeout":10000,"settleMs":5000}
+{"intent":"Payments with the default country United States","do":"goto","url":"https://store-w5pamplexj.mybigcommerce.com/manage/microapps/payments-settings-ui","readyTimeout":30000,"settleMs":6000}
+{"intent":"Currencies: the store's default currency and the currencies it holds","do":"goto","url":"https://store-w5pamplexj.mybigcommerce.com/manage/microapps/ng-currencies","readyTimeout":30000,"settleMs":6000}
+{"intent":"Tax (default country United States): the store's tax settings and the services offered","do":"goto","url":"https://store-w5pamplexj.mybigcommerce.com/manage/microapps/tax","readyTimeout":30000,"settleMs":6000}
+{"intent":"Add tax service: the tax services offered to the store (default country United States)","do":"click","role":"button","name":"Add tax service","readyTimeout":10000,"settleMs":4000}
+{"intent":"Tax services the store is offered (default country United States)","do":"goto","url":"https://store-w5pamplexj.mybigcommerce.com/manage/microapps/tax/supported-providers","readyTimeout":30000,"settleMs":6000}
+{"intent":"Store tax settings","do":"goto","url":"https://store-w5pamplexj.mybigcommerce.com/manage/microapps/tax/settings","readyTimeout":30000,"settleMs":6000}
+{"intent":"Localization","do":"goto","url":"https://store-w5pamplexj.mybigcommerce.com/manage/microapps/localization-settings-ui","readyTimeout":30000,"settleMs":4000}
+{"intent":"Default country: Oman (saved), to compare the tax services offered","do":"fill","role":"combobox","name":"Default country","value":"Oman","readyTimeout":3000,"settleMs":1000}
+{"intent":"Choose it","do":"press","key":"Enter","readyTimeout":3000,"settleMs":1000}
+{"intent":"Save","do":"click","role":"button","name":"Save","readyTimeout":10000,"settleMs":4000}
+{"intent":"Tax services the store is offered (default country Oman)","do":"goto","url":"https://store-w5pamplexj.mybigcommerce.com/manage/microapps/tax/supported-providers","readyTimeout":30000,"settleMs":5000}
+{"intent":"Localization","do":"goto","url":"https://store-w5pamplexj.mybigcommerce.com/manage/microapps/localization-settings-ui","readyTimeout":30000,"settleMs":4000}
+{"intent":"Default country: United Kingdom (saved), to compare the tax services offered","do":"fill","role":"combobox","name":"Default country","value":"United Kingdom","readyTimeout":3000,"settleMs":1000}
+{"intent":"Choose it","do":"press","key":"Enter","readyTimeout":3000,"settleMs":1000}
+{"intent":"Save","do":"click","role":"button","name":"Save","readyTimeout":10000,"settleMs":4000}
+{"intent":"Tax services the store is offered (default country United Kingdom)","do":"goto","url":"https://store-w5pamplexj.mybigcommerce.com/manage/microapps/tax/supported-providers","readyTimeout":30000,"settleMs":5000}
+{"intent":"Localization","do":"goto","url":"https://store-w5pamplexj.mybigcommerce.com/manage/microapps/localization-settings-ui","readyTimeout":30000,"settleMs":4000}
+{"intent":"Default country: Saudi Arabia (saved), to compare the tax services offered","do":"fill","role":"combobox","name":"Default country","value":"Saudi Arabia","readyTimeout":3000,"settleMs":1000}
+{"intent":"Choose it","do":"press","key":"Enter","readyTimeout":3000,"settleMs":1000}
+{"intent":"Save","do":"click","role":"button","name":"Save","readyTimeout":10000,"settleMs":4000}
+{"intent":"Tax services the store is offered (default country Saudi Arabia)","do":"goto","url":"https://store-w5pamplexj.mybigcommerce.com/manage/microapps/tax/supported-providers","readyTimeout":30000,"settleMs":5000}
+{"intent":"Shipping: the store's origin address and shipping zones","do":"goto","url":"https://store-w5pamplexj.mybigcommerce.com/manage/microapps/ng-shipping-manager","readyTimeout":30000,"settleMs":6000}
+{"do":"close"}

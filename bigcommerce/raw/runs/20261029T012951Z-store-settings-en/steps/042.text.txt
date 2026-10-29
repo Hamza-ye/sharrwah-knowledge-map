@@ -1,0 +1,12 @@
+Settings
+Currencies
+Configure what currencies customers will see and be charged in on your store.Learn more about currencies
+Default Currency
+Currency name
+Payment provider
+Actions
+Rial Omani - OMRTest payment providerEdit
+Allow shoppers to purchase in their currency
+Add multiple currencies to support your store's key markets. You'll be able to set a fixed conversion rate to your default currency or set individual prices through Price Lists (only on supported plans).
+To charge customers in a currency, you will need to set up a payment provider for it (Stripe, PayPal by Braintree and more).
+Add new currency

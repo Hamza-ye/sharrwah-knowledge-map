@@ -1,0 +1,64 @@
+Store tax settings
+Back to configured services
+Configure tax options
+Tax label
+[Tax]
+Prices entered with tax
+[ ]
+Yes, I will enter prices inclusive of tax
+[x]
+No, I will enter prices exclusive of tax
+When calculating the taxes on sales made outside the pricing tax zone
+[ ]
+Update item prices to reflect applicable tax rates
+[x]
+Keep item prices as entered
+The zone and rates that apply to your tax inclusive pricing.Edit rates and zones
+[Default Zone]
+Fallback tax
+Fallback tax will only be used when your automatic tax service is unreachable. Learn more about fallback tax
+[x]
+Use a flat rate of 10% tax
+[ ]
+Use my basic tax settings
+[ ]
+Disable fallback tax
+Tax document submission
+Control when your tax documents are submitted to your tax provider.
+[ ]
+Submit tax documents at order creation
+[x]
+Submit tax documents at payment capture (cannot be used with offline payment methods)
+Tax calculation
+[By destination address]
+Shipping tax class
+[Shipping]
+Handling tax class
+[Shipping]
+Gift wrapping tax class
+[Gift Wrapping]
+Fees tax class
+[Non-taxable]
+Shopper tax behavior
+Assign shoppers to tax zone
+The tax estimation and tax display settings your shoppers see before they confirm their destination address at checkout. This does not override any tax settings at the customer group level.
+[ ]
+Use geolocation to assign a tax zone until shoppers enter a destination address
+[x]
+Use a default shopper tax zone until shoppers enter a destination address
+Tax zone used when geolocation is not identifiable or enabled
+[Default Zone]
+Configure tax display settings
+Prices within control panel
+[Exclude tax]
+Prices on invoices
+[Use tax zone display settings]
+Tax charges in cart and checkout
+[Show as one summarized line item]
+Tax charges on orders and invoices
+[Show as one summarized line item]
+Configure tax properties
+Tax properties are additional pieces of data which are passed to your external Tax Provider when a tax quote is generated in the Cart and/or Checkout for this product. This allows for industry specific tax rules (which have been configured within the external tax provider) to be applied when tax is calculated for your shopper.
++ Add tax property
+Cancel
+Save

@@ -1,0 +1,19 @@
+- link "Settings":
+  - /url: /manage/microapps/settings-list-ui
+- heading "Payment methods" [level=1]
+- paragraph:
+  - text: Set up payment methods for the currencies you support in your store.
+  - link "Learn more":
+    - /url: https://support.bigcommerce.com/s/article/Online-Payment-Methods
+- text: "Show payment methods for:"
+- combobox "Show payment methods for:": OMR (Rial Omani)
+- button "toggle menu"
+- listbox "Show payment methods for:"
+- alert: Online payment methods are disabled for this store. Please switch to a paid plan to activate online payments.
+- tablist "Navigation Tabs":
+  - tab "Payment configuration" [selected]
+- paragraph: Offline payment methods
+- checkbox "Enable test credit card payments" [checked]
+- text: Enable test credit card payments
+- paragraph: To process test orders, use card number 4111 1111 1111 1111, name "success" and any future date for expiration date.
+- button "Open Resource Center"

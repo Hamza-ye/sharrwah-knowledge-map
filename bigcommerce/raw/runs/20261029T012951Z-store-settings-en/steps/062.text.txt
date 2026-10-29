@@ -1,0 +1,38 @@
+Settings
+Learn more
+Video tutorial
+Shipping
+Shipping origin
+The shipping origin is the address where you ship your products from. It is also used to calculate the shipping rates displayed to your customers within the checkout.
+Get started by adding your address so you can print shipping labels and get real time shipping quotes.
+Add shipping address
+Checkout shipping options
+Manage your shipping zones, carriers and rules you want to offer to your customers within the checkout.
+Add shipping zone
+Configure your shipping rules
+Basic shipping rules
+NameDescriptionToggleActions
+Oman
+[x]
+On
+Toggle zone
+Configure
+Shipping address form display
+Control which countries are shown in the country drop down at checkout when shoppers enter their shipping address. Your configured shipping rules will still apply. This setting does not mean you will ship to those countries, only that shoppers can enter their full address.
+[ ]
+Display all countries, regardless of my shipping settings
+[x]
+Only display countries when a shipping method is available
+Advanced shipping rules
+Take control of your shipping options at checkout with ShipperHQ. Show customers delivery dates, live shipping rates, discounts and promotions, and curated shipping and pickup options for every buying scenario. ShipperHQ also integrates with over 50 parcel and LTL freight providers to further automate all your shipping needs.
+View the ShipperHQ privacy policy
+Install ShipperHQ
+Out of delivery zone message
+This message will be shown to shoppers outside of zones you have set up for delivery.
+Unfortunately one or more items in your cart can't be shipped to your location. Please choose a different delivery address.
+Edit
+Shipping labels
+NameDescriptionActions
+ShipStation
+Native label printing powered by ShipStation. Manage orders, create and print shipping labels from within BigCommerce.
+Install ShipStation

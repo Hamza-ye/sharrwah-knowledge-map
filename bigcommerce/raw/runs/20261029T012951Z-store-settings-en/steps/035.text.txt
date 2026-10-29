@@ -1,0 +1,92 @@
+Settings
+[Search]
+Setup
+Store profile
+Basic information about your business
+Localization
+Languages and regional settings for your storefronts
+Currencies
+Currencies customers will see and be charged in at your store
+Payments
+Payment methods for the currencies you support in your store
+Locations
+Locations represent the physical places where you stock inventory
+Pick up methods
+Create and edit in-person pick up methods for online orders.
+Shipping
+Store's origin address, shipping zones, and shipping services
+Tax
+Your own tax rules and recommended services
+General
+Website
+Physical dimension settings, search engine optimization, HTTPS, search engine robots
+Display
+Settings related to displaying products, categories, control panel etc.
+Share
+Social sharing settings on product pages and blog posts
+URL structure
+Product, category and web pages URL settings
+Search
+new
+Default product sort, default content sort, search logic
+Security & Privacy
+Security & privacy settings for storefront and control panel
+Miscellaneous
+Email settings, advanced store settings, order settings, throttler
+Orders
+Order notifications
+Brief messages informing you that an order has been placed, etc.
+Returns
+Products return rules
+Statuses
+Order statuses and order status descriptions
+Products
+Inventory
+What shoppers will see when a product is out of stock, etc.
+Gift wrapping
+Name your gift wrapping option, set a price, etc.
+Comments
+Shoppers comments about products
+Marketing
+Promotions and coupons
+Promotion calculation rules and coupon limits
+Domain
+Domain name
+Buy a new domain or add an existing one
+301 Redirects
+301 redirect tells search engines that a page on your website has moved
+Email & DNS records
+Manage your domain, subdomain, and email records
+SSL certificates
+Encrypting Internet traffic and verifying server identity
+Advanced
+Accounting
+Connecting accounting software
+Data solutions
+Web analytics, data warehouses, business intelligence platforms, customer data platform
+Checkout
+Features that minimize friction and smooth process of checkout
+Account sign up form
+List of form fields for signup, addresses on checkout etc.
+Export templates
+Orders, customers and products export settings
+Store logs
+System logs and staff action logs rules
+File access (WebDAV)
+Application that allows uploading files to store's server
+Users
+Providing access to the administration area of your store
+Early access
+Try new tools, beta functionality, and upcoming features
+API and MCP
+Storefront API Playground
+API queries examples and additional information
+Store-level API accounts
+Create specific permissions for some apps and integrations
+Storefront API tokens
+View and revoke tokens used to access the Storefront API
+Account-level API accounts
+Create specific permissions for some account level operations
+MCP
+new
+Enable and configure Model Context Protocol endpoints for AI agents

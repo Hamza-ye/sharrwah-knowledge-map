@@ -1,0 +1,41 @@
+- main:
+  - heading "Tax Back to configured services" [level=1]:
+    - text: Tax
+    - link "Back to configured services":
+      - /url: /manage/microapps/tax/configured-providers
+  - heading "Recommended services" [level=2]
+  - img "Avalara"
+  - paragraph: An automated solution for sales tax calculation, integrated with BigCommerce.
+  - heading "Features" [level=4]
+  - paragraph: Automate pre-built tax rules for thousands of goods and services
+  - paragraph: Produce audit-ready reports for easier filing
+  - paragraph: 700+ integrations with omnichannel business systems
+  - link "Install":
+    - /url: /manage/app/32120
+  - img "Recommended logo"
+  - heading "All tax services" [level=2]
+  - img "CereTax"
+  - text: Simplify sales tax complexity.
+  - link "Install CereTax":
+    - /url: /manage/app/47659
+    - text: Install
+  - img "TaxCloud Simple Sales Tax"
+  - text: Sales tax compliance for BigCommerce
+  - link "Install TaxCloud Simple Sales Tax":
+    - /url: /manage/app/51975
+    - text: Install
+  - img "TaxJar"
+  - text: Spend Time on Your Business. Not Sales Tax.
+  - link "Install TaxJar":
+    - /url: /manage/app/63
+    - text: Install
+  - img "Vertex"
+  - text: Tax technology that empowers business growth.
+  - link "Install Vertex":
+    - /url: /manage/app/17928
+    - text: Install
+  - text: CCH® SureTax®
+  - link "Install CCH® SureTax®":
+    - /url: /manage/app/47538
+    - text: Install
+- button "Open Resource Center"

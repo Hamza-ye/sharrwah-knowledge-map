@@ -1,0 +1,53 @@
+- banner:
+  - link "Settings":
+    - /url: /manage/microapps/settings-list-ui
+  - heading "Localization" [level=1]
+- main:
+  - main:
+    - complementary:
+      - link "Country":
+        - /url: /manage/microapps/localization-settings-ui#root_country
+      - link "Storefront Languages":
+        - /url: /manage/microapps/localization-settings-ui#root_storefrontLanguages
+      - link "Physical dimensions":
+        - /url: /manage/microapps/localization-settings-ui#root_measurement
+      - link "Date and timezone":
+        - /url: /manage/microapps/localization-settings-ui#root_dateTimezone
+    - heading "Country" [level=2]
+    - group:
+      - text: Default country
+      - paragraph: Determines available payment options.
+      - combobox "Default country": United Kingdom
+      - button "toggle menu"
+      - listbox
+    - heading "Storefront Languages" [level=2]
+    - table:
+      - rowgroup:
+        - row "Channel Type Default language Additional languages Actions":
+          - columnheader "Channel"
+          - columnheader "Type"
+          - columnheader "Default language"
+          - columnheader "Additional languages"
+          - columnheader "Actions"
+      - rowgroup:
+        - row "Capture Test Store NA Stencil English (en) NA Actions":
+          - cell "Capture Test Store NA"
+          - cell "Stencil"
+          - cell "English (en)"
+          - cell "NA"
+          - cell "Actions":
+            - button "Actions":
+              - img "Actions"
+    - heading "Physical dimensions" [level=2]
+    - heading "1,234.00 KGS/Centimeters" [level=3]
+    - paragraph: Physical dimension format presented to shoppers. Length and weight entered for a product will be autoconverted into this format.
+    - button "Show format settings"
+    - button "Set standard formats for United Kingdom"
+    - heading "Date and timezone" [level=2]
+    - heading "24th Jul 2020 @ 3:49 AM, (GMT +00:00)" [level=3]
+    - button "Show format settings"
+    - button "Set standard formats for United Kingdom"
+- group:
+  - button "Save" [disabled]
+  - button "Cancel"
+- button "Open Resource Center"

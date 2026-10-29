@@ -1,0 +1,109 @@
+- main:
+  - heading "Store tax settings Back to configured services" [level=1]:
+    - text: Store tax settings
+    - link "Back to configured services":
+      - /url: /manage/microapps/tax/configured-providers
+  - group:
+    - heading "Configure tax options" [level=2]
+    - text: Tax label
+    - textbox "Tax label Please enter a tax label": Tax
+    - paragraph: Prices entered with tax
+    - radio "Yes, I will enter prices inclusive of tax"
+    - text: Yes, I will enter prices inclusive of tax
+    - radio "No, I will enter prices exclusive of tax" [checked]
+    - text: No, I will enter prices exclusive of tax
+    - paragraph: When calculating the taxes on sales made outside the pricing tax zone
+    - radio "Update item prices to reflect applicable tax rates"
+    - text: Update item prices to reflect applicable tax rates
+    - radio "Keep item prices as entered" [checked]
+    - text: Keep item prices as entered
+    - paragraph:
+      - text: The zone and rates that apply to your tax inclusive pricing.
+      - link "Edit rates and zones":
+        - /url: /manage/settings/tax/tax-zones
+    - combobox:
+      - option "Default Zone" [selected]
+    - paragraph: Fallback tax
+    - paragraph:
+      - text: Fallback tax will only be used when your automatic tax service is unreachable.
+      - link "Learn more about fallback tax":
+        - /url: https://support.bigcommerce.com/s/article/Automatic-Tax-Setup#fallback
+    - radio "Use a flat rate of 10% tax" [checked]
+    - text: Use a flat rate of 10% tax
+    - radio "Use my basic tax settings"
+    - text: Use my basic tax settings
+    - radio "Disable fallback tax"
+    - text: Disable fallback tax
+    - paragraph: Tax document submission
+    - paragraph: Control when your tax documents are submitted to your tax provider.
+    - radio "Submit tax documents at order creation"
+    - text: Submit tax documents at order creation
+    - radio "Submit tax documents at payment capture (cannot be used with offline payment methods)" [checked]
+    - text: Submit tax documents at payment capture (cannot be used with offline payment methods) Tax calculation
+    - combobox "Tax calculation":
+      - option "By billing address"
+      - option "By destination address" [selected]
+      - option "By shipping origin"
+    - text: Shipping tax class
+    - combobox "Shipping tax class":
+      - option "Default Tax Class"
+      - option "Non-taxable"
+      - option "Shipping" [selected]
+      - option "Gift Wrapping"
+    - text: Handling tax class
+    - combobox "Handling tax class":
+      - option "Default Tax Class"
+      - option "Non-taxable"
+      - option "Shipping" [selected]
+      - option "Gift Wrapping"
+    - text: Gift wrapping tax class
+    - combobox "Gift wrapping tax class":
+      - option "Default Tax Class"
+      - option "Non-taxable"
+      - option "Shipping"
+      - option "Gift Wrapping" [selected]
+    - text: Fees tax class
+    - combobox "Fees tax class":
+      - option "Default Tax Class"
+      - option "Non-taxable" [selected]
+      - option "Shipping"
+      - option "Gift Wrapping"
+    - heading "Shopper tax behavior" [level=2]
+    - paragraph: Assign shoppers to tax zone
+    - paragraph: The tax estimation and tax display settings your shoppers see before they confirm their destination address at checkout. This does not override any tax settings at the customer group level.
+    - radio "Use geolocation to assign a tax zone until shoppers enter a destination address"
+    - text: Use geolocation to assign a tax zone until shoppers enter a destination address
+    - radio "Use a default shopper tax zone until shoppers enter a destination address" [checked]
+    - text: Use a default shopper tax zone until shoppers enter a destination address
+    - paragraph: Tax zone used when geolocation is not identifiable or enabled
+    - combobox:
+      - option "Default Zone" [selected]
+    - heading "Configure tax display settings" [level=2]
+    - text: Prices within control panel
+    - combobox "Prices within control panel":
+      - option "Include tax"
+      - option "Exclude tax" [selected]
+      - option "Use tax zone display settings"
+    - text: Prices on invoices
+    - combobox "Prices on invoices":
+      - option "Include tax"
+      - option "Exclude tax"
+      - option "Use tax zone display settings" [selected]
+    - text: Tax charges in cart and checkout
+    - combobox "Tax charges in cart and checkout":
+      - option "Show as one summarized line item" [selected]
+      - option "Show each tax rate individually"
+    - text: Tax charges on orders and invoices
+    - combobox "Tax charges on orders and invoices":
+      - option "Show as one summarized line item" [selected]
+      - option "Show each tax rate individually"
+    - heading "Configure tax properties" [level=2]
+    - paragraph: Tax properties are additional pieces of data which are passed to your external Tax Provider when a tax quote is generated in the Cart and/or Checkout for this product. This allows for industry specific tax rules (which have been configured within the external tax provider) to be applied when tax is calculated for your shopper.
+    - table:
+      - rowgroup
+    - table:
+      - rowgroup
+    - button "+ Add tax property"
+  - button "Cancel"
+  - button "Save"
+- button "Open Resource Center"

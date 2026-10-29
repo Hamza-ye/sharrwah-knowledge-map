@@ -1,0 +1,87 @@
+- main:
+  - link "Settings":
+    - /url: /manage/microapps/settings-list-ui
+  - list:
+    - listitem:
+      - link "Learn more":
+        - /url: https://support.bigcommerce.com/s/article/Shipping-Setup
+    - listitem:
+      - link "Video tutorial":
+        - /url: https://support.bigcommerce.com/s/article/Shipping-Zones-and-Charges-Video
+  - heading "Shipping" [level=1]
+  - heading "Shipping origin" [level=2]
+  - paragraph: The shipping origin is the address where you ship your products from. It is also used to calculate the shipping rates displayed to your customers within the checkout.
+  - paragraph: Get started by adding your address so you can print shipping labels and get real time shipping quotes.
+  - button "Add shipping address"
+  - heading "Checkout shipping options" [level=2]
+  - paragraph: Manage your shipping zones, carriers and rules you want to offer to your customers within the checkout.
+  - button "Add shipping zone"
+  - paragraph: Configure your shipping rules
+  - article:
+    - heading "Basic shipping rules" [level=2]:
+      - link "Basic shipping rules":
+        - /url: javascript:void(0)
+    - table:
+      - rowgroup:
+        - row "Name Description Toggle Actions":
+          - columnheader
+          - columnheader "Name"
+          - columnheader "Description"
+          - columnheader "Toggle"
+          - columnheader "Actions"
+      - rowgroup:
+        - row "Oman On Toggle zone Configure shipping zone Oman":
+          - cell
+          - rowheader "Oman":
+            - text: Oman
+            - link:
+              - /url: /manage/microapps/ng-shipping-manager/zone/1
+          - cell:
+            - list
+          - cell "On Toggle zone":
+            - checkbox "On" [checked]
+            - text: On Toggle zone
+          - cell "Configure shipping zone Oman":
+            - link "Configure shipping zone Oman":
+              - /url: /manage/microapps/ng-shipping-manager/zone/1
+              - text: Configure
+    - heading "Shipping address form display" [level=4]
+    - paragraph: Control which countries are shown in the country drop down at checkout when shoppers enter their shipping address. Your configured shipping rules will still apply. This setting does not mean you will ship to those countries, only that shoppers can enter their full address.
+    - radio "Display all countries, regardless of my shipping settings"
+    - text: Display all countries, regardless of my shipping settings
+    - radio "Only display countries when a shipping method is available" [checked]
+    - text: Only display countries when a shipping method is available
+  - article:
+    - heading "Advanced shipping rules" [level=2]:
+      - link "Advanced shipping rules":
+        - /url: javascript:void(0)
+    - img "ShipperHQ"
+    - paragraph: Take control of your shipping options at checkout with ShipperHQ. Show customers delivery dates, live shipping rates, discounts and promotions, and curated shipping and pickup options for every buying scenario. ShipperHQ also integrates with over 50 parcel and LTL freight providers to further automate all your shipping needs.
+    - paragraph:
+      - link "View the ShipperHQ privacy policy":
+        - /url: https://shipperhq.com/privacy
+    - link "Install ShipperHQ":
+      - /url: /manage/app/4869
+  - heading "Out of delivery zone message" [level=2]
+  - paragraph: This message will be shown to shoppers outside of zones you have set up for delivery.
+  - paragraph: Unfortunately one or more items in your cart can't be shipped to your location. Please choose a different delivery address.
+  - button "Edit out of delivery zone message": Edit
+  - heading "Shipping labels" [level=2]
+  - table:
+    - rowgroup:
+      - row "Name Description Actions":
+        - columnheader
+        - columnheader "Name"
+        - columnheader "Description"
+        - columnheader "Actions"
+    - rowgroup:
+      - row "ShipStation Native label printing powered by ShipStation. Manage orders, create and print shipping labels from within BigCommerce. Install ShipStation":
+        - cell:
+          - img
+        - rowheader "ShipStation"
+        - cell "Native label printing powered by ShipStation. Manage orders, create and print shipping labels from within BigCommerce.":
+          - paragraph: Native label printing powered by ShipStation. Manage orders, create and print shipping labels from within BigCommerce.
+        - cell "Install ShipStation":
+          - link "Install ShipStation":
+            - /url: /manage/app/96
+- button "Open Resource Center"

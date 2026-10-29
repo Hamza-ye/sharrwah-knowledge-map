@@ -1,0 +1,26 @@
+- main:
+  - link "Settings":
+    - /url: /manage/microapps/settings-list-ui
+  - heading "Tax Add tax service" [level=1]:
+    - text: Tax
+    - link "Add tax service":
+      - /url: /manage/microapps/tax/supported-providers
+  - heading "Recommended services" [level=2]
+  - img "Avalara"
+  - text: An automated solution for sales tax calculation, integrated with BigCommerce.
+  - button "Dismiss"
+  - link "Install":
+    - /url: /manage/app/32120
+  - heading "Tax rules" [level=2]
+  - text: Basic Tax Enabled Configure your own tax classes, rates and zones. Basic tax will be used if your tax service is not targeted to a given country/subdivision, or is unavailable during a purchase. Basic tax rules will be used to display tax on your storefronts, when applicable. 4 Tax classes 1 Tax zones 0 Tax rates
+  - button "Edit Basic Tax": Edit
+  - heading "Store tax settings Edit tax settings" [level=2]:
+    - text: Store tax settings
+    - link "Edit tax settings":
+      - /url: /manage/microapps/tax/settings
+      - text: Edit
+  - paragraph: Fallback tax
+  - paragraph: A flat rate of 10% tax applies when your automatic tax service is unreachable.
+  - paragraph: Tax inclusive pricing
+  - paragraph: Entered prices do not include tax.
+- button "Open Resource Center"

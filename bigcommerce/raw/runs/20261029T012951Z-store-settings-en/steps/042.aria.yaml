@@ -1,0 +1,36 @@
+- link "Settings":
+  - /url: /manage/microapps/settings-list-ui
+- heading "Currencies" [level=1]
+- text: Configure what currencies customers will see and be charged in on your store.
+- link "Learn more about currencies":
+  - /url: https://support.bigcommerce.com/s/article/Managing-Currencies
+- heading "Default Currency" [level=2]
+- table:
+  - rowgroup:
+    - row "Currency name Payment provider Actions":
+      - columnheader "Currency name"
+      - columnheader "Payment provider"
+      - columnheader "Actions"
+  - rowgroup:
+    - row "Rial Omani - OMR Test payment provider Edit":
+      - cell "Rial Omani - OMR"
+      - cell "Test payment provider":
+        - link "Test payment provider":
+          - /url: /manage/settings/payment/bigpaypay?currency_code=OMR
+      - cell "Edit":
+        - link "Edit":
+          - /url: "#"
+- heading "Allow shoppers to purchase in their currency" [level=2]
+- paragraph:
+  - text: Add multiple currencies to support your store's key markets. You'll be able to set a fixed conversion rate to your default currency or set individual prices through Price Lists (only on
+  - link "supported plans":
+    - /url: https://www.bigcommerce.com/essentials/pricing/
+  - text: ).
+- paragraph:
+  - text: To charge customers in a currency, you will need to set up a payment provider for it (Stripe, PayPal by Braintree and
+  - link "more":
+    - /url: https://support.bigcommerce.com/s/article/Managing-Currencies
+  - text: ).
+- button "Add new currency"
+- img "Intro"
+- button "Open Resource Center"

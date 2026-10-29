@@ -1,0 +1,98 @@
+- link "Skip to side navigation":
+  - /url: https://store-w5pamplexj.mybigcommerce.com/manage/settings#side-nav
+- link "Skip to main content":
+  - /url: https://store-w5pamplexj.mybigcommerce.com/manage/settings#content-iframe
+- navigation "Top navigation":
+  - link "Home":
+    - /url: /manage/dashboard
+    - img "BigCommerce logo"
+  - button "Capture Test Store NA":
+    - heading "Capture Test Store NA" [level=4]
+    - img
+  - combobox:
+    - button "Submit search":
+      - img
+    - textbox "Search":
+      - /placeholder: Search products, orders, customers, or navigate to
+  - button "Help button":
+    - img "Help"
+  - 'button "Notifications count: 2"':
+    - text: "2"
+    - img "Notifications"
+  - button "My profile":
+    - img "Profile"
+  - button "BigCommerce Companion"
+  - button "View storefront":
+    - text: View storefront
+    - img
+- navigation:
+  - list:
+    - menuitem "Inactive home icon Home":
+      - link "Inactive home icon Home":
+        - /url: /manage/dashboard
+        - img "Inactive home icon"
+        - text: Home
+    - menuitem "Expand Inactive orders icon Orders":
+      - button "Expand":
+        - img
+      - button "Inactive orders icon Orders":
+        - img "Inactive orders icon"
+        - text: Orders
+    - menuitem "Expand Inactive products icon Products":
+      - button "Expand":
+        - img
+      - button "Inactive products icon Products":
+        - img "Inactive products icon"
+        - text: Products
+    - menuitem "Expand Inactive customers icon Customers":
+      - button "Expand":
+        - img
+      - button "Inactive customers icon Customers":
+        - img "Inactive customers icon"
+        - text: Customers
+    - menuitem "Expand Inactive storefront icon Storefront":
+      - button "Expand":
+        - img
+      - button "Inactive storefront icon Storefront":
+        - img "Inactive storefront icon"
+        - text: Storefront
+    - menuitem "Expand Inactive marketing icon Marketing":
+      - button "Expand":
+        - img
+      - button "Inactive marketing icon Marketing":
+        - img "Inactive marketing icon"
+        - text: Marketing
+    - menuitem "Expand Inactive analytics icon Analytics":
+      - button "Expand":
+        - img
+      - button "Inactive analytics icon Analytics":
+        - img "Inactive analytics icon"
+        - text: Analytics
+    - menuitem "Expand Inactive apps icon Apps":
+      - button "Expand":
+        - img
+      - button "Inactive apps icon Apps":
+        - img "Inactive apps icon"
+        - text: Apps
+    - menuitem "B2B icon B2B":
+      - link "B2B icon B2B":
+        - /url: /manage/b2b
+        - img "B2B icon"
+        - text: B2B
+    - menuitem "Expand Inactive channels icon Channels":
+      - button "Expand":
+        - img
+      - button "Inactive channels icon Channels":
+        - img "Inactive channels icon"
+        - text: Channels
+    - menuitem "Inactive settings icon Settings":
+      - link "Inactive settings icon Settings":
+        - /url: /manage/settings-list
+        - img "Inactive settings icon"
+        - text: Settings
+  - button "Collapse navigation":
+    - img
+- main:
+  - heading "Not Found" [level=1]
+  - link "back to control panel":
+    - /url: /manage/dashboard

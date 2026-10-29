@@ -1,0 +1,228 @@
+- heading "Settings" [level=1]
+- textbox "Search"
+- heading "Setup" [level=2]
+- navigation "Setup":
+  - list:
+    - listitem:
+      - link "Store profile Basic information about your business":
+        - /url: /manage/microapps/store-profile-ui
+        - heading "Store profile" [level=4]
+        - paragraph: Basic information about your business
+    - listitem:
+      - link "Localization Languages and regional settings for your storefronts":
+        - /url: /manage/microapps/localization-settings-ui
+        - heading "Localization" [level=4]
+        - paragraph: Languages and regional settings for your storefronts
+    - listitem:
+      - link "Currencies Currencies customers will see and be charged in at your store":
+        - /url: /manage/microapps/ng-currencies
+        - heading "Currencies" [level=4]
+        - paragraph: Currencies customers will see and be charged in at your store
+    - listitem:
+      - link "Payments Payment methods for the currencies you support in your store":
+        - /url: /manage/microapps/payments-settings-ui
+        - heading "Payments" [level=4]
+        - paragraph: Payment methods for the currencies you support in your store
+    - listitem:
+      - link "Locations Locations represent the physical places where you stock inventory":
+        - /url: /manage/microapps/inventory-locations-app
+        - heading "Locations" [level=4]
+        - paragraph: Locations represent the physical places where you stock inventory
+    - listitem:
+      - link "Pick up methods Create and edit in-person pick up methods for online orders.":
+        - /url: /manage/microapps/pickup-methods
+        - heading "Pick up methods" [level=4]
+        - paragraph: Create and edit in-person pick up methods for online orders.
+    - listitem:
+      - link "Shipping Store's origin address, shipping zones, and shipping services":
+        - /url: /manage/microapps/ng-shipping-manager
+        - heading "Shipping" [level=4]
+        - paragraph: Store's origin address, shipping zones, and shipping services
+    - listitem:
+      - link "Tax Your own tax rules and recommended services":
+        - /url: /manage/microapps/tax
+        - heading "Tax" [level=4]
+        - paragraph: Your own tax rules and recommended services
+- heading "General" [level=2]
+- navigation "General":
+  - list:
+    - listitem:
+      - link "Website Physical dimension settings, search engine optimization, HTTPS, search engine robots":
+        - /url: /admin/index.php?ToDo=viewSettings#WebsiteSettingsTab
+        - heading "Website" [level=4]
+        - paragraph: Physical dimension settings, search engine optimization, HTTPS, search engine robots
+    - listitem:
+      - link "Display Settings related to displaying products, categories, control panel etc.":
+        - /url: /admin/index.php?ToDo=viewSettings#DisplaySettingsTab
+        - heading "Display" [level=4]
+        - paragraph: Settings related to displaying products, categories, control panel etc.
+    - listitem:
+      - link "Share Social sharing settings on product pages and blog posts":
+        - /url: /admin/index.php?ToDo=viewSettings#SocialSettingsTab
+        - heading "Share" [level=4]
+        - paragraph: Social sharing settings on product pages and blog posts
+    - listitem:
+      - link "URL structure Product, category and web pages URL settings":
+        - /url: /admin/index.php?ToDo=viewSettings#URLStructure
+        - heading "URL structure" [level=4]
+        - paragraph: Product, category and web pages URL settings
+    - listitem:
+      - link "Search new Default product sort, default content sort, search logic":
+        - /url: /admin/index.php?ToDo=viewSettings#SearchSettingsTab
+        - heading "Search" [level=4]
+        - text: new
+        - paragraph: Default product sort, default content sort, search logic
+    - listitem:
+      - link "Security & Privacy Security & privacy settings for storefront and control panel":
+        - /url: /admin/index.php?ToDo=viewSettings#SecuritySettingsTab
+        - heading "Security & Privacy" [level=4]
+        - paragraph: Security & privacy settings for storefront and control panel
+    - listitem:
+      - link "Miscellaneous Email settings, advanced store settings, order settings, throttler":
+        - /url: /admin/index.php?ToDo=viewSettings#MiscellaneousSettingsTab
+        - heading "Miscellaneous" [level=4]
+        - paragraph: Email settings, advanced store settings, order settings, throttler
+- heading "Orders" [level=2]
+- navigation "Orders":
+  - list:
+    - listitem:
+      - link "Order notifications Brief messages informing you that an order has been placed, etc.":
+        - /url: /admin/index.php?ToDo=viewNotificationSettings
+        - heading "Order notifications" [level=4]
+        - paragraph: Brief messages informing you that an order has been placed, etc.
+    - listitem:
+      - link "Returns Products return rules":
+        - /url: /admin/index.php?ToDo=viewReturnsSettings
+        - heading "Returns" [level=4]
+        - paragraph: Products return rules
+    - listitem:
+      - link "Statuses Order statuses and order status descriptions":
+        - /url: /manage/microapps/ng-order-statuses
+        - heading "Statuses" [level=4]
+        - paragraph: Order statuses and order status descriptions
+- heading "Products" [level=2]
+- navigation "Products":
+  - list:
+    - listitem:
+      - link "Inventory What shoppers will see when a product is out of stock, etc.":
+        - /url: /manage/microapps/inventory-settings-ui
+        - heading "Inventory" [level=4]
+        - paragraph: What shoppers will see when a product is out of stock, etc.
+    - listitem:
+      - link "Gift wrapping Name your gift wrapping option, set a price, etc.":
+        - /url: /admin/index.php?ToDo=viewGiftWrapping
+        - heading "Gift wrapping" [level=4]
+        - paragraph: Name your gift wrapping option, set a price, etc.
+    - listitem:
+      - link "Comments Shoppers comments about products":
+        - /url: /admin/index.php?ToDo=viewCommentSystemSettings
+        - heading "Comments" [level=4]
+        - paragraph: Shoppers comments about products
+- heading "Marketing" [level=2]
+- navigation "Marketing":
+  - list:
+    - listitem:
+      - link "Promotions and coupons Promotion calculation rules and coupon limits":
+        - /url: /manage/microapps/promotions-settings-ui
+        - heading "Promotions and coupons" [level=4]
+        - paragraph: Promotion calculation rules and coupon limits
+- heading "Domain" [level=2]
+- navigation "Domain":
+  - list:
+    - listitem:
+      - link "Domain name Buy a new domain or add an existing one":
+        - /url: https://manage.bigcommerce.com/account/stores/1003524922/domains
+        - heading "Domain name" [level=4]
+        - paragraph: Buy a new domain or add an existing one
+    - listitem:
+      - link "301 Redirects 301 redirect tells search engines that a page on your website has moved":
+        - /url: /manage/microapps/redirects?page&limit&sort&direction
+        - heading "301 Redirects" [level=4]
+        - paragraph: 301 redirect tells search engines that a page on your website has moved
+    - listitem:
+      - link "Email & DNS records Manage your domain, subdomain, and email records":
+        - /url: /admin/tools/domains
+        - heading "Email & DNS records" [level=4]
+        - paragraph: Manage your domain, subdomain, and email records
+    - listitem:
+      - link "SSL certificates Encrypting Internet traffic and verifying server identity":
+        - /url: https://manage.bigcommerce.com/account/stores/1003524922/ssl_certs
+        - heading "SSL certificates" [level=4]
+        - paragraph: Encrypting Internet traffic and verifying server identity
+- heading "Advanced" [level=2]
+- navigation "Advanced":
+  - list:
+    - listitem:
+      - link "Accounting Connecting accounting software":
+        - /url: /admin/apps/accounting
+        - heading "Accounting" [level=4]
+        - paragraph: Connecting accounting software
+    - listitem:
+      - link "Data solutions Web analytics, data warehouses, business intelligence platforms, customer data platform":
+        - /url: /manage/microapps/data-solutions-ui
+        - heading "Data solutions" [level=4]
+        - paragraph: Web analytics, data warehouses, business intelligence platforms, customer data platform
+    - listitem:
+      - link "Checkout Features that minimize friction and smooth process of checkout":
+        - /url: /admin/index.php?ToDo=viewCheckoutSettings
+        - heading "Checkout" [level=4]
+        - paragraph: Features that minimize friction and smooth process of checkout
+    - listitem:
+      - link "Account sign up form List of form fields for signup, addresses on checkout etc.":
+        - /url: /admin/index.php?ToDo=viewFormFields
+        - heading "Account sign up form" [level=4]
+        - paragraph: List of form fields for signup, addresses on checkout etc.
+    - listitem:
+      - link "Export templates Orders, customers and products export settings":
+        - /url: /admin/index.php?ToDo=viewExportTemplates
+        - heading "Export templates" [level=4]
+        - paragraph: Orders, customers and products export settings
+    - listitem:
+      - link "Store logs System logs and staff action logs rules":
+        - /url: /admin/index.php?ToDo=systemLog
+        - heading "Store logs" [level=4]
+        - paragraph: System logs and staff action logs rules
+    - listitem:
+      - link "File access (WebDAV) Application that allows uploading files to store's server":
+        - /url: /admin/index.php?ToDo=viewFileAccess
+        - heading "File access (WebDAV)" [level=4]
+        - paragraph: Application that allows uploading files to store's server
+    - listitem:
+      - link "Users Providing access to the administration area of your store":
+        - /url: /admin/index.php?ToDo=viewUsers
+        - heading "Users" [level=4]
+        - paragraph: Providing access to the administration area of your store
+    - listitem:
+      - link "Early access Try new tools, beta functionality, and upcoming features":
+        - /url: /manage/microapps/ai-labs-ui
+        - heading "Early access" [level=4]
+        - paragraph: Try new tools, beta functionality, and upcoming features
+- heading "API and MCP" [level=2]
+- navigation "API and MCP":
+  - list:
+    - listitem:
+      - link "Storefront API Playground API queries examples and additional information":
+        - /url: https://gql-playground.bigcommerce.com/?storefront_hostname=capture-test-store-na.mybigcommerce.com&storefront_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiJ9.eyJjaWQiOlsxXSwiY29ycyI6WyJodHRwczovL2dxbC1wbGF5Z3JvdW5kLmJpZ2NvbW1lcmNlLmNvbSJdLCJlYXQiOjE3OTM0MTAwOTIsImlhdCI6MTc5MzIzNzI5MiwiaXNzIjoiQkMiLCJzaWQiOjEwMDM1MjQ5MjIsInN1YiI6IkJDIiwic3ViX3R5cGUiOjAsInRva2VuX3R5cGUiOjF9.BpGTqn8iKLUuOAFydbTP19QaD0wiT3Mw_pg1W6ZSFNabWczBk2W8Xy-Pg9RKl65fh_uOkmts0ViOFRZRaUAxXg
+        - heading "Storefront API Playground" [level=4]
+        - paragraph: API queries examples and additional information
+    - listitem:
+      - link "Store-level API accounts Create specific permissions for some apps and integrations":
+        - /url: /manage/microapps/api-accounts-ui
+        - heading "Store-level API accounts" [level=4]
+        - paragraph: Create specific permissions for some apps and integrations
+    - listitem:
+      - link "Storefront API tokens View and revoke tokens used to access the Storefront API":
+        - /url: /manage/microapps/api-accounts-ui/storefront-tokens
+        - heading "Storefront API tokens" [level=4]
+        - paragraph: View and revoke tokens used to access the Storefront API
+    - listitem:
+      - link "Account-level API accounts Create specific permissions for some account level operations":
+        - /url: https://accounts.bigcommerce.com/tokens
+        - heading "Account-level API accounts" [level=4]
+        - paragraph: Create specific permissions for some account level operations
+    - listitem:
+      - link "MCP new Enable and configure Model Context Protocol endpoints for AI agents":
+        - /url: /manage/microapps/ai-labs-ui/mcp-settings
+        - heading "MCP" [level=4]
+        - text: new
+        - paragraph: Enable and configure Model Context Protocol endpoints for AI agents

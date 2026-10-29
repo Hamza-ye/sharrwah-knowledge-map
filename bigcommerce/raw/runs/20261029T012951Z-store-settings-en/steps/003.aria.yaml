@@ -1,0 +1,31 @@
+- paragraph:
+  - strong: New global localization settings available!
+  - text: Store country and language are now managed within Localization settings.
+- button "Go to Localization settings"
+- button "Close":
+  - img "Close"
+- link "Settings":
+  - /url: /manage/microapps/settings-list-ui
+- heading "Store profile" [level=1]
+- heading "Contact information" [level=2]
+- paragraph
+- text: Store display name
+- paragraph:
+  - text: Store display name is used as your storefront's default text logo, appearing at the top of all storefront pages. You can also
+  - link "upload an image logo instead.":
+    - /url: /manage/storefront-manager/logo
+- textbox "Store display name": Capture Test Store NA
+- text: Address
+- textbox "Address"
+- text: Address type
+- combobox "Address type": Home office
+- button "toggle menu"
+- listbox "Address type"
+- text: Email
+- paragraph: All emails to customers will be sent from this address.
+- textbox "Email": info@capture-test-store-na.mybigcommerce.com
+- text: Phone
+- paragraph: The number displayed on your storefront. Adding a number improves conversion rates.
+- textbox "Phone"
+- button "Save" [disabled]
+- button "Open Resource Center"
