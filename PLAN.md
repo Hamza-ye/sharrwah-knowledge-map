@@ -231,7 +231,7 @@ The founder's intent puts the class's model before architecture. The subjects co
 
   A row the register doesn't cover enters scope only if the evidence, not the row, shows it is expensive to change. Before starting, the coordinator decides again whether reconciling is worth its cost.
 - **A last sweep** of the inventory's remaining concerns, for anything expensive to change that the subject list missed. A list of the platforms' broad areas, made after G1, may serve as a cross-check that no area was missed ([`areas.tsv`](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/4923e1c96a0296abdaf3f5bdbd8c155e09acfebf/studies/proposals/areas/areas.tsv)). It is a grouping, not evidence, and it sets no subject's boundary.
-- **Gate G4, the safe shore.** The founder accepts the register and the model, and the first version's build is planned on the architecture written by then (section 1).
+- **Gate G4, the safe shore.** The founder accepts the register and the class's model's extent; engineering's rulings on the model's detail come listed for veto. The first version's build is planned on the architecture written by then (section 1).
 
 ## 5. The gates
 
@@ -242,7 +242,7 @@ The founder's intent puts the class's model before architecture. The subjects co
 | G2 | After the subject list | Business scope (answered 26 October: "evidence" for all ten). Under the intent, nothing the class shows is ruled out |
 | G3 | After each subject | The decisions the subject raised that are on the founder's list (section 3); engineering's rulings come listed for veto |
 | GM | After the class's model's extent | A hold point, not a decision: the extent's report comes to the founder, with engineering's rulings for veto, and architecture starts only after it (the founder, 29 October) |
-| G4 | At close-out | Accept the register and the class's model as it then stands (its extent, and the areas written), and plan the first version's build |
+| G4 | At close-out | Accept the register and the class's model's extent (engineering's rulings on its detail come listed for veto), and plan the first version's build |
 
 G1 was answered on 18 October with a re-frame. On 25 October the founder reset the work to this plan, with the pilot's own changes (section 11).
 
@@ -253,7 +253,7 @@ G1 was answered on 18 October with a re-frame. On 25 October the founder reset t
 - **At G2 (answered):** business scope, marked on the subject list.
 - **At G3, after each subject:** that subject's decisions on the founder's list.
 - **At GM, after the model's extent:** its report.
-- **At G4:** accepting the register and the model.
+- **At G4:** accepting the register and the class's model's extent.
 
 **What a decision item looks like.** It takes the form of an architecture decision record (Nygard 2011):
 - the question in one line, and why it is the founder's;
@@ -562,7 +562,7 @@ A dated log. Where an entry differs from a later one, the later holds, and the s
   - **Section 1:** the class's model comes before architecture; narrowing needs a reason; the guard is stated as the intent's rule; the safe shore adds the model.
   - **Section 3:** the founder's list, and everything else engineering's, with veto.
   - **Section 4:** Stage 4A, the class's model. Stage 5's Q3 now first runs at the model's end.
-  - **Section 5:** G3 holds the founder's list only; GM after the model's extent; G4 accepts the model too.
+  - **Section 5:** G3 holds the founder's list only; GM after the model's extent; G4 accepts the model's extent too (the review's wording, which the founder approved).
   - **Section 6:** the product-gap rule, the narrowing test and the kinds.
   - **Section 9:** the orientation page.
 
