@@ -1,0 +1,57 @@
+- banner:
+  - heading "Channels" [level=1]
+  - button "Create channel"
+- main:
+  - region "Storefronts":
+    - heading "Storefronts" [level=2]
+    - button "Add new"
+    - paragraph:
+      - text: One storefront is included and you are able to add more storefronts at an additional cost.
+      - link "Learn more":
+        - /url: https://support.bigcommerce.com/s/article/Multi-Storefront
+    - table "Storefronts":
+      - rowgroup:
+        - row "Channel name Site URL Channel status Actions":
+          - columnheader "Channel name"
+          - columnheader "Site URL"
+          - columnheader "Channel status"
+          - columnheader "Actions"
+      - rowgroup:
+        - row "Capture Test Store NA https://capture-test-store-na.mybigcommerce.com prelaunch Actions":
+          - cell "Capture Test Store NA":
+            - link "Capture Test Store NA":
+              - /url: /manage/microapps/store-profile-ui
+          - cell "https://capture-test-store-na.mybigcommerce.com":
+            - link "https://capture-test-store-na.mybigcommerce.com":
+              - /url: https://capture-test-store-na.mybigcommerce.com
+          - cell "prelaunch"
+          - cell "Actions":
+            - button "Actions":
+              - img "Actions"
+  - region "Ads and social":
+    - heading "Ads and social" [level=2]
+    - button "Add new"
+    - paragraph: "Add your first marketing channel:"
+    - img
+    - img
+    - img
+    - img
+    - img
+    - img
+  - region "Point of sale":
+    - heading "Point of sale" [level=2]
+    - button "Add new"
+    - paragraph: "Add your first POS channel:"
+    - img
+  - region "Marketplaces":
+    - heading "Marketplaces" [level=2]
+    - button "Add new"
+    - paragraph: "Add your first marketplace channel:"
+    - img
+    - img
+    - img
+  - region "Affiliate and Influencer":
+    - heading "Affiliate and Influencer" [level=2]
+    - button "Add new"
+    - paragraph: "Add your first affiliate channel:"
+    - img

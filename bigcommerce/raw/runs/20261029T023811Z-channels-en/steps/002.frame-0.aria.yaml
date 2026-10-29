@@ -1,0 +1,161 @@
+- banner:
+  - link "Channels":
+    - /url: /manage/microapps/channel-manager
+  - heading "Add new channel" [level=1]
+- main:
+  - navigation "Categories":
+    - paragraph: Categories
+    - list:
+      - listitem:
+        - link "Featured channels":
+          - /url: "#featured-channels-by-feedonomics"
+      - listitem:
+        - link "Storefronts":
+          - /url: "#storefronts"
+      - listitem:
+        - link "Ads and social":
+          - /url: "#ads-and-social"
+      - listitem:
+        - link "Point of sale":
+          - /url: "#point-of-sale"
+      - listitem:
+        - link "Marketplaces":
+          - /url: "#marketplaces"
+      - listitem:
+        - link "Affiliate and Influencer":
+          - /url: "#affiliate-and-influencer"
+  - region "Featured channels by Feedonomics":
+    - heading "Featured channels by Feedonomics" [level=2]
+    - img
+    - paragraph: Google
+    - paragraph: Sync your product data to Google to reach more shoppers across Search, Shopping, and AI-powered experiences.
+    - link "Learn more":
+      - /url: https://support.bigcommerce.com/s/article/Feedonomics-for-Google
+    - button "Connect"
+    - img
+    - paragraph: "Meta: Facebook and Instagram"
+    - paragraph: Connect your products to Meta effortlessly, enabling targeted ads and expanding your reach to millions.
+    - link "Learn more":
+      - /url: https://support.bigcommerce.com/s/article/Feedonomics-for-Meta
+    - button "Connect"
+    - img
+    - paragraph: Microsoft Ads
+    - paragraph: Showcase your BigCommerce products on Microsoft Bing to reach new audiences and drive sales.
+    - link "Learn more":
+      - /url: https://support.bigcommerce.com/s/article/Feedonomics-for-Microsoft-Ads
+    - button "Connect"
+    - img
+    - paragraph: Pinterest
+    - paragraph: Turn your product catalog into Inspiring Shoppable Pins. Reach shoppers while they are planning their next purchase and convert inspiration into action.
+    - link "Learn more":
+      - /url: https://support.bigcommerce.com/s/article/Feedonomics-for-Pinterest
+    - button "Connect"
+    - img
+    - paragraph: TikTok Ads
+    - paragraph: Sync your products to TikTok Ads to tap into the power of discovery. Engage a global community through immersive video ads and seamless in-app shopping experiences.
+    - link "Learn more":
+      - /url: https://support.bigcommerce.com/s/article/Feedonomics-for-TikTok
+    - button "Connect"
+  - region "Storefronts":
+    - heading "Storefronts" [level=2]
+    - img "create more storefronts image"
+    - heading "Create more storefronts with paid plan" [level=3]
+    - paragraph:
+      - text: Optimize your operations and enable multi-geo selling with Multi-storefront capabilities. Manage multiple storefronts in one place by upgrading to one of our paid plans.
+      - link "Learn more":
+        - /url: https://support.bigcommerce.com/s/article/Multi-Storefront?language=en_US#purchasing
+    - button "Upgrade plan"
+    - img
+    - paragraph: BigCommerce
+    - paragraph: Our powerful built-in storefront platform, optimized for fast, feature rich B2C experiences
+    - link "Learn more":
+      - /url: https://support.bigcommerce.com/s/article/Multi-Storefront
+    - button "Create"
+    - img
+    - paragraph: Catalyst
+    - paragraph: Our fully composable, developer-first approach to ecommerce using Next.js.
+    - link "Learn more":
+      - /url: https://support.bigcommerce.com/s/article/Catalyst
+    - button "Create"
+    - img
+    - paragraph: DEITY
+    - paragraph: Create top performing, scalable Progressive Web App shopping experiences with Falcon PWA Storefront and BigCommerce.
+    - link "Learn more":
+      - /url: https://support.bigcommerce.com/s/article/Deity
+    - button "Connect"
+    - link "View more storefront platforms":
+      - /url: https://developer.bigcommerce.com/tools-resources#headless-integrations
+  - region "Ads and social":
+    - heading "Ads and social" [level=2]
+    - img
+    - paragraph: Google
+    - paragraph: Sync your product data to Google to reach more shoppers across Search, Shopping, and AI-powered experiences.
+    - link "Learn more":
+      - /url: https://support.bigcommerce.com/s/article/Feedonomics-for-Google
+    - button "Connect"
+    - img
+    - paragraph: "Meta: Facebook and Instagram"
+    - paragraph: Connect your products to Meta effortlessly, enabling targeted ads and expanding your reach to millions.
+    - link "Learn more":
+      - /url: https://support.bigcommerce.com/s/article/Feedonomics-for-Meta
+    - button "Connect"
+    - img
+    - paragraph: Microsoft Ads
+    - paragraph: Showcase your BigCommerce products on Microsoft Bing to reach new audiences and drive sales.
+    - link "Learn more":
+      - /url: https://support.bigcommerce.com/s/article/Feedonomics-for-Microsoft-Ads
+    - button "Connect"
+    - img
+    - paragraph: Pinterest
+    - paragraph: Turn your product catalog into Inspiring Shoppable Pins. Reach shoppers while they are planning their next purchase and convert inspiration into action.
+    - link "Learn more":
+      - /url: https://support.bigcommerce.com/s/article/Feedonomics-for-Pinterest
+    - button "Connect"
+    - img
+    - paragraph: TikTok Ads
+    - paragraph: Sync your products to TikTok Ads to tap into the power of discovery. Engage a global community through immersive video ads and seamless in-app shopping experiences.
+    - link "Learn more":
+      - /url: https://support.bigcommerce.com/s/article/Feedonomics-for-TikTok
+    - button "Connect"
+    - img
+    - paragraph: Buy Buttons
+    - paragraph: Allow shoppers to buy right from your blog, emails, and social media posts.
+    - link "Learn more":
+      - /url: https://support.bigcommerce.com/s/article/Buy-Buttons-app
+    - button "Connect"
+  - region "Point of sale":
+    - heading "Point of sale" [level=2]
+    - img
+    - paragraph: PayPal Zettle POS
+    - paragraph: Accept payments in-person with PayPal Zettle's all-in-one POS solution.
+    - link "Learn more":
+      - /url: https://www.zettle.com/gb/help/articles/1609357-how-to-connect-with-bigcommerce?utm_campaign=bigcommerce&utm_medium=ecommerce&utm_source=local_partnership
+    - button "Connect"
+  - region "Marketplaces":
+    - heading "Marketplaces" [level=2]
+    - img
+    - paragraph: Amazon
+    - paragraph: Sell on Amazon and reach over 300 million customers worldwide.
+    - link "Learn more":
+      - /url: https://sell.amazon.com/?ld=rpussoa-bigcommerce
+    - button "Connect"
+    - img
+    - paragraph: Walmart
+    - paragraph: Reach millions of Walmart.com customers by becoming a Marketplace seller.
+    - link "Learn more":
+      - /url: https://support.bigcommerce.com/s/article/Setting-Up-Walmart
+    - button "Connect"
+    - img
+    - paragraph: eBay
+    - paragraph: Further expand your brand's reach by selling on eBay.
+    - link "Learn more":
+      - /url: https://support.bigcommerce.com/s/article/eBay-App
+    - button "Connect"
+  - region "Affiliate and Influencer":
+    - heading "Affiliate and Influencer" [level=2]
+    - img
+    - paragraph: impact.com
+    - paragraph: Grow your store and drive more revenue with Affiliate and Influencer Marketing.
+    - link "Learn more":
+      - /url: https://www.bigcommerce.com/apps/impact-partnership-cloud/
+    - button "Connect"

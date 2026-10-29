@@ -1,0 +1,1048 @@
+- paragraph:
+  - text: By visiting this website, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+  - link "View privacy policy.":
+    - /url: https://www.bigcommerce.com/privacy/
+  - link "View cookies list.":
+    - /url: https://www.bigcommerce.com/cookies/
+- button "Cookies Settings"
+- button "I Understand"
+- banner:
+  - navigation:
+    - list:
+      - listitem:
+        - link "Commerce":
+          - /url: https://www.commerce.com/?mktid=aWQlM0E5MDQtR1NCLTkwMSUyNnRva2VuJTNBX21jaC1iaWdjb21tZXJjZS5jb20tMTliMjMzZmNlNmUwNWMwMmUyZjMzOGY2NjQ3YmY3NzQ%3D&ajs_aid=feb810e5-a052-4b54-adbd-5de0e77345ca
+      - listitem:
+        - link "Feedonomics":
+          - /url: https://feedonomics.com/?mktid=aWQlM0E5MDQtR1NCLTkwMSUyNnRva2VuJTNBX21jaC1iaWdjb21tZXJjZS5jb20tMTliMjMzZmNlNmUwNWMwMmUyZjMzOGY2NjQ3YmY3NzQ%3D&ajs_aid=feb810e5-a052-4b54-adbd-5de0e77345ca
+      - listitem:
+        - link "Makeswift":
+          - /url: https://www.makeswift.com/?mktid=aWQlM0E5MDQtR1NCLTkwMSUyNnRva2VuJTNBX21jaC1iaWdjb21tZXJjZS5jb20tMTliMjMzZmNlNmUwNWMwMmUyZjMzOGY2NjQ3YmY3NzQ%3D&ajs_aid=feb810e5-a052-4b54-adbd-5de0e77345ca
+    - list:
+      - listitem:
+        - link "Help Center":
+          - /url: https://support.bigcommerce.com/?mktid=aWQlM0E5MDQtR1NCLTkwMSUyNnRva2VuJTNBX21jaC1iaWdjb21tZXJjZS5jb20tMTliMjMzZmNlNmUwNWMwMmUyZjMzOGY2NjQ3YmY3NzQ%3D&ajs_aid=feb810e5-a052-4b54-adbd-5de0e77345ca
+      - listitem:
+        - link "Developer Center":
+          - /url: https://developer.bigcommerce.com/?mktid=aWQlM0E5MDQtR1NCLTkwMSUyNnRva2VuJTNBX21jaC1iaWdjb21tZXJjZS5jb20tMTliMjMzZmNlNmUwNWMwMmUyZjMzOGY2NjQ3YmY3NzQ%3D&ajs_aid=feb810e5-a052-4b54-adbd-5de0e77345ca
+      - listitem:
+        - link "Log In":
+          - /url: https://login.bigcommerce.com/login/?mktid=aWQlM0E5MDQtR1NCLTkwMSUyNnRva2VuJTNBX21jaC1iaWdjb21tZXJjZS5jb20tMTliMjMzZmNlNmUwNWMwMmUyZjMzOGY2NjQ3YmY3NzQ%3D&ajs_aid=feb810e5-a052-4b54-adbd-5de0e77345ca
+      - listitem: 🇺🇸
+  - navigation:
+    - link "BigCommerce logo":
+      - /url: https://www.bigcommerce.com/
+      - img "BigCommerce logo"
+    - link "Platform":
+      - /url: https://www.bigcommerce.com/apps/categories/#
+    - link "Services":
+      - /url: https://www.bigcommerce.com/apps/categories/#
+    - link "Resources":
+      - /url: https://www.bigcommerce.com/apps/categories/#
+    - link "Pricing":
+      - /url: https://www.bigcommerce.com/pricing/
+    - link "Get a demo":
+      - /url: https://www.bigcommerce.com/request-a-demo/
+    - link "Try for free":
+      - /url: https://www.bigcommerce.com/free-trial/
+  - paragraph: Start & build
+  - list:
+    - listitem:
+      - link "icon Product Overview What you can do with BigCommerce.":
+        - /url: https://www.bigcommerce.com/product/
+        - img "icon"
+        - paragraph: Product Overview
+        - text: What you can do with BigCommerce.
+    - listitem:
+      - link "icon Agentic Commerce icon AI-powered solutions for growth.":
+        - /url: https://www.bigcommerce.com/product/agentic-commerce/
+        - img "icon"
+        - paragraph: Agentic Commerce
+        - img "icon"
+        - text: AI-powered solutions for growth.
+    - listitem:
+      - link "icon Design Your Store Build your store with or without code.":
+        - /url: https://www.bigcommerce.com/product/store-design/
+        - img "icon"
+        - paragraph: Design Your Store
+        - text: Build your store with or without code.
+    - listitem:
+      - link "icon Apps & Integrations Over 1,200 apps to help you grow.":
+        - /url: https://www.bigcommerce.com/apps/
+        - img "icon"
+        - paragraph: Apps & Integrations
+        - text: Over 1,200 apps to help you grow.
+    - listitem:
+      - link "icon Migrate to BigCommerce Switch from Shopify, Woocommerce, Salesforce, Magento, and more.":
+        - /url: https://www.bigcommerce.com/migration/
+        - img "icon"
+        - paragraph: Migrate to BigCommerce
+        - text: Switch from Shopify, Woocommerce, Salesforce, Magento, and more.
+  - paragraph: Sell your way
+  - list:
+    - listitem:
+      - link "B2B Commerce":
+        - /url: https://www.bigcommerce.com/solutions/b2b-ecommerce-platform/
+        - paragraph: B2B Commerce
+    - listitem:
+      - link "Catalog Enrichment icon":
+        - /url: https://www.bigcommerce.com/product/catalog-enrichment/
+        - paragraph: Catalog Enrichment
+        - img "icon"
+    - listitem:
+      - link "Channels & Advertising":
+        - /url: https://www.bigcommerce.com/solutions/omnichannel/
+        - paragraph: Channels & Advertising
+    - listitem:
+      - link "Product Feed Management":
+        - /url: https://www.bigcommerce.com/product/feedonomics-surface/
+        - paragraph: Product Feed Management
+    - listitem:
+      - link "Multi-Storefront":
+        - /url: https://www.bigcommerce.com/solutions/multi-store/
+        - paragraph: Multi-Storefront
+    - listitem:
+      - link "Headless Commerce":
+        - /url: https://www.bigcommerce.com/solutions/headless-commerce/
+        - paragraph: Headless Commerce
+    - listitem:
+      - link "International Commerce":
+        - /url: https://www.bigcommerce.com/solutions/international/
+        - paragraph: International Commerce
+    - listitem:
+      - link "Data & Analytics":
+        - /url: https://www.bigcommerce.com/solutions/big-open-data-solutions/
+        - paragraph: Data & Analytics
+  - paragraph: Run your business
+  - list:
+    - listitem:
+      - link "Checkout":
+        - /url: https://www.bigcommerce.com/product/checkout/
+        - paragraph: Checkout
+    - listitem:
+      - link "Payments":
+        - /url: https://www.bigcommerce.com/payments/
+        - paragraph: Payments
+    - listitem:
+      - link "Inventory":
+        - /url: https://www.bigcommerce.com/product/inventory-management/
+        - paragraph: Inventory
+    - listitem:
+      - link "Shipping":
+        - /url: https://www.bigcommerce.com/product/shipping/
+        - paragraph: Shipping
+    - listitem:
+      - link "Promotions":
+        - /url: https://www.bigcommerce.com/product/promos-and-coupons/
+        - paragraph: Promotions
+  - list:
+    - listitem:
+      - link "Companion icon Your personal AI chat assistant to help you run your store more efficiently.":
+        - /url: https://www.bigcommerce.com/product/companion/
+        - paragraph: Companion
+        - img "icon"
+        - text: Your personal AI chat assistant to help you run your store more efficiently.
+  - paragraph: Developers
+  - list:
+    - listitem:
+      - link "Developer Docs ↗":
+        - /url: https://developer.bigcommerce.com/?mktid=aWQlM0E5MDQtR1NCLTkwMSUyNnRva2VuJTNBX21jaC1iaWdjb21tZXJjZS5jb20tMTliMjMzZmNlNmUwNWMwMmUyZjMzOGY2NjQ3YmY3NzQ%3D&ajs_aid=feb810e5-a052-4b54-adbd-5de0e77345ca
+        - paragraph: Developer Docs ↗
+    - listitem:
+      - link "MCP Toolkit icon":
+        - /url: https://docs.bigcommerce.com/developer/api-reference/mcp/overview?mktid=aWQlM0E5MDQtR1NCLTkwMSUyNnRva2VuJTNBX21jaC1iaWdjb21tZXJjZS5jb20tMTliMjMzZmNlNmUwNWMwMmUyZjMzOGY2NjQ3YmY3NzQ%3D&ajs_aid=feb810e5-a052-4b54-adbd-5de0e77345ca
+        - paragraph: MCP Toolkit
+        - img "icon"
+    - listitem:
+      - link "Security & Compliance ↗":
+        - /url: https://security.bigcommerce.com/?mktid=aWQlM0E5MDQtR1NCLTkwMSUyNnRva2VuJTNBX21jaC1iaWdjb21tZXJjZS5jb20tMTliMjMzZmNlNmUwNWMwMmUyZjMzOGY2NjQ3YmY3NzQ%3D&ajs_aid=feb810e5-a052-4b54-adbd-5de0e77345ca
+        - paragraph: Security & Compliance ↗
+    - listitem:
+      - link "Hosting & Performance":
+        - /url: https://www.bigcommerce.com/product/secure-web-hosting/
+        - paragraph: Hosting & Performance
+    - listitem:
+      - link "Staging Pro":
+        - /url: https://www.bigcommerce.com/product/staging-pro/
+        - paragraph: Staging Pro
+  - paragraph: Launch Services
+  - list:
+    - listitem:
+      - link "Overview Chart your path to success with specialized services.":
+        - /url: https://www.bigcommerce.com/services/launch/
+        - paragraph: Overview
+        - text: Chart your path to success with specialized services.
+    - listitem:
+      - link "Implementation Project Management Experts to ensure you launch on time and under budget.":
+        - /url: https://www.bigcommerce.com/services/launch/#implementation-project-management
+        - paragraph: Implementation Project Management
+        - text: Experts to ensure you launch on time and under budget.
+    - listitem:
+      - link "Solution Architecture Seasoned advisors to help you best design your store.":
+        - /url: https://www.bigcommerce.com/services/launch/#solutions-architecture
+        - paragraph: Solution Architecture
+        - text: Seasoned advisors to help you best design your store.
+    - listitem:
+      - link "Data Migration & Optimization Expertise on a clean and clear path to migrating your data.":
+        - /url: https://www.bigcommerce.com/services/launch/#data-migration-services
+        - paragraph: Data Migration & Optimization
+        - text: Expertise on a clean and clear path to migrating your data.
+    - listitem:
+      - link "Enterprise Launch Package Personal training on how to set up and launch your BigCommerce Store.":
+        - /url: https://www.bigcommerce.com/services/launch/#enterprise-launch-package
+        - paragraph: Enterprise Launch Package
+        - text: Personal training on how to set up and launch your BigCommerce Store.
+  - paragraph: Success Services
+  - list:
+    - listitem:
+      - link "Overview Technical and strategic guidance to help you grow.":
+        - /url: https://www.bigcommerce.com/services/success/
+        - paragraph: Overview
+        - text: Technical and strategic guidance to help you grow.
+    - listitem:
+      - link "Customer Success Manager Trusted partners to guide your growth.":
+        - /url: https://www.bigcommerce.com/services/success/#customer-success-manager
+        - paragraph: Customer Success Manager
+        - text: Trusted partners to guide your growth.
+    - listitem:
+      - link "Technical Account Management Expert technical advice and advocacy.":
+        - /url: https://www.bigcommerce.com/services/success/#technical-account-management
+        - paragraph: Technical Account Management
+        - text: Expert technical advice and advocacy.
+    - listitem:
+      - link "Enterprise Growth Package Increase sales by improving SEO and conversion.":
+        - /url: https://www.bigcommerce.com/services/success/#enterprise-growth-package
+        - paragraph: Enterprise Growth Package
+        - text: Increase sales by improving SEO and conversion.
+  - paragraph: Training
+  - list:
+    - listitem:
+      - link "BigCommerce University Overview Set your team up for success, regardless of their role.":
+        - /url: https://www.bigcommerce.com/resources/university/
+        - paragraph: BigCommerce University Overview
+        - text: Set your team up for success, regardless of their role.
+    - listitem:
+      - link "For Business Users Non-technical training for BigCommerce users.":
+        - /url: https://www.bigcommerce.com/resources/university/business/
+        - paragraph: For Business Users
+        - text: Non-technical training for BigCommerce users.
+    - listitem:
+      - link "For Technical Users Developer courses and certification.":
+        - /url: https://www.bigcommerce.com/resources/university/technical/
+        - paragraph: For Technical Users
+        - text: Developer courses and certification.
+  - paragraph: Professional Services Blog Series
+  - paragraph: Get to know our teams and how they support your success in this Q&A series.
+  - link "Learn more":
+    - /url: https://www.bigcommerce.com/blog/category/professional-services/
+    - text: Learn more
+    - img
+  - paragraph: Product Info
+  - list:
+    - listitem:
+      - link "icon Basics of BigCommerce A quick video tour of the platform.":
+        - /url: https://www.bigcommerce.com/basics/
+        - img "icon"
+        - paragraph: Basics of BigCommerce
+        - text: A quick video tour of the platform.
+    - listitem:
+      - link "icon Product Releases What’s new and what just shipped.":
+        - /url: https://www.bigcommerce.com/blog/category/product-info-updates/
+        - img "icon"
+        - paragraph: Product Releases
+        - text: What’s new and what just shipped.
+    - listitem:
+      - link "icon Help Center Docs, how-tos, and support.":
+        - /url: https://support.bigcommerce.com/s/?language=en_US&mktid=aWQlM0E5MDQtR1NCLTkwMSUyNnRva2VuJTNBX21jaC1iaWdjb21tZXJjZS5jb20tMTliMjMzZmNlNmUwNWMwMmUyZjMzOGY2NjQ3YmY3NzQ%3D&ajs_aid=feb810e5-a052-4b54-adbd-5de0e77345ca
+        - img "icon"
+        - paragraph: Help Center
+        - text: Docs, how-tos, and support.
+  - paragraph: Community
+  - list:
+    - listitem:
+      - link "icon Case Studies":
+        - /url: https://www.bigcommerce.com/case-study/
+        - img "icon"
+        - paragraph: Case Studies
+    - listitem:
+      - link "icon Customer Showcase":
+        - /url: https://www.bigcommerce.com/showcase/
+        - img "icon"
+        - paragraph: Customer Showcase
+    - listitem:
+      - link "icon Events":
+        - /url: https://www.bigcommerce.com/events/
+        - img "icon"
+        - paragraph: Events
+    - listitem:
+      - link "icon Partners":
+        - /url: https://www.bigcommerce.com/partners/
+        - img "icon"
+        - paragraph: Partners
+  - paragraph: Learning Resources
+  - list:
+    - listitem:
+      - link "icon Commerce Growth":
+        - /url: https://www.bigcommerce.com/blog/category/growth-strategies/
+        - img "icon"
+        - paragraph: Commerce Growth
+    - listitem:
+      - link "icon B2B Ecommerce":
+        - /url: https://www.bigcommerce.com/blog/category/b2b/
+        - img "icon"
+        - paragraph: B2B Ecommerce
+    - listitem:
+      - link "icon Agentic Commerce New":
+        - /url: https://www.bigcommerce.com/blog/category/ai/
+        - img "icon"
+        - paragraph: Agentic Commerce
+        - text: New
+    - listitem:
+      - link "icon Channels & Marketplaces":
+        - /url: https://www.bigcommerce.com/articles/omnichannel-retail/
+        - img "icon"
+        - paragraph: Channels & Marketplaces
+  - list:
+    - listitem:
+      - link "icon Commerce Trends":
+        - /url: https://www.bigcommerce.com/blog/category/ecommerce-news-insights/
+        - img "icon"
+        - paragraph: Commerce Trends
+    - listitem:
+      - link "icon Holiday Commerce":
+        - /url: https://www.bigcommerce.com/blog/category/holiday/
+        - img "icon"
+        - paragraph: Holiday Commerce
+    - listitem:
+      - link "icon Developer Blog":
+        - /url: https://www.bigcommerce.com/blog/category/developer-resources/
+        - img "icon"
+        - paragraph: Developer Blog
+  - paragraph: "Browse by type:"
+  - link "All resources":
+    - /url: https://www.bigcommerce.com/resources/
+    - paragraph: All resources
+  - link "Articles":
+    - /url: https://www.bigcommerce.com/articles/
+    - paragraph: Articles
+  - link "Blog":
+    - /url: https://www.bigcommerce.com/blog/
+    - paragraph: Blog
+  - link "Guides":
+    - /url: https://www.bigcommerce.com/resources/guides/
+    - paragraph: Guides
+  - link "Podcasts":
+    - /url: https://www.bigcommerce.com/make-it-big/podcast/
+    - paragraph: Podcasts
+  - link "Reports":
+    - /url: https://www.bigcommerce.com/resources/reports/
+    - paragraph: Reports
+  - link "Webinars":
+    - /url: https://www.bigcommerce.com/resources/webinars/
+    - paragraph: Webinars
+- navigation:
+  - link "Apps & Integrations":
+    - /url: https://www.bigcommerce.com/apps/
+  - link "Themes":
+    - /url: https://www.bigcommerce.com/theme-store/
+  - link "Partner Services":
+    - /url: https://partners.bigcommerce.com/directory/?mktid=aWQlM0E5MDQtR1NCLTkwMSUyNnRva2VuJTNBX21jaC1iaWdjb21tZXJjZS5jb20tMTliMjMzZmNlNmUwNWMwMmUyZjMzOGY2NjQ3YmY3NzQ%3D&ajs_aid=feb810e5-a052-4b54-adbd-5de0e77345ca
+- combobox:
+  - option "All Categories" [selected]
+  - option "Accounting & Tax"
+  - option "Ecommerce AI"
+  - option "Analytics & Reporting"
+  - option "B2B/Wholesale"
+  - option "Catalog & Order Management"
+  - option "Checkout"
+  - option "CMS & Hosting"
+  - option "CRM & Customer Service"
+  - option "Data Transfer/Migration Services"
+  - option "ERP"
+  - option "Financing"
+  - option "Marketing"
+  - option "Merchandising"
+  - option "Mobile"
+  - option "Payments & Security"
+  - option "POS & In-Store"
+  - option "Product & Shipping Protection"
+  - option "Product Sourcing"
+  - option "Sales Channels"
+  - option "Shipping & Fulfillment"
+  - option "Site Tools"
+- img
+- combobox "Search for..."
+- button
+- heading "All Categories" [level=1]
+- heading "Subcategory" [level=2]
+- list:
+  - listitem:
+    - link "All Categories (1416)":
+      - /url: https://www.bigcommerce.com/apps/categories/?search=merchant+of+record
+  - listitem:
+    - link "Accounting & Tax (52)":
+      - /url: https://www.bigcommerce.com/apps/categories/accounting-tax/?search=merchant+of+record
+  - listitem:
+    - link "Ecommerce AI (55)":
+      - /url: https://www.bigcommerce.com/apps/categories/ai/?search=merchant+of+record
+  - listitem:
+    - link "Analytics & Reporting (46)":
+      - /url: https://www.bigcommerce.com/apps/categories/analytics-reporting/?search=merchant+of+record
+  - listitem:
+    - link "B2B/Wholesale (50)":
+      - /url: https://www.bigcommerce.com/apps/categories/b2b-wholesale/?search=merchant+of+record
+  - listitem:
+    - link "Catalog & Order Management (118)":
+      - /url: https://www.bigcommerce.com/apps/categories/catalog-order-management/?search=merchant+of+record
+  - listitem:
+    - link "Checkout (29)":
+      - /url: https://www.bigcommerce.com/apps/categories/checkout/?search=merchant+of+record
+  - listitem:
+    - link "CMS & Hosting (12)":
+      - /url: https://www.bigcommerce.com/apps/categories/cms-hosting/?search=merchant+of+record
+  - listitem:
+    - link "CRM & Customer Service (50)":
+      - /url: https://www.bigcommerce.com/apps/categories/crm-customer-service/?search=merchant+of+record
+  - listitem:
+    - link "Data Transfer/Migration Services (27)":
+      - /url: https://www.bigcommerce.com/apps/categories/data-transfer-migration-services/?search=merchant+of+record
+  - listitem:
+    - link "ERP (41)":
+      - /url: https://www.bigcommerce.com/apps/categories/erp/?search=merchant+of+record
+  - listitem:
+    - link "Financing (14)":
+      - /url: https://www.bigcommerce.com/apps/categories/financing/?search=merchant+of+record
+  - listitem:
+    - link "Marketing (289)":
+      - /url: https://www.bigcommerce.com/apps/categories/marketing/?search=merchant+of+record
+  - listitem:
+    - link "Merchandising (113)":
+      - /url: https://www.bigcommerce.com/apps/categories/merchandising/?search=merchant+of+record
+  - listitem:
+    - link "Mobile (13)":
+      - /url: https://www.bigcommerce.com/apps/categories/mobile/?search=merchant+of+record
+  - listitem:
+    - link "Payments & Security (91)":
+      - /url: https://www.bigcommerce.com/apps/categories/payments-security/?search=merchant+of+record
+  - listitem:
+    - link "POS & In-Store (36)":
+      - /url: https://www.bigcommerce.com/apps/categories/pos-in-store/?search=merchant+of+record
+  - listitem:
+    - link "Product & Shipping Protection (19)":
+      - /url: https://www.bigcommerce.com/apps/categories/product-shipping-protection/?search=merchant+of+record
+  - listitem:
+    - link "Product Sourcing (37)":
+      - /url: https://www.bigcommerce.com/apps/categories/product-sourcing-home/?search=merchant+of+record
+  - listitem:
+    - link "Sales Channels (61)":
+      - /url: https://www.bigcommerce.com/apps/categories/sales-channels/?search=merchant+of+record
+  - listitem:
+    - link "Shipping & Fulfillment (173)":
+      - /url: https://www.bigcommerce.com/apps/categories/shipping-fulfillment/?search=merchant+of+record
+  - listitem:
+    - link "Site Tools (229)":
+      - /url: https://www.bigcommerce.com/apps/categories/site-tools/?search=merchant+of+record
+- heading "Sort by" [level=2]
+- radio "Featured" [checked]
+- text: Featured
+- radio "Popular"
+- text: Popular
+- radio "Newest"
+- text: Newest
+- heading "Price" [level=2]
+- radio "All" [checked]
+- text: All
+- radio "Free"
+- text: Free
+- radio "Paid"
+- text: Paid
+- heading "Rating" [level=2]
+- radio "All" [checked]
+- text: All
+- radio "4 stars and up"
+- img
+- img
+- img
+- img
+- img
+- text: 4 stars and up
+- radio "3 stars and up"
+- img
+- img
+- img
+- img
+- img
+- text: 3 stars and up
+- radio "2 stars and up"
+- img
+- img
+- img
+- img
+- img
+- text: 2 stars and up
+- heading "Partner Tiers" [level=2]
+- radio "All" [checked]
+- text: All
+- radio "Elite"
+- text: Elite
+- radio "Preferred"
+- text: Preferred
+- radio "Verified"
+- text: Verified
+- heading "Type" [level=2]
+- radio "All" [checked]
+- text: All
+- radio "Connector"
+- text: Connector
+- radio "Legacy"
+- text: Legacy
+- radio "Single Click"
+- text: Single Click
+- heading "Compatible with" [level=2]
+- checkbox "Catalyst"
+- text: Catalyst
+- checkbox "Multi Storefront"
+- text: Multi Storefront
+- checkbox "Multi Location"
+- text: Multi Location
+- checkbox "Unified Billing"
+- text: Unified Billing
+- list:
+  - listitem:
+    - link:
+      - /url: https://www.bigcommerce.com/apps/shipstation/
+    - img "featuredIcon"
+    - img "ShipStation"
+    - heading "ShipStation" [level=3]
+    - link "Shipping & Fulfillment":
+      - /url: https://www.bigcommerce.com/apps/categories/shipping-fulfillment/
+    - paragraph: Save time and money on efficient shipping with the premier shipping app for BigCommerce merchants.
+    - heading "Pricing" [level=4]
+    - list:
+      - listitem: "Upfront fee: $0"
+      - listitem: "Recurring fee: $9"
+    - img
+    - img
+    - img
+    - img
+    - img
+    - text: 245 reviews
+    - img "Elite"
+  - listitem:
+    - link:
+      - /url: https://www.bigcommerce.com/apps/shipperhq/
+    - img "featuredIcon"
+    - img "ShipperHQ"
+    - heading "ShipperHQ" [level=3]
+    - link "Shipping & Fulfillment":
+      - /url: https://www.bigcommerce.com/apps/categories/shipping-fulfillment/
+    - paragraph: Increase sales at checkout with customized rates, pickup and delivery options, transparent delivery times, and more.
+    - heading "Pricing" [level=4]
+    - list:
+      - listitem: "Upfront fee: $0"
+      - listitem: "Recurring fee: $350"
+    - img
+    - img
+    - img
+    - img
+    - img
+    - text: 116 reviews
+    - img "Elite"
+  - listitem:
+    - link:
+      - /url: https://www.bigcommerce.com/apps/b2b-edition/
+    - img "featuredIcon"
+    - img "B2B Edition"
+    - heading "B2B Edition" [level=3]
+    - link "B2B/Wholesale":
+      - /url: https://www.bigcommerce.com/apps/categories/b2b-wholesale/
+    - text: ","
+    - link "CRM & Customer Service":
+      - /url: https://www.bigcommerce.com/apps/categories/crm-customer-service/
+    - paragraph: B2B Edition provides enterprise level B2B features to extend the native B2B capabilities of BigCommerce.
+    - heading "Pricing" [level=4]
+    - list:
+      - listitem: Custom Pricing
+    - img
+    - img
+    - img
+    - img
+    - img
+    - text: 15 reviews
+    - img "Elite"
+  - listitem:
+    - link:
+      - /url: https://www.bigcommerce.com/apps/avalara-avatax/
+    - img "featuredIcon"
+    - img "Avalara AvaTax"
+    - heading "Avalara AvaTax" [level=3]
+    - link "Accounting & Tax":
+      - /url: https://www.bigcommerce.com/apps/categories/accounting-tax/
+    - paragraph: Let agentic AI do the tax work for your BigCommerce store. Avalara automates your compliance tasks for speed, accuracy, and scale.
+    - heading "Pricing" [level=4]
+    - list:
+      - listitem: Custom Pricing
+    - img
+    - img
+    - img
+    - img
+    - img
+    - text: 29 reviews
+    - img "Elite"
+  - listitem:
+    - link:
+      - /url: https://www.bigcommerce.com/apps/klaviyo/
+    - img "featuredIcon"
+    - img "Klaviyo"
+    - heading "Klaviyo" [level=3]
+    - link "Marketing":
+      - /url: https://www.bigcommerce.com/apps/categories/marketing/
+    - text: ","
+    - link "Mobile":
+      - /url: https://www.bigcommerce.com/apps/categories/mobile/
+    - paragraph: Increase sales by using your BigCommerce data + other integrations to build, automate, and personalize Email and SMS communication
+    - heading "Pricing" [level=4]
+    - list:
+      - listitem: Custom Pricing
+    - img
+    - img
+    - img
+    - img
+    - img
+    - text: 27 reviews
+    - img "Elite"
+  - listitem:
+    - link:
+      - /url: https://www.bigcommerce.com/apps/route/
+    - img "featuredIcon"
+    - img "Route"
+    - heading "Route" [level=3]
+    - link "Shipping & Fulfillment":
+      - /url: https://www.bigcommerce.com/apps/categories/shipping-fulfillment/
+    - text: ","
+    - link "Product & Shipping Protection":
+      - /url: https://www.bigcommerce.com/apps/categories/product-shipping-protection/
+    - paragraph: Add Route to your site for free, and enable premium shipping protection.
+    - heading "Pricing" [level=4]
+    - list:
+      - listitem: "Upfront fee: $0"
+      - listitem: "Recurring fee: $0"
+    - img
+    - img
+    - img
+    - img
+    - img
+    - text: 47 reviews
+    - img "Elite"
+  - listitem:
+    - link:
+      - /url: https://www.bigcommerce.com/apps/klevu-search/
+    - img "featuredIcon"
+    - img "Klevu AI Search & Merchandising"
+    - heading "Klevu AI Search & Merchandising" [level=3]
+    - link "Merchandising":
+      - /url: https://www.bigcommerce.com/apps/categories/merchandising/
+    - text: ","
+    - link "Ecommerce AI":
+      - /url: https://www.bigcommerce.com/apps/categories/ai/
+    - paragraph: Klevu is a leading provider of AI product discovery software that enables personalized search, merchandising, and product recommendations.
+    - heading "Pricing" [level=4]
+    - list:
+      - listitem: "Upfront fee: $0"
+      - listitem: "Recurring fee: $649"
+    - img
+    - img
+    - img
+    - img
+    - img
+    - text: 4 reviews
+    - img "Elite"
+  - listitem:
+    - link:
+      - /url: https://www.bigcommerce.com/apps/stand-with-ukraine/
+    - img "featuredIcon"
+    - img "Stand With Ukraine"
+    - heading "Stand With Ukraine" [level=3]
+    - link "Site Tools":
+      - /url: https://www.bigcommerce.com/apps/categories/site-tools/
+    - paragraph: Show solidarity with Ukraine by spreading continued awareness and encouraging continued donations to vetted charities.
+    - heading "Pricing" [level=4]
+    - list:
+      - listitem: "Upfront fee: $0"
+      - listitem: "Recurring fee: $0"
+    - img
+    - img
+    - img
+    - img
+    - img
+    - text: 2 reviews
+    - img "Elite"
+  - listitem:
+    - link:
+      - /url: https://www.bigcommerce.com/apps/tiktok/
+    - img "TikTok"
+    - heading "TikTok" [level=3]
+    - link "Marketing":
+      - /url: https://www.bigcommerce.com/apps/categories/marketing/
+    - text: ","
+    - link "Sales Channels":
+      - /url: https://www.bigcommerce.com/apps/categories/sales-channels/
+    - paragraph: Boost your product visibility, attract new shoppers and sell on one of the most downloaded apps in the world.
+    - heading "Pricing" [level=4]
+    - list:
+      - listitem: "Upfront fee: $0"
+      - listitem: "Recurring fee: $0"
+    - img
+    - img
+    - img
+    - img
+    - img
+    - text: 12 reviews
+    - img "Elite"
+  - listitem:
+    - link:
+      - /url: https://www.bigcommerce.com/apps/livechat/
+    - img "LiveChat — AI-Powered Live Chat & Customer Support"
+    - heading "LiveChat — AI-Powered Live Chat & Customer Support" [level=3]
+    - link "CRM & Customer Service":
+      - /url: https://www.bigcommerce.com/apps/categories/crm-customer-service/
+    - text: ","
+    - link "Ecommerce AI":
+      - /url: https://www.bigcommerce.com/apps/categories/ai/
+    - paragraph: AI-powered live chat and messaging platform for sales and support — boost conversions and order value through live conversations.
+    - heading "Pricing" [level=4]
+    - list:
+      - listitem: "Upfront fee: $0"
+      - listitem: "Recurring fee: $24"
+    - img
+    - img
+    - img
+    - img
+    - img
+    - text: 27 reviews
+    - img "Elite"
+  - listitem:
+    - link:
+      - /url: https://www.bigcommerce.com/apps/bigai-copywriter/
+    - img "BigAI Copywriter™"
+    - heading "BigAI Copywriter™" [level=3]
+    - link "Ecommerce AI":
+      - /url: https://www.bigcommerce.com/apps/categories/ai/
+    - paragraph: Save time and automate your product description writing process with BigCommerce's Product Description Generator.
+    - heading "Pricing" [level=4]
+    - list:
+      - listitem: "Upfront fee: $0"
+      - listitem: "Recurring fee: $0"
+    - img
+    - img
+    - img
+    - img
+    - img
+    - text: 5 reviews
+    - img "Elite"
+  - listitem:
+    - link:
+      - /url: https://www.bigcommerce.com/apps/quote-ninja/
+    - img "B2B Ninja Quote Request & Management"
+    - heading "B2B Ninja Quote Request & Management" [level=3]
+    - link "B2B/Wholesale":
+      - /url: https://www.bigcommerce.com/apps/categories/b2b-wholesale/
+    - paragraph: B2B Ninja allows you to send your customers discounted quotes right to their email. They can use quote link to go straight to checkout
+    - heading "Pricing" [level=4]
+    - list:
+      - listitem: Custom Pricing
+    - img
+    - img
+    - img
+    - img
+    - img
+    - text: 50 reviews
+    - img "Elite"
+- link "1":
+  - /url: https://www.bigcommerce.com/apps/categories/?search=merchant+of+record&page=1
+- link "2":
+  - /url: https://www.bigcommerce.com/apps/categories/?search=merchant+of+record&page=2
+- link "3":
+  - /url: https://www.bigcommerce.com/apps/categories/?search=merchant+of+record&page=3
+- link "4":
+  - /url: https://www.bigcommerce.com/apps/categories/?search=merchant+of+record&page=4
+- link "5":
+  - /url: https://www.bigcommerce.com/apps/categories/?search=merchant+of+record&page=5
+- link "6":
+  - /url: https://www.bigcommerce.com/apps/categories/?search=merchant+of+record&page=6
+- paragraph: ..
+- link "117":
+  - /url: https://www.bigcommerce.com/apps/categories/?search=merchant+of+record&page=117
+- link "118":
+  - /url: https://www.bigcommerce.com/apps/categories/?search=merchant+of+record&page=118
+- link "Next":
+  - /url: https://www.bigcommerce.com/apps/categories/?search=merchant+of+record&page=2
+- heading "More Categories" [level=2]
+- link "Accounting & Tax (52)":
+  - /url: https://www.bigcommerce.com/apps/categories/accounting-tax/
+- link "Ecommerce AI (55)":
+  - /url: https://www.bigcommerce.com/apps/categories/ai/
+- link "Analytics & Reporting (46)":
+  - /url: https://www.bigcommerce.com/apps/categories/analytics-reporting/
+- link "B2B/Wholesale (50)":
+  - /url: https://www.bigcommerce.com/apps/categories/b2b-wholesale/
+- link "Catalog & Order Management (118)":
+  - /url: https://www.bigcommerce.com/apps/categories/catalog-order-management/
+- link "Checkout (29)":
+  - /url: https://www.bigcommerce.com/apps/categories/checkout/
+- link "CMS & Hosting (12)":
+  - /url: https://www.bigcommerce.com/apps/categories/cms-hosting/
+- link "CRM & Customer Service (50)":
+  - /url: https://www.bigcommerce.com/apps/categories/crm-customer-service/
+- link "Data Transfer/Migration Services (27)":
+  - /url: https://www.bigcommerce.com/apps/categories/data-transfer-migration-services/
+- link "ERP (41)":
+  - /url: https://www.bigcommerce.com/apps/categories/erp/
+- link "Financing (14)":
+  - /url: https://www.bigcommerce.com/apps/categories/financing/
+- link "Marketing (289)":
+  - /url: https://www.bigcommerce.com/apps/categories/marketing/
+- link "Merchandising (113)":
+  - /url: https://www.bigcommerce.com/apps/categories/merchandising/
+- link "Mobile (13)":
+  - /url: https://www.bigcommerce.com/apps/categories/mobile/
+- link "Payments & Security (91)":
+  - /url: https://www.bigcommerce.com/apps/categories/payments-security/
+- link "POS & In-Store (36)":
+  - /url: https://www.bigcommerce.com/apps/categories/pos-in-store/
+- link "Product & Shipping Protection (19)":
+  - /url: https://www.bigcommerce.com/apps/categories/product-shipping-protection/
+- link "Product Sourcing (37)":
+  - /url: https://www.bigcommerce.com/apps/categories/product-sourcing-home/
+- link "Sales Channels (61)":
+  - /url: https://www.bigcommerce.com/apps/categories/sales-channels/
+- link "Shipping & Fulfillment (173)":
+  - /url: https://www.bigcommerce.com/apps/categories/shipping-fulfillment/
+- link "Site Tools (229)":
+  - /url: https://www.bigcommerce.com/apps/categories/site-tools/
+- heading "Build your online store with BigCommerce" [level=3]
+- paragraph: Start your trial today
+- link "Get Started":
+  - /url: https://www.bigcommerce.com/start-your-trial/
+- link "Already have a store? Log in":
+  - /url: https://login.bigcommerce.com/?mktid=aWQlM0E5MDQtR1NCLTkwMSUyNnRva2VuJTNBX21jaC1iaWdjb21tZXJjZS5jb20tMTliMjMzZmNlNmUwNWMwMmUyZjMzOGY2NjQ3YmY3NzQ%3D&ajs_aid=feb810e5-a052-4b54-adbd-5de0e77345ca
+- contentinfo:
+  - heading "Product" [level=6]
+  - list:
+    - listitem:
+      - link "Features":
+        - /url: https://www.bigcommerce.com/product/
+    - listitem:
+      - link "Services":
+        - /url: https://www.bigcommerce.com/services/
+    - listitem:
+      - link "Enterprise Pricing":
+        - /url: https://www.bigcommerce.com/enterprise-pricing/
+    - listitem:
+      - link "Request a Demo":
+        - /url: https://www.bigcommerce.com/request-a-demo/
+  - heading "Partners" [level=6]
+  - list:
+    - listitem:
+      - link "Overview":
+        - /url: https://www.bigcommerce.com/partners/
+    - listitem:
+      - link "Become a Partner":
+        - /url: https://www.bigcommerce.com/partners/become-a-partner/
+    - listitem:
+      - link "Find an Agency Partner":
+        - /url: https://partners.bigcommerce.com/directory/?mktid=aWQlM0E5MDQtR1NCLTkwMSUyNnRva2VuJTNBX21jaC1iaWdjb21tZXJjZS5jb20tMTliMjMzZmNlNmUwNWMwMmUyZjMzOGY2NjQ3YmY3NzQ%3D&ajs_aid=feb810e5-a052-4b54-adbd-5de0e77345ca
+    - listitem:
+      - link "Find a Technology Partner":
+        - /url: https://www.bigcommerce.com/apps/
+    - listitem:
+      - link "Powered by":
+        - /url: https://www.bigcommerce.com/partners/powered-by/
+  - heading "Customers" [level=6]
+  - list:
+    - listitem:
+      - link "Case Studies":
+        - /url: https://www.bigcommerce.com/case-study/
+    - listitem:
+      - link "Store Examples":
+        - /url: https://www.bigcommerce.com/showcase/
+  - heading "Resources" [level=6]
+  - list:
+    - listitem:
+      - link "Overview":
+        - /url: https://www.bigcommerce.com/resources/
+    - listitem:
+      - link "Articles":
+        - /url: https://www.bigcommerce.com/articles/
+    - listitem:
+      - link "Guides & White Papers":
+        - /url: https://www.bigcommerce.com/resources/guides/
+    - listitem:
+      - link "Webinars":
+        - /url: https://www.bigcommerce.com/resources/webinars/
+    - listitem:
+      - link "Podcast":
+        - /url: https://www.bigcommerce.com/make-it-big/podcast/
+    - listitem:
+      - link "Reports":
+        - /url: https://www.bigcommerce.com/resources/reports/
+    - listitem:
+      - link "Events":
+        - /url: https://www.bigcommerce.com/events/
+    - listitem:
+      - link "Ecommerce Blog":
+        - /url: https://www.bigcommerce.com/blog/
+    - listitem:
+      - link "Developer Blog":
+        - /url: https://www.bigcommerce.com/blog/category/developer-resources/
+    - listitem:
+      - link "Free Tools":
+        - /url: https://www.bigcommerce.com/resources/tools/
+  - heading "Use case solutions" [level=6]
+  - list:
+    - listitem:
+      - link "Multi-Storefront":
+        - /url: https://www.bigcommerce.com/solutions/multi-store/
+    - listitem:
+      - link "Headless Commerce":
+        - /url: https://www.bigcommerce.com/solutions/headless-commerce/
+    - listitem:
+      - link "B2B":
+        - /url: https://www.bigcommerce.com/solutions/b2b-ecommerce-platform/
+    - listitem:
+      - link "Wholesale":
+        - /url: https://www.bigcommerce.com/solutions/wholesale-ecommerce-platform/
+    - listitem:
+      - link "Omnichannel":
+        - /url: https://www.bigcommerce.com/solutions/omnichannel/
+    - listitem:
+      - link "International":
+        - /url: https://www.bigcommerce.com/solutions/international/
+    - listitem:
+      - link "Commerce-as-a-Service":
+        - /url: https://www.bigcommerce.com/solutions/commerce-as-a-service/
+    - listitem:
+      - link "Emerging Brands":
+        - /url: https://www.bigcommerce.com/emerging-brands/
+    - listitem:
+      - link "Small Business":
+        - /url: https://www.bigcommerce.com/apps/categories/#
+    - listitem:
+      - link "Enterprise":
+        - /url: https://www.bigcommerce.com/enterprise/
+    - listitem:
+      - link "Crypto":
+        - /url: https://www.bigcommerce.com/solutions/cryptocurrency-payments/
+    - listitem:
+      - link "Migration":
+        - /url: https://www.bigcommerce.com/migration/
+  - heading "Industry solutions" [level=6]
+  - list:
+    - listitem:
+      - link "Fashion & Apparel":
+        - /url: https://www.bigcommerce.com/solutions/fashion/
+    - listitem:
+      - link "Health & Beauty":
+        - /url: https://www.bigcommerce.com/solutions/health-beauty/
+    - listitem:
+      - link "Food & Beverage":
+        - /url: https://www.bigcommerce.com/solutions/food-beverage/
+    - listitem:
+      - link "Manufacturing":
+        - /url: https://www.bigcommerce.com/solutions/manufacturing/
+    - listitem:
+      - link "Automotive":
+        - /url: https://www.bigcommerce.com/solutions/automotive/
+    - listitem:
+      - link "CBD":
+        - /url: https://www.bigcommerce.com/solutions/cbd/
+    - listitem:
+      - link "Home & Garden":
+        - /url: https://www.bigcommerce.com/solutions/home-garden/
+  - heading "Company" [level=6]
+  - list:
+    - listitem:
+      - link "About Us":
+        - /url: https://www.bigcommerce.com/company/
+    - listitem:
+      - link "Leaders":
+        - /url: https://www.commerce.com/about/leadership/?mktid=aWQlM0E5MDQtR1NCLTkwMSUyNnRva2VuJTNBX21jaC1iaWdjb21tZXJjZS5jb20tMTliMjMzZmNlNmUwNWMwMmUyZjMzOGY2NjQ3YmY3NzQ%3D&ajs_aid=feb810e5-a052-4b54-adbd-5de0e77345ca
+    - listitem:
+      - link "Careers":
+        - /url: https://www.commerce.com/careers/?mktid=aWQlM0E5MDQtR1NCLTkwMSUyNnRva2VuJTNBX21jaC1iaWdjb21tZXJjZS5jb20tMTliMjMzZmNlNmUwNWMwMmUyZjMzOGY2NjQ3YmY3NzQ%3D&ajs_aid=feb810e5-a052-4b54-adbd-5de0e77345ca
+    - listitem:
+      - link "Press":
+        - /url: https://www.bigcommerce.com/press/
+    - listitem:
+      - link "Awards":
+        - /url: https://www.bigcommerce.com/company/awards/
+    - listitem:
+      - link "Investor Relations":
+        - /url: https://investors.bigcommerce.com/?_ga=2.179512932.1745768724.1680545346-963162758.1680295371&_gl=1*1qil438*_ga*OTYzMTYyNzU4LjE2ODAyOTUzNzE.*_ga_WS2VZYPC6G*MTY4MDY2NjkyNi4xMS4xLjE2ODA2NjY5NzkuNy4wLjA.&mktid=aWQlM0E5MDQtR1NCLTkwMSUyNnRva2VuJTNBX21jaC1iaWdjb21tZXJjZS5jb20tMTliMjMzZmNlNmUwNWMwMmUyZjMzOGY2NjQ3YmY3NzQ%3D&ajs_aid=feb810e5-a052-4b54-adbd-5de0e77345ca
+    - listitem:
+      - link "Platform Trust Center":
+        - /url: https://security.bigcommerce.com/?_ga=2.8519157.1745768724.1680545346-963162758.1680295371&_gl=1*14ficbl*_ga*OTYzMTYyNzU4LjE2ODAyOTUzNzE.*_ga_WS2VZYPC6G*MTY4MDY2NjkyNi4xMS4xLjE2ODA2NjY5NzkuNy4wLjA.https%3A%2F%2Fsecurity.bigcommerce.com%2F%3F_ga%3D2.8519157.1745768724.1680545346-963162758.1680295371&_gl=1*14ficbl*_ga*OTYzMTYyNzU4LjE2ODAyOTUzNzE.*_ga_WS2VZYPC6G*MTY4MDY2NjkyNi4xMS4xLjE2ODA2NjY5NzkuNy4wLjA.&mktid=aWQlM0E5MDQtR1NCLTkwMSUyNnRva2VuJTNBX21jaC1iaWdjb21tZXJjZS5jb20tMTliMjMzZmNlNmUwNWMwMmUyZjMzOGY2NjQ3YmY3NzQ%3D&ajs_aid=feb810e5-a052-4b54-adbd-5de0e77345ca
+    - listitem:
+      - link "Contact Us":
+        - /url: https://www.bigcommerce.com/contact/
+  - heading "Help center" [level=6]
+  - list:
+    - listitem:
+      - link "BigCommerce Community":
+        - /url: https://support.bigcommerce.com/s/community/?mktid=aWQlM0E5MDQtR1NCLTkwMSUyNnRva2VuJTNBX21jaC1iaWdjb21tZXJjZS5jb20tMTliMjMzZmNlNmUwNWMwMmUyZjMzOGY2NjQ3YmY3NzQ%3D&ajs_aid=feb810e5-a052-4b54-adbd-5de0e77345ca
+    - listitem:
+      - link "Knowledge Base":
+        - /url: https://support.bigcommerce.com/s/knowledge/?mktid=aWQlM0E5MDQtR1NCLTkwMSUyNnRva2VuJTNBX21jaC1iaWdjb21tZXJjZS5jb20tMTliMjMzZmNlNmUwNWMwMmUyZjMzOGY2NjQ3YmY3NzQ%3D&ajs_aid=feb810e5-a052-4b54-adbd-5de0e77345ca
+    - listitem:
+      - link "Videos":
+        - /url: https://support.bigcommerce.com/s/videos/?mktid=aWQlM0E5MDQtR1NCLTkwMSUyNnRva2VuJTNBX21jaC1iaWdjb21tZXJjZS5jb20tMTliMjMzZmNlNmUwNWMwMmUyZjMzOGY2NjQ3YmY3NzQ%3D&ajs_aid=feb810e5-a052-4b54-adbd-5de0e77345ca
+    - listitem:
+      - link "Contact Tech Support":
+        - /url: https://support.bigcommerce.com/s/?mktid=aWQlM0E5MDQtR1NCLTkwMSUyNnRva2VuJTNBX21jaC1iaWdjb21tZXJjZS5jb20tMTliMjMzZmNlNmUwNWMwMmUyZjMzOGY2NjQ3YmY3NzQ%3D&ajs_aid=feb810e5-a052-4b54-adbd-5de0e77345ca#contact
+    - listitem:
+      - link "Developer Center":
+        - /url: https://developer.bigcommerce.com/?mktid=aWQlM0E5MDQtR1NCLTkwMSUyNnRva2VuJTNBX21jaC1iaWdjb21tZXJjZS5jb20tMTliMjMzZmNlNmUwNWMwMmUyZjMzOGY2NjQ3YmY3NzQ%3D&ajs_aid=feb810e5-a052-4b54-adbd-5de0e77345ca
+    - listitem:
+      - link "API Documentation":
+        - /url: https://developer.bigcommerce.com/api-docs/?mktid=aWQlM0E5MDQtR1NCLTkwMSUyNnRva2VuJTNBX21jaC1iaWdjb21tZXJjZS5jb20tMTliMjMzZmNlNmUwNWMwMmUyZjMzOGY2NjQ3YmY3NzQ%3D&ajs_aid=feb810e5-a052-4b54-adbd-5de0e77345ca
+    - listitem:
+      - link "Theme Documentation":
+        - /url: https://developer.bigcommerce.com/stencil-docs/?mktid=aWQlM0E5MDQtR1NCLTkwMSUyNnRva2VuJTNBX21jaC1iaWdjb21tZXJjZS5jb20tMTliMjMzZmNlNmUwNWMwMmUyZjMzOGY2NjQ3YmY3NzQ%3D&ajs_aid=feb810e5-a052-4b54-adbd-5de0e77345ca
+  - link "BigCommerce Logo":
+    - /url: https://www.bigcommerce.com/
+    - img "BigCommerce Logo"
+  - list:
+    - listitem:
+      - link "X":
+        - /url: https://x.com/poweredbycmrc/
+    - listitem:
+      - link "Facebook":
+        - /url: https://www.facebook.com/Bigcommerce/
+    - listitem:
+      - link "LinkedIn":
+        - /url: https://www.linkedin.com/company/bigcommerce/
+    - listitem:
+      - link "YouTube":
+        - /url: https://www.youtube.com/c/bigcommerce/
+    - listitem:
+      - link "Instagram":
+        - /url: https://www.instagram.com/poweredbycommerce/
+  - text: © Copyright 2003 - 2026 BigCommerce Pty. Ltd.
+  - link "Privacy Policy":
+    - /url: https://www.commerce.com/privacy/?mktid=aWQlM0E5MDQtR1NCLTkwMSUyNnRva2VuJTNBX21jaC1iaWdjb21tZXJjZS5jb20tMTliMjMzZmNlNmUwNWMwMmUyZjMzOGY2NjQ3YmY3NzQ%3D&ajs_aid=feb810e5-a052-4b54-adbd-5de0e77345ca
+  - text: "|"
+  - link "Website Terms of Use":
+    - /url: https://www.commerce.com/website-terms/?mktid=aWQlM0E5MDQtR1NCLTkwMSUyNnRva2VuJTNBX21jaC1iaWdjb21tZXJjZS5jb20tMTliMjMzZmNlNmUwNWMwMmUyZjMzOGY2NjQ3YmY3NzQ%3D&ajs_aid=feb810e5-a052-4b54-adbd-5de0e77345ca
+  - text: "|"
+  - link "Master Services Agreement":
+    - /url: https://www.commerce.com/terms/?mktid=aWQlM0E5MDQtR1NCLTkwMSUyNnRva2VuJTNBX21jaC1iaWdjb21tZXJjZS5jb20tMTliMjMzZmNlNmUwNWMwMmUyZjMzOGY2NjQ3YmY3NzQ%3D&ajs_aid=feb810e5-a052-4b54-adbd-5de0e77345ca
+  - text: "|"
+  - link "Legal Archives":
+    - /url: https://www.commerce.com/legal-archives/?mktid=aWQlM0E5MDQtR1NCLTkwMSUyNnRva2VuJTNBX21jaC1iaWdjb21tZXJjZS5jb20tMTliMjMzZmNlNmUwNWMwMmUyZjMzOGY2NjQ3YmY3NzQ%3D&ajs_aid=feb810e5-a052-4b54-adbd-5de0e77345ca
+  - text: "|"
+  - link "Sitemap":
+    - /url: https://www.bigcommerce.com/sitemap/
+  - text: "|"
+  - link "Cookie Settings":
+    - /url: https://www.bigcommerce.com/apps/categories/#
+- alert
