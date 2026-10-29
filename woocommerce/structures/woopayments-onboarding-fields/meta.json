@@ -1,0 +1,19 @@
+{
+  "structure": "woocommerce/woopayments-onboarding-fields",
+  "platform": "woocommerce",
+  "surface": "WooPayments' onboarding (Activate payments: business location, legal entity and its structure, goods or services)",
+  "source": {
+    "run_id": "20261029T090847Z-db-after-test-account",
+    "held_as": "the option wcpay_onboarding_fields_data in options.tsv (PHP-serialized), which WooPayments fills from its server",
+    "fetched": 1793264756,
+    "locale": "en_US",
+    "sha256": "f42b5078fdfe6f07d9a4cb2d2744d6d403619277d6dc72abc211841a114dd5cb"
+  },
+  "shape": "{data: {business_types: [{key, name, types: [{key, name, structures: [{key, name}]}]}], mccs_display_tree: [{id, type, title, items: [...]}], industry_to_mcc: {industry: mcc id}, __locale}, fetched, errored, consecutive_errors}",
+  "counts": {
+    "business_types_countries": 38,
+    "mccs_display_tree_groups": 15,
+    "industry_to_mcc": 6
+  },
+  "items": "items.jsonl: one line per country of business_types, per group of mccs_display_tree, and the industry_to_mcc map, as WooPayments states them"
+}
