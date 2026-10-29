@@ -2,7 +2,7 @@
 
 **What this is:** the scenario walk of `PLAN.md` section 6, step 7, done from the brief `briefs/F-scenario-walk.md`. Each of S-02's seven decisions for the founder (S02-D1 to S02-D7) and five engineering constraints (S02-E1 to S02-E5) goes through three scenarios: a second market, the company based elsewhere, and the first market dropped. The rows are in `scenario-walk.tsv`: 39 rows, 12 items × 3 scenarios, with two second-market rows for S02-D1 and S02-D3 and two company-elsewhere rows for S02-E2. The walk tests the recommendations. It chooses nothing.
 
-**Re-walked** after the register's second pass (f4d3d4c6). The table now holds 44 rows. Where the two differ, the last section, "Re-walk after the register's second pass", supersedes the findings below.
+**Re-walked twice:** after the register's second pass (f4d3d4c6), and after the independent review and the register's third pass (47847720). The table now holds 49 rows. Where they differ, the last section, "Re-walk after the review", supersedes the sections before it.
 
 ## What was read
 
@@ -263,3 +263,59 @@ The source shown is each statement's first citation, as the slice prints it. A U
 - **S02-D7:** a setting (Kuwait, the UAE), and a setting (hypothetical: one code at two values) · a setting · a setting.
 - **S02-E1:** one module (Saudi Arabia, the UAE) · a setting · a setting.
 - **S02-E4:** one module, `premature` (Kuwait: gift cards) · a setting · a setting, if records carry their currency.
+
+## Re-walk after the review
+
+**What was re-walked.** The independent review (`review.md`) and the register's third pass (47847720) changed S02-D1, S02-D2, S02-D4, S02-D5, S02-D6, S02-D7, S02-D8, S02-E1, S02-E2, S02-E3 and S02-E4. They added S02-D9, two currency areas under one currency code.
+- Each was walked again through the three scenarios, and its rows were replaced.
+- S02-D3 and S02-E5 didn't change, and keep their 7 rows byte for byte.
+- The table holds 49 rows: 22 new, 20 re-walked and kept word for word, and 7 untouched.
+- `python3 -I method/check_scenario_walk.py studies/subjects/S-02` reports 49 rows, 14 decisions and constraints, 1 redesign, 0 flagged and 0 problems.
+
+**The review's findings on the walk:**
+- **Finding 5 (D4's second-market row, line 23 before): resolved.**
+  - D4 now closes only channels and points of sale. Its reason, that two mechanisms would answer which values a buyer sees (S02-SH-117, S02-SH-604), covers both.
+  - A group of customers is kept open, as a dimension beside markets (S02-BC-020). No market kind reaches it (S02-SH-N03). No flag is needed.
+- **Finding 6 (D7's rows, lines 36, 37 and 39 before): met.** No row now says Salla or Shopify holds a rate per market for an area within a country.
+  - Salla's rate is the currency's (S02-SA-103). S02-SA-302 is an order field.
+  - Shopify's sub-region market inherits its parent's currency (S02-SH-104, early access).
+  - A rate per market rests on Shopify alone, for markets that hold a currency (S02-SH-568).
+  - The case of two areas under one code, line 37 before, is now S02-D9's own rows.
+- **Finding 13 (D8, first market dropped, line 15 before): decided, not flagged `one market`.**
+  - The brief flags a constraint that traces only to one market today.
+  - D8's extension does trace only to the first market, and the register now says so. The extension is payment services, the currency and the rate keyed on an area, and a move's checks when an area changes.
+  - But it constrains nothing. No rule keys on an area at launch, and the room limits no market, seller or option. Its cost is its own: a dated area and an unused key.
+  - What the founder needs to see is in the row instead: without the first market, the references support (b) at most, not (c).
+  - S02-D9 is the same case, so neither row is flagged.
+- **Finding 19 (E4, first market dropped, line 45 before): the assumption is marked.**
+  - The row is a setting only if each record's store amount carries its currency. Neither E4 nor D7 says so; S-09 decides (S02-M6).
+  - On the opposite assumption, it is a redesign. Under the register as worded, the cost is unknown.
+- **Also taken up, on the re-walked rows:**
+  - Finding 7: D5 now nests markets within a kind. Only partial overlap within a kind stays closed, on a reading.
+  - Finding 8: D2's confirmed facts are narrowed (S02-SH-596, S02-SH-250, S02-WC-182).
+  - Finding 15: D5's reason is now a fact plus a reading.
+  - Finding 4: E4 leaves gift cards in a market's currency open, so its `premature` flag is resolved.
+
+**Redesigns and flags now.**
+- One redesign, unchanged: S02-E2, company elsewhere, a hypothesis. If data must be held in-country, storage changes. That is S-08's.
+- No flags.
+
+**Conditions still open** (readings):
+- **S02-E1:** which wins when a customer group's price and a market's price both apply isn't stated. One module.
+- **S02-D5:** precedence between kinds other than business-customer, retail and region (S02-SH-109) is unknown and kept open. An order of kinds, set as each kind is added, keeps it a setting.
+- **S02-D9 and S02-E4:** each holds on an assumption, marked, about how money records hold a currency (S-09's).
+- **S02-D7:** a provider converting at payment puts a third currency on a payment record (S-09's).
+
+**Each changed item's cost** (second market · company elsewhere · first market dropped):
+- **S02-D1:** one module (the UAE, Kuwait), a setting (Egypt), and a setting (hypothetical: a seat in another country) · a setting · a setting.
+- **S02-D2:** one module (Kuwait, the Gulf) · a setting · a setting.
+- **S02-D4:** one module per new kind (Saudi Arabia) · a setting · a setting.
+- **S02-D5:** a setting (the UAE and Saudi Arabia), a setting (the GCC and Saudi Arabia, nested), and a setting (Saudi Arabia: channel and place markets) · a setting · a setting.
+- **S02-D6:** a setting (hypothetical) · a setting · a setting.
+- **S02-D7:** a setting (Kuwait, the UAE) · a setting · a setting.
+- **S02-D8:** a setting (hypothetical) · a setting · a setting, not flagged (above).
+- **S02-D9:** a setting on a marked assumption (hypothetical) · a setting · a setting, not flagged (above).
+- **S02-E1:** a setting (Saudi Arabia, the UAE), and one module (hypothetical: customer-group prices) · a setting · a setting.
+- **S02-E2:** a setting (Egypt) · a setting, and **a redesign** (hypothetical: data held in-country, S-08's) · a setting.
+- **S02-E3:** a setting (Kuwait) · a setting · a setting.
+- **S02-E4:** a setting (Kuwait) · a setting · a setting, on a marked assumption.
