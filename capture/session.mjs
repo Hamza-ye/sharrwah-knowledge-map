@@ -19,6 +19,11 @@ const CDP = process.env.CDP_URL || 'http://127.0.0.1:9230';
 // Hosts of each platform that answer Cloudflare's /cdn-cgi/trace: where the platform sees this browser from.
 const PROBE = {
   zid: ['dashboard.zid.sa', 'hermod.zid.sa', 'zid.sa'],
+  bigcommerce: ['www.bigcommerce.com', 'support.bigcommerce.com'],
+};
+// Platforms whose hosts answer no /cdn-cgi/trace: an address of the platform that states where it places this browser.
+const GEO = {
+  woocommerce: ['https://public-api.wordpress.com/geo/'],
 };
 
 // steps/NNN.text.txt: the text a sighted reader sees, in document order. Walks the composed tree (shadow
@@ -71,23 +76,36 @@ export async function openRun({ label, script = null, extra = null, viewport = {
   // a visitor with no remembered choices); default: the capture profile.
   const freshContext = process.env.RUN_CONTEXT === 'fresh';
   const context = freshContext ? await browser.newContext() : browser.contexts()[0];
-  // The network path this browser uses, as the platform's Cloudflare edge sees it (IP last octet masked).
+  // The network path this browser uses, as the platform's Cloudflare edge sees it, or as the platform's geo address answers.
   let network = null;
   try {
     const probe = await context.newPage();
-    network = { via: 'browser <host>/cdn-cgi/trace', hosts: {} };
+    network = { via: GEO[platform] ? `browser ${GEO[platform].join(' ')}` : 'browser <host>/cdn-cgi/trace', hosts: {} };
     for (const h of PROBE[platform] || []) {
       try {
         const r = await probe.goto(`https://${h}/cdn-cgi/trace`, { timeout: 20000 });
         const kv = r && r.ok() ? Object.fromEntries((await probe.evaluate(() => document.body.innerText)).split('\n').map((l) => l.split('='))) : {};
-        network.hosts[h] = kv.loc ? { ip: (kv.ip || '').replace(/[.:][0-9a-f]+$/, '.x'), loc: kv.loc, colo: kv.colo, http: kv.http } : { status: r ? r.status() : null };
+        network.hosts[h] = kv.loc ? { ip: kv.ip || '', loc: kv.loc, colo: kv.colo, http: kv.http } : { status: r ? r.status() : null };
       } catch (e) { network.hosts[h] = { error: String(e.message || e).split('\n')[0].slice(0, 120) }; }
+    }
+    for (const u of GEO[platform] || []) {
+      try {
+        const r = await probe.goto(u, { timeout: 20000 });
+        const g = r && r.ok() ? JSON.parse(await probe.evaluate(() => document.body.innerText)) : null;
+        network.hosts[new URL(u).host] = g ? { loc: g.country_short, answer: g } : { status: r ? r.status() : null };
+      } catch (e) { network.hosts[new URL(u).host] = { error: String(e.message || e).split('\n')[0].slice(0, 120) }; }
     }
     const first = Object.values(network.hosts).find((x) => x.loc) || {};
     Object.assign(network, { ip: first.ip, loc: first.loc, colo: first.colo, http: first.http });
     await probe.close();
   } catch {}
-  let page = await context.newPage();
+  // RUN_ADOPT_PAGE=<address prefix>: the run takes over the open tab whose address starts with it (a page a person
+  // left in a state a new tab would not reach, such as a ticked CAPTCHA) and leaves that tab open at the end.
+  const adoptPrefix = process.env.RUN_ADOPT_PAGE || null;
+  let page = adoptPrefix ? context.pages().find((p) => p.url().startsWith(adoptPrefix)) || null : null;
+  if (adoptPrefix && !page) throw new Error(`no open tab starts with ${adoptPrefix}`);
+  const adopted = !!page;
+  if (!page) page = await context.newPage();
   await page.setViewportSize(viewport);
   let cdp = await context.newCDPSession(page);
 
@@ -190,10 +208,10 @@ export async function openRun({ label, script = null, extra = null, viewport = {
       run_id: runId, platform, label, kind: 'browser', started, extra,
       script: script ? { path: path.relative(ROOT, script), sha256: crypto.createHash('sha256').update(fs.readFileSync(script)).digest('hex') } : null, ended: new Date().toISOString(),
       network, context: freshContext ? 'fresh (no cookies or storage)' : 'capture profile', browser_version: browser.version(), playwright_core: require('playwright-core/package.json').version,
-      node: process.version, cdp: CDP, viewport,
+      node: process.version, cdp: CDP, viewport, ...(adopted ? { adopted_page: adoptPrefix } : {}),
     };
     fs.writeFileSync(path.join(dir, 'run.json'), JSON.stringify(meta, null, 2));
-    await page.close().catch(() => {});
+    if (!adopted) await page.close().catch(() => {});
     if (freshContext) await context.close().catch(() => {});
     await browser.close(); // disconnects; the capture Chrome keeps running
     return dir;

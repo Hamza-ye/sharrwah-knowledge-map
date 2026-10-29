@@ -18,11 +18,10 @@ NOT_HELD='/(agents?\.md|claude(\.local)?\.md|gemini\.md|\.cursorrules|\.windsurf
 grep -i -E "$NOT_HELD" "$list" > "$dir/skipped-urls.txt" || true
 grep -v -i -E "$NOT_HELD" "$list" > "$dir/urls.txt" || true
 [ -s "$dir/skipped-urls.txt" ] || rm -f "$dir/skipped-urls.txt"
-# The network path this client uses, as the platform's Cloudflare edge sees it (IP last octet masked): the host of
-# the first listed URL.
+# The network path this client uses, as the platform's Cloudflare edge sees it: the host of the first listed URL.
 th="$(head -1 "$dir/urls.txt" | sed -E 's#^https?://([^/]+).*#\1#')"
 net="$( { curl -s --max-time 20 -A "$UA" "https://$th/cdn-cgi/trace" || true; } | awk -F= -v th="$th" '
-  $1=="ip"{ip=$2; sub(/[.:][0-9a-f]+$/, ".x", ip)} $1=="loc"{loc=$2} $1=="colo"{colo=$2} $1=="http"{h=$2}
+  $1=="ip"{ip=$2} $1=="loc"{loc=$2} $1=="colo"{colo=$2} $1=="http"{h=$2}
   END{if (loc != "") printf "{\"via\": \"curl %s/cdn-cgi/trace\", \"ip\": \"%s\", \"loc\": \"%s\", \"colo\": \"%s\", \"http\": \"%s\"}", th, ip, loc, colo, h}')"
 [ -n "$net" ] || net="{\"via\": \"$th answered no /cdn-cgi/trace\"}"
 started="$(date -u +%Y-%m-%dT%H:%M:%SZ)"

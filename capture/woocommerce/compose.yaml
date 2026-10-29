@@ -1,0 +1,49 @@
+# The WooCommerce test store: WordPress and MariaDB on this machine, reached by WordPress.com (WooPayments' server)
+# and the capture browser through a Cloudflare quick tunnel to 127.0.0.1:8090 (docs/OPERATING.md, "WooCommerce").
+#   SITE_URL=https://<name>.trycloudflare.com docker compose --env-file .env -f capture/woocommerce/compose.yaml up -d
+#   docker compose --env-file .env -f capture/woocommerce/compose.yaml run --rm cli wp <command>
+# .env holds WOO_DB_PASSWORD; the database and the site's files are the volumes woo-db and woo-html.
+name: woocommerce-capture
+services:
+  db:
+    image: mariadb:11.4
+    environment:
+      MARIADB_DATABASE: wordpress
+      MARIADB_USER: wordpress
+      MARIADB_PASSWORD: ${WOO_DB_PASSWORD}
+      MARIADB_ROOT_PASSWORD: ${WOO_DB_PASSWORD}
+    volumes: [woo-db:/var/lib/mysql]
+    restart: unless-stopped
+  wordpress:
+    image: wordpress:6-php8.3-apache
+    depends_on: [db]
+    ports: ["127.0.0.1:8090:80"]
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: ${WOO_DB_PASSWORD}
+      WORDPRESS_DB_NAME: wordpress
+      SITE_URL: ${SITE_URL}
+      # The tunnel ends TLS: WordPress is told the visitor's scheme and host, and its address is the tunnel's.
+      WORDPRESS_CONFIG_EXTRA: |
+        if (($$_SERVER['HTTP_X_FORWARDED_PROTO'] ?? '') === 'https') { $$_SERVER['HTTPS'] = 'on'; }
+        define('WP_HOME', getenv('SITE_URL'));
+        define('WP_SITEURL', getenv('SITE_URL'));
+    volumes: [woo-html:/var/www/html]
+    restart: unless-stopped
+  cli:
+    image: wordpress:cli-php8.3
+    profiles: [cli]
+    user: "33:33"
+    depends_on: [db]
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: ${WOO_DB_PASSWORD}
+      WORDPRESS_DB_NAME: wordpress
+      SITE_URL: ${SITE_URL}
+      HOME: /tmp
+    volumes: [woo-html:/var/www/html]
+volumes:
+  woo-db:
+  woo-html:
