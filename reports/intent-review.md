@@ -121,3 +121,38 @@ So item 2's step is smaller than building a model from scratch: join Q1 across t
 - **Then record and fold, as section 6 says:** go / change first.
 - **The model's extent, budget 250 million agent tokens:** go / other.
 - **A fresh coordinating session after step 1:** yes / not yet.
+
+## 8. The Knowledge Map, after your reading
+
+**Where the evidence agrees with you:**
+- **Its kinds, its timing and its "models" layer** are what your handoff asks for. INT-02 itself says "sequencing, not narrowing".
+- **It was written for two platforms and one target market.** Its areas carry only Shopify's and Salla's labels. Seven of its questions speak of "the target market", all with Saudi examples (PDPL, mada, STC Pay, Tabby and Tamara, ZATCA, SAMA, the national address): TRU-06, PAY-06, PAY-07, TAX-04, SHP-06 and WLD-01 among them. They are of kind `world`, so under your intent they become each market's setup, asked when that market's slot is filled.
+- **Its eleven founder questions sort cleanly under your list:**
+  - **Yours (5):**
+    - PLN-07, the plans;
+    - INT-01, the first merchants;
+    - MIG-03, where they come from;
+    - INT-04, own payments, marketplace or buyer app;
+    - PAY-07, who may hold funds and the licences for Sharrwah's own.
+  - **Engineering's (5):**
+    - INT-02, parity;
+    - INT-03, core or apps;
+    - MTH-01, what counts as the class;
+    - MTH-04, which references to read, already settled by the five;
+    - ENG-02, the quality scenarios, with your numbers as inputs.
+  - **Against your decision of 28 October (1):** INT-05.
+
+**Where I'd correct the reading:**
+- **"The current work holds nothing like it" overstates it.**
+  - **What the Knowledge Map lacks:** checked evidence. Its pointers are at commits from before the evidence repositories were reorganised.
+  - **What Q1 holds:** the evidence, from the platforms' own complete lists. The 7,003 entries come from 329 Shopify webhook topics, 326 extension points, 283 staff permissions, 251 access scopes and 185 plan features, and the like on the other four platforms.
+  - **What Q1 left out:** 411 entries, almost all of them list headings, feature-flag names or app-store tags, not parts of the platform.
+  - **Together:** the Knowledge Map gives the areas, kinds and timing; Q1 gives the evidence to fill them. Neither is the model alone.
+- **"Plans and prices" and "which merchants first" aren't missing from your handoff.** Its list already names both. Two parts of the Knowledge Map's questions are engineering's once you choose:
+  - the slots to fill at launch (INT-01's second half);
+  - what must move with migrating merchants (MIG-03's second half).
+
+  Likewise the platform's ability to put any capability behind a plan tier is the class's; which tier holds what is yours (PLN-07).
+- **One item your list misses:** a buyer app, a consumer app across stores such as Shopify's Shop. INT-04 names it beside own payments and a marketplace. It belongs with the services Sharrwah's own company would run.
+
+**On updating the page: I agree, not now.** One source is the right call. One condition: when the register enters the working files as the seed, its file says plainly that it is a seed at `e4d5cee`, and that its founder lane and "target market" aren't current, so no reader takes them as decisions. The page is rebuilt later, from the class's model.
