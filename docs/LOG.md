@@ -107,3 +107,6 @@ Dated record of the work: what was decided, what was measured.
   account ownership as files; Japan asks names and addresses in kana and kanji; Saudi Arabia, Oman and Egypt get a
   recipient agreement with transfers only, "The card_payments capability is not available for accounts with a
   recipient service agreement."
+- BigCommerce's "standard formats" for all 245 countries it offers: 229 share one set (KGS, Centimeters, "jS M Y",
+  +00:00), Oman, Saudi Arabia, Yemen and the UAE among them; 16 have their own (the US, Canada, Mexico, Chile,
+  Colombia, Peru, Australia and nine European countries). A store made with Oman has that shared set.

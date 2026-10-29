@@ -1,0 +1,17 @@
+{
+  "structure": "bigcommerce/standard-formats",
+  "platform": "bigcommerce",
+  "surface": "control panel (Settings > Localization, \"Set standard formats for <country>\")",
+  "source": {
+    "run_id": "20261029T040218Z-standard-formats-all-en",
+    "call": "GET https://store-w5pamplexj.mybigcommerce.com/admin/services/public/stores/w5pamplexj/v0/localization-settings?country=<name>",
+    "countries_from": "GET /internalapi/v1/geography/countries (245 names)",
+    "step": 3
+  },
+  "shape": "one JSON answer per country: {date_time: {display_date_format, extended_display_date_format, time_zone}, measurement_units: {weight_unit, length_unit, decimal_token, thousands_token, decimal_places}}",
+  "counts": {
+    "countries": 245,
+    "distinct_format_sets": 14
+  },
+  "items": "items.jsonl: one country per line, its answer as received, with the answer file and step that hold it"
+}
