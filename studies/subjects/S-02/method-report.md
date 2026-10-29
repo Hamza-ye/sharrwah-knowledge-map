@@ -771,3 +771,48 @@ After C-R, RD2's and RD3's 247 keys stand as follows.
 - **`xwords` added duplicates.** It no longer does.
 
 **Cost of the round:** 69.7 million: gap-closing and the audit 32.9, phase B 36.8.
+
+## 14. Phase C after the Salla and Zid round, and RD1's first run (28 and 29 October)
+
+**What ran:**
+
+| Part | Points | Requests | Millions |
+| --- | --- | --- | --- |
+| C-R2a: RD2 and part of RD3 again | 8 | 31 | 3.8 |
+| C-R2b: the rest of RD3 again, then a ruling applied | 9 | 24 | 4.3 |
+| C-RD1-1: RD1's first comparison, points 1 to 10 | 10 | 42 | 9.6 |
+| C-RD1-2: points 11 to 19 | 9 | 38 | 7.3 |
+
+Phase C is complete for all three root decisions, and the full check finds no error.
+- **Keys:** 361. **Causes:** vendor choice 208, no difference 53, unknown 43, business model 33, market pattern 13, a named rule 8, maturity 3.
+- **What follows:**
+  - a decision for the founder: 142, in 90 wordings;
+  - left to the build: 116;
+  - a commonality: 53;
+  - kept open: 33;
+  - bound per market: 17.
+
+**Before the re-run, a refresh.** It showed only 6 keys whose states had changed, because the stored keys still marked Zid's old gap rows as open. `check` named the rest: 13 answer rows with no key, and the keys whose `blocked_by` named one of them. So the re-run keyed those rows, marked the new gap rows' keys open, and wrote again every key that moved. It changed no other key.
+
+**Two rulings on like with like,** now in the phase C brief:
+- **Agreement on an observed act** (C-R2a's problem 4). Like with like guards a difference, and a reading of what a page doesn't show: a store may lack what its platform offers. Where every platform gives a key, and one gives it by an observed act, such as the seller setting a value in the admin, that is enough for `no difference`. Six commonalities rested on such observations of Salla's. The literal rule would have made them `unknown`, which the evidence doesn't support.
+- **A reading backed by shipped code** (C-R2b's problem 1). A reading of `the whole store` that also rests on a confirmed absence from the platform's shipped code is weighed with that absence's kind, `shipped`. Zid's development-store rows cite such absences, and the audit also read each setting's own code. C-R2b had held three keys `unknown` on the stricter reading. Once applied, they became two vendor choices and a market pattern.
+
+**No note was lost.** Each part rewrote rows whose earlier notes the brief doesn't let it read. A comparison with the files before the re-run found every earlier note kept, with the new one after it (25 rows), so the tool's fix of section 12 holds.
+
+**Two container restarts** (28 October, about 23:22 and 23:47 UTC) stopped two parts each time.
+- **What the logs show:** the platform restored the session onto a new VM, which booted fresh with the session's disk. Both times the main session was idle.
+- **What they rule out:** memory (16 GB, a peak of 1.5 GB, no out-of-memory kills), and a full disk (5.5 GB was free).
+- **What we did:**
+  - each stopped part was resumed from its own transcript, ran `show` and `check` first, and redid nothing;
+  - the coordinator committed the parts' rows before resuming them, and after each part;
+  - 4.2 GB of obsolete scratch copies and search caches for old commits were deleted, so the disk is at 76% of the allowance, from 86%.
+- **The lesson:** commit a running part's rows when its neighbour finishes, and keep scratch copies of the subject short-lived. The full check copies the subject each time it runs.
+
+**RD1's calls worth the review's eye,** all in `c/RD1/notes-c.md`:
+- S02-VP-13's `every store` as a named rule (the Saudi Central Bank's authority);
+- S02-VP-19's `every store` as business model;
+- the WooPayments account country keyed as `the store's country` throughout;
+- test 2's "particular law" counted only where a regulator and its rule are named.
+
+**What comes next changed order.** The register is drafted first (`briefs/D-register.md`), so that the Yemen row and the scenario walk test a handful of decisions, not 142 founder items. Agents draft steps 2 to 4, and the coordinator checks each (`frame.md`, "How it runs").
