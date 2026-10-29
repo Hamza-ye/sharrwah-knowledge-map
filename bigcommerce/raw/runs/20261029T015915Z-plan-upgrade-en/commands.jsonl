@@ -1,0 +1,115 @@
+{"intent":"Choose a Plan (the trial banner's link): the plans and prices BigCommerce offers this store","do":"goto","url":"https://manage.bigcommerce.com/account/stores/1003524922/upgrade?return_to_dashboard","readyTimeout":30000,"settleMs":6000}
+{"intent":"Log in: the account email","do":"fill","role":"textbox","name":"Email","value":"7amza.it+bc-na@gmail.com","readyTimeout":3000,"settleMs":500}
+{"intent":"Log in: password (BIGCOMMERCE_ACCOUNT_PASSWORD in .env)","do":"fill","role":"textbox","name":"Password","value_env":"BIGCOMMERCE_ACCOUNT_PASSWORD","readyTimeout":3000,"settleMs":500}
+{"intent":"Log in","do":"click","role":"button","name":"Log in","readyTimeout":60000,"settleMs":8000}
+{"intent":"Core: Select plan (to the checkout step; nothing is paid)","do":"click","role":"button","name":"Select plan","nth":0,"readyTimeout":30000,"settleMs":6000}
+{"intent":"Update Billing Contact: the billing contact form the checkout asks for first","do":"click","role":"link","name":"Update Billing Contact","readyTimeout":30000,"settleMs":6000}
+{"intent":"Billing contact address: a public address in Muscat (the Royal Opera House Muscat)","do":"fill","role":"textbox","name":"Address","value":"Royal Opera House Muscat, Al Kharjiyah Street","readyTimeout":3000,"settleMs":500}
+{"intent":"City","do":"fill","role":"textbox","name":"City","value":"Muscat","readyTimeout":3000,"settleMs":500}
+{"intent":"Zip code / postcode","do":"fill","role":"textbox","name":"Zip code / postcode","value":"130","readyTimeout":3000,"settleMs":500}
+{"intent":"Phone: the founder's own mobile (usable anywhere)","do":"fill","role":"textbox","name":"Phone","nth":1,"value":"772165871","readyTimeout":3000,"settleMs":500}
+{"intent":"Phone country code: +967 (the founder's own mobile)","do":"fill","css":"input[name=\"contact[phone_country_code]\"]","value":"+967","readyTimeout":3000,"settleMs":500}
+{"intent":"Save the billing contact (Oman, a public Muscat address); the form returns to the checkout","do":"click","role":"button","name":"Save","readyTimeout":30000,"settleMs":8000}
+{"do":"stopped-at-confirm","control":"I have read and agree to the Terms of Service, then Place Order","step":12,"evidence":"step 12: the Core plan checkout, $348.00, Taxes $0.00 for a billing contact in Muscat, Oman; placing the order spends money, which waits for the founder"}
+{"intent":"Billing contact: edit it for a AU address","do":"goto","url":"https://manage.bigcommerce.com/contacts/ff839f9e-bf82-4a08-8007-c11e5d21f585/edit?redirect_uri=%2Fcheckout%2Fnew%3Fupgrade_to%3Dcore%26store_hosting_id%3D1003524922%26package_id%3D520%26commit%3DSelect%2Bplan","readyTimeout":30000,"settleMs":3000}
+{"intent":"Billing contact country: AU","do":"select","css":"select[name=\"contact[country]\"]","value":"AU","readyTimeout":3000,"settleMs":3000}
+{"intent":"State / province: New South Wales","do":"select","css":"select[name=\"contact[state]\"]","value":"NSW","readyTimeout":3000,"settleMs":1000}
+{"intent":"Address: a public address (Sydney Opera House, Bennelong Point)","do":"fill","role":"textbox","name":"Address","value":"Sydney Opera House, Bennelong Point","readyTimeout":3000,"settleMs":300}
+{"intent":"City","do":"fill","role":"textbox","name":"City","value":"Sydney","readyTimeout":3000,"settleMs":300}
+{"intent":"Zip code / postcode","do":"fill","role":"textbox","name":"Zip code / postcode","value":"2000","readyTimeout":3000,"settleMs":300}
+{"intent":"Save the billing contact (AU); the form returns to the Core plan checkout","do":"click","role":"button","name":"Save","readyTimeout":30000,"settleMs":6000}
+{"intent":"Billing contact: edit it for a GB address","do":"goto","url":"https://manage.bigcommerce.com/contacts/ff839f9e-bf82-4a08-8007-c11e5d21f585/edit?redirect_uri=%2Fcheckout%2Fnew%3Fupgrade_to%3Dcore%26store_hosting_id%3D1003524922%26package_id%3D520%26commit%3DSelect%2Bplan","readyTimeout":30000,"settleMs":3000}
+{"intent":"Billing contact country: GB","do":"select","css":"select[name=\"contact[country]\"]","value":"GB","readyTimeout":3000,"settleMs":3000}
+{"intent":"Address: a public address (British Museum, Great Russell Street)","do":"fill","role":"textbox","name":"Address","value":"British Museum, Great Russell Street","readyTimeout":3000,"settleMs":300}
+{"intent":"City","do":"fill","role":"textbox","name":"City","value":"London","readyTimeout":3000,"settleMs":300}
+{"intent":"Zip code / postcode","do":"fill","role":"textbox","name":"Zip code / postcode","value":"WC1B 3DG","readyTimeout":3000,"settleMs":300}
+{"intent":"Save the billing contact (GB); the form returns to the Core plan checkout","do":"click","role":"button","name":"Save","readyTimeout":30000,"settleMs":6000}
+{"intent":"Billing contact: edit it for a US address","do":"goto","url":"https://manage.bigcommerce.com/contacts/ff839f9e-bf82-4a08-8007-c11e5d21f585/edit?redirect_uri=%2Fcheckout%2Fnew%3Fupgrade_to%3Dcore%26store_hosting_id%3D1003524922%26package_id%3D520%26commit%3DSelect%2Bplan","readyTimeout":30000,"settleMs":3000}
+{"intent":"Billing contact country: US","do":"select","css":"select[name=\"contact[country]\"]","value":"US","readyTimeout":3000,"settleMs":3000}
+{"intent":"State / province: Texas","do":"select","css":"select[name=\"contact[state]\"]","value":"TX","readyTimeout":3000,"settleMs":1000}
+{"intent":"Address: a public address (Texas State Capitol, 1100 Congress Avenue)","do":"fill","role":"textbox","name":"Address","value":"Texas State Capitol, 1100 Congress Avenue","readyTimeout":3000,"settleMs":300}
+{"intent":"City","do":"fill","role":"textbox","name":"City","value":"Austin","readyTimeout":3000,"settleMs":300}
+{"intent":"Zip code / postcode","do":"fill","role":"textbox","name":"Zip code / postcode","value":"78701","readyTimeout":3000,"settleMs":300}
+{"intent":"Save the billing contact (US); the form returns to the Core plan checkout","do":"click","role":"button","name":"Save","readyTimeout":30000,"settleMs":6000}
+{"intent":"Billing contact: edit it for a US address","do":"goto","url":"https://manage.bigcommerce.com/contacts/ff839f9e-bf82-4a08-8007-c11e5d21f585/edit?redirect_uri=%2Fcheckout%2Fnew%3Fupgrade_to%3Dcore%26store_hosting_id%3D1003524922%26package_id%3D520%26commit%3DSelect%2Bplan","readyTimeout":30000,"settleMs":3000}
+{"intent":"Billing contact country: US","do":"select","css":"select[name=\"contact[country]\"]","value":"US","readyTimeout":3000,"settleMs":3000}
+{"intent":"State / province: New York","do":"select","css":"select[name=\"contact[state]\"]","value":"NY","readyTimeout":3000,"settleMs":1000}
+{"intent":"Address: a public address (Empire State Building, 20 West 34th Street)","do":"fill","role":"textbox","name":"Address","value":"Empire State Building, 20 West 34th Street","readyTimeout":3000,"settleMs":300}
+{"intent":"City","do":"fill","role":"textbox","name":"City","value":"New York","readyTimeout":3000,"settleMs":300}
+{"intent":"Zip code / postcode","do":"fill","role":"textbox","name":"Zip code / postcode","value":"10001","readyTimeout":3000,"settleMs":300}
+{"intent":"Save the billing contact (US); the form returns to the Core plan checkout","do":"click","role":"button","name":"Save","readyTimeout":30000,"settleMs":6000}
+{"intent":"Billing contact: edit it for a US address","do":"goto","url":"https://manage.bigcommerce.com/contacts/ff839f9e-bf82-4a08-8007-c11e5d21f585/edit?redirect_uri=%2Fcheckout%2Fnew%3Fupgrade_to%3Dcore%26store_hosting_id%3D1003524922%26package_id%3D520%26commit%3DSelect%2Bplan","readyTimeout":30000,"settleMs":3000}
+{"intent":"Billing contact country: US","do":"select","css":"select[name=\"contact[country]\"]","value":"US","readyTimeout":3000,"settleMs":3000}
+{"intent":"State / province: Washington","do":"select","css":"select[name=\"contact[state]\"]","value":"WA","readyTimeout":3000,"settleMs":1000}
+{"intent":"Address: a public address (Space Needle, 400 Broad Street)","do":"fill","role":"textbox","name":"Address","value":"Space Needle, 400 Broad Street","readyTimeout":3000,"settleMs":300}
+{"intent":"City","do":"fill","role":"textbox","name":"City","value":"Seattle","readyTimeout":3000,"settleMs":300}
+{"intent":"Zip code / postcode","do":"fill","role":"textbox","name":"Zip code / postcode","value":"98109","readyTimeout":3000,"settleMs":300}
+{"intent":"Save the billing contact (US); the form returns to the Core plan checkout","do":"click","role":"button","name":"Save","readyTimeout":30000,"settleMs":6000}
+{"intent":"Billing contact: edit it for a US address","do":"goto","url":"https://manage.bigcommerce.com/contacts/ff839f9e-bf82-4a08-8007-c11e5d21f585/edit?redirect_uri=%2Fcheckout%2Fnew%3Fupgrade_to%3Dcore%26store_hosting_id%3D1003524922%26package_id%3D520%26commit%3DSelect%2Bplan","readyTimeout":30000,"settleMs":3000}
+{"intent":"Billing contact country: US","do":"select","css":"select[name=\"contact[country]\"]","value":"US","readyTimeout":3000,"settleMs":3000}
+{"intent":"State / province: California","do":"select","css":"select[name=\"contact[state]\"]","value":"CA","readyTimeout":3000,"settleMs":1000}
+{"intent":"Address: a public address (Griffith Observatory, 2800 East Observatory Road)","do":"fill","role":"textbox","name":"Address","value":"Griffith Observatory, 2800 East Observatory Road","readyTimeout":3000,"settleMs":300}
+{"intent":"City","do":"fill","role":"textbox","name":"City","value":"Los Angeles","readyTimeout":3000,"settleMs":300}
+{"intent":"Zip code / postcode","do":"fill","role":"textbox","name":"Zip code / postcode","value":"90027","readyTimeout":3000,"settleMs":300}
+{"intent":"Save the billing contact (US); the form returns to the Core plan checkout","do":"click","role":"button","name":"Save","readyTimeout":30000,"settleMs":6000}
+{"intent":"Billing contact: edit it for a CA address","do":"goto","url":"https://manage.bigcommerce.com/contacts/ff839f9e-bf82-4a08-8007-c11e5d21f585/edit?redirect_uri=%2Fcheckout%2Fnew%3Fupgrade_to%3Dcore%26store_hosting_id%3D1003524922%26package_id%3D520%26commit%3DSelect%2Bplan","readyTimeout":30000,"settleMs":3000}
+{"intent":"Billing contact country: CA","do":"select","css":"select[name=\"contact[country]\"]","value":"CA","readyTimeout":3000,"settleMs":3000}
+{"intent":"State / province: Ontario","do":"select","css":"select[name=\"contact[state]\"]","value":"ON","readyTimeout":3000,"settleMs":1000}
+{"intent":"Address: a public address (CN Tower, 290 Bremner Boulevard)","do":"fill","role":"textbox","name":"Address","value":"CN Tower, 290 Bremner Boulevard","readyTimeout":3000,"settleMs":300}
+{"intent":"City","do":"fill","role":"textbox","name":"City","value":"Toronto","readyTimeout":3000,"settleMs":300}
+{"intent":"Zip code / postcode","do":"fill","role":"textbox","name":"Zip code / postcode","value":"M5V 3L9","readyTimeout":3000,"settleMs":300}
+{"intent":"Save the billing contact (CA); the form returns to the Core plan checkout","do":"click","role":"button","name":"Save","readyTimeout":30000,"settleMs":6000}
+{"intent":"Billing contact: edit it for a DE address","do":"goto","url":"https://manage.bigcommerce.com/contacts/ff839f9e-bf82-4a08-8007-c11e5d21f585/edit?redirect_uri=%2Fcheckout%2Fnew%3Fupgrade_to%3Dcore%26store_hosting_id%3D1003524922%26package_id%3D520%26commit%3DSelect%2Bplan","readyTimeout":30000,"settleMs":3000}
+{"intent":"Billing contact country: DE","do":"select","css":"select[name=\"contact[country]\"]","value":"DE","readyTimeout":3000,"settleMs":3000}
+{"intent":"State / province: Berlin","do":"select","css":"select[name=\"contact[state]\"]","value":"BE","readyTimeout":3000,"settleMs":1000}
+{"intent":"Address: a public address (Brandenburger Tor, Pariser Platz)","do":"fill","role":"textbox","name":"Address","value":"Brandenburger Tor, Pariser Platz","readyTimeout":3000,"settleMs":300}
+{"intent":"City","do":"fill","role":"textbox","name":"City","value":"Berlin","readyTimeout":3000,"settleMs":300}
+{"intent":"Zip code / postcode","do":"fill","role":"textbox","name":"Zip code / postcode","value":"10117","readyTimeout":3000,"settleMs":300}
+{"intent":"Save the billing contact (DE); the form returns to the Core plan checkout","do":"click","role":"button","name":"Save","readyTimeout":30000,"settleMs":6000}
+{"intent":"Billing contact: edit it for a JP address","do":"goto","url":"https://manage.bigcommerce.com/contacts/ff839f9e-bf82-4a08-8007-c11e5d21f585/edit?redirect_uri=%2Fcheckout%2Fnew%3Fupgrade_to%3Dcore%26store_hosting_id%3D1003524922%26package_id%3D520%26commit%3DSelect%2Bplan","readyTimeout":30000,"settleMs":3000}
+{"intent":"Billing contact country: JP","do":"select","css":"select[name=\"contact[country]\"]","value":"JP","readyTimeout":3000,"settleMs":3000}
+{"intent":"State / province: Tokyo","do":"select","css":"select[name=\"contact[state]\"]","value":"13","readyTimeout":3000,"settleMs":1000}
+{"intent":"Address: a public address (Tokyo Tower, 4-2-8 Shibakoen, Minato City)","do":"fill","role":"textbox","name":"Address","value":"Tokyo Tower, 4-2-8 Shibakoen, Minato City","readyTimeout":3000,"settleMs":300}
+{"intent":"City","do":"fill","role":"textbox","name":"City","value":"Tokyo","readyTimeout":3000,"settleMs":300}
+{"intent":"Zip code / postcode","do":"fill","role":"textbox","name":"Zip code / postcode","value":"105-0011","readyTimeout":3000,"settleMs":300}
+{"intent":"Save the billing contact (JP); the form returns to the Core plan checkout","do":"click","role":"button","name":"Save","readyTimeout":30000,"settleMs":6000}
+{"intent":"Billing contact: edit it for a SG address","do":"goto","url":"https://manage.bigcommerce.com/contacts/ff839f9e-bf82-4a08-8007-c11e5d21f585/edit?redirect_uri=%2Fcheckout%2Fnew%3Fupgrade_to%3Dcore%26store_hosting_id%3D1003524922%26package_id%3D520%26commit%3DSelect%2Bplan","readyTimeout":30000,"settleMs":3000}
+{"intent":"Billing contact country: SG","do":"select","css":"select[name=\"contact[country]\"]","value":"SG","readyTimeout":3000,"settleMs":3000}
+{"intent":"Address: a public address (Marina Bay Sands, 10 Bayfront Avenue)","do":"fill","role":"textbox","name":"Address","value":"Marina Bay Sands, 10 Bayfront Avenue","readyTimeout":3000,"settleMs":300}
+{"intent":"City","do":"fill","role":"textbox","name":"City","value":"Singapore","readyTimeout":3000,"settleMs":300}
+{"intent":"Zip code / postcode","do":"fill","role":"textbox","name":"Zip code / postcode","value":"018956","readyTimeout":3000,"settleMs":300}
+{"intent":"Save the billing contact (SG); the form returns to the Core plan checkout","do":"click","role":"button","name":"Save","readyTimeout":30000,"settleMs":6000}
+{"intent":"Billing contact: edit it for a IN address","do":"goto","url":"https://manage.bigcommerce.com/contacts/ff839f9e-bf82-4a08-8007-c11e5d21f585/edit?redirect_uri=%2Fcheckout%2Fnew%3Fupgrade_to%3Dcore%26store_hosting_id%3D1003524922%26package_id%3D520%26commit%3DSelect%2Bplan","readyTimeout":30000,"settleMs":3000}
+{"intent":"Billing contact country: IN","do":"select","css":"select[name=\"contact[country]\"]","value":"IN","readyTimeout":3000,"settleMs":3000}
+{"intent":"State / province: Delhi","do":"select","css":"select[name=\"contact[state]\"]","value":"DL","readyTimeout":3000,"settleMs":1000}
+{"intent":"Address: a public address (India Gate, Kartavya Path)","do":"fill","role":"textbox","name":"Address","value":"India Gate, Kartavya Path","readyTimeout":3000,"settleMs":300}
+{"intent":"City","do":"fill","role":"textbox","name":"City","value":"New Delhi","readyTimeout":3000,"settleMs":300}
+{"intent":"Zip code / postcode","do":"fill","role":"textbox","name":"Zip code / postcode","value":"110001","readyTimeout":3000,"settleMs":300}
+{"intent":"Save the billing contact (IN); the form returns to the Core plan checkout","do":"click","role":"button","name":"Save","readyTimeout":30000,"settleMs":6000}
+{"intent":"Billing contact: edit it for a SA address","do":"goto","url":"https://manage.bigcommerce.com/contacts/ff839f9e-bf82-4a08-8007-c11e5d21f585/edit?redirect_uri=%2Fcheckout%2Fnew%3Fupgrade_to%3Dcore%26store_hosting_id%3D1003524922%26package_id%3D520%26commit%3DSelect%2Bplan","readyTimeout":30000,"settleMs":3000}
+{"intent":"Billing contact country: SA","do":"select","css":"select[name=\"contact[country]\"]","value":"SA","readyTimeout":3000,"settleMs":3000}
+{"intent":"State / province: Ar Riy","do":"select","css":"select[name=\"contact[state]\"]","value":"01","readyTimeout":3000,"settleMs":1000}
+{"intent":"Address: a public address (Kingdom Centre, King Fahd Road, Al Olaya)","do":"fill","role":"textbox","name":"Address","value":"Kingdom Centre, King Fahd Road, Al Olaya","readyTimeout":3000,"settleMs":300}
+{"intent":"City","do":"fill","role":"textbox","name":"City","value":"Riyadh","readyTimeout":3000,"settleMs":300}
+{"intent":"Zip code / postcode","do":"fill","role":"textbox","name":"Zip code / postcode","value":"12214","readyTimeout":3000,"settleMs":300}
+{"intent":"Save the billing contact (SA); the form returns to the Core plan checkout","do":"click","role":"button","name":"Save","readyTimeout":30000,"settleMs":6000}
+{"intent":"Billing contact: edit it for a AE address","do":"goto","url":"https://manage.bigcommerce.com/contacts/ff839f9e-bf82-4a08-8007-c11e5d21f585/edit?redirect_uri=%2Fcheckout%2Fnew%3Fupgrade_to%3Dcore%26store_hosting_id%3D1003524922%26package_id%3D520%26commit%3DSelect%2Bplan","readyTimeout":30000,"settleMs":3000}
+{"intent":"Billing contact country: AE","do":"select","css":"select[name=\"contact[country]\"]","value":"AE","readyTimeout":3000,"settleMs":3000}
+{"intent":"Address: a public address (Burj Khalifa, 1 Sheikh Mohammed bin Rashid Boulevard)","do":"fill","role":"textbox","name":"Address","value":"Burj Khalifa, 1 Sheikh Mohammed bin Rashid Boulevard","readyTimeout":3000,"settleMs":300}
+{"intent":"City","do":"fill","role":"textbox","name":"City","value":"Dubai","readyTimeout":3000,"settleMs":300}
+{"intent":"Zip code / postcode","do":"fill","role":"textbox","name":"Zip code / postcode","value":"00000","readyTimeout":3000,"settleMs":300}
+{"intent":"Save the billing contact (AE); the form returns to the Core plan checkout","do":"click","role":"button","name":"Save","readyTimeout":30000,"settleMs":6000}
+{"intent":"Billing contact: edit it for a YE address","do":"goto","url":"https://manage.bigcommerce.com/contacts/ff839f9e-bf82-4a08-8007-c11e5d21f585/edit?redirect_uri=%2Fcheckout%2Fnew%3Fupgrade_to%3Dcore%26store_hosting_id%3D1003524922%26package_id%3D520%26commit%3DSelect%2Bplan","readyTimeout":30000,"settleMs":3000}
+{"intent":"Billing contact country: YE","do":"select","css":"select[name=\"contact[country]\"]","value":"YE","readyTimeout":3000,"settleMs":3000}
+{"intent":"Address: a public address (Al Saleh Mosque, Al Sabeen Square)","do":"fill","role":"textbox","name":"Address","value":"Al Saleh Mosque, Al Sabeen Square","readyTimeout":3000,"settleMs":300}
+{"intent":"City","do":"fill","role":"textbox","name":"City","value":"Sana'a","readyTimeout":3000,"settleMs":300}
+{"intent":"Zip code / postcode","do":"fill","role":"textbox","name":"Zip code / postcode","value":"00000","readyTimeout":3000,"settleMs":300}
+{"intent":"Save the billing contact (YE); the form returns to the Core plan checkout","do":"click","role":"button","name":"Save","readyTimeout":30000,"settleMs":6000}
+{"intent":"Billing contact: edit it for a OM address","do":"goto","url":"https://manage.bigcommerce.com/contacts/ff839f9e-bf82-4a08-8007-c11e5d21f585/edit?redirect_uri=%2Fcheckout%2Fnew%3Fupgrade_to%3Dcore%26store_hosting_id%3D1003524922%26package_id%3D520%26commit%3DSelect%2Bplan","readyTimeout":30000,"settleMs":3000}
+{"intent":"Billing contact country: OM","do":"select","css":"select[name=\"contact[country]\"]","value":"OM","readyTimeout":3000,"settleMs":3000}
+{"intent":"State / province: Masqa","do":"select","css":"select[name=\"contact[state]\"]","value":"MA","readyTimeout":3000,"settleMs":1000}
+{"intent":"Address: a public address (Royal Opera House Muscat, Al Kharjiyah Street)","do":"fill","role":"textbox","name":"Address","value":"Royal Opera House Muscat, Al Kharjiyah Street","readyTimeout":3000,"settleMs":300}
+{"intent":"City","do":"fill","role":"textbox","name":"City","value":"Muscat","readyTimeout":3000,"settleMs":300}
+{"intent":"Zip code / postcode","do":"fill","role":"textbox","name":"Zip code / postcode","value":"130","readyTimeout":3000,"settleMs":300}
+{"intent":"Save the billing contact (OM); the form returns to the Core plan checkout","do":"click","role":"button","name":"Save","readyTimeout":30000,"settleMs":6000}
+{"do":"close"}

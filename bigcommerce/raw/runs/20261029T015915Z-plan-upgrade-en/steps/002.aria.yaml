@@ -1,0 +1,23 @@
+- link "BigCommerce Powered by Commerce":
+  - /url: https://www.bigcommerce.com/
+  - img "BigCommerce Powered by Commerce"
+- heading "Log in to your store" [level=2]
+- text: Email
+- textbox "Email": 7amza.it+bc-na@gmail.com
+- text: Password
+- link:
+  - /url: "#"
+- textbox "Password"
+- button "Log in"
+- link "Log in with SSO":
+  - /url: "#"
+- link "Forgot password?":
+  - /url: /recover/new
+- text: Don't have an account?
+- link "Sign up for free":
+  - /url: https://www.bigcommerce.com/start-your-trial/
+- heading "Your administrative account information, such as login credentials, is used in accordance with our Read our Privacy Policy" [level=5]:
+  - text: Your administrative account information, such as login credentials, is used in accordance with our
+  - link "Read our Privacy Policy":
+    - /url: https://www.commerce.com/en-GB/privacy
+    - text: Privacy Policy.

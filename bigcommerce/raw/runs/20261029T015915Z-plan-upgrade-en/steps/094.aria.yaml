@@ -1,0 +1,87 @@
+- banner:
+  - navigation:
+    - heading "BigCommerce logo" [level=1]:
+      - link "BigCommerce logo":
+        - /url: /
+        - img "BigCommerce logo"
+    - list:
+      - listitem:
+        - link "Return to Control Panel":
+          - /url: https://store-w5pamplexj.mybigcommerce.com/admin
+    - text: ✓
+    - paragraph: "2"
+    - paragraph: "3"
+    - link "Select a Plan":
+      - /url: /account/stores/1003524922/upgrade
+    - text: Checkout Start Selling!
+    - list:
+      - listitem:
+        - link "Help ":
+          - /url: javascript:void(0)
+      - listitem:
+        - link "Log out":
+          - /url: /sign_out
+- main:
+  - img
+  - text: Contact updated successfully.
+  - img
+  - heading "Upgrade to BigCommerce Core plan" [level=1]
+  - link "Edit":
+    - /url: /contacts/ff839f9e-bf82-4a08-8007-c11e5d21f585/edit?package_id=520&redirect_uri=%2Fcheckout%2Fnew%3Fupgrade_to%3Dcore%26store_hosting_id%3D1003524922%26package_id%3D520%26commit%3DSelect%2Bplan
+  - heading "Account Billing Contact" [level=2]
+  - text: Review the details for your account billing contact. Test Capture 7amza.it+bc-na@gmail.com +967 772 165 871 Kingdom Centre, King Fahd Road, Al Olaya Riyadh, 01 12214
+  - heading "Payment Method" [level=2]
+  - text: Select a payment method for all your BigCommerce billing needs.
+  - radio "Credit Card"
+  - text: Credit Card
+  - group
+  - radio "PayPal"
+  - text: PayPal
+  - heading "Platform fee disclosure" [level=2]
+  - text: "Payment method platform fee: This plan includes a 2% platform fee on order GMV processed through non-preferred payment methods."
+  - link "Learn about Embedded Payment partners →":
+    - /url: https://www.bigcommerce.com/payments/embedded-payment-providers/
+  - complementary:
+    - table:
+      - rowgroup:
+        - row "Order Summary Change Plan":
+          - columnheader "Order Summary"
+          - columnheader "Change Plan":
+            - link "Change Plan":
+              - /url: /account/stores/1003524922/upgrade
+      - rowgroup:
+        - row "Annual Core Store Plan $348.00":
+          - cell "Annual Core Store Plan"
+          - cell "$348.00"
+        - row "✓ Unlimited Staff Accounts ✓ Sell Up To $30K Annually ✓ Add up to 4 storefronts":
+          - cell "✓ Unlimited Staff Accounts ✓ Sell Up To $30K Annually ✓ Add up to 4 storefronts"
+      - rowgroup:
+        - row "Taxes $0.00":
+          - cell "Taxes"
+          - cell "$0.00"
+        - row "Total due today $348.00":
+          - cell "Total due today"
+          - cell "$348.00"
+        - row "Recurring cost (excludes tax and discounts) $348.00/year":
+          - cell "Recurring cost (excludes tax and discounts)":
+            - paragraph: Recurring cost (excludes tax and discounts)
+          - cell "$348.00/year":
+            - paragraph: $348.00/year
+        - row "i If you're updating your subscription in the middle of your existing billing period, you’ll be charged a prorated amount for the remainder of the year. Next year, you’ll be charged the full rate.":
+          - cell "i If you're updating your subscription in the middle of your existing billing period, you’ll be charged a prorated amount for the remainder of the year. Next year, you’ll be charged the full rate.":
+            - text: i
+            - paragraph: If you're updating your subscription in the middle of your existing billing period, you’ll be charged a prorated amount for the remainder of the year. Next year, you’ll be charged the full rate.
+    - checkbox "I have read and agree to the Terms of Service"
+    - text: I have read and agree to the
+    - link "Terms of Service":
+      - /url: //www.bigcommerce.com/terms
+    - button "Place Order" [disabled]
+    - text: Have a question? Call us at
+    - link "1-888-699-8911":
+      - /url: tel:+1-888-699-8911
+    - text: "UK:"
+    - link "+0808-1893323":
+      - /url: tel:++0808-1893323
+    - img "BigCommerce has an A+ rating with the BBB and is a GeoTrust Secure Site."
+- paragraph
+- button "Open Resource Center"
