@@ -104,7 +104,7 @@ At phase A's end, the checker found every quote, 3,193 of them, and no error. Wi
 **Next:**
 1. **The register's draft** (running; [`briefs/D-register.md`](studies/subjects/S-02/briefs/D-register.md)): each founder question asked once, with its options, what the references show, an engineering recommendation, what it closes, and the cost of changing course later. It decides nothing.
 2. **Then, in the plan's order:** the Yemen row and the scenario walk test the register's recommendations, and the independent review tries to break all three. Then the founder's page for the morning.
-3. S-02's end, by the plan's steps: for each root decision, the Yemen row and the scenario walk; then the register, the independent review, and the report for G3. The register asks the per-market question once, not setting by setting.
+3. **Then the report for G3,** with the quote check and the cost against the budget, once the founder has answered.
    - **If the founder says yes to the architecture track** (the answer lines of 28 October), its seven questions become one decision, the market model:
      - what a market can be made of;
      - how a setting resolves: the store's value, then the market's, then the buyer's context;
