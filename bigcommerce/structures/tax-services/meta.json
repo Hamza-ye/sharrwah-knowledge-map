@@ -1,0 +1,23 @@
+{
+  "structure": "bigcommerce/tax-services",
+  "platform": "bigcommerce",
+  "surface": "control panel (Settings > Tax)",
+  "source": {
+    "run_id": "20261029T012951Z-store-settings-en",
+    "answer": "bigcommerce/raw/runs/20261029T012951Z-store-settings-en/answers/store-w5pamplexj.mybigcommerce.com/internalapi/v1/tax/providers/1384910c661d560f2a81620d322c3d600d34e5ce6969781efa53b93ced7b2ac8.json",
+    "host": "store-w5pamplexj.mybigcommerce.com",
+    "method": "GET",
+    "path": "/internalapi/v1/tax/providers",
+    "first_call": {
+      "step": 43,
+      "t": "2026-10-29T01:53:18.220Z",
+      "status": 200
+    },
+    "sha256": "1384910c661d560f2a81620d322c3d600d34e5ce6969781efa53b93ced7b2ac8"
+  },
+  "shape": "JSON {data: [...], meta}",
+  "counts": {
+    "items": 7
+  },
+  "items": "items.jsonl: one entry per line, as received"
+}

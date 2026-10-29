@@ -1,0 +1,23 @@
+{
+  "structure": "bigcommerce/localization-countries",
+  "platform": "bigcommerce",
+  "surface": "control panel (Settings > Localization, Tax)",
+  "source": {
+    "run_id": "20261029T040218Z-standard-formats-all-en",
+    "answer": "bigcommerce/raw/runs/20261029T040218Z-standard-formats-all-en/answers/store-w5pamplexj.mybigcommerce.com/internalapi/v1/geography/countries/a7e8d0047a53075d9e5232c57606d72dd262e4f0cd2512784a869469b6e3041c.json",
+    "host": "store-w5pamplexj.mybigcommerce.com",
+    "method": "GET",
+    "path": "/internalapi/v1/geography/countries",
+    "first_call": {
+      "step": 2,
+      "t": "2026-10-29T04:02:37.436Z",
+      "status": 200
+    },
+    "sha256": "a7e8d0047a53075d9e5232c57606d72dd262e4f0cd2512784a869469b6e3041c"
+  },
+  "shape": "JSON {data: [...], meta}",
+  "counts": {
+    "items": 245
+  },
+  "items": "items.jsonl: one entry per line, as received"
+}
