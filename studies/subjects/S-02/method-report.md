@@ -867,3 +867,52 @@ The founder was asleep, and nothing was decided for them. Each step was drafted 
    - the briefs' `--print RD` usage was wrong, and is now `--print RD1` (D, F, G);
    - two checkers were added, `check_yemen_row.py` and `check_scenario_walk.py`, whose first versions were too strict for rows that need nothing in particular and for a constraint on two root decisions.
 7. **No restart overnight.** None from 23:47 UTC on 28 October to about 03:00 UTC on 29 October, while the main session kept working and a check-in was always set. The two restarts of 28 October both came while it was idle. That is consistent with idleness playing a part, but it isn't proof.
+
+## 16. BigCommerce and WooCommerce: the local agent's captures of 29 October
+
+**What arrived, at 05:00 UTC.** The founder's local agent pushed two stores of our own to this repository's branch `evidence/other-product-class` (at `3f2438f3`):
+- **BigCommerce:** a free trial store, `w5pamplexj`, with online payments off and one storefront, made only through the Yemeni network after a VPN was refused;
+- **WooCommerce:** a test store run on the agent's machine, with WooPayments short of an account at a human check.
+
+`method/corpus_search.py` now reads both: the runs' step text and answers, BigCommerce's standard formats, the test store's options table, and their fetch archives.
+
+**What ran:**
+
+| Part | What | Requests | Millions |
+| --- | --- | --- | --- |
+| A2-BC-R | BigCommerce's six gaps: 2 answered, 3 narrowed, 1 left; 28 statements | 65 | 9.3 |
+| A2-WC-R | WooCommerce's four gaps, all narrowed; 15 statements | 69 | 9.5 |
+| RD1-S9 | Phase B, RD1's 21 tasks, then two of the coordinator's rulings | 46 | 8.0 |
+| RD3-S14 | Phase B, RD3's 11 tasks | 37 | 4.9 |
+| C-R3a | Phase C again on RD1's 10 touched points, then the coordinator's rulings | 36 | 6.1 |
+| C-R3b | Phase C again on RD3's 10 touched points | 35 | 4.0 |
+| REG-1 | The register's bookkeeping | 6 | 3.7 |
+| **All** | | | **45.5** |
+
+**What changed:** no decision.
+- **Two items moved:**
+  - S-05's question on the tax on Sharrwah's own fees takes five options, since BigCommerce taxes its fee by the account's billing contact (S02-BC-359 to S02-BC-365).
+  - Avalara under S02-VP-58 is a market pattern, so it is bound per market and no longer a founder item: Shopify and BigCommerce name it, Salla and Zid don't.
+- **D2's first option gains WooCommerce,** a change of the store's country that saved with orders and tax rates present.
+- **The register:** 143 founder items, 85 asked and 58 moved; both checks are clean.
+
+**The coordinator's rulings:**
+- **Phase B,** in [`b/second-pass.md`](b/second-pass.md):
+  - a statement placed on its scope alone is noted instead (S02-BC-385);
+  - a tax zone isn't an answer on the store's own tax obligations (S02-BC-371).
+- **Phase C:**
+  - "at any time" and a saved change are one answer: nothing must hold before a change;
+  - by the brief's lines on `not stated`, two platforms that don't give a key agree, so Avalara's pattern stands;
+  - VP-16 stays `unknown`: BigCommerce's position rests on a reading of one trial store's page, set against declarations.
+
+**Lessons:**
+1. **A third restart, and what the three share.**
+   - The machine booted again at 05:00 UTC, when the scheduled check-in arrived. The session had sat idle from about 03:00, with nothing running, and lost nothing.
+   - All three restarts came while the main session was idle. None came during the night's long stretch of work, when the session stayed busy and a check-in was always set.
+   - So a check-in is armed whenever agents run.
+2. **Two gaps in the tools.**
+   - `method/quote_check.py` can't read a file inside a zip within a fetch archive, so WooPayments' code was read but not recorded as statements. Its lines are in `woocommerce/notes.md`.
+   - `corpus_search.py` doesn't read the test store's `wordpress.sql`.
+   - Neither gap stopped a decision. Each is fixed when a subject needs that evidence.
+3. **The pipeline for late evidence ran end to end in under two hours:** gap-closing, `round_tasks.py`, phase B, `refresh`, phase C, and the register's bookkeeping.
+

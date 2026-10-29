@@ -88,15 +88,15 @@ At phase A's end, the checker found every quote, 3,193 of them, and no error. Wi
 - **Phase B's round is done,** in five parts ([`b/second-pass/parts.tsv`](studies/subjects/S-02/b/second-pass/parts.tsv), [`method-report.md`](studies/subjects/S-02/method-report.md), section 13). The full check finds no error and nothing unplaced: 75 points, 923 rows. The coordinator's rulings are in [`b/second-pass.md`](studies/subjects/S-02/b/second-pass.md).
 - **Phase C is complete** ([`method-report.md`](studies/subjects/S-02/method-report.md), section 14). The full check finds no error.
   - **Keys:** 361.
-  - **What follows:** 53 commonalities; 17 bound per market; 33 kept open; 116 left to the build; 142 founder items, in 90 wordings.
+  - **What follows:** 53 commonalities; 17 bound per market; 33 kept open; 116 left to the build; 142 founder items, in 90 wordings (143 after BigCommerce's and WooCommerce's round).
 - **Two container restarts on 28 October** stopped two parts each time. Both resumed from their transcripts, and nothing was lost.
   - **What the logs show:** the platform moved the idle session onto a new VM. It wasn't memory, and it wasn't the disk.
   - **The disk** is now at 76% of the allowance, from 86%, after 4.2 GB of obsolete copies and caches were deleted.
 
 **S-02's end (29 October, overnight; [`method-report.md`](studies/subjects/S-02/method-report.md), section 15).** Agents drafted each step from its brief, and the coordinator checked each before the next built on it. Nothing was decided for the founder.
 - **The register** ([`register.tsv`](studies/subjects/S-02/register.tsv)):
-  - the 142 founder items, asked as nine decisions: 85 items in D1 to D7, and D8 and D9 from the Yemen row's product gaps;
-  - 57 items moved to the subjects that own them;
+  - the founder items, 143 after BigCommerce's and WooCommerce's round, asked as nine decisions: 85 items in D1 to D7, and D8 and D9 from the Yemen row's product gaps;
+  - 58 items moved to the subjects that own them;
   - five engineering constraints.
 
   Both checks are clean: every item answered or moved once, and 803 citations.
@@ -105,19 +105,18 @@ At phase A's end, the checker found every quote, 3,193 of them, and no error. Wi
 - **Designs beyond the references,** for D8 and D9 ([`designs.tsv`](studies/subjects/S-02/designs.tsv)): 11 sources, captured in `evidence/designs/`. They changed both recommendations.
 - **The independent review** ([`review.md`](studies/subjects/S-02/review.md)): 24 findings, 9 of them must fix. All are resolved after its re-checks.
 - **No container restart while the session worked overnight.** A third restart came at 05:00 UTC on 29 October, while the session sat idle with nothing running. It lost nothing.
-- **BigCommerce and WooCommerce (05:00 UTC):** the founder's local agent pushed them (other-product-class at `3f2438f3`). Two gap-closing parts read the ten gaps that could change a decision: 2 answered, 7 narrowed, 1 left ([`gap-assessment.tsv`](studies/subjects/S-02/gap-assessment.tsv)). Phase B's parts RD1-S9 and RD3-S14 are placing their 43 statements. Then phase C runs again on the keys they touch, and any change to a decision is marked on the founder's page.
+- **BigCommerce and WooCommerce (05:00 to 06:40 UTC; [`method-report.md`](studies/subjects/S-02/method-report.md), section 16):** the founder's local agent pushed them (other-product-class at `3f2438f3`). Gap-closing read the ten gaps that could change a decision: 2 answered, 7 narrowed, 1 left ([`gap-assessment.tsv`](studies/subjects/S-02/gap-assessment.tsv)). Phase B placed the 43 statements, and phase C ran again on the 20 points they touched. No decision changed. S-05's question on the tax on Sharrwah's fees takes five options, and Avalara's item is now bound per market: 143 founder items, 85 asked and 58 moved. The round cost 45.5 million.
 
 **Earlier:**
 - **Phase B's first pass is complete** ([`method-report.md`](studies/subjects/S-02/method-report.md), section 7): 73 variation points, each with a row for every platform, 671 rows, in [`variation-points.tsv`](studies/subjects/S-02/variation-points.tsv) and [`variants.tsv`](studies/subjects/S-02/variants.tsv). The full check gives no error.
 - **The absence audit is complete** (section 8): 24 claims; 19 confirmed, 3 partly contradicted, 2 contradicted; 122 statements added. Two capture requests are narrowed ([H-002](handoffs/H-002-observed-sa-onboarding-countries.md), [H-007](handoffs/H-007-observed-sh-store-country-sign-up.md)), and three tools fixed to see held evidence they had missed.
 - **Gap-closing (phase A2) is complete** ([`method-report.md`](studies/subjects/S-02/method-report.md), section 9; [`a2-parts.tsv`](studies/subjects/S-02/a2-parts.tsv)): 22 parts, 121 rows, 118 of them given statements and 83 with no gap left; 1,165 statements; 337 million. Its live pages are captured, and every quote is found; twelve are ruled on after review. 49 gaps remain: 15 for the local agent, in H-008 (new) and H-002 and H-005 (extended); 34 for the founder.
 - **The render fault:** the browser in this session failed some sites' scripts, so BigCommerce's Help Center and Zid's sites rendered empty or as an error text; agents read zid.eg's Terms from a source that held the Saudi Terms. The tools now fetch each request outside the browser, open what a click shows, and tell a page's source from what it shows. 32 pages are held again as they render; Zid's audit of G03 was redone (for Egypt, the contract is with Zid Egypt, under Egyptian law). Every capture run now has its README.
-- **Cost:** 1,582 million agent tokens at 02:55 UTC on 29 October, inside the projection of 1,500 to 1,600 million. S-02's end cost 75.6 million of it. The coordinating session's own tokens since S-02 began: 930 million ([the frame's budget](studies/subjects/S-02/frame.md#budget)).
+- **Cost:** 1,628 million agent tokens at 06:37 UTC on 29 October. That is 1,582 at the end of the night, inside the projection of 1,500 to 1,600, and 45.5 for BigCommerce's and WooCommerce's round. The coordinating session's own tokens since S-02 began: 975 million ([the frame's budget](studies/subjects/S-02/frame.md#budget)).
 
 **Next:**
 1. **The founder's answers** to [`reports/S-02.md`](reports/S-02.md): the three answer lines, the nine decisions, and E5. Each answer goes in `founder-decisions.tsv`, and the register records it.
 2. **Then S-02 closes,** with this file, its report, and PR #8's merge on the founder's word.
 3. **S-03 starts** as the founder's answer on the tested form says. If yes, decisions come first, under the four tests. If no, S-03 runs by the plan's steps.
-4. **BigCommerce and WooCommerce:** phase B places what gap-closing found, phase C runs again on the keys it touches, and the register and the founder's page change only if a decision does.
 
 **To resume:** read `PLAN.md`, this file and `founder-decisions.tsv`.
