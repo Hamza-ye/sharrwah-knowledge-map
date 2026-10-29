@@ -1,0 +1,7 @@
+{
+  "run_id": "20261029T025119Z-fees-and-billing", "platform": "bigcommerce", "label": "fees-and-billing", "kind": "fetch", "started": "2026-10-29T02:51:19Z", "ended": "2026-10-29T02:51:24Z",
+  "tool": "GNU Wget 1.21.4 built on linux-gnu.", "user_agent": "Mozilla/5.0 (X11; Linux x86_64) other-product-class-capture/0.1 (read-only evidence capture)", "wait_seconds": 1,
+  "url_count": 2, "urls_sha256": "ab29ab76816735d937d5539cde21581c06bea077b6cd7fc709843d5e0eabd3e2",
+  "wget_exit": 8, "network": {"via": "curl www.commerce.com/cdn-cgi/trace", "ip": "176.123.23.62", "loc": "YE", "colo": "MCT", "http": "http/2"},
+  "script": {"path": "capture/fetch.sh", "sha256": "c45c04d5d6ec3f5e95153aa6491bbb948819b76b2badbbbd3d95c933fe7b4479"}
+}

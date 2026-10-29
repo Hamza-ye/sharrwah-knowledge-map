@@ -1,0 +1,65 @@
+  HTTP/1.1 200 OK
+  Date: Thu, 29 Oct 2026 02:51:22 GMT
+  Content-Type: text/html; charset=utf-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  access-control-allow-origin: https://app.makeswift.com
+  Age: 5567
+  Cache-Control: public, max-age=0, must-revalidate
+  content-security-policy: frame-ancestors 'self' https://app.makeswift.com
+  etag: W/"11tgfn8cr11bcfz"
+  link: <https://www.commerce.com/en/terms/fees-and-billing/>; rel="alternate"; hreflang="en", <https://www.commerce.com/terms/fees-and-billing/>; rel="alternate"; hreflang="en-US", <https://www.commerce.com/da-DK/terms/fees-and-billing/>; rel="alternate"; hreflang="da-DK", <https://www.commerce.com/de-AT/terms/fees-and-billing/>; rel="alternate"; hreflang="de-AT", <https://www.commerce.com/de-DE/terms/fees-and-billing/>; rel="alternate"; hreflang="de-DE", <https://www.commerce.com/en-AU/terms/fees-and-billing/>; rel="alternate"; hreflang="en-AU", <https://www.commerce.com/en-GB/terms/fees-and-billing/>; rel="alternate"; hreflang="en-GB", <https://www.commerce.com/en-SG/terms/fees-and-billing/>; rel="alternate"; hreflang="en-SG", <https://www.commerce.com/es-ES/terms/fees-and-billing/>; rel="alternate"; hreflang="es-ES", <https://www.commerce.com/es-MX/terms/fees-and-billing/>; rel="alternate"; hreflang="es-MX", <https://www.commerce.com/fr-FR/terms/fees-and-billing/>; rel="alternate"; hreflang="fr-FR", <https://www.commerce.com/it-IT/terms/fees-and-billing/>; rel="alternate"; hreflang="it-IT", <https://www.commerce.com/nl-NL/terms/fees-and-billing/>; rel="alternate"; hreflang="nl-NL", <https://www.commerce.com/no-NO/terms/fees-and-billing/>; rel="alternate"; hreflang="no-NO", <https://www.commerce.com/sv-SE/terms/fees-and-billing/>; rel="alternate"; hreflang="sv-SE", <https://www.commerce.com/terms/fees-and-billing/>; rel="alternate"; hreflang="x-default"
+  Server: cloudflare
+  Set-Cookie: NEXT_LOCALE=en-US; Path=/; SameSite=lax
+  Set-Cookie: c_consent=%7B%22anonymousId%22%3A%22a3500028-fc2a-4983-81b4-3c139ea46fe9%22%2C%22traits%22%3A%7B%22consent_preferences_consent_model%22%3A%22opt-out%22%2C%22consent_preferences_strictly_necessary%22%3Atrue%2C%22consent_preferences_functional%22%3Atrue%2C%22consent_preferences_performance%22%3Atrue%2C%22consent_preferences_targeting%22%3Atrue%2C%22consent_preferences_display_banner%22%3Atrue%2C%22consent_preferences_display_preferences_center%22%3Afalse%2C%22consent_preferences_user_has_preferences%22%3Afalse%2C%22consent_preferences_consent_active_groups%22%3A%5B%22C0001%22%2C%22C0002%22%2C%22C0003%22%2C%22C0004%22%5D%7D%2C%22geo%22%3A%7B%22country%22%3A%22Oman%22%2C%22region%22%3A%22Masqa%C5%A3%22%7D%2C%22gpc%22%3Afalse%7D; Path=/; Expires=Fri, 29 Oct 2027 02:51:21 GMT; Domain=commerce.com; SameSite=lax
+  Set-Cookie: originUrl=www.commerce.com; Path=/; Expires=Fri, 29 Oct 2027 02:51:21 GMT; Domain=commerce.com; SameSite=lax
+  Set-Cookie: c_user=%7B%22anonymousId%22%3A%22a3500028-fc2a-4983-81b4-3c139ea46fe9%22%2C%22traits%22%3A%7B%22consent_preferences_consent_model%22%3A%22opt-out%22%2C%22consent_preferences_display_banner%22%3Atrue%2C%22consent_preferences_display_preferences_center%22%3Afalse%2C%22consent_preferences_user_has_preferences%22%3Afalse%2C%22consent_preferences_consent_active_groups%22%3A%5B%22C0001%22%2C%22C0002%22%2C%22C0003%22%2C%22C0004%22%5D%7D%7D; Path=/; Expires=Fri, 29 Oct 2027 02:51:21 GMT; Domain=commerce.com; SameSite=lax
+  Set-Cookie: ajs_anonymous_id=a3500028-fc2a-4983-81b4-3c139ea46fe9; Path=/; Expires=Fri, 29 Oct 2027 02:51:21 GMT; Domain=commerce.com; SameSite=lax
+  Set-Cookie: segmentAnonId=a3500028-fc2a-4983-81b4-3c139ea46fe9; Path=/; Expires=Fri, 29 Oct 2027 02:51:21 GMT; Domain=commerce.com; SameSite=lax
+  set-cookie: __cf_bm=jdEeJJOYKYWz7OkBcB0VriBIJ4CwP33n6LR1fLqiT0I-1793242280.076647-1.0.1.1-zwdpYtol6EBPMTF1TexX2Xav.uL46H8ksyq.iIvCV9oKZGcPR6kJLOfWkdE3SNoDlRSF8NXLXetepz3ZCHbmpVTRQi3goUkWtADdA8HZwHSl0o2F4wL8pMpRjDdG.wVl; HttpOnly; SameSite=None; Secure; Path=/; Domain=commerce.com; Expires=Thu, 29 Oct 2026 03:21:22 GMT
+  strict-transport-security: max-age=63072000
+  vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+  vary: accept-encoding
+  x-matched-path: /en-US/terms/fees-and-billing
+  x-nextjs-prerender: 1
+  x-nextjs-stale-time: 300
+  x-powered-by: Next.js
+  x-vercel-cache: STALE
+  x-vercel-id: bom1::iad1::kwt2f-1793242280134-4992c7455719
+  cf-cache-status: DYNAMIC
+  Content-Encoding: gzip
+  CF-RAY: a51ee0ba7e42f9d1-MCT
+  alt-svc: h3=":443"; ma=86400
+2026-10-29 05:51:22 URL:https://www.commerce.com/terms/fees-and-billing/ [529444] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/bigcommerce/raw/runs/20261029T025119Z-fees-and-billing/tmp/index.html.tmp" [1]
+  HTTP/1.1 404 Not Found
+  Date: Thu, 29 Oct 2026 02:51:24 GMT
+  Content-Type: text/html; charset=utf-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  access-control-allow-origin: https://app.makeswift.com
+  Age: 0
+  Cache-Control: public, max-age=0, must-revalidate
+  content-security-policy: frame-ancestors 'self' https://app.makeswift.com
+  etag: W/"i07ycmwwqpee4"
+  link: <https://www.commerce.com/en/terms/subprocessors/>; rel="alternate"; hreflang="en", <https://www.commerce.com/terms/subprocessors/>; rel="alternate"; hreflang="en-US", <https://www.commerce.com/da-DK/terms/subprocessors/>; rel="alternate"; hreflang="da-DK", <https://www.commerce.com/de-AT/terms/subprocessors/>; rel="alternate"; hreflang="de-AT", <https://www.commerce.com/de-DE/terms/subprocessors/>; rel="alternate"; hreflang="de-DE", <https://www.commerce.com/en-AU/terms/subprocessors/>; rel="alternate"; hreflang="en-AU", <https://www.commerce.com/en-GB/terms/subprocessors/>; rel="alternate"; hreflang="en-GB", <https://www.commerce.com/en-SG/terms/subprocessors/>; rel="alternate"; hreflang="en-SG", <https://www.commerce.com/es-ES/terms/subprocessors/>; rel="alternate"; hreflang="es-ES", <https://www.commerce.com/es-MX/terms/subprocessors/>; rel="alternate"; hreflang="es-MX", <https://www.commerce.com/fr-FR/terms/subprocessors/>; rel="alternate"; hreflang="fr-FR", <https://www.commerce.com/it-IT/terms/subprocessors/>; rel="alternate"; hreflang="it-IT", <https://www.commerce.com/nl-NL/terms/subprocessors/>; rel="alternate"; hreflang="nl-NL", <https://www.commerce.com/no-NO/terms/subprocessors/>; rel="alternate"; hreflang="no-NO", <https://www.commerce.com/sv-SE/terms/subprocessors/>; rel="alternate"; hreflang="sv-SE", <https://www.commerce.com/terms/subprocessors/>; rel="alternate"; hreflang="x-default"
+  Server: cloudflare
+  Set-Cookie: c_consent=%7B%22anonymousId%22%3A%22a3500028-fc2a-4983-81b4-3c139ea46fe9%22%2C%22traits%22%3A%7B%22consent_preferences_consent_model%22%3A%22opt-out%22%2C%22consent_preferences_strictly_necessary%22%3Atrue%2C%22consent_preferences_functional%22%3Atrue%2C%22consent_preferences_performance%22%3Atrue%2C%22consent_preferences_targeting%22%3Atrue%2C%22consent_preferences_display_banner%22%3Atrue%2C%22consent_preferences_display_preferences_center%22%3Afalse%2C%22consent_preferences_user_has_preferences%22%3Afalse%2C%22consent_preferences_consent_active_groups%22%3A%5B%22C0001%22%2C%22C0003%22%2C%22C0002%22%2C%22C0004%22%5D%7D%2C%22geo%22%3A%7B%22country%22%3A%22Oman%22%2C%22region%22%3A%22Masqa%C5%A3%22%7D%2C%22gpc%22%3Afalse%7D; Path=/; Expires=Fri, 29 Oct 2027 02:51:23 GMT; Domain=commerce.com; SameSite=lax
+  Set-Cookie: c_user=%7B%22anonymousId%22%3A%22a3500028-fc2a-4983-81b4-3c139ea46fe9%22%2C%22traits%22%3A%7B%22consent_preferences_consent_model%22%3A%22opt-out%22%2C%22consent_preferences_display_banner%22%3Atrue%2C%22consent_preferences_display_preferences_center%22%3Afalse%2C%22consent_preferences_user_has_preferences%22%3Afalse%2C%22consent_preferences_consent_active_groups%22%3A%5B%22C0001%22%2C%22C0003%22%2C%22C0002%22%2C%22C0004%22%5D%7D%7D; Path=/; Expires=Fri, 29 Oct 2027 02:51:23 GMT; Domain=commerce.com; SameSite=lax
+  strict-transport-security: max-age=63072000
+  vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+  vary: accept-encoding
+  x-matched-path: /[locale]/[...path]
+  x-nextjs-prerender: 1
+  x-nextjs-stale-time: 300
+  x-powered-by: Next.js
+  x-vercel-cache: MISS
+  x-vercel-id: bom1::iad1::gdf2h-1793242283424-a7bbb057492e
+  cf-cache-status: DYNAMIC
+  Content-Encoding: gzip
+  CF-RAY: a51ee0cf1fa1f9d1-MCT
+  alt-svc: h3=":443"; ma=86400
+https://www.commerce.com/terms/subprocessors/:
+2026-10-29 05:51:24 ERROR 404: Not Found.
+FINISHED --2026-10-29 05:51:24--
+Total wall clock time: 4.9s
+Downloaded: 1 files, 46K in 0.02s (2.94 MB/s)
