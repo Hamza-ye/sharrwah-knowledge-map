@@ -1,0 +1,19 @@
+- img
+- link "Help Center":
+  - /url: https://support.bigcommerce.com/s/
+  - button "Help Center"
+- link "Log out":
+  - /url: /logout
+  - button "Log out"
+- img
+- img
+- text: 2-Step Verification Enter the verification code sent to 7amza.it+bc-na@gmail.com.
+- strong: Verification Code
+- textbox "Enter code"
+- link "Where is my code?":
+  - /url: /device_verifications/595a1147-9639-433f-aafb-7b9f5219c1a5/where-is-my-code
+- button "Verify"
+- link "Security":
+  - /url: https://support.bigcommerce.com/s/
+- link "Privacy Policy":
+  - /url: https://www.bigcommerce.com/privacy/

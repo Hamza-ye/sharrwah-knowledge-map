@@ -1,0 +1,18 @@
+- link "BigCommerce Powered by Commerce":
+  - /url: https://www.bigcommerce.com/
+  - img "BigCommerce Powered by Commerce"
+- heading "Log in to your store" [level=2]
+- text: Email
+- textbox "Email"
+- text: Password
+- link:
+  - /url: "#"
+- textbox "Password"
+- button "Log in"
+- link "Log in with SSO":
+  - /url: "#"
+- link "Forgot password?":
+  - /url: /recover/new
+- text: Don't have an account?
+- link "Sign up for free":
+  - /url: https://www.bigcommerce.com/start-your-trial/

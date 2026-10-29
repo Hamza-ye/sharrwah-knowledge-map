@@ -1,0 +1,7 @@
+- main:
+  - main:
+    - heading "Welcome to BigCommerce" [level=1]
+    - img "Storefront"
+    - heading "Welcome to your BigCommerce Store, Test!" [level=2]
+    - paragraph: Answer a few quick questions so we can tailor your store setup and get you up and running quickly.
+    - button "Let's get started"

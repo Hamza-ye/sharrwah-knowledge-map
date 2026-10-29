@@ -1,0 +1,11 @@
+{"intent":"Reload the trial page through the Yemeni network (the founder took BigCommerce out of the VPN); the founder fills it by hand","do":"goto","url":"https://www.bigcommerce.com/start-your-trial/","readyTimeout":5000,"settleMs":3000}
+{"intent":"Read the log-in page the sign-up sent the founder to (\"an account with your credentials already exists\")","do":"evaluate","js":"document.title","readyTimeout":5000,"settleMs":1000}
+{"intent":"Log in: the email the sign-up used","do":"fill","role":"textbox","name":"Email","value":"7amza.it+bc-na@gmail.com","readyTimeout":3000,"settleMs":500}
+{"intent":"Log in: the password the founder typed in the sign-up (BIGCOMMERCE_ACCOUNT_PASSWORD in .env)","do":"fill","role":"textbox","name":"Password","value_env":"BIGCOMMERCE_ACCOUNT_PASSWORD","readyTimeout":3000,"settleMs":500}
+{"intent":"Log in","do":"click","role":"button","name":"Log in","readyTimeout":60000,"settleMs":8000}
+{"intent":"2-Step Verification: the code BigCommerce emailed to 7amza.it+bc-na@gmail.com (run 20261029T012148Z-inbox-bc-device-code, step 3)","do":"fill","role":"textbox","name":"Verification Code","value":"820941","readyTimeout":3000,"settleMs":500}
+{"intent":"Verify","do":"click","role":"button","name":"Verify","readyTimeout":90000,"settleMs":10000}
+{"intent":"2-Step Verification: the code BigCommerce emailed (run 20261029T012148Z-inbox-bc-device-code, step 3)","do":"fill","css":"#device_verification_otp_code","value":"820941","readyTimeout":3000,"settleMs":500}
+{"intent":"Verify","do":"click","role":"button","name":"Verify","readyTimeout":90000,"settleMs":10000}
+{"intent":"The signed-in account's own page: its stores, and whether it offers a store","do":"goto","url":"https://login.bigcommerce.com/","readyTimeout":30000,"settleMs":6000}
+{"do":"close"}

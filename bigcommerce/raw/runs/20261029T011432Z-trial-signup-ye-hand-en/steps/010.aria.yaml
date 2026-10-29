@@ -1,0 +1,13 @@
+- dialog:
+  - button "Close": ×
+  - heading "We're adding new subprocessors to Commerce" [level=2]
+  - paragraph:
+    - text: Starting October 14, 2026, we’re engaging new third-party subprocessors, Zendesk, CallMiner, Forethought, and MixLayer Labs. All are vetted to meet our security and privacy standards, and no action on your part is needed. View our
+    - link "Subprocessor List":
+      - /url: https://www.commerce.com/privacy/data-processors/
+    - text: for more details or
+    - link "contact us":
+      - /url: mailto:privacy@commerce.com
+    - text: with any questions.
+  - button "Close"
+- button "Open Resource Center"
