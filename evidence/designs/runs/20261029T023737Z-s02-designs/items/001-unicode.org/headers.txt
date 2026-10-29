@@ -1,0 +1,16 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Thu, 29 Oct 2026 02:37:43 GMT
+content-type: text/html; charset=UTF-8
+server: cloudflare
+content-security-policy: upgrade-insecure-requests;
+last-modified: Wed, 21 Oct 2026 20:58:23 GMT
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=8JQarSh0fURShfC%2Fugnf5a1SnbBiqSEEhxeE6ha2QGEHrXYa%2FojpVs3tm76EgxElx0fCCR5g65BthmFrTXBLfBOR9geCO83Xt6Y6%2BJArsch2owuFhqPwOcqu8FrOEZ8Bpg%3D%3D"}]}
+vary: Accept-Encoding
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+cache-control: max-age=14400
+cf-cache-status: EXPIRED
+content-encoding: br
+cf-ray: a51ecccb1d655e4b-EWR
+

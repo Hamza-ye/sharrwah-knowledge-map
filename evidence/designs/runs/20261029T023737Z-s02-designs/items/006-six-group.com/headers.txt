@@ -1,0 +1,22 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/1.1 200 OK
+Date: Thu, 29 Oct 2026 02:37:43 GMT
+Strict-Transport-Security: max-age=31536000
+Accept-Ranges: bytes
+Content-Type: text/html; charset=utf-8
+Vary: Accept-Encoding
+Permissions-Policy: accelerometer=(), ambient-light-sensor=(), autoplay=(self "https://www.youtube.com"), camera=(), document-domain=(), encrypted-media=(), fullscreen=(self "https://www.youtube.com"), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), picture-in-picture=(self), sync-xhr=(self), usb=()
+X-Transfer-ID: 36b760bcdc65394e529b75eaa2ee8e27.e9e668fe04b728a8
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Expires: Thu, 29 Oct 2026 02:38:43 GMT
+Feature-Policy: accelerometer 'none'; ambient-light-sensor 'none'; autoplay 'self' https://www.youtube.com; camera 'none'; document-domain 'none'; encrypted-media 'none'; fullscreen 'self' https://www.youtube.com; geolocation 'none'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; midi 'none'; payment 'none'; picture-in-picture 'self'; sync-xhr 'self'; usb 'none'
+Referrer-Policy: no-referrer, strict-origin-when-cross-origin
+X-Frame-Options: SAMEORIGIN
+X-Hostname: pub2
+Content-Length: 26930
+Cache-Control: max-age=60
+Content-Encoding: gzip
+Content-Security-Policy: default-src 'self' 'unsafe-inline' 'unsafe-eval' analytics.twitter.com assets.juicer.io cdns.eu1.gigya.com cdn.cookielaw.org cdn.knightlab.com code.jquery.com connect.facebook.net geolocation.onetrust.com munchkin.marketo.net optanon.blob.core.windows.net snap.licdn.com static.ads-twitter.com www.buzzsprout.com *.googletagmanager.com www.google.com *.googleadservices.com www.gstatic.com www.youtube.com *.analytics.google.com *.google-analytics.com *.googleapis.com 505-xng-882.mktoweb.com 636-tke-312.mktoweb.com webapp-qa.np.six-group.com webapp-nonprod.np.six-group.com *.googlesyndication.com *.linkedin.com *.clarity.ms c.bing.com unpkg.com *.jsdelivr.com *.promptwatch.com cdnjs.cloudflare.com six-securities.enterprisebot.co *.readspeaker.com tags.srv.stackadapt.com fonts.googleapis.com info.six-group.com info.finanzmuseum.ch info.ebill.ch accounts.eu1.gigya.com adservice.google.com ad.doubleclick.net cookies-data.onetrust.io graph.facebook.com info-sandbox.six-group.com privacyportal-ch.onetrust.com *.g.doubleclick.net www.juicer.io 505-xng-882.mktoresp.com 636-tke-312.mktoresp.com 505-xng-882.mktoutil.com 636-tke-312.mktoutil.com www.six-structured-products.com *.google.com *.google.ad *.google.at *.google.com.au *.google.be *.google.ca *.google.ch *.google.de *.google.dk *.google.es *.google.fi *.google.fr *.google.gr *.google.com.hk *.google.ie *.google.im *.google.is *.google.it *.google.co.jp *.google.li *.google.lu *.google.nl *.google.no *.google.pt *.google.se *.google.com.sg *.google.sm *.google.co.uk  www.schweizeraktien.net webapp-preprod.np.six-group.com webapp.api.six-group.com pagead2.googlesyndication.com www.googleadservices.com https://api-preprod.np.six-group.com https://api.six-group.com *.bing.com sites.six-group.com fonts.gstatic.com data: cdnapisec.kaltura.com googleads.g.doubleclick.net player.vimeo.com *.transistor.fm www.facebook.com www.federli.ch *.google.com www.youtube-nocookie.com *.fls.doubleclick.net anchor.fm podcasters.spotify.com tpc.googlesyndication.com; img-src https: data: ad.doubleclick.net ade.googlesyndication.com adservice.google.com www.googletagmanager.com *.clarity.ms *.bing.com blob: *.promptwatch.com;
+

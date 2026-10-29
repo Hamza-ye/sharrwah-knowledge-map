@@ -1,0 +1,153 @@
+Key:admin_level
+Jump to navigation
+Jump to search
+Help
+Key:admin levelIn other languages
+ čeština   Deutsch   English   español   français   polski   português   русский   українська   فارسی   한국어   中文（简体）   日本語 
+Other languages...
+v · d · e
+ admin_level
+
+
+Description
+Indicates the level of an administrative boundary. 
+Group: boundaries
+Used on these elements
+
+
+Documented values: 12
+Useful combination
+
+boundary=*
+government=*
+
+See also
+
+capital=*
+
+Status: de facto
+
+admin_level=*
+	2,222,972
+	123,934
+	1,305,302
+	793,736
+
+Tools for this tag
+
+taginfo · GB · IE (N+S) · US
+overpass-turbo
+QLever
+Sophox
+Postpass via overpass-turbo
+ohsome dashboard
+OSM Tag History
+
+The admin_level=* key describes the administrative level of a feature within a subdivision hierarchy. It is used on the borders of territorial entities together with appropriate boundary=* tag, primarily (but not exclusively) for political entities (boundary=administrative – e.g. country, state, municipality). Due to cultural and political differences, admin levels of different countries only correspond approximately to each other. For example, an admin_level=7 entity in one admin_level=4 (sub-national jurisdiction) of a country (admin_level=2) isn't exactly the same sort of entity as an admin_level=7 entity in another sub-national jurisdiction, even though they are in the same country. This is because laws (constitutions, legal traditions...) in each sub-national jurisdiction can and do differ from one other, even in the larger sphere of the national jurisdiction.
+
+It is also used with other types of objects that are associated with government entities. For example, see Key:capital.
+
+Contents
+1	Rationale
+2	Usage
+3	See also
+4	Possible tagging mistakes
+Rationale
+
+admin_level=2 through admin_level=10 allow for different administrative subdivision schemes to be handled in a consistent way by data consumers. The use of a numbering scheme rather than words for the values helps avoid confusion due to different terminology used in different countries. One country may describe the highest sub-national division as a "state", and another a "province". By using admin_level=4 for both of these it is more clear.
+
+Additionally, when used with boundary=administrative, admin_level=* allows for a standard rendering scheme between countries with different levels of hierarchies.
+
+Data consumers should take care when interpreting values of this key. While admin_level=2 is almost always a de-facto independent country, and admin_level=4 is usually equivalent to a "province", higher values vary in meaning between countries. A data consumer looking for municipalities corresponding to "city", "town" or "village" boundaries will find these tagged anywhere from admin_level=4 (e.g.  Berlin) to admin_level=10 (e.g.  Cheddar, UK).
+
+See country-specific values for the appropriate numeric admin_level=* values.
+
+Usage
+
+admin_level=* is added to a relation or way which is typically also tagged with:
+
+boundary=* (94% of "administrative" boundaries or 80% of all boundaries as of 3/2024)
+
+Or sometimes to a node or way which is also tagged with:
+
+office=government + government=* (5% of these have the admin_level tag as of 3/2024)
+amenity=courthouse (below the taginfo threshold as of 3/2024)
+
+In addition to the direct usage of this tag with the keys above, the numeric values used by admin_level=* are also used for tags:
+
+capital=* – usually as  admin_centre of an admin_level=* tagged relation with the same number.
+See also
+
+For country specific admin levels, see country specific admin_level values.
+
+To see how each level is used in conjunction with a specific boundary type, refer to its page, e.g.:
+
+a list of general and country-specific admin_level values for boundary=religious_administration.
+Possible tagging mistakes
+	4
+More details at taginfo
+admin_level=neighborhood🔎
+If you know places with this tag, verify if it could be tagged with another tag.
+Automated edits are strongly discouraged unless you really know what you are doing!
+	14
+More details at taginfo
+admin_level=township🔎
+If you know places with this tag, verify if it could be tagged with another tag.
+Automated edits are strongly discouraged unless you really know what you are doing!
+	10
+More details at taginfo
+admin_level=other🔎
+If you know places with this tag, verify if it could be tagged with another tag.
+Automated edits are strongly discouraged unless you really know what you are doing!
+	8
+More details at taginfo
+admin_level=Kementerian🔎
+If you know places with this tag, verify if it could be tagged with another tag.
+Automated edits are strongly discouraged unless you really know what you are doing!
+	7
+More details at taginfo
+admin_level=urban_district🔎
+If you know places with this tag, verify if it could be tagged with another tag.
+Automated edits are strongly discouraged unless you really know what you are doing!
+	86
+More details at taginfo
+admin_level=1 ‒ see Tag:admin_level=1
+If you know places with this tag, verify if it could be tagged with another tag.
+Automated edits are strongly discouraged unless you really know what you are doing!
+Categories: Key descriptions for group "boundaries"Key descriptionsKey descriptions with status "de facto"Boundaries
+Navigation menu
+English
+Create account
+Log in
+Page
+Discussion
+Read
+View source
+View history
+Search
+Main Page
+The map
+Map Features
+Contributors
+Help
+Blogs
+Shop
+Donations
+Wiki discussion
+Recent changes
+Special pages
+Tools
+What links here
+Related changes
+Printable version
+Permanent link
+Page information
+Cite this page
+In other projects
+Data item
+This page was last edited on 25 October 2026, at 20:58.
+Content is available under Creative Commons Attribution-ShareAlike 2.0 license unless otherwise noted.
+Privacy policy
+About OpenStreetMap Wiki
+Disclaimers
+Mobile view

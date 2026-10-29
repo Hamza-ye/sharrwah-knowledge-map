@@ -1,0 +1,432 @@
+Find anything
+Ask AI
+Introduction
+Authentication
+Errors
+Expanding Responses
+Idempotent requests
+Include-dependent response values (API v2)
+Metadata
+Pagination
+Request IDs
+Connected Accounts
+Versioning
+Enums
+Core Resources
+Accountsv2
+Account Linksv2
+Account Tokensv2
+Balances
+Balance Transactions
+Charges
+Customers
+Customer Sessions
+Disputes
+Events
+Eventsv2
+Event Destinationsv2
+Files
+File Links
+Mandates
+Payment Intents
+Personsv2
+Person Tokensv2
+Setup Intents
+Setup Attempts
+Stripe Balance Debit Agreements
+3DS Authentications
+Payouts
+Refunds
+Confirmation Tokens
+Tokens
+Ephemeral Keys
+Payment Methods
+Payment Methods
+Payment Method Configurations
+Payment Method Domains
+Bank Accounts
+Cash Balances
+Cash Balance Transactions
+Cards
+Sources
+Products
+Products
+Prices
+Coupons
+Promotion Codes
+Discounts
+Tax Codes
+Tax Rates
+Shipping Rates
+Product Catalog
+Trial Offers
+Commerce
+Agentic Commerce
+Shared Payment Issued Tokens
+Shared Payment Granted Tokens
+Checkout
+Checkout Sessions
+Payment Links
+Payment Links
+Billing
+Alerts
+Credit Balance Summaries
+Credit Balance Transactions
+Credit Grants
+Credit Notes
+Customer Balance Transactions
+Customer Portal Configurations
+Customer Portal Sessions
+Feedback Options
+Invoices
+Invoice Items
+Invoice Line Items
+Invoice Payments
+Invoice Rendering Templates
+Meters
+Meter Events
+Meter Event Adjustment
+Meter Event Adjustmentsv2
+Meter Event Streamsv2
+Meter Event Summary
+Meter Eventsv2
+Plans
+Quotes
+Subscriptions
+Subscription Items
+Subscription Schedules
+Tax IDs
+Test Clocks
+Capital
+Financing Offers
+Financing Summaries
+Connect
+Accounts
+Login Links
+Account Links
+Account Sessions
+Application Fees
+Application Fee Refunds
+Capabilities
+Country Specs
+Balance Settings
+External Bank Accounts
+External Account Cards
+Persons
+Top-ups
+Transfers
+Transfer Reversals
+Secrets
+App Installs
+Reserves
+Fraud
+Issuing
+Terminal
+Treasury for Platforms
+Payment Records
+Account Evaluation
+Entitlements
+Sigma
+Reporting
+Financial Connections
+Tax
+Tax Calculations
+Tax Registrations
+The Tax Registration object
+Create a registration
+Update a registration
+Retrieve a registration
+List registrations
+Tax Transactions
+Tax Settings
+Tax Associations
+Tax Locations
+Identity
+Crypto
+Climate
+Tax Reporting
+Forwarding
+Privacy
+Webhooks
+2026-09-30.endive
+API Reference
+Docs
+Support
+Sign in →
+Tax Registrations v1
+Ask about this section
+Copy for LLM
+View as Markdown
+
+A Tax Registration lets us know that your business is registered to collect tax on payments within a region, enabling you to automatically collect tax.
+
+Stripe doesn’t register on your behalf with the relevant authorities when you create a Tax Registration object. For more information on how to register to collect tax, see our guide.
+
+Related guide: Using the Registrations API
+
+Was this section helpful?
+Yes
+No
+Create a registration
+POST
+/v1/tax/registrations
+Update a registration
+POST
+/v1/tax/registrations/:id
+Retrieve a registration
+GET
+/v1/tax/registrations/:id
+List registrations
+GET
+/v1/tax/registrations
+The Tax Registration object v1
+Ask about this section
+Copy for LLM
+View as Markdown
+Attributes
+id
+string
+
+Unique identifier for the object.
+
+object
+string, value is "tax.registration"
+
+String representing the object’s type. Objects of the same type share the same value.
+
+active_from
+timestamp
+
+Time at which the registration becomes active. Measured in seconds since the Unix epoch.
+
+country
+string
+
+Two-letter country code (ISO 3166-1 alpha-2).
+
+country_options
+object
+
+Specific options for a registration in the specified country.
+
+Show child attributes
+created
+timestamp
+
+Time at which the object was created. Measured in seconds since the Unix epoch.
+
+expires_at
+nullable timestamp
+
+If set, the registration stops being active at this time. If not set, the registration will be active indefinitely. Measured in seconds since the Unix epoch.
+
+livemode
+boolean
+
+If the object exists in live mode, the value is true. If the object exists in test mode, the value is false.
+
+status
+enum
+
+The status of the registration. This field is present for convenience and can be deduced from active_from and expires_at.
+
+Possible enum values
+active
+
+The Tax Registration is currently active.
+
+
+
+expired
+
+The Tax Registration is no longer active.
+
+
+
+scheduled
+
+The Tax Registration will become active in the future.
+
+THE TAX REGISTRATION OBJECT
+{
+  "id": "taxreg_NkyGPRPytKq66j",
+  "object": "tax.registration",
+  "active_from": 1682036640,
+  "country": "US",
+  "country_options": {
+    "us": {
+      "state": "CA",
+      "type": "state_sales_tax"
+    }
+  },
+  "created": 1682006400,
+  "expires_at": null,
+  "livemode": false,
+  "status": "active"
+}
+Create a registration v1
+Ask about this section
+Copy for LLM
+View as Markdown
+POST 
+/v1/tax/registrations
+
+Creates a new Tax Registration object.
+
+Parameters
+active_from
+string, value is "now" | timestamp
+Required
+
+Time at which the Tax Registration becomes active. It can be either now to indicate the current time, or a future timestamp measured in seconds since the Unix epoch.
+
+country
+string
+Required
+
+Two-letter country code (ISO 3166-1 alpha-2).
+
+country_options
+object
+Required
+
+Specific options for a registration in the specified country.
+
+Show child parameters
+expires_at
+timestamp
+
+If set, the Tax Registration stops being active at this time. If not set, the Tax Registration will be active indefinitely. Timestamp measured in seconds since the Unix epoch.
+
+Returns
+
+A Tax Registration object.
+
+State sales tax
+Admissions tax
+Server-side language
+cURL
+curl https://api.stripe.com/v1/tax/registrations \
+  -u "sk_test_...
+sk_test_...
+:" \
+  -d country=US \
+  -d "country_options[us][state]=CA" \
+  -d "country_options[us][type]=state_sales_tax" \
+  -d active_from=now
+RESPONSE
+{
+  "id": "taxreg_NkyGPRPytKq66j",
+  "object": "tax.registration",
+  "active_from": 1682036640,
+  "country": "US",
+  "country_options": {
+    "us": {
+      "state": "CA",
+      "type": "state_sales_tax"
+    }
+  },
+  "created": 1682006400,
+  "expires_at": null,
+  "livemode": false,
+  "status": "active"
+}
+Update a registration v1
+Ask about this section
+Copy for LLM
+View as Markdown
+POST 
+/v1/tax/registrations/:id
+
+Updates an existing Tax Registration object.
+
+A registration cannot be deleted after it has been created. If you wish to end a registration you may do so by setting expires_at.
+
+Parameters
+active_from
+string, value is "now" | timestamp
+
+Time at which the registration becomes active. It can be either now to indicate the current time, or a timestamp measured in seconds since the Unix epoch.
+
+expires_at
+string, value is "now" | timestamp
+
+If set, the registration stops being active at this time. If not set, the registration will be active indefinitely. It can be either now to indicate the current time, or a timestamp measured in seconds since the Unix epoch.
+
+Returns
+
+A Tax Registration object.
+
+Retrieve a registration v1
+Ask about this section
+Copy for LLM
+View as Markdown
+GET 
+/v1/tax/registrations/:id
+
+Returns a Tax Registration object.
+
+Parameters
+
+No parameters.
+
+Returns
+
+A Tax Registration object.
+
+List registrations v1
+Ask about this section
+Copy for LLM
+View as Markdown
+GET 
+/v1/tax/registrations
+
+Returns a list of Tax Registration objects.
+
+Parameters
+status
+enum
+
+The status of the Tax Registration.
+
+Possible enum values
+active
+
+Return all active Tax Registrations.
+
+
+
+all
+
+Return all Tax Registrations (default).
+
+
+
+expired
+
+Return all expired Tax Registrations.
+
+
+
+scheduled
+
+Return all scheduled Tax Registrations.
+
+More parameters
+Expand all
+ending_before
+string
+limit
+integer
+starting_after
+string
+Returns
+
+A list of Tax Registration objects.
+
+Need help? Contact Support.
+Chat with Stripe developers on Discord.
+Check out our changelog.
+Questions? Contact Sales.
+LLM? Read llms.txt.
+Powered by Markdoc

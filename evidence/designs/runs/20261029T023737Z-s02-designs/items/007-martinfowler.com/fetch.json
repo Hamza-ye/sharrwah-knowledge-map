@@ -1,0 +1,18 @@
+{
+ "n": 7,
+ "url": "https://martinfowler.com/eaaCatalog/money.html",
+ "dir": "items/007-martinfowler.com",
+ "fetched_at": "2026-10-29T02:37:42Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://martinfowler.com/eaaCatalog/money.html",
+ "content_type": "text/html",
+ "bytes": 3899,
+ "cited_in": [
+  "studies/subjects/S-02/designs.tsv"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "8f515919d937df34d8c4f6b7548640c49aa7eb31640412ab9f1ba8e44205c47c",
+ "raw_ext": "html"
+}
