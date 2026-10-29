@@ -99,3 +99,11 @@ Dated record of the work: what was decided, what was measured.
   were. WooPayments' own code reads its account country from the account data WooPayments' server returns
   (`wcpay_account_data`, United States when there is none). WordPress.com answered the store owner's connection with
   "Confirm you are human", so a WooPayments account and its verification wait for the founder.
+- WooPayments' documentation states what its verification asks (owner's legal name, date of birth, home address,
+  SSN or tax ID, bank account; the business's country, type, industry, address), that a test account asks nothing and
+  is not offered in the UAE or Singapore, and that the relevant country is where the business is registered. Stripe's
+  requirements tool (WooPayments is built with Stripe), for a US platform: the fields follow the account's country;
+  the UAE asks a company, its representative's passport, its licence, memorandum of association and proof of bank
+  account ownership as files; Japan asks names and addresses in kana and kanji; Saudi Arabia, Oman and Egypt get a
+  recipient agreement with transfers only, "The card_payments capability is not available for accounts with a
+  recipient service agreement."

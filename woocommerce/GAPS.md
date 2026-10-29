@@ -9,4 +9,3 @@ Each row: what WooCommerce or WooPayments shows that this folder does not hold, 
 | WooCommerce Tax's automated rates by country | WooCommerce Tax works through the WordPress.com connection | as above |
 | The set-up's country list as items (which countries and states it offers; it matched no entry for Yemen) | held as the page and the code (`i18n/countries.php`, `i18n/states.php` in woocommerce.11.2.1.zip) | a structure read from the code |
 | The structures in [structures/REGISTER.tsv](structures/REGISTER.tsv) marked backlogged, as items | held as answers and code | read each into `items.jsonl` |
-| Stripe's verification requirements by country, as its page draws them | the page draws them with JavaScript; the fetch holds only its frame (run 20261029T032300Z-woopayments-docs) | a browser run on docs.stripe.com/connect/required-verification-information, country by country |
