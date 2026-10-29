@@ -1,0 +1,10 @@
+{
+  "id": "acct_1UVqYJFtnEISxZTZ",
+  "capabilities": {
+    "afterpay_clearpay_payments": "inactive",
+    "amazon_pay_payments": "inactive",
+    "card_payments": "inactive",
+    "klarna_payments": "inactive",
+    "transfers": "inactive"
+  }
+}

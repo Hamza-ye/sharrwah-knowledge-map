@@ -1,0 +1,22 @@
+- dialog:
+  - document:
+    - heading "Set up WooPayments" [level=2]
+    - img "Step completed"
+    - text: Choose your payment methods
+    - img "Step completed"
+    - text: Connect with WordPress.com
+    - img "Step active"
+    - text: Activate payments
+    - img "Step active"
+    - text: Submit for verification
+    - button
+    - heading "Let’s get your store ready to accept payments" [level=1]
+    - heading "We’ll use these details to enable payments for your store. This information can’t be changed after your account is created." [level=2]
+    - text: Where is your business located?
+    - combobox "Where is your business located?": United Arab Emirates
+    - text: What type of legal entity is your business?
+    - combobox "What type of legal entity is your business?" [expanded]: Select an option
+    - listbox "What type of legal entity is your business?":
+      - list:
+        - option "Company Select if you filed documentation to register your business with a government agency"
+    - button "Continue"

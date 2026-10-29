@@ -1,0 +1,682 @@
+{
+  "id": "acct_1UVpVgFyDvWH51yf",
+  "object": "account",
+  "business_profile": {
+    "annual_revenue": null,
+    "estimated_worker_count": null,
+    "mcc": "5699",
+    "mcc_source": "user_onboarding",
+    "name": "Capture Test Store",
+    "product_description": null,
+    "specified_commercial_transactions_act_url": null,
+    "support_address": null,
+    "support_email": null,
+    "support_phone": null,
+    "support_url": null,
+    "url": "https://belfast-portal-fruit-sell.trycloudflare.com/"
+  },
+  "business_type": "individual",
+  "can_generate_remediation_link": true,
+  "can_unset_representative": false,
+  "capabilities": {
+    "affirm_payments": "inactive",
+    "afterpay_clearpay_payments": "inactive",
+    "amazon_pay_payments": "inactive",
+    "card_payments": "inactive",
+    "klarna_payments": "inactive",
+    "tax_reporting_us_1099_k": "active",
+    "transfers": "inactive"
+  },
+  "charges_enabled": false,
+  "company": {
+    "address": {
+      "city": null,
+      "country": "US",
+      "line1": null,
+      "line2": null,
+      "postal_code": null,
+      "state": null
+    },
+    "directors_provided": true,
+    "executives_provided": true,
+    "name": null,
+    "owners_provided": true,
+    "tax_id_provided": false,
+    "verification": {
+      "details": null,
+      "details_code": null,
+      "document": {
+        "back": null,
+        "details": null,
+        "details_code": null,
+        "front": null
+      },
+      "status": "unverified"
+    }
+  },
+  "controller": {
+    "application": {
+      "loss_liable": false,
+      "onboarding_owner": false,
+      "pricing_controls": true
+    },
+    "dashboard": {
+      "type": "express"
+    },
+    "is_controller": true,
+    "losses": {
+      "payments": "stripe"
+    },
+    "type": "application"
+  },
+  "controlling_platform": "acct_1ETDmyFuiXB5oUVx",
+  "controlling_platform_can_draw_funds": true,
+  "controlling_platform_has_risk_controls": true,
+  "country": "US",
+  "created": 1793265638,
+  "dashboard_account_status": "restricted",
+  "dashboard_type": "express",
+  "default_account_holder_name": "CAPTURE TEST STORE",
+  "default_currency": "usd",
+  "details_submitted": false,
+  "email": "7amza.it+woo@gmail.com",
+  "email_confirmed": false,
+  "external_account_changes_disabled": false,
+  "external_accounts": {
+    "data": []
+  },
+  "fake_account": false,
+  "future_requirements": {
+    "alternatives": [],
+    "current_deadline": null,
+    "currently_due": [],
+    "disabled_reason": null,
+    "errors": [],
+    "eventually_due": [],
+    "past_due": [],
+    "pending_verification": [],
+    "previously_due": [],
+    "requirement_information": []
+  },
+  "individual": {
+    "id": "person_1UVqOJFyDvWH51yfqnXR9AYR",
+    "object": "person",
+    "account": "acct_1UVpVgFyDvWH51yf",
+    "address": {
+      "city": null,
+      "country": "US",
+      "line1": null,
+      "line2": null,
+      "postal_code": null,
+      "state": null
+    },
+    "created": 1793269023,
+    "dob": {
+      "day": null,
+      "month": null,
+      "year": null
+    },
+    "first_name": null,
+    "future_requirements": {
+      "alternatives": [],
+      "currently_due": [],
+      "errors": [],
+      "eventually_due": [],
+      "past_due": [],
+      "pending_verification": []
+    },
+    "id_number_country": "US",
+    "id_number_keyed_in": false,
+    "id_number_provided": false,
+    "last_name": null,
+    "metadata": {},
+    "personal_id_number_country": "US",
+    "relationship": {
+      "authorizer": false,
+      "controller": false,
+      "director": false,
+      "executive": false,
+      "legal_guardian": false,
+      "officer": false,
+      "owner": false,
+      "partner": false,
+      "percent_ownership": null,
+      "representative": true,
+      "title": null
+    },
+    "requirements": {
+      "alternatives": [],
+      "currently_due": [
+        "address.city",
+        "address.line1",
+        "address.postal_code",
+        "address.state",
+        "dob.day",
+        "dob.month",
+        "dob.year",
+        "email",
+        "first_name",
+        "id_number",
+        "last_name",
+        "phone",
+        "ssn_last_4"
+      ],
+      "errors": [],
+      "eventually_due": [
+        "address.city",
+        "address.line1",
+        "address.postal_code",
+        "address.state",
+        "dob.day",
+        "dob.month",
+        "dob.year",
+        "email",
+        "first_name",
+        "id_number",
+        "last_name",
+        "phone",
+        "ssn_last_4"
+      ],
+      "past_due": [
+        "address.city",
+        "address.line1",
+        "address.postal_code",
+        "address.state",
+        "dob.day",
+        "dob.month",
+        "dob.year",
+        "email",
+        "first_name",
+        "last_name",
+        "phone",
+        "ssn_last_4"
+      ],
+      "pending_verification": []
+    },
+    "ssn_last_4_provided": false,
+    "verification": {
+      "additional_document": {
+        "back": null,
+        "details": null,
+        "details_code": null,
+        "front": null
+      },
+      "details": null,
+      "details_code": null,
+      "document": {
+        "back": null,
+        "details": null,
+        "details_code": null,
+        "front": null
+      },
+      "status": "unverified"
+    }
+  },
+  "invoice_settings": {
+    "payment_methods_enabled_for_merchant": {
+      "ach_credit_transfer": false,
+      "acss_debit": true,
+      "affirm": false,
+      "afterpay_clearpay": false,
+      "alipay": false,
+      "amazon_pay": true,
+      "au_becs_debit": false,
+      "bacs_debit": false,
+      "bancontact": false,
+      "billie": false,
+      "bizum": false,
+      "blik": true,
+      "boleto": false,
+      "card": true,
+      "cashapp": true,
+      "check_scan": false,
+      "crypto": true,
+      "custom": true,
+      "customer_balance": false,
+      "demo_pay": false,
+      "eps": false,
+      "fpx": false,
+      "giropay": false,
+      "gopay": false,
+      "grabpay": false,
+      "id_bank_transfer": false,
+      "id_credit_transfer": false,
+      "ideal": false,
+      "jp_credit_transfer": false,
+      "kakao_pay": false,
+      "klarna": true,
+      "konbini": false,
+      "kr_card": false,
+      "kr_market": false,
+      "link": true,
+      "mb_way": true,
+      "momo": false,
+      "multibanco": false,
+      "naver_pay": false,
+      "netbanking": false,
+      "ng_bank_transfer": false,
+      "ng_card": false,
+      "ng_market": false,
+      "ng_wallet": false,
+      "nz_bank_account": false,
+      "p24": false,
+      "paper_check": false,
+      "pay_by_bank": true,
+      "payco": false,
+      "paynow": false,
+      "paypal": false,
+      "paypay": false,
+      "payto": true,
+      "pix": false,
+      "promptpay": false,
+      "revolut_pay": true,
+      "samsung_pay": false,
+      "satispay": true,
+      "sepa_credit_transfer": false,
+      "sepa_debit": false,
+      "sequra": false,
+      "sofort": false,
+      "stripe_balance": false,
+      "swish": false,
+      "touch_n_go": false,
+      "truemoney": false,
+      "twint": false,
+      "upi": true,
+      "us_bank_account": true,
+      "vipps": false,
+      "wechat_pay": false
+    }
+  },
+  "is_connected_v2_account": false,
+  "legal_entity_shared_with": [],
+  "login_links": {
+    "object": "list",
+    "data": [],
+    "has_more": false,
+    "total_count": 0,
+    "url": "/v1/accounts/acct_1UVpVgFyDvWH51yf/login_links"
+  },
+  "merchants_reonboarded_to": [],
+  "metadata": {},
+  "nickname": "Capture Test Store",
+  "payouts_enabled": false,
+  "primary_user": {
+    "id": "usr_VWtIVL1IAgxXll",
+    "object": "user",
+    "email": null,
+    "name": null,
+    "password_set": null
+  },
+  "proration_settings": {
+    "smart_prorations": false
+  },
+  "requirements": {
+    "alternatives": [],
+    "current_deadline": null,
+    "currently_due": [
+      "business_profile.support_phone",
+      "external_account",
+      "individual.address.city",
+      "individual.address.line1",
+      "individual.address.postal_code",
+      "individual.address.state",
+      "individual.dob.day",
+      "individual.dob.month",
+      "individual.dob.year",
+      "individual.email",
+      "individual.first_name",
+      "individual.id_number",
+      "individual.last_name",
+      "individual.phone",
+      "individual.ssn_last_4",
+      "tos_acceptance.date",
+      "tos_acceptance.ip"
+    ],
+    "disabled_reason": "requirements.past_due",
+    "errors": [],
+    "eventually_due": [
+      "business_profile.support_phone",
+      "external_account",
+      "individual.address.city",
+      "individual.address.line1",
+      "individual.address.postal_code",
+      "individual.address.state",
+      "individual.dob.day",
+      "individual.dob.month",
+      "individual.dob.year",
+      "individual.email",
+      "individual.first_name",
+      "individual.id_number",
+      "individual.last_name",
+      "individual.phone",
+      "individual.ssn_last_4",
+      "tos_acceptance.date",
+      "tos_acceptance.ip"
+    ],
+    "past_due": [
+      "business_profile.support_phone",
+      "external_account",
+      "individual.address.city",
+      "individual.address.line1",
+      "individual.address.postal_code",
+      "individual.address.state",
+      "individual.dob.day",
+      "individual.dob.month",
+      "individual.dob.year",
+      "individual.email",
+      "individual.first_name",
+      "individual.last_name",
+      "individual.phone",
+      "individual.ssn_last_4",
+      "tos_acceptance.date",
+      "tos_acceptance.ip"
+    ],
+    "pending_verification": [],
+    "previously_due": [
+      "business_profile.mcc",
+      "business_profile.name",
+      "business_profile.url",
+      "business_type",
+      "settings.payments.statement_descriptor"
+    ],
+    "requirement_information": []
+  },
+  "settings": {
+    "bacs_debit_payments": {
+      "display_name": null,
+      "service_user_number": null
+    },
+    "branding": {
+      "icon": "file_1UVpVhFuiXB5oUVxJw0xtCLL",
+      "logo": "file_1UVpVhFuiXB5oUVx3caQEyqo",
+      "primary_color": "#873eff",
+      "secondary_color": "#2c045d",
+      "show_support_phone": true
+    },
+    "capital": {},
+    "card_issuing": {
+      "tos_acceptance": {
+        "date": null,
+        "ip": null
+      },
+      "tos_acceptances": {
+        "account_holder": {
+          "date": null,
+          "ip": null,
+          "url": "https://stripe.com/legal/ssa#services-terms"
+        },
+        "apple_pay_celtic": {
+          "date": null,
+          "ip": null,
+          "url": "https://stripe.com/legal/issuing/celtic/apple-payment-platform-program-manager-customer-terms-and-conditions#exhibit-c-pass-through-provisions"
+        },
+        "apple_pay_cross_river": {
+          "date": null,
+          "ip": null,
+          "url": "https://stripe.com/legal/issuing/crb/apple-payment-platform-program-manager-customer-terms-and-conditions#exhibit-c-pass-through-provisions"
+        },
+        "apple_pay_fifth_third": {
+          "date": null,
+          "ip": null,
+          "url": "https://stripe.com/legal/issuing/fifth-third/apple-payment-platform-program-manager-customer-terms-and-conditions#exhibit-c-pass-through-provisions"
+        },
+        "apple_pay_lead": {
+          "date": null,
+          "ip": null,
+          "url": "https://stripe.com/legal/issuing/lead-bank/apple-payment-platform-program-manager-customer-terms-and-conditions"
+        },
+        "bridge_wallet_global": {
+          "date": null,
+          "ip": null,
+          "url": "https://www.bridge.xyz/legal/overview"
+        },
+        "bridge_wallet_us": {
+          "date": null,
+          "ip": null,
+          "url": "https://www.bridge.xyz/legal/overview"
+        },
+        "card_rewards": {
+          "date": null,
+          "ip": null,
+          "url": "https://stripe.com/legal/issuing/rewards"
+        },
+        "charge_card_celtic": {
+          "date": null,
+          "ip": null,
+          "url": "https://stripe.com/legal/celtic-charge-card"
+        },
+        "charge_card_celtic_platform": {
+          "date": null,
+          "ip": null,
+          "url": null
+        },
+        "charge_card_cross_river": {
+          "date": null,
+          "ip": null,
+          "url": "https://stripe.com/legal/issuing/crb-charge-card"
+        },
+        "charge_card_cross_river_financing_disclosures": {
+          "date": null,
+          "ip": null,
+          "url": null
+        },
+        "charge_card_cross_river_platform": {
+          "date": null,
+          "ip": null,
+          "url": null
+        },
+        "charge_card_fifth_third": {
+          "date": null,
+          "ip": null,
+          "url": "https://stripe.com/legal/issuing/fifth-third-bank-terms"
+        },
+        "charge_card_fifth_third_financing_disclosures": {
+          "date": null,
+          "ip": null,
+          "url": null
+        },
+        "charge_card_fifth_third_platform": {
+          "date": null,
+          "ip": null,
+          "url": null
+        },
+        "consumer_debit_card_lead": {
+          "date": null,
+          "ip": null,
+          "url": null
+        },
+        "consumer_debit_card_lead_financial_disclosures": {
+          "date": null,
+          "ip": null,
+          "url": null
+        },
+        "consumer_debit_card_lead_platform": {
+          "date": null,
+          "ip": null,
+          "url": null
+        },
+        "consumer_prepaid_card_cross_river": {
+          "date": null,
+          "ip": null,
+          "url": null
+        },
+        "consumer_prepaid_card_cross_river_financial_disclosures": {
+          "date": null,
+          "ip": null,
+          "url": null
+        },
+        "consumer_prepaid_card_cross_river_platform": {
+          "date": null,
+          "ip": null,
+          "url": null
+        },
+        "consumer_prepaid_card_lead": {
+          "date": null,
+          "ip": null,
+          "url": null
+        },
+        "consumer_prepaid_card_lead_financial_disclosures": {
+          "date": null,
+          "ip": null,
+          "url": "https://stripe.com/privacy"
+        },
+        "consumer_prepaid_card_lead_platform": {
+          "date": null,
+          "ip": null,
+          "url": "https://www.vivian.com/vip-terms-of-service.html"
+        },
+        "consumer_revolving_credit_card_celtic": {
+          "date": null,
+          "ip": null,
+          "url": "https://stripe.com/legal/consumer/credit-card"
+        },
+        "consumer_revolving_credit_card_celtic_platform": {
+          "date": null,
+          "ip": null,
+          "url": null
+        },
+        "consumer_revolving_credit_card_celtic_privacy_notice": {
+          "date": null,
+          "ip": null,
+          "url": "https://stripe.com/privacy"
+        },
+        "consumer_revolving_credit_card_celtic_privacy_notice_platform": {
+          "date": null,
+          "ip": null,
+          "url": null
+        },
+        "prepaid_card_cross_river": {
+          "date": null,
+          "ip": null,
+          "url": "https://stripe.com/legal/crb-commercial-prepaid-card"
+        },
+        "prepaid_card_lead": {
+          "date": null,
+          "ip": null,
+          "url": "https://stripe.com/legal/lead-commercial-prepaid-card"
+        },
+        "prepaid_card_lead_platform": {
+          "date": null,
+          "ip": null,
+          "url": null
+        },
+        "spend_card_celtic": {
+          "date": null,
+          "ip": null,
+          "url": "https://stripe.com/legal/celtic-spend-card"
+        },
+        "spend_card_cross_river": {
+          "date": null,
+          "ip": null,
+          "url": "https://stripe.com/legal/issuing/crb-spend-card"
+        },
+        "spend_card_cross_river_financing_disclosures": {
+          "date": null,
+          "ip": null,
+          "url": null
+        },
+        "stablecoin_account_holder": {
+          "date": null,
+          "ip": null,
+          "url": "https://stripe.com/legal/global-issuing-accountholder"
+        }
+      }
+    },
+    "card_issuing_payout": {
+      "tos_acceptance": {
+        "date": null,
+        "ip": null
+      }
+    },
+    "card_payments": {
+      "decline_on": {
+        "avs_failure": false,
+        "cvc_failure": true
+      },
+      "statement_descriptor_prefix": null,
+      "statement_descriptor_prefix_kana": null,
+      "statement_descriptor_prefix_kanji": null
+    },
+    "consumer_financial_account": {
+      "tos_acceptances": {
+        "consumer_financial_account": {
+          "date": null,
+          "ip": null
+        },
+        "consumer_financial_account_financial_disclosures": {
+          "date": null,
+          "ip": null
+        }
+      }
+    },
+    "crypto_payments": {
+      "tos_acceptances": {
+        "date": null,
+        "ip": null
+      }
+    },
+    "dashboard": {
+      "display_name": "Capture Test Store",
+      "timezone": "Etc/UTC"
+    },
+    "dispute_arbitration": {
+      "tos_acceptance": {
+        "date": null,
+        "url": "https://docs.stripe.com/disputes/arbitration"
+      }
+    },
+    "invoices": {
+      "default_account_tax_ids": null,
+      "hosted_payment_method_save": "offer"
+    },
+    "konbini_payments": {},
+    "mass_payouts": {
+      "tos_acceptance": {
+        "date": null,
+        "ip": null
+      }
+    },
+    "payments": {
+      "statement_descriptor": "BELFAST-PORTAL-FRUIT-SELL.TRYCLOUDFLARE.COM",
+      "statement_descriptor_kana": null,
+      "statement_descriptor_kanji": null
+    },
+    "payouts": {
+      "debit_negative_balances": true,
+      "schedule": {
+        "delay_days": 2,
+        "interval": "manual",
+        "payout_schedule_explicitly_set": true
+      },
+      "statement_descriptor": null
+    },
+    "paypay_payments": {},
+    "sepa_debit_payments": {
+      "creditor_id": "DE16ZZZ00001941136"
+    },
+    "smart_disputes": {
+      "auto_respond": {
+        "preference": "inherit",
+        "value": "off"
+      }
+    },
+    "tax_forms": {
+      "consented_to_paperless_delivery": false,
+      "should_mail_deliver": false
+    },
+    "treasury": {
+      "additional_partners": [],
+      "tos_acceptance": {
+        "date": null,
+        "ip": null
+      }
+    }
+  },
+  "stripe_owns_card_payments_pricing": false,
+  "stripe_owns_lpm_payments_pricing": false,
+  "stripe_owns_onboarding": true,
+  "tos_acceptance": {
+    "date": null
+  },
+  "type": "express"
+}

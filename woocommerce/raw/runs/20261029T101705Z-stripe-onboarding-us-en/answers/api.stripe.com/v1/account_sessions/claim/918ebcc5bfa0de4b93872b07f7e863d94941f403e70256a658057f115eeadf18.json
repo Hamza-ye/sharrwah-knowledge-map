@@ -1,0 +1,834 @@
+{
+  "object": "account_session_claim",
+  "account_id": "acct_1UVqTs2Hqnzj8oyp",
+  "account_session_id": "acctsesh_1UVqTwFuiXB5oUVxHrmqgZqW",
+  "analytics_rb_event_id": "fad2a4ab-9a9e-42e3-90a8-92a1c3956ee0",
+  "api_key": "em_live_51UVqTs2Hqnzj8oypMkIuKxaRrgqDuEqWYqySW9DxGcX9VB3pccmHBlVECiQfY56A3mlVwZIdXVZ6gJLU9uWOCCDm00LRu380co",
+  "api_key_expiry": 1793280175,
+  "application_id": "ca_Ex84uObQQwAXXkj317DO349S6kJ9FXyY",
+  "application_name": "WooPayments",
+  "claimable_sandbox_session": false,
+  "client_secret": "accs_secret__VWuIG0aqHZaXJRW7PruXwd7FQA2AZWPSzrByCy8cZFiIc4s",
+  "compartment_id": "wksp_6VfERFLg8CBe2Bqb4dtF1JQ",
+  "components": {
+    "account_management": {
+      "enabled": true,
+      "features": {
+        "disable_stripe_user_authentication": false,
+        "external_account_collection": true
+      }
+    },
+    "account_onboarding": {
+      "enabled": true,
+      "features": {
+        "disable_stripe_user_authentication": false,
+        "external_account_collection": true
+      }
+    },
+    "agentic_commerce_settings": {
+      "enabled": false,
+      "features": {}
+    },
+    "app_install": {
+      "enabled": false,
+      "features": {
+        "allowed_apps": []
+      }
+    },
+    "app_onboarding": {
+      "enabled": false,
+      "features": {}
+    },
+    "app_settings": {
+      "enabled": false,
+      "features": {}
+    },
+    "app_viewport": {
+      "enabled": false,
+      "features": {
+        "allowed_apps": []
+      }
+    },
+    "balance_report": {
+      "enabled": false,
+      "features": {}
+    },
+    "balances": {
+      "enabled": false,
+      "features": {
+        "disable_stripe_user_authentication": false,
+        "edit_payout_schedule": false,
+        "external_account_collection": false,
+        "instant_payouts": false,
+        "standard_payouts": false,
+        "topups": false
+      }
+    },
+    "bills": {
+      "enabled": false,
+      "features": {
+        "bill_management": false,
+        "disable_stripe_user_authentication": false,
+        "send_money": false
+      }
+    },
+    "business_profile_management": {
+      "enabled": false,
+      "features": {}
+    },
+    "capital_financing": {
+      "enabled": false,
+      "features": {}
+    },
+    "capital_financing_application": {
+      "enabled": false,
+      "features": {}
+    },
+    "capital_financing_manual_payment": {
+      "enabled": false,
+      "features": {}
+    },
+    "capital_financing_promotion": {
+      "enabled": false,
+      "features": {}
+    },
+    "capital_offer": {
+      "enabled": false,
+      "features": {}
+    },
+    "capital_overview": {
+      "enabled": false,
+      "features": {}
+    },
+    "check_scanning": {
+      "enabled": false,
+      "features": {
+        "create_us_paper_check_on_application": false
+      }
+    },
+    "disputes_list": {
+      "enabled": false,
+      "features": {
+        "capture_payments": true,
+        "destination_on_behalf_of_charge_management": false,
+        "dispute_management": true,
+        "refund_management": true,
+        "smart_disputes_management": true
+      }
+    },
+    "documents": {
+      "enabled": false,
+      "features": {}
+    },
+    "export_tax_transactions": {
+      "enabled": false,
+      "features": {}
+    },
+    "financial_account": {
+      "enabled": false,
+      "features": {
+        "disable_stripe_user_authentication": false,
+        "external_account_collection": false,
+        "money_movement": false,
+        "send_money": false,
+        "transfer_balance": false
+      }
+    },
+    "financial_account_rewards": {
+      "enabled": false,
+      "features": {}
+    },
+    "financial_account_transactions": {
+      "enabled": false,
+      "features": {
+        "card_spend_dispute_management": false
+      }
+    },
+    "financial_accounts": {
+      "enabled": false,
+      "features": {
+        "bill_management": false,
+        "card_management": false,
+        "disable_stripe_user_authentication": false,
+        "edit_payout_schedule": false,
+        "send_money": false
+      }
+    },
+    "financial_accounts_transactions": {
+      "enabled": false,
+      "features": {
+        "capture_payments": false,
+        "card_management": false,
+        "card_spend_dispute_management": false,
+        "destination_on_behalf_of_charge_management": false,
+        "dispute_management": false,
+        "refund_management": false
+      }
+    },
+    "instant_payouts": {
+      "enabled": false,
+      "features": {}
+    },
+    "instant_payouts_promotion": {
+      "enabled": false,
+      "features": {
+        "disable_stripe_user_authentication": false,
+        "external_account_collection": true,
+        "instant_payouts": false
+      }
+    },
+    "invoice_history": {
+      "enabled": false,
+      "features": {}
+    },
+    "issuing_card": {
+      "enabled": false,
+      "features": {
+        "card_management": false,
+        "card_spend_dispute_management": false,
+        "cardholder_management": false,
+        "spend_control_management": false
+      }
+    },
+    "issuing_cardholder_create": {
+      "enabled": false,
+      "features": {}
+    },
+    "issuing_cards_list": {
+      "enabled": false,
+      "features": {
+        "card_management": false,
+        "card_spend_dispute_management": false,
+        "cardholder_management": false,
+        "disable_stripe_user_authentication": false,
+        "spend_control_management": false
+      }
+    },
+    "network_cost_passthrough_report": {
+      "enabled": false,
+      "features": {}
+    },
+    "notification_banner": {
+      "enabled": true,
+      "features": {
+        "disable_stripe_user_authentication": false,
+        "external_account_collection": true
+      }
+    },
+    "outbound_payment_details": {
+      "enabled": false,
+      "features": {}
+    },
+    "payment_details": {
+      "enabled": false,
+      "features": {
+        "capture_payments": true,
+        "destination_on_behalf_of_charge_management": false,
+        "dispute_management": true,
+        "refund_management": true,
+        "smart_disputes_management": true
+      }
+    },
+    "payment_disputes": {
+      "enabled": false,
+      "features": {
+        "destination_on_behalf_of_charge_management": false,
+        "dispute_management": true,
+        "refund_management": true,
+        "smart_disputes_management": true
+      }
+    },
+    "payment_method_settings": {
+      "enabled": false,
+      "features": {}
+    },
+    "payment_method_settings_v2": {
+      "enabled": false,
+      "features": {
+        "disable_stripe_user_authentication": false
+      }
+    },
+    "payments": {
+      "enabled": false,
+      "features": {
+        "capture_payments": true,
+        "destination_on_behalf_of_charge_management": false,
+        "dispute_management": true,
+        "refund_management": true,
+        "smart_disputes_management": true
+      }
+    },
+    "payout_details": {
+      "enabled": false,
+      "features": {}
+    },
+    "payout_reconciliation_report": {
+      "enabled": false,
+      "features": {}
+    },
+    "payouts": {
+      "enabled": false,
+      "features": {
+        "disable_stripe_user_authentication": false,
+        "edit_payout_schedule": false,
+        "external_account_collection": false,
+        "instant_payouts": false,
+        "standard_payouts": false,
+        "topups": false
+      }
+    },
+    "payouts_list": {
+      "enabled": false,
+      "features": {}
+    },
+    "product_tax_code_selector": {
+      "enabled": false,
+      "features": {}
+    },
+    "recipients": {
+      "enabled": false,
+      "features": {
+        "send_money": false
+      }
+    },
+    "recipients_list": {
+      "enabled": false,
+      "features": {
+        "disable_stripe_user_authentication": false,
+        "send_money": false
+      }
+    },
+    "reporting_chart": {
+      "enabled": false,
+      "features": {}
+    },
+    "tax_registrations": {
+      "enabled": false,
+      "features": {}
+    },
+    "tax_settings": {
+      "enabled": false,
+      "features": {}
+    },
+    "tax_threshold_monitoring": {
+      "enabled": false,
+      "features": {}
+    },
+    "terminal_hardware_orders": {
+      "enabled": false,
+      "features": {}
+    },
+    "terminal_hardware_shop": {
+      "enabled": false,
+      "features": {}
+    },
+    "transactions_list": {
+      "enabled": false,
+      "features": {
+        "capture_payments": true,
+        "destination_on_behalf_of_charge_management": false,
+        "dispute_management": true,
+        "refund_management": true,
+        "smart_disputes_management": true
+      }
+    },
+    "treasury_financial_account": {
+      "enabled": false,
+      "features": {}
+    }
+  },
+  "connect_brand_accent_color": "2c045d",
+  "connect_express_color": "873eff",
+  "encoded_api_key_token": "bWtfMVVWcVR6MkhxbnpqOG95cHdXWDFQZldq",
+  "financial_connections": {
+    "available_bank_account_countries": [
+      "CA",
+      "US"
+    ]
+  },
+  "flags": {
+    "account_management_hide_payout_descriptor": false,
+    "account_onboarding_skip_form": false,
+    "accounts_kyc_rak_full_read_platform": true,
+    "acf_use_backend_completed_challenges": false,
+    "acp_ga_dashboard": false,
+    "air_enable_additional_form_fields": false,
+    "allow_setting_bank_account_type_by_country_cl": true,
+    "allow_setting_bank_account_type_by_country_co": true,
+    "allow_setting_bank_account_type_by_country_jp": true,
+    "always_allow_account_representative_changes": false,
+    "ark_combined_business_type_and_company_structures_au": true,
+    "ark_combined_business_type_and_company_structures_br": true,
+    "ark_combined_business_type_and_company_structures_de": true,
+    "ark_combined_business_type_and_company_structures_in": true,
+    "ark_combined_business_type_and_company_structures_my": true,
+    "ark_declarative_legal_entity_visibility": false,
+    "ark_eid_popup_sail_comms": false,
+    "ark_enable_bo_composition_state_change_callback": false,
+    "ark_enable_proof_of_liveness_documents_alternative_outside_canada": false,
+    "ark_eventually_due_errors_preview_enabled": false,
+    "ark_lib_fix_section_exit_loading_flash": false,
+    "ark_lib_preserve_locked_country_phone_edits": false,
+    "ark_use_select_field_for_business_type": true,
+    "arkv2_disable_disable_submit_button_on_frontend_validation_errors": false,
+    "atlas_streamlined_payments_onboarding_circuit_breaker": false,
+    "au_topups_beta": false,
+    "australia_display_only_aud_sba_instructions": true,
+    "back_stablecoin_payouts_with_usd_balances": false,
+    "bacs_inbound_transfers_dashboard": false,
+    "bacs_inbound_transfers_private_preview": false,
+    "bank_connections_connect_onboarding_product_enabled": true,
+    "bank_connections_in_onboarding_killswitch": false,
+    "bank_connections_in_onboarding_standard": true,
+    "bank_connections_in_onboarding_unified": true,
+    "business_network_profile_webgl_wave": true,
+    "business_type_rec_strategy_workflow": false,
+    "bypass_capabilities_in_embedded_payment_method_settings": false,
+    "bypass_dda_single_currency_restriction": false,
+    "ca_topups_beta": false,
+    "capital_c4p_enable_fa_payouts": false,
+    "capital_disable_c4p_sessions_ui_promo_faqs": false,
+    "capital_disable_outstanding_requirements_check_for_application_submission": false,
+    "capital_enable_gelato_verification_check": true,
+    "capital_enable_line_of_credit_explainer": true,
+    "capital_enable_loc_sessions_ui_in_embedded": true,
+    "capital_enable_new_app_status_tracker": true,
+    "capital_enable_payout_destination_consolidation_and_balance_promo": true,
+    "capital_enable_sessions_ui_all_financings_in_embedded": true,
+    "capital_enable_sessions_ui_all_financings_in_hosted": true,
+    "capital_enable_sessions_ui_promo_all_financings_in_embedded": false,
+    "capital_enable_sessions_ui_promo_all_financings_in_hosted": false,
+    "capital_for_platforms_doordash_application_ui_customizations": false,
+    "capital_for_platforms_enable_application_back_button_navigation": false,
+    "capital_for_platforms_enable_application_person_form_third_person_copy": false,
+    "capital_for_platforms_enable_borrower_standalone_flow": false,
+    "capital_for_platforms_enable_borrower_unified_flow": false,
+    "capital_for_platforms_enable_combined_capital_application_and_payments_onboarding": false,
+    "capital_for_platforms_enable_in_app_downgrade_ux": false,
+    "capital_for_platforms_enable_pay_now_on_cash_advance": false,
+    "capital_for_platforms_new_composition_ordering": false,
+    "capital_for_platforms_original_payment_in_financing_ec": true,
+    "capital_for_platforms_publish_onapplicationsubmitted_from_mutation_rollout": true,
+    "capital_for_platforms_withholding_in_payouts_ec": true,
+    "capital_offer_allow_tiny_minimum_advance_amount": false,
+    "capital_processor_agnostic_repayments_api": false,
+    "capital_show_trust_account_linking_warning": false,
+    "capital_synthetic_test_merchant": false,
+    "card_present_bring_your_own_gateway_param_docs": false,
+    "climate_standard_connect_onboarding_enabled": false,
+    "collect_hk_debit_agreement": false,
+    "connect_account_app_affirm": false,
+    "connect_account_app_afterpay_clearpay": false,
+    "connect_account_app_amazon_pay": false,
+    "connect_account_app_klarna": true,
+    "connect_account_app_link": false,
+    "connect_dashboard_always_show_product_description": false,
+    "connect_embedded_balance_backend_arrival_estimate": true,
+    "connect_embedded_balance_reserve_breakdown": true,
+    "connect_embedded_mobile_sdk_ga": true,
+    "connect_embedded_myinfo_authenticated_webview": true,
+    "connect_onboarding_business_type_recommendation_shadow_run": false,
+    "connect_onboarding_custom_caa_ford": false,
+    "connect_onboarding_disable_responsive_state_preservation": false,
+    "connect_onboarding_enable_graceful_use_sections_fallback": true,
+    "connect_onboarding_identity_only": false,
+    "connect_onboarding_link_send_request_surface": true,
+    "connect_onboarding_use_financial_connections_available_bank_account_countries": false,
+    "connect_taxes_review_tax_information": false,
+    "crypto_payouts_enabled": false,
+    "crypto_payouts_new_networks_enabled": false,
+    "crypto_payouts_zerohash_v2_compartment_enabled": false,
+    "crypto_payouts_zh_rollout": false,
+    "crypto_sui_network_enabled": false,
+    "crypto_tron_payout_network_enabled": false,
+    "crypto_usdt_payout_currency_enabled": false,
+    "crypto_wallet_address_network_validation_enabled": false,
+    "dashboard_enable_capabilities_konbini_payments": true,
+    "dashboard_enable_capabilities_swish_payments": true,
+    "dashboard_hide_test_data_banner": false,
+    "dashboard_locale_dependent_subregion_display": false,
+    "dashboard_locale_dependent_subregion_sorting": false,
+    "dbf_auto_save_on_page_transition": true,
+    "direct_fa_au_alpha_v2": true,
+    "disable_account_management_injected_person_address_fields": false,
+    "disable_account_suggestions": false,
+    "disable_ark_business_type_editing": false,
+    "disable_connect_onboarding_recommendation_api": false,
+    "disable_embedded_payment_method_settings": false,
+    "disable_embedded_payment_method_settings_requirements_collection": false,
+    "disable_embedded_v2_root_token_fetch": false,
+    "disable_express_dashboard_payouts_tab": true,
+    "disable_invoice_sender_username_pill_for_network_id": false,
+    "disable_ml_prefill_for_direct_onboarding": false,
+    "disable_pii_link": true,
+    "disable_requires_payment_capabilities": false,
+    "disable_sail_ui_bottom_sheets_swipe_down": false,
+    "disable_smart_disputes_management_embedded_components": false,
+    "disable_treasury_payments_balance_transfer": false,
+    "disallow_brazilian_personal_id_changes": true,
+    "display_rtp_on_dashboard_connect": false,
+    "display_rtp_on_dashboard_issuing": false,
+    "display_rtp_on_dashboard_refunds": false,
+    "disputes_auto_representment_enable_dashboard": true,
+    "efs_enable_capability_degradation_experience": false,
+    "efs_enable_financial_accounts_txns_cancellations": false,
+    "efs_enable_sns_fees": true,
+    "efs_transactions_list_unified_balance_transactions": false,
+    "embedded_components_currency_conversion_available": false,
+    "embedded_components_settlement_currency_management_available": false,
+    "embedded_v2_pom_challenges": false,
+    "enable_air_ark_flow_in_business_settings_person_section": true,
+    "enable_air_combined_kyb_kyc_task": false,
+    "enable_air_in_ark_identity_verification_composition": true,
+    "enable_ark_write_air_attestations_in_identity_verification_composition": true,
+    "enable_ark_write_representative_air_attestation_in_identity_verification_composition": false,
+    "enable_async_composition_manager_error_reporting": false,
+    "enable_au_becs_inbound_transfers_surface": false,
+    "enable_balance_transfer_top_level_option_in_topup_modal": false,
+    "enable_bizrep_sharded_onboarding": false,
+    "enable_business_network_fa_to_fa_transfers_aud": false,
+    "enable_cdd_survey_connect_onboarding": true,
+    "enable_confirmation_of_payee_on_recipient_verifications": false,
+    "enable_connect_embedded_mobile_sdk_component_preview": false,
+    "enable_connect_embedded_react_native_preview": false,
+    "enable_connect_onboarding_use_api_external_account_collection": true,
+    "enable_consumerui": true,
+    "enable_debit_card_entry": false,
+    "enable_debit_card_instant_payouts_pricing_check": false,
+    "enable_delayed_lpm_capability_requests": false,
+    "enable_destination_obo_indicator_embedded_disputes_list": false,
+    "enable_embedded_disputes_csv_export_datastory": true,
+    "enable_embedded_disputes_csv_export_datastory_non_obo": true,
+    "enable_embedded_disputes_list_enriched_canonical_search": true,
+    "enable_embedded_disputes_list_enriched_canonical_search_data_rollout": true,
+    "enable_embedded_disputes_list_enriched_canonical_search_data_rollout_non_obo": true,
+    "enable_embedded_documents_pagination_total_count": true,
+    "enable_embedded_metadata_filter_in_payments_list": false,
+    "enable_embedded_overlay_close_confirmation_fix": true,
+    "enable_embedded_payout_details_timeline": true,
+    "enable_embedded_send_receipt": true,
+    "enable_eu_orr_relationship_verification_flow": false,
+    "enable_express_force_bank_account": true,
+    "enable_express_multiple_external_accounts_per_currency": true,
+    "enable_external_account_collection_for_treasury": false,
+    "enable_external_account_section_applicability_by_requirements": false,
+    "enable_financial_account_dda_experience": false,
+    "enable_financial_accounts_mobile_view": false,
+    "enable_full_embedded_reporting_data_availability": false,
+    "enable_government_entity_onboarding_connect_interim": true,
+    "enable_id_bank_transfer": false,
+    "enable_india_orr_ux": false,
+    "enable_issuer_evidence_embedded_components": true,
+    "enable_issuing_api": false,
+    "enable_le_cloning_for_custom_without_user_authentication": false,
+    "enable_low_provider_coverage_flow": false,
+    "enable_lpm_only_mode": false,
+    "enable_managed_charge_card": false,
+    "enable_metadata_in_payment_details": false,
+    "enable_ml_prefill_for_direct_onboarding": false,
+    "enable_mobile_component_annotation_enforcement": false,
+    "enable_money_management_multi_fa_creation_ui": false,
+    "enable_money_management_transactions_search_list_view": false,
+    "enable_money_manager_split_reads": false,
+    "enable_multi_step_flow_service_steps": false,
+    "enable_multicurrency_financial_account_onboarding": false,
+    "enable_multiple_bank_accounts": true,
+    "enable_myinfo_onboarding": true,
+    "enable_narrow_external_account_collection_query": true,
+    "enable_networked_onboarding_with_link_default_values": true,
+    "enable_new_suggestion_generation_api": true,
+    "enable_new_tax_details_flow": false,
+    "enable_nl_individual_to_soleprop_connect": true,
+    "enable_payments_balance_primary_account_rename": false,
+    "enable_payout_statement_descriptor_dashboard_ga": true,
+    "enable_payout_transactions_export": true,
+    "enable_pending_financial_address_dashboard": false,
+    "enable_person_verification_doc_details_editing": false,
+    "enable_personalization_design_selection_on_issuing_card_creation": false,
+    "enable_pii_exempt_government_entity_onboarding": false,
+    "enable_pii_exempt_onboarding_flow": false,
+    "enable_previously_due_api_requirements_on_person_update_v2": false,
+    "enable_project_glow_ousd": true,
+    "enable_public_company_structure": false,
+    "enable_push_based_payment_for_us_connect_topup": false,
+    "enable_recording_ark_composition_galaxy_events": false,
+    "enable_relationship_verification": false,
+    "enable_risk_interventions": true,
+    "enable_rv_v1_requirements": false,
+    "enable_sail_ui_refreshed_code_puncher": false,
+    "enable_sail_ui_visual_refresh_token_override": false,
+    "enable_sail_ui_visual_refresh_typography_override": false,
+    "enable_sending_dashboard_session_header_for_le_sharing_api_calls": true,
+    "enable_sg_ubo_flow": false,
+    "enable_shared_review_relationship_step": false,
+    "enable_singapore_fa_mca": false,
+    "enable_skip_summary_after_air_person_identity_verification": false,
+    "enable_smart_disputes_management_feature_cutover": true,
+    "enable_spec_for_bizrepverificationdoc_composition": false,
+    "enable_spec_for_bodirectors_composition": false,
+    "enable_spec_for_boexecutives_composition": false,
+    "enable_spec_for_boowners_composition": false,
+    "enable_spec_for_companynonindividualsonly_composition": false,
+    "enable_spec_for_create_person_form": false,
+    "enable_spec_for_kybcomposition_composition": false,
+    "enable_spec_for_person_update_form": true,
+    "enable_spec_for_personidentityverification_composition": true,
+    "enable_ssa_on_person_update": false,
+    "enable_stablecoin_currency_bucketing_in_ui": false,
+    "enable_stablecoin_transfers_only_build_for_marketplaces": false,
+    "enable_statement_descriptor_composition": false,
+    "enable_stripe_owns_payments_losses_and_platform_owns_requirement_collection_accounts": false,
+    "enable_stripe_verified_dashboard": false,
+    "enable_suggestion_srv_for_legal_entity_suggestions": true,
+    "enable_sus_dual_reporting": false,
+    "enable_tax_forms_section_sus": false,
+    "enable_terminal_hardware_embedded_components_ga": true,
+    "enable_treasury_api": false,
+    "enable_treasury_testmode": false,
+    "enable_unified_evidence_experience_embedded_components": false,
+    "enable_url_opt_out_direct_onboarding": false,
+    "enable_usdc_offramp_for_borderless_connected_accounts": false,
+    "enable_vban_in_dashboard": false,
+    "enable_verification_document_validation": false,
+    "enable_write_air_attestations_in_person_form": false,
+    "enabled_networked_onboarding_with_link": true,
+    "enabled_networked_onboarding_with_link_global": true,
+    "enabled_pull_based_topups_creation_from_dashboard": false,
+    "enabled_pull_based_topups_creation_from_dashboard_testmode": false,
+    "eu_topups_beta": false,
+    "exempt_from_company_phone_number_country_validation": false,
+    "expedite_topup_ach_debit_settlement": false,
+    "express_crypto_new_networks_enabled": false,
+    "express_crypto_payout_enabled": false,
+    "express_crypto_payout_only_enabled": false,
+    "express_crypto_wallet_connect_enabled": false,
+    "express_debit_card_support": true,
+    "external_account_form_read_poms": false,
+    "financial_address_v2_dashboard": true,
+    "financial_connections_enable_ca_accounts": true,
+    "financial_connections_onboarding_bank_account_country_eligible": false,
+    "financial_connections_platform_eligible_for_connect_onboarding": true,
+    "force_bank_account": false,
+    "force_fbo_backing_for_dda_internal_testing": false,
+    "fpx_payments_allow_individual_legal_entity": false,
+    "gelato_dashboard_enabled": false,
+    "global_payouts_consolidated_recipient_kyc_hro": true,
+    "global_payouts_crypto_wallet_hro": true,
+    "global_payouts_dashboard_au_instant_to_bank": false,
+    "global_payouts_dashboard_rtp": true,
+    "global_payouts_dashboard_sepa_instant": false,
+    "global_payouts_dashboard_sg_instant_to_bank": false,
+    "global_payouts_eu_private_preview": false,
+    "global_payouts_eu_sender": false,
+    "global_payouts_hro_block_projected_payout_method_edit": false,
+    "global_payouts_hro_currency_from_recipient_country": true,
+    "global_payouts_hro_link_eligibility_dry_run": false,
+    "global_payouts_hro_link_enhanced": true,
+    "global_payouts_hro_link_signup_card": true,
+    "global_payouts_hro_override_recipient_type": false,
+    "global_payouts_hro_payout_method_edit_flow_v2": false,
+    "global_payouts_hro_send_request_surface": true,
+    "global_payouts_instant_payouts_circuit_breaker": false,
+    "global_payouts_link_hro": false,
+    "global_payouts_require_dob_for_debit_card": false,
+    "global_payouts_send_flow_quote_api_full_on": false,
+    "global_payouts_tax_reporting_1099_tin": false,
+    "global_payouts_tax_reporting_edelivery_only": false,
+    "global_payouts_tax_reporting_w8w9": false,
+    "global_payouts_uk_sender": false,
+    "government_entity_expansion": false,
+    "government_entity_onboarding_hide_letterhead_prompt": false,
+    "government_entity_onboarding_interim_hide_pii": false,
+    "gross_settlement_onboarding": false,
+    "has_requested_direct_treasury_issuing": false,
+    "health_events_in_custom_role_enabled": false,
+    "hide_document_inputs_when_kyc_is_applicable": false,
+    "hide_hosted_onboarding_return_link": false,
+    "hosted_recipients_onboarding.financial_connections": false,
+    "hosted_recipients_onboarding.self_serve_edit": true,
+    "hro_embedded_dual_metrics_reporting_enabled": true,
+    "hro_embedded_onboarding_enabled": true,
+    "hro_embedded_onboarding_enabled_gradual_rollout": false,
+    "hro_replace_inline_v2": true,
+    "hro_skip_archiving_for_projected_pom": true,
+    "hro_use_embedded_link_flow": true,
+    "ignore_alternatives_for_person_identity_verification": false,
+    "improved_express_multiple_payout_accounts_per_currency": true,
+    "instant_payouts_for_pnbl": false,
+    "instant_payouts_rtp_disabled": false,
+    "instant_payouts_to_debit_cards_disabled": false,
+    "is_cbsp_standard_account_with_data_sharing": false,
+    "is_goldstar_treasury_merchant": false,
+    "is_odyssey_targeted_merchant": false,
+    "issuing_allow_retrieve_physical_card_details": false,
+    "issuing_enable_funding_instruction_us_bank_transfer": false,
+    "kyb_guided_flow_air_enabled": false,
+    "kyb_guided_flow_eu_remediation_enabled": false,
+    "luo_skip_business_representative_page": false,
+    "make_dark_launch_suggestions_call": true,
+    "managed_risk_for_banks_beta": false,
+    "merchant_is_eligible_for_us_progressive_onboarding": true,
+    "mmc_balance_summary_includes_crypto_investments": true,
+    "mmc_crypto_address_api_supportability": false,
+    "mmc_disable_perf_monitoring": false,
+    "mmc_disable_savings_fa_onboarding": false,
+    "mmc_display_stablecoin_us_bank_account_bic": false,
+    "mmc_enable_cross_border_obt": true,
+    "mmc_enable_crypto_investment_vaults": false,
+    "mmc_enable_financial_account_types_filter": false,
+    "mmc_enable_headless_outbound_payment_details": false,
+    "mmc_enable_headless_payout_intent_details": false,
+    "mmc_enable_headless_payout_link_details": false,
+    "mmc_enable_ngn_usdc_onramp": false,
+    "mmc_enable_treasury_au_alpha": false,
+    "mmc_enable_treasury_ca_alpha": false,
+    "mmc_enable_treasury_cards_au": false,
+    "mmc_enable_treasury_czk": false,
+    "mmc_enable_treasury_dkk": false,
+    "mmc_enable_treasury_nok": false,
+    "mmc_enable_treasury_pln": false,
+    "mmc_enable_treasury_sek": false,
+    "mmc_global_payouts_dashboard_ca_instant_to_bank": false,
+    "mmc_global_payouts_dashboard_tips": false,
+    "mmc_mobile_fee_inclusive_currency_conversion": false,
+    "mmc_outbound_flows_network_params": true,
+    "mmc_respect_virtual_only_card_programs": false,
+    "money_management_multi_fa_killswitch": false,
+    "new_zealand_display_only_nzd_sba_instructions": false,
+    "non_australia_do_not_display_aud_sba_instructions": true,
+    "northstar_fa_enable_private_preview": true,
+    "nz_topups_beta": false,
+    "odyssey_supports_legal_guardian": false,
+    "outbound_payments_disabled_debit_cards_eu": false,
+    "outbound_payments_disabled_debit_cards_uk": false,
+    "payout_links_multi_currency": false,
+    "payout_schedule_onboarding_use_api_setting_or_manual_default": true,
+    "payout_schedule_use_api_setting_or_auto_default": false,
+    "peas_only_default_currency": false,
+    "peas_schedule_collection_circuit_breaker": false,
+    "platform_external_account_settings_enabled": false,
+    "pomco_inbound_to_outbound_private_preview_card": false,
+    "pomco_inbound_to_outbound_private_preview_us_bank_account": false,
+    "radar_pricing_connected_account_onboarding_enabled": true,
+    "radar_pricing_hide_plan_selection_on_account_updates": false,
+    "radar_pricing_onboarding_treatment_experiments": true,
+    "recipient_payouts_cbp_phase_5_kyc_updates_private_preview": false,
+    "remove_eu_kyc_requirement_id": true,
+    "resolve_fee_pricing_ownership": false,
+    "restrict_biz_owner_director_pii_access": false,
+    "restrict_biz_rep_pii_access": false,
+    "rv_use_v1_requirements_validation": false,
+    "sail_ui_button_remove_set_timeout": true,
+    "sepa_vban_eligible": false,
+    "shared_payout_details_timeline": true,
+    "show_hosted_tax_w9": false,
+    "simplify_topup_payment_method_options": false,
+    "spend_management_expenses_tab": false,
+    "sqsp_custom_direct_debit_agreement": false,
+    "sqsp_custom_links_enabled": false,
+    "stablecoin_payee_experimental": false,
+    "stripe_tax_connect_enable_extended_tax_types": false,
+    "stripe_tax_direct_onboarding_killswitch": false,
+    "stripe_tax_enable_standard_onboarding_component": false,
+    "stripe_tax_enable_tax_product_capability": false,
+    "stripe_tax_registrations_lazy_loading": true,
+    "stripe_verified_upfront_tos_acceptance": true,
+    "subaccount_surfaces_enable_recipients_component": false,
+    "summarize_completed_fields_in_person_composition": true,
+    "suppress_missing_postal_code_validation": false,
+    "surface_missing_columns_embedded_disputes_list": true,
+    "topup_same_day_ach_debit_settlement": false,
+    "transactions_list_unified_balance_transactions": false,
+    "uk_yield_fa_fe": false,
+    "unified_evidence_form_default_to_manual_submission": false,
+    "use_capability_activation_component": false,
+    "use_entity_type_check_api": false,
+    "use_lpm_specific_dispute_responding_docs": true,
+    "use_myinfo_v4": true,
+    "use_new_moa_endpoint": false,
+    "v2_experimental_local_spec": false,
+    "xb_user_info_collection_direct": false,
+    "xb_user_info_collection_platform": false
+  },
+  "is_v2_account_session": false,
+  "link_brand_info": {
+    "brand": "link",
+    "brand_name": "Link",
+    "crypto_url": "crypto.link.com",
+    "link_app_url": "app.link.com",
+    "link_domain": "link.com",
+    "support_site_url": "support.link.com"
+  },
+  "link_signup_hcaptcha_sitekey": null,
+  "livemode": true,
+  "merchant_data": {
+    "business_name": "Capture Test Store",
+    "compartment_id": "wksp_6VfERFLg8CBe2Bqb4dtF1JQ",
+    "connected_account_details_submitted": false,
+    "country": "AE",
+    "default_currency": "aed",
+    "has_express_dashboard_access": true,
+    "has_rft_in_livemode": false,
+    "has_standard_dashboard_access": false,
+    "is_controlled_by_single_platform": true,
+    "is_test_only_merchant": false,
+    "platform_compartment_id": "wksp_6OzmJuKkSQkoLJxcse8tNFA",
+    "risk_and_compliance_settings": {
+      "id": null,
+      "collected_public_details": null,
+      "default_collect_options": "currently_due",
+      "merchant_id": "acct_1ETDmyFuiXB5oUVx"
+    },
+    "stripe_owns_loss_liability": true,
+    "stripe_owns_onboarding": true,
+    "stripe_owns_pricing": false,
+    "tax_reporting_enabled": false
+  },
+  "platform_business_name": "WooCommerce Inc",
+  "platform_compartment_id": "wksp_6OzmJuKkSQkoLJxcse8tNFA",
+  "platform_country": "US",
+  "platform_id": "acct_1ETDmyFuiXB5oUVx",
+  "platform_nickname": "WooPayments",
+  "platform_support_email": "woopayments-support@woocommerce.com",
+  "publishable_key": "pk_live_51UVqTs2Hqnzj8oypotDtmVRbi2oWh9hqmz8KfQGReivqUcVrr8ItlkFqKgqlCFKG5jyvSnlgwa2FclNaM71AnYmz00D3ArmqZk",
+  "read_only": false,
+  "risk_signals_hcaptcha_sitekey": "8d0a9fe0-752e-4210-8c82-87c45436d46a",
+  "stripethirdparty_base_url": "https://b.stripecdn.com/stripethirdparty-srv/assets/",
+  "support_site_base_url": "https://support.stripe.com/embedded-connect",
+  "treatments": {
+    "au_nz_business_type_structure_recommendation": "control",
+    "bank_account_verification_remediation_flow": "control",
+    "business_type_recommendation": "treatment",
+    "business_type_recommendation_aa": "control",
+    "connect_hosted_onboarding_assistant_chat": "control",
+    "connect_hosted_onboarding_assistant_chat_aa": "control",
+    "connect_onboarding_legal_entity_sharing_trust_badge": "control",
+    "direct_account_legal_entity_sharing": "control",
+    "enable_global_expanded_persons": "control",
+    "express_currently_due_bypass_removal": "control",
+    "express_currently_due_bypass_removal_aa": "control",
+    "hosted_onboarding_document_prefill": "control",
+    "hosted_onboarding_document_prefill_aa": "control",
+    "ml_prefill_for_direct_onboarding": "control",
+    "networked_onboarding_with_link_global": "control",
+    "networked_onboarding_with_link_pes_ses": "treatment",
+    "networked_onboarding_with_link_prefilled": "treatment",
+    "networked_onboarding_with_link_to_express": "control",
+    "networked_onboarding_with_link_to_express_new_to_link": "control",
+    "networked_onboarding_with_link_to_express_new_to_link_aa": "control",
+    "new_address_suggestion": "control",
+    "new_address_suggestion_aa": "control",
+    "new_tax_details_flow": "control",
+    "radar_onboarding_plan_selection": "control",
+    "statement_descriptor_composition": "control",
+    "statement_descriptor_llm_suggestions_for_connect": "control",
+    "statement_descriptor_llm_suggestions_for_connect_aa": "control",
+    "supportability_composition": "control",
+    "test_experiment_embed": "treatment",
+    "url_opt_out_for_direct_onboarding": "control",
+    "url_opt_out_for_direct_onboarding_with_bav": "control"
+  },
+  "user": null,
+  "user_session_api_key": null,
+  "user_session_expires_at": null
+}

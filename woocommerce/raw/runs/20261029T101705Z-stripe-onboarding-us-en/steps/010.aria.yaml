@@ -1,0 +1,19 @@
+- dialog:
+  - document:
+    - heading "Set up WooPayments" [level=2]
+    - img "Step completed"
+    - text: Connect with WordPress.com
+    - img "Step completed"
+    - text: Choose your payment methods
+    - img "Step active"
+    - text: Activate payments
+    - img "Step active"
+    - text: Submit for verification
+    - button
+    - heading "You're almost there — time to activate payments!" [level=1]
+    - heading "Activate payments in two easy steps" [level=3]
+    - text: Answer a few questions and verify your business details with our payments partner, including owner, address, and bank information.
+    - button "Activate payments"
+    - link "Learn more about the WooPayments sign-up process (opens in a new tab)":
+      - /url: https://woocommerce.com/document/woopayments/startup-guide/#sign-up-process
+      - text: Learn more

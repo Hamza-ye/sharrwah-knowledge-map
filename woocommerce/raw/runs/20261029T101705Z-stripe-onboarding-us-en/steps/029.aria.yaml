@@ -1,0 +1,52 @@
+- dialog:
+  - document:
+    - heading "Set up WooPayments" [level=2]
+    - img "Step completed"
+    - text: Choose your payment methods
+    - img "Step completed"
+    - text: Connect with WordPress.com
+    - img "Step active"
+    - text: Activate payments
+    - img "Step active"
+    - text: Submit for verification
+    - button
+    - heading "Let’s get your store ready to accept payments" [level=1]
+    - heading "We’ll use these details to enable payments for your store. This information can’t be changed after your account is created." [level=2]
+    - text: Where is your business located?
+    - combobox "Where is your business located?": United Kingdom (UK)
+    - text: What type of legal entity is your business?
+    - combobox "What type of legal entity is your business?": Individual
+    - text: What type of goods or services does your business sell?
+    - combobox "What type of goods or services does your business sell?" [expanded]: Select an option
+    - listbox "What type of goods or services does your business sell?":
+      - textbox "Search…"
+      - list:
+        - option "Most popular"
+        - option "Software"
+        - option "Clothing and accessories"
+        - option "Consulting"
+        - option "Retail"
+        - option "Digital products"
+        - option "Food and drink"
+        - option "Professional services"
+        - option "Membership organizations"
+        - option "Personal services"
+        - option "Transportation"
+        - option "Travel and lodging"
+        - option "Medical services"
+        - option "Education"
+        - option "Entertainment and recreation"
+        - option "Building services"
+        - option "Financial services"
+        - option "Regulated and age-restricted products"
+    - text: By using WooPayments, you agree to be bound by our
+    - link "Terms of Service":
+      - /url: https://wordpress.com/tos/
+    - text: (including
+    - link "WooPay merchant terms":
+      - /url: https://wordpress.com/tos/#more-woopay-specifically
+    - text: ) and acknowledge that you have read our
+    - link "Privacy Policy":
+      - /url: https://automattic.com/privacy/
+    - text: .
+    - button "Continue"
