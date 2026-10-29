@@ -35,5 +35,7 @@
 | `count_tokens.py` | Counts the tokens an agent run processed, once per request (`PLAN.md`, Stage 4). |
 | `check_register.py` | Checks every citation in a subject's decision register: ids, paths at a commit, and that each cited line holds what the citation names. |
 | `register_items.py` | Lists the founder items of a subject's phase C that its register answers in no row, or in two: every item must be answered, or moved to another subject, exactly once. |
+| `check_yemen_row.py` | Checks a subject's Yemen row against its brief: columns, a row for every founder decision, `exists` and what backs it, each Stage 1 id in its file, and no product gap that names Yemen; lists each cited id that Stage 1's `corrections.md` corrects, for the coordinator to read against the row. |
+| `check_scenario_walk.py` | Checks a subject's scenario walk against its brief: columns, every founder decision and engineering constraint walked through the three scenarios, the costs and flags allowed, a reason for every option closed, and each cited id the subject's. |
 | `check_report.py` | Checks each quote in a report against the line its pinned citation names. |
 | `check_surface.py` | Searches the working files for the framings of the work that is now history, and fails where one appears outside the places allowed to name it (`PLAN.md`, risk 14). |
