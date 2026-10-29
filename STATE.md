@@ -87,10 +87,12 @@ At phase A's end, the checker found every quote, 3,193 of them, and no error. Wi
   - **Confirmed: 12.** The market's own page and its code hold only its name, countries, currency and publication, and no setting's page names a market.
   - **Contradicted: 1, on countries.** Zid's cities answer covers 173 countries, more than the 162 a store's address offers.
 - **Phase B's round is done,** in five parts ([`b/second-pass/parts.tsv`](studies/subjects/S-02/b/second-pass/parts.tsv), [`method-report.md`](studies/subjects/S-02/method-report.md), section 13). The full check finds no error and nothing unplaced: 75 points, 923 rows. The coordinator's rulings are in [`b/second-pass.md`](studies/subjects/S-02/b/second-pass.md).
-- **Phase C is running:**
-  - again on the RD2 and RD3 keys the round touched (C-R2a done; C-R2b running);
-  - RD1's first comparison (C-RD1-1 running; C-RD1-2 next).
-- **A container restart on 28 October** stopped two parts. Both resumed from their transcripts, and nothing was lost.
+- **Phase C is complete** ([`method-report.md`](studies/subjects/S-02/method-report.md), section 14). The full check finds no error.
+  - **Keys:** 361.
+  - **What follows:** 53 commonalities; 17 bound per market; 33 kept open; 116 left to the build; 142 founder items, in 90 wordings.
+- **Two container restarts on 28 October** stopped two parts each time. Both resumed from their transcripts, and nothing was lost.
+  - **What the logs show:** the platform moved the idle session onto a new VM. It wasn't memory, and it wasn't the disk.
+  - **The disk** is now at 76% of the allowance, from 86%, after 4.2 GB of obsolete copies and caches were deleted.
 
 **Earlier:**
 - **Phase B's first pass is complete** ([`method-report.md`](studies/subjects/S-02/method-report.md), section 7): 73 variation points, each with a row for every platform, 671 rows, in [`variation-points.tsv`](studies/subjects/S-02/variation-points.tsv) and [`variants.tsv`](studies/subjects/S-02/variants.tsv). The full check gives no error.
@@ -100,8 +102,8 @@ At phase A's end, the checker found every quote, 3,193 of them, and no error. Wi
 - **Cost:** 1,436 million agent tokens by 22:09 UTC on 28 October, past the budget plus a quarter (875 million). The cost came to the founder at 09:55 on 27 October ([the frame's budget](studies/subjects/S-02/frame.md#budget)). The capture round cost 55 million; reading Salla's and Zid's captures cost 22 million. S-02 is projected at about 1.5 to 1.6 billion. The work goes on on the founder's Max x20 plan. The coordinating session's own tokens: 777 million since S-02 began.
 
 **Next:**
-1. Finish phase C: C-R2b, C-RD1-1 and C-RD1-2.
-2. Record its results: the method report, the frame's budget, and this file.
+1. **The register's draft** (running; [`briefs/D-register.md`](studies/subjects/S-02/briefs/D-register.md)): each founder question asked once, with its options, what the references show, an engineering recommendation, what it closes, and the cost of changing course later. It decides nothing.
+2. **Then, in the plan's order:** the Yemen row and the scenario walk test the register's recommendations, and the independent review tries to break all three. Then the founder's page for the morning.
 3. S-02's end, by the plan's steps: for each root decision, the Yemen row and the scenario walk; then the register, the independent review, and the report for G3. The register asks the per-market question once, not setting by setting.
    - **If the founder says yes to the architecture track** (the answer lines of 28 October), its seven questions become one decision, the market model:
      - what a market can be made of;
