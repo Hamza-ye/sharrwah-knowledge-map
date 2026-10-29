@@ -82,3 +82,19 @@
 4. **A commonality, not an option.** `register.tsv`'s S02-D2 alternatives end with "the seller changes it in the admin on all five", so it has no row. S02-D4 (b) bundles six variants in one row, since none needs anything particular.
 5. **Only checked cases are cited.** YA-01 has 80 cases and YA-03 has 24. The row cites the ones whose quotes were checked; the others were not needed to show that the rate moves.
 6. **Cases have no column of their own.** The brief's columns don't include one, so cases are cited in `evidence` and described in `note`.
+
+## After the register's second pass
+
+The register's second pass (`register.tsv` at f4d3d4c6) added two things and reworded two decisions. The row now has 44 rows: 31 `yes`, 7 `no`, 6 `unknown`. The counts above are the first pass's. `method/check_yemen_row.py` passes, with 0 problems and 0 warnings.
+- **S02-D8, new.** Four rows:
+  - (a) is `no`, as S02-D3 (a);
+  - (b) is `yes`, and leaves payment services and the currency keyed on the country;
+  - (c) is `yes` for the area read from the address, and `unknown` for the bounds of an authority's area, as S02-D4 (a).
+- **S02-D7.**
+  - The row that tested one rate per currency pair moved from (c) to (e), the per-currency form, as the options are now worded. It stays `no`, with no gap.
+  - A new (e) row holds the rate per market, kept on each order: `yes`.
+  - Gap 3 is now half met by (e). The register moves its other half to S-09 (S02-M6).
+- **S02-D3.** Its options are unchanged, and its rows still match. Gaps 1 and 2 now say the register takes them up as S02-D8.
+- **Problem 3 above is answered:**
+  - option (e) shows a rate held per market;
+  - S02-D8 (b) shows references keying tax and a feature on an area, but not payment services or the currency.
