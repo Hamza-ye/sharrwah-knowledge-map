@@ -133,3 +133,11 @@ Keys unknown now:
 - S02-VP-89 'a market the store sells into', blocked by S02-V-1097.
 
 Left as they were, since their states didn't change: S02-VP-75 'the buyer's country' and S02-VP-77 'a market the store sells into'. Their scopes_compared text still names S02-ZD-G18 and S02-ZD-G21, though neither is in any basis.
+
+## C-R3b
+
+Phase C again (29 October 2026) on RD3's keys that phase B's BigCommerce and WooCommerce round (RD3-S14, other-product-class at 3f2438f3) touched.
+- S02-VP-58 'Avalara' is now market, pattern, and was vendor choice: BigCommerce names Avalara AvaTax as what calculates VAT/GST (S02-BC-372), so S02-V-980 takes 'an automatic tax provider;Avalara'. The S-05 founder item is dropped. Method: the statements that give the key are observed on Shopify (S02-SH-986, S02-SH-295) and stated on BigCommerce (S02-BC-372). I read the 28 October ruling, that like with like guards a difference, as reaching the agreeing pair of test 5, since the pairs' difference rests on Salla and Zid, which state nothing. The ruling's words name only no difference; read narrowly, the key would be unknown and kept open.
+- S02-VP-58 'the platform': BigCommerce now gives it through S02-V-1128 (S02-BC-371), a row resting on a reading; the cause stays vendor choice, on Salla and Zid.
+- Unknown and blocked: S02-VP-63 'a market the store sells into', by S02-V-961; S02-VP-64 'the seller', 'the platform' and 'a staff permission or role', by S02-V-843. Both rows now name S02-BC-G18 in place of S02-BC-G14. They would need to show whether a BigCommerce storefront can sell to its buyers through an entity other than the merchant, or a merchant of record (VP-63: yes gives market, pattern, no gives vendor choice), and who sets it (VP-64: the seller gives no difference; the platform, or a staff permission, gives market, pattern; neither gives vendor choice).
+- Unchanged: S02-VP-57, S02-VP-61, S02-VP-62, S02-VP-77, S02-VP-91, S02-VP-41 and S02-VP-42. Their rows only gained statements, and the tests give the same answers. Their unknowns (S02-VP-61 'the whole store'; S02-VP-62 'the seller' and 'Affirm') stand as written, with no blocked_by row.
