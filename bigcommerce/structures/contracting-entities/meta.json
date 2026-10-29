@@ -1,0 +1,22 @@
+{
+  "structure": "bigcommerce/contracting-entities",
+  "platform": "bigcommerce",
+  "surface": "terms (Master Services Agreement, Date of Last Revision: June 1, 2026)",
+  "source": {
+    "run_id": "20261029T024622Z-legal-pricing-docs",
+    "url": "https://www.commerce.com/terms/",
+    "held_in": "fetch.warc.gz",
+    "sha256_of_segment": "be04bc68e5b63d91c6f894a0aeb5595b0f6f28a8f0790b85b88662f09e13b9b8"
+  },
+  "shape": "a grid of cells (not an HTML table): a header row of four cells, then one row of four per country of residence",
+  "columns": [
+    "Country of Residence of Merchant",
+    "Commerce Entity",
+    "Governing Law",
+    "Services"
+  ],
+  "counts": {
+    "rows": 5
+  },
+  "items": "items.jsonl: one row per line, keyed by the header cells as written"
+}
