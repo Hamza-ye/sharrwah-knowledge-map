@@ -281,3 +281,27 @@ This pass made the review's two optional wording fixes, from "Last check". I fir
 - **#24, S02-D8:** the question now holds the area "as a dated field of the business record", not "read from the business record's address". The page's question says the same, matching the recommendation.
 
 Rows changed: S02-D8 (question) and S02-D9 (recommendation). No other row changed.
+
+## Sixth pass, 29 October: phase C's re-run for BigCommerce and WooCommerce
+
+This pass brought the register in line with phase C's re-run (`c/` at 6e3f492d: parts C-R3a and C-R3b). I first checked that the three files were unchanged since 2fe09a43; they were. Phase C now has 143 founder items: 85 answered by S02-D1 to S02-D7 and 58 moved.
+
+- **S02-M3 (S-05):** phase C widened S02-VP-15's question to five options. Its two new founder items, `S02-VP-15|the billing address` and `S02-VP-15|the legal business's address` (Shopify, S02-SH-251 and S02-SH-203), are added. S-05's question now names the five options, and BigCommerce's fee tax by the account's billing contact is given as phase C reads it, the store's country (S02-V-281; S02-BC-359 to S02-BC-365). The row now says that the business record's address is the legal business's address. It also says the billing address is the second copy S02-D3 closes, consistent with S02-V-067. `S02-VP-58|Avalara` is removed: it is no longer a founder item.
+- **S02-F8 (RD3, bound per market):** now holds `S02-VP-58|Avalara`, a market pattern: Shopify and BigCommerce name it, Salla and Zid don't. Its line says so.
+- **S02-F3 (RD1, kept open):** S02-VP-15 has no kept-open key left, and S02-VP-16 gains `every store` (BigCommerce, from one trial store). Its line now names S02-VP-08, S02-VP-10 and S02-VP-16.
+- **S02-D2:** option (a) now gives WooCommerce beside BigCommerce. A change of its store country saved on a test store with orders and tax rates present, and both read back as before (S02-V-087, observed; S02-WC-523, S02-WC-525, S02-WC-526). Its closes adds, as a reading, that WooCommerce's store country is a store setting with no payment account bound to it, while WooPayments' own country stays fixed (S02-WC-182).
+  - I judge that this doesn't contradict the recommendation, so it stands.
+  - The point to watch: WooCommerce's store country is also its tax base (S02-WC-118), more than a display default.
+- **S02-F4 and S02-F10:** only the order of their keys changed, as phase C rewrote its rows; `S02-D2`'s `answers_items` likewise. Their sets are the same.
+- **`decisions.md`:**
+  - the opening count is now 143: 85 asked and 58 moved;
+  - D2's platforms add WooCommerce;
+  - RD1's moved count is now 47;
+  - RD3's follows add a tax partner such as Avalara, set per market by pattern, and drop "duties partners to S-05" from its moved items.
+- **No change needed** where phase C's rows for S02-VP-11, S02-VP-16, S02-VP-61 and S02-VP-64 changed: S02-VP-11 and S02-VP-61 are unchanged, S02-VP-64 changed only a gap id, and S02-VP-16's changes reach only S02-F3.
+
+Rows changed against 2fe09a43:
+- **Text:** S02-D2 (alternatives, closes, evidence), S02-M3 (vp_id, question, alternatives, recommendation, answers_items, evidence), S02-F3 (vp_id, question, answer) and S02-F8 (vp_id, question, answer).
+- **Key order only:** S02-D2 (answers_items), S02-F4 and S02-F10 (vp_id).
+
+Checks: `register_items.py` lists 143 founder items, 0 unanswered, 0 answered twice and 0 names unknown. `check_register.py` checks 810 citations and finds 0 problems.

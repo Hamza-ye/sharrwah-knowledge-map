@@ -1,6 +1,6 @@
 # S-02, what a market is: the decisions for the founder (draft)
 
-**What this page is:** the draft of S-02's register (`register.tsv`), for you. Phase C left 142 items for you: 85 are asked here as seven questions (D1 to D7), and 57 go to the subjects that decide them. D8 and D9 are needs the Yemen row found that no platform meets. Each decision gives what the platforms do, engineering's recommendation and why, what it rules out, and what changing course later costs.
+**What this page is:** the draft of S-02's register (`register.tsv`), for you. Phase C left 143 items for you: 85 are asked here as seven questions (D1 to D7), and 58 go to the subjects that decide them. D8 and D9 are needs the Yemen row found that no platform meets. Each decision gives what the platforms do, engineering's recommendation and why, what it rules out, and what changing course later costs.
 
 **Nothing here is decided.** Each decision ends with an answer line: accept the recommendation, pick another option, or ask. The recommendations for D1 to D7 come from the five references alone, with no market's facts. D8 and D9 go beyond the references, say where, and weigh the established designs read for them.
 
@@ -29,7 +29,7 @@
 
 **Question:** When a seller moves to another country, does the store take a new business record for the new country, keeping its products, customers and orders? Or does its country change in place?
 
-**What the platforms do:** BigCommerce lets the seller change its default country at any time. Shopify allows a change only once every financial service is off and the addresses match the business's country; for a person trading alone a change creates a new business record, and its support changes the country on request for some stores. WooPayments' account country never changes.
+**What the platforms do:** BigCommerce lets the seller change its default country at any time, and WooCommerce's store country changed in place on a test store with orders and tax rates present. Shopify allows a change only once every financial service is off and the addresses match the business's country; for a person trading alone a change creates a new business record, and its support changes the country on request for some stores. WooPayments' account country never changes.
 
 **Recommendation (engineering's):** a business's country never changes in place. A seller who moves adds a business record for the new country, which becomes the main one; the old one closes once nothing open rests on it. Sharrwah's staff do this only where a contract or several business records require it. Other subjects' checks run first: payment accounts (S-04), verification (S-07) and tax forms (S-05). A display country that only sets defaults stays changeable. **Why:** the platforms lock the country while money is attached, and fix it for a person's business record and for a payment account. So what was made under the old country keeps its meaning.
 
@@ -53,7 +53,7 @@
 
 **Answer:** (open)
 
-**What follows by rule (RD1):** as all five do, the seller sets the store's country and address, and where the seller is decides terms, payment services, fees and features. Bound per seller's country by rule: the store's taxes, the privacy law, and whether one contracting company serves every store there (S-03 decides). Kept open: which countries are kept out, who else checks a business, and a balance cleared before a move (none at launch, under Decision 1). Left to the build: permissions and address fields for a move. **Moved:** 45 items, to S-03, S-04, S-05, S-07, S-08, S-09 and S-11.
+**What follows by rule (RD1):** as all five do, the seller sets the store's country and address, and where the seller is decides terms, payment services, fees and features. Bound per seller's country by rule: the store's taxes, the privacy law, and whether one contracting company serves every store there (S-03 decides). Kept open: which countries are kept out, who else checks a business, and a balance cleared before a move (none at launch, under Decision 1). Left to the build: permissions and address fields for a move. **Moved:** 47 items, to S-03, S-04, S-05, S-07, S-08, S-09 and S-11.
 
 ## RD2. The markets a store sells into
 
@@ -124,7 +124,7 @@
 - **Where the rate is held,** per market or per currency: one module. **Answer:** (open)
 - **Which markets carry their own currency:** a setting, once both amounts are kept. **Answer:** (open)
 
-**What follows by rule (RD3):** as all five do, the seller sets each market's settings; tax, shipping, payment methods, the address form and the currency shown follow the buyer's country; one currency, tax setup and set of units hold for the store. Set per market by rule: returns, messages to buyers and the address form. Kept open: business entities per market (D1 leaves room); returns, privacy, analytics and notifications per market. Left to the build: who besides the seller sets each setting. **Moved:** a merchant of record and store closures to S-03; currency conversion by providers to S-04; duties partners to S-05; couriers' cash on delivery and fulfilment services' locations to S-10.
+**What follows by rule (RD3):** as all five do, the seller sets each market's settings; tax, shipping, payment methods, the address form and the currency shown follow the buyer's country; one currency, tax setup and set of units hold for the store. Set per market by rule or pattern: returns, messages to buyers, the address form, and a tax partner such as Avalara. Kept open: business entities per market (D1 leaves room); returns, privacy, analytics and notifications per market. Left to the build: who besides the seller sets each setting. **Moved:** a merchant of record and store closures to S-03; currency conversion by providers to S-04; couriers' cash on delivery and fulfilment services' locations to S-10.
 
 ## Needs no reference meets
 
