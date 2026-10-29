@@ -1,0 +1,14 @@
+{
+  "structure": "woocommerce/core-profiler-free-extensions",
+  "platform": "woocommerce",
+  "surface": "store admin (set-up)",
+  "source": {
+    "run_id": "20261029T024814Z-free-extensions-en",
+    "call": "GET /wp-json/wc-admin/onboarding/free-extensions, after POST wc-analytics/settings/general/woocommerce_default_country"
+  },
+  "shape": "JSON list of bundles {key, title, plugins: [...]} per store country",
+  "counts": {
+    "countries": 7
+  },
+  "items": "items.jsonl: one store country per line, its answer as received"
+}

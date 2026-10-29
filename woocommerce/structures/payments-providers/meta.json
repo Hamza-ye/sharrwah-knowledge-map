@@ -1,0 +1,14 @@
+{
+  "structure": "woocommerce/payments-providers",
+  "platform": "woocommerce",
+  "surface": "store admin (Settings > Payments)",
+  "source": {
+    "run_id": "20261029T023051Z-country-change-en",
+    "call": "POST /wp-json/wc-admin/settings/payments/providers {\"location\": <code>}"
+  },
+  "shape": "JSON {providers, offline_payment_methods, suggestions, suggestion_categories} per location",
+  "counts": {
+    "locations": 8
+  },
+  "items": "items.jsonl: one location per line, its answer as received"
+}
