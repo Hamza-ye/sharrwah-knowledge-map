@@ -111,3 +111,13 @@ The independent review (`review.md`, findings 6 and 19) and the register's third
   - (c) is `yes` for the currency areas, their notes and rates, and `unknown` for which buyers are in which area, as S02-D4 (a).
 - **Finding 19.** S02-D1 (c)'s "from abroad" (line 4) is now marked as an assumption: where the company is based is S-03's, and open.
 - **S02-D4 and S02-D5.** S02-D4's options changed only in (d)'s evidence, so its rows still match. S02-D5 (b) now reads as the register words it: "the most specific settings".
+
+## After the register's fourth pass
+
+The fourth pass (`register.tsv` at fe86177f) reworded S02-D9's options and changed S02-D8's recommendation. The row now has 49 rows: 33 `yes`, 8 `no`, 8 `unknown`. `method/check_yemen_row.py` passes, with 0 problems and 0 warnings.
+- **S02-D9's rows are rewritten to match its options.**
+  - (a), one rate per code, is `no`, as before.
+  - (b), a market per area with its own rate, is `yes` for each area's published rate, and `unknown` for which buyers are in which area, as S02-D4 (a).
+  - (c), the area named in a currency record, is `yes` for the areas and the notes each accepts, and `unknown` for placing buyers, as (b).
+- **S02-D8 (b)'s need** now names the area of a location the seller fulfils from, beside the seller's address. Its options are otherwise unchanged.
+- **S02-D7.** Its rows now point to S02-D9 (c), not (b), for the fact that a market for an area inherits its parent's currency.
