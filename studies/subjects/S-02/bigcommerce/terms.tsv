@@ -48,3 +48,5 @@ storefront selector			S02-BC-C412;S02-BC-C413
 Use global (a storefront's setting in Channel Manager)			S02-BC-C402;S02-BC-C392
 origin channel (of a customer account)			S02-BC-C421
 Allow global logins (allow_global_login)			S02-BC-C421;S02-BC-C422
+Importer of Record		The Importer of Record is a person or entity who assumes the responsibility for ensuring goods imported to a particular country are appropriately documented and valued.	S02-BC-C501
+Default country		Determines available payment options.	S02-BC-C516
