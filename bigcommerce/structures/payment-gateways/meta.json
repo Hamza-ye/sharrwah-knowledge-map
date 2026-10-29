@@ -1,0 +1,17 @@
+{
+  "structure": "bigcommerce/payment-gateways",
+  "platform": "bigcommerce",
+  "surface": "help center (Available Payment Gateways)",
+  "source": {
+    "run_id": "20261029T024758Z-help-center-en",
+    "step": 1,
+    "url": "https://support.bigcommerce.com/s/article/Available-Payment-Gateways?language=en_US",
+    "held_as": "bigcommerce/raw/runs/20261029T024758Z-help-center-en/steps/001.html"
+  },
+  "shape": "four HTML tables: Embedded Payment Providers (gateway by feature: Manual Capture, 3D Secure, Multicurrency, Stored Payment Methods, Recurring Payments, MSF Payments, marked ✔), app payment processors (names in a grid), Open Payment Providers (the same features), offline methods (names in a grid)",
+  "counts": {
+    "tables": 4,
+    "items": 57
+  },
+  "items": "items.jsonl: one gateway or method per line, with its table number, the heading the article puts before the table, and the marks as written"
+}

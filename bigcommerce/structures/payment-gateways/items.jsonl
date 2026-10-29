@@ -1,0 +1,57 @@
+{"table": 1, "section": "Embedded Payment Providers", "Payment Gateway": "Access Worldpay", "Manual Capture": "✔", "3D Secure": "✔", "Multicurrency": "✔", "Stored Payment Methods": "✔", "Recurring Payments": "✔", "MSF Payments": "✔"}
+{"table": 1, "section": "Embedded Payment Providers", "Payment Gateway": "Adyen", "Manual Capture": "✔", "3D Secure": "✔", "Multicurrency": "✔", "Stored Payment Methods": "✔", "Recurring Payments": "✔", "MSF Payments": "✔"}
+{"table": 1, "section": "Embedded Payment Providers", "Payment Gateway": "Affirm", "Manual Capture": "✔", "3D Secure": "", "Multicurrency": "", "Stored Payment Methods": "", "Recurring Payments": "", "MSF Payments": "✔"}
+{"table": 1, "section": "Embedded Payment Providers", "Payment Gateway": "Afterpay", "Manual Capture": "✔", "3D Secure": "", "Multicurrency": "✔", "Stored Payment Methods": "", "Recurring Payments": "", "MSF Payments": "✔"}
+{"table": 1, "section": "Embedded Payment Providers", "Payment Gateway": "Amazon Pay", "Manual Capture": "✔", "3D Secure": "✔", "Multicurrency": "✔", "Stored Payment Methods": "", "Recurring Payments": "", "MSF Payments": "✔"}
+{"table": 1, "section": "Embedded Payment Providers", "Payment Gateway": "Bankful", "Manual Capture": "", "3D Secure": "", "Multicurrency": "✔", "Stored Payment Methods": "", "Recurring Payments": "", "MSF Payments": "✔"}
+{"table": 1, "section": "Embedded Payment Providers", "Payment Gateway": "Bank of New Zealand", "Manual Capture": "✔", "3D Secure": "✔", "Multicurrency": "", "Stored Payment Methods": "✔", "Recurring Payments": "✔", "MSF Payments": ""}
+{"table": 1, "section": "Embedded Payment Providers", "Payment Gateway": "BigCommerce Payments", "Manual Capture": "✔", "3D Secure": "✔", "Multicurrency": "✔", "Stored Payment Methods": "✔", "Recurring Payments": "✔", "MSF Payments": ""}
+{"table": 1, "section": "Embedded Payment Providers", "Payment Gateway": "BlueSnap Direct", "Manual Capture": "✔", "3D Secure": "✔", "Multicurrency": "✔", "Stored Payment Methods": "✔", "Recurring Payments": "✔", "MSF Payments": "✔"}
+{"table": 1, "section": "Embedded Payment Providers", "Payment Gateway": "Braintree", "Manual Capture": "✔", "3D Secure": "✔", "Multicurrency": "✔", "Stored Payment Methods": "✔", "Recurring Payments": "✔", "MSF Payments": "✔"}
+{"table": 1, "section": "Embedded Payment Providers", "Payment Gateway": "Checkout.com", "Manual Capture": "✔", "3D Secure": "✔", "Multicurrency": "✔", "Stored Payment Methods": "✔", "Recurring Payments": "", "MSF Payments": "✔"}
+{"table": 1, "section": "Embedded Payment Providers", "Payment Gateway": "Clearpay", "Manual Capture": "✔", "3D Secure": "", "Multicurrency": "", "Stored Payment Methods": "", "Recurring Payments": "", "MSF Payments": ""}
+{"table": 1, "section": "Embedded Payment Providers", "Payment Gateway": "Heartland Payment Systems", "Manual Capture": "✔", "3D Secure": "", "Multicurrency": "", "Stored Payment Methods": "", "Recurring Payments": "", "MSF Payments": "✔"}
+{"table": 1, "section": "Embedded Payment Providers", "Payment Gateway": "Klarna Payments", "Manual Capture": "✔", "3D Secure": "", "Multicurrency": "✔", "Stored Payment Methods": "", "Recurring Payments": "", "MSF Payments": "✔"}
+{"table": 1, "section": "Embedded Payment Providers", "Payment Gateway": "PayPal", "Manual Capture": "✔", "3D Secure": "✔", "Multicurrency": "✔", "Stored Payment Methods": "✔", "Recurring Payments": "✔", "MSF Payments": "✔"}
+{"table": 1, "section": "Embedded Payment Providers", "Payment Gateway": "Sezzle", "Manual Capture": "✔", "3D Secure": "", "Multicurrency": "✔", "Stored Payment Methods": "", "Recurring Payments": "", "MSF Payments": "✔"}
+{"table": 1, "section": "Embedded Payment Providers", "Payment Gateway": "Stripe UPE", "Manual Capture": "✔", "3D Secure": "✔", "Multicurrency": "✔", "Stored Payment Methods": "✔", "Recurring Payments": "", "MSF Payments": "✔"}
+{"table": 1, "section": "Embedded Payment Providers", "Payment Gateway": "Stripe OCS", "Manual Capture": "✔", "3D Secure": "✔", "Multicurrency": "✔", "Stored Payment Methods": "✔", "Recurring Payments": "", "MSF Payments": "✔"}
+{"table": 1, "section": "Embedded Payment Providers", "Payment Gateway": "TD Online Mart", "Manual Capture": "✔", "3D Secure": "✔", "Multicurrency": "✔", "Stored Payment Methods": "✔", "Recurring Payments": "✔", "MSF Payments": ""}
+{"table": 1, "section": "Embedded Payment Providers", "Payment Gateway": "Worldpay B2B Payments", "Manual Capture": "✔", "3D Secure": "", "Multicurrency": "", "Stored Payment Methods": "✔", "Recurring Payments": "", "MSF Payments": "✔"}
+{"table": 1, "section": "Embedded Payment Providers", "Payment Gateway": "Worldpay Ecomm", "Manual Capture": "✔", "3D Secure": "", "Multicurrency": "", "Stored Payment Methods": "", "Recurring Payments": "", "MSF Payments": "✔"}
+{"table": 1, "section": "Embedded Payment Providers", "Payment Gateway": "Worldpay Core", "Manual Capture": "✔", "3D Secure": "", "Multicurrency": "", "Stored Payment Methods": "", "Recurring Payments": "", "MSF Payments": "✔"}
+{"table": 1, "section": "Embedded Payment Providers", "Payment Gateway": "Zip", "Manual Capture": "✔", "3D Secure": "", "Multicurrency": "✔", "Stored Payment Methods": "", "Recurring Payments": "", "MSF Payments": "✔"}
+{"table": 2, "section": "APP PAYMENT PROCESSORS", "name": "Acumatica Payments"}
+{"table": 2, "section": "APP PAYMENT PROCESSORS", "name": "Payfabric (Global Payments)"}
+{"table": 2, "section": "APP PAYMENT PROCESSORS", "name": "Bankful"}
+{"table": 2, "section": "APP PAYMENT PROCESSORS", "name": "Sezzle"}
+{"table": 2, "section": "APP PAYMENT PROCESSORS", "name": "Fortis"}
+{"table": 2, "section": "APP PAYMENT PROCESSORS", "name": "Worldpay WPG"}
+{"table": 2, "section": "APP PAYMENT PROCESSORS", "name": "Klarna Checkout"}
+{"table": 3, "section": "Open Payment Providers", "Payment Gateway": "Authorize.net", "Manual Capture": "✔", "3D Secure": "", "Multicurrency": "✔", "Stored Payment Methods": "✔", "Recurring Payments": "✔", "MSF Payments": "✔"}
+{"table": 3, "section": "Open Payment Providers", "Payment Gateway": "Barclaycard Smartpay Advance", "Manual Capture": "✔", "3D Secure": "✔", "Multicurrency": "✔", "Stored Payment Methods": "✔", "Recurring Payments": "✔", "MSF Payments": "✔"}
+{"table": 3, "section": "Open Payment Providers", "Payment Gateway": "BitPay", "Manual Capture": "", "3D Secure": "", "Multicurrency": "✔", "Stored Payment Methods": "", "Recurring Payments": "", "MSF Payments": "✔"}
+{"table": 3, "section": "Open Payment Providers", "Payment Gateway": "Chase Merchant Services", "Manual Capture": "✔", "3D Secure": "", "Multicurrency": "✔", "Stored Payment Methods": "✔", "Recurring Payments": "✔", "MSF Payments": "✔"}
+{"table": 3, "section": "Open Payment Providers", "Payment Gateway": "Clover Payments", "Manual Capture": "", "3D Secure": "", "Multicurrency": "", "Stored Payment Methods": "", "Recurring Payments": "", "MSF Payments": "✔"}
+{"table": 3, "section": "Open Payment Providers", "Payment Gateway": "Commonwealth Bank", "Manual Capture": "✔", "3D Secure": "✔", "Multicurrency": "", "Stored Payment Methods": "✔", "Recurring Payments": "✔", "MSF Payments": ""}
+{"table": 3, "section": "Open Payment Providers", "Payment Gateway": "Cybersource", "Manual Capture": "✔", "3D Secure": "✔", "Multicurrency": "✔", "Stored Payment Methods": "✔", "Recurring Payments": "✔", "MSF Payments": "✔"}
+{"table": 3, "section": "Open Payment Providers", "Payment Gateway": "Electronic Payment Exchange (EPX)", "Manual Capture": "✔", "3D Secure": "", "Multicurrency": "", "Stored Payment Methods": "", "Recurring Payments": "", "MSF Payments": "✔"}
+{"table": 3, "section": "Open Payment Providers", "Payment Gateway": "Eway Rapid", "Manual Capture": "✔", "3D Secure": "", "Multicurrency": "", "Stored Payment Methods": "", "Recurring Payments": "", "MSF Payments": "✔"}
+{"table": 3, "section": "Open Payment Providers", "Payment Gateway": "Mercado Pago", "Manual Capture": "✔", "3D Secure": "", "Multicurrency": "✔", "Stored Payment Methods": "", "Recurring Payments": "", "MSF Payments": "✔"}
+{"table": 3, "section": "Open Payment Providers", "Payment Gateway": "Moneris", "Manual Capture": "✔", "3D Secure": "", "Multicurrency": "", "Stored Payment Methods": "✔", "Recurring Payments": "", "MSF Payments": "✔"}
+{"table": 3, "section": "Open Payment Providers", "Payment Gateway": "MyVirtualMerchant", "Manual Capture": "", "3D Secure": "", "Multicurrency": "", "Stored Payment Methods": "✔", "Recurring Payments": "✔", "MSF Payments": ""}
+{"table": 3, "section": "Open Payment Providers", "Payment Gateway": "Nexi XPay", "Manual Capture": "✔", "3D Secure": "✔", "Multicurrency": "✔", "Stored Payment Methods": "✔", "Recurring Payments": "", "MSF Payments": "✔"}
+{"table": 3, "section": "Open Payment Providers", "Payment Gateway": "NMI", "Manual Capture": "✔", "3D Secure": "", "Multicurrency": "", "Stored Payment Methods": "", "Recurring Payments": "", "MSF Payments": "✔"}
+{"table": 3, "section": "Open Payment Providers", "Payment Gateway": "Opayo by Elavon", "Manual Capture": "✔", "3D Secure": "✔", "Multicurrency": "✔", "Stored Payment Methods": "✔", "Recurring Payments": "", "MSF Payments": "✔"}
+{"table": 3, "section": "Open Payment Providers", "Payment Gateway": "Optty", "Manual Capture": "", "3D Secure": "", "Multicurrency": "✔", "Stored Payment Methods": "", "Recurring Payments": "", "MSF Payments": "✔"}
+{"table": 3, "section": "Open Payment Providers", "Payment Gateway": "QuickBooks Payments", "Manual Capture": "✔", "3D Secure": "", "Multicurrency": "", "Stored Payment Methods": "", "Recurring Payments": "", "MSF Payments": "✔"}
+{"table": 3, "section": "Open Payment Providers", "Payment Gateway": "Serve First", "Manual Capture": "✔", "3D Secure": "", "Multicurrency": "", "Stored Payment Methods": "", "Recurring Payments": "", "MSF Payments": ""}
+{"table": 3, "section": "Open Payment Providers", "Payment Gateway": "Square", "Manual Capture": "✔", "3D Secure": "✔", "Multicurrency": "", "Stored Payment Methods": "✔", "Recurring Payments": "", "MSF Payments": "✔"}
+{"table": 3, "section": "Open Payment Providers", "Payment Gateway": "Tilopay", "Manual Capture": "✔", "3D Secure": "✔", "Multicurrency": "✔", "Stored Payment Methods": "", "Recurring Payments": "✔", "MSF Payments": "✔"}
+{"table": 3, "section": "Open Payment Providers", "Payment Gateway": "USAePay", "Manual Capture": "", "3D Secure": "", "Multicurrency": "", "Stored Payment Methods": "", "Recurring Payments": "", "MSF Payments": "✔"}
+{"table": 3, "section": "Open Payment Providers", "Payment Gateway": "Windcave", "Manual Capture": "✔", "3D Secure": "✔*", "Multicurrency": "✔", "Stored Payment Methods": "", "Recurring Payments": "", "MSF Payments": "✔"}
+{"table": 4, "section": "OFFLINE PAYMENT METHODS", "name": "Bank deposit"}
+{"table": 4, "section": "OFFLINE PAYMENT METHODS", "name": "Money order"}
+{"table": 4, "section": "OFFLINE PAYMENT METHODS", "name": "Cash on delivery"}
+{"table": 4, "section": "OFFLINE PAYMENT METHODS", "name": "Pay in-store"}
+{"table": 4, "section": "OFFLINE PAYMENT METHODS", "name": "Check*"}
