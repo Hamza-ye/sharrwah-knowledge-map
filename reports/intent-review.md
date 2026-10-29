@@ -243,3 +243,22 @@ This is also how domain analysis works: the model is built from representative s
 - what only a later platform shows becomes a capability of its own;
 - the reviewer looks for forced fits and splits them.
 
+
+## 14. Why the platforms differ: a hypothesis to test later
+
+**Your hypothesis.** Shopify leaves many things to apps because it is mature and global: no one market's concerns can live in its core. Salla was built around Saudi Arabia, and its later markets meet Saudi-shaped features.
+
+**Where it holds, and where it doesn't:**
+- **For capabilities tied to one market,** such as a country's e-invoicing, local payment methods or local couriers, it fits. Established practice for software sold in many countries keeps a global core and puts each country's specifics in modules outside it. SAP's country versions, the localization packs of other enterprise systems, and keeping locale-specific logic out of the core are all examples. S-02 shows one Saudi-shaped constraint in Salla: one country per market, because its taxes follow the market's country (D5).
+- **For capabilities tied to no market,** such as product reviews or loyalty, the global explanation doesn't apply. Shopify leaves them to apps, and Salla builds them into its core. There, Shopify's ecosystem business model and a younger platform filling gaps are the likelier readings. The plan's test form calls these causes "business model" and "market pattern". It counts "maturity" only where a platform marks it, as with beta or sunset.
+
+**What it changes now:** nothing.
+- The extent records placements without causes.
+- Its cells keep each statement's scope, so the capabilities tied to a country will show.
+- The anchor of Shopify and Salla keeps both shapes visible.
+
+**What it sets for later,** as engineering's rule when each area's design is decided:
+- **A capability tied to a market** goes outside the core, in that market's module, whoever builds it.
+- **A capability tied to no market** is decided on its value to the product.
+
+Outside the core doesn't mean third-party: Sharrwah can build its own market modules on a global core. That is the shape the intent describes: what fills a slot is that market's setup.
