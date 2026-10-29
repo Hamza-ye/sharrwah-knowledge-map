@@ -460,3 +460,256 @@ Counts come from read-only `python3 -I` scripts over those files. Line numbers a
   - Say that WordPress is the host: its labels go in the WooCommerce cell, marked as WordPress's.
   - Allow several labels per platform.
   - Define "shows an area" as at least one of its concerns, or one entry in one of the platform's own lists.
+
+## Re-inspection of A-assign and B-extent
+
+**What this is:** brief A was replaced by two briefs, written against findings 1 to 21:
+- `briefs/A-assign.md`, part 1: each concern's area, and each area's labels;
+- `briefs/B-extent.md`, part 2: each area's product map.
+
+This section says, for each finding, whether it is resolved, then gives the new problems, above all where part 1's output feeds part 2. It was read at `79ae9c27`, with the same rules as above. "A" and "B" give the two briefs' line numbers at that commit. The governing files are unchanged since `95fd2916`: `git diff` shows nothing for `founder-decisions.tsv`, `PLAN.md`, `STATE.md`, `CLAUDE.md` or `studies/concern-map/`, and the last decision is still dated 28 October.
+
+**Counts:**
+- **Findings 1 to 21:** 7 resolved, 13 partly resolved, 1 not resolved.
+  - Six of the partly resolved still need a fix before either part runs: 4, 5, 7, 11, 14 and 16.
+  - The other seven leave only an optional remainder, or a remainder now carried by a new finding.
+- **New problems:** 13, of which 12 are must fix. N1 to N7 sit where part 1 feeds part 2.
+
+### Findings 1 to 21: resolved or not
+
+| # | Status | Why |
+| --- | --- | --- |
+| 1 | resolved | B lines 27 to 35: placement is read from `where` statements into six defined values, and "Each placement is a reading". `placements.tsv` is on neither read list. |
+| 2 | partly | B lines 22 to 25 state Q1's rule (terms, identifiers or definitions), require both platforms' definitions for a join on role alone, mark it as a reading, and keep a match over an unclear candidate. Two things remain. "These rulings are engineering's" (B line 24) rests on no recorded decision, which is now finding 7. Joins on role alone go only to free-text `notes.md`, and no count is given without them; that part is optional. |
+| 3 | resolved | B line 23 gives every Zid and BigCommerce concern the same test, and `single-platform.tsv` is on neither read list. But part 1's areas now limit which concerns those joins can reach (N4). |
+| 4 | partly | B line 17 sets the lower bound, and line 19 makes permissions and the like evidence. But lines 17 and 18 contradict each other for a matched group whose members differ in grain. Must fix, below. |
+| 5 | partly | (b) is resolved: `own service` includes "its own apps and extensions" (B line 29). (a) isn't: a row that mixes `extension point` and `outside` still has no kind, and the new `+` cells (B line 33) are counted by no rule. Must fix, below. |
+| 6 | partly | `own`, `slot` and `shown` (B line 49) and `depth` (B line 40) answer the finding. `gaps.tsv` is still unread, so a `not shown` cell can't carry its gap's kind; that part is optional. B line 40's wording is a new problem (N8). |
+| 7 | partly | (a) is resolved: both briefs state the task neutrally (A lines 3 to 5; B line 3, "It records what the platforms do"). (b) isn't resolved. (c) is moot, since neither brief cites the founder's slot rule any more. Must fix, below. |
+| 8 | resolved | The seed's questions are left out (A line 9, B line 13). The seed's groupings are still given (A line 9), but A line 34's citation rule would catch an uncited copied label. Optional: say they are leads, not labels. |
+| 9 | partly | Each concern gets one primary area from its `where` statements and own terms (A lines 19 to 21), with `also_in` for the others (A line 24). Per-part files remove the clash between one part's pointers and another's claims. What remains is new: N2, N3 and N12. |
+| 10 | partly | Absence isn't recorded (B line 51), and `list` is described correctly (A line 12). But B line 51's "complete list" has no basis in part 2 (N6). |
+| 11 | partly | The wrong pointer is gone: both briefs read only Q1 and the structures its statements cite (A line 36; B line 11, "at the commit each citation names"). But those commits sit in a file neither brief lists. Must fix, below. |
+| 12 | resolved | A statement is now its concern id, cite id and identifier (A line 34, B line 35). That key is unique on Zid and BigCommerce. On Shopify (58 keys), Salla (64) and WooCommerce (47), a key can sit on two rows under two placements, such as `where` and `boundary`, so a checker can still find the key's `where` row. |
+| 13 | resolved | `decides` is dropped, and `plan_gated` is recorded per cell (B lines 36 to 39). Its rule is a new problem (N9). |
+| 14 | partly | Slot fillers are kept apart (B line 53), and "No market's name shapes a class or slot row" (B line 58). But scope is dropped from the cells. Must fix, below. |
+| 15 | partly | `qualities.tsv` holds values, not capabilities (B line 52). Optional remainder: there's no `not stated`, and the limits Q1 holds outside its concerns can't be reached. Shopify's `maxProductVariants` and `maxProductOptions` carry no concern id, and their reason for being out of scope reads "values per store in notes.md, Unplaced keys". B line 13 excludes that file, and B line 9 reads only "your concerns' entries". |
+| 16 | partly | (a): the `note` columns are now read (A line 14, B line 10), but they don't carry the README's flags, and B line 22 makes the two flagged matches stand. Must fix, below. (b) is resolved by B line 13. |
+| 17 | partly | (a) `reading` per cell (B line 64), but its meaning is now unclear (N10). (b) labels, one row each with their own `cite` (A line 42): resolved. (c) `+` cells and `not shown (complete list: …)`: resolved. (d) and (e): per-part files and the coordinator's merge (A line 38, B line 59), but the merge is unspecified (N1). Optional: the `evidence` field's format, and an order for `capabilities.tsv`'s columns, which are listed across B lines 43 to 49. |
+| 18 | not resolved | Neither brief names a checker or its tests. Optional, as before. |
+| 19 | partly | (a) `plan_gated` (B line 36), though its rule slants (N9). (b) `depth`, per platform rather than per cell (B line 40). (c) `parent` (B line 43): resolved. (d) and (e) are deferred, which is optional. |
+| 20 | resolved | Part 2 is bounded: part 1 assigns the concerns first, reads are limited to Q1 and the structures it cites, permissions are evidence, and the size is about 20 requests per area (B line 69). Optional remainder: part 1's 60 requests (A line 45) fit one or two platforms, not three. Shopify alone has 198 concerns and 495 `where` rows, and Salla 152 and 465. |
+| 21 | resolved | Several labels are allowed (A line 28), WordPress has a rule (A line 29), and `not shown` is defined (A line 30). Optional remainder: A line 27 takes labels from four kinds of list, but A line 30 tests any list. |
+
+### What still needs fixing from findings 1 to 21
+
+**4. One capability per matched group, or one per concern at the finest grain?**
+- **Brief:** B line 17, "A capability is one of Q1's matched groups, or one unmatched concern". B line 18, "Where two platforms cut at different grains, the coarser concern covers several capabilities."
+- **Problem:** For a matched group whose members differ in grain, line 17 gives one capability and line 18 gives several. Two agents following the brief would build different rows.
+- **Evidence:** M-011 is one matched group: SH-C-020, SA-C-020 to SA-C-023, and WC-C-064. Its `granularity` reads "Salla splits products …, options and variants …, categories … and brands …; … Shopify … has no brands concern".
+  - As one capability, Shopify's cell is `core`, and Shopify counts for brands.
+  - As four capabilities, Shopify's cell for brands is `not shown`.
+- **Verdict: must fix.** Say which grain wins. For example: a matched group splits into one capability per concern of its finest platform, and each coarser concern appears in all of them, marked `(part)`.
+
+**5. Rows and cells that no kind or count covers.**
+- **Brief:** B line 33, "two of these joined by `+`". B lines 46 to 49, the kinds and counts.
+- **Problem:**
+  - A row whose shown cells mix `extension point` and `outside`, with no `core` or `own service`, has no kind.
+  - B doesn't say whether a `+` cell such as `core+extension point` counts as `core`, as `extension point` or as both, either for `kind` or for `own` and `slot`.
+- **Evidence:** B's own rules at lines 46 to 49: "any cell is `core` or `own service`", "every shown cell is `extension point`", "every shown cell is `outside`".
+- **Verdict: must fix.** Give the full table. A `+` cell counts toward each of its parts. A row with only `extension point` and `outside` cells gets a kind of its own, such as `mixed`.
+
+**7(b). The step still rests on no recorded decision, and B now hands the founder's unclear list to engineering.**
+- **Brief:** B line 24, "These rulings are engineering's, and the coordinator checks each one."
+- **Problem:** Q1 reserves its unclear candidates for the founder, and no recorded decision moves them. The step itself has no stage in `PLAN.md`.
+- **Evidence:**
+  - Q1 line 127: "Every unclear match … goes on a list for the founder. Neither that pass nor the coordinating session settles them."
+  - 81 of the 84 unclear candidates name the founder in `what_would_settle_it`.
+  - `founder-decisions.tsv`, `PLAN.md` and `STATE.md` are unchanged since `95fd2916`. The last decision is dated 28 October.
+- **Verdict: must fix.** Before either part runs:
+  - record the founder's decision of 29 October, with what it says about the unclear list;
+  - add the stage to `PLAN.md`.
+
+  Until then, B line 24's rulings are proposals for the founder.
+
+**11. The commit to read a structure at is in `citations.tsv`, which neither brief lists.**
+- **Brief:** B line 11, "the structures Q1's statements cite, read at the commit each citation names". A line 36.
+- **Problem:** `statements.tsv` gives the structure but not the commit, and Shopify's citations use two commits. Without `citations.tsv`, an agent reads whatever commit the clone has checked out, which is a later one.
+- **Evidence:**
+  - Shopify's `structure` values never carry a commit (0 of 3,005 rows). For example, `structures/shopify/admin-router` appears without one, while its citation SH-S-5006 is `observed-sh@e49840729:structures/shopify/admin-router/items…`.
+  - Shopify's citations are at `b46731d0` (2,315) and `e49840729` (1,732). The clone's head is `19a5f6435`.
+  - Only Salla's `structure` values carry the commit (2,244 rows, `observed-sa@145f137:…`).
+- **Verdict: must fix.** Add each platform's `citations.tsv` to both read lists, and say: "read a structure at the commit in its citation's `source`, with `git show <commit>:<path>`".
+
+**14. Cells carry no scope.**
+- **Brief:** B line 64, the columns of `capability-cells.tsv`. B line 58.
+- **Problem:**
+  - Brief A's rule, "A capability scoped to one country by a platform keeps that scope in its citation", isn't in B, and the cells have no `scope`. A capability a platform states for one country, plan or store would read as general.
+  - Nothing says that a market's law built into a platform's own core is a scoped `core` cell, not a slot filler.
+- **Evidence:**
+  - Q1 line 74: scope is recorded "as stated: a store, plan, country or role".
+  - Statements with a scope: Shopify 445 of 3,005, Salla 841 of 2,560, Zid 175 of 654, BigCommerce 60 of 473, WooCommerce 379 of 1,499.
+- **Verdict: must fix.**
+  - Add `scope` to `capability-cells.tsv`, from the cited statements' `scope` column.
+  - Say that a market's law or provider in a platform's own core is `core`, with its scope, and goes in `slot-fillers.tsv` only where it fills a slot.
+
+**16(a). "Q1's matches stand" settles the two matches the README put to the founder.**
+- **Brief:** B line 22, "Q1's matches stand". B line 10, the `note` columns.
+- **Problem:** The README's flags aren't in the `note` column, so reading the column doesn't surface them, and B line 22 then makes both matches stand.
+- **Evidence:**
+  - Concern-map `README.md` line 30: "The matching agent flagged M-070 … and M-064 … Both rest on a shared main word."
+  - M-064's note reads only "Basis kind: term. Each is the platform's own chat with customers."
+- **Verdict: must fix.** Name M-064 and M-070 in B as flagged, and give them B line 24's test, both platforms' definitions, before they stand.
+
+### New problems
+
+**N1. The merge between the parts is unspecified.**
+- **Brief:** A lines 38, 41 and 42: part 1 writes `parts/<part>/concern-areas.tsv` and `area-labels.tsv`. B line 7: part 2 reads `studies/class-model/areas.tsv` and `concern-areas.tsv`.
+- **Problem:** The file names differ (`area-labels.tsv` against `areas.tsv`), the merged files' columns are given nowhere, and nothing says how the merge settles:
+  - two parts that put matched concerns in different areas;
+  - new areas a part proposes, which part 2's messages would have to name;
+  - assignments marked `reading: yes`.
+- **Evidence:** the briefs' own lines, as cited.
+- **Verdict: must fix.** Specify the merge before part 1 runs:
+  - the merged files' names and columns;
+  - how a conflict is settled, and by whom;
+  - how a new area is accepted;
+  - a check after the merge: each concern has exactly one primary area, and every area part 2 will be sent exists.
+
+**N2. Part 1 is split by platform, but its rule for matched concerns needs all of them.**
+- **Brief:** A lines 10, 19 and 27, "your part's platforms". A line 25, "Matched concerns … share an area, unless their platforms' own organizations put them apart."
+- **Problem:** An agent with one platform can't see the area another part gave the other members of a match, so it can't apply the rule.
+- **Evidence:** `matches.tsv` joins Shopify, Salla and WooCommerce in 88 groups. In 27 of them, one platform's cell holds several concerns.
+- **Verdict: must fix.** Give Shopify, Salla and WooCommerce to one part, or have the coordinator apply A line 25 at the merge (N1).
+
+**N3. Assigning by "where the platform puts it" scatters matched groups and moves slots out of their subject's area.**
+- **Brief:** A lines 19 and 20, "by where the platform itself puts it: its `where` statements: an admin section or route, an API group, an app category, a help section". A line 25's exception.
+- **Problem:** Where a platform places a concern differs from what the concern is about.
+  - Assigning by placement sends the platform that leaves a capability to apps into APP, while the platforms that build the same capability land in its subject's area.
+  - Part 2 then sets the subject area's `core` cells against `not shown` for the platform that leaves it to apps. That platform's slot becomes a single-platform row in APP.
+  - A line 25's exception allows exactly this split.
+  - Nothing breaks a tie when one concern's `where` rows point to different areas.
+- **Evidence:**
+  - M-065 joins three platforms' product reviews:
+    - SH-C-154 (Shopify), every one of whose `where` rows comes from the app store;
+    - SA-C-030 (Salla);
+    - WC-C-065 (WooCommerce), whose `where` row reads "Products > Reviews", from `src/Internal/Admin/ProductReviews/Reviews.php`.
+  - Zid's ZD-C-086 `where` row reads "Merchant APIs > Products > Product Questions & Answers".
+  - The seed puts Shopify's "Reviews" and Salla's "Reviews & questions" in SUP (`km-areas.tsv` line 20).
+
+  So this one capability could land in APP, CAT and SUP. 14 Shopify concerns are placed only through the app store, among them SH-C-111, -126, -137, -154, -185 and -187. Salla and Zid have 2 each, and BigCommerce 1.
+- **Verdict: must fix.**
+  - Assign by subject: what the concern is about, from its own terms and the section it serves. `where` statements are evidence of the subject, never the area themselves.
+  - APP keeps only the app mechanism: the app store, app billing and the extension frameworks.
+  - A matched group takes one area, with the others in `also_in`.
+  - Give a tie-break, for example the subject of the concern's first `where` row in the platform's admin or API organization.
+
+**N4. Zid's and BigCommerce's joins can happen only inside the area part 1 chose.**
+- **Brief:** B line 7, "the concerns assigned to them, both primary and `also_in`". B line 23.
+- **Problem:** Zid and BigCommerce were never matched, so the area part 1 gives each of their concerns decides which concerns part 2 can join it with. A Zid concern placed in a different area from its counterpart is never compared, and each becomes a capability with one platform. **Reading:** the error would lower `own` and `shown`, and nothing would show it.
+- **Evidence:** Q1 line 116, "stops before matching". `matches.tsv` holds no ZD- or BC- id.
+- **Verdict: must fix.** Either let part 2 search all five platforms' `concerns.tsv` for counterparts, by terms, identifiers or definitions, and record each concern it brings in from another area. Or have the coordinator run one pass across areas for Zid and BigCommerce before part 2.
+
+**N5. A concern under `also_in` has no owner in part 2.**
+- **Brief:** B line 7.
+- **Problem:** Each part 2 agent receives its areas' primary and `also_in` concerns, but nothing says whether an `also_in` concern builds a capability in its second area. The same concern can then become a capability in two areas, counted twice in `own`, `slot` and `shown`, or in neither.
+- **Evidence:** SH-C-037, "Catalogs (market and B2B product and price catalogs)", fits CAT, B2B and MKS.
+- **Verdict: must fix.**
+  - The part for the concern's primary area owns its capability.
+  - A part for a second area refers to that capability by `cap_id`, or builds a separate capability from a part of the concern, marked `(part)`.
+  - The merge checks that no concern sits in two capabilities without that mark.
+
+**N6. What part 1 reads about lists never reaches part 2.**
+- **Brief:**
+  - A line 15: each platform's `notes.md`, "only for where each of its lists stops";
+  - B line 13, which excludes `notes*.md`;
+  - B line 51: `not shown (complete list: …)`.
+- **Problem:** Part 1 reads where each list stops, but neither of its outputs records it. Part 2 is asked to name complete lists, and can't read the files that say where they stop.
+- **Evidence:** all five `notes.md` say where their inventory stops. Shopify, Salla, Zid and WooCommerce have a section "Where the inventory stops", and BigCommerce has a paragraph so headed in "Lists used and their sizes" (line 35).
+- **Verdict: must fix.** Have part 1 write `lists.tsv` for part 2 to read, with the platform, the list, whether it is complete (`yes`, `no` or `not stated`), where it stops, and the citation. Or drop B line 51's clause.
+
+**N7. `not shown` mixes "no concern" with "a concern with no `where` statement".**
+- **Brief:** B line 32, "`not shown`: Q1 holds no statement on it". B line 49, `shown`.
+- **Problem:** A platform that has the concern but no `where` row for it shows the capability. Yet its placement can only be `not shown`, and `shown` counts it as not showing.
+- **Evidence:** concerns with no `where` row: Shopify 11, Salla 8, WooCommerce 10, Zid 1, BigCommerce 1.
+- **Verdict: must fix.** Define `not shown` as "no concern of the platform in the capability". A concern without a `where` row gets `where not stated`, and counts as shown.
+
+**N8. "So `not shown` on Zid or BigCommerce isn't absence" implies that on the other three it is.**
+- **Brief:** B line 40.
+- **Problem:** The sentence invites reading `not shown` on Shopify, Salla or WooCommerce as absence. That contradicts Q1's rule 6 (Q1 line 89) and B's own line 51. Salla is marked `full`, though most of its gaps are pages not read.
+- **Evidence:** 206 of Salla's 230 gaps are `page not read`.
+- **Verdict: must fix.** Write: "`not shown` is never absence, on any platform. `depth` says how much of the platform Q1 read." Consider giving each platform's count of gaps by kind beside its depth.
+
+**N9. `plan_gated: yes` fires when a statement names a plan or entitlement, not when the plan gates the capability.**
+- **Brief:** B lines 36 to 39.
+- **Problem:** Shopify's admin router names an entitlement for most pages, including features every plan has. So `yes` fires where `no` also applies, and B gives no precedence between them. **Reading:** Shopify would read as plan-gated far more often than the platforms whose plan tables list only what differs. WooCommerce has no plans, so it can only be `not shown`.
+- **Evidence:**
+  - On 43 Shopify concerns, a `decides` row names an entitlement.
+  - SH-C-020, products: `"eligibility":{"permissions":["PRODUCTS"],"entitlements":["products"]}`, and `entitlements.products` is `true`, scoped to recording stores including a trial store (`2jiwxs-gr (trial); capture-adv…`).
+  - `measurements-2026-10-11.md` §2: "WooCommerce. No plans".
+- **Verdict: must fix.**
+  - `yes` only where a statement shows a value that differs between plans, or a plan without the capability.
+  - `no` where statements show it on every plan.
+  - `n/a` for a platform with no plans.
+  - `partly` where only part of the capability is gated. For example, Shopify's first run recorded "custom user groups are a Plus row" for SH-C-010.
+
+**N10. The `reading` column has no meaning left.**
+- **Brief:** B line 35, "Each placement is a reading". B lines 57 and 64.
+- **Problem:** Every placement is a reading, so `reading` would be `yes` on every cell, or some agents would use it only for joins on role alone.
+- **Evidence:** the brief's own lines.
+- **Verdict: must fix.** Say that `reading` marks the join: `no` for a Q1 match or a join on terms, identifiers or definitions, and `yes` for a join on role alone. The placement is always a reading.
+
+**N11. No column ties concerns to capabilities, and part 2 has no coverage rule.**
+- **Brief:** B lines 43 and 64. B line 74, "the concerns not placed".
+- **Problem:** Concern ids appear only inside the free-form `evidence` field, and nothing requires every concern assigned to a part's areas to land in a capability. Coverage can't be checked without parsing prose.
+- **Evidence:** the brief's own lines.
+- **Verdict: must fix.**
+  - Add `concern_ids` to `capability-cells.tsv`.
+  - Require every primary concern of a part's areas to be in at least one capability, or listed in `notes.md` as not placed.
+  - Check coverage across the merged parts.
+
+**N12. The seed's areas beyond the references can absorb concerns, and drop them from the extent.**
+- **Brief:** A line 19, "one area from the seed". A line 35, "No market's facts shape an area".
+- **Problem:** The seed's 41 areas include WLD ("World and market context"), ENG, INT and MTH, none of which is an area of the platforms. A concern that no commerce area names could be given WLD, and so could a market's law built into a regional platform's core. If no part 2 message names WLD, those concerns fall out of the extent.
+- **Evidence:**
+  - `km-areas.tsv` lines 39 to 42.
+  - M-001 joins the contracting entity and governing law: SH-C-002, SA-C-230, WC-C-023 and WC-C-026.
+- **Verdict: must fix.** Allow areas from domains A to G only. A concern that fits none of them gets a proposed new area.
+
+**N13. `area-labels.tsv` has no `reading` column.**
+- **Brief:** A lines 34 and 42.
+- **Problem:** Placing a platform's label under a seed area is a reading, which A line 34 asks to be marked, but the file has no column for it.
+- **Verdict: optional.** Add `reading`.
+
+## The coordinator's disposition (29 October 2026)
+
+Two inspections found 39 problems a run would have hit. Most of the new ones came from the rules added to fix the old ones. The worst came from splitting the work into two parts:
+- areas assigned per platform before the platforms were joined (N2 to N5);
+- a merge between the parts that was never specified (N1).
+
+That is the founder's point about process machinery, seen in this brief. So the step changes shape rather than gaining more rules.
+
+**One brief, one domain per part, all five platforms at once.**
+- Each part reads all 652 concerns, about 22,000 tokens, and takes its domain's.
+- Joining and choosing the area happen together, so matched concerns can't be scattered (N2 to N5), and Zid and BigCommerce are joined where the others are (finding 3).
+- The coordinator merges the parts with a check that each concern is taken exactly once (N1, N5, N11). Areas beyond the references take no capabilities (N12).
+
+**The rules kept are the ones that tie claims to evidence:**
+- **Words and citations:** the platform's own words, and each claim cited by concern id, cite id and identifier (finding 12).
+- **Readings:** each one marked (N10).
+- **Scope:** each statement's scope kept (finding 14).
+- **Absence:** "Q1 holds nothing" never means absence (findings 10, N7 and N8).
+- **Commits:** sources are read at the commits in `citations.tsv` (finding 11).
+
+**Left to the part's judgment, as readings explained in its notes:**
+- the grain of capabilities (finding 4);
+- joins on role (finding 2);
+- the area where platforms differ (N3).
+
+A dry run on one domain shows how the judgments come out. Its output is reviewed against the evidence by an agent that made none of it. The conventions are codified from that, with a checker, before the other domains run (finding 18).
+
+**Answered elsewhere:**
+- **The kind and the counts** are computed by the coordinator from the cells after the merge, by one rule applied to all (findings 5 and 6).
+- **Plan gating** waits for each area's detail, so the extent doesn't claim it from a named entitlement (N9).
+- **The matches the concern map flagged for the founder,** M-064 and M-070, and Q1's unclear list, become engineering's under the founder's intent, once it is recorded (finding 16a; 7b). Each join on role is listed for the coordinator to check.
+- **The founder's decision and the plan's stage** come first, on the founder's go (finding 7). The dry run doesn't start before them.
