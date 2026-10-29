@@ -121,3 +121,7 @@ The fourth pass (`register.tsv` at fe86177f) reworded S02-D9's options and chang
   - (c), the area named in a currency record, is `yes` for the areas and the notes each accepts, and `unknown` for placing buyers, as (b).
 - **S02-D8 (b)'s need** now names the area of a location the seller fulfils from, beside the seller's address. Its options are otherwise unchanged.
 - **S02-D7.** Its rows now point to S02-D9 (c), not (b), for the fact that a market for an area inherits its parent's currency.
+
+## After the review's last check
+
+Optional finding 24: S02-D8 (c)'s need (line 44) now holds the seller's area as a dated field of its own, beside the business record's address, as the register does, instead of reading it from the address. Its `yes` stands. The check still passes, with 0 problems and 0 warnings.

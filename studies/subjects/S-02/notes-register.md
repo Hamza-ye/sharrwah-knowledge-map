@@ -272,3 +272,12 @@ No other row changed. S02-D9's options keep their letters, but (b) now means wha
 - `check_register.py`: 803 citations checked, 0 problems, including every `designs.tsv` locator cited.
 - A scan of every row's question, recommendation, closes, trade-off and cost found no market's name.
 - `decisions.md` is 3,688 words over 180 lines, with eleven answer lines: one per decision, and three for S02-D7's parts. That is about six pages: the sources weighed in S02-D8 and S02-D9, and S02-D7's three answer lines, added about 300 words, and further cuts would drop options, sources or costs.
+
+## Fifth pass, 29 October
+
+This pass made the review's two optional wording fixes, from "Last check". I first checked that the three files were unchanged since fe86177f; they were.
+
+- **#23, S02-D9:** "ISO 4217's lists, one code per currency" is now marked as a reading of the maintenance agency's page, in the register and on the page, since the quoted SIX page doesn't say it. The fourth pass's notes above list it among what the sources show; this corrects that. What the sources do show is that Unicode, Java and Stripe identify a currency by its code alone.
+- **#24, S02-D8:** the question now holds the area "as a dated field of the business record", not "read from the business record's address". The page's question says the same, matching the recommendation.
+
+Rows changed: S02-D8 (question) and S02-D9 (recommendation). No other row changed.

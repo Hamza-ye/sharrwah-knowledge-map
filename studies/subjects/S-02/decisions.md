@@ -136,7 +136,7 @@ The Yemen row found these needs, written without the market's name. Each was che
 
 **What the platforms do:** for payment services, they count an area only where it has a country code of its own. For tax, Shopify and WooCommerce tie a seller's rules to a province or a state. Shopify also ties one feature to where the seller's fulfilment locations are. None ties payment services, the currency or the rate to such an area, or runs a move's checks when it changes.
 
-**Question:** Should the rules that depend on where the seller is, payment services and currency among them, be able to use an area within a country beside the country, with a change of such an area running the checks of a move?
+**Question:** Should the rules that depend on where the seller is, payment services and currency among them, be able to use an area within a country, held as a dated field of the business record, beside the country, with a change of such an area running the checks of a move?
 
 **Options:** (a) don't provide for it: countries only, as the platforms do for payment services; (b) areas for some rules, as they do for tax; (c) any rule may use the country or an area within it, and a change of an area a rule uses runs that rule's checks.
 
@@ -152,7 +152,7 @@ The Yemen row found these needs, written without the market's name. Each was che
 
 **The need** (`yemen-row.tsv`, line 35): one currency code can cover two currency areas of one country, with different notes and exchange rates. Under D7, D4 and D5, two markets for the two areas can already sell at two rates under the one code, and each order keeps its market and rate. What a currency held by its code alone can't do is tell the areas apart in prices, stored amounts and reports, except through the market: totals by currency mix them.
 
-**What the platforms and designs show:** Salla, Zid and WooCommerce work from one rate per currency. Shopify holds a rate per market, but its market for an area within a country takes its parent's currency (an early-access feature). The standards and platforms read identify a currency by its code alone: Unicode, Java's money type, Stripe's payments and the ISO 4217 lists. One ledger design, TigerBeetle, holds each amount's currency as a record the application defines.
+**What the platforms and designs show:** Salla, Zid and WooCommerce work from one rate per currency. Shopify holds a rate per market, but its market for an area within a country takes its parent's currency (an early-access feature). The standards and platforms read identify a currency by its code alone: Unicode, Java's money type and Stripe's payments. The ISO 4217 lists read the same way (engineering's reading). One ledger design, TigerBeetle, holds each amount's currency as a record the application defines.
 
 **Question:** Should a currency be able to name a currency area within its code, so that prices, stored amounts and reports tell two areas sharing one code apart by currency, not only by market?
 
@@ -161,7 +161,7 @@ The Yemen row found these needs, written without the market's name. Each was che
 - **(b) What D7 already gives:** a market per area with its own rate, the areas told apart only by market.
 - **(c) Name the area in the currency itself:** a currency record (a code, and an area where one is named) that prices, amounts and reports refer to, mapped to the bare code where a provider takes only the code.
 
-**Recommendation (engineering's), weighed against the designs read:** (b) now, with room kept for (c). Amounts refer to a currency record, one per code at launch, so naming an area later is a new record; that choice is S-09's. **Where the sources cut against (c):** every standard and platform read identifies a currency by its code alone, so an area would have to map back to the bare code at every provider. They support the room's form: TigerBeetle defines its own currency numbers, and keeps a changed unit as a new record. The need comes from the Yemen row alone.
+**Recommendation (engineering's), weighed against the designs read:** (b) now, with room kept for (c). Amounts refer to a currency record, one per code at launch, so naming an area later is a new record; that choice is S-09's. **Where the sources cut against (c):** Unicode, Java and Stripe identify a currency by its code alone, so an area would have to map back to the bare code at every provider. They support the room's form: TigerBeetle defines its own currency numbers, and keeps a changed unit as a new record. The need comes from the Yemen row alone.
 
 **What it rules out:** nothing a platform or a design shows; (c) stays reachable through the currency record.
 
