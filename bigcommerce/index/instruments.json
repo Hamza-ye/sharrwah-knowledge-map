@@ -1,0 +1,39 @@
+{
+  "bigcommerce": {
+    "account": {
+      "email": "7amza.it+bc-na@gmail.com",
+      "password": ".env BIGCOMMERCE_ACCOUNT_PASSWORD (the founder's choice when he signed up by hand)",
+      "name": "Test Capture",
+      "sign_in": "login.bigcommerce.com: email, password, then 2-Step Verification by a code emailed to the account on a new device (run 20261029T012148Z-inbox-bc-device-code)",
+      "billing_contact": "made by BigCommerce with the account: Country Oman, State Masqat, Timezone (GMT-06:00) Central Time (US & Canada); this capture added a public address in Muscat and the founder's own mobile, then moved it through 15 places and back to Muscat (run 20261029T015915Z-plan-upgrade-en)",
+      "run": "20261029T011432Z-trial-signup-ye-hand-en",
+      "date": "2026-10-29"
+    },
+    "store": {
+      "hash": "w5pamplexj",
+      "id": 1003524922,
+      "name": "Capture Test Store NA",
+      "control_panel": "https://store-w5pamplexj.mybigcommerce.com/manage/dashboard",
+      "storefront": "https://capture-test-store-na.mybigcommerce.com (prelaunch)",
+      "plan": "Free Trial, \"Your trial will end in 14 days.\" on 2026-10-29 (plan_sku STORE-TRIAL-15DAY in the sign-up's body)",
+      "hosting_region": "NA (North America), chosen on the sign-up form",
+      "default_country": "Oman as made (GET v3/settings/store/locale store_country, run 20261029T012951Z-store-settings-en step 4); saved as United States, Oman, United Kingdom and Saudi Arabia in that run, and back to Oman in run 20261029T025746Z-store-country-restore-en",
+      "default_currency": "OMR (Rial Omani)",
+      "units": "KGS / Centimeters",
+      "date_and_timezone": "jS M Y, time zone 0 (Western Europe Time, London, Lisbon, Casablanca (GMT))",
+      "shipping_zone": "one zone named Oman, made with the store; no shipping origin address",
+      "online_payments": "disabled on the trial: \"Please switch to a paid plan to activate online payments.\"; test card payments only (Test Payment Provider (OMR))",
+      "run": "20261029T012951Z-store-settings-en",
+      "date": "2026-10-29"
+    },
+    "sign_up_network": {
+      "through_vpn": "138.199.31.155, GB, LHR (runs 20261029T004315Z-trial-signup-en to 20261029T005751Z-trial-signup-na-hand-en): create-store answered 427 and 422 {\"pass\":false}",
+      "through_yemen": "176.123.23.62, YE, MCT (run 20261029T011432Z-trial-signup-ye-hand-en): the store was made",
+      "note": "on this machine BigCommerce's domains went through a VPN until the founder excluded them (2026-10-29); other domains go through the Yemeni network"
+    },
+    "browser": {
+      "profile": "capture-profile-bigcommerce (git-ignored)",
+      "cdp_port": 9250
+    }
+  }
+}

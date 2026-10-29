@@ -13,13 +13,37 @@ platform, with its route, is in `<platform>/GAPS.md`; what is unusual about a ru
 - Browsers: `capture-profile` on port 9230 (the demo), `capture-profile-signup` on port 9240 (the partner account and
   the development store). Ports 9231 and above, other than 9240, are observed-sa's.
 
+## Status (2026-10-29)
+
+- BigCommerce: a trial store of our own (`bigcommerce/README.md`). The six questions are answered as far as a trial
+  store and BigCommerce's own terms and Help Center go; what needs a paid plan (BigCommerce Payments' onboarding and
+  KYC, a second storefront, an invoice) is in `bigcommerce/GAPS.md`.
+- WooCommerce: a test store of our own on this machine (`woocommerce/README.md`): where it holds its country, what a
+  country change does with orders and tax rates, the set-up's and the Payments page's checks of the country, the code.
+  WooPayments' account, its verification and a country change with an account wait for the WordPress.com connection,
+  which WordPress.com answered with a human check (`woocommerce/GAPS.md`).
+- Browsers: port 9250 BigCommerce (`capture-profile-bigcommerce`), 9251 WooCommerce (`capture-profile-woocommerce`),
+  9222 the capture inbox (observed-sh's profile). The WooCommerce store's containers (`woocommerce-capture`) and its
+  tunnel run on this machine; the tunnel's address is `SITE_URL` in `.env`.
+
 ## Next
 
 1. Zid: the development store's storefront, page by page (theme, cookie banner, language and country control,
    footer), and the routes that take an id, item by item.
 2. Zid: the dashboard's API calls as a structure, read from `assets/api-resources-<hash>.js` with a JavaScript parser.
 3. Zid: the new Partners Dashboard (`partners.zid.sa`) and the older merchant dashboard (`web.zid.sa`).
-4. BigCommerce, WooCommerce: when the founder says.
+4. BigCommerce and WooCommerce: the founder's go of 2026-10-29, ten questions first (each can change the knowledge
+   map's S-02 analysis); each platform is pushed when done, with the knowledge map's branch.
+   - BigCommerce, on a trial store: (1) the documents or checks BigCommerce Payments' KYC asks for, and whether they
+     differ by the store's country; (2) whether anything checks the store's country (Store profile and Locale, the
+     sign-up country, the hosting region); (3) the taxes BigCommerce adds to its own fees, and what decides them;
+     (4) whether a new store's units, date format and time zone follow its default country; (5) whether a storefront
+     or channel can sell through an entity other than the merchant, or a merchant of record; (6) what sets the
+     store's tax obligations by its country (the automatic tax settings).
+   - WooCommerce, on a test store with WooPayments in test mode: (1) where the store's country and WooPayments'
+     account country are held; (2) what changing the store's Country / State does once there are orders, tax rates
+     or a WooPayments account; (3) whether any of those countries is checked beyond the form; (4) the documents
+     WooPayments' verification asks for, and whether they follow the country.
 
 ## Starting new work
 

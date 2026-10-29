@@ -13,6 +13,8 @@ policies, a permission list), that organization is held in the platform's own sh
 | Folder | Platform | Start at |
 | --- | --- | --- |
 | [zid/](zid/) | Zid (zid.sa): its merchant dashboard, seen on the demo store Zid opens to every visitor | [zid/README.md](zid/README.md) |
+| [bigcommerce/](bigcommerce/) | BigCommerce (bigcommerce.com): a free trial store of our own, its sign-up, settings, plans and Help Center | [bigcommerce/README.md](bigcommerce/README.md) |
+| [woocommerce/](woocommerce/) | WooCommerce with WooPayments: a test store of our own on this machine, its set-up, settings, database and code | [woocommerce/README.md](woocommerce/README.md) |
 
 ## Layout
 

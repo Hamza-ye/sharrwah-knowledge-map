@@ -55,3 +55,32 @@ Dated record of the work: what was decided, what was measured.
   three sweeps at once (one in the profile's window, two in fresh-context windows), run
   20261028T144855Z-dashboard-routes-en lost its step 18 screenshot to the 30-second limit; the sweeps were closed after
   their current step (30 routes held) and the routes are taken one run at a time.
+
+## 2026-10-29
+
+- The founder's go for BigCommerce and WooCommerce, ten questions first (`docs/PLAN.md`, Next 4); each platform is
+  pushed when done, with the knowledge map's branch. The capture tools now keep the IP a platform's edge reports whole
+  (the founder, 2026-10-28: no masking in any repository); `capture/jstep.sh` drives a live journey in one command and
+  `RUN_ADOPT_PAGE` lets a run take over a tab a person left (a ticked CAPTCHA).
+- BigCommerce's trial sign-up asks no country, only where the store is hosted (North America, the default; Europe;
+  Asia-Pacific). Through the VPN this machine sends BigCommerce's domains through (seen from GB), `create-store`
+  answered 427 and then 422 `{"pass":false}`, for a scripted form after the founder's reCAPTCHA tick and for the
+  founder's own hand-typed form, with two email addresses; the page said "An error has occurred, please contact
+  support." With BigCommerce sent through the Yemeni network (seen from YE, Cloudflare's Muscat edge) the founder's
+  hand-typed form made the store. Its "Default country" (Localization, `store_country`) came out as Oman, its currency
+  OMR, a shipping zone named Oman; units KGS/Centimeters and date "24th Jul 2020" are what "Set standard formats for
+  Oman" gives (the same for the UK, Saudi Arabia, Yemen and Japan; the US and Germany differ), and the time zone is
+  London (GMT), which no country's button changed except Germany's. The default country saves to any of 245 countries
+  with no check and changes neither currency nor formats. A trial store has online payments off ("Please switch to a
+  paid plan").
+- BigCommerce adds tax to its own plan fee by the billing contact's address: on the Core annual checkout ($348.00),
+  $34.80 Sydney, $69.60 London, $66.12 Berlin, $22.96 Austin, $30.89 New York, $36.71 Seattle, and $0.00 Los Angeles,
+  Toronto, Tokyo, Singapore, New Delhi, Riyadh, Dubai, Sana'a and Muscat. Its terms name the contracting entity by
+  the merchant's country of residence (US, UK, EU, Australia, any other) and state that all fees exclude taxes, which
+  the merchant pays. Its invoice article: a payment fails with "MAX 7" when the device's IP location is too far from
+  the billing address, a VPN included.
+- BigCommerce Payments (powered by PayPal) is for paid-plan stores located in the UK or the US with a UK or US PayPal
+  Business account; its KYC status appears in the account's Actions. Multi-storefront: a storefront's store profile
+  (name, address, email, phone), default country, language and formats can be its own, and one payment provider can
+  be set up with several merchant accounts assigned per channel; more storefronts need a paid plan. Automatic tax
+  applies where the merchant targets a provider by country and subdivision, Basic Tax elsewhere.
