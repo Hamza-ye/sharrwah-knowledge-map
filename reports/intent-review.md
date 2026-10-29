@@ -110,7 +110,7 @@ So item 2's step is smaller than building a model from scratch: join Q1 across t
 | 0 | You settle the text, with section 5's lines or without them | this page | — |
 | 1 | Record it verbatim. Fold it into `PLAN.md`: section 1 (aim and safe shore), section 3 (who decides), section 4 (a stage for the model's extent before architecture, with subjects as the variation analysis), section 5 (G3 holds only your list, and G4 is redefined), section 6 (the narrowing test), and section 11 (what each change removes or weakens). Then an independent reading of the change | `founder-decisions.tsv`, `PLAN.md`, `CLAUDE.md`, `STATE.md` | the coordinator, plus about 10 million |
 | 2 | S-02's register re-statused under the intent, and E5 ruled | `studies/subjects/S-02/` | about 5 million |
-| 3 | The class's model, its extent. One domain per part, all five platforms at once, from Q1's evidence (`studies/class-model/briefs/B-extent.md`, inspected twice). A dry run on one domain comes first, reviewed on its output. Then the conventions and a checker, the other domains, and an independent review | `studies/class-model/` | 170 to 240 million, budget 250 |
+| 3 | The class's model, its extent, in two passes (`studies/class-model/briefs/B-extent.md`). The anchor: Shopify and Salla, one domain per part, grouped as they group things. The mapping: WooCommerce, then Zid, then BigCommerce, each mapped onto the anchor and adding what it alone shows. A dry run first: the anchor on catalogue and inventory, then WooCommerce mapped onto it, reviewed on its output. Then the conventions and a checker, the rest, and an independent review | `studies/class-model/` | 170 to 240 million, budget 250 |
 | 4 | Architecture and the model's detail, area by area, beside the subjects, with spikes where the model raises a question | per area | each area sized at its start |
 
 **When:** step 1 the day you settle the text; step 2 the same day; step 3 over a day to a day and a half, then step 4. I'd run steps 2 and 3 from a fresh coordinating session.
@@ -225,7 +225,18 @@ Each change goes in its section, with a dated line in section 11 saying what it 
 4. **Re-status S-02's register:** the nine decisions become engineering's rulings, listed for your veto, with E5 ruled. [`reports/S-02.md`](S-02.md) is marked replaced by this page.
 5. **Commit and push,** and update PR #8.
 
-**Then a fresh coordinating session** runs the class's model: the dry run on one domain (catalogue and inventory), the review of its output, then the rest. It starts from `CLAUDE.md`, `PLAN.md`, `STATE.md` and `founder-decisions.tsv`, as the reset's cold-start test showed it can.
+**Then I open a fresh coordinating session,** and you follow it there (your answer). It runs the class's model: the dry run, the review of its output, then the rest. It starts from `CLAUDE.md`, `PLAN.md`, `STATE.md` and `founder-decisions.tsv`, as the reset's cold-start test showed it can. This session stops once it has handed over.
 
-**The one question for you:** do you open the fresh session yourself, or do I start it and you follow it there?
+## 13. Two platforms first
+
+You asked whether the model should start from two platforms rather than all five. It should. The two passes now in the brief follow from the evidence:
+- **The coherent structure** in the Knowledge Map came from Shopify's and Salla's own groupings.
+- **Q1's force-fits** came from reconciling several vocabularies at once.
+- **Depth is uneven.** Shopify and Salla are read in full; Zid and BigCommerce only at declaration level, and Q1 never matched them.
+- **Your rule of 24 October** puts Shopify and Salla first.
+
+This is also how domain analysis works: the model is built from representative systems, then checked and extended against others. The guard against the anchor pulling too hard:
+- every concern of every platform lands somewhere;
+- what only a later platform shows becomes a capability of its own;
+- the reviewer looks for forced fits and splits them.
 
