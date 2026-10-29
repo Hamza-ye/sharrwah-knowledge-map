@@ -225,3 +225,50 @@ No other row changed.
 - `register_items.py`: 142 founder items; 0 unanswered, 0 answered twice, 0 names unknown.
 - `check_register.py`: 790 citations checked, 0 problems.
 - A scan of every row's question, recommendation, closes, trade-off and cost found no market's name. S02-D8 and S02-D9 say where their need comes from without naming it: "the product gap this row's evidence cites". The page names the Yemen row as their source, as the coordinator asked.
+
+## Fourth pass, 29 October
+
+This pass answered the review's re-check (`review.md`, "Re-check after the fixes", at 54f2d448), and read the designs in `designs.tsv` (at 99d8e60b) without their note column. I first checked that the three files were unchanged since 47847720; they were.
+
+### The changes
+
+1. **#20, S02-D9.** Under S02-D7, S02-E1, S02-D4 and S02-D5, two markets for areas of one country already sell at two rates under one code. What S02-D9 adds is the area in the currency itself, so that prices, stored amounts and reports can tell the areas apart by currency. I rewrote its question, options, recommendation and cost to say that:
+   - (a) is one rate per code;
+   - (b) is what S02-D7 gives;
+   - (c) names the area.
+
+   S02-M6 stays reconciled: S-09 decides how money records identify a currency.
+2. **#21, S02-D8 and S02-D9 weighed against `designs.tsv`.** Each row I used is cited in the row's `evidence` by source and locator, and the claim that no outside source was read is gone. The sources change both recommendations, from (c) as room kept to "(b) now, with room kept for (c)".
+   - **S02-D8.**
+     - Stripe keys a dated tax registration on a state (003:255-259), which supports (b).
+     - Subdivision codes are added, deprecated, aliased and reused (Unicode TR35, 001:1362, 1364). So the area is held as a stable identifier mapped to the published code.
+     - Levels below the country differ by country (OpenStreetMap, 004:46). So the level is named per country.
+     - A postal address's area is optional and at the postal level (Google's PostalAddress, 002:83-89). So the area isn't only read from the address.
+     - Fowler's Temporal Property supports the dated area (005:21).
+     - **Where they cut against (c):** no design keys payment services or currency on an area. Unicode keys a currency default on one only rarely (001:1091). Fowler finds dating a property later not hard in code (005:37), so keeping the dated area now rests on past records alone.
+   - **S02-D9.**
+     - The standards and platforms read identify a currency by its code alone: Unicode TR35 (001:1559), Java's Currency (008:36), Stripe's PaymentIntent (009:249) and ISO 4217's lists (006:86, 122). That cuts against building (c) now, and means any area would map back to a bare code at a provider's boundary.
+     - TigerBeetle holds each amount's currency as an application-defined number, and makes a changed unit a new record (010:30, 113). That supports the room: amounts that refer to a currency record, which is S-09's decision.
+     - Fowler's Money (007:11) supports a currency on every amount, which all the options share.
+3. **#22, S02-D7 on the page:** only Salla, Zid and WooCommerce are named as working from the currency's rate. BigCommerce shows none.
+4. **#16, S02-D7:** the page's answer line now takes its three parts apart, each with its cost: two amounts on every record (a redesign), where the rate is held (one module), and which markets carry their own currency (a setting). The register's question names the three parts.
+5. **#19, S02-E4:** the store's own currency may change, as the seller's setting. Records made before a change keep their amounts in the currency of their day, with the market and rate used, and aren't converted.
+
+### Rows changed in the fourth pass, against 47847720
+
+| Row | What changed |
+| --- | --- |
+| S02-D7 | question |
+| S02-D8 | recommendation, trade_off, cost_later, evidence |
+| S02-D9 | question, alternatives, recommendation, trade_off, closes, depends_on, evidence |
+| S02-M6 | recommendation |
+| S02-E4 | recommendation |
+
+No other row changed. S02-D9's options keep their letters, but (b) now means what S02-D7 gives. The Yemen row's and the walk's lines for S02-D9 need re-reading against it.
+
+### Checks after the fourth pass
+
+- `register_items.py`: 142 founder items; 0 unanswered, 0 answered twice, 0 names unknown.
+- `check_register.py`: 803 citations checked, 0 problems, including every `designs.tsv` locator cited.
+- A scan of every row's question, recommendation, closes, trade-off and cost found no market's name.
+- `decisions.md` is 3,688 words over 180 lines, with eleven answer lines: one per decision, and three for S02-D7's parts. That is about six pages: the sources weighed in S02-D8 and S02-D9, and S02-D7's three answer lines, added about 300 words, and further cuts would drop options, sources or costs.

@@ -2,7 +2,7 @@
 
 **What this page is:** the draft of S-02's register (`register.tsv`), for you. Phase C left 142 items for you: 85 are asked here as seven questions (D1 to D7), and 57 go to the subjects that decide them. D8 and D9 are needs the Yemen row found that no platform meets. Each decision gives what the platforms do, engineering's recommendation and why, what it rules out, and what changing course later costs.
 
-**Nothing here is decided.** Each decision ends with an answer line: accept the recommendation, pick another option, or ask. The recommendations for D1 to D7 come from the five references alone, with no market's facts. D8 and D9 go beyond the references, and say where.
+**Nothing here is decided.** Each decision ends with an answer line: accept the recommendation, pick another option, or ask. The recommendations for D1 to D7 come from the five references alone, with no market's facts. D8 and D9 go beyond the references, say where, and weigh the established designs read for them.
 
 **Terms:**
 - **Market:** a group of buyers a store sells to and sets up in its own way, such as a country or a region.
@@ -15,7 +15,7 @@
 
 **Question:** Is a store's country the country of the business behind it, held on a business record so that a store can later trade through more than one business? Or is it a single field of the store?
 
-**What the platforms do:** all five hold a country and an address that the seller sets. Shopify holds the country on a business entity with its own address. A store can have several, each serving chosen markets, and Shopify also draws on the billing address and the currency. Four platforms hold a location set on a map or by hand. Salla also has a "seat" setting, and BigCommerce a country per storefront.
+**What the platforms do:** all five hold a country and an address that the seller sets. Shopify holds the country on a business entity with its own address, several per store, and also draws on the billing address and the currency. Four platforms hold a location set on a map or by hand; Salla also has a "seat", and BigCommerce a country per storefront.
 
 **Recommendation (engineering's):** a business record holds the country, one per store at launch, with room for more. The address, location, billing address and currency never set the country. The seat, where the store is based, is the business record's address. A market may show buyers another country or address, for display only. **Why:** one business per store is the simple case of several, so it costs little now.
 
@@ -29,7 +29,7 @@
 
 **Question:** When a seller moves to another country, does the store take a new business record for the new country, keeping its products, customers and orders? Or does its country change in place?
 
-**What the platforms do:** BigCommerce lets the seller change its default country at any time. Shopify allows a change only once every financial service is off and the addresses match the business's country. For a person trading alone, a change creates a new business record. WooPayments' account country never changes, and Shopify's support changes the country on request for some stores.
+**What the platforms do:** BigCommerce lets the seller change its default country at any time. Shopify allows a change only once every financial service is off and the addresses match the business's country; for a person trading alone a change creates a new business record, and its support changes the country on request for some stores. WooPayments' account country never changes.
 
 **Recommendation (engineering's):** a business's country never changes in place. A seller who moves adds a business record for the new country, which becomes the main one; the old one closes once nothing open rests on it. Sharrwah's staff do this only where a contract or several business records require it. Other subjects' checks run first: payment accounts (S-04), verification (S-07) and tax forms (S-05). A display country that only sets defaults stays changeable. **Why:** the platforms lock the country while money is attached, and fix it for a person's business record and for a payment account. So what was made under the old country keeps its meaning.
 
@@ -61,7 +61,7 @@
 
 **Question:** Is a market only a group of places (one or several countries, a region, a city)? Or may it also be a sales channel, a point of sale, a group of business customers or a separate storefront?
 
-**What the platforms do:** four platforms define markets by countries; Salla and Shopify also by regions, and Salla by cities. Zid, Shopify and BigCommerce treat sales channels as markets, BigCommerce through storefronts. Shopify defines a market by conditions a buyer matches (a place, a business customer, a point of sale, a channel), and allows a market within a market. WooCommerce and Zid hold some channel or point-of-sale values apart from markets. BigCommerce prices by customer group, and no platform makes a group of customers a kind of market.
+**What the platforms do:** four platforms define markets by countries, Salla and Shopify also by regions, Salla by cities. Zid, Shopify and BigCommerce treat sales channels as markets, BigCommerce through storefronts. Shopify defines a market by conditions a buyer matches (a place, a business customer, a point of sale, a channel), and nests markets. WooCommerce and Zid hold some channel or point-of-sale values apart from markets; BigCommerce prices by customer group, which no platform makes a kind of market.
 
 **Recommendation (engineering's):** a market is a named set of conditions of a few kinds. Places come first; channel, point-of-sale, business-customer and storefront kinds follow, as new kinds of condition. A market may sit inside another and inherit from it, and a buyer is matched by their whole context, not only their country. A group of customers stays beside markets, as a key that a setting such as a price may use. **Why:** the most general form the platforms show covers every narrower one by setting. A new kind of market is then a new condition, not a second system.
 
@@ -75,7 +75,7 @@
 
 **Question:** May one market hold several countries, and may a country fall in more than one market, nested within one kind or across kinds? A buyer's values would then come from the most specific market that applies.
 
-**What the platforms do:** Salla allows one country per market, as its taxes follow the market's country, and Shopify's main market is one country or region. Shopify lets a country fall in several markets: a market inside another is its submarket and inherits from it, and across kinds the most specific settings apply and the catalogs combine. BigCommerce ties each site and language version to one storefront. Salla and Shopify place a buyer by country, and Salla and BigCommerce let the seller choose who enters a market.
+**What the platforms do:** Salla allows one country per market, as its taxes follow the market's country. Shopify lets a country fall in several markets: a submarket inherits from the market it sits in, and across kinds the most specific settings apply and catalogs combine. BigCommerce ties each site and language version to one storefront. Salla and Shopify place a buyer by country; Salla and BigCommerce let the seller choose who enters.
 
 **Recommendation (engineering's):** a market may hold several countries; one country per market remains a choice. Within one kind, markets nest: a market inside another inherits from it and takes priority. Across kinds, a single value comes from the most specific market, and a list may combine. Which kind comes first is stated only for business-customer, retail and region markets, in that order (Shopify); for other kinds it is open. The seller may limit who enters a market. **Why:** a seller can sell to a region as one market and treat one country apart inside it. All five work tax out from the buyer's country (a fact), so a market of several countries can hold tax per buyer's country (engineering's reading).
 
@@ -111,7 +111,7 @@
 
 **Question:** May each market sell in its own currency at its own prices, converted by Sharrwah at an exchange rate held for that market or set by the seller? Every order would keep its amounts in both the market's currency and the store's.
 
-**What the platforms do:** Salla, Zid and Shopify hold a currency and prices per market, and BigCommerce per storefront; WooCommerce allows one base currency per store. Shopify holds an exchange rate per market, for markets that have a currency of their own; the others work from the currency's rate. Salla, Zid and WooCommerce convert prices when the seller chooses, and Shopify's automatic conversion reads the same way (engineering's reading). Four platforms vary prices by the buyer's country. Shopify keeps gift cards in the store's own currency.
+**What the platforms do:** Salla, Zid and Shopify hold a currency and prices per market, and BigCommerce per storefront; WooCommerce allows one base currency per store. Shopify holds an exchange rate per market, for markets that have a currency of their own. Salla, Zid and WooCommerce work from the currency's rate and convert prices when the seller chooses; Shopify's automatic conversion reads the same way (engineering's reading). Four platforms vary prices by the buyer's country. Shopify keeps gift cards in the store's own currency.
 
 **Recommendation (engineering's):** each market may carry its own currency and exchange rate, starting from the store's; prices convert at that rate unless the seller sets them for the market or a country inside it. Every order, refund and report keeps both amounts, with the market and rate used. The store's currency stays the one for its own reports and the default for gift cards; a gift card in a market's currency stays open. Sharrwah sets no payout currency: under your Decision 1, each provider pays out on its own terms. Which currencies and rate sources is S-09's question.
 
@@ -119,15 +119,16 @@
 
 **What it rules out:** money records that keep one currency only.
 
-**Changing course later, by part:** a redesign for the two amounts, if orders keep one currency and markets later sell in their own; one module for where the rate is held; a setting for which markets carry their own currency, once both amounts are kept.
-
-**Answer:** (open)
+**Changing course later, and your answer, by part:**
+- **Two amounts on every record:** a redesign, if orders keep one currency and markets later sell in their own. **Answer:** (open)
+- **Where the rate is held,** per market or per currency: one module. **Answer:** (open)
+- **Which markets carry their own currency:** a setting, once both amounts are kept. **Answer:** (open)
 
 **What follows by rule (RD3):** as all five do, the seller sets each market's settings; tax, shipping, payment methods, the address form and the currency shown follow the buyer's country; one currency, tax setup and set of units hold for the store. Set per market by rule: returns, messages to buyers and the address form. Kept open: business entities per market (D1 leaves room); returns, privacy, analytics and notifications per market. Left to the build: who besides the seller sets each setting. **Moved:** a merchant of record and store closures to S-03; currency conversion by providers to S-04; duties partners to S-05; couriers' cash on delivery and fulfilment services' locations to S-10.
 
 ## Needs no reference meets
 
-The Yemen row found these needs, written without the market's name. Each was checked against the five platforms, and each comes from the Yemen row alone. A recommendation to provide for one is room kept, for you to weigh by its cost. It is not a reason drawn from one market.
+The Yemen row found these needs, written without the market's name. Each was checked against the five platforms and comes from the Yemen row alone. For both, established designs were then read and weighed by their kind of source (`designs.tsv`). A recommendation to keep room for one is for you to weigh by its cost; it is not a reason drawn from one market.
 
 ### D8. A seller's area within a country
 
@@ -139,29 +140,32 @@ The Yemen row found these needs, written without the market's name. Each was che
 
 **Options:** (a) don't provide for it: countries only, as the platforms do for payment services; (b) areas for some rules, as they do for tax; (c) any rule may use the country or an area within it, and a change of an area a rule uses runs that rule's checks.
 
-**Recommendation (engineering's):** (c), as room kept. The area is held at two levels from the start, the business record's address and the locations a store fulfils from (S-10's); the one entry point takes it beside the country; area changes are dated, and each order keeps the area that served it. No rule needs an area at launch. Only (b), tax by area, rests on the platforms; the rest comes from the Yemen row's need alone, and without it the platforms support (b) at most.
+**Recommendation (engineering's), weighed against the designs read:** (b) now, with room kept for (c). Tax rules may use an area, as the platforms do and as Stripe keys a dated tax registration on a state. The area is held from the start as a dated field at two levels (the business record, and the locations a store fulfils from, S-10's): a stable identifier, since published area codes change and are reused (Unicode); at a level named per country, since levels differ between countries (OpenStreetMap); and apart from the postal address, whose area is optional (Google). With E2, a payment or currency rule keyed on the area, or a move's checks on an area change, is then one module. **Where the sources cut against (c):** none ties payment services or currency to an area, and Fowler finds dating a field later easy in code, so the dated area now protects past records only. The extension comes from the Yemen row's need alone.
 
 **What it rules out:** countries only, as a rule of the design. In engineering's reading, a dated area costs little now, and past records without one can't recover it.
 
-**Changing course later: one module,** given E2's entry point and the business's address kept with its dates. Without the dated address, past records can't recover their area. A redesign only if E2 or D1 is declined.
+**Changing course later: one module,** given E2's entry point and the dated area field; only past records kept without an area can't be recovered. A redesign only if E2 or D1 is declined.
 
 **Answer:** (open)
 
 ### D9. Two currency areas under one currency code
 
-**The need** (`yemen-row.tsv`, line 35): one currency code can cover two currency areas of one country, with different notes and exchange rates. A currency held by its code alone, with a rate per currency, can't tell the two apart.
+**The need** (`yemen-row.tsv`, line 35): one currency code can cover two currency areas of one country, with different notes and exchange rates. Under D7, D4 and D5, two markets for the two areas can already sell at two rates under the one code, and each order keeps its market and rate. What a currency held by its code alone can't do is tell the areas apart in prices, stored amounts and reports, except through the market: totals by currency mix them.
 
-**What the platforms do:** Salla, Zid and WooCommerce work from a currency's rate. Shopify holds a rate per market, but a market drawn for an area within a country takes its parent's currency (an early-access feature). No platform sells two areas of one country under one code at two rates.
+**What the platforms and designs show:** Salla, Zid and WooCommerce work from one rate per currency. Shopify holds a rate per market, but its market for an area within a country takes its parent's currency (an early-access feature). The standards and platforms read identify a currency by its code alone: Unicode, Java's money type, Stripe's payments and the ISO 4217 lists. One ledger design, TigerBeetle, holds each amount's currency as a record the application defines.
 
-**Question:** Should a market's currency be able to name a currency area within its code, with that area's own rate, so that two markets of one country sharing a code sell at two rates?
+**Question:** Should a currency be able to name a currency area within its code, so that prices, stored amounts and reports tell two areas sharing one code apart by currency, not only by market?
 
-**Options:** (a) don't provide for it: a currency is its code, its rate the code's; (b) a rate per market, as Shopify holds it, which doesn't reach an area within a country; (c) a market's currency names a currency area within its code, with that area's own rate.
+**Options:**
+- **(a) Don't provide for it,** with one rate per currency code: the two areas sell at one rate.
+- **(b) What D7 already gives:** a market per area with its own rate, the areas told apart only by market.
+- **(c) Name the area in the currency itself:** a currency record (a code, and an area where one is named) that prices, amounts and reports refer to, mapped to the bare code where a provider takes only the code.
 
-**Recommendation (engineering's):** (c), as room kept. A market's currency is held as a currency record (a code, and an area where one is named), with its rate per market. There is one record per code until a second area is needed, which is (a) by setting. What identifies a currency in Sharrwah's money records is S-09's question.
+**Recommendation (engineering's), weighed against the designs read:** (b) now, with room kept for (c). Amounts refer to a currency record, one per code at launch, so naming an area later is a new record; that choice is S-09's. **Where the sources cut against (c):** every standard and platform read identifies a currency by its code alone, so an area would have to map back to the bare code at every provider. They support the room's form: TigerBeetle defines its own currency numbers, and keeps a changed unit as a new record. The need comes from the Yemen row alone.
 
-**What it rules out:** nothing a platform shows.
+**What it rules out:** nothing a platform or a design shows; (c) stays reachable through the currency record.
 
-**Changing course later: one module** if amounts in money records refer to a currency record; **a redesign** if a bare currency code is stored in every amount, since every money record, rate and report would then have to learn the area. That choice is S-09's.
+**Changing course later: one module** if amounts in money records refer to a currency record; **a redesign** if a bare currency code is stored in every amount, since every money record, rate and report would then have to learn the area.
 
 **Answer:** (open)
 
@@ -171,6 +175,6 @@ Each subject decides its values. S-02 holds where each rule lives, tied to a bus
 
 ## Engineering constraints
 
-Engineering proposes these; you may veto any. **E1:** each per-market setting is read through one entry point: a single value from the most specific market, then the store; a list may combine across the markets a buyer matches, with limits applied after; a customer group can be a key beside the market. **E2:** each rule tied to the seller's country is read through one entry point, for the order or market in question, from the country of the business that served the order or the store's main business; each order records that business, and with D8 the entry point also takes an area. **E3:** every store has one main market, which carries the store's own values; its places may change. **E4:** a store keeps a currency of its own, for its reports and as the default for gift cards; a gift card in a market's currency stays open.
+Engineering proposes these; you may veto any. **E1:** each per-market setting is read through one entry point: a single value from the most specific market, then the store; a list may combine across the markets a buyer matches, with limits applied after; a customer group can be a key beside the market. **E2:** each rule tied to the seller's country is read through one entry point, for the order or market in question, from the country of the business that served the order or the store's main business; each order records that business, and with D8 the entry point also takes an area. **E3:** every store has one main market, which carries the store's own values; its places may change. **E4:** a store keeps a currency of its own, for its reports and as the default for gift cards; a gift card in a market's currency stays open. The store's currency may change; records made before a change keep the currency of their day.
 
 **E5, for you to confirm:** your decision of 26 October says that who holds sellers' money "is a market's setting". Engineering reads "market" here as the seller's own country, through the business that takes the payment. The other reading is the markets a store sells into, as Shopify assigns businesses to markets for payment processing. Either way, C holds everywhere at launch.
